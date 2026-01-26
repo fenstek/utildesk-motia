@@ -1,0 +1,54 @@
+---
+import { readdir, readFile } from "node:fs/promises";
+import { join } from "node:path";
+import matter from "gray-matter";
+import { marked } from "marked";
+
+export async function getStaticPaths() {
+  const toolsDir = join(process.cwd(), "content", "tools");
+  const files = (await readdir(toolsDir))
+    .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+
+  const paths = await Promise.all(
+    files.map(async (file) => {
+      const raw = await readFile(join(toolsDir, file), "utf-8");
+      const { data } = matter(raw);
+      const slug = String(data.slug ?? file.replace(/\.md$/, ""));
+      return { params: { slug } };
+    })
+  );
+
+  return paths;
+}
+
+const { slug } = Astro.params;
+
+const filePath = join(process.cwd(), "content", "tools", `${slug}.md`);
+const raw = await readFile(filePath, "utf-8");
+const { data, content } = matter(raw);
+
+const title = String(data.title ?? slug);
+
+// ВАЖНО: рендер Markdown в HTML
+const html = marked.parse(content);
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main style="max-width: 960px; margin: 40px auto; padding: 0 16px;">
+      <p><a href="/tools/">← Tools</a></p>
+      <h1>{title}</h1>
+
+      {data.image ? (
+        <img src={String(data.image)} alt={title} style="max-width: 100%; height: auto;" />
+      ) : null}
+
+      <article style="line-height: 1.7; margin-top: 16px;" set:html={html}></article>
+    </main>
+  </body>
+</html>

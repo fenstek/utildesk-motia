@@ -2,3 +2,9 @@
 secrets/
 node_modules/
 content/images/tools/*.png
+# backups & logs
+*.bak.*
+*.log
+
+# local app folder (will be handled separately)
+motia-app/
