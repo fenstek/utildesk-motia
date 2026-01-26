@@ -1,8 +1,7 @@
 ---
-import { readdir, readFile } from "node:fs/promises";
+import { readdir } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
-import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
@@ -11,42 +10,31 @@ const files = (await readdir(toolsDir))
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
-    const raw = await readFile(full, "utf-8");
+    const raw = await (await import("node:fs/promises")).readFile(full, "utf-8");
     const { data } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
-    const image = data.image ? String(data.image) : "";
-    return { slug, title, image };
+    return { slug, title };
   })
 );
 
 tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 ---
 
-<BaseLayout title="Tools — utildesk" description="Tools directory">
-  <div class="hero">
-    <div class="heroBox">
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tools</title>
+  </head>
+  <body>
+    <main style="max-width: 960px; margin: 40px auto; padding: 0 16px;">
       <h1>Tools</h1>
-      <p class="muted">Tool-Katalog (MVP)</p>
-    </div>
-  </div>
-
-  <div class="grid">
-    {tools.map((t) => (
-      <a class="card" href={`/tools/${t.slug}/`}>
-        <div class="cardTop">
-{
-  (() => {
-    const src = t.image?.trim() ? t.image : `/images/tools/${t.slug}.webp`;
-    return <img class="thumb" src={src} alt={t.title} loading="lazy" />;
-  })()
-}
-          <div>
-            <p class="cardTitle">{t.title}</p>
-            <p class="cardMeta">/tools/{t.slug}/</p>
-          </div>
-        </div>
-      </a>
-    ))}
-  </div>
-</BaseLayout>
+      <ul>
+        {tools.map((t) => (
+          <li><a href={`/tools/${t.slug}/`}>{t.title}</a></li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
