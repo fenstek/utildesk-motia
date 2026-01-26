@@ -3,6 +3,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
@@ -28,27 +29,14 @@ const raw = await readFile(filePath, "utf-8");
 const { data, content } = matter(raw);
 
 const title = String(data.title ?? slug);
-
-// ВАЖНО: рендер Markdown в HTML
 const html = marked.parse(content);
 ---
 
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <main style="max-width: 960px; margin: 40px auto; padding: 0 16px;">
-      <p><a href="/tools/">← Tools</a></p>
-      <h1>{title}</h1>
+<BaseLayout title={`${title} — utildesk`} description={`Tool: ${title}`}>
+  <p><a href="/tools/">← Tools</a></p>
+  <h1>{title}</h1>
 
-      {data.image ? (
-        <img src={String(data.image)} alt={title} style="max-width: 100%; height: auto;" />
-      ) : null}
-
-      <article style="line-height: 1.7; margin-top: 16px;" set:html={html}></article>
-    </main>
-  </body>
-</html>
+  <div class="article">
+    <article set:html={html}></article>
+  </div>
+</BaseLayout>
