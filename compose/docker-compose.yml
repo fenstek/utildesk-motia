@@ -1,0 +1,60 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: utildesk-motia-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - utildesk_motia_pg:/var/lib/postgresql/data
+    networks:
+      - utildesk_motia_net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: utildesk-motia-redis
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - utildesk_motia_redis:/data
+    networks:
+      - utildesk_motia_net
+    restart: unless-stopped
+
+  motia:
+    image: node:20-bullseye
+    container_name: utildesk-motia
+    working_dir: /app
+    volumes:
+      - /opt/utildesk-motia/motia-app:/app
+    environment:
+      PORT: ${MOTIA_PORT}
+
+      # Postgres connection (стандартный формат)
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+
+      # Redis connection
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    command: bash -lc "npm run dev -- --host 0.0.0.0 --port ${MOTIA_PORT}"
+    networks:
+      - utildesk_motia_net
+    restart: unless-stopped
+
+volumes:
+  utildesk_motia_pg:
+  utildesk_motia_redis:
+
+networks:
+  utildesk_motia_net:
+    driver: bridge

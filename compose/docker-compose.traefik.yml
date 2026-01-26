@@ -1,0 +1,34 @@
+services:
+  motia:
+    ports: []
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+
+      # HTTP -> HTTPS
+      - "traefik.http.routers.motia-http.rule=Host(`motia.utildesk.de`)"
+      - "traefik.http.routers.motia-http.entrypoints=web"
+      - "traefik.http.routers.motia-http.middlewares=motia-https-redirect"
+      - "traefik.http.routers.motia-http.service=motia"
+      - "traefik.http.middlewares.motia-https-redirect.redirectscheme.scheme=https"
+
+      # HTTPS + Let's Encrypt
+      - "traefik.http.routers.motia.rule=Host(`motia.utildesk.de`)"
+      - "traefik.http.routers.motia.entrypoints=websecure"
+      - "traefik.http.routers.motia.tls=true"
+      - "traefik.http.routers.motia.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.motia.service=motia"
+
+      # Protect + noindex
+      - "traefik.http.routers.motia.middlewares=motia-noindex,motia-auth"
+      - "traefik.http.middlewares.motia-noindex.headers.customresponseheaders.X-Robots-Tag=noindex, nofollow, noarchive, nosnippet"
+      - "traefik.http.middlewares.motia-auth.basicauth.users=motia:$$2y$$05$$GgzLQvk7tWqQA..lOQjskuOQ4Y/o35ttwvRMIrZqc/sKlsaZAFLrG"
+
+      # Service port
+      - "traefik.http.services.motia.loadbalancer.server.port=3000"
+
+networks:
+  web:
+    external: true
