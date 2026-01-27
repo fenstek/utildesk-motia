@@ -2,6 +2,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir)).filter(
@@ -9,7 +10,6 @@ const files = (await readdir(toolsDir)).filter(
 );
 
 function extractFirstMarkdownImage(md) {
-  // ![alt](url) or ![](url)
   const m = md.match(/!\[[^\]]*\]\(([^)]+)\)/);
   return m ? m[1] : null;
 }
@@ -17,19 +17,26 @@ function extractFirstMarkdownImage(md) {
 function stripMarkdown(md) {
   return md
     .replace(/!\[[^\]]*\]\([^)]+\)/g, "") // images
-    .replace(/\[[^\]]*\]\([^)]+\)/g, "$1") // links -> text
+    .replace(/\[([^\]]*)\]\([^)]+\)/g, "$1") // links -> text
     .replace(/^#{1,6}\s+.*$/gm, "") // headings
-    .replace(/`{1,3}[^`]*`{1,3}/g, "") // inline code
     .replace(/```[\s\S]*?```/g, "") // code blocks
+    .replace(/`[^`]*`/g, "") // inline code
     .replace(/[*_~>#-]/g, " ") // some md chars
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function makeExcerpt(md, max = 140) {
+function makeExcerpt(md, max = 170) {
   const text = stripMarkdown(md);
   if (!text) return "";
   return text.length > max ? text.slice(0, max - 1).trimEnd() + "…" : text;
+}
+
+function normalizeTags(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.map(String).map((s) => s.trim()).filter(Boolean);
+  if (typeof value === "string") return value.split(",").map((s) => s.trim()).filter(Boolean);
+  return [];
 }
 
 const tools = await Promise.all(
@@ -43,60 +50,42 @@ const tools = await Promise.all(
 
     const category = data.category ? String(data.category) : "";
     const price_model = data.price_model ? String(data.price_model) : "";
+    const tags = normalizeTags(data.tags);
 
     const image =
-      (data.image ? String(data.image) : "") || extractFirstMarkdownImage(content) || "";
+      (data.image ? String(data.image) : "") ||
+      extractFirstMarkdownImage(content) ||
+      "";
 
-    const excerpt = makeExcerpt(content, 160);
+    const excerpt = makeExcerpt(content, 170);
 
-    return { slug, title, category, price_model, image, excerpt };
+    return { slug, title, category, price_model, tags, image, excerpt };
   })
 );
 
 tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 ---
 
-<html lang="de">
-  <head>
-    <link rel="stylesheet" href="/styles/global.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tools</title>
-  </head>
-  <body>
-    <main>
-      <div class="header">
-        <div>
-          <div class="badge">Utildesk · Tool Directory</div>
-          <h1 class="h1">Tools</h1>
-          <p class="lead">Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.</p>
+<BaseLayout title="Tools — utildesk" description="Kuratierte Tools mit klaren Kurzbeschreibungen.">
+  <h1>Tools</h1>
+  <p class="lead">Ein kuratiertes Verzeichnis — kurz, klar, ohne Marketing-Lärm.</p>
+
+  <section class="tools-grid">
+    {tools.map((t) => (
+      <a class="tool-card" href={"/tools/" + t.slug + "/"}>
+        {t.image ? <img class="thumb" src={t.image} alt="" loading="lazy" /> : null}
+        <div class="card-body">
+          <div class="card-title">{t.title}</div>
+          {t.excerpt ? <p class="excerpt">{t.excerpt}</p> : null}
+          <div class="pills" aria-label="Meta">
+            {t.category ? <span class="pill"><strong>Category</strong> {t.category}</span> : null}
+            {t.price_model ? <span class="pill"><strong>Preis</strong> {t.price_model}</span> : null}
+            {(t.tags || []).slice(0, 2).map((tag) => (
+              <span class="pill pill--tag">{tag}</span>
+            ))}
+          </div>
         </div>
-      </div>
-
-      <ul class="tools-list">
-        {tools.map((t) => (
-          <li class="card">
-            <a class="tool-item" href={"/tools/" + t.slug + "/"}>
-              <div class="tool-thumb" aria-hidden="true">
-                {t.image ? <img src={t.image} alt="" loading="lazy" /> : null}
-              </div>
-
-              <div style="min-width:0;">
-                <p class="tool-title">{t.title}</p>
-
-                {(t.category || t.price_model) ? (
-                  <div class="pills" aria-label="Meta">
-                    {t.category ? <span class="pill">{t.category}</span> : null}
-                    {t.price_model ? <span class="pill">{t.price_model}</span> : null}
-                  </div>
-                ) : null}
-
-                {t.excerpt ? <p class="tool-excerpt">{t.excerpt}</p> : null}
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </main>
-  </body>
-</html>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

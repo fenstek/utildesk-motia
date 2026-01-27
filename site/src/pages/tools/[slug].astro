@@ -3,6 +3,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
@@ -25,9 +26,7 @@ export async function getStaticPaths() {
 function normalizeTags(value) {
   if (!value) return [];
   if (Array.isArray(value)) return value.map(String).map((s) => s.trim()).filter(Boolean);
-  if (typeof value === "string") {
-    return value.split(",").map((s) => s.trim()).filter(Boolean);
-  }
+  if (typeof value === "string") return value.split(",").map((s) => s.trim()).filter(Boolean);
   return [];
 }
 
@@ -42,12 +41,9 @@ function faqToAccordion(html) {
   if (!m) return html;
 
   const sectionBody = m[1];
-
-  // Split by <h3>...</h3>
   const parts = sectionBody.split(/<h3[^>]*>/i);
   if (parts.length < 2) return html;
 
-  // parts[0] is preface before first h3
   const items = [];
   for (let i = 1; i < parts.length; i++) {
     const chunk = parts[i];
@@ -56,25 +52,18 @@ function faqToAccordion(html) {
 
     const q = chunk.slice(0, endTitle).replace(/<[^>]+>/g, "").trim();
     const a = chunk.slice(endTitle).replace(/<\/h3>/i, "").trim();
-
     if (!q) continue;
 
     items.push(
-      `<details class="faq-item">
-         <summary class="faq-question">${q}</summary>
-         <div class="faq-answer">${a}</div>
+      `<details>
+         <summary>${q}</summary>
+         <div class="answer">${a}</div>
        </details>`
     );
   }
 
-  const accordion =
-    `<section class="faq-accordion">` +
-    items.join("") +
-    `</section>`;
-
-  // Replace entire FAQ section (including its body) with h2 + accordion
-  const replaced = html.replace(reSection, `<h2>FAQ</h2>${accordion}`);
-  return replaced;
+  const accordion = `<div class="faq">${items.join("")}</div>`;
+  return html.replace(reSection, `<h2>FAQ</h2>${accordion}`);
 }
 
 const { slug } = Astro.params;
@@ -88,47 +77,52 @@ const category = data.category ? String(data.category) : "";
 const price_model = data.price_model ? String(data.price_model) : "";
 const tags = normalizeTags(data.tags);
 
+const heroImage = data.image ? String(data.image) : "";
+
+// если в markdown уже есть картинка — сверху не показываем
+const mdHasImage = /!\[[^\]]*\]\([^)]+\)/.test(content) || /<img\s/i.test(content);
+
 let html = marked.parse(content);
 
-// Remove first H1 from markdown to avoid duplicate title
+// убрать первый H1, чтобы не дублировать заголовок страницы
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 
-// Convert FAQ section to accordion
+// FAQ -> <details>/<summary>
 html = faqToAccordion(html);
+
+// если в итоговом html уже есть <img>, тоже не дублируем hero
+const htmlHasImage = /<img\s/i.test(html);
+const showHero = Boolean(heroImage) && !mdHasImage && !htmlHasImage;
 ---
 
-<html lang="de">
-  <head>
-    <link rel="stylesheet" href="/styles/global.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-  </head>
+<BaseLayout title={`${title} — utildesk`} description={(data.description ? String(data.description) : "")}>
+  <p class="breadcrumb"><a href="/tools/">← Tools</a></p>
 
-  <body>
-    <main>
-      <p class="breadcrumb"><a href="/tools/">← Tools</a></p>
+  <h1>{title}</h1>
 
-      <h1 class="h1">{title}</h1>
+  {(category || price_model) ? (
+    <div class="pills" aria-label="Meta" style="margin-top:10px;">
+      {category ? <span class="pill"><strong>Category</strong> {category}</span> : null}
+      {price_model ? <span class="pill"><strong>Preis</strong> {price_model}</span> : null}
+    </div>
+  ) : null}
 
-      {(category || price_model) ? (
-        <div class="pills" aria-label="Meta">
-          {category ? <span class="pill">{category}</span> : null}
-          {price_model ? <span class="pill">{price_model}</span> : null}
-        </div>
-      ) : null}
+  {tags.length ? (
+    <div class="pills" aria-label="Tags" style="margin-top:10px;">
+      {tags.map((t) => <span class="pill pill--tag">{t}</span>)}
+    </div>
+  ) : null}
 
-      {tags.length ? (
-        <div class="pills" style="margin-top:10px;" aria-label="Tags">
-          {tags.map((t) => <span class="pill pill--tag">{t}</span>)}
-        </div>
-      ) : null}
+  <div class="tool-hero">
+    <article class="article" set:html={html}></article>
 
-      {data.image ? (
-        <img src={String(data.image)} alt={title} style="max-width: 100%; height: auto; margin-top: 14px; border-radius: 14px; border: 1px solid var(--border);" />
-      ) : null}
-
-      <article class="card article" set:html={html}></article>
-    </main>
-  </body>
-</html>
+    <aside class="hero-box">
+      {showHero ? <img class="thumb" src={heroImage} alt={title} loading="lazy" /> : null}
+      <div class="hero-body">
+        <p class="lead" style="margin:0;">
+          {data.subtitle ? String(data.subtitle) : "Kurzinfo: Details stehen im Artikel."}
+        </p>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
