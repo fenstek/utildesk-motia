@@ -174,3 +174,27 @@ main{
   border: 1px solid rgba(31,35,40,.10);
   border-radius: 14px;
 }
+
+/* Pills (category, price_model, tags) */
+.pills{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 0;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,.75);
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.pill--tag{
+  background: rgba(251,247,242,.75);
+}
