@@ -10,7 +10,6 @@ export async function getStaticPaths() {
   const files = (await readdir(toolsDir)).filter(
     (f) => f.endsWith(".md") && !f.startsWith("_")
   );
-
   return files.map((file) => ({ params: { slug: file.replace(/\.md$/, "") } }));
 }
 
@@ -22,10 +21,10 @@ function normalizeTags(value) {
 }
 
 /**
- * Convert a FAQ section inside HTML to <details>/<summary>.
- * Supports 2 formats:
- *  A) <h2>FAQ</h2> + repeated <h3>Question</h3> ...answer...
- *  B) <h2>FAQ</h2> + repeated <p><strong>Question</strong></p> ...answer...
+ * FAQ -> <details>/<summary>
+ * Supports:
+ *  - ## FAQ + ### Question
+ *  - ## FAQ + **Question** paragraphs (your current format)
  */
 function faqToAccordion(inputHtml) {
   const reSection = /<h2[^>]*>\s*FAQ\s*<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/i;
@@ -34,9 +33,9 @@ function faqToAccordion(inputHtml) {
 
   const sectionBody = m[1];
 
-  // --- Helper: build <details> items from pairs ---
-  const build = (pairs) => {
-    const items = pairs
+  // Helper to build accordion HTML
+  const buildAccordion = (items) => {
+    const out = items
       .map(({ q, a }) => {
         const qq = (q || "").trim();
         const aa = (a || "").trim();
@@ -48,59 +47,51 @@ function faqToAccordion(inputHtml) {
       })
       .filter(Boolean);
 
-    if (!items.length) return null;
-
-    return `<section class="faq"><h2>FAQ</h2>${items.join("")}</section>`;
+    if (!out.length) return null;
+    return `<section class="faq"><h2>FAQ</h2>${out.join("")}</section>`;
   };
 
-  // --- Format A: split by <h3> ---
+  // A) Format with <h3>
   if (/<h3\b/i.test(sectionBody)) {
     const parts = sectionBody.split(/<h3[^>]*>/i);
-    if (parts.length >= 2) {
-      const pairs = [];
-      for (let i = 1; i < parts.length; i++) {
-        const chunk = parts[i];
-        const endTitle = chunk.search(/<\/h3>/i);
-        if (endTitle === -1) continue;
-
-        const q = chunk.slice(0, endTitle).replace(/<[^>]+>/g, "").trim();
-        const a = chunk.slice(endTitle).replace(/<\/h3>/i, "").trim();
-        pairs.push({ q, a });
-      }
-      const accordion = build(pairs);
-      if (accordion) {
-        return { html: inputHtml.replace(reSection, accordion), hasFaq: true };
-      }
+    const items = [];
+    for (let i = 1; i < parts.length; i++) {
+      const chunk = parts[i];
+      const endTitle = chunk.search(/<\/h3>/i);
+      if (endTitle === -1) continue;
+      const q = chunk.slice(0, endTitle).replace(/<[^>]+>/g, "").trim();
+      const a = chunk.slice(endTitle).replace(/<\/h3>/i, "").trim();
+      items.push({ q, a });
     }
+    const accordion = buildAccordion(items);
+    if (accordion) return { html: inputHtml.replace(reSection, accordion), hasFaq: true };
   }
 
-  // --- Format B: <p><strong>Question</strong></p> blocks ---
-  // Split on <p><strong> ... </strong></p>
-  const blocks = sectionBody.split(/<p>\s*<strong>/i);
-  if (blocks.length >= 2) {
-    const pairs = [];
-    for (let i = 1; i < blocks.length; i++) {
-      const chunk = blocks[i];
-      const endStrongP = chunk.search(/<\/strong>\s*<\/p>/i);
-      if (endStrongP === -1) continue;
+  // B) Format with <p><strong>Question</strong></p>
+  // Find all questions inside the FAQ section and capture their answers until next question
+  const qRe = /<p>\s*<strong>([\s\S]*?)<\/strong>\s*<\/p>/gi;
+  const matches = [];
+  let q;
+  while ((q = qRe.exec(sectionBody)) !== null) {
+    matches.push({ idx: q.index, len: q[0].length, q: q[1] });
+  }
+  if (!matches.length) return { html: inputHtml, hasFaq: false };
 
-      const qRaw = chunk.slice(0, endStrongP);
-      const q = qRaw.replace(/<[^>]+>/g, "").trim();
-
-      // Answer = remainder after </strong></p> until next question block (which is next split)
-      const a = chunk.slice(endStrongP).replace(/<\/strong>\s*<\/p>/i, "").trim();
-
-      // Clean: if answer accidentally starts with <p> etc it's fine (we keep html)
-      pairs.push({ q, a });
-    }
-
-    const accordion = build(pairs);
-    if (accordion) {
-      return { html: inputHtml.replace(reSection, accordion), hasFaq: true };
-    }
+  const items = [];
+  for (let i = 0; i < matches.length; i++) {
+    const cur = matches[i];
+    const next = matches[i + 1];
+    const start = cur.idx + cur.len;
+    const end = next ? next.idx : sectionBody.length;
+    const qText = String(cur.q).replace(/<[^>]+>/g, "").trim();
+    const aHtml = sectionBody.slice(start, end).trim();
+    items.push({ q: qText, a: aHtml });
   }
 
-  return { html: inputHtml, hasFaq: false };
+  const accordion = buildAccordion(items);
+  if (!accordion) return { html: inputHtml, hasFaq: false };
+
+  return { html: inputHtml.replace(reSection, accordion), hasFaq: true };
 }
 
 const { slug } = Astro.params;
@@ -132,7 +123,8 @@ html = faqRes.html;
 const htmlHasImage = /<img\s/i.test(html);
 const showHero = Boolean(heroImage) && !mdHasImage && !htmlHasImage;
 
-const showAside = showHero; // aside only for image/meta (FAQ stays inside article)
+// aside only when we actually show hero image (FAQ stays inside article)
+const showAside = showHero;
 ---
 
 <BaseLayout title={`${title} — utildesk`} description={(data.description ? String(data.description) : "")}>
@@ -153,22 +145,20 @@ const showAside = showHero; // aside only for image/meta (FAQ stays inside artic
     </div>
   ) : null}
 
-  <div class="tool-hero">
+  <div class={`tool-hero ${showAside ? "" : "tool-hero--single"}`}>
     <article class="article" set:html={html}></article>
 
     {showAside ? (
       <aside class="aside">
-        {showHero ? (
-          <div class="aside-card">
-            <img class="aside-thumb" src={heroImage} alt={title} loading="lazy" />
-            <div class="aside-body">
-              <div class="pills" aria-label="Meta">
-                {category ? <span class="pill"><strong>Category</strong> {category}</span> : null}
-                {price_model ? <span class="pill"><strong>Preis</strong> {price_model}</span> : null}
-              </div>
+        <div class="aside-card">
+          <img class="aside-thumb" src={heroImage} alt={title} loading="lazy" />
+          <div class="aside-body">
+            <div class="pills" aria-label="Meta">
+              {category ? <span class="pill"><strong>Category</strong> {category}</span> : null}
+              {price_model ? <span class="pill"><strong>Preis</strong> {price_model}</span> : null}
             </div>
           </div>
-        ) : null}
+        </div>
       </aside>
     ) : null}
   </div>
