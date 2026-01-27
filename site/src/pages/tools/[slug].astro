@@ -134,14 +134,14 @@ const showAside = showHero;
 
   {(category || price_model) ? (
     <div class="pills" aria-label="Meta" style="margin-top:10px;">
-      {category ? <span class="pill"><strong>Category</strong> {category}</span> : null}
-      {price_model ? <span class="pill"><strong>Preis</strong> {price_model}</span> : null}
+      {category ? <a class="pill" href={"/tools?category=" + category}><strong>Category</strong> {category}</a> : null}
+      {price_model ? <a class="pill" href={"/tools?price=" + price_model}><strong>Preis</strong> {price_model}</a> : null}
     </div>
   ) : null}
 
   {tags.length ? (
     <div class="pills" aria-label="Tags" style="margin-top:10px;">
-      {tags.map((t) => <span class="pill pill--tag">{t}</span>)}
+      {tags.map((t) => <a class="pill pill--tag" href={"/tools?tag=" + t}>{t}</a>)}
     </div>
   ) : null}
 
@@ -154,8 +154,8 @@ const showAside = showHero;
           <img class="aside-thumb" src={heroImage} alt={title} loading="lazy" />
           <div class="aside-body">
             <div class="pills" aria-label="Meta">
-              {category ? <span class="pill"><strong>Category</strong> {category}</span> : null}
-              {price_model ? <span class="pill"><strong>Preis</strong> {price_model}</span> : null}
+              {category ? <a class="pill" href={"/tools?category=" + category}><strong>Category</strong> {category}</a> : null}
+              {price_model ? <a class="pill" href={"/tools?price=" + price_model}><strong>Preis</strong> {price_model}</a> : null}
             </div>
           </div>
         </div>
