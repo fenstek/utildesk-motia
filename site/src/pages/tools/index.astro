@@ -1,4 +1,5 @@
 ---
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
@@ -14,43 +15,99 @@ const tools = await Promise.all(
     const { data } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
-    return { slug, title };
+    const image = data.image ? String(data.image) : null;
+    const category = data.category ? String(data.category) : null;
+    const price_model = data.price_model ? String(data.price_model) : null;
+    return { slug, title, image, category, price_model };
   })
 );
 
 tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 ---
 
-<html lang="de">
-  <head>
-    <link rel="stylesheet" href="/styles/global.css" />
-<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tools</title>
-</head>
-  <body>
-    <main>
-      <div class="header">
-        <div>
-          <div class="badge">Utildesk · Tool Directory</div>
-          <h1 class="h1">Tools</h1>
-          <p class="lead">Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.</p>
-        </div>
-      </div>
+<BaseLayout
+  title="Tools — Utildesk"
+  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools."
+>
+  <div class="hero">
+    <div class="badge">Tool Directory</div>
+    <h1 class="hero-title">Tools</h1>
+    <p class="hero-lead">
+      Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.
+      Durchsuchen Sie unsere Sammlung und finden Sie das perfekte Tool für Ihre Bedürfnisse.
+    </p>
+  </div>
 
-      <ul class="tools-list">
-        {tools.map((t) => (
-          <li class="card">
-            <a class="tool-item" href={"/tools/" + t.slug + "/"}>
-              <div class="tool-thumb" aria-hidden="true"></div>
-              <div>
-                <p class="tool-title">{t.title}</p>
-                <p class="tool-meta">/tools/{t.slug}</p>
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </main>
-  </body>
-</html>
+  <div class="search-box">
+    <input
+      type="search"
+      id="toolSearch"
+      class="search-input"
+      placeholder="Tools durchsuchen..."
+      autocomplete="off"
+    />
+  </div>
+
+  <ul class="tools-list" id="toolsList">
+    {tools.map((t) => (
+      <li class="card" data-title={t.title.toLowerCase()} data-slug={t.slug.toLowerCase()}>
+        <a class="tool-item" href={"/tools/" + t.slug + "/"}>
+          <div class="tool-thumb">
+            {t.image ? (
+              <img src={t.image} alt={t.title} />
+            ) : null}
+          </div>
+          <div class="tool-content">
+            <p class="tool-title">{t.title}</p>
+            <div class="tool-badges">
+              {t.category ? (
+                <span class="tool-badge badge-category">{t.category}</span>
+              ) : null}
+              {t.price_model ? (
+                <span class="tool-badge badge-price">{t.price_model}</span>
+              ) : null}
+            </div>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <p id="noResults" class="no-results" style="display: none;">
+    Keine Tools gefunden. Versuchen Sie eine andere Suche.
+  </p>
+
+  <script>
+    // Client-side search filter
+    (function() {
+      const searchInput = document.getElementById('toolSearch');
+      const toolsList = document.getElementById('toolsList');
+      const noResults = document.getElementById('noResults');
+      const toolItems = toolsList?.querySelectorAll('li[data-title]');
+
+      if (!searchInput || !toolsList || !toolItems) return;
+
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        toolItems.forEach(function(item) {
+          const title = item.getAttribute('data-title') || '';
+          const slug = item.getAttribute('data-slug') || '';
+          const matches = title.includes(query) || slug.includes(query);
+
+          if (matches) {
+            item.style.display = '';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (noResults) {
+          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+      });
+    })();
+  </script>
+</BaseLayout>
