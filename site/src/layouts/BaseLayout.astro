@@ -1,0 +1,41 @@
+---
+const {
+  title = "Utildesk",
+  description = "Ein kuratiertes Verzeichnis von Tools & Utilities.",
+} = Astro.props;
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/tools">
+          <strong>utildesk</strong>
+          <span>Tools directory</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/tools">Tools</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© {new Date().getFullYear()} utildesk · Built with Astro</div>
+      </div>
+    </footer>
+  </body>
+</html>
