@@ -34,6 +34,43 @@ let html = marked.parse(content);
 
 // Remove first H1 from markdown to avoid duplicate title
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
+
+// Convert FAQ section to accordion (only if FAQ section exists)
+function convertFaqToAccordion(htmlContent: string): string {
+  // Find FAQ section (h2 with "FAQ" text)
+  const faqRegex = /<h2[^>]*>FAQ<\/h2>([\s\S]*?)(?=<h2|$)/i;
+  const match = htmlContent.match(faqRegex);
+
+  if (!match) return htmlContent;
+
+  const faqContent = match[1];
+  const beforeFaq = htmlContent.substring(0, match.index);
+  const afterFaq = htmlContent.substring(match.index! + match[0].length);
+
+  // Parse FAQ items (question in <strong> followed by answer in <p>)
+  let accordionHtml = '<div class="faq-accordion">\n';
+
+  // Match pattern: <p><strong>Question</strong><br>Answer</p>
+  // or <p><strong>Question</strong></p><p>Answer</p>
+  const questionPattern = /<p><strong>(.+?)<\/strong>\s*(?:<br\s*\/?>)?\s*([\s\S]*?)<\/p>/g;
+  let qMatch;
+
+  while ((qMatch = questionPattern.exec(faqContent)) !== null) {
+    const question = qMatch[1].trim();
+    const answer = qMatch[2].trim();
+
+    accordionHtml += `  <details class="faq-item">
+    <summary class="faq-question">${question}</summary>
+    <div class="faq-answer">${answer || ''}</div>
+  </details>\n`;
+  }
+
+  accordionHtml += '</div>';
+
+  return beforeFaq + '<h2>FAQ</h2>\n' + accordionHtml + afterFaq;
+}
+
+html = convertFaqToAccordion(html);
 ---
 
 <html lang="de">
