@@ -11,10 +11,35 @@ const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await (await import("node:fs/promises")).readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
-    return { slug, title };
+
+    // Extract image (from frontmatter or first markdown image)
+    let image = data.image ? String(data.image) : null;
+    if (!image) {
+      const imgMatch = content.match(/!\[.*?\]\((.*?)\)/);
+      if (imgMatch) image = imgMatch[1];
+    }
+
+    // Extract excerpt (~140 chars from content, strip headings/images/links)
+    let excerpt = content
+      .replace(/^#.+$/gm, '')  // Remove headings
+      .replace(/!\[.*?\]\(.*?\)/g, '')  // Remove images
+      .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')  // Remove links but keep text
+      .replace(/\*\*(.+?)\*\*/g, '$1')  // Remove bold
+      .replace(/\n+/g, ' ')  // Replace newlines with spaces
+      .trim();
+
+    // Take first ~140 characters
+    if (excerpt.length > 140) {
+      excerpt = excerpt.substring(0, 140).trim() + '...';
+    }
+
+    const category = data.category ? String(data.category) : null;
+    const priceModel = data.price_model ? String(data.price_model) : null;
+
+    return { slug, title, image, excerpt, category, priceModel };
   })
 );
 
@@ -42,10 +67,16 @@ tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
         {tools.map((t) => (
           <li class="card">
             <a class="tool-item" href={"/tools/" + t.slug + "/"}>
-              <div class="tool-thumb" aria-hidden="true"></div>
-              <div>
+              <div class="tool-thumb" aria-hidden="true">
+                {t.image && <img src={t.image} alt={t.title} />}
+              </div>
+              <div class="tool-content">
                 <p class="tool-title">{t.title}</p>
-                <p class="tool-meta">/tools/{t.slug}</p>
+                {t.excerpt && <p class="tool-excerpt">{t.excerpt}</p>}
+                <div class="tool-badges">
+                  {t.category && <span class="tool-badge">{t.category}</span>}
+                  {t.priceModel && <span class="tool-badge tool-badge-price">{t.priceModel}</span>}
+                </div>
               </div>
             </a>
           </li>
