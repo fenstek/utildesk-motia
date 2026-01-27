@@ -1,27 +1,99 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { readdir } from "node:fs/promises";
+import { join } from "node:path";
+import matter from "gray-matter";
 
+const toolsDir = join(process.cwd(), "content", "tools");
+const files = (await readdir(toolsDir))
+  .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+
+const tools = await Promise.all(
+  files.map(async (file) => {
+    const full = join(toolsDir, file);
+    const raw = await (await import("node:fs/promises")).readFile(full, "utf-8");
+    const { data } = matter(raw);
+    const slug = String(data.slug ?? file.replace(/\.md$/, ""));
+    const title = String(data.title ?? slug);
+    const image = data.image ? String(data.image) : null;
+    const category = data.category ? String(data.category) : null;
+    return { slug, title, image, category };
+  })
+);
+
+tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+const latestTools = tools.slice(0, 6);
 ---
 
-<html lang="en">
-	<head>
-    <link rel="stylesheet" href="/styles/global.css" />
-<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-    <main>
-      <div class="header">
-        <div>
-          <div class="badge">Utildesk · Warm Minimal Directory</div>
-          <h1 class="h1">Utildesk</h1>
-          <p class="lead">Tools & Guides für AI, Automatisierung und Produktivität.</p>
-          <p style="margin-top:14px;"><a href="/tools/">→ Zum Tool-Verzeichnis</a></p>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+<BaseLayout
+  title="Utildesk — Tool-Verzeichnis für AI & Produktivität"
+  description="Kuratiertes Verzeichnis für AI-Tools, Automatisierung und Produktivitäts-Software. Finden Sie die besten Tools für Ihre Arbeit."
+>
+  <div class="hero">
+    <div class="badge">Utildesk · Tool Directory</div>
+    <h1 class="hero-title">Tools & Guides für AI, Automatisierung und Produktivität</h1>
+    <p class="hero-lead">
+      Entdecken Sie kuratierte Tools und Ressourcen, die Ihnen helfen, effizienter zu arbeiten.
+      Von AI-Assistenten bis zu Workflow-Automatisierung.
+    </p>
+    <div class="hero-actions">
+      <a href="/tools/" class="btn btn-primary">Zum Tool-Verzeichnis →</a>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="feature-card card">
+      <div class="feature-icon">🤖</div>
+      <h3>AI-Tools</h3>
+      <p>
+        Moderne KI-Assistenten und Machine-Learning-Plattformen für Content-Erstellung,
+        Code-Generierung und Datenanalyse.
+      </p>
+    </div>
+
+    <div class="feature-card card">
+      <div class="feature-icon">⚡</div>
+      <h3>Automatisierung</h3>
+      <p>
+        Workflow-Automation und No-Code-Plattformen, die repetitive Aufgaben eliminieren
+        und Ihre Produktivität steigern.
+      </p>
+    </div>
+
+    <div class="feature-card card">
+      <div class="feature-icon">🎯</div>
+      <h3>Produktivität</h3>
+      <p>
+        Sorgfältig ausgewählte Tools für Projektmanagement, Zeiterfassung und
+        Teamkollaboration.
+      </p>
+    </div>
+  </section>
+
+  <section class="latest-tools">
+    <div class="section-header">
+      <h2 class="section-title">Neueste Tools</h2>
+      <a href="/tools/" class="section-link">Alle Tools →</a>
+    </div>
+
+    <ul class="tools-grid">
+      {latestTools.map((tool) => (
+        <li class="card">
+          <a class="tool-card" href={"/tools/" + tool.slug + "/"}>
+            <div class="tool-thumb">
+              {tool.image ? (
+                <img src={tool.image} alt={tool.title} />
+              ) : null}
+            </div>
+            <div class="tool-info">
+              <p class="tool-title">{tool.title}</p>
+              {tool.category ? (
+                <span class="tool-badge">{tool.category}</span>
+              ) : null}
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

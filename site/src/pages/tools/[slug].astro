@@ -1,4 +1,5 @@
 ---
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
@@ -28,6 +29,10 @@ const raw = await readFile(filePath, "utf-8");
 const { data, content } = matter(raw);
 
 const title = String(data.title ?? slug);
+const image = data.image ? String(data.image) : null;
+const category = data.category ? String(data.category) : null;
+const price_model = data.price_model ? String(data.price_model) : null;
+const tags = data.tags ? (Array.isArray(data.tags) ? data.tags : [data.tags]) : [];
 
 // ВАЖНО: рендер Markdown в HTML
 let html = marked.parse(content);
@@ -36,23 +41,34 @@ let html = marked.parse(content);
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 ---
 
-<html lang="de">
-  <head>
-    <link rel="stylesheet" href="/styles/global.css" />
-<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <main>
-      <p class="breadcrumb"><a href="/tools/">← Tools</a></p>
-      <h1 class="h1">{title}</h1>
+<BaseLayout title={title + " — Utildesk"} description={title}>
+  <div class="tool-header">
+    <p class="breadcrumb"><a href="/tools/">← Zurück zu Tools</a></p>
 
-      {data.image ? (
-        <img src={String(data.image)} alt={title} style="max-width: 100%; height: auto;" />
+    <div class="tool-title-section">
+      {image ? (
+        <div class="tool-header-image">
+          <img src={image} alt={title} />
+        </div>
       ) : null}
 
-      <article class="card article" set:html={html}></article>
-    </main>
-  </body>
-</html>
+      <div class="tool-header-content">
+        <h1 class="hero-title">{title}</h1>
+
+        <div class="tool-meta-badges">
+          {category ? (
+            <span class="tool-badge badge-category">{category}</span>
+          ) : null}
+          {price_model ? (
+            <span class="tool-badge badge-price">{price_model}</span>
+          ) : null}
+          {tags.map((tag) => (
+            <span class="tool-badge badge-tag">{String(tag)}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="card article" set:html={html}></article>
+</BaseLayout>
