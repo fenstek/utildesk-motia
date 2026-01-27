@@ -113,14 +113,14 @@ html = faqToAccordion(html);
 
       {(category || price_model) ? (
         <div class="pills" aria-label="Meta">
-          {category ? <span class="pill">{category}</span> : null}
-          {price_model ? <span class="pill">{price_model}</span> : null}
+          {category ? <a class="pill" href={"/tools/?category=" + encodeURIComponent(category)}>{category}</a> : null}
+          {price_model ? <a class="pill" href={"/tools/?price=" + encodeURIComponent(price_model)}>{price_model}</a> : null}
         </div>
       ) : null}
 
       {tags.length ? (
         <div class="pills" style="margin-top:10px;" aria-label="Tags">
-          {tags.map((t) => <span class="pill pill--tag">{t}</span>)}
+          {tags.map((t) => <a class="pill pill--tag" href={"/tools/?tag=" + encodeURIComponent(t)}>{t}</a>)}
         </div>
       ) : null}
 

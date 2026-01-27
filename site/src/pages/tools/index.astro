@@ -86,8 +86,8 @@ tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
                 {(t.category || t.price_model) ? (
                   <div class="pills" aria-label="Meta">
-                    {t.category ? <span class="pill">{t.category}</span> : null}
-                    {t.price_model ? <span class="pill">{t.price_model}</span> : null}
+                    {t.category ? <a class="pill" href={"/tools/?category=" + encodeURIComponent(t.category)}>{t.category}</a> : null}
+                    {t.price_model ? <a class="pill" href={"/tools/?price=" + encodeURIComponent(t.price_model)}>{t.price_model}</a> : null}
                   </div>
                 ) : null}
 
