@@ -11,16 +11,10 @@ export async function getStaticPaths() {
     (f) => f.endsWith(".md") && !f.startsWith("_")
   );
 
-  const paths = await Promise.all(
-    files.map(async (file) => {
-      const raw = await readFile(join(toolsDir, file), "utf-8");
-      const { data } = matter(raw);
-      const slug = String(data.slug ?? file.replace(/\.md$/, ""));
-      return { params: { slug } };
-    })
-  );
-
-  return paths;
+  return files.map((file) => {
+    const slug = file.replace(/\.md$/, "");
+    return { params: { slug } };
+  });
 }
 
 function normalizeTags(value) {
@@ -31,18 +25,19 @@ function normalizeTags(value) {
 }
 
 /**
- * Convert a "FAQ" section rendered by marked:
- * <h2>FAQ</h2> then repeated <h3>Question</h3> ...answer html...
- * into <details>/<summary>.
+ * FAQ section pattern:
+ * <h2>FAQ</h2>
+ * <h3>Question</h3>
+ * <p>Answer...</p>
  */
 function faqToAccordion(html) {
   const reSection = /<h2[^>]*>\s*FAQ\s*<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/i;
   const m = html.match(reSection);
-  if (!m) return html;
+  if (!m) return { html, hasFaq: false };
 
   const sectionBody = m[1];
   const parts = sectionBody.split(/<h3[^>]*>/i);
-  if (parts.length < 2) return html;
+  if (parts.length < 2) return { html, hasFaq: false };
 
   const items = [];
   for (let i = 1; i < parts.length; i++) {
@@ -62,8 +57,11 @@ function faqToAccordion(html) {
     );
   }
 
-  const accordion = `<div class="faq">${items.join("")}</div>`;
-  return html.replace(reSection, `<h2>FAQ</h2>${accordion}`);
+  if (!items.length) return { html, hasFaq: false };
+
+  const accordion = `<section class="faq"><h2>FAQ</h2>${items.join("")}</section>`;
+  const replaced = html.replace(reSection, accordion);
+  return { html: replaced, hasFaq: true };
 }
 
 const { slug } = Astro.params;
@@ -82,17 +80,21 @@ const heroImage = data.image ? String(data.image) : "";
 // если в markdown уже есть картинка — сверху не показываем
 const mdHasImage = /!\[[^\]]*\]\([^)]+\)/.test(content) || /<img\s/i.test(content);
 
-let html = marked.parse(content);
+let html = String(marked.parse(content));
 
-// убрать первый H1, чтобы не дублировать заголовок страницы
-html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
+// убрать первый H1
+html = html.replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 
-// FAQ -> <details>/<summary>
-html = faqToAccordion(html);
+// FAQ -> details/summary
+const faqRes = faqToAccordion(html);
+html = faqRes.html;
 
 // если в итоговом html уже есть <img>, тоже не дублируем hero
 const htmlHasImage = /<img\s/i.test(html);
 const showHero = Boolean(heroImage) && !mdHasImage && !htmlHasImage;
+
+// в aside показываем только если реально есть что показать
+const showAside = showHero || faqRes.hasFaq;
 ---
 
 <BaseLayout title={`${title} — utildesk`} description={(data.description ? String(data.description) : "")}>
@@ -116,13 +118,22 @@ const showHero = Boolean(heroImage) && !mdHasImage && !htmlHasImage;
   <div class="tool-hero">
     <article class="article" set:html={html}></article>
 
-    <aside class="hero-box">
-      {showHero ? <img class="thumb" src={heroImage} alt={title} loading="lazy" /> : null}
-      <div class="hero-body">
-        <p class="lead" style="margin:0;">
-          {data.subtitle ? String(data.subtitle) : "Kurzinfo: Details stehen im Artikel."}
-        </p>
-      </div>
-    </aside>
+    {showAside ? (
+      <aside class="aside">
+        {showHero ? (
+          <div class="aside-card">
+            <img class="aside-thumb" src={heroImage} alt={title} loading="lazy" />
+            <div class="aside-body">
+              <div class="pills" aria-label="Meta">
+                {category ? <span class="pill"><strong>Category</strong> {category}</span> : null}
+                {price_model ? <span class="pill"><strong>Preis</strong> {price_model}</span> : null}
+              </div>
+            </div>
+          </div>
+        ) : null}
+
+        {/* FAQ уже внутри article после преобразования. Тут не дублируем. */}
+      </aside>
+    ) : null}
   </div>
 </BaseLayout>

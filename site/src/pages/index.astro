@@ -1,27 +1,20 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-    <link rel="stylesheet" href="/styles/global.css" />
-<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-    <main>
-      <div class="header">
-        <div>
-          <div class="badge">Utildesk · Warm Minimal Directory</div>
-          <h1 class="h1">Utildesk</h1>
-          <p class="lead">Tools & Guides für AI, Automatisierung und Produktivität.</p>
-          <p style="margin-top:14px;"><a href="/tools/">→ Zum Tool-Verzeichnis</a></p>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+<BaseLayout
+  title="utildesk — Tools & Guides"
+  description="Tools & Guides für AI, Automatisierung und Produktivität."
+>
+  <section class="home-hero">
+    <div class="home-kicker">utildesk · Directory</div>
+    <h1>Tools & Guides</h1>
+    <p class="lead">
+      Kuratiertes Verzeichnis für AI, Automatisierung und Produktivität — mit kurzen, klaren Beschreibungen.
+    </p>
+
+    <div class="home-actions">
+      <a class="btn" href="/tools">Zum Tool-Verzeichnis</a>
+    </div>
+  </section>
+</BaseLayout>
