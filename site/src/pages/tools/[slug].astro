@@ -3,7 +3,6 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import "../../styles/global.css";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
@@ -29,76 +28,29 @@ const raw = await readFile(filePath, "utf-8");
 const { data, content } = matter(raw);
 
 const title = String(data.title ?? slug);
-const category = data.category ? String(data.category) : null;
-const priceModel = data.price_model ? String(data.price_model) : null;
-const heroImage = data.image ? String(data.image) : `/images/tools/${slug}.webp`;
 
-const getExcerpt = (body) => {
-  const cleaned = body
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-    .replace(/^#+\s.*$/gm, "")
-    .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/[_`>#-]/g, "")
-    .trim();
-  const line = cleaned.split("\n").find((item) => item.trim().length > 0);
-  return line ? line.trim() : "";
-};
-
-const description = getExcerpt(content);
-
+// ВАЖНО: рендер Markdown в HTML
 const html = marked.parse(content);
-
-const iconSvg = `
-  <svg viewBox="0 0 48 48" aria-hidden="true" width="24" height="24">
-    <path fill="currentColor" d="M14 8c-3.3 0-6 2.7-6 6v20c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6V20.5c0-1.1-.4-2.2-1.1-3l-7.4-8.5c-.8-.9-2-1.5-3.2-1.5H14Zm13 4 7 8H27V12Z"/>
-  </svg>
-`;
 ---
 
 <html lang="de">
   <head>
-    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/styles/global.css" />
+<link rel="stylesheet" href="/styles/global.css" />
+<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <main class="page">
-      <div class="container">
-        <p class="breadcrumb"><a href="/tools/">Tools</a> / {title}</p>
+    <main>
+      <p class="breadcrumb"><a href="/tools/">← Tools</a></p>
+      <h1 class="h1">{title}</h1>
 
-        <section class="tool-hero">
-          <div class="tool-hero-header">
-            <span class="tool-icon" set:html={iconSvg} />
-            <div>
-              <h1>{title}</h1>
-              {description ? <p>{description}</p> : null}
-            </div>
-          </div>
-          <div class="chips">
-            {category ? <span class="chip">{category}</span> : null}
-            {priceModel ? <span class="chip">{priceModel}</span> : null}
-          </div>
-          <div class="hero-image">
-            <img src={heroImage} alt={title} loading="lazy" />
-          </div>
-        </section>
+      {data.image ? (
+        <img src={String(data.image)} alt={title} style="max-width: 100%; height: auto;" />
+      ) : null}
 
-        <article class="prose" set:html={html}></article>
-
-        <div class="cta">
-          <div>
-            <strong>Mehr Tools ansehen</strong>
-            <p>Zurück zur Übersicht mit weiteren SaaS-Tools.</p>
-          </div>
-          <a href="/tools/">Alle Tools entdecken →</a>
-        </div>
-      </div>
+      <article class="card article" set:html={html}></article>
     </main>
   </body>
 </html>
