@@ -2,23 +2,44 @@
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import "../../styles/global.css";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
+const getExcerpt = (content) => {
+  const cleaned = content
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+    .replace(/^#+\s.*$/gm, "")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/[_`>#-]/g, "")
+    .trim();
+  const line = cleaned.split("\n").find((item) => item.trim().length > 0);
+  return line ? line.trim() : "";
+};
+
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await (await import("node:fs/promises")).readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
-    return { slug, title };
+    const excerpt = getExcerpt(content);
+    const category = data.category ? String(data.category) : null;
+    const priceModel = data.price_model ? String(data.price_model) : null;
+    return { slug, title, excerpt, category, priceModel };
   })
 );
 
 tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+
+const iconSvg = `
+  <svg viewBox="0 0 48 48" aria-hidden="true" width="24" height="24">
+    <path fill="currentColor" d="M14 8c-3.3 0-6 2.7-6 6v20c0 3.3 2.7 6 6 6h20c3.3 0 6-2.7 6-6V20.5c0-1.1-.4-2.2-1.1-3l-7.4-8.5c-.8-.9-2-1.5-3.2-1.5H14Zm13 4 7 8H27V12Z"/>
+  </svg>
+`;
 ---
 
 <html lang="de">
@@ -26,15 +47,39 @@ tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main style="max-width: 960px; margin: 40px auto; padding: 0 16px;">
-      <h1>Tools</h1>
-      <ul>
-        {tools.map((t) => (
-          <li><a href={`/tools/${t.slug}/`}>{t.title}</a></li>
-        ))}
-      </ul>
+    <main class="page">
+      <div class="container">
+        <header class="page-header">
+          <h1>Tools</h1>
+          <p>Entdecke kuratierte SaaS-Tools für Wachstum, Produktivität und kreative Workflows.</p>
+        </header>
+
+        <section class="tools-grid">
+          {tools.map((tool) => (
+            <a class="tool-card" href={`/tools/${tool.slug}/`}>
+              <div class="tool-card-header">
+                <span class="tool-icon" set:html={iconSvg} />
+                <div>
+                  <h2>{tool.title}</h2>
+                  {tool.excerpt ? <p>{tool.excerpt}</p> : null}
+                </div>
+              </div>
+              <div class="chips">
+                {tool.category ? <span class="chip">{tool.category}</span> : null}
+                {tool.priceModel ? <span class="chip">{tool.priceModel}</span> : null}
+              </div>
+            </a>
+          ))}
+        </section>
+      </div>
     </main>
   </body>
 </html>
