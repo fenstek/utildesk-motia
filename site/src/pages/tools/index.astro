@@ -1,5 +1,6 @@
 ---
-import { readdir } from "node:fs/promises";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 
@@ -10,47 +11,123 @@ const files = (await readdir(toolsDir))
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
-    const raw = await (await import("node:fs/promises")).readFile(full, "utf-8");
+    const raw = await readFile(full, "utf-8");
     const { data } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
-    return { slug, title };
+    const category = data.category ? String(data.category) : null;
+    const price_model = data.price_model ? String(data.price_model) : null;
+    const image = data.image ? String(data.image) : null;
+    return { slug, title, category, price_model, image };
   })
 );
 
 tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 ---
 
-<html lang="de">
-  <head>
-    <link rel="stylesheet" href="/styles/global.css" />
-<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tools</title>
-</head>
-  <body>
-    <main>
-      <div class="header">
-        <div>
-          <div class="badge">Utildesk · Tool Directory</div>
-          <h1 class="h1">Tools</h1>
-          <p class="lead">Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.</p>
-        </div>
-      </div>
+<BaseLayout
+  title="Tools — Utildesk"
+  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools"
+>
+  <!-- Hero -->
+  <section class="hero" style="padding: 60px 0 40px;">
+    <div class="hero-badge">🔧 {tools.length} Tools</div>
+    <h1 class="hero-title">Tools</h1>
+    <p class="hero-subtitle">
+      Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.
+      Durchsuche alle Tools und finde das Richtige für dich.
+    </p>
+  </section>
 
-      <ul class="tools-list">
-        {tools.map((t) => (
-          <li class="card">
-            <a class="tool-item" href={"/tools/" + t.slug + "/"}>
-              <div class="tool-thumb" aria-hidden="true"></div>
-              <div>
-                <p class="tool-title">{t.title}</p>
-                <p class="tool-meta">/tools/{t.slug}</p>
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </main>
-  </body>
-</html>
+  <!-- Search -->
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="search-input"
+      class="search-input"
+      placeholder="Tools durchsuchen (z.B. ChatGPT, AI, automation)..."
+      autocomplete="off"
+    />
+  </div>
+
+  <!-- Tools Grid -->
+  <div class="tools-grid" id="tools-grid">
+    {tools.map((tool) => (
+      <a
+        href={`/tools/${tool.slug}/`}
+        class="card tool-card"
+        data-search-title={tool.title.toLowerCase()}
+        data-search-slug={tool.slug.toLowerCase()}
+        data-search-category={tool.category?.toLowerCase() || ""}
+      >
+        <div class="tool-header">
+          <div class="tool-image">
+            {tool.image ? (
+              <img src={tool.image} alt={tool.title} />
+            ) : null}
+          </div>
+          <div class="tool-info">
+            <h3 class="tool-title">{tool.title}</h3>
+            <p class="tool-meta">{tool.slug}</p>
+          </div>
+        </div>
+        <div class="tool-badges">
+          {tool.category && (
+            <span class="badge badge-category">{tool.category}</span>
+          )}
+          {tool.price_model && (
+            <span class="badge badge-price">{tool.price_model}</span>
+          )}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <!-- No results message (hidden by default) -->
+  <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
+    <p style="color: var(--text-muted); font-size: 1.125rem;">
+      Keine Tools gefunden. Versuche einen anderen Suchbegriff.
+    </p>
+  </div>
+
+  <!-- Client-side search script (inline, no build tools) -->
+  <script is:inline>
+    (function() {
+      const searchInput = document.getElementById('search-input');
+      const toolsGrid = document.getElementById('tools-grid');
+      const noResults = document.getElementById('no-results');
+      const cards = toolsGrid.querySelectorAll('.tool-card');
+
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        cards.forEach(function(card) {
+          const title = card.getAttribute('data-search-title') || '';
+          const slug = card.getAttribute('data-search-slug') || '';
+          const category = card.getAttribute('data-search-category') || '';
+
+          const matches = title.includes(query) ||
+                         slug.includes(query) ||
+                         category.includes(query);
+
+          if (matches) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show/hide no results message
+        if (visibleCount === 0 && query !== '') {
+          toolsGrid.style.display = 'none';
+          noResults.style.display = 'block';
+        } else {
+          toolsGrid.style.display = 'grid';
+          noResults.style.display = 'none';
+        }
+      });
+    })();
+  </script>
+</BaseLayout>

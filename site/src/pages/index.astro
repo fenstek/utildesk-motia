@@ -1,27 +1,124 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { readdir, readFile } from "node:fs/promises";
+import { join } from "node:path";
+import matter from "gray-matter";
 
+// Загружаем последние 6 инструментов для секции "Latest Tools"
+const toolsDir = join(process.cwd(), "content", "tools");
+const files = (await readdir(toolsDir))
+  .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+
+const tools = await Promise.all(
+  files.map(async (file) => {
+    const full = join(toolsDir, file);
+    const raw = await readFile(full, "utf-8");
+    const { data } = matter(raw);
+    const slug = String(data.slug ?? file.replace(/\.md$/, ""));
+    const title = String(data.title ?? slug);
+    const category = data.category ? String(data.category) : null;
+    const price_model = data.price_model ? String(data.price_model) : null;
+    const image = data.image ? String(data.image) : null;
+    return { slug, title, category, price_model, image };
+  })
+);
+
+tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+const latestTools = tools.slice(0, 6);
 ---
 
-<html lang="en">
-	<head>
-    <link rel="stylesheet" href="/styles/global.css" />
-<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-    <main>
-      <div class="header">
-        <div>
-          <div class="badge">Utildesk · Warm Minimal Directory</div>
-          <h1 class="h1">Utildesk</h1>
-          <p class="lead">Tools & Guides für AI, Automatisierung und Produktivität.</p>
-          <p style="margin-top:14px;"><a href="/tools/">→ Zum Tool-Verzeichnis</a></p>
-        </div>
+<BaseLayout
+  title="Utildesk — Tools & Guides für AI und Produktivität"
+  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools. Warm minimal SaaS directory."
+>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge">✨ Warm Minimal SaaS Directory</div>
+    <h1 class="hero-title">Utildesk</h1>
+    <p class="hero-subtitle">
+      Tools & Guides für AI, Automatisierung und Produktivität.
+      Kuratiertes Verzeichnis mit allem, was du für effizientes Arbeiten brauchst.
+    </p>
+    <a href="/tools/" class="hero-cta">
+      Alle Tools entdecken →
+    </a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Was dich erwartet</h2>
+      <p class="section-subtitle">
+        Sorgfältig kuratierte Tools für moderne Teams und Einzelpersonen
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3 class="feature-title">AI-Tools</h3>
+        <p class="feature-desc">
+          Modernste KI-Technologie für Textgenerierung, Bildbearbeitung und intelligente Automatisierung.
+        </p>
       </div>
-    </main>
-  </body>
-</html>
+
+      <div class="card feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Produktivität</h3>
+        <p class="feature-desc">
+          Optimiere deinen Workflow mit erstklassigen Produktivitätstools und smarten Workflows.
+        </p>
+      </div>
+
+      <div class="card feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3 class="feature-title">Kuratiert</h3>
+        <p class="feature-desc">
+          Jedes Tool wird sorgfältig geprüft und dokumentiert, damit du schnell das Richtige findest.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Tools Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Beliebte Tools</h2>
+      <p class="section-subtitle">
+        Eine Auswahl der meistgenutzten Tools aus unserem Verzeichnis
+      </p>
+    </div>
+
+    <div class="tools-grid">
+      {latestTools.map((tool) => (
+        <a href={`/tools/${tool.slug}/`} class="card tool-card">
+          <div class="tool-header">
+            <div class="tool-image">
+              {tool.image ? (
+                <img src={tool.image} alt={tool.title} />
+              ) : null}
+            </div>
+            <div class="tool-info">
+              <h3 class="tool-title">{tool.title}</h3>
+              <p class="tool-meta">{tool.slug}</p>
+            </div>
+          </div>
+          <div class="tool-badges">
+            {tool.category && (
+              <span class="badge badge-category">{tool.category}</span>
+            )}
+            {tool.price_model && (
+              <span class="badge badge-price">{tool.price_model}</span>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div style="text-align: center; margin-top: 48px;">
+      <a href="/tools/" class="hero-cta">
+        Alle {tools.length} Tools durchsuchen →
+      </a>
+    </div>
+  </section>
+</BaseLayout>
