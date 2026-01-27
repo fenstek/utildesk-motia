@@ -78,10 +78,10 @@ tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
           <div class="card-title">{t.title}</div>
           {t.excerpt ? <p class="excerpt">{t.excerpt}</p> : null}
           <div class="pills" aria-label="Meta">
-            {t.category ? <span class="pill"><strong>Category</strong> {t.category}</span> : null}
-            {t.price_model ? <span class="pill"><strong>Preis</strong> {t.price_model}</span> : null}
+            {t.category ? <a class="pill" href={"/tools?category=" + t.category}><strong>Category</strong> {t.category}</a> : null}
+            {t.price_model ? <a class="pill" href={"/tools?price=" + t.price_model}><strong>Preis</strong> {t.price_model}</a> : null}
             {(t.tags || []).slice(0, 2).map((tag) => (
-              <span class="pill pill--tag">{tag}</span>
+              <a class="pill pill--tag" href={"/tools?tag=" + tag}>{tag}</a>
             ))}
           </div>
         </div>
