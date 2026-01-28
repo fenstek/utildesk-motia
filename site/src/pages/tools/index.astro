@@ -1,12 +1,20 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { join, parse } from "node:path";
 import matter from "gray-matter";
 
 const toolsDir = join(process.cwd(), "content", "tools");
+const toolImagesDir = join(process.cwd(), "public", "images", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+const toolImageFiles = await readdir(toolImagesDir);
+const toolImageBySlug = new Map(
+  toolImageFiles.map((file) => {
+    const { name } = parse(file);
+    return [name, `/images/tools/${file}`];
+  })
+);
 
 const tools = await Promise.all(
   files.map(async (file) => {
@@ -17,7 +25,8 @@ const tools = await Promise.all(
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
-    const image = data.image ? String(data.image) : null;
+    const fallbackImage = toolImageBySlug.get(slug) ?? null;
+    const image = data.image ? String(data.image) : fallbackImage;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     return { slug, title, category, price_model, image, tags };
   })
