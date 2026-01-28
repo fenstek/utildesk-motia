@@ -1,0 +1,51 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Utildesk", description = "Tools & Guides für AI, Automatisierung und Produktivität" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="/" class="brand">Utildesk</a>
+          <div class="nav-links">
+            <a href="/tools/">Tools</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-brand">Utildesk</p>
+          <div class="footer-links">
+            <a href="/tools/">Tools</a>
+            <a href="https://github.com/fenstek/utildesk-motia" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Warm minimal SaaS directory.</p>
+      </div>
+    </footer>
+  </body>
+</html>
