@@ -93,6 +93,7 @@ const latestTools = tools.slice(0, 6);
 >
   <!-- Hero Section -->
   <section class="hero">
+    <p class="hero-eyebrow">Kuratiert</p>
     <h1 class="hero-title">Utildesk</h1>
     <p class="hero-subtitle">
       Tools & Guides für AI, Automatisierung und Produktivität.
@@ -106,6 +107,7 @@ const latestTools = tools.slice(0, 6);
   <!-- Tag Cloud Section -->
   <section class="section">
     <div class="section-header">
+      <p class="section-eyebrow">Themen</p>
       <h2 class="section-title">Nach Themen durchsuchen</h2>
       <p class="section-subtitle">
         Finde Tools nach Tags und Kategorien
@@ -130,9 +132,38 @@ const latestTools = tools.slice(0, 6);
     )}
   </section>
 
+  <!-- How it Works Section -->
+  <section class="section how-it-works">
+    <div class="section-header">
+      <p class="section-eyebrow">Wie es funktioniert</p>
+      <h2 class="section-title">In drei ruhigen Schritten</h2>
+      <p class="section-subtitle">
+        Finde Tools, die zu deinem Workflow passen — klar, kuratiert, ohne Ablenkung.
+      </p>
+    </div>
+    <div class="grid grid-3 how-grid">
+      <div class="card how-card">
+        <p class="how-step">1</p>
+        <h3>Stöbern & filtern</h3>
+        <p>Suche nach Themen, Kategorien oder Tags und finde schnell passende Tools.</p>
+      </div>
+      <div class="card how-card">
+        <p class="how-step">2</p>
+        <h3>Kurz prüfen</h3>
+        <p>Sieh dir die wichtigsten Fakten an — Preis, Kategorie und Nutzen im Überblick.</p>
+      </div>
+      <div class="card how-card">
+        <p class="how-step">3</p>
+        <h3>Direkt einsetzen</h3>
+        <p>Öffne das Tool, teste es und integriere es in deinen Workflow.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Latest Tools Section -->
   <section class="section">
     <div class="section-header">
+      <p class="section-eyebrow">Neu</p>
       <h2 class="section-title">Neueste Tools</h2>
       <p class="section-subtitle">
         Eine Auswahl aus unserem Verzeichnis
@@ -140,8 +171,11 @@ const latestTools = tools.slice(0, 6);
     </div>
 
     <div class="tools-grid">
-      {latestTools.map((tool) => (
-        <a href={`/tools/${tool.slug}/`} class="card tool-card">
+      {latestTools.map((tool, index) => (
+        <a
+          href={`/tools/${tool.slug}/`}
+          class={`card tool-card${index === 0 ? " is-featured" : ""}`}
+        >
           <div class="tool-header">
             <div class="tool-image">
               {tool.image ? (
