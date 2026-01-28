@@ -9,9 +9,18 @@ const toolsDir = join(process.cwd(), "content", "tools");
 const toolImagesDir = join(process.cwd(), "public", "images", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
-const toolImageFiles = await readdir(toolImagesDir);
+let toolImageFiles: string[] = [];
+try {
+  toolImageFiles = await readdir(toolImagesDir);
+} catch {
+  toolImageFiles = [];
+}
+const imageExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg"]);
 const toolImageBySlug = new Map(
-  toolImageFiles.map((file) => {
+  toolImageFiles.filter((file) => {
+    const extension = parse(file).ext.toLowerCase();
+    return imageExtensions.has(extension);
+  }).map((file) => {
     const { name } = parse(file);
     return [name, `/images/tools/${file}`];
   })
