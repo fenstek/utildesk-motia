@@ -1,4 +1,5 @@
 ---
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
@@ -6,9 +7,8 @@ import { marked } from "marked";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
-  const files = (await readdir(toolsDir)).filter(
-    (f) => f.endsWith(".md") && !f.startsWith("_")
-  );
+  const files = (await readdir(toolsDir))
+    .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
   const paths = await Promise.all(
     files.map(async (file) => {
@@ -22,61 +22,6 @@ export async function getStaticPaths() {
   return paths;
 }
 
-function normalizeTags(value) {
-  if (!value) return [];
-  if (Array.isArray(value)) return value.map(String).map((s) => s.trim()).filter(Boolean);
-  if (typeof value === "string") {
-    return value.split(",").map((s) => s.trim()).filter(Boolean);
-  }
-  return [];
-}
-
-/**
- * Convert a "FAQ" section rendered by marked:
- * <h2>FAQ</h2> then repeated <h3>Question</h3> ...answer html...
- * into <details>/<summary>.
- */
-function faqToAccordion(html) {
-  const reSection = /<h2[^>]*>\s*FAQ\s*<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/i;
-  const m = html.match(reSection);
-  if (!m) return html;
-
-  const sectionBody = m[1];
-
-  // Split by <h3>...</h3>
-  const parts = sectionBody.split(/<h3[^>]*>/i);
-  if (parts.length < 2) return html;
-
-  // parts[0] is preface before first h3
-  const items = [];
-  for (let i = 1; i < parts.length; i++) {
-    const chunk = parts[i];
-    const endTitle = chunk.search(/<\/h3>/i);
-    if (endTitle === -1) continue;
-
-    const q = chunk.slice(0, endTitle).replace(/<[^>]+>/g, "").trim();
-    const a = chunk.slice(endTitle).replace(/<\/h3>/i, "").trim();
-
-    if (!q) continue;
-
-    items.push(
-      `<details class="faq-item">
-         <summary class="faq-question">${q}</summary>
-         <div class="faq-answer">${a}</div>
-       </details>`
-    );
-  }
-
-  const accordion =
-    `<section class="faq-accordion">` +
-    items.join("") +
-    `</section>`;
-
-  // Replace entire FAQ section (including its body) with h2 + accordion
-  const replaced = html.replace(reSection, `<h2>FAQ</h2>${accordion}`);
-  return replaced;
-}
-
 const { slug } = Astro.params;
 
 const filePath = join(process.cwd(), "content", "tools", `${slug}.md`);
@@ -84,51 +29,59 @@ const raw = await readFile(filePath, "utf-8");
 const { data, content } = matter(raw);
 
 const title = String(data.title ?? slug);
-const category = data.category ? String(data.category) : "";
-const price_model = data.price_model ? String(data.price_model) : "";
-const tags = normalizeTags(data.tags);
+const category = data.category ? String(data.category) : null;
+const price_model = data.price_model ? String(data.price_model) : null;
+const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+const image = data.image ? String(data.image) : null;
 
+// Render Markdown to HTML
 let html = marked.parse(content);
 
 // Remove first H1 from markdown to avoid duplicate title
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 
-// Convert FAQ section to accordion
-html = faqToAccordion(html);
+// Remove image from markdown if it exists (we show it separately)
+if (image) {
+  const imgPattern = new RegExp(`<p>\\s*<img[^>]+src=["']${image.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}["'][^>]*>\\s*</p>`, 'gi');
+  html = String(html).replace(imgPattern, "");
+}
 ---
 
-<html lang="de">
-  <head>
-    <link rel="stylesheet" href="/styles/global.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-  </head>
+<BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="/tools/">← Zurück zu allen Tools</a>
+  </nav>
 
-  <body>
-    <main>
-      <p class="breadcrumb"><a href="/tools/">← Tools</a></p>
+  <!-- Tool Header -->
+  <div class="tool-detail-header">
+    <h1 class="tool-detail-title">{title}</h1>
 
-      <h1 class="h1">{title}</h1>
+    <!-- Badges -->
+    {(category || price_model || tags.length > 0) && (
+      <div class="tool-detail-badges">
+        {category && (
+          <span class="badge badge-category">{category}</span>
+        )}
+        {price_model && (
+          <span class="badge badge-price">{price_model}</span>
+        )}
+        {tags.map((tag) => (
+          <span class="badge badge-tag">{tag}</span>
+        ))}
+      </div>
+    )}
 
-      {(category || price_model) ? (
-        <div class="pills" aria-label="Meta">
-          {category ? <span class="pill">{category}</span> : null}
-          {price_model ? <span class="pill">{price_model}</span> : null}
-        </div>
-      ) : null}
+    <!-- Image -->
+    {image && (
+      <img
+        src={image}
+        alt={title}
+        class="tool-detail-image"
+      />
+    )}
+  </div>
 
-      {tags.length ? (
-        <div class="pills" style="margin-top:10px;" aria-label="Tags">
-          {tags.map((t) => <span class="pill pill--tag">{t}</span>)}
-        </div>
-      ) : null}
-
-      {data.image ? (
-        <img src={String(data.image)} alt={title} style="max-width: 100%; height: auto; margin-top: 14px; border-radius: 14px; border: 1px solid var(--border);" />
-      ) : null}
-
-      <article class="card article" set:html={html}></article>
-    </main>
-  </body>
-</html>
+  <!-- Article Content -->
+  <article class="card article" set:html={html}></article>
+</BaseLayout>
