@@ -83,7 +83,6 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
   <!-- Tag Filter Row -->
   {sortedTags.length > 0 && (
     <div class="tag-filter-row" id="tag-filter-row">
-      <label class="tag-filter-label">Nach Tags filtern:</label>
       <div class="tag-filter-list" id="tag-filter-list">
         {sortedTags.map((tag) => (
           <a
