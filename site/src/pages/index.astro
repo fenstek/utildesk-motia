@@ -96,22 +96,22 @@ const latestTools = tools.slice(0, 6);
       </p>
     </div>
 
-    <div class="tools-grid">
+    <div class="home-tools-grid">
       {latestTools.map((tool) => (
         <a href={`/tools/${tool.slug}/`} class="card tool-card">
           <div class="tool-header">
-            <div class="tool-image">
+            <div class="home-tool-image">
               {tool.image ? (
                 <img src={tool.image} alt={tool.title} />
               ) : null}
             </div>
-            <div class="tool-info">
-              <h3 class="tool-title">{tool.title}</h3>
-              <p class="tool-meta">{tool.slug}</p>
-{tool.excerpt && <p class="tool-excerpt">{tool.excerpt}</p>}
+            <div class="home-tool-info">
+              <h3 class="home-tool-title">{tool.title}</h3>
+              <p class="home-tool-meta">{tool.slug}</p>
+{tool.excerpt && <p class="home-tool-excerpt">{tool.excerpt}</p>}
             </div>
           </div>
-          <div class="tool-badges">
+          <div class="home-tool-badges">
             {tool.category && (
               <span class="badge badge-category">{tool.category}</span>
             )}
