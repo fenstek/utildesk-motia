@@ -1,26 +1,50 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { join, parse } from "node:path";
 import matter from "gray-matter";
 
 // Load tools and build tag frequency map
 const toolsDir = join(process.cwd(), "content", "tools");
+const toolImagesDir = join(process.cwd(), "public", "images", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+const toolImageFiles = await readdir(toolImagesDir);
+const toolImageBySlug = new Map(
+  toolImageFiles.map((file) => {
+    const { name } = parse(file);
+    return [name, `/images/tools/${file}`];
+  })
+);
+
+const buildExcerpt = (description: string | null, content: string) => {
+  const source = description ?? content;
+  const cleaned = source
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[#>*_`~]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!cleaned) return null;
+  return cleaned.length > 140 ? `${cleaned.slice(0, 137)}…` : cleaned;
+};
 
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
-    const image = data.image ? String(data.image) : null;
+    const description = data.description ? String(data.description) : null;
+    const fallbackImage = toolImageBySlug.get(slug) ?? null;
+    const image = data.image ? String(data.image) : fallbackImage;
+    const excerpt = buildExcerpt(description, content);
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    return { slug, title, category, price_model, image, tags };
+    return { slug, title, category, price_model, image, excerpt, tags };
   })
 );
 
@@ -118,6 +142,7 @@ const latestTools = tools.slice(0, 6);
             <div class="tool-info">
               <h3 class="tool-title">{tool.title}</h3>
               <p class="tool-meta">{tool.slug}</p>
+              {tool.excerpt && <p class="tool-excerpt">{tool.excerpt}</p>}
             </div>
           </div>
           <div class="tool-badges">
