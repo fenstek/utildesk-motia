@@ -72,20 +72,38 @@ tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
   <section class="tools-grid">
     {tools.map((t) => (
-      <a class="tool-card" href={"/tools/" + t.slug + "/"}>
-        {t.image ? <img class="thumb" src={t.image} alt="" loading="lazy" /> : null}
+      <article class="tool-card">
+        <a class="tool-link" href={"/tools/" + t.slug + "/"} aria-label={t.title}>
+          {t.image ? <img class="thumb" src={t.image} alt="" loading="lazy" /> : null}
+        </a>
+
         <div class="card-body">
-          <div class="card-title">{t.title}</div>
-          {t.excerpt ? <p class="excerpt">{t.excerpt}</p> : null}
+          <a class="tool-link" href={"/tools/" + t.slug + "/"} style="display:block">
+            <div class="card-title">{t.title}</div>
+            {t.excerpt ? <p class="excerpt">{t.excerpt}</p> : null}
+          </a>
+
           <div class="pills" aria-label="Meta">
-            {t.category ? <a class="pill" href={"/tools?category=" + t.category}><strong>Category</strong> {t.category}</a> : null}
-            {t.price_model ? <a class="pill" href={"/tools?price=" + t.price_model}><strong>Preis</strong> {t.price_model}</a> : null}
+            {t.category ? (
+              <a class="pill" href={"/tools?category=" + encodeURIComponent(t.category)}>
+                <strong>Category</strong> {t.category}
+              </a>
+            ) : null}
+
+            {t.price_model ? (
+              <a class="pill" href={"/tools?price=" + encodeURIComponent(t.price_model)}>
+                <strong>Preis</strong> {t.price_model}
+              </a>
+            ) : null}
+
             {(t.tags || []).slice(0, 2).map((tag) => (
-              <a class="pill pill--tag" href={"/tools?tag=" + tag}>{tag}</a>
+              <a class="pill pill--tag" href={"/tools?tag=" + encodeURIComponent(tag)}>
+                {tag}
+              </a>
             ))}
           </div>
         </div>
-      </a>
+      </article>
     ))}
   </section>
 </BaseLayout>
