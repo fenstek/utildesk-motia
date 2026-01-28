@@ -77,7 +77,7 @@ const latestTools = tools.slice(0, 6);
   description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools."
 >
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero home-hero">
     <h1 class="hero-title">Utildesk</h1>
     <p class="hero-subtitle">
       Tools & Guides für AI, Automatisierung und Produktivität.
@@ -89,16 +89,9 @@ const latestTools = tools.slice(0, 6);
   </section>
 
   <!-- Tag Cloud Section -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Nach Themen durchsuchen</h2>
-      <p class="section-subtitle">
-        Finde Tools nach Tags und Kategorien
-      </p>
-    </div>
-
+  <section class="section home-section home-tags">
     {sortedTags.length > 0 ? (
-      <div class="tag-cloud">
+      <div class="tag-cloud home-tags-cloud">
         {sortedTags.map(([tag, count]) => (
           <a
             href={`/tools/?tag=${encodeURIComponent(tag)}`}
@@ -116,8 +109,8 @@ const latestTools = tools.slice(0, 6);
   </section>
 
   <!-- Featured Tools Section -->
-  <section class="section">
-    <div class="section-header">
+  <section class="section home-section">
+    <div class="section-header home-section-header">
       <h2 class="section-title">Featured Tools</h2>
       <p class="section-subtitle">
         Eine Auswahl aus unserem Verzeichnis
