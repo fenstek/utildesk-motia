@@ -1,240 +1,99 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const toolsDir = join(process.cwd(), "content", "tools");
-const files = (await readdir(toolsDir))
-  .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+
+const toolImagesDir = join(process.cwd(), "public", "images", "tools");
+let toolImageFiles = [];
+try { toolImageFiles = await readdir(toolImagesDir); } catch {}
+const toolImageBySlug = new Map(
+  toolImageFiles.map(f => [f.replace(/\..+$/, ""), `/images/tools/${f}`])
+);
+
+const files = (await readdir(toolsDir)).filter(
+  (f) => f.endsWith(".md") && !f.startsWith("_")
+);
+
+function extractFirstMarkdownImage(md) {
+  const m = md.match(/!\[[^\]]*\]\(([^)]+)\)/);
+  return m ? m[1] : null;
+}
+
+function stripMarkdown(md) {
+  return md
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, "") // images
+    .replace(/\[([^\]]*)\]\([^)]+\)/g, "$1") // links -> text
+    .replace(/^#{1,6}\s+.*$/gm, "") // headings
+    .replace(/```[\s\S]*?```/g, "") // code blocks
+    .replace(/`[^`]*`/g, "") // inline code
+    .replace(/[*_~>#-]/g, " ") // some md chars
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function makeExcerpt(md, max = 170) {
+  const text = stripMarkdown(md);
+  if (!text) return "";
+  return text.length > max ? text.slice(0, max - 1).trimEnd() + "…" : text;
+}
+
+function normalizeTags(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.map(String).map((s) => s.trim()).filter(Boolean);
+  if (typeof value === "string") return value.split(",").map((s) => s.trim()).filter(Boolean);
+  return [];
+}
 
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
+
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
-    const category = data.category ? String(data.category) : null;
-    const price_model = data.price_model ? String(data.price_model) : null;
-    const image = data.image ? String(data.image) : null;
-    const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    return { slug, title, category, price_model, image, tags };
+
+    const category = data.category ? String(data.category) : "";
+    const price_model = data.price_model ? String(data.price_model) : "";
+    const tags = normalizeTags(data.tags);
+
+    const image =
+      (data.image ? String(data.image) : "") ||
+      extractFirstMarkdownImage(content) ||
+      "";
+
+    const excerpt = makeExcerpt(content, 170);
+
+    return { slug, title, category, price_model, tags, image, excerpt };
   })
 );
 
 tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
-
-// Build unique tag list
-const allTags = new Set<string>();
-tools.forEach((tool) => {
-  tool.tags.forEach((tag) => allTags.add(tag));
-});
-const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
 ---
 
-<BaseLayout
-  title="Tools — Utildesk"
-  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools"
->
-  <!-- Hero -->
-  <section class="hero" style="padding: 60px 0 40px;">
-    <h1 class="hero-title">Tools</h1>
-    <p class="hero-subtitle">
-      Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.
-      Durchsuche alle Tools oder filtere nach Tags.
-    </p>
-  </section>
+<BaseLayout title="Tools — utildesk" description="Kuratierte Tools mit klaren Kurzbeschreibungen.">
+  <h1>Tools</h1>
+  <p class="lead">Ein kuratiertes Verzeichnis — kurz, klar, ohne Marketing-Lärm.</p>
 
-  <!-- Tag Filter Row -->
-  {sortedTags.length > 0 && (
-    <div class="tag-filter-row" id="tag-filter-row">
-      <label class="tag-filter-label">Nach Tags filtern:</label>
-      <div class="tag-filter-list" id="tag-filter-list">
-        {sortedTags.map((tag) => (
-          <a
-            href={`/tools/?tag=${encodeURIComponent(tag)}`}
-            class="tag-filter-item"
-            data-tag={tag}
-          >
-            {tag}
-          </a>
-        ))}
-        <a href="/tools/" class="clear-filter-btn" id="clear-filter-btn" style="display: none;">
-          Filter löschen
-        </a>
-      </div>
-    </div>
-  )}
-
-  <!-- Search -->
-  <div class="search-wrapper">
-    <input
-      type="text"
-      id="search-input"
-      class="search-input"
-      placeholder="Tools durchsuchen (z.B. ChatGPT, AI, automation)..."
-      autocomplete="off"
-    />
-  </div>
-
-  <!-- Tools Grid -->
-  <div class="tools-grid" id="tools-grid">
-    {tools.map((tool) => (
-      <a
-        href={`/tools/${tool.slug}/`}
-        class="card tool-card"
-        data-search-title={tool.title.toLowerCase()}
-        data-search-slug={tool.slug.toLowerCase()}
-        data-search-category={tool.category?.toLowerCase() || ""}
-        data-tags={tool.tags.join(",")}
-      >
-        <div class="tool-header">
-          <div class="tool-image">
-            {tool.image ? (
-              <img src={tool.image} alt={tool.title} />
-            ) : null}
+  <section class="tools-grid">
+    {tools.map((t) => (
+      <a class="tool-card" href={"/tools/" + t.slug + "/"}>
+        {t.image ? <img class="thumb" src={t.image} alt="" loading="lazy" /> : null}
+        <div class="card-body">
+          <div class="card-title">{t.title}</div>
+          {t.excerpt ? <p class="excerpt">{t.excerpt}</p> : null}
+          <div class="pills" aria-label="Meta">
+            {t.category ? <span class="pill"><strong>Category</strong> {t.category}</span> : null}
+            {t.price_model ? <span class="pill"><strong>Preis</strong> {t.price_model}</span> : null}
+            {(t.tags || []).slice(0, 2).map((tag) => (
+              <span class="pill pill--tag">{tag}</span>
+            ))}
           </div>
-          <div class="tool-info">
-            <h3 class="tool-title">{tool.title}</h3>
-            <p class="tool-meta">{tool.slug}</p>
-          </div>
-        </div>
-        <div class="tool-badges">
-          {tool.category && (
-            <span class="badge badge-category">{tool.category}</span>
-          )}
-          {tool.price_model && (
-            <span class="badge badge-price">{tool.price_model}</span>
-          )}
         </div>
       </a>
     ))}
-  </div>
-
-  <!-- No results message (hidden by default) -->
-  <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
-    <p style="color: var(--text-muted); font-size: 1.125rem;">
-      Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.
-    </p>
-  </div>
-
-  <!-- Client-side search + tag filter script (inline, no build tools) -->
-  <script is:inline>
-    (function() {
-      const searchInput = document.getElementById('search-input');
-      const toolsGrid = document.getElementById('tools-grid');
-      const noResults = document.getElementById('no-results');
-      const cards = toolsGrid.querySelectorAll('.tool-card');
-      const tagFilterItems = document.querySelectorAll('.tag-filter-item');
-      const clearFilterBtn = document.getElementById('clear-filter-btn');
-
-      let activeTag = null;
-
-      // Read URL param ?tag=
-      const urlParams = new URLSearchParams(window.location.search);
-      const initialTag = urlParams.get('tag');
-
-      if (initialTag) {
-        activeTag = initialTag.toLowerCase();
-        // Highlight active tag
-        tagFilterItems.forEach(function(item) {
-          if (item.getAttribute('data-tag').toLowerCase() === activeTag) {
-            item.classList.add('active');
-          }
-        });
-        if (clearFilterBtn) {
-          clearFilterBtn.style.display = 'inline-flex';
-        }
-      }
-
-      // Filter function
-      function filterTools() {
-        const query = searchInput.value.toLowerCase().trim();
-        let visibleCount = 0;
-
-        cards.forEach(function(card) {
-          const title = card.getAttribute('data-search-title') || '';
-          const slug = card.getAttribute('data-search-slug') || '';
-          const category = card.getAttribute('data-search-category') || '';
-          const tags = card.getAttribute('data-tags') || '';
-          const tagList = tags.split(',').map(function(t) { return t.trim().toLowerCase(); });
-
-          // Check search query match
-          const searchMatch = !query ||
-                             title.includes(query) ||
-                             slug.includes(query) ||
-                             category.includes(query) ||
-                             tags.toLowerCase().includes(query);
-
-          // Check tag filter match
-          const tagMatch = !activeTag || tagList.includes(activeTag);
-
-          if (searchMatch && tagMatch) {
-            card.style.display = 'flex';
-            visibleCount++;
-          } else {
-            card.style.display = 'none';
-          }
-        });
-
-        // Show/hide no results message
-        if (visibleCount === 0) {
-          toolsGrid.style.display = 'none';
-          noResults.style.display = 'block';
-        } else {
-          toolsGrid.style.display = 'grid';
-          noResults.style.display = 'none';
-        }
-      }
-
-      // Search input listener
-      searchInput.addEventListener('input', filterTools);
-
-      // Tag filter click listener
-      tagFilterItems.forEach(function(item) {
-        item.addEventListener('click', function(e) {
-          e.preventDefault();
-          const tag = item.getAttribute('data-tag').toLowerCase();
-
-          // Toggle active tag
-          if (activeTag === tag) {
-            activeTag = null;
-            tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
-            if (clearFilterBtn) {
-              clearFilterBtn.style.display = 'none';
-            }
-            // Update URL
-            history.pushState(null, '', '/tools/');
-          } else {
-            activeTag = tag;
-            tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
-            item.classList.add('active');
-            if (clearFilterBtn) {
-              clearFilterBtn.style.display = 'inline-flex';
-            }
-            // Update URL
-            history.pushState(null, '', '/tools/?tag=' + encodeURIComponent(tag));
-          }
-
-          filterTools();
-        });
-      });
-
-      // Clear filter button listener
-      if (clearFilterBtn) {
-        clearFilterBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          activeTag = null;
-          tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
-          clearFilterBtn.style.display = 'none';
-          history.pushState(null, '', '/tools/');
-          filterTools();
-        });
-      }
-
-      // Initial filter on page load
-      filterTools();
-    })();
-  </script>
+  </section>
 </BaseLayout>
