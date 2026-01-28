@@ -213,6 +213,42 @@ a:hover {
   opacity: 0.85;
 }
 
+/* Home layout spacing */
+.home-hero {
+  padding: 48px 0 32px;
+}
+
+.home-hero .hero-subtitle {
+  margin-bottom: 20px;
+}
+
+.home-section {
+  padding: 32px 0;
+}
+
+.home-section-header {
+  margin-bottom: 24px;
+}
+
+.home-tags {
+  padding: 16px 0 24px;
+}
+
+.home-tags .tag-cloud {
+  padding: 12px 0;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .home-hero {
+    padding: 40px 0 24px;
+  }
+
+  .home-section {
+    padding: 24px 0;
+  }
+}
+
 /* Cards - Swiss Editorial style (thin borders, no shadows) */
 .card {
   background: var(--surface);
