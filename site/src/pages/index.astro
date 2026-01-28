@@ -9,18 +9,36 @@ const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
+const stripMarkdown = (text: string) =>
+  text
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
+    .replace(/[`*_>#-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const getExcerpt = (content: string) => {
+  const paragraphs = content.split(/\n\s*\n/);
+  for (const paragraph of paragraphs) {
+    const cleaned = stripMarkdown(paragraph);
+    if (cleaned) return cleaned;
+  }
+  return "";
+};
+
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    return { slug, title, category, price_model, image, tags };
+    const excerpt = getExcerpt(content);
+    return { slug, title, category, price_model, image, tags, excerpt };
   })
 );
 
@@ -97,36 +115,32 @@ const latestTools = tools.slice(0, 6);
     )}
   </section>
 
-  <!-- Latest Tools Section -->
+  <!-- Featured Tools Section -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Neueste Tools</h2>
+      <h2 class="section-title">Featured Tools</h2>
       <p class="section-subtitle">
         Eine Auswahl aus unserem Verzeichnis
       </p>
     </div>
 
-    <div class="tools-grid">
+    <div class="home-card-grid">
       {latestTools.map((tool) => (
-        <a href={`/tools/${tool.slug}/`} class="card tool-card">
-          <div class="tool-header">
-            <div class="tool-image">
+        <a href={`/tools/${tool.slug}/`} class="home-card">
+          <div class="home-card-media">
+            <div class="home-card-img">
               {tool.image ? (
-                <img src={tool.image} alt={tool.title} />
-              ) : null}
+                <img src={tool.image} alt={tool.title} loading="lazy" />
+              ) : (
+                <span class="home-card-img-placeholder" aria-hidden="true" />
+              )}
             </div>
-            <div class="tool-info">
-              <h3 class="tool-title">{tool.title}</h3>
-              <p class="tool-meta">{tool.slug}</p>
+            <div class="home-card-body">
+              <h3 class="home-card-title">{tool.title}</h3>
+              <p class="home-card-desc">
+                {tool.excerpt || "Kurzbeschreibung folgt in Kürze."}
+              </p>
             </div>
-          </div>
-          <div class="tool-badges">
-            {tool.category && (
-              <span class="badge badge-category">{tool.category}</span>
-            )}
-            {tool.price_model && (
-              <span class="badge badge-price">{tool.price_model}</span>
-            )}
           </div>
         </a>
       ))}
