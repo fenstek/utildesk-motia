@@ -8,18 +8,74 @@ const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
+const stripMarkdown = (text: string) =>
+  text
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
+    .replace(/[`*_>#-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const getExcerpt = (content: string) => {
+  const paragraphs = content.split(/\n\s*\n/);
+  for (const paragraph of paragraphs) {
+    if (paragraph.trim().startsWith("#")) continue;
+    const cleaned = stripMarkdown(paragraph);
+    if (cleaned) return cleaned;
+  }
+  return "";
+};
+
+const getImageFromContent = (content: string) => {
+  const match = content.match(/!\[[^\]]*]\(([^)]+)\)/);
+  if (!match?.[1]) return null;
+  return match[1].trim();
+};
+
+const normalizeImagePath = (path: string | null) => {
+  if (!path) return null;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  if (path.startsWith("/")) return path;
+  return `/${path}`;
+};
+
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
+    const icon = data.icon ? String(data.icon) : null;
+    const cover = data.cover ? String(data.cover) : null;
+    const logo = data.logo ? String(data.logo) : null;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    return { slug, title, category, price_model, image, tags };
+    const description = data.description
+      ? String(data.description)
+      : data.summary
+        ? String(data.summary)
+        : data.excerpt
+          ? String(data.excerpt)
+          : data.tagline
+            ? String(data.tagline)
+            : "";
+    const excerpt = description || getExcerpt(content);
+    const contentImage = getImageFromContent(content);
+    const cardImage = normalizeImagePath(
+      image ?? icon ?? cover ?? logo ?? contentImage
+    );
+    return {
+      slug,
+      title,
+      category,
+      price_model,
+      image: cardImage,
+      tags,
+      excerpt,
+    };
   })
 );
 
@@ -92,12 +148,15 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
         <div class="tool-header">
           <div class="tool-image">
             {tool.image ? (
-              <img src={tool.image} alt={tool.title} />
-            ) : null}
+              <img src={tool.image} alt={tool.title} loading="lazy" />
+            ) : (
+              <span class="tools-image-placeholder" aria-hidden="true" />
+            )}
           </div>
           <div class="tool-info">
             <h3 class="tool-title">{tool.title}</h3>
             <p class="tool-meta">{tool.slug}</p>
+            <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
           </div>
         </div>
         <div class="tool-badges">
