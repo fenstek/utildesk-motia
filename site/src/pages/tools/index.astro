@@ -173,7 +173,12 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
           <div class="tool-image">
             {brandIndex?.[tool.slug] ? (
               <span class="tool-card-logo">
-                <img src={`/brands/${brandIndex[tool.slug]}`} alt="" loading="lazy" />
+                <img
+                  src={`/brands/${brandIndex[tool.slug]}`}
+                  alt=""
+                  loading="lazy"
+                  class="tool-logo"
+                />
               </span>
             ) : tool.image ? (
               <img src={tool.image} alt={tool.title} loading="lazy" />

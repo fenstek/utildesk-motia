@@ -187,7 +187,12 @@ const latestTools = tools.slice(0, 6);
             <div class="home-card-img">
               {brandIndex?.[tool.slug] ? (
                 <span class="home-card-logo">
-                  <img src={`/brands/${brandIndex[tool.slug]}`} alt="" loading="lazy" />
+                  <img
+                    src={`/brands/${brandIndex[tool.slug]}`}
+                    alt=""
+                    loading="lazy"
+                    class="tool-logo"
+                  />
                 </span>
               ) : tool.homeCardImage ? (
                 <img src={tool.homeCardImage} alt={tool.title} loading="lazy" />
