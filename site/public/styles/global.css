@@ -428,12 +428,18 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-muted);
 }
 
 .tool-card-logo img {
   width: 70%;
   height: 70%;
   object-fit: contain;
+}
+
+.tool-card-logo svg {
+  width: 60%;
+  height: 60%;
 }
 
 .tool-info {
@@ -540,12 +546,18 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-muted);
 }
 
 .home-card-logo img {
   width: 70%;
   height: 70%;
   object-fit: contain;
+}
+
+.home-card-logo svg {
+  width: 60%;
+  height: 60%;
 }
 
 .home-card-img-placeholder {
