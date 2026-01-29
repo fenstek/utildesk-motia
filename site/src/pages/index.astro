@@ -44,6 +44,7 @@ const tools = await Promise.all(
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
     const homeImage = data.homeImage ? String(data.homeImage) : null;
+    const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const icon = data.icon ? String(data.icon) : null;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     const description = data.description
@@ -55,7 +56,7 @@ const tools = await Promise.all(
           : "";
     const excerpt = description || getExcerpt(content);
     const contentImage = getImageFromContent(content);
-    const homeCardImage = homeImage ?? image ?? icon ?? contentImage;
+    const homeCardImage = brandLogo ?? homeImage ?? image ?? icon ?? contentImage;
     return {
       slug,
       title,
@@ -63,6 +64,7 @@ const tools = await Promise.all(
       price_model,
       image,
       homeImage,
+      brandLogo,
       tags,
       excerpt,
       homeCardImage,
@@ -150,7 +152,11 @@ const latestTools = tools.slice(0, 6);
         <a href={`/tools/${tool.slug}/`} class="home-card">
           <div class="home-card-media">
             <div class="home-card-img">
-              {tool.homeCardImage ? (
+              {tool.brandLogo ? (
+                <span class="home-card-logo">
+                  <img src={tool.brandLogo} alt={tool.title} loading="lazy" />
+                </span>
+              ) : tool.homeCardImage ? (
                 <img src={tool.homeCardImage} alt={tool.title} loading="lazy" />
               ) : (
                 <span class="home-card-img-placeholder" aria-hidden="true" />
