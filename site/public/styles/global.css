@@ -413,9 +413,26 @@ a:hover {
   object-fit: cover;
 }
 
+.tools-image-placeholder {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.3);
+}
+
 .tool-info {
   flex: 1;
   min-width: 0;
+}
+
+.tools-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .tool-title {
