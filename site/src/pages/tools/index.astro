@@ -68,6 +68,7 @@ const tools = await Promise.all(
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
     const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
+    const brand = data.brand ? String(data.brand) : null;
     const icon = data.icon ? String(data.icon) : null;
     const cover = data.cover ? String(data.cover) : null;
     const logo = data.logo ? String(data.logo) : null;
@@ -88,6 +89,11 @@ const tools = await Promise.all(
     )
       ? `/images/logos/${slug}.svg`
       : null;
+    const brandAssetLogo = brand && existsSync(
+      join(process.cwd(), "public", "brands", `${brand}.svg`)
+    )
+      ? `/brands/${brand}.svg`
+      : null;
     const cardLogo = normalizeImagePath(brandLogo) ?? localLogoPath;
     const cardImage = normalizeImagePath(image ?? icon ?? cover ?? logo ?? contentImage);
     return {
@@ -97,6 +103,8 @@ const tools = await Promise.all(
       price_model,
       image: cardImage,
       brandLogo: cardLogo,
+      brand,
+      brandAssetLogo,
       tags,
       excerpt,
       fallbackIcon: resolveCategoryIcon(category, tags),
@@ -172,7 +180,13 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       >
         <div class="tool-header">
           <div class="tool-image">
-            {tool.brandLogo ? (
+            {tool.brand ? (
+              tool.brandAssetLogo ? (
+                <span class="tool-card-logo">
+                  <img src={tool.brandAssetLogo} alt="" loading="lazy" />
+                </span>
+              ) : null
+            ) : tool.brandLogo ? (
               <span class="tool-card-logo">
                 <img src={tool.brandLogo} alt={tool.title} loading="lazy" />
               </span>
