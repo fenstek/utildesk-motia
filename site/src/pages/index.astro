@@ -4,6 +4,7 @@ import { existsSync } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import brandIndex from "../data/brands-index.json";
 
 // Load tools and build tag frequency map
 const toolsDir = join(process.cwd(), "content", "tools");
@@ -69,7 +70,6 @@ const tools = await Promise.all(
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
     const homeImage = data.homeImage ? String(data.homeImage) : null;
-    const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const icon = data.icon ? String(data.icon) : null;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     const description = data.description
@@ -86,7 +86,7 @@ const tools = await Promise.all(
     )
       ? `/images/logos/${slug}.svg`
       : null;
-    const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath;
+    const homeCardLogo = localLogoPath;
     const homeCardImage = normalizeImagePath(homeImage ?? image ?? icon ?? contentImage);
     return {
       slug,
@@ -95,7 +95,7 @@ const tools = await Promise.all(
       price_model,
       image,
       homeImage,
-      brandLogo,
+      brandLogo: localLogoPath,
       tags,
       excerpt,
       homeCardImage,
@@ -185,9 +185,14 @@ const latestTools = tools.slice(0, 6);
         <a href={`/tools/${tool.slug}/`} class="home-card">
           <div class="home-card-media">
             <div class="home-card-img">
-              {tool.homeCardLogo ? (
+              {brandIndex?.[tool.slug] ? (
                 <span class="home-card-logo">
-                  <img src={tool.homeCardLogo} alt={tool.title} loading="lazy" />
+                  <img
+                    src={`/brands/${brandIndex[tool.slug]}`}
+                    alt=""
+                    loading="lazy"
+                    class="tool-logo"
+                  />
                 </span>
               ) : tool.homeCardImage ? (
                 <img src={tool.homeCardImage} alt={tool.title} loading="lazy" />
