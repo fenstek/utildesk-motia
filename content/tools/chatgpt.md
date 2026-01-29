@@ -4,7 +4,7 @@ slug: "chatgpt"
 category: "AI"
 tags: [ai, chatbot, text]
 price_model: "freemium"
-homepage: "https://chatgpt.com"
+homepage: "https://openai.com/"
 ---
 
 # ChatGPT
