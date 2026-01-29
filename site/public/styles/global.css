@@ -443,6 +443,11 @@ a:hover {
   object-fit: contain;
 }
 
+.tool-logo {
+  max-width: 48px;
+  max-height: 48px;
+}
+
 .tool-card-logo svg {
   width: 60%;
   height: 60%;
