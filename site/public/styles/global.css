@@ -213,6 +213,42 @@ a:hover {
   opacity: 0.85;
 }
 
+/* Home layout spacing */
+.home-hero {
+  padding: 48px 0 32px;
+}
+
+.home-hero .hero-subtitle {
+  margin-bottom: 20px;
+}
+
+.home-section {
+  padding: 32px 0;
+}
+
+.home-section-header {
+  margin-bottom: 24px;
+}
+
+.home-tags {
+  padding: 16px 0 24px;
+}
+
+.home-tags .tag-cloud {
+  padding: 12px 0;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .home-hero {
+    padding: 40px 0 24px;
+  }
+
+  .home-section {
+    padding: 24px 0;
+  }
+}
+
 /* Cards - Swiss Editorial style (thin borders, no shadows) */
 .card {
   background: var(--surface);
@@ -377,9 +413,48 @@ a:hover {
   object-fit: cover;
 }
 
+.tools-image-placeholder {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.3);
+}
+
+.tool-card-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(148, 163, 184, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.tool-card-logo img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.tool-card-logo svg {
+  width: 60%;
+  height: 60%;
+}
+
 .tool-info {
   flex: 1;
   min-width: 0;
+}
+
+.tools-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .tool-title {
@@ -399,6 +474,121 @@ a:hover {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: auto;
+}
+
+/* Home Cards */
+.home-card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .home-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.home-card {
+  display: block;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.home-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.home-card-media {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.home-card-img {
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(148, 163, 184, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.home-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-card-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(148, 163, 184, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.home-card-logo img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.home-card-logo svg {
+  width: 60%;
+  height: 60%;
+}
+
+.home-card-img-placeholder {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.3);
+}
+
+.home-card-body {
+  min-width: 0;
+}
+
+.home-card-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Badges - Swiss style */

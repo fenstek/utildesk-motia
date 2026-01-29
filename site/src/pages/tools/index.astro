@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { existsSync } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
@@ -8,18 +9,98 @@ const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
+const stripMarkdown = (text: string) =>
+  text
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
+    .replace(/[`*_>#-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const getExcerpt = (content: string) => {
+  const paragraphs = content.split(/\n\s*\n/);
+  for (const paragraph of paragraphs) {
+    if (paragraph.trim().startsWith("#")) continue;
+    const cleaned = stripMarkdown(paragraph);
+    if (cleaned) return cleaned;
+  }
+  return "";
+};
+
+const getImageFromContent = (content: string) => {
+  const match = content.match(/!\[[^\]]*]\(([^)]+)\)/);
+  if (!match?.[1]) return null;
+  return match[1].trim();
+};
+
+const normalizeImagePath = (path: string | null) => {
+  if (!path) return null;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  if (path.startsWith("/")) return path;
+  return `/${path}`;
+};
+
+const resolveCategoryIcon = (category: string | null, tags: string[]) => {
+  const normalizedCategory = category ? category.toLowerCase() : "";
+  const normalizedTags = tags.map((tag) => tag.toLowerCase());
+  const combined = [normalizedCategory, ...normalizedTags].join(" ");
+
+  if (combined.includes("design") || combined.includes("ui") || combined.includes("ux")) {
+    return "design";
+  }
+  if (combined.includes("automation") || combined.includes("workflow")) {
+    return "automation";
+  }
+  if (combined.includes("ai") || combined.includes("ml") || combined.includes("machine")) {
+    return "ai";
+  }
+  return "generic";
+};
+
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
+    const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
+    const icon = data.icon ? String(data.icon) : null;
+    const cover = data.cover ? String(data.cover) : null;
+    const logo = data.logo ? String(data.logo) : null;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    return { slug, title, category, price_model, image, tags };
+    const description = data.description
+      ? String(data.description)
+      : data.summary
+        ? String(data.summary)
+        : data.excerpt
+          ? String(data.excerpt)
+          : data.tagline
+            ? String(data.tagline)
+            : "";
+    const excerpt = description || getExcerpt(content);
+    const contentImage = getImageFromContent(content);
+    const localLogoPath = existsSync(
+      join(process.cwd(), "public", "images", "logos", `${slug}.svg`)
+    )
+      ? `/images/logos/${slug}.svg`
+      : null;
+    const cardLogo = normalizeImagePath(brandLogo) ?? localLogoPath;
+    const cardImage = normalizeImagePath(image ?? icon ?? cover ?? logo ?? contentImage);
+    return {
+      slug,
+      title,
+      category,
+      price_model,
+      image: cardImage,
+      brandLogo: cardLogo,
+      tags,
+      excerpt,
+      fallbackIcon: resolveCategoryIcon(category, tags),
+    };
   })
 );
 
@@ -91,13 +172,53 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       >
         <div class="tool-header">
           <div class="tool-image">
-            {tool.image ? (
-              <img src={tool.image} alt={tool.title} />
-            ) : null}
+            {tool.brandLogo ? (
+              <span class="tool-card-logo">
+                <img src={tool.brandLogo} alt={tool.title} loading="lazy" />
+              </span>
+            ) : tool.image ? (
+              <img src={tool.image} alt={tool.title} loading="lazy" />
+            ) : tool.fallbackIcon === "ai" ? (
+              <span class="tool-card-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            ) : tool.fallbackIcon === "automation" ? (
+              <span class="tool-card-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            ) : tool.fallbackIcon === "design" ? (
+              <span class="tool-card-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            ) : (
+              <span class="tool-card-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            )}
           </div>
           <div class="tool-info">
             <h3 class="tool-title">{tool.title}</h3>
-            <p class="tool-meta">{tool.slug}</p>
+            <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
           </div>
         </div>
         <div class="tool-badges">
