@@ -480,8 +480,9 @@ a:hover {
 }
 
 .home-card-img {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1 / 1;
   border-radius: 14px;
   border: 1px solid var(--border);
   background: rgba(148, 163, 184, 0.12);
@@ -514,6 +515,10 @@ a:hover {
   font-weight: 600;
   color: var(--text);
   margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .home-card-desc {
