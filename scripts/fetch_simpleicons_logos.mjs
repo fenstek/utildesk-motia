@@ -60,13 +60,30 @@ const loadIconsFromPackage = async () => {
 };
 
 const loadIconsFromDataset = async () => {
-  const response = await fetch(
-    "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/_data/simple-icons.json"
-  );
-  if (!response.ok) {
-    throw new Error(`Failed to download Simple Icons dataset: ${response.status}`);
+  const urls = [
+    "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/data/simple-icons.json",
+    "https://unpkg.com/simple-icons/data/simple-icons.json",
+    "https://cdn.jsdelivr.net/npm/simple-icons/data/simple-icons.json",
+  ];
+  let data = null;
+  let lastError = null;
+
+  for (const url of urls) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to download Simple Icons dataset: ${response.status}`);
+      }
+      data = await response.json();
+      break;
+    } catch (error) {
+      lastError = error;
+    }
   }
-  const data = await response.json();
+
+  if (!data) {
+    throw lastError ?? new Error("Failed to download Simple Icons dataset.");
+  }
   const entries = Array.isArray(data.icons) ? data.icons : [];
   const icons = {};
 
