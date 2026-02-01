@@ -4,6 +4,7 @@ import { existsSync } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import brandIndex from "../../data/brands-index.json";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
@@ -67,7 +68,6 @@ const tools = await Promise.all(
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
     const image = data.image ? String(data.image) : null;
-    const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const icon = data.icon ? String(data.icon) : null;
     const cover = data.cover ? String(data.cover) : null;
     const logo = data.logo ? String(data.logo) : null;
@@ -88,7 +88,6 @@ const tools = await Promise.all(
     )
       ? `/images/logos/${slug}.svg`
       : null;
-    const cardLogo = normalizeImagePath(brandLogo) ?? localLogoPath;
     const cardImage = normalizeImagePath(image ?? icon ?? cover ?? logo ?? contentImage);
     return {
       slug,
@@ -96,7 +95,7 @@ const tools = await Promise.all(
       category,
       price_model,
       image: cardImage,
-      brandLogo: cardLogo,
+      brandLogo: localLogoPath,
       tags,
       excerpt,
       fallbackIcon: resolveCategoryIcon(category, tags),
@@ -172,9 +171,14 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       >
         <div class="tool-header">
           <div class="tool-image">
-            {tool.brandLogo ? (
+            {brandIndex?.[tool.slug] ? (
               <span class="tool-card-logo">
-                <img src={tool.brandLogo} alt={tool.title} loading="lazy" />
+                <img
+                  src={`/brands/${brandIndex[tool.slug]}`}
+                  alt=""
+                  loading="lazy"
+                  class="tool-logo"
+                />
               </span>
             ) : tool.image ? (
               <img src={tool.image} alt={tool.title} loading="lazy" />
