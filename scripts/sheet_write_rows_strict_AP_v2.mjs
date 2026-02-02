@@ -27,7 +27,6 @@ async function nextEmptyRow(sheets){
     range: `${SHEET_NAME}!A:A`,
   });
   const vals = res.data.values || [];
-  // scan from row 2
   for (let r = 2; r <= vals.length; r++){
     const v = String(vals[r-1]?.[0] ?? '').trim();
     if(!v) return r;
@@ -35,12 +34,19 @@ async function nextEmptyRow(sheets){
   return vals.length + 1;
 }
 
+async function readAllStdin(){
+  let data = '';
+  for await (const chunk of process.stdin) data += chunk;
+  return data;
+}
+
 async function main(){
-  const input = process.stdin.read().toString('utf8') || '';
-  if(!input.trim()) die('Provide JSON on stdin: {"rows":[[16 cells],...]}');
+  const input = (await readAllStdin()).trim();
+  if(!input) die('Provide JSON on stdin: {"rows":[[16 cells],...]}');
 
   let payload;
   try { payload = JSON.parse(input); } catch { die('Invalid JSON input'); }
+
   const rows = payload.rows;
   if(!Array.isArray(rows) || rows.length===0) die('rows must be non-empty array');
   for(const r of rows){

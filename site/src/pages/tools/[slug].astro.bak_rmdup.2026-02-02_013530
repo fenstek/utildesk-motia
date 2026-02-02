@@ -45,6 +45,22 @@ const title = String(data.title ?? slug);
 const category = data.category ? String(data.category) : null;
 const price_model = data.price_model ? String(data.price_model) : null;
 const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+const official_url = data.official_url ? String(data.official_url) : null;
+const affiliate_url_raw = data.affiliate_url ? String(data.affiliate_url) : null;
+// If no affiliate_url yet, fall back to official_url
+const affiliate_url = affiliate_url_raw && affiliate_url_raw.trim() ? affiliate_url_raw : official_url;
+
+function faviconFromUrl(url) {
+  if (!url) return null;
+  try {
+    const u = new URL(url);
+    return `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(u.hostname)}`;
+  } catch {
+    return null;
+  }
+}
+const favicon = faviconFromUrl(official_url || affiliate_url);
+
 // Render Markdown to HTML
 let html = marked.parse(content);
 

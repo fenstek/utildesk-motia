@@ -769,32 +769,6 @@ a:hover {
   line-height: 1.7;
 }
 
-
-/* === Tool page: inline logo at the start of text (left, no frame) === */
-.tool-float-logo{
-  float: left;
-  display: block;
-  width: 96px;
-  height: 96px;
-  margin: 0 28px 14px 0;
-  vertical-align: top;
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  overflow: visible;
-  text-decoration: none;
-}
-
-.tool-float-logo img{
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
-  display: block;
-}
-
-/* ensure float wraps correctly */
-.article-body{ display: flow-root; }
 .article h2 {
   margin-top: 32px;
   margin-bottom: 16px;
@@ -923,11 +897,32 @@ a:hover {
 
 
 /* === Tool page: floated favicon inside the content card === */
-@media (max-width: 640px){
+.article-body{ display: flow-root; }
+
+.tool-float-logo{
+  float: right;
+  width: 72px;
+  height: 72px;
+  margin: 6px 0 10px 14px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  text-decoration: none;
 }
 
+.tool-float-logo img{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
 
-/* Fine-tuning: text alignment vs tool logo */
-.article-body > div{
-  margin-top: 12px;
+@media (max-width: 640px){
+  .tool-float-logo{
+    float: none;
+    margin: 0 0 16px 0;
+  }
 }

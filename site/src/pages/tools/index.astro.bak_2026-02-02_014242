@@ -55,8 +55,6 @@ const resolveCategoryIcon = (category: string | null, tags: string[]) => {
   return "generic";
 };
 
-
-
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
@@ -66,10 +64,10 @@ const tools = await Promise.all(
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
-    const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : null;
     const official_url = data.official_url ? String(data.official_url) : null;
-    const providerUrl = affiliate_url || official_url;
-    const iconUrl = faviconFromUrl(providerUrl);
+    const affiliate_url_raw = data.affiliate_url ? String(data.affiliate_url) : null;
+    const affiliate_url = affiliate_url_raw && affiliate_url_raw.trim() ? affiliate_url_raw : official_url;
+    const favicon = faviconFromUrl(official_url || affiliate_url);
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     const description = data.description
       ? String(data.description)
@@ -86,7 +84,7 @@ const tools = await Promise.all(
       title,
       category,
       price_model,
-      iconUrl,
+      favicon,
       tags,
       excerpt,
       fallbackIcon: resolveCategoryIcon(category, tags),
@@ -162,9 +160,9 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       >
         <div class="tool-header">
           <div class="tool-image">
-            {tool.iconUrl ? (
+            {tool.favicon ? (
               <span class="tool-card-logo">
-                <img src={tool.iconUrl} alt={tool.title} loading="lazy" />
+                <img src={tool.favicon} alt={tool.title} loading="lazy" />
               </span>
             ) : tool.fallbackIcon === "ai" ? (
               <span class="tool-card-logo" aria-hidden="true">

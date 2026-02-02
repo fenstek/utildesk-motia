@@ -295,10 +295,47 @@ a:hover {
   font-size: 22px;
   line-height: 1;
 }
+
+
+
+
+.tool-float-logo img{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
 /* clearfix so the card wraps around floated logo */
 
 
+/* Tool article: enable reliable float wrapping */
+.article-body{ display: flow-root; }
+
 /* clearfix (fallback) */
+.article-body::after{ content:""; display:block; clear:both; }
+/* === Tool page: floated favicon inside the content card === */
+.tool-float-logo{
+  float: right;
+  width: 72px;
+  height: 72px;
+  margin: 6px 0 10px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  text-decoration: none;
+}
+
+.tool-float-logo img{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display:block;
+}
+
 /* clearfix: article wraps around floated logo */
 
 /* Tool page: if the first markdown image is used as a hero/logo, let text wrap around it */
@@ -311,36 +348,4 @@ a:hover {
   border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--surface);
-}
-
-/* === Tool page: inline logo at the start of text (left, no frame) === */
-.tool-float-logo{
-  float: left;
-  display: block;
-  width: 96px;
-  height: 96px;
-  margin: 0 28px 14px 0;
-  vertical-align: top;
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  overflow: visible;
-  text-decoration: none;
-}
-
-.tool-float-logo img{
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
-  display: block;
-}
-
-/* ensure float wraps correctly */
-.article-body{ display: flow-root; }
-
-
-/* Fine-tuning: text alignment vs tool logo */
-.article-body > div{
-  margin-top: 12px;
 }
