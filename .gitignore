@@ -8,3 +8,6 @@ content/images/tools/*.png
 
 # local app folder (will be handled separately)
 motia-app/
+
+# local archives (do not commit)
+_archive/
