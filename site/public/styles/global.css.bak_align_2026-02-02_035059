@@ -776,8 +776,7 @@ a:hover {
   display: block;
   width: 96px;
   height: 96px;
-  margin: 0 28px 14px 0;
-  vertical-align: top;
+  margin: 4px 18px 10px 0;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -924,10 +923,4 @@ a:hover {
 
 /* === Tool page: floated favicon inside the content card === */
 @media (max-width: 640px){
-}
-
-
-/* Fine-tuning: text alignment vs tool logo */
-.article-body > div{
-  margin-top: 12px;
 }

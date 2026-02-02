@@ -18,18 +18,6 @@ const stripMarkdown = (text: string) =>
     .replace(/\s+/g, " ")
     .trim();
 
-
-const faviconFromUrl = (url: string | null, size = 128) => {
-  if (!url) return null;
-  try {
-    const u = new URL(url);
-    return `https://www.google.com/s2/favicons?sz=${size}&domain=${encodeURIComponent(u.hostname)}`;
-  } catch {
-    return null;
-  }
-};
-
-
 const getExcerpt = (content: string) => {
   const paragraphs = content.split(/\n\s*\n/);
   for (const paragraph of paragraphs) {
@@ -79,8 +67,6 @@ const tools = await Promise.all(
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
     const price_model = data.price_model ? String(data.price_model) : null;
-    const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : null;
-    const official_url = data.official_url ? String(data.official_url) : null;
     const image = data.image ? String(data.image) : null;
     const homeImage = data.homeImage ? String(data.homeImage) : null;
     const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
@@ -100,9 +86,7 @@ const tools = await Promise.all(
     )
       ? `/images/logos/${slug}.svg`
       : null;
-    const providerUrl = affiliate_url || official_url;
-    const faviconLogo = faviconFromUrl(providerUrl);
-    const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath ?? faviconLogo;
+    const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath;
     const homeCardImage = normalizeImagePath(homeImage ?? image ?? icon ?? contentImage);
     return {
       slug,

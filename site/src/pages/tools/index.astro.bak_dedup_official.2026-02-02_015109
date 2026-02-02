@@ -56,6 +56,16 @@ const resolveCategoryIcon = (category: string | null, tags: string[]) => {
 };
 
 
+const getFaviconUrl = (u) => {
+  if (!u) return null;
+  try {
+    const url = new URL(u);
+    const domain = url.hostname;
+    return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`;
+  } catch {
+    return null;
+  }
+};
 
 const tools = await Promise.all(
   files.map(async (file) => {
@@ -68,8 +78,12 @@ const tools = await Promise.all(
     const price_model = data.price_model ? String(data.price_model) : null;
     const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : null;
     const official_url = data.official_url ? String(data.official_url) : null;
-    const providerUrl = affiliate_url || official_url;
-    const iconUrl = faviconFromUrl(providerUrl);
+    const providerUrl = affiliate_url || official_url || null;
+    const faviconUrl = getFaviconUrl(providerUrl);
+    const official_url = data.official_url ? String(data.official_url) : null;
+    const affiliate_url_raw = data.affiliate_url ? String(data.affiliate_url) : null;
+    const affiliate_url = affiliate_url_raw && affiliate_url_raw.trim() ? affiliate_url_raw : official_url;
+    const favicon = faviconFromUrl(official_url || affiliate_url);
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     const description = data.description
       ? String(data.description)
@@ -86,7 +100,7 @@ const tools = await Promise.all(
       title,
       category,
       price_model,
-      iconUrl,
+      favicon,
       tags,
       excerpt,
       fallbackIcon: resolveCategoryIcon(category, tags),
@@ -162,9 +176,9 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       >
         <div class="tool-header">
           <div class="tool-image">
-            {tool.iconUrl ? (
+            {tool.favicon ? (
               <span class="tool-card-logo">
-                <img src={tool.iconUrl} alt={tool.title} loading="lazy" />
+                <img src={tool.favicon} alt={tool.title} loading="lazy" />
               </span>
             ) : tool.fallbackIcon === "ai" ? (
               <span class="tool-card-logo" aria-hidden="true">
