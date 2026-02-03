@@ -3,7 +3,7 @@ slug: "adobe-firefly"
 title: "Adobe Firefly"
 category: "Design"
 price_model: "freemium"
-tags: []
+tags: ["ai", "design"]
 official_url: "https://firefly.adobe.com/?media=featured"
 affiliate_url: "https://firefly.adobe.com/?media=featured"
 ---

@@ -3,7 +3,7 @@ slug: "gemini"
 title: "Gemini"
 category: "AI"
 price_model: "freemium"
-tags: []
+tags: ["ai"]
 official_url: "https://gemini.google.com/"
 affiliate_url: "https://gemini.google.com/"
 ---

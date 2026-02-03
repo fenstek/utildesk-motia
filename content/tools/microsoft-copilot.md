@@ -3,7 +3,7 @@ slug: "microsoft-copilot"
 title: "Microsoft Copilot"
 category: "AI"
 price_model: "freemium"
-tags: []
+tags: ["ai"]
 official_url: "https://copilot.microsoft.com/"
 affiliate_url: "https://copilot.microsoft.com/"
 ---
