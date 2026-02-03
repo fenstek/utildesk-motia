@@ -51,24 +51,6 @@ let html = marked.parse(content);
 // Remove first H1 from markdown to avoid duplicate title
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 
-// Move Alternatives section below FAQ
-const alternativesMatch = html.match(/(<h2[^>]*>(?:Alternativen|Alternatives)[^<]*<\/h2>[\s\S]*?)(?=<h2|$)/i);
-const faqMatch = html.match(/(<h2[^>]*>FAQ[^<]*<\/h2>[\s\S]*?)(?=<h2|$)/i);
-
-if (alternativesMatch && faqMatch) {
-  const alternativesSection = alternativesMatch[0];
-  const faqSection = faqMatch[0];
-  const alternativesIndex = html.indexOf(alternativesSection);
-  const faqIndex = html.indexOf(faqSection);
-
-  if (alternativesIndex < faqIndex) {
-    // Remove alternatives from its current position
-    html = html.replace(alternativesSection, '');
-    // Insert alternatives after FAQ
-    html = html.replace(faqSection, faqSection + alternativesSection);
-  }
-}
-
 ---
 
 <BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
