@@ -70,6 +70,29 @@ const resolveCategoryIcon = (category: string | null, tags: string[]) => {
   return "generic";
 };
 
+const normalizeTags = (raw: unknown): string[] => {
+  if (Array.isArray(raw)) {
+    return raw.map(String).map((tag) => tag.trim()).filter(Boolean);
+  }
+
+  if (typeof raw === "string") {
+    return raw.split(",").map((tag) => tag.trim()).filter(Boolean);
+  }
+
+  if (raw && typeof raw === "object") {
+    if ("tags" in raw) {
+      return normalizeTags((raw as { tags?: unknown }).tags);
+    }
+
+    return Object.values(raw)
+      .map(String)
+      .map((tag) => tag.trim())
+      .filter(Boolean);
+  }
+
+  return [];
+};
+
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
@@ -85,7 +108,7 @@ const tools = await Promise.all(
     const homeImage = data.homeImage ? String(data.homeImage) : null;
     const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const icon = data.icon ? String(data.icon) : null;
-    const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+    const tags = normalizeTags(data.tags);
     const description = data.description
       ? String(data.description)
       : data.summary
@@ -148,7 +171,7 @@ const getFrequencyClass = (count: number, max: number) => {
 
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
 
-const latestTools = tools.slice(0, 6);
+const latestTools = tools.slice(0, 12);
 ---
 
 <BaseLayout
@@ -171,14 +194,18 @@ const latestTools = tools.slice(0, 6);
   <section class="section home-section home-tags">
     {sortedTags.length > 0 ? (
       <div class="tag-cloud home-tags-cloud">
-        {sortedTags.map(([tag, count]) => (
-          <a
-            href={`/tools/?tag=${encodeURIComponent(tag)}`}
-            class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
-          >
-            {tag}
-          </a>
-        ))}
+        {sortedTags.map((tag) => {
+          const tagName = tag[0];
+          const count = tag[1];
+          return (
+            <a
+              href={`/tools/?tag=${encodeURIComponent(tagName)}`}
+              class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
+            >
+              {tagName}
+            </a>
+          );
+        })}
       </div>
     ) : (
       <p style="text-align: center; color: var(--text-muted);">
@@ -247,9 +274,6 @@ const latestTools = tools.slice(0, 6);
             </div>
             <div class="home-card-body">
               <h3 class="home-card-title">{tool.title}</h3>
-              <p class="home-card-desc">
-                {tool.excerpt || "Tool im Überblick."}
-              </p>
             </div>
           </div>
         </a>
