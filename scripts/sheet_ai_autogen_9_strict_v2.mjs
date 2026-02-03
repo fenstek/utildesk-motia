@@ -368,12 +368,43 @@ async function main(){
       const cls = { is_ai: true, category: categoryFallback(topic), reason: 'wikidata_only' };
       const category = cls.category;
 
+        // v2.2: Auto-tags for Sheet column D (no schema changes).
+        // Stable format: comma-separated tags (lowercase, no spaces).
+        const tags = (() => {
+          const out = new Set();
+          out.add('ai');
+          if (category) out.add(String(category).toLowerCase());
+
+          const t = String(topic || '').toLowerCase();
+
+          // common signals
+          if (t.includes('chat') || t.includes('assistant') || t.includes('bot')) out.add('chatbot');
+          if (t.includes('gpt') || t.includes('llm')) out.add('llm');
+
+          // modalities
+          if (t.includes('image') || t.includes('photo') || t.includes('midjourney') || t.includes('stable')) out.add('image');
+          if (t.includes('video')) out.add('video');
+          if (t.includes('audio') || t.includes('voice') || t.includes('speech') || t.includes('tts')) out.add('audio');
+
+          // dev / automation
+          if (t.includes('code') || t.includes('dev') || t.includes('github') || t.includes('api') || t.includes('sdk')) out.add('devtools');
+          if (t.includes('workflow') || t.includes('automation') || t.includes('n8n') || t.includes('zapier')) out.add('automation');
+
+          // writing / productivity / design
+          if (t.includes('write') || t.includes('writer') || t.includes('copy') || t.includes('text')) out.add('writing');
+          if (t.includes('productivity') || t.includes('notes') || t.includes('docs')) out.add('productivity');
+          if (t.includes('design') || t.includes('ui') || t.includes('ux') || t.includes('figma')) out.add('design');
+
+          return Array.from(out).filter(Boolean).slice(0, 12);
+        })().join(',');
+
+
       // Build strict A..P row (16 cells)
       const row = [
         topic,                 // A topic
         slug,                  // B slug
         category,              // C category
-        '',                    // D tags
+          tags,                  // D tags
         'freemium',            // E price_model
         '',                    // F affiliate_url
         'NEW',                 // G status
