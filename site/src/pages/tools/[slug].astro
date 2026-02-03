@@ -45,6 +45,76 @@ const title = String(data.title ?? slug);
 const category = data.category ? String(data.category) : null;
 const price_model = data.price_model ? String(data.price_model) : null;
 const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+
+// Load alternatives if specified in frontmatter
+const alternativeSlugs = Array.isArray(data.alternatives)
+  ? data.alternatives.map(String)
+  : [];
+
+let alternativeTools = [];
+if (alternativeSlugs.length > 0) {
+  const toolsDir = join(process.cwd(), "content", "tools");
+  const files = (await readdir(toolsDir))
+    .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+
+  const resolveCategoryIcon = (category: string | null, tags: string[]) => {
+    const normalizedCategory = category ? category.toLowerCase() : "";
+    const normalizedTags = tags.map((tag) => tag.toLowerCase());
+    const combined = [normalizedCategory, ...normalizedTags].join(" ");
+    if (combined.includes("design") || combined.includes("ui") || combined.includes("ux")) {
+      return "design";
+    }
+    if (combined.includes("automation") || combined.includes("workflow")) {
+      return "automation";
+    }
+    if (combined.includes("ai") || combined.includes("ml") || combined.includes("machine")) {
+      return "ai";
+    }
+    return "generic";
+  };
+
+  const faviconFromUrl = (url: string | null) => {
+    if (!url) return null;
+    try {
+      const u = new URL(url);
+      return `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(u.hostname)}`;
+    } catch {
+      return null;
+    }
+  };
+
+  const allTools = await Promise.all(
+    files.map(async (file) => {
+      const full = join(toolsDir, file);
+      const raw = await readFile(full, "utf-8");
+      const { data } = matter(raw);
+      const toolSlug = String(data.slug ?? file.replace(/\.md$/, ""));
+      const toolTitle = String(data.title ?? toolSlug);
+      const toolCategory = data.category ? String(data.category) : null;
+      const toolPriceModel = data.price_model ? String(data.price_model) : null;
+      const toolTags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+      const toolAffiliateUrl = data.affiliate_url ? String(data.affiliate_url) : null;
+      const toolOfficialUrl = data.official_url ? String(data.official_url) : null;
+      const providerUrl = toolAffiliateUrl || toolOfficialUrl;
+      const iconUrl = faviconFromUrl(providerUrl);
+
+      return {
+        slug: toolSlug,
+        title: toolTitle,
+        category: toolCategory,
+        price_model: toolPriceModel,
+        tags: toolTags,
+        iconUrl,
+        fallbackIcon: resolveCategoryIcon(toolCategory, toolTags),
+      };
+    })
+  );
+
+  alternativeTools = allTools.filter((tool) =>
+    alternativeSlugs.includes(tool.slug)
+  );
+}
+
 // Render Markdown to HTML
 let html = marked.parse(content);
 
@@ -95,4 +165,140 @@ html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
     <div set:html={html}></div>
   </div>
 </article>
+
+  {alternativeTools.length > 0 && (
+    <section class="tool-alternatives">
+      <h2 class="alternatives-heading">Alternativen</h2>
+      <div class="alternatives-grid">
+        {alternativeTools.map((tool) => (
+          <a href={`/tools/${tool.slug}/`} class="alternative-card">
+            <div class="alternative-card-icon">
+              {tool.iconUrl ? (
+                <img src={tool.iconUrl} alt={tool.title} loading="lazy" />
+              ) : tool.fallbackIcon === "ai" ? (
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              ) : tool.fallbackIcon === "automation" ? (
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              ) : tool.fallbackIcon === "design" ? (
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path
+                    d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              )}
+            </div>
+            <div class="alternative-card-body">
+              <h3 class="alternative-card-title">{tool.title}</h3>
+              {(tool.category || tool.price_model) && (
+                <div class="alternative-card-meta">
+                  {tool.category && <span class="alternative-meta-item">{tool.category}</span>}
+                  {tool.price_model && <span class="alternative-meta-item">{tool.price_model}</span>}
+                </div>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <style>
+    .tool-alternatives {
+      margin-top: 48px;
+    }
+
+    .alternatives-heading {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    .alternatives-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .alternative-card {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg);
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .alternative-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .alternative-card-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+    }
+
+    .alternative-card-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .alternative-card-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .alternative-card-body {
+      flex: 1;
+    }
+
+    .alternative-card-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+      color: var(--text);
+    }
+
+    .alternative-card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.875rem;
+    }
+
+    .alternative-meta-item {
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: var(--bg-secondary);
+      color: var(--text-muted);
+    }
+  </style>
 </BaseLayout>
