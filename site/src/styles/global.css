@@ -28,6 +28,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
+@media (min-width: 1280px) {
+  :root {
+    --container: 1280px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -86,7 +92,7 @@ a:hover {
 
 .tools-grid {
   display: grid;
-  gap: 18px;
+  gap: 16px;
   grid-template-columns: 1fr;
 }
 
@@ -99,6 +105,7 @@ a:hover {
   flex-direction: column;
   gap: var(--space-3);
   min-height: 160px;
+  min-width: 0;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
@@ -203,6 +210,10 @@ a:hover {
 .tool-card p {
   margin: 0;
   color: var(--muted);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 @media (max-width: 599px) {
@@ -217,16 +228,15 @@ a:hover {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
+@media (min-width: 900px) and (max-width: 1279px) {
   .tools-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .tools-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
   }
 }
 
