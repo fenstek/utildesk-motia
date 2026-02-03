@@ -163,6 +163,40 @@ const latestTools = tools.slice(0, 12);
       margin-left: auto;
       margin-right: auto;
     }
+
+    /* Tag cloud redesign */
+    .home-v2 .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 12px;
+      margin: 14px auto 6px;
+      max-width: 900px;
+    }
+
+    .home-v2 .tag-cloud a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid rgba(0,0,0,.12);
+      background: rgba(255,255,255,.35);
+      backdrop-filter: blur(6px);
+      font-size: 0.95rem;
+      line-height: 1;
+      transition: transform .12s ease, background .12s ease;
+    }
+
+    .home-v2 .tag-cloud a:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.55);
+    }
+
+    /* Cloud staggering */
+    .home-v2 .tag-cloud a:nth-child(3n+1) { transform: translateY(2px); }
+    .home-v2 .tag-cloud a:nth-child(3n+2) { transform: translateY(-3px); }
+    .home-v2 .tag-cloud a:nth-child(3n) { transform: translateY(1px); }
   </style>
   <section class="hero home-hero home-v2">
     <h1 class="hero-title">Utildesk</h1>
@@ -176,7 +210,7 @@ const latestTools = tools.slice(0, 12);
   </section>
 
   <!-- Tag Cloud Section -->
-  <section class="section home-section home-tags">
+  <section class="section home-section home-tags home-v2">
     {sortedTags.length > 0 ? (
       <div class="tag-cloud home-tags-cloud">
         {sortedTags.map(([tag, count]) => (
