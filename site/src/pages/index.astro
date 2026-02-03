@@ -169,9 +169,9 @@ const latestTools = tools.slice(0, 12);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px 12px;
-      margin: 14px auto 6px;
-      max-width: 900px;
+      gap: 10px 10px;
+      margin: 10px auto 4px;
+      max-width: 620px;
     }
 
     .home-v2 .tag-cloud a {
@@ -196,9 +196,19 @@ const latestTools = tools.slice(0, 12);
     }
 
     /* Cloud staggering */
-    .home-v2 .tag-cloud a:nth-child(3n+1) { --y: 2px; }
-    .home-v2 .tag-cloud a:nth-child(3n+2) { --y: -3px; }
-    .home-v2 .tag-cloud a:nth-child(3n) { --y: 1px; }
+    .home-v2 .tag-cloud a:nth-child(3n+1) { --y: 10px; }
+    .home-v2 .tag-cloud a:nth-child(3n+2) { --y: -10px; }
+    .home-v2 .tag-cloud a:nth-child(3n) { --y: 0px; }
+
+    /* Size variety */
+    .home-v2 .tag-cloud a:nth-child(4n+1) {
+      font-size: 1.02rem;
+      padding: 9px 14px;
+    }
+    .home-v2 .tag-cloud a:nth-child(4n+3) {
+      font-size: 0.92rem;
+      padding: 7px 11px;
+    }
 
     .home-v2.home-tags {
       padding-top: 12px;
