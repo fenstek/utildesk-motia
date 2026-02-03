@@ -85,7 +85,12 @@ const tools = await Promise.all(
     const homeImage = data.homeImage ? String(data.homeImage) : null;
     const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const icon = data.icon ? String(data.icon) : null;
-    const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+    const tags =
+      Array.isArray(data.tags)
+        ? data.tags.map(String)
+        : typeof data.tags === "string"
+          ? data.tags.split(",").map((tag) => tag.trim()).filter(Boolean)
+          : [];
     const description = data.description
       ? String(data.description)
       : data.summary
