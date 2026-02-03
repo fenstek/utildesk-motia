@@ -171,14 +171,18 @@ const latestTools = tools.slice(0, 12);
   <section class="section home-section home-tags">
     {sortedTags.length > 0 ? (
       <div class="tag-cloud home-tags-cloud">
-        {sortedTags.map(([tag, count]) => (
-          <a
-            href={`/tools/?tag=${encodeURIComponent(tag)}`}
-            class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
-          >
-            {tag}
-          </a>
-        ))}
+        {sortedTags.map((tag) => {
+          const tagName = tag[0];
+          const count = tag[1];
+          return (
+            <a
+              href={`/tools/?tag=${encodeURIComponent(tagName)}`}
+              class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
+            >
+              {tagName}
+            </a>
+          );
+        })}
       </div>
     ) : (
       <p style="text-align: center; color: var(--text-muted);">
