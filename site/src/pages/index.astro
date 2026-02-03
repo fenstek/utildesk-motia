@@ -156,7 +156,66 @@ const latestTools = tools.slice(0, 12);
   description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools."
 >
   <!-- Hero Section -->
-  <section class="hero home-hero">
+  <style>
+    .home-v2.home-hero > h1,
+    .home-v2.home-hero > p {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Tag cloud redesign */
+    .home-v2 .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 10px;
+      margin: 10px auto 4px;
+      max-width: 620px;
+    }
+
+    .home-v2 .tag-cloud a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid rgba(0,0,0,.12);
+      background: rgba(255,255,255,.35);
+      backdrop-filter: blur(6px);
+      font-size: 0.95rem;
+      line-height: 1;
+      transition: top .12s ease, background .12s ease;
+      position: relative;
+      top: var(--y, 0px);
+    }
+
+    .home-v2 .tag-cloud a:hover {
+      top: calc(var(--y, 0px) - 2px);
+      background: rgba(255,255,255,.55);
+    }
+
+    /* Cloud staggering */
+    .home-v2 .tag-cloud a:nth-child(3n+1) { --y: 10px; }
+    .home-v2 .tag-cloud a:nth-child(3n+2) { --y: -10px; }
+    .home-v2 .tag-cloud a:nth-child(3n) { --y: 0px; }
+
+    /* Size variety */
+    .home-v2 .tag-cloud a:nth-child(4n+1) {
+      font-size: 1.02rem;
+      padding: 9px 14px;
+    }
+    .home-v2 .tag-cloud a:nth-child(4n+3) {
+      font-size: 0.92rem;
+      padding: 7px 11px;
+    }
+
+    .home-v2.home-tags {
+      padding-top: 12px;
+      padding-bottom: 10px;
+    }
+  </style>
+  <section class="hero home-hero home-v2">
     <h1 class="hero-title">Utildesk</h1>
     <p class="hero-subtitle">
       Tools & Guides für AI, Automatisierung und Produktivität.
@@ -168,7 +227,7 @@ const latestTools = tools.slice(0, 12);
   </section>
 
   <!-- Tag Cloud Section -->
-  <section class="section home-section home-tags">
+  <section class="section home-section home-tags home-v2">
     {sortedTags.length > 0 ? (
       <div class="tag-cloud home-tags-cloud">
         {sortedTags.map(([tag, count]) => (

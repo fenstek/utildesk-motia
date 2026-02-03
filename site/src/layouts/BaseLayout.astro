@@ -18,12 +18,35 @@ const { title = "Utildesk", description = "Tools & Guides für AI, Automatisieru
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/styles/global.css" />
     <title>{title}</title>
+    <style>
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .brand img {
+        height: 18px;
+        width: auto;
+      }
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .footer-brand img {
+        height: 16px;
+        width: auto;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <nav class="nav">
-          <a href="/" class="brand">Utildesk</a>
+          <a href="/" class="brand">
+            <img src="/logo-grid.svg" alt="Utildesk" />
+            Utildesk
+          </a>
           <div class="nav-links">
             <a href="/tools/">Tools</a>
           </div>
@@ -38,7 +61,10 @@ const { title = "Utildesk", description = "Tools & Guides für AI, Automatisieru
     <footer class="site-footer">
       <div class="container">
         <div class="footer-content">
-          <a href="/" class="footer-brand">Utildesk</a>
+          <a href="/" class="footer-brand">
+            <img src="/logo-grid.svg" alt="Utildesk" height="16" />
+            Utildesk
+          </a>
           <div class="footer-links">
             <a href="/tools/">Tools</a>
             
