@@ -65,7 +65,6 @@ Die genauen Preise variieren je nach Abonnementdauer (monatlich, vierteljährlic
 - **Ginger:** Bietet neben Korrekturfunktionen auch Übersetzungen und personalisierte Lernhilfen.
 - **Hemingway Editor:** Fokus auf Lesbarkeit und klare, prägnante Texte mit einfacher Benutzeroberfläche.
 - **Slick Write:** Kostenloses Online-Tool zur schnellen Analyse von Grammatik und Stil.
-
 ## FAQ
 
 **1. Ist Grammarly nur für englische Texte geeignet?**  

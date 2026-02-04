@@ -52,12 +52,11 @@ Character AI bietet ein Freemium-Modell an. Die Basisfunktionen sind kostenfrei 
 
 ## Alternativen zu Character AI
 
-- **Replika:** Ein KI-basierter Chatbot, der auf persönliche Gespräche und emotionale Unterstützung spezialisiert ist.
-- **ChatGPT:** Allgemeiner KI-Chatbot von OpenAI, geeignet für vielseitige Konversationen und Textgenerierung.
-- **AI Dungeon:** Plattform für interaktive Geschichten und Abenteuer, die durch KI gesteuert werden.
+- [Replika](/tools/replika/): ** Ein KI-basierter Chatbot, der auf persönliche Gespräche und emotionale Unterstützung spezialisiert ist.
+- [ChatGPT](/tools/chatgpt/): ** Allgemeiner KI-Chatbot von OpenAI, geeignet für vielseitige Konversationen und Textgenerierung.
+- [AI Dungeon](/tools/ai-dungeon/): ** Plattform für interaktive Geschichten und Abenteuer, die durch KI gesteuert werden.
 - **Mitsuku:** Ein mehrfach ausgezeichneter Chatbot mit Fokus auf unterhaltsame Dialoge.
 - **Botpress:** Open-Source-Plattform zur Erstellung eigener KI-Chatbots mit individueller Anpassung.
-
 ## FAQ
 
 **1. Ist Character AI kostenlos nutzbar?**  

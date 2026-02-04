@@ -64,7 +64,6 @@ Runway bietet ein Freemium-Modell an, das eine kostenlose Nutzung mit begrenztem
 - **Descript**: Tool für Audio- und Video-Editing mit KI-gestützter Transkription und Bearbeitung.
 - **Adobe Sensei**: KI-Framework von Adobe zur Automatisierung und Verbesserung kreativer Prozesse.
 - **Synthesia**: Plattform zur Erstellung von KI-generierten Videos mit virtuellen Moderatoren.
-
 ## FAQ
 
 **1. Brauche ich Programmierkenntnisse, um Runway zu nutzen?**  

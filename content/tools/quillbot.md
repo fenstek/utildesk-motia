@@ -66,12 +66,11 @@ Detaillierte Preise und mögliche Rabatte sind auf der offiziellen Webseite oder
 
 ## Alternativen zu QuillBot
 
-- **Grammarly:** Fokus auf Grammatik- und Stilprüfung mit zusätzlichen Schreibvorschlägen.
+- [Grammarly](/tools/grammarly/): ** Fokus auf Grammatik- und Stilprüfung mit zusätzlichen Schreibvorschlägen.
 - **Spinbot:** Einfache automatische Textumschreibung ohne viele Zusatzfunktionen.
 - **Wordtune:** KI-gestützte Textumformulierung mit Fokus auf natürliche Sprache.
 - **Scribbr:** Speziell für akademische Texte mit Plagiatsprüfung und Korrekturservice.
 - **Paraphraser.io:** Kostenloses Tool zum Paraphrasieren mit mehreren Sprachoptionen.
-
 ## FAQ
 
 **1. Wie funktioniert QuillBot?**  

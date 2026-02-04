@@ -69,10 +69,9 @@ Die genauen Preise und Konditionen können je nach Anbieter und gewähltem Plan 
 
 - **DeepArt.io:** KI-gestützte Stilübertragung für künstlerische Bildbearbeitung.
 - **Runway ML:** Plattform für kreative KI-Modelle mit Fokus auf Video und Bild.
-- **DALL·E 2 (OpenAI):** KI-Text-zu-Bild-Generator mit vielfältigen Einsatzmöglichkeiten.
+- [DALL·E 2 (OpenAI)](/tools/dall-e/): ** KI-Text-zu-Bild-Generator mit vielfältigen Einsatzmöglichkeiten.
 - **NightCafe Studio:** Einfach zu bedienender KI-Kunstgenerator mit Community-Fokus.
 - **This Person Does Not Exist:** Spezialisierte KI für die Erzeugung realistischer Gesichter.
-
 ## FAQ
 
 **1. Brauche ich Vorkenntnisse, um Artbreeder zu nutzen?**  

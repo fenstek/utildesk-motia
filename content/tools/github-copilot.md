@@ -71,7 +71,6 @@ Die genauen Preise können je nach Region und Anbieter variieren. Weitere Detail
 - **Amazon CodeWhisperer:** KI-Codegenerator mit Fokus auf AWS-Integration und Cloud-Services.
 - **Codex (OpenAI):** Basis der GitHub Copilot-Technologie, direkt von OpenAI verfügbar.
 - **Visual Studio IntelliCode:** Microsofts KI-gestützte Codevervollständigung, integriert in Visual Studio.
-
 ## FAQ
 
 **1. Unterstützt GitHub Copilot alle Programmiersprachen?**  
