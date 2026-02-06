@@ -43,15 +43,31 @@ if(!rn) return null;
   }
 }
 
+function markError(rowNum, message){
+  try{
+    if(rowNum){
+      console.log(`[ERROR] Marking row ${rowNum} as ERROR: ${message}`);
+      // Best-effort: set ERROR status in sheet (sheet_set_status.mjs must support ERROR)
+      runInherit('node', ['scripts/sheet_set_status.mjs', String(rowNum), 'ERROR']);
+    }
+  }catch(e){
+    // Never throw from error handler
+    console.log('[WARN] Failed to set ERROR status:', e?.message || e);
+  }
+}
+
 console.log(`[INFO] Processing ${COUNT} NEW tools`);
 
 for (let i = 0; i < COUNT; i++){
   console.log(`\n[STEP] ${i+1}/${COUNT}`);
 
-  // 1) get next NEW tool (this script itself sets IN_PROGRESS)
-  const out = runCapture('node', ['scripts/sheet_get_next_new.mjs']);
-  if(!out) die('sheet_get_next_new.mjs returned empty output');
-  if(!out.includes('"found": true')) die(`No NEW tools found or unexpected output:\n${out}`);
+  let rowNum = null;
+  try {
+    // 1) get next NEW tool (this script itself sets IN_PROGRESS)
+    const out = runCapture('node', ['scripts/sheet_get_next_new.mjs']);
+    if(!out) die('sheet_get_next_new.mjs returned empty output');
+    if(!out.includes('"found": true')) die(`No NEW tools found or unexpected output:\n${out}`);
+
     // Normalize tool JSON so downstream scripts can read slug/title at top-level
     let parsed;
     try {
@@ -66,25 +82,31 @@ for (let i = 0; i < COUNT; i++){
     };
     fs.writeFileSync(TOOL_JSON, JSON.stringify(norm, null, 2) + '\n', 'utf8');
 
-  const rowNum = readRowNumber(out);
-  if(!rowNum) die('Could not parse row_number from sheet_get_next_new output');
+    rowNum = readRowNumber(out);
+    if(!rowNum) die('Could not parse row_number from sheet_get_next_new output');
 
-  // 2) generate markdown (needs tool.json)
-  runInherit('node', ['scripts/generate_tool_md.mjs', TOOL_JSON]);
-// 5) finalize md
-  runInherit('node', ['scripts/finalize_md.mjs', TOOL_JSON]);
+    // 2) generate markdown (needs tool.json)
+    runInherit('node', ['scripts/generate_tool_md.mjs', TOOL_JSON]);
 
-  // 6) duplicate protection
-    // cleanup stray empty markdown files (may appear after failed runs)
+    // 3) finalize md
+    runInherit('node', ['scripts/finalize_md.mjs', TOOL_JSON]);
+
+    // 4) duplicate protection + cleanup stray empty markdown files (may appear after failed runs)
     try {
       const stray = '/opt/utildesk-motia/content/tools/.md';
       if (fs.existsSync(stray)) fs.unlinkSync(stray);
     } catch {}
 
-  runInherit('node', ['scripts/check_duplicates.mjs']);
+    runInherit('node', ['scripts/check_duplicates.mjs']);
 
-  // 7) set status DONE by row_number (real interface)
-  runInherit('node', ['scripts/sheet_set_status.mjs', String(rowNum), 'DONE']);
+    // 5) set status DONE by row_number (real interface)
+    runInherit('node', ['scripts/sheet_set_status.mjs', String(rowNum), 'DONE']);
+  } catch (e) {
+    const msg = (e && (e.message || String(e))) || 'unknown error';
+    console.log('[FAIL]', msg);
+    markError(rowNum, msg);
+    throw e;
+  }
 }
 
 console.log('\n[SUCCESS] Finished processing tools');
