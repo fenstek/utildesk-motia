@@ -53,12 +53,11 @@ Midjourney bietet ein Freemium-Modell an. Die kostenlose Version ermöglicht ein
 
 ## Alternativen zu Midjourney
 
-- **DALL·E 2:** KI-gestützte Bildgenerierung von OpenAI mit ähnlichen Funktionen.
-- **Stable Diffusion:** Open-Source-Tool für Text-zu-Bild-Generierung, das lokal genutzt werden kann.
+- [DALL·E 2](/tools/dall-e/): ** KI-gestützte Bildgenerierung von OpenAI mit ähnlichen Funktionen.
+- [Stable Diffusion](/tools/stable-diffusion/): ** Open-Source-Tool für Text-zu-Bild-Generierung, das lokal genutzt werden kann.
 - **Deep Dream Generator:** Kreatives Tool zur Bildmanipulation und KI-gestützten Gestaltung.
 - **Runway ML:** Plattform für kreative KI-Anwendungen inklusive Bild- und Videobearbeitung.
-- **Artbreeder:** Kombination aus KI und Nutzersteuerung zur Erstellung von Bildern durch Mischen verschiedener Elemente.
-
+- [Artbreeder](/tools/artbreeder/): ** Kombination aus KI und Nutzersteuerung zur Erstellung von Bildern durch Mischen verschiedener Elemente.
 ## FAQ
 
 **1. Brauche ich Vorkenntnisse im Design, um Midjourney zu nutzen?**  

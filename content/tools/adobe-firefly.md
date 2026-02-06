@@ -60,11 +60,10 @@ Adobe Firefly bietet ein Freemium-Modell an. Die Basisfunktionen sind kostenlos 
 ## Alternativen zu Adobe Firefly
 
 - **Canva:** Ein benutzerfreundliches Online-Design-Tool mit vielen Vorlagen und einfachen Bearbeitungsfunktionen.
-- **DALL·E 2 (OpenAI):** KI-basierte Bildgenerierung durch Texteingabe, spezialisiert auf kreative Bildkreationen.
+- [DALL·E 2 (OpenAI)](/tools/dall-e/): ** KI-basierte Bildgenerierung durch Texteingabe, spezialisiert auf kreative Bildkreationen.
 - **Figma:** Kollaboratives Design-Tool mit Schwerpunkt auf UI/UX-Design und Prototyping.
-- **Midjourney:** KI-gestützte kreative Bildgenerierung mit Fokus auf künstlerische Styles.
+- [Midjourney](/tools/midjourney/): ** KI-gestützte kreative Bildgenerierung mit Fokus auf künstlerische Styles.
 - **Affinity Designer:** Leistungsstarke Design-Software als Alternative zu Adobe-Produkten, ohne Abo-Modell.
-
 ## FAQ
 
 **1. Was ist Adobe Firefly?**  

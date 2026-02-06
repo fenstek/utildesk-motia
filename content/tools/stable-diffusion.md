@@ -52,12 +52,11 @@ Stable Diffusion wird in der Regel als Freemium-Modell angeboten. Das bedeutet, 
 
 ## Alternativen zu Stable Diffusion
 
-- **DALL·E 2:** KI-basierte Bildgenerierung von OpenAI mit Fokus auf kreative und realistische Bilder.
-- **Midjourney:** Beliebter KI-Bildgenerator mit besonderem Augenmerk auf künstlerische Stile.
-- **Artbreeder:** Plattform zur Kombination und Bearbeitung von Bildern mittels KI.
+- [DALL·E 2](/tools/dall-e/): ** KI-basierte Bildgenerierung von OpenAI mit Fokus auf kreative und realistische Bilder.
+- [Midjourney](/tools/midjourney/): ** Beliebter KI-Bildgenerator mit besonderem Augenmerk auf künstlerische Stile.
+- [Artbreeder](/tools/artbreeder/): ** Plattform zur Kombination und Bearbeitung von Bildern mittels KI.
 - **Runway ML:** Bietet verschiedene KI-Tools für kreative Projekte, inklusive Bildgenerierung.
 - **Deep Dream Generator:** Älteres Tool für KI-basierte Bildverfremdungen und -kreationen.
-
 ## FAQ
 
 **1. Was ist Stable Diffusion?**  

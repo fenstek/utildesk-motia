@@ -48,12 +48,11 @@ DALL·E bietet ein Freemium-Modell: Nutzer können eine begrenzte Anzahl von Bil
 
 ## Alternativen zu DALL·E
 
-- **Midjourney:** Ein weiterer KI-basierter Bildgenerator, bekannt für künstlerische und stimmungsvolle Bilder.
-- **Stable Diffusion:** Open-Source-Tool zur Bildgenerierung mit hoher Anpassbarkeit.
+- [Midjourney](/tools/midjourney/): ** Ein weiterer KI-basierter Bildgenerator, bekannt für künstlerische und stimmungsvolle Bilder.
+- [Stable Diffusion](/tools/stable-diffusion/): ** Open-Source-Tool zur Bildgenerierung mit hoher Anpassbarkeit.
 - **Deep Dream Generator:** Fokus auf surrealistische und abstrakte Bildstile.
 - **Runway ML:** Plattform mit vielfältigen KI-Design-Tools inklusive Bildgenerierung.
-- **Artbreeder:** Ermöglicht kollaboratives Erstellen und Kombinieren von Bildern mit KI-Unterstützung.
-
+- [Artbreeder](/tools/artbreeder/): ** Ermöglicht kollaboratives Erstellen und Kombinieren von Bildern mit KI-Unterstützung.
 ## FAQ
 
 **1. Wie funktioniert DALL·E?**  
