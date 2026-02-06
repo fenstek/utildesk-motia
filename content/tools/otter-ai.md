@@ -76,7 +76,6 @@ Detaillierte Preise und Konditionen sind auf der offiziellen Website von Otter.a
 - **Temi.com** – Schnelle und günstige automatische Transkription mit einfacher Bedienung
 - **Trint** – Intelligente Transkriptions-Plattform mit umfangreichen Bearbeitungsfunktionen
 - **Descript** – Kombination aus Transkription und Audiobearbeitung in einer Plattform
-
 ## FAQ
 
 **1. Wie genau ist die Transkription von Otter.ai?**  

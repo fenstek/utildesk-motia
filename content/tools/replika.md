@@ -60,7 +60,6 @@ Replika bietet ein Freemium-Modell an, bei dem die Grundfunktionen kostenlos gen
 - **Wysa** – KI-gestützter Coach für mentale Gesundheit mit therapeutischen Übungen.  
 - **Youper** – Persönlicher emotionaler Assistent mit Fokus auf Achtsamkeit und Therapie.  
 - **ChatGPT** – Allgemeiner KI-Chatbot für vielfältige Anwendungen, inklusive persönlicher Gespräche.  
-
 ## FAQ
 
 **1. Was ist Replika genau?**  

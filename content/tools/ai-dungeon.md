@@ -72,10 +72,9 @@ Die genauen Preise und Konditionen sollten auf der offiziellen Website überprü
 
 - **NovelAI:** Ein KI-gestütztes Tool für kreative Textgenerierung und interaktive Geschichten mit Fokus auf Privatsphäre und Anpassbarkeit.
 - **TextAdventures.co.uk:** Plattform für klassische und KI-unterstützte Textabenteuer mit Community-Inhalten.
-- **ChatGPT (OpenAI):** Kann für interaktive Geschichten genutzt werden, erfordert aber eigene Steuerung und Eingaben.
+- [ChatGPT (OpenAI)](/tools/chatgpt/): ** Kann für interaktive Geschichten genutzt werden, erfordert aber eigene Steuerung und Eingaben.
 - **StoryStream:** KI-basiertes Storytelling-Tool, das narrative Inhalte generiert und anpasst.
 - **Inklewriter:** Ein Tool zur Erstellung interaktiver Geschichten mit benutzerfreundlicher Oberfläche, allerdings ohne KI-Unterstützung.
-
 ## FAQ
 
 **1. Was ist AI Dungeon genau?**  

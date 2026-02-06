@@ -67,8 +67,7 @@ Detaillierte Preisangaben sollten direkt beim Anbieter eingesehen werden.
 - **Jasper AI:** Fokus auf Marketing- und Content-Erstellung mit benutzerfreundlichen Vorlagen  
 - **Copy.ai:** Schnelle Erstellung von Werbetexten und Social-Media-Content  
 - **Writesonic:** Vielseitiges KI-Tool für verschiedene Schreibaufgaben  
-- **ChatGPT:** Interaktives KI-Modell für vielfältige Text- und Dialoganwendungen  
-
+- [ChatGPT](/tools/chatgpt/): ** Interaktives KI-Modell für vielfältige Text- und Dialoganwendungen
 ## FAQ
 
 **1. Ist Gemini kostenlos nutzbar?**  

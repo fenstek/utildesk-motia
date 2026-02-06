@@ -57,7 +57,6 @@ Perplexity bietet ein Freemium-Modell an. Die Grundfunktionen sind kostenlos ver
 - **SMMRY** – Einfaches Online-Tool zur automatischen Textzusammenfassung.
 - **Explainpaper** – Fokus auf wissenschaftliche Texte und deren verständliche Aufbereitung.
 - **DeepL Write** – KI-gestützte Schreibassistenz mit Fokus auf Textverbesserung und Klarheit.
-
 ## FAQ
 
 **1. Was ist Perplexity genau?**  

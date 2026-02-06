@@ -59,11 +59,10 @@ Microsoft Copilot ist aktuell als Freemium-Modell verfügbar. Die Grundfunktione
 ## Alternativen zu Microsoft Copilot
 
 - **Google Bard:** KI-gestütztes Tool zur Textgenerierung und Unterstützung in Google Workspace
-- **ChatGPT (OpenAI):** Allgemeine KI-Plattform für vielfältige Anwendungen, auch als Plugin in verschiedenen Tools nutzbar
+- [ChatGPT (OpenAI)](/tools/chatgpt/): ** Allgemeine KI-Plattform für vielfältige Anwendungen, auch als Plugin in verschiedenen Tools nutzbar
 - **Jasper AI:** Speziell auf Marketing und Content-Erstellung fokussierte KI-Lösung
 - **Notion AI:** KI-Funktionen integriert in die Notion-Plattform für Notizen und Projektmanagement
 - **Zoho Zia:** KI-Assistent für Zoho-Apps mit Fokus auf Automatisierung und Datenanalyse
-
 ## FAQ
 
 **1. Benötige ich ein spezielles Microsoft 365 Abo, um Microsoft Copilot zu nutzen?**  
