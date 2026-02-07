@@ -4,8 +4,9 @@ title: "Jasper"
 category: "Produktivität"
 price_model: "freemium"
 tags: [ai,produktivivität]
+official_url: "http://jaspertx.org/"
+affiliate_url: "http://jaspertx.org/"
 ---
-
 # Jasper
 
 Jasper ist ein KI-gestütztes Schreibwerkzeug, das Nutzern hilft, schnell und effizient hochwertige Texte zu erstellen. Es unterstützt verschiedene Textarten, darunter Blogartikel, Marketingtexte, Social-Media-Beiträge und mehr. Durch den Einsatz moderner KI-Technologien kann Jasper Schreibprozesse deutlich beschleunigen und die Produktivität steigern.
