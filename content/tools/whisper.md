@@ -4,8 +4,8 @@ title: "Whisper"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "http://www.goldcirclefilms.com/movies/movie_whisper.html"
-affiliate_url: "http://www.goldcirclefilms.com/movies/movie_whisper.html"
+official_url: "https://openai.com/research/whisper"
+affiliate_url: "https://openai.com/research/whisper"
 ---
 # Whisper
 
