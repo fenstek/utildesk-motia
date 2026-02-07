@@ -4,10 +4,9 @@ title: "HeyGen"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "http://www.vgmzartern.de/"
-affiliate_url: "http://www.vgmzartern.de/"
+official_url: "https://www.heygen.com/"
+affiliate_url: "https://www.heygen.com/"
 ---
-
 # HeyGen
 
 HeyGen ist eine innovative KI-gestützte Plattform, die es ermöglicht, realistische virtuelle Avatare und Videos zu erstellen. Mit Hilfe fortschrittlicher künstlicher Intelligenz generiert HeyGen personalisierte Video- und Audioinhalte, die in verschiedenen Bereichen wie Marketing, Schulungen oder Social Media eingesetzt werden können. Die intuitive Benutzeroberfläche ermöglicht auch Nutzern ohne technische Vorkenntnisse, professionelle Videos schnell und einfach zu erstellen.
