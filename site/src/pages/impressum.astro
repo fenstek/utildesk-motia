@@ -19,9 +19,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <p>
       <span
         id="impressum-name"
-        data-part-1="S."
-        data-part-2=" "
-        data-part-3="Skorykov"
+        data-p1="S."
+        data-p2=" "
+        data-p3="Skorykov"
       ></span>
     </p>
 
@@ -52,9 +52,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     const nameEl = document.getElementById("impressum-name");
     if (nameEl) {
       const parts = [
-        nameEl.dataset.part1,
-        nameEl.dataset.part2,
-        nameEl.dataset.part3,
+        nameEl.dataset.p1,
+        nameEl.dataset.p2,
+        nameEl.dataset.p3,
       ].filter(Boolean);
       nameEl.textContent = parts.join("");
     }
