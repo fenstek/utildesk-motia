@@ -11,3 +11,6 @@ motia-app/
 
 # local archives (do not commit)
 _archive/
+
+# local reports (generated)
+reports/
