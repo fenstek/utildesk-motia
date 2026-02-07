@@ -5,8 +5,8 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "https://www.llama.com/"
+affiliate_url: "https://www.llama.com/"
 ---
-
 # LLaMA
 
 LLaMA (Large Language Model Meta AI) ist ein fortschrittliches KI-Sprachmodell, das von Meta entwickelt wurde. Es dient dazu, natürliche Sprache zu verstehen und zu generieren und findet Anwendung in vielen Bereichen wie Textgenerierung, Übersetzung, Chatbots und Forschung. LLaMA zeichnet sich durch seine Flexibilität und Effizienz aus und ist sowohl für Entwickler als auch für Unternehmen interessant, die KI-gestützte Sprachlösungen integrieren möchten.
