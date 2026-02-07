@@ -30,14 +30,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </section>
 
   <script>
-  const decode = (el) => {
-    if (!el) return "";
-    const b1 = el.dataset.b1 || "";
-    const b2 = el.dataset.b2 || "";
-    const b3 = el.dataset.b3 || "";
-    const b64 = `${b1}${b2}${b3}`;
-    try { return atob(b64); } catch { return ""; }
-  };
+    const decode = (el) => {
+      if (!el) return "";
+      const b1 = el.dataset.b1 || "";
+      const b2 = el.dataset.b2 || "";
+      const b3 = el.dataset.b3 || "";
+      const b64 = `${b1}${b2}${b3}`;
+
+      // UTF-8 safe decode (fixes ÃŸ/Ã¼ artifacts)
+      try {
+        const bin = atob(b64);
+        const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+        return new TextDecoder("utf-8").decode(bytes);
+      } catch {
+        return "";
+      }
+    };
 
   const nameEl = document.getElementById("impressum-name");
   if (nameEl) nameEl.textContent = decode(nameEl);
