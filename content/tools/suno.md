@@ -4,8 +4,9 @@ title: "Suno"
 category: "Audio"
 price_model: "freemium"
 tags: [ai, audio]
+official_url: "https://www.comune.suno.novara.it"
+affiliate_url: "https://www.comune.suno.novara.it"
 ---
-
 # Suno
 
 Suno ist ein innovatives Audio-Tool, das Künstliche Intelligenz (KI) nutzt, um die Erstellung und Bearbeitung von Audioinhalten zu erleichtern. Es bietet sowohl Anfängern als auch Profis eine Plattform, um Sounddesign, Musikproduktion oder Sprachaufnahmen effizienter und kreativer zu gestalten. Mit einem freemium-Modell ermöglicht Suno den Nutzern, grundlegende Funktionen kostenlos zu verwenden und bei Bedarf auf erweiterte Features zuzugreifen.

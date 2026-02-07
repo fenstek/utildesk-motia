@@ -4,8 +4,9 @@ title: "Krisp"
 category: "Audio"
 price_model: "freemium"
 tags: [ai,audio]
+official_url: "https://krispykreme.com"
+affiliate_url: "https://krispykreme.com"
 ---
-
 # Krisp
 
 Krisp ist eine KI-basierte Audio-Software, die Hintergrundgeräusche in Echtzeit herausfiltert und so für klaren Klang bei Telefonaten, Videokonferenzen und Aufnahmen sorgt. Die Anwendung ist kompatibel mit vielen gängigen Kommunikations- und Aufnahme-Tools und eignet sich besonders für Nutzer, die in lauten Umgebungen arbeiten oder Wert auf professionelle Audioqualität legen.
