@@ -85,7 +85,7 @@ async function loadSheetMap(){
     const affiliate_url = hasAffiliate ? String(r[idx.affiliate_url] || "").trim() : "";
     m.set(slug, {
       official_url,
-      affiliate_url: affiliate_url || official_url,
+      affiliate_url,
     });
   }
   return m;
@@ -129,7 +129,7 @@ async function main(){
     }
 
     // keep affiliate aligned as well (sheet provides affiliate or falls back to official)
-    if (newAffiliate && newAffiliate !== curAffiliate) {
+    if ((newAffiliate || "").trim() && newAffiliate !== curAffiliate) {
       fm.affiliate_url = newAffiliate;
       changed = true;
     }
