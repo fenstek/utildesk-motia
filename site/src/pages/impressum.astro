@@ -17,67 +17,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <h2>Betreiber</h2>
     <p>
-      <span
-        id="impressum-name"
-        data-p1="S."
-        data-p2=" "
-        data-p3="Skorykov"
-      ></span>
-    </p>
-
-    <h2>Anschrift</h2>
-    <p>
-      <span
-        id="impressum-address"
-        data-street="Adersstraße"
-        data-number="68"
-        data-plz="40215"
-        data-city="Düsseldorf"
-        data-country="Deutschland"
-      ></span>
-    </p>
-
-    <h2>E-Mail</h2>
-    <p>
-      <span
-        id="impressum-email"
-        data-user="outcome_washed828"
-        data-domain="simplelogin"
-        data-tld="com"
-      ></span>
+      <span id="impressum-email" data-b1="b3V0Y29tZV93YX" data-b2="NoZWQ4MjhAc2ltc" data-b3="GxlbG9naW4uY29t"></span>
     </p>
   </section>
 
   <script>
-    const nameEl = document.getElementById("impressum-name");
-    if (nameEl) {
-      const parts = [
-        nameEl.dataset.p1,
-        nameEl.dataset.p2,
-        nameEl.dataset.p3,
-      ].filter(Boolean);
-      nameEl.textContent = parts.join("");
-    }
+  const decode = (el) => {
+    if (!el) return "";
+    const b1 = el.dataset.b1 || "";
+    const b2 = el.dataset.b2 || "";
+    const b3 = el.dataset.b3 || "";
+    const b64 = `${b1}${b2}${b3}`;
+    try { return atob(b64); } catch { return ""; }
+  };
 
-    const addressEl = document.getElementById("impressum-address");
-    if (addressEl) {
-      const street = addressEl.dataset.street ?? "";
-      const number = addressEl.dataset.number ?? "";
-      const plz = addressEl.dataset.plz ?? "";
-      const city = addressEl.dataset.city ?? "";
-      const country = addressEl.dataset.country ?? "";
-      const line1 = [street, number].filter(Boolean).join(" ");
-      const line2 = [plz, city].filter(Boolean).join(" ");
-      addressEl.textContent = [line1, line2, country].filter(Boolean).join(", ");
-    }
+  const nameEl = document.getElementById("impressum-name");
+  if (nameEl) nameEl.textContent = decode(nameEl);
 
-    const emailEl = document.getElementById("impressum-email");
-    if (emailEl) {
-      const user = emailEl.dataset.user ?? "";
-      const domain = emailEl.dataset.domain ?? "";
-      const tld = emailEl.dataset.tld ?? "";
-      const email = [user, domain].filter(Boolean).join("@");
-      emailEl.textContent = tld ? `${email}.${tld}` : email;
-    }
-  </script>
+  const addressEl = document.getElementById("impressum-address");
+  if (addressEl) addressEl.textContent = decode(addressEl);
+
+  const emailEl = document.getElementById("impressum-email");
+  if (emailEl) emailEl.textContent = decode(emailEl);
+</script>
 </BaseLayout>
