@@ -110,8 +110,6 @@ function upsertFrontmatter(md, kv){
 
   // Affiliate fallback: if empty -> official
   let affiliate_url = (tool.affiliate_url || "").trim();
-  if (!affiliate_url && official_url) affiliate_url = official_url;
-
   // Load MD
   let md = fs.readFileSync(mdPath, "utf8");
 
