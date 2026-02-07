@@ -1,24 +1,20 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { google } from "googleapis";
 
-function extractQid(notes=''){
-  const m = String(notes).match(/qid=(Q\d+)/i);
-  return m ? m[1].toUpperCase() : null;
-}
+/**
+ * Backfill official_url / affiliate_url into content/tools/*.md
+ * Source of truth: Google Sheet (match by slug).
+ *
+ * Requirements:
+ * - service account key at /opt/utildesk-motia/secrets/google-service-account.json
+ * - sheet has columns: slug, official_url, affiliate_url
+ */
 
-async function fetchWikidataOfficialWebsite(qid){
-  const url = `https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`;
-  const res = await fetch(url, { headers: { "accept":"application/json" } });
-  if(!res.ok) return null;
-  const j = await res.json();
-  const e = j?.entities?.[qid];
-  const p856 = e?.claims?.P856;
-  if (!Array.isArray(p856) || !p856[0]) return null;
-  const v = p856[0]?.mainsnak?.datavalue?.value;
-  if (typeof v === "string" && v.startsWith("http")) return v;
-  return null;
-}
+const SPREADSHEET_ID = "1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ";
+const SHEET_NAME = "Tabellenblatt1";
+const SA_JSON_PATH = "/opt/utildesk-motia/secrets/google-service-account.json";
 
 function parseFrontmatter(md){
   const m = md.match(/^---\n([\s\S]*?)\n---\n/);
@@ -29,7 +25,7 @@ function parseFrontmatter(md){
     const mm = line.match(/^([A-Za-z0-9_]+):\s*(.*)\s*$/);
     if(mm) fm[mm[1]] = mm[2].replace(/^"(.*)"$/,"$1");
   }
-  return { fm, body: md.slice(m[0].length), rawFm: m[1] };
+  return { fm, body: md.slice(m[0].length) };
 }
 
 function buildFrontmatter(fm){
@@ -38,7 +34,12 @@ function buildFrontmatter(fm){
   const lines = ["---"];
   for(const k of order){
     if(fm[k] !== undefined){
-      lines.push(`${k}: "${String(fm[k]).replace(/"/g,'\\"')}"`);
+      // tags may be array-like already (e.g. [ai, audio]) -> keep as-is if it looks like []
+      if (k === "tags" && typeof fm[k] === "string" && fm[k].trim().startsWith("[") && fm[k].trim().endsWith("]")) {
+        lines.push(`${k}: ${fm[k]}`);
+      } else {
+        lines.push(`${k}: "${String(fm[k]).replace(/"/g,'\\"')}"`);
+      }
       keys.delete(k);
     }
   }
@@ -49,39 +50,92 @@ function buildFrontmatter(fm){
   return lines.join("\n");
 }
 
-const toolsDir = path.join(process.cwd(), "content", "tools");
-const files = fs.readdirSync(toolsDir).filter(f => f.endsWith(".md") && !f.startsWith("_"));
-
-let updated = 0;
-
-for (const f of files){
-  const fp = path.join(toolsDir, f);
-  const md = fs.readFileSync(fp, "utf8");
-  const { fm, body } = parseFrontmatter(md);
-
-  // already ok?
-  if (fm.official_url && fm.affiliate_url) continue;
-
-  // try qid from notes in body (если встречается)
-  const qid = extractQid(md);
-  let official = fm.official_url || "";
-  if (!official && qid){
-    official = await fetchWikidataOfficialWebsite(qid) || "";
+async function loadSheetMap(){
+  if (!fs.existsSync(SA_JSON_PATH)) {
+    throw new Error(`Service account key not found: ${SA_JSON_PATH}`);
   }
 
-  // fallback affiliate = official
-  let affiliate = fm.affiliate_url || "";
-  if (!affiliate && official) affiliate = official;
+  const auth = new google.auth.GoogleAuth({
+    keyFile: SA_JSON_PATH,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+  });
+  const sheets = google.sheets({ version: "v4", auth });
 
-  // if nothing found, skip
-  if (!official && !affiliate) continue;
+  const res = await sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `${SHEET_NAME}!A1:Z`,
+  });
 
-  fm.official_url = official || fm.official_url || "";
-  fm.affiliate_url = affiliate || fm.affiliate_url || "";
+  const values = res.data.values || [];
+  if (values.length < 2) return new Map();
 
-  const out = buildFrontmatter(fm) + body.trim() + "\n";
-  fs.writeFileSync(fp, out, "utf8");
-  updated++;
+  const header = values[0].map(h => String(h || "").trim());
+  const idx = Object.fromEntries(header.map((h,i)=>[h,i]));
+
+  if (!("slug" in idx)) throw new Error('Sheet missing column "slug"');
+  if (!("official_url" in idx)) throw new Error('Sheet missing column "official_url"');
+  // affiliate_url optional; if missing we will fallback to official_url
+  const hasAffiliate = ("affiliate_url" in idx);
+
+  const m = new Map();
+  for (const r of values.slice(1)) {
+    const slug = String(r[idx.slug] || "").trim();
+    if (!slug) continue;
+    const official_url = String(r[idx.official_url] || "").trim();
+    const affiliate_url = hasAffiliate ? String(r[idx.affiliate_url] || "").trim() : "";
+    m.set(slug, {
+      official_url,
+      affiliate_url: affiliate_url || official_url,
+    });
+  }
+  return m;
 }
 
-console.log(JSON.stringify({ ok:true, updated }, null, 2));
+async function main(){
+  const sheetMap = await loadSheetMap();
+
+  const toolsDir = path.join(process.cwd(), "content", "tools");
+  const files = fs.readdirSync(toolsDir).filter(f => f.endsWith(".md") && !f.startsWith("_"));
+
+  let updated = 0;
+  let checked = 0;
+
+  for (const f of files){
+    const fp = path.join(toolsDir, f);
+    const md = fs.readFileSync(fp, "utf8");
+    const { fm, body } = parseFrontmatter(md);
+    const slug = (fm.slug || "").trim() || f.replace(/\.md$/,"");
+
+    checked++;
+
+    const rec = sheetMap.get(slug);
+    if (!rec) continue;
+
+    const curOfficial = (fm.official_url || "").trim();
+    const curAffiliate = (fm.affiliate_url || "").trim();
+
+    const newOfficial = rec.official_url || "";
+    const newAffiliate = (rec.affiliate_url || "").trim() || newOfficial;
+
+    // If sheet has no official url, don't overwrite anything
+    if (!newOfficial) continue;
+
+    // Update only if missing
+    let changed = false;
+    if (!curOfficial) { fm.official_url = newOfficial; changed = true; }
+    if (!curAffiliate) { fm.affiliate_url = newAffiliate; changed = true; }
+
+    if (!changed) continue;
+
+    const out = buildFrontmatter(fm) + body.trim() + "\n";
+    fs.writeFileSync(fp, out, "utf8");
+    updated++;
+  }
+
+  console.log(JSON.stringify({ ok:true, checked, updated }, null, 2));
+}
+
+main().catch(err => {
+  console.error("ERROR:", err?.stack || String(err));
+  process.exit(1);
+});
