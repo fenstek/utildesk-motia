@@ -1,17 +1,5 @@
-/impressum
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
 
-/impressum/
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
-
-/impressum/*
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
-
-/datenschutz
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
-
-/datenschutz/
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
-
-/datenschutz/*
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
