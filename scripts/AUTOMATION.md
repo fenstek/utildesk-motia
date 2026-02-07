@@ -85,3 +85,71 @@ node scripts/test_run_9_full.mjs 3
 - check_duplicates.mjs
 
 Этот файл — точка истины по автоматизации.
+
+---
+
+# Cron Autopilot (Publish + Commit/Push + PR merge) — Stand 2026-02-07
+
+## Ziel
+Vollautomatische Veröffentlichung neuer Tool-Seiten:
+- Cron läuft auf VPS
+- Generiert neue `content/tools/*.md` aus Google Sheet
+- Commit/Push passiert **nur**, wenn neue/änderte MD entstanden sind
+- Änderungen gehen **nicht direkt nach master**, sondern:
+  - push nach `autobot`
+  - PR `autobot -> master`
+  - Merge per `gh pr merge --merge --admin`
+- Cloudflare Pages deployt automatisch nach Merge in `master`
+
+## Cron Jobs (root crontab)
+```cron
+0 */6 * * * flock -n /tmp/utildesk-motia_publish.lock bash -lc 'cd /opt/utildesk-motia && bash scripts/cron_publish_push.sh' >> /var/log/utildesk-motia/publish.log 2>&1
+15 */12 * * * flock -n /tmp/utildesk-motia_sheet.lock bash -lc 'cd /opt/utildesk-motia && FETCH_TIMEOUT_MS=6000 WIKIDATA_MIN_SITELINKS=15 AUTOGEN_MAX_LOOPS=200 node scripts/sheet_ai_autogen_9_strict_v2.mjs 20' >> /var/log/utildesk-motia/sheet.log 2>&1
+```
+
+### Locks / Logs
+- Publish Lock: `/tmp/utildesk-motia_publish.lock`
+- Sheet Lock: `/tmp/utildesk-motia_sheet.lock`
+- Publish Log: `/var/log/utildesk-motia/publish.log`
+- Sheet Log: `/var/log/utildesk-motia/sheet.log`
+
+## Wrapper Script
+Pfad: `scripts/cron_publish_push.sh`
+
+Verhalten (Kurzfassung):
+1) `git fetch --all --prune`
+2) `git checkout autobot` (falls nicht vorhanden: erstellen)
+3) `git reset --hard origin/autobot` (sauberer Zustand)
+4) `node scripts/test_run_9_full.mjs 3`
+5) Prüft Änderungen via `git status --porcelain`
+6) **Allowlist**: commit/push nur, wenn Änderungen ausschließlich in:
+   - `content/tools/*.md`
+7) Commit: `content: autogen tools (YYYY-MM-DD HH:MM UTC)`
+8) Push nach `origin/autobot`
+9) PR erstellen (falls nicht vorhanden):
+   - base: `master`
+   - head: `autobot`
+   - title: `Autobot: publish new tools`
+10) Merge PR automatisch per:
+   - `gh pr merge --merge --admin --delete-branch=false autobot`
+
+## Hinweise / Risiken
+- GitHub Branch Protection verlangt PR (master ist geschützt). Lösung: Autobranche + PR + Admin-merge.
+- Git Operations laufen über GitHub CLI (`gh auth status -h github.com` muss OK sein).
+- Wenn `gh` Token/Session ausfällt: cron stoppt beim PR/Merge → dann `publish.log` prüfen.
+
+## Schnelltests
+- Manuell Publish-Lauf:
+```bash
+cd /opt/utildesk-motia && bash scripts/cron_publish_push.sh
+```
+- Cron anzeigen:
+```bash
+crontab -l
+```
+- Logs:
+```bash
+tail -n 200 /var/log/utildesk-motia/publish.log
+tail -n 200 /var/log/utildesk-motia/sheet.log
+```
+
