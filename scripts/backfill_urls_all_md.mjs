@@ -120,10 +120,19 @@ async function main(){
     // If sheet has no official url, don't overwrite anything
     if (!newOfficial) continue;
 
-    // Update only if missing
+    // Update if different (Sheet is source of truth)
     let changed = false;
-    if (!curOfficial) { fm.official_url = newOfficial; changed = true; }
-    if (!curAffiliate) { fm.affiliate_url = newAffiliate; changed = true; }
+
+    if (newOfficial && newOfficial !== curOfficial) {
+      fm.official_url = newOfficial;
+      changed = true;
+    }
+
+    // keep affiliate aligned as well (sheet provides affiliate or falls back to official)
+    if (newAffiliate && newAffiliate !== curAffiliate) {
+      fm.affiliate_url = newAffiliate;
+      changed = true;
+    }
 
     if (!changed) continue;
 
