@@ -1,0 +1,17 @@
+/impressum
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/impressum/
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/impressum/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/datenschutz
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/datenschutz/
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/datenschutz/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
