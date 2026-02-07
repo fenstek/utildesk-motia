@@ -4,8 +4,9 @@ title: "Replit"
 category: "Developer"
 price_model: "freemium"
 tags: [ai,developer]
+official_url: "https://repl.it"
+affiliate_url: "https://repl.it"
 ---
-
 # Replit
 
 Replit ist eine webbasierte Entwicklungsplattform, die es Programmierern ermöglicht, Code direkt im Browser zu schreiben, auszuführen und zu teilen. Die Plattform unterstützt zahlreiche Programmiersprachen und bietet kollaborative Funktionen sowie KI-gestützte Tools, um den Entwicklungsprozess zu erleichtern. Mit einem Freemium-Modell richtet sich Replit sowohl an Anfänger als auch an erfahrene Entwickler, die schnelle Prototypen erstellen oder gemeinsam an Projekten arbeiten möchten.

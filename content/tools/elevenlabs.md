@@ -4,8 +4,9 @@ title: "ElevenLabs"
 category: "Audio"
 price_model: "freemium"
 tags: [ai, audio]
+official_url: "https://elevenlabs.io/"
+affiliate_url: "https://elevenlabs.io/"
 ---
-
 # ElevenLabs
 
 ElevenLabs ist eine fortschrittliche KI-basierte Audio-Plattform, die sich auf die Erzeugung und Bearbeitung von Sprachinhalten spezialisiert hat. Mit modernen Technologien für Text-zu-Sprache (Text-to-Speech) ermöglicht ElevenLabs natürliche und ausdrucksstarke Sprachsynthese, die in verschiedenen Anwendungsbereichen eingesetzt werden kann. Die Plattform bietet sowohl eine kostenlose Einstiegsversion als auch kostenpflichtige Pläne mit erweiterten Funktionen.

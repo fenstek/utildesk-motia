@@ -4,8 +4,9 @@ title: "Whisper"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
+official_url: "http://www.goldcirclefilms.com/movies/movie_whisper.html"
+affiliate_url: "http://www.goldcirclefilms.com/movies/movie_whisper.html"
 ---
-
 # Whisper
 
 Whisper ist ein fortschrittliches KI-gestütztes Tool zur automatischen Spracherkennung (ASR), das von OpenAI entwickelt wurde. Es ermöglicht die Umwandlung von gesprochener Sprache in Text und unterstützt dabei zahlreiche Sprachen und Dialekte. Whisper eignet sich sowohl für Entwickler als auch für Unternehmen und Einzelpersonen, die zuverlässige Transkriptionen benötigen. Durch seine offene Architektur und die Möglichkeit, lokal oder in der Cloud zu arbeiten, bietet Whisper flexible Einsatzmöglichkeiten – von der einfachen Spracherkennung bis hin zu komplexen Anwendungen im Bereich der Sprachverarbeitung.
