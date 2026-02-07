@@ -5,8 +5,8 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "http://narrativescience.com"
+affiliate_url: "http://narrativescience.com"
 ---
-
 # Narrative Science
 
 Narrative Science ist eine leistungsstarke KI-Software, die sich auf die automatische Erstellung von Berichten und datengetriebenen Erzählungen spezialisiert hat. Die Technologie wandelt komplexe Daten in verständliche, gut strukturierte Texte um, die sich einfach interpretieren lassen. Dadurch unterstützt Narrative Science Unternehmen dabei, datengestützte Entscheidungen zu treffen und ihre Berichterstattung zu automatisieren.
