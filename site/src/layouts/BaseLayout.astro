@@ -18,6 +18,7 @@ const { title = "Utildesk", description = "Tools & Guides für AI, Automatisieru
     <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/styles/global.css" />
     <title>{title}</title>
+    <slot name="head" />
     <style>
       .brand {
         display: flex;
@@ -67,7 +68,8 @@ const { title = "Utildesk", description = "Tools & Guides für AI, Automatisieru
           </a>
           <div class="footer-links">
             <a href="/tools/">Tools</a>
-            
+            <a href="/datenschutz/" rel="nofollow">Datenschutzerklärung</a>
+            <a href="/impressum/" rel="nofollow">Impressum</a>
           </div>
         </div>
         <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Disclaimer: Utildesk is an independent tools directory. All trademarks, logos, and brand names are the property of their respective owners.</p>

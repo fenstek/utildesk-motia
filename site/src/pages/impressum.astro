@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Impressum – Utildesk"
+  description="Impressum für Utildesk."
+>
+  <Fragment slot="head">
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+  </Fragment>
+
+  <section class="legal">
+    <h1>Impressum</h1>
+    <p>Angaben gemäß §5 TMG und §18 MStV</p>
+
+    <h2>Betreiber</h2>
+    <p>
+      <span
+        id="impressum-name"
+        data-p1="S."
+        data-p2=" "
+        data-p3="Skorykov"
+      ></span>
+    </p>
+
+    <h2>Anschrift</h2>
+    <p>
+      <span
+        id="impressum-address"
+        data-street="Adersstraße"
+        data-number="68"
+        data-plz="40215"
+        data-city="Düsseldorf"
+        data-country="Deutschland"
+      ></span>
+    </p>
+
+    <h2>E-Mail</h2>
+    <p>
+      <span
+        id="impressum-email"
+        data-user="outcome_washed828"
+        data-domain="simplelogin"
+        data-tld="com"
+      ></span>
+    </p>
+  </section>
+
+  <script>
+    const nameEl = document.getElementById("impressum-name");
+    if (nameEl) {
+      const parts = [
+        nameEl.dataset.p1,
+        nameEl.dataset.p2,
+        nameEl.dataset.p3,
+      ].filter(Boolean);
+      nameEl.textContent = parts.join("");
+    }
+
+    const addressEl = document.getElementById("impressum-address");
+    if (addressEl) {
+      const street = addressEl.dataset.street ?? "";
+      const number = addressEl.dataset.number ?? "";
+      const plz = addressEl.dataset.plz ?? "";
+      const city = addressEl.dataset.city ?? "";
+      const country = addressEl.dataset.country ?? "";
+      const line1 = [street, number].filter(Boolean).join(" ");
+      const line2 = [plz, city].filter(Boolean).join(" ");
+      addressEl.textContent = [line1, line2, country].filter(Boolean).join(", ");
+    }
+
+    const emailEl = document.getElementById("impressum-email");
+    if (emailEl) {
+      const user = emailEl.dataset.user ?? "";
+      const domain = emailEl.dataset.domain ?? "";
+      const tld = emailEl.dataset.tld ?? "";
+      const email = [user, domain].filter(Boolean).join("@");
+      emailEl.textContent = tld ? `${email}.${tld}` : email;
+    }
+  </script>
+</BaseLayout>
