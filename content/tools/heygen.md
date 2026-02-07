@@ -5,7 +5,7 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "https://www.heygen.com/"
-affiliate_url: "https://www.heygen.com/"
+affiliate_url: ""
 ---
 # HeyGen
 
