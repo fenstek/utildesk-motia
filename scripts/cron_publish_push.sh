@@ -3,7 +3,9 @@ set -euo pipefail
 
 cd /opt/utildesk-motia
 
-echo "[cron] start: $(date -Is)"
+echo "[cron] start:
+node scripts/guard_deny_md.mjs
+ $(date -Is)"
 
 # Always work from autobot branch
 git fetch --all --prune
