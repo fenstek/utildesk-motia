@@ -179,7 +179,7 @@ async function readExisting(){
 
 const DENY = [
   'zoom','microsoft teams','teams','google search console','search console',
-  'google analytics','jira','confluence','trello','slack' // not AI-first products
+  'google analytics','jira','confluence','trello','slack','tome','bard' // not AI-first products
 ];
 function isDenied(name){
   const n = String(name||'').toLowerCase();
