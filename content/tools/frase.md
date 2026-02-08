@@ -4,7 +4,7 @@ title: "Frase"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://www.visitfraserburgh.com/"
+official_url: ""
 ---
 
 # Frase
