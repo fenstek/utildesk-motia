@@ -17,8 +17,12 @@ fi
 # sync with remote
 git reset --hard origin/autobot
 
-# 1) Generate
-node scripts/test_run_9_full.mjs 3
+# 1) Generate (can be disabled for manual fixes)
+if [[ "${PUBLISH_ONLY:-0}" == "1" ]]; then
+  echo "[cron] PUBLISH_ONLY=1 -> skip generation (no NEW tools will be processed)"
+else
+  node scripts/test_run_9_full.mjs 3
+fi
 
 # 2) Detect changes
 CHANGED="$(git status --porcelain || true)"
