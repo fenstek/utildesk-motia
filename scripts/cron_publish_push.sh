@@ -7,17 +7,23 @@ echo "[cron] start:
 node scripts/guard_deny_md.mjs
  $(date -Is)"
 
-# Always work from autobot branch
+# Always work from autobot branch (self-healing if remote branch was deleted)
 git fetch --all --prune
 
-if ! git rev-parse --verify autobot >/dev/null 2>&1; then
-  git checkout -b autobot
+if git show-ref --verify --quiet refs/remotes/origin/autobot; then
+  # remote branch exists -> hard reset local to it
+  if git rev-parse --verify autobot >/dev/null 2>&1; then
+    git checkout autobot
+  else
+    git checkout -b autobot
+  fi
+  git reset --hard origin/autobot
 else
-  git checkout autobot
+  # remote branch missing (often deleted after merge) -> recreate from origin/master
+  echo "[cron] origin/autobot missing -> recreate autobot from origin/master"
+  git checkout -B autobot origin/master
+  git push -u origin autobot
 fi
-
-# sync with remote
-git reset --hard origin/autobot
 
 # 1) Generate (can be disabled for manual fixes)
 if [[ "${PUBLISH_ONLY:-0}" == "1" ]]; then
