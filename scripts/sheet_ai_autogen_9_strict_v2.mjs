@@ -52,11 +52,21 @@ const OFFICIAL_URL_DENY_HOST = new Set([
 ]);
 
 const OFFICIAL_URL_DENY_SUBSTR = [
+  // generic non-product portals
+  'culture',
   // gov / municipality / city portals
   'mairie','stadt','gemeinde','municip','municipal','kommune','council','gov','gouv','regierung',
   // tourism / visiting portals
   'visit','tourism','tourist','stadtinfo','city',
 ];
+
+function hostContainsToken(host, token){
+  const h = String(host||'').toLowerCase();
+  const t = String(token||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  if(!h || !t) return false;
+  // allow both exact and partial (e.g., eleuther in eleuther.ai)
+  return h.replace(/[^a-z0-9]/g,'').includes(t);
+}
 
 function isSuspiciousOfficialUrl(u){
   try{
@@ -316,9 +326,8 @@ async function pickWikidata(name){
 
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
-
     const host = hostname(off);
-    if(single && token && !host.includes(token) && sl < 10) continue;
+    if(token && host && !hostContainsToken(host, token) && sl < 25) continue;
 
     const score = sl + (host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
@@ -451,8 +460,10 @@ async function main(){
 
 
 
+            const token2 = (slugify(topic).split('-')[0] || '').toLowerCase();
+
       // official_url guard (final safety net)
-      const suspicious = isSuspiciousOfficialUrl(wd.official_url);
+      const suspicious = isSuspiciousOfficialUrl(wd.official_url) || (hostname(wd.official_url) && token2 && !hostContainsToken(hostname(wd.official_url), token2));
       const safeOfficial = suspicious ? '' : wd.official_url;
       const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
       const safetyNote = suspicious ? 'blocked_official_url' : '';
