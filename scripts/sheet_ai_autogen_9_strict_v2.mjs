@@ -37,6 +37,56 @@ function hostname(u){
   try { return new URL(u).hostname.replace(/^www\./,'').toLowerCase(); }
   catch { return ''; }
 }
+
+// --- official_url guards (blacklist / suspicious patterns) ---
+const OFFICIAL_URL_DENY_HOST = new Set([
+  // encyclopedias / knowledge bases
+  'wikipedia.org','wikidata.org','wikimedia.org',
+  // socials
+  'facebook.com','instagram.com','linkedin.com','tiktok.com','youtube.com','youtu.be',
+  'twitter.com','x.com',
+  // entertainment DB
+  'imdb.com',
+  // travel / directories (often wrong for tool names)
+  'tripadvisor.com','booking.com','expedia.com',
+]);
+
+const OFFICIAL_URL_DENY_SUBSTR = [
+  // gov / municipality / city portals
+  'mairie','stadt','gemeinde','municip','municipal','kommune','council','gov','gouv','regierung',
+  // tourism / visiting portals
+  'visit','tourism','tourist','stadtinfo','city',
+];
+
+function isSuspiciousOfficialUrl(u){
+  try{
+    const url = new URL(String(u||'').trim());
+    const host = url.hostname.replace(/^www\./,'').toLowerCase();
+    const path = (url.pathname || '').toLowerCase();
+
+    // hard deny exact/parent domains
+    for (const d of OFFICIAL_URL_DENY_HOST){
+      if (host === d || host.endsWith('.' + d)) return true;
+    }
+
+    // wiki-like paths
+    if (path.startsWith('/wiki/') || path.includes('/wiki/')) return true;
+
+    // substring heuristics (host + path)
+    const hp = host + path;
+    for (const sub of OFFICIAL_URL_DENY_SUBSTR){
+      if (hp.includes(sub)) return true;
+    }
+
+    // obvious non-product pages
+    if (hp.includes('/film') || hp.includes('/movie') || hp.includes('/stadt/') || hp.includes('/city/')) return true;
+
+    return false;
+  } catch {
+    return true; // invalid URL => suspicious
+  }
+}
+
 function extractJsonArray(text){
   if(!text) return [];
   let t = text.trim();
@@ -262,6 +312,7 @@ async function pickWikidata(name){
 
     const off = officialUrl(ent);
     if(!off) continue;
+    if(isSuspiciousOfficialUrl(off)) continue;
 
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
@@ -399,6 +450,13 @@ async function main(){
         })().join(',');
 
 
+
+      // official_url guard (final safety net)
+      const suspicious = isSuspiciousOfficialUrl(wd.official_url);
+      const safeOfficial = suspicious ? '' : wd.official_url;
+      const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
+      const safetyNote = suspicious ? 'blocked_official_url' : '';
+
       // Build strict A..P row (16 cells)
       const row = [
         topic,                 // A topic
@@ -407,11 +465,11 @@ async function main(){
           tags,                  // D tags
         'freemium',            // E price_model
         '',                    // F affiliate_url
-        'NEW',                 // G status
-        `validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason}`.trim(), // H notes
+        status,                // G status
+        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote}`).trim(), // H notes
         '',                    // I title
         '',                    // J short_hint
-        wd.official_url,       // K official_url
+        safeOfficial,          // K official_url
         '',                    // L brand_assets_url (optional later)
         qid,                   // M wikidata_id
         wd.wikipedia_de,       // N wikipedia_de
