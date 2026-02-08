@@ -4,8 +4,8 @@ title: "Kuki"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://www.stadt-zuerich.ch/"
-affiliate_url: "https://www.stadt-zuerich.ch/"
+official_url: ""
+affiliate_url: ""
 ---
 
 # Kuki
