@@ -314,6 +314,14 @@ async function main(){
     // affiliate_url должен быть пустым по проектному правилу — но мы не трогаем его здесь.
     // (Можно добавить отдельный репортер позже.)
 
+    // Safety: never touch DONE rows
+    if (status === 'DONE') continue;
+
+    // Only try to resolve when:
+    // - NEEDS_REVIEW
+    // - OR official_url empty
+    // - OR official_url is suspicious
+    // Otherwise leave row untouched (prevents "improving" already-correct URLs like gemini.google.com)
     const mustConsider =
       status === 'NEEDS_REVIEW' ||
       !official ||
