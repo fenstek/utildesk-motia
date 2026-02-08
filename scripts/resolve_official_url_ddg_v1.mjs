@@ -314,8 +314,8 @@ async function main(){
     // affiliate_url должен быть пустым по проектному правилу — но мы не трогаем его здесь.
     // (Можно добавить отдельный репортер позже.)
 
-    // Safety: never touch DONE rows
-    if (status === 'DONE') continue;
+    // Safety: never touch DONE or DISABLED rows
+    if (status === 'DONE' || status === 'DISABLED') continue;
 
     // Only try to resolve when:
     // - NEEDS_REVIEW
