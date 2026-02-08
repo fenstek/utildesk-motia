@@ -4,7 +4,7 @@ title: "Bard"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://www.bardejov.sk/"
+official_url: ""
 ---
 
 # Bard
