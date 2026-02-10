@@ -86,6 +86,36 @@ node scripts/test_run_9_full.mjs 3
 
 Этот файл — точка истины по автоматизации.
 
+## STATUS PIPELINE (Lifecycle)
+
+Row statuses control autogen deduplication, publishing, and terminal states:
+
+### Publishing Statuses (picked by sheet_get_next_new.mjs)
+- **NEW** - Ready for publishing. Picked by orchestrator → IN_PROGRESS → DONE/ERROR.
+
+### Working Statuses (transient)
+- **IN_PROGRESS** - Currently being processed by test_run_9_full.mjs.
+
+### Terminal Statuses (published)
+- **DONE** - Successfully published. Has MD file. Never reprocessed.
+
+### Review Statuses (require manual action)
+- **NEEDS_REVIEW** - Uncertain entity or suspicious URL. Set by autogen when validation is unclear. Blocks publishing until manually reviewed and changed to NEW.
+- **REBUILD** - Valid AI tool but wrong/outdated data. Blocks publishing until data is fixed and status changed to NEW.
+- **ERROR** - Processing failed. Needs investigation. Can be changed to NEW to retry.
+- **DISABLED** - Manually turned off. Can be changed to NEW to re-enable.
+
+### Exclusion Status (permanent)
+- **BLACKLIST** - NOT an AI tool (wrong entity, city, person, generic software). NEVER publish. EXCLUDED from autogen deduplication (allows corrected entries later).
+
+### Autogen Deduplication Rules
+- NEW, DONE, IN_PROGRESS, ERROR, NEEDS_REVIEW, REBUILD, DISABLED: Block duplicate topic/slug/QID/URL
+- BLACKLIST: Does NOT block (allows autogen to retry with corrected Wikidata matches)
+
+### Publishing Rules (sheet_get_next_new.mjs)
+- Picks: NEW only
+- Ignores: All other statuses (BLACKLIST, NEEDS_REVIEW, REBUILD, DISABLED, ERROR, IN_PROGRESS, DONE)
+
 ---
 
 # Cron Autopilot (Publish + Commit/Push + PR merge) — Stand 2026-02-07
