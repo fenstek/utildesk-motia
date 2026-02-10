@@ -3,7 +3,7 @@
  * AI-only tool discovery -> Wikidata validation -> strict write to Sheet A..P using sheet_write_rows_strict_AP_v2.mjs
  *
  * Usage:
- *   node scripts/sheet_ai_autogen_9_strict.mjs 9
+ *   node scripts/sheet_ai_autogen_9_strict_v2.mjs 20 [--dry-run] [--json] [--show-items]
  *
  * Output: JSON { ok:true, added:N }
  */
@@ -12,7 +12,13 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 
-const TARGET = Math.max(1, Math.min(50, Number(process.argv[2] || 9)));
+// Parse CLI flags
+const args = process.argv.slice(2);
+const TARGET = Math.max(1, Math.min(50, Number(args.find(a => !a.startsWith('--')) || 9)));
+const DRY_RUN = args.includes('--dry-run');
+const JSON_OUTPUT = args.includes('--json');
+const SHOW_ITEMS = args.includes('--show-items');
+
 const MIN_SITELINKS = Number(process.env.WIKIDATA_MIN_SITELINKS || 1);
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
@@ -56,6 +62,7 @@ const OFFICIAL_URL_DENY_SUBSTR = [
   'culture',
   // gov / municipality / city portals
   'mairie','stadt','gemeinde','municip','municipal','kommune','council','gov','gouv','regierung',
+  'comune','townof','cityof','ville','township',
   // tourism / visiting portals
   'visit','tourism','tourist','stadtinfo','city',
 ];
@@ -163,6 +170,11 @@ async function readExisting(){
   const existingHost = new Set();
 
   for(const r of rows.slice(1)){
+    const status = ('status' in idx) ? String(r[idx.status]||'').trim().toUpperCase() : '';
+
+    // BLACKLIST rows don't block deduplication (allows corrected entries later)
+    if(status === 'BLACKLIST') continue;
+
     const t = String(r[idx.topic]||'').trim().toLowerCase();
     const s = String(r[idx.slug]||'').trim().toLowerCase();
     const q = String(r[idx.wikidata_id]||'').trim().toUpperCase();
@@ -179,7 +191,9 @@ async function readExisting(){
 
 const DENY = [
   'zoom','microsoft teams','teams','google search console','search console',
-  'google analytics','jira','confluence','trello','slack','tome','bard' // not AI-first products
+  'google analytics','jira','confluence','trello','slack','tome','bard', // not AI-first products
+  'zotero','krita','gimp','inkscape','blender', // non-AI creative tools
+  'notion','todoist','evernote','roam', // non-AI productivity tools
 ];
 function isDenied(name){
   const n = String(name||'').toLowerCase();
@@ -262,14 +276,15 @@ const SEED_ALLOW = new Set(SEED_AI.map(x => canonicalName(x).toLowerCase()).filt
 
 
 async function propose(openai, n){
-  const system = `
-Gib NUR reale, populäre AI-Tools (Produkte/Services), die primär AI/LLM/Generative AI anbieten.
-Keine Nicht-AI Tools (Zoom/Teams/Analytics/Search Console/Slack/Trello etc.).
-Ausgabe: ausschließlich ein JSON-Array von Strings.`;
-  const user = `Gib ${n} verschiedene AI-Tools (nur Produktnamen, keine Tarifnamen wie Plus/Pro/Enterprise) als JSON-Array.`;
+  const system = `You are an AI tools expert. Return ONLY real, popular AI software products and services.
+Include: LLM chatbots, AI coding assistants, generative media tools (image/video/audio), AI writing tools, speech AI, translation AI, automation platforms with AI.
+EXCLUDE: Non-AI products (Zoom, Teams, Slack, Trello, Google Analytics, Jira, Confluence).
+EXCLUDE: Tier names (Plus, Pro, Enterprise, Business).
+Output: ONLY a JSON array of product names.`;
+  const user = `List ${n} different AI tools/services with diverse categories (chatbots, coding, design, video, audio, writing, translation, automation). JSON array only.`;
   const resp = await openai.chat.completions.create({
     model: OPENAI_MODEL,
-    temperature: 0.2,
+    temperature: 0.8,
     messages: [{role:'system', content: system.trim()},{role:'user', content: user.trim()}],
   });
   return extractJsonArray(resp.choices?.[0]?.message?.content?.trim() || '');
@@ -308,6 +323,107 @@ function wiki(ent, lang){
   return title ? `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g,'_'))}` : '';
 }
 
+// P31 (instance of) validation
+const ACCEPTED_P31 = new Set([
+  'Q7397', // software
+  'Q1172284', // web application
+  'Q166142', // online service
+  'Q7889', // video game (sometimes AI tools are games)
+  'Q58778', // system
+  'Q1301371', // computer program
+  'Q1639024', // application software
+  'Q341',  // free software
+  'Q506883', // open-source software
+  'Q21127166', // chatbot software
+  'Q15633582', // software library
+  'Q1639024', // application software
+  'Q74790', // software product
+  'Q9135', // operating system
+  'Q1172486', // web service
+  'Q1639024', // application program
+  'Q28598683', // AI system
+  'Q20826540', // mobile app
+  'Q15634736', // software framework
+  'Q1194128', // API
+  'Q1407659', // cloud service
+  'Q15634757', // web platform
+  'Q17155032', // SaaS
+  'Q28598683', // artificial intelligence system
+  'Q22811534', // language model
+]);
+
+const REJECTED_P31 = new Set([
+  'Q5', // human
+  'Q515', // city
+  'Q486972', // human settlement
+  'Q56061', // administrative territorial entity
+  'Q82794', // geographic region
+  'Q11424', // film
+  'Q215380', // musical group
+  'Q11424', // film
+  'Q5398426', // television series
+  'Q7725634', // literary work
+  'Q571', // book
+  'Q41298', // magazine
+  'Q1002697', // periodical
+  'Q11032', // newspaper
+  'Q1792450', // art genre
+  'Q3559093', // work of art
+]);
+
+function getInstanceOf(ent){
+  const claims = ent?.claims?.P31 || [];
+  return claims.map(c => c?.mainsnak?.datavalue?.value?.id).filter(Boolean);
+}
+
+function validateInstanceOf(ent){
+  const instances = getInstanceOf(ent);
+  if (instances.length === 0) {
+    // No P31 at all - accept but mark for review
+    return { valid: true, reason: 'no_P31_but_has_url', instances: [] };
+  }
+
+  // Check for rejected types first (hard fail)
+  for (const qid of instances) {
+    if (REJECTED_P31.has(qid)) {
+      return { valid: false, reason: `rejected_P31:${qid}` };
+    }
+  }
+
+  // If no rejected types, we're good (software-like by default)
+  // Either has accepted type OR just not rejected
+  const hasAccepted = instances.some(qid => ACCEPTED_P31.has(qid));
+
+  return { valid: true, reason: hasAccepted ? 'accepted_P31' : 'no_rejected', instances };
+}
+
+function isLikelyAITool(name, desc, instances){
+  const text = `${name} ${desc}`.toLowerCase();
+
+  // Strong AI signals
+  const aiTerms = ['ai', 'artificial intelligence', 'machine learning', 'deep learning', 'neural',
+    'llm', 'language model', 'gpt', 'generative', 'chatbot', 'assistant', 'copilot'];
+  if (aiTerms.some(term => text.includes(term))) return true;
+
+  // Check P31 for AI-specific types
+  const aiP31 = ['Q28598683', 'Q22811534']; // AI system, language model
+  if (instances.some(qid => aiP31.includes(qid))) return true;
+
+  // Specific tool patterns
+  if (/(chat|voice|speech|tts|image.*generat|video.*generat|code.*assist)/i.test(text)) return true;
+
+  // ML/AI frameworks and libraries (TensorFlow, PyTorch, etc.)
+  if (/tensor|pytorch|keras|scikit|opencv|transformers|hugging/i.test(name)) return true;
+
+  // Known AI companies/products (mistral, claude, etc.)
+  const knownAI = ['mistral', 'anthropic', 'openai', 'cohere', 'stability', 'runway', 'midjourney',
+    'elevenlabs', 'jasper', 'writesonic', 'quillbot', 'grammarly', 'copy.ai', 'synthesia', 'descript',
+    'pictory', 'murf', 'lumen5', 'fliki', 'clipchamp'];
+  if (knownAI.some(ai => name.toLowerCase().includes(ai))) return true;
+
+  return false;
+}
+
 async function pickWikidata(name){
   const results = await wikidataSearch(name, 8);
   if(!results.length) return null;
@@ -320,6 +436,14 @@ async function pickWikidata(name){
     const ent = await wikidataEntity(r.id);
     if(!ent) continue;
 
+    // P31 validation (MUST pass)
+    const p31Check = validateInstanceOf(ent);
+    if (!p31Check.valid) continue;
+
+    // AI tool check (should be AI-related)
+    const desc = r.description || (ent?.descriptions?.en?.value||'');
+    if (!isLikelyAITool(name, desc, p31Check.instances)) continue;
+
     const off = officialUrl(ent);
     if(!off) continue;
     if(isSuspiciousOfficialUrl(off)) continue;
@@ -327,18 +451,28 @@ async function pickWikidata(name){
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
     const host = hostname(off);
-    if(token && host && !hostContainsToken(host, token) && sl < 25) continue;
+
+    // Stricter hostname validation: must contain token OR have very high sitelinks
+    if(token && host && !hostContainsToken(host, token) && sl < 50) continue;
+
+    // Also check: if hostname looks like a generic portal (contains common non-product words), require exact token match
+    const hostLower = host.toLowerCase();
+    const genericWords = ['town', 'city', 'ville', 'comune', 'saint', 'sainte', 'municipality'];
+    if (genericWords.some(w => hostLower.includes(w))) {
+      if (!hostContainsToken(host, token)) continue;
+    }
 
     const score = sl + (host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
       best = {
         score,
         wikidata_id: r.id,
-        wikidata_desc: r.description || (ent?.descriptions?.en?.value||''),
+        wikidata_desc: desc,
         official_url: off,
         wikipedia_de: wiki(ent,'de'),
         wikipedia_en: wiki(ent,'en'),
         wikidata_sitelinks: String(sl),
+        p31_instances: p31Check.instances,
       };
     }
   }
@@ -394,12 +528,12 @@ async function main(){
     loops++;
     if (loops % 10 === 0) console.error(`[autogen] loops=${loops} picked=${picked.length}/${TARGET} pool=${pool.length} cache=${WD_ENTITY_CACHE.size}`);
 
-    if(pool.length < 25){
-      const more = await propose(openai, 60);
+    if(pool.length < 30){
+      const more = await propose(openai, 80);
       pool.push(...more);
     }
 
-    const chunk = pool.splice(0, 30);
+    const chunk = pool.splice(0, 40);
     if(chunk.length===0) break;
 
     for(const name of chunk){
@@ -498,18 +632,50 @@ async function main(){
   if(!picked.length) die('No AI tools validated (v2). Try again or relax validation.');
   const missing = Math.max(0, TARGET - picked.length);
 
+  let writerResult = null;
 
-  // Write via strict writer on stdin
-  const payload = JSON.stringify({ rows: picked });
-  const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
-    input: payload,
-    encoding: 'utf8',
-    cwd: process.cwd(),
-  });
+  // Write via strict writer on stdin (skip if dry-run)
+  if (!DRY_RUN) {
+    const payload = JSON.stringify({ rows: picked });
+    const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
+      input: payload,
+      encoding: 'utf8',
+      cwd: process.cwd(),
+    });
 
-  if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    writerResult = JSON.parse(out.stdout);
+  }
 
-  console.log(JSON.stringify({ ok:true, requested: TARGET, added: picked.length, missing, loops, writer: JSON.parse(out.stdout) }, null, 2));
+  const result = {
+    ok: true,
+    requested: TARGET,
+    added: picked.length,
+    missing,
+    loops,
+    dry_run: DRY_RUN,
+    ...(writerResult ? { writer: writerResult } : {}),
+  };
+
+  // Add items if requested
+  if (SHOW_ITEMS) {
+    result.items = picked.map(row => ({
+      topic: row[0],
+      slug: row[1],
+      category: row[2],
+      tags: row[3],
+      official_url: row[10],
+      wikidata_id: row[12],
+      wikidata_sitelinks: row[15],
+    }));
+  }
+
+  // Output format
+  if (JSON_OUTPUT || SHOW_ITEMS) {
+    console.log(JSON.stringify(result, null, 2));
+  } else {
+    console.log(JSON.stringify(result, null, 2));
+  }
 }
 
 main().catch(e=>die(e.stack||String(e)));
