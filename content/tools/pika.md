@@ -4,7 +4,7 @@ title: "Pika"
 category: "Video"
 price_model: "freemium"
 tags: [ai, video]
-official_url: "https://www.pik.ai"
+official_url: "https://pika.art/"
 ---
 
 # Pika
