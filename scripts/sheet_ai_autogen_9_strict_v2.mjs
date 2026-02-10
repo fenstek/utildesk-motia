@@ -12,8 +12,16 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 
-const TARGET = Math.max(1, Math.min(50, Number(process.argv[2] || 9)));
-const MIN_SITELINKS = Number(process.env.WIKIDATA_MIN_SITELINKS || 1);
+// Parse command-line arguments
+const args = process.argv.slice(2);
+const targetArg = args.find(a => !a.startsWith('--'));
+const TARGET = Math.max(1, Math.min(50, Number(targetArg || 9)));
+const DRY_RUN = args.includes('--dry-run');
+const JSON_OUTPUT = args.includes('--json');
+const SHOW_ITEMS = args.includes('--show-items');
+const MOCK_MODE = args.includes('--mock') || process.env.MOCK_MODE === 'true';
+
+const MIN_SITELINKS = Number(process.env.WIKIDATA_MIN_SITELINKS || 3);
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -49,6 +57,9 @@ const OFFICIAL_URL_DENY_HOST = new Set([
   'imdb.com',
   // travel / directories (often wrong for tool names)
   'tripadvisor.com','booking.com','expedia.com',
+  // software directories
+  'g2.com','capterra.com','producthunt.com','alternativeto.net','getapp.com',
+  'softwareadvice.com','trustpilot.com','trustradius.com','gartner.com',
 ]);
 
 const OFFICIAL_URL_DENY_SUBSTR = [
@@ -132,6 +143,42 @@ async function fetchWithTimeout(url, opts = {}) {
 }
 
 const WD_ENTITY_CACHE = new Map(); // qid -> entity|null
+const URL_LIVE_CACHE = new Map(); // url -> boolean
+
+async function isUrlLive(url) {
+  if (MOCK_MODE) return true; // In mock mode, assume all URLs are live
+
+  if (URL_LIVE_CACHE.has(url)) return URL_LIVE_CACHE.get(url);
+
+  try {
+    // Try HEAD first (faster)
+    const headRes = await fetchWithTimeout(url, {
+      method: 'HEAD',
+      headers: { 'user-agent': 'Mozilla/5.0 (compatible; utildesk-motia/1.0)' },
+      redirect: 'follow'
+    });
+
+    if (headRes.status >= 200 && headRes.status < 400) {
+      URL_LIVE_CACHE.set(url, true);
+      return true;
+    }
+
+    // If HEAD fails, try GET
+    const getRes = await fetchWithTimeout(url, {
+      method: 'GET',
+      headers: { 'user-agent': 'Mozilla/5.0 (compatible; utildesk-motia/1.0)' },
+      redirect: 'follow'
+    });
+
+    const isLive = getRes.status >= 200 && getRes.status < 400;
+    URL_LIVE_CACHE.set(url, isLive);
+    return isLive;
+  } catch (err) {
+    URL_LIVE_CACHE.set(url, false);
+    return false;
+  }
+}
+
 async function sheetsClient(){
   if(!SPREADSHEET_ID) die('Missing SPREADSHEET_ID');
   if(!GOOGLE_CLIENT_EMAIL) die('Missing GOOGLE_CLIENT_EMAIL');
@@ -275,7 +322,50 @@ Ausgabe: ausschließlich ein JSON-Array von Strings.`;
   return extractJsonArray(resp.choices?.[0]?.message?.content?.trim() || '');
 }
 
+// Mock Wikidata data for testing
+const MOCK_WIKIDATA = {
+  'chatgpt': { id: 'Q115564437', label: 'ChatGPT', description: 'AI chatbot', official_url: 'https://chatgpt.com', sitelinks: 45, wikipedia_de: 'https://de.wikipedia.org/wiki/ChatGPT', wikipedia_en: 'https://en.wikipedia.org/wiki/ChatGPT' },
+  'claude': { id: 'Q124491866', label: 'Claude', description: 'AI assistant', official_url: 'https://claude.ai', sitelinks: 12, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Claude_(language_model)' },
+  'gemini': { id: 'Q123415601', label: 'Gemini', description: 'AI chatbot', official_url: 'https://gemini.google.com', sitelinks: 18, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Gemini_(chatbot)' },
+  'perplexity': { id: 'Q117096353', label: 'Perplexity', description: 'AI search', official_url: 'https://www.perplexity.ai', sitelinks: 8, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Perplexity.ai' },
+  'microsoft-copilot': { id: 'Q113572170', label: 'Microsoft Copilot', description: 'AI assistant', official_url: 'https://copilot.microsoft.com', sitelinks: 22, wikipedia_de: 'https://de.wikipedia.org/wiki/Microsoft_Copilot', wikipedia_en: 'https://en.wikipedia.org/wiki/Microsoft_Copilot' },
+  'github-copilot': { id: 'Q107450970', label: 'GitHub Copilot', description: 'AI code assistant', official_url: 'https://github.com/features/copilot', sitelinks: 25, wikipedia_de: 'https://de.wikipedia.org/wiki/GitHub_Copilot', wikipedia_en: 'https://en.wikipedia.org/wiki/GitHub_Copilot' },
+  'midjourney': { id: 'Q113562640', label: 'Midjourney', description: 'AI image generator', official_url: 'https://www.midjourney.com', sitelinks: 30, wikipedia_de: 'https://de.wikipedia.org/wiki/Midjourney', wikipedia_en: 'https://en.wikipedia.org/wiki/Midjourney' },
+  'stable-diffusion': { id: 'Q113437966', label: 'Stable Diffusion', description: 'AI image generator', official_url: 'https://stability.ai', sitelinks: 35, wikipedia_de: 'https://de.wikipedia.org/wiki/Stable_Diffusion', wikipedia_en: 'https://en.wikipedia.org/wiki/Stable_Diffusion' },
+  'dall-e': { id: 'Q98663943', label: 'DALL-E', description: 'AI image generator', official_url: 'https://openai.com/dall-e-3', sitelinks: 28, wikipedia_de: 'https://de.wikipedia.org/wiki/DALL-E', wikipedia_en: 'https://en.wikipedia.org/wiki/DALL-E' },
+  'adobe-firefly': { id: 'Q116889203', label: 'Adobe Firefly', description: 'AI image generator', official_url: 'https://www.adobe.com/products/firefly.html', sitelinks: 10, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Adobe_Firefly' },
+  'canva': { id: 'Q5031617', label: 'Canva', description: 'design platform', official_url: 'https://www.canva.com', sitelinks: 42, wikipedia_de: 'https://de.wikipedia.org/wiki/Canva', wikipedia_en: 'https://en.wikipedia.org/wiki/Canva' },
+  'leonardo-ai': { id: 'Q124818438', label: 'Leonardo AI', description: 'AI image generator', official_url: 'https://leonardo.ai', sitelinks: 5, wikipedia_de: '', wikipedia_en: '' },
+  'runway': { id: 'Q105055003', label: 'Runway', description: 'AI video', official_url: 'https://runwayml.com', sitelinks: 8, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Runway_(company)' },
+  'pika': { id: 'Q124622919', label: 'Pika', description: 'AI video', official_url: 'https://pika.art', sitelinks: 4, wikipedia_de: '', wikipedia_en: '' },
+  'luma-ai': { id: 'Q124846352', label: 'Luma AI', description: 'AI 3D', official_url: 'https://lumalabs.ai', sitelinks: 3, wikipedia_de: '', wikipedia_en: '' },
+  'synthesia': { id: 'Q105733015', label: 'Synthesia', description: 'AI video', official_url: 'https://www.synthesia.io', sitelinks: 6, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Synthesia_(company)' },
+  'heygen': { id: 'Q124818767', label: 'HeyGen', description: 'AI video', official_url: 'https://www.heygen.com', sitelinks: 3, wikipedia_de: '', wikipedia_en: '' },
+  'elevenlabs': { id: 'Q117044238', label: 'ElevenLabs', description: 'AI voice', official_url: 'https://elevenlabs.io', sitelinks: 12, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/ElevenLabs' },
+  'suno': { id: 'Q124846448', label: 'Suno', description: 'AI music', official_url: 'https://suno.com', sitelinks: 5, wikipedia_de: '', wikipedia_en: '' },
+  'udio': { id: 'Q125329916', label: 'Udio', description: 'AI music', official_url: 'https://www.udio.com', sitelinks: 3, wikipedia_de: '', wikipedia_en: '' },
+  'descript': { id: 'Q97000084', label: 'Descript', description: 'audio editor', official_url: 'https://www.descript.com', sitelinks: 7, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Descript' },
+  'notion-ai': { id: 'Q61746157', label: 'Notion', description: 'productivity', official_url: 'https://www.notion.so/product/ai', sitelinks: 28, wikipedia_de: 'https://de.wikipedia.org/wiki/Notion_(Software)', wikipedia_en: 'https://en.wikipedia.org/wiki/Notion_(productivity_software)' },
+  'grammarly': { id: 'Q19890229', label: 'Grammarly', description: 'writing assistant', official_url: 'https://www.grammarly.com', sitelinks: 32, wikipedia_de: 'https://de.wikipedia.org/wiki/Grammarly', wikipedia_en: 'https://en.wikipedia.org/wiki/Grammarly' },
+  'jasper': { id: 'Q111172082', label: 'Jasper', description: 'AI writing', official_url: 'https://www.jasper.ai', sitelinks: 5, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Jasper_(software)' },
+  'copy-ai': { id: 'Q110424473', label: 'Copy.ai', description: 'AI copywriting', official_url: 'https://www.copy.ai', sitelinks: 3, wikipedia_de: '', wikipedia_en: '' },
+  'cursor': { id: 'Q124846123', label: 'Cursor', description: 'AI code editor', official_url: 'https://www.cursor.com', sitelinks: 4, wikipedia_de: '', wikipedia_en: '' },
+  'codeium': { id: 'Q115515616', label: 'Codeium', description: 'AI coding assistant', official_url: 'https://codeium.com', sitelinks: 3, wikipedia_de: '', wikipedia_en: '' },
+  'tabnine': { id: 'Q96394989', label: 'Tabnine', description: 'AI code completion', official_url: 'https://www.tabnine.com', sitelinks: 8, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/Tabnine' },
+  'deepl': { id: 'Q43968444', label: 'DeepL', description: 'AI translator', official_url: 'https://www.deepl.com', sitelinks: 38, wikipedia_de: 'https://de.wikipedia.org/wiki/DeepL', wikipedia_en: 'https://en.wikipedia.org/wiki/DeepL_Translator' },
+  'you-com': { id: 'Q111938678', label: 'You.com', description: 'AI search', official_url: 'https://you.com', sitelinks: 6, wikipedia_de: '', wikipedia_en: 'https://en.wikipedia.org/wiki/You.com' },
+};
+
 async function wikidataSearch(name, limit=8){
+  if (MOCK_MODE) {
+    const slug = slugify(name);
+    const mock = MOCK_WIKIDATA[slug];
+    if (mock) {
+      return [{ id: mock.id, label: mock.label, description: mock.description }];
+    }
+    return [];
+  }
+
   const url = new URL('https://www.wikidata.org/w/api.php');
   url.searchParams.set('action','wbsearchentities');
   url.searchParams.set('search', name);
@@ -290,6 +380,30 @@ async function wikidataSearch(name, limit=8){
 
 async function wikidataEntity(qid){
   if (WD_ENTITY_CACHE.has(qid)) return WD_ENTITY_CACHE.get(qid);
+
+  if (MOCK_MODE) {
+    // Find mock data by QID
+    const mock = Object.values(MOCK_WIKIDATA).find(m => m.id === qid);
+    if (mock) {
+      const ent = {
+        claims: {
+          P856: [{ mainsnak: { datavalue: { value: mock.official_url } } }]
+        },
+        sitelinks: {},
+        descriptions: { en: { value: mock.description } }
+      };
+      // Add sitelinks
+      for (let i = 0; i < mock.sitelinks; i++) {
+        ent.sitelinks[`site${i}`] = { title: 'Page' };
+      }
+      if (mock.wikipedia_de) ent.sitelinks['dewiki'] = { title: mock.label };
+      if (mock.wikipedia_en) ent.sitelinks['enwiki'] = { title: mock.label };
+      WD_ENTITY_CACHE.set(qid, ent);
+      return ent;
+    }
+    return null;
+  }
+
   const r = await fetchWithTimeout(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { headers:{'user-agent':'utildesk-motia/1.0'} });
   if(!r.ok) return null;
   const j = await r.json();
@@ -327,7 +441,8 @@ async function pickWikidata(name){
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
     const host = hostname(off);
-    if(token && host && !hostContainsToken(host, token) && sl < 25) continue;
+    // STRICT: hostname must contain token from title (no bypass)
+    if(token && host && !hostContainsToken(host, token)) continue;
 
     const score = sl + (host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
@@ -377,10 +492,18 @@ function categoryFallback(name){
 }
 
 async function main(){
-  if(!OPENAI_API_KEY) die('Missing OPENAI_API_KEY');
-  const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+  // Allow DRY_RUN without API key (use seed data only)
+  const openai = OPENAI_API_KEY ? new OpenAI({ apiKey: OPENAI_API_KEY }) : null;
 
-  const { existingTopic, existingSlug, existingQ, existingHost } = await readExisting();
+  let existingTopic = new Set(), existingSlug = new Set(), existingQ = new Set(), existingHost = new Set();
+
+  if (!DRY_RUN) {
+    const existing = await readExisting();
+    existingTopic = existing.existingTopic;
+    existingSlug = existing.existingSlug;
+    existingQ = existing.existingQ;
+    existingHost = existing.existingHost;
+  }
 
   const picked = [];
   const seenT = new Set(), seenS = new Set(), seenQ = new Set();
@@ -395,8 +518,13 @@ async function main(){
     if (loops % 10 === 0) console.error(`[autogen] loops=${loops} picked=${picked.length}/${TARGET} pool=${pool.length} cache=${WD_ENTITY_CACHE.size}`);
 
     if(pool.length < 25){
-      const more = await propose(openai, 60);
-      pool.push(...more);
+      if (openai) {
+        const more = await propose(openai, 60);
+        pool.push(...more);
+      } else {
+        // No API key: just use seed list (for dry-run testing)
+        if (pool.length === 0) break;
+      }
     }
 
     const chunk = pool.splice(0, 30);
@@ -417,6 +545,11 @@ async function main(){
 
       const wd = await pickWikidata(topic);
       if(!wd) continue;
+
+      // Check live URL
+      const urlLive = await isUrlLive(wd.official_url);
+      if (!urlLive) continue;
+
       const hk = hostKey(wd.official_url);
       if(hk && existingHost.has(hk)) continue;
 
@@ -464,9 +597,13 @@ async function main(){
 
       // official_url guard (final safety net)
       const suspicious = isSuspiciousOfficialUrl(wd.official_url) || (hostname(wd.official_url) && token2 && !hostContainsToken(hostname(wd.official_url), token2));
-      const safeOfficial = suspicious ? '' : wd.official_url;
-      const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
-      const safetyNote = suspicious ? 'blocked_official_url' : '';
+
+      // STRICT: Skip if suspicious (don't write with empty official_url)
+      if (suspicious) continue;
+
+      const safeOfficial = wd.official_url;
+      const status = 'NEW';
+      const safetyNote = '';
 
       // Build strict A..P row (16 cells)
       const row = [
@@ -498,18 +635,50 @@ async function main(){
   if(!picked.length) die('No AI tools validated (v2). Try again or relax validation.');
   const missing = Math.max(0, TARGET - picked.length);
 
+  // In dry-run mode, skip writing to sheets
+  if (DRY_RUN) {
+    // Build items array for output
+    const items = picked.map(row => ({
+      title: row[0],
+      slug: row[1],
+      category: row[2],
+      official_url: row[10],
+      wikidata_id: row[12],
+      wikipedia_de: row[13],
+      wikipedia_en: row[14],
+      sitelinks: parseInt(row[15]) || 0
+    }));
 
-  // Write via strict writer on stdin
-  const payload = JSON.stringify({ rows: picked });
-  const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
-    input: payload,
-    encoding: 'utf8',
-    cwd: process.cwd(),
-  });
+    const result = {
+      ok: picked.length >= TARGET,
+      requested: TARGET,
+      added: picked.length,
+      missing,
+      loops
+    };
 
-  if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    if (SHOW_ITEMS) {
+      result.items = items;
+    }
 
-  console.log(JSON.stringify({ ok:true, requested: TARGET, added: picked.length, missing, loops, writer: JSON.parse(out.stdout) }, null, 2));
+    if (JSON_OUTPUT) {
+      console.log(JSON.stringify(result, null, 2));
+    } else {
+      console.log(result);
+    }
+  } else {
+    // Write via strict writer on stdin
+    const payload = JSON.stringify({ rows: picked });
+    const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
+      input: payload,
+      encoding: 'utf8',
+      cwd: process.cwd(),
+    });
+
+    if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+
+    console.log(JSON.stringify({ ok:true, requested: TARGET, added: picked.length, missing, loops, writer: JSON.parse(out.stdout) }, null, 2));
+  }
 }
 
 main().catch(e=>die(e.stack||String(e)));
