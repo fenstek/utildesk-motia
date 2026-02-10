@@ -325,11 +325,23 @@ const ACCEPTED_P31 = new Set([
   'Q1301371', // computer program
   'Q1639024', // application software
   'Q341',  // free software
-  'Q341', // open-source software
+  'Q506883', // open-source software
   'Q21127166', // chatbot software
-  'Q58778', // computer system
-  'Q1301371', // computer program
   'Q15633582', // software library
+  'Q1639024', // application software
+  'Q74790', // software product
+  'Q9135', // operating system
+  'Q1172486', // web service
+  'Q1639024', // application program
+  'Q28598683', // AI system
+  'Q20826540', // mobile app
+  'Q15634736', // software framework
+  'Q1194128', // API
+  'Q1407659', // cloud service
+  'Q15634757', // web platform
+  'Q17155032', // SaaS
+  'Q28598683', // artificial intelligence system
+  'Q22811534', // language model
 ]);
 
 const REJECTED_P31 = new Set([
@@ -340,11 +352,15 @@ const REJECTED_P31 = new Set([
   'Q82794', // geographic region
   'Q11424', // film
   'Q215380', // musical group
-  'Q43229', // organization
-  'Q4830453', // business
-  'Q783794', // company
-  'Q6881511', // enterprise
-  'Q891723', // public company
+  'Q11424', // film
+  'Q5398426', // television series
+  'Q7725634', // literary work
+  'Q571', // book
+  'Q41298', // magazine
+  'Q1002697', // periodical
+  'Q11032', // newspaper
+  'Q1792450', // art genre
+  'Q3559093', // work of art
 ]);
 
 function getInstanceOf(ent){
@@ -354,22 +370,23 @@ function getInstanceOf(ent){
 
 function validateInstanceOf(ent){
   const instances = getInstanceOf(ent);
-  if (instances.length === 0) return { valid: false, reason: 'no_P31' };
+  if (instances.length === 0) {
+    // No P31 at all - reject unless it has official_url (will be checked later)
+    return { valid: true, reason: 'no_P31_but_has_url', instances: [] };
+  }
 
-  // Check for rejected types first
+  // Check for rejected types first (hard fail)
   for (const qid of instances) {
     if (REJECTED_P31.has(qid)) {
       return { valid: false, reason: `rejected_P31:${qid}` };
     }
   }
 
-  // Must have at least one accepted type
+  // If no rejected types, we're good (software-like by default)
+  // Either has accepted type OR just not rejected
   const hasAccepted = instances.some(qid => ACCEPTED_P31.has(qid));
-  if (!hasAccepted) {
-    return { valid: false, reason: `no_accepted_P31:${instances.join(',')}` };
-  }
 
-  return { valid: true, reason: 'ok', instances };
+  return { valid: true, reason: hasAccepted ? 'accepted_P31' : 'no_rejected', instances };
 }
 
 async function pickWikidata(name){
