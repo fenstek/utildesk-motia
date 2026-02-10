@@ -62,6 +62,7 @@ const OFFICIAL_URL_DENY_SUBSTR = [
   'culture',
   // gov / municipality / city portals
   'mairie','stadt','gemeinde','municip','municipal','kommune','council','gov','gouv','regierung',
+  'comune','townof','cityof','ville','township',
   // tourism / visiting portals
   'visit','tourism','tourist','stadtinfo','city',
 ];
@@ -185,7 +186,9 @@ async function readExisting(){
 
 const DENY = [
   'zoom','microsoft teams','teams','google search console','search console',
-  'google analytics','jira','confluence','trello','slack','tome','bard' // not AI-first products
+  'google analytics','jira','confluence','trello','slack','tome','bard', // not AI-first products
+  'zotero','krita','gimp','inkscape','blender', // non-AI creative tools
+  'notion','todoist','evernote','roam', // non-AI productivity tools
 ];
 function isDenied(name){
   const n = String(name||'').toLowerCase();
@@ -371,7 +374,7 @@ function getInstanceOf(ent){
 function validateInstanceOf(ent){
   const instances = getInstanceOf(ent);
   if (instances.length === 0) {
-    // No P31 at all - reject unless it has official_url (will be checked later)
+    // No P31 at all - accept but mark for review
     return { valid: true, reason: 'no_P31_but_has_url', instances: [] };
   }
 
@@ -387,6 +390,24 @@ function validateInstanceOf(ent){
   const hasAccepted = instances.some(qid => ACCEPTED_P31.has(qid));
 
   return { valid: true, reason: hasAccepted ? 'accepted_P31' : 'no_rejected', instances };
+}
+
+function isLikelyAITool(name, desc, instances){
+  const text = `${name} ${desc}`.toLowerCase();
+
+  // Strong AI signals
+  const aiTerms = ['ai', 'artificial intelligence', 'machine learning', 'deep learning', 'neural',
+    'llm', 'language model', 'gpt', 'generative', 'chatbot', 'assistant', 'copilot'];
+  if (aiTerms.some(term => text.includes(term))) return true;
+
+  // Check P31 for AI-specific types
+  const aiP31 = ['Q28598683', 'Q22811534']; // AI system, language model
+  if (instances.some(qid => aiP31.includes(qid))) return true;
+
+  // Specific tool patterns
+  if (/(chat|voice|speech|tts|image.*generat|video.*generat|code.*assist)/i.test(text)) return true;
+
+  return false;
 }
 
 async function pickWikidata(name){
@@ -405,6 +426,10 @@ async function pickWikidata(name){
     const p31Check = validateInstanceOf(ent);
     if (!p31Check.valid) continue;
 
+    // AI tool check (should be AI-related)
+    const desc = r.description || (ent?.descriptions?.en?.value||'');
+    if (!isLikelyAITool(name, desc, p31Check.instances)) continue;
+
     const off = officialUrl(ent);
     if(!off) continue;
     if(isSuspiciousOfficialUrl(off)) continue;
@@ -412,14 +437,23 @@ async function pickWikidata(name){
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
     const host = hostname(off);
-    if(token && host && !hostContainsToken(host, token) && sl < 25) continue;
+
+    // Stricter hostname validation: must contain token OR have very high sitelinks
+    if(token && host && !hostContainsToken(host, token) && sl < 50) continue;
+
+    // Also check: if hostname looks like a generic portal (contains common non-product words), require exact token match
+    const hostLower = host.toLowerCase();
+    const genericWords = ['town', 'city', 'ville', 'comune', 'saint', 'sainte', 'municipality'];
+    if (genericWords.some(w => hostLower.includes(w))) {
+      if (!hostContainsToken(host, token)) continue;
+    }
 
     const score = sl + (host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
       best = {
         score,
         wikidata_id: r.id,
-        wikidata_desc: r.description || (ent?.descriptions?.en?.value||''),
+        wikidata_desc: desc,
         official_url: off,
         wikipedia_de: wiki(ent,'de'),
         wikipedia_en: wiki(ent,'en'),
