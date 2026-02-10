@@ -170,6 +170,11 @@ async function readExisting(){
   const existingHost = new Set();
 
   for(const r of rows.slice(1)){
+    const status = ('status' in idx) ? String(r[idx.status]||'').trim().toUpperCase() : '';
+
+    // BLACKLIST rows don't block deduplication (allows corrected entries later)
+    if(status === 'BLACKLIST') continue;
+
     const t = String(r[idx.topic]||'').trim().toLowerCase();
     const s = String(r[idx.slug]||'').trim().toLowerCase();
     const q = String(r[idx.wikidata_id]||'').trim().toUpperCase();
