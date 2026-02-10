@@ -75,8 +75,20 @@ function hostContainsToken(host, token){
   const h = String(host||'').toLowerCase();
   const t = String(token||'').toLowerCase().replace(/[^a-z0-9]/g,'');
   if(!h || !t) return false;
-  // allow both exact and partial (e.g., eleuther in eleuther.ai)
-  return h.replace(/[^a-z0-9]/g,'').includes(t);
+
+  const hNorm = h.replace(/[^a-z0-9]/g,'');
+
+  // For short tokens (< 4 chars), require exact match in subdomain or domain name
+  if (t.length < 4) {
+    const parts = h.split('.');
+    for (const part of parts) {
+      if (part === t) return true;
+    }
+    return false;
+  }
+
+  // For longer tokens, allow substring match
+  return hNorm.includes(t);
 }
 
 function isSuspiciousOfficialUrl(u){
@@ -422,6 +434,51 @@ function wiki(ent, lang){
   return title ? `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g,'_'))}` : '';
 }
 
+// Wikidata instance_of (P31) blacklist - reject non-software entities
+const INSTANCE_OF_REJECT = new Set([
+  'Q5',        // human
+  'Q15632617', // fictional human
+  'Q95074',    // fictional character
+  'Q515',      // city
+  'Q486972',   // human settlement
+  'Q532',      // village
+  'Q3957',     // town
+  'Q1549591',  // big city
+  'Q1637706',  // city with millions of inhabitants
+  'Q7275',     // state
+  'Q6256',     // country
+  'Q82794',    // geographic region
+  'Q1496967',  // territorial entity
+  'Q15284',    // municipality
+  'Q1549591',  // big city
+  'Q1093829',  // city in the United States
+  'Q3024240',  // historical country
+  'Q183',      // Germany (country)
+  'Q30',       // United States (country)
+]);
+
+function instanceOf(ent) {
+  // Extract P31 (instance of) claim values
+  const claims = ent?.claims?.P31 || [];
+  return claims.map(c => c?.mainsnak?.datavalue?.value?.id).filter(Boolean);
+}
+
+function isValidSoftwareEntity(ent) {
+  const instances = instanceOf(ent);
+
+  // Reject if any instance_of matches our blacklist
+  for (const inst of instances) {
+    if (INSTANCE_OF_REJECT.has(inst)) {
+      return false;
+    }
+  }
+
+  // If no official_url, likely not a product
+  if (!officialUrl(ent)) return false;
+
+  return true;
+}
+
 async function pickWikidata(name){
   const results = await wikidataSearch(name, 8);
   if(!results.length) return null;
@@ -429,10 +486,16 @@ async function pickWikidata(name){
   const token = (slugify(name).split('-')[0] || '').toLowerCase();
   const single = String(name).trim().split(/\s+/).length === 1;
 
+  // STRICT: Require token to match - no bypass for any sitelink count
+  if (!token || token.length < 2) return null;
+
   let best = null;
   for(const r of results){
     const ent = await wikidataEntity(r.id);
     if(!ent) continue;
+
+    // STRICT: Reject non-software entities (humans, places, etc.)
+    if(!isValidSoftwareEntity(ent)) continue;
 
     const off = officialUrl(ent);
     if(!off) continue;
@@ -441,8 +504,9 @@ async function pickWikidata(name){
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
     const host = hostname(off);
-    // STRICT: hostname must contain token from title (no bypass)
-    if(token && host && !hostContainsToken(host, token)) continue;
+
+    // STRICT: hostname MUST contain token from title (no exceptions)
+    if(!hostContainsToken(host, token)) continue;
 
     const score = sl + (host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
