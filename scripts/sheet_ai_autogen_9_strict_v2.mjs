@@ -407,6 +407,15 @@ function isLikelyAITool(name, desc, instances){
   // Specific tool patterns
   if (/(chat|voice|speech|tts|image.*generat|video.*generat|code.*assist)/i.test(text)) return true;
 
+  // ML/AI frameworks and libraries (TensorFlow, PyTorch, etc.)
+  if (/tensor|pytorch|keras|scikit|opencv|transformers|hugging/i.test(name)) return true;
+
+  // Known AI companies/products (mistral, claude, etc.)
+  const knownAI = ['mistral', 'anthropic', 'openai', 'cohere', 'stability', 'runway', 'midjourney',
+    'elevenlabs', 'jasper', 'writesonic', 'quillbot', 'grammarly', 'copy.ai', 'synthesia', 'descript',
+    'pictory', 'murf', 'lumen5', 'fliki', 'clipchamp'];
+  if (knownAI.some(ai => name.toLowerCase().includes(ai))) return true;
+
   return false;
 }
 
