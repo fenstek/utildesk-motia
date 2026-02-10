@@ -6,6 +6,40 @@ import { Executor } from './executor.mjs';
 import { Analyzer } from './analyzer.mjs';
 import { LLMClient } from './llm.mjs';
 import { Patcher } from './patcher.mjs';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+/**
+ * Helper: Ensure run directory exists and return path
+ */
+function ensureRunDir(iteration) {
+  const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+  const runDir = join(process.cwd(), '.agent-runs', `run-${ts}-iter${iteration}`);
+  mkdirSync(runDir, { recursive: true });
+  return runDir;
+}
+
+/**
+ * Helper: Write text file safely
+ */
+function writeTextSafe(filePath, content) {
+  try {
+    writeFileSync(filePath, content || '', 'utf8');
+  } catch (err) {
+    console.error(`[WRITE ERROR] ${filePath}: ${err.message}`);
+  }
+}
+
+/**
+ * Helper: Write JSON file safely
+ */
+function writeJsonSafe(filePath, data) {
+  try {
+    writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
+  } catch (err) {
+    console.error(`[WRITE ERROR] ${filePath}: ${err.message}`);
+  }
+}
 
 export class AgentCore {
   constructor(config) {
@@ -62,11 +96,31 @@ export class AgentCore {
       this.log(`Iteration ${this.iterations}/${this.maxIterations}`);
       this.log('─'.repeat(60));
 
+      // Create run directory and save metadata
+      const runDir = ensureRunDir(this.iterations);
+      writeJsonSafe(join(runDir, 'meta.json'), {
+        task: this.task,
+        command: this.checkCommand,
+        iteration: this.iterations,
+        branch: this.config.branch || null,
+        ts: new Date().toISOString(),
+      });
+
       // Step 1: Execute check command
       this.log(`Running check: ${this.checkCommand}`, 'verbose');
       const execResult = await this.executor.execute(this.checkCommand);
 
       this.log(`Exit code: ${execResult.exitCode}`, 'verbose');
+
+      // Save check results
+      writeTextSafe(join(runDir, 'check.stdout.txt'), execResult.stdout);
+      writeTextSafe(join(runDir, 'check.stderr.txt'), execResult.stderr);
+      writeJsonSafe(join(runDir, 'check.meta.json'), {
+        exitCode: execResult.exitCode,
+        durationMs: execResult.duration,
+        signal: execResult.signal,
+        error: execResult.error,
+      });
 
       // Step 2: Analyze results
       const analysis = this.analyzer.analyze(execResult);
@@ -75,6 +129,9 @@ export class AgentCore {
       if (analysis.issuesFound > 0) {
         this.log(`Issues found: ${analysis.issuesFound}`, 'info');
       }
+
+      // Save analysis
+      writeJsonSafe(join(runDir, 'analysis.json'), analysis);
 
       // Step 3: Check if success
       if (analysis.status === 'success') {
@@ -93,6 +150,9 @@ export class AgentCore {
         iteration: this.iterations,
         previousPatches: this.patches,
       });
+
+      // Save raw LLM response
+      writeJsonSafe(join(runDir, 'llm.raw.json'), patch);
 
       if (!patch || !patch.changes || patch.changes.length === 0) {
         this.log('LLM could not generate a valid patch. Stopping.', 'error');
