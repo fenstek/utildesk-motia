@@ -11,48 +11,6 @@ import 'dotenv/config';
 import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
-import https from 'node:https';
-import dns from 'node:dns';
-
-// Configure DNS to use Google DNS as fallback
-dns.setServers(['8.8.8.8', '8.8.4.4', '1.1.1.1']);
-
-// Helper to make HTTPS requests with custom DNS
-function httpsGet(url, options = {}) {
-  return new Promise((resolve, reject) => {
-    const urlObj = new URL(url);
-    const reqOptions = {
-      hostname: urlObj.hostname,
-      port: 443,
-      path: urlObj.pathname + urlObj.search,
-      method: options.method || 'GET',
-      headers: options.headers || {},
-      timeout: options.timeout || 8000
-    };
-
-    const req = https.request(reqOptions, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        resolve({
-          ok: res.statusCode >= 200 && res.statusCode < 300,
-          status: res.statusCode,
-          statusText: res.statusMessage,
-          json: async () => JSON.parse(data),
-          text: async () => data
-        });
-      });
-    });
-
-    req.on('error', reject);
-    req.on('timeout', () => {
-      req.destroy();
-      reject(new Error('Request timeout'));
-    });
-
-    req.end();
-  });
-}
 
 // Parse command-line arguments
 const args = process.argv.slice(2);
@@ -420,16 +378,16 @@ async function wikidataSearch(name, limit=8){
     return [];
   }
 
-  const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(name)}&language=en&format=json&limit=${limit}`;
-  try {
-    const r = await httpsGet(url, { headers:{'user-agent':'utildesk-motia/1.0'} });
-    if(!r.ok) return [];
-    const j = await r.json();
-    return (j?.search||[]).map(x=>({id:x.id,label:x.label,description:x.description||''}));
-  } catch (err) {
-    console.error(`[wikidataSearch] ${err.message}`);
-    return [];
-  }
+  const url = new URL('https://www.wikidata.org/w/api.php');
+  url.searchParams.set('action','wbsearchentities');
+  url.searchParams.set('search', name);
+  url.searchParams.set('language','en');
+  url.searchParams.set('format','json');
+  url.searchParams.set('limit', String(limit));
+  const r = await fetchWithTimeout(url, { headers:{'user-agent':'utildesk-motia/1.0'} });
+  if(!r.ok) return [];
+  const j = await r.json();
+  return (j?.search||[]).map(x=>({id:x.id,label:x.label,description:x.description||''}));
 }
 
 async function wikidataEntity(qid){
@@ -441,7 +399,9 @@ async function wikidataEntity(qid){
     if (mock) {
       const ent = {
         claims: {
-          P856: [{ mainsnak: { datavalue: { value: mock.official_url } } }]
+          P856: [{ mainsnak: { datavalue: { value: mock.official_url } } }],
+          // Add P31 (instance of) = Q7397 (software) for all mock entities
+          P31: [{ mainsnak: { datavalue: { value: { id: 'Q7397' } } } }]
         },
         sitelinks: {},
         descriptions: { en: { value: mock.description } }
@@ -458,17 +418,12 @@ async function wikidataEntity(qid){
     return null;
   }
 
-  try {
-    const r = await httpsGet(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { headers:{'user-agent':'utildesk-motia/1.0'} });
-    if(!r.ok) return null;
-    const j = await r.json();
-    const ent = j?.entities?.[qid] || null;
-    WD_ENTITY_CACHE.set(qid, ent);
-    return ent;
-  } catch (err) {
-    console.error(`[wikidataEntity] ${qid}: ${err.message}`);
-    return null;
-  }
+  const r = await fetchWithTimeout(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { headers:{'user-agent':'utildesk-motia/1.0'} });
+  if(!r.ok) return null;
+  const j = await r.json();
+  const ent = j?.entities?.[qid] || null;
+  WD_ENTITY_CACHE.set(qid, ent);
+  return ent;
 }
 
 function officialUrl(ent){
@@ -497,11 +452,35 @@ const INSTANCE_OF_REJECT = new Set([
   'Q82794',    // geographic region
   'Q1496967',  // territorial entity
   'Q15284',    // municipality
-  'Q1549591',  // big city
   'Q1093829',  // city in the United States
   'Q3024240',  // historical country
   'Q183',      // Germany (country)
   'Q30',       // United States (country)
+  'Q618123',   // geographical object
+  'Q2074737',  // geographic region
+  'Q1048835',  // political territorial entity
+]);
+
+// Wikidata instance_of (P31) whitelist - accept software/service entities
+const INSTANCE_OF_ACCEPT = new Set([
+  'Q7397',     // software
+  'Q9158',     // computer software
+  'Q166142',   // application software
+  'Q341',      // free software
+  'Q1172284',  // SaaS (software as a service)
+  'Q1390659',  // web application
+  'Q9350',     // mobile app
+  'Q82753',    // software framework
+  'Q1172436',  // software library
+  'Q35127',    // website (if combined with software/service signals)
+  'Q7889',     // video game (some AI tools)
+  'Q15416',    // television program (for video AI tools)
+  'Q7397',     // computer program
+  'Q1058914',  // software company's product
+  'Q2235',     // web service
+  'Q40056',    // online service
+  'Q3966',     // computer network
+  'Q1301371',  // online platform
 ]);
 
 function instanceOf(ent) {
@@ -513,9 +492,26 @@ function instanceOf(ent) {
 function isValidSoftwareEntity(ent) {
   const instances = instanceOf(ent);
 
+  // If no P31 claims, reject (ambiguous)
+  if (!instances.length) {
+    return false;
+  }
+
   // Reject if any instance_of matches our blacklist
   for (const inst of instances) {
     if (INSTANCE_OF_REJECT.has(inst)) {
+      return false;
+    }
+  }
+
+  // POSITIVE REQUIREMENT: Must have at least one accepted software/service type
+  const hasValidType = instances.some(inst => INSTANCE_OF_ACCEPT.has(inst));
+  if (!hasValidType) {
+    // Fallback: accept if has official_url AND description suggests software/tool/service
+    const desc = (ent?.descriptions?.en?.value || '').toLowerCase();
+    const hasSoftwareDesc = /\b(software|app|application|tool|service|platform|framework|library|program|ai|ml|chatbot|assistant)\b/i.test(desc);
+
+    if (!hasSoftwareDesc) {
       return false;
     }
   }
