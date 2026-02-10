@@ -315,7 +315,7 @@ async function main(){
     // (Можно добавить отдельный репортер позже.)
 
     // Safety: never touch DONE or DISABLED rows
-    if (status === 'DONE' || status === 'DISABLED') continue;
+    if (status === 'DONE' || status === 'DISABLED' || status === 'BLACKLIST') continue;
 
     // Only try to resolve when:
     // - NEEDS_REVIEW
