@@ -12,8 +12,16 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 
-const TARGET = Math.max(1, Math.min(50, Number(process.argv[2] || 9)));
+// Parse CLI args
+const args = process.argv.slice(2);
+const targetArg = args.find(a => !a.startsWith('--'));
+const TARGET = Math.max(1, Math.min(50, Number(targetArg || 9)));
 const MIN_SITELINKS = Number(process.env.WIKIDATA_MIN_SITELINKS || 1);
+
+// Flags
+const FLAG_JSON = args.includes('--json');
+const FLAG_SHOW_ITEMS = args.includes('--show-items');
+const FLAG_DRY_RUN = args.includes('--dry-run');
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -498,18 +506,56 @@ async function main(){
   if(!picked.length) die('No AI tools validated (v2). Try again or relax validation.');
   const missing = Math.max(0, TARGET - picked.length);
 
+  // Optional: show items before writing
+  if (FLAG_SHOW_ITEMS) {
+    console.error('\n[PICKED ITEMS]');
+    picked.forEach((row, idx) => {
+      console.error(`${idx + 1}. ${row[0]} (${row[2]}) - ${row[12]}`);
+    });
+    console.error('');
+  }
 
-  // Write via strict writer on stdin
-  const payload = JSON.stringify({ rows: picked });
-  const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
-    input: payload,
-    encoding: 'utf8',
-    cwd: process.cwd(),
-  });
+  // Write via strict writer on stdin (skip if dry-run)
+  let writerResult = null;
+  if (!FLAG_DRY_RUN) {
+    const payload = JSON.stringify({ rows: picked });
+    const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
+      input: payload,
+      encoding: 'utf8',
+      cwd: process.cwd(),
+    });
 
-  if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    writerResult = JSON.parse(out.stdout);
+  }
 
-  console.log(JSON.stringify({ ok:true, requested: TARGET, added: picked.length, missing, loops, writer: JSON.parse(out.stdout) }, null, 2));
+  // Output format
+  const result = {
+    ok: true,
+    requested: TARGET,
+    added: picked.length,
+    missing,
+    loops,
+    dry_run: FLAG_DRY_RUN,
+    writer: writerResult,
+  };
+
+  if (FLAG_SHOW_ITEMS) {
+    result.items = picked.map(row => ({
+      topic: row[0],
+      slug: row[1],
+      category: row[2],
+      tags: row[3],
+      wikidata_id: row[12],
+      official_url: row[10],
+    }));
+  }
+
+  if (FLAG_JSON) {
+    console.log(JSON.stringify(result, null, 2));
+  } else {
+    console.log(JSON.stringify(result, null, 2));
+  }
 }
 
 main().catch(e=>die(e.stack||String(e)));
