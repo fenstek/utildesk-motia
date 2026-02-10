@@ -11,6 +11,48 @@ import 'dotenv/config';
 import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
+import https from 'node:https';
+import dns from 'node:dns';
+
+// Configure DNS to use Google DNS as fallback
+dns.setServers(['8.8.8.8', '8.8.4.4', '1.1.1.1']);
+
+// Helper to make HTTPS requests with custom DNS
+function httpsGet(url, options = {}) {
+  return new Promise((resolve, reject) => {
+    const urlObj = new URL(url);
+    const reqOptions = {
+      hostname: urlObj.hostname,
+      port: 443,
+      path: urlObj.pathname + urlObj.search,
+      method: options.method || 'GET',
+      headers: options.headers || {},
+      timeout: options.timeout || 8000
+    };
+
+    const req = https.request(reqOptions, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        resolve({
+          ok: res.statusCode >= 200 && res.statusCode < 300,
+          status: res.statusCode,
+          statusText: res.statusMessage,
+          json: async () => JSON.parse(data),
+          text: async () => data
+        });
+      });
+    });
+
+    req.on('error', reject);
+    req.on('timeout', () => {
+      req.destroy();
+      reject(new Error('Request timeout'));
+    });
+
+    req.end();
+  });
+}
 
 // Parse command-line arguments
 const args = process.argv.slice(2);
@@ -378,16 +420,16 @@ async function wikidataSearch(name, limit=8){
     return [];
   }
 
-  const url = new URL('https://www.wikidata.org/w/api.php');
-  url.searchParams.set('action','wbsearchentities');
-  url.searchParams.set('search', name);
-  url.searchParams.set('language','en');
-  url.searchParams.set('format','json');
-  url.searchParams.set('limit', String(limit));
-  const r = await fetchWithTimeout(url, { headers:{'user-agent':'utildesk-motia/1.0'} });
-  if(!r.ok) return [];
-  const j = await r.json();
-  return (j?.search||[]).map(x=>({id:x.id,label:x.label,description:x.description||''}));
+  const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(name)}&language=en&format=json&limit=${limit}`;
+  try {
+    const r = await httpsGet(url, { headers:{'user-agent':'utildesk-motia/1.0'} });
+    if(!r.ok) return [];
+    const j = await r.json();
+    return (j?.search||[]).map(x=>({id:x.id,label:x.label,description:x.description||''}));
+  } catch (err) {
+    console.error(`[wikidataSearch] ${err.message}`);
+    return [];
+  }
 }
 
 async function wikidataEntity(qid){
@@ -416,12 +458,17 @@ async function wikidataEntity(qid){
     return null;
   }
 
-  const r = await fetchWithTimeout(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { headers:{'user-agent':'utildesk-motia/1.0'} });
-  if(!r.ok) return null;
-  const j = await r.json();
-  const ent = j?.entities?.[qid] || null;
-  WD_ENTITY_CACHE.set(qid, ent);
-  return ent;
+  try {
+    const r = await httpsGet(`https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`, { headers:{'user-agent':'utildesk-motia/1.0'} });
+    if(!r.ok) return null;
+    const j = await r.json();
+    const ent = j?.entities?.[qid] || null;
+    WD_ENTITY_CACHE.set(qid, ent);
+    return ent;
+  } catch (err) {
+    console.error(`[wikidataEntity] ${qid}: ${err.message}`);
+    return null;
+  }
 }
 
 function officialUrl(ent){
