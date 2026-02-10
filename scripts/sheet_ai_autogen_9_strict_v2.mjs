@@ -3,7 +3,7 @@
  * AI-only tool discovery -> Wikidata validation -> strict write to Sheet A..P using sheet_write_rows_strict_AP_v2.mjs
  *
  * Usage:
- *   node scripts/sheet_ai_autogen_9_strict.mjs 9
+ *   node scripts/sheet_ai_autogen_9_strict_v2.mjs 20 [--dry-run] [--json] [--show-items]
  *
  * Output: JSON { ok:true, added:N }
  */
@@ -12,7 +12,13 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 
-const TARGET = Math.max(1, Math.min(50, Number(process.argv[2] || 9)));
+// Parse CLI flags
+const args = process.argv.slice(2);
+const TARGET = Math.max(1, Math.min(50, Number(args.find(a => !a.startsWith('--')) || 9)));
+const DRY_RUN = args.includes('--dry-run');
+const JSON_OUTPUT = args.includes('--json');
+const SHOW_ITEMS = args.includes('--show-items');
+
 const MIN_SITELINKS = Number(process.env.WIKIDATA_MIN_SITELINKS || 1);
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
@@ -262,14 +268,15 @@ const SEED_ALLOW = new Set(SEED_AI.map(x => canonicalName(x).toLowerCase()).filt
 
 
 async function propose(openai, n){
-  const system = `
-Gib NUR reale, populäre AI-Tools (Produkte/Services), die primär AI/LLM/Generative AI anbieten.
-Keine Nicht-AI Tools (Zoom/Teams/Analytics/Search Console/Slack/Trello etc.).
-Ausgabe: ausschließlich ein JSON-Array von Strings.`;
-  const user = `Gib ${n} verschiedene AI-Tools (nur Produktnamen, keine Tarifnamen wie Plus/Pro/Enterprise) als JSON-Array.`;
+  const system = `You are an AI tools expert. Return ONLY real, popular AI software products and services.
+Include: LLM chatbots, AI coding assistants, generative media tools (image/video/audio), AI writing tools, speech AI, translation AI, automation platforms with AI.
+EXCLUDE: Non-AI products (Zoom, Teams, Slack, Trello, Google Analytics, Jira, Confluence).
+EXCLUDE: Tier names (Plus, Pro, Enterprise, Business).
+Output: ONLY a JSON array of product names.`;
+  const user = `List ${n} different AI tools/services with diverse categories (chatbots, coding, design, video, audio, writing, translation, automation). JSON array only.`;
   const resp = await openai.chat.completions.create({
     model: OPENAI_MODEL,
-    temperature: 0.2,
+    temperature: 0.8,
     messages: [{role:'system', content: system.trim()},{role:'user', content: user.trim()}],
   });
   return extractJsonArray(resp.choices?.[0]?.message?.content?.trim() || '');
@@ -308,6 +315,63 @@ function wiki(ent, lang){
   return title ? `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g,'_'))}` : '';
 }
 
+// P31 (instance of) validation
+const ACCEPTED_P31 = new Set([
+  'Q7397', // software
+  'Q1172284', // web application
+  'Q166142', // online service
+  'Q7889', // video game (sometimes AI tools are games)
+  'Q58778', // system
+  'Q1301371', // computer program
+  'Q1639024', // application software
+  'Q341',  // free software
+  'Q341', // open-source software
+  'Q21127166', // chatbot software
+  'Q58778', // computer system
+  'Q1301371', // computer program
+  'Q15633582', // software library
+]);
+
+const REJECTED_P31 = new Set([
+  'Q5', // human
+  'Q515', // city
+  'Q486972', // human settlement
+  'Q56061', // administrative territorial entity
+  'Q82794', // geographic region
+  'Q11424', // film
+  'Q215380', // musical group
+  'Q43229', // organization
+  'Q4830453', // business
+  'Q783794', // company
+  'Q6881511', // enterprise
+  'Q891723', // public company
+]);
+
+function getInstanceOf(ent){
+  const claims = ent?.claims?.P31 || [];
+  return claims.map(c => c?.mainsnak?.datavalue?.value?.id).filter(Boolean);
+}
+
+function validateInstanceOf(ent){
+  const instances = getInstanceOf(ent);
+  if (instances.length === 0) return { valid: false, reason: 'no_P31' };
+
+  // Check for rejected types first
+  for (const qid of instances) {
+    if (REJECTED_P31.has(qid)) {
+      return { valid: false, reason: `rejected_P31:${qid}` };
+    }
+  }
+
+  // Must have at least one accepted type
+  const hasAccepted = instances.some(qid => ACCEPTED_P31.has(qid));
+  if (!hasAccepted) {
+    return { valid: false, reason: `no_accepted_P31:${instances.join(',')}` };
+  }
+
+  return { valid: true, reason: 'ok', instances };
+}
+
 async function pickWikidata(name){
   const results = await wikidataSearch(name, 8);
   if(!results.length) return null;
@@ -319,6 +383,10 @@ async function pickWikidata(name){
   for(const r of results){
     const ent = await wikidataEntity(r.id);
     if(!ent) continue;
+
+    // P31 validation (MUST pass)
+    const p31Check = validateInstanceOf(ent);
+    if (!p31Check.valid) continue;
 
     const off = officialUrl(ent);
     if(!off) continue;
@@ -339,6 +407,7 @@ async function pickWikidata(name){
         wikipedia_de: wiki(ent,'de'),
         wikipedia_en: wiki(ent,'en'),
         wikidata_sitelinks: String(sl),
+        p31_instances: p31Check.instances,
       };
     }
   }
@@ -394,12 +463,12 @@ async function main(){
     loops++;
     if (loops % 10 === 0) console.error(`[autogen] loops=${loops} picked=${picked.length}/${TARGET} pool=${pool.length} cache=${WD_ENTITY_CACHE.size}`);
 
-    if(pool.length < 25){
-      const more = await propose(openai, 60);
+    if(pool.length < 30){
+      const more = await propose(openai, 80);
       pool.push(...more);
     }
 
-    const chunk = pool.splice(0, 30);
+    const chunk = pool.splice(0, 40);
     if(chunk.length===0) break;
 
     for(const name of chunk){
@@ -498,18 +567,50 @@ async function main(){
   if(!picked.length) die('No AI tools validated (v2). Try again or relax validation.');
   const missing = Math.max(0, TARGET - picked.length);
 
+  let writerResult = null;
 
-  // Write via strict writer on stdin
-  const payload = JSON.stringify({ rows: picked });
-  const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
-    input: payload,
-    encoding: 'utf8',
-    cwd: process.cwd(),
-  });
+  // Write via strict writer on stdin (skip if dry-run)
+  if (!DRY_RUN) {
+    const payload = JSON.stringify({ rows: picked });
+    const out = spawnSync('node', ['scripts/sheet_write_rows_strict_AP_v2.mjs'], {
+      input: payload,
+      encoding: 'utf8',
+      cwd: process.cwd(),
+    });
 
-  if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    if(out.status !== 0) die(out.stderr || out.stdout || 'writer failed');
+    writerResult = JSON.parse(out.stdout);
+  }
 
-  console.log(JSON.stringify({ ok:true, requested: TARGET, added: picked.length, missing, loops, writer: JSON.parse(out.stdout) }, null, 2));
+  const result = {
+    ok: true,
+    requested: TARGET,
+    added: picked.length,
+    missing,
+    loops,
+    dry_run: DRY_RUN,
+    ...(writerResult ? { writer: writerResult } : {}),
+  };
+
+  // Add items if requested
+  if (SHOW_ITEMS) {
+    result.items = picked.map(row => ({
+      topic: row[0],
+      slug: row[1],
+      category: row[2],
+      tags: row[3],
+      official_url: row[10],
+      wikidata_id: row[12],
+      wikidata_sitelinks: row[15],
+    }));
+  }
+
+  // Output format
+  if (JSON_OUTPUT || SHOW_ITEMS) {
+    console.log(JSON.stringify(result, null, 2));
+  } else {
+    console.log(JSON.stringify(result, null, 2));
+  }
 }
 
 main().catch(e=>die(e.stack||String(e)));
