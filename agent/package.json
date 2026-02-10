@@ -1,0 +1,27 @@
+{
+  "name": "utildesk-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Autonomous engineering agent for auto-fixing code issues",
+  "main": "cli.mjs",
+  "bin": {
+    "agent": "./cli.mjs"
+  },
+  "scripts": {
+    "start": "node cli.mjs",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "agent",
+    "autonomous",
+    "ai",
+    "devops",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "openai": "^6.16.0"
+  }
+}
