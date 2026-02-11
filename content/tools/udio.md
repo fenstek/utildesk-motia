@@ -1,11 +1,13 @@
 ---
-slug: "udio"
-title: "Udio"
-category: "Audio"
-price_model: "freemium"
-tags: [ai,audio]
-official_url: "https://www.udio.com"
-affiliate_url: "https://www.udio.com"
+slug: udio
+title: Udio
+category: Audio
+price_model: freemium
+tags:
+  - ai
+  - audio
+official_url: 'https://www.udio.com'
+affiliate_url: 'https://www.udio.com'
 ---
 
 # Udio

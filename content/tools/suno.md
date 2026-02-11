@@ -1,11 +1,13 @@
 ---
-slug: "suno"
-title: "Suno"
-category: "Audio"
-price_model: "freemium"
-tags: [ai, audio]
-official_url: "https://suno.com"
-affiliate_url: ""
+slug: suno
+title: Suno
+category: Audio
+price_model: freemium
+tags:
+  - ai
+  - audio
+official_url: 'https://suno.com'
+affiliate_url: 'https://suno.com'
 ---
 
 # Suno

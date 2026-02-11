@@ -1,10 +1,13 @@
 ---
-slug: "writer"
-title: "Writer"
-category: "AI"
-price_model: "freemium"
-tags: [ai,writing]
-official_url: "https://writer.com"
+slug: writer
+title: Writer
+category: AI
+price_model: freemium
+tags:
+  - ai
+  - writing
+official_url: 'https://writer.com'
+affiliate_url: 'https://writer.com'
 ---
 
 # Writer

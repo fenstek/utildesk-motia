@@ -1,10 +1,12 @@
 ---
-slug: "audo"
-title: "Audo"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.audo.ai/"
+slug: audo
+title: Audo
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.audo.ai/'
+affiliate_url: 'https://www.audo.ai/'
 ---
 
 # Audo

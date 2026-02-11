@@ -1,11 +1,12 @@
 ---
-slug: "leonardo-ai"
-title: "Leonardo AI"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://leonardo.ai"
-affiliate_url: "https://leonardo.ai"
+slug: leonardo-ai
+title: Leonardo AI
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://leonardo.ai'
+affiliate_url: 'https://leonardo.ai'
 ---
 
 # Leonardo AI

@@ -1,10 +1,12 @@
 ---
-slug: "clara"
-title: "Clara"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.clara-ai.org/"
+slug: clara
+title: Clara
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.clara-ai.org/'
+affiliate_url: 'https://www.clara-ai.org/'
 ---
 
 # Clara

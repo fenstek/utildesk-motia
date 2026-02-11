@@ -1,11 +1,13 @@
 ---
-slug: "grammarly"
-title: "Grammarly"
-category: "Produktivität"
-price_model: "freemium"
-tags: ["ai", "productivity"]
-official_url: "https://www.grammarly.com/"
-affiliate_url: "https://www.grammarly.com/"
+slug: grammarly
+title: Grammarly
+category: Produktivität
+price_model: freemium
+tags:
+  - ai
+  - productivity
+official_url: 'https://www.grammarly.com/'
+affiliate_url: 'https://www.grammarly.com/'
 ---
 
 # Grammarly

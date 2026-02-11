@@ -1,11 +1,13 @@
 ---
-slug: "cursor"
-title: "Cursor"
-category: "Developer"
-price_model: "freemium"
-tags: [ai, developer]
-official_url: "https://www.cursor.com"
-affiliate_url: "https://www.cursor.com"
+slug: cursor
+title: Cursor
+category: Developer
+price_model: freemium
+tags:
+  - ai
+  - developer
+official_url: 'https://www.cursor.com'
+affiliate_url: 'https://www.cursor.com'
 ---
 # Cursor
 

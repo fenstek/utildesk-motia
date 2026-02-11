@@ -1,11 +1,12 @@
 ---
-slug: "synthesia"
-title: "Synthesia"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "http://www.synthesiagame.com/"
-affiliate_url: "http://www.synthesiagame.com/"
+slug: synthesia
+title: Synthesia
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'http://www.synthesiagame.com/'
+affiliate_url: 'http://www.synthesiagame.com/'
 ---
 
 # Synthesia

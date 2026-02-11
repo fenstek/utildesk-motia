@@ -1,11 +1,14 @@
 ---
-slug: "midjourney"
-title: "Midjourney"
-category: "Design"
-price_model: "freemium"
-tags: ["ai", "design", "image"]
-official_url: "https://www.midjourney.com/"
-affiliate_url: "https://www.midjourney.com/"
+slug: midjourney
+title: Midjourney
+category: Design
+price_model: freemium
+tags:
+  - ai
+  - design
+  - image
+official_url: 'https://www.midjourney.com/'
+affiliate_url: 'https://www.midjourney.com/'
 ---
 
 # Midjourney

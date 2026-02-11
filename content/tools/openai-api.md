@@ -1,10 +1,13 @@
 ---
-slug: "openai-api"
-title: "OpenAI API"
-category: "AI"
-price_model: "freemium"
-tags: [ai, devtools]
-official_url: "https://beta.openai.com/"
+slug: openai-api
+title: OpenAI API
+category: AI
+price_model: freemium
+tags:
+  - ai
+  - devtools
+official_url: 'https://beta.openai.com/'
+affiliate_url: 'https://beta.openai.com/'
 ---
 
 # OpenAI API

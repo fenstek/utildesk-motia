@@ -1,11 +1,12 @@
 ---
-slug: "gemini"
-title: "Gemini"
-category: "AI"
-price_model: "freemium"
-tags: ["ai"]
-official_url: "https://gemini.google.com/"
-affiliate_url: "https://gemini.google.com/"
+slug: gemini
+title: Gemini
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://gemini.google.com/'
+affiliate_url: 'https://gemini.google.com/'
 ---
 
 # Gemini

@@ -1,11 +1,14 @@
 ---
-slug: "github-copilot"
-title: "GitHub Copilot"
-category: "Developer"
-price_model: "freemium"
-tags: ["ai", "developer", "devtools"]
-official_url: "https://github.com/features/copilot/"
-affiliate_url: "https://github.com/features/copilot/"
+slug: github-copilot
+title: GitHub Copilot
+category: Developer
+price_model: freemium
+tags:
+  - ai
+  - developer
+  - devtools
+official_url: 'https://github.com/features/copilot/'
+affiliate_url: 'https://github.com/features/copilot/'
 ---
 
 # GitHub Copilot

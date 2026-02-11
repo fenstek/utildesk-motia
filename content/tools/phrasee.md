@@ -1,11 +1,12 @@
 ---
-slug: "phrasee"
-title: "Phrasee"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "http://www.phraseexpress.com/"
-affiliate_url: "http://www.phraseexpress.com/"
+slug: phrasee
+title: Phrasee
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'http://www.phraseexpress.com/'
+affiliate_url: 'http://www.phraseexpress.com/'
 ---
 
 # Phrasee

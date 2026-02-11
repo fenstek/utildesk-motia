@@ -1,11 +1,13 @@
 ---
-slug: "elevenlabs"
-title: "ElevenLabs"
-category: "Audio"
-price_model: "freemium"
-tags: [ai, audio]
-official_url: "https://elevenlabs.io/"
-affiliate_url: "https://elevenlabs.io/"
+slug: elevenlabs
+title: ElevenLabs
+category: Audio
+price_model: freemium
+tags:
+  - ai
+  - audio
+official_url: 'https://elevenlabs.io/'
+affiliate_url: 'https://elevenlabs.io/'
 ---
 # ElevenLabs
 

@@ -1,11 +1,13 @@
 ---
-slug: "jasper"
-title: "Jasper"
-category: "Produktivität"
-price_model: "freemium"
-tags: [ai,produktivivität]
-official_url: "http://jaspertx.org/"
-affiliate_url: "http://jaspertx.org/"
+slug: jasper
+title: Jasper
+category: Produktivität
+price_model: freemium
+tags:
+  - ai
+  - produktivivität
+official_url: 'http://jaspertx.org/'
+affiliate_url: 'http://jaspertx.org/'
 ---
 # Jasper
 

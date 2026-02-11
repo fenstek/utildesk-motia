@@ -1,11 +1,12 @@
 ---
-slug: "pencil"
-title: "Pencil"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.pencil2d.org"
-affiliate_url: "https://www.pencil2d.org"
+slug: pencil
+title: Pencil
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.pencil2d.org'
+affiliate_url: 'https://www.pencil2d.org'
 ---
 # Pencil
 

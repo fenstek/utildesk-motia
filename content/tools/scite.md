@@ -1,11 +1,12 @@
 ---
-slug: "scite"
-title: "Scite"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://scite.ai"
-affiliate_url: "https://www.scintilla.org/SciTE.html"
+slug: scite
+title: Scite
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://scite.ai'
+affiliate_url: 'https://scite.ai'
 ---
 # Scite
 
