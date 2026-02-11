@@ -5,8 +5,9 @@
  * Usage:
  *   node scripts/test_run_9_full.mjs 9
  */
-import { spawnSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import fs from 'node:fs';
+import { existsSync } from 'node:fs';
 
 const COUNT = Math.max(1, Math.min(50, Number(process.argv[2] || 9)));
 const TOOL_JSON = '/tmp/utildesk_current_tool.json';
@@ -29,6 +30,15 @@ function runInherit(cmd, args){
   const r = spawnSync(cmd, args, { stdio:'inherit' });
   if (r.status !== 0) {
     die(`${cmd} ${args.join(' ')}`);
+  }
+}
+
+function isTrackedByGit(path){
+  try{
+    execFileSync('git', ['ls-files', '--error-unmatch', path], { stdio: 'ignore' });
+    return true;
+  }catch{
+    return false;
   }
 }
 
@@ -98,6 +108,14 @@ for (let i = 0; i < COUNT; i++){
     } catch {}
 
     runInherit('node', ['scripts/check_duplicates.mjs']);
+
+    const mdPath = `content/tools/${norm.slug}.md`;
+    const publishedOk = existsSync(mdPath) && isTrackedByGit(mdPath);
+    if (!publishedOk) {
+      console.error('[GUARD] Refuse DONE: md file missing or not tracked:', mdPath);
+      runInherit('node', ['scripts/sheet_set_status.mjs', String(rowNum), 'ERROR']);
+      continue;
+    }
 
     // 5) set status DONE by row_number (real interface)
     runInherit('node', ['scripts/sheet_set_status.mjs', String(rowNum), 'DONE']);
