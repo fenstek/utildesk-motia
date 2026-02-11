@@ -18,16 +18,37 @@ export async function runLoop(cfg) {
       console.error(`Codex run failed with code ${exec.code}`);
     }
 
-    const check = checkDisabledTools(cfg);
+    let precheckFailed = false;
+    for (const cmd of cfg.precheckCmds || []) {
+      const res = await run("bash", ["-lc", cmd], { cwd: process.cwd() });
+      if (res.code !== 0) {
+        console.error(`PRECHECK FAIL: ${cmd}`);
+        precheckFailed = true;
+        break;
+      }
+    }
+    if (precheckFailed) {
+      continue;
+    }
+
+    if (cfg.buildCmd) {
+      const build = await run("bash", ["-lc", cfg.buildCmd], { cwd: process.cwd() });
+      if (build.code !== 0) {
+        console.error(`BUILD FAIL: ${cfg.buildCmd}`);
+        continue;
+      }
+    }
+
+    const check = await checkDisabledTools(cfg);
     if (check.ok) {
       console.log("CHECK PASS");
       return 0;
     }
 
     console.error("CHECK FAIL");
-    for (const r of check.reasons || []) {
-      console.error(`- ${r}`);
-    }
+    console.error(`REASONS: ${JSON.stringify(check.reasons || [])}`);
+    console.error(`CHECKED DIRS: ${JSON.stringify(check.checkedDirs || [])}`);
+    console.error(`SKIPPED DIRS: ${JSON.stringify(check.skippedDirs || [])}`);
   }
 
   return 2;
