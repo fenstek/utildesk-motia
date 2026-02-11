@@ -151,7 +151,16 @@ const getFrequencyClass = (count: number, max: number) => {
 
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
 
-const latestTools = enabledTools.slice(0, 12);
+const hasPopularity = enabledTools.some((t) => (t.popularity ?? 0) > 0);
+const featuredTools = hasPopularity
+  ? [...enabledTools].sort(
+      (a, b) =>
+        (b.popularity ?? 0) - (a.popularity ?? 0) ||
+        a.title.localeCompare(b.title, "de")
+    )
+  : enabledTools;
+
+const latestTools = featuredTools.slice(0, 12);
 ---
 
 <BaseLayout
