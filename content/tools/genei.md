@@ -1,10 +1,12 @@
 ---
-slug: "genei"
-title: "Genei"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "http://www.geneitaiyo.com/"
+slug: genei
+title: Genei
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'http://www.geneitaiyo.com/'
+affiliate_url: 'http://www.geneitaiyo.com/'
 ---
 
 # Genei

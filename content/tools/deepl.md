@@ -1,11 +1,13 @@
 ---
-slug: "deepl"
-title: "DeepL"
-category: "Produktivität"
-price_model: "freemium"
-tags: [ai, produktivität]
-official_url: "https://www.deepl.com/translator"
-affiliate_url: "https://www.deepl.com/translator"
+slug: deepl
+title: DeepL
+category: Produktivität
+price_model: freemium
+tags:
+  - ai
+  - produktivität
+official_url: 'https://www.deepl.com/translator'
+affiliate_url: 'https://www.deepl.com/translator'
 ---
 # DeepL
 

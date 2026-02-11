@@ -1,10 +1,12 @@
 ---
-slug: "lumiere"
-title: "Lumiere"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "http://lumiere.obs.coe.int/"
+slug: lumiere
+title: Lumiere
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'http://lumiere.obs.coe.int/'
+affiliate_url: 'http://lumiere.obs.coe.int/'
 ---
 
 # Lumiere

@@ -1,11 +1,14 @@
 ---
-slug: "quillbot"
-title: "QuillBot"
-category: "AI"
-price_model: "freemium"
-tags: [ai, chatbot, design]
-official_url: "https://quillbot.com/"
-affiliate_url: "https://quillbot.com/"
+slug: quillbot
+title: QuillBot
+category: AI
+price_model: freemium
+tags:
+  - ai
+  - chatbot
+  - design
+official_url: 'https://quillbot.com/'
+affiliate_url: 'https://quillbot.com/'
 ---
 
 # QuillBot

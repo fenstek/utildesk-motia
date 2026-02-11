@@ -1,11 +1,12 @@
 ---
-slug: "replika"
-title: "Replika"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://replika.com/"
-affiliate_url: "https://replika.com/"
+slug: replika
+title: Replika
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://replika.com/'
+affiliate_url: 'https://replika.com/'
 ---
 
 # Replika

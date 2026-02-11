@@ -1,11 +1,12 @@
 ---
-slug: "you-com"
-title: "You.com"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://you.com/"
-affiliate_url: "https://you.com/"
+slug: you-com
+title: You.com
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://you.com/'
+affiliate_url: 'https://you.com/'
 ---
 
 # You.com

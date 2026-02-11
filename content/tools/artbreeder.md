@@ -1,11 +1,13 @@
 ---
-slug: "artbreeder"
-title: "Artbreeder"
-category: "Design"
-price_model: "freemium"
-tags: [ai, design]
-official_url: "https://artbreeder.com"
-affiliate_url: "https://artbreeder.com"
+slug: artbreeder
+title: Artbreeder
+category: Design
+price_model: freemium
+tags:
+  - ai
+  - design
+official_url: 'https://artbreeder.com'
+affiliate_url: 'https://artbreeder.com'
 ---
 
 # Artbreeder

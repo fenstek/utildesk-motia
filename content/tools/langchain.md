@@ -1,11 +1,12 @@
 ---
-slug: "langchain"
-title: "LangChain"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://langchain.com/"
-affiliate_url: "https://langchain.com/"
+slug: langchain
+title: LangChain
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://langchain.com/'
+affiliate_url: 'https://langchain.com/'
 ---
 
 # LangChain

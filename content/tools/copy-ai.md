@@ -1,10 +1,14 @@
 ---
-slug: "copy-ai"
-title: "Copy.ai"
-category: "Produktivität"
-price_model: "freemium"
-tags: [ai,produktivität,writing]
-official_url: "https://www.copy.ai"
+slug: copy-ai
+title: Copy.ai
+category: Produktivität
+price_model: freemium
+tags:
+  - ai
+  - produktivität
+  - writing
+official_url: 'https://www.copy.ai'
+affiliate_url: 'https://www.copy.ai'
 ---
 
 # Copy.ai
