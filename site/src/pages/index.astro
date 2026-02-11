@@ -75,6 +75,8 @@ const tools = await Promise.all(
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
     const { data, content } = matter(raw);
+    const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
+    if (disabled) return null;
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
@@ -121,11 +123,12 @@ const tools = await Promise.all(
   })
 );
 
-tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+const enabledTools = tools.filter(Boolean);
+enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
 // Build tag frequency map
 const tagFrequency = new Map<string, number>();
-tools.forEach((tool) => {
+enabledTools.forEach((tool) => {
   tool.tags.forEach((tag) => {
     tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
   });
@@ -148,7 +151,7 @@ const getFrequencyClass = (count: number, max: number) => {
 
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
 
-const latestTools = tools.slice(0, 12);
+const latestTools = enabledTools.slice(0, 12);
 ---
 
 <BaseLayout
@@ -314,7 +317,7 @@ const latestTools = tools.slice(0, 12);
 
     <div style="text-align: center; margin-top: 48px;">
       <a href="/tools/" class="hero-cta">
-        Alle {tools.length} Tools durchsuchen →
+        Alle {enabledTools.length} Tools durchsuchen →
       </a>
     </div>
   </section>
