@@ -4,8 +4,8 @@ title: "DALL·E"
 category: "Design"
 price_model: "freemium"
 tags: [ai, design]
-official_url: "https://openai.com/dall-e"
-affiliate_url: "https://www.dallenwil.ch"
+official_url: "https://suno.com"
+affiliate_url: ""
 ---
 
 # DALL·E
