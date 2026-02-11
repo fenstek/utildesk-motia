@@ -1,10 +1,15 @@
 ---
-slug: "suno"
-title: "Suno"
-category: "Audio"
-price_model: "freemium"
-tags: [ai, audio]
-official_url: "https://www.comune.suno.novara.it"
+slug: suno
+title: Suno
+category: Audio
+price_model: freemium
+tags:
+  - ai
+  - audio
+official_url: ""
+affiliate_url: ""
+disabled: true
+reason: "Duplicate of suno-ai"
 ---
 
 # Suno

@@ -1,10 +1,12 @@
 ---
-slug: "narrative"
-title: "Narrative"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.thenarrativemusic.com"
+slug: narrative
+title: Narrative
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://narrative.so'
+affiliate_url: 'https://narrative.so'
 ---
 
 # Narrative

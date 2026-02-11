@@ -1,11 +1,13 @@
 ---
-slug: "replit"
-title: "Replit"
-category: "Developer"
-price_model: "freemium"
-tags: [ai,developer]
-official_url: "https://repl.it"
-affiliate_url: "https://repl.it"
+slug: replit
+title: Replit
+category: Developer
+price_model: freemium
+tags:
+  - ai
+  - developer
+official_url: 'https://repl.it'
+affiliate_url: 'https://repl.it'
 ---
 # Replit
 

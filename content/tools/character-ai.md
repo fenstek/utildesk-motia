@@ -1,11 +1,12 @@
 ---
-slug: "character-ai"
-title: "Character AI"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://character.ai/"
-affiliate_url: "https://character.ai/"
+slug: character-ai
+title: Character AI
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://character.ai/'
+affiliate_url: 'https://character.ai/'
 ---
 
 # Character AI

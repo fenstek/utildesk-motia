@@ -1,10 +1,13 @@
 ---
-slug: "notion-ai"
-title: "Notion AI"
-category: "Produktivität"
-price_model: "freemium"
-tags: [ai,produktivität]
-official_url: "https://www.notion.so/product/ai"
+slug: notion-ai
+title: Notion AI
+category: Produktivität
+price_model: freemium
+tags:
+  - ai
+  - produktivität
+official_url: 'https://www.notion.so/product/ai'
+affiliate_url: 'https://www.notion.so/product/ai'
 ---
 
 # Notion AI

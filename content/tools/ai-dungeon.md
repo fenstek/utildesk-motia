@@ -1,11 +1,12 @@
 ---
-slug: "ai-dungeon"
-title: "AI Dungeon"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://play.aidungeon.io"
-affiliate_url: "https://play.aidungeon.io"
+slug: ai-dungeon
+title: AI Dungeon
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://play.aidungeon.io'
+affiliate_url: 'https://play.aidungeon.io'
 ---
 
 # AI Dungeon

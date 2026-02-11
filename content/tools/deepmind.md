@@ -1,10 +1,12 @@
 ---
-slug: "deepmind"
-title: "DeepMind"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://deepmind.google/"
+slug: deepmind
+title: DeepMind
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://deepmind.google/'
+affiliate_url: 'https://deepmind.google/'
 ---
 
 # DeepMind

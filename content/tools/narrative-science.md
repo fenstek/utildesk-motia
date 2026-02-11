@@ -1,11 +1,12 @@
 ---
-slug: "narrative-science"
-title: "Narrative Science"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "http://narrativescience.com"
-affiliate_url: "http://narrativescience.com"
+slug: narrative-science
+title: Narrative Science
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'http://narrativescience.com'
+affiliate_url: 'http://narrativescience.com'
 ---
 # Narrative Science
 

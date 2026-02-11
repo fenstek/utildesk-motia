@@ -1,10 +1,13 @@
 ---
-slug: "pika"
-title: "Pika"
-category: "Video"
-price_model: "freemium"
-tags: [ai, video]
-official_url: "https://pika.art/"
+slug: pika
+title: Pika
+category: Video
+price_model: freemium
+tags:
+  - ai
+  - video
+official_url: 'https://pika.art/'
+affiliate_url: 'https://pika.art/'
 ---
 
 # Pika

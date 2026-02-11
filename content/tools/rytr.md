@@ -1,11 +1,12 @@
 ---
-slug: "rytr"
-title: "Rytr"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://rytr.me/"
-affiliate_url: "https://rytr.me/"
+slug: rytr
+title: Rytr
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://rytr.me/'
+affiliate_url: 'https://rytr.me/'
 ---
 # Rytr
 

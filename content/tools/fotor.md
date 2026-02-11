@@ -1,10 +1,12 @@
 ---
-slug: "fotor"
-title: "Fotor"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.fotor.com/"
+slug: fotor
+title: Fotor
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.fotor.com/'
+affiliate_url: 'https://www.fotor.com/'
 ---
 
 # Fotor

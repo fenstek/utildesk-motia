@@ -1,11 +1,12 @@
 ---
-slug: "llama"
-title: "LLaMA"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.llama.com/"
-affiliate_url: "https://www.llama.com/"
+slug: llama
+title: LLaMA
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.llama.com/'
+affiliate_url: 'https://www.llama.com/'
 ---
 # LLaMA
 
