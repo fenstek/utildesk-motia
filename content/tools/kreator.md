@@ -5,6 +5,8 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "http://www.kreator-terrorzone.de"
+disabled: true
+reason: "Not an AI tool / irrelevant website"
 ---
 
 # Kreator

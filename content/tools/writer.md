@@ -4,7 +4,7 @@ title: "Writer"
 category: "AI"
 price_model: "freemium"
 tags: [ai,writing]
-official_url: "https://awards.wga.org"
+official_url: "https://writer.com"
 ---
 
 # Writer
