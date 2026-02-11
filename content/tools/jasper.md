@@ -6,8 +6,8 @@ price_model: freemium
 tags:
   - ai
   - produktivivität
-official_url: 'http://jaspertx.org/'
-affiliate_url: 'http://jaspertx.org/'
+official_url: 'https://www.jasper.ai/'
+affiliate_url: 'https://www.jasper.ai/'
 ---
 # Jasper
 

@@ -6,8 +6,8 @@ price_model: freemium
 tags:
   - ai
   - devtools
-official_url: 'https://beta.openai.com/'
-affiliate_url: 'https://beta.openai.com/'
+official_url: 'https://platform.openai.com/'
+affiliate_url: 'https://platform.openai.com/'
 ---
 
 # OpenAI API
