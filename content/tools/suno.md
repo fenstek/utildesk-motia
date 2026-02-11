@@ -4,7 +4,8 @@ title: "Suno"
 category: "Audio"
 price_model: "freemium"
 tags: [ai, audio]
-official_url: "https://www.comune.suno.novara.it"
+official_url: "https://suno.com"
+affiliate_url: ""
 ---
 
 # Suno
