@@ -6,8 +6,8 @@ price_model: freemium
 tags:
   - ai
   - audio
-official_url: 'https://krispykreme.com'
-affiliate_url: 'https://krispykreme.com'
+official_url: 'https://krisp.ai/'
+affiliate_url: 'https://krisp.ai/'
 ---
 # Krisp
 
