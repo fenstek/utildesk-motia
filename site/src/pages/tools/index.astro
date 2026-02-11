@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { readdir, readFile } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 
@@ -60,6 +60,7 @@ const resolveCategoryIcon = (category: string | null, tags: string[]) => {
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
+    const stats = await stat(full);
     const raw = await readFile(full, "utf-8");
     const { data, content } = matter(raw);
     const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
@@ -91,6 +92,8 @@ const tools = await Promise.all(
       iconUrl,
       tags,
       excerpt,
+      addedAtMs: Number(stats.mtimeMs || 0),
+      popularity: 0,
       fallbackIcon: resolveCategoryIcon(category, tags),
     };
   })
@@ -144,12 +147,18 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
   <!-- Search -->
   <div class="search-wrapper">
     <input
-      type="text"
+      type="search"
       id="search-input"
       class="search-input"
-      placeholder="Tools durchsuchen (z.B. ChatGPT, AI, automation)..."
+      placeholder="Tools suchen…"
       autocomplete="off"
     />
+    <select id="sort-select" class="search-input" aria-label="Sortierung">
+      <option value="alpha">Alphabetisch (A–Z)</option>
+      <option value="newest">Neueste zuerst</option>
+      <option value="oldest">Älteste zuerst</option>
+      <option value="popular">Beliebteste zuerst</option>
+    </select>
   </div>
 
   <!-- Tools Grid -->
@@ -158,10 +167,11 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       <a
         href={`/tools/${tool.slug}/`}
         class="card tool-card"
-        data-search-title={tool.title.toLowerCase()}
-        data-search-slug={tool.slug.toLowerCase()}
-        data-search-category={tool.category?.toLowerCase() || ""}
-        data-tags={tool.tags.join(",")}
+        data-title={tool.title.toLowerCase()}
+        data-slug={tool.slug.toLowerCase()}
+        data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
+        data-added={tool.addedAtMs}
+        data-popularity={tool.popularity}
       >
         <div class="tool-header">
           <div class="tool-image">
@@ -230,18 +240,24 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.
     </p>
   </div>
+  <div style="text-align: center; padding-bottom: 48px;">
+    <button type="button" id="load-more-btn" class="hero-cta">Mehr anzeigen</button>
+  </div>
 
   <!-- Client-side search + tag filter script (inline, no build tools) -->
   <script is:inline>
     (function() {
       const searchInput = document.getElementById('search-input');
+      const sortSelect = document.getElementById('sort-select');
       const toolsGrid = document.getElementById('tools-grid');
       const noResults = document.getElementById('no-results');
-      const cards = toolsGrid.querySelectorAll('.tool-card');
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
       const tagFilterItems = document.querySelectorAll('.tag-filter-item');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
 
       let activeTag = null;
+      let pageBlocks = 1;
 
       // Read URL param ?tag=
       const urlParams = new URLSearchParams(window.location.search);
@@ -260,15 +276,24 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
         }
       }
 
-      // Filter function
+      function getCols() {
+        const template = window.getComputedStyle(toolsGrid).gridTemplateColumns || '';
+        if (!template || template === 'none') return 1;
+        const cols = template.split(' ').filter(function(part) { return part.trim().length > 0; }).length;
+        return cols > 0 ? cols : 1;
+      }
+
+      function getStep() {
+        return getCols() * 6;
+      }
+
+      // Filter + sort + pagination
       function filterTools() {
         const query = searchInput.value.toLowerCase().trim();
-        let visibleCount = 0;
-
-        cards.forEach(function(card) {
-          const title = card.getAttribute('data-search-title') || '';
-          const slug = card.getAttribute('data-search-slug') || '';
-          const category = card.getAttribute('data-search-category') || '';
+        const sortMode = sortSelect ? sortSelect.value : 'alpha';
+        const filtered = cards.filter(function(card) {
+          const title = card.getAttribute('data-title') || '';
+          const slug = card.getAttribute('data-slug') || '';
           const tags = card.getAttribute('data-tags') || '';
           const tagList = tags.split(',').map(function(t) { return t.trim().toLowerCase(); });
 
@@ -276,19 +301,47 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
           const searchMatch = !query ||
                              title.includes(query) ||
                              slug.includes(query) ||
-                             category.includes(query) ||
-                             tags.toLowerCase().includes(query);
+                             tags.includes(query);
 
           // Check tag filter match
           const tagMatch = !activeTag || tagList.includes(activeTag);
 
-          if (searchMatch && tagMatch) {
-            card.style.display = 'flex';
-            visibleCount++;
-          } else {
-            card.style.display = 'none';
-          }
+          return searchMatch && tagMatch;
         });
+
+        filtered.sort(function(a, b) {
+          const aTitle = (a.getAttribute('data-title') || '').toLowerCase();
+          const bTitle = (b.getAttribute('data-title') || '').toLowerCase();
+          if (sortMode === 'newest') {
+            const aAdded = Number(a.getAttribute('data-added') || '0');
+            const bAdded = Number(b.getAttribute('data-added') || '0');
+            if (bAdded !== aAdded) return bAdded - aAdded;
+            return aTitle.localeCompare(bTitle, 'de');
+          }
+          if (sortMode === 'oldest') {
+            const aAdded = Number(a.getAttribute('data-added') || '0');
+            const bAdded = Number(b.getAttribute('data-added') || '0');
+            if (aAdded !== bAdded) return aAdded - bAdded;
+            return aTitle.localeCompare(bTitle, 'de');
+          }
+          if (sortMode === 'popular') {
+            const aPopular = Number(a.getAttribute('data-popularity') || '0');
+            const bPopular = Number(b.getAttribute('data-popularity') || '0');
+            if (bPopular !== aPopular) return bPopular - aPopular;
+            return aTitle.localeCompare(bTitle, 'de');
+          }
+          return aTitle.localeCompare(bTitle, 'de');
+        });
+
+        const limit = getStep() * pageBlocks;
+        const visibleCards = filtered.slice(0, limit);
+
+        toolsGrid.innerHTML = '';
+        visibleCards.forEach(function(card) {
+          toolsGrid.appendChild(card);
+        });
+
+        const visibleCount = filtered.length;
 
         // Show/hide no results message
         if (visibleCount === 0) {
@@ -298,10 +351,27 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
           toolsGrid.style.display = 'grid';
           noResults.style.display = 'none';
         }
+
+        if (loadMoreBtn) {
+          if (visibleCount > limit) {
+            loadMoreBtn.style.display = 'inline-flex';
+          } else {
+            loadMoreBtn.style.display = 'none';
+          }
+        }
+      }
+
+      function resetAndFilter() {
+        pageBlocks = 1;
+        filterTools();
       }
 
       // Search input listener
-      searchInput.addEventListener('input', filterTools);
+      searchInput.addEventListener('input', resetAndFilter);
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', resetAndFilter);
+      }
 
       // Tag filter click listener
       tagFilterItems.forEach(function(item) {
@@ -329,7 +399,7 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
             history.pushState(null, '', '/tools/?tag=' + encodeURIComponent(tag));
           }
 
-          filterTools();
+          resetAndFilter();
         });
       });
 
@@ -341,9 +411,18 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
           tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
           clearFilterBtn.style.display = 'none';
           history.pushState(null, '', '/tools/');
+          resetAndFilter();
+        });
+      }
+
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+          pageBlocks += 1;
           filterTools();
         });
       }
+
+      window.addEventListener('resize', filterTools);
 
       // Initial filter on page load
       filterTools();
