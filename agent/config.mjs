@@ -17,5 +17,7 @@ export function loadConfig() {
       env.CODEX_PROMPT ||
       "Fix the project so disabled:true tools are not shown in catalog/index/pages and are not generated; do not break the pipeline.",
     backupEachIter: String(env.BACKUP_EACH_ITER || "0") === "1",
+    precheckCmds: csv(env.PRECHECK_CMDS || ""),
+    buildCmd: env.BUILD_CMD || "",
   };
 }

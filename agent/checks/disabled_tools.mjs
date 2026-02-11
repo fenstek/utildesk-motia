@@ -36,9 +36,11 @@ function walk(dir) {
 export function checkDisabledTools(cfg) {
   const reasons = [];
   const slugs = cfg.disabledSlugs || [];
+  const checkedDirs = [];
+  const skippedDirs = [];
 
   if (!fs.existsSync(cfg.sitemapPath)) {
-    return { ok: false, reasons: [`Missing sitemap: ${cfg.sitemapPath}`] };
+    return { ok: false, reasons: [`Missing sitemap: ${cfg.sitemapPath}`], checkedDirs, skippedDirs };
   }
 
   const sitemapText = fs.readFileSync(cfg.sitemapPath, "utf8");
@@ -51,10 +53,11 @@ export function checkDisabledTools(cfg) {
   for (const dir of cfg.distDirs || []) {
     if (!dir) continue;
     if (!fs.existsSync(dir)) {
-      console.log(`dist not found, skipped: ${dir}`);
+      skippedDirs.push(dir);
       continue;
     }
 
+    checkedDirs.push(dir);
     const files = walk(dir).filter((p) => /\.(html|xml|txt|json)$/i.test(p));
     for (const file of files) {
       const text = readFileSafe(file);
@@ -67,6 +70,6 @@ export function checkDisabledTools(cfg) {
     }
   }
 
-  if (reasons.length) return { ok: false, reasons };
-  return { ok: true };
+  if (reasons.length) return { ok: false, reasons, checkedDirs, skippedDirs };
+  return { ok: true, checkedDirs, skippedDirs };
 }
