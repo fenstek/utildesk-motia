@@ -6,8 +6,8 @@ price_model: freemium
 tags:
   - ai
   - writing
-official_url: 'http://www.textainer.com'
-affiliate_url: 'http://www.textainer.com'
+official_url: 'https://www.usetextai.com'
+affiliate_url: 'https://www.usetextai.com'
 ---
 
 # TextAI

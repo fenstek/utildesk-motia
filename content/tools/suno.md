@@ -6,8 +6,10 @@ price_model: freemium
 tags:
   - ai
   - audio
-official_url: 'https://suno.com'
-affiliate_url: 'https://suno.com'
+official_url: ""
+affiliate_url: ""
+disabled: true
+reason: "Duplicate of suno-ai"
 ---
 
 # Suno
