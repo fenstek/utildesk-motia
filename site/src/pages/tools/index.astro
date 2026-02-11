@@ -240,8 +240,14 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.
     </p>
   </div>
-  <div style="text-align: center; padding-bottom: 48px;">
+  <div style="text-align: center; margin-top: 36px; padding-bottom: 48px;">
     <button type="button" id="load-more-btn" class="hero-cta">Mehr anzeigen</button>
+    <div
+      id="hidden-count-info"
+      style="display: none; margin-top: 10px; text-align: center; font-size: 0.9rem; color: rgba(0,0,0,0.6);"
+    >
+      Noch 0 Tools verborgen
+    </div>
   </div>
 
   <!-- Client-side search + tag filter script (inline, no build tools) -->
@@ -252,6 +258,7 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
       const toolsGrid = document.getElementById('tools-grid');
       const noResults = document.getElementById('no-results');
       const loadMoreBtn = document.getElementById('load-more-btn');
+      const hiddenCountInfo = document.getElementById('hidden-count-info');
       const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
       const tagFilterItems = document.querySelectorAll('.tag-filter-item');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
@@ -341,10 +348,12 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
           toolsGrid.appendChild(card);
         });
 
-        const visibleCount = filtered.length;
+        const totalFiltered = filtered.length;
+        const currentVisible = visibleCards.length;
+        const hidden = totalFiltered - currentVisible;
 
         // Show/hide no results message
-        if (visibleCount === 0) {
+        if (totalFiltered === 0) {
           toolsGrid.style.display = 'none';
           noResults.style.display = 'block';
         } else {
@@ -353,10 +362,19 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
         }
 
         if (loadMoreBtn) {
-          if (visibleCount > limit) {
+          if (totalFiltered > limit) {
             loadMoreBtn.style.display = 'inline-flex';
           } else {
             loadMoreBtn.style.display = 'none';
+          }
+        }
+
+        if (hiddenCountInfo) {
+          if (hidden > 0) {
+            hiddenCountInfo.textContent = 'Noch ' + hidden + ' Tools verborgen';
+            hiddenCountInfo.style.display = 'block';
+          } else {
+            hiddenCountInfo.style.display = 'none';
           }
         }
       }
