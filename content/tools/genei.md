@@ -5,8 +5,8 @@ category: AI
 price_model: freemium
 tags:
   - ai
-official_url: 'http://www.geneitaiyo.com/'
-affiliate_url: 'http://www.geneitaiyo.com/'
+official_url: 'https://www.genei.io'
+affiliate_url: 'https://www.genei.io'
 ---
 
 # Genei

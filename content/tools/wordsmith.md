@@ -5,8 +5,8 @@ category: AI
 price_model: freemium
 tags:
   - ai
-official_url: 'https://wordsmithmusic.com/'
-affiliate_url: 'https://wordsmithmusic.com/'
+official_url: 'https://www.worldsmith.io'
+affiliate_url: 'https://www.worldsmith.io'
 ---
 
 # Wordsmith

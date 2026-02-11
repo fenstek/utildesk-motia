@@ -5,8 +5,8 @@ category: AI
 price_model: freemium
 tags:
   - ai
-official_url: 'http://www.synthesiagame.com/'
-affiliate_url: 'http://www.synthesiagame.com/'
+official_url: 'https://www.synthesia.io'
+affiliate_url: 'https://www.synthesia.io'
 ---
 
 # Synthesia
