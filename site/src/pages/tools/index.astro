@@ -62,6 +62,8 @@ const tools = await Promise.all(
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
     const { data, content } = matter(raw);
+    const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
+    if (disabled) return null;
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
@@ -94,11 +96,12 @@ const tools = await Promise.all(
   })
 );
 
-tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+const enabledTools = tools.filter(Boolean);
+enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
 // Build unique tag list
 const allTags = new Set<string>();
-tools.forEach((tool) => {
+enabledTools.forEach((tool) => {
   tool.tags.forEach((tag) => allTags.add(tag));
 });
 const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
@@ -151,7 +154,7 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
 
   <!-- Tools Grid -->
   <div class="tools-grid" id="tools-grid">
-    {tools.map((tool) => (
+    {enabledTools.map((tool) => (
       <a
         href={`/tools/${tool.slug}/`}
         class="card tool-card"
