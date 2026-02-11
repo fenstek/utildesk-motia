@@ -5,7 +5,6 @@ category: Produktivität
 price_model: freemium
 tags:
   - ai
-  - produktivivität
 official_url: 'https://www.jasper.ai/'
 affiliate_url: 'https://www.jasper.ai/'
 ---
