@@ -4,7 +4,10 @@ title: "Kreator"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "http://www.kreator-terrorzone.de"
+official_url: ""
+affiliate_url: ""
+disabled: true
+reason: "Not an AI tool / irrelevant website"
 ---
 
 # Kreator

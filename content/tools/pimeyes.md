@@ -1,10 +1,12 @@
 ---
-slug: "pimeyes"
-title: "PimEyes"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://pimeyes.com"
+slug: pimeyes
+title: PimEyes
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://pimeyes.com'
+affiliate_url: 'https://pimeyes.com'
 ---
 
 # PimEyes

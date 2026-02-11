@@ -1,11 +1,12 @@
 ---
-slug: "pinecone"
-title: "Pinecone"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.pinecone.io/"
-affiliate_url: "https://www.pinecone.io/"
+slug: pinecone
+title: Pinecone
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.pinecone.io/'
+affiliate_url: 'https://www.pinecone.io/'
 ---
 
 # Pinecone

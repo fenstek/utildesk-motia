@@ -1,11 +1,13 @@
 ---
-slug: "chatbot-com"
-title: "Chatbot.com"
-category: "AI"
-price_model: "freemium"
-tags: [ai,chatbot]
-official_url: "https://www.chatbot.com"
-affiliate_url: "https://www.chatbot.com"
+slug: chatbot-com
+title: Chatbot.com
+category: AI
+price_model: freemium
+tags:
+  - ai
+  - chatbot
+official_url: 'https://www.chatbot.com'
+affiliate_url: 'https://www.chatbot.com'
 ---
 
 # Chatbot.com

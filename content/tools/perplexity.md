@@ -1,11 +1,12 @@
 ---
-slug: "perplexity"
-title: "Perplexity"
-category: "AI"
-price_model: "freemium"
-tags: ["ai"]
-official_url: "https://www.perplexity.ai"
-affiliate_url: "https://www.perplexity.ai"
+slug: perplexity
+title: Perplexity
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.perplexity.ai'
+affiliate_url: 'https://www.perplexity.ai'
 ---
 
 # Perplexity

@@ -1,11 +1,12 @@
 ---
-slug: "heygen"
-title: "HeyGen"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.heygen.com/"
-affiliate_url: "https://www.heygen.com/"
+slug: heygen
+title: HeyGen
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.heygen.com/'
+affiliate_url: 'https://www.heygen.com/'
 ---
 # HeyGen
 

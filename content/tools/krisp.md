@@ -1,11 +1,13 @@
 ---
-slug: "krisp"
-title: "Krisp"
-category: "Audio"
-price_model: "freemium"
-tags: [ai,audio]
-official_url: "https://krispykreme.com"
-affiliate_url: "https://krispykreme.com"
+slug: krisp
+title: Krisp
+category: Audio
+price_model: freemium
+tags:
+  - ai
+  - audio
+official_url: 'https://krispykreme.com'
+affiliate_url: 'https://krispykreme.com'
 ---
 # Krisp
 

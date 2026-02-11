@@ -1,10 +1,12 @@
 ---
-slug: "katalon"
-title: "Katalon"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://katalon.com/"
+slug: katalon
+title: Katalon
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://katalon.com/'
+affiliate_url: 'https://katalon.com/'
 ---
 
 # Katalon

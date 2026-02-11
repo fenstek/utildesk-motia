@@ -1,10 +1,12 @@
 ---
-slug: "poe"
-title: "Poe"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://poe.com"
+slug: poe
+title: Poe
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://poe.com'
+affiliate_url: 'https://poe.com'
 ---
 
 # Poe

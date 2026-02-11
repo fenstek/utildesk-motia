@@ -1,11 +1,12 @@
 ---
-slug: "whisper"
-title: "Whisper"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://openai.com/research/whisper"
-affiliate_url: "https://openai.com/research/whisper"
+slug: whisper
+title: Whisper
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://openai.com/research/whisper'
+affiliate_url: 'https://openai.com/research/whisper'
 ---
 # Whisper
 

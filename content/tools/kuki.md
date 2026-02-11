@@ -1,10 +1,12 @@
 ---
-slug: "kuki"
-title: "Kuki"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.kuki.ai/"
+slug: kuki
+title: Kuki
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.kuki.ai/'
+affiliate_url: 'https://www.kuki.ai/'
 ---
 
 # Kuki

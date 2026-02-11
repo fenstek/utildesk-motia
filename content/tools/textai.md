@@ -1,10 +1,13 @@
 ---
-slug: "textai"
-title: "TextAI"
-category: "AI"
-price_model: "freemium"
-tags: [ai, writing]
-official_url: "http://www.textainer.com"
+slug: textai
+title: TextAI
+category: AI
+price_model: freemium
+tags:
+  - ai
+  - writing
+official_url: 'https://www.usetextai.com'
+affiliate_url: 'https://www.usetextai.com'
 ---
 
 # TextAI

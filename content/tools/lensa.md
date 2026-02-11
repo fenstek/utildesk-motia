@@ -1,10 +1,12 @@
 ---
-slug: "lensa"
-title: "Lensa"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://lensa.app/"
+slug: lensa
+title: Lensa
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://lensa.app/'
+affiliate_url: 'https://lensa.app/'
 ---
 
 # Lensa

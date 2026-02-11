@@ -1,11 +1,13 @@
 ---
-slug: "otter-ai"
-title: "Otter.ai"
-category: "Audio"
-price_model: "freemium"
-tags: ["ai", "audio"]
-official_url: "https://otter.ai"
-affiliate_url: "https://otter.ai"
+slug: otter-ai
+title: Otter.ai
+category: Audio
+price_model: freemium
+tags:
+  - ai
+  - audio
+official_url: 'https://otter.ai'
+affiliate_url: 'https://otter.ai'
 ---
 
 # Otter.ai

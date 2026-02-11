@@ -1,10 +1,12 @@
 ---
-slug: "wordsmith"
-title: "Wordsmith"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://wordsmithmusic.com/"
+slug: wordsmith
+title: Wordsmith
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.wordsmith.ai/'
+affiliate_url: 'https://www.wordsmith.ai/'
 ---
 
 # Wordsmith

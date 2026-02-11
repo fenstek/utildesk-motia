@@ -1,10 +1,12 @@
 ---
-slug: "claude"
-title: "Claude"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.claude.ai"
+slug: claude
+title: Claude
+category: AI
+price_model: freemium
+tags:
+  - ai
+official_url: 'https://www.claude.ai'
+affiliate_url: 'https://www.claude.ai'
 ---
 
 # Claude
