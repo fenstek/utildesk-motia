@@ -4,7 +4,7 @@ title: "Scite"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://www.scintilla.org/SciTE.html"
+official_url: "https://scite.ai"
 affiliate_url: "https://www.scintilla.org/SciTE.html"
 ---
 # Scite

@@ -71,6 +71,7 @@ for (const f of files) {
   // Only DONE tools in sitemap
   const status = (fm.status || "").toUpperCase();
   if (status && status !== "DONE") continue;
+  if ((fm.disabled || "").toLowerCase() === "true") continue;
 
   const slug = f.replace(/\.md$/i, "");
   if (slug === "_TEMPLATE") continue;
