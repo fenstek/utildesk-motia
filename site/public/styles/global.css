@@ -215,11 +215,15 @@ a:hover {
 
 /* Home layout spacing */
 .home-hero {
-  padding: 48px 0 32px;
+  padding: 36px 0 24px;
+}
+
+.home-hero .hero-title {
+  margin-bottom: 10px;
 }
 
 .home-hero .hero-subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .home-section {
@@ -231,17 +235,17 @@ a:hover {
 }
 
 .home-tags {
-  padding: 16px 0 24px;
+  padding: 8px 0 16px;
 }
 
 .home-tags .tag-cloud {
-  padding: 12px 0;
-  gap: 8px;
+  padding: 6px 0;
+  gap: 6px;
 }
 
 @media (max-width: 640px) {
   .home-hero {
-    padding: 40px 0 24px;
+    padding: 30px 0 20px;
   }
 
   .home-section {
