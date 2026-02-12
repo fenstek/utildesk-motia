@@ -134,7 +134,7 @@ Vollautomatische Veröffentlichung neuer Tool-Seiten:
 ## Cron Jobs (root crontab)
 ```cron
 0 */6 * * * flock -n /tmp/utildesk-motia_publish.lock bash -lc 'cd /opt/utildesk-motia && bash scripts/cron_publish_push.sh' >> /var/log/utildesk-motia/publish.log 2>&1
-15 */12 * * * flock -n /tmp/utildesk-motia_sheet.lock bash -lc 'cd /opt/utildesk-motia && FETCH_TIMEOUT_MS=6000 WIKIDATA_MIN_SITELINKS=15 AUTOGEN_MAX_LOOPS=200 node scripts/sheet_ai_autogen_9_strict_v2.mjs 20' >> /var/log/utildesk-motia/sheet.log 2>&1
+15 */12 * * * flock -n /tmp/utildesk-motia_sheet.lock bash -lc 'cd /opt/utildesk-motia && FETCH_TIMEOUT_MS=6000 WIKIDATA_MIN_SITELINKS=15 AUTOGEN_MAX_LOOPS=200 USE_GPT_URL=1 node scripts/sheet_ai_autogen_9_strict_v2.mjs 20' >> /var/log/utildesk-motia/sheet.log 2>&1
 ```
 
 ### Locks / Logs
@@ -182,4 +182,3 @@ crontab -l
 tail -n 200 /var/log/utildesk-motia/publish.log
 tail -n 200 /var/log/utildesk-motia/sheet.log
 ```
-
