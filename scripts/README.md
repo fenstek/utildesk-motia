@@ -23,3 +23,7 @@ Optional GPT-based chooser for `official_url` as fallback when deterministic URL
 - `GPT_URL_MODEL` (default: `gpt-4o-mini`)
 - `GPT_URL_TIMEOUT_MS` (default: `20000`)
 - `GPT_URL_RETRIES` (default: `1`)
+
+## Controlled Test
+- Controlled test run: `AUTOGEN_LIMIT=20 USE_GPT_URL=1`.
+- Use only for targeted validation of URL chooser behavior; do not enable as-is in production cron.

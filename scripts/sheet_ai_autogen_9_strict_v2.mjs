@@ -31,6 +31,7 @@ const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
 const OFFICIAL_URL_MIN_CONF = Number(process.env.OFFICIAL_URL_MIN_CONF || 0.85);
+const AUTOGEN_LIMIT = Math.max(0, Number(process.env.AUTOGEN_LIMIT || 0));
 
 function die(msg){ console.error(`\n[ERROR] ${msg}\n`); process.exit(1); }
 
@@ -481,10 +482,11 @@ async function pickWikidata(name){
   return best;
 }
 
-async function resolveOfficialForTopic(topic, slug, wd) {
+async function resolveOfficialForTopic(topic, slug, wd, counters) {
   const token = (slugify(slug || topic).split('-')[0] || '').toLowerCase();
   const wdOfficial = String(wd?.official_url || '').trim();
   if (wdOfficial) {
+    if (counters) counters.resolved_with_wikidata += 1;
     return {
       official_url: wdOfficial,
       confidence: 0.99,
@@ -494,6 +496,7 @@ async function resolveOfficialForTopic(topic, slug, wd) {
     };
   }
 
+  if (counters) counters.ddg_called += 1;
   const ddg = await resolveOfficialUrlByDDG(`${String(topic || '').trim()} official site`, token);
   const ddgCandidates = Array.isArray(ddg?.candidates) ? ddg.candidates : [];
   const ddgOfficial = String(ddg?.official_url || '').trim();
@@ -503,6 +506,7 @@ async function resolveOfficialForTopic(topic, slug, wd) {
 
   let gpt = null;
   if (shouldTryGpt) {
+    if (counters) counters.gpt_attempted += 1;
     gpt = await chooseOfficialUrlGpt({
       topic: String(topic || '').trim(),
       token,
@@ -519,13 +523,26 @@ async function resolveOfficialForTopic(topic, slug, wd) {
   let selectedConfidence = 0;
   let selectedReason = String(ddg?.reason || 'not_selected');
   if (hasAcceptedGpt) {
+    if (counters) counters.gpt_accepted += 1;
     selectedOfficial = gptOfficial;
     selectedConfidence = gptConfidence;
     selectedReason = String(gpt?.reason || 'gpt_selected');
   } else if (ddgOfficial && ddgConfidence >= OFFICIAL_URL_MIN_CONF) {
+    if (counters) counters.resolved_with_ddg += 1;
     selectedOfficial = ddgOfficial;
     selectedConfidence = ddgConfidence;
     selectedReason = String(ddg?.reason || 'ddg_selected');
+  }
+
+  if (shouldTryGpt && !hasAcceptedGpt) {
+    const gptReason = String(gpt?.reason || '');
+    if (gptReason === 'not_in_allowlist') {
+      if (counters) counters.gpt_rejected_not_in_allowlist += 1;
+    } else if (gptReason === 'low_confidence' || (gpt?.ok && gptConfidence < OFFICIAL_URL_MIN_CONF)) {
+      if (counters) counters.gpt_rejected_low_conf += 1;
+    } else if (counters) {
+      counters.gpt_errors += 1;
+    }
   }
 
   return {
@@ -582,13 +599,25 @@ async function main(){
 
   const picked = [];
   const seenT = new Set(), seenS = new Set(), seenQ = new Set();
+  const counters = {
+    total_processed: 0,
+    ddg_called: 0,
+    gpt_attempted: 0,
+    gpt_accepted: 0,
+    gpt_rejected_low_conf: 0,
+    gpt_rejected_not_in_allowlist: 0,
+    gpt_errors: 0,
+    resolved_with_wikidata: 0,
+    resolved_with_ddg: 0,
+  };
+  const hardLimit = AUTOGEN_LIMIT > 0 ? AUTOGEN_LIMIT : Number.POSITIVE_INFINITY;
 
   let pool = [...SEED_AI];
   let loops = 0;
 
   const MAX_LOOPS = Number(process.env.AUTOGEN_MAX_LOOPS || 80);
 
-  while(picked.length < TARGET && loops < MAX_LOOPS){
+  while(picked.length < TARGET && picked.length < hardLimit && loops < MAX_LOOPS){
     loops++;
     if (loops % 10 === 0) console.error(`[autogen] loops=${loops} picked=${picked.length}/${TARGET} pool=${pool.length} cache=${WD_ENTITY_CACHE.size}`);
 
@@ -615,7 +644,7 @@ async function main(){
 
       const wd = await pickWikidata(topic);
       if(!wd) continue;
-      const urlResolution = await resolveOfficialForTopic(topic, slug, wd);
+      const urlResolution = await resolveOfficialForTopic(topic, slug, wd, counters);
       const resolvedOfficial = String(urlResolution?.official_url || '').trim();
       const hk = hostKey(resolvedOfficial);
       if(hk && existingHost.has(hk)) continue;
@@ -689,9 +718,10 @@ async function main(){
       ];
 
       picked.push(row);
+      counters.total_processed += 1;
       seenT.add(tKey); seenS.add(slug); seenQ.add(qid);
 
-      if(picked.length >= TARGET) break;
+      if(picked.length >= TARGET || picked.length >= hardLimit) break;
     }
   }
 
@@ -741,6 +771,9 @@ async function main(){
     console.log(JSON.stringify(result, null, 2));
   } else {
     console.log(JSON.stringify(result, null, 2));
+  }
+  if (AUTOGEN_LIMIT > 0 || /^(1|true|yes|on)$/i.test(String(process.env.URL_RESOLUTION_SUMMARY || ""))) {
+    console.log(JSON.stringify({ ok: true, url_resolution_summary: counters }, null, 2));
   }
 }
 
