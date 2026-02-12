@@ -106,6 +106,60 @@ const iconType = (cat: string | null, tgs: string[]) => {
   return "generic";
 };
 
+const normalizeAltName = (value: string) =>
+  String(value ?? "")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/[`*_]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+
+const normalizeAltNameFuzzy = (value: string) =>
+  normalizeAltName(value)
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\b(ai|tool|app|platform)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const parseAltItem = (item: string) => {
+  const internalLink = item.match(/^\[([^\]]+)\]\(\/tools\/([^/)\s]+)\/?\)\s*(?::\s*(.*))?$/);
+  if (internalLink) {
+    return { kind: "internal_link" as const, name: internalLink[1], slug: internalLink[2] };
+  }
+
+  const linked = item.match(/^\[([^\]]+)\]\(([^)]+)\)\s*(?::\s*(.*))?$/);
+  if (linked) {
+    return { kind: "linked" as const, name: linked[1] };
+  }
+
+  const boldColonInside = item.match(/^\*\*([^*]+?)\s*:\s*\*\*\s*(.+)$/);
+  if (boldColonInside) {
+    return { kind: "bold" as const, name: boldColonInside[1] };
+  }
+
+  const boldWithSeparator = item.match(/^\s*\*\*([^*]+)\*\*\s*(?::|–|—|-)\s*(.+)?$/i);
+  if (boldWithSeparator) {
+    return { kind: "bold" as const, name: boldWithSeparator[1] };
+  }
+
+  const bold = item.match(/^\*\*([^*]+?)\*\*\s*:\s*(.+)$/);
+  if (bold) {
+    return { kind: "bold" as const, name: bold[1] };
+  }
+
+  const plainWithSeparator = item.match(/^\s*([^:–—-][^:–—-]{1,80})\s*(?::|–|—|-)\s*(.+)?$/);
+  if (plainWithSeparator) {
+    return { kind: "plain" as const, name: plainWithSeparator[1] };
+  }
+
+  const plain = item.match(/^([^:]+?)\s*:\s*(.+)$/);
+  if (plain) {
+    return { kind: "plain" as const, name: plain[1] };
+  }
+
+  return null;
+};
+
 // ── Extract raw list items from the "Alternatives" section ─────────────────
 const altSection = content.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
 const rawAltItems: string[] = altSection
@@ -142,17 +196,32 @@ const allTools = await Promise.all(
 );
 
 const enabledTools = allTools.filter((t) => !t.disabled);
-// ── Match first 4 items: PRIMARY = slug from /tools/ link, FALLBACK = exact title ──
+const enabledBySlug = new Map(enabledTools.map((t) => [t.slug, t]));
+const enabledByNormTitle = new Map(enabledTools.map((t) => [normalizeAltName(t.title), t]));
+const enabledByNormTitleFuzzy = new Map(enabledTools.map((t) => [normalizeAltNameFuzzy(t.title), t]));
 
+// ── Match alternatives from multiple markdown formats, preserve input order ─
 const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
-    if (acc.length >= 4) return acc;
-    const linkMatch = item.match(/\[([^\]]+)\]\(\/tools\/([^/)\s]+)\/?\)/);
-    const tool = linkMatch
-      ? enabledTools.find((t) => t.slug === linkMatch[2])
-      : enabledTools.find((t) => t.title === item.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[`*_]/g, "").trim());
-    if (tool) acc.push(tool);
-    return acc;
-  }, []);
+  const parsed = parseAltItem(item);
+  if (!parsed) return acc;
+
+  let tool = null;
+  if (parsed.kind === "internal_link") {
+    tool = enabledBySlug.get(parsed.slug) ?? null;
+  } else {
+    tool = enabledByNormTitle.get(normalizeAltName(parsed.name)) ?? null;
+    if (!tool) {
+      tool = enabledByNormTitleFuzzy.get(normalizeAltNameFuzzy(parsed.name)) ?? null;
+    }
+  }
+
+  if (!tool) return acc;
+  if (tool.slug === slug) return acc;
+  if (acc.some((x) => x.slug === tool.slug)) return acc;
+
+  acc.push(tool);
+  return acc;
+}, []);
 const alternativesTop = alternatives.slice(0, 3);
 ---
 
