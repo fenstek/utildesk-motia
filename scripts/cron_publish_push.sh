@@ -72,6 +72,9 @@ fi
 MSG="content: autogen tools ($(date -u +%F\ %H:%M\ UTC))"
 git -c user.name="utildesk-cron" -c user.email="utildesk-cron@local" commit -m "$MSG"
 
+echo "[cron] finalize deferred sheet statuses (post-commit)"
+node scripts/test_run_9_full.mjs --finalize-deferred || echo "[cron] WARNING: deferred finalization failed"
+
 echo "[cron] pushing autobot..."
 retry_cmd 5 git push origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 

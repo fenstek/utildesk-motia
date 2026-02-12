@@ -12,7 +12,20 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
-import { chooseOfficialUrlGpt, isGptUrlEnabled } from './lib/official_url_chooser_gpt.mjs';
+
+let chooseOfficialUrlGpt = async () => ({ ok: false, reason: 'gpt_module_unavailable', confidence: 0 });
+let isGptUrlEnabled = () => false;
+try {
+  const gptMod = await import('./lib/official_url_chooser_gpt.mjs');
+  if (typeof gptMod?.chooseOfficialUrlGpt === 'function') {
+    chooseOfficialUrlGpt = gptMod.chooseOfficialUrlGpt;
+  }
+  if (typeof gptMod?.isGptUrlEnabled === 'function') {
+    isGptUrlEnabled = gptMod.isGptUrlEnabled;
+  }
+} catch (e) {
+  console.warn(`[WARN] optional GPT chooser unavailable: ${e?.code || e?.message || e}`);
+}
 
 // Parse CLI flags
 const args = process.argv.slice(2);
