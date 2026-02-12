@@ -16,6 +16,7 @@ Optional GPT-based chooser for `official_url` as fallback when deterministic URL
 - GPT may choose only from provided candidates (strict allowlist).
 - On GPT error/invalid output/low confidence, pipeline does not fail and keeps deterministic fallback behavior.
 - Hard aliases: `mitsuku->kuki`, `pytorch-lightning->pytorch`, `google-bard->gemini`, `openai-whisper->whisper` (skipped).
+- Hard reject slugs: `this-person-does-not-exist` (never added to NEW and skipped before IN_PROGRESS).
 - For tokens <= 4: match only if first label == token OR first label has boundary token- / -token; no includes(token). For tokens >= 5 keep previous behavior.
 
 ## Environment Variables
