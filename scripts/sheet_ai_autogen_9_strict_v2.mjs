@@ -11,6 +11,8 @@ import 'dotenv/config';
 import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
+import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
+import { chooseOfficialUrlGpt, isGptUrlEnabled } from './lib/official_url_chooser_gpt.mjs';
 
 // Parse CLI flags
 const args = process.argv.slice(2);
@@ -28,6 +30,7 @@ const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
+const OFFICIAL_URL_MIN_CONF = Number(process.env.OFFICIAL_URL_MIN_CONF || 0.85);
 
 function die(msg){ console.error(`\n[ERROR] ${msg}\n`); process.exit(1); }
 
@@ -444,9 +447,8 @@ async function pickWikidata(name){
     const desc = r.description || (ent?.descriptions?.en?.value||'');
     if (!isLikelyAITool(name, desc, p31Check.instances)) continue;
 
-    const off = officialUrl(ent);
-    if(!off) continue;
-    if(isSuspiciousOfficialUrl(off)) continue;
+    const offRaw = officialUrl(ent);
+    const off = offRaw && !isSuspiciousOfficialUrl(offRaw) ? offRaw : '';
 
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
@@ -462,7 +464,7 @@ async function pickWikidata(name){
       if (!hostContainsToken(host, token)) continue;
     }
 
-    const score = sl + (host.includes(token) ? 10 : 0);
+    const score = sl + (off ? 25 : 0) + (host && host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
       best = {
         score,
@@ -477,6 +479,68 @@ async function pickWikidata(name){
     }
   }
   return best;
+}
+
+async function resolveOfficialForTopic(topic, slug, wd) {
+  const token = (slugify(slug || topic).split('-')[0] || '').toLowerCase();
+  const wdOfficial = String(wd?.official_url || '').trim();
+  if (wdOfficial) {
+    return {
+      official_url: wdOfficial,
+      confidence: 0.99,
+      reason: 'wikidata_p856',
+      candidates: [{ url: wdOfficial, domain: hostname(wdOfficial), source: 'wikidata:P856', rank: 1, score: 10000 }],
+      decision: { method: 'wikidata', selected_rank: 1, used_gpt: false },
+    };
+  }
+
+  const ddg = await resolveOfficialUrlByDDG(`${String(topic || '').trim()} official site`, token);
+  const ddgCandidates = Array.isArray(ddg?.candidates) ? ddg.candidates : [];
+  const ddgOfficial = String(ddg?.official_url || '').trim();
+  const ddgConfidence = Number.isFinite(Number(ddg?.confidence)) ? Number(ddg.confidence) : 0;
+  const lowConfidenceFallback = !ddgOfficial || ddgConfidence < OFFICIAL_URL_MIN_CONF;
+  const shouldTryGpt = isGptUrlEnabled() && (ddgCandidates.length > 1 || lowConfidenceFallback);
+
+  let gpt = null;
+  if (shouldTryGpt) {
+    gpt = await chooseOfficialUrlGpt({
+      topic: String(topic || '').trim(),
+      token,
+      candidates: ddgCandidates,
+      defaultUrl: ddgOfficial,
+    });
+  }
+
+  const gptOfficial = String(gpt?.official_url || '').trim();
+  const gptConfidence = Number.isFinite(Number(gpt?.confidence)) ? Number(gpt.confidence) : 0;
+  const hasAcceptedGpt = Boolean(gpt?.ok && gptOfficial && gptConfidence >= OFFICIAL_URL_MIN_CONF);
+
+  let selectedOfficial = '';
+  let selectedConfidence = 0;
+  let selectedReason = String(ddg?.reason || 'not_selected');
+  if (hasAcceptedGpt) {
+    selectedOfficial = gptOfficial;
+    selectedConfidence = gptConfidence;
+    selectedReason = String(gpt?.reason || 'gpt_selected');
+  } else if (ddgOfficial && ddgConfidence >= OFFICIAL_URL_MIN_CONF) {
+    selectedOfficial = ddgOfficial;
+    selectedConfidence = ddgConfidence;
+    selectedReason = String(ddg?.reason || 'ddg_selected');
+  }
+
+  return {
+    official_url: selectedOfficial,
+    confidence: selectedConfidence,
+    reason: selectedReason,
+    candidates: ddgCandidates,
+    decision: {
+      ...(ddg?.decision && typeof ddg.decision === 'object' ? ddg.decision : {}),
+      used_gpt: Boolean(shouldTryGpt),
+      gpt_reason: gpt?.reason || '',
+      gpt_confidence: gptConfidence || 0,
+      low_confidence_fallback: Boolean(lowConfidenceFallback),
+    },
+  };
 }
 
 async function classifyAI(openai, name, official_url, desc){
@@ -551,7 +615,9 @@ async function main(){
 
       const wd = await pickWikidata(topic);
       if(!wd) continue;
-      const hk = hostKey(wd.official_url);
+      const urlResolution = await resolveOfficialForTopic(topic, slug, wd);
+      const resolvedOfficial = String(urlResolution?.official_url || '').trim();
+      const hk = hostKey(resolvedOfficial);
       if(hk && existingHost.has(hk)) continue;
 
       const qid = String(wd.wikidata_id||'').toUpperCase();
@@ -597,10 +663,10 @@ async function main(){
             const token2 = (slugify(topic).split('-')[0] || '').toLowerCase();
 
       // official_url guard (final safety net)
-      const suspicious = isSuspiciousOfficialUrl(wd.official_url) || (hostname(wd.official_url) && token2 && !hostContainsToken(hostname(wd.official_url), token2));
-      const safeOfficial = suspicious ? '' : wd.official_url;
+      const suspicious = !resolvedOfficial || isSuspiciousOfficialUrl(resolvedOfficial) || (hostname(resolvedOfficial) && token2 && !hostContainsToken(hostname(resolvedOfficial), token2));
+      const safeOfficial = suspicious ? '' : resolvedOfficial;
       const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
-      const safetyNote = suspicious ? 'blocked_official_url' : '';
+      const safetyNote = suspicious ? `blocked_official_url:${urlResolution?.reason || 'unresolved'}` : '';
 
       // Build strict A..P row (16 cells)
       const row = [
@@ -611,7 +677,7 @@ async function main(){
         'freemium',            // E price_model
         '',                    // F affiliate_url
         status,                // G status
-        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote}`).trim(), // H notes
+        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes
         '',                    // I title
         '',                    // J short_hint
         safeOfficial,          // K official_url
