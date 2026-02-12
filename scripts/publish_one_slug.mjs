@@ -147,6 +147,12 @@ async function main() {
     }
 
     await updateStatus(sheets, rowNumber, "DONE", idx.status);
+    runInherit("node", [
+      "scripts/normalize_alternatives_links.mjs",
+      "--changed-slug",
+      slug,
+      "--write",
+    ]);
 
     console.log(
       JSON.stringify(
