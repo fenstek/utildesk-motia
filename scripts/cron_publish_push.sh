@@ -3,6 +3,21 @@ set -euo pipefail
 
 cd /opt/utildesk-motia
 
+retry_cmd() {
+  local max="$1"
+  shift
+  local n=0
+  while true; do
+    "$@" && return 0
+    n=$((n+1))
+    if [[ "$n" -ge "$max" ]]; then
+      return 1
+    fi
+    echo "[cron] WARN retry $n/$max: $*"
+    sleep 3
+  done
+}
+
 echo "[cron] start:
 node scripts/guard_deny_md.mjs
  $(date -Is)"
@@ -22,7 +37,7 @@ else
   # remote branch missing (often deleted after merge) -> recreate from origin/master
   echo "[cron] origin/autobot missing -> recreate autobot from origin/master"
   git checkout -B autobot origin/master
-  git push -u origin autobot
+  retry_cmd 5 git push -u origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 fi
 
 # 1) Generate (can be disabled for manual fixes)
@@ -58,7 +73,7 @@ MSG="content: autogen tools ($(date -u +%F\ %H:%M\ UTC))"
 git -c user.name="utildesk-cron" -c user.email="utildesk-cron@local" commit -m "$MSG"
 
 echo "[cron] pushing autobot..."
-git push
+retry_cmd 5 git push origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 
 # 4) PR creation / update + enable auto-merge
 # PR title is stable; body is minimal (avoid noise)
@@ -66,12 +81,12 @@ if gh pr view --head autobot --json number >/dev/null 2>&1; then
   echo "[cron] PR already exists (autobot -> master)"
 else
   echo "[cron] creating PR (autobot -> master)"
-  gh pr create --base master --head autobot --title "Autobot: publish new tools" --body "Automated content publish from Google Sheet."
+  retry_cmd 5 gh pr create --base master --head autobot --title "Autobot: publish new tools" --body "Automated content publish from Google Sheet." || { echo "[cron] WARNING: gh pr create failed"; exit 0; }
 fi
 
 # Enable auto-merge (merge commit, safe with protection rules)
 echo "[cron] enabling auto-merge..."
-gh pr merge --merge --admin --delete-branch=false autobot || true
+retry_cmd 5 gh pr merge --merge --admin --delete-branch=false autobot || { echo "[cron] WARNING: gh pr merge failed"; exit 0; }
 
 # 5) Auto-sync autobot -> master (fast-forward only, no merge commit)
 echo "[cron] auto-sync autobot -> master (ff-only)"
@@ -90,7 +105,7 @@ echo "[cron] fetch origin for fresh refs"
 git fetch origin
 
 echo "[cron] push origin autobot"
-git push origin autobot
+retry_cmd 5 git push origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 
 O="$(git rev-parse origin/master)"
 A="$(git rev-parse origin/autobot)"
@@ -100,7 +115,7 @@ echo "[cron] origin/autobot sha: $A"
 if git merge-base --is-ancestor "$O" "$A"; then
   echo "[cron] ancestry check: PASS (origin/master is ancestor of origin/autobot)"
   echo "[cron] fast-forward push: origin autobot:master"
-  git push origin autobot:master
+  retry_cmd 5 git push origin autobot:master || { echo "[cron] WARNING: ff push to master failed"; exit 0; }
 else
   echo "[cron] WARNING: ancestry check FAIL (origin/master is not ancestor of origin/autobot)"
   echo "[cron] skip pushing master to avoid non-fast-forward update"
