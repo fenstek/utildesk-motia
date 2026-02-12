@@ -303,6 +303,9 @@ const HARD_SLUG_ALIASES = new Map([
   ['google-bard', 'gemini'],
   ['openai-whisper', 'whisper'],
 ]);
+const HARD_REJECT_SLUGS = new Set([
+  'this-person-does-not-exist',
+]);
 
 function canonicalSlugAlias(slug){
   const s = String(slug || '').trim().toLowerCase();
@@ -674,6 +677,10 @@ async function main(){
 
       let slug = slugify(topic);
       if(!slug) continue;
+      if (HARD_REJECT_SLUGS.has(slug)) {
+        console.error(`[hard-reject] slug=${slug}`);
+        continue;
+      }
       const canonical = canonicalSlugAlias(slug);
       if (canonical !== slug) {
         if (existingSlug.has(canonical)) {
@@ -681,6 +688,10 @@ async function main(){
           continue;
         }
         slug = canonical;
+      }
+      if (HARD_REJECT_SLUGS.has(slug)) {
+        console.error(`[hard-reject] slug=${slug}`);
+        continue;
       }
       if(existingSlug.has(slug) || seenS.has(slug)) continue;
 
