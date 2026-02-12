@@ -276,6 +276,16 @@ const SEED_AI = [
 
 const SEED_ALLOW = new Set(SEED_AI.map(x => canonicalName(x).toLowerCase()).filter(Boolean));
 
+const HARD_SLUG_ALIASES = new Map([
+  ['mitsuku', 'kuki'],
+  ['pytorch-lightning', 'pytorch'],
+]);
+
+function canonicalSlugAlias(slug){
+  const s = String(slug || '').trim().toLowerCase();
+  return HARD_SLUG_ALIASES.get(s) || s;
+}
+
 
 
 
@@ -639,8 +649,16 @@ async function main(){
       const tKey = topic.toLowerCase();
       if(existingTopic.has(tKey) || seenT.has(tKey)) continue;
 
-      const slug = slugify(topic);
+      let slug = slugify(topic);
       if(!slug) continue;
+      const canonical = canonicalSlugAlias(slug);
+      if (canonical !== slug) {
+        if (existingSlug.has(canonical) || seenS.has(canonical)) {
+          console.error(`[alias-skip] ${slug} -> ${canonical}`);
+          continue;
+        }
+        slug = canonical;
+      }
       if(existingSlug.has(slug) || seenS.has(slug)) continue;
 
       counters.topics_seen += 1;
