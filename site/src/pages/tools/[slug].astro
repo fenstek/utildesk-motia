@@ -153,6 +153,7 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
     if (tool) acc.push(tool);
     return acc;
   }, []);
+const alternativesTop = alternatives.slice(0, 3);
 ---
 
 <BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
@@ -199,11 +200,11 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
 </article>
 
   <!-- Alternatives — rendered after article, using exact /tools card markup -->
-  {alternatives.length > 0 && (
+  {alternativesTop.length > 0 && (
     <section>
       <h2 style="margin-top: 2.5rem; margin-bottom: 1rem;">Alternativen</h2>
       <div class="alt-grid">
-        {alternatives.map((tool) => (
+        {alternativesTop.map((tool) => (
           <a
             href={`/tools/${tool.slug}/`}
             class="card tool-card"
@@ -275,7 +276,17 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
 <style>
   .alt-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  @media (min-width: 700px) {
+    .alt-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .alt-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 </style>
