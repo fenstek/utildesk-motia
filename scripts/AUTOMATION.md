@@ -55,10 +55,22 @@ FETCH_TIMEOUT_MS=6000 WIKIDATA_MIN_SITELINKS=15 AUTOGEN_MAX_LOOPS=200 node scrip
 2) `scripts/generate_tool_md.mjs /tmp/utildesk_current_tool.json`
 3) `scripts/finalize_md.mjs /tmp/utildesk_current_tool.json`
 4) `scripts/check_duplicates.mjs`
-5) `scripts/sheet_set_status.mjs <row_number> DONE`
+5) Если `content/tools/<slug>.md` уже tracked на pre-commit этапе: `scripts/sheet_set_status.mjs <row_number> DONE`
+6) Если на pre-commit этапе `md missing/untracked`: НЕ ставим `ERROR`, а откладываем финализацию (defer)
+7) После commit (в wrapper): `node scripts/test_run_9_full.mjs --finalize-deferred`
+   - если post-commit `exists + tracked` → `DONE`
+   - иначе → `ERROR` с причиной `PUBLISH_ERROR: md missing/untracked post-commit`
 
 Если на шагах 2–4 возникает ошибка и `row_number` уже известен:
 - `scripts/sheet_set_status.mjs <row_number> ERROR`
+
+### Two-phase status finalization (pre-commit defer, post-commit finalize)
+- Почему: `git ls-files` на pre-commit может вернуть `untracked` для только что созданного md, хотя в этом же cron-run файл позже попадает в commit.
+- Правило: guard `missing/untracked` не должен немедленно переводить строку в `ERROR`.
+- Маркер defer в логах: `PUBLISH_DEFERRED: pre-commit md missing/untracked`.
+- Пост-commit ошибка: `PUBLISH_ERROR: md missing/untracked post-commit`.
+- Технически отложенные проверки сохраняются во временный файл `/tmp/utildesk_deferred_publish_checks.json`.
+- Для локальной проверки без Google/сети: `DRY_STATUS_LOGIC=1 node scripts/test_run_9_full.mjs --self-test-status-logic`.
 
 ### 4) Где это “в проде”
 Cloudflare Pages должен деплоить ветку **master**. Поэтому любые изменения дирижёра считаются “зафиксированными” только после мержа в `master`.
@@ -182,4 +194,3 @@ crontab -l
 tail -n 200 /var/log/utildesk-motia/publish.log
 tail -n 200 /var/log/utildesk-motia/sheet.log
 ```
-
