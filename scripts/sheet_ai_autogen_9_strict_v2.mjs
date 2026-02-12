@@ -600,7 +600,8 @@ async function main(){
   const picked = [];
   const seenT = new Set(), seenS = new Set(), seenQ = new Set();
   const counters = {
-    total_processed: 0,
+    topics_seen: 0,
+    rows_written: 0,
     ddg_called: 0,
     gpt_attempted: 0,
     gpt_accepted: 0,
@@ -642,6 +643,7 @@ async function main(){
       if(!slug) continue;
       if(existingSlug.has(slug) || seenS.has(slug)) continue;
 
+      counters.topics_seen += 1;
       const wd = await pickWikidata(topic);
       if(!wd) continue;
       const urlResolution = await resolveOfficialForTopic(topic, slug, wd, counters);
@@ -718,7 +720,7 @@ async function main(){
       ];
 
       picked.push(row);
-      counters.total_processed += 1;
+      counters.rows_written += 1;
       seenT.add(tKey); seenS.add(slug); seenQ.add(qid);
 
       if(picked.length >= TARGET || picked.length >= hardLimit) break;
