@@ -12,7 +12,20 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
-import { chooseOfficialUrlGpt, isGptUrlEnabled } from './lib/official_url_chooser_gpt.mjs';
+
+let chooseOfficialUrlGpt = async () => ({ ok: false, reason: 'gpt_module_unavailable', confidence: 0 });
+let isGptUrlEnabled = () => false;
+try {
+  const gptMod = await import('./lib/official_url_chooser_gpt.mjs');
+  if (typeof gptMod?.chooseOfficialUrlGpt === 'function') {
+    chooseOfficialUrlGpt = gptMod.chooseOfficialUrlGpt;
+  }
+  if (typeof gptMod?.isGptUrlEnabled === 'function') {
+    isGptUrlEnabled = gptMod.isGptUrlEnabled;
+  }
+} catch (e) {
+  console.warn(`[WARN] optional GPT chooser unavailable: ${e?.code || e?.message || e}`);
+}
 
 // Parse CLI flags
 const args = process.argv.slice(2);
@@ -289,6 +302,9 @@ const HARD_SLUG_ALIASES = new Map([
   ['pytorch-lightning', 'pytorch'],
   ['google-bard', 'gemini'],
   ['openai-whisper', 'whisper'],
+]);
+const HARD_REJECT_SLUGS = new Set([
+  'this-person-does-not-exist',
 ]);
 
 function canonicalSlugAlias(slug){
@@ -661,6 +677,10 @@ async function main(){
 
       let slug = slugify(topic);
       if(!slug) continue;
+      if (HARD_REJECT_SLUGS.has(slug)) {
+        console.error(`[hard-reject] slug=${slug}`);
+        continue;
+      }
       const canonical = canonicalSlugAlias(slug);
       if (canonical !== slug) {
         if (existingSlug.has(canonical)) {
@@ -668,6 +688,10 @@ async function main(){
           continue;
         }
         slug = canonical;
+      }
+      if (HARD_REJECT_SLUGS.has(slug)) {
+        console.error(`[hard-reject] slug=${slug}`);
+        continue;
       }
       if(existingSlug.has(slug) || seenS.has(slug)) continue;
 

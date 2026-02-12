@@ -27,6 +27,9 @@ const EXPECTED_COLUMNS = [
   "status",
   "notes",
 ];
+const HARD_REJECT_SLUGS = new Set([
+  "this-person-does-not-exist",
+]);
 
 function ensureFilled(value, name) {
   if (!value || value.includes("PASTE_")) {
@@ -116,8 +119,13 @@ async function main() {
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
     const status = String(row[index.status] || "").trim().toUpperCase();
+    const slug = String(row[index.slug] || "").trim().toLowerCase();
 
     if (status === "NEW") {
+      if (HARD_REJECT_SLUGS.has(slug)) {
+        console.error(`[hard-reject] skip NEW row ${i + 2}: slug=${slug}`);
+        continue;
+      }
       const result = {
         row_number: i + 2,
         topic: String(row[index.topic] || "").trim(),
@@ -147,4 +155,3 @@ main().catch((err) => {
   console.error("ERROR:", err.message);
   process.exit(1);
 });
-
