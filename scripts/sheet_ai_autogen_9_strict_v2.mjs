@@ -11,8 +11,6 @@ import 'dotenv/config';
 import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
-import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
-import { chooseOfficialUrlGpt, isGptUrlEnabled } from './lib/official_url_chooser_gpt.mjs';
 
 // Parse CLI flags
 const args = process.argv.slice(2);
@@ -30,8 +28,6 @@ const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const OPENAI_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
-const OFFICIAL_URL_MIN_CONF = Number(process.env.OFFICIAL_URL_MIN_CONF || 0.85);
-const AUTOGEN_LIMIT = Math.max(0, Number(process.env.AUTOGEN_LIMIT || 0));
 
 function die(msg){ console.error(`\n[ERROR] ${msg}\n`); process.exit(1); }
 
@@ -75,15 +71,7 @@ function hostContainsToken(host, token){
   const h = String(host||'').toLowerCase();
   const t = String(token||'').toLowerCase().replace(/[^a-z0-9]/g,'');
   if(!h || !t) return false;
-  const firstLabel = h.split('.')[0] || '';
-  if (t.length <= 4) {
-    return (
-      firstLabel === t ||
-      firstLabel.startsWith(`${t}-`) ||
-      firstLabel.endsWith(`-${t}`)
-    );
-  }
-  // allow both exact and partial for longer tokens (e.g., eleuther in eleuther.ai)
+  // allow both exact and partial (e.g., eleuther in eleuther.ai)
   return h.replace(/[^a-z0-9]/g,'').includes(t);
 }
 
@@ -284,18 +272,6 @@ const SEED_AI = [
 
 const SEED_ALLOW = new Set(SEED_AI.map(x => canonicalName(x).toLowerCase()).filter(Boolean));
 
-const HARD_SLUG_ALIASES = new Map([
-  ['mitsuku', 'kuki'],
-  ['pytorch-lightning', 'pytorch'],
-  ['google-bard', 'gemini'],
-  ['openai-whisper', 'whisper'],
-]);
-
-function canonicalSlugAlias(slug){
-  const s = String(slug || '').trim().toLowerCase();
-  return HARD_SLUG_ALIASES.get(s) || s;
-}
-
 
 
 
@@ -468,8 +444,9 @@ async function pickWikidata(name){
     const desc = r.description || (ent?.descriptions?.en?.value||'');
     if (!isLikelyAITool(name, desc, p31Check.instances)) continue;
 
-    const offRaw = officialUrl(ent);
-    const off = offRaw && !isSuspiciousOfficialUrl(offRaw) ? offRaw : '';
+    const off = officialUrl(ent);
+    if(!off) continue;
+    if(isSuspiciousOfficialUrl(off)) continue;
 
     const sl = sitelinks(ent);
     if(sl < MIN_SITELINKS) continue;
@@ -485,7 +462,7 @@ async function pickWikidata(name){
       if (!hostContainsToken(host, token)) continue;
     }
 
-    const score = sl + (off ? 25 : 0) + (host && host.includes(token) ? 10 : 0);
+    const score = sl + (host.includes(token) ? 10 : 0);
     if(!best || score > best.score){
       best = {
         score,
@@ -500,84 +477,6 @@ async function pickWikidata(name){
     }
   }
   return best;
-}
-
-async function resolveOfficialForTopic(topic, slug, wd, counters) {
-  const token = (slugify(slug || topic).split('-')[0] || '').toLowerCase();
-  const wdOfficial = String(wd?.official_url || '').trim();
-  if (wdOfficial) {
-    if (counters) counters.resolved_with_wikidata += 1;
-    return {
-      official_url: wdOfficial,
-      confidence: 0.99,
-      reason: 'wikidata_p856',
-      candidates: [{ url: wdOfficial, domain: hostname(wdOfficial), source: 'wikidata:P856', rank: 1, score: 10000 }],
-      decision: { method: 'wikidata', selected_rank: 1, used_gpt: false },
-    };
-  }
-
-  if (counters) counters.ddg_called += 1;
-  const ddg = await resolveOfficialUrlByDDG(`${String(topic || '').trim()} official site`, token);
-  const ddgCandidates = Array.isArray(ddg?.candidates) ? ddg.candidates : [];
-  const ddgOfficial = String(ddg?.official_url || '').trim();
-  const ddgConfidence = Number.isFinite(Number(ddg?.confidence)) ? Number(ddg.confidence) : 0;
-  const lowConfidenceFallback = !ddgOfficial || ddgConfidence < OFFICIAL_URL_MIN_CONF;
-  const shouldTryGpt = isGptUrlEnabled() && (ddgCandidates.length > 1 || lowConfidenceFallback);
-
-  let gpt = null;
-  if (shouldTryGpt) {
-    if (counters) counters.gpt_attempted += 1;
-    gpt = await chooseOfficialUrlGpt({
-      topic: String(topic || '').trim(),
-      token,
-      candidates: ddgCandidates,
-      defaultUrl: ddgOfficial,
-    });
-  }
-
-  const gptOfficial = String(gpt?.official_url || '').trim();
-  const gptConfidence = Number.isFinite(Number(gpt?.confidence)) ? Number(gpt.confidence) : 0;
-  const hasAcceptedGpt = Boolean(gpt?.ok && gptOfficial && gptConfidence >= OFFICIAL_URL_MIN_CONF);
-
-  let selectedOfficial = '';
-  let selectedConfidence = 0;
-  let selectedReason = String(ddg?.reason || 'not_selected');
-  if (hasAcceptedGpt) {
-    if (counters) counters.gpt_accepted += 1;
-    selectedOfficial = gptOfficial;
-    selectedConfidence = gptConfidence;
-    selectedReason = String(gpt?.reason || 'gpt_selected');
-  } else if (ddgOfficial && ddgConfidence >= OFFICIAL_URL_MIN_CONF) {
-    if (counters) counters.resolved_with_ddg += 1;
-    selectedOfficial = ddgOfficial;
-    selectedConfidence = ddgConfidence;
-    selectedReason = String(ddg?.reason || 'ddg_selected');
-  }
-
-  if (shouldTryGpt && !hasAcceptedGpt) {
-    const gptReason = String(gpt?.reason || '');
-    if (gptReason === 'not_in_allowlist') {
-      if (counters) counters.gpt_rejected_not_in_allowlist += 1;
-    } else if (gptReason === 'low_confidence' || (gpt?.ok && gptConfidence < OFFICIAL_URL_MIN_CONF)) {
-      if (counters) counters.gpt_rejected_low_conf += 1;
-    } else if (counters) {
-      counters.gpt_errors += 1;
-    }
-  }
-
-  return {
-    official_url: selectedOfficial,
-    confidence: selectedConfidence,
-    reason: selectedReason,
-    candidates: ddgCandidates,
-    decision: {
-      ...(ddg?.decision && typeof ddg.decision === 'object' ? ddg.decision : {}),
-      used_gpt: Boolean(shouldTryGpt),
-      gpt_reason: gpt?.reason || '',
-      gpt_confidence: gptConfidence || 0,
-      low_confidence_fallback: Boolean(lowConfidenceFallback),
-    },
-  };
 }
 
 async function classifyAI(openai, name, official_url, desc){
@@ -619,26 +518,13 @@ async function main(){
 
   const picked = [];
   const seenT = new Set(), seenS = new Set(), seenQ = new Set();
-  const counters = {
-    topics_seen: 0,
-    rows_written: 0,
-    ddg_called: 0,
-    gpt_attempted: 0,
-    gpt_accepted: 0,
-    gpt_rejected_low_conf: 0,
-    gpt_rejected_not_in_allowlist: 0,
-    gpt_errors: 0,
-    resolved_with_wikidata: 0,
-    resolved_with_ddg: 0,
-  };
-  const hardLimit = AUTOGEN_LIMIT > 0 ? AUTOGEN_LIMIT : Number.POSITIVE_INFINITY;
 
   let pool = [...SEED_AI];
   let loops = 0;
 
   const MAX_LOOPS = Number(process.env.AUTOGEN_MAX_LOOPS || 80);
 
-  while(picked.length < TARGET && picked.length < hardLimit && loops < MAX_LOOPS){
+  while(picked.length < TARGET && loops < MAX_LOOPS){
     loops++;
     if (loops % 10 === 0) console.error(`[autogen] loops=${loops} picked=${picked.length}/${TARGET} pool=${pool.length} cache=${WD_ENTITY_CACHE.size}`);
 
@@ -659,24 +545,13 @@ async function main(){
       const tKey = topic.toLowerCase();
       if(existingTopic.has(tKey) || seenT.has(tKey)) continue;
 
-      let slug = slugify(topic);
+      const slug = slugify(topic);
       if(!slug) continue;
-      const canonical = canonicalSlugAlias(slug);
-      if (canonical !== slug) {
-        if (existingSlug.has(canonical)) {
-          console.error(`[alias-skip] ${slug} -> ${canonical}`);
-          continue;
-        }
-        slug = canonical;
-      }
       if(existingSlug.has(slug) || seenS.has(slug)) continue;
 
-      counters.topics_seen += 1;
       const wd = await pickWikidata(topic);
       if(!wd) continue;
-      const urlResolution = await resolveOfficialForTopic(topic, slug, wd, counters);
-      const resolvedOfficial = String(urlResolution?.official_url || '').trim();
-      const hk = hostKey(resolvedOfficial);
+      const hk = hostKey(wd.official_url);
       if(hk && existingHost.has(hk)) continue;
 
       const qid = String(wd.wikidata_id||'').toUpperCase();
@@ -722,10 +597,10 @@ async function main(){
             const token2 = (slugify(topic).split('-')[0] || '').toLowerCase();
 
       // official_url guard (final safety net)
-      const suspicious = !resolvedOfficial || isSuspiciousOfficialUrl(resolvedOfficial) || (hostname(resolvedOfficial) && token2 && !hostContainsToken(hostname(resolvedOfficial), token2));
-      const safeOfficial = suspicious ? '' : resolvedOfficial;
+      const suspicious = isSuspiciousOfficialUrl(wd.official_url) || (hostname(wd.official_url) && token2 && !hostContainsToken(hostname(wd.official_url), token2));
+      const safeOfficial = suspicious ? '' : wd.official_url;
       const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
-      const safetyNote = suspicious ? `blocked_official_url:${urlResolution?.reason || 'unresolved'}` : '';
+      const safetyNote = suspicious ? 'blocked_official_url' : '';
 
       // Build strict A..P row (16 cells)
       const row = [
@@ -736,7 +611,7 @@ async function main(){
         'freemium',            // E price_model
         '',                    // F affiliate_url
         status,                // G status
-        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes
+        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote}`).trim(), // H notes
         '',                    // I title
         '',                    // J short_hint
         safeOfficial,          // K official_url
@@ -748,10 +623,9 @@ async function main(){
       ];
 
       picked.push(row);
-      counters.rows_written += 1;
       seenT.add(tKey); seenS.add(slug); seenQ.add(qid);
 
-      if(picked.length >= TARGET || picked.length >= hardLimit) break;
+      if(picked.length >= TARGET) break;
     }
   }
 
@@ -801,9 +675,6 @@ async function main(){
     console.log(JSON.stringify(result, null, 2));
   } else {
     console.log(JSON.stringify(result, null, 2));
-  }
-  if (AUTOGEN_LIMIT > 0 || /^(1|true|yes|on)$/i.test(String(process.env.URL_RESOLUTION_SUMMARY || ""))) {
-    console.log(JSON.stringify({ ok: true, url_resolution_summary: counters }, null, 2));
   }
 }
 
