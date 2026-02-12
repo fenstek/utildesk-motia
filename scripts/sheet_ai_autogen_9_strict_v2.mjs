@@ -305,6 +305,8 @@ const HARD_SLUG_ALIASES = new Map([
 ]);
 const HARD_REJECT_SLUGS = new Set([
   'this-person-does-not-exist',
+  // xAI is a company entity; the tool is Grok.
+  'x-ai',
 ]);
 
 function canonicalSlugAlias(slug){
