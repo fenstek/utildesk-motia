@@ -14,7 +14,7 @@ const countArg = args.find((a) => /^\d+$/.test(String(a)));
 const COUNT = Math.max(1, Math.min(50, Number(countArg || 9)));
 const FINALIZE_DEFERRED = args.includes('--finalize-deferred');
 const SELF_TEST_STATUS = args.includes('--self-test-status-logic');
-const DRY_STATUS_LOGIC = process.env.DRY_STATUS_LOGIC === '1';
+const DRY = process.env.DRY_STATUS_LOGIC === '1' || SELF_TEST_STATUS;
 const TOOL_JSON = '/tmp/utildesk_current_tool.json';
 const DEFER_FILE = '/tmp/utildesk_deferred_publish_checks.json';
 const DEFER_MARKER = 'PUBLISH_DEFERRED: pre-commit md missing/untracked';
@@ -66,7 +66,7 @@ function markError(rowNum, message, updateCounts = null){
     if(rowNum){
       console.log(`[ERROR] Marking row ${rowNum} as ERROR: ${message}`);
       // Best-effort: set ERROR status in sheet (sheet_set_status.mjs must support ERROR)
-      setRowStatus(rowNum, 'ERROR', `mark_error:${message}`, updateCounts);
+      updateStatus(rowNum, 'ERROR', `mark_error:${message}`, updateCounts);
     }
   }catch(e){
     // Never throw from error handler
@@ -74,21 +74,24 @@ function markError(rowNum, message, updateCounts = null){
   }
 }
 
-function setRowStatus(rowNum, status, context, updateCounts = null){
+function updateStatus(rowNum, status, reason = '', updateCounts = null){
   if(!rowNum) return;
   if (updateCounts) {
     const used = Number(updateCounts.get(rowNum) || 0);
     if (used >= 2) {
-      console.log(`[WARN] Skip status update for row ${rowNum}: update limit reached (context=${context})`);
+      console.log(`[WARN] Skip status update for row ${rowNum}: update limit reached (reason=${reason || 'n/a'})`);
       return;
     }
     updateCounts.set(rowNum, used + 1);
   }
-  if (DRY_STATUS_LOGIC) {
-    console.log(`[DRY_STATUS] row ${rowNum} -> ${status} (${context})`);
-    return;
+  if (DRY) {
+    console.log(`[DRY] would set status row=${rowNum} -> ${status}${reason ? ` (${reason})` : ''}`);
+    return { ok: true, dry: true };
   }
-  runInherit('node', ['scripts/sheet_set_status.mjs', String(rowNum), status]);
+  const statusArgs = ['scripts/sheet_set_status.mjs', String(rowNum), status];
+  if (reason) statusArgs.push(reason);
+  runInherit('node', statusArgs);
+  return { ok: true, dry: false };
 }
 
 function saveDeferredChecks(items){
@@ -128,12 +131,12 @@ function finalizeDeferredChecks(items, opts = {}){
       ? Boolean(opts.pathOk(item))
       : (existsSync(mdPath) && isTrackedByGit(mdPath));
     if (ok) {
-      setRowStatus(rowNumber, 'DONE', 'post_commit_finalize_done', updateCounts);
+      updateStatus(rowNumber, 'DONE', 'post_commit_finalize_done', updateCounts);
       done += 1;
     } else {
       console.error(`[GUARD] Post-commit missing/untracked: ${mdPath}`);
       console.error(`[GUARD] ${POST_COMMIT_ERROR}`);
-      setRowStatus(rowNumber, 'ERROR', 'post_commit_finalize_error', updateCounts);
+      updateStatus(rowNumber, 'ERROR', 'post_commit_finalize_error', updateCounts);
       error += 1;
     }
   }
@@ -153,13 +156,13 @@ function runFinalizeMode(){
 
 function runSelfTestStatusLogic(){
   const sample = [
-    { rowNumber: 1001, mdPath: 'content/tools/sample-a.md', slug: 'sample-a' },
-    { rowNumber: 1002, mdPath: 'content/tools/sample-b.md', slug: 'sample-b' },
+    { rowNumber: 1, mdPath: 'content/tools/sample-a.md', slug: 'sample-a' },
+    { rowNumber: 2, mdPath: 'content/tools/sample-b.md', slug: 'sample-b' },
   ];
   const scenario1 = finalizeDeferredChecks(sample, {
     pathOk: (item) => item.slug === 'sample-a',
   });
-  console.log('[SELF_TEST] scenario1 expected: row1001=DONE row1002=ERROR');
+  console.log('[SELF_TEST] scenario1 expected: row1=DONE row2=ERROR');
   console.log(JSON.stringify(scenario1, null, 2));
 }
 
@@ -170,6 +173,11 @@ if (SELF_TEST_STATUS) {
 
 if (FINALIZE_DEFERRED) {
   runFinalizeMode();
+  process.exit(0);
+}
+
+if (DRY) {
+  console.log('[DRY] Offline mode enabled. Skipping live NEW-tool processing to avoid external Google/network calls.');
   process.exit(0);
 }
 
@@ -238,7 +246,7 @@ for (let i = 0; i < COUNT; i++){
     }
 
     // 5) set status DONE by row_number (real interface)
-    setRowStatus(rowNum, 'DONE', 'precommit_tracked_done', updateCounts);
+    updateStatus(rowNum, 'DONE', 'precommit_tracked_done', updateCounts);
   } catch (e) {
     const msg = (e && (e.message || String(e))) || 'unknown error';
     console.log('[FAIL]', msg);
