@@ -73,4 +73,37 @@ fi
 echo "[cron] enabling auto-merge..."
 gh pr merge --merge --admin --delete-branch=false autobot || true
 
+# 5) Auto-sync autobot -> master (fast-forward only, no merge commit)
+echo "[cron] auto-sync autobot -> master (ff-only)"
+
+CURRENT_BRANCH="$(git branch --show-current || true)"
+echo "[cron] current branch: ${CURRENT_BRANCH:-unknown}"
+if [[ "$CURRENT_BRANCH" != "autobot" ]]; then
+  echo "[cron] switching to autobot branch"
+  git checkout autobot
+fi
+
+HEAD_SHA="$(git rev-parse HEAD)"
+echo "[cron] HEAD sha: $HEAD_SHA"
+
+echo "[cron] fetch origin for fresh refs"
+git fetch origin
+
+echo "[cron] push origin autobot"
+git push origin autobot
+
+O="$(git rev-parse origin/master)"
+A="$(git rev-parse origin/autobot)"
+echo "[cron] origin/master sha: $O"
+echo "[cron] origin/autobot sha: $A"
+
+if git merge-base --is-ancestor "$O" "$A"; then
+  echo "[cron] ancestry check: PASS (origin/master is ancestor of origin/autobot)"
+  echo "[cron] fast-forward push: origin autobot:master"
+  git push origin autobot:master
+else
+  echo "[cron] WARNING: ancestry check FAIL (origin/master is not ancestor of origin/autobot)"
+  echo "[cron] skip pushing master to avoid non-fast-forward update"
+fi
+
 echo "[cron] done: $(date -Is)"
