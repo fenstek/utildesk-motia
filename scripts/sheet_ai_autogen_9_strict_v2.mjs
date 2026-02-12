@@ -75,7 +75,15 @@ function hostContainsToken(host, token){
   const h = String(host||'').toLowerCase();
   const t = String(token||'').toLowerCase().replace(/[^a-z0-9]/g,'');
   if(!h || !t) return false;
-  // allow both exact and partial (e.g., eleuther in eleuther.ai)
+  const firstLabel = h.split('.')[0] || '';
+  if (t.length <= 4) {
+    return (
+      firstLabel === t ||
+      firstLabel.startsWith(`${t}-`) ||
+      firstLabel.endsWith(`-${t}`)
+    );
+  }
+  // allow both exact and partial for longer tokens (e.g., eleuther in eleuther.ai)
   return h.replace(/[^a-z0-9]/g,'').includes(t);
 }
 
@@ -279,6 +287,8 @@ const SEED_ALLOW = new Set(SEED_AI.map(x => canonicalName(x).toLowerCase()).filt
 const HARD_SLUG_ALIASES = new Map([
   ['mitsuku', 'kuki'],
   ['pytorch-lightning', 'pytorch'],
+  ['google-bard', 'gemini'],
+  ['openai-whisper', 'whisper'],
 ]);
 
 function canonicalSlugAlias(slug){
@@ -653,7 +663,7 @@ async function main(){
       if(!slug) continue;
       const canonical = canonicalSlugAlias(slug);
       if (canonical !== slug) {
-        if (existingSlug.has(canonical) || seenS.has(canonical)) {
+        if (existingSlug.has(canonical)) {
           console.error(`[alias-skip] ${slug} -> ${canonical}`);
           continue;
         }
