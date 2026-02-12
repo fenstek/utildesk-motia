@@ -114,6 +114,13 @@ const normalizeAltName = (value: string) =>
     .trim()
     .toLowerCase();
 
+const normalizeAltNameFuzzy = (value: string) =>
+  normalizeAltName(value)
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\b(ai|tool|app|platform)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
 const parseAltItem = (item: string) => {
   const internalLink = item.match(/^\[([^\]]+)\]\(\/tools\/([^/)\s]+)\/?\)\s*(?::\s*(.*))?$/);
   if (internalLink) {
@@ -130,9 +137,19 @@ const parseAltItem = (item: string) => {
     return { kind: "bold" as const, name: boldColonInside[1] };
   }
 
+  const boldWithSeparator = item.match(/^\s*\*\*([^*]+)\*\*\s*(?::|–|—|-)\s*(.+)?$/i);
+  if (boldWithSeparator) {
+    return { kind: "bold" as const, name: boldWithSeparator[1] };
+  }
+
   const bold = item.match(/^\*\*([^*]+?)\*\*\s*:\s*(.+)$/);
   if (bold) {
     return { kind: "bold" as const, name: bold[1] };
+  }
+
+  const plainWithSeparator = item.match(/^\s*([^:–—-][^:–—-]{1,80})\s*(?::|–|—|-)\s*(.+)?$/);
+  if (plainWithSeparator) {
+    return { kind: "plain" as const, name: plainWithSeparator[1] };
   }
 
   const plain = item.match(/^([^:]+?)\s*:\s*(.+)$/);
@@ -181,6 +198,7 @@ const allTools = await Promise.all(
 const enabledTools = allTools.filter((t) => !t.disabled);
 const enabledBySlug = new Map(enabledTools.map((t) => [t.slug, t]));
 const enabledByNormTitle = new Map(enabledTools.map((t) => [normalizeAltName(t.title), t]));
+const enabledByNormTitleFuzzy = new Map(enabledTools.map((t) => [normalizeAltNameFuzzy(t.title), t]));
 
 // ── Match alternatives from multiple markdown formats, preserve input order ─
 const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
@@ -192,6 +210,9 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
     tool = enabledBySlug.get(parsed.slug) ?? null;
   } else {
     tool = enabledByNormTitle.get(normalizeAltName(parsed.name)) ?? null;
+    if (!tool) {
+      tool = enabledByNormTitleFuzzy.get(normalizeAltNameFuzzy(parsed.name)) ?? null;
+    }
   }
 
   if (!tool) return acc;
