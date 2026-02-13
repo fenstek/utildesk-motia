@@ -33,3 +33,15 @@ Rebuilds `official_url` suggestions for sheet rows filtered by status.
 
 - Apply:
   - `bash -lc 'set -a; source /opt/utildesk-motia/.env; set +a; SHEET_NAME=Tabellenblatt1 node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --strict --apply --limit 20'`
+
+## Token Boundary Self-check
+
+Use boundary matching for brand tokens (prevents false positives like `domo` -> `domodedovo`):
+
+```bash
+node -e 'const m=(h,t)=>new RegExp(`(^|[^a-z0-9])${t}([^a-z0-9]|$)`).test(h.toLowerCase()); console.log({domo_vs_domodedovo:m(\"www.domodedovo.ru\",\"domo\"), domo_vs_domo:m(\"domo.com\",\"domo\"), pipe_vs_pipedream:m(\"pipedream.com\",\"pipe\")});'
+```
+
+Expected:
+- `domo_vs_domodedovo: false`
+- `domo_vs_domo: true`
