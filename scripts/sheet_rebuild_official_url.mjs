@@ -59,6 +59,7 @@ const FORBIDDEN_HOSTS = new Set([
   "twitter.com",
   "medium.com",
   "reddit.com",
+  "duckduckgo.com",
 ]);
 
 const BRAND_STOP_WORDS = new Set([
@@ -284,6 +285,9 @@ async function validateCandidate(candidate, tokens) {
   const notes = [];
   if (!okHttp) notes.push("http_not_ok");
   if (forbidden) notes.push("forbidden_domain");
+  if (forbidden && (hostname === "duckduckgo.com" || hostname.endsWith(".duckduckgo.com"))) {
+    notes.push("ddg_redirect_forbidden");
+  }
   if (!tokenInHost && !tokenInTitle) notes.push("token_miss");
   if (!notes.length) notes.push("ok");
 
@@ -725,7 +729,8 @@ async function main() {
 
     if (!strictMode && !suggested && candidates.length) {
       const fallback = normalizeUrl(candidates[0].url, true);
-      if (fallback) {
+      const fallbackHost = hostFromUrl(fallback);
+      if (fallback && !isForbiddenHost(fallbackHost)) {
         suggested = fallback;
         reason = "ddg";
       }
