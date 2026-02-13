@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+START_TS="$(date -Is)"
+SELF_PID="$$"
+LOCK_FILE="${LOCK_FILE:-/tmp/utildesk-motia_publish.lock}"
+
+echo "pid=${SELF_PID} started=${START_TS}" > "$LOCK_FILE"
+trap 'echo "pid=${SELF_PID} finished=$(date -Is) exit=$?" > "$LOCK_FILE"' EXIT
+
+echo "[cron] boot: ts=${START_TS} pid=${SELF_PID} lock_file=${LOCK_FILE}"
+
 cd /opt/utildesk-motia
 
 retry_cmd() {
