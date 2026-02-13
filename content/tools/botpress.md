@@ -4,7 +4,7 @@ title: "Botpress"
 category: "AI"
 price_model: "freemium"
 tags: [ai, chatbot]
-official_url: "https://botpress.ai/academy"
+official_url: "https://botpress.ai"
 ---
 
 # Botpress
