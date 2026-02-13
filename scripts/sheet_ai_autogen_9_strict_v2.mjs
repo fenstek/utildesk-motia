@@ -302,6 +302,9 @@ const HARD_SLUG_ALIASES = new Map([
   ['pytorch-lightning', 'pytorch'],
   ['google-bard', 'gemini'],
   ['openai-whisper', 'whisper'],
+  ['runway-ml', 'runway'],
+  ['runwayml', 'runway'],
+  ['runway-ai', 'runway'],
 ]);
 const HARD_REJECT_SLUGS = new Set([
   'this-person-does-not-exist',
