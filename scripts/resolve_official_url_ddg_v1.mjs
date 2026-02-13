@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import 'dotenv/config';
 import { google } from 'googleapis';
+import { pathToFileURL } from 'node:url';
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || "1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ";
 const SHEET_NAME = process.env.SHEET_NAME || "Tabellenblatt1";
@@ -221,7 +222,7 @@ function pickBestCandidate(cands, token){
 }
 
 
-async function resolveOfficialUrlByDDG(queryName, token){
+export async function resolveOfficialUrlByDDG(queryName, token){
   const base = String(queryName||'').trim();
   const rawToken = String(token||'').trim();
 
@@ -435,4 +436,16 @@ async function main(){
   console.log(JSON.stringify({ ok:true, apply:true, scanned, candidates, updated: updates.length, rows_reported: report.length }, null, 2));
 }
 
-main().catch(e=>die(e.stack||String(e)));
+const isDirectRun = (() => {
+  const entry = process.argv[1];
+  if (!entry) return false;
+  try {
+    return import.meta.url === pathToFileURL(entry).href;
+  } catch {
+    return false;
+  }
+})();
+
+if (isDirectRun) {
+  main().catch(e=>die(e.stack||String(e)));
+}
