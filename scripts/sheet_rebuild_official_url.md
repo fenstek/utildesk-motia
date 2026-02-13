@@ -10,7 +10,7 @@ Rebuilds `official_url` suggestions for sheet rows filtered by status.
 ## Usage
 
 - Dry-run NEEDS_REVIEW:
-  - `node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --limit 20 --json`
+  - `node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --limit 20 --json`
 
 - Apply NEEDS_REVIEW:
-  - `node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --apply --limit 20`
+  - `node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --apply --limit 20`

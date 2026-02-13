@@ -5,8 +5,8 @@
  * Default: dry-run (no writes).
  *
  * Usage:
- *   node scripts/sheet_rebuild_official_url.mjs [--status NAME] [--limit N] [--json]
- *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --apply [--limit N]
+ *   node scripts/sheet_rebuild_official_url.mjs [--status NAME] [--use-gpt] [--limit N] [--json]
+ *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --apply [--limit N]
  *
  * Notes:
  * - Reuses existing resolver CLI: scripts/resolve_official_url_ddg_v1.mjs
@@ -24,6 +24,7 @@ const args = process.argv.slice(2);
 const limit = Number(args[args.indexOf("--limit") + 1] || 10);
 const jsonOutput = args.includes("--json");
 const applyMode = args.includes("--apply");
+const useGpt = args.includes("--use-gpt");
 const selectedStatus = String(args[args.indexOf("--status") + 1] || "REBUILD").trim();
 const selectedStatusUpper = selectedStatus.toUpperCase();
 
@@ -57,48 +58,103 @@ async function createSheetsClient() {
   return google.sheets({ version: "v4", auth });
 }
 
-function readResolverJson() {
-  // Resolver prints JSON to stdout. We run with apply=false (read-only suggestion).
-  // If your resolver supports args, add them here; otherwise it will just scan candidates.
-  const out = execFileSync("node", ["scripts/resolve_official_url_ddg_v1.mjs"], {
-    encoding: "utf8",
-    stdio: ["ignore", "pipe", "pipe"],
-  });
-  return JSON.parse(out);
+function parseJsonFromText(text) {
+  const src = String(text || "").trim();
+  if (!src) return null;
+  try {
+    return JSON.parse(src);
+  } catch {
+    // continue
+  }
+  const start = src.search(/[\[{]/);
+  if (start < 0) return null;
+  const sliced = src.slice(start);
+  try {
+    return JSON.parse(sliced);
+  } catch {
+    return null;
+  }
 }
 
-function pickSuggestionFromResolver(resolverJson, topic) {
-  // Minimal heuristic: try to find best candidate for the given topic if present.
-  // We intentionally keep this thin; if resolver already returns per-topic mapping,
-  // adapt this function later.
-  if (!resolverJson || typeof resolverJson !== "object") return null;
+function normalizeUrl(u) {
+  try {
+    const url = new URL(String(u || "").trim());
+    if (!/^https?:$/.test(url.protocol)) return "";
+    return url.toString();
+  } catch {
+    return "";
+  }
+}
 
-  // Common shapes:
-  // - { candidates: [...] }
-  // - { results: [...] }
-  const list =
-    resolverJson.candidates ||
-    resolverJson.results ||
-    resolverJson.items ||
-    [];
+function extractCandidatesFromPayload(payload) {
+  const bucket = [];
+  const pushOne = (item) => {
+    if (typeof item === "string") {
+      const url = normalizeUrl(item);
+      if (url) bucket.push({ url, source: "resolver" });
+      return;
+    }
+    if (!item || typeof item !== "object") return;
+    const url = normalizeUrl(item.official_url || item.url || item.best_url || item.href || item.u || "");
+    if (!url) return;
+    bucket.push({
+      url,
+      source: String(item.source || "resolver"),
+      rank: Number(item.rank || 0) || 0,
+      score: Number(item.score || 0) || 0,
+      domain: String(item.domain || ""),
+    });
+  };
 
-  if (!Array.isArray(list) || list.length === 0) return null;
+  if (Array.isArray(payload)) {
+    for (const item of payload) pushOne(item);
+  } else if (payload && typeof payload === "object") {
+    pushOne(payload);
+    const lists = [payload.candidates, payload.results, payload.items, payload.sample_report];
+    for (const list of lists) {
+      if (!Array.isArray(list)) continue;
+      for (const item of list) pushOne(item);
+    }
+  }
 
-  // Try to find by topic/name, else take first "best" item
-  const norm = (s) => String(s || "").toLowerCase();
-  const t = norm(topic);
+  const out = [];
+  const seen = new Set();
+  for (const c of bucket) {
+    if (!c.url || seen.has(c.url)) continue;
+    seen.add(c.url);
+    out.push(c);
+  }
+  return out;
+}
 
-  const byName = list.find((x) => norm(x.topic || x.name || x.query).includes(t));
-  const best = byName || list[0];
-
-  const url = best.official_url || best.url || best.best_url || best.href;
-  if (!url) return null;
-
-  return { official_url: String(url), reason: "resolver_candidate" };
+function readResolverCandidates(topic) {
+  let stdout = "";
+  try {
+    stdout = execFileSync("node", ["scripts/resolve_official_url_ddg_v1.mjs", String(topic || ""), "--json"], {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+  } catch (e) {
+    const raw = e?.stdout;
+    stdout = typeof raw === "string" ? raw : Buffer.isBuffer(raw) ? raw.toString("utf8") : "";
+  }
+  const parsed = parseJsonFromText(stdout);
+  return extractCandidatesFromPayload(parsed);
 }
 
 async function main() {
   const sheets = await createSheetsClient();
+  let chooseOfficialUrlGpt = null;
+  if (useGpt) {
+    try {
+      const mod = await import("./lib/official_url_chooser_gpt.mjs");
+      if (typeof mod?.chooseOfficialUrlGpt === "function") {
+        chooseOfficialUrlGpt = mod.chooseOfficialUrlGpt;
+      }
+    } catch {
+      chooseOfficialUrlGpt = null;
+    }
+  }
 
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
@@ -135,27 +191,54 @@ async function main() {
     return;
   }
 
-  // Run resolver once (global) and then pick suggestions per topic.
-  let resolverJson = null;
-  try {
-    resolverJson = readResolverJson();
-  } catch (e) {
-    die(`Resolver failed: ${e.message}`);
-  }
-
   const out = [];
   for (const it of rebuild) {
     const topic = String(it.row[idx.topic] || "").trim();
     const cur = String(it.row[idx.official_url] || "").trim();
-    const sug = pickSuggestionFromResolver(resolverJson, topic);
+    const candidates = readResolverCandidates(topic);
+    const curUrl = normalizeUrl(cur);
+    if (curUrl && !candidates.some((c) => c.url === curUrl)) {
+      candidates.push({ url: curUrl, source: "current_official_url", rank: 999, score: -1 });
+    }
+
+    let suggestedOfficialUrl = "";
+    let reason = "no_suggestion";
+    let chooserUsed = false;
+
+    if (useGpt && candidates.length > 0) {
+      chooserUsed = true;
+      if (!chooseOfficialUrlGpt) {
+        reason = "gpt_error";
+      } else {
+        try {
+          const picked = await chooseOfficialUrlGpt({ topic, candidates });
+          if (picked?.ok && picked?.official_url) {
+            suggestedOfficialUrl = String(picked.official_url);
+            reason = "gpt_choice";
+          } else {
+            reason = String(picked?.reason || "gpt_no_suggestion");
+          }
+        } catch {
+          reason = "gpt_error";
+          suggestedOfficialUrl = "";
+        }
+      }
+    } else if (candidates.length > 0) {
+      suggestedOfficialUrl = String(candidates[0].url || "");
+      reason = suggestedOfficialUrl ? "resolver_candidate" : "no_suggestion";
+    } else {
+      reason = "no_candidates";
+    }
 
     out.push({
       row: it.rowNumber,
       topic,
       current_official_url: cur,
-      suggested_official_url: sug?.official_url || "",
-      reason: sug?.reason || "no_suggestion",
-      apply: applyMode && !!sug?.official_url,
+      suggested_official_url: suggestedOfficialUrl,
+      reason,
+      candidates_count: candidates.length,
+      chooser_used: chooserUsed,
+      apply: applyMode && !!suggestedOfficialUrl,
     });
   }
 
