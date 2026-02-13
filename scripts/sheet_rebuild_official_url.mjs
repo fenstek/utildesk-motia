@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * REBUILD pipeline: resolve official_url for rows with status=REBUILD.
+ * REBUILD pipeline: resolve official_url for rows with selected status.
  *
  * Default: dry-run (no writes).
  *
  * Usage:
- *   node scripts/sheet_rebuild_official_url.mjs [--limit N] [--json]
- *   node scripts/sheet_rebuild_official_url.mjs --apply [--limit N]
+ *   node scripts/sheet_rebuild_official_url.mjs [--status NAME] [--limit N] [--json]
+ *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --apply [--limit N]
  *
  * Notes:
  * - Reuses existing resolver CLI: scripts/resolve_official_url_ddg_v1.mjs
@@ -24,6 +24,8 @@ const args = process.argv.slice(2);
 const limit = Number(args[args.indexOf("--limit") + 1] || 10);
 const jsonOutput = args.includes("--json");
 const applyMode = args.includes("--apply");
+const selectedStatus = String(args[args.indexOf("--status") + 1] || "REBUILD").trim();
+const selectedStatusUpper = selectedStatus.toUpperCase();
 
 function die(msg) {
   console.error(`\n[ERROR] ${msg}\n`);
@@ -121,15 +123,15 @@ async function main() {
   const rebuild = [];
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
-    const status = String(row[idx.status] || "").trim().toUpperCase();
-    if (status === "REBUILD") {
+    const statusNormalized = String(row[idx.status] || "").trim().toUpperCase();
+    if (statusNormalized === selectedStatusUpper) {
       rebuild.push({ rowNumber: i + 2, row });
       if (rebuild.length >= limit) break;
     }
   }
 
   if (rebuild.length === 0) {
-    console.log(jsonOutput ? "[]" : "No REBUILD rows found");
+    console.log(jsonOutput ? "[]" : `No ${selectedStatusUpper} rows found`);
     return;
   }
 
@@ -160,7 +162,7 @@ async function main() {
   if (jsonOutput) {
     console.log(JSON.stringify(out, null, 2));
   } else {
-    console.log(`Found ${out.length} REBUILD rows (limit: ${limit}). apply=${applyMode}\n`);
+    console.log(`Found ${out.length} ${selectedStatusUpper} rows (limit: ${limit}). apply=${applyMode}\n`);
     for (const r of out) {
       console.log(`- row ${r.row}: ${r.topic}`);
       console.log(`  current:   ${r.current_official_url || "(empty)"}`);
