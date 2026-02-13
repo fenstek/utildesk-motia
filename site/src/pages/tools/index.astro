@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { readdir, readFile, stat } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
@@ -71,8 +72,11 @@ const tools = await Promise.all(
     const price_model = data.price_model ? String(data.price_model) : null;
     const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : null;
     const official_url = data.official_url ? String(data.official_url) : null;
+    const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const providerUrl = affiliate_url || official_url;
-    const iconUrl = faviconFromUrl(providerUrl);
+    const localLogo = resolveLocalLogo(slug);
+    const faviconLogo = faviconFromUrl(providerUrl);
+    const iconUrl = brandLogo || localLogo || faviconLogo;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     const description = data.description
       ? String(data.description)

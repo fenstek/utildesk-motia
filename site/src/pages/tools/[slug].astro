@@ -4,6 +4,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
@@ -32,15 +33,19 @@ const { data, content } = matter(raw);
 
 const official_url = data.official_url ? String(data.official_url) : "";
 const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
+const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
 const provider_url = affiliate_url || official_url || "";
 
-let favicon = null;
+const localLogo = resolveLocalLogo(slug);
+let faviconLogo = null;
 try {
   if (provider_url) {
     const u = new URL(provider_url);
-    favicon = `https://www.google.com/s2/favicons?domain=${u.hostname}&sz=128`;
+    faviconLogo = `https://www.google.com/s2/favicons?domain=${u.hostname}&sz=128`;
   }
 } catch {}
+
+const logoUrl = brandLogo || localLogo || faviconLogo;
 
 
 const title = String(data.title ?? slug);
@@ -177,6 +182,7 @@ const allTools = await Promise.all(
       const t = String(d.title ?? s);
       const cat = d.category ? String(d.category) : null;
       const pm = d.price_model ? String(d.price_model) : null;
+      const bLogo = d.brandLogo ? String(d.brandLogo) : null;
       const pUrl = d.affiliate_url ? String(d.affiliate_url) : d.official_url ? String(d.official_url) : null;
       const tgs = Array.isArray(d.tags) ? d.tags.map(String) : [];
       const disabled = d.disabled === true || String(d.disabled || "").toLowerCase() === "true";
@@ -185,9 +191,11 @@ const allTools = await Promise.all(
         : d.excerpt ? String(d.excerpt)
         : d.tagline ? String(d.tagline)
         : "";
+      const localAltLogo = resolveLocalLogo(s);
+      const faviconAltLogo = faviconFrom(pUrl);
       return {
         slug: s, title: t, category: cat, price_model: pm,
-        iconUrl: faviconFrom(pUrl), tags: tgs,
+        iconUrl: bLogo || localAltLogo || faviconAltLogo, tags: tgs,
         excerpt: desc || getExcerpt(c),
         fallbackIcon: iconType(cat, tgs),
         disabled,
@@ -254,13 +262,13 @@ const alternativesTop = alternatives.slice(0, 3);
   <!-- Article Content -->
   <article class="card article">
   <div class="article-body">
-    {favicon && provider_url ? (
+    {logoUrl && provider_url ? (
       <a class="tool-float-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-        <img src={favicon} alt={`${title} favicon`} loading="lazy" />
+        <img src={logoUrl} alt={`${title} favicon`} loading="lazy" />
       </a>
-    ) : favicon ? (
+    ) : logoUrl ? (
       <span class="tool-float-logo" aria-hidden="true">
-        <img src={favicon} alt="" loading="lazy" />
+        <img src={logoUrl} alt="" loading="lazy" />
       </span>
     ) : null}
 
