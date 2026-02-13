@@ -1,0 +1,2 @@
+# SEO guard: missing tool pages must not rewrite to homepage (200).
+/tools/*  /404.html  404
