@@ -4,6 +4,7 @@ slug: "domo"
 category: "AI"
 tags: [ai]
 price_model: "freemium"
+official_url: "https://www.domo.com/"
 ---
 
 # Domo
