@@ -177,9 +177,20 @@ function brandTokens(topic) {
     .filter((x) => x.length >= 3 && !BRAND_STOP_WORDS.has(x));
 }
 
+function escapeRegex(s) {
+  return String(s || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function containsTokenBoundary(haystack, token) {
+  const hs = String(haystack || "").toLowerCase();
+  const tk = String(token || "").toLowerCase();
+  if (!hs || !tk) return false;
+  const re = new RegExp(`(^|[^a-z0-9])${escapeRegex(tk)}([^a-z0-9]|$)`);
+  return re.test(hs);
+}
+
 function containsAnyToken(haystack, tokens) {
-  const s = String(haystack || "").toLowerCase();
-  return tokens.some((t) => s.includes(t));
+  return tokens.some((t) => containsTokenBoundary(haystack, t));
 }
 
 function extractTitleFromHtml(html) {
