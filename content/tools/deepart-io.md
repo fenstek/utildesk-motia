@@ -4,7 +4,7 @@ title: "DeepArt.io"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://www.deepart.io/"
+official_url: "https://www.deeparteffects.com/"
 ---
 
 # DeepArt.io
