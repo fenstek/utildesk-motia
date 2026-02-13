@@ -6,25 +6,21 @@
  *
  * Usage:
  *   node scripts/sheet_rebuild_official_url.mjs [--status NAME] [--limit N] [--json]
- *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --limit 20 --json
- *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --apply --limit 20
- *
- * Notes:
- * - Reuses resolver CLI: scripts/resolve_official_url_ddg_v1.mjs
- * - Optional GPT chooser: scripts/lib/official_url_chooser_gpt.mjs
- * - Requires env: SPREADSHEET_ID, GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY
+ *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --strict --limit 20 --json
+ *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --strict --apply --limit 20
  */
 
 import process from "node:process";
 import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { google } from "googleapis";
 import OpenAI from "openai";
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || "";
 const SHEET_NAME = process.env.SHEET_NAME || "Tabellenblatt1";
+const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
 
 const args = process.argv.slice(2);
-const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
 
 function getFlagValue(name, fallback = "") {
   const i = args.indexOf(name);
@@ -38,15 +34,19 @@ const applyMode = args.includes("--apply");
 const useGpt = args.includes("--use-gpt");
 const gptFallback = args.includes("--gpt-fallback");
 const dryValidateOnly = args.includes("--dry-validate-only");
+const traceGpt = args.includes("--trace-gpt");
+const strictMode = args.includes("--strict");
 const selectedStatus = String(getFlagValue("--status", "REBUILD")).trim();
 const selectedStatusUpper = selectedStatus.toUpperCase();
 const gptFallbackN = Math.min(8, Math.max(1, Number(getFlagValue("--gpt-fallback-n", "5")) || 5));
 const validateTimeoutMs = Math.max(1000, Number(getFlagValue("--validate-timeout-ms", "8000")) || 8000);
 const sleepMs = Math.max(0, Number(getFlagValue("--sleep-ms", "400")) || 400);
+const minScore = Number(getFlagValue("--min-score", "3")) || 3;
 const effectiveApply = applyMode && !dryValidateOnly;
 
-const HOST_BLACKLIST = new Set([
+const FORBIDDEN_HOSTS = new Set([
   "wikipedia.org",
+  "wikidata.org",
   "github.com",
   "g2.com",
   "capterra.com",
@@ -54,31 +54,21 @@ const HOST_BLACKLIST = new Set([
   "producthunt.com",
   "linkedin.com",
   "facebook.com",
+  "instagram.com",
   "x.com",
   "twitter.com",
-  "instagram.com",
+  "medium.com",
+  "reddit.com",
 ]);
 
 const BRAND_STOP_WORDS = new Set([
-  "ai",
-  "tool",
-  "tools",
-  "studio",
-  "ml",
-  "cloud",
-  "service",
-  "assistant",
-  "framework",
-  "platform",
-  "by",
-  "mit",
-  "ehemals",
-  "jetzt",
-  "the",
-  "and",
-  "for",
-  "official",
-  "site",
+  "ai", "tool", "tools", "studio", "ml", "cloud", "service", "assistant", "framework", "platform",
+  "by", "mit", "ehemals", "jetzt", "the", "and", "for", "official", "site", "app", "inc", "co"
+]);
+
+const GENERIC_IRRELEVANT_HOSTS = new Set([
+  "assistant.ai",
+  "domodedovo.ru",
 ]);
 
 function die(msg) {
@@ -97,18 +87,22 @@ function requireCreds() {
 async function createSheetsClient() {
   requireCreds();
   const client_email = process.env.GOOGLE_CLIENT_EMAIL;
-  let private_key = process.env.GOOGLE_PRIVATE_KEY;
-  private_key = private_key.replace(/\\n/g, "\n");
+  const private_key = String(process.env.GOOGLE_PRIVATE_KEY || "").replace(/\\n/g, "\n");
 
   const auth = new google.auth.JWT({
     email: client_email,
     key: private_key,
-    scopes: applyMode
+    scopes: effectiveApply
       ? ["https://www.googleapis.com/auth/spreadsheets"]
       : ["https://www.googleapis.com/auth/spreadsheets.readonly"],
   });
 
   return google.sheets({ version: "v4", auth });
+}
+
+function sleep(ms) {
+  if (!ms || ms <= 0) return Promise.resolve();
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function parseJsonFromText(text) {
@@ -128,13 +122,16 @@ function parseJsonFromText(text) {
   }
 }
 
-function sleep(ms) {
-  if (!ms || ms <= 0) return Promise.resolve();
-  return new Promise((resolve) => setTimeout(resolve, ms));
+function cleanUrlInput(raw) {
+  return String(raw || "")
+    .replace(/[\u200B-\u200D\uFEFF]/g, "")
+    .trim()
+    .replace(/[\u3002\u3001\uFF0C\uFF0E\uFE10\uFE11,;:!?]+$/g, "")
+    .trim();
 }
 
 function normalizeUrl(raw, withHttpsDefault = true) {
-  let src = String(raw || "").trim();
+  let src = cleanUrlInput(raw);
   if (!src) return "";
   if (withHttpsDefault && !/^[a-z]+:\/\//i.test(src)) {
     src = `https://${src}`;
@@ -143,6 +140,12 @@ function normalizeUrl(raw, withHttpsDefault = true) {
     const u = new URL(src);
     if (!/^https?:$/.test(u.protocol)) return "";
     u.hash = "";
+    u.username = "";
+    u.password = "";
+    if ((u.protocol === "https:" && u.port === "443") || (u.protocol === "http:" && u.port === "80")) {
+      u.port = "";
+    }
+    if (u.pathname.length > 1) u.pathname = u.pathname.replace(/\/+$/g, "");
     return u.toString();
   } catch {
     return "";
@@ -157,8 +160,8 @@ function hostFromUrl(u) {
   }
 }
 
-function isBlacklistedHost(host) {
-  for (const d of HOST_BLACKLIST) {
+function isForbiddenHost(host) {
+  for (const d of FORBIDDEN_HOSTS) {
     if (host === d || host.endsWith(`.${d}`)) return true;
   }
   return false;
@@ -179,58 +182,11 @@ function containsAnyToken(haystack, tokens) {
   return tokens.some((t) => s.includes(t));
 }
 
-function extractCandidatesFromPayload(payload) {
-  const out = [];
-  const seen = new Set();
-
-  const pushUrl = (raw, source = "resolver") => {
-    const url = normalizeUrl(raw, true);
-    if (!url || seen.has(url)) return;
-    seen.add(url);
-    out.push({ url, source });
-  };
-
-  const walk = (node) => {
-    if (!node) return;
-    if (typeof node === "string") {
-      pushUrl(node);
-      return;
-    }
-    if (Array.isArray(node)) {
-      for (const x of node) walk(x);
-      return;
-    }
-    if (typeof node === "object") {
-      pushUrl(node.official_url || node.url || node.best_url || node.href || node.u, String(node.source || "resolver"));
-      for (const key of ["candidates", "results", "items", "sample_report"]) {
-        if (node[key] !== undefined) walk(node[key]);
-      }
-    }
-  };
-
-  walk(payload);
-  return out;
-}
-
-function readResolverCandidates(topic) {
-  let stdout = "";
-  try {
-    stdout = execFileSync("node", ["scripts/resolve_official_url_ddg_v1.mjs", String(topic || ""), "--json"], {
-      encoding: "utf8",
-      stdio: ["ignore", "pipe", "pipe"],
-    });
-  } catch (e) {
-    const raw = e?.stdout;
-    stdout = typeof raw === "string" ? raw : Buffer.isBuffer(raw) ? raw.toString("utf8") : "";
-  }
-  const parsed = parseJsonFromText(stdout);
-  return extractCandidatesFromPayload(parsed);
-}
-
 function extractTitleFromHtml(html) {
   const src = String(html || "");
   const m = src.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-  return m ? String(m[1]).replace(/\s+/g, " ").trim() : "";
+  if (!m) return "";
+  return m[1].replace(/\s+/g, " ").trim();
 }
 
 async function fetchWithTimeout(url, opts = {}, timeoutMs = 8000) {
@@ -243,175 +199,401 @@ async function fetchWithTimeout(url, opts = {}, timeoutMs = 8000) {
   }
 }
 
-async function validateCandidate(inputUrl, tokens) {
-  const normalized = normalizeUrl(inputUrl, true);
-  const base = {
+function validateObjectTemplate(inputUrl) {
+  return {
     inputUrl,
-    finalUrl: normalized || "",
-    ok: false,
+    finalUrl: "",
     status: 0,
+    ok: false,
+    hostname: "",
+    titleSnippet: "",
     score: -3,
-    note: "invalid_url",
+    notes: "invalid_url",
+    forbidden: false,
   };
-  if (!normalized) return base;
+}
 
-  let res;
+async function validateCandidate(candidate, tokens) {
+  const inputUrl = String(candidate?.url || "");
+  const normalized = normalizeUrl(inputUrl, true);
+  const base = validateObjectTemplate(inputUrl);
+
+  if (!normalized) {
+    return { ...base, notes: "invalid_url" };
+  }
+
+  let res = null;
   let usedGet = false;
   try {
     res = await fetchWithTimeout(normalized, { method: "HEAD" }, validateTimeoutMs);
     if (res.status === 405 || res.status === 501) {
       usedGet = true;
-      res = await fetchWithTimeout(normalized, { method: "GET", headers: { Range: "bytes=0-0" } }, validateTimeoutMs);
+      res = await fetchWithTimeout(normalized, { method: "GET", headers: { Range: "bytes=0-2048" } }, validateTimeoutMs);
     }
-  } catch (e) {
-    return { ...base, note: `request_failed:${e?.name || "error"}` };
+  } catch {
+    try {
+      usedGet = true;
+      res = await fetchWithTimeout(normalized, { method: "GET", headers: { Range: "bytes=0-2048" } }, validateTimeoutMs);
+    } catch (e2) {
+      return {
+        ...base,
+        finalUrl: normalized,
+        notes: `request_failed:${e2?.name || "error"}`,
+      };
+    }
   }
 
   const status = Number(res.status || 0);
   const finalUrl = normalizeUrl(res.url || normalized, true) || normalized;
-  const host = hostFromUrl(finalUrl);
+  const hostname = hostFromUrl(finalUrl);
+  const forbidden = isForbiddenHost(hostname);
   const okHttp = status >= 200 && status < 400;
-  const blacklisted = isBlacklistedHost(host);
-  let title = "";
-  let tokenInTitle = false;
 
+  let titleSnippet = "";
   if (usedGet) {
     try {
       const body = await res.text();
-      title = extractTitleFromHtml(body);
-      tokenInTitle = containsAnyToken(title, tokens);
+      titleSnippet = extractTitleFromHtml(body).slice(0, 140);
     } catch {
-      // ignore
+      titleSnippet = "";
     }
   }
 
-  const tokenInHost = containsAnyToken(host, tokens);
+  const tokenInHost = containsAnyToken(hostname, tokens);
+  const tokenInTitle = containsAnyToken(titleSnippet, tokens);
+
   let score = 0;
   if (okHttp) score += 2;
   if (tokenInHost) score += 2;
   if (tokenInTitle) score += 1;
-  if (!tokenInHost && !tokenInTitle) score -= 1;
-  if (blacklisted) score -= 3;
+  if (!tokenInHost && !tokenInTitle) score -= 2;
+  if (GENERIC_IRRELEVANT_HOSTS.has(hostname) && !tokenInHost) score -= 2;
+  if (forbidden) score = -999;
 
-  let note = "validated";
-  if (!okHttp) note = "http_not_ok";
-  if (blacklisted) note = note === "validated" ? "blacklisted_domain" : `${note},blacklisted_domain`;
-  if (!tokenInHost && !tokenInTitle) note = note === "validated" ? "no_brand_token" : `${note},no_brand_token`;
+  const notes = [];
+  if (!okHttp) notes.push("http_not_ok");
+  if (forbidden) notes.push("forbidden_domain");
+  if (!tokenInHost && !tokenInTitle) notes.push("token_miss");
+  if (!notes.length) notes.push("ok");
 
   return {
     inputUrl: normalized,
     finalUrl,
-    ok: okHttp && !blacklisted,
     status,
+    ok: okHttp,
+    hostname,
+    titleSnippet,
     score,
-    note,
+    notes: notes.join(","),
+    forbidden,
+    source: String(candidate?.source || "unknown"),
   };
 }
 
-function pickBestValidated(validated) {
-  const sorted = [...validated].sort((a, b) => b.score - a.score);
-  return sorted[0] || null;
+function dedupeCandidates(candidates) {
+  const out = [];
+  const seen = new Set();
+  for (const c of candidates) {
+    const url = normalizeUrl(c?.url, true);
+    if (!url || seen.has(url)) continue;
+    seen.add(url);
+    out.push({ url, source: String(c?.source || "resolver") });
+  }
+  return out;
+}
+
+function extractCandidatesFromPayload(payload) {
+  const bag = [];
+  const walk = (node, source = "resolver") => {
+    if (!node) return;
+    if (typeof node === "string") {
+      bag.push({ url: node, source });
+      return;
+    }
+    if (Array.isArray(node)) {
+      for (const x of node) walk(x, source);
+      return;
+    }
+    if (typeof node === "object") {
+      const raw = node.official_url || node.url || node.best_url || node.href || node.u;
+      if (raw) bag.push({ url: raw, source: String(node.source || source) });
+      for (const key of ["candidates", "results", "items", "sample_report"]) {
+        if (node[key] !== undefined) walk(node[key], source);
+      }
+    }
+  };
+  walk(payload, "resolver");
+  return dedupeCandidates(bag);
+}
+
+function readResolverCandidates(topic) {
+  let stdout = "";
+  const commands = [
+    ["scripts/resolve_official_url_ddg_v1.mjs", String(topic || ""), "--json"],
+    ["scripts/resolve_official_url_ddg_v1.mjs", "--json", String(topic || "")],
+    ["scripts/resolve_official_url_ddg_v1.mjs", String(topic || "")],
+  ];
+
+  for (const cmd of commands) {
+    try {
+      stdout = execFileSync("node", cmd, {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+      });
+      if (stdout && stdout.trim()) break;
+    } catch (e) {
+      const raw = e?.stdout;
+      const text = typeof raw === "string" ? raw : Buffer.isBuffer(raw) ? raw.toString("utf8") : "";
+      if (text && text.trim()) {
+        stdout = text;
+        break;
+      }
+    }
+  }
+
+  const parsed = parseJsonFromText(stdout);
+  return extractCandidatesFromPayload(parsed);
+}
+
+function decodeDdqRedirect(url) {
+  try {
+    const u = new URL(url);
+    const v = u.searchParams.get("uddg");
+    if (v) return decodeURIComponent(v);
+    return url;
+  } catch {
+    return url;
+  }
+}
+
+async function fetchDdgHtmlCandidates(topic) {
+  const queries = [
+    `${topic} official site`,
+    `${topic} official website`,
+    `${topic} ai tool official`,
+  ];
+  const out = [];
+
+  for (let qi = 0; qi < queries.length; qi++) {
+    const q = encodeURIComponent(queries[qi]);
+    const url = `https://html.duckduckgo.com/html/?q=${q}`;
+    let html = "";
+    try {
+      const res = await fetchWithTimeout(url, { method: "GET" }, validateTimeoutMs);
+      html = await res.text();
+    } catch {
+      continue;
+    }
+
+    const hrefRe = /<a[^>]*class="result__a"[^>]*href="([^"]+)"/gi;
+    let m;
+    while ((m = hrefRe.exec(html)) !== null) {
+      const raw = decodeDdqRedirect(m[1]);
+      out.push({ url: raw, source: "ddg_html" });
+      if (out.length >= 12) break;
+    }
+    if (out.length >= 12) break;
+    await sleep(sleepMs);
+  }
+
+  return dedupeCandidates(out);
+}
+
+function hashPrompt(prompt) {
+  return createHash("sha256").update(String(prompt || "")).digest("hex").slice(0, 16);
 }
 
 function extractOpenAiText(resp) {
   if (resp?.output_text) return String(resp.output_text);
   const chunks = [];
-  const out = Array.isArray(resp?.output) ? resp.output : [];
-  for (const item of out) {
+  const output = Array.isArray(resp?.output) ? resp.output : [];
+  for (const item of output) {
     const content = Array.isArray(item?.content) ? item.content : [];
     for (const c of content) {
-      if (typeof c?.text === "string" && c.text.trim()) {
-        chunks.push(c.text);
-      }
+      if (typeof c?.text === "string" && c.text.trim()) chunks.push(c.text);
     }
   }
   return chunks.join("\n");
 }
 
-async function chooseCandidateWithGptDirect(topic, candidates) {
-  const key = process.env.OPENAI_API_KEY || "";
-  if (!key) throw new Error("missing_openai_api_key");
-  const normalized = candidates.map((c, i) => ({
-    index: i + 1,
-    url: normalizeUrl(c.url, true),
-    source: String(c.source || "resolver"),
-  })).filter((c) => c.url);
-  if (!normalized.length) return "";
-
-  const prompt = [
-    "Select the single best official product website URL from candidates.",
-    "Return STRICT JSON only, format: {\"url\":\"https://...\"}",
-    "Do not return social media, directories, marketplaces, or docs/blog pages.",
-    `Topic: ${topic}`,
-    `Candidates: ${JSON.stringify(normalized)}`
-  ].join("\n");
-
-  const client = new OpenAI({ apiKey: key });
-  const resp = await client.responses.create({
-    model: OPENAI_MODEL,
-    input: prompt,
-    temperature: 0,
-  });
-  const text = extractOpenAiText(resp);
-  const parsed = parseJsonFromText(text);
-  const picked = normalizeUrl(parsed?.url || "", true);
-  if (!picked) return "";
-  const allow = new Set(normalized.map((c) => c.url));
-  return allow.has(picked) ? picked : "";
+function extractUrlsFromText(raw, source = "gpt_fallback") {
+  const s = String(raw || "");
+  const re = /https?:\/\/[^\s"'<>`]+/gi;
+  const out = [];
+  let m;
+  while ((m = re.exec(s)) !== null) {
+    out.push({ url: m[0], source });
+  }
+  return dedupeCandidates(out);
 }
 
-async function gptFallbackCandidates(topic, n) {
-  const key = process.env.OPENAI_API_KEY || "";
-  if (!key) {
-    throw new Error("missing_openai_api_key");
+function heuristicFallbackCandidates(topic, n) {
+  const tokens = brandTokens(topic);
+  if (!tokens.length) return [];
+  const base = tokens[0];
+  const out = [
+    { url: `https://www.${base}.com`, source: "gpt_fallback_heuristic" },
+    { url: `https://${base}.com`, source: "gpt_fallback_heuristic" },
+    { url: `https://${base}.ai`, source: "gpt_fallback_heuristic" },
+  ];
+  if (tokens[1]) {
+    out.push({ url: `https://${tokens[0]}${tokens[1]}.com`, source: "gpt_fallback_heuristic" });
   }
-  const client = new OpenAI({ apiKey: key });
+  return dedupeCandidates(out).slice(0, n);
+}
+
+async function gptChooseFromCandidates(topic, candidates) {
+  const key = String(process.env.OPENAI_API_KEY || "").trim();
+  const trace = {
+    mode: "gpt_choose",
+    model: OPENAI_MODEL,
+    prompt_hash: "",
+    raw_reply_first_400: "",
+    parsed_items: 0,
+    errors: [],
+  };
+
+  if (!key) {
+    trace.errors.push("missing_openai_api_key");
+    return { url: "", trace, error: "missing_openai_api_key" };
+  }
+
+  const list = candidates.map((c, i) => ({ index: i + 1, url: c.url, source: c.source }));
   const prompt = [
-    "Return strictly JSON only.",
-    "Task: suggest official product website URLs for this AI tool topic.",
+    "Pick exactly one best official product URL from candidates.",
+    "Return strict JSON only: {\"url\":\"https://...\"}",
+    "Reject directories, socials, wiki, marketplaces, profile pages.",
     `Topic: ${topic}`,
-    `Return an array with up to ${n} items, each: {"url":"https://...","reason":"...","confidence":0..1}.`,
-    "Avoid social profiles, marketplaces, directories, wikipedia, crunchbase, g2, capterra, producthunt.",
-    "Prefer official product domains, not blog/news/press/partner pages.",
+    `Candidates: ${JSON.stringify(list)}`,
   ].join("\n");
 
-  const resp = await client.responses.create({
-    model: OPENAI_MODEL,
-    input: prompt,
-    temperature: 0,
-  });
-  const text = extractOpenAiText(resp);
-  const parsed = parseJsonFromText(text);
-  if (!Array.isArray(parsed)) return [];
-  const out = [];
-  for (const item of parsed) {
-    if (!item || typeof item !== "object") continue;
-    const url = normalizeUrl(item.url, true);
-    if (!url) continue;
-    out.push({
-      url,
-      reason: String(item.reason || ""),
-      confidence: Number(item.confidence || 0) || 0,
-      source: "gpt_fallback",
-    });
-    if (out.length >= n) break;
+  trace.prompt_hash = hashPrompt(prompt);
+
+  try {
+    const client = new OpenAI({ apiKey: key });
+    const resp = await client.responses.create({ model: OPENAI_MODEL, input: prompt, temperature: 0 });
+    const raw = extractOpenAiText(resp);
+    trace.raw_reply_first_400 = raw.slice(0, 400);
+    const parsed = parseJsonFromText(raw);
+
+    if (Array.isArray(parsed)) {
+      trace.parsed_items = parsed.length;
+      const first = parsed.find((x) => x && typeof x === "object");
+      const u = normalizeUrl(first?.url || "", true);
+      return { url: u, trace, error: u ? "" : "parse_empty" };
+    }
+
+    if (parsed && typeof parsed === "object") {
+      trace.parsed_items = 1;
+      const u = normalizeUrl(parsed.url || "", true);
+      return { url: u, trace, error: u ? "" : "parse_empty" };
+    }
+
+    trace.errors.push("parse_failed");
+    return { url: "", trace, error: "parse_failed" };
+  } catch (e) {
+    trace.errors.push(String(e?.message || "gpt_error").slice(0, 160));
+    return { url: "", trace, error: "gpt_error" };
   }
-  return out;
+}
+
+async function gptFallbackGenerate(topic, n) {
+  const key = String(process.env.OPENAI_API_KEY || "").trim();
+  const trace = {
+    mode: "gpt_fallback",
+    model: OPENAI_MODEL,
+    prompt_hash: "",
+    raw_reply_first_400: "",
+    parsed_items: 0,
+    errors: [],
+  };
+
+  if (!key) {
+    trace.errors.push("missing_openai_api_key");
+    return { items: [], trace, error: "missing_openai_api_key" };
+  }
+
+  const prompt = [
+    "Return strictly JSON array only.",
+    `Topic: ${topic}`,
+    `Return up to ${n} candidates: [{\"url\":\"https://...\",\"reason\":\"...\",\"confidence\":0.0}]`,
+    "Find official product website URLs.",
+    "Do NOT include socials, wikipedia, directories, review portals, marketplace listings, github repository pages.",
+  ].join("\n");
+
+  trace.prompt_hash = hashPrompt(prompt);
+
+  try {
+    const client = new OpenAI({ apiKey: key });
+    const resp = await client.responses.create({ model: OPENAI_MODEL, input: prompt, temperature: 0 });
+    const raw = extractOpenAiText(resp);
+    trace.raw_reply_first_400 = raw.slice(0, 400);
+    const parsed = parseJsonFromText(raw);
+    if (!Array.isArray(parsed)) {
+      trace.errors.push("parse_failed");
+      const fromText = extractUrlsFromText(raw, "gpt_fallback");
+      trace.parsed_items = fromText.length;
+      if (fromText.length) return { items: fromText.slice(0, n), trace, error: "" };
+      const heuristic = heuristicFallbackCandidates(topic, n);
+      if (heuristic.length) {
+        trace.errors.push("heuristic_used");
+        trace.parsed_items = heuristic.length;
+        return { items: heuristic, trace, error: "" };
+      }
+      return { items: [], trace, error: "parse_failed" };
+    }
+
+    trace.parsed_items = parsed.length;
+    const items = [];
+    for (const item of parsed) {
+      if (!item || typeof item !== "object") continue;
+      const url = normalizeUrl(item.url || "", true);
+      if (!url) continue;
+      items.push({
+        url,
+        source: "gpt_fallback",
+        reason: String(item.reason || ""),
+        confidence: Number(item.confidence || 0) || 0,
+      });
+      if (items.length >= n) break;
+    }
+
+    const dedup = dedupeCandidates(items);
+    if (dedup.length) return { items: dedup, trace, error: "" };
+    const heuristic = heuristicFallbackCandidates(topic, n);
+    if (heuristic.length) {
+      trace.errors.push("heuristic_used");
+      trace.parsed_items = heuristic.length;
+      return { items: heuristic, trace, error: "" };
+    }
+    return { items: [], trace, error: "parse_empty" };
+  } catch (e) {
+    trace.errors.push(String(e?.message || "gpt_error").slice(0, 160));
+    const heuristic = heuristicFallbackCandidates(topic, n);
+    if (heuristic.length) {
+      trace.errors.push("heuristic_used");
+      trace.parsed_items = heuristic.length;
+      return { items: heuristic, trace, error: "" };
+    }
+    return { items: [], trace, error: "gpt_error" };
+  }
+}
+
+function bestValidated(validated) {
+  const eligible = validated.filter((v) => v.ok && !v.forbidden && v.score >= minScore);
+  eligible.sort((a, b) => b.score - a.score);
+  return eligible[0] || null;
+}
+
+function reasonFromSource(source, viaGptChoose = false) {
+  if (viaGptChoose) return "gpt_choose_validated";
+  if (String(source || "").startsWith("gpt_fallback")) return "gpt_fallback_validated";
+  if (source === "current") return "current_validated";
+  return "ddg_validated";
 }
 
 async function main() {
   const sheets = await createSheetsClient();
-  let chooseOfficialUrlGpt = null;
-  if (useGpt) {
-    try {
-      const mod = await import("./lib/official_url_chooser_gpt.mjs");
-      if (typeof mod?.chooseOfficialUrlGpt === "function") {
-        chooseOfficialUrlGpt = mod.chooseOfficialUrlGpt;
-      }
-    } catch {
-      chooseOfficialUrlGpt = null;
-    }
-  }
 
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
@@ -433,107 +615,114 @@ async function main() {
     if (!(col in idx)) die(`Column "${col}" not found`);
   }
 
-  const rebuild = [];
+  const targets = [];
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
     const statusNormalized = String(row[idx.status] || "").trim().toUpperCase();
     if (statusNormalized === selectedStatusUpper) {
-      rebuild.push({ rowNumber: i + 2, row });
-      if (rebuild.length >= limit) break;
+      targets.push({ rowNumber: i + 2, row });
+      if (targets.length >= limit) break;
     }
   }
 
-  if (rebuild.length === 0) {
+  if (!targets.length) {
     console.log(jsonOutput ? "[]" : `No ${selectedStatusUpper} rows found`);
     return;
   }
 
   const out = [];
-  for (const it of rebuild) {
+  for (const it of targets) {
     const topic = String(it.row[idx.topic] || "").trim();
     const cur = String(it.row[idx.official_url] || "").trim();
     const tokens = brandTokens(topic);
+
     let candidates = readResolverCandidates(topic);
-    const currentCandidate = normalizeUrl(cur, true);
-    if (currentCandidate && !candidates.some((c) => c.url === currentCandidate)) {
-      candidates.push({ url: currentCandidate, source: "current" });
+    const ddgCandidates = await fetchDdgHtmlCandidates(topic);
+    candidates = dedupeCandidates([...candidates, ...ddgCandidates]);
+
+    const curUrl = normalizeUrl(cur, true);
+    if (curUrl) {
+      candidates = dedupeCandidates([...candidates, { url: curUrl, source: "current" }]);
     }
 
-    let suggestedOfficialUrl = "";
-    let reason = "no_suggestion";
-    let chooserUsed = false;
+    let gptTrace = null;
     let gptFallbackUsed = false;
-    const validated = [];
+    let chooserUsed = false;
 
-    if (candidates.length > 0) {
-      if (useGpt) {
-        chooserUsed = true;
-        if (chooseOfficialUrlGpt) {
-          try {
-            const picked = await chooseOfficialUrlGpt({ topic, candidates });
-            if (picked?.ok && picked?.official_url) {
-              suggestedOfficialUrl = normalizeUrl(picked.official_url, true);
-              reason = suggestedOfficialUrl ? "gpt_choose" : "no_suggestion";
-            } else {
-              reason = String(picked?.reason || "no_suggestion");
-            }
-          } catch {
-            reason = "gpt_error";
-          }
-        }
-
-        if (!suggestedOfficialUrl && (reason === "gpt_disabled" || reason === "gpt_error" || reason === "no_suggestion")) {
-          try {
-            const direct = await chooseCandidateWithGptDirect(topic, candidates);
-            if (direct) {
-              suggestedOfficialUrl = direct;
-              reason = "gpt_choose";
-            }
-          } catch {
-            // keep previous reason
-          }
-        }
-
-        if (!suggestedOfficialUrl) {
-          suggestedOfficialUrl = normalizeUrl(candidates[0]?.url, true);
-          if (suggestedOfficialUrl) {
-            reason = "ddg";
-          }
-        }
-      } else {
-        suggestedOfficialUrl = normalizeUrl(candidates[0]?.url, true);
-        reason = suggestedOfficialUrl ? "ddg" : "no_suggestion";
-      }
-    } else if (gptFallback) {
+    if (!candidates.length && gptFallback) {
       gptFallbackUsed = true;
-      let generated = [];
-      try {
-        generated = await gptFallbackCandidates(topic, gptFallbackN);
-      } catch {
-        reason = "gpt_error";
-        generated = [];
+      const fb = await gptFallbackGenerate(topic, gptFallbackN);
+      if (traceGpt) gptTrace = fb.trace;
+      if (fb.error && !fb.items.length) {
+        // keep empty candidates, reason handled below
       }
-      if (generated.length > 0) {
-        for (let i = 0; i < generated.length; i++) {
-          if (i > 0) await sleep(sleepMs);
-          const v = await validateCandidate(generated[i].url, tokens);
-          validated.push(v);
-        }
-        const best = pickBestValidated(validated);
-        if (best && best.score >= 2) {
-          suggestedOfficialUrl = best.finalUrl;
-          reason = "gpt_fallback";
-        } else {
-          reason = validated.length ? "validate_failed" : "no_suggestion";
-        }
-      } else if (reason !== "gpt_error") {
-        reason = "no_suggestion";
+      candidates = dedupeCandidates([...candidates, ...(fb.items || [])]);
+    }
+
+    let gptChosenUrl = "";
+    let gptChooseError = "";
+    if (useGpt && candidates.length) {
+      chooserUsed = true;
+      const choice = await gptChooseFromCandidates(topic, candidates);
+      gptChosenUrl = normalizeUrl(choice.url, true);
+      gptChooseError = choice.error || "";
+      if (traceGpt) gptTrace = choice.trace;
+    } else if (traceGpt && !gptTrace) {
+      gptTrace = {
+        mode: useGpt ? "gpt_choose" : "none",
+        model: OPENAI_MODEL,
+        prompt_hash: "",
+        raw_reply_first_400: "",
+        parsed_items: 0,
+        errors: [useGpt ? "no_candidates" : "use_gpt_disabled"],
+      };
+    }
+
+    const validated = [];
+    const seenValidation = new Set();
+
+    const enqueue = [];
+    if (gptChosenUrl) enqueue.push({ url: gptChosenUrl, source: "gpt_choose" });
+    enqueue.push(...candidates);
+
+    for (const c of enqueue) {
+      const k = normalizeUrl(c.url, true);
+      if (!k || seenValidation.has(k)) continue;
+      seenValidation.add(k);
+      const v = await validateCandidate(c, tokens);
+      validated.push(v);
+      await sleep(sleepMs);
+    }
+
+    const best = bestValidated(validated);
+    let suggested = "";
+    let reason = "no_suggestion";
+
+    if (best) {
+      suggested = best.finalUrl;
+      reason = reasonFromSource(best.source, best.source === "gpt_choose");
+    } else if (validated.length) {
+      reason = "validate_failed";
+    }
+
+    if (useGpt && gptChooseError && reason === "no_suggestion" && !gptFallbackUsed) {
+      reason = "gpt_error";
+    }
+    if (gptFallbackUsed && !validated.length && reason === "no_suggestion") {
+      reason = gptTrace?.errors?.length ? "gpt_error" : "no_suggestion";
+    }
+
+    if (!strictMode && !suggested && candidates.length) {
+      const fallback = normalizeUrl(candidates[0].url, true);
+      if (fallback) {
+        suggested = fallback;
+        reason = "ddg";
       }
     }
 
-    const finalSuggested = dryValidateOnly ? "" : suggestedOfficialUrl;
+    const finalSuggested = dryValidateOnly ? "" : suggested;
 
-    out.push({
+    const item = {
       row: it.rowNumber,
       topic,
       current_official_url: cur,
@@ -541,10 +730,13 @@ async function main() {
       chooser_used: chooserUsed,
       gpt_fallback_used: gptFallbackUsed,
       validated,
-      suggested_official_url: finalSuggested || "",
+      suggested_official_url: finalSuggested,
       reason,
       apply: effectiveApply && !!finalSuggested,
-    });
+    };
+
+    if (traceGpt) item.gpt_trace = gptTrace;
+    out.push(item);
 
     await sleep(sleepMs);
   }
@@ -552,19 +744,11 @@ async function main() {
   if (jsonOutput) {
     console.log(JSON.stringify(out, null, 2));
   } else {
-    console.log(`Found ${out.length} ${selectedStatusUpper} rows (limit: ${limit}). apply=${applyMode}\n`);
-    for (const r of out) {
-      console.log(`- row ${r.row}: ${r.topic}`);
-      console.log(`  current:   ${r.current_official_url || "(empty)"}`);
-      console.log(`  suggested: ${r.suggested_official_url || "(none)"}`);
-      console.log(`  reason:    ${r.reason}`);
-      console.log();
-    }
+    console.log(`Found ${out.length} ${selectedStatusUpper} rows (limit: ${limit}). apply=${effectiveApply}`);
   }
 
   if (!effectiveApply) return;
 
-  // Apply updates (official_url + set status NEW) for rows with suggestions
   const statusCol = "status";
   const urlCol = "official_url";
 
@@ -593,6 +777,6 @@ async function main() {
 }
 
 main().catch((e) => {
-  console.error("ERROR:", e.message);
+  console.error("ERROR:", e?.message || String(e));
   process.exit(1);
 });
