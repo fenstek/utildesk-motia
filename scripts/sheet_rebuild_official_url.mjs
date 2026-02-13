@@ -313,6 +313,53 @@ function pickBestValidated(validated) {
   return sorted[0] || null;
 }
 
+function extractOpenAiText(resp) {
+  if (resp?.output_text) return String(resp.output_text);
+  const chunks = [];
+  const out = Array.isArray(resp?.output) ? resp.output : [];
+  for (const item of out) {
+    const content = Array.isArray(item?.content) ? item.content : [];
+    for (const c of content) {
+      if (typeof c?.text === "string" && c.text.trim()) {
+        chunks.push(c.text);
+      }
+    }
+  }
+  return chunks.join("\n");
+}
+
+async function chooseCandidateWithGptDirect(topic, candidates) {
+  const key = process.env.OPENAI_API_KEY || "";
+  if (!key) throw new Error("missing_openai_api_key");
+  const normalized = candidates.map((c, i) => ({
+    index: i + 1,
+    url: normalizeUrl(c.url, true),
+    source: String(c.source || "resolver"),
+  })).filter((c) => c.url);
+  if (!normalized.length) return "";
+
+  const prompt = [
+    "Select the single best official product website URL from candidates.",
+    "Return STRICT JSON only, format: {\"url\":\"https://...\"}",
+    "Do not return social media, directories, marketplaces, or docs/blog pages.",
+    `Topic: ${topic}`,
+    `Candidates: ${JSON.stringify(normalized)}`
+  ].join("\n");
+
+  const client = new OpenAI({ apiKey: key });
+  const resp = await client.responses.create({
+    model: OPENAI_MODEL,
+    input: prompt,
+    temperature: 0,
+  });
+  const text = extractOpenAiText(resp);
+  const parsed = parseJsonFromText(text);
+  const picked = normalizeUrl(parsed?.url || "", true);
+  if (!picked) return "";
+  const allow = new Set(normalized.map((c) => c.url));
+  return allow.has(picked) ? picked : "";
+}
+
 async function gptFallbackCandidates(topic, n) {
   const key = process.env.OPENAI_API_KEY || "";
   if (!key) {
@@ -333,7 +380,7 @@ async function gptFallbackCandidates(topic, n) {
     input: prompt,
     temperature: 0,
   });
-  const text = String(resp?.output_text || "");
+  const text = extractOpenAiText(resp);
   const parsed = parseJsonFromText(text);
   if (!Array.isArray(parsed)) return [];
   const out = [];
@@ -421,9 +468,7 @@ async function main() {
     if (candidates.length > 0) {
       if (useGpt) {
         chooserUsed = true;
-        if (!chooseOfficialUrlGpt) {
-          reason = "gpt_error";
-        } else {
+        if (chooseOfficialUrlGpt) {
           try {
             const picked = await chooseOfficialUrlGpt({ topic, candidates });
             if (picked?.ok && picked?.official_url) {
@@ -434,6 +479,25 @@ async function main() {
             }
           } catch {
             reason = "gpt_error";
+          }
+        }
+
+        if (!suggestedOfficialUrl && (reason === "gpt_disabled" || reason === "gpt_error" || reason === "no_suggestion")) {
+          try {
+            const direct = await chooseCandidateWithGptDirect(topic, candidates);
+            if (direct) {
+              suggestedOfficialUrl = direct;
+              reason = "gpt_choose";
+            }
+          } catch {
+            // keep previous reason
+          }
+        }
+
+        if (!suggestedOfficialUrl) {
+          suggestedOfficialUrl = normalizeUrl(candidates[0]?.url, true);
+          if (suggestedOfficialUrl) {
+            reason = "ddg";
           }
         }
       } else {
