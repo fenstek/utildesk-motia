@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { existsSync } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import { resolveLocalLogo } from "../lib/resolveLogoPath";
 
 // Load tools and build tag frequency map
 const toolsDir = join(process.cwd(), "content", "tools");
@@ -97,11 +97,7 @@ const tools = await Promise.all(
           : "";
     const excerpt = description || getExcerpt(content);
     const contentImage = getImageFromContent(content);
-    const localLogoPath = existsSync(
-      join(process.cwd(), "public", "images", "logos", `${slug}.svg`)
-    )
-      ? `/images/logos/${slug}.svg`
-      : null;
+    const localLogoPath = resolveLocalLogo(slug);
     const providerUrl = affiliate_url || official_url;
     const faviconLogo = faviconFromUrl(providerUrl);
     const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath ?? faviconLogo;
