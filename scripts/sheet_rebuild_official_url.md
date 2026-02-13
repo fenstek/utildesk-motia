@@ -34,6 +34,15 @@ Rebuilds `official_url` suggestions for sheet rows filtered by status.
 - Apply:
   - `bash -lc 'set -a; source /opt/utildesk-motia/.env; set +a; SHEET_NAME=Tabellenblatt1 node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --strict --apply --limit 20'`
 
+## Forbidden Domains
+
+DuckDuckGo redirect URLs (`duckduckgo.com`) are hard-rejected:
+- Marked as `forbidden=true` with notes `forbidden_domain,ddg_redirect_forbidden`
+- Never selected as `suggested_official_url`, even in non-strict mode
+- This prevents suggesting search engine redirect URLs instead of actual product sites
+
+Other forbidden domains include: Wikipedia, GitHub, review sites (G2, Capterra, AlternativeTo, Product Hunt), and social media platforms.
+
 ## Token Boundary Self-check
 
 Use boundary matching for brand tokens (prevents false positives like `domo` -> `domodedovo`):
