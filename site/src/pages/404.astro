@@ -1,0 +1,309 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Seite nicht gefunden (404) — Utildesk"
+  description="Die angeforderte Seite konnte leider nicht gefunden werden."
+>
+  <Fragment slot="head">
+    <meta name="robots" content="noindex, nofollow" />
+  </Fragment>
+
+  <div class="error-page">
+    <div class="error-content">
+      <div class="error-visual">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="60" cy="60" r="50" stroke="currentColor" stroke-width="2" fill="none" opacity="0.2"/>
+          <path d="M40 50 Q45 45 50 50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M70 50 Q75 45 80 50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M45 75 Q60 65 75 75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <circle cx="45" cy="52" r="3" fill="currentColor"/>
+          <circle cx="75" cy="52" r="3" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <h1 class="error-title">Seite nicht gefunden</h1>
+      <p class="error-code">404</p>
+      <p class="error-message">
+        Die angeforderte Seite existiert leider nicht oder wurde verschoben.
+        Nutze die Navigation unten, um weiterzumachen.
+      </p>
+
+      <div class="error-actions">
+        <a href="/" class="btn btn-primary">Zur Startseite</a>
+        <a href="/tools/" class="btn btn-secondary">Zum Tool-Katalog</a>
+      </div>
+
+      <div class="error-search">
+        <p class="search-label">Oder durchsuche unsere Tools:</p>
+        <form action="/tools/" method="get" class="search-form">
+          <input
+            type="search"
+            name="q"
+            placeholder="Tool suchen..."
+            class="search-input"
+            aria-label="Tool suchen"
+          />
+          <button type="submit" class="search-button">Suchen</button>
+        </form>
+        <p class="search-hint">Tipp: Im Tool-Katalog kannst du nach Name, Kategorie oder Tags filtern.</p>
+      </div>
+
+      <div class="error-suggestions">
+        <h2 class="suggestions-title">Beliebte Bereiche</h2>
+        <div class="suggestions-grid">
+          <a href="/tools/" class="suggestion-card">
+            <span class="suggestion-icon">🤖</span>
+            <span class="suggestion-label">AI Tools</span>
+          </a>
+          <a href="/tools/" class="suggestion-card">
+            <span class="suggestion-icon">⚡</span>
+            <span class="suggestion-label">Automation</span>
+          </a>
+          <a href="/tools/" class="suggestion-card">
+            <span class="suggestion-icon">🎨</span>
+            <span class="suggestion-label">Design</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .error-page {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 0;
+    }
+
+    .error-content {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .error-visual {
+      margin-bottom: 32px;
+      color: var(--accent);
+      display: flex;
+      justify-content: center;
+    }
+
+    .error-visual svg {
+      width: 120px;
+      height: 120px;
+    }
+
+    .error-title {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .error-code {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      font-family: var(--font-mono);
+    }
+
+    .error-message {
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      opacity: 1;
+    }
+
+    .error-search {
+      margin-bottom: 48px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .search-label {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 10px 16px;
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) - 2px);
+      font-size: 0.9375rem;
+      font-family: var(--font-sans);
+      color: var(--text);
+      background: var(--bg);
+      transition: border-color 0.2s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background: var(--accent);
+      color: white;
+      border: 1px solid var(--accent);
+      border-radius: calc(var(--radius) - 2px);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+      font-family: var(--font-sans);
+    }
+
+    .search-button:hover {
+      opacity: 0.85;
+    }
+
+    .search-hint {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .error-suggestions {
+      margin-top: 40px;
+    }
+
+    .suggestions-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+
+    .suggestions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .suggestion-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 20px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .suggestion-card:hover {
+      border-color: var(--accent);
+      opacity: 1;
+    }
+
+    .suggestion-icon {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .suggestion-label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    @media (max-width: 640px) {
+      .error-page {
+        padding: 40px 0;
+      }
+
+      .error-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .search-form {
+        flex-direction: column;
+      }
+
+      .search-button {
+        width: 100%;
+      }
+
+      .suggestions-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</BaseLayout>
