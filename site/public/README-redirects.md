@@ -5,10 +5,20 @@ This Astro site is static (SSG). Non-existent pages must return real `404`, not 
 
 A catch-all SPA rewrite such as `/* -> / (200)` is harmful for SEO because crawlers treat missing URLs as valid pages.
 
-## Current rule
-- `/tools/*  /404.html  404`
+## Cloudflare Pages limitation
+**Cloudflare Pages `_redirects` does not accept status code 404.**
 
-This prevents unknown tool URLs (for example `/tools/x-ai/`) from being rewritten to `/`.
+The rule `/tools/*  /404.html  404` causes deploy failures with error:
+```
+Invalid redirect status code: 404
+```
+
+## Proper fix
+Disable any **SPA fallback rewrite** (e.g., `/* /index.html 200`) in the Cloudflare Pages dashboard:
+- Go to Pages project → Settings → Build & deployments → Functions
+- Ensure no catch-all rewrite is enabled
+
+This ensures missing tool URLs return proper 404 responses instead of rewriting to the homepage.
 
 ## Verify
 After deploy:
