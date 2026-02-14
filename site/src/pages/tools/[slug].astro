@@ -234,6 +234,10 @@ const alternativesTop = alternatives.slice(0, 3);
 ---
 
 <BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de/tools/${slug}/`} />
+  </Fragment>
+
   <!-- Breadcrumb -->
   <nav class="breadcrumb">
     <a href="/tools/">← Zurück zu allen Tools</a>
