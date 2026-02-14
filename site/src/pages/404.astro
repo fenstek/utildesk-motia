@@ -33,6 +33,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="error-actions">
         <a href="/" class="btn btn-primary">Zur Startseite</a>
         <a href="/tools/" class="btn btn-secondary">Zum Tool-Katalog</a>
+        <button type="button" class="btn btn-secondary" onclick="if (typeof window !== 'undefined' && window.history && window.history.length > 1) { window.history.back(); } else { window.location.href = '/'; }">Zurück</button>
+        <a id="report-link" href="mailto:support@utildesk.de?subject=404%20Fehler&body=Hallo" class="btn btn-secondary">Fehler melden</a>
       </div>
 
       <div class="error-search">
@@ -90,6 +92,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </div>
   </div>
+
+  <script>
+    // Update report link with current URL
+    if (typeof window !== "undefined") {
+      const reportLink = document.getElementById("report-link");
+      if (reportLink) {
+        const currentUrl = window.location.href;
+        const subject = encodeURIComponent("404 – Seite nicht gefunden");
+        const body = encodeURIComponent(
+          "Hallo Utildesk-Team,\n\n" +
+          "Ich habe einen kaputten Link gefunden:\n" +
+          currentUrl + "\n\n" +
+          "Vielen Dank!"
+        );
+        reportLink.href = `mailto:support@utildesk.de?subject=${subject}&body=${body}`;
+      }
+    }
+  </script>
 
   <style>
     .error-page {
