@@ -1,0 +1,134 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CATEGORIES } from "../../lib/categories";
+import { readdir, readFile } from "node:fs/promises";
+import { join } from "node:path";
+import matter from "gray-matter";
+
+// Count tools per category
+const toolsDir = join(process.cwd(), "content", "tools");
+const files = (await readdir(toolsDir)).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+
+const toolsData = await Promise.all(
+  files.map(async (file) => {
+    const raw = await readFile(join(toolsDir, file), "utf-8");
+    const { data } = matter(raw);
+    const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
+    if (disabled) return null;
+    const tags = Array.isArray(data.tags) ? data.tags.map(String).map(t => t.toLowerCase()) : [];
+    return { tags };
+  })
+);
+
+const enabledTools = toolsData.filter(Boolean);
+
+const categoriesWithCount = CATEGORIES.map((cat) => {
+  const count = enabledTools.filter((tool) =>
+    tool.tags.some((tag) => cat.matchTags.includes(tag))
+  ).length;
+  return { ...cat, count };
+});
+---
+
+<BaseLayout
+  title="Kategorien — Utildesk"
+  description="Entdecke AI-Tools nach Kategorien organisiert."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/category/" />
+  </Fragment>
+
+  <div class="container">
+    <section class="category-index">
+      <h1 class="page-title">Tool-Kategorien</h1>
+      <p class="page-intro">
+        Finde AI-Tools nach Kategorien sortiert. Jede Kategorie gruppiert Tools mit ähnlichen Funktionen.
+      </p>
+
+      <div class="category-grid">
+        {categoriesWithCount.map((cat) => (
+          <a href={`/category/${cat.slug}/`} class="category-card">
+            <h2 class="category-title">{cat.title}</h2>
+            <p class="category-description">{cat.description}</p>
+            <p class="category-count">{cat.count} {cat.count === 1 ? "Tool" : "Tools"}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .category-index {
+    padding: 60px 0;
+  }
+
+  .page-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+
+  .page-intro {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+    max-width: 640px;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .category-card {
+    display: block;
+    padding: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+  }
+
+  .category-card:hover {
+    border-color: var(--accent);
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .category-description {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .category-count {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .category-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
