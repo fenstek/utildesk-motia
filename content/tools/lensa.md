@@ -5,6 +5,7 @@ category: AI
 price_model: freemium
 tags:
   - ai
+  - design
 official_url: 'https://lensa.app/'
 affiliate_url: 'https://lensa.app/'
 ---

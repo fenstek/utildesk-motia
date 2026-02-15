@@ -5,6 +5,7 @@ category: AI
 price_model: freemium
 tags:
   - ai
+  - developer
 official_url: 'https://deepmind.google/'
 affiliate_url: 'https://deepmind.google/'
 ---

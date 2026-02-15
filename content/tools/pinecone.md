@@ -5,6 +5,7 @@ category: AI
 price_model: freemium
 tags:
   - ai
+  - developer
 official_url: 'https://www.pinecone.io/'
 affiliate_url: 'https://www.pinecone.io/'
 ---
