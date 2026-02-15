@@ -4,6 +4,9 @@ title: LLaMA
 category: AI
 price_model: freemium
 tags:
+  - chatbot
+  - llm
+  - writing
   - ai
 official_url: 'https://www.llama.com/'
 affiliate_url: 'https://www.llama.com/'

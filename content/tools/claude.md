@@ -4,6 +4,8 @@ title: Claude
 category: AI
 price_model: freemium
 tags:
+  - chatbot
+  - writing
   - ai
 official_url: 'https://www.claude.ai'
 affiliate_url: 'https://www.claude.ai'

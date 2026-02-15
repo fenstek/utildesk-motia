@@ -4,6 +4,7 @@ title: Looka
 category: AI
 price_model: freemium
 tags:
+  - design
   - ai
 official_url: 'https://looka.com/'
 affiliate_url: 'https://looka.com/'

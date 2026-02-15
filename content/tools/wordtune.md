@@ -1,10 +1,15 @@
 ---
-slug: "wordtune"
-title: "Wordtune"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.wordtune.com/"
+slug: wordtune
+title: Wordtune
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - design
+  - developer
+  - produktivitat
+  - ai
+official_url: 'https://www.wordtune.com/'
 ---
 
 # Wordtune

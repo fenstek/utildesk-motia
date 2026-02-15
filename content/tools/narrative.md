@@ -4,6 +4,8 @@ title: Narrative
 category: AI
 price_model: freemium
 tags:
+  - writing
+  - marketing
   - ai
 official_url: 'https://narrative.so'
 affiliate_url: 'https://narrative.so'

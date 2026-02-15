@@ -4,6 +4,7 @@ title: Kuki
 category: AI
 price_model: freemium
 tags:
+  - chatbot
   - ai
 official_url: 'https://www.kuki.ai/'
 affiliate_url: 'https://www.kuki.ai/'

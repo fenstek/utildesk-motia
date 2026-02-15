@@ -4,6 +4,8 @@ title: Phrasee
 category: AI
 price_model: freemium
 tags:
+  - writing
+  - marketing
   - ai
 official_url: 'http://www.phraseexpress.com/'
 affiliate_url: 'http://www.phraseexpress.com/'

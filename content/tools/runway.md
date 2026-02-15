@@ -4,6 +4,8 @@ title: Runway
 category: AI
 price_model: freemium
 tags:
+  - video
+  - automation
   - ai
 official_url: 'https://runwayml.com/'
 affiliate_url: 'https://runwayml.com/'

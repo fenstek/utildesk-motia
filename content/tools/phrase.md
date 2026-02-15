@@ -1,10 +1,12 @@
 ---
-slug: "phrase"
-title: "Phrase"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://phrase.com/"
+slug: phrase
+title: Phrase
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - ai
+official_url: 'https://phrase.com/'
 ---
 
 # Phrase

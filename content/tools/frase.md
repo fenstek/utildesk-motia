@@ -4,6 +4,8 @@ title: Frase
 category: AI
 price_model: freemium
 tags:
+  - writing
+  - marketing
   - ai
 official_url: 'https://www.frase.io/'
 affiliate_url: 'https://www.frase.io/'

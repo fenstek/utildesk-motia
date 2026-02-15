@@ -1,10 +1,13 @@
 ---
-slug: "deep-ai"
-title: "Deep AI"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://newsletter.deepai.org/"
+slug: deep-ai
+title: Deep AI
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - developer
+  - ai
+official_url: 'https://newsletter.deepai.org/'
 ---
 
 # Deep AI

@@ -4,6 +4,7 @@ title: Genei
 category: AI
 price_model: freemium
 tags:
+  - writing
   - ai
 official_url: 'https://www.genei.io'
 affiliate_url: 'https://www.genei.io'

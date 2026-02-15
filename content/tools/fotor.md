@@ -4,6 +4,7 @@ title: Fotor
 category: AI
 price_model: freemium
 tags:
+  - design
   - ai
 official_url: 'https://www.fotor.com/'
 affiliate_url: 'https://www.fotor.com/'

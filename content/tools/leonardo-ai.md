@@ -4,6 +4,7 @@ title: Leonardo AI
 category: AI
 price_model: freemium
 tags:
+  - design
   - ai
 official_url: 'https://leonardo.ai'
 affiliate_url: 'https://leonardo.ai'

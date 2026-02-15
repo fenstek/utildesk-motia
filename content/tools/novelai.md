@@ -1,10 +1,12 @@
 ---
-slug: "novelai"
-title: "NovelAI"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://novelai.net/"
+slug: novelai
+title: NovelAI
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - ai
+official_url: 'https://novelai.net/'
 ---
 
 # NovelAI

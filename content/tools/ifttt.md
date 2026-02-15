@@ -1,10 +1,12 @@
 ---
-slug: "ifttt"
-title: "IFTTT"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://ifttt.com"
+slug: ifttt
+title: IFTTT
+category: AI
+price_model: freemium
+tags:
+  - design
+  - ai
+official_url: 'https://ifttt.com'
 ---
 
 # IFTTT

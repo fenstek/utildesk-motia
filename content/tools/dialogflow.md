@@ -1,10 +1,14 @@
 ---
-slug: "dialogflow"
-title: "Dialogflow"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://cloud.google.com/dialogflow"
+slug: dialogflow
+title: Dialogflow
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - writing
+  - automation
+  - ai
+official_url: 'https://cloud.google.com/dialogflow'
 ---
 
 # Dialogflow

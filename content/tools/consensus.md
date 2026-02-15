@@ -1,10 +1,12 @@
 ---
-slug: "consensus"
-title: "Consensus"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://consensus.app/"
+slug: consensus
+title: Consensus
+category: AI
+price_model: freemium
+tags:
+  - design
+  - ai
+official_url: 'https://consensus.app/'
 ---
 
 # Consensus

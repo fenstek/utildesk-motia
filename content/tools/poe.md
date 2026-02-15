@@ -4,6 +4,7 @@ title: Poe
 category: AI
 price_model: freemium
 tags:
+  - chatbot
   - ai
 official_url: 'https://poe.com'
 affiliate_url: 'https://poe.com'
