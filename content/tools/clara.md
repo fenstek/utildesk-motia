@@ -4,6 +4,7 @@ title: Clara
 category: AI
 price_model: freemium
 tags:
+  - produktivitat
   - ai
 official_url: 'https://www.clara-ai.org/'
 affiliate_url: 'https://www.clara-ai.org/'

@@ -1,10 +1,14 @@
 ---
-slug: "murf"
-title: "Murf"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://murf.ai/"
+slug: murf
+title: Murf
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - audio
+  - developer
+  - ai
+official_url: 'https://murf.ai/'
 ---
 
 # Murf

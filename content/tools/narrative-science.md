@@ -4,6 +4,8 @@ title: Narrative Science
 category: AI
 price_model: freemium
 tags:
+  - writing
+  - developer
   - ai
 official_url: 'http://narrativescience.com'
 affiliate_url: 'http://narrativescience.com'

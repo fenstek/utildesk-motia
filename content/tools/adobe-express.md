@@ -1,10 +1,12 @@
 ---
-slug: "adobe-express"
-title: "Adobe Express"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.adobe.com/express/"
+slug: adobe-express
+title: Adobe Express
+category: AI
+price_model: freemium
+tags:
+  - design
+  - ai
+official_url: 'https://www.adobe.com/express/'
 ---
 
 # Adobe Express

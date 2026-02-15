@@ -4,6 +4,7 @@ title: Katalon
 category: AI
 price_model: freemium
 tags:
+  - developer
   - ai
 official_url: 'https://katalon.com/'
 affiliate_url: 'https://katalon.com/'

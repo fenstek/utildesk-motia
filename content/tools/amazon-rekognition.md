@@ -1,10 +1,13 @@
 ---
-title: "Amazon Rekognition"
-slug: "amazon-rekognition"
-category: "AI"
-tags: [ai]
-price_model: "freemium"
-official_url: "https://aws.amazon.com/rekognition/"
+title: Amazon Rekognition
+slug: amazon-rekognition
+category: AI
+tags:
+  - video
+  - automation
+  - ai
+price_model: freemium
+official_url: 'https://aws.amazon.com/rekognition/'
 ---
 
 # Amazon Rekognition

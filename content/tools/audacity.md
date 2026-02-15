@@ -1,10 +1,13 @@
 ---
-slug: "audacity"
-title: "Audacity"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.audacityteam.org/"
+slug: audacity
+title: Audacity
+category: AI
+price_model: freemium
+tags:
+  - audio
+  - developer
+  - ai
+official_url: 'https://www.audacityteam.org/'
 ---
 
 # Audacity

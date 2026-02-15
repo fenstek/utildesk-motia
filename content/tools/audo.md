@@ -4,6 +4,7 @@ title: Audo
 category: AI
 price_model: freemium
 tags:
+  - audio
   - ai
 official_url: 'https://www.audo.ai/'
 affiliate_url: 'https://www.audo.ai/'

@@ -4,6 +4,7 @@ title: Wordsmith
 category: AI
 price_model: freemium
 tags:
+  - writing
   - ai
 official_url: 'https://www.wordsmith.ai/'
 affiliate_url: 'https://www.wordsmith.ai/'

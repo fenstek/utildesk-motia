@@ -4,6 +4,7 @@ title: Perplexity
 category: AI
 price_model: freemium
 tags:
+  - writing
   - ai
 official_url: 'https://www.perplexity.ai'
 affiliate_url: 'https://www.perplexity.ai'

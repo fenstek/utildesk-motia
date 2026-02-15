@@ -4,6 +4,8 @@ title: Whisper
 category: AI
 price_model: freemium
 tags:
+  - chatbot
+  - writing
   - ai
 official_url: 'https://openai.com/research/whisper'
 affiliate_url: 'https://openai.com/research/whisper'

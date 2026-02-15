@@ -1,10 +1,12 @@
 ---
-slug: "google-translate"
-title: "Google Translate"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://translate.google.com"
+slug: google-translate
+title: Google Translate
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - ai
+official_url: 'https://translate.google.com'
 ---
 
 # Google Translate

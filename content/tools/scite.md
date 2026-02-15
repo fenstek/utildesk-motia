@@ -4,6 +4,7 @@ title: Scite
 category: AI
 price_model: freemium
 tags:
+  - design
   - ai
 official_url: 'https://scite.ai'
 affiliate_url: 'https://scite.ai'

@@ -1,10 +1,12 @@
 ---
-slug: "linguee"
-title: "Linguee"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.linguee.com/"
+slug: linguee
+title: Linguee
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - ai
+official_url: 'https://www.linguee.com/'
 ---
 
 # Linguee

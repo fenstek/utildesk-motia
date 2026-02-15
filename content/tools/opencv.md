@@ -1,10 +1,13 @@
 ---
-slug: "opencv"
-title: "OpenCV"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://opencv.org/"
+slug: opencv
+title: OpenCV
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - video
+  - ai
+official_url: 'https://opencv.org/'
 ---
 
 # OpenCV

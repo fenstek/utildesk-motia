@@ -1,10 +1,12 @@
 ---
-slug: "tidio"
-title: "Tidio"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.tidio.com/"
+slug: tidio
+title: Tidio
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - ai
+official_url: 'https://www.tidio.com/'
 ---
 
 # Tidio

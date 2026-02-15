@@ -1,10 +1,13 @@
 ---
-slug: "anthropic"
-title: "Anthropic"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.anthropic.com/"
+slug: anthropic
+title: Anthropic
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - writing
+  - ai
+official_url: 'https://www.anthropic.com/'
 ---
 
 # Anthropic

@@ -4,6 +4,9 @@ title: Pencil
 category: AI
 price_model: freemium
 tags:
+  - writing
+  - design
+  - marketing
   - ai
 official_url: 'https://www.pencil2d.org'
 affiliate_url: 'https://www.pencil2d.org'

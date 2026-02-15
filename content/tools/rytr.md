@@ -4,6 +4,9 @@ title: Rytr
 category: AI
 price_model: freemium
 tags:
+  - writing
+  - design
+  - marketing
   - ai
 official_url: 'https://rytr.me/'
 affiliate_url: 'https://rytr.me/'

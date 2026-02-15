@@ -4,6 +4,10 @@ title: Jasper
 category: Produktivität
 price_model: freemium
 tags:
+  - writing
+  - design
+  - produktivitat
+  - marketing
   - ai
 official_url: 'https://www.jasper.ai/'
 affiliate_url: 'https://www.jasper.ai/'
