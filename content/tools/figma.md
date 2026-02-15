@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai, design]
 official_url: "https://figma.com"
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # Figma
 

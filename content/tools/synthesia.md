@@ -10,7 +10,10 @@ tags:
   - ai
 official_url: 'https://www.synthesia.io'
 affiliate_url: 'https://www.synthesia.io'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 
 # Synthesia
 

@@ -8,7 +8,10 @@ tags:
   - video
 official_url: 'https://pika.art/'
 affiliate_url: 'https://pika.art/'
+created_at: "2026-02-08"
+popularity: 0
 ---
+
 
 # Pika
 

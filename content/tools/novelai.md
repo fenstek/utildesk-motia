@@ -7,7 +7,10 @@ tags:
   - writing
   - ai
 official_url: 'https://novelai.net/'
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # NovelAI
 

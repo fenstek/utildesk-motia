@@ -8,7 +8,10 @@ tags:
   - ai
 official_url: 'https://copilot.microsoft.com/'
 affiliate_url: 'https://copilot.microsoft.com/'
+created_at: "2026-02-02"
+popularity: 0
 ---
+
 
 # Microsoft Copilot
 

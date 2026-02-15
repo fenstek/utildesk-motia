@@ -8,7 +8,10 @@ tags:
   - ai
 official_url: 'https://www.perplexity.ai'
 affiliate_url: 'https://www.perplexity.ai'
+created_at: "2026-02-02"
+popularity: 0
 ---
+
 
 # Perplexity
 

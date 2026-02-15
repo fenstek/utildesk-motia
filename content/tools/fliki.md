@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "https://fliki.ai/"
+created_at: "2026-02-15"
+popularity: 0
 ---
+
 
 # Fliki
 

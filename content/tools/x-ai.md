@@ -6,7 +6,10 @@ price_model: "freemium"
 tags: [ai]
 official_url: "https://x.ai"
 disabled: true
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # X.AI
 

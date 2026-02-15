@@ -8,7 +8,10 @@ tags:
   - developer
 official_url: 'https://www.cursor.com'
 affiliate_url: 'https://www.cursor.com'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 # Cursor
 
 Cursor ist ein innovatives Entwickler-Tool, das künstliche Intelligenz nutzt, um die Programmierarbeit zu erleichtern und zu beschleunigen. Es unterstützt Entwickler bei der Code-Erstellung, Fehlerbehebung und Optimierung, indem es kontextbezogene Vorschläge und Automatisierungen bietet. Als Freemium-Modell bietet Cursor sowohl kostenlose Grundfunktionen als auch erweiterte Features in kostenpflichtigen Plänen an.

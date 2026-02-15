@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai,llm]
 official_url: "https://openai.com/index/hello-gpt-4o"
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # OpenAI GPT
 

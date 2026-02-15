@@ -10,7 +10,10 @@ tags:
   - ai
 official_url: 'https://www.canva.com/'
 affiliate_url: 'https://www.canva.com/'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 
 # Canva
 

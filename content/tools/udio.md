@@ -8,7 +8,10 @@ tags:
   - audio
 official_url: 'https://www.udio.com'
 affiliate_url: 'https://www.udio.com'
+created_at: "2026-02-03"
+popularity: 0
 ---
+
 
 # Udio
 

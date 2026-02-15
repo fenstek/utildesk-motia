@@ -8,7 +8,10 @@ tags:
   - writing
 official_url: 'https://www.usetextai.com'
 affiliate_url: 'https://www.usetextai.com'
+created_at: "2026-02-11"
+popularity: 0
 ---
+
 
 # TextAI
 

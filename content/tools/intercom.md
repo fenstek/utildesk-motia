@@ -8,7 +8,10 @@ tags:
   - marketing
   - ai
 official_url: 'https://www.intercom.com/'
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # Intercom
 

@@ -9,7 +9,10 @@ tags:
   - developer
   - ai
 official_url: 'https://murf.ai/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Murf
 

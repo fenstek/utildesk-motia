@@ -7,7 +7,10 @@ tags:
   - chatbot
   - ai
 official_url: 'https://www.chai-research.com/'
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # Chai
 

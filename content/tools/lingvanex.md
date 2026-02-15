@@ -7,7 +7,10 @@ tags:
   - writing
   - ai
 official_url: 'https://lingvanex.com/'
+created_at: "2026-02-15"
+popularity: 0
 ---
+
 
 # LingvaNex
 

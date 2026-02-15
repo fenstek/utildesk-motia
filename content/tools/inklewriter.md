@@ -5,7 +5,10 @@ category: "Produktivitat"
 price_model: "freemium"
 tags: [ai, produktivitat, writing]
 official_url: "https://www.inklestudios.com/inklewriter/"
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # Inklewriter
 

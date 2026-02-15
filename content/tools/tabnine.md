@@ -5,7 +5,10 @@ category: "Developer"
 price_model: "freemium"
 tags: [ai, developer]
 official_url: "https://www.tabnine.com/"
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # Tabnine
 

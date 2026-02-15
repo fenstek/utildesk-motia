@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai, chatbot]
 official_url: "https://botpress.ai"
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # Botpress
 

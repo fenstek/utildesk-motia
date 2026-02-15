@@ -9,7 +9,10 @@ tags:
   - ai
 official_url: 'https://openai.com/research/whisper'
 affiliate_url: 'https://openai.com/research/whisper'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 # Whisper
 
 Whisper ist ein fortschrittliches KI-gestütztes Tool zur automatischen Spracherkennung (ASR), das von OpenAI entwickelt wurde. Es ermöglicht die Umwandlung von gesprochener Sprache in Text und unterstützt dabei zahlreiche Sprachen und Dialekte. Whisper eignet sich sowohl für Entwickler als auch für Unternehmen und Einzelpersonen, die zuverlässige Transkriptionen benötigen. Durch seine offene Architektur und die Möglichkeit, lokal oder in der Cloud zu arbeiten, bietet Whisper flexible Einsatzmöglichkeiten – von der einfachen Spracherkennung bis hin zu komplexen Anwendungen im Bereich der Sprachverarbeitung.

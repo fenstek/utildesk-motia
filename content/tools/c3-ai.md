@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "http://www.c3.ai/"
+created_at: "2026-02-15"
+popularity: 0
 ---
+
 
 # C3.ai
 

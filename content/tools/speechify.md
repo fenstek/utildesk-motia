@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai, audio]
 official_url: "https://speechify.com/"
+created_at: "2026-02-15"
+popularity: 0
 ---
+
 
 # Speechify
 

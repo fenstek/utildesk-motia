@@ -8,7 +8,10 @@ tags:
   - developer
   - ai
 official_url: 'https://newsletter.deepai.org/'
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # Deep AI
 
