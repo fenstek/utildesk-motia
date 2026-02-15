@@ -67,9 +67,9 @@ const displayTags = (tags ?? [])
     return true;
   });
 
-// Find matching category for this tool
+// Find primary category (first matching category from CATEGORIES)
 const normalizedTags = tags.map(t => String(t).toLowerCase());
-const matchedCategory = CATEGORIES.find((cat) =>
+const primaryCategory = CATEGORIES.find((cat) =>
   normalizedTags.some((tag) => cat.matchTags.includes(tag))
 );
 
@@ -270,11 +270,11 @@ const alternativesTop = alternatives.slice(0, 3);
       </div>
     )}
 
-    <!-- Category Link -->
-    {matchedCategory && (
+    <!-- Primary Category Link -->
+    {primaryCategory && (
       <div class="tool-category-link">
         <span class="category-label">Kategorie:</span>
-        <a href={`/category/${matchedCategory.slug}/`} class="category-link-anchor">{matchedCategory.title}</a>
+        <a href={`/category/${primaryCategory.slug}/`} class="category-link-anchor">{primaryCategory.title}</a>
       </div>
     )}
   </div>
