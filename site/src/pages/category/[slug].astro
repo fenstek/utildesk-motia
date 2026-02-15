@@ -112,6 +112,21 @@ const toolsData = await Promise.all(
 
 const tools = toolsData.filter(Boolean);
 const toolCount = tools.length;
+
+// ── Schema.org JSON-LD ─────────────────────────────────────────────────────
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": category.title,
+  "url": `https://tools.utildesk.de/category/${slug}/`,
+  "numberOfItems": toolCount,
+  "itemListElement": tools.slice(0, 200).map((t, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": t.title,
+    "url": `https://tools.utildesk.de/tools/${t.slug}/`
+  }))
+};
 ---
 
 <BaseLayout
@@ -120,6 +135,7 @@ const toolCount = tools.length;
 >
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de/category/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   </Fragment>
 
   <div class="container">
