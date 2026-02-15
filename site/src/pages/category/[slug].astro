@@ -131,6 +131,18 @@ const toolCount = tools.length;
       <h1 class="page-title">{category.title}</h1>
       <p class="page-description">{category.description}</p>
 
+      {category.seo && (
+        <section class="category-seo">
+          <div class="seo-intro" set:html={category.seo.intro.replace(/\n/g, '</p><p>')}></div>
+          {category.seo.sections.map((section) => (
+            <div class="seo-section">
+              <h2 class="seo-section-title">{section.title}</h2>
+              <p class="seo-section-text">{section.text}</p>
+            </div>
+          ))}
+        </section>
+      )}
+
       {toolCount < 5 && (
         <p class="notice">Diese Kategorie wird gerade gefüllt.</p>
       )}
@@ -278,5 +290,52 @@ const toolCount = tools.length;
     .tools-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+  }
+
+  /* SEO Content Block */
+  .category-seo {
+    max-width: 720px;
+    margin: 32px 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .seo-intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+
+  .seo-intro :global(p) {
+    margin-bottom: 16px;
+  }
+
+  .seo-intro :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .seo-section {
+    margin-bottom: 24px;
+  }
+
+  .seo-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .seo-section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .seo-section-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin: 0;
   }
 </style>
