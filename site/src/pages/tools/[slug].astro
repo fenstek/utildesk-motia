@@ -61,6 +61,7 @@ const displayTags = (tags ?? [])
   .filter((t) => {
     const n = norm(t);
     if (!n) return false;
+    if (n === "ai") return false; // Hide generic ai tag from UI
     if (categoryNorm && n === categoryNorm) return false;
     if (seen.has(n)) return false;
     seen.add(n);

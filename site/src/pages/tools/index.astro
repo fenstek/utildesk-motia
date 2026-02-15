@@ -106,10 +106,15 @@ const tools = await Promise.all(
 const enabledTools = tools.filter(Boolean);
 enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
-// Build unique tag list
+// Build unique tag list (exclude generic "ai" tag from UI)
 const allTags = new Set<string>();
 enabledTools.forEach((tool) => {
-  tool.tags.forEach((tag) => allTags.add(tag));
+  tool.tags.forEach((tag) => {
+    const normalized = tag.trim().toLowerCase();
+    if (normalized && normalized !== "ai") {
+      allTags.add(tag);
+    }
+  });
 });
 const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
 ---
