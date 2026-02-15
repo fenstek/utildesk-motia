@@ -5,6 +5,10 @@ interface Props {
 }
 
 const { title = "Utildesk", description = "Tools & Guides für AI, Automatisierung und Produktivität" } = Astro.props;
+
+const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
+const UMAMI_WEBSITE_ID = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 ---
 
 <!DOCTYPE html>
@@ -19,6 +23,9 @@ const { title = "Utildesk", description = "Tools & Guides für AI, Automatisieru
     <link rel="stylesheet" href="/styles/global.css" />
     <title>{title}</title>
     <slot name="head" />
+    {shouldLoadUmami && (
+      <script defer src={UMAMI_SRC} data-website-id={UMAMI_WEBSITE_ID}></script>
+    )}
     <style>
       .brand {
         display: flex;
