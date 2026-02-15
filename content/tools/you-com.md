@@ -5,6 +5,7 @@ category: AI
 price_model: freemium
 tags:
   - ai
+  - chatbot
 official_url: 'https://you.com/'
 affiliate_url: 'https://you.com/'
 ---

@@ -3,7 +3,7 @@ slug: "tensorflow"
 title: "TensorFlow"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, developer]
 official_url: "https://tensorflow.org"
 ---
 

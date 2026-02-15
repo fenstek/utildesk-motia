@@ -3,7 +3,7 @@ slug: "mistral"
 title: "Mistral"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, llm, developer]
 official_url: "https://mistral.ai/"
 ---
 

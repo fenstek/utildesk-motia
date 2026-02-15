@@ -5,6 +5,8 @@ category: AI
 price_model: freemium
 tags:
   - ai
+  - chatbot
+  - llm
 official_url: 'https://character.ai/'
 affiliate_url: 'https://character.ai/'
 ---
