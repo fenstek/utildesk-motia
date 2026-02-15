@@ -5,7 +5,7 @@ category: Produktivität
 price_model: freemium
 tags:
   - ai
-  - produktivität
+  - produktivitat
 official_url: 'https://www.deepl.com/translator'
 affiliate_url: 'https://www.deepl.com/translator'
 ---
