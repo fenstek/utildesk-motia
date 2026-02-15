@@ -8,7 +8,10 @@ tags:
   - developer
   - ai
 official_url: 'https://www.audacityteam.org/'
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # Audacity
 

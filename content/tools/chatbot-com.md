@@ -8,7 +8,10 @@ tags:
   - chatbot
 official_url: 'https://www.chatbot.com'
 affiliate_url: 'https://www.chatbot.com'
+created_at: "2026-02-03"
+popularity: 0
 ---
+
 
 # Chatbot.com
 

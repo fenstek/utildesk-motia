@@ -5,7 +5,10 @@ category: "AI"
 tags: [ai, chatbot]
 price_model: "freemium"
 official_url: "https://customers.ai/"
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Customers.ai (ehemals MobileMonkey)
 

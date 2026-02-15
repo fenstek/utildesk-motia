@@ -7,7 +7,10 @@ tags:
   - chatbot
   - ai
 official_url: 'https://www.tidio.com/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Tidio
 

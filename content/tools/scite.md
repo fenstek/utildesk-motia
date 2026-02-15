@@ -8,7 +8,10 @@ tags:
   - ai
 official_url: 'https://scite.ai'
 affiliate_url: 'https://scite.ai'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 # Scite
 
 Scite ist ein innovatives KI-gestütztes Tool, das Forschern und Studierenden hilft, wissenschaftliche Arbeiten schneller und effizienter zu bewerten. Mit Hilfe von maschinellem Lernen analysiert Scite Zitate in wissenschaftlichen Artikeln und zeigt an, ob diese unterstützend, widersprechend oder neutral sind. So erleichtert es die Einschätzung der Glaubwürdigkeit von Quellen und fördert fundierte wissenschaftliche Arbeit.

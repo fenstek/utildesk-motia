@@ -9,7 +9,10 @@ tags:
   - image
 official_url: 'https://www.midjourney.com/'
 affiliate_url: 'https://www.midjourney.com/'
+created_at: "2026-02-02"
+popularity: 0
 ---
+
 
 # Midjourney
 

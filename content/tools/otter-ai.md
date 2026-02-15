@@ -8,7 +8,10 @@ tags:
   - audio
 official_url: 'https://otter.ai'
 affiliate_url: 'https://otter.ai'
+created_at: "2026-02-02"
+popularity: 0
 ---
+
 
 # Otter.ai
 

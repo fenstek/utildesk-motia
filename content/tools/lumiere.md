@@ -8,7 +8,10 @@ tags:
   - video
 official_url: 'http://lumiere.obs.coe.int/'
 affiliate_url: 'http://lumiere.obs.coe.int/'
+created_at: "2026-02-11"
+popularity: 0
 ---
+
 
 # Lumiere
 

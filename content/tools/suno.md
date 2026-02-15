@@ -10,7 +10,10 @@ official_url: ""
 affiliate_url: ""
 disabled: true
 reason: "Duplicate of suno-ai"
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 
 # Suno
 

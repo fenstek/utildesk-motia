@@ -9,7 +9,10 @@ tags:
   - llm
 official_url: 'https://chat.openai.com'
 affiliate_url: 'https://chat.openai.com'
+created_at: "2026-01-26"
+popularity: 0
 ---
+
 
 # ChatGPT
 

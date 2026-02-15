@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai, video]
 official_url: "https://www.descript.com/"
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Descript
 

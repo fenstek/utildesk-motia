@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai,audio]
 official_url: "https://www.speechmatics.com/"
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # Speechmatics
 

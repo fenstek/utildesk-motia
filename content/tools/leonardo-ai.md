@@ -8,7 +8,10 @@ tags:
   - ai
 official_url: 'https://leonardo.ai'
 affiliate_url: 'https://leonardo.ai'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 
 # Leonardo AI
 

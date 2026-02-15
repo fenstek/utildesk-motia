@@ -8,7 +8,10 @@ tags:
   - ai
 official_url: 'https://www.fotor.com/'
 affiliate_url: 'https://www.fotor.com/'
+created_at: "2026-02-08"
+popularity: 0
 ---
+
 
 # Fotor
 
