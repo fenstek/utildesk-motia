@@ -5,6 +5,7 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
+import { CATEGORIES } from "../../lib/categories";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
@@ -65,6 +66,13 @@ const displayTags = (tags ?? [])
     seen.add(n);
     return true;
   });
+
+// Find matching category for this tool
+const normalizedTags = tags.map(t => String(t).toLowerCase());
+const matchedCategory = CATEGORIES.find((cat) =>
+  normalizedTags.some((tag) => cat.matchTags.includes(tag))
+);
+
 // Render Markdown to HTML
 
 // Remove the Alternativen/Alternatives section from the main markdown content so it won't appear in the article text
@@ -261,6 +269,14 @@ const alternativesTop = alternatives.slice(0, 3);
         ))}
       </div>
     )}
+
+    <!-- Category Link -->
+    {matchedCategory && (
+      <div class="tool-category-link">
+        <span class="category-label">Kategorie:</span>
+        <a href={`/category/${matchedCategory.slug}/`} class="category-link-anchor">{matchedCategory.title}</a>
+      </div>
+    )}
   </div>
 
   <!-- Article Content -->
@@ -355,6 +371,27 @@ const alternativesTop = alternatives.slice(0, 3);
 </BaseLayout>
 
 <style>
+  .tool-category-link {
+    margin-top: 16px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .category-label {
+    color: var(--text-muted);
+    margin-right: 8px;
+  }
+
+  .category-link-anchor {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .category-link-anchor:hover {
+    text-decoration: underline;
+  }
+
   .alt-grid {
     display: grid;
     grid-template-columns: 1fr;
