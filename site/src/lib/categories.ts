@@ -47,5 +47,11 @@ export const CATEGORIES: Category[] = [
     title: "Automatisierung",
     description: "Automatisierungstools für Workflows, Integrationen und wiederkehrende Aufgaben.",
     matchTags: ["automation", "workflow", "integration", "zapier", "n8n", "ifttt", "automate"]
+  },
+  {
+    slug: "marketing-vertrieb",
+    title: "Marketing & Vertrieb",
+    description: "KI-Tools für Marketing, SEO, Werbung und Vertriebsautomatisierung.",
+    matchTags: ["marketing", "seo", "ads", "sales", "crm", "newsletter", "email"]
   }
 ];
