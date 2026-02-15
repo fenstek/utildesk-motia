@@ -240,11 +240,32 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
   return acc;
 }, []);
 const alternativesTop = alternatives.slice(0, 3);
+
+// ── Schema.org JSON-LD ─────────────────────────────────────────────────────
+const schemaDescription = data.description
+  ? String(data.description)
+  : data.summary
+    ? String(data.summary)
+    : data.excerpt
+      ? String(data.excerpt)
+      : getExcerpt(content) || `${title} - Informationen, Features und Anwendungsfälle`;
+
+const softwareApplicationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": title,
+  "description": schemaDescription.slice(0, 500), // Limit to 500 chars
+  "url": `https://tools.utildesk.de/tools/${slug}/`,
+  "operatingSystem": "Web",
+  "applicationCategory": primaryCategory?.title || "AI Tool",
+  ...(official_url && official_url.startsWith("http") && { "sameAs": official_url })
+};
 ---
 
 <BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de/tools/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} />
   </Fragment>
 
   <!-- Breadcrumb -->
