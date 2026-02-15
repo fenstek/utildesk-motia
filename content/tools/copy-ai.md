@@ -5,7 +5,7 @@ category: Produktivität
 price_model: freemium
 tags:
   - ai
-  - produktivität
+  - produktivitat
   - writing
 official_url: 'https://www.copy.ai'
 affiliate_url: 'https://www.copy.ai'
