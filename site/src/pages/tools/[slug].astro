@@ -68,11 +68,29 @@ const displayTags = (tags ?? [])
     return true;
   });
 
-// Find primary category (first matching category from CATEGORIES)
+// Find primary category by highest tag match count
+// On tie, prefer category whose first matching tag appears earlier in tags
 const normalizedTags = tags.map(t => String(t).toLowerCase());
-const primaryCategory = CATEGORIES.find((cat) =>
-  normalizedTags.some((tag) => cat.matchTags.includes(tag))
-);
+
+const categoryResults = CATEGORIES.map(cat => {
+  const matches = normalizedTags.filter(tag => cat.matchTags.includes(tag));
+  const matchCount = matches.length;
+  const firstMatchPos = matchCount > 0
+    ? normalizedTags.findIndex(tag => cat.matchTags.includes(tag))
+    : Infinity;
+
+  return { category: cat, matchCount, firstMatchPos };
+}).filter(r => r.matchCount > 0);
+
+// Sort by: 1) highest match count, 2) earliest first match position
+categoryResults.sort((a, b) => {
+  if (b.matchCount !== a.matchCount) {
+    return b.matchCount - a.matchCount;
+  }
+  return a.firstMatchPos - b.firstMatchPos;
+});
+
+const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category : undefined;
 
 // Render Markdown to HTML
 
