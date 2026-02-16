@@ -15,5 +15,5 @@ _archive/
 # local reports (generated)
 reports/
 
-# local reports (generated)
-reports/
+# audit scripts output (temporary)
+**/audit_missing_categories.*
