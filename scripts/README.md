@@ -1,6 +1,24 @@
-# GPT Official URL Fallback
+# Scripts Overview
 
-## Purpose
+## Core Automation Scripts
+
+### sheet_seed_from_alternatives.mjs
+Seeds Google Sheet with NEW rows from alternatives audit missing matches. See [sheet_seed_from_alternatives.md](./sheet_seed_from_alternatives.md) for details.
+
+### sheet_rebuild_official_url.mjs
+Rebuilds official_url for rows with specified status (typically NEEDS_REVIEW). Uses DDG + GPT validation.
+
+### sheet_ai_autogen_9_strict_v2.mjs
+Main autopilot: processes NEW rows, generates content, creates markdown files.
+
+### audit_alternatives_render.mjs
+Audits alternatives sections in existing tools, generates JSON report of missing tools.
+
+---
+
+## GPT Official URL Fallback
+
+### Purpose
 Optional GPT-based chooser for `official_url` as fallback when deterministic URL resolution is uncertain.
 
 ## Behavior
