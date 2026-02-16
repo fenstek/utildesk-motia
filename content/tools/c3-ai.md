@@ -3,7 +3,7 @@ slug: "c3-ai"
 title: "C3.ai"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, data, analytics, automation]
 official_url: "http://www.c3.ai/"
 created_at: "2026-02-15"
 popularity: 0

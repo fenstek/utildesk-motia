@@ -3,7 +3,7 @@ slug: "waveai"
 title: "WaveAI"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, assistant, productivity]
 official_url: "http://www.waveaid.com.au/"
 ---
 

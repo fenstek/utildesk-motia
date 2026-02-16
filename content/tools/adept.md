@@ -3,7 +3,7 @@ slug: "adept"
 title: "Adept"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, automation, productivity, workflow]
 official_url: "https://www.adept.ai/"
 ---
 
