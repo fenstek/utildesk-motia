@@ -14,6 +14,33 @@ Main autopilot: processes NEW rows, generates content, creates markdown files.
 ### audit_alternatives_render.mjs
 Audits alternatives sections in existing tools, generates JSON report of missing tools.
 
+### enrich_tags_and_validate_category.mjs
+Enriches generic tags via GPT and validates category matching to prevent tools from being published without proper categorization. See [enrich_tags_and_validate_category.md](./enrich_tags_and_validate_category.md) for details.
+
+---
+
+## GPT Tag Enrichment & Category Validation
+
+### Purpose
+Prevents tools from being published without proper category matching by enriching generic tags (e.g., only `["ai"]`) with specific tags from allowlist and validating category match.
+
+### Behavior
+- Checks if tags are generic (empty or only "ai")
+- If generic AND `USE_GPT_TAG_ENRICH=1`: calls GPT to add 1-4 specific tags from allowlist
+- Validates that final tags match at least one category (same logic as website)
+- Marks tool as NEEDS_REVIEW if:
+  - Tag enrichment fails
+  - No category matches even after enrichment
+
+### Environment Variables
+- `USE_GPT_TAG_ENRICH` (default: off) - Enable GPT tag enrichment
+- `OPENAI_API_KEY` - Required if GPT enrichment enabled
+- `GPT_TAG_MODEL` (default: `gpt-4o-mini`)
+- `GPT_TAG_TIMEOUT_MS` (default: `15000`)
+
+### Integration
+Can be integrated into autogen pipeline BEFORE setting tool status to NEW/DONE. If enrichment/validation fails, tool is marked as NEEDS_REVIEW with appropriate notes.
+
 ---
 
 ## GPT Official URL Fallback
