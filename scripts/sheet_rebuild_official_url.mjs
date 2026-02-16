@@ -10,6 +10,7 @@
  *   node scripts/sheet_rebuild_official_url.mjs --status NEEDS_REVIEW --use-gpt --gpt-fallback --strict --apply --limit 20
  */
 
+import 'dotenv/config';
 import process from "node:process";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
