@@ -147,16 +147,28 @@ const getFrequencyClass = (count: number, max: number) => {
 
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
 
-const hasPopularity = enabledTools.some((t) => (t.popularity ?? 0) > 0);
-const featuredTools = hasPopularity
-  ? [...enabledTools].sort(
-      (a, b) =>
-        (b.popularity ?? 0) - (a.popularity ?? 0) ||
-        a.title.localeCompare(b.title, "de")
-    )
-  : enabledTools;
+// Pinned tools in fixed order
+const pinnedSlugs = ["chatgpt", "claude", "midjourney", "perplexity", "zapier"];
+const enabledBySlug = new Map(enabledTools.map((t) => [t.slug, t]));
 
-const latestTools = featuredTools.slice(0, 12);
+// Get pinned tools in specified order (only existing ones)
+const pinnedTools = pinnedSlugs
+  .map((slug) => enabledBySlug.get(slug))
+  .filter(Boolean);
+
+// Get remaining tools (not pinned)
+const pinnedSlugSet = new Set(pinnedSlugs);
+const restTools = enabledTools.filter((t) => !pinnedSlugSet.has(t.slug));
+
+// Sort rest by popularity desc, then by title
+restTools.sort(
+  (a, b) =>
+    (b.popularity ?? 0) - (a.popularity ?? 0) ||
+    a.title.localeCompare(b.title, "de")
+);
+
+// Combine: pinned first, then top by popularity, limit to 12
+const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
 ---
 
 <BaseLayout
