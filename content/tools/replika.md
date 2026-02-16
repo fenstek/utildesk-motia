@@ -4,10 +4,15 @@ title: Replika
 category: AI
 price_model: freemium
 tags:
+  - chatbot
+  - design
   - ai
 official_url: 'https://replika.com/'
 affiliate_url: 'https://replika.com/'
+created_at: "2026-02-03"
+popularity: 0
 ---
+
 
 # Replika
 

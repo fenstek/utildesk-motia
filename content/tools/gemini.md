@@ -4,10 +4,14 @@ title: Gemini
 category: AI
 price_model: freemium
 tags:
+  - writing
   - ai
 official_url: 'https://gemini.google.com/'
 affiliate_url: 'https://gemini.google.com/'
+created_at: "2026-02-02"
+popularity: 0
 ---
+
 
 # Gemini
 

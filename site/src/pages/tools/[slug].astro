@@ -5,6 +5,7 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
+import { CATEGORIES } from "../../lib/categories";
 
 export async function getStaticPaths() {
   const toolsDir = join(process.cwd(), "content", "tools");
@@ -60,11 +61,19 @@ const displayTags = (tags ?? [])
   .filter((t) => {
     const n = norm(t);
     if (!n) return false;
+    if (n === "ai") return false; // Hide generic ai tag from UI
     if (categoryNorm && n === categoryNorm) return false;
     if (seen.has(n)) return false;
     seen.add(n);
     return true;
   });
+
+// Find primary category (first matching category from CATEGORIES)
+const normalizedTags = tags.map(t => String(t).toLowerCase());
+const primaryCategory = CATEGORIES.find((cat) =>
+  normalizedTags.some((tag) => cat.matchTags.includes(tag))
+);
+
 // Render Markdown to HTML
 
 // Remove the Alternativen/Alternatives section from the main markdown content so it won't appear in the article text
@@ -231,11 +240,32 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
   return acc;
 }, []);
 const alternativesTop = alternatives.slice(0, 3);
+
+// ── Schema.org JSON-LD ─────────────────────────────────────────────────────
+const schemaDescription = data.description
+  ? String(data.description)
+  : data.summary
+    ? String(data.summary)
+    : data.excerpt
+      ? String(data.excerpt)
+      : getExcerpt(content) || `${title} - Informationen, Features und Anwendungsfälle`;
+
+const softwareApplicationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": title,
+  "description": schemaDescription.slice(0, 500), // Limit to 500 chars
+  "url": `https://tools.utildesk.de/tools/${slug}/`,
+  "operatingSystem": "Web",
+  "applicationCategory": primaryCategory?.title || "AI Tool",
+  ...(official_url && official_url.startsWith("http") && { "sameAs": official_url })
+};
 ---
 
 <BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de/tools/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} />
   </Fragment>
 
   <!-- Breadcrumb -->
@@ -259,6 +289,14 @@ const alternativesTop = alternatives.slice(0, 3);
         {displayTags.map((tag) => (
           <a class="badge badge-tag" href={`/tools/?tag=${encodeURIComponent(tag)}`}>{tag}</a>
         ))}
+      </div>
+    )}
+
+    <!-- Primary Category Link -->
+    {primaryCategory && (
+      <div class="tool-category-link">
+        <span class="category-label">Kategorie:</span>
+        <a href={`/category/${primaryCategory.slug}/`} class="category-link-anchor">{primaryCategory.title}</a>
       </div>
     )}
   </div>
@@ -355,6 +393,27 @@ const alternativesTop = alternatives.slice(0, 3);
 </BaseLayout>
 
 <style>
+  .tool-category-link {
+    margin-top: 16px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .category-label {
+    color: var(--text-muted);
+    margin-right: 8px;
+  }
+
+  .category-link-anchor {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .category-link-anchor:hover {
+    text-decoration: underline;
+  }
+
   .alt-grid {
     display: grid;
     grid-template-columns: 1fr;

@@ -1,11 +1,16 @@
 ---
-slug: "tidio"
-title: "Tidio"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.tidio.com/"
+slug: tidio
+title: Tidio
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - ai
+official_url: 'https://www.tidio.com/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Tidio
 

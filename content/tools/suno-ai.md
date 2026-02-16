@@ -8,7 +8,10 @@ tags:
   - audio
 official_url: 'https://suno.com'
 affiliate_url: 'https://suno.com'
+created_at: "2026-02-08"
+popularity: 0
 ---
+
 
 # Suno AI
 

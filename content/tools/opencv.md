@@ -1,11 +1,17 @@
 ---
-slug: "opencv"
-title: "OpenCV"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://opencv.org/"
+slug: opencv
+title: OpenCV
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - video
+  - ai
+official_url: 'https://opencv.org/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # OpenCV
 

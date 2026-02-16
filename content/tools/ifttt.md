@@ -1,11 +1,16 @@
 ---
-slug: "ifttt"
-title: "IFTTT"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://ifttt.com"
+slug: ifttt
+title: IFTTT
+category: AI
+price_model: freemium
+tags:
+  - design
+  - ai
+official_url: 'https://ifttt.com'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # IFTTT
 

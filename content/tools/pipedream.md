@@ -1,11 +1,17 @@
 ---
-slug: "pipedream"
-title: "Pipedream"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://pipedream.com/"
+slug: pipedream
+title: Pipedream
+category: AI
+price_model: freemium
+tags:
+  - developer
+  - automation
+  - ai
+official_url: 'https://pipedream.com/'
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # Pipedream
 

@@ -1,11 +1,16 @@
 ---
-slug: "deepart-io"
-title: "DeepArt.io"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.deeparteffects.com/"
+slug: deepart-io
+title: DeepArt.io
+category: AI
+price_model: freemium
+tags:
+  - design
+  - ai
+official_url: 'https://www.deeparteffects.com/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # DeepArt.io
 

@@ -1,11 +1,16 @@
 ---
-slug: "consensus"
-title: "Consensus"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://consensus.app/"
+slug: consensus
+title: Consensus
+category: AI
+price_model: freemium
+tags:
+  - design
+  - ai
+official_url: 'https://consensus.app/'
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # Consensus
 
