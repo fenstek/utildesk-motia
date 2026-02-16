@@ -8,7 +8,10 @@ tags:
   - design
 official_url: 'https://openai.com/dall-e'
 affiliate_url: 'https://openai.com/dall-e'
+created_at: "2026-02-03"
+popularity: 0
 ---
+
 
 # DALL·E
 

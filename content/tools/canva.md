@@ -4,10 +4,16 @@ title: Canva
 category: AI
 price_model: freemium
 tags:
+  - design
+  - automation
+  - marketing
   - ai
 official_url: 'https://www.canva.com/'
 affiliate_url: 'https://www.canva.com/'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 
 # Canva
 

@@ -1,11 +1,18 @@
 ---
-slug: "sift"
-title: "Sift"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://sift.com/"
+slug: sift
+title: Sift
+category: AI
+price_model: freemium
+tags:
+  - writing
+  - produktivitat
+  - data
+  - ai
+official_url: 'https://sift.com/'
+created_at: "2026-02-08"
+popularity: 0
 ---
+
 
 # Sift
 

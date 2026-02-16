@@ -1,11 +1,18 @@
 ---
-title: "Domo"
-slug: "domo"
-category: "AI"
-tags: [ai]
-price_model: "freemium"
-official_url: "https://www.domo.com/"
+title: Domo
+slug: domo
+category: AI
+tags:
+  - design
+  - automation
+  - data
+  - ai
+price_model: freemium
+official_url: 'https://www.domo.com/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Domo
 

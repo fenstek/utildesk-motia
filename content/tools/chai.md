@@ -1,11 +1,16 @@
 ---
-slug: "chai"
-title: "Chai"
-category: "AI"
-price_model: "freemium"
-tags: [ai]
-official_url: "https://www.chai-research.com/"
+slug: chai
+title: Chai
+category: AI
+price_model: freemium
+tags:
+  - chatbot
+  - ai
+official_url: 'https://www.chai-research.com/'
+created_at: "2026-02-12"
+popularity: 0
 ---
+
 
 # Chai
 

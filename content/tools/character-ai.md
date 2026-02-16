@@ -5,9 +5,14 @@ category: AI
 price_model: freemium
 tags:
   - ai
+  - chatbot
+  - llm
 official_url: 'https://character.ai/'
 affiliate_url: 'https://character.ai/'
+created_at: "2026-02-03"
+popularity: 0
 ---
+
 
 # Character AI
 

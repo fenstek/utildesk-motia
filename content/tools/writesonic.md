@@ -5,7 +5,10 @@ category: "Produktivitat"
 price_model: "freemium"
 tags: [ai, produktivitat, writing]
 official_url: "https://runwayai.app/download"
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Writesonic
 

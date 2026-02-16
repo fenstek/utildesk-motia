@@ -5,10 +5,13 @@ category: Produktivität
 price_model: freemium
 tags:
   - ai
-  - produktivität
+  - produktivitat
 official_url: 'https://www.notion.so/product/ai'
 affiliate_url: 'https://www.notion.so/product/ai'
+created_at: "2026-02-08"
+popularity: 0
 ---
+
 
 # Notion AI
 

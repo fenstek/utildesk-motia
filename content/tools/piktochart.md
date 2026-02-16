@@ -1,11 +1,17 @@
 ---
-title: "Piktochart"
-slug: "piktochart"
-category: "AI"
-tags: [ai]
-price_model: "freemium"
-official_url: "https://piktochart.com/"
+title: Piktochart
+slug: piktochart
+category: AI
+tags:
+  - design
+  - marketing
+  - ai
+price_model: freemium
+official_url: 'https://piktochart.com/'
+created_at: "2026-02-13"
+popularity: 0
 ---
+
 
 # Piktochart
 

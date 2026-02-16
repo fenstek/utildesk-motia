@@ -3,9 +3,12 @@ slug: "ibm-watson"
 title: "IBM Watson"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, developer, automation]
 official_url: "https://www.ibm.com/watson"
+created_at: "2026-02-14"
+popularity: 0
 ---
+
 
 # IBM Watson
 

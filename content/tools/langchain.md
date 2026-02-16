@@ -4,10 +4,17 @@ title: LangChain
 category: AI
 price_model: freemium
 tags:
+  - chatbot
+  - llm
+  - developer
+  - automation
   - ai
 official_url: 'https://langchain.com/'
 affiliate_url: 'https://langchain.com/'
+created_at: "2026-02-07"
+popularity: 0
 ---
+
 
 # LangChain
 

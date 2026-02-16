@@ -5,7 +5,10 @@ category: "AI"
 price_model: "freemium"
 tags: [ai]
 official_url: "https://www.rev.com"
+created_at: "2026-02-15"
+popularity: 0
 ---
+
 
 # Rev.ai
 
