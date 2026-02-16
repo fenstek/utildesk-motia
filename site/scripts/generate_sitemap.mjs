@@ -2,22 +2,20 @@
 /**
  * Generate sitemap.xml during build
  *
- * Reads all tools from ../content/tools/*.md
- * Excludes disabled tools
- * Generates sitemap.xml in dist/
+ * Reads BUILT pages from dist/ (not source .md files)
+ * This ensures 1:1 match between sitemap and published pages
  */
 
-import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
+import { readdir, writeFile, stat } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import matter from 'gray-matter';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const BASE_URL = 'https://tools.utildesk.de';
-const CONTENT_DIR = join(__dirname, '../../content/tools');
 const DIST_DIR = join(__dirname, '../dist');
+const DIST_TOOLS_DIR = join(DIST_DIR, 'tools');
 const OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 
 function escapeXml(str) {
@@ -42,39 +40,42 @@ async function getFileModTime(filepath) {
   }
 }
 
-async function readTools() {
-  const files = await readdir(CONTENT_DIR);
-  const tools = [];
+async function readBuiltTools() {
+  try {
+    const entries = await readdir(DIST_TOOLS_DIR, { withFileTypes: true });
+    const tools = [];
 
-  for (const file of files) {
-    if (!file.endsWith('.md') || file.startsWith('_')) {
-      continue;
+    for (const entry of entries) {
+      if (!entry.isDirectory()) {
+        continue;
+      }
+
+      const slug = entry.name;
+      const indexPath = join(DIST_TOOLS_DIR, slug, 'index.html');
+
+      // Verify index.html exists
+      try {
+        const mtime = await getFileModTime(indexPath);
+        tools.push({
+          slug,
+          lastmod: formatDate(mtime),
+        });
+      } catch {
+        // Skip if index.html doesn't exist
+        continue;
+      }
     }
 
-    const filepath = join(CONTENT_DIR, file);
-    const content = await readFile(filepath, 'utf8');
-    const { data } = matter(content);
-
-    // Skip disabled tools
-    if (data.disabled === true) {
-      continue;
-    }
-
-    const slug = data.slug || file.replace(/\.md$/, '');
-    const mtime = await getFileModTime(filepath);
-
-    tools.push({
-      slug,
-      lastmod: formatDate(mtime),
-      title: data.title || slug,
-    });
+    return tools.sort((a, b) => a.slug.localeCompare(b.slug));
+  } catch (error) {
+    throw new Error(
+      `Failed to read dist/tools/. Make sure to run this script AFTER astro build. Error: ${error.message}`
+    );
   }
-
-  return tools.sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
 async function generateSitemap() {
-  const tools = await readTools();
+  const tools = await readBuiltTools();
   const today = formatDate(new Date());
 
   const urls = [
@@ -90,7 +91,7 @@ async function generateSitemap() {
       lastmod: today,
       priority: '0.9',
     },
-    // All tools
+    // All built tool pages
     ...tools.map((tool) => ({
       loc: `${BASE_URL}/tools/${escapeXml(tool.slug)}/`,
       lastmod: tool.lastmod,
@@ -123,7 +124,7 @@ async function main() {
     const result = await generateSitemap();
     console.log(`✅ Sitemap generated: ${OUTPUT_FILE}`);
     console.log(`   Total URLs: ${result.count}`);
-    console.log(`   Tools: ${result.tools}`);
+    console.log(`   Tools: ${result.tools} (from dist/tools/)`);
     console.log(`   Static pages: ${result.count - result.tools}`);
   } catch (error) {
     console.error('❌ Failed to generate sitemap:', error.message);
