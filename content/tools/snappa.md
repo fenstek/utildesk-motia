@@ -3,7 +3,7 @@ slug: "snappa"
 title: "Snappa"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, design, image, social-media]
 official_url: "https://snappa.com/"
 ---
 

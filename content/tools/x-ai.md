@@ -3,7 +3,7 @@ slug: "x-ai"
 title: "X.AI"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, assistant, meeting, productivity]
 official_url: "https://x.ai"
 disabled: true
 created_at: "2026-02-12"

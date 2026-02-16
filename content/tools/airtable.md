@@ -3,7 +3,7 @@ slug: "airtable"
 title: "Airtable"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, spreadsheet, productivity, data]
 official_url: "https://airtable.com"
 ---
 

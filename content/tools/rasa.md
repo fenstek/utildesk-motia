@@ -3,7 +3,7 @@ slug: "rasa"
 title: "Rasa"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, chatbot, developer-tools, api]
 official_url: "https://rasa.com/docs"
 ---
 

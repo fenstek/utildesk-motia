@@ -3,7 +3,7 @@ slug: "anyword"
 title: "Anyword"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, writing, content, marketing]
 official_url: "https://www.anyword.com/"
 created_at: "2026-02-15"
 popularity: 0
