@@ -3,7 +3,7 @@ slug: "kreator"
 title: "Kreator"
 category: "AI"
 price_model: "freemium"
-tags: [ai]
+tags: [ai, writing, content, marketing]
 official_url: ""
 affiliate_url: ""
 disabled: true
