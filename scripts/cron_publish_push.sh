@@ -40,7 +40,7 @@ if git show-ref --verify --quiet refs/remotes/origin/autobot && \
   if ! git merge-base --is-ancestor "origin/master" "origin/autobot"; then
     echo "[cron] WARN: origin/autobot diverged from origin/master -> resetting autobot to origin/master"
     git checkout -B autobot origin/master
-    retry_cmd 5 git push -f origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
+    retry_cmd 5 git push -f origin autobot || { echo "[cron] ERROR: push autobot failed"; exit 1; }
     echo "[cron] origin/autobot reset complete"
   fi
 fi

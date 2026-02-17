@@ -48,6 +48,7 @@ fi
 - ✅ Resets `origin/autobot` to `origin/master` (force push)
 - ✅ Ensures next generation uses latest code
 - ✅ Only affects `autobot` branch (never force-pushes `master`)
+- ⚠️ If force-push fails after 5 retries, script exits with error (exit 1) to prevent publishing stale code
 
 ### Typical Logs
 
