@@ -1,0 +1,64 @@
+# ============================================================
+# cron_postcheck_template.txt
+#
+# Template for scheduling the post-check pipeline.
+# THIS IS A TEMPLATE ONLY — do not add directly to crontab.
+#
+# To activate, review and add entries to the real crontab:
+#   crontab -e
+#
+# Adjust paths, log file locations and timing to your needs.
+# The VPS publish log dir is /var/log/utildesk-motia/.
+# ============================================================
+
+# --- Environment variables for cron jobs ---
+# (Set these in crontab preamble or source a credentials file)
+# SPREADSHEET_ID=<your-sheet-id>
+# SHEET_NAME=Tabellenblatt1
+# SA_JSON_PATH=/opt/utildesk-motia/secrets/google-service-account.json
+
+# --- Step 1: Scan every 12 hours, save JSON to /tmp ---
+# Runs at 03:15 and 15:15. Output goes to /tmp/postcheck_candidates.json.
+# Logs (stderr) append to /var/log/utildesk-motia/postcheck_scan.log
+#
+# 15 3,15 * * *  root  cd /opt/utildesk-motia && \
+#   node scripts/postcheck_scan_suspicious.mjs \
+#     --limit 200 \
+#     --out /tmp/postcheck_candidates.json \
+#     >> /var/log/utildesk-motia/postcheck_scan.log 2>&1
+
+# --- Step 2: Apply (BLACKLIST only) once per day at 04:00 ---
+# Requires: Step 1 has already run and produced /tmp/postcheck_candidates.json
+# Limits: max 2 deletions per run, max 10 candidates total.
+# Logs to /var/log/utildesk-motia/postcheck_apply.log
+#
+# 0 4 * * *  root  cd /opt/utildesk-motia && \
+#   node scripts/postcheck_apply_actions.mjs \
+#     --from /tmp/postcheck_candidates.json \
+#     --apply \
+#     --only-status BLACKLIST \
+#     --max-delete 2 \
+#     --max-total 10 \
+#     >> /var/log/utildesk-motia/postcheck_apply.log 2>&1
+
+# --- Optional: apply NEEDS_REVIEW only (no file deletions, no PR) ---
+# Safe to run more frequently. Just updates Sheet status.
+#
+# 30 4 * * *  root  cd /opt/utildesk-motia && \
+#   node scripts/postcheck_apply_actions.mjs \
+#     --from /tmp/postcheck_candidates.json \
+#     --apply \
+#     --only-status NEEDS_REVIEW \
+#     --max-delete 0 \
+#     --no-pr \
+#     >> /var/log/utildesk-motia/postcheck_apply.log 2>&1
+
+# --- Notes ---
+# • The scan step is read-only; it is safe to run frequently.
+# • The apply step MUST NOT overlap with the publish cron (every 6h).
+#   Schedule after the typical publish window (e.g., after 03:30).
+# • Both steps use the same Google Sheet auth as the rest of the pipeline.
+# • To test manually (dry-run, no changes):
+#     cd /opt/utildesk-motia
+#     node scripts/postcheck_scan_suspicious.mjs --out /tmp/test_candidates.json
+#     node scripts/postcheck_apply_actions.mjs --from /tmp/test_candidates.json
