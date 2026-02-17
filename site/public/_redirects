@@ -2,3 +2,8 @@
 # NOTE: Cloudflare Pages does not support 404 status in _redirects.
 # The proper fix is to disable "SPA fallback rewrite" in Pages dashboard settings.
 # Previously attempted: /tools/*  /404.html  404  (invalid for Pages)
+
+# Duplicate tool redirects (301)
+# Specific rules must come BEFORE any wildcard rules
+/tools/jasper-ai    /tools/jasper    301
+/tools/jasper-ai/*  /tools/jasper    301
