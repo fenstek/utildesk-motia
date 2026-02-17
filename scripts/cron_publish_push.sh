@@ -34,6 +34,17 @@ node scripts/guard_deny_md.mjs
 # Always work from autobot branch (self-healing if remote branch was deleted)
 git fetch --all --prune
 
+# Self-heal: if autobot diverged from master (manual PRs advanced master), reset autobot to master
+if git show-ref --verify --quiet refs/remotes/origin/autobot && \
+   git show-ref --verify --quiet refs/remotes/origin/master; then
+  if ! git merge-base --is-ancestor "origin/master" "origin/autobot"; then
+    echo "[cron] WARN: origin/autobot diverged from origin/master -> resetting autobot to origin/master"
+    git checkout -B autobot origin/master
+    retry_cmd 5 git push -f origin autobot || { echo "[cron] ERROR: push autobot failed"; exit 1; }
+    echo "[cron] origin/autobot reset complete"
+  fi
+fi
+
 if git show-ref --verify --quiet refs/remotes/origin/autobot; then
   # remote branch exists -> hard reset local to it
   if git rev-parse --verify autobot >/dev/null 2>&1; then
