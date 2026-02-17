@@ -305,6 +305,9 @@ const HARD_SLUG_ALIASES = new Map([
   ['runway-ml', 'runway'],
   ['runwayml', 'runway'],
   ['runway-ai', 'runway'],
+  // Jasper (formerly Jarvis) - prevent duplicates
+  ['jasper-ai', 'jasper'],
+  ['jarvis', 'jasper'],
 ]);
 const HARD_REJECT_SLUGS = new Set([
   'this-person-does-not-exist',
