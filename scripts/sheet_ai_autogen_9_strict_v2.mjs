@@ -401,22 +401,83 @@ const ACCEPTED_P31 = new Set([
 ]);
 
 const REJECTED_P31 = new Set([
-  'Q5', // human
-  'Q515', // city
-  'Q486972', // human settlement
-  'Q56061', // administrative territorial entity
-  'Q82794', // geographic region
-  'Q11424', // film
-  'Q215380', // musical group
-  'Q11424', // film
-  'Q5398426', // television series
-  'Q7725634', // literary work
-  'Q571', // book
-  'Q41298', // magazine
-  'Q1002697', // periodical
-  'Q11032', // newspaper
-  'Q1792450', // art genre
-  'Q3559093', // work of art
+  // People
+  'Q5',        // human/person
+
+  // Geography — settlements
+  'Q515',      // city
+  'Q486972',   // human settlement
+  'Q56061',    // administrative territorial entity
+  'Q82794',    // geographic region
+  'Q1549591',  // big city
+
+  // Geography — physical features
+  'Q23397',    // lake
+  'Q8502',     // mountain
+  'Q23442',    // island
+  'Q4022',     // river
+
+  // Transport infrastructure  [covers Domodedovo/domo case]
+  'Q1248784',  // airport
+  'Q62447',    // international airport
+  'Q744913',   // airport (alternative type)
+  'Q55488',    // railway station
+
+  // Aircraft  [covers F-4 Phantom II / phantom case]
+  'Q11436',    // aircraft
+  'Q15056993', // aircraft model
+  'Q216227',   // military aircraft
+  'Q16936648', // fighter aircraft
+  'Q3543174',  // type of aircraft
+
+  // Awards  [covers WGA Award / writer case]
+  'Q618779',   // award
+  'Q1364556',  // music award
+  'Q21191270', // award (generic)
+  'Q19020',    // Academy Award (as category)
+
+  // Military / government  [covers US Air Force / chai case]
+  'Q8473',     // military branch
+  'Q34763',    // military organization
+  'Q178885',   // military division
+  'Q18912523', // military unit
+  'Q7278',     // political party
+  'Q1048835',  // public branch of government
+
+  // Professions / occupations  [covers "aircraft pilot" / copilot, "priest" / rev cases]
+  'Q28640',    // profession
+  'Q4164871',  // position
+  'Q12737077', // occupation
+  'Q66747126', // rank
+
+  // Media / cultural works
+  'Q11424',    // film
+  'Q5398426',  // television series
+  'Q7725634',  // literary work
+  'Q571',      // book
+  'Q41298',    // magazine
+  'Q1002697',  // periodical
+  'Q11032',    // newspaper
+  'Q1792450',  // art genre
+  'Q3559093',  // work of art
+  'Q482994',   // album
+  'Q7366',     // song
+
+  // Musical groups / sports
+  'Q215380',   // musical group / band
+  'Q476028',   // football club
+  'Q4830453',  // sports club
+
+  // Biological taxa  [covers peanut / pindar case]
+  'Q16521',    // taxon
+  'Q7432',     // species
+  'Q11004',    // plant cultivar
+  'Q756',      // plant
+
+  // Other non-tech organizations
+  'Q33506',    // museum
+  'Q2085381',  // publisher
+  'Q15265344', // broadcaster
 ]);
 
 function getInstanceOf(ent){
@@ -484,13 +545,24 @@ async function pickWikidata(name){
     const ent = await wikidataEntity(r.id);
     if(!ent) continue;
 
-    // P31 validation (MUST pass)
+    // P31 validation (MUST pass) — [wikidata-guard]
     const p31Check = validateInstanceOf(ent);
-    if (!p31Check.valid) continue;
+    if (!p31Check.valid) {
+      process.stderr.write(
+        `[wikidata-guard] rejected P31=${p31Check.reason} entity=${r.id}(${r.label}) topic="${name}" reason=rejected_p31\n`
+      );
+      continue;
+    }
 
-    // AI tool check (should be AI-related)
+    // AI tool check (should be AI-related) — [wikidata-guard]
     const desc = r.description || (ent?.descriptions?.en?.value||'');
-    if (!isLikelyAITool(name, desc, p31Check.instances)) continue;
+    if (!isLikelyAITool(name, desc, p31Check.instances)) {
+      process.stderr.write(
+        `[wikidata-guard] rejected entity=${r.id}(${r.label}) topic="${name}" reason=not_ai_tool` +
+        ` p31=[${p31Check.instances.join(',')}] desc="${String(desc).slice(0, 80).replace(/\n/g, ' ')}"\n`
+      );
+      continue;
+    }
 
     const offRaw = officialUrl(ent);
     const off = offRaw && !isSuspiciousOfficialUrl(offRaw) ? offRaw : '';
