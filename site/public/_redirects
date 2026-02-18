@@ -7,3 +7,7 @@
 # Specific rules must come BEFORE any wildcard rules
 /tools/jasper-ai    /tools/jasper    301
 /tools/jasper-ai/*  /tools/jasper    301
+
+# Phantom -> PhantomBuster (wrong tool removed, redirect to correct one)
+/tools/phantom    /tools/phantombuster/    301
+/tools/phantom/   /tools/phantombuster/    301
