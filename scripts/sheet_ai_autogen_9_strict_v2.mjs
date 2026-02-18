@@ -484,13 +484,26 @@ async function pickWikidata(name){
     const ent = await wikidataEntity(r.id);
     if(!ent) continue;
 
-    // P31 validation (MUST pass)
+    // P31 validation (MUST pass) — [wikidata-guard]
     const p31Check = validateInstanceOf(ent);
-    if (!p31Check.valid) continue;
+    if (!p31Check.valid) {
+      process.stderr.write(
+        `[wikidata-guard] rejected P31=${p31Check.reason} entity=${r.id}(${r.label}) topic="${name}" reason=rejected_p31\n`
+      );
+      wikidata_guard_rejected++;
+      continue;
+    }
 
-    // AI tool check (should be AI-related)
+    // AI tool check (should be AI-related) — [wikidata-guard]
     const desc = r.description || (ent?.descriptions?.en?.value||'');
-    if (!isLikelyAITool(name, desc, p31Check.instances)) continue;
+    if (!isLikelyAITool(name, desc, p31Check.instances)) {
+      process.stderr.write(
+        `[wikidata-guard] rejected entity=${r.id}(${r.label}) topic="${name}" reason=not_ai_tool` +
+        ` p31=[${p31Check.instances.join(',')}] desc="${String(desc).slice(0, 80).replace(/\n/g, ' ')}"\n`
+      );
+      wikidata_guard_rejected++;
+      continue;
+    }
 
     const offRaw = officialUrl(ent);
     const off = offRaw && !isSuspiciousOfficialUrl(offRaw) ? offRaw : '';
@@ -523,6 +536,8 @@ async function pickWikidata(name){
       };
     }
   }
+  // Increment only when pickWikidata() will return a real entity (not null)
+  if (best) wikidata_guard_allowed++;
   return best;
 }
 
@@ -634,6 +649,10 @@ function categoryFallback(name){
   if (/(deepl|grammarly|jasper|copy\.ai|writesonic)/i.test(name)) return 'Produktivität';
   return 'AI';
 }
+
+// Run-level Wikidata guard counters (module-level so pickWikidata can increment them)
+let wikidata_guard_rejected = 0;
+let wikidata_guard_allowed = 0;
 
 async function main(){
   if(!OPENAI_API_KEY) die('Missing OPENAI_API_KEY');
@@ -835,7 +854,7 @@ async function main(){
     console.log(JSON.stringify(result, null, 2));
   }
   if (AUTOGEN_LIMIT > 0 || /^(1|true|yes|on)$/i.test(String(process.env.URL_RESOLUTION_SUMMARY || ""))) {
-    console.log(JSON.stringify({ ok: true, url_resolution_summary: counters }, null, 2));
+    console.log(JSON.stringify({ ok: true, url_resolution_summary: { ...counters, wikidata_guard_rejected, wikidata_guard_allowed } }, null, 2));
   }
 }
 
