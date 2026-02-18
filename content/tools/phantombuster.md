@@ -1,10 +1,10 @@
 ---
-slug: "phantom"
-title: "Phantom"
+slug: "phantombuster"
+title: "PhantomBuster"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://phantom.com/"
+official_url: "https://phantombuster.com"
 ---
 
 # Phantom
