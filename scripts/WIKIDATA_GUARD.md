@@ -130,7 +130,13 @@ grep '\[wikidata-guard\] rejected P31=rejected_P31' /var/log/utildesk-motia/shee
 - **`wikidata_guard_rejected`** — total number of Wikidata entities rejected by the P31 guard
   (either `rejected_p31` or `not_ai_tool`) during a single autogen run.
 - Counts both rejection paths equally: hard P31 deny-list match AND `isLikelyAITool` failure.
-- Displayed in the summary JSON when `AUTOGEN_LIMIT > 0` or `URL_RESOLUTION_SUMMARY=1`:
+
+- **`wikidata_guard_allowed`** — number of Wikidata entities that passed both P31 and AI-relevance
+  checks (i.e., were allowed through the guard) during a single autogen run.
+- Together with `wikidata_guard_rejected`, enables computing the reject rate:
+  `reject_rate = wikidata_guard_rejected / (wikidata_guard_rejected + wikidata_guard_allowed)`
+
+Both metrics are displayed in the summary JSON when `AUTOGEN_LIMIT > 0` or `URL_RESOLUTION_SUMMARY=1`:
 
 ```json
 {
@@ -143,15 +149,17 @@ grep '\[wikidata-guard\] rejected P31=rejected_P31' /var/log/utildesk-motia/shee
     "gpt_accepted": 2,
     "resolved_with_wikidata": 5,
     "resolved_with_ddg": 4,
-    "wikidata_guard_rejected": 7
+    "wikidata_guard_rejected": 7,
+    "wikidata_guard_allowed": 15
   }
 }
 ```
 
-Use this metric to:
+Use these metrics to:
 - Detect runs with unusually high rejection rates (may indicate a noisy SEED_AI batch)
 - Track improvement over time as the deny-list grows
-- Compare against `topics_seen` to estimate guard hit rate: `wikidata_guard_rejected / topics_seen`
+- Calculate reject rate: `wikidata_guard_rejected / (wikidata_guard_rejected + wikidata_guard_allowed)`
+- Compare against `topics_seen` to estimate overall guard coverage
 
 ---
 

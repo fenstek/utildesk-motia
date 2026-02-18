@@ -536,6 +536,8 @@ async function pickWikidata(name){
       };
     }
   }
+  // Increment only when pickWikidata() will return a real entity (not null)
+  if (best) wikidata_guard_allowed++;
   return best;
 }
 
@@ -648,8 +650,9 @@ function categoryFallback(name){
   return 'AI';
 }
 
-// Run-level Wikidata guard counter (module-level so pickWikidata can increment it)
+// Run-level Wikidata guard counters (module-level so pickWikidata can increment them)
 let wikidata_guard_rejected = 0;
+let wikidata_guard_allowed = 0;
 
 async function main(){
   if(!OPENAI_API_KEY) die('Missing OPENAI_API_KEY');
@@ -851,7 +854,7 @@ async function main(){
     console.log(JSON.stringify(result, null, 2));
   }
   if (AUTOGEN_LIMIT > 0 || /^(1|true|yes|on)$/i.test(String(process.env.URL_RESOLUTION_SUMMARY || ""))) {
-    console.log(JSON.stringify({ ok: true, url_resolution_summary: { ...counters, wikidata_guard_rejected } }, null, 2));
+    console.log(JSON.stringify({ ok: true, url_resolution_summary: { ...counters, wikidata_guard_rejected, wikidata_guard_allowed } }, null, 2));
   }
 }
 
