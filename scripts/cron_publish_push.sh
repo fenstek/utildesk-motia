@@ -99,17 +99,34 @@ echo "[cron] pushing autobot..."
 retry_cmd 5 git push origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 
 # 4) PR creation / update + enable auto-merge
-# PR title is stable; body is minimal (avoid noise)
-if gh pr view --head autobot --json number >/dev/null 2>&1; then
-  echo "[cron] PR already exists (autobot -> master)"
+# Find open PR via gh pr list (gh pr view does not support --head flag)
+PR_NUMBER="$(gh pr list --head autobot --base master --state open --json number --jq '.[0].number' 2>/dev/null || true)"
+
+if [[ -n "$PR_NUMBER" ]]; then
+  echo "[cron] open PR found: #${PR_NUMBER} (autobot -> master)"
 else
-  echo "[cron] creating PR (autobot -> master)"
-  retry_cmd 5 gh pr create --base master --head autobot --title "Autobot: publish new tools" --body "Automated content publish from Google Sheet." || { echo "[cron] WARNING: gh pr create failed"; exit 0; }
+  echo "[cron] no open PR found -> creating PR (autobot -> master)"
+  if retry_cmd 5 gh pr create --base master --head autobot \
+      --title "Autobot: publish new tools" \
+      --body "Automated content publish from Google Sheet."; then
+    PR_NUMBER="$(gh pr list --head autobot --base master --state open --json number --jq '.[0].number' 2>/dev/null || true)"
+    echo "[cron] PR created: #${PR_NUMBER:-unknown}"
+  else
+    echo "[cron] WARNING: gh pr create failed"
+    # Re-check: PR may already exist (race condition or previous run)
+    PR_NUMBER="$(gh pr list --head autobot --base master --state open --json number --jq '.[0].number' 2>/dev/null || true)"
+    if [[ -z "$PR_NUMBER" ]]; then
+      echo "[cron] WARNING: no open PR and create failed -> cannot merge, skipping"
+      exit 0
+    fi
+    echo "[cron] WARNING: gh pr create failed but PR exists: #${PR_NUMBER} -> continuing to merge"
+  fi
 fi
 
 # Enable auto-merge (merge commit, safe with protection rules)
-echo "[cron] enabling auto-merge..."
-retry_cmd 5 gh pr merge --merge --admin --delete-branch=false autobot || { echo "[cron] WARNING: gh pr merge failed"; exit 0; }
+# Always runs when PR_NUMBER is known; never blocked by create failures
+echo "[cron] enabling auto-merge on PR #${PR_NUMBER:-autobot}..."
+retry_cmd 5 gh pr merge --merge --admin --delete-branch=false "${PR_NUMBER:-autobot}" || { echo "[cron] WARNING: gh pr merge failed"; exit 0; }
 
 # 5) Auto-sync autobot -> master (fast-forward only, no merge commit)
 echo "[cron] auto-sync autobot -> master (ff-only)"
