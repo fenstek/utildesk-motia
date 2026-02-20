@@ -129,6 +129,31 @@ function isSuspiciousOfficialUrl(u){
   }
 }
 
+// Normalize docs-style URLs to their origin (scheme+host only).
+// Rationale: docs-pages are product documentation, not product landing pages.
+const DOCS_PATH_PREFIXES = ['/docs', '/documentation', '/developers', '/api'];
+
+function normalizeDocsUrl(url) {
+  if (!url) return url;
+  try {
+    const parsed = new URL(url);
+    const path = parsed.pathname.toLowerCase();
+    if (DOCS_PATH_PREFIXES.some(p => path === p || path.startsWith(p + '/'))) {
+      const origin = parsed.origin;
+      console.log(`[official_url] normalized docs-url to origin: ${url} -> ${origin}`);
+      return origin;
+    }
+  } catch {}
+  return url;
+}
+
+// Hard URL overrides for known brand collisions (exact slug -> official_url).
+// These win unconditionally and bypass the suspicious-URL guard.
+const HARD_URL_OVERRIDES = new Map([
+  // Prisma Labs (AI photo/art filter app, prisma-ai.com) vs prisma.io (dev ORM)
+  ['prisma', 'https://prisma-ai.com/'],
+]);
+
 function extractJsonArray(text){
   if(!text) return [];
   let t = text.trim();
@@ -772,9 +797,17 @@ async function main(){
 
             const token2 = (slugify(topic).split('-')[0] || '').toLowerCase();
 
-      // official_url guard (final safety net)
-      const suspicious = !resolvedOfficial || isSuspiciousOfficialUrl(resolvedOfficial) || (hostname(resolvedOfficial) && token2 && !hostContainsToken(hostname(resolvedOfficial), token2));
-      const safeOfficial = suspicious ? '' : resolvedOfficial;
+      // normalize docs-url to origin, then apply hard overrides
+      const normalizedOfficial = normalizeDocsUrl(resolvedOfficial);
+      const hardOverride = HARD_URL_OVERRIDES.get(slug);
+      if (hardOverride) {
+        console.log(`[official_url] hard override for slug=${slug}: ${normalizedOfficial || '(empty)'} -> ${hardOverride}`);
+      }
+      const officialToCheck = hardOverride || normalizedOfficial;
+
+      // official_url guard (final safety net); hard override bypasses suspicious check
+      const suspicious = !hardOverride && (!officialToCheck || isSuspiciousOfficialUrl(officialToCheck) || (hostname(officialToCheck) && token2 && !hostContainsToken(hostname(officialToCheck), token2)));
+      const safeOfficial = hardOverride || (suspicious ? '' : officialToCheck);
       const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
       const safetyNote = suspicious ? `blocked_official_url:${urlResolution?.reason || 'unresolved'}` : '';
 
