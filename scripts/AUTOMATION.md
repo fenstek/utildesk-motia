@@ -168,17 +168,27 @@ Verhalten (Kurzfassung):
    - `content/tools/*.md`
 7) Commit: `content: autogen tools (YYYY-MM-DD HH:MM UTC)`
 8) Push nach `origin/autobot`
-9) PR erstellen (falls nicht vorhanden):
-   - base: `master`
-   - head: `autobot`
-   - title: `Autobot: publish new tools`
+9) PR suchen/erstellen (Logik):
+   - Suche offenen PR: `gh pr list --head autobot --base master --state open`
+   - Falls gefunden: PR-Nummer verwenden, kein create nötig
+   - Falls nicht gefunden: `gh pr create --base master --head autobot ...`
+   - Falls create fehlschlägt (PR existiert bereits, Rate-limit): erneut suchen
+   - Nur wenn weder PR gefunden noch create möglich → `exit 0` (kein Merge möglich)
+   - **create-Fehler blockiert NICHT den Merge** (kein `exit 0` bei vorhandenem PR)
 10) Merge PR automatisch per:
-   - `gh pr merge --merge --admin --delete-branch=false autobot`
+   - `gh pr merge --merge --admin --delete-branch=false <PR_NUMBER>`
+   - `gh pr merge` läuft **immer**, wenn PR-Nummer bekannt ist
 
 ## Hinweise / Risiken
 - GitHub Branch Protection verlangt PR (master ist geschützt). Lösung: Autobranche + PR + Admin-merge.
 - Git Operations laufen über GitHub CLI (`gh auth status -h github.com` muss OK sein).
 - Wenn `gh` Token/Session ausfällt: cron stoppt beim PR/Merge → dann `publish.log` prüfen.
+- **Typischer Dauerfall**: PR bleibt offen (z.B. manuell geöffnet oder nach erstem Commit). Jeder cron-Run findet den PR per `gh pr list` und geht direkt zu `gh pr merge`. `gh pr create` wird in diesem Fall nie aufgerufen.
+
+### PR-Flow Troubleshooting
+- Suche offener PRs: `gh pr list --head autobot --base master --state open`
+- Manueller Merge: `gh pr merge --merge --admin --delete-branch=false <PR_NUMBER>`
+- Logs prüfen auf: `open PR found: #NNN` (PR gefunden) oder `PR created: #NNN` (neu erstellt)
 
 ## Schnelltests
 - Manuell Publish-Lauf:

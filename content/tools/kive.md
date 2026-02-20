@@ -4,7 +4,7 @@ title: "Kive"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://kive.com/"
+official_url: "https://kive.ai/"
 ---
 
 # Kive
