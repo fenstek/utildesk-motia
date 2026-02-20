@@ -30,13 +30,19 @@ function parseFrontmatter(md) {
 if (!fs.existsSync(TOOLS_DIR)) die(`Missing directory: ${TOOLS_DIR}`);
 
 const files = fs.readdirSync(TOOLS_DIR)
-  .filter(f => f.endsWith('.md') && f !== '_TEMPLATE.md')
+  .filter(f => f.endsWith('.md'))
   .map(f => path.join(TOOLS_DIR, f));
 
 const seen = new Map(); // slug -> file
 let count = 0;
 
 for (const file of files) {
+  const filename = path.basename(file);
+  if (filename.startsWith('_')) {
+    console.log(`[check-duplicates] skip disabled file: ${filename}`);
+    continue;
+  }
+
   const md = fs.readFileSync(file, 'utf8');
   const fm = parseFrontmatter(md);
 
