@@ -205,3 +205,26 @@ crontab -l
 tail -n 200 /var/log/utildesk-motia/publish.log
 tail -n 200 /var/log/utildesk-motia/sheet.log
 ```
+
+---
+
+## official_url Guard Rules (sheet_ai_autogen_9_strict_v2.mjs)
+
+### docs-url normalization
+- If the resolved official_url path starts with `/docs`, `/documentation`, `/developers`, or `/api`,
+  the URL is normalized to its origin (scheme+host only).
+- Log: `[official_url] normalized docs-url to origin: <before> -> <after>`
+- Rationale: docs-pages are product documentation, not product landing pages.
+
+### Hard overrides (brand collisions)
+Defined in `HARD_URL_OVERRIDES` Map in `sheet_ai_autogen_9_strict_v2.mjs`.
+These override ANY resolved URL unconditionally and bypass the suspicious-URL guard.
+
+| slug   | override url              | reason                                           |
+|--------|---------------------------|--------------------------------------------------|
+| prisma | https://prisma-ai.com/    | Prisma Labs (photo/art app) — prisma.io is dev ORM |
+
+### Prisma collision note
+`slug=prisma` = Prisma Labs (AI photo/art filter app, prisma-ai.com).
+`prisma.io` = Prisma ORM (developer database tool) — NOT the same product.
+Wikidata P856 or DDG may resolve to prisma.io/docs; the hard override prevents this.

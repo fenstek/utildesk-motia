@@ -4,7 +4,7 @@ title: "Prisma"
 category: "AI"
 price_model: "freemium"
 tags: [ai]
-official_url: "https://www.prisma.io/docs"
+official_url: "https://prisma-ai.com/"
 ---
 
 # Prisma
