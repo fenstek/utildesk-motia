@@ -11,3 +11,7 @@
 # Phantom -> PhantomBuster (wrong tool removed, redirect to correct one)
 /tools/phantom    /tools/phantombuster/    301
 /tools/phantom/   /tools/phantombuster/    301
+
+# grok-ai -> grok (duplicate disabled; grok.ai domain is for sale, unsafe)
+/tools/grok-ai    /tools/grok    301
+/tools/grok-ai/   /tools/grok/   301
