@@ -23,6 +23,15 @@
  *
  *   # limit to first N DONE rows
  *   node scripts/audit_done_missing_official_url.mjs --apply=1 --limit=20
+ *
+ *   # print up to 10 sample DONE rows for sanity check (no writes)
+ *   node scripts/audit_done_missing_official_url.mjs --debug=1
+ *
+ * Proof-of-target block is always printed before any processing so you can
+ * confirm the script is hitting the correct spreadsheet and sheet.
+ *
+ * Empty official_url predicate: null | undefined | "" | "nan" | "null" |
+ *   "undefined" | "none" | '""' | "''" | "-" | "n/a" | "#n/a" (case-insensitive)
  */
 
 import 'dotenv/config';
@@ -181,6 +190,7 @@ function normalizeDocsUrl(url) {
 async function main() {
   const argv   = process.argv.slice(2);
   const apply  = argv.some(a => a === '--apply=1' || a === '--apply');
+  const debug  = argv.some(a => a === '--debug=1' || a === '--debug');
 
   const onlyRaw = (argv.find(a => a.startsWith('--only=')) || '').replace('--only=', '').trim();
   const onlySlugs = onlyRaw ? new Set(onlyRaw.split(',').map(s => s.trim().toLowerCase())) : null;
@@ -208,6 +218,39 @@ async function main() {
   const colNotes    = colLetter(idx.notes);
   const colOfficial = colLetter(idx.official_url);
   const colWikidata = 'wikidata_id' in idx ? colLetter(idx.wikidata_id) : null;
+
+  // ── Proof-of-target (always printed) ─────────────────────────────────────
+  // First 3 data rows shown as raw to confirm the script is targeting the right sheet.
+  const first3 = values.slice(1, 4).map((row, i) => ({
+    row_index: i + 2, // 1-based sheet row (row 1 = header)
+    slug:         String(row[idx.slug]         ?? ''),
+    status:       String(row[idx.status]       ?? ''),
+    official_url: String(row[idx.official_url] ?? ''),
+  }));
+  console.log(JSON.stringify({
+    proof_of_target: {
+      spreadsheet_id: SPREADSHEET_ID,
+      sheet_name:     SHEET_NAME,
+      rows_count:     values.length - 1, // data rows, excluding header
+      first_3_rows:   first3,
+    },
+  }, null, 2));
+
+  // ── Debug: sample DONE rows ────────────────────────────────────────────────
+  if (debug) {
+    const doneSample = [];
+    for (let i = 1; i < values.length && doneSample.length < 10; i++) {
+      const row    = values[i] || [];
+      const status = String(row[idx.status] ?? '').trim().toUpperCase();
+      if (status !== 'DONE') continue;
+      doneSample.push({
+        row_index:    i + 1,
+        slug:         String(row[idx.slug]         ?? ''),
+        official_url: String(row[idx.official_url] ?? ''),
+      });
+    }
+    console.log(JSON.stringify({ debug_done_sample: doneSample }, null, 2));
+  }
 
   // ── Collect DONE rows with missing official_url ──────────────────────────
   const toRepair = [];
@@ -239,7 +282,7 @@ async function main() {
       done_missing_url: 0, repaired: 0, needs_review: 0,
       note: 'All DONE rows have official_url — nothing to do.',
     }, null, 2));
-    return;
+    return; // proof_of_target already printed above
   }
 
   // ── Repair loop ───────────────────────────────────────────────────────────

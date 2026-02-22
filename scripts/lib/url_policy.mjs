@@ -103,11 +103,13 @@ export function normalizeHost(url) {
 }
 
 /**
- * Returns true if the URL is completely absent/empty.
+ * Returns true if the URL value counts as "missing":
+ * null/undefined, empty string, placeholder tokens, dash, n/a.
  */
 export function isMissingUrl(v) {
-  const s = String(v || '').trim().toLowerCase();
-  return !s || ['nan', 'null', 'undefined', 'none', '""', "''"].includes(s);
+  if (v === null || v === undefined) return true;
+  const s = String(v).trim().toLowerCase();
+  return !s || ['nan', 'null', 'undefined', 'none', '""', "''", '-', 'n/a', 'n\\a', '#n/a'].includes(s);
 }
 
 /**
