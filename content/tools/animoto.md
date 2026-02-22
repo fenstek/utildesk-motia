@@ -4,7 +4,7 @@ title: "Animoto"
 category: "AI"
 price_model: "Je nach Plan unterschiedlich"
 tags: [assistant, automation]
-official_url: "https://animoto.ai/"
+official_url: "https://animoto.com/"
 ---
 
 # Animoto
