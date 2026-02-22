@@ -1,10 +1,18 @@
 #!/usr/bin/env node
 /**
- * audit_done_suspicious_official_url.mjs  (v1.2)
+ * audit_done_suspicious_official_url.mjs  (v1.3)
  *
  * Defense-in-depth post-publish audit for DONE rows.
  * Flags rows whose official_url looks suspicious AFTER they have already
  * been published — catching cases that slipped through pre-publish gates.
+ *
+ * v1.3 changes vs v1.2:
+ *   - classifyFinalUrl() on resolved final URLs
+ *   - new reasons:
+ *       redirected_to_parking_or_domain_sale
+ *       final_url_matches_denied_pattern
+ *       final_host_parking_provider
+ *       final_url_suspicious_content_hub
  *
  * v1.2 changes vs v1.1:
  *   - resolveFinalUrl() for every DONE row
@@ -24,7 +32,7 @@
  *   clean          → no issues
  *
  * Checks applied (in order):
- *   1. resolveFinalUrl() + denied final host check
+ *   1. resolveFinalUrl() + final URL suspicion check
  *   2. validateOfficialUrl()   — full policy check (v2.5):
  *        redirector_query, denied_host, too_generic_root,
  *        suspicious_url_pattern, wrong_entity_domain
@@ -56,10 +64,10 @@ import { pathToFileURL } from 'node:url';
 
 import {
   validateOfficialUrl,
-  isDeniedFinalHost,
 } from './lib/url_policy.mjs';
 
 import { resolveFinalUrl } from './lib/http_verify_url.mjs';
+import { classifyFinalUrl } from './lib/url_suspicion.mjs';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
@@ -261,13 +269,19 @@ async function main() {
     let finalUrl      = '';
     let finalHost     = '';
 
-    // Check 1: resolve final URL for every DONE row and block denied final hosts.
+    // Check 1: resolve final URL for every DONE row and classify final destination.
     const resolved = await resolveFinalUrl(row.offUrl, { timeoutMs: 5000, maxRedirects: 6 });
     if (resolved.ok && resolved.finalUrl) {
       finalUrl = String(resolved.finalUrl || '').trim();
       finalHost = normalizeHost(finalUrl);
-      if (finalHost && isDeniedFinalHost(finalHost)) {
-        reasons.push('redirected_to_denied_final_host');
+      const suspicion = classifyFinalUrl({
+        originalUrl: row.offUrl,
+        finalUrl,
+        slug: row.slug,
+        title: row.title,
+      });
+      if (suspicion.verdict !== 'allow' && suspicion.reasons.length) {
+        reasons.push(...suspicion.reasons);
       }
     }
 
