@@ -274,3 +274,36 @@ Every run of `test_run_9_full.mjs` emits a `publish_counters` JSON block:
 ```
 
 Use these counters to verify the gates are firing correctly.
+
+---
+
+## Repo-level post-publish audit (`audit_repo_tools_missing_official_url.mjs`)
+
+**What it checks:**
+Scans every `content/tools/*.md` file and flags those where `official_url`
+in the frontmatter is absent, empty, or a placeholder value (`-`, `n/a`, etc.).
+Files beginning with `_` (templates, disabled) are skipped.
+
+**Source of truth:** Google Sheet column K (`official_url`).
+This audit patches MD files only — Sheet status is never changed.
+
+**Blocks what:** Nothing automatically (manual tool). But a file without
+`official_url` in frontmatter will render without a link on the site.
+
+**When to run:**
+
+| Trigger | Command |
+|---|---|
+| Before re-enabling cron after a pause | `node scripts/audit_repo_tools_missing_official_url.mjs --apply=1` |
+| After bulk import or manual MD creation | `--apply=1` |
+| Periodic health check | dry-run (alert if count > 0) |
+| After merging a large batch PR | dry-run |
+
+**Outcome on "still missing in Sheet":**
+The MD file is left unchanged. The slug appears in `still_missing_in_sheet`
+in the JSON summary — investigate via `audit_done_missing_official_url.mjs`
+(Wikidata/DDG repair) or manually set the Sheet row to NEEDS_REVIEW.
+
+**Related scripts:**
+- `audit_done_missing_official_url.mjs` — repairs DONE rows in the Sheet itself
+- `audit_publish_preflight.mjs` — validates NEW rows before they enter the publish queue
