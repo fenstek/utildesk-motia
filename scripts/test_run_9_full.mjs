@@ -217,6 +217,22 @@ for (let i = 0; i < COUNT; i++){
     rowNum = readRowNumber(out);
     if(!rowNum) die('Could not parse row_number from sheet_get_next_new output');
 
+    // ─── GATE: official_url must be present before any generation ────────────
+    // This is the mandatory publish safety gate — no tool is generated without a
+    // validated official_url. The autogen gate (sheet_ai_autogen_9_strict_v2.mjs)
+    // already blocks NEW status for missing URLs; this is the defense-in-depth
+    // layer inside the publish orchestrator itself.
+    const officialUrl = String(norm.official_url || '').trim().toLowerCase();
+    const officialUrlMissing = !officialUrl ||
+      ['', 'nan', 'null', 'undefined', 'none', '""', "''"].includes(officialUrl);
+    if (officialUrlMissing) {
+      console.error(`[GATE] BLOCKED row=${rowNum} slug=${norm.slug || '?'}: missing official_url`);
+      console.error(`[GATE] publish blocked: missing official_url — setting NEEDS_REVIEW`);
+      updateStatus(rowNum, 'NEEDS_REVIEW', 'publish blocked: missing official_url', updateCounts);
+      continue; // skip all generation steps for this row
+    }
+    // ─────────────────────────────────────────────────────────────────────────
+
     // 2) generate markdown (needs tool.json)
     runInherit('node', ['scripts/generate_tool_md.mjs', TOOL_JSON]);
 
