@@ -7,6 +7,34 @@
 - Используем официальные фавиконы и иконки брендов (official_url / SimpleIcons / favicon endpoints)
 - Генерация изображений исключена из обязательного пайплайна
 - `content/tools/_*.md` считаются disabled/ignored и должны пропускаться всеми guard-скриптами (включая `check_duplicates.mjs`)
+- **Публикация без official_url запрещена** — см. PUBLISH_GATES.md
+
+## ОБЯЗАТЕЛЬНЫЕ ГЕЙТЫ (v2.3, добавлены 2026-02)
+
+Подробнее: `scripts/PUBLISH_GATES.md`
+
+### Гейт 1 — official_url в autogen
+`sheet_ai_autogen_9_strict_v2.mjs` перед записью строки проверяет:
+- official_url непустой, https, не в denylist, hostname содержит slug-токен
+- Если нет → status=NEEDS_REVIEW, notes содержит причину
+- Счётчик: `blocked_missing_url` в url_resolution_summary
+
+### Гейт 2 — tags в autogen
+- Хотя бы 1 конкретный тег (не просто "ai")
+- Если нет → status=NEEDS_REVIEW, notes="blocked:missing/invalid tags"
+- Счётчик: `blocked_missing_tags`
+
+### Гейт 3 — official_url в publish-оркестраторе
+`test_run_9_full.mjs` после чтения NEW-строки и до вызова generate_tool_md:
+- Если official_url пустой/NaN/null → status=NEEDS_REVIEW, строка пропускается
+- Это defense-in-depth: срабатывает даже если гейт autogen был обойдён
+
+### Pre-flight audit
+Перед возобновлением cron запустить:
+```bash
+node scripts/audit_publish_preflight.mjs        # dry-run
+node scripts/audit_publish_preflight.mjs --apply  # перевести проблемные NEW → NEEDS_REVIEW
+```
 
 СТРУКТУРА
 - scripts/ — автоматизация
