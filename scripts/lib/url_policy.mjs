@@ -218,6 +218,33 @@ export function isDeniedFinalHost(host) {
   return isDeniedHost(host);
 }
 
+// ─── Final URL deny patterns (parking / domain-sale) ───────────────────────
+// These patterns are intended for resolved final URLs.
+
+export const DENY_FINAL_URL_PATTERNS = [
+  /\/domain-for-sale(?:[/?#]|$)/i,
+  /\/buy-domain(?:[/?#]|$)/i,
+  /\/for-sale(?:[/?#]|$)/i,
+  /[?&](?:domain|buy|sale|auction)=/i,
+  /sedo\.com\/search\/details\//i,
+  /dan\.com\/buy-domain\//i,
+];
+
+/**
+ * Returns matched deny-pattern reason for resolved final URL, or empty string.
+ *
+ * @param {string} url
+ * @returns {string}
+ */
+export function matchDeniedFinalUrlPattern(url) {
+  const raw = String(url || '').trim();
+  if (!raw) return '';
+  for (const re of DENY_FINAL_URL_PATTERNS) {
+    if (re.test(raw)) return 'final_url_matches_denied_pattern';
+  }
+  return '';
+}
+
 /**
  * Returns true if the URL contains deny substrings in host+path.
  */

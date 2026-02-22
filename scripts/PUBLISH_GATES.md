@@ -23,8 +23,11 @@ A gate is a check that, when it fails, **prevents** a row from advancing to `NEW
 not a hard block. Only clearly wrong-entity domains (e.g., `transformers.hasbro.com`)
 remain as blocking conditions.
 
-**Final redirect host denylist (hard block):** QC resolves redirects and blocks any
-row whose resolved final host is in `DENY_HOSTS` (reason: `redirected_to_denied_final_host`).
+**Final redirect destination checks (hard block/review):** QC resolves redirects and classifies
+final destinations via `classifyFinalUrl()`:
+- hard block: `redirected_to_denied_final_host`, `redirected_to_parking_or_domain_sale`,
+  `final_host_parking_provider`, `final_url_matches_denied_pattern`
+- review block: `final_url_suspicious_content_hub`
 
 ---
 
@@ -95,12 +98,19 @@ status = NEEDS_REVIEW  if:
 
 This ensures queue-cleaning failures never allow unsafe publish progression.
 
-### Final redirect host denylist
+### Final redirect destination policy
 
 `audit_new_inprogress_qc.mjs` resolves each `official_url` with `resolveFinalUrl()`.
-If the **final** hostname is in `DENY_HOSTS`, the row is hard-blocked with:
+Then `scripts/lib/url_suspicion.mjs` classifies the destination:
+- `deny` -> row is blocked (`NEEDS_REVIEW`)
+- `review` -> row is also routed to `NEEDS_REVIEW` for manual validation
 
-`redirected_to_denied_final_host`
+Primary reason codes:
+- `redirected_to_denied_final_host`
+- `redirected_to_parking_or_domain_sale`
+- `final_host_parking_provider`
+- `final_url_matches_denied_pattern`
+- `final_url_suspicious_content_hub`
 
 On `--apply=1`, such rows are moved to `NEEDS_REVIEW`.
 This prevents redirect-based squats/parking URLs from reaching publish.

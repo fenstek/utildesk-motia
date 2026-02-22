@@ -4,7 +4,8 @@ import { google } from 'googleapis';
 import { pathToFileURL } from 'node:url';
 
 import { resolveFinalUrl } from './lib/http_verify_url.mjs';
-import { validateOfficialUrl, isMissingUrl, isDeniedFinalHost } from './lib/url_policy.mjs';
+import { validateOfficialUrl, isMissingUrl } from './lib/url_policy.mjs';
+import { classifyFinalUrl } from './lib/url_suspicion.mjs';
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -18,6 +19,10 @@ const TRACKED_REASONS = [
   'invalid_url',
   'head_check_failed',
   'redirected_to_denied_final_host',
+  'redirected_to_parking_or_domain_sale',
+  'final_url_matches_denied_pattern',
+  'final_host_parking_provider',
+  'final_url_suspicious_content_hub',
   'duplicate_of',
   'stuck_in_progress',
   'missing_specific_tags',
@@ -136,14 +141,6 @@ function isSelfReference(url) {
   }
 }
 
-function hostFromUrl(url) {
-  try {
-    return new URL(String(url || '').trim()).hostname.replace(/\.+$/, '').toLowerCase();
-  } catch {
-    return '';
-  }
-}
-
 async function sheetsClient() {
   if (GOOGLE_CLIENT_EMAIL && GOOGLE_PRIVATE_KEY) {
     const auth = new google.auth.JWT({
@@ -241,6 +238,10 @@ async function main() {
     invalid_url: [],
     head_check_failed: [],
     redirected_to_denied_final_host: [],
+    redirected_to_parking_or_domain_sale: [],
+    final_url_matches_denied_pattern: [],
+    final_host_parking_provider: [],
+    final_url_suspicious_content_hub: [],
   };
 
   const evals = [];
@@ -279,15 +280,20 @@ async function main() {
         urlPassed = false;
       } else {
         finalUrl = String(verified.finalUrl || '').trim();
-        const finalHost = hostFromUrl(finalUrl);
+        const suspicion = classifyFinalUrl({
+          originalUrl: row.official_url,
+          finalUrl,
+          slug: row.slug,
+          title: row.title || row.topic,
+        });
 
         if (!internalTool && isSelfReference(finalUrl)) {
           reasons.push('self_reference');
           urlPassed = false;
         }
 
-        if (isDeniedFinalHost(finalHost)) {
-          reasons.push('redirected_to_denied_final_host');
+        if (suspicion.verdict !== 'allow' && suspicion.reasons.length) {
+          reasons.push(...suspicion.reasons);
           urlPassed = false;
         }
 
@@ -437,6 +443,10 @@ async function main() {
       invalid_url: reasonRows.invalid_url,
       head_check_failed: reasonRows.head_check_failed,
       redirected_to_denied_final_host: reasonRows.redirected_to_denied_final_host,
+      redirected_to_parking_or_domain_sale: reasonRows.redirected_to_parking_or_domain_sale,
+      final_url_matches_denied_pattern: reasonRows.final_url_matches_denied_pattern,
+      final_host_parking_provider: reasonRows.final_host_parking_provider,
+      final_url_suspicious_content_hub: reasonRows.final_url_suspicious_content_hub,
     },
     moved_rows_top20: movedRows.slice(0, 20),
     moved_rows_count: movedRows.length,
