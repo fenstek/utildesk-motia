@@ -182,4 +182,17 @@ else
   echo "[cron] skip pushing master to avoid non-fast-forward update"
 fi
 
+# 6) Post-publish advisory: scan DONE rows for suspicious URLs
+#    Dry-run only — does NOT change statuses. Set POST_PUBLISH_URL_AUDIT=1 to enable.
+if [[ "${POST_PUBLISH_URL_AUDIT:-0}" == "1" ]]; then
+  echo "[cron] post-publish: audit_done_suspicious_official_url.mjs (dry-run)"
+  DONE_AUDIT_OUT="$(node scripts/audit_done_suspicious_official_url.mjs --json 2>/dev/null || true)"
+  DONE_FLAGGED="$(printf '%s\n' "$DONE_AUDIT_OUT" | grep -oP '"flagged_count":\s*\K\d+' | head -1 || echo '?')"
+  DONE_CHECKED="$(printf '%s\n' "$DONE_AUDIT_OUT" | grep -oP '"total_done_checked":\s*\K\d+' | head -1 || echo '?')"
+  echo "[cron] done-url-audit: checked=${DONE_CHECKED} flagged=${DONE_FLAGGED}"
+  if [[ "${DONE_FLAGGED:-0}" != "0" && "${DONE_FLAGGED:-?}" != "?" ]]; then
+    echo "[cron] WARN: ${DONE_FLAGGED} DONE rows have suspicious official_url -> run audit_done_suspicious_official_url.mjs --apply=1 manually"
+  fi
+fi
+
 echo "[cron] done: $(date -Is)"
