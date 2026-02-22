@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 /**
- * audit_done_suspicious_official_url.mjs  (v1.1)
+ * audit_done_suspicious_official_url.mjs  (v1.2)
  *
  * Defense-in-depth post-publish audit for DONE rows.
  * Flags rows whose official_url looks suspicious AFTER they have already
  * been published — catching cases that slipped through pre-publish gates.
+ *
+ * v1.2 changes vs v1.1:
+ *   - resolveFinalUrl() for every DONE row
+ *   - hard block when resolved final host is denied:
+ *       reason=redirected_to_denied_final_host
  *
  * v1.1 changes vs v1.0:
  *   - hostname_mismatch demoted to soft_flag (never triggers NEEDS_REVIEW)
@@ -19,13 +24,14 @@
  *   clean          → no issues
  *
  * Checks applied (in order):
- *   1. validateOfficialUrl()   — full policy check (v2.5):
+ *   1. resolveFinalUrl() + denied final host check
+ *   2. validateOfficialUrl()   — full policy check (v2.5):
  *        redirector_query, denied_host, too_generic_root,
  *        suspicious_url_pattern, wrong_entity_domain
  *        not_https → intercepted: try HTTP upgrade first
- *   2. suspicious_tld_org_net  — host is <slug>.org or <slug>.net while
+ *   3. suspicious_tld_org_net  — host is <slug>.org or <slug>.net while
  *        the slug does NOT belong to a known open-source project
- *   3. hostname_mismatch       — soft_flag only (informational)
+ *   4. hostname_mismatch       — soft_flag only (informational)
  *
  * Usage:
  *   # dry-run — report only, no writes (default)
@@ -50,6 +56,7 @@ import { pathToFileURL } from 'node:url';
 
 import {
   validateOfficialUrl,
+  isDeniedFinalHost,
 } from './lib/url_policy.mjs';
 
 import { resolveFinalUrl } from './lib/http_verify_url.mjs';
@@ -250,42 +257,56 @@ async function main() {
   for (const row of toCheck) {
     const reasons     = [];   // hard-block reasons → flagged bucket
     const softReasons = [];   // advisory reasons → softFlagged bucket
+    const sourceHost  = normalizeHost(row.offUrl);
+    let finalUrl      = '';
+    let finalHost     = '';
 
-    // Check 1: validateOfficialUrl (full policy v2.5)
+    // Check 1: resolve final URL for every DONE row and block denied final hosts.
+    const resolved = await resolveFinalUrl(row.offUrl, { timeoutMs: 5000, maxRedirects: 6 });
+    if (resolved.ok && resolved.finalUrl) {
+      finalUrl = String(resolved.finalUrl || '').trim();
+      finalHost = normalizeHost(finalUrl);
+      if (finalHost && isDeniedFinalHost(finalHost)) {
+        reasons.push('redirected_to_denied_final_host');
+      }
+    }
+
+    // Check 2: validateOfficialUrl (full policy v2.5)
     const vResult = validateOfficialUrl(row.offUrl, { slug: row.slug, title: row.title });
 
     if (!vResult.ok) {
       if (vResult.reason === 'not_https') {
         // Attempt HTTP→HTTPS upgrade before flagging
         const upgrade = await tryHttpUpgrade(row.offUrl);
-        if (upgrade.upgradeable) {
-          httpUpgradeable.push({ ...row, httpsUrl: upgrade.httpsUrl });
+        if (upgrade.upgradeable && reasons.length === 0) {
+          httpUpgradeable.push({ ...row, httpsUrl: upgrade.httpsUrl, finalUrl, finalHost, sourceHost });
           continue;
         }
         // Could not upgrade — treat as hard block
-        reasons.push('not_https');
+        if (!reasons.includes('not_https')) reasons.push('not_https');
       } else {
         // Hard block from url_policy
-        reasons.push(vResult.reason || 'policy_violation');
+        const reason = vResult.reason || 'policy_violation';
+        if (!reasons.includes(reason)) reasons.push(reason);
       }
     } else {
-      // Check 2: suspicious .org / .net TLD (advisory, DONE-specific)
+      // Check 3: suspicious .org / .net TLD (advisory, DONE-specific)
       const host = normalizeHost(row.offUrl);
       const tldCheck = checkSuspiciousTldOrgNet(host, row.slug);
-      if (tldCheck) reasons.push(tldCheck);
+      if (tldCheck && !reasons.includes(tldCheck)) reasons.push(tldCheck);
 
-      // Check 3: hostname_mismatch → soft_flag only (never NEEDS_REVIEW)
+      // Check 4: hostname_mismatch → soft_flag only (never NEEDS_REVIEW)
       if (vResult.flags.includes('hostname_mismatch')) {
         softReasons.push('hostname_mismatch');
       }
     }
 
     if (reasons.length) {
-      flagged.push({ ...row, reasons });
+      flagged.push({ ...row, reasons: Array.from(new Set(reasons)), finalUrl, finalHost, sourceHost });
     } else if (softReasons.length) {
-      softFlagged.push({ ...row, softReasons });
+      softFlagged.push({ ...row, softReasons, finalUrl, finalHost, sourceHost });
     } else {
-      clean.push(row);
+      clean.push({ ...row, finalUrl, finalHost, sourceHost });
     }
   }
 
@@ -399,6 +420,7 @@ async function main() {
       row:          r.rowNumber,
       slug:         r.slug,
       official_url: r.offUrl,
+      final_url:    r.finalUrl,
       reasons:      r.reasons,
     })),
     http_upgraded_rows: httpUpgradeable.map(r => ({
