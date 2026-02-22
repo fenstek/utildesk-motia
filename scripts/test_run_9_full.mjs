@@ -189,6 +189,13 @@ console.log(`[INFO] Processing ${COUNT} NEW tools`);
 
 const deferredFinalCheck = [];
 const updateCounts = new Map();
+const publishCounters = {
+  publish_blocked_missing_url: 0,
+  publish_blocked_missing_tags: 0,
+  publish_done: 0,
+  publish_deferred: 0,
+  publish_error: 0,
+};
 
 for (let i = 0; i < COUNT; i++){
   console.log(`\n[STEP] ${i+1}/${COUNT}`);
@@ -229,7 +236,18 @@ for (let i = 0; i < COUNT; i++){
       console.error(`[GATE] BLOCKED row=${rowNum} slug=${norm.slug || '?'}: missing official_url`);
       console.error(`[GATE] publish blocked: missing official_url — setting NEEDS_REVIEW`);
       updateStatus(rowNum, 'NEEDS_REVIEW', 'publish blocked: missing official_url', updateCounts);
+      publishCounters.publish_blocked_missing_url++;
       continue; // skip all generation steps for this row
+    }
+
+    // tags gate (defense-in-depth — tags should have been validated by autogen)
+    const tagsRaw = String(norm.tags || '').trim();
+    const tagsSpecific = tagsRaw.split(',').map(t => t.trim().toLowerCase()).filter(t => t && t !== 'ai' && t !== 'produktivität');
+    if (tagsRaw && tagsSpecific.length === 0) {
+      console.error(`[GATE] BLOCKED row=${rowNum} slug=${norm.slug || '?'}: missing specific tags`);
+      updateStatus(rowNum, 'NEEDS_REVIEW', 'publish blocked: missing specific tags', updateCounts);
+      publishCounters.publish_blocked_missing_tags++;
+      continue;
     }
     // ─────────────────────────────────────────────────────────────────────────
 
@@ -258,15 +276,18 @@ for (let i = 0; i < COUNT; i++){
         slug: norm.slug,
         reason: 'pre_commit_missing_or_untracked',
       });
+      publishCounters.publish_deferred++;
       continue;
     }
 
     // 5) set status DONE by row_number (real interface)
     updateStatus(rowNum, 'DONE', 'precommit_tracked_done', updateCounts);
+    publishCounters.publish_done++;
   } catch (e) {
     const msg = (e && (e.message || String(e))) || 'unknown error';
     console.log('[FAIL]', msg);
     markError(rowNum, msg, updateCounts);
+    publishCounters.publish_error++;
     throw e;
   }
 }
@@ -277,3 +298,4 @@ if (deferredFinalCheck.length) {
 }
 
 console.log('\n[SUCCESS] Finished processing tools');
+console.log(JSON.stringify({ ok: true, publish_counters: publishCounters }, null, 2));
