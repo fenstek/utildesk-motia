@@ -113,7 +113,27 @@ Cloudflare Pages должен деплоить ветку **master**. Поэто
 NEW -> IN_PROGRESS -> DONE
 
 Команда запуска:
-node scripts/test_run_9_full.mjs 3
+node scripts/test_run_9_full.mjs 10
+
+## Batch size (PUBLISH_BATCH_SIZE)
+
+По умолчанию publish-run обрабатывает **10** NEW-строк за запуск.
+
+Переменная `PUBLISH_BATCH_SIZE` позволяет переопределить значение без правки кода:
+
+| Источник           | Приоритет | Пример                                  |
+|--------------------|-----------|------------------------------------------|
+| CLI-аргумент       | 1 (выше)  | `node scripts/test_run_9_full.mjs 5`    |
+| `PUBLISH_BATCH_SIZE` env | 2    | `PUBLISH_BATCH_SIZE=5 bash cron_publish_push.sh` |
+| Дефолт             | 3 (ниже)  | (без аргументов) → 10                   |
+
+Допустимый диапазон: 1–50. Значения вне диапазона автоматически обрезаются.
+
+В логах при каждом запуске cron выводится строка:
+```
+[cron] batch_size=10
+[INFO] Processing 10 NEW tools (batch_size=10 source=cli_arg)
+```
 
 ОБЯЗАТЕЛЬНЫЕ СКРИПТЫ ПАЙПЛАЙНА
 - sheet_ai_autogen_9_strict_v2.mjs
@@ -191,7 +211,7 @@ Verhalten (Kurzfassung):
 1) `git fetch --all --prune`
 2) `git checkout autobot` (falls nicht vorhanden: erstellen)
 3) `git reset --hard origin/autobot` (sauberer Zustand)
-4) `node scripts/test_run_9_full.mjs 3`
+4) `node scripts/test_run_9_full.mjs ${PUBLISH_BATCH_SIZE:-10}`
 5) Prüft Änderungen via `git status --porcelain`
 6) **Allowlist**: commit/push nur, wenn Änderungen ausschließlich in:
    - `content/tools/*.md`
