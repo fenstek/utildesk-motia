@@ -24,7 +24,7 @@ not a hard block. Only clearly wrong-entity domains (e.g., `transformers.hasbro.
 remain as blocking conditions.
 
 **Final redirect host denylist (hard block):** QC resolves redirects and blocks any
-row whose resolved final host is in `DENY_HOSTS` (reason: `redirected_to_denied_host`).
+row whose resolved final host is in `DENY_HOSTS` (reason: `redirected_to_denied_final_host`).
 
 ---
 
@@ -100,7 +100,7 @@ This ensures queue-cleaning failures never allow unsafe publish progression.
 `audit_new_inprogress_qc.mjs` resolves each `official_url` with `resolveFinalUrl()`.
 If the **final** hostname is in `DENY_HOSTS`, the row is hard-blocked with:
 
-`redirected_to_denied_host`
+`redirected_to_denied_final_host`
 
 On `--apply=1`, such rows are moved to `NEEDS_REVIEW`.
 This prevents redirect-based squats/parking URLs from reaching publish.
