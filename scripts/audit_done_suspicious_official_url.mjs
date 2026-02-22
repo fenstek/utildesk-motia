@@ -1,25 +1,37 @@
 #!/usr/bin/env node
 /**
- * audit_done_suspicious_official_url.mjs  (v1.0)
+ * audit_done_suspicious_official_url.mjs  (v1.1)
  *
  * Defense-in-depth post-publish audit for DONE rows.
  * Flags rows whose official_url looks suspicious AFTER they have already
  * been published — catching cases that slipped through pre-publish gates.
  *
+ * v1.1 changes vs v1.0:
+ *   - hostname_mismatch demoted to soft_flag (never triggers NEEDS_REVIEW)
+ *   - not_https: auto-upgrade attempt via resolveFinalUrl(); if final URL
+ *     is https → http_upgradeable bucket (URL updated, status stays DONE)
+ *   - denied_host for google.com subdomains fixed in url_policy.mjs (v2.5)
+ *
+ * Four mutually exclusive result buckets:
+ *   flagged        → hard policy violation → NEEDS_REVIEW on --apply=1
+ *   httpUpgradeable → not_https but resolves to https → URL fixed on --apply=1
+ *   softFlagged    → hostname_mismatch only (informational, no action taken)
+ *   clean          → no issues
+ *
  * Checks applied (in order):
  *   1. validateOfficialUrl()   — full policy check (v2.5):
  *        redirector_query, denied_host, too_generic_root,
  *        suspicious_url_pattern, wrong_entity_domain
+ *        not_https → intercepted: try HTTP upgrade first
  *   2. suspicious_tld_org_net  — host is <slug>.org or <slug>.net while
- *        the slug does NOT belong to a known open-source project (.org allowed)
- *   3. hostname_mismatch       — elevated from advisory to audit flag when
- *        ok=true but flags includes 'hostname_mismatch'
+ *        the slug does NOT belong to a known open-source project
+ *   3. hostname_mismatch       — soft_flag only (informational)
  *
  * Usage:
  *   # dry-run — report only, no writes (default)
  *   node scripts/audit_done_suspicious_official_url.mjs
  *
- *   # apply — move flagged rows to NEEDS_REVIEW in Google Sheet
+ *   # apply — move flagged rows to NEEDS_REVIEW; fix http→https URLs in sheet
  *   node scripts/audit_done_suspicious_official_url.mjs --apply=1
  *
  *   # limit to first N DONE rows
@@ -38,14 +50,14 @@ import { pathToFileURL } from 'node:url';
 
 import {
   validateOfficialUrl,
-  isMissingUrl,
-  DENY_HOSTS,
 } from './lib/url_policy.mjs';
+
+import { resolveFinalUrl } from './lib/http_verify_url.mjs';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
-const SPREADSHEET_ID     = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
-const SHEET_NAME         = process.env.SHEET_NAME     || 'Tabellenblatt1';
+const SPREADSHEET_ID      = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
+const SHEET_NAME          = process.env.SHEET_NAME     || 'Tabellenblatt1';
 const GOOGLE_CLIENT_EMAIL = process.env.GOOGLE_CLIENT_EMAIL;
 const GOOGLE_PRIVATE_KEY  = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
 const SA_JSON_PATH        = '/opt/utildesk-motia/secrets/google-service-account.json';
@@ -100,6 +112,27 @@ function normalizeHost(url) {
   }
 }
 
+// ─── HTTP → HTTPS upgrade helper ─────────────────────────────────────────────
+
+/**
+ * Attempts to resolve an http:// URL and check whether the final destination
+ * is an https:// URL (i.e. the site simply redirects to https).
+ *
+ * @param {string} url - An http:// URL
+ * @returns {Promise<{upgradeable: boolean, httpsUrl: string}>}
+ */
+async function tryHttpUpgrade(url) {
+  try {
+    const result = await resolveFinalUrl(url, { timeoutMs: 5000, maxRedirects: 6 });
+    if (result.ok && result.finalUrl && result.finalUrl.startsWith('https://')) {
+      return { upgradeable: true, httpsUrl: result.finalUrl };
+    }
+  } catch {
+    // network error — treat as non-upgradeable
+  }
+  return { upgradeable: false, httpsUrl: '' };
+}
+
 // ─── Additional audit heuristics (beyond validateOfficialUrl) ────────────────
 
 /**
@@ -117,24 +150,12 @@ function checkSuspiciousTldOrgNet(host, slug) {
   if (!tld) return null;
   if (ORG_TLD_ALLOWLIST.has(host)) return null;
 
-  // Extract the slug's primary token (first hyphen-segment, lowercased)
   const slugBase = slug.replace(/-/g, '').toLowerCase();
   const hostBase = host.slice(0, host.length - tld.length).replace(/[^a-z0-9]/g, '').toLowerCase();
 
   if (hostBase && slugBase && (hostBase === slugBase || hostBase.includes(slugBase) || slugBase.includes(hostBase))) {
     return `suspicious_tld_org_net:${host}`;
   }
-  return null;
-}
-
-/**
- * Check 3: escalate the advisory hostname_mismatch flag from validateOfficialUrl
- * to an audit finding when the mismatch is present in a DONE row.
- *
- * Only applied when validateOfficialUrl returned ok=true with 'hostname_mismatch' flag.
- */
-function checkHostnameMismatch(flags) {
-  if (flags.includes('hostname_mismatch')) return 'hostname_mismatch';
   return null;
 }
 
@@ -163,8 +184,8 @@ async function main() {
   const apply   = argv.includes('--apply=1') || argv.includes('--apply');
   const jsonOut = argv.includes('--json');
 
-  const onlyRaw    = (argv.find(a => a.startsWith('--only=')) || '').replace('--only=', '').trim();
-  const onlySlugs  = onlyRaw ? new Set(onlyRaw.split(',').map(s => s.trim().toLowerCase())) : null;
+  const onlyRaw   = (argv.find(a => a.startsWith('--only=')) || '').replace('--only=', '').trim();
+  const onlySlugs = onlyRaw ? new Set(onlyRaw.split(',').map(s => s.trim().toLowerCase())) : null;
 
   const limitArg = (argv.find(a => a.startsWith('--limit=')) || '').replace('--limit=', '').trim();
   const limit    = limitArg ? Math.max(1, Math.min(5000, Number(limitArg) || 0)) : 0;
@@ -186,10 +207,11 @@ async function main() {
   const missing  = required.filter(k => !(k in idx));
   if (missing.length) die(`Missing columns: ${missing.join(', ')}`);
 
-  const hasTags   = 'tags'  in idx;
-  const hasTitle  = 'title' in idx;
-  const colStatus = colLetter(idx.status);
-  const colNotes  = colLetter(idx.notes);
+  const hasTags      = 'tags'  in idx;
+  const hasTitle     = 'title' in idx;
+  const colStatus    = colLetter(idx.status);
+  const colNotes     = colLetter(idx.notes);
+  const colOfficialUrl = colLetter(idx.official_url);
 
   // ── Collect DONE rows ────────────────────────────────────────────────────
   const toCheck = [];
@@ -214,31 +236,54 @@ async function main() {
   }
 
   // ── Check each DONE row ──────────────────────────────────────────────────
-  const flagged = [];
-  const clean   = [];
+  // Four mutually exclusive buckets:
+  //   flagged         → hard policy violation → NEEDS_REVIEW
+  //   httpUpgradeable → http:// that resolves to https:// → fix URL
+  //   softFlagged     → hostname_mismatch only (informational)
+  //   clean           → no issues
+
+  const flagged         = [];
+  const httpUpgradeable = [];
+  const softFlagged     = [];
+  const clean           = [];
 
   for (const row of toCheck) {
-    const reasons = [];
+    const reasons     = [];   // hard-block reasons → flagged bucket
+    const softReasons = [];   // advisory reasons → softFlagged bucket
 
     // Check 1: validateOfficialUrl (full policy v2.5)
     const vResult = validateOfficialUrl(row.offUrl, { slug: row.slug, title: row.title });
 
     if (!vResult.ok) {
-      // Hard block from url_policy — definitely suspicious
-      reasons.push(vResult.reason || 'policy_violation');
+      if (vResult.reason === 'not_https') {
+        // Attempt HTTP→HTTPS upgrade before flagging
+        const upgrade = await tryHttpUpgrade(row.offUrl);
+        if (upgrade.upgradeable) {
+          httpUpgradeable.push({ ...row, httpsUrl: upgrade.httpsUrl });
+          continue;
+        }
+        // Could not upgrade — treat as hard block
+        reasons.push('not_https');
+      } else {
+        // Hard block from url_policy
+        reasons.push(vResult.reason || 'policy_violation');
+      }
     } else {
       // Check 2: suspicious .org / .net TLD (advisory, DONE-specific)
       const host = normalizeHost(row.offUrl);
       const tldCheck = checkSuspiciousTldOrgNet(host, row.slug);
       if (tldCheck) reasons.push(tldCheck);
 
-      // Check 3: escalate hostname_mismatch advisory → audit finding
-      const mmCheck = checkHostnameMismatch(vResult.flags);
-      if (mmCheck) reasons.push(mmCheck);
+      // Check 3: hostname_mismatch → soft_flag only (never NEEDS_REVIEW)
+      if (vResult.flags.includes('hostname_mismatch')) {
+        softReasons.push('hostname_mismatch');
+      }
     }
 
     if (reasons.length) {
       flagged.push({ ...row, reasons });
+    } else if (softReasons.length) {
+      softFlagged.push({ ...row, softReasons });
     } else {
       clean.push(row);
     }
@@ -249,7 +294,7 @@ async function main() {
   const samples = {};
   for (const r of flagged) {
     for (const reason of r.reasons) {
-      const key = reason.split(':')[0]; // normalize "denied_host:foo" → "denied_host"
+      const key = reason.split(':')[0];
       reasons_breakdown[key] = (reasons_breakdown[key] || 0) + 1;
       if (!samples[key]) samples[key] = [];
       if (samples[key].length < 3) samples[key].push(r.slug);
@@ -260,20 +305,34 @@ async function main() {
   if (!jsonOut) {
     console.log(`\n${'─'.repeat(72)}`);
     console.log(`Done-URL Audit: ${toCheck.length} DONE rows checked`);
-    console.log(`  CLEAN: ${clean.length}  |  FLAGGED: ${flagged.length}`);
+    console.log(`  CLEAN: ${clean.length}  |  FLAGGED: ${flagged.length}  |  HTTP_UPGRADE: ${httpUpgradeable.length}  |  SOFT: ${softFlagged.length}`);
     console.log(`${'─'.repeat(72)}`);
 
     if (flagged.length) {
-      console.log('\nFLAGGED rows:');
-      console.log(
-        `${'#'.padEnd(4)} ${'row'.padEnd(5)} ${'slug'.padEnd(35)} reasons`
-      );
+      console.log('\nFLAGGED rows (→ NEEDS_REVIEW):');
+      console.log(`${'#'.padEnd(4)} ${'row'.padEnd(5)} ${'slug'.padEnd(35)} reasons`);
       console.log(`${'─'.repeat(72)}`);
       flagged.forEach((r, i) => {
         console.log(
           `${String(i + 1).padEnd(4)} ${String(r.rowNumber).padEnd(5)} ${r.slug.padEnd(35)} ${r.reasons.join('; ')}`
         );
       });
+    }
+
+    if (httpUpgradeable.length) {
+      console.log('\nHTTP_UPGRADEABLE rows (http → https redirect):');
+      console.log(`${'#'.padEnd(4)} ${'row'.padEnd(5)} ${'slug'.padEnd(35)} https_url`);
+      console.log(`${'─'.repeat(72)}`);
+      httpUpgradeable.forEach((r, i) => {
+        console.log(
+          `${String(i + 1).padEnd(4)} ${String(r.rowNumber).padEnd(5)} ${r.slug.padEnd(35)} ${r.httpsUrl}`
+        );
+      });
+    }
+
+    if (softFlagged.length) {
+      console.log(`\nSOFT_FLAGGED rows (informational, no action): ${softFlagged.length}`);
+      console.log(`  (hostname_mismatch only — these are advisory and do not trigger NEEDS_REVIEW)`);
     }
 
     if (Object.keys(reasons_breakdown).length) {
@@ -284,28 +343,41 @@ async function main() {
     }
   }
 
-  // ── Apply: move flagged rows to NEEDS_REVIEW ─────────────────────────────
-  let applied = 0;
+  // ── Apply: move flagged rows to NEEDS_REVIEW; fix http→https URLs ─────────
+  let appliedNeedsReview = 0;
+  let appliedHttpUpgrade = 0;
   const batchData = [];
 
-  if (apply && flagged.length) {
+  if (apply) {
+    // Flagged → NEEDS_REVIEW
     for (const r of flagged) {
       const noteFragment = `post_publish_qc:${r.reasons.join('|')}; prev_status=DONE`;
       const newNote = appendNote(r.notes, noteFragment);
       batchData.push(
-        { range: `${SHEET_NAME}!${colStatus}${r.rowNumber}`, values: [['NEEDS_REVIEW']] },
-        { range: `${SHEET_NAME}!${colNotes}${r.rowNumber}`,  values: [[newNote]] },
+        { range: `${SHEET_NAME}!${colStatus}${r.rowNumber}`,  values: [['NEEDS_REVIEW']] },
+        { range: `${SHEET_NAME}!${colNotes}${r.rowNumber}`,   values: [[newNote]] },
       );
-      applied++;
+      appliedNeedsReview++;
     }
 
-    await sheets.spreadsheets.values.batchUpdate({
-      spreadsheetId: SPREADSHEET_ID,
-      requestBody: { valueInputOption: 'RAW', data: batchData },
-    });
+    // HTTP upgradeable → update official_url only (status stays DONE)
+    for (const r of httpUpgradeable) {
+      batchData.push(
+        { range: `${SHEET_NAME}!${colOfficialUrl}${r.rowNumber}`, values: [[r.httpsUrl]] },
+      );
+      appliedHttpUpgrade++;
+    }
+
+    if (batchData.length) {
+      await sheets.spreadsheets.values.batchUpdate({
+        spreadsheetId: SPREADSHEET_ID,
+        requestBody: { valueInputOption: 'RAW', data: batchData },
+      });
+    }
 
     if (!jsonOut) {
-      console.log(`\n[done-url-audit] Applied: ${applied} rows → NEEDS_REVIEW`);
+      if (appliedNeedsReview) console.log(`\n[done-url-audit] Applied: ${appliedNeedsReview} rows → NEEDS_REVIEW`);
+      if (appliedHttpUpgrade) console.log(`[done-url-audit] Applied: ${appliedHttpUpgrade} rows → official_url upgraded to https`);
     }
   }
 
@@ -314,10 +386,13 @@ async function main() {
     ok: true,
     mode: apply ? 'apply' : 'dry-run',
     ts: nowIso(),
-    total_done_checked: toCheck.length,
-    clean_count: clean.length,
-    flagged_count: flagged.length,
-    applied_needs_review: apply ? applied : 0,
+    total_done_checked:   toCheck.length,
+    clean_count:          clean.length,
+    flagged_count:        flagged.length,
+    http_upgradeable_count: httpUpgradeable.length,
+    soft_flags_count:     softFlagged.length,
+    applied_needs_review: apply ? appliedNeedsReview : 0,
+    applied_http_upgrade: apply ? appliedHttpUpgrade : 0,
     reasons_breakdown,
     samples,
     flagged_rows: flagged.map(r => ({
@@ -326,9 +401,21 @@ async function main() {
       official_url: r.offUrl,
       reasons:      r.reasons,
     })),
+    http_upgraded_rows: httpUpgradeable.map(r => ({
+      row:          r.rowNumber,
+      slug:         r.slug,
+      old_url:      r.offUrl,
+      new_url:      r.httpsUrl,
+    })),
+    soft_flagged_rows: softFlagged.map(r => ({
+      row:          r.rowNumber,
+      slug:         r.slug,
+      official_url: r.offUrl,
+      soft_reasons: r.softReasons,
+    })),
     hint: apply
       ? undefined
-      : 'Run with --apply=1 to move flagged rows to NEEDS_REVIEW.',
+      : 'Run with --apply=1 to move flagged rows to NEEDS_REVIEW and fix http→https URLs.',
   };
 
   if (jsonOut) {
