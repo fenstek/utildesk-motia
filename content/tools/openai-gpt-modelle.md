@@ -4,6 +4,7 @@ title: "OpenAI GPT-Modelle"
 category: "AI"
 price_model: "Je nach Anbieter und Nutzung"
 tags: []
+official_url: 'https://developers.openai.com/api/docs/models'
 ---
 
 # OpenAI GPT-Modelle
