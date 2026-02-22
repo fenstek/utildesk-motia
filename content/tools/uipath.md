@@ -4,6 +4,7 @@ title: "UiPath"
 category: "AI"
 price_model: ""
 tags: []
+official_url: 'https://www.uipath.com/'
 ---
 
 # UiPath
