@@ -69,6 +69,31 @@ status = NEEDS_REVIEW  if:
 
 ---
 
+## QC Helper (pre-publish, fail-closed)
+
+**Location:** `scripts/cron_publish_push.sh` before `test_run_9_full.mjs`.
+
+**Helper:** `scripts/qc_before_publish.mjs`
+
+**Flow:**
+1. Runs `node scripts/audit_new_inprogress_qc.mjs --apply=1 --json`
+2. Prints QC report JSON
+3. Prints machine-readable line:
+   - `QC_MOVED_TO_NEEDS_REVIEW=<number>`
+
+`cron_publish_push.sh` parses that line and behaves fail-closed:
+
+- If value is missing/non-numeric -> treated as `9999`
+- If helper errors/timeouts/invalid JSON -> helper prints:
+  - `QC_ERROR=<message>`
+  - `QC_MOVED_TO_NEEDS_REVIEW=9999`
+  - exits `0`
+- If `QC_MOVED_TO_NEEDS_REVIEW > 0` -> publish exits safely with no generation
+
+This ensures queue-cleaning failures never allow unsafe publish progression.
+
+---
+
 ## Gate 3 — official_url in publish orchestrator (`test_run_9_full.mjs`)
 
 **Location:** immediately after reading the NEW row from the Sheet,

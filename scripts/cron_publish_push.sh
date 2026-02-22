@@ -71,9 +71,14 @@ if [[ "${PUBLISH_ONLY:-0}" == "1" ]]; then
   echo "[cron] PUBLISH_ONLY=1 -> skip generation (no NEW tools will be processed)"
 else
   echo "[cron] running QC gate for NEW/IN_PROGRESS before publish"
-  QC_JSON="$(node scripts/audit_new_inprogress_qc.mjs --apply=1 --json)"
-  echo "[cron] qc summary: $QC_JSON"
-  QC_MOVED="$(printf '%s' "$QC_JSON" | node -e 'let d=\"\";process.stdin.on(\"data\",c=>d+=c);process.stdin.on(\"end\",()=>{const j=JSON.parse(d);process.stdout.write(String(j.moved_to_needs_review||0));});')"
+  QC_OUT="$(node scripts/qc_before_publish.mjs)"
+  echo "[cron] qc helper output:"
+  printf '%s\n' "$QC_OUT"
+  QC_MOVED="$(printf '%s\n' "$QC_OUT" | sed -n 's/^QC_MOVED_TO_NEEDS_REVIEW=//p' | tail -n 1)"
+  if ! [[ "$QC_MOVED" =~ ^[0-9]+$ ]]; then
+    QC_MOVED=9999
+  fi
+  echo "[cron] QC_MOVED_TO_NEEDS_REVIEW=$QC_MOVED"
   if [[ "$QC_MOVED" -gt 0 ]]; then
     echo "[cron] QC moved $QC_MOVED rows to NEEDS_REVIEW -> skip publish this run"
     exit 0
