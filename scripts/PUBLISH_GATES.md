@@ -23,6 +23,9 @@ A gate is a check that, when it fails, **prevents** a row from advancing to `NEW
 not a hard block. Only clearly wrong-entity domains (e.g., `transformers.hasbro.com`)
 remain as blocking conditions.
 
+**Final redirect host denylist (hard block):** QC resolves redirects and blocks any
+row whose resolved final host is in `DENY_HOSTS` (reason: `redirected_to_denied_host`).
+
 ---
 
 ## Gate 1 — official_url (autogen, `sheet_ai_autogen_9_strict_v2.mjs`)
@@ -35,7 +38,7 @@ Implemented via `validateOfficialUrl()` in `scripts/lib/url_policy.mjs`.
 status = NEEDS_REVIEW  if any of:
   - resolved official_url is empty / NaN / null
   - resolved official_url is not https
-  - resolved official_url host is in DENY_HOSTS (wikipedia, socials, etc.)
+  - resolved official_url host is in DENY_HOSTS (wikipedia, socials, parking domains, etc.)
   - resolved official_url contains DENY_SUBSTR (gov, city, utm_ ...)
   - resolved official_url is a wrong-entity domain (see entity_disambiguation.mjs)
   - (hard override present → bypasses ALL checks unconditionally)
@@ -91,6 +94,16 @@ status = NEEDS_REVIEW  if:
 - If `QC_MOVED_TO_NEEDS_REVIEW > 0` -> publish exits safely with no generation
 
 This ensures queue-cleaning failures never allow unsafe publish progression.
+
+### Final redirect host denylist
+
+`audit_new_inprogress_qc.mjs` resolves each `official_url` with `resolveFinalUrl()`.
+If the **final** hostname is in `DENY_HOSTS`, the row is hard-blocked with:
+
+`redirected_to_denied_host`
+
+On `--apply=1`, such rows are moved to `NEEDS_REVIEW`.
+This prevents redirect-based squats/parking URLs from reaching publish.
 
 ---
 
@@ -191,6 +204,7 @@ tripadvisor.com, booking.com, expedia.com
 apps.apple.com, play.google.com
 duckduckgo.com, google.com, bing.com
 medium.com, substack.com, dev.to
+introvert.com, dot-tech.org, www.dot-tech.org
 ```
 
 ### Always blocked substrings (`DENY_SUBSTR`)
