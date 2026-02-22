@@ -41,6 +41,8 @@ export const DENY_HOSTS = new Set([
   'medium.com', 'substack.com', 'dev.to',
   // URL parking / redirect-proxy services (v2.5)
   'introvert.com',
+  // Known parked/squatted destination observed via redirects
+  'dot-tech.org', 'www.dot-tech.org',
 ]);
 
 // ─── Substring patterns that indicate non-product URLs ──────────────────────
