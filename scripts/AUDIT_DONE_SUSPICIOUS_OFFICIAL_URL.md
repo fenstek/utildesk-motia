@@ -27,11 +27,12 @@ Pre-publish gates (`qc_before_publish.mjs`, `audit_publish_preflight.mjs`) за�
 | `too_generic_root` | `huggingface.co` или `github.com` с менее чем 2 сегментами пути | `huggingface.co/SingleOrg` |
 | `suspicious_url_pattern` | URL содержит `gov`, `city`, `utm_`, `/wiki/`, ... | любой govsite.gov |
 | `wrong_entity_domain:*` | Домен явно другой сущности (Hasbro для transformers) | `transformers.hasbro.com` |
+| `redirected_to_denied_final_host` | После `resolveFinalUrl()` final host в `DENY_HOSTS` (`dot-tech.org`, `dot-attorney.org`, ...) | `looker.org -> dot-attorney.org` |
 | `suspicious_tld_org_net:*` | Host совпадает с `<slug>.org` или `<slug>.net`, не в allowlist OSS | `tableau.org` для slug `tableau` |
 | `hostname_mismatch` | Токены slug не встречаются в hostname | `example.com` для slug `myproduct` |
 
 ### Severity
-- **Blocking** (✗): `redirector_query`, `denied_host`, `too_generic_root`, `wrong_entity_domain`, `suspicious_url_pattern` — URL однозначно неверный
+- **Blocking** (✗): `redirector_query`, `denied_host`, `too_generic_root`, `wrong_entity_domain`, `suspicious_url_pattern`, `redirected_to_denied_final_host` — URL однозначно неверный
 - **Advisory** (△): `suspicious_tld_org_net`, `hostname_mismatch` — требует проверки
 
 ---
