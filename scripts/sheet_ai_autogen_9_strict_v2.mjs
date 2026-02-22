@@ -12,6 +12,7 @@ import OpenAI from 'openai';
 import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
+import { validateOfficialUrl } from './lib/url_policy.mjs';
 
 let chooseOfficialUrlGpt = async () => ({ ok: false, reason: 'gpt_module_unavailable', confidence: 0 });
 let isGptUrlEnabled = () => false;
@@ -698,6 +699,11 @@ async function main(){
     gpt_errors: 0,
     resolved_with_wikidata: 0,
     resolved_with_ddg: 0,
+    // Gate counters (v2.4)
+    blocked_missing_url: 0,
+    blocked_missing_tags: 0,
+    needs_review_written: 0,
+    url_flagged: 0,          // non-blocking hostname_mismatch or other advisory flags
   };
   const hardLimit = AUTOGEN_LIMIT > 0 ? AUTOGEN_LIMIT : Number.POSITIVE_INFINITY;
 
@@ -805,22 +811,66 @@ async function main(){
       }
       const officialToCheck = hardOverride || normalizedOfficial;
 
-      // official_url guard (final safety net); hard override bypasses suspicious check
-      const suspicious = !hardOverride && (!officialToCheck || isSuspiciousOfficialUrl(officialToCheck) || (hostname(officialToCheck) && token2 && !hostContainsToken(hostname(officialToCheck), token2)));
-      const safeOfficial = hardOverride || (suspicious ? '' : officialToCheck);
-      const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
-      const safetyNote = suspicious ? `blocked_official_url:${urlResolution?.reason || 'unresolved'}` : '';
+      // ─── GATE 1: official_url (v2.4) ─────────────────────────────────────────
+      // Hard overrides bypass all validation unconditionally.
+      // v2.4 change: hostname mismatch is a FLAG (advisory), not a block.
+      // Wrong-entity domains (e.g. transformers.hasbro.com) are a hard block.
+      let urlBlocked = false;
+      let urlFlagStr = '';
+      if (hardOverride) {
+        // Hard override: always accepted, no further checks
+        urlBlocked = false;
+      } else {
+        const urlValidation = validateOfficialUrl(officialToCheck, { slug, title: topic });
+        if (!urlValidation.ok) {
+          urlBlocked = true;
+        }
+        if (urlValidation.flags && urlValidation.flags.length) {
+          counters.url_flagged++;
+          urlFlagStr = urlValidation.flags.join(',');
+          console.log(`[official_url] flags for slug=${slug}: ${urlFlagStr}`);
+        }
+        if (urlBlocked) {
+          console.log(`[official_url] blocked slug=${slug}: ${urlValidation.reason || 'validation_failed'}`);
+        }
+      }
+      const safeOfficial = hardOverride || (urlBlocked ? '' : officialToCheck);
+
+      // ─── GATE 2: tags (hard gate, v2.4 = same as v2.3) ──────────────────────
+      // Normalize: deduplicate, lowercase, strip empty.
+      // Require at least 1 specific tag beyond the generic 'ai' bucket.
+      const tagsDeduped = [...new Set(tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean))];
+      const specificTags = tagsDeduped.filter(t => t !== 'ai' && t !== 'produktivität');
+      const tagsInvalid = specificTags.length === 0;
+      const cleanTags = tagsDeduped.join(',');
+
+      // ─── Determine final status — NEW only if BOTH gates pass ────────────────
+      const blockReasons = [];
+      if (urlBlocked) {
+        blockReasons.push(`blocked:missing/invalid official_url (${urlResolution?.reason || 'unresolved'})`);
+        counters.blocked_missing_url++;
+      }
+      if (tagsInvalid) {
+        blockReasons.push('blocked:missing/invalid tags');
+        counters.blocked_missing_tags++;
+      }
+      const status = blockReasons.length ? 'NEEDS_REVIEW' : 'NEW';
+      if (status === 'NEEDS_REVIEW') counters.needs_review_written++;
+      const safetyNote = [
+        ...blockReasons,
+        ...(urlFlagStr ? [`url_flags:${urlFlagStr}`] : []),
+      ].join(' | ');
 
       // Build strict A..P row (16 cells)
       const row = [
         topic,                 // A topic
         slug,                  // B slug
         category,              // C category
-          tags,                  // D tags
+        cleanTags,             // D tags (normalized, deduped; v2.4 gate applied)
         'freemium',            // E price_model
         '',                    // F affiliate_url
-        status,                // G status
-        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes
+        status,                // G status (NEW only if url+tags gates pass)
+        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason}${safetyNote ? ' | ' + safetyNote : ''} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes
         '',                    // I title
         '',                    // J short_hint
         safeOfficial,          // K official_url
@@ -886,9 +936,15 @@ async function main(){
   } else {
     console.log(JSON.stringify(result, null, 2));
   }
-  if (AUTOGEN_LIMIT > 0 || /^(1|true|yes|on)$/i.test(String(process.env.URL_RESOLUTION_SUMMARY || ""))) {
-    console.log(JSON.stringify({ ok: true, url_resolution_summary: { ...counters, wikidata_guard_rejected, wikidata_guard_allowed } }, null, 2));
-  }
+  // Always emit gate + resolution summary (important for CI/audit)
+  console.log(JSON.stringify({
+    ok: true,
+    url_resolution_summary: {
+      ...counters,
+      wikidata_guard_rejected,
+      wikidata_guard_allowed,
+    },
+  }, null, 2));
 }
 
 main().catch(e=>die(e.stack||String(e)));
