@@ -34,6 +34,11 @@ const TARGET = Math.max(1, Math.min(50, Number(args.find(a => !a.startsWith('--'
 const DRY_RUN = args.includes('--dry-run');
 const JSON_OUTPUT = args.includes('--json');
 const SHOW_ITEMS = args.includes('--show-items');
+// --only-slugs=slug1,slug2,… → repair mode: process existing NEEDS_REVIEW rows only
+const ONLY_SLUGS = (() => {
+  const a = args.find(a => a.startsWith('--only-slugs='));
+  return a ? a.replace('--only-slugs=', '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean) : null;
+})();
 
 const MIN_SITELINKS = Number(process.env.WIKIDATA_MIN_SITELINKS || 1);
 
@@ -198,6 +203,18 @@ async function sheetsClient(){
     email: GOOGLE_CLIENT_EMAIL,
     key: GOOGLE_PRIVATE_KEY,
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+  });
+  return google.sheets({ version:'v4', auth });
+}
+
+async function sheetsClientRW(){
+  if(!SPREADSHEET_ID) die('Missing SPREADSHEET_ID');
+  if(!GOOGLE_CLIENT_EMAIL) die('Missing GOOGLE_CLIENT_EMAIL');
+  if(!GOOGLE_PRIVATE_KEY) die('Missing GOOGLE_PRIVATE_KEY');
+  const auth = new google.auth.JWT({
+    email: GOOGLE_CLIENT_EMAIL,
+    key: GOOGLE_PRIVATE_KEY,
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
   return google.sheets({ version:'v4', auth });
 }
@@ -680,9 +697,171 @@ function categoryFallback(name){
 let wikidata_guard_rejected = 0;
 let wikidata_guard_allowed = 0;
 
+// ─── Slug-repair mode helpers ────────────────────────────────────────────────
+
+/**
+ * Generate tags for a known tool topic via GPT.
+ * Used by --only-slugs repair mode instead of the heuristic-only tag builder.
+ */
+async function generateTagsGPT(openai, topic, officialUrl) {
+  const prompt =
+    `Return ONLY a JSON array of 3-8 lowercase single-word or hyphenated tags for this software tool.\n` +
+    `Rules: include 'ai' only if the tool has real AI/ML features. Include functional tags such as ` +
+    `'design','vector','rpa','automation','productivity','writing','devtools','audio','video',` +
+    `'image','chatbot','analytics','creative','open-source','enterprise'. ` +
+    `No generic tags like 'software','tool','app'.\n` +
+    `Tool: ${topic}\nURL: ${officialUrl || 'unknown'}\nOutput: JSON array only.`;
+  const resp = await openai.chat.completions.create({
+    model: OPENAI_MODEL,
+    temperature: 0,
+    messages: [{ role: 'user', content: prompt }],
+  });
+  return extractJsonArray(resp.choices?.[0]?.message?.content?.trim() || '');
+}
+
+/**
+ * Repair mode: read existing NEEDS_REVIEW rows by slug, generate tags via GPT,
+ * run URL+tags gates, and promote to NEW if both pass.
+ */
+async function runSlugRepairMode(openai, slugList) {
+  console.log(`[slug-repair] mode=SLUG_REPAIR slugs=[${slugList.join(',')}] dry_run=${DRY_RUN}`);
+
+  const sheets = await sheetsClientRW();
+  const res = await sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `${SHEET_NAME}!A1:P`,
+  });
+  const rows = res.data.values || [];
+  if (!rows.length) die('Empty sheet');
+
+  const header = rows[0].map(x => String(x || '').trim().toLowerCase());
+  const idx = Object.fromEntries(header.map((h, i) => [h, i]));
+  for (const k of ['topic', 'slug', 'tags', 'status', 'official_url']) {
+    if (!(k in idx)) die(`[slug-repair] Missing column: ${k}`);
+  }
+
+  function colL(i) { return String.fromCharCode('A'.charCodeAt(0) + i); }
+
+  const results = [];
+
+  for (const targetSlug of slugList) {
+    let rowIdx = -1;
+    for (let i = 1; i < rows.length; i++) {
+      if (String(rows[i][idx.slug] || '').trim().toLowerCase() === targetSlug) {
+        rowIdx = i; break;
+      }
+    }
+    if (rowIdx === -1) {
+      results.push({ slug: targetSlug, outcome: 'not_found', old_status: '-', new_status: '-', tags: '-', notes: 'slug not found in sheet' });
+      continue;
+    }
+
+    const rowData = rows[rowIdx];
+    const rowNumber = rowIdx + 1; // 1-based sheet row
+    const topic = String(rowData[idx.topic] || '').trim();
+    const oldStatus = String(rowData[idx.status] || '').trim().toUpperCase();
+    const officialUrl = String(rowData[idx.official_url] || '').trim();
+    const existingTags = String(rowData[idx.tags] || '').trim();
+
+    console.log(`[slug-repair] row=${rowNumber} slug=${targetSlug} topic="${topic}" status=${oldStatus} url="${officialUrl}"`);
+
+    if (oldStatus !== 'NEEDS_REVIEW') {
+      results.push({ slug: targetSlug, outcome: 'skipped', old_status: oldStatus, new_status: oldStatus, tags: existingTags, notes: `skipped:status=${oldStatus}` });
+      continue;
+    }
+
+    // ── Gate 1: official_url ──────────────────────────────────────────────────
+    const urlValidation = validateOfficialUrl(officialUrl, { slug: targetSlug, title: topic });
+    const urlFlagStr = (urlValidation.flags || []).join(',');
+    if (!urlValidation.ok) {
+      const note = `url_blocked:${urlValidation.reason || 'invalid'}`;
+      console.log(`[slug-repair] ${targetSlug}: url blocked → ${note}`);
+      results.push({ slug: targetSlug, outcome: 'needs_review', old_status: oldStatus, new_status: 'NEEDS_REVIEW', tags: existingTags, notes: note });
+      continue;
+    }
+    if (urlFlagStr) console.log(`[slug-repair] ${targetSlug}: url_flags=${urlFlagStr} (non-blocking)`);
+
+    // ── Tag generation: GPT + heuristics ─────────────────────────────────────
+    let gptTags = [];
+    try {
+      gptTags = await generateTagsGPT(openai, topic, officialUrl);
+      console.log(`[slug-repair] ${targetSlug}: gpt_tags=${JSON.stringify(gptTags)}`);
+    } catch (e) {
+      console.error(`[slug-repair] GPT tag generation failed for ${targetSlug}: ${e?.message || e}`);
+    }
+
+    const hSet = new Set(['ai']);
+    const tl = topic.toLowerCase();
+    if (tl.includes('automation') || tl.includes('rpa') || tl.includes('workflow')) hSet.add('automation');
+    if (tl.includes('design') || tl.includes('illustrat') || tl.includes('vector')) hSet.add('design');
+    if (tl.includes('code') || tl.includes('dev')) hSet.add('devtools');
+    if (tl.includes('write') || tl.includes('writer')) hSet.add('writing');
+    if (tl.includes('video')) hSet.add('video');
+    if (tl.includes('audio') || tl.includes('voice')) hSet.add('audio');
+
+    const merged = new Set([
+      ...Array.from(hSet),
+      ...gptTags.map(tg => String(tg).toLowerCase().trim()).filter(tg => tg && /^[a-z0-9-]{1,30}$/.test(tg)),
+    ]);
+    const tagsDeduped = [...merged].slice(0, 12);
+    const specificTags = tagsDeduped.filter(tg => tg !== 'ai' && tg !== 'produktivität');
+    const tagsInvalid = specificTags.length === 0;
+    const cleanTags = tagsDeduped.join(',');
+
+    // ── Gate 2: tags ──────────────────────────────────────────────────────────
+    if (tagsInvalid) {
+      const note = 'tags_insufficient:only_generic';
+      console.log(`[slug-repair] ${targetSlug}: tags insufficient → NEEDS_REVIEW (${note})`);
+      results.push({ slug: targetSlug, outcome: 'needs_review', old_status: oldStatus, new_status: 'NEEDS_REVIEW', tags: cleanTags, notes: note });
+      continue;
+    }
+
+    // ── Both gates pass → NEW ─────────────────────────────────────────────────
+    const newStatus = 'NEW';
+    const note = `slug_repair:ok url_flags=${urlFlagStr || 'none'} tags=gpt+heuristic`;
+
+    if (!DRY_RUN) {
+      const updates = [
+        { range: `${SHEET_NAME}!${colL(idx.tags)}${rowNumber}`, values: [[cleanTags]] },
+        { range: `${SHEET_NAME}!${colL(idx.status)}${rowNumber}`, values: [[newStatus]] },
+      ];
+      if ('notes' in idx) {
+        updates.push({ range: `${SHEET_NAME}!${colL(idx.notes)}${rowNumber}`, values: [[note]] });
+      }
+      await sheets.spreadsheets.values.batchUpdate({
+        spreadsheetId: SPREADSHEET_ID,
+        requestBody: { valueInputOption: 'RAW', data: updates },
+      });
+      console.log(`[slug-repair] ✓ ${targetSlug}: tags="${cleanTags}" ${oldStatus} → ${newStatus}`);
+    } else {
+      console.log(`[DRY] ${targetSlug}: would set tags="${cleanTags}" ${oldStatus} → ${newStatus}`);
+    }
+
+    results.push({ slug: targetSlug, outcome: 'promoted', old_status: oldStatus, new_status: newStatus, tags: cleanTags, notes: note });
+  }
+
+  // ── Results table ─────────────────────────────────────────────────────────
+  const W = [21, 14, 14, 36, 42];
+  const sep = (c) => '+' + W.map(w => c.repeat(w + 2)).join('+') + '+';
+  const row = (cells) => '| ' + cells.map((c, i) => String(c || '').slice(0, W[i]).padEnd(W[i])).join(' | ') + ' |';
+  console.log('\n[slug-repair] Results:');
+  console.log(sep('-'));
+  console.log(row(['slug', 'old_status', 'new_status', 'tags', 'notes']));
+  console.log(sep('-'));
+  for (const r of results) console.log(row([r.slug, r.old_status, r.new_status, r.tags, r.notes]));
+  console.log(sep('-'));
+  console.log(JSON.stringify({ ok: true, mode: 'slug_repair', dry_run: DRY_RUN, results }, null, 2));
+}
+
 async function main(){
   if(!OPENAI_API_KEY) die('Missing OPENAI_API_KEY');
   const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
+
+  // ── Slug-repair mode: process existing NEEDS_REVIEW rows by slug ──────────
+  if (ONLY_SLUGS?.length) {
+    await runSlugRepairMode(openai, ONLY_SLUGS);
+    return;
+  }
 
   const { existingTopic, existingSlug, existingQ, existingHost } = await readExisting();
 
