@@ -11,7 +11,8 @@ import { existsSync } from 'node:fs';
 
 const args = process.argv.slice(2);
 const countArg = args.find((a) => /^\d+$/.test(String(a)));
-const COUNT = Math.max(1, Math.min(50, Number(countArg || 9)));
+const envBatchSize = Number(process.env.PUBLISH_BATCH_SIZE) || 0;
+const COUNT = Math.max(1, Math.min(50, Number(countArg || envBatchSize || 10)));
 const FINALIZE_DEFERRED = args.includes('--finalize-deferred');
 const SELF_TEST_STATUS = args.includes('--self-test-status-logic');
 const DRY = process.env.DRY_STATUS_LOGIC === '1' || SELF_TEST_STATUS;
@@ -185,7 +186,7 @@ if (existsSync(DEFER_FILE)) {
   try { fs.unlinkSync(DEFER_FILE); } catch {}
 }
 
-console.log(`[INFO] Processing ${COUNT} NEW tools`);
+console.log(`[INFO] Processing ${COUNT} NEW tools (batch_size=${COUNT} source=${countArg ? 'cli_arg' : (envBatchSize ? 'PUBLISH_BATCH_SIZE_env' : 'default')})`);
 
 const deferredFinalCheck = [];
 const updateCounts = new Map();
