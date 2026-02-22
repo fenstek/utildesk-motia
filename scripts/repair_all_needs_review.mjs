@@ -78,11 +78,14 @@ function colLetter(idx) {
 function parseArgs(argv) {
   const apply = argv.includes('--apply=1') || argv.includes('--apply');
   const json = argv.includes('--json');
+  const selfTest = argv.includes('--self-test');
   const limitArg = (argv.find((a) => a.startsWith('--limit=')) || '').replace('--limit=', '').trim();
   const limit = limitArg ? Math.max(1, Math.min(10000, Number(limitArg) || 0)) : 0;
+  const offsetArg = (argv.find((a) => a.startsWith('--offset=')) || '').replace('--offset=', '').trim();
+  const offset = Math.max(0, Number(offsetArg || 0) || 0);
   const onlyRaw = (argv.find((a) => a.startsWith('--only=')) || '').replace('--only=', '').trim();
   const only = onlyRaw ? new Set(onlyRaw.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean)) : null;
-  return { apply, dryRun: !apply, json, limit, only };
+  return { apply, dryRun: !apply, json, selfTest, limit, offset, only };
 }
 
 function normalizeTags(raw) {
@@ -291,6 +294,50 @@ function selectPrimaryUnresolvedReason(trace) {
   return 'ddg_no_candidates';
 }
 
+function selectNeedsReviewRows(values, idx, args) {
+  const matched = [];
+  for (let i = 1; i < values.length; i += 1) {
+    const row = values[i] || [];
+    const status = String(row[idx.status] || '').trim().toUpperCase();
+    if (status !== 'NEEDS_REVIEW') continue;
+
+    const slug = String(row[idx.slug] || '').trim();
+    if (args.only && !args.only.has(slug.toLowerCase())) continue;
+
+    matched.push({
+      rowNumber: i + 1,
+      row,
+    });
+  }
+
+  matched.sort((a, b) => a.rowNumber - b.rowNumber);
+
+  const offset = Math.max(0, Number(args.offset || 0) || 0);
+  const start = Math.min(offset, matched.length);
+  const end = args.limit ? Math.min(start + args.limit, matched.length) : matched.length;
+  return {
+    totalMatched: matched.length,
+    selected: matched.slice(start, end),
+  };
+}
+
+function runSelfTest() {
+  const args = parseArgs(['--offset=-10', '--limit=2']);
+  if (args.offset !== 0) throw new Error('self-test failed: negative offset must clamp to 0');
+
+  const values = [
+    ['topic', 'slug', 'status', 'notes', 'official_url', 'tags'],
+    ['A', 'a', 'NEEDS_REVIEW', '', '', 'ai'],
+    ['B', 'b', 'DONE', '', '', 'ai'],
+    ['C', 'c', 'NEEDS_REVIEW', '', '', 'ai'],
+    ['D', 'd', 'NEEDS_REVIEW', '', '', 'ai'],
+  ];
+  const idx = { topic: 0, slug: 1, status: 2, notes: 3, official_url: 4, tags: 5 };
+  const picked = selectNeedsReviewRows(values, idx, { only: null, offset: 1, limit: 2 }).selected;
+  const got = picked.map((x) => x.rowNumber).join(',');
+  if (got !== '4,5') throw new Error(`self-test failed: expected rowNumber 4,5, got ${got}`);
+}
+
 async function sheetsClient() {
   if (GOOGLE_CLIENT_EMAIL && GOOGLE_PRIVATE_KEY) {
     const auth = new google.auth.JWT({
@@ -338,6 +385,11 @@ function tryValidateCandidate(url, row) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  if (args.selfTest) {
+    runSelfTest();
+    console.log(JSON.stringify({ ok: true, self_test: true, ts: nowIso() }, null, args.json ? 0 : 2));
+    return;
+  }
   console.error(`[repair_all] mode=${args.apply ? 'APPLY' : 'DRY-RUN'} ts=${nowIso()} gpt_url=${isGptUrlEnabled()}`);
 
   const sheets = await sheetsClient();
@@ -365,18 +417,14 @@ async function main() {
     tags: colLetter(idx.tags),
   };
 
+  const queue = selectNeedsReviewRows(values, idx, args);
   const toProcess = [];
-  for (let i = 1; i < values.length; i += 1) {
-    const row = values[i] || [];
-    const status = String(row[idx.status] || '').trim().toUpperCase();
-    if (status !== 'NEEDS_REVIEW') continue;
-
+  for (const item of queue.selected) {
+    const row = item.row;
     const topic = String(row[idx.topic] || '').trim();
     const slug = String(row[idx.slug] || '').trim();
-    if (args.only && !args.only.has(slug.toLowerCase())) continue;
-
     toProcess.push({
-      rowNumber: i + 1,
+      rowNumber: item.rowNumber,
       topic,
       slug,
       title: String(row[idx.title] || row[idx.topic] || '').trim(),
@@ -386,10 +434,8 @@ async function main() {
       official_url: String(row[idx.official_url] || '').trim(),
       tags: String(row[idx.tags] || '').trim(),
       notes: String(row[idx.notes] || '').trim(),
-      status,
+      status: 'NEEDS_REVIEW',
     });
-
-    if (args.limit && toProcess.length >= args.limit) break;
   }
 
   const unresolvedDiag = createUnresolvedDiagnostics();
@@ -726,6 +772,9 @@ async function main() {
     ok: true,
     mode: args.apply ? 'apply' : 'dry-run',
     ts: nowIso(),
+    offset: args.offset,
+    limit: args.limit,
+    needs_review_pool_size: queue.totalMatched,
     ...summary,
     url_unresolved_reasons: unresolvedDiag.reasons,
     samples_by_reason: unresolvedDiag.samples,
