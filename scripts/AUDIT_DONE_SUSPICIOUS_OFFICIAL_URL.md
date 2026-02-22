@@ -28,12 +28,16 @@ Pre-publish gates (`qc_before_publish.mjs`, `audit_publish_preflight.mjs`) за�
 | `suspicious_url_pattern` | URL содержит `gov`, `city`, `utm_`, `/wiki/`, ... | любой govsite.gov |
 | `wrong_entity_domain:*` | Домен явно другой сущности (Hasbro для transformers) | `transformers.hasbro.com` |
 | `redirected_to_denied_final_host` | После `resolveFinalUrl()` final host в `DENY_HOSTS` (`dot-tech.org`, `dot-attorney.org`, ...) | `looker.org -> dot-attorney.org` |
+| `redirected_to_parking_or_domain_sale` | Final URL ведёт на parking/domain-sale страницу | `dan.com/buy-domain/...`, `.../domain-for-sale` |
+| `final_host_parking_provider` | Final host — известный parking/domain-sale provider | `sedo.com`, `dan.com`, `afternic.com` |
+| `final_url_matches_denied_pattern` | Final URL match deny pattern (`/buy-domain`, `/domain-for-sale`, ...) | `https://example.com/domain-for-sale` |
+| `final_url_suspicious_content_hub` | Final URL похож на контент-хаб/статью, не на продуктовую страницу | `https://somehub.com/blog/tool-x` |
 | `suspicious_tld_org_net:*` | Host совпадает с `<slug>.org` или `<slug>.net`, не в allowlist OSS | `tableau.org` для slug `tableau` |
 | `hostname_mismatch` | Токены slug не встречаются в hostname | `example.com` для slug `myproduct` |
 
 ### Severity
-- **Blocking** (✗): `redirector_query`, `denied_host`, `too_generic_root`, `wrong_entity_domain`, `suspicious_url_pattern`, `redirected_to_denied_final_host` — URL однозначно неверный
-- **Advisory** (△): `suspicious_tld_org_net`, `hostname_mismatch` — требует проверки
+- **Blocking** (✗): `redirector_query`, `denied_host`, `too_generic_root`, `wrong_entity_domain`, `suspicious_url_pattern`, `redirected_to_denied_final_host`, `redirected_to_parking_or_domain_sale`, `final_host_parking_provider`, `final_url_matches_denied_pattern` — URL однозначно неверный
+- **Review** (△): `final_url_suspicious_content_hub`, `suspicious_tld_org_net`, `hostname_mismatch` — требует ручной проверки
 
 ---
 
