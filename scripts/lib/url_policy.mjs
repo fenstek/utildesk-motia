@@ -181,12 +181,24 @@ export function isMissingUrl(v) {
   return !s || ['nan', 'null', 'undefined', 'none', '""', "''", '-', 'n/a', 'n\\a', '#n/a'].includes(s);
 }
 
+// ─── DENY_HOSTS exact-only exceptions (v2.5) ─────────────────────────────────
+// For these root domains subdomain matching is disabled so that legitimate
+// product subdomains (gemini.google.com, cloud.google.com, etc.) are not
+// blocked. play.google.com / apps.apple.com remain as explicit DENY_HOSTS.
+
+const DENY_HOSTS_NO_SUBDOMAIN = new Set([
+  'google.com', // root = search engine; subdomains can be real products
+  'bing.com',   // same policy for consistency
+]);
+
 /**
  * Returns true if the host is in the DENY_HOSTS set.
+ * For DENY_HOSTS_NO_SUBDOMAIN entries only exact match applies (no *.domain).
  */
 function isDeniedHost(host) {
   for (const d of DENY_HOSTS) {
-    if (host === d || host.endsWith('.' + d)) return true;
+    if (host === d) return true;
+    if (!DENY_HOSTS_NO_SUBDOMAIN.has(d) && host.endsWith('.' + d)) return true;
   }
   return false;
 }
