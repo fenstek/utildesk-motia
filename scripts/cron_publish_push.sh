@@ -83,7 +83,9 @@ else
     echo "[cron] QC moved $QC_MOVED rows to NEEDS_REVIEW -> skip publish this run"
     exit 0
   fi
-  node scripts/test_run_9_full.mjs 3
+  PUBLISH_BATCH_SIZE="${PUBLISH_BATCH_SIZE:-10}"
+  echo "[cron] batch_size=${PUBLISH_BATCH_SIZE}"
+  node scripts/test_run_9_full.mjs "${PUBLISH_BATCH_SIZE}"
 fi
 
 # 2) Detect changes
