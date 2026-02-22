@@ -4,6 +4,7 @@ title: "Automation Anywhere"
 category: "AI"
 price_model: ""
 tags: []
+official_url: 'https://www.automationanywhere.com/'
 ---
 
 # Automation Anywhere
