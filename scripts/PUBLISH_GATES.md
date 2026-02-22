@@ -204,7 +204,7 @@ tripadvisor.com, booking.com, expedia.com
 apps.apple.com, play.google.com
 duckduckgo.com, google.com, bing.com
 medium.com, substack.com, dev.to
-introvert.com, dot-tech.org, www.dot-tech.org
+introvert.com, dot-tech.org, www.dot-tech.org, dot-attorney.org, www.dot-attorney.org
 ```
 
 ### Always blocked substrings (`DENY_SUBSTR`)

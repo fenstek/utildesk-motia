@@ -43,6 +43,7 @@ export const DENY_HOSTS = new Set([
   'introvert.com',
   // Known parked/squatted destination observed via redirects
   'dot-tech.org', 'www.dot-tech.org',
+  'dot-attorney.org', 'www.dot-attorney.org',
 ]);
 
 // ─── Substring patterns that indicate non-product URLs ──────────────────────
