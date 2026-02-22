@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 import { pathToFileURL } from 'node:url';
 
 import { resolveFinalUrl } from './lib/http_verify_url.mjs';
-import { validateOfficialUrl, isMissingUrl, DENY_HOSTS } from './lib/url_policy.mjs';
+import { validateOfficialUrl, isMissingUrl, isDeniedFinalHost } from './lib/url_policy.mjs';
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -17,6 +17,7 @@ const TRACKED_REASONS = [
   'self_reference',
   'invalid_url',
   'head_check_failed',
+  'redirected_to_denied_final_host',
   'duplicate_of',
   'stuck_in_progress',
   'missing_specific_tags',
@@ -135,15 +136,11 @@ function isSelfReference(url) {
   }
 }
 
-function hostIsDenied(url) {
+function hostFromUrl(url) {
   try {
-    const host = new URL(String(url || '').trim()).hostname.replace(/^www\./, '').toLowerCase();
-    for (const deny of DENY_HOSTS) {
-      if (host === deny || host.endsWith(`.${deny}`)) return true;
-    }
-    return false;
+    return new URL(String(url || '').trim()).hostname.replace(/\.+$/, '').toLowerCase();
   } catch {
-    return true;
+    return '';
   }
 }
 
@@ -243,6 +240,7 @@ async function main() {
     duplicate_of: [],
     invalid_url: [],
     head_check_failed: [],
+    redirected_to_denied_final_host: [],
   };
 
   const evals = [];
@@ -281,14 +279,15 @@ async function main() {
         urlPassed = false;
       } else {
         finalUrl = String(verified.finalUrl || '').trim();
+        const finalHost = hostFromUrl(finalUrl);
 
         if (!internalTool && isSelfReference(finalUrl)) {
           reasons.push('self_reference');
           urlPassed = false;
         }
 
-        if (hostIsDenied(finalUrl)) {
-          reasons.push('invalid_url:denylist_host');
+        if (isDeniedFinalHost(finalHost)) {
+          reasons.push('redirected_to_denied_final_host');
           urlPassed = false;
         }
 
@@ -437,6 +436,7 @@ async function main() {
       duplicate_of: reasonRows.duplicate_of,
       invalid_url: reasonRows.invalid_url,
       head_check_failed: reasonRows.head_check_failed,
+      redirected_to_denied_final_host: reasonRows.redirected_to_denied_final_host,
     },
     moved_rows_top20: movedRows.slice(0, 20),
     moved_rows_count: movedRows.length,
