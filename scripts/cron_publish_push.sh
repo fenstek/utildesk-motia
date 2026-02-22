@@ -12,6 +12,12 @@ echo "[cron] boot: ts=${START_TS} pid=${SELF_PID} lock_file=${LOCK_FILE}"
 
 cd /opt/utildesk-motia
 
+PUBLISH_PAUSE_FILE="${PUBLISH_PAUSE_FILE:-/opt/utildesk-motia/.publish_paused}"
+if [[ -f "$PUBLISH_PAUSE_FILE" ]]; then
+  echo "[cron] publish paused (flag: $PUBLISH_PAUSE_FILE) -> exit 0"
+  exit 0
+fi
+
 retry_cmd() {
   local max="$1"
   shift
@@ -64,6 +70,14 @@ fi
 if [[ "${PUBLISH_ONLY:-0}" == "1" ]]; then
   echo "[cron] PUBLISH_ONLY=1 -> skip generation (no NEW tools will be processed)"
 else
+  echo "[cron] running QC gate for NEW/IN_PROGRESS before publish"
+  QC_JSON="$(node scripts/audit_new_inprogress_qc.mjs --apply=1 --json)"
+  echo "[cron] qc summary: $QC_JSON"
+  QC_MOVED="$(printf '%s' "$QC_JSON" | node -e 'let d=\"\";process.stdin.on(\"data\",c=>d+=c);process.stdin.on(\"end\",()=>{const j=JSON.parse(d);process.stdout.write(String(j.moved_to_needs_review||0));});')"
+  if [[ "$QC_MOVED" -gt 0 ]]; then
+    echo "[cron] QC moved $QC_MOVED rows to NEEDS_REVIEW -> skip publish this run"
+    exit 0
+  fi
   node scripts/test_run_9_full.mjs 3
 fi
 
