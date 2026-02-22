@@ -19,7 +19,18 @@ node scripts/repair_all_needs_review.mjs --apply=1 --json
 Optional filters:
 
 - `--limit=N`
+- `--offset=N`
 - `--only=slug1,slug2`
+
+Batch examples:
+
+```bash
+# First batch (40 rows)
+node scripts/repair_all_needs_review.mjs --apply=1 --limit=40
+
+# Second batch (next 40 rows in row_index order)
+node scripts/repair_all_needs_review.mjs --apply=1 --offset=40 --limit=40
+```
 
 ## Pipeline
 
