@@ -4,7 +4,7 @@ title: "Magisto"
 category: "AI"
 price_model: "Je nach Plan unterschiedlich"
 tags: [assistant, automation]
-official_url: "https://magisto.ai/"
+official_url: "https://www.magisto.com/"
 ---
 
 # Magisto
