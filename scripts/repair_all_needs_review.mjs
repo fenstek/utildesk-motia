@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 import { pathToFileURL } from 'node:url';
 
 import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
-import { validateOfficialUrl, isMissingUrl, normalizeDocsUrl } from './lib/url_policy.mjs';
+import { validateOfficialUrl, isMissingUrl, normalizeDocsUrl, normalizeHost, isDeniedFinalHost } from './lib/url_policy.mjs';
 import { classifyEntity } from './lib/entity_disambiguation.mjs';
 import { chooseOfficialUrlGpt, isGptUrlEnabled } from './lib/official_url_chooser_gpt.mjs';
 import { enrichTagsIfGeneric } from './lib/tag_enricher_gpt.mjs';
@@ -22,6 +22,7 @@ const URL_UNRESOLVED_REASON_KEYS = [
   'ddg_no_candidates',
   'ddg_error',
   'gpt_skipped_no_candidates',
+  'redirected_to_denied_host',
   'all_candidates_rejected_by_policy',
   'head_check_failed',
 ];
@@ -286,6 +287,7 @@ function markUnresolvedReason(diag, reason, slug) {
 function selectPrimaryUnresolvedReason(trace) {
   if (trace.missing_title) return 'missing_title';
   if (trace.ddg_error) return 'ddg_error';
+  if (trace.redirected_to_denied_host) return 'redirected_to_denied_host';
   if (trace.all_candidates_rejected_by_policy) return 'all_candidates_rejected_by_policy';
   if (trace.head_check_failed) return 'head_check_failed';
   if (trace.ddg_no_candidates) return 'ddg_no_candidates';
@@ -336,6 +338,8 @@ function runSelfTest() {
   const picked = selectNeedsReviewRows(values, idx, { only: null, offset: 1, limit: 2 }).selected;
   const got = picked.map((x) => x.rowNumber).join(',');
   if (got !== '4,5') throw new Error(`self-test failed: expected rowNumber 4,5, got ${got}`);
+  if (!isDeniedFinalHost('dot-tech.org')) throw new Error('self-test failed: dot-tech.org must be denied');
+  if (!isDeniedFinalHost('www.dot-tech.org')) throw new Error('self-test failed: www.dot-tech.org must be denied');
 }
 
 async function sheetsClient() {
@@ -376,11 +380,20 @@ async function resolveWikidataP856(qid) {
   }
 }
 
-function tryValidateCandidate(url, row) {
+async function tryValidateCandidate(url, row) {
   const normalized = normalizeDocsUrl(String(url || '').trim());
   const check = validateOfficialUrl(normalized, { slug: row.slug, title: row.title || row.topic });
-  if (check.ok) return normalized;
-  return '';
+  if (!check.ok) return { acceptedUrl: '', rejectReason: check.reason || 'policy_reject' };
+
+  const verified = await resolveFinalUrl(normalized, { timeoutMs: 3500, maxRedirects: 5 });
+  if (verified.ok && verified.finalUrl) {
+    const finalHost = normalizeHost(verified.finalUrl);
+    if (isDeniedFinalHost(finalHost)) {
+      return { acceptedUrl: '', rejectReason: 'redirected_to_denied_host' };
+    }
+  }
+
+  return { acceptedUrl: normalized, rejectReason: '' };
 }
 
 async function main() {
@@ -478,6 +491,7 @@ async function main() {
         ddg_no_candidates: false,
         ddg_error: false,
         gpt_skipped_no_candidates: false,
+        redirected_to_denied_host: false,
         all_candidates_rejected_by_policy: false,
         head_check_failed: false,
       };
@@ -489,14 +503,17 @@ async function main() {
       if (row.wikidata_id) {
         const p856 = await resolveWikidataP856(row.wikidata_id);
         if (p856) {
-          const accepted = tryValidateCandidate(p856, row);
-          if (accepted) {
-            finalUrl = accepted;
+          const checked = await tryValidateCandidate(p856, row);
+          if (checked.acceptedUrl) {
+            finalUrl = checked.acceptedUrl;
             repaired = true;
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, 'url_repaired(method=wikidata_p856)');
             actions.push('url:fixed:wikidata_p856');
           } else {
+            if (checked.rejectReason === 'redirected_to_denied_host') {
+              unresolvedTrace.redirected_to_denied_host = true;
+            }
             unresolvedTrace.all_candidates_rejected_by_policy = true;
           }
         } else {
@@ -519,27 +536,32 @@ async function main() {
         if (!ddgCandidates.length) unresolvedTrace.ddg_no_candidates = true;
 
         if (ddgResult?.ok && ddgResult.official_url) {
-          const accepted = tryValidateCandidate(ddgResult.official_url, row);
-          if (accepted) {
-            finalUrl = accepted;
+          const checked = await tryValidateCandidate(ddgResult.official_url, row);
+          if (checked.acceptedUrl) {
+            finalUrl = checked.acceptedUrl;
             repaired = true;
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, 'url_repaired(method=ddg)');
             actions.push('url:fixed:ddg');
+          } else if (checked.rejectReason === 'redirected_to_denied_host') {
+            unresolvedTrace.redirected_to_denied_host = true;
           }
         }
       }
 
       if (!repaired && ddgCandidates.length) {
         for (const candidate of ddgCandidates) {
-          const accepted = tryValidateCandidate(candidate, row);
-          if (accepted) {
-            finalUrl = accepted;
+          const checked = await tryValidateCandidate(candidate, row);
+          if (checked.acceptedUrl) {
+            finalUrl = checked.acceptedUrl;
             repaired = true;
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, 'url_repaired(method=ddg_candidates)');
             actions.push('url:fixed:ddg_candidates');
             break;
+          }
+          if (checked.rejectReason === 'redirected_to_denied_host') {
+            unresolvedTrace.redirected_to_denied_host = true;
           }
         }
         if (!repaired) unresolvedTrace.all_candidates_rejected_by_policy = true;
@@ -554,14 +576,17 @@ async function main() {
         });
 
         if (gpt.ok && gpt.official_url) {
-          const accepted = tryValidateCandidate(gpt.official_url, row);
-          if (accepted) {
-            finalUrl = accepted;
+          const checked = await tryValidateCandidate(gpt.official_url, row);
+          if (checked.acceptedUrl) {
+            finalUrl = checked.acceptedUrl;
             repaired = true;
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, 'url_repaired(method=gpt_candidates)');
             actions.push('url:fixed:gpt_candidates');
           } else {
+            if (checked.rejectReason === 'redirected_to_denied_host') {
+              unresolvedTrace.redirected_to_denied_host = true;
+            }
             unresolvedTrace.all_candidates_rejected_by_policy = true;
           }
         }
@@ -615,9 +640,9 @@ async function main() {
             }
           }
 
-          const accepted = tryValidateCandidate(normalizedFinal, row);
-          if (accepted) {
-            finalUrl = accepted;
+          const checked = await tryValidateCandidate(normalizedFinal, row);
+          if (checked.acceptedUrl) {
+            finalUrl = checked.acceptedUrl;
             repaired = true;
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, entityClass === 'library_or_model'
@@ -629,6 +654,9 @@ async function main() {
             break;
           }
 
+          if (checked.rejectReason === 'redirected_to_denied_host') {
+            unresolvedTrace.redirected_to_denied_host = true;
+          }
           anyPolicyRejected = true;
         }
 

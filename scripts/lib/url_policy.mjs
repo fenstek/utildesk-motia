@@ -41,6 +41,8 @@ export const DENY_HOSTS = new Set([
   'medium.com', 'substack.com', 'dev.to',
   // URL parking / redirect-proxy services (v2.5)
   'introvert.com',
+  // Known parked/squatted destination observed via redirects
+  'dot-tech.org', 'www.dot-tech.org',
 ]);
 
 // ─── Substring patterns that indicate non-product URLs ──────────────────────
@@ -196,11 +198,23 @@ const DENY_HOSTS_NO_SUBDOMAIN = new Set([
  * For DENY_HOSTS_NO_SUBDOMAIN entries only exact match applies (no *.domain).
  */
 function isDeniedHost(host) {
-  for (const d of DENY_HOSTS) {
-    if (host === d) return true;
-    if (!DENY_HOSTS_NO_SUBDOMAIN.has(d) && host.endsWith('.' + d)) return true;
+  const h = String(host || '').toLowerCase().replace(/\.+$/, '');
+  if (!h) return false;
+  for (const dRaw of DENY_HOSTS) {
+    const d = String(dRaw || '').toLowerCase().replace(/\.+$/, '');
+    if (!d) continue;
+    if (h === d) return true;
+    if (!DENY_HOSTS_NO_SUBDOMAIN.has(d) && h.endsWith('.' + d)) return true;
   }
   return false;
+}
+
+/**
+ * Returns true if a resolved/final hostname is denied by policy.
+ * Accepts host values like "www.dot-tech.org" (with/without trailing dot).
+ */
+export function isDeniedFinalHost(host) {
+  return isDeniedHost(host);
 }
 
 /**
