@@ -22,6 +22,8 @@ import { classifyEntity, isWrongEntityDomain } from './entity_disambiguation.mjs
 // ─── Hard deny: hosts that are never official product URLs ──────────────────
 
 export const DENY_HOSTS = new Set([
+  // Internal catalog domain (never an official tool URL)
+  'tools.utildesk.de',
   // Encyclopedias / knowledge bases
   'wikipedia.org', 'wikidata.org', 'wikimedia.org',
   // Social networks
