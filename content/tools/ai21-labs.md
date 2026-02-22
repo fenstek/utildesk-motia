@@ -4,7 +4,7 @@ title: "AI21 Labs"
 category: "AI"
 price_model: ""
 tags: [assistant, automation]
-official_url: "https://ai21-labs.com/"
+official_url: "https://www.ai21.com/"
 ---
 
 # AI21 Labs
