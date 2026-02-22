@@ -66,6 +66,13 @@ else
   retry_cmd 5 git push -u origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 fi
 
+# Optional repo hygiene: disable active tool markdown files when Sheet status
+# is NEEDS_REVIEW/ERROR/BLACKLIST. Disabled by default.
+if [[ "${REPO_DISABLE_BY_STATUS:-0}" == "1" ]]; then
+  echo "[cron] repo-status-disable: audit_repo_disable_by_sheet_status.mjs --apply=1"
+  node scripts/audit_repo_disable_by_sheet_status.mjs --apply=1 --json
+fi
+
 # 1) Generate (can be disabled for manual fixes)
 if [[ "${PUBLISH_ONLY:-0}" == "1" ]]; then
   echo "[cron] PUBLISH_ONLY=1 -> skip generation (no NEW tools will be processed)"
