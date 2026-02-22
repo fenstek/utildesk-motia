@@ -22,7 +22,7 @@ const URL_UNRESOLVED_REASON_KEYS = [
   'ddg_no_candidates',
   'ddg_error',
   'gpt_skipped_no_candidates',
-  'redirected_to_denied_host',
+  'redirected_to_denied_final_host',
   'all_candidates_rejected_by_policy',
   'head_check_failed',
 ];
@@ -287,7 +287,7 @@ function markUnresolvedReason(diag, reason, slug) {
 function selectPrimaryUnresolvedReason(trace) {
   if (trace.missing_title) return 'missing_title';
   if (trace.ddg_error) return 'ddg_error';
-  if (trace.redirected_to_denied_host) return 'redirected_to_denied_host';
+  if (trace.redirected_to_denied_final_host) return 'redirected_to_denied_final_host';
   if (trace.all_candidates_rejected_by_policy) return 'all_candidates_rejected_by_policy';
   if (trace.head_check_failed) return 'head_check_failed';
   if (trace.ddg_no_candidates) return 'ddg_no_candidates';
@@ -389,7 +389,7 @@ async function tryValidateCandidate(url, row) {
   if (verified.ok && verified.finalUrl) {
     const finalHost = normalizeHost(verified.finalUrl);
     if (isDeniedFinalHost(finalHost)) {
-      return { acceptedUrl: '', rejectReason: 'redirected_to_denied_host' };
+      return { acceptedUrl: '', rejectReason: 'redirected_to_denied_final_host' };
     }
   }
 
@@ -491,7 +491,7 @@ async function main() {
         ddg_no_candidates: false,
         ddg_error: false,
         gpt_skipped_no_candidates: false,
-        redirected_to_denied_host: false,
+        redirected_to_denied_final_host: false,
         all_candidates_rejected_by_policy: false,
         head_check_failed: false,
       };
@@ -511,8 +511,8 @@ async function main() {
             finalNotes = appendNote(finalNotes, 'url_repaired(method=wikidata_p856)');
             actions.push('url:fixed:wikidata_p856');
           } else {
-            if (checked.rejectReason === 'redirected_to_denied_host') {
-              unresolvedTrace.redirected_to_denied_host = true;
+            if (checked.rejectReason === 'redirected_to_denied_final_host') {
+              unresolvedTrace.redirected_to_denied_final_host = true;
             }
             unresolvedTrace.all_candidates_rejected_by_policy = true;
           }
@@ -543,8 +543,8 @@ async function main() {
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, 'url_repaired(method=ddg)');
             actions.push('url:fixed:ddg');
-          } else if (checked.rejectReason === 'redirected_to_denied_host') {
-            unresolvedTrace.redirected_to_denied_host = true;
+          } else if (checked.rejectReason === 'redirected_to_denied_final_host') {
+            unresolvedTrace.redirected_to_denied_final_host = true;
           }
         }
       }
@@ -560,8 +560,8 @@ async function main() {
             actions.push('url:fixed:ddg_candidates');
             break;
           }
-          if (checked.rejectReason === 'redirected_to_denied_host') {
-            unresolvedTrace.redirected_to_denied_host = true;
+          if (checked.rejectReason === 'redirected_to_denied_final_host') {
+            unresolvedTrace.redirected_to_denied_final_host = true;
           }
         }
         if (!repaired) unresolvedTrace.all_candidates_rejected_by_policy = true;
@@ -584,8 +584,8 @@ async function main() {
             finalNotes = appendNote(finalNotes, 'url_repaired(method=gpt_candidates)');
             actions.push('url:fixed:gpt_candidates');
           } else {
-            if (checked.rejectReason === 'redirected_to_denied_host') {
-              unresolvedTrace.redirected_to_denied_host = true;
+            if (checked.rejectReason === 'redirected_to_denied_final_host') {
+              unresolvedTrace.redirected_to_denied_final_host = true;
             }
             unresolvedTrace.all_candidates_rejected_by_policy = true;
           }
@@ -654,8 +654,8 @@ async function main() {
             break;
           }
 
-          if (checked.rejectReason === 'redirected_to_denied_host') {
-            unresolvedTrace.redirected_to_denied_host = true;
+          if (checked.rejectReason === 'redirected_to_denied_final_host') {
+            unresolvedTrace.redirected_to_denied_final_host = true;
           }
           anyPolicyRejected = true;
         }

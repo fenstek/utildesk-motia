@@ -17,7 +17,7 @@ const TRACKED_REASONS = [
   'self_reference',
   'invalid_url',
   'head_check_failed',
-  'redirected_to_denied_host',
+  'redirected_to_denied_final_host',
   'duplicate_of',
   'stuck_in_progress',
   'missing_specific_tags',
@@ -240,7 +240,7 @@ async function main() {
     duplicate_of: [],
     invalid_url: [],
     head_check_failed: [],
-    redirected_to_denied_host: [],
+    redirected_to_denied_final_host: [],
   };
 
   const evals = [];
@@ -287,7 +287,7 @@ async function main() {
         }
 
         if (isDeniedFinalHost(finalHost)) {
-          reasons.push('redirected_to_denied_host');
+          reasons.push('redirected_to_denied_final_host');
           urlPassed = false;
         }
 
@@ -436,7 +436,7 @@ async function main() {
       duplicate_of: reasonRows.duplicate_of,
       invalid_url: reasonRows.invalid_url,
       head_check_failed: reasonRows.head_check_failed,
-      redirected_to_denied_host: reasonRows.redirected_to_denied_host,
+      redirected_to_denied_final_host: reasonRows.redirected_to_denied_final_host,
     },
     moved_rows_top20: movedRows.slice(0, 20),
     moved_rows_count: movedRows.length,
