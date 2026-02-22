@@ -4,6 +4,7 @@ title: "Inkscape"
 category: "AI"
 price_model: "kostenlos"
 tags: []
+official_url: 'https://inkscape.org/'
 ---
 
 # Inkscape

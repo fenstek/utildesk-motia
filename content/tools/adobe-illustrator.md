@@ -4,6 +4,7 @@ title: "Adobe Illustrator"
 category: "Design"
 price_model: "Abonnementbasiert"
 tags: []
+official_url: 'https://www.adobe.com/products/illustrator.html'
 ---
 
 # Adobe Illustrator
