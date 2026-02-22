@@ -27,3 +27,7 @@
 # telescope disabled (ambiguous entity in sheet NEEDS_REVIEW)
 /tools/telescope    /tools/    301
 /tools/telescope/   /tools/    301
+
+# lifelike disabled (ambiguous entity in sheet NEEDS_REVIEW)
+/tools/lifelike    /tools/    301
+/tools/lifelike/   /tools/    301
