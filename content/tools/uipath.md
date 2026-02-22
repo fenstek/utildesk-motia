@@ -3,7 +3,12 @@ slug: "uipath"
 title: "UiPath"
 category: "AI"
 price_model: ""
-tags: []
+tags:
+  - automation
+  - productivity
+  - workflow
+  - data
+official_url: "https://www.uipath.com/"
 ---
 
 # UiPath

@@ -3,7 +3,12 @@ slug: "openai-gpt-modelle"
 title: "OpenAI GPT-Modelle"
 category: "AI"
 price_model: "Je nach Anbieter und Nutzung"
-tags: []
+tags:
+  - chatbot
+  - assistant
+  - writing
+  - education
+official_url: "https://developers.openai.com/api/docs/models"
 ---
 
 # OpenAI GPT-Modelle
