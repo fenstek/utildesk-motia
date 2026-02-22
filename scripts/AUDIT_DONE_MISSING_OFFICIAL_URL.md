@@ -29,6 +29,16 @@ Each candidate URL is validated via `validateOfficialUrl()` from `scripts/lib/ur
 - Notes column updated with `audit:done_missing_url:no_url_found`.
 - MD file is NOT touched.
 
+## Empty official_url predicate
+
+A value is treated as "missing" if it is any of the following (case-insensitive):
+
+```
+null | undefined | "" | "nan" | "null" | "undefined" | "none" | '""' | "''" | "-" | "n/a" | "n\a" | "#n/a"
+```
+
+This is implemented in `isMissingUrl()` in `scripts/lib/url_policy.mjs`.
+
 ## Usage
 
 ```bash
@@ -46,11 +56,59 @@ node scripts/audit_done_missing_official_url.mjs --apply=1 --limit=20
 
 # With GPT URL chooser enabled
 USE_GPT_URL=1 node scripts/audit_done_missing_official_url.mjs --apply=1
+
+# Debug: print up to 10 DONE sample rows for quick sanity check (no writes)
+node scripts/audit_done_missing_official_url.mjs --debug=1
 ```
 
-## Output (dry-run example)
+## Proof-of-target output (always printed)
+
+On every run, before any processing, the script prints a `proof_of_target` block
+to stdout so you can verify it is hitting the correct spreadsheet and sheet:
+
+```json
+{
+  "proof_of_target": {
+    "spreadsheet_id": "1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ",
+    "sheet_name": "Tabellenblatt1",
+    "rows_count": 344,
+    "first_3_rows": [
+      { "row_index": 2, "slug": "chatgpt",    "status": "DONE", "official_url": "https://chat.openai.com" },
+      { "row_index": 3, "slug": "gemini",     "status": "DONE", "official_url": "https://gemini.google.com/" },
+      { "row_index": 4, "slug": "perplexity", "status": "DONE", "official_url": "https://www.perplexity.ai" }
+    ]
+  }
+}
+```
+
+- `row_index` is the 1-based sheet row number (row 1 = header, so data starts at 2).
+- `official_url` is the **raw** cell value — not normalized or validated.
+- Useful for catching misconfigured `SPREADSHEET_ID` or `SHEET_NAME` env vars.
+
+## Debug output (`--debug=1`)
+
+Prints up to 10 DONE rows with their raw `official_url` values, useful for quick
+sanity checks when investigating data quality:
+
+```json
+{
+  "debug_done_sample": [
+    { "row_index": 2,  "slug": "chatgpt",          "official_url": "https://chat.openai.com" },
+    { "row_index": 3,  "slug": "gemini",            "official_url": "https://gemini.google.com/" },
+    { "row_index": 4,  "slug": "perplexity",        "official_url": "https://www.perplexity.ai" },
+    { "row_index": 5,  "slug": "microsoft-copilot", "official_url": "https://copilot.microsoft.com/" },
+    ...
+  ]
+}
+```
+
+`--debug=1` does not write anything — it is safe to combine with `--apply=1`.
+
+## Full output example (dry-run with repair candidates)
 
 ```
+{ "proof_of_target": { ... } }
+
 ────────────────────────────────────────────────────────────────────────
 audit_done_missing_official_url: 6 DONE rows scanned
   REPAIRED: 2  |  NEEDS_REVIEW: 4
