@@ -1,0 +1,183 @@
+# PUBLISH_GATES.md — Mandatory Publish Gates
+
+This document describes every hard gate in the publish pipeline.
+A gate is a check that, when it fails, **prevents** a row from advancing to `NEW`
+(autogen) or from having its markdown generated (publish orchestrator).
+
+---
+
+## Gates Overview
+
+| Gate | Where | Blocks what | Outcome on fail |
+|---|---|---|---|
+| **official_url present** | autogen | NEW status | `NEEDS_REVIEW` + note |
+| **official_url valid** | autogen | NEW status | `NEEDS_REVIEW` + note |
+| **tags ≥ 1 specific** | autogen | NEW status | `NEEDS_REVIEW` + note |
+| **official_url present** | publish orchestrator | MD generation | `NEEDS_REVIEW` + skip row |
+| **deny-slug list** | autogen + guard_deny_md | any write | silently skipped |
+| **Wikidata P31** | autogen (Wikidata) | row candidate | discarded (not written) |
+
+---
+
+## Gate 1 — official_url (autogen, `sheet_ai_autogen_9_strict_v2.mjs`)
+
+**Location:** gate v2.3, after `resolveOfficialForTopic()`.
+
+**Logic:**
+```
+status = NEEDS_REVIEW  if any of:
+  - resolved official_url is empty
+  - resolved official_url is in DENY_HOST (wikipedia, socials, etc.)
+  - resolved official_url contains a DENY_SUBSTR (gov, city, utm_ ...)
+  - resolved official_url hostname does NOT contain the tool's slug token
+  - (hard override present → bypasses suspicious check)
+```
+
+**Note written:** `blocked:missing/invalid official_url (<reason>)`
+
+**Counter:** `blocked_missing_url` in url_resolution_summary.
+
+---
+
+## Gate 2 — tags (autogen, `sheet_ai_autogen_9_strict_v2.mjs`)
+
+**Location:** gate v2.3, alongside Gate 1.
+
+**Logic:**
+```
+status = NEEDS_REVIEW  if:
+  - tags list (comma-separated, column D) has no specific tag
+  - i.e. after removing "ai" and "produktivität", the list is empty
+```
+
+**Note written:** `blocked:missing/invalid tags`
+
+**Counter:** `blocked_missing_tags` in url_resolution_summary.
+
+---
+
+## Gate 3 — official_url in publish orchestrator (`test_run_9_full.mjs`)
+
+**Location:** immediately after reading the NEW row from the Sheet,
+before calling `generate_tool_md.mjs`.
+
+**Purpose:** Defense-in-depth. Even if a row somehow reaches NEW with an
+empty official_url (manual edit, legacy data, bug), this gate catches it
+before any markdown is generated.
+
+**Logic:**
+```
+if official_url is empty / "NaN" / "null" / "undefined" / "none":
+  → updateStatus(rowNum, 'NEEDS_REVIEW', 'publish blocked: missing official_url')
+  → skip this row (continue to next)
+```
+
+**Log line:** `[GATE] BLOCKED row=N slug=X: missing official_url`
+
+---
+
+## Pre-flight audit (`audit_publish_preflight.mjs`)
+
+An independent audit tool that reads all `NEW` rows from the Sheet and
+validates them against the same rules as Gates 1–2 above.
+
+```bash
+# Dry-run: see what would be blocked
+node scripts/audit_publish_preflight.mjs
+
+# Apply: move invalid rows to NEEDS_REVIEW
+node scripts/audit_publish_preflight.mjs --apply
+
+# Limit to specific slugs
+node scripts/audit_publish_preflight.mjs --apply --only=chatgpt,claude
+
+# Check first 50 NEW rows
+node scripts/audit_publish_preflight.mjs --apply --limit=50
+```
+
+Run this before re-enabling the cron to clean up any legacy NEW rows
+that might have reached NEW without passing the gates.
+
+---
+
+## URL validation rules
+
+These rules are shared by autogen (Gate 1), the audit script, and the
+preflight audit:
+
+### Always blocked hosts (`DENY_HOST`)
+```
+wikipedia.org, wikidata.org, wikimedia.org
+facebook.com, instagram.com, linkedin.com, tiktok.com, youtube.com
+twitter.com, x.com, imdb.com
+tripadvisor.com, booking.com, expedia.com
+apps.apple.com, play.google.com
+duckduckgo.com, google.com, bing.com
+```
+
+### Always blocked substrings (`DENY_SUBSTR`)
+Government / municipality portals:
+```
+mairie, stadt, gemeinde, municip, municipal, kommune, council, gov, gouv, regierung
+comune, townof, cityof, ville, township
+```
+Tourism / generic:
+```
+visit, tourism, tourist, stadtinfo, city, culture
+```
+Tracking / search params:
+```
+/search?, /search/, ?q=, &q=, utm_
+```
+
+### Hard URL overrides
+These bypass the suspicious-check unconditionally:
+| slug | url | reason |
+|---|---|---|
+| `prisma` | `https://prisma-ai.com/` | Prisma Labs ≠ prisma.io ORM |
+
+### Docs-URL normalization
+Paths starting with `/docs`, `/documentation`, `/developers`, `/api`
+are normalized to the origin (scheme+host only) before validation.
+
+---
+
+## Tags validation rules
+
+**Minimum requirement:** at least 1 tag from the specific allowlist
+(i.e. after removing `"ai"` and `"produktivität"`, the list must be non-empty).
+
+**Allowlist** (TAG_ALLOWLIST in `scripts/lib/tag_enricher_gpt.mjs`):
+```
+chatbot, assistant, writing, content, marketing, seo, social-media,
+design, image, video, audio, transcription,
+productivity, automation, workflow, no-code,
+data, analytics, spreadsheet, crm,
+coding, developer-tools, api, translation, education, customer-support, meeting
+```
+
+**Additional domain-specific tags** generated by autogen:
+```
+llm, image, video, audio, devtools, automation, writing, productivity, design
+```
+
+If a row's tags are only `"ai"` or empty, it fails this gate.
+
+---
+
+## Counter summary in autogen output
+
+Every run of `sheet_ai_autogen_9_strict_v2.mjs` emits a `url_resolution_summary`
+JSON block including:
+
+```json
+{
+  "blocked_missing_url": 0,
+  "blocked_missing_tags": 0,
+  "needs_review_written": 0,
+  "wikidata_guard_rejected": 12,
+  "wikidata_guard_allowed": 8
+}
+```
+
+Use these counters to verify the gates are firing correctly.

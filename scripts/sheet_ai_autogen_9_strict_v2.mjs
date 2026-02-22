@@ -698,6 +698,10 @@ async function main(){
     gpt_errors: 0,
     resolved_with_wikidata: 0,
     resolved_with_ddg: 0,
+    // Gate counters (v2.3)
+    blocked_missing_url: 0,
+    blocked_missing_tags: 0,
+    needs_review_written: 0,
   };
   const hardLimit = AUTOGEN_LIMIT > 0 ? AUTOGEN_LIMIT : Number.POSITIVE_INFINITY;
 
@@ -805,22 +809,47 @@ async function main(){
       }
       const officialToCheck = hardOverride || normalizedOfficial;
 
-      // official_url guard (final safety net); hard override bypasses suspicious check
-      const suspicious = !hardOverride && (!officialToCheck || isSuspiciousOfficialUrl(officialToCheck) || (hostname(officialToCheck) && token2 && !hostContainsToken(hostname(officialToCheck), token2)));
-      const safeOfficial = hardOverride || (suspicious ? '' : officialToCheck);
-      const status = suspicious ? 'NEEDS_REVIEW' : 'NEW';
-      const safetyNote = suspicious ? `blocked_official_url:${urlResolution?.reason || 'unresolved'}` : '';
+      // ─── GATE 1: official_url (hard gate, v2.3) ──────────────────────────────
+      // Hard overrides bypass the suspicious check unconditionally.
+      const urlSuspicious = !hardOverride && (
+        !officialToCheck ||
+        isSuspiciousOfficialUrl(officialToCheck) ||
+        (hostname(officialToCheck) && token2 && !hostContainsToken(hostname(officialToCheck), token2))
+      );
+      const safeOfficial = hardOverride || (urlSuspicious ? '' : officialToCheck);
+
+      // ─── GATE 2: tags (hard gate, v2.3) ──────────────────────────────────────
+      // Normalize: deduplicate, lowercase, strip empty.
+      // Require at least 1 specific tag beyond the generic 'ai' bucket.
+      const tagsDeduped = [...new Set(tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean))];
+      const specificTags = tagsDeduped.filter(t => t !== 'ai' && t !== 'produktivität');
+      const tagsInvalid = specificTags.length === 0;
+      const cleanTags = tagsDeduped.join(',');
+
+      // ─── Determine final status — NEW only if BOTH gates pass ────────────────
+      const blockReasons = [];
+      if (urlSuspicious) {
+        blockReasons.push(`blocked:missing/invalid official_url (${urlResolution?.reason || 'unresolved'})`);
+        counters.blocked_missing_url++;
+      }
+      if (tagsInvalid) {
+        blockReasons.push('blocked:missing/invalid tags');
+        counters.blocked_missing_tags++;
+      }
+      const status = blockReasons.length ? 'NEEDS_REVIEW' : 'NEW';
+      if (status === 'NEEDS_REVIEW') counters.needs_review_written++;
+      const safetyNote = blockReasons.join(' | ');
 
       // Build strict A..P row (16 cells)
       const row = [
         topic,                 // A topic
         slug,                  // B slug
         category,              // C category
-          tags,                  // D tags
+        cleanTags,             // D tags (normalized, deduped; v2.3 gate applied)
         'freemium',            // E price_model
         '',                    // F affiliate_url
-        status,                // G status
-        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason} ${safetyNote} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes
+        status,                // G status (NEW only if url+tags gates pass)
+        (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason}${safetyNote ? ' | ' + safetyNote : ''} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes
         '',                    // I title
         '',                    // J short_hint
         safeOfficial,          // K official_url
@@ -886,9 +915,15 @@ async function main(){
   } else {
     console.log(JSON.stringify(result, null, 2));
   }
-  if (AUTOGEN_LIMIT > 0 || /^(1|true|yes|on)$/i.test(String(process.env.URL_RESOLUTION_SUMMARY || ""))) {
-    console.log(JSON.stringify({ ok: true, url_resolution_summary: { ...counters, wikidata_guard_rejected, wikidata_guard_allowed } }, null, 2));
-  }
+  // Always emit gate + resolution summary (important for CI/audit)
+  console.log(JSON.stringify({
+    ok: true,
+    url_resolution_summary: {
+      ...counters,
+      wikidata_guard_rejected,
+      wikidata_guard_allowed,
+    },
+  }, null, 2));
 }
 
 main().catch(e=>die(e.stack||String(e)));
