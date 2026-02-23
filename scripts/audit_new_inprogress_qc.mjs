@@ -276,8 +276,18 @@ async function main() {
     if (urlPassed) {
       verified = await resolveFinalUrl(finalUrl, { timeoutMs: 4000, maxRedirects: 5 });
       if (!verified.ok || !verified.finalUrl) {
-        reasons.push('head_check_failed');
-        urlPassed = false;
+        // cf_bot_protection: both HEAD and GET returned 403 — Cloudflare Bot Fight Mode
+        // blocking this VPS's datacenter IP.  The URL already passed all static policy
+        // checks above (url_policy, DENY_HOSTS, parking patterns).  403 on a legitimate
+        // Cloudflare-protected site is NOT evidence of an invalid URL.  Parking pages
+        // return 200, not 403, so accepting cf_bot_protection does not weaken that guard.
+        if (verified.error === 'cf_bot_protection') {
+          // Non-blocking: pass through with original finalUrl (no redirect followed).
+          // urlPassed stays true; no entry added to reasons.
+        } else {
+          reasons.push('head_check_failed');
+          urlPassed = false;
+        }
       } else {
         finalUrl = String(verified.finalUrl || '').trim();
         const suspicion = classifyFinalUrl({
