@@ -11,9 +11,17 @@ function toErrorMessage(err) {
   return String(err?.name || err?.message || err || 'request_error').slice(0, 120);
 }
 
+/**
+ * @typedef {{ response: Response, fallbackTriggerCode: number }} RequestOnceResult
+ * fallbackTriggerCode: the HEAD status that triggered a GET fallback (0 if no fallback).
+ */
+
 async function requestOnce(url, { timeoutMs }) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+  /** @type {number} */
+  let fallbackTriggerCode = 0;
 
   try {
     let response = await fetch(url, {
@@ -22,7 +30,15 @@ async function requestOnce(url, { timeoutMs }) {
       signal: controller.signal,
     });
 
-    if (response.status === 405 || response.status === 501) {
+    // GET fallback for method-not-allowed AND bot-protection rejections.
+    //  - 405/501: server explicitly rejects HEAD method.
+    //  - 403: Cloudflare Bot Fight Mode — blocks HEAD from datacenter IPs but may allow GET.
+    //  - 429: rate-limiting — same reasoning.
+    // We remember the HEAD code so the caller can distinguish "both HEAD+GET = 403"
+    // (Cloudflare IP block) from a genuine unreachable URL.
+    if (response.status === 405 || response.status === 501 ||
+        response.status === 403 || response.status === 429) {
+      fallbackTriggerCode = response.status;
       response = await fetch(url, {
         method: 'GET',
         redirect: 'manual',
@@ -37,7 +53,7 @@ async function requestOnce(url, { timeoutMs }) {
       // ignore body cancellation errors
     }
 
-    return response;
+    return { response, fallbackTriggerCode };
   } finally {
     clearTimeout(timeout);
   }
@@ -61,13 +77,14 @@ export async function resolveFinalUrl(inputUrl, options = {}) {
   }
 
   for (let i = 0; i <= maxRedirects; i += 1) {
-    let response;
+    let result;
     try {
-      response = await requestOnce(current, { timeoutMs });
+      result = await requestOnce(current, { timeoutMs });
     } catch (err) {
       return { ok: false, finalUrl: current, status: 0, error: toErrorMessage(err) };
     }
 
+    const { response, fallbackTriggerCode } = result;
     const status = Number(response.status || 0);
 
     if (isRedirectStatus(status)) {
@@ -93,6 +110,13 @@ export async function resolveFinalUrl(inputUrl, options = {}) {
 
     if (status >= 200 && status < 400) {
       return { ok: true, finalUrl: current, status, error: '' };
+    }
+
+    // Both HEAD and GET returned 403: Cloudflare Bot Fight Mode (datacenter IP block).
+    // This is distinct from a genuinely unreachable/invalid URL.  The QC gate can
+    // treat this specially — the URL still passed all static policy checks.
+    if (fallbackTriggerCode === 403 && status === 403) {
+      return { ok: false, finalUrl: current, status, error: 'cf_bot_protection' };
     }
 
     return { ok: false, finalUrl: current, status, error: `http_${status || 0}` };
