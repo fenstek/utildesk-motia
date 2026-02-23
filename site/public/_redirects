@@ -31,3 +31,11 @@
 # lifelike disabled (ambiguous entity in sheet NEEDS_REVIEW)
 /tools/lifelike    /tools/    301
 /tools/lifelike/   /tools/    301
+
+# magician BLACKLIST (discontinued: Diagram acquired by Figma 2023, product discontinued)
+/tools/magician    /tools/    301
+/tools/magician/   /tools/    301
+
+# pindar BLACKLIST (no AI product identified; official URL is parked domain)
+/tools/pindar    /tools/    301
+/tools/pindar/   /tools/    301
