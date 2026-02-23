@@ -1,10 +1,18 @@
 #!/usr/bin/env node
 /**
- * audit_done_suspicious_official_url.mjs  (v1.3)
+ * audit_done_suspicious_official_url.mjs  (v1.4)
  *
  * Defense-in-depth post-publish audit for DONE rows.
  * Flags rows whose official_url looks suspicious AFTER they have already
  * been published — catching cases that slipped through pre-publish gates.
+ *
+ * v1.4 changes vs v1.3:
+ *   - NEW Check 5: HTML-sniff for JS-redirect parking/lander pages (opt-in).
+ *     Catches pages that return HTTP 200 but serve a minimal HTML page that
+ *     JS-redirects to /lander or /parking (bypassing resolveFinalUrl()).
+ *     Enable with:  --html-sniff
+ *     New result bucket: jsParkingRows  → NEEDS_REVIEW on --apply=1
+ *     New reason: js_parking_lander_detected  (confidence ≥ 0.70, soft flag)
  *
  * v1.3 changes vs v1.2:
  *   - classifyFinalUrl() on resolved final URLs
@@ -25,9 +33,11 @@
  *     is https → http_upgradeable bucket (URL updated, status stays DONE)
  *   - denied_host for google.com subdomains fixed in url_policy.mjs (v2.5)
  *
- * Four mutually exclusive result buckets:
+ * Five mutually exclusive result buckets:
  *   flagged        → hard policy violation → NEEDS_REVIEW on --apply=1
  *   httpUpgradeable → not_https but resolves to https → URL fixed on --apply=1
+ *   jsParkingRows  → HTML sniff detected JS-redirect lander → NEEDS_REVIEW on --apply=1
+ *                    (only populated when --html-sniff is set)
  *   softFlagged    → hostname_mismatch only (informational, no action taken)
  *   clean          → no issues
  *
@@ -40,6 +50,8 @@
  *   3. suspicious_tld_org_net  — host is <slug>.org or <slug>.net while
  *        the slug does NOT belong to a known open-source project
  *   4. hostname_mismatch       — soft_flag only (informational)
+ *   5. [opt-in] sniffHtmlParking() — detect JS-redirect lander pages
+ *        Only runs when: --html-sniff flag, no other reasons, resolved.ok
  *
  * Usage:
  *   # dry-run — report only, no writes (default)
@@ -47,6 +59,9 @@
  *
  *   # apply — move flagged rows to NEEDS_REVIEW; fix http→https URLs in sheet
  *   node scripts/audit_done_suspicious_official_url.mjs --apply=1
+ *
+ *   # enable HTML-sniff phase (detect JS-redirect parking pages)
+ *   node scripts/audit_done_suspicious_official_url.mjs --html-sniff
  *
  *   # limit to first N DONE rows
  *   node scripts/audit_done_suspicious_official_url.mjs --limit=50
@@ -68,6 +83,7 @@ import {
 
 import { resolveFinalUrl } from './lib/http_verify_url.mjs';
 import { classifyFinalUrl } from './lib/url_suspicion.mjs';
+import { sniffHtmlParking, MIN_CONFIDENCE } from './lib/html_sniff_parking.mjs';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
@@ -195,9 +211,10 @@ async function sheetsClient() {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const argv    = process.argv.slice(2);
-  const apply   = argv.includes('--apply=1') || argv.includes('--apply');
-  const jsonOut = argv.includes('--json');
+  const argv      = process.argv.slice(2);
+  const apply     = argv.includes('--apply=1') || argv.includes('--apply');
+  const jsonOut   = argv.includes('--json');
+  const htmlSniff = argv.includes('--html-sniff');
 
   const onlyRaw   = (argv.find(a => a.startsWith('--only=')) || '').replace('--only=', '').trim();
   const onlySlugs = onlyRaw ? new Set(onlyRaw.split(',').map(s => s.trim().toLowerCase())) : null;
@@ -206,7 +223,7 @@ async function main() {
   const limit    = limitArg ? Math.max(1, Math.min(5000, Number(limitArg) || 0)) : 0;
 
   if (!jsonOut) {
-    console.error(`[done-url-audit] mode=${apply ? 'APPLY' : 'DRY-RUN'} ts=${nowIso()}`);
+    console.error(`[done-url-audit] mode=${apply ? 'APPLY' : 'DRY-RUN'} html_sniff=${htmlSniff} ts=${nowIso()}`);
   }
 
   const sheets = await sheetsClient();
@@ -259,6 +276,7 @@ async function main() {
 
   const flagged         = [];
   const httpUpgradeable = [];
+  const jsParkingRows   = [];   // HTML-sniff detected JS-redirect landers (--html-sniff only)
   const softFlagged     = [];
   const clean           = [];
 
@@ -315,8 +333,20 @@ async function main() {
       }
     }
 
+    // Check 5: HTML sniff for JS-redirect parking/lander pages (opt-in).
+    // Only runs when --html-sniff is set, no other reasons, and URL resolved ok.
+    // Reads up to 64 KiB of body; does not count toward hard reasons so that
+    // false positives stay in jsParkingRows (NEEDS_REVIEW on apply) rather
+    // than directly blocking with other hard-flag reasons.
+    let jsSniff = { detected: false, confidence: 0, reason: '', evidence: '' };
+    if (htmlSniff && reasons.length === 0 && resolved.ok && finalUrl) {
+      jsSniff = await sniffHtmlParking(finalUrl);
+    }
+
     if (reasons.length) {
       flagged.push({ ...row, reasons: Array.from(new Set(reasons)), finalUrl, finalHost, sourceHost });
+    } else if (jsSniff.detected && jsSniff.confidence >= MIN_CONFIDENCE) {
+      jsParkingRows.push({ ...row, jsParking: jsSniff, finalUrl, finalHost, sourceHost });
     } else if (softReasons.length) {
       softFlagged.push({ ...row, softReasons, finalUrl, finalHost, sourceHost });
     } else {
@@ -335,12 +365,20 @@ async function main() {
       if (samples[key].length < 3) samples[key].push(r.slug);
     }
   }
+  // Include jsParkingRows in reasons_breakdown
+  for (const r of jsParkingRows) {
+    const key = 'js_parking_lander_detected';
+    reasons_breakdown[key] = (reasons_breakdown[key] || 0) + 1;
+    if (!samples[key]) samples[key] = [];
+    if (samples[key].length < 3) samples[key].push(r.slug);
+  }
 
   // ── Human-readable report ────────────────────────────────────────────────
   if (!jsonOut) {
     console.log(`\n${'─'.repeat(72)}`);
     console.log(`Done-URL Audit: ${toCheck.length} DONE rows checked`);
-    console.log(`  CLEAN: ${clean.length}  |  FLAGGED: ${flagged.length}  |  HTTP_UPGRADE: ${httpUpgradeable.length}  |  SOFT: ${softFlagged.length}`);
+    console.log(`  CLEAN: ${clean.length}  |  FLAGGED: ${flagged.length}  |  HTTP_UPGRADE: ${httpUpgradeable.length}  |  JS_PARKING: ${jsParkingRows.length}  |  SOFT: ${softFlagged.length}`);
+    if (htmlSniff) console.log(`  [--html-sniff enabled: ${jsParkingRows.length} JS-redirect lander(s) detected]`);
     console.log(`${'─'.repeat(72)}`);
 
     if (flagged.length) {
@@ -365,6 +403,17 @@ async function main() {
       });
     }
 
+    if (jsParkingRows.length) {
+      console.log('\nJS_PARKING rows (→ NEEDS_REVIEW on --apply):');
+      console.log(`${'#'.padEnd(4)} ${'row'.padEnd(5)} ${'slug'.padEnd(35)} evidence`);
+      console.log(`${'─'.repeat(72)}`);
+      jsParkingRows.forEach((r, i) => {
+        console.log(
+          `${String(i + 1).padEnd(4)} ${String(r.rowNumber).padEnd(5)} ${r.slug.padEnd(35)} ${r.jsParking?.evidence || ''}`
+        );
+      });
+    }
+
     if (softFlagged.length) {
       console.log(`\nSOFT_FLAGGED rows (informational, no action): ${softFlagged.length}`);
       console.log(`  (hostname_mismatch only — these are advisory and do not trigger NEEDS_REVIEW)`);
@@ -381,6 +430,7 @@ async function main() {
   // ── Apply: move flagged rows to NEEDS_REVIEW; fix http→https URLs ─────────
   let appliedNeedsReview = 0;
   let appliedHttpUpgrade = 0;
+  let appliedJsParking   = 0;
   const batchData = [];
 
   if (apply) {
@@ -393,6 +443,18 @@ async function main() {
         { range: `${SHEET_NAME}!${colNotes}${r.rowNumber}`,   values: [[newNote]] },
       );
       appliedNeedsReview++;
+    }
+
+    // JS-parking rows → NEEDS_REVIEW (note: official_url NOT changed automatically)
+    for (const r of jsParkingRows) {
+      const evidence = String(r.jsParking?.evidence || '').slice(0, 120);
+      const noteFragment = `AUTO: js_parking_lander_detected; evidence: ${evidence}; prev_status=DONE`;
+      const newNote = appendNote(r.notes, noteFragment);
+      batchData.push(
+        { range: `${SHEET_NAME}!${colStatus}${r.rowNumber}`,  values: [['NEEDS_REVIEW']] },
+        { range: `${SHEET_NAME}!${colNotes}${r.rowNumber}`,   values: [[newNote]] },
+      );
+      appliedJsParking++;
     }
 
     // HTTP upgradeable → update official_url only (status stays DONE)
@@ -412,6 +474,7 @@ async function main() {
 
     if (!jsonOut) {
       if (appliedNeedsReview) console.log(`\n[done-url-audit] Applied: ${appliedNeedsReview} rows → NEEDS_REVIEW`);
+      if (appliedJsParking)   console.log(`[done-url-audit] Applied: ${appliedJsParking} js_parking rows → NEEDS_REVIEW`);
       if (appliedHttpUpgrade) console.log(`[done-url-audit] Applied: ${appliedHttpUpgrade} rows → official_url upgraded to https`);
     }
   }
@@ -420,14 +483,17 @@ async function main() {
   const summary = {
     ok: true,
     mode: apply ? 'apply' : 'dry-run',
+    html_sniff_enabled: htmlSniff,
     ts: nowIso(),
-    total_done_checked:   toCheck.length,
-    clean_count:          clean.length,
-    flagged_count:        flagged.length,
-    http_upgradeable_count: httpUpgradeable.length,
-    soft_flags_count:     softFlagged.length,
-    applied_needs_review: apply ? appliedNeedsReview : 0,
-    applied_http_upgrade: apply ? appliedHttpUpgrade : 0,
+    total_done_checked:      toCheck.length,
+    clean_count:             clean.length,
+    flagged_count:           flagged.length,
+    http_upgradeable_count:  httpUpgradeable.length,
+    js_parking_count:        jsParkingRows.length,
+    soft_flags_count:        softFlagged.length,
+    applied_needs_review:    apply ? appliedNeedsReview : 0,
+    applied_js_parking:      apply ? appliedJsParking   : 0,
+    applied_http_upgrade:    apply ? appliedHttpUpgrade  : 0,
     reasons_breakdown,
     samples,
     flagged_rows: flagged.map(r => ({
@@ -442,6 +508,14 @@ async function main() {
       slug:         r.slug,
       old_url:      r.offUrl,
       new_url:      r.httpsUrl,
+    })),
+    js_parking_rows: jsParkingRows.map(r => ({
+      row:          r.rowNumber,
+      slug:         r.slug,
+      official_url: r.offUrl,
+      final_url:    r.finalUrl,
+      evidence:     r.jsParking?.evidence || '',
+      confidence:   r.jsParking?.confidence || 0,
     })),
     soft_flagged_rows: softFlagged.map(r => ({
       row:          r.rowNumber,
