@@ -28,7 +28,7 @@
 /tools/telescope    /tools/    301
 /tools/telescope/   /tools/    301
 
-# lifelike disabled (ambiguous entity in sheet NEEDS_REVIEW)
+# lifelike BLACKLIST (parked/lander official_url + tool not identifiable)
 /tools/lifelike    /tools/    301
 /tools/lifelike/   /tools/    301
 
