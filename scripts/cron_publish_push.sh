@@ -40,14 +40,19 @@ node scripts/guard_deny_md.mjs
 # Always work from autobot branch (self-healing if remote branch was deleted)
 git fetch --all --prune
 
-# Self-heal: if autobot diverged from master (manual PRs advanced master), reset autobot to master
+# Self-heal: reset autobot to master only on pure lag (ahead=0, behind>0)
 if git show-ref --verify --quiet refs/remotes/origin/autobot && \
    git show-ref --verify --quiet refs/remotes/origin/master; then
-  if ! git merge-base --is-ancestor "origin/master" "origin/autobot"; then
-    echo "[cron] WARN: origin/autobot diverged from origin/master -> resetting autobot to origin/master"
+  COUNTS="$(git rev-list --left-right --count origin/autobot...origin/master)"
+  LEFT="$(echo "$COUNTS" | awk '{print $1}')"
+  RIGHT="$(echo "$COUNTS" | awk '{print $2}')"
+  if [[ "$LEFT" == "0" && "$RIGHT" -gt 0 ]]; then
+    echo "[cron] WARN: origin/autobot behind origin/master (ahead=${LEFT} behind=${RIGHT}) -> resetting autobot to origin/master"
     git checkout -B autobot origin/master
     retry_cmd 5 git push -f origin autobot || { echo "[cron] ERROR: push autobot failed"; exit 1; }
     echo "[cron] origin/autobot reset complete"
+  elif [[ "$LEFT" -gt 0 ]]; then
+    echo "[cron] WARN: origin/autobot has local commits (ahead=${LEFT} behind=${RIGHT}) -> DO NOT reset; continue with origin/autobot"
   fi
 fi
 
