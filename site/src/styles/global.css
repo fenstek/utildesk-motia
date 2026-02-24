@@ -87,7 +87,7 @@ a:hover {
 .tools-grid {
   display: grid;
   gap: var(--space-5);
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 .tool-card {
@@ -99,6 +99,9 @@ a:hover {
   flex-direction: column;
   gap: var(--space-4);
   min-height: 180px;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
