@@ -18,7 +18,7 @@ const SELF_TEST_STATUS = args.includes('--self-test-status-logic');
 const DRY = process.env.DRY_STATUS_LOGIC === '1' || SELF_TEST_STATUS;
 const TOOL_JSON = '/tmp/utildesk_current_tool.json';
 const DEFER_FILE = '/tmp/utildesk_deferred_publish_checks.json';
-const DEFER_MARKER = 'PUBLISH_DEFERRED: pre-commit md missing/untracked';
+const DEFER_MARKER = 'PUBLISH_DEFERRED: pre-commit md missing';
 const POST_COMMIT_ERROR = 'PUBLISH_ERROR: md missing/untracked post-commit';
 
 function die(msg){
@@ -267,15 +267,15 @@ for (let i = 0; i < COUNT; i++){
     runInherit('node', ['scripts/check_duplicates.mjs']);
 
     const mdPath = `content/tools/${norm.slug}.md`;
-    const publishedOk = existsSync(mdPath) && isTrackedByGit(mdPath);
+    const publishedOk = existsSync(mdPath);
     if (!publishedOk) {
-      console.error('[GUARD] Defer DONE: pre-commit md missing or not tracked:', mdPath);
+      console.error('[GUARD] Defer DONE: pre-commit md missing:', mdPath);
       console.error(`[GUARD] ${DEFER_MARKER}`);
       deferredFinalCheck.push({
         rowNumber: rowNum,
         mdPath,
         slug: norm.slug,
-        reason: 'pre_commit_missing_or_untracked',
+        reason: 'pre_commit_missing',
       });
       publishCounters.publish_deferred++;
       continue;
