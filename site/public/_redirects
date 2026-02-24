@@ -39,3 +39,7 @@
 # pindar BLACKLIST (no AI product identified; official URL is parked domain)
 /tools/pindar    /tools/    301
 /tools/pindar/   /tools/    301
+
+# jarvis BLACKLIST (invalid official_url: jarvis.com not an AI tool; phantom/alias for jasper)
+/tools/jarvis    /tools/    301
+/tools/jarvis/   /tools/    301
