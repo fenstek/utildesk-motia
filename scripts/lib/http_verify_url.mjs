@@ -3,6 +3,10 @@
  * Does not download large bodies; GET requests use byte range.
  */
 
+const DEFAULT_CONNECT_TIMEOUT_MS = 8000;
+const DEFAULT_REQUEST_TIMEOUT_MS = 15000;
+const DEFAULT_MAX_REDIRECTS = 6;
+
 function isRedirectStatus(status) {
   return status === 301 || status === 302 || status === 303 || status === 307 || status === 308;
 }
@@ -11,23 +15,59 @@ function toErrorMessage(err) {
   return String(err?.name || err?.message || err || 'request_error').slice(0, 120);
 }
 
+function clampTimeout(value, fallback, min = 250) {
+  return Math.max(min, Number(value || fallback) || fallback);
+}
+
+function createWatchdog(controller, ms, reason) {
+  return setTimeout(() => controller.abort(new Error(reason)), ms);
+}
+
+async function fetchWithWatchdogs(url, init, { connectTimeoutMs, deadlineAt }) {
+  const remainingMs = Math.max(0, deadlineAt - Date.now());
+  if (remainingMs <= 0) {
+    throw new Error('timeout');
+  }
+
+  const controller = new AbortController();
+  const connectTimer = createWatchdog(controller, Math.min(connectTimeoutMs, remainingMs), 'connect_timeout');
+  const requestTimer = createWatchdog(controller, remainingMs, 'timeout');
+
+  try {
+    const response = await fetch(url, {
+      ...init,
+      signal: controller.signal,
+    });
+    clearTimeout(connectTimer);
+    return response;
+  } catch (err) {
+    if (err?.name === 'AbortError') {
+      const message = String(controller.signal.reason?.message || controller.signal.reason || err?.message || 'timeout');
+      throw new Error(message.includes('connect_timeout') ? 'timeout' : 'timeout');
+    }
+    throw err;
+  } finally {
+    clearTimeout(connectTimer);
+    clearTimeout(requestTimer);
+  }
+}
+
 /**
  * @typedef {{ response: Response, fallbackTriggerCode: number }} RequestOnceResult
  * fallbackTriggerCode: the HEAD status that triggered a GET fallback (0 if no fallback).
  */
 
-async function requestOnce(url, { timeoutMs }) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), timeoutMs);
-
+async function requestOnce(url, { connectTimeoutMs, deadlineAt }) {
   /** @type {number} */
   let fallbackTriggerCode = 0;
 
   try {
-    let response = await fetch(url, {
+    let response = await fetchWithWatchdogs(url, {
       method: 'HEAD',
       redirect: 'manual',
-      signal: controller.signal,
+    }, {
+      connectTimeoutMs,
+      deadlineAt,
     });
 
     // GET fallback for method-not-allowed AND bot-protection rejections.
@@ -39,11 +79,13 @@ async function requestOnce(url, { timeoutMs }) {
     if (response.status === 405 || response.status === 501 ||
         response.status === 403 || response.status === 429) {
       fallbackTriggerCode = response.status;
-      response = await fetch(url, {
+      response = await fetchWithWatchdogs(url, {
         method: 'GET',
         redirect: 'manual',
-        signal: controller.signal,
         headers: { Range: 'bytes=0-0' },
+      }, {
+        connectTimeoutMs,
+        deadlineAt,
       });
     }
 
@@ -55,19 +97,21 @@ async function requestOnce(url, { timeoutMs }) {
 
     return { response, fallbackTriggerCode };
   } finally {
-    clearTimeout(timeout);
+    // request-specific watchdogs are cleaned inside fetchWithWatchdogs
   }
 }
 
 /**
  * Resolve final URL by following redirects manually.
  * @param {string} inputUrl
- * @param {{timeoutMs?:number,maxRedirects?:number}} options
+ * @param {{connectTimeoutMs?:number,requestTimeoutMs?:number,maxRedirects?:number}} options
  * @returns {Promise<{ok:boolean,finalUrl:string,status:number,error:string}>}
  */
 export async function resolveFinalUrl(inputUrl, options = {}) {
-  const timeoutMs = Math.max(1000, Number(options.timeoutMs || 3500));
-  const maxRedirects = Math.max(0, Number(options.maxRedirects || 5));
+  const connectTimeoutMs = clampTimeout(options.connectTimeoutMs, DEFAULT_CONNECT_TIMEOUT_MS);
+  const requestTimeoutMs = clampTimeout(options.requestTimeoutMs, DEFAULT_REQUEST_TIMEOUT_MS, 1000);
+  const maxRedirects = Math.max(0, Number(options.maxRedirects || DEFAULT_MAX_REDIRECTS));
+  const deadlineAt = Date.now() + requestTimeoutMs;
 
   let current;
   try {
@@ -77,11 +121,16 @@ export async function resolveFinalUrl(inputUrl, options = {}) {
   }
 
   for (let i = 0; i <= maxRedirects; i += 1) {
+    if (Date.now() >= deadlineAt) {
+      return { ok: false, finalUrl: current, status: 0, error: 'timeout' };
+    }
+
     let result;
     try {
-      result = await requestOnce(current, { timeoutMs });
+      result = await requestOnce(current, { connectTimeoutMs, deadlineAt });
     } catch (err) {
-      return { ok: false, finalUrl: current, status: 0, error: toErrorMessage(err) };
+      const error = toErrorMessage(err);
+      return { ok: false, finalUrl: current, status: 0, error: error.includes('timeout') ? 'timeout' : error };
     }
 
     const { response, fallbackTriggerCode } = result;

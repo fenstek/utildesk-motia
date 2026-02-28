@@ -13,24 +13,52 @@ node scripts/repair_all_needs_review.mjs --json
 Apply changes:
 
 ```bash
-node scripts/repair_all_needs_review.mjs --apply=1 --json
+node scripts/repair_all_needs_review.mjs --apply --json
 ```
 
 Optional filters:
 
-- `--limit=N`
-- `--offset=N`
-- `--only=slug1,slug2`
+- `--limit N` or `--limit=N`
+- `--offset N` or `--offset=N`
+- `--only slug1,slug2` or `--only=slug1,slug2`
 
 Batch examples:
 
 ```bash
 # First batch (40 rows)
-node scripts/repair_all_needs_review.mjs --apply=1 --limit=40
+node scripts/repair_all_needs_review.mjs --limit 100 --offset 0
 
-# Second batch (next 40 rows in row_index order)
-node scripts/repair_all_needs_review.mjs --apply=1 --offset=40 --limit=40
+# Apply a later batch with stricter runtime controls
+REQUEST_TIMEOUT_MS=12000 VALIDATION_CONCURRENCY=4 \
+  node scripts/repair_all_needs_review.mjs --limit 100 --offset 100 --apply
+
+# First apply batch (40 rows)
+node scripts/repair_all_needs_review.mjs --apply --limit=40
+
+# Second apply batch (next 40 rows in row_index order)
+node scripts/repair_all_needs_review.mjs --apply --offset=40 --limit=40
 ```
+
+## Runtime controls
+
+Safe defaults for local and cron runs:
+
+- `VALIDATION_CONCURRENCY=6`
+- `CONNECT_TIMEOUT_MS=8000`
+- `REQUEST_TIMEOUT_MS=15000`
+- `MAX_REDIRECTS=6`
+
+These values affect only external URL validation and redirect resolution. They do not
+change how the script chooses candidate URLs or tags.
+
+- `CONNECT_TIMEOUT_MS`
+  - caps time-to-first-response for each HEAD/GET verification attempt
+- `REQUEST_TIMEOUT_MS`
+  - caps total time spent resolving one URL across redirects and fallback GET
+- `MAX_REDIRECTS`
+  - caps manual redirect hops per URL
+- `VALIDATION_CONCURRENCY`
+  - caps concurrent fallback-domain verification tasks to avoid TLS storms
 
 ## Pipeline
 
@@ -93,10 +121,12 @@ Candidate domains (max 6):
 
 Each candidate is verified by `resolveFinalUrl()` with limits:
 
-- timeout: ~3.5s
-- redirects: max 5
+- connect timeout: default 8s
+- overall request timeout: default 15s
+- redirects: max 6
 - HEAD first, GET-range fallback
 - no large body download
+- global watchdog per URL to force abort on slow/broken endpoints
 
 Then final URL is validated by `validateOfficialUrl()`.
 
@@ -110,3 +140,12 @@ Acceptance rules:
 - URL must pass `resolveFinalUrl()`
 - GitHub/Hugging Face path must look slug-related (owner/repo or path similar to slug)
 - URL must pass `validateOfficialUrl()`
+
+## Output
+
+Run summary includes:
+
+- `processed_count`
+- `skipped_timeouts_count`
+- `offset`
+- `limit`

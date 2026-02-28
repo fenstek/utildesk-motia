@@ -15,6 +15,10 @@ const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
 const GOOGLE_CLIENT_EMAIL = process.env.GOOGLE_CLIENT_EMAIL;
 const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
 const SA_JSON_PATH = '/opt/utildesk-motia/secrets/google-service-account.json';
+const CONNECT_TIMEOUT_MS = Math.max(1000, Number(process.env.CONNECT_TIMEOUT_MS || 8000) || 8000);
+const REQUEST_TIMEOUT_MS = Math.max(1000, Number(process.env.REQUEST_TIMEOUT_MS || 15000) || 15000);
+const MAX_REDIRECTS = Math.max(0, Number(process.env.MAX_REDIRECTS || 6) || 6);
+const VALIDATION_CONCURRENCY = Math.max(1, Number(process.env.VALIDATION_CONCURRENCY || 6) || 6);
 
 const URL_UNRESOLVED_REASON_KEYS = [
   'missing_title',
@@ -76,15 +80,23 @@ function colLetter(idx) {
   return out;
 }
 
+function readArgValue(argv, name) {
+  const inline = argv.find((a) => a.startsWith(`${name}=`));
+  if (inline) return inline.slice(name.length + 1).trim();
+  const idx = argv.indexOf(name);
+  if (idx >= 0 && idx + 1 < argv.length) return String(argv[idx + 1] || '').trim();
+  return '';
+}
+
 function parseArgs(argv) {
   const apply = argv.includes('--apply=1') || argv.includes('--apply');
   const json = argv.includes('--json');
   const selfTest = argv.includes('--self-test');
-  const limitArg = (argv.find((a) => a.startsWith('--limit=')) || '').replace('--limit=', '').trim();
+  const limitArg = readArgValue(argv, '--limit');
   const limit = limitArg ? Math.max(1, Math.min(10000, Number(limitArg) || 0)) : 0;
-  const offsetArg = (argv.find((a) => a.startsWith('--offset=')) || '').replace('--offset=', '').trim();
+  const offsetArg = readArgValue(argv, '--offset');
   const offset = Math.max(0, Number(offsetArg || 0) || 0);
-  const onlyRaw = (argv.find((a) => a.startsWith('--only=')) || '').replace('--only=', '').trim();
+  const onlyRaw = readArgValue(argv, '--only');
   const only = onlyRaw ? new Set(onlyRaw.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean)) : null;
   return { apply, dryRun: !apply, json, selfTest, limit, offset, only };
 }
@@ -228,6 +240,25 @@ function looksLikeSlugReference(text, slug) {
   return hits >= Math.min(2, tokens.length);
 }
 
+async function mapWithConcurrency(items, concurrency, mapper) {
+  const list = Array.isArray(items) ? items : [];
+  const limit = Math.max(1, Number(concurrency || 1) || 1);
+  const results = new Array(list.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < list.length) {
+      const current = nextIndex;
+      nextIndex += 1;
+      results[current] = await mapper(list[current], current);
+    }
+  }
+
+  const workerCount = Math.min(limit, list.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  return results;
+}
+
 function buildLibraryFallbackCandidates(slug) {
   const clean = normalizeSlugSimple(slug);
   if (!clean) return [];
@@ -326,6 +357,13 @@ function selectNeedsReviewRows(values, idx, args) {
 function runSelfTest() {
   const args = parseArgs(['--offset=-10', '--limit=2']);
   if (args.offset !== 0) throw new Error('self-test failed: negative offset must clamp to 0');
+  const argsSpaced = parseArgs(['--offset', '1', '--limit', '2', '--only', 'foo,bar']);
+  if (argsSpaced.offset !== 1 || argsSpaced.limit !== 2) {
+    throw new Error('self-test failed: spaced --offset/--limit args must parse');
+  }
+  if (!argsSpaced.only || !argsSpaced.only.has('foo') || !argsSpaced.only.has('bar')) {
+    throw new Error('self-test failed: spaced --only args must parse');
+  }
 
   const values = [
     ['topic', 'slug', 'status', 'notes', 'official_url', 'tags'],
@@ -385,7 +423,14 @@ async function tryValidateCandidate(url, row) {
   const check = validateOfficialUrl(normalized, { slug: row.slug, title: row.title || row.topic });
   if (!check.ok) return { acceptedUrl: '', rejectReason: check.reason || 'policy_reject' };
 
-  const verified = await resolveFinalUrl(normalized, { timeoutMs: 3500, maxRedirects: 5 });
+  const verified = await resolveFinalUrl(normalized, {
+    connectTimeoutMs: CONNECT_TIMEOUT_MS,
+    requestTimeoutMs: REQUEST_TIMEOUT_MS,
+    maxRedirects: MAX_REDIRECTS,
+  });
+  if (!verified.ok && verified.error === 'timeout') {
+    return { acceptedUrl: '', rejectReason: 'timeout' };
+  }
   if (verified.ok && verified.finalUrl) {
     const finalHost = normalizeHost(verified.finalUrl);
     if (isDeniedFinalHost(finalHost)) {
@@ -454,6 +499,7 @@ async function main() {
   const unresolvedDiag = createUnresolvedDiagnostics();
 
   const summary = {
+    processed_count: toProcess.length,
     total_needs_review: toProcess.length,
     url_fixed: 0,
     url_unresolved: 0,
@@ -461,6 +507,7 @@ async function main() {
     tags_unresolved: 0,
     moved_to_new: 0,
     still_needs_review: 0,
+    skipped_timeouts_count: 0,
   };
 
   const movedToNewSlugs = [];
@@ -511,6 +558,9 @@ async function main() {
             finalNotes = appendNote(finalNotes, 'url_repaired(method=wikidata_p856)');
             actions.push('url:fixed:wikidata_p856');
           } else {
+            if (checked.rejectReason === 'timeout') {
+              summary.skipped_timeouts_count += 1;
+            }
             if (checked.rejectReason === 'redirected_to_denied_final_host') {
               unresolvedTrace.redirected_to_denied_final_host = true;
             }
@@ -543,8 +593,13 @@ async function main() {
             summary.url_fixed += 1;
             finalNotes = appendNote(finalNotes, 'url_repaired(method=ddg)');
             actions.push('url:fixed:ddg');
-          } else if (checked.rejectReason === 'redirected_to_denied_final_host') {
-            unresolvedTrace.redirected_to_denied_final_host = true;
+          } else {
+            if (checked.rejectReason === 'timeout') {
+              summary.skipped_timeouts_count += 1;
+            }
+            if (checked.rejectReason === 'redirected_to_denied_final_host') {
+              unresolvedTrace.redirected_to_denied_final_host = true;
+            }
           }
         }
       }
@@ -559,6 +614,9 @@ async function main() {
             finalNotes = appendNote(finalNotes, 'url_repaired(method=ddg_candidates)');
             actions.push('url:fixed:ddg_candidates');
             break;
+          }
+          if (checked.rejectReason === 'timeout') {
+            summary.skipped_timeouts_count += 1;
           }
           if (checked.rejectReason === 'redirected_to_denied_final_host') {
             unresolvedTrace.redirected_to_denied_final_host = true;
@@ -584,6 +642,9 @@ async function main() {
             finalNotes = appendNote(finalNotes, 'url_repaired(method=gpt_candidates)');
             actions.push('url:fixed:gpt_candidates');
           } else {
+            if (checked.rejectReason === 'timeout') {
+              summary.skipped_timeouts_count += 1;
+            }
             if (checked.rejectReason === 'redirected_to_denied_final_host') {
               unresolvedTrace.redirected_to_denied_final_host = true;
             }
@@ -610,16 +671,25 @@ async function main() {
         let anyHeadCheckOk = false;
         let anyPolicyRejected = false;
 
-        const verifiedFallback = await Promise.all(
-          uniqueFallbackCandidates.map(async (candidate) => ({
+        const verifiedFallback = await mapWithConcurrency(
+          uniqueFallbackCandidates,
+          VALIDATION_CONCURRENCY,
+          async (candidate) => ({
             candidate,
-            verified: await resolveFinalUrl(candidate, { timeoutMs: 3500, maxRedirects: 5 }),
-          })),
+            verified: await resolveFinalUrl(candidate, {
+              connectTimeoutMs: CONNECT_TIMEOUT_MS,
+              requestTimeoutMs: REQUEST_TIMEOUT_MS,
+              maxRedirects: MAX_REDIRECTS,
+            }),
+          }),
         );
 
         for (const item of verifiedFallback) {
           const verified = item.verified;
           if (!verified.ok || !verified.finalUrl) {
+            if (verified.error === 'timeout') {
+              summary.skipped_timeouts_count += 1;
+            }
             unresolvedTrace.head_check_failed = true;
             continue;
           }
@@ -656,6 +726,8 @@ async function main() {
 
           if (checked.rejectReason === 'redirected_to_denied_final_host') {
             unresolvedTrace.redirected_to_denied_final_host = true;
+          } else if (checked.rejectReason === 'timeout') {
+            summary.skipped_timeouts_count += 1;
           }
           anyPolicyRejected = true;
         }
