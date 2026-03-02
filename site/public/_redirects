@@ -43,3 +43,11 @@
 # jarvis BLACKLIST (invalid official_url: jarvis.com not an AI tool; phantom/alias for jasper)
 /tools/jarvis    /tools/    301
 /tools/jarvis/   /tools/    301
+
+# explainable-ai BLACKLIST (research center, not a product tool)
+/tools/explainable-ai   /tools/   301
+/tools/explainable-ai/  /tools/   301
+
+# transformers disabled (covered by Hugging Face Transformers)
+/tools/transformers   /tools/hugging-face-transformers/   301
+/tools/transformers/  /tools/hugging-face-transformers/   301
