@@ -60,10 +60,10 @@ Anthropic bietet ein Freemium-Modell an, das es Nutzern erlaubt, die grundlegend
 ## Alternativen zu Anthropic
 
 - **OpenAI:** Bekannt für GPT-Modelle, bietet umfangreiche KI-Dienste mit API-Zugang  
-- **Cohere:** Fokus auf natürliche Sprachverarbeitung mit flexiblen APIs  
-- **AI21 Labs:** KI-Plattform mit starken Textgenerierungsfähigkeiten  
+- [Cohere](/tools/cohere/): Fokus auf natürliche Sprachverarbeitung mit flexiblen APIs  
+- [AI21 Labs](/tools/ai21-labs/): KI-Plattform mit starken Textgenerierungsfähigkeiten  
 - **Google Cloud AI:** Breites Spektrum an KI-Diensten, von Sprach- bis Bildverarbeitung  
-- **Hugging Face:** Große Community und offene Modelle für vielfältige KI-Anwendungen  
+- [Hugging Face](/tools/hugging-face/): Große Community und offene Modelle für vielfältige KI-Anwendungen  
 
 ## FAQ
 
