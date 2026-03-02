@@ -55,9 +55,9 @@ Deep AI bietet ein Freemium-Preismodell an, bei dem grundlegende Funktionen kost
 
 - **OpenAI:** Umfangreiche KI-Plattform mit Fokus auf Text- und Sprachmodelle.
 - **Google Cloud AI:** Bietet diverse KI-Dienste, darunter Bild- und Sprachanalyse.
-- **IBM Watson:** KI-Lösungen für Unternehmen mit starker Datenanalyse.
+- [IBM Watson](/tools/ibm-watson/): KI-Lösungen für Unternehmen mit starker Datenanalyse.
 - **Microsoft Azure AI:** Integration von KI in Cloud-Services und Anwendungen.
-- **Hugging Face:** Community-getriebene Plattform für maschinelles Lernen und NLP-Modelle.
+- [Hugging Face](/tools/hugging-face/): Community-getriebene Plattform für maschinelles Lernen und NLP-Modelle.
 
 ## FAQ
 

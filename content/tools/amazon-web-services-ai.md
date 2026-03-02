@@ -52,9 +52,9 @@ Die Preisgestaltung von AWS AI-Diensten variiert stark je nach Service, Nutzung 
 
 - **Google Cloud AI Platform:** Umfangreiche KI- und ML-Dienste mit starkem Fokus auf Data Science und Automatisierung.
 - **Microsoft Azure AI:** Bietet eine breite Palette an KI-Services, darunter Sprach-, Bild- und Textanalyse.
-- **IBM Watson:** KI-Plattform mit Schwerpunkt auf NLP und Unternehmenslösungen.
-- **OpenAI API:** Zugang zu fortschrittlichen Sprachmodellen für vielfältige Anwendungen.
-- **Hugging Face:** Plattform für vortrainierte KI-Modelle und APIs, besonders im Bereich NLP.
+- [IBM Watson](/tools/ibm-watson/): KI-Plattform mit Schwerpunkt auf NLP und Unternehmenslösungen.
+- [OpenAI API](/tools/openai-api/): Zugang zu fortschrittlichen Sprachmodellen für vielfältige Anwendungen.
+- [Hugging Face](/tools/hugging-face/): Plattform für vortrainierte KI-Modelle und APIs, besonders im Bereich NLP.
 
 ## FAQ
 

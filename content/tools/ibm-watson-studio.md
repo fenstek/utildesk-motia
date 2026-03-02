@@ -60,8 +60,8 @@ IBM Watson Studio bietet verschiedene Preispläne, die sich nach Funktionsumfang
 - **Google Cloud AI Platform**: Bietet ebenfalls umfangreiche Tools für maschinelles Lernen und Audioanalyse mit starker Cloud-Integration.
 - **Microsoft Azure Machine Learning**: Plattform mit Fokus auf KI-Modellierung, inklusive Audio- und Sprachdienste.
 - **Amazon SageMaker**: Vollständig verwalteter Service für maschinelles Lernen mit Unterstützung von Audio-Daten.
-- **OpenAI API**: Für spezialisierte KI-Anwendungen inklusive Sprach- und Audioverarbeitung.
-- **Hugging Face**: Plattform mit vielen vortrainierten Modellen, auch für Audio- und Sprachverarbeitung.
+- [OpenAI API](/tools/openai-api/): Für spezialisierte KI-Anwendungen inklusive Sprach- und Audioverarbeitung.
+- [Hugging Face](/tools/hugging-face/): Plattform mit vielen vortrainierten Modellen, auch für Audio- und Sprachverarbeitung.
 
 ## FAQ
 
