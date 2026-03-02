@@ -348,12 +348,19 @@ const HARD_SLUG_ALIASES = new Map([
   ['runway-ml', 'runway'],
   ['runwayml', 'runway'],
   ['runway-ai', 'runway'],
+  ['adobe-spark', 'adobe-express'],
+  ['microsoft-intellicode', 'visual-studio-intellicode'],
+  ['transformers', 'hugging-face-transformers'],
   // Jasper (formerly Jarvis) - prevent duplicates
   ['jasper-ai', 'jasper'],
   ['jarvis', 'jasper'],
 ]);
 const HARD_REJECT_SLUGS = new Set([
+  'boomerang',
+  'explainable-ai',
+  'ghostwriter',
   'this-person-does-not-exist',
+  'transformer',
   // xAI is a company entity; the tool is Grok.
   'x-ai',
 ]);
