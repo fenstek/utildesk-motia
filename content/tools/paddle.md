@@ -47,11 +47,11 @@ Paddle bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenfrei
 
 ## Alternativen zu Paddle
 
-- **TensorFlow**: Eine Open-Source-Bibliothek für maschinelles Lernen, die vor allem für Entwickler mit technischer Expertise geeignet ist.
-- **IBM Watson**: Bietet umfangreiche KI-Services und APIs für Unternehmen mit komplexen Anforderungen.
+- [TensorFlow](/tools/tensorflow/): Eine Open-Source-Bibliothek für maschinelles Lernen, die vor allem für Entwickler mit technischer Expertise geeignet ist.
+- [IBM Watson](/tools/ibm-watson/): Bietet umfangreiche KI-Services und APIs für Unternehmen mit komplexen Anforderungen.
 - **Microsoft Azure AI**: Skalierbare KI-Plattform mit vielfältigen Tools und Services für unterschiedliche Branchen.
 - **Google Cloud AI**: Umfassende KI- und ML-Dienste mit starker Integration in Google-Ökosysteme.
-- **Hugging Face**: Plattform für vortrainierte KI-Modelle und einfache Implementierung in verschiedenen Anwendungsbereichen.
+- [Hugging Face](/tools/hugging-face/): Plattform für vortrainierte KI-Modelle und einfache Implementierung in verschiedenen Anwendungsbereichen.
 
 ## FAQ
 

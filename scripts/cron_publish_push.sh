@@ -208,3 +208,18 @@ if [[ "${POST_PUBLISH_URL_AUDIT:-0}" == "1" ]]; then
 fi
 
 echo "[cron] done: $(date -Is)"
+
+# 7) Optional live route validation on production after Pages deploy.
+#    Non-blocking here because deploy is asynchronous and already triggered by master updates.
+if [[ "${POST_DEPLOY_LIVE_CHECK:-0}" == "1" ]]; then
+  PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
+  echo "[cron] post-deploy live check: ${PROD_BASE_URL}"
+  for _try in 1 2 3 4 5; do
+    if node scripts/check_stale_routes_prod.mjs --base "${PROD_BASE_URL}"; then
+      echo "[cron] post-deploy live check passed"
+      break
+    fi
+    echo "[cron] WARN post-deploy live check failed (try ${_try}/5)"
+    sleep 20
+  done
+fi

@@ -57,10 +57,10 @@ IBM Watson Natural Language Understanding bietet in der Regel ein nutzungsbasier
 ## Alternativen zu IBM Watson Natural Language Understanding
 
 - **Google Cloud Natural Language API:** Bietet ähnliche Funktionen zur Textanalyse mit starker Integration in Google Cloud Plattform.
-- **Microsoft Azure Text Analytics:** Umfassendes Textanalyse-Tool mit Sentiment- und Entitätserkennung im Azure-Ökosystem.
-- **Amazon Comprehend:** KI-Service von AWS zur automatischen Analyse von Texten mit Fokus auf Skalierbarkeit.
+- [Microsoft Azure Text Analytics](/tools/microsoft-azure-text-analytics/): Umfassendes Textanalyse-Tool mit Sentiment- und Entitätserkennung im Azure-Ökosystem.
+- [Amazon Comprehend](/tools/amazon-comprehend/): KI-Service von AWS zur automatischen Analyse von Texten mit Fokus auf Skalierbarkeit.
 - **MeaningCloud:** Cloud-basierte Textanalyse mit flexiblen Modellen und mehreren Sprachen.
-- **SpaCy:** Open-Source-Bibliothek für NLP mit umfangreichen Funktionen, vor allem für Entwickler geeignet.
+- [spaCy](/tools/spacy/): Open-Source-Bibliothek für NLP mit umfangreichen Funktionen, vor allem für Entwickler geeignet.
 
 ## FAQ
 

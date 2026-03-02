@@ -59,9 +59,9 @@ Stability AI bietet ein Freemium-Modell, das grundlegende Funktionen kostenlos z
 
 - **OpenAI:** Bietet umfangreiche KI-Modelle mit Fokus auf Text- und Bildgenerierung, allerdings meist als proprietäre Lösung.
 - **Runway ML:** Plattform für kreative KI-Anwendungen mit benutzerfreundlicher Oberfläche und vielseitigen Modellen.
-- **Hugging Face:** Open-Source-Community mit vielen vortrainierten KI-Modellen und Tools für Entwickler.
+- [Hugging Face](/tools/hugging-face/): Open-Source-Community mit vielen vortrainierten KI-Modellen und Tools für Entwickler.
 - **DeepArt:** Spezialisierte KI für künstlerische Bildbearbeitung und Stiltransfers.
-- **Google AI:** Umfassende KI-Dienste und APIs für verschiedenste Anwendungsfälle, oft mit starker Infrastruktur.
+- [Google AI](/tools/google-ai/): Umfassende KI-Dienste und APIs für verschiedenste Anwendungsfälle, oft mit starker Infrastruktur.
 
 ## FAQ
 

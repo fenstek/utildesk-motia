@@ -53,11 +53,11 @@ Die Preisgestaltung von AI21 Labs ist je nach Anbieter und gewähltem Plan unter
 
 ## Alternativen zu AI21 Labs
 
-- **OpenAI GPT:** Bekanntes KI-Sprachmodell mit umfangreichem Ökosystem und vielseitiger Anwendung.
-- **Google Cloud Natural Language:** Bietet KI-gestützte Textanalyse und Verarbeitung mit starken Cloud-Services.
-- **Microsoft Azure Cognitive Services:** Umfasst verschiedene KI-Tools für Sprachverarbeitung und Automatisierung.
-- **Hugging Face:** Plattform mit vielen offenen KI-Modellen und Community-Support.
-- **Cohere:** Fokus auf NLP-Modelle für Unternehmen mit API-Zugriff und Anpassungsmöglichkeiten.
+- [OpenAI GPT](/tools/openai-gpt/): Bekanntes KI-Sprachmodell mit umfangreichem Ökosystem und vielseitiger Anwendung.
+- [Google Cloud Natural Language](/tools/google-cloud-natural-language/): Bietet KI-gestützte Textanalyse und Verarbeitung mit starken Cloud-Services.
+- [Microsoft Azure Cognitive Services](/tools/microsoft-azure-cognitive-services/): Umfasst verschiedene KI-Tools für Sprachverarbeitung und Automatisierung.
+- [Hugging Face](/tools/hugging-face/): Plattform mit vielen offenen KI-Modellen und Community-Support.
+- [Cohere](/tools/cohere/): Fokus auf NLP-Modelle für Unternehmen mit API-Zugriff und Anpassungsmöglichkeiten.
 
 ## FAQ
 

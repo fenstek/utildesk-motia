@@ -68,10 +68,10 @@ Detaillierte Preisübersichten sind auf den jeweiligen Google AI-Webseiten einse
 ## Alternativen zu Google AI
 
 - **Microsoft Azure AI:** Umfangreiche KI-Dienste in Microsofts Cloud-Umgebung.
-- **Amazon Web Services (AWS) AI:** Breites Angebot an KI- und ML-Services auf AWS.
-- **IBM Watson:** KI-Plattform mit Fokus auf Unternehmen und Analyse.
+- [Amazon Web Services (AWS) AI](/tools/amazon-web-services-ai/): Breites Angebot an KI- und ML-Services auf AWS.
+- [IBM Watson](/tools/ibm-watson/): KI-Plattform mit Fokus auf Unternehmen und Analyse.
 - **OpenAI:** Bekannt für leistungsstarke Sprachmodelle und KI-API.
-- **Hugging Face:** Open-Source- und Cloud-Plattform für NLP und KI-Modelle.
+- [Hugging Face](/tools/hugging-face/): Open-Source- und Cloud-Plattform für NLP und KI-Modelle.
 
 ## FAQ
 

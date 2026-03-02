@@ -47,10 +47,10 @@ Die Preisgestaltung von Replicate ist abhängig vom jeweiligen Anbieter und dem 
 
 ## Alternativen zu Replicate
 
-- **Hugging Face:** Eine Plattform mit umfangreichen vortrainierten Modellen und APIs für KI-Anwendungen.
-- **OpenAI API:** Zugriff auf leistungsstarke KI-Modelle für Text, Bild und mehr, mit flexibler Preisgestaltung.
+- [Hugging Face](/tools/hugging-face/): Eine Plattform mit umfangreichen vortrainierten Modellen und APIs für KI-Anwendungen.
+- [OpenAI API](/tools/openai-api/): Zugriff auf leistungsstarke KI-Modelle für Text, Bild und mehr, mit flexibler Preisgestaltung.
 - **Google Cloud AI Platform:** Cloudbasierte Infrastruktur für Training und Deployment von KI-Modellen.
-- **AWS SageMaker:** Vollständig verwalteter Service für maschinelles Lernen in der Amazon-Cloud.
+- [AWS SageMaker](/tools/aws-sagemaker/): Vollständig verwalteter Service für maschinelles Lernen in der Amazon-Cloud.
 - **RunwayML:** Tools und Plattform für kreative KI-Anwendungen mit einfacher Bedienung.
 
 ## FAQ
