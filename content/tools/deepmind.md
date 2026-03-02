@@ -61,9 +61,9 @@ DeepMind bietet ein freemium Modell an, bei dem grundlegende Funktionen kostenfr
 
 - **OpenAI:** Bekannt für GPT-Modelle und vielfältige KI-Tools mit flexiblen Preismodellen
 - **Google AI Platform:** Umfassende Cloud-basierte KI-Services zur Modellentwicklung und Bereitstellung
-- **IBM Watson:** KI-Plattform mit Fokus auf Unternehmensanwendungen und Datenanalyse
+- [IBM Watson](/tools/ibm-watson/): KI-Plattform mit Fokus auf Unternehmensanwendungen und Datenanalyse
 - **Microsoft Azure AI:** Breites Angebot an KI-Diensten in der Azure-Cloud
-- **Hugging Face:** Community-getriebene Plattform für NLP-Modelle und KI-Frameworks
+- [Hugging Face](/tools/hugging-face/): Community-getriebene Plattform für NLP-Modelle und KI-Frameworks
 
 ## FAQ
 

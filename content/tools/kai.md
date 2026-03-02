@@ -49,11 +49,11 @@ KAI bietet ein Freemium-Modell an, das einen kostenfreien Einstieg ermöglicht. 
 
 ## Alternativen zu KAI
 
-- **OpenAI GPT:** Bekannt für leistungsfähige Textgenerierung und vielseitige KI-Modelle.
-- **IBM Watson:** Bietet umfangreiche KI-Dienste für Unternehmen mit Fokus auf Datenanalyse.
+- [OpenAI GPT](/tools/openai-gpt/): Bekannt für leistungsfähige Textgenerierung und vielseitige KI-Modelle.
+- [IBM Watson](/tools/ibm-watson/): Bietet umfangreiche KI-Dienste für Unternehmen mit Fokus auf Datenanalyse.
 - **Google Cloud AI:** Plattform mit breiter Palette an KI-Tools und APIs.
 - **Microsoft Azure AI:** Integrierte KI-Dienste mit starker Cloud-Anbindung.
-- **Hugging Face:** Open-Source-Modelle und Tools für Entwickler und Forscher.
+- [Hugging Face](/tools/hugging-face/): Open-Source-Modelle und Tools für Entwickler und Forscher.
 
 ## FAQ
 

@@ -58,9 +58,9 @@ Für genaue Preisdetails empfiehlt es sich, die offizielle Azure-Preisseite zu k
 
 - **Google Cloud AI Platform:** Bietet ebenfalls zahlreiche KI-APIs für Sprache, Vision und mehr mit globaler Infrastruktur.
 - **Amazon AWS AI Services:** Umfasst eine breite Palette von KI-Diensten, darunter Texterkennung, Übersetzung und Personalisierung.
-- **IBM Watson:** Bekannt für seine leistungsfähigen KI-Tools mit Fokus auf Unternehmen und individuelle Anpassungen.
-- **OpenAI API:** Ermöglicht Zugriff auf fortschrittliche Sprachmodelle für vielfältige Anwendungen.
-- **Hugging Face:** Plattform mit vielen vortrainierten Modellen und Tools für Entwickler, die mehr Kontrolle wünschen.
+- [IBM Watson](/tools/ibm-watson/): Bekannt für seine leistungsfähigen KI-Tools mit Fokus auf Unternehmen und individuelle Anpassungen.
+- [OpenAI API](/tools/openai-api/): Ermöglicht Zugriff auf fortschrittliche Sprachmodelle für vielfältige Anwendungen.
+- [Hugging Face](/tools/hugging-face/): Plattform mit vielen vortrainierten Modellen und Tools für Entwickler, die mehr Kontrolle wünschen.
 
 ## FAQ
 

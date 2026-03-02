@@ -48,11 +48,11 @@ Cohere bietet ein Freemium-Modell, das einen kostenlosen Einstieg mit begrenztem
 
 ## Alternativen zu Cohere
 
-- **OpenAI GPT:** Führende Plattform für Sprachmodelle mit umfangreichen Funktionen und großer Community.
-- **Hugging Face:** Open-Source- und Cloud-Plattform mit zahlreichen vortrainierten Modellen und Tools.
-- **Google Cloud Natural Language:** Umfangreiche NLP-Dienste mit guter Integration in Google Cloud.
-- **IBM Watson Natural Language Understanding:** Enterprise-fokussierte KI-Services für Textanalyse.
-- **Amazon Comprehend:** AWS-basierte Lösung für Textanalyse und Sprachverarbeitung.
+- [OpenAI GPT](/tools/openai-gpt/): Führende Plattform für Sprachmodelle mit umfangreichen Funktionen und großer Community.
+- [Hugging Face](/tools/hugging-face/): Open-Source- und Cloud-Plattform mit zahlreichen vortrainierten Modellen und Tools.
+- [Google Cloud Natural Language](/tools/google-cloud-natural-language/): Umfangreiche NLP-Dienste mit guter Integration in Google Cloud.
+- [IBM Watson Natural Language Understanding](/tools/ibm-watson-natural-language-understanding/): Enterprise-fokussierte KI-Services für Textanalyse.
+- [Amazon Comprehend](/tools/amazon-comprehend/): AWS-basierte Lösung für Textanalyse und Sprachverarbeitung.
 
 ## FAQ
 

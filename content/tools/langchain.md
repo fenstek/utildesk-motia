@@ -66,11 +66,11 @@ LangChain bietet ein Freemium-Modell, das einen kostenlosen Einstieg in die Nutz
 
 ## Alternativen zu LangChain
 
-- **Hugging Face:** Plattform für KI-Modelle mit umfangreicher Modellbibliothek und APIs.
-- **OpenAI API:** Direkter Zugang zu großen Sprachmodellen verschiedener Versionen.
-- **Rasa:** Open-Source-Framework für Conversational AI und Chatbots.
-- **Dialogflow:** Google-basierte Plattform für Sprach- und Text-Interaktionen.
-- **Microsoft Azure Cognitive Services:** KI-Dienste inklusive Sprachverarbeitung und Textanalyse.
+- [Hugging Face](/tools/hugging-face/): Plattform für KI-Modelle mit umfangreicher Modellbibliothek und APIs.
+- [OpenAI API](/tools/openai-api/): Direkter Zugang zu großen Sprachmodellen verschiedener Versionen.
+- [Rasa](/tools/rasa/): Open-Source-Framework für Conversational AI und Chatbots.
+- [Dialogflow](/tools/dialogflow/): Google-basierte Plattform für Sprach- und Text-Interaktionen.
+- [Microsoft Azure Cognitive Services](/tools/microsoft-azure-cognitive-services/): KI-Dienste inklusive Sprachverarbeitung und Textanalyse.
 
 ## FAQ
 
