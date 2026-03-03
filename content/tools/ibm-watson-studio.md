@@ -51,9 +51,9 @@ Die Preisgestaltung von IBM Watson Studio hängt vom gewählten Plan und der Nut
 ## Alternativen zu IBM Watson Studio
 
 - **Google Cloud AI Platform:** Umfassende KI- und ML-Tools mit starker Cloud-Integration.
-- **Microsoft Azure Machine Learning:** Plattform für Datenwissenschaft und ML mit Fokus auf Azure-Services.
-- **DataRobot:** Automatisierte ML-Plattform mit benutzerfreundlicher Oberfläche.
-- **H2O.ai:** Open-Source- und kommerzielle Lösungen für maschinelles Lernen und KI.
+- [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Plattform für Datenwissenschaft und ML mit Fokus auf Azure-Services.
+- [DataRobot](/tools/datarobot/): Automatisierte ML-Plattform mit benutzerfreundlicher Oberfläche.
+- [H2O.ai](/tools/h2o-ai/): Open-Source- und kommerzielle Lösungen für maschinelles Lernen und KI.
 - **Amazon SageMaker:** AWS-basierte Plattform für Entwicklung, Training und Deployment von ML-Modellen.
 
 ## FAQ

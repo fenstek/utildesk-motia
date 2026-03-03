@@ -50,11 +50,11 @@ C3.ai bietet ein Freemium-Modell an, das den Einstieg in die Plattform erleichte
 
 ## Alternativen zu C3.ai
 
-- **IBM Watson:** Eine etablierte KI-Plattform mit umfangreichen Tools für prädiktive Analysen und maschinelles Lernen.
+- [IBM Watson](/tools/ibm-watson/): Eine etablierte KI-Plattform mit umfangreichen Tools für prädiktive Analysen und maschinelles Lernen.
 - **Google Cloud AI Platform:** Bietet skalierbare KI- und ML-Dienste mit starker Integration in die Google Cloud Infrastruktur.
 - **Microsoft Azure AI:** Umfassende KI-Services und vorgefertigte Modelle für verschiedene Branchen.
-- **DataRobot:** Plattform für automatisiertes maschinelles Lernen, die schnelle Modellbereitstellung ermöglicht.
-- **H2O.ai:** Open-Source- und Enterprise-Lösungen für KI und maschinelles Lernen mit Fokus auf Benutzerfreundlichkeit.
+- [DataRobot](/tools/datarobot/): Plattform für automatisiertes maschinelles Lernen, die schnelle Modellbereitstellung ermöglicht.
+- [H2O.ai](/tools/h2o-ai/): Open-Source- und Enterprise-Lösungen für KI und maschinelles Lernen mit Fokus auf Benutzerfreundlichkeit.
 
 ## FAQ
 

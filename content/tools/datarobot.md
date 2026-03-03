@@ -52,7 +52,7 @@ DataRobot bietet verschiedene Preispläne, die sich nach dem Funktionsumfang, de
 
 ## Alternativen zu DataRobot
 
-- **H2O.ai:** Open-Source-Plattform für automatisiertes maschinelles Lernen mit großem Funktionsumfang.
+- [H2O.ai](/tools/h2o-ai/): Open-Source-Plattform für automatisiertes maschinelles Lernen mit großem Funktionsumfang.
 - **Google Cloud AutoML:** Cloudbasierte AutoML-Lösungen von Google, gut integriert in die Google Cloud.
 - [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Umfassende KI-Plattform mit breiter Integration in Microsoft-Ökosystem.
 - **Amazon SageMaker:** AWS-Service zur schnellen Entwicklung und Bereitstellung von ML-Modellen.

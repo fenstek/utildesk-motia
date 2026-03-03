@@ -65,9 +65,9 @@ Microsoft bietet verschiedene Preismodelle an, darunter nutzungsbasierte Abrechn
 
 - **Google Cloud AI Platform:** Cloud-basierte Machine-Learning-Plattform mit umfassenden Tools für Modelltraining und -bereitstellung.
 - **Amazon SageMaker:** AWS-Service zur schnellen Entwicklung, Schulung und Bereitstellung von Machine-Learning-Modellen.
-- **IBM Watson Studio:** Plattform für die Zusammenarbeit in Datenwissenschaft und KI-Projekten mit Fokus auf Automatisierung.
-- **Databricks:** Plattform für Big Data und KI, die Spark-Integration und kollaborative Entwicklung bietet.
-- **H2O.ai:** Open-Source- und Cloud-basierte Plattform für automatisiertes Machine Learning.
+- [IBM Watson Studio](/tools/ibm-watson-studio/): Plattform für die Zusammenarbeit in Datenwissenschaft und KI-Projekten mit Fokus auf Automatisierung.
+- [Databricks](/tools/databricks/): Plattform für Big Data und KI, die Spark-Integration und kollaborative Entwicklung bietet.
+- [H2O.ai](/tools/h2o-ai/): Open-Source- und Cloud-basierte Plattform für automatisiertes Machine Learning.
 
 ## FAQ
 
