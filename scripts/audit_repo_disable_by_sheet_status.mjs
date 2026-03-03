@@ -4,7 +4,7 @@
  *
  * Rule:
  *   if content/tools/<slug>.md exists (non-underscore file)
- *   and Sheet status for slug is NEEDS_REVIEW / ERROR / BLACKLIST
+ *   and Sheet status for slug is NEEDS_REVIEW / ERROR / BLACKLIST / DISABLED
  *   then file should be disabled as content/tools/_<slug>.md
  *
  * Dry-run by default.
@@ -23,7 +23,7 @@ const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g
 const SA_JSON_PATH = '/opt/utildesk-motia/secrets/google-service-account.json';
 const CONTENT_DIR = path.resolve(process.cwd(), 'content/tools');
 
-const DISABLE_STATUSES = new Set(['NEEDS_REVIEW', 'ERROR', 'BLACKLIST']);
+const DISABLE_STATUSES = new Set(['NEEDS_REVIEW', 'ERROR', 'BLACKLIST', 'DISABLED']);
 
 function nowIso() {
   return new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
