@@ -52,10 +52,10 @@ Die Preisgestaltung von Groq-Produkten und -Lösungen variiert je nach Anbieter,
 ## Alternativen zu Groq
 
 - **NVIDIA DGX Systeme:** Marktführende KI-Infrastruktur basierend auf GPUs mit breiter Unterstützung und großem Ökosystem.
-- **Google TPU (Tensor Processing Unit):** Spezialisierte KI-Beschleuniger, die insbesondere für TensorFlow-Workloads optimiert sind.
-- **Graphcore IPU:** Innovative Prozessoren für Machine Learning mit Fokus auf Parallelität und Effizienz.
-- **AWS Inferentia:** Cloud-basierte KI-Beschleuniger von Amazon für kosteneffiziente Inferenz.
-- **Intel Habana Labs:** KI-Beschleuniger mit Fokus auf Training und Inferenz in Rechenzentren.
+- [Google TPU (Tensor Processing Unit)](/tools/google-tpu/): Spezialisierte KI-Beschleuniger, die insbesondere für TensorFlow-Workloads optimiert sind.
+- [Graphcore IPU](/tools/graphcore-ipu/): Innovative Prozessoren für Machine Learning mit Fokus auf Parallelität und Effizienz.
+- [AWS Inferentia](/tools/aws-inferentia/): Cloud-basierte KI-Beschleuniger von Amazon für kosteneffiziente Inferenz.
+- [Intel Habana Labs](/tools/intel-habana-labs/): KI-Beschleuniger mit Fokus auf Training und Inferenz in Rechenzentren.
 
 ## FAQ
 

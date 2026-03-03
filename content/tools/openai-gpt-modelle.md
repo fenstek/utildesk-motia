@@ -52,11 +52,11 @@ Die Preisgestaltung der OpenAI GPT-Modelle variiert je nach Anbieter, Modellvers
 
 ## Alternativen zu OpenAI GPT-Modelle
 
-- **Google PaLM:** Ein leistungsfähiges Sprachmodell von Google mit ähnlichen Funktionen.
+- [Google PaLM](/tools/google-palm/): Ein leistungsfähiges Sprachmodell von Google mit ähnlichen Funktionen.
 - **Anthropic Claude:** Fokus auf sichere und ethische KI-Modelle mit natürlicher Sprachverarbeitung.
-- **Cohere:** Bietet APIs für Textgenerierung und Sprachverstehen mit flexiblen Preismodellen.
+- [Cohere](/tools/cohere/): Bietet APIs für Textgenerierung und Sprachverstehen mit flexiblen Preismodellen.
 - **AI21 Labs Jurassic:** Große Sprachmodelle mit Fokus auf kreative und komplexe Textaufgaben.
-- **Microsoft Azure OpenAI Service:** Integration von OpenAI-Modellen in Microsoft-Cloud-Umgebungen.
+- [Microsoft Azure OpenAI Service](/tools/microsoft-azure-openai-service/): Integration von OpenAI-Modellen in Microsoft-Cloud-Umgebungen.
 
 ## FAQ
 

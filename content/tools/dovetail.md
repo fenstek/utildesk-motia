@@ -47,11 +47,11 @@ Dovetail bietet ein Freemium-Preismodell an, das eine kostenlose Basisversion mi
 
 ## Alternativen zu Dovetail
 
-- **Airtable:** Flexibles Tool zur Datenorganisation mit kollaborativen Funktionen, geeignet für vielfältige Anwendungsfälle.
+- [Airtable](/tools/airtable/): Flexibles Tool zur Datenorganisation mit kollaborativen Funktionen, geeignet für vielfältige Anwendungsfälle.
 - **Notion:** All-in-One-Workspace zur Verwaltung von Projekten, Notizen und Daten mit starken Anpassungsmöglichkeiten.
-- **NVivo:** Speziell für qualitative Datenanalyse entwickeltes Tool mit umfangreichen Analysefunktionen.
-- **Atlas.ti:** Professionelle Software zur qualitativen Datenanalyse mit Fokus auf Forschung und Wissenschaft.
-- **Miro:** Visuelle Kollaborationsplattform, die auch zur Organisation und Analyse qualitativer Daten genutzt werden kann.
+- [NVivo](/tools/nvivo/): Speziell für qualitative Datenanalyse entwickeltes Tool mit umfangreichen Analysefunktionen.
+- [Atlas.ti](/tools/atlas-ti/): Professionelle Software zur qualitativen Datenanalyse mit Fokus auf Forschung und Wissenschaft.
+- [Miro](/tools/miro/): Visuelle Kollaborationsplattform, die auch zur Organisation und Analyse qualitativer Daten genutzt werden kann.
 
 ## FAQ
 

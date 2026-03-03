@@ -66,10 +66,10 @@ Die genauen Preise variieren je nach Abonnementdauer (monatlich, vierteljährlic
 ## Alternativen zu Grammarly
 
 - **ProWritingAid:** Umfangreiches Tool für Stil-, Grammatik- und Strukturverbesserungen mit detaillierten Berichten.
-- **LanguageTool:** Open-Source-Korrekturprogramm mit Unterstützung für viele Sprachen und Browser-Integrationen.
-- **Ginger:** Bietet neben Korrekturfunktionen auch Übersetzungen und personalisierte Lernhilfen.
-- **Hemingway Editor:** Fokus auf Lesbarkeit und klare, prägnante Texte mit einfacher Benutzeroberfläche.
-- **Slick Write:** Kostenloses Online-Tool zur schnellen Analyse von Grammatik und Stil.
+- [LanguageTool](/tools/languagetool/): Open-Source-Korrekturprogramm mit Unterstützung für viele Sprachen und Browser-Integrationen.
+- [Ginger](/tools/ginger/): Bietet neben Korrekturfunktionen auch Übersetzungen und personalisierte Lernhilfen.
+- [Hemingway Editor](/tools/hemingway-editor/): Fokus auf Lesbarkeit und klare, prägnante Texte mit einfacher Benutzeroberfläche.
+- [Slick Write](/tools/slick-write/): Kostenloses Online-Tool zur schnellen Analyse von Grammatik und Stil.
 ## FAQ
 
 **1. Ist Grammarly nur für englische Texte geeignet?**  

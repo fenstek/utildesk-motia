@@ -69,9 +69,9 @@ Die genauen Preise und enthaltenen Leistungen können je nach Anbieter und gewä
 
 ## Alternativen zu Replit
 
-- **GitHub Codespaces:** Cloudbasierte Entwicklungsumgebung mit enger Integration zu GitHub.
+- [GitHub Codespaces](/tools/github-codespaces/): Cloudbasierte Entwicklungsumgebung mit enger Integration zu GitHub.
 - **Glitch:** Plattform zum schnellen Erstellen und Teilen von Webanwendungen.
-- **CodeSandbox:** Online-Editor mit Fokus auf Webentwicklung und React-Projekte.
+- [CodeSandbox](/tools/codesandbox/): Online-Editor mit Fokus auf Webentwicklung und React-Projekte.
 - **JSFiddle:** Einfacher Online-Code-Editor für HTML, CSS und JavaScript.
 - **AWS Cloud9:** Voll ausgestattete Cloud-IDE von Amazon Web Services mit umfangreichen Features.
 

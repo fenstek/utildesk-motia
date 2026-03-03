@@ -48,10 +48,10 @@ Die Preisgestaltung von Google Cloud Natural Language basiert in der Regel auf d
 
 ## Alternativen zu Google Cloud Natural Language
 
-- **IBM Watson Natural Language Understanding:** Umfangreiche Textanalyse mit Fokus auf KI-gestützte Erkenntnisse.
-- **Microsoft Azure Text Analytics:** Bietet ähnliche Funktionen und lässt sich gut in Microsoft-Ökosysteme integrieren.
-- **Amazon Comprehend:** AWS-basierte Lösung für natürliche Sprachverarbeitung und Textanalyse.
-- **MeaningCloud:** Flexible API mit verschiedenen Textanalysetools und benutzerfreundlicher Oberfläche.
+- [IBM Watson Natural Language Understanding](/tools/ibm-watson-natural-language-understanding/): Umfangreiche Textanalyse mit Fokus auf KI-gestützte Erkenntnisse.
+- [Microsoft Azure Text Analytics](/tools/microsoft-azure-text-analytics/): Bietet ähnliche Funktionen und lässt sich gut in Microsoft-Ökosysteme integrieren.
+- [Amazon Comprehend](/tools/amazon-comprehend/): AWS-basierte Lösung für natürliche Sprachverarbeitung und Textanalyse.
+- [MeaningCloud](/tools/meaningcloud/): Flexible API mit verschiedenen Textanalysetools und benutzerfreundlicher Oberfläche.
 - **SpaCy (Open Source):** Leistungsstarke Python-Bibliothek für natürliche Sprachverarbeitung, ideal für eigene Projekte.
 
 ## FAQ

@@ -60,9 +60,9 @@ Respeecher bietet ein Freemium-Modell an, bei dem Nutzer mit eingeschränkten Fu
 
 ## Alternativen zu Respeecher
 
-- **Descript Overdub:** KI-Stimmenklon mit integriertem Audio- und Videobearbeitungs-Tool  
+- [Descript Overdub](/tools/descript-overdub/): KI-Stimmenklon mit integriertem Audio- und Videobearbeitungs-Tool  
 - **Replica Studios:** KI-gesteuerte Stimmen für Videospiele und Animationen  
-- **iSpeech:** Text-to-Speech und Voice Cloning Lösungen für Unternehmen  
+- [iSpeech](/tools/ispeech/): Text-to-Speech und Voice Cloning Lösungen für Unternehmen  
 - **VocaliD:** Personalisierte digitale Stimmen für verschiedene Anwendungen  
 - **Murf.ai:** KI-gestützte Voiceover-Erstellung mit vielfältigen Stimmen  
 

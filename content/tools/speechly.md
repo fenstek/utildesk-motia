@@ -65,9 +65,9 @@ Speechly bietet ein Freemium-Preismodell an, das es ermöglicht, den Dienst kost
 
 - **Google Cloud Speech-to-Text:** Umfangreiche Spracherkennung mit starker Integration in Google-Ökosystem.
 - **Microsoft Azure Speech Services:** Bietet Spracherkennung, Text-to-Speech und Übersetzung mit hoher Skalierbarkeit.
-- **IBM Watson Speech to Text:** KI-basierte Sprachverarbeitung mit Fokus auf Unternehmenslösungen.
-- **Amazon Transcribe:** Cloud-basierter Service zur automatischen Spracherkennung von Amazon Web Services.
-- **Deepgram:** KI-gestützte Spracherkennung mit Fokus auf Genauigkeit und Geschwindigkeit.
+- [IBM Watson Speech to Text](/tools/ibm-watson-speech-to-text/): KI-basierte Sprachverarbeitung mit Fokus auf Unternehmenslösungen.
+- [Amazon Transcribe](/tools/amazon-transcribe/): Cloud-basierter Service zur automatischen Spracherkennung von Amazon Web Services.
+- [Deepgram](/tools/deepgram/): KI-gestützte Spracherkennung mit Fokus auf Genauigkeit und Geschwindigkeit.
 
 ## FAQ
 

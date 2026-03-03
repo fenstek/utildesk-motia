@@ -63,10 +63,10 @@ Für Einsteiger steht eine kostenlose Stufe mit begrenzten Ressourcen zur Verfü
 ## Alternativen zu Microsoft Bot Framework
 
 - **Dialogflow (Google):** Eine KI-basierte Plattform zur Erstellung von Chatbots mit Fokus auf natürliche Sprachverarbeitung.
-- **IBM Watson Assistant:** Bietet umfangreiche KI-Tools zur Entwicklung intelligenter virtueller Assistenten.
-- **Rasa:** Open-Source-Framework für die Entwicklung kontextbewusster Chatbots und Sprachassistenten.
-- **Amazon Lex:** AWS-Service zur Erstellung von Chatbots mit automatischer Spracherkennung und Sprachsynthese.
-- **Botpress:** Open-Source-Plattform für die Entwicklung und Verwaltung von Chatbots mit grafischem Interface.
+- [IBM Watson Assistant](/tools/ibm-watson-assistant/): Bietet umfangreiche KI-Tools zur Entwicklung intelligenter virtueller Assistenten.
+- [Rasa](/tools/rasa/): Open-Source-Framework für die Entwicklung kontextbewusster Chatbots und Sprachassistenten.
+- [Amazon Lex](/tools/amazon-lex/): AWS-Service zur Erstellung von Chatbots mit automatischer Spracherkennung und Sprachsynthese.
+- [Botpress](/tools/botpress/): Open-Source-Plattform für die Entwicklung und Verwaltung von Chatbots mit grafischem Interface.
 
 ## FAQ
 

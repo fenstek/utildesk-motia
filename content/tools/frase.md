@@ -64,11 +64,11 @@ Frase bietet ein freemium Preismodell an, das heißt, es gibt eine kostenlose Ba
 
 ## Alternativen zu Frase
 
-- **Surfer SEO:** Fokus auf datengetriebene SEO-Optimierung mit Content-Editor und Keyword-Analyse.
-- **Clearscope:** Tool zur Content-Optimierung mit Keyword-Recherche und Konkurrenzanalyse.
-- **MarketMuse:** KI-gestützte Plattform zur Content-Strategie und -Optimierung.
+- [Surfer SEO](/tools/surfer-seo/): Fokus auf datengetriebene SEO-Optimierung mit Content-Editor und Keyword-Analyse.
+- [Clearscope](/tools/clearscope/): Tool zur Content-Optimierung mit Keyword-Recherche und Konkurrenzanalyse.
+- [MarketMuse](/tools/marketmuse/): KI-gestützte Plattform zur Content-Strategie und -Optimierung.
 - **Jarvis (Jasper):** KI-Textgenerator mit SEO-Integration und vielfältigen Einsatzmöglichkeiten.
-- **Writesonic:** KI-gestütztes Tool für Textgenerierung und Marketing-Content.
+- [Writesonic](/tools/writesonic/): KI-gestütztes Tool für Textgenerierung und Marketing-Content.
 
 ## FAQ
 

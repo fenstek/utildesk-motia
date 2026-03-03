@@ -72,11 +72,11 @@ Die genauen Preise können je nach Region und Anbieter variieren. Weitere Detail
 
 ## Alternativen zu GitHub Copilot
 
-- **Tabnine:** KI-basierter Code-Assistent mit breiter Sprachunterstützung und lokalem Modus.
+- [Tabnine](/tools/tabnine/): KI-basierter Code-Assistent mit breiter Sprachunterstützung und lokalem Modus.
 - **Kite:** Bietet intelligente Autovervollständigung und Dokumentationshilfe, besonders für Python.
-- **Amazon CodeWhisperer:** KI-Codegenerator mit Fokus auf AWS-Integration und Cloud-Services.
+- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-Codegenerator mit Fokus auf AWS-Integration und Cloud-Services.
 - **Codex (OpenAI):** Basis der GitHub Copilot-Technologie, direkt von OpenAI verfügbar.
-- **Visual Studio IntelliCode:** Microsofts KI-gestützte Codevervollständigung, integriert in Visual Studio.
+- [Visual Studio IntelliCode](/tools/visual-studio-intellicode/): Microsofts KI-gestützte Codevervollständigung, integriert in Visual Studio.
 ## FAQ
 
 **1. Unterstützt GitHub Copilot alle Programmiersprachen?**  

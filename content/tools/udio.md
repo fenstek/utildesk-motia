@@ -74,11 +74,11 @@ Detaillierte Preisangaben und aktuelle Angebote sind auf der offiziellen Webseit
 
 ## Alternativen zu Udio
 
-- **Audacity:** Kostenlose Open-Source-Software für Audioaufnahme und -bearbeitung mit umfangreichen Funktionen.
+- [Audacity](/tools/audacity/): Kostenlose Open-Source-Software für Audioaufnahme und -bearbeitung mit umfangreichen Funktionen.
 - **Adobe Audition:** Professionelles Audio-Tool mit vielen Effekten und professionellem Workflow, jedoch kostenpflichtig.
-- **Descript:** KI-gestütztes Tool zur Audiobearbeitung und Transkription, ideal für Podcaster und Content-Ersteller.
-- **Hindenburg Journalist:** Speziell für Journalisten und Podcaster entwickeltes Audio-Bearbeitungsprogramm.
-- **GarageBand:** Kostenloses Musik- und Audio-Tool für macOS und iOS mit guter Einsteigerfreundlichkeit.
+- [Descript](/tools/descript/): KI-gestütztes Tool zur Audiobearbeitung und Transkription, ideal für Podcaster und Content-Ersteller.
+- [Hindenburg Journalist](/tools/hindenburg-journalist/): Speziell für Journalisten und Podcaster entwickeltes Audio-Bearbeitungsprogramm.
+- [GarageBand](/tools/garageband/): Kostenloses Musik- und Audio-Tool für macOS und iOS mit guter Einsteigerfreundlichkeit.
 ## FAQ
 
 **1. Ist Udio für Anfänger geeignet?**  
