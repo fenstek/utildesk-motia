@@ -54,7 +54,7 @@ Hugging Face Transformers selbst ist eine Open-Source-Bibliothek und kann kosten
 
 ## Alternativen zu Hugging Face Transformers
 
-- **spaCy:** Eine weitere beliebte NLP-Bibliothek mit Fokus auf Geschwindigkeit und einfache Integration.
+- [spaCy](/tools/spacy/): Eine weitere beliebte NLP-Bibliothek mit Fokus auf Geschwindigkeit und einfache Integration.
 - [OpenAI GPT](/tools/openai-gpt/): Zugriff auf leistungsstarke Sprachmodelle über API, jedoch meist kostenpflichtig.
 - **Google Cloud Natural Language API:** Cloud-basierte NLP-Dienste mit breitem Funktionsumfang.
 - [AllenNLP](/tools/allennlp/): Forschungsorientierte NLP-Bibliothek mit Fokus auf Deep Learning.
