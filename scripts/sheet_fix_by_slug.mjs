@@ -16,7 +16,7 @@ function die(message, code = 1) {
 
 function usage() {
   die(
-    "Usage: node scripts/sheet_fix_by_slug.mjs <slug> <new_status> [new_official_url] [note] [new_tags]\n" +
+    "Usage: node scripts/sheet_fix_by_slug.mjs <slug> <new_status> [new_official_url] [note] [new_tags] [target_row_number]\n" +
       "Use - to keep official_url unchanged. Use - to keep tags unchanged."
   );
 }
@@ -37,6 +37,7 @@ const newStatus = String(process.argv[3] || "").trim();
 const rawOfficialUrl = process.argv[4];
 const note = String(process.argv[5] || "").trim();
 const rawTags = process.argv[6];
+const targetRowNumber = Number(process.argv[7] || 0);
 
 if (!slug || !newStatus) usage();
 if (rawOfficialUrl && rawOfficialUrl !== "-" && !String(rawOfficialUrl).startsWith("http")) {
@@ -90,14 +91,14 @@ async function main() {
   let rowIndex = -1;
   for (let i = 1; i < values.length; i++) {
     const rowSlug = String(values[i]?.[idx.slug] || "").trim().toLowerCase();
-    if (rowSlug === slug) {
+    if (rowSlug === slug && (!targetRowNumber || targetRowNumber === i + 1)) {
       rowIndex = i + 1;
       break;
     }
   }
 
   if (rowIndex === -1) {
-    die(JSON.stringify({ ok: false, slug, error: "slug not found" }), 2);
+    die(JSON.stringify({ ok: false, slug, targetRowNumber: targetRowNumber || null, error: "slug not found" }), 2);
   }
 
   const currentRow = values[rowIndex - 1] || [];
@@ -160,6 +161,7 @@ async function main() {
         ok: true,
         rowNumber: rowIndex,
         slug,
+        targetRowNumber: targetRowNumber || null,
         changed,
       },
       null,
