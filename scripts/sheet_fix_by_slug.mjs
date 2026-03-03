@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import "dotenv/config";
 import { google } from "googleapis";
+import fs from "node:fs";
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || "";
 const SHEET_NAME = process.env.SHEET_NAME || "Tabellenblatt1";
 const clientEmail = process.env.GOOGLE_CLIENT_EMAIL || "";
 const privateKey = String(process.env.GOOGLE_PRIVATE_KEY || "").replace(/\\n/g, "\n");
+const SA_JSON_PATH = "/opt/utildesk-motia/secrets/google-service-account.json";
 
 function die(message, code = 1) {
   console.error(message);
@@ -14,8 +16,8 @@ function die(message, code = 1) {
 
 function usage() {
   die(
-    "Usage: node scripts/sheet_fix_by_slug.mjs <slug> <new_status> [new_official_url] [note]\n" +
-      "Use - to keep official_url unchanged."
+    "Usage: node scripts/sheet_fix_by_slug.mjs <slug> <new_status> [new_official_url] [note] [new_tags]\n" +
+      "Use - to keep official_url unchanged. Use - to keep tags unchanged."
   );
 }
 
@@ -30,28 +32,43 @@ function colLetter(index) {
   return out;
 }
 
-if (!SPREADSHEET_ID) die("SPREADSHEET_ID env var is missing");
-if (!clientEmail || !privateKey) die("Missing GOOGLE_CLIENT_EMAIL/GOOGLE_PRIVATE_KEY env vars");
-
 const slug = String(process.argv[2] || "").trim().toLowerCase();
 const newStatus = String(process.argv[3] || "").trim();
 const rawOfficialUrl = process.argv[4];
 const note = String(process.argv[5] || "").trim();
+const rawTags = process.argv[6];
 
 if (!slug || !newStatus) usage();
 if (rawOfficialUrl && rawOfficialUrl !== "-" && !String(rawOfficialUrl).startsWith("http")) {
   die("new_official_url must start with http or be omitted / '-'");
 }
 
-const auth = new google.auth.JWT({
-  email: clientEmail,
-  key: privateKey,
-  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-});
+if (!SPREADSHEET_ID) die("SPREADSHEET_ID env var is missing");
 
-const sheets = google.sheets({ version: "v4", auth });
+async function createSheetsClient() {
+  if (clientEmail && privateKey) {
+    const auth = new google.auth.JWT({
+      email: clientEmail,
+      key: privateKey,
+      scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+    });
+    return google.sheets({ version: "v4", auth });
+  }
+
+  if (!fs.existsSync(SA_JSON_PATH)) {
+    die("Missing GOOGLE_CLIENT_EMAIL/GOOGLE_PRIVATE_KEY env vars and service-account file");
+  }
+
+  const auth = new google.auth.GoogleAuth({
+    keyFile: SA_JSON_PATH,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
+
+  return google.sheets({ version: "v4", auth });
+}
 
 async function main() {
+  const sheets = await createSheetsClient();
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
     range: `${SHEET_NAME}!A1:Z`,
@@ -68,6 +85,7 @@ async function main() {
   }
   if (!("official_url" in idx)) die('Column "official_url" not found in sheet header');
   if (!("notes" in idx)) die('Column "notes" not found in sheet header');
+  if (!("tags" in idx)) die('Column "tags" not found in sheet header');
 
   let rowIndex = -1;
   for (let i = 1; i < values.length; i++) {
@@ -86,6 +104,7 @@ async function main() {
   const currentStatus = String(currentRow[idx.status] || "").trim();
   const currentOfficialUrl = String(currentRow[idx.official_url] || "").trim();
   const currentNotes = String(currentRow[idx.notes] || "").trim();
+  const currentTags = String(currentRow[idx.tags] || "").trim();
 
   const updates = [];
   const changed = {};
@@ -104,6 +123,14 @@ async function main() {
       values: [[rawOfficialUrl]],
     });
     changed.official_url = { before: currentOfficialUrl, after: rawOfficialUrl };
+  }
+
+  if (rawTags && rawTags !== "-" && currentTags !== rawTags) {
+    updates.push({
+      range: `${SHEET_NAME}!${colLetter(idx.tags)}${rowIndex}`,
+      values: [[rawTags]],
+    });
+    changed.tags = { before: currentTags, after: rawTags };
   }
 
   if (note) {
