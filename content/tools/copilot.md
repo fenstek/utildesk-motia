@@ -57,7 +57,7 @@ Copilot ist als Freemium-Dienst verfügbar. Die kostenlose Version bietet grundl
 - [Tabnine](/tools/tabnine/): KI-basierte Code-Autovervollständigung mit Unterstützung für viele Sprachen und Editoren.
 - **Kite**: AI-Code-Assistenz mit Fokus auf Python und JavaScript, bietet auch Dokumentations-Hinweise.
 - **Codeium**: Kostenlose KI-Code-Vervollständigung mit schnellem Vorschlagssystem.
-- **IntelliCode (Microsoft)**: Erweiterung für Visual Studio und VS Code mit KI-gestützten Vorschlägen.
+- [IntelliCode (Microsoft)](/tools/intellicode/): Erweiterung für Visual Studio und VS Code mit KI-gestützten Vorschlägen.
 - [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-gestützter Code-Assistent von AWS, integriert in verschiedene IDEs.
 
 ## FAQ

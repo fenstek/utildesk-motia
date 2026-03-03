@@ -69,10 +69,10 @@ Google Translate ist grundsätzlich als Freemium-Dienst verfügbar:
 
 ## Alternativen zu Google Translate
 
-- **DeepL Translator:** Bekannt für besonders präzise Übersetzungen, insbesondere bei europäischen Sprachen, mit kostenpflichtigen Pro-Plänen.
+- [DeepL Translator](/tools/deepl-translator/): Bekannt für besonders präzise Übersetzungen, insbesondere bei europäischen Sprachen, mit kostenpflichtigen Pro-Plänen.
 - [Microsoft Translator](/tools/microsoft-translator/): Bietet ebenfalls umfangreiche Übersetzungsfunktionen und Integrationen in Microsoft-Produkte.
 - **Amazon Translate:** Cloudbasierte Übersetzungs-API mit Fokus auf Entwickler und Unternehmen.
-- **Reverso:** Übersetzungsdienst mit ergänzenden Lernfunktionen und Beispielsätzen.
+- [Reverso](/tools/reverso/): Übersetzungsdienst mit ergänzenden Lernfunktionen und Beispielsätzen.
 - **Papago:** Übersetzungs-App von Naver, spezialisiert auf asiatische Sprachen.
 
 ## FAQ

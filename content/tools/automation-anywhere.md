@@ -54,11 +54,11 @@ Die Preisgestaltung von Automation Anywhere richtet sich in der Regel nach dem g
 
 ## Alternativen zu Automation Anywhere
 
-- **UiPath:** Eine weitere führende RPA-Plattform mit umfangreichen Automatisierungsfunktionen und großer Community.
-- **Blue Prism:** Fokus auf skalierbare, sichere RPA-Lösungen für Unternehmen mit komplexen Anforderungen.
-- **Microsoft Power Automate:** Integrierte Automatisierungslösung innerhalb des Microsoft-Ökosystems, besonders für Office 365-Nutzer interessant.
-- **Kofax RPA:** Bietet Automatisierungslösungen mit Schwerpunkt auf Dokumentenverarbeitung und Workflow-Optimierung.
-- **WorkFusion:** Kombination von RPA und KI für intelligente Automatisierung in verschiedenen Branchen.
+- [UiPath](/tools/uipath/): Eine weitere führende RPA-Plattform mit umfangreichen Automatisierungsfunktionen und großer Community.
+- [Blue Prism](/tools/blue-prism/): Fokus auf skalierbare, sichere RPA-Lösungen für Unternehmen mit komplexen Anforderungen.
+- [Microsoft Power Automate](/tools/microsoft-power-automate/): Integrierte Automatisierungslösung innerhalb des Microsoft-Ökosystems, besonders für Office 365-Nutzer interessant.
+- [Kofax RPA](/tools/kofax-rpa/): Bietet Automatisierungslösungen mit Schwerpunkt auf Dokumentenverarbeitung und Workflow-Optimierung.
+- [WorkFusion](/tools/workfusion/): Kombination von RPA und KI für intelligente Automatisierung in verschiedenen Branchen.
 
 ## FAQ
 

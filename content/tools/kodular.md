@@ -60,10 +60,10 @@ Kodular bietet eine kostenlose Basisversion an, die bereits viele Funktionen umf
 
 ## Alternativen zu Kodular
 
-- **Thunkable**: Ebenfalls eine No-Code-Plattform für Android und iOS mit ähnlicher Drag-and-Drop-Oberfläche.
+- [Thunkable](/tools/thunkable/): Ebenfalls eine No-Code-Plattform für Android und iOS mit ähnlicher Drag-and-Drop-Oberfläche.
 - **Appgyver**: Leistungsfähige Plattform mit Fokus auf Unternehmensanwendungen und Multi-Plattform-Deployment.
-- **Bubble**: No-Code-Tool, das sich stärker auf Web-Apps konzentriert, aber auch mobile Apps unterstützt.
-- **Adalo**: Plattform zur Erstellung von mobilen Apps mit einfachem Interface und schnellem Prototyping.
+- [Bubble](/tools/bubble/): No-Code-Tool, das sich stärker auf Web-Apps konzentriert, aber auch mobile Apps unterstützt.
+- [Adalo](/tools/adalo/): Plattform zur Erstellung von mobilen Apps mit einfachem Interface und schnellem Prototyping.
 - **MIT App Inventor**: Open-Source-Plattform, die als Grundlage für Kodular diente, ideal für Einsteiger und Bildungszwecke.
 
 ## FAQ
