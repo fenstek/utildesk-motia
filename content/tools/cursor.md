@@ -52,11 +52,11 @@ Cursor bietet ein Freemium-Modell an. Die kostenlose Version umfasst grundlegend
 
 ## Alternativen zu Cursor
 
-- **GitHub Copilot:** Ein KI-gestütztes Coding-Tool von GitHub, das Code-Vorschläge direkt in der IDE anbietet.
-- **Tabnine:** KI-basierte Autovervollständigung, die in viele Editoren integriert werden kann.
+- [GitHub Copilot](/tools/github-copilot/): Ein KI-gestütztes Coding-Tool von GitHub, das Code-Vorschläge direkt in der IDE anbietet.
+- [Tabnine](/tools/tabnine/): KI-basierte Autovervollständigung, die in viele Editoren integriert werden kann.
 - **Kite:** Automatisierte Code-Vervollständigung mit Fokus auf Python.
 - **Codeium:** Kostenloses KI-Coding-Tool mit schnellen Vorschlägen.
-- **Amazon CodeWhisperer:** KI-basierte Programmierhilfe mit Integration in AWS-Services.
+- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-basierte Programmierhilfe mit Integration in AWS-Services.
 
 ## FAQ
 

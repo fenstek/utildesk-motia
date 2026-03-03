@@ -50,11 +50,11 @@ Veed bietet ein Freemium-Modell, das eine kostenlose Nutzung mit grundlegenden F
 
 ## Alternativen zu Veed
 
-- **Kapwing:** Online-Videoeditor mit Fokus auf einfache Bedienung und Kollaboration.
-- **InVideo:** Plattform für die Erstellung von Marketingvideos mit vielen Vorlagen.
-- **Clipchamp:** Microsoft-eigene Videobearbeitung mit umfangreichen Funktionen.
-- **Adobe Premiere Rush:** Kompakte Version von Adobe Premiere für schnelle Videobearbeitung.
-- **WeVideo:** Cloud-basierte Videobearbeitung mit Teamfunktionen und vielen Effekten.
+- [Kapwing](/tools/kapwing/): Online-Videoeditor mit Fokus auf einfache Bedienung und Kollaboration.
+- [InVideo](/tools/invideo/): Plattform für die Erstellung von Marketingvideos mit vielen Vorlagen.
+- [Clipchamp](/tools/clipchamp/): Microsoft-eigene Videobearbeitung mit umfangreichen Funktionen.
+- [Adobe Premiere Rush](/tools/adobe-premiere-rush/): Kompakte Version von Adobe Premiere für schnelle Videobearbeitung.
+- [WeVideo](/tools/wevideo/): Cloud-basierte Videobearbeitung mit Teamfunktionen und vielen Effekten.
 
 ## FAQ
 

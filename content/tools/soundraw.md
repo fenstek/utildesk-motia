@@ -50,10 +50,10 @@ Die Preisgestaltung von Soundraw variiert je nach gewähltem Plan und Nutzungsum
 ## Alternativen zu Soundraw
 
 - **Amper Music**: Eine KI-Musikplattform, die ähnlich wie Soundraw automatisierte Kompositionen anbietet und sich für Content-Ersteller eignet.
-- **AIVA**: KI-basierte Musiksoftware mit Fokus auf individuelle Kompositionen und professionelle Nutzung.
+- [AIVA](/tools/aiva/): KI-basierte Musiksoftware mit Fokus auf individuelle Kompositionen und professionelle Nutzung.
 - **Epidemic Sound**: Bietet eine umfangreiche Musikbibliothek mit lizenzfreien Tracks, ideal für Video- und Audio-Projekte.
 - **Jukedeck (jetzt Teil von TikTok)**: Früher eigenständiger KI-Musikgenerator, dessen Technologie teilweise in TikTok integriert wurde.
-- **Boomy**: Plattform zur schnellen Erstellung und Veröffentlichung von KI-generierter Musik mit Fokus auf Social Media.
+- [Boomy](/tools/boomy/): Plattform zur schnellen Erstellung und Veröffentlichung von KI-generierter Musik mit Fokus auf Social Media.
 
 ## FAQ
 

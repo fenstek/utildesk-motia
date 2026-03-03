@@ -53,10 +53,10 @@ Die Preisgestaltung von Fireworks AI ist meist nutzungsbasiert und kann je nach 
 ## Alternativen zu Fireworks AI
 
 - **Google Cloud AI Platform:** Umfassende Cloud-basierte KI-Dienste mit globaler Infrastruktur.
-- **AWS SageMaker:** Skalierbare Plattform für Machine Learning mit umfangreichen Tools und Services.
-- **Microsoft Azure Machine Learning:** Integrierte Umgebung für Entwicklung, Training und Deployment von KI-Modellen.
-- **IBM Watson Studio:** Plattform mit Fokus auf kollaborative KI-Entwicklung und Datenanalyse.
-- **Paperspace Gradient:** Cloud-Plattform für Deep Learning mit benutzerfreundlicher Oberfläche und GPU-Unterstützung.
+- [AWS SageMaker](/tools/aws-sagemaker/): Skalierbare Plattform für Machine Learning mit umfangreichen Tools und Services.
+- [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Integrierte Umgebung für Entwicklung, Training und Deployment von KI-Modellen.
+- [IBM Watson Studio](/tools/ibm-watson-studio/): Plattform mit Fokus auf kollaborative KI-Entwicklung und Datenanalyse.
+- [Paperspace Gradient](/tools/paperspace-gradient/): Cloud-Plattform für Deep Learning mit benutzerfreundlicher Oberfläche und GPU-Unterstützung.
 
 ## FAQ
 

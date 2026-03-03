@@ -67,11 +67,11 @@ Für genaue und aktuelle Preisangaben empfiehlt es sich, die offizielle Google C
 
 ## Alternativen zu Google Cloud Text-to-Speech
 
-- **Amazon Polly:** Ein weiterer führender Text-to-Speech-Dienst mit vielen Stimmen und Sprachen, gut geeignet für AWS-Nutzer.
+- [Amazon Polly](/tools/amazon-polly/): Ein weiterer führender Text-to-Speech-Dienst mit vielen Stimmen und Sprachen, gut geeignet für AWS-Nutzer.
 - **Microsoft Azure Speech:** Bietet umfangreiche Sprachdienste inklusive Text-to-Speech mit Anpassungsoptionen.
-- **IBM Watson Text to Speech:** KI-basierte Sprachsynthese mit Fokus auf Unternehmensanwendungen.
-- **ResponsiveVoice:** Einfach zu integrierender Webdienst für schnelle Text-zu-Sprache-Lösungen.
-- **iSpeech:** Plattform für Text-to-Speech und Speech-to-Text mit verschiedenen Stimmen und Sprachen.
+- [IBM Watson Text to Speech](/tools/ibm-watson-text-to-speech/): KI-basierte Sprachsynthese mit Fokus auf Unternehmensanwendungen.
+- [ResponsiveVoice](/tools/responsivevoice/): Einfach zu integrierender Webdienst für schnelle Text-zu-Sprache-Lösungen.
+- [iSpeech](/tools/ispeech/): Plattform für Text-to-Speech und Speech-to-Text mit verschiedenen Stimmen und Sprachen.
 
 ## FAQ
 

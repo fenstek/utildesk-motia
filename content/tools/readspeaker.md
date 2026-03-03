@@ -55,11 +55,11 @@ ReadSpeaker bietet ein Freemium-Modell an, das eine kostenlose Grundversion mit 
 
 ## Alternativen zu ReadSpeaker
 
-- **Amazon Polly:** Cloud-basierte Text-to-Speech-Lösung mit umfangreichen Stimmen und Sprachen, ideal für Entwickler.
-- **Google Cloud Text-to-Speech:** Bietet KI-gestützte natürliche Stimmen mit vielfältigen Anpassungsmöglichkeiten.
-- **IBM Watson Text to Speech:** Enterprise-fokussierte Lösung mit hoher Anpassbarkeit und Sicherheitsfeatures.
+- [Amazon Polly](/tools/amazon-polly/): Cloud-basierte Text-to-Speech-Lösung mit umfangreichen Stimmen und Sprachen, ideal für Entwickler.
+- [Google Cloud Text-to-Speech](/tools/google-cloud-text-to-speech/): Bietet KI-gestützte natürliche Stimmen mit vielfältigen Anpassungsmöglichkeiten.
+- [IBM Watson Text to Speech](/tools/ibm-watson-text-to-speech/): Enterprise-fokussierte Lösung mit hoher Anpassbarkeit und Sicherheitsfeatures.
 - **NaturalReader:** Benutzerfreundliches Tool für individuelle und professionelle Anwendungen.
-- **Speechify:** Fokus auf Lernunterstützung und mobile Nutzung mit intuitiver Oberfläche.
+- [Speechify](/tools/speechify/): Fokus auf Lernunterstützung und mobile Nutzung mit intuitiver Oberfläche.
 
 ## FAQ
 

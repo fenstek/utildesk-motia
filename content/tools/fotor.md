@@ -73,11 +73,11 @@ Die genaue Preisgestaltung kann je nach Anbieter und Angebot variieren.
 
 ## Alternativen zu Fotor
 
-- **Canva:** Eine weitere beliebte Online-Design-Plattform mit vielen Vorlagen und einfacher Bedienung, ebenfalls mit Freemium-Modell.
-- **Pixlr:** Online-Bildeditor mit KI-Funktionen und umfangreichen Bearbeitungsmöglichkeiten, kostenlos und kostenpflichtig verfügbar.
-- **Adobe Express:** Einfache Design- und Bildbearbeitungslösung von Adobe, die sich gut für schnelle Projekte eignet.
-- **BeFunky:** Online-Tool mit Fokus auf Fotobearbeitung und Collagen, bietet ebenfalls KI-gestützte Features.
-- **FotoJet:** Webbasierte Plattform für Grafikdesign und Fotobearbeitung mit benutzerfreundlichen Tools.
+- [Canva](/tools/canva/): Eine weitere beliebte Online-Design-Plattform mit vielen Vorlagen und einfacher Bedienung, ebenfalls mit Freemium-Modell.
+- [Pixlr](/tools/pixlr/): Online-Bildeditor mit KI-Funktionen und umfangreichen Bearbeitungsmöglichkeiten, kostenlos und kostenpflichtig verfügbar.
+- [Adobe Express](/tools/adobe-express/): Einfache Design- und Bildbearbeitungslösung von Adobe, die sich gut für schnelle Projekte eignet.
+- [BeFunky](/tools/befunky/): Online-Tool mit Fokus auf Fotobearbeitung und Collagen, bietet ebenfalls KI-gestützte Features.
+- [FotoJet](/tools/fotojet/): Webbasierte Plattform für Grafikdesign und Fotobearbeitung mit benutzerfreundlichen Tools.
 
 ## FAQ
 

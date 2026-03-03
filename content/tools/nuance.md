@@ -67,8 +67,8 @@ Genauere Preisangaben sind beim Anbieter oder über Vertriebspartner erhältlich
 - **Dragon NaturallySpeaking:** Ebenfalls von Nuance, spezialisiert auf Spracherkennung für individuelle Nutzer und Unternehmen.
 - **Google Speech-to-Text:** Cloudbasierte Spracherkennung mit breiter Sprachunterstützung und einfacher Integration.
 - **Microsoft Azure Speech Services:** Umfassende KI-gestützte Sprachfunktionen mit starker Integration in Microsoft-Ökosysteme.
-- **IBM Watson Speech to Text:** KI-basierte Spracherkennung mit Fokus auf Unternehmensanwendungen.
-- **Otter.ai:** Automatisierte Transkription und Notizen mit kollaborativen Funktionen.
+- [IBM Watson Speech to Text](/tools/ibm-watson-speech-to-text/): KI-basierte Spracherkennung mit Fokus auf Unternehmensanwendungen.
+- [Otter.ai](/tools/otter-ai/): Automatisierte Transkription und Notizen mit kollaborativen Funktionen.
 
 ## FAQ
 

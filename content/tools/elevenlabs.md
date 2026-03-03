@@ -54,10 +54,10 @@ ElevenLabs bietet ein Freemium-Modell an, das einen kostenlosen Einstieg ermögl
 ## Alternativen zu ElevenLabs
 
 - **Google Text-to-Speech:** Weit verbreitete Lösung mit breiter Sprachunterstützung und einfacher Integration.
-- **Amazon Polly:** KI-basierte Sprachsynthese mit zahlreichen Stimmen und umfangreicher API.
-- **IBM Watson Text to Speech:** Professionelle Plattform mit Anpassungsmöglichkeiten und guter Skalierbarkeit.
-- **Microsoft Azure Speech Service:** Vielseitige Text-zu-Sprache-Optionen mit starker Entwicklerunterstützung.
-- **Descript Overdub:** Fokus auf Voice-Cloning und Audio-Editing für Content-Ersteller.
+- [Amazon Polly](/tools/amazon-polly/): KI-basierte Sprachsynthese mit zahlreichen Stimmen und umfangreicher API.
+- [IBM Watson Text to Speech](/tools/ibm-watson-text-to-speech/): Professionelle Plattform mit Anpassungsmöglichkeiten und guter Skalierbarkeit.
+- [Microsoft Azure Speech Service](/tools/microsoft-azure-speech-service/): Vielseitige Text-zu-Sprache-Optionen mit starker Entwicklerunterstützung.
+- [Descript Overdub](/tools/descript-overdub/): Fokus auf Voice-Cloning und Audio-Editing für Content-Ersteller.
 
 ## FAQ
 

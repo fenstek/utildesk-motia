@@ -60,7 +60,7 @@ Lensa bietet ein Freemium-Modell an. Die Grundfunktionen sind kostenlos nutzbar,
 ## Alternativen zu Lensa
 
 - **FaceTune:** Umfangreiche App für Porträtretusche mit vielen manuellen Einstellungsmöglichkeiten
-- **Adobe Photoshop Express:** Mobile Version des bekannten Bildbearbeitungsprogramms mit KI-Funktionen
+- [Adobe Photoshop Express](/tools/adobe-photoshop-express/): Mobile Version des bekannten Bildbearbeitungsprogramms mit KI-Funktionen
 - **Snapseed:** Kostenlose Foto-App von Google mit vielfältigen Bearbeitungswerkzeugen
 - **Remini:** KI-basierte Bildverbesserung, insbesondere für alte und unscharfe Fotos
 - **AirBrush:** Fokus auf Schönheitsretusche und einfache Bedienung für Selfies

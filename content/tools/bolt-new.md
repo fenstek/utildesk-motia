@@ -47,11 +47,11 @@ Die Preisgestaltung von Bolt.new variiert je nach Anbieter und gewähltem Plan. 
 
 ## Alternativen zu Bolt.new
 
-- **GitHub Codespaces:** Cloudbasierte Entwicklungsumgebungen mit umfassender Integration in GitHub.
-- **Gitpod:** Automatisierte Entwicklungsumgebungen, die direkt aus dem Browser gestartet werden können.
-- **CodeSandbox:** Online-Editor für schnelle Webentwicklung und Prototyping.
-- **Replit:** Kollaborative Plattform für das Schreiben, Ausführen und Teilen von Code direkt im Browser.
-- **Visual Studio Code mit Remote-Extensions:** Lokale Entwicklungsumgebung mit Erweiterungen für Remote-Arbeit.
+- [GitHub Codespaces](/tools/github-codespaces/): Cloudbasierte Entwicklungsumgebungen mit umfassender Integration in GitHub.
+- [Gitpod](/tools/gitpod/): Automatisierte Entwicklungsumgebungen, die direkt aus dem Browser gestartet werden können.
+- [CodeSandbox](/tools/codesandbox/): Online-Editor für schnelle Webentwicklung und Prototyping.
+- [Replit](/tools/replit/): Kollaborative Plattform für das Schreiben, Ausführen und Teilen von Code direkt im Browser.
+- [Visual Studio Code mit Remote-Extensions](/tools/visual-studio-code-mit-remote-extensions/): Lokale Entwicklungsumgebung mit Erweiterungen für Remote-Arbeit.
 
 ## FAQ
 

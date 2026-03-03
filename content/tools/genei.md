@@ -59,11 +59,11 @@ Genei bietet ein Freemium-Modell an. Die kostenlose Version enthält grundlegend
 
 ## Alternativen zu Genei
 
-- **SMMRY:** Ein einfaches Tool zur Textzusammenfassung mit kostenlosem Zugang.
-- **QuillBot:** KI-gestütztes Paraphrasieren und Zusammenfassen mit verschiedenen Stiloptionen.
+- [SMMRY](/tools/smmry/): Ein einfaches Tool zur Textzusammenfassung mit kostenlosem Zugang.
+- [QuillBot](/tools/quillbot/): KI-gestütztes Paraphrasieren und Zusammenfassen mit verschiedenen Stiloptionen.
 - **Resoomer:** Online-Tool zur schnellen Textzusammenfassung, besonders für akademische Texte.
-- **Scholarcy:** Speziell für wissenschaftliche Artikel entwickelte Zusammenfassungssoftware mit zusätzlichen Analysefunktionen.
-- **SummarizeBot:** KI-Tool, das Dokumente und Webseiten automatisch zusammenfasst.
+- [Scholarcy](/tools/scholarcy/): Speziell für wissenschaftliche Artikel entwickelte Zusammenfassungssoftware mit zusätzlichen Analysefunktionen.
+- [SummarizeBot](/tools/summarizebot/): KI-Tool, das Dokumente und Webseiten automatisch zusammenfasst.
 
 ## FAQ
 

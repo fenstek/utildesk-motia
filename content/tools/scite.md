@@ -52,7 +52,7 @@ Scite bietet ein Freemium-Modell an. Die Basisversion ist kostenlos und enthält
 
 ## Alternativen zu Scite
 
-- **Research Rabbit:** Visualisiert Forschungsnetzwerke und Zitationen, eignet sich gut für explorative Literaturrecherche.
+- [Research Rabbit](/tools/research-rabbit/): Visualisiert Forschungsnetzwerke und Zitationen, eignet sich gut für explorative Literaturrecherche.
 - **Connected Papers:** Hilft beim Finden verwandter wissenschaftlicher Artikel durch graphbasierte Darstellung.
 - **Litmaps:** Bietet interaktive Karten für die Literaturrecherche und Zitationsverfolgung.
 - **Zotero:** Ein kostenloses Literaturverwaltungsprogramm mit einigen Analysefunktionen.

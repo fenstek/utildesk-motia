@@ -46,11 +46,11 @@ Die Preisgestaltung von QDA Miner hängt vom gewählten Lizenzmodell ab. Es gibt
 
 ## Alternativen zu QDA Miner
 
-- **MAXQDA:** Ein weiteres bekanntes Tool für qualitative und Mixed-Methods-Analysen mit umfangreichen Funktionen.
-- **NVivo:** Weit verbreitete Software für qualitative Datenanalyse, besonders in Forschung und Bildung.
-- **ATLAS.ti:** Starke Lösung zur Analyse komplexer und multimodaler Daten.
-- **Dedoose:** Cloud-basierte Anwendung, die qualitative und quantitative Daten kombiniert.
-- **Quirkos:** Einsteigerfreundliches Tool zur qualitativen Datenanalyse mit benutzerfreundlicher Oberfläche.
+- [MAXQDA](/tools/maxqda/): Ein weiteres bekanntes Tool für qualitative und Mixed-Methods-Analysen mit umfangreichen Funktionen.
+- [NVivo](/tools/nvivo/): Weit verbreitete Software für qualitative Datenanalyse, besonders in Forschung und Bildung.
+- [Atlas.ti](/tools/atlas-ti/): Starke Lösung zur Analyse komplexer und multimodaler Daten.
+- [Dedoose](/tools/dedoose/): Cloud-basierte Anwendung, die qualitative und quantitative Daten kombiniert.
+- [Quirkos](/tools/quirkos/): Einsteigerfreundliches Tool zur qualitativen Datenanalyse mit benutzerfreundlicher Oberfläche.
 
 ## FAQ
 
