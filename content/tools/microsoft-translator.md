@@ -59,8 +59,8 @@ Microsoft Translator bietet eine kostenlose Basisversion mit eingeschränkten Fu
 
 ## Alternativen zu Microsoft Translator
 
-- **Google Translate**: Umfangreicher Übersetzungsdienst mit breiter Sprachenabdeckung und vielfältigen Funktionen.
-- **DeepL Translator**: Bekannt für besonders präzise Übersetzungen, vor allem bei europäischen Sprachen.
+- [Google Translate](/tools/google-translate/): Umfangreicher Übersetzungsdienst mit breiter Sprachenabdeckung und vielfältigen Funktionen.
+- [DeepL Translator](/tools/deepl-translator/): Bekannt für besonders präzise Übersetzungen, vor allem bei europäischen Sprachen.
 - **Amazon Translate**: Cloud-basierter Übersetzungsdienst mit Fokus auf Entwickler und Unternehmen.
 - **SYSTRAN Translate**: Bietet spezialisierte Übersetzungen für Geschäftskunden und Branchenlösungen.
 - **iTranslate**: Mobile App mit Übersetzungsfunktionen für Text, Sprache und Websites.

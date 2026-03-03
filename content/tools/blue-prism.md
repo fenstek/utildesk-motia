@@ -51,11 +51,11 @@ Die Preisgestaltung von Blue Prism variiert stark je nach Unternehmensgröße, A
 
 ## Alternativen zu Blue Prism
 
-- **UiPath:** Eine weit verbreitete RPA-Plattform mit starkem Fokus auf Benutzerfreundlichkeit und Cloud-Integration.
-- **Automation Anywhere:** Bietet umfangreiche Automatisierungsfunktionen und eine breite Palette an KI-gestützten Tools.
-- **Microsoft Power Automate:** Geeignet für Unternehmen, die bereits Microsoft 365 nutzen und einfache Automatisierungen bevorzugen.
-- **Kofax RPA:** Kombination aus Dokumentenverarbeitung und Automatisierung, ideal für Unternehmen mit hohem Dokumentenaufkommen.
-- **WorkFusion:** Plattform mit integriertem KI- und Machine Learning-Support für intelligente Automatisierung.
+- [UiPath](/tools/uipath/): Eine weit verbreitete RPA-Plattform mit starkem Fokus auf Benutzerfreundlichkeit und Cloud-Integration.
+- [Automation Anywhere](/tools/automation-anywhere/): Bietet umfangreiche Automatisierungsfunktionen und eine breite Palette an KI-gestützten Tools.
+- [Microsoft Power Automate](/tools/microsoft-power-automate/): Geeignet für Unternehmen, die bereits Microsoft 365 nutzen und einfache Automatisierungen bevorzugen.
+- [Kofax RPA](/tools/kofax-rpa/): Kombination aus Dokumentenverarbeitung und Automatisierung, ideal für Unternehmen mit hohem Dokumentenaufkommen.
+- [WorkFusion](/tools/workfusion/): Plattform mit integriertem KI- und Machine Learning-Support für intelligente Automatisierung.
 
 ## FAQ
 

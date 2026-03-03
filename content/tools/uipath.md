@@ -51,11 +51,11 @@ Die Preisgestaltung von UiPath variiert je nach Anbieter, Plan und Unternehmensb
 
 ## Alternativen zu UiPath
 
-- **Automation Anywhere:** Eine weitere führende RPA-Plattform mit umfangreichen Automatisierungs- und KI-Funktionen.  
-- **Blue Prism:** Bekannt für seine Enterprise-RPA-Lösungen mit Fokus auf Sicherheit und Governance.  
-- **Microsoft Power Automate:** Eine benutzerfreundliche Automatisierungslösung, besonders geeignet für Microsoft-Umgebungen.  
-- **Kofax RPA:** Bietet intelligente Automatisierung mit starkem Fokus auf Dokumentenverarbeitung.  
-- **WorkFusion:** Kombiniert RPA mit KI für intelligente Prozessautomatisierung.
+- [Automation Anywhere](/tools/automation-anywhere/): Eine weitere führende RPA-Plattform mit umfangreichen Automatisierungs- und KI-Funktionen.  
+- [Blue Prism](/tools/blue-prism/): Bekannt für seine Enterprise-RPA-Lösungen mit Fokus auf Sicherheit und Governance.  
+- [Microsoft Power Automate](/tools/microsoft-power-automate/): Eine benutzerfreundliche Automatisierungslösung, besonders geeignet für Microsoft-Umgebungen.  
+- [Kofax RPA](/tools/kofax-rpa/): Bietet intelligente Automatisierung mit starkem Fokus auf Dokumentenverarbeitung.  
+- [WorkFusion](/tools/workfusion/): Kombiniert RPA mit KI für intelligente Prozessautomatisierung.
 
 ## FAQ
 

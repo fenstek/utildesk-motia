@@ -54,7 +54,7 @@ Linguee ist grundsätzlich kostenlos nutzbar und bietet eine umfangreiche Basisa
 
 ## Alternativen zu Linguee
 
-- DeepL Translator: Hochwertige KI-Übersetzungen mit Fokus auf natürliche Sprache
+- [DeepL Translator](/tools/deepl-translator/): Hochwertige KI-Übersetzungen mit Fokus auf natürliche Sprache
 - Google Übersetzer: Breite Sprachunterstützung und vielseitige Funktionen
 - Reverso Context: Kombination aus Übersetzung und Kontextbeispielen ähnlich wie Linguee
 - PONS Wörterbuch: Umfangreiche Wörterbuch-Lösung mit Beispielen und Übungen
