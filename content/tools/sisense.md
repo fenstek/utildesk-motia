@@ -51,11 +51,11 @@ Die Preise für Sisense variieren je nach Unternehmensgröße, Anzahl der Nutzer
 
 ## Alternativen zu Sisense
 
-- **Tableau:** Bekannt für umfangreiche Visualisierungen und benutzerfreundliche Dashboards.
+- [Tableau](/tools/tableau/): Bekannt für umfangreiche Visualisierungen und benutzerfreundliche Dashboards.
 - **Power BI (Microsoft):** Weit verbreitete BI-Lösung mit starker Integration in Microsoft-Umgebungen.
-- **Qlik Sense:** Plattform mit Fokus auf assoziative Datenmodellierung und Self-Service-Analysen.
-- **Looker:** Cloud-basierte BI-Plattform mit Schwerpunkt auf Datenmodellierung und Integration.
-- **Domo:** Komplettlösung für Datenintegration, Visualisierung und Collaboration in Echtzeit.
+- [Qlik Sense](/tools/qlik-sense/): Plattform mit Fokus auf assoziative Datenmodellierung und Self-Service-Analysen.
+- [Looker](/tools/looker/): Cloud-basierte BI-Plattform mit Schwerpunkt auf Datenmodellierung und Integration.
+- [Domo](/tools/domo/): Komplettlösung für Datenintegration, Visualisierung und Collaboration in Echtzeit.
 
 ## FAQ
 

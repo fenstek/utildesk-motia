@@ -5,6 +5,7 @@
 Обновляет только указанные поля:
 - `status`
 - `official_url` (опционально)
+- `tags` (опционально)
 - `notes` (опционально, добавляет хвост к существующим заметкам)
 
 ## Требования
@@ -18,17 +19,18 @@ ENV:
 ## Использование
 
 ```bash
-node scripts/sheet_fix_by_slug.mjs <slug> <new_status> [new_official_url] [note]
+node scripts/sheet_fix_by_slug.mjs <slug> <new_status> [new_official_url] [note] [new_tags]
 ```
 
 Если `official_url` менять не нужно, передайте `-`.
+Если `tags` менять не нужно, передайте `-`.
 
 ## Примеры
 
 ```bash
-node scripts/sheet_fix_by_slug.mjs hugging-face REBUILD https://huggingface.co/ "FIX official_url domain"
-node scripts/sheet_fix_by_slug.mjs spacy REBUILD https://spacy.io/ "FIX official_url domain"
-node scripts/sheet_fix_by_slug.mjs boomerang BLACKLIST - "Not a software tool (HBO Max channel)"
+node scripts/sheet_fix_by_slug.mjs hugging-face REBUILD https://huggingface.co/ "FIX official_url domain" -
+node scripts/sheet_fix_by_slug.mjs spacy REBUILD https://spacy.io/ "FIX official_url domain" "developer-tools, coding, api"
+node scripts/sheet_fix_by_slug.mjs boomerang BLACKLIST - "Not a software tool (HBO Max channel)" -
 ```
 
 ## Вывод

@@ -57,11 +57,11 @@ HeyGen bietet ein Freemium-Modell an, das den Einstieg mit grundlegenden Funktio
 
 ## Alternativen zu HeyGen
 
-- **Synthesia**: Bekannt für hochwertige KI-Videoerstellung mit vielfältigen Avatar-Optionen.  
+- [Synthesia](/tools/synthesia/): Bekannt für hochwertige KI-Videoerstellung mit vielfältigen Avatar-Optionen.  
 - **Rephrase.ai**: Fokus auf personalisierte Videoanzeigen und Marketingvideos.  
-- **DeepBrain**: KI-gestützte Video-Avatar-Plattform mit Echtzeit-Interaktion.  
-- **Lumen5**: Automatisierte Videoerstellung aus Textinhalten, ideal für Social Media.  
-- **D-ID**: Spezialisiert auf animierte Fotos und KI-gestützte Videogenerierung.  
+- [DeepBrain](/tools/deepbrain/): KI-gestützte Video-Avatar-Plattform mit Echtzeit-Interaktion.  
+- [Lumen5](/tools/lumen5/): Automatisierte Videoerstellung aus Textinhalten, ideal für Social Media.  
+- [D-ID](/tools/d-id/): Spezialisiert auf animierte Fotos und KI-gestützte Videogenerierung.  
 
 ## FAQ
 

@@ -61,11 +61,11 @@ Genaue Preise und Abonnements können variieren und sollten auf der offiziellen 
 
 ## Alternativen zu Adobe Enhance Speech
 
-- **Krisp**: KI-basierte Geräuschunterdrückung für Audio- und Videoanrufe.
-- **Auphonic**: Automatische Audio-Optimierung mit Fokus auf Lautstärke und Rauschunterdrückung.
-- **Descript Studio Sound**: Tool zur Verbesserung der Sprachqualität mit weiteren Editing-Funktionen.
-- **Cleanvoice AI**: Speziell für die Entfernung von Füllwörtern und Hintergrundgeräuschen.
-- **RX Elements von iZotope**: Einsteiger-freundliche Audioreparatursoftware mit Rauschunterdrückung.
+- [Krisp](/tools/krisp/): KI-basierte Geräuschunterdrückung für Audio- und Videoanrufe.
+- [Auphonic](/tools/auphonic/): Automatische Audio-Optimierung mit Fokus auf Lautstärke und Rauschunterdrückung.
+- [Descript Studio Sound](/tools/descript-studio-sound/): Tool zur Verbesserung der Sprachqualität mit weiteren Editing-Funktionen.
+- [Cleanvoice AI](/tools/cleanvoice-ai/): Speziell für die Entfernung von Füllwörtern und Hintergrundgeräuschen.
+- [RX Elements von iZotope](/tools/rx-elements-von-izotope/): Einsteiger-freundliche Audioreparatursoftware mit Rauschunterdrückung.
 
 ## FAQ
 

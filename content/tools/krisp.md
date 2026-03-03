@@ -53,7 +53,7 @@ Krisp bietet ein Freemium-Modell mit einer kostenlosen Version, die eine begrenz
 ## Alternativen zu Krisp
 
 - **NVIDIA RTX Voice:** KI-gestützte Geräuschunterdrückung für Nutzer mit NVIDIA-Grafikkarten, besonders gut für Gaming und Streaming.
-- **Zencastr:** Fokus auf Podcast-Aufnahmen mit Hintergrundgeräuschunterdrückung und Mehrspuraufnahme.
+- [Zencastr](/tools/zencastr/): Fokus auf Podcast-Aufnahmen mit Hintergrundgeräuschunterdrückung und Mehrspuraufnahme.
 - **Noise Blocker:** Open-Source-Tool zur Geräuschunterdrückung bei Windows.
 - **Solomon:** KI-basierte Audioverbesserung mit Fokus auf professionelle Audioproduktionen.
 - **Discord Noise Suppression:** Eingebaute Geräuschunterdrückung für Discord-Nutzer, kostenlos und einfach zu nutzen.

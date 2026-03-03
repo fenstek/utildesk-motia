@@ -49,11 +49,11 @@ OpenAI Codex wird in einem Freemium-Modell angeboten. Es gibt eine kostenlose Nu
 
 ## Alternativen zu OpenAI Codex
 
-- **GitHub Copilot:** Ein KI-gestütztes Tool zur Code-Vervollständigung, entwickelt in Zusammenarbeit mit OpenAI.
-- **Tabnine:** KI-basierte Code-Vervollständigung mit Unterstützung mehrerer Sprachen und Offline-Modus.
+- [GitHub Copilot](/tools/github-copilot/): Ein KI-gestütztes Tool zur Code-Vervollständigung, entwickelt in Zusammenarbeit mit OpenAI.
+- [Tabnine](/tools/tabnine/): KI-basierte Code-Vervollständigung mit Unterstützung mehrerer Sprachen und Offline-Modus.
 - **Kite:** Ein KI-Assistent, der Echtzeit-Code-Vorschläge und Dokumentationen liefert.
 - **DeepCode:** Nutzt KI zur automatischen Code-Analyse und Fehlererkennung.
-- **Amazon CodeWhisperer:** KI-gestützte Code-Generierung speziell für AWS-Entwicklerumgebungen.
+- [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-gestützte Code-Generierung speziell für AWS-Entwicklerumgebungen.
 
 ## FAQ
 

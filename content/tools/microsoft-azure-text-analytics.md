@@ -61,8 +61,8 @@ Die genauen Preise variieren je nach Region, Plan und Nutzung. Für genaue und a
 ## Alternativen zu Microsoft Azure Text Analytics
 
 - **Google Cloud Natural Language API:** Bietet ähnliche NLP-Funktionalitäten mit Fokus auf Google-Ökosystem.
-- **IBM Watson Natural Language Understanding:** Umfangreiche Textanalyse mit starker KI-Unterstützung und Branchenfokus.
-- **Amazon Comprehend:** AWS-basierter Dienst für Textanalyse und Entity-Recognition mit nahtloser Integration in AWS.
+- [IBM Watson Natural Language Understanding](/tools/ibm-watson-natural-language-understanding/): Umfangreiche Textanalyse mit starker KI-Unterstützung und Branchenfokus.
+- [Amazon Comprehend](/tools/amazon-comprehend/): AWS-basierter Dienst für Textanalyse und Entity-Recognition mit nahtloser Integration in AWS.
 - **SpaCy (Open Source):** Leistungsstarke NLP-Bibliothek für Entwickler, die eigene Modelle trainieren wollen.
 - **TextRazor:** API-basierte Textanalyse mit Fokus auf Entity Extraction und semantische Analyse.
 

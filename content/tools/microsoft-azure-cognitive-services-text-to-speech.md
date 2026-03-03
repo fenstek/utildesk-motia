@@ -61,11 +61,11 @@ Für detaillierte und aktuelle Informationen empfiehlt sich ein Blick auf die of
 
 ## Alternativen zu Microsoft Azure Cognitive Services - Text to Speech
 
-- **Google Cloud Text-to-Speech:** Bietet ebenfalls eine breite Palette an Stimmen und Sprachen mit tiefer Integration in Google Cloud.
-- **Amazon Polly:** Ein weiterer führender Cloud-basierter TTS-Dienst mit Fokus auf natürliche Stimmen und Echtzeit-Streaming.
-- **IBM Watson Text to Speech:** Bekannt für gute Anpassungsmöglichkeiten und Integration in IBM Cloud Services.
-- **iSpeech:** Ein Anbieter mit API-Zugriff und vielfältigen Stimmen für verschiedene Plattformen.
-- **ResponsiveVoice:** Einfach zu integrierende Web-basierte TTS-Lösung mit kostenfreiem und kostenpflichtigem Modell.
+- [Google Cloud Text-to-Speech](/tools/google-cloud-text-to-speech/): Bietet ebenfalls eine breite Palette an Stimmen und Sprachen mit tiefer Integration in Google Cloud.
+- [Amazon Polly](/tools/amazon-polly/): Ein weiterer führender Cloud-basierter TTS-Dienst mit Fokus auf natürliche Stimmen und Echtzeit-Streaming.
+- [IBM Watson Text to Speech](/tools/ibm-watson-text-to-speech/): Bekannt für gute Anpassungsmöglichkeiten und Integration in IBM Cloud Services.
+- [iSpeech](/tools/ispeech/): Ein Anbieter mit API-Zugriff und vielfältigen Stimmen für verschiedene Plattformen.
+- [ResponsiveVoice](/tools/responsivevoice/): Einfach zu integrierende Web-basierte TTS-Lösung mit kostenfreiem und kostenpflichtigem Modell.
 
 ## FAQ
 

@@ -52,11 +52,11 @@ Tableau bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenlos
 
 ## Alternativen zu Tableau
 
-- **Power BI:** Microsofts Business-Intelligence-Tool mit starker Integration in das Microsoft-Ökosystem.
-- **Qlik Sense:** Plattform für Datenvisualisierung und Analyse mit Fokus auf assoziative Datenmodelle.
-- **Looker:** Google Cloud-basierte Lösung für Datenanalyse und Visualisierung.
-- **Sisense:** BI-Plattform mit Schwerpunkt auf schnelle Datenintegration und Embedded Analytics.
-- **Domo:** Cloud-basierte Plattform zur Datenintegration und Echtzeit-Dashboard-Erstellung.
+- [Power BI](/tools/power-bi/): Microsofts Business-Intelligence-Tool mit starker Integration in das Microsoft-Ökosystem.
+- [Qlik Sense](/tools/qlik-sense/): Plattform für Datenvisualisierung und Analyse mit Fokus auf assoziative Datenmodelle.
+- [Looker](/tools/looker/): Google Cloud-basierte Lösung für Datenanalyse und Visualisierung.
+- [Sisense](/tools/sisense/): BI-Plattform mit Schwerpunkt auf schnelle Datenintegration und Embedded Analytics.
+- [Domo](/tools/domo/): Cloud-basierte Plattform zur Datenintegration und Echtzeit-Dashboard-Erstellung.
 
 ## FAQ
 

@@ -63,10 +63,10 @@ Leonardo AI bietet ein Freemium-Preismodell an, das einen kostenlosen Basiszugan
 ## Alternativen zu Leonardo AI
 
 - **DALL·E 2:** Ein KI-Tool von OpenAI zur Bildgenerierung aus Textbeschreibungen mit hoher Bildqualität.
-- **Midjourney:** Eine KI-Plattform, die sich auf künstlerische und kreative Bildgenerierung spezialisiert hat.
-- **Stable Diffusion:** Open-Source-KI für die flexible Bildgenerierung mit vielen Anpassungsmöglichkeiten.
+- [Midjourney](/tools/midjourney/): Eine KI-Plattform, die sich auf künstlerische und kreative Bildgenerierung spezialisiert hat.
+- [Stable Diffusion](/tools/stable-diffusion/): Open-Source-KI für die flexible Bildgenerierung mit vielen Anpassungsmöglichkeiten.
 - **Runway ML:** Bietet verschiedene KI-gestützte Tools für Kreative, inklusive Bild- und Videobearbeitung.
-- **Deep Dream Generator:** Ein Tool zur kreativen Bildverfremdung mittels neuronaler Netzwerke.
+- [Deep Dream Generator](/tools/deep-dream-generator/): Ein Tool zur kreativen Bildverfremdung mittels neuronaler Netzwerke.
 
 ## FAQ
 

@@ -66,10 +66,10 @@ Für genaue Preise empfiehlt es sich, die offizielle Webseite zu konsultieren od
 ## Alternativen zu AssemblyAI
 
 - **Google Cloud Speech-to-Text:** Bekannt für hohe Genauigkeit und breite Sprachunterstützung.
-- **Amazon Transcribe:** Skalierbare Transkriptionsdienste mit Integration in AWS-Ökosystem.
+- [Amazon Transcribe](/tools/amazon-transcribe/): Skalierbare Transkriptionsdienste mit Integration in AWS-Ökosystem.
 - **Microsoft Azure Speech Services:** Umfassende Sprach- und KI-Dienste mit guter API-Unterstützung.
-- **IBM Watson Speech to Text:** KI-basierte Spracherkennung mit Fokus auf Unternehmensanwendungen.
-- **Deepgram:** KI-gestützte Transkription mit Schwerpunkt auf Echtzeit-Performance.
+- [IBM Watson Speech to Text](/tools/ibm-watson-speech-to-text/): KI-basierte Spracherkennung mit Fokus auf Unternehmensanwendungen.
+- [Deepgram](/tools/deepgram/): KI-gestützte Transkription mit Schwerpunkt auf Echtzeit-Performance.
 
 ## FAQ
 

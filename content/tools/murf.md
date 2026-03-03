@@ -65,10 +65,10 @@ Murf bietet ein Freemium-Modell, bei dem Grundfunktionen kostenlos genutzt werde
 
 ## Alternativen zu Murf
 
-- **Descript**: Bietet umfassende Audio- und Videobearbeitung mit KI-Sprachfunktionen.
+- [Descript](/tools/descript/): Bietet umfassende Audio- und Videobearbeitung mit KI-Sprachfunktionen.
 - **Speechelo**: Fokus auf einfache Text-zu-Sprache-Konvertierung mit verschiedenen Stimmen.
-- **Amazon Polly**: Cloud-basierte Text-to-Speech-API mit breiter Sprachunterstützung.
-- **Google Cloud Text-to-Speech**: Leistungsfähige API mit vielen Anpassungsmöglichkeiten.
+- [Amazon Polly](/tools/amazon-polly/): Cloud-basierte Text-to-Speech-API mit breiter Sprachunterstützung.
+- [Google Cloud Text-to-Speech](/tools/google-cloud-text-to-speech/): Leistungsfähige API mit vielen Anpassungsmöglichkeiten.
 - **Lovo.ai**: KI-gestützte Stimmen mit Schwerpunkt auf Marketing und Lerninhalten.
 
 ## FAQ

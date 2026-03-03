@@ -64,10 +64,10 @@ Für genaue Informationen empfiehlt es sich, die offizielle Webseite oder Anbiet
 
 ## Alternativen zu Mate Translate
 
-- **Google Translate:** Kostenloser Übersetzungsdienst mit breiter Sprachunterstützung und Integration in viele Google-Produkte.
-- **DeepL:** Bekannt für besonders natürliche Übersetzungen, besonders im europäischen Sprachraum.
-- **Microsoft Translator:** Integriert in Microsoft-Produkte, bietet Echtzeit-Übersetzungen und Kollaborationsfunktionen.
-- **Linguee:** Kombination aus Wörterbuch und Übersetzungshilfe mit Beispielsätzen aus echten Texten.
+- [Google Translate](/tools/google-translate/): Kostenloser Übersetzungsdienst mit breiter Sprachunterstützung und Integration in viele Google-Produkte.
+- [DeepL](/tools/deepl/): Bekannt für besonders natürliche Übersetzungen, besonders im europäischen Sprachraum.
+- [Microsoft Translator](/tools/microsoft-translator/): Integriert in Microsoft-Produkte, bietet Echtzeit-Übersetzungen und Kollaborationsfunktionen.
+- [Linguee](/tools/linguee/): Kombination aus Wörterbuch und Übersetzungshilfe mit Beispielsätzen aus echten Texten.
 - **Reverso:** Übersetzungs- und Lernplattform mit Kontextbeispielen und Grammatikhilfen.
 
 ## FAQ

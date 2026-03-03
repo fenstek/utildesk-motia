@@ -70,9 +70,9 @@ Für genaue Preise empfiehlt es sich, die offizielle Website zu besuchen.
 ## Alternativen zu Canva Video
 
 - **Adobe Spark Video:** Einfache Videobearbeitung mit Fokus auf Social Media Inhalte und Storytelling.
-- **InVideo:** Umfangreiche Templates und KI-gestützte Videoerstellung, ideal für Marketingvideos.
-- **Animoto:** Benutzerfreundliches Tool für schnelle Videoerstellung mit Musik und Text.
-- **Kapwing:** Online-Video-Editor mit vielseitigen Bearbeitungsfunktionen und Kollaboration.
+- [InVideo](/tools/invideo/): Umfangreiche Templates und KI-gestützte Videoerstellung, ideal für Marketingvideos.
+- [Animoto](/tools/animoto/): Benutzerfreundliches Tool für schnelle Videoerstellung mit Musik und Text.
+- [Kapwing](/tools/kapwing/): Online-Video-Editor mit vielseitigen Bearbeitungsfunktionen und Kollaboration.
 - **Biteable:** Plattform für animierte Videos und Erklärvideos mit vorgefertigten Szenen.
 
 Diese Alternativen bieten unterschiedliche Schwerpunkte und Preisstrukturen, je nach individuellen Anforderungen.

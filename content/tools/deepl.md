@@ -60,11 +60,11 @@ DeepL bietet ein Freemium-Modell an. Die kostenlose Version ermöglicht grundleg
 
 ## Alternativen zu DeepL
 
-- **Google Translate:** Kostenloser Übersetzungsdienst mit breiter Sprachunterstützung und vielfältigen Integrationen.
-- **Microsoft Translator:** Bietet Übersetzungen in Echtzeit und API-Zugang für Unternehmen.
+- [Google Translate](/tools/google-translate/): Kostenloser Übersetzungsdienst mit breiter Sprachunterstützung und vielfältigen Integrationen.
+- [Microsoft Translator](/tools/microsoft-translator/): Bietet Übersetzungen in Echtzeit und API-Zugang für Unternehmen.
 - **Reverso:** Übersetzer mit Fokus auf Kontextbeispiele und Synonyme.
-- **Linguee:** Kombination aus Wörterbuch und Übersetzungssuche mit Beispielsätzen.
-- **Mate Translate:** Browser- und App-basierter Übersetzer mit Offline-Funktion.
+- [Linguee](/tools/linguee/): Kombination aus Wörterbuch und Übersetzungssuche mit Beispielsätzen.
+- [Mate Translate](/tools/mate-translate/): Browser- und App-basierter Übersetzer mit Offline-Funktion.
 
 ## FAQ
 

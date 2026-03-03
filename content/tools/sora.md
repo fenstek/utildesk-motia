@@ -62,7 +62,7 @@ Details zu den Preisen finden Sie direkt beim Anbieter oder in den jeweiligen Ta
 
 ## Alternativen zu Sora
 
-- **Adobe Premiere Pro:** Professionelle Videobearbeitung mit umfangreichen Funktionen, geeignet für anspruchsvolle Projekte.
+- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): Professionelle Videobearbeitung mit umfangreichen Funktionen, geeignet für anspruchsvolle Projekte.
 - **Final Cut Pro:** Mac-exklusive Lösung mit hoher Performance und intuitiver Bedienung.
 - **DaVinci Resolve:** Kostenlose und kostenpflichtige Versionen mit starkem Fokus auf Farbkorrektur und Postproduktion.
 - **Filmora:** Einsteigerfreundliche Software mit vielen Vorlagen und Effekten.

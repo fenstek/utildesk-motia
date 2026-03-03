@@ -49,11 +49,11 @@ Die Preisgestaltung von Looker variiert je nach Anbieter, Unternehmensgröße un
 
 ## Alternativen zu Looker
 
-- **Tableau:** Bekannt für seine benutzerfreundlichen Visualisierungen und breite Integration.
-- **Power BI:** Microsofts BI-Lösung mit starker Office-Integration.
-- **Qlik Sense:** Plattform zur Datenvisualisierung mit Fokus auf assoziative Datenmodellierung.
+- [Tableau](/tools/tableau/): Bekannt für seine benutzerfreundlichen Visualisierungen und breite Integration.
+- [Power BI](/tools/power-bi/): Microsofts BI-Lösung mit starker Office-Integration.
+- [Qlik Sense](/tools/qlik-sense/): Plattform zur Datenvisualisierung mit Fokus auf assoziative Datenmodellierung.
 - **Mode Analytics:** Kollaborative Analytics-Plattform, die SQL und Python kombiniert.
-- **Sisense:** BI-Plattform mit Schwerpunkt auf Embedded Analytics und Skalierbarkeit.
+- [Sisense](/tools/sisense/): BI-Plattform mit Schwerpunkt auf Embedded Analytics und Skalierbarkeit.
 
 ## FAQ
 

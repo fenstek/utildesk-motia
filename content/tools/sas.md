@@ -54,8 +54,8 @@ SAS bietet verschiedene Preisoptionen, darunter auch freemium-Modelle für einen
 
 ## Alternativen zu SAS
 
-- **IBM Watson Studio:** Plattform für KI und Datenanalyse mit umfassenden Tools für Entwickler und Datenwissenschaftler.
-- **Microsoft Azure Machine Learning:** Cloudbasierte Lösung für Machine Learning und KI-Modellentwicklung.
+- [IBM Watson Studio](/tools/ibm-watson-studio/): Plattform für KI und Datenanalyse mit umfassenden Tools für Entwickler und Datenwissenschaftler.
+- [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Cloudbasierte Lösung für Machine Learning und KI-Modellentwicklung.
 - **RapidMiner:** Benutzerfreundliche Plattform für Datenwissenschaft und maschinelles Lernen.
 - **KNIME:** Open-Source-Tool für Datenanalyse und Workflow-Management.
 - **Alteryx:** Analytics-Plattform, die Datenvorbereitung, Analyse und Automatisierung kombiniert.

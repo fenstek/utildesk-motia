@@ -50,11 +50,11 @@ Magisto bietet verschiedene Preispläne an, die sich in Funktionsumfang und Nutz
 
 ## Alternativen zu Magisto
 
-- **Animoto:** Ebenfalls eine cloudbasierte Videoplattform mit Fokus auf einfache Drag-and-Drop-Bearbeitung und Vorlagen. Gut für Marketingvideos und Social Media.  
-- **InVideo:** Bietet eine breite Palette an Vorlagen und mehr manuelle Anpassungsmöglichkeiten bei der Videoerstellung.  
-- **Adobe Premiere Rush:** Eine vereinfachte Version von Adobe Premiere, die mehr Kontrolle bei der Bearbeitung erlaubt, aber ebenfalls benutzerfreundlich ist.  
-- **Lumen5:** Speziell geeignet für die Umwandlung von Textinhalten in kurze Videos mithilfe von KI.  
-- **Clipchamp:** Ein browserbasierter Videoeditor mit vielfältigen Funktionen und Integration in Microsoft-Ökosysteme.  
+- [Animoto](/tools/animoto/): Ebenfalls eine cloudbasierte Videoplattform mit Fokus auf einfache Drag-and-Drop-Bearbeitung und Vorlagen. Gut für Marketingvideos und Social Media.  
+- [InVideo](/tools/invideo/): Bietet eine breite Palette an Vorlagen und mehr manuelle Anpassungsmöglichkeiten bei der Videoerstellung.  
+- [Adobe Premiere Rush](/tools/adobe-premiere-rush/): Eine vereinfachte Version von Adobe Premiere, die mehr Kontrolle bei der Bearbeitung erlaubt, aber ebenfalls benutzerfreundlich ist.  
+- [Lumen5](/tools/lumen5/): Speziell geeignet für die Umwandlung von Textinhalten in kurze Videos mithilfe von KI.  
+- [Clipchamp](/tools/clipchamp/): Ein browserbasierter Videoeditor mit vielfältigen Funktionen und Integration in Microsoft-Ökosysteme.  
 
 ## FAQ
 

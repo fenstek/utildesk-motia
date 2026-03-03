@@ -57,10 +57,10 @@ PolyAI bietet ein Freemium-Preismodell, das es Nutzern ermöglicht, die Grundfun
 ## Alternativen zu PolyAI
 
 - **Google Dialogflow:** Eine umfassende Plattform für die Entwicklung von Chatbots und Sprachassistenten mit starker Integration in Google Cloud.  
-- **Amazon Lex:** Bietet KI-gesteuerte Sprach- und Textdialoge, ideal für Amazon Web Services Nutzer.  
-- **IBM Watson Assistant:** Ermöglicht die Erstellung von virtuellen Assistenten mit Fokus auf Unternehmensanwendungen.  
-- **Microsoft Azure Bot Service:** Kombiniert Bot-Framework mit Azure KI-Diensten für skalierbare Lösungen.  
-- **Rasa:** Open-Source-Plattform für individuelle Conversational AI mit hoher Anpassbarkeit.  
+- [Amazon Lex](/tools/amazon-lex/): Bietet KI-gesteuerte Sprach- und Textdialoge, ideal für Amazon Web Services Nutzer.  
+- [IBM Watson Assistant](/tools/ibm-watson-assistant/): Ermöglicht die Erstellung von virtuellen Assistenten mit Fokus auf Unternehmensanwendungen.  
+- [Microsoft Azure Bot Service](/tools/microsoft-azure-bot-service/): Kombiniert Bot-Framework mit Azure KI-Diensten für skalierbare Lösungen.  
+- [Rasa](/tools/rasa/): Open-Source-Plattform für individuelle Conversational AI mit hoher Anpassbarkeit.  
 
 ## FAQ
 
