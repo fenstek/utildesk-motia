@@ -69,7 +69,7 @@ Eine genaue Preisliste ist auf der offiziellen Webseite verfügbar. Die Kosten r
 - **Murf.ai**: Ein Tool für professionelle Voiceover-Erstellung mit diversen Stimmen und einfacher Bedienung.
 - **WellSaid Labs**: Hochwertige synthetische Stimmen für Marketing, E-Learning und mehr.
 - **Replica Studios**: Speziell für Spiele und immersive Medien entwickelte KI-Stimmen.
-- **Play.ht**: Plattform für natürliche Text-zu-Sprache-Konvertierung mit vielfältigen Stimmen.
+- [Play.ht](/tools/play-ht/): Plattform für natürliche Text-zu-Sprache-Konvertierung mit vielfältigen Stimmen.
 
 Diese Alternativen unterscheiden sich in Preis, Qualität, Sprachen und spezifischen Funktionen, daher lohnt sich ein Vergleich je nach Anwendungsfall.
 

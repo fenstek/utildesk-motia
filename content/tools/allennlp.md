@@ -50,8 +50,8 @@ AllenNLP ist ein Open-Source-Projekt und steht kostenlos zur Verfügung. Die Nut
 
 ## Alternativen zu AllenNLP
 
-- **spaCy**: Ein weiteres populäres NLP-Framework mit Fokus auf Geschwindigkeit und einfache Integration.
-- **Hugging Face Transformers**: Bietet eine umfangreiche Sammlung vortrainierter Transformer-Modelle für verschiedenste NLP-Aufgaben.
+- [spaCy](/tools/spacy/): Ein weiteres populäres NLP-Framework mit Fokus auf Geschwindigkeit und einfache Integration.
+- [Hugging Face Transformers](/tools/hugging-face-transformers/): Bietet eine umfangreiche Sammlung vortrainierter Transformer-Modelle für verschiedenste NLP-Aufgaben.
 - **Stanford NLP**: Bekannt für robuste NLP-Tools und Modelle, die in vielen Anwendungen eingesetzt werden.
 - **Flair**: Ein einfach zu nutzendes Framework für State-of-the-Art NLP-Modelle mit Fokus auf Textklassifikation und Sequenzkennzeichnung.
 - **OpenNLP**: Ein Apache-Projekt mit verschiedenen NLP-Komponenten für Java-basierte Anwendungen.

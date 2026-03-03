@@ -72,7 +72,7 @@ Für Bildungseinrichtungen und Entwickler stehen oft kostenlose Kontingente oder
 - **Amazon SageMaker:** Vollständig verwalteter Service für Machine Learning auf AWS mit Fokus auf Skalierbarkeit.
 - [IBM Watson Studio](/tools/ibm-watson-studio/): Plattform für Datenwissenschaft und KI mit kollaborativen Funktionen.
 - [Databricks](/tools/databricks/): Unified Analytics Plattform mit Fokus auf Big Data und ML-Workflows.
-- **H2O.ai:** Open-Source und kommerzielle Lösungen für automatisiertes Machine Learning.
+- [H2O.ai](/tools/h2o-ai/): Open-Source und kommerzielle Lösungen für automatisiertes Machine Learning.
 
 ## FAQ
 

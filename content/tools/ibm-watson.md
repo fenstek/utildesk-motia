@@ -55,9 +55,9 @@ IBM Watson bietet ein Freemium-Modell, das es ermöglicht, viele Basisfunktionen
 
 - **Google Cloud AI:** Umfangreiche KI-Dienste mit starken Cloud-Integrationen.
 - **Microsoft Azure AI:** Breites Angebot an KI-Tools und -Services in der Azure-Cloud.
-- **Amazon Web Services (AWS) AI:** Skalierbare KI- und Machine-Learning-Lösungen.
+- [Amazon Web Services (AWS) AI](/tools/amazon-web-services-ai/): Skalierbare KI- und Machine-Learning-Lösungen.
 - **OpenAI:** Fokus auf moderne KI-Modelle, darunter GPT-Modelle für NLP.
-- **H2O.ai:** Open-Source-Plattform für maschinelles Lernen und KI.
+- [H2O.ai](/tools/h2o-ai/): Open-Source-Plattform für maschinelles Lernen und KI.
 
 ## FAQ
 

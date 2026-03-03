@@ -67,7 +67,7 @@ Die genauen Kosten variieren je nach Region, Instanztyp und Nutzungsmuster. AWS 
 - [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Plattform von Microsoft für Entwicklung, Training und Deployment von ML-Modellen.
 - [IBM Watson Studio](/tools/ibm-watson-studio/): KI-Plattform mit Fokus auf Datenanalyse und automatisiertes Machine Learning.
 - [Databricks](/tools/databricks/): Cloud-basierte Plattform für Datenanalyse und ML mit Fokus auf Apache Spark.
-- **H2O.ai:** Open-Source- und Enterprise-Lösungen für automatisiertes Machine Learning.
+- [H2O.ai](/tools/h2o-ai/): Open-Source- und Enterprise-Lösungen für automatisiertes Machine Learning.
 
 ## FAQ
 
