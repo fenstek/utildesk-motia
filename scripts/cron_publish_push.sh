@@ -73,7 +73,7 @@ fi
 
 # Optional repo hygiene: disable active tool markdown files when Sheet status
 # is NEEDS_REVIEW/ERROR/BLACKLIST. Disabled by default.
-if [[ "${REPO_DISABLE_BY_STATUS:-0}" == "1" ]]; then
+if [[ "${REPO_DISABLE_BY_STATUS:-1}" == "1" ]]; then
   echo "[cron] repo-status-disable: audit_repo_disable_by_sheet_status.mjs --apply=1"
   node scripts/audit_repo_disable_by_sheet_status.mjs --apply=1 --json
 fi
@@ -115,7 +115,7 @@ if [[ -n "$BAD" ]]; then
   exit 2
 fi
 
-git add content/tools/*.md
+git add -A content/tools
 
 if git diff --cached --quiet; then
   echo "[cron] staged is empty -> nothing to commit"
