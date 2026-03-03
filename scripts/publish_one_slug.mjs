@@ -4,6 +4,11 @@ import path from "node:path";
 import process from "node:process";
 import { spawnSync } from "node:child_process";
 import { google } from "googleapis";
+import {
+  assertSafeStatusTransition,
+  getPublishGuardDecision,
+  REPO_DISABLE_SYNC_STATUSES,
+} from "./lib/publish_status_guards.mjs";
 
 const SPREADSHEET_ID =
   process.env.SPREADSHEET_ID || "1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ";
@@ -25,9 +30,13 @@ function runInherit(cmd, args) {
 function requireSlug() {
   const slug = String(process.argv[2] || "").trim();
   if (!slug) {
-    die("Usage: node scripts/publish_one_slug.mjs <slug>");
+    die("Usage: node scripts/publish_one_slug.mjs <slug> [--allow-needs-review]");
   }
   return slug;
+}
+
+function hasFlag(flag) {
+  return process.argv.slice(3).includes(flag);
 }
 
 async function sheetsClient() {
@@ -72,6 +81,35 @@ async function updateStatus(sheets, rowNumber, status, statusColIndex) {
   return cell;
 }
 
+async function safeSetStatus(
+  sheets,
+  rowNumber,
+  nextStatus,
+  statusColIndex,
+  currentStatus,
+) {
+  assertSafeStatusTransition(currentStatus, nextStatus);
+  return updateStatus(sheets, rowNumber, nextStatus, statusColIndex);
+}
+
+function syncDisabledMarkdown(slug, cwd) {
+  const contentDir = path.join(cwd, "content", "tools");
+  const activePath = path.join(contentDir, `${slug}.md`);
+  const disabledPath = path.join(contentDir, `_${slug}.md`);
+
+  if (!fs.existsSync(activePath)) {
+    return { changed: false, activePath, disabledPath, action: "noop" };
+  }
+
+  if (fs.existsSync(disabledPath)) {
+    fs.unlinkSync(activePath);
+    return { changed: true, activePath, disabledPath, action: "removed_active_duplicate" };
+  }
+
+  fs.renameSync(activePath, disabledPath);
+  return { changed: true, activePath, disabledPath, action: "renamed_to_disabled" };
+}
+
 function readRow(values, rowIndex, idx) {
   const row = values[rowIndex] || [];
   return {
@@ -90,6 +128,7 @@ function readRow(values, rowIndex, idx) {
 
 async function main() {
   const slug = requireSlug();
+  const allowNeedsReview = hasFlag("--allow-needs-review");
   const sheets = await sheetsClient();
 
   const res = await sheets.spreadsheets.values.get({
@@ -133,9 +172,48 @@ async function main() {
   const beforeStatus = tool.status || "";
   const tmpPath = `/tmp/utildesk_publish_one_${slug}.json`;
   const mdPath = path.join(process.cwd(), "content", "tools", `${slug}.md`);
+  const guard = getPublishGuardDecision(beforeStatus, { allowNeedsReview });
+  let currentStatus = beforeStatus;
+
+  if (guard.action === "skip_disabled_sync" || guard.action === "skip_needs_review") {
+    const syncResult = guard.syncDisabledRepo && REPO_DISABLE_SYNC_STATUSES.has(String(beforeStatus || "").trim().toUpperCase())
+      ? syncDisabledMarkdown(slug, process.cwd())
+      : { changed: false, action: "noop" };
+
+    console.log(
+      JSON.stringify(
+        {
+          ok: true,
+          skipped: true,
+          slug,
+          row_number: rowNumber,
+          status_before: beforeStatus,
+          status_after: beforeStatus,
+          guard_action: guard.action,
+          sync_result: syncResult,
+          message:
+            guard.action === "skip_disabled_sync"
+              ? "SKIP disabled/blacklist"
+              : "SKIP needs_review",
+        },
+        null,
+        2,
+      ),
+    );
+    process.exit(guard.exitCode);
+  }
 
   try {
-    await updateStatus(sheets, rowNumber, "IN_PROGRESS", idx.status);
+    if (guard.action === "publish") {
+      await safeSetStatus(
+        sheets,
+        rowNumber,
+        "IN_PROGRESS",
+        idx.status,
+        currentStatus,
+      );
+      currentStatus = "IN_PROGRESS";
+    }
     fs.writeFileSync(tmpPath, JSON.stringify(tool, null, 2) + "\n", "utf8");
 
     runInherit("node", ["scripts/generate_tool_md.mjs", tmpPath]);
@@ -146,7 +224,30 @@ async function main() {
       throw new Error(`Generated markdown not found: ${mdPath}`);
     }
 
-    await updateStatus(sheets, rowNumber, "DONE", idx.status);
+    if (guard.action === "local_rebuild_only") {
+      const syncResult = syncDisabledMarkdown(slug, process.cwd());
+      console.log(
+        JSON.stringify(
+          {
+            ok: true,
+            slug,
+            row_number: rowNumber,
+            status_before: beforeStatus,
+            status_after: beforeStatus,
+            guard_action: guard.action,
+            sync_result: syncResult,
+            md_path: syncResult.disabledPath,
+            message: "REBUILT needs_review locally without status transition",
+          },
+          null,
+          2,
+        ),
+      );
+      return;
+    }
+
+    await safeSetStatus(sheets, rowNumber, "DONE", idx.status, currentStatus);
+    currentStatus = "DONE";
     runInherit("node", [
       "scripts/normalize_alternatives_links.mjs",
       "--changed-slug",
@@ -169,7 +270,9 @@ async function main() {
       ),
     );
   } catch (e) {
-    await updateStatus(sheets, rowNumber, "ERROR", idx.status);
+    if (guard.allowStatusWrite) {
+      await safeSetStatus(sheets, rowNumber, "ERROR", idx.status, currentStatus);
+    }
     throw e;
   } finally {
     if (fs.existsSync(tmpPath)) fs.unlinkSync(tmpPath);
