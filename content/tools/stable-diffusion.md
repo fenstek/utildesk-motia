@@ -61,7 +61,7 @@ Stable Diffusion wird in der Regel als Freemium-Modell angeboten. Das bedeutet, 
 - [Midjourney](/tools/midjourney/): ** Beliebter KI-Bildgenerator mit besonderem Augenmerk auf künstlerische Stile.
 - [Artbreeder](/tools/artbreeder/): ** Plattform zur Kombination und Bearbeitung von Bildern mittels KI.
 - **Runway ML:** Bietet verschiedene KI-Tools für kreative Projekte, inklusive Bildgenerierung.
-- **Deep Dream Generator:** Älteres Tool für KI-basierte Bildverfremdungen und -kreationen.
+- [Deep Dream Generator](/tools/deep-dream-generator/): Älteres Tool für KI-basierte Bildverfremdungen und -kreationen.
 ## FAQ
 
 **1. Was ist Stable Diffusion?**  

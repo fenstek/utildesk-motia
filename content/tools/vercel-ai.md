@@ -47,10 +47,10 @@ Die Preisgestaltung für das Vercel AI SDK ist abhängig vom jeweiligen Vercel-H
 
 ## Alternativen zu Vercel AI SDK
 
-- **OpenAI API:** Bietet umfangreiche KI-Modelle für natürliche Sprachverarbeitung und mehr, mit breiter Plattformunterstützung.
-- **Hugging Face Transformers:** Open-Source-Bibliothek mit vielen vortrainierten Modellen, flexibel einsetzbar.
+- [OpenAI API](/tools/openai-api/): Bietet umfangreiche KI-Modelle für natürliche Sprachverarbeitung und mehr, mit breiter Plattformunterstützung.
+- [Hugging Face Transformers](/tools/hugging-face-transformers/): Open-Source-Bibliothek mit vielen vortrainierten Modellen, flexibel einsetzbar.
 - **Google Cloud AI Platform:** Umfassende KI-Services mit starker Integration in Google Cloud Infrastruktur.
-- **Microsoft Azure Cognitive Services:** KI-Tools für verschiedene Anwendungsbereiche, gut skalierbar.
+- [Microsoft Azure Cognitive Services](/tools/microsoft-azure-cognitive-services/): KI-Tools für verschiedene Anwendungsbereiche, gut skalierbar.
 - **AWS AI Services:** Amazon bietet eine Vielzahl von KI-Diensten mit globaler Infrastruktur und Integration.
 
 ## FAQ

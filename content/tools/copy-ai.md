@@ -68,11 +68,11 @@ Genauere Informationen zu den aktuellen Preisen und Plänen finden sich auf der 
 
 ## Alternativen zu Copy.ai
 
-- **Writesonic:** KI-Textgenerator mit Fokus auf Marketing- und Werbeinhalte, ebenfalls mit Freemium-Modell.
+- [Writesonic](/tools/writesonic/): KI-Textgenerator mit Fokus auf Marketing- und Werbeinhalte, ebenfalls mit Freemium-Modell.
 - **Jasper (ehemals Jarvis):** Umfangreiches KI-Tool für kreative Texte und Content-Marketing, mit verschiedenen Preisstufen.
-- **Rytr:** Einsteigerfreundliche KI-Schreibassistenz mit günstigen Tarifen und vielfältigen Anwendungsfällen.
-- **TextCortex:** KI-Tool für schnelles Erstellen von Texten, besonders geeignet für E-Commerce und Social Media.
-- **Peppertype.ai:** Intuitive Plattform für automatisierte Textproduktion in Marketing und Vertrieb.
+- [Rytr](/tools/rytr/): Einsteigerfreundliche KI-Schreibassistenz mit günstigen Tarifen und vielfältigen Anwendungsfällen.
+- [TextCortex](/tools/textcortex/): KI-Tool für schnelles Erstellen von Texten, besonders geeignet für E-Commerce und Social Media.
+- [Peppertype.ai](/tools/peppertype-ai/): Intuitive Plattform für automatisierte Textproduktion in Marketing und Vertrieb.
 
 ## FAQ
 

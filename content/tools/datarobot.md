@@ -54,7 +54,7 @@ DataRobot bietet verschiedene Preispläne, die sich nach dem Funktionsumfang, de
 
 - **H2O.ai:** Open-Source-Plattform für automatisiertes maschinelles Lernen mit großem Funktionsumfang.
 - **Google Cloud AutoML:** Cloudbasierte AutoML-Lösungen von Google, gut integriert in die Google Cloud.
-- **Microsoft Azure Machine Learning:** Umfassende KI-Plattform mit breiter Integration in Microsoft-Ökosystem.
+- [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Umfassende KI-Plattform mit breiter Integration in Microsoft-Ökosystem.
 - **Amazon SageMaker:** AWS-Service zur schnellen Entwicklung und Bereitstellung von ML-Modellen.
 - **RapidMiner:** Plattform für Data Science und maschinelles Lernen mit Fokus auf Benutzerfreundlichkeit.
 

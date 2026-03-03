@@ -56,11 +56,11 @@ Die Preisgestaltung bei DeepInfra hängt in der Regel vom gewählten Plan und de
 
 ## Alternativen zu DeepInfra
 
-- **AWS SageMaker:** Umfangreiche AI-Plattform von Amazon mit integrierten Tools für Modelltraining und Deployment.
+- [AWS SageMaker](/tools/aws-sagemaker/): Umfangreiche AI-Plattform von Amazon mit integrierten Tools für Modelltraining und Deployment.
 - **Google AI Platform:** Skalierbare Infrastruktur von Google für Machine Learning und KI-Anwendungen.
-- **Microsoft Azure Machine Learning:** Cloudbasierte Lösung mit vielfältigen Tools zur Entwicklung und Verwaltung von KI-Modellen.
+- [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Cloudbasierte Lösung mit vielfältigen Tools zur Entwicklung und Verwaltung von KI-Modellen.
 - **Paperspace:** Cloud-Computing-Plattform mit Fokus auf GPU-basiertes Deep Learning.
-- **IBM Watson Studio:** Plattform für KI-Entwicklung mit umfangreichen Analyse- und Modellierungsfunktionen.
+- [IBM Watson Studio](/tools/ibm-watson-studio/): Plattform für KI-Entwicklung mit umfangreichen Analyse- und Modellierungsfunktionen.
 
 ## FAQ
 

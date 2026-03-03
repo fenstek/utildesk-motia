@@ -56,7 +56,7 @@ Phrase bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenlos 
 ## Alternativen zu Phrase
 
 - **Smartling:** Eine umfassende Plattform für Translation Management mit starken Automatisierungs- und Workflow-Optionen.
-- **Crowdin:** Cloud-basierte Lösung für Softwarelokalisierung mit umfangreichen Integrationen.
+- [Crowdin](/tools/crowdin/): Cloud-basierte Lösung für Softwarelokalisierung mit umfangreichen Integrationen.
 - **Lokalise:** Fokus auf Entwicklerfreundlichkeit und API-gestützte Übersetzungsprozesse.
 - **Memsource:** KI-unterstütztes Translation Management System mit flexiblen Preismodellen.
 - **Transifex:** Plattform für kontinuierliche Lokalisierung mit kollaborativen Funktionen.

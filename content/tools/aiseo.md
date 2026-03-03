@@ -49,11 +49,11 @@ AISEO bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenlos g
 
 ## Alternativen zu AISEO
 
-- **Surfer SEO**: Ein Tool zur On-Page-Optimierung mit datengetriebenen Empfehlungen.  
-- **Clearscope**: Fokus auf Content-Optimierung durch Keyword-Analyse und Wettbewerbsvergleich.  
-- **Frase**: KI-gestützte Content-Erstellung und SEO-Optimierung mit Fokus auf Nutzerfragen.  
-- **SEMrush**: Umfangreiche SEO-Suite mit vielen Tools für Analyse und Content-Marketing.  
-- **Rytr**: KI-Textgenerator für verschiedene Anwendungsfälle, inklusive SEO-Content.
+- [Surfer SEO](/tools/surfer-seo/): Ein Tool zur On-Page-Optimierung mit datengetriebenen Empfehlungen.  
+- [Clearscope](/tools/clearscope/): Fokus auf Content-Optimierung durch Keyword-Analyse und Wettbewerbsvergleich.  
+- [Frase](/tools/frase/): KI-gestützte Content-Erstellung und SEO-Optimierung mit Fokus auf Nutzerfragen.  
+- [SEMrush](/tools/semrush/): Umfangreiche SEO-Suite mit vielen Tools für Analyse und Content-Marketing.  
+- [Rytr](/tools/rytr/): KI-Textgenerator für verschiedene Anwendungsfälle, inklusive SEO-Content.
 
 ## FAQ
 

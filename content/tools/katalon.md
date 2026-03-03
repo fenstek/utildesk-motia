@@ -65,7 +65,7 @@ Katalon bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenfre
 - **Selenium:** Open-Source-Testautomatisierungsframework, stark bei Webtests, erfordert Programmierkenntnisse.
 - **TestComplete:** Kommerzielle Lösung mit breiter Plattformunterstützung und benutzerfreundlicher Oberfläche.
 - **Ranorex:** Testautomatisierungstool mit Fokus auf Desktop- und Mobile-Apps, bietet ebenfalls eine GUI-basierte Testentwicklung.
-- **Postman:** Speziell für API-Tests entwickelt, mit umfangreichen Automatisierungs- und Kollaborationsfunktionen.
+- [Postman](/tools/postman/): Speziell für API-Tests entwickelt, mit umfangreichen Automatisierungs- und Kollaborationsfunktionen.
 - **Appium:** Open-Source-Tool für Mobile-Testautomatisierung, unterstützt iOS und Android.
 
 ## FAQ

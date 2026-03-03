@@ -65,11 +65,11 @@ Die genauen Preise variieren je nach Anbieter und gewähltem Plan. Für aktuelle
 
 ## Alternativen zu Descript
 
-- **Adobe Premiere Pro:** Professionelle Videobearbeitung mit umfangreichen Funktionen, jedoch ohne automatische Transkription.
-- **Otter.ai:** Spezialisierte Transkriptionssoftware mit kollaborativen Funktionen, weniger Fokus auf Videoschnitt.
-- **Camtasia:** Screen-Recording und Videobearbeitung, gut für Tutorials, jedoch ohne KI-gestützte Transkription.
-- **Kapwing:** Online-Videobearbeitung mit Untertitel-Generator, einfacher Workflow, aber weniger fortgeschrittene KI-Funktionen.
-- **Audacity:** Kostenlose Audioaufnahme und -bearbeitung, keine integrierte Transkription oder Video-Features.
+- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): Professionelle Videobearbeitung mit umfangreichen Funktionen, jedoch ohne automatische Transkription.
+- [Otter.ai](/tools/otter-ai/): Spezialisierte Transkriptionssoftware mit kollaborativen Funktionen, weniger Fokus auf Videoschnitt.
+- [Camtasia](/tools/camtasia/): Screen-Recording und Videobearbeitung, gut für Tutorials, jedoch ohne KI-gestützte Transkription.
+- [Kapwing](/tools/kapwing/): Online-Videobearbeitung mit Untertitel-Generator, einfacher Workflow, aber weniger fortgeschrittene KI-Funktionen.
+- [Audacity](/tools/audacity/): Kostenlose Audioaufnahme und -bearbeitung, keine integrierte Transkription oder Video-Features.
 
 ## FAQ
 

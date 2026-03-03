@@ -53,11 +53,11 @@ DeepArt.io bietet ein Freemium-Modell an. Die Basisversion ermöglicht das Erste
 
 ## Alternativen zu DeepArt.io
 
-- **Prisma:** Eine beliebte App zur Umwandlung von Fotos in Kunstwerke mit diversen Filtern und Stilen.
-- **Artbreeder:** Plattform zur kreativen Bildgenerierung und Stilmodifikation mithilfe von KI.
+- [Prisma](/tools/prisma/): Eine beliebte App zur Umwandlung von Fotos in Kunstwerke mit diversen Filtern und Stilen.
+- [Artbreeder](/tools/artbreeder/): Plattform zur kreativen Bildgenerierung und Stilmodifikation mithilfe von KI.
 - **Runway ML:** KI-Tool mit zusätzlichen Funktionen für kreative Bild- und Videobearbeitung.
 - **Painnt:** App mit umfangreichen künstlerischen Filtern und hoher Anpassbarkeit.
-- **Deep Dream Generator:** Ähnlich wie DeepArt.io, fokussiert auf surreale und künstlerische Bildtransformationen.
+- [Deep Dream Generator](/tools/deep-dream-generator/): Ähnlich wie DeepArt.io, fokussiert auf surreale und künstlerische Bildtransformationen.
 
 ## FAQ
 

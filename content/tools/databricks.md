@@ -52,7 +52,7 @@ Die Preisgestaltung von Databricks ist abhängig vom gewählten Cloud-Anbieter, 
 
 - **Apache Spark:** Open-Source-Framework für verteilte Datenverarbeitung, auf dem Databricks basiert.
 - **Google Cloud AI Platform:** Cloudbasierte Lösung für Machine Learning und Datenanalyse mit umfassender Integration.
-- **AWS SageMaker:** Amazon-Dienst zur Entwicklung, Schulung und Bereitstellung von ML-Modellen.
+- [AWS SageMaker](/tools/aws-sagemaker/): Amazon-Dienst zur Entwicklung, Schulung und Bereitstellung von ML-Modellen.
 - **Azure Synapse Analytics:** Microsofts Plattform für Big Data und Analysen mit integrierten KI-Funktionen.
 - **Dataiku:** Plattform für kollaborative Datenwissenschaft und Automatisierung von Datenpipelines.
 

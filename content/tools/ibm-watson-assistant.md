@@ -66,10 +66,10 @@ Für genaue Preisinformationen empfiehlt es sich, die offizielle IBM-Website zu 
 ## Alternativen zu IBM Watson Assistant
 
 - **Google Dialogflow:** KI-basierte Plattform zur Erstellung von Chatbots mit starker Google Cloud-Integration.
-- **Microsoft Bot Framework:** Umfangreiche Tools und SDKs für die Entwicklung von Chatbots in Microsoft-Umgebungen.
-- **Amazon Lex:** AWS-Service zur Erstellung von sprach- und textbasierten Chatbots mit tiefer Integration in AWS.
-- **Rasa:** Open-Source-Plattform für individuelle, on-premises Chatbot-Lösungen.
-- **Dialogflow CX:** Erweiterte Version von Dialogflow für komplexere Anwendungsfälle und Unternehmenseinsatz.
+- [Microsoft Bot Framework](/tools/microsoft-bot-framework/): Umfangreiche Tools und SDKs für die Entwicklung von Chatbots in Microsoft-Umgebungen.
+- [Amazon Lex](/tools/amazon-lex/): AWS-Service zur Erstellung von sprach- und textbasierten Chatbots mit tiefer Integration in AWS.
+- [Rasa](/tools/rasa/): Open-Source-Plattform für individuelle, on-premises Chatbot-Lösungen.
+- [Dialogflow CX](/tools/dialogflow-cx/): Erweiterte Version von Dialogflow für komplexere Anwendungsfälle und Unternehmenseinsatz.
 
 ## FAQ
 

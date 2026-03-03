@@ -59,11 +59,11 @@ Consensus bietet ein Freemium-Modell an, das es Nutzern ermöglicht, grundlegend
 
 ## Alternativen zu Consensus
 
-- **Elicit**: KI-gestützte Forschungsassistenz, die wissenschaftliche Literatur analysiert und zusammenfasst.
-- **Research Rabbit**: Visualisierung und Exploration von Forschungsliteratur mit KI-Unterstützung.
-- **Semantic Scholar**: Wissenschaftliche Suchmaschine mit KI-gestützter Analyse und Empfehlungen.
-- **Zamzar AI**: Automatisierte Zusammenfassung und Verarbeitung von Dokumenten, inklusive Forschungstexten.
-- **Scite**: Plattform zur Bewertung der Glaubwürdigkeit wissenschaftlicher Studien durch Zitationsanalysen.
+- [Elicit](/tools/elicit/): KI-gestützte Forschungsassistenz, die wissenschaftliche Literatur analysiert und zusammenfasst.
+- [Research Rabbit](/tools/research-rabbit/): Visualisierung und Exploration von Forschungsliteratur mit KI-Unterstützung.
+- [Semantic Scholar](/tools/semantic-scholar/): Wissenschaftliche Suchmaschine mit KI-gestützter Analyse und Empfehlungen.
+- [Zamzar AI](/tools/zamzar-ai/): Automatisierte Zusammenfassung und Verarbeitung von Dokumenten, inklusive Forschungstexten.
+- [Scite](/tools/scite/): Plattform zur Bewertung der Glaubwürdigkeit wissenschaftlicher Studien durch Zitationsanalysen.
 
 ## FAQ
 

@@ -70,11 +70,11 @@ Detaillierte Preisübersichten und aktuelle Konditionen finden sich auf der offi
 
 ## Alternativen zu Dialogflow
 
-- **Microsoft Bot Framework:** Umfangreiche Plattform zur Erstellung und Verwaltung von Chatbots mit Integration in Microsoft Azure  
-- **IBM Watson Assistant:** KI-basierte Lösung mit Fokus auf natürliche Sprache und Unternehmensanwendungen  
-- **Rasa:** Open-Source-Framework für individuelle und lokal gehostete Chatbots mit hoher Anpassbarkeit  
-- **Amazon Lex:** AWS-Service zur Entwicklung von Sprach- und Text-Chatbots mit automatischer Spracherkennung  
-- **Chatfuel:** Benutzerfreundliche Plattform speziell für Facebook Messenger Bots ohne Programmierkenntnisse  
+- [Microsoft Bot Framework](/tools/microsoft-bot-framework/): Umfangreiche Plattform zur Erstellung und Verwaltung von Chatbots mit Integration in Microsoft Azure  
+- [IBM Watson Assistant](/tools/ibm-watson-assistant/): KI-basierte Lösung mit Fokus auf natürliche Sprache und Unternehmensanwendungen  
+- [Rasa](/tools/rasa/): Open-Source-Framework für individuelle und lokal gehostete Chatbots mit hoher Anpassbarkeit  
+- [Amazon Lex](/tools/amazon-lex/): AWS-Service zur Entwicklung von Sprach- und Text-Chatbots mit automatischer Spracherkennung  
+- [Chatfuel](/tools/chatfuel/): Benutzerfreundliche Plattform speziell für Facebook Messenger Bots ohne Programmierkenntnisse  
 
 ## FAQ
 

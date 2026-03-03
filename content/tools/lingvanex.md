@@ -69,9 +69,9 @@ Details zu den aktuellen Preisen und Paketen finden Sie auf der offiziellen Webs
 
 ## Alternativen zu LingvaNex
 
-- **DeepL:** Bekannt für hohe Übersetzungsqualität, besonders bei europäischen Sprachen.
+- [DeepL](/tools/deepl/): Bekannt für hohe Übersetzungsqualität, besonders bei europäischen Sprachen.
 - **Google Übersetzer:** Weit verbreitet, unterstützt viele Sprachen und bietet diverse Zusatzfunktionen.
-- **Microsoft Translator:** Integration in Microsoft-Produkte und vielfältige Plattformen.
+- [Microsoft Translator](/tools/microsoft-translator/): Integration in Microsoft-Produkte und vielfältige Plattformen.
 - **Reverso:** Fokus auf kontextuelle Übersetzungen und Sprachlernfunktionen.
 - **iTranslate:** Mobile App mit Spracherkennung und Offline-Modus.
 

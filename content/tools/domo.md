@@ -64,11 +64,11 @@ Domo bietet ein Freemium-Modell, das es ermöglicht, die Plattform kostenfrei mi
 
 ## Alternativen zu Domo
 
-- **Tableau:** Leistungsstarke Datenvisualisierungssoftware mit umfangreichen Analysefunktionen
-- **Power BI:** Microsofts Business-Intelligence-Tool mit guter Integration in Office-365-Umgebungen
-- **Looker:** Cloud-basierte Plattform für Datenanalysen und Business Intelligence
-- **Qlik Sense:** Plattform mit Fokus auf assoziative Datenmodellierung und interaktive Dashboards
-- **Sisense:** BI-Lösung mit starker Datenintegration und eingebetteten Analysen
+- [Tableau](/tools/tableau/): Leistungsstarke Datenvisualisierungssoftware mit umfangreichen Analysefunktionen
+- [Power BI](/tools/power-bi/): Microsofts Business-Intelligence-Tool mit guter Integration in Office-365-Umgebungen
+- [Looker](/tools/looker/): Cloud-basierte Plattform für Datenanalysen und Business Intelligence
+- [Qlik Sense](/tools/qlik-sense/): Plattform mit Fokus auf assoziative Datenmodellierung und interaktive Dashboards
+- [Sisense](/tools/sisense/): BI-Lösung mit starker Datenintegration und eingebetteten Analysen
 
 ## FAQ
 

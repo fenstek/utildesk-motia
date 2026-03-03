@@ -56,9 +56,9 @@ Speechmatics bietet ein Freemium-Modell, das es erlaubt, den Service mit einem b
 ## Alternativen zu Speechmatics
 
 - **Google Cloud Speech-to-Text:** Eine weit verbreitete ASR-Lösung mit breiter Sprachunterstützung und starker Integration in Google-Dienste.
-- **IBM Watson Speech to Text:** Bietet umfangreiche Anpassungsmöglichkeiten und ist besonders im Enterprise-Umfeld beliebt.
+- [IBM Watson Speech to Text](/tools/ibm-watson-speech-to-text/): Bietet umfangreiche Anpassungsmöglichkeiten und ist besonders im Enterprise-Umfeld beliebt.
 - **Microsoft Azure Speech Services:** Umfasst Spracherkennung, Übersetzung und Sprachsynthese mit hoher Skalierbarkeit.
-- **Otter.ai:** Fokus auf Meeting-Transkriptionen mit kollaborativen Funktionen.
+- [Otter.ai](/tools/otter-ai/): Fokus auf Meeting-Transkriptionen mit kollaborativen Funktionen.
 - **Rev.ai:** Bietet Transkriptionsdienste mit menschlicher Nachbearbeitung für höhere Genauigkeit.
 
 ## FAQ

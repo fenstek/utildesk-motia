@@ -66,11 +66,11 @@ Detaillierte Preisgestaltung ist auf den jeweiligen Plattformen oder bei OpenAI 
 
 ## Alternativen zu OpenAI GPT
 
-- **Google PaLM:** Ein weiteres großes Sprachmodell mit umfangreichen Funktionen und Integration in Google-Dienste.
+- [Google PaLM](/tools/google-palm/): Ein weiteres großes Sprachmodell mit umfangreichen Funktionen und Integration in Google-Dienste.
 - **Anthropic Claude:** KI-Modell mit Fokus auf Sicherheit und ethische Nutzung.
-- **Cohere:** Bietet KI-gestützte Sprachtools mit Schwerpunkt auf Entwicklerfreundlichkeit.
-- **Microsoft Azure OpenAI Service:** Ermöglicht Zugriff auf OpenAI-Modelle über Azure mit zusätzlichen Unternehmensfeatures.
-- **Hugging Face Transformers:** Open-Source-Modelle und Plattform für KI-Entwicklung und -Experimentieren.
+- [Cohere](/tools/cohere/): Bietet KI-gestützte Sprachtools mit Schwerpunkt auf Entwicklerfreundlichkeit.
+- [Microsoft Azure OpenAI Service](/tools/microsoft-azure-openai-service/): Ermöglicht Zugriff auf OpenAI-Modelle über Azure mit zusätzlichen Unternehmensfeatures.
+- [Hugging Face Transformers](/tools/hugging-face-transformers/): Open-Source-Modelle und Plattform für KI-Entwicklung und -Experimentieren.
 
 ## FAQ
 

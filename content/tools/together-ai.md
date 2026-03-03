@@ -49,9 +49,9 @@ Die Preisgestaltung von Together AI variiert je nach Anbieter und gewähltem Pla
 ## Alternativen zu Together AI
 
 - **Google AI Platform:** Umfangreiche KI-Infrastruktur mit Integration in die Google Cloud.
-- **AWS SageMaker:** Cloud-basierte Plattform für Entwicklung und Deployment von ML-Modellen.
-- **Microsoft Azure Machine Learning:** Skalierbare Infrastruktur mit umfangreichen Tools und Services.
-- **Paperspace Gradient:** Einfach zu nutzende Plattform für KI-Entwicklung mit GPU-Unterstützung.
+- [AWS SageMaker](/tools/aws-sagemaker/): Cloud-basierte Plattform für Entwicklung und Deployment von ML-Modellen.
+- [Microsoft Azure Machine Learning](/tools/microsoft-azure-machine-learning/): Skalierbare Infrastruktur mit umfangreichen Tools und Services.
+- [Paperspace Gradient](/tools/paperspace-gradient/): Einfach zu nutzende Plattform für KI-Entwicklung mit GPU-Unterstützung.
 - **Weights & Biases:** Fokus auf Modelltracking und Kollaboration für Machine Learning Teams.
 
 ## FAQ

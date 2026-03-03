@@ -57,10 +57,10 @@ Wordtune bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenlo
 
 ## Alternativen zu Wordtune
 
-- **Grammarly:** Ein umfassendes Tool zur Rechtschreib- und Stilprüfung mit zusätzlichen Funktionen für Textverbesserungen und Tonalitätsanpassungen.
-- **QuillBot:** Ein Paraphrasierungstool mit verschiedenen Modi zur Umformulierung und Verbesserung von Texten.
+- [Grammarly](/tools/grammarly/): Ein umfassendes Tool zur Rechtschreib- und Stilprüfung mit zusätzlichen Funktionen für Textverbesserungen und Tonalitätsanpassungen.
+- [QuillBot](/tools/quillbot/): Ein Paraphrasierungstool mit verschiedenen Modi zur Umformulierung und Verbesserung von Texten.
 - **ProWritingAid:** Ein umfassendes Schreibassistenz-Tool mit Fokus auf Grammatik, Stil und Struktur.
-- **Slick Write:** Kostenloses Tool zur schnellen Überprüfung von Grammatik und Stil.
+- [Slick Write](/tools/slick-write/): Kostenloses Tool zur schnellen Überprüfung von Grammatik und Stil.
 - **Ginger Software:** Bietet Übersetzungen, Grammatik- und Rechtschreibprüfung sowie Textumformulierung.
 
 ## FAQ

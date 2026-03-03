@@ -62,11 +62,11 @@ Die genauen Preise sollten direkt auf der offiziellen Webseite geprüft werden.
 
 ## Alternativen zu Figma
 
-- **Adobe XD:** Ebenfalls ein Tool für UX/UI-Design mit Prototyping-Funktionen, Teil der Adobe Creative Cloud.
-- **Sketch:** Beliebtes Design-Tool für macOS, stark auf Vektorgrafiken und UI-Design spezialisiert.
+- [Adobe XD](/tools/adobe-xd/): Ebenfalls ein Tool für UX/UI-Design mit Prototyping-Funktionen, Teil der Adobe Creative Cloud.
+- [Sketch](/tools/sketch/): Beliebtes Design-Tool für macOS, stark auf Vektorgrafiken und UI-Design spezialisiert.
 - **InVision:** Plattform für Prototyping und Zusammenarbeit, oft in Kombination mit anderen Design-Tools genutzt.
-- **Framer:** Fokus auf interaktive Prototypen mit Code-Integration und Animationen.
-- **Canva:** Einfachere Designplattform, die sich eher an Einsteiger und Marketingteams richtet, weniger spezialisiert auf UI/UX.
+- [Framer](/tools/framer/): Fokus auf interaktive Prototypen mit Code-Integration und Animationen.
+- [Canva](/tools/canva/): Einfachere Designplattform, die sich eher an Einsteiger und Marketingteams richtet, weniger spezialisiert auf UI/UX.
 
 ## FAQ
 

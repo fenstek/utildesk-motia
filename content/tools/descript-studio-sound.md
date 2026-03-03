@@ -63,11 +63,11 @@ Für detaillierte und aktuelle Preise empfiehlt es sich, die offizielle Webseite
 
 ## Alternativen zu Descript Studio Sound
 
-- **Adobe Enhance Speech:** Ein KI-Tool von Adobe zur automatischen Verbesserung von Sprachaufnahmen.
-- **Krisp:** Software zur Rauschunterdrückung bei Echtzeitkommunikation und Aufnahmen.
-- **Auphonic:** Online-Dienst zur automatischen Audiobearbeitung und Normalisierung.
+- [Adobe Enhance Speech](/tools/adobe-enhance-speech/): Ein KI-Tool von Adobe zur automatischen Verbesserung von Sprachaufnahmen.
+- [Krisp](/tools/krisp/): Software zur Rauschunterdrückung bei Echtzeitkommunikation und Aufnahmen.
+- [Auphonic](/tools/auphonic/): Online-Dienst zur automatischen Audiobearbeitung und Normalisierung.
 - **iZotope RX:** Professionelle Audioreparatur-Software mit umfangreichen Funktionen.
-- **Cleanvoice AI:** KI-gestützte Plattform zur Entfernung von Füllwörtern, Geräuschen und zur Klangverbesserung.
+- [Cleanvoice AI](/tools/cleanvoice-ai/): KI-gestützte Plattform zur Entfernung von Füllwörtern, Geräuschen und zur Klangverbesserung.
 
 ## FAQ
 
