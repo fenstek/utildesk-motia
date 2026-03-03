@@ -71,7 +71,7 @@ Die genauen Preise variieren je nach Anbieter und aktuellem Tarifangebot. Es emp
 - **Appgyver:** Kostenloser No-Code-Builder mit breitem Funktionsumfang und nativen App-Exporten.
 - [Thunkable](/tools/thunkable/): Plattform zur Erstellung von mobilen Apps mit Drag-and-Drop und nativer Veröffentlichung.
 - [Glide](/tools/glide/): Einfaches Tool zur App-Erstellung basierend auf Google Sheets als Datenquelle.
-- **OutSystems:** Low-Code-Plattform für Unternehmen mit Fokus auf professionelle App-Entwicklung.
+- [OutSystems](/tools/outsystems/): Low-Code-Plattform für Unternehmen mit Fokus auf professionelle App-Entwicklung.
 
 ## FAQ
 

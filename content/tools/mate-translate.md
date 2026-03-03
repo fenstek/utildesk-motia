@@ -68,7 +68,7 @@ Für genaue Informationen empfiehlt es sich, die offizielle Webseite oder Anbiet
 - [DeepL](/tools/deepl/): Bekannt für besonders natürliche Übersetzungen, besonders im europäischen Sprachraum.
 - [Microsoft Translator](/tools/microsoft-translator/): Integriert in Microsoft-Produkte, bietet Echtzeit-Übersetzungen und Kollaborationsfunktionen.
 - [Linguee](/tools/linguee/): Kombination aus Wörterbuch und Übersetzungshilfe mit Beispielsätzen aus echten Texten.
-- **Reverso:** Übersetzungs- und Lernplattform mit Kontextbeispielen und Grammatikhilfen.
+- [Reverso](/tools/reverso/): Übersetzungs- und Lernplattform mit Kontextbeispielen und Grammatikhilfen.
 
 ## FAQ
 

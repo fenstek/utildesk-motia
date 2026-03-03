@@ -59,10 +59,10 @@ Für genaue Preise empfiehlt es sich, die offizielle Website von Pons zu besuche
 
 ## Alternativen zu Pons
 
-- **DeepL:** Hochwertige KI-Übersetzungen mit Fokus auf Genauigkeit und Kontext.
+- [DeepL](/tools/deepl/): Hochwertige KI-Übersetzungen mit Fokus auf Genauigkeit und Kontext.
 - **Google Übersetzer:** Umfangreiches Sprachangebot und einfache Integration.
-- **Linguee:** Wörterbuch und Übersetzung mit vielen Beispielsätzen.
-- **Reverso:** Übersetzung und Sprachlernplattform mit zusätzlichen Funktionen.
+- [Linguee](/tools/linguee/): Wörterbuch und Übersetzung mit vielen Beispielsätzen.
+- [Reverso](/tools/reverso/): Übersetzung und Sprachlernplattform mit zusätzlichen Funktionen.
 - **Babbel:** Schwerpunkt auf Sprachkurse und interaktives Lernen.
 
 ## FAQ

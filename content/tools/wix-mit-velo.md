@@ -59,9 +59,9 @@ Die Preisgestaltung von Wix mit Velo hängt vom gewählten Wix-Plan ab. Grundsä
 
 ## Alternativen zu Wix mit Velo
 
-- **Webflow:** Visueller Webdesigner mit CMS und Custom-Code-Optionen.
-- **Bubble:** No-Code-Plattform für komplexe Webanwendungen mit Workflow-Automatisierung.
-- **OutSystems:** Low-Code-Plattform für Enterprise-Anwendungen.
+- [Webflow](/tools/webflow/): Visueller Webdesigner mit CMS und Custom-Code-Optionen.
+- [Bubble](/tools/bubble/): No-Code-Plattform für komplexe Webanwendungen mit Workflow-Automatisierung.
+- [OutSystems](/tools/outsystems/): Low-Code-Plattform für Enterprise-Anwendungen.
 - **WordPress mit Elementor und Custom Code:** Flexibles CMS mit visueller Gestaltung und Erweiterbarkeit.
 - **Shopify mit Liquid-Programmierung:** Für E-Commerce-Anwendungen mit individualisierbarem Code.
 

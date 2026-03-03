@@ -47,7 +47,7 @@ SHAP ist als Open-Source-Projekt unter der MIT-Lizenz frei verfügbar. Es fallen
 
 ## Alternativen zu SHAP
 
-- **LIME (Local Interpretable Model-agnostic Explanations):** Ebenfalls ein beliebtes Tool zur Modellinterpretation mit Fokus auf lokale Erklärungen.
+- [LIME (Local Interpretable Model-agnostic Explanations)](/tools/lime/): Ebenfalls ein beliebtes Tool zur Modellinterpretation mit Fokus auf lokale Erklärungen.
 - **ELI5:** Python-Bibliothek, die Erklärungen für verschiedene Modelle bietet, darunter einfache Visualisierungen.
 - **InterpretML:** Microsofts Open-Source-Toolkit für interpretierbare ML-Modelle mit verschiedenen Erklärungsansätzen.
 - **Anchors:** Erweiterung von LIME, die präzisere und stabilere lokale Erklärungen ermöglicht.
