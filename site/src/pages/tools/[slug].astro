@@ -1,36 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
-import matter from "gray-matter";
 import { marked } from "marked";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { CATEGORIES } from "../../lib/categories";
+import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 
 export async function getStaticPaths() {
-  const toolsDir = join(process.cwd(), "content", "tools");
-  const files = (await readdir(toolsDir))
-    .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
-
-  const paths = await Promise.all(
-    files.map(async (file) => {
-      const raw = await readFile(join(toolsDir, file), "utf-8");
-      const { data } = matter(raw);
-      const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
-      if (disabled) return null;
-      const slug = String(data.slug ?? file.replace(/\.md$/, ""));
-      return { params: { slug } };
-    })
-  );
-
-  return paths.filter(Boolean);
+  const entries = await listActiveToolEntries();
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { slug } = Astro.params;
-
-const filePath = join(process.cwd(), "content", "tools", `${slug}.md`);
-const raw = await readFile(filePath, "utf-8");
-const { data, content } = matter(raw);
+const { entry } = Astro.props;
+const { data, content } = entry;
 
 const official_url = data.official_url ? String(data.official_url) : "";
 const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
@@ -199,36 +184,29 @@ const rawAltItems: string[] = altSection
   : [];
 
 // ── Load all tool metadata (for matching + rendering) ──────────────────────
-const toolsDir = join(process.cwd(), "content", "tools");
-const allTools = await Promise.all(
-  (await readdir(toolsDir))
-    .filter((f) => f.endsWith(".md") && !f.startsWith("_"))
-    .map(async (file) => {
-      const { data: d, content: c } = matter(await readFile(join(toolsDir, file), "utf-8"));
-      const s = String(d.slug ?? file.replace(/\.md$/, ""));
-      const t = String(d.title ?? s);
-      const cat = d.category ? String(d.category) : null;
-      const pm = d.price_model ? String(d.price_model) : null;
-      const bLogo = d.brandLogo ? String(d.brandLogo) : null;
-      const pUrl = d.affiliate_url ? String(d.affiliate_url) : d.official_url ? String(d.official_url) : null;
-      const tgs = Array.isArray(d.tags) ? d.tags.map(String) : [];
-      const disabled = d.disabled === true || String(d.disabled || "").toLowerCase() === "true";
-      const desc = d.description ? String(d.description)
-        : d.summary ? String(d.summary)
-        : d.excerpt ? String(d.excerpt)
-        : d.tagline ? String(d.tagline)
-        : "";
-      const localAltLogo = resolveLocalLogo(s);
-      const faviconAltLogo = faviconFrom(pUrl);
-      return {
-        slug: s, title: t, category: cat, price_model: pm,
-        iconUrl: bLogo || localAltLogo || faviconAltLogo, tags: tgs,
-        excerpt: desc || getExcerpt(c),
-        fallbackIcon: iconType(cat, tgs),
-        disabled,
-      };
-    })
-);
+const allTools = (await listActiveToolEntries()).map(({ slug: s, data: d, content: c }) => {
+  const t = String(d.title ?? s);
+  const cat = d.category ? String(d.category) : null;
+  const pm = d.price_model ? String(d.price_model) : null;
+  const bLogo = d.brandLogo ? String(d.brandLogo) : null;
+  const pUrl = d.affiliate_url ? String(d.affiliate_url) : d.official_url ? String(d.official_url) : null;
+  const tgs = Array.isArray(d.tags) ? d.tags.map(String) : [];
+  const disabled = d.disabled === true || String(d.disabled || "").toLowerCase() === "true";
+  const desc = d.description ? String(d.description)
+    : d.summary ? String(d.summary)
+    : d.excerpt ? String(d.excerpt)
+    : d.tagline ? String(d.tagline)
+    : "";
+  const localAltLogo = resolveLocalLogo(s);
+  const faviconAltLogo = faviconFrom(pUrl);
+  return {
+    slug: s, title: t, category: cat, price_model: pm,
+    iconUrl: bLogo || localAltLogo || faviconAltLogo, tags: tgs,
+    excerpt: desc || getExcerpt(c),
+    fallbackIcon: iconType(cat, tgs),
+    disabled,
+  };
+});
 
 const enabledTools = allTools.filter((t) => !t.disabled);
 const enabledBySlug = new Map(enabledTools.map((t) => [t.slug, t]));
