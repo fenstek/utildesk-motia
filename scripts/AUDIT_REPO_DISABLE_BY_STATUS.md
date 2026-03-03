@@ -5,7 +5,7 @@ Disables published tool markdown files when their Sheet status is not publishabl
 ## Purpose
 
 Prevent recurrence of cases like `telescope`: if a tool is in `NEEDS_REVIEW`,
-`ERROR`, or `BLACKLIST` in the Sheet, its repo page should be disabled
+`ERROR`, `BLACKLIST`, or `DISABLED` in the Sheet, its repo page should be disabled
 (`content/tools/_slug.md`) instead of remaining publishable.
 
 This script bridges Sheet state and repo state.
@@ -19,7 +19,7 @@ This script bridges Sheet state and repo state.
 - Reads `slug` + `status` from Sheet (`Tabellenblatt1`)
 - Scans repo `content/tools/*.md` (excluding `_*.md`)
 - For each active file:
-  - if Sheet status in `{ NEEDS_REVIEW, ERROR, BLACKLIST }`
+  - if Sheet status in `{ NEEDS_REVIEW, ERROR, BLACKLIST, DISABLED }`
     - dry-run: records `planned_rename`
     - apply: renames `content/tools/slug.md` -> `content/tools/_slug.md`
 
