@@ -12,13 +12,15 @@ import {
 import { qcEligibility } from "./qc_eligibility.mjs";
 import { REPO_ROOT } from "./project_memory_lib.mjs";
 
-const DEFAULT_OUTPUT_PATH = path.join(REPO_ROOT, "backups", "snapshots", "sheet_patch.missing_tags.json");
+const DEFAULT_OUTPUT_PATH = path.join(REPO_ROOT, "backups", "snapshots", "sheet_patch.missing_tags.pass2.json");
 const CATEGORY_TAG_MAP = new Map([
   ["Automatisierung", ["automation", "workflow"]],
   ["Video", ["video"]],
   ["AI Agents", ["automation"]],
   ["Developer", ["coding", "developer-tools"]],
   ["Audio", ["audio"]],
+  ["AI Infrastructure", ["developer-tools", "api"]],
+  ["Cloud", ["developer-tools"]],
 ]);
 
 const argv = process.argv.slice(2);
