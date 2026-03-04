@@ -74,3 +74,4 @@
 - 20260304-072000: backfilled missing tags for 8 rows via strict allowlist/category mapping; missing tags moved 27 -> 19 and warnings 148 -> 140
 - 20260304-073000: taxonomy mismatch batch 1 for AI applied on 25 rows; tags/category mismatch moved 111 -> 86 and warnings 140 -> 115
 - 20260304-074000: taxonomy mismatch batch 2 for AI applied on 25 rows; AI mismatch moved 86 -> 61 and warnings 115 -> 90 with errors still 0
+- 20260304-075000: exhausted remaining AI taxonomy mismatch warnings in one strict batch; AI mismatch moved 61 -> 0 and warnings 90 -> 29 with errors still 0
