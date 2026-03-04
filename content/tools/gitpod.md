@@ -4,7 +4,7 @@ title: "Gitpod"
 category: "AI"
 price_model: "Je nach Plan kostenlos, abonnementbasiert"
 tags: [automation, coding]
-official_url: "https://gitpod.com/"
+official_url: "https://www.gitpod.io"
 ---
 
 # Gitpod
