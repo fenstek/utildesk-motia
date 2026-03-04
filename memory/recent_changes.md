@@ -76,3 +76,4 @@
 - 20260304-074000: taxonomy mismatch batch 2 for AI applied on 25 rows; AI mismatch moved 86 -> 61 and warnings 115 -> 90 with errors still 0
 - 20260304-075000: exhausted remaining AI taxonomy mismatch warnings in one strict batch; AI mismatch moved 61 -> 0 and warnings 90 -> 29 with errors still 0
 - 20260304-080000: missing tags pass 2 applied 10 strict tags-only changes via `backups/snapshots/sheet_patch.missing_tags.pass2.json`; missing tags moved 19 -> 9, warnings 29 -> 21, errors stayed 0, and the remaining unresolved slugs are all category `AI` with no further deterministic category/profile mapping available
+- 20260304-085500: reconciled `runpod` and `modal` tags via strict tags-only patch `backups/snapshots/sheet_patch.taxonomy_mismatch.runpod_modal.json`; taxonomy mismatch warnings moved 2 -> 0 and total warnings 21 -> 19 with errors still 0
