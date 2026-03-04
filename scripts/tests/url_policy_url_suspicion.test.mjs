@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {
   isDeniedFinalHost,
   matchDeniedFinalUrlPattern,
+  validateOfficialUrl,
 } from '../lib/url_policy.mjs';
 
 import { classifyFinalUrl } from '../lib/url_suspicion.mjs';
@@ -19,6 +20,14 @@ test('url_policy: denied final URL patterns are detected', () => {
   assert.equal(matchDeniedFinalUrlPattern('https://example.com/domain-for-sale'), 'final_url_matches_denied_pattern');
   assert.equal(matchDeniedFinalUrlPattern('https://dan.com/buy-domain/example.com'), 'final_url_matches_denied_pattern');
   assert.equal(matchDeniedFinalUrlPattern('https://sedo.com/search/details/example-com'), 'final_url_matches_denied_pattern');
+});
+
+test('url_policy: legitimate google product subdomains are allowed', () => {
+  const r = validateOfficialUrl('https://workspace.google.com/', {
+    slug: 'google-workspace',
+    title: 'Google Workspace',
+  });
+  assert.equal(r.ok, true);
 });
 
 test('url_suspicion: domain-for-sale URL is deny', () => {
@@ -46,4 +55,3 @@ test('url_suspicion: normal product URL is allow', () => {
   assert.equal(r.verdict, 'allow');
   assert.equal(r.reasons.length, 0);
 });
-

@@ -27,6 +27,7 @@
 import 'dotenv/config';
 import { google } from 'googleapis';
 import { pathToFileURL } from 'node:url';
+import { validateOfficialUrl, isMissingUrl } from './lib/url_policy.mjs';
 
 // ─── Config ─────────────────────────────────────────────────────────────────
 
@@ -35,61 +36,6 @@ const SHEET_NAME     = process.env.SHEET_NAME     || 'Tabellenblatt1';
 const GOOGLE_CLIENT_EMAIL = process.env.GOOGLE_CLIENT_EMAIL;
 const GOOGLE_PRIVATE_KEY  = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
 const SA_JSON_PATH = '/opt/utildesk-motia/secrets/google-service-account.json';
-
-// ─── URL validation (mirrors autogen guard) ───────────────────────────────────
-
-const DENY_HOST = new Set([
-  'wikipedia.org','wikidata.org','wikimedia.org',
-  'facebook.com','instagram.com','linkedin.com','tiktok.com','youtube.com','youtu.be',
-  'twitter.com','x.com','imdb.com',
-  'tripadvisor.com','booking.com','expedia.com',
-  'apps.apple.com','play.google.com',
-  'duckduckgo.com','google.com','bing.com',
-]);
-const DENY_SUBSTR = [
-  'culture','mairie','stadt','gemeinde','municip','municipal','kommune','council','gov','gouv','regierung',
-  'comune','townof','cityof','ville','township',
-  'visit','tourism','tourist','stadtinfo','city',
-  '/search?','/search/','?q=','&q=','utm_',
-];
-
-/**
- * Returns true if the URL is invalid/suspicious and should be blocked.
- */
-function isSuspiciousUrl(u) {
-  const raw = String(u || '').trim();
-  if (!raw) return true;
-
-  // Must start with https
-  if (!/^https:\/\//i.test(raw)) return true;
-
-  try {
-    const url = new URL(raw);
-    const host = url.hostname.replace(/^www\./, '').toLowerCase();
-    const pathLower = url.pathname.toLowerCase();
-    const hp = host + pathLower + url.search.toLowerCase();
-
-    for (const d of DENY_HOST) {
-      if (host === d || host.endsWith('.' + d)) return true;
-    }
-    if (pathLower.includes('/wiki/')) return true;
-    for (const sub of DENY_SUBSTR) {
-      if (hp.includes(sub)) return true;
-    }
-    return false;
-  } catch {
-    return true;
-  }
-}
-
-/**
- * Returns true if the URL value counts as "missing":
- * empty, NaN, null, undefined, quoted empty, etc.
- */
-function isMissingUrl(v) {
-  const s = String(v || '').trim().toLowerCase();
-  return !s || ['nan', 'null', 'undefined', 'none', '""', "''"].includes(s);
-}
 
 /**
  * Returns true if tags are considered invalid:
@@ -102,7 +48,7 @@ function hasInvalidTags(rawTags) {
     .filter(Boolean);
   if (tags.length === 0) return true;
   // Need at least one specific tag beyond the catch-all "ai"
-  const specific = tags.filter(t => t !== 'ai' && t !== 'produktivität');
+  const specific = tags.filter(t => t !== 'ai' && t !== 'produktivität' && t !== 'productivity');
   return specific.length === 0;
 }
 
@@ -202,8 +148,11 @@ async function main() {
     // Gate 1: official_url
     if (isMissingUrl(row.offUrl)) {
       issues.push('missing official_url');
-    } else if (isSuspiciousUrl(row.offUrl)) {
-      issues.push(`suspicious official_url: ${row.offUrl}`);
+    } else {
+      const validation = validateOfficialUrl(row.offUrl, { slug: row.slug, title: row.topic });
+      if (!validation.ok) {
+        issues.push(`suspicious official_url: ${row.offUrl} (${validation.reason})`);
+      }
     }
 
     // Gate 2: tags
