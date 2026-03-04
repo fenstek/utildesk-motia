@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generated_at": "2026-03-04T07:10:48.459Z",
+    "source_snapshot": "backups/snapshots/sheet_snapshot.latest.json",
+    "notes": "normalize tags formatting for 5 rows: lowercase/ascii/trim/dedupe, stable order preserved"
+  },
+  "changes": [
+    {
+      "row_id": 12,
+      "slug": "grammarly",
+      "column": "tags",
+      "old_value": "ai,produktivität",
+      "new_value": "ai,produktivitat",
+      "reason": "normalize_tags_format_ascii",
+      "confidence": "high"
+    },
+    {
+      "row_id": 29,
+      "slug": "jasper",
+      "column": "tags",
+      "old_value": "ai,produktivität",
+      "new_value": "ai,produktivitat",
+      "reason": "normalize_tags_format_ascii",
+      "confidence": "high"
+    },
+    {
+      "row_id": 30,
+      "slug": "deepl",
+      "column": "tags",
+      "old_value": "ai,produktivität",
+      "new_value": "ai,produktivitat",
+      "reason": "normalize_tags_format_ascii",
+      "confidence": "high"
+    },
+    {
+      "row_id": 55,
+      "slug": "notion-ai",
+      "column": "tags",
+      "old_value": "ai,produktivität",
+      "new_value": "ai,produktivitat",
+      "reason": "normalize_tags_format_ascii",
+      "confidence": "high"
+    },
+    {
+      "row_id": 56,
+      "slug": "copy-ai",
+      "column": "tags",
+      "old_value": "ai,produktivität,writing",
+      "new_value": "ai,produktivitat,writing",
+      "reason": "normalize_tags_format_ascii",
+      "confidence": "high"
+    }
+  ]
+}

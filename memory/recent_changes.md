@@ -70,3 +70,4 @@
 - 20260304-015401: url_errors batch applied, fixed 2 official_url errors, 13/198 -> 11/198, patch=backups/snapshots/sheet_patch.url_errors.json
 - 20260304-020000: audit QC eligibility added; blacklist/disabled/duplicate/alias rows are now skipped instead of producing audit findings
 - 20260304-063000: url policy now allows https://huggingface.co/ as a platform-root official_url; generic-root blocking remains for other hosts
+- 20260304-070500: fixed 5 tag formatting warnings via strict sheet patch; tags contain invalid formatting is now 0 and warnings moved 153 -> 148
