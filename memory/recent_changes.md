@@ -79,3 +79,6 @@
 - 20260304-085500: reconciled `runpod` and `modal` tags via strict tags-only patch `backups/snapshots/sheet_patch.taxonomy_mismatch.runpod_modal.json`; taxonomy mismatch warnings moved 2 -> 0 and total warnings 21 -> 19 with errors still 0
 - 20260304-151500: backfilled the remaining 9 missing-tag rows using deterministic slug overrides in `scripts/propose_missing_tags_patch.mjs`; strict apply via `backups/snapshots/sheet_patch.missing_tags.overrides.json` moved missing tags 9 -> 0 and warnings 19 -> 10 with errors still 0
 - 20260304-152000: resolved the final 5 duplicate `official_url` clusters by marking non-canonical rows `duplicate` via `backups/snapshots/sheet_patch.duplicate_official_url.resolve.json`; added a narrow `--allow-duplicate-status-resolution` guard to patch validation/apply, documented it in `scripts/sheet_patch_format.md`, and moved warnings 10 -> 0 with skipped_duplicate_or_alias 0 -> 5 and errors still 0
+
+## 2026-03-04
+docs: add bootstrap project documentation under docs/ and memory/project_state.md
