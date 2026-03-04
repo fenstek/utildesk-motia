@@ -4,11 +4,15 @@ set -euo pipefail
 START_TS="$(date -Is)"
 SELF_PID="$$"
 LOCK_FILE="${LOCK_FILE:-/tmp/utildesk-motia_publish.lock}"
+NO_PUSH_MODE="${NO_PUSH:-${DRY_RUN:-0}}"
 
 echo "pid=${SELF_PID} started=${START_TS}" > "$LOCK_FILE"
 trap 'echo "pid=${SELF_PID} finished=$(date -Is) exit=$?" > "$LOCK_FILE"' EXIT
 
 echo "[cron] boot: ts=${START_TS} pid=${SELF_PID} lock_file=${LOCK_FILE}"
+if [[ "$NO_PUSH_MODE" == "1" ]]; then
+  echo "[cron] NO_PUSH enabled: running safe local dry-run only"
+fi
 
 cd /opt/utildesk-motia
 
@@ -36,6 +40,32 @@ retry_cmd() {
 echo "[cron] start:
 node scripts/guard_deny_md.mjs
  $(date -Is)"
+
+if [[ "$NO_PUSH_MODE" == "1" ]]; then
+  node scripts/guard_deny_md.mjs
+  if [[ "${REPO_DISABLE_BY_STATUS:-1}" == "1" ]]; then
+    echo "[cron] NO_PUSH enabled: repo-status-disable dry-run"
+    node scripts/audit_repo_disable_by_sheet_status.mjs --json
+  fi
+  if [[ "${PUBLISH_ONLY:-0}" == "1" ]]; then
+    echo "[cron] NO_PUSH enabled: PUBLISH_ONLY=1 -> skipping generation"
+  else
+    echo "[cron] NO_PUSH enabled: QC snapshot"
+    node scripts/audit_publish_preflight.mjs
+    node scripts/audit_new_inprogress_qc.mjs --json
+    echo "[cron] NO_PUSH enabled: orchestrator offline self-check"
+    DRY_STATUS_LOGIC=1 node scripts/test_run_9_full.mjs "${PUBLISH_BATCH_SIZE:-10}"
+  fi
+  CHANGED="$(git status --porcelain || true)"
+  if [[ -z "$CHANGED" ]]; then
+    echo "[cron] NO_PUSH enabled: no local changes"
+  else
+    echo "[cron] NO_PUSH enabled: local changes detected"
+    printf '%s\n' "$CHANGED"
+  fi
+  echo "[cron] NO_PUSH enabled: skipping fetch/reset/commit/push/PR steps"
+  exit 0
+fi
 
 # Always work from autobot branch (self-healing if remote branch was deleted)
 git fetch --all --prune
