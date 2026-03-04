@@ -71,3 +71,4 @@
 - 20260304-020000: audit QC eligibility added; blacklist/disabled/duplicate/alias rows are now skipped instead of producing audit findings
 - 20260304-063000: url policy now allows https://huggingface.co/ as a platform-root official_url; generic-root blocking remains for other hosts
 - 20260304-070500: fixed 5 tag formatting warnings via strict sheet patch; tags contain invalid formatting is now 0 and warnings moved 153 -> 148
+- 20260304-072000: backfilled missing tags for 8 rows via strict allowlist/category mapping; missing tags moved 27 -> 19 and warnings 148 -> 140
