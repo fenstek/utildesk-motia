@@ -96,6 +96,7 @@ Optional GPT-based chooser for `official_url` as fallback when deterministic URL
 - Propose safe patch from audit: `node scripts/propose_sheet_patch_from_audit.mjs`
 - Propose deterministic category-only patch from domain mapper: `node scripts/propose_taxonomy_patch.mjs`
 - Propose deterministic official_url patch for URL errors: `node scripts/propose_url_errors_patch.mjs`
+- Propose deterministic tags-only patch for taxonomy mismatch warnings: `node scripts/propose_taxonomy_mismatch_patch.mjs --category AI --limit 25`
 - Propose patch via Codex CLI: `bash scripts/propose_sheet_patch_codex.sh`
 - Validate patch JSON: `node scripts/validate_sheet_patch.mjs --patch backups/snapshots/sheet_patch.proposed.json`
 - Review patch without writing: `node scripts/apply_sheet_patch.mjs --patch backups/snapshots/sheet_patch.proposed.json --dry-run`
