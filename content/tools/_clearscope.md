@@ -1,10 +1,11 @@
 ---
-slug: "clearscope"
-title: "Clearscope"
-category: "AI"
-price_model: ""
+slug: clearscope
+title: Clearscope
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.clearscope.io/"
+popularity: 5
 ---
 
 # Clearscope

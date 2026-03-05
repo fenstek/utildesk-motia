@@ -1,10 +1,11 @@
 ---
-slug: "magisto"
-title: "Magisto"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: magisto
+title: Magisto
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://www.magisto.com/"
+popularity: 1
 ---
 
 # Magisto

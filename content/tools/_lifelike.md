@@ -1,10 +1,11 @@
 ---
-slug: "lifelike"
-title: "Lifelike"
-category: "AI"
-price_model: "freemium"
+slug: lifelike
+title: Lifelike
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://lifelike.io/"
+popularity: 1
 ---
 
 # Lifelike

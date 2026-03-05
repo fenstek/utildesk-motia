@@ -1,10 +1,11 @@
 ---
-slug: "qlik"
-title: "Qlik"
-category: "AI"
-price_model: "freemium"
+slug: qlik
+title: Qlik
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.qlik.com/"
+popularity: 1
 ---
 
 # Qlik

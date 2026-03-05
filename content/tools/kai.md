@@ -1,10 +1,11 @@
 ---
-slug: "kai"
-title: "KAI"
-category: "AI"
-price_model: "freemium"
+slug: kai
+title: KAI
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://kai.ai/"
+popularity: 1
 ---
 
 # KAI

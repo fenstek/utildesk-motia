@@ -1,10 +1,11 @@
 ---
-slug: "garageband"
-title: "GarageBand"
-category: "AI"
-price_model: "kostenlos mit optionalen kostenpflichtigen Inhalten"
+slug: garageband
+title: GarageBand
+category: AI
+price_model: kostenlos mit optionalen kostenpflichtigen Inhalten
 tags: [assistant, automation]
 official_url: "https://www.apple.com/mac/garageband/?cid=oas-us-domains-garageband.com"
+popularity: 1
 ---
 
 # GarageBand

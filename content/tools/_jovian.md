@@ -1,10 +1,11 @@
 ---
-slug: "jovian"
-title: "Jovian"
-category: "AI"
-price_model: "freemium"
+slug: jovian
+title: Jovian
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://jovian.com/"
+popularity: 1
 ---
 
 # Jovian

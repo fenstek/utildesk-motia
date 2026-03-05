@@ -1,10 +1,11 @@
 ---
-slug: "kuki-ai"
-title: "Kuki AI"
-category: "AI"
-price_model: "freemium"
+slug: kuki-ai
+title: Kuki AI
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.kuki.ai/"
+popularity: 1
 ---
 
 # Kuki AI

@@ -1,10 +1,11 @@
 ---
-slug: "veed"
-title: "Veed"
-category: "AI"
-price_model: "freemium"
+slug: veed
+title: Veed
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.veed.io/"
+popularity: 3
 ---
 
 # Veed

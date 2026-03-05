@@ -1,10 +1,11 @@
 ---
-slug: "grok-ai"
-title: "Grok AI"
-category: "AI"
-price_model: "freemium"
+slug: grok-ai
+title: Grok AI
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://grok.ai/products"
+popularity: 1
 ---
 
 # Grok AI

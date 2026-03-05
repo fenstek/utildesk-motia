@@ -1,10 +1,11 @@
 ---
-slug: "syllable"
-title: "Syllable"
-category: "AI"
-price_model: "paid"
+slug: syllable
+title: Syllable
+category: AI
+price_model: paid
 tags: [ai, voice, chat, automation, customer-service]
 official_url: "https://syllable.ai/"
+popularity: 1
 ---
 
 # Syllable

@@ -1,10 +1,11 @@
 ---
-slug: "looker"
-title: "Looker"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: looker
+title: Looker
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [ai, analytics, enterprise, data, visualization]
 official_url: "https://cloud.google.com/looker"
+popularity: 1
 ---
 
 # Looker

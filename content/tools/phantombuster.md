@@ -1,12 +1,12 @@
 ---
-slug: "phantombuster"
-title: "PhantomBuster"
-category: "AI"
-price_model: "freemium"
+slug: phantombuster
+title: PhantomBuster
+category: AI
+price_model: freemium
 tags: [ai, automation, lead-generation]
 official_url: "https://phantombuster.com"
-created_at: "2026-02-18"
-popularity: 0
+created_at: 2026-02-18
+popularity: 1
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-slug: "zamzar-ai"
-title: "Zamzar AI"
-category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+slug: zamzar-ai
+title: Zamzar AI
+category: AI
+price_model: Je nach Plan und Anbieter unterschiedlich
 tags: [automation, productivity, video, audio, design]
 official_url: "https://www.zamzar.com/"
+popularity: 2
 ---
 
 # Zamzar AI

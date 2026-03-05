@@ -1,10 +1,11 @@
 ---
-slug: "manychat"
-title: "ManyChat"
-category: "AI"
-price_model: "freemium"
+slug: manychat
+title: ManyChat
+category: AI
+price_model: freemium
 tags: [ai, chatbot]
 official_url: "https://manychat.com/"
+popularity: 1
 ---
 
 # ManyChat

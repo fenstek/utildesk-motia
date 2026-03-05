@@ -1,10 +1,11 @@
 ---
-slug: "ai21-labs"
-title: "AI21 Labs"
-category: "AI"
-price_model: ""
+slug: ai21-labs
+title: AI21 Labs
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.ai21.com/"
+popularity: 1
 ---
 
 # AI21 Labs

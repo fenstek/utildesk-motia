@@ -1,10 +1,11 @@
 ---
-slug: "jovian"
-title: "Jovian"
-category: "AI"
-price_model: "freemium"
+slug: jovian
+title: Jovian
+category: AI
+price_model: freemium
 tags: [education, automation, data, analytics]
 official_url: "https://jovian.com/"
+popularity: 1
 ---
 
 # Jovian

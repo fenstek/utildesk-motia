@@ -1,10 +1,11 @@
 ---
-slug: "coreldraw"
-title: "CorelDRAW"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: coreldraw
+title: CorelDRAW
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [ai,design,vector,creative,automation]
 official_url: "https://www.coreldraw.com/"
+popularity: 1
 ---
 
 # CorelDRAW

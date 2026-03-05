@@ -3,12 +3,10 @@ slug: lingvanex
 title: LingvaNex
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - ai
-official_url: 'https://lingvanex.com/'
-created_at: "2026-02-15"
-popularity: 0
+tags: 
+official_url: "https://lingvanex.com/"
+created_at: 2026-02-15
+popularity: 2
 ---
 
 

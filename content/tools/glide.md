@@ -1,10 +1,11 @@
 ---
-slug: "glide"
-title: "Glide"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: glide
+title: Glide
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [no-code, automation, productivity, data, analytics]
 official_url: "https://www.glideapps.com/"
+popularity: 1
 ---
 
 # Glide

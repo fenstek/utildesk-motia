@@ -1,10 +1,11 @@
 ---
-slug: "botsify"
-title: "Botsify"
-category: "AI"
-price_model: "freemium"
+slug: botsify
+title: Botsify
+category: AI
+price_model: freemium
 tags: [ai, chatbot]
 official_url: "https://botsify.com/"
+popularity: 1
 ---
 
 # Botsify

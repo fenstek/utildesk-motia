@@ -1,10 +1,11 @@
 ---
-slug: "peppertype-ai"
-title: "Peppertype.ai"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: peppertype-ai
+title: Peppertype.ai
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [writing, content, marketing, automation, productivity]
 official_url: "https://www.pepper.inc/"
+popularity: 2
 ---
 
 # Peppertype.ai

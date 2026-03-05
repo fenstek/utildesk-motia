@@ -1,10 +1,11 @@
 ---
-slug: "lex"
-title: "Lex"
-category: "AI"
-price_model: "freemium"
+slug: lex
+title: Lex
+category: AI
+price_model: freemium
 tags: [ai, writing, productivity, creative]
 official_url: "https://lex.page/"
+popularity: 1
 ---
 
 # Lex

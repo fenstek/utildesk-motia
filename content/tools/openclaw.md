@@ -1,10 +1,11 @@
 ---
-slug: "openclaw"
-title: "OpenClaw"
-category: "AI Agents"
-price_model: ""
+slug: openclaw
+title: OpenClaw
+category: AI Agents
+price_model: 
 tags: []
 official_url: "https://openclaw.ai/"
+popularity: 1
 ---
 
 # OpenClaw

@@ -1,10 +1,11 @@
 ---
-slug: "clearscope"
-title: "Clearscope"
-category: "AI"
-price_model: "Abonnementbasierte Preisgestaltung"
+slug: clearscope
+title: Clearscope
+category: AI
+price_model: Abonnementbasierte Preisgestaltung
 tags: [seo, content, marketing, automation]
 official_url: "https://www.clearscope.io/"
+popularity: 5
 ---
 
 # Clearscope

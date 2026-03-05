@@ -1,10 +1,11 @@
 ---
-slug: "bonsai"
-title: "Bonsai"
-category: "AI"
-price_model: "freemium"
+slug: bonsai
+title: Bonsai
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://bonsai.com/"
+popularity: 1
 ---
 
 # Bonsai

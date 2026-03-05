@@ -1,10 +1,11 @@
 ---
-slug: "telescope"
-title: "Telescope"
-category: "AI"
-price_model: "freemium"
+slug: telescope
+title: Telescope
+category: AI
+price_model: freemium
 tags: [ai,assistant,automation]
 official_url: "https://telescope.com/"
+popularity: 1
 ---
 
 # Telescope

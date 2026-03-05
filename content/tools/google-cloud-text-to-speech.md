@@ -1,12 +1,12 @@
 ---
-slug: "google-cloud-text-to-speech"
-title: "Google Cloud Text-to-Speech"
-category: "AI"
-price_model: "freemium"
+slug: google-cloud-text-to-speech
+title: Google Cloud Text-to-Speech
+category: AI
+price_model: freemium
 tags: [ai,audio,writing]
 official_url: "https://ai.google.dev/gemini-api/docs/speech-generation"
-created_at: "2026-02-15"
-popularity: 0
+created_at: 2026-02-15
+popularity: 1
 ---
 
 

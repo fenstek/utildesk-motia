@@ -1,10 +1,11 @@
 ---
-slug: "piper-ai"
-title: "Piper AI"
-category: "AI"
-price_model: "freemium"
+slug: piper-ai
+title: Piper AI
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation, crm]
 official_url: "https://www.piperai.com/"
+popularity: 1
 ---
 
 # Piper AI

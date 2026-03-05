@@ -1,10 +1,11 @@
 ---
-slug: "talon"
-title: "Talon"
-category: "AI"
-price_model: "freemium"
+slug: talon
+title: Talon
+category: AI
+price_model: freemium
 tags: [ai, assistant, productivity, automation, workflow]
 official_url: "https://talonvoice.com/"
+popularity: 2
 ---
 
 # Talon

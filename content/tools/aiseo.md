@@ -1,10 +1,11 @@
 ---
-slug: "aiseo"
-title: "AISEO"
-category: "AI"
-price_model: "freemium"
+slug: aiseo
+title: AISEO
+category: AI
+price_model: freemium
 tags: [ai, seo, workflow]
 official_url: "https://aiseo.ai/"
+popularity: 2
 ---
 
 # AISEO

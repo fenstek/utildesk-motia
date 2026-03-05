@@ -1,10 +1,11 @@
 ---
-slug: "tableau"
-title: "Tableau"
-category: "AI"
-price_model: "freemium"
+slug: tableau
+title: Tableau
+category: AI
+price_model: freemium
 tags: [ai, analytics, data-visualization, enterprise, productivity]
 official_url: "https://www.tableau.com/"
+popularity: 1
 ---
 
 # Tableau

@@ -1,12 +1,12 @@
 ---
-slug: "aive"
-title: "Aive"
-category: "AI"
-price_model: "freemium"
+slug: aive
+title: Aive
+category: AI
+price_model: freemium
 tags: [ai, video, content, marketing]
 official_url: "https://www.aive.com/"
-created_at: "2026-02-15"
-popularity: 0
+created_at: 2026-02-15
+popularity: 1
 ---
 
 

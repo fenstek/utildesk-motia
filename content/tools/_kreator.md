@@ -1,15 +1,15 @@
 ---
-slug: "kreator"
-title: "Kreator"
-category: "AI"
-price_model: "freemium"
+slug: kreator
+title: Kreator
+category: AI
+price_model: freemium
 tags: [ai, writing, content, marketing]
-official_url: ""
-affiliate_url: ""
+official_url: 
+affiliate_url: 
 disabled: true
-reason: "Not an AI tool / irrelevant website"
-created_at: "2026-02-11"
-popularity: 0
+reason: Not an AI tool / irrelevant website
+created_at: 2026-02-11
+popularity: 1
 ---
 
 

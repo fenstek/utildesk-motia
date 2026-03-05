@@ -1,10 +1,11 @@
 ---
-slug: "deep-ai"
-title: "Deep AI"
-category: "AI"
-price_model: "freemium"
+slug: deep-ai
+title: Deep AI
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://deepai.org/"
+popularity: 1
 ---
 
 # Deep AI

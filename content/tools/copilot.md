@@ -1,10 +1,11 @@
 ---
-slug: "copilot"
-title: "Copilot"
-category: "Developer"
-price_model: "freemium"
+slug: copilot
+title: Copilot
+category: Developer
+price_model: freemium
 tags: [ai, developer]
 official_url: "https://www.copilot.com/"
+popularity: 2
 ---
 
 # Copilot
