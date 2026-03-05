@@ -1,10 +1,11 @@
 ---
-slug: "ispeech"
-title: "iSpeech"
-category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: ispeech
+title: iSpeech
+category: AI
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [audio, workflow]
 official_url: "https://www.ispeech.org/"
+popularity: 1
 ---
 
 # iSpeech

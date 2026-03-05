@@ -1,10 +1,11 @@
 ---
-slug: "miro"
-title: "Miro"
-category: "AI"
-price_model: "Je nach Plan kostenpflichtig und kostenlos verfügbar"
+slug: miro
+title: Miro
+category: AI
+price_model: Je nach Plan kostenpflichtig und kostenlos verfügbar
 tags: [assistant, automation, productivity, design]
 official_url: "https://miro.com/"
+popularity: 1
 ---
 
 # Miro

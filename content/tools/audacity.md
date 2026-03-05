@@ -3,13 +3,10 @@ slug: audacity
 title: Audacity
 category: AI
 price_model: freemium
-tags:
-  - audio
-  - developer
-  - ai
-official_url: 'https://www.audacityteam.org/'
-created_at: "2026-02-12"
-popularity: 0
+tags: 
+official_url: "https://www.audacityteam.org/"
+created_at: 2026-02-12
+popularity: 1
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-slug: "fireworks-ai"
-title: "Fireworks AI"
-category: "AI Infrastructure"
-price_model: ""
+slug: fireworks-ai
+title: Fireworks AI
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://fireworks.ai"
+popularity: 1
 ---
 
 # Fireworks AI

@@ -1,10 +1,11 @@
 ---
-slug: "zencastr"
-title: "Zencastr"
-category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+slug: zencastr
+title: Zencastr
+category: AI
+price_model: Je nach Plan, meist abonnementbasiert
 tags: [audio, video, transcription, productivity, automation]
 official_url: "https://zencastr.com/"
+popularity: 1
 ---
 
 # Zencastr

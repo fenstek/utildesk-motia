@@ -1,10 +1,11 @@
 ---
-slug: "autogen"
-title: "AutoGen"
-category: "AI Agents"
-price_model: ""
+slug: autogen
+title: AutoGen
+category: AI Agents
+price_model: 
 tags: []
 official_url: "https://github.com/microsoft/autogen"
+popularity: 1
 ---
 
 # AutoGen

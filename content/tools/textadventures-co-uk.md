@@ -1,12 +1,12 @@
 ---
-slug: "textadventures-co-uk"
-title: "TextAdventures.co.uk"
-category: "Produktivitat"
-price_model: "freemium"
+slug: textadventures-co-uk
+title: TextAdventures.co.uk
+category: Produktivitat
+price_model: freemium
 tags: [ai, produktivitat, writing]
 official_url: "https://textadventures.co.uk/"
-created_at: "2026-02-12"
-popularity: 0
+created_at: 2026-02-12
+popularity: 2
 ---
 
 

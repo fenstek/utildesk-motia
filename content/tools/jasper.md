@@ -3,16 +3,11 @@ slug: jasper
 title: Jasper
 category: Produktivität
 price_model: freemium
-tags:
-  - writing
-  - design
-  - produktivitat
-  - marketing
-  - ai
-official_url: 'https://www.jasper.ai/'
-affiliate_url: 'https://www.jasper.ai/'
-created_at: "2026-02-07"
-popularity: 0
+tags: 
+official_url: "https://www.jasper.ai/"
+affiliate_url: "https://www.jasper.ai/"
+created_at: 2026-02-07
+popularity: 16
 ---
 
 # Jasper

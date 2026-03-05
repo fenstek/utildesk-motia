@@ -1,10 +1,11 @@
 ---
-slug: "owo"
-title: "Owo"
-category: "AI"
-price_model: "freemium"
+slug: owo
+title: Owo
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://owo.io/"
+popularity: 1
 ---
 
 # Owo

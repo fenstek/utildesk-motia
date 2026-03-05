@@ -1,10 +1,11 @@
 ---
-slug: "reaper"
-title: "Reaper"
-category: "AI"
-price_model: ""
+slug: reaper
+title: Reaper
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://ghostsecurity.com/"
+popularity: 1
 ---
 
 # Reaper

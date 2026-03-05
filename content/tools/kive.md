@@ -1,10 +1,11 @@
 ---
-slug: "kive"
-title: "Kive"
-category: "AI"
-price_model: "freemium"
+slug: kive
+title: Kive
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://kive.ai/"
+popularity: 2
 ---
 
 # Kive

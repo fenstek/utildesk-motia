@@ -1,10 +1,11 @@
 ---
-slug: "rasa"
-title: "Rasa"
-category: "AI"
-price_model: "freemium"
+slug: rasa
+title: Rasa
+category: AI
+price_model: freemium
 tags: [ai, chatbot, developer-tools, api]
 official_url: "https://rasa.com/docs"
+popularity: 1
 ---
 
 # Rasa

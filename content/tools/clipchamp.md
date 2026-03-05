@@ -1,12 +1,12 @@
 ---
-slug: "clipchamp"
-title: "Clipchamp"
-category: "AI"
-price_model: "freemium"
+slug: clipchamp
+title: Clipchamp
+category: AI
+price_model: freemium
 tags: [ai, video, content]
 official_url: "https://clipchamp.com/en/"
-created_at: "2026-02-15"
-popularity: 0
+created_at: 2026-02-15
+popularity: 1
 ---
 
 

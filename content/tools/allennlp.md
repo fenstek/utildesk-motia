@@ -1,10 +1,11 @@
 ---
-slug: "allennlp"
-title: "AllenNLP"
-category: "AI"
-price_model: ""
+slug: allennlp
+title: AllenNLP
+category: AI
+price_model: 
 tags: [coding, developer-tools, data, analytics, education]
 official_url: "https://allenai.github.io/allennlp-website/"
+popularity: 1
 ---
 
 # AllenNLP

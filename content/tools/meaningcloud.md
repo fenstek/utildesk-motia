@@ -1,10 +1,11 @@
 ---
-slug: "meaningcloud"
-title: "MeaningCloud"
-category: "AI"
-price_model: "Je nach Anbieter und Plan"
+slug: meaningcloud
+title: MeaningCloud
+category: AI
+price_model: Je nach Anbieter und Plan
 tags: [api, analytics]
 official_url: "https://www.meaningcloud.com/"
+popularity: 1
 ---
 
 # MeaningCloud

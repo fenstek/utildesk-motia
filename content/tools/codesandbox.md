@@ -1,10 +1,11 @@
 ---
-slug: "codesandbox"
-title: "CodeSandbox"
-category: "Developer"
-price_model: "Freemium"
+slug: codesandbox
+title: CodeSandbox
+category: Developer
+price_model: Freemium
 tags: [developer-tools, coding, automation, productivity, no-code]
 official_url: "https://codesandbox.io/"
+popularity: 1
 ---
 
 # CodeSandbox

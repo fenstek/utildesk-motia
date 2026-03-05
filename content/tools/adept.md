@@ -1,10 +1,11 @@
 ---
-slug: "adept"
-title: "Adept"
-category: "AI"
-price_model: "freemium"
+slug: adept
+title: Adept
+category: AI
+price_model: freemium
 tags: [ai, automation, productivity, workflow]
 official_url: "https://www.adept.ai/"
+popularity: 2
 ---
 
 # Adept

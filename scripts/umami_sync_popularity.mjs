@@ -157,7 +157,7 @@ class UmamiClient {
     return data;
   }
 
-  async getMetrics(websiteId, { days = 30, type = 'url' }) {
+  async getMetrics(websiteId, { days = 30, type = 'path' }) {
     if (!this.token) {
       await this.login();
     }
@@ -255,10 +255,28 @@ function serializeFrontmatter(frontmatter, body) {
   return lines.join('\n');
 }
 
-// Extract slug from URL path
-function extractSlugFromUrl(url) {
-  const match = url.match(/^\/tools\/([^\/]+)\/?$/);
-  return match ? match[1] : null;
+// Extract tool slug from Umami metric path (supports absolute URL fallback).
+function extractSlugFromPath(rawPath) {
+  if (typeof rawPath !== 'string' || rawPath.trim() === '') {
+    return null;
+  }
+
+  let pathname = rawPath.trim();
+
+  // Backward compatible: tolerate full URLs if returned by older setups.
+  if (/^https?:\/\//i.test(pathname)) {
+    try {
+      pathname = new URL(pathname).pathname;
+    } catch {
+      return null;
+    }
+  }
+
+  // Remove query/hash and normalize trailing slash.
+  pathname = pathname.split('?')[0].split('#')[0].replace(/\/+$/, '');
+
+  const match = pathname.match(/^\/tools\/([^\/]+)$/);
+  return match ? decodeURIComponent(match[1]).trim().toLowerCase() : null;
 }
 
 // Main sync function
@@ -280,18 +298,18 @@ async function syncPopularity(options) {
 
     const metrics = await client.getMetrics(options.websiteId, {
       days: options.days,
-      type: 'url',
+      type: 'path',
     });
 
-    log(`Received ${metrics.length} URL metrics from Umami`);
+    log(`Received ${metrics.length} path metrics from Umami`);
 
     // Step 2: Extract /tools/* pageviews
     const toolStats = {};
 
     for (const item of metrics) {
-      const url = item.x;
-      const views = item.y;
-      const slug = extractSlugFromUrl(url);
+      const pathValue = item.x;
+      const views = Number(item.y) || 0;
+      const slug = extractSlugFromPath(pathValue);
 
       if (slug) {
         toolStats[slug] = (toolStats[slug] || 0) + views;
@@ -318,8 +336,9 @@ async function syncPopularity(options) {
         const { frontmatter, body } = parseFrontmatter(content);
 
         // Use frontmatter slug if available, otherwise use filename
-        const slug = frontmatter.slug || fileSlug;
-        const newPopularity = toolStats[slug];
+        const slug = String(frontmatter.slug || fileSlug).trim();
+        const slugKey = slug.toLowerCase();
+        const newPopularity = toolStats[slugKey];
         const oldPopularity = frontmatter.popularity;
 
         // Determine if we should update
@@ -379,7 +398,7 @@ async function syncPopularity(options) {
     } else {
       log(`\n${'='.repeat(60)}`);
       log(`Summary:`);
-      log(`  - URL metrics received: ${metrics.length}`);
+      log(`  - Path metrics received: ${metrics.length}`);
       log(`  - Tool slugs matched: ${Object.keys(toolStats).length}`);
       log(`  - Files scanned: ${mdFiles.length}`);
       log(`  - Files to update: ${updateCount}`);

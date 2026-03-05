@@ -1,10 +1,11 @@
 ---
-slug: "followupthen"
-title: "FollowUpThen"
-category: "AI"
-price_model: "Je nach Plan, meist mit kostenlosen und kostenpflichtigen Optionen"
+slug: followupthen
+title: FollowUpThen
+category: AI
+price_model: Je nach Plan, meist mit kostenlosen und kostenpflichtigen Optionen
 tags: [productivity, automation, workflow, crm]
 official_url: "https://www.followupthen.com/"
+popularity: 1
 ---
 
 # FollowUpThen

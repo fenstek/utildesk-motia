@@ -1,10 +1,11 @@
 ---
-slug: "assemblyai"
-title: "AssemblyAI"
-category: "Audio"
-price_model: ""
+slug: assemblyai
+title: AssemblyAI
+category: Audio
+price_model: 
 tags: []
 official_url: "https://www.assemblyai.com"
+popularity: 1
 ---
 
 # AssemblyAI

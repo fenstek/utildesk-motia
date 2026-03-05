@@ -1,10 +1,11 @@
 ---
-slug: "renderforest"
-title: "Renderforest"
-category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert mit kostenlosen Grundfunktionen"
+slug: renderforest
+title: Renderforest
+category: AI
+price_model: Je nach Plan, meist abonnementbasiert mit kostenlosen Grundfunktionen
 tags: [video, workflow]
 official_url: "https://www.renderforest.com/"
+popularity: 1
 ---
 
 # Renderforest

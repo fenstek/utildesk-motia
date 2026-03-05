@@ -1,10 +1,11 @@
 ---
-slug: "airtable"
-title: "Airtable"
-category: "AI"
-price_model: "freemium"
+slug: airtable
+title: Airtable
+category: AI
+price_model: freemium
 tags: [ai, spreadsheet, productivity, data]
 official_url: "https://airtable.com"
+popularity: 1
 ---
 
 # Airtable

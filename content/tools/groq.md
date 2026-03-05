@@ -1,10 +1,11 @@
 ---
-slug: "groq"
-title: "Groq"
-category: "AI Infrastructure"
-price_model: ""
+slug: groq
+title: Groq
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://groq.com"
+popularity: 1
 ---
 
 # Groq

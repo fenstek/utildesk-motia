@@ -1,10 +1,11 @@
 ---
-slug: "prisma"
-title: "Prisma"
-category: "AI"
-price_model: "freemium"
+slug: prisma
+title: Prisma
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://prisma-ai.com/"
+popularity: 1
 ---
 
 # Prisma

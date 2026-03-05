@@ -2,14 +2,11 @@
 title: Amazon Rekognition
 slug: amazon-rekognition
 category: AI
-tags:
-  - video
-  - automation
-  - ai
+tags: 
 price_model: freemium
-official_url: 'https://aws.amazon.com/rekognition/'
-created_at: "2026-02-13"
-popularity: 0
+official_url: "https://aws.amazon.com/rekognition/"
+created_at: 2026-02-13
+popularity: 1
 ---
 
 

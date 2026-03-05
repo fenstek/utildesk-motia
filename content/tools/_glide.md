@@ -1,10 +1,11 @@
 ---
-slug: "glide"
-title: "Glide"
-category: "AI"
-price_model: ""
+slug: glide
+title: Glide
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.glideapps.com/"
+popularity: 1
 ---
 
 # Glide

@@ -1,10 +1,11 @@
 ---
-slug: "gitpod"
-title: "Gitpod"
-category: "AI"
-price_model: "Abonnement-basiert"
+slug: gitpod
+title: Gitpod
+category: AI
+price_model: Abonnement-basiert
 tags: [assistant, automation]
 official_url: "https://gitpod.com/"
+popularity: 1
 ---
 
 # Gitpod

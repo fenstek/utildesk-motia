@@ -1,10 +1,11 @@
 ---
-slug: "crew-ai"
-title: "CrewAI"
-category: "AI Agents"
-price_model: ""
+slug: crew-ai
+title: CrewAI
+category: AI Agents
+price_model: 
 tags: []
 official_url: "https://www.crewai.com/"
+popularity: 1
 ---
 
 # CrewAI

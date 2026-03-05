@@ -1,10 +1,11 @@
 ---
-slug: "sas"
-title: "SAS"
-category: "AI"
-price_model: "freemium"
+slug: sas
+title: SAS
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.sas.com/en_us/home.html"
+popularity: 1
 ---
 
 # SAS

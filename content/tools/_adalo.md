@@ -1,10 +1,11 @@
 ---
-slug: "adalo"
-title: "Adalo"
-category: "AI"
-price_model: ""
+slug: adalo
+title: Adalo
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.adalo.com/"
+popularity: 2
 ---
 
 # Adalo

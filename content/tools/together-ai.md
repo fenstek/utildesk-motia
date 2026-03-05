@@ -1,10 +1,11 @@
 ---
-slug: "together-ai"
-title: "Together AI"
-category: "AI Infrastructure"
-price_model: ""
+slug: together-ai
+title: Together AI
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://www.together.ai"
+popularity: 1
 ---
 
 # Together AI

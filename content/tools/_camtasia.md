@@ -1,10 +1,11 @@
 ---
-slug: "camtasia"
-title: "Camtasia"
-category: "AI"
-price_model: "Je nach Lizenzmodell"
+slug: camtasia
+title: Camtasia
+category: AI
+price_model: Je nach Lizenzmodell
 tags: [assistant, automation]
 official_url: "https://www.techsmith.com/camtasia/"
+popularity: 1
 ---
 
 # Camtasia

@@ -1,10 +1,11 @@
 ---
-slug: "camtasia"
-title: "Camtasia"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: camtasia
+title: Camtasia
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [video, automation, productivity, design, education]
 official_url: "https://www.techsmith.com/camtasia/"
+popularity: 1
 ---
 
 # Camtasia

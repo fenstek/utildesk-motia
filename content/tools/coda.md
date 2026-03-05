@@ -1,10 +1,11 @@
 ---
-slug: "coda"
-title: "Coda"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: coda
+title: Coda
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://coda.io/"
+popularity: 1
 ---
 
 # Coda

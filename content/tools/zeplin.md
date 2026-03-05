@@ -1,10 +1,11 @@
 ---
-slug: "zeplin"
-title: "Zeplin"
-category: "AI"
-price_model: "freemium"
+slug: zeplin
+title: Zeplin
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://zeplin.io/"
+popularity: 1
 ---
 
 # Zeplin

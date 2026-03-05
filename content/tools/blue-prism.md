@@ -1,10 +1,11 @@
 ---
-slug: "blue-prism"
-title: "Blue Prism"
-category: "Automation"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: blue-prism
+title: Blue Prism
+category: Automation
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [automation, rpa, workflow]
 official_url: "https://www.blueprism.com/"
+popularity: 1
 ---
 
 # Blue Prism

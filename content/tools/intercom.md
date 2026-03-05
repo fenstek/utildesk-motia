@@ -3,13 +3,10 @@ slug: intercom
 title: Intercom
 category: AI
 price_model: freemium
-tags:
-  - developer
-  - marketing
-  - ai
-official_url: 'https://www.intercom.com/'
-created_at: "2026-02-14"
-popularity: 0
+tags: 
+official_url: "https://www.intercom.com/"
+created_at: 2026-02-14
+popularity: 1
 ---
 
 
