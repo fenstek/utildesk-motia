@@ -4,7 +4,7 @@ title: "FaceSwap"
 category: "AI"
 price_model: ""
 tags: [assistant, automation]
-official_url: "https://faceswap.com/"
+official_url: "https://faceswap.dev/"
 ---
 
 # FaceSwap
