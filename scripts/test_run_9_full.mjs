@@ -206,7 +206,17 @@ for (let i = 0; i < COUNT; i++){
     // 1) get next NEW tool (this script itself sets IN_PROGRESS)
     const out = runCapture('node', ['scripts/sheet_get_next_new.mjs']);
     if(!out) die('sheet_get_next_new.mjs returned empty output');
-    if(!out.includes('"found": true')) die(`No NEW tools found or unexpected output:\n${out}`);
+    if(!out.includes('\"found\": true')) {
+      let peek = null;
+      try {
+        peek = JSON.parse(out);
+      } catch {}
+      if (peek?.ok === true && peek?.found === false) {
+        console.log('[INFO] No more NEW tools found. Stopping batch early.');
+        break;
+      }
+      die(`No NEW tools found or unexpected output:\n${out}`);
+    }
 
     // Normalize tool JSON so downstream scripts can read slug/title at top-level
     let parsed;
