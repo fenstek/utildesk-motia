@@ -4,7 +4,7 @@ title: "Lovo AI"
 category: "AI"
 price_model: ""
 tags: [assistant, automation]
-official_url: "https://lovo-ai.com/"
+official_url: "https://lovo.ai/"
 ---
 
 # Lovo AI

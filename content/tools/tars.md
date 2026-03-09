@@ -4,7 +4,7 @@ title: "Tars"
 category: "AI"
 price_model: "je nach Anbieter/Plan"
 tags: [assistant, automation]
-official_url: "https://tars.io/"
+official_url: "https://hellotars.com/"
 ---
 
 # Tars
