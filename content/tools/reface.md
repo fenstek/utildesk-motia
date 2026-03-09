@@ -4,7 +4,7 @@ title: Reface
 category: AI
 price_model: 
 tags: [assistant, automation]
-official_url: "https://reface.com/"
+official_url: "https://reface.ai/"
 popularity: 0
 ---
 
