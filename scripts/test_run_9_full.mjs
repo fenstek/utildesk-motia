@@ -253,10 +253,10 @@ for (let i = 0; i < COUNT; i++){
 
     // tags gate (defense-in-depth — tags should have been validated by autogen)
     const tagsRaw = String(norm.tags || '').trim();
-    const tagsSpecific = tagsRaw.split(',').map(t => t.trim().toLowerCase()).filter(t => t && t !== 'ai' && t !== 'produktivität');
-    if (tagsRaw && tagsSpecific.length === 0) {
-      console.error(`[GATE] BLOCKED row=${rowNum} slug=${norm.slug || '?'}: missing specific tags`);
-      updateStatus(rowNum, 'NEEDS_REVIEW', 'publish blocked: missing specific tags', updateCounts);
+    const tagsSpecific = tagsRaw.split(',').map(t => t.trim().toLowerCase()).filter(t => t && t !== 'ai' && t !== 'produktivit?t');
+    if (tagsSpecific.length === 0) {
+      console.error(`[GATE] BLOCKED row=${rowNum} slug=${norm.slug || '?'}: missing or non-specific tags`);
+      updateStatus(rowNum, 'NEEDS_REVIEW', 'publish blocked: missing or non-specific tags', updateCounts);
       publishCounters.publish_blocked_missing_tags++;
       continue;
     }
