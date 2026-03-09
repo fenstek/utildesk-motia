@@ -1,10 +1,11 @@
 ---
-slug: "mate-translate"
-title: "Mate Translate"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: mate-translate
+title: Mate Translate
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [translation, workflow]
 official_url: "https://www.matetranslate.com/"
+popularity: 0
 ---
 
 # Mate Translate

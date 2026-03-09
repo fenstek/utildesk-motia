@@ -1,10 +1,11 @@
 ---
-slug: "canva-video-editor"
-title: "Canva Video Editor"
-category: "Design"
-price_model: "je nach Plan kostenfrei bis kostenpflichtig"
+slug: canva-video-editor
+title: Canva Video Editor
+category: Design
+price_model: je nach Plan kostenfrei bis kostenpflichtig
 tags: [video, design, content, marketing]
 official_url: "https://www.canva.com/video-editor/"
+popularity: 0
 ---
 
 # Canva Video Editor

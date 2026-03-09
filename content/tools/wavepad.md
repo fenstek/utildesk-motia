@@ -1,10 +1,11 @@
 ---
-slug: "wavepad"
-title: "WavePad"
-category: "AI"
-price_model: ""
+slug: wavepad
+title: WavePad
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.nch.com.au/wavepad/"
+popularity: 0
 ---
 
 # WavePad

@@ -1,10 +1,11 @@
 ---
-slug: "kaiber"
-title: "Kaiber"
-category: "AI"
-price_model: "freemium"
+slug: kaiber
+title: Kaiber
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.kaiber.ai/superstudio"
+popularity: 0
 ---
 
 # Kaiber

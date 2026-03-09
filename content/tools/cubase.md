@@ -1,10 +1,11 @@
 ---
-slug: "cubase"
-title: "Cubase"
-category: "AI"
-price_model: ""
+slug: cubase
+title: Cubase
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.steinberg.net/cubase/"
+popularity: 0
 ---
 
 # Cubase

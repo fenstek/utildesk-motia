@@ -1,10 +1,11 @@
 ---
-slug: "paddle"
-title: "Paddle"
-category: "AI"
-price_model: "freemium"
+slug: paddle
+title: Paddle
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.paddle.com/"
+popularity: 0
 ---
 
 # Paddle

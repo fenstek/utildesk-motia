@@ -1,10 +1,11 @@
 ---
-slug: "amazon-transcribe"
-title: "Amazon Transcribe"
-category: "AI"
-price_model: "Pay-as-you-go"
+slug: amazon-transcribe
+title: Amazon Transcribe
+category: AI
+price_model: Pay-as-you-go
 tags: []
 official_url: "https://aws.amazon.com/transcribe/"
+popularity: 0
 ---
 
 # Amazon Transcribe

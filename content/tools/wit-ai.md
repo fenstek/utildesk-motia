@@ -1,10 +1,11 @@
 ---
-slug: "wit-ai"
-title: "Wit.ai"
-category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: wit-ai
+title: Wit.ai
+category: AI
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [ai, nlp, api, chatbot]
 official_url: "https://wit.ai/"
+popularity: 0
 ---
 
 # Wit.ai

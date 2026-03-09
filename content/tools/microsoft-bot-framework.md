@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-bot-framework"
-title: "Microsoft Bot Framework"
-category: "AI"
-price_model: "freemium"
+slug: microsoft-bot-framework
+title: Microsoft Bot Framework
+category: AI
+price_model: freemium
 tags: [ai, chatbot]
 official_url: "https://learn.microsoft.com/en-us/azure/bot-service?view=azure-bot-service-4.0"
+popularity: 0
 ---
 
 # Microsoft Bot Framework

@@ -1,10 +1,11 @@
 ---
-slug: "sphinx"
-title: "Sphinx"
-category: "AI"
-price_model: "freemium"
+slug: sphinx
+title: Sphinx
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.sphinx-doc.org/en/master"
+popularity: 0
 ---
 
 # Sphinx

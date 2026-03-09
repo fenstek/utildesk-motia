@@ -1,10 +1,11 @@
 ---
-slug: "storyboarder"
-title: "Storyboarder"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: storyboarder
+title: Storyboarder
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [design, video, productivity, automation, workflow]
 official_url: "https://storyboarder.com/"
+popularity: 0
 ---
 
 # Storyboarder

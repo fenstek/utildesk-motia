@@ -1,10 +1,11 @@
 ---
-slug: "studiobinder"
-title: "StudioBinder"
-category: "Audio"
-price_model: "Je nach Plan unterschiedlich"
+slug: studiobinder
+title: StudioBinder
+category: Audio
+price_model: Je nach Plan unterschiedlich
 tags: [video, audio, productivity, workflow]
 official_url: "https://www.studiobinder.com/"
+popularity: 0
 ---
 
 # StudioBinder

@@ -1,10 +1,11 @@
 ---
-slug: "stackblitz"
-title: "StackBlitz"
-category: "AI"
-price_model: ""
+slug: stackblitz
+title: StackBlitz
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://stackblitz.com/"
+popularity: 0
 ---
 
 # StackBlitz

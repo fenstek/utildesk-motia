@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-cognitive-services-text-to-speech"
-title: "Microsoft Azure Cognitive Services - Text to Speech"
-category: "Audio"
-price_model: "Je nach Nutzung und Plan unterschiedlich"
+slug: microsoft-azure-cognitive-services-text-to-speech
+title: Microsoft Azure Cognitive Services - Text to Speech
+category: Audio
+price_model: Je nach Nutzung und Plan unterschiedlich
 tags: [ai,audio,api]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech"
+popularity: 0
 ---
 
 # Microsoft Azure Cognitive Services - Text to Speech

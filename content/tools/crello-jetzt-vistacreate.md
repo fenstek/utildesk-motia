@@ -1,10 +1,11 @@
 ---
-slug: "crello-jetzt-vistacreate"
-title: "Crello (jetzt VistaCreate)"
-category: "AI"
-price_model: "freemium"
+slug: crello-jetzt-vistacreate
+title: Crello (jetzt VistaCreate)
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://create.vista.com/"
+popularity: 0
 ---
 
 # Crello (jetzt VistaCreate)

@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-openai-service"
-title: "Microsoft Azure OpenAI Service"
-category: "AI"
-price_model: "freemium"
+slug: microsoft-azure-openai-service
+title: Microsoft Azure OpenAI Service
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview"
+popularity: 0
 ---
 
 # Microsoft Azure OpenAI Service

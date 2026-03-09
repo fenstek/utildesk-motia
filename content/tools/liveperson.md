@@ -1,10 +1,11 @@
 ---
-slug: "liveperson"
-title: "LivePerson"
-category: "AI"
-price_model: ""
+slug: liveperson
+title: LivePerson
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.liveperson.com/"
+popularity: 0
 ---
 
 # LivePerson

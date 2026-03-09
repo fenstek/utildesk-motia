@@ -1,10 +1,11 @@
 ---
-slug: "summarizebot"
-title: "SummarizeBot"
-category: "AI"
-price_model: ""
+slug: summarizebot
+title: SummarizeBot
+category: AI
+price_model: 
 tags: [chatbot, meeting]
 official_url: "https://www.summarizebot.com/"
+popularity: 0
 ---
 
 # SummarizeBot

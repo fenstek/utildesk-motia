@@ -1,10 +1,11 @@
 ---
-slug: "replicate"
-title: "Replicate"
-category: "AI Infrastructure"
-price_model: ""
+slug: replicate
+title: Replicate
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://replicate.com"
+popularity: 0
 ---
 
 # Replicate

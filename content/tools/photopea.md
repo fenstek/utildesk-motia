@@ -1,10 +1,11 @@
 ---
-slug: "photopea"
-title: "Photopea"
-category: "AI"
-price_model: "Freemium"
+slug: photopea
+title: Photopea
+category: AI
+price_model: Freemium
 tags: [image, workflow]
 official_url: "https://www.photopea.com/"
+popularity: 0
 ---
 
 # Photopea

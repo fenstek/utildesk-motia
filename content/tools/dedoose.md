@@ -1,10 +1,11 @@
 ---
-slug: "dedoose"
-title: "Dedoose"
-category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: dedoose
+title: Dedoose
+category: AI
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.dedoose.com/"
+popularity: 0
 ---
 
 # Dedoose

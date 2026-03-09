@@ -1,10 +1,11 @@
 ---
-slug: "drift"
-title: "Drift"
-category: "AI"
-price_model: "Je nach Plan und Anbieter variabel"
+slug: drift
+title: Drift
+category: AI
+price_model: Je nach Plan und Anbieter variabel
 tags: [assistant, automation]
 official_url: "https://www.salesloft.com/platform/drift"
+popularity: 0
 ---
 
 # Drift

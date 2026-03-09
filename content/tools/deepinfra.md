@@ -1,10 +1,11 @@
 ---
-slug: "deepinfra"
-title: "DeepInfra"
-category: "AI Infrastructure"
-price_model: ""
+slug: deepinfra
+title: DeepInfra
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://deepinfra.com"
+popularity: 0
 ---
 
 # DeepInfra

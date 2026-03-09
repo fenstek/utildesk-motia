@@ -1,10 +1,11 @@
 ---
-slug: "bolt-new"
-title: "Bolt.new"
-category: "Developer"
-price_model: ""
+slug: bolt-new
+title: Bolt.new
+category: Developer
+price_model: 
 tags: []
 official_url: "https://bolt.new"
+popularity: 0
 ---
 
 # Bolt.new

@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-translator"
-title: "Microsoft Translator"
-category: "AI"
-price_model: ""
+slug: microsoft-translator
+title: Microsoft Translator
+category: AI
+price_model: 
 tags: []
 official_url: "https://translator.microsoft.com/"
+popularity: 0
 ---
 
 # Microsoft Translator

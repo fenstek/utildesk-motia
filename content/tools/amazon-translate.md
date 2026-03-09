@@ -1,10 +1,11 @@
 ---
-slug: "amazon-translate"
-title: "Amazon Translate"
-category: "AI"
-price_model: "Je nach Nutzung, nutzungsabhängige Abrechnung"
+slug: amazon-translate
+title: Amazon Translate
+category: AI
+price_model: Je nach Nutzung, nutzungsabhängige Abrechnung
 tags: [ai, translation, api]
 official_url: "https://aws.amazon.com/translate/"
+popularity: 0
 ---
 
 # Amazon Translate

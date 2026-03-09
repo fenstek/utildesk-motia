@@ -1,10 +1,11 @@
 ---
-slug: "avatarify"
-title: "Avatarify"
-category: "AI"
-price_model: ""
+slug: avatarify
+title: Avatarify
+category: AI
+price_model: 
 tags: [image, video, developer-tools]
 official_url: "https://github.com/alievk/avatarify-python"
+popularity: 0
 ---
 
 # Avatarify

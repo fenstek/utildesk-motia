@@ -1,10 +1,11 @@
 ---
-slug: "soundtrap"
-title: "Soundtrap"
-category: "Audio"
-price_model: "Abonnement-basiert"
+slug: soundtrap
+title: Soundtrap
+category: Audio
+price_model: Abonnement-basiert
 tags: [audio, productivity]
 official_url: "https://www.soundtrap.com/home/"
+popularity: 0
 ---
 
 # Soundtrap

@@ -1,10 +1,11 @@
 ---
-slug: "lovable"
-title: "Lovable"
-category: "Developer"
-price_model: ""
+slug: lovable
+title: Lovable
+category: Developer
+price_model: 
 tags: [ai, coding, app-builder]
 official_url: "https://lovable.dev/"
+popularity: 0
 ---
 
 # Lovable

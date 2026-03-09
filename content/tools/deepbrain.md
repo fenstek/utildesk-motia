@@ -1,10 +1,11 @@
 ---
-slug: "deepbrain"
-title: "DeepBrain"
-category: "AI"
-price_model: "je nach Anbieter/Plan"
+slug: deepbrain
+title: DeepBrain
+category: AI
+price_model: je nach Anbieter/Plan
 tags: [automation, data, analytics, productivity]
 official_url: "https://thedeepbrain.com/"
+popularity: 0
 ---
 
 # DeepBrain

@@ -1,10 +1,11 @@
 ---
-slug: "glia"
-title: "Glia"
-category: "AI"
-price_model: "freemium"
+slug: glia
+title: Glia
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.glia.com/"
+popularity: 0
 ---
 
 # Glia

@@ -1,10 +1,11 @@
 ---
-slug: "thunkable"
-title: "Thunkable"
-category: "AI"
-price_model: "Je nach Plan verschieden"
+slug: thunkable
+title: Thunkable
+category: AI
+price_model: Je nach Plan verschieden
 tags: [assistant, automation]
 official_url: "https://thunkable.com/"
+popularity: 0
 ---
 
 # Thunkable

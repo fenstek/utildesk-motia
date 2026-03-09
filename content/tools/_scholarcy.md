@@ -1,10 +1,11 @@
 ---
-slug: "scholarcy"
-title: "Scholarcy"
-category: "AI"
-price_model: ""
+slug: scholarcy
+title: Scholarcy
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.scholarcy.com/"
+popularity: 0
 ---
 
 # Scholarcy

@@ -1,10 +1,11 @@
 ---
-slug: "devin"
-title: "Devin"
-category: "AI Agents"
-price_model: ""
+slug: devin
+title: Devin
+category: AI Agents
+price_model: 
 tags: [ai, coding, automation, developer]
 official_url: "https://devin.ai/"
+popularity: 0
 ---
 
 # Devin

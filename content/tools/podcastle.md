@@ -1,10 +1,11 @@
 ---
-slug: "podcastle"
-title: "Podcastle"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: podcastle
+title: Podcastle
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [audio, transcription, content, video]
 official_url: "https://async.com/"
+popularity: 0
 ---
 
 # Podcastle

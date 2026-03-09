@@ -1,10 +1,11 @@
 ---
-slug: "sanebox"
-title: "SaneBox"
-category: "AI"
-price_model: "Abonnement"
+slug: sanebox
+title: SaneBox
+category: AI
+price_model: Abonnement
 tags: [productivity, automation, workflow]
 official_url: "https://www.sanebox.com/"
+popularity: 0
 ---
 
 # SaneBox

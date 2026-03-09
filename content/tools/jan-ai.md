@@ -1,10 +1,11 @@
 ---
-slug: "jan-ai"
-title: "Jan"
-category: "AI"
-price_model: ""
+slug: jan-ai
+title: Jan
+category: AI
+price_model: 
 tags: []
 official_url: "https://jan.ai"
+popularity: 0
 ---
 
 # Jan

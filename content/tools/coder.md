@@ -1,10 +1,11 @@
 ---
-slug: "coder"
-title: "Coder"
-category: "Developer"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: coder
+title: Coder
+category: Developer
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [coding,workflow]
 official_url: "https://coder.com/"
+popularity: 0
 ---
 
 # Coder

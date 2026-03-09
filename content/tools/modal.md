@@ -1,10 +1,11 @@
 ---
-slug: "modal"
-title: "Modal"
-category: "Cloud"
-price_model: ""
+slug: modal
+title: Modal
+category: Cloud
+price_model: 
 tags: []
 official_url: "https://modal.com"
+popularity: 0
 ---
 
 # Modal

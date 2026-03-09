@@ -1,10 +1,11 @@
 ---
-slug: "amazon-polly"
-title: "Amazon Polly"
-category: "AI"
-price_model: "Pay-as-you-go"
+slug: amazon-polly
+title: Amazon Polly
+category: AI
+price_model: Pay-as-you-go
 tags: []
 official_url: "https://aws.amazon.com/polly/"
+popularity: 0
 ---
 
 # Amazon Polly

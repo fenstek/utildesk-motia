@@ -1,10 +1,11 @@
 ---
-slug: "lokalise"
-title: "Lokalise"
-category: "AI"
-price_model: ""
+slug: lokalise
+title: Lokalise
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://lokalise.com/"
+popularity: 0
 ---
 
 # Lokalise

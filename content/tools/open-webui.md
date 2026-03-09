@@ -1,10 +1,11 @@
 ---
-slug: "open-webui"
-title: "Open WebUI"
-category: "AI"
-price_model: ""
+slug: open-webui
+title: Open WebUI
+category: AI
+price_model: 
 tags: []
 official_url: "https://openwebui.com"
+popularity: 0
 ---
 
 # Open WebUI

@@ -1,10 +1,11 @@
 ---
-slug: "openai-codex"
-title: "OpenAI Codex"
-category: "AI"
-price_model: "freemium"
+slug: openai-codex
+title: OpenAI Codex
+category: AI
+price_model: freemium
 tags: [ai, devtools, coding, workflow]
 official_url: "https://openai.com/codex"
+popularity: 0
 ---
 
 # OpenAI Codex

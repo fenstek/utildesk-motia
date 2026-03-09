@@ -1,10 +1,11 @@
 ---
-slug: "wix-mit-velo"
-title: "Wix mit Velo"
-category: "AI"
-price_model: "Je nach Plan, inklusive kostenloser Basisversion"
+slug: wix-mit-velo
+title: Wix mit Velo
+category: AI
+price_model: Je nach Plan, inklusive kostenloser Basisversion
 tags: []
 official_url: "https://www.wix.com/studio/developers/web-development"
+popularity: 0
 ---
 
 # Wix mit Velo

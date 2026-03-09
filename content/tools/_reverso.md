@@ -1,10 +1,11 @@
 ---
-slug: "reverso"
-title: "Reverso"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: reverso
+title: Reverso
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [assistant, automation]
 official_url: "https://www.reverso.net/"
+popularity: 0
 ---
 
 # Reverso

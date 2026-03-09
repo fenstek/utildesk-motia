@@ -1,10 +1,11 @@
 ---
-slug: "zest-ai"
-title: "Zest AI"
-category: "AI"
-price_model: "freemium"
+slug: zest-ai
+title: Zest AI
+category: AI
+price_model: freemium
 tags: [data, analytics, automation]
 official_url: "https://www.zest.ai/"
+popularity: 0
 ---
 
 # Zest AI

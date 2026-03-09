@@ -1,10 +1,11 @@
 ---
-slug: "sonix"
-title: "Sonix"
-category: "AI"
-price_model: "freemium"
+slug: sonix
+title: Sonix
+category: AI
+price_model: freemium
 tags: [ai, transcription, audio]
 official_url: "https://sonix.ai/"
+popularity: 0
 ---
 
 # Sonix

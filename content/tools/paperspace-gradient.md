@@ -1,10 +1,11 @@
 ---
-slug: "paperspace-gradient"
-title: "Paperspace Gradient"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: paperspace-gradient
+title: Paperspace Gradient
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [data, analytics, automation, workflow]
 official_url: "https://www.paperspace.com/artificial-intelligence"
+popularity: 0
 ---
 
 # Paperspace Gradient

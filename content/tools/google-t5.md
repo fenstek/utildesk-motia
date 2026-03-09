@@ -1,10 +1,11 @@
 ---
-slug: "google-t5"
-title: "Google T5 (Text-to-Text Transfer Transformer)"
-category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: google-t5
+title: Google T5 (Text-to-Text Transfer Transformer)
+category: AI
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [llm, developer-tools, api, education]
 official_url: "https://github.com/google-research/text-to-text-transfer-transformer"
+popularity: 0
 ---
 
 # Google T5 (Text-to-Text Transfer Transformer)

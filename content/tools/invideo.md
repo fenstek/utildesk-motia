@@ -1,10 +1,11 @@
 ---
-slug: "invideo"
-title: "InVideo"
-category: "Video"
-price_model: "Je nach Plan unterschiedlich"
+slug: invideo
+title: InVideo
+category: Video
+price_model: Je nach Plan unterschiedlich
 tags: [video,workflow]
 official_url: "https://invideo.io/"
+popularity: 0
 ---
 
 # InVideo

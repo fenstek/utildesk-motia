@@ -1,10 +1,11 @@
 ---
-slug: "aide"
-title: "AIDE"
-category: "AI"
-price_model: "freemium"
+slug: aide
+title: AIDE
+category: AI
+price_model: freemium
 tags: [customer-support, automation, productivity, workflow]
 official_url: "https://aide.app/"
+popularity: 0
 ---
 
 # AIDE

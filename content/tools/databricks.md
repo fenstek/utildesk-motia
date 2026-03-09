@@ -1,10 +1,11 @@
 ---
-slug: "databricks"
-title: "Databricks"
-category: "AI"
-price_model: "Je nach Plan und Nutzung"
+slug: databricks
+title: Databricks
+category: AI
+price_model: Je nach Plan und Nutzung
 tags: [data, workflow]
 official_url: "https://www.databricks.com/"
+popularity: 0
 ---
 
 # Databricks

@@ -1,10 +1,11 @@
 ---
-slug: "nvivo"
-title: "NVivo"
-category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+slug: nvivo
+title: NVivo
+category: AI
+price_model: Je nach Plan und Anbieter unterschiedlich
 tags: [assistant, automation]
 official_url: "https://lumivero.com/products/nvivo/"
+popularity: 0
 ---
 
 # NVivo

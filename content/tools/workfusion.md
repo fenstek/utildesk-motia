@@ -1,10 +1,11 @@
 ---
-slug: "workfusion"
-title: "WorkFusion"
-category: "AI"
-price_model: ""
+slug: workfusion
+title: WorkFusion
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.workfusion.com/"
+popularity: 0
 ---
 
 # WorkFusion

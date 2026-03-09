@@ -1,10 +1,11 @@
 ---
-slug: "kodular"
-title: "Kodular"
-category: "AI"
-price_model: "kostenlos mit optionalen Premium-Funktionen"
+slug: kodular
+title: Kodular
+category: AI
+price_model: kostenlos mit optionalen Premium-Funktionen
 tags: [no-code, automation, productivity, design, developer-tools]
 official_url: "https://www.kodular.io/"
+popularity: 0
 ---
 
 # Kodular

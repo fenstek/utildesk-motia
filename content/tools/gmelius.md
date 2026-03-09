@@ -1,10 +1,11 @@
 ---
-slug: "gmelius"
-title: "Gmelius"
-category: "AI"
-price_model: "Abonnement-basierte Preisgestaltung"
+slug: gmelius
+title: Gmelius
+category: AI
+price_model: Abonnement-basierte Preisgestaltung
 tags: [productivity, automation, workflow, crm]
 official_url: "https://gmelius.com/"
+popularity: 0
 ---
 
 # Gmelius

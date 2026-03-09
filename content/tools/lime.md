@@ -1,10 +1,11 @@
 ---
-slug: "lime"
-title: "LIME (Local Interpretable Model-agnostic Explanations)"
-category: "AI"
-price_model: "Open Source / Kostenlos"
+slug: lime
+title: LIME (Local Interpretable Model-agnostic Explanations)
+category: AI
+price_model: Open Source / Kostenlos
 tags: [data, analytics, education, developer-tools]
 official_url: "https://github.com/marcotcr/lime"
+popularity: 0
 ---
 
 # LIME (Local Interpretable Model-agnostic Explanations)

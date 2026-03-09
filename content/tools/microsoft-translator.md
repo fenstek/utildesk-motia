@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-translator"
-title: "Microsoft Translator"
-category: "AI"
-price_model: "Je nach Plan, meist nutzbar als kostenlose Basisversion und kostenpflichtige Erweiterungen"
+slug: microsoft-translator
+title: Microsoft Translator
+category: AI
+price_model: Je nach Plan, meist nutzbar als kostenlose Basisversion und kostenpflichtige Erweiterungen
 tags: [translation, productivity, automation]
 official_url: "https://translator.microsoft.com/"
+popularity: 0
 ---
 
 # Microsoft Translator

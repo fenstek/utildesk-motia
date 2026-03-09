@@ -1,10 +1,11 @@
 ---
-slug: "tars"
-title: "Tars"
-category: "AI"
-price_model: "je nach Anbieter/Plan"
+slug: tars
+title: Tars
+category: AI
+price_model: je nach Anbieter/Plan
 tags: [assistant, automation]
 official_url: "https://hellotars.com/"
+popularity: 1
 ---
 
 # Tars

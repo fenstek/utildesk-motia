@@ -1,10 +1,11 @@
 ---
-slug: "dovetail"
-title: "Dovetail"
-category: "AI"
-price_model: "freemium"
+slug: dovetail
+title: Dovetail
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://dovetail.com/"
+popularity: 0
 ---
 
 # Dovetail

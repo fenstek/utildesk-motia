@@ -1,10 +1,11 @@
 ---
-slug: "graphcore-ipu"
-title: "Graphcore IPU"
-category: "AI"
-price_model: "je nach Anbieter und Nutzung"
+slug: graphcore-ipu
+title: Graphcore IPU
+category: AI
+price_model: je nach Anbieter und Nutzung
 tags: [data, analytics, developer-tools]
 official_url: "https://www.graphcore.ai/products/ipu"
+popularity: 0
 ---
 
 # Graphcore IPU

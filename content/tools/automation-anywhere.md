@@ -1,10 +1,11 @@
 ---
-slug: "automation-anywhere"
-title: "Automation Anywhere"
-category: "AI"
-price_model: "je nach Plan und Unternehmensgröße"
+slug: automation-anywhere
+title: Automation Anywhere
+category: AI
+price_model: je nach Plan und Unternehmensgröße
 tags: [ai, automation, rpa, productivity, enterprise]
 official_url: "https://www.automationanywhere.com/"
+popularity: 0
 ---
 
 # Automation Anywhere

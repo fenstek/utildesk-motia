@@ -1,10 +1,11 @@
 ---
-slug: "snagit"
-title: "Snagit"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: snagit
+title: Snagit
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://www.techsmith.com/snagit/"
+popularity: 0
 ---
 
 # Snagit

@@ -1,10 +1,11 @@
 ---
-slug: "visual-studio-code-mit-remote-extensions"
-title: "Visual Studio Code mit Remote-Extensions"
-category: "Developer"
-price_model: "kostenlos"
+slug: visual-studio-code-mit-remote-extensions
+title: Visual Studio Code mit Remote-Extensions
+category: Developer
+price_model: kostenlos
 tags: [coding, workflow]
 official_url: "https://code.visualstudio.com/docs/remote/remote-overview"
+popularity: 0
 ---
 
 # Visual Studio Code mit Remote-Extensions

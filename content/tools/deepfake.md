@@ -1,10 +1,11 @@
 ---
-slug: "deepfake"
-title: "Deepfake"
-category: "AI"
-price_model: "freemium"
+slug: deepfake
+title: Deepfake
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://deepfake.com/"
+popularity: 0
 ---
 
 # Deepfake

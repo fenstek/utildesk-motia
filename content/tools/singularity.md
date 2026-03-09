@@ -1,10 +1,11 @@
 ---
-slug: "singularity"
-title: "Singularity"
-category: "AI"
-price_model: "freemium"
+slug: singularity
+title: Singularity
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation, productivity, data]
 official_url: "https://www.singularity.com/"
+popularity: 0
 ---
 
 # Singularity

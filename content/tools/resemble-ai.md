@@ -1,10 +1,11 @@
 ---
-slug: "resemble-ai"
-title: "Resemble AI"
-category: "Audio"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: resemble-ai
+title: Resemble AI
+category: Audio
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [audio, voice, api]
 official_url: "https://www.resemble.ai/"
+popularity: 0
 ---
 
 # Resemble AI

@@ -1,10 +1,11 @@
 ---
-slug: "ocenaudio"
-title: "Ocenaudio"
-category: "Audio"
-price_model: "kostenlos"
+slug: ocenaudio
+title: Ocenaudio
+category: Audio
+price_model: kostenlos
 tags: [audio, workflow]
 official_url: "https://www.ocenaudio.com/"
+popularity: 0
 ---
 
 # Ocenaudio

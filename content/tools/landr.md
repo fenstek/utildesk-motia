@@ -1,10 +1,11 @@
 ---
-slug: "landr"
-title: "LANDR"
-category: "AI"
-price_model: "Abonnement, Einmalzahlung"
+slug: landr
+title: LANDR
+category: AI
+price_model: Abonnement, Einmalzahlung
 tags: [audio, productivity, automation, workflow]
 official_url: "https://www.landr.com/"
+popularity: 0
 ---
 
 # LANDR

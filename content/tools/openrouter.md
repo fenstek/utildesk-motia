@@ -1,10 +1,11 @@
 ---
-slug: "openrouter"
-title: "OpenRouter"
-category: "AI Infrastructure"
-price_model: ""
+slug: openrouter
+title: OpenRouter
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://openrouter.ai"
+popularity: 0
 ---
 
 # OpenRouter

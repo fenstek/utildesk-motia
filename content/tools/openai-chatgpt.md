@@ -1,10 +1,11 @@
 ---
-slug: "openai-chatgpt"
-title: "OpenAI ChatGPT"
-category: "AI"
-price_model: "Je nach Anbieter/Plan meist Freemium mit kostenpflichtigen Optionen"
+slug: openai-chatgpt
+title: OpenAI ChatGPT
+category: AI
+price_model: Je nach Anbieter/Plan meist Freemium mit kostenpflichtigen Optionen
 tags: [assistant, chatbot, writing, productivity, coding]
 official_url: "https://chatgpt.com/overview"
+popularity: 0
 ---
 
 # OpenAI ChatGPT

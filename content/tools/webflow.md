@@ -1,10 +1,11 @@
 ---
-slug: "webflow"
-title: "Webflow"
-category: "AI"
-price_model: "Abonnement-basiert"
+slug: webflow
+title: Webflow
+category: AI
+price_model: Abonnement-basiert
 tags: [design, no-code, marketing, automation, productivity]
 official_url: "https://webflow.com/"
+popularity: 0
 ---
 
 # Webflow

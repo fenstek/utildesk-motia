@@ -1,10 +1,11 @@
 ---
-slug: "descriptive"
-title: "Descriptive"
-category: "Video"
-price_model: "freemium"
+slug: descriptive
+title: Descriptive
+category: Video
+price_model: freemium
 tags: [ai, video]
 official_url: "https://descriptive.ai/"
+popularity: 0
 ---
 
 # Descriptive

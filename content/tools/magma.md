@@ -1,10 +1,11 @@
 ---
-slug: "magma"
-title: "Magma"
-category: "AI"
-price_model: "freemium"
+slug: magma
+title: Magma
+category: AI
+price_model: freemium
 tags: [design, image, productivity]
 official_url: "https://magma.com/"
+popularity: 0
 ---
 
 # Magma

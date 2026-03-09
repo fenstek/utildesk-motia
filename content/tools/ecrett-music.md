@@ -1,10 +1,11 @@
 ---
-slug: "ecrett-music"
-title: "Ecrett Music"
-category: "Audio"
-price_model: "Je nach Plan unterschiedlich"
+slug: ecrett-music
+title: Ecrett Music
+category: Audio
+price_model: Je nach Plan unterschiedlich
 tags: [audio, productivity, automation]
 official_url: "https://ecrettmusic.com/"
+popularity: 0
 ---
 
 # Ecrett Music

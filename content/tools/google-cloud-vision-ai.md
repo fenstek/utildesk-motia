@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-vision-ai"
-title: "Google Cloud Vision AI"
-category: "AI"
-price_model: "freemium"
+slug: google-cloud-vision-ai
+title: Google Cloud Vision AI
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://cloud.google.com/vision"
+popularity: 0
 ---
 
 # Google Cloud Vision AI

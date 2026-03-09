@@ -1,10 +1,11 @@
 ---
-slug: "google-what-if-tool"
-title: "Google What-If Tool"
-category: "AI"
-price_model: "kostenfrei"
+slug: google-what-if-tool
+title: Google What-If Tool
+category: AI
+price_model: kostenfrei
 tags: [data, analytics, developer-tools, education]
 official_url: "https://pair-code.github.io/what-if-tool/"
+popularity: 0
 ---
 
 # Google What-If Tool

@@ -1,10 +1,11 @@
 ---
-slug: "openai-gpt-modelle"
-title: "OpenAI GPT-Modelle"
-category: "AI"
-price_model: "Je nach Anbieter und Nutzung"
+slug: openai-gpt-modelle
+title: OpenAI GPT-Modelle
+category: AI
+price_model: Je nach Anbieter und Nutzung
 tags: []
-official_url: 'https://developers.openai.com/api/docs/models'
+official_url: "https://developers.openai.com/api/docs/models"
+popularity: 0
 ---
 
 # OpenAI GPT-Modelle

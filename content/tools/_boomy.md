@@ -1,10 +1,11 @@
 ---
-slug: "boomy"
-title: "Boomy"
-category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+slug: boomy
+title: Boomy
+category: AI
+price_model: Je nach Plan und Anbieter unterschiedlich
 tags: [assistant, automation]
 official_url: "https://boomy.com/"
+popularity: 0
 ---
 
 # Boomy

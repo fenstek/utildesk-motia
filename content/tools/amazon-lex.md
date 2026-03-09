@@ -1,10 +1,11 @@
 ---
-slug: "amazon-lex"
-title: "Amazon Lex"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: amazon-lex
+title: Amazon Lex
+category: AI
+price_model: Nutzungsbasiert
 tags: [chatbot, assistant, automation, customer-support, developer-tools]
 official_url: "https://aws.amazon.com/lex/"
+popularity: 0
 ---
 
 # Amazon Lex

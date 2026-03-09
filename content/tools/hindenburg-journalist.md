@@ -1,10 +1,11 @@
 ---
-slug: "hindenburg-journalist"
-title: "Hindenburg Journalist"
-category: "AI"
-price_model: "je nach Plan unterschiedlich"
+slug: hindenburg-journalist
+title: Hindenburg Journalist
+category: AI
+price_model: je nach Plan unterschiedlich
 tags: [audio, productivity, automation, workflow]
 official_url: "https://hindenburg.com/"
+popularity: 0
 ---
 
 # Hindenburg Journalist

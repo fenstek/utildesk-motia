@@ -1,10 +1,11 @@
 ---
-slug: "deepgram"
-title: "Deepgram"
-category: "AI"
-price_model: ""
+slug: deepgram
+title: Deepgram
+category: AI
+price_model: 
 tags: []
 official_url: "https://deepgram.com/"
+popularity: 0
 ---
 
 # Deepgram

@@ -1,10 +1,11 @@
 ---
-slug: "befunky"
-title: "BeFunky"
-category: "AI"
-price_model: ""
+slug: befunky
+title: BeFunky
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.befunky.com/"
+popularity: 0
 ---
 
 # BeFunky

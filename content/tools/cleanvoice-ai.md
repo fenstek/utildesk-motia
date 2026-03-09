@@ -1,10 +1,11 @@
 ---
-slug: "cleanvoice-ai"
-title: "Cleanvoice AI"
-category: "Audio"
-price_model: "Je nach Anbieter/Plan verschiedene Preisoptionen"
+slug: cleanvoice-ai
+title: Cleanvoice AI
+category: Audio
+price_model: Je nach Anbieter/Plan verschiedene Preisoptionen
 tags: [ai, audio, editing, automation]
 official_url: "https://cleanvoice.ai/"
+popularity: 0
 ---
 
 # Cleanvoice AI

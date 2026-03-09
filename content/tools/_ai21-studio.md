@@ -1,10 +1,11 @@
 ---
-slug: "ai21-studio"
-title: "AI21 Studio"
-category: "Audio"
-price_model: "Je nach Plan unterschiedlich"
+slug: ai21-studio
+title: AI21 Studio
+category: Audio
+price_model: Je nach Plan unterschiedlich
 tags: [writing, content, automation, productivity, api]
 official_url: "https://www.ai21.com/"
+popularity: 0
 ---
 
 # AI21 Studio

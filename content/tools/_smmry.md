@@ -1,10 +1,11 @@
 ---
-slug: "smmry"
-title: "SMMRY"
-category: "AI"
-price_model: ""
+slug: smmry
+title: SMMRY
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://smmry.com/"
+popularity: 0
 ---
 
 # SMMRY

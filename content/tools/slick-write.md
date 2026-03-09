@@ -1,10 +1,11 @@
 ---
-slug: "slick-write"
-title: "Slick Write"
-category: "Produktivität"
-price_model: "kostenlos mit optionalen Premium-Funktionen"
+slug: slick-write
+title: Slick Write
+category: Produktivität
+price_model: kostenlos mit optionalen Premium-Funktionen
 tags: [writing, productivity]
 official_url: "https://www.slickwrite.com/"
+popularity: 0
 ---
 
 # Slick Write

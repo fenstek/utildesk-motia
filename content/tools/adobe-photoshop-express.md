@@ -1,10 +1,11 @@
 ---
-slug: "adobe-photoshop-express"
-title: "Adobe Photoshop Express"
-category: "Design"
-price_model: "kostenlos mit In-App-Käufen"
+slug: adobe-photoshop-express
+title: Adobe Photoshop Express
+category: Design
+price_model: kostenlos mit In-App-Käufen
 tags: [design, image]
 official_url: "https://www.adobe.com/express/feature/photo/editor"
+popularity: 0
 ---
 
 # Adobe Photoshop Express

@@ -1,10 +1,11 @@
 ---
-slug: "zao"
-title: "Zao"
-category: "AI"
-price_model: ""
+slug: zao
+title: Zao
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://zao.ai/"
+popularity: 0
 ---
 
 # Zao

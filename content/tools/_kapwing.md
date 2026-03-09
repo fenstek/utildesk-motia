@@ -1,10 +1,11 @@
 ---
-slug: "kapwing"
-title: "Kapwing"
-category: "AI"
-price_model: ""
+slug: kapwing
+title: Kapwing
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.kapwing.com/"
+popularity: 0
 ---
 
 # Kapwing

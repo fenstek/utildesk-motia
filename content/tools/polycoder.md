@@ -1,10 +1,11 @@
 ---
-slug: "polycoder"
-title: "PolyCoder"
-category: "Developer"
-price_model: "Abhängig vom Anbieter/Plan"
+slug: polycoder
+title: PolyCoder
+category: Developer
+price_model: Abhängig vom Anbieter/Plan
 tags: [coding, developer-tools, education]
 official_url: "https://github.com/VHellendoorn/Code-LMs"
+popularity: 0
 ---
 
 # PolyCoder

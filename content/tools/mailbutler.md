@@ -1,10 +1,11 @@
 ---
-slug: "mailbutler"
-title: "Mailbutler"
-category: "AI"
-price_model: "Je nach Plan, von kostenlos bis Abonnement"
+slug: mailbutler
+title: Mailbutler
+category: AI
+price_model: Je nach Plan, von kostenlos bis Abonnement
 tags: [productivity, automation, marketing]
 official_url: "https://www.mailbutler.io/"
+popularity: 0
 ---
 
 # Mailbutler

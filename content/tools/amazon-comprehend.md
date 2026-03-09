@@ -1,10 +1,11 @@
 ---
-slug: "amazon-comprehend"
-title: "Amazon Comprehend"
-category: "AI"
-price_model: "Abrechnung nach Nutzung"
+slug: amazon-comprehend
+title: Amazon Comprehend
+category: AI
+price_model: Abrechnung nach Nutzung
 tags: [data, analytics, automation, productivity]
 official_url: "https://aws.amazon.com/comprehend/"
+popularity: 0
 ---
 
 # Amazon Comprehend

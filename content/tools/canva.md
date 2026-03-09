@@ -7,7 +7,7 @@ tags:
 official_url: "https://www.canva.com/"
 affiliate_url: "https://www.canva.com/"
 created_at: 2026-02-07
-popularity: 1
+popularity: 2
 ---
 
 

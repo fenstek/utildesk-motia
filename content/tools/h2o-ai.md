@@ -1,10 +1,11 @@
 ---
-slug: "h2o-ai"
-title: "H2O.ai"
-category: "AI"
-price_model: "je nach Anbieter/Plan"
+slug: h2o-ai
+title: H2O.ai
+category: AI
+price_model: je nach Anbieter/Plan
 tags: [data, analytics, automation]
 official_url: "https://h2o.ai/"
+popularity: 0
 ---
 
 # H2O.ai

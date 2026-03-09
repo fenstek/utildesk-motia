@@ -1,10 +1,11 @@
 ---
-slug: "reface"
-title: "Reface"
-category: "AI"
-price_model: ""
+slug: reface
+title: Reface
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://reface.com/"
+popularity: 0
 ---
 
 # Reface

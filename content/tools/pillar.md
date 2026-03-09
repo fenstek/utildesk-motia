@@ -1,10 +1,11 @@
 ---
-slug: "pillar"
-title: "Pillar"
-category: "AI"
-price_model: "freemium"
+slug: pillar
+title: Pillar
+category: AI
+price_model: freemium
 tags: [ai,assistant,productivity,automation,data]
 official_url: "https://www.pillar.io/"
+popularity: 0
 ---
 
 # Pillar

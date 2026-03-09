@@ -1,10 +1,11 @@
 ---
-slug: "plot"
-title: "Plot"
-category: "AI"
-price_model: "Je nach Anbieter und Tarif unterschiedlich"
+slug: plot
+title: Plot
+category: AI
+price_model: Je nach Anbieter und Tarif unterschiedlich
 tags: [social-media, marketing, automation, productivity]
 official_url: "https://www.plot.so/"
+popularity: 0
 ---
 
 # Plot

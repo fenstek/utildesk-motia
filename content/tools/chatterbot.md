@@ -1,10 +1,11 @@
 ---
-slug: "chatterbot"
-title: "ChatterBot"
-category: "AI"
-price_model: "freemium"
+slug: chatterbot
+title: ChatterBot
+category: AI
+price_model: freemium
 tags: [chatbot, coding, developer-tools, api]
 official_url: "https://github.com/gunthercox/ChatterBot"
+popularity: 0
 ---
 
 # ChatterBot

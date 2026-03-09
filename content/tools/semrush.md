@@ -1,10 +1,11 @@
 ---
-slug: "semrush"
-title: "SEMrush"
-category: "AI"
-price_model: "Abonnement-basiert, verschiedene Pläne"
+slug: semrush
+title: SEMrush
+category: AI
+price_model: Abonnement-basiert, verschiedene Pläne
 tags: [marketing, seo, automation, analytics]
 official_url: "https://www.semrush.com/"
+popularity: 0
 ---
 
 # SEMrush

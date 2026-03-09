@@ -1,10 +1,11 @@
 ---
-slug: "spacy"
-title: "spaCy"
-category: "AI"
-price_model: "Open Source / Kommerzielle Lizenzen"
+slug: spacy
+title: spaCy
+category: AI
+price_model: Open Source / Kommerzielle Lizenzen
 tags: [coding, developer-tools, api, data]
 official_url: "https://spacy.io/"
+popularity: 0
 ---
 
 # spaCy

@@ -1,10 +1,11 @@
 ---
-slug: "google-workspace"
-title: "Google Workspace"
-category: "Produktivität"
-price_model: "Abonnement-basiert"
+slug: google-workspace
+title: Google Workspace
+category: Produktivität
+price_model: Abonnement-basiert
 tags: [productivity,collaboration,workspace]
 official_url: "https://workspace.google.com/"
+popularity: 0
 ---
 
 # Google Workspace

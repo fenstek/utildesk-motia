@@ -1,10 +1,11 @@
 ---
-slug: "semrush"
-title: "SEMrush"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: semrush
+title: SEMrush
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://www.semrush.com/"
+popularity: 0
 ---
 
 # SEMrush

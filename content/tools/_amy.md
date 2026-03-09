@@ -1,10 +1,11 @@
 ---
-slug: "amy"
-title: "Amy"
-category: "AI"
-price_model: "freemium"
+slug: amy
+title: Amy
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://amy.ai/"
+popularity: 1
 ---
 
 # Amy

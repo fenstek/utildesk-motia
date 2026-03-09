@@ -1,10 +1,11 @@
 ---
-slug: "kapwing"
-title: "Kapwing"
-category: "AI"
-price_model: "Je nach Plan kostenlos und kostenpflichtig"
+slug: kapwing
+title: Kapwing
+category: AI
+price_model: Je nach Plan kostenlos und kostenpflichtig
 tags: [video, content, design, marketing]
 official_url: "https://www.kapwing.com/"
+popularity: 0
 ---
 
 # Kapwing

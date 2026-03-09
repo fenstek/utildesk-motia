@@ -1,10 +1,11 @@
 ---
-slug: "runpod"
-title: "RunPod"
-category: "Cloud"
-price_model: ""
+slug: runpod
+title: RunPod
+category: Cloud
+price_model: 
 tags: []
 official_url: "https://www.runpod.io"
+popularity: 0
 ---
 
 # RunPod

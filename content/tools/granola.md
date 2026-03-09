@@ -1,10 +1,11 @@
 ---
-slug: "granola"
-title: "Granola"
-category: "Produktivität"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: granola
+title: Granola
+category: Produktivität
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [ai, meeting, notes, assistant]
 official_url: "https://www.granola.ai/"
+popularity: 0
 ---
 
 # Granola

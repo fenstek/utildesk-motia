@@ -1,10 +1,11 @@
 ---
-slug: "befunky"
-title: "BeFunky"
-category: "AI"
+slug: befunky
+title: BeFunky
+category: AI
 price_model: "Je nach Plan: kostenlos, Premium, Plus"
 tags: [design, image, automation, productivity]
 official_url: "https://www.befunky.com/"
+popularity: 0
 ---
 
 # BeFunky

@@ -1,10 +1,11 @@
 ---
-slug: "localize"
-title: "Localize"
-category: "AI"
-price_model: "freemium"
+slug: localize
+title: Localize
+category: AI
+price_model: freemium
 tags: [ai, translation, workflow]
 official_url: "https://localize.io/"
+popularity: 0
 ---
 
 # Localize

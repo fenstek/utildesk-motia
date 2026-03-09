@@ -1,10 +1,11 @@
 ---
-slug: "meya"
-title: "Meya"
-category: "AI"
-price_model: "freemium"
+slug: meya
+title: Meya
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://www.meya.ai/"
+popularity: 0
 ---
 
 # Meya

@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-natural-language"
-title: "Google Cloud Natural Language"
-category: "AI"
-price_model: "Abhängig von Nutzung und gewähltem Tarif"
+slug: google-cloud-natural-language
+title: Google Cloud Natural Language
+category: AI
+price_model: Abhängig von Nutzung und gewähltem Tarif
 tags: []
 official_url: "https://cloud.google.com/natural-language"
+popularity: 0
 ---
 
 # Google Cloud Natural Language

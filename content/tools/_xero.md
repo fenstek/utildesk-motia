@@ -1,10 +1,11 @@
 ---
-slug: "xero"
-title: "Xero"
-category: "AI"
-price_model: "freemium"
+slug: xero
+title: Xero
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.xero.com/"
+popularity: 0
 ---
 
 # Xero

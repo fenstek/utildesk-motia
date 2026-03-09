@@ -1,10 +1,11 @@
 ---
-slug: "amazon-polly"
-title: "Amazon Polly"
-category: "AI"
-price_model: "Je nach Nutzung und gewähltem Tarif"
+slug: amazon-polly
+title: Amazon Polly
+category: AI
+price_model: Je nach Nutzung und gewähltem Tarif
 tags: [audio, automation, api, productivity, customer-support]
 official_url: "https://aws.amazon.com/polly/"
+popularity: 0
 ---
 
 # Amazon Polly

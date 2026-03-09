@@ -1,10 +1,11 @@
 ---
-slug: "maxqda"
-title: "MAXQDA"
-category: "AI"
-price_model: "Je nach Lizenzmodell und Funktionsumfang"
+slug: maxqda
+title: MAXQDA
+category: AI
+price_model: Je nach Lizenzmodell und Funktionsumfang
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.maxqda.com/"
+popularity: 0
 ---
 
 # MAXQDA

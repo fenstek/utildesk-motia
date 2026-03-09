@@ -1,10 +1,11 @@
 ---
-slug: "speech-to-text"
-title: "Speech-to-Text"
-category: "AI"
-price_model: "freemium"
+slug: speech-to-text
+title: Speech-to-Text
+category: AI
+price_model: freemium
 tags: [audio, transcription, productivity]
 official_url: "https://cloud.google.com/speech-to-text"
+popularity: 0
 ---
 
 # Speech-to-Text

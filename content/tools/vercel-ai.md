@@ -1,10 +1,11 @@
 ---
-slug: "vercel-ai"
-title: "Vercel AI SDK"
-category: "Developer"
-price_model: ""
+slug: vercel-ai
+title: Vercel AI SDK
+category: Developer
+price_model: 
 tags: []
 official_url: "https://vercel.com/ai"
+popularity: 0
 ---
 
 # Vercel AI SDK

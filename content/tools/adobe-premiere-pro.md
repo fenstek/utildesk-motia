@@ -1,10 +1,11 @@
 ---
-slug: "adobe-premiere-pro"
-title: "Adobe Premiere Pro"
-category: "Design"
-price_model: "Abonnement-basiert"
+slug: adobe-premiere-pro
+title: Adobe Premiere Pro
+category: Design
+price_model: Abonnement-basiert
 tags: [design, video]
 official_url: "https://www.adobe.com/products/premiere.html"
+popularity: 0
 ---
 
 # Adobe Premiere Pro

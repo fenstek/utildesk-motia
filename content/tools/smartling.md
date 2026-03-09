@@ -1,10 +1,11 @@
 ---
-slug: "smartling"
-title: "Smartling"
-category: "AI"
-price_model: "Je nach Plan variabel"
+slug: smartling
+title: Smartling
+category: AI
+price_model: Je nach Plan variabel
 tags: [assistant, automation]
 official_url: "https://www.smartling.com/"
+popularity: 0
 ---
 
 # Smartling

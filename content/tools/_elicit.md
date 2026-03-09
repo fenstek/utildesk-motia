@@ -1,10 +1,11 @@
 ---
-slug: "elicit"
-title: "Elicit"
-category: "AI"
-price_model: ""
+slug: elicit
+title: Elicit
+category: AI
+price_model: 
 tags: []
 official_url: "https://elicit.com/"
+popularity: 0
 ---
 
 # Elicit

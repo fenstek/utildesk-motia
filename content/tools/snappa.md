@@ -1,10 +1,11 @@
 ---
-slug: "snappa"
-title: "Snappa"
-category: "AI"
-price_model: "freemium"
+slug: snappa
+title: Snappa
+category: AI
+price_model: freemium
 tags: [ai, design, image, social-media]
 official_url: "https://snappa.com/"
+popularity: 0
 ---
 
 # Snappa

@@ -1,10 +1,11 @@
 ---
-slug: "uipath"
-title: "UiPath"
-category: "AI"
-price_model: ""
+slug: uipath
+title: UiPath
+category: AI
+price_model: 
 tags: []
-official_url: 'https://www.uipath.com/'
+official_url: "https://www.uipath.com/"
+popularity: 0
 ---
 
 # UiPath
