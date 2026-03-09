@@ -50,11 +50,11 @@ Later bietet verschiedene Preismodelle, die sich nach dem Funktionsumfang und de
 
 ## Alternativen zu Later
 
-- **Buffer**: Ein weiteres beliebtes Tool zur Social-Media-Planung mit Fokus auf einfache Bedienung und Team-Features.
-- **Hootsuite**: Umfangreiche Plattform für Social-Media-Management mit vielen Analyse- und Automatisierungsoptionen.
+- [Buffer](/tools/buffer/): Ein weiteres beliebtes Tool zur Social-Media-Planung mit Fokus auf einfache Bedienung und Team-Features.
+- [Hootsuite](/tools/hootsuite/): Umfangreiche Plattform für Social-Media-Management mit vielen Analyse- und Automatisierungsoptionen.
 - **Sprout Social**: Professionelle Lösung für größere Teams mit erweiterten Reporting- und CRM-Funktionen.
 - **Planoly**: Speziell auf Instagram fokussiert, mit starker visueller Planung und Content-Management.
-- **Zoho Social**: Integriert in die Zoho-Produktpalette, bietet umfassende Social-Media-Management-Tools.
+- [Zoho Social](/tools/zoho-social/): Integriert in die Zoho-Produktpalette, bietet umfassende Social-Media-Management-Tools.
 
 ## FAQ
 

@@ -56,8 +56,8 @@ Detaillierte und aktuelle Preise sind auf der offiziellen Website zu finden, da 
 - [Buffer](/tools/buffer/): Ein weiteres beliebtes Social-Media-Management-Tool mit Fokus auf einfache Planung und Analyse.
 - **Sprout Social:** Bietet umfangreiche Analyse- und Team-Kollaborationsfunktionen, geeignet für mittlere bis große Unternehmen.
 - [Later](/tools/later/): Speziell auf visuelles Social Media Marketing ausgerichtet, ideal für Instagram und Pinterest.
-- **Zoho Social:** Integriert sich gut in andere Zoho-Produkte und bietet ebenfalls umfassendes Social-Media-Management.
-- **Agorapulse:** Fokus auf Social-Media-Engagement und Reporting mit benutzerfreundlicher Oberfläche.
+- [Zoho Social](/tools/zoho-social/): Integriert sich gut in andere Zoho-Produkte und bietet ebenfalls umfassendes Social-Media-Management.
+- [Agorapulse](/tools/agorapulse/): Fokus auf Social-Media-Engagement und Reporting mit benutzerfreundlicher Oberfläche.
 
 ## FAQ
 
