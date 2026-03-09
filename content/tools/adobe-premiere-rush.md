@@ -50,7 +50,7 @@ Adobe Premiere Rush wird in der Regel über ein Abonnement angeboten, das entwed
 ## Alternativen zu Adobe Premiere Rush
 
 - **iMovie:** Kostenlose Videobearbeitung für macOS und iOS mit einfacher Bedienung  
-- **Filmora:** Benutzerfreundliche Software mit umfangreichen Effekten und Vorlagen  
+- [Filmora](/tools/filmora/): Benutzerfreundliche Software mit umfangreichen Effekten und Vorlagen  
 - **DaVinci Resolve:** Leistungsstarke Videobearbeitung mit professionellen Farbkorrektur-Tools (kostenlose und kostenpflichtige Versionen)  
 - **Shotcut:** Kostenloser Open-Source-Editor mit umfangreichen Funktionen für Einsteiger und Fortgeschrittene  
 - **InShot:** Mobile App für schnelle Videobearbeitung und Social-Media-Content  
