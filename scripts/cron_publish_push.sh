@@ -158,8 +158,15 @@ git -c user.name="utildesk-cron" -c user.email="utildesk-cron@local" commit -m "
 echo "[cron] finalize deferred sheet statuses (post-commit)"
 node scripts/test_run_9_full.mjs --finalize-deferred || echo "[cron] WARNING: deferred finalization failed"
 
-echo "[cron] pushing autobot..."
-retry_cmd 5 git push origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
+echo "[cron] pushing autobot + syncing master via wrapper..."
+retry_cmd 5 ./scripts/push_autobot_prod.sh origin autobot master HEAD || { echo "[cron] WARNING: wrapper push failed"; exit 0; }
+
+echo "[cron] refresh remote refs after wrapper sync"
+git fetch origin
+if [[ "$(git rev-parse origin/master)" == "$(git rev-parse origin/autobot)" ]]; then
+  echo "[cron] autobot and master already synced -> skip PR/merge flow"
+  exit 0
+fi
 
 # 4) PR creation / update + enable auto-merge
 # Find open PR via gh pr list (gh pr view does not support --head flag)
