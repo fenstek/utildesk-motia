@@ -66,10 +66,10 @@ Die genauen Preise variieren je nach Anbieter und aktuellem Angebot.
 
 ## Alternativen zu InVideo
 
-- **Animoto:** Ein weiteres Online-Tool zur einfachen Videoproduktion mit Fokus auf Marketingvideos.
+- [Animoto](/tools/animoto/): Ein weiteres Online-Tool zur einfachen Videoproduktion mit Fokus auf Marketingvideos.
 - **Adobe Spark Video:** Intuitive Videobearbeitung mit Integration in das Adobe-Ökosystem.
-- **Filmora:** Desktop-Software mit umfangreichen Bearbeitungsfunktionen und einfacher Bedienung.
-- **Canva Video:** Bekannt für Design, bietet aber auch Videobearbeitung mit vielen Vorlagen.
+- [Filmora](/tools/filmora/): Desktop-Software mit umfangreichen Bearbeitungsfunktionen und einfacher Bedienung.
+- [Canva Video](/tools/canva-video/): Bekannt für Design, bietet aber auch Videobearbeitung mit vielen Vorlagen.
 - **Biteable:** Plattform für schnelle Erstellung von animierten und realen Videos.
 
 ## FAQ

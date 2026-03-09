@@ -63,11 +63,11 @@ Für detaillierte Informationen empfiehlt es sich, die offizielle Webseite von C
 
 ## Alternativen zu Canva Video Editor
 
-- **Adobe Premiere Rush:** Einsteigerfreundliche Videobearbeitung mit erweiterten Funktionen.
-- **InVideo:** Online-Video-Editor mit vielen Vorlagen und Marketing-Tools.
-- **Clipchamp:** Cloudbasierte Videobearbeitung mit Fokus auf Social Media.
-- **Filmora:** Desktop-Software mit einfacher Bedienung und vielseitigen Effekten.
-- **Animoto:** Schnell erstellte Marketing- und Social-Media-Videos mit Vorlagen.
+- [Adobe Premiere Rush](/tools/adobe-premiere-rush/): Einsteigerfreundliche Videobearbeitung mit erweiterten Funktionen.
+- [InVideo](/tools/invideo/): Online-Video-Editor mit vielen Vorlagen und Marketing-Tools.
+- [Clipchamp](/tools/clipchamp/): Cloudbasierte Videobearbeitung mit Fokus auf Social Media.
+- [Filmora](/tools/filmora/): Desktop-Software mit einfacher Bedienung und vielseitigen Effekten.
+- [Animoto](/tools/animoto/): Schnell erstellte Marketing- und Social-Media-Videos mit Vorlagen.
 
 ## FAQ
 
