@@ -5,6 +5,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 
 export async function getStaticPaths() {
   return CATEGORIES.map((cat) => ({
@@ -39,16 +40,6 @@ const getExcerpt = (content: string) => {
     if (cleaned) return cleaned;
   }
   return "";
-};
-
-const faviconFromUrl = (url: string | null) => {
-  if (!url) return null;
-  try {
-    const u = new URL(url);
-    return `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(u.hostname)}`;
-  } catch {
-    return null;
-  }
 };
 
 const resolveCategoryIcon = (cat: string | null, tags: string[]) => {
@@ -94,8 +85,10 @@ const toolsData = await Promise.all(
       : getExcerpt(content);
 
     const localLogo = resolveLocalLogo(toolSlug);
-    const faviconLogo = faviconFromUrl(providerUrl);
+    const faviconCandidates = getFaviconCandidates(providerUrl, 128);
+    const faviconLogo = faviconCandidates[0] ?? null;
     const iconUrl = brandLogo || localLogo || faviconLogo;
+    const iconFallbacks = brandLogo || localLogo || !faviconLogo ? [] : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
     const fallbackIcon = resolveCategoryIcon(cat, tags);
 
     return {
@@ -104,6 +97,7 @@ const toolsData = await Promise.all(
       category: cat,
       priceModel,
       iconUrl,
+      iconFallbacks,
       fallbackIcon,
       excerpt: description
     };
@@ -172,7 +166,7 @@ const itemListSchema = {
               <div class="tool-image">
                 {tool.iconUrl ? (
                   <span class="tool-card-logo">
-                    <img src={tool.iconUrl} alt={tool.title} loading="lazy" />
+                    <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
                   </span>
                 ) : tool.fallbackIcon === "ai" ? (
                   <span class="tool-card-logo" aria-hidden="true">

@@ -4,6 +4,7 @@ import { readdir, readFile, stat } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
@@ -16,16 +17,6 @@ const stripMarkdown = (text: string) =>
     .replace(/[`*_>#-]/g, "")
     .replace(/\s+/g, " ")
     .trim();
-
-const faviconFromUrl = (url: string | null, size = 128) => {
-  if (!url) return null;
-  try {
-    const u = new URL(url);
-    return `https://www.google.com/s2/favicons?sz=${size}&domain=${encodeURIComponent(u.hostname)}`;
-  } catch {
-    return null;
-  }
-};
 
 const getExcerpt = (content: string) => {
   const paragraphs = content.split(/\n\s*\n/);
@@ -75,8 +66,10 @@ const tools = await Promise.all(
     const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const providerUrl = affiliate_url || official_url;
     const localLogo = resolveLocalLogo(slug);
-    const faviconLogo = faviconFromUrl(providerUrl);
+    const faviconCandidates = getFaviconCandidates(providerUrl, 128);
+    const faviconLogo = faviconCandidates[0] ?? null;
     const iconUrl = brandLogo || localLogo || faviconLogo;
+    const iconFallbacks = brandLogo || localLogo || !faviconLogo ? [] : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
     const description = data.description
       ? String(data.description)
@@ -102,6 +95,7 @@ const tools = await Promise.all(
       category,
       price_model,
       iconUrl,
+      iconFallbacks,
       tags,
       excerpt,
       addedAtMs: createdAtMs,
@@ -197,7 +191,7 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
           <div class="tool-image">
             {tool.iconUrl ? (
               <span class="tool-card-logo">
-                <img src={tool.iconUrl} alt={tool.title} loading="lazy" />
+                <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
               </span>
             ) : tool.fallbackIcon === "ai" ? (
               <span class="tool-card-logo" aria-hidden="true">
