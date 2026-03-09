@@ -83,5 +83,42 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Disclaimer: Utildesk is an independent tools directory. All trademarks, logos, and brand names are the property of their respective owners.</p>
       </div>
     </footer>
+    <script is:inline>
+      (() => {
+        const parseFallbacks = (img) => {
+          const raw = img.getAttribute("data-fallback-srcs");
+          if (!raw) return [];
+
+          try {
+            const parsed = JSON.parse(raw);
+            return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
+          } catch {
+            return [];
+          }
+        };
+
+        document.addEventListener(
+          "error",
+          (event) => {
+            const img = event.target;
+            if (!(img instanceof HTMLImageElement)) return;
+
+            const fallbacks = parseFallbacks(img);
+            const nextIndex = Number(img.dataset.fallbackIndex || "0");
+            const nextSrc = fallbacks[nextIndex];
+
+            if (!nextSrc) {
+              img.dataset.fallbackExhausted = "1";
+              img.removeAttribute("data-fallback-srcs");
+              return;
+            }
+
+            img.dataset.fallbackIndex = String(nextIndex + 1);
+            img.src = nextSrc;
+          },
+          true,
+        );
+      })();
+    </script>
   </body>
 </html>

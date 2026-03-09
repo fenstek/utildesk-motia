@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { marked } from "marked";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 
@@ -23,15 +24,13 @@ const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
 const provider_url = affiliate_url || official_url || "";
 
 const localLogo = resolveLocalLogo(slug);
-let faviconLogo = null;
-try {
-  if (provider_url) {
-    const u = new URL(provider_url);
-    faviconLogo = `https://www.google.com/s2/favicons?domain=${u.hostname}&sz=128`;
-  }
-} catch {}
+const faviconCandidates = getFaviconCandidates(provider_url, 128);
+const faviconLogo = faviconCandidates[0] ?? null;
+const faviconFallbacks = faviconCandidates.slice(1);
+const fallbackAvatarUrl = getAvatarFallbackDataUrl(String(data.title ?? slug));
 
 const logoUrl = brandLogo || localLogo || faviconLogo;
+const logoFallbacks = logoUrl === faviconLogo ? [...faviconFallbacks, fallbackAvatarUrl] : [];
 
 
 const title = String(data.title ?? slug);
@@ -105,14 +104,6 @@ const getExcerpt = (md: string) => {
     if (cleaned) return cleaned;
   }
   return "";
-};
-
-const faviconFrom = (url: string | null) => {
-  if (!url) return null;
-  try {
-    const u = new URL(url);
-    return `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(u.hostname)}`;
-  } catch { return null; }
 };
 
 const iconType = (cat: string | null, tgs: string[]) => {
@@ -198,10 +189,13 @@ const allTools = (await listActiveToolEntries()).map(({ slug: s, data: d, conten
     : d.tagline ? String(d.tagline)
     : "";
   const localAltLogo = resolveLocalLogo(s);
-  const faviconAltLogo = faviconFrom(pUrl);
+  const faviconAltCandidates = getFaviconCandidates(pUrl, 128);
+  const faviconAltLogo = faviconAltCandidates[0] ?? null;
   return {
     slug: s, title: t, category: cat, price_model: pm,
-    iconUrl: bLogo || localAltLogo || faviconAltLogo, tags: tgs,
+    iconUrl: bLogo || localAltLogo || faviconAltLogo,
+    iconFallbacks: bLogo || localAltLogo || !faviconAltLogo ? [] : [...faviconAltCandidates.slice(1), getAvatarFallbackDataUrl(t)],
+    tags: tgs,
     excerpt: desc || getExcerpt(c),
     fallbackIcon: iconType(cat, tgs),
     disabled,
@@ -302,11 +296,11 @@ const softwareApplicationSchema = {
   <div class="article-body">
     {logoUrl && provider_url ? (
       <a class="tool-float-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-        <img src={logoUrl} alt={`${title} favicon`} loading="lazy" />
+        <img src={logoUrl} alt={`${title} favicon`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
       </a>
     ) : logoUrl ? (
       <span class="tool-float-logo" aria-hidden="true">
-        <img src={logoUrl} alt="" loading="lazy" />
+        <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
       </span>
     ) : null}
 
@@ -328,7 +322,7 @@ const softwareApplicationSchema = {
               <div class="tool-image">
                 {tool.iconUrl ? (
                   <span class="tool-card-logo">
-                    <img src={tool.iconUrl} alt={tool.title} loading="lazy" />
+                    <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
                   </span>
                 ) : tool.fallbackIcon === "ai" ? (
                   <span class="tool-card-logo" aria-hidden="true">
