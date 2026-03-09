@@ -1,10 +1,11 @@
 ---
-slug: "prowritingaid"
-title: "ProWritingAid"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: prowritingaid
+title: ProWritingAid
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [writing, workflow]
 official_url: "https://prowritingaid.com/"
+popularity: 1
 ---
 
 # ProWritingAid

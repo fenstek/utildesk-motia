@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-cognitive-services"
-title: "Microsoft Azure Cognitive Services"
-category: "AI"
-price_model: "freemium"
+slug: microsoft-azure-cognitive-services
+title: Microsoft Azure Cognitive Services
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services"
+popularity: 0
 ---
 
 # Microsoft Azure Cognitive Services

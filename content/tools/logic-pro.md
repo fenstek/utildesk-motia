@@ -1,10 +1,11 @@
 ---
-slug: "logic-pro"
-title: "Logic Pro"
-category: "AI"
-price_model: ""
+slug: logic-pro
+title: Logic Pro
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://logic-users-group.com/"
+popularity: 0
 ---
 
 # Logic Pro

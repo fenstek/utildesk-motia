@@ -1,10 +1,11 @@
 ---
-slug: "onlyoffice"
-title: "OnlyOffice"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: onlyoffice
+title: OnlyOffice
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://onlyoffice.com/"
+popularity: 0
 ---
 
 # OnlyOffice

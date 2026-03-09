@@ -1,10 +1,11 @@
 ---
-slug: "endlesss"
-title: "Endlesss"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: endlesss
+title: Endlesss
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [assistant, automation]
 official_url: "https://endlesss.ai/"
+popularity: 0
 ---
 
 # Endlesss

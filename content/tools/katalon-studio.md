@@ -1,10 +1,11 @@
 ---
-slug: "katalon-studio"
-title: "Katalon Studio"
-category: "Audio"
-price_model: ""
+slug: katalon-studio
+title: Katalon Studio
+category: Audio
+price_model: 
 tags: []
 official_url: "https://katalon.com/katalon-studio"
+popularity: 0
 ---
 
 # Katalon Studio

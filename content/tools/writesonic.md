@@ -1,10 +1,11 @@
 ---
-slug: "writesonic"
-title: "Writesonic"
-category: "Produktivitat"
-price_model: "freemium"
+slug: writesonic
+title: Writesonic
+category: Produktivitat
+price_model: freemium
 tags: [ai,produktivitat,writing]
 official_url: "https://writesonic.com/"
+popularity: 0
 ---
 
 # Writesonic

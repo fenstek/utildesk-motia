@@ -1,10 +1,11 @@
 ---
-slug: "paperspace"
-title: "Paperspace"
-category: "AI"
-price_model: ""
+slug: paperspace
+title: Paperspace
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.paperspace.com/"
+popularity: 0
 ---
 
 # Paperspace

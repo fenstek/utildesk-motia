@@ -1,10 +1,11 @@
 ---
-slug: "later"
-title: "Later"
-category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+slug: later
+title: Later
+category: AI
+price_model: Je nach Plan, meist abonnementbasiert
 tags: [assistant, automation]
 official_url: "https://later.com/"
+popularity: 0
 ---
 
 # Later

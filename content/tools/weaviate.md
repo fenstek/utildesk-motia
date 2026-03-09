@@ -1,10 +1,11 @@
 ---
-slug: "weaviate"
-title: "Weaviate"
-category: "AI Infrastructure"
-price_model: ""
+slug: weaviate
+title: Weaviate
+category: AI Infrastructure
+price_model: 
 tags: []
 official_url: "https://weaviate.io"
+popularity: 0
 ---
 
 # Weaviate

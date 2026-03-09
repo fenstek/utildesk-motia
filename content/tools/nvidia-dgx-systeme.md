@@ -1,10 +1,11 @@
 ---
-slug: "nvidia-dgx-systeme"
-title: "NVIDIA DGX Systeme"
-category: "AI"
-price_model: "Je nach Anbieter und Konfiguration"
+slug: nvidia-dgx-systeme
+title: NVIDIA DGX Systeme
+category: AI
+price_model: Je nach Anbieter und Konfiguration
 tags: [data, analytics, developer-tools, chatbot, writing, content, automation, coding, customer-support]
 official_url: "https://www.nvidia.com/en-us/data-center/dgx-platform/"
+popularity: 0
 ---
 
 # NVIDIA DGX Systeme

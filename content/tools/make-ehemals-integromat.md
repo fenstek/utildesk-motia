@@ -1,10 +1,11 @@
 ---
-slug: "make-ehemals-integromat"
-title: "Make (ehemals Integromat)"
-category: "AI"
-price_model: "freemium"
+slug: make-ehemals-integromat
+title: Make (ehemals Integromat)
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
+popularity: 0
 ---
 
 # Make (ehemals Integromat)

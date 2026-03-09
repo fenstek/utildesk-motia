@@ -1,10 +1,11 @@
 ---
-slug: "d-id"
-title: "D-ID"
-category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: d-id
+title: D-ID
+category: AI
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [video, automation, marketing, design, content]
 official_url: "https://www.d-id.com/"
+popularity: 0
 ---
 
 # D-ID

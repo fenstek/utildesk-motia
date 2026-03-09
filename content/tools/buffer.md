@@ -1,10 +1,11 @@
 ---
-slug: "buffer"
-title: "Buffer"
-category: "AI"
-price_model: "freemium"
+slug: buffer
+title: Buffer
+category: AI
+price_model: freemium
 tags: [social-media, automation, marketing, productivity]
 official_url: "https://buffer.com/"
+popularity: 0
 ---
 
 # Buffer

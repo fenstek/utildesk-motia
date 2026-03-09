@@ -1,10 +1,11 @@
 ---
-slug: "hoppscotch"
-title: "Hoppscotch"
-category: "AI"
-price_model: "kostenlos / Open Source"
+slug: hoppscotch
+title: Hoppscotch
+category: AI
+price_model: kostenlos / Open Source
 tags: []
 official_url: "https://hoppscotch.io/"
+popularity: 0
 ---
 
 # Hoppscotch

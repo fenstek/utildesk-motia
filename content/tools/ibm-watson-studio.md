@@ -1,10 +1,11 @@
 ---
-slug: "ibm-watson-studio"
-title: "IBM Watson Studio"
-category: "Audio"
-price_model: "je nach Anbieter/Plan"
+slug: ibm-watson-studio
+title: IBM Watson Studio
+category: Audio
+price_model: je nach Anbieter/Plan
 tags: [data, analytics, automation, productivity, developer-tools]
 official_url: "https://www.ibm.com/products/watson-studio"
+popularity: 0
 ---
 
 # IBM Watson Studio

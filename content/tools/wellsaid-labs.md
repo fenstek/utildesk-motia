@@ -1,10 +1,11 @@
 ---
-slug: "wellsaid-labs"
-title: "WellSaid Labs"
-category: "Audio"
-price_model: "je nach Plan unterschiedlich"
+slug: wellsaid-labs
+title: WellSaid Labs
+category: Audio
+price_model: je nach Plan unterschiedlich
 tags: [ai, audio, voice]
 official_url: "https://www.wellsaid.io/"
+popularity: 0
 ---
 
 # WellSaid Labs

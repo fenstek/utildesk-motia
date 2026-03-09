@@ -1,10 +1,11 @@
 ---
-slug: "faceswap"
-title: "FaceSwap"
-category: "AI"
-price_model: ""
+slug: faceswap
+title: FaceSwap
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://faceswap.dev/"
+popularity: 1
 ---
 
 # FaceSwap

@@ -1,10 +1,11 @@
 ---
-slug: "nuance"
-title: "Nuance"
-category: "AI"
-price_model: "freemium"
+slug: nuance
+title: Nuance
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "http://www.nuance.com/"
+popularity: 0
 ---
 
 # Nuance

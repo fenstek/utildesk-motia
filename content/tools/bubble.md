@@ -1,10 +1,11 @@
 ---
-slug: "bubble"
-title: "Bubble"
-category: "AI"
-price_model: "freemium"
+slug: bubble
+title: Bubble
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://bubble.io/"
+popularity: 0
 ---
 
 # Bubble

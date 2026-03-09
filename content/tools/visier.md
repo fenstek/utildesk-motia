@@ -1,10 +1,11 @@
 ---
-slug: "visier"
-title: "Visier"
-category: "AI"
-price_model: "freemium"
+slug: visier
+title: Visier
+category: AI
+price_model: freemium
 tags: [automation, data, analytics]
 official_url: "https://www.visier.com/"
+popularity: 0
 ---
 
 # Visier

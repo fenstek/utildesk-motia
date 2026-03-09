@@ -1,10 +1,11 @@
 ---
-slug: "postman"
-title: "Postman"
-category: "AI"
-price_model: "freemium"
+slug: postman
+title: Postman
+category: AI
+price_model: freemium
 tags: [ai,content,workflow]
 official_url: "https://www.postman.com/"
+popularity: 0
 ---
 
 # Postman

@@ -1,10 +1,11 @@
 ---
-slug: "aiva"
-title: "AIVA"
-category: "AI"
-price_model: "freemium"
+slug: aiva
+title: AIVA
+category: AI
+price_model: freemium
 tags: [ai,assistant,automation]
 official_url: "https://www.aiva.ai/"
+popularity: 0
 ---
 
 # AIVA

@@ -1,10 +1,11 @@
 ---
-slug: "sora"
-title: "Sora"
-category: "Video"
-price_model: ""
+slug: sora
+title: Sora
+category: Video
+price_model: 
 tags: []
 official_url: "https://openai.com/sora"
+popularity: 0
 ---
 
 # Sora

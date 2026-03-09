@@ -1,10 +1,11 @@
 ---
-slug: "rapidminer"
-title: "RapidMiner"
-category: "AI"
-price_model: "je nach Plan, meist abonnementbasiert"
+slug: rapidminer
+title: RapidMiner
+category: AI
+price_model: je nach Plan, meist abonnementbasiert
 tags: [api, workflow]
 official_url: "https://altair.com/altair-rapidminer"
+popularity: 0
 ---
 
 # RapidMiner

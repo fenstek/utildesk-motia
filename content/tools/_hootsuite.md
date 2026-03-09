@@ -1,10 +1,11 @@
 ---
-slug: "hootsuite"
-title: "Hootsuite"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: hootsuite
+title: Hootsuite
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [design, workflow]
 official_url: "https://www.hootsuite.com/"
+popularity: 0
 ---
 
 # Hootsuite

@@ -1,10 +1,11 @@
 ---
-slug: "descript-overdub"
-title: "Descript Overdub"
-category: "AI"
-price_model: "Abonnement-basiert, je nach Plan"
+slug: descript-overdub
+title: Descript Overdub
+category: AI
+price_model: Abonnement-basiert, je nach Plan
 tags: [audio, video, productivity, automation, content]
 official_url: "https://www.descript.com/regenerate"
+popularity: 0
 ---
 
 # Descript Overdub

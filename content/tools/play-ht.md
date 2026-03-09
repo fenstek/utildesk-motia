@@ -1,10 +1,11 @@
 ---
-slug: "play-ht"
-title: "Play.ht"
-category: "Audio"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: play-ht
+title: Play.ht
+category: Audio
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [audio, api, content, developer-tools]
 official_url: "https://play.ht/"
+popularity: 0
 ---
 
 # Play.ht

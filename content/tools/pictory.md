@@ -1,10 +1,11 @@
 ---
-slug: "pictory"
-title: "Pictory"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: pictory
+title: Pictory
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://pictory.ai/"
+popularity: 0
 ---
 
 # Pictory

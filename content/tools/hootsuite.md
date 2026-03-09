@@ -1,10 +1,11 @@
 ---
-slug: "hootsuite"
-title: "Hootsuite"
-category: "AI"
-price_model: "Abonnement-basiert"
+slug: hootsuite
+title: Hootsuite
+category: AI
+price_model: Abonnement-basiert
 tags: [social-media, marketing, analytics, workflow, automation]
 official_url: "https://www.hootsuite.com/"
+popularity: 0
 ---
 
 # Hootsuite

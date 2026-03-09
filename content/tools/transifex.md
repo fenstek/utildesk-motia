@@ -1,10 +1,11 @@
 ---
-slug: "transifex"
-title: "Transifex"
-category: "AI"
-price_model: "je nach Plan variabel"
+slug: transifex
+title: Transifex
+category: AI
+price_model: je nach Plan variabel
 tags: [translation,workflow,api,developer-tools]
 official_url: "https://www.transifex.com/"
+popularity: 0
 ---
 
 # Transifex

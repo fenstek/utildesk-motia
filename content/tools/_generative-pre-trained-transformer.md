@@ -1,10 +1,11 @@
 ---
-slug: "generative-pre-trained-transformer"
-title: "Generative Pre-trained Transformer"
-category: "AI"
-price_model: "freemium"
+slug: generative-pre-trained-transformer
+title: Generative Pre-trained Transformer
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://huggingface.co/Generativepretrainedtransformer"
+popularity: 0
 ---
 
 # Generative Pre-trained Transformer

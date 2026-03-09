@@ -1,10 +1,11 @@
 ---
-slug: "keras"
-title: "Keras"
-category: "AI"
-price_model: "freemium"
+slug: keras
+title: Keras
+category: AI
+price_model: freemium
 tags: [ai, data, developer-tools, automation]
 official_url: "https://keras.io/"
+popularity: 0
 ---
 
 # Keras

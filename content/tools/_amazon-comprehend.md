@@ -1,10 +1,11 @@
 ---
-slug: "amazon-comprehend"
-title: "Amazon Comprehend"
-category: "AI"
-price_model: "Nutzungsabhängig"
+slug: amazon-comprehend
+title: Amazon Comprehend
+category: AI
+price_model: Nutzungsabhängig
 tags: []
 official_url: "https://aws.amazon.com/comprehend/"
+popularity: 0
 ---
 
 # Amazon Comprehend

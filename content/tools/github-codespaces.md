@@ -1,10 +1,11 @@
 ---
-slug: "github-codespaces"
-title: "GitHub Codespaces"
-category: "Developer"
-price_model: "Je nach Plan, meist nutzungsabhängig"
+slug: github-codespaces
+title: GitHub Codespaces
+category: Developer
+price_model: Je nach Plan, meist nutzungsabhängig
 tags: [coding, developer-tools, automation, productivity]
 official_url: "https://github.com/features/codespaces"
+popularity: 0
 ---
 
 # GitHub Codespaces

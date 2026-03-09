@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-bot-service"
-title: "Microsoft Azure Bot Service"
-category: "AI"
-price_model: "Je nach Nutzungsumfang und Plan"
+slug: microsoft-azure-bot-service
+title: Microsoft Azure Bot Service
+category: AI
+price_model: Je nach Nutzungsumfang und Plan
 tags: [chatbot, api, automation]
 official_url: "https://azure.microsoft.com/en-us/services/bot-services/"
+popularity: 0
 ---
 
 # Microsoft Azure Bot Service

@@ -1,10 +1,11 @@
 ---
-slug: "nightcafe-studio"
-title: "NightCafe Studio"
-category: "Audio"
-price_model: "freemium"
+slug: nightcafe-studio
+title: NightCafe Studio
+category: Audio
+price_model: freemium
 tags: [ai,audio]
 official_url: "https://creator.nightcafe.studio/"
+popularity: 0
 ---
 
 # NightCafe Studio

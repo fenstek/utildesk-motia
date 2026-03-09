@@ -1,10 +1,11 @@
 ---
-slug: "atlas-ti"
-title: "Atlas.ti"
-category: "AI"
-price_model: "Je nach Plan und Anbieter"
+slug: atlas-ti
+title: Atlas.ti
+category: AI
+price_model: Je nach Plan und Anbieter
 tags: [data, analytics, productivity, automation, education]
 official_url: "https://atlasti.com/"
+popularity: 0
 ---
 
 # Atlas.ti

@@ -1,10 +1,11 @@
 ---
-slug: "hemingway-editor"
-title: "Hemingway Editor"
-category: "AI"
-price_model: "Freemium"
+slug: hemingway-editor
+title: Hemingway Editor
+category: AI
+price_model: Freemium
 tags: [writing, productivity, automation]
 official_url: "https://hemingwayapp.com/"
+popularity: 0
 ---
 
 # Hemingway Editor

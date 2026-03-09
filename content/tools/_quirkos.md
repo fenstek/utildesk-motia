@@ -1,10 +1,11 @@
 ---
-slug: "quirkos"
-title: "Quirkos"
-category: "AI"
-price_model: ""
+slug: quirkos
+title: Quirkos
+category: AI
+price_model: 
 tags: [design, workflow]
 official_url: "https://www.quirkos.com/"
+popularity: 0
 ---
 
 # Quirkos

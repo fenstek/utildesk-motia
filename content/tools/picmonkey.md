@@ -1,10 +1,11 @@
 ---
-slug: "picmonkey"
-title: "PicMonkey"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: picmonkey
+title: PicMonkey
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://www.picmonkey.com/"
+popularity: 0
 ---
 
 # PicMonkey

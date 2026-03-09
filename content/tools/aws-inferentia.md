@@ -1,10 +1,11 @@
 ---
-slug: "aws-inferentia"
-title: "AWS Inferentia"
-category: "AI"
-price_model: "Je nach Nutzung und Anbieterplan"
+slug: aws-inferentia
+title: AWS Inferentia
+category: AI
+price_model: Je nach Nutzung und Anbieterplan
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://aws.amazon.com/ai/machine-learning/inferentia/"
+popularity: 0
 ---
 
 # AWS Inferentia

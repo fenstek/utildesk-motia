@@ -1,10 +1,11 @@
 ---
-slug: "amazon-sagemaker"
-title: "Amazon SageMaker"
-category: "AI"
-price_model: "Je nach Nutzung und gewähltem Service"
+slug: amazon-sagemaker
+title: Amazon SageMaker
+category: AI
+price_model: Je nach Nutzung und gewähltem Service
 tags: [assistant, automation]
 official_url: "https://openai.com/index/amazon-partnership/"
+popularity: 0
 ---
 
 # Amazon SageMaker

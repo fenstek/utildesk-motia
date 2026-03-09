@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-automl"
-title: "Google Cloud AutoML"
-category: "AI"
-price_model: "Variabel je nach Nutzung und Modell"
+slug: google-cloud-automl
+title: Google Cloud AutoML
+category: AI
+price_model: Variabel je nach Nutzung und Modell
 tags: [automation, workflow]
 official_url: "https://ai.google/build/"
+popularity: 0
 ---
 
 # Google Cloud AutoML

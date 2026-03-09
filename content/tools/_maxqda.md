@@ -1,10 +1,11 @@
 ---
-slug: "maxqda"
-title: "MAXQDA"
-category: "AI"
-price_model: ""
+slug: maxqda
+title: MAXQDA
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.maxqda.com/"
+popularity: 0
 ---
 
 # MAXQDA

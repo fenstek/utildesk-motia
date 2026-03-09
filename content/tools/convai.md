@@ -1,10 +1,11 @@
 ---
-slug: "convai"
-title: "Convai"
-category: "AI"
-price_model: "freemium"
+slug: convai
+title: Convai
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://convai.com/"
+popularity: 0
 ---
 
 # Convai

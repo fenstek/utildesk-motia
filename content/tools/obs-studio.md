@@ -1,10 +1,11 @@
 ---
-slug: "obs-studio"
-title: "OBS Studio"
-category: "Video"
-price_model: "kostenlos"
+slug: obs-studio
+title: OBS Studio
+category: Video
+price_model: kostenlos
 tags: [video, streaming, audio]
 official_url: "https://obsproject.com/"
+popularity: 0
 ---
 
 # OBS Studio

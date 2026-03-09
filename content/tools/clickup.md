@@ -1,10 +1,11 @@
 ---
-slug: "clickup"
-title: "ClickUp"
-category: "AI"
-price_model: "Je nach Plan, meist Freemium mit kostenpflichtigen Upgrades"
+slug: clickup
+title: ClickUp
+category: AI
+price_model: Je nach Plan, meist Freemium mit kostenpflichtigen Upgrades
 tags: [assistant, automation]
 official_url: "https://clickup.com/"
+popularity: 0
 ---
 
 # ClickUp

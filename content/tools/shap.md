@@ -1,10 +1,11 @@
 ---
-slug: "shap"
-title: "SHAP (SHapley Additive exPlanations)"
-category: "AI"
-price_model: "kostenlos / Open Source"
+slug: shap
+title: SHAP (SHapley Additive exPlanations)
+category: AI
+price_model: kostenlos / Open Source
 tags: [data, analytics, education, developer-tools]
 official_url: "https://github.com/shap/shap"
+popularity: 0
 ---
 
 # SHAP (SHapley Additive exPlanations)

@@ -1,10 +1,11 @@
 ---
-slug: "freshchat"
-title: "Freshchat"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: freshchat
+title: Freshchat
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [assistant, workflow]
 official_url: "https://www.freshworks.com/live-chat-software/"
+popularity: 0
 ---
 
 # Freshchat

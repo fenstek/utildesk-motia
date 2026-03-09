@@ -1,10 +1,11 @@
 ---
-slug: "auphonic"
-title: "Auphonic"
-category: "AI"
-price_model: ""
+slug: auphonic
+title: Auphonic
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://auphonic.com/"
+popularity: 0
 ---
 
 # Auphonic

@@ -1,10 +1,11 @@
 ---
-slug: "outsystems"
-title: "OutSystems"
-category: "AI"
-price_model: ""
+slug: outsystems
+title: OutSystems
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.outsystems.com/"
+popularity: 0
 ---
 
 # OutSystems

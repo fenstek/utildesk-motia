@@ -1,10 +1,11 @@
 ---
-slug: "dialogflow-cx"
-title: "Dialogflow CX"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: dialogflow-cx
+title: Dialogflow CX
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [chatbot, automation]
 official_url: "https://cloud.google.com/dialogflow/cx"
+popularity: 0
 ---
 
 # Dialogflow CX

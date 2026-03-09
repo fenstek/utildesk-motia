@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-speech-service"
-title: "Microsoft Azure Speech Service"
-category: "AI"
-price_model: "Je nach Nutzung und Plan"
+slug: microsoft-azure-speech-service
+title: Microsoft Azure Speech Service
+category: AI
+price_model: Je nach Nutzung und Plan
 tags: [audio, workflow, automation, transcription]
 official_url: "https://azure.microsoft.com/en-us/products/ai-services/ai-speech"
+popularity: 0
 ---
 
 # Microsoft Azure Speech Service

@@ -1,10 +1,11 @@
 ---
-slug: "workato"
-title: "Workato"
-category: "AI"
-price_model: ""
+slug: workato
+title: Workato
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.workato.com/"
+popularity: 0
 ---
 
 # Workato

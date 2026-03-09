@@ -1,10 +1,11 @@
 ---
-slug: "google-ai"
-title: "Google AI"
-category: "AI"
-price_model: "freemium"
+slug: google-ai
+title: Google AI
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "http://ai.google"
+popularity: 0
 ---
 
 # Google AI

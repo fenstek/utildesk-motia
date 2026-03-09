@@ -1,10 +1,11 @@
 ---
-slug: "textcortex"
-title: "TextCortex"
-category: "Produktivitat"
-price_model: "freemium"
+slug: textcortex
+title: TextCortex
+category: Produktivitat
+price_model: freemium
 tags: [ai,produktivitat,writing]
 official_url: "https://textcortex.net/"
+popularity: 0
 ---
 
 # TextCortex

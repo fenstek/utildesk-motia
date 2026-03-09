@@ -1,10 +1,11 @@
 ---
-slug: "kodular"
-title: "Kodular"
-category: "AI"
-price_model: ""
+slug: kodular
+title: Kodular
+category: AI
+price_model: 
 tags: [assistant,automation]
 official_url: "https://www.kodular.io/"
+popularity: 0
 ---
 
 # Kodular

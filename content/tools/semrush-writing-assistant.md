@@ -1,10 +1,11 @@
 ---
-slug: "semrush-writing-assistant"
-title: "SEMrush Writing Assistant"
-category: "SEO"
-price_model: "je nach Plan, meist abonnementbasiert"
+slug: semrush-writing-assistant
+title: SEMrush Writing Assistant
+category: SEO
+price_model: je nach Plan, meist abonnementbasiert
 tags: [seo, writing, content]
 official_url: "https://www.semrush.com/swa/"
+popularity: 0
 ---
 
 # SEMrush Writing Assistant

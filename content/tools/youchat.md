@@ -1,10 +1,11 @@
 ---
-slug: "youchat"
-title: "YouChat"
-category: "AI"
-price_model: "freemium"
+slug: youchat
+title: YouChat
+category: AI
+price_model: freemium
 tags: [ai, chatbot]
 official_url: "https://web.youchat.com/"
+popularity: 0
 ---
 
 # YouChat

@@ -1,10 +1,11 @@
 ---
-slug: "fl-studio"
-title: "FL Studio"
-category: "Audio"
-price_model: "Je nach Lizenzvariante"
+slug: fl-studio
+title: FL Studio
+category: Audio
+price_model: Je nach Lizenzvariante
 tags: [audio, workflow]
 official_url: "https://www.image-line.com/"
+popularity: 1
 ---
 
 # FL Studio

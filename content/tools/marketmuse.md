@@ -1,10 +1,11 @@
 ---
-slug: "marketmuse"
-title: "MarketMuse"
-category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+slug: marketmuse
+title: MarketMuse
+category: AI
+price_model: Je nach Plan, meist abonnementbasiert
 tags: [assistant, automation, writing, content, marketing]
 official_url: "https://www.marketmuse.com/"
+popularity: 0
 ---
 
 # MarketMuse

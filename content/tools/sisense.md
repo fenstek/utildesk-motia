@@ -1,10 +1,11 @@
 ---
-slug: "sisense"
-title: "Sisense"
-category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: sisense
+title: Sisense
+category: AI
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://www.sisense.com/"
+popularity: 0
 ---
 
 # Sisense

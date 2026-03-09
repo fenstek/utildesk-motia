@@ -1,10 +1,11 @@
 ---
-slug: "doodle"
-title: "Doodle"
-category: "AI"
-price_model: "freemium"
+slug: doodle
+title: Doodle
+category: AI
+price_model: freemium
 tags: [productivity, automation, meeting]
 official_url: "https://doodle.com/"
+popularity: 0
 ---
 
 # Doodle

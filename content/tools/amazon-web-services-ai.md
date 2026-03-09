@@ -1,10 +1,11 @@
 ---
-slug: "amazon-web-services-ai"
-title: "Amazon Web Services (AWS) AI"
-category: "AI"
-price_model: "Je nach Nutzung und gewähltem Tarif"
+slug: amazon-web-services-ai
+title: Amazon Web Services (AWS) AI
+category: AI
+price_model: Je nach Nutzung und gewähltem Tarif
 tags: [api, developer-tools, automation, data]
 official_url: "https://aws.amazon.com/ai/services/"
+popularity: 0
 ---
 
 # Amazon Web Services (AWS) AI

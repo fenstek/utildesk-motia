@@ -1,10 +1,11 @@
 ---
-slug: "openai-gpt-agents"
-title: "OpenAI GPT Agents"
-category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: openai-gpt-agents
+title: OpenAI GPT Agents
+category: AI
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [assistant, workflow]
 official_url: "https://platform.openai.com/docs/agents"
+popularity: 0
 ---
 
 # OpenAI GPT Agents

@@ -1,10 +1,11 @@
 ---
-slug: "xai"
-title: "xAI"
-category: "AI"
-price_model: "freemium"
+slug: xai
+title: xAI
+category: AI
+price_model: freemium
 tags: [chatbot, productivity, automation]
 official_url: "https://x.ai/"
+popularity: 0
 ---
 
 # xAI

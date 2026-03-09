@@ -1,10 +1,11 @@
 ---
-slug: "gumloop"
-title: "Gumloop"
-category: "Automatisierung"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: gumloop
+title: Gumloop
+category: Automatisierung
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [ai, automation, workflow, no-code]
 official_url: "https://www.gumloop.com/"
+popularity: 0
 ---
 
 # Gumloop

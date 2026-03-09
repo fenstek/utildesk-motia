@@ -1,10 +1,11 @@
 ---
-slug: "appinventor"
-title: "AppInventor"
-category: "AI"
-price_model: ""
+slug: appinventor
+title: AppInventor
+category: AI
+price_model: 
 tags: []
 official_url: "https://appinventor.mit.edu/"
+popularity: 0
 ---
 
 # AppInventor

@@ -1,10 +1,11 @@
 ---
-slug: "frameforge"
-title: "FrameForge"
-category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+slug: frameforge
+title: FrameForge
+category: AI
+price_model: Je nach Plan und Anbieter unterschiedlich
 tags: [design, video, productivity, automation]
 official_url: "https://www.storyboardsmarter.com/"
+popularity: 0
 ---
 
 # FrameForge

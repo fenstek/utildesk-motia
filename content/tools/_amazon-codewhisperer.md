@@ -1,10 +1,11 @@
 ---
-slug: "amazon-codewhisperer"
-title: "Amazon CodeWhisperer"
-category: "Developer"
-price_model: ""
+slug: amazon-codewhisperer
+title: Amazon CodeWhisperer
+category: Developer
+price_model: 
 tags: []
 official_url: "https://aws.amazon.com/q/developer/"
+popularity: 0
 ---
 
 # Amazon CodeWhisperer

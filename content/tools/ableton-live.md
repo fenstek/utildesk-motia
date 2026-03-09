@@ -1,10 +1,11 @@
 ---
-slug: "ableton-live"
-title: "Ableton Live"
-category: "Audio"
-price_model: "Je nach Lizenzvariante"
+slug: ableton-live
+title: Ableton Live
+category: Audio
+price_model: Je nach Lizenzvariante
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
+popularity: 1
 ---
 
 # Ableton Live

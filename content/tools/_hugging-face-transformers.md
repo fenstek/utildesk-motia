@@ -1,10 +1,11 @@
 ---
-slug: "hugging-face-transformers"
-title: "Hugging Face Transformers"
-category: "AI"
-price_model: "Open Source / Paid Optionen je nach Anbieter"
+slug: hugging-face-transformers
+title: Hugging Face Transformers
+category: AI
+price_model: Open Source / Paid Optionen je nach Anbieter
 tags: []
 official_url: "https://huggingface.co/docs/transformers/index"
+popularity: 0
 ---
 
 # Hugging Face Transformers

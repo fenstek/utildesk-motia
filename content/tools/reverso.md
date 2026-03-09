@@ -1,10 +1,11 @@
 ---
-slug: "reverso"
-title: "Reverso"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: reverso
+title: Reverso
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [translation, writing, productivity]
 official_url: "https://www.reverso.net/"
+popularity: 0
 ---
 
 # Reverso

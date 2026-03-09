@@ -1,10 +1,11 @@
 ---
-slug: "deep-dream-generator"
-title: "Deep Dream Generator"
-category: "AI"
-price_model: "Je nach Plan kostenpflichtig und kostenlos nutzbar"
+slug: deep-dream-generator
+title: Deep Dream Generator
+category: AI
+price_model: Je nach Plan kostenpflichtig und kostenlos nutzbar
 tags: [design, image, video, automation, productivity]
 official_url: "https://deepdreamgenerator.com/"
+popularity: 0
 ---
 
 # Deep Dream Generator

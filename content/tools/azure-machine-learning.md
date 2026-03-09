@@ -1,10 +1,11 @@
 ---
-slug: "azure-machine-learning"
-title: "Azure Machine Learning"
-category: "AI"
-price_model: "Je nach Plan und Nutzung"
+slug: azure-machine-learning
+title: Azure Machine Learning
+category: AI
+price_model: Je nach Plan und Nutzung
 tags: [data, analytics, automation]
 official_url: "https://azure.microsoft.com/en-us/products/machine-learning/"
+popularity: 0
 ---
 
 # Azure Machine Learning

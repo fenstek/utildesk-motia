@@ -1,10 +1,11 @@
 ---
-slug: "framer"
-title: "Framer"
-category: "AI"
-price_model: ""
+slug: framer
+title: Framer
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.framer.com/"
+popularity: 0
 ---
 
 # Framer

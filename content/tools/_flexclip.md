@@ -1,10 +1,11 @@
 ---
-slug: "flexclip"
-title: "FlexClip"
-category: "AI"
-price_model: ""
+slug: flexclip
+title: FlexClip
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.flexclip.com/"
+popularity: 0
 ---
 
 # FlexClip

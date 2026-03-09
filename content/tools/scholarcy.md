@@ -1,10 +1,11 @@
 ---
-slug: "scholarcy"
-title: "Scholarcy"
-category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+slug: scholarcy
+title: Scholarcy
+category: AI
+price_model: Je nach Plan, meist abonnementbasiert
 tags: [assistant, automation, education, productivity]
 official_url: "https://www.scholarcy.com/"
+popularity: 0
 ---
 
 # Scholarcy

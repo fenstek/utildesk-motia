@@ -1,10 +1,11 @@
 ---
-slug: "google-data-studio"
-title: "Google Data Studio"
-category: "Audio"
-price_model: "Kostenlos"
+slug: google-data-studio
+title: Google Data Studio
+category: Audio
+price_model: Kostenlos
 tags: []
 official_url: "https://lookerstudio.google.com/overview"
+popularity: 1
 ---
 
 # Google Data Studio

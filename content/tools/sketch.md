@@ -1,10 +1,11 @@
 ---
-slug: "sketch"
-title: "Sketch"
-category: "Design"
-price_model: "Je nach Plan"
+slug: sketch
+title: Sketch
+category: Design
+price_model: Je nach Plan
 tags: [image, design]
 official_url: "https://www.sketch.com/"
+popularity: 0
 ---
 
 # Sketch

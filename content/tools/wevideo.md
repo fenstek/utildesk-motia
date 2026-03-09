@@ -1,10 +1,11 @@
 ---
-slug: "wevideo"
-title: "WeVideo"
-category: "Video"
-price_model: "Je nach Plan unterschiedlich"
+slug: wevideo
+title: WeVideo
+category: Video
+price_model: Je nach Plan unterschiedlich
 tags: [video, workflow]
 official_url: "https://www.wevideo.com/"
+popularity: 0
 ---
 
 # WeVideo

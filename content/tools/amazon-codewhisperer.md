@@ -1,10 +1,11 @@
 ---
-slug: "amazon-codewhisperer"
-title: "Amazon CodeWhisperer"
-category: "Developer"
-price_model: "Je nach Plan und Nutzung"
+slug: amazon-codewhisperer
+title: Amazon CodeWhisperer
+category: Developer
+price_model: Je nach Plan und Nutzung
 tags: [coding, developer-tools, automation, productivity]
 official_url: "https://aws.amazon.com/q/developer/"
+popularity: 0
 ---
 
 # Amazon CodeWhisperer

@@ -1,10 +1,11 @@
 ---
-slug: "pixlr"
-title: "Pixlr"
-category: "AI"
-price_model: "Je nach Plan kostenfrei oder abonnementbasiert"
+slug: pixlr
+title: Pixlr
+category: AI
+price_model: Je nach Plan kostenfrei oder abonnementbasiert
 tags: [design, image, automation, productivity]
 official_url: "https://pixlr.com/"
+popularity: 0
 ---
 
 # Pixlr

@@ -1,10 +1,11 @@
 ---
-slug: "connected-papers"
-title: "Connected Papers"
-category: "AI"
-price_model: "Je nach Anbieter/Plan"
+slug: connected-papers
+title: Connected Papers
+category: AI
+price_model: Je nach Anbieter/Plan
 tags: [analytics, automation]
 official_url: "https://www.connectedpapers.com/"
+popularity: 0
 ---
 
 # Connected Papers

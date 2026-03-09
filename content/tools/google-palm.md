@@ -1,10 +1,11 @@
 ---
-slug: "google-palm"
-title: "Google PaLM"
-category: "AI"
-price_model: "je nach Anbieter/Plan"
+slug: google-palm
+title: Google PaLM
+category: AI
+price_model: je nach Anbieter/Plan
 tags: [automation, productivity, developer-tools]
 official_url: "https://blog.google/innovation-and-ai/products/google-palm-2-ai-large-language-model/"
+popularity: 1
 ---
 
 # Google PaLM

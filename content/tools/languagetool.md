@@ -1,10 +1,11 @@
 ---
-slug: "languagetool"
-title: "LanguageTool"
-category: "AI"
-price_model: "Freemium, Abonnement"
+slug: languagetool
+title: LanguageTool
+category: AI
+price_model: Freemium, Abonnement
 tags: [writing, productivity, automation, education]
 official_url: "https://languagetool.org/"
+popularity: 0
 ---
 
 # LanguageTool

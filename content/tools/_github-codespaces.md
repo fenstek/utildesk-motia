@@ -1,10 +1,11 @@
 ---
-slug: "github-codespaces"
-title: "GitHub Codespaces"
-category: "Developer"
-price_model: "Abonnement / nutzungsbasiert"
+slug: github-codespaces
+title: GitHub Codespaces
+category: Developer
+price_model: Abonnement / nutzungsbasiert
 tags: []
 official_url: "https://github.com/features/codespaces"
+popularity: 0
 ---
 
 # GitHub Codespaces

@@ -1,10 +1,11 @@
 ---
-slug: "descript-overdub"
-title: "Descript Overdub"
-category: "AI"
-price_model: "Je nach Plan verfügbar"
+slug: descript-overdub
+title: Descript Overdub
+category: AI
+price_model: Je nach Plan verfügbar
 tags: []
 official_url: "https://www.descript.com/regenerate"
+popularity: 0
 ---
 
 # Descript Overdub

@@ -1,10 +1,11 @@
 ---
-slug: "crowdin"
-title: "Crowdin"
-category: "AI"
-price_model: "freemium"
+slug: crowdin
+title: Crowdin
+category: AI
+price_model: freemium
 tags: [automation, translation, productivity]
 official_url: "https://crowdin.com/"
+popularity: 0
 ---
 
 # Crowdin

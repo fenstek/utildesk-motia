@@ -1,10 +1,11 @@
 ---
-slug: "lumen5"
-title: "Lumen5"
-category: "AI"
-price_model: "Je nach Plan verschieden"
+slug: lumen5
+title: Lumen5
+category: AI
+price_model: Je nach Plan verschieden
 tags: [assistant, automation]
 official_url: "https://lumen5.com/"
+popularity: 0
 ---
 
 # Lumen5

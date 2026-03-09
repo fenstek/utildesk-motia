@@ -1,10 +1,11 @@
 ---
-slug: "research-rabbit"
-title: "Research Rabbit"
-category: "AI"
-price_model: ""
+slug: research-rabbit
+title: Research Rabbit
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.researchrabbit.ai/"
+popularity: 0
 ---
 
 # Research Rabbit

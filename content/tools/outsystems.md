@@ -1,10 +1,11 @@
 ---
-slug: "outsystems"
-title: "OutSystems"
-category: "AI"
-price_model: "Je nach Plan und Anbieter"
+slug: outsystems
+title: OutSystems
+category: AI
+price_model: Je nach Plan und Anbieter
 tags: [no-code, workflow, automation, developer-tools]
 official_url: "https://www.outsystems.com/"
+popularity: 0
 ---
 
 # OutSystems

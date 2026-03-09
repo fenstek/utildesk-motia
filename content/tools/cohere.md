@@ -1,10 +1,11 @@
 ---
-slug: "cohere"
-title: "Cohere"
-category: "AI"
-price_model: "freemium"
+slug: cohere
+title: Cohere
+category: AI
+price_model: freemium
 tags: [ai]
 official_url: "https://cohere.com/"
+popularity: 0
 ---
 
 # Cohere

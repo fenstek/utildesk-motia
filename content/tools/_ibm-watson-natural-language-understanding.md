@@ -1,10 +1,11 @@
 ---
-slug: "ibm-watson-natural-language-understanding"
-title: "IBM Watson Natural Language Understanding"
-category: "AI"
-price_model: ""
+slug: ibm-watson-natural-language-understanding
+title: IBM Watson Natural Language Understanding
+category: AI
+price_model: 
 tags: []
 official_url: "https://www.ibm.com/products"
+popularity: 0
 ---
 
 # IBM Watson Natural Language Understanding

@@ -1,10 +1,11 @@
 ---
-slug: "n8n"
-title: "n8n"
-category: "Automatisierung"
-price_model: "Open Source, Cloud- und Self-Hosting-Optionen"
+slug: n8n
+title: n8n
+category: Automatisierung
+price_model: Open Source, Cloud- und Self-Hosting-Optionen
 tags: []
 official_url: "https://n8n.io"
+popularity: 0
 ---
 
 # n8n

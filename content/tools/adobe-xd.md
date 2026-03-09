@@ -1,10 +1,11 @@
 ---
-slug: "adobe-xd"
-title: "Adobe XD"
-category: "Design"
-price_model: "Abonnement-basiert"
+slug: adobe-xd
+title: Adobe XD
+category: Design
+price_model: Abonnement-basiert
 tags: [design, image]
 official_url: "https://www.adobe.com/products/xd.html"
+popularity: 0
 ---
 
 # Adobe XD

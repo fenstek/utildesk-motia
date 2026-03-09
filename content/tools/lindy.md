@@ -1,10 +1,11 @@
 ---
-slug: "lindy"
-title: "Lindy"
-category: "AI Agents"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: lindy
+title: Lindy
+category: AI Agents
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [ai, assistant, automation, workflow]
 official_url: "https://www.lindy.ai/"
+popularity: 0
 ---
 
 # Lindy

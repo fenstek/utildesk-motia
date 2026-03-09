@@ -1,10 +1,11 @@
 ---
-slug: "monday-com"
-title: "Monday.com"
-category: "AI"
-price_model: "Je nach Plan"
+slug: monday-com
+title: Monday.com
+category: AI
+price_model: Je nach Plan
 tags: []
 official_url: "https://monday.com/"
+popularity: 0
 ---
 
 # Monday.com

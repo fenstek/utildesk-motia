@@ -1,10 +1,11 @@
 ---
-slug: "codeium"
-title: "Codeium"
-category: "Developer"
-price_model: "Je nach Anbieter/Plan"
+slug: codeium
+title: Codeium
+category: Developer
+price_model: Je nach Anbieter/Plan
 tags: []
 official_url: "https://windsurf.com/"
+popularity: 0
 ---
 
 # Codeium

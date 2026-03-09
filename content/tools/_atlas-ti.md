@@ -1,10 +1,11 @@
 ---
-slug: "atlas-ti"
-title: "Atlas.ti"
-category: "AI"
-price_model: ""
+slug: atlas-ti
+title: Atlas.ti
+category: AI
+price_model: 
 tags: []
 official_url: "https://atlasti.com/"
+popularity: 0
 ---
 
 # Atlas.ti

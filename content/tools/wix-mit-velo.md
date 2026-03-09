@@ -1,10 +1,11 @@
 ---
-slug: "wix-mit-velo"
-title: "Wix mit Velo"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: wix-mit-velo
+title: Wix mit Velo
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [developer-tools, no-code, automation, design, marketing]
 official_url: "https://www.wix.com/studio/developers/web-development"
+popularity: 0
 ---
 
 # Wix mit Velo

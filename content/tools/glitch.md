@@ -1,10 +1,11 @@
 ---
-slug: "glitch"
-title: "Glitch"
-category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+slug: glitch
+title: Glitch
+category: AI
+price_model: Je nach Anbieter/Plan unterschiedlich
 tags: [assistant, automation]
 official_url: "https://blog.glitch.com/"
+popularity: 0
 ---
 
 # Glitch

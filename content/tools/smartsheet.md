@@ -1,10 +1,11 @@
 ---
-slug: "smartsheet"
-title: "Smartsheet"
-category: "AI"
-price_model: "Abonnement-basiert"
+slug: smartsheet
+title: Smartsheet
+category: AI
+price_model: Abonnement-basiert
 tags: [data, workflow]
 official_url: "https://www.smartsheet.com/"
+popularity: 0
 ---
 
 # Smartsheet

@@ -1,10 +1,11 @@
 ---
-slug: "fairseq"
-title: "Fairseq"
-category: "AI"
-price_model: "Open Source"
+slug: fairseq
+title: Fairseq
+category: AI
+price_model: Open Source
 tags: [coding, developer-tools, translation, education]
 official_url: "https://github.com/facebookresearch/fairseq"
+popularity: 0
 ---
 
 # Fairseq

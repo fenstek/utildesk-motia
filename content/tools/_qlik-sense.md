@@ -1,10 +1,11 @@
 ---
-slug: "qlik-sense"
-title: "Qlik Sense"
-category: "AI"
-price_model: "Je nach Plan und Anbieter"
+slug: qlik-sense
+title: Qlik Sense
+category: AI
+price_model: Je nach Plan und Anbieter
 tags: []
 official_url: "https://www.qlik.com/us/products/qlik-sense"
+popularity: 0
 ---
 
 # Qlik Sense

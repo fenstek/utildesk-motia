@@ -1,10 +1,11 @@
 ---
-slug: "boomy"
-title: "Boomy"
-category: "AI"
-price_model: "Je nach Plan kostenfrei bis kostenpflichtig"
+slug: boomy
+title: Boomy
+category: AI
+price_model: Je nach Plan kostenfrei bis kostenpflichtig
 tags: [audio, automation, productivity]
 official_url: "https://boomy.com/"
+popularity: 0
 ---
 
 # Boomy

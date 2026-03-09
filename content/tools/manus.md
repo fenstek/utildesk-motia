@@ -1,10 +1,11 @@
 ---
-slug: "manus"
-title: "Manus"
-category: "AI Agents"
-price_model: ""
+slug: manus
+title: Manus
+category: AI Agents
+price_model: 
 tags: [ai, agent, automation, research]
 official_url: "https://manus.im/"
+popularity: 0
 ---
 
 # Manus

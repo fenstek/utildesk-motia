@@ -1,10 +1,11 @@
 ---
-slug: "ibm-watson-text-to-speech"
-title: "IBM Watson Text to Speech"
-category: "Produktivität"
-price_model: "Je nach Plan und Nutzung"
+slug: ibm-watson-text-to-speech
+title: IBM Watson Text to Speech
+category: Produktivität
+price_model: Je nach Plan und Nutzung
 tags: [audio, productivity, automation, customer-support]
 official_url: "https://www.ibm.com/products/text-to-speech"
+popularity: 0
 ---
 
 # IBM Watson Text to Speech

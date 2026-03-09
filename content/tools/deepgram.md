@@ -1,10 +1,11 @@
 ---
-slug: "deepgram"
-title: "Deepgram"
-category: "AI"
-price_model: "Je nach Plan und Nutzung"
+slug: deepgram
+title: Deepgram
+category: AI
+price_model: Je nach Plan und Nutzung
 tags: [audio, transcription, api, developer-tools]
 official_url: "https://deepgram.com/"
+popularity: 0
 ---
 
 # Deepgram

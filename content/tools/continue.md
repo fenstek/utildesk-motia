@@ -1,10 +1,11 @@
 ---
-slug: "continue"
-title: "Continue"
-category: "Developer"
-price_model: ""
+slug: continue
+title: Continue
+category: Developer
+price_model: 
 tags: [ai, coding, developer, assistant]
 official_url: "https://www.continue.dev/"
+popularity: 1
 ---
 
 # Continue

@@ -1,10 +1,11 @@
 ---
-slug: "webflow"
-title: "Webflow"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: webflow
+title: Webflow
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: []
 official_url: "https://webflow.com/"
+popularity: 0
 ---
 
 # Webflow

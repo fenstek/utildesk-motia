@@ -1,10 +1,11 @@
 ---
-slug: "anything-llm"
-title: "AnythingLLM"
-category: "AI"
-price_model: ""
+slug: anything-llm
+title: AnythingLLM
+category: AI
+price_model: 
 tags: []
 official_url: "https://anythingllm.com"
+popularity: 0
 ---
 
 # AnythingLLM

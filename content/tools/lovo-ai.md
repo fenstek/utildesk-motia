@@ -1,10 +1,11 @@
 ---
-slug: "lovo-ai"
-title: "Lovo AI"
-category: "AI"
-price_model: ""
+slug: lovo-ai
+title: Lovo AI
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://lovo.ai/"
+popularity: 1
 ---
 
 # Lovo AI

@@ -1,10 +1,11 @@
 ---
-slug: "bandlab"
-title: "BandLab"
-category: "AI"
-price_model: "kostenlos mit optionalen Premium-Features"
+slug: bandlab
+title: BandLab
+category: AI
+price_model: kostenlos mit optionalen Premium-Features
 tags: [assistant, automation]
 official_url: "https://www.bandlab.com/"
+popularity: 0
 ---
 
 # BandLab

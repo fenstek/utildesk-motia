@@ -1,10 +1,11 @@
 ---
-slug: "pipio"
-title: "Pipio"
-category: "AI"
-price_model: "freemium"
+slug: pipio
+title: Pipio
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.pipio.ai/"
+popularity: 0
 ---
 
 # Pipio

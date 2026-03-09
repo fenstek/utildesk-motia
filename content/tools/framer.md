@@ -1,10 +1,11 @@
 ---
-slug: "framer"
-title: "Framer"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: framer
+title: Framer
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [design, automation, productivity, no-code, marketing]
 official_url: "https://www.framer.com/"
+popularity: 0
 ---
 
 # Framer

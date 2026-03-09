@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-power-bi"
-title: "Microsoft Power BI"
-category: "AI"
-price_model: "Je nach Plan, meist Abonnement"
+slug: microsoft-power-bi
+title: Microsoft Power BI
+category: AI
+price_model: Je nach Plan, meist Abonnement
 tags: []
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+popularity: 0
 ---
 
 # Microsoft Power BI

@@ -1,10 +1,11 @@
 ---
-slug: "dedoose"
-title: "Dedoose"
-category: "AI"
-price_model: ""
+slug: dedoose
+title: Dedoose
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://www.dedoose.com/"
+popularity: 0
 ---
 
 # Dedoose

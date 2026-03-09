@@ -1,10 +1,11 @@
 ---
-slug: "fotojet"
-title: "FotoJet"
-category: "AI"
-price_model: "Je nach Plan kostenlos oder kostenpflichtig"
+slug: fotojet
+title: FotoJet
+category: AI
+price_model: Je nach Plan kostenlos oder kostenpflichtig
 tags: [assistant, automation]
 official_url: "https://www.fotojet.com/"
+popularity: 0
 ---
 
 # FotoJet

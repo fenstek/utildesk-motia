@@ -1,10 +1,11 @@
 ---
-slug: "surfer-seo"
-title: "Surfer SEO"
-category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+slug: surfer-seo
+title: Surfer SEO
+category: AI
+price_model: Je nach Plan, meist abonnementbasiert
 tags: []
 official_url: "https://surferseo.com/"
+popularity: 0
 ---
 
 # Surfer SEO

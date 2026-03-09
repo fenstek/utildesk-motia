@@ -1,10 +1,11 @@
 ---
-slug: "zoho-writer"
-title: "Zoho Writer"
-category: "AI"
-price_model: "freemium"
+slug: zoho-writer
+title: Zoho Writer
+category: AI
+price_model: freemium
 tags: [ai, writing]
 official_url: "http://zoho.com"
+popularity: 0
 ---
 
 # Zoho Writer

@@ -1,10 +1,11 @@
 ---
-slug: "filmora"
-title: "Filmora"
-category: "Audio & Video"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+slug: filmora
+title: Filmora
+category: Audio & Video
+price_model: Je nach Plan und Anbieter unterschiedlich
 tags: [video, editing, audio]
 official_url: "https://filmora.wondershare.com/"
+popularity: 1
 ---
 
 # Filmora

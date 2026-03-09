@@ -1,10 +1,11 @@
 ---
-slug: "ahrefs-content-explorer"
-title: "Ahrefs Content Explorer"
-category: "Produktivität"
-price_model: "Je nach Plan unterschiedlich"
+slug: ahrefs-content-explorer
+title: Ahrefs Content Explorer
+category: Produktivität
+price_model: Je nach Plan unterschiedlich
 tags: [seo, content, analytics]
 official_url: "https://ahrefs.com/content-explorer"
+popularity: 0
 ---
 
 # Ahrefs Content Explorer

@@ -1,10 +1,11 @@
 ---
-slug: "aws-cloud9"
-title: "AWS Cloud9"
-category: "Developer"
-price_model: "Pay-as-you-go"
+slug: aws-cloud9
+title: AWS Cloud9
+category: Developer
+price_model: Pay-as-you-go
 tags: [coding, cloud, developer]
 official_url: "https://aws.amazon.com/cloud9/"
+popularity: 0
 ---
 
 # AWS Cloud9

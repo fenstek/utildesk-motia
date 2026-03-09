@@ -1,10 +1,11 @@
 ---
-slug: "chatterbot"
-title: "ChatterBot"
-category: "AI"
-price_model: "freemium"
+slug: chatterbot
+title: ChatterBot
+category: AI
+price_model: freemium
 tags: [ai, chatbot]
 official_url: "https://chatterbot.ai/"
+popularity: 0
 ---
 
 # ChatterBot

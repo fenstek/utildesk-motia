@@ -1,10 +1,11 @@
 ---
-slug: "flexclip"
-title: "FlexClip"
-category: "AI"
-price_model: "je nach Tarif, meist Freemium mit kostenpflichtigen Upgrades"
+slug: flexclip
+title: FlexClip
+category: AI
+price_model: je nach Tarif, meist Freemium mit kostenpflichtigen Upgrades
 tags: [video, design, marketing, content, automation]
 official_url: "https://www.flexclip.com/"
+popularity: 0
 ---
 
 # FlexClip

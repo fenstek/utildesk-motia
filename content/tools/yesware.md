@@ -1,10 +1,11 @@
 ---
-slug: "yesware"
-title: "Yesware"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: yesware
+title: Yesware
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [productivity, automation, crm, marketing, analytics]
 official_url: "https://www.yesware.com/"
+popularity: 0
 ---
 
 # Yesware

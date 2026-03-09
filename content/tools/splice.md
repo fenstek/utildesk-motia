@@ -1,10 +1,11 @@
 ---
-slug: "splice"
-title: "Splice"
-category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+slug: splice
+title: Splice
+category: AI
+price_model: Je nach Plan unterschiedlich
 tags: [audio, video, content, design, productivity]
 official_url: "https://splice.com/"
+popularity: 0
 ---
 
 # Splice

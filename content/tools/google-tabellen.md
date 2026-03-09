@@ -1,10 +1,11 @@
 ---
-slug: "google-tabellen"
-title: "Google Tabellen"
-category: "AI"
-price_model: "kostenlos mit kostenpflichtigen Upgrades"
+slug: google-tabellen
+title: Google Tabellen
+category: AI
+price_model: kostenlos mit kostenpflichtigen Upgrades
 tags: []
 official_url: "https://workspace.google.com/products/sheets/"
+popularity: 0
 ---
 
 # Google Tabellen

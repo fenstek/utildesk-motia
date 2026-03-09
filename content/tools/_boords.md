@@ -1,10 +1,11 @@
 ---
-slug: "boords"
-title: "Boords"
-category: "AI"
-price_model: "freemium"
+slug: boords
+title: Boords
+category: AI
+price_model: freemium
 tags: [ai, assistant, automation]
 official_url: "https://boords.com/"
+popularity: 0
 ---
 
 # Boords

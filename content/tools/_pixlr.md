@@ -1,10 +1,11 @@
 ---
-slug: "pixlr"
-title: "Pixlr"
-category: "AI"
-price_model: ""
+slug: pixlr
+title: Pixlr
+category: AI
+price_model: 
 tags: [assistant, automation]
 official_url: "https://pixlr.com/"
+popularity: 0
 ---
 
 # Pixlr

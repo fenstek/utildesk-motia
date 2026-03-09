@@ -1,10 +1,11 @@
 ---
-slug: "kofax-rpa"
-title: "Kofax RPA"
-category: "Automation"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+slug: kofax-rpa
+title: Kofax RPA
+category: Automation
+price_model: Je nach Anbieter und Plan unterschiedlich
 tags: [automation, workflow, no-code]
 official_url: "https://www.tungstenautomation.com/products/rpa"
+popularity: 0
 ---
 
 # Kofax RPA
