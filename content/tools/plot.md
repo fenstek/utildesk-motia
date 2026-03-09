@@ -47,11 +47,11 @@ Die Preisgestaltung von Plot ist abhängig vom gewählten Tarif und den gewünsc
 
 ## Alternativen zu Plot
 
-- **Hootsuite**: Ein etabliertes Social-Media-Management-Tool mit umfangreichen Planungs- und Analysefunktionen.
-- **Buffer**: Fokus auf einfache Bedienung und effizientes Post-Management über mehrere Plattformen.
+- [Hootsuite](/tools/hootsuite/): Ein etabliertes Social-Media-Management-Tool mit umfangreichen Planungs- und Analysefunktionen.
+- [Buffer](/tools/buffer/): Fokus auf einfache Bedienung und effizientes Post-Management über mehrere Plattformen.
 - **Sprout Social**: Bietet erweiterte Analytics und Kundenmanagement-Optionen für größere Teams.
-- **Later**: Besonders geeignet für visuelle Content-Planung, z.B. auf Instagram.
-- **Zoho Social**: Integriert sich gut in andere Zoho-Produkte und bietet vielseitige Automatisierungen.
+- [Later](/tools/later/): Besonders geeignet für visuelle Content-Planung, z.B. auf Instagram.
+- [Zoho Social](/tools/zoho-social/): Integriert sich gut in andere Zoho-Produkte und bietet vielseitige Automatisierungen.
 
 ## FAQ
 

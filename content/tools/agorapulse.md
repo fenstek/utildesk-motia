@@ -50,11 +50,11 @@ Die Preisgestaltung von Agorapulse ist in der Regel abonnementsbasiert und varii
 
 ## Alternativen zu Agorapulse
 
-- **Hootsuite:** Ein weit verbreitetes Social-Media-Management-Tool mit ähnlichen Funktionen für Planung, Monitoring und Reporting.
-- **Buffer:** Fokus auf einfache Planung und Veröffentlichung von Beiträgen mit übersichtlicher Oberfläche.
+- [Hootsuite](/tools/hootsuite/): Ein weit verbreitetes Social-Media-Management-Tool mit ähnlichen Funktionen für Planung, Monitoring und Reporting.
+- [Buffer](/tools/buffer/): Fokus auf einfache Planung und Veröffentlichung von Beiträgen mit übersichtlicher Oberfläche.
 - **Sprout Social:** Umfangreiche Plattform mit starken Analyse- und Kollaborationsfunktionen, geeignet für größere Teams.
 - **Sendible:** Flexible Lösung mit vielen Integrationen und Automatisierungsoptionen.
-- **Zoho Social:** Teil der Zoho Suite, bietet Social-Media-Management mit CRM-Integration.
+- [Zoho Social](/tools/zoho-social/): Teil der Zoho Suite, bietet Social-Media-Management mit CRM-Integration.
 
 ## FAQ
 

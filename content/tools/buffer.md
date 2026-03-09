@@ -54,7 +54,7 @@ Buffer bietet ein Freemium-Modell mit unterschiedlichen Preisstufen, die je nach
 - **Sprout Social:** Bietet erweiterte Reporting- und CRM-Features für professionelle Social-Media-Strategien.
 - [Later](/tools/later/): Speziell für visuelle Plattformen wie Instagram und Pinterest optimiert, mit Fokus auf visuelles Planen.
 - **SocialBee:** Automatisierung und Content-Kuration mit flexiblen Planungsoptionen.
-- **Zoho Social:** Integration in das Zoho-Ökosystem mit umfassenden Marketing-Tools.
+- [Zoho Social](/tools/zoho-social/): Integration in das Zoho-Ökosystem mit umfassenden Marketing-Tools.
 
 ## FAQ
 
