@@ -5,6 +5,8 @@ category: "AI"
 price_model: "kostenlos"
 tags: [translation, language, productivity]
 official_url: "https://translate.google.com/?ucbcb=1"
+disabled: true
+reason: "Duplicate of google-translate"
 ---
 
 # Google Übersetzer
