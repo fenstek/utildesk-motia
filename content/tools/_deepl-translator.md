@@ -5,6 +5,8 @@ category: Produktivität
 price_model: Je nach Plan kostenlos und kostenpflichtig
 tags: [translation, writing, productivity]
 official_url: "https://www.deepl.com/en/translator"
+disabled: true
+reason: "Duplicate of deepl"
 popularity: 0
 ---
 

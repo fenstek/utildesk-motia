@@ -5,6 +5,8 @@ category: AI
 price_model: Je nach Plan, meist Abonnement
 tags: []
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi"
+disabled: true
+reason: "Duplicate of power-bi"
 popularity: 0
 ---
 

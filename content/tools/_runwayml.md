@@ -5,6 +5,8 @@ category: "Audio & Video"
 price_model: "Je nach Plan unterschiedlich"
 tags: [video, design, ai]
 official_url: "https://runwayml.com/"
+disabled: true
+reason: "Duplicate of runway"
 ---
 
 # RunwayML
