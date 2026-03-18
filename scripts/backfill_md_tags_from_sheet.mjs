@@ -3,6 +3,8 @@ import 'dotenv/config';
 import fs from 'node:fs';
 import path from 'node:path';
 import { google } from 'googleapis';
+import { enrichTagsIfGeneric, hasGenericTags } from './lib/tag_enricher_gpt.mjs';
+import { normalizeTags } from './lib/tag_policy.mjs';
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -12,6 +14,15 @@ const GOOGLE_PRIVATE_KEY = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g
 const CONTENT_DIR = process.env.CONTENT_DIR || 'content/tools';
 
 function die(msg){ console.error(`\n[ERROR] ${msg}\n`); process.exit(1); }
+
+function parseArgs(argv) {
+  return {
+    apply: argv.includes('--apply') || argv.includes('--apply=1'),
+    json: argv.includes('--json') || argv.includes('--json=1'),
+    gpt: argv.includes('--gpt') || argv.includes('--gpt=1'),
+    limit: Math.max(0, Number((argv.find((a) => a.startsWith('--limit=')) || '').split('=')[1] || 0) || 0),
+  };
+}
 
 async function sheetsClient(){
   if(!SPREADSHEET_ID) die('Missing SPREADSHEET_ID');
@@ -34,24 +45,36 @@ function parseFrontmatter(md){
   return { fm, body, endIndex: end };
 }
 
-function hasNonEmptyTags(fm){
-  // tags: [a,b] OR tags:\n  - a
-  const m = fm.match(/^\s*tags\s*:\s*(.*)\s*$/m);
-  if(!m) return false;
-  const rest = (m[1] || '').trim();
-  if(rest && rest !== '[]' && rest !== '""' && rest !== "''") return true;
+function parseTagsFromFrontmatter(fm) {
+  const lines = String(fm || '').split('\n');
+  const idx = lines.findIndex((l) => /^\s*tags\s*:/.test(l));
+  if (idx < 0) return [];
 
-  // multiline list
-  const lines = fm.split('\n');
-  const idx = lines.findIndex(l => /^\s*tags\s*:\s*$/.test(l));
-  if(idx >= 0){
-    for(let i=idx+1;i<lines.length;i++){
-      const line = lines[i];
-      if(/^\s*[A-Za-z0-9_-]+\s*:/.test(line)) break; // next key
-      if(/^\s*-\s*\S+/.test(line)) return true;
+  const line = lines[idx];
+  const inline = line.match(/^\s*tags\s*:\s*(.*)\s*$/);
+  const rawInline = String(inline?.[1] || '').trim();
+  if (rawInline && rawInline !== '[]' && rawInline !== '""' && rawInline !== "''") {
+    if (/^\[.*\]$/.test(rawInline)) {
+      const inner = rawInline.replace(/^\[/, '').replace(/\]$/, '');
+      return inner
+        .split(',')
+        .map((t) => t.trim().replace(/^['"]|['"]$/g, ''))
+        .filter(Boolean);
     }
+    return rawInline
+      .split(/[;,]/)
+      .map((t) => t.trim().replace(/^['"]|['"]$/g, ''))
+      .filter(Boolean);
   }
-  return false;
+
+  const out = [];
+  for (let i = idx + 1; i < lines.length; i += 1) {
+    const next = lines[i];
+    if (/^\s*[A-Za-z0-9_-]+\s*:/.test(next)) break;
+    const m = next.match(/^\s*-\s*(.+?)\s*$/);
+    if (m?.[1]) out.push(m[1].replace(/^['"]|['"]$/g, ''));
+  }
+  return out;
 }
 
 function injectOrReplaceTags(fm, tagsArr){
@@ -93,7 +116,12 @@ function injectOrReplaceTags(fm, tagsArr){
   return lines.join('\n');
 }
 
-async function loadSheetTags(){
+function normalizeSheetTags(tags) {
+  const parsed = normalizeTags(tags, { maxTags: 5, preserveUnknown: true });
+  return parsed;
+}
+
+async function loadSheetRows(){
   const sheets = await sheetsClient();
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
@@ -107,24 +135,30 @@ async function loadSheetTags(){
   if(idx.slug === undefined) die('Header missing column: slug');
   if(idx.tags === undefined) die('Header missing column: tags');
 
-  const map = new Map(); // slug -> tagsArr
+  const map = new Map(); // slug -> row data
   for(let r=1; r<values.length; r++){
     const row = values[r] || [];
     const slug = String(row[idx.slug] || '').trim();
     const tags = String(row[idx.tags] || '').trim();
     if(!slug || !tags) continue;
-    const arr = tags.split(',').map(x=>x.trim()).filter(Boolean).slice(0, 20);
-    if(arr.length) map.set(slug, arr);
+    map.set(slug, {
+      slug,
+      topic: 'topic' in idx ? String(row[idx.topic] || '').trim() : '',
+      category: 'category' in idx ? String(row[idx.category] || '').trim() : '',
+      notes: 'notes' in idx ? String(row[idx.notes] || '').trim() : '',
+      official_url: 'official_url' in idx ? String(row[idx.official_url] || '').trim() : '',
+      tags: tags.split(',').map(x=>x.trim()).filter(Boolean).slice(0, 20),
+    });
   }
   return map;
 }
 
 async function main(){
-  const apply = process.argv.includes('--apply');
+  const args = parseArgs(process.argv.slice(2));
 
-  const sheetTags = await loadSheetTags();
-  if(sheetTags.size === 0){
-    console.log(JSON.stringify({ ok:true, apply, changed:0, note:'No tags found in sheet map' }, null, 2));
+  const sheetRows = await loadSheetRows();
+  if(sheetRows.size === 0){
+    console.log(JSON.stringify({ ok:true, apply: args.apply, changed:0, note:'No tags found in sheet map' }, null, 2));
     return;
   }
 
@@ -132,39 +166,72 @@ async function main(){
   if(!fs.existsSync(dir)) die(`Content dir not found: ${dir}`);
 
   const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
-  let would = [];
-  let skippedNoFm = 0, skippedHasTags = 0, skippedNoSheetTags = 0;
+  const changes = [];
+  let skippedNoFm = 0, skippedNoSheetTags = 0, skippedEmptyNormalizedTags = 0;
+  let touched = 0;
 
   for(const f of files){
+    if (args.limit && touched >= args.limit) break;
     const fp = path.join(dir, f);
     const slugFromFile = path.basename(f, '.md');
     const md = fs.readFileSync(fp, 'utf8');
     const fmObj = parseFrontmatter(md);
     if(!fmObj){ skippedNoFm++; continue; }
 
-    if(hasNonEmptyTags(fmObj.fm)){ skippedHasTags++; continue; }
+    const sheetRow = sheetRows.get(slugFromFile);
+    if(!sheetRow){ skippedNoSheetTags++; continue; }
 
-    const tagsArr = sheetTags.get(slugFromFile);
-    if(!tagsArr){ skippedNoSheetTags++; continue; }
+    const currentTags = normalizeTags(parseTagsFromFrontmatter(fmObj.fm), { maxTags: 5, preserveUnknown: true }).tags;
+    const sheetNormalized = normalizeSheetTags(sheetRow.tags, sheetRow).tags;
+    let nextTags = [...sheetNormalized];
 
-    const newFm = injectOrReplaceTags(fmObj.fm, tagsArr);
+    if (args.gpt && (hasGenericTags(nextTags) || nextTags.length === 0)) {
+      const gptResult = await enrichTagsIfGeneric({
+        title: sheetRow.topic || slugFromFile,
+        short_hint: sheetRow.category || '',
+        description: sheetRow.notes || '',
+        tags: nextTags,
+        official_url: sheetRow.official_url || '',
+      });
+      if (gptResult.ok && Array.isArray(gptResult.tags) && gptResult.tags.length > 0) {
+        nextTags = normalizeTags(gptResult.tags, { maxTags: 5, preserveUnknown: false }).tags;
+      }
+    }
+
+    nextTags = normalizeTags(nextTags, { maxTags: 5, preserveUnknown: false }).tags;
+    if (nextTags.length === 0) {
+      skippedEmptyNormalizedTags += 1;
+      continue;
+    }
+
+    const currentCsv = currentTags.join(',');
+    const nextCsv = nextTags.join(',');
+    if (currentCsv === nextCsv) continue;
+
+    const newFm = injectOrReplaceTags(fmObj.fm, nextTags);
     const outMd = `---\n${newFm}\n---\n${fmObj.body.replace(/^\n+/, '\n')}`;
-    would.push({ file: fp, slug: slugFromFile, tags: tagsArr });
+    changes.push({ file: fp, slug: slugFromFile, before: currentCsv, after: nextCsv, sheet: sheetNormalized.join(','), gpt: args.gpt && currentCsv !== nextCsv && (hasGenericTags(sheetNormalized) || sheetNormalized.length === 0) });
+    touched += 1;
 
-    if(apply){
+    if(args.apply){
       fs.writeFileSync(fp, outMd, 'utf8');
     }
   }
 
   const result = {
     ok:true,
-    apply,
+    apply: args.apply,
+    gpt: args.gpt,
     total_md: files.length,
-    would_change: would.length,
-    changed: apply ? would.length : 0,
-    skipped: { no_frontmatter: skippedNoFm, already_has_tags: skippedHasTags, no_sheet_tags_for_slug: skippedNoSheetTags },
-    sample: would.slice(0, 10),
-    hint: apply ? undefined : "Run with: node scripts/backfill_md_tags_from_sheet.mjs --apply"
+    would_change: changes.length,
+    changed: args.apply ? changes.length : 0,
+    skipped: {
+      no_frontmatter: skippedNoFm,
+      no_sheet_tags_for_slug: skippedNoSheetTags,
+      empty_normalized_tags: skippedEmptyNormalizedTags,
+    },
+    sample: changes.slice(0, 10),
+    hint: args.apply ? undefined : "Run with: node scripts/backfill_md_tags_from_sheet.mjs --apply"
   };
 
   console.log(JSON.stringify(result, null, 2));

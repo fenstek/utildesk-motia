@@ -3,7 +3,7 @@ slug: animoto
 title: Animoto
 category: AI
 price_model: Je nach Plan unterschiedlich
-tags: [assistant, automation]
+tags: ["ai", "video", "design", "creative", "automation"]
 official_url: "https://animoto.com/"
 popularity: 1
 ---

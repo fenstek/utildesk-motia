@@ -3,7 +3,7 @@ slug: jan-ai
 title: Jan
 category: AI
 price_model: 
-tags: []
+tags: ["automation", "data", "analytics"]
 official_url: "https://jan.ai"
 popularity: 0
 ---

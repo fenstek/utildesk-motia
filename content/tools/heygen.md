@@ -3,11 +3,7 @@ slug: heygen
 title: HeyGen
 category: AI
 price_model: freemium
-tags:
-  - audio
-  - video
-  - marketing
-  - ai
+tags: ["audio", "video", "marketing"]
 official_url: 'https://www.heygen.com/'
 affiliate_url: 'https://www.heygen.com/'
 created_at: "2026-02-07"

@@ -3,7 +3,7 @@ slug: open-webui
 title: Open WebUI
 category: AI
 price_model: 
-tags: []
+tags: ["assistant", "chatbot"]
 official_url: "https://openwebui.com"
 popularity: 0
 ---

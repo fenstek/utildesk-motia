@@ -3,7 +3,7 @@ slug: assemblyai
 title: AssemblyAI
 category: Audio
 price_model: 
-tags: []
+tags: ["audio"]
 official_url: "https://www.assemblyai.com"
 popularity: 1
 ---

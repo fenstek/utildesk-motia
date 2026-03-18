@@ -13,6 +13,7 @@ import { spawnSync } from 'node:child_process';
 import { google } from 'googleapis';
 import { resolveOfficialUrlByDDG } from './resolve_official_url_ddg_v1.mjs';
 import { validateOfficialUrl } from './lib/url_policy.mjs';
+import { normalizeTags } from './lib/tag_policy.mjs';
 
 let chooseOfficialUrlGpt = async () => ({ ok: false, reason: 'gpt_module_unavailable', confidence: 0 });
 let isGptUrlEnabled = () => false;
@@ -34,7 +35,7 @@ const TARGET = Math.max(1, Math.min(50, Number(args.find(a => !a.startsWith('--'
 const DRY_RUN = args.includes('--dry-run');
 const JSON_OUTPUT = args.includes('--json');
 const SHOW_ITEMS = args.includes('--show-items');
-// --only-slugs=slug1,slug2,… → repair mode: process existing NEEDS_REVIEW rows only
+// --only-slugs=slug1,slug2,â€¦ â†’ repair mode: process existing NEEDS_REVIEW rows only
 const ONLY_SLUGS = (() => {
   const a = args.find(a => a.startsWith('--only-slugs='));
   return a ? a.replace('--only-slugs=', '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean) : null;
@@ -321,7 +322,7 @@ const SEED_AI = [
   // Core / LLM
   'ChatGPT','Claude','Gemini','Perplexity','Microsoft Copilot','GitHub Copilot',
   // Images / Design
-  'Midjourney','DALL·E','Stable Diffusion','Adobe Firefly','Canva','Leonardo AI',
+  'Midjourney','DALLÂ·E','Stable Diffusion','Adobe Firefly','Canva','Leonardo AI',
   // Video
   'Runway','Pika','Luma AI','Synthesia','HeyGen','Opus Clip',
   // Audio / Voice
@@ -534,7 +535,7 @@ async function pickWikidata(name){
     const ent = await wikidataEntity(r.id);
     if(!ent) continue;
 
-    // P31 validation (MUST pass) — [wikidata-guard]
+    // P31 validation (MUST pass) â€” [wikidata-guard]
     const p31Check = validateInstanceOf(ent);
     if (!p31Check.valid) {
       process.stderr.write(
@@ -544,7 +545,7 @@ async function pickWikidata(name){
       continue;
     }
 
-    // AI tool check (should be AI-related) — [wikidata-guard]
+    // AI tool check (should be AI-related) â€” [wikidata-guard]
     const desc = r.description || (ent?.descriptions?.en?.value||'');
     if (!isLikelyAITool(name, desc, p31Check.instances)) {
       process.stderr.write(
@@ -671,7 +672,7 @@ async function resolveOfficialForTopic(topic, slug, wd, counters) {
 
 async function classifyAI(openai, name, official_url, desc){
   const prompt = `
-Return ONLY JSON: {"is_ai":true/false,"category":"AI|Developer|Design|Video|Audio|Produktivität","reason":"short"}.
+Return ONLY JSON: {"is_ai":true/false,"category":"AI|Developer|Design|Video|Audio|ProduktivitÃ¤t","reason":"short"}.
 Decide if this product is primarily an AI tool (LLM/chat, coding assistant, generative media, speech AI, AI writing).
 If uncertain => false.
 Name: ${name}
@@ -696,7 +697,7 @@ function categoryFallback(name){
   if (/(midjourney|dall|stable diffusion|firefly)/i.test(name)) return 'Design';
   if (/(runway|pika|descript)/i.test(name)) return 'Video';
   if (/(elevenlabs|otter|krisp|suno|udio)/i.test(name)) return 'Audio';
-  if (/(deepl|grammarly|jasper|copy\.ai|writesonic)/i.test(name)) return 'Produktivität';
+  if (/(deepl|grammarly|jasper|copy\.ai|writesonic)/i.test(name)) return 'ProduktivitÃ¤t';
   return 'AI';
 }
 
@@ -704,7 +705,7 @@ function categoryFallback(name){
 let wikidata_guard_rejected = 0;
 let wikidata_guard_allowed = 0;
 
-// ─── Slug-repair mode helpers ────────────────────────────────────────────────
+// â”€â”€â”€ Slug-repair mode helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 /**
  * Generate tags for a known tool topic via GPT.
@@ -777,18 +778,18 @@ async function runSlugRepairMode(openai, slugList) {
       continue;
     }
 
-    // ── Gate 1: official_url ──────────────────────────────────────────────────
+    // â”€â”€ Gate 1: official_url â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     const urlValidation = validateOfficialUrl(officialUrl, { slug: targetSlug, title: topic });
     const urlFlagStr = (urlValidation.flags || []).join(',');
     if (!urlValidation.ok) {
       const note = `url_blocked:${urlValidation.reason || 'invalid'}`;
-      console.log(`[slug-repair] ${targetSlug}: url blocked → ${note}`);
+      console.log(`[slug-repair] ${targetSlug}: url blocked â†’ ${note}`);
       results.push({ slug: targetSlug, outcome: 'needs_review', old_status: oldStatus, new_status: 'NEEDS_REVIEW', tags: existingTags, notes: note });
       continue;
     }
     if (urlFlagStr) console.log(`[slug-repair] ${targetSlug}: url_flags=${urlFlagStr} (non-blocking)`);
 
-    // ── Tag generation: GPT + heuristics ─────────────────────────────────────
+    // â”€â”€ Tag generation: GPT + heuristics â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     let gptTags = [];
     try {
       gptTags = await generateTagsGPT(openai, topic, officialUrl);
@@ -801,7 +802,7 @@ async function runSlugRepairMode(openai, slugList) {
     const tl = topic.toLowerCase();
     if (tl.includes('automation') || tl.includes('rpa') || tl.includes('workflow')) hSet.add('automation');
     if (tl.includes('design') || tl.includes('illustrat') || tl.includes('vector')) hSet.add('design');
-    if (tl.includes('code') || tl.includes('dev')) hSet.add('devtools');
+    if (tl.includes('code') || tl.includes('dev')) hSet.add('developer-tools');
     if (tl.includes('write') || tl.includes('writer')) hSet.add('writing');
     if (tl.includes('video')) hSet.add('video');
     if (tl.includes('audio') || tl.includes('voice')) hSet.add('audio');
@@ -810,20 +811,20 @@ async function runSlugRepairMode(openai, slugList) {
       ...Array.from(hSet),
       ...gptTags.map(tg => String(tg).toLowerCase().trim()).filter(tg => tg && /^[a-z0-9-]{1,30}$/.test(tg)),
     ]);
-    const tagsDeduped = [...merged].slice(0, 12);
-    const specificTags = tagsDeduped.filter(tg => tg !== 'ai' && tg !== 'produktivität');
+    const tagsDeduped = normalizeTags([...merged], { maxTags: 5, preserveUnknown: true }).tags;
+    const specificTags = tagsDeduped.filter(tg => tg !== 'ai' && tg !== 'assistant' && tg !== 'content' && tg !== 'productivity' && tg !== 'workflow');
     const tagsInvalid = specificTags.length === 0;
     const cleanTags = tagsDeduped.join(',');
 
-    // ── Gate 2: tags ──────────────────────────────────────────────────────────
+    // â”€â”€ Gate 2: tags â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     if (tagsInvalid) {
       const note = 'tags_insufficient:only_generic';
-      console.log(`[slug-repair] ${targetSlug}: tags insufficient → NEEDS_REVIEW (${note})`);
+      console.log(`[slug-repair] ${targetSlug}: tags insufficient â†’ NEEDS_REVIEW (${note})`);
       results.push({ slug: targetSlug, outcome: 'needs_review', old_status: oldStatus, new_status: 'NEEDS_REVIEW', tags: cleanTags, notes: note });
       continue;
     }
 
-    // ── Both gates pass → NEW ─────────────────────────────────────────────────
+    // â”€â”€ Both gates pass â†’ NEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     const newStatus = 'NEW';
     const note = `slug_repair:ok url_flags=${urlFlagStr || 'none'} tags=gpt+heuristic`;
 
@@ -839,15 +840,15 @@ async function runSlugRepairMode(openai, slugList) {
         spreadsheetId: SPREADSHEET_ID,
         requestBody: { valueInputOption: 'RAW', data: updates },
       });
-      console.log(`[slug-repair] ✓ ${targetSlug}: tags="${cleanTags}" ${oldStatus} → ${newStatus}`);
+      console.log(`[slug-repair] âœ“ ${targetSlug}: tags="${cleanTags}" ${oldStatus} â†’ ${newStatus}`);
     } else {
-      console.log(`[DRY] ${targetSlug}: would set tags="${cleanTags}" ${oldStatus} → ${newStatus}`);
+      console.log(`[DRY] ${targetSlug}: would set tags="${cleanTags}" ${oldStatus} â†’ ${newStatus}`);
     }
 
     results.push({ slug: targetSlug, outcome: 'promoted', old_status: oldStatus, new_status: newStatus, tags: cleanTags, notes: note });
   }
 
-  // ── Results table ─────────────────────────────────────────────────────────
+  // â”€â”€ Results table â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const W = [21, 14, 14, 36, 42];
   const sep = (c) => '+' + W.map(w => c.repeat(w + 2)).join('+') + '+';
   const row = (cells) => '| ' + cells.map((c, i) => String(c || '').slice(0, W[i]).padEnd(W[i])).join(' | ') + ' |';
@@ -864,7 +865,7 @@ async function main(){
   if(!OPENAI_API_KEY) die('Missing OPENAI_API_KEY');
   const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
-  // ── Slug-repair mode: process existing NEEDS_REVIEW rows by slug ──────────
+  // â”€â”€ Slug-repair mode: process existing NEEDS_REVIEW rows by slug â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if (ONLY_SLUGS?.length) {
     await runSlugRepairMode(openai, ONLY_SLUGS);
     return;
@@ -997,7 +998,7 @@ async function main(){
       }
       const officialToCheck = hardOverride || normalizedOfficial;
 
-      // ─── GATE 1: official_url (v2.4) ─────────────────────────────────────────
+      // â”€â”€â”€ GATE 1: official_url (v2.4) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       // Hard overrides bypass all validation unconditionally.
       // v2.4 change: hostname mismatch is a FLAG (advisory), not a block.
       // Wrong-entity domains (e.g. transformers.hasbro.com) are a hard block.
@@ -1022,15 +1023,15 @@ async function main(){
       }
       const safeOfficial = hardOverride || (urlBlocked ? '' : officialToCheck);
 
-      // ─── GATE 2: tags (hard gate, v2.4 = same as v2.3) ──────────────────────
+      // â”€â”€â”€ GATE 2: tags (hard gate, v2.4 = same as v2.3) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       // Normalize: deduplicate, lowercase, strip empty.
       // Require at least 1 specific tag beyond the generic 'ai' bucket.
       const tagsDeduped = [...new Set(tags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean))];
-      const specificTags = tagsDeduped.filter(t => t !== 'ai' && t !== 'produktivität');
+      const specificTags = tagsDeduped.filter(t => t !== 'ai' && t !== 'produktivitÃ¤t');
       const tagsInvalid = specificTags.length === 0;
       const cleanTags = tagsDeduped.join(',');
 
-      // ─── Determine final status — NEW only if BOTH gates pass ────────────────
+      // â”€â”€â”€ Determine final status â€” NEW only if BOTH gates pass â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
       const blockReasons = [];
       if (urlBlocked) {
         blockReasons.push(`blocked:missing/invalid official_url (${urlResolution?.reason || 'unresolved'})`);

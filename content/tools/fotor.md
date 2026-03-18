@@ -3,15 +3,12 @@ slug: fotor
 title: Fotor
 category: AI
 price_model: freemium
-tags:
-  - design
-  - ai
+tags: ["design"]
 official_url: 'https://www.fotor.com/'
 affiliate_url: 'https://www.fotor.com/'
 created_at: "2026-02-08"
 popularity: 0
 ---
-
 
 # Fotor
 

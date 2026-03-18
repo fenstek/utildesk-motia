@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import 'dotenv/config';
 import { google } from 'googleapis';
+import { normalizeTags } from './lib/tag_policy.mjs';
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -32,31 +33,40 @@ function colLetter(idx){ // 0->A
 }
 
 function buildTags(topic, category){
-  const out = new Set();
-  out.add('ai');
-  if(category) out.add(String(category).toLowerCase());
+  const out = [];
+  const add = (tag) => { if (tag) out.push(tag); };
+
+  const cat = String(category || '').toLowerCase();
+  if (cat.includes('produkt') || cat.includes('productiv')) add('productivity');
+  if (cat.includes('entwickler') || cat.includes('developer')) add('developer-tools');
+  if (cat.includes('automatis')) add('automation');
+  if (cat.includes('design')) add('design');
+  if (cat.includes('audio')) add('audio');
+  if (cat.includes('video')) add('video');
+  if (cat.includes('marketing')) add('marketing');
+  if (cat.includes('schreib') || cat.includes('content')) add('content');
 
   const t = String(topic || '').toLowerCase();
 
-  // common signals
-  if (t.includes('chat') || t.includes('assistant') || t.includes('bot')) out.add('chatbot');
-  if (t.includes('gpt') || t.includes('llm')) out.add('llm');
+  if (t.includes('chat') || t.includes('assistant') || t.includes('bot')) add('chatbot');
+  if (t.includes('gpt') || t.includes('llm')) add('llm');
+  if (t.includes('write') || t.includes('writer') || t.includes('copy') || t.includes('text')) add('writing');
+  if (t.includes('design') || t.includes('ui') || t.includes('ux') || t.includes('figma') || t.includes('wire')) add('design');
+  if (t.includes('image') || t.includes('photo') || t.includes('art') || t.includes('visual') || t.includes('midjourney') || t.includes('stable')) add('image');
+  if (t.includes('video') || t.includes('film') || t.includes('storyboard') || t.includes('stream')) add('video');
+  if (t.includes('audio') || t.includes('voice') || t.includes('speech') || t.includes('tts') || t.includes('music') || t.includes('podcast')) add('audio');
+  if (t.includes('code') || t.includes('dev') || t.includes('github') || t.includes('api') || t.includes('sdk')) add('developer-tools');
+  if (t.includes('workflow') || t.includes('automation') || t.includes('n8n') || t.includes('zapier') || t.includes('ifttt')) add('automation');
+  if (t.includes('productivity') || t.includes('notes') || t.includes('docs') || t.includes('calendar') || t.includes('task')) add('productivity');
+  if (t.includes('research') || t.includes('citation') || t.includes('paper') || t.includes('library')) add('research');
+  if (t.includes('seo') || t.includes('keyword')) add('seo');
+  if (t.includes('marketing') || t.includes('sales') || t.includes('crm')) add('marketing');
+  if (t.includes('translate') || t.includes('language')) add('translation');
+  if (t.includes('meeting')) add('meeting');
+  if (t.includes('support') || t.includes('helpdesk') || t.includes('ticket')) add('customer-support');
+  if (t.includes('spreadsheet') || t.includes('sheet') || t.includes('excel')) add('spreadsheet');
 
-  // modalities
-  if (t.includes('image') || t.includes('photo') || t.includes('midjourney') || t.includes('stable')) out.add('image');
-  if (t.includes('video')) out.add('video');
-  if (t.includes('audio') || t.includes('voice') || t.includes('speech') || t.includes('tts')) out.add('audio');
-
-  // dev / automation
-  if (t.includes('code') || t.includes('dev') || t.includes('github') || t.includes('api') || t.includes('sdk')) out.add('devtools');
-  if (t.includes('workflow') || t.includes('automation') || t.includes('n8n') || t.includes('zapier')) out.add('automation');
-
-  // writing / productivity / design
-  if (t.includes('write') || t.includes('writer') || t.includes('copy') || t.includes('text')) out.add('writing');
-  if (t.includes('productivity') || t.includes('notes') || t.includes('docs')) out.add('productivity');
-  if (t.includes('design') || t.includes('ui') || t.includes('ux') || t.includes('figma')) out.add('design');
-
-  return Array.from(out).filter(Boolean).slice(0, 12).join(',');
+  return normalizeTags(out, { maxTags: 5, preserveUnknown: true }).tags.join(',');
 }
 
 async function main(){

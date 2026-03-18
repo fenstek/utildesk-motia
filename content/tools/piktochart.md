@@ -2,16 +2,12 @@
 title: Piktochart
 slug: piktochart
 category: AI
-tags:
-  - design
-  - marketing
-  - ai
 price_model: freemium
+tags: ["design", "marketing"]
 official_url: 'https://piktochart.com/'
 created_at: "2026-02-13"
 popularity: 0
 ---
-
 
 # Piktochart
 

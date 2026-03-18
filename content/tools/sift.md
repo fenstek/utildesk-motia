@@ -3,16 +3,11 @@ slug: sift
 title: Sift
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - produktivitat
-  - data
-  - ai
+tags: ["writing", "data"]
 official_url: 'https://sift.com/'
 created_at: "2026-02-08"
 popularity: 0
 ---
-
 
 # Sift
 

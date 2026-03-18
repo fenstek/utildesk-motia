@@ -3,14 +3,11 @@ slug: chai
 title: Chai
 category: AI
 price_model: freemium
-tags:
-  - chatbot
-  - ai
+tags: ["chatbot"]
 official_url: 'https://www.chai-research.com/'
 created_at: "2026-02-12"
 popularity: 0
 ---
-
 
 # Chai
 

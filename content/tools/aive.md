@@ -3,12 +3,11 @@ slug: aive
 title: Aive
 category: AI
 price_model: freemium
-tags: [ai, video, content, marketing]
+tags: ["video", "content", "marketing"]
 official_url: "https://www.aive.com/"
 created_at: 2026-02-15
 popularity: 1
 ---
-
 
 # Aive
 

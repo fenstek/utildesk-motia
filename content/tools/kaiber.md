@@ -3,7 +3,7 @@ slug: kaiber
 title: Kaiber
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "https://www.kaiber.ai/superstudio"
 popularity: 0
 ---

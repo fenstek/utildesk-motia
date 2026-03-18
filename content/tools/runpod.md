@@ -3,7 +3,7 @@ slug: runpod
 title: RunPod
 category: Cloud
 price_model: 
-tags: []
+tags: ["automation", "workflow", "data"]
 official_url: "https://www.runpod.io"
 popularity: 0
 ---

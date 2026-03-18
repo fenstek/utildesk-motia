@@ -3,7 +3,7 @@ slug: sora
 title: Sora
 category: Video
 price_model: 
-tags: []
+tags: ["video"]
 official_url: "https://openai.com/sora"
 popularity: 0
 ---

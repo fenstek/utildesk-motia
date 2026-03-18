@@ -9,7 +9,7 @@
  * Files whose name starts with "_" (e.g. _TEMPLATE.md) are skipped.
  *
  * Usage:
- *   # dry-run — report only, no writes
+ *   # dry-run â€” report only, no writes
  *   node scripts/audit_repo_tools_missing_official_url.mjs
  *
  *   # apply: patch MD frontmatter from Sheet
@@ -23,7 +23,7 @@
  * (handled by isMissingUrl() from scripts/lib/url_policy.mjs)
  *
  * Source of truth: Google Sheet (Tabellenblatt1), column K = official_url.
- * This script DOES NOT change Sheet status — only patches MD files.
+ * This script DOES NOT change Sheet status â€” only patches MD files.
  */
 
 import 'dotenv/config';
@@ -32,8 +32,9 @@ import path from 'node:path';
 import { google }       from 'googleapis';
 import { pathToFileURL } from 'node:url';
 import { validateOfficialUrl, isMissingUrl } from './lib/url_policy.mjs';
+import { normalizeTags } from './lib/tag_policy.mjs';
 
-// ─── Config ──────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const SPREADSHEET_ID      = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
 const SHEET_NAME          = process.env.SHEET_NAME     || 'Tabellenblatt1';
@@ -42,12 +43,12 @@ const GOOGLE_PRIVATE_KEY  = (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/
 const SA_JSON_PATH        = '/opt/utildesk-motia/secrets/google-service-account.json';
 const CONTENT_DIR         = path.resolve(process.cwd(), 'content/tools');
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function die(msg) { console.error(`\n[ERROR] ${msg}\n`); process.exit(1); }
 function nowIso() { return new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'); }
 
-// ─── Safe frontmatter parser ──────────────────────────────────────────────────
+// â”€â”€â”€ Safe frontmatter parser â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 //
 // Handles the YAML subset used by this project:
 //   - Scalar values: unquoted, single-quoted, double-quoted
@@ -154,7 +155,7 @@ function getTagsRaw(fields) {
   return s.split(',').map(t => t.trim()).filter(Boolean);
 }
 
-// ─── Frontmatter patcher ──────────────────────────────────────────────────────
+// â”€â”€â”€ Frontmatter patcher â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 //
 // Upserts a scalar key in the frontmatter block.
 // Preserves the rest of the file exactly.
@@ -212,7 +213,7 @@ function patchFrontmatterTags(content, tags) {
   return open + newBody + close + content.slice(m[0].length);
 }
 
-// ─── Google Sheets client ────────────────────────────────────────────────────
+// â”€â”€â”€ Google Sheets client â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function sheetsClient() {
   if (GOOGLE_CLIENT_EMAIL && GOOGLE_PRIVATE_KEY) {
@@ -230,7 +231,7 @@ async function sheetsClient() {
   return google.sheets({ version: 'v4', auth });
 }
 
-/** Load slug → { official_url, tags } map from Sheet. */
+/** Load slug â†’ { official_url, tags } map from Sheet. */
 async function loadSheetMap() {
   const sheets = await sheetsClient();
   const range  = `${SHEET_NAME}!A1:P`;
@@ -245,7 +246,7 @@ async function loadSheetMap() {
   const miss = required.filter(k => !(k in idx));
   if (miss.length) die(`Missing Sheet columns: ${miss.join(', ')}`);
 
-  const map = new Map(); // slug → { official_url, tags }
+  const map = new Map(); // slug â†’ { official_url, tags }
   for (let i = 1; i < values.length; i++) {
     const row  = values[i] || [];
     const slug = String(row[idx.slug] || '').trim().toLowerCase();
@@ -258,7 +259,7 @@ async function loadSheetMap() {
   return map;
 }
 
-// ─── Main ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   const argv    = process.argv.slice(2);
@@ -267,7 +268,7 @@ async function main() {
 
   console.error(`[repo_audit] mode=${apply ? 'APPLY' : 'DRY-RUN'} fix-tags=${fixTags} ts=${nowIso()}`);
 
-  // ── 1. Scan all MD files ─────────────────────────────────────────────────
+  // â”€â”€ 1. Scan all MD files â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if (!fs.existsSync(CONTENT_DIR)) die(`content dir not found: ${CONTENT_DIR}`);
 
   const allFiles = fs.readdirSync(CONTENT_DIR)
@@ -278,7 +279,7 @@ async function main() {
     fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md') && f.startsWith('_')).length
   } _ files)`);
 
-  // ── 2. Parse frontmatter and identify missing official_url ───────────────
+  // â”€â”€ 2. Parse frontmatter and identify missing official_url â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const report = [];
 
   for (const { file, slug, fullPath } of allFiles) {
@@ -302,14 +303,14 @@ async function main() {
 
   const missingRows = report.filter(r => r.is_missing);
 
-  // ── 3. Print scan report ─────────────────────────────────────────────────
-  console.log(`\n${'─'.repeat(76)}`);
+  // â”€â”€ 3. Print scan report â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  console.log(`\n${'â”€'.repeat(76)}`);
   console.log(`Repo audit: ${report.length} md files scanned  |  ${missingRows.length} missing official_url`);
-  console.log(`${'─'.repeat(76)}`);
+  console.log(`${'â”€'.repeat(76)}`);
 
   if (missingRows.length) {
     console.log(`\n${'slug'.padEnd(34)} ${'file'.padEnd(38)} ${'official_url_raw (current)'}`);
-    console.log(`${'─'.repeat(76)}`);
+    console.log(`${'â”€'.repeat(76)}`);
     for (const r of missingRows) {
       const rawDisplay = r.official_url_field_absent ? '(field absent)' : `"${r.official_url_raw}"`;
       console.log(`${r.slug.padEnd(34)} ${r.file.padEnd(38)} ${rawDisplay}`);
@@ -323,12 +324,12 @@ async function main() {
       missing_official_url_count: 0,
       fixed_from_sheet_count: 0,
       still_missing_in_sheet_count: 0,
-      note: 'All MD files have official_url — nothing to do.',
+      note: 'All MD files have official_url â€” nothing to do.',
     }, null, 2));
     return;
   }
 
-  // ── 4. Apply mode: load Sheet, patch files ──────────────────────────────
+  // â”€â”€ 4. Apply mode: load Sheet, patch files â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const counters = {
     fixed_from_sheet:       0,
     still_missing_in_sheet: 0,
@@ -355,17 +356,17 @@ async function main() {
           fs.writeFileSync(row.fullPath, content, 'utf8');
           counters.fixed_from_sheet++;
           fixResults.push({ slug: row.slug, outcome: 'fixed', official_url: sheetUrl, source: 'sheet' });
-          console.error(`  ✓ fixed: ${row.slug} → ${sheetUrl}`);
+          console.error(`  âœ“ fixed: ${row.slug} â†’ ${sheetUrl}`);
         } else {
           // Sheet URL failed validation
           counters.still_missing_in_sheet++;
           fixResults.push({ slug: row.slug, outcome: 'still_missing', reason: `sheet_url_invalid:${validation.reason}`, sheet_url: sheetUrl });
-          console.error(`  ✗ blocked: ${row.slug} sheet_url="${sheetUrl}" reason=${validation.reason}`);
+          console.error(`  âœ— blocked: ${row.slug} sheet_url="${sheetUrl}" reason=${validation.reason}`);
         }
       } else {
         counters.still_missing_in_sheet++;
         fixResults.push({ slug: row.slug, outcome: 'still_missing', reason: 'not_in_sheet_or_empty' });
-        console.error(`  ✗ still missing: ${row.slug} (not in sheet or empty)`);
+        console.error(`  âœ— still missing: ${row.slug} (not in sheet or empty)`);
       }
 
       // -- fix-tags (optional) --
@@ -377,35 +378,34 @@ async function main() {
         if (!currentTags || currentTags.length === 0) {
           // Try to restore from Sheet
           const rawSheetTags = sheetRow?.tags || '';
-          const sheetTags = rawSheetTags.split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
+          const sheetTags = normalizeTags(rawSheetTags.split(','), { maxTags: 5, preserveUnknown: true }).tags;
           if (sheetTags.length > 0) {
-            const deduped = [...new Set(sheetTags)];
-            const patched = patchFrontmatterTags(content, deduped);
+            const patched = patchFrontmatterTags(content, sheetTags);
             fs.writeFileSync(row.fullPath, patched, 'utf8');
             counters.tags_fixed++;
-            fixResults[fixResults.length - 1].tags_fixed = deduped.join(',');
-            console.error(`  ✓ tags fixed: ${row.slug} → [${deduped.join(', ')}]`);
+            fixResults[fixResults.length - 1].tags_fixed = sheetTags.join(',');
+            console.error(`  ✓ tags fixed: ${row.slug} → [${sheetTags.join(', ')}]`);
           } else {
-            // Cannot determine tags — report only
+            // Cannot determine tags â€” report only
             fixResults[fixResults.length - 1].tags_missing_in_sheet = true;
-            console.error(`  ⚠ tags missing in sheet too: ${row.slug}`);
+            console.error(`  âš  tags missing in sheet too: ${row.slug}`);
           }
         } else {
           // Normalize existing tags
-          const normalized = [...new Set(currentTags.map(t => t.trim().toLowerCase()).filter(Boolean))];
-          const specific = normalized.filter(t => t !== 'ai' && t !== 'produktivität');
+          const normalized = normalizeTags(currentTags, { maxTags: 5, preserveUnknown: true }).tags;
+          const specific = normalized.filter(t => t !== 'ai' && t !== 'assistant' && t !== 'content' && t !== 'productivity' && t !== 'workflow');
           if (specific.length === 0) {
-            // Only generic tags — flag but don't change
+            // Only generic tags â€” flag but don't change
             counters.tags_invalid++;
             fixResults[fixResults.length - 1].tags_invalid_needs_review = true;
-            console.error(`  ⚠ tags_invalid: ${row.slug} has only generic tags: [${normalized.join(', ')}]`);
+            console.error(`  âš  tags_invalid: ${row.slug} has only generic tags: [${normalized.join(', ')}]`);
           } else if (JSON.stringify(normalized) !== JSON.stringify(currentTags)) {
             // Normalize and rewrite
             const patched = patchFrontmatterTags(content, normalized);
             fs.writeFileSync(row.fullPath, patched, 'utf8');
             counters.tags_fixed++;
             fixResults[fixResults.length - 1].tags_normalized = normalized.join(',');
-            console.error(`  ✓ tags normalized: ${row.slug}`);
+            console.error(`  âœ“ tags normalized: ${row.slug}`);
           }
         }
       }
@@ -415,7 +415,7 @@ async function main() {
     console.log(`\n[DRY-RUN] Run with --apply=1 to patch MD files from Sheet.`);
   }
 
-  // ── 5. JSON summary ──────────────────────────────────────────────────────
+  // â”€â”€ 5. JSON summary â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const summary = {
     ok: true,
     mode: apply ? 'apply' : 'dry-run',
@@ -441,7 +441,7 @@ async function main() {
   console.log('\n' + JSON.stringify(summary, null, 2));
 }
 
-// ─── Entry point ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Entry point â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const isDirectRun = (() => {
   const entry = process.argv[1];

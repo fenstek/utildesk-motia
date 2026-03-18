@@ -3,7 +3,7 @@ slug: kai
 title: KAI
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "https://kai.ai/"
 popularity: 1
 ---

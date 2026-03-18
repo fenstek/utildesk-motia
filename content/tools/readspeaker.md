@@ -3,12 +3,11 @@ slug: "readspeaker"
 title: "ReadSpeaker"
 category: "AI"
 price_model: "freemium"
-tags: [ai, audio, transcription]
+tags: ["audio", "transcription"]
 official_url: "https://www.readspeaker.com/"
 created_at: "2026-02-15"
 popularity: 0
 ---
-
 
 # ReadSpeaker
 

@@ -4,8 +4,8 @@
  *
  * Pre-flight check for rows that are about to be published (status = NEW).
  * Validates that every NEW row has:
- *   1) official_url — non-empty, valid https, passes suspicious-URL guard
- *   2) tags — at least one specific tag (not just "ai")
+ *   1) official_url â€” non-empty, valid https, passes suspicious-URL guard
+ *   2) tags â€” at least one specific tag (not just "ai")
  *
  * Rows that fail any check are moved to NEEDS_REVIEW with a clear note.
  * Rows that pass remain NEW and are safe to publish.
@@ -28,8 +28,9 @@ import 'dotenv/config';
 import { google } from 'googleapis';
 import { pathToFileURL } from 'node:url';
 import { validateOfficialUrl, isMissingUrl } from './lib/url_policy.mjs';
+import { normalizeTags } from './lib/tag_policy.mjs';
 
-// ─── Config ─────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
 const SHEET_NAME     = process.env.SHEET_NAME     || 'Tabellenblatt1';
@@ -42,17 +43,13 @@ const SA_JSON_PATH = '/opt/utildesk-motia/secrets/google-service-account.json';
  * empty, only "ai", or only generic category values.
  */
 function hasInvalidTags(rawTags) {
-  if (!rawTags) return true;
-  const tags = String(rawTags).split(',')
-    .map(t => t.trim().toLowerCase())
-    .filter(Boolean);
+  const tags = normalizeTags(rawTags, { maxTags: 5, preserveUnknown: true }).tags;
   if (tags.length === 0) return true;
   // Need at least one specific tag beyond the catch-all "ai"
-  const specific = tags.filter(t => t !== 'ai' && t !== 'produktivität' && t !== 'productivity');
+  const specific = tags.filter(t => !["ai", "assistant", "content", "productivity", "workflow"].includes(t));
   return specific.length === 0;
 }
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function die(msg) { console.error(`\n[ERROR] ${msg}\n`); process.exit(1); }
 
@@ -68,7 +65,7 @@ function colLetter(idx) {
 
 function nowIso() { return new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'); }
 
-// ─── Google Sheets client ────────────────────────────────────────────────────
+// â”€â”€â”€ Google Sheets client â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function sheetsClient() {
   if (GOOGLE_CLIENT_EMAIL && GOOGLE_PRIVATE_KEY) {
@@ -86,7 +83,7 @@ async function sheetsClient() {
   return google.sheets({ version: 'v4', auth });
 }
 
-// ─── Main ─────────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   const argv  = process.argv.slice(2);
@@ -117,7 +114,7 @@ async function main() {
   const colStatus = colLetter(idx.status);
   const colNotes  = colLetter(idx.notes);
 
-  // ── Scan NEW rows ────────────────────────────────────────────────────────
+  // â”€â”€ Scan NEW rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const toCheck = [];
 
   for (let i = 1; i < values.length; i++) {
@@ -138,7 +135,7 @@ async function main() {
     toCheck.push({ rowNumber: i + 1, topic, slug, offUrl, notes, tags });
   }
 
-  // ── Validate each NEW row ────────────────────────────────────────────────
+  // â”€â”€ Validate each NEW row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const blocked  = [];
   const clean    = [];
 
@@ -167,22 +164,22 @@ async function main() {
     }
   }
 
-  // ── Report ────────────────────────────────────────────────────────────────
-  console.log(`\n${'─'.repeat(72)}`);
+  // â”€â”€ Report â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  console.log(`\n${'â”€'.repeat(72)}`);
   console.log(`Preflight: ${toCheck.length} NEW rows checked`);
   console.log(`  PASS: ${clean.length}  |  BLOCKED: ${blocked.length}`);
-  console.log(`${'─'.repeat(72)}`);
+  console.log(`${'â”€'.repeat(72)}`);
 
   if (blocked.length) {
     console.log(`\nBLOCKED rows (will be moved to NEEDS_REVIEW if --apply):`);
     console.log(`${'#'.padEnd(4)} ${'row'.padEnd(5)} ${'slug'.padEnd(30)} issue`);
-    console.log(`${'─'.repeat(72)}`);
+    console.log(`${'â”€'.repeat(72)}`);
     blocked.forEach((r, i) => {
       console.log(`${String(i + 1).padEnd(4)} ${String(r.rowNumber).padEnd(5)} ${r.slug.padEnd(30)} ${r.issues.join('; ')}`);
     });
   }
 
-  // ── Apply: move blocked rows to NEEDS_REVIEW ─────────────────────────────
+  // â”€â”€ Apply: move blocked rows to NEEDS_REVIEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const batchUpdates = [];
   let applied = 0;
 
@@ -201,10 +198,10 @@ async function main() {
       spreadsheetId: SPREADSHEET_ID,
       requestBody: { valueInputOption: 'RAW', data: batchUpdates },
     });
-    console.log(`\n[preflight] Applied: ${applied} rows → NEEDS_REVIEW`);
+    console.log(`\n[preflight] Applied: ${applied} rows â†’ NEEDS_REVIEW`);
   }
 
-  // ── JSON summary ──────────────────────────────────────────────────────────
+  // â”€â”€ JSON summary â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const summary = {
     ok: true,
     mode: apply ? 'apply' : 'dry-run',
@@ -223,7 +220,7 @@ async function main() {
   console.log('\n' + JSON.stringify(summary, null, 2));
 }
 
-// ─── Entry point ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Entry point â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const isDirectRun = (() => {
   const entry = process.argv[1];

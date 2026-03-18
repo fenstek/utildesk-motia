@@ -3,7 +3,7 @@ slug: together-ai
 title: Together AI
 category: AI Infrastructure
 price_model: 
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://www.together.ai"
 popularity: 1
 ---

@@ -3,7 +3,7 @@ slug: bolt-new
 title: Bolt.new
 category: Developer
 price_model: 
-tags: []
+tags: ["coding", "developer-tools"]
 official_url: "https://bolt.new"
 popularity: 0
 ---

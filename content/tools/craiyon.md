@@ -3,12 +3,11 @@ slug: craiyon
 title: Craiyon
 category: AI
 price_model: freemium
-tags: 
+tags: ["writing", "design"]
 official_url: "https://www.craiyon.com/"
 created_at: 2026-02-15
 popularity: 1
 ---
-
 
 # Craiyon
 

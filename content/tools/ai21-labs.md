@@ -3,7 +3,7 @@ slug: ai21-labs
 title: AI21 Labs
 category: AI
 price_model: 
-tags: [assistant, automation]
+tags: ["ai", "writing", "creative", "productivity"]
 official_url: "https://www.ai21.com/"
 popularity: 1
 ---

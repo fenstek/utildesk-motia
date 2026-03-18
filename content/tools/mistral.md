@@ -3,12 +3,11 @@ slug: "mistral"
 title: "Mistral"
 category: "AI"
 price_model: "freemium"
-tags: [ai, llm, developer]
+tags: ["data", "automation"]
 official_url: "https://mistral.ai/"
 created_at: "2026-02-11"
 popularity: 0
 ---
-
 
 # Mistral
 

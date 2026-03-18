@@ -3,13 +3,12 @@ slug: kuki
 title: Kuki
 category: AI
 price_model: freemium
-tags: 
+tags: ["chatbot"]
 official_url: "https://www.kuki.ai/"
 affiliate_url: "https://www.kuki.ai/"
 created_at: 2026-02-07
 popularity: 1
 ---
-
 
 # Kuki
 

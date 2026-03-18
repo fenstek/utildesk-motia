@@ -3,7 +3,7 @@ slug: autogen
 title: AutoGen
 category: AI Agents
 price_model: 
-tags: []
+tags: ["automation"]
 official_url: "https://github.com/microsoft/autogen"
 popularity: 1
 ---

@@ -3,7 +3,7 @@ slug: sap-analytics-cloud
 title: SAP Analytics Cloud
 category: AI
 price_model: je nach Plan und Nutzeranzahl
-tags: []
+tags: ["data", "analytics", "productivity", "automation"]
 official_url: "https://www.sap.com/products/data-cloud/cloud-analytics.html"
 popularity: 0
 ---

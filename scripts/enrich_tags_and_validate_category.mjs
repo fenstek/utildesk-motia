@@ -9,7 +9,7 @@
  */
 
 import 'dotenv/config';
-import { enrichTagsIfGeneric, hasGenericTags } from './lib/tag_enricher_gpt.mjs';
+import { enrichTagsIfGeneric, hasGenericTags, normalizeTagSet } from './lib/tag_enricher_gpt.mjs';
 import { findPrimaryCategory } from './lib/category_matcher.mjs';
 
 const args = process.argv.slice(2);
@@ -48,7 +48,7 @@ async function main() {
     process.exit(1);
   }
 
-  const currentTags = parseTagsArg(tagsInput);
+  const currentTags = normalizeTagSet(parseTagsArg(tagsInput));
 
   // Step 1: Check if enrichment is needed
   const needsEnrichment = hasGenericTags(currentTags);
@@ -71,7 +71,7 @@ async function main() {
     });
   }
 
-  const finalTags = enrichResult.ok ? enrichResult.tags : currentTags;
+  const finalTags = enrichResult.ok ? normalizeTagSet(enrichResult.tags) : currentTags;
 
   // Step 3: Check category match
   const category = findPrimaryCategory(finalTags);

@@ -3,7 +3,7 @@ slug: meya
 title: Meya
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "https://www.meya.ai/"
 popularity: 0
 ---

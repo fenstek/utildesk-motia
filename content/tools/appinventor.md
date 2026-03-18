@@ -3,7 +3,7 @@ slug: appinventor
 title: AppInventor
 category: AI
 price_model: 
-tags: []
+tags: ["no-code", "education", "developer-tools", "automation"]
 official_url: "https://appinventor.mit.edu/"
 popularity: 0
 ---

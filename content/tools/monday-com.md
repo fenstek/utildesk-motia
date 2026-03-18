@@ -3,7 +3,7 @@ slug: monday-com
 title: Monday.com
 category: AI
 price_model: Je nach Plan
-tags: []
+tags: ["productivity", "workflow", "automation"]
 official_url: "https://monday.com/"
 popularity: 0
 ---
