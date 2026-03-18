@@ -3,11 +3,7 @@ slug: pencil
 title: Pencil
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - design
-  - marketing
-  - ai
+tags: ["writing", "design", "marketing"]
 official_url: 'https://www.pencil2d.org'
 affiliate_url: 'https://www.pencil2d.org'
 created_at: "2026-02-07"

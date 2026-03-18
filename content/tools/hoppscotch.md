@@ -3,7 +3,7 @@ slug: hoppscotch
 title: Hoppscotch
 category: AI
 price_model: kostenlos / Open Source
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://hoppscotch.io/"
 popularity: 0
 ---

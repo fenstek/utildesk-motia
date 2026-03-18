@@ -3,7 +3,7 @@ slug: replicate
 title: Replicate
 category: AI Infrastructure
 price_model: 
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://replicate.com"
 popularity: 0
 ---

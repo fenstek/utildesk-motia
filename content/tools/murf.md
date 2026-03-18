@@ -3,16 +3,11 @@ slug: murf
 title: Murf
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - audio
-  - developer
-  - ai
+tags: ["writing", "audio"]
 official_url: 'https://murf.ai/'
 created_at: "2026-02-13"
 popularity: 0
 ---
-
 
 # Murf
 

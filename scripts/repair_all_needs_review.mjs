@@ -9,6 +9,7 @@ import { classifyEntity } from './lib/entity_disambiguation.mjs';
 import { chooseOfficialUrlGpt, isGptUrlEnabled } from './lib/official_url_chooser_gpt.mjs';
 import { enrichTagsIfGeneric } from './lib/tag_enricher_gpt.mjs';
 import { resolveFinalUrl } from './lib/http_verify_url.mjs';
+import { normalizeTags as normalizeTagSet } from './lib/tag_policy.mjs';
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID || '1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ';
 const SHEET_NAME = process.env.SHEET_NAME || 'Tabellenblatt1';
@@ -36,8 +37,7 @@ const BRAND_NOISE_TOKENS = new Set([
   'platform', 'site', 'official', 'review', 'reviews', 'alternative', 'alternatives',
   'best', 'top', 'list', 'vergleich', 'vergleichstool', 'kostenlos', 'demo', 'trial',
 ]);
-
-const GENERIC_TAGS = new Set(['ai', 'productivity', 'produktivitat', 'produktivität']);
+const GENERIC_TAGS = new Set(['ai', 'assistant', 'content', 'productivity', 'workflow']);
 const HEURISTIC_MAP = [
   { re: /chat|assistant|copilot|agent|q&a|conversation/i, tag: 'assistant' },
   { re: /chatbot|bot/i, tag: 'chatbot' },
@@ -100,21 +100,8 @@ function parseArgs(argv) {
   const only = onlyRaw ? new Set(onlyRaw.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean)) : null;
   return { apply, dryRun: !apply, json, selfTest, limit, offset, only };
 }
-
 function normalizeTags(raw) {
-  const arr = Array.isArray(raw)
-    ? raw
-    : String(raw || '').split(',');
-
-  const seen = new Set();
-  const out = [];
-  for (const t0 of arr) {
-    const t = String(t0 || '').toLowerCase().trim();
-    if (!t || seen.has(t)) continue;
-    seen.add(t);
-    out.push(t);
-  }
-  return out;
+  return normalizeTagSet(raw, { maxTags: 5, preserveUnknown: true }).tags;
 }
 
 function countSpecificTags(tags) {

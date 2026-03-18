@@ -3,12 +3,11 @@ slug: stability-ai
 title: Stability AI
 category: AI
 price_model: freemium
-tags: [ai, image, design]
+tags: ["image", "design"]
 official_url: "https://www.stability.ai"
 created_at: 2026-02-15
 popularity: 1
 ---
-
 
 # Stability AI
 

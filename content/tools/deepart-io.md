@@ -3,14 +3,11 @@ slug: deepart-io
 title: DeepArt.io
 category: AI
 price_model: freemium
-tags:
-  - design
-  - ai
+tags: ["design"]
 official_url: 'https://www.deeparteffects.com/'
 created_at: "2026-02-13"
 popularity: 0
 ---
-
 
 # DeepArt.io
 

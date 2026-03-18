@@ -3,16 +3,11 @@ slug: dialogflow
 title: Dialogflow
 category: AI
 price_model: freemium
-tags:
-  - chatbot
-  - writing
-  - automation
-  - ai
+tags: ["ai", "chatbot", "automation"]
 official_url: 'https://cloud.google.com/dialogflow'
 created_at: "2026-02-13"
 popularity: 0
 ---
-
 
 # Dialogflow
 

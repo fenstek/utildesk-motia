@@ -3,7 +3,7 @@ slug: syllable
 title: Syllable
 category: AI
 price_model: paid
-tags: [ai, voice, chat, automation, customer-service]
+tags: ["automation"]
 official_url: "https://syllable.ai/"
 popularity: 1
 ---

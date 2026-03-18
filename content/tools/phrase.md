@@ -3,14 +3,11 @@ slug: phrase
 title: Phrase
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - ai
+tags: ["ai", "assistant", "automation"]
 official_url: 'https://phrase.com/'
 created_at: "2026-02-14"
 popularity: 0
 ---
-
 
 # Phrase
 

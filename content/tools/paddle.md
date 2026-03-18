@@ -3,7 +3,7 @@ slug: paddle
 title: Paddle
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "https://www.paddle.com/"
 popularity: 0
 ---

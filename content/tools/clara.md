@@ -3,13 +3,12 @@ slug: clara
 title: Clara
 category: AI
 price_model: freemium
-tags: 
+tags: ["ai", "assistant", "automation"]
 official_url: "https://www.clara-ai.org/"
 affiliate_url: "https://www.clara-ai.org/"
 created_at: 2026-02-07
 popularity: 2
 ---
-
 
 # Clara
 

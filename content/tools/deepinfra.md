@@ -3,7 +3,7 @@ slug: deepinfra
 title: DeepInfra
 category: AI Infrastructure
 price_model: 
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://deepinfra.com"
 popularity: 0
 ---

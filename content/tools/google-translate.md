@@ -3,14 +3,11 @@ slug: google-translate
 title: Google Translate
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - ai
+tags: ["writing"]
 official_url: 'https://translate.google.com'
 created_at: "2026-02-11"
 popularity: 0
 ---
-
 
 # Google Translate
 

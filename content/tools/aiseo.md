@@ -3,7 +3,7 @@ slug: aiseo
 title: AISEO
 category: AI
 price_model: freemium
-tags: [ai, seo, workflow]
+tags: ["ai", "writing", "analytics", "productivity", "creative"]
 official_url: "https://aiseo.ai/"
 popularity: 2
 ---

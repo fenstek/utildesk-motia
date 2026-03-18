@@ -3,7 +3,7 @@ slug: crew-ai
 title: CrewAI
 category: AI Agents
 price_model: 
-tags: []
+tags: ["automation"]
 official_url: "https://www.crewai.com/"
 popularity: 1
 ---

@@ -3,7 +3,7 @@ slug: groq
 title: Groq
 category: AI Infrastructure
 price_model: 
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://groq.com"
 popularity: 1
 ---

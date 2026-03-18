@@ -3,16 +3,12 @@ slug: frase
 title: Frase
 category: AI
 price_model: freemium
-tags:
-  - writing
-  - marketing
-  - ai
+tags: ["writing", "marketing"]
 official_url: 'https://www.frase.io/'
 affiliate_url: 'https://www.frase.io/'
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 
 # Frase
 

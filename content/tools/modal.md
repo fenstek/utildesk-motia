@@ -3,7 +3,7 @@ slug: modal
 title: Modal
 category: Cloud
 price_model: 
-tags: []
+tags: ["automation", "data", "api"]
 official_url: "https://modal.com"
 popularity: 0
 ---

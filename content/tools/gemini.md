@@ -3,13 +3,12 @@ slug: gemini
 title: Gemini
 category: AI
 price_model: freemium
-tags: 
+tags: ["writing"]
 official_url: "https://gemini.google.com/"
 affiliate_url: "https://gemini.google.com/"
 created_at: 2026-02-02
 popularity: 1
 ---
-
 
 # Gemini
 

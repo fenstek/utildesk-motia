@@ -3,7 +3,7 @@ slug: google-tabellen
 title: Google Tabellen
 category: AI
 price_model: kostenlos mit kostenpflichtigen Upgrades
-tags: []
+tags: ["spreadsheet", "data", "productivity"]
 official_url: "https://workspace.google.com/products/sheets/"
 popularity: 0
 ---

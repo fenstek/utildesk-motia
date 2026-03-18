@@ -3,7 +3,7 @@ slug: glia
 title: Glia
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "https://www.glia.com/"
 popularity: 0
 ---

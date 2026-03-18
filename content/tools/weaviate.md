@@ -3,7 +3,7 @@ slug: weaviate
 title: Weaviate
 category: AI Infrastructure
 price_model: 
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://weaviate.io"
 popularity: 0
 ---

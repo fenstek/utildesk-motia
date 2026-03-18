@@ -3,7 +3,7 @@ slug: google-data-studio
 title: Google Data Studio
 category: Audio
 price_model: Kostenlos
-tags: []
+tags: ["data", "analytics", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
 popularity: 1
 ---

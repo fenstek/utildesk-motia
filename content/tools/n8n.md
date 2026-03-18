@@ -3,7 +3,7 @@ slug: n8n
 title: n8n
 category: Automatisierung
 price_model: Open Source, Cloud- und Self-Hosting-Optionen
-tags: []
+tags: ["automation", "workflow"]
 official_url: "https://n8n.io"
 popularity: 0
 ---

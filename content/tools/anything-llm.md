@@ -3,7 +3,7 @@ slug: anything-llm
 title: AnythingLLM
 category: AI
 price_model: 
-tags: []
+tags: ["assistant", "chatbot", "api"]
 official_url: "https://anythingllm.com"
 popularity: 0
 ---

@@ -3,7 +3,7 @@ slug: wavepad
 title: WavePad
 category: AI
 price_model: 
-tags: []
+tags: ["audio", "transcription"]
 official_url: "https://www.nch.com.au/wavepad/"
 popularity: 0
 ---

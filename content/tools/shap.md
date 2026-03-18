@@ -3,7 +3,7 @@ slug: shap
 title: SHAP (SHapley Additive exPlanations)
 category: AI
 price_model: kostenlos / Open Source
-tags: [data, analytics, education, developer-tools]
+tags: ["data", "analytics", "education", "developer-tools", "chatbot"]
 official_url: "https://github.com/shap/shap"
 popularity: 0
 ---

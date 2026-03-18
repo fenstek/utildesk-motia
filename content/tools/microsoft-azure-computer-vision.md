@@ -3,7 +3,7 @@ slug: microsoft-azure-computer-vision
 title: Microsoft Azure Computer Vision
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["education", "automation"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision"
 popularity: 0
 ---

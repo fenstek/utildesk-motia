@@ -3,14 +3,11 @@ slug: microsoft-power-automate
 title: Microsoft Power Automate
 category: AI
 price_model: freemium
-tags:
-  - automation
-  - ai
+tags: ["automation"]
 official_url: 'https://flow.microsoft.com/en-us/'
 created_at: "2026-02-13"
 popularity: 0
 ---
-
 
 # Microsoft Power Automate
 

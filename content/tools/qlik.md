@@ -3,7 +3,7 @@ slug: qlik
 title: Qlik
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "https://www.qlik.com/"
 popularity: 1
 ---

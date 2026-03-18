@@ -3,7 +3,7 @@ slug: microsoft-azure-openai-service
 title: Microsoft Azure OpenAI Service
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["assistant", "chatbot", "education"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview"
 popularity: 0
 ---

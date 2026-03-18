@@ -3,16 +3,12 @@ slug: character-ai
 title: Character AI
 category: AI
 price_model: freemium
-tags:
-  - ai
-  - chatbot
-  - llm
+tags: ["chatbot"]
 official_url: 'https://character.ai/'
 affiliate_url: 'https://character.ai/'
 created_at: "2026-02-03"
 popularity: 0
 ---
-
 
 # Character AI
 

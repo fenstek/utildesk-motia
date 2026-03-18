@@ -3,7 +3,7 @@ slug: magisto
 title: Magisto
 category: AI
 price_model: Je nach Plan unterschiedlich
-tags: [assistant, automation]
+tags: ["ai", "video", "automation", "creative"]
 official_url: "https://www.magisto.com/"
 popularity: 1
 ---

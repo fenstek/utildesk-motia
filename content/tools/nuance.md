@@ -3,7 +3,7 @@ slug: nuance
 title: Nuance
 category: AI
 price_model: freemium
-tags: [ai]
+tags: ["chatbot", "data"]
 official_url: "http://www.nuance.com/"
 popularity: 0
 ---

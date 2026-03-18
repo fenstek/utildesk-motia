@@ -3,13 +3,12 @@ slug: synthesia
 title: Synthesia
 category: AI
 price_model: freemium
-tags: 
+tags: ["writing", "video", "marketing"]
 official_url: "https://www.synthesia.io"
 affiliate_url: "https://www.synthesia.io"
 created_at: 2026-02-07
 popularity: 1
 ---
-
 
 # Synthesia
 

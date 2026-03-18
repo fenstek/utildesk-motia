@@ -3,7 +3,7 @@ slug: qdrant
 title: Qdrant
 category: AI Infrastructure
 price_model: 
-tags: []
+tags: ["developer-tools", "api"]
 official_url: "https://qdrant.tech"
 popularity: 0
 ---
