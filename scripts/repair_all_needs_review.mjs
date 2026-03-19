@@ -57,7 +57,7 @@ const HEURISTIC_MAP = [
   { re: /analytics|dashboard|bi|insight/i, tag: 'analytics' },
   { re: /spreadsheet|excel|google sheets/i, tag: 'spreadsheet' },
   { re: /crm|sales|lead/i, tag: 'crm' },
-  { re: /code|coding|developer|programming|github/i, tag: 'coding' },
+  { re: /code|coding|developer|programming|github/i, tag: 'developer-tools' },
   { re: /api|sdk|endpoint|webhook/i, tag: 'api' },
   { re: /translat|localiz/i, tag: 'translation' },
   { re: /education|learn|course|teacher|student/i, tag: 'education' },

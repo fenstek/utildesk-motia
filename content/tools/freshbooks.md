@@ -3,7 +3,7 @@ slug: "freshbooks"
 title: "FreshBooks"
 category: "AI"
 price_model: "Abonnement-basierte Preisgestaltung"
-tags: [accounting, invoicing, finance]
+tags: ["accounting", "finance"]
 official_url: "https://www.freshbooks.com/"
 ---
 
