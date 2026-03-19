@@ -108,17 +108,22 @@ const tools = await Promise.all(
 const enabledTools = tools.filter(Boolean);
 enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
-// Build unique tag list (exclude generic "ai" tag from UI)
-const allTags = new Set<string>();
+// Build tag frequency map and keep only the most useful tags
+const tagFrequency = new Map<string, number>();
 enabledTools.forEach((tool) => {
   tool.tags.forEach((tag) => {
     const normalized = tag.trim().toLowerCase();
-    if (normalized && normalized !== "ai") {
-      allTags.add(tag);
-    }
+    if (!normalized) return;
+    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
   });
 });
-const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
+const sortedTags = Array.from(tagFrequency.entries())
+  .sort((a, b) => {
+    if (b[1] !== a[1]) return b[1] - a[1];
+    return a[0].localeCompare(b[0], "de");
+  })
+  .map(([tag]) => tag);
+const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 32);
 ---
 
 <BaseLayout
@@ -139,11 +144,11 @@ const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
   </section>
 
   <!-- Tag Filter Row -->
-  {sortedTags.length > 0 && (
+  {visibleTags.length > 0 && (
     <div class="tag-filter-row" id="tag-filter-row">
       <label class="tag-filter-label">Nach Tags filtern:</label>
       <div class="tag-filter-list" id="tag-filter-list">
-        {sortedTags.map((tag) => (
+        {visibleTags.map((tag) => (
           <a
             href={`/tools/?tag=${encodeURIComponent(tag)}`}
             class="tag-filter-item"

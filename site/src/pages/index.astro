@@ -138,6 +138,7 @@ const getFrequencyClass = (count: number, max: number) => {
   return "tag-freq-low";
 };
 
+const visibleTags = sortedTags.filter(([, count]) => count >= 3).slice(0, 24);
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
 
 // Pinned tools in fixed order
@@ -247,7 +248,7 @@ const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
   <section class="section home-section home-tags home-v2">
     {sortedTags.length > 0 ? (
       <div class="tag-cloud home-tags-cloud">
-        {sortedTags.map(([tag, count]) => (
+        {visibleTags.map(([tag, count]) => (
           <a
             href={`/tools/?tag=${encodeURIComponent(tag)}`}
             class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
