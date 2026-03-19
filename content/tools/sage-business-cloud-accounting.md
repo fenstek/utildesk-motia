@@ -3,7 +3,7 @@ slug: "sage-business-cloud-accounting"
 title: "Sage Business Cloud Accounting"
 category: "AI"
 price_model: "Abonnement-basiert"
-tags: [accounting, invoicing, finance]
+tags: ["accounting", "finance"]
 official_url: "https://www.sage.com/en-us/sage-business-cloud-accounting/"
 ---
 
