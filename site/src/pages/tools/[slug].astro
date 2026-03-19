@@ -22,6 +22,20 @@ const official_url = data.official_url ? String(data.official_url) : "";
 const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
 const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
 const provider_url = affiliate_url || official_url || "";
+const escapeRegExp = (value: string) => value.replace(/[.*+?^$|()\[\]{}]/g, "\\$&");
+const linkFirstParagraphMention = (input: string, term: string, url: string) => {
+  if (!url || term.trim().length < 4) return input;
+  const paragraphMatch = input.match(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/i);
+  if (!paragraphMatch) return input;
+  const openTag = paragraphMatch[1];
+  const innerHtml = paragraphMatch[2];
+  const closeTag = paragraphMatch[3];
+  if (/<a\b/i.test(innerHtml) || /<code\b/i.test(innerHtml) || /<pre\b/i.test(innerHtml)) return input;
+  const termRegex = new RegExp(escapeRegExp(term), "i");
+  if (!termRegex.test(innerHtml)) return input;
+  const linkedInnerHtml = innerHtml.replace(termRegex, "<a href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + term + "</a>");
+  return input.replace(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/i, openTag + linkedInnerHtml + closeTag);
+};
 
 const localLogo = resolveLocalLogo(slug);
 const faviconCandidates = getFaviconCandidates(provider_url, 128);
@@ -55,6 +69,7 @@ const displayTags = (tags ?? [])
 // Find primary category by highest tag match count
 // On tie, prefer category whose first matching tag appears earlier in tags
 const normalizedTags = tags.map(t => String(t).toLowerCase());
+const providerCtaLabel = affiliate_url ? "Zum Anbieter" : "Zur Website";
 
 const categoryResults = CATEGORIES.map(cat => {
   const matches = normalizedTags.filter(tag => cat.matchTags.includes(tag));
@@ -87,6 +102,7 @@ let html = marked.parse(contentWithoutAlternatives);
 
 // Remove first H1 from markdown to avoid duplicate title
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
+const articleHtml = linkFirstParagraphMention(String(html), title, provider_url);
 
 // ── Alternatives helpers ───────────────────────────────────────────────────
 const stripMd = (text: string) =>
@@ -303,8 +319,25 @@ const softwareApplicationSchema = {
         <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
       </span>
     ) : null}
+    {provider_url && (
+      <div class="tool-primary-link">
+        <span class="tool-primary-link-kicker">Direktlink</span>
+        <a
+          class="tool-primary-link-anchor"
+          href={provider_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={providerCtaLabel}
+        >
+          {providerCtaLabel}
+        </a>
+        <p class="tool-primary-link-note">
+          {affiliate_url ? "Externer Anbieter-Link" : "Offizielle Website"}
+        </p>
+      </div>
+    )}
 
-    <div set:html={html}></div>
+    <div set:html={articleHtml}></div>
   </div>
 </article>
 
@@ -383,6 +416,40 @@ const softwareApplicationSchema = {
 </BaseLayout>
 
 <style>
+  .tool-primary-link {
+    margin: 1.25rem 0 1.5rem;
+    padding: 1rem 1.1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.10);
+    background: rgba(255,255,255,.5);
+  }
+
+  .tool-primary-link-kicker {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .tool-primary-link-anchor {
+    color: var(--accent);
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .tool-primary-link-anchor:hover {
+    text-decoration: underline;
+  }
+
+  .tool-primary-link-note {
+    margin: 0.35rem 0 0;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+  }
+
   .tool-category-link {
     margin-top: 16px;
     font-size: 0.9375rem;
