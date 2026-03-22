@@ -344,7 +344,7 @@ const softwareApplicationSchema = {
   <!-- Alternatives — rendered after article, using exact /tools card markup -->
   {alternativesTop.length > 0 && (
     <section>
-      <h2 style="margin-top: 2.5rem; margin-bottom: 1rem;">Alternativen</h2>
+      <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--on-surface); margin: 2.5rem 0 1rem; letter-spacing: -0.02em;">Alternativen</h2>
       <div class="alt-grid">
         {alternativesTop.map((tool) => (
           <a
@@ -429,7 +429,7 @@ const softwareApplicationSchema = {
     font-size: 0.75rem;
     letter-spacing: .08em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--secondary);
     margin-bottom: 0.35rem;
   }
 
@@ -441,13 +441,13 @@ const softwareApplicationSchema = {
   }
 
   .tool-primary-link-anchor:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .tool-primary-link-note {
     margin: 0.35rem 0 0;
     font-size: 0.92rem;
-    color: var(--text-muted);
+    color: var(--secondary);
   }
 
   .tool-category-link {
@@ -457,7 +457,7 @@ const softwareApplicationSchema = {
   }
 
   .category-label {
-    color: var(--text-muted);
+    color: var(--secondary);
     margin-right: 8px;
   }
 
@@ -468,7 +468,7 @@ const softwareApplicationSchema = {
   }
 
   .category-link-anchor:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .alt-grid {
