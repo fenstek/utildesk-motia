@@ -20,32 +20,14 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/styles/global.css" />
     <title>{title}</title>
     <slot name="head" />
     {shouldLoadUmami && (
       <script defer src={UMAMI_SRC} data-website-id={UMAMI_WEBSITE_ID}></script>
     )}
-    <style>
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .brand img {
-        height: 18px;
-        width: auto;
-      }
-      .footer-brand {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .footer-brand img {
-        height: 16px;
-        width: auto;
-      }
-    </style>
   </head>
   <body>
     <header class="site-header">
@@ -83,42 +65,5 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Disclaimer: Utildesk is an independent tools directory. All trademarks, logos, and brand names are the property of their respective owners.</p>
       </div>
     </footer>
-    <script is:inline>
-      (() => {
-        const parseFallbacks = (img) => {
-          const raw = img.getAttribute("data-fallback-srcs");
-          if (!raw) return [];
-
-          try {
-            const parsed = JSON.parse(raw);
-            return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
-          } catch {
-            return [];
-          }
-        };
-
-        document.addEventListener(
-          "error",
-          (event) => {
-            const img = event.target;
-            if (!(img instanceof HTMLImageElement)) return;
-
-            const fallbacks = parseFallbacks(img);
-            const nextIndex = Number(img.dataset.fallbackIndex || "0");
-            const nextSrc = fallbacks[nextIndex];
-
-            if (!nextSrc) {
-              img.dataset.fallbackExhausted = "1";
-              img.removeAttribute("data-fallback-srcs");
-              return;
-            }
-
-            img.dataset.fallbackIndex = String(nextIndex + 1);
-            img.src = nextSrc;
-          },
-          true,
-        );
-      })();
-    </script>
   </body>
 </html>
