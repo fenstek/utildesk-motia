@@ -6,6 +6,7 @@ import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favico
 import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
+import { tagHref } from "../../lib/tagRoutes";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
@@ -52,12 +53,10 @@ const buildInlineProviderLinkHtml = (visibleUrl: string, targetUrl: string) => {
   if (!visibleUrl || !targetUrl) return "";
   const safeVisibleUrl = escapeHtml(visibleUrl);
   const safeTargetUrl = escapeHtml(targetUrl);
-  const secondaryLabel = affiliate_url ? "Affiliate-Link:" : "Linkziel:";
 
   return [
     `<div class="inline-provider-link">`,
     `<p><span class="inline-provider-link-emoji">👉</span> <strong>Zum Anbieter:</strong> <a href="${safeTargetUrl}" target="_blank" rel="noopener noreferrer">${safeVisibleUrl}</a></p>`,
-    `<p class="inline-provider-link-sub"><strong>${secondaryLabel}</strong> <a href="${safeTargetUrl}" target="_blank" rel="noopener noreferrer">${safeTargetUrl}</a></p>`,
     `</div>`,
   ].join("");
 };
@@ -114,7 +113,6 @@ const displayTags = (tags ?? [])
 // On tie, prefer category whose first matching tag appears earlier in tags
 const normalizedTags = tags.map(t => String(t).toLowerCase());
 const providerCtaLabel = visible_provider_url || (affiliate_url ? "Zum Anbieter" : "Zur Website");
-const providerTargetLabel = affiliate_url ? "Affiliate-Link:" : "Linkziel:";
 
 const categoryResults = CATEGORIES.map(cat => {
   const matches = normalizedTags.filter(tag => cat.matchTags.includes(tag));
@@ -344,7 +342,7 @@ const softwareApplicationSchema = {
           <span class="badge badge-price">{price_model}</span>
         )}
         {displayTags.map((tag) => (
-          <a class="badge badge-tag" href={`/tools/?tag=${encodeURIComponent(tag)}`}>{tag}</a>
+          <a class="badge badge-tag" href={tagHref(tag)}>{tag}</a>
         ))}
       </div>
     )}
@@ -379,9 +377,7 @@ const softwareApplicationSchema = {
           >
             {providerCtaLabel}
           </a>
-          <p class="tool-primary-link-note">
-            <strong>{providerTargetLabel}</strong> {target_provider_url}
-          </p>
+          <p class="tool-primary-link-note">Offizielle Website</p>
         </div>
       </div>
     )}

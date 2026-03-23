@@ -30,10 +30,6 @@ price_model: ""
 
 {{PRICING}}
 
-{{#if AFFILIATE_URL}}
-👉 **Zum Anbieter:** {{OFFICIAL_URL}}
-**Affiliate-Link:** {{AFFILIATE_URL}}
-{{/if}}
 {{#if OFFICIAL_URL}}
 👉 **Zum Anbieter:** {{OFFICIAL_URL}}
 {{/if}}

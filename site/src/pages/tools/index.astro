@@ -6,6 +6,7 @@ import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { normalizePriceModel } from "../../lib/priceModel";
+import { tagHref } from "../../lib/tagRoutes";
 
 const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
@@ -151,7 +152,7 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
       <div class="tag-filter-list" id="tag-filter-list">
         {visibleTags.map((tag) => (
           <a
-            href={`/tools/?tag=${encodeURIComponent(tag)}`}
+            href={tagHref(tag)}
             class="tag-filter-item"
             data-tag={tag}
           >
@@ -280,10 +281,7 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
       const loadMoreBtn = document.getElementById('load-more-btn');
       const hiddenCountInfo = document.getElementById('hidden-count-info');
       const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
-      const tagFilterItems = document.querySelectorAll('.tag-filter-item');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
-
-      let activeTag = null;
       let pageBlocks = 1;
 
       // Read URL params ?tag= and ?sort=
@@ -292,16 +290,12 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
       const initialSort = urlParams.get('sort');
 
       if (initialTag) {
-        activeTag = initialTag.toLowerCase();
-        // Highlight active tag
-        tagFilterItems.forEach(function(item) {
-          if (item.getAttribute('data-tag').toLowerCase() === activeTag) {
-            item.classList.add('active');
-          }
-        });
-        if (clearFilterBtn) {
-          clearFilterBtn.style.display = 'inline-flex';
-        }
+        const tagSlug = initialTag
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        window.location.replace('/tools/tag/' + tagSlug + '/');
+        return;
       }
 
       // Restore sort from URL
@@ -339,10 +333,7 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
                              slug.includes(query) ||
                              tags.includes(query);
 
-          // Check tag filter match
-          const tagMatch = !activeTag || tagList.includes(activeTag);
-
-          return searchMatch && tagMatch;
+          return searchMatch;
         });
 
         filtered.sort(function(a, b) {
@@ -426,54 +417,10 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
         });
       }
 
-      // Tag filter click listener
-      tagFilterItems.forEach(function(item) {
-        item.addEventListener('click', function(e) {
-          e.preventDefault();
-          const tag = item.getAttribute('data-tag').toLowerCase();
-
-          // Toggle active tag
-          if (activeTag === tag) {
-            activeTag = null;
-            tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
-            if (clearFilterBtn) {
-              clearFilterBtn.style.display = 'none';
-            }
-            // Update URL (preserve sort)
-            const params = new URLSearchParams(window.location.search);
-            params.delete('tag');
-            const newUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-            history.pushState(null, '', newUrl);
-          } else {
-            activeTag = tag;
-            tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
-            item.classList.add('active');
-            if (clearFilterBtn) {
-              clearFilterBtn.style.display = 'inline-flex';
-            }
-            // Update URL (preserve sort)
-            const params = new URLSearchParams(window.location.search);
-            params.set('tag', tag);
-            history.pushState(null, '', '/tools/?' + params.toString());
-          }
-
-          resetAndFilter();
-        });
-      });
-
-      // Clear filter button listener
       if (clearFilterBtn) {
         clearFilterBtn.addEventListener('click', function(e) {
           e.preventDefault();
-          activeTag = null;
-          tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
-          clearFilterBtn.style.display = 'none';
-          // Update URL (preserve sort)
-          const params = new URLSearchParams(window.location.search);
-          params.delete('tag');
-          const newUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-          history.pushState(null, '', newUrl);
-          resetAndFilter();
+          window.location.href = '/tools/';
         });
       }
 
