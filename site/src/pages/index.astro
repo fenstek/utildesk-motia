@@ -100,6 +100,7 @@ const tools = await Promise.all(
       title,
       category,
       price_model,
+      popularity: data.popularity ? Number(data.popularity) : 0,
       image,
       homeImage,
       brandLogo,
