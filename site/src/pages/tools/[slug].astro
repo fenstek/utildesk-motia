@@ -315,32 +315,35 @@ const softwareApplicationSchema = {
   <!-- Article Content -->
   <article class="card article">
   <div class="article-body">
-    {logoUrl && provider_url ? (
-      <a class="tool-float-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-        <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-      </a>
-    ) : logoUrl ? (
+    {provider_url && (
+      <div class="tool-primary-link">
+        {logoUrl ? (
+          <a class="tool-primary-link-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
+            <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
+          </a>
+        ) : null}
+        <div class="tool-primary-link-text">
+          <span class="tool-primary-link-kicker">Direktlink</span>
+          <a
+            class="tool-primary-link-anchor"
+            href={provider_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={providerCtaLabel}
+          >
+            {providerCtaLabel}
+          </a>
+          <p class="tool-primary-link-note">
+            {affiliate_url ? "Externer Anbieter-Link" : "Offizielle Website"}
+          </p>
+        </div>
+      </div>
+    )}
+    {!provider_url && logoUrl ? (
       <span class="tool-float-logo">
         <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
       </span>
     ) : null}
-    {provider_url && (
-      <div class="tool-primary-link">
-        <span class="tool-primary-link-kicker">Direktlink</span>
-        <a
-          class="tool-primary-link-anchor"
-          href={provider_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={providerCtaLabel}
-        >
-          {providerCtaLabel}
-        </a>
-        <p class="tool-primary-link-note">
-          {affiliate_url ? "Externer Anbieter-Link" : "Offizielle Website"}
-        </p>
-      </div>
-    )}
 
     <div set:html={articleHtml}></div>
   </div>
@@ -422,20 +425,49 @@ const softwareApplicationSchema = {
 
 <style>
   .tool-primary-link {
-    margin: 1.25rem 0 1.5rem;
-    padding: 1rem 1.1rem;
+    margin: 0 0 1.75rem;
+    padding: 1rem 1.25rem;
     border-radius: 16px;
     border: 1px solid rgba(0,0,0,.10);
     background: rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  .tool-primary-link-logo {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface-container-low);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.07);
+    text-decoration: none;
+  }
+
+  .tool-primary-link-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .tool-primary-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
   .tool-primary-link-kicker {
     display: block;
-    font-size: 0.75rem;
-    letter-spacing: .08em;
+    font-size: 0.72rem;
+    letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--secondary);
-    margin-bottom: 0.35rem;
   }
 
   .tool-primary-link-anchor {
@@ -443,16 +475,19 @@ const softwareApplicationSchema = {
     font-size: 1.05rem;
     font-weight: 600;
     text-decoration: none;
+    line-height: 1.2;
   }
 
   .tool-primary-link-anchor:hover {
     text-decoration: none;
+    opacity: 0.8;
   }
 
   .tool-primary-link-note {
-    margin: 0.35rem 0 0;
-    font-size: 0.92rem;
+    margin: 0;
+    font-size: 0.88rem;
     color: var(--secondary);
+    line-height: 1.3;
   }
 
   .tool-category-link {
