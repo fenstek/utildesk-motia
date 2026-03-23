@@ -2,7 +2,7 @@
 slug: "citavi"
 title: "Citavi"
 category: "AI"
-price_model: "Je nach Plan, meist kostenlose und kostenpflichtige Versionen"
+price_model: "Freemium"
 tags: [reference-management, academic-research, writing]
 official_url: "https://lumivero.com/products/citavi/"
 ---

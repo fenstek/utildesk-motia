@@ -2,7 +2,7 @@
 slug: artbreeder
 title: Artbreeder
 category: Design
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - design

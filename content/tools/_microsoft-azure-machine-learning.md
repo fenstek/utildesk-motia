@@ -2,7 +2,7 @@
 slug: microsoft-azure-machine-learning
 title: Microsoft Azure Machine Learning
 category: AI
-price_model: "Je nach Plan, meist nutzungsabhaengig"
+price_model: "Nutzungsbasiert"
 tags:
   - education
   - workflow

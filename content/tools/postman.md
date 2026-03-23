@@ -2,7 +2,7 @@
 slug: postman
 title: Postman
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [api, workflow, automation, developer-tools]
 official_url: "https://www.postman.com/"
 popularity: 0

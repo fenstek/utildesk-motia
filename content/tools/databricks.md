@@ -2,7 +2,7 @@
 slug: databricks
 title: Databricks
 category: AI
-price_model: Je nach Plan und Nutzung
+price_model: "Je nach Plan"
 tags: [data, workflow]
 official_url: "https://www.databricks.com/"
 popularity: 0

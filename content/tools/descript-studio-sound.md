@@ -2,7 +2,7 @@
 slug: descript-studio-sound
 title: Descript Studio Sound
 category: Audio
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [ai, audio, editing]
 official_url: "https://www.descript.com/studio-sound"
 popularity: 0

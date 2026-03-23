@@ -2,7 +2,7 @@
 slug: openhands
 title: OpenHands
 category: AI Agents
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [ai, coding, automation, developer]
 official_url: "https://openhands.dev/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: "testcomplete"
 title: "TestComplete"
 category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+price_model: "Je nach Plan"
 tags: [test-automation, ui-testing, developer-tools]
 official_url: "https://smartbear.com/product/testcomplete/"
 ---

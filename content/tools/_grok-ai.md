@@ -2,7 +2,7 @@
 slug: grok-ai
 title: Grok AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai]
 official_url: "https://grok.ai/products"
 popularity: 1

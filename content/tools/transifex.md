@@ -2,7 +2,7 @@
 slug: transifex
 title: Transifex
 category: AI
-price_model: je nach Plan variabel
+price_model: "Je nach Plan"
 tags: [translation,workflow,api,developer-tools]
 official_url: "https://www.transifex.com/"
 popularity: 0

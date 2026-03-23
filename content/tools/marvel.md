@@ -2,7 +2,7 @@
 slug: "marvel"
 title: "Marvel"
 category: "AI"
-price_model: "Je nach Anbieter/Plan"
+price_model: "Je nach Plan"
 tags: [prototyping, ui-design, design-tools]
 official_url: "https://marvelapp.com/"
 ---

@@ -2,7 +2,7 @@
 slug: google-what-if-tool
 title: Google What-If Tool
 category: AI
-price_model: kostenfrei
+price_model: "Kostenlos"
 tags: ["data", "analytics", "developer-tools", "education", "chatbot"]
 official_url: "https://pair-code.github.io/what-if-tool/"
 popularity: 0

@@ -5,6 +5,7 @@ import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
+import { normalizePriceModel } from "../../lib/priceModel";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
@@ -52,7 +53,7 @@ const logoFallbacks = logoUrl === faviconLogo ? [...faviconFallbacks, fallbackAv
 
 const title = String(data.title ?? slug);
 const category = data.category ? String(data.category) : null;
-const price_model = data.price_model ? String(data.price_model) : null;
+const price_model = normalizePriceModel(data.price_model);
 const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
 const norm = (s) => String(s ?? "").trim().toLowerCase();
 const categoryNorm = norm(category);
@@ -197,7 +198,7 @@ const rawAltItems: string[] = altSection
 const allTools = (await listActiveToolEntries()).map(({ slug: s, data: d, content: c }) => {
   const t = String(d.title ?? s);
   const cat = d.category ? String(d.category) : null;
-  const pm = d.price_model ? String(d.price_model) : null;
+  const pm = normalizePriceModel(d.price_model);
   const bLogo = d.brandLogo ? String(d.brandLogo) : null;
   const pUrl = d.affiliate_url ? String(d.affiliate_url) : d.official_url ? String(d.official_url) : null;
   const tgs = Array.isArray(d.tags) ? d.tags.map(String) : [];

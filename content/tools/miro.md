@@ -2,7 +2,7 @@
 slug: miro
 title: Miro
 category: AI
-price_model: Je nach Plan kostenpflichtig und kostenlos verfügbar
+price_model: "Je nach Plan"
 tags: [assistant, automation, productivity, design]
 official_url: "https://miro.com/"
 popularity: 1

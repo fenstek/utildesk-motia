@@ -2,7 +2,7 @@
 slug: "google-calendar"
 title: "Google Calendar"
 category: "AI"
-price_model: "kostenlos mit optionalen kostenpflichtigen Upgrades"
+price_model: "Freemium"
 tags: [calendar, scheduling, productivity]
 official_url: "https://workspace.google.com/products/calendar/"
 ---

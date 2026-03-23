@@ -2,7 +2,7 @@
 slug: kapwing
 title: Kapwing
 category: AI
-price_model: Je nach Plan kostenlos und kostenpflichtig
+price_model: "Freemium"
 tags: [video, content, design, marketing]
 official_url: "https://www.kapwing.com/"
 popularity: 0

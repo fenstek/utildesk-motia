@@ -2,7 +2,7 @@
 slug: "alteryx"
 title: "Alteryx"
 category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [analytics, data-preparation, automation]
 official_url: "https://www.alteryx.com/"
 ---

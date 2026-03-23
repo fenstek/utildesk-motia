@@ -2,7 +2,7 @@
 slug: github-copilot
 title: GitHub Copilot
 category: Developer
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - developer

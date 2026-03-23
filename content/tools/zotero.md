@@ -2,7 +2,7 @@
 slug: zotero
 title: Zotero
 category: AI
-price_model: kostenlos mit optionalen Premium-Features
+price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://www.zotero.org/"
 popularity: 0

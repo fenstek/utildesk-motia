@@ -2,7 +2,7 @@
 slug: "faceapp"
 title: "FaceApp"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, image]
 official_url: "https://www.faceapp.com/"
 ---

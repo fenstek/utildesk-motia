@@ -2,7 +2,7 @@
 slug: "opennmt"
 title: "OpenNMT"
 category: "AI"
-price_model: "Open-Source / Kostenlos"
+price_model: "Open Source"
 tags: [translation, nmt, open-source]
 official_url: "https://opennmt.net/"
 ---

@@ -2,7 +2,7 @@
 slug: "remini"
 title: "Remini"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, image]
 official_url: "https://remini.ai/"
 ---

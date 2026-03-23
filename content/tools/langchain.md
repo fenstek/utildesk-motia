@@ -2,7 +2,7 @@
 slug: langchain
 title: LangChain
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "automation"]
 official_url: 'https://langchain.com/'
 affiliate_url: 'https://langchain.com/'

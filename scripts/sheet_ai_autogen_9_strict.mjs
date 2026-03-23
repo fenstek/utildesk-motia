@@ -280,7 +280,7 @@ async function main(){
         slug,                  // B slug
         category,              // C category
         '',                    // D tags
-        'freemium',            // E price_model
+        '',                    // E price_model
         '',                    // F affiliate_url
         'NEW',                 // G status
         `validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason}`.trim(), // H notes

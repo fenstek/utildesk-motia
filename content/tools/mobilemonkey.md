@@ -2,7 +2,7 @@
 title: "Customers.ai (ehemals MobileMonkey)"
 slug: "mobilemonkey"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: ["chatbot"]
 official_url: "https://customers.ai/"
 created_at: "2026-02-13"

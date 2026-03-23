@@ -2,7 +2,7 @@
 slug: semrush
 title: SEMrush
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.semrush.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: phantombuster
 title: PhantomBuster
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://phantombuster.com"
 created_at: 2026-02-18

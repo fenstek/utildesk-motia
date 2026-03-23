@@ -2,7 +2,7 @@
 slug: "gensim"
 title: "Gensim"
 category: "AI"
-price_model: "Open-Source"
+price_model: "Open Source"
 tags: [nlp, topic-modeling, python]
 official_url: "https://radimrehurek.com/gensim/"
 ---

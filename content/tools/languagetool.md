@@ -2,7 +2,7 @@
 slug: languagetool
 title: LanguageTool
 category: AI
-price_model: Freemium, Abonnement
+price_model: "Freemium"
 tags: [writing, productivity, automation, education]
 official_url: "https://languagetool.org/"
 popularity: 0

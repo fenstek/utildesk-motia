@@ -2,7 +2,7 @@
 slug: "knime"
 title: "KNIME"
 category: "AI"
-price_model: "Je nach Anbieter/Plan variabel"
+price_model: "Je nach Plan"
 tags: [data-science, analytics, etl]
 official_url: "https://www.knime.com/"
 ---

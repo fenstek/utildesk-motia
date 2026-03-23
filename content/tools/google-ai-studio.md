@@ -2,7 +2,7 @@
 slug: "google-ai-studio"
 title: "Google AI Studio"
 category: "Developer"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai,developer,api]
 official_url: "https://aistudio.google.com/welcome"
 ---

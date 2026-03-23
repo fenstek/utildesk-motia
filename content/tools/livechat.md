@@ -2,7 +2,7 @@
 slug: "livechat"
 title: "LiveChat"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [customer-support, live-chat, helpdesk]
 official_url: "https://www.livechat.com/"
 ---

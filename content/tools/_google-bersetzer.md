@@ -2,7 +2,7 @@
 slug: "google-bersetzer"
 title: "Google Übersetzer"
 category: "AI"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [translation, language, productivity]
 official_url: "https://translate.google.com/?ucbcb=1"
 disabled: true

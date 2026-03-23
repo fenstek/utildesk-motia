@@ -2,7 +2,7 @@
 slug: google-workspace
 title: Google Workspace
 category: Produktivität
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [productivity,collaboration,workspace]
 official_url: "https://workspace.google.com/"
 popularity: 0

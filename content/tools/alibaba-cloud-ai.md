@@ -2,7 +2,7 @@
 slug: "alibaba-cloud-ai"
 title: "Alibaba Cloud AI"
 category: "AI"
-price_model: "Je nach Nutzung und Plan"
+price_model: "Nutzungsbasiert"
 tags: [machine-learning, cloud, enterprise-ai]
 official_url: "https://www.alibabacloud.com/en/product/machine-learning?_p_lc=1"
 ---

@@ -2,7 +2,7 @@
 slug: wellsaid-labs
 title: WellSaid Labs
 category: Audio
-price_model: je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [ai, audio, voice]
 official_url: "https://www.wellsaid.io/"
 popularity: 0

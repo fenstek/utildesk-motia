@@ -2,7 +2,7 @@
 slug: jsfiddle
 title: JSFiddle
 category: Developer
-price_model: kostenlos mit optionalen Premium-Features
+price_model: "Freemium"
 tags: [coding, web, developer]
 official_url: "https://jsfiddle.net/"
 popularity: 0

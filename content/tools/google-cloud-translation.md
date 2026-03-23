@@ -2,7 +2,7 @@
 slug: "google-cloud-translation"
 title: "Google Cloud Translation"
 category: "AI"
-price_model: "Abrechnung nach Nutzung"
+price_model: "Nutzungsbasiert"
 tags: [translation, api, cloud]
 official_url: "https://cloud.google.com/translate"
 ---

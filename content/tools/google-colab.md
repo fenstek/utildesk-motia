@@ -2,7 +2,7 @@
 slug: "google-colab"
 title: "Google Colab"
 category: "Entwickler-Tools"
-price_model: "Kostenlos mit kostenpflichtigen Upgrades"
+price_model: "Freemium"
 tags: [developer,coding,data]
 official_url: "https://colab.research.google.com/"
 ---

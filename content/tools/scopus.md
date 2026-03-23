@@ -2,7 +2,7 @@
 slug: "scopus"
 title: "Scopus"
 category: "Video"
-price_model: "Je nach Anbieter/Plan"
+price_model: "Je nach Plan"
 tags: [research,bibliometrics,publications]
 official_url: "https://www.elsevier.com/products/scopus"
 ---

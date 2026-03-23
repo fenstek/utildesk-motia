@@ -2,7 +2,7 @@
 slug: "paint-net"
 title: "Paint.NET"
 category: "AI"
-price_model: "kostenlos / optional kostenpflichtige Version"
+price_model: "Freemium"
 tags: [image-editing, design, graphics]
 official_url: "https://www.getpaint.net/"
 ---

@@ -2,7 +2,7 @@
 slug: plot
 title: Plot
 category: AI
-price_model: Je nach Anbieter und Tarif unterschiedlich
+price_model: "Je nach Plan"
 tags: [social-media, marketing, automation, productivity]
 official_url: "https://www.plot.so/"
 popularity: 0

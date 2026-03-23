@@ -2,7 +2,7 @@
 slug: boomy
 title: Boomy
 category: AI
-price_model: Je nach Plan und Anbieter unterschiedlich
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://boomy.com/"
 popularity: 0

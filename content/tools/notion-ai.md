@@ -2,7 +2,7 @@
 slug: notion-ai
 title: Notion AI
 category: Produktivität
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - produktivitat

@@ -2,7 +2,7 @@
 slug: genei
 title: Genei
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://www.genei.io'
 affiliate_url: 'https://www.genei.io'

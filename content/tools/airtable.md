@@ -2,7 +2,7 @@
 slug: airtable
 title: Airtable
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["data", "automation"]
 official_url: "https://airtable.com"
 popularity: 1

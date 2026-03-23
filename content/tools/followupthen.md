@@ -2,7 +2,7 @@
 slug: followupthen
 title: FollowUpThen
 category: AI
-price_model: Je nach Plan, meist mit kostenlosen und kostenpflichtigen Optionen
+price_model: "Freemium"
 tags: [productivity, automation, workflow, crm]
 official_url: "https://www.followupthen.com/"
 popularity: 1

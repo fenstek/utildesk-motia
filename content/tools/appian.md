@@ -2,7 +2,7 @@
 slug: "appian"
 title: "Appian"
 category: "Automatisierung"
-price_model: "je nach Plan und Nutzungsumfang"
+price_model: "Nutzungsbasiert"
 tags: [automation, workflow, no-code]
 official_url: "https://appian.com/products/platform/overview"
 ---

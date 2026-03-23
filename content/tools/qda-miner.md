@@ -2,7 +2,7 @@
 slug: qda-miner
 title: QDA Miner
 category: Analytics
-price_model: Je nach Lizenzmodell und Anbieter unterschiedlich
+price_model: "Je nach Plan"
 tags: ["analytics", "data", "automation"]
 official_url: "https://provalisresearch.com/products/qualitative-data-analysis-software/"
 popularity: 0

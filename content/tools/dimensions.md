@@ -2,7 +2,7 @@
 slug: "dimensions"
 title: "Dimensions"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [research, publications, analytics]
 official_url: "https://www.dimensions.ai/"
 ---

@@ -2,7 +2,7 @@
 slug: "balsamiq"
 title: "Balsamiq"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [wireframing, ui-design, prototyping]
 official_url: "https://balsamiq.com/"
 ---

@@ -2,7 +2,7 @@
 slug: "zoho-books"
 title: "Zoho Books"
 category: "AI"
-price_model: "Abonnementbasiert"
+price_model: "Abonnement"
 tags: ["accounting", "finance"]
 official_url: "https://www.zoho.com/de-de/books/"
 ---

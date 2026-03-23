@@ -2,7 +2,7 @@
 slug: granola
 title: Granola
 category: Produktivität
-price_model: Je nach Anbieter/Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [ai, meeting, notes, assistant]
 official_url: "https://www.granola.ai/"
 popularity: 0

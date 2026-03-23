@@ -2,7 +2,7 @@
 slug: scholarcy
 title: Scholarcy
 category: AI
-price_model: Je nach Plan, meist abonnementbasiert
+price_model: "Abonnement"
 tags: [assistant, automation, education, productivity]
 official_url: "https://www.scholarcy.com/"
 popularity: 0

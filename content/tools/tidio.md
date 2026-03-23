@@ -2,7 +2,7 @@
 slug: tidio
 title: Tidio
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot"]
 official_url: 'https://www.tidio.com/'
 created_at: "2026-02-13"

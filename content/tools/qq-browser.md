@@ -2,7 +2,7 @@
 slug: "qq-browser"
 title: "QQ Browser"
 category: "Produktivitaet"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, browser, web]
 official_url: "https://browser.qq.com/"
 ---

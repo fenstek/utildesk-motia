@@ -2,7 +2,7 @@
 slug: sudowrite
 title: Sudowrite
 category: Produktivität
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [writing, workflow]
 official_url: "https://sudowrite.com/"
 popularity: 0

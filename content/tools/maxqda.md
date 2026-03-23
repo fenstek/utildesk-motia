@@ -2,7 +2,7 @@
 slug: maxqda
 title: MAXQDA
 category: AI
-price_model: Je nach Lizenzmodell und Funktionsumfang
+price_model: "Je nach Plan"
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.maxqda.com/"
 popularity: 0

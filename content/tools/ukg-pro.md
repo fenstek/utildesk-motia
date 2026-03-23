@@ -2,7 +2,7 @@
 slug: "ukg-pro"
 title: "UKG Pro (Ultimate Kronos Group)"
 category: "AI"
-price_model: "Je nach Anbieter/Plan"
+price_model: "Je nach Plan"
 tags: [hcm, hr, payroll]
 official_url: "https://www.ukg.com/solutions/hcm/ukg-pro"
 ---

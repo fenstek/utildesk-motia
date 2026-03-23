@@ -2,7 +2,7 @@
 slug: "runwayml"
 title: "RunwayML"
 category: "Audio & Video"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [video, design, ai]
 official_url: "https://runwayml.com/"
 disabled: true

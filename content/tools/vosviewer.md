@@ -2,7 +2,7 @@
 slug: "vosviewer"
 title: "VOSviewer"
 category: "AI"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [bibliometrics, research, visualization]
 official_url: "https://www.vosviewer.com/"
 ---

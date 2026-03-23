@@ -2,7 +2,7 @@
 slug: qlik-sense
 title: Qlik Sense
 category: AI
-price_model: Je nach Plan und Anbieter unterschiedlich
+price_model: "Je nach Plan"
 tags: [data, analytics, automation, productivity]
 official_url: "https://www.qlik.com/us/products/qlik-sense"
 popularity: 0

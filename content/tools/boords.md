@@ -2,7 +2,7 @@
 slug: boords
 title: Boords
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [video, design, automation]
 official_url: "https://boords.com/"
 popularity: 0

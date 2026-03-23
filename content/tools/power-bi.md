@@ -2,7 +2,7 @@
 slug: power-bi
 title: Power BI
 category: AI
-price_model: Je nach Plan kostenpflichtig mit kostenfreier Testversion
+price_model: "Je nach Plan"
 tags: [analytics, workflow]
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
 popularity: 1

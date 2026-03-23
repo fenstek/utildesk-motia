@@ -2,7 +2,7 @@
 slug: paperspace-gradient
 title: Paperspace Gradient
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [data, analytics, automation, workflow]
 official_url: "https://www.paperspace.com/artificial-intelligence"
 popularity: 0

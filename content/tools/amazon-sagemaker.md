@@ -2,7 +2,7 @@
 slug: amazon-sagemaker
 title: Amazon SageMaker
 category: AI
-price_model: Je nach Nutzung und gewähltem Service
+price_model: "Nutzungsbasiert"
 tags: [assistant, automation]
 official_url: "https://openai.com/index/amazon-partnership/"
 popularity: 0

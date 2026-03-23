@@ -5,6 +5,7 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../lib/favicon";
+import { normalizePriceModel } from "../lib/priceModel";
 
 // Load tools and build tag frequency map
 const toolsDir = join(process.cwd(), "content", "tools");
@@ -70,7 +71,7 @@ const tools = await Promise.all(
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
-    const price_model = data.price_model ? String(data.price_model) : null;
+    const price_model = normalizePriceModel(data.price_model);
     const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : null;
     const official_url = data.official_url ? String(data.official_url) : null;
     const image = data.image ? String(data.image) : null;

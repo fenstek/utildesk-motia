@@ -2,7 +2,7 @@
 slug: h2o-ai
 title: H2O.ai
 category: AI
-price_model: je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [data, analytics, automation]
 official_url: "https://h2o.ai/"
 popularity: 0

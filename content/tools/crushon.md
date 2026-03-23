@@ -2,7 +2,7 @@
 slug: "crushon"
 title: "CrushOn"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, chatbot, companion]
 official_url: "https://crushon.ai/"
 ---

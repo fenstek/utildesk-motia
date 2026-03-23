@@ -2,7 +2,7 @@
 slug: "litmaps"
 title: "Litmaps"
 category: "Schreiben & Content"
-price_model: "Je nach Plan, meist abonnementbasiert"
+price_model: "Abonnement"
 tags: [research, data, writing]
 official_url: "https://www.litmaps.com/"
 ---

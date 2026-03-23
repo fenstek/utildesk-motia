@@ -2,7 +2,7 @@
 slug: "mural"
 title: "MURAL"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [whiteboard, collaboration, brainstorming]
 official_url: "https://www.mural.co/"
 ---

@@ -2,7 +2,7 @@
 slug: google-tpu
 title: Google TPU (Tensor Processing Unit)
 category: AI
-price_model: Je nach Nutzung und Anbieter
+price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://cloud.google.com/tpu"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: "magix-video-pro-x"
 title: "Magix Video Pro X"
 category: "Video"
-price_model: "Je nach Lizenzmodell und Anbieter unterschiedlich"
+price_model: "Je nach Plan"
 tags: [video-editing, post-production, desktop]
 official_url: "https://www.magix.com/us/video-editor/video-pro-x/"
 ---

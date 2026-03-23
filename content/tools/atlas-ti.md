@@ -2,7 +2,7 @@
 slug: atlas-ti
 title: Atlas.ti
 category: AI
-price_model: Je nach Plan und Anbieter
+price_model: "Je nach Plan"
 tags: [data, analytics, productivity, automation, education]
 official_url: "https://atlasti.com/"
 popularity: 0

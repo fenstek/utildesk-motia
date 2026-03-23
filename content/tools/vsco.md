@@ -2,7 +2,7 @@
 slug: "vsco"
 title: "VSCO"
 category: "AI"
-price_model: "Je nach Plan, kostenlose Basisversion und Premium-Abonnements"
+price_model: "Freemium"
 tags: [photo-editing, photography, creative-tools]
 official_url: "https://www.vsco.co/"
 ---

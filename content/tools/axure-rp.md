@@ -2,7 +2,7 @@
 slug: axure-rp
 title: Axure RP
 category: Design
-price_model: Je nach Plan und Anbieter unterschiedlich
+price_model: "Je nach Plan"
 tags: [design, ux, prototyping]
 official_url: "https://www.axure.com/"
 popularity: 0

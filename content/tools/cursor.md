@@ -2,7 +2,7 @@
 slug: cursor
 title: Cursor
 category: Developer
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - developer

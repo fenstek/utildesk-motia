@@ -2,7 +2,7 @@
 slug: "engine"
 title: "ENGINE"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [travel-management, booking, business-travel]
 official_url: "https://engine.com/"
 ---

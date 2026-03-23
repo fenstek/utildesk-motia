@@ -2,7 +2,7 @@
 slug: surfer-seo
 title: Surfer SEO
 category: AI
-price_model: Je nach Plan, meist abonnementbasiert
+price_model: "Abonnement"
 tags: []
 official_url: "https://surferseo.com/"
 popularity: 0

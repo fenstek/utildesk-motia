@@ -2,7 +2,7 @@
 slug: lindy
 title: Lindy
 category: AI Agents
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [ai, assistant, automation, workflow]
 official_url: "https://www.lindy.ai/"
 popularity: 0

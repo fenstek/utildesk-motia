@@ -2,7 +2,7 @@
 slug: responsivevoice
 title: ResponsiveVoice
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [audio, workflow]
 official_url: "https://responsivevoice.org/"
 popularity: 0

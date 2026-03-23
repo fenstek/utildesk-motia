@@ -2,7 +2,7 @@
 slug: "poeditor"
 title: "POEditor"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [localization, translation-management, developers]
 official_url: "https://poeditor.com/"
 ---

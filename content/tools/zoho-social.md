@@ -2,7 +2,7 @@
 slug: zoho-social
 title: Zoho Social
 category: Produktivität
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [marketing, social, analytics]
 official_url: "https://www.zoho.com/de/social/"
 popularity: 0

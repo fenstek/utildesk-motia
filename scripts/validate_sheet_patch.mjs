@@ -8,6 +8,7 @@ export const PATCH_ALLOWLIST = new Set([
   "official_url",
   "notes",
   "tags",
+  "price_model",
   "category",
   "affiliate_url",
   "title",

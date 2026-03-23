@@ -2,7 +2,7 @@
 slug: "mivi"
 title: "Mivi"
 category: "Video"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, video]
 official_url: "https://miviapp.com/"
 ---

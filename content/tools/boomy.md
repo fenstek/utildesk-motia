@@ -2,7 +2,7 @@
 slug: boomy
 title: Boomy
 category: AI
-price_model: Je nach Plan kostenfrei bis kostenpflichtig
+price_model: "Freemium"
 tags: [audio, automation, productivity]
 official_url: "https://boomy.com/"
 popularity: 0

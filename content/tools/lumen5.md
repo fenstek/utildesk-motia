@@ -2,7 +2,7 @@
 slug: lumen5
 title: Lumen5
 category: AI
-price_model: Je nach Plan verschieden
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://lumen5.com/"
 popularity: 0

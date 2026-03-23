@@ -2,7 +2,7 @@
 slug: smartsheet
 title: Smartsheet
 category: AI
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [data, workflow]
 official_url: "https://www.smartsheet.com/"
 popularity: 0

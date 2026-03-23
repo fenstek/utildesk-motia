@@ -2,7 +2,7 @@
 slug: "h2o-ai-driverless-ai"
 title: "H2O.ai Driverless AI"
 category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [automl, mlops, analytics]
 official_url: "https://h2o.ai/platform/ai-cloud/make/h2o-driverless-ai/"
 ---

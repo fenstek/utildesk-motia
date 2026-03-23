@@ -2,7 +2,7 @@
 slug: "soapui"
 title: "SoapUI"
 category: "AI"
-price_model: "Je nach Plan, meist Freemium mit kostenpflichtigen Erweiterungen"
+price_model: "Freemium"
 tags: [api-testing, test-automation, developer-tools]
 official_url: "https://smartbear.com/product/ready-api/api-functional-testing/"
 ---

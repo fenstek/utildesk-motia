@@ -2,7 +2,7 @@
 slug: "shotcut"
 title: "Shotcut"
 category: "AI"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [video-editing, open-source, post-production]
 official_url: "https://shotcut.org/"
 ---

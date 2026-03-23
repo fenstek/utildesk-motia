@@ -2,7 +2,7 @@
 slug: consensus
 title: Consensus
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://consensus.app/'
 created_at: "2026-02-14"

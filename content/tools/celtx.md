@@ -2,7 +2,7 @@
 slug: "celtx"
 title: "Celtx"
 category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+price_model: "Abonnement"
 tags: [scriptwriting, pre-production, video]
 official_url: "https://www.celtx.com/"
 ---

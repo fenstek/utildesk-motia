@@ -2,7 +2,7 @@
 slug: pika
 title: Pika
 category: Video
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - video

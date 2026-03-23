@@ -2,7 +2,7 @@
 slug: "research-ai"
 title: "Research AI"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [research-assistant, ai-search, academic-research]
 official_url: "https://www.researchai.com/"
 ---

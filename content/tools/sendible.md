@@ -2,7 +2,7 @@
 slug: "sendible"
 title: "Sendible"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [social-media,marketing,scheduling]
 official_url: "https://www.sendible.com/"
 ---

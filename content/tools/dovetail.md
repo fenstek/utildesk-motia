@@ -2,7 +2,7 @@
 slug: dovetail
 title: Dovetail
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://dovetail.com/"
 popularity: 0

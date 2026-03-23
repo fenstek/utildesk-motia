@@ -2,7 +2,7 @@
 slug: intellicode
 title: IntelliCode (Microsoft)
 category: Developer
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [coding, developer-tools]
 official_url: "https://visualstudio.microsoft.com/services/intellicode/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: wevideo
 title: WeVideo
 category: Video
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [video, workflow]
 official_url: "https://www.wevideo.com/"
 popularity: 0

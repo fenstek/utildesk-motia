@@ -2,7 +2,7 @@
 slug: frase
 title: Frase
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "marketing"]
 official_url: 'https://www.frase.io/'
 affiliate_url: 'https://www.frase.io/'

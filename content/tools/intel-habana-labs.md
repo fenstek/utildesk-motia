@@ -2,7 +2,7 @@
 slug: intel-habana-labs
 title: Intel Habana Labs
 category: AI
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://habana.ai/"
 popularity: 1

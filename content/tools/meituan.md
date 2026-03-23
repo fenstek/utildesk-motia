@@ -2,7 +2,7 @@
 slug: "meituan"
 title: "Meituan"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [mobile, productivity]
 official_url: "https://www.meituan.com/"
 ---

@@ -2,7 +2,7 @@
 slug: phrase
 title: Phrase
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["ai", "assistant", "automation"]
 official_url: 'https://phrase.com/'
 created_at: "2026-02-14"

@@ -2,7 +2,7 @@
 slug: "boomerang-for-gmail"
 title: "Boomerang for Gmail"
 category: "AI"
-price_model: "Je nach Plan, inklusive kostenloser Basisversion"
+price_model: "Je nach Plan"
 tags: [email-productivity, follow-ups, gmail]
 official_url: "https://www.boomeranggmail.com/"
 ---

@@ -2,7 +2,7 @@
 slug: "bamboohr"
 title: "BambooHR"
 category: "AI"
-price_model: "Je nach Anbieter/Plan"
+price_model: "Je nach Plan"
 tags: [hr, hcm, payroll]
 official_url: "https://www.bamboohr.com/"
 ---

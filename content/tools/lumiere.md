@@ -2,7 +2,7 @@
 slug: lumiere
 title: Lumiere
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["video"]
 official_url: 'http://lumiere.obs.coe.int/'
 affiliate_url: 'http://lumiere.obs.coe.int/'

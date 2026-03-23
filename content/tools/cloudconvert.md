@@ -2,7 +2,7 @@
 slug: "cloudconvert"
 title: "CloudConvert"
 category: "AI"
-price_model: "Je nach Plan kostenfrei bis kostenpflichtig"
+price_model: "Freemium"
 tags: [file-conversion, documents, utilities]
 official_url: "https://cloudconvert.com/"
 ---

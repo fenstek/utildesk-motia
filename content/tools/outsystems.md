@@ -2,7 +2,7 @@
 slug: outsystems
 title: OutSystems
 category: AI
-price_model: Je nach Plan und Anbieter
+price_model: "Je nach Plan"
 tags: [no-code, workflow, automation, developer-tools]
 official_url: "https://www.outsystems.com/"
 popularity: 0

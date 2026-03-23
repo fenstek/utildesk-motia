@@ -2,7 +2,7 @@
 slug: clickup
 title: ClickUp
 category: AI
-price_model: Je nach Plan, meist Freemium mit kostenpflichtigen Upgrades
+price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://clickup.com/"
 popularity: 0

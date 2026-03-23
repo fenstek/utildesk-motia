@@ -2,7 +2,7 @@
 slug: doodle
 title: Doodle
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [productivity, automation, meeting]
 official_url: "https://doodle.com/"
 popularity: 0

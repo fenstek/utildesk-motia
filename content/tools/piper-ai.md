@@ -2,7 +2,7 @@
 slug: piper-ai
 title: Piper AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation, crm]
 official_url: "https://www.piperai.com/"
 popularity: 1

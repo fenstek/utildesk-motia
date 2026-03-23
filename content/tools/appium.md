@@ -2,7 +2,7 @@
 slug: "appium"
 title: "Appium"
 category: "AI"
-price_model: "Open Source / Kostenlos"
+price_model: "Open Source"
 tags: [mobile-testing,test-automation,developer-tools]
 official_url: "https://appium.io/"
 ---

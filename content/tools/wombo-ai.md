@@ -2,7 +2,7 @@
 slug: "wombo-ai"
 title: "Wombo AI"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [ai-art,image-generation,mobile]
 official_url: "https://w.ai/"
 ---

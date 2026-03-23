@@ -2,7 +2,7 @@
 slug: webflow
 title: Webflow
 category: AI
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [design, no-code, marketing, automation, productivity]
 official_url: "https://webflow.com/"
 popularity: 0

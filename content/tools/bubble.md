@@ -2,7 +2,7 @@
 slug: bubble
 title: Bubble
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://bubble.io/"
 popularity: 0

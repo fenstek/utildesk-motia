@@ -2,7 +2,7 @@
 slug: quillbot
 title: QuillBot
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - chatbot

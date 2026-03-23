@@ -2,7 +2,7 @@
 slug: ibm-watson-visual-recognition
 title: IBM Watson Visual Recognition
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://www.ibm.com/solutions"
 popularity: 0

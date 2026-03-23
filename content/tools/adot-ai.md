@@ -2,7 +2,7 @@
 slug: "adot-ai"
 title: "Adot AI"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai,assistant,productivity]
 official_url: "https://adot.ai/note/"
 ---

@@ -2,7 +2,7 @@
 slug: resemble-ai
 title: Resemble AI
 category: Audio
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [audio, voice, api]
 official_url: "https://www.resemble.ai/"
 popularity: 0

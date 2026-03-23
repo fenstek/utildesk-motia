@@ -2,7 +2,7 @@
 slug: adept
 title: Adept
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation", "workflow"]
 official_url: "https://www.adept.ai/"
 popularity: 2

@@ -2,7 +2,7 @@
 slug: "stanford-nlp"
 title: "Stanford NLP"
 category: "AI"
-price_model: "Open Source / Kostenlos"
+price_model: "Open Source"
 tags: [nlp, research, developer-tools]
 official_url: "https://nlp.stanford.edu/"
 ---

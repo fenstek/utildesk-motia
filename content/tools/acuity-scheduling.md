@@ -2,7 +2,7 @@
 slug: "acuity-scheduling"
 title: "Acuity Scheduling"
 category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+price_model: "Abonnement"
 tags: [scheduling,appointments,booking]
 official_url: "https://acuityscheduling.com/"
 ---

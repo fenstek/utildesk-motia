@@ -2,7 +2,7 @@
 slug: "inshot"
 title: "InShot"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [video-editing, mobile, creator-tools]
 official_url: "https://inshot.com/"
 ---

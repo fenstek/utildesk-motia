@@ -2,7 +2,7 @@
 slug: replit
 title: Replit
 category: Developer
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - developer

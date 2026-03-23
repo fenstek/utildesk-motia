@@ -2,7 +2,7 @@
 slug: zeplin
 title: Zeplin
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://zeplin.io/"
 popularity: 1

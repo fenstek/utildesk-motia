@@ -2,7 +2,7 @@
 slug: owo
 title: Owo
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://github.com/OpEnchanter/owo-assistant"
 popularity: 1

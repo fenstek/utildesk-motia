@@ -2,7 +2,7 @@
 slug: "freepik"
 title: "Freepik"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, creative]
 official_url: "https://www.freepik.com/"
 ---

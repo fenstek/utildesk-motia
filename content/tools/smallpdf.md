@@ -2,7 +2,7 @@
 slug: "smallpdf"
 title: "Smallpdf"
 category: "AI"
-price_model: "Je nach Plan, kostenlose Basisversion und kostenpflichtige Abonnements"
+price_model: "Freemium"
 tags: [pdf, documents, productivity]
 official_url: "https://smallpdf.com/"
 ---

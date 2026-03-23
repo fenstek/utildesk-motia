@@ -2,7 +2,7 @@
 slug: storystream
 title: StoryStream
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "design", "marketing"]
 official_url: 'https://storystream.ai/'
 created_at: "2026-02-12"

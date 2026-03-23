@@ -2,7 +2,7 @@
 slug: deepl
 title: DeepL
 category: Produktivität
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - produktivitat

@@ -2,7 +2,7 @@
 slug: chatgpt
 title: ChatGPT
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["ai", "chatbot", "llm"]
 official_url: "https://chat.openai.com"
 affiliate_url: "https://chat.openai.com"

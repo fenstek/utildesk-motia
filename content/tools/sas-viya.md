@@ -2,7 +2,7 @@
 slug: "sas-viya"
 title: "SAS Viya"
 category: "AI"
-price_model: "je nach Anbieter und Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [analytics,data-science,enterprise-ai]
 official_url: "https://www.sas.com/en_us/software/viya.html"
 ---

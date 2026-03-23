@@ -2,7 +2,7 @@
 slug: adobe-photoshop-express
 title: Adobe Photoshop Express
 category: Design
-price_model: kostenlos mit In-App-Käufen
+price_model: "Freemium"
 tags: [design, image]
 official_url: "https://www.adobe.com/express/feature/photo/editor"
 popularity: 0

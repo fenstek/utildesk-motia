@@ -2,7 +2,7 @@
 slug: chatfuel
 title: Chatfuel
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [assistant,workflow]
 official_url: "https://chatfuel.com/"
 popularity: 1

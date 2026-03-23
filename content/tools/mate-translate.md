@@ -2,7 +2,7 @@
 slug: mate-translate
 title: Mate Translate
 category: AI
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [translation, workflow]
 official_url: "https://www.matetranslate.com/"
 popularity: 0

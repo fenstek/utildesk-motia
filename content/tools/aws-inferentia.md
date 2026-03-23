@@ -2,7 +2,7 @@
 slug: aws-inferentia
 title: AWS Inferentia
 category: AI
-price_model: Je nach Nutzung und Anbieterplan
+price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://aws.amazon.com/ai/machine-learning/inferentia/"
 popularity: 0

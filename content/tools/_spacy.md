@@ -2,7 +2,7 @@
 slug: spacy
 title: spaCy
 category: AI
-price_model: Open Source / Kommerzielle Lizenzen
+price_model: "Open Source"
 tags: [assistant, automation]
 official_url: "https://spacy.io/"
 popularity: 0

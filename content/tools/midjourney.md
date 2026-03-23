@@ -2,7 +2,7 @@
 slug: midjourney
 title: Midjourney
 category: Design
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - design

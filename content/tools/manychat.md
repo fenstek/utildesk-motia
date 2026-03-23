@@ -2,7 +2,7 @@
 slug: manychat
 title: ManyChat
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://manychat.com/"
 popularity: 1

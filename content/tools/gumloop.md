@@ -2,7 +2,7 @@
 slug: gumloop
 title: Gumloop
 category: Automatisierung
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [ai, automation, workflow, no-code]
 official_url: "https://www.gumloop.com/"
 popularity: 0

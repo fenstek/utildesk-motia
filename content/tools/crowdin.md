@@ -2,7 +2,7 @@
 slug: crowdin
 title: Crowdin
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [automation, translation, productivity]
 official_url: "https://crowdin.com/"
 popularity: 0

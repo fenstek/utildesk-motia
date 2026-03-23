@@ -2,7 +2,7 @@
 slug: mimic
 title: Mimic
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://mimic.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: reverso
 title: Reverso
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [translation, writing, productivity]
 official_url: "https://www.reverso.net/"
 popularity: 0

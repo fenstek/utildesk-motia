@@ -2,7 +2,7 @@
 slug: openai-codex
 title: OpenAI Codex
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, devtools, coding, workflow]
 official_url: "https://openai.com/codex"
 popularity: 0

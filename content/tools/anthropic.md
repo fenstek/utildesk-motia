@@ -2,7 +2,7 @@
 slug: anthropic
 title: Anthropic
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "writing"]
 official_url: 'https://www.anthropic.com/'
 created_at: "2026-02-12"

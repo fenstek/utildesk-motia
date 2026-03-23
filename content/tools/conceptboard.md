@@ -2,7 +2,7 @@
 slug: "conceptboard"
 title: "Conceptboard"
 category: "Produktivitat"
-price_model: "Je nach Plan unterschiedlich (kostenlos, Abonnements)"
+price_model: "Freemium"
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://conceptboard.com/"
 ---

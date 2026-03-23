@@ -2,7 +2,7 @@
 slug: ocenaudio
 title: Ocenaudio
 category: Audio
-price_model: kostenlos
+price_model: "Kostenlos"
 tags: [audio, workflow]
 official_url: "https://www.ocenaudio.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: framer
 title: Framer
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [design, automation, productivity, no-code, marketing]
 official_url: "https://www.framer.com/"
 popularity: 0

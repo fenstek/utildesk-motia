@@ -2,7 +2,7 @@
 slug: opencv
 title: OpenCV
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "video"]
 official_url: 'https://opencv.org/'
 created_at: "2026-02-13"

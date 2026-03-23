@@ -2,7 +2,7 @@
 slug: hugging-face-transformers
 title: Hugging Face Transformers
 category: AI
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [coding, developer-tools, api, education]
 official_url: "https://huggingface.co/docs/transformers/index"
 popularity: 0

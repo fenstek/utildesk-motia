@@ -2,7 +2,7 @@
 slug: automation-anywhere
 title: Automation Anywhere
 category: AI
-price_model: je nach Plan und Unternehmensgröße
+price_model: "Je nach Plan"
 tags: [ai, automation, rpa, productivity, enterprise]
 official_url: "https://www.automationanywhere.com/"
 popularity: 0

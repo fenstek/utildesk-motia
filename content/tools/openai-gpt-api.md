@@ -2,7 +2,7 @@
 slug: openai-gpt-api
 title: OpenAI GPT API
 category: AI
-price_model: je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [api, developer-tools, automation, productivity, data]
 official_url: "https://openai.com/api/"
 popularity: 0

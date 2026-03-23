@@ -2,7 +2,7 @@
 slug: "researchgate"
 title: "ResearchGate"
 category: "AI"
-price_model: "kostenfrei mit optionalen Premium-Features"
+price_model: "Freemium"
 tags: [research,publications,academic-networking]
 official_url: "https://www.researchgate.net/"
 ---

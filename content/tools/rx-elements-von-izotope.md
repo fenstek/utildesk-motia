@@ -2,7 +2,7 @@
 slug: rx-elements-von-izotope
 title: RX Elements von iZotope
 category: Audio
-price_model: Einmalzahlung / Lizenzmodell
+price_model: "Einmalzahlung"
 tags: [ai, audio, editing]
 official_url: "https://www.izotope.com/en/shop/rx-10-elements.html"
 popularity: 0

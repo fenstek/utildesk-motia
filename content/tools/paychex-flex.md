@@ -2,7 +2,7 @@
 slug: "paychex-flex"
 title: "Paychex Flex"
 category: "AI"
-price_model: "Je nach Plan und Unternehmensgröße"
+price_model: "Je nach Plan"
 tags: [payroll, hr, hcm]
 official_url: "https://www.paychex.com/payroll/paychex-flex"
 ---

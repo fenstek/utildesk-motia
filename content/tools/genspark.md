@@ -2,7 +2,7 @@
 slug: "genspark"
 title: "Genspark"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, assistant, research]
 official_url: "https://www.genspark.ai/"
 ---

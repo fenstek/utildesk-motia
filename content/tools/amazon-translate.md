@@ -2,7 +2,7 @@
 slug: amazon-translate
 title: Amazon Translate
 category: AI
-price_model: Je nach Nutzung, nutzungsabhängige Abrechnung
+price_model: "Nutzungsbasiert"
 tags: [ai, translation, api]
 official_url: "https://aws.amazon.com/translate/"
 popularity: 0

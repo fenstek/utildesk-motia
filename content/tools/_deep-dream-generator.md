@@ -2,7 +2,7 @@
 slug: deep-dream-generator
 title: Deep Dream Generator
 category: AI
-price_model: Je nach Plan entweder kostenlos mit eingeschränkten Funktionen oder kostenpflichtige Abonnements
+price_model: "Freemium"
 tags: []
 official_url: "https://deepdreamgenerator.com/"
 popularity: 0

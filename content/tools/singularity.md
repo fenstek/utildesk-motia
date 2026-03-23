@@ -2,7 +2,7 @@
 slug: singularity
 title: Singularity
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation, productivity, data]
 official_url: "https://www.singularity.com/"
 popularity: 0

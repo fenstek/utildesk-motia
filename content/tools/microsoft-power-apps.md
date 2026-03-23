@@ -2,7 +2,7 @@
 slug: "microsoft-power-apps"
 title: "Microsoft Power Apps"
 category: "Automatisierung"
-price_model: "Je nach Plan, meist abonnementbasiert"
+price_model: "Abonnement"
 tags: [no-code, automation, developer]
 official_url: "https://www.microsoft.com/de-de/power-platform/products/power-apps"
 ---

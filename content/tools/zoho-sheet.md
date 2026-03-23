@@ -2,7 +2,7 @@
 slug: zoho-sheet
 title: Zoho Sheet
 category: Produktivität
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [spreadsheet,productivity,collaboration]
 official_url: "https://www.zoho.com/de/sheet/"
 popularity: 0

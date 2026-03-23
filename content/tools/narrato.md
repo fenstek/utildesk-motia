@@ -2,7 +2,7 @@
 slug: "narrato"
 title: "Narrato"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [content-marketing, ai-writing, workflow]
 official_url: "https://narrato.io/"
 ---

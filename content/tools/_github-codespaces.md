@@ -2,7 +2,7 @@
 slug: github-codespaces
 title: GitHub Codespaces
 category: Developer
-price_model: Abonnement / nutzungsbasiert
+price_model: "Nutzungsbasiert"
 tags: []
 official_url: "https://github.com/features/codespaces"
 popularity: 0

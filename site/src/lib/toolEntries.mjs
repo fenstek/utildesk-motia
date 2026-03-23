@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import { normalizePriceModel } from "./priceModel";
 
 const TOOLS_DIR = join(process.cwd(), "content", "tools");
 
@@ -24,7 +25,10 @@ export async function listActiveToolEntries() {
         slug: String(parsed.data.slug ?? file.replace(/\.md$/, "")),
         sourcePath,
         raw,
-        data: parsed.data,
+        data: {
+          ...parsed.data,
+          price_model: normalizePriceModel(parsed.data.price_model),
+        },
         content: parsed.content,
       };
     })

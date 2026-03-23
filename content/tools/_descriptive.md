@@ -2,7 +2,7 @@
 slug: descriptive
 title: Descriptive
 category: Video
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, video]
 official_url: "https://descriptive.ai/"
 popularity: 0

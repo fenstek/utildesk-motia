@@ -2,7 +2,7 @@
 slug: "seaart"
 title: "SeaArt"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, image]
 official_url: "https://www.seaart.ai/"
 ---

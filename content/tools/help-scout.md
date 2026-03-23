@@ -2,7 +2,7 @@
 slug: "help-scout"
 title: "Help Scout"
 category: "AI"
-price_model: "Je nach Plan, meist abonnementbasiert"
+price_model: "Abonnement"
 tags: [customer-support, shared-inbox, helpdesk]
 official_url: "https://www.helpscout.com/"
 ---

@@ -2,7 +2,7 @@
 slug: magma
 title: Magma
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://magma.com/"
 popularity: 0

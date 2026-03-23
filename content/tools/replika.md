@@ -2,7 +2,7 @@
 slug: replika
 title: Replika
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "design"]
 official_url: 'https://replika.com/'
 affiliate_url: 'https://replika.com/'

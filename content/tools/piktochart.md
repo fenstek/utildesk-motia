@@ -2,7 +2,7 @@
 title: Piktochart
 slug: piktochart
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design", "marketing"]
 official_url: 'https://piktochart.com/'
 created_at: "2026-02-13"

@@ -2,7 +2,7 @@
 slug: "deepseek"
 title: "DeepSeek"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, assistant, chatbot]
 official_url: "https://www.deepseek.com/"
 ---

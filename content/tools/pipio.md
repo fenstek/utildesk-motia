@@ -2,7 +2,7 @@
 slug: pipio
 title: Pipio
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://www.pipio.ai/"
 popularity: 0

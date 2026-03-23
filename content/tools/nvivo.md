@@ -2,7 +2,7 @@
 slug: nvivo
 title: NVivo
 category: AI
-price_model: Abonnement, je nach Plan
+price_model: "Abonnement"
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://lumivero.com/products/nvivo/"
 popularity: 0

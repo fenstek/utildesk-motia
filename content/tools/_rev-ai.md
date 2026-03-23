@@ -2,7 +2,7 @@
 slug: rev-ai
 title: Rev.ai
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, transcription, audio, api]
 official_url: "https://www.rev.com"
 created_at: 2026-02-15

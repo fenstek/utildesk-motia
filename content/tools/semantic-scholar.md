@@ -2,7 +2,7 @@
 slug: semantic-scholar
 title: Semantic Scholar
 category: AI
-price_model: kostenlos
+price_model: "Kostenlos"
 tags: [education, data, analytics, productivity]
 official_url: "https://www.semanticscholar.org/"
 popularity: 0

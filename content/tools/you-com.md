@@ -2,7 +2,7 @@
 slug: you-com
 title: You.com
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot"]
 official_url: 'https://you.com/'
 affiliate_url: 'https://you.com/'

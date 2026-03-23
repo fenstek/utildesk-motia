@@ -2,7 +2,7 @@
 slug: "streak"
 title: "Streak"
 category: "AI"
-price_model: "Je nach Plan kostenpflichtig und kostenlos verfügbar"
+price_model: "Je nach Plan"
 tags: [crm,email-productivity,sales]
 official_url: "https://www.streak.com/"
 ---

@@ -2,7 +2,7 @@
 slug: looker
 title: Looker
 category: AI
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: ["analytics", "data", "automation"]
 official_url: "https://cloud.google.com/looker"
 popularity: 1

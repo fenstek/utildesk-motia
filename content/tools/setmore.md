@@ -2,7 +2,7 @@
 slug: "setmore"
 title: "Setmore"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [scheduling, appointments, booking]
 official_url: "https://www.setmore.com/"
 ---

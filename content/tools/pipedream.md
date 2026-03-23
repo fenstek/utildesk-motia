@@ -2,7 +2,7 @@
 slug: pipedream
 title: Pipedream
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://pipedream.com/"
 created_at: 2026-02-14

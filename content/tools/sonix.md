@@ -2,7 +2,7 @@
 slug: sonix
 title: Sonix
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["transcription", "audio"]
 official_url: "https://sonix.ai/"
 popularity: 0

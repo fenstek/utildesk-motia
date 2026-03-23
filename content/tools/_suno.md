@@ -2,7 +2,7 @@
 slug: suno
 title: Suno
 category: Audio
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - audio

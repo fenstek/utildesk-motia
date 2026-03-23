@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import process from "node:process";
 import path from "node:path";
+import { normalizePriceModel } from "./lib/price_model_policy.mjs";
 
 const TOOL_JSON = process.argv[2];
 if (!TOOL_JSON) {
@@ -113,8 +114,10 @@ function upsertFrontmatter(md, kv){
   // Load MD
   let md = fs.readFileSync(mdPath, "utf8");
 
-  // Upsert frontmatter urls so UI can read them
-  md = upsertFrontmatter(md, { official_url, affiliate_url });
+  const price_model = normalizePriceModel(tool.price_model || "");
+
+  // Upsert frontmatter values so UI can read canonical metadata
+  md = upsertFrontmatter(md, { official_url, affiliate_url, price_model });
 
   // Remove handlebars blocks
   md = md.replace(/{{#if[^}]*}}/g, "");
@@ -140,6 +143,7 @@ function upsertFrontmatter(md, kv){
   // Also persist urls back into TOOL_JSON for downstream steps if needed
   tool.official_url = official_url || tool.official_url || "";
   tool.affiliate_url = affiliate_url || tool.affiliate_url || "";
+  tool.price_model = price_model;
   fs.writeFileSync(TOOL_JSON, JSON.stringify(tool, null, 2) + "\n", "utf8");
 
   console.log(JSON.stringify({
@@ -147,6 +151,7 @@ function upsertFrontmatter(md, kv){
     mdPath,
     official_url: tool.official_url || "",
     affiliate_url: tool.affiliate_url || "",
+    price_model: tool.price_model || "",
   }, null, 2));
 })().catch(err => {
   console.error(err?.stack || String(err));

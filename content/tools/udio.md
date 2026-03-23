@@ -2,7 +2,7 @@
 slug: udio
 title: Udio
 category: Audio
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - audio

@@ -2,7 +2,7 @@
 slug: "speechify"
 title: "Speechify"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, audio]
 official_url: "https://speechify.com/"
 created_at: "2026-02-15"

@@ -2,7 +2,7 @@
 slug: aide
 title: AIDE
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [customer-support, automation, productivity, workflow]
 official_url: "https://aide.app/"
 popularity: 0

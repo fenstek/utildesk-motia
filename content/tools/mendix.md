@@ -2,7 +2,7 @@
 slug: "mendix"
 title: "Mendix"
 category: "Automatisierung"
-price_model: "Je nach Anbieter/Plan"
+price_model: "Je nach Plan"
 tags: [no-code, automation, developer]
 official_url: "https://www.mendix.com/platform/"
 ---

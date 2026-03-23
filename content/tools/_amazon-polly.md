@@ -2,7 +2,7 @@
 slug: amazon-polly
 title: Amazon Polly
 category: AI
-price_model: Pay-as-you-go
+price_model: "Nutzungsbasiert"
 tags: []
 official_url: "https://aws.amazon.com/polly/"
 popularity: 0

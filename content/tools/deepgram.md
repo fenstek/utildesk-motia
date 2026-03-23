@@ -2,7 +2,7 @@
 slug: deepgram
 title: Deepgram
 category: AI
-price_model: Je nach Plan und Nutzung
+price_model: "Je nach Plan"
 tags: [audio, transcription, api, developer-tools]
 official_url: "https://deepgram.com/"
 popularity: 0

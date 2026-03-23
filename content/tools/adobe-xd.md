@@ -2,7 +2,7 @@
 slug: adobe-xd
 title: Adobe XD
 category: Design
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [design, image]
 official_url: "https://www.adobe.com/products/xd.html"
 popularity: 0
