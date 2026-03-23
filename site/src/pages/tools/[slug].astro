@@ -67,16 +67,18 @@ const ensureInlineProviderLink = (input: string, visibleUrl: string, targetUrl: 
   const providerLinkHtml = buildInlineProviderLinkHtml(visibleUrl, targetUrl);
   if (!providerLinkHtml) return input;
 
-  const providerBlockRegex = /<p[^>]*>\s*(?:<span[^>]*>\s*👉\s*<\/span>\s*)?<strong>\s*Zum Anbieter:\s*<\/strong>[\s\S]*?<\/p>(?:\s*<p[^>]*>[\s\S]*?<\/p>)?/i;
-  if (providerBlockRegex.test(input)) {
-    return input.replace(providerBlockRegex, providerLinkHtml);
+  const cleanedInput = input
+    .replace(/<div[^>]*class="inline-provider-link"[^>]*>[\s\S]*?<\/div>/gi, "")
+    .replace(/<p[^>]*>[\s\S]*?<strong>\s*Zum Anbieter:\s*<\/strong>[\s\S]*?<\/p>/gi, "")
+    .replace(/<p[^>]*>[\s\S]*?<strong>\s*(?:Affiliate-Link:|Linkziel:)\s*<\/strong>[\s\S]*?<\/p>/gi, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+
+  if (/<h2[^>]*>\s*FAQ\s*<\/h2>/i.test(cleanedInput)) {
+    return cleanedInput.replace(/<h2[^>]*>\s*FAQ\s*<\/h2>/i, `${providerLinkHtml}\n<h2>FAQ</h2>`);
   }
 
-  if (/<h2[^>]*>\s*FAQ\s*<\/h2>/i.test(input)) {
-    return input.replace(/<h2[^>]*>\s*FAQ\s*<\/h2>/i, `${providerLinkHtml}\n<h2>FAQ</h2>`);
-  }
-
-  return `${input}\n${providerLinkHtml}`;
+  return `${cleanedInput}\n${providerLinkHtml}`;
 };
 
 const localLogo = resolveLocalLogo(slug);
