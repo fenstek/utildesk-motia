@@ -24,6 +24,12 @@ const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
 const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
 const provider_url = affiliate_url || official_url || "";
 const escapeRegExp = (value: string) => value.replace(/[.*+?^$|()\[\]{}]/g, "\\$&");
+const escapeHtml = (value: string) =>
+  String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 const linkFirstParagraphMention = (input: string, term: string, url: string) => {
   if (!url || term.trim().length < 4) return input;
   const termRegex = new RegExp("(?<![\\w/>\"])" + escapeRegExp(term) + "(?![\\w/<\"])", "gi");
@@ -39,6 +45,23 @@ const linkFirstParagraphMention = (input: string, term: string, url: string) => 
     });
     return open + linked + close;
   });
+};
+const ensureInlineProviderLink = (input: string, url: string) => {
+  if (!url) return input;
+  if (/(?:👉\s*)?<strong>\s*Zum Anbieter:\s*<\/strong>/i.test(input) || /\bZum Anbieter:\b/i.test(input)) {
+    return input;
+  }
+
+  const safeUrl = escapeHtml(url);
+  const providerLinkHtml =
+    `<p class="inline-provider-link">👉 <strong>Zum Anbieter:</strong> ` +
+    `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeUrl}</a></p>`;
+
+  if (/<h2[^>]*>\s*FAQ\s*<\/h2>/i.test(input)) {
+    return input.replace(/<h2[^>]*>\s*FAQ\s*<\/h2>/i, `${providerLinkHtml}\n<h2>FAQ</h2>`);
+  }
+
+  return `${input}\n${providerLinkHtml}`;
 };
 
 const localLogo = resolveLocalLogo(slug);
@@ -106,7 +129,10 @@ let html = marked.parse(contentWithoutAlternatives);
 
 // Remove first H1 from markdown to avoid duplicate title
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
-const articleHtml = linkFirstParagraphMention(String(html), title, provider_url);
+const articleHtml = ensureInlineProviderLink(
+  linkFirstParagraphMention(String(html), title, provider_url),
+  provider_url
+);
 
 // ── Alternatives helpers ───────────────────────────────────────────────────
 const stripMd = (text: string) =>
