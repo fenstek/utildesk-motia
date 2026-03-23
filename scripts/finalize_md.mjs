@@ -123,12 +123,21 @@ function upsertFrontmatter(md, kv){
   md = md.replace(/{{#if[^}]*}}/g, "");
   md = md.replace(/{{\/if}}/g, "");
 
-  // Replace AFFILIATE placeholder or remove the whole line
+  // Replace URL placeholders or remove the whole line
+  if (official_url) {
+    md = md.replace(/{{OFFICIAL_URL}}/g, official_url);
+  } else {
+    md = md.replace(/^.*{{OFFICIAL_URL}}.*$/gm, "");
+  }
+
   if (affiliate_url) {
     md = md.replace(/{{AFFILIATE_URL}}/g, affiliate_url);
   } else {
     md = md.replace(/^.*{{AFFILIATE_URL}}.*$/gm, "");
-    // also remove a "Zum Anbieter:" line if it exists without placeholder
+  }
+
+  // If no official URL exists, remove stale "Zum Anbieter" markdown lines from template content.
+  if (!official_url) {
     md = md.replace(/^.*Zum Anbieter:.*$/gmi, "");
   }
 
