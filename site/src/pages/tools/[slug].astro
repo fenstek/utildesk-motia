@@ -69,8 +69,8 @@ const ensureInlineProviderLink = (input: string, visibleUrl: string, targetUrl: 
 
   const cleanedInput = input
     .replace(/<div[^>]*class="inline-provider-link"[^>]*>[\s\S]*?<\/div>/gi, "")
-    .replace(/<p[^>]*>[\s\S]*?<strong>\s*Zum Anbieter:\s*<\/strong>[\s\S]*?<\/p>/gi, "")
-    .replace(/<p[^>]*>[\s\S]*?<strong>\s*(?:Affiliate-Link:|Linkziel:)\s*<\/strong>[\s\S]*?<\/p>/gi, "")
+    .replace(/<p[^>]*>[\s\S]*?Zum Anbieter:[\s\S]*?<\/p>/gi, "")
+    .replace(/<p[^>]*>[\s\S]*?(?:Affiliate-Link:|Linkziel:)[\s\S]*?<\/p>/gi, "")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 
