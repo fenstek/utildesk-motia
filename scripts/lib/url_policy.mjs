@@ -114,14 +114,19 @@ export function hasRedirectorQuery(search, host) {
 
 // ─── Too-generic root hosts (v2.5 hard block) ────────────────────────────────
 // Some hosting platforms are valid for deep links but not for root/shallow URLs.
-// e.g. huggingface.co/SingleOrg (1 segment) is just an org profile — too generic.
-// A proper model/project page needs at least 2 segments: /<org>/<model>.
+// e.g. github.com/org (1 segment) is just an org profile — too generic.
+// A proper repo page needs at least 2 segments: /<org>/<repo>.
+// Exception: huggingface.co root is a valid platform home for the Hugging Face
+// product row, so only shallow subpaths remain blocked there.
 
 export const TOO_GENERIC_ROOT_HOSTS = new Map([
   // [hostname, minRequiredPathSegments]
-  ['huggingface.co', 2], // need /<org>/<model>
   ['github.com',     2], // need /<org>/<repo>
   ['gitlab.com',     2], // need /<org>/<repo>
+]);
+
+export const TOO_GENERIC_ROOT_EXACT_ALLOWLIST = new Set([
+  'https://huggingface.co/',
 ]);
 
 /**
@@ -320,6 +325,10 @@ export function validateOfficialUrl(url, { slug = '', title = '' } = {}) {
     host = u.hostname.replace(/^www\./, '').toLowerCase();
     path = u.pathname.toLowerCase();
     search = u.search.toLowerCase();
+    const normalizedExact = `${u.protocol}//${host}${path === '/' ? '/' : path.replace(/\/+$/g, '')}`;
+    if (TOO_GENERIC_ROOT_EXACT_ALLOWLIST.has(normalizedExact)) {
+      return { ok: true, flags };
+    }
   } catch {
     return { ok: false, flags, reason: 'invalid_url' };
   }
@@ -364,4 +373,39 @@ export function validateOfficialUrl(url, { slug = '', title = '' } = {}) {
   }
 
   return { ok: true, flags };
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const tests = [
+    {
+      name: 'huggingface root allowed as platform home',
+      url: 'https://huggingface.co/',
+      opts: { slug: 'hugging-face', title: 'Hugging Face' },
+      expectOk: true,
+    },
+    {
+      name: 'github root still blocked as too generic',
+      url: 'https://github.com/',
+      opts: { slug: 'example-tool', title: 'Example Tool' },
+      expectOk: false,
+      expectReason: 'too_generic_root',
+    },
+  ];
+
+  let failed = 0;
+  for (const test of tests) {
+    const result = validateOfficialUrl(test.url, test.opts);
+    const okMatches = result.ok === test.expectOk;
+    const reasonMatches = !test.expectReason || result.reason === test.expectReason;
+    if (okMatches && reasonMatches) {
+      console.log(`PASS ${test.name}`);
+    } else {
+      failed += 1;
+      console.log(`FAIL ${test.name}: ${JSON.stringify(result)}`);
+    }
+  }
+
+  if (failed > 0) {
+    process.exit(1);
+  }
 }

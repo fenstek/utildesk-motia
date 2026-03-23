@@ -257,6 +257,12 @@ If the resolved hostname does not contain the slug token, a `hostname_mismatch`
 flag is logged (`url_flags:hostname_mismatch`), but the row is **NOT** blocked.
 This allows valid URLs like `huggingface.co` for slug `transformers`.
 
+### Platform root exception
+`https://huggingface.co/` is allowed as a valid platform root for the
+`hugging-face` product row. The generic-root block still applies to other
+hosts such as `github.com/` and to shallow Hugging Face subpaths that are not
+the platform root.
+
 ### Allowed hosts by entity class
 For `library_or_model` entities, the following hosts bypass the hostname-mismatch flag:
 ```
