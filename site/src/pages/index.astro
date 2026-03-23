@@ -6,6 +6,7 @@ import matter from "gray-matter";
 import { resolveLocalLogo } from "../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../lib/favicon";
 import { normalizePriceModel } from "../lib/priceModel";
+import { tagHref } from "../lib/tagRoutes";
 
 // Load tools and build tag frequency map
 const toolsDir = join(process.cwd(), "content", "tools");
@@ -199,7 +200,7 @@ const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
       <div class="tag-cloud home-tags-cloud">
         {visibleTags.map(([tag, count]) => (
           <a
-            href={`/tools/?tag=${encodeURIComponent(tag)}`}
+            href={tagHref(tag)}
             class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
           >
             {tag}
