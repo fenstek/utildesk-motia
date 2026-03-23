@@ -75,3 +75,49 @@ Optional GPT-based chooser for `official_url` as fallback when deterministic URL
 ## Controlled Test
 - Controlled test run: `AUTOGEN_LIMIT=20 USE_GPT_URL=1`.
 - Use only for targeted validation of URL chooser behavior; do not enable as-is in production cron.
+
+---
+
+## Backup And Memory
+
+### Backup
+- Full backup: `bash scripts/backup_project_full.sh`
+- Sheet snapshot only: `node scripts/backup_sheet_snapshot.mjs`
+- Sheet snapshot diagnostics: `node scripts/backup_sheet_snapshot.mjs --diag`
+- Sheet snapshot custom output: `node scripts/backup_sheet_snapshot.mjs --out backups/snapshots/custom_snapshot.json`
+
+### Memory
+- Generate project memory: `node scripts/generate_project_memory.mjs`
+- Update project memory after diffs: `node scripts/update_project_memory.mjs`
+- Review/compress memory: `node scripts/review_project_memory.mjs`
+
+### Sheet QC Pipeline
+- Audit latest snapshot: `node scripts/audit_sheet_snapshot.mjs`
+- Propose safe patch from audit: `node scripts/propose_sheet_patch_from_audit.mjs`
+- Propose deterministic category-only patch from domain mapper: `node scripts/propose_taxonomy_patch.mjs`
+- Propose deterministic official_url patch for URL errors: `node scripts/propose_url_errors_patch.mjs`
+- Propose deterministic tags-only patch for taxonomy mismatch warnings: `node scripts/propose_taxonomy_mismatch_patch.mjs --category AI --limit 25`
+- Propose patch via Codex CLI: `bash scripts/propose_sheet_patch_codex.sh`
+- Validate patch JSON: `node scripts/validate_sheet_patch.mjs --patch backups/snapshots/sheet_patch.proposed.json`
+- Review patch without writing: `node scripts/apply_sheet_patch.mjs --patch backups/snapshots/sheet_patch.proposed.json --dry-run`
+- Apply patch to Sheet: `node scripts/apply_sheet_patch.mjs --patch backups/snapshots/sheet_patch.proposed.json`
+- End-to-end pipeline dry-run: `bash scripts/run_sheet_qc_pipeline.sh`
+- End-to-end pipeline with Codex proposer: `bash scripts/run_sheet_qc_pipeline.sh --proposer=codex`
+- End-to-end pipeline for URL errors: `bash scripts/run_sheet_qc_pipeline.sh --focus=url_errors`
+- End-to-end pipeline apply: `bash scripts/run_sheet_qc_pipeline.sh --proposer=stub --apply`
+
+### Feature Flags
+- `SHEET_PROPOSER=stub|codex` selects the proposer backend for the QC pipeline and the safe autogen orchestrator.
+- `LEGACY_OPENAI_AUTOGEN=1` re-enables the old direct-OpenAI autogen path in `sheet_ai_autogen_9_strict_v2.mjs`.
+
+### Notes
+- Memory summaries are stored under `memory/`.
+- Agent operating rules are stored under `ai-os/`.
+- Backup artifacts are stored under `backups/`.
+- `backup_sheet_snapshot.mjs` reuses the project's existing Google Sheets auth sources and `--diag` prints only presence/missing state, never secrets.
+- Latest pipeline files live in `backups/snapshots/`: snapshot, audit, proposed patch, and apply log.
+- Direct Sheet writes should be funneled through `apply_sheet_patch.mjs` with `--strict` and `--max-changes 50`.
+- `scripts/taxonomy_domain_map.json` is a deterministic domain-to-category allowlist for fixing category taxonomy errors; extend it by adding normalized domains without `www`.
+- `scripts/propose_url_errors_patch.mjs` fixes only deterministic `official_url` errors: `http -> https`, and recovery from explicit URL fields already present in the snapshot.
+- QC eligibility: rows with status `blacklist`/`disabled` and duplicate-or-alias style statuses are skipped by `audit_sheet_snapshot.mjs`, counted in `skipped_*`, and do not block `AUDIT_PASS`.
+- URL policy exception: `https://huggingface.co/` is allowed as a valid platform root for the `hugging-face` row; generic-root blocking remains in place for hosts like `github.com`.
