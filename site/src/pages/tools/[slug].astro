@@ -25,16 +25,19 @@ const provider_url = affiliate_url || official_url || "";
 const escapeRegExp = (value: string) => value.replace(/[.*+?^$|()\[\]{}]/g, "\\$&");
 const linkFirstParagraphMention = (input: string, term: string, url: string) => {
   if (!url || term.trim().length < 4) return input;
-  const paragraphMatch = input.match(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/i);
-  if (!paragraphMatch) return input;
-  const openTag = paragraphMatch[1];
-  const innerHtml = paragraphMatch[2];
-  const closeTag = paragraphMatch[3];
-  if (/<a\b/i.test(innerHtml) || /<code\b/i.test(innerHtml) || /<pre\b/i.test(innerHtml)) return input;
-  const termRegex = new RegExp(escapeRegExp(term), "i");
-  if (!termRegex.test(innerHtml)) return input;
-  const linkedInnerHtml = innerHtml.replace(termRegex, "<a href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + term + "</a>");
-  return input.replace(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/i, openTag + linkedInnerHtml + closeTag);
+  const termRegex = new RegExp("(?<![\\w/>\"])" + escapeRegExp(term) + "(?![\\w/<\"])", "gi");
+  let firstDone = false;
+  return input.replace(/(<(?:p|li|h[2-6])\b[^>]*>)([\s\S]*?)(<\/(?:p|li|h[2-6])>)/gi, (_, open, inner, close) => {
+    if (/<a\b/i.test(inner) || /<code\b/i.test(inner) || /<pre\b/i.test(inner)) return _ ;
+    if (!termRegex.test(inner)) { termRegex.lastIndex = 0; return _; }
+    termRegex.lastIndex = 0;
+    const linked = inner.replace(termRegex, (match) => {
+      if (firstDone) return `<a href="${url}" rel="noopener noreferrer">${match}</a>`;
+      firstDone = true;
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${match}</a>`;
+    });
+    return open + linked + close;
+  });
 };
 
 const localLogo = resolveLocalLogo(slug);
@@ -286,9 +289,11 @@ const softwareApplicationSchema = {
     <!-- Badges -->
     {(category || price_model || tags.length > 0) && (
       <div class="tool-detail-badges">
-        {category && (
+        {category && primaryCategory ? (
+          <a class="badge badge-category" href={`/category/${primaryCategory.slug}/`}>{category}</a>
+        ) : category ? (
           <span class="badge badge-category">{category}</span>
-        )}
+        ) : null}
         {price_model && (
           <span class="badge badge-price">{price_model}</span>
         )}
@@ -310,32 +315,35 @@ const softwareApplicationSchema = {
   <!-- Article Content -->
   <article class="card article">
   <div class="article-body">
-    {logoUrl && provider_url ? (
-      <a class="tool-float-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-        <img src={logoUrl} alt={`${title} favicon`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-      </a>
-    ) : logoUrl ? (
-      <span class="tool-float-logo" aria-hidden="true">
+    {provider_url && (
+      <div class="tool-primary-link">
+        {logoUrl ? (
+          <a class="tool-primary-link-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
+            <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
+          </a>
+        ) : null}
+        <div class="tool-primary-link-text">
+          <span class="tool-primary-link-kicker">Direktlink</span>
+          <a
+            class="tool-primary-link-anchor"
+            href={provider_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={providerCtaLabel}
+          >
+            {providerCtaLabel}
+          </a>
+          <p class="tool-primary-link-note">
+            {affiliate_url ? "Externer Anbieter-Link" : "Offizielle Website"}
+          </p>
+        </div>
+      </div>
+    )}
+    {!provider_url && logoUrl ? (
+      <span class="tool-float-logo">
         <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
       </span>
     ) : null}
-    {provider_url && (
-      <div class="tool-primary-link">
-        <span class="tool-primary-link-kicker">Direktlink</span>
-        <a
-          class="tool-primary-link-anchor"
-          href={provider_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={providerCtaLabel}
-        >
-          {providerCtaLabel}
-        </a>
-        <p class="tool-primary-link-note">
-          {affiliate_url ? "Externer Anbieter-Link" : "Offizielle Website"}
-        </p>
-      </div>
-    )}
 
     <div set:html={articleHtml}></div>
   </div>
@@ -344,7 +352,7 @@ const softwareApplicationSchema = {
   <!-- Alternatives — rendered after article, using exact /tools card markup -->
   {alternativesTop.length > 0 && (
     <section>
-      <h2 style="margin-top: 2.5rem; margin-bottom: 1rem;">Alternativen</h2>
+      <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--on-surface); margin: 2.5rem 0 1rem; letter-spacing: -0.02em;">Alternativen</h2>
       <div class="alt-grid">
         {alternativesTop.map((tool) => (
           <a
@@ -417,20 +425,49 @@ const softwareApplicationSchema = {
 
 <style>
   .tool-primary-link {
-    margin: 1.25rem 0 1.5rem;
-    padding: 1rem 1.1rem;
+    margin: 0 0 1.75rem;
+    padding: 1rem 1.25rem;
     border-radius: 16px;
     border: 1px solid rgba(0,0,0,.10);
     background: rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  .tool-primary-link-logo {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface-container-low);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.07);
+    text-decoration: none;
+  }
+
+  .tool-primary-link-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .tool-primary-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
   .tool-primary-link-kicker {
     display: block;
-    font-size: 0.75rem;
-    letter-spacing: .08em;
+    font-size: 0.72rem;
+    letter-spacing: .1em;
     text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 0.35rem;
+    color: var(--secondary);
   }
 
   .tool-primary-link-anchor {
@@ -438,16 +475,19 @@ const softwareApplicationSchema = {
     font-size: 1.05rem;
     font-weight: 600;
     text-decoration: none;
+    line-height: 1.2;
   }
 
   .tool-primary-link-anchor:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 0.8;
   }
 
   .tool-primary-link-note {
-    margin: 0.35rem 0 0;
-    font-size: 0.92rem;
-    color: var(--text-muted);
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--secondary);
+    line-height: 1.3;
   }
 
   .tool-category-link {
@@ -457,7 +497,7 @@ const softwareApplicationSchema = {
   }
 
   .category-label {
-    color: var(--text-muted);
+    color: var(--secondary);
     margin-right: 8px;
   }
 
@@ -468,7 +508,7 @@ const softwareApplicationSchema = {
   }
 
   .category-link-anchor:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .alt-grid {
