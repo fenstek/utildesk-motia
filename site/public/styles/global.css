@@ -215,7 +215,7 @@ select.search-input { flex: 0 0 auto; width: auto; min-width: 160px; cursor: poi
 .prose ul { padding-left: 1.4rem; margin-bottom: 1rem; }
 .breadcrumb { color: var(--secondary); font-size: 0.9rem; margin-bottom: var(--space-4); opacity: 0.75; }
 .hero-image { border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; }
-.tool-float-logo { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin: 0 0 20px 0; border: 0; background: var(--surface-container-low); box-shadow: none; border-radius: 14px; overflow: hidden; text-decoration: none; vertical-align: top; float: none; }
+.tool-float-logo { float: left; display: block; width: 56px; height: 56px; margin: 4px 20px 12px 0; background: var(--surface-container-low); border: 1px solid rgba(0,0,0,0.07); border-radius: 14px; overflow: hidden; text-decoration: none; }
 .tool-float-logo img { width: 56px; height: 56px; object-fit: contain; display: block; }
 .article-body { display: flow-root; }
 .article-body > div { margin-top: 12px; }
@@ -264,20 +264,10 @@ select.search-input { flex: 0 0 auto; width: auto; min-width: 160px; cursor: poi
 .hero-stitch-accent em {
   font-style: italic;
   display: inline-block;
-  transform: skewX(-6deg);
-  position: relative;
-  z-index: 1;
+  transform: skewX(-8deg);
+  letter-spacing: 0.01em;
 }
-.hero-stitch-swoosh {
-  position: absolute;
-  bottom: -6px;
-  left: -4px;
-  width: calc(100% + 8px);
-  height: 22px;
-  color: var(--primary);
-  opacity: 0.55;
-  pointer-events: none;
-}
+/* swoosh removed */
 .hero-stitch-sub {
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   color: var(--secondary);

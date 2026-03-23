@@ -284,15 +284,6 @@ const softwareApplicationSchema = {
 
   <!-- Tool Header -->
   <div class="tool-detail-header">
-    {logoUrl && provider_url ? (
-      <a class="tool-header-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-        <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-      </a>
-    ) : logoUrl ? (
-      <span class="tool-header-logo" aria-hidden="true">
-        <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-      </span>
-    ) : null}
     <h1 class="tool-detail-title">{title}</h1>
 
     <!-- Badges -->
@@ -324,11 +315,14 @@ const softwareApplicationSchema = {
   <!-- Article Content -->
   <article class="card article">
   <div class="article-body">
-    {false ? (
-      <span style="display:none"></span>
-    ) : null}
-    {false ? (
-      <span style="display:none"></span>
+    {logoUrl && provider_url ? (
+      <a class="tool-float-logo" href={provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
+        <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
+      </a>
+    ) : logoUrl ? (
+      <span class="tool-float-logo">
+        <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
+      </span>
     ) : null}
     {provider_url && (
       <div class="tool-primary-link">
