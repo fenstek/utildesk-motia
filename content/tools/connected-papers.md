@@ -2,7 +2,7 @@
 slug: connected-papers
 title: Connected Papers
 category: AI
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [analytics, automation]
 official_url: "https://www.connectedpapers.com/"
 popularity: 0

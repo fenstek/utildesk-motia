@@ -2,7 +2,7 @@
 slug: microsoft-excel-online
 title: Microsoft Excel Online
 category: Produktivität
-price_model: Je nach Plan kostenfrei oder kostenpflichtig
+price_model: "Freemium"
 tags: [spreadsheet,productivity,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/excel"
 popularity: 0

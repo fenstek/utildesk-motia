@@ -2,7 +2,7 @@
 slug: bandlab
 title: BandLab
 category: AI
-price_model: kostenlos mit optionalen Premium-Features
+price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://www.bandlab.com/"
 popularity: 0

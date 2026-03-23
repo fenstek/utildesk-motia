@@ -2,7 +2,7 @@
 slug: canva-video-editor
 title: Canva Video Editor
 category: Design
-price_model: je nach Plan kostenfrei bis kostenpflichtig
+price_model: "Freemium"
 tags: [video, design, content, marketing]
 official_url: "https://www.canva.com/video-editor/"
 popularity: 0

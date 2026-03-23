@@ -2,7 +2,7 @@
 slug: syllable
 title: Syllable
 category: AI
-price_model: paid
+price_model: "Kostenpflichtig"
 tags: ["automation"]
 official_url: "https://syllable.ai/"
 popularity: 1

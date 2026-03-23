@@ -2,7 +2,7 @@
 slug: "davinci-resolve"
 title: "DaVinci Resolve"
 category: "AI"
-price_model: "Je nach Plan: kostenlos bis kostenpflichtig"
+price_model: "Freemium"
 tags: [video-editing,color-grading,post-production]
 official_url: "https://www.blackmagicdesign.com/products/davinciresolve"
 ---

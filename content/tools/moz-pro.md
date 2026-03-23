@@ -2,7 +2,7 @@
 slug: "moz-pro"
 title: "Moz Pro"
 category: "Marketing & Vertrieb"
-price_model: "Abonnement-basiert"
+price_model: "Abonnement"
 tags: [seo, marketing, analytics]
 official_url: "https://moz.com/products/pro"
 ---

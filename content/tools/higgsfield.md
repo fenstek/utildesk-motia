@@ -2,7 +2,7 @@
 slug: "higgsfield"
 title: "Higgsfield"
 category: "Video"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, video, creative]
 official_url: "https://higgsfield.ai/"
 ---

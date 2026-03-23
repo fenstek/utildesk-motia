@@ -2,7 +2,7 @@
 slug: "meta-ai"
 title: "Meta AI"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai,assistant,chatbot]
 official_url: "https://www.meta.ai/"
 ---

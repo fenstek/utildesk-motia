@@ -2,7 +2,7 @@
 slug: amazon-comprehend
 title: Amazon Comprehend
 category: AI
-price_model: Abrechnung nach Nutzung
+price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, productivity]
 official_url: "https://aws.amazon.com/comprehend/"
 popularity: 0

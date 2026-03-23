@@ -2,7 +2,7 @@
 slug: hugging-face-transformers
 title: Hugging Face Transformers
 category: AI
-price_model: Open Source / Paid Optionen je nach Anbieter
+price_model: "Open Source"
 tags: []
 official_url: "https://huggingface.co/docs/transformers/index"
 popularity: 0

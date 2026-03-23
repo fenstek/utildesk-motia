@@ -2,7 +2,7 @@
 slug: jovian
 title: Jovian
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [education, automation, data, analytics]
 official_url: "https://jovian.com/"
 popularity: 1

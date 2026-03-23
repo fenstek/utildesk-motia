@@ -2,7 +2,7 @@
 slug: zencastr
 title: Zencastr
 category: AI
-price_model: Je nach Plan, meist abonnementbasiert
+price_model: "Abonnement"
 tags: [audio, video, transcription, productivity, automation]
 official_url: "https://zencastr.com/"
 popularity: 1

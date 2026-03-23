@@ -2,7 +2,7 @@
 slug: adalo
 title: Adalo
 category: AI
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [no-code, design, automation, productivity]
 official_url: "https://www.adalo.com/"
 popularity: 2

@@ -2,7 +2,7 @@
 slug: grammarly
 title: Grammarly
 category: Produktivität
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - productivity

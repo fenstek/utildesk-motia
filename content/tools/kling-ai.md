@@ -2,7 +2,7 @@
 slug: "kling-ai"
 title: "Kling AI"
 category: "Video"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, video, creative]
 official_url: "https://klingai.com/global/"
 ---

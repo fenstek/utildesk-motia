@@ -2,7 +2,7 @@
 slug: thunkable
 title: Thunkable
 category: AI
-price_model: Je nach Plan verschieden
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://thunkable.com/"
 popularity: 0

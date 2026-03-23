@@ -2,7 +2,7 @@
 slug: looka
 title: Looka
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://looka.com/'
 affiliate_url: 'https://looka.com/'

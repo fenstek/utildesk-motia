@@ -1054,7 +1054,7 @@ async function main(){
         slug,                  // B slug
         category,              // C category
         cleanTags,             // D tags (normalized, deduped; v2.4 gate applied)
-        'freemium',            // E price_model
+        '',                    // E price_model
         '',                    // F affiliate_url
         status,                // G status (NEW only if url+tags gates pass)
         (`validated:AI qid=${qid} sl=${wd.wikidata_sitelinks} ${cls.reason}${safetyNote ? ' | ' + safetyNote : ''} used_gpt=${urlResolution?.decision?.used_gpt ? '1' : '0'}`).trim(), // H notes

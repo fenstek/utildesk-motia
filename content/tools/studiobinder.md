@@ -2,7 +2,7 @@
 slug: studiobinder
 title: StudioBinder
 category: Audio
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [video, audio, productivity, workflow]
 official_url: "https://www.studiobinder.com/"
 popularity: 0

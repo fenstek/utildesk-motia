@@ -2,7 +2,7 @@
 slug: copilot
 title: Copilot
 category: Developer
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, developer]
 official_url: "https://www.copilot.com/"
 popularity: 2

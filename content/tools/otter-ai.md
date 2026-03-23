@@ -2,7 +2,7 @@
 slug: otter-ai
 title: Otter.ai
 category: Audio
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - audio

@@ -2,7 +2,7 @@
 slug: sas
 title: SAS
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.sas.com/en_us/home.html"
 popularity: 1

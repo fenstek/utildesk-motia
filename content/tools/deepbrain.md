@@ -2,7 +2,7 @@
 slug: deepbrain
 title: DeepBrain
 category: AI
-price_model: je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [automation, data, analytics, productivity]
 official_url: "https://thedeepbrain.com/"
 popularity: 0

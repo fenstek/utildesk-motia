@@ -2,7 +2,7 @@
 slug: clarifai
 title: Clarifai
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["video"]
 official_url: 'http://www.clarifai.com/'
 affiliate_url: 'http://www.clarifai.com/'

@@ -2,7 +2,7 @@
 slug: "textblob"
 title: "TextBlob"
 category: "Produktivität"
-price_model: "Open Source / Kostenlos"
+price_model: "Open Source"
 tags: [nlp, python, library]
 official_url: "https://textblob.readthedocs.io/en/dev/"
 ---

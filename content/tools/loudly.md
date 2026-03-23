@@ -2,7 +2,7 @@
 slug: "loudly"
 title: "Loudly"
 category: "AI"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [music-generation, audio, ai-music]
 official_url: "https://www.loudly.com/"
 ---

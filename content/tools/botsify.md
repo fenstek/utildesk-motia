@@ -2,7 +2,7 @@
 slug: botsify
 title: Botsify
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://botsify.com/"
 popularity: 1

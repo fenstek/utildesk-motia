@@ -2,7 +2,7 @@
 slug: zoho-writer
 title: Zoho Writer
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, writing]
 official_url: "http://zoho.com"
 popularity: 0

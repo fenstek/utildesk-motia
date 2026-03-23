@@ -2,7 +2,7 @@
 slug: kreator
 title: Kreator
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, writing, content, marketing]
 official_url: 
 affiliate_url: 

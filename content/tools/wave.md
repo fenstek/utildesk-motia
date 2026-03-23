@@ -2,7 +2,7 @@
 slug: "wave"
 title: "Wave"
 category: "AI"
-price_model: "Kostenlos mit optionalen kostenpflichtigen Upgrades"
+price_model: "Freemium"
 tags: ["accounting", "finance"]
 official_url: "https://www.waveapps.com/"
 ---

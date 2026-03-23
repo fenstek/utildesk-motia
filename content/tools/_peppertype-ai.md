@@ -2,7 +2,7 @@
 slug: peppertype-ai
 title: Peppertype.ai
 category: AI
-price_model: Je nach Plan, meist Abonnement
+price_model: "Abonnement"
 tags: []
 official_url: "https://www.pepper.inc/"
 popularity: 2

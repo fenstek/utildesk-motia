@@ -2,7 +2,7 @@
 slug: graphcore-ipu
 title: Graphcore IPU
 category: AI
-price_model: je nach Anbieter und Nutzung
+price_model: "Je nach Plan"
 tags: ["data", "analytics", "developer-tools", "chatbot"]
 official_url: "https://www.graphcore.ai/products/ipu"
 popularity: 0

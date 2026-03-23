@@ -2,7 +2,7 @@
 slug: perplexity
 title: Perplexity
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://www.perplexity.ai'
 affiliate_url: 'https://www.perplexity.ai'

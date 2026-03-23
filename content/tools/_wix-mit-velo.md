@@ -2,7 +2,7 @@
 slug: wix-mit-velo
 title: Wix mit Velo
 category: AI
-price_model: Je nach Plan, inklusive kostenloser Basisversion
+price_model: "Je nach Plan"
 tags: []
 official_url: "https://www.wix.com/studio/developers/web-development"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: ink
 title: Ink
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "content", "seo"]
 official_url: "https://ink.ai/"
 created_at: 2026-02-15

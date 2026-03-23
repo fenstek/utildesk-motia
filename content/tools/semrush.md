@@ -2,7 +2,7 @@
 slug: semrush
 title: SEMrush
 category: AI
-price_model: Abonnement-basiert, verschiedene Pläne
+price_model: "Abonnement"
 tags: [marketing, seo, automation, analytics]
 official_url: "https://www.semrush.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: "deepfacelab"
 title: "DeepFaceLab"
 category: "AI"
-price_model: "Kostenlos (Open-Source)"
+price_model: "Open Source"
 tags: [deepfakes, video, open-source]
 official_url: "https://github.com/iperov/DeepFaceLab"
 ---

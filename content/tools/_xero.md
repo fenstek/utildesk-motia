@@ -2,7 +2,7 @@
 slug: xero
 title: Xero
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://www.xero.com/"
 popularity: 0

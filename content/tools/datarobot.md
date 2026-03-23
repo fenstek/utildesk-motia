@@ -2,7 +2,7 @@
 slug: datarobot
 title: DataRobot
 category: AI
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: ["chatbot", "data", "ai", "assistant", "automation"]
 official_url: "https://www.datarobot.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: mailbutler
 title: Mailbutler
 category: AI
-price_model: Je nach Plan, von kostenlos bis Abonnement
+price_model: "Freemium"
 tags: [productivity, automation, marketing]
 official_url: "https://www.mailbutler.io/"
 popularity: 0

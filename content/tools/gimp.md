@@ -2,7 +2,7 @@
 slug: "gimp"
 title: "GIMP"
 category: "Design & Kreativitat"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [design,image,photo]
 official_url: "https://www.gimp.org/downloads/"
 ---

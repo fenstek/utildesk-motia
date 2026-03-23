@@ -2,7 +2,7 @@
 slug: glitch
 title: Glitch
 category: AI
-price_model: Je nach Anbieter/Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://blog.glitch.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: leonardo-ai
 title: Leonardo AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://leonardo.ai'
 affiliate_url: 'https://leonardo.ai'

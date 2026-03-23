@@ -2,7 +2,7 @@
 slug: later
 title: Later
 category: AI
-price_model: "Je nach Plan: kostenlos, Abonnements"
+price_model: "Freemium"
 tags: [automation, marketing]
 official_url: "https://later.com/"
 popularity: 0

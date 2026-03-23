@@ -2,7 +2,7 @@
 slug: "baidu-ai-search"
 title: "Baidu AI Search"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, assistant, search]
 official_url: "https://www.baidu.com/"
 ---

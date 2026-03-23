@@ -2,7 +2,7 @@
 slug: microsoft-azure-speech-to-text
 title: Microsoft Azure Speech to Text
 category: Produktivität
-price_model: Je nach Plan und Nutzung
+price_model: "Je nach Plan"
 tags: [audio, transcription, productivity, automation]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text"
 popularity: 0

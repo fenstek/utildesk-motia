@@ -2,7 +2,7 @@
 slug: invideo
 title: InVideo
 category: Video
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [video,workflow]
 official_url: "https://invideo.io/"
 popularity: 0

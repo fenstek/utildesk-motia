@@ -2,7 +2,7 @@
 slug: llama
 title: LLaMA
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags:
   - chatbot
   - llm

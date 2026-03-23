@@ -2,7 +2,7 @@
 slug: "botpress"
 title: "Botpress"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://botpress.ai"
 created_at: "2026-02-12"

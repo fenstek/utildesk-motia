@@ -2,7 +2,7 @@
 slug: "eclipse-che"
 title: "Eclipse Che"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [cloud-ide, developer-tools, kubernetes]
 official_url: "https://eclipse.dev/che/"
 ---

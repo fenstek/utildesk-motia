@@ -2,7 +2,7 @@
 slug: rapidminer
 title: RapidMiner
 category: AI
-price_model: je nach Plan, meist abonnementbasiert
+price_model: "Abonnement"
 tags: [api, workflow]
 official_url: "https://altair.com/altair-rapidminer"
 popularity: 0

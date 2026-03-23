@@ -2,7 +2,7 @@
 slug: phrasee
 title: Phrasee
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "marketing"]
 official_url: 'http://www.phraseexpress.com/'
 affiliate_url: 'http://www.phraseexpress.com/'

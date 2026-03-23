@@ -2,7 +2,7 @@
 slug: audo
 title: Audo
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["audio"]
 official_url: 'https://www.audo.ai/'
 affiliate_url: 'https://www.audo.ai/'

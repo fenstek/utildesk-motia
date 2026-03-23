@@ -2,7 +2,7 @@
 slug: gitpod
 title: Gitpod
 category: AI
-price_model: Je nach Plan kostenlos, abonnementbasiert
+price_model: "Freemium"
 tags: [automation, coding]
 official_url: "https://www.gitpod.io"
 popularity: 1

@@ -2,7 +2,7 @@
 slug: "reverso-context"
 title: "Reverso Context"
 category: "Produktivität"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [translation, writing, language-learning]
 official_url: "https://context.reverso.net/translation/"
 ---

@@ -2,7 +2,7 @@
 slug: "asana"
 title: "Asana"
 category: "AI"
-price_model: "Je nach Plan kostenpflichtig und teilweise kostenlos"
+price_model: "Je nach Plan"
 tags: [project-management, work-management, collaboration]
 official_url: "https://asana.com/"
 ---

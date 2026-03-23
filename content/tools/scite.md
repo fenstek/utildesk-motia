@@ -2,7 +2,7 @@
 slug: scite
 title: Scite
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://scite.ai'
 affiliate_url: 'https://scite.ai'

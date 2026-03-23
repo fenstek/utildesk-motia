@@ -2,7 +2,7 @@
 slug: wordtune
 title: Wordtune
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "design"]
 official_url: 'https://www.wordtune.com/'
 created_at: "2026-02-14"

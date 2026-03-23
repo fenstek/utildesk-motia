@@ -2,7 +2,7 @@
 slug: "sockeye"
 title: "Sockeye"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [translation, nmt, deep-learning]
 official_url: "https://awslabs.github.io/sockeye/"
 ---

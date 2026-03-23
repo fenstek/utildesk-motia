@@ -2,7 +2,7 @@
 slug: "freefileconvert"
 title: "FreeFileConvert"
 category: "AI"
-price_model: "kostenlos / je nach Nutzung kostenpflichtige Optionen"
+price_model: "Freemium"
 tags: [file-conversion,productivity,online-tools]
 official_url: "https://freefileconvert.com/"
 ---

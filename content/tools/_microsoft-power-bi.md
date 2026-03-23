@@ -2,7 +2,7 @@
 slug: microsoft-power-bi
 title: Microsoft Power BI
 category: AI
-price_model: Je nach Plan, meist Abonnement
+price_model: "Abonnement"
 tags: []
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi"
 disabled: true

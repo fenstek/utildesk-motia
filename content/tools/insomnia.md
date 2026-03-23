@@ -2,7 +2,7 @@
 slug: "insomnia"
 title: "Insomnia"
 category: "Entwickler-Tools"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [api, developer, testing]
 official_url: "https://insomnia.rest/"
 ---

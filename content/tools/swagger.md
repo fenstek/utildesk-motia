@@ -2,7 +2,7 @@
 slug: "swagger"
 title: "Swagger (OpenAPI)"
 category: "Entwickler-Tools"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [api, developer-tools, documentation]
 official_url: "https://swagger.io/"
 ---

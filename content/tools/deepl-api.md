@@ -2,7 +2,7 @@
 slug: "deepl-api"
 title: "DeepL API"
 category: "Produktivität"
-price_model: "Je nach Nutzungsplan und Anbieter"
+price_model: "Nutzungsbasiert"
 tags: [translation, api, developers]
 official_url: "https://www.deepl.com/en/products/api"
 ---

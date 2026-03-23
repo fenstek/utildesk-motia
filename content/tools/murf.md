@@ -2,7 +2,7 @@
 slug: murf
 title: Murf
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "audio"]
 official_url: 'https://murf.ai/'
 created_at: "2026-02-13"

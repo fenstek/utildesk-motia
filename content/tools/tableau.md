@@ -2,7 +2,7 @@
 slug: tableau
 title: Tableau
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, analytics, data-visualization, enterprise, productivity]
 official_url: "https://www.tableau.com/"
 popularity: 1

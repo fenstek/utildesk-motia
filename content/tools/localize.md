@@ -2,7 +2,7 @@
 slug: localize
 title: Localize
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, translation, workflow]
 official_url: "https://localize.io/"
 popularity: 0

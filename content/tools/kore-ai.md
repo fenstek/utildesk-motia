@@ -2,7 +2,7 @@
 slug: "kore-ai"
 title: "Kore.ai"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [conversational-ai, chatbots, enterprise-ai]
 official_url: "https://www.kore.ai/"
 ---

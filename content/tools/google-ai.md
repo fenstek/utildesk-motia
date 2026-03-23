@@ -2,7 +2,7 @@
 slug: google-ai
 title: Google AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "http://ai.google"
 popularity: 0

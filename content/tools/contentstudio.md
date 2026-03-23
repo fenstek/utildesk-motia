@@ -2,7 +2,7 @@
 slug: "contentstudio"
 title: "ContentStudio"
 category: "Audio"
-price_model: "Je nach Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [social-media,content-marketing,scheduling]
 official_url: "https://contentstudio.io/"
 ---

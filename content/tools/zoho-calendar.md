@@ -2,7 +2,7 @@
 slug: "zoho-calendar"
 title: "Zoho Calendar"
 category: "AI"
-price_model: "Je nach Plan kostenfrei oder kostenpflichtig"
+price_model: "Freemium"
 tags: [calendar, scheduling, productivity]
 official_url: "https://www.zoho.com/de/calendar/"
 ---

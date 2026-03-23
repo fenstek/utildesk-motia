@@ -2,7 +2,7 @@
 slug: pixlr
 title: Pixlr
 category: AI
-price_model: Je nach Plan kostenfrei oder abonnementbasiert
+price_model: "Freemium"
 tags: [design, image, automation, productivity]
 official_url: "https://pixlr.com/"
 popularity: 0

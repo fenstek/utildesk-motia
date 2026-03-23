@@ -2,7 +2,7 @@
 slug: aider
 title: Aider
 category: Developer
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [ai, coding, cli, developer]
 official_url: "https://aider.chat/"
 popularity: 1

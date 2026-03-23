@@ -2,7 +2,7 @@
 slug: kodular
 title: Kodular
 category: AI
-price_model: kostenlos mit optionalen Premium-Funktionen
+price_model: "Freemium"
 tags: [no-code, automation, productivity, design, developer-tools]
 official_url: "https://www.kodular.io/"
 popularity: 0

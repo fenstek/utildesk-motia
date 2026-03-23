@@ -2,7 +2,7 @@
 slug: novelai
 title: NovelAI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://novelai.net/'
 created_at: "2026-02-12"

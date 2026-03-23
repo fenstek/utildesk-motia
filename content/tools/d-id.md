@@ -2,7 +2,7 @@
 slug: d-id
 title: D-ID
 category: AI
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [video, automation, marketing, design, content]
 official_url: "https://www.d-id.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: let-s-enhance
 title: Let’s Enhance
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["image", "design"]
 official_url: "https://letsenhance.io/"
 created_at: 2026-02-15

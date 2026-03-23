@@ -2,7 +2,7 @@
 slug: "tableau-prep"
 title: "Tableau Prep"
 category: "AI"
-price_model: "Abonnement-basiert, je nach Plan"
+price_model: "Abonnement"
 tags: [data-preparation, analytics, etl]
 official_url: "https://www.tableau.com/products/prep"
 ---

@@ -2,7 +2,7 @@
 slug: "zapier"
 title: "Zapier"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, devtools, automation]
 official_url: "http://zapier.com"
 created_at: "2026-02-13"

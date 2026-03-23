@@ -2,7 +2,7 @@
 slug: smmry
 title: SMMRY
 category: AI
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [automation, writing, content]
 official_url: "https://smmry.com/"
 popularity: 0

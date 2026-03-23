@@ -3,7 +3,7 @@ title: "{{TOOL_NAME}}"
 slug: "{{SLUG}}"
 category: "{{CATEGORY}}"
 tags: [{{TAGS}}]
-price_model: "{{PRICE_MODEL}}"
+price_model: ""
 ---
 
 # {{TOOL_NAME}}

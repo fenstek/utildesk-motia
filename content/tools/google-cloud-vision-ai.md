@@ -2,7 +2,7 @@
 slug: google-cloud-vision-ai
 title: Google Cloud Vision AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://cloud.google.com/vision"
 popularity: 0

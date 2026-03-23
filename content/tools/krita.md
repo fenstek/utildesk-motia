@@ -2,7 +2,7 @@
 slug: "krita"
 title: "Krita"
 category: "AI"
-price_model: "Kostenlos, Open Source"
+price_model: "Open Source"
 tags: [digital-painting, illustration, creative-tools]
 official_url: "https://krita.org/en/download/krita-desktop"
 ---

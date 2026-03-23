@@ -2,7 +2,7 @@
 slug: ecrett-music
 title: Ecrett Music
 category: Audio
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [audio, productivity, automation]
 official_url: "https://ecrettmusic.com/"
 popularity: 0

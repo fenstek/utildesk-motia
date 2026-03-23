@@ -2,7 +2,7 @@
 slug: claude
 title: Claude
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["ai", "assistant", "automation"]
 official_url: "https://www.claude.ai"
 affiliate_url: "https://www.claude.ai"

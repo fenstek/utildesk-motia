@@ -2,7 +2,7 @@
 slug: "espresso"
 title: "Espresso"
 category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [data, analytics, machine-learning, automation, cloud]
 official_url: "https://espresso.ai/"
 ---

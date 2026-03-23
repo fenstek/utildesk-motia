@@ -2,7 +2,7 @@
 slug: pillar
 title: Pillar
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai,assistant,productivity,automation,data]
 official_url: "https://www.pillar.io/"
 popularity: 0

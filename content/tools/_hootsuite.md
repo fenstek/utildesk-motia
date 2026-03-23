@@ -2,7 +2,7 @@
 slug: hootsuite
 title: Hootsuite
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [design, workflow]
 official_url: "https://www.hootsuite.com/"
 popularity: 0

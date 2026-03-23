@@ -2,7 +2,7 @@
 slug: "inciteful"
 title: "Inciteful"
 category: "AI"
-price_model: "Je nach Anbieter/Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [research, citation-analysis, literature-review]
 official_url: "https://incitefulmed.com/academic/"
 ---

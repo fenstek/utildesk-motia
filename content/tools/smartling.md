@@ -2,7 +2,7 @@
 slug: smartling
 title: Smartling
 category: AI
-price_model: Je nach Plan variabel
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.smartling.com/"
 popularity: 0

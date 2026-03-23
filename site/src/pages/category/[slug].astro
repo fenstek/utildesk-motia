@@ -6,6 +6,7 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
+import { normalizePriceModel } from "../../lib/priceModel";
 
 export async function getStaticPaths() {
   return CATEGORIES.map((cat) => ({
@@ -74,7 +75,7 @@ const toolsData = await Promise.all(
     const toolSlug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? toolSlug);
     const cat = data.category ? String(data.category) : null;
-    const priceModel = data.price_model ? String(data.price_model) : null;
+    const priceModel = normalizePriceModel(data.price_model);
     const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
     const providerUrl = data.affiliate_url ? String(data.affiliate_url) : data.official_url ? String(data.official_url) : null;
 

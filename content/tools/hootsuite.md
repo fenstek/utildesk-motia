@@ -2,7 +2,7 @@
 slug: hootsuite
 title: Hootsuite
 category: AI
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [social-media, marketing, analytics, workflow, automation]
 official_url: "https://www.hootsuite.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: trello-mit-butler
 title: Trello mit Butler
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://trello.com/butler"
 popularity: 1

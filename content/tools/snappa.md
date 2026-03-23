@@ -2,7 +2,7 @@
 slug: snappa
 title: Snappa
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design", "image", "social-media"]
 official_url: "https://snappa.com/"
 popularity: 0

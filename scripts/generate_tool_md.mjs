@@ -3,6 +3,7 @@ import path from "node:path";
 import process from "node:process";
 import "dotenv/config";
 import OpenAI from "openai";
+import { CANONICAL_PRICE_MODELS, normalizePriceModel } from "./lib/price_model_policy.mjs";
 
 function must(v, name) {
   if (!v) throw new Error(`Нет ${name} в .env`);
@@ -44,6 +45,7 @@ async function main() {
   const tool = JSON.parse(fs.readFileSync(inputPath, "utf8"));
   const topic = tool.topic;
   const slug = tool.slug || safeSlug(topic);
+  const priceModel = normalizePriceModel(tool.price_model || "");
 
   const template = loadTemplate();
 
@@ -56,7 +58,7 @@ async function main() {
 - Slug: ${slug}
 - Category: ${tool.category}
 - Tags: ${tool.tags}
-- Price model: ${tool.price_model}
+- Price model: ${priceModel}
 - Affiliate URL: ${tool.affiliate_url || ""}
 
 ТРЕБОВАНИЯ:
@@ -64,6 +66,7 @@ async function main() {
 - Длина: 900–1400 слов
 - Структура: H1, краткое intro, блок "Für wen geeignet", "Hauptfunktionen" (список), "Vorteile/Nachteile", "Preise", "Alternativen" (3–5), "FAQ" (5–8).
 - Без выдуманных фактов: если не уверен — формулируй обобщённо (например "je nach Anbieter/Plan").
+- Если в frontmatter или в тексте упоминается Preis/Preismodell, используй только канонические формулировки: ${CANONICAL_PRICE_MODELS.join(", ")}.
 - Вставь affiliate ссылку только как placeholder: {{AFFILIATE_URL}} (если ссылки нет — оставь пустым).
 - Верни ОДИН готовый Markdown документ.
 

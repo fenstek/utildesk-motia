@@ -2,7 +2,7 @@
 slug: "ubersuggest"
 title: "Ubersuggest"
 category: "AI"
-price_model: "Je nach Plan kostenpflichtig mit kostenlosen Basisfunktionen"
+price_model: "Je nach Plan"
 tags: [seo, keyword-research, marketing]
 official_url: "https://neilpatel.com/ubersuggest/"
 ---

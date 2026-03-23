@@ -2,7 +2,7 @@
 slug: ibm-watson-natural-language-understanding
 title: IBM Watson Natural Language Understanding
 category: AI
-price_model: Je nach Nutzungsvolumen und Plan
+price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, api]
 official_url: "https://www.ibm.com/products/natural-language-understanding"
 popularity: 0

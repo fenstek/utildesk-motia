@@ -2,7 +2,7 @@
 slug: character-ai
 title: Character AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot"]
 official_url: 'https://character.ai/'
 affiliate_url: 'https://character.ai/'

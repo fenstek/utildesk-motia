@@ -2,7 +2,7 @@
 slug: "google-assistant"
 title: "Google Assistant"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://assistant.google.com/"
 ---

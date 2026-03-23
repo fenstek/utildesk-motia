@@ -2,7 +2,7 @@
 slug: whisper
 title: Whisper
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "writing"]
 official_url: "https://openai.com/research/whisper"
 affiliate_url: "https://openai.com/research/whisper"

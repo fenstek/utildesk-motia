@@ -2,7 +2,7 @@
 title: Domo
 slug: domo
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design", "automation", "data"]
 official_url: 'https://www.domo.com/'
 created_at: "2026-02-13"

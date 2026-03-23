@@ -2,7 +2,7 @@
 slug: quirkos
 title: Quirkos
 category: AI
-price_model: je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: [design, workflow]
 official_url: "https://www.quirkos.com/"
 popularity: 0

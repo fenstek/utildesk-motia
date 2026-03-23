@@ -2,7 +2,7 @@
 slug: lensa
 title: Lensa
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://lensa.app/'
 affiliate_url: 'https://lensa.app/'

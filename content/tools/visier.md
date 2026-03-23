@@ -2,7 +2,7 @@
 slug: visier
 title: Visier
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [automation, data, analytics]
 official_url: "https://www.visier.com/"
 popularity: 0

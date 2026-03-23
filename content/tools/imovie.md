@@ -2,7 +2,7 @@
 slug: "imovie"
 title: "iMovie"
 category: "AI"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [video-editing, apple, consumer-video]
 official_url: "https://support.apple.com/imovie"
 ---

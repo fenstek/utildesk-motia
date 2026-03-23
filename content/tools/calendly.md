@@ -2,7 +2,7 @@
 slug: "calendly"
 title: "Calendly"
 category: "Produktivitat"
-price_model: "Freemium, Abonnementmodelle"
+price_model: "Freemium"
 tags: [meeting, workflow, productivity]
 official_url: "https://calendly.com/"
 ---

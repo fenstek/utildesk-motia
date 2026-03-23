@@ -2,7 +2,7 @@
 slug: "google-scholar"
 title: "Google Scholar"
 category: "AI"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [research, academic-search, citations]
 official_url: "https://scholar.google.com/"
 ---

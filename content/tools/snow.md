@@ -2,7 +2,7 @@
 slug: "snow"
 title: "Snow"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, image]
 official_url: "https://www.snow.me/"
 ---

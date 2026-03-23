@@ -2,7 +2,7 @@
 slug: sisense
 title: Sisense
 category: AI
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.sisense.com/"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: lex
 title: Lex
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, writing, productivity, creative]
 official_url: "https://lex.page/"
 popularity: 1

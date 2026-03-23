@@ -2,7 +2,7 @@
 slug: chatterbot
 title: ChatterBot
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://chatterbot.ai/"
 popularity: 0

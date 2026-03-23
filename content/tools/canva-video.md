@@ -2,7 +2,7 @@
 slug: canva-video
 title: Canva Video
 category: Design
-price_model: Je nach Plan kostenlos oder kostenpflichtig
+price_model: "Freemium"
 tags: [ai, video, design]
 official_url: "https://www.canva.com/video-editor/"
 popularity: 0

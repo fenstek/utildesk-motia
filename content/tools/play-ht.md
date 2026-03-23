@@ -2,7 +2,7 @@
 slug: play-ht
 title: Play.ht
 category: Audio
-price_model: Je nach Anbieter/Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [audio, api, content, developer-tools]
 official_url: "https://play.ht/"
 popularity: 0

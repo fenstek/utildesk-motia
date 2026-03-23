@@ -2,7 +2,7 @@
 slug: narrative-science
 title: Narrative Science
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["ai", "assistant", "automation"]
 official_url: 'http://narrativescience.com'
 affiliate_url: 'http://narrativescience.com'

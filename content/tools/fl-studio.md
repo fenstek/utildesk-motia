@@ -2,7 +2,7 @@
 slug: fl-studio
 title: FL Studio
 category: Audio
-price_model: Je nach Lizenzvariante
+price_model: "Je nach Plan"
 tags: [audio, workflow]
 official_url: "https://www.image-line.com/"
 popularity: 1

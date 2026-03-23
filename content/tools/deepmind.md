@@ -2,7 +2,7 @@
 slug: deepmind
 title: DeepMind
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["data", "automation"]
 official_url: 'https://deepmind.google/'
 affiliate_url: 'https://deepmind.google/'

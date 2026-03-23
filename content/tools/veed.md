@@ -2,7 +2,7 @@
 slug: veed
 title: Veed
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.veed.io/"
 popularity: 3

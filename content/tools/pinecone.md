@@ -2,7 +2,7 @@
 slug: pinecone
 title: Pinecone
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["automation"]
 official_url: 'https://www.pinecone.io/'
 affiliate_url: 'https://www.pinecone.io/'

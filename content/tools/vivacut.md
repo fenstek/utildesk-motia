@@ -2,7 +2,7 @@
 slug: "vivacut"
 title: "VivaCut"
 category: "Video"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, video]
 official_url: "https://www.vivacut.com/"
 ---

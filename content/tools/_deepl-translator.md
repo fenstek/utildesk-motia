@@ -2,7 +2,7 @@
 slug: deepl-translator
 title: DeepL Translator
 category: Produktivität
-price_model: Je nach Plan kostenlos und kostenpflichtig
+price_model: "Freemium"
 tags: [translation, writing, productivity]
 official_url: "https://www.deepl.com/en/translator"
 disabled: true

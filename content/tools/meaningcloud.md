@@ -2,7 +2,7 @@
 slug: meaningcloud
 title: MeaningCloud
 category: AI
-price_model: Je nach Anbieter und Plan
+price_model: "Je nach Plan"
 tags: [api, analytics]
 official_url: "https://www.meaningcloud.com/"
 popularity: 1

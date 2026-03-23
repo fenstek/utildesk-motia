@@ -2,7 +2,7 @@
 slug: "respeecher"
 title: "Respeecher"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai,audio]
 official_url: "https://www.respeecher.com/"
 created_at: "2026-02-14"

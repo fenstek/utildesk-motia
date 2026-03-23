@@ -2,7 +2,7 @@
 slug: codeium
 title: Codeium
 category: Developer
-price_model: Je nach Anbieter/Plan
+price_model: "Je nach Plan"
 tags: []
 official_url: "https://windsurf.com/"
 popularity: 0

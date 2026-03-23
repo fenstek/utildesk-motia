@@ -2,7 +2,7 @@
 slug: "deepnote"
 title: "Deepnote"
 category: "AI"
-price_model: "Je nach Plan kostenlos bis abonnementbasiert"
+price_model: "Freemium"
 tags: [notebooks,data-science,collaboration]
 official_url: "https://deepnote.com/"
 ---

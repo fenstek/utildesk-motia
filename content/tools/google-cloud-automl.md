@@ -2,7 +2,7 @@
 slug: google-cloud-automl
 title: Google Cloud AutoML
 category: AI
-price_model: Variabel je nach Nutzung und Modell
+price_model: "Nutzungsbasiert"
 tags: [automation, workflow]
 official_url: "https://ai.google/build/"
 popularity: 0

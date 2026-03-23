@@ -2,7 +2,7 @@
 slug: "hive"
 title: "Hive"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [project-management, collaboration, workflow]
 official_url: "https://hive.com/"
 ---

@@ -2,7 +2,7 @@
 slug: ai21-studio
 title: AI21 Studio
 category: Audio
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [writing, content, automation, productivity, api]
 official_url: "https://www.ai21.com/"
 popularity: 0

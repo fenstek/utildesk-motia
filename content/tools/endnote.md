@@ -2,7 +2,7 @@
 slug: "endnote"
 title: "EndNote"
 category: "AI"
-price_model: "Je nach Lizenzmodell, meist Abonnement oder Einmalzahlung"
+price_model: "Einmalzahlung"
 tags: [reference-manager,citations,research]
 official_url: "https://endnote.com/de/?"
 ---

@@ -2,7 +2,7 @@
 slug: microsoft-azure-cognitive-services
 title: Microsoft Azure Cognitive Services
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["education", "automation"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services"
 popularity: 0

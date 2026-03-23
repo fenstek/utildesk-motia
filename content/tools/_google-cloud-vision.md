@@ -2,7 +2,7 @@
 slug: google-cloud-vision
 title: Google Cloud Vision
 category: AI
-price_model: Variabel, je nach Nutzung
+price_model: "Nutzungsbasiert"
 tags: []
 official_url: "https://cloud.google.com/vision"
 popularity: 0

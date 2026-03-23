@@ -2,7 +2,7 @@
 slug: telescope
 title: Telescope
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai,assistant,automation]
 official_url: "https://telescope.com/"
 popularity: 1

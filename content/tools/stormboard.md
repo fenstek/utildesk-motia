@@ -2,7 +2,7 @@
 slug: "stormboard"
 title: "Stormboard"
 category: "Produktivitat"
-price_model: "Je nach Plan kostenpflichtig und kostenlos verfügbar"
+price_model: "Je nach Plan"
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://stormboard.com/home"
 ---

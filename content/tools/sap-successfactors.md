@@ -2,7 +2,7 @@
 slug: "sap-successfactors"
 title: "SAP SuccessFactors"
 category: "AI"
-price_model: "Je nach Anbieter und Plan unterschiedlich"
+price_model: "Je nach Plan"
 tags: [hr, hcm, talent-management]
 official_url: "https://www.sap.com/products/hcm/what-is-sap-successfactors.html"
 ---

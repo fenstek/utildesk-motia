@@ -2,7 +2,7 @@
 slug: "appsheet"
 title: "AppSheet"
 category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+price_model: "Je nach Plan"
 tags: [no-code, app-development, workflow]
 official_url: "https://about.appsheet.com/home/"
 ---

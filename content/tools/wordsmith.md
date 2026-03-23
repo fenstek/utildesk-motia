@@ -2,7 +2,7 @@
 slug: wordsmith
 title: Wordsmith
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://www.wordsmith.ai/'
 affiliate_url: 'https://www.wordsmith.ai/'

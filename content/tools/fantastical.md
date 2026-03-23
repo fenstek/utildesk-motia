@@ -2,7 +2,7 @@
 slug: "fantastical"
 title: "Fantastical"
 category: "AI"
-price_model: "Je nach Plan und Anbieter unterschiedlich"
+price_model: "Je nach Plan"
 tags: [calendar, scheduling, productivity]
 official_url: "https://flexibits.com/fantastical"
 ---

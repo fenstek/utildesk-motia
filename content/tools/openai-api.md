@@ -2,7 +2,7 @@
 slug: openai-api
 title: OpenAI API
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags:
   - ai
   - devtools

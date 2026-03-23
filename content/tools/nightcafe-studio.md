@@ -2,7 +2,7 @@
 slug: nightcafe-studio
 title: NightCafe Studio
 category: Audio
-price_model: freemium
+price_model: "Freemium"
 tags: [ai,audio]
 official_url: "https://creator.nightcafe.studio/"
 popularity: 0

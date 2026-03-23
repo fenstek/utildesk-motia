@@ -2,7 +2,7 @@
 slug: "wink"
 title: "Wink"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, image]
 official_url: "https://wink.cn/not-supported"
 ---

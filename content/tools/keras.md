@@ -2,7 +2,7 @@
 slug: keras
 title: Keras
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, data, developer-tools, automation]
 official_url: "https://keras.io/"
 popularity: 0

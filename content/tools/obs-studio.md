@@ -2,7 +2,7 @@
 slug: obs-studio
 title: OBS Studio
 category: Video
-price_model: kostenlos
+price_model: "Kostenlos"
 tags: [video, streaming, audio]
 official_url: "https://obsproject.com/"
 popularity: 0

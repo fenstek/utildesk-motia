@@ -2,7 +2,7 @@
 slug: ginger
 title: Ginger
 category: AI
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [writing, productivity, automation, assistant]
 official_url: "https://www.gingersoftware.com/"
 popularity: 0

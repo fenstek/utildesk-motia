@@ -2,7 +2,7 @@
 slug: thunkable
 title: Thunkable
 category: AI
-price_model: je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [no-code, automation, productivity, design, education]
 official_url: "https://thunkable.com/"
 popularity: 0

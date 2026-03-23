@@ -2,7 +2,7 @@
 slug: chatterbot
 title: ChatterBot
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [chatbot, coding, developer-tools, api]
 official_url: "https://github.com/gunthercox/ChatterBot"
 popularity: 0

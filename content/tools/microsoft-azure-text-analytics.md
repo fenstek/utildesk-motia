@@ -2,7 +2,7 @@
 slug: microsoft-azure-text-analytics
 title: Microsoft Azure Text Analytics
 category: AI
-price_model: Je nach Plan und Nutzung variabel
+price_model: "Je nach Plan"
 tags: [ai, nlp, api]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
 popularity: 0

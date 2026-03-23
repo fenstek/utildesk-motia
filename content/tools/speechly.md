@@ -2,7 +2,7 @@
 slug: "speechly"
 title: "Speechly"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai,audio]
 official_url: "https://speechly.ai/home"
 created_at: "2026-02-15"

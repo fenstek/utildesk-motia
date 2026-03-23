@@ -2,7 +2,7 @@
 slug: kuki-ai
 title: Kuki AI
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai]
 official_url: "https://www.kuki.ai/"
 popularity: 1

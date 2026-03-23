@@ -2,7 +2,7 @@
 slug: filmora
 title: Filmora
 category: Audio & Video
-price_model: Je nach Plan und Anbieter unterschiedlich
+price_model: "Je nach Plan"
 tags: [video, editing, audio]
 official_url: "https://filmora.wondershare.com/"
 popularity: 1

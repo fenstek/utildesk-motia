@@ -2,7 +2,7 @@
 slug: openai-gpt-agents
 title: OpenAI GPT Agents
 category: AI
-price_model: Je nach Anbieter und Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [assistant, workflow]
 official_url: "https://platform.openai.com/docs/agents"
 popularity: 0

@@ -2,7 +2,7 @@
 slug: bonsai
 title: Bonsai
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://bonsai.com/"
 popularity: 1

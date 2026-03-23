@@ -2,7 +2,7 @@
 slug: "google-labs"
 title: "Google Labs"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai,data-science,creative]
 official_url: "https://labs.google/"
 ---

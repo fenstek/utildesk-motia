@@ -2,7 +2,7 @@
 slug: openai-chatgpt
 title: OpenAI ChatGPT
 category: AI
-price_model: Je nach Anbieter/Plan meist Freemium mit kostenpflichtigen Optionen
+price_model: "Freemium"
 tags: [assistant, chatbot, writing, productivity, coding]
 official_url: "https://chatgpt.com/overview"
 popularity: 0

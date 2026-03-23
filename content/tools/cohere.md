@@ -2,7 +2,7 @@
 slug: cohere
 title: Cohere
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://cohere.com/"
 popularity: 0

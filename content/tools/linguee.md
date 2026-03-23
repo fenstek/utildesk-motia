@@ -2,7 +2,7 @@
 slug: linguee
 title: Linguee
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://www.linguee.com/'
 created_at: "2026-02-14"

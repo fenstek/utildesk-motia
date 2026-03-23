@@ -2,7 +2,7 @@
 slug: gmelius
 title: Gmelius
 category: AI
-price_model: Abonnement-basierte Preisgestaltung
+price_model: "Abonnement"
 tags: [productivity, automation, workflow, crm]
 official_url: "https://gmelius.com/"
 popularity: 0

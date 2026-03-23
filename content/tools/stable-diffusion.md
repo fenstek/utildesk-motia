@@ -2,7 +2,7 @@
 slug: stable-diffusion
 title: Stable Diffusion
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["ai", "image"]
 official_url: "https://stability.ai/stable-diffusion"
 affiliate_url: "https://stability.ai/stable-diffusion"

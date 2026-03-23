@@ -2,7 +2,7 @@
 slug: visual-studio-intellicode
 title: Visual Studio IntelliCode
 category: Developer
-price_model: Je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [coding,workflow]
 official_url: "https://visualstudio.microsoft.com/services/intellicode/"
 popularity: 0

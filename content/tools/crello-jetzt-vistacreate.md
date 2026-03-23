@@ -2,7 +2,7 @@
 slug: crello-jetzt-vistacreate
 title: Crello (jetzt VistaCreate)
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://create.vista.com/"
 popularity: 0

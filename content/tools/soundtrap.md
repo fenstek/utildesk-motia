@@ -2,7 +2,7 @@
 slug: soundtrap
 title: Soundtrap
 category: Audio
-price_model: Abonnement-basiert
+price_model: "Abonnement"
 tags: [audio, productivity]
 official_url: "https://www.soundtrap.com/home/"
 popularity: 0

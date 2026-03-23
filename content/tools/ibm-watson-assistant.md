@@ -2,7 +2,7 @@
 slug: ibm-watson-assistant
 title: IBM Watson Assistant
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://www.ibm.com/products/watsonx-orchestrate"
 popularity: 0

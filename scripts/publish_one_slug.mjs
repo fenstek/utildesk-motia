@@ -9,6 +9,7 @@ import {
   getPublishGuardDecision,
   REPO_DISABLE_SYNC_STATUSES,
 } from "./lib/publish_status_guards.mjs";
+import { normalizePriceModel } from "./lib/price_model_policy.mjs";
 
 const SPREADSHEET_ID =
   process.env.SPREADSHEET_ID || "1SOlqd_bJdiRlSmcP19mPPzMG9Mhet26gljaYj1G_eGQ";
@@ -118,7 +119,7 @@ function readRow(values, rowIndex, idx) {
     slug: String(row[idx.slug] || "").trim(),
     category: String(row[idx.category] || "").trim(),
     tags: String(row[idx.tags] || "").trim(),
-    price_model: String(row[idx.price_model] || "").trim(),
+    price_model: normalizePriceModel(String(row[idx.price_model] || "").trim()),
     official_url: String(row[idx.official_url] || "").trim(),
     affiliate_url: String(row[idx.affiliate_url] || "").trim(),
     status: String(row[idx.status] || "").trim(),

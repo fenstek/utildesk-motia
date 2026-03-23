@@ -2,7 +2,7 @@
 slug: ai-dungeon
 title: AI Dungeon
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: ["writing", "design"]
 official_url: "https://play.aidungeon.io"
 affiliate_url: "https://play.aidungeon.io"

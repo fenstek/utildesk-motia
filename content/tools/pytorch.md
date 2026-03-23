@@ -2,7 +2,7 @@
 slug: "pytorch"
 title: "PyTorch"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: ["data", "automation"]
 official_url: "https://pytorch.org"
 created_at: "2026-02-11"

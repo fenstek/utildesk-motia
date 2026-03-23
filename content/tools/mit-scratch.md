@@ -2,7 +2,7 @@
 slug: "mit-scratch"
 title: "MIT Scratch"
 category: "AI"
-price_model: "kostenlos"
+price_model: "Kostenlos"
 tags: [coding, education, creative-learning]
 official_url: "https://scratch.mit.edu/"
 ---

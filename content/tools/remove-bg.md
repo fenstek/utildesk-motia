@@ -2,7 +2,7 @@
 slug: "remove-bg"
 title: "Remove.bg"
 category: "Design"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, design, image]
 official_url: "https://www.remove.bg/"
 ---

@@ -2,7 +2,7 @@
 slug: microsoft-azure-bot-service
 title: Microsoft Azure Bot Service
 category: AI
-price_model: Je nach Nutzungsumfang und Plan
+price_model: "Nutzungsbasiert"
 tags: [chatbot, api, automation]
 official_url: "https://azure.microsoft.com/en-us/services/bot-services/"
 popularity: 0

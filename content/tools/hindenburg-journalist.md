@@ -2,7 +2,7 @@
 slug: hindenburg-journalist
 title: Hindenburg Journalist
 category: AI
-price_model: je nach Plan unterschiedlich
+price_model: "Je nach Plan"
 tags: [audio, productivity, automation, workflow]
 official_url: "https://hindenburg.com/"
 popularity: 0

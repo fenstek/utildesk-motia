@@ -2,7 +2,7 @@
 slug: "turboscribe"
 title: "TurboScribe"
 category: "Audio"
-price_model: "freemium"
+price_model: "Freemium"
 tags: [ai, transcription, audio]
 official_url: "https://turboscribe.ai/"
 ---

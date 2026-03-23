@@ -2,7 +2,7 @@
 slug: aws-sagemaker
 title: AWS SageMaker
 category: AI
-price_model: Abhängig von Nutzung und gewähltem Service
+price_model: "Nutzungsbasiert"
 tags: []
 official_url: "https://aws.amazon.com/sagemaker/"
 popularity: 0

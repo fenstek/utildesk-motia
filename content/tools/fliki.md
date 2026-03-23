@@ -2,7 +2,7 @@
 slug: "fliki"
 title: "Fliki"
 category: "AI"
-price_model: "freemium"
+price_model: "Freemium"
 tags: ["video", "audio", "content"]
 official_url: "https://fliki.ai/"
 created_at: "2026-02-15"

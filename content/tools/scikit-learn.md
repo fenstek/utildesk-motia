@@ -2,7 +2,7 @@
 slug: scikit-learn
 title: Scikit-learn
 category: AI
-price_model: freemium
+price_model: "Freemium"
 tags: [data, analytics, coding, developer-tools]
 official_url: "https://scikit-learn.org"
 popularity: 0

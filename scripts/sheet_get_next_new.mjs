@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import process from "node:process";
 import { google } from "googleapis";
+import { normalizePriceModel } from "./lib/price_model_policy.mjs";
 
 /**
  * НАСТРОЙКА — МЕНЯЕШЬ ТОЛЬКО 2 СТРОКИ НИЖЕ
@@ -132,7 +133,7 @@ async function main() {
         slug: String(row[index.slug] || "").trim(),
         category: String(row[index.category] || "").trim(),
         tags: String(row[index.tags] || "").trim(),
-        price_model: String(row[index.price_model] || "").trim(),
+        price_model: normalizePriceModel(String(row[index.price_model] || "").trim()),
         official_url: String(row[index.official_url] || "").trim(),
         affiliate_url: String(row[index.affiliate_url] || "").trim(),
         status: String(row[index.status] || "").trim(),
