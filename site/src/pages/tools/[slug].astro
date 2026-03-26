@@ -387,6 +387,7 @@ const softwareApplicationSchema = {
       </span>
     ) : null}
 
+    {/* Keep the rendered markdown body intact so all sections remain visible. */}
     <div set:html={articleHtml}></div>
   </div>
 </article>
