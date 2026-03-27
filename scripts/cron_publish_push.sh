@@ -79,7 +79,7 @@ if git show-ref --verify --quiet refs/remotes/origin/autobot && \
   if [[ "$LEFT" == "0" && "$RIGHT" -gt 0 ]]; then
     echo "[cron] WARN: origin/autobot behind origin/master (ahead=${LEFT} behind=${RIGHT}) -> resetting autobot to origin/master"
     git checkout -B autobot origin/master
-    retry_cmd 5 git push -f origin autobot || { echo "[cron] ERROR: push autobot failed"; exit 1; }
+    retry_cmd 5 env UTILDESK_ALLOW_DIRECT_AUTOBOT_PUSH=1 git push -f origin autobot || { echo "[cron] ERROR: push autobot failed"; exit 1; }
     echo "[cron] origin/autobot reset complete"
   elif [[ "$LEFT" -gt 0 ]]; then
     echo "[cron] WARN: origin/autobot has local commits (ahead=${LEFT} behind=${RIGHT}) -> DO NOT reset; continue with origin/autobot"
@@ -98,7 +98,7 @@ else
   # remote branch missing (often deleted after merge) -> recreate from origin/master
   echo "[cron] origin/autobot missing -> recreate autobot from origin/master"
   git checkout -B autobot origin/master
-  retry_cmd 5 git push -u origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
+  retry_cmd 5 env UTILDESK_ALLOW_DIRECT_AUTOBOT_PUSH=1 git push -u origin autobot || { echo "[cron] WARNING: push autobot failed"; exit 0; }
 fi
 
 # Optional repo hygiene: disable active tool markdown files when Sheet status
