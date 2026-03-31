@@ -105,12 +105,21 @@ if node "$SCRIPT" $ARGS; then
   if git commit -m "chore: sync popularity from Umami ($(date '+%Y-%m-%d'))" --quiet; then
     echo -e "${GREEN}Changes committed${NC}"
 
-    echo "Pushing to origin/${TARGET_BRANCH}..."
-    if git push origin "HEAD:${TARGET_BRANCH}" --quiet; then
-      echo -e "${GREEN}Changes pushed successfully${NC}"
+    echo "Pushing via wrapper..."
+    if [ "${TARGET_BRANCH}" = "autobot" ]; then
+      if ./scripts/push_autobot_prod.sh origin autobot master HEAD; then
+        echo -e "${GREEN}Changes pushed successfully${NC}"
+      else
+        echo -e "${RED}Failed to push changes${NC}"
+        exit 1
+      fi
     else
-      echo -e "${RED}Failed to push changes${NC}"
-      exit 1
+      if git push origin "HEAD:${TARGET_BRANCH}" --quiet; then
+        echo -e "${GREEN}Changes pushed successfully${NC}"
+      else
+        echo -e "${RED}Failed to push changes${NC}"
+        exit 1
+      fi
     fi
   else
     echo -e "${YELLOW}No changes to commit (git commit returned empty)${NC}"
