@@ -69,11 +69,11 @@
 :root[data-theme="dark"] {
   color-scheme: dark;
   --surface: #101513;
-  --surface-container-low: #18201d;
-  --surface-container: #1d2723;
-  --surface-container-high: #24302b;
-  --surface-container-highest: #2b3833;
-  --surface-container-lowest: #0c1110;
+  --surface-container-low: #1b2521;
+  --surface-container: #212d28;
+  --surface-container-high: #2a3832;
+  --surface-container-highest: #33423b;
+  --surface-container-lowest: #141b19;
   --surface-dim: #0a0f0d;
   --primary: #81d7c7;
   --primary-container: #4ba493;
@@ -187,6 +187,53 @@ main.container { padding-top: 84px; }
 }
 :root[data-theme="dark"] .theme-toggle__dot {
   box-shadow: 0 0 0 4px rgba(129,215,199,0.16);
+}
+
+:root[data-theme="dark"] .tool-card,
+:root[data-theme="dark"] .home-card,
+:root[data-theme="dark"] .tool-hero,
+:root[data-theme="dark"] .prose,
+:root[data-theme="dark"] .card {
+  background: var(--surface-container-lowest);
+  border-color: rgba(139,152,145,0.24);
+}
+
+:root[data-theme="dark"] .tag-filter-item,
+:root[data-theme="dark"] .tag-cloud-item,
+:root[data-theme="dark"] .badge-tag,
+:root[data-theme="dark"] .chip,
+:root[data-theme="dark"] .search-input,
+:root[data-theme="dark"] .tool-card-logo,
+:root[data-theme="dark"] .home-card-img,
+:root[data-theme="dark"] .tool-detail-logo,
+:root[data-theme="dark"] .tool-float-logo,
+:root[data-theme="dark"] .cta,
+:root[data-theme="dark"] .home-tags,
+:root[data-theme="dark"] .section.home-tags,
+:root[data-theme="dark"] .site-footer {
+  background: var(--surface-container-low);
+}
+
+:root[data-theme="dark"] .tag-filter-item,
+:root[data-theme="dark"] .tag-cloud-item,
+:root[data-theme="dark"] .badge-category,
+:root[data-theme="dark"] .badge-tag,
+:root[data-theme="dark"] .search-input,
+:root[data-theme="dark"] .tool-card-logo,
+:root[data-theme="dark"] .home-card-img,
+:root[data-theme="dark"] .tool-detail-logo,
+:root[data-theme="dark"] .tool-float-logo,
+:root[data-theme="dark"] .cta,
+:root[data-theme="dark"] .home-tags,
+:root[data-theme="dark"] .section.home-tags,
+:root[data-theme="dark"] .site-footer {
+  border-color: rgba(139,152,145,0.18);
+}
+
+:root[data-theme="dark"] .tag-filter-item:hover,
+:root[data-theme="dark"] .tag-cloud-item:hover,
+:root[data-theme="dark"] .badge-tag:hover {
+  background: var(--surface-container-high);
 }
 
 /* FOOTER */
