@@ -1,10 +1,11 @@
 ---
-slug: "azure-synapse-analytics"
-title: "Azure Synapse Analytics"
-category: "AI"
-price_model: ""
+slug: azure-synapse-analytics
+title: Azure Synapse Analytics
+category: AI
+price_model: 
 tags: [analytics, data-warehouse, azure]
 official_url: "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+popularity: 0
 ---
 
 # Azure Synapse Analytics

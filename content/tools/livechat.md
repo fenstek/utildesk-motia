@@ -1,10 +1,11 @@
 ---
-slug: "livechat"
-title: "LiveChat"
-category: "AI"
-price_model: "Je nach Plan"
+slug: livechat
+title: LiveChat
+category: AI
+price_model: Je nach Plan
 tags: [customer-support, live-chat, helpdesk]
 official_url: "https://www.livechat.com/"
+popularity: 0
 ---
 
 # LiveChat

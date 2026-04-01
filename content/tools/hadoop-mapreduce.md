@@ -1,10 +1,11 @@
 ---
-slug: "hadoop-mapreduce"
-title: "Hadoop MapReduce"
-category: "AI"
-price_model: "Open Source"
+slug: hadoop-mapreduce
+title: Hadoop MapReduce
+category: AI
+price_model: Open Source
 tags: [big-data, stream-processing, developer-tools]
 official_url: "https://hadoop.apache.org/"
+popularity: 0
 ---
 
 # Hadoop MapReduce

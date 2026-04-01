@@ -1,10 +1,11 @@
 ---
-slug: "litmaps"
-title: "Litmaps"
-category: "Schreiben & Content"
-price_model: "Abonnement"
+slug: litmaps
+title: Litmaps
+category: Schreiben & Content
+price_model: Abonnement
 tags: [research, data, writing]
 official_url: "https://www.litmaps.com/"
+popularity: 0
 ---
 
 # Litmaps

@@ -1,10 +1,11 @@
 ---
-slug: "final-cut-pro"
-title: "Final Cut Pro"
-category: "AI"
-price_model: "Einmalzahlung"
+slug: final-cut-pro
+title: Final Cut Pro
+category: AI
+price_model: Einmalzahlung
 tags: [video-editing, post-production, apple]
 official_url: "https://www.apple.com/final-cut-pro/"
+popularity: 0
 ---
 
 # Final Cut Pro

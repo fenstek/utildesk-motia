@@ -1,10 +1,11 @@
 ---
-slug: "looker-studio"
-title: "Looker Studio"
-category: "Audio"
-price_model: "Kostenlos"
+slug: looker-studio
+title: Looker Studio
+category: Audio
+price_model: Kostenlos
 tags: [analytics, data-visualization, google]
 official_url: "https://lookerstudio.google.com/overview"
+popularity: 0
 ---
 
 # Looker Studio

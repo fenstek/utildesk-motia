@@ -1,10 +1,11 @@
 ---
-slug: "lens-org"
-title: "Lens.org"
-category: "AI"
-price_model: "Freemium"
+slug: lens-org
+title: Lens.org
+category: AI
+price_model: Freemium
 tags: [patent-search, research, analysis]
 official_url: "https://www.lens.org/"
+popularity: 0
 ---
 
 # Lens.org

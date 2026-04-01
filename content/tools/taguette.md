@@ -1,10 +1,11 @@
 ---
-slug: "taguette"
-title: "Taguette"
-category: "Schreiben & Content"
-price_model: "Open Source"
+slug: taguette
+title: Taguette
+category: Schreiben & Content
+price_model: Open Source
 tags: [research, data, writing]
 official_url: "https://www.taguette.org/"
+popularity: 0
 ---
 
 # Taguette

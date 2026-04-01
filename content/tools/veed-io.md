@@ -1,10 +1,11 @@
 ---
-slug: "veed-io"
-title: "Veed.io"
-category: "AI"
-price_model: "Freemium, Abonnement"
+slug: veed-io
+title: Veed.io
+category: AI
+price_model: Freemium, Abonnement
 tags: [video-editing, creator-tools, ai-video]
 official_url: "https://www.veed.io/"
+popularity: 0
 ---
 
 # Veed.io

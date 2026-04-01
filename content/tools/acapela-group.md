@@ -1,10 +1,11 @@
 ---
-slug: "acapela-group"
-title: "Acapela Group"
-category: "AI"
-price_model: "Je nach Plan"
+slug: acapela-group
+title: Acapela Group
+category: AI
+price_model: Je nach Plan
 tags: [text-to-speech, voice, audio]
 official_url: "https://www.acapela-group.com/"
+popularity: 0
 ---
 
 # Acapela Group

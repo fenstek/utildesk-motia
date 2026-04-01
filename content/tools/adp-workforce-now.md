@@ -1,10 +1,11 @@
 ---
-slug: "adp-workforce-now"
-title: "ADP Workforce Now"
-category: "AI"
-price_model: ""
+slug: adp-workforce-now
+title: ADP Workforce Now
+category: AI
+price_model: 
 tags: [payroll, hr, hcm]
 official_url: "https://www.adp.com/what-we-offer/products/adp-workforce-now.aspx"
+popularity: 0
 ---
 
 # ADP Workforce Now

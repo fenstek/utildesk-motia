@@ -1,10 +1,11 @@
 ---
-slug: "spyfu"
-title: "SpyFu"
-category: "Marketing & Vertrieb"
-price_model: "Je nach Plan"
+slug: spyfu
+title: SpyFu
+category: Marketing & Vertrieb
+price_model: Je nach Plan
 tags: [seo, marketing, analytics]
 official_url: "https://www.spyfu.com/"
+popularity: 0
 ---
 
 # SpyFu

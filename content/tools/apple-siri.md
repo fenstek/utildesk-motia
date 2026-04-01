@@ -1,10 +1,11 @@
 ---
-slug: "apple-siri"
-title: "Apple Siri"
-category: "AI"
-price_model: "Kostenlos"
+slug: apple-siri
+title: Apple Siri
+category: AI
+price_model: Kostenlos
 tags: [assistant, voice, ios]
 official_url: "https://www.apple.com/siri/"
+popularity: 0
 ---
 
 # Apple Siri

@@ -1,10 +1,11 @@
 ---
-slug: "mendix"
-title: "Mendix"
-category: "Automatisierung"
-price_model: "Je nach Plan"
+slug: mendix
+title: Mendix
+category: Automatisierung
+price_model: Je nach Plan
 tags: [no-code, automation, developer]
 official_url: "https://www.mendix.com/platform/"
+popularity: 0
 ---
 
 # Mendix

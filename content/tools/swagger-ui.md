@@ -1,10 +1,11 @@
 ---
-slug: "swagger-ui"
-title: "Swagger UI"
-category: "AI"
-price_model: "Open Source"
+slug: swagger-ui
+title: Swagger UI
+category: AI
+price_model: Open Source
 tags: [api, docs, development]
 official_url: "https://swagger.io/"
+popularity: 0
 ---
 
 # Swagger UI

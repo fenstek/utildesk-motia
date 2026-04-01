@@ -2,10 +2,10 @@
 slug: adobe-enhance-speech
 title: Adobe Enhance Speech
 category: Audio
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, audio]
 official_url: "https://podcast.adobe.com/enhance"
-popularity: 1
+popularity: 2
 ---
 
 # Adobe Enhance Speech

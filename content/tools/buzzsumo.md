@@ -1,10 +1,11 @@
 ---
-slug: "buzzsumo"
-title: "BuzzSumo"
-category: "AI"
-price_model: "Je nach Plan"
+slug: buzzsumo
+title: BuzzSumo
+category: AI
+price_model: Je nach Plan
 tags: [content-marketing, seo, research]
 official_url: "https://buzzsumo.com/"
+popularity: 0
 ---
 
 # BuzzSumo

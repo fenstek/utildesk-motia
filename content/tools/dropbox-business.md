@@ -1,10 +1,11 @@
 ---
-slug: "dropbox-business"
-title: "Dropbox Business"
-category: "AI"
-price_model: "Abonnement"
+slug: dropbox-business
+title: Dropbox Business
+category: AI
+price_model: Abonnement
 tags: [file-sharing, collaboration, storage]
 official_url: "https://www.dropbox.com/business"
+popularity: 0
 ---
 
 # Dropbox Business

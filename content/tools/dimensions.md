@@ -1,10 +1,11 @@
 ---
-slug: "dimensions"
-title: "Dimensions"
-category: "AI"
-price_model: "Je nach Plan"
+slug: dimensions
+title: Dimensions
+category: AI
+price_model: Je nach Plan
 tags: [research, publications, analytics]
 official_url: "https://www.dimensions.ai/"
+popularity: 0
 ---
 
 # Dimensions

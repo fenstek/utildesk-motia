@@ -1,10 +1,11 @@
 ---
-slug: "trelby"
-title: "Trelby"
-category: "AI"
-price_model: "Open Source"
+slug: trelby
+title: Trelby
+category: AI
+price_model: Open Source
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://trelby.org/"
+popularity: 0
 ---
 
 # Trelby

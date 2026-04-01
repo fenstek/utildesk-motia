@@ -1,10 +1,11 @@
 ---
-slug: "rightinbox"
-title: "RightInbox"
-category: "AI"
-price_model: "Abonnement"
+slug: rightinbox
+title: RightInbox
+category: AI
+price_model: Abonnement
 tags: [email-productivity, follow-ups, gmail]
 official_url: "https://www.rightinbox.com/"
+popularity: 0
 ---
 
 # RightInbox

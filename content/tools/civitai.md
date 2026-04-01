@@ -1,10 +1,11 @@
 ---
-slug: "civitai"
-title: "Civitai"
-category: "Design"
-price_model: "Freemium"
+slug: civitai
+title: Civitai
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://civitai.com/"
+popularity: 0
 ---
 
 # Civitai

@@ -1,10 +1,11 @@
 ---
-slug: "kayako"
-title: "Kayako"
-category: "AI"
-price_model: "Abonnement"
+slug: kayako
+title: Kayako
+category: AI
+price_model: Abonnement
 tags: [helpdesk, customer-support, saas]
 official_url: "https://kayako.com/"
+popularity: 0
 ---
 
 # Kayako

@@ -1,10 +1,11 @@
 ---
-slug: "bitwig-studio"
-title: "Bitwig Studio"
-category: "Audio"
-price_model: "Je nach Plan"
+slug: bitwig-studio
+title: Bitwig Studio
+category: Audio
+price_model: Je nach Plan
 tags: [music-production,daw,audio]
 official_url: "https://www.bitwig.com/"
+popularity: 0
 ---
 
 # Bitwig Studio

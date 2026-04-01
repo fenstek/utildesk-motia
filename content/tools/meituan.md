@@ -1,10 +1,11 @@
 ---
-slug: "meituan"
-title: "Meituan"
-category: "AI"
-price_model: "Freemium"
+slug: meituan
+title: Meituan
+category: AI
+price_model: Freemium
 tags: [mobile, productivity]
 official_url: "https://www.meituan.com/"
+popularity: 0
 ---
 
 # Meituan

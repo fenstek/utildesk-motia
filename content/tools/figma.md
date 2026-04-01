@@ -1,12 +1,12 @@
 ---
-slug: "figma"
-title: "Figma"
-category: "AI"
-price_model: "Freemium"
+slug: figma
+title: Figma
+category: AI
+price_model: Freemium
 tags: [ai, design]
 official_url: "https://figma.com"
-created_at: "2026-02-12"
-popularity: 0
+created_at: 2026-02-12
+popularity: 1
 ---
 
 

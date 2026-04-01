@@ -1,10 +1,11 @@
 ---
-slug: "audiotool"
-title: "Audiotool"
-category: "Audio"
-price_model: "Freemium"
+slug: audiotool
+title: Audiotool
+category: Audio
+price_model: Freemium
 tags: [music-production,audio,browser-based]
 official_url: "https://www.audiotool.com/"
+popularity: 0
 ---
 
 # Audiotool

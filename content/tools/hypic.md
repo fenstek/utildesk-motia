@@ -1,10 +1,11 @@
 ---
-slug: "hypic"
-title: "Hypic"
-category: "Design"
-price_model: "Freemium"
+slug: hypic
+title: Hypic
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.hypic.app/"
+popularity: 0
 ---
 
 # Hypic

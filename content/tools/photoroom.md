@@ -1,10 +1,11 @@
 ---
-slug: "photoroom"
-title: "PhotoRoom"
-category: "Design"
-price_model: "Freemium"
+slug: photoroom
+title: PhotoRoom
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.photoroom.com/"
+popularity: 0
 ---
 
 # PhotoRoom

@@ -2,10 +2,10 @@
 slug: hugging-face
 title: Hugging Face
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://huggingface.co/"
-popularity: 0
+popularity: 1
 ---
 
 # Hugging Face

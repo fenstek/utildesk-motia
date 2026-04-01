@@ -1,10 +1,11 @@
 ---
-slug: "beautyplus"
-title: "BeautyPlus"
-category: "Design"
-price_model: "Freemium"
+slug: beautyplus
+title: BeautyPlus
+category: Design
+price_model: Freemium
 tags: [ai,design,image]
 official_url: "https://www.beautyplus.com/"
+popularity: 0
 ---
 
 # BeautyPlus

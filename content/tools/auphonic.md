@@ -2,10 +2,10 @@
 slug: auphonic
 title: Auphonic
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [audio, automation, productivity, transcription, video]
 official_url: "https://auphonic.com/"
-popularity: 0
+popularity: 1
 ---
 
 # Auphonic

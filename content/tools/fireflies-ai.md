@@ -1,10 +1,11 @@
 ---
-slug: "fireflies-ai"
-title: "Fireflies.ai"
-category: "AI"
-price_model: "Freemium"
+slug: fireflies-ai
+title: Fireflies.ai
+category: AI
+price_model: Freemium
 tags: [meetings, transcription, notes]
 official_url: "https://fireflies.ai/"
+popularity: 0
 ---
 
 # Fireflies.ai

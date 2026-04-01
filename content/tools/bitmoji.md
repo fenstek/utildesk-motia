@@ -1,10 +1,11 @@
 ---
-slug: "bitmoji"
-title: "Bitmoji"
-category: "AI"
-price_model: "Freemium"
+slug: bitmoji
+title: Bitmoji
+category: AI
+price_model: Freemium
 tags: [avatar, social, mobile]
 official_url: "https://www.bitmoji.com/"
+popularity: 0
 ---
 
 # Bitmoji

@@ -1,10 +1,11 @@
 ---
-slug: "tripactions"
-title: "TripActions"
-category: "AI"
-price_model: "Abonnement"
+slug: tripactions
+title: TripActions
+category: AI
+price_model: Abonnement
 tags: [travel-management, expense-management, saas]
 official_url: "https://navan.com/"
+popularity: 0
 ---
 
 # TripActions

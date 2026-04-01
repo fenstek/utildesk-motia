@@ -1,10 +1,11 @@
 ---
-slug: "appian"
-title: "Appian"
-category: "Automatisierung"
-price_model: "Nutzungsbasiert"
+slug: appian
+title: Appian
+category: Automatisierung
+price_model: Nutzungsbasiert
 tags: [automation, workflow, no-code]
 official_url: "https://appian.com/products/platform/overview"
+popularity: 0
 ---
 
 # Appian

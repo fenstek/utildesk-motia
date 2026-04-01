@@ -1,10 +1,11 @@
 ---
-slug: "apache-flink"
-title: "Apache Flink"
-category: "AI"
-price_model: "Open Source"
+slug: apache-flink
+title: Apache Flink
+category: AI
+price_model: Open Source
 tags: [stream-processing,big-data,developer-tools]
 official_url: "https://flink.apache.org/"
+popularity: 0
 ---
 
 # Apache Flink

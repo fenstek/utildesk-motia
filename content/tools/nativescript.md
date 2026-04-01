@@ -1,10 +1,11 @@
 ---
-slug: "nativescript"
-title: "NativeScript"
-category: "AI"
-price_model: "Open Source"
+slug: nativescript
+title: NativeScript
+category: AI
+price_model: Open Source
 tags: [mobile-development, framework, developer-tools]
 official_url: "https://nativescript.org/"
+popularity: 0
 ---
 
 # NativeScript

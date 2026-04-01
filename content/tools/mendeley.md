@@ -1,10 +1,11 @@
 ---
-slug: "mendeley"
-title: "Mendeley"
-category: "AI"
-price_model: "Freemium"
+slug: mendeley
+title: Mendeley
+category: AI
+price_model: Freemium
 tags: [reference-manager, citations, research]
 official_url: "https://www.mendeley.com/"
+popularity: 0
 ---
 
 # Mendeley

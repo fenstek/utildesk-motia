@@ -1,10 +1,11 @@
 ---
-slug: "imovie"
-title: "iMovie"
-category: "AI"
-price_model: "Kostenlos"
+slug: imovie
+title: iMovie
+category: AI
+price_model: Kostenlos
 tags: [video-editing, apple, consumer-video]
 official_url: "https://support.apple.com/imovie"
+popularity: 0
 ---
 
 # iMovie

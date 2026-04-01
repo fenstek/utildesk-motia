@@ -1,10 +1,11 @@
 ---
-slug: "capcut"
-title: "CapCut"
-category: "Video"
-price_model: "Freemium"
+slug: capcut
+title: CapCut
+category: Video
+price_model: Freemium
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/nl-nl/"
+popularity: 0
 ---
 
 # CapCut

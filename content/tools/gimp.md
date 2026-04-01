@@ -1,10 +1,11 @@
 ---
-slug: "gimp"
-title: "GIMP"
-category: "Design & Kreativitat"
-price_model: "Kostenlos"
+slug: gimp
+title: GIMP
+category: Design & Kreativitat
+price_model: Kostenlos
 tags: [design,image,photo]
 official_url: "https://www.gimp.org/downloads/"
+popularity: 0
 ---
 
 # GIMP

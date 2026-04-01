@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-translator-text-api"
-title: "Microsoft Translator Text API"
-category: "Produktivität"
-price_model: "Nutzungsbasiert"
+slug: microsoft-translator-text-api
+title: Microsoft Translator Text API
+category: Produktivität
+price_model: Nutzungsbasiert
 tags: [translation, api, microsoft-azure]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation-overview"
+popularity: 0
 ---
 
 # Microsoft Translator Text API

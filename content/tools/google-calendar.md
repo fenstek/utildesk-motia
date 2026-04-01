@@ -1,10 +1,11 @@
 ---
-slug: "google-calendar"
-title: "Google Calendar"
-category: "AI"
-price_model: "Freemium"
+slug: google-calendar
+title: Google Calendar
+category: AI
+price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://workspace.google.com/products/calendar/"
+popularity: 0
 ---
 
 # Google Calendar

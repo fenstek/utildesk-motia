@@ -1,10 +1,11 @@
 ---
-slug: "sourcery"
-title: "Sourcery"
-category: "Entwickler-Tools"
-price_model: "Je nach Plan"
+slug: sourcery
+title: Sourcery
+category: Entwickler-Tools
+price_model: Je nach Plan
 tags: [developer,coding,automation]
 official_url: "https://www.sourcery.ai/"
+popularity: 1
 ---
 
 # Sourcery

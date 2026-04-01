@@ -1,10 +1,11 @@
 ---
-slug: "woebot"
-title: "Woebot"
-category: "AI"
-price_model: "Freemium"
+slug: woebot
+title: Woebot
+category: AI
+price_model: Freemium
 tags: [mental-health, chatbot, health-tech]
 official_url: "https://woebothealth.com/"
+popularity: 0
 ---
 
 # Woebot

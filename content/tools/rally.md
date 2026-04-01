@@ -1,10 +1,11 @@
 ---
-slug: "rally"
-title: "Rally"
-category: "AI"
-price_model: ""
+slug: rally
+title: Rally
+category: AI
+price_model: 
 tags: [agile, project-management, enterprise]
 official_url: "https://www.broadcom.com/products/software/value-stream-management/rally"
+popularity: 0
 ---
 
 # Rally

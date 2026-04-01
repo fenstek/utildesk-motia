@@ -1,10 +1,11 @@
 ---
-slug: "ibm-db2-warehouse"
-title: "IBM Db2 Warehouse"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: ibm-db2-warehouse
+title: IBM Db2 Warehouse
+category: AI
+price_model: Individuelles Angebot
 tags: [data-warehouse, analytics, ibm]
 official_url: "https://www.ibm.com/products/db2-warehouse"
+popularity: 0
 ---
 
 # IBM Db2 Warehouse

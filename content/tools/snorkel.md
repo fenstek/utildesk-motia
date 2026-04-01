@@ -2,10 +2,10 @@
 slug: snorkel
 title: Snorkel
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, automation, analytics, open-source]
 official_url: "https://snorkel.ai/"
-popularity: 2
+popularity: 1
 ---
 
 # Snorkel

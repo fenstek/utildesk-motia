@@ -1,10 +1,11 @@
 ---
-slug: "dataiku"
-title: "Dataiku"
-category: "AI"
-price_model: "Je nach Plan"
+slug: dataiku
+title: Dataiku
+category: AI
+price_model: Je nach Plan
 tags: [machine-learning, analytics, data-science]
 official_url: "https://www.dataiku.com/"
+popularity: 0
 ---
 
 # Dataiku

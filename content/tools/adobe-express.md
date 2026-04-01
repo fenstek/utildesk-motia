@@ -2,11 +2,11 @@
 slug: adobe-express
 title: Adobe Express
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["design"]
 official_url: "https://www.adobe.com/express/"
 created_at: 2026-02-12
-popularity: 1
+popularity: 2
 ---
 
 # Adobe Express

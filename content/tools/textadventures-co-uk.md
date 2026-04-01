@@ -2,11 +2,11 @@
 slug: textadventures-co-uk
 title: TextAdventures.co.uk
 category: Produktivitat
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, produktivitat, writing]
 official_url: "https://textadventures.co.uk/"
 created_at: 2026-02-12
-popularity: 2
+popularity: 1
 ---
 
 

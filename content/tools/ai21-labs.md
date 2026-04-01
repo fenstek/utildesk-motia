@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: ["ai", "writing", "creative", "productivity"]
 official_url: "https://www.ai21.com/"
-popularity: 1
+popularity: 0
 ---
 
 # AI21 Labs

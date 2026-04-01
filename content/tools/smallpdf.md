@@ -1,10 +1,11 @@
 ---
-slug: "smallpdf"
-title: "Smallpdf"
-category: "AI"
-price_model: "Freemium"
+slug: smallpdf
+title: Smallpdf
+category: AI
+price_model: Freemium
 tags: [pdf, documents, productivity]
 official_url: "https://smallpdf.com/"
+popularity: 0
 ---
 
 # Smallpdf

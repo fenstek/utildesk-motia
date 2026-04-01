@@ -1,10 +1,11 @@
 ---
-slug: "right-inbox"
-title: "Right Inbox"
-category: "AI"
-price_model: "Freemium"
+slug: right-inbox
+title: Right Inbox
+category: AI
+price_model: Freemium
 tags: [email-productivity, automation, scheduling]
 official_url: "https://www.rightinbox.com/"
+popularity: 0
 ---
 
 # Right Inbox

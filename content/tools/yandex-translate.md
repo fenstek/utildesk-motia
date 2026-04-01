@@ -1,10 +1,11 @@
 ---
-slug: "yandex-translate"
-title: "Yandex.Translate"
-category: "AI"
-price_model: "Freemium"
+slug: yandex-translate
+title: Yandex.Translate
+category: AI
+price_model: Freemium
 tags: [translation, language-tools, writing]
 official_url: "https://translate.yandex.com/showcaptchafast?d=5927AFDE6EC74F60155AA666E0F7FB59C5132E5F5A9F74953827CAEDDA5AB0DB4CDE1049DB5FE1851EC2ECD8B270135247FB778459&retpath=aHR0cHM6Ly90cmFuc2xhdGUueWFuZGV4LmNvbS8__e644c30bc79536f0af9e3a2f844e7831&s=86d5e5eaf6e5778be7495289726ba561"
+popularity: 0
 ---
 
 # Yandex.Translate

@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-translation-api"
-title: "Google Cloud Translation API"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-translation-api
+title: Google Cloud Translation API
+category: AI
+price_model: Nutzungsbasiert
 tags: [translation,api,google-cloud]
 official_url: "https://docs.cloud.google.com/translate/docs/overview"
+popularity: 0
 ---
 
 # Google Cloud Translation API

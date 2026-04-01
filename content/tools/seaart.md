@@ -1,10 +1,11 @@
 ---
-slug: "seaart"
-title: "SeaArt"
-category: "Design"
-price_model: "Freemium"
+slug: seaart
+title: SeaArt
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.seaart.ai/"
+popularity: 0
 ---
 
 # SeaArt

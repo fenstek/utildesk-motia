@@ -1,10 +1,11 @@
 ---
-slug: "salesforce-inbox"
-title: "Salesforce Inbox"
-category: "AI"
-price_model: "Je nach Plan"
+slug: salesforce-inbox
+title: Salesforce Inbox
+category: AI
+price_model: Je nach Plan
 tags: [crm,email-productivity,sales]
 official_url: "https://www.salesforce.com/ap/solutions/mobile/app-suite/inbox/"
+popularity: 0
 ---
 
 # Salesforce Inbox

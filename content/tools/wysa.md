@@ -1,10 +1,11 @@
 ---
-slug: "wysa"
-title: "Wysa"
-category: "AI"
-price_model: "Freemium"
+slug: wysa
+title: Wysa
+category: AI
+price_model: Freemium
 tags: [mental-health, chatbot, health-tech]
 official_url: "https://www.wysa.com/"
+popularity: 0
 ---
 
 # Wysa

@@ -2,10 +2,10 @@
 slug: dedoose
 title: Dedoose
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.dedoose.com/"
-popularity: 0
+popularity: 1
 ---
 
 # Dedoose

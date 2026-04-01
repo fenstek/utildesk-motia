@@ -1,10 +1,11 @@
 ---
-slug: "genspark"
-title: "Genspark"
-category: "AI"
-price_model: "Freemium"
+slug: genspark
+title: Genspark
+category: AI
+price_model: Freemium
 tags: [ai, assistant, research]
 official_url: "https://www.genspark.ai/"
+popularity: 0
 ---
 
 # Genspark

@@ -1,10 +1,11 @@
 ---
-slug: "meta-ai"
-title: "Meta AI"
-category: "AI"
-price_model: "Freemium"
+slug: meta-ai
+title: Meta AI
+category: AI
+price_model: Freemium
 tags: [ai,assistant,chatbot]
 official_url: "https://www.meta.ai/"
+popularity: 0
 ---
 
 # Meta AI

@@ -1,10 +1,11 @@
 ---
-slug: "balsamiq"
-title: "Balsamiq"
-category: "AI"
-price_model: "Je nach Plan"
+slug: balsamiq
+title: Balsamiq
+category: AI
+price_model: Je nach Plan
 tags: [wireframing, ui-design, prototyping]
 official_url: "https://balsamiq.com/"
+popularity: 0
 ---
 
 # Balsamiq

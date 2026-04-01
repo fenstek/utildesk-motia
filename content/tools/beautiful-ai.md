@@ -1,10 +1,11 @@
 ---
-slug: "beautiful-ai"
-title: "Beautiful.ai"
-category: "AI"
-price_model: "Freemium"
+slug: beautiful-ai
+title: Beautiful.ai
+category: AI
+price_model: Freemium
 tags: [presentations, design, ai]
 official_url: "https://www.beautiful.ai/"
+popularity: 0
 ---
 
 # Beautiful.ai

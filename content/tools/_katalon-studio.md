@@ -5,7 +5,7 @@ category: Audio
 price_model: 
 tags: []
 official_url: "https://katalon.com/katalon-studio"
-popularity: 0
+popularity: 1
 ---
 
 # Katalon Studio

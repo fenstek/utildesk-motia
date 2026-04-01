@@ -1,10 +1,11 @@
 ---
-slug: "zoho-calendar"
-title: "Zoho Calendar"
-category: "AI"
-price_model: "Freemium"
+slug: zoho-calendar
+title: Zoho Calendar
+category: AI
+price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://www.zoho.com/de/calendar/"
+popularity: 0
 ---
 
 # Zoho Calendar

@@ -2,10 +2,10 @@
 slug: lifelike
 title: Lifelike
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://lifelike.io/"
-popularity: 1
+popularity: 0
 ---
 
 # Lifelike

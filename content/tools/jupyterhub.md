@@ -1,10 +1,11 @@
 ---
-slug: "jupyterhub"
-title: "JupyterHub"
-category: "AI"
-price_model: "Open Source"
+slug: jupyterhub
+title: JupyterHub
+category: AI
+price_model: Open Source
 tags: [notebooks, collaboration, developer-tools]
 official_url: "https://jupyter.org/hub"
+popularity: 0
 ---
 
 # JupyterHub

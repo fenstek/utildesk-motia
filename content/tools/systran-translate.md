@@ -1,10 +1,11 @@
 ---
-slug: "systran-translate"
-title: "SYSTRAN Translate"
-category: "AI"
-price_model: "Je nach Plan"
+slug: systran-translate
+title: SYSTRAN Translate
+category: AI
+price_model: Je nach Plan
 tags: [translation, localization, enterprise]
 official_url: "https://www.systransoft.com/translate/"
+popularity: 0
 ---
 
 # SYSTRAN Translate

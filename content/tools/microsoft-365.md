@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-365"
-title: "Microsoft 365"
-category: "AI"
-price_model: "Abonnement"
+slug: microsoft-365
+title: Microsoft 365
+category: AI
+price_model: Abonnement
 tags: [productivity, office-suite, collaboration]
 official_url: "https://www.microsoft.com/de-de/microsoft-365"
+popularity: 0
 ---
 
 # Microsoft 365

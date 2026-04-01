@@ -1,10 +1,11 @@
 ---
-slug: "flutter"
-title: "Flutter (Google)"
-category: "AI"
-price_model: "Open Source"
+slug: flutter
+title: Flutter (Google)
+category: AI
+price_model: Open Source
 tags: [app-development, framework, developer-tools]
 official_url: "https://flutter.dev/"
+popularity: 0
 ---
 
 # Flutter (Google)

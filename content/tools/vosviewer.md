@@ -1,10 +1,11 @@
 ---
-slug: "vosviewer"
-title: "VOSviewer"
-category: "AI"
-price_model: "Kostenlos"
+slug: vosviewer
+title: VOSviewer
+category: AI
+price_model: Kostenlos
 tags: [bibliometrics, research, visualization]
 official_url: "https://www.vosviewer.com/"
+popularity: 0
 ---
 
 # VOSviewer

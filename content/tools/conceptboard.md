@@ -1,10 +1,11 @@
 ---
-slug: "conceptboard"
-title: "Conceptboard"
-category: "Produktivitat"
-price_model: "Freemium"
+slug: conceptboard
+title: Conceptboard
+category: Produktivitat
+price_model: Freemium
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://conceptboard.com/"
+popularity: 0
 ---
 
 # Conceptboard

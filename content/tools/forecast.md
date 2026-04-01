@@ -1,10 +1,11 @@
 ---
-slug: "forecast"
-title: "Forecast"
-category: "AI"
-price_model: "Freemium"
+slug: forecast
+title: Forecast
+category: AI
+price_model: Freemium
 tags: [project-management, resource-planning, psa]
 official_url: "https://www.forecast.app/"
+popularity: 0
 ---
 
 # Forecast

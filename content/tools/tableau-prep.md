@@ -1,10 +1,11 @@
 ---
-slug: "tableau-prep"
-title: "Tableau Prep"
-category: "AI"
-price_model: "Abonnement"
+slug: tableau-prep
+title: Tableau Prep
+category: AI
+price_model: Abonnement
 tags: [data-preparation, analytics, etl]
 official_url: "https://www.tableau.com/products/prep"
+popularity: 0
 ---
 
 # Tableau Prep

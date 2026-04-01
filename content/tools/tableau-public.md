@@ -1,10 +1,11 @@
 ---
-slug: "tableau-public"
-title: "Tableau Public"
-category: "AI"
-price_model: "Kostenlos"
+slug: tableau-public
+title: Tableau Public
+category: AI
+price_model: Kostenlos
 tags: [data-visualization, analytics, dashboards]
 official_url: "https://public.tableau.com/"
+popularity: 0
 ---
 
 # Tableau Public

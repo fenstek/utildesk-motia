@@ -1,10 +1,11 @@
 ---
-slug: "brainly"
-title: "Brainly"
-category: "Produktivitaet"
-price_model: "Freemium"
+slug: brainly
+title: Brainly
+category: Produktivitaet
+price_model: Freemium
 tags: [ai, education]
 official_url: "https://brainly.com/"
+popularity: 0
 ---
 
 # Brainly

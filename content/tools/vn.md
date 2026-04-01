@@ -1,10 +1,11 @@
 ---
-slug: "vn"
-title: "VN"
-category: "Video"
-price_model: "Freemium"
+slug: vn
+title: VN
+category: Video
+price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.vlognow.me/"
+popularity: 0
 ---
 
 # VN

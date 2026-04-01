@@ -1,10 +1,11 @@
 ---
-slug: "squarespace"
-title: "Squarespace"
-category: "AI"
-price_model: "Je nach Plan"
+slug: squarespace
+title: Squarespace
+category: AI
+price_model: Je nach Plan
 tags: [website-builder, cms, design]
 official_url: "https://www.squarespace.com/"
+popularity: 0
 ---
 
 # Squarespace

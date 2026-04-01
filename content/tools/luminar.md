@@ -1,10 +1,11 @@
 ---
-slug: "luminar"
-title: "Luminar"
-category: "AI"
-price_model: "Freemium"
+slug: luminar
+title: Luminar
+category: AI
+price_model: Freemium
 tags: [photo-editing, design, creative-tools]
 official_url: "https://skylum.com/luminar"
+popularity: 0
 ---
 
 # Luminar

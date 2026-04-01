@@ -1,10 +1,11 @@
 ---
-slug: "kore-ai"
-title: "Kore.ai"
-category: "AI"
-price_model: "Je nach Plan"
+slug: kore-ai
+title: Kore.ai
+category: AI
+price_model: Je nach Plan
 tags: [conversational-ai, chatbots, enterprise-ai]
 official_url: "https://www.kore.ai/"
+popularity: 0
 ---
 
 # Kore.ai

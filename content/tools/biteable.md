@@ -1,10 +1,11 @@
 ---
-slug: "biteable"
-title: "Biteable"
-category: "AI"
-price_model: ""
+slug: biteable
+title: Biteable
+category: AI
+price_model: 
 tags: [video,marketing,ai-video]
 official_url: "https://biteable.com/"
+popularity: 0
 ---
 
 # Biteable

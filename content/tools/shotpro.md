@@ -1,10 +1,11 @@
 ---
-slug: "shotpro"
-title: "ShotPro"
-category: "AI"
-price_model: ""
+slug: shotpro
+title: ShotPro
+category: AI
+price_model: 
 tags: [storyboarding, previsualization, filmmaking]
 official_url: "https://www.shotprofessional.com/"
+popularity: 0
 ---
 
 # ShotPro

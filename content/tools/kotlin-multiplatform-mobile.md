@@ -1,10 +1,11 @@
 ---
-slug: "kotlin-multiplatform-mobile"
-title: "Kotlin Multiplatform Mobile (KMM)"
-category: "AI"
-price_model: "Open Source"
+slug: kotlin-multiplatform-mobile
+title: Kotlin Multiplatform Mobile (KMM)
+category: AI
+price_model: Open Source
 tags: [mobile-development, framework, developer-tools]
 official_url: "https://kotlinlang.org/multiplatform/"
+popularity: 0
 ---
 
 # Kotlin Multiplatform Mobile (KMM)

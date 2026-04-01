@@ -1,12 +1,13 @@
 ---
-slug: "google-bersetzer"
-title: "Google Übersetzer"
-category: "AI"
-price_model: "Kostenlos"
+slug: google-bersetzer
+title: Google Übersetzer
+category: AI
+price_model: Kostenlos
 tags: [translation, language, productivity]
 official_url: "https://translate.google.com/?ucbcb=1"
 disabled: true
-reason: "Duplicate of google-translate"
+reason: Duplicate of google-translate
+popularity: 0
 ---
 
 # Google Übersetzer

@@ -1,10 +1,11 @@
 ---
-slug: "candy-network"
-title: "Candy Network"
-category: "AI"
-price_model: "Freemium"
+slug: candy-network
+title: Candy Network
+category: AI
+price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://candy.ai/"
+popularity: 0
 ---
 
 # Candy Network

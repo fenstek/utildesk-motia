@@ -1,10 +1,11 @@
 ---
-slug: "crushon"
-title: "CrushOn"
-category: "AI"
-price_model: "Freemium"
+slug: crushon
+title: CrushOn
+category: AI
+price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://crushon.ai/"
+popularity: 0
 ---
 
 # CrushOn

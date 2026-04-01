@@ -1,10 +1,11 @@
 ---
-slug: "opennmt"
-title: "OpenNMT"
-category: "AI"
-price_model: "Open Source"
+slug: opennmt
+title: OpenNMT
+category: AI
+price_model: Open Source
 tags: [translation, nmt, open-source]
 official_url: "https://opennmt.net/"
+popularity: 0
 ---
 
 # OpenNMT

@@ -1,10 +1,11 @@
 ---
-slug: "deepnote"
-title: "Deepnote"
-category: "AI"
-price_model: "Freemium"
+slug: deepnote
+title: Deepnote
+category: AI
+price_model: Freemium
 tags: [notebooks,data-science,collaboration]
 official_url: "https://deepnote.com/"
+popularity: 0
 ---
 
 # Deepnote

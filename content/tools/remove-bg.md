@@ -1,10 +1,11 @@
 ---
-slug: "remove-bg"
-title: "Remove.bg"
-category: "Design"
-price_model: "Freemium"
+slug: remove-bg
+title: Remove.bg
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.remove.bg/"
+popularity: 0
 ---
 
 # Remove.bg

@@ -1,10 +1,11 @@
 ---
-slug: "alitu"
-title: "Alitu"
-category: "AI"
-price_model: "Abonnement"
+slug: alitu
+title: Alitu
+category: AI
+price_model: Abonnement
 tags: [podcasting, audio, editing]
 official_url: "https://alitu.com/"
+popularity: 0
 ---
 
 # Alitu

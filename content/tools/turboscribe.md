@@ -1,10 +1,11 @@
 ---
-slug: "turboscribe"
-title: "TurboScribe"
-category: "Audio"
-price_model: "Freemium"
+slug: turboscribe
+title: TurboScribe
+category: Audio
+price_model: Freemium
 tags: [ai, transcription, audio]
 official_url: "https://turboscribe.ai/"
+popularity: 0
 ---
 
 # TurboScribe

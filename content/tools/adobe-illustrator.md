@@ -2,10 +2,10 @@
 slug: adobe-illustrator
 title: Adobe Illustrator
 category: Design
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [ai, design, vector, creative, automation]
 official_url: "https://www.adobe.com/products/illustrator.html"
-popularity: 1
+popularity: 0
 ---
 
 # Adobe Illustrator

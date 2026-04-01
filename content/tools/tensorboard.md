@@ -1,10 +1,11 @@
 ---
-slug: "tensorboard"
-title: "TensorBoard"
-category: "AI"
-price_model: "Open Source"
+slug: tensorboard
+title: TensorBoard
+category: AI
+price_model: Open Source
 tags: [ml, visualization, developer-tools]
 official_url: "https://www.tensorflow.org/tensorboard?hl=fr"
+popularity: 0
 ---
 
 # TensorBoard

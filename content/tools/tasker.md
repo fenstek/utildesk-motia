@@ -1,10 +1,11 @@
 ---
-slug: "tasker"
-title: "Tasker (Android)"
-category: "AI"
-price_model: "Kostenpflichtig"
+slug: tasker
+title: Tasker (Android)
+category: AI
+price_model: Kostenpflichtig
 tags: [automation, android, productivity]
 official_url: "https://tasker.joaoapps.com/"
+popularity: 0
 ---
 
 # Tasker (Android)

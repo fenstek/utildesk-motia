@@ -1,10 +1,11 @@
 ---
-slug: "citavi"
-title: "Citavi"
-category: "AI"
-price_model: "Freemium"
+slug: citavi
+title: Citavi
+category: AI
+price_model: Freemium
 tags: [reference-management, academic-research, writing]
 official_url: "https://lumivero.com/products/citavi/"
+popularity: 0
 ---
 
 # Citavi

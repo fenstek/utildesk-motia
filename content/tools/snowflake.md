@@ -1,10 +1,11 @@
 ---
-slug: "snowflake"
-title: "Snowflake"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: snowflake
+title: Snowflake
+category: AI
+price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, cloud]
 official_url: "https://www.snowflake.com/de/"
+popularity: 0
 ---
 
 # Snowflake

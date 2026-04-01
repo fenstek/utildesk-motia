@@ -1,10 +1,11 @@
 ---
-slug: "anki"
-title: "Anki"
-category: "AI"
-price_model: "Freemium"
+slug: anki
+title: Anki
+category: AI
+price_model: Freemium
 tags: [flashcards, education, learning]
 official_url: "https://apps.ankiweb.net/"
+popularity: 0
 ---
 
 # Anki

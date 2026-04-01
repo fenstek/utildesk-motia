@@ -1,10 +1,11 @@
 ---
-slug: "pixelcut"
-title: "Pixelcut"
-category: "Design"
-price_model: "Freemium"
+slug: pixelcut
+title: Pixelcut
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.pixa.com/"
+popularity: 0
 ---
 
 # Pixelcut

@@ -1,10 +1,11 @@
 ---
-slug: "google-colab"
-title: "Google Colab"
-category: "Entwickler-Tools"
-price_model: "Freemium"
+slug: google-colab
+title: Google Colab
+category: Entwickler-Tools
+price_model: Freemium
 tags: [developer,coding,data]
 official_url: "https://colab.research.google.com/"
+popularity: 0
 ---
 
 # Google Colab

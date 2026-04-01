@@ -1,10 +1,11 @@
 ---
-slug: "amazon-alexa"
-title: "Amazon Alexa"
-category: "AI"
-price_model: "Freemium"
+slug: amazon-alexa
+title: Amazon Alexa
+category: AI
+price_model: Freemium
 tags: [assistant, voice, smart-home]
 official_url: "https://developer.amazon.com/en/alexa"
+popularity: 0
 ---
 
 # Amazon Alexa

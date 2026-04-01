@@ -1,10 +1,11 @@
 ---
-slug: "betty-blocks"
-title: "Betty Blocks"
-category: "Automatisierung"
-price_model: "Je nach Plan"
+slug: betty-blocks
+title: Betty Blocks
+category: Automatisierung
+price_model: Je nach Plan
 tags: [no-code, automation, developer]
 official_url: "https://www.bettyblocks.com/"
+popularity: 0
 ---
 
 # Betty Blocks

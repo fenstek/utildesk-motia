@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-automated-ml"
-title: "Microsoft Azure Automated ML"
-category: "AI"
-price_model: "Abonnement, Nutzungsbasiert"
+slug: microsoft-azure-automated-ml
+title: Microsoft Azure Automated ML
+category: AI
+price_model: Abonnement, Nutzungsbasiert
 tags: [ml, auto-ml, cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2"
+popularity: 0
 ---
 
 # Microsoft Azure Automated ML

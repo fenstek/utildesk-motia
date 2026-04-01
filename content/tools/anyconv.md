@@ -1,10 +1,11 @@
 ---
-slug: "anyconv"
-title: "AnyConv"
-category: "AI"
-price_model: "Freemium"
+slug: anyconv
+title: AnyConv
+category: AI
+price_model: Freemium
 tags: [file-conversion,documents,utilities]
 official_url: "https://anyconv.com/"
+popularity: 0
 ---
 
 # AnyConv

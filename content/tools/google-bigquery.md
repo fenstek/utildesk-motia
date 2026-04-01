@@ -1,10 +1,11 @@
 ---
-slug: "google-bigquery"
-title: "Google BigQuery"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-bigquery
+title: Google BigQuery
+category: AI
+price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, google-cloud]
 official_url: "https://cloud.google.com/bigquery"
+popularity: 0
 ---
 
 # Google BigQuery

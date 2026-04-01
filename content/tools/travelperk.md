@@ -1,10 +1,11 @@
 ---
-slug: "travelperk"
-title: "TravelPerk"
-category: "AI"
-price_model: "Abonnement"
+slug: travelperk
+title: TravelPerk
+category: AI
+price_model: Abonnement
 tags: [travel-management, expense-management, saas]
 official_url: "https://www.perk.com/"
+popularity: 0
 ---
 
 # TravelPerk

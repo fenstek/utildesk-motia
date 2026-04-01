@@ -1,10 +1,11 @@
 ---
-slug: "mural"
-title: "MURAL"
-category: "AI"
-price_model: "Je nach Plan"
+slug: mural
+title: MURAL
+category: AI
+price_model: Je nach Plan
 tags: [whiteboard, collaboration, brainstorming]
 official_url: "https://www.mural.co/"
+popularity: 0
 ---
 
 # MURAL

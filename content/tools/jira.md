@@ -1,10 +1,11 @@
 ---
-slug: "jira"
-title: "Jira"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: jira
+title: Jira
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [project-management, issue-tracking, developer-tools]
 official_url: "https://www.atlassian.com/software/jira"
+popularity: 0
 ---
 
 # Jira

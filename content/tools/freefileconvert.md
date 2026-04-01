@@ -1,10 +1,11 @@
 ---
-slug: "freefileconvert"
-title: "FreeFileConvert"
-category: "AI"
-price_model: "Freemium"
+slug: freefileconvert
+title: FreeFileConvert
+category: AI
+price_model: Freemium
 tags: [file-conversion,productivity,online-tools]
 official_url: "https://freefileconvert.com/"
+popularity: 0
 ---
 
 # FreeFileConvert

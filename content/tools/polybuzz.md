@@ -1,10 +1,11 @@
 ---
-slug: "polybuzz"
-title: "Polybuzz"
-category: "AI"
-price_model: "Freemium"
+slug: polybuzz
+title: Polybuzz
+category: AI
+price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://www.polybuzz.ai/"
+popularity: 0
 ---
 
 # Polybuzz

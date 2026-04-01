@@ -1,10 +1,11 @@
 ---
-slug: "inciteful"
-title: "Inciteful"
-category: "AI"
-price_model: "Je nach Plan"
+slug: inciteful
+title: Inciteful
+category: AI
+price_model: Je nach Plan
 tags: [research, citation-analysis, literature-review]
 official_url: "https://incitefulmed.com/academic/"
+popularity: 0
 ---
 
 # Inciteful

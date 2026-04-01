@@ -1,10 +1,11 @@
 ---
-slug: "mycroft"
-title: "Mycroft"
-category: "AI"
-price_model: "Open Source"
+slug: mycroft
+title: Mycroft
+category: AI
+price_model: Open Source
 tags: [assistant, voice, open-source]
 official_url: "https://community.openconversational.ai/"
+popularity: 0
 ---
 
 # Mycroft

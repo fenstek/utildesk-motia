@@ -1,10 +1,11 @@
 ---
-slug: "janitor-ai"
-title: "Janitor AI"
-category: "AI"
-price_model: "Freemium"
+slug: janitor-ai
+title: Janitor AI
+category: AI
+price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://janitorai.com/"
+popularity: 0
 ---
 
 # Janitor AI

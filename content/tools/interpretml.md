@@ -1,10 +1,11 @@
 ---
-slug: "interpretml"
-title: "InterpretML"
-category: "AI"
-price_model: "Open Source"
+slug: interpretml
+title: InterpretML
+category: AI
+price_model: Open Source
 tags: [ml, explainability, ai]
 official_url: "https://interpret.ml/"
+popularity: 0
 ---
 
 # InterpretML

@@ -1,10 +1,11 @@
 ---
-slug: "paperpile"
-title: "Paperpile"
-category: "Schreiben & Content"
-price_model: "Abonnement"
+slug: paperpile
+title: Paperpile
+category: Schreiben & Content
+price_model: Abonnement
 tags: [research, writing, productivity]
 official_url: "https://paperpile.com/"
+popularity: 0
 ---
 
 # Paperpile

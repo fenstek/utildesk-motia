@@ -1,10 +1,11 @@
 ---
-slug: "any-do"
-title: "Any.do"
-category: "AI"
-price_model: "Freemium"
+slug: any-do
+title: Any.do
+category: AI
+price_model: Freemium
 tags: [todo,productivity,task-management]
 official_url: "https://www.any.do/"
+popularity: 0
 ---
 
 # Any.do

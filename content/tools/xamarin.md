@@ -1,10 +1,11 @@
 ---
-slug: "xamarin"
-title: "Xamarin"
-category: "AI"
-price_model: "Abonnement"
+slug: xamarin
+title: Xamarin
+category: AI
+price_model: Abonnement
 tags: [mobile-development, framework, developer-tools]
 official_url: "https://dotnet.microsoft.com/en-us/apps/xamarin"
+popularity: 0
 ---
 
 # Xamarin

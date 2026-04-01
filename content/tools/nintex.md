@@ -1,10 +1,11 @@
 ---
-slug: "nintex"
-title: "Nintex"
-category: "AI"
-price_model: "Je nach Plan"
+slug: nintex
+title: Nintex
+category: AI
+price_model: Je nach Plan
 tags: [workflow-automation, process-management, enterprise]
 official_url: "https://www.nintex.com/"
+popularity: 0
 ---
 
 # Nintex

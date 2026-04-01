@@ -1,10 +1,11 @@
 ---
-slug: "swiftkey"
-title: "SwiftKey"
-category: "AI"
-price_model: "Freemium"
+slug: swiftkey
+title: SwiftKey
+category: AI
+price_model: Freemium
 tags: [keyboard, mobile, productivity]
 official_url: "https://www.microsoft.com/en-us/swiftkey"
+popularity: 0
 ---
 
 # SwiftKey

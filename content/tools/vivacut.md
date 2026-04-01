@@ -1,10 +1,11 @@
 ---
-slug: "vivacut"
-title: "VivaCut"
-category: "Video"
-price_model: "Freemium"
+slug: vivacut
+title: VivaCut
+category: Video
+price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.vivacut.com/"
+popularity: 0
 ---
 
 # VivaCut

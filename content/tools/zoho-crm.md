@@ -1,10 +1,11 @@
 ---
-slug: "zoho-crm"
-title: "Zoho CRM"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: zoho-crm
+title: Zoho CRM
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [crm, sales, productivity]
 official_url: "https://www.zoho.com/de/crm/"
+popularity: 0
 ---
 
 # Zoho CRM

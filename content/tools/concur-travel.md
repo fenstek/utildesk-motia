@@ -1,10 +1,11 @@
 ---
-slug: "concur-travel"
-title: "Concur Travel"
-category: "AI"
-price_model: "Je nach Plan"
+slug: concur-travel
+title: Concur Travel
+category: AI
+price_model: Je nach Plan
 tags: [travel-management, expense-management, saas]
 official_url: "https://www.concur.com/?&cookie_preferences=gdpr"
+popularity: 0
 ---
 
 # Concur Travel

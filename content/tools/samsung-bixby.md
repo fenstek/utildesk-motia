@@ -1,10 +1,11 @@
 ---
-slug: "samsung-bixby"
-title: "Samsung Bixby"
-category: "AI"
-price_model: "Kostenlos"
+slug: samsung-bixby
+title: Samsung Bixby
+category: AI
+price_model: Kostenlos
 tags: [assistant, voice, mobile]
 official_url: "https://www.samsung.com/us/apps/bixby/"
+popularity: 0
 ---
 
 # Samsung Bixby

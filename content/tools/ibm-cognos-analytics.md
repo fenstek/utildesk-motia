@@ -1,10 +1,11 @@
 ---
-slug: "ibm-cognos-analytics"
-title: "IBM Cognos Analytics"
-category: "AI"
-price_model: "Je nach Plan"
+slug: ibm-cognos-analytics
+title: IBM Cognos Analytics
+category: AI
+price_model: Je nach Plan
 tags: [analytics, enterprise, data]
 official_url: "https://www.ibm.com/products/cognos-analytics"
+popularity: 0
 ---
 
 # IBM Cognos Analytics

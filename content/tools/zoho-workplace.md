@@ -1,10 +1,11 @@
 ---
-slug: "zoho-workplace"
-title: "Zoho Workplace"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: zoho-workplace
+title: Zoho Workplace
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [productivity, office-suite, collaboration]
 official_url: "https://www.zoho.com/de/workplace/"
+popularity: 0
 ---
 
 # Zoho Workplace

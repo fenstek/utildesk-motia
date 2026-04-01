@@ -1,10 +1,11 @@
 ---
-slug: "lightworks"
-title: "Lightworks"
-category: "AI"
-price_model: "Je nach Plan"
+slug: lightworks
+title: Lightworks
+category: AI
+price_model: Je nach Plan
 tags: [video-editing, post-production, filmmaking]
 official_url: "https://lwks.com/#features_section"
+popularity: 0
 ---
 
 # Lightworks

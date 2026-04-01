@@ -1,10 +1,11 @@
 ---
-slug: "calendly"
-title: "Calendly"
-category: "Produktivitat"
-price_model: "Freemium"
+slug: calendly
+title: Calendly
+category: Produktivitat
+price_model: Freemium
 tags: [meeting, workflow, productivity]
 official_url: "https://calendly.com/"
+popularity: 0
 ---
 
 # Calendly

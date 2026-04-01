@@ -1,10 +1,11 @@
 ---
-slug: "bookafy"
-title: "Bookafy"
-category: "AI"
-price_model: "Abonnement"
+slug: bookafy
+title: Bookafy
+category: AI
+price_model: Abonnement
 tags: [booking, scheduling, saas]
 official_url: "https://bookafy.com/"
+popularity: 0
 ---
 
 # Bookafy

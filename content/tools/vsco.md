@@ -1,10 +1,11 @@
 ---
-slug: "vsco"
-title: "VSCO"
-category: "AI"
-price_model: "Freemium"
+slug: vsco
+title: VSCO
+category: AI
+price_model: Freemium
 tags: [photo-editing, photography, creative-tools]
 official_url: "https://www.vsco.co/"
+popularity: 0
 ---
 
 # VSCO

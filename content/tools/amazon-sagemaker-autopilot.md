@@ -1,10 +1,11 @@
 ---
-slug: "amazon-sagemaker-autopilot"
-title: "Amazon SageMaker Autopilot"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: amazon-sagemaker-autopilot
+title: Amazon SageMaker Autopilot
+category: AI
+price_model: Nutzungsbasiert
 tags: [ml, auto-ml, cloud]
 official_url: "https://aws.amazon.com/sagemaker/ai/autopilot/"
+popularity: 0
 ---
 
 # Amazon SageMaker Autopilot

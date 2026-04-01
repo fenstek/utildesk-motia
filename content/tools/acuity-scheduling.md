@@ -1,10 +1,11 @@
 ---
-slug: "acuity-scheduling"
-title: "Acuity Scheduling"
-category: "AI"
-price_model: "Abonnement"
+slug: acuity-scheduling
+title: Acuity Scheduling
+category: AI
+price_model: Abonnement
 tags: [scheduling,appointments,booking]
 official_url: "https://acuityscheduling.com/"
+popularity: 0
 ---
 
 # Acuity Scheduling
