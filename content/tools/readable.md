@@ -1,10 +1,11 @@
 ---
-slug: "readable"
-title: "Readable"
-category: "AI"
-price_model: "Abonnement"
+slug: readable
+title: Readable
+category: AI
+price_model: Abonnement
 tags: [readability, writing, content]
 official_url: "https://readable.com/"
+popularity: 0
 ---
 
 # Readable

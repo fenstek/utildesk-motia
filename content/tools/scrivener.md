@@ -1,10 +1,11 @@
 ---
-slug: "scrivener"
-title: "Scrivener"
-category: "AI"
-price_model: "Kostenpflichtig"
+slug: scrivener
+title: Scrivener
+category: AI
+price_model: Kostenpflichtig
 tags: [writing, authors, productivity]
 official_url: "https://www.literatureandlatte.com/scrivener/overview"
+popularity: 0
 ---
 
 # Scrivener

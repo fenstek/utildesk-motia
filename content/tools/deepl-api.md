@@ -1,10 +1,11 @@
 ---
-slug: "deepl-api"
-title: "DeepL API"
-category: "Produktivität"
-price_model: "Nutzungsbasiert"
+slug: deepl-api
+title: DeepL API
+category: Produktivität
+price_model: Nutzungsbasiert
 tags: [translation, api, developers]
 official_url: "https://www.deepl.com/en/products/api"
+popularity: 0
 ---
 
 # DeepL API

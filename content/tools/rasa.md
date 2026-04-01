@@ -2,10 +2,10 @@
 slug: rasa
 title: Rasa
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["chatbot", "developer-tools", "api"]
 official_url: "https://rasa.com/docs"
-popularity: 1
+popularity: 0
 ---
 
 # Rasa

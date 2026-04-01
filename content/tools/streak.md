@@ -1,10 +1,11 @@
 ---
-slug: "streak"
-title: "Streak"
-category: "AI"
-price_model: "Je nach Plan"
+slug: streak
+title: Streak
+category: AI
+price_model: Je nach Plan
 tags: [crm,email-productivity,sales]
 official_url: "https://www.streak.com/"
+popularity: 0
 ---
 
 # Streak

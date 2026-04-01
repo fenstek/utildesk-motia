@@ -1,10 +1,11 @@
 ---
-slug: "krita"
-title: "Krita"
-category: "AI"
-price_model: "Open Source"
+slug: krita
+title: Krita
+category: AI
+price_model: Open Source
 tags: [digital-painting, illustration, creative-tools]
 official_url: "https://krita.org/en/download/krita-desktop"
+popularity: 0
 ---
 
 # Krita

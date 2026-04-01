@@ -1,10 +1,11 @@
 ---
-slug: "facetune"
-title: "Facetune"
-category: "AI"
-price_model: "Freemium"
+slug: facetune
+title: Facetune
+category: AI
+price_model: Freemium
 tags: [photo-editing, creative-tools, mobile]
 official_url: "https://www.facetuneapp.com/"
+popularity: 0
 ---
 
 # Facetune

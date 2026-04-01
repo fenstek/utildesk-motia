@@ -1,10 +1,11 @@
 ---
-slug: "twine"
-title: "Twine"
-category: "AI"
-price_model: "Kostenlos, Open Source"
+slug: twine
+title: Twine
+category: AI
+price_model: Kostenlos, Open Source
 tags: [interactive-fiction, writing, games]
 official_url: "https://twinery.org/"
+popularity: 0
 ---
 
 # Twine

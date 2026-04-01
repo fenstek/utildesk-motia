@@ -1,10 +1,11 @@
 ---
-slug: "sockeye"
-title: "Sockeye"
-category: "AI"
-price_model: "Je nach Plan"
+slug: sockeye
+title: Sockeye
+category: AI
+price_model: Je nach Plan
 tags: [translation, nmt, deep-learning]
 official_url: "https://awslabs.github.io/sockeye/"
+popularity: 0
 ---
 
 # Sockeye

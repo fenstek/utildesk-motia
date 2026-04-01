@@ -1,10 +1,11 @@
 ---
-slug: "fantastical"
-title: "Fantastical"
-category: "AI"
-price_model: "Je nach Plan"
+slug: fantastical
+title: Fantastical
+category: AI
+price_model: Je nach Plan
 tags: [calendar, scheduling, productivity]
 official_url: "https://flexibits.com/fantastical"
+popularity: 0
 ---
 
 # Fantastical

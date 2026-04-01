@@ -1,10 +1,11 @@
 ---
-slug: "todoist"
-title: "Todoist"
-category: "AI"
-price_model: "Freemium"
+slug: todoist
+title: Todoist
+category: AI
+price_model: Freemium
 tags: [task-management,productivity,planning]
 official_url: "https://www.todoist.com/"
+popularity: 0
 ---
 
 # Todoist

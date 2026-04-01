@@ -1,10 +1,11 @@
 ---
-slug: "ranorex-studio"
-title: "Ranorex Studio"
-category: "Audio"
-price_model: "Je nach Plan"
+slug: ranorex-studio
+title: Ranorex Studio
+category: Audio
+price_model: Je nach Plan
 tags: [test-automation, ui-testing, developer-tools]
 official_url: "https://www.ranorex.com/features/"
+popularity: 0
 ---
 
 # Ranorex Studio

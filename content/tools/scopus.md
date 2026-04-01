@@ -1,10 +1,11 @@
 ---
-slug: "scopus"
-title: "Scopus"
-category: "Video"
-price_model: "Je nach Plan"
+slug: scopus
+title: Scopus
+category: Video
+price_model: Je nach Plan
 tags: [research,bibliometrics,publications]
 official_url: "https://www.elsevier.com/products/scopus"
+popularity: 0
 ---
 
 # Scopus

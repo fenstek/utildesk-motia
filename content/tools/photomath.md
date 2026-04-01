@@ -1,10 +1,11 @@
 ---
-slug: "photomath"
-title: "Photomath"
-category: "Produktivitaet"
-price_model: "Freemium"
+slug: photomath
+title: Photomath
+category: Produktivitaet
+price_model: Freemium
 tags: [ai, education]
 official_url: "https://photomath.com/"
+popularity: 0
 ---
 
 # Photomath

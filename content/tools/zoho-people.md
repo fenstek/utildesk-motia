@@ -1,10 +1,11 @@
 ---
-slug: "zoho-people"
-title: "Zoho People"
-category: "AI"
-price_model: "Abonnement"
+slug: zoho-people
+title: Zoho People
+category: AI
+price_model: Abonnement
 tags: [hr, hcm, people-ops]
 official_url: "https://www.zoho.com/de/people/"
+popularity: 0
 ---
 
 # Zoho People

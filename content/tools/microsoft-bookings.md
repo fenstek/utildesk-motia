@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-bookings"
-title: "Microsoft Bookings"
-category: "AI"
-price_model: "Je nach Plan"
+slug: microsoft-bookings
+title: Microsoft Bookings
+category: AI
+price_model: Je nach Plan
 tags: [scheduling,appointments,microsoft-365]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app"
+popularity: 0
 ---
 
 # Microsoft Bookings

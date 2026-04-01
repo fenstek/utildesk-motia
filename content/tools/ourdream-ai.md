@@ -1,10 +1,11 @@
 ---
-slug: "ourdream-ai"
-title: "Ourdream.ai"
-category: "AI"
-price_model: "Freemium"
+slug: ourdream-ai
+title: Ourdream.ai
+category: AI
+price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://ourdream.ai/"
+popularity: 0
 ---
 
 # Ourdream.ai

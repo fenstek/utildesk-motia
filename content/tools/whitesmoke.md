@@ -1,10 +1,11 @@
 ---
-slug: "whitesmoke"
-title: "WhiteSmoke"
-category: "AI"
-price_model: "Je nach Plan"
+slug: whitesmoke
+title: WhiteSmoke
+category: AI
+price_model: Je nach Plan
 tags: [grammar-checking, writing, translation]
 official_url: "https://www.whitesmoke.com/"
+popularity: 0
 ---
 
 # WhiteSmoke

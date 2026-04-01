@@ -1,10 +1,11 @@
 ---
-slug: "testcomplete"
-title: "TestComplete"
-category: "AI"
-price_model: "Je nach Plan"
+slug: testcomplete
+title: TestComplete
+category: AI
+price_model: Je nach Plan
 tags: [test-automation, ui-testing, developer-tools]
 official_url: "https://smartbear.com/product/testcomplete/"
+popularity: 0
 ---
 
 # TestComplete

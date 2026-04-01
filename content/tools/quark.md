@@ -1,10 +1,11 @@
 ---
-slug: "quark"
-title: "Quark"
-category: "AI"
-price_model: "Freemium"
+slug: quark
+title: Quark
+category: AI
+price_model: Freemium
 tags: [ai, assistant, search]
 official_url: "https://www.quark.cn/"
+popularity: 0
 ---
 
 # Quark

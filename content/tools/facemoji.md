@@ -1,10 +1,11 @@
 ---
-slug: "facemoji"
-title: "Facemoji"
-category: "Produktivitaet"
-price_model: "Freemium"
+slug: facemoji
+title: Facemoji
+category: Produktivitaet
+price_model: Freemium
 tags: [mobile, communication, productivity]
 official_url: "https://facemojikeyboard.com/"
+popularity: 0
 ---
 
 # Facemoji

@@ -1,10 +1,11 @@
 ---
-slug: "picsart"
-title: "Picsart"
-category: "Design"
-price_model: "Freemium"
+slug: picsart
+title: Picsart
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://picsart.com/"
+popularity: 0
 ---
 
 # Picsart

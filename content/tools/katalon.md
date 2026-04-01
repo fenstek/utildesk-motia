@@ -2,12 +2,12 @@
 slug: katalon
 title: Katalon
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["data", "automation"]
-official_url: 'https://katalon.com/'
-affiliate_url: 'https://katalon.com/'
-created_at: "2026-02-07"
-popularity: 0
+official_url: "https://katalon.com/"
+affiliate_url: "https://katalon.com/"
+created_at: 2026-02-07
+popularity: 1
 ---
 
 # Katalon

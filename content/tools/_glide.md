@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://www.glideapps.com/"
-popularity: 1
+popularity: 0
 ---
 
 # Glide

@@ -1,10 +1,11 @@
 ---
-slug: "celtx"
-title: "Celtx"
-category: "AI"
-price_model: "Abonnement"
+slug: celtx
+title: Celtx
+category: AI
+price_model: Abonnement
 tags: [scriptwriting, pre-production, video]
 official_url: "https://www.celtx.com/"
+popularity: 0
 ---
 
 # Celtx

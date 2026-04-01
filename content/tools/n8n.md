@@ -2,10 +2,10 @@
 slug: n8n
 title: n8n
 category: Automatisierung
-price_model: "Open Source"
+price_model: Open Source
 tags: ["automation", "workflow"]
 official_url: "https://n8n.io"
-popularity: 0
+popularity: 1
 ---
 
 # n8n

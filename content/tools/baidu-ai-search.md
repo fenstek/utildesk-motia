@@ -1,10 +1,11 @@
 ---
-slug: "baidu-ai-search"
-title: "Baidu AI Search"
-category: "AI"
-price_model: "Freemium"
+slug: baidu-ai-search
+title: Baidu AI Search
+category: AI
+price_model: Freemium
 tags: [ai, assistant, search]
 official_url: "https://www.baidu.com/"
+popularity: 0
 ---
 
 # Baidu AI Search

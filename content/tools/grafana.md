@@ -1,10 +1,11 @@
 ---
-slug: "grafana"
-title: "Grafana"
-category: "AI"
-price_model: "Freemium"
+slug: grafana
+title: Grafana
+category: AI
+price_model: Freemium
 tags: [monitoring, observability, dashboards]
 official_url: "https://grafana.com/"
+popularity: 0
 ---
 
 # Grafana

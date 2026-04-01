@@ -1,10 +1,11 @@
 ---
-slug: "swagger"
-title: "Swagger (OpenAPI)"
-category: "Entwickler-Tools"
-price_model: "Je nach Plan"
+slug: swagger
+title: Swagger (OpenAPI)
+category: Entwickler-Tools
+price_model: Je nach Plan
 tags: [api, developer-tools, documentation]
 official_url: "https://swagger.io/"
+popularity: 0
 ---
 
 # Swagger (OpenAPI)

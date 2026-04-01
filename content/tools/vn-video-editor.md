@@ -1,10 +1,11 @@
 ---
-slug: "vn-video-editor"
-title: "VN Video Editor"
-category: "Video"
-price_model: "Freemium"
+slug: vn-video-editor
+title: VN Video Editor
+category: Video
+price_model: Freemium
 tags: [video-editing,mobile,creative-tools]
 official_url: "https://vlognow.me/"
+popularity: 0
 ---
 
 # VN Video Editor

@@ -1,10 +1,11 @@
 ---
-slug: "flair"
-title: "Flair"
-category: "AI"
-price_model: ""
+slug: flair
+title: Flair
+category: AI
+price_model: 
 tags: [nlp, python, library]
 official_url: "https://flairnlp.github.io/"
+popularity: 0
 ---
 
 # Flair

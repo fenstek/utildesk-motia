@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-edge"
-title: "Microsoft Edge"
-category: "Produktivitaet"
-price_model: "Freemium"
+slug: microsoft-edge
+title: Microsoft Edge
+category: Produktivitaet
+price_model: Freemium
 tags: [ai,browser,web]
 official_url: "https://www.microsoft.com/en-us/edge?cs=3783549923&form=MA13FJ"
+popularity: 0
 ---
 
 # Microsoft Edge

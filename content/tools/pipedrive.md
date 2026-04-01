@@ -1,10 +1,11 @@
 ---
-slug: "pipedrive"
-title: "Pipedrive"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: pipedrive
+title: Pipedrive
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [crm, sales, pipeline]
 official_url: "https://www.pipedrive.com/de"
+popularity: 0
 ---
 
 # Pipedrive

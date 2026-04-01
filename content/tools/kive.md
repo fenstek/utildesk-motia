@@ -2,10 +2,10 @@
 slug: kive
 title: Kive
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://kive.ai/"
-popularity: 2
+popularity: 0
 ---
 
 # Kive

@@ -1,10 +1,11 @@
 ---
-slug: "wave"
-title: "Wave"
-category: "AI"
-price_model: "Freemium"
+slug: wave
+title: Wave
+category: AI
+price_model: Freemium
 tags: ["accounting", "finance"]
 official_url: "https://www.waveapps.com/"
+popularity: 0
 ---
 
 # Wave

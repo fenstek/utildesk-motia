@@ -1,10 +1,11 @@
 ---
-slug: "cutout"
-title: "Cutout"
-category: "Design"
-price_model: "Freemium"
+slug: cutout
+title: Cutout
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.cutout.pro/"
+popularity: 0
 ---
 
 # Cutout

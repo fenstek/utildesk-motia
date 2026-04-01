@@ -1,10 +1,11 @@
 ---
-slug: "cloudconvert"
-title: "CloudConvert"
-category: "AI"
-price_model: "Freemium"
+slug: cloudconvert
+title: CloudConvert
+category: AI
+price_model: Freemium
 tags: [file-conversion, documents, utilities]
 official_url: "https://cloudconvert.com/"
+popularity: 0
 ---
 
 # CloudConvert

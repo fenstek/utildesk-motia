@@ -1,10 +1,11 @@
 ---
-slug: "nvidia-a100-tensor-core-gpu"
-title: "NVIDIA A100 Tensor Core GPU"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: nvidia-a100-tensor-core-gpu
+title: NVIDIA A100 Tensor Core GPU
+category: AI
+price_model: Individuelles Angebot
 tags: [gpu, infrastructure, ml]
 official_url: "https://www.nvidia.com/en-us/data-center/a100/"
+popularity: 0
 ---
 
 # NVIDIA A100 Tensor Core GPU

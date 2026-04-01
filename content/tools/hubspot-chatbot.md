@@ -1,10 +1,11 @@
 ---
-slug: "hubspot-chatbot"
-title: "HubSpot Chatbot"
-category: "AI"
-price_model: "Je nach Plan"
+slug: hubspot-chatbot
+title: HubSpot Chatbot
+category: AI
+price_model: Je nach Plan
 tags: [chatbots, customer-support, crm]
 official_url: "https://www.hubspot.com/products/crm/chatbot-builder"
+popularity: 0
 ---
 
 # HubSpot Chatbot

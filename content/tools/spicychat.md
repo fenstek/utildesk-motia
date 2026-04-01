@@ -1,10 +1,11 @@
 ---
-slug: "spicychat"
-title: "Spicychat"
-category: "AI"
-price_model: "Freemium"
+slug: spicychat
+title: Spicychat
+category: AI
+price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://spicychat.ai/"
+popularity: 0
 ---
 
 # Spicychat

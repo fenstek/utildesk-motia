@@ -2,10 +2,10 @@
 slug: xai
 title: xAI
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [chatbot, productivity, automation]
 official_url: "https://x.ai/"
-popularity: 0
+popularity: 1
 ---
 
 # xAI

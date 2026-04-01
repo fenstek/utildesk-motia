@@ -1,10 +1,11 @@
 ---
-slug: "detox"
-title: "Detox"
-category: "AI"
-price_model: "Open Source"
+slug: detox
+title: Detox
+category: AI
+price_model: Open Source
 tags: [detox, qa, test-automation]
 official_url: "https://www.detox.com/"
+popularity: 0
 ---
 
 # Detox

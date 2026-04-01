@@ -2,10 +2,10 @@
 slug: adobe-premiere-rush
 title: Adobe Premiere Rush
 category: Design
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [design, video, image]
 official_url: "https://www.adobe.com/products/premiere-rush.html"
-popularity: 0
+popularity: 1
 ---
 
 # Adobe Premiere Rush

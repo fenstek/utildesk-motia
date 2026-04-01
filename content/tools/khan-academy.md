@@ -1,10 +1,11 @@
 ---
-slug: "khan-academy"
-title: "Khan Academy"
-category: "AI"
-price_model: "Kostenlos"
+slug: khan-academy
+title: Khan Academy
+category: AI
+price_model: Kostenlos
 tags: [education, elearning, learning]
 official_url: "https://www.khanacademy.org/"
+popularity: 0
 ---
 
 # Khan Academy

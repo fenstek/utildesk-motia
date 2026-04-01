@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-dataflow"
-title: "Google Cloud Dataflow"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-dataflow
+title: Google Cloud Dataflow
+category: AI
+price_model: Nutzungsbasiert
 tags: [data-processing, streaming, google-cloud]
 official_url: "https://cloud.google.com/products/dataflow"
+popularity: 0
 ---
 
 # Google Cloud Dataflow

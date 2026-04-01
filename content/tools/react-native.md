@@ -1,10 +1,11 @@
 ---
-slug: "react-native"
-title: "React Native"
-category: "AI"
-price_model: "Open Source"
+slug: react-native
+title: React Native
+category: AI
+price_model: Open Source
 tags: [mobile-development,framework,developer-tools]
 official_url: "https://reactnative.dev/"
+popularity: 0
 ---
 
 # React Native

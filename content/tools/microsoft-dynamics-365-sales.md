@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-dynamics-365-sales"
-title: "Microsoft Dynamics 365 Sales"
-category: "AI"
-price_model: "Abonnement"
+slug: microsoft-dynamics-365-sales
+title: Microsoft Dynamics 365 Sales
+category: AI
+price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.microsoft.com/en-us/dynamics-365/products/sales"
+popularity: 0
 ---
 
 # Microsoft Dynamics 365 Sales

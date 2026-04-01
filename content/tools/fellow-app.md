@@ -1,10 +1,11 @@
 ---
-slug: "fellow-app"
-title: "Fellow.app"
-category: "AI"
-price_model: "Freemium"
+slug: fellow-app
+title: Fellow.app
+category: AI
+price_model: Freemium
 tags: [meetings, productivity, collaboration]
 official_url: "https://fellow.ai/"
+popularity: 0
 ---
 
 # Fellow.app

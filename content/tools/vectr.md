@@ -1,10 +1,11 @@
 ---
-slug: "vectr"
-title: "Vectr"
-category: "AI"
-price_model: "Freemium"
+slug: vectr
+title: Vectr
+category: AI
+price_model: Freemium
 tags: [vector-graphics, design, editing]
 official_url: "https://vectr.com/"
+popularity: 0
 ---
 
 # Vectr

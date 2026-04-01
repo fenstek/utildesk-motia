@@ -1,10 +1,11 @@
 ---
-slug: "photoscissors"
-title: "PhotoScissors"
-category: "AI"
-price_model: "Freemium"
+slug: photoscissors
+title: PhotoScissors
+category: AI
+price_model: Freemium
 tags: [image-editing,background-removal,creative-tools]
 official_url: "https://photoscissors.com/"
+popularity: 0
 ---
 
 # PhotoScissors

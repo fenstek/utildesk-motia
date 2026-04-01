@@ -2,10 +2,10 @@
 slug: rev
 title: Rev
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://www.rev.com/"
-popularity: 2
+popularity: 0
 ---
 
 # Rev

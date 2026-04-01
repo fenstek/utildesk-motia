@@ -2,10 +2,10 @@
 slug: inkscape
 title: Inkscape
 category: AI
-price_model: "Open Source"
+price_model: Open Source
 tags: [ai,design,vector,creative,open-source]
 official_url: "https://inkscape.org/"
-popularity: 1
+popularity: 0
 ---
 
 # Inkscape

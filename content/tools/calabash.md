@@ -1,10 +1,11 @@
 ---
-slug: "calabash"
-title: "Calabash"
-category: "AI"
-price_model: "Open Source"
+slug: calabash
+title: Calabash
+category: AI
+price_model: Open Source
 tags: [qa, test-automation, mobile-testing]
 official_url: "https://www.calabash.com/"
+popularity: 0
 ---
 
 # Calabash

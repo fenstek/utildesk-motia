@@ -1,10 +1,11 @@
 ---
-slug: "snow"
-title: "Snow"
-category: "Design"
-price_model: "Freemium"
+slug: snow
+title: Snow
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.snow.me/"
+popularity: 0
 ---
 
 # Snow

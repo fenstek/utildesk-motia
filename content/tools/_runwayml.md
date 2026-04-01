@@ -1,12 +1,13 @@
 ---
-slug: "runwayml"
-title: "RunwayML"
-category: "Audio & Video"
-price_model: "Je nach Plan"
+slug: runwayml
+title: RunwayML
+category: Audio & Video
+price_model: Je nach Plan
 tags: [video, design, ai]
 official_url: "https://runwayml.com/"
 disabled: true
-reason: "Duplicate of runway"
+reason: Duplicate of runway
+popularity: 0
 ---
 
 # RunwayML

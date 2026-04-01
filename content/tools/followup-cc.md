@@ -1,10 +1,11 @@
 ---
-slug: "followup-cc"
-title: "FollowUp.cc"
-category: "AI"
-price_model: "Abonnement"
+slug: followup-cc
+title: FollowUp.cc
+category: AI
+price_model: Abonnement
 tags: [email-productivity, automation, scheduling]
 official_url: "https://followup.cc/"
+popularity: 0
 ---
 
 # FollowUp.cc

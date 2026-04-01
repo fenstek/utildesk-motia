@@ -1,10 +1,11 @@
 ---
-slug: "zoho-creator"
-title: "Zoho Creator"
-category: "Automatisierung"
-price_model: "Abonnement"
+slug: zoho-creator
+title: Zoho Creator
+category: Automatisierung
+price_model: Abonnement
 tags: [no-code, automation, developer]
 official_url: "https://www.zoho.com/de/creator/"
+popularity: 0
 ---
 
 # Zoho Creator

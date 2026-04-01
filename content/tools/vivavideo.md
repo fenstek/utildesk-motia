@@ -1,10 +1,11 @@
 ---
-slug: "vivavideo"
-title: "VivaVideo"
-category: "Video"
-price_model: "Freemium"
+slug: vivavideo
+title: VivaVideo
+category: Video
+price_model: Freemium
 tags: [video-editing, mobile, creator]
 official_url: "https://www.vivavideo.tv/"
+popularity: 0
 ---
 
 # VivaVideo

@@ -2,10 +2,10 @@
 slug: coda
 title: Coda
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://coda.io/"
-popularity: 1
+popularity: 0
 ---
 
 # Coda

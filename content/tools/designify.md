@@ -1,10 +1,11 @@
 ---
-slug: "designify"
-title: "Designify"
-category: "Design"
-price_model: "Freemium"
+slug: designify
+title: Designify
+category: Design
+price_model: Freemium
 tags: [design, image-editing, ai]
 official_url: "https://www.designify.com/"
+popularity: 0
 ---
 
 # Designify

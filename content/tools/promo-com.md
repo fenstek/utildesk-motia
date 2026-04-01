@@ -1,10 +1,11 @@
 ---
-slug: "promo-com"
-title: "Promo.com"
-category: "AI"
-price_model: "Abonnement"
+slug: promo-com
+title: Promo.com
+category: AI
+price_model: Abonnement
 tags: [video-marketing, video-editing, creator-tools]
 official_url: "https://promo.com/"
+popularity: 0
 ---
 
 # Promo.com

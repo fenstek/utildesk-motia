@@ -1,10 +1,11 @@
 ---
-slug: "hubspot-sales"
-title: "HubSpot Sales"
-category: "AI"
-price_model: "Je nach Plan"
+slug: hubspot-sales
+title: HubSpot Sales
+category: AI
+price_model: Je nach Plan
 tags: [crm, sales, automation]
 official_url: "https://www.hubspot.com/products/sales"
+popularity: 0
 ---
 
 # HubSpot Sales

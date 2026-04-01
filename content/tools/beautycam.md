@@ -1,10 +1,11 @@
 ---
-slug: "beautycam"
-title: "BeautyCam"
-category: "Design"
-price_model: "Freemium"
+slug: beautycam
+title: BeautyCam
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.meitu.com/en/"
+popularity: 0
 ---
 
 # BeautyCam

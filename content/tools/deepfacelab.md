@@ -1,10 +1,11 @@
 ---
-slug: "deepfacelab"
-title: "DeepFaceLab"
-category: "AI"
-price_model: "Open Source"
+slug: deepfacelab
+title: DeepFaceLab
+category: AI
+price_model: Open Source
 tags: [deepfakes, video, open-source]
 official_url: "https://github.com/iperov/DeepFaceLab"
+popularity: 0
 ---
 
 # DeepFaceLab

@@ -1,10 +1,11 @@
 ---
-slug: "front"
-title: "Front"
-category: "AI"
-price_model: ""
+slug: front
+title: Front
+category: AI
+price_model: 
 tags: [customer-support, shared-inbox, communication]
 official_url: "https://front.com/"
+popularity: 0
 ---
 
 # Front

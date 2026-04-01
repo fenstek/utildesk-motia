@@ -1,10 +1,11 @@
 ---
-slug: "freshbooks"
-title: "FreshBooks"
-category: "AI"
-price_model: "Abonnement"
+slug: freshbooks
+title: FreshBooks
+category: AI
+price_model: Abonnement
 tags: ["accounting", "finance"]
 official_url: "https://www.freshbooks.com/"
+popularity: 0
 ---
 
 # FreshBooks

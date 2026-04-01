@@ -5,7 +5,7 @@ category: Developer
 price_model: Freemium
 tags: [developer-tools, coding, automation, productivity, no-code]
 official_url: "https://codesandbox.io/"
-popularity: 1
+popularity: 0
 ---
 
 # CodeSandbox

@@ -1,10 +1,11 @@
 ---
-slug: "pixverse"
-title: "PixVerse"
-category: "Video"
-price_model: "Freemium"
+slug: pixverse
+title: PixVerse
+category: Video
+price_model: Freemium
 tags: [ai, video, creative]
 official_url: "https://pixverse.ai/de/"
+popularity: 0
 ---
 
 # PixVerse

@@ -1,10 +1,11 @@
 ---
-slug: "nltk"
-title: "NLTK (Natural Language Toolkit)"
-category: "AI"
-price_model: "Open Source"
+slug: nltk
+title: NLTK (Natural Language Toolkit)
+category: AI
+price_model: Open Source
 tags: [nlp, python, library]
 official_url: "https://www.nltk.org/index"
+popularity: 0
 ---
 
 # NLTK (Natural Language Toolkit)

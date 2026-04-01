@@ -2,12 +2,12 @@
 slug: rytr
 title: Rytr
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["writing", "design", "marketing"]
-official_url: 'https://rytr.me/'
-affiliate_url: 'https://rytr.me/'
-created_at: "2026-02-07"
-popularity: 0
+official_url: "https://rytr.me/"
+affiliate_url: "https://rytr.me/"
+created_at: 2026-02-07
+popularity: 1
 ---
 
 # Rytr

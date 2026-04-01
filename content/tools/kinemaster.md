@@ -1,10 +1,11 @@
 ---
-slug: "kinemaster"
-title: "KineMaster"
-category: "AI"
-price_model: "Freemium"
+slug: kinemaster
+title: KineMaster
+category: AI
+price_model: Freemium
 tags: [video-editing,mobile,creative-tools]
 official_url: "https://www.kinemaster.com/"
+popularity: 0
 ---
 
 # KineMaster

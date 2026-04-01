@@ -2,10 +2,10 @@
 slug: syllable
 title: Syllable
 category: AI
-price_model: "Kostenpflichtig"
+price_model: Kostenpflichtig
 tags: ["automation"]
 official_url: "https://syllable.ai/"
-popularity: 1
+popularity: 0
 ---
 
 # Syllable

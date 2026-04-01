@@ -1,10 +1,11 @@
 ---
-slug: "google-assistant"
-title: "Google Assistant"
-category: "AI"
-price_model: "Freemium"
+slug: google-assistant
+title: Google Assistant
+category: AI
+price_model: Freemium
 tags: [ai, chatbot]
 official_url: "https://assistant.google.com/"
+popularity: 0
 ---
 
 # Google Assistant

@@ -1,10 +1,11 @@
 ---
-slug: "chanty"
-title: "Chanty"
-category: "AI"
-price_model: "Freemium"
+slug: chanty
+title: Chanty
+category: AI
+price_model: Freemium
 tags: [communication, collaboration, productivity]
 official_url: "https://www.chanty.com/"
+popularity: 0
 ---
 
 # Chanty

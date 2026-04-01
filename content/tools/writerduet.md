@@ -1,10 +1,11 @@
 ---
-slug: "writerduet"
-title: "WriterDuet"
-category: "Produktivität"
-price_model: "Freemium"
+slug: writerduet
+title: WriterDuet
+category: Produktivität
+price_model: Freemium
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.writerduet.com/"
+popularity: 0
 ---
 
 # WriterDuet

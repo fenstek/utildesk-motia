@@ -1,10 +1,11 @@
 ---
-slug: "storymapjs"
-title: "StoryMapJS"
-category: "AI"
-price_model: "Kostenlos"
+slug: storymapjs
+title: StoryMapJS
+category: AI
+price_model: Kostenlos
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
+popularity: 0
 ---
 
 # StoryMapJS

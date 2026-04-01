@@ -1,10 +1,11 @@
 ---
-slug: "deepseek"
-title: "DeepSeek"
-category: "AI"
-price_model: "Freemium"
+slug: deepseek
+title: DeepSeek
+category: AI
+price_model: Freemium
 tags: [ai, assistant, chatbot]
 official_url: "https://www.deepseek.com/"
+popularity: 0
 ---
 
 # DeepSeek

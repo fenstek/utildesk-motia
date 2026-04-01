@@ -2,12 +2,12 @@
 slug: jasper
 title: Jasper
 category: Produktivität
-price_model: "Freemium"
+price_model: Freemium
 tags: ["ai", "productivity"]
 official_url: "https://www.jasper.ai/"
 affiliate_url: "https://www.jasper.ai/"
 created_at: 2026-02-07
-popularity: 16
+popularity: 1
 ---
 
 # Jasper

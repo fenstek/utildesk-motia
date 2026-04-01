@@ -1,10 +1,11 @@
 ---
-slug: "soapui"
-title: "SoapUI"
-category: "AI"
-price_model: "Freemium"
+slug: soapui
+title: SoapUI
+category: AI
+price_model: Freemium
 tags: [api-testing, test-automation, developer-tools]
 official_url: "https://smartbear.com/product/ready-api/api-functional-testing/"
+popularity: 0
 ---
 
 # SoapUI

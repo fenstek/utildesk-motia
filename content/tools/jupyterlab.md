@@ -1,10 +1,11 @@
 ---
-slug: "jupyterlab"
-title: "JupyterLab"
-category: "AI"
-price_model: "Open Source"
+slug: jupyterlab
+title: JupyterLab
+category: AI
+price_model: Open Source
 tags: [notebooks, collaboration, developer-tools]
 official_url: "https://jupyter.org/"
+popularity: 0
 ---
 
 # JupyterLab

@@ -1,10 +1,11 @@
 ---
-slug: "google-slides"
-title: "Google Slides"
-category: "AI"
-price_model: "Freemium"
+slug: google-slides
+title: Google Slides
+category: AI
+price_model: Freemium
 tags: [presentations,productivity,google-workspace]
 official_url: "https://workspace.google.com/products/slides/"
+popularity: 0
 ---
 
 # Google Slides

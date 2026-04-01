@@ -2,10 +2,10 @@
 slug: camtasia
 title: Camtasia
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://www.techsmith.com/camtasia/"
-popularity: 1
+popularity: 0
 ---
 
 # Camtasia

@@ -1,10 +1,11 @@
 ---
-slug: "pega"
-title: "Pega"
-category: "AI"
-price_model: "Je nach Plan"
+slug: pega
+title: Pega
+category: AI
+price_model: Je nach Plan
 tags: [workflow-automation, low-code, enterprise]
 official_url: "https://www.pega.com/"
+popularity: 0
 ---
 
 # Pega

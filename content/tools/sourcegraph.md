@@ -1,10 +1,11 @@
 ---
-slug: "sourcegraph"
-title: "Sourcegraph"
-category: "AI"
-price_model: "Je nach Plan"
+slug: sourcegraph
+title: Sourcegraph
+category: AI
+price_model: Je nach Plan
 tags: [code-search, developer-tools, code-intelligence]
 official_url: "https://sourcegraph.com/"
+popularity: 0
 ---
 
 # Sourcegraph

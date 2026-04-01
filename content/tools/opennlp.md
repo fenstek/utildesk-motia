@@ -1,10 +1,11 @@
 ---
-slug: "opennlp"
-title: "OpenNLP"
-category: "AI"
-price_model: "Open Source"
+slug: opennlp
+title: OpenNLP
+category: AI
+price_model: Open Source
 tags: [nlp, java, library]
 official_url: "https://opennlp.apache.org/"
+popularity: 0
 ---
 
 # OpenNLP

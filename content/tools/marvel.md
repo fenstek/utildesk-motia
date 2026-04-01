@@ -1,10 +1,11 @@
 ---
-slug: "marvel"
-title: "Marvel"
-category: "AI"
-price_model: "Je nach Plan"
+slug: marvel
+title: Marvel
+category: AI
+price_model: Je nach Plan
 tags: [prototyping, ui-design, design-tools]
 official_url: "https://marvelapp.com/"
+popularity: 1
 ---
 
 # Marvel

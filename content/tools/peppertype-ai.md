@@ -2,10 +2,10 @@
 slug: peppertype-ai
 title: Peppertype.ai
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [writing, content, marketing, automation, productivity]
 official_url: "https://www.pepper.inc/"
-popularity: 2
+popularity: 1
 ---
 
 # Peppertype.ai

@@ -1,10 +1,11 @@
 ---
-slug: "researchgate"
-title: "ResearchGate"
-category: "AI"
-price_model: "Freemium"
+slug: researchgate
+title: ResearchGate
+category: AI
+price_model: Freemium
 tags: [research,publications,academic-networking]
 official_url: "https://www.researchgate.net/"
+popularity: 0
 ---
 
 # ResearchGate

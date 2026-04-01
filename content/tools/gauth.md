@@ -1,10 +1,11 @@
 ---
-slug: "gauth"
-title: "Gauth"
-category: "Produktivitaet"
-price_model: "Freemium"
+slug: gauth
+title: Gauth
+category: Produktivitaet
+price_model: Freemium
 tags: [ai, education]
 official_url: "https://www.gauthmath.com/"
+popularity: 0
 ---
 
 # Gauth

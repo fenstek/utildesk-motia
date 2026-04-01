@@ -1,10 +1,11 @@
 ---
-slug: "robot-framework"
-title: "Robot Framework"
-category: "AI"
-price_model: "Open Source"
+slug: robot-framework
+title: Robot Framework
+category: AI
+price_model: Open Source
 tags: [test-automation, qa, developer-tools]
 official_url: "https://robotframework.org/"
+popularity: 0
 ---
 
 # Robot Framework

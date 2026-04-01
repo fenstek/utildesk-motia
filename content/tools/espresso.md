@@ -1,10 +1,11 @@
 ---
-slug: "espresso"
-title: "Espresso"
-category: "AI"
-price_model: "Je nach Plan"
+slug: espresso
+title: Espresso
+category: AI
+price_model: Je nach Plan
 tags: [data, analytics, machine-learning, automation, cloud]
 official_url: "https://espresso.ai/"
+popularity: 0
 ---
 
 # Espresso

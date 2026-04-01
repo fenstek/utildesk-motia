@@ -1,10 +1,11 @@
 ---
-slug: "stanza"
-title: "Stanza"
-category: "AI"
-price_model: "Open Source"
+slug: stanza
+title: Stanza
+category: AI
+price_model: Open Source
 tags: [nlp, python, developer-tools]
 official_url: "https://stanfordnlp.github.io/stanza/"
+popularity: 0
 ---
 
 # Stanza

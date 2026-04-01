@@ -2,10 +2,10 @@
 slug: clearscope
 title: Clearscope
 category: AI
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [seo, content, marketing, automation]
 official_url: "https://www.clearscope.io/"
-popularity: 5
+popularity: 0
 ---
 
 # Clearscope

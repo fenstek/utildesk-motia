@@ -5,7 +5,7 @@ category: Audio
 price_model: 
 tags: ["audio"]
 official_url: "https://www.assemblyai.com"
-popularity: 1
+popularity: 0
 ---
 
 # AssemblyAI

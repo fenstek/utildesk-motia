@@ -1,10 +1,11 @@
 ---
-slug: "observable"
-title: "Observable"
-category: "AI"
-price_model: "Freemium"
+slug: observable
+title: Observable
+category: AI
+price_model: Freemium
 tags: [data-visualization, notebooks, analytics]
 official_url: "https://observablehq.com/"
+popularity: 0
 ---
 
 # Observable

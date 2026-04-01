@@ -1,10 +1,11 @@
 ---
-slug: "amazon-redshift"
-title: "Amazon Redshift"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: amazon-redshift
+title: Amazon Redshift
+category: AI
+price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, aws]
 official_url: "https://aws.amazon.com/redshift/"
+popularity: 0
 ---
 
 # Amazon Redshift

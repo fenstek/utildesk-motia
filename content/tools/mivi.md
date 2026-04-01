@@ -1,10 +1,11 @@
 ---
-slug: "mivi"
-title: "Mivi"
-category: "Video"
-price_model: "Freemium"
+slug: mivi
+title: Mivi
+category: Video
+price_model: Freemium
 tags: [ai, video]
 official_url: "https://miviapp.com/"
+popularity: 0
 ---
 
 # Mivi

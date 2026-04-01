@@ -1,10 +1,11 @@
 ---
-slug: "zoho-desk"
-title: "Zoho Desk"
-category: "AI"
-price_model: "Abonnement"
+slug: zoho-desk
+title: Zoho Desk
+category: AI
+price_model: Abonnement
 tags: [helpdesk,customer-support,saas]
 official_url: "https://www.zoho.com/de/desk/"
+popularity: 0
 ---
 
 # Zoho Desk

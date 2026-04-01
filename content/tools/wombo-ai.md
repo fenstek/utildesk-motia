@@ -1,10 +1,11 @@
 ---
-slug: "wombo-ai"
-title: "Wombo AI"
-category: "AI"
-price_model: "Je nach Plan"
+slug: wombo-ai
+title: Wombo AI
+category: AI
+price_model: Je nach Plan
 tags: [ai-art,image-generation,mobile]
 official_url: "https://w.ai/"
+popularity: 0
 ---
 
 # Wombo AI

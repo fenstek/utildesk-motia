@@ -1,10 +1,11 @@
 ---
-slug: "slack"
-title: "Slack"
-category: "AI"
-price_model: "Freemium"
+slug: slack
+title: Slack
+category: AI
+price_model: Freemium
 tags: [communication, collaboration, productivity]
 official_url: "https://slack.com/"
+popularity: 0
 ---
 
 # Slack

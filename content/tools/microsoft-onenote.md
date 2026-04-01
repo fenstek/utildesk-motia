@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-onenote"
-title: "Microsoft OneNote"
-category: "AI"
-price_model: "Freemium"
+slug: microsoft-onenote
+title: Microsoft OneNote
+category: AI
+price_model: Freemium
 tags: [notes, productivity, office-suite]
 official_url: "https://onenote.cloud.microsoft/"
+popularity: 0
 ---
 
 # Microsoft OneNote

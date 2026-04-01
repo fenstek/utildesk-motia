@@ -1,10 +1,11 @@
 ---
-slug: "freshdesk"
-title: "Freshdesk"
-category: "AI"
-price_model: "Abonnement"
+slug: freshdesk
+title: Freshdesk
+category: AI
+price_model: Abonnement
 tags: [customer-support, helpdesk, ticketing]
 official_url: "https://www.freshworks.com/freshdesk/"
+popularity: 0
 ---
 
 # Freshdesk

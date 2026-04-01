@@ -1,10 +1,11 @@
 ---
-slug: "faceapp"
-title: "FaceApp"
-category: "Design"
-price_model: "Freemium"
+slug: faceapp
+title: FaceApp
+category: Design
+price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.faceapp.com/"
+popularity: 0
 ---
 
 # FaceApp

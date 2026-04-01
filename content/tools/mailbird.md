@@ -1,10 +1,11 @@
 ---
-slug: "mailbird"
-title: "Mailbird"
-category: "AI"
-price_model: "Je nach Plan"
+slug: mailbird
+title: Mailbird
+category: AI
+price_model: Je nach Plan
 tags: [email-productivity,communication,inbox]
 official_url: "https://www.getmailbird.com/"
+popularity: 0
 ---
 
 # Mailbird

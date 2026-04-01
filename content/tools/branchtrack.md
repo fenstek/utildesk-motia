@@ -1,10 +1,11 @@
 ---
-slug: "branchtrack"
-title: "BranchTrack"
-category: "AI"
-price_model: "Abonnement"
+slug: branchtrack
+title: BranchTrack
+category: AI
+price_model: Abonnement
 tags: [sales, training, simulations]
 official_url: "https://www.branchtrack.com/"
+popularity: 0
 ---
 
 # BranchTrack

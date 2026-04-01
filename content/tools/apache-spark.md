@@ -1,10 +1,11 @@
 ---
-slug: "apache-spark"
-title: "Apache Spark"
-category: "AI"
-price_model: "Open Source"
+slug: apache-spark
+title: Apache Spark
+category: AI
+price_model: Open Source
 tags: [big-data,data-engineering,distributed-computing]
 official_url: "https://spark.apache.org/"
+popularity: 0
 ---
 
 # Apache Spark

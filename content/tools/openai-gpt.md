@@ -2,11 +2,11 @@
 slug: openai-gpt
 title: OpenAI GPT
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai,llm]
 official_url: "https://openai.com/index/hello-gpt-4o"
 created_at: 2026-02-13
-popularity: 1
+popularity: 3
 ---
 
 

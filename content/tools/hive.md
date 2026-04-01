@@ -1,10 +1,11 @@
 ---
-slug: "hive"
-title: "Hive"
-category: "AI"
-price_model: "Freemium"
+slug: hive
+title: Hive
+category: AI
+price_model: Freemium
 tags: [project-management, collaboration, workflow]
 official_url: "https://hive.com/"
+popularity: 0
 ---
 
 # Hive

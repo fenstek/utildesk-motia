@@ -1,10 +1,11 @@
 ---
-slug: "sony-vegas-pro"
-title: "Sony Vegas Pro"
-category: "AI"
-price_model: "Je nach Plan"
+slug: sony-vegas-pro
+title: Sony Vegas Pro
+category: AI
+price_model: Je nach Plan
 tags: [video-editing, post-production, audio-video]
 official_url: "https://www.vegascreativesoftware.com/us/vegas-pro/"
+popularity: 0
 ---
 
 # Sony Vegas Pro

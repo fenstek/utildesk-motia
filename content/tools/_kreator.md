@@ -2,14 +2,14 @@
 slug: kreator
 title: Kreator
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, writing, content, marketing]
 official_url: 
 affiliate_url: 
 disabled: true
 reason: Not an AI tool / irrelevant website
 created_at: 2026-02-11
-popularity: 1
+popularity: 0
 ---
 
 

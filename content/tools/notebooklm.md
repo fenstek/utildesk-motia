@@ -1,10 +1,11 @@
 ---
-slug: "notebooklm"
-title: "NotebookLM"
-category: "Produktivitaet"
-price_model: "Freemium"
+slug: notebooklm
+title: NotebookLM
+category: Produktivitaet
+price_model: Freemium
 tags: [ai, research, notes]
 official_url: "https://notebooklm.google/"
+popularity: 0
 ---
 
 # NotebookLM

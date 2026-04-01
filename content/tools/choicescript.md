@@ -1,10 +1,11 @@
 ---
-slug: "choicescript"
-title: "ChoiceScript"
-category: "AI"
-price_model: "Kostenlos"
+slug: choicescript
+title: ChoiceScript
+category: AI
+price_model: Kostenlos
 tags: [interactive-fiction, writing, games]
 official_url: "https://www.choiceofgames.com/make-your-own-games/choicescript-intro/"
+popularity: 0
 ---
 
 # ChoiceScript

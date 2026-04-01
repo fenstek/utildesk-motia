@@ -1,10 +1,11 @@
 ---
-slug: "workday"
-title: "Workday"
-category: "AI"
-price_model: "Je nach Plan"
+slug: workday
+title: Workday
+category: AI
+price_model: Je nach Plan
 tags: [hr, finance, hcm]
 official_url: "https://www.workday.com/"
+popularity: 0
 ---
 
 # Workday

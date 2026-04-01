@@ -1,10 +1,11 @@
 ---
-slug: "workday-hcm"
-title: "Workday HCM"
-category: "AI"
-price_model: ""
+slug: workday-hcm
+title: Workday HCM
+category: AI
+price_model: 
 tags: [hcm, hr, enterprise-software]
 official_url: "https://www.workday.com/en-us/products/human-capital-management/overview.html"
+popularity: 0
 ---
 
 # Workday HCM

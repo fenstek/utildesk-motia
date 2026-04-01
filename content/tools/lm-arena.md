@@ -1,10 +1,11 @@
 ---
-slug: "lm-arena"
-title: "LM Arena"
-category: "Developer"
-price_model: "Freemium"
+slug: lm-arena
+title: LM Arena
+category: Developer
+price_model: Freemium
 tags: [ai, llm, data-science]
 official_url: "https://arena.ai/"
+popularity: 0
 ---
 
 # LM Arena

@@ -2,11 +2,11 @@
 slug: clipchamp
 title: Clipchamp
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["video", "content"]
 official_url: "https://clipchamp.com/en/"
 created_at: 2026-02-15
-popularity: 1
+popularity: 0
 ---
 
 # Clipchamp

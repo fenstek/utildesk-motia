@@ -1,10 +1,11 @@
 ---
-slug: "marian-nmt"
-title: "Marian NMT"
-category: "AI"
-price_model: "Open Source"
+slug: marian-nmt
+title: Marian NMT
+category: AI
+price_model: Open Source
 tags: [translation, nmt, open-source]
 official_url: "https://marian-nmt.github.io/"
+popularity: 1
 ---
 
 # Marian NMT

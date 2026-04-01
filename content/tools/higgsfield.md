@@ -1,10 +1,11 @@
 ---
-slug: "higgsfield"
-title: "Higgsfield"
-category: "Video"
-price_model: "Freemium"
+slug: higgsfield
+title: Higgsfield
+category: Video
+price_model: Freemium
 tags: [ai, video, creative]
 official_url: "https://higgsfield.ai/"
+popularity: 0
 ---
 
 # Higgsfield

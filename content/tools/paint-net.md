@@ -1,10 +1,11 @@
 ---
-slug: "paint-net"
-title: "Paint.NET"
-category: "AI"
-price_model: "Freemium"
+slug: paint-net
+title: Paint.NET
+category: AI
+price_model: Freemium
 tags: [image-editing, design, graphics]
 official_url: "https://www.getpaint.net/"
+popularity: 0
 ---
 
 # Paint.NET

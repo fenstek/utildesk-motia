@@ -1,10 +1,11 @@
 ---
-slug: "when2meet"
-title: "When2meet"
-category: "AI"
-price_model: ""
+slug: when2meet
+title: When2meet
+category: AI
+price_model: 
 tags: [scheduling, availability, meeting-planning]
 official_url: "https://www.when2meet.com/"
+popularity: 0
 ---
 
 # When2meet

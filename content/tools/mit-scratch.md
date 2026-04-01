@@ -1,10 +1,11 @@
 ---
-slug: "mit-scratch"
-title: "MIT Scratch"
-category: "AI"
-price_model: "Kostenlos"
+slug: mit-scratch
+title: MIT Scratch
+category: AI
+price_model: Kostenlos
 tags: [coding, education, creative-learning]
 official_url: "https://scratch.mit.edu/"
+popularity: 0
 ---
 
 # MIT Scratch

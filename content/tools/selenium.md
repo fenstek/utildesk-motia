@@ -1,10 +1,11 @@
 ---
-slug: "selenium"
-title: "Selenium"
-category: "AI"
-price_model: "Open Source"
+slug: selenium
+title: Selenium
+category: AI
+price_model: Open Source
 tags: [test-automation, webdriver, developer-tools]
 official_url: "https://www.selenium.dev/"
+popularity: 0
 ---
 
 # Selenium

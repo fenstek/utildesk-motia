@@ -1,10 +1,11 @@
 ---
-slug: "salesforce-sales-cloud"
-title: "Salesforce Sales Cloud"
-category: "AI"
-price_model: "Abonnement"
+slug: salesforce-sales-cloud
+title: Salesforce Sales Cloud
+category: AI
+price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.salesforce.com/sales/"
+popularity: 0
 ---
 
 # Salesforce Sales Cloud

@@ -1,10 +1,11 @@
 ---
-slug: "stormboard"
-title: "Stormboard"
-category: "Produktivitat"
-price_model: "Je nach Plan"
+slug: stormboard
+title: Stormboard
+category: Produktivitat
+price_model: Je nach Plan
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://stormboard.com/home"
+popularity: 0
 ---
 
 # Stormboard

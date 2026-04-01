@@ -1,10 +1,11 @@
 ---
-slug: "cerebras-wafer-scale-engine"
-title: "Cerebras Wafer-Scale Engine"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: cerebras-wafer-scale-engine
+title: Cerebras Wafer-Scale Engine
+category: AI
+price_model: Individuelles Angebot
 tags: [hardware, ml, infrastructure]
 official_url: "https://www.cerebras.ai/"
+popularity: 0
 ---
 
 # Cerebras Wafer-Scale Engine

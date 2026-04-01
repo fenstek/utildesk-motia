@@ -1,10 +1,11 @@
 ---
-slug: "ai-explainability-360"
-title: "AI Explainability 360"
-category: "AI"
-price_model: "Open Source"
+slug: ai-explainability-360
+title: AI Explainability 360
+category: AI
+price_model: Open Source
 tags: [ml, explainability, ai]
 official_url: "https://github.com/Trusted-AI/AIX360"
+popularity: 0
 ---
 
 # AI Explainability 360

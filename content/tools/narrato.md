@@ -1,10 +1,11 @@
 ---
-slug: "narrato"
-title: "Narrato"
-category: "AI"
-price_model: "Freemium"
+slug: narrato
+title: Narrato
+category: AI
+price_model: Freemium
 tags: [content-marketing, ai-writing, workflow]
 official_url: "https://narrato.io/"
+popularity: 0
 ---
 
 # Narrato

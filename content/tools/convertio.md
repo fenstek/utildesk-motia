@@ -1,10 +1,11 @@
 ---
-slug: "convertio"
-title: "Convertio"
-category: "AI"
-price_model: "Freemium"
+slug: convertio
+title: Convertio
+category: AI
+price_model: Freemium
 tags: [file-conversion, documents, utilities]
 official_url: "https://convertio.co/"
+popularity: 0
 ---
 
 # Convertio

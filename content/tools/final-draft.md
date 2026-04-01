@@ -1,10 +1,11 @@
 ---
-slug: "final-draft"
-title: "Final Draft"
-category: "AI"
-price_model: "Kostenpflichtig"
+slug: final-draft
+title: Final Draft
+category: AI
+price_model: Kostenpflichtig
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.finaldraft.com/"
+popularity: 0
 ---
 
 # Final Draft

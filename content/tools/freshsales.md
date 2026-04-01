@@ -1,10 +1,11 @@
 ---
-slug: "freshsales"
-title: "Freshsales"
-category: "AI"
-price_model: "Abonnement"
+slug: freshsales
+title: Freshsales
+category: AI
+price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.freshworks.com/crm/sales/"
+popularity: 0
 ---
 
 # Freshsales

@@ -1,10 +1,11 @@
 ---
-slug: "fade-in"
-title: "Fade In"
-category: "AI"
-price_model: "Kostenpflichtig"
+slug: fade-in
+title: Fade In
+category: AI
+price_model: Kostenpflichtig
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.fadeinpro.com/"
+popularity: 0
 ---
 
 # Fade In

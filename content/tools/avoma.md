@@ -1,10 +1,11 @@
 ---
-slug: "avoma"
-title: "Avoma"
-category: "AI"
-price_model: "Abonnement"
+slug: avoma
+title: Avoma
+category: AI
+price_model: Abonnement
 tags: [meetings, sales, transcription]
 official_url: "https://www.avoma.com/"
+popularity: 0
 ---
 
 # Avoma

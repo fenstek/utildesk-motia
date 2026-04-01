@@ -1,10 +1,11 @@
 ---
-slug: "presto"
-title: "Presto"
-category: "AI"
-price_model: "Open Source"
+slug: presto
+title: Presto
+category: AI
+price_model: Open Source
 tags: [sql, query-engine, big-data]
 official_url: "https://prestodb.io/"
+popularity: 0
 ---
 
 # Presto

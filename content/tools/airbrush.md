@@ -1,10 +1,11 @@
 ---
-slug: "airbrush"
-title: "AirBrush"
-category: "AI"
-price_model: "Freemium"
+slug: airbrush
+title: AirBrush
+category: AI
+price_model: Freemium
 tags: [photo-editing, mobile, beauty]
 official_url: "https://airbrush.com/"
+popularity: 0
 ---
 
 # AirBrush

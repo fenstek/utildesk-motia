@@ -1,10 +1,11 @@
 ---
-slug: "kimi"
-title: "Kimi"
-category: "AI"
-price_model: "Freemium"
+slug: kimi
+title: Kimi
+category: AI
+price_model: Freemium
 tags: [ai, assistant, chatbot]
 official_url: "https://www.kimi.com/"
+popularity: 0
 ---
 
 # Kimi

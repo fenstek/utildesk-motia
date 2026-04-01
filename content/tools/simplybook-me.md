@@ -1,10 +1,11 @@
 ---
-slug: "simplybook-me"
-title: "SimplyBook.me"
-category: "AI"
-price_model: "Freemium, Abonnement, Je nach Plan"
+slug: simplybook-me
+title: SimplyBook.me
+category: AI
+price_model: Freemium, Abonnement, Je nach Plan
 tags: [booking,scheduling,saas]
 official_url: "https://simplybook.me/en/"
+popularity: 0
 ---
 
 # SimplyBook.me

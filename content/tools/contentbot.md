@@ -1,10 +1,11 @@
 ---
-slug: "contentbot"
-title: "ContentBot"
-category: "Schreiben & Content"
-price_model: "Je nach Plan"
+slug: contentbot
+title: ContentBot
+category: Schreiben & Content
+price_model: Je nach Plan
 tags: [writing, content, automation]
 official_url: "https://www.contentbot.ai/"
+popularity: 0
 ---
 
 # ContentBot

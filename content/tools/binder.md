@@ -1,10 +1,11 @@
 ---
-slug: "binder"
-title: "Binder"
-category: "AI"
-price_model: "Open Source"
+slug: binder
+title: Binder
+category: AI
+price_model: Open Source
 tags: [notebooks,reproducibility,developer-tools]
 official_url: "https://mybinder.org/"
+popularity: 0
 ---
 
 # Binder

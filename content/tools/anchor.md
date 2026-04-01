@@ -1,10 +1,11 @@
 ---
-slug: "anchor"
-title: "Anchor"
-category: "AI"
-price_model: "Freemium"
+slug: anchor
+title: Anchor
+category: AI
+price_model: Freemium
 tags: [podcast, creator-tools, audio]
 official_url: "https://creators.spotify.com/"
+popularity: 0
 ---
 
 # Anchor

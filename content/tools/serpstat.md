@@ -1,10 +1,11 @@
 ---
-slug: "serpstat"
-title: "Serpstat"
-category: "Marketing & Vertrieb"
-price_model: "Abonnement"
+slug: serpstat
+title: Serpstat
+category: Marketing & Vertrieb
+price_model: Abonnement
 tags: [seo, marketing, analytics]
 official_url: "https://serpstat.com/"
+popularity: 0
 ---
 
 # Serpstat

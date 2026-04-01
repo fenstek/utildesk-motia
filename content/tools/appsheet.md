@@ -1,10 +1,11 @@
 ---
-slug: "appsheet"
-title: "AppSheet"
-category: "AI"
-price_model: "Je nach Plan"
+slug: appsheet
+title: AppSheet
+category: AI
+price_model: Je nach Plan
 tags: [no-code, app-development, workflow]
 official_url: "https://about.appsheet.com/home/"
+popularity: 0
 ---
 
 # AppSheet

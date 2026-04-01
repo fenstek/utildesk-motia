@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-vision-api"
-title: "Google Cloud Vision API"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-vision-api
+title: Google Cloud Vision API
+category: AI
+price_model: Nutzungsbasiert
 tags: [vision, ocr, ai]
 official_url: "https://cloud.google.com/vision"
+popularity: 0
 ---
 
 # Google Cloud Vision API

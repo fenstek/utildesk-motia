@@ -1,10 +1,11 @@
 ---
-slug: "jetbrains-gateway"
-title: "JetBrains Gateway"
-category: "AI"
-price_model: "Je nach Plan"
+slug: jetbrains-gateway
+title: JetBrains Gateway
+category: AI
+price_model: Je nach Plan
 tags: [remote-development, ide, developer-tools]
 official_url: "https://www.jetbrains.com/help/idea/jetbrains-gateway.html"
+popularity: 0
 ---
 
 # JetBrains Gateway

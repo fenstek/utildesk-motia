@@ -1,10 +1,11 @@
 ---
-slug: "jabref"
-title: "JabRef"
-category: "AI"
-price_model: "Open Source"
+slug: jabref
+title: JabRef
+category: AI
+price_model: Open Source
 tags: [reference-management, research, writing]
 official_url: "https://www.jabref.org/"
+popularity: 0
 ---
 
 # JabRef

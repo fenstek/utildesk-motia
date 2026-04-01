@@ -2,15 +2,12 @@
 slug: github-copilot
 title: GitHub Copilot
 category: Developer
-price_model: "Freemium"
-tags:
-  - ai
-  - developer
-  - devtools
-official_url: 'https://github.com/features/copilot/'
-affiliate_url: 'https://github.com/features/copilot/'
-created_at: "2026-02-02"
-popularity: 0
+price_model: Freemium
+tags: 
+official_url: "https://github.com/features/copilot/"
+affiliate_url: "https://github.com/features/copilot/"
+created_at: 2026-02-02
+popularity: 1
 ---
 
 
