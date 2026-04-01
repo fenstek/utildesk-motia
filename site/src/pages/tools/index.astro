@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { realpathSync } from "node:fs";
 import { readdir, readFile, stat } from "node:fs/promises";
-import { join } from "node:path";
+import { join, relative } from "node:path";
 import { execFileSync } from "node:child_process";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
@@ -13,12 +14,25 @@ const toolsDir = join(process.cwd(), "content", "tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
+const gitRepoRoot = (() => {
+  try {
+    return execFileSync("git", ["rev-parse", "--show-toplevel"], {
+      cwd: process.cwd(),
+      encoding: "utf-8",
+    }).trim();
+  } catch {
+    return process.cwd();
+  }
+})();
+
+const gitToolsPath = relative(gitRepoRoot, realpathSync(toolsDir)).replace(/\\/g, "/") || "content/tools";
+
 const gitAddedAtByFile = (() => {
   try {
     const output = execFileSync(
       "git",
-      ["log", "--diff-filter=A", "--format=%ct", "--name-only", "--", "content/tools"],
-      { cwd: process.cwd(), encoding: "utf-8" }
+      ["log", "--diff-filter=A", "--format=%ct", "--name-only", "--", gitToolsPath],
+      { cwd: gitRepoRoot, encoding: "utf-8" }
     );
     const map = new Map<string, number>();
     let currentTimestamp = 0;
@@ -29,7 +43,7 @@ const gitAddedAtByFile = (() => {
         currentTimestamp = Number(trimmed) * 1000;
         return;
       }
-      if (!trimmed.startsWith("content/tools/")) return;
+      if (!trimmed.startsWith(`${gitToolsPath}/`)) return;
       if (!map.has(trimmed) && currentTimestamp > 0) {
         map.set(trimmed, currentTimestamp);
       }
@@ -115,7 +129,7 @@ const tools = await Promise.all(
     // Prefer explicit created_at, then git-added time, and only then file mtime as last resort
     const createdAt = data.created_at ? String(data.created_at) : "";
     const parsedCreatedAtMs = createdAt ? new Date(createdAt).getTime() : 0;
-    const gitAddedAtMs = gitAddedAtByFile.get(`content/tools/${file}`) || 0;
+    const gitAddedAtMs = gitAddedAtByFile.get(`${gitToolsPath}/${file}`) || 0;
     const createdAtMs = Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0
       ? parsedCreatedAtMs
       : gitAddedAtMs || stats.mtimeMs;
