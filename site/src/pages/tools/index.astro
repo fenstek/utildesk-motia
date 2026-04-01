@@ -84,9 +84,12 @@ const tools = await Promise.all(
             : "";
     const excerpt = description || getExcerpt(content);
 
-    // Read created_at from frontmatter, fallback to "1970-01-01" if missing
-    const createdAt = data.created_at ? String(data.created_at) : "1970-01-01";
-    const createdAtMs = new Date(createdAt).getTime() || 0;
+    // Prefer explicit created_at, but fall back to file mtime for newer generated pages
+    const createdAt = data.created_at ? String(data.created_at) : "";
+    const parsedCreatedAtMs = createdAt ? new Date(createdAt).getTime() : 0;
+    const createdAtMs = Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0
+      ? parsedCreatedAtMs
+      : stats.mtimeMs;
 
     // Read popularity from frontmatter, fallback to 0 if missing
     const popularity = data.popularity ? Number(data.popularity) : 0;
