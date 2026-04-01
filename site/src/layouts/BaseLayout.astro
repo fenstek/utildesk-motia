@@ -1,4 +1,4 @@
----
+﻿---
 interface Props {
   title?: string;
   description?: string;
@@ -22,6 +22,23 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script is:inline>
+      (() => {
+        const storageKey = "utildesk-theme";
+        try {
+          const storedTheme = localStorage.getItem(storageKey);
+          const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme;
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch {
+          document.documentElement.dataset.theme = "light";
+          document.documentElement.style.colorScheme = "light";
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="/styles/global.css" />
     <title>{title}</title>
     <slot name="head" />
@@ -37,8 +54,14 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             <img src="/logo-grid.svg" alt="Utildesk" />
             Utildesk
           </a>
-          <div class="nav-links">
-            <a href="/tools/">Tools</a>
+          <div class="nav-actions">
+            <div class="nav-links">
+              <a href="/tools/">Tools</a>
+            </div>
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design umschalten" aria-pressed="false" title="Design umschalten">
+              <span class="theme-toggle__dot" aria-hidden="true"></span>
+              <span data-theme-label>Hell</span>
+            </button>
           </div>
         </nav>
       </div>
@@ -65,5 +88,65 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Disclaimer: Utildesk is an independent tools directory. All trademarks, logos, and brand names are the property of their respective owners.</p>
       </div>
     </footer>
+
+    <script is:inline>
+      (() => {
+        const storageKey = "utildesk-theme";
+        const root = document.documentElement;
+        const button = document.getElementById("theme-toggle");
+        const label = button?.querySelector("[data-theme-label]");
+        const media = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+
+        const getStoredTheme = () => {
+          try {
+            const value = localStorage.getItem(storageKey);
+            return value === "dark" || value === "light" ? value : null;
+          } catch {
+            return null;
+          }
+        };
+
+        const applyTheme = (theme, persist = false) => {
+          root.dataset.theme = theme;
+          root.style.colorScheme = theme;
+          if (button) {
+            button.setAttribute("aria-pressed", String(theme === "dark"));
+            button.title = theme === "dark" ? "Zum hellen Design wechseln" : "Zum dunklen Design wechseln";
+          }
+          if (label) {
+            label.textContent = theme === "dark" ? "Dunkel" : "Hell";
+          }
+          if (persist) {
+            try {
+              localStorage.setItem(storageKey, theme);
+            } catch {
+              // ignore storage errors
+            }
+          }
+        };
+
+        applyTheme(root.dataset.theme === "dark" ? "dark" : "light");
+
+        if (button) {
+          button.addEventListener("click", () => {
+            const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+            applyTheme(nextTheme, true);
+          });
+        }
+
+        if (media) {
+          const syncSystemTheme = (event) => {
+            if (getStoredTheme()) return;
+            applyTheme(event.matches ? "dark" : "light");
+          };
+
+          if (typeof media.addEventListener === "function") {
+            media.addEventListener("change", syncSystemTheme);
+          } else if (typeof media.addListener === "function") {
+            media.addListener(syncSystemTheme);
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
