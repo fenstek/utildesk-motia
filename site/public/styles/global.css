@@ -241,6 +241,11 @@ main.container { padding-top: 84px; }
 .footer-content { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-5); padding: var(--space-7) 0 var(--space-5); }
 .footer-brand { display: flex; align-items: center; gap: 8px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--on-surface); }
 .footer-brand img { height: 18px; width: auto; }
+
+:root[data-theme="dark"] .brand img,
+:root[data-theme="dark"] .footer-brand img {
+  filter: brightness(0) invert(1);
+}
 .footer-links { display: flex; flex-wrap: wrap; gap: var(--space-5); }
 .footer-links a { font-size: 0.88rem; color: var(--secondary); opacity: 0.8; transition: opacity var(--transition), color var(--transition); }
 .footer-links a:hover { opacity: 1; color: var(--primary); }
