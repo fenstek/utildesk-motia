@@ -2,12 +2,12 @@
 slug: copy-ai
 title: Copy.ai
 category: Produktivität
-price_model: "Freemium"
+price_model: Freemium
 tags: ["ai", "productivity", "writing"]
 official_url: "https://www.copy.ai"
 affiliate_url: "https://www.copy.ai"
 created_at: 2026-02-08
-popularity: 1
+popularity: 57
 ---
 
 # Copy.ai

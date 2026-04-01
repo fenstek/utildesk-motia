@@ -1,10 +1,11 @@
 ---
-slug: "viktor-for-media-buyers"
-title: "Viktor for Media Buyers"
-category: "AI"
-price_model: "Je nach Plan"
+slug: viktor-for-media-buyers
+title: Viktor for Media Buyers
+category: AI
+price_model: Je nach Plan
 tags: [advertising, workflow-automation, slack]
 official_url: "https://getviktor.com/for/media-buying"
+popularity: 0
 ---
 
 # Viktor for Media Buyers

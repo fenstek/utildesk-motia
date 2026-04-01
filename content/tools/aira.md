@@ -1,10 +1,11 @@
 ---
-slug: "aira"
-title: "Aira"
-category: "AI"
-price_model: "Abonnement"
+slug: aira
+title: Aira
+category: AI
+price_model: Abonnement
 tags: [accessibility,remote-interpreting,video-communication]
 official_url: "https://aira.io/"
+popularity: 0
 ---
 
 # Aira

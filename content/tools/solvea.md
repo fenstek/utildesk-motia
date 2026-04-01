@@ -1,10 +1,11 @@
 ---
-slug: "solvea"
-title: "Solvea"
-category: "AI"
-price_model: "Je nach Plan"
+slug: solvea
+title: Solvea
+category: AI
+price_model: Je nach Plan
 tags: [customer-service, scheduling, conversational-ai]
 official_url: "https://solvea.cx/"
+popularity: 0
 ---
 
 # Solvea

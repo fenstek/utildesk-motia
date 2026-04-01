@@ -5,7 +5,7 @@ category: Audio
 price_model: Freemium
 tags: [ai, audio]
 official_url: "https://podcast.adobe.com/enhance"
-popularity: 2
+popularity: 95
 ---
 
 # Adobe Enhance Speech

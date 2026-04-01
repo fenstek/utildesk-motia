@@ -2,10 +2,10 @@
 slug: deep-ai
 title: Deep AI
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://deepai.org/"
-popularity: 1
+popularity: 54
 ---
 
 # Deep AI

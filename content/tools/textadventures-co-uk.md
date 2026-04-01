@@ -6,7 +6,7 @@ price_model: Freemium
 tags: [ai, produktivitat, writing]
 official_url: "https://textadventures.co.uk/"
 created_at: 2026-02-12
-popularity: 1
+popularity: 10
 ---
 
 

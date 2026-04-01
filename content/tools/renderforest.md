@@ -2,10 +2,10 @@
 slug: renderforest
 title: Renderforest
 category: AI
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [video, workflow]
 official_url: "https://www.renderforest.com/"
-popularity: 1
+popularity: 18
 ---
 
 # Renderforest

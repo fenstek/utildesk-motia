@@ -2,10 +2,10 @@
 slug: ableton-live
 title: Ableton Live
 category: Audio
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
-popularity: 1
+popularity: 84
 ---
 
 # Ableton Live

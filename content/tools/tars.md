@@ -2,10 +2,10 @@
 slug: tars
 title: Tars
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://hellotars.com/"
-popularity: 1
+popularity: 11
 ---
 
 # Tars

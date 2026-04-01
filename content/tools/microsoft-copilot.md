@@ -2,12 +2,12 @@
 slug: microsoft-copilot
 title: Microsoft Copilot
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["writing"]
 official_url: "https://copilot.microsoft.com/"
 affiliate_url: "https://copilot.microsoft.com/"
 created_at: 2026-02-02
-popularity: 2
+popularity: 87
 ---
 
 # Microsoft Copilot

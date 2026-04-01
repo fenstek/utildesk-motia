@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["ai", "writing", "analytics", "productivity", "creative"]
 official_url: "https://aiseo.ai/"
-popularity: 1
+popularity: 77
 ---
 
 # AISEO

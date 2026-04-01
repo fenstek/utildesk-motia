@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://blog.google/innovation-and-ai/products/google-palm-2-ai-large-language-model/"
-popularity: 1
+popularity: 43
 ---
 
 # Google PaLM
