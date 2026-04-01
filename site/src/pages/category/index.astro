@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../lib/categories";
 import { readdir, readFile } from "node:fs/promises";
@@ -15,7 +15,7 @@ const toolsData = await Promise.all(
     const { data } = matter(raw);
     const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
     if (disabled) return null;
-    const tags = Array.isArray(data.tags) ? data.tags.map(String).map(t => t.toLowerCase()) : [];
+    const tags = Array.isArray(data.tags) ? data.tags.map(String).map((t) => t.toLowerCase()) : [];
     return { tags };
   })
 );
@@ -38,8 +38,8 @@ const categoriesWithCount = CATEGORIES.map((cat) => {
     <link rel="canonical" href="https://tools.utildesk.de/category/" />
   </Fragment>
 
-  <div class="container">
-    <section class="category-index">
+  <section class="category-index">
+    <div class="category-shell">
       <h1 class="page-title">Tool-Kategorien</h1>
       <p class="page-intro">
         Finde AI-Tools nach Kategorien sortiert. Jede Kategorie gruppiert Tools mit ähnlichen Funktionen.
@@ -47,86 +47,124 @@ const categoriesWithCount = CATEGORIES.map((cat) => {
 
       <div class="category-grid">
         {categoriesWithCount.map((cat) => (
-          <a href={`/category/${cat.slug}/`} class="category-card">
-            <h2 class="category-title">{cat.title}</h2>
-            <p class="category-description">{cat.description}</p>
-            <p class="category-count">{cat.count} {cat.count === 1 ? "Tool" : "Tools"}</p>
+          <a href={`/category/${cat.slug}/`} class="card tool-card category-card">
+            <div class="category-card-top">
+              <span class="badge badge-category category-chip">Kategorie</span>
+              <span class="category-count">{cat.count} {cat.count === 1 ? "Tool" : "Tools"}</span>
+            </div>
+            <div class="category-card-body">
+              <h2 class="category-title">{cat.title}</h2>
+              <p class="category-description">{cat.description}</p>
+            </div>
           </a>
         ))}
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  .category-index {
+    padding: 32px 0 64px;
   }
 
-  .category-index {
-    padding: 60px 0;
+  .category-shell {
+    background: var(--surface-container-low);
+    border: 1px solid rgba(190, 201, 197, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow-card);
   }
 
   .page-title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
-    color: var(--text);
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 14px;
+    color: var(--on-surface);
   }
 
   .page-intro {
-    font-size: 1.0625rem;
-    line-height: 1.65;
+    font-size: 1.02rem;
+    line-height: 1.7;
     color: var(--text-muted);
-    margin-bottom: 48px;
-    max-width: 640px;
+    margin: 0 0 32px;
+    max-width: 680px;
   }
 
   .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-5);
   }
 
   .category-card {
-    display: block;
-    padding: 24px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    text-decoration: none;
-    transition: border-color 0.2s ease;
+    min-height: 200px;
+    gap: var(--space-4);
+    justify-content: space-between;
   }
 
-  .category-card:hover {
-    border-color: var(--accent);
+  .category-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
   }
 
-  .category-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-
-  .category-description {
-    font-size: 0.9375rem;
-    line-height: 1.5;
-    color: var(--text-muted);
-    margin-bottom: 12px;
+  .category-chip {
+    background: var(--surface-container-high);
   }
 
   .category-count {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 11px;
+    border-radius: var(--radius-full);
+    font-size: 0.77rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary);
+    background: rgba(23, 98, 89, 0.08);
+    border: 1px solid rgba(23, 98, 89, 0.14);
+  }
+
+  .category-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--on-surface);
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+
+  .category-description {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: var(--text-muted);
     margin: 0;
   }
 
-  @media (max-width: 640px) {
+  :root[data-theme="dark"] .category-shell {
+    background: var(--surface-container);
+    border-color: rgba(139, 152, 145, 0.18);
+  }
+
+  @media (max-width: 720px) {
+    .category-index {
+      padding: 16px 0 48px;
+    }
+
+    .category-shell {
+      padding: 20px;
+    }
+
     .category-grid {
       grid-template-columns: 1fr;
     }
