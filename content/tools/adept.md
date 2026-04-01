@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["automation", "workflow"]
 official_url: "https://www.adept.ai/"
-popularity: 1
+popularity: 83
 ---
 
 # Adept

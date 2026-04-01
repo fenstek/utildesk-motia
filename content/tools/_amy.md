@@ -2,10 +2,10 @@
 slug: amy
 title: Amy
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://amy.ai/"
-popularity: 1
+popularity: 69
 ---
 
 # Amy

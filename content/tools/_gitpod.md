@@ -2,10 +2,10 @@
 slug: gitpod
 title: Gitpod
 category: AI
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [assistant, automation]
 official_url: "https://gitpod.com/"
-popularity: 1
+popularity: 45
 ---
 
 # Gitpod

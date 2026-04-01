@@ -2,10 +2,10 @@
 slug: claude-von-anthropic
 title: Claude von Anthropic
 category: AI
-price_model: "Nutzungsbasiert"
+price_model: Nutzungsbasiert
 tags: [chatbot, assistant, productivity, automation, customer-support]
 official_url: "https://www.anthropic.com/"
-popularity: 1
+popularity: 60
 ---
 
 # Claude von Anthropic

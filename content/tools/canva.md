@@ -2,12 +2,12 @@
 slug: canva
 title: Canva
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["design", "automation", "marketing"]
 official_url: "https://www.canva.com/"
 affiliate_url: "https://www.canva.com/"
 created_at: 2026-02-07
-popularity: 2
+popularity: 93
 ---
 
 # Canva

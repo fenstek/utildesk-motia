@@ -1,10 +1,11 @@
 ---
-slug: "pixero-ai"
-title: "Pixero AI"
-category: "AI"
-price_model: "Je nach Plan"
+slug: pixero-ai
+title: Pixero AI
+category: AI
+price_model: Je nach Plan
 tags: [advertising, marketing-automation, ai-agents]
 official_url: "https://pixero.ai/"
+popularity: 0
 ---
 
 # Pixero AI

@@ -1,10 +1,11 @@
 ---
-slug: "aweber"
-title: "Aweber"
-category: "AI"
-price_model: "Abonnement"
+slug: aweber
+title: Aweber
+category: AI
+price_model: Abonnement
 tags: [email-marketing, newsletters, automation]
 official_url: "https://www.aweber.com/"
+popularity: 0
 ---
 
 # Aweber

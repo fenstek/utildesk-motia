@@ -5,7 +5,7 @@ category: AI Agents
 price_model: 
 tags: ["automation"]
 official_url: "https://github.com/microsoft/autogen"
-popularity: 1
+popularity: 66
 ---
 
 # AutoGen

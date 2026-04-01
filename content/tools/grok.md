@@ -2,10 +2,10 @@
 slug: grok
 title: Grok
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, llm]
 official_url: "https://grok.com/"
-popularity: 1
+popularity: 42
 ---
 
 # Grok

@@ -2,10 +2,10 @@
 slug: ispeech
 title: iSpeech
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://www.ispeech.org/"
-popularity: 1
+popularity: 37
 ---
 
 # iSpeech

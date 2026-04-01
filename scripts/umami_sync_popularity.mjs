@@ -4,6 +4,7 @@
  * Umami Popularity Sync Script
  *
  * Syncs pageview statistics from Umami Analytics to tool frontmatter popularity field.
+ * Raw Umami pageviews are normalized into a relative 0-100 popularity scale.
  * Runs in dry-run mode by default for safety.
  *
  * Usage:
@@ -279,6 +280,32 @@ function extractSlugFromPath(rawPath) {
   return match ? decodeURIComponent(match[1]).trim().toLowerCase() : null;
 }
 
+function normalizeToolStats(rawToolStats) {
+  const ranked = Object.entries(rawToolStats)
+    .map(([slug, views]) => [slug, Number(views) || 0])
+    .filter(([, views]) => views > 0)
+    .sort((a, b) => {
+      if (b[1] !== a[1]) return b[1] - a[1];
+      return a[0].localeCompare(b[0], 'en');
+    });
+
+  if (ranked.length === 0) {
+    return {};
+  }
+
+  if (ranked.length === 1) {
+    return { [ranked[0][0]]: 100 };
+  }
+
+  const normalized = {};
+  ranked.forEach(([slug], index) => {
+    const percentile = 1 - (index / (ranked.length - 1));
+    normalized[slug] = Math.max(1, Math.round(percentile * 99) + 1);
+  });
+
+  return normalized;
+}
+
 // Main sync function
 async function syncPopularity(options) {
   validateConfig(options);
@@ -318,6 +345,9 @@ async function syncPopularity(options) {
 
     log(`Matched ${Object.keys(toolStats).length} tool slugs with pageviews`);
 
+    const normalizedToolStats = normalizeToolStats(toolStats);
+    log(`Normalized popularity scale for ${Object.keys(normalizedToolStats).length} tools`);
+
     // Step 3: Read all tool markdown files
     const files = await fs.readdir(options.contentDir);
     const mdFiles = files.filter(f => f.endsWith('.md') && f !== '_TEMPLATE.md');
@@ -338,7 +368,7 @@ async function syncPopularity(options) {
         // Use frontmatter slug if available, otherwise use filename
         const slug = String(frontmatter.slug || fileSlug).trim();
         const slugKey = slug.toLowerCase();
-        const newPopularity = toolStats[slugKey];
+        const newPopularity = normalizedToolStats[slugKey];
         const oldPopularity = frontmatter.popularity;
 
         // Determine if we should update

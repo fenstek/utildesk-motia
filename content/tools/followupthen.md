@@ -2,10 +2,10 @@
 slug: followupthen
 title: FollowUpThen
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [productivity, automation, workflow, crm]
 official_url: "https://www.followupthen.com/"
-popularity: 1
+popularity: 47
 ---
 
 # FollowUpThen

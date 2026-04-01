@@ -2,10 +2,10 @@
 slug: blue-prism
 title: Blue Prism
 category: Automation
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [automation, rpa, workflow]
 official_url: "https://www.blueprism.com/"
-popularity: 1
+popularity: 64
 ---
 
 # Blue Prism
