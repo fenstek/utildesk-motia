@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [writing, workflow]
 official_url: "https://prowritingaid.com/"
-popularity: 20
+popularity: 21
 ---
 
 # ProWritingAid

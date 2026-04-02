@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://faceswap.dev/"
-popularity: 51
+popularity: 52
 ---
 
 # FaceSwap

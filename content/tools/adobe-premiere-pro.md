@@ -2,10 +2,10 @@
 slug: adobe-premiere-pro
 title: Adobe Premiere Pro
 category: Design
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [design, video]
 official_url: "https://www.adobe.com/products/premiere.html"
-popularity: 0
+popularity: 81
 ---
 
 # Adobe Premiere Pro

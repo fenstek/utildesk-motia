@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://github.com/OpEnchanter/owo-assistant"
-popularity: 24
+popularity: 25
 ---
 
 # Owo

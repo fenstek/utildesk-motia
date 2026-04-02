@@ -5,7 +5,7 @@ category: AI Agents
 price_model: 
 tags: ["automation"]
 official_url: "https://www.crewai.com/"
-popularity: 56
+popularity: 0
 ---
 
 # CrewAI
