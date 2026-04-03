@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://lovo.ai/"
-popularity: 32
+popularity: 31
 ---
 
 # Lovo AI

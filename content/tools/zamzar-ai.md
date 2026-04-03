@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [automation, productivity, video, audio, design]
 official_url: "https://www.zamzar.com/"
-popularity: 3
+popularity: 0
 ---
 
 # Zamzar AI

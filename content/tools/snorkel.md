@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, automation, analytics, open-source]
 official_url: "https://snorkel.ai/"
-popularity: 14
+popularity: 12
 ---
 
 # Snorkel

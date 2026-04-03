@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [audio, workflow, automation]
 official_url: "https://www.ispeech.org/"
-popularity: 37
+popularity: 36
 ---
 
 # iSpeech
