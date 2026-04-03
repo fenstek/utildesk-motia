@@ -5,7 +5,7 @@ category: Audio
 price_model: Je nach Plan
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
-popularity: 84
+popularity: 83
 ---
 
 # Ableton Live

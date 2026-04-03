@@ -5,7 +5,7 @@ category: Automatisierung
 price_model: Open Source
 tags: ["automation", "workflow"]
 official_url: "https://n8n.io"
-popularity: 27
+popularity: 26
 ---
 
 # n8n

@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: [assistant, automation]
 official_url: "https://openai.com/index/amazon-partnership/"
-popularity: 70
+popularity: 69
 ---
 
 # Amazon SageMaker
