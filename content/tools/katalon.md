@@ -7,7 +7,7 @@ tags: ["data", "automation"]
 official_url: "https://katalon.com/"
 affiliate_url: "https://katalon.com/"
 created_at: 2026-02-07
-popularity: 33
+popularity: 34
 ---
 
 # Katalon

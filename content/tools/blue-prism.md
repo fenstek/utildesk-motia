@@ -5,7 +5,7 @@ category: Automation
 price_model: Je nach Plan
 tags: [automation, rpa, workflow]
 official_url: "https://www.blueprism.com/"
-popularity: 64
+popularity: 0
 ---
 
 # Blue Prism

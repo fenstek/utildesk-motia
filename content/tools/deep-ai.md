@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://deepai.org/"
-popularity: 54
+popularity: 0
 ---
 
 # Deep AI
