@@ -5,7 +5,7 @@ category: Developer
 price_model: Je nach Plan
 tags: [ai, coding, cli, developer]
 official_url: "https://aider.chat/"
-popularity: 75
+popularity: 74
 ---
 
 # Aider

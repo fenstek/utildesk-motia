@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [productivity, automation, workflow, crm]
 official_url: "https://www.followupthen.com/"
-popularity: 47
+popularity: 46
 ---
 
 # FollowUpThen

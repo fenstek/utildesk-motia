@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [automation, coding]
 official_url: "https://www.gitpod.io"
-popularity: 45
+popularity: 0
 ---
 
 # Gitpod

@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [assistant, automation]
 official_url: "https://gitpod.com/"
-popularity: 45
+popularity: 0
 ---
 
 # Gitpod

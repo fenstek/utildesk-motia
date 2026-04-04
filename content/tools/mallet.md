@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [topic-modeling, nlp, developer-tools]
 official_url: "https://mallet.cs.umass.edu/download.php"
-popularity: 30
+popularity: 31
 ---
 
 # MALLET
