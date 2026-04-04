@@ -59,8 +59,20 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
               <a href="/tools/">Tools</a>
             </div>
             <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design umschalten" aria-pressed="false" title="Design umschalten">
-              <span class="theme-toggle__dot" aria-hidden="true"></span>
-              <span data-theme-label>Hell</span>
+              <span class="theme-toggle__track" aria-hidden="true">
+                <span class="theme-toggle__thumb"></span>
+                <span class="theme-toggle__option theme-toggle__option--light">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path fill="currentColor" d="M12 6.25a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V7a.75.75 0 0 1 .75-.75Zm0 8a2.75 2.75 0 1 0 0-5.5a2.75 2.75 0 0 0 0 5.5Zm0 1.5a4.25 4.25 0 1 1 0-8.5a4.25 4.25 0 0 1 0 8.5Zm6-4.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm-15 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm13.03-4.78a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06Zm-10.12 10.12a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06Zm0-9.06a.75.75 0 0 1 0 1.06L4.85 8.9a.75.75 0 0 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Zm10.12 10.12a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 0 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Z"/>
+                  </svg>
+                </span>
+                <span class="theme-toggle__option theme-toggle__option--dark">
+                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                    <path fill="currentColor" d="M14.5 2.25a.75.75 0 0 1 .58 1.22A7.75 7.75 0 1 0 20.53 8.92a.75.75 0 0 1 1.22.58a9.25 9.25 0 1 1-9.25-9.25Z"/>
+                  </svg>
+                </span>
+              </span>
+              <span class="sr-only" data-theme-label>Hell</span>
             </button>
           </div>
         </nav>
@@ -110,6 +122,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
           root.dataset.theme = theme;
           root.style.colorScheme = theme;
           if (button) {
+            button.dataset.theme = theme;
             button.setAttribute("aria-pressed", String(theme === "dark"));
             button.title = theme === "dark" ? "Zum hellen Design wechseln" : "Zum dunklen Design wechseln";
           }
