@@ -5,7 +5,7 @@ category: Design
 price_model: Abonnement
 tags: [design, video, image]
 official_url: "https://www.adobe.com/products/premiere-rush.html"
-popularity: 78
+popularity: 77
 ---
 
 # Adobe Premiere Rush

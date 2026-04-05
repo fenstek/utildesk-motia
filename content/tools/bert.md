@@ -5,7 +5,7 @@ category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [llm, developer, api]
 official_url: "https://research.google/pubs/bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding/"
-popularity: 63
+popularity: 60
 ---
 
 # BERT (Bidirectional Encoder Representations from Transformers)

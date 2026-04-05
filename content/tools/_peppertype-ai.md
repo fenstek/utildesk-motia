@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: []
 official_url: "https://www.pepper.inc/"
-popularity: 21
+popularity: 19
 ---
 
 # Peppertype.ai

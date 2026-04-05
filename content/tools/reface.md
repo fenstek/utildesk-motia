@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://reface.ai/"
-popularity: 17
+popularity: 15
 ---
 
 # Reface
