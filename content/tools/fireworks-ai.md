@@ -5,7 +5,7 @@ category: AI Infrastructure
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://fireworks.ai"
-popularity: 48
+popularity: 46
 ---
 
 # Fireworks AI

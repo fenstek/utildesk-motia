@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://amy.ai/"
-popularity: 66
+popularity: 64
 ---
 
 # Amy

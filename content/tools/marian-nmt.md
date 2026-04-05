@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [translation, nmt, open-source]
 official_url: "https://marian-nmt.github.io/"
-popularity: 30
+popularity: 28
 ---
 
 # Marian NMT

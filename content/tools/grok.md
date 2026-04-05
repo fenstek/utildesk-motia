@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, llm]
 official_url: "https://grok.com/"
-popularity: 42
+popularity: 41
 ---
 
 # Grok

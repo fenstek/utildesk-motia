@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [writing, content, marketing, automation, productivity]
 official_url: "https://www.pepper.inc/"
-popularity: 21
+popularity: 19
 ---
 
 # Peppertype.ai
