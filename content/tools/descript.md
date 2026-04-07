@@ -6,7 +6,7 @@ price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.descript.com/"
 created_at: 2026-02-13
-popularity: 49
+popularity: 50
 ---
 
 

@@ -5,7 +5,7 @@ category: Developer
 price_model: 
 tags: [ai, coding, developer, assistant]
 official_url: "https://www.continue.dev/"
-popularity: 54
+popularity: 55
 ---
 
 # Continue

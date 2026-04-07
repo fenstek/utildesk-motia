@@ -1,10 +1,11 @@
 ---
-slug: "ernie-bot"
-title: "Ernie Bot"
-category: "AI"
-price_model: "Je nach Plan"
+slug: ernie-bot
+title: Ernie Bot
+category: AI
+price_model: Je nach Plan
 tags: [ai, chatbot]
 official_url: "https://ernie.baidu.com/"
+popularity: 0
 ---
 
 # Ernie Bot

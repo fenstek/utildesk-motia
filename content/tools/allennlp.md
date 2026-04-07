@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [coding, developer-tools, data, analytics, education]
 official_url: "https://allenai.github.io/allennlp-website/"
-popularity: 70
+popularity: 72
 ---
 
 # AllenNLP
