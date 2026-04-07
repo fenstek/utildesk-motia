@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["writing"]
 official_url: "https://lingvanex.com/"
 created_at: 2026-02-15
-popularity: 88
+popularity: 89
 ---
 
 # LingvaNex
