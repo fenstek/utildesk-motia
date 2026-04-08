@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [analytics, data-preparation, automation]
 official_url: "https://www.alteryx.com/"
-popularity: 71
+popularity: 68
 ---
 
 # Alteryx

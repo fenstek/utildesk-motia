@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://huggingface.co/"
-popularity: 39
+popularity: 38
 ---
 
 # Hugging Face

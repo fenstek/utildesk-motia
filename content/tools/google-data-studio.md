@@ -5,7 +5,7 @@ category: Audio
 price_model: Kostenlos
 tags: ["data", "analytics", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
-popularity: 43
+popularity: 0
 ---
 
 # Google Data Studio

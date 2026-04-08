@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [assistant,workflow]
 official_url: "https://chatfuel.com/"
-popularity: 60
+popularity: 56
 ---
 
 # Chatfuel
