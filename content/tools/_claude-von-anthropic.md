@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: [chatbot, assistant, productivity, automation, customer-support]
 official_url: "https://www.anthropic.com/"
-popularity: 57
+popularity: 0
 ---
 
 # Claude von Anthropic

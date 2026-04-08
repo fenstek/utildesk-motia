@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [chatbot, productivity, automation]
 official_url: "https://x.ai/"
-popularity: 2
+popularity: 3
 ---
 
 # xAI
