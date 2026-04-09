@@ -7,7 +7,7 @@ tags: ["ai", "productivity"]
 official_url: "https://www.jasper.ai/"
 affiliate_url: "https://www.jasper.ai/"
 created_at: 2026-02-07
-popularity: 35
+popularity: 30
 ---
 
 # Jasper

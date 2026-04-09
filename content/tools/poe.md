@@ -7,7 +7,7 @@ tags: ["chatbot"]
 official_url: "https://poe.com"
 affiliate_url: "https://poe.com"
 created_at: 2026-02-07
-popularity: 18
+popularity: 15
 ---
 
 # Poe

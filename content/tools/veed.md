@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://www.veed.io/"
-popularity: 6
+popularity: 0
 ---
 
 # Veed

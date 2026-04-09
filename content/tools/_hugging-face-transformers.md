@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: []
 official_url: "https://huggingface.co/docs/transformers/index"
-popularity: 36
+popularity: 0
 ---
 
 # Hugging Face Transformers
