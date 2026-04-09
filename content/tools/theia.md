@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [ide, developer-tools, open-source]
 official_url: "https://theia-ide.org/"
-popularity: 9
+popularity: 6
 ---
 
 # Theia

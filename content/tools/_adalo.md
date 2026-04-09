@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://www.adalo.com/"
-popularity: 83
+popularity: 80
 ---
 
 # Adalo
