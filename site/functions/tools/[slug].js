@@ -84,6 +84,7 @@ const CURATED_CANONICAL_REDIRECTS = new Map([
   ["google-data-studio", "looker-studio"],
   ["openai-chatgpt", "chatgpt"],
   ["right-inbox", "rightinbox"],
+  ["runwayml", "runway"],
   ["swagger-ui", "swagger"],
   ["veed", "veed-io"],
 ]);
