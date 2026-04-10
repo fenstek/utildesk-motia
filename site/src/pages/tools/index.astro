@@ -320,6 +320,7 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
   <!-- Client-side search + tag filter script (inline, no build tools) -->
   <script is:inline>
     (function() {
+      const sortStorageKey = 'utildesk-tools-sort';
       const searchInput = document.getElementById('search-input');
       const sortSelect = document.getElementById('sort-select');
       const toolsGrid = document.getElementById('tools-grid');
@@ -344,11 +345,27 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
         return;
       }
 
-      // Restore sort from URL
-      if (initialSort && sortSelect) {
+      // Restore sort preference from URL first, then localStorage.
+      if (sortSelect) {
         const validSorts = ['az', 'new', 'pop'];
-        if (validSorts.indexOf(initialSort) !== -1) {
-          sortSelect.value = initialSort;
+        let restoredSort = '';
+        if (initialSort && validSorts.indexOf(initialSort) !== -1) {
+          restoredSort = initialSort;
+        } else {
+          try {
+            const storedSort = localStorage.getItem(sortStorageKey);
+            if (storedSort && validSorts.indexOf(storedSort) !== -1) {
+              restoredSort = storedSort;
+            }
+          } catch (e) {
+            // ignore localStorage access errors
+          }
+        }
+        if (restoredSort) {
+          sortSelect.value = restoredSort;
+        }
+        if (window.location.search) {
+          history.replaceState(null, '', '/tools/');
         }
       }
 
@@ -449,16 +466,17 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
 
       if (sortSelect) {
         sortSelect.addEventListener('change', function() {
-          // Update URL with sort parameter
-          const params = new URLSearchParams(window.location.search);
           const sortValue = sortSelect.value;
-          if (sortValue && sortValue !== 'az') {
-            params.set('sort', sortValue);
-          } else {
-            params.delete('sort');
+          try {
+            if (sortValue && sortValue !== 'az') {
+              localStorage.setItem(sortStorageKey, sortValue);
+            } else {
+              localStorage.removeItem(sortStorageKey);
+            }
+          } catch (e) {
+            // ignore localStorage access errors
           }
-          const newUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-          history.pushState(null, '', newUrl);
+          history.replaceState(null, '', '/tools/');
           resetAndFilter();
         });
       }
