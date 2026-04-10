@@ -76,9 +76,15 @@ const CANONICAL_ALIAS_SLUGS = new Set([
 ]);
 
 const CURATED_CANONICAL_REDIRECTS = new Map([
+  ["ai21-labs", "_ai21-studio"],
+  ["canva-video", "_canva-video-editor"],
   ["deepart-io", "deep-art-effects"],
+  ["google-cloud-vision-ai", "_google-cloud-vision"],
+  ["google-cloud-vision-api", "_google-cloud-vision"],
   ["google-data-studio", "looker-studio"],
+  ["openai-chatgpt", "chatgpt"],
   ["right-inbox", "rightinbox"],
+  ["swagger-ui", "swagger"],
   ["veed", "veed-io"],
 ]);
 
