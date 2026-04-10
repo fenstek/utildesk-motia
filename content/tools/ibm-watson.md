@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["automation"]
 official_url: "https://www.ibm.com/watson"
 created_at: 2026-02-14
-popularity: 87
+popularity: 88
 ---
 
 # IBM Watson
