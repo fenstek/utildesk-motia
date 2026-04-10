@@ -75,9 +75,21 @@ const CANONICAL_ALIAS_SLUGS = new Set([
   "zest-ai",
 ]);
 
+const CURATED_CANONICAL_REDIRECTS = new Map([
+  ["deepart-io", "deep-art-effects"],
+  ["google-data-studio", "looker-studio"],
+  ["right-inbox", "rightinbox"],
+  ["veed", "veed-io"],
+]);
+
 export function onRequest(context) {
   const url = new URL(context.request.url);
   const slug = context.params.slug;
+
+  if (typeof slug === "string" && CURATED_CANONICAL_REDIRECTS.has(slug)) {
+    const canonicalSlug = CURATED_CANONICAL_REDIRECTS.get(slug);
+    return Response.redirect(`${url.origin}/tools/${canonicalSlug}/`, 308);
+  }
 
   if (typeof slug === "string" && slug.startsWith("_")) {
     const canonicalSlug = slug.slice(1);
