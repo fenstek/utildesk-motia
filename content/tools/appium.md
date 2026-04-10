@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [mobile-testing,test-automation,developer-tools]
 official_url: "https://appium.io/"
-popularity: 57
+popularity: 58
 ---
 
 # Appium

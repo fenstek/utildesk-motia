@@ -2,10 +2,10 @@
 slug: research-rabbit
 title: Research Rabbit
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [productivity, data, analytics, education]
 official_url: "https://www.researchrabbit.ai/"
-popularity: 0
+popularity: 15
 ---
 
 # Research Rabbit
