@@ -77,19 +77,21 @@ const CANONICAL_ALIAS_SLUGS = new Set([
 
 const CURATED_CANONICAL_REDIRECTS = new Map([
   ["_ai21-studio", "ai21-labs"],
-  ["_canva-video-editor", "canva-video"],
   ["ai21-studio", "ai21-labs"],
+  ["_canva-video-editor", "canva-video"],
   ["canva-video-editor", "canva-video"],
   ["deepart-io", "deep-art-effects"],
+  ["google-cloud-vision", "google-cloud-vision-ai"],
   ["_google-cloud-vision", "google-cloud-vision-ai"],
   ["google-cloud-vision-api", "google-cloud-vision-ai"],
-  ["google-cloud-vision", "google-cloud-vision-ai"],
   ["google-data-studio", "looker-studio"],
+  ["claude-von-anthropic", "anthropic"],
   ["openai-chatgpt", "chatgpt"],
   ["right-inbox", "rightinbox"],
   ["_runwayml", "runway"],
   ["runwayml", "runway"],
   ["swagger-ui", "swagger"],
+  ["visual-studio-intellicode", "intellicode"],
 ]);
 
 export function onRequest(context) {
