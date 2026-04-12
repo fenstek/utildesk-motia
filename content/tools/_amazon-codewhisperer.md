@@ -5,7 +5,7 @@ category: Developer
 price_model: 
 tags: []
 official_url: "https://aws.amazon.com/q/developer/"
-popularity: 63
+popularity: 64
 ---
 
 # Amazon CodeWhisperer
