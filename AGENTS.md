@@ -108,8 +108,8 @@ Good states are tracked in `CHECKPOINTS.md` as git tags.
 
 **Current checkpoint:**
 - Tag: `checkpoint-good-20260413`
-- Commit: `6b0053ab`
-- State: 751 tools published (on `master`), pipeline operational, clean working tree
+- Commit: `2076e04` (HEAD of `master`)
+- State: 751 tools published, pipeline operational, clean working tree
 
 **To roll back:**
 ```bash
