@@ -1,10 +1,11 @@
 ---
-slug: "mimic"
-title: "Mimic"
-category: "AI"
-price_model: "Je nach Plan"
+slug: mimic
+title: Mimic
+category: AI
+price_model: Je nach Plan
 tags: [audio, voice]
 official_url: "https://www.mimic.ai/"
+popularity: 0
 ---
 
 # Mimic

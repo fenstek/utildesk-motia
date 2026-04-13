@@ -1,10 +1,11 @@
 ---
-slug: "langai"
-title: "LangAI"
-category: "AI"
-price_model: "Je nach Plan"
+slug: langai
+title: LangAI
+category: AI
+price_model: Je nach Plan
 tags: [assistant, chatbot, language]
 official_url: "https://www.langai.ai/"
+popularity: 0
 ---
 
 # LangAI

@@ -1,10 +1,11 @@
 ---
-slug: "inflection"
-title: "Inflection"
-category: "AI"
-price_model: ""
+slug: inflection
+title: Inflection
+category: AI
+price_model: 
 tags: [assistant, chatbot]
 official_url: "https://inflection.ai/"
+popularity: 0
 ---
 
 # Inflection

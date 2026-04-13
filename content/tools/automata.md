@@ -1,10 +1,11 @@
 ---
-slug: "automata"
-title: "Automata"
-category: "AI"
-price_model: "Je nach Plan"
+slug: automata
+title: Automata
+category: AI
+price_model: Je nach Plan
 tags: [automation, developer-tools]
 official_url: "https://www.automata.tech/"
+popularity: 0
 ---
 
 # Automata
