@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 760" role="img" aria-label="Vergleich typischer Einsatzszenarien">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820" role="img" aria-label="Vergleich typischer Einsatzszenarien">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#f4f4eb"/>
@@ -21,87 +21,83 @@
     </filter>
   </defs>
 
-  <rect width="1500" height="760" fill="url(#bg)"/>
+  <rect width="1500" height="820" fill="url(#bg)"/>
   <circle cx="1460" cy="60" r="200" fill="#17625906"/>
 
   <!-- Title -->
-  <text x="80" y="80" fill="#176259" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12" font-weight="800" letter-spacing="5">EINSATZSZENARIEN IM ÜBERBLICK</text>
-  <text x="80" y="134" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.5">Wer glänzt wann?</text>
-  <text x="80" y="172" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="20">Typische Anwendungsfälle der drei Assistenten im direkten Vergleich.</text>
+  <text x="80" y="68" fill="#176259" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14" font-weight="800" letter-spacing="5">EINSATZSZENARIEN IM ÜBERBLICK</text>
+  <text x="80" y="128" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="52" font-weight="800" letter-spacing="-1.5">Wer glänzt wann?</text>
+  <text x="80" y="170" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="22">Typische Anwendungsfälle der drei Assistenten im direkten Vergleich.</text>
 
   <!-- Table container -->
   <g filter="url(#shadow)">
-    <rect x="80" y="210" width="1340" height="500" rx="28" fill="#ffffff"/>
+    <rect x="80" y="206" width="1340" height="560" rx="28" fill="#ffffff"/>
 
     <!-- Header row -->
-    <rect x="80" y="210" width="1340" height="56" rx="28" fill="#f4f4eb"/>
-    <rect x="80" y="238" width="1340" height="28" fill="#f4f4eb"/>
+    <rect x="80" y="206" width="1340" height="60" rx="28" fill="#f4f4eb"/>
+    <rect x="80" y="234" width="1340" height="32" fill="#f4f4eb"/>
 
     <!-- Header labels -->
-    <text x="180" y="247" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="800" letter-spacing="1">ANWENDUNGSFALL</text>
-    <text x="550" y="247" fill="#176259" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="800" letter-spacing="1">CHATGPT</text>
-    <text x="830" y="247" fill="#8faaa4" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="800" letter-spacing="1">CLAUDE</text>
-    <text x="1110" y="247" fill="#c8a35a" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="800" letter-spacing="1">GEMINI</text>
+    <text x="110" y="247" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">ANWENDUNGSFALL</text>
+    <text x="540" y="247" fill="#176259" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">CHATGPT</text>
+    <text x="820" y="247" fill="#8faaa4" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">CLAUDE</text>
+    <text x="1100" y="247" fill="#c8a35a" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">GEMINI</text>
 
     <!-- Vertical dividers -->
-    <line x1="500" y1="266" x2="500" y2="710" stroke="#e8ede9" stroke-width="1"/>
-    <line x1="780" y1="266" x2="780" y2="710" stroke="#e8ede9" stroke-width="1"/>
-    <line x1="1060" y1="266" x2="1060" y2="710" stroke="#e8ede9" stroke-width="1"/>
+    <line x1="500" y1="266" x2="500" y2="766" stroke="#e8ede9" stroke-width="1"/>
+    <line x1="780" y1="266" x2="780" y2="766" stroke="#e8ede9" stroke-width="1"/>
+    <line x1="1060" y1="266" x2="1060" y2="766" stroke="#e8ede9" stroke-width="1"/>
 
     <!-- Row 1: Schnelles Schreiben -->
-    <rect x="80" y="266" width="1340" height="72" fill="#ffffff"/>
-    <text x="108" y="296" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Schnelles Schreiben</text>
-    <text x="108" y="318" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">Entwürfe, Mails, Posts</text>
-    <!-- Stars A -->
-    <text x="524" y="306" fill="#176259" font-family="Inter, sans-serif" font-size="20">★★★★★</text>
-    <!-- Stars B -->
-    <text x="804" y="306" fill="#8faaa4" font-family="Inter, sans-serif" font-size="20">★★★★☆</text>
-    <!-- Stars C -->
-    <text x="1084" y="306" fill="#c8a35a" font-family="Inter, sans-serif" font-size="20">★★★☆☆</text>
+    <rect x="80" y="266" width="1340" height="80" fill="#ffffff"/>
+    <text x="108" y="298" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Schnelles Schreiben</text>
+    <text x="108" y="322" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Entwürfe, Mails, Posts</text>
+    <text x="518" y="312" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
+    <text x="798" y="312" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
+    <text x="1078" y="312" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
 
-    <!-- Row 2 bg -->
-    <rect x="80" y="338" width="1340" height="72" fill="#fafaf6"/>
-    <text x="108" y="368" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Lange Texte &amp; Analyse</text>
-    <text x="108" y="390" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">Berichte, Verträge, Recherche</text>
-    <text x="524" y="378" fill="#176259" font-family="Inter, sans-serif" font-size="20">★★★☆☆</text>
-    <text x="804" y="378" fill="#8faaa4" font-family="Inter, sans-serif" font-size="20">★★★★★</text>
-    <text x="1084" y="378" fill="#c8a35a" font-family="Inter, sans-serif" font-size="20">★★★☆☆</text>
+    <!-- Row 2 -->
+    <rect x="80" y="346" width="1340" height="80" fill="#fafaf6"/>
+    <text x="108" y="378" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Lange Texte &amp; Analyse</text>
+    <text x="108" y="402" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Berichte, Verträge, Recherche</text>
+    <text x="518" y="392" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
+    <text x="798" y="392" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
+    <text x="1078" y="392" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
 
     <!-- Row 3 -->
-    <rect x="80" y="410" width="1340" height="72" fill="#ffffff"/>
-    <text x="108" y="440" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Code &amp; Entwicklung</text>
-    <text x="108" y="462" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">Debugging, Refactoring, Reviews</text>
-    <text x="524" y="450" fill="#176259" font-family="Inter, sans-serif" font-size="20">★★★★☆</text>
-    <text x="804" y="450" fill="#8faaa4" font-family="Inter, sans-serif" font-size="20">★★★★★</text>
-    <text x="1084" y="450" fill="#c8a35a" font-family="Inter, sans-serif" font-size="20">★★★☆☆</text>
+    <rect x="80" y="426" width="1340" height="80" fill="#ffffff"/>
+    <text x="108" y="458" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Code &amp; Entwicklung</text>
+    <text x="108" y="482" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Debugging, Refactoring, Reviews</text>
+    <text x="518" y="472" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
+    <text x="798" y="472" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
+    <text x="1078" y="472" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
 
-    <!-- Row 4 bg -->
-    <rect x="80" y="482" width="1340" height="72" fill="#fafaf6"/>
-    <text x="108" y="512" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Kreativarbeit</text>
-    <text x="108" y="534" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">Brainstorming, Storys, Konzepte</text>
-    <text x="524" y="522" fill="#176259" font-family="Inter, sans-serif" font-size="20">★★★★★</text>
-    <text x="804" y="522" fill="#8faaa4" font-family="Inter, sans-serif" font-size="20">★★★★☆</text>
-    <text x="1084" y="522" fill="#c8a35a" font-family="Inter, sans-serif" font-size="20">★★★☆☆</text>
+    <!-- Row 4 -->
+    <rect x="80" y="506" width="1340" height="80" fill="#fafaf6"/>
+    <text x="108" y="538" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Kreativarbeit</text>
+    <text x="108" y="562" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Brainstorming, Storys, Konzepte</text>
+    <text x="518" y="552" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
+    <text x="798" y="552" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
+    <text x="1078" y="552" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
 
     <!-- Row 5 -->
-    <rect x="80" y="554" width="1340" height="72" fill="#ffffff"/>
-    <text x="108" y="584" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Google-Workflows</text>
-    <text x="108" y="606" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">Docs, Sheets, Gmail, Search</text>
-    <text x="524" y="594" fill="#176259" font-family="Inter, sans-serif" font-size="20">★★☆☆☆</text>
-    <text x="804" y="594" fill="#8faaa4" font-family="Inter, sans-serif" font-size="20">★★☆☆☆</text>
-    <text x="1084" y="594" fill="#c8a35a" font-family="Inter, sans-serif" font-size="20">★★★★★</text>
+    <rect x="80" y="586" width="1340" height="80" fill="#ffffff"/>
+    <text x="108" y="618" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Google-Workflows</text>
+    <text x="108" y="642" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Docs, Sheets, Gmail, Search</text>
+    <text x="518" y="632" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★☆☆☆</text>
+    <text x="798" y="632" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★☆☆☆</text>
+    <text x="1078" y="632" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
 
-    <!-- Row 6 bg + bottom radius fix -->
-    <rect x="80" y="626" width="1340" height="84" rx="0" fill="#fafaf6"/>
-    <rect x="80" y="654" width="1340" height="56" rx="0" fill="#fafaf6"/>
-    <rect x="80" y="682" width="1340" height="28" rx="28" fill="#fafaf6"/>
-    <text x="108" y="656" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Datenschutz &amp; Kontrolle</text>
-    <text x="108" y="678" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">Sensible Daten, Enterprise</text>
-    <text x="524" y="666" fill="#176259" font-family="Inter, sans-serif" font-size="20">★★★☆☆</text>
-    <text x="804" y="666" fill="#8faaa4" font-family="Inter, sans-serif" font-size="20">★★★★☆</text>
-    <text x="1084" y="666" fill="#c8a35a" font-family="Inter, sans-serif" font-size="20">★★☆☆☆</text>
+    <!-- Row 6 -->
+    <rect x="80" y="666" width="1340" height="100" rx="0" fill="#fafaf6"/>
+    <rect x="80" y="738" width="1340" height="28" rx="28" fill="#fafaf6"/>
+    <text x="108" y="700" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Datenschutz &amp; Kontrolle</text>
+    <text x="108" y="724" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Sensible Daten, Enterprise</text>
+    <text x="518" y="712" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
+    <text x="798" y="712" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
+    <text x="1078" y="712" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★☆☆☆</text>
   </g>
 
   <!-- Legend -->
-  <text x="80" y="740" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="13">★★★★★ Sehr stark  ·  ★★★★☆ Stark  ·  ★★★☆☆ Gut  ·  ★★☆☆☆ Eingeschränkt</text>
+  <text x="80" y="800" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">★★★★★ Sehr stark  ·  ★★★★☆ Stark  ·  ★★★☆☆ Gut  ·  ★★☆☆☆ Eingeschränkt</text>
 </svg>
