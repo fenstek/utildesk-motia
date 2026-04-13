@@ -7,7 +7,7 @@ Good states and important restoration points.
 ## 2026-04-13 — Pre-refactor Stable State
 
 **Tag:** `checkpoint-good-20260413`
-**Commit:** `6b0053ab`
+**Commit:** `2076e04` (HEAD of `master`)
 **Status:** ✅ GOOD STATE
 
 ### Why this is a good state
