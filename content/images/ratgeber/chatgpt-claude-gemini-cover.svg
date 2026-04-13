@@ -1,0 +1,61 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Vergleich von ChatGPT, Claude und Gemini">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafaf1"/>
+      <stop offset="100%" stop-color="#eff4ef"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#367b71"/>
+      <stop offset="100%" stop-color="#176259"/>
+    </linearGradient>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c5d8d4"/>
+      <stop offset="100%" stop-color="#9fb9b1"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4d8ab"/>
+      <stop offset="100%" stop-color="#d9b06d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#1a1c1710"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="110" r="90" fill="#17625910"/>
+  <circle cx="170" cy="620" r="120" fill="#367b7112"/>
+  <text x="80" y="104" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="52" font-weight="800" letter-spacing="-1.2">ChatGPT, Claude und Gemini</text>
+  <text x="80" y="154" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="22">Drei KI-Assistenten mit klar unterschiedlichen Schwerpunkten</text>
+
+  <g transform="translate(80 220)" filter="url(#shadow)">
+    <rect width="316" height="350" rx="30" fill="#ffffff"/>
+    <rect x="28" y="28" width="80" height="80" rx="22" fill="url(#teal)"/>
+    <text x="68" y="77" text-anchor="middle" fill="#ffffff" font-family="Plus Jakarta Sans, sans-serif" font-size="28" font-weight="800">C</text>
+    <text x="28" y="146" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="800">ChatGPT</text>
+    <text x="28" y="184" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="18">Der schnelle Allrounder</text>
+    <rect x="28" y="220" width="260" height="18" rx="9" fill="#e6ece9"/>
+    <rect x="28" y="220" width="236" height="18" rx="9" fill="#367b71"/>
+    <text x="28" y="272" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="16">Schnelle Entwürfe, flexible Workflows, viel Tempo.</text>
+  </g>
+
+  <g transform="translate(442 220)" filter="url(#shadow)">
+    <rect width="316" height="350" rx="30" fill="#ffffff"/>
+    <rect x="28" y="28" width="80" height="80" rx="22" fill="url(#clay)"/>
+    <text x="68" y="77" text-anchor="middle" fill="#176259" font-family="Plus Jakarta Sans, sans-serif" font-size="28" font-weight="800">A</text>
+    <text x="28" y="146" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="800">Claude</text>
+    <text x="28" y="184" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="18">Der ruhige Text-Profi</text>
+    <rect x="28" y="220" width="260" height="18" rx="9" fill="#e6ece9"/>
+    <rect x="28" y="220" width="206" height="18" rx="9" fill="#9fb9b1"/>
+    <text x="28" y="272" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="16">Lange Kontexte, saubere Argumente, präziser Ton.</text>
+  </g>
+
+  <g transform="translate(804 220)" filter="url(#shadow)">
+    <rect width="316" height="350" rx="30" fill="#ffffff"/>
+    <rect x="28" y="28" width="80" height="80" rx="22" fill="url(#amber)"/>
+    <text x="68" y="77" text-anchor="middle" fill="#7f4f12" font-family="Plus Jakarta Sans, sans-serif" font-size="28" font-weight="800">G</text>
+    <text x="28" y="146" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="800">Gemini</text>
+    <text x="28" y="184" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="18">Google-nahe Integration</text>
+    <rect x="28" y="220" width="260" height="18" rx="9" fill="#e6ece9"/>
+    <rect x="28" y="220" width="220" height="18" rx="9" fill="#d9b06d"/>
+    <text x="28" y="272" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="16">Recherche, Workspace und produktive Alltags-Tasks.</text>
+  </g>
+</svg>
