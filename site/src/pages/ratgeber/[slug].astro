@@ -59,72 +59,71 @@ const articleSchema = {
 
   <nav class="breadcrumb ratgeber-breadcrumb">
     <a href="/">Startseite</a>
-    <span>></span>
+    <span>/</span>
     <a href="/ratgeber/">Ratgeber</a>
-    <span>></span>
+    <span>/</span>
     <span>{title}</span>
   </nav>
 
-  <section class="article-hero card">
-    <div class="article-hero-copy">
-      <p class="article-eyebrow">{data.eyebrow || "Ratgeber"}</p>
-      <h1>{title}</h1>
-      <p class="article-excerpt">{description}</p>
-      <div class="article-meta">
-        {published ? <span>{published}</span> : null}
-        {data.readTime ? <span>Lesedauer ca. {data.readTime} Min.</span> : null}
-        {data.category ? <span>{data.category}</span> : null}
-      </div>
-      {data.tags?.length ? (
-        <div class="article-tags">
-          {data.tags.map((tag) => <span>{tag}</span>)}
-        </div>
-      ) : null}
+  <header class="article-head">
+    <p class="article-eyebrow">{data.eyebrow || "Ratgeber"}</p>
+    <h1>{title}</h1>
+    <p class="article-excerpt">{description}</p>
+
+    <div class="article-meta">
+      {published ? <span>{published}</span> : null}
+      {data.readTime ? <span>Lesedauer ca. {data.readTime} Min.</span> : null}
+      {data.category ? <span>{data.category}</span> : null}
     </div>
 
-    {data.coverImage ? (
-      <div class="article-hero-visual card">
-        <img src={data.coverImage} alt={title} loading="eager" />
-        <div class="article-hero-caption">
-          <span>Vergleich</span>
-          <span>Orientierung</span>
-          <span>Redaktion</span>
+    {data.tags?.length ? (
+      <div class="article-tags">
+        {data.tags.map((tag) => (
+          <span>{tag}</span>
+        ))}
+      </div>
+    ) : null}
+  </header>
+
+  {data.coverImage ? (
+    <figure class="article-cover card">
+      <img src={data.coverImage} alt={title} loading="eager" />
+    </figure>
+  ) : null}
+
+  <section class="article-read">
+    <article class="prose ratgeber-prose" set:html={articleHtml}></article>
+  </section>
+
+  <section class="article-notes">
+    <div class="article-note card">
+      <p class="article-note-label">{data.sidebarTitle || "Kurzfazit"}</p>
+      <ul class="article-note-list">
+        {(data.sidebarPoints || []).map((point) => (
+          <li>{point}</li>
+        ))}
+      </ul>
+    </div>
+
+    {data.relatedTools?.length ? (
+      <div class="article-note card">
+        <p class="article-note-label">Verlinkte Tools</p>
+        <div class="article-link-cloud">
+          {data.relatedTools.map((tool) => (
+            <a href={tool.href} class="article-link-pill">{tool.title}</a>
+          ))}
         </div>
       </div>
     ) : null}
-  </section>
 
-  <section class="article-layout">
-    <article class="article-main card">
-      <div class="article-prose" set:html={articleHtml}></div>
-    </article>
-
-    <aside class="article-sidebar">
-      <div class="sidebar-card card">
-        <p class="sidebar-label">{data.sidebarTitle || "Kurzfazit"}</p>
-        <ul class="sidebar-points">
-          {(data.sidebarPoints || []).map((point) => <li>{point}</li>)}
-        </ul>
+    <div class="article-note card">
+      <p class="article-note-label">Weiterlesen</p>
+      <div class="article-link-stack">
+        <a href="/ratgeber/" class="article-link-row">Zur Ratgeber-Uebersicht</a>
+        <a href="/tools/" class="article-link-row">Zum Tool-Katalog</a>
+        <a href="/category/ai-chatbots/" class="article-link-row">AI-Chatbots &amp; Assistenten</a>
       </div>
-
-      {data.relatedTools?.length ? (
-        <div class="sidebar-card card">
-          <p class="sidebar-label">Verlinkte Tools</p>
-          <div class="related-tools">
-            {data.relatedTools.map((tool) => (
-              <a href={tool.href} class="related-tool-link">{tool.title}</a>
-            ))}
-          </div>
-        </div>
-      ) : null}
-
-      <div class="sidebar-card card">
-        <p class="sidebar-label">Weiterlesen</p>
-        <a href="/ratgeber/" class="sidebar-link">Zur Ratgeber-Uebersicht</a>
-        <a href="/tools/" class="sidebar-link">Zum Tool-Katalog</a>
-        <a href="/category/ai-chatbots/" class="sidebar-link">AI-Chatbots &amp; Assistenten</a>
-      </div>
-    </aside>
+    </div>
   </section>
 </BaseLayout>
 
@@ -134,59 +133,66 @@ const articleSchema = {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    margin: var(--space-5) 0 var(--space-4);
+    margin: var(--space-5) 0 18px;
     color: var(--secondary);
     font-size: 0.92rem;
+    opacity: 0.86;
   }
 
   .ratgeber-breadcrumb a {
     color: var(--secondary);
   }
 
-  .article-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 380px);
-    gap: var(--space-6);
-    padding: var(--space-7);
-    margin-bottom: var(--space-7);
-    align-items: center;
+  .article-head {
+    max-width: 860px;
+    padding: 18px 0 0;
   }
 
-  .article-eyebrow {
-    margin: 0 0 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
+  .article-eyebrow,
+  .article-note-label {
+    margin: 0 0 14px;
     font-size: 0.75rem;
-    color: var(--primary);
     font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--primary);
   }
 
-  .article-hero h1 {
-    margin: 0 0 var(--space-4);
-    font-size: clamp(2rem, 4vw, 3.4rem);
-    line-height: 1.06;
-    max-width: 14ch;
+  .article-head h1 {
+    margin: 0;
+    max-width: 12ch;
+    font-size: clamp(2.5rem, 4.8vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
   }
 
   .article-excerpt {
-    margin: 0;
+    margin: 22px 0 0;
+    max-width: 60ch;
     color: var(--secondary);
-    max-width: 66ch;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
+    line-height: 1.8;
   }
 
   .article-meta,
   .article-tags,
-  .article-hero-caption {
+  .article-link-cloud {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: var(--space-4);
+  }
+
+  .article-meta {
+    margin-top: 24px;
+  }
+
+  .article-tags {
+    margin-top: 10px;
   }
 
   .article-meta span,
   .article-tags span,
-  .article-hero-caption span {
+  .article-link-pill {
     display: inline-flex;
     align-items: center;
     padding: 6px 12px;
@@ -197,184 +203,146 @@ const articleSchema = {
     font-weight: 700;
   }
 
-  .article-hero-visual {
-    margin: 0;
-    padding: 0;
+  .article-cover {
+    margin: 34px 0 0;
     overflow: hidden;
-    background: var(--surface-container-lowest);
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(244, 244, 235, 0.96)),
+      radial-gradient(circle at top left, rgba(54, 123, 113, 0.08), transparent 44%);
+  }
+
+  .article-cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .article-read {
+    padding-top: 30px;
+  }
+
+  .ratgeber-prose {
+    max-width: 860px;
+    margin: 0 auto;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.94)),
+      radial-gradient(circle at top right, rgba(23, 98, 89, 0.05), transparent 42%);
     box-shadow: var(--shadow-card);
   }
 
-  .article-hero-visual img {
-    width: 100%;
-    display: block;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    background: var(--surface-container-low);
+  :global(.ratgeber-prose > p:first-of-type) {
+    font-size: 1.1rem;
+    color: var(--on-surface-variant);
   }
 
-  .article-hero-caption {
-    padding: var(--space-4);
-    margin: 0;
+  :global(.ratgeber-prose h2) {
+    margin-top: 2.7rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+    line-height: 1.08;
   }
 
-  .article-layout {
+  :global(.ratgeber-prose h3) {
+    margin-top: 1.9rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.18rem;
+  }
+
+  :global(.ratgeber-prose p) {
+    color: var(--on-surface);
+    line-height: 1.78;
+  }
+
+  :global(.ratgeber-prose li) {
+    color: var(--on-surface);
+    line-height: 1.7;
+  }
+
+  :global(.ratgeber-prose table) {
+    border: 1px solid rgba(190, 201, 197, 0.3);
+    box-shadow: none;
+  }
+
+  :global(.ratgeber-prose th) {
+    background: rgba(244, 244, 235, 0.9);
+  }
+
+  :global(.ratgeber-prose img) {
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    box-shadow: none;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 244, 235, 0.92));
+  }
+
+  :global(.ratgeber-prose blockquote) {
+    background: rgba(244, 244, 235, 0.84);
+  }
+
+  .article-notes {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 290px;
-    gap: var(--space-6);
-    align-items: start;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 34px;
   }
 
-  .article-main {
-    padding: var(--space-7);
+  .article-note {
+    padding: 24px;
+    border: 1px solid rgba(190, 201, 197, 0.35);
   }
 
-  .article-prose {
-    max-width: 74ch;
-  }
-
-  .article-sidebar {
-    display: grid;
-    gap: var(--space-5);
-  }
-
-  .sidebar-card {
-    padding: var(--space-5);
-  }
-
-  .sidebar-label {
-    margin: 0 0 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--secondary);
-    font-size: 0.74rem;
-    font-weight: 800;
-  }
-
-  .sidebar-points {
+  .article-note-list {
     margin: 0;
     padding-left: 1.1rem;
     color: var(--secondary);
   }
 
-  .sidebar-points li + li {
+  .article-note-list li + li {
     margin-top: 10px;
   }
 
-  .related-tools {
+  .article-link-pill {
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+  }
+
+  .article-link-pill:hover,
+  .article-link-row:hover {
+    color: var(--primary);
+    background: var(--surface-container-high);
+    transform: translateY(-1px);
+  }
+
+  .article-link-stack {
+    display: grid;
+    gap: 10px;
+  }
+
+  .article-link-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .related-tool-link,
-  .sidebar-link {
-    display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 8px 12px;
-    border-radius: var(--radius-full);
-    background: var(--surface-container-low);
-    color: var(--on-surface);
-    font-size: 0.86rem;
-    font-weight: 700;
-  }
-
-  .sidebar-link + .sidebar-link {
-    margin-top: 8px;
-  }
-
-  :global(.article-prose > p:first-of-type) {
-    font-size: 1.08rem;
-    color: var(--on-surface-variant);
-  }
-
-  :global(.article-prose h2) {
-    margin: 2.2rem 0 0.9rem;
-    font-size: clamp(1.45rem, 2.5vw, 1.95rem);
-  }
-
-  :global(.article-prose h3) {
-    margin: 1.6rem 0 0.6rem;
-    font-size: 1.15rem;
-  }
-
-  :global(.article-prose p),
-  :global(.article-prose li) {
-    color: var(--secondary);
-    font-size: 1rem;
-  }
-
-  :global(.article-prose p) {
-    margin: 0 0 1rem;
-  }
-
-  :global(.article-prose ul),
-  :global(.article-prose ol) {
-    padding-left: 1.2rem;
-    margin: 0 0 1rem;
-  }
-
-  :global(.article-prose li + li) {
-    margin-top: 0.45rem;
-  }
-
-  :global(.article-prose img) {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 1.8rem 0 1rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-card);
-    background: var(--surface-container-low);
-  }
-
-  :global(.article-prose table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0 1.2rem;
-    overflow: hidden;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
     border-radius: var(--radius-md);
-    background: var(--surface-container-lowest);
-    box-shadow: var(--shadow-card);
-  }
-
-  :global(.article-prose th),
-  :global(.article-prose td) {
-    padding: 0.85rem 1rem;
-    text-align: left;
-    border-bottom: 1px solid rgba(190, 201, 197, 0.3);
-    vertical-align: top;
-  }
-
-  :global(.article-prose th) {
     background: var(--surface-container-low);
     color: var(--on-surface);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
   }
 
-  :global(.article-prose blockquote) {
-    margin: 1.5rem 0;
-    padding: 1rem 1.2rem;
-    border-left: 4px solid var(--primary);
-    background: var(--surface-container-low);
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  }
-
-  :global(.article-prose blockquote p) {
-    margin: 0;
+  .article-link-row::after {
+    content: "+";
+    font-size: 1rem;
+    color: var(--primary);
   }
 
   @media (max-width: 960px) {
-    .article-hero,
-    .article-layout {
+    .article-notes {
       grid-template-columns: 1fr;
-    }
-
-    .article-main {
-      padding: var(--space-6);
     }
   }
 </style>

@@ -3,19 +3,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 
 const articles = await listRatgeberEntries();
-const featuredArticle = articles[0] ?? null;
 
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Ratgeber",
-  "url": "https://tools.utildesk.de/ratgeber/",
-  "numberOfItems": articles.length,
-  "itemListElement": articles.map((article, index) => ({
+  name: "Ratgeber",
+  url: "https://tools.utildesk.de/ratgeber/",
+  numberOfItems: articles.length,
+  itemListElement: articles.map((article, index) => ({
     "@type": "ListItem",
-    "position": index + 1,
-    "name": article.data.title,
-    "url": `https://tools.utildesk.de/ratgeber/${article.slug}/`,
+    position: index + 1,
+    name: article.data.title,
+    url: `https://tools.utildesk.de/ratgeber/${article.slug}/`,
   })),
 };
 ---
@@ -29,51 +28,46 @@ const itemListSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   </Fragment>
 
-  <section class="ratgeber-hero card">
-    <div class="ratgeber-hero-copy">
+  <section class="ratgeber-intro">
+    <div class="ratgeber-intro-copy">
       <p class="ratgeber-eyebrow">Ratgeber</p>
-      <h1 class="ratgeber-title">Vergleiche, Leitfaeden und redaktionelle Artikel zu den wichtigsten AI-Tools</h1>
-      <p class="ratgeber-intro">
-        Hier sammeln wir chronologisch sortierte Artikel mit klarer Einordnung, passenden Tool-Links und einem ruhigen Leselayout.
-        Der erste Beitrag vergleicht die drei grossen Assistenten ChatGPT, Claude und Gemini.
+      <h1>Vergleiche, Leitfaeden und redaktionelle Artikel zu den wichtigsten AI-Tools</h1>
+      <p class="ratgeber-lead">
+        Hier sammeln wir chronologisch sortierte Artikel mit klarer Einordnung, passenden Tool-Links und einem ruhigen
+        Leselayout. Der erste Beitrag vergleicht die drei grossen Assistenten ChatGPT, Claude und Gemini.
       </p>
-      <div class="ratgeber-hero-actions">
-        <a href="#artikel" class="hero-cta">Zu den Artikeln</a>
-        <a href="/tools/" class="hero-secondary">Zum Tool-Katalog</a>
+      <div class="ratgeber-actions">
+        <a href="#artikel" class="hero-stitch-cta">Zu den Artikeln</a>
+        <a href="/tools/" class="ratgeber-ghost-link">Zum Tool-Katalog</a>
       </div>
     </div>
 
-    <aside class="ratgeber-hero-aside card">
-      <p class="aside-label">Aktuell</p>
-      <p class="aside-value">{articles.length} Artikel</p>
-      <p class="aside-note">Neue Beitraege erscheinen oben in der Liste.</p>
-      <div class="aside-divider"></div>
-      <ul class="aside-points">
-        <li>Vergleiche mit klaren Empfehlungen</li>
-        <li>Interne Links zu den passenden Tools</li>
-        <li>Illustrationen im Stil des Hauptdesigns</li>
-      </ul>
+    <aside class="ratgeber-brief card">
+      <p class="ratgeber-brief-label">Ausgabe</p>
+      <p class="ratgeber-brief-value">{articles.length} Artikel</p>
+      <p class="ratgeber-brief-text">Neue Beitraege stehen oben. Der Fokus liegt auf Vergleichen, Einordnung und klaren Empfehlungen.</p>
     </aside>
   </section>
 
-  {featuredArticle ? (
-    <section class="featured-section card">
-      <div class="featured-media">
-        {featuredArticle.data.coverImage ? <img src={featuredArticle.data.coverImage} alt={featuredArticle.data.title} loading="eager" /> : null}
-      </div>
-      <div class="featured-copy">
-        <p class="featured-label">Featured Article</p>
-        <h2><a href={`/ratgeber/${featuredArticle.slug}/`}>{featuredArticle.data.title}</a></h2>
-        <p>{featuredArticle.data.excerpt}</p>
-        <div class="featured-meta">
-          {featuredArticle.data.date ? <span>{new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(featuredArticle.data.date))}</span> : null}
-          {featuredArticle.data.readTime ? <span>Lesedauer ca. {featuredArticle.data.readTime} Min.</span> : null}
-          {featuredArticle.data.category ? <span>{featuredArticle.data.category}</span> : null}
+  <section class="ratgeber-overview card">
+    <div class="overview-copy">
+      <p class="overview-label">Redaktioneller Fokus</p>
+      <div class="overview-grid">
+        <div>
+          <h2>Ein ruhiger Layer ueber dem Tool-Katalog</h2>
+          <p>
+            Der Bereich ergaenzt den bestehenden Katalog um Einordnung, Vergleiche und Use-Case-orientierte Lesestuecke.
+            Jede Karte fuehrt direkt in einen Artikel und verlinkt von dort weiter in die passenden Tool-Seiten.
+          </p>
         </div>
-        <a href={`/ratgeber/${featuredArticle.slug}/`} class="featured-link">Artikel lesen</a>
+        <ul class="overview-points">
+          <li>Vergleiche statt bloesser Tool-Listen</li>
+          <li>Mehr Kontext fuer Suchanfragen mit Informationsintention</li>
+          <li>Interne Links zwischen Artikel, Kategorien und Tools</li>
+        </ul>
       </div>
-    </section>
-  ) : null}
+    </div>
+  </section>
 
   <section class="ratgeber-list-section" id="artikel">
     <div class="section-heading">
@@ -82,34 +76,46 @@ const itemListSchema = {
     </div>
 
     {articles.length > 0 ? (
-      <div class="ratgeber-list">
-        {articles.map((article) => {
-          const published = article.data.date ? new Intl.DateTimeFormat("de-DE", {
-            day: "2-digit",
-            month: "long",
-            year: "numeric",
-          }).format(new Date(article.data.date)) : "";
+      <div class="journal-list">
+        {articles.map((article, index) => {
+          const published = article.data.date
+            ? new Intl.DateTimeFormat("de-DE", {
+                day: "2-digit",
+                month: "long",
+                year: "numeric",
+              }).format(new Date(article.data.date))
+            : "";
 
           return (
-            <a href={`/ratgeber/${article.slug}/`} class="ratgeber-card card">
-              <div class="ratgeber-card-content">
-                <div class="ratgeber-card-topline">
-                  <span class="ratgeber-pill">{article.data.eyebrow || "Ratgeber"}</span>
-                  {article.data.category ? <span class="ratgeber-pill ratgeber-pill-secondary">{article.data.category}</span> : null}
+            <a href={`/ratgeber/${article.slug}/`} class="journal-card card">
+              <div class="journal-index">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+              </div>
+
+              <div class="journal-body">
+                <div class="journal-topline">
+                  <span class="journal-kicker">{article.data.eyebrow || "Ratgeber"}</span>
+                  {article.data.category ? <span class="journal-chip">{article.data.category}</span> : null}
                 </div>
+
                 <h3>{article.data.title}</h3>
                 <p>{article.data.excerpt}</p>
-                <div class="ratgeber-card-meta">
+
+                <div class="journal-meta">
                   <span>{published}</span>
                   {article.data.readTime ? <span>Lesedauer ca. {article.data.readTime} Min.</span> : null}
                 </div>
+
                 {article.data.tags?.length ? (
-                  <div class="ratgeber-card-tags">
-                    {article.data.tags.slice(0, 4).map((tag) => <span>{tag}</span>)}
+                  <div class="journal-tags">
+                    {article.data.tags.slice(0, 4).map((tag) => (
+                      <span>{tag}</span>
+                    ))}
                   </div>
                 ) : null}
               </div>
-              <div class="ratgeber-card-media">
+
+              <div class="journal-art">
                 {article.data.coverImage ? <img src={article.data.coverImage} alt={article.data.title} loading="lazy" /> : null}
               </div>
             </a>
@@ -126,177 +132,133 @@ const itemListSchema = {
 </BaseLayout>
 
 <style>
-  .ratgeber-hero {
+  .ratgeber-intro {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 340px);
     gap: var(--space-6);
-    padding: var(--space-7);
-    margin-top: var(--space-6);
+    align-items: end;
+    padding: 40px 0 18px;
+  }
+
+  .ratgeber-intro-copy h1 {
+    margin: 0;
+    max-width: 13ch;
+    font-size: clamp(2.3rem, 4.6vw, 4.2rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .ratgeber-eyebrow,
+  .overview-label,
+  .ratgeber-brief-label {
+    margin: 0 0 14px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--primary);
+  }
+
+  .ratgeber-lead {
+    max-width: 62ch;
+    margin: 18px 0 0;
+    color: var(--secondary);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .ratgeber-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .ratgeber-ghost-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 22px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: background var(--transition), transform var(--transition);
+  }
+
+  .ratgeber-ghost-link:hover {
+    background: var(--surface-container-high);
+    color: var(--primary);
+    transform: translateY(-2px);
+  }
+
+  .ratgeber-brief {
+    padding: 28px;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 244, 235, 0.92)),
+      radial-gradient(circle at top right, rgba(23, 98, 89, 0.1), transparent 48%);
+  }
+
+  .ratgeber-brief-value {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .ratgeber-brief-text {
+    margin: 14px 0 0;
+    color: var(--secondary);
+    line-height: 1.7;
+  }
+
+  .ratgeber-overview {
+    margin-top: 20px;
+    padding: 30px 32px;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(244, 244, 235, 0.96)),
+      radial-gradient(circle at top left, rgba(54, 123, 113, 0.08), transparent 42%);
+  }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 320px);
+    gap: var(--space-6);
     align-items: start;
   }
 
-  .ratgeber-eyebrow {
-    margin: 0 0 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    font-size: 0.75rem;
-    color: var(--primary);
-    font-weight: 800;
-  }
-
-  .ratgeber-title {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    line-height: 1.06;
-    margin: 0 0 var(--space-4);
-    max-width: 15ch;
-  }
-
-  .ratgeber-intro {
+  .overview-grid h2 {
     margin: 0;
-    max-width: 70ch;
-    color: var(--secondary);
-    font-size: 1.05rem;
-  }
-
-  .ratgeber-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: var(--space-5);
-  }
-
-  .hero-cta,
-  .hero-secondary,
-  .featured-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 13px 20px;
-    border-radius: var(--radius-full);
-    font-weight: 700;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
-
-  .hero-cta {
-    background: var(--primary);
-    color: var(--on-primary);
-  }
-
-  .hero-secondary {
-    background: var(--surface-container-low);
-    color: var(--on-surface);
-  }
-
-  .ratgeber-hero-aside {
-    padding: var(--space-5);
-    background: var(--surface-container-lowest);
-    box-shadow: var(--shadow-card);
-  }
-
-  .aside-label,
-  .featured-label {
-    margin: 0 0 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--secondary);
-    font-size: 0.74rem;
-    font-weight: 800;
-  }
-
-  .aside-value {
-    margin: 0 0 10px;
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--on-surface);
-  }
-
-  .aside-note {
-    margin: 0;
-    color: var(--secondary);
-  }
-
-  .aside-divider {
-    height: 1px;
-    background: var(--outline-variant);
-    opacity: 0.42;
-    margin: var(--space-5) 0;
-  }
-
-  .aside-points {
-    margin: 0;
-    padding-left: 1.1rem;
-    color: var(--secondary);
-  }
-
-  .aside-points li + li {
-    margin-top: 10px;
-  }
-
-  .featured-section {
-    display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    gap: 0;
-    margin-top: var(--space-6);
-    overflow: hidden;
-  }
-
-  .featured-media {
-    min-height: 100%;
-    background: var(--surface-container-low);
-  }
-
-  .featured-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .featured-copy {
-    padding: var(--space-6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 14px;
-  }
-
-  .featured-copy h2 {
-    margin: 0;
-    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    font-size: clamp(1.5rem, 2.4vw, 2.15rem);
     line-height: 1.08;
   }
 
-  .featured-copy p {
-    margin: 0;
+  .overview-grid p {
+    margin: 14px 0 0;
     color: var(--secondary);
-    font-size: 1rem;
+    line-height: 1.75;
   }
 
-  .featured-meta,
-  .ratgeber-card-topline,
-  .ratgeber-card-meta,
-  .ratgeber-card-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+  .overview-points {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 12px;
   }
 
-  .featured-meta span,
-  .ratgeber-card-meta span,
-  .ratgeber-card-tags span {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 12px;
-    border-radius: var(--radius-full);
-    background: var(--surface-container-low);
+  .overview-points li {
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(190, 201, 197, 0.28);
     color: var(--on-surface-variant);
-    font-size: 0.78rem;
-    font-weight: 700;
-  }
-
-  .featured-link {
-    align-self: flex-start;
-    background: var(--primary);
-    color: var(--on-primary);
+    font-weight: 600;
   }
 
   .ratgeber-list-section {
@@ -304,80 +266,126 @@ const itemListSchema = {
   }
 
   .section-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
     margin-bottom: var(--space-6);
   }
 
   .section-heading h2 {
     margin: 0;
-    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    font-size: clamp(1.7rem, 2.8vw, 2.3rem);
   }
 
   .section-heading p {
-    margin: 0;
+    margin: 8px 0 0;
     color: var(--secondary);
   }
 
-  .ratgeber-list {
+  .journal-list {
     display: grid;
-    gap: var(--space-5);
+    gap: 18px;
   }
 
-  .ratgeber-card {
+  .journal-card {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+    grid-template-columns: 64px minmax(0, 1fr) minmax(240px, 320px);
     gap: 0;
     overflow: hidden;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    color: inherit;
     text-decoration: none;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  }
+
+  .journal-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(23, 98, 89, 0.18);
     color: inherit;
   }
 
-  .ratgeber-card:hover {
-    color: inherit;
+  .journal-index {
+    display: grid;
+    place-items: center;
+    border-right: 1px solid rgba(190, 201, 197, 0.28);
+    background: linear-gradient(180deg, rgba(244, 244, 235, 0.86), rgba(255, 255, 255, 0.92));
   }
 
-  .ratgeber-card-content {
-    padding: var(--space-6);
+  .journal-index span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: 0.12em;
+  }
+
+  .journal-body {
+    padding: 28px 30px;
     display: flex;
     flex-direction: column;
     gap: 14px;
   }
 
-  .ratgeber-card h3 {
-    margin: 0;
-    font-size: clamp(1.4rem, 2vw, 1.8rem);
-    line-height: 1.12;
+  .journal-topline,
+  .journal-meta,
+  .journal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
-  .ratgeber-card p {
-    margin: 0;
-    color: var(--secondary);
-  }
-
-  .ratgeber-pill {
+  .journal-kicker,
+  .journal-chip,
+  .journal-meta span,
+  .journal-tags span {
     display: inline-flex;
     align-items: center;
     padding: 6px 12px;
     border-radius: var(--radius-full);
-    background: var(--primary);
-    color: var(--on-primary);
-    font-size: 0.72rem;
-    font-weight: 800;
+    font-size: 0.77rem;
+    font-weight: 700;
   }
 
-  .ratgeber-pill-secondary {
+  .journal-kicker {
+    background: rgba(23, 98, 89, 0.1);
+    color: var(--primary);
+  }
+
+  .journal-chip,
+  .journal-meta span,
+  .journal-tags span {
     background: var(--surface-container-low);
     color: var(--on-surface-variant);
   }
 
-  .ratgeber-card-media {
-    min-height: 100%;
-    background: var(--surface-container-low);
+  .journal-body h3 {
+    margin: 0;
+    max-width: 24ch;
+    font-size: clamp(1.45rem, 2.4vw, 2rem);
+    line-height: 1.08;
   }
 
-  .ratgeber-card-media img {
+  .journal-body p {
+    margin: 0;
+    max-width: 62ch;
+    color: var(--secondary);
+    line-height: 1.72;
+  }
+
+  .journal-art {
+    position: relative;
+    min-height: 100%;
+    background: linear-gradient(180deg, rgba(244, 244, 235, 0.92), rgba(255, 255, 255, 0.92));
+  }
+
+  .journal-art::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border-radius: calc(var(--radius-lg) - 10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.2));
+    pointer-events: none;
+  }
+
+  .journal-art img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -396,16 +404,21 @@ const itemListSchema = {
     color: var(--secondary);
   }
 
-  @media (max-width: 920px) {
-    .ratgeber-hero,
-    .featured-section,
-    .ratgeber-card {
+  @media (max-width: 960px) {
+    .ratgeber-intro,
+    .overview-grid,
+    .journal-card {
       grid-template-columns: 1fr;
     }
 
-    .ratgeber-card-media {
-      aspect-ratio: 16 / 9;
-      order: -1;
+    .journal-index {
+      min-height: 52px;
+      border-right: none;
+      border-bottom: 1px solid rgba(190, 201, 197, 0.28);
+    }
+
+    .journal-art {
+      aspect-ratio: 16 / 10;
     }
   }
 </style>
