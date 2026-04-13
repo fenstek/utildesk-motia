@@ -13,7 +13,7 @@ Good states and important restoration points.
 ### Why this is a good state
 
 - ✅ **Pipeline fully operational**: cron publish → autobot → PR → master → Cloudflare Pages
-- ✅ **186 published tools** in `content/tools/`
+- ✅ **751 published tools** in `content/tools/` (на `master`)
 - ✅ **Site builds cleanly**: Astro v5 + MDX
 - ✅ **Clean working tree**: no uncommitted changes
 - ✅ **Project documentation added**: `docs/project-overview.md`
