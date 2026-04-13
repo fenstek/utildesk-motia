@@ -4,6 +4,46 @@ Good states and important restoration points.
 
 ---
 
+## 2026-04-13 — Pre-refactor Stable State
+
+**Tag:** `checkpoint-good-20260413`
+**Commit:** `6b0053ab`
+**Status:** ✅ GOOD STATE
+
+### Why this is a good state
+
+- ✅ **Pipeline fully operational**: cron publish → autobot → PR → master → Cloudflare Pages
+- ✅ **186 published tools** in `content/tools/`
+- ✅ **Site builds cleanly**: Astro v5 + MDX
+- ✅ **Clean working tree**: no uncommitted changes
+- ✅ **Project documentation added**: `docs/project-overview.md`
+
+### What is in this state
+
+- Content pipeline (`scripts/`) — все скрипты на месте, оркестратор работает
+- Static site (`site/`) — Astro v5, все страницы и категории
+- 186 MD-файлов инструментов на немецком языке
+- Verification agent (`agent/`) — self-healing loop
+- Docker Compose конфиги (`compose/`)
+
+### How to restore from this checkpoint
+
+```bash
+git checkout checkpoint-good-20260413
+# или жёсткий сброс:
+git reset --hard checkpoint-good-20260413
+```
+
+### Verify state after restore
+
+```bash
+git log -1 --oneline
+git status
+ls content/tools/*.md | wc -l  # должно быть 186
+```
+
+---
+
 ## 2026-02-16 15:45 UTC - Pipeline Restoration Complete
 
 **Tag:** `checkpoint-good-20260216-1545`
