@@ -7,31 +7,32 @@ Good states and important restoration points.
 ## 2026-04-13 — Pre-refactor Stable State
 
 **Tag:** `checkpoint-good-20260413`
-**Commit:** `2076e04` (HEAD of `master`)
+**Commit:** `2076e04` (HEAD of `master`, 2026-04-13)
 **Status:** ✅ GOOD STATE
 
 ### Why this is a good state
 
 - ✅ **Pipeline fully operational**: cron publish → autobot → PR → master → Cloudflare Pages
-- ✅ **751 published tools** in `content/tools/` (на `master`)
-- ✅ **Site builds cleanly**: Astro v5 + MDX
-- ✅ **Clean working tree**: no uncommitted changes
-- ✅ **Project documentation added**: `docs/project-overview.md`
+- ✅ **751 published tools** in `content/tools/` (856 total, 105 disabled с префиксом `_`)
+- ✅ **Site builds cleanly**: Astro v5 + MDX, design system teal `#176259`
+- ✅ **Triple publish gates (v2.3)** активны: official_url + tags + orchestrator
+- ✅ **Cron running**: каждые 6h publish, каждые 12h discovery
+- ✅ **Clean working tree на master**
 
 ### What is in this state
 
-- Content pipeline (`scripts/`) — все скрипты на месте, оркестратор работает
-- Static site (`site/`) — Astro v5, все страницы и категории
-- 186 MD-файлов инструментов на немецком языке
-- Verification agent (`agent/`) — self-healing loop
-- Docker Compose конфиги (`compose/`)
+- Content pipeline (`scripts/`) — 100+ скриптов, single orchestrator pattern
+- Static site (`site/`) — Astro v5, страницы: tools, categories, tags + Cloudflare Workers (`site/functions/`)
+- 751 активных MD-файлов инструментов на немецком языке
+- Verification agent (`agent/`) — self-healing loop, disabled_tools check
+- Docs (`docs/`) — 7 документов в 4 структурированных папках
 
 ### How to restore from this checkpoint
 
 ```bash
-git checkout checkpoint-good-20260413
-# или жёсткий сброс:
 git reset --hard checkpoint-good-20260413
+# или по SHA:
+git reset --hard 2076e04
 ```
 
 ### Verify state after restore
@@ -39,7 +40,8 @@ git reset --hard checkpoint-good-20260413
 ```bash
 git log -1 --oneline
 git status
-ls content/tools/*.md | wc -l  # должно быть 186
+git ls-tree -r HEAD --name-only | grep "^content/tools/" | grep -v "_" | wc -l
+# ожидается: 751
 ```
 
 ---
