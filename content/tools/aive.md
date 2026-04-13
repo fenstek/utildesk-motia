@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["video", "content", "marketing"]
 official_url: "https://www.aive.com/"
 created_at: 2026-02-15
-popularity: 67
+popularity: 65
 ---
 
 # Aive

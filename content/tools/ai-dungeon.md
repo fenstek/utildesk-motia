@@ -7,7 +7,7 @@ tags: ["writing", "design"]
 official_url: "https://play.aidungeon.io"
 affiliate_url: "https://play.aidungeon.io"
 created_at: 2026-02-03
-popularity: 69
+popularity: 67
 ---
 
 # AI Dungeon
