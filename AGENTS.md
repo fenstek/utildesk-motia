@@ -14,7 +14,7 @@ It is the counterpart to CLAUDE.md and must be kept in sync with it.
 - Publishes to a static Astro site via automated cron pipeline
 - Deploys to Cloudflare Pages from `master` branch
 
-**Current state (2026-04-13):** ~186 published tools, pipeline fully operational.
+**Current state (2026-04-13):** ~751 published tools, pipeline fully operational.
 **Last known good checkpoint:** `checkpoint-good-20260413` / commit `6b0053ab`
 
 ---
@@ -109,7 +109,7 @@ Good states are tracked in `CHECKPOINTS.md` as git tags.
 **Current checkpoint:**
 - Tag: `checkpoint-good-20260413`
 - Commit: `6b0053ab`
-- State: 186 tools published, pipeline operational, clean working tree
+- State: 751 tools published (on `master`), pipeline operational, clean working tree
 
 **To roll back:**
 ```bash
