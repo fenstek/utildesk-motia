@@ -1,8 +1,9 @@
-﻿---
+---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 
 const articles = await listRatgeberEntries();
+const featuredArticle = articles[0] ?? null;
 
 const itemListSchema = {
   "@context": "https://schema.org",
@@ -20,8 +21,8 @@ const itemListSchema = {
 ---
 
 <BaseLayout
-  title="Ratgeber — Utildesk"
-  description="Chronologische Ratgeber, Vergleiche und Leitfäden zu AI-Tools, Automatisierung und Produktivität."
+  title="Ratgeber - Utildesk"
+  description="Chronologische Ratgeber, Vergleiche und Leitfaeden zu AI-Tools, Automatisierung und Produktivitaet."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/ratgeber/" />
@@ -31,27 +32,53 @@ const itemListSchema = {
   <section class="ratgeber-hero card">
     <div class="ratgeber-hero-copy">
       <p class="ratgeber-eyebrow">Ratgeber</p>
-      <h1 class="ratgeber-title">Vergleiche, Leitfäden und redaktionelle Artikel zu den wichtigsten AI-Tools</h1>
+      <h1 class="ratgeber-title">Vergleiche, Leitfaeden und redaktionelle Artikel zu den wichtigsten AI-Tools</h1>
       <p class="ratgeber-intro">
-        Hier sammeln wir chronologisch sortierte Artikel mit klarer Einordnung, Illustration und internen Links zu den passenden Tool-Seiten.
-        Der erste Beitrag vergleicht die drei großen Assistenten ChatGPT, Claude und Gemini.
+        Hier sammeln wir chronologisch sortierte Artikel mit klarer Einordnung, passenden Tool-Links und einem ruhigen Leselayout.
+        Der erste Beitrag vergleicht die drei grossen Assistenten ChatGPT, Claude und Gemini.
       </p>
       <div class="ratgeber-hero-actions">
         <a href="#artikel" class="hero-cta">Zu den Artikeln</a>
         <a href="/tools/" class="hero-secondary">Zum Tool-Katalog</a>
       </div>
     </div>
-    <div class="ratgeber-hero-meta card">
-      <p class="meta-label">Aktuell</p>
-      <p class="meta-value">{articles.length} Artikel</p>
-      <p class="meta-note">Neue Beiträge erscheinen oben in der Liste.</p>
-    </div>
+
+    <aside class="ratgeber-hero-aside card">
+      <p class="aside-label">Aktuell</p>
+      <p class="aside-value">{articles.length} Artikel</p>
+      <p class="aside-note">Neue Beitraege erscheinen oben in der Liste.</p>
+      <div class="aside-divider"></div>
+      <ul class="aside-points">
+        <li>Vergleiche mit klaren Empfehlungen</li>
+        <li>Interne Links zu den passenden Tools</li>
+        <li>Illustrationen im Stil des Hauptdesigns</li>
+      </ul>
+    </aside>
   </section>
+
+  {featuredArticle ? (
+    <section class="featured-section card">
+      <div class="featured-media">
+        {featuredArticle.data.coverImage ? <img src={featuredArticle.data.coverImage} alt={featuredArticle.data.title} loading="eager" /> : null}
+      </div>
+      <div class="featured-copy">
+        <p class="featured-label">Featured Article</p>
+        <h2><a href={`/ratgeber/${featuredArticle.slug}/`}>{featuredArticle.data.title}</a></h2>
+        <p>{featuredArticle.data.excerpt}</p>
+        <div class="featured-meta">
+          {featuredArticle.data.date ? <span>{new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(featuredArticle.data.date))}</span> : null}
+          {featuredArticle.data.readTime ? <span>Lesedauer ca. {featuredArticle.data.readTime} Min.</span> : null}
+          {featuredArticle.data.category ? <span>{featuredArticle.data.category}</span> : null}
+        </div>
+        <a href={`/ratgeber/${featuredArticle.slug}/`} class="featured-link">Artikel lesen</a>
+      </div>
+    </section>
+  ) : null}
 
   <section class="ratgeber-list-section" id="artikel">
     <div class="section-heading">
       <h2>Chronologische Vorschau</h2>
-      <p>Die Reihenfolge ist nach Veröffentlichungsdatum sortiert.</p>
+      <p>Die Reihenfolge ist nach Veroeffentlichungsdatum sortiert.</p>
     </div>
 
     {articles.length > 0 ? (
@@ -65,12 +92,7 @@ const itemListSchema = {
 
           return (
             <a href={`/ratgeber/${article.slug}/`} class="ratgeber-card card">
-              <div class="ratgeber-card-media">
-                {article.data.coverImage ? (
-                  <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
-                ) : null}
-              </div>
-              <div class="ratgeber-card-body">
+              <div class="ratgeber-card-content">
                 <div class="ratgeber-card-topline">
                   <span class="ratgeber-pill">{article.data.eyebrow || "Ratgeber"}</span>
                   {article.data.category ? <span class="ratgeber-pill ratgeber-pill-secondary">{article.data.category}</span> : null}
@@ -83,11 +105,12 @@ const itemListSchema = {
                 </div>
                 {article.data.tags?.length ? (
                   <div class="ratgeber-card-tags">
-                    {article.data.tags.slice(0, 4).map((tag) => (
-                      <span>{tag}</span>
-                    ))}
+                    {article.data.tags.slice(0, 4).map((tag) => <span>{tag}</span>)}
                   </div>
                 ) : null}
+              </div>
+              <div class="ratgeber-card-media">
+                {article.data.coverImage ? <img src={article.data.coverImage} alt={article.data.title} loading="lazy" /> : null}
               </div>
             </a>
           );
@@ -95,7 +118,7 @@ const itemListSchema = {
       </div>
     ) : (
       <div class="empty-state card">
-        <h3>Noch keine Artikel veröffentlicht</h3>
+        <h3>Noch keine Artikel veroeffentlicht</h3>
         <p>Sobald der erste Ratgeber live ist, erscheint er hier in chronologischer Reihenfolge.</p>
       </div>
     )}
@@ -105,10 +128,11 @@ const itemListSchema = {
 <style>
   .ratgeber-hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 280px;
+    grid-template-columns: minmax(0, 1fr) 320px;
     gap: var(--space-6);
     padding: var(--space-7);
     margin-top: var(--space-6);
+    align-items: start;
   }
 
   .ratgeber-eyebrow {
@@ -117,19 +141,19 @@ const itemListSchema = {
     letter-spacing: 0.14em;
     font-size: 0.75rem;
     color: var(--primary);
-    font-weight: 700;
+    font-weight: 800;
   }
 
   .ratgeber-title {
-    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
     line-height: 1.06;
     margin: 0 0 var(--space-4);
-    max-width: 14ch;
+    max-width: 15ch;
   }
 
   .ratgeber-intro {
     margin: 0;
-    max-width: 72ch;
+    max-width: 70ch;
     color: var(--secondary);
     font-size: 1.05rem;
   }
@@ -142,7 +166,8 @@ const itemListSchema = {
   }
 
   .hero-cta,
-  .hero-secondary {
+  .hero-secondary,
+  .featured-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -162,31 +187,116 @@ const itemListSchema = {
     color: var(--on-surface);
   }
 
-  .ratgeber-hero-meta {
-    align-self: start;
+  .ratgeber-hero-aside {
     padding: var(--space-5);
     background: var(--surface-container-lowest);
+    box-shadow: var(--shadow-card);
   }
 
-  .meta-label {
+  .aside-label,
+  .featured-label {
     margin: 0 0 10px;
-    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--secondary);
-    font-weight: 700;
+    font-size: 0.74rem;
+    font-weight: 800;
   }
 
-  .meta-value {
+  .aside-value {
     margin: 0 0 10px;
     font-size: 2rem;
     font-weight: 800;
     color: var(--on-surface);
   }
 
-  .meta-note {
+  .aside-note {
     margin: 0;
     color: var(--secondary);
+  }
+
+  .aside-divider {
+    height: 1px;
+    background: var(--outline-variant);
+    opacity: 0.42;
+    margin: var(--space-5) 0;
+  }
+
+  .aside-points {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--secondary);
+  }
+
+  .aside-points li + li {
+    margin-top: 10px;
+  }
+
+  .featured-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 0;
+    margin-top: var(--space-6);
+    overflow: hidden;
+  }
+
+  .featured-media {
+    min-height: 100%;
+    background: var(--surface-container-low);
+  }
+
+  .featured-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-copy {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .featured-copy h2 {
+    margin: 0;
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    line-height: 1.08;
+  }
+
+  .featured-copy p {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 1rem;
+  }
+
+  .featured-meta,
+  .ratgeber-card-topline,
+  .ratgeber-card-meta,
+  .ratgeber-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .featured-meta span,
+  .ratgeber-card-meta span,
+  .ratgeber-card-tags span {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface-variant);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .featured-link {
+    align-self: flex-start;
+    background: var(--primary);
+    color: var(--on-primary);
   }
 
   .ratgeber-list-section {
@@ -217,7 +327,7 @@ const itemListSchema = {
 
   .ratgeber-card {
     display: grid;
-    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
     gap: 0;
     overflow: hidden;
     text-decoration: none;
@@ -226,6 +336,40 @@ const itemListSchema = {
 
   .ratgeber-card:hover {
     color: inherit;
+  }
+
+  .ratgeber-card-content {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .ratgeber-card h3 {
+    margin: 0;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    line-height: 1.12;
+  }
+
+  .ratgeber-card p {
+    margin: 0;
+    color: var(--secondary);
+  }
+
+  .ratgeber-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    background: var(--primary);
+    color: var(--on-primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .ratgeber-pill-secondary {
+    background: var(--surface-container-low);
+    color: var(--on-surface-variant);
   }
 
   .ratgeber-card-media {
@@ -239,74 +383,29 @@ const itemListSchema = {
     object-fit: cover;
   }
 
-  .ratgeber-card-body {
-    padding: var(--space-6);
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .ratgeber-card-topline,
-  .ratgeber-card-meta,
-  .ratgeber-card-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .ratgeber-pill {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 12px;
-    border-radius: var(--radius-full);
-    background: var(--surface-container-high);
-    color: var(--on-surface-variant);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .ratgeber-pill-secondary {
-    background: rgba(23, 98, 89, 0.08);
-    color: var(--primary);
-  }
-
-  .ratgeber-card h3 {
-    margin: 0;
-    font-size: clamp(1.35rem, 2vw, 1.7rem);
-  }
-
-  .ratgeber-card p {
-    margin: 0;
-    color: var(--secondary);
-    max-width: 72ch;
-  }
-
-  .ratgeber-card-meta {
-    font-size: 0.9rem;
-    color: var(--secondary);
-  }
-
-  .ratgeber-card-tags span {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 10px;
-    border-radius: var(--radius-full);
-    background: var(--surface-container-low);
-    color: var(--on-surface-variant);
-    font-size: 0.78rem;
-    font-weight: 600;
-  }
-
   .empty-state {
     padding: var(--space-6);
   }
 
-  @media (max-width: 900px) {
+  .empty-state h3 {
+    margin: 0 0 8px;
+  }
+
+  .empty-state p {
+    margin: 0;
+    color: var(--secondary);
+  }
+
+  @media (max-width: 920px) {
     .ratgeber-hero,
+    .featured-section,
     .ratgeber-card {
       grid-template-columns: 1fr;
+    }
+
+    .ratgeber-card-media {
+      aspect-ratio: 16 / 9;
+      order: -1;
     }
   }
 </style>

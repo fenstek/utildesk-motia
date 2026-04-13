@@ -1,54 +1,66 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-label="Typische Einsatzszenarien für ChatGPT, Claude und Gemini">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-label="Typische Einsatzszenarien fuer ChatGPT, Claude und Gemini">
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafaf1"/>
+      <stop offset="100%" stop-color="#f2f4ef"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f5f5ec"/>
+      <stop offset="100%" stop-color="#f7f7ef"/>
     </linearGradient>
     <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#176259"/>
       <stop offset="100%" stop-color="#367b71"/>
     </linearGradient>
-    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#1a1c1710"/>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#1a1c170b"/>
     </filter>
   </defs>
-  <rect width="1200" height="580" fill="#fafaf1"/>
-  <text x="72" y="90" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.8">Typische Einsatzszenarien</text>
+  <rect width="1200" height="580" fill="url(#bg)"/>
+  <text x="72" y="90" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.8">Typische Einsatzszenarien</text>
   <text x="72" y="130" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="20">Welcher Assistent passt zu welchem Arbeitsmodus?</text>
 
-  <g transform="translate(72 200)" filter="url(#cardShadow)">
-    <rect width="328" height="270" rx="28" fill="url(#panel)"/>
-    <circle cx="56" cy="64" r="28" fill="#176259"/>
-    <text x="56" y="72" text-anchor="middle" fill="#fff" font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="800">1</text>
-    <text x="104" y="70" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="28" font-weight="800">Schneller Entwurf</text>
-    <text x="28" y="128" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Ideal für kurze Texte, Brainstorming, erste Gliederungen und schnelle Antworten.</text>
-    <rect x="28" y="170" width="270" height="20" rx="10" fill="#e3ebe8"/>
-    <rect x="28" y="170" width="240" height="20" rx="10" fill="#367b71"/>
-    <text x="28" y="232" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">ChatGPT übernimmt hier oft die Lead-Rolle.</text>
-  </g>
+  <g transform="translate(72 198)" filter="url(#shadow)">
+    <rect width="1056" height="286" rx="30" fill="#ffffff"/>
+    <rect x="28" y="28" width="1000" height="230" rx="22" fill="url(#panel)"/>
 
-  <line x1="416" y1="335" x2="784" y2="335" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
-  <polygon points="784,335 758,320 758,350" fill="#367b71"/>
+    <g transform="translate(42 48)">
+      <rect width="292" height="170" rx="22" fill="#ffffff"/>
+      <rect x="18" y="18" width="54" height="54" rx="18" fill="#176259"/>
+      <path d="M45 31c8 0 14 6 14 14s-6 14-14 14-14-6-14-14 6-14 14-14Z" fill="none" stroke="#fff" stroke-width="2"/>
+      <text x="92" y="44" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="24" font-weight="800">Schneller Entwurf</text>
+      <text x="18" y="104" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="16">Ideal fuer kurze Texte, Brainstorming, erste Gliederungen und schnelle Antworten.</text>
+      <rect x="18" y="128" width="250" height="10" rx="5" fill="#e3ebe8"/>
+      <rect x="18" y="128" width="214" height="10" rx="5" fill="#367b71"/>
+      <text x="18" y="156" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="14">ChatGPT uebernimmt hier oft die Lead-Rolle.</text>
+    </g>
 
-  <g transform="translate(436 200)" filter="url(#cardShadow)">
-    <rect width="328" height="270" rx="28" fill="url(#panel)"/>
-    <circle cx="56" cy="64" r="28" fill="#9fb9b1"/>
-    <text x="56" y="72" text-anchor="middle" fill="#176259" font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="800">2</text>
-    <text x="104" y="70" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="28" font-weight="800">Langer Kontext</text>
-    <text x="28" y="128" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Gut für Essays, Recherche-Zusammenfassungen, Protokolle und präzises Refactoring.</text>
-    <rect x="28" y="170" width="270" height="20" rx="10" fill="#e3ebe8"/>
-    <rect x="28" y="170" width="212" height="20" rx="10" fill="#9fb9b1"/>
-    <text x="28" y="232" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Claude glänzt bei Tiefe und Struktur.</text>
-  </g>
+    <line x1="350" y1="134" x2="438" y2="134" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+    <polygon points="438,134 418,122 418,146" fill="#367b71"/>
 
-  <g transform="translate(800 200)" filter="url(#cardShadow)">
-    <rect width="328" height="270" rx="28" fill="url(#panel)"/>
-    <circle cx="56" cy="64" r="28" fill="#d9b06d"/>
-    <text x="56" y="72" text-anchor="middle" fill="#7f4f12" font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="800">3</text>
-    <text x="104" y="70" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="28" font-weight="800">Google-Flows</text>
-    <text x="28" y="128" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Praktisch für Suche, Docs, Gmail und Workflows im Google-Ökosystem.</text>
-    <rect x="28" y="170" width="270" height="20" rx="10" fill="#e3ebe8"/>
-    <rect x="28" y="170" width="222" height="20" rx="10" fill="#d9b06d"/>
-    <text x="28" y="232" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Gemini fügt sich sauber in Google ein.</text>
+    <g transform="translate(456 48)">
+      <rect width="292" height="170" rx="22" fill="#ffffff"/>
+      <rect x="18" y="18" width="54" height="54" rx="18" fill="#c5d8d4"/>
+      <path d="M36 31h20l6 18-10 10H34l-6-10 8-18Z" fill="none" stroke="#176259" stroke-width="2" stroke-linejoin="round"/>
+      <text x="92" y="44" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="24" font-weight="800">Langer Kontext</text>
+      <text x="18" y="104" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="16">Gut fuer Essays, Recherche-Zusammenfassungen, Protokolle und praezises Refactoring.</text>
+      <rect x="18" y="128" width="250" height="10" rx="5" fill="#e3ebe8"/>
+      <rect x="18" y="128" width="190" height="10" rx="5" fill="#9fb9b1"/>
+      <text x="18" y="156" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="14">Claude glaenzt bei Tiefe und Struktur.</text>
+    </g>
+
+    <line x1="764" y1="134" x2="852" y2="134" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+    <polygon points="852,134 832,122 832,146" fill="#367b71"/>
+
+    <g transform="translate(870 48)">
+      <rect width="292" height="170" rx="22" fill="#ffffff"/>
+      <rect x="18" y="18" width="54" height="54" rx="18" fill="#f3dfbf"/>
+      <circle cx="45" cy="45" r="12" fill="none" stroke="#7f4f12" stroke-width="2"/>
+      <text x="92" y="44" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="24" font-weight="800">Google-Flows</text>
+      <text x="18" y="104" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="16">Praktisch fuer Suche, Docs, Gmail und Workflows im Google-Universum.</text>
+      <rect x="18" y="128" width="250" height="10" rx="5" fill="#e3ebe8"/>
+      <rect x="18" y="128" width="196" height="10" rx="5" fill="#d9b06d"/>
+      <text x="18" y="156" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="14">Gemini fuegt sich sauber in Google ein.</text>
+    </g>
   </g>
 </svg>
