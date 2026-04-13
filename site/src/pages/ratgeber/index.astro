@@ -1,0 +1,312 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { listRatgeberEntries } from "../../lib/ratgeber";
+
+const articles = await listRatgeberEntries();
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Ratgeber",
+  "url": "https://tools.utildesk.de/ratgeber/",
+  "numberOfItems": articles.length,
+  "itemListElement": articles.map((article, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": article.data.title,
+    "url": `https://tools.utildesk.de/ratgeber/${article.slug}/`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Ratgeber — Utildesk"
+  description="Chronologische Ratgeber, Vergleiche und Leitfäden zu AI-Tools, Automatisierung und Produktivität."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/ratgeber/" />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  </Fragment>
+
+  <section class="ratgeber-hero card">
+    <div class="ratgeber-hero-copy">
+      <p class="ratgeber-eyebrow">Ratgeber</p>
+      <h1 class="ratgeber-title">Vergleiche, Leitfäden und redaktionelle Artikel zu den wichtigsten AI-Tools</h1>
+      <p class="ratgeber-intro">
+        Hier sammeln wir chronologisch sortierte Artikel mit klarer Einordnung, Illustration und internen Links zu den passenden Tool-Seiten.
+        Der erste Beitrag vergleicht die drei großen Assistenten ChatGPT, Claude und Gemini.
+      </p>
+      <div class="ratgeber-hero-actions">
+        <a href="#artikel" class="hero-cta">Zu den Artikeln</a>
+        <a href="/tools/" class="hero-secondary">Zum Tool-Katalog</a>
+      </div>
+    </div>
+    <div class="ratgeber-hero-meta card">
+      <p class="meta-label">Aktuell</p>
+      <p class="meta-value">{articles.length} Artikel</p>
+      <p class="meta-note">Neue Beiträge erscheinen oben in der Liste.</p>
+    </div>
+  </section>
+
+  <section class="ratgeber-list-section" id="artikel">
+    <div class="section-heading">
+      <h2>Chronologische Vorschau</h2>
+      <p>Die Reihenfolge ist nach Veröffentlichungsdatum sortiert.</p>
+    </div>
+
+    {articles.length > 0 ? (
+      <div class="ratgeber-list">
+        {articles.map((article) => {
+          const published = article.data.date ? new Intl.DateTimeFormat("de-DE", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+          }).format(new Date(article.data.date)) : "";
+
+          return (
+            <a href={`/ratgeber/${article.slug}/`} class="ratgeber-card card">
+              <div class="ratgeber-card-media">
+                {article.data.coverImage ? (
+                  <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+                ) : null}
+              </div>
+              <div class="ratgeber-card-body">
+                <div class="ratgeber-card-topline">
+                  <span class="ratgeber-pill">{article.data.eyebrow || "Ratgeber"}</span>
+                  {article.data.category ? <span class="ratgeber-pill ratgeber-pill-secondary">{article.data.category}</span> : null}
+                </div>
+                <h3>{article.data.title}</h3>
+                <p>{article.data.excerpt}</p>
+                <div class="ratgeber-card-meta">
+                  <span>{published}</span>
+                  {article.data.readTime ? <span>Lesedauer ca. {article.data.readTime} Min.</span> : null}
+                </div>
+                {article.data.tags?.length ? (
+                  <div class="ratgeber-card-tags">
+                    {article.data.tags.slice(0, 4).map((tag) => (
+                      <span>{tag}</span>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    ) : (
+      <div class="empty-state card">
+        <h3>Noch keine Artikel veröffentlicht</h3>
+        <p>Sobald der erste Ratgeber live ist, erscheint er hier in chronologischer Reihenfolge.</p>
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .ratgeber-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: var(--space-6);
+    padding: var(--space-7);
+    margin-top: var(--space-6);
+  }
+
+  .ratgeber-eyebrow {
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .ratgeber-title {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.06;
+    margin: 0 0 var(--space-4);
+    max-width: 14ch;
+  }
+
+  .ratgeber-intro {
+    margin: 0;
+    max-width: 72ch;
+    color: var(--secondary);
+    font-size: 1.05rem;
+  }
+
+  .ratgeber-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: var(--space-5);
+  }
+
+  .hero-cta,
+  .hero-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .hero-cta {
+    background: var(--primary);
+    color: var(--on-primary);
+  }
+
+  .hero-secondary {
+    background: var(--surface-container-low);
+    color: var(--on-surface);
+  }
+
+  .ratgeber-hero-meta {
+    align-self: start;
+    padding: var(--space-5);
+    background: var(--surface-container-lowest);
+  }
+
+  .meta-label {
+    margin: 0 0 10px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--secondary);
+    font-weight: 700;
+  }
+
+  .meta-value {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--on-surface);
+  }
+
+  .meta-note {
+    margin: 0;
+    color: var(--secondary);
+  }
+
+  .ratgeber-list-section {
+    padding: var(--space-8) 0;
+  }
+
+  .section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: var(--space-6);
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  }
+
+  .section-heading p {
+    margin: 0;
+    color: var(--secondary);
+  }
+
+  .ratgeber-list {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .ratgeber-card {
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    gap: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ratgeber-card:hover {
+    color: inherit;
+  }
+
+  .ratgeber-card-media {
+    min-height: 100%;
+    background: var(--surface-container-low);
+  }
+
+  .ratgeber-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ratgeber-card-body {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .ratgeber-card-topline,
+  .ratgeber-card-meta,
+  .ratgeber-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .ratgeber-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-high);
+    color: var(--on-surface-variant);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .ratgeber-pill-secondary {
+    background: rgba(23, 98, 89, 0.08);
+    color: var(--primary);
+  }
+
+  .ratgeber-card h3 {
+    margin: 0;
+    font-size: clamp(1.35rem, 2vw, 1.7rem);
+  }
+
+  .ratgeber-card p {
+    margin: 0;
+    color: var(--secondary);
+    max-width: 72ch;
+  }
+
+  .ratgeber-card-meta {
+    font-size: 0.9rem;
+    color: var(--secondary);
+  }
+
+  .ratgeber-card-tags span {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface-variant);
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .empty-state {
+    padding: var(--space-6);
+  }
+
+  @media (max-width: 900px) {
+    .ratgeber-hero,
+    .ratgeber-card {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

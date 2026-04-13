@@ -1,0 +1,374 @@
+﻿---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { marked } from "marked";
+import { getRatgeberEntry, listRatgeberEntries } from "../../lib/ratgeber";
+
+export async function getStaticPaths() {
+  const entries = await listRatgeberEntries();
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { slug } = Astro.params;
+const { entry: resolvedEntry } = Astro.props;
+const entry = resolvedEntry ?? (await getRatgeberEntry(slug));
+
+if (!entry) {
+  return Astro.redirect("/404");
+}
+
+const { data, content } = entry;
+const articleHtml = String(marked.parse(content));
+const title = String(data.title ?? slug);
+const description = String(data.excerpt ?? title);
+const published = data.date
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(data.date))
+  : "";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  datePublished: data.date,
+  dateModified: data.date,
+  image: data.coverImage ? [`https://tools.utildesk.de${data.coverImage}`] : undefined,
+  mainEntityOfPage: `https://tools.utildesk.de/ratgeber/${slug}/`,
+  author: {
+    "@type": "Organization",
+    name: "Utildesk",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Utildesk",
+  },
+};
+---
+
+<BaseLayout title={`${title} — Ratgeber — Utildesk`} description={description}>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de/ratgeber/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+
+  <nav class="breadcrumb ratgeber-breadcrumb">
+    <a href="/">Startseite</a>
+    <span>›</span>
+    <a href="/ratgeber/">Ratgeber</a>
+    <span>›</span>
+    <span>{title}</span>
+  </nav>
+
+  <section class="article-hero card">
+    <div class="article-hero-copy">
+      <p class="article-eyebrow">{data.eyebrow || "Ratgeber"}</p>
+      <h1>{title}</h1>
+      <p class="article-excerpt">{description}</p>
+      <div class="article-meta">
+        {published ? <span>{published}</span> : null}
+        {data.readTime ? <span>Lesedauer ca. {data.readTime} Min.</span> : null}
+        {data.category ? <span>{data.category}</span> : null}
+      </div>
+      {data.tags?.length ? (
+        <div class="article-tags">
+          {data.tags.map((tag) => <span>{tag}</span>)}
+        </div>
+      ) : null}
+    </div>
+    {data.coverImage ? (
+      <figure class="article-hero-image">
+        <img src={data.coverImage} alt={title} loading="eager" />
+      </figure>
+    ) : null}
+  </section>
+
+  <section class="article-layout">
+    <article class="article-main card">
+      <div class="article-prose" set:html={articleHtml}></div>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="sidebar-card card">
+        <p class="sidebar-label">{data.sidebarTitle || "Kurzfazit"}</p>
+        <ul class="sidebar-points">
+          {(data.sidebarPoints || []).map((point) => <li>{point}</li>)}
+        </ul>
+      </div>
+
+      {data.secondaryImage ? (
+        <div class="sidebar-card card sidebar-image-card">
+          <img src={data.secondaryImage} alt={`${title} Illustration`} loading="lazy" />
+        </div>
+      ) : null}
+
+      {data.relatedTools?.length ? (
+        <div class="sidebar-card card">
+          <p class="sidebar-label">Verlinkte Tools</p>
+          <div class="related-tools">
+            {data.relatedTools.map((tool) => (
+              <a href={tool.href} class="related-tool-link">{tool.title}</a>
+            ))}
+          </div>
+        </div>
+      ) : null}
+
+      <div class="sidebar-card card">
+        <p class="sidebar-label">Weiterlesen</p>
+        <a href="/ratgeber/" class="sidebar-link">Zur Ratgeber-Übersicht</a>
+        <a href="/tools/" class="sidebar-link">Zum Tool-Katalog</a>
+        <a href="/category/ai-chatbots/" class="sidebar-link">AI-Chatbots &amp; Assistenten</a>
+      </div>
+    </aside>
+  </section>
+</BaseLayout>
+
+<style>
+  .ratgeber-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: var(--space-5) 0 var(--space-4);
+    color: var(--secondary);
+    font-size: 0.92rem;
+  }
+
+  .ratgeber-breadcrumb a {
+    color: var(--secondary);
+  }
+
+  .article-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+    gap: var(--space-6);
+    padding: var(--space-7);
+    margin-bottom: var(--space-7);
+  }
+
+  .article-eyebrow {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 800;
+  }
+
+  .article-hero h1 {
+    margin: 0 0 var(--space-4);
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    line-height: 1.05;
+    max-width: 14ch;
+  }
+
+  .article-excerpt {
+    margin: 0;
+    color: var(--secondary);
+    max-width: 70ch;
+    font-size: 1.05rem;
+  }
+
+  .article-meta,
+  .article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: var(--space-4);
+  }
+
+  .article-meta span,
+  .article-tags span {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface-variant);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .article-hero-image {
+    margin: 0;
+    background: var(--surface-container-low);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  .article-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: var(--space-6);
+    align-items: start;
+  }
+
+  .article-main {
+    padding: var(--space-6);
+  }
+
+  .article-prose {
+    max-width: 74ch;
+  }
+
+  .article-sidebar {
+    display: grid;
+    gap: var(--space-5);
+    position: sticky;
+    top: 100px;
+  }
+
+  .sidebar-card {
+    padding: var(--space-5);
+  }
+
+  .sidebar-label {
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--secondary);
+    font-size: 0.74rem;
+    font-weight: 800;
+  }
+
+  .sidebar-points {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--secondary);
+  }
+
+  .sidebar-points li + li {
+    margin-top: 10px;
+  }
+
+  .sidebar-image-card {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-image-card img {
+    display: block;
+    width: 100%;
+  }
+
+  .related-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .related-tool-link,
+  .sidebar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface);
+    font-size: 0.86rem;
+    font-weight: 700;
+  }
+
+  .sidebar-link + .sidebar-link {
+    margin-top: 8px;
+  }
+
+  :global(.article-prose h2) {
+    margin: 2.2rem 0 0.9rem;
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
+  }
+
+  :global(.article-prose h3) {
+    margin: 1.6rem 0 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  :global(.article-prose p),
+  :global(.article-prose li) {
+    color: var(--secondary);
+    font-size: 1rem;
+  }
+
+  :global(.article-prose p) {
+    margin: 0 0 1rem;
+  }
+
+  :global(.article-prose ul),
+  :global(.article-prose ol) {
+    padding-left: 1.2rem;
+    margin: 0 0 1rem;
+  }
+
+  :global(.article-prose li + li) {
+    margin-top: 0.45rem;
+  }
+
+  :global(.article-prose img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.8rem 0 1rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    background: var(--surface-container-low);
+  }
+
+  :global(.article-prose table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 1.2rem;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background: var(--surface-container-lowest);
+    box-shadow: var(--shadow-card);
+  }
+
+  :global(.article-prose th),
+  :global(.article-prose td) {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(190, 201, 197, 0.3);
+    vertical-align: top;
+  }
+
+  :global(.article-prose th) {
+    background: var(--surface-container-low);
+    color: var(--on-surface);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  :global(.article-prose blockquote) {
+    margin: 1.5rem 0;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--primary);
+    background: var(--surface-container-low);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  }
+
+  @media (max-width: 960px) {
+    .article-hero,
+    .article-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .article-sidebar {
+      position: static;
+    }
+  }
+</style>
