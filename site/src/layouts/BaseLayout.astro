@@ -1,166 +1,336 @@
 ﻿---
+
 interface Props {
+
   title?: string;
+
   description?: string;
+
 }
+
+
 
 const { title = "Utildesk", description = "Tools & Guides für AI, Automatisierung und Produktivität" } = Astro.props;
 
+
+
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
+
 const UMAMI_WEBSITE_ID = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+
 const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
+
 ---
 
+
+
 <!DOCTYPE html>
+
 <html lang="de">
+
   <head>
+
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta name="description" content={description} />
+
     <meta name="generator" content={Astro.generator} />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <link rel="icon" href="/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <script is:inline>
+
       (() => {
+
         const storageKey = "utildesk-theme";
+
         try {
+
           const storedTheme = localStorage.getItem(storageKey);
+
           const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+
             ? "dark"
+
             : "light";
+
           const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme;
+
           document.documentElement.dataset.theme = theme;
+
           document.documentElement.style.colorScheme = theme;
+
         } catch {
+
           document.documentElement.dataset.theme = "light";
+
           document.documentElement.style.colorScheme = "light";
+
         }
+
       })();
+
     </script>
+
     <link rel="stylesheet" href="/styles/global.css" />
+
     <title>{title}</title>
+
     <slot name="head" />
+
     {shouldLoadUmami && (
+
       <script defer src={UMAMI_SRC} data-website-id={UMAMI_WEBSITE_ID}></script>
+
     )}
+
   </head>
+
   <body>
+
     <header class="site-header">
+
       <div class="container">
+
         <nav class="nav">
+
           <a href="/" class="brand">
+
             <img src="/logo-grid.svg" alt="Utildesk" />
+
             Utildesk
+
           </a>
+
           <div class="nav-actions">
+
             <div class="nav-links">
+
               <a href="/tools/">Tools</a>
+
+              <a href='/ratgeber/'>Ratgeber</a>
+
             </div>
+
             <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design umschalten" aria-pressed="false" title="Design umschalten">
+
               <span class="theme-toggle__track" aria-hidden="true">
+
                 <span class="theme-toggle__thumb"></span>
+
                 <span class="theme-toggle__option theme-toggle__option--light">
+
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+
                     <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+
                     <path d="M12 2.75V5.1M12 18.9v2.35M4.75 12H2.4M21.6 12h-2.35M5.9 5.9l1.66 1.66M16.44 16.44l1.66 1.66M18.1 5.9l-1.66 1.66M7.56 16.44L5.9 18.1" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+
                   </svg>
+
                 </span>
+
                 <span class="theme-toggle__option theme-toggle__option--dark">
+
                   <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+
                     <path d="M20.2 14.2A8.2 8.2 0 1 1 9.8 3.8a6.35 6.35 0 1 0 10.4 10.4Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+
                   </svg>
+
                 </span>
+
               </span>
+
               <span class="sr-only" data-theme-label>Hell</span>
+
             </button>
+
           </div>
+
         </nav>
+
       </div>
+
     </header>
 
+
+
     <main class="container">
+
       <slot />
+
     </main>
 
+
+
     <footer class="site-footer">
+
       <div class="container">
+
         <div class="footer-content">
+
           <a href="/" class="footer-brand">
+
             <img src="/logo-grid.svg" alt="Utildesk" height="16" />
+
             Utildesk
+
           </a>
+
           <div class="footer-links">
+
+            <a href='/ratgeber/'>Ratgeber</a>
+
             <a href="/tools/">Tools</a>
+
             <a href="/category/">Kategorien</a>
+
             <a href="/datenschutz" rel="nofollow">Datenschutzerklärung</a>
+
             <a href="/impressum" rel="nofollow">Impressum</a>
+
           </div>
+
         </div>
+
         <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Disclaimer: Utildesk is an independent tools directory. All trademarks, logos, and brand names are the property of their respective owners.</p>
+
       </div>
+
     </footer>
 
+
+
     <script is:inline>
+
       (() => {
+
         const storageKey = "utildesk-theme";
+
         const root = document.documentElement;
+
         const button = document.getElementById("theme-toggle");
+
         const label = button?.querySelector("[data-theme-label]");
+
         const media = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
 
+
+
         const getStoredTheme = () => {
+
           try {
+
             const value = localStorage.getItem(storageKey);
+
             return value === "dark" || value === "light" ? value : null;
+
           } catch {
+
             return null;
+
           }
+
         };
 
+
+
         const applyTheme = (theme, persist = false) => {
+
           root.dataset.theme = theme;
+
           root.style.colorScheme = theme;
+
           if (button) {
+
             button.dataset.theme = theme;
+
             button.setAttribute("aria-pressed", String(theme === "dark"));
+
             button.title = theme === "dark" ? "Zum hellen Design wechseln" : "Zum dunklen Design wechseln";
+
           }
+
           if (label) {
+
             label.textContent = theme === "dark" ? "Dunkel" : "Hell";
+
           }
+
           if (persist) {
+
             try {
+
               localStorage.setItem(storageKey, theme);
+
             } catch {
+
               // ignore storage errors
+
             }
+
           }
+
         };
+
+
 
         applyTheme(root.dataset.theme === "dark" ? "dark" : "light");
 
+
+
         if (button) {
+
           button.addEventListener("click", () => {
+
             const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+
             applyTheme(nextTheme, true);
+
           });
+
         }
+
+
 
         if (media) {
+
           const syncSystemTheme = (event) => {
+
             if (getStoredTheme()) return;
+
             applyTheme(event.matches ? "dark" : "light");
+
           };
 
+
+
           if (typeof media.addEventListener === "function") {
+
             media.addEventListener("change", syncSystemTheme);
+
           } else if (typeof media.addListener === "function") {
+
             media.addListener(syncSystemTheme);
+
           }
+
         }
+
       })();
+
     </script>
+
   </body>
+
 </html>
+
