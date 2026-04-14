@@ -5,7 +5,7 @@ category: Audio & Video
 price_model: Je nach Plan
 tags: [video, editing, audio]
 official_url: "https://filmora.wondershare.com/"
-popularity: 36
+popularity: 37
 ---
 
 # Filmora
