@@ -20,405 +20,237 @@ const itemListSchema = {
 ---
 
 <BaseLayout
-  title="Ratgeber - Utildesk"
-  description="Chronologische Ratgeber, Vergleiche und Leitfaeden zu AI-Tools, Automatisierung und Produktivitaet."
+  title="Ratgeber – Utildesk"
+  description="Vergleiche, Leitfäden und Einordnungen zu den wichtigsten KI-Tools und Workflows."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/ratgeber/" />
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   </Fragment>
 
-  <section class="ratgeber-intro">
-    <div class="ratgeber-intro-copy">
-      <p class="ratgeber-eyebrow">Ratgeber</p>
-      <h1>Vergleiche, Leitfaeden und redaktionelle Artikel zu den wichtigsten AI-Tools</h1>
-      <p class="ratgeber-lead">
-        Hier sammeln wir chronologisch sortierte Artikel mit klarer Einordnung, passenden Tool-Links und einem ruhigen
-        Leselayout. Der erste Beitrag vergleicht die drei grossen Assistenten ChatGPT, Claude und Gemini.
-      </p>
-      <div class="ratgeber-actions">
-        <a href="#artikel" class="hero-stitch-cta">Zu den Artikeln</a>
-        <a href="/tools/" class="ratgeber-ghost-link">Zum Tool-Katalog</a>
-      </div>
-    </div>
-
-    <aside class="ratgeber-brief card">
-      <p class="ratgeber-brief-label">Ausgabe</p>
-      <p class="ratgeber-brief-value">{articles.length} Artikel</p>
-      <p class="ratgeber-brief-text">Neue Beitraege stehen oben. Der Fokus liegt auf Vergleichen, Einordnung und klaren Empfehlungen.</p>
-    </aside>
+  <section class="ratgeber-hero">
+    <p class="rg-eyebrow">Ratgeber</p>
+    <h1>Vergleiche &amp; Leitfäden<br/>zu den wichtigsten KI-Tools</h1>
+    <p class="rg-sub">Klare Einordnung statt Werbetext. Jeder Artikel verlinkt direkt zu den passenden Tools.</p>
   </section>
 
-  <section class="ratgeber-overview card">
-    <div class="overview-copy">
-      <p class="overview-label">Redaktioneller Fokus</p>
-      <div class="overview-grid">
-        <div>
-          <h2>Ein ruhiger Layer ueber dem Tool-Katalog</h2>
-          <p>
-            Der Bereich ergaenzt den bestehenden Katalog um Einordnung, Vergleiche und Use-Case-orientierte Lesestuecke.
-            Jede Karte fuehrt direkt in einen Artikel und verlinkt von dort weiter in die passenden Tool-Seiten.
-          </p>
-        </div>
-        <ul class="overview-points">
-          <li>Vergleiche statt bloesser Tool-Listen</li>
-          <li>Mehr Kontext fuer Suchanfragen mit Informationsintention</li>
-          <li>Interne Links zwischen Artikel, Kategorien und Tools</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <section class="rg-list">
+    {articles.length === 0 ? (
+      <p class="rg-empty">Bald hier: der erste Ratgeber-Artikel.</p>
+    ) : articles.map((article) => {
+      const published = article.data.date
+        ? new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(article.data.date))
+        : "";
 
-  <section class="ratgeber-list-section" id="artikel">
-    <div class="section-heading">
-      <h2>Chronologische Vorschau</h2>
-      <p>Die Reihenfolge ist nach Veroeffentlichungsdatum sortiert.</p>
-    </div>
-
-    {articles.length > 0 ? (
-      <div class="journal-list">
-        {articles.map((article, index) => {
-          const published = article.data.date
-            ? new Intl.DateTimeFormat("de-DE", {
-                day: "2-digit",
-                month: "long",
-                year: "numeric",
-              }).format(new Date(article.data.date))
-            : "";
-
-          return (
-            <a href={`/ratgeber/${article.slug}/`} class="journal-card card">
-              <div class="journal-index">
-                <span>{String(index + 1).padStart(2, "0")}</span>
-              </div>
-
-              <div class="journal-body">
-                <div class="journal-topline">
-                  <span class="journal-kicker">{article.data.eyebrow || "Ratgeber"}</span>
-                  {article.data.category ? <span class="journal-chip">{article.data.category}</span> : null}
-                </div>
-
-                <h3>{article.data.title}</h3>
-                <p>{article.data.excerpt}</p>
-
-                <div class="journal-meta">
-                  <span>{published}</span>
-                  {article.data.readTime ? <span>Lesedauer ca. {article.data.readTime} Min.</span> : null}
-                </div>
-
-                {article.data.tags?.length ? (
-                  <div class="journal-tags">
-                    {article.data.tags.slice(0, 4).map((tag) => (
-                      <span>{tag}</span>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-
-              <div class="journal-art">
-                {article.data.coverImage ? <img src={article.data.coverImage} alt={article.data.title} loading="lazy" /> : null}
-              </div>
-            </a>
-          );
-        })}
-      </div>
-    ) : (
-      <div class="empty-state card">
-        <h3>Noch keine Artikel veroeffentlicht</h3>
-        <p>Sobald der erste Ratgeber live ist, erscheint er hier in chronologischer Reihenfolge.</p>
-      </div>
-    )}
+      return (
+        <a href={`/ratgeber/${article.slug}/`} class="rg-card">
+          {article.data.coverImage ? (
+            <div class="rg-card-img">
+              <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+            </div>
+          ) : null}
+          <div class="rg-card-body">
+            <div class="rg-card-meta-top">
+              {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
+              {article.data.category ? <span class="rg-chip">{article.data.category}</span> : null}
+            </div>
+            <h2 class="rg-card-title">{article.data.title}</h2>
+            {article.data.excerpt ? <p class="rg-card-excerpt">{article.data.excerpt}</p> : null}
+            <div class="rg-card-meta-bottom">
+              {published ? <span class="rg-meta">{published}</span> : null}
+              {article.data.readTime ? <span class="rg-meta">{article.data.readTime} Min. Lesen</span> : null}
+            </div>
+          </div>
+        </a>
+      );
+    })}
   </section>
 </BaseLayout>
 
 <style>
-  .ratgeber-intro {
-    display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 340px);
-    gap: var(--space-6);
-    align-items: end;
-    padding: 40px 0 18px;
+  /* Page header */
+  .ratgeber-hero {
+    padding: 44px 0 36px;
+    max-width: 680px;
   }
 
-  .ratgeber-intro-copy h1 {
-    margin: 0;
-    max-width: 13ch;
-    font-size: clamp(2.3rem, 4.6vw, 4.2rem);
-    line-height: 1;
-    letter-spacing: -0.04em;
-  }
-
-  .ratgeber-eyebrow,
-  .overview-label,
-  .ratgeber-brief-label {
-    margin: 0 0 14px;
-    font-size: 0.75rem;
+  .rg-eyebrow {
+    margin: 0 0 16px;
+    font-size: 0.73rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.18em;
     color: var(--primary);
   }
 
-  .ratgeber-lead {
-    max-width: 62ch;
-    margin: 18px 0 0;
+  .ratgeber-hero h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    color: var(--on-surface);
+  }
+
+  .rg-sub {
+    margin: 14px 0 0;
+    font-size: 1rem;
+    line-height: 1.7;
     color: var(--secondary);
-    font-size: 1.05rem;
-    line-height: 1.75;
+    max-width: 58ch;
   }
 
-  .ratgeber-actions {
+  /* Article list */
+  .rg-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 28px;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 64px;
   }
 
-  .ratgeber-ghost-link {
-    display: inline-flex;
+  /* Card */
+  .rg-card {
+    display: grid;
+    grid-template-columns: 380px minmax(0, 1fr);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(190, 201, 197, 0.32);
+    background: var(--surface-container-lowest, #fff);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
+  }
+
+  .rg-card:hover {
+    box-shadow: 0 8px 32px rgba(26, 28, 23, 0.09);
+    border-color: rgba(23, 98, 89, 0.2);
+    transform: translateY(-3px);
+    color: inherit;
+  }
+
+  /* Image column */
+  .rg-card-img {
+    background: var(--surface-container-low, #f4f4eb);
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 22px;
-    border-radius: var(--radius-full);
-    background: var(--surface-container-low);
-    color: var(--on-surface);
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    transition: background var(--transition), transform var(--transition);
-  }
-
-  .ratgeber-ghost-link:hover {
-    background: var(--surface-container-high);
-    color: var(--primary);
-    transform: translateY(-2px);
-  }
-
-  .ratgeber-brief {
-    padding: 28px;
-    border: 1px solid rgba(190, 201, 197, 0.35);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 244, 235, 0.92)),
-      radial-gradient(circle at top right, rgba(23, 98, 89, 0.1), transparent 48%);
-  }
-
-  .ratgeber-brief-value {
-    margin: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: clamp(2rem, 3vw, 2.6rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-  }
-
-  .ratgeber-brief-text {
-    margin: 14px 0 0;
-    color: var(--secondary);
-    line-height: 1.7;
-  }
-
-  .ratgeber-overview {
-    margin-top: 20px;
-    padding: 30px 32px;
-    border: 1px solid rgba(190, 201, 197, 0.35);
-    background:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(244, 244, 235, 0.96)),
-      radial-gradient(circle at top left, rgba(54, 123, 113, 0.08), transparent 42%);
-  }
-
-  .overview-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 320px);
-    gap: var(--space-6);
-    align-items: start;
-  }
-
-  .overview-grid h2 {
-    margin: 0;
-    font-size: clamp(1.5rem, 2.4vw, 2.15rem);
-    line-height: 1.08;
-  }
-
-  .overview-grid p {
-    margin: 14px 0 0;
-    color: var(--secondary);
-    line-height: 1.75;
-  }
-
-  .overview-points {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    gap: 12px;
-  }
-
-  .overview-points li {
-    padding: 14px 16px;
-    border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.74);
-    border: 1px solid rgba(190, 201, 197, 0.28);
-    color: var(--on-surface-variant);
-    font-weight: 600;
-  }
-
-  .ratgeber-list-section {
-    padding: var(--space-8) 0;
-  }
-
-  .section-heading {
-    margin-bottom: var(--space-6);
-  }
-
-  .section-heading h2 {
-    margin: 0;
-    font-size: clamp(1.7rem, 2.8vw, 2.3rem);
-  }
-
-  .section-heading p {
-    margin: 8px 0 0;
-    color: var(--secondary);
-  }
-
-  .journal-list {
-    display: grid;
-    gap: 18px;
-  }
-
-  .journal-card {
-    display: grid;
-    grid-template-columns: 64px minmax(0, 1fr) minmax(240px, 320px);
-    gap: 0;
-    overflow: hidden;
-    border: 1px solid rgba(190, 201, 197, 0.35);
-    color: inherit;
-    text-decoration: none;
-    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-  }
-
-  .journal-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
-    border-color: rgba(23, 98, 89, 0.18);
-    color: inherit;
-  }
-
-  .journal-index {
-    display: grid;
-    place-items: center;
+    padding: 20px;
+    min-height: 240px;
     border-right: 1px solid rgba(190, 201, 197, 0.28);
-    background: linear-gradient(180deg, rgba(244, 244, 235, 0.86), rgba(255, 255, 255, 0.92));
   }
 
-  .journal-index span {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 800;
-    color: var(--primary);
-    letter-spacing: 0.12em;
+  .rg-card-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    display: block;
   }
 
-  .journal-body {
-    padding: 28px 30px;
+  /* Content column */
+  .rg-card-body {
+    padding: 32px 36px;
     display: flex;
     flex-direction: column;
     gap: 14px;
+    justify-content: center;
   }
 
-  .journal-topline,
-  .journal-meta,
-  .journal-tags {
+  .rg-card-meta-top {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
   }
 
-  .journal-kicker,
-  .journal-chip,
-  .journal-meta span,
-  .journal-tags span {
+  .rg-chip {
     display: inline-flex;
     align-items: center;
-    padding: 6px 12px;
+    padding: 4px 11px;
     border-radius: var(--radius-full);
-    font-size: 0.77rem;
+    font-size: 0.74rem;
     font-weight: 700;
-  }
-
-  .journal-kicker {
-    background: rgba(23, 98, 89, 0.1);
-    color: var(--primary);
-  }
-
-  .journal-chip,
-  .journal-meta span,
-  .journal-tags span {
-    background: var(--surface-container-low);
+    letter-spacing: 0.04em;
+    background: var(--surface-container-low, #f4f4eb);
     color: var(--on-surface-variant);
+    border: 1px solid rgba(190, 201, 197, 0.3);
   }
 
-  .journal-body h3 {
-    margin: 0;
-    max-width: 24ch;
-    font-size: clamp(1.45rem, 2.4vw, 2rem);
-    line-height: 1.08;
+  .rg-chip--accent {
+    background: rgba(23, 98, 89, 0.08);
+    color: var(--primary);
+    border-color: rgba(23, 98, 89, 0.15);
   }
 
-  .journal-body p {
+  .rg-card-title {
     margin: 0;
-    max-width: 62ch;
+    font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    color: var(--on-surface);
+  }
+
+  .rg-card-excerpt {
+    margin: 0;
+    font-size: 0.97rem;
+    line-height: 1.7;
     color: var(--secondary);
-    line-height: 1.72;
+    max-width: 58ch;
   }
 
-  .journal-art {
-    position: relative;
-    min-height: 100%;
-    background: linear-gradient(180deg, rgba(244, 244, 235, 0.92), rgba(255, 255, 255, 0.92));
+  .rg-card-meta-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
   }
 
-  .journal-art::before {
-    content: "";
-    position: absolute;
-    inset: 18px;
-    border-radius: calc(var(--radius-lg) - 10px);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.2));
-    pointer-events: none;
-  }
-
-  .journal-art img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .empty-state {
-    padding: var(--space-6);
-  }
-
-  .empty-state h3 {
-    margin: 0 0 8px;
-  }
-
-  .empty-state p {
-    margin: 0;
+  .rg-meta {
+    font-size: 0.82rem;
     color: var(--secondary);
+    opacity: 0.75;
+    font-weight: 500;
   }
 
-  @media (max-width: 960px) {
-    .ratgeber-intro,
-    .overview-grid,
-    .journal-card {
+  .rg-empty {
+    color: var(--secondary);
+    padding: 40px 0;
+  }
+
+  /* Dark mode */
+  :root[data-theme="dark"] .rg-card {
+    background: var(--surface-container);
+    border-color: rgba(139, 152, 145, 0.2);
+  }
+
+  :root[data-theme="dark"] .rg-card-img {
+    background: var(--surface-container-low);
+    border-right-color: rgba(139, 152, 145, 0.18);
+  }
+
+  /* Responsive */
+  @media (max-width: 860px) {
+    .rg-card {
       grid-template-columns: 1fr;
     }
 
-    .journal-index {
-      min-height: 52px;
+    .rg-card-img {
+      min-height: 200px;
       border-right: none;
       border-bottom: 1px solid rgba(190, 201, 197, 0.28);
+      padding: 16px;
     }
 
-    .journal-art {
-      aspect-ratio: 16 / 10;
+    .rg-card-img img {
+      max-height: 200px;
+    }
+
+    .rg-card-body {
+      padding: 24px 22px;
+    }
+
+    .ratgeber-hero {
+      padding: 28px 0 24px;
     }
   }
 </style>
