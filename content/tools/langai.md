@@ -4,7 +4,7 @@ title: LangAI
 category: AI
 price_model: Je nach Plan
 tags: [assistant, chatbot, language]
-official_url: "https://www.langai.ai/"
+official_url: "https://langai.io/"
 popularity: 0
 ---
 
