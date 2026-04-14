@@ -4,6 +4,15 @@ import { listRatgeberEntries } from "../../lib/ratgeber";
 
 const articles = await listRatgeberEntries();
 
+const normalizeMetaLabel = (value: string) =>
+  String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/^ki[-\s]+/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -51,7 +60,7 @@ const itemListSchema = {
           <div class="rg-card-body">
             <div class="rg-card-meta-top">
               {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
-              {article.data.category && String(article.data.category).toLowerCase() !== String(article.data.eyebrow ?? "").toLowerCase() ? <span class="rg-chip">{article.data.category}</span> : null}
+              {article.data.category && normalizeMetaLabel(article.data.category) !== normalizeMetaLabel(String(article.data.eyebrow ?? "")) ? <span class="rg-chip">{article.data.category}</span> : null}
             </div>
             <h2 class="rg-card-title">{article.data.title}</h2>
             {article.data.excerpt ? <p class="rg-card-excerpt">{article.data.excerpt}</p> : null}
