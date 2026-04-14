@@ -5,7 +5,7 @@ category: AI
 price_model: Kostenlos
 tags: [video-editing, open-source, post-production]
 official_url: "https://shotcut.org/"
-popularity: 11
+popularity: 12
 ---
 
 # Shotcut

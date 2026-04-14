@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai,assistant,productivity]
 official_url: "https://adot.ai/note/"
-popularity: 70
+popularity: 68
 ---
 
 # Adot AI

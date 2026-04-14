@@ -7,7 +7,7 @@ tags: ["writing"]
 official_url: "https://copilot.microsoft.com/"
 affiliate_url: "https://copilot.microsoft.com/"
 created_at: 2026-02-02
-popularity: 22
+popularity: 23
 ---
 
 # Microsoft Copilot
