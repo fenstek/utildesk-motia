@@ -1,0 +1,348 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { marked } from "marked";
+import { getRatgeberEntry, listRatgeberEntries } from "../../lib/ratgeber";
+
+export async function getStaticPaths() {
+  const entries = await listRatgeberEntries();
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { slug } = Astro.params;
+const { entry: resolvedEntry } = Astro.props;
+const entry = resolvedEntry ?? (await getRatgeberEntry(slug));
+
+if (!entry) {
+  return Astro.redirect("/404");
+}
+
+const { data, content } = entry;
+const articleHtml = String(marked.parse(content));
+const title = String(data.title ?? slug);
+const description = String(data.excerpt ?? title);
+const published = data.date
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(data.date))
+  : "";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  datePublished: data.date,
+  dateModified: data.date,
+  image: data.coverImage ? [`https://tools.utildesk.de${data.coverImage}`] : undefined,
+  mainEntityOfPage: `https://tools.utildesk.de/ratgeber/${slug}/`,
+  author: {
+    "@type": "Organization",
+    name: "Utildesk",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Utildesk",
+  },
+};
+---
+
+<BaseLayout title={`${title} - Ratgeber - Utildesk`} description={description}>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de/ratgeber/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+
+  <nav class="breadcrumb ratgeber-breadcrumb">
+    <a href="/">Startseite</a>
+    <span>/</span>
+    <a href="/ratgeber/">Ratgeber</a>
+    <span>/</span>
+    <span>{title}</span>
+  </nav>
+
+  <header class="article-head">
+    <p class="article-eyebrow">{data.eyebrow || "Ratgeber"}</p>
+    <h1>{title}</h1>
+    <p class="article-excerpt">{description}</p>
+
+    <div class="article-meta">
+      {published ? <span>{published}</span> : null}
+      {data.readTime ? <span>Lesedauer ca. {data.readTime} Min.</span> : null}
+      {data.category ? <span>{data.category}</span> : null}
+    </div>
+
+    {data.tags?.length ? (
+      <div class="article-tags">
+        {data.tags.map((tag) => (
+          <span>{tag}</span>
+        ))}
+      </div>
+    ) : null}
+  </header>
+
+  {data.coverImage ? (
+    <figure class="article-cover card">
+      <img src={data.coverImage} alt={title} loading="eager" />
+    </figure>
+  ) : null}
+
+  <section class="article-read">
+    <article class="prose ratgeber-prose" set:html={articleHtml}></article>
+  </section>
+
+  <section class="article-notes">
+    <div class="article-note card">
+      <p class="article-note-label">{data.sidebarTitle || "Kurzfazit"}</p>
+      <ul class="article-note-list">
+        {(data.sidebarPoints || []).map((point) => (
+          <li>{point}</li>
+        ))}
+      </ul>
+    </div>
+
+    {data.relatedTools?.length ? (
+      <div class="article-note card">
+        <p class="article-note-label">Verlinkte Tools</p>
+        <div class="article-link-cloud">
+          {data.relatedTools.map((tool) => (
+            <a href={tool.href} class="article-link-pill">{tool.title}</a>
+          ))}
+        </div>
+      </div>
+    ) : null}
+
+    <div class="article-note card">
+      <p class="article-note-label">Weiterlesen</p>
+      <div class="article-link-stack">
+        <a href="/ratgeber/" class="article-link-row">Zur Ratgeber-Uebersicht</a>
+        <a href="/tools/" class="article-link-row">Zum Tool-Katalog</a>
+        <a href="/category/ai-chatbots/" class="article-link-row">AI-Chatbots &amp; Assistenten</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .ratgeber-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: var(--space-5) 0 18px;
+    color: var(--secondary);
+    font-size: 0.92rem;
+    opacity: 0.86;
+  }
+
+  .ratgeber-breadcrumb a {
+    color: var(--secondary);
+  }
+
+  .article-head {
+    max-width: 860px;
+    padding: 18px 0 0;
+  }
+
+  .article-eyebrow,
+  .article-note-label {
+    margin: 0 0 14px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--primary);
+  }
+
+  .article-head h1 {
+    margin: 0;
+    max-width: 12ch;
+    font-size: clamp(2.5rem, 4.8vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+  }
+
+  .article-excerpt {
+    margin: 22px 0 0;
+    max-width: 60ch;
+    color: var(--secondary);
+    font-size: 1.08rem;
+    line-height: 1.8;
+  }
+
+  .article-meta,
+  .article-tags,
+  .article-link-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .article-meta {
+    margin-top: 24px;
+  }
+
+  .article-tags {
+    margin-top: 10px;
+  }
+
+  .article-meta span,
+  .article-tags span,
+  .article-link-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface-variant);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .article-cover {
+    margin: 34px 0 0;
+    overflow: hidden;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(244, 244, 235, 0.96)),
+      radial-gradient(circle at top left, rgba(54, 123, 113, 0.08), transparent 44%);
+  }
+
+  .article-cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .article-read {
+    padding-top: 30px;
+  }
+
+  .ratgeber-prose {
+    max-width: 860px;
+    margin: 0 auto;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.94)),
+      radial-gradient(circle at top right, rgba(23, 98, 89, 0.05), transparent 42%);
+    box-shadow: var(--shadow-card);
+  }
+
+  :global(.ratgeber-prose > p:first-of-type) {
+    font-size: 1.1rem;
+    color: var(--on-surface-variant);
+  }
+
+  :global(.ratgeber-prose h2) {
+    margin-top: 2.7rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+    line-height: 1.08;
+  }
+
+  :global(.ratgeber-prose h3) {
+    margin-top: 1.9rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.18rem;
+  }
+
+  :global(.ratgeber-prose p) {
+    color: var(--on-surface);
+    line-height: 1.78;
+  }
+
+  :global(.ratgeber-prose li) {
+    color: var(--on-surface);
+    line-height: 1.7;
+  }
+
+  :global(.ratgeber-prose table) {
+    border: 1px solid rgba(190, 201, 197, 0.3);
+    box-shadow: none;
+  }
+
+  :global(.ratgeber-prose th) {
+    background: rgba(244, 244, 235, 0.9);
+  }
+
+  :global(.ratgeber-prose img) {
+    border: 1px solid rgba(190, 201, 197, 0.35);
+    box-shadow: none;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 244, 235, 0.92));
+  }
+
+  :global(.ratgeber-prose blockquote) {
+    background: rgba(244, 244, 235, 0.84);
+  }
+
+  .article-notes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 34px;
+  }
+
+  .article-note {
+    padding: 24px;
+    border: 1px solid rgba(190, 201, 197, 0.35);
+  }
+
+  .article-note-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--secondary);
+  }
+
+  .article-note-list li + li {
+    margin-top: 10px;
+  }
+
+  .article-link-pill {
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+  }
+
+  .article-link-pill:hover,
+  .article-link-row:hover {
+    color: var(--primary);
+    background: var(--surface-container-high);
+    transform: translateY(-1px);
+  }
+
+  .article-link-stack {
+    display: grid;
+    gap: 10px;
+  }
+
+  .article-link-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    background: var(--surface-container-low);
+    color: var(--on-surface);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+  }
+
+  .article-link-row::after {
+    content: "+";
+    font-size: 1rem;
+    color: var(--primary);
+  }
+
+  @media (max-width: 960px) {
+    .article-notes {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

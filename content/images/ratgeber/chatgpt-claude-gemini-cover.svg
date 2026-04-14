@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ChatGPT, Claude und Gemini im Vergleich">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafaf1"/>
+      <stop offset="100%" stop-color="#edf2ec"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f4ec"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#367b71"/>
+      <stop offset="100%" stop-color="#176259"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8dfda"/>
+      <stop offset="100%" stop-color="#b9c6bf"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edd8b2"/>
+      <stop offset="100%" stop-color="#d8b06d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#1a1c1712"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1360" cy="128" r="154" fill="#17625910"/>
+  <circle cx="182" cy="758" r="190" fill="#367b710c"/>
+
+  <g transform="translate(92 84)">
+    <text x="0" y="28" fill="#176259" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="800" letter-spacing="4">RATGEBER</text>
+    <text x="0" y="140" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="82" font-weight="800" letter-spacing="-2.4">ChatGPT, Claude und Gemini</text>
+    <text x="0" y="196" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="28">Drei Modelle, drei Arbeitsweisen, drei sehr unterschiedliche Staerken.</text>
+  </g>
+
+  <g transform="translate(88 268)" filter="url(#shadow)">
+    <rect width="1424" height="524" rx="40" fill="url(#panel)"/>
+
+    <g transform="translate(48 48)">
+      <rect width="400" height="428" rx="30" fill="#ffffff"/>
+      <rect x="28" y="28" width="344" height="180" rx="24" fill="url(#teal)"/>
+      <circle cx="86" cy="86" r="28" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <path d="M86 62v48M62 86h48" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      <text x="28" y="262" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="38" font-weight="800">ChatGPT</text>
+      <text x="28" y="304" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="21">Breit, schnell, flexibel</text>
+      <rect x="28" y="336" width="228" height="10" rx="5" fill="#dfe8e4"/>
+      <rect x="28" y="336" width="204" height="10" rx="5" fill="#176259"/>
+    </g>
+
+    <g transform="translate(512 48)">
+      <rect width="400" height="428" rx="30" fill="#ffffff"/>
+      <rect x="28" y="28" width="344" height="180" rx="24" fill="url(#stone)"/>
+      <path d="M94 70h40l14 40-20 24H80l-20-24 14-40Z" fill="none" stroke="#176259" stroke-width="4" stroke-linejoin="round"/>
+      <text x="28" y="262" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="38" font-weight="800">Claude</text>
+      <text x="28" y="304" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="21">Tiefe, Ruhe, Struktur</text>
+      <rect x="28" y="336" width="228" height="10" rx="5" fill="#dfe8e4"/>
+      <rect x="28" y="336" width="172" height="10" rx="5" fill="#9eb8b1"/>
+    </g>
+
+    <g transform="translate(976 48)">
+      <rect width="400" height="428" rx="30" fill="#ffffff"/>
+      <rect x="28" y="28" width="344" height="180" rx="24" fill="url(#sand)"/>
+      <circle cx="100" cy="98" r="34" fill="none" stroke="#7f4f12" stroke-width="4"/>
+      <circle cx="100" cy="98" r="10" fill="#7f4f12"/>
+      <text x="28" y="262" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="38" font-weight="800">Gemini</text>
+      <text x="28" y="304" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="21">Google-nah, integriert</text>
+      <rect x="28" y="336" width="228" height="10" rx="5" fill="#dfe8e4"/>
+      <rect x="28" y="336" width="184" height="10" rx="5" fill="#d8b06d"/>
+    </g>
+  </g>
+</svg>
