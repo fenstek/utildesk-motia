@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560" role="img" aria-label="ChatGPT, Claude und Gemini im Vergleich">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f4eb"/>
+      <stop offset="100%" stop-color="#eef2ed"/>
+    </linearGradient>
+    <linearGradient id="bar-a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#176259"/>
+      <stop offset="100%" stop-color="#367b71"/>
+    </linearGradient>
+    <linearGradient id="bar-b" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8faaa4"/>
+      <stop offset="100%" stop-color="#bec9c5"/>
+    </linearGradient>
+    <linearGradient id="bar-c" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c8a35a"/>
+      <stop offset="100%" stop-color="#e8c87a"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#1a1c17" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="560" fill="url(#bg)"/>
+  <circle cx="80" cy="0" r="280" fill="#17625904"/>
+  <circle cx="1560" cy="560" r="240" fill="#367b7104"/>
+
+  <!-- Card A: ChatGPT -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="28" width="494" height="504" rx="28" fill="#ffffff"/>
+    <rect x="40" y="28" width="494" height="6" rx="3" fill="url(#bar-a)"/>
+
+    <text x="70" y="100" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="36" font-weight="800">ChatGPT</text>
+    <text x="70" y="128" fill="#176259" font-family="Inter, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5">OPENAI</text>
+
+    <text x="70" y="174" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Breit aufgestellt, schnell und flexibel.</text>
+    <text x="70" y="198" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Ideal für Ideation und kreative</text>
+    <text x="70" y="222" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Erstfassungen.</text>
+
+    <text x="70" y="276" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">VIELSEITIGKEIT</text>
+    <rect x="70" y="286" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="70" y="286" width="400" height="8" rx="4" fill="url(#bar-a)"/>
+
+    <text x="70" y="320" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">GESCHWINDIGKEIT</text>
+    <rect x="70" y="330" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="70" y="330" width="415" height="8" rx="4" fill="url(#bar-a)"/>
+
+    <text x="70" y="364" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">KONTEXTTIEFE</text>
+    <rect x="70" y="374" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="70" y="374" width="290" height="8" rx="4" fill="url(#bar-a)"/>
+
+    <rect x="70" y="464" width="150" height="38" rx="19" fill="#17625914"/>
+    <text x="92" y="488" fill="#176259" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Allrounder</text>
+  </g>
+
+  <!-- Card B: Claude -->
+  <g filter="url(#shadow)">
+    <rect x="553" y="28" width="494" height="504" rx="28" fill="#ffffff"/>
+    <rect x="553" y="28" width="494" height="6" rx="3" fill="url(#bar-b)"/>
+
+    <text x="583" y="100" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="36" font-weight="800">Claude</text>
+    <text x="583" y="128" fill="#8faaa4" font-family="Inter, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5">ANTHROPIC</text>
+
+    <text x="583" y="174" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Ruhig, präzise, kontextstark.</text>
+    <text x="583" y="198" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Beste Wahl für lange Texte,</text>
+    <text x="583" y="222" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Analyse und Argumentation.</text>
+
+    <text x="583" y="276" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">VIELSEITIGKEIT</text>
+    <rect x="583" y="286" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="583" y="286" width="312" height="8" rx="4" fill="url(#bar-b)"/>
+
+    <text x="583" y="320" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">GESCHWINDIGKEIT</text>
+    <rect x="583" y="330" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="583" y="330" width="280" height="8" rx="4" fill="url(#bar-b)"/>
+
+    <text x="583" y="364" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">KONTEXTTIEFE</text>
+    <rect x="583" y="374" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="583" y="374" width="422" height="8" rx="4" fill="url(#bar-b)"/>
+
+    <rect x="583" y="464" width="170" height="38" rx="19" fill="#8faaa420"/>
+    <text x="603" y="488" fill="#5f7a74" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Tiefe &amp; Präzision</text>
+  </g>
+
+  <!-- Card C: Gemini -->
+  <g filter="url(#shadow)">
+    <rect x="1066" y="28" width="494" height="504" rx="28" fill="#ffffff"/>
+    <rect x="1066" y="28" width="494" height="6" rx="3" fill="url(#bar-c)"/>
+
+    <text x="1096" y="100" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="36" font-weight="800">Gemini</text>
+    <text x="1096" y="128" fill="#c8a35a" font-family="Inter, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5">GOOGLE</text>
+
+    <text x="1096" y="174" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Tief ins Google-Ökosystem</text>
+    <text x="1096" y="198" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">integriert. Stark bei Suche,</text>
+    <text x="1096" y="222" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="17">Docs und Team-Workflows.</text>
+
+    <text x="1096" y="276" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">VIELSEITIGKEIT</text>
+    <rect x="1096" y="286" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="1096" y="286" width="257" height="8" rx="4" fill="url(#bar-c)"/>
+
+    <text x="1096" y="320" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">GESCHWINDIGKEIT</text>
+    <rect x="1096" y="330" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="1096" y="330" width="323" height="8" rx="4" fill="url(#bar-c)"/>
+
+    <text x="1096" y="364" fill="#1a1c17" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="1">INTEGRATION</text>
+    <rect x="1096" y="374" width="432" height="8" rx="4" fill="#e4e8e4"/>
+    <rect x="1096" y="374" width="400" height="8" rx="4" fill="url(#bar-c)"/>
+
+    <rect x="1096" y="464" width="190" height="38" rx="19" fill="#c8a35a18"/>
+    <text x="1116" y="488" fill="#a07e3a" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Google-Workflows</text>
+  </g>
+</svg>

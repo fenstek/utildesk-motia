@@ -1,0 +1,255 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { listRatgeberEntries } from "../../lib/ratgeber";
+
+const articles = await listRatgeberEntries();
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Ratgeber",
+  url: "https://tools.utildesk.de/ratgeber/",
+  numberOfItems: articles.length,
+  itemListElement: articles.map((article, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: article.data.title,
+    url: `https://tools.utildesk.de/ratgeber/${article.slug}/`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Ratgeber – Utildesk"
+  description="Vergleiche, Leitfäden und Einordnungen zu den wichtigsten KI-Tools und Workflows."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/ratgeber/" />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  </Fragment>
+
+  <section class="ratgeber-hero">
+    <p class="rg-eyebrow">Ratgeber</p>
+    <h1>Vergleiche &amp; Leitfäden<br/>zu den wichtigsten KI-Tools</h1>
+  </section>
+
+  <section class="rg-list">
+    {articles.length === 0 ? (
+      <p class="rg-empty">Bald hier: der erste Ratgeber-Artikel.</p>
+    ) : articles.map((article) => {
+      const published = article.data.date
+        ? new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(article.data.date))
+        : "";
+
+      return (
+        <a href={`/ratgeber/${article.slug}/`} class="rg-card">
+          {article.data.coverImage ? (
+            <div class="rg-card-img">
+              <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+            </div>
+          ) : null}
+          <div class="rg-card-body">
+            <div class="rg-card-meta-top">
+              {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
+              {article.data.category && String(article.data.category).toLowerCase() !== String(article.data.eyebrow ?? "").toLowerCase() ? <span class="rg-chip">{article.data.category}</span> : null}
+            </div>
+            <h2 class="rg-card-title">{article.data.title}</h2>
+            {article.data.excerpt ? <p class="rg-card-excerpt">{article.data.excerpt}</p> : null}
+            <div class="rg-card-meta-bottom">
+              {published ? <span class="rg-meta">{published}</span> : null}
+              {article.data.readTime ? <span class="rg-meta">{article.data.readTime} Min. Lesen</span> : null}
+            </div>
+          </div>
+        </a>
+      );
+    })}
+  </section>
+</BaseLayout>
+
+<style>
+  /* Page header */
+  .ratgeber-hero {
+    padding: 44px 0 36px;
+    max-width: 680px;
+  }
+
+  .rg-eyebrow {
+    margin: 0 0 16px;
+    font-size: 0.73rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--primary);
+  }
+
+  .ratgeber-hero h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    color: var(--on-surface);
+  }
+
+  .rg-sub {
+    margin: 14px 0 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    max-width: 58ch;
+  }
+
+  /* Article list */
+  .rg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 64px;
+  }
+
+  /* Card */
+  .rg-card {
+    display: grid;
+    grid-template-columns: 380px minmax(0, 1fr);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(190, 201, 197, 0.32);
+    background: var(--surface-container-lowest, #fff);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
+  }
+
+  .rg-card:hover {
+    box-shadow: 0 8px 32px rgba(26, 28, 23, 0.09);
+    border-color: rgba(23, 98, 89, 0.2);
+    transform: translateY(-3px);
+    color: inherit;
+  }
+
+  /* Image column */
+  .rg-card-img {
+    background: var(--surface-container-low, #f4f4eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 240px;
+    border-right: 1px solid rgba(190, 201, 197, 0.28);
+  }
+
+  .rg-card-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Content column */
+  .rg-card-body {
+    padding: 32px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .rg-card-meta-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .rg-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 11px;
+    border-radius: var(--radius-full);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: var(--surface-container-low, #f4f4eb);
+    color: var(--on-surface-variant);
+    border: 1px solid rgba(190, 201, 197, 0.3);
+  }
+
+  .rg-chip--accent {
+    background: rgba(23, 98, 89, 0.08);
+    color: var(--primary);
+    border-color: rgba(23, 98, 89, 0.15);
+  }
+
+  .rg-card-title {
+    margin: 0;
+    font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    color: var(--on-surface);
+  }
+
+  .rg-card-excerpt {
+    margin: 0;
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    max-width: 58ch;
+  }
+
+  .rg-card-meta-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .rg-meta {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    opacity: 0.75;
+    font-weight: 500;
+  }
+
+  .rg-empty {
+    color: var(--secondary);
+    padding: 40px 0;
+  }
+
+  /* Dark mode */
+  :root[data-theme="dark"] .rg-card {
+    background: var(--surface-container);
+    border-color: rgba(139, 152, 145, 0.2);
+  }
+
+  :root[data-theme="dark"] .rg-card-img {
+    background: var(--surface-container-low);
+    border-right-color: rgba(139, 152, 145, 0.18);
+  }
+
+  /* Responsive */
+  @media (max-width: 860px) {
+    .rg-card {
+      grid-template-columns: 1fr;
+    }
+
+    .rg-card-img {
+      min-height: 200px;
+      border-right: none;
+      border-bottom: 1px solid rgba(190, 201, 197, 0.28);
+      padding: 16px;
+    }
+
+    .rg-card-img img {
+      max-height: 200px;
+    }
+
+    .rg-card-body {
+      padding: 24px 22px;
+    }
+
+    .ratgeber-hero {
+      padding: 28px 0 24px;
+    }
+  }
+</style>
