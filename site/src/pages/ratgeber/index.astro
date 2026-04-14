@@ -31,7 +31,6 @@ const itemListSchema = {
   <section class="ratgeber-hero">
     <p class="rg-eyebrow">Ratgeber</p>
     <h1>Vergleiche &amp; Leitfäden<br/>zu den wichtigsten KI-Tools</h1>
-    <p class="rg-sub">Klare Einordnung statt Werbetext. Jeder Artikel verlinkt direkt zu den passenden Tools.</p>
   </section>
 
   <section class="rg-list">
@@ -52,7 +51,7 @@ const itemListSchema = {
           <div class="rg-card-body">
             <div class="rg-card-meta-top">
               {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
-              {article.data.category ? <span class="rg-chip">{article.data.category}</span> : null}
+              {article.data.category && String(article.data.category).toLowerCase() !== String(article.data.eyebrow ?? "").toLowerCase() ? <span class="rg-chip">{article.data.category}</span> : null}
             </div>
             <h2 class="rg-card-title">{article.data.title}</h2>
             {article.data.excerpt ? <p class="rg-card-excerpt">{article.data.excerpt}</p> : null}
