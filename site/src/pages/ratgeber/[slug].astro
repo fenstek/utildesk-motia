@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { marked } from "marked";
 import { getRatgeberEntry, listRatgeberEntries } from "../../lib/ratgeber";
+import { tagHref } from "../../lib/tagRoutes";
 
 export async function getStaticPaths() {
   const entries = await listRatgeberEntries();
@@ -39,6 +40,36 @@ const published = data.date
     }).format(new Date(data.date))
   : "";
 
+const normalizeMetaLabel = (value: string) =>
+  String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/^ki[-\s]+/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+const eyebrowLabel = normalizeMetaLabel(String(data.eyebrow ?? ""));
+const categoryLabel = normalizeMetaLabel(String(data.category ?? ""));
+const categoryIsRedundant =
+  Boolean(categoryLabel) &&
+  Boolean(eyebrowLabel) &&
+  (eyebrowLabel === categoryLabel ||
+    eyebrowLabel.includes(categoryLabel) ||
+    categoryLabel.includes(eyebrowLabel));
+const renderedPills = new Set<string>();
+
+const addRenderedPill = (label: string) => {
+  const normalized = normalizeMetaLabel(label);
+  if (!normalized || renderedPills.has(normalized)) {
+    return false;
+  }
+  renderedPills.add(normalized);
+  return true;
+};
+
+const relatedToolSet = new Set((data.relatedTools ?? []).map((t: {title: string}) => normalizeMetaLabel(t.title)));
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -73,18 +104,22 @@ const articleSchema = {
     <p class="article-excerpt">{description}</p>
 
     <div class="article-pills">
-      {published ? <span class="pill">{published}</span> : null}
-      {data.readTime ? <span class="pill">{data.readTime} Min. Lesen</span> : null}
-      {data.category ? <span class="pill pill--accent">{data.category}</span> : null}
-      {data.tags?.map((tag: string) => {
-        const href = toolHrefMap.get(String(tag).toLowerCase());
-        return href
-          ? <a href={href} class="pill pill--tool">{tag}</a>
-          : <span class="pill">{tag}</span>;
+      {published && addRenderedPill(published) ? <span class="pill">{published}</span> : null}
+      {data.readTime && addRenderedPill(`${data.readTime} Min. Lesen`) ? <span class="pill">{data.readTime} Min. Lesen</span> : null}
+      {data.category && !categoryIsRedundant && addRenderedPill(data.category) ? <span class="pill pill--accent">{data.category}</span> : null}
+      {data.relatedTools?.map((tool: {href: string, title: string}) => {
+        if (!addRenderedPill(tool.title)) {
+          return null;
+        }
+        return <a href={tool.href} class="pill pill--tool">{tool.title}</a>;
       })}
-      {data.relatedTools?.filter((t: {title: string}) => !tagSet.has(String(t.title).toLowerCase())).map((tool: {href: string, title: string}) => (
-        <a href={tool.href} class="pill pill--tool">{tool.title}</a>
-      ))}
+      {data.tags?.map((tag: string) => {
+        const tagKey = normalizeMetaLabel(tag);
+        if (!tagKey || relatedToolSet.has(tagKey) || !addRenderedPill(tag)) {
+          return null;
+        }
+        return <a href={tagHref(tag)} class="pill pill--tool">{tag}</a>;
+      })}
     </div>
   </header>
 
