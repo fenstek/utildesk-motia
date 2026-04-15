@@ -1,10 +1,11 @@
 ---
-slug: "envision-ai"
-title: "Envision AI"
-category: "AI"
-price_model: "Je nach Plan"
+slug: envision-ai
+title: Envision AI
+category: AI
+price_model: Je nach Plan
 tags: [video,machine-learning]
 official_url: "https://www.envision.ai/"
+popularity: 0
 ---
 
 # Envision AI

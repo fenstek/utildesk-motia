@@ -1,10 +1,11 @@
 ---
-slug: "libsyn"
-title: "Libsyn"
-category: "AI"
-price_model: "Abonnement"
+slug: libsyn
+title: Libsyn
+category: AI
+price_model: Abonnement
 tags: [audio]
 official_url: "https://libsyn.com/"
+popularity: 0
 ---
 
 # Libsyn

@@ -1,10 +1,11 @@
 ---
-slug: "buzzsprout"
-title: "Buzzsprout"
-category: "AI"
-price_model: "Freemium"
+slug: buzzsprout
+title: Buzzsprout
+category: AI
+price_model: Freemium
 tags: [audio]
 official_url: "https://www.buzzsprout.com/"
+popularity: 0
 ---
 
 # Buzzsprout

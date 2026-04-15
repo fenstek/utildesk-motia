@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-synapse-analytics"
-title: "Microsoft Azure Synapse Analytics"
-category: "AI"
-price_model: "Je nach Plan"
+slug: microsoft-azure-synapse-analytics
+title: Microsoft Azure Synapse Analytics
+category: AI
+price_model: Je nach Plan
 tags: [developer-tools, data, cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/synapse-analytics"
+popularity: 0
 ---
 
 # Microsoft Azure Synapse Analytics

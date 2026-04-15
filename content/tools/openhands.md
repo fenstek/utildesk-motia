@@ -5,7 +5,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [ai, coding, automation, developer]
 official_url: "https://openhands.dev/"
-popularity: 19
+popularity: 20
 ---
 
 # OpenHands

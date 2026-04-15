@@ -1,10 +1,11 @@
 ---
-slug: "apache-hive"
-title: "Apache Hive"
-category: "AI"
-price_model: "Open Source"
+slug: apache-hive
+title: Apache Hive
+category: AI
+price_model: Open Source
 tags: [developer-tools,data,cloud]
 official_url: "https://hive.apache.org/"
+popularity: 0
 ---
 
 # Apache Hive

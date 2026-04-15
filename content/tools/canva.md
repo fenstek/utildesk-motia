@@ -7,7 +7,7 @@ tags: ["design", "automation", "marketing"]
 official_url: "https://www.canva.com/"
 affiliate_url: "https://www.canva.com/"
 created_at: 2026-02-07
-popularity: 91
+popularity: 90
 ---
 
 # Canva

@@ -1,10 +1,11 @@
 ---
-slug: "spreaker"
-title: "Spreaker"
-category: "AI"
-price_model: "Je nach Plan"
+slug: spreaker
+title: Spreaker
+category: AI
+price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.spreaker.com/"
+popularity: 0
 ---
 
 # Spreaker
