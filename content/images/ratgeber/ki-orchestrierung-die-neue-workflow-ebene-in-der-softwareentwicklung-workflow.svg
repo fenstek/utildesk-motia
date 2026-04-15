@@ -1,0 +1,20 @@
+<svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#6a5cff'/>
+      <stop offset='55%' stop-color='#0b8f7a'/>
+      <stop offset='100%' stop-color='#f08d28'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='760' rx='44' fill='url(#g)'/>
+  <rect x='24' y='24' width='1152' height='712' rx='40' fill='rgba(255,255,255,0.08)' stroke='rgba(255,255,255,0.18)'/>
+  <text x='70' y='84' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#ffffff'>utildesk article illustration</text>
+  <text x='70' y='120' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='rgba(255,255,255,0.82)'>Explainer</text>
+  
+          <circle cx='306' cy='314' r='104' fill='rgba(255,255,255,0.94)'/>
+          <circle cx='600' cy='238' r='128' fill='rgba(255,255,255,0.92)'/>
+          <circle cx='836' cy='322' r='92' fill='rgba(255,255,255,0.94)'/>
+        
+  <text x='70' y='660' font-family='Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#ffffff'>How AI agent orchestration is becoming a real workflow layer</text>
+  <text x='70' y='696' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='rgba(255,255,255,0.86)'>Explain the trend, break down the mechanics, and show practical implications</text>
+</svg>
