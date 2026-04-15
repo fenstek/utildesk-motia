@@ -1,20 +1,35 @@
 <svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg'>
   <defs>
-    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#6a5cff'/>
-      <stop offset='55%' stop-color='#0b8f7a'/>
-      <stop offset='100%' stop-color='#f08d28'/>
+    <linearGradient id='line' x1='0' y1='0' x2='1' y2='0'>
+      <stop offset='0%' stop-color='#0f544d' stop-opacity='0.75'/>
+      <stop offset='100%' stop-color='#d7a35c' stop-opacity='0.75'/>
     </linearGradient>
   </defs>
-  <rect width='1200' height='760' rx='44' fill='url(#g)'/>
-  <rect x='24' y='24' width='1152' height='712' rx='40' fill='rgba(255,255,255,0.08)' stroke='rgba(255,255,255,0.18)'/>
-  <text x='70' y='84' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#ffffff'>utildesk article illustration</text>
-  <text x='70' y='120' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='rgba(255,255,255,0.82)'>Explainer</text>
-  
-          <circle cx='306' cy='314' r='104' fill='rgba(255,255,255,0.94)'/>
-          <circle cx='600' cy='238' r='128' fill='rgba(255,255,255,0.92)'/>
-          <circle cx='836' cy='322' r='92' fill='rgba(255,255,255,0.94)'/>
-        
-  <text x='70' y='660' font-family='Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#ffffff'>How AI agent orchestration is becoming a real workflow layer</text>
-  <text x='70' y='696' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='rgba(255,255,255,0.86)'>Explain the trend, break down the mechanics, and show practical implications</text>
+  <rect width='1200' height='760' rx='44' fill='#f7f2e8'/>
+  <rect x='54' y='54' width='1092' height='652' rx='38' fill='#fffaf3' stroke='rgba(15,84,77,0.12)'/>
+  <path d='M205 258 H995' stroke='url(#line)' stroke-width='8' fill='none' stroke-linecap='round'/>
+  <polygon points='995,258 969,244 969,272' fill='#d7a35c'/>
+
+  <rect x='112' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='306' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='500' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='694' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='888' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+
+  <text x='145' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Spezifikation</text>
+  <text x='356' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Planung</text>
+  <text x='542' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Agenten</text>
+  <text x='739' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Pruefung</text>
+  <text x='944' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Review</text>
+
+  <rect x='136' y='272' width='90' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
+  <rect x='330' y='272' width='96' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
+  <rect x='524' y='272' width='108' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
+  <rect x='718' y='272' width='104' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
+  <rect x='912' y='272' width='98' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
+
+  <rect x='164' y='456' width='872' height='170' rx='34' fill='rgba(15,84,77,0.06)' stroke='rgba(15,84,77,0.10)'/>
+  <text x='210' y='520' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#0f544d'>Sitzungen, Verlauf und Arbeitskontext</text>
+  <text x='210' y='562' font-family='Arial, Helvetica, sans-serif' font-size='20' fill='#315550'>Damit parallele Agenten brauchbar bleiben, brauchen Teams Sichtbarkeit auf Status, Eingriffe, Tests und offene Rueckfragen.</text>
+  <path d='M300 420 C360 376 470 356 600 356 C730 356 842 376 900 420' stroke='rgba(15,84,77,0.18)' stroke-width='8' fill='none' stroke-linecap='round'/>
 </svg>

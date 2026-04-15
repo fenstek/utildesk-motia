@@ -1,20 +1,49 @@
 <svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg'>
   <defs>
-    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#6a5cff'/>
-      <stop offset='55%' stop-color='#0b8f7a'/>
-      <stop offset='100%' stop-color='#f08d28'/>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#eadfcf'/>
+      <stop offset='100%' stop-color='#f7f2e8'/>
+    </linearGradient>
+    <linearGradient id='accent' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#0f544d'/>
+      <stop offset='100%' stop-color='#d7a35c'/>
     </linearGradient>
   </defs>
-  <rect width='1200' height='760' rx='44' fill='url(#g)'/>
-  <rect x='24' y='24' width='1152' height='712' rx='40' fill='rgba(255,255,255,0.08)' stroke='rgba(255,255,255,0.18)'/>
-  <text x='70' y='84' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#ffffff'>utildesk article illustration</text>
-  <text x='70' y='120' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='rgba(255,255,255,0.82)'>Explainer</text>
-  
-          <circle cx='306' cy='314' r='104' fill='rgba(255,255,255,0.94)'/>
-          <circle cx='600' cy='238' r='128' fill='rgba(255,255,255,0.92)'/>
-          <circle cx='836' cy='322' r='92' fill='rgba(255,255,255,0.94)'/>
-        
-  <text x='70' y='660' font-family='Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#ffffff'>How AI agent orchestration is becoming a real workflow layer</text>
-  <text x='70' y='696' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='rgba(255,255,255,0.86)'>Explain the trend, break down the mechanics, and show practical implications</text>
+  <rect width='1200' height='760' rx='44' fill='url(#bg)'/>
+  <rect x='52' y='54' width='1096' height='652' rx='38' fill='#fffaf3' stroke='rgba(15,84,77,0.12)'/>
+  <path d='M210 258 C330 216 390 206 520 224' stroke='rgba(15,84,77,0.22)' stroke-width='10' fill='none' stroke-linecap='round'/>
+  <path d='M678 224 C792 206 856 214 980 258' stroke='rgba(15,84,77,0.22)' stroke-width='10' fill='none' stroke-linecap='round'/>
+  <path d='M600 316 L600 516' stroke='rgba(15,84,77,0.22)' stroke-width='10' fill='none' stroke-linecap='round'/>
+  <path d='M600 516 C470 536 360 564 244 610' stroke='rgba(15,84,77,0.18)' stroke-width='8' fill='none' stroke-linecap='round'/>
+  <path d='M600 516 C726 538 844 566 958 610' stroke='rgba(15,84,77,0.18)' stroke-width='8' fill='none' stroke-linecap='round'/>
+
+  <rect x='120' y='180' width='248' height='148' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='426' y='116' width='348' height='240' rx='40' fill='url(#accent)'/>
+  <rect x='832' y='180' width='248' height='148' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='156' y='560' width='212' height='92' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='832' y='560' width='212' height='92' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+
+  <circle cx='600' cy='236' r='62' fill='rgba(255,255,255,0.18)' stroke='rgba(255,255,255,0.45)' stroke-width='8'/>
+  <circle cx='600' cy='236' r='18' fill='#fff6e8'/>
+  <circle cx='536' cy='196' r='12' fill='#fff6e8'/>
+  <circle cx='664' cy='196' r='12' fill='#fff6e8'/>
+  <circle cx='536' cy='276' r='12' fill='#fff6e8'/>
+  <circle cx='664' cy='276' r='12' fill='#fff6e8'/>
+  <path d='M600 218 L536 196 M600 218 L664 196 M600 254 L536 276 M600 254 L664 276' stroke='#fff6e8' stroke-width='5' stroke-linecap='round'/>
+
+  <rect x='168' y='204' width='118' height='16' rx='8' fill='rgba(15,84,77,0.12)'/>
+  <rect x='168' y='236' width='152' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
+  <rect x='168' y='260' width='126' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
+  <rect x='880' y='204' width='124' height='16' rx='8' fill='rgba(15,84,77,0.12)'/>
+  <rect x='880' y='236' width='148' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
+  <rect x='880' y='260' width='112' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
+
+  <text x='184' y='294' font-family='Arial, Helvetica, sans-serif' font-size='26' font-weight='700' fill='#0f544d'>Spezifikation</text>
+  <text x='880' y='294' font-family='Arial, Helvetica, sans-serif' font-size='26' font-weight='700' fill='#0f544d'>Review</text>
+  <text x='504' y='336' font-family='Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#fffaf3'>Planung und Koordination</text>
+
+  <text x='184' y='617' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='#0f544d'>Agenten</text>
+  <text x='870' y='617' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='#0f544d'>Tests und Merge</text>
+  <rect x='186' y='590' width='82' height='10' rx='5' fill='rgba(15,84,77,0.14)'/>
+  <rect x='862' y='590' width='100' height='10' rx='5' fill='rgba(15,84,77,0.14)'/>
 </svg>
