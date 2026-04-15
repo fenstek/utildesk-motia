@@ -17,6 +17,7 @@ const BASE_URL = 'https://tools.utildesk.de';
 const DIST_DIR = join(__dirname, '../dist');
 const DIST_TOOLS_DIR = join(DIST_DIR, 'tools');
 const DIST_CATEGORY_DIR = join(DIST_DIR, 'category');
+const DIST_RATGEBER_DIR = join(DIST_DIR, 'ratgeber');
 const OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 
 function escapeXml(str) {
@@ -118,9 +119,48 @@ async function readBuiltCategories() {
   }
 }
 
+async function readBuiltRatgeber() {
+  try {
+    const ratgeber = [];
+
+    try {
+      await stat(DIST_RATGEBER_DIR);
+    } catch {
+      return ratgeber;
+    }
+
+    const entries = await readdir(DIST_RATGEBER_DIR, { withFileTypes: true });
+
+    for (const entry of entries) {
+      if (!entry.isDirectory()) {
+        continue;
+      }
+
+      const slug = entry.name;
+      const indexPath = join(DIST_RATGEBER_DIR, slug, 'index.html');
+
+      try {
+        const mtime = await getFileModTime(indexPath);
+        ratgeber.push({
+          slug,
+          lastmod: formatDate(mtime),
+        });
+      } catch {
+        continue;
+      }
+    }
+
+    return ratgeber.sort((a, b) => a.slug.localeCompare(b.slug));
+  } catch (error) {
+    console.warn(`Warning: Could not read ratgeber directory: ${error.message}`);
+    return [];
+  }
+}
+
 async function generateSitemap() {
   const tools = await readBuiltTools();
   const categories = await readBuiltCategories();
+  const ratgeber = await readBuiltRatgeber();
   const today = formatDate(new Date());
 
   // Check if category index exists
@@ -131,6 +171,15 @@ async function generateSitemap() {
     categoryIndexLastmod = formatDate(mtime);
   } catch {
     // Category index doesn't exist, use today
+  }
+
+  let ratgeberIndexLastmod = today;
+  try {
+    const ratgeberIndexPath = join(DIST_RATGEBER_DIR, 'index.html');
+    const mtime = await getFileModTime(ratgeberIndexPath);
+    ratgeberIndexLastmod = formatDate(mtime);
+  } catch {
+    // Ratgeber index doesn't exist, use today
   }
 
   const urls = [
@@ -168,6 +217,22 @@ async function generateSitemap() {
       lastmod: cat.lastmod,
       priority: '0.7',
     })),
+    // Ratgeber index (if exists)
+    ...(ratgeber.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/ratgeber/`,
+            lastmod: ratgeberIndexLastmod,
+            priority: '0.8',
+          },
+        ]
+      : []),
+    // All built ratgeber pages
+    ...ratgeber.map((article) => ({
+      loc: `${BASE_URL}/ratgeber/${escapeXml(article.slug)}/`,
+      lastmod: article.lastmod,
+      priority: '0.7',
+    })),
   ];
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -187,7 +252,7 @@ async function generateSitemap() {
 
   await writeFile(OUTPUT_FILE, xml, 'utf8');
 
-  return { urls, count: urls.length, tools: tools.length, categories: categories.length };
+  return { urls, count: urls.length, tools: tools.length, categories: categories.length, ratgeber: ratgeber.length };
 }
 
 async function main() {
@@ -197,7 +262,14 @@ async function main() {
     console.log(`   Total URLs: ${result.count}`);
     console.log(`   Tools: ${result.tools} (from dist/tools/)`);
     console.log(`   Categories: ${result.categories} (from dist/category/)`);
-    const staticPages = result.count - result.tools - result.categories - (result.categories > 0 ? 1 : 0);
+    console.log(`   Ratgeber: ${result.ratgeber} (from dist/ratgeber/)`);
+    const staticPages =
+      result.count -
+      result.tools -
+      result.categories -
+      result.ratgeber -
+      (result.categories > 0 ? 1 : 0) -
+      (result.ratgeber > 0 ? 1 : 0);
     console.log(`   Static pages: ${staticPages}`);
   } catch (error) {
     console.error('❌ Failed to generate sitemap:', error.message);
