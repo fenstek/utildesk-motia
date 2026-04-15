@@ -1,10 +1,11 @@
 ---
-slug: "captum"
-title: "Captum"
-category: "AI"
-price_model: "Open Source"
+slug: captum
+title: Captum
+category: AI
+price_model: Open Source
 tags: [developer-tools,machine-learning]
 official_url: "https://captum.ai/"
+popularity: 0
 ---
 
 # Captum

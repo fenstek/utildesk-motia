@@ -1,10 +1,11 @@
 ---
-slug: "acast"
-title: "Acast"
-category: "AI"
-price_model: "Je nach Plan"
+slug: acast
+title: Acast
+category: AI
+price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.acast.com/en"
+popularity: 0
 ---
 
 # Acast

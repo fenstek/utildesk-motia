@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, productivity, automation, workflow]
 official_url: "https://talonvoice.com/"
-popularity: 0
+popularity: 8
 ---
 
 # Talon

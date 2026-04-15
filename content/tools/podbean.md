@@ -1,10 +1,11 @@
 ---
-slug: "podbean"
-title: "Podbean"
-category: "AI"
-price_model: "Abonnement"
+slug: podbean
+title: Podbean
+category: AI
+price_model: Abonnement
 tags: [audio]
 official_url: "https://www.podbean.com/"
+popularity: 0
 ---
 
 # Podbean
