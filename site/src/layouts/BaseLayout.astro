@@ -330,6 +330,128 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     </script>
 
+    <script is:inline>
+
+      (() => {
+
+        const parseFallbacks = (img) => {
+
+          const raw = img.getAttribute("data-fallback-srcs");
+
+          if (!raw) return [];
+
+          try {
+
+            const parsed = JSON.parse(raw);
+
+            return Array.isArray(parsed) ? parsed.filter((item) => typeof item === "string" && item) : [];
+
+          } catch {
+
+            return [];
+
+          }
+
+        };
+
+
+
+        const tryNextFallback = (img) => {
+
+          const fallbacks = parseFallbacks(img);
+
+          const currentIndex = Number(img.dataset.fallbackIndex || "-1");
+
+          const nextIndex = currentIndex + 1;
+
+          const nextSrc = fallbacks[nextIndex];
+
+          if (!nextSrc) return;
+
+          img.dataset.fallbackIndex = String(nextIndex);
+
+          if (img.getAttribute("src") === nextSrc) {
+
+            tryNextFallback(img);
+
+            return;
+
+          }
+
+          img.src = nextSrc;
+
+        };
+
+
+
+        const bindImageFallback = (img) => {
+
+          if (!(img instanceof HTMLImageElement)) return;
+
+          if (img.dataset.fallbackBound === "true") return;
+
+          if (!img.hasAttribute("data-fallback-srcs")) return;
+
+          img.dataset.fallbackBound = "true";
+
+          img.addEventListener("error", () => {
+
+            tryNextFallback(img);
+
+          });
+
+          if (img.complete && img.naturalWidth === 0) {
+
+            tryNextFallback(img);
+
+          }
+
+        };
+
+
+
+        const bindAll = (root = document) => {
+
+          root.querySelectorAll("img[data-fallback-srcs]").forEach(bindImageFallback);
+
+        };
+
+
+
+        bindAll();
+
+
+
+        const observer = new MutationObserver((mutations) => {
+
+          mutations.forEach((mutation) => {
+
+            mutation.addedNodes.forEach((node) => {
+
+              if (!(node instanceof Element)) return;
+
+              if (node.matches("img[data-fallback-srcs]")) {
+
+                bindImageFallback(node);
+
+              }
+
+              bindAll(node);
+
+            });
+
+          });
+
+        });
+
+
+
+        observer.observe(document.body, { childList: true, subtree: true });
+
+      })();
+
+    </script>
+
   </body>
 
 </html>
