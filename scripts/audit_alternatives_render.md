@@ -19,7 +19,11 @@ node scripts/audit_alternatives_render.mjs [options]
 ## Options
 
 - `--json`: print structured JSON report.
-- `--top <N>`: limit the number of problematic files in summary (default: `20`).
+- `--pretty`: pretty-print JSON with indentation.
+- `--only <slug>`: audit a single tool page.
+- `--limit <N>`: limit the number of scanned markdown files.
+- `--out <path>`: also write the JSON report to a file.
+- `--debug`: print diagnostics to stderr.
 
 ## Examples
 
@@ -30,6 +34,9 @@ node scripts/audit_alternatives_render.mjs
 # JSON report
 node scripts/audit_alternatives_render.mjs --json
 
-# JSON report with smaller problematic list
-node scripts/audit_alternatives_render.mjs --json --top 10
+# Pretty JSON for one page
+node scripts/audit_alternatives_render.mjs --pretty --only chatgpt
+
+# Write report to file too
+node scripts/audit_alternatives_render.mjs --pretty --out /tmp/audit_alternatives.json
 ```
