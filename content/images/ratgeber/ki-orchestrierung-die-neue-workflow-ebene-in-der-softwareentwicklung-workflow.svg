@@ -1,35 +1,55 @@
 <svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg'>
-  <defs>
-    <linearGradient id='line' x1='0' y1='0' x2='1' y2='0'>
-      <stop offset='0%' stop-color='#0f544d' stop-opacity='0.75'/>
-      <stop offset='100%' stop-color='#d7a35c' stop-opacity='0.75'/>
-    </linearGradient>
-  </defs>
   <rect width='1200' height='760' rx='44' fill='#f7f2e8'/>
   <rect x='54' y='54' width='1092' height='652' rx='38' fill='#fffaf3' stroke='rgba(15,84,77,0.12)'/>
-  <path d='M205 258 H995' stroke='url(#line)' stroke-width='8' fill='none' stroke-linecap='round'/>
-  <polygon points='995,258 969,244 969,272' fill='#d7a35c'/>
+  <text x='104' y='118' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#0f544d'>So läuft ein orchestrierter KI-Workflow</text>
+  <text x='104' y='152' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#4c6d67'>Die Qualität entsteht nicht nur im Modell, sondern in der Reihenfolge aus Briefing, Koordination, Ausführung und Verifikation.</text>
 
-  <rect x='112' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='306' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='500' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='694' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='888' y='188' width='154' height='138' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <path d='M182 284 H1018' stroke='rgba(15,84,77,0.20)' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <polygon points='1018,284 998,272 998,296' fill='#d7a35c'/>
 
-  <text x='145' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Spezifikation</text>
-  <text x='356' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Planung</text>
-  <text x='542' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Agenten</text>
-  <text x='739' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Pruefung</text>
-  <text x='944' y='246' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Review</text>
+  <circle cx='182' cy='284' r='18' fill='#0f544d'/><text x='176' y='290' font-family='Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>1</text>
+  <circle cx='350' cy='284' r='18' fill='#0f544d'/><text x='344' y='290' font-family='Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>2</text>
+  <circle cx='518' cy='284' r='18' fill='#0f544d'/><text x='512' y='290' font-family='Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>3</text>
+  <circle cx='686' cy='284' r='18' fill='#0f544d'/><text x='680' y='290' font-family='Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>4</text>
+  <circle cx='854' cy='284' r='18' fill='#0f544d'/><text x='848' y='290' font-family='Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>5</text>
+  <circle cx='1018' cy='284' r='18' fill='#d7a35c'/><text x='1012' y='290' font-family='Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>6</text>
 
-  <rect x='136' y='272' width='90' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
-  <rect x='330' y='272' width='96' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
-  <rect x='524' y='272' width='108' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
-  <rect x='718' y='272' width='104' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
-  <rect x='912' y='272' width='98' height='12' rx='6' fill='rgba(15,84,77,0.12)'/>
+  <rect x='108' y='334' width='148' height='124' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='276' y='334' width='148' height='124' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='444' y='334' width='148' height='124' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='612' y='334' width='148' height='124' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='780' y='334' width='148' height='124' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='948' y='334' width='148' height='124' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
 
-  <rect x='164' y='456' width='872' height='170' rx='34' fill='rgba(15,84,77,0.06)' stroke='rgba(15,84,77,0.10)'/>
-  <text x='210' y='520' font-family='Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#0f544d'>Sitzungen, Verlauf und Arbeitskontext</text>
-  <text x='210' y='562' font-family='Arial, Helvetica, sans-serif' font-size='20' fill='#315550'>Damit parallele Agenten brauchbar bleiben, brauchen Teams Sichtbarkeit auf Status, Eingriffe, Tests und offene Rueckfragen.</text>
-  <path d='M300 420 C360 376 470 356 600 356 C730 356 842 376 900 420' stroke='rgba(15,84,77,0.18)' stroke-width='8' fill='none' stroke-linecap='round'/>
+  <text x='132' y='384' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Briefing</text>
+  <text x='132' y='412' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Zielbild und</text>
+  <text x='132' y='434' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Akzeptanzkriterien</text>
+
+  <text x='308' y='384' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Planung</text>
+  <text x='308' y='412' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Pakete, Rollen</text>
+  <text x='308' y='434' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>und Prioritäten</text>
+
+  <text x='474' y='384' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agenten</text>
+  <text x='474' y='412' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Parallele</text>
+  <text x='474' y='434' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Ausführung</text>
+
+  <text x='642' y='384' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Prüfung</text>
+  <text x='642' y='412' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Tests, Specs,</text>
+  <text x='642' y='434' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Guardrails</text>
+
+  <text x='812' y='384' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Review</text>
+  <text x='812' y='412' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Menschliche</text>
+  <text x='812' y='434' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Entscheidung</text>
+
+  <text x='986' y='384' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Merge</text>
+  <text x='986' y='412' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Freigabe und</text>
+  <text x='986' y='434' font-family='Arial, Helvetica, sans-serif' font-size='16' fill='#446661'>Übergabe</text>
+
+  <rect x='108' y='516' width='988' height='148' rx='28' fill='rgba(15,84,77,0.05)' stroke='rgba(15,84,77,0.10)'/>
+  <text x='144' y='566' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='#0f544d'>Sichtbarkeit über Sitzungen und Status</text>
+  <text x='144' y='600' font-family='Arial, Helvetica, sans-serif' font-size='17' fill='#446661'>Damit parallele Arbeit beherrschbar bleibt, brauchen Teams einen gemeinsamen Blick auf Kontext, offene Fragen, Teststatus und Verantwortlichkeiten.</text>
+  <rect x='144' y='620' width='126' height='10' rx='5' fill='rgba(15,84,77,0.14)'/>
+  <rect x='286' y='620' width='154' height='10' rx='5' fill='rgba(15,84,77,0.12)'/>
+  <rect x='456' y='620' width='118' height='10' rx='5' fill='rgba(15,84,77,0.10)'/>
+  <rect x='590' y='620' width='146' height='10' rx='5' fill='rgba(15,84,77,0.12)'/>
 </svg>

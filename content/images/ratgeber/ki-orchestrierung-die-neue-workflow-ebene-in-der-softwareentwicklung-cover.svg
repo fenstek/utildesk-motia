@@ -1,49 +1,60 @@
 <svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg'>
   <defs>
     <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#eadfcf'/>
-      <stop offset='100%' stop-color='#f7f2e8'/>
+      <stop offset='0%' stop-color='#fbf6ee'/>
+      <stop offset='100%' stop-color='#eadfcf'/>
     </linearGradient>
-    <linearGradient id='accent' x1='0' y1='0' x2='1' y2='1'>
+    <linearGradient id='panel' x1='0' y1='0' x2='1' y2='1'>
       <stop offset='0%' stop-color='#0f544d'/>
-      <stop offset='100%' stop-color='#d7a35c'/>
+      <stop offset='100%' stop-color='#16766b'/>
     </linearGradient>
   </defs>
   <rect width='1200' height='760' rx='44' fill='url(#bg)'/>
-  <rect x='52' y='54' width='1096' height='652' rx='38' fill='#fffaf3' stroke='rgba(15,84,77,0.12)'/>
-  <path d='M210 258 C330 216 390 206 520 224' stroke='rgba(15,84,77,0.22)' stroke-width='10' fill='none' stroke-linecap='round'/>
-  <path d='M678 224 C792 206 856 214 980 258' stroke='rgba(15,84,77,0.22)' stroke-width='10' fill='none' stroke-linecap='round'/>
-  <path d='M600 316 L600 516' stroke='rgba(15,84,77,0.22)' stroke-width='10' fill='none' stroke-linecap='round'/>
-  <path d='M600 516 C470 536 360 564 244 610' stroke='rgba(15,84,77,0.18)' stroke-width='8' fill='none' stroke-linecap='round'/>
-  <path d='M600 516 C726 538 844 566 958 610' stroke='rgba(15,84,77,0.18)' stroke-width='8' fill='none' stroke-linecap='round'/>
+  <rect x='44' y='44' width='1112' height='672' rx='40' fill='#fffaf3' stroke='rgba(15,84,77,0.10)'/>
 
-  <rect x='120' y='180' width='248' height='148' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='426' y='116' width='348' height='240' rx='40' fill='url(#accent)'/>
-  <rect x='832' y='180' width='248' height='148' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='156' y='560' width='212' height='92' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
-  <rect x='832' y='560' width='212' height='92' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.12)'/>
+  <rect x='88' y='86' width='182' height='38' rx='19' fill='rgba(15,84,77,0.07)'/>
+  <text x='122' y='111' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>KI-Orchestrierung</text>
 
-  <circle cx='600' cy='236' r='62' fill='rgba(255,255,255,0.18)' stroke='rgba(255,255,255,0.45)' stroke-width='8'/>
-  <circle cx='600' cy='236' r='18' fill='#fff6e8'/>
-  <circle cx='536' cy='196' r='12' fill='#fff6e8'/>
-  <circle cx='664' cy='196' r='12' fill='#fff6e8'/>
-  <circle cx='536' cy='276' r='12' fill='#fff6e8'/>
-  <circle cx='664' cy='276' r='12' fill='#fff6e8'/>
-  <path d='M600 218 L536 196 M600 218 L664 196 M600 254 L536 276 M600 254 L664 276' stroke='#fff6e8' stroke-width='5' stroke-linecap='round'/>
+  <rect x='88' y='166' width='244' height='162' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.11)'/>
+  <text x='122' y='214' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Spezifikation</text>
+  <text x='122' y='248' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#385c56'>Ziele, Grenzen,</text>
+  <text x='122' y='274' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#385c56'>Akzeptanzkriterien</text>
+  <rect x='122' y='296' width='104' height='10' rx='5' fill='rgba(15,84,77,0.12)'/>
+  <rect x='122' y='314' width='136' height='10' rx='5' fill='rgba(15,84,77,0.09)'/>
 
-  <rect x='168' y='204' width='118' height='16' rx='8' fill='rgba(15,84,77,0.12)'/>
-  <rect x='168' y='236' width='152' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
-  <rect x='168' y='260' width='126' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
-  <rect x='880' y='204' width='124' height='16' rx='8' fill='rgba(15,84,77,0.12)'/>
-  <rect x='880' y='236' width='148' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
-  <rect x='880' y='260' width='112' height='12' rx='6' fill='rgba(15,84,77,0.09)'/>
+  <rect x='378' y='136' width='444' height='204' rx='34' fill='url(#panel)'/>
+  <text x='424' y='196' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='rgba(255,250,243,0.80)'>Kontrollschicht</text>
+  <text x='424' y='246' font-family='Arial, Helvetica, sans-serif' font-size='36' font-weight='700' fill='#fffaf3'>Planung, Priorisierung</text>
+  <text x='424' y='290' font-family='Arial, Helvetica, sans-serif' font-size='36' font-weight='700' fill='#fffaf3'>und Verifikation</text>
+  <rect x='424' y='314' width='132' height='10' rx='5' fill='rgba(255,250,243,0.28)'/>
+  <rect x='572' y='314' width='164' height='10' rx='5' fill='rgba(255,250,243,0.18)'/>
 
-  <text x='184' y='294' font-family='Arial, Helvetica, sans-serif' font-size='26' font-weight='700' fill='#0f544d'>Spezifikation</text>
-  <text x='880' y='294' font-family='Arial, Helvetica, sans-serif' font-size='26' font-weight='700' fill='#0f544d'>Review</text>
-  <text x='504' y='336' font-family='Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#fffaf3'>Planung und Koordination</text>
+  <rect x='866' y='166' width='246' height='162' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.11)'/>
+  <text x='902' y='214' font-family='Arial, Helvetica, sans-serif' font-size='24' font-weight='700' fill='#0f544d'>Review</text>
+  <text x='902' y='248' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#385c56'>Checks, Feedback,</text>
+  <text x='902' y='274' font-family='Arial, Helvetica, sans-serif' font-size='18' fill='#385c56'>Merge-Freigabe</text>
+  <rect x='902' y='296' width='98' height='10' rx='5' fill='rgba(15,84,77,0.12)'/>
+  <rect x='902' y='314' width='146' height='10' rx='5' fill='rgba(15,84,77,0.09)'/>
 
-  <text x='184' y='617' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='#0f544d'>Agenten</text>
-  <text x='870' y='617' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='#0f544d'>Tests und Merge</text>
-  <rect x='186' y='590' width='82' height='10' rx='5' fill='rgba(15,84,77,0.14)'/>
-  <rect x='862' y='590' width='100' height='10' rx='5' fill='rgba(15,84,77,0.14)'/>
+  <path d='M332 246 C356 246 364 238 378 238' stroke='rgba(15,84,77,0.22)' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <polygon points='378,238 362,228 362,248' fill='rgba(15,84,77,0.32)'/>
+  <path d='M822 238 C842 238 850 246 866 246' stroke='rgba(15,84,77,0.22)' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <polygon points='866,246 850,236 850,256' fill='rgba(15,84,77,0.32)'/>
+
+  <rect x='94' y='424' width='1012' height='226' rx='34' fill='rgba(15,84,77,0.05)' stroke='rgba(15,84,77,0.09)'/>
+  <text x='136' y='474' font-family='Arial, Helvetica, sans-serif' font-size='22' font-weight='700' fill='#0f544d'>Parallelisierte Arbeit</text>
+
+  <rect x='136' y='508' width='266' height='96' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='466' y='508' width='266' height='96' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='796' y='508' width='266' height='96' rx='24' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/>
+  <text x='166' y='548' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agent A</text>
+  <text x='166' y='574' font-family='Arial, Helvetica, sans-serif' font-size='17' fill='#406660'>Implementierung</text>
+  <text x='496' y='548' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agent B</text>
+  <text x='496' y='574' font-family='Arial, Helvetica, sans-serif' font-size='17' fill='#406660'>Tests und Fixes</text>
+  <text x='826' y='548' font-family='Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agent C</text>
+  <text x='826' y='574' font-family='Arial, Helvetica, sans-serif' font-size='17' fill='#406660'>Dokumentation</text>
+
+  <path d='M268 468 C308 430 372 390 452 350' stroke='rgba(15,84,77,0.20)' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <path d='M600 468 C600 430 600 396 600 350' stroke='rgba(15,84,77,0.20)' stroke-width='6' fill='none' stroke-linecap='round'/>
+  <path d='M932 468 C892 430 828 390 748 350' stroke='rgba(15,84,77,0.20)' stroke-width='6' fill='none' stroke-linecap='round'/>
 </svg>
