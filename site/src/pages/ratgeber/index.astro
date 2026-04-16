@@ -40,6 +40,7 @@ const itemListSchema = {
   <section class="ratgeber-hero">
     <p class="rg-eyebrow">Ratgeber</p>
     <h1>Vergleiche &amp; Leitfäden<br/>zu den wichtigsten KI-Tools</h1>
+    <p class="rg-sub">Redaktionelle Einordnungen, Vergleiche und Arbeitsmodelle für Teams, die mit KI nicht nur experimentieren, sondern produktiv arbeiten wollen.</p>
   </section>
 
   <section class="rg-list">
@@ -53,8 +54,10 @@ const itemListSchema = {
       return (
         <a href={`/ratgeber/${article.slug}/`} class="rg-card">
           {article.data.coverImage ? (
-            <div class="rg-card-img">
-              <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+            <div class="rg-card-figure">
+              <div class="rg-media-stage">
+                <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+              </div>
             </div>
           ) : null}
           <div class="rg-card-body">
@@ -67,6 +70,7 @@ const itemListSchema = {
             <div class="rg-card-meta-bottom">
               {published ? <span class="rg-meta">{published}</span> : null}
               {article.data.readTime ? <span class="rg-meta">{article.data.readTime} Min. Lesen</span> : null}
+              <span class="rg-arrow">Zum Artikel</span>
             </div>
           </div>
         </a>
@@ -76,10 +80,9 @@ const itemListSchema = {
 </BaseLayout>
 
 <style>
-  /* Page header */
   .ratgeber-hero {
     padding: 44px 0 36px;
-    max-width: 680px;
+    max-width: 760px;
   }
 
   .rg-eyebrow {
@@ -93,75 +96,78 @@ const itemListSchema = {
 
   .ratgeber-hero h1 {
     margin: 0;
-    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    font-size: clamp(1.95rem, 3.6vw, 3rem);
     font-weight: 800;
-    line-height: 1.12;
-    letter-spacing: -0.03em;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
     color: var(--on-surface);
   }
 
   .rg-sub {
-    margin: 14px 0 0;
-    font-size: 1rem;
-    line-height: 1.7;
+    margin: 16px 0 0;
+    font-size: 1.02rem;
+    line-height: 1.78;
     color: var(--secondary);
-    max-width: 58ch;
+    max-width: 62ch;
   }
 
-  /* Article list */
   .rg-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-bottom: 64px;
+    gap: 0;
+    padding-bottom: 72px;
+    border-top: 1px solid rgba(23, 98, 89, 0.12);
   }
 
-  /* Card */
   .rg-card {
     display: grid;
-    grid-template-columns: 380px minmax(0, 1fr);
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(190, 201, 197, 0.32);
-    background: var(--surface-container-lowest, #fff);
-    overflow: hidden;
+    grid-template-columns: minmax(280px, 34%) minmax(0, 1fr);
+    gap: 32px;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(23, 98, 89, 0.12);
     text-decoration: none;
     color: inherit;
-    transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
+    transition: transform var(--transition), color var(--transition);
   }
 
   .rg-card:hover {
-    box-shadow: 0 8px 32px rgba(26, 28, 23, 0.09);
-    border-color: rgba(23, 98, 89, 0.2);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     color: inherit;
   }
 
-  /* Image column */
-  .rg-card-img {
-    background: var(--surface-container-low, #f4f4eb);
+  .rg-card-figure {
+    padding-right: 8px;
+  }
+
+  .rg-media-stage {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    min-height: 240px;
-    border-right: 1px solid rgba(190, 201, 197, 0.28);
+    min-height: 248px;
+    padding: 18px;
+    border-radius: 32px;
+    background:
+      radial-gradient(circle at top left, rgba(23, 98, 89, 0.10), transparent 44%),
+      linear-gradient(145deg, rgba(255, 250, 243, 0.46), rgba(23, 98, 89, 0.03));
+    border: 1px solid rgba(23, 98, 89, 0.12);
+    box-shadow: 0 14px 34px rgba(18, 28, 24, 0.05);
   }
 
-  .rg-card-img img {
+  .rg-media-stage img {
     width: 100%;
     height: 100%;
-    max-height: 280px;
+    max-height: 292px;
     object-fit: contain;
     display: block;
   }
 
-  /* Content column */
   .rg-card-body {
-    padding: 32px 36px;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     gap: 14px;
-    justify-content: center;
+    min-width: 0;
   }
 
   .rg-card-meta-top {
@@ -178,39 +184,41 @@ const itemListSchema = {
     font-size: 0.74rem;
     font-weight: 700;
     letter-spacing: 0.04em;
-    background: var(--surface-container-low, #f4f4eb);
+    background: rgba(23, 98, 89, 0.05);
     color: var(--on-surface-variant);
-    border: 1px solid rgba(190, 201, 197, 0.3);
+    border: 1px solid rgba(23, 98, 89, 0.10);
   }
 
   .rg-chip--accent {
-    background: rgba(23, 98, 89, 0.08);
+    background: rgba(23, 98, 89, 0.10);
     color: var(--primary);
-    border-color: rgba(23, 98, 89, 0.15);
+    border-color: rgba(23, 98, 89, 0.16);
   }
 
   .rg-card-title {
     margin: 0;
-    font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+    font-size: clamp(1.4rem, 2vw, 1.95rem);
     font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.025em;
+    line-height: 1.14;
+    letter-spacing: -0.03em;
     color: var(--on-surface);
+    max-width: 18ch;
   }
 
   .rg-card-excerpt {
     margin: 0;
-    font-size: 0.97rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 1.74;
     color: var(--secondary);
-    max-width: 58ch;
+    max-width: 62ch;
   }
 
   .rg-card-meta-bottom {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 4px;
+    align-items: center;
+    margin-top: 6px;
   }
 
   .rg-meta {
@@ -220,45 +228,73 @@ const itemListSchema = {
     font-weight: 500;
   }
 
+  .rg-arrow {
+    margin-left: auto;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    opacity: 0.84;
+    transition: transform var(--transition), opacity var(--transition);
+  }
+
+  .rg-card:hover .rg-arrow {
+    transform: translateX(3px);
+    opacity: 1;
+  }
+
   .rg-empty {
     color: var(--secondary);
     padding: 40px 0;
   }
 
-  /* Dark mode */
+  :root[data-theme="dark"] .rg-list,
   :root[data-theme="dark"] .rg-card {
-    background: var(--surface-container);
-    border-color: rgba(139, 152, 145, 0.2);
+    border-color: rgba(139, 152, 145, 0.18);
   }
 
-  :root[data-theme="dark"] .rg-card-img {
-    background: var(--surface-container-low);
-    border-right-color: rgba(139, 152, 145, 0.18);
+  :root[data-theme="dark"] .rg-media-stage {
+    background:
+      radial-gradient(circle at top left, rgba(129, 208, 192, 0.12), transparent 42%),
+      linear-gradient(145deg, rgba(38, 49, 45, 0.58), rgba(20, 27, 25, 0.96));
+    border-color: rgba(139, 152, 145, 0.18);
+    box-shadow: 0 18px 34px rgba(4, 10, 8, 0.22);
   }
 
-  /* Responsive */
   @media (max-width: 860px) {
     .rg-card {
       grid-template-columns: 1fr;
+      gap: 18px;
     }
 
-    .rg-card-img {
-      min-height: 200px;
-      border-right: none;
-      border-bottom: 1px solid rgba(190, 201, 197, 0.28);
+    .rg-card-figure {
+      padding-right: 0;
+    }
+
+    .rg-media-stage {
+      min-height: 210px;
       padding: 16px;
     }
 
-    .rg-card-img img {
+    .rg-media-stage img {
       max-height: 200px;
     }
 
     .rg-card-body {
-      padding: 24px 22px;
+      padding: 0;
     }
 
     .ratgeber-hero {
       padding: 28px 0 24px;
+    }
+
+    .rg-card-title {
+      max-width: none;
+    }
+
+    .rg-arrow {
+      margin-left: 0;
     }
   }
 </style>
