@@ -11,69 +11,69 @@
 
   <path d='M170 254 H1030' stroke='rgba(15,84,77,0.14)' stroke-width='4' fill='none' stroke-linecap='round'/>
 
-  <rect x='108' y='214' width='148' height='70' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='274' y='214' width='148' height='70' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='440' y='214' width='148' height='70' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='606' y='214' width='148' height='70' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='772' y='214' width='148' height='70' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='938' y='214' width='148' height='70' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='104' y='212' width='152' height='74' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='272' y='212' width='152' height='74' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='440' y='212' width='152' height='74' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='608' y='212' width='152' height='74' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='776' y='212' width='152' height='74' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='944' y='212' width='152' height='74' rx='26' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
 
-  <circle cx='132' cy='249' r='16' fill='#0f544d'/><text x='126' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>1</text>
-  <circle cx='298' cy='249' r='16' fill='#0f544d'/><text x='292' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>2</text>
+  <circle cx='128' cy='249' r='16' fill='#0f544d'/><text x='122' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>1</text>
+  <circle cx='296' cy='249' r='16' fill='#0f544d'/><text x='290' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>2</text>
   <circle cx='464' cy='249' r='16' fill='#0f544d'/><text x='458' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>3</text>
-  <circle cx='630' cy='249' r='16' fill='#0f544d'/><text x='624' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>4</text>
-  <circle cx='796' cy='249' r='16' fill='#0f544d'/><text x='790' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>5</text>
-  <circle cx='962' cy='249' r='16' fill='#d7a35c'/><text x='956' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>6</text>
+  <circle cx='632' cy='249' r='16' fill='#0f544d'/><text x='626' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>4</text>
+  <circle cx='800' cy='249' r='16' fill='#0f544d'/><text x='794' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>5</text>
+  <circle cx='968' cy='249' r='16' fill='#d7a35c'/><text x='962' y='255' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>6</text>
 
-  <text x='158' y='243' font-family='Inter, Arial, Helvetica, sans-serif' font-size='19' font-weight='700' fill='#0f544d'>Briefing</text>
-  <text x='158' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#55746f'>Scope</text>
-  <text x='324' y='243' font-family='Inter, Arial, Helvetica, sans-serif' font-size='19' font-weight='700' fill='#0f544d'>Planung</text>
-  <text x='324' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#55746f'>Pakete</text>
-  <text x='490' y='243' font-family='Inter, Arial, Helvetica, sans-serif' font-size='19' font-weight='700' fill='#0f544d'>Agentenlauf</text>
-  <text x='490' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#55746f'>Parallel</text>
-  <text x='656' y='243' font-family='Inter, Arial, Helvetica, sans-serif' font-size='19' font-weight='700' fill='#0f544d'>Prüfung</text>
-  <text x='656' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#55746f'>Checks</text>
-  <text x='822' y='243' font-family='Inter, Arial, Helvetica, sans-serif' font-size='19' font-weight='700' fill='#0f544d'>Review</text>
-  <text x='822' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#55746f'>Verdichtung</text>
-  <text x='988' y='243' font-family='Inter, Arial, Helvetica, sans-serif' font-size='19' font-weight='700' fill='#0f544d'>Merge</text>
-  <text x='988' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' fill='#55746f'>Freigabe</text>
+  <text x='154' y='242' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='700' fill='#0f544d'>Briefing</text>
+  <text x='154' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55746f'>Scope</text>
+  <text x='322' y='242' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='700' fill='#0f544d'>Planung</text>
+  <text x='322' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55746f'>Pakete</text>
+  <text x='490' y='242' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='700' fill='#0f544d'>Agentenlauf</text>
+  <text x='490' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55746f'>Parallel</text>
+  <text x='658' y='242' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='700' fill='#0f544d'>Prüfung</text>
+  <text x='658' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55746f'>Checks</text>
+  <text x='826' y='242' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='700' fill='#0f544d'>Review</text>
+  <text x='826' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55746f'>Verdichtung</text>
+  <text x='994' y='242' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='700' fill='#0f544d'>Merge</text>
+  <text x='994' y='266' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55746f'>Freigabe</text>
 
-  <rect x='108' y='334' width='308' height='248' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='446' y='334' width='308' height='248' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
-  <rect x='784' y='334' width='312' height='248' rx='28' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='108' y='330' width='308' height='276' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='446' y='330' width='308' height='276' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='784' y='330' width='312' height='276' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
 
   <text x='136' y='378' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>VOR DEM LAUF</text>
-  <text x='136' y='418' font-family='Inter, Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#0f544d'>Ausrichtung</text>
-  <rect x='136' y='438' width='88' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
-  <rect x='232' y='438' width='98' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
-  <text x='159' y='457' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Zielbild</text>
-  <text x='261' y='457' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Guardrails</text>
-  <text x='136' y='492' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' font-weight='400' fill='#55746f'><tspan x='136' dy='0'>Ein orchestrierter Workflow</tspan><tspan x='136' dy='23'>beginnt mit einem belastbaren</tspan><tspan x='136' dy='23'>Briefing: Zielbild, Rollen und</tspan><tspan x='136' dy='23'>Guardrails stehen vor dem</tspan><tspan x='136' dy='23'>ersten Lauf fest.</tspan></text>
+  <text x='136' y='416' font-family='Inter, Arial, Helvetica, sans-serif' font-size='27' font-weight='700' fill='#0f544d'>Ausrichtung</text>
+  <rect x='136' y='434' width='88' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
+  <rect x='232' y='434' width='98' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
+  <text x='159' y='453' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Zielbild</text>
+  <text x='261' y='453' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Guardrails</text>
+  <text x='136' y='490' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='400' fill='#55746f'><tspan x='136' dy='0'>Ein orchestrierter Workflow</tspan><tspan x='136' dy='20'>beginnt mit einem</tspan><tspan x='136' dy='20'>belastbaren Briefing:</tspan><tspan x='136' dy='20'>Zielbild, Rollen und</tspan><tspan x='136' dy='20'>Guardrails stehen vor dem</tspan><tspan x='136' dy='20'>ersten Lauf fest.</tspan></text>
 
   <text x='474' y='378' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>WÄHREND DES LAUFS</text>
-  <text x='474' y='418' font-family='Inter, Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#0f544d'>Steuerung</text>
-  <rect x='474' y='438' width='92' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
-  <rect x='574' y='438' width='112' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
-  <text x='499' y='457' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Pakete</text>
-  <text x='603' y='457' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Kontextfluss</text>
-  <text x='474' y='492' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' font-weight='400' fill='#55746f'><tspan x='474' dy='0'>Während der Ausführung</tspan><tspan x='474' dy='23'>verteilt die Kontrollschicht</tspan><tspan x='474' dy='23'>Arbeit, hält Kontext sauber</tspan><tspan x='474' dy='23'>und prüft Zwischenergebnisse</tspan><tspan x='474' dy='23'>gegen klare Kriterien.</tspan></text>
+  <text x='474' y='416' font-family='Inter, Arial, Helvetica, sans-serif' font-size='27' font-weight='700' fill='#0f544d'>Steuerung</text>
+  <rect x='474' y='434' width='92' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
+  <rect x='574' y='434' width='112' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
+  <text x='499' y='453' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Pakete</text>
+  <text x='603' y='453' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Kontextfluss</text>
+  <text x='474' y='490' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='400' fill='#55746f'><tspan x='474' dy='0'>Während der Ausführung</tspan><tspan x='474' dy='20'>verteilt die Kontrollschicht</tspan><tspan x='474' dy='20'>Arbeit, hält Kontext sauber</tspan><tspan x='474' dy='20'>und prüft Zwischenergebnisse</tspan><tspan x='474' dy='20'>gegen klare Kriterien.</tspan></text>
 
   <text x='812' y='378' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>VOR DEM MERGE</text>
-  <text x='812' y='418' font-family='Inter, Arial, Helvetica, sans-serif' font-size='28' font-weight='700' fill='#0f544d'>Absicherung</text>
-  <rect x='812' y='438' width='78' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
-  <rect x='898' y='438' width='86' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
-  <text x='835' y='457' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Review</text>
-  <text x='923' y='457' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Freigabe</text>
-  <text x='812' y='492' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' font-weight='400' fill='#55746f'><tspan x='812' dy='0'>Vor dem Merge werden Tests,</tspan><tspan x='812' dy='23'>Review und Freigabe gebündelt,</tspan><tspan x='812' dy='23'>damit aus Parallelität kein</tspan><tspan x='812' dy='23'>unkontrollierter Wildwuchs</tspan><tspan x='812' dy='23'>wird.</tspan></text>
+  <text x='812' y='416' font-family='Inter, Arial, Helvetica, sans-serif' font-size='27' font-weight='700' fill='#0f544d'>Absicherung</text>
+  <rect x='812' y='434' width='78' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
+  <rect x='898' y='434' width='86' height='28' rx='14' fill='rgba(15,84,77,0.06)'/>
+  <text x='835' y='453' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Review</text>
+  <text x='923' y='453' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Freigabe</text>
+  <text x='812' y='490' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='400' fill='#55746f'><tspan x='812' dy='0'>Vor dem Merge werden Tests,</tspan><tspan x='812' dy='20'>Review und Freigabe</tspan><tspan x='812' dy='20'>gebündelt, damit aus</tspan><tspan x='812' dy='20'>Parallelität kein</tspan><tspan x='812' dy='20'>unkontrollierter Wildwuchs</tspan><tspan x='812' dy='20'>wird.</tspan></text>
 
-  <text x='108' y='612' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>Operativer Effekt</text>
-  <rect x='108' y='632' width='988' height='56' rx='28' fill='rgba(15,84,77,0.05)' stroke='rgba(15,84,77,0.10)'/>
-  <rect x='132' y='644' width='214' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
-  <rect x='360' y='644' width='198' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
-  <rect x='572' y='644' width='230' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
-  <rect x='816' y='644' width='220' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
-  <text x='168' y='665' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#0f544d'>Kontext bleibt sichtbar</text>
-  <text x='401' y='665' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#0f544d'>Status wird prüfbar</text>
-  <text x='614' y='665' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#0f544d'>Parallelität bleibt kontrolliert</text>
-  <text x='861' y='665' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#0f544d'>Review wird entlastet</text>
+  <text x='108' y='632' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>Operativer Effekt</text>
+  <rect x='108' y='648' width='988' height='52' rx='26' fill='rgba(15,84,77,0.05)' stroke='rgba(15,84,77,0.10)'/>
+  <rect x='132' y='659' width='214' height='30' rx='15' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
+  <rect x='360' y='659' width='198' height='30' rx='15' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
+  <rect x='572' y='659' width='230' height='30' rx='15' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
+  <rect x='816' y='659' width='220' height='30' rx='15' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
+  <text x='168' y='679' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#0f544d'>Kontext bleibt sichtbar</text>
+  <text x='401' y='679' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#0f544d'>Status wird prüfbar</text>
+  <text x='614' y='679' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#0f544d'>Parallelität bleibt kontrolliert</text>
+  <text x='861' y='679' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#0f544d'>Review wird entlastet</text>
 </svg>
