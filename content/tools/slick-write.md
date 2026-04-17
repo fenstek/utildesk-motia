@@ -2,10 +2,10 @@
 slug: slick-write
 title: Slick Write
 category: Produktivität
-price_model: "Freemium"
+price_model: Freemium
 tags: [writing, productivity]
 official_url: "https://www.slickwrite.com/"
-popularity: 0
+popularity: 15
 ---
 
 # Slick Write

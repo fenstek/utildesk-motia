@@ -5,7 +5,7 @@ category: Audio
 price_model: Kostenlos
 tags: [analytics, data-visualization, google]
 official_url: "https://lookerstudio.google.com/overview"
-popularity: 0
+popularity: 34
 ---
 
 # Looker Studio

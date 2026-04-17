@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["design", "image", "social-media"]
 official_url: "https://snappa.com/"
-popularity: 11
+popularity: 13
 ---
 
 # Snappa

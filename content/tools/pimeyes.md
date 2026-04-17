@@ -2,12 +2,12 @@
 slug: pimeyes
 title: PimEyes
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["design", "marketing"]
-official_url: 'https://pimeyes.com'
-affiliate_url: 'https://pimeyes.com'
-created_at: "2026-02-11"
-popularity: 0
+official_url: "https://pimeyes.com"
+affiliate_url: "https://pimeyes.com"
+created_at: 2026-02-11
+popularity: 22
 ---
 
 # PimEyes

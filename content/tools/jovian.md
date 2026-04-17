@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [education, automation, data, analytics]
 official_url: "https://jovian.com/"
-popularity: 33
+popularity: 85
 ---
 
 # Jovian

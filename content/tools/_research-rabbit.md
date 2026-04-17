@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://www.researchrabbit.ai/"
-popularity: 16
+popularity: 19
 ---
 
 # Research Rabbit
