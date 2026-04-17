@@ -2,10 +2,10 @@
 slug: kofax-rpa
 title: Kofax RPA
 category: Automation
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [automation, workflow, no-code]
 official_url: "https://www.tungstenautomation.com/products/rpa"
-popularity: 0
+popularity: 38
 ---
 
 # Kofax RPA

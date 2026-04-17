@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.dedoose.com/"
-popularity: 49
+popularity: 53
 ---
 
 # Dedoose
