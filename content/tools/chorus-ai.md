@@ -1,10 +1,11 @@
 ---
-slug: "chorus-ai"
-title: "Chorus.ai"
-category: "AI"
-price_model: "Abonnement"
+slug: chorus-ai
+title: Chorus.ai
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://chorus-ai.org/"
+popularity: 0
 ---
 
 # Chorus.ai

@@ -1,10 +1,11 @@
 ---
-slug: "getresponse"
-title: "GetResponse"
-category: "AI"
-price_model: "Abonnement"
+slug: getresponse
+title: GetResponse
+category: AI
+price_model: Abonnement
 tags: [assistant,automation,workflow]
 official_url: "https://www.getresponse.com/"
+popularity: 0
 ---
 
 # GetResponse

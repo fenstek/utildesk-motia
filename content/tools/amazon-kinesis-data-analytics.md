@@ -1,10 +1,11 @@
 ---
-slug: "amazon-kinesis-data-analytics"
-title: "Amazon Kinesis Data Analytics"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: amazon-kinesis-data-analytics
+title: Amazon Kinesis Data Analytics
+category: AI
+price_model: Nutzungsbasiert
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
+popularity: 0
 ---
 
 # Amazon Kinesis Data Analytics

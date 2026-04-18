@@ -1,10 +1,11 @@
 ---
-slug: "apache-spark-streaming"
-title: "Apache Spark Streaming"
-category: "AI"
-price_model: "Open Source"
+slug: apache-spark-streaming
+title: Apache Spark Streaming
+category: AI
+price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://spark.apache.org/docs/latest/streaming-programming-guide.html"
+popularity: 0
 ---
 
 # Apache Spark Streaming

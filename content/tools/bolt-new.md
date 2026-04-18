@@ -5,7 +5,7 @@ category: Developer
 price_model: 
 tags: ["coding", "developer-tools"]
 official_url: "https://bolt.new"
-popularity: 62
+popularity: 64
 ---
 
 # Bolt.new

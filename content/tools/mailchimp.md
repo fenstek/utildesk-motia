@@ -1,10 +1,11 @@
 ---
-slug: "mailchimp"
-title: "Mailchimp"
-category: "AI"
-price_model: "Freemium"
+slug: mailchimp
+title: Mailchimp
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://mailchimp.com/de/"
+popularity: 0
 ---
 
 # Mailchimp

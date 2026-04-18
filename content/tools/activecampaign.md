@@ -1,10 +1,11 @@
 ---
-slug: "activecampaign"
-title: "ActiveCampaign"
-category: "AI"
-price_model: "Abonnement"
+slug: activecampaign
+title: ActiveCampaign
+category: AI
+price_model: Abonnement
 tags: [marketing, workflow]
 official_url: "https://www.activecampaign.com/"
+popularity: 0
 ---
 
 # ActiveCampaign
