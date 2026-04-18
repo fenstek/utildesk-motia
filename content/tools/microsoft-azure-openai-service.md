@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["assistant", "chatbot", "education"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview"
-popularity: 84
+popularity: 29
 ---
 
 # Microsoft Azure OpenAI Service

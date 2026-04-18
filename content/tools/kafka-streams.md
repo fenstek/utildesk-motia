@@ -1,10 +1,11 @@
 ---
-slug: "kafka-streams"
-title: "Kafka Streams"
-category: "AI"
-price_model: "Open Source"
+slug: kafka-streams
+title: Kafka Streams
+category: AI
+price_model: Open Source
 tags: [assistant,automation,workflow]
 official_url: "https://kafka.apache.org/documentation/streams/"
+popularity: 0
 ---
 
 # Kafka Streams

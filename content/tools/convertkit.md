@@ -1,10 +1,11 @@
 ---
-slug: "convertkit"
-title: "ConvertKit"
-category: "AI"
-price_model: "Abonnement"
+slug: convertkit
+title: ConvertKit
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://kit.com/"
+popularity: 0
 ---
 
 # ConvertKit

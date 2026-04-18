@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [data, analytics, education, productivity, automation]
 official_url: "https://elicit.com/"
-popularity: 51
+popularity: 53
 ---
 
 # Elicit

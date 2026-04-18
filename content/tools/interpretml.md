@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [ml, explainability, ai]
 official_url: "https://interpret.ml/"
-popularity: 41
+popularity: 42
 ---
 
 # InterpretML

@@ -1,10 +1,11 @@
 ---
-slug: "grain"
-title: "Grain"
-category: "AI"
-price_model: "Je nach Plan"
+slug: grain
+title: Grain
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://grain.com/"
+popularity: 0
 ---
 
 # Grain
