@@ -1,10 +1,11 @@
 ---
-slug: "dollify"
-title: "Dollify"
-category: "AI"
-price_model: "Freemium"
+slug: dollify
+title: Dollify
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://dollify.ai/"
+popularity: 0
 ---
 
 # Dollify

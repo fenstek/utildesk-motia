@@ -1,10 +1,11 @@
 ---
-slug: "twist"
-title: "Twist"
-category: "AI"
-price_model: "Je nach Plan"
+slug: twist
+title: Twist
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://twist.com/"
+popularity: 0
 ---
 
 # Twist

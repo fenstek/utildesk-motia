@@ -1,10 +1,11 @@
 ---
-slug: "certify"
-title: "Certify"
-category: "AI"
-price_model: "Je nach Plan"
+slug: certify
+title: Certify
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.emburse.com/products/certify-is-professional"
+popularity: 0
 ---
 
 # Certify

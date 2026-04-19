@@ -1,10 +1,11 @@
 ---
-slug: "amd-instinct-gpu"
-title: "AMD Instinct GPU"
-category: "AI"
-price_model: "Je nach Plan"
+slug: amd-instinct-gpu
+title: AMD Instinct GPU
+category: AI
+price_model: Je nach Plan
 tags: [assistant,automation,workflow]
 official_url: "https://www.amd.com/en/products/accelerators/instinct.html"
+popularity: 0
 ---
 
 # AMD Instinct GPU

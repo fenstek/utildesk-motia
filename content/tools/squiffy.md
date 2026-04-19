@@ -1,10 +1,11 @@
 ---
-slug: "squiffy"
-title: "Squiffy"
-category: "AI"
-price_model: "Je nach Plan"
+slug: squiffy
+title: Squiffy
+category: AI
+price_model: Je nach Plan
 tags: [design,workflow]
 official_url: "https://squiffy.com/"
+popularity: 0
 ---
 
 # Squiffy

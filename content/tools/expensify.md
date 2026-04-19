@@ -1,10 +1,11 @@
 ---
-slug: "expensify"
-title: "Expensify"
-category: "AI"
-price_model: "Abonnement"
+slug: expensify
+title: Expensify
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.expensify.com/"
+popularity: 0
 ---
 
 # Expensify

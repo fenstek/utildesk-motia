@@ -1,10 +1,11 @@
 ---
-slug: "intel-habana-labs-gaudi"
-title: "Intel Habana Labs Gaudi"
-category: "AI"
-price_model: ""
+slug: intel-habana-labs-gaudi
+title: Intel Habana Labs Gaudi
+category: AI
+price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html"
+popularity: 0
 ---
 
 # Intel Habana Labs Gaudi

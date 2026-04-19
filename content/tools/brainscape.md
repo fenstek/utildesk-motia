@@ -1,10 +1,11 @@
 ---
-slug: "brainscape"
-title: "Brainscape"
-category: "AI"
-price_model: "Freemium"
+slug: brainscape
+title: Brainscape
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.brainscape.com/"
+popularity: 0
 ---
 
 # Brainscape

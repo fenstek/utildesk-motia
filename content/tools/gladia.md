@@ -1,10 +1,11 @@
 ---
-slug: "gladia"
-title: "Gladia"
-category: "AI"
-price_model: "Je nach Plan"
+slug: gladia
+title: Gladia
+category: AI
+price_model: Je nach Plan
 tags: [ai, assistant, automation, workflow]
 official_url: "https://www.gladia.com/"
+popularity: 0
 ---
 
 # Gladia

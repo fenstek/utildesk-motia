@@ -1,10 +1,11 @@
 ---
-slug: "ispring-suite"
-title: "iSpring Suite"
-category: "AI"
-price_model: "Abonnement"
+slug: ispring-suite
+title: iSpring Suite
+category: AI
+price_model: Abonnement
 tags: [design, workflow]
 official_url: "https://www.ispringsolutions.com/"
+popularity: 0
 ---
 
 # iSpring Suite

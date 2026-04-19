@@ -1,10 +1,11 @@
 ---
-slug: "avatoon"
-title: "Avatoon"
-category: "AI"
-price_model: "Freemium"
+slug: avatoon
+title: Avatoon
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://avatoon.net/"
+popularity: 0
 ---
 
 # Avatoon

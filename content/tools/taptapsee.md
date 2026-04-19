@@ -1,10 +1,11 @@
 ---
-slug: "taptapsee"
-title: "TapTapSee"
-category: "AI"
-price_model: "Freemium"
+slug: taptapsee
+title: TapTapSee
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://taptapsee.com/"
+popularity: 0
 ---
 
 # TapTapSee
