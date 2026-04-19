@@ -1,10 +1,11 @@
 ---
-slug: "sap-concur-expense"
-title: "SAP Concur Expense"
-category: "AI"
-price_model: "Abonnement"
+slug: sap-concur-expense
+title: SAP Concur Expense
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.concur.com/products/concur-expense?cookie_preferences=gdpr"
+popularity: 0
 ---
 
 # SAP Concur Expense

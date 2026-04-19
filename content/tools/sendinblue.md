@@ -1,10 +1,11 @@
 ---
-slug: "sendinblue"
-title: "Sendinblue"
-category: "AI"
-price_model: "Abonnement, Freemium"
+slug: sendinblue
+title: Sendinblue
+category: AI
+price_model: Abonnement, Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.brevo.com/"
+popularity: 0
 ---
 
 # Sendinblue

@@ -1,10 +1,11 @@
 ---
-slug: "be-my-eyes"
-title: "Be My Eyes"
-category: "AI"
-price_model: "Kostenlos"
+slug: be-my-eyes
+title: Be My Eyes
+category: AI
+price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://be-my-eyes.com/"
+popularity: 0
 ---
 
 # Be My Eyes

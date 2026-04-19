@@ -1,10 +1,11 @@
 ---
-slug: "ink-by-inkle"
-title: "Ink by Inkle"
-category: "AI"
-price_model: ""
+slug: ink-by-inkle
+title: Ink by Inkle
+category: AI
+price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://www.inklestudios.com/ink/"
+popularity: 0
 ---
 
 # Ink by Inkle

@@ -1,10 +1,11 @@
 ---
-slug: "faceq"
-title: "FaceQ"
-category: "AI"
-price_model: ""
+slug: faceq
+title: FaceQ
+category: AI
+price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://faceq.com/"
+popularity: 0
 ---
 
 # FaceQ

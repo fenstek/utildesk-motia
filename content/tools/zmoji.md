@@ -1,10 +1,11 @@
 ---
-slug: "zmoji"
-title: "Zmoji"
-category: "AI"
-price_model: "Je nach Plan"
+slug: zmoji
+title: Zmoji
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.zmoji.me/"
+popularity: 0
 ---
 
 # Zmoji

@@ -1,10 +1,11 @@
 ---
-slug: "google-tasks"
-title: "Google Tasks"
-category: "AI"
-price_model: "Kostenlos"
+slug: google-tasks
+title: Google Tasks
+category: AI
+price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftasks.google.com%2F&dsh=S84780699%3A1776384015389420&followup=https%3A%2F%2Ftasks.google.com%2F&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AT1y2_WcenzjXfxF9bZy7XkLkO9vWKXVapmfKtvBdFbh4sfANXkw8jfDfneVKd_7ecDn5lq5AJ6xwg"
+popularity: 0
 ---
 
 # Google Tasks

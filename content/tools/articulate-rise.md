@@ -1,10 +1,11 @@
 ---
-slug: "articulate-rise"
-title: "Articulate Rise"
-category: "AI"
-price_model: "Abonnement"
+slug: articulate-rise
+title: Articulate Rise
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.articulate.com/360/rise/"
+popularity: 0
 ---
 
 # Articulate Rise

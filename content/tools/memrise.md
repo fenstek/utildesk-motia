@@ -1,10 +1,11 @@
 ---
-slug: "memrise"
-title: "Memrise"
-category: "AI"
-price_model: "Freemium"
+slug: memrise
+title: Memrise
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.memrise.com/"
+popularity: 0
 ---
 
 # Memrise

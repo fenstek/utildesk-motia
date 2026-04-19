@@ -1,10 +1,11 @@
 ---
-slug: "elucidat"
-title: "Elucidat"
-category: "AI"
-price_model: "Abonnement"
+slug: elucidat
+title: Elucidat
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.elucidat.com/"
+popularity: 0
 ---
 
 # Elucidat

@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-to-do"
-title: "Microsoft To Do"
-category: "AI"
-price_model: "Kostenlos"
+slug: microsoft-to-do
+title: Microsoft To Do
+category: AI
+price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app"
+popularity: 0
 ---
 
 # Microsoft To Do

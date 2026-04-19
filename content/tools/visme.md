@@ -1,10 +1,11 @@
 ---
-slug: "visme"
-title: "Visme"
-category: "AI"
-price_model: "Freemium, Abonnement"
+slug: visme
+title: Visme
+category: AI
+price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.visme.co/"
+popularity: 0
 ---
 
 # Visme

@@ -1,10 +1,11 @@
 ---
-slug: "ren-py"
-title: "Ren’Py"
-category: "AI"
-price_model: "Open Source"
+slug: ren-py
+title: Ren’Py
+category: AI
+price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://www.renpy.org/"
+popularity: 0
 ---
 
 # Ren’Py

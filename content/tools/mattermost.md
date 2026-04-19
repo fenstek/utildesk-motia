@@ -1,10 +1,11 @@
 ---
-slug: "mattermost"
-title: "Mattermost"
-category: "AI"
-price_model: "Freemium, Abonnement, Individuelles Angebot"
+slug: mattermost
+title: Mattermost
+category: AI
+price_model: Freemium, Abonnement, Individuelles Angebot
 tags: [assistant,automation,workflow]
 official_url: "https://mattermost.com/"
+popularity: 0
 ---
 
 # Mattermost

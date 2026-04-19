@@ -1,10 +1,11 @@
 ---
-slug: "talentlms"
-title: "TalentLMS"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: talentlms
+title: TalentLMS
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [assistant,automation,workflow]
 official_url: "https://www.talentlms.com/"
+popularity: 0
 ---
 
 # TalentLMS
