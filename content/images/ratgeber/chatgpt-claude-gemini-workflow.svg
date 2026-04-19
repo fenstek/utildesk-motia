@@ -1,103 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820" role="img" aria-label="Vergleich typischer Einsatzszenarien">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f4f4eb"/>
-      <stop offset="100%" stop-color="#eef2ed"/>
-    </linearGradient>
-    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#176259"/>
-      <stop offset="100%" stop-color="#367b71"/>
-    </linearGradient>
-    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8faaa4"/>
-      <stop offset="100%" stop-color="#bec9c5"/>
-    </linearGradient>
-    <linearGradient id="sand" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#c8a35a"/>
-      <stop offset="100%" stop-color="#e0bc78"/>
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#1a1c17" flood-opacity="0.05"/>
-    </filter>
-  </defs>
+<svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg' text-rendering='geometricPrecision' shape-rendering='geometricPrecision'>
+  <rect width='1200' height='760' rx='44' fill='#f7f2e8'/>
+  <rect x='54' y='54' width='1092' height='668' rx='38' fill='#fffaf3' stroke='rgba(15,84,77,0.12)'/>
+  <text x='104' y='118' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='800' letter-spacing='3' fill='#0f544d'>EINSATZSZENARIEN IM ÜBERBLICK</text>
+  <text x='104' y='170' font-family='Inter, Arial, Helvetica, sans-serif' font-size='42' font-weight='700' fill='#171717'>Wer glänzt wann?</text>
+  <text x='104' y='206' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' fill='#55635d'>Eine ruhige Lesart für typische Workflows statt einer dekorativen Bestenliste.</text>
 
-  <rect width="1500" height="820" fill="url(#bg)"/>
-  <circle cx="1460" cy="60" r="200" fill="#17625906"/>
+  <rect x='84' y='232' width='1032' height='396' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/>
+  <rect x='84' y='232' width='1032' height='42' rx='30' fill='#f4efe6'/>
+  <rect x='84' y='250' width='1032' height='24' fill='#f4efe6'/>
 
-  <!-- Title -->
-  <text x="80" y="68" fill="#176259" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14" font-weight="800" letter-spacing="5">EINSATZSZENARIEN IM ÜBERBLICK</text>
-  <text x="80" y="128" fill="#1a1c17" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="52" font-weight="800" letter-spacing="-1.5">Wer glänzt wann?</text>
-  <text x="80" y="170" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="22">Typische Anwendungsfälle der drei Assistenten im direkten Vergleich.</text>
+  <text x='108' y='258' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='800' letter-spacing='1.2' fill='#171717'>ANWENDUNGSFALL</text>
+  <text x='472' y='258' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='800' letter-spacing='1.2' fill='#176259'>CHATGPT</text>
+  <text x='622' y='258' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='800' letter-spacing='1.2' fill='#7f9994'>CLAUDE</text>
+  <text x='772' y='258' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='800' letter-spacing='1.2' fill='#c79d4b'>GEMINI</text>
+  <text x='922' y='258' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='800' letter-spacing='1.2' fill='#171717'>KURZE LESART</text>
 
-  <!-- Table container -->
-  <g filter="url(#shadow)">
-    <rect x="80" y="206" width="1340" height="560" rx="28" fill="#ffffff"/>
+  <line x1='446' y1='274' x2='446' y2='628' stroke='rgba(15,84,77,0.08)' stroke-width='1'/>
+  <line x1='596' y1='274' x2='596' y2='628' stroke='rgba(15,84,77,0.08)' stroke-width='1'/>
+  <line x1='746' y1='274' x2='746' y2='628' stroke='rgba(15,84,77,0.08)' stroke-width='1'/>
+  <line x1='896' y1='274' x2='896' y2='628' stroke='rgba(15,84,77,0.08)' stroke-width='1'/>
 
-    <!-- Header row -->
-    <rect x="80" y="206" width="1340" height="60" rx="28" fill="#f4f4eb"/>
-    <rect x="80" y="234" width="1340" height="32" fill="#f4f4eb"/>
+  <rect x='84' y='264' width='1032' height='64' rx='20' fill='#ffffff'/><text x='108' y='290' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#171717'>Schnelle Entwürfe</text><text x='108' y='312' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#5c5f59'><tspan x='108' dy='0'>Mails, Ideen, erste Fassungen</tspan></text><circle cx='472' cy='296' r='5.5' fill='#176259' opacity='0.95'/><circle cx='490' cy='296' r='5.5' fill='#176259' opacity='0.95'/><circle cx='508' cy='296' r='5.5' fill='#176259' opacity='0.95'/><circle cx='526' cy='296' r='5.5' fill='#176259' opacity='0.95'/><circle cx='544' cy='296' r='5.5' fill='#176259' opacity='0.95'/><circle cx='622' cy='296' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='640' cy='296' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='658' cy='296' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='676' cy='296' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='694' cy='296' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='772' cy='296' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='790' cy='296' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='808' cy='296' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='826' cy='296' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='844' cy='296' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><text x='922' y='292' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#55635d'><tspan x='922' dy='0'>ChatGPT startet hier am</tspan><tspan x='922' dy='16'>schnellsten.</tspan></text><rect x='84' y='332' width='1032' height='64' rx='20' fill='#fbf8f2'/><text x='108' y='358' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#171717'>Lange Texte &amp; Analyse</text><text x='108' y='380' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#5c5f59'><tspan x='108' dy='0'>Recherche, Verdichtung,</tspan><tspan x='108' dy='16'>strukturierte Ausarbeitung</tspan></text><circle cx='472' cy='364' r='5.5' fill='#176259' opacity='0.95'/><circle cx='490' cy='364' r='5.5' fill='#176259' opacity='0.95'/><circle cx='508' cy='364' r='5.5' fill='#176259' opacity='0.95'/><circle cx='526' cy='364' r='5.5' fill='#176259' opacity='0.95'/><circle cx='544' cy='364' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='622' cy='364' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='640' cy='364' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='658' cy='364' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='676' cy='364' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='694' cy='364' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='772' cy='364' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='790' cy='364' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='808' cy='364' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='826' cy='364' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='844' cy='364' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><text x='922' y='360' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#55635d'><tspan x='922' dy='0'>Claude hält lange</tspan><tspan x='922' dy='16'>Gedankengänge stabil.</tspan></text><rect x='84' y='400' width='1032' height='64' rx='20' fill='#ffffff'/><text x='108' y='426' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#171717'>Code &amp; Entwicklung</text><text x='108' y='448' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#5c5f59'><tspan x='108' dy='0'>Debugging, Refactoring, Review</tspan></text><circle cx='472' cy='432' r='5.5' fill='#176259' opacity='0.95'/><circle cx='490' cy='432' r='5.5' fill='#176259' opacity='0.95'/><circle cx='508' cy='432' r='5.5' fill='#176259' opacity='0.95'/><circle cx='526' cy='432' r='5.5' fill='#176259' opacity='0.95'/><circle cx='544' cy='432' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='622' cy='432' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='640' cy='432' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='658' cy='432' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='676' cy='432' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='694' cy='432' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='772' cy='432' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='790' cy='432' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='808' cy='432' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='826' cy='432' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='844' cy='432' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><text x='922' y='428' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#55635d'><tspan x='922' dy='0'>Claude bleibt in</tspan><tspan x='922' dy='16'>komplexeren Schleifen</tspan></text><rect x='84' y='468' width='1032' height='64' rx='20' fill='#fbf8f2'/><text x='108' y='494' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#171717'>Google-Workflows</text><text x='108' y='516' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#5c5f59'><tspan x='108' dy='0'>Docs, Suche, Gmail, kollaborative</tspan><tspan x='108' dy='16'>Abläufe</tspan></text><circle cx='472' cy='500' r='5.5' fill='#176259' opacity='0.95'/><circle cx='490' cy='500' r='5.5' fill='#176259' opacity='0.95'/><circle cx='508' cy='500' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='526' cy='500' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='544' cy='500' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='622' cy='500' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='640' cy='500' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='658' cy='500' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='676' cy='500' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='694' cy='500' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='772' cy='500' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='790' cy='500' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='808' cy='500' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='826' cy='500' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='844' cy='500' r='5.5' fill='#c79d4b' opacity='0.95'/><text x='922' y='496' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#55635d'><tspan x='922' dy='0'>Gemini passt gut in</tspan><tspan x='922' dy='16'>Google-Workflows.</tspan></text><rect x='84' y='536' width='1032' height='64' rx='20' fill='#ffffff'/><text x='108' y='562' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#171717'>Recherche &amp; Verdichtung</text><text x='108' y='584' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#5c5f59'><tspan x='108' dy='0'>Quellen lesen, einordnen und in</tspan><tspan x='108' dy='16'>Text überführen</tspan></text><circle cx='472' cy='568' r='5.5' fill='#176259' opacity='0.95'/><circle cx='490' cy='568' r='5.5' fill='#176259' opacity='0.95'/><circle cx='508' cy='568' r='5.5' fill='#176259' opacity='0.95'/><circle cx='526' cy='568' r='5.5' fill='#176259' opacity='0.95'/><circle cx='544' cy='568' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='622' cy='568' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='640' cy='568' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='658' cy='568' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='676' cy='568' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='694' cy='568' r='5.5' fill='#7f9994' opacity='0.95'/><circle cx='772' cy='568' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='790' cy='568' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='808' cy='568' r='5.5' fill='#c79d4b' opacity='0.95'/><circle cx='826' cy='568' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><circle cx='844' cy='568' r='5.5' fill='rgba(15,84,77,0.12)' opacity='1'/><text x='922' y='564' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='400' fill='#55635d'><tspan x='922' dy='0'>Claude wirkt bei tiefer</tspan><tspan x='922' dy='16'>Recherche am ruhigsten.</tspan></text>
 
-    <!-- Header labels -->
-    <text x="110" y="247" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">ANWENDUNGSFALL</text>
-    <text x="540" y="247" fill="#176259" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">CHATGPT</text>
-    <text x="820" y="247" fill="#8faaa4" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">CLAUDE</text>
-    <text x="1100" y="247" fill="#c8a35a" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="800" letter-spacing="1">GEMINI</text>
-
-    <!-- Vertical dividers -->
-    <line x1="500" y1="266" x2="500" y2="766" stroke="#e8ede9" stroke-width="1"/>
-    <line x1="780" y1="266" x2="780" y2="766" stroke="#e8ede9" stroke-width="1"/>
-    <line x1="1060" y1="266" x2="1060" y2="766" stroke="#e8ede9" stroke-width="1"/>
-
-    <!-- Row 1: Schnelles Schreiben -->
-    <rect x="80" y="266" width="1340" height="80" fill="#ffffff"/>
-    <text x="108" y="298" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Schnelles Schreiben</text>
-    <text x="108" y="322" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Entwürfe, Mails, Posts</text>
-    <text x="518" y="312" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
-    <text x="798" y="312" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
-    <text x="1078" y="312" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
-
-    <!-- Row 2 -->
-    <rect x="80" y="346" width="1340" height="80" fill="#fafaf6"/>
-    <text x="108" y="378" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Lange Texte &amp; Analyse</text>
-    <text x="108" y="402" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Berichte, Verträge, Recherche</text>
-    <text x="518" y="392" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
-    <text x="798" y="392" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
-    <text x="1078" y="392" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
-
-    <!-- Row 3 -->
-    <rect x="80" y="426" width="1340" height="80" fill="#ffffff"/>
-    <text x="108" y="458" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Code &amp; Entwicklung</text>
-    <text x="108" y="482" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Debugging, Refactoring, Reviews</text>
-    <text x="518" y="472" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
-    <text x="798" y="472" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
-    <text x="1078" y="472" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
-
-    <!-- Row 4 -->
-    <rect x="80" y="506" width="1340" height="80" fill="#fafaf6"/>
-    <text x="108" y="538" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Kreativarbeit</text>
-    <text x="108" y="562" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Brainstorming, Storys, Konzepte</text>
-    <text x="518" y="552" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
-    <text x="798" y="552" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
-    <text x="1078" y="552" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
-
-    <!-- Row 5 -->
-    <rect x="80" y="586" width="1340" height="80" fill="#ffffff"/>
-    <text x="108" y="618" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Google-Workflows</text>
-    <text x="108" y="642" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Docs, Sheets, Gmail, Search</text>
-    <text x="518" y="632" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★☆☆☆</text>
-    <text x="798" y="632" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★☆☆☆</text>
-    <text x="1078" y="632" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★★★★</text>
-
-    <!-- Row 6 -->
-    <rect x="80" y="666" width="1340" height="100" rx="0" fill="#fafaf6"/>
-    <rect x="80" y="738" width="1340" height="28" rx="28" fill="#fafaf6"/>
-    <text x="108" y="700" fill="#1a1c17" font-family="Plus Jakarta Sans, sans-serif" font-size="17" font-weight="700">Datenschutz &amp; Kontrolle</text>
-    <text x="108" y="724" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">Sensible Daten, Enterprise</text>
-    <text x="518" y="712" fill="#176259" font-family="Inter, sans-serif" font-size="22">★★★☆☆</text>
-    <text x="798" y="712" fill="#8faaa4" font-family="Inter, sans-serif" font-size="22">★★★★☆</text>
-    <text x="1078" y="712" fill="#c8a35a" font-family="Inter, sans-serif" font-size="22">★★☆☆☆</text>
-  </g>
-
-  <!-- Legend -->
-  <text x="80" y="800" fill="#5f5e5e" font-family="Inter, sans-serif" font-size="15">★★★★★ Sehr stark  ·  ★★★★☆ Stark  ·  ★★★☆☆ Gut  ·  ★★☆☆☆ Eingeschränkt</text>
+  <line x1='84' y1='628' x2='1116' y2='628' stroke='rgba(15,84,77,0.08)' stroke-width='2'/>
+  <rect x='104' y='642' width='224' height='44' rx='22' fill='rgba(23,98,89,0.10)'/><circle cx='128' cy='664' r='8' fill='#176259'/><text x='148' y='659' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#171717'>ChatGPT</text><text x='148' y='677' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55635d'>Der Allrounder</text><rect x='356' y='642' width='224' height='44' rx='22' fill='rgba(127,153,148,0.14)'/><circle cx='380' cy='664' r='8' fill='#7f9994'/><text x='400' y='659' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#171717'>Claude</text><text x='400' y='677' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55635d'>Der Tiefenarbeiter</text><rect x='608' y='642' width='224' height='44' rx='22' fill='rgba(199,157,75,0.16)'/><circle cx='632' cy='664' r='8' fill='#c79d4b'/><text x='652' y='659' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#171717'>Gemini</text><text x='652' y='677' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='#55635d'>Der Ökosystem-Fit</text>
+  <rect x='860' y='638' width='236' height='52' rx='22' fill='rgba(15,84,77,0.06)'/>
+  <text x='886' y='656' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Skala 1 bis 5</text>
+  <text x='886' y='671' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='400' fill='#55635d'><tspan x='886' dy='0'>Mehr Punkte bedeuten</tspan><tspan x='886' dy='14'>stärkeren Fit im jeweiligen</tspan></text>
+  <circle cx='1086' cy='112' r='14' fill='#d7a35c' opacity='0.92'/>
 </svg>

@@ -1,0 +1,79 @@
+<svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg' text-rendering='geometricPrecision' shape-rendering='geometricPrecision'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#fbf6ee'/>
+      <stop offset='100%' stop-color='#eadfcf'/>
+    </linearGradient>
+    <linearGradient id='panel' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#0f544d'/>
+      <stop offset='100%' stop-color='#16766b'/>
+    </linearGradient>
+    <filter id='shadow' x='-20%' y='-20%' width='140%' height='160%'>
+      <feDropShadow dx='0' dy='12' stdDeviation='20' flood-color='#0f544d' flood-opacity='0.10'/>
+    </filter>
+    <filter id='soft' x='-20%' y='-20%' width='140%' height='160%'>
+      <feDropShadow dx='0' dy='6' stdDeviation='12' flood-color='#0f544d' flood-opacity='0.08'/>
+    </filter>
+  </defs>
+  <rect width='1200' height='760' rx='44' fill='url(#bg)'/>
+  <rect x='46' y='46' width='1108' height='668' rx='40' fill='#fffaf3' stroke='rgba(15,84,77,0.08)'/>
+
+  <rect x='94' y='90' width='214' height='42' rx='21' fill='rgba(15,84,77,0.06)'/>
+  <text x='125' y='117' font-family='Inter, Arial, Helvetica, sans-serif' font-size='21' font-weight='700' fill='#0f544d'>KI-Orchestrierung</text>
+
+  <rect x='104' y='166' width='242' height='182' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <text x='138' y='214' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>AUFTRAG</text>
+  <text x='138' y='252' font-family='Inter, Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#0f544d'>Spezifikation</text>
+  <text x='138' y='286' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' fill='#55746f'>Ziele, Grenzen und</text>
+  <text x='138' y='312' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' fill='#55746f'>Akzeptanzkriterien</text>
+  <rect x='138' y='322' width='70' height='30' rx='15' fill='rgba(15,84,77,0.06)'/>
+  <rect x='216' y='322' width='88' height='30' rx='15' fill='rgba(15,84,77,0.06)'/>
+  <text x='159' y='342' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Ziele</text>
+  <text x='242' y='342' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Grenzen</text>
+
+  <rect x='388' y='128' width='424' height='258' rx='36' fill='url(#panel)' filter='url(#shadow)'/>
+  <rect x='438' y='168' width='134' height='30' rx='15' fill='rgba(255,250,243,0.16)'/>
+  <text x='462' y='188' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#fffaf3'>Kontrollschicht</text>
+  <text x='438' y='238' font-family='Inter, Arial, Helvetica, sans-serif' font-size='32' font-weight='700' fill='#fffaf3'><tspan x='438' dy='0'>Planung, Priorisierung</tspan><tspan x='438' dy='38'>und Verifikation</tspan></text>
+  <text x='438' y='334' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='400' fill='rgba(255,250,243,0.84)'><tspan x='438' dy='0'>Der operative Layer zwischen Briefing,</tspan><tspan x='438' dy='24'>Agentenlauf und Merge.</tspan></text>
+  <rect x='438' y='355' width='112' height='9' rx='4.5' fill='rgba(255,250,243,0.30)'/>
+  <rect x='558' y='355' width='74' height='9' rx='4.5' fill='rgba(255,250,243,0.18)'/>
+  <rect x='640' y='355' width='104' height='9' rx='4.5' fill='rgba(255,250,243,0.24)'/>
+
+  <rect x='854' y='166' width='242' height='182' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <text x='888' y='214' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>FREIGABE</text>
+  <text x='888' y='252' font-family='Inter, Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#0f544d'>Review</text>
+  <text x='888' y='286' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' fill='#55746f'>Checks, Feedback und</text>
+  <text x='888' y='312' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' fill='#55746f'>Merge-Entscheidung</text>
+  <rect x='888' y='322' width='74' height='30' rx='15' fill='rgba(15,84,77,0.06)'/>
+  <rect x='970' y='322' width='90' height='30' rx='15' fill='rgba(15,84,77,0.06)'/>
+  <text x='910' y='342' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Checks</text>
+  <text x='994' y='342' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Merge</text>
+
+  <path d='M346 258 C370 258 382 257 404 257' stroke='rgba(15,84,77,0.14)' stroke-width='5' fill='none' stroke-linecap='round'/>
+  <polygon points='404,257 390,248 390,266' fill='rgba(15,84,77,0.22)'/>
+  <path d='M812 257 C834 257 846 258 870 258' stroke='rgba(15,84,77,0.14)' stroke-width='5' fill='none' stroke-linecap='round'/>
+  <polygon points='870,258 856,249 856,267' fill='rgba(15,84,77,0.22)'/>
+
+  <rect x='94' y='436' width='1012' height='218' rx='34' fill='rgba(15,84,77,0.045)' stroke='rgba(15,84,77,0.08)'/>
+  <text x='138' y='484' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' font-weight='700' fill='#0f544d'>OPERATIVE SPUR</text>
+  <text x='138' y='524' font-family='Inter, Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#0f544d'>Parallelisierte Arbeit mit klarer Kontrolle</text>
+  <text x='138' y='556' font-family='Inter, Arial, Helvetica, sans-serif' font-size='17' fill='#55746f'>Mehrere Agenten arbeiten in getrennten Kontexten, der Kontroll-Layer hält Status, Qualität und Abhängigkeiten zusammen.</text>
+
+  <rect x='138' y='584' width='280' height='64' rx='22' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='460' y='584' width='280' height='64' rx='22' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <rect x='782' y='584' width='280' height='64' rx='22' fill='#ffffff' stroke='rgba(15,84,77,0.10)' filter='url(#soft)'/>
+  <circle cx='170' cy='616' r='10' fill='#0f544d'/>
+  <circle cx='492' cy='616' r='10' fill='#0f544d'/>
+  <circle cx='814' cy='616' r='10' fill='#0f544d'/>
+  <text x='192' y='609' font-family='Inter, Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agent A</text>
+  <text x='192' y='632' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' fill='#55746f'>Implementierung</text>
+  <text x='514' y='609' font-family='Inter, Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agent B</text>
+  <text x='514' y='632' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' fill='#55746f'>Tests und Qualität</text>
+  <text x='836' y='609' font-family='Inter, Arial, Helvetica, sans-serif' font-size='20' font-weight='700' fill='#0f544d'>Agent C</text>
+  <text x='836' y='632' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' fill='#55746f'>Dokumentation</text>
+
+  <path d='M276 580 C320 520 406 454 470 410' stroke='rgba(15,84,77,0.14)' stroke-width='4' fill='none' stroke-linecap='round'/>
+  <path d='M600 580 C600 514 600 452 600 410' stroke='rgba(15,84,77,0.14)' stroke-width='4' fill='none' stroke-linecap='round'/>
+  <path d='M924 580 C880 520 794 454 730 410' stroke='rgba(15,84,77,0.14)' stroke-width='4' fill='none' stroke-linecap='round'/>
+</svg>
