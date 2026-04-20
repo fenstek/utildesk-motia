@@ -1,10 +1,11 @@
 ---
-slug: "amazon-athena"
-title: "Amazon Athena"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: amazon-athena
+title: Amazon Athena
+category: AI
+price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://aws.amazon.com/athena/"
+popularity: 0
 ---
 
 # Amazon Athena

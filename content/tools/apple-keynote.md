@@ -1,10 +1,11 @@
 ---
-slug: "apple-keynote"
-title: "Apple Keynote"
-category: "AI"
-price_model: "Kostenlos"
+slug: apple-keynote
+title: Apple Keynote
+category: AI
+price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://support.apple.com/keynote"
+popularity: 0
 ---
 
 # Apple Keynote

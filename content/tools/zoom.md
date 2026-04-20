@@ -1,10 +1,11 @@
 ---
-slug: "zoom"
-title: "Zoom"
-category: "AI"
-price_model: "Freemium"
+slug: zoom
+title: Zoom
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.zoom.com/"
+popularity: 0
 ---
 
 # Zoom

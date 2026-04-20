@@ -1,10 +1,11 @@
 ---
-slug: "amazon-rekognition-video"
-title: "Amazon Rekognition Video"
-category: "Video"
-price_model: "Nutzungsbasiert"
+slug: amazon-rekognition-video
+title: Amazon Rekognition Video
+category: Video
+price_model: Nutzungsbasiert
 tags: [video,workflow]
 official_url: "https://aws.amazon.com/rekognition/video-features/"
+popularity: 0
 ---
 
 # Amazon Rekognition Video

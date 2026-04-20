@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-video-intelligence"
-title: "Google Cloud Video Intelligence"
-category: "Video"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-video-intelligence
+title: Google Cloud Video Intelligence
+category: Video
+price_model: Nutzungsbasiert
 tags: [video,workflow]
 official_url: "https://cloud.google.com/video-intelligence"
+popularity: 0
 ---
 
 # Google Cloud Video Intelligence

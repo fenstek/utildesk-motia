@@ -1,10 +1,11 @@
 ---
-slug: "clickhouse"
-title: "ClickHouse"
-category: "AI"
-price_model: "Open Source"
+slug: clickhouse
+title: ClickHouse
+category: AI
+price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://clickhouse.com/"
+popularity: 0
 ---
 
 # ClickHouse

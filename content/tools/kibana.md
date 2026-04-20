@@ -1,10 +1,11 @@
 ---
-slug: "kibana"
-title: "Kibana"
-category: "AI"
-price_model: "Abonnement, Open Source"
+slug: kibana
+title: Kibana
+category: AI
+price_model: Abonnement, Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://www.elastic.co/kibana"
+popularity: 0
 ---
 
 # Kibana

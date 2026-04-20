@@ -1,10 +1,11 @@
 ---
-slug: "runai"
-title: "RunAI"
-category: "AI"
-price_model: "Je nach Plan"
+slug: runai
+title: RunAI
+category: AI
+price_model: Je nach Plan
 tags: [ai, assistant, automation, workflow]
 official_url: "https://runai.com/"
+popularity: 0
 ---
 
 # RunAI

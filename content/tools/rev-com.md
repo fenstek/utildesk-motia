@@ -1,10 +1,11 @@
 ---
-slug: "rev-com"
-title: "Rev.com"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: rev-com
+title: Rev.com
+category: AI
+price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://www.rev.com/"
+popularity: 0
 ---
 
 # Rev.com

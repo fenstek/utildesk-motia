@@ -1,10 +1,11 @@
 ---
-slug: "apache-spark-structured-streaming"
-title: "Apache Spark Structured Streaming"
-category: "AI"
-price_model: "Open Source"
+slug: apache-spark-structured-streaming
+title: Apache Spark Structured Streaming
+category: AI
+price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html"
+popularity: 0
 ---
 
 # Apache Spark Structured Streaming

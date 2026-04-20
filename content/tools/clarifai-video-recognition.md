@@ -1,10 +1,11 @@
 ---
-slug: "clarifai-video-recognition"
-title: "Clarifai Video Recognition"
-category: "Video"
-price_model: "Je nach Plan"
+slug: clarifai-video-recognition
+title: Clarifai Video Recognition
+category: Video
+price_model: Je nach Plan
 tags: [video, workflow]
 official_url: "https://www.clarifai.com/"
+popularity: 0
 ---
 
 # Clarifai Video Recognition

@@ -1,10 +1,11 @@
 ---
-slug: "sync-com"
-title: "Sync.com"
-category: "AI"
-price_model: "Abonnement, Freemium"
+slug: sync-com
+title: Sync.com
+category: AI
+price_model: Abonnement, Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.sync.com/"
+popularity: 0
 ---
 
 # Sync.com

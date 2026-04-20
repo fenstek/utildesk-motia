@@ -1,10 +1,11 @@
 ---
-slug: "hubspot-crm"
-title: "HubSpot CRM"
-category: "AI"
-price_model: "Freemium"
+slug: hubspot-crm
+title: HubSpot CRM
+category: AI
+price_model: Freemium
 tags: [crm, workflow]
 official_url: "https://www.hubspot.com/products/crm"
+popularity: 0
 ---
 
 # HubSpot CRM

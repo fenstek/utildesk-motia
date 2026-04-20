@@ -1,10 +1,11 @@
 ---
-slug: "mixmax"
-title: "Mixmax"
-category: "AI"
-price_model: "Abonnement"
+slug: mixmax
+title: Mixmax
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.mixmax.com/"
+popularity: 0
 ---
 
 # Mixmax

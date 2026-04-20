@@ -1,10 +1,11 @@
 ---
-slug: "systran-translation-api"
-title: "SYSTRAN Translation API"
-category: "AI"
-price_model: "Je nach Plan"
+slug: systran-translation-api
+title: SYSTRAN Translation API
+category: AI
+price_model: Je nach Plan
 tags: [api, translation]
 official_url: "https://www.systransoft.com/translation-products/translate-api/"
+popularity: 0
 ---
 
 # SYSTRAN Translation API
