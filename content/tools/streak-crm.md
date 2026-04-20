@@ -1,10 +1,11 @@
 ---
-slug: "streak-crm"
-title: "Streak CRM"
-category: "AI"
-price_model: "Freemium"
+slug: streak-crm
+title: Streak CRM
+category: AI
+price_model: Freemium
 tags: [crm, workflow]
 official_url: "https://www.streak.com/"
+popularity: 0
 ---
 
 # Streak CRM

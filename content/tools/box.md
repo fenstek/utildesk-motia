@@ -1,10 +1,11 @@
 ---
-slug: "box"
-title: "Box"
-category: "AI"
-price_model: "Je nach Plan"
+slug: box
+title: Box
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.box.com/"
+popularity: 0
 ---
 
 # Box

@@ -1,10 +1,11 @@
 ---
-slug: "confluent-platform"
-title: "Confluent Platform"
-category: "AI"
-price_model: "Je nach Plan"
+slug: confluent-platform
+title: Confluent Platform
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.confluent.io/product/confluent-platform/"
+popularity: 0
 ---
 
 # Confluent Platform

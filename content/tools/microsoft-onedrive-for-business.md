@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-onedrive-for-business"
-title: "Microsoft OneDrive for Business"
-category: "AI"
-price_model: "Abonnement"
+slug: microsoft-onedrive-for-business
+title: Microsoft OneDrive for Business
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/business/online-cloud-storage"
+popularity: 0
 ---
 
 # Microsoft OneDrive for Business

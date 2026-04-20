@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [ai,design,vector,creative,automation]
 official_url: "https://www.coreldraw.com/"
-popularity: 57
+popularity: 56
 ---
 
 # CorelDRAW

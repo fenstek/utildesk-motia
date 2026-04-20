@@ -1,10 +1,11 @@
 ---
-slug: "transistor"
-title: "Transistor"
-category: "AI"
-price_model: "Abonnement"
+slug: transistor
+title: Transistor
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://transistor.com/"
+popularity: 0
 ---
 
 # Transistor

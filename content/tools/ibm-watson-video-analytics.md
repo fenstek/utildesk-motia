@@ -1,10 +1,11 @@
 ---
-slug: "ibm-watson-video-analytics"
-title: "IBM Watson Video Analytics"
-category: "Video"
-price_model: "Je nach Plan"
+slug: ibm-watson-video-analytics
+title: IBM Watson Video Analytics
+category: Video
+price_model: Je nach Plan
 tags: [video, analytics]
 official_url: "https://www.ibm.com/products/watsonx"
+popularity: 0
 ---
 
 # IBM Watson Video Analytics

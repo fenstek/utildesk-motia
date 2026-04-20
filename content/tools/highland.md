@@ -1,10 +1,11 @@
 ---
-slug: "highland"
-title: "Highland"
-category: "AI"
-price_model: ""
+slug: highland
+title: Highland
+category: AI
+price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://johnaugust.com/apps/highland"
+popularity: 0
 ---
 
 # Highland

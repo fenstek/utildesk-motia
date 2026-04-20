@@ -1,10 +1,11 @@
 ---
-slug: "cypress"
-title: "Cypress"
-category: "AI"
-price_model: "Je nach Plan"
+slug: cypress
+title: Cypress
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.cypress.io/"
+popularity: 0
 ---
 
 # Cypress

@@ -1,10 +1,11 @@
 ---
-slug: "eli5"
-title: "ELI5"
-category: "AI"
-price_model: ""
+slug: eli5
+title: ELI5
+category: AI
+price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://eli5.readthedocs.io/en/latest/"
+popularity: 0
 ---
 
 # ELI5

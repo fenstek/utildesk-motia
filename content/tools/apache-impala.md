@@ -1,10 +1,11 @@
 ---
-slug: "apache-impala"
-title: "Apache Impala"
-category: "AI"
-price_model: "Open Source"
+slug: apache-impala
+title: Apache Impala
+category: AI
+price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://impala.apache.org/"
+popularity: 0
 ---
 
 # Apache Impala

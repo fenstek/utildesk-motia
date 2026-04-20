@@ -1,10 +1,11 @@
 ---
-slug: "apache-spark-sql"
-title: "Apache Spark SQL"
-category: "AI"
-price_model: "Open Source"
+slug: apache-spark-sql
+title: Apache Spark SQL
+category: AI
+price_model: Open Source
 tags: [data,workflow]
 official_url: "https://spark.apache.org/sql/"
+popularity: 0
 ---
 
 # Apache Spark SQL

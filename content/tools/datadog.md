@@ -1,10 +1,11 @@
 ---
-slug: "datadog"
-title: "Datadog"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: datadog
+title: Datadog
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [data, workflow]
 official_url: "https://www.datadoghq.com/"
+popularity: 0
 ---
 
 # Datadog

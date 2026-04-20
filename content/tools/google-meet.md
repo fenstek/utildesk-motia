@@ -1,10 +1,11 @@
 ---
-slug: "google-meet"
-title: "Google Meet"
-category: "AI"
-price_model: "Freemium"
+slug: google-meet
+title: Google Meet
+category: AI
+price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://workspace.google.com/products/meet/"
+popularity: 0
 ---
 
 # Google Meet

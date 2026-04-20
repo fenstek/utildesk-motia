@@ -1,10 +1,11 @@
 ---
-slug: "tresorit"
-title: "Tresorit"
-category: "AI"
-price_model: "Abonnement"
+slug: tresorit
+title: Tresorit
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://tresorit.com/"
+popularity: 0
 ---
 
 # Tresorit

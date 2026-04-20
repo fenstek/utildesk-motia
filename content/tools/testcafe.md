@@ -1,10 +1,11 @@
 ---
-slug: "testcafe"
-title: "TestCafe"
-category: "AI"
-price_model: "Abonnement"
+slug: testcafe
+title: TestCafe
+category: AI
+price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://testcafe.io/"
+popularity: 0
 ---
 
 # TestCafe
