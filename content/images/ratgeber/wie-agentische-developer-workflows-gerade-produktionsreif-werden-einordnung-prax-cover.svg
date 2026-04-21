@@ -1,0 +1,76 @@
+<svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg' text-rendering='geometricPrecision' shape-rendering='geometricPrecision'>
+  <defs>
+    <linearGradient id='workflowCoverBg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#0d2f2b'/>
+      <stop offset='100%' stop-color='#0f544d'/>
+    </linearGradient>
+    <linearGradient id='workflowCanvas' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#fbf6ee'/>
+      <stop offset='100%' stop-color='#efe4d4'/>
+    </linearGradient>
+    <linearGradient id='workflowPanel' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='rgba(255,250,243,0.16)'/>
+      <stop offset='100%' stop-color='rgba(255,250,243,0.05)'/>
+    </linearGradient>
+    <filter id='workflowShadow' x='-20%' y='-20%' width='140%' height='160%'>
+      <feDropShadow dx='0' dy='16' stdDeviation='22' flood-color='#0a221f' flood-opacity='0.22'/>
+    </filter>
+    <filter id='softGlow' x='-20%' y='-20%' width='140%' height='160%'>
+      <feDropShadow dx='0' dy='8' stdDeviation='16' flood-color='#d58f49' flood-opacity='0.22'/>
+    </filter>
+  </defs>
+  <rect width='1200' height='760' rx='44' fill='#f7f2e8'/>
+  <rect x='58' y='58' width='1084' height='644' rx='40' fill='url(#workflowCanvas)' stroke='rgba(15,84,77,0.08)'/>
+  <rect x='86' y='86' width='1028' height='588' rx='34' fill='url(#workflowCoverBg)'/>
+  <circle cx='980' cy='188' r='92' fill='rgba(213,143,73,0.10)'/>
+  <circle cx='888' cy='604' r='148' fill='rgba(255,250,243,0.07)'/>
+
+  <rect x='108' y='114' width='164' height='34' rx='17' fill='rgba(255,250,243,0.14)'/>
+  <text x='132' y='137' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>Developer Workflow</text>
+  <text x='108' y='208' font-family='Inter, Arial, Helvetica, sans-serif' font-size='44' font-weight='700' fill='#fffaf3'><tspan x='108' dy='0'>agentische</tspan><tspan x='108' dy='48'>Developer-Workflows</tspan><tspan x='108' dy='48'>gerade</tspan></text>
+  <text x='108' y='386' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='400' fill='rgba(255,250,243,0.84)'><tspan x='108' dy='0'>Den Trend einordnen, die Mechanik</tspan><tspan x='108' dy='24'>erklären und die Folgen für Teams</tspan><tspan x='108' dy='24'>greifbar machen</tspan></text>
+  <text x='108' y='560' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#d58f49'>Von der Spezifikation bis zum Merge</text>
+  <text x='108' y='588' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='rgba(255,250,243,0.72)'>Nicht als Schaubild-Tabelle, sondern als redaktionelle Szene für produktive Agentenarbeit.</text>
+  <rect x='110' y='618' width='88' height='34' rx='17' fill='rgba(255,250,243,0.14)' stroke='rgba(255,250,243,0.14)'/><text x='130' y='640' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#fffaf3'>IDE</text><rect x='210' y='618' width='88' height='34' rx='17' fill='rgba(255,250,243,0.14)' stroke='rgba(255,250,243,0.14)'/><text x='230' y='640' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#fffaf3'>CLI</text><rect x='310' y='618' width='91' height='34' rx='17' fill='rgba(255,250,243,0.14)' stroke='rgba(255,250,243,0.14)'/><text x='330' y='640' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#fffaf3'>Kontext</text><rect x='413' y='618' width='136' height='34' rx='17' fill='rgba(255,250,243,0.14)' stroke='rgba(255,250,243,0.14)'/><text x='433' y='640' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='#fffaf3'>Verifikation</text>
+
+  <g filter='url(#workflowShadow)'>
+    <rect x='620' y='118' width='432' height='252' rx='28' fill='#102926' stroke='rgba(255,250,243,0.14)'/>
+    <rect x='620' y='118' width='432' height='42' rx='28' fill='rgba(255,250,243,0.08)'/>
+    <circle cx='650' cy='139' r='7' fill='#ff7f66'/>
+    <circle cx='672' cy='139' r='7' fill='#ffd166'/>
+    <circle cx='694' cy='139' r='7' fill='#5fd08a'/>
+    <text x='724' y='144' font-family='Inter, Arial, Helvetica, sans-serif' font-size='14' font-weight='700' fill='rgba(255,250,243,0.82)'>IDE + Kontext</text>
+    <rect x='652' y='184' width='122' height='24' rx='12' fill='rgba(255,250,243,0.10)'/>
+    <text x='676' y='200' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='700' fill='#fffaf3'>IDE</text>
+    <rect x='652' y='228' width='152' height='12' rx='6' fill='rgba(255,250,243,0.12)'/>
+    <rect x='652' y='252' width='282' height='12' rx='6' fill='rgba(255,250,243,0.18)'/>
+    <rect x='652' y='276' width='238' height='12' rx='6' fill='rgba(255,250,243,0.14)'/>
+    <rect x='652' y='304' width='168' height='12' rx='6' fill='rgba(255,250,243,0.10)'/>
+    <rect x='916' y='214' width='98' height='98' rx='24' fill='rgba(213,143,73,0.16)' stroke='rgba(213,143,73,0.24)'/>
+    <text x='942' y='252' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='700' fill='#fffaf3'>Kontext</text>
+    <text x='936' y='278' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' fill='rgba(255,250,243,0.76)'>sichtbar</text>
+  </g>
+
+  <g filter='url(#workflowShadow)'>
+    <rect x='676' y='404' width='244' height='164' rx='26' fill='#142e2b' stroke='rgba(255,250,243,0.12)'/>
+    <text x='706' y='444' font-family='JetBrains Mono, Consolas, monospace' font-size='15' font-weight='700' fill='#d58f49'>CLI / Agentenlauf</text>
+    <text x='706' y='480' font-family='JetBrains Mono, Consolas, monospace' font-size='14' fill='rgba(255,250,243,0.78)'>&gt; plan task graph</text>
+    <text x='706' y='506' font-family='JetBrains Mono, Consolas, monospace' font-size='14' fill='rgba(255,250,243,0.78)'>&gt; run worker shards</text>
+    <text x='706' y='532' font-family='JetBrains Mono, Consolas, monospace' font-size='14' fill='rgba(255,250,243,0.78)'>&gt; collect checks</text>
+    <rect x='706' y='548' width='110' height='22' rx='11' fill='rgba(255,250,243,0.10)'/>
+    <text x='730' y='563' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='700' fill='#fffaf3'>CLI</text>
+  </g>
+
+  <g filter='url(#softGlow)'>
+    <rect x='938' y='390' width='122' height='204' rx='26' fill='#fffaf3' stroke='rgba(15,84,77,0.10)'/>
+    <text x='964' y='434' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' font-weight='700' fill='#0f544d'>Review</text>
+    <rect x='964' y='454' width='68' height='24' rx='12' fill='rgba(15,84,77,0.08)'/>
+    <text x='980' y='470' font-family='Inter, Arial, Helvetica, sans-serif' font-size='12' font-weight='700' fill='#0f544d'>Verifikation</text>
+    <rect x='964' y='496' width='72' height='10' rx='5' fill='rgba(15,84,77,0.14)'/>
+    <rect x='964' y='518' width='54' height='10' rx='5' fill='rgba(15,84,77,0.10)'/>
+    <path d='M970 560 L994 584 L1030 536' stroke='#d58f49' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  </g>
+
+  <path d='M856 348 C856 376 822 392 798 404' stroke='rgba(255,250,243,0.26)' stroke-width='5' fill='none' stroke-linecap='round'/>
+  <path d='M920 312 C954 330 976 360 990 390' stroke='rgba(255,250,243,0.24)' stroke-width='5' fill='none' stroke-linecap='round'/>
+</svg>
