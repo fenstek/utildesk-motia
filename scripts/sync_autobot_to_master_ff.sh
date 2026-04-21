@@ -36,7 +36,7 @@ fi
 
 if git merge-base --is-ancestor "${REMOTE}/${DST_BRANCH}" "${REMOTE}/${SRC_BRANCH}"; then
   log "fast-forward push ${SRC_BRANCH}:${DST_BRANCH}"
-  git push "$REMOTE" "${SRC_BRANCH}:${DST_BRANCH}"
+  git push "$REMOTE" "refs/remotes/${REMOTE}/${SRC_BRANCH}:refs/heads/${DST_BRANCH}"
   log "sync complete"
   exit 0
 fi
