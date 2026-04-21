@@ -1,10 +1,11 @@
 ---
-slug: "youtrack"
-title: "YouTrack"
-category: "AI"
-price_model: "Abonnement"
+slug: youtrack
+title: YouTrack
+category: AI
+price_model: Abonnement
 tags: [project-management, collaboration, developer-tools]
 official_url: "https://www.jetbrains.com/youtrack/"
+popularity: 0
 ---
 
 # YouTrack

@@ -1,10 +1,11 @@
 ---
-slug: "datacamp"
-title: "DataCamp"
-category: "AI"
-price_model: "Abonnement"
+slug: datacamp
+title: DataCamp
+category: AI
+price_model: Abonnement
 tags: [education, data, machine-learning]
 official_url: "https://www.datacamp.com/"
+popularity: 0
 ---
 
 # DataCamp

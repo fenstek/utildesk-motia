@@ -1,10 +1,11 @@
 ---
-slug: "fastai"
-title: "Fastai"
-category: "AI"
-price_model: "Open Source"
+slug: fastai
+title: Fastai
+category: AI
+price_model: Open Source
 tags: [machine-learning, education, open-source]
 official_url: "https://www.fast.ai/"
+popularity: 0
 ---
 
 # Fastai

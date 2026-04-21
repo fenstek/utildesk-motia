@@ -1,10 +1,11 @@
 ---
-slug: "jsbin"
-title: "JSBin"
-category: "AI"
-price_model: "Open Source"
+slug: jsbin
+title: JSBin
+category: AI
+price_model: Open Source
 tags: [developer-tools, web, open-source]
 official_url: "https://jsbin.com/"
+popularity: 0
 ---
 
 # JSBin

@@ -1,10 +1,11 @@
 ---
-slug: "zeppelin"
-title: "Zeppelin"
-category: "AI"
-price_model: "Open Source"
+slug: zeppelin
+title: Zeppelin
+category: AI
+price_model: Open Source
 tags: [data, analytics, open-source]
 official_url: "https://zeppelin.apache.org/"
+popularity: 0
 ---
 
 # Zeppelin

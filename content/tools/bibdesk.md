@@ -1,10 +1,11 @@
 ---
-slug: "bibdesk"
-title: "BibDesk"
-category: "AI"
-price_model: "Open Source"
+slug: bibdesk
+title: BibDesk
+category: AI
+price_model: Open Source
 tags: [research, open-source, productivity]
 official_url: "https://bibdesk.sourceforge.io/"
+popularity: 0
 ---
 
 # BibDesk
