@@ -6,6 +6,7 @@ price_model: Nutzungsbasiert
 tags: [vision, ocr, ai]
 official_url: "https://cloud.google.com/vision"
 popularity: 0
+disabled: true
 ---
 
 # Google Cloud Vision API

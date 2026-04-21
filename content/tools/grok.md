@@ -54,7 +54,7 @@ Grok bietet ein Freemium-Preismodell an. Die Basisfunktionen sind kostenlos zug�
 
 ## Alternativen zu Grok
 
-- [OpenAI ChatGPT](/tools/openai-chatgpt/): Ein vielseitiges KI-Tool für Textgenerierung und -verarbeitung mit umfangreicher API-Unterstützung.
+- [ChatGPT](/tools/chatgpt/): Ein vielseitiges KI-Tool für Textgenerierung und -verarbeitung mit umfangreicher API-Unterstützung.
 - [Claude von Anthropic](/tools/claude-von-anthropic/): Fokus auf sichere und verständliche KI-Kommunikation, geeignet für Unternehmen.
 - [Cohere](/tools/cohere/): Plattform für natürliche Sprachverarbeitung mit Schwerpunkt auf individuelle Anpassbarkeit.
 - [AI21 Studio](/tools/ai21-studio/): Bietet leistungsstarke Sprachmodelle für kreative und geschäftliche Anwendungen.

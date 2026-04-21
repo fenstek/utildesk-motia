@@ -6,6 +6,7 @@ price_model: Open Source
 tags: [api, docs, development]
 official_url: "https://swagger.io/"
 popularity: 0
+disabled: true
 ---
 
 # Swagger UI

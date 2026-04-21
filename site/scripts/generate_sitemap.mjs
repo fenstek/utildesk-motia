@@ -19,6 +19,7 @@ const DIST_TOOLS_DIR = join(DIST_DIR, 'tools');
 const DIST_CATEGORY_DIR = join(DIST_DIR, 'category');
 const DIST_RATGEBER_DIR = join(DIST_DIR, 'ratgeber');
 const OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
+const RESERVED_TOOL_SEGMENTS = new Set(['tag']);
 
 function escapeXml(str) {
   return String(str || '')
@@ -53,6 +54,9 @@ async function readBuiltTools() {
       }
 
       const slug = entry.name;
+      if (slug.startsWith('_') || RESERVED_TOOL_SEGMENTS.has(slug)) {
+        continue;
+      }
       const indexPath = join(DIST_TOOLS_DIR, slug, 'index.html');
 
       // Verify index.html exists

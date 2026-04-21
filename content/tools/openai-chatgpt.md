@@ -6,6 +6,7 @@ price_model: "Freemium"
 tags: [assistant, chatbot, writing, productivity, coding]
 official_url: "https://chatgpt.com/overview"
 popularity: 0
+disabled: true
 ---
 
 # OpenAI ChatGPT
