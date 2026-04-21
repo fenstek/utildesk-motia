@@ -1,10 +1,11 @@
 ---
-slug: "zabbix"
-title: "Zabbix"
-category: "AI"
-price_model: "Open Source"
+slug: zabbix
+title: Zabbix
+category: AI
+price_model: Open Source
 tags: [analytics, workflow]
 official_url: "https://www.zabbix.com/"
+popularity: 0
 ---
 
 # Zabbix

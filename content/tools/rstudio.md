@@ -1,10 +1,11 @@
 ---
-slug: "rstudio"
-title: "RStudio"
-category: "Audio"
-price_model: "Freemium"
+slug: rstudio
+title: RStudio
+category: Audio
+price_model: Freemium
 tags: [data, analytics, developer-tools]
 official_url: "https://posit.co/download/rstudio-desktop"
+popularity: 0
 ---
 
 # RStudio

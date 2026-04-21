@@ -1,10 +1,11 @@
 ---
-slug: "codepen"
-title: "CodePen"
-category: "Developer"
-price_model: "Freemium"
+slug: codepen
+title: CodePen
+category: Developer
+price_model: Freemium
 tags: [developer-tools, web, design]
 official_url: "https://codepen.io/"
+popularity: 0
 ---
 
 # CodePen

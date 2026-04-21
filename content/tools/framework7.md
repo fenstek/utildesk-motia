@@ -1,10 +1,11 @@
 ---
-slug: "framework7"
-title: "Framework7"
-category: "AI"
-price_model: "Open Source"
+slug: framework7
+title: Framework7
+category: AI
+price_model: Open Source
 tags: [developer-tools,mobile,web]
 official_url: "https://framework7.io/"
+popularity: 0
 ---
 
 # Framework7

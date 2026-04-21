@@ -1,10 +1,11 @@
 ---
-slug: "caffe"
-title: "Caffe"
-category: "AI"
-price_model: "Open Source"
+slug: caffe
+title: Caffe
+category: AI
+price_model: Open Source
 tags: [machine-learning, developer-tools, open-source]
 official_url: "https://caffe.berkeleyvision.org/"
+popularity: 0
 ---
 
 # Caffe

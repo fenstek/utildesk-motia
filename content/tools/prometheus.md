@@ -1,10 +1,11 @@
 ---
-slug: "prometheus"
-title: "Prometheus"
-category: "AI"
-price_model: "Je nach Plan"
+slug: prometheus
+title: Prometheus
+category: AI
+price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://prometheus.io/"
+popularity: 0
 ---
 
 # Prometheus

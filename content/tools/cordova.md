@@ -1,10 +1,11 @@
 ---
-slug: "cordova"
-title: "Cordova"
-category: "AI"
-price_model: "Open Source"
+slug: cordova
+title: Cordova
+category: AI
+price_model: Open Source
 tags: [developer-tools,mobile,open-source]
 official_url: "https://cordova.apache.org/"
+popularity: 0
 ---
 
 # Cordova

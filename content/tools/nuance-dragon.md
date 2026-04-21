@@ -1,10 +1,11 @@
 ---
-slug: "nuance-dragon"
-title: "Nuance Dragon"
-category: "AI"
-price_model: "Kostenpflichtig, Abonnement"
+slug: nuance-dragon
+title: Nuance Dragon
+category: AI
+price_model: Kostenpflichtig, Abonnement
 tags: [voice, transcription, productivity]
 official_url: "https://dragon.nuance.com/en-us/dragon"
+popularity: 0
 ---
 
 # Nuance Dragon

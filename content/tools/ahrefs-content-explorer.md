@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Je nach Plan
 tags: [seo, content, analytics]
 official_url: "https://ahrefs.com/content-explorer"
-popularity: 71
+popularity: 72
 ---
 
 # Ahrefs Content Explorer

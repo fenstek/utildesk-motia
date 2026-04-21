@@ -1,10 +1,11 @@
 ---
-slug: "liveagent"
-title: "LiveAgent"
-category: "AI"
-price_model: "Abonnement"
+slug: liveagent
+title: LiveAgent
+category: AI
+price_model: Abonnement
 tags: [customer-support, communication, crm]
 official_url: "https://www.liveagent.com/"
+popularity: 0
 ---
 
 # LiveAgent

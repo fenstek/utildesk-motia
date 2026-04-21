@@ -1,10 +1,11 @@
 ---
-slug: "aws-emr"
-title: "AWS EMR (Elastic MapReduce)"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: aws-emr
+title: AWS EMR (Elastic MapReduce)
+category: AI
+price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://aws.amazon.com/emr/"
+popularity: 0
 ---
 
 # AWS EMR (Elastic MapReduce)
