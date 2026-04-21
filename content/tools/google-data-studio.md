@@ -6,6 +6,7 @@ price_model: Kostenlos
 tags: ["data", "analytics", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
 popularity: 0
+disabled: true
 ---
 
 # Google Data Studio

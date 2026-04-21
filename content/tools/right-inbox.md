@@ -6,6 +6,7 @@ price_model: Freemium
 tags: [email-productivity, automation, scheduling]
 official_url: "https://www.rightinbox.com/"
 popularity: 0
+disabled: true
 ---
 
 # Right Inbox
