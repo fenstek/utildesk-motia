@@ -12,6 +12,19 @@ This script runs every 6 hours to:
 5. Auto-merge PR (if checks pass)
 6. Fast-forward sync `master` with merged changes
 
+## Scope Boundary
+
+`cron_publish_push.sh` is intentionally a `tools`-only publisher.
+
+It must not be used for `ratgeber` publication:
+
+- the script allowlists only `content/tools/*.md`;
+- any other changed path makes the run fail on purpose;
+- this protects the tools cron from accidental article imports in the same checkout.
+
+`Ratgeber` packages must be imported separately from a clean checkout based on current `origin/master`.
+See `docs/04_operations/ratgeber_publish.md`.
+
 ## Divergence Self-Heal
 
 ### Problem
