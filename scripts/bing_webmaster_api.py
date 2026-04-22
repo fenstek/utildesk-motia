@@ -10,16 +10,18 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import sys
+import re
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 
 DEFAULT_ENV_FILE = Path("secrets/bing-webmaster.env")
 DEFAULT_API_BASE = "https://ssl.bing.com/webmaster/api.svc/json"
+BING_DATE_RE = re.compile(r"^/Date\((?P<ms>-?\d+)(?:[+-]\d{4})?\)/$")
 
 
 def load_env_file(path: Path) -> dict[str, str]:
@@ -68,6 +70,16 @@ def unwrap_bing_json(payload: Any) -> Any:
     if isinstance(payload, dict) and "d" in payload:
         return payload["d"]
     return payload
+
+
+def parse_bing_date(raw: Any) -> str | None:
+    if not isinstance(raw, str):
+        return None
+    match = BING_DATE_RE.match(raw.strip())
+    if not match:
+        return None
+    milliseconds = int(match.group("ms"))
+    return datetime.fromtimestamp(milliseconds / 1000, tz=timezone.utc).isoformat()
 
 
 def call_bing_api(
@@ -186,6 +198,86 @@ def command_quota(settings: dict[str, str], site_url_override: str | None) -> No
     print_json(unwrap_bing_json(result))
 
 
+def command_sites(settings: dict[str, str]) -> None:
+    api_key = require_setting(settings, "BING_WEBMASTER_API_KEY", "Bing Webmaster API key")
+    api_base = settings["BING_WEBMASTER_API_BASE"]
+
+    result = call_bing_api(
+        api_base=api_base,
+        api_key=api_key,
+        method="GetUserSites",
+        http_method="GET",
+    )
+    print_json(unwrap_bing_json(result))
+
+
+def command_feeds(settings: dict[str, str], site_url_override: str | None) -> None:
+    api_key = require_setting(settings, "BING_WEBMASTER_API_KEY", "Bing Webmaster API key")
+    site_url = site_url_override or require_setting(
+        settings, "BING_WEBMASTER_SITE_URL", "Bing Webmaster site URL"
+    )
+    api_base = settings["BING_WEBMASTER_API_BASE"]
+
+    result = call_bing_api(
+        api_base=api_base,
+        api_key=api_key,
+        method="GetFeeds",
+        http_method="GET",
+        params={"siteUrl": site_url},
+    )
+    print_json(unwrap_bing_json(result))
+
+
+def command_crawl_summary(
+    settings: dict[str, str],
+    site_url_override: str | None,
+    days: int,
+) -> None:
+    if days <= 0:
+        raise SystemExit("--days must be greater than 0.")
+
+    api_key = require_setting(settings, "BING_WEBMASTER_API_KEY", "Bing Webmaster API key")
+    site_url = site_url_override or require_setting(
+        settings, "BING_WEBMASTER_SITE_URL", "Bing Webmaster site URL"
+    )
+    api_base = settings["BING_WEBMASTER_API_BASE"]
+
+    result = call_bing_api(
+        api_base=api_base,
+        api_key=api_key,
+        method="GetCrawlStats",
+        http_method="GET",
+        params={"siteUrl": site_url},
+    )
+    stats = unwrap_bing_json(result)
+    if not isinstance(stats, list) or not stats:
+        print_json({"siteUrl": site_url, "days": 0, "message": "No crawl stats returned."})
+        return
+
+    recent = stats[-days:]
+    summary = {
+        "siteUrl": site_url,
+        "days": len(recent),
+        "latestDateUtc": parse_bing_date(recent[-1].get("Date")),
+        "latestInIndex": recent[-1].get("InIndex"),
+        "avgCrawledPages": round(
+            sum(float(item.get("CrawledPages", 0)) for item in recent) / len(recent), 2
+        ),
+        "avg2xx": round(sum(float(item.get("Code2xx", 0)) for item in recent) / len(recent), 2),
+        "avg4xx": round(sum(float(item.get("Code4xx", 0)) for item in recent) / len(recent), 2),
+        "avgCrawlErrors": round(
+            sum(float(item.get("CrawlErrors", 0)) for item in recent) / len(recent), 2
+        ),
+        "max4xx": max(int(item.get("Code4xx", 0)) for item in recent),
+        "maxCrawlErrors": max(int(item.get("CrawlErrors", 0)) for item in recent),
+        "daysWithRobotsBlocks": sum(
+            1 for item in recent if int(item.get("BlockedByRobotsTxt", 0)) > 0
+        ),
+        "daysWith5xx": sum(1 for item in recent if int(item.get("Code5xx", 0)) > 0),
+    }
+    print_json(summary)
+
+
 def command_submit_url(
     settings: dict[str, str],
     site_url_override: str | None,
@@ -205,6 +297,39 @@ def command_submit_url(
         params={"siteUrl": site_url, "url": url},
     )
     print_json({"ok": True, "siteUrl": site_url, "url": url, "result": unwrap_bing_json(result)})
+
+
+def command_submit_batch(
+    settings: dict[str, str],
+    site_url_override: str | None,
+    urls: list[str],
+) -> None:
+    api_key = require_setting(settings, "BING_WEBMASTER_API_KEY", "Bing Webmaster API key")
+    site_url = site_url_override or require_setting(
+        settings, "BING_WEBMASTER_SITE_URL", "Bing Webmaster site URL"
+    )
+    api_base = settings["BING_WEBMASTER_API_BASE"]
+
+    final_urls = [item.strip() for item in urls if item.strip()]
+    if not final_urls:
+        raise SystemExit("Submit-batch requires at least one non-empty --url value.")
+
+    result = call_bing_api(
+        api_base=api_base,
+        api_key=api_key,
+        method="SubmitUrlBatch",
+        http_method="POST",
+        params={"siteUrl": site_url, "urlList": final_urls},
+    )
+    print_json(
+        {
+            "ok": True,
+            "siteUrl": site_url,
+            "count": len(final_urls),
+            "urls": final_urls,
+            "result": unwrap_bing_json(result),
+        }
+    )
 
 
 def command_submit_feed(
@@ -275,9 +400,42 @@ def build_parser() -> argparse.ArgumentParser:
     )
     add_common_args(quota)
 
+    sites = subparsers.add_parser(
+        "sites", help="List verified sites visible to the configured Bing API key."
+    )
+    sites.add_argument("--env-file", default=str(DEFAULT_ENV_FILE))
+
+    feeds = subparsers.add_parser(
+        "feeds", help="List feeds/sitemaps currently registered for the configured site."
+    )
+    add_common_args(feeds)
+
+    crawl_summary = subparsers.add_parser(
+        "crawl-summary",
+        help="Summarize recent Bing crawl stats for the configured site.",
+    )
+    add_common_args(crawl_summary)
+    crawl_summary.add_argument(
+        "--days",
+        type=int,
+        default=30,
+        help="How many most-recent days to summarize (default: 30).",
+    )
+
     submit_url = subparsers.add_parser("submit-url", help="Submit one URL to Bing.")
     add_common_args(submit_url)
     submit_url.add_argument("--url", required=True, help="Absolute URL to submit.")
+
+    submit_batch = subparsers.add_parser(
+        "submit-batch", help="Submit multiple canonical URLs to Bing in one request."
+    )
+    add_common_args(submit_batch)
+    submit_batch.add_argument(
+        "--url",
+        action="append",
+        required=True,
+        help="Absolute URL to submit. Repeat --url for multiple URLs.",
+    )
 
     submit_feed = subparsers.add_parser(
         "submit-feed", help="Submit sitemap/feed URL to Bing."
@@ -318,8 +476,16 @@ def main() -> int:
         command_smoke(settings, args.site_url)
     elif args.command == "quota":
         command_quota(settings, args.site_url)
+    elif args.command == "sites":
+        command_sites(settings)
+    elif args.command == "feeds":
+        command_feeds(settings, args.site_url)
+    elif args.command == "crawl-summary":
+        command_crawl_summary(settings, args.site_url, args.days)
     elif args.command == "submit-url":
         command_submit_url(settings, args.site_url, args.url)
+    elif args.command == "submit-batch":
+        command_submit_batch(settings, args.site_url, args.url)
     elif args.command == "submit-feed":
         command_submit_feed(settings, args.site_url, args.feed_url)
     elif args.command == "call":

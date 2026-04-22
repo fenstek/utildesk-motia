@@ -134,11 +134,17 @@ Safe local operational access to Bing Webmaster Tools for `tools.utildesk.de`, w
 
 ### Helper
 - `python scripts/bing_webmaster_api.py smoke`
+- `python scripts/bing_webmaster_api.py sites`
 - `python scripts/bing_webmaster_api.py quota`
+- `python scripts/bing_webmaster_api.py feeds`
+- `python scripts/bing_webmaster_api.py crawl-summary --days 30`
 - `python scripts/bing_webmaster_api.py submit-feed`
+- `python scripts/bing_webmaster_api.py submit-batch --url https://tools.utildesk.de/ --url https://tools.utildesk.de/ratgeber/`
 - `python scripts/bing_webmaster_api.py submit-url --url https://tools.utildesk.de/ratgeber/`
 
 ### Notes
 - The helper uses the Bing Webmaster API-key flow.
 - The secret file is git-ignored.
+- Use `sites` or `call --method GetUserSites` for verified-site listing; `GetSiteList` is not a working public JSON method.
+- Prefer submitting canonical HTML pages, not JSON/Markdown/feed/LLMS helper endpoints.
 - Bing currently does not expose a public URL Inspection API equivalent to GSC URL Inspection API.
