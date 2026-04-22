@@ -2,6 +2,8 @@
 .publish_paused
 secrets/
 node_modules/
+__pycache__/
+*.pyc
 content/images/tools/*.png
 # backups & logs
 *.bak.*

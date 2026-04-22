@@ -76,6 +76,23 @@
   - postbuild sitemap generation passed with `855` URLs;
   - generated output contains working `llms`, feed, catalog, Markdown, and page-level JSON artifacts.
 
+## 2026-04-22 Bing Webmaster Handoff
+
+- Prepared a safe local Bing Webmaster credential path for `tools.utildesk.de`:
+  - git-ignored secret file: `secrets/bing-webmaster.env`
+- Added helper script:
+  - `scripts/bing_webmaster_api.py`
+- Added runbook:
+  - `docs/04_operations/bing_webmaster_access.md`
+- Added script overview note:
+  - `scripts/README.md`
+- Local validation completed:
+  - `python -m py_compile scripts/bing_webmaster_api.py` passed
+  - `python scripts/bing_webmaster_api.py smoke` fails cleanly with a missing-key message until the real key is inserted
+- Also stored the local access note in the Codex SEO skill:
+  - `C:\Users\sserg\.codex\skills\tools-seo-master\references\bing-access.md`
+
+
 ## Release Note
 
 Если понадобится следующая article release:

@@ -121,3 +121,24 @@ Optional GPT-based chooser for `official_url` as fallback when deterministic URL
 - `scripts/propose_url_errors_patch.mjs` fixes only deterministic `official_url` errors: `http -> https`, and recovery from explicit URL fields already present in the snapshot.
 - QC eligibility: rows with status `blacklist`/`disabled` and duplicate-or-alias style statuses are skipped by `audit_sheet_snapshot.mjs`, counted in `skipped_*`, and do not block `AUDIT_PASS`.
 - URL policy exception: `https://huggingface.co/` is allowed as a valid platform root for the `hugging-face` row; generic-root blocking remains in place for hosts like `github.com`.
+
+---
+
+## Bing Webmaster Operations
+
+### Purpose
+Safe local operational access to Bing Webmaster Tools for `tools.utildesk.de`, without storing the real API key in git.
+
+### Secret File
+- Local only: `secrets/bing-webmaster.env`
+
+### Helper
+- `python scripts/bing_webmaster_api.py smoke`
+- `python scripts/bing_webmaster_api.py quota`
+- `python scripts/bing_webmaster_api.py submit-feed`
+- `python scripts/bing_webmaster_api.py submit-url --url https://tools.utildesk.de/ratgeber/`
+
+### Notes
+- The helper uses the Bing Webmaster API-key flow.
+- The secret file is git-ignored.
+- Bing currently does not expose a public URL Inspection API equivalent to GSC URL Inspection API.

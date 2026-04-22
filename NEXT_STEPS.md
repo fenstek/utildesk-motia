@@ -14,6 +14,10 @@
    - one sample `/api/tools/<slug>.json`
    - one sample `/api/ratgeber/<slug>.json`
 7. If we later expose a real server-readable search query contract, consider adding `SearchAction` to the `WebSite` schema. Do not add it before that.
+8. After the Bing Webmaster API key is inserted into `secrets/bing-webmaster.env`, run:
+   - `python scripts/bing_webmaster_api.py smoke`
+   - `python scripts/bing_webmaster_api.py submit-feed`
+   - and then verify Bing property access and sitemap submission state.
 
 1. Следующие `ratgeber`-статьи публиковать тем же отдельным clean-worktree flow.
 2. Дальше улучшать quality алгоритмов текста и иллюстраций на `opcl`, не смешивая эту работу с `tools`-cron.
