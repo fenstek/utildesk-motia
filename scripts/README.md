@@ -149,3 +149,23 @@ Safe local operational access to Bing Webmaster Tools for `tools.utildesk.de`, w
 - Prefer submitting canonical HTML pages, not JSON/Markdown/feed/LLMS helper endpoints.
 - For live noindex control of machine endpoints on Cloudflare Pages, update `site/functions/` alongside any `_headers` declarations.
 - Bing currently does not expose a public URL Inspection API equivalent to GSC URL Inspection API.
+
+---
+
+## IndexNow Operations
+
+### Purpose
+Fast URL-change notifications for canonical HTML pages on `tools.utildesk.de`.
+
+### Public Key File
+- `site/public/c8e698e7-44e8-41e1-86d5-594ba2697475.txt`
+
+### Helper
+- `python scripts/indexnow_submit.py smoke`
+- `python scripts/indexnow_submit.py submit-batch --url https://tools.utildesk.de/ --url https://tools.utildesk.de/ratgeber/ --wait-live`
+- `python scripts/indexnow_submit.py submit-git-range --rev-range HEAD~1..HEAD --wait-live`
+
+### Notes
+- IndexNow key is public by design and is not treated as a secret.
+- Submit canonical HTML pages only.
+- `scripts/cron_publish_push.sh` now includes a non-blocking post-deploy IndexNow step for tools releases.
