@@ -92,6 +92,45 @@
 - Also stored the local access note in the Codex SEO skill:
   - `C:\Users\sserg\.codex\skills\tools-seo-master\references\bing-access.md`
 
+## 2026-04-22 Bing SEO Completion Handoff
+
+- Verified Bing access with the real local key:
+  - `python scripts/bing_webmaster_api.py smoke`
+  - `python scripts/bing_webmaster_api.py sites`
+  - `python scripts/bing_webmaster_api.py feeds`
+  - `python scripts/bing_webmaster_api.py crawl-summary --days 30`
+- Confirmed root-cause findings:
+  - no active Bing crawl-issue cluster;
+  - no robots or `5xx` blocking in recent crawl stats;
+  - the remaining Bing mismatch was stale sitemap/feed state plus machine endpoints missing live `X-Robots-Tag`.
+- Shipped two production fixes:
+  - `site/public/_headers` now declares `X-Robots-Tag: noindex` for machine endpoints;
+  - Cloudflare Pages Functions now enforce that header live for:
+    - `/feed.xml`
+    - `/feed.json`
+    - `/llms.txt`
+    - `/llms-full.txt`
+    - `/api/*`
+    - `/markdown/*`
+- Improved Bing operations helper:
+  - added `sites`
+  - added `feeds`
+  - added `crawl-summary`
+  - added `submit-batch`
+  - corrected docs to use `GetUserSites`, not `GetSiteList`
+- Live production verification after deploy:
+  - machine endpoints now return `X-Robots-Tag: noindex`;
+  - normal HTML pages still return `200` without header-level `noindex` and keep the expected `index,follow` meta robots.
+- Bing re-submission completed after the live fix:
+  - sitemap re-submitted;
+  - batch submission sent for `/`, `/tools/`, `/tools/chatgpt/`, `/ratgeber/`, and the latest published article.
+- Bing feed state after re-submission:
+  - `GetFeedDetails` now shows `UrlCount = 855`
+  - `Status = Success`
+  - refreshed `Submitted` and `LastCrawled` timestamps on `2026-04-22`
+- Branch health after the manual SEO pass:
+  - `origin/master = origin/autobot = 2926dccb2dc760135835d681b41f71b6e93c571a`
+
 
 ## Release Note
 

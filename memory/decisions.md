@@ -34,3 +34,10 @@
 - Keep Bing Webmaster credentials local-only and git-ignored; never store the raw API key in repo-tracked files.
 - Prefer a local env-file plus helper script for Bing operations instead of browser-only workflows.
 - Treat Bing API coverage as partial compared to GSC: automate quota/submission/feed operations, but assume URL Inspection remains manual unless Microsoft exposes a public API later.
+- For `tools.utildesk.de`, treat Bing crawl health as primarily a live-site contract check:
+  - verify sitemap/feed state in Bing;
+  - verify machine endpoints are fetchable but `noindex`;
+  - verify canonical HTML pages stay indexable.
+- Do not rely on Astro endpoint response headers alone for `X-Robots-Tag` on Cloudflare Pages machine endpoints.
+- Enforce `X-Robots-Tag: noindex` for `/feed.*`, `/llms*.txt`, `/api/*`, and `/markdown/*` at the edge through `site/functions/`, with `_headers` kept only as a fallback/static declaration.
+- After manual SEO or article releases, re-align `origin/autobot` to `origin/master` so the tools publishing branch does not drift behind production.

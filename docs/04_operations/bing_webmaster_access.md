@@ -70,6 +70,7 @@ python scripts/bing_webmaster_api.py call --method GetUserSites
   - `/feed.json`
   - `/llms.txt`
   - `/llms-full.txt`
+- On Cloudflare Pages, treat `site/functions/` as the reliable live enforcement layer for those headers; keep `_headers` only as the static declaration/fallback.
 
 ## Important Limitation
 
