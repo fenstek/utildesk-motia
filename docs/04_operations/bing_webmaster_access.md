@@ -39,19 +39,37 @@ This runs a safe read-only validation against `GetUrlSubmissionQuota` for the co
 Useful follow-up commands:
 
 ```powershell
+python scripts/bing_webmaster_api.py sites
 python scripts/bing_webmaster_api.py quota
+python scripts/bing_webmaster_api.py feeds
+python scripts/bing_webmaster_api.py crawl-summary --days 30
 python scripts/bing_webmaster_api.py submit-feed
+python scripts/bing_webmaster_api.py submit-batch --url https://tools.utildesk.de/ --url https://tools.utildesk.de/ratgeber/
 python scripts/bing_webmaster_api.py submit-url --url https://tools.utildesk.de/ratgeber/
-python scripts/bing_webmaster_api.py call --method GetSiteList
+python scripts/bing_webmaster_api.py call --method GetUserSites
 ```
 
 ## What This Enables
 
 - validate that the key works
 - validate that `tools.utildesk.de` is available to the key owner
+- list verified sites and active sitemap/feed registrations
+- summarize recent crawl health from Bing's own crawl stats
 - inspect submission quota
 - resubmit sitemap/feed
-- submit important URLs directly
+- submit important URLs directly, one by one or in a batch
+
+## Current Audit Notes
+
+- Bing access is confirmed for `https://tools.utildesk.de`.
+- Bing currently keeps a stale sitemap snapshot with `UrlCount = 861`, while the live sitemap now contains `855` URLs.
+- The live site should keep machine-readable non-HTML endpoints fetchable but out of the normal search index via `X-Robots-Tag: noindex`:
+  - `/api/*`
+  - `/markdown/*`
+  - `/feed.xml`
+  - `/feed.json`
+  - `/llms.txt`
+  - `/llms-full.txt`
 
 ## Important Limitation
 
