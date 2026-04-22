@@ -7,6 +7,18 @@ import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildPublisherOrganization,
+  SITE_LANGUAGE,
+  SITE_URL,
+  toAbsoluteUrl,
+} from "../../lib/siteMeta";
+import {
+  buildOfferFromPriceModel,
+  extractFeatureList,
+  mapToolCategoryToSchemaCategory,
+} from "../../lib/machineReadable";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
@@ -303,22 +315,48 @@ const schemaDescription = data.description
       ? String(data.excerpt)
       : getExcerpt(content) || `${title} - Informationen, Features und Anwendungsfälle`;
 
+const metaDescription = schemaDescription.length > 160
+  ? `${schemaDescription.slice(0, 157).trimEnd()}...`
+  : schemaDescription;
+const featureList = extractFeatureList(content);
+const schemaCategory = mapToolCategoryToSchemaCategory(category, tags);
+const schemaOffer = buildOfferFromPriceModel(price_model);
+const canonicalUrl = `${SITE_URL}/tools/${slug}/`;
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Tools", url: `${SITE_URL}/tools/` },
+  { name: title, url: canonicalUrl },
+]);
+
 const softwareApplicationSchema = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": ["SoftwareApplication", "WebApplication"],
   "name": title,
-  "description": schemaDescription.slice(0, 500), // Limit to 500 chars
-  "url": `https://tools.utildesk.de/tools/${slug}/`,
+  "description": schemaDescription.slice(0, 500),
+  "url": canonicalUrl,
+  "mainEntityOfPage": canonicalUrl,
   "operatingSystem": "Web",
-  "applicationCategory": primaryCategory?.title || "AI Tool",
+  "applicationCategory": schemaCategory,
+  "applicationSubCategory": category || undefined,
+  "inLanguage": SITE_LANGUAGE,
+  "keywords": tags.length ? tags.join(", ") : undefined,
+  "featureList": featureList.length ? featureList : undefined,
+  "isAccessibleForFree": ["Kostenlos", "Freemium", "Open Source"].includes(String(price_model ?? "")),
+  "publisher": buildPublisherOrganization(),
+  "image": logoUrl ? toAbsoluteUrl(logoUrl) : undefined,
+  "offers": schemaOffer,
+  "about": tags.length ? tags.map((tag) => ({ "@type": "Thing", "name": tag })) : undefined,
   ...(official_url && official_url.startsWith("http") && { "sameAs": official_url })
 };
 ---
 
-<BaseLayout title={`${title} — Utildesk`} description={`${title} - Informationen, Features und Anwendungsfälle`}>
+<BaseLayout title={`${title} — Utildesk`} description={metaDescription}>
   <Fragment slot="head">
-    <link rel="canonical" href={`https://tools.utildesk.de/tools/${slug}/`} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/json" href={`/api/tools/${slug}.json`} title={`${title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={`/markdown/tools/${slug}.md`} title={`${title} (Markdown)`} />
     <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
   <!-- Breadcrumb -->

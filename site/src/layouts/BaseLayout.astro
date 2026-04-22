@@ -10,9 +10,18 @@ interface Props {
 
 
 
-const { title = "Utildesk", description = "Tools & Guides für AI, Automatisierung und Produktivität" } = Astro.props;
+const {
+  title = SITE_NAME,
+  description = SITE_DESCRIPTION,
+} = Astro.props;
 
 
+
+import {
+  DEFAULT_ROBOTS_CONTENT,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+} from "../lib/siteMeta";
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
@@ -35,6 +44,16 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="description" content={description} />
+    <meta name="robots" content={DEFAULT_ROBOTS_CONTENT} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="application-name" content={SITE_NAME} />
+    <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
 
     <meta name="generator" content={Astro.generator} />
 
@@ -45,6 +64,12 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="alternate" type="application/rss+xml" title="Utildesk Ratgeber Feed" href="/feed.xml" />
+    <link rel="alternate" type="application/feed+json" title="Utildesk Ratgeber JSON Feed" href="/feed.json" />
+    <link rel="alternate" type="application/json" title="Utildesk Tools Catalog" href="/api/tools.json" />
+    <link rel="alternate" type="application/json" title="Utildesk Ratgeber Catalog" href="/api/ratgeber.json" />
+    <link rel="alternate" type="text/plain" title="Utildesk AI manifest" href="/llms.txt" />
+    <link rel="alternate" type="text/plain" title="Utildesk AI full manifest" href="/llms-full.txt" />
 
     <script is:inline>
 
@@ -95,12 +120,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <header class="site-header">
 
       <div class="container">
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Hauptnavigation">
 
           <a href="/" class="brand">
 
@@ -164,7 +190,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
 
 
-    <main class="container">
+    <main id="main-content" class="container">
 
       <slot />
 

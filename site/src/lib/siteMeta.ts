@@ -1,0 +1,105 @@
+export const SITE_URL = "https://tools.utildesk.de";
+export const SITE_NAME = "Utildesk";
+export const SITE_DESCRIPTION =
+  "Kuratiertes Verzeichnis für AI-Tools, Automatisierung, Produktivität und redaktionelle Ratgeber.";
+export const SITE_LANGUAGE = "de-DE";
+export const ORGANIZATION_LOGO_PATH = "/logo-grid.svg";
+export const DEFAULT_ROBOTS_CONTENT =
+  "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
+
+export function toAbsoluteUrl(path = "/") {
+  if (!path) return SITE_URL;
+  if (/^https?:\/\//i.test(path)) return path;
+  return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
+export function buildPublisherOrganization() {
+  return {
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: toAbsoluteUrl(ORGANIZATION_LOGO_PATH),
+    },
+  };
+}
+
+export function buildOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    inLanguage: SITE_LANGUAGE,
+    logo: {
+      "@type": "ImageObject",
+      url: toAbsoluteUrl(ORGANIZATION_LOGO_PATH),
+    },
+  };
+}
+
+export function buildWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    inLanguage: SITE_LANGUAGE,
+    publisher: buildPublisherOrganization(),
+  };
+}
+
+export function buildCollectionPageSchema({
+  name,
+  description,
+  url,
+  about,
+  mainEntity,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  about?: string[];
+  mainEntity?: Record<string, unknown>;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    inLanguage: SITE_LANGUAGE,
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    ...(about?.length
+      ? {
+          about: about.map((item) => ({
+            "@type": "Thing",
+            name: item,
+          })),
+        }
+      : {}),
+    ...(mainEntity ? { mainEntity } : {}),
+  };
+}
+
+export function buildBreadcrumbSchema(
+  items: Array<{ name: string; url: string }>
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}

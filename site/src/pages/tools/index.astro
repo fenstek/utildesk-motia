@@ -7,10 +7,16 @@ import { execFileSync } from "node:child_process";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
+import { fromContent } from "../../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../lib/siteMeta";
 
-const toolsDir = join(process.cwd(), "content", "tools");
+const toolsDir = fromContent("tools");
 const files = (await readdir(toolsDir))
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
@@ -172,6 +178,29 @@ const sortedTags = Array.from(tagFrequency.entries())
   })
   .map(([tag]) => tag);
 const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 32);
+const toolsItemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Utildesk Tools",
+  numberOfItems: enabledTools.length,
+  itemListElement: enabledTools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+  })),
+};
+const toolsCollectionSchema = buildCollectionPageSchema({
+  name: "Utildesk Tools",
+  description: "Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.",
+  url: `${SITE_URL}/tools/`,
+  about: ["AI-Tools", "Produktivität", "Automatisierung"],
+  mainEntity: toolsItemListSchema,
+});
+const toolsBreadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Tools", url: `${SITE_URL}/tools/` },
+]);
 ---
 
 <BaseLayout
@@ -180,6 +209,9 @@ const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/tools/" />
+    <script type="application/ld+json" set:html={JSON.stringify(toolsCollectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(toolsItemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(toolsBreadcrumbSchema)} />
   </Fragment>
 
   <!-- Hero -->

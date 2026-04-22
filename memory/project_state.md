@@ -73,6 +73,33 @@
   - URL Inspection still shows stale historical states for some alias URLs and the newest `ratgeber` article;
   - this is recrawl lag, not a current live-site blocking issue.
 
+## 2026-04-22 AI Retrieval Readiness
+
+- The site now ships a dedicated machine-readable discovery layer for AI crawlers and agents:
+  - `/llms.txt`
+  - `/llms-full.txt`
+  - `/feed.xml`
+  - `/feed.json`
+  - `/api/tools.json`
+  - `/api/ratgeber.json`
+- Canonical content now also has page-level machine mirrors:
+  - `/markdown/tools/<slug>.md`
+  - `/markdown/ratgeber/<slug>.md`
+  - `/api/tools/<slug>.json`
+  - `/api/ratgeber/<slug>.json`
+- Key HTML pages now advertise these resources directly via `rel="alternate"` links.
+- Sitewide robots/meta defaults were hardened for modern search and AI retrieval:
+  - `index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1`
+  - explicit allow-groups in `robots.txt` for `OAI-SearchBot`, `GPTBot`, `ClaudeBot`, and `Google-Extended`
+- Non-HTML agent endpoints intentionally send `X-Robots-Tag: noindex` so they remain fetchable without polluting normal search index coverage.
+- JSON-LD coverage was expanded on homepage, tools index, category pages, tag pages, tool detail pages, and `ratgeber` pages.
+- Content loading is now resilient on Windows/non-symlink checkouts:
+  - `site/src/lib/contentRoot.mjs` resolves the real `content` root even when `site/content` is a plain pointer file instead of a symlink.
+- Verified local build after these changes:
+  - `npm --prefix site run build`
+  - `1132` pages built
+  - sitemap regenerated successfully with `855` URLs.
+
 - remote production head на момент публикации: `origin/master = 2130ee6`
 - локальная старая рабочая копия пользователя не является надёжным baseline для публикации
 - для manual content-release использовать отдельный чистый worktree от актуального `origin/master`

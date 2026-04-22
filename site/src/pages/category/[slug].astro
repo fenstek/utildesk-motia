@@ -6,7 +6,13 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
+import { fromContent } from "../../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../lib/siteMeta";
 
 export async function getStaticPaths() {
   return CATEGORIES.map((cat) => ({
@@ -22,7 +28,7 @@ if (!category) {
 }
 
 // Load tools matching this category
-const toolsDir = join(process.cwd(), "content", "tools");
+const toolsDir = fromContent("tools");
 const files = (await readdir(toolsDir)).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
 const stripMarkdown = (text: string) =>
@@ -122,6 +128,18 @@ const itemListSchema = {
     "url": `https://tools.utildesk.de/tools/${t.slug}/`
   }))
 };
+const categoryPageSchema = buildCollectionPageSchema({
+  name: category.title,
+  description: category.description,
+  url: `${SITE_URL}/category/${slug}/`,
+  about: [category.title, "AI-Tools", "Kategorie"],
+  mainEntity: itemListSchema,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Kategorien", url: `${SITE_URL}/category/` },
+  { name: category.title, url: `${SITE_URL}/category/${slug}/` },
+]);
 ---
 
 <BaseLayout
@@ -130,7 +148,9 @@ const itemListSchema = {
 >
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de/category/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryPageSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
   <div class="container">

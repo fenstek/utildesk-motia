@@ -1,6 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { listRatgeberEntries } from "../../lib/ratgeber";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../lib/siteMeta";
 
 const articles = await listRatgeberEntries();
 
@@ -26,6 +31,17 @@ const itemListSchema = {
     url: `https://tools.utildesk.de/ratgeber/${article.slug}/`,
   })),
 };
+const ratgeberCollectionSchema = buildCollectionPageSchema({
+  name: "Ratgeber",
+  description: "Vergleiche, Leitfäden und Einordnungen zu den wichtigsten KI-Tools und Workflows.",
+  url: `${SITE_URL}/ratgeber/`,
+  about: ["Ratgeber", "KI-Workflows", "Tool-Vergleiche"],
+  mainEntity: itemListSchema,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Ratgeber", url: `${SITE_URL}/ratgeber/` },
+]);
 ---
 
 <BaseLayout
@@ -34,7 +50,9 @@ const itemListSchema = {
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/ratgeber/" />
+    <script type="application/ld+json" set:html={JSON.stringify(ratgeberCollectionSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
   <section class="ratgeber-hero">
