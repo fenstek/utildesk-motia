@@ -26,6 +26,9 @@
 - import в этот репозиторий разрешён только для package со статусом `approved_for_publish`
 - для этого в репозитории есть `scripts/import_ratgeber_package.py`
 - безопасный publish-flow описан в `docs/04_operations/ratgeber_publish.md`
+- production rendering for `ratgeber` now treats the hero cover as a first-class article image:
+  - the top cover uses the shared lightbox flow, not just inline prose images;
+  - the cover is rendered in its natural aspect ratio instead of being forced into a wide `16 / 7` frame.
 
 ## Latest Published Change
 

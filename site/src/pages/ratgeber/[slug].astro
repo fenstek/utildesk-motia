@@ -125,7 +125,15 @@ const articleSchema = {
 
   {data.coverImage ? (
     <figure class="article-cover">
-      <img src={data.coverImage} alt={data.eyebrow || "Illustration"} loading="eager" />
+      <button
+        type="button"
+        class="article-cover-trigger js-lightbox-image"
+        data-lightbox-src={data.coverImage}
+        data-lightbox-alt={data.eyebrow || "Illustration"}
+        aria-label={`Illustration vergrößern: ${title}`}
+      >
+        <img src={data.coverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
+      </button>
     </figure>
   ) : null}
 
@@ -157,18 +165,48 @@ const articleSchema = {
   const lightbox = document.getElementById('img-lightbox') as HTMLDialogElement | null;
   const lbImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
   if (lightbox && lbImg) {
-    document.querySelectorAll('.ratgeber-prose img').forEach((img) => {
-      (img as HTMLElement).style.cursor = 'zoom-in';
-      img.addEventListener('click', () => {
-        lbImg.src = (img as HTMLImageElement).src;
-        lbImg.alt = (img as HTMLImageElement).alt;
-        lightbox.showModal();
-      });
+    const openLightbox = (src: string, alt: string) => {
+      if (!src) return;
+      lbImg.src = src;
+      lbImg.alt = alt;
+      lightbox.showModal();
+    };
+
+    const bindLightboxTarget = (node: Element) => {
+      const target = node as HTMLElement;
+      if (target.dataset.lightboxBound === 'true') return;
+
+      let src = '';
+      let alt = '';
+
+      if (node instanceof HTMLImageElement) {
+        src = node.currentSrc || node.src;
+        alt = node.alt;
+        node.style.cursor = 'zoom-in';
+      } else {
+        src = target.dataset.lightboxSrc || '';
+        alt = target.dataset.lightboxAlt || '';
+      }
+
+      if (!src) return;
+
+      target.dataset.lightboxBound = 'true';
+      target.addEventListener('click', () => openLightbox(src, alt));
+    };
+
+    document.querySelectorAll('.article-cover-trigger, .ratgeber-prose img').forEach((node) => {
+      bindLightboxTarget(node);
     });
+
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox) lightbox.close();
     });
     document.querySelector('.lightbox-close')?.addEventListener('click', () => lightbox.close());
+    lbImg.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('close', () => {
+      lbImg.src = '';
+      lbImg.alt = '';
+    });
   }
 </script>
 
@@ -268,18 +306,33 @@ const articleSchema = {
 
   /* Cover image — clean, no card */
   .article-cover {
-    margin: 32px 0 0;
+    margin: 36px 0 0;
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid rgba(190, 201, 197, 0.28);
     background: var(--surface-container-low);
+    box-shadow: 0 18px 36px rgba(18, 28, 24, 0.06);
+  }
+  .article-cover-trigger {
+    display: block;
+    width: 100%;
+    padding: clamp(8px, 1vw, 16px);
+    border: none;
+    margin: 0;
+    background: transparent;
+    cursor: zoom-in;
+    text-align: left;
+  }
+  .article-cover-trigger:focus-visible {
+    outline: 3px solid rgba(23, 98, 89, 0.32);
+    outline-offset: -3px;
   }
   .article-cover img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 7;
+    height: auto;
     object-fit: contain;
-    padding: 8px;
+    max-height: min(78vh, 880px);
   }
 
   /* Article body: prose + aside sidebar */
@@ -524,8 +577,12 @@ const articleSchema = {
       position: static;
       order: -1;
     }
+    .article-cover-trigger {
+      padding: 8px;
+    }
+
     .article-cover img {
-      aspect-ratio: 16 / 9;
+      max-height: none;
     }
   }
 </style>
