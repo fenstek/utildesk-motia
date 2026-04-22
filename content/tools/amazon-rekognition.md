@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["video", "automation"]
 official_url: "https://aws.amazon.com/rekognition/"
 created_at: 2026-02-13
-popularity: 67
+popularity: 69
 ---
 
 # Amazon Rekognition

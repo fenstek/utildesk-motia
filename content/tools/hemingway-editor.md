@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [writing, productivity, automation]
 official_url: "https://hemingwayapp.com/"
-popularity: 46
+popularity: 48
 ---
 
 # Hemingway Editor
