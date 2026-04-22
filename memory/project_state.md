@@ -142,6 +142,28 @@
 - HTML production pages remain indexable after the change:
   - homepage, tool detail pages, `ratgeber` index, and live articles still return `200` with normal `index,follow` meta robots.
 
+## 2026-04-23 IndexNow State
+
+- IndexNow is now enabled for `tools.utildesk.de`.
+- Public root verification key file:
+  - `https://tools.utildesk.de/c8e698e7-44e8-41e1-86d5-594ba2697475.txt`
+  - source file in repo: `site/public/c8e698e7-44e8-41e1-86d5-594ba2697475.txt`
+- Operational helper:
+  - `scripts/indexnow_submit.py`
+- Current helper capabilities:
+  - verify the live key file (`smoke`)
+  - submit arbitrary URL batches
+  - derive canonical HTML URLs from `git diff` ranges and submit them
+  - wait until the key file and submitted URLs are live before notifying the protocol endpoint
+- Tools publish automation:
+  - `scripts/cron_publish_push.sh` now includes a non-blocking post-deploy IndexNow step by default;
+  - it submits URLs derived from `HEAD~1..HEAD` after a tools release.
+- Manual `ratgeber` releases remain separate:
+  - after push, run `python scripts/indexnow_submit.py submit-git-range --rev-range HEAD~1..HEAD --wait-live`
+- Live verification completed on `2026-04-23`:
+  - `python scripts/indexnow_submit.py smoke` succeeded against the public key file;
+  - first live batch submission for `/`, `/tools/`, `/ratgeber/`, and the latest article returned `202 Accepted`, which matches initial key-validation handling in the protocol.
+
 - remote production head на момент публикации: `origin/master = 2130ee6`
 - локальная старая рабочая копия пользователя не является надёжным baseline для публикации
 - для manual content-release использовать отдельный чистый worktree от актуального `origin/master`

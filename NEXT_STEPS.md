@@ -26,7 +26,10 @@
    - confirm the refreshed sitemap stays at `855` URLs;
    - watch whether Bing's `InIndex` count continues climbing after the manual submissions.
 10. If a future release adds more machine-readable endpoints, extend the Cloudflare Pages Functions `noindex` guard in `site/functions/` alongside the route itself.
-11. If faster Bing recrawl becomes important for high-frequency content releases, evaluate adding an IndexNow workflow on top of the current Bing Webmaster submission helper.
+11. Monitor the first IndexNow batches after more real releases:
+   - check whether later submissions return `200` after the initial `202 Accepted`;
+   - confirm that the cron-driven tools flow submits only changed canonical HTML pages.
+12. If `ratgeber` release cadence increases, consider a tiny wrapper script that combines import, push, and `indexnow_submit.py submit-git-range` in one manual release command.
 
 1. Следующие `ratgeber`-статьи публиковать тем же отдельным clean-worktree flow.
 2. Дальше улучшать quality алгоритмов текста и иллюстраций на `opcl`, не смешивая эту работу с `tools`-cron.
