@@ -1,21 +1,76 @@
-<svg viewBox='0 0 1200 760' xmlns='http://www.w3.org/2000/svg' text-rendering='geometricPrecision' shape-rendering='geometricPrecision'>
+<svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" text-rendering="geometricPrecision" shape-rendering="geometricPrecision">
   <defs>
-    <filter id='storySoft' x='-20%' y='-20%' width='140%' height='160%'>
-      <feDropShadow dx='0' dy='8' stdDeviation='14' flood-color='#0f544d' flood-opacity='0.08'/>
+    <filter id="storySoft" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0f544d" flood-opacity="0.08"/>
     </filter>
   </defs>
-  <rect width='1200' height='760' rx='44' fill='#f7f2e8'/>
-  <rect x='54' y='54' width='1092' height='652' rx='38' fill='#fffaf3' stroke='rgba(15,84,77,0.12)'/>
-  <text x='104' y='116' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' font-weight='800' letter-spacing='3' fill='#0f544d'>WORKFLOW STORYBOARD</text>
-  <text x='104' y='168' font-family='Inter, Arial, Helvetica, sans-serif' font-size='40' font-weight='700' fill='#171717'>So wird aus Agentenarbeit ein belastbarer Lauf</text>
-  <text x='104' y='208' font-family='Inter, Arial, Helvetica, sans-serif' font-size='18' font-weight='400' fill='#55635d'><tspan x='104' dy='0'>Produktive Agentenarbeit braucht</tspan><tspan x='104' dy='24'>sichtbaren Kontext, einen klaren</tspan><tspan x='104' dy='24'>Lauf und ein echtes Review-Gate.</tspan></text>
-  <path d='M392 400 C418 400 430 400 450 400' stroke='rgba(15,84,77,0.16)' stroke-width='6' fill='none' stroke-linecap='round'/>
-  <polygon points='450,400 434,390 434,410' fill='#d58f49'/>
-  <path d='M730 400 C756 400 768 400 788 400' stroke='rgba(15,84,77,0.16)' stroke-width='6' fill='none' stroke-linecap='round'/>
-  <polygon points='788,400 772,390 772,410' fill='#d58f49'/>
-  <g filter='url(#storySoft)'>
-    <rect x='92' y='220' width='300' height='360' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/><rect x='120' y='252' width='118' height='28' rx='14' fill='rgba(15,84,77,0.06)'/><text x='146' y='271' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>IDE</text><text x='120' y='326' font-family='Inter, Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#0f544d'>Ausrichtung</text><text x='120' y='354' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' fill='#55746f'>Scope, Ziele und Guardrails</text><circle cx='138' cy='398' r='8' fill='#d58f49'/><text x='158' y='404' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>IDE-Kontext öffnen</text><circle cx='138' cy='448' r='8' fill='rgba(15,84,77,0.20)'/><text x='158' y='454' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Aufgabe sauber schneiden</text><circle cx='138' cy='498' r='8' fill='rgba(15,84,77,0.20)'/><text x='158' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Akzeptanz definieren</text><rect x='430' y='220' width='300' height='360' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/><rect x='458' y='252' width='118' height='28' rx='14' fill='rgba(15,84,77,0.06)'/><text x='484' y='271' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>CLI</text><text x='458' y='326' font-family='Inter, Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#0f544d'>Agentenlauf</text><text x='458' y='354' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' fill='#55746f'>CLI, Shards und Prüfpfade</text><circle cx='476' cy='398' r='8' fill='#d58f49'/><text x='496' y='404' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Teilaufgaben parallelisieren</text><circle cx='476' cy='448' r='8' fill='rgba(15,84,77,0.20)'/><text x='496' y='454' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Zwischenstände sichtbar halten</text><circle cx='476' cy='498' r='8' fill='rgba(15,84,77,0.20)'/><text x='496' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Checks nicht ans Ende verschieben</text><rect x='768' y='220' width='300' height='360' rx='30' fill='#ffffff' stroke='rgba(15,84,77,0.10)'/><rect x='796' y='252' width='118' height='28' rx='14' fill='rgba(15,84,77,0.06)'/><text x='822' y='271' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Verifikation</text><text x='796' y='326' font-family='Inter, Arial, Helvetica, sans-serif' font-size='30' font-weight='700' fill='#0f544d'>Freigabe</text><text x='796' y='354' font-family='Inter, Arial, Helvetica, sans-serif' font-size='16' fill='#55746f'>Verifikation vor dem Merge</text><circle cx='814' cy='398' r='8' fill='#d58f49'/><text x='834' y='404' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Diffs verdichten</text><circle cx='814' cy='448' r='8' fill='rgba(15,84,77,0.20)'/><text x='834' y='454' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Risiken benennen</text><circle cx='814' cy='498' r='8' fill='rgba(15,84,77,0.20)'/><text x='834' y='504' font-family='Inter, Arial, Helvetica, sans-serif' font-size='15' fill='#2d2923'>Merge erst nach echter Prüfung</text>
+
+  <rect width="1200" height="760" rx="44" fill="#f7f2e8"/>
+  <rect x="44" y="44" width="1112" height="672" rx="40" fill="#fffaf3" stroke="rgba(15,84,77,0.12)"/>
+
+  <text x="96" y="110" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="3" fill="#0f544d">WORKFLOW STORYBOARD</text>
+  <text x="96" y="164" font-family="Inter, Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#171717">So wird aus Agentenarbeit ein belastbarer Lauf</text>
+  <text x="96" y="208" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#55635d">
+    <tspan x="96" dy="0">Produktive Agentenarbeit braucht sichtbaren Kontext,</tspan>
+    <tspan x="96" dy="24">einen klaren Lauf und ein echtes Review-Gate.</tspan>
+  </text>
+
+  <path d="M384 446 C412 446 426 446 448 446" stroke="rgba(15,84,77,0.16)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <polygon points="448,446 432,436 432,456" fill="#d58f49"/>
+  <path d="M726 446 C754 446 768 446 790 446" stroke="rgba(15,84,77,0.16)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <polygon points="790,446 774,436 774,456" fill="#d58f49"/>
+
+  <g filter="url(#storySoft)">
+    <rect x="92" y="286" width="292" height="304" rx="30" fill="#ffffff" stroke="rgba(15,84,77,0.10)"/>
+    <rect x="120" y="320" width="96" height="28" rx="14" fill="rgba(15,84,77,0.06)"/>
+    <text x="147" y="339" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">IDE</text>
+    <text x="120" y="398" font-family="Inter, Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0f544d">Ausrichtung</text>
+    <text x="120" y="426" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" fill="#55746f">Scope, Ziele und Guardrails</text>
+    <circle cx="144" cy="472" r="8" fill="#d58f49"/>
+    <text x="166" y="478" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">IDE-Kontext öffnen</text>
+    <circle cx="144" cy="520" r="8" fill="rgba(15,84,77,0.20)"/>
+    <text x="166" y="526" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Aufgabe sauber schneiden</text>
+    <circle cx="144" cy="568" r="8" fill="rgba(15,84,77,0.20)"/>
+    <text x="166" y="574" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Akzeptanz definieren</text>
   </g>
-  <rect x='92' y='612' width='1016' height='70' rx='28' fill='rgba(15,84,77,0.05)' stroke='rgba(15,84,77,0.10)'/>
-  <rect x='120' y='632' width='92' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/><text x='142' y='653' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>IDE</text><rect x='224' y='632' width='92' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/><text x='246' y='653' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>CLI</text><rect x='328' y='632' width='92' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/><text x='350' y='653' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Kontext</text><rect x='432' y='632' width='134' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/><text x='454' y='653' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Verifikation</text><rect x='578' y='632' width='92' height='32' rx='16' fill='#ffffff' stroke='rgba(15,84,77,0.08)'/><text x='600' y='653' font-family='Inter, Arial, Helvetica, sans-serif' font-size='13' font-weight='700' fill='#0f544d'>Runtime</text>
+
+  <g filter="url(#storySoft)">
+    <rect x="434" y="286" width="292" height="304" rx="30" fill="#ffffff" stroke="rgba(15,84,77,0.10)"/>
+    <rect x="462" y="320" width="96" height="28" rx="14" fill="rgba(15,84,77,0.06)"/>
+    <text x="489" y="339" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">CLI</text>
+    <text x="462" y="398" font-family="Inter, Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0f544d">Agentenlauf</text>
+    <text x="462" y="426" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" fill="#55746f">CLI, Shards und Prüfpfade</text>
+    <circle cx="486" cy="472" r="8" fill="#d58f49"/>
+    <text x="508" y="478" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Teilaufgaben parallelisieren</text>
+    <circle cx="486" cy="520" r="8" fill="rgba(15,84,77,0.20)"/>
+    <text x="508" y="526" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Zwischenstände sichtbar halten</text>
+    <circle cx="486" cy="568" r="8" fill="rgba(15,84,77,0.20)"/>
+    <text x="508" y="574" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Checks nicht ans Ende verschieben</text>
+  </g>
+
+  <g filter="url(#storySoft)">
+    <rect x="776" y="286" width="292" height="304" rx="30" fill="#ffffff" stroke="rgba(15,84,77,0.10)"/>
+    <rect x="804" y="320" width="120" height="28" rx="14" fill="rgba(15,84,77,0.06)"/>
+    <text x="832" y="339" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">Verifikation</text>
+    <text x="804" y="398" font-family="Inter, Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0f544d">Freigabe</text>
+    <text x="804" y="426" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" fill="#55746f">Verifikation vor dem Merge</text>
+    <circle cx="828" cy="472" r="8" fill="#d58f49"/>
+    <text x="850" y="478" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Diffs verdichten</text>
+    <circle cx="828" cy="520" r="8" fill="rgba(15,84,77,0.20)"/>
+    <text x="850" y="526" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Risiken benennen</text>
+    <circle cx="828" cy="568" r="8" fill="rgba(15,84,77,0.20)"/>
+    <text x="850" y="574" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" fill="#2d2923">Merge erst nach echter Prüfung</text>
+  </g>
+
+  <rect x="92" y="626" width="1016" height="58" rx="26" fill="rgba(15,84,77,0.05)" stroke="rgba(15,84,77,0.10)"/>
+  <rect x="122" y="639" width="84" height="30" rx="15" fill="#ffffff" stroke="rgba(15,84,77,0.08)"/>
+  <text x="146" y="659" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">IDE</text>
+  <rect x="218" y="639" width="84" height="30" rx="15" fill="#ffffff" stroke="rgba(15,84,77,0.08)"/>
+  <text x="242" y="659" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">CLI</text>
+  <rect x="314" y="639" width="96" height="30" rx="15" fill="#ffffff" stroke="rgba(15,84,77,0.08)"/>
+  <text x="338" y="659" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">Kontext</text>
+  <rect x="422" y="639" width="110" height="30" rx="15" fill="#ffffff" stroke="rgba(15,84,77,0.08)"/>
+  <text x="446" y="659" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">Verifikation</text>
+  <rect x="544" y="639" width="92" height="30" rx="15" fill="#ffffff" stroke="rgba(15,84,77,0.08)"/>
+  <text x="568" y="659" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0f544d">Runtime</text>
 </svg>

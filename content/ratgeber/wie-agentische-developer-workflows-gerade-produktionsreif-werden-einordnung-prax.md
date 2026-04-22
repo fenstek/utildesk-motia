@@ -46,11 +46,11 @@ Wenn du das Thema nicht nur einordnen, sondern praktisch vergleichen willst, sin
 - [LangChain](/tools/langchain/) - wenn du die Orchestrierungslogik und den Framework-Layer hinter Agenten verstehen willst.
 - [CrewAI](/tools/crew-ai/) - wenn dich kollaborative Multi-Agent-Flows mit Guardrails und Observability interessieren.
 
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.svg)
-
 ## Werkzeuge für aktives Handeln in der Codebasis
 
 Moderne agentische Tools zeichnen sich dadurch aus, dass sie aktiv mit der Entwicklungsumgebung interagieren können. Ein zentrales Beispiel ist Claude Code, das direkt im Terminal, in der IDE oder im Browser operiert. Das Werkzeug beschränkt sich nicht auf Antworten, sondern liest die gesamte Codebasis, bearbeitet Dateien und führt Befehle eigenständig aus.
+
+![Schema eines orchestrierten KI-Workflows](/images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.svg)
 
 Solche Agenten beheben Fehler, bauen neue Funktionen oder übernehmen mühsame Routineaufgaben wie das Schreiben von Tests.
 

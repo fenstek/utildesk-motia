@@ -29,6 +29,8 @@
 - production rendering for `ratgeber` now treats the hero cover as a first-class article image:
   - the top cover uses the shared lightbox flow, not just inline prose images;
   - the cover is rendered in its natural aspect ratio instead of being forced into a wide `16 / 7` frame.
+- production rendering now also normalizes standalone inline article images into figure-style blocks with controlled spacing, so editorial SVGs do not sit too early or too tightly against section headings.
+- production rendering now avoids adding an extra visible frame around hero covers, so large editorial SVGs can read as the article's main image instead of as a smaller card inside another card.
 
 ## Latest Published Change
 
