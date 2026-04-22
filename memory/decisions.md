@@ -14,3 +14,5 @@
 - `scripts/cron_publish_push.sh` считать намеренно ограниченным `tools`-only publisher; его allowlist не ослаблять ради статей.
 - Для import approved article package использовать `scripts/import_ratgeber_package.py`.
 - Для manual article release использовать отдельный чистый checkout или worktree от свежего `origin/master`.
+- `Ratgeber` hero covers must use the same lightbox contract as article inline images.
+- `Ratgeber` cover rendering must respect the generated image's natural aspect ratio; do not force editorial SVG covers into a generic wide frame.

@@ -28,6 +28,9 @@
 - Зафиксирован ops-guardrail: `tools` cron и `ratgeber` publish должны жить раздельно
 - Добавлен runbook: `docs/04_operations/ratgeber_publish.md`
 - Импортирована и подготовлена к production release статья `wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax`
+- Fixed production `ratgeber` rendering regression:
+  - the top cover image now opens in the shared lightbox just like inline article images;
+  - the hero cover no longer gets compressed inside a forced wide aspect-ratio box.
 
 ## Release Note
 
