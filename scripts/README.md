@@ -147,4 +147,5 @@ Safe local operational access to Bing Webmaster Tools for `tools.utildesk.de`, w
 - The secret file is git-ignored.
 - Use `sites` or `call --method GetUserSites` for verified-site listing; `GetSiteList` is not a working public JSON method.
 - Prefer submitting canonical HTML pages, not JSON/Markdown/feed/LLMS helper endpoints.
+- For live noindex control of machine endpoints on Cloudflare Pages, update `site/functions/` alongside any `_headers` declarations.
 - Bing currently does not expose a public URL Inspection API equivalent to GSC URL Inspection API.

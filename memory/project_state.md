@@ -116,6 +116,32 @@
 - Important limitation:
   - Bing still has no public URL Inspection API equivalent to GSC URL Inspection API, so deep per-URL inspection may still require the Bing Webmaster UI.
 
+## 2026-04-22 Bing SEO Final State
+
+- Current verified healthy production baseline after the Bing pass:
+  - `HEAD = origin/master = origin/autobot = 2926dccb2dc760135835d681b41f71b6e93c571a`
+- Bing Webmaster access is confirmed and operational through `secrets/bing-webmaster.env`.
+- Bing property health after the fixes:
+  - `GetCrawlIssues` returns no active crawl issues;
+  - last-30-day crawl summary shows `0` days blocked by robots and `0` days with `5xx`;
+  - Bing's `InIndex` count is still growing (`321` in the latest crawl-stat snapshot).
+- Bing sitemap state is now aligned with live production:
+  - live `sitemap.xml` contains `855` URLs;
+  - `GetFeedDetails` for `https://tools.utildesk.de/sitemap.xml` now reports `UrlCount = 855`;
+  - Bing feed `Submitted` and `LastCrawled` timestamps refreshed on `2026-04-22`.
+- Machine-readable helper endpoints are explicitly kept out of normal search indexing while staying fetchable:
+  - `/feed.xml`
+  - `/feed.json`
+  - `/llms.txt`
+  - `/llms-full.txt`
+  - `/api/*`
+  - `/markdown/*`
+- Important implementation detail:
+  - `_headers` stays as a static fallback;
+  - the reliable live enforcement now runs through Cloudflare Pages Functions in `site/functions/`.
+- HTML production pages remain indexable after the change:
+  - homepage, tool detail pages, `ratgeber` index, and live articles still return `200` with normal `index,follow` meta robots.
+
 - remote production head на момент публикации: `origin/master = 2130ee6`
 - локальная старая рабочая копия пользователя не является надёжным baseline для публикации
 - для manual content-release использовать отдельный чистый worktree от актуального `origin/master`
