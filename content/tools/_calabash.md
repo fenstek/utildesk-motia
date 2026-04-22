@@ -7,7 +7,7 @@ tags: [qa, test-automation, mobile-testing]
 official_url: "https://www.calabash.com/"
 disabled: true
 reason: "Needs review: current calabash.com is unrelated to the historical mobile testing framework"
-popularity: 62
+popularity: 64
 ---
 
 # Calabash
