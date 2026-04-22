@@ -37,6 +37,22 @@ retry_cmd() {
   done
 }
 
+resolve_python_bin() {
+  if [[ -n "${INDEXNOW_PYTHON:-}" ]]; then
+    printf '%s\n' "${INDEXNOW_PYTHON}"
+    return 0
+  fi
+  if command -v python3 >/dev/null 2>&1; then
+    printf '%s\n' "python3"
+    return 0
+  fi
+  if command -v python >/dev/null 2>&1; then
+    printf '%s\n' "python"
+    return 0
+  fi
+  return 1
+}
+
 echo "[cron] start:
 node scripts/guard_deny_md.mjs
  $(date -Is)"
@@ -259,4 +275,28 @@ if [[ "${POST_DEPLOY_LIVE_CHECK:-0}" == "1" ]]; then
     echo "[cron] WARN post-deploy live check failed (try ${_try}/5)"
     sleep 20
   done
+fi
+
+# 8) Optional post-deploy IndexNow notification for changed canonical HTML URLs.
+#    Non-blocking and limited to the latest published commit.
+if [[ "${POST_DEPLOY_INDEXNOW:-1}" == "1" ]]; then
+  PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
+  INDEXNOW_REV_RANGE="${INDEXNOW_REV_RANGE:-HEAD~1..HEAD}"
+  INDEXNOW_TIMEOUT_SECONDS="${INDEXNOW_TIMEOUT_SECONDS:-600}"
+  INDEXNOW_POLL_INTERVAL="${INDEXNOW_POLL_INTERVAL:-15}"
+  INDEXNOW_BIN="$(resolve_python_bin || true)"
+  if [[ -z "$INDEXNOW_BIN" ]]; then
+    echo "[cron] WARN post-deploy IndexNow skipped: no python interpreter found"
+  else
+    echo "[cron] post-deploy IndexNow: base=${PROD_BASE_URL} rev_range=${INDEXNOW_REV_RANGE}"
+    if "$INDEXNOW_BIN" scripts/indexnow_submit.py submit-git-range \
+      --rev-range "${INDEXNOW_REV_RANGE}" \
+      --wait-live \
+      --timeout-seconds "${INDEXNOW_TIMEOUT_SECONDS}" \
+      --poll-interval "${INDEXNOW_POLL_INTERVAL}"; then
+      echo "[cron] post-deploy IndexNow submit completed"
+    else
+      echo "[cron] WARN post-deploy IndexNow submit failed"
+    fi
+  fi
 fi

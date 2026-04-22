@@ -33,6 +33,14 @@ python scripts/import_ratgeber_package.py --package-dir /path/to/package
 
 5. Закоммитить и опубликовать этот отдельный change-set.
 
+## IndexNow
+
+После push manual `ratgeber`-релиза отправлять changed canonical HTML URL в IndexNow:
+
+```bash
+python scripts/indexnow_submit.py submit-git-range --rev-range HEAD~1..HEAD --wait-live
+```
+
 ## Инварианты
 
 - импорт разрешён только для `approved_for_publish` пакетов;
