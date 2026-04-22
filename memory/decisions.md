@@ -4,6 +4,8 @@
 
 ## 2026-04-22
 
+- Keep only one tracked markdown doc for the alternatives-render audit script: `scripts/audit_alternatives_render.md`.
+- Do not keep case-only duplicate paths for the same document in git; Windows checkouts cannot represent them cleanly.
 - Treat live sitemap hygiene as the first-line technical explanation for large GSC indexing error clusters on `tools.utildesk.de`.
 - Keep alias redirects, but do not keep the same alias slugs as active published tool pages.
 - Reserved route namespaces under `/tools/` (currently `tag`) must never be emitted as tool URLs in sitemap.
