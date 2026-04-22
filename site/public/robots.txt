@@ -1,4 +1,23 @@
+# AI-focused crawler groups are allowed explicitly as a stable signal for future changes.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 User-agent: *
 Allow: /
 
 Sitemap: https://tools.utildesk.de/sitemap.xml
+
+# Machine-readable entry points for agents:
+# https://tools.utildesk.de/llms.txt
+# https://tools.utildesk.de/llms-full.txt
+# https://tools.utildesk.de/feed.xml
+# https://tools.utildesk.de/feed.json

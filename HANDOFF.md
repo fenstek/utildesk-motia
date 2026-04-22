@@ -44,6 +44,38 @@
   - the cover SVG was rebuilt with a denser composition so the page can render it larger without excessive empty framing;
   - the hero-cover wrapper in the production template now avoids adding a second visible frame around the artwork.
 
+## 2026-04-22 AI Retrieval Handoff
+
+- Goal of this pass:
+  - make `tools.utildesk.de` materially easier to consume for AI crawlers, AI search, and autonomous agents without harming normal SEO.
+- Implemented site-level machine-readable layer:
+  - `site/src/pages/llms.txt.ts`
+  - `site/src/pages/llms-full.txt.ts`
+  - `site/src/pages/feed.xml.ts`
+  - `site/src/pages/feed.json.ts`
+  - `site/src/pages/api/tools.json.ts`
+  - `site/src/pages/api/ratgeber.json.ts`
+  - `site/src/pages/api/tools/[slug].json.ts`
+  - `site/src/pages/api/ratgeber/[slug].json.ts`
+  - `site/src/pages/markdown/tools/[slug].md.ts`
+  - `site/src/pages/markdown/ratgeber/[slug].md.ts`
+- Implemented shared helpers:
+  - `site/src/lib/siteMeta.ts`
+  - `site/src/lib/machineReadable.ts`
+  - `site/src/lib/contentRoot.mjs`
+- Important rendering and metadata changes:
+  - `BaseLayout` now emits stronger robots directives, richer Open Graph/Twitter meta, and global alternate links to feeds, catalogs, and AI manifests;
+  - homepage, tools index, categories, tags, tool detail pages, and `ratgeber` pages now emit richer JSON-LD including collection and breadcrumb schemas;
+  - tool and article detail pages now expose both Markdown and JSON alternates for the exact page.
+- Important build-system hardening:
+  - content loading no longer assumes `site/content` is a symlink;
+  - Windows checkouts where `site/content` is a pointer file now build correctly via `contentRoot.mjs`.
+- Verification completed:
+  - `npm --prefix site run build` passed;
+  - final build produced `1132` pages;
+  - postbuild sitemap generation passed with `855` URLs;
+  - generated output contains working `llms`, feed, catalog, Markdown, and page-level JSON artifacts.
+
 ## Release Note
 
 Если понадобится следующая article release:

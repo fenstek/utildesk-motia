@@ -22,3 +22,12 @@
 - Standalone inline article images in `ratgeber` should be rendered as dedicated figure blocks with explicit vertical spacing, not as naked markdown image paragraphs.
 - If an article ships both `cover` and `workflow` editorial SVGs, the page renderer should avoid adding a second heavy frame around the artwork; the generated assets already carry their own composition.
 - Hero cover SVGs should use a dense composition with minimal neutral border space, so the published page can render them large without creating a "small picture inside a big frame" effect.
+- Treat AI retrieval as a first-class site contract, not as an afterthought:
+  - keep `llms.txt`, `llms-full.txt`, feeds, catalogs, and page-level mirrors in the production codebase.
+- Prefer the canonical trio for machine access to content:
+  - human-facing HTML page
+  - page-level JSON detail endpoint
+  - page-level Markdown mirror
+- Keep non-HTML agent endpoints crawlable but out of normal search result indexing via `X-Robots-Tag: noindex`.
+- Do not rely on `process.cwd()/content` in the Astro app; use the shared content-root resolver so Windows pointer-file checkouts build the same as symlinked environments.
+- Do not declare a fake `SearchAction` schema unless the public site exposes a stable query-parameter search contract that works server-side.

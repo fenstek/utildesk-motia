@@ -1,9 +1,9 @@
 import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
 import matter from "gray-matter";
 import { normalizePriceModel } from "./priceModel";
+import { fromContent } from "./contentRoot.mjs";
 
-const TOOLS_DIR = join(process.cwd(), "content", "tools");
+const TOOLS_DIR = fromContent("tools");
 
 export async function listActiveToolEntries() {
   const files = (await readdir(TOOLS_DIR))
@@ -12,7 +12,7 @@ export async function listActiveToolEntries() {
 
   const entries = await Promise.all(
     files.map(async (file) => {
-      const sourcePath = join(TOOLS_DIR, file);
+      const sourcePath = fromContent("tools", file);
       const raw = await readFile(sourcePath, "utf-8");
       const parsed = matter(raw);
       const disabled =

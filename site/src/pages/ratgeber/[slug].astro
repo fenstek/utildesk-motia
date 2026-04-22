@@ -3,6 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { marked } from "marked";
 import { getRatgeberEntry, listRatgeberEntries } from "../../lib/ratgeber";
 import { tagHref } from "../../lib/tagRoutes";
+import { getWordCountFromMarkdown } from "../../lib/machineReadable";
+import {
+  buildBreadcrumbSchema,
+  buildPublisherOrganization,
+  SITE_LANGUAGE,
+  SITE_URL,
+  toAbsoluteUrl,
+} from "../../lib/siteMeta";
 
 export async function getStaticPaths() {
   const entries = await listRatgeberEntries();
@@ -73,6 +81,11 @@ const addRenderedPill = (label: string) => {
 };
 
 const relatedToolSet = new Set((data.relatedTools ?? []).map((t: {title: string}) => normalizeMetaLabel(t.title)));
+const wordCount = getWordCountFromMarkdown(content);
+const imageUrls = [
+  data.coverImage ? toAbsoluteUrl(String(data.coverImage)) : null,
+  data.secondaryImage ? toAbsoluteUrl(String(data.secondaryImage)) : null,
+].filter(Boolean);
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -81,17 +94,40 @@ const articleSchema = {
   description,
   datePublished: data.date,
   dateModified: data.date,
-  image: data.coverImage ? [`https://tools.utildesk.de${data.coverImage}`] : undefined,
-  mainEntityOfPage: `https://tools.utildesk.de/ratgeber/${slug}/`,
-  author: { "@type": "Organization", name: "Utildesk" },
-  publisher: { "@type": "Organization", name: "Utildesk" },
+  image: imageUrls.length ? imageUrls : undefined,
+  mainEntityOfPage: `${SITE_URL}/ratgeber/${slug}/`,
+  inLanguage: SITE_LANGUAGE,
+  articleSection: data.category ? String(data.category) : undefined,
+  keywords: Array.isArray(data.tags) ? data.tags.map(String).join(", ") : undefined,
+  wordCount: wordCount || undefined,
+  isAccessibleForFree: true,
+  author: buildPublisherOrganization(),
+  publisher: buildPublisherOrganization(),
+  about: Array.isArray(data.tags)
+    ? data.tags.map((tag: string) => ({ "@type": "Thing", name: tag }))
+    : undefined,
+  mentions: Array.isArray(data.relatedTools)
+    ? data.relatedTools.map((tool: { title: string; href: string }) => ({
+        "@type": "SoftwareApplication",
+        name: tool.title,
+        url: tool.href.startsWith("http") ? tool.href : `${SITE_URL}${tool.href}`,
+      }))
+    : undefined,
 };
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Ratgeber", url: `${SITE_URL}/ratgeber/` },
+  { name: title, url: `${SITE_URL}/ratgeber/${slug}/` },
+]);
 ---
 
 <BaseLayout title={`${title} - Ratgeber - Utildesk`} description={description}>
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de/ratgeber/${slug}/`} />
+    <link rel="alternate" type="application/json" href={`/api/ratgeber/${slug}.json`} title={`${title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={`/markdown/ratgeber/${slug}.md`} title={`${title} (Markdown)`} />
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
   <nav class="breadcrumb">

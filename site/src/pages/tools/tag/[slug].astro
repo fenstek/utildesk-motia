@@ -5,10 +5,16 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
+import { fromContent } from "../../../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../../../lib/priceModel";
 import { slugifyTag, tagHref } from "../../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../../lib/siteMeta";
 
-const toolsDir = join(process.cwd(), "content", "tools");
+const toolsDir = fromContent("tools");
 const files = (await readdir(toolsDir)).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
 const stripMarkdown = (text: string) =>
@@ -104,7 +110,7 @@ enabledTools.forEach((tool) => {
 });
 
 export async function getStaticPaths() {
-  const toolsDir = join(process.cwd(), "content", "tools");
+  const toolsDir = fromContent("tools");
   const files = (await readdir(toolsDir)).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
   const tagMap = new Map<string, string>();
 
@@ -137,6 +143,30 @@ const selectedTagLower = selectedTag.toLowerCase();
 const filteredTools = enabledTools
   .filter((tool) => tool.tags.some((tag) => tag.toLowerCase() === selectedTagLower))
   .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `Tools mit Tag ${selectedTag}`,
+  numberOfItems: filteredTools.length,
+  itemListElement: filteredTools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+  })),
+};
+const tagPageSchema = buildCollectionPageSchema({
+  name: `Tag: ${selectedTag}`,
+  description: `Gefilterte Auswahl von Tools mit dem Tag ${selectedTag}.`,
+  url: `${SITE_URL}${tagHref(selectedTag)}`,
+  about: [selectedTag, "AI-Tools", "Tags"],
+  mainEntity: itemListSchema,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Tools", url: `${SITE_URL}/tools/` },
+  { name: `Tag: ${selectedTag}`, url: `${SITE_URL}${tagHref(selectedTag)}` },
+]);
 
 const tagFrequency = new Map<string, number>();
 enabledTools.forEach((tool) => {
@@ -162,6 +192,9 @@ const visibleTags = Array.from(tagFrequency.entries())
 >
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de${tagHref(selectedTag)}`} />
+    <script type="application/ld+json" set:html={JSON.stringify(tagPageSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
   <section class="hero" style="padding: 60px 0 40px;">

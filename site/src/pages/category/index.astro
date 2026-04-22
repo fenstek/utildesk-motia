@@ -4,9 +4,15 @@ import { CATEGORIES } from "../../lib/categories";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import { fromContent } from "../../lib/contentRoot.mjs";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../lib/siteMeta";
 
 // Count tools per category
-const toolsDir = join(process.cwd(), "content", "tools");
+const toolsDir = fromContent("tools");
 const files = (await readdir(toolsDir)).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
 const toolsData = await Promise.all(
@@ -28,6 +34,29 @@ const categoriesWithCount = CATEGORIES.map((cat) => {
   ).length;
   return { ...cat, count };
 });
+const categoryItemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Utildesk Kategorien",
+  numberOfItems: categoriesWithCount.length,
+  itemListElement: categoriesWithCount.map((category, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: category.title,
+    url: `${SITE_URL}/category/${category.slug}/`,
+  })),
+};
+const categoryCollectionSchema = buildCollectionPageSchema({
+  name: "Tool-Kategorien",
+  description: "Entdecke AI-Tools nach Kategorien organisiert.",
+  url: `${SITE_URL}/category/`,
+  about: ["AI-Tools", "Kategorien", "Produktivität"],
+  mainEntity: categoryItemListSchema,
+});
+const categoryBreadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Kategorien", url: `${SITE_URL}/category/` },
+]);
 ---
 
 <BaseLayout
@@ -36,6 +65,9 @@ const categoriesWithCount = CATEGORIES.map((cat) => {
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/category/" />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryCollectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryItemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryBreadcrumbSchema)} />
   </Fragment>
 
   <section class="category-index">

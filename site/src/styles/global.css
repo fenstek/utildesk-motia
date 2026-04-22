@@ -68,6 +68,23 @@ body {
   line-height: 1.6;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 1000;
+  padding: 10px 14px;
+  border-radius: 9999px;
+  background: var(--primary);
+  color: var(--on-primary);
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--on-surface);

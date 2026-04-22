@@ -1,8 +1,8 @@
 ﻿import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
 import matter from "gray-matter";
+import { fromContent } from "./contentRoot.mjs";
 
-const RATGEBER_DIR = join(process.cwd(), "content", "ratgeber");
+const RATGEBER_DIR = fromContent("ratgeber");
 
 export interface RatgeberRelatedTool {
   title: string;
@@ -51,7 +51,7 @@ const parseRelatedTools = (value: unknown): RatgeberRelatedTool[] => {
 };
 
 const parseEntry = async (file: string): Promise<RatgeberEntry | null> => {
-  const sourcePath = join(RATGEBER_DIR, file);
+  const sourcePath = fromContent("ratgeber", file);
   const raw = await readFile(sourcePath, "utf-8");
   const parsed = matter(raw);
   const slug = String(parsed.data.slug ?? file.replace(/\.md$/, ""));
