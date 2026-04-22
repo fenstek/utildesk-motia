@@ -100,6 +100,22 @@
   - `1132` pages built
   - sitemap regenerated successfully with `855` URLs.
 
+## 2026-04-22 Bing Webmaster Readiness
+
+- A safe local Bing Webmaster access path is now prepared for `tools.utildesk.de`.
+- The real key is expected only in the git-ignored local file:
+  - `C:\projects\utildesk-motia\secrets\bing-webmaster.env`
+- Operational helper script:
+  - `scripts/bing_webmaster_api.py`
+- Current supported local operations:
+  - smoke validation via `GetUrlSubmissionQuota`
+  - quota check
+  - sitemap/feed submission
+  - single-URL submission
+  - generic method calls against Bing Webmaster JSON API
+- Important limitation:
+  - Bing still has no public URL Inspection API equivalent to GSC URL Inspection API, so deep per-URL inspection may still require the Bing Webmaster UI.
+
 - remote production head на момент публикации: `origin/master = 2130ee6`
 - локальная старая рабочая копия пользователя не является надёжным baseline для публикации
 - для manual content-release использовать отдельный чистый worktree от актуального `origin/master`

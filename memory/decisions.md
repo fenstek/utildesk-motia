@@ -31,3 +31,6 @@
 - Keep non-HTML agent endpoints crawlable but out of normal search result indexing via `X-Robots-Tag: noindex`.
 - Do not rely on `process.cwd()/content` in the Astro app; use the shared content-root resolver so Windows pointer-file checkouts build the same as symlinked environments.
 - Do not declare a fake `SearchAction` schema unless the public site exposes a stable query-parameter search contract that works server-side.
+- Keep Bing Webmaster credentials local-only and git-ignored; never store the raw API key in repo-tracked files.
+- Prefer a local env-file plus helper script for Bing operations instead of browser-only workflows.
+- Treat Bing API coverage as partial compared to GSC: automate quota/submission/feed operations, but assume URL Inspection remains manual unless Microsoft exposes a public API later.
