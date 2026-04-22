@@ -45,6 +45,11 @@
 
 ## Current Master Baseline
 
+- Current good backup baseline: `fa1c42d11a995127f3be253eb94477252e4c79ff`
+- `origin/master = origin/autobot = fa1c42d11a995127f3be253eb94477252e4c79ff`
+- The main local checkout at `C:\projects\utildesk-motia` was cleaned and aligned to the same commit.
+- Treat this state as the current safe restore point for the repo and the site.
+
 ## 2026-04-22 SEO And Production State
 
 - GSC access for `tools.utildesk.de` is verified via the service account on host `utildesk`.

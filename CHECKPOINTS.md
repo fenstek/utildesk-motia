@@ -4,6 +4,29 @@ Good states and important restoration points.
 
 ---
 
+## 2026-04-22 16:30 UTC - Current Site Healthy Baseline
+
+**Commit:** `fa1c42d11a995127f3be253eb94477252e4c79ff`
+**Status:** GOOD STATE
+
+### Why this is a good state
+
+- `origin/master = origin/autobot = fa1c42d11a995127f3be253eb94477252e4c79ff`
+- the main local checkout was cleaned and aligned to the same commit
+- `tools.utildesk.de`, `/sitemap.xml`, `/ratgeber/`, and the latest `ratgeber` article returned `200`
+- homepage and latest article exposed the expected canonical URLs and no `noindex`
+- the Windows-hostile case-only duplicate audit doc path was removed from the repo tree
+
+### Restore target
+
+Use this commit as the current safe restore point for the repo and the live site baseline.
+
+```bash
+git checkout fa1c42d11a995127f3be253eb94477252e4c79ff
+```
+
+---
+
 ## 2026-02-16 15:45 UTC - Pipeline Restoration Complete
 
 **Tag:** `checkpoint-good-20260216-1545`

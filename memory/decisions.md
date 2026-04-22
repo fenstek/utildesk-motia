@@ -4,6 +4,7 @@
 
 ## 2026-04-22
 
+- Treat `fa1c42d11a995127f3be253eb94477252e4c79ff` as the current good backup baseline for the repo and the live site state.
 - Keep only one tracked markdown doc for the alternatives-render audit script: `scripts/audit_alternatives_render.md`.
 - Do not keep case-only duplicate paths for the same document in git; Windows checkouts cannot represent them cleanly.
 - Treat live sitemap hygiene as the first-line technical explanation for large GSC indexing error clusters on `tools.utildesk.de`.

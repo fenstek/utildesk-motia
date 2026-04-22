@@ -2,6 +2,10 @@
 
 ## 2026-04-22 SEO Handoff
 
+- Current good backup baseline:
+  - commit `fa1c42d11a995127f3be253eb94477252e4c79ff`
+  - `origin/master = origin/autobot = fa1c42d11a995127f3be253eb94477252e4c79ff`
+  - local main checkout was cleaned and aligned to the same commit
 - Fixed a Windows-hostile git tree detail:
   - removed the case-only duplicate markdown path `scripts/AUDIT_ALTERNATIVES_RENDER.md`;
   - kept the canonical doc as `scripts/audit_alternatives_render.md` and updated it to match the real CLI options.
