@@ -2,6 +2,9 @@
 
 ## 2026-04-22 SEO Handoff
 
+- Fixed a Windows-hostile git tree detail:
+  - removed the case-only duplicate markdown path `scripts/AUDIT_ALTERNATIVES_RENDER.md`;
+  - kept the canonical doc as `scripts/audit_alternatives_render.md` and updated it to match the real CLI options.
 - Deep SEO audit outcome:
   - the big live technical problem was sitemap pollution, not robots/noindex blocking;
   - 6 alias tool URLs in sitemap redirected with `308` to canonical tool pages;
