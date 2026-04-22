@@ -41,3 +41,7 @@
 - Do not rely on Astro endpoint response headers alone for `X-Robots-Tag` on Cloudflare Pages machine endpoints.
 - Enforce `X-Robots-Tag: noindex` for `/feed.*`, `/llms*.txt`, `/api/*`, and `/markdown/*` at the edge through `site/functions/`, with `_headers` kept only as a fallback/static declaration.
 - After manual SEO or article releases, re-align `origin/autobot` to `origin/master` so the tools publishing branch does not drift behind production.
+- Treat IndexNow as a first-class freshness signal alongside sitemap submission for `tools.utildesk.de`.
+- Keep the IndexNow verification key public and repo-tracked at the site root; unlike Bing API credentials, it is not a secret.
+- Automate IndexNow only for canonical HTML pages and only after they are live.
+- Keep `ratgeber` IndexNow submission separate from the `tools` cron flow, just like the release process itself.

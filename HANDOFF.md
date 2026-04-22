@@ -131,6 +131,32 @@
 - Branch health after the manual SEO pass:
   - `origin/master = origin/autobot = 2926dccb2dc760135835d681b41f71b6e93c571a`
 
+## 2026-04-23 IndexNow Completion Handoff
+
+- Added public root verification key file for IndexNow:
+  - `site/public/c8e698e7-44e8-41e1-86d5-594ba2697475.txt`
+- Added helper:
+  - `scripts/indexnow_submit.py`
+- Added docs:
+  - `docs/04_operations/indexnow.md`
+  - updated `docs/04_operations/ratgeber_publish.md`
+  - updated `scripts/README.md`
+- Helper behavior:
+  - auto-discovers the repo-tracked root key file;
+  - verifies that the live key file is reachable and correct;
+  - submits URL batches to `https://api.indexnow.org/indexnow`;
+  - can derive canonical HTML URLs from `git` ranges for safe post-release notifications.
+- Tools automation:
+  - `scripts/cron_publish_push.sh` now runs a non-blocking post-deploy IndexNow submit by default;
+  - it waits for live availability and submits only URLs derived from the latest tools commit.
+- Live verification completed:
+  - key file became reachable on `https://tools.utildesk.de/c8e698e7-44e8-41e1-86d5-594ba2697475.txt`
+  - `python scripts/indexnow_submit.py smoke` succeeded
+  - first live submission for `/`, `/tools/`, `/ratgeber/`, and the latest article returned `202 Accepted`
+- Operational note:
+  - `202` is acceptable for the first submission because IndexNow may still be validating the new key file;
+  - later submissions should normally move to `200` once validation is cached.
+
 
 ## Release Note
 
