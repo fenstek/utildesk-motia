@@ -31,6 +31,11 @@
 - Fixed production `ratgeber` rendering regression:
   - the top cover image now opens in the shared lightbox just like inline article images;
   - the hero cover no longer gets compressed inside a forced wide aspect-ratio box.
+- Refined the latest article's editorial visuals:
+  - the workflow illustration was moved lower in the article flow so it no longer interrupts the transition from the related-tools section into the next chapter;
+  - the workflow SVG was rebuilt so the subtitle no longer collides with the card graphics;
+  - the cover SVG was rebuilt with a denser composition so the page can render it larger without excessive empty framing;
+  - the hero-cover wrapper in the production template now avoids adding a second visible frame around the artwork.
 
 ## Release Note
 

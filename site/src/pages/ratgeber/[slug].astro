@@ -21,7 +21,11 @@ if (!entry) {
 }
 
 const { data, content } = entry;
-const articleHtml = String(marked.parse(content));
+const rawArticleHtml = String(marked.parse(content));
+const articleHtml = rawArticleHtml.replace(
+  /<p>\s*(<img\b[^>]*>)\s*<\/p>/g,
+  '<figure class="article-inline-image">$1</figure>',
+);
 const title = String(data.title ?? slug);
 
 // Build lookup: tag name (lowercase) → tool href, for deduplication
@@ -306,22 +310,24 @@ const articleSchema = {
 
   /* Cover image — clean, no card */
   .article-cover {
-    margin: 36px 0 0;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    border: 1px solid rgba(190, 201, 197, 0.28);
-    background: var(--surface-container-low);
-    box-shadow: 0 18px 36px rgba(18, 28, 24, 0.06);
+    margin: 28px 0 0;
+    border-radius: clamp(24px, 2.4vw, 32px);
+    overflow: visible;
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
   .article-cover-trigger {
     display: block;
     width: 100%;
-    padding: clamp(8px, 1vw, 16px);
+    padding: 0;
     border: none;
     margin: 0;
     background: transparent;
     cursor: zoom-in;
     text-align: left;
+    border-radius: inherit;
+    overflow: hidden;
   }
   .article-cover-trigger:focus-visible {
     outline: 3px solid rgba(23, 98, 89, 0.32);
@@ -332,7 +338,7 @@ const articleSchema = {
     width: 100%;
     height: auto;
     object-fit: contain;
-    max-height: min(78vh, 880px);
+    max-height: min(88vh, 1020px);
   }
 
   /* Article body: prose + aside sidebar */
@@ -420,14 +426,35 @@ const articleSchema = {
     border-bottom: none;
   }
 
+  :global(.ratgeber-prose .article-inline-image) {
+    margin: clamp(2rem, 4vw, 2.8rem) 0 clamp(2.3rem, 4vw, 3.1rem);
+  }
+
+  :global(.ratgeber-prose ul + .article-inline-image),
+  :global(.ratgeber-prose ol + .article-inline-image) {
+    margin-top: clamp(2.8rem, 5vw, 3.6rem);
+  }
+
+  :global(.ratgeber-prose h2 + .article-inline-image) {
+    margin-top: 1.6rem;
+  }
+
+  :global(.ratgeber-prose .article-inline-image + h2) {
+    margin-top: clamp(2.8rem, 5vw, 3.4rem);
+  }
+
   :global(.ratgeber-prose img) {
     border-radius: var(--radius-md);
     border: 1px solid rgba(190, 201, 197, 0.28);
-    margin: 1.5rem 0;
     background: var(--surface-container-low);
     padding: 6px;
     width: 100%;
     object-fit: contain;
+  }
+
+  :global(.ratgeber-prose .article-inline-image img) {
+    display: block;
+    margin: 0;
   }
 
   :global(.ratgeber-prose a) {
@@ -578,7 +605,7 @@ const articleSchema = {
       order: -1;
     }
     .article-cover-trigger {
-      padding: 8px;
+      padding: 0;
     }
 
     .article-cover img {
