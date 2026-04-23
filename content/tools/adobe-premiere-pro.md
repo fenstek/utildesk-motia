@@ -5,7 +5,7 @@ category: Design
 price_model: Abonnement
 tags: [design, video]
 official_url: "https://www.adobe.com/products/premiere.html"
-popularity: 76
+popularity: 80
 ---
 
 # Adobe Premiere Pro

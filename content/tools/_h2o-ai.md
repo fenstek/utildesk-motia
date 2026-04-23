@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://h2o.ai/"
-popularity: 50
+popularity: 58
 ---
 
 # H2O.ai

@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://auphonic.com/"
-popularity: 67
+popularity: 0
 ---
 
 # Auphonic

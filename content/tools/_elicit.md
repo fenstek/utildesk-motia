@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://elicit.com/"
-popularity: 54
+popularity: 61
 ---
 
 # Elicit

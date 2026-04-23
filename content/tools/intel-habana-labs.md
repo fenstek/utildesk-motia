@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://habana.ai/"
-popularity: 44
+popularity: 53
 ---
 
 # Intel Habana Labs
