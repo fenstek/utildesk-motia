@@ -10,7 +10,6 @@ import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favico
 import { fromContent } from "../../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
-import { CATEGORIES } from "../../lib/categories";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import {
   buildBreadcrumbSchema,
@@ -179,8 +178,7 @@ const sortedTags = Array.from(tagFrequency.entries())
     return a[0].localeCompare(b[0], "de");
   })
   .map(([tag]) => tag);
-const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 32);
-const featuredCategories = CATEGORIES.slice(0, 6);
+const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 24);
 const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
 const toolsItemListSchema = {
   "@context": "https://schema.org",
@@ -227,41 +225,10 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     </p>
   </section>
 
-  <section class="tools-discovery">
-    <div class="tools-discovery-panel">
-      <div class="tools-discovery-head">
-        <h2>Themen schneller finden</h2>
-        <a href="/category/" class="tools-discovery-more">Alle Kategorien</a>
-      </div>
-      <div class="tools-discovery-links">
-        {featuredCategories.map((category) => (
-          <a href={`/category/${category.slug}/`} class="tools-discovery-link">
-            {category.title}
-          </a>
-        ))}
-      </div>
-    </div>
-
-    <div class="tools-discovery-panel">
-      <div class="tools-discovery-head">
-        <h2>Passende Guides</h2>
-        <a href="/ratgeber/" class="tools-discovery-more">Zum Ratgeber</a>
-      </div>
-      <div class="tools-discovery-list">
-        {recentRatgeber.map((article) => (
-          <a href={`/ratgeber/${article.slug}/`} class="tools-discovery-article">
-            <strong>{article.data.title}</strong>
-            <span>{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- Tag Filter Row -->
   {visibleTags.length > 0 && (
     <div class="tag-filter-row" id="tag-filter-row">
-      <label class="tag-filter-label">Nach Tags filtern:</label>
+      <label class="tag-filter-label">Beliebte Tags:</label>
       <div class="tag-filter-list" id="tag-filter-list">
         {visibleTags.map((tag) => (
           <a
@@ -383,6 +350,23 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       Noch 0 Tools verborgen
     </div>
   </div>
+
+  {recentRatgeber.length > 0 && (
+    <section class="tools-guides">
+      <div class="tools-guides-head">
+        <h2>Passende Guides</h2>
+        <a href="/ratgeber/" class="tools-guides-more">Zum Ratgeber</a>
+      </div>
+      <div class="tools-guides-list">
+        {recentRatgeber.map((article) => (
+          <a href={`/ratgeber/${article.slug}/`} class="tools-guides-article">
+            <strong>{article.data.title}</strong>
+            <span>{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <!-- Client-side search + tag filter script (inline, no build tools) -->
   <script is:inline>
@@ -571,24 +555,13 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
 </BaseLayout>
 
 <style>
-  .tools-discovery {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 24px;
-    margin-bottom: 28px;
+  .tools-guides {
+    margin: 24px 0 56px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(23, 98, 89, 0.12);
   }
 
-  .tools-discovery-panel {
-    padding: 22px 24px;
-    border-radius: 26px;
-    border: 1px solid rgba(23, 98, 89, 0.12);
-    background:
-      radial-gradient(circle at top left, rgba(23, 98, 89, 0.08), transparent 42%),
-      linear-gradient(145deg, rgba(255, 250, 243, 0.76), rgba(23, 98, 89, 0.03));
-    box-shadow: 0 16px 36px rgba(18, 28, 24, 0.05);
-  }
-
-  .tools-discovery-head {
+  .tools-guides-head {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -596,53 +569,27 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     margin-bottom: 16px;
   }
 
-  .tools-discovery-head h2 {
+  .tools-guides-head h2 {
     margin: 0;
-    font-size: 1.06rem;
+    font-size: 1.18rem;
     font-weight: 800;
     color: var(--on-surface);
   }
 
-  .tools-discovery-more {
+  .tools-guides-more {
     font-size: 0.92rem;
     font-weight: 700;
     text-decoration: none;
     color: var(--primary);
   }
 
-  .tools-discovery-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .tools-discovery-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 14px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--on-surface);
-    background: rgba(255, 255, 255, 0.82);
-    border: 1px solid rgba(23, 98, 89, 0.10);
-    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
-  }
-
-  .tools-discovery-link:hover,
-  .tools-discovery-article:hover {
-    transform: translateY(-2px);
-    border-color: rgba(23, 98, 89, 0.18);
-    box-shadow: 0 12px 28px rgba(18, 28, 24, 0.06);
-  }
-
-  .tools-discovery-list {
+  .tools-guides-list {
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
   }
 
-  .tools-discovery-article {
+  .tools-guides-article {
     display: grid;
     gap: 6px;
     padding: 14px 16px;
@@ -654,20 +601,26 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
   }
 
-  .tools-discovery-article strong {
+  .tools-guides-article:hover {
+    transform: translateY(-2px);
+    border-color: rgba(23, 98, 89, 0.18);
+    box-shadow: 0 12px 28px rgba(18, 28, 24, 0.06);
+  }
+
+  .tools-guides-article strong {
     font-size: 0.96rem;
     line-height: 1.35;
     color: var(--on-surface);
   }
 
-  .tools-discovery-article span {
+  .tools-guides-article span {
     font-size: 0.9rem;
     line-height: 1.55;
     color: var(--secondary);
   }
 
   @media (max-width: 920px) {
-    .tools-discovery {
+    .tools-guides-list {
       grid-template-columns: 1fr;
     }
   }
