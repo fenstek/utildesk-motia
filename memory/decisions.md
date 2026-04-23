@@ -45,3 +45,7 @@
 - Keep the IndexNow verification key public and repo-tracked at the site root; unlike Bing API credentials, it is not a secret.
 - Automate IndexNow only for canonical HTML pages and only after they are live.
 - Keep `ratgeber` IndexNow submission separate from the `tools` cron flow, just like the release process itself.
+- Prefer dual IndexNow notification for this project:
+  - submit to the global protocol endpoint for broad sharing;
+  - also submit directly to Bing's own endpoint to improve Bing-side observability and reduce ambiguity in Webmaster tooling.
+- Keep post-deploy freshness hooks reachable from the actual release path; do not leave IndexNow calls below early `exit 0` branches in cron automation.

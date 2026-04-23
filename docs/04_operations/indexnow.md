@@ -29,11 +29,20 @@ python scripts/indexnow_submit.py submit-batch --url https://tools.utildesk.de/ 
 python scripts/indexnow_submit.py submit-git-range --rev-range HEAD~1..HEAD --wait-live
 ```
 
+By default the helper now submits to two endpoints:
+
+- the global IndexNow endpoint `https://api.indexnow.org/indexnow`
+- the direct Bing endpoint `https://www.bing.com/indexnow`
+
+This keeps protocol-wide sharing, while also giving Bing a direct signal for
+its own telemetry path.
+
 ## Current Automation
 
 - `scripts/cron_publish_push.sh` now runs a non-blocking post-deploy IndexNow step by default for the latest published tools commit.
 - It submits only canonical HTML URLs derived from the latest git range.
 - It waits until the key file and changed URLs are live before notifying the protocol endpoint.
+- The post-deploy hook is now called from the actual synced-publish path, not only from the tail of the script.
 
 Important:
 
