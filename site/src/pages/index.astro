@@ -234,71 +234,10 @@ const homepageSchemas = [
     </div>
   </section>
 
-  <!-- Tag Cloud Section -->
-  <section class="section home-section home-tags home-v2">
-    {sortedTags.length > 0 ? (
-      <div class="tag-cloud home-tags-cloud">
-        {visibleTags.map(([tag, count]) => (
-          <a
-            href={tagHref(tag)}
-            class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
-          >
-            {tag}
-          </a>
-        ))}
-      </div>
-    ) : (
-      <p style="text-align: center; color: var(--text-muted);">
-        Keine Tags gefunden.
-      </p>
-    )}
-  </section>
-
-  <section class="section home-section home-discovery">
-    <div class="section-header home-section-header">
-      <h2 class="section-title">Themen &amp; Guides</h2>
-      <p class="section-subtitle">
-        Schneller Einstieg in die wichtigsten Kategorien und redaktionellen Einordnungen.
-      </p>
-    </div>
-
-    <div class="discovery-grid">
-      <div class="discovery-panel">
-        <div class="discovery-panel-head">
-          <h3>Kategorien</h3>
-          <a href="/category/" class="discovery-more">Alle Kategorien</a>
-        </div>
-        <div class="discovery-list">
-          {featuredCategories.map((category) => (
-            <a href={`/category/${category.slug}/`} class="discovery-item">
-              <strong>{category.title}</strong>
-              <span>{category.description}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div class="discovery-panel">
-        <div class="discovery-panel-head">
-          <h3>Ratgeber</h3>
-          <a href="/ratgeber/" class="discovery-more">Zum Ratgeber</a>
-        </div>
-        <div class="discovery-list">
-          {recentRatgeber.map((article) => (
-            <a href={`/ratgeber/${article.slug}/`} class="discovery-item">
-              <strong>{article.data.title}</strong>
-              <span>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Featured Tools Section -->
   <section class="section home-section">
     <div class="section-header home-section-header">
-      <h2 class="section-title">Featured Tools</h2>
+      <h2 class="section-title">Ausgewählte Tools</h2>
       <p class="section-subtitle">
         Eine Auswahl aus unserem Verzeichnis
       </p>
@@ -366,6 +305,67 @@ const homepageSchemas = [
         Alle {enabledTools.length} Tools durchsuchen →
       </a>
     </div>
+  </section>
+
+  <section class="section home-section home-discovery">
+    <div class="section-header home-section-header">
+      <h2 class="section-title">Themen &amp; Guides</h2>
+      <p class="section-subtitle">
+        Schneller Einstieg in die wichtigsten Kategorien und redaktionellen Einordnungen.
+      </p>
+    </div>
+
+    <div class="discovery-grid">
+      <div class="discovery-panel">
+        <div class="discovery-panel-head">
+          <h3>Kategorien</h3>
+          <a href="/category/" class="discovery-more">Alle Kategorien</a>
+        </div>
+        <div class="discovery-list">
+          {featuredCategories.map((category) => (
+            <a href={`/category/${category.slug}/`} class="discovery-item">
+              <strong>{category.title}</strong>
+              <span>{category.description}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="discovery-panel">
+        <div class="discovery-panel-head">
+          <h3>Ratgeber</h3>
+          <a href="/ratgeber/" class="discovery-more">Zum Ratgeber</a>
+        </div>
+        <div class="discovery-list">
+          {recentRatgeber.map((article) => (
+            <a href={`/ratgeber/${article.slug}/`} class="discovery-item">
+              <strong>{article.data.title}</strong>
+              <span>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tag Cloud Section -->
+  <section class="section home-section home-tags home-v2">
+    {sortedTags.length > 0 ? (
+      <div class="tag-cloud home-tags-cloud">
+        {visibleTags.map(([tag, count]) => (
+          <a
+            href={tagHref(tag)}
+            class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
+          >
+            {tag}
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p style="text-align: center; color: var(--text-muted);">
+        Keine Tags gefunden.
+      </p>
+    )}
   </section>
 </BaseLayout>
 
