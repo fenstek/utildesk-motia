@@ -1,5 +1,18 @@
 ﻿---
 
+import {
+  DEFAULT_ROBOTS_CONTENT,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+} from "../lib/siteMeta";
+import {
+  buildCollectionMetaTitle,
+  buildToolMetaTitle,
+  enrichMetaDescription,
+  humanizeTagLabel,
+  normalizeSeoText,
+} from "../lib/seoText";
+
 interface Props {
 
   title?: string;
@@ -15,13 +28,74 @@ const {
   description = SITE_DESCRIPTION,
 } = Astro.props;
 
+const pathname = Astro.url.pathname;
+const normalizedTitle = normalizeSeoText(title);
+const normalizedDescription = normalizeSeoText(description);
+const siteSuffixPattern = /\s+(?:—|–|-|\|)\s+Utildesk$/;
+const baseTitle = normalizeSeoText(normalizedTitle.replace(siteSuffixPattern, ""));
+const pathSegments = pathname.split("/").filter(Boolean);
 
+let resolvedTitle = normalizedTitle;
+let resolvedDescription = normalizedDescription;
 
-import {
-  DEFAULT_ROBOTS_CONTENT,
-  SITE_DESCRIPTION,
-  SITE_NAME,
-} from "../lib/siteMeta";
+if (/^\/tools\/[^/]+\/$/.test(pathname) && !pathname.startsWith("/tools/tag/")) {
+  const toolName = baseTitle || humanizeTagLabel(pathSegments[1] ?? "Tool");
+  resolvedTitle = buildToolMetaTitle(toolName);
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    `Auf Utildesk findest du ${toolName} mit Funktionen, Preis-Modell und typischen Einsatzbereichen im kompakten Überblick.`,
+  ]);
+} else if (pathname === "/tools/") {
+  resolvedTitle = buildCollectionMetaTitle("AI-Tools", "Apps und Produktivitätstools entdecken");
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Durchsuche das Utildesk-Verzeichnis nach Funktionen, Kategorien und Einsatzbereichen für produktive KI-Workflows.",
+  ]);
+} else if (/^\/tools\/tag\/[^/]+\/$/.test(pathname)) {
+  const tagLabel = humanizeTagLabel(pathSegments[2] ?? baseTitle);
+  resolvedTitle = buildCollectionMetaTitle(tagLabel || "Tag", "AI-Tools mit diesem Tag entdecken");
+  resolvedDescription = enrichMetaDescription(
+    resolvedDescription || `Tools mit dem Tag ${tagLabel} im Utildesk-Verzeichnis.`,
+    ["Vergleiche passende Tools, Kategorien und typische Einsatzbereiche auf einen Blick."],
+  );
+} else if (pathname === "/category/") {
+  resolvedTitle = buildCollectionMetaTitle("AI-Tools", "nach Kategorien entdecken");
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Finde schneller passende Tools für Automatisierung, Produktivität, Schreiben, Design und Entwickler-Workflows.",
+  ]);
+} else if (/^\/category\/[^/]+\/$/.test(pathname)) {
+  const categoryName = baseTitle || humanizeTagLabel(pathSegments[1] ?? "Kategorie");
+  resolvedTitle = buildCollectionMetaTitle(categoryName, "passende AI-Tools entdecken");
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    `Vergleiche Tools, Einsatzbereiche und typische Workflows für die Kategorie ${categoryName}.`,
+  ]);
+} else if (pathname === "/ratgeber/") {
+  resolvedTitle = "KI-Ratgeber, Vergleiche und Workflow-Guides | Utildesk";
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Lies redaktionelle Einordnungen, Tool-Vergleiche und Praxis-Guides für Teams, die KI produktiv einsetzen wollen.",
+  ]);
+} else if (/^\/ratgeber\/[^/]+\/$/.test(pathname)) {
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Lies die Einordnung, Praxisbeispiele und Tool-Bezüge im Utildesk-Ratgeber.",
+  ]);
+} else if (pathname === "/datenschutz" || pathname === "/datenschutz/") {
+  resolvedTitle = "Datenschutzerklärung und Datenverarbeitung | Utildesk";
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Hier findest du die Hinweise zur Datenverarbeitung, Hosting-Infrastruktur und Kontaktaufnahme auf Utildesk.",
+  ]);
+} else if (pathname === "/impressum" || pathname === "/impressum/") {
+  resolvedTitle = "Impressum und Anbieterkennzeichnung | Utildesk";
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Hier findest du die gesetzlichen Anbieterangaben und Kontaktinformationen für Utildesk.",
+  ]);
+} else if (pathname === "/") {
+  resolvedTitle = "Utildesk: AI-Tools, Automatisierung und KI-Ratgeber";
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Entdecke kuratierte Tools, Workflows und redaktionelle Guides für produktive KI-Einsätze an einem Ort.",
+  ]);
+} else {
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    "Mehr Kontext, Einsatzbereiche und weiterführende Orientierung findest du auf Utildesk.",
+  ]);
+}
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
@@ -43,15 +117,15 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content={description} />
+    <meta name="description" content={resolvedDescription} />
     <meta name="robots" content={DEFAULT_ROBOTS_CONTENT} />
     <meta property="og:site_name" content={SITE_NAME} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={resolvedTitle} />
+    <meta property="og:description" content={resolvedDescription} />
     <meta property="og:locale" content="de_DE" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:title" content={resolvedTitle} />
+    <meta name="twitter:description" content={resolvedDescription} />
     <meta name="application-name" content={SITE_NAME} />
     <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
 
@@ -107,7 +181,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     <link rel="stylesheet" href="/styles/global.css" />
 
-    <title>{title}</title>
+    <title>{resolvedTitle}</title>
 
     <slot name="head" />
 
