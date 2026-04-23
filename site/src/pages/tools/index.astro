@@ -345,7 +345,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     <button type="button" id="load-more-btn" class="hero-cta">Mehr anzeigen</button>
     <div
       id="hidden-count-info"
-      style="display: none; margin-top: 10px; text-align: center; font-size: 0.9rem; color: rgba(0,0,0,0.6);"
+      style="display: none; margin-top: 10px; text-align: center; font-size: 0.9rem; color: var(--text-muted);"
     >
       Noch 0 Tools verborgen
     </div>
@@ -617,6 +617,36 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     font-size: 0.9rem;
     line-height: 1.55;
     color: var(--secondary);
+  }
+
+  :global([data-theme="dark"]) .tools-guides {
+    border-top-color: rgba(142, 216, 201, 0.16);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-head h2 {
+    color: rgba(246, 252, 249, 0.96);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-more {
+    color: #8ed8c9;
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article {
+    background: rgba(22, 41, 36, 0.88);
+    border-color: rgba(142, 216, 201, 0.18);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article:hover {
+    border-color: rgba(142, 216, 201, 0.34);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article strong {
+    color: #b8f3e7;
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article span {
+    color: rgba(226, 238, 233, 0.72);
   }
 
   @media (max-width: 920px) {

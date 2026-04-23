@@ -447,6 +447,40 @@ const homepageSchemas = [
     color: var(--secondary);
   }
 
+  :global([data-theme="dark"]) .discovery-panel {
+    border-color: rgba(142, 216, 201, 0.18);
+    background:
+      radial-gradient(circle at top left, rgba(142, 216, 201, 0.10), transparent 44%),
+      linear-gradient(145deg, rgba(16, 32, 28, 0.92), rgba(7, 17, 14, 0.96));
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.24);
+  }
+
+  :global([data-theme="dark"]) .discovery-panel-head h3 {
+    color: rgba(246, 252, 249, 0.96);
+  }
+
+  :global([data-theme="dark"]) .discovery-more {
+    color: #8ed8c9;
+  }
+
+  :global([data-theme="dark"]) .discovery-item {
+    background: rgba(22, 41, 36, 0.88);
+    border-color: rgba(142, 216, 201, 0.18);
+  }
+
+  :global([data-theme="dark"]) .discovery-item:hover {
+    border-color: rgba(142, 216, 201, 0.34);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+  }
+
+  :global([data-theme="dark"]) .discovery-item strong {
+    color: rgba(246, 252, 249, 0.96);
+  }
+
+  :global([data-theme="dark"]) .discovery-item span {
+    color: rgba(226, 238, 233, 0.72);
+  }
+
   @media (max-width: 900px) {
     .discovery-grid {
       grid-template-columns: 1fr;
