@@ -5,7 +5,7 @@ category: Design
 price_model: Abonnement
 tags: [ai, design, vector, creative, automation]
 official_url: "https://www.adobe.com/products/illustrator.html"
-popularity: 78
+popularity: 82
 ---
 
 # Adobe Illustrator

@@ -5,7 +5,7 @@ category: AI
 price_model: Kostenlos
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
-popularity: 9
+popularity: 11
 ---
 
 # StoryMapJS
