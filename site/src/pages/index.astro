@@ -8,6 +8,8 @@ import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../lib/favicon";
 import { fromContent } from "../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../lib/priceModel";
 import { tagHref } from "../lib/tagRoutes";
+import { CATEGORIES } from "../lib/categories";
+import { listRatgeberEntries } from "../lib/ratgeber";
 import {
   buildCollectionPageSchema,
   buildOrganizationSchema,
@@ -173,6 +175,8 @@ restTools.sort(
 
 // Combine: pinned first, then top by popularity, limit to 12
 const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
+const featuredCategories = CATEGORIES.slice(0, 4);
+const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
 const featuredToolsSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -250,6 +254,47 @@ const homepageSchemas = [
     )}
   </section>
 
+  <section class="section home-section home-discovery">
+    <div class="section-header home-section-header">
+      <h2 class="section-title">Themen &amp; Guides</h2>
+      <p class="section-subtitle">
+        Schneller Einstieg in die wichtigsten Kategorien und redaktionellen Einordnungen.
+      </p>
+    </div>
+
+    <div class="discovery-grid">
+      <div class="discovery-panel">
+        <div class="discovery-panel-head">
+          <h3>Kategorien</h3>
+          <a href="/category/" class="discovery-more">Alle Kategorien</a>
+        </div>
+        <div class="discovery-list">
+          {featuredCategories.map((category) => (
+            <a href={`/category/${category.slug}/`} class="discovery-item">
+              <strong>{category.title}</strong>
+              <span>{category.description}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="discovery-panel">
+        <div class="discovery-panel-head">
+          <h3>Ratgeber</h3>
+          <a href="/ratgeber/" class="discovery-more">Zum Ratgeber</a>
+        </div>
+        <div class="discovery-list">
+          {recentRatgeber.map((article) => (
+            <a href={`/ratgeber/${article.slug}/`} class="discovery-item">
+              <strong>{article.data.title}</strong>
+              <span>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Featured Tools Section -->
   <section class="section home-section">
     <div class="section-header home-section-header">
@@ -323,3 +368,88 @@ const homepageSchemas = [
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .home-discovery {
+    padding-top: 8px;
+  }
+
+  .discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .discovery-panel {
+    padding: 24px;
+    border: 1px solid rgba(23, 98, 89, 0.12);
+    border-radius: 28px;
+    background:
+      radial-gradient(circle at top left, rgba(23, 98, 89, 0.08), transparent 42%),
+      linear-gradient(145deg, rgba(255, 250, 243, 0.72), rgba(23, 98, 89, 0.03));
+    box-shadow: 0 16px 36px rgba(18, 28, 24, 0.05);
+  }
+
+  .discovery-panel-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+
+  .discovery-panel-head h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--on-surface);
+  }
+
+  .discovery-more {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .discovery-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .discovery-item {
+    display: grid;
+    gap: 6px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(23, 98, 89, 0.10);
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  }
+
+  .discovery-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(23, 98, 89, 0.18);
+    box-shadow: 0 12px 28px rgba(18, 28, 24, 0.06);
+  }
+
+  .discovery-item strong {
+    font-size: 0.98rem;
+    line-height: 1.3;
+    color: var(--on-surface);
+  }
+
+  .discovery-item span {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--secondary);
+  }
+
+  @media (max-width: 900px) {
+    .discovery-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
