@@ -23,7 +23,10 @@ from typing import Iterable
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SITE_PUBLIC_DIR = ROOT_DIR / "site" / "public"
 DEFAULT_SITE_URL = "https://tools.utildesk.de"
-DEFAULT_ENDPOINT = "https://api.indexnow.org/indexnow"
+DEFAULT_ENDPOINTS = [
+    "https://api.indexnow.org/indexnow",
+    "https://www.bing.com/indexnow",
+]
 KEY_PATTERN = re.compile(r"^[A-Za-z0-9-]{8,128}$")
 TOOLS_PATH_RE = re.compile(r"^content/tools/_?(?P<slug>[^/]+)\.md$")
 RATGEBER_PATH_RE = re.compile(r"^content/ratgeber/(?P<slug>[^/]+)\.md$")
@@ -75,9 +78,34 @@ def discover_indexnow_key_file(public_dir: Path) -> tuple[str, Path]:
     return candidates[0]
 
 
-def get_settings() -> dict[str, str]:
+def parse_indexnow_endpoints() -> list[str]:
+    raw = str(os.environ.get("INDEXNOW_ENDPOINTS", "")).strip()
+    if raw:
+        values = [item.strip() for item in raw.split(",") if item.strip()]
+    else:
+        single = str(os.environ.get("INDEXNOW_ENDPOINT", "")).strip()
+        values = [single] if single else list(DEFAULT_ENDPOINTS)
+
+    endpoints: list[str] = []
+    seen: set[str] = set()
+    for endpoint in values:
+        parsed = urllib.parse.urlparse(endpoint)
+        if parsed.scheme != "https" or not parsed.netloc:
+            raise SystemExit(f"Invalid IndexNow endpoint: {endpoint}")
+        normalized = endpoint.rstrip("/")
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        endpoints.append(normalized)
+
+    if not endpoints:
+        raise SystemExit("No IndexNow endpoints configured.")
+    return endpoints
+
+
+def get_settings() -> dict[str, object]:
     site_url = normalize_site_url(os.environ.get("INDEXNOW_SITE_URL", DEFAULT_SITE_URL))
-    endpoint = str(os.environ.get("INDEXNOW_ENDPOINT", DEFAULT_ENDPOINT)).strip() or DEFAULT_ENDPOINT
+    endpoints = parse_indexnow_endpoints()
 
     key = str(os.environ.get("INDEXNOW_KEY", "")).strip()
     key_location = str(os.environ.get("INDEXNOW_KEY_LOCATION", "")).strip()
@@ -89,7 +117,7 @@ def get_settings() -> dict[str, str]:
             key_location = f"{site_url}/{key}.txt"
         return {
             "site_url": site_url,
-            "endpoint": endpoint,
+            "endpoints": endpoints,
             "key": key,
             "key_location": key_location,
         }
@@ -97,7 +125,7 @@ def get_settings() -> dict[str, str]:
     key_value, key_file = discover_indexnow_key_file(SITE_PUBLIC_DIR)
     return {
         "site_url": site_url,
-        "endpoint": endpoint,
+        "endpoints": endpoints,
         "key": key_value,
         "key_location": f"{site_url}/{key_file.name}",
     }
@@ -148,7 +176,7 @@ def wait_until_accessible(
 
 
 def verify_live_key(
-    settings: dict[str, str],
+    settings: dict[str, object],
     *,
     timeout_seconds: int,
     poll_interval: int,
@@ -296,7 +324,7 @@ def chunked(urls: list[str], size: int = 10000) -> Iterable[list[str]]:
 
 
 def submit_urls(
-    settings: dict[str, str],
+    settings: dict[str, object],
     urls: list[str],
     *,
     wait_live: bool,
@@ -344,7 +372,7 @@ def submit_urls(
             {
                 "ok": True,
                 "dryRun": True,
-                "endpoint": settings["endpoint"],
+                "endpoints": settings["endpoints"],
                 "siteUrl": settings["site_url"],
                 "keyLocation": settings["key_location"],
                 "count": len(urls),
@@ -357,25 +385,29 @@ def submit_urls(
 
     host = urllib.parse.urlparse(settings["site_url"]).netloc
     responses = []
-    for batch in chunked(urls):
-        status, body = post_indexnow_batch(
-            endpoint=settings["endpoint"],
-            host=host,
-            key=settings["key"],
-            key_location=settings["key_location"],
-            urls=batch,
-        )
-        responses.append({"status": status, "count": len(batch), "body": body})
-        if status not in {200, 202}:
-            raise SystemExit(
-                f"IndexNow submission failed with HTTP {status}: {body or 'no response body'}"
+    for endpoint in settings["endpoints"]:
+        endpoint_responses = []
+        for batch in chunked(urls):
+            status, body = post_indexnow_batch(
+                endpoint=str(endpoint),
+                host=host,
+                key=str(settings["key"]),
+                key_location=str(settings["key_location"]),
+                urls=batch,
             )
+            endpoint_responses.append({"status": status, "count": len(batch), "body": body})
+            if status not in {200, 202}:
+                raise SystemExit(
+                    f"IndexNow submission to {endpoint} failed with HTTP {status}: "
+                    f"{body or 'no response body'}"
+                )
+        responses.append({"endpoint": endpoint, "batches": endpoint_responses})
 
     print_json(
         {
             "ok": True,
             "siteUrl": settings["site_url"],
-            "endpoint": settings["endpoint"],
+            "endpoints": settings["endpoints"],
             "keyLocation": settings["key_location"],
             "count": len(urls),
             "urls": urls,
@@ -401,7 +433,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     submit_batch = subparsers.add_parser(
         "submit-batch",
-        help="Submit one or more URLs to the IndexNow global endpoint.",
+        help="Submit one or more URLs to the configured IndexNow endpoints.",
     )
     submit_batch.add_argument("--url", action="append", required=True)
     submit_batch.add_argument("--wait-live", action="store_true")
@@ -437,7 +469,7 @@ def main() -> int:
             {
                 "ok": True,
                 "siteUrl": settings["site_url"],
-                "endpoint": settings["endpoint"],
+                "endpoints": settings["endpoints"],
                 **key_check,
             }
         )

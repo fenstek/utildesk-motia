@@ -167,5 +167,6 @@ Fast URL-change notifications for canonical HTML pages on `tools.utildesk.de`.
 
 ### Notes
 - IndexNow key is public by design and is not treated as a secret.
+- By default the helper submits to both the global IndexNow endpoint and the direct Bing endpoint.
 - Submit canonical HTML pages only.
-- `scripts/cron_publish_push.sh` now includes a non-blocking post-deploy IndexNow step for tools releases.
+- `scripts/cron_publish_push.sh` now includes a non-blocking post-deploy IndexNow step for tools releases, and the hook is called from the real synced-publish path.

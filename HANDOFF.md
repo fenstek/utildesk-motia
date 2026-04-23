@@ -156,6 +156,10 @@
 - Operational note:
   - `202` is acceptable for the first submission because IndexNow may still be validating the new key file;
   - later submissions should normally move to `200` once validation is cached.
+- Follow-up completion on the same day:
+  - `scripts/indexnow_submit.py` now submits to both the global IndexNow endpoint and the direct Bing endpoint;
+  - a live re-submit returned `200` from both endpoints for `/`, `/tools/`, `/ratgeber/`, and the latest article;
+  - `scripts/cron_publish_push.sh` was corrected so the post-deploy IndexNow hook is not skipped by an earlier successful `exit 0`.
 
 
 ## Release Note

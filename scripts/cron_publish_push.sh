@@ -53,6 +53,49 @@ resolve_python_bin() {
   return 1
 }
 
+run_post_deploy_hooks() {
+  echo "[cron] done: $(date -Is)"
+
+  # Optional live route validation on production after Pages deploy.
+  # Non-blocking here because deploy is asynchronous and already triggered by master updates.
+  if [[ "${POST_DEPLOY_LIVE_CHECK:-0}" == "1" ]]; then
+    PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
+    echo "[cron] post-deploy live check: ${PROD_BASE_URL}"
+    for _try in 1 2 3 4 5; do
+      if node scripts/check_stale_routes_prod.mjs --base "${PROD_BASE_URL}"; then
+        echo "[cron] post-deploy live check passed"
+        break
+      fi
+      echo "[cron] WARN post-deploy live check failed (try ${_try}/5)"
+      sleep 20
+    done
+  fi
+
+  # Optional post-deploy IndexNow notification for changed canonical HTML URLs.
+  # Non-blocking and limited to the latest published commit.
+  if [[ "${POST_DEPLOY_INDEXNOW:-1}" == "1" ]]; then
+    PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
+    INDEXNOW_REV_RANGE="${INDEXNOW_REV_RANGE:-HEAD~1..HEAD}"
+    INDEXNOW_TIMEOUT_SECONDS="${INDEXNOW_TIMEOUT_SECONDS:-600}"
+    INDEXNOW_POLL_INTERVAL="${INDEXNOW_POLL_INTERVAL:-15}"
+    INDEXNOW_BIN="$(resolve_python_bin || true)"
+    if [[ -z "$INDEXNOW_BIN" ]]; then
+      echo "[cron] WARN post-deploy IndexNow skipped: no python interpreter found"
+    else
+      echo "[cron] post-deploy IndexNow: base=${PROD_BASE_URL} rev_range=${INDEXNOW_REV_RANGE}"
+      if "$INDEXNOW_BIN" scripts/indexnow_submit.py submit-git-range \
+        --rev-range "${INDEXNOW_REV_RANGE}" \
+        --wait-live \
+        --timeout-seconds "${INDEXNOW_TIMEOUT_SECONDS}" \
+        --poll-interval "${INDEXNOW_POLL_INTERVAL}"; then
+        echo "[cron] post-deploy IndexNow submit completed"
+      else
+        echo "[cron] WARN post-deploy IndexNow submit failed"
+      fi
+    fi
+  fi
+}
+
 echo "[cron] start:
 node scripts/guard_deny_md.mjs
  $(date -Is)"
@@ -181,6 +224,7 @@ echo "[cron] refresh remote refs after wrapper sync"
 git fetch origin
 if [[ "$(git rev-parse origin/master)" == "$(git rev-parse origin/autobot)" ]]; then
   echo "[cron] autobot and master already synced -> skip PR/merge flow"
+  run_post_deploy_hooks
   exit 0
 fi
 
@@ -260,43 +304,4 @@ if [[ "${POST_PUBLISH_URL_AUDIT:-0}" == "1" ]]; then
   fi
 fi
 
-echo "[cron] done: $(date -Is)"
-
-# 7) Optional live route validation on production after Pages deploy.
-#    Non-blocking here because deploy is asynchronous and already triggered by master updates.
-if [[ "${POST_DEPLOY_LIVE_CHECK:-0}" == "1" ]]; then
-  PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
-  echo "[cron] post-deploy live check: ${PROD_BASE_URL}"
-  for _try in 1 2 3 4 5; do
-    if node scripts/check_stale_routes_prod.mjs --base "${PROD_BASE_URL}"; then
-      echo "[cron] post-deploy live check passed"
-      break
-    fi
-    echo "[cron] WARN post-deploy live check failed (try ${_try}/5)"
-    sleep 20
-  done
-fi
-
-# 8) Optional post-deploy IndexNow notification for changed canonical HTML URLs.
-#    Non-blocking and limited to the latest published commit.
-if [[ "${POST_DEPLOY_INDEXNOW:-1}" == "1" ]]; then
-  PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
-  INDEXNOW_REV_RANGE="${INDEXNOW_REV_RANGE:-HEAD~1..HEAD}"
-  INDEXNOW_TIMEOUT_SECONDS="${INDEXNOW_TIMEOUT_SECONDS:-600}"
-  INDEXNOW_POLL_INTERVAL="${INDEXNOW_POLL_INTERVAL:-15}"
-  INDEXNOW_BIN="$(resolve_python_bin || true)"
-  if [[ -z "$INDEXNOW_BIN" ]]; then
-    echo "[cron] WARN post-deploy IndexNow skipped: no python interpreter found"
-  else
-    echo "[cron] post-deploy IndexNow: base=${PROD_BASE_URL} rev_range=${INDEXNOW_REV_RANGE}"
-    if "$INDEXNOW_BIN" scripts/indexnow_submit.py submit-git-range \
-      --rev-range "${INDEXNOW_REV_RANGE}" \
-      --wait-live \
-      --timeout-seconds "${INDEXNOW_TIMEOUT_SECONDS}" \
-      --poll-interval "${INDEXNOW_POLL_INTERVAL}"; then
-      echo "[cron] post-deploy IndexNow submit completed"
-    else
-      echo "[cron] WARN post-deploy IndexNow submit failed"
-    fi
-  fi
-fi
+run_post_deploy_hooks

@@ -163,6 +163,11 @@
 - Live verification completed on `2026-04-23`:
   - `python scripts/indexnow_submit.py smoke` succeeded against the public key file;
   - first live batch submission for `/`, `/tools/`, `/ratgeber/`, and the latest article returned `202 Accepted`, which matches initial key-validation handling in the protocol.
+- Follow-up hardening completed on `2026-04-23`:
+  - `scripts/indexnow_submit.py` now submits to both `https://api.indexnow.org/indexnow` and the direct Bing endpoint `https://www.bing.com/indexnow`;
+  - `scripts/cron_publish_push.sh` was fixed so the post-deploy IndexNow hook runs from the real synced-publish path, not only from the tail of the script.
+- Direct re-check completed on `2026-04-23`:
+  - both endpoints now returned `200 OK` for a live batch containing `/`, `/tools/`, `/ratgeber/`, and the latest article.
 
 - remote production head на момент публикации: `origin/master = 2130ee6`
 - локальная старая рабочая копия пользователя не является надёжным baseline для публикации
