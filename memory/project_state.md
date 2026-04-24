@@ -220,3 +220,31 @@
   - backup before entity grounding prompt: `/opt/openclaw/workspace/agent-newsman/scripts/article_rewrite_runner.py.bak-20260424-entity-rewrite`;
   - backup before weak-intro prompt: `/opt/openclaw/workspace/agent-newsman/scripts/article_rewrite_runner.py.bak-20260424-weak-intro`;
   - rewrite prompts now preserve article length/closing sections and add issue-specific rules for `missing_concrete_entities` and `weak_intro`.
+
+## 2026-04-24 Cloudflare Ratgeber Review Backend
+
+- A private Cloudflare Pages backend now exists for Ratgeber candidates:
+  - public route, protected by HTTP Basic Auth: `https://tools.utildesk.de/admin/ratgeber/`;
+  - current candidate route: `https://tools.utildesk.de/admin/ratgeber/candidate/20260424-ist-deine-website-bereit-f-r-ki-agenten-how_to-5d6c5491`;
+  - machine upload endpoint uses the Pages domain to avoid the public-domain browser-signature WAF: `https://utildesk-motia.pages.dev/admin/ratgeber/api/upload`.
+- Secrets:
+  - local gitignored file: `secrets/ratgeber_review_backend.env`;
+  - copied to `opcl`: `/opt/openclaw/workspace/agent-newsman/auth/utildesk_ratgeber_review.env`;
+  - Cloudflare Pages secrets: `RATGEBER_REVIEW_USER`, `RATGEBER_REVIEW_PASSWORD`, `RATGEBER_UPLOAD_TOKEN`.
+- Storage:
+  - Cloudflare KV namespace binding: `RATGEBER_REVIEW`;
+  - namespace id: `0648e73366e04931a03af182c7894603`.
+- Code added in this repo:
+  - `site/functions/admin/ratgeber/*` implements the protected review UI, asset serving, upload API, publish-queue API, and publish button;
+  - `scripts/ratgeber_cloudflare_candidate_sync.py` renders PNG candidate artwork and uploads candidates from `opcl`.
+- `opcl` article rendering/publishing algorithms now prefer PNG assets:
+  - `scripts/article_review_server.py` prefers `cover.png` / `workflow.png` in final previews, with SVG only as fallback;
+  - `scripts/export_ratgeber_package.py` exports `cover.png` / `workflow.png` into publish-ready packages when present, with SVG only as fallback;
+  - backups before the PNG preference patch:
+    - `/opt/openclaw/workspace/agent-newsman/scripts/export_ratgeber_package.py.bak-20260424-png-assets`;
+    - `/opt/openclaw/workspace/agent-newsman/scripts/article_review_server.py.bak-20260424-png-assets`.
+- `opcl` crontab now also runs Cloudflare candidate sync:
+  - `55 * * * * cd /opt/openclaw/workspace/agent-newsman && RATGEBER_REVIEW_UPLOAD_ENDPOINT=https://utildesk-motia.pages.dev/admin/ratgeber/api/upload ./.venv/bin/python scripts/ratgeber_cloudflare_candidate_sync.py --all-review-ready --limit 10 --token-env auth/utildesk_ratgeber_review.env >> logs/ratgeber_cloudflare_sync.log 2>&1`
+- Current candidate was uploaded with PNG assets:
+  - `cover.png`;
+  - `workflow.png`.
