@@ -1,10 +1,11 @@
 ---
-slug: "hubspot-marketing-hub"
-title: "HubSpot Marketing Hub"
-category: "AI"
-price_model: "Abonnement"
+slug: hubspot-marketing-hub
+title: HubSpot Marketing Hub
+category: AI
+price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
 official_url: "https://www.hubspot.com/products/marketing"
+popularity: 0
 ---
 
 # HubSpot Marketing Hub

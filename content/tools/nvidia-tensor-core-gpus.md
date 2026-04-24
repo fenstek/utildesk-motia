@@ -1,10 +1,11 @@
 ---
-slug: "nvidia-tensor-core-gpus"
-title: "NVIDIA Tensor Core GPUs"
-category: "AI"
-price_model: "Je nach Plan"
+slug: nvidia-tensor-core-gpus
+title: NVIDIA Tensor Core GPUs
+category: AI
+price_model: Je nach Plan
 tags: [hardware,gpu,ai-accelerators,developer-tools]
 official_url: "https://www.nvidia.com/en-us/data-center/tensor-cores/"
+popularity: 0
 ---
 
 # NVIDIA Tensor Core GPUs

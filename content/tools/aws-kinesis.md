@@ -1,10 +1,11 @@
 ---
-slug: "aws-kinesis"
-title: "AWS Kinesis"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: aws-kinesis
+title: AWS Kinesis
+category: AI
+price_model: Nutzungsbasiert
 tags: [data, streaming, cloud, analytics]
 official_url: "https://aws.amazon.com/kinesis/"
+popularity: 0
 ---
 
 # AWS Kinesis

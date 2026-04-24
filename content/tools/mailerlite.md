@@ -1,10 +1,11 @@
 ---
-slug: "mailerlite"
-title: "MailerLite"
-category: "AI"
-price_model: "Freemium"
+slug: mailerlite
+title: MailerLite
+category: AI
+price_model: Freemium
 tags: [email-marketing, automation, newsletter, marketing]
 official_url: "https://www.mailerlite.com/"
+popularity: 0
 ---
 
 # MailerLite

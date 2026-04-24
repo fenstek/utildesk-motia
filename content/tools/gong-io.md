@@ -1,10 +1,11 @@
 ---
-slug: "gong-io"
-title: "Gong.io"
-category: "AI"
-price_model: "Abonnement"
+slug: gong-io
+title: Gong.io
+category: AI
+price_model: Abonnement
 tags: [sales,conversation-intelligence,analytics,ai]
 official_url: "https://www.gong.io/"
+popularity: 0
 ---
 
 # Gong.io

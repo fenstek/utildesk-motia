@@ -1,10 +1,11 @@
 ---
-slug: "supermemo"
-title: "SuperMemo"
-category: "AI"
-price_model: "Abonnement"
+slug: supermemo
+title: SuperMemo
+category: AI
+price_model: Abonnement
 tags: [education, learning, flashcards, productivity]
 official_url: "https://www.supermemo.com/en"
+popularity: 0
 ---
 
 # SuperMemo

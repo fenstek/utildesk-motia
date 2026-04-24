@@ -1,10 +1,11 @@
 ---
-slug: "edx"
-title: "edX"
-category: "AI"
-price_model: "Freemium"
+slug: edx
+title: edX
+category: AI
+price_model: Freemium
 tags: [education, courses, career, learning]
 official_url: "https://www.edx.org/"
+popularity: 0
 ---
 
 # edX

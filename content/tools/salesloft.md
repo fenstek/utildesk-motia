@@ -1,10 +1,11 @@
 ---
-slug: "salesloft"
-title: "SalesLoft"
-category: "AI"
-price_model: "Abonnement"
+slug: salesloft
+title: SalesLoft
+category: AI
+price_model: Abonnement
 tags: [sales, automation, crm, communication]
 official_url: "https://www.salesloft.com/platform-overview"
+popularity: 0
 ---
 
 # SalesLoft

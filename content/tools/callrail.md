@@ -1,10 +1,11 @@
 ---
-slug: "callrail"
-title: "CallRail"
-category: "AI"
-price_model: "Abonnement"
+slug: callrail
+title: CallRail
+category: AI
+price_model: Abonnement
 tags: [customer-support, communication, analytics, marketing]
 official_url: "https://www.callrail.com/"
+popularity: 0
 ---
 
 # CallRail

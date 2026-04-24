@@ -1,10 +1,11 @@
 ---
-slug: "snowflake-snowpipe"
-title: "Snowflake Snowpipe"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: snowflake-snowpipe
+title: Snowflake Snowpipe
+category: AI
+price_model: Nutzungsbasiert
 tags: [data, automation, streaming, cloud]
 official_url: "https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro"
+popularity: 0
 ---
 
 # Snowflake Snowpipe
