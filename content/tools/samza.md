@@ -1,10 +1,11 @@
 ---
-slug: "samza"
-title: "Samza"
-category: "AI"
-price_model: "Open Source"
+slug: samza
+title: Samza
+category: AI
+price_model: Open Source
 tags: [data,streaming,open-source,developer-tools]
 official_url: "https://samza.apache.org/"
+popularity: 0
 ---
 
 # Samza

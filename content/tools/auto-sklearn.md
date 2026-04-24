@@ -1,10 +1,11 @@
 ---
-slug: "auto-sklearn"
-title: "Auto-sklearn"
-category: "AI"
-price_model: "Open Source"
+slug: auto-sklearn
+title: Auto-sklearn
+category: AI
+price_model: Open Source
 tags: [automl,machine-learning,open-source,developer-tools]
 official_url: "https://automl.github.io/auto-sklearn/master/"
+popularity: 0
 ---
 
 # Auto-sklearn

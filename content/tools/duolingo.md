@@ -1,10 +1,11 @@
 ---
-slug: "duolingo"
-title: "Duolingo"
-category: "AI"
-price_model: "Freemium"
+slug: duolingo
+title: Duolingo
+category: AI
+price_model: Freemium
 tags: [education,language,learning,mobile]
 official_url: "https://www.duolingo.com/"
+popularity: 0
 ---
 
 # Duolingo

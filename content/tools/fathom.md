@@ -1,10 +1,11 @@
 ---
-slug: "fathom"
-title: "Fathom"
-category: "AI"
-price_model: "Freemium"
+slug: fathom
+title: Fathom
+category: AI
+price_model: Freemium
 tags: [meetings, notes, transcription, productivity]
 official_url: "https://www.fathom.ai/"
+popularity: 0
 ---
 
 # Fathom

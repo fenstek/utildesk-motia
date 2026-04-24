@@ -1,10 +1,11 @@
 ---
-slug: "execvision"
-title: "ExecVision"
-category: "AI"
-price_model: "Abonnement"
+slug: execvision
+title: ExecVision
+category: AI
+price_model: Abonnement
 tags: [sales, coaching, analytics, conversation-intelligence]
 official_url: "https://execvision.io/"
+popularity: 0
 ---
 
 # ExecVision

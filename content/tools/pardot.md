@@ -1,10 +1,11 @@
 ---
-slug: "pardot"
-title: "Pardot (Salesforce)"
-category: "AI"
-price_model: "Abonnement"
+slug: pardot
+title: Pardot (Salesforce)
+category: AI
+price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
 official_url: "https://www.salesforce.com/marketing/b2b-automation/"
+popularity: 0
 ---
 
 # Pardot (Salesforce)

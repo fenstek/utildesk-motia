@@ -1,10 +1,11 @@
 ---
-slug: "coursera"
-title: "Coursera"
-category: "AI"
-price_model: "Freemium"
+slug: coursera
+title: Coursera
+category: AI
+price_model: Freemium
 tags: [education, courses, career, learning]
 official_url: "https://www.coursera.org/"
+popularity: 0
 ---
 
 # Coursera

@@ -1,10 +1,11 @@
 ---
-slug: "udemy"
-title: "Udemy"
-category: "AI"
-price_model: "Je nach Plan"
+slug: udemy
+title: Udemy
+category: AI
+price_model: Je nach Plan
 tags: [education, courses, learning, skills]
 official_url: "https://www.udemy.com/"
+popularity: 0
 ---
 
 # Udemy

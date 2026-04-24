@@ -1,10 +1,11 @@
 ---
-slug: "seeing-ai"
-title: "Seeing AI"
-category: "AI"
-price_model: "Kostenlos"
+slug: seeing-ai
+title: Seeing AI
+category: AI
+price_model: Kostenlos
 tags: [accessibility, vision, mobile, assistant]
 official_url: "https://www.seeingai.com/"
+popularity: 0
 ---
 
 # Seeing AI
