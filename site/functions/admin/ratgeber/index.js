@@ -3,7 +3,8 @@ import { readIndex } from "./_lib/storage.js";
 
 export async function onRequest({ env }) {
   const index = await readIndex(env);
-  const candidates = Array.isArray(index.candidates) ? index.candidates : [];
+  const candidates = (Array.isArray(index.candidates) ? index.candidates : [])
+    .filter((candidate) => !String(candidate?.jobId || "").startsWith("test-"));
   const cards = candidates.length
     ? `<div class="grid">${candidates.map(renderCandidateCard).join("")}</div>`
     : `<div class="empty">Пока в закрытое Cloudflare-хранилище не загружен ни один кандидат. Следующий шаг: VPS-синхронизатор отправит review-ready артефакты сюда автоматически.</div>`;
