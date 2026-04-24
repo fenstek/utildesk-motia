@@ -194,3 +194,29 @@
 - The `opcl` exporter was adjusted so future secondary article illustrations are injected later in the article:
   - target is after at least 2 substantive H2 sections and at least 320 words before the image;
   - backup on `opcl`: `/opt/openclaw/workspace/agent-newsman/scripts/export_ratgeber_package.py.bak-20260424-autonomy`.
+
+## 2026-04-24 Ratgeber NotebookLM Autonomy Loop
+
+- NotebookLM is the article-writing stage between queued jobs and review artifacts:
+  - `scripts/article_orchestrator.py` creates jobs only from mature `article_job_suggestions`;
+  - `article_execution/article_runner.py` creates a NotebookLM notebook, adds the editorial brief and sources, writes the article, renders illustrations, and emits `review_packet.json`;
+  - `scripts/article_rewrite_runner.py` runs conservative NotebookLM rewrite passes until the artifact becomes `review_ready` or attempts are exhausted;
+  - `scripts/article_review_server.py` serves the candidate in the final article layout for human review before publication.
+- `opcl` crontab now runs the autonomous loop:
+  - `20 * * * *` article orchestrator, limit 1;
+  - `35 * * * *` NotebookLM article runner, limit 1;
+  - `45 * * * *` NotebookLM rewrite runner, limit 1;
+  - `*/10 * * * *` review server watchdog for `127.0.0.1:18123`.
+- Current review UI access from the Windows workstation:
+  - SSH tunnel: `ssh -N -o ExitOnForwardFailure=yes -L 18123:127.0.0.1:18123 opcl`;
+  - browser URL: `http://127.0.0.1:18123/`.
+- Current generated candidate:
+  - job id: `20260424-ist-deine-website-bereit-f-r-ki-agenten-how_to-5d6c5491`;
+  - final preview: `http://127.0.0.1:18123/candidate/20260424-ist-deine-website-bereit-f-r-ki-agenten-how_to-5d6c5491`;
+  - status: `review_ready`;
+  - article quality: score `100`, blockers `0`, issue codes `[]`, word count `1204`, section count `6`;
+  - visual quality: cover `orchestration_v2`, workflow `howto_workflow`, all visual gates passing.
+- `opcl` rewrite runner was hardened for autonomy:
+  - backup before entity grounding prompt: `/opt/openclaw/workspace/agent-newsman/scripts/article_rewrite_runner.py.bak-20260424-entity-rewrite`;
+  - backup before weak-intro prompt: `/opt/openclaw/workspace/agent-newsman/scripts/article_rewrite_runner.py.bak-20260424-weak-intro`;
+  - rewrite prompts now preserve article length/closing sections and add issue-specific rules for `missing_concrete_entities` and `weak_intro`.
