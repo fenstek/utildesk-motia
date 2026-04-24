@@ -18,7 +18,7 @@ async function readJobId(request) {
   return form.get("jobId");
 }
 
-export async function onRequestPost({ env, request }) {
+export async function handlePost({ env, request }) {
   try {
     const kv = requireKv(env);
     const jobId = String(await readJobId(request) || "").trim();
@@ -50,7 +50,7 @@ export async function onRequestPost({ env, request }) {
 
     const acceptsHtml = (request.headers.get("Accept") || "").includes("text/html");
     if (acceptsHtml) {
-      return Response.redirect(new URL(`/admin/ratgeber/candidate/${encodeURIComponent(candidate.jobId)}?publish=queued`, request.url), 303);
+      return Response.redirect(new URL(`/admin/ratgeber/candidate/${encodeURIComponent(candidate.jobId)}?publish=queued`, request.url).toString(), 303);
     }
     return jsonResponse({ ok: true, request: publishRequest });
   } catch (error) {
@@ -61,6 +61,9 @@ export async function onRequestPost({ env, request }) {
   }
 }
 
-export function onRequest() {
+export function onRequest(context) {
+  if (context.request.method === "POST") {
+    return handlePost(context);
+  }
   return jsonResponse({ ok: false, error: "Method not allowed" }, { status: 405 });
 }

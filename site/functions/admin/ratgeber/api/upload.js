@@ -29,7 +29,7 @@ function requireImageAsset(name, contentType) {
   }
 }
 
-export async function onRequestPost({ env, request }) {
+export async function handlePost({ env, request }) {
   try {
     const kv = requireKv(env);
     const payload = await request.json();
@@ -81,6 +81,9 @@ export async function onRequestPost({ env, request }) {
   }
 }
 
-export function onRequest() {
+export function onRequest(context) {
+  if (context.request.method === "POST") {
+    return handlePost(context);
+  }
   return jsonResponse({ ok: false, error: "Method not allowed" }, { status: 405 });
 }

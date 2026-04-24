@@ -481,6 +481,7 @@ def post_json(endpoint: str, token: str, payload: dict[str, Any]) -> dict[str, A
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json; charset=utf-8",
             "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (compatible; UtildeskRatgeberSync/1.0; +https://tools.utildesk.de/)",
         },
     )
     try:
