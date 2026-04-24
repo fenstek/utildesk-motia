@@ -1,0 +1,20 @@
+# Generated from the Cloudflare Pages project and extended for private review tools.
+name = "utildesk-motia"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-01-27"
+
+[vars]
+NODE_VERSION = "20.20.0"
+
+[[kv_namespaces]]
+binding = "RATGEBER_REVIEW"
+id = "0648e73366e04931a03af182c7894603"
+
+[env.production.vars]
+NODE_VERSION = "20.20.0"
+PUBLIC_UMAMI_SRC = "https://stats.utildesk.de/script.js"
+PUBLIC_UMAMI_WEBSITE_ID = "1cb00ebe-8e55-45c6-ad41-e34ff8e28e18"
+
+[[env.production.kv_namespaces]]
+binding = "RATGEBER_REVIEW"
+id = "0648e73366e04931a03af182c7894603"
