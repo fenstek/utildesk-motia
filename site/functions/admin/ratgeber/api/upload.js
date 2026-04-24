@@ -1,12 +1,16 @@
 import {
   assetKey,
+  candidateKey,
   contentTypeForAsset,
   HttpError,
   jsonResponse,
   normalizeAssetName,
   normalizeJobId,
+  readCandidate,
+  readIndex,
   requireKv,
   updateIndexCandidate,
+  writeIndex,
   writeCandidate,
 } from "../_lib/storage.js";
 
@@ -33,6 +37,27 @@ export async function handlePost({ env, request }) {
   try {
     const kv = requireKv(env);
     const payload = await request.json();
+    if (Array.isArray(payload?.removeJobIds)) {
+      const removed = [];
+      for (const rawJobId of payload.removeJobIds) {
+        const jobId = normalizeJobId(rawJobId);
+        const candidate = await readCandidate(env, jobId);
+        await kv.delete(candidateKey(jobId));
+        if (candidate?.assets && typeof candidate.assets === "object") {
+          for (const asset of Object.values(candidate.assets)) {
+            if (asset?.name) {
+              await kv.delete(assetKey(jobId, asset.name));
+            }
+          }
+        }
+        removed.push(jobId);
+      }
+      const index = await readIndex(env);
+      index.candidates = (index.candidates || []).filter((item) => !removed.includes(item?.jobId));
+      await writeIndex(env, index);
+      return jsonResponse({ ok: true, removed });
+    }
+
     const candidate = payload?.candidate && typeof payload.candidate === "object" ? payload.candidate : null;
     if (!candidate) {
       throw new HttpError(400, "candidate object is required");
