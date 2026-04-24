@@ -172,3 +172,25 @@
 - remote production head на момент публикации: `origin/master = 2130ee6`
 - локальная старая рабочая копия пользователя не является надёжным baseline для публикации
 - для manual content-release использовать отдельный чистый worktree от актуального `origin/master`
+
+## 2026-04-24 Ratgeber Autonomy State
+
+- Ratgeber production is still deliberately separated from the `tools` cron.
+- The article factory lives on `opcl` at:
+  - `/opt/openclaw/workspace/agent-newsman`
+- Current article pipeline components on `opcl`:
+  - daily intel/news collection writes `data/article_jobs/latest_run.json`;
+  - `scripts/article_orchestrator.py` converts ready signals into queue jobs;
+  - NotebookLM article runner writes artifacts under `artifacts/article_jobs/*`;
+  - `scripts/article_rewrite_runner.py` can do automated rewrite passes;
+  - `scripts/article_review_queue.py` exposes review-ready packets;
+  - `scripts/export_ratgeber_package.py` exports approved packages into `publish_ready/ratgeber/*`.
+- Current observed scheduler state:
+  - user crontab on `opcl` has daily `openclaw-newsman-daily`;
+  - hourly article runner / rewrite runner scripts exist but were not observed in the user crontab.
+- The site-side import gate was hardened:
+  - `scripts/import_ratgeber_package.py --preflight-only` validates package approval, frontmatter, article quality, visual quality, duplicate risk, image paths, source links, related tools, and NotebookLM citation residue;
+  - `--strict-warnings` treats warnings as blockers and is the intended mode for a future autonomous publisher.
+- The `opcl` exporter was adjusted so future secondary article illustrations are injected later in the article:
+  - target is after at least 2 substantive H2 sections and at least 320 words before the image;
+  - backup on `opcl`: `/opt/openclaw/workspace/agent-newsman/scripts/export_ratgeber_package.py.bak-20260424-autonomy`.
