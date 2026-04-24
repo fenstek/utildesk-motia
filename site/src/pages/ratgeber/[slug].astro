@@ -375,6 +375,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     height: auto;
     object-fit: contain;
     max-height: min(88vh, 1020px);
+    transition: filter var(--transition), opacity var(--transition);
   }
 
   /* Article body: prose + aside sidebar */
@@ -486,6 +487,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     padding: 6px;
     width: 100%;
     object-fit: contain;
+    transition: filter var(--transition), opacity var(--transition), border-color var(--transition), background var(--transition);
   }
 
   :global(.ratgeber-prose .article-inline-image img) {
@@ -629,6 +631,23 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
   :root[data-theme="dark"] .ratgeber-prose :global(h2) {
     border-top-color: rgba(139, 152, 145, 0.2);
+  }
+
+  :root[data-theme="dark"] .article-cover img,
+  :root[data-theme="dark"] .ratgeber-prose :global(img) {
+    filter: brightness(0.72) saturate(0.9) contrast(0.98);
+    opacity: 0.94;
+  }
+
+  :root[data-theme="dark"] .article-cover-trigger:hover img,
+  :root[data-theme="dark"] .ratgeber-prose :global(img:hover) {
+    filter: brightness(0.82) saturate(0.95) contrast(1);
+    opacity: 0.98;
+  }
+
+  :root[data-theme="dark"] .ratgeber-prose :global(img) {
+    background: var(--surface-container);
+    border-color: rgba(139, 152, 145, 0.24);
   }
 
   /* Responsive */
