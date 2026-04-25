@@ -102,7 +102,7 @@ python scripts/indexnow_submit.py submit-git-range --rev-range HEAD~1..HEAD --wa
 Ожидаемый cron на `opcl`:
 
 ```bash
-*/5 * * * * flock -n /opt/openclaw/workspace/ratgeber-publisher/publish.lock bash -lc 'cd /opt/openclaw/workspace/agent-newsman && /opt/openclaw/workspace/ratgeber-publisher/utildesk-motia-control/.venv/bin/python /opt/openclaw/workspace/ratgeber-publisher/utildesk-motia-control/scripts/ratgeber_cloudflare_publish_consumer.py --token-env auth/utildesk_ratgeber_review.env --limit 1 >> /opt/openclaw/workspace/agent-newsman/logs/ratgeber_publish_consumer.log 2>&1'
+*/5 * * * * flock -n /opt/openclaw/workspace/ratgeber-publisher/publish.lock bash -lc 'cd /opt/openclaw/workspace/agent-newsman && ./.venv/bin/python /opt/openclaw/workspace/ratgeber-publisher/utildesk-motia-control/scripts/ratgeber_cloudflare_publish_consumer.py --token-env auth/utildesk_ratgeber_review.env --limit 1 >> logs/ratgeber_publish_consumer.log 2>&1'
 ```
 
 Для настоящего push с `opcl` нужен один из вариантов:

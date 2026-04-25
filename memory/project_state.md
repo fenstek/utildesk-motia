@@ -265,3 +265,5 @@
   - refuses to touch `content/tools/*`, so the tools production publisher remains isolated.
 - The import gate now rejects residual NotebookLM numeric citation ranges such as `[1-3]`, `[1–3]`, and `[24, 26-28]` in both frontmatter and body.
 - The 2026-04-24 article `ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis` was cleaned of visible citation residue before redeploy.
+- `opcl` has an active `openclaw-ratgeber-publish-consumer` cron every 5 minutes, isolated under `/opt/openclaw/workspace/ratgeber-publisher`.
+- As of setup time, `opcl` can read GitHub but cannot push to `fenstek/utildesk-motia` over HTTPS without an added `GITHUB_TOKEN` or SSH/deploy key; the consumer performs `git push --dry-run` before changing a queue item to `publishing`, so missing credentials leave requests pending instead of touching production.
