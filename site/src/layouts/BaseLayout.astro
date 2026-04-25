@@ -12,6 +12,7 @@ import {
   humanizeTagLabel,
   normalizeSeoText,
 } from "../lib/seoText";
+import "../styles/global.css";
 
 interface Props {
 
@@ -109,7 +110,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
 <!DOCTYPE html>
 
-<html lang="de">
+<html lang="de" data-accent="lime">
 
   <head>
 
@@ -155,13 +156,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           const storedTheme = localStorage.getItem(storageKey);
 
-          const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-
-            ? "dark"
-
-            : "light";
-
-          const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme;
+          const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : "dark";
 
           document.documentElement.dataset.theme = theme;
 
@@ -169,17 +164,15 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         } catch {
 
-          document.documentElement.dataset.theme = "light";
+          document.documentElement.dataset.theme = "dark";
 
-          document.documentElement.style.colorScheme = "light";
+          document.documentElement.style.colorScheme = "dark";
 
         }
 
       })();
 
     </script>
-
-    <link rel="stylesheet" href="/styles/global.css" />
 
     <title>{resolvedTitle}</title>
 
@@ -200,63 +193,73 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
       <div class="container">
 
-        <nav class="nav" aria-label="Hauptnavigation">
+        <div class="hdr-row hdr-top">
 
           <a href="/" class="brand">
 
-            <img src="/logo-grid.svg" alt="Utildesk" />
+            <span class="brand-mark-text">[ utildesk ]</span>
 
-            Utildesk
+            <span class="brand-sub">// ki-werkzeugverzeichnis</span>
 
           </a>
 
+          <div class="hdr-meta" aria-label="Systemstatus">
+
+            <span>v4.2.0-catalog</span>
+
+            <span class="dot">/</span>
+
+            <span><span class="live-dot"></span>live</span>
+
+            <span class="dot">/</span>
+
+            <span>curated-no-ads</span>
+
+          </div>
+
+        </div>
+
+        <nav class="nav hdr-row hdr-bottom" aria-label="Hauptnavigation">
+
+          <div class="nav-links">
+
+            <a href="/">Verzeichnis</a>
+
+            <a href="/tools/">Tools</a>
+
+            <a href="/ratgeber/">Ratgeber</a>
+
+            <a href="/category/">Kategorien</a>
+
+          </div>
+
           <div class="nav-actions">
 
-            <div class="nav-links">
+            <a class="btn-ghost" href="/llms.txt">llms.txt</a>
 
-              <a href="/tools/">Tools</a>
+            <button type="button" class="theme-toggle btn-ghost" id="theme-toggle" aria-label="Design umschalten" aria-pressed="false" title="Design umschalten">
 
-              <a href='/ratgeber/'>Ratgeber</a>
-
-            </div>
-
-            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design umschalten" aria-pressed="false" title="Design umschalten">
-
-              <span class="theme-toggle__track" aria-hidden="true">
-
-                <span class="theme-toggle__thumb"></span>
-
-                <span class="theme-toggle__option theme-toggle__option--light">
-
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-
-                    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
-
-                    <path d="M12 2.75V5.1M12 18.9v2.35M4.75 12H2.4M21.6 12h-2.35M5.9 5.9l1.66 1.66M16.44 16.44l1.66 1.66M18.1 5.9l-1.66 1.66M7.56 16.44L5.9 18.1" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
-
-                  </svg>
-
-                </span>
-
-                <span class="theme-toggle__option theme-toggle__option--dark">
-
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-
-                    <path d="M20.2 14.2A8.2 8.2 0 1 1 9.8 3.8a6.35 6.35 0 1 0 10.4 10.4Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
-
-                  </svg>
-
-                </span>
-
-              </span>
-
-              <span class="sr-only" data-theme-label>Hell</span>
+              <span data-theme-label>Hell</span>
 
             </button>
 
           </div>
 
         </nav>
+
+        <div class="hdr-status">
+
+          <span>db: tools + ratgeber</span>
+
+          <span class="dot">/</span>
+
+          <span>indexnow: aktiv</span>
+
+          <span class="dot">/</span>
+
+          <span>ai-readable manifests: online</span>
+
+        </div>
 
       </div>
 

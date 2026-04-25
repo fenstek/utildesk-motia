@@ -4,13 +4,11 @@ import { join } from "node:path";
 const LOGO_EXTENSIONS = ["svg", "png", "webp", "ico"];
 const getLogoRoots = () => [
   join(process.cwd(), "public", "images", "logos"),
-  join(process.cwd(), "..", "content", "images", "logos"),
 ];
 
 /**
  * Resolve local logo path for a tool slug.
- * Checks for SVG first, then PNG.
- * Returns the public path (/images/logos/<slug>.svg|png) or null.
+ * Only returns assets that are actually served from Astro's public directory.
  */
 export function resolveLocalLogo(slug: string): string | null {
   if (!slug) return null;
