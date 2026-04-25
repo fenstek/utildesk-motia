@@ -140,7 +140,7 @@ const visibleTags = sortedTags.filter(([, count]) => count >= 3).slice(0, 24);
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
 const topTags = visibleTags.slice(0, 18);
 
-const pinnedSlugs = ["chatgpt", "claude", "midjourney", "perplexity", "zapier"];
+const pinnedSlugs = ["wispr-flow", "chatgpt", "claude", "midjourney", "perplexity", "zapier"];
 const enabledBySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
 const pinnedTools = pinnedSlugs.map((slug) => enabledBySlug.get(slug)).filter(Boolean);
 const pinnedSlugSet = new Set(pinnedSlugs);
