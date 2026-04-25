@@ -110,52 +110,116 @@ def topic_terms(title: str, job: dict[str, Any]) -> list[str]:
     return result or ["Quellen", "Agenten", "Review", "Publikation"]
 
 
-def visual_heading(title: str) -> str:
+def topic_kind(title: str) -> str:
     lowered = title.lower()
     if "chatgpt" in lowered:
-        return "MODEL BENCH"
+        return "models"
     if "website" in lowered:
-        return "BOT TRAFFIC MAP"
+        return "crawl"
     if "orchestrierung" in lowered:
-        return "ORCHESTRATION BUS"
+        return "orchestration"
     if "developer" in lowered:
-        return "AGENT RUN TRACE"
-    return "SIGNAL MAP"
+        return "developer"
+    return "generic"
 
 
-def workflow_steps(title: str) -> list[tuple[str, str, str]]:
-    lowered = title.lower()
-    if "chatgpt" in lowered:
-        return [
-            ("input", "Aufgabe", "Was soll das Modell konkret leisten?"),
-            ("compare", "Assistent", "ChatGPT, Claude oder Gemini passend wählen."),
-            ("sources", "Kontext", "Dokumente, Datenschutz und Recherche prüfen."),
-            ("review", "Stärken", "Output gegen Risiko und Nutzen halten."),
-            ("publish", "Auswahl", "Empfehlung sauber begründen."),
-        ]
-    if "website" in lowered:
-        return [
-            ("traffic", "KI-Bots", "Besucher und Agenten sichtbar machen."),
-            ("rules", "Kontrolle", "Crawl-Regeln und Zugriff bewusst setzen."),
-            ("format", "Markdown", "Inhalte maschinenlesbar spiegeln."),
-            ("schema", "JSON-LD", "Kontext für Such- und KI-Systeme liefern."),
-            ("ping", "IndexNow", "Änderungen aktiv anmelden."),
-        ]
-    if "orchestrierung" in lowered:
-        return [
-            ("scope", "Plan", "Ziele, Grenzen und Akzeptanz festlegen."),
-            ("agents", "Agenten", "Teilaufgaben parallelisieren."),
-            ("context", "Kontext", "Zwischenstände sichtbar halten."),
-            ("review", "Gate", "Risiken vor dem Merge benennen."),
-            ("ship", "Release", "Nur geprüfte Ergebnisse publizieren."),
-        ]
-    return [
-        ("context", "Ausrichtung", "Scope und Zielbild sauber setzen."),
-        ("run", "Agentenlauf", "CLI, Shards und Prüfpunkte bündeln."),
-        ("proof", "Checks", "Diffs verdichten und testen."),
-        ("review", "Freigabe", "Finalansicht statt Rohmaterial prüfen."),
-        ("ship", "Publikation", "Erst nach echter Kontrolle veröffentlichen."),
-    ]
+def visual_heading(title: str) -> str:
+    return {
+        "models": "MODEL BENCH",
+        "crawl": "CRAWL CONTROL",
+        "orchestration": "AGENT BUS",
+        "developer": "IDE WORKBENCH",
+    }.get(topic_kind(title), "SIGNAL MAP")
+
+
+def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
+    visual = topic_kind(title)
+    if visual == "models":
+        return """
+    <section class="visual bench">
+      <div class="visual-label">[ comparative_model_bench ]</div>
+      <div class="router">task -&gt; choose model by strength, risk, context</div>
+      <article><b>ChatGPT</b><i>write</i><span style="--w:78%"></span><i>research</i><span style="--w:62%"></span><i>code</i><span style="--w:58%"></span></article>
+      <article><b>Claude</b><i>write</i><span style="--w:66%"></span><i>research</i><span style="--w:74%"></span><i>code</i><span style="--w:82%"></span></article>
+      <article><b>Gemini</b><i>write</i><span style="--w:58%"></span><i>research</i><span style="--w:82%"></span><i>code</i><span style="--w:54%"></span></article>
+      <footer>privacy gate <em>final pick</em></footer>
+    </section>"""
+    if visual == "crawl":
+        return """
+    <section class="visual crawl-room">
+      <div class="visual-label">[ crawl_control_room ]</div>
+      <div class="bot b1">bot_1</div><div class="bot b2 warn">bot_2</div><div class="bot b3 warn">bot_3</div>
+      <div class="waf">WAF</div>
+      <div class="site"><b>tools.utildesk.de</b><i></i><i></i><i></i><i></i></div>
+      <div class="bot b4">bot_4</div><div class="bot b5 warn">bot_5</div>
+      <footer>robots.txt + ai crawl rules <small>allow useful / throttle costly / block abuse</small></footer>
+    </section>"""
+    if visual == "orchestration":
+        return """
+    <section class="visual agent-bus">
+      <div class="visual-label">[ orchestration_bus ]</div>
+      <div class="bus">context bus</div>
+      <article class="n1 warn">NotebookLM<small>source draft</small></article>
+      <article class="n2">Planner<small>scope</small></article>
+      <article class="n3">Agent 03<small>parallel</small></article>
+      <article class="n4">Agent 01<small>code path</small></article>
+      <article class="n5 warn">Agent 02<small>research</small></article>
+      <article class="n6 dark">Review<small>gate</small></article>
+      <footer>trace: sources -&gt; plan -&gt; shards -&gt; verifier -&gt; publish</footer>
+    </section>"""
+    return """
+    <section class="visual ide-workbench">
+      <div class="visual-label">[ ide_cli_workbench ]</div>
+      <div class="ide"><b>IDE / context</b><p>+ define acceptance</p><p>+ split shard tests</p><p>- remove blind merge</p><p>+ verify preview</p></div>
+      <div class="cli"><b>$ codex run</b><p>spawn shards</p><p>collect diffs</p><p>run checks</p></div>
+      <div class="gate"><b>review gate</b><p>tests: ok</p><p>merge: held</p></div>
+    </section>"""
+
+
+def workflow_visual_html(title: str) -> str:
+    visual = topic_kind(title)
+    if visual == "models":
+        return """
+    <section class="workflow matrix">
+      <div class="row head"><span></span><b>ChatGPT</b><b>Claude</b><b>Gemini</b></div>
+      <div class="row"><span>Schreiben</span><i>■■■■</i><i>■■■□</i><i>■■■□</i></div>
+      <div class="row"><span>Recherche</span><i>■■□□</i><i>■■■□</i><i>■■■■</i></div>
+      <div class="row"><span>Coding</span><i>■■■□</i><i>■■■■</i><i>■■□□</i></div>
+      <div class="row"><span>Privacy</span><i>■■□□</i><i>■■■□</i><i>■□□□</i></div>
+      <footer>route only after context + risk check</footer>
+    </section>"""
+    if visual == "crawl":
+        return """
+    <section class="workflow edge-stack">
+      <ol>
+        <li><b>01</b><span>KI-Bots</span><em>TRAFFIC</em></li>
+        <li><b>02</b><span>Crawl Control</span><em>RULES</em></li>
+        <li><b>03</b><span>Markdown</span><em>MIRROR</em></li>
+        <li><b>04</b><span>JSON-LD</span><em>SCHEMA</em></li>
+        <li><b>05</b><span>IndexNow</span><em>PING</em></li>
+      </ol>
+      <aside><b>[ server load before/after ]</b><i></i><i></i><i></i><i></i><i></i><small>less blind crawling, more explicit updates</small></aside>
+    </section>"""
+    if visual == "orchestration":
+        return """
+    <section class="workflow lanes">
+      <div><b>NotebookLM</b><span>source grounded draft</span><em>logged</em></div>
+      <div><b>Planner</b><span>scope + split</span><em>logged</em></div>
+      <div><b>Agents</b><span>parallel work</span><em>logged</em></div>
+      <div><b>Verifier</b><span>tests + risks</span><em>logged</em></div>
+      <div><b>Publish</b><span>human gate</span><em>logged</em></div>
+      <footer>$ publish if final preview approved</footer>
+    </section>"""
+    return """
+    <section class="workflow rail">
+      <div class="track"></div>
+      <article class="up"><b>IDE</b><span>context</span></article>
+      <article class="down"><b>CLI</b><span>shards</span></article>
+      <article class="up"><b>Tests</b><span>proof</span></article>
+      <article class="down"><b>Review</b><span>gate</span></article>
+      <article class="up"><b>Release</b><span>ship</span></article>
+      <footer>guardrail: no merge without real preview, tests and rollback note</footer>
+    </section>"""
 
 
 def cover_html(title: str, job: dict[str, Any]) -> str:
@@ -176,6 +240,7 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
     title_lines = "<br>".join(escape(line) for line in title_wrapped)
     why_now = str(job.get("why_now") or job.get("angle") or "Quellen, Agenten und Review-Gate werden zu einem belastbaren Veröffentlichungsfluss.")
     visual = visual_heading(title)
+    visual_markup = cover_visual_html(title, terms, job)
     return f"""<!doctype html>
 <html>
 <head>
@@ -257,6 +322,246 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
     .panel {{
       border: 2px solid #c8c5b3;
       background: #ebe9df;
+    }}
+    .visual {{
+      position: relative;
+      height: 736px;
+      margin-top: 52px;
+      border: 2px solid #c8c5b3;
+      background: #ebe9df;
+      overflow: hidden;
+    }}
+    .visual-label {{
+      position: absolute;
+      left: 28px;
+      top: 24px;
+      color: #828275;
+      font-size: 22px;
+      font-weight: 800;
+    }}
+    .bench .router {{
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      top: 102px;
+      padding: 14px 18px;
+      border: 2px solid #b1ad9a;
+      background: #f5f3ea;
+      color: #54564a;
+      font-size: 20px;
+    }}
+    .bench article {{
+      position: absolute;
+      top: 196px;
+      width: 188px;
+      height: 360px;
+      padding: 24px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+    }}
+    .bench article:nth-of-type(1) {{ left: 42px; }}
+    .bench article:nth-of-type(2) {{ left: 256px; }}
+    .bench article:nth-of-type(3) {{ left: 470px; }}
+    .bench b {{
+      display: block;
+      margin-bottom: 28px;
+      color: #365d1b;
+      font-size: 24px;
+    }}
+    .bench i {{
+      display: block;
+      margin: 14px 0 6px;
+      color: #828275;
+      font-size: 17px;
+      font-style: normal;
+    }}
+    .bench span {{
+      display: block;
+      height: 14px;
+      width: var(--w);
+      background: #4f7f28;
+      border: 1px solid #1d1e18;
+    }}
+    .bench footer {{
+      position: absolute;
+      left: 42px;
+      right: 42px;
+      bottom: 54px;
+      color: #365d1b;
+      font-size: 23px;
+      font-weight: 850;
+    }}
+    .bench footer em {{
+      float: right;
+      color: #54564a;
+      font-style: normal;
+    }}
+    .crawl-room .bot {{
+      position: absolute;
+      width: 118px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      background: #4f7f28;
+      color: #f5f3ea;
+      border: 2px solid #1d1e18;
+      font-size: 20px;
+      font-weight: 850;
+    }}
+    .crawl-room .warn {{ background: #a06b1f; }}
+    .crawl-room .b1 {{ left: 40px; top: 126px; }} .crawl-room .b2 {{ left: 40px; top: 238px; }} .crawl-room .b3 {{ left: 40px; top: 350px; }}
+    .crawl-room .b4 {{ right: 42px; top: 432px; }} .crawl-room .b5 {{ right: 42px; top: 544px; }}
+    .crawl-room .waf {{
+      position: absolute;
+      left: 192px;
+      top: 178px;
+      width: 74px;
+      height: 318px;
+      padding-top: 24px;
+      text-align: center;
+      background: #e2e0d4;
+      border: 2px solid #b1ad9a;
+      color: #365d1b;
+      font-size: 24px;
+      font-weight: 900;
+    }}
+    .crawl-room .waf::after {{
+      content: "";
+      position: absolute;
+      left: 34px;
+      top: 82px;
+      bottom: 34px;
+      width: 6px;
+      background: #4f7f28;
+    }}
+    .crawl-room .site {{
+      position: absolute;
+      left: 330px;
+      top: 226px;
+      width: 268px;
+      height: 224px;
+      padding: 28px;
+      background: #f5f3ea;
+      border: 3px solid #1d1e18;
+      color: #54564a;
+    }}
+    .crawl-room .site i {{
+      display: block;
+      height: 2px;
+      margin-top: 26px;
+      background: #c8c5b3;
+    }}
+    .crawl-room footer {{
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      bottom: 52px;
+      padding: 20px 24px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+      color: #1d1e18;
+      font-size: 23px;
+      font-weight: 850;
+    }}
+    .crawl-room footer small {{
+      display: block;
+      margin-top: 8px;
+      color: #54564a;
+      font-size: 17px;
+    }}
+    .agent-bus .bus {{
+      position: absolute;
+      left: 60px;
+      right: 60px;
+      top: 352px;
+      height: 64px;
+      padding: 16px 28px;
+      background: #1d1e18;
+      color: #4f7f28;
+      font-size: 24px;
+      font-weight: 900;
+    }}
+    .agent-bus article {{
+      position: absolute;
+      width: 154px;
+      height: 104px;
+      padding: 20px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+      color: #1d1e18;
+      font-size: 18px;
+      font-weight: 850;
+    }}
+    .agent-bus article::after {{
+      content: "";
+      position: absolute;
+      left: 76px;
+      width: 4px;
+      height: 82px;
+      background: #365d1b;
+    }}
+    .agent-bus article small {{
+      display: block;
+      margin-top: 12px;
+      color: #828275;
+      font-size: 15px;
+    }}
+    .agent-bus .warn {{ color: #a06b1f; }} .agent-bus .dark {{ background: #1d1e18; color: #f5f3ea; }}
+    .agent-bus .n1 {{ left: 92px; top: 126px; }} .agent-bus .n2 {{ left: 350px; top: 112px; }} .agent-bus .n3 {{ left: 570px; top: 150px; }}
+    .agent-bus .n4 {{ left: 144px; top: 530px; }} .agent-bus .n5 {{ left: 402px; top: 560px; }} .agent-bus .n6 {{ left: 592px; top: 516px; }}
+    .agent-bus .n1::after,.agent-bus .n2::after,.agent-bus .n3::after {{ top: 104px; }}
+    .agent-bus .n4::after,.agent-bus .n5::after,.agent-bus .n6::after {{ bottom: 104px; }}
+    .agent-bus footer {{
+      position: absolute;
+      left: 60px;
+      right: 60px;
+      bottom: 52px;
+      padding: 16px 24px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+      color: #54564a;
+      font-size: 20px;
+    }}
+    .ide-workbench .ide,
+    .ide-workbench .cli,
+    .ide-workbench .gate {{
+      position: absolute;
+      border: 2px solid #c8c5b3;
+      padding: 26px;
+    }}
+    .ide-workbench .ide {{
+      left: 40px;
+      top: 126px;
+      width: 328px;
+      height: 426px;
+      background: #f5f3ea;
+    }}
+    .ide-workbench .cli {{
+      right: 40px;
+      top: 126px;
+      width: 292px;
+      height: 286px;
+      background: #1d1e18;
+      color: #f5f3ea;
+    }}
+    .ide-workbench .gate {{
+      right: 40px;
+      bottom: 86px;
+      width: 292px;
+      height: 160px;
+      background: #f5f3ea;
+    }}
+    .ide-workbench b {{
+      display: block;
+      margin-bottom: 22px;
+      color: #365d1b;
+      font-size: 23px;
+    }}
+    .ide-workbench .cli b {{ color: #4f7f28; }}
+    .ide-workbench p {{
+      margin: 0 0 20px;
+      color: inherit;
+      font-size: 20px;
     }}
     .plot {{
       position: relative;
@@ -383,38 +688,15 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
       <p class="dek">{escape(short_label(why_now, 170))}</p>
       <div class="chips">{chips}</div>
     </section>
-    <section>
-      <div class="plot panel">
-        <i class="gridline g1"></i><i class="gridline g2"></i><i class="gridline g3"></i><i class="gridline g4"></i><i class="gridline g5"></i>
-        <i class="vline v1"></i><i class="vline v2"></i><i class="vline v3"></i><i class="vline v4"></i><i class="vline v5"></i>
-        <i class="wire w1"></i><i class="wire w2"></i><i class="wire w3"></i><i class="wire w4"></i>
-        <b class="node n1">1</b><b class="node n2 alt">2</b><b class="node n3">3</b><b class="node n4 alt">4</b><b class="node n5">5</b>
-        {plot_labels}
-      </div>
-      <div class="terminal">
-        <strong>$ utildesk inspect --ratgeber</strong>
-        <div><span>topic</span><code>{escape(short_label(title, 34))}</code></div>
-        <div><span>format</span><code>{escape(str(job.get("format") or "guide"))}</code></div>
-        <div><span>assets</span><code>terminal-png / no-svg</code></div>
-        <div><span>status</span><code>reviewable final view</code></div>
-      </div>
-    </section>
+    <section>{visual_markup}</section>
   </main>
-  <div class="footer"><span>UTILDESK // terminal editorial image system</span><span>PNG / grid / mono / no generic cards</span></div>
+  <div class="footer"><span>UTILDESK // topic-specific editorial image</span><span>PNG / grid / mono / no cloned diagrams</span></div>
 </body>
 </html>"""
 
 
 def workflow_html(title: str, job: dict[str, Any]) -> str:
-    steps = workflow_steps(title)
-    cards = "".join(
-        f"<article><span>{index}</span><h2>{escape(label)}</h2><em>{escape(key.upper())}</em><p>{escape(text)}</p><b>ok</b></article>"
-        for index, (key, label, text) in enumerate(steps, start=1)
-    )
-    guardrails = "".join(
-        f"<span class=\"guard{' is-active' if index == 2 else ''}\">{escape(item)}</span>"
-        for index, item in enumerate(["Quellen", "Dedup", "Finalansicht", "PNG", "IndexNow"])
-    )
+    visual_markup = workflow_visual_html(title)
     return f"""<!doctype html>
 <html>
 <head>
@@ -458,108 +740,155 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
       font-size: 30px;
       line-height: 1.32;
     }}
-    .cards {{
+    .workflow {{
       position: relative;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 42px;
+      min-height: 560px;
+      margin-top: 44px;
     }}
-    .cards::before {{
-      content: "";
+    .matrix {{
+      padding: 50px 76px;
+      border: 2px solid #c8c5b3;
+      background: #ebe9df;
+    }}
+    .matrix .row {{
+      display: grid;
+      grid-template-columns: 220px repeat(3, 1fr);
+      align-items: center;
+      min-height: 66px;
+      border-bottom: 1px solid #c8c5b3;
+      color: #54564a;
+      font-size: 26px;
+    }}
+    .matrix .head {{
+      color: #1d1e18;
+      font-size: 30px;
+      font-weight: 900;
+    }}
+    .matrix i {{
+      color: #4f7f28;
+      font-style: normal;
+      letter-spacing: .18em;
+    }}
+    .matrix footer,
+    .lanes footer,
+    .rail footer {{
+      position: absolute;
+      right: 84px;
+      bottom: 42px;
+      padding: 18px 26px;
+      background: #1d1e18;
+      color: #4f7f28;
+      font-size: 22px;
+      font-weight: 850;
+    }}
+    .edge-stack {{
+      display: grid;
+      grid-template-columns: 560px 1fr;
+      gap: 76px;
+      align-items: start;
+      padding: 30px 80px 0;
+    }}
+    .edge-stack ol {{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }}
+    .edge-stack li {{
+      display: grid;
+      grid-template-columns: 70px 1fr 130px;
+      align-items: center;
+      margin-bottom: 22px;
+      padding: 16px 22px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+      font-size: 24px;
+      font-weight: 900;
+    }}
+    .edge-stack b {{ color: #365d1b; }}
+    .edge-stack em {{
+      color: #828275;
+      font-size: 18px;
+      font-style: normal;
+    }}
+    .edge-stack aside {{
+      position: relative;
+      min-height: 386px;
+      padding: 32px;
+      border: 2px solid #c8c5b3;
+      background: #ebe9df;
+    }}
+    .edge-stack aside i {{
+      position: absolute;
+      width: 48px;
+      bottom: 92px;
+      background: #4f7f28;
+      border: 2px solid #1d1e18;
+    }}
+    .edge-stack aside i:nth-of-type(1) {{ left: 304px; height: 230px; background: #a06b1f; }}
+    .edge-stack aside i:nth-of-type(2) {{ left: 370px; height: 204px; background: #a06b1f; }}
+    .edge-stack aside i:nth-of-type(3) {{ left: 436px; height: 148px; }}
+    .edge-stack aside i:nth-of-type(4) {{ left: 502px; height: 104px; }}
+    .edge-stack aside i:nth-of-type(5) {{ left: 568px; height: 76px; }}
+    .edge-stack small {{
+      position: absolute;
+      left: 32px;
+      right: 32px;
+      bottom: 32px;
+      color: #54564a;
+      font-size: 20px;
+    }}
+    .lanes div {{
+      display: grid;
+      grid-template-columns: 260px 1fr 120px;
+      align-items: center;
+      height: 74px;
+      margin-bottom: 18px;
+      padding: 0 28px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+      font-size: 24px;
+    }}
+    .lanes div:nth-child(odd) {{ background: #ebe9df; }}
+    .lanes b {{ color: #365d1b; }}
+    .lanes span {{ color: #54564a; }}
+    .lanes em {{
+      justify-self: end;
+      padding: 8px 12px;
+      background: #4f7f28;
+      color: #f5f3ea;
+      font-style: normal;
+      font-size: 18px;
+    }}
+    .rail .track {{
       position: absolute;
       left: 72px;
       right: 72px;
-      top: 144px;
-      height: 5px;
-      background: #b1ad9a;
+      top: 220px;
+      height: 18px;
+      background: #1d1e18;
     }}
-    article {{
+    .rail article {{
       position: relative;
-      min-height: 292px;
-      padding: 28px 26px;
-      border: 2px solid #c8c5b3;
-      background: #f5f3ea;
-    }}
-    article:nth-child(even) {{
-      background: #ebe9df;
-    }}
-    article span {{
-      display: grid;
-      place-items: center;
-      width: 60px;
-      height: 60px;
-      border: 2px solid #1d1e18;
-      background: #4f7f28;
-      color: #f5f3ea;
-      font-size: 25px;
-      font-weight: 900;
-    }}
-    article:nth-child(2) span,
-    article:nth-child(3) span {{
-      background: #a06b1f;
-    }}
-    article h2 {{
-      margin: 38px 0 12px;
-      color: #1d1e18;
-      font-size: 29px;
-      line-height: 1.05;
-      letter-spacing: -.035em;
-    }}
-    article em {{
-      display: block;
-      margin-bottom: 20px;
-      color: #828275;
-      font-style: normal;
-      font-size: 22px;
-      font-weight: 700;
-    }}
-    article p {{
-      margin: 0;
-      color: #54564a;
-      font-size: 18px;
-      line-height: 1.32;
-      max-height: 72px;
-      overflow: hidden;
-    }}
-    article b {{
-      position: absolute;
-      right: 26px;
-      top: 32px;
-      color: #365d1b;
-      font-size: 25px;
-    }}
-    .arrow {{
-      position: absolute;
-      top: 424px;
-      color: #365d1b;
-      font-size: 36px;
-      font-weight: 900;
-    }}
-    .a1 {{ left: 335px; }} .a2 {{ left: 624px; }} .a3 {{ left: 912px; }} .a4 {{ left: 1202px; }}
-    .guardrails {{
-      margin-top: 78px;
-      padding: 26px 28px;
-      border: 2px solid #c8c5b3;
-      background: #ebe9df;
-    }}
-    .guardrails .label {{
-      display: block;
-      margin-bottom: 24px;
-    }}
-    .guard {{
       display: inline-block;
-      margin-right: 14px;
-      padding: 10px 18px;
-      border: 2px solid #b1ad9a;
+      width: 180px;
+      height: 132px;
+      margin-right: 78px;
+      padding: 26px;
+      border: 2px solid #c8c5b3;
       background: #f5f3ea;
-      color: #365d1b;
-      font-size: 25px;
-      font-weight: 850;
+      font-size: 24px;
     }}
-    .guard.is-active {{
-      color: #f5f3ea;
-      background: #4f7f28;
-      border-color: #4f7f28;
+    .rail article:nth-of-type(1) {{ margin-left: 80px; top: 20px; }}
+    .rail article:nth-of-type(2) {{ top: 220px; }}
+    .rail article:nth-of-type(3) {{ top: 20px; }}
+    .rail article:nth-of-type(4) {{ top: 220px; }}
+    .rail article:nth-of-type(5) {{ top: 20px; margin-right: 0; }}
+    .rail b {{ color: #365d1b; }}
+    .rail span {{
+      display: block;
+      margin-top: 16px;
+      color: #828275;
+      font-size: 18px;
     }}
     .footer {{
       position: absolute;
@@ -579,11 +908,9 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
     <div class="label">[ workflow.trace ]</div>
     <h1>FROM SIGNAL TO PUBLISH</h1>
     <p class="dek">{escape(short_label(title, 110))}</p>
-    <section class="cards">{cards}</section>
-    <b class="arrow a1">-&gt;</b><b class="arrow a2">-&gt;</b><b class="arrow a3">-&gt;</b><b class="arrow a4">-&gt;</b>
-    <section class="guardrails"><span class="label">[ guardrails ]</span>{guardrails}</section>
+    {visual_markup}
   </main>
-  <div class="footer"><span>UTILDESK // visual review asset</span><span>article-safe / no-svg / terminal system</span></div>
+  <div class="footer"><span>UTILDESK // workflow visual family</span><span>article-safe / topic-specific / no clones</span></div>
 </body>
 </html>"""
 
