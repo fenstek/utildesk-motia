@@ -57,6 +57,16 @@ def short_label(value: str, limit: int = 28) -> str:
 
 
 def topic_terms(title: str, job: dict[str, Any]) -> list[str]:
+    lowered = title.lower()
+    if "chatgpt" in lowered:
+        return ["ChatGPT", "Claude", "Gemini", "Assistenz", "Datenschutz"]
+    if "website" in lowered:
+        return ["Crawler", "Agenten", "IndexNow", "Guardrails", "Traffic"]
+    if "orchestrierung" in lowered:
+        return ["Agenten", "Kontext", "Workflow", "Review", "Runtime"]
+    if "developer" in lowered:
+        return ["IDE", "CLI", "Review", "Kontext", "Release"]
+
     candidates = [
         str(job.get("format") or "").replace("_", " "),
         str(job.get("audience") or ""),
@@ -100,15 +110,72 @@ def topic_terms(title: str, job: dict[str, Any]) -> list[str]:
     return result or ["Quellen", "Agenten", "Review", "Publikation"]
 
 
+def visual_heading(title: str) -> str:
+    lowered = title.lower()
+    if "chatgpt" in lowered:
+        return "MODEL BENCH"
+    if "website" in lowered:
+        return "BOT TRAFFIC MAP"
+    if "orchestrierung" in lowered:
+        return "ORCHESTRATION BUS"
+    if "developer" in lowered:
+        return "AGENT RUN TRACE"
+    return "SIGNAL MAP"
+
+
+def workflow_steps(title: str) -> list[tuple[str, str, str]]:
+    lowered = title.lower()
+    if "chatgpt" in lowered:
+        return [
+            ("input", "Aufgabe", "Was soll das Modell konkret leisten?"),
+            ("compare", "Assistent", "ChatGPT, Claude oder Gemini passend wählen."),
+            ("sources", "Kontext", "Dokumente, Datenschutz und Recherche prüfen."),
+            ("review", "Stärken", "Output gegen Risiko und Nutzen halten."),
+            ("publish", "Auswahl", "Empfehlung sauber begründen."),
+        ]
+    if "website" in lowered:
+        return [
+            ("traffic", "KI-Bots", "Besucher und Agenten sichtbar machen."),
+            ("rules", "Kontrolle", "Crawl-Regeln und Zugriff bewusst setzen."),
+            ("format", "Markdown", "Inhalte maschinenlesbar spiegeln."),
+            ("schema", "JSON-LD", "Kontext für Such- und KI-Systeme liefern."),
+            ("ping", "IndexNow", "Änderungen aktiv anmelden."),
+        ]
+    if "orchestrierung" in lowered:
+        return [
+            ("scope", "Plan", "Ziele, Grenzen und Akzeptanz festlegen."),
+            ("agents", "Agenten", "Teilaufgaben parallelisieren."),
+            ("context", "Kontext", "Zwischenstände sichtbar halten."),
+            ("review", "Gate", "Risiken vor dem Merge benennen."),
+            ("ship", "Release", "Nur geprüfte Ergebnisse publizieren."),
+        ]
+    return [
+        ("context", "Ausrichtung", "Scope und Zielbild sauber setzen."),
+        ("run", "Agentenlauf", "CLI, Shards und Prüfpunkte bündeln."),
+        ("proof", "Checks", "Diffs verdichten und testen."),
+        ("review", "Freigabe", "Finalansicht statt Rohmaterial prüfen."),
+        ("ship", "Publikation", "Erst nach echter Kontrolle veröffentlichen."),
+    ]
+
+
 def cover_html(title: str, job: dict[str, Any]) -> str:
     terms = topic_terms(title, job)
-    chips = "".join(f"<span>{escape(term)}</span>" for term in terms[:5])
-    title_wrapped = textwrap.wrap(title, width=38)
+    plot_terms = (terms + ["Signal", "Review", "Index", "Nutzer", "Quelle"])[:5]
+    chips = "".join(
+        f"<span class=\"chip{' is-active' if index == 0 else ''}\">{escape(term)}</span>"
+        for index, term in enumerate(terms[:5])
+    )
+    plot_labels = "".join(
+        f"<span class=\"plot-label p{index}\"><b>{escape(short_label(term, 9))}</b><small>0{index}</small></span>"
+        for index, term in enumerate(plot_terms, start=1)
+    )
+    title_wrapped = textwrap.wrap(title, width=44)
     if len(title_wrapped) > 4:
         title_wrapped = title_wrapped[:4]
         title_wrapped[-1] = title_wrapped[-1].rstrip(" .,:;") + "…"
-    title_lines = "<br>".join(title_wrapped)
+    title_lines = "<br>".join(escape(line) for line in title_wrapped)
     why_now = str(job.get("why_now") or job.get("angle") or "Quellen, Agenten und Review-Gate werden zu einem belastbaren Veröffentlichungsfluss.")
+    visual = visual_heading(title)
     return f"""<!doctype html>
 <html>
 <head>
@@ -118,147 +185,235 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
     body {{
       margin: 0;
       width: 1600px;
-      height: 960px;
+      height: 980px;
       overflow: hidden;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #12241f;
-      background:
-        radial-gradient(circle at 82% 16%, rgba(125, 226, 209, .72), transparent 260px),
-        radial-gradient(circle at 16% 78%, rgba(217, 138, 65, .32), transparent 300px),
-        linear-gradient(135deg, #fff8ec 0%, #efe3d0 100%);
+      font-family: "JetBrains Mono", "IBM Plex Mono", "Cascadia Mono", Consolas, monospace;
+      color: #1d1e18;
+      background-color: #f5f3ea;
+      background-image:
+        linear-gradient(#e1ddce 1px, transparent 1px),
+        linear-gradient(90deg, #ddd9c9 1px, transparent 1px);
+      background-size: 24px 24px;
+      border: 2px solid #c8c5b3;
     }}
-    .frame {{
-      position: absolute;
-      inset: 58px;
-      border: 2px solid rgba(15, 84, 77, .18);
-      border-radius: 58px;
-      padding: 74px;
-      background: rgba(255, 252, 246, .68);
-      box-shadow: 0 38px 100px rgba(23, 38, 33, .14);
+    .wrap {{
+      display: grid;
+      grid-template-columns: 1fr 700px;
+      gap: 84px;
+      height: 100%;
+      padding: 58px 88px 52px 64px;
     }}
-    .kicker {{
-      color: #0f544d;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-      font-size: 30px;
-      font-weight: 900;
-      margin-bottom: 42px;
-    }}
-    h1 {{
-      margin: 0;
-      max-width: 880px;
-      font-size: 74px;
-      line-height: .95;
-      letter-spacing: -.075em;
-    }}
-    .dek {{
-      margin-top: 28px;
-      max-width: 720px;
-      font-size: 28px;
-      line-height: 1.28;
-      color: #49645d;
-    }}
-    .chips {{
-      position: absolute;
-      left: 74px;
-      bottom: 70px;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      max-width: 900px;
-    }}
-    .chips span {{
-      padding: 15px 24px;
-      border-radius: 999px;
-      background: #ffffff;
-      color: #0f544d;
-      border: 1px solid rgba(15, 84, 77, .18);
-      font-size: 24px;
-      font-weight: 850;
-      box-shadow: 0 12px 30px rgba(23, 38, 33, .08);
-    }}
-    .orbit {{
-      position: absolute;
-      right: 82px;
-      top: 126px;
-      width: 440px;
-      height: 600px;
-    }}
-    .node {{
-      position: absolute;
-      width: 162px;
-      min-height: 120px;
-      padding: 24px;
-      border-radius: 34px;
-      background: #0f544d;
-      color: white;
-      box-shadow: 0 28px 70px rgba(15, 84, 77, .26);
-      font-weight: 900;
-      font-size: 25px;
-      line-height: 1.05;
-    }}
-    .node small {{
-      display: block;
-      margin-top: 12px;
-      color: rgba(255,255,255,.74);
-      font-size: 17px;
-      line-height: 1.25;
+    .label {{
+      color: #828275;
+      font-size: 22px;
       font-weight: 700;
     }}
-    .n1 {{ left: 0; top: 64px; }}
-    .n2 {{ right: 0; top: 0; background: #d98a41; }}
-    .n3 {{ right: 34px; bottom: 96px; }}
-    .n4 {{ left: 34px; bottom: 0; background: #18352f; }}
-    .wire {{
-      position: absolute;
-      left: 58px;
-      top: 148px;
-      width: 318px;
-      height: 318px;
-      border: 12px solid rgba(15, 84, 77, .16);
-      border-radius: 50%;
+    h1 {{
+      margin: 34px 0 34px;
+      font-size: 62px;
+      line-height: .96;
+      letter-spacing: -.055em;
     }}
-    .pulse {{
+    .bar {{
+      width: 580px;
+      height: 6px;
+      margin-bottom: 34px;
+      background: #4f7f28;
+    }}
+    .title {{
+      margin: 0 0 112px;
+      max-width: 720px;
+      font-size: 39px;
+      line-height: 1.16;
+      font-weight: 900;
+      letter-spacing: -.04em;
+    }}
+    .dek {{
+      max-width: 690px;
+      color: #54564a;
+      font-size: 27px;
+      line-height: 1.34;
+    }}
+    .chips {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 46px;
+      max-width: 760px;
+    }}
+    .chip {{
+      padding: 10px 18px 9px;
+      border: 2px solid #b1ad9a;
+      background: #f5f3ea;
+      color: #365d1b;
+      font-size: 25px;
+      font-weight: 850;
+    }}
+    .chip.is-active {{
+      background: #4f7f28;
+      border-color: #4f7f28;
+      color: #f5f3ea;
+    }}
+    .panel {{
+      border: 2px solid #c8c5b3;
+      background: #ebe9df;
+    }}
+    .plot {{
+      position: relative;
+      height: 502px;
+      margin-top: 52px;
+      padding: 24px;
+    }}
+    .plot::before {{
+      content: "[ signal_map ]";
+      color: #828275;
+      font-size: 23px;
+      font-weight: 800;
+    }}
+    .gridline, .vline, .wire, .node, .plot-label {{
       position: absolute;
-      left: 185px;
-      top: 276px;
-      width: 86px;
-      height: 86px;
-      border-radius: 50%;
-      background: #7ee2d1;
-      box-shadow: 0 0 0 28px rgba(126,226,209,.18), 0 0 0 58px rgba(126,226,209,.10);
+    }}
+    .gridline {{
+      left: 28px;
+      right: 28px;
+      height: 1px;
+      background: #c8c5b3;
+    }}
+    .g1 {{ top: 86px; }} .g2 {{ top: 144px; }} .g3 {{ top: 202px; }} .g4 {{ top: 260px; }} .g5 {{ top: 318px; }}
+    .vline {{
+      top: 84px;
+      bottom: 94px;
+      width: 2px;
+      background: #b1ad9a;
+    }}
+    .v1 {{ left: 64px; }} .v2 {{ left: 180px; }} .v3 {{ left: 296px; }} .v4 {{ left: 412px; }} .v5 {{ left: 528px; }}
+    .wire {{
+      height: 5px;
+      background: #4f7f28;
+      transform-origin: left center;
+    }}
+    .w1 {{ left: 72px; top: 336px; width: 138px; transform: rotate(-55deg); }}
+    .w2 {{ left: 184px; top: 194px; width: 150px; transform: rotate(26deg); }}
+    .w3 {{ left: 300px; top: 250px; width: 168px; transform: rotate(-39deg); }}
+    .w4 {{ left: 426px; top: 160px; width: 158px; transform: rotate(24deg); }}
+    .node {{
+      width: 38px;
+      height: 38px;
+      border: 2px solid #1d1e18;
+      background: #4f7f28;
+      color: #f5f3ea;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      font-weight: 900;
+    }}
+    .node.alt {{ background: #a06b1f; }}
+    .n1 {{ left: 48px; top: 322px; }} .n2 {{ left: 166px; top: 178px; }} .n3 {{ left: 300px; top: 236px; }}
+    .n4 {{ left: 426px; top: 122px; }} .n5 {{ left: 610px; top: 198px; }}
+    .plot-label {{
+      top: 420px;
+      width: 112px;
+      color: #54564a;
+      font-size: 19px;
+      line-height: 1.18;
+      font-weight: 800;
+    }}
+    .plot-label b {{
+      display: block;
+      color: #365d1b;
+    }}
+    .plot-label small {{
+      display: block;
+      margin-top: 8px;
+      color: #828275;
+      font-size: 20px;
+    }}
+    .p1 {{ left: 28px; }} .p2 {{ left: 144px; }} .p3 {{ left: 260px; }} .p4 {{ left: 376px; }} .p5 {{ left: 492px; }}
+    .terminal {{
+      margin-top: 46px;
+      height: 226px;
+      padding: 24px;
+      background: #1d1e18;
+      color: #f5f3ea;
+      border: 2px solid #1d1e18;
+      font-size: 23px;
+      line-height: 1.5;
+      overflow: hidden;
+    }}
+    .terminal strong {{
+      display: block;
+      margin-bottom: 18px;
+      color: #4f7f28;
+    }}
+    .terminal span {{
+      color: #828275;
+      display: inline-block;
+      width: 128px;
+    }}
+    .terminal div {{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }}
+    .terminal code {{
+      color: #f5f3ea;
+      font-family: inherit;
+      font-style: normal;
+    }}
+    .footer {{
+      position: absolute;
+      left: 64px;
+      right: 56px;
+      bottom: 44px;
+      display: flex;
+      justify-content: space-between;
+      color: #828275;
+      font-size: 21px;
+      font-weight: 700;
     }}
   </style>
 </head>
 <body>
-  <main class="frame">
-    <div class="kicker">Ratgeber · KI-Agenten</div>
-    <h1>{title_lines}</h1>
-    <div class="dek">{escape(short_label(why_now, 132))}</div>
-    <div class="chips">{chips}</div>
-    <section class="orbit" aria-label="Illustration">
-      <div class="wire"></div>
-      <div class="pulse"></div>
-      <div class="node n1">Quellen<small>Signale sammeln</small></div>
-      <div class="node n2">Agenten<small>Kontext prüfen</small></div>
-      <div class="node n3">Review<small>Risiken sehen</small></div>
-      <div class="node n4">Index<small>publizieren</small></div>
+  <main class="wrap">
+    <section>
+      <div class="label">[ utildesk.ratgeber / terminal_illustration ]</div>
+      <h1>{escape(visual)}</h1>
+      <div class="bar"></div>
+      <p class="title">{title_lines}</p>
+      <p class="dek">{escape(short_label(why_now, 170))}</p>
+      <div class="chips">{chips}</div>
+    </section>
+    <section>
+      <div class="plot panel">
+        <i class="gridline g1"></i><i class="gridline g2"></i><i class="gridline g3"></i><i class="gridline g4"></i><i class="gridline g5"></i>
+        <i class="vline v1"></i><i class="vline v2"></i><i class="vline v3"></i><i class="vline v4"></i><i class="vline v5"></i>
+        <i class="wire w1"></i><i class="wire w2"></i><i class="wire w3"></i><i class="wire w4"></i>
+        <b class="node n1">1</b><b class="node n2 alt">2</b><b class="node n3">3</b><b class="node n4 alt">4</b><b class="node n5">5</b>
+        {plot_labels}
+      </div>
+      <div class="terminal">
+        <strong>$ utildesk inspect --ratgeber</strong>
+        <div><span>topic</span><code>{escape(short_label(title, 34))}</code></div>
+        <div><span>format</span><code>{escape(str(job.get("format") or "guide"))}</code></div>
+        <div><span>assets</span><code>terminal-png / no-svg</code></div>
+        <div><span>status</span><code>reviewable final view</code></div>
+      </div>
     </section>
   </main>
+  <div class="footer"><span>UTILDESK // terminal editorial image system</span><span>PNG / grid / mono / no generic cards</span></div>
 </body>
 </html>"""
 
 
 def workflow_html(title: str, job: dict[str, Any]) -> str:
-    steps = [
-        ("Quellenlage", "Genug belastbare Signale, keine Einzelquelle als Fundament."),
-        ("NotebookLM", "Aus Quellen entsteht ein erster, zitierbarer Artikelkern."),
-        ("Redaktion", "Dedupe, Beispiele, Struktur und Nutzen werden geprüft."),
-        ("Freigabe", "Finale Ansicht, PNG-Grafiken und Publikationsqueue."),
-    ]
+    steps = workflow_steps(title)
     cards = "".join(
-        f"<article><span>{index:02d}</span><h2>{escape(label)}</h2><p>{escape(text)}</p></article>"
-        for index, (label, text) in enumerate(steps, start=1)
+        f"<article><span>{index}</span><h2>{escape(label)}</h2><em>{escape(key.upper())}</em><p>{escape(text)}</p><b>ok</b></article>"
+        for index, (key, label, text) in enumerate(steps, start=1)
+    )
+    guardrails = "".join(
+        f"<span class=\"guard{' is-active' if index == 2 else ''}\">{escape(item)}</span>"
+        for index, item in enumerate(["Quellen", "Dedup", "Finalansicht", "PNG", "IndexNow"])
     )
     return f"""<!doctype html>
 <html>
@@ -271,97 +426,164 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
       width: 1600px;
       height: 980px;
       overflow: hidden;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #142520;
-      background:
-        linear-gradient(120deg, rgba(15,84,77,.10), transparent 42%),
-        linear-gradient(135deg, #fff8ec 0%, #efe4d4 100%);
+      font-family: "JetBrains Mono", "IBM Plex Mono", "Cascadia Mono", Consolas, monospace;
+      color: #1d1e18;
+      background-color: #f5f3ea;
+      background-image:
+        linear-gradient(#e1ddce 1px, transparent 1px),
+        linear-gradient(90deg, #ddd9c9 1px, transparent 1px);
+      background-size: 24px 24px;
+      border: 2px solid #c8c5b3;
     }}
     .frame {{
-      position: absolute;
-      inset: 56px;
-      padding: 72px;
-      border-radius: 54px;
-      border: 2px solid rgba(15,84,77,.18);
-      background: rgba(255,252,246,.72);
-      box-shadow: 0 38px 100px rgba(23,38,33,.13);
+      height: 100%;
+      padding: 58px 82px 52px;
     }}
-    .kicker {{
-      color: #0f544d;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-      font-size: 28px;
-      font-weight: 950;
+    .label {{
+      color: #828275;
+      font-size: 22px;
+      font-weight: 800;
     }}
     h1 {{
-      margin: 26px 0 56px;
-      max-width: 1120px;
-      font-size: 68px;
+      margin: 36px 0 28px;
+      font-size: 56px;
       line-height: .98;
-      letter-spacing: -.065em;
+      letter-spacing: -.055em;
+      max-width: 1220px;
+    }}
+    .dek {{
+      margin: 0 0 60px;
+      max-width: 940px;
+      color: #54564a;
+      font-size: 30px;
+      line-height: 1.32;
     }}
     .cards {{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 26px;
       position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 42px;
     }}
-    .cards:before {{
+    .cards::before {{
       content: "";
       position: absolute;
-      left: 110px;
-      right: 110px;
-      top: 92px;
-      height: 10px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #0f544d, #d98a41, #0f544d);
-      opacity: .28;
+      left: 72px;
+      right: 72px;
+      top: 144px;
+      height: 5px;
+      background: #b1ad9a;
     }}
     article {{
       position: relative;
-      min-height: 370px;
-      padding: 34px;
-      border-radius: 38px;
-      background: #ffffff;
-      border: 1px solid rgba(15,84,77,.16);
-      box-shadow: 0 24px 56px rgba(23,38,33,.10);
+      min-height: 292px;
+      padding: 28px 26px;
+      border: 2px solid #c8c5b3;
+      background: #f5f3ea;
+    }}
+    article:nth-child(even) {{
+      background: #ebe9df;
     }}
     article span {{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 74px;
-      height: 74px;
-      border-radius: 26px;
-      background: #0f544d;
-      color: white;
-      font-size: 30px;
-      font-weight: 950;
-      box-shadow: 0 18px 38px rgba(15,84,77,.22);
-    }}
-    article:nth-child(even) span {{ background: #d98a41; }}
-    h2 {{
-      margin: 56px 0 18px;
-      color: #0f544d;
-      font-size: 40px;
-      line-height: 1.02;
-      letter-spacing: -.04em;
-    }}
-    p {{
-      margin: 0;
-      color: #536a64;
+      display: grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      border: 2px solid #1d1e18;
+      background: #4f7f28;
+      color: #f5f3ea;
       font-size: 25px;
-      line-height: 1.34;
-      font-weight: 650;
+      font-weight: 900;
+    }}
+    article:nth-child(2) span,
+    article:nth-child(3) span {{
+      background: #a06b1f;
+    }}
+    article h2 {{
+      margin: 38px 0 12px;
+      color: #1d1e18;
+      font-size: 29px;
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }}
+    article em {{
+      display: block;
+      margin-bottom: 20px;
+      color: #828275;
+      font-style: normal;
+      font-size: 22px;
+      font-weight: 700;
+    }}
+    article p {{
+      margin: 0;
+      color: #54564a;
+      font-size: 18px;
+      line-height: 1.32;
+      max-height: 72px;
+      overflow: hidden;
+    }}
+    article b {{
+      position: absolute;
+      right: 26px;
+      top: 32px;
+      color: #365d1b;
+      font-size: 25px;
+    }}
+    .arrow {{
+      position: absolute;
+      top: 424px;
+      color: #365d1b;
+      font-size: 36px;
+      font-weight: 900;
+    }}
+    .a1 {{ left: 335px; }} .a2 {{ left: 624px; }} .a3 {{ left: 912px; }} .a4 {{ left: 1202px; }}
+    .guardrails {{
+      margin-top: 78px;
+      padding: 26px 28px;
+      border: 2px solid #c8c5b3;
+      background: #ebe9df;
+    }}
+    .guardrails .label {{
+      display: block;
+      margin-bottom: 24px;
+    }}
+    .guard {{
+      display: inline-block;
+      margin-right: 14px;
+      padding: 10px 18px;
+      border: 2px solid #b1ad9a;
+      background: #f5f3ea;
+      color: #365d1b;
+      font-size: 25px;
+      font-weight: 850;
+    }}
+    .guard.is-active {{
+      color: #f5f3ea;
+      background: #4f7f28;
+      border-color: #4f7f28;
+    }}
+    .footer {{
+      position: absolute;
+      left: 64px;
+      right: 56px;
+      bottom: 44px;
+      display: flex;
+      justify-content: space-between;
+      color: #828275;
+      font-size: 21px;
+      font-weight: 700;
     }}
   </style>
 </head>
 <body>
   <main class="frame">
-    <div class="kicker">Ratgeber-Workflow</div>
-    <h1>Vom Signal zur geprüften Veröffentlichung</h1>
+    <div class="label">[ workflow.trace ]</div>
+    <h1>FROM SIGNAL TO PUBLISH</h1>
+    <p class="dek">{escape(short_label(title, 110))}</p>
     <section class="cards">{cards}</section>
+    <b class="arrow a1">-&gt;</b><b class="arrow a2">-&gt;</b><b class="arrow a3">-&gt;</b><b class="arrow a4">-&gt;</b>
+    <section class="guardrails"><span class="label">[ guardrails ]</span>{guardrails}</section>
   </main>
+  <div class="footer"><span>UTILDESK // visual review asset</span><span>article-safe / no-svg / terminal system</span></div>
 </body>
 </html>"""
 

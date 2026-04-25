@@ -6,8 +6,8 @@ category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
 readTime: 7
-coverImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-cover.svg
-secondaryImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.svg
+coverImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-cover.png
+secondaryImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.png
 tags:
   - "KI-Orchestrierung"
   - "KI-Agenten"
@@ -39,7 +39,7 @@ Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination v
 
 An diesem Punkt verschiebt sich die Herausforderung. Teams kämpfen dann nicht mehr primär mit fehlender Generierungsgeschwindigkeit, sondern mit fehlender Ordnung. Wer arbeitet gerade an welcher Teilaufgabe? Wo wird gegen die Spezifikation geprüft? Welche Änderung ist wirklich mergefähig? Aus Sicht produktiver Entwicklung ist genau das der Moment, in dem aus "KI hilft beim Coding" eine neue Workflow-Frage wird.
 
-![Schema eines orchestrierten KI-Workflows mit Spezifikation, Planung, Agenten, Prüfung und Review](/images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.svg)
+![Schema eines orchestrierten KI-Workflows mit Spezifikation, Planung, Agenten, Prüfung und Review](/images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.png)
 
 ## Was eine Orchestrierungsschicht konkret leistet
 
