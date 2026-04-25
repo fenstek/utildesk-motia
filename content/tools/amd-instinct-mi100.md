@@ -1,10 +1,11 @@
 ---
-slug: "amd-instinct-mi100"
-title: "AMD Instinct MI100"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: amd-instinct-mi100
+title: AMD Instinct MI100
+category: AI
+price_model: Individuelles Angebot
 tags: [hardware,gpu,ai-accelerators,enterprise]
 official_url: "https://www.amd.com/en/products/accelerators/instinct/mi100.html"
+popularity: 0
 ---
 
 # AMD Instinct MI100

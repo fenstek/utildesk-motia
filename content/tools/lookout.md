@@ -1,10 +1,11 @@
 ---
-slug: "lookout"
-title: "Lookout"
-category: "AI"
-price_model: "Abonnement"
+slug: lookout
+title: Lookout
+category: AI
+price_model: Abonnement
 tags: [security, mobile, enterprise, ai]
 official_url: "https://www.lookout.com/"
+popularity: 0
 ---
 
 # Lookout

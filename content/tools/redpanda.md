@@ -1,10 +1,11 @@
 ---
-slug: "redpanda"
-title: "Redpanda"
-category: "AI"
-price_model: "Je nach Plan"
+slug: redpanda
+title: Redpanda
+category: AI
+price_model: Je nach Plan
 tags: [data, streaming, cloud, developer-tools]
 official_url: "https://www.redpanda.com/"
+popularity: 0
 ---
 
 # Redpanda

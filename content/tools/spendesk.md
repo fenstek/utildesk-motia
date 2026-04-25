@@ -1,10 +1,11 @@
 ---
-slug: "spendesk"
-title: "Spendesk"
-category: "AI"
-price_model: "Abonnement"
+slug: spendesk
+title: Spendesk
+category: AI
+price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.spendesk.com/"
+popularity: 0
 ---
 
 # Spendesk

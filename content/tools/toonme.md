@@ -1,10 +1,11 @@
 ---
-slug: "toonme"
-title: "ToonMe"
-category: "AI"
-price_model: "Freemium"
+slug: toonme
+title: ToonMe
+category: AI
+price_model: Freemium
 tags: [image, photo, cartoonizer, mobile]
 official_url: "https://app.toonme.com/"
+popularity: 0
 ---
 
 # ToonMe

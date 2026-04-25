@@ -1,10 +1,11 @@
 ---
-slug: "codecademy"
-title: "Codecademy"
-category: "Developer"
-price_model: "Freemium"
+slug: codecademy
+title: Codecademy
+category: Developer
+price_model: Freemium
 tags: [education, developer-tools, coding, learning]
 official_url: "https://www.codecademy.com/"
+popularity: 0
 ---
 
 # Codecademy

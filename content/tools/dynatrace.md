@@ -1,10 +1,11 @@
 ---
-slug: "dynatrace"
-title: "Dynatrace"
-category: "AI"
-price_model: "Abonnement, Nutzungsbasiert, Individuelles Angebot"
+slug: dynatrace
+title: Dynatrace
+category: AI
+price_model: Abonnement, Nutzungsbasiert, Individuelles Angebot
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.dynatrace.com/"
+popularity: 0
 ---
 
 # Dynatrace

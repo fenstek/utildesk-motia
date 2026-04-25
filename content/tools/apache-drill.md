@@ -1,10 +1,11 @@
 ---
-slug: "apache-drill"
-title: "Apache Drill"
-category: "AI"
-price_model: "Open Source"
+slug: apache-drill
+title: Apache Drill
+category: AI
+price_model: Open Source
 tags: [data, analytics, developer-tools, open-source]
 official_url: "https://drill.apache.org/"
+popularity: 0
 ---
 
 # Apache Drill

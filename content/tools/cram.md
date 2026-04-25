@@ -1,10 +1,11 @@
 ---
-slug: "cram"
-title: "Cram"
-category: "AI"
-price_model: "Freemium"
+slug: cram
+title: Cram
+category: AI
+price_model: Freemium
 tags: [education, flashcards, learning, productivity]
 official_url: "https://www.cram.com/"
+popularity: 0
 ---
 
 # Cram

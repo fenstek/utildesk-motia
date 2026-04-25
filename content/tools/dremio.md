@@ -1,10 +1,11 @@
 ---
-slug: "dremio"
-title: "Dremio"
-category: "AI"
-price_model: "Je nach Plan"
+slug: dremio
+title: Dremio
+category: AI
+price_model: Je nach Plan
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://www.dremio.com/"
+popularity: 0
 ---
 
 # Dremio

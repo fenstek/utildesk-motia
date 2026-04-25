@@ -1,10 +1,11 @@
 ---
-slug: "lectora"
-title: "Lectora"
-category: "AI"
-price_model: "Abonnement"
+slug: lectora
+title: Lectora
+category: AI
+price_model: Abonnement
 tags: [education, authoring, content, design]
 official_url: "https://products.elblearning.com/create-learning/lectora"
+popularity: 0
 ---
 
 # Lectora

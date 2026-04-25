@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-pub-sub"
-title: "Google Cloud Pub/Sub"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-pub-sub
+title: Google Cloud Pub/Sub
+category: AI
+price_model: Nutzungsbasiert
 tags: [data,messaging,cloud,developer-tools]
 official_url: "https://cloud.google.com/pubsub"
+popularity: 0
 ---
 
 # Google Cloud Pub/Sub

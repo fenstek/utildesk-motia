@@ -1,10 +1,11 @@
 ---
-slug: "dominknow-one"
-title: "DominKnow | ONE"
-category: "AI"
-price_model: "Abonnement"
+slug: dominknow-one
+title: DominKnow | ONE
+category: AI
+price_model: Abonnement
 tags: [education, authoring, content, collaboration]
 official_url: "https://dominknow.com/"
+popularity: 0
 ---
 
 # DominKnow | ONE

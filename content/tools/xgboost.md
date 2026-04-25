@@ -1,10 +1,11 @@
 ---
-slug: "xgboost"
-title: "XGBoost"
-category: "AI"
-price_model: "Open Source"
+slug: xgboost
+title: XGBoost
+category: AI
+price_model: Open Source
 tags: [machine-learning,developer-tools,open-source,analytics]
 official_url: "https://xgboost.ai/"
+popularity: 0
 ---
 
 # XGBoost

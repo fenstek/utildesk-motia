@@ -1,10 +1,11 @@
 ---
-slug: "toongineer-cartoonizer"
-title: "Toongineer Cartoonizer"
-category: "AI"
-price_model: "Freemium"
+slug: toongineer-cartoonizer
+title: Toongineer Cartoonizer
+category: AI
+price_model: Freemium
 tags: [image, cartoonizer, photo, editing]
 official_url: "https://vanceai.com/toongineer-cartoonizer/"
+popularity: 0
 ---
 
 # Toongineer Cartoonizer

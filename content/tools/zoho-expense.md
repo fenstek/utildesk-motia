@@ -1,10 +1,11 @@
 ---
-slug: "zoho-expense"
-title: "Zoho Expense"
-category: "AI"
-price_model: "Abonnement"
+slug: zoho-expense
+title: Zoho Expense
+category: AI
+price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.zoho.com/de-de/expense/"
+popularity: 0
 ---
 
 # Zoho Expense

@@ -5,7 +5,7 @@ category: Developer
 price_model: Je nach Plan
 tags: [coding, developer-tools, automation, productivity]
 official_url: "https://aws.amazon.com/q/developer/"
-popularity: 77
+popularity: 81
 ---
 
 # Amazon CodeWhisperer
