@@ -1,10 +1,11 @@
 ---
-slug: "new-relic"
-title: "New Relic"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: new-relic
+title: New Relic
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [monitoring, analytics, observability, developer-tools]
 official_url: "https://newrelic.com/"
+popularity: 0
 ---
 
 # New Relic

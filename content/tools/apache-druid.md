@@ -1,10 +1,11 @@
 ---
-slug: "apache-druid"
-title: "Apache Druid"
-category: "AI"
-price_model: "Open Source"
+slug: apache-druid
+title: Apache Druid
+category: AI
+price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://druid.apache.org/"
+popularity: 0
 ---
 
 # Apache Druid

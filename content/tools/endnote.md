@@ -5,7 +5,7 @@ category: AI
 price_model: Einmalzahlung
 tags: [reference-manager,citations,research]
 official_url: "https://endnote.com/de/?"
-popularity: 98
+popularity: 100
 ---
 
 # EndNote

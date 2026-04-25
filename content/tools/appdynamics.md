@@ -1,10 +1,11 @@
 ---
-slug: "appdynamics"
-title: "AppDynamics"
-category: "AI"
-price_model: "Abonnement, Individuelles Angebot"
+slug: appdynamics
+title: AppDynamics
+category: AI
+price_model: Abonnement, Individuelles Angebot
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.splunk.com/en_us/appdynamics-joins-splunk.html?301=appdynamics"
+popularity: 0
 ---
 
 # AppDynamics

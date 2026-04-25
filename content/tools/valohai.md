@@ -1,10 +1,11 @@
 ---
-slug: "valohai"
-title: "Valohai"
-category: "AI"
-price_model: "Je nach Plan"
+slug: valohai
+title: Valohai
+category: AI
+price_model: Je nach Plan
 tags: [mlops,machine-learning,cloud,developer-tools]
 official_url: "https://valohai.com/"
+popularity: 0
 ---
 
 # Valohai

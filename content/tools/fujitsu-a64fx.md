@@ -1,10 +1,11 @@
 ---
-slug: "fujitsu-a64fx"
-title: "Fujitsu A64FX"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: fujitsu-a64fx
+title: Fujitsu A64FX
+category: AI
+price_model: Individuelles Angebot
 tags: [hardware, hpc, ai-accelerators, enterprise]
 official_url: "https://global.fujitsu/en-global/capabilities/computer-platform"
+popularity: 0
 ---
 
 # Fujitsu A64FX

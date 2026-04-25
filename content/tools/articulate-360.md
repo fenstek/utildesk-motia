@@ -1,10 +1,11 @@
 ---
-slug: "articulate-360"
-title: "Articulate 360"
-category: "AI"
-price_model: "Abonnement"
+slug: articulate-360
+title: Articulate 360
+category: AI
+price_model: Abonnement
 tags: [education, authoring, content, design]
 official_url: "https://www.articulate.com/360/"
+popularity: 0
 ---
 
 # Articulate 360

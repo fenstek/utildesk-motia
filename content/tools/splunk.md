@@ -1,10 +1,11 @@
 ---
-slug: "splunk"
-title: "Splunk"
-category: "AI"
-price_model: "Abonnement, Individuelles Angebot, Je nach Plan"
+slug: splunk
+title: Splunk
+category: AI
+price_model: Abonnement, Individuelles Angebot, Je nach Plan
 tags: [analytics, observability, security, enterprise]
 official_url: "https://www.splunk.com/"
+popularity: 0
 ---
 
 # Splunk

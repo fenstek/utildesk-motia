@@ -1,10 +1,11 @@
 ---
-slug: "apache-kafka"
-title: "Apache Kafka"
-category: "AI"
-price_model: "Open Source"
+slug: apache-kafka
+title: Apache Kafka
+category: AI
+price_model: Open Source
 tags: [data, streaming, open-source, developer-tools]
 official_url: "https://kafka.apache.org/"
+popularity: 0
 ---
 
 # Apache Kafka

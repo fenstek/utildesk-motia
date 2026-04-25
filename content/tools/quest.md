@@ -1,10 +1,11 @@
 ---
-slug: "quest"
-title: "Quest"
-category: "AI"
-price_model: "Open Source"
+slug: quest
+title: Quest
+category: AI
+price_model: Open Source
 tags: [developer-tools,gaming,open-source,writing]
 official_url: "https://github.com/textadventures/quest"
+popularity: 0
 ---
 
 # Quest

@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: ["automation", "workflow", "data"]
 official_url: "https://www.uipath.com/"
-popularity: 4
+popularity: 5
 ---
 
 # UiPath

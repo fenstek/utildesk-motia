@@ -1,10 +1,11 @@
 ---
-slug: "powerdirector"
-title: "PowerDirector"
-category: "AI"
-price_model: "Abonnement"
+slug: powerdirector
+title: PowerDirector
+category: AI
+price_model: Abonnement
 tags: [video, editing, content, desktop]
 official_url: "https://www.cyberlink.com/products/powerdirector-video-editing-software/overview_en_US.html"
+popularity: 0
 ---
 
 # PowerDirector

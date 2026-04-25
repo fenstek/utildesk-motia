@@ -6,7 +6,7 @@ price_model: Freemium
 tags: [ai, developer]
 official_url: "https://www.tabnine.com/"
 created_at: 2026-02-14
-popularity: 87
+popularity: 13
 ---
 
 

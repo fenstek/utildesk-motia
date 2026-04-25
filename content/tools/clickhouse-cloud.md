@@ -1,10 +1,11 @@
 ---
-slug: "clickhouse-cloud"
-title: "ClickHouse Cloud"
-category: "AI"
-price_model: "Je nach Plan"
+slug: clickhouse-cloud
+title: ClickHouse Cloud
+category: AI
+price_model: Je nach Plan
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://clickhouse.com/cloud"
+popularity: 0
 ---
 
 # ClickHouse Cloud

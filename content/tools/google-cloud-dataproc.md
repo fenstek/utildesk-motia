@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-dataproc"
-title: "Google Cloud Dataproc"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-dataproc
+title: Google Cloud Dataproc
+category: AI
+price_model: Nutzungsbasiert
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://cloud.google.com/products/managed-service-for-apache-spark"
+popularity: 0
 ---
 
 # Google Cloud Dataproc

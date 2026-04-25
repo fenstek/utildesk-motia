@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [translation, nmt, deep-learning]
 official_url: "https://awslabs.github.io/sockeye/"
-popularity: 16
+popularity: 20
 ---
 
 # Sockeye
