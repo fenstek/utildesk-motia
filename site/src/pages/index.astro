@@ -17,10 +17,9 @@ import {
   SITE_URL,
 } from "../lib/siteMeta";
 
-// Load tools and build tag frequency map
 const toolsDir = fromContent("tools");
 const files = (await readdir(toolsDir))
-  .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+  .filter((file) => file.endsWith(".md") && !file.startsWith("_"));
 
 const stripMarkdown = (text: string) =>
   text
@@ -29,7 +28,6 @@ const stripMarkdown = (text: string) =>
     .replace(/[`*_>#-]/g, "")
     .replace(/\s+/g, " ")
     .trim();
-
 
 const getExcerpt = (content: string) => {
   const paragraphs = content.split(/\n\s*\n/);
@@ -43,8 +41,7 @@ const getExcerpt = (content: string) => {
 
 const getImageFromContent = (content: string) => {
   const match = content.match(/!\[[^\]]*]\(([^)]+)\)/);
-  if (!match?.[1]) return null;
-  return match[1].trim();
+  return match?.[1]?.trim() || null;
 };
 
 const normalizeImagePath = (path: string | null) => {
@@ -59,15 +56,9 @@ const resolveCategoryIcon = (category: string | null, tags: string[]) => {
   const normalizedTags = tags.map((tag) => tag.toLowerCase());
   const combined = [normalizedCategory, ...normalizedTags].join(" ");
 
-  if (combined.includes("design") || combined.includes("ui") || combined.includes("ux")) {
-    return "design";
-  }
-  if (combined.includes("automation") || combined.includes("workflow")) {
-    return "automation";
-  }
-  if (combined.includes("ai") || combined.includes("ml") || combined.includes("machine")) {
-    return "ai";
-  }
+  if (combined.includes("design") || combined.includes("ui") || combined.includes("ux")) return "design";
+  if (combined.includes("automation") || combined.includes("workflow")) return "automation";
+  if (combined.includes("ai") || combined.includes("ml") || combined.includes("machine")) return "ai";
   return "generic";
 };
 
@@ -78,6 +69,7 @@ const tools = await Promise.all(
     const { data, content } = matter(raw);
     const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
     if (disabled) return null;
+
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
@@ -103,17 +95,17 @@ const tools = await Promise.all(
     const faviconCandidates = getFaviconCandidates(providerUrl, 128);
     const faviconLogo = faviconCandidates[0] ?? null;
     const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath ?? faviconLogo;
-    const homeCardLogoFallbacks = normalizeImagePath(brandLogo) || localLogoPath || !faviconLogo ? [] : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
+    const homeCardLogoFallbacks = normalizeImagePath(brandLogo) || localLogoPath || !faviconLogo
+      ? []
+      : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
     const homeCardImage = normalizeImagePath(homeImage ?? image ?? icon ?? contentImage);
+
     return {
       slug,
       title,
       category,
       price_model,
       popularity: data.popularity ? Number(data.popularity) : 0,
-      image,
-      homeImage,
-      brandLogo,
       tags,
       excerpt,
       homeCardImage,
@@ -127,7 +119,6 @@ const tools = await Promise.all(
 const enabledTools = tools.filter(Boolean);
 enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
-// Build tag frequency map
 const tagFrequency = new Map<string, number>();
 enabledTools.forEach((tool) => {
   tool.tags.forEach((tag) => {
@@ -135,14 +126,9 @@ enabledTools.forEach((tool) => {
   });
 });
 
-// Sort tags by frequency and name
 const sortedTags = Array.from(tagFrequency.entries())
-  .sort((a, b) => {
-    if (b[1] !== a[1]) return b[1] - a[1]; // Sort by frequency descending
-    return a[0].localeCompare(b[0], "de"); // Then by name
-  });
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "de"));
 
-// Assign frequency classes (high/medium/low)
 const getFrequencyClass = (count: number, max: number) => {
   const ratio = count / max;
   if (ratio >= 0.6) return "tag-freq-high";
@@ -152,31 +138,48 @@ const getFrequencyClass = (count: number, max: number) => {
 
 const visibleTags = sortedTags.filter(([, count]) => count >= 3).slice(0, 24);
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
+const topTags = visibleTags.slice(0, 18);
 
-// Pinned tools in fixed order
 const pinnedSlugs = ["chatgpt", "claude", "midjourney", "perplexity", "zapier"];
-const enabledBySlug = new Map(enabledTools.map((t) => [t.slug, t]));
-
-// Get pinned tools in specified order (only existing ones)
-const pinnedTools = pinnedSlugs
-  .map((slug) => enabledBySlug.get(slug))
-  .filter(Boolean);
-
-// Get remaining tools (not pinned)
+const enabledBySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
+const pinnedTools = pinnedSlugs.map((slug) => enabledBySlug.get(slug)).filter(Boolean);
 const pinnedSlugSet = new Set(pinnedSlugs);
-const restTools = enabledTools.filter((t) => !pinnedSlugSet.has(t.slug));
-
-// Sort rest by popularity desc, then by title
-restTools.sort(
-  (a, b) =>
-    (b.popularity ?? 0) - (a.popularity ?? 0) ||
-    a.title.localeCompare(b.title, "de")
-);
-
-// Combine: pinned first, then top by popularity, limit to 12
+const restTools = enabledTools
+  .filter((tool) => !pinnedSlugSet.has(tool.slug))
+  .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
 const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
-const featuredCategories = CATEGORIES.slice(0, 4);
 const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
+
+const normalizedToolTerms = (tool) =>
+  [tool.category, ...tool.tags]
+    .filter(Boolean)
+    .map((value) => String(value).toLowerCase());
+
+const categoryStats = CATEGORIES.map((category) => {
+  const count = enabledTools.filter((tool) => {
+    const terms = normalizedToolTerms(tool);
+    return category.matchTags.some((match) =>
+      terms.some((term) => term.includes(match.toLowerCase()))
+    );
+  }).length;
+  return { ...category, count };
+}).sort((a, b) => b.count - a.count || a.title.localeCompare(b.title, "de"));
+
+const railCategories = categoryStats.slice(0, 9);
+const feedRows = [
+  ...recentRatgeber.map((article, index) => ({
+    stamp: `guide_${String(index + 1).padStart(2, "0")}`,
+    title: article.data.title,
+    href: `/ratgeber/${article.slug}/`,
+  })),
+  ...latestTools.slice(0, 5).map((tool, index) => ({
+    stamp: `tool_${String(index + 1).padStart(2, "0")}`,
+    title: `${tool.title} im Verzeichnis aktualisiert`,
+    href: `/tools/${tool.slug}/`,
+  })),
+].slice(0, 8);
+const primaryDetailTool = latestTools[0];
+
 const featuredToolsSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -190,13 +193,15 @@ const featuredToolsSchema = {
     url: `${SITE_URL}/tools/${tool.slug}/`,
   })),
 };
+
 const homePageSchema = buildCollectionPageSchema({
   name: "Utildesk",
-  description: "Kuratiertes Verzeichnis für AI-Tools, Automatisierung, Produktivität und Ratgeber.",
+  description: "Kuratiertes Verzeichnis fuer AI-Tools, Automatisierung, Produktivitaet und Ratgeber.",
   url: `${SITE_URL}/`,
-  about: ["AI-Tools", "Automatisierung", "Produktivität", "Ratgeber"],
+  about: ["AI-Tools", "Automatisierung", "Produktivitaet", "Ratgeber"],
   mainEntity: featuredToolsSchema,
 });
+
 const homepageSchemas = [
   buildOrganizationSchema(),
   buildWebSiteSchema(),
@@ -206,8 +211,8 @@ const homepageSchemas = [
 ---
 
 <BaseLayout
-  title="Utildesk — Tools & Guides für AI und Produktivität"
-  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools."
+  title="Utildesk - Tools & Guides fuer AI und Produktivitaet"
+  description="Kuratiertes Verzeichnis nuetzlicher AI- und Produktivitaetstools."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/" />
@@ -216,129 +221,227 @@ const homepageSchemas = [
     ))}
   </Fragment>
 
-  <!-- Hero Section -->
-  <section class="hero-stitch">
-    <div class="hero-stitch-inner">
-      <h1 class="hero-stitch-title">
-        Entdecke die Tools der
-        <span class="hero-stitch-accent"><em>Zukunft</em></span>
-        — heute.
-      </h1>
-      <p class="hero-stitch-sub">
-        Tools &amp; Guides für AI, Automatisierung und Produktivität.
-        Kuratiertes Verzeichnis mit allem, was du für effizientes Arbeiten brauchst.
-      </p>
-      <a href="/tools/" class="hero-stitch-cta">
-        Alle Tools durchsuchen →
-      </a>
+  <section class="terminal-hero">
+    <div class="terminal-hero-grid">
+      <div>
+        <div class="terminal-kicker">[ manifest_001 ]</div>
+        <h1 class="terminal-title">
+          Ein Verzeichnis,<br />
+          <span class="terminal-accent">keine KI-Shopping-Mall.</span>
+        </h1>
+        <p class="terminal-copy">
+          <span class="terminal-comment"># </span>
+          Kuratiert statt zugemuellt: Tools, Kategorien und Ratgeber werden als nutzbares Arbeitsverzeichnis
+          organisiert, nicht als endlose Sponsored-Liste.
+        </p>
+        <div class="terminal-stats" aria-label="Utildesk Kennzahlen">
+          <div class="terminal-stat">
+            <strong>{enabledTools.length}</strong>
+            <span>werkzeuge</span>
+          </div>
+          <div class="terminal-stat">
+            <strong>{CATEGORIES.length}</strong>
+            <span>kategorien</span>
+          </div>
+          <div class="terminal-stat">
+            <strong>{recentRatgeber.length}</strong>
+            <span>guides live</span>
+          </div>
+          <div class="terminal-stat">
+            <strong>0</strong>
+            <span>ads</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="terminal-kicker">[ query_interface ]</div>
+        <div class="terminal-query">
+          <span class="terminal-prompt">$</span>
+          <a href="/tools/">finde: transkription, agenten, automation, bilder, code</a>
+          <span class="terminal-caret">_</span>
+        </div>
+        <div class="terminal-hints">
+          <span>tipp:</span>
+          <code>kategorie:code</code>
+          <code>tag:research</code>
+          <code>preis:free</code>
+        </div>
+      </div>
+
+      <aside class="terminal-feed" aria-label="Aktuelle Eintraege">
+        <div class="terminal-kicker">[ live_feed ]</div>
+        <ul class="terminal-feed-list">
+          {feedRows.map((row) => (
+            <li class="terminal-feed-row">
+              <span class="terminal-feed-time">{row.stamp}</span>
+              <a class="terminal-feed-msg" href={row.href}>{row.title}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
     </div>
   </section>
 
-  <!-- Featured Tools Section -->
-  <section class="section home-section">
-    <div class="section-header home-section-header">
-      <h2 class="section-title">Ausgewählte Tools</h2>
-      <p class="section-subtitle">
-        Eine Auswahl aus unserem Verzeichnis
-      </p>
-    </div>
-
-    <div class="home-card-grid">
-      {latestTools.map((tool) => (
-        <a href={`/tools/${tool.slug}/`} class="home-card">
-          <div class="home-card-media">
-            <div class="home-card-img">
-              {tool.homeCardLogo ? (
-                <span class="home-card-logo">
-                  <img src={tool.homeCardLogo} alt={tool.title} loading="lazy" data-fallback-srcs={tool.homeCardLogoFallbacks.length ? JSON.stringify(tool.homeCardLogoFallbacks) : undefined} />
-                </span>
-              ) : tool.homeCardImage ? (
-                <img src={tool.homeCardImage} alt={tool.title} loading="lazy" />
-              ) : tool.fallbackIcon === "ai" ? (
-                <span class="home-card-logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path
-                      d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </span>
-              ) : tool.fallbackIcon === "automation" ? (
-                <span class="home-card-logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path
-                      d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </span>
-              ) : tool.fallbackIcon === "design" ? (
-                <span class="home-card-logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path
-                      d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </span>
-              ) : (
-                <span class="home-card-logo" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                    <path
-                      d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </span>
-              )}
-            </div>
-            <div class="home-card-body">
-              <h3 class="home-card-title">{tool.title}</h3>
-            </div>
-          </div>
+  <nav class="terminal-catbar" aria-label="Kategorien">
+    <span class="terminal-catbar-label">kategorien:</span>
+    <div class="terminal-catbar-list">
+      <a class="terminal-pill is-active" href="/tools/">
+        <span>*</span>
+        <span>alle</span>
+        <span>{enabledTools.length}</span>
+      </a>
+      {categoryStats.slice(0, 11).map((category) => (
+        <a class="terminal-pill" href={`/category/${category.slug}/`}>
+          <span>#</span>
+          <span>{category.title}</span>
+          <span>{category.count}</span>
         </a>
       ))}
     </div>
+  </nav>
 
-    <div style="text-align: center; margin-top: 48px;">
-      <a href="/tools/" class="hero-cta">
-        Alle {enabledTools.length} Tools durchsuchen →
-      </a>
-    </div>
+  <section class="terminal-main" aria-label="Utildesk Verzeichnis">
+    <aside class="terminal-rail" aria-label="Filteruebersicht">
+      <div class="terminal-rail-block">
+        <h2 class="terminal-rail-title">filter.set</h2>
+        {railCategories.map((category) => (
+          <a class="terminal-rail-link" href={`/category/${category.slug}/`}>
+            <span>{category.title}</span>
+            <span>{category.count}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="terminal-rail-block">
+        <h2 class="terminal-rail-title">top.tags</h2>
+        {topTags.slice(0, 8).map(([tag, count]) => (
+          <a class="terminal-rail-link" href={tagHref(tag)}>
+            <span>{tag}</span>
+            <span>{count}</span>
+          </a>
+        ))}
+      </div>
+
+      <p class="terminal-rail-note">
+        Quellen: lokale Tool-Dateien, redaktionelle Ratgeber und maschinenlesbare Kataloge.
+        Keine bezahlten Slots.
+      </p>
+    </aside>
+
+    <section class="terminal-results" aria-label="Ausgewaehlte Tools">
+      <div class="terminal-results-head">
+        <h2 class="terminal-results-title">results.selected</h2>
+        <span class="terminal-results-meta">{latestTools.length} von {enabledTools.length} Werkzeugen</span>
+        <span class="terminal-results-meta">sort: curated + popularity</span>
+      </div>
+      <div class="terminal-table-head" aria-hidden="true">
+        <span>idx</span>
+        <span>sig</span>
+        <span>tool</span>
+        <span>kategorie</span>
+        <span>preis</span>
+        <span>open</span>
+      </div>
+      <div>
+        {latestTools.map((tool, index) => (
+          <article class="terminal-row">
+            <span class="terminal-index">{String(index + 1).padStart(2, "0")}</span>
+            {tool.homeCardLogo ? (
+              <span class="terminal-glyph">
+                <img
+                  src={tool.homeCardLogo}
+                  alt=""
+                  loading="lazy"
+                  data-fallback-srcs={tool.homeCardLogoFallbacks.length ? JSON.stringify(tool.homeCardLogoFallbacks) : undefined}
+                />
+              </span>
+            ) : (
+              <span class="terminal-glyph" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
+            )}
+            <div>
+              <h3 class="terminal-row-title">
+                <a href={`/tools/${tool.slug}/`}>{tool.title}</a>
+              </h3>
+              <p class="terminal-row-desc">{tool.excerpt || "Kompakter Eintrag im Utildesk-Verzeichnis."}</p>
+              <div class="terminal-row-tags">
+                {tool.tags.slice(0, 3).map((tag) => (
+                  <a href={tagHref(tag)}>#{tag}</a>
+                ))}
+              </div>
+            </div>
+            <span class="terminal-row-category">{tool.category || tool.fallbackIcon}</span>
+            <span class="terminal-row-price">{tool.price_model || "n/a"}</span>
+            <span class="terminal-row-action">
+              <a class="terminal-open" href={`/tools/${tool.slug}/`} aria-label={`${tool.title} oeffnen`}>-&gt;</a>
+            </span>
+          </article>
+        ))}
+      </div>
+      <div class="terminal-results-foot">
+        <span>next: <a href="/tools/">vollstaendiges verzeichnis oeffnen</a></span>
+        <span>/</span>
+        <span>machine: <a href="/api/tools.json">/api/tools.json</a></span>
+      </div>
+    </section>
+
+    <aside class="terminal-detail" aria-label="Ratgeber und Detailansicht">
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">detail.preview</h2>
+        {primaryDetailTool && (
+          <>
+            <h3>{primaryDetailTool.title}</h3>
+            <p>{primaryDetailTool.excerpt || "Ausgewaehlter Tool-Eintrag."}</p>
+            <a class="btn-primary" href={`/tools/${primaryDetailTool.slug}/`}>eintrag ansehen</a>
+          </>
+        )}
+      </div>
+
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">ratgeber.latest</h2>
+        {recentRatgeber.map((article) => (
+          <a class="terminal-rail-link" href={`/ratgeber/${article.slug}/`}>
+            <span>{article.data.title}</span>
+            <span>guide</span>
+          </a>
+        ))}
+      </div>
+
+      <pre class="terminal-ascii" aria-hidden="true">{`utildesk://catalog
+  tools       ${enabledTools.length}
+  categories  ${CATEGORIES.length}
+  guides      ${recentRatgeber.length}
+  ads         0`}</pre>
+    </aside>
   </section>
 
-  <section class="section home-section home-discovery">
-    <div class="section-header home-section-header">
-      <h2 class="section-title">Themen &amp; Guides</h2>
-      <p class="section-subtitle">
-        Schneller Einstieg in die wichtigsten Kategorien und redaktionellen Einordnungen.
-      </p>
-    </div>
-
-    <div class="discovery-grid">
-      <div class="discovery-panel">
-        <div class="discovery-panel-head">
-          <h3>Kategorien</h3>
-          <a href="/category/" class="discovery-more">Alle Kategorien</a>
+  <section class="terminal-bottom" aria-label="Themen und maschinenlesbare Einstiege">
+    <div class="terminal-bottom-grid">
+      <div class="terminal-panel">
+        <div class="terminal-panel-head">
+          <h2>tags.index</h2>
+          <a href="/tools/">alle tools</a>
         </div>
-        <div class="discovery-list">
-          {featuredCategories.map((category) => (
-            <a href={`/category/${category.slug}/`} class="discovery-item">
-              <strong>{category.title}</strong>
-              <span>{category.description}</span>
+        <div class="tag-cloud home-tags-cloud">
+          {topTags.map(([tag, count]) => (
+            <a
+              href={tagHref(tag)}
+              class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
+            >
+              #{tag}
             </a>
           ))}
         </div>
       </div>
 
-      <div class="discovery-panel">
-        <div class="discovery-panel-head">
-          <h3>Ratgeber</h3>
-          <a href="/ratgeber/" class="discovery-more">Zum Ratgeber</a>
+      <div class="terminal-panel">
+        <div class="terminal-panel-head">
+          <h2>guides.index</h2>
+          <a href="/ratgeber/">zum ratgeber</a>
         </div>
-        <div class="discovery-list">
+        <div class="terminal-mini-list">
           {recentRatgeber.map((article) => (
-            <a href={`/ratgeber/${article.slug}/`} class="discovery-item">
+            <a class="terminal-mini-item" href={`/ratgeber/${article.slug}/`}>
               <strong>{article.data.title}</strong>
               <span>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</span>
             </a>
@@ -347,143 +450,4 @@ const homepageSchemas = [
       </div>
     </div>
   </section>
-
-  <!-- Tag Cloud Section -->
-  <section class="section home-section home-tags home-v2">
-    {sortedTags.length > 0 ? (
-      <div class="tag-cloud home-tags-cloud">
-        {visibleTags.map(([tag, count]) => (
-          <a
-            href={tagHref(tag)}
-            class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
-          >
-            {tag}
-          </a>
-        ))}
-      </div>
-    ) : (
-      <p style="text-align: center; color: var(--text-muted);">
-        Keine Tags gefunden.
-      </p>
-    )}
-  </section>
 </BaseLayout>
-
-<style>
-  .home-discovery {
-    padding-top: 8px;
-  }
-
-  .discovery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-  }
-
-  .discovery-panel {
-    padding: 24px;
-    border: 1px solid rgba(23, 98, 89, 0.12);
-    border-radius: 28px;
-    background:
-      radial-gradient(circle at top left, rgba(23, 98, 89, 0.08), transparent 42%),
-      linear-gradient(145deg, rgba(255, 250, 243, 0.72), rgba(23, 98, 89, 0.03));
-    box-shadow: 0 16px 36px rgba(18, 28, 24, 0.05);
-  }
-
-  .discovery-panel-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 18px;
-  }
-
-  .discovery-panel-head h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: var(--on-surface);
-  }
-
-  .discovery-more {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--primary);
-    text-decoration: none;
-  }
-
-  .discovery-list {
-    display: grid;
-    gap: 12px;
-  }
-
-  .discovery-item {
-    display: grid;
-    gap: 6px;
-    padding: 14px 16px;
-    border-radius: 18px;
-    text-decoration: none;
-    color: inherit;
-    background: rgba(255, 255, 255, 0.74);
-    border: 1px solid rgba(23, 98, 89, 0.10);
-    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
-  }
-
-  .discovery-item:hover {
-    transform: translateY(-2px);
-    border-color: rgba(23, 98, 89, 0.18);
-    box-shadow: 0 12px 28px rgba(18, 28, 24, 0.06);
-  }
-
-  .discovery-item strong {
-    font-size: 0.98rem;
-    line-height: 1.3;
-    color: var(--on-surface);
-  }
-
-  .discovery-item span {
-    font-size: 0.92rem;
-    line-height: 1.55;
-    color: var(--secondary);
-  }
-
-  :global([data-theme="dark"]) .discovery-panel {
-    border-color: rgba(142, 216, 201, 0.18);
-    background:
-      radial-gradient(circle at top left, rgba(142, 216, 201, 0.10), transparent 44%),
-      linear-gradient(145deg, rgba(16, 32, 28, 0.92), rgba(7, 17, 14, 0.96));
-    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.24);
-  }
-
-  :global([data-theme="dark"]) .discovery-panel-head h3 {
-    color: rgba(246, 252, 249, 0.96);
-  }
-
-  :global([data-theme="dark"]) .discovery-more {
-    color: #8ed8c9;
-  }
-
-  :global([data-theme="dark"]) .discovery-item {
-    background: rgba(22, 41, 36, 0.88);
-    border-color: rgba(142, 216, 201, 0.18);
-  }
-
-  :global([data-theme="dark"]) .discovery-item:hover {
-    border-color: rgba(142, 216, 201, 0.34);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
-  }
-
-  :global([data-theme="dark"]) .discovery-item strong {
-    color: rgba(246, 252, 249, 0.96);
-  }
-
-  :global([data-theme="dark"]) .discovery-item span {
-    color: rgba(226, 238, 233, 0.72);
-  }
-
-  @media (max-width: 900px) {
-    .discovery-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

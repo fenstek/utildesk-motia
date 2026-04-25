@@ -17,6 +17,8 @@ _archive/
 
 # local reports (generated)
 reports/
+output/
+.wrangler/
 
 # audit scripts output (temporary)
 **/audit_missing_categories.*
