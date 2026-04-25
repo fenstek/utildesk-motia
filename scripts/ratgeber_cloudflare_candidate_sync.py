@@ -165,7 +165,6 @@ def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
       <article class="n4">Agent 01<small>code path</small></article>
       <article class="n5 warn">Agent 02<small>research</small></article>
       <article class="n6 dark">Review<small>gate</small></article>
-      <footer>trace: sources -&gt; plan -&gt; shards -&gt; verifier -&gt; publish</footer>
     </section>"""
     return """
     <section class="visual ide-workbench">
@@ -511,17 +510,6 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
     .agent-bus .n4 {{ left: 144px; top: 530px; }} .agent-bus .n5 {{ left: 402px; top: 560px; }} .agent-bus .n6 {{ left: 592px; top: 516px; }}
     .agent-bus .n1::after,.agent-bus .n2::after,.agent-bus .n3::after {{ top: 104px; }}
     .agent-bus .n4::after,.agent-bus .n5::after,.agent-bus .n6::after {{ bottom: 104px; }}
-    .agent-bus footer {{
-      position: absolute;
-      left: 60px;
-      right: 60px;
-      bottom: 52px;
-      padding: 16px 24px;
-      border: 2px solid #c8c5b3;
-      background: #f5f3ea;
-      color: #54564a;
-      font-size: 20px;
-    }}
     .ide-workbench .ide,
     .ide-workbench .cli,
     .ide-workbench .gate {{
@@ -665,17 +653,6 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
       font-family: inherit;
       font-style: normal;
     }}
-    .footer {{
-      position: absolute;
-      left: 64px;
-      right: 56px;
-      bottom: 44px;
-      display: flex;
-      justify-content: space-between;
-      color: #828275;
-      font-size: 21px;
-      font-weight: 700;
-    }}
   </style>
 </head>
 <body>
@@ -690,7 +667,6 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
     </section>
     <section>{visual_markup}</section>
   </main>
-  <div class="footer"><span>UTILDESK // topic-specific editorial image</span><span>PNG / grid / mono / no cloned diagrams</span></div>
 </body>
 </html>"""
 
@@ -890,17 +866,6 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
       color: #828275;
       font-size: 18px;
     }}
-    .footer {{
-      position: absolute;
-      left: 64px;
-      right: 56px;
-      bottom: 44px;
-      display: flex;
-      justify-content: space-between;
-      color: #828275;
-      font-size: 21px;
-      font-weight: 700;
-    }}
   </style>
 </head>
 <body>
@@ -910,7 +875,249 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
     <p class="dek">{escape(short_label(title, 110))}</p>
     {visual_markup}
   </main>
-  <div class="footer"><span>UTILDESK // workflow visual family</span><span>article-safe / topic-specific / no clones</span></div>
+</body>
+</html>"""
+
+
+# The definitions below intentionally shadow the older terminal-style image
+# templates above. Keeping them here lets the candidate backend generate the
+# same softer editorial PNG direction without adding Pillow to the VPS venv.
+
+def visual_heading(title: str) -> str:
+    return {
+        "models": "ASSISTANT STUDIO",
+        "crawl": "CRAWL CONTROL",
+        "orchestration": "ORCHESTRATION LAB",
+        "developer": "AGENT WORKBENCH",
+    }.get(topic_kind(title), "SIGNAL STUDIO")
+
+
+def workflow_heading(title: str) -> str:
+    return {
+        "models": "MODEL ROUTING",
+        "crawl": "CONTROLLED CRAWL",
+        "orchestration": "SOURCE TO REVIEW",
+        "developer": "BUILD RUN",
+    }.get(topic_kind(title), "SOURCE TO REVIEW")
+
+
+def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
+    visual = topic_kind(title)
+    if visual == "models":
+        return """
+    <section class="soft-scene models-scene">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="browser in-a"><b></b><span></span><span></span><span></span></div>
+      <div class="browser in-b"><b></b><span></span><span></span><span></span></div>
+      <div class="database"></div><div class="robot"></div><div class="dashboard"></div>
+      <div class="wire w1"></div><div class="wire w2 orange"></div><div class="wire w3 green"></div><div class="wire w4 orange"></div>
+      <em class="star s1"></em><em class="star s2"></em><em class="star s3"></em>
+    </section>"""
+    if visual == "crawl":
+        return """
+    <section class="soft-scene crawl-scene">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="browser in-a"><b></b><span></span><span></span><span></span></div>
+      <div class="browser in-b"><b></b><span></span><span></span><span></span></div>
+      <div class="browser in-c"><b></b><span></span><span></span><span></span></div>
+      <div class="database"></div><div class="robot"></div><div class="dashboard"></div>
+      <div class="tag allow">allow</div><div class="tag limit">limit</div><div class="tag block">block</div>
+      <div class="wire w1"></div><div class="wire w2"></div><div class="wire w3"></div><div class="wire w4 orange"></div>
+    </section>"""
+    if visual == "orchestration":
+        return """
+    <section class="soft-scene orchestration-scene">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="book a"><b>N</b></div><div class="book b"><b>LM</b></div>
+      <div class="robot"></div><div class="review-pill">review gate</div>
+      <div class="step p1">Plan<small>step 01</small></div><div class="step p2">Agent<small>step 02</small></div>
+      <div class="step p3 warn">Test<small>step 03</small></div><div class="step p4">Publish<small>step 04</small></div>
+      <div class="wire w1"></div><div class="wire w2 orange"></div><div class="wire w3 green"></div><div class="wire w4"></div><div class="wire w5 orange"></div>
+      <em class="star s1"></em><em class="star s2"></em><em class="star s3"></em>
+    </section>"""
+    return """
+    <section class="soft-scene developer-scene">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="browser ide"><b></b><span></span><span></span><span></span><span></span></div>
+      <div class="robot big"></div><div class="floating f1"></div><div class="floating f2"></div><div class="floating f3"></div>
+      <div class="dashboard"></div><div class="bench"></div>
+      <div class="wire w1"></div><div class="wire w2 orange"></div><div class="wire w3 green"></div>
+      <em class="star s1"></em><em class="star s2"></em><em class="star s3"></em>
+    </section>"""
+
+
+def workflow_visual_html(title: str) -> str:
+    visual = topic_kind(title)
+    if visual == "models":
+        return """
+    <section class="soft-scene models-flow">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="robot r1"></div><div class="robot r2"></div><div class="robot r3"></div>
+      <div class="database"></div><div class="decision-board"></div>
+      <div class="wire w1"></div><div class="wire w2 orange"></div><div class="wire w3 green"></div><div class="wire w4"></div>
+    </section>"""
+    if visual == "crawl":
+        return """
+    <section class="soft-scene crawl-flow">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="browser in-a"><b></b><span></span><span></span><span></span></div>
+      <div class="database"></div><div class="robot"></div><div class="dashboard"></div>
+      <div class="tag rules">robots + indexnow</div>
+      <div class="wire w1"></div><div class="wire w2 green"></div><div class="wire w3 orange"></div>
+    </section>"""
+    if visual == "orchestration":
+        return """
+    <section class="soft-scene orchestration-flow">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="step p1">NotebookLM<small>sources</small></div><div class="step p2">Plan<small>scope</small></div>
+      <div class="step p3">Agents<small>parallel</small></div><div class="step p4">Verify<small>tests</small></div>
+      <div class="step p5">Publish<small>preview</small></div><div class="review-pill">context - draft - shards - tests - preview</div>
+      <div class="wire w1"></div><div class="wire w2 orange"></div><div class="wire w3 green"></div><div class="wire w4"></div>
+    </section>"""
+    return """
+    <section class="soft-scene developer-flow">
+      <i class="blob blue"></i><i class="blob sun"></i><i class="blob mint"></i>
+      <div class="browser ide"><b></b><span></span><span></span><span></span></div>
+      <div class="floating f1"></div><div class="floating f2"></div><div class="floating f3"></div>
+      <div class="decision-board"></div><div class="robot"></div>
+      <div class="wire w1"></div><div class="wire w2 orange"></div><div class="wire w3 green"></div>
+    </section>"""
+
+
+def editorial_image_css() -> str:
+    return """
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1600px;
+      height: 980px;
+      overflow: hidden;
+      font-family: "JetBrains Mono", "IBM Plex Mono", "Cascadia Mono", Consolas, monospace;
+      color: #17231e;
+      background-color: #f5f3ea;
+      background-image:
+        radial-gradient(circle at 10% 10%, rgba(217,240,246,.72), transparent 22%),
+        radial-gradient(circle at 88% 8%, rgba(255,240,187,.62), transparent 24%),
+        radial-gradient(circle at 82% 88%, rgba(216,238,229,.62), transparent 25%),
+        linear-gradient(#e9e5d8 1px, transparent 1px),
+        linear-gradient(90deg, #e6e2d4 1px, transparent 1px);
+      background-size: auto, auto, auto, 24px 24px, 24px 24px;
+      border: 2px solid #c8c5b3;
+    }
+    .frame { position: relative; width: 1600px; height: 980px; padding: 58px 66px; }
+    .meta { position: absolute; z-index: 5; left: 66px; top: 58px; }
+    .label { color: #78796e; font-size: 22px; font-weight: 800; }
+    h1 { margin: 28px 0 0; color: #245b3f; font-size: 42px; line-height: 1; letter-spacing: -.04em; }
+    .chips { position: absolute; z-index: 5; left: 66px; bottom: 50px; display: flex; flex-wrap: wrap; gap: 12px; max-width: 620px; }
+    .chip { padding: 9px 15px 8px; border: 2px solid #9d9985; border-radius: 4px; background: #f5f3ea; color: #245b3f; font-size: 18px; font-weight: 900; }
+    .chip.is-active { background: #4f7f28; border-color: #4f7f28; color: #f5f3ea; }
+    .soft-scene { position: absolute; inset: 0; overflow: hidden; }
+    .blob { position: absolute; border-radius: 999px; opacity: .62; }
+    .blob.blue { width: 410px; height: 410px; left: 170px; top: 112px; background: #d9f0f6; }
+    .blob.sun { width: 430px; height: 430px; right: 80px; top: 42px; background: #fff0bb; }
+    .blob.mint { width: 470px; height: 470px; right: -60px; bottom: -82px; background: #d8eee5; }
+    .browser, .dashboard, .decision-board, .step, .review-pill, .floating, .tag {
+      position: absolute;
+      border: 2px solid #2f6f83;
+      border-radius: 18px;
+      background: #fffdf5;
+      box-shadow: 16px 18px 0 rgba(36,32,22,.13);
+    }
+    .browser { width: 360px; height: 210px; }
+    .browser::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 46px; border-bottom: 2px solid #2f6f83; border-radius: 18px 18px 0 0; background: #d9f0f6; }
+    .browser b::before { content: ""; position: absolute; left: 22px; top: 17px; width: 12px; height: 12px; border-radius: 50%; background: #ef8d62; box-shadow: 22px 0 #f3ce73, 44px 0 #4f7f28; }
+    .browser span { position: absolute; left: 76px; right: 42px; height: 3px; background: #2f6f83; opacity: .62; }
+    .browser span:nth-child(2) { top: 84px; } .browser span:nth-child(3) { top: 120px; width: 190px; } .browser span:nth-child(4) { top: 156px; width: 232px; } .browser span:nth-child(5) { top: 188px; width: 160px; }
+    .database { position: absolute; width: 220px; height: 186px; border: 3px solid #2f6f83; border-radius: 50% / 26%; background: #d9f0f6; box-shadow: 0 0 38px rgba(145,207,228,.48); }
+    .database::before, .database::after { content: ""; position: absolute; left: -3px; right: -3px; height: 56px; border: 3px solid #2f6f83; border-radius: 50%; background: #d9f0f6; }
+    .database::before { top: -3px; } .database::after { bottom: -3px; }
+    .robot { position: absolute; width: 150px; height: 126px; border: 3px solid #2f6f83; border-radius: 34px; background: #d9f0f6; box-shadow: 0 0 38px rgba(145,207,228,.5), 16px 18px 0 rgba(36,32,22,.1); }
+    .robot::before { content: ""; position: absolute; left: 32px; top: 36px; width: 86px; height: 46px; border-radius: 22px; background: #384740; box-shadow: inset 24px 16px 0 -18px #b8ded0, inset -24px 16px 0 -18px #b8ded0; }
+    .robot::after { content: ""; position: absolute; left: 67px; top: -36px; width: 14px; height: 32px; border-radius: 12px; background: #f3ce73; border: 2px solid #2f6f83; }
+    .dashboard { width: 390px; height: 270px; }
+    .dashboard::before { content: ""; position: absolute; left: 42px; top: 92px; width: 18px; height: 84px; border-radius: 5px; background: #91cfe4; box-shadow: 40px -28px #f3ce73, 80px 18px #4f7f28, 120px -54px #e49442, 240px 0 0 42px rgba(145,207,228,.45); }
+    .wire { position: absolute; height: 5px; border-radius: 999px; background: #2f6f83; transform-origin: left center; }
+    .wire::after { content: ""; position: absolute; right: -7px; top: -6px; width: 0; height: 0; border-left: 18px solid currentColor; border-top: 9px solid transparent; border-bottom: 9px solid transparent; color: #2f6f83; }
+    .wire.orange { background: #e49442; color: #e49442; } .wire.green { background: #245b3f; color: #245b3f; }
+    .star { position: absolute; width: 32px; height: 32px; transform: rotate(45deg); background: #f3ce73; clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 34%); }
+    .book { position: absolute; width: 300px; height: 204px; border: 3px solid #2f6f83; border-radius: 18px; background: linear-gradient(90deg, #d9f0f6 0 48%, #fffdf5 48% 52%, #d9f0f6 52%); box-shadow: 16px 18px 0 rgba(36,32,22,.13); }
+    .book::before { content: ""; position: absolute; inset: 34px 36px; background: repeating-linear-gradient(#91cfe4 0 2px, transparent 2px 28px); }
+    .book b { position: absolute; left: 24px; top: 24px; padding: 12px 16px; border: 2px solid #e49442; border-radius: 8px; background: #fff0bb; color: #245b3f; }
+    .step { width: 180px; height: 104px; padding: 20px; color: #245b3f; font-size: 22px; font-weight: 900; }
+    .step small { display: block; margin-top: 22px; color: #78796e; font-size: 16px; }
+    .step.warn { color: #e49442; }
+    .review-pill { height: 96px; display: grid; place-items: center; border-color: #245b3f; border-radius: 60px; color: #245b3f; font-size: 24px; font-weight: 900; }
+    .tag { padding: 12px 20px; border-color: #245b3f; border-radius: 22px; color: #245b3f; font-size: 16px; font-weight: 900; }
+    .floating { width: 190px; height: 116px; background: #fffdf5; }
+    .floating::before { content: ""; position: absolute; left: 22px; right: 24px; top: 26px; height: 4px; background: #91cfe4; box-shadow: 0 22px #f3ce73, 0 44px #e49442; }
+    .bench { position: absolute; left: 90px; right: 90px; bottom: 158px; height: 126px; border: 2px solid #9d9985; border-radius: 26px; background: #ebe9df; box-shadow: 16px 18px 0 rgba(36,32,22,.12); }
+    .decision-board { width: 420px; height: 290px; background: #fffdf5; }
+    .decision-board::before { content: ""; position: absolute; left: 46px; top: 70px; width: 220px; height: 4px; background: #91cfe4; box-shadow: 0 48px #f3ce73, 0 96px #4f7f28, 0 144px #e49442; }
+    .models-scene .in-a { left: 180px; top: 172px; } .models-scene .in-b { left: 200px; top: 494px; }
+    .models-scene .database { left: 676px; top: 350px; } .models-scene .robot { left: 1054px; top: 320px; } .models-scene .dashboard { left: 1100px; top: 590px; }
+    .models-scene .w1 { left: 540px; top: 310px; width: 170px; transform: rotate(20deg); } .models-scene .w2 { left: 554px; top: 626px; width: 170px; transform: rotate(-27deg); } .models-scene .w3 { left: 888px; top: 430px; width: 176px; transform: rotate(-30deg); } .models-scene .w4 { left: 890px; top: 560px; width: 236px; transform: rotate(24deg); }
+    .crawl-scene .in-a { left: 110px; top: 178px; } .crawl-scene .in-b { left: 132px; top: 412px; } .crawl-scene .in-c { left: 200px; top: 634px; }
+    .crawl-scene .database { left: 684px; top: 380px; } .crawl-scene .robot { left: 1120px; top: 300px; } .crawl-scene .dashboard { left: 1082px; top: 560px; }
+    .crawl-scene .allow { left: 1020px; top: 202px; } .crawl-scene .limit { left: 1280px; top: 214px; } .crawl-scene .block { left: 1430px; top: 406px; }
+    .crawl-scene .w1 { left: 450px; top: 320px; width: 260px; transform: rotate(18deg); } .crawl-scene .w2 { left: 472px; top: 520px; width: 250px; transform: rotate(-8deg); } .crawl-scene .w3 { left: 546px; top: 724px; width: 196px; transform: rotate(-42deg); } .crawl-scene .w4 { left: 880px; top: 530px; width: 250px; transform: rotate(28deg); }
+    .orchestration-scene .book.a { left: 112px; top: 210px; } .orchestration-scene .book.b { left: 190px; top: 452px; background: linear-gradient(90deg, #fff0bb 0 48%, #fffdf5 48% 52%, #fff0bb 52%); }
+    .orchestration-scene .robot { left: 718px; top: 360px; width: 174px; height: 144px; } .orchestration-scene .review-pill { left: 642px; top: 616px; width: 320px; }
+    .orchestration-scene .p1 { left: 1060px; top: 190px; } .orchestration-scene .p2 { left: 1260px; top: 284px; } .orchestration-scene .p3 { left: 1080px; top: 568px; } .orchestration-scene .p4 { left: 1320px; top: 640px; }
+    .orchestration-scene .w1 { left: 408px; top: 300px; width: 290px; transform: rotate(18deg); } .orchestration-scene .w2 { left: 486px; top: 548px; width: 260px; transform: rotate(-18deg); } .orchestration-scene .w3 { left: 900px; top: 374px; width: 214px; transform: rotate(-40deg); } .orchestration-scene .w4 { left: 928px; top: 446px; width: 344px; transform: rotate(-16deg); } .orchestration-scene .w5 { left: 904px; top: 500px; width: 246px; transform: rotate(32deg); }
+    .developer-scene .ide { left: 154px; top: 252px; width: 490px; height: 394px; } .developer-scene .big { left: 748px; top: 268px; width: 180px; height: 152px; } .developer-scene .dashboard { left: 1138px; top: 300px; } .developer-scene .bench { display: block; }
+    .developer-scene .f1 { left: 700px; top: 142px; } .developer-scene .f2 { left: 880px; top: 218px; } .developer-scene .f3 { left: 752px; top: 500px; }
+    .developer-scene .w1 { left: 640px; top: 376px; width: 150px; transform: rotate(-38deg); } .developer-scene .w2 { left: 932px; top: 360px; width: 220px; transform: rotate(8deg); } .developer-scene .w3 { left: 944px; top: 536px; width: 210px; transform: rotate(-18deg); }
+    .s1 { left: 560px; top: 180px; } .s2 { left: 1000px; top: 500px; } .s3 { right: 170px; bottom: 180px; }
+    .workflow.soft-scene { top: 180px; }
+    .models-flow .r1 { left: 190px; top: 190px; } .models-flow .r2 { left: 190px; top: 445px; } .models-flow .r3 { left: 190px; top: 650px; transform: scale(.78); }
+    .models-flow .database { left: 650px; top: 392px; } .models-flow .decision-board { left: 1040px; top: 270px; }
+    .models-flow .w1 { left: 330px; top: 252px; width: 350px; transform: rotate(22deg); } .models-flow .w2 { left: 330px; top: 506px; width: 340px; transform: rotate(-8deg); } .models-flow .w3 { left: 850px; top: 478px; width: 260px; transform: rotate(-20deg); } .models-flow .w4 { left: 860px; top: 546px; width: 260px; transform: rotate(24deg); }
+    .crawl-flow .in-a { left: 110px; top: 230px; width: 390px; height: 250px; } .crawl-flow .database { left: 670px; top: 370px; } .crawl-flow .robot { left: 1050px; top: 280px; } .crawl-flow .dashboard { left: 1060px; top: 560px; } .crawl-flow .rules { left: 580px; top: 650px; }
+    .crawl-flow .w1 { left: 500px; top: 360px; width: 200px; transform: rotate(20deg); } .crawl-flow .w2 { left: 850px; top: 430px; width: 250px; transform: rotate(-28deg); } .crawl-flow .w3 { left: 860px; top: 540px; width: 230px; transform: rotate(30deg); }
+    .orchestration-flow .step { top: 350px; } .orchestration-flow .p1 { left: 150px; } .orchestration-flow .p2 { left: 430px; top: 250px; } .orchestration-flow .p3 { left: 720px; } .orchestration-flow .p4 { left: 1010px; top: 260px; } .orchestration-flow .p5 { left: 1270px; top: 430px; }
+    .orchestration-flow .review-pill { left: 300px; right: 300px; bottom: 190px; height: 90px; font-size: 20px; }
+    .orchestration-flow .w1 { left: 350px; top: 390px; width: 150px; transform: rotate(-34deg); } .orchestration-flow .w2 { left: 610px; top: 310px; width: 170px; transform: rotate(32deg); } .orchestration-flow .w3 { left: 900px; top: 390px; width: 160px; transform: rotate(-34deg); } .orchestration-flow .w4 { left: 1180px; top: 320px; width: 180px; transform: rotate(42deg); }
+    .developer-flow .ide { left: 135px; top: 265px; width: 480px; height: 350px; } .developer-flow .f1 { left: 700px; top: 190px; } .developer-flow .f2 { left: 900px; top: 280px; } .developer-flow .f3 { left: 730px; top: 500px; } .developer-flow .decision-board { left: 1120px; top: 285px; } .developer-flow .robot { left: 430px; top: 682px; transform: scale(.7); }
+    .developer-flow .w1 { left: 610px; top: 386px; width: 160px; transform: rotate(-34deg); } .developer-flow .w2 { left: 860px; top: 352px; width: 280px; transform: rotate(14deg); } .developer-flow .w3 { left: 948px; top: 570px; width: 220px; transform: rotate(-34deg); }
+    """
+
+
+def render_chips_html(terms: list[str]) -> str:
+    return "".join(
+        f"<span class=\"chip{' is-active' if index == 0 else ''}\">{escape(term)}</span>"
+        for index, term in enumerate(terms[:5])
+    )
+
+
+def cover_html(title: str, job: dict[str, Any]) -> str:
+    terms = topic_terms(title, job)
+    visual = visual_heading(title)
+    visual_markup = cover_visual_html(title, terms, job)
+    return f"""<!doctype html>
+<html>
+<head><meta charset="utf-8"><style>{editorial_image_css()}</style></head>
+<body>
+  <main class="frame cover-frame">
+    <section class="meta"><div class="label">[ utildesk.ratgeber ]</div><h1>{escape(visual)}</h1></section>
+    {visual_markup}
+    <section class="chips">{render_chips_html(terms)}</section>
+  </main>
+</body>
+</html>"""
+
+
+def workflow_html(title: str, job: dict[str, Any]) -> str:
+    terms = topic_terms(title, job)
+    visual_markup = workflow_visual_html(title)
+    return f"""<!doctype html>
+<html>
+<head><meta charset="utf-8"><style>{editorial_image_css()}</style></head>
+<body>
+  <main class="frame workflow-frame">
+    <section class="meta"><div class="label">[ workflow.trace ]</div><h1>{escape(workflow_heading(title))}</h1></section>
+    {visual_markup}
+    <section class="chips">{render_chips_html(terms)}</section>
+  </main>
 </body>
 </html>"""
 

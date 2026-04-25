@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -14,17 +15,28 @@ RATGEBER_DIR = ROOT_DIR / "content" / "ratgeber"
 IMAGE_DIR = ROOT_DIR / "content" / "images" / "ratgeber"
 SIZE = (1600, 980)
 
-BG = "#f5f3ea"
-BG_2 = "#ebe9df"
-BG_3 = "#e2e0d4"
+PAPER = "#f5f3ea"
+PAPER_2 = "#ebe9df"
+PAPER_3 = "#e2e0d4"
+GRID_A = "#e9e5d8"
+GRID_B = "#e6e2d4"
 LINE = "#c8c5b3"
-LINE_2 = "#b1ad9a"
-FG = "#1d1e18"
-FG_2 = "#54564a"
-FG_3 = "#828275"
-ACCENT = "#4f7f28"
-ACCENT_D = "#365d1b"
-WARN = "#a06b1f"
+LINE_D = "#9d9985"
+INK = "#17231e"
+INK_2 = "#384740"
+MUTED = "#78796e"
+GREEN = "#4f7f28"
+GREEN_D = "#245b3f"
+MINT = "#b8ded0"
+MINT_2 = "#d8eee5"
+BLUE = "#91cfe4"
+BLUE_2 = "#d9f0f6"
+BLUE_D = "#2f6f83"
+SUN = "#f3ce73"
+SUN_2 = "#fff0bb"
+ORANGE = "#e49442"
+CORAL = "#ef8d62"
+WHITE = "#fffdf5"
 
 
 @dataclass
@@ -57,15 +69,17 @@ def load_font(size: int, bold: bool = False) -> ImageFont.ImageFont:
 
 
 F = {
+    "tiny": load_font(15, True),
     "xxs": load_font(18),
+    "xxs_b": load_font(18, True),
     "xs": load_font(22),
-    "sm": load_font(28),
-    "sm_b": load_font(28, True),
-    "md": load_font(34),
-    "md_b": load_font(34, True),
-    "lg": load_font(46, True),
-    "xl": load_font(64, True),
-    "xxl": load_font(82, True),
+    "xs_b": load_font(22, True),
+    "sm": load_font(26),
+    "sm_b": load_font(26, True),
+    "md": load_font(32),
+    "md_b": load_font(32, True),
+    "lg": load_font(42, True),
+    "xl": load_font(58, True),
 }
 
 
@@ -100,84 +114,6 @@ def parse_frontmatter(path: Path) -> Article:
     )
 
 
-def text_size(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont) -> tuple[int, int]:
-    box = draw.textbbox((0, 0), text, font=font)
-    return box[2] - box[0], box[3] - box[1]
-
-
-def wrap_by_pixels(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont, max_width: int) -> list[str]:
-    words = text.split()
-    lines: list[str] = []
-    current = ""
-    for word in words:
-        candidate = f"{current} {word}".strip()
-        if text_size(draw, candidate, font)[0] <= max_width or not current:
-            current = candidate
-        else:
-            lines.append(current)
-            current = word
-    if current:
-        lines.append(current)
-    return lines
-
-
-def draw_text_block(
-    draw: ImageDraw.ImageDraw,
-    xy: tuple[int, int],
-    text: str,
-    font: ImageFont.ImageFont,
-    max_width: int,
-    fill: str,
-    line_gap: int = 10,
-    max_lines: int | None = None,
-) -> int:
-    x, y = xy
-    lines = wrap_by_pixels(draw, text, font, max_width)
-    if max_lines and len(lines) > max_lines:
-        lines = lines[:max_lines]
-        lines[-1] = lines[-1].rstrip(" .,:;") + "..."
-    for line in lines:
-        draw.text((x, y), line, font=font, fill=fill)
-        y += text_size(draw, line, font)[1] + line_gap
-    return y
-
-
-def canvas() -> tuple[Image.Image, ImageDraw.ImageDraw]:
-    img = Image.new("RGB", SIZE, BG)
-    draw = ImageDraw.Draw(img)
-    for x in range(0, SIZE[0], 24):
-        draw.line((x, 0, x, SIZE[1]), fill="#ddd9c9", width=1)
-    for y in range(0, SIZE[1], 24):
-        draw.line((0, y, SIZE[0], y), fill="#e1ddce", width=1)
-    draw.rectangle((0, 0, SIZE[0] - 1, SIZE[1] - 1), outline=LINE, width=2)
-    return img, draw
-
-
-def rect(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], fill: str, outline: str = LINE, width: int = 2) -> None:
-    draw.rectangle(box, fill=fill, outline=outline, width=width)
-
-
-def label(draw: ImageDraw.ImageDraw, xy: tuple[int, int], value: str, fill: str = FG_3) -> None:
-    draw.text(xy, value, font=F["xs"], fill=fill)
-
-
-def short(value: str, limit: int) -> str:
-    value = re.sub(r"\s+", " ", value or "").strip()
-    if len(value) <= limit:
-        return value
-    return value[: limit - 3].rstrip(" .,:;") + "..."
-
-
-def chip(draw: ImageDraw.ImageDraw, x: int, y: int, text: str, active: bool = False) -> int:
-    font = F["sm_b"] if active else F["sm"]
-    w, h = text_size(draw, text, font)
-    pad_x, pad_y = 18, 10
-    box = (x, y, x + w + pad_x * 2, y + h + pad_y * 2)
-    rect(draw, box, ACCENT if active else BG, ACCENT if active else LINE_2, 2)
-    draw.text((x + pad_x, y + pad_y - 2), text, font=font, fill=BG if active else ACCENT_D)
-    return box[2] + 14
-
-
 def kind(article: Article) -> str:
     title = article.title.lower()
     if "chatgpt" in title:
@@ -193,10 +129,10 @@ def kind(article: Article) -> str:
 
 def article_terms(article: Article) -> list[str]:
     by_kind = {
-        "models": ["ChatGPT", "Claude", "Gemini", "Recherche", "Datenschutz"],
-        "crawl": ["Crawler", "Agenten", "IndexNow", "Guardrails", "Traffic"],
-        "orchestration": ["Agenten", "Kontext", "Workflow", "Review", "Runtime"],
-        "developer": ["IDE", "CLI", "Diff", "Tests", "Release"],
+        "models": ["ChatGPT", "Claude", "Gemini", "Privacy"],
+        "crawl": ["Crawler", "Agenten", "IndexNow", "Guardrails"],
+        "orchestration": ["NotebookLM", "Agenten", "Review", "Kontext"],
+        "developer": ["IDE", "CLI", "Tests", "Release"],
     }
     terms = by_kind.get(kind(article), [article.category, *article.tags])
     seen: set[str] = set()
@@ -207,295 +143,482 @@ def article_terms(article: Article) -> list[str]:
         if clean and key not in seen:
             seen.add(key)
             result.append(clean[:18])
-    return result[:5] or ["Signal", "Review", "Index", "Quelle"]
+    return result[:4] or ["Signal", "Review", "Quelle", "Index"]
 
 
-def cover_heading(article: Article) -> str:
-    return {
-        "models": "MODEL BENCH",
-        "crawl": "CRAWL CONTROL",
-        "orchestration": "AGENT BUS",
-        "developer": "IDE WORKBENCH",
-    }.get(kind(article), "SIGNAL MAP")
+def text_size(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont) -> tuple[int, int]:
+    box = draw.textbbox((0, 0), text, font=font)
+    return box[2] - box[0], box[3] - box[1]
 
 
-def draw_cover_text(draw: ImageDraw.ImageDraw, article: Article) -> None:
-    label(draw, (64, 58), "[ utildesk.ratgeber / terminal_illustration ]")
-    draw.text((64, 116), cover_heading(article), font=F["xl"], fill=FG)
-    draw.line((64, 208, 648, 208), fill=ACCENT, width=6)
-    draw_text_block(draw, (64, 246), article.title, F["lg"], 680, FG, line_gap=12, max_lines=4)
-    draw_text_block(draw, (64, 522), article.excerpt, F["sm"], 650, FG_2, line_gap=12, max_lines=4)
-
-    x = 64
-    for index, term in enumerate(article_terms(article)[:4]):
-        x = chip(draw, x, 744, term, active=index == 0)
-    if article.read_time:
-        chip(draw, 64, 814, f"{article.read_time} min", active=False)
-
-
-def draw_footer(draw: ImageDraw.ImageDraw, left: str, right: str) -> None:
-    label(draw, (64, 910), left)
-    label(draw, (1088, 910), right)
+def wrap_by_pixels(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont, max_width: int) -> list[str]:
+    words = re.sub(r"\s+", " ", text or "").strip().split()
+    lines: list[str] = []
+    current = ""
+    for word in words:
+        candidate = f"{current} {word}".strip()
+        if text_size(draw, candidate, font)[0] <= max_width or not current:
+            current = candidate
+        else:
+            lines.append(current)
+            current = word
+    if current:
+        lines.append(current)
+    return lines
 
 
-def arrow(draw: ImageDraw.ImageDraw, start: tuple[int, int], end: tuple[int, int], fill: str = ACCENT_D, width: int = 4) -> None:
-    draw.line((*start, *end), fill=fill, width=width)
-    x1, y1 = start
-    x2, y2 = end
-    if abs(x2 - x1) >= abs(y2 - y1):
-        sign = 1 if x2 >= x1 else -1
-        pts = [(x2, y2), (x2 - sign * 18, y2 - 10), (x2 - sign * 18, y2 + 10)]
-    else:
-        sign = 1 if y2 >= y1 else -1
-        pts = [(x2, y2), (x2 - 10, y2 - sign * 18), (x2 + 10, y2 - sign * 18)]
-    draw.polygon(pts, fill=fill)
+def short(value: str, limit: int) -> str:
+    value = re.sub(r"\s+", " ", value or "").strip()
+    if len(value) <= limit:
+        return value
+    return value[: limit - 3].rstrip(" .,:;") + "..."
 
 
-def small_window(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], title: str, fill: str = BG_2) -> None:
-    rect(draw, box, fill, LINE, 2)
-    x1, y1, x2, _ = box
-    draw.line((x1, y1 + 38, x2, y1 + 38), fill=LINE, width=2)
-    draw.rectangle((x1 + 16, y1 + 13, x1 + 26, y1 + 23), fill=WARN)
-    draw.rectangle((x1 + 34, y1 + 13, x1 + 44, y1 + 23), fill=ACCENT)
-    draw.text((x1 + 60, y1 + 9), title, font=F["xs"], fill=FG_3)
+class Art:
+    def __init__(self) -> None:
+        self.img = Image.new("RGBA", SIZE, PAPER)
+        self.draw = ImageDraw.Draw(self.img)
+        self.background_wash()
+        self.grid()
+
+    def background_wash(self) -> None:
+        layer, d = self.overlay()
+        d.ellipse((-120, -90, 420, 360), fill=(217, 240, 246, 92))
+        d.ellipse((1180, -120, 1780, 420), fill=(255, 240, 187, 84))
+        d.ellipse((1120, 640, 1680, 1120), fill=(216, 238, 229, 84))
+        d.rounded_rectangle((120, 700, 620, 1040), radius=80, fill=(255, 240, 187, 54))
+        self.composite(layer)
+
+    def grid(self) -> None:
+        for x in range(0, SIZE[0], 24):
+            self.draw.line((x, 0, x, SIZE[1]), fill=GRID_B, width=1)
+        for y in range(0, SIZE[1], 24):
+            self.draw.line((0, y, SIZE[0], y), fill=GRID_A, width=1)
+        self.draw.rectangle((0, 0, SIZE[0] - 1, SIZE[1] - 1), outline=LINE, width=2)
+
+    def overlay(self) -> tuple[Image.Image, ImageDraw.ImageDraw]:
+        layer = Image.new("RGBA", SIZE, (0, 0, 0, 0))
+        return layer, ImageDraw.Draw(layer)
+
+    def composite(self, layer: Image.Image) -> None:
+        self.img.alpha_composite(layer)
+        self.draw = ImageDraw.Draw(self.img)
+
+    def shadow_round(self, box: tuple[int, int, int, int], radius: int = 28, offset: tuple[int, int] = (14, 18)) -> None:
+        layer, d = self.overlay()
+        x1, y1, x2, y2 = box
+        d.rounded_rectangle((x1 + offset[0], y1 + offset[1], x2 + offset[0], y2 + offset[1]), radius=radius, fill=(36, 32, 22, 28))
+        self.composite(layer)
+
+    def glow(self, box: tuple[int, int, int, int], color: tuple[int, int, int, int] = (145, 207, 228, 62), radius: int = 40) -> None:
+        layer, d = self.overlay()
+        x1, y1, x2, y2 = box
+        for step in range(5, 0, -1):
+            expand = radius * step // 5
+            alpha = color[3] // (6 - step)
+            d.rounded_rectangle((x1 - expand, y1 - expand, x2 + expand, y2 + expand), radius=radius + expand, fill=(*color[:3], alpha))
+        self.composite(layer)
+
+    def round_rect(self, box: tuple[int, int, int, int], fill: str = WHITE, outline: str = LINE, radius: int = 24, width: int = 2, shadow: bool = False) -> None:
+        if shadow:
+            self.shadow_round(box, radius=radius)
+        self.draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
+
+    def ellipse(self, box: tuple[int, int, int, int], fill: str, outline: str = LINE, width: int = 2, shadow: bool = False) -> None:
+        if shadow:
+            self.shadow_round(box, radius=(box[2] - box[0]) // 2, offset=(10, 14))
+        self.draw.ellipse(box, fill=fill, outline=outline, width=width)
+
+    def text(self, xy: tuple[int, int], text: str, font: ImageFont.ImageFont, fill: str = INK, anchor: str | None = None) -> None:
+        self.draw.text(xy, text, font=font, fill=fill, anchor=anchor)
+
+    def line(self, points: list[tuple[int, int]] | tuple[int, int, int, int], fill: str = BLUE_D, width: int = 4) -> None:
+        self.draw.line(points, fill=fill, width=width, joint="curve")
+
+    def curve_points(self, points: list[tuple[int, int]], steps: int = 36) -> list[tuple[int, int]]:
+        if len(points) == 3:
+            p0, p1, p2 = points
+            result = []
+            for i in range(steps + 1):
+                t = i / steps
+                x = (1 - t) ** 2 * p0[0] + 2 * (1 - t) * t * p1[0] + t**2 * p2[0]
+                y = (1 - t) ** 2 * p0[1] + 2 * (1 - t) * t * p1[1] + t**2 * p2[1]
+                result.append((int(x), int(y)))
+            return result
+        if len(points) == 4:
+            p0, p1, p2, p3 = points
+            result = []
+            for i in range(steps + 1):
+                t = i / steps
+                x = (1 - t) ** 3 * p0[0] + 3 * (1 - t) ** 2 * t * p1[0] + 3 * (1 - t) * t**2 * p2[0] + t**3 * p3[0]
+                y = (1 - t) ** 3 * p0[1] + 3 * (1 - t) ** 2 * t * p1[1] + 3 * (1 - t) * t**2 * p2[1] + t**3 * p3[1]
+                result.append((int(x), int(y)))
+            return result
+        return points
+
+    def flow(self, points: list[tuple[int, int]], fill: str = BLUE_D, width: int = 4, dots: bool = True, arrow: bool = True) -> None:
+        curve = self.curve_points(points)
+        self.line(curve, fill=fill, width=width)
+        if dots:
+            for x, y in points[1:-1]:
+                self.ellipse((x - 8, y - 8, x + 8, y + 8), fill=PAPER, outline=fill, width=3)
+        if not arrow:
+            return
+        x1, y1 = curve[-6]
+        x2, y2 = curve[-1]
+        angle = math.atan2(y2 - y1, x2 - x1)
+        head = [
+            (x2, y2),
+            (int(x2 - 18 * math.cos(angle - 0.45)), int(y2 - 18 * math.sin(angle - 0.45))),
+            (int(x2 - 18 * math.cos(angle + 0.45)), int(y2 - 18 * math.sin(angle + 0.45))),
+        ]
+        self.draw.polygon(head, fill=fill)
+
+    def dots(self, x: int, y: int, cols: int, rows: int, fill: str = SUN, step: int = 18, r: int = 3) -> None:
+        for row in range(rows):
+            for col in range(cols):
+                self.draw.ellipse((x + col * step, y + row * step, x + col * step + r, y + row * step + r), fill=fill)
+
+    def chip(self, x: int, y: int, text: str, active: bool = False) -> int:
+        font = F["xs_b"]
+        w, h = text_size(self.draw, text, font)
+        box = (x, y, x + w + 30, y + h + 20)
+        self.round_rect(box, fill=GREEN if active else PAPER, outline=GREEN if active else LINE_D, radius=4, width=2)
+        self.text((x + 15, y + 8), text, font, PAPER if active else GREEN_D)
+        return box[2] + 12
+
+    def header(self, article: Article, label: str) -> None:
+        self.text((66, 62), "[ utildesk.ratgeber ]", F["xs_b"], MUTED)
+        self.text((66, 106), label, F["lg"], GREEN_D)
+        x = 66
+        for index, term in enumerate(article_terms(article)):
+            x = self.chip(x, 836, term, active=index == 0)
+        if article.read_time:
+            self.chip(66, 894, f"{article.read_time} min")
+
+    def small_label(self, box: tuple[int, int, int, int], title: str, sub: str = "", accent: str = GREEN_D) -> None:
+        x1, y1, x2, y2 = box
+        self.round_rect(box, fill=WHITE, outline=LINE, radius=16, width=2, shadow=True)
+        self.text((x1 + 22, y1 + 20), title, F["xs_b"], accent)
+        if sub:
+            self.text((x1 + 22, y2 - 38), sub, F["xxs"], MUTED)
+
+    def browser_window(self, box: tuple[int, int, int, int], title: str = "", fill: str = BLUE_2) -> None:
+        x1, y1, x2, y2 = box
+        self.round_rect(box, fill=WHITE, outline=BLUE_D, radius=20, width=3, shadow=True)
+        self.draw.rounded_rectangle((x1, y1, x2, y1 + 54), radius=20, fill=fill, outline=BLUE_D, width=3)
+        for i, color in enumerate([CORAL, SUN, GREEN]):
+            self.ellipse((x1 + 22 + i * 26, y1 + 18, x1 + 36 + i * 26, y1 + 32), fill=color, outline=BLUE_D, width=1)
+        if title:
+            self.round_rect((x1 + 118, y1 + 17, x2 - 28, y1 + 36), fill=WHITE, outline=BLUE_D, radius=9, width=1)
+            self.text((x1 + 134, y1 + 16), title, F["tiny"], MUTED)
+
+    def mini_card(self, box: tuple[int, int, int, int], color: str = MINT_2, icon: str = "dots") -> None:
+        x1, y1, x2, y2 = box
+        self.round_rect(box, fill=color, outline=LINE, radius=12, width=2)
+        if icon == "image":
+            self.draw.polygon([(x1 + 22, y2 - 24), (x1 + 54, y1 + 34), (x1 + 82, y2 - 24)], fill=BLUE, outline=BLUE_D)
+            self.ellipse((x2 - 38, y1 + 20, x2 - 22, y1 + 36), fill=SUN, outline=BLUE_D, width=1)
+        elif icon == "gear":
+            self.gear((x1 + 48, y1 + 44), 22, BLUE_D, fill=PAPER)
+        else:
+            for y in range(y1 + 24, y2 - 18, 18):
+                self.line([(x1 + 22, y), (x2 - 22, y)], fill=BLUE_D, width=2)
+
+    def database(self, cx: int, cy: int, w: int = 210, h: int = 180, fill: str = BLUE_2) -> None:
+        x1, x2 = cx - w // 2, cx + w // 2
+        y1, y2 = cy - h // 2, cy + h // 2
+        self.glow((x1, y1, x2, y2), color=(145, 207, 228, 52), radius=36)
+        self.draw.rounded_rectangle((x1, y1 + 28, x2, y2 - 20), radius=20, fill=fill, outline=BLUE_D, width=3)
+        self.draw.ellipse((x1, y1, x2, y1 + 58), fill=BLUE_2, outline=BLUE_D, width=3)
+        self.draw.ellipse((x1, y2 - 50, x2, y2 + 8), fill=fill, outline=BLUE_D, width=3)
+        self.draw.arc((x1, y1 + 54, x2, y1 + 112), 0, 180, fill=BLUE_D, width=2)
+        for x in range(x1 + 52, x2 - 30, 34):
+            self.line([(x, y1 + 92), (x, y2 - 28)], fill=ORANGE if x % 2 else GREEN, width=3)
+            self.ellipse((x - 5, y1 + 84, x + 5, y1 + 94), fill=PAPER, outline=BLUE_D, width=2)
+
+    def robot(self, cx: int, cy: int, scale: float = 1.0, accent: str = SUN, happy: bool = True) -> None:
+        w = int(150 * scale)
+        h = int(130 * scale)
+        head = (cx - w // 2, cy - h // 2, cx + w // 2, cy + h // 2)
+        self.glow(head, color=(145, 207, 228, 46), radius=int(36 * scale))
+        self.round_rect(head, fill=BLUE_2, outline=BLUE_D, radius=int(34 * scale), width=max(2, int(3 * scale)), shadow=True)
+        face = (cx - int(52 * scale), cy - int(24 * scale), cx + int(52 * scale), cy + int(30 * scale))
+        self.round_rect(face, fill=INK_2, outline=BLUE_D, radius=int(22 * scale), width=2)
+        eye_y = cy - int(2 * scale)
+        self.ellipse((cx - int(34 * scale), eye_y - 5, cx - int(22 * scale), eye_y + 7), fill=MINT, outline=MINT, width=1)
+        self.ellipse((cx + int(22 * scale), eye_y - 5, cx + int(34 * scale), eye_y + 7), fill=MINT, outline=MINT, width=1)
+        if happy:
+            self.draw.arc((cx - int(22 * scale), cy + int(2 * scale), cx + int(22 * scale), cy + int(24 * scale)), 8, 172, fill=MINT, width=max(2, int(3 * scale)))
+        self.ellipse((cx - int(76 * scale), cy - int(8 * scale), cx - int(56 * scale), cy + int(28 * scale)), fill=accent, outline=BLUE_D, width=2)
+        self.ellipse((cx + int(56 * scale), cy - int(8 * scale), cx + int(76 * scale), cy + int(28 * scale)), fill=accent, outline=BLUE_D, width=2)
+        self.line([(cx, cy - h // 2), (cx, cy - h // 2 - int(26 * scale))], fill=BLUE_D, width=3)
+        self.ellipse((cx - int(10 * scale), cy - h // 2 - int(42 * scale), cx + int(10 * scale), cy - h // 2 - int(22 * scale)), fill=accent, outline=BLUE_D, width=2)
+
+    def gear(self, center: tuple[int, int], r: int, outline: str = BLUE_D, fill: str = WHITE) -> None:
+        cx, cy = center
+        for i in range(8):
+            angle = math.tau * i / 8
+            x = cx + int(math.cos(angle) * (r + 7))
+            y = cy + int(math.sin(angle) * (r + 7))
+            self.round_rect((x - 5, y - 5, x + 5, y + 5), fill=outline, outline=outline, radius=2, width=1)
+        self.ellipse((cx - r, cy - r, cx + r, cy + r), fill=fill, outline=outline, width=3)
+        self.ellipse((cx - r // 3, cy - r // 3, cx + r // 3, cy + r // 3), fill=PAPER, outline=outline, width=2)
+
+    def star(self, cx: int, cy: int, r: int = 28, fill: str = SUN) -> None:
+        pts = []
+        for i in range(10):
+            radius = r if i % 2 == 0 else r // 2
+            angle = -math.pi / 2 + i * math.pi / 5
+            pts.append((cx + int(math.cos(angle) * radius), cy + int(math.sin(angle) * radius)))
+        self.draw.polygon(pts, fill=fill, outline=ORANGE)
+
+    def book(self, box: tuple[int, int, int, int], color: str = BLUE_2, badge: str = "") -> None:
+        x1, y1, x2, y2 = box
+        self.round_rect(box, fill=WHITE, outline=BLUE_D, radius=18, width=3, shadow=True)
+        mid = (x1 + x2) // 2
+        self.draw.pieslice((x1 - 18, y1, mid + 18, y2), 270, 90, fill=color, outline=BLUE_D, width=3)
+        self.draw.pieslice((mid - 18, y1, x2 + 18, y2), 90, 270, fill=color, outline=BLUE_D, width=3)
+        self.line([(mid, y1 + 12), (mid, y2 - 12)], fill=BLUE_D, width=3)
+        for y in range(y1 + 38, y2 - 20, 28):
+            self.line([(x1 + 36, y), (mid - 24, y)], fill=BLUE, width=2)
+            self.line([(mid + 24, y), (x2 - 36, y)], fill=BLUE, width=2)
+        if badge:
+            self.round_rect((x1 + 24, y1 + 24, x1 + 84, y1 + 68), fill=SUN_2, outline=ORANGE, radius=8, width=2)
+            self.text((x1 + 38, y1 + 33), badge, F["tiny"], GREEN_D)
+
+    def dashboard(self, box: tuple[int, int, int, int]) -> None:
+        x1, y1, x2, y2 = box
+        self.browser_window(box, "monitor")
+        self.mini_card((x1 + 40, y1 + 86, x1 + 250, y1 + 226), BLUE_2)
+        self.mini_card((x1 + 274, y1 + 86, x2 - 40, y1 + 226), MINT_2, "image")
+        for i, h in enumerate([50, 84, 118, 76, 142]):
+            bx = x1 + 62 + i * 34
+            self.draw.rounded_rectangle((bx, y2 - 52 - h, bx + 18, y2 - 52), radius=5, fill=[BLUE, SUN, GREEN, BLUE, ORANGE][i], outline=BLUE_D, width=1)
+        self.draw.arc((x2 - 188, y2 - 190, x2 - 70, y2 - 72), 30, 330, fill=BLUE_D, width=8)
+        self.draw.pieslice((x2 - 188, y2 - 190, x2 - 70, y2 - 72), 300, 30, fill=ORANGE)
+
+    def floating_code(self, box: tuple[int, int, int, int], accent: str = BLUE) -> None:
+        x1, y1, x2, y2 = box
+        self.round_rect(box, fill=WHITE, outline=BLUE_D, radius=18, width=2, shadow=True)
+        for i, y in enumerate(range(y1 + 28, y2 - 24, 20)):
+            color = [accent, SUN, MINT, ORANGE][i % 4]
+            self.line([(x1 + 22, y), (x1 + 72 + (i % 3) * 32, y)], fill=color, width=4)
+            self.line([(x1 + 92, y), (x2 - 24, y)], fill=BLUE_D if i % 2 else LINE_D, width=2)
 
 
-def draw_models_cover(draw: ImageDraw.ImageDraw) -> None:
-    panel = (810, 112, 1510, 848)
-    rect(draw, panel, BG_2, LINE, 2)
-    label(draw, (840, 142), "[ comparative_model_bench ]")
-    draw.text((840, 190), "prompt_router", font=F["md_b"], fill=FG)
-    rect(draw, (840, 246, 1480, 304), BG, LINE_2, 2)
-    draw.text((864, 260), "task -> choose model by strength, risk, context", font=F["sm"], fill=FG_2)
-    names = [("ChatGPT", ACCENT), ("Claude", WARN), ("Gemini", FG)]
-    for index, (name, color) in enumerate(names):
-        x1 = 840 + index * 215
-        x2 = x1 + 190
-        small_window(draw, (x1, 350, x2, 710), name, BG)
-        draw.text((x1 + 22, 424), name, font=F["sm_b"], fill=color)
-        metrics = [("write", 118 - index * 8), ("research", 86 + index * 18), ("code", 96 + (1 if index == 1 else 0) * 34)]
-        y = 492
-        for label_text, value in metrics:
-            draw.text((x1 + 22, y), label_text, font=F["xxs"], fill=FG_3)
-            rect(draw, (x1 + 22, y + 26, x1 + 150, y + 38), BG_3, LINE, 1)
-            draw.rectangle((x1 + 22, y + 26, x1 + 22 + min(value, 128), y + 38), fill=color)
-            y += 58
-        draw.rectangle((x1 + 24, 642, x1 + 78, 678), fill=color, outline=FG, width=2)
-        draw.text((x1 + 92, 646), f"M0{index + 1}", font=F["xs"], fill=FG_2)
-    arrow(draw, (1160, 304), (1160, 342), WARN)
-    draw.line((934, 744, 1386, 744), fill=LINE_2, width=4)
-    draw.text((914, 774), "privacy gate", font=F["sm_b"], fill=ACCENT_D)
-    draw.text((1196, 774), "final pick", font=F["sm_b"], fill=FG_2)
+def draw_models_cover(a: Art, article: Article) -> None:
+    a.header(article, "ASSISTANT STUDIO")
+    a.dots(100, 190, 8, 8, fill=SUN, step=18, r=4)
+    a.browser_window((184, 160, 610, 430), "prompt")
+    a.browser_window((206, 482, 632, 752), "research")
+    for x, y, color in [(236, 248, BLUE_2), (382, 248, MINT_2), (504, 248, SUN_2), (260, 570, MINT_2), (424, 570, BLUE_2)]:
+        a.mini_card((x, y, x + 104, y + 82), color, "image" if x % 2 else "gear")
+    a.database(820, 460, 230, 210)
+    a.robot(1160, 378, 0.95, accent=SUN)
+    a.dashboard((1112, 570, 1510, 820))
+    a.flow([(616, 292), (710, 330), (760, 408), (708, 508)], fill=BLUE_D, width=4)
+    a.flow([(632, 606), (720, 592), (770, 510)], fill=ORANGE, width=4)
+    a.flow([(932, 420), (1028, 340), (1084, 354)], fill=GREEN_D, width=4)
+    a.flow([(940, 520), (1044, 634), (1112, 664)], fill=ORANGE, width=4)
+    for x, y in [(1060, 210), (1308, 250), (1450, 474), (986, 724)]:
+        a.star(x, y, 20, fill=SUN)
+    a.text((214, 116), "model inputs", F["xs_b"], MUTED)
+    a.text((742, 316), "routing core", F["xs_b"], GREEN_D)
+    a.text((1206, 514), "answer quality", F["xs_b"], MUTED)
 
 
-def draw_crawl_cover(draw: ImageDraw.ImageDraw) -> None:
-    panel = (810, 112, 1510, 848)
-    rect(draw, panel, BG_2, LINE, 2)
-    label(draw, (840, 142), "[ crawl_control_room ]")
-    rect(draw, (1080, 300, 1300, 500), BG, FG, 3)
-    draw.text((1114, 326), "tools.utildesk.de", font=F["xs"], fill=FG_2)
-    for y in range(368, 474, 34):
-        draw.line((1110, y, 1272, y), fill=LINE, width=2)
-    rect(draw, (946, 250, 1018, 552), BG_3, LINE_2, 2)
-    draw.text((958, 280), "WAF", font=F["sm_b"], fill=ACCENT_D)
-    draw.line((982, 330, 982, 510), fill=ACCENT, width=5)
-    for i, y in enumerate([214, 302, 402, 602, 694]):
-        x = 846 if i < 3 else 1350
-        color = ACCENT if i in {0, 3} else WARN
-        rect(draw, (x, y, x + 118, y + 54), color, FG, 2)
-        draw.text((x + 18, y + 12), f"bot_{i+1}", font=F["xs"], fill=BG)
-        target = (946, min(max(y + 26, 288), 524)) if i < 3 else (1300, min(max(y + 26, 328), 500))
-        arrow(draw, (x + (118 if i < 3 else 0), y + 27), target, ACCENT_D if color == ACCENT else WARN)
-    rect(draw, (840, 704, 1220, 792), BG, LINE, 2)
-    draw.text((864, 728), "robots.txt + ai crawl rules", font=F["sm_b"], fill=FG)
-    draw.text((864, 764), "allow useful / throttle costly / block abuse", font=F["xs"], fill=FG_2)
+def draw_crawl_cover(a: Art, article: Article) -> None:
+    a.header(article, "CRAWL CONTROL")
+    a.dots(86, 690, 10, 5, fill=SUN, step=18, r=4)
+    for idx, (x, y) in enumerate([(96, 178), (116, 430), (176, 620)]):
+        a.browser_window((x, y, x + 350, y + 190), f"page_{idx+1}")
+        a.mini_card((x + 36, y + 76, x + 138, y + 150), BLUE_2, "image")
+        for line_y in range(y + 82, y + 146, 24):
+            a.line([(x + 166, line_y), (x + 300, line_y)], fill=BLUE_D, width=2)
+    a.database(776, 470, 240, 250, fill=BLUE_2)
+    a.robot(1178, 292, 0.86, accent=SUN)
+    a.dashboard((1100, 520, 1510, 806))
+    for start, mid in [((446, 268), (560, 280)), ((466, 520), (592, 488)), ((526, 708), (614, 580))]:
+        a.flow([start, mid, (670, 474)], fill=BLUE_D, width=4)
+    a.flow([(880, 420), (1008, 332), (1102, 300)], fill=SUN, width=4)
+    a.flow([(888, 526), (1012, 616), (1100, 642)], fill=ORANGE, width=4)
+    for x, y, label in [(1008, 190, "allow"), (1266, 202, "limit"), (1448, 388, "block")]:
+        a.round_rect((x, y, x + 118, y + 48), fill=WHITE, outline=GREEN_D, radius=22, width=2, shadow=True)
+        a.text((x + 18, y + 13), label, F["tiny"], GREEN_D)
+    a.gear((1008, 728), 34, GREEN_D, fill=MINT_2)
+    a.gear((1458, 478), 28, BLUE_D, fill=BLUE_2)
 
 
-def draw_orchestration_cover(draw: ImageDraw.ImageDraw) -> None:
-    panel = (790, 110, 1520, 848)
-    rect(draw, panel, BG_2, LINE, 2)
-    label(draw, (820, 140), "[ orchestration_bus ]")
-    rect(draw, (844, 400, 1470, 464), FG, FG, 2)
-    draw.text((878, 416), "context bus", font=F["sm_b"], fill=ACCENT)
-    nodes = [
-        (880, 210, "NotebookLM", "source draft", WARN),
-        (1136, 196, "Planner", "scope", ACCENT),
-        (1360, 232, "Agent 03", "parallel", ACCENT),
-        (934, 572, "Agent 01", "code path", ACCENT),
-        (1190, 604, "Agent 02", "research", WARN),
-        (1380, 560, "Review", "gate", FG),
+def draw_orchestration_cover(a: Art, article: Article) -> None:
+    a.header(article, "ORCHESTRATION LAB")
+    a.dots(84, 182, 9, 8, fill=SUN, step=18, r=4)
+    a.book((110, 210, 404, 420), BLUE_2, "N")
+    a.book((190, 448, 484, 660), SUN_2, "LM")
+    a.robot(800, 420, 1.08, accent=SUN)
+    a.round_rect((640, 612, 960, 732), fill=WHITE, outline=GREEN_D, radius=60, width=3, shadow=True)
+    a.text((706, 648), "review gate", F["sm_b"], GREEN_D)
+    for i, (x, y, title, color) in enumerate(
+        [
+            (1060, 180, "Plan", BLUE_2),
+            (1250, 270, "Agent", MINT_2),
+            (1080, 560, "Test", SUN_2),
+            (1326, 626, "Publish", BLUE_2),
+        ]
+    ):
+        a.small_label((x, y, x + 180, y + 104), title, f"step {i+1:02d}", accent=GREEN_D if i != 2 else ORANGE)
+        a.gear((x + 138, y + 44), 20, BLUE_D, fill=color)
+    a.flow([(410, 300), (536, 276), (650, 350)], fill=BLUE_D, width=5)
+    a.flow([(488, 540), (582, 548), (682, 492)], fill=ORANGE, width=5)
+    a.flow([(908, 370), (1014, 252), (1060, 230)], fill=GREEN_D, width=5)
+    a.flow([(930, 442), (1120, 420), (1250, 324)], fill=BLUE_D, width=5)
+    a.flow([(900, 498), (1008, 586), (1080, 610)], fill=ORANGE, width=5)
+    a.flow([(946, 650), (1170, 704), (1326, 682)], fill=GREEN_D, width=5)
+    for x, y in [(568, 186), (1012, 474), (1418, 184), (1214, 776)]:
+        a.star(x, y, 22, fill=SUN)
+
+
+def draw_developer_cover(a: Art, article: Article) -> None:
+    a.header(article, "AGENT WORKBENCH")
+    a.round_rect((90, 694, 1510, 820), fill=PAPER_2, outline=LINE_D, radius=26, width=2, shadow=True)
+    a.browser_window((154, 252, 644, 646), "workspace")
+    for y, color in [(340, GREEN), (386, BLUE_D), (432, ORANGE), (478, GREEN), (524, BLUE_D)]:
+        a.line([(206, y), (540, y)], fill=color, width=5)
+        a.line([(226, y + 20), (448, y + 20)], fill=LINE_D, width=2)
+    a.round_rect((742, 236, 1068, 594), fill=BLUE_2, outline=BLUE_D, radius=120, width=4, shadow=True)
+    a.round_rect((802, 294, 1008, 454), fill=WHITE, outline=BLUE_D, radius=36, width=3)
+    a.robot(904, 360, 0.76, accent=SUN)
+    a.line([(906, 594), (906, 696)], fill=BLUE_D, width=12)
+    a.ellipse((846, 666, 966, 760), fill=SUN_2, outline=ORANGE, width=3)
+    a.dashboard((1136, 298, 1512, 612))
+    for i, (x, y) in enumerate([(676, 158), (834, 110), (1006, 154), (1118, 204)]):
+        a.floating_code((x, y, x + 154, y + 94), accent=[BLUE, GREEN, SUN, ORANGE][i])
+    a.flow([(644, 370), (714, 312), (790, 318)], fill=BLUE_D, width=4)
+    a.flow([(1018, 360), (1104, 346), (1136, 370)], fill=ORANGE, width=4)
+    a.flow([(960, 186), (1088, 172), (1188, 246)], fill=GREEN_D, width=4)
+    for x, y in [(720, 688), (1044, 682), (1406, 236), (1188, 730), (536, 196)]:
+        a.star(x, y, 24, fill=SUN)
+    a.gear((124, 210), 28, GREEN_D, fill=MINT_2)
+    a.gear((1404, 684), 30, BLUE_D, fill=BLUE_2)
+
+
+def draw_generic_cover(a: Art, article: Article) -> None:
+    draw_orchestration_cover(a, article)
+
+
+def draw_models_workflow(a: Art, article: Article) -> None:
+    a.header(article, "MODEL ROUTING")
+    a.robot(252, 330, 0.86, accent=SUN)
+    a.robot(252, 598, 0.86, accent=ORANGE)
+    a.robot(252, 742, 0.7, accent=MINT)
+    a.database(706, 520, 260, 230)
+    a.round_rect((1010, 224, 1450, 748), fill=WHITE, outline=BLUE_D, radius=28, width=3, shadow=True)
+    a.text((1054, 270), "final answer board", F["sm_b"], GREEN_D)
+    for i, (name, color) in enumerate([("write", BLUE), ("research", SUN), ("code", GREEN), ("privacy", ORANGE)]):
+        y = 342 + i * 78
+        a.text((1054, y), name, F["xs_b"], INK_2)
+        a.line([(1190, y + 12), (1370, y + 12)], fill=LINE_D, width=4)
+        a.line([(1190, y + 12), (1260 + i * 26, y + 12)], fill=color, width=10)
+    a.flow([(342, 330), (494, 348), (590, 456)], fill=BLUE_D, width=5)
+    a.flow([(342, 598), (494, 594), (590, 548)], fill=ORANGE, width=5)
+    a.flow([(800, 492), (926, 380), (1010, 356)], fill=GREEN_D, width=5)
+    a.flow([(810, 560), (930, 650), (1010, 626)], fill=BLUE_D, width=5)
+    a.star(886, 236, 28)
+    a.star(1438, 176, 22)
+
+
+def draw_crawl_workflow(a: Art, article: Article) -> None:
+    a.header(article, "CONTROLLED CRAWL")
+    a.browser_window((106, 222, 494, 468), "site")
+    a.database(760, 462, 220, 220, fill=BLUE_2)
+    a.robot(1060, 320, 0.86, accent=SUN)
+    a.dashboard((1060, 518, 1486, 782))
+    a.round_rect((572, 644, 928, 752), fill=WHITE, outline=GREEN_D, radius=22, width=3, shadow=True)
+    a.text((616, 674), "robots + indexnow", F["sm_b"], GREEN_D)
+    for i, y in enumerate([260, 342, 424]):
+        a.round_rect((142, y + 248, 416, y + 298), fill=[BLUE_2, MINT_2, SUN_2][i], outline=LINE, radius=16, width=2)
+    a.flow([(494, 338), (600, 360), (650, 432)], fill=BLUE_D, width=5)
+    a.flow([(852, 424), (954, 338), (1000, 324)], fill=GREEN_D, width=5)
+    a.flow([(856, 520), (976, 610), (1060, 644)], fill=ORANGE, width=5)
+    a.flow([(760, 572), (750, 632), (750, 644)], fill=GREEN_D, width=5)
+    for x, y, txt in [(232, 766, "allow"), (412, 766, "limit"), (1016, 766, "submit")]:
+        a.round_rect((x, y, x + 132, y + 48), fill=WHITE, outline=GREEN_D, radius=22, width=2)
+        a.text((x + 22, y + 13), txt, F["tiny"], GREEN_D)
+
+
+def draw_orchestration_workflow(a: Art, article: Article) -> None:
+    a.header(article, "SOURCE TO REVIEW")
+    steps = [
+        (172, 330, "NotebookLM", "sources", BLUE_2),
+        (448, 250, "Plan", "scope", SUN_2),
+        (742, 360, "Agents", "parallel", MINT_2),
+        (1028, 270, "Verify", "tests", BLUE_2),
+        (1290, 430, "Publish", "preview", SUN_2),
     ]
-    for x, y, title, sub, color in nodes:
-        rect(draw, (x, y, x + 154, y + 104), BG, LINE, 2)
-        draw.rectangle((x + 18, y + 18, x + 48, y + 48), fill=color, outline=FG, width=2)
-        draw.text((x + 58, y + 18), title, font=F["xs"], fill=FG)
-        draw.text((x + 18, y + 64), sub, font=F["xxs"], fill=FG_3)
-        anchor_y = 400 if y < 400 else 464
-        arrow(draw, (x + 77, y + (104 if y < 400 else 0)), (x + 77, anchor_y), ACCENT_D)
-    rect(draw, (842, 742, 1470, 800), BG, LINE_2, 2)
-    draw.text((866, 756), "trace: sources -> plan -> shards -> verifier -> publish", font=F["sm"], fill=FG_2)
+    for x, y, title, sub, color in steps:
+        a.small_label((x, y, x + 200, y + 120), title, sub, accent=GREEN_D)
+        if title == "Agents":
+            a.robot(x + 142, y + 68, 0.48, accent=SUN)
+        elif title == "NotebookLM":
+            a.book((x + 118, y + 24, x + 186, y + 92), color)
+        else:
+            a.gear((x + 154, y + 54), 20, BLUE_D, fill=color)
+    a.flow([(372, 386), (430, 320), (448, 310)], fill=BLUE_D, width=5)
+    a.flow([(648, 310), (704, 352), (742, 420)], fill=ORANGE, width=5)
+    a.flow([(942, 420), (998, 346), (1028, 330)], fill=GREEN_D, width=5)
+    a.flow([(1228, 330), (1282, 386), (1290, 490)], fill=BLUE_D, width=5)
+    a.round_rect((292, 644, 1308, 770), fill=PAPER_2, outline=LINE_D, radius=64, width=2, shadow=True)
+    for i, label_text in enumerate(["context", "draft", "shards", "tests", "preview"]):
+        x = 354 + i * 180
+        a.round_rect((x, 684, x + 136, 726), fill=WHITE, outline=LINE, radius=21, width=2)
+        a.text((x + 18, 696), label_text, F["tiny"], GREEN_D)
+    a.star(558, 548, 22)
+    a.star(1186, 596, 26)
 
 
-def draw_developer_cover(draw: ImageDraw.ImageDraw) -> None:
-    panel = (792, 110, 1520, 848)
-    rect(draw, panel, BG_2, LINE, 2)
-    label(draw, (822, 140), "[ ide_cli_workbench ]")
-    small_window(draw, (830, 196, 1158, 620), "IDE / context", BG)
-    code_lines = [
-        "+ define acceptance",
-        "+ split shard tests",
-        "- remove blind merge",
-        "+ verify preview",
-        "+ publish only after gate",
-    ]
-    y = 272
-    for line in code_lines:
-        color = ACCENT_D if line.startswith("+") else WARN
-        draw.text((856, y), line, font=F["sm"], fill=color)
-        y += 54
-    small_window(draw, (1192, 196, 1484, 486), "CLI agent run", FG)
-    draw.text((1218, 266), "$ codex run", font=F["sm_b"], fill=ACCENT)
-    draw.text((1218, 318), "spawn shards", font=F["sm"], fill=BG)
-    draw.text((1218, 368), "collect diffs", font=F["sm"], fill=BG)
-    draw.text((1218, 418), "run checks", font=F["sm"], fill=BG)
-    rect(draw, (1200, 552, 1484, 712), BG, LINE, 2)
-    draw.text((1224, 578), "review gate", font=F["md_b"], fill=FG)
-    draw.text((1224, 632), "tests: ok", font=F["sm_b"], fill=ACCENT_D)
-    draw.text((1224, 672), "merge: held", font=F["sm"], fill=WARN)
-    arrow(draw, (1158, 406), (1192, 406), ACCENT_D)
-    arrow(draw, (1338, 486), (1338, 552), ACCENT_D)
-
-
-def draw_generic_cover(draw: ImageDraw.ImageDraw, article: Article) -> None:
-    draw_orchestration_cover(draw)
+def draw_developer_workflow(a: Art, article: Article) -> None:
+    a.header(article, "BUILD RUN")
+    a.browser_window((126, 250, 600, 610), "ide")
+    a.floating_code((668, 160, 876, 300), accent=GREEN)
+    a.floating_code((852, 246, 1068, 386), accent=BLUE)
+    a.floating_code((728, 460, 948, 600), accent=ORANGE)
+    a.round_rect((1120, 268, 1488, 618), fill=WHITE, outline=BLUE_D, radius=30, width=3, shadow=True)
+    a.text((1160, 318), "release gate", F["sm_b"], GREEN_D)
+    for i, txt in enumerate(["lint", "tests", "preview", "rollback"]):
+        y = 386 + i * 44
+        a.ellipse((1166, y, 1184, y + 18), fill=GREEN if i < 3 else SUN, outline=BLUE_D, width=1)
+        a.text((1204, y - 4), txt, F["xs"], INK_2)
+    a.flow([(600, 372), (684, 272), (668, 230)], fill=BLUE_D, width=4)
+    a.flow([(604, 420), (760, 392), (852, 316)], fill=ORANGE, width=4)
+    a.flow([(946, 530), (1054, 520), (1120, 452)], fill=GREEN_D, width=5)
+    a.robot(390, 700, 0.62, accent=SUN)
+    a.star(640, 692, 24)
+    a.star(996, 180, 20)
+    a.gear((1390, 706), 34, GREEN_D, fill=MINT_2)
 
 
 def render_cover(article: Article, output: Path) -> None:
-    img, draw = canvas()
-    draw_cover_text(draw, article)
+    art = Art()
     {
         "models": draw_models_cover,
         "crawl": draw_crawl_cover,
         "orchestration": draw_orchestration_cover,
         "developer": draw_developer_cover,
-    }.get(kind(article), lambda d: draw_generic_cover(d, article))(draw)
-    draw_footer(draw, "UTILDESK // topic-specific editorial image", "PNG / grid / mono / no cloned diagrams")
+    }.get(kind(article), draw_generic_cover)(art, article)
     output.parent.mkdir(parents=True, exist_ok=True)
-    img.save(output, "PNG", optimize=True)
-
-
-def draw_workflow_header(draw: ImageDraw.ImageDraw, article: Article, title: str) -> None:
-    label(draw, (64, 58), "[ workflow.trace ]")
-    draw.text((64, 116), title, font=F["xl"], fill=FG)
-    draw_text_block(draw, (64, 206), article.title, F["md"], 940, FG_2, line_gap=10, max_lines=2)
-
-
-def draw_models_workflow(draw: ImageDraw.ImageDraw, article: Article) -> None:
-    draw_workflow_header(draw, article, "MODEL ROUTING")
-    rect(draw, (86, 344, 1514, 802), BG_2, LINE, 2)
-    labels = ["Schreiben", "Recherche", "Coding", "Privacy"]
-    models = ["ChatGPT", "Claude", "Gemini"]
-    for i, model in enumerate(models):
-        x = 340 + i * 300
-        draw.text((x, 382), model, font=F["md_b"], fill=[ACCENT_D, WARN, FG][i])
-        draw.line((x - 30, 430, x + 230, 430), fill=LINE_2, width=2)
-    for r, label_text in enumerate(labels):
-        y = 486 + r * 68
-        draw.text((130, y), label_text, font=F["sm_b"], fill=FG)
-        draw.line((292, y + 18, 1392, y + 18), fill=LINE, width=1)
-        for c in range(3):
-            score = [3, 2, 2, 1][r] + (1 if c == r % 3 else 0)
-            x = 360 + c * 300
-            for dot in range(4):
-                fill = ACCENT if dot < score else BG
-                draw.rectangle((x + dot * 34, y, x + dot * 34 + 20, y + 20), fill=fill, outline=LINE_2, width=1)
-    rect(draw, (1040, 704, 1394, 766), FG, FG, 2)
-    draw.text((1066, 720), "route only after context + risk check", font=F["xs"], fill=BG)
-
-
-def draw_crawl_workflow(draw: ImageDraw.ImageDraw, article: Article) -> None:
-    draw_workflow_header(draw, article, "EDGE CONTROL STACK")
-    steps = [
-        ("traffic", "KI-Bots"),
-        ("rules", "Crawl Control"),
-        ("mirror", "Markdown"),
-        ("schema", "JSON-LD"),
-        ("ping", "IndexNow"),
-    ]
-    x = 162
-    prev = None
-    for i, (key, title) in enumerate(steps):
-        y = 342 + i * 92
-        rect(draw, (x, y, 690, y + 64), BG if i % 2 else BG_2, LINE, 2)
-        draw.text((190, y + 16), f"{i+1:02d}", font=F["sm_b"], fill=ACCENT_D if i != 1 else WARN)
-        draw.text((270, y + 16), title, font=F["sm_b"], fill=FG)
-        draw.text((560, y + 18), key.upper(), font=F["xs"], fill=FG_3)
-        if prev:
-            arrow(draw, prev, (426, y), ACCENT_D)
-        prev = (426, y + 64)
-    rect(draw, (852, 348, 1456, 734), BG_2, LINE, 2)
-    label(draw, (882, 378), "[ server load before/after ]")
-    for i, h in enumerate([232, 188, 124, 84, 62]):
-        x1 = 930 + i * 86
-        draw.rectangle((x1, 666 - h, x1 + 48, 666), fill=WARN if i < 2 else ACCENT, outline=FG, width=2)
-    draw.line((906, 666, 1396, 666), fill=FG_3, width=2)
-    draw.text((910, 694), "less blind crawling, more explicit updates", font=F["sm"], fill=FG_2)
-
-
-def draw_orchestration_workflow(draw: ImageDraw.ImageDraw, article: Article) -> None:
-    draw_workflow_header(draw, article, "ORCHESTRATION RUN")
-    lanes = [
-        ("NotebookLM", "source grounded draft"),
-        ("Planner", "scope + split"),
-        ("Agents", "parallel work"),
-        ("Verifier", "tests + risks"),
-        ("Publish", "human gate"),
-    ]
-    for i, (name, desc) in enumerate(lanes):
-        y = 330 + i * 92
-        rect(draw, (86, y, 1514, y + 64), BG_2 if i % 2 else BG, LINE, 2)
-        draw.text((116, y + 16), name, font=F["sm_b"], fill=ACCENT_D if i in {0, 4} else FG)
-        draw.text((430, y + 16), desc, font=F["sm"], fill=FG_2)
-        draw.rectangle((1328, y + 15, 1384, y + 49), fill=ACCENT if i != 3 else WARN, outline=FG, width=2)
-        draw.text((1404, y + 16), "logged", font=F["xs"], fill=FG_3)
-        if i < len(lanes) - 1:
-            arrow(draw, (800, y + 64), (800, y + 92), ACCENT_D)
-    rect(draw, (980, 744, 1514, 824), FG, FG, 2)
-    draw.text((1010, 768), "$ publish if final preview approved", font=F["sm"], fill=ACCENT)
-
-
-def draw_developer_workflow(draw: ImageDraw.ImageDraw, article: Article) -> None:
-    draw_workflow_header(draw, article, "DEV AGENT RAIL")
-    rect(draw, (100, 438, 1490, 456), FG, FG, 2)
-    stops = [
-        (180, "IDE", "context"),
-        (444, "CLI", "shards"),
-        (708, "Tests", "proof"),
-        (972, "Review", "gate"),
-        (1236, "Release", "ship"),
-    ]
-    for i, (x, name, sub) in enumerate(stops):
-        y = 334 if i % 2 == 0 else 536
-        rect(draw, (x, y, x + 190, y + 130), BG_2 if i % 2 else BG, LINE, 2)
-        draw.rectangle((x + 24, y + 22, x + 64, y + 62), fill=ACCENT if i != 3 else WARN, outline=FG, width=2)
-        draw.text((x + 78, y + 24), name, font=F["sm_b"], fill=FG)
-        draw.text((x + 24, y + 82), sub, font=F["xs"], fill=FG_3)
-        arrow(draw, (x + 95, y + (130 if i % 2 == 0 else 0)), (x + 95, 446), ACCENT_D)
-    rect(draw, (196, 724, 1398, 812), BG_2, LINE, 2)
-    draw.text((226, 750), "guardrail: no merge without real preview, tests and rollback note", font=F["sm"], fill=FG_2)
+    art.img.convert("RGB").save(output, "PNG", optimize=True)
 
 
 def render_workflow(article: Article, output: Path) -> None:
-    img, draw = canvas()
+    art = Art()
     {
         "models": draw_models_workflow,
         "crawl": draw_crawl_workflow,
         "orchestration": draw_orchestration_workflow,
         "developer": draw_developer_workflow,
-    }.get(kind(article), draw_orchestration_workflow)(draw, article)
-    draw_footer(draw, "UTILDESK // workflow visual family", "article-safe / topic-specific / no clones")
+    }.get(kind(article), draw_orchestration_workflow)(art, article)
     output.parent.mkdir(parents=True, exist_ok=True)
-    img.save(output, "PNG", optimize=True)
+    art.img.convert("RGB").save(output, "PNG", optimize=True)
 
 
 def render_article(path: Path, output_dir: Path) -> tuple[Path, Path]:
@@ -508,7 +631,7 @@ def render_article(path: Path, output_dir: Path) -> tuple[Path, Path]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Render topic-specific Utildesk PNG illustrations for Ratgeber articles.")
+    parser = argparse.ArgumentParser(description="Render topic-specific Utildesk editorial PNG illustrations for Ratgeber articles.")
     parser.add_argument("--article", type=Path)
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--output-dir", type=Path, default=IMAGE_DIR)
