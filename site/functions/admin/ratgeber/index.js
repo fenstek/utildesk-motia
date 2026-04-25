@@ -7,11 +7,11 @@ export async function onRequest({ env }) {
     .filter((candidate) => !String(candidate?.jobId || "").startsWith("test-"));
   const cards = candidates.length
     ? `<div class="grid">${candidates.map(renderCandidateCard).join("")}</div>`
-    : `<div class="empty">Пока в закрытое Cloudflare-хранилище не загружен ни один кандидат. Следующий шаг: VPS-синхронизатор отправит review-ready артефакты сюда автоматически.</div>`;
+    : `<div class="empty">Im geschlossenen Cloudflare-Speicher liegt noch kein Kandidat. Der VPS-Sync kann review-ready Artefakte automatisch hierher hochladen.</div>`;
 
   const body = `<section class="hero-panel">
     <h1>Ratgeber Kandidaten</h1>
-    <p>Закрытая панель для финальной проверки статей перед публикацией. Здесь должны лежать уже не полуфабрикаты, а финальный вид статьи с PNG-иллюстрациями и кнопкой публикации.</p>
+    <p>Geschlossene Review-Paneele fuer die finale Kontrolle vor der Publikation. Die Detailseiten verwenden dieselbe visuelle Sprache wie der aktuelle Utildesk-Ratgeber: terminal editorial layout, PNG-Illustrationen, Lightbox und manueller Publish-Gate.</p>
   </section>${cards}`;
 
   return new Response(pageShell("Kandidaten", body), {
