@@ -4,6 +4,30 @@ Good states and important restoration points.
 
 ---
 
+## 2026-04-25 22:10 Europe/Berlin - Ratgeber Editorial Illustration Baseline
+
+**Commit:** `24dbdc3`
+**Status:** GOOD STATE
+
+### Why this is a good state
+
+- `tools.utildesk.de` was deployed through Cloudflare Pages from the built `site/dist`.
+- Live checks returned `200` for `/`, `/tools/`, `/ratgeber/`, the updated Ratgeber article, two Ratgeber PNG assets, and a representative tool logo asset.
+- The live Ratgeber PNG hash matched the local generated PNG, confirming Cloudflare serves the new artwork and not stale cache.
+- Published Ratgeber images now use the softer Utildesk editorial illustration direction instead of the earlier terminal/block-diagram style.
+- The `opcl` Ratgeber candidate sync script was updated and tested so new candidates render PNG previews in the same editorial direction.
+- IndexNow submission for the homepage, tools index, Ratgeber index, and all published Ratgeber articles returned `200` from both IndexNow endpoints.
+
+### Restore target
+
+Use this commit as the current safe restore point for the repo and live Ratgeber illustration baseline.
+
+```bash
+git checkout 24dbdc3
+```
+
+---
+
 ## 2026-04-22 16:30 UTC - Current Site Healthy Baseline
 
 **Commit:** `fa1c42d11a995127f3be253eb94477252e4c79ff`
