@@ -16,7 +16,9 @@ SITE_IMAGE_PREFIX = "/images/ratgeber/"
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 INLINE_IMAGE_RE = re.compile(r"!\[[^\]]*\]\((?P<url>[^)]+)\)")
 SOURCE_LINK_RE = re.compile(r"\[[^\]]+\]\((https?://[^)]+)\)")
-RESIDUAL_CITATION_RE = re.compile(r"(?<!\!)\[(?:\d+(?:\s*,\s*\d+)*)\]")
+RESIDUAL_CITATION_RE = re.compile(
+    r"(?<!\!)\[(?:\d+(?:\s*[-–—]\s*\d+)?)(?:\s*,\s*\d+(?:\s*[-–—]\s*\d+)?)*\]"
+)
 MACHINE_RESIDUE_PATTERNS = [
     re.compile(pattern, re.IGNORECASE)
     for pattern in (
@@ -315,8 +317,12 @@ def validate_article_markdown(
         append_issue(errors, "article_too_short", f"Article body has {word_count} words; expected at least 650.")
     if h2_count < 4:
         append_issue(errors, "too_few_sections", f"Article body has {h2_count} H2 sections; expected at least 4.")
-    if RESIDUAL_CITATION_RE.search(body):
-        append_issue(errors, "residual_numeric_citations", "Body still contains NotebookLM-style numeric citations like [1].")
+    if RESIDUAL_CITATION_RE.search(frontmatter + "\n" + body):
+        append_issue(
+            errors,
+            "residual_numeric_citations",
+            "Article still contains NotebookLM-style numeric citations like [1], [1-3], or [24, 26-28].",
+        )
     for pattern in MACHINE_RESIDUE_PATTERNS:
         if pattern.search(body):
             append_issue(errors, "machine_residue", f"Body still contains machine/template residue matching {pattern.pattern!r}.")

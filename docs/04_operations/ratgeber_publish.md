@@ -85,3 +85,27 @@ python scripts/indexnow_submit.py submit-git-range --rev-range HEAD~1..HEAD --wa
 - `tools`-cron и `ratgeber`-publish не должны делить один и тот же грязный рабочий checkout;
 - если в рабочем дереве видны посторонние изменения, `ratgeber` нужно публиковать из нового чистого worktree.
 - автономный robot publish должен запускать `--preflight-only --strict-warnings` до импорта.
+
+## Cloudflare publish consumer
+
+`scripts/ratgeber_cloudflare_publish_consumer.py` забирает pending-заявки из закрытого Cloudflare review backend и публикует их отдельным контуром.
+
+Защиты от поломки production tools:
+
+- consumer не запускает и не меняет `scripts/cron_publish_push.sh`;
+- каждая заявка обрабатывается в новом checkout под `RATGEBER_PUBLISH_ROOT`, а не в `/opt/utildesk-motia`;
+- перед commit выполняется `scripts/import_ratgeber_package.py --preflight-only --strict-warnings`;
+- staged diff разрешён только для `content/ratgeber/*.md` и `content/images/ratgeber/*`;
+- любые изменения в `content/tools/*`, `site/*`, `scripts/cron_publish_push.sh` или других путях являются fail-closed блокером;
+- перед тем как пометить заявку `publishing`, consumer делает `git push --dry-run`; если GitHub write credential не настроен, pending-заявка остаётся pending, а production не трогается.
+
+Ожидаемый cron на `opcl`:
+
+```bash
+*/5 * * * * flock -n /opt/openclaw/workspace/ratgeber-publisher/publish.lock bash -lc 'cd /opt/openclaw/workspace/agent-newsman && /opt/openclaw/workspace/ratgeber-publisher/utildesk-motia-control/.venv/bin/python /opt/openclaw/workspace/ratgeber-publisher/utildesk-motia-control/scripts/ratgeber_cloudflare_publish_consumer.py --token-env auth/utildesk_ratgeber_review.env --limit 1 >> /opt/openclaw/workspace/agent-newsman/logs/ratgeber_publish_consumer.log 2>&1'
+```
+
+Для настоящего push с `opcl` нужен один из вариантов:
+
+- `GITHUB_TOKEN` в `auth/utildesk_ratgeber_review.env`; consumer использует `GIT_ASKPASS`, не пишет токен в remote URL;
+- или SSH/deploy key, уже настроенный на `opcl`, и `RATGEBER_PUBLISH_REPO_URL=git@github.com:fenstek/utildesk-motia.git`.

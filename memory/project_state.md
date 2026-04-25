@@ -253,3 +253,15 @@
 - Current candidate was uploaded with PNG assets:
   - `cover.png`;
   - `workflow.png`.
+
+## 2026-04-25 Ratgeber Publish Consumer
+
+- Ratgeber publish button creates Cloudflare KV queue items under `ratgeber-review:publish-queue:*`.
+- `scripts/ratgeber_cloudflare_publish_consumer.py` is the safe consumer for those queue items:
+  - approves the selected `opcl` artifact via `scripts/article_review_decision.py`;
+  - exports it with `scripts/export_ratgeber_package.py`;
+  - imports it into a fresh isolated checkout with `scripts/import_ratgeber_package.py --preflight-only --strict-warnings`;
+  - commits/pushes only if the git diff is limited to `content/ratgeber/*.md` and `content/images/ratgeber/*`;
+  - refuses to touch `content/tools/*`, so the tools production publisher remains isolated.
+- The import gate now rejects residual NotebookLM numeric citation ranges such as `[1-3]`, `[1–3]`, and `[24, 26-28]` in both frontmatter and body.
+- The 2026-04-24 article `ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis` was cleaned of visible citation residue before redeploy.
