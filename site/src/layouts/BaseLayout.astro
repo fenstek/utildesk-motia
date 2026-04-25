@@ -20,6 +20,8 @@ interface Props {
 
   description?: string;
 
+  robots?: string;
+
 }
 
 
@@ -27,6 +29,7 @@ interface Props {
 const {
   title = SITE_NAME,
   description = SITE_DESCRIPTION,
+  robots = DEFAULT_ROBOTS_CONTENT,
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
@@ -119,7 +122,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="description" content={resolvedDescription} />
-    <meta name="robots" content={DEFAULT_ROBOTS_CONTENT} />
+    <meta name="robots" content={robots} />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={resolvedTitle} />
     <meta property="og:description" content={resolvedDescription} />

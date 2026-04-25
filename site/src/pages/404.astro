@@ -5,11 +5,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout
   title="Seite nicht gefunden (404) — Utildesk"
   description="Die angeforderte Seite konnte leider nicht gefunden werden."
+  robots="noindex,nofollow"
 >
-  <Fragment slot="head">
-    <meta name="robots" content="noindex, nofollow" />
-  </Fragment>
-
   <div class="error-page">
     <div class="error-content">
       <div class="error-visual">
