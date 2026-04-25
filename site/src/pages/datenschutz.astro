@@ -3,106 +3,163 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Datenschutzerklärung – Utildesk"
-  description="Datenschutzerklärung für Utildesk, ein AI-Tools-Katalog."
+  title="Datenschutzerklärung - Utildesk"
+  description="Datenschutzhinweise für Utildesk, Hosting, Webanalyse, externe Inhalte und Kontaktaufnahme."
+  robots="noindex,nofollow,noarchive,nosnippet"
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/datenschutz" />
-    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
     <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
   </Fragment>
 
   <section class="legal">
     <h1>Datenschutzerklärung</h1>
-    <p>Hinweis: Diese Vorlage ersetzt keine Rechtsberatung.</p>
+    <p>
+      Diese Datenschutzhinweise beschreiben, welche Daten beim Besuch von Utildesk verarbeitet
+      werden. Sie dienen der Transparenz und ersetzen keine individuelle Rechtsberatung.
+    </p>
 
     <h2>1. Verantwortlicher</h2>
     <p>
-      Verantwortlich für die Datenverarbeitung auf dieser Website ist der Betreiber von Utildesk.
-      Sofern im Impressum oder in Kontaktangaben ein konkreter Verantwortlicher benannt ist,
-      gelten dessen Angaben. Sofern kein gesondertes Impressum mit personenbezogenen Angaben
-      veröffentlicht ist, erfolgt die Datenverarbeitung im Rahmen einer privaten,
-      nicht-kommerziellen Informationsplattform.
+      Verantwortlich für die Datenverarbeitung auf dieser Website ist der im
+      <a href="/impressum">Impressum</a> genannte Betreiber von Utildesk.
     </p>
 
     <h2>2. Kontakt</h2>
     <p>
-      Wenn Sie mit uns Kontakt aufnehmen möchten, nutzen Sie bitte die auf der Website angegebenen
-      Kontaktmöglichkeiten. Soweit wir personenbezogene Daten erhalten, verwenden wir diese nur
-      zur Bearbeitung Ihrer Anfrage.
+      Wenn Sie uns per E-Mail oder über andere angegebene Kontaktwege kontaktieren, verarbeiten
+      wir die von Ihnen übermittelten Daten ausschließlich zur Bearbeitung Ihrer Anfrage und
+      für mögliche Anschlussfragen. Rechtsgrundlage ist je nach Inhalt der Anfrage Art. 6 Abs. 1
+      lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.
     </p>
 
-    <h2>3. Hosting (Cloudflare Pages, statische Auslieferung)</h2>
+    <h2>3. Hosting und Auslieferung über Cloudflare</h2>
     <p>
-      Diese Website wird statisch bereitgestellt und über Cloudflare Pages ausgeliefert. Dabei
-      verarbeitet der Hosting-Anbieter technisch notwendige Daten, um die Website auszuliefern
-      und vor Angriffen zu schützen. Weitere Informationen finden Sie in den Datenschutzhinweisen
-      des Hosting-Anbieters.
+      Diese Website wird über Cloudflare Pages und Cloudflare Pages Functions bereitgestellt.
+      Cloudflare verarbeitet dabei technisch notwendige Zugriffsdaten, um Seiten, API-Endpunkte,
+      Feeds, Weiterleitungen und Schutzfunktionen auszuliefern. Dazu können insbesondere
+      IP-Adresse, Datum und Uhrzeit des Zugriffs, angeforderte URL, Referrer, User-Agent,
+      HTTP-Status und technische Sicherheitsereignisse gehören.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt zur sicheren, schnellen und stabilen Bereitstellung der Website
+      auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Cloudflare kann Daten auch außerhalb der
+      EU/des EWR verarbeiten; hierfür werden nach Angaben von Cloudflare geeignete Garantien
+      wie Standardvertragsklauseln und weitere Schutzmaßnahmen eingesetzt.
     </p>
 
     <h2>4. Server-Logs</h2>
     <p>
-      Beim Aufruf der Website werden in der Regel Server-Logfiles erhoben (z. B. IP-Adresse,
-      Datum und Uhrzeit des Zugriffs, aufgerufene Seite, User-Agent). Die Verarbeitung erfolgt
-      aus Sicherheitsgründen und zur Sicherstellung eines stabilen Betriebs. Die Logdaten werden
-      in der Regel nur so lange gespeichert, wie es für die genannten Zwecke erforderlich ist.
+      Beim Aufruf der Website entstehen Server- und Sicherheitslogs. Diese werden für Betrieb,
+      Fehleranalyse, Missbrauchsabwehr, DDoS-Schutz und technische Sicherheit genutzt. Logdaten
+      werden nur so lange gespeichert, wie es für diese Zwecke erforderlich ist oder gesetzliche
+      Pflichten dies verlangen.
     </p>
 
-    <h2>5. Cookies</h2>
+    <h2>5. Cookies, lokale Speicherung und geschützter Admin-Bereich</h2>
     <p>
-      Nach unserem Kenntnisstand setzen wir keine nicht notwendigen Cookies ein. Falls technisch
-      erforderliche Cookies genutzt werden, dienen diese ausschließlich der Bereitstellung
-      der Website.
+      Der öffentliche Bereich von Utildesk setzt nach aktuellem Stand keine Marketing-Cookies.
+      Für die Darstellungsoption hell/dunkel nutzt die Website den lokalen Speicher Ihres
+      Browsers (<code>localStorage</code>) unter dem Schlüssel <code>utildesk-theme</code>.
+      Diese Information bleibt auf Ihrem Gerät und dient nur dazu, die gewählte Darstellung
+      beim nächsten Besuch wiederherzustellen.
     </p>
-
-    <h2>6. Kontaktaufnahme</h2>
     <p>
-      Wenn Sie uns per E-Mail oder über ein Kontaktformular kontaktieren, verarbeiten wir die
-      von Ihnen übermittelten Daten zur Bearbeitung Ihrer Anfrage. Die Daten werden gelöscht,
-      sobald der Zweck der Verarbeitung entfällt und keine gesetzlichen Aufbewahrungspflichten
-      bestehen.
+      Für den nicht öffentlichen Ratgeber-Review-Bereich unter <code>/admin/ratgeber/</code>
+      wird nach erfolgreicher Anmeldung ein technisch notwendiges, sicheres Session-Cookie
+      (<code>utildesk_ratgeber_review</code>) gesetzt. Dieses Cookie ist auf den Admin-Bereich
+      beschränkt, wird nicht für Werbung verwendet und dient ausschließlich der Zugangskontrolle.
     </p>
 
-    <h2>7. Affiliate-Links und Tracking</h2>
+    <h2>6. Webanalyse mit Umami</h2>
     <p>
-      Utildesk kann Affiliate-Links enthalten. Wenn Sie über einen solchen Link eine Website
-      eines Anbieters besuchen oder dort etwas erwerben, kann der Anbieter eine Zuordnung
-      vornehmen. Nach unserem Kenntnisstand setzen wir selbst keine zusätzlichen Tracking-
-      Mechanismen ein. Falls dies künftig der Fall ist, wird diese Erklärung entsprechend
-      ergänzt.
+      Utildesk nutzt eine datenschutzfreundliche Webanalyse mit Umami über
+      <code>stats.utildesk.de</code>. Die Analyse hilft uns zu verstehen, welche Seiten technisch
+      funktionieren, welche Inhalte genutzt werden und wo die Navigation verbessert werden sollte.
+      Die Umami-Einbindung arbeitet ohne Cookies und ohne websiteübergreifende Werbeprofile.
+      Erfasst werden können insbesondere Seitenaufrufe, Referrer, Browser-/Gerätetyp,
+      ungefähre Region/Land und Zeitpunkt des Zugriffs. IP-Adressen werden dabei nicht zur
+      Erstellung persönlicher Besucherprofile genutzt.
+    </p>
+    <p>
+      Rechtsgrundlage ist unser berechtigtes Interesse an einer sparsamen Reichweitenmessung
+      und Verbesserung des Angebots gemäß Art. 6 Abs. 1 lit. f DSGVO.
     </p>
 
-    <h2>8. Rechte der betroffenen Personen</h2>
+    <h2>7. Externe Schriftarten, Logos und technische Inhalte</h2>
+    <p>
+      Die Website kann externe Ressourcen laden, insbesondere Schriftarten von Google Fonts sowie
+      Logos oder Favicons von Drittanbietern bzw. Favicon-Diensten wie Google, DuckDuckGo oder
+      Icon.Horse. Beim Laden solcher Ressourcen wird technisch bedingt Ihre IP-Adresse an den
+      jeweiligen Anbieter übermittelt. Soweit möglich verwendet Utildesk lokale Assets; bei
+      vielen Tool-Einträgen dienen externe Logos jedoch der Wiedererkennung der jeweiligen
+      Anbieter.
+    </p>
+    <p>
+      Rechtsgrundlage ist unser berechtigtes Interesse an einer nutzbaren, gut lesbaren und
+      wiedererkennbaren Darstellung des Tool-Katalogs gemäß Art. 6 Abs. 1 lit. f DSGVO.
+    </p>
+
+    <h2>8. Affiliate-Links und externe Anbieter</h2>
+    <p>
+      Utildesk enthält Links zu externen Tool-Anbietern. Einige Links können Affiliate- oder
+      Referral-Links sein. Wenn Sie einen solchen Link anklicken, verlassen Sie Utildesk; der
+      jeweilige Anbieter kann den Aufruf nach eigenen Datenschutzbedingungen verarbeiten und
+      gegebenenfalls eine Zuordnung zu einem Partnerprogramm vornehmen. Utildesk setzt dafür
+      im öffentlichen Bereich keine eigenen Marketing-Cookies.
+    </p>
+
+    <h2>9. Maschinenlesbare Inhalte, Feeds und API-Endpunkte</h2>
+    <p>
+      Utildesk stellt maschinenlesbare Inhalte bereit, darunter RSS/JSON-Feeds,
+      <code>llms.txt</code>, Markdown-Spiegel und JSON-API-Endpunkte für Tools und Ratgeber.
+      Beim Abruf dieser Endpunkte gelten dieselben technischen Zugriffsdaten wie beim Abruf
+      normaler Webseiten. Nicht für Suchmaschinen bestimmte maschinenlesbare Endpunkte können
+      mit <code>X-Robots-Tag: noindex</code> ausgeliefert werden.
+    </p>
+
+    <h2>10. Ratgeber-Kandidaten und interne Veröffentlichungsfunktionen</h2>
+    <p>
+      Der geschützte Ratgeber-Review-Bereich dient der internen Prüfung von Artikelkandidaten.
+      Dort können Artikelentwürfe, Bilder, Metadaten und technische Statusinformationen in
+      Cloudflare KV gespeichert werden. Der Bereich ist nicht öffentlich indexierbar und durch
+      Passwort bzw. technische Tokens geschützt.
+    </p>
+
+    <h2>11. Rechte der betroffenen Personen</h2>
     <p>
       Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung
       sowie auf Datenübertragbarkeit Ihrer personenbezogenen Daten. Zudem können Sie eine
-      Einwilligung jederzeit widerrufen und Widerspruch gegen die Verarbeitung einlegen.
+      Einwilligung jederzeit widerrufen und Widerspruch gegen Verarbeitungen einlegen, die auf
+      Art. 6 Abs. 1 lit. f DSGVO beruhen.
     </p>
 
-    <h2>9. Speicherdauer</h2>
+    <h2>12. Speicherdauer</h2>
     <p>
       Personenbezogene Daten werden nur so lange gespeichert, wie es für die genannten Zwecke
-      erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
+      erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Technische Logs und
+      Analyseinformationen werden regelmäßig gelöscht oder aggregiert, sobald sie für Betrieb,
+      Sicherheit oder Auswertung nicht mehr erforderlich sind.
     </p>
 
-    <h2>10. Drittlandtransfer</h2>
+    <h2>13. Drittlandtransfer</h2>
     <p>
       Sofern Dienste von Anbietern außerhalb der EU/des EWR genutzt werden, kann ein Transfer
       in Drittländer erfolgen. In solchen Fällen achten wir auf geeignete Garantien wie
-      Standardvertragsklauseln.
+      Standardvertragsklauseln oder vergleichbare Schutzmechanismen.
     </p>
 
-    <h2>11. Aufsichtsbehörde</h2>
+    <h2>14. Aufsichtsbehörde</h2>
     <p>
       Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Zuständig
       ist in der Regel die Aufsichtsbehörde Ihres gewöhnlichen Aufenthaltsortes oder Arbeitsplatzes.
     </p>
 
-    <h2>12. Aktualität und Änderungen</h2>
+    <h2>15. Aktualität und Änderungen</h2>
     <p>
-      Diese Datenschutzerklärung wird bei Bedarf angepasst, um Änderungen der Website oder der
-      rechtlichen Anforderungen zu berücksichtigen.
+      Diese Datenschutzerklärung wird bei Bedarf angepasst, um Änderungen der Website, der
+      eingesetzten Dienste oder rechtlicher Anforderungen zu berücksichtigen.
     </p>
   </section>
-  <p>Stand: Februar 2026</p>
+  <p>Stand: 25. April 2026</p>
 </BaseLayout>
