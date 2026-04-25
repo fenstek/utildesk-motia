@@ -6,8 +6,8 @@ category: "Workflow"
 eyebrow: "KI-Workflow"
 excerpt: "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
 readTime: 7
-coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.svg
-secondaryImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.svg
+coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.png
+secondaryImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.png
 tags:
   - "Developer Tools"
   - "Softwareentwicklung"
@@ -50,7 +50,7 @@ Wenn du das Thema nicht nur einordnen, sondern praktisch vergleichen willst, sin
 
 Moderne agentische Tools zeichnen sich dadurch aus, dass sie aktiv mit der Entwicklungsumgebung interagieren können. Ein zentrales Beispiel ist Claude Code, das direkt im Terminal, in der IDE oder im Browser operiert. Das Werkzeug beschränkt sich nicht auf Antworten, sondern liest die gesamte Codebasis, bearbeitet Dateien und führt Befehle eigenständig aus.
 
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.svg)
+![Schema eines orchestrierten KI-Workflows](/images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.png)
 
 Solche Agenten beheben Fehler, bauen neue Funktionen oder übernehmen mühsame Routineaufgaben wie das Schreiben von Tests.
 

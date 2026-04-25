@@ -6,8 +6,8 @@ category: Vergleich
 eyebrow: KI-Vergleich
 excerpt: Ein praxisnaher Vergleich der drei größten KI-Assistenten für Schreiben, Recherche, Coding und Datenschutz.
 readTime: 7
-coverImage: /images/ratgeber/chatgpt-claude-gemini-cover.svg
-secondaryImage: /images/ratgeber/chatgpt-claude-gemini-workflow.svg
+coverImage: /images/ratgeber/chatgpt-claude-gemini-cover.png
+secondaryImage: /images/ratgeber/chatgpt-claude-gemini-workflow.png
 tags:
   - ChatGPT
   - Claude
@@ -68,7 +68,7 @@ Hier hat **Gemini** einen natürlichen Vorteil durch die Nähe zur Google-Suche 
 
 **Claude** spielt seine Stärke aus, wenn sehr viel Material im Spiel ist. Große Kontextfenster helfen dabei, längere Dokumente, umfangreiche Notizen oder mehrere Quellen in einem gedanklichen Zusammenhang zu halten. Das macht das System für analytische Arbeit besonders wertvoll.
 
-![Typische Einsatzszenarien für die drei Assistenten](/images/ratgeber/chatgpt-claude-gemini-workflow.svg)
+![Typische Einsatzszenarien für die drei Assistenten](/images/ratgeber/chatgpt-claude-gemini-workflow.png)
 
 ## Programmierung und produktive Arbeit
 
