@@ -539,6 +539,7 @@ main.container {
 }
 
 .terminal-feed {
+  align-self: start;
   border: 1px solid var(--line);
   background: var(--bg-2);
   padding: 10px 12px;
@@ -550,8 +551,6 @@ main.container {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-height: 172px;
-  overflow: hidden;
 }
 
 .terminal-feed-row {
@@ -561,6 +560,7 @@ main.container {
   padding: 5px 0;
   border-bottom: 1px dashed var(--line);
   font-size: 11px;
+  line-height: 1.35;
 }
 
 .terminal-feed-row:last-child {
