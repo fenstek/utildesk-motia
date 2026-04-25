@@ -224,7 +224,7 @@
 ## 2026-04-24 Cloudflare Ratgeber Review Backend
 
 - A private Cloudflare Pages backend now exists for Ratgeber candidates:
-  - public route, protected by HTTP Basic Auth: `https://tools.utildesk.de/admin/ratgeber/`;
+  - public route, protected by a normal `/admin/ratgeber/login` password form and HttpOnly session cookie: `https://tools.utildesk.de/admin/ratgeber/`;
   - current candidate route: `https://tools.utildesk.de/admin/ratgeber/candidate/20260424-ist-deine-website-bereit-f-r-ki-agenten-how_to-5d6c5491`;
   - machine upload endpoint uses the Pages domain to avoid the public-domain browser-signature WAF: `https://utildesk-motia.pages.dev/admin/ratgeber/api/upload`.
 - Secrets:
@@ -237,6 +237,11 @@
 - Code added in this repo:
   - `site/functions/admin/ratgeber/*` implements the protected review UI, asset serving, upload API, publish-queue API, and publish button;
   - `scripts/ratgeber_cloudflare_candidate_sync.py` renders PNG candidate artwork and uploads candidates from `opcl`.
+- 2026-04-25 auth fix:
+  - HTTP Basic Auth caused Chrome to hit `ERR_TOO_MANY_RETRIES` on the admin route;
+  - the admin UI now redirects unauthenticated browser requests to `/admin/ratgeber/login`;
+  - Basic Auth remains only as a fallback for non-browser checks, while machine upload still uses `RATGEBER_UPLOAD_TOKEN`;
+  - direct Pages deploy `66fa2ab7` was used after Git deploy propagation kept serving the previous middleware.
 - `opcl` article rendering/publishing algorithms now prefer PNG assets:
   - `scripts/article_review_server.py` prefers `cover.png` / `workflow.png` in final previews, with SVG only as fallback;
   - `scripts/export_ratgeber_package.py` exports `cover.png` / `workflow.png` into publish-ready packages when present, with SVG only as fallback;
