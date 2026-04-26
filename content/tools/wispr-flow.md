@@ -4,11 +4,11 @@ title: Wispr Flow
 category: Audio
 price_model: Freemium
 tags: [ai, audio, voice, dictation, speech, productivity, writing]
-description: "Wispr Flow ist ein KI-Diktierwerkzeug fuer schnelles Schreiben per Stimme in Apps, Dokumenten, Chats und Workflows."
+description: Wispr Flow ist ein KI-Diktierwerkzeug fuer schnelles Schreiben per Stimme in Apps, Dokumenten, Chats und Workflows.
 official_url: "https://wisprflow.ai/"
 affiliate_url: "https://wisprflow.ai/r?SSERGEJ1"
 created_at: 2026-04-25
-popularity: 95
+popularity: 0
 ---
 
 # Wispr Flow

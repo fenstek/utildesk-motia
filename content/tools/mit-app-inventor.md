@@ -1,10 +1,11 @@
 ---
-slug: "mit-app-inventor"
-title: "MIT App Inventor"
-category: "AI"
-price_model: "Open Source"
+slug: mit-app-inventor
+title: MIT App Inventor
+category: AI
+price_model: Open Source
 tags: [developer-tools,education,mobile,open-source]
 official_url: "https://appinventor.mit.edu/"
+popularity: 0
 ---
 
 # MIT App Inventor

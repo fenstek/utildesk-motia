@@ -1,10 +1,11 @@
 ---
-slug: "corel-painter"
-title: "Corel Painter"
-category: "AI"
-price_model: "Abonnement, Einmalzahlung"
+slug: corel-painter
+title: Corel Painter
+category: AI
+price_model: Abonnement, Einmalzahlung
 tags: [design,painting,illustration,desktop]
 official_url: "https://www.painterartist.com/en/product/painter/"
+popularity: 0
 ---
 
 # Corel Painter

@@ -1,10 +1,11 @@
 ---
-slug: "planoly"
-title: "Planoly"
-category: "AI"
-price_model: "Je nach Plan"
+slug: planoly
+title: Planoly
+category: AI
+price_model: Je nach Plan
 tags: [marketing, social-media, planning, analytics]
 official_url: "https://www.planoly.com/"
+popularity: 0
 ---
 
 # Planoly

@@ -1,10 +1,11 @@
 ---
-slug: "izotope-ozone"
-title: "iZotope Ozone"
-category: "AI"
-price_model: "Abonnement, Einmalzahlung, Je nach Plan"
+slug: izotope-ozone
+title: iZotope Ozone
+category: AI
+price_model: Abonnement, Einmalzahlung, Je nach Plan
 tags: [audio, mastering, editing, creator-tools]
 official_url: "https://www.izotope.com/en/products/ozone.html"
+popularity: 0
 ---
 
 # iZotope Ozone

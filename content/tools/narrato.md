@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [content-marketing, ai-writing, workflow]
 official_url: "https://narrato.io/"
-popularity: 38
+popularity: 33
 ---
 
 # Narrato

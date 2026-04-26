@@ -5,7 +5,7 @@ category: Produktivitat
 price_model: Freemium
 tags: [ai,produktivitat,writing]
 official_url: "https://writesonic.com/"
-popularity: 3
+popularity: 0
 ---
 
 # Writesonic

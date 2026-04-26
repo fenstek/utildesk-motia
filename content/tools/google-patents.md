@@ -1,10 +1,11 @@
 ---
-slug: "google-patents"
-title: "Google Patents"
-category: "AI"
-price_model: "Kostenlos"
+slug: google-patents
+title: Google Patents
+category: AI
+price_model: Kostenlos
 tags: [research,patents,search,innovation]
 official_url: "https://patents.google.com/"
+popularity: 0
 ---
 
 # Google Patents

@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-editor"
-title: "Microsoft Editor"
-category: "AI"
-price_model: "Freemium"
+slug: microsoft-editor
+title: Microsoft Editor
+category: AI
+price_model: Freemium
 tags: [writing, grammar, productivity, editing]
 official_url: "https://www.microsoft.com/de-de/microsoft-365/microsoft-editor/"
+popularity: 0
 ---
 
 # Microsoft Editor

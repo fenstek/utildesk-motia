@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [productivity, data, analytics, education]
 official_url: "https://www.researchrabbit.ai/"
-popularity: 26
+popularity: 21
 ---
 
 # Research Rabbit

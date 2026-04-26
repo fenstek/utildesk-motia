@@ -6,7 +6,7 @@ price_model: Freemium
 tags: [ai, devtools, automation]
 official_url: "http://zapier.com"
 created_at: 2026-02-13
-popularity: 1
+popularity: 0
 ---
 
 

@@ -1,10 +1,11 @@
 ---
-slug: "briefcam"
-title: "BriefCam"
-category: "AI"
-price_model: "Je nach Plan"
+slug: briefcam
+title: BriefCam
+category: AI
+price_model: Je nach Plan
 tags: [video, analytics, security, ai]
 official_url: "https://www.milestonesys.com/products/software/briefcam/"
+popularity: 0
 ---
 
 # BriefCam

@@ -1,10 +1,11 @@
 ---
-slug: "ionic-framework"
-title: "Ionic Framework"
-category: "AI"
-price_model: "Open Source"
+slug: ionic-framework
+title: Ionic Framework
+category: AI
+price_model: Open Source
 tags: [developer-tools,mobile,web,open-source]
 official_url: "https://ionicframework.com/"
+popularity: 0
 ---
 
 # Ionic Framework

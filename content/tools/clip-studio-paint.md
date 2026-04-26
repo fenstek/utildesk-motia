@@ -1,10 +1,11 @@
 ---
-slug: "clip-studio-paint"
-title: "Clip Studio Paint"
-category: "Audio"
-price_model: "Abonnement, Einmalzahlung"
+slug: clip-studio-paint
+title: Clip Studio Paint
+category: Audio
+price_model: Abonnement, Einmalzahlung
 tags: [design, painting, illustration, animation]
 official_url: "https://www.clipstudio.net/en/"
+popularity: 0
 ---
 
 # Clip Studio Paint

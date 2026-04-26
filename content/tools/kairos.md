@@ -1,10 +1,11 @@
 ---
-slug: "kairos"
-title: "Kairos"
-category: "AI"
-price_model: "Je nach Plan"
+slug: kairos
+title: Kairos
+category: AI
+price_model: Je nach Plan
 tags: [face-recognition, api, security, ai]
 official_url: "https://www.kairos.com/"
+popularity: 0
 ---
 
 # Kairos
