@@ -3,6 +3,14 @@ const LOGIN_ATTEMPT_PREFIX = "ratgeber-review:login-attempts:";
 const LOGIN_WINDOW_SECONDS = 15 * 60;
 const LOGIN_BLOCK_SECONDS = 15 * 60;
 const LOGIN_MAX_FAILED_ATTEMPTS = 8;
+const SECURITY_HEADERS = {
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "X-Frame-Options": "DENY",
+  "Permissions-Policy": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), interest-cohort=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), sync-xhr=(), usb=(), xr-spatial-tracking=()",
+  "Content-Security-Policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://stats.utildesk.de; connect-src 'self' https://stats.utildesk.de; upgrade-insecure-requests",
+};
 
 export function timingSafeEqual(a, b) {
   const left = String(a || "");
@@ -135,13 +143,23 @@ export function hasTrustedOrigin(request) {
 }
 
 export function forbiddenOriginResponse() {
-  return new Response("Forbidden origin", {
+  return withSecurityHeaders(new Response("Forbidden origin", {
     status: 403,
     headers: {
       "Cache-Control": "no-store",
       "X-Robots-Tag": "noindex, nofollow",
     },
-  });
+  }));
+}
+
+export function withSecurityHeaders(response) {
+  const next = new Response(response.body, response);
+  for (const [header, value] of Object.entries(SECURITY_HEADERS)) {
+    if (!next.headers.has(header)) {
+      next.headers.set(header, value);
+    }
+  }
+  return next;
 }
 
 function getClientIp(request) {
