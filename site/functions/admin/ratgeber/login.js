@@ -1,7 +1,13 @@
-import { sessionCookie, timingSafeEqual } from "./_lib/auth.js";
+import {
+  clearLoginAttempts,
+  getLoginThrottle,
+  recordFailedLogin,
+  sessionCookie,
+  timingSafeEqual,
+} from "./_lib/auth.js";
 import { escapeHtml, pageShell } from "./_lib/html.js";
 
-function loginPage(request, error = "") {
+function loginPage(request, error = "", init = {}) {
   const url = new URL(request.url);
   const next = url.searchParams.get("next") || "/admin/ratgeber/";
   const message = error
@@ -21,7 +27,13 @@ function loginPage(request, error = "") {
     </form>
   </section>`;
   return new Response(pageShell("Login", body), {
-    headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" },
+    status: init.status || 200,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store",
+      "X-Robots-Tag": "noindex, nofollow",
+      ...(init.headers || {}),
+    },
   });
 }
 
@@ -30,13 +42,23 @@ async function handleGet({ request }) {
 }
 
 async function handlePost({ request, env }) {
+  const throttle = await getLoginThrottle(env, request);
+  if (throttle.blocked) {
+    return loginPage(request, "Zu viele Login-Versuche. Bitte spaeter erneut versuchen.", {
+      status: 429,
+      headers: { "Retry-After": String(throttle.retryAfterSeconds || 900) },
+    });
+  }
+
   const form = await request.formData();
   const password = String(form.get("password") || "");
   const expected = env.RATGEBER_REVIEW_PASSWORD || "";
   if (!expected || !timingSafeEqual(password, expected)) {
+    await recordFailedLogin(env, request);
     return loginPage(request, "Passwort passt nicht.");
   }
 
+  await clearLoginAttempts(env, request);
   const next = String(form.get("next") || "/admin/ratgeber/");
   const target = next.startsWith("/admin/ratgeber/") ? next : "/admin/ratgeber/";
   return new Response(null, {

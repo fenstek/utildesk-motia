@@ -1,4 +1,11 @@
-import { hasValidBasicAuth, hasValidSessionCookie, hasValidUploadToken } from "./_lib/auth.js";
+import {
+  forbiddenOriginResponse,
+  hasTrustedOrigin,
+  hasValidBasicAuth,
+  hasValidSessionCookie,
+  hasValidUploadToken,
+  isStateChangingRequest,
+} from "./_lib/auth.js";
 
 function redirectToLogin(request) {
   const url = new URL(request.url);
@@ -18,6 +25,10 @@ export async function onRequest(context) {
     response.headers.set("Cache-Control", "no-store");
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
     return response;
+  }
+
+  if (isStateChangingRequest(request) && !isMachineEndpoint && !hasTrustedOrigin(request)) {
+    return forbiddenOriginResponse();
   }
 
   if (url.pathname === "/admin/ratgeber/login" || url.pathname === "/admin/ratgeber/logout") {
