@@ -64,6 +64,9 @@ export async function handlePost({ env, request }) {
     }
 
     const jobId = normalizeJobId(candidate.jobId);
+    const existingCandidate = await readCandidate(env, jobId);
+    const incomingPublish =
+      candidate.publish && typeof candidate.publish === "object" && candidate.publish.status ? candidate.publish : null;
     const uploadedAssets = {};
     const assets = Array.isArray(payload.assets) ? payload.assets : [];
     for (const asset of assets) {
@@ -83,6 +86,7 @@ export async function handlePost({ env, request }) {
     const nextCandidate = await writeCandidate(env, {
       ...candidate,
       jobId,
+      publish: incomingPublish || existingCandidate?.publish || null,
       assets: {
         ...(candidate.assets || {}),
         ...uploadedAssets,
