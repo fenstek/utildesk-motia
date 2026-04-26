@@ -2,7 +2,10 @@ export const SITE_URL = "https://tools.utildesk.de";
 export const SITE_NAME = "Utildesk";
 export const SITE_DESCRIPTION =
   "Kuratiertes Verzeichnis für AI-Tools, Automatisierung, Produktivität und redaktionelle Ratgeber.";
+export const SITE_DESCRIPTION_EN =
+  "Curated directory for AI tools, automation, productivity and editorial guides.";
 export const SITE_LANGUAGE = "de-DE";
+export const SITE_LANGUAGE_EN = "en";
 export const ORGANIZATION_LOGO_PATH = "/logo-grid.svg";
 export const DEFAULT_ROBOTS_CONTENT =
   "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
@@ -25,14 +28,20 @@ export function buildPublisherOrganization() {
   };
 }
 
-export function buildOrganizationSchema() {
+export function buildOrganizationSchema({
+  description = SITE_DESCRIPTION,
+  inLanguage = SITE_LANGUAGE,
+}: {
+  description?: string;
+  inLanguage?: string;
+} = {}) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    inLanguage: SITE_LANGUAGE,
+    description,
+    inLanguage,
     logo: {
       "@type": "ImageObject",
       url: toAbsoluteUrl(ORGANIZATION_LOGO_PATH),
@@ -40,14 +49,20 @@ export function buildOrganizationSchema() {
   };
 }
 
-export function buildWebSiteSchema() {
+export function buildWebSiteSchema({
+  description = SITE_DESCRIPTION,
+  inLanguage = SITE_LANGUAGE,
+}: {
+  description?: string;
+  inLanguage?: string;
+} = {}) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE_NAME,
     url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    inLanguage: SITE_LANGUAGE,
+    description,
+    inLanguage,
     publisher: buildPublisherOrganization(),
   };
 }
@@ -58,12 +73,14 @@ export function buildCollectionPageSchema({
   url,
   about,
   mainEntity,
+  inLanguage = SITE_LANGUAGE,
 }: {
   name: string;
   description: string;
   url: string;
   about?: string[];
   mainEntity?: Record<string, unknown>;
+  inLanguage?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -71,7 +88,7 @@ export function buildCollectionPageSchema({
     name,
     description,
     url,
-    inLanguage: SITE_LANGUAGE,
+    inLanguage,
     isPartOf: {
       "@type": "WebSite",
       name: SITE_NAME,

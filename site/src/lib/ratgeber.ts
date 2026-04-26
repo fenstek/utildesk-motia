@@ -1,8 +1,10 @@
-﻿import { readdir, readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import matter from "gray-matter";
 import { fromContent } from "./contentRoot.mjs";
+import type { Locale } from "./i18n";
 
-const RATGEBER_DIR = fromContent("ratgeber");
+const ratgeberDirForLocale = (locale: Locale = "de") =>
+  locale === "en" ? fromContent("en", "ratgeber") : fromContent("ratgeber");
 
 export interface RatgeberRelatedTool {
   title: string;
@@ -50,8 +52,8 @@ const parseRelatedTools = (value: unknown): RatgeberRelatedTool[] => {
     .filter((item): item is RatgeberRelatedTool => Boolean(item));
 };
 
-const parseEntry = async (file: string): Promise<RatgeberEntry | null> => {
-  const sourcePath = fromContent("ratgeber", file);
+const parseEntry = async (file: string, locale: Locale = "de"): Promise<RatgeberEntry | null> => {
+  const sourcePath = fromContent(locale === "en" ? "en/ratgeber" : "ratgeber", file);
   const raw = await readFile(sourcePath, "utf-8");
   const parsed = matter(raw);
   const slug = String(parsed.data.slug ?? file.replace(/\.md$/, ""));
@@ -74,12 +76,12 @@ const parseEntry = async (file: string): Promise<RatgeberEntry | null> => {
   };
 };
 
-export async function listRatgeberEntries() {
-  const files = (await readdir(RATGEBER_DIR))
+export async function listRatgeberEntries(locale: Locale = "de") {
+  const files = (await readdir(ratgeberDirForLocale(locale)))
     .filter((file) => file.endsWith(".md") && !file.startsWith("_"))
     .sort((a, b) => a.localeCompare(b));
 
-  const entries = await Promise.all(files.map((file) => parseEntry(file)));
+  const entries = await Promise.all(files.map((file) => parseEntry(file, locale)));
 
   return entries
     .filter((entry): entry is RatgeberEntry => Boolean(entry))
@@ -87,11 +89,11 @@ export async function listRatgeberEntries() {
       const aTime = a.data.date ? Date.parse(a.data.date) : 0;
       const bTime = b.data.date ? Date.parse(b.data.date) : 0;
       if (bTime !== aTime) return bTime - aTime;
-      return a.data.title!.localeCompare(b.data.title!, "de");
+      return a.data.title!.localeCompare(b.data.title!, locale);
     });
 }
 
-export async function getRatgeberEntry(slug: string) {
-  const entries = await listRatgeberEntries();
+export async function getRatgeberEntry(slug: string, locale: Locale = "de") {
+  const entries = await listRatgeberEntries(locale);
   return entries.find((entry) => entry.slug === slug) ?? null;
 }

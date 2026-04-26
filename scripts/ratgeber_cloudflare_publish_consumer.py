@@ -23,7 +23,7 @@ DEFAULT_BRANCH = "master"
 DEFAULT_ARTICLE_WORKSPACE = Path("/opt/openclaw/workspace/agent-newsman")
 DEFAULT_PUBLISH_ROOT = Path("/opt/openclaw/workspace/ratgeber-publisher")
 ALLOWED_CHANGE_RE = re.compile(
-    r"^(?:content/ratgeber/[a-z0-9-]+\.md|content/images/ratgeber/[a-z0-9-]+\.(?:png|jpe?g|webp))$"
+    r"^(?:content/ratgeber/[a-z0-9-]+\.md|content/en/ratgeber/[a-z0-9-]+\.md|content/images/ratgeber/[a-z0-9-]+\.(?:png|jpe?g|webp))$"
 )
 
 
@@ -223,13 +223,17 @@ def assert_allowed_changes(paths: list[str]) -> None:
 
 def import_package(repo_dir: Path, package_dir: Path, env: dict[str, str]) -> None:
     importer = repo_dir / "scripts" / "import_ratgeber_package.py"
-    run([sys.executable, importer, "--package-dir", package_dir, "--preflight-only", "--strict-warnings"], cwd=repo_dir, env=env)
-    run([sys.executable, importer, "--package-dir", package_dir], cwd=repo_dir, env=env)
+    run(
+        [sys.executable, importer, "--package-dir", package_dir, "--preflight-only", "--strict-warnings", "--require-english"],
+        cwd=repo_dir,
+        env=env,
+    )
+    run([sys.executable, importer, "--package-dir", package_dir, "--require-english"], cwd=repo_dir, env=env)
     paths = status_paths(repo_dir, env)
     if not paths:
         raise PublishError("Import produced no repository changes.")
     assert_allowed_changes(paths)
-    run(["git", "add", "--", "content/ratgeber", "content/images/ratgeber"], cwd=repo_dir, env=env)
+    run(["git", "add", "--", "content/ratgeber", "content/en/ratgeber", "content/images/ratgeber"], cwd=repo_dir, env=env)
     staged = run(["git", "diff", "--cached", "--name-only"], cwd=repo_dir, env=env).stdout.splitlines()
     assert_allowed_changes([path.strip() for path in staged if path.strip()])
     run(["git", "diff", "--cached", "--check"], cwd=repo_dir, env=env)
@@ -293,16 +297,19 @@ def process_request(args: argparse.Namespace, request: dict[str, Any], env_value
         commit_sha = commit_and_push(repo_dir, request, args.branch, env)
 
     published_url = f"https://tools.utildesk.de/ratgeber/{slug}/"
+    published_en_url = f"https://tools.utildesk.de/en/ratgeber/{slug}/"
     if not args.dry_run:
         wait_live(published_url, args.live_timeout)
+        wait_live(published_en_url, args.live_timeout)
         if not args.skip_indexnow:
             submit_indexnow(repo_dir, published_url, env)
+            submit_indexnow(repo_dir, published_en_url, env)
         update_request(
             args.queue_endpoint,
             args.token,
             request_id,
             "published",
-            f"Published by Ratgeber consumer from commit {commit_sha}.",
+            f"Published DE/EN by Ratgeber consumer from commit {commit_sha}.",
             published_url,
         )
     return {"requestId": request_id, "slug": slug, "commit": commit_sha, "url": published_url}

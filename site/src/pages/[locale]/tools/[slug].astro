@@ -1,0 +1,171 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
+import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
+import {
+  buildEnglishToolFeatureList,
+  buildEnglishToolHtml,
+  getEnglishToolMeta,
+} from "../../../lib/englishContent";
+import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import { tagHref } from "../../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildPublisherOrganization,
+  SITE_URL,
+  toAbsoluteUrl,
+} from "../../../lib/siteMeta";
+import {
+  buildOfferFromPriceModel,
+  mapToolCategoryToSchemaCategory,
+} from "../../../lib/machineReadable";
+
+export async function getStaticPaths() {
+  const entries = await listActiveToolEntries();
+  return entries.map((entry) => ({
+    params: { locale: "en", slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { slug } = entry;
+const meta = getEnglishToolMeta(entry);
+const providerUrl = meta.targetUrl || "";
+const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
+const localLogo = resolveLocalLogo(slug);
+const faviconCandidates = getFaviconCandidates(providerUrl, 128);
+const faviconLogo = faviconCandidates[0] ?? null;
+const logoUrl = brandLogo || localLogo || faviconLogo;
+const logoFallbacks = logoUrl === faviconLogo ? [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(meta.title)] : [];
+const articleHtml = buildEnglishToolHtml(entry);
+const featureList = buildEnglishToolFeatureList(entry);
+const canonicalUrl = `${SITE_URL}/en/tools/${slug}/`;
+const offer = buildOfferFromPriceModel(entry.data.price_model ? String(entry.data.price_model) : null);
+if (offer && meta.priceModel) {
+  offer.category = meta.priceModel;
+  if ("priceSpecification" in offer && offer.priceSpecification) {
+    offer.priceSpecification.description = meta.priceModel;
+  }
+}
+const schema = {
+  "@context": "https://schema.org",
+  "@type": ["SoftwareApplication", "WebApplication"],
+  name: meta.title,
+  description: meta.description,
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  operatingSystem: "Web",
+  applicationCategory: mapToolCategoryToSchemaCategory(meta.category, meta.tags),
+  applicationSubCategory: meta.category || undefined,
+  inLanguage: "en",
+  keywords: meta.tags.length ? meta.tags.join(", ") : undefined,
+  featureList: featureList.length ? featureList : undefined,
+  isAccessibleForFree: ["Free", "Freemium", "Open Source"].includes(meta.priceModel),
+  publisher: buildPublisherOrganization(),
+  image: logoUrl ? toAbsoluteUrl(logoUrl) : undefined,
+  offers: offer,
+  about: meta.tags.length ? meta.tags.map((tag) => ({ "@type": "Thing", name: tag })) : undefined,
+  ...(meta.officialUrl && { sameAs: meta.officialUrl }),
+};
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Tools", url: `${SITE_URL}/en/tools/` },
+  { name: meta.title, url: canonicalUrl },
+]);
+---
+
+<BaseLayout locale="en" title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`} description={meta.metaDescription}>
+  <Fragment slot="head">
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={`/en/markdown/tools/${slug}.md`} title={`${meta.title} (Markdown)`} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <nav class="breadcrumb"><a href="/en/tools/">← Back to all tools</a></nav>
+
+  <div class="tool-detail-header">
+    <h1 class="tool-detail-title">{meta.title}</h1>
+    <div class="tool-detail-badges">
+      {meta.category && <span class="badge badge-category">{meta.category}</span>}
+      {meta.priceModel && <span class="badge badge-price">{meta.priceModel}</span>}
+      {meta.tags.slice(0, 7).map((tag) => <a class="badge badge-tag" href={tagHref(tag, "en")}>{tag}</a>)}
+    </div>
+  </div>
+
+  <article class="card article">
+    <div class="article-body">
+      {providerUrl && (
+        <div class="tool-primary-link">
+          {logoUrl ? (
+            <a class="tool-primary-link-logo" href={providerUrl} target="_blank" rel="noopener noreferrer" title="Open provider">
+              <img src={logoUrl} alt={`${meta.title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
+            </a>
+          ) : null}
+          <div class="tool-primary-link-text">
+            <span class="tool-primary-link-kicker">Provider</span>
+            <a class="tool-primary-link-anchor" href={providerUrl} target="_blank" rel="noopener noreferrer">Open {meta.title}</a>
+            <p class="tool-primary-link-note">External provider website</p>
+          </div>
+        </div>
+      )}
+      <div set:html={articleHtml}></div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .tool-primary-link {
+    margin: 0 0 1.75rem;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.10);
+    background: rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+  .tool-primary-link-logo {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface-container-low);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.07);
+    text-decoration: none;
+  }
+  .tool-primary-link-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+  }
+  .tool-primary-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .tool-primary-link-kicker {
+    font-size: 0.72rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--secondary);
+  }
+  .tool-primary-link-anchor {
+    color: var(--accent);
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .tool-primary-link-note {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--secondary);
+  }
+</style>

@@ -1,0 +1,226 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getEnglishToolMeta } from "../../../lib/englishContent";
+import { listRatgeberEntries } from "../../../lib/ratgeber";
+import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import { tagHref } from "../../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_LANGUAGE_EN,
+  SITE_URL,
+} from "../../../lib/siteMeta";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+
+const entries = await listActiveToolEntries();
+const tools = entries
+  .map((entry) => ({
+    slug: entry.slug,
+    popularity: entry.data.popularity ? Number(entry.data.popularity) : 0,
+    ...getEnglishToolMeta(entry),
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title, "en"));
+
+const tagFrequency = new Map<string, number>();
+tools.forEach((tool) => tool.tags.forEach((tag) => tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1)));
+const visibleTags = Array.from(tagFrequency.entries())
+  .filter(([, count]) => count >= 2)
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "en"))
+  .slice(0, 24)
+  .map(([tag]) => tag);
+const recentRatgeber = (await listRatgeberEntries("en")).slice(0, 3);
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Utildesk AI Tools",
+  numberOfItems: tools.length,
+  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/en/tools/${tool.slug}/`,
+  })),
+};
+const collectionSchema = buildCollectionPageSchema({
+  name: "Utildesk AI Tools",
+  description: "Curated AI tools, productivity apps and workflow software.",
+  url: `${SITE_URL}/en/tools/`,
+  about: ["AI tools", "Productivity", "Automation"],
+  mainEntity: itemListSchema,
+  inLanguage: SITE_LANGUAGE_EN,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Tools", url: `${SITE_URL}/en/tools/` },
+]);
+---
+
+<BaseLayout
+  locale="en"
+  title="AI Tools - Utildesk"
+  description="Curated directory of AI tools, productivity apps and automation software."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/tools/" />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero" style="padding: 60px 0 40px;">
+    <h1 class="hero-title">AI Tools</h1>
+    <p class="hero-subtitle">
+      Browse every tool in the Utildesk catalogue in English. Filter by name, tag or category and open the provider only after the quick context check.
+    </p>
+  </section>
+
+  {visibleTags.length > 0 && (
+    <div class="tag-filter-row">
+      <label class="tag-filter-label">Popular tags:</label>
+      <div class="tag-filter-list">
+        {visibleTags.map((tag) => <a href={tagHref(tag, "en")} class="tag-filter-item">{tag}</a>)}
+      </div>
+    </div>
+  )}
+
+  <div class="search-wrapper">
+    <input type="search" id="search-input" class="search-input" placeholder="Search tools..." autocomplete="off" />
+    <select id="sort-select" class="search-input" aria-label="Sort order">
+      <option value="az">A-Z</option>
+      <option value="pop">Popular</option>
+    </select>
+  </div>
+
+  <div class="tools-grid" id="tools-grid">
+    {tools.map((tool) => (
+      <a
+        href={`/en/tools/${tool.slug}/`}
+        class="card tool-card"
+        data-title={tool.title.toLowerCase()}
+        data-slug={tool.slug.toLowerCase()}
+        data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
+        data-popularity={tool.popularity}
+      >
+        <div class="tool-header">
+          <div class="tool-image">
+            <span class="tool-card-logo" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
+          </div>
+          <div class="tool-info">
+            <h3 class="tool-title">{tool.title}</h3>
+            <p class="tools-desc">{tool.description}</p>
+          </div>
+        </div>
+        <div class="tool-badges">
+          {tool.category && <span class="badge badge-category">{tool.category}</span>}
+          {tool.priceModel && <span class="badge badge-price">{tool.priceModel}</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
+    <p style="color: var(--text-muted); font-size: 1.125rem;">No tools found. Try another search term.</p>
+  </div>
+
+  {recentRatgeber.length > 0 && (
+    <section class="tools-guides">
+      <div class="tools-guides-head">
+        <h2>Related guides</h2>
+        <a href="/en/ratgeber/" class="tools-guides-more">Open guides</a>
+      </div>
+      <div class="tools-guides-list">
+        {recentRatgeber.map((article) => (
+          <a href={`/en/ratgeber/${article.slug}/`} class="tools-guides-article">
+            <strong>{article.data.title}</strong>
+            <span>{article.data.excerpt}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <script is:inline>
+    (() => {
+      const searchInput = document.getElementById('search-input');
+      const sortSelect = document.getElementById('sort-select');
+      const toolsGrid = document.getElementById('tools-grid');
+      const noResults = document.getElementById('no-results');
+      const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+      function filterTools() {
+        const query = (searchInput.value || '').toLowerCase().trim();
+        const sortMode = sortSelect ? sortSelect.value : 'az';
+        const filtered = cards.filter((card) => {
+          const title = card.getAttribute('data-title') || '';
+          const slug = card.getAttribute('data-slug') || '';
+          const tags = card.getAttribute('data-tags') || '';
+          return !query || title.includes(query) || slug.includes(query) || tags.includes(query);
+        });
+        filtered.sort((a, b) => {
+          if (sortMode === 'pop') {
+            const aPop = Number(a.getAttribute('data-popularity') || '0');
+            const bPop = Number(b.getAttribute('data-popularity') || '0');
+            if (bPop !== aPop) return bPop - aPop;
+          }
+          return (a.getAttribute('data-title') || '').localeCompare(b.getAttribute('data-title') || '', 'en');
+        });
+        toolsGrid.innerHTML = '';
+        filtered.forEach((card) => toolsGrid.appendChild(card));
+        toolsGrid.style.display = filtered.length ? 'grid' : 'none';
+        noResults.style.display = filtered.length ? 'none' : 'block';
+      }
+      searchInput.addEventListener('input', filterTools);
+      sortSelect?.addEventListener('change', filterTools);
+      filterTools();
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .tools-guides {
+    margin: 24px 0 56px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(23, 98, 89, 0.12);
+  }
+  .tools-guides-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .tools-guides-head h2 {
+    margin: 0;
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: var(--on-surface);
+  }
+  .tools-guides-more {
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary);
+  }
+  .tools-guides-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .tools-guides-article {
+    display: grid;
+    gap: 6px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(23, 98, 89, 0.10);
+  }
+  .tools-guides-article strong { color: var(--primary); }
+  .tools-guides-article span { color: var(--secondary); }
+  @media (max-width: 920px) {
+    .tools-guides-list { grid-template-columns: 1fr; }
+  }
+</style>

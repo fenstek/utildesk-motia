@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import { getEnglishToolMeta } from "../../../../lib/englishContent";
+import { listActiveToolEntries } from "../../../../lib/toolEntries.mjs";
+import { slugifyTag, tagHref } from "../../../../lib/tagRoutes";
+import { buildBreadcrumbSchema, buildCollectionPageSchema, SITE_LANGUAGE_EN, SITE_URL } from "../../../../lib/siteMeta";
+
+export async function getStaticPaths() {
+  const entries = await listActiveToolEntries();
+  const tags = new Map<string, string>();
+  entries.forEach((entry) => {
+    const meta = getEnglishToolMeta(entry);
+    meta.tags.forEach((tag) => tags.set(slugifyTag(tag), tag));
+  });
+  return Array.from(tags.entries()).map(([slug, tag]) => ({ params: { locale: "en", slug }, props: { tag } }));
+}
+
+const { tag } = Astro.props;
+const entries = await listActiveToolEntries();
+const tools = entries
+  .map((entry) => ({ slug: entry.slug, ...getEnglishToolMeta(entry) }))
+  .filter((tool) => tool.tags.some((item) => slugifyTag(item) === slugifyTag(tag)))
+  .sort((a, b) => a.title.localeCompare(b.title, "en"));
+const tagSlug = slugifyTag(tag);
+const description = `AI tools tagged ${tag} in the Utildesk English catalogue.`;
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `${tag} AI tools`,
+  numberOfItems: tools.length,
+  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/en/tools/${tool.slug}/`,
+  })),
+};
+const collectionSchema = buildCollectionPageSchema({
+  name: `${tag} AI tools`,
+  description,
+  url: `${SITE_URL}/en/tools/tag/${tagSlug}/`,
+  about: [tag, "AI tools"],
+  mainEntity: itemListSchema,
+  inLanguage: SITE_LANGUAGE_EN,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Tools", url: `${SITE_URL}/en/tools/` },
+  { name: `#${tag}`, url: `${SITE_URL}/en/tools/tag/${tagSlug}/` },
+]);
+---
+
+<BaseLayout locale="en" title={`${tag} AI Tools - Utildesk`} description={description}>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de${tagHref(tag, "en")}`} />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <nav class="breadcrumb"><a href="/en/tools/">← All tools</a></nav>
+  <section class="hero" style="padding: 42px 0 32px;">
+    <h1 class="hero-title">#{tag}</h1>
+    <p class="hero-subtitle">{description}</p>
+  </section>
+
+  <div class="tools-grid">
+    {tools.map((tool) => (
+      <a href={`/en/tools/${tool.slug}/`} class="card tool-card">
+        <div class="tool-header">
+          <div class="tool-image"><span class="tool-card-logo" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span></div>
+          <div class="tool-info">
+            <h3 class="tool-title">{tool.title}</h3>
+            <p class="tools-desc">{tool.description}</p>
+          </div>
+        </div>
+        <div class="tool-badges">
+          {tool.category && <span class="badge badge-category">{tool.category}</span>}
+          {tool.priceModel && <span class="badge badge-price">{tool.priceModel}</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

@@ -18,6 +18,10 @@ const DIST_DIR = join(__dirname, '../dist');
 const DIST_TOOLS_DIR = join(DIST_DIR, 'tools');
 const DIST_CATEGORY_DIR = join(DIST_DIR, 'category');
 const DIST_RATGEBER_DIR = join(DIST_DIR, 'ratgeber');
+const DIST_EN_DIR = join(DIST_DIR, 'en');
+const DIST_EN_TOOLS_DIR = join(DIST_EN_DIR, 'tools');
+const DIST_EN_CATEGORY_DIR = join(DIST_EN_DIR, 'category');
+const DIST_EN_RATGEBER_DIR = join(DIST_EN_DIR, 'ratgeber');
 const OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 const RESERVED_TOOL_SEGMENTS = new Set(['tag']);
 
@@ -161,10 +165,37 @@ async function readBuiltRatgeber() {
   }
 }
 
+async function readBuiltLocalizedDirectories(rootDir, reservedSegments = new Set()) {
+  try {
+    const entries = await readdir(rootDir, { withFileTypes: true });
+    const items = [];
+
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      const slug = entry.name;
+      if (slug.startsWith('_') || reservedSegments.has(slug)) continue;
+      const indexPath = join(rootDir, slug, 'index.html');
+      try {
+        const mtime = await getFileModTime(indexPath);
+        items.push({ slug, lastmod: formatDate(mtime) });
+      } catch {
+        continue;
+      }
+    }
+
+    return items.sort((a, b) => a.slug.localeCompare(b.slug));
+  } catch {
+    return [];
+  }
+}
+
 async function generateSitemap() {
   const tools = await readBuiltTools();
   const categories = await readBuiltCategories();
   const ratgeber = await readBuiltRatgeber();
+  const enTools = await readBuiltLocalizedDirectories(DIST_EN_TOOLS_DIR, RESERVED_TOOL_SEGMENTS);
+  const enCategories = await readBuiltLocalizedDirectories(DIST_EN_CATEGORY_DIR);
+  const enRatgeber = await readBuiltLocalizedDirectories(DIST_EN_RATGEBER_DIR);
   const today = formatDate(new Date());
 
   // Check if category index exists
@@ -184,6 +215,42 @@ async function generateSitemap() {
     ratgeberIndexLastmod = formatDate(mtime);
   } catch {
     // Ratgeber index doesn't exist, use today
+  }
+
+  let enIndexLastmod = today;
+  try {
+    const enIndexPath = join(DIST_EN_DIR, 'index.html');
+    const mtime = await getFileModTime(enIndexPath);
+    enIndexLastmod = formatDate(mtime);
+  } catch {
+    // English index doesn't exist, use today
+  }
+
+  let enToolsIndexLastmod = today;
+  try {
+    const enToolsIndexPath = join(DIST_EN_TOOLS_DIR, 'index.html');
+    const mtime = await getFileModTime(enToolsIndexPath);
+    enToolsIndexLastmod = formatDate(mtime);
+  } catch {
+    // English tools index doesn't exist, use today
+  }
+
+  let enCategoryIndexLastmod = today;
+  try {
+    const enCategoryIndexPath = join(DIST_EN_CATEGORY_DIR, 'index.html');
+    const mtime = await getFileModTime(enCategoryIndexPath);
+    enCategoryIndexLastmod = formatDate(mtime);
+  } catch {
+    // English category index doesn't exist, use today
+  }
+
+  let enRatgeberIndexLastmod = today;
+  try {
+    const enRatgeberIndexPath = join(DIST_EN_RATGEBER_DIR, 'index.html');
+    const mtime = await getFileModTime(enRatgeberIndexPath);
+    enRatgeberIndexLastmod = formatDate(mtime);
+  } catch {
+    // English ratgeber index doesn't exist, use today
   }
 
   const urls = [
@@ -237,6 +304,54 @@ async function generateSitemap() {
       lastmod: article.lastmod,
       priority: '0.7',
     })),
+    // English homepage
+    ...(enTools.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/en/`,
+            lastmod: enIndexLastmod,
+            priority: '0.9',
+          },
+          {
+            loc: `${BASE_URL}/en/tools/`,
+            lastmod: enToolsIndexLastmod,
+            priority: '0.8',
+          },
+        ]
+      : []),
+    ...enTools.map((tool) => ({
+      loc: `${BASE_URL}/en/tools/${escapeXml(tool.slug)}/`,
+      lastmod: tool.lastmod,
+      priority: '0.6',
+    })),
+    ...(enCategories.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/en/category/`,
+            lastmod: enCategoryIndexLastmod,
+            priority: '0.6',
+          },
+        ]
+      : []),
+    ...enCategories.map((cat) => ({
+      loc: `${BASE_URL}/en/category/${escapeXml(cat.slug)}/`,
+      lastmod: cat.lastmod,
+      priority: '0.6',
+    })),
+    ...(enRatgeber.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/en/ratgeber/`,
+            lastmod: enRatgeberIndexLastmod,
+            priority: '0.7',
+          },
+        ]
+      : []),
+    ...enRatgeber.map((article) => ({
+      loc: `${BASE_URL}/en/ratgeber/${escapeXml(article.slug)}/`,
+      lastmod: article.lastmod,
+      priority: '0.6',
+    })),
   ];
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -256,7 +371,16 @@ async function generateSitemap() {
 
   await writeFile(OUTPUT_FILE, xml, 'utf8');
 
-  return { urls, count: urls.length, tools: tools.length, categories: categories.length, ratgeber: ratgeber.length };
+  return {
+    urls,
+    count: urls.length,
+    tools: tools.length,
+    categories: categories.length,
+    ratgeber: ratgeber.length,
+    enTools: enTools.length,
+    enCategories: enCategories.length,
+    enRatgeber: enRatgeber.length,
+  };
 }
 
 async function main() {
@@ -267,13 +391,22 @@ async function main() {
     console.log(`   Tools: ${result.tools} (from dist/tools/)`);
     console.log(`   Categories: ${result.categories} (from dist/category/)`);
     console.log(`   Ratgeber: ${result.ratgeber} (from dist/ratgeber/)`);
+    console.log(`   English tools: ${result.enTools} (from dist/en/tools/)`);
+    console.log(`   English categories: ${result.enCategories} (from dist/en/category/)`);
+    console.log(`   English ratgeber: ${result.enRatgeber} (from dist/en/ratgeber/)`);
     const staticPages =
       result.count -
       result.tools -
       result.categories -
       result.ratgeber -
+      result.enTools -
+      result.enCategories -
+      result.enRatgeber -
       (result.categories > 0 ? 1 : 0) -
-      (result.ratgeber > 0 ? 1 : 0);
+      (result.ratgeber > 0 ? 1 : 0) -
+      (result.enTools > 0 ? 2 : 0) -
+      (result.enCategories > 0 ? 1 : 0) -
+      (result.enRatgeber > 0 ? 1 : 0);
     console.log(`   Static pages: ${staticPages}`);
   } catch (error) {
     console.error('❌ Failed to generate sitemap:', error.message);
