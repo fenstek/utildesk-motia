@@ -12,6 +12,15 @@ import {
   humanizeTagLabel,
   normalizeSeoText,
 } from "../lib/seoText";
+import {
+  getAlternatePaths,
+  getLocaleFromPath,
+  hrefFor,
+  LOCALE_META,
+  type Locale,
+  toAbsoluteLocalizedUrl,
+  UI,
+} from "../lib/i18n";
 import "../styles/global.css";
 
 interface Props {
@@ -22,6 +31,10 @@ interface Props {
 
   robots?: string;
 
+  locale?: Locale;
+
+  alternatePaths?: Partial<Record<Locale, string>>;
+
 }
 
 
@@ -30,76 +43,148 @@ const {
   title = SITE_NAME,
   description = SITE_DESCRIPTION,
   robots = DEFAULT_ROBOTS_CONTENT,
+  locale: propLocale,
+  alternatePaths: propAlternatePaths,
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
+const locale = propLocale ?? getLocaleFromPath(pathname);
+const ui = UI[locale];
+const pathSegments = pathname.split("/").filter(Boolean);
+const contentSegments = locale === "en" && pathSegments[0] === "en" ? pathSegments.slice(1) : pathSegments;
+const homeHref = hrefFor("/", locale);
+const toolsHref = hrefFor("/tools/", locale);
+const ratgeberHref = hrefFor("/ratgeber/", locale);
+const categoryHref = hrefFor("/category/", locale);
+const privacyHref = locale === "en" ? "/en/privacy/" : "/datenschutz/";
+const imprintHref = locale === "en" ? "/en/imprint/" : "/impressum/";
+const llmsHref = locale === "en" ? "/en/llms.txt" : "/llms.txt";
+const llmsFullHref = locale === "en" ? "/en/llms-full.txt" : "/llms-full.txt";
+const feedXmlHref = locale === "en" ? "/en/feed.xml" : "/feed.xml";
+const feedJsonHref = locale === "en" ? "/en/feed.json" : "/feed.json";
+const toolsApiHref = locale === "en" ? "/en/api/tools.json" : "/api/tools.json";
+const ratgeberApiHref = locale === "en" ? "/en/api/ratgeber.json" : "/api/ratgeber.json";
 const normalizedTitle = normalizeSeoText(title);
 const normalizedDescription = normalizeSeoText(description);
 const siteSuffixPattern = /\s+(?:—|–|-|\|)\s+Utildesk$/;
 const baseTitle = normalizeSeoText(normalizedTitle.replace(siteSuffixPattern, ""));
-const pathSegments = pathname.split("/").filter(Boolean);
 
 let resolvedTitle = normalizedTitle;
 let resolvedDescription = normalizedDescription;
 
-if (/^\/tools\/[^/]+\/$/.test(pathname) && !pathname.startsWith("/tools/tag/")) {
-  const toolName = baseTitle || humanizeTagLabel(pathSegments[1] ?? "Tool");
-  resolvedTitle = buildToolMetaTitle(toolName);
+if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.test(pathname)) {
+  const toolName = (locale === "en"
+    ? baseTitle.replace(/:\s*Features,\s*Pricing\s+and\s+Use\s+Cases$/i, "")
+    : baseTitle) || humanizeTagLabel(contentSegments[1] ?? "Tool");
+  resolvedTitle = locale === "en"
+    ? `${toolName}: Features, Pricing and Use Cases | Utildesk`
+    : buildToolMetaTitle(toolName);
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    `Auf Utildesk findest du ${toolName} mit Funktionen, Preis-Modell und typischen Einsatzbereichen im kompakten Überblick.`,
+    locale === "en"
+      ? `Find ${toolName} on Utildesk with pricing, use cases and practical workflow context.`
+      : `Auf Utildesk findest du ${toolName} mit Funktionen, Preis-Modell und typischen Einsatzbereichen im kompakten Überblick.`,
   ]);
-} else if (pathname === "/tools/") {
-  resolvedTitle = buildCollectionMetaTitle("AI-Tools", "Apps und Produktivitätstools entdecken");
+} else if (pathname === "/tools/" || pathname === "/en/tools/") {
+  resolvedTitle = locale === "en"
+    ? "AI Tools, Productivity Apps and Automation Software | Utildesk"
+    : buildCollectionMetaTitle("AI-Tools", "Apps und Produktivitätstools entdecken");
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Durchsuche das Utildesk-Verzeichnis nach Funktionen, Kategorien und Einsatzbereichen für produktive KI-Workflows.",
+    locale === "en"
+      ? "Browse a curated directory of AI tools by use case, category, pricing model and workflow fit."
+      : "Durchsuche das Utildesk-Verzeichnis nach Funktionen, Kategorien und Einsatzbereichen für produktive KI-Workflows.",
   ]);
-} else if (/^\/tools\/tag\/[^/]+\/$/.test(pathname)) {
-  const tagLabel = humanizeTagLabel(pathSegments[2] ?? baseTitle);
-  resolvedTitle = buildCollectionMetaTitle(tagLabel || "Tag", "AI-Tools mit diesem Tag entdecken");
+} else if (/^(?:\/en)?\/tools\/tag\/[^/]+\/$/.test(pathname)) {
+  const tagLabel = humanizeTagLabel(contentSegments[2] ?? baseTitle);
+  resolvedTitle = locale === "en"
+    ? `${tagLabel || "Tag"} AI tools | Utildesk`
+    : buildCollectionMetaTitle(tagLabel || "Tag", "AI-Tools mit diesem Tag entdecken");
   resolvedDescription = enrichMetaDescription(
     resolvedDescription || `Tools mit dem Tag ${tagLabel} im Utildesk-Verzeichnis.`,
-    ["Vergleiche passende Tools, Kategorien und typische Einsatzbereiche auf einen Blick."],
+    [
+      locale === "en"
+        ? "Compare matching AI tools, categories and practical use cases in one curated directory."
+        : "Vergleiche passende Tools, Kategorien und typische Einsatzbereiche auf einen Blick.",
+    ],
   );
-} else if (pathname === "/category/") {
-  resolvedTitle = buildCollectionMetaTitle("AI-Tools", "nach Kategorien entdecken");
+} else if (pathname === "/category/" || pathname === "/en/category/") {
+  resolvedTitle = locale === "en"
+    ? "AI Tool Categories | Utildesk"
+    : buildCollectionMetaTitle("AI-Tools", "nach Kategorien entdecken");
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Finde schneller passende Tools für Automatisierung, Produktivität, Schreiben, Design und Entwickler-Workflows.",
+    locale === "en"
+      ? "Explore AI tools by category, from productivity and writing to developer workflows and automation."
+      : "Finde schneller passende Tools für Automatisierung, Produktivität, Schreiben, Design und Entwickler-Workflows.",
   ]);
-} else if (/^\/category\/[^/]+\/$/.test(pathname)) {
-  const categoryName = baseTitle || humanizeTagLabel(pathSegments[1] ?? "Kategorie");
-  resolvedTitle = buildCollectionMetaTitle(categoryName, "passende AI-Tools entdecken");
+} else if (/^(?:\/en)?\/category\/[^/]+\/$/.test(pathname)) {
+  const categoryName = baseTitle || humanizeTagLabel(contentSegments[1] ?? "Kategorie");
+  resolvedTitle = locale === "en"
+    ? `${categoryName} AI tools | Utildesk`
+    : buildCollectionMetaTitle(categoryName, "passende AI-Tools entdecken");
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    `Vergleiche Tools, Einsatzbereiche und typische Workflows für die Kategorie ${categoryName}.`,
+    locale === "en"
+      ? `Compare AI tools, workflows and practical use cases in the ${categoryName} category.`
+      : `Vergleiche Tools, Einsatzbereiche und typische Workflows für die Kategorie ${categoryName}.`,
   ]);
-} else if (pathname === "/ratgeber/") {
-  resolvedTitle = "KI-Ratgeber, Vergleiche und Workflow-Guides | Utildesk";
+} else if (pathname === "/ratgeber/" || pathname === "/en/ratgeber/") {
+  resolvedTitle = locale === "en"
+    ? "AI Guides, Comparisons and Workflow Briefings | Utildesk"
+    : "KI-Ratgeber, Vergleiche und Workflow-Guides | Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Lies redaktionelle Einordnungen, Tool-Vergleiche und Praxis-Guides für Teams, die KI produktiv einsetzen wollen.",
+    locale === "en"
+      ? "Read practical AI guides, tool comparisons and workflow briefings for productive teams."
+      : "Lies redaktionelle Einordnungen, Tool-Vergleiche und Praxis-Guides für Teams, die KI produktiv einsetzen wollen.",
   ]);
-} else if (/^\/ratgeber\/[^/]+\/$/.test(pathname)) {
+} else if (/^(?:\/en)?\/ratgeber\/[^/]+\/$/.test(pathname)) {
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Lies die Einordnung, Praxisbeispiele und Tool-Bezüge im Utildesk-Ratgeber.",
+    locale === "en"
+      ? "Read the context, practical examples and related tools in the Utildesk guide."
+      : "Lies die Einordnung, Praxisbeispiele und Tool-Bezüge im Utildesk-Ratgeber.",
   ]);
-} else if (pathname === "/datenschutz" || pathname === "/datenschutz/") {
-  resolvedTitle = "Datenschutzerklärung und Datenverarbeitung | Utildesk";
+} else if (pathname === "/datenschutz" || pathname === "/datenschutz/" || pathname === "/en/privacy/" || pathname === "/en/privacy") {
+  resolvedTitle = locale === "en"
+    ? "Privacy Policy and Data Processing | Utildesk"
+    : "Datenschutzerklärung und Datenverarbeitung | Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Hier findest du die Hinweise zur Datenverarbeitung, Hosting-Infrastruktur und Kontaktaufnahme auf Utildesk.",
+    locale === "en"
+      ? "Privacy information for hosting, analytics, external resources and contact handling on Utildesk."
+      : "Hier findest du die Hinweise zur Datenverarbeitung, Hosting-Infrastruktur und Kontaktaufnahme auf Utildesk.",
   ]);
-} else if (pathname === "/impressum" || pathname === "/impressum/") {
-  resolvedTitle = "Impressum und Anbieterkennzeichnung | Utildesk";
+} else if (pathname === "/impressum" || pathname === "/impressum/" || pathname === "/en/imprint/" || pathname === "/en/imprint") {
+  resolvedTitle = locale === "en"
+    ? "Imprint and Provider Information | Utildesk"
+    : "Impressum und Anbieterkennzeichnung | Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Hier findest du die gesetzlichen Anbieterangaben und Kontaktinformationen für Utildesk.",
+    locale === "en"
+      ? "Legal provider and contact information for Utildesk."
+      : "Hier findest du die gesetzlichen Anbieterangaben und Kontaktinformationen für Utildesk.",
   ]);
-} else if (pathname === "/") {
-  resolvedTitle = "Utildesk: AI-Tools, Automatisierung und KI-Ratgeber";
+} else if (pathname === "/" || pathname === "/en/") {
+  resolvedTitle = locale === "en"
+    ? "Utildesk: AI Tools, Automation and Practical Guides"
+    : "Utildesk: AI-Tools, Automatisierung und KI-Ratgeber";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Entdecke kuratierte Tools, Workflows und redaktionelle Guides für produktive KI-Einsätze an einem Ort.",
+    locale === "en"
+      ? "Discover curated AI tools, workflow context and practical guides in one AI-readable directory."
+      : "Entdecke kuratierte Tools, Workflows und redaktionelle Guides für produktive KI-Einsätze an einem Ort.",
   ]);
 } else {
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
-    "Mehr Kontext, Einsatzbereiche und weiterführende Orientierung findest du auf Utildesk.",
+    locale === "en"
+      ? "Find more context, use cases and practical orientation on Utildesk."
+      : "Mehr Kontext, Einsatzbereiche und weiterführende Orientierung findest du auf Utildesk.",
   ]);
 }
+
+const alternatePaths = propAlternatePaths ?? getAlternatePaths(pathname);
+const languageSwitchTarget = alternatePaths
+  ? alternatePaths[locale === "en" ? "de" : "en"]
+  : hrefFor("/", locale === "en" ? "de" : "en");
+const themeLabels = JSON.stringify({
+  dark: ui.themeDark,
+  light: ui.themeLight,
+  toDark: ui.themeToDark,
+  toLight: ui.themeToLight,
+});
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
@@ -113,7 +198,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
 <!DOCTYPE html>
 
-<html lang="de" data-accent="lime">
+<html lang={LOCALE_META[locale].lang} data-accent="lime">
 
   <head>
 
@@ -126,7 +211,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={resolvedTitle} />
     <meta property="og:description" content={resolvedDescription} />
-    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale" content={locale === "en" ? "en_US" : "de_DE"} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={resolvedTitle} />
     <meta name="twitter:description" content={resolvedDescription} />
@@ -142,12 +227,19 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="alternate" type="application/rss+xml" title="Utildesk Ratgeber Feed" href="/feed.xml" />
-    <link rel="alternate" type="application/feed+json" title="Utildesk Ratgeber JSON Feed" href="/feed.json" />
-    <link rel="alternate" type="application/json" title="Utildesk Tools Catalog" href="/api/tools.json" />
-    <link rel="alternate" type="application/json" title="Utildesk Ratgeber Catalog" href="/api/ratgeber.json" />
-    <link rel="alternate" type="text/plain" title="Utildesk AI manifest" href="/llms.txt" />
-    <link rel="alternate" type="text/plain" title="Utildesk AI full manifest" href="/llms-full.txt" />
+    <link rel="alternate" type="application/rss+xml" title={locale === "en" ? "Utildesk Guides Feed" : "Utildesk Ratgeber Feed"} href={feedXmlHref} />
+    <link rel="alternate" type="application/feed+json" title={locale === "en" ? "Utildesk Guides JSON Feed" : "Utildesk Ratgeber JSON Feed"} href={feedJsonHref} />
+    <link rel="alternate" type="application/json" title="Utildesk Tools Catalog" href={toolsApiHref} />
+    <link rel="alternate" type="application/json" title={locale === "en" ? "Utildesk Guides Catalog" : "Utildesk Ratgeber Catalog"} href={ratgeberApiHref} />
+    <link rel="alternate" type="text/plain" title="Utildesk AI manifest" href={llmsHref} />
+    <link rel="alternate" type="text/plain" title="Utildesk AI full manifest" href={llmsFullHref} />
+    {alternatePaths && (
+      <>
+        <link rel="alternate" hreflang="de" href={toAbsoluteLocalizedUrl(alternatePaths.de ?? "/")} />
+        <link rel="alternate" hreflang="en" href={toAbsoluteLocalizedUrl(alternatePaths.en ?? "/en/")} />
+        <link rel="alternate" hreflang="x-default" href={toAbsoluteLocalizedUrl(alternatePaths.de ?? "/")} />
+      </>
+    )}
 
     <script is:inline>
 
@@ -190,7 +282,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+    <a href="#main-content" class="skip-link">{ui.skipLink}</a>
 
     <header class="site-header">
 
@@ -198,15 +290,15 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         <div class="hdr-row hdr-top">
 
-          <a href="/" class="brand">
+          <a href={homeHref} class="brand">
 
             <span class="brand-mark-text">[ utildesk ]</span>
 
-            <span class="brand-sub">// ki-werkzeugverzeichnis</span>
+            <span class="brand-sub">{ui.brandSub}</span>
 
           </a>
 
-          <div class="hdr-meta" aria-label="Systemstatus">
+          <div class="hdr-meta" aria-label={ui.systemStatus}>
 
             <span>v4.2.0-catalog</span>
 
@@ -222,27 +314,29 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         </div>
 
-        <nav class="nav hdr-row hdr-bottom" aria-label="Hauptnavigation">
+        <nav class="nav hdr-row hdr-bottom" aria-label={ui.navLabel}>
 
           <div class="nav-links">
 
-            <a href="/">Verzeichnis</a>
+            <a href={homeHref}>{ui.navHome}</a>
 
-            <a href="/tools/">Tools</a>
+            <a href={toolsHref}>{ui.navTools}</a>
 
-            <a href="/ratgeber/">Ratgeber</a>
+            <a href={ratgeberHref}>{ui.navGuides}</a>
 
-            <a href="/category/">Kategorien</a>
+            <a href={categoryHref}>{ui.navCategories}</a>
 
           </div>
 
           <div class="nav-actions">
 
-            <a class="btn-ghost" href="/llms.txt">llms.txt</a>
+            <a class="btn-ghost" href={llmsHref}>{ui.llms}</a>
 
-            <button type="button" class="theme-toggle btn-ghost" id="theme-toggle" aria-label="Design umschalten" aria-pressed="false" title="Design umschalten">
+            <a class="btn-ghost" href={languageSwitchTarget} hreflang={locale === "en" ? "de" : "en"} aria-label={ui.languageLabel}>{ui.languageSwitch}</a>
 
-              <span data-theme-label>Hell</span>
+            <button type="button" class="theme-toggle btn-ghost" id="theme-toggle" aria-label={ui.themeToggleLabel} aria-pressed="false" title={ui.themeToggleLabel} data-theme-labels={themeLabels}>
+
+              <span data-theme-label>{ui.themeLight}</span>
 
             </button>
 
@@ -252,15 +346,15 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         <div class="hdr-status">
 
-          <span>db: tools + ratgeber</span>
+          <span>{ui.dbStatus}</span>
 
           <span class="dot">/</span>
 
-          <span>indexnow: aktiv</span>
+          <span>{ui.indexNowStatus}</span>
 
           <span class="dot">/</span>
 
-          <span>ai-readable manifests: online</span>
+          <span>{ui.aiReadableStatus}</span>
 
         </div>
 
@@ -284,7 +378,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         <div class="footer-content">
 
-          <a href="/" class="footer-brand">
+          <a href={homeHref} class="footer-brand">
 
             <img src="/logo-grid.svg" alt="Utildesk" height="16" />
 
@@ -294,21 +388,21 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           <div class="footer-links">
 
-            <a href='/ratgeber/'>Ratgeber</a>
+            <a href={ratgeberHref}>{ui.footerGuides}</a>
 
-            <a href="/tools/">Tools</a>
+            <a href={toolsHref}>{ui.footerTools}</a>
 
-            <a href="/category/">Kategorien</a>
+            <a href={categoryHref}>{ui.footerCategories}</a>
 
-            <a href="/datenschutz" rel="nofollow">Datenschutzerklärung</a>
+            <a href={privacyHref} rel="nofollow">{ui.footerPrivacy}</a>
 
-            <a href="/impressum" rel="nofollow">Impressum</a>
+            <a href={imprintHref} rel="nofollow">{ui.footerImprint}</a>
 
           </div>
 
         </div>
 
-        <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. Disclaimer: Utildesk is an independent tools directory. All trademarks, logos, and brand names are the property of their respective owners.</p>
+        <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. {ui.footerCopy}</p>
 
       </div>
 
@@ -327,6 +421,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         const button = document.getElementById("theme-toggle");
 
         const label = button?.querySelector("[data-theme-label]");
+        const themeLabels = (() => {
+          try {
+            return JSON.parse(button?.getAttribute("data-theme-labels") || "{}");
+          } catch {
+            return {};
+          }
+        })();
 
         const media = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
 
@@ -362,13 +463,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             button.setAttribute("aria-pressed", String(theme === "dark"));
 
-            button.title = theme === "dark" ? "Zum hellen Design wechseln" : "Zum dunklen Design wechseln";
+            button.title = theme === "dark" ? themeLabels.toLight : themeLabels.toDark;
 
           }
 
           if (label) {
 
-            label.textContent = theme === "dark" ? "Dunkel" : "Hell";
+            label.textContent = theme === "dark" ? themeLabels.dark : themeLabels.light;
 
           }
 

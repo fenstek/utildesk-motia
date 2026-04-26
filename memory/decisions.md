@@ -49,3 +49,11 @@
   - submit to the global protocol endpoint for broad sharing;
   - also submit directly to Bing's own endpoint to improve Bing-side observability and reduce ambiguity in Webmaster tooling.
 - Keep post-deploy freshness hooks reachable from the actual release path; do not leave IndexNow calls below early `exit 0` branches in cron automation.
+
+## 2026-04-26
+
+- Keep German as the default production language for `tools.utildesk.de`; publish English under `/en/`.
+- English pages must use self-canonicals and reciprocal `hreflang` alternates, not canonicalize back to German.
+- Treat multilingual Ratgeber publication as a package contract: autonomous publish requires both `content/ratgeber/<slug>.md` and `content/en/ratgeber/<slug>.md`.
+- Keep English tool pages generated from the curated tool metadata until the sheet/backend has native English fields.
+- Keep machine-readable discovery localized as well: `/en/api/*`, `/en/markdown/*`, `/en/feed.*`, `/en/llms.txt`, and `/en/llms-full.txt`.

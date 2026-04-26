@@ -30,6 +30,7 @@ DEFAULT_ENDPOINTS = [
 KEY_PATTERN = re.compile(r"^[A-Za-z0-9-]{8,128}$")
 TOOLS_PATH_RE = re.compile(r"^content/tools/_?(?P<slug>[^/]+)\.md$")
 RATGEBER_PATH_RE = re.compile(r"^content/ratgeber/(?P<slug>[^/]+)\.md$")
+EN_RATGEBER_PATH_RE = re.compile(r"^content/en/ratgeber/(?P<slug>[^/]+)\.md$")
 ACCEPTABLE_LIVE_STATUSES = {200, 301, 302, 307, 308, 404, 410}
 
 
@@ -287,10 +288,18 @@ def collect_urls_from_repo_paths(paths: Iterable[str], site_url: str) -> list[st
             urls.append(f"{site_url}/ratgeber/{slug}/")
             continue
 
+        en_ratgeber_match = EN_RATGEBER_PATH_RE.match(path)
+        if en_ratgeber_match:
+            ratgeber_changed = True
+            slug = en_ratgeber_match.group("slug")
+            urls.append(f"{site_url}/en/ratgeber/{slug}/")
+            continue
+
     if tools_changed:
         urls.append(f"{site_url}/tools/")
     if ratgeber_changed:
         urls.append(f"{site_url}/ratgeber/")
+        urls.append(f"{site_url}/en/ratgeber/")
     if tools_changed or ratgeber_changed:
         urls.append(f"{site_url}/")
 

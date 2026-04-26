@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+---
+
+<BaseLayout
+  locale="en"
+  title="Imprint - Utildesk"
+  description="Provider and contact information for Utildesk."
+  robots="noindex,nofollow,noarchive,nosnippet"
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/imprint/" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+  </Fragment>
+
+  <section class="legal">
+    <h1>Imprint</h1>
+    <p>This English page mirrors the German provider information for international readers.</p>
+
+    <h2>Provider</h2>
+    <p>
+      For the legally binding provider details, please use the German
+      <a href="/impressum/">Impressum</a>.
+    </p>
+
+    <h2>Editorial responsibility</h2>
+    <p>
+      Utildesk is an independent tools directory. All trademarks, logos and brand names are the
+      property of their respective owners.
+    </p>
+
+    <h2>Contact</h2>
+    <p>Please use the contact details listed in the German imprint.</p>
+  </section>
+</BaseLayout>

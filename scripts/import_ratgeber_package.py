@@ -11,6 +11,7 @@ from typing import Any
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT_DIR / "content" / "ratgeber"
+EN_CONTENT_DIR = ROOT_DIR / "content" / "en" / "ratgeber"
 IMAGES_DIR = ROOT_DIR / "content" / "images" / "ratgeber"
 SITE_IMAGE_PREFIX = "/images/ratgeber/"
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -78,6 +79,30 @@ def resolve_package_file(package_dir: Path, raw_path: str, fallback_name: str | 
         if candidate.exists():
             return candidate
     return candidates[0] if candidates else package_dir / str(fallback_name or raw_path)
+
+
+def resolve_optional_package_file(package_dir: Path, raw_paths: list[str], fallback_paths: list[str]) -> Path | None:
+    candidates: list[Path] = []
+    for raw in raw_paths:
+        raw = str(raw or "").strip()
+        if not raw:
+            continue
+        candidate = Path(raw)
+        if candidate.is_absolute():
+            candidates.append(candidate)
+        else:
+            candidates.append(package_dir / candidate)
+            candidates.append(package_dir / candidate.name)
+            candidates.append(package_dir / "en" / candidate.name)
+
+    for raw in fallback_paths:
+        candidate = package_dir / raw
+        candidates.append(candidate)
+
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return None
 
 
 def split_frontmatter(article_text: str) -> tuple[str, str]:
@@ -170,6 +195,23 @@ def ensure_approved_package(manifest: dict[str, Any], package_dir: Path) -> None
 def build_package_paths(manifest: dict[str, Any], package_dir: Path) -> dict[str, Path | str]:
     slug = str(manifest.get("slug") or "").strip()
     article_src = resolve_package_file(package_dir, str(manifest.get("article_file") or ""), f"{slug}.md")
+    english_article_src = resolve_optional_package_file(
+        package_dir,
+        [
+            str(manifest.get("english_article_file") or ""),
+            str(manifest.get("article_file_en") or ""),
+            str(manifest.get("en_article_file") or ""),
+            str(manifest.get("englishArticleFile") or ""),
+        ],
+        [
+            f"{slug}.en.md",
+            f"{slug}.en-US.md",
+            f"en/{slug}.md",
+            f"en/{slug}.en.md",
+            "article.en.md",
+            "article_en.md",
+        ],
+    )
     cover_name = Path(str(manifest.get("cover_image") or "")).name
     secondary_name = Path(str(manifest.get("secondary_image") or "")).name
     cover_src = resolve_package_file(package_dir, str(manifest.get("cover_image") or ""), cover_name)
@@ -179,7 +221,9 @@ def build_package_paths(manifest: dict[str, Any], package_dir: Path) -> dict[str
         "article_src": article_src,
         "cover_src": cover_src,
         "secondary_src": secondary_src,
+        "english_article_src": english_article_src or "",
         "article_dest": CONTENT_DIR / article_src.name,
+        "english_article_dest": EN_CONTENT_DIR / f"{slug}.md",
         "cover_dest": IMAGES_DIR / cover_src.name,
         "secondary_dest": IMAGES_DIR / secondary_src.name,
         "cover_url": SITE_IMAGE_PREFIX + cover_src.name,
@@ -340,7 +384,74 @@ def validate_article_markdown(
     return metrics
 
 
-def validate_package(package_dir: Path, replace: bool = False, strict_warnings: bool = False) -> dict[str, Any]:
+def validate_english_article_markdown(
+    article_text: str,
+    paths: dict[str, Path | str],
+    errors: list[dict[str, str]],
+) -> dict[str, Any]:
+    frontmatter, body = split_frontmatter(article_text)
+    metrics: dict[str, Any] = {}
+    slug = str(paths["slug"])
+
+    if not frontmatter:
+        append_issue(errors, "english_frontmatter_missing", "English article markdown must start with YAML frontmatter.")
+        return metrics
+
+    for key in REQUIRED_FRONTMATTER_SCALARS:
+        if not frontmatter_scalar(frontmatter, key):
+            append_issue(errors, "english_frontmatter_field_missing", f"English frontmatter field is missing: {key}")
+
+    fm_slug = frontmatter_scalar(frontmatter, "slug")
+    fm_date = frontmatter_scalar(frontmatter, "date")
+    fm_cover = frontmatter_scalar(frontmatter, "coverImage")
+    fm_secondary = frontmatter_scalar(frontmatter, "secondaryImage")
+    tag_count = frontmatter_list_count(frontmatter, "tags")
+    h2_count = len(re.findall(r"^##\s+", body, flags=re.MULTILINE))
+    word_count = markdown_word_count(body)
+    inline_images = [match.group("url") for match in INLINE_IMAGE_RE.finditer(body)]
+    secondary_url = str(paths["secondary_url"])
+
+    metrics.update(
+        {
+            "word_count": word_count,
+            "h2_count": h2_count,
+            "tag_count": tag_count,
+            "inline_images": inline_images,
+        }
+    )
+
+    if fm_slug != slug:
+        append_issue(errors, "english_frontmatter_slug_mismatch", f"English slug {fm_slug!r} does not match manifest slug {slug!r}.")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", fm_date):
+        append_issue(errors, "english_frontmatter_date_invalid", f"English date must be YYYY-MM-DD, got {fm_date!r}.")
+    if fm_cover != str(paths["cover_url"]):
+        append_issue(errors, "english_cover_image_path_mismatch", f"English coverImage should be {paths['cover_url']}.")
+    if fm_secondary != secondary_url:
+        append_issue(errors, "english_secondary_image_path_mismatch", f"English secondaryImage should be {secondary_url}.")
+    if tag_count < 3:
+        append_issue(errors, "english_too_few_tags", f"Expected at least 3 English tags, got {tag_count}.")
+    if word_count < 500:
+        append_issue(errors, "english_article_too_short", f"English article body has {word_count} words; expected at least 500.")
+    if h2_count < 3:
+        append_issue(errors, "english_too_few_sections", f"English article body has {h2_count} H2 sections; expected at least 3.")
+    if RESIDUAL_CITATION_RE.search(frontmatter + "\n" + body):
+        append_issue(
+            errors,
+            "english_residual_numeric_citations",
+            "English article still contains NotebookLM-style numeric citations like [1], [1-3], or [24, 26-28].",
+        )
+    if secondary_url not in inline_images:
+        append_issue(errors, "english_secondary_image_not_inline", "English body must include the secondary image as an inline figure.")
+
+    return metrics
+
+
+def validate_package(
+    package_dir: Path,
+    replace: bool = False,
+    strict_warnings: bool = False,
+    require_english: bool = False,
+) -> dict[str, Any]:
     package_dir = package_dir.resolve()
     errors: list[dict[str, str]] = []
     warnings: list[dict[str, str]] = []
@@ -354,6 +465,7 @@ def validate_package(package_dir: Path, replace: bool = False, strict_warnings: 
             "errors": errors,
             "warnings": warnings,
             "strict_warnings": strict_warnings,
+            "require_english": require_english,
             "package_dir": str(package_dir),
         }
 
@@ -366,6 +478,7 @@ def validate_package(package_dir: Path, replace: bool = False, strict_warnings: 
             "errors": errors,
             "warnings": warnings,
             "strict_warnings": strict_warnings,
+            "require_english": require_english,
             "package_dir": str(package_dir),
         }
 
@@ -391,10 +504,14 @@ def validate_package(package_dir: Path, replace: bool = False, strict_warnings: 
             append_issue(errors, f"{key}_missing", f"Required package file missing: {path}")
 
     article_dest = paths["article_dest"]
+    english_article_src = paths["english_article_src"]
+    english_article_dest = paths["english_article_dest"]
     cover_dest = paths["cover_dest"]
     secondary_dest = paths["secondary_dest"]
     if isinstance(article_dest, Path) and article_dest.exists() and not replace:
         append_issue(errors, "article_already_exists", f"Ratgeber article already exists: {article_dest}")
+    if isinstance(english_article_dest, Path) and english_article_dest.exists() and not replace:
+        append_issue(errors, "english_article_already_exists", f"English Ratgeber article already exists: {english_article_dest}")
     if isinstance(cover_dest, Path) and cover_dest.exists() and not replace:
         append_issue(errors, "cover_image_already_exists", f"Target cover image already exists: {cover_dest}")
     if isinstance(secondary_dest, Path) and secondary_dest.exists() and not replace:
@@ -420,6 +537,20 @@ def validate_package(package_dir: Path, replace: bool = False, strict_warnings: 
         except Exception as exc:
             append_issue(errors, "article_unreadable", f"Article markdown is unreadable: {exc}")
 
+    english_metrics: dict[str, Any] = {}
+    if isinstance(english_article_src, Path) and english_article_src.exists():
+        try:
+            english_text = english_article_src.read_text(encoding="utf-8-sig")
+            english_metrics = validate_english_article_markdown(english_text, paths, errors)
+        except Exception as exc:
+            append_issue(errors, "english_article_unreadable", f"English article markdown is unreadable: {exc}")
+    elif require_english:
+        append_issue(
+            errors,
+            "english_article_missing",
+            "Autonomous multilingual publish requires an English article sibling in the package.",
+        )
+
     review_payload = validate_review_artifacts(package_dir, errors, warnings)
     ok = not errors and (not strict_warnings or not warnings)
     return {
@@ -427,11 +558,13 @@ def validate_package(package_dir: Path, replace: bool = False, strict_warnings: 
         "errors": errors,
         "warnings": warnings,
         "strict_warnings": strict_warnings,
+        "require_english": require_english,
         "package_dir": str(package_dir),
         "slug": slug,
         "title": title,
         "paths": {key: str(value) for key, value in paths.items()},
         "metrics": metrics,
+        "english_metrics": english_metrics,
         "review": {
             "article_quality": (review_payload.get("review_packet") or {}).get("article_quality") or {},
             "visual_quality": (review_payload.get("review_packet") or {}).get("visual_quality") or {},
@@ -456,21 +589,34 @@ def ensure_preflight_ok(report: dict[str, Any]) -> None:
     raise RuntimeError("Ratgeber package preflight failed:\n" + "\n".join(lines))
 
 
-def import_package(package_dir: Path, dry_run: bool = False, replace: bool = False, strict_warnings: bool = False) -> dict[str, Any]:
+def import_package(
+    package_dir: Path,
+    dry_run: bool = False,
+    replace: bool = False,
+    strict_warnings: bool = False,
+    require_english: bool = False,
+) -> dict[str, Any]:
     manifest_path = package_dir / "package.json"
     if not manifest_path.exists():
         raise FileNotFoundError(f"Package manifest not found: {manifest_path}")
 
     manifest = load_json(manifest_path)
-    preflight = validate_package(package_dir, replace=replace, strict_warnings=strict_warnings)
+    preflight = validate_package(
+        package_dir,
+        replace=replace,
+        strict_warnings=strict_warnings,
+        require_english=require_english,
+    )
     ensure_preflight_ok(preflight)
     paths = build_package_paths(manifest, package_dir)
     slug = str(paths["slug"])
 
     article_src = paths["article_src"]
+    english_article_src = paths["english_article_src"]
     cover_src = paths["cover_src"]
     secondary_src = paths["secondary_src"]
     article_dest = paths["article_dest"]
+    english_article_dest = paths["english_article_dest"]
     cover_dest = paths["cover_dest"]
     secondary_dest = paths["secondary_dest"]
     if not all(isinstance(path, Path) for path in (article_src, cover_src, secondary_src, article_dest, cover_dest, secondary_dest)):
@@ -480,6 +626,8 @@ def import_package(package_dir: Path, dry_run: bool = False, replace: bool = Fal
         "slug": slug,
         "article_src": str(article_src),
         "article_dest": str(article_dest),
+        "english_article_src": str(english_article_src) if isinstance(english_article_src, Path) else "",
+        "english_article_dest": str(english_article_dest) if isinstance(english_article_dest, Path) else "",
         "cover_dest": str(cover_dest),
         "secondary_dest": str(secondary_dest),
         "dry_run": dry_run,
@@ -490,9 +638,13 @@ def import_package(package_dir: Path, dry_run: bool = False, replace: bool = Fal
         return result
 
     CONTENT_DIR.mkdir(parents=True, exist_ok=True)
+    if isinstance(english_article_src, Path) and english_article_src.exists():
+        EN_CONTENT_DIR.mkdir(parents=True, exist_ok=True)
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
     shutil.copy2(article_src, article_dest)
+    if isinstance(english_article_src, Path) and english_article_src.exists() and isinstance(english_article_dest, Path):
+        shutil.copy2(english_article_src, english_article_dest)
     shutil.copy2(cover_src, cover_dest)
     shutil.copy2(secondary_src, secondary_dest)
     return result
@@ -509,10 +661,20 @@ def main() -> int:
         action="store_true",
         help="Treat warnings as blocking. Use this for autonomous publication.",
     )
+    parser.add_argument(
+        "--require-english",
+        action="store_true",
+        help="Require a content/en/ratgeber sibling article in the package. Use this for multilingual autonomous publication.",
+    )
     args = parser.parse_args()
 
     if args.preflight_only:
-        result = validate_package(args.package_dir, replace=args.replace, strict_warnings=args.strict_warnings)
+        result = validate_package(
+            args.package_dir,
+            replace=args.replace,
+            strict_warnings=args.strict_warnings,
+            require_english=args.require_english,
+        )
         print(json.dumps({"ok": bool(result.get("ok")), "preflight": result}, ensure_ascii=False, indent=2))
         return 0 if result.get("ok") else 2
 
@@ -521,6 +683,7 @@ def main() -> int:
         dry_run=args.dry_run,
         replace=args.replace,
         strict_warnings=args.strict_warnings,
+        require_english=args.require_english,
     )
     print(json.dumps({"ok": True, **result}, ensure_ascii=False, indent=2))
     return 0

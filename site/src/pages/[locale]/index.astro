@@ -1,0 +1,190 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CATEGORIES } from "../../lib/categories";
+import { categoryTitleEn, getEnglishToolMeta } from "../../lib/englishContent";
+import { listRatgeberEntries } from "../../lib/ratgeber";
+import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
+import { tagHref } from "../../lib/tagRoutes";
+import {
+  buildCollectionPageSchema,
+  buildOrganizationSchema,
+  buildWebSiteSchema,
+  SITE_DESCRIPTION_EN,
+  SITE_LANGUAGE_EN,
+  SITE_URL,
+} from "../../lib/siteMeta";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+
+const entries = await listActiveToolEntries();
+const tools = entries.map((entry) => ({
+  slug: entry.slug,
+  popularity: entry.data.popularity ? Number(entry.data.popularity) : 0,
+  ...getEnglishToolMeta(entry),
+}));
+const enabledTools = tools.sort((a, b) => a.title.localeCompare(b.title, "en"));
+const pinnedSlugs = ["wispr-flow", "chatgpt", "claude", "midjourney", "perplexity", "zapier"];
+const bySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
+const latestTools = [
+  ...pinnedSlugs.map((slug) => bySlug.get(slug)).filter(Boolean),
+  ...enabledTools.filter((tool) => !pinnedSlugs.includes(tool.slug)).sort((a, b) => b.popularity - a.popularity),
+].slice(0, 12);
+const allRatgeber = await listRatgeberEntries("en");
+const recentRatgeber = allRatgeber.slice(0, 3);
+const tagFrequency = new Map<string, number>();
+enabledTools.forEach((tool) => {
+  tool.tags.forEach((tag) => tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1));
+});
+const topTags = Array.from(tagFrequency.entries())
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "en"))
+  .slice(0, 18);
+
+const featuredToolsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Featured AI Tools",
+  numberOfItems: latestTools.length,
+  itemListElement: latestTools.map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/en/tools/${tool.slug}/`,
+  })),
+};
+const homepageSchemas = [
+  buildOrganizationSchema({ description: SITE_DESCRIPTION_EN, inLanguage: SITE_LANGUAGE_EN }),
+  buildWebSiteSchema({ description: SITE_DESCRIPTION_EN, inLanguage: SITE_LANGUAGE_EN }),
+  buildCollectionPageSchema({
+    name: "Utildesk English",
+    description: "Curated AI tools, workflow context and practical guides in English.",
+    url: `${SITE_URL}/en/`,
+    about: ["AI tools", "Automation", "Productivity", "Guides"],
+    mainEntity: featuredToolsSchema,
+    inLanguage: SITE_LANGUAGE_EN,
+  }),
+  featuredToolsSchema,
+];
+---
+
+<BaseLayout
+  locale="en"
+  title="Utildesk - AI Tools, Automation and Practical Guides"
+  description="Curated AI tools, workflow context and practical guides in English."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/" />
+    {homepageSchemas.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
+  </Fragment>
+
+  <section class="terminal-hero">
+    <div class="terminal-hero-grid">
+      <div>
+        <div class="terminal-kicker">[ manifest_en ]</div>
+        <h1 class="terminal-title">
+          A curated AI directory,<br />
+          <span class="terminal-accent">not another sponsored maze.</span>
+        </h1>
+        <p class="terminal-copy">
+          <span class="terminal-comment"># </span>
+          Explore tools, categories and editorial guides in English. The German catalogue remains the source of truth;
+          this layer makes Utildesk useful for international readers and AI agents.
+        </p>
+        <div class="terminal-stats" aria-label="Utildesk English statistics">
+          <div class="terminal-stat"><strong>{enabledTools.length}</strong><span>tools</span></div>
+          <div class="terminal-stat"><strong>{CATEGORIES.length}</strong><span>categories</span></div>
+          <div class="terminal-stat"><strong>{allRatgeber.length}</strong><span>guides</span></div>
+          <div class="terminal-stat"><strong>0</strong><span>ads</span></div>
+        </div>
+      </div>
+
+      <aside class="terminal-feed" aria-label="Latest English entries">
+        <div class="terminal-kicker">[ live_feed ]</div>
+        <ul class="terminal-feed-list">
+          {recentRatgeber.map((article, index) => (
+            <li class="terminal-feed-row">
+              <span class="terminal-feed-time">guide_{String(index + 1).padStart(2, "0")}</span>
+              <a class="terminal-feed-msg" href={`/en/ratgeber/${article.slug}/`}>{article.data.title}</a>
+            </li>
+          ))}
+          {latestTools.slice(0, 2).map((tool, index) => (
+            <li class="terminal-feed-row">
+              <span class="terminal-feed-time">tool_{String(index + 1).padStart(2, "0")}</span>
+              <a class="terminal-feed-msg" href={`/en/tools/${tool.slug}/`}>{tool.title}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <nav class="terminal-catbar" aria-label="Categories">
+    <span class="terminal-catbar-label">categories:</span>
+    <div class="terminal-catbar-list">
+      <a class="terminal-pill is-active" href="/en/tools/"><span>*</span><span>all</span><span>{enabledTools.length}</span></a>
+      {CATEGORIES.map((category) => (
+        <a class="terminal-pill" href={`/en/category/${category.slug}/`}>
+          <span>#</span>
+          <span>{categoryTitleEn(category.slug, category.title)}</span>
+        </a>
+      ))}
+    </div>
+  </nav>
+
+  <section class="terminal-main" aria-label="English Utildesk directory">
+    <section class="terminal-results" aria-label="Selected tools">
+      <div class="terminal-results-head">
+        <h2 class="terminal-results-title">results.selected</h2>
+        <span class="terminal-results-meta">{latestTools.length} of {enabledTools.length} tools</span>
+        <span class="terminal-results-meta">sort: curated</span>
+      </div>
+      <div>
+        {latestTools.map((tool, index) => (
+          <article class="terminal-row">
+            <span class="terminal-index">{String(index + 1).padStart(2, "0")}</span>
+            <span class="terminal-glyph" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
+            <div>
+              <h3 class="terminal-row-title"><a href={`/en/tools/${tool.slug}/`}>{tool.title}</a></h3>
+              <p class="terminal-row-desc">{tool.description}</p>
+              <div class="terminal-row-tags">
+                {tool.tags.slice(0, 3).map((tag) => <a href={tagHref(tag, "en")}>#{tag}</a>)}
+              </div>
+            </div>
+            <span class="terminal-row-category">{tool.category || "AI"}</span>
+            <span class="terminal-row-price">{tool.priceModel || "n/a"}</span>
+            <span class="terminal-row-action"><a class="terminal-open" href={`/en/tools/${tool.slug}/`}>-&gt;</a></span>
+          </article>
+        ))}
+      </div>
+      <div class="terminal-results-foot">
+        <span>next: <a href="/en/tools/">open full directory</a></span>
+        <span>/</span>
+        <span>machine: <a href="/en/api/tools.json">/en/api/tools.json</a></span>
+      </div>
+    </section>
+
+    <aside class="terminal-detail" aria-label="Guides and tags">
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">guides.latest</h2>
+        {recentRatgeber.map((article) => (
+          <a class="terminal-rail-link" href={`/en/ratgeber/${article.slug}/`}>
+            <span>{article.data.title}</span>
+            <span>guide</span>
+          </a>
+        ))}
+      </div>
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">top.tags</h2>
+        {topTags.slice(0, 8).map(([tag, count]) => (
+          <a class="terminal-rail-link" href={tagHref(tag, "en")}>
+            <span>{tag}</span>
+            <span>{count}</span>
+          </a>
+        ))}
+      </div>
+    </aside>
+  </section>
+</BaseLayout>

@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { listRatgeberEntries } from "../../../lib/ratgeber";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_LANGUAGE_EN,
+  SITE_URL,
+} from "../../../lib/siteMeta";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+
+const articles = await listRatgeberEntries("en");
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Utildesk Guides",
+  url: "https://tools.utildesk.de/en/ratgeber/",
+  numberOfItems: articles.length,
+  itemListElement: articles.map((article, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: article.data.title,
+    url: `https://tools.utildesk.de/en/ratgeber/${article.slug}/`,
+  })),
+};
+const collectionSchema = buildCollectionPageSchema({
+  name: "AI Guides",
+  description: "Practical AI guides, tool comparisons and workflow briefings.",
+  url: `${SITE_URL}/en/ratgeber/`,
+  about: ["AI guides", "AI workflows", "Tool comparisons"],
+  mainEntity: itemListSchema,
+  inLanguage: SITE_LANGUAGE_EN,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Guides", url: `${SITE_URL}/en/ratgeber/` },
+]);
+---
+
+<BaseLayout
+  locale="en"
+  title="AI Guides - Utildesk"
+  description="Practical AI guides, tool comparisons and workflow briefings."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/ratgeber/" />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="ratgeber-hero">
+    <p class="rg-eyebrow">Guides</p>
+    <h1>Comparisons and workflow briefings<br/>for practical AI work</h1>
+    <p class="rg-sub">Editorial context for teams that want to use AI productively, not just experiment with isolated prompts.</p>
+  </section>
+
+  <section class="rg-list">
+    {articles.map((article) => {
+      const published = article.data.date
+        ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(article.data.date))
+        : "";
+      return (
+        <a href={`/en/ratgeber/${article.slug}/`} class="rg-card">
+          {article.data.coverImage ? (
+            <div class="rg-card-figure">
+              <div class="rg-media-stage">
+                <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+              </div>
+            </div>
+          ) : null}
+          <div class="rg-card-body">
+            <div class="rg-card-meta-top">
+              {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
+              {article.data.category ? <span class="rg-chip">{article.data.category}</span> : null}
+            </div>
+            <h2 class="rg-card-title">{article.data.title}</h2>
+            {article.data.excerpt ? <p class="rg-card-excerpt">{article.data.excerpt}</p> : null}
+            <div class="rg-card-meta-bottom">
+              {published ? <span class="rg-meta">{published}</span> : null}
+              {article.data.readTime ? <span class="rg-meta">{article.data.readTime} min read</span> : null}
+              <span class="rg-arrow">Read guide</span>
+            </div>
+          </div>
+        </a>
+      );
+    })}
+  </section>
+</BaseLayout>
+
+<style>
+  .ratgeber-hero { padding: 44px 0 36px; max-width: 760px; }
+  .rg-eyebrow { margin: 0 0 16px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary); }
+  .ratgeber-hero h1 { margin: 0; font-size: clamp(1.95rem, 3.6vw, 3rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.04em; color: var(--on-surface); }
+  .rg-sub { margin: 16px 0 0; font-size: 1.02rem; line-height: 1.78; color: var(--secondary); max-width: 62ch; }
+  .rg-list { display: flex; flex-direction: column; padding-bottom: 72px; border-top: 1px solid rgba(23, 98, 89, 0.12); }
+  .rg-card { display: grid; grid-template-columns: minmax(280px, 34%) minmax(0, 1fr); gap: 32px; align-items: center; padding: 30px 0; border-bottom: 1px solid rgba(23, 98, 89, 0.12); text-decoration: none; color: inherit; transition: transform var(--transition); }
+  .rg-card:hover { transform: translateY(-2px); }
+  .rg-media-stage { display: flex; align-items: center; justify-content: center; min-height: 248px; padding: 18px; border-radius: 32px; background: linear-gradient(145deg, rgba(255,250,243,.46), rgba(23,98,89,.03)); border: 1px solid rgba(23, 98, 89, 0.12); }
+  .rg-media-stage img { width: 100%; height: 100%; max-height: 292px; object-fit: contain; display: block; }
+  .rg-card-body { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .rg-card-meta-top, .rg-card-meta-bottom { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .rg-chip { display: inline-flex; padding: 4px 11px; border-radius: var(--radius-full); font-size: 0.74rem; font-weight: 700; background: rgba(23,98,89,.05); color: var(--on-surface-variant); border: 1px solid rgba(23,98,89,.10); }
+  .rg-chip--accent { background: rgba(23,98,89,.10); color: var(--primary); }
+  .rg-card-title { margin: 0; font-size: clamp(1.4rem, 2vw, 1.95rem); font-weight: 800; line-height: 1.14; letter-spacing: -0.03em; color: var(--on-surface); max-width: 22ch; }
+  .rg-card-excerpt { margin: 0; font-size: 1rem; line-height: 1.74; color: var(--secondary); max-width: 62ch; }
+  .rg-meta { font-size: 0.82rem; color: var(--secondary); opacity: 0.75; }
+  .rg-arrow { margin-left: auto; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary); }
+  @media (max-width: 860px) {
+    .rg-card { grid-template-columns: 1fr; gap: 18px; }
+    .rg-card-title { max-width: none; }
+    .rg-arrow { margin-left: 0; }
+  }
+</style>

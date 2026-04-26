@@ -1,0 +1,140 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { CATEGORIES } from "../../../lib/categories";
+import { categoryDescriptionEn, categoryTitleEn } from "../../../lib/englishContent";
+import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_LANGUAGE_EN,
+  SITE_URL,
+} from "../../../lib/siteMeta";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+
+const entries = await listActiveToolEntries();
+const tools = entries.map((entry) => ({
+  tags: Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [],
+}));
+const categories = CATEGORIES.map((category) => ({
+  ...category,
+  titleEn: categoryTitleEn(category.slug, category.title),
+  descriptionEn: categoryDescriptionEn(category.slug, category.description),
+  count: tools.filter((tool) => tool.tags.some((tag) => category.matchTags.includes(tag))).length,
+}));
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Utildesk AI Tool Categories",
+  numberOfItems: categories.length,
+  itemListElement: categories.map((category, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: category.titleEn,
+    url: `${SITE_URL}/en/category/${category.slug}/`,
+  })),
+};
+const collectionSchema = buildCollectionPageSchema({
+  name: "AI Tool Categories",
+  description: "Explore AI tools by category.",
+  url: `${SITE_URL}/en/category/`,
+  about: ["AI tools", "Categories", "Productivity"],
+  mainEntity: itemListSchema,
+  inLanguage: SITE_LANGUAGE_EN,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Categories", url: `${SITE_URL}/en/category/` },
+]);
+---
+
+<BaseLayout locale="en" title="AI Tool Categories - Utildesk" description="Explore AI tools by category.">
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/category/" />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="category-index">
+    <div class="category-shell">
+      <h1 class="page-title">AI Tool Categories</h1>
+      <p class="page-intro">Find tools by practical category. Each category groups entries by workflow fit, not by vendor marketing language.</p>
+      <div class="category-grid">
+        {categories.map((category) => (
+          <a href={`/en/category/${category.slug}/`} class="card tool-card category-card">
+            <div class="category-card-top">
+              <span class="badge badge-category category-chip">Category</span>
+              <span class="category-count">{category.count} {category.count === 1 ? "tool" : "tools"}</span>
+            </div>
+            <div class="category-card-body">
+              <h2 class="category-title">{category.titleEn}</h2>
+              <p class="category-description">{category.descriptionEn}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .category-index { padding: 32px 0 64px; }
+  .category-shell {
+    background: var(--surface-container-low);
+    border: 1px solid rgba(190, 201, 197, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow-card);
+  }
+  .page-title {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 14px;
+    color: var(--on-surface);
+  }
+  .page-intro {
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin: 0 0 32px;
+    max-width: 680px;
+  }
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-5);
+  }
+  .category-card {
+    min-height: 200px;
+    gap: var(--space-4);
+    justify-content: space-between;
+  }
+  .category-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+  .category-count {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 11px;
+    border-radius: var(--radius-full);
+    font-size: 0.77rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(23, 98, 89, 0.08);
+    border: 1px solid rgba(23, 98, 89, 0.14);
+  }
+  .category-title { margin: 0; font-size: 1.2rem; color: var(--on-surface); }
+  .category-description { margin: 10px 0 0; color: var(--text-muted); line-height: 1.6; }
+  @media (max-width: 720px) {
+    .category-shell { padding: 20px; }
+    .category-grid { grid-template-columns: 1fr; }
+  }
+</style>

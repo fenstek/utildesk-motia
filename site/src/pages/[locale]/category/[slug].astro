@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { CATEGORIES } from "../../../lib/categories";
+import { categoryDescriptionEn, categoryTitleEn, getEnglishToolMeta } from "../../../lib/englishContent";
+import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import { tagHref } from "../../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_LANGUAGE_EN,
+  SITE_URL,
+} from "../../../lib/siteMeta";
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((category) => ({ params: { locale: "en", slug: category.slug }, props: { category } }));
+}
+
+const { category } = Astro.props;
+const entries = await listActiveToolEntries();
+const tools = entries
+  .filter((entry) => {
+    const tags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [];
+    return tags.some((tag) => category.matchTags.includes(tag));
+  })
+  .map((entry) => ({ slug: entry.slug, ...getEnglishToolMeta(entry) }))
+  .sort((a, b) => a.title.localeCompare(b.title, "en"));
+const title = categoryTitleEn(category.slug, category.title);
+const description = categoryDescriptionEn(category.slug, category.description);
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `${title} tools`,
+  numberOfItems: tools.length,
+  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/en/tools/${tool.slug}/`,
+  })),
+};
+const collectionSchema = buildCollectionPageSchema({
+  name: `${title} AI tools`,
+  description,
+  url: `${SITE_URL}/en/category/${category.slug}/`,
+  about: [title, "AI tools"],
+  mainEntity: itemListSchema,
+  inLanguage: SITE_LANGUAGE_EN,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Categories", url: `${SITE_URL}/en/category/` },
+  { name: title, url: `${SITE_URL}/en/category/${category.slug}/` },
+]);
+---
+
+<BaseLayout locale="en" title={`${title} AI Tools - Utildesk`} description={description}>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de/en/category/${category.slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <nav class="breadcrumb"><a href="/en/category/">← All categories</a></nav>
+  <section class="hero" style="padding: 42px 0 32px;">
+    <h1 class="hero-title">{title}</h1>
+    <p class="hero-subtitle">{description}</p>
+  </section>
+
+  <div class="tools-grid">
+    {tools.map((tool) => (
+      <a href={`/en/tools/${tool.slug}/`} class="card tool-card">
+        <div class="tool-header">
+          <div class="tool-image"><span class="tool-card-logo" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span></div>
+          <div class="tool-info">
+            <h3 class="tool-title">{tool.title}</h3>
+            <p class="tools-desc">{tool.description}</p>
+          </div>
+        </div>
+        <div class="tool-badges">
+          {tool.tags.slice(0, 3).map((tag) => <span class="badge badge-tag">{tag}</span>)}
+        </div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

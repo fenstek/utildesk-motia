@@ -5,4 +5,7 @@ export const slugifyTag = (tag: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-export const tagHref = (tag: string) => `/tools/tag/${slugifyTag(tag)}/`;
+export const tagHref = (tag: string, locale: "de" | "en" = "de") => {
+  const path = `/tools/tag/${slugifyTag(tag)}/`;
+  return locale === "en" ? `/en${path}` : path;
+};

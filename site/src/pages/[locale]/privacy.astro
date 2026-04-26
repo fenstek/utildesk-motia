@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+---
+
+<BaseLayout
+  locale="en"
+  title="Privacy Policy - Utildesk"
+  description="Privacy information for Utildesk, hosting, analytics and external resources."
+  robots="noindex,nofollow,noarchive,nosnippet"
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/en/privacy/" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+  </Fragment>
+
+  <section class="legal">
+    <h1>Privacy Policy</h1>
+    <p>
+      This English version summarizes the German privacy policy for international readers. The German
+      version remains the primary legal text.
+    </p>
+
+    <h2>1. Controller</h2>
+    <p>The controller is the operator named in the <a href="/en/imprint/">imprint</a>.</p>
+
+    <h2>2. Hosting and delivery</h2>
+    <p>
+      Utildesk is delivered through Cloudflare Pages and Cloudflare Pages Functions. Cloudflare may
+      process technically necessary access data such as IP address, requested URL, user agent, HTTP
+      status, timestamp and security events to provide, protect and accelerate the website.
+    </p>
+
+    <h2>3. Logs, cookies and local storage</h2>
+    <p>
+      The public site does not use marketing cookies. The theme preference is stored locally in your
+      browser under <code>utildesk-theme</code>. The protected Ratgeber review area may set a strictly
+      necessary session cookie named <code>utildesk_ratgeber_review</code>.
+    </p>
+
+    <h2>4. Analytics</h2>
+    <p>
+      Utildesk uses privacy-friendly analytics with Umami on <code>stats.utildesk.de</code>. The
+      integration is used to understand page usage and improve the site. It does not rely on advertising
+      profiles across websites.
+    </p>
+
+    <h2>5. External resources and affiliate links</h2>
+    <p>
+      The site may load Google Fonts, favicons, logos or other technical resources from third-party
+      providers. Tool entries can also contain affiliate or referral links. If you follow such a link,
+      the external provider processes the request under its own privacy policy.
+    </p>
+
+    <h2>6. Machine-readable endpoints</h2>
+    <p>
+      Utildesk provides feeds, JSON APIs, Markdown mirrors and <code>llms.txt</code> manifests. These
+      endpoints create the same technical access data as regular page views. Internal endpoints can be
+      delivered with <code>X-Robots-Tag: noindex</code>.
+    </p>
+
+    <h2>7. Your rights</h2>
+    <p>
+      Depending on the applicable law, you may request access, correction, deletion, restriction of
+      processing, data portability and object to processing based on legitimate interests.
+    </p>
+
+    <h2>8. Updates</h2>
+    <p>This policy may be updated when the website, infrastructure or legal requirements change.</p>
+  </section>
+  <p>Last updated: 26 April 2026</p>
+</BaseLayout>

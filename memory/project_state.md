@@ -218,6 +218,21 @@
   - visual quality: cover `orchestration_v2`, workflow `howto_workflow`, all visual gates passing.
 - `opcl` rewrite runner was hardened for autonomy:
   - backup before entity grounding prompt: `/opt/openclaw/workspace/agent-newsman/scripts/article_rewrite_runner.py.bak-20260424-entity-rewrite`;
+
+## 2026-04-26 English i18n Foundation
+
+- The site is now German-first with an English public layer under `/en/`.
+- Localized routes cover homepage, tools index/detail, categories, tags, Ratgeber index/detail, privacy, imprint, feeds, JSON APIs, Markdown mirrors, and `llms` files.
+- English Ratgeber articles live in `content/en/ratgeber/*.md`.
+- Tool pages use an English generated catalogue layer from `site/src/lib/englishContent.ts`.
+- SEO contract:
+  - every localized HTML page should have a self-canonical URL;
+  - German and English siblings should be connected through `hreflang`;
+  - sitemap generation reads built pages and includes English public URLs.
+- Ratgeber publish contract:
+  - `scripts/import_ratgeber_package.py` can import an English sibling article from package metadata or conventional package filenames;
+  - `scripts/ratgeber_cloudflare_publish_consumer.py` calls the importer with `--require-english`;
+  - autonomous publication should not create German-only Ratgeber drift after this rollout.
   - backup before weak-intro prompt: `/opt/openclaw/workspace/agent-newsman/scripts/article_rewrite_runner.py.bak-20260424-weak-intro`;
   - rewrite prompts now preserve article length/closing sections and add issue-specific rules for `missing_concrete_entities` and `weak_intro`.
 
