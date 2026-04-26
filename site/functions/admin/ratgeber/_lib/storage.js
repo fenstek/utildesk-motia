@@ -84,6 +84,17 @@ export async function writeIndex(env, index) {
   );
 }
 
+export function isPublishedCandidate(candidate) {
+  const status = String(candidate?.status || "").toLowerCase();
+  const publishStatus = String(candidate?.publish?.status || "").toLowerCase();
+  return status === "published" || publishStatus === "published";
+}
+
+export function isVisibleReviewCandidate(candidate) {
+  const jobId = String(candidate?.jobId || "");
+  return Boolean(jobId) && !jobId.startsWith("test-") && !isPublishedCandidate(candidate);
+}
+
 export async function readCandidate(env, rawJobId) {
   const kv = requireKv(env);
   const jobId = normalizeJobId(rawJobId);
@@ -104,6 +115,7 @@ export async function writeCandidate(env, candidate) {
 
 export async function updateIndexCandidate(env, candidate) {
   const index = await readIndex(env);
+  const withoutCurrent = index.candidates.filter((item) => item && item.jobId !== candidate.jobId);
   const summary = {
     jobId: candidate.jobId,
     title: candidate.title || candidate.jobId,
@@ -117,10 +129,7 @@ export async function updateIndexCandidate(env, candidate) {
     updatedAt: candidate.updatedAt || new Date().toISOString(),
     publish: candidate.publish || null,
   };
-  index.candidates = [
-    summary,
-    ...index.candidates.filter((item) => item && item.jobId !== candidate.jobId),
-  ];
+  index.candidates = isPublishedCandidate(summary) ? withoutCurrent : [summary, ...withoutCurrent];
   await writeIndex(env, index);
 }
 
