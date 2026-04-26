@@ -3,31 +3,49 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const SITE_ROOT = fileURLToPath(new URL("../../", import.meta.url));
-const CONTENT_POINTER_PATH = join(SITE_ROOT, "content");
 
-function resolveContentRoot() {
+function resolveContentPointer(baseDir) {
+  const pointerPath = join(baseDir, "content");
   try {
-    const stat = lstatSync(CONTENT_POINTER_PATH);
+    const stat = lstatSync(pointerPath);
 
     if (stat.isSymbolicLink()) {
-      return realpathSync(CONTENT_POINTER_PATH);
+      return realpathSync(pointerPath);
     }
 
     if (stat.isDirectory()) {
-      return CONTENT_POINTER_PATH;
+      return pointerPath;
     }
 
     if (stat.isFile()) {
-      const pointer = readFileSync(CONTENT_POINTER_PATH, "utf8").trim();
+      const pointer = readFileSync(pointerPath, "utf8").trim();
       if (pointer) {
-        return resolve(SITE_ROOT, pointer);
+        return resolve(baseDir, pointer);
       }
     }
   } catch {
-    // fall through to default
+    return null;
   }
 
-  return resolve(SITE_ROOT, "../content");
+  return null;
+}
+
+function resolveContentRoot() {
+  const cwd = process.cwd();
+  const candidates = [
+    cwd,
+    resolve(cwd, "site"),
+    SITE_ROOT,
+  ];
+
+  for (const candidate of candidates) {
+    const resolved = resolveContentPointer(candidate);
+    if (resolved) {
+      return resolved;
+    }
+  }
+
+  return resolve(cwd, "content");
 }
 
 export const CONTENT_ROOT = resolveContentRoot();
