@@ -1,10 +1,11 @@
 ---
-slug: "tensorflow-keras"
-title: "TensorFlow / Keras"
-category: "AI"
-price_model: "Open Source"
+slug: tensorflow-keras
+title: TensorFlow / Keras
+category: AI
+price_model: Open Source
 tags: [machine-learning,developer-tools,open-source,education]
 official_url: "https://www.tensorflow.org/?hl=pt-br"
+popularity: 0
 ---
 
 # TensorFlow / Keras

@@ -5,7 +5,7 @@ category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [developer,coding,automation]
 official_url: "https://www.sourcery.ai/"
-popularity: 18
+popularity: 0
 ---
 
 # Sourcery

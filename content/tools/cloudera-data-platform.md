@@ -1,10 +1,11 @@
 ---
-slug: "cloudera-data-platform"
-title: "Cloudera Data Platform"
-category: "AI"
-price_model: "Abonnement"
+slug: cloudera-data-platform
+title: Cloudera Data Platform
+category: AI
+price_model: Abonnement
 tags: [data, analytics, cloud, enterprise]
 official_url: "https://www.cloudera.com/products/cloudera-data-platform.html"
+popularity: 0
 ---
 
 # Cloudera Data Platform

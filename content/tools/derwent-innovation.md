@@ -1,10 +1,11 @@
 ---
-slug: "derwent-innovation"
-title: "Derwent Innovation"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: derwent-innovation
+title: Derwent Innovation
+category: AI
+price_model: Individuelles Angebot
 tags: [research,patents,analytics,enterprise]
 official_url: "https://clarivate.com/intellectual-property/derwent/patent-search/"
+popularity: 0
 ---
 
 # Derwent Innovation

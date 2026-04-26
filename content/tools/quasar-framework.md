@@ -1,10 +1,11 @@
 ---
-slug: "quasar-framework"
-title: "Quasar Framework"
-category: "AI"
-price_model: "Open Source"
+slug: quasar-framework
+title: Quasar Framework
+category: AI
+price_model: Open Source
 tags: [developer-tools, web, mobile, open-source]
 official_url: "https://quasar.dev/"
+popularity: 0
 ---
 
 # Quasar Framework

@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://prisma-ai.com/"
-popularity: 28
+popularity: 24
 ---
 
 # Prisma

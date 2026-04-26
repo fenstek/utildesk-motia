@@ -1,10 +1,11 @@
 ---
-slug: "jitsi-meet"
-title: "Jitsi Meet"
-category: "AI"
-price_model: "Open Source, Kostenlos"
+slug: jitsi-meet
+title: Jitsi Meet
+category: AI
+price_model: Open Source, Kostenlos
 tags: [communication, video, meetings, open-source]
 official_url: "https://jitsi.org/jitsi-meet/"
+popularity: 0
 ---
 
 # Jitsi Meet

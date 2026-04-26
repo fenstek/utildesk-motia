@@ -1,10 +1,11 @@
 ---
-slug: "apache-nifi"
-title: "Apache NiFi"
-category: "AI"
-price_model: "Open Source"
+slug: apache-nifi
+title: Apache NiFi
+category: AI
+price_model: Open Source
 tags: [data, automation, developer-tools, open-source]
 official_url: "https://nifi.apache.org/"
+popularity: 0
 ---
 
 # Apache NiFi

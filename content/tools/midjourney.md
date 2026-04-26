@@ -2,15 +2,12 @@
 slug: midjourney
 title: Midjourney
 category: Design
-price_model: "Freemium"
-tags:
-  - ai
-  - design
-  - image
-official_url: 'https://www.midjourney.com/'
-affiliate_url: 'https://www.midjourney.com/'
-created_at: "2026-02-02"
-popularity: 0
+price_model: Freemium
+tags: 
+official_url: "https://www.midjourney.com/"
+affiliate_url: "https://www.midjourney.com/"
+created_at: 2026-02-02
+popularity: 37
 ---
 
 

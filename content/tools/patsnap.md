@@ -1,10 +1,11 @@
 ---
-slug: "patsnap"
-title: "PatSnap"
-category: "AI"
-price_model: "Individuelles Angebot"
+slug: patsnap
+title: PatSnap
+category: AI
+price_model: Individuelles Angebot
 tags: [research, patents, analytics, innovation]
 official_url: "https://www.patsnap.com/"
+popularity: 0
 ---
 
 # PatSnap

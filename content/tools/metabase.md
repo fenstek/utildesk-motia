@@ -1,10 +1,11 @@
 ---
-slug: "metabase"
-title: "Metabase"
-category: "AI"
-price_model: "Open Source"
+slug: metabase
+title: Metabase
+category: AI
+price_model: Open Source
 tags: [analytics, data, dashboards, open-source]
 official_url: "https://www.metabase.com/"
+popularity: 0
 ---
 
 # Metabase

@@ -1,10 +1,11 @@
 ---
-slug: "cisco-webex"
-title: "Cisco Webex"
-category: "AI"
-price_model: "Abonnement"
+slug: cisco-webex
+title: Cisco Webex
+category: AI
+price_model: Abonnement
 tags: [communication,video,meetings,collaboration]
 official_url: "https://www.webex.com/"
+popularity: 0
 ---
 
 # Cisco Webex

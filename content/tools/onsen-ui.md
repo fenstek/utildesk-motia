@@ -1,10 +1,11 @@
 ---
-slug: "onsen-ui"
-title: "Onsen UI"
-category: "AI"
-price_model: "Open Source"
+slug: onsen-ui
+title: Onsen UI
+category: AI
+price_model: Open Source
 tags: [developer-tools,mobile,ui,open-source]
 official_url: "https://onsen.io/"
+popularity: 0
 ---
 
 # Onsen UI

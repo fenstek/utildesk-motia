@@ -1,10 +1,11 @@
 ---
-slug: "apache-hadoop"
-title: "Apache Hadoop (selbst gehostet)"
-category: "AI"
-price_model: "Open Source"
+slug: apache-hadoop
+title: Apache Hadoop (selbst gehostet)
+category: AI
+price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://hadoop.apache.org/"
+popularity: 0
 ---
 
 # Apache Hadoop (selbst gehostet)

@@ -1,10 +1,11 @@
 ---
-slug: "noise-blocker"
-title: "Noise Blocker"
-category: "AI"
-price_model: "Je nach Plan"
+slug: noise-blocker
+title: Noise Blocker
+category: AI
+price_model: Je nach Plan
 tags: [audio, noise-cancellation, communication, productivity]
 official_url: "https://closedlooplabs.com/"
+popularity: 0
 ---
 
 # Noise Blocker

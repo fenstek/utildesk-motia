@@ -1,10 +1,11 @@
 ---
-slug: "nintex-rpa"
-title: "Nintex RPA"
-category: "AI"
-price_model: "Abonnement"
+slug: nintex-rpa
+title: Nintex RPA
+category: AI
+price_model: Abonnement
 tags: [automation, rpa, workflow, enterprise]
 official_url: "https://www.nintex.com/platforms/cloud-automation/rpa/"
+popularity: 0
 ---
 
 # Nintex RPA

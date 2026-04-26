@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Freemium
 tags: [writing, productivity]
 official_url: "https://www.slickwrite.com/"
-popularity: 22
+popularity: 17
 ---
 
 # Slick Write

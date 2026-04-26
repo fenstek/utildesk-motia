@@ -1,10 +1,11 @@
 ---
-slug: "vllo"
-title: "VLLO"
-category: "AI"
-price_model: "Freemium"
+slug: vllo
+title: VLLO
+category: AI
+price_model: Freemium
 tags: [video, editing, mobile, content]
 official_url: "https://www.vllo.io/"
+popularity: 0
 ---
 
 # VLLO

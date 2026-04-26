@@ -1,10 +1,11 @@
 ---
-slug: "espacenet"
-title: "Espacenet"
-category: "AI"
-price_model: "Kostenlos"
+slug: espacenet
+title: Espacenet
+category: AI
+price_model: Kostenlos
 tags: [research,patents,search,innovation]
 official_url: "https://worldwide.espacenet.com/"
+popularity: 0
 ---
 
 # Espacenet

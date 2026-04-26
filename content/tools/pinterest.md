@@ -1,10 +1,11 @@
 ---
-slug: "pinterest"
-title: "Pinterest"
-category: "AI"
-price_model: "Freemium"
+slug: pinterest
+title: Pinterest
+category: AI
+price_model: Freemium
 tags: [inspiration, design, content, marketing]
 official_url: "https://www.pinterest.com/"
+popularity: 0
 ---
 
 # Pinterest

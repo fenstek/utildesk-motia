@@ -1,10 +1,11 @@
 ---
-slug: "milanote"
-title: "Milanote"
-category: "AI"
-price_model: "Freemium"
+slug: milanote
+title: Milanote
+category: AI
+price_model: Freemium
 tags: [productivity, collaboration, planning, design]
 official_url: "https://milanote.com/"
+popularity: 0
 ---
 
 # Milanote

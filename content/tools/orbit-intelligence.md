@@ -1,10 +1,11 @@
 ---
-slug: "orbit-intelligence"
-title: "Orbit Intelligence"
-category: "AI"
-price_model: "Abonnement"
+slug: orbit-intelligence
+title: Orbit Intelligence
+category: AI
+price_model: Abonnement
 tags: [research, patents, analytics, enterprise]
 official_url: "https://www.questel.com/patent/ip-intelligence-software/orbit-intelligence/"
+popularity: 0
 ---
 
 # Orbit Intelligence
