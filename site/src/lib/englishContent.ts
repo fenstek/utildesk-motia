@@ -142,7 +142,45 @@ const cleanSentence = (value: string) =>
     .replace(/\s+([,.;:!?])/g, "$1")
     .trim();
 
-const indefiniteArticle = (value: string) => (/^[aeiou]/i.test(value) ? "an" : "a");
+const joinHumanList = (items: string[]) => {
+  const cleaned = items.map((item) => item.trim()).filter(Boolean);
+  if (cleaned.length <= 1) return cleaned[0] ?? "";
+  if (cleaned.length === 2) return `${cleaned[0]} and ${cleaned[1]}`;
+  return `${cleaned.slice(0, -1).join(", ")} and ${cleaned[cleaned.length - 1]}`;
+};
+
+const formatFocusTag = (tag: string) => {
+  const normalized = tag.trim().toLowerCase();
+  const special: Record<string, string> = {
+    ai: "AI",
+    "ai-agents": "AI agents",
+    automl: "AutoML",
+    api: "API",
+    crm: "CRM",
+    "customer-support": "customer support",
+    "developer-tools": "developer tools",
+    llm: "LLM",
+    "machine-learning": "machine learning",
+    "no-code": "no-code",
+    seo: "SEO",
+    "social-media": "social media",
+    "text-to-speech": "text to speech",
+    ux: "UX",
+    ui: "UI",
+  };
+  return special[normalized] ?? normalized.replace(/-/g, " ");
+};
+
+const buildHumanFallbackDescription = (title: string, category: string, tags: string[], priceModel: string) => {
+  const focus = tags
+    .filter((tag) => tag.toLowerCase() !== "ai")
+    .slice(0, 4)
+    .map(formatFocusTag);
+  const focusText = focus.length ? joinHumanList(focus) : category ? `${category.toLowerCase()} work` : "AI-assisted work";
+  const priceHint = priceModel ? ` Pricing signal: ${priceModel}.` : "";
+
+  return `${title} helps with ${focusText}.${priceHint}`;
+};
 
 export const getEnglishToolMeta = (entry: ToolEntryLike) => {
   const translation = getEnglishToolTranslation(entry.slug);
@@ -185,14 +223,7 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
   const tags = translateTags(Array.isArray(entry.data.tags) ? entry.data.tags.map(String) : []);
   const officialUrl = entry.data.official_url ? String(entry.data.official_url) : "";
   const affiliateUrl = entry.data.affiliate_url ? String(entry.data.affiliate_url) : "";
-  const focus = tags.filter((tag) => tag.toLowerCase() !== "ai").slice(0, 4);
-  const focusText = focus.length ? focus.join(", ") : category || "AI-assisted work";
-  const categoryPhrase = category
-    ? category.toLowerCase() === "ai"
-      ? "an AI tool"
-      : `${indefiniteArticle(category)} ${category.toLowerCase()} tool`
-    : "an AI tool";
-  const description = `${title} is listed on Utildesk as ${categoryPhrase} for ${focusText}. Use this English overview to compare the tool, pricing signal and likely workflow fit before opening the provider website.`;
+  const description = buildHumanFallbackDescription(title, category, tags, priceModel);
 
   return {
     title,
@@ -224,13 +255,13 @@ export const extractAlternativeNames = (content: string, maxItems = 5) => {
 export const buildEnglishToolFeatureList = (entry: ToolEntryLike) => {
   const meta = getEnglishToolMeta(entry);
   const focusTags = meta.tags.filter((tag) => tag.toLowerCase() !== "ai").slice(0, 4);
-  const focusText = focusTags.length ? focusTags.join(", ") : meta.category || "AI workflow";
+  const focusText = focusTags.length ? joinHumanList(focusTags.map(formatFocusTag)) : meta.category || "AI work";
 
   return [
-    `${meta.title} is grouped for ${focusText} workflows in the Utildesk English catalogue.`,
-    `The entry keeps category, pricing signal, tags and provider link together for quick comparison.`,
-    `Use it as a shortlist checkpoint before opening the external provider website.`,
-    `Compare ${meta.title} with neighbouring tools by category, tags and practical workflow fit.`,
+    `${meta.title} is useful for ${focusText}.`,
+    `The key signals are category, pricing model, tags and provider link.`,
+    `It is worth a closer look when those signals match your actual workflow.`,
+    `Compare ${meta.title} with neighbouring tools before committing to a setup.`,
   ];
 };
 
@@ -251,11 +282,11 @@ export const buildEnglishToolMarkdown = (entry: ToolEntryLike) => {
     "",
     meta.description,
     "",
-    `${meta.title} is part of the Utildesk English catalogue. The goal is not to mirror every marketing claim, but to make the tool understandable in a practical buying and workflow context.`,
+    `${meta.title} should be judged by practical fit: what it helps you do, how it is priced and whether it belongs in your workflow.`,
     "",
     "## Best fit",
     "",
-    `Use ${meta.title} when you are comparing tools for ${focusTags.length ? focusTags.join(", ") : meta.category || "AI work"}. It is most useful as a quick evaluation entry: check the category, pricing signal, related tags and provider link before deciding whether it deserves a deeper trial.`,
+    `Use ${meta.title} when you are comparing tools for ${focusTags.length ? joinHumanList(focusTags.map((tag) => tag.toLowerCase())) : meta.category || "AI work"}. Check the category, pricing signal, related tags and provider link before deciding whether it deserves a deeper trial.`,
     "",
     "## Quick signals",
     "",

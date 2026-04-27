@@ -14,7 +14,7 @@ export async function GET() {
   const lines = [
     "# Utildesk English Full Manifest",
     "",
-    "This manifest exposes the English layer of Utildesk for AI agents. Tool pages are generated from curated German metadata; guides are translated editorial entries.",
+    "This manifest exposes the English layer of Utildesk for AI agents: tools, workflow context and practical guides.",
     "",
     "## Guides",
     ...guides.flatMap((guide) => [

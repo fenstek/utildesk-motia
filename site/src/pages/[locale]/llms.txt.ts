@@ -14,7 +14,7 @@ export async function GET() {
   const lines = [
     "# Utildesk English",
     "",
-    "Curated AI tools, workflow context and practical guides. The German site is the source catalogue; English pages are localized for international readers and AI agents.",
+    "Curated AI tools, workflow context and practical guides for international readers and AI agents.",
     "",
     "## Core URLs",
     "- Home: https://tools.utildesk.de/en/",

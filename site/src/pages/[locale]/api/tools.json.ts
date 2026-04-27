@@ -23,8 +23,6 @@ export async function GET() {
       officialUrl: meta.officialUrl || null,
       affiliateUrl: meta.affiliateUrl || null,
       inLanguage: "en",
-      sourceLanguage: "de",
-      translationMode: "generated-from-curated-metadata",
     };
   });
 
