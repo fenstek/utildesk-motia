@@ -11,6 +11,23 @@ Rebuilds official_url for rows with specified status (typically NEEDS_REVIEW). U
 ### sheet_ai_autogen_9_strict_v2.mjs
 Main autopilot: processes NEW rows, generates content, creates markdown files.
 
+### translate_tools_to_english_codex.mjs
+Primary English localization backfill for `content/tools/*.md`. Uses the local Codex CLI OAuth session (`codex exec`), not Cloudflare AI and not `OPENAI_API_KEY`.
+
+Useful commands:
+- `npm run translate:tools:en -- --dry-run --limit=10`
+- `npm run translate:tools:en -- --limit=25`
+- `npm run translate:tools:en -- --slugs=twilio,tpot,libreoffice-impress`
+- `npm run translate:tools:en -- --force --slug=twilio`
+
+Environment:
+- `CODEX_TRANSLATION_MODEL` optional; empty uses the current Codex default model.
+- `CODEX_TRANSLATION_CONCURRENCY=1` is the safe default because each item runs a separate `codex exec` process.
+- `TRANSLATE_LIMIT`, `TRANSLATE_SLUGS`, and `TRANSLATE_LOG_PATH` are supported for batch control.
+- `CODEX_CLI_PATH` is optional; on Windows the script auto-resolves the installed Codex CLI JS entrypoint to avoid PowerShell shim issues.
+
+The old `translate_tools_to_english_cf_ai.mjs` script is legacy fallback only. Do not use it for production translations unless Codex OAuth is unavailable and the Cloudflare Workers AI quota is intentionally approved.
+
 ### audit_alternatives_render.mjs
 Audits alternatives sections in existing tools, generates JSON report of missing tools.
 
