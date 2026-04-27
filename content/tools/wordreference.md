@@ -1,10 +1,11 @@
 ---
-slug: "wordreference"
-title: "WordReference"
-category: "AI"
-price_model: "Freemium"
+slug: wordreference
+title: WordReference
+category: AI
+price_model: Freemium
 tags: [translation, language, reference, productivity]
 official_url: "https://www.wordreference.com/"
+popularity: 0
 ---
 
 # WordReference

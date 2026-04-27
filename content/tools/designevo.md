@@ -1,10 +1,11 @@
 ---
-slug: "designevo"
-title: "DesignEvo"
-category: "Design"
-price_model: "Freemium"
+slug: designevo
+title: DesignEvo
+category: Design
+price_model: Freemium
 tags: [design, logo, branding, marketing]
 official_url: "https://www.designevo.com/"
+popularity: 0
 ---
 
 # DesignEvo

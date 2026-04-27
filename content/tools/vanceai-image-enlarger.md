@@ -1,10 +1,11 @@
 ---
-slug: "vanceai-image-enlarger"
-title: "VanceAI Image Enlarger"
-category: "AI"
-price_model: "Freemium"
+slug: vanceai-image-enlarger
+title: VanceAI Image Enlarger
+category: AI
+price_model: Freemium
 tags: [image, photo, upscaling, editing]
 official_url: "https://vanceai.com/image-enlarger/"
+popularity: 0
 ---
 
 # VanceAI Image Enlarger

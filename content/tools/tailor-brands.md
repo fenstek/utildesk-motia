@@ -1,10 +1,11 @@
 ---
-slug: "tailor-brands"
-title: "Tailor Brands"
-category: "AI"
-price_model: "Abonnement, Je nach Plan"
+slug: tailor-brands
+title: Tailor Brands
+category: AI
+price_model: Abonnement, Je nach Plan
 tags: [design, branding, logo, marketing]
 official_url: "https://www.tailorbrands.com/"
+popularity: 0
 ---
 
 # Tailor Brands

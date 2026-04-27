@@ -1,10 +1,11 @@
 ---
-slug: "pons-w-rterbuch"
-title: "PONS Wörterbuch"
-category: "AI"
-price_model: "Freemium"
+slug: pons-w-rterbuch
+title: PONS Wörterbuch
+category: AI
+price_model: Freemium
 tags: [translation,language,reference,productivity]
 official_url: "https://de.pons.com/%C3%BCbersetzung"
+popularity: 0
 ---
 
 # PONS Wörterbuch
