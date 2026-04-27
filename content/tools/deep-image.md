@@ -1,10 +1,11 @@
 ---
-slug: "deep-image"
-title: "Deep Image"
-category: "AI"
-price_model: "Abonnement, Freemium"
+slug: deep-image
+title: Deep Image
+category: AI
+price_model: Abonnement, Freemium
 tags: [image, photo, upscaling, editing]
 official_url: "https://deep-image.ai/"
+popularity: 0
 ---
 
 # Deep Image

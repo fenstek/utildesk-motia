@@ -1,10 +1,11 @@
 ---
-slug: "skater"
-title: "Skater"
-category: "AI"
-price_model: "Je nach Plan"
+slug: skater
+title: Skater
+category: AI
+price_model: Je nach Plan
 tags: [sports, coaching, analytics, ai]
 official_url: "https://www.skaterai.com/"
+popularity: 0
 ---
 
 # Skater

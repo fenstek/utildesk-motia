@@ -1,10 +1,11 @@
 ---
-slug: "logomakr"
-title: "LogoMakr"
-category: "AI"
-price_model: "Freemium"
+slug: logomakr
+title: LogoMakr
+category: AI
+price_model: Freemium
 tags: [design, logo, branding, marketing]
 official_url: "https://logomakr.com/"
+popularity: 0
 ---
 
 # LogoMakr

@@ -1,10 +1,11 @@
 ---
-slug: "waifu2x"
-title: "Waifu2x"
-category: "AI"
-price_model: "Open Source"
+slug: waifu2x
+title: Waifu2x
+category: AI
+price_model: Open Source
 tags: [image, upscaling, photo, open-source]
 official_url: "https://www.waifu2x.net/index.html"
+popularity: 0
 ---
 
 # Waifu2x

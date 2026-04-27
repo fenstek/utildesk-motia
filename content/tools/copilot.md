@@ -5,7 +5,7 @@ category: Developer
 price_model: Freemium
 tags: [ai, developer]
 official_url: "https://www.copilot.com/"
-popularity: 69
+popularity: 68
 ---
 
 # Copilot

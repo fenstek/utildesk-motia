@@ -1,10 +1,11 @@
 ---
-slug: "topaz-gigapixel-ai"
-title: "Topaz Gigapixel AI"
-category: "AI"
-price_model: "Kostenpflichtig"
+slug: topaz-gigapixel-ai
+title: Topaz Gigapixel AI
+category: AI
+price_model: Kostenpflichtig
 tags: [image, photo, upscaling, editing]
 official_url: "https://www.topazlabs.com/topaz-gigapixel"
+popularity: 0
 ---
 
 # Topaz Gigapixel AI
