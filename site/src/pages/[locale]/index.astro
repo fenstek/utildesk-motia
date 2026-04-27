@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { resolveLocalLogo } from "../../lib/resolveLogoPath";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
 import { categoryTitleEn, getEnglishToolMeta } from "../../lib/englishContent";
 import { listRatgeberEntries } from "../../lib/ratgeber";
@@ -18,12 +20,88 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
+const stripMarkdown = (text: string) =>
+  text
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
+    .replace(/[`*_>#-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const getExcerpt = (content: string) => {
+  const paragraphs = content.split(/\n\s*\n/);
+  for (const paragraph of paragraphs) {
+    if (paragraph.trim().startsWith("#")) continue;
+    const cleaned = stripMarkdown(paragraph);
+    if (cleaned) return cleaned;
+  }
+  return "";
+};
+
+const getImageFromContent = (content: string) => {
+  const match = content.match(/!\[[^\]]*]\(([^)]+)\)/);
+  return match?.[1]?.trim() || null;
+};
+
+const normalizeImagePath = (path: string | null) => {
+  if (!path) return null;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  if (path.startsWith("/")) return path;
+  return `/${path}`;
+};
+
+const resolveCategoryIcon = (category: string | null, tags: string[]) => {
+  const normalizedCategory = category ? category.toLowerCase() : "";
+  const normalizedTags = tags.map((tag) => tag.toLowerCase());
+  const combined = [normalizedCategory, ...normalizedTags].join(" ");
+
+  if (combined.includes("design") || combined.includes("ui") || combined.includes("ux")) return "design";
+  if (combined.includes("automation") || combined.includes("workflow")) return "automation";
+  if (combined.includes("ai") || combined.includes("ml") || combined.includes("machine")) return "ai";
+  return "generic";
+};
+
+const getFrequencyClass = (count: number, max: number) => {
+  const ratio = count / max;
+  if (ratio >= 0.6) return "tag-freq-high";
+  if (ratio >= 0.3) return "tag-freq-medium";
+  return "tag-freq-low";
+};
+
 const entries = await listActiveToolEntries();
-const tools = entries.map((entry) => ({
-  slug: entry.slug,
-  popularity: entry.data.popularity ? Number(entry.data.popularity) : 0,
-  ...getEnglishToolMeta(entry),
-}));
+const tools = entries.map((entry) => {
+  const meta = getEnglishToolMeta(entry);
+  const rawCategory = entry.data.category ? String(entry.data.category) : null;
+  const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag) => String(tag)) : [];
+  const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
+  const image = entry.data.image ? String(entry.data.image) : null;
+  const homeImage = entry.data.homeImage ? String(entry.data.homeImage) : null;
+  const icon = entry.data.icon ? String(entry.data.icon) : null;
+  const contentImage = getImageFromContent(entry.content);
+  const localLogoPath = resolveLocalLogo(entry.slug);
+  const providerUrl = meta.affiliateUrl || meta.officialUrl;
+  const faviconCandidates = getFaviconCandidates(providerUrl, 128);
+  const faviconLogo = faviconCandidates[0] ?? null;
+  const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath ?? faviconLogo;
+  const homeCardLogoFallbacks = normalizeImagePath(brandLogo) || localLogoPath || !faviconLogo
+    ? []
+    : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(meta.title)];
+  const homeCardImage = normalizeImagePath(homeImage ?? image ?? icon ?? contentImage);
+  const excerpt = meta.description || String(entry.data.description ?? "") || getExcerpt(entry.content);
+
+  return {
+    slug: entry.slug,
+    popularity: entry.data.popularity ? Number(entry.data.popularity) : 0,
+    rawCategory,
+    rawTags,
+    ...meta,
+    excerpt,
+    homeCardImage,
+    homeCardLogo,
+    homeCardLogoFallbacks,
+    fallbackIcon: resolveCategoryIcon(meta.category, meta.tags),
+  };
+});
 const enabledTools = tools.sort((a, b) => a.title.localeCompare(b.title, "en"));
 const pinnedSlugs = ["wispr-flow", "chatgpt", "claude", "midjourney", "perplexity", "zapier"];
 const bySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
@@ -40,6 +118,37 @@ enabledTools.forEach((tool) => {
 const topTags = Array.from(tagFrequency.entries())
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "en"))
   .slice(0, 18);
+const maxFrequency = topTags.length > 0 ? topTags[0][1] : 1;
+
+const normalizedToolTerms = (tool) =>
+  [tool.rawCategory ?? tool.category, ...(tool.rawTags.length ? tool.rawTags : tool.tags)]
+    .filter(Boolean)
+    .map((value) => String(value).toLowerCase());
+
+const categoryStats = CATEGORIES.map((category) => {
+  const count = enabledTools.filter((tool) => {
+    const terms = normalizedToolTerms(tool);
+    return category.matchTags.some((match) =>
+      terms.some((term) => term.includes(match.toLowerCase()))
+    );
+  }).length;
+  return { ...category, titleEn: categoryTitleEn(category.slug, category.title), count };
+}).sort((a, b) => b.count - a.count || a.titleEn.localeCompare(b.titleEn, "en"));
+
+const railCategories = categoryStats.slice(0, 9);
+const feedRows = [
+  ...recentRatgeber.map((article, index) => ({
+    stamp: `guide_${String(index + 1).padStart(2, "0")}`,
+    title: article.data.title,
+    href: `/en/ratgeber/${article.slug}/`,
+  })),
+  ...latestTools.slice(0, 5).map((tool, index) => ({
+    stamp: `tool_${String(index + 1).padStart(2, "0")}`,
+    title: `${tool.title} updated in the directory`,
+    href: `/en/tools/${tool.slug}/`,
+  })),
+].slice(0, 5);
+const primaryDetailTool = latestTools[0];
 
 const featuredToolsSchema = {
   "@context": "https://schema.org",
@@ -81,7 +190,7 @@ const homepageSchemas = [
   </Fragment>
 
   <section class="terminal-hero">
-    <div class="terminal-hero-grid terminal-hero-grid--en">
+    <div class="terminal-hero-grid">
       <div>
         <div class="terminal-kicker">[ manifest_en ]</div>
         <h1 class="terminal-title">
@@ -96,24 +205,33 @@ const homepageSchemas = [
         <div class="terminal-stats" aria-label="Utildesk English statistics">
           <div class="terminal-stat"><strong>{enabledTools.length}</strong><span>tools</span></div>
           <div class="terminal-stat"><strong>{CATEGORIES.length}</strong><span>categories</span></div>
-          <div class="terminal-stat"><strong>{allRatgeber.length}</strong><span>guides</span></div>
+          <div class="terminal-stat"><strong>{recentRatgeber.length}</strong><span>guides live</span></div>
           <div class="terminal-stat"><strong>0</strong><span>ads</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="terminal-kicker">[ query_interface ]</div>
+        <div class="terminal-query">
+          <span class="terminal-prompt">$</span>
+          <a href="/en/tools/">find: transcription, agents, automation, images, code</a>
+          <span class="terminal-caret">_</span>
+        </div>
+        <div class="terminal-hints">
+          <span>hint:</span>
+          <code>category:code</code>
+          <code>tag:research</code>
+          <code>price:free</code>
         </div>
       </div>
 
       <aside class="terminal-feed" aria-label="Latest English entries">
         <div class="terminal-kicker">[ live_feed ]</div>
         <ul class="terminal-feed-list">
-          {recentRatgeber.map((article, index) => (
+          {feedRows.map((row) => (
             <li class="terminal-feed-row">
-              <span class="terminal-feed-time">guide_{String(index + 1).padStart(2, "0")}</span>
-              <a class="terminal-feed-msg" href={`/en/ratgeber/${article.slug}/`}>{article.data.title}</a>
-            </li>
-          ))}
-          {latestTools.slice(0, 2).map((tool, index) => (
-            <li class="terminal-feed-row">
-              <span class="terminal-feed-time">tool_{String(index + 1).padStart(2, "0")}</span>
-              <a class="terminal-feed-msg" href={`/en/tools/${tool.slug}/`}>{tool.title}</a>
+              <span class="terminal-feed-time">{row.stamp}</span>
+              <a class="terminal-feed-msg" href={row.href}>{row.title}</a>
             </li>
           ))}
         </ul>
@@ -125,37 +243,86 @@ const homepageSchemas = [
     <span class="terminal-catbar-label">categories:</span>
     <div class="terminal-catbar-list">
       <a class="terminal-pill is-active" href="/en/tools/"><span>*</span><span>all</span><span>{enabledTools.length}</span></a>
-      {CATEGORIES.map((category) => (
+      {categoryStats.slice(0, 11).map((category) => (
         <a class="terminal-pill" href={`/en/category/${category.slug}/`}>
           <span>#</span>
-          <span>{categoryTitleEn(category.slug, category.title)}</span>
+          <span>{category.titleEn}</span>
+          <span>{category.count}</span>
         </a>
       ))}
     </div>
   </nav>
 
-  <section class="terminal-main terminal-main--en" aria-label="English Utildesk directory">
+  <section class="terminal-main" aria-label="English Utildesk directory">
+    <aside class="terminal-rail" aria-label="Filter overview">
+      <div class="terminal-rail-block">
+        <h2 class="terminal-rail-title">filter.set</h2>
+        {railCategories.map((category) => (
+          <a class="terminal-rail-link" href={`/en/category/${category.slug}/`}>
+            <span>{category.titleEn}</span>
+            <span>{category.count}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="terminal-rail-block">
+        <h2 class="terminal-rail-title">top.tags</h2>
+        {topTags.slice(0, 8).map(([tag, count]) => (
+          <a class="terminal-rail-link" href={tagHref(tag, "en")}>
+            <span>{tag}</span>
+            <span>{count}</span>
+          </a>
+        ))}
+      </div>
+
+      <p class="terminal-rail-note">
+        Sources: local tool files, editorial guides and machine-readable catalogues.
+        No paid slots.
+      </p>
+    </aside>
+
     <section class="terminal-results" aria-label="Selected tools">
       <div class="terminal-results-head">
         <h2 class="terminal-results-title">results.selected</h2>
         <span class="terminal-results-meta">{latestTools.length} of {enabledTools.length} tools</span>
-        <span class="terminal-results-meta">sort: curated</span>
+        <span class="terminal-results-meta">sort: curated + popularity</span>
+      </div>
+      <div class="terminal-table-head" aria-hidden="true">
+        <span>idx</span>
+        <span>sig</span>
+        <span>tool</span>
+        <span>category</span>
+        <span>price</span>
+        <span>open</span>
       </div>
       <div>
         {latestTools.map((tool, index) => (
           <article class="terminal-row">
             <span class="terminal-index">{String(index + 1).padStart(2, "0")}</span>
-            <span class="terminal-glyph" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
+            {tool.homeCardLogo ? (
+              <span class="terminal-glyph">
+                <img
+                  src={tool.homeCardLogo}
+                  alt=""
+                  loading="eager"
+                  data-fallback-srcs={tool.homeCardLogoFallbacks.length ? JSON.stringify(tool.homeCardLogoFallbacks) : undefined}
+                />
+              </span>
+            ) : (
+              <span class="terminal-glyph" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
+            )}
             <div>
               <h3 class="terminal-row-title"><a href={`/en/tools/${tool.slug}/`}>{tool.title}</a></h3>
-              <p class="terminal-row-desc">{tool.description}</p>
+              <p class="terminal-row-desc">{tool.excerpt || "Compact entry in the Utildesk directory."}</p>
               <div class="terminal-row-tags">
                 {tool.tags.slice(0, 3).map((tag) => <a href={tagHref(tag, "en")}>#{tag}</a>)}
               </div>
             </div>
-            <span class="terminal-row-category">{tool.category || "AI"}</span>
+            <span class="terminal-row-category">{tool.category || tool.fallbackIcon}</span>
             <span class="terminal-row-price">{tool.priceModel || "n/a"}</span>
-            <span class="terminal-row-action"><a class="terminal-open" href={`/en/tools/${tool.slug}/`}>-&gt;</a></span>
+            <span class="terminal-row-action">
+              <a class="terminal-open" href={`/en/tools/${tool.slug}/`} aria-label={`Open ${tool.title}`}>-&gt;</a>
+            </span>
           </article>
         ))}
       </div>
@@ -166,7 +333,18 @@ const homepageSchemas = [
       </div>
     </section>
 
-    <aside class="terminal-detail" aria-label="Guides and tags">
+    <aside class="terminal-detail" aria-label="Guides and detail view">
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">detail.preview</h2>
+        {primaryDetailTool && (
+          <>
+            <h3>{primaryDetailTool.title}</h3>
+            <p>{primaryDetailTool.excerpt || "Selected tool entry."}</p>
+            <a class="btn-primary" href={`/en/tools/${primaryDetailTool.slug}/`}>view entry</a>
+          </>
+        )}
+      </div>
+
       <div class="terminal-detail-card">
         <h2 class="terminal-detail-title">guides.latest</h2>
         {recentRatgeber.map((article) => (
@@ -176,15 +354,47 @@ const homepageSchemas = [
           </a>
         ))}
       </div>
-      <div class="terminal-detail-card">
-        <h2 class="terminal-detail-title">top.tags</h2>
-        {topTags.slice(0, 8).map(([tag, count]) => (
-          <a class="terminal-rail-link" href={tagHref(tag, "en")}>
-            <span>{tag}</span>
-            <span>{count}</span>
-          </a>
-        ))}
-      </div>
+      <pre class="terminal-ascii" aria-hidden="true">{`utildesk://catalog
+  tools       ${enabledTools.length}
+  categories  ${CATEGORIES.length}
+  guides      ${recentRatgeber.length}
+  ads         0`}</pre>
     </aside>
+  </section>
+
+  <section class="terminal-bottom" aria-label="Topics and machine-readable entry points">
+    <div class="terminal-bottom-grid">
+      <div class="terminal-panel">
+        <div class="terminal-panel-head">
+          <h2>tags.index</h2>
+          <a href="/en/tools/">all tools</a>
+        </div>
+        <div class="tag-cloud home-tags-cloud">
+          {topTags.map(([tag, count]) => (
+            <a
+              href={tagHref(tag, "en")}
+              class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
+            >
+              #{tag}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="terminal-panel">
+        <div class="terminal-panel-head">
+          <h2>guides.index</h2>
+          <a href="/en/ratgeber/">open guides</a>
+        </div>
+        <div class="terminal-mini-list">
+          {recentRatgeber.map((article) => (
+            <a class="terminal-mini-item" href={`/en/ratgeber/${article.slug}/`}>
+              <strong>{article.data.title}</strong>
+              <span>{article.data.excerpt || "Editorial context and practical fit for relevant AI tools."}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
   </section>
 </BaseLayout>

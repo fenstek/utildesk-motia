@@ -38,6 +38,37 @@ const description = String(data.excerpt ?? title);
 const published = data.date
   ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.date))
   : "";
+
+const normalizeMetaLabel = (value: string) =>
+  String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/^ai[-\s]+/, "")
+    .replace(/^ki[-\s]+/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+const eyebrowLabel = normalizeMetaLabel(String(data.eyebrow ?? ""));
+const categoryLabel = normalizeMetaLabel(String(data.category ?? ""));
+const categoryIsRedundant =
+  Boolean(categoryLabel) &&
+  Boolean(eyebrowLabel) &&
+  (eyebrowLabel === categoryLabel ||
+    eyebrowLabel.includes(categoryLabel) ||
+    categoryLabel.includes(eyebrowLabel));
+const renderedPills = new Set<string>();
+
+const addRenderedPill = (label: string) => {
+  const normalized = normalizeMetaLabel(label);
+  if (!normalized || renderedPills.has(normalized)) {
+    return false;
+  }
+  renderedPills.add(normalized);
+  return true;
+};
+
+const relatedToolSet = new Set((data.relatedTools ?? []).map((tool: {title: string}) => normalizeMetaLabel(tool.title)));
 const imageUrls = [
   data.coverImage ? toAbsoluteUrl(String(data.coverImage)) : null,
   data.secondaryImage ? toAbsoluteUrl(String(data.secondaryImage)) : null,
@@ -97,11 +128,22 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <h1>{title}</h1>
     <p class="article-excerpt">{description}</p>
     <div class="article-pills">
-      {published ? <span class="pill">{published}</span> : null}
-      {data.readTime ? <span class="pill">{data.readTime} min read</span> : null}
-      {data.category ? <span class="pill pill--accent">{data.category}</span> : null}
-      {data.relatedTools?.map((tool: {href: string, title: string}) => <a href={tool.href} class="pill pill--tool">{tool.title}</a>)}
-      {data.tags?.map((tag: string) => <a href={tagHref(tag, "en")} class="pill pill--tool">{tag}</a>)}
+      {published && addRenderedPill(published) ? <span class="pill">{published}</span> : null}
+      {data.readTime && addRenderedPill(`${data.readTime} min read`) ? <span class="pill">{data.readTime} min read</span> : null}
+      {data.category && !categoryIsRedundant && addRenderedPill(data.category) ? <span class="pill pill--accent">{data.category}</span> : null}
+      {data.relatedTools?.map((tool: {href: string, title: string}) => {
+        if (!addRenderedPill(tool.title)) {
+          return null;
+        }
+        return <a href={tool.href} class="pill pill--tool">{tool.title}</a>;
+      })}
+      {data.tags?.map((tag: string) => {
+        const tagKey = normalizeMetaLabel(tag);
+        if (!tagKey || relatedToolSet.has(tagKey) || !addRenderedPill(tag)) {
+          return null;
+        }
+        return <a href={tagHref(tag, "en")} class="pill pill--tool">{tag}</a>;
+      })}
     </div>
   </header>
 
@@ -191,8 +233,156 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   .lightbox img { max-width: min(95vw, 1500px); max-height: 90vh; width: auto; height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 0 80px rgba(0,0,0,.5); cursor: zoom-out; }
   .lightbox-close { position: absolute; top: 16px; right: 20px; width: 44px; height: 44px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); color: #fff; font-size: 1.1rem; border-radius: 50%; cursor: pointer; }
   :root[data-theme="dark"] .article-cover img, :root[data-theme="dark"] .ratgeber-prose :global(img) { filter: brightness(0.72) saturate(0.9) contrast(0.98); opacity: 0.94; }
+  .breadcrumb a { color: var(--secondary); }
+  .breadcrumb a:hover { color: var(--primary); opacity: 1; }
+  .pill--link {
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition);
+  }
+  .pill--link:hover {
+    background: var(--surface-container-high);
+    color: var(--primary);
+  }
+  .pill--tool {
+    transition: background var(--transition), color var(--transition);
+  }
+  .pill--tool:hover {
+    background: rgba(23, 98, 89, 0.14);
+  }
+  .article-cover-trigger:focus-visible {
+    outline: 3px solid rgba(23, 98, 89, 0.32);
+    outline-offset: -3px;
+  }
+  :global(.ratgeber-prose > p:first-of-type) {
+    font-size: 1.08rem;
+    color: var(--on-surface-variant);
+    line-height: 1.78;
+  }
+  :global(.ratgeber-prose h3) {
+    margin: 1.6rem 0 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  :global(.ratgeber-prose p) {
+    margin: 0 0 1rem;
+    color: var(--on-surface);
+  }
+  :global(.ratgeber-prose ul),
+  :global(.ratgeber-prose ol) {
+    margin: 0 0 1rem 1.4rem;
+    padding: 0;
+  }
+  :global(.ratgeber-prose li) {
+    margin-bottom: 0.4rem;
+    color: var(--on-surface);
+    line-height: 1.7;
+  }
+  :global(.ratgeber-prose table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.92rem;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid rgba(190, 201, 197, 0.3);
+  }
+  :global(.ratgeber-prose th) {
+    background: var(--surface-container-low);
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(190, 201, 197, 0.3);
+    font-size: 0.84rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  :global(.ratgeber-prose td) {
+    padding: 9px 14px;
+    border-bottom: 1px solid rgba(190, 201, 197, 0.15);
+    vertical-align: top;
+  }
+  :global(.ratgeber-prose tr:last-child td) {
+    border-bottom: none;
+  }
+  :global(.ratgeber-prose .article-inline-image) {
+    margin: clamp(2rem, 4vw, 2.8rem) 0 clamp(2.3rem, 4vw, 3.1rem);
+  }
+  :global(.ratgeber-prose ul + .article-inline-image),
+  :global(.ratgeber-prose ol + .article-inline-image) {
+    margin-top: clamp(2.8rem, 5vw, 3.6rem);
+  }
+  :global(.ratgeber-prose h2 + .article-inline-image) {
+    margin-top: 1.6rem;
+  }
+  :global(.ratgeber-prose .article-inline-image + h2) {
+    margin-top: clamp(2.8rem, 5vw, 3.4rem);
+  }
+  :global(.ratgeber-prose img) {
+    transition: filter var(--transition), opacity var(--transition), border-color var(--transition), background var(--transition);
+  }
+  :global(.ratgeber-prose .article-inline-image img) {
+    display: block;
+    margin: 0;
+  }
+  :global(.ratgeber-prose a) {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 98, 89, 0.28);
+    text-underline-offset: 2px;
+  }
+  :global(.ratgeber-prose blockquote) {
+    border-left: 3px solid var(--primary);
+    margin: 1.5rem 0;
+    padding: 0.5rem 0 0.5rem 1.2rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+  .summary-list li {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .article-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+  .footer-back {
+    opacity: 0.75;
+    transition: opacity var(--transition), color var(--transition);
+  }
+  .footer-back:hover { opacity: 1; color: var(--primary); }
+  .lightbox-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  .lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.22);
+  }
+  :root[data-theme="dark"] .article-summary {
+    background: var(--surface-container);
+    border-color: rgba(139, 152, 145, 0.2);
+  }
+  :root[data-theme="dark"] .ratgeber-prose :global(h2) {
+    border-top-color: rgba(139, 152, 145, 0.2);
+  }
+  :root[data-theme="dark"] .article-cover-trigger:hover img,
+  :root[data-theme="dark"] .ratgeber-prose :global(img:hover) {
+    filter: brightness(0.82) saturate(0.95) contrast(1);
+    opacity: 0.98;
+  }
+  :root[data-theme="dark"] .ratgeber-prose :global(img) {
+    background: var(--surface-container);
+    border-color: rgba(139, 152, 145, 0.24);
+  }
   @media (max-width: 900px) {
     .article-body { grid-template-columns: 1fr; }
     .article-summary { position: static; order: -1; }
+    .article-cover-trigger { padding: 0; }
+    .article-cover img { max-height: none; }
   }
 </style>

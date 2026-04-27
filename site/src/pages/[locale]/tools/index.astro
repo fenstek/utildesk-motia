@@ -1,8 +1,8 @@
 ---
+import ToolCard from "../../../components/ToolCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { getEnglishToolMeta } from "../../../lib/englishContent";
 import { listRatgeberEntries } from "../../../lib/ratgeber";
-import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import { listDisplayTools } from "../../../lib/toolDisplay";
 import { tagHref } from "../../../lib/tagRoutes";
 import {
   buildBreadcrumbSchema,
@@ -15,23 +15,27 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
-const entries = await listActiveToolEntries();
-const tools = entries
-  .map((entry) => ({
-    slug: entry.slug,
-    popularity: entry.data.popularity ? Number(entry.data.popularity) : 0,
-    ...getEnglishToolMeta(entry),
-  }))
+const tools = [...(await listDisplayTools("en"))]
   .sort((a, b) => a.title.localeCompare(b.title, "en"));
 
 const tagFrequency = new Map<string, number>();
-tools.forEach((tool) => tool.tags.forEach((tag) => tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1)));
+tools.forEach((tool) => {
+  tool.tags.forEach((tag) => {
+    const normalized = tag.trim().toLowerCase();
+    if (!normalized) return;
+    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
+  });
+});
 const visibleTags = Array.from(tagFrequency.entries())
-  .filter(([, count]) => count >= 2)
-  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "en"))
-  .slice(0, 24)
-  .map(([tag]) => tag);
+  .sort((a, b) => {
+    if (b[1] !== a[1]) return b[1] - a[1];
+    return a[0].localeCompare(b[0], "en");
+  })
+  .map(([tag]) => tag)
+  .filter((tag) => (tagFrequency.get(tag) || 0) >= 2)
+  .slice(0, 24);
 const recentRatgeber = (await listRatgeberEntries("en")).slice(0, 3);
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -46,7 +50,7 @@ const itemListSchema = {
 };
 const collectionSchema = buildCollectionPageSchema({
   name: "Utildesk AI Tools",
-  description: "Curated AI tools, productivity apps and workflow software.",
+  description: "Curated directory of AI tools, productivity apps and automation software.",
   url: `${SITE_URL}/en/tools/`,
   about: ["AI tools", "Productivity", "Automation"],
   mainEntity: itemListSchema,
@@ -73,56 +77,65 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   <section class="hero" style="padding: 60px 0 40px;">
     <h1 class="hero-title">AI Tools</h1>
     <p class="hero-subtitle">
-      Browse every tool in the Utildesk catalogue in English. Filter by name, tag or category and open the provider only after the quick context check.
+      Curated directory of useful AI and productivity tools.
+      Search all tools or filter by tags.
     </p>
   </section>
 
   {visibleTags.length > 0 && (
-    <div class="tag-filter-row">
+    <div class="tag-filter-row" id="tag-filter-row">
       <label class="tag-filter-label">Popular tags:</label>
-      <div class="tag-filter-list">
-        {visibleTags.map((tag) => <a href={tagHref(tag, "en")} class="tag-filter-item">{tag}</a>)}
+      <div class="tag-filter-list" id="tag-filter-list">
+        {visibleTags.map((tag) => (
+          <a
+            href={tagHref(tag, "en")}
+            class="tag-filter-item"
+            data-tag={tag}
+          >
+            {tag}
+          </a>
+        ))}
+        <a href="/en/tools/" class="clear-filter-btn" id="clear-filter-btn" style="display: none;">
+          Clear filter
+        </a>
       </div>
     </div>
   )}
 
   <div class="search-wrapper">
-    <input type="search" id="search-input" class="search-input" placeholder="Search tools..." autocomplete="off" />
+    <input
+      type="search"
+      id="search-input"
+      class="search-input"
+      placeholder="Search tools..."
+      autocomplete="off"
+    />
     <select id="sort-select" class="search-input" aria-label="Sort order">
       <option value="az">A-Z</option>
+      <option value="new">Newly added</option>
       <option value="pop">Popular</option>
     </select>
   </div>
 
   <div class="tools-grid" id="tools-grid">
     {tools.map((tool) => (
-      <a
-        href={`/en/tools/${tool.slug}/`}
-        class="card tool-card"
-        data-title={tool.title.toLowerCase()}
-        data-slug={tool.slug.toLowerCase()}
-        data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
-        data-popularity={tool.popularity}
-      >
-        <div class="tool-header">
-          <div class="tool-image">
-            <span class="tool-card-logo" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
-          </div>
-          <div class="tool-info">
-            <h3 class="tool-title">{tool.title}</h3>
-            <p class="tools-desc">{tool.description}</p>
-          </div>
-        </div>
-        <div class="tool-badges">
-          {tool.category && <span class="badge badge-category">{tool.category}</span>}
-          {tool.priceModel && <span class="badge badge-price">{tool.priceModel}</span>}
-        </div>
-      </a>
+      <ToolCard tool={tool} href={`/en/tools/${tool.slug}/`} fallbackText="Short description coming soon." />
     ))}
   </div>
 
   <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
-    <p style="color: var(--text-muted); font-size: 1.125rem;">No tools found. Try another search term.</p>
+    <p style="color: var(--text-muted); font-size: 1.125rem;">
+      No tools found. Try a different search term or another tag.
+    </p>
+  </div>
+  <div style="text-align: center; margin-top: 36px; padding-bottom: 48px;">
+    <button type="button" id="load-more-btn" class="hero-cta">Show more</button>
+    <div
+      id="hidden-count-info"
+      style="display: none; margin-top: 10px; text-align: center; font-size: 0.9rem; color: var(--text-muted);"
+    >
+      0 tools still hidden
+    </div>
   </div>
 
   {recentRatgeber.length > 0 && (
@@ -135,7 +148,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         {recentRatgeber.map((article) => (
           <a href={`/en/ratgeber/${article.slug}/`} class="tools-guides-article">
             <strong>{article.data.title}</strong>
-            <span>{article.data.excerpt}</span>
+            <span>{article.data.excerpt || "Editorial context and tool links from the Utildesk guide section."}</span>
           </a>
         ))}
       </div>
@@ -143,36 +156,170 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   )}
 
   <script is:inline>
-    (() => {
+    (function() {
+      const sortStorageKey = 'utildesk-tools-sort-en';
       const searchInput = document.getElementById('search-input');
       const sortSelect = document.getElementById('sort-select');
       const toolsGrid = document.getElementById('tools-grid');
       const noResults = document.getElementById('no-results');
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      const hiddenCountInfo = document.getElementById('hidden-count-info');
       const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+      const clearFilterBtn = document.getElementById('clear-filter-btn');
+      let pageBlocks = 1;
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialTag = urlParams.get('tag');
+      const initialSort = urlParams.get('sort');
+
+      if (initialTag) {
+        const tagSlug = initialTag
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        window.location.replace('/en/tools/tag/' + tagSlug + '/');
+        return;
+      }
+
+      if (sortSelect) {
+        const validSorts = ['az', 'new', 'pop'];
+        let restoredSort = '';
+        if (initialSort && validSorts.indexOf(initialSort) !== -1) {
+          restoredSort = initialSort;
+        } else {
+          try {
+            const storedSort = localStorage.getItem(sortStorageKey);
+            if (storedSort && validSorts.indexOf(storedSort) !== -1) {
+              restoredSort = storedSort;
+            }
+          } catch (e) {
+            // ignore localStorage access errors
+          }
+        }
+        if (restoredSort) {
+          sortSelect.value = restoredSort;
+        }
+        if (window.location.search) {
+          history.replaceState(null, '', '/en/tools/');
+        }
+      }
+
+      function getCols() {
+        const template = window.getComputedStyle(toolsGrid).gridTemplateColumns || '';
+        if (!template || template === 'none') return 1;
+        const cols = template.split(' ').filter(function(part) { return part.trim().length > 0; }).length;
+        return cols > 0 ? cols : 1;
+      }
+
+      function getStep() {
+        return getCols() * 6;
+      }
+
       function filterTools() {
-        const query = (searchInput.value || '').toLowerCase().trim();
+        const query = searchInput.value.toLowerCase().trim();
         const sortMode = sortSelect ? sortSelect.value : 'az';
-        const filtered = cards.filter((card) => {
+        const filtered = cards.filter(function(card) {
           const title = card.getAttribute('data-title') || '';
           const slug = card.getAttribute('data-slug') || '';
           const tags = card.getAttribute('data-tags') || '';
-          return !query || title.includes(query) || slug.includes(query) || tags.includes(query);
+
+          return !query ||
+            title.includes(query) ||
+            slug.includes(query) ||
+            tags.includes(query);
         });
-        filtered.sort((a, b) => {
-          if (sortMode === 'pop') {
-            const aPop = Number(a.getAttribute('data-popularity') || '0');
-            const bPop = Number(b.getAttribute('data-popularity') || '0');
-            if (bPop !== aPop) return bPop - aPop;
+
+        filtered.sort(function(a, b) {
+          const aTitle = (a.getAttribute('data-title') || '').toLowerCase();
+          const bTitle = (b.getAttribute('data-title') || '').toLowerCase();
+          if (sortMode === 'new') {
+            const aAdded = Number(a.getAttribute('data-added') || '0');
+            const bAdded = Number(b.getAttribute('data-added') || '0');
+            if (bAdded !== aAdded) return bAdded - aAdded;
+            return aTitle.localeCompare(bTitle, 'en');
           }
-          return (a.getAttribute('data-title') || '').localeCompare(b.getAttribute('data-title') || '', 'en');
+          if (sortMode === 'pop') {
+            const aPopular = Number(a.getAttribute('data-popularity') || '0');
+            const bPopular = Number(b.getAttribute('data-popularity') || '0');
+            if (bPopular !== aPopular) return bPopular - aPopular;
+            return aTitle.localeCompare(bTitle, 'en');
+          }
+          return aTitle.localeCompare(bTitle, 'en');
         });
+
+        const limit = getStep() * pageBlocks;
+        const visibleCards = filtered.slice(0, limit);
+
         toolsGrid.innerHTML = '';
-        filtered.forEach((card) => toolsGrid.appendChild(card));
-        toolsGrid.style.display = filtered.length ? 'grid' : 'none';
-        noResults.style.display = filtered.length ? 'none' : 'block';
+        visibleCards.forEach(function(card) {
+          toolsGrid.appendChild(card);
+        });
+
+        const totalFiltered = filtered.length;
+        const currentVisible = visibleCards.length;
+        const hidden = totalFiltered - currentVisible;
+
+        if (totalFiltered === 0) {
+          toolsGrid.style.display = 'none';
+          noResults.style.display = 'block';
+        } else {
+          toolsGrid.style.display = 'grid';
+          noResults.style.display = 'none';
+        }
+
+        if (loadMoreBtn) {
+          loadMoreBtn.style.display = totalFiltered > limit ? 'inline-flex' : 'none';
+        }
+
+        if (hiddenCountInfo) {
+          if (hidden > 0) {
+            hiddenCountInfo.textContent = hidden + ' tools still hidden';
+            hiddenCountInfo.style.display = 'block';
+          } else {
+            hiddenCountInfo.style.display = 'none';
+          }
+        }
       }
-      searchInput.addEventListener('input', filterTools);
-      sortSelect?.addEventListener('change', filterTools);
+
+      function resetAndFilter() {
+        pageBlocks = 1;
+        filterTools();
+      }
+
+      searchInput.addEventListener('input', resetAndFilter);
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', function() {
+          const sortValue = sortSelect.value;
+          try {
+            if (sortValue && sortValue !== 'az') {
+              localStorage.setItem(sortStorageKey, sortValue);
+            } else {
+              localStorage.removeItem(sortStorageKey);
+            }
+          } catch (e) {
+            // ignore localStorage access errors
+          }
+          history.replaceState(null, '', '/en/tools/');
+          resetAndFilter();
+        });
+      }
+
+      if (clearFilterBtn) {
+        clearFilterBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.location.href = '/en/tools/';
+        });
+      }
+
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+          pageBlocks += 1;
+          filterTools();
+        });
+      }
+
+      window.addEventListener('resize', filterTools);
       filterTools();
     })();
   </script>
@@ -184,6 +331,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     padding-top: 20px;
     border-top: 1px solid rgba(23, 98, 89, 0.12);
   }
+
   .tools-guides-head {
     display: flex;
     align-items: baseline;
@@ -191,23 +339,27 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     gap: 16px;
     margin-bottom: 16px;
   }
+
   .tools-guides-head h2 {
     margin: 0;
     font-size: 1.18rem;
     font-weight: 800;
     color: var(--on-surface);
   }
+
   .tools-guides-more {
     font-size: 0.92rem;
     font-weight: 700;
     text-decoration: none;
     color: var(--primary);
   }
+
   .tools-guides-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
   }
+
   .tools-guides-article {
     display: grid;
     gap: 6px;
@@ -217,10 +369,60 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.82);
     border: 1px solid rgba(23, 98, 89, 0.10);
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
   }
-  .tools-guides-article strong { color: var(--primary); }
-  .tools-guides-article span { color: var(--secondary); }
+
+  .tools-guides-article:hover {
+    transform: translateY(-2px);
+    border-color: rgba(23, 98, 89, 0.18);
+    box-shadow: 0 12px 28px rgba(18, 28, 24, 0.06);
+  }
+
+  .tools-guides-article strong {
+    font-size: 0.96rem;
+    line-height: 1.35;
+    color: var(--primary);
+  }
+
+  .tools-guides-article span {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--secondary);
+  }
+
+  :global([data-theme="dark"]) .tools-guides {
+    border-top-color: rgba(142, 216, 201, 0.16);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-head h2 {
+    color: rgba(246, 252, 249, 0.96);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-more {
+    color: #8ed8c9;
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article {
+    background: rgba(22, 41, 36, 0.88);
+    border-color: rgba(142, 216, 201, 0.18);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article:hover {
+    border-color: rgba(142, 216, 201, 0.34);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article strong {
+    color: #b8f3e7;
+  }
+
+  :global([data-theme="dark"]) .tools-guides-article span {
+    color: rgba(226, 238, 233, 0.72);
+  }
+
   @media (max-width: 920px) {
-    .tools-guides-list { grid-template-columns: 1fr; }
+    .tools-guides-list {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

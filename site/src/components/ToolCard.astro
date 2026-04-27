@@ -1,0 +1,84 @@
+---
+import type { DisplayTool } from "../lib/toolDisplay";
+
+type Props = {
+  tool: DisplayTool;
+  href: string;
+  fallbackText?: string;
+};
+
+const { tool, href, fallbackText = "Kurzbeschreibung folgt." } = Astro.props as Props;
+---
+
+<a
+  href={href}
+  class="card tool-card"
+  data-title={tool.title.toLowerCase()}
+  data-slug={tool.slug.toLowerCase()}
+  data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
+  data-added={tool.addedAtMs}
+  data-popularity={tool.popularity}
+>
+  <div class="tool-header">
+    <div class="tool-image">
+      {tool.iconUrl ? (
+        <span class="tool-card-logo">
+          <img
+            src={tool.iconUrl}
+            alt={tool.title}
+            loading="lazy"
+            data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined}
+          />
+        </span>
+      ) : tool.fallbackIcon === "ai" ? (
+        <span class="tool-card-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      ) : tool.fallbackIcon === "automation" ? (
+        <span class="tool-card-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      ) : tool.fallbackIcon === "design" ? (
+        <span class="tool-card-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      ) : (
+        <span class="tool-card-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path
+              d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      )}
+    </div>
+    <div class="tool-info">
+      <h3 class="tool-title">{tool.title}</h3>
+      <p class="tools-desc">{tool.excerpt || tool.description || fallbackText}</p>
+    </div>
+  </div>
+  <div class="tool-badges">
+    {tool.category && (
+      <span class="badge badge-category">{tool.category}</span>
+    )}
+    {tool.priceModel && (
+      <span class="badge badge-price">{tool.priceModel}</span>
+    )}
+  </div>
+</a>

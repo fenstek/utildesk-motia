@@ -1,9 +1,9 @@
 ---
+import ToolCard from "../../../components/ToolCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../../lib/categories";
-import { categoryDescriptionEn, categoryTitleEn, getEnglishToolMeta } from "../../../lib/englishContent";
-import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
-import { tagHref } from "../../../lib/tagRoutes";
+import { categoryDescriptionEn, categoryTitleEn } from "../../../lib/englishContent";
+import { listDisplayTools } from "../../../lib/toolDisplay";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
@@ -12,25 +12,39 @@ import {
 } from "../../../lib/siteMeta";
 
 export async function getStaticPaths() {
-  return CATEGORIES.map((category) => ({ params: { locale: "en", slug: category.slug }, props: { category } }));
+  return CATEGORIES.map((category) => ({
+    params: { locale: "en", slug: category.slug },
+    props: { category },
+  }));
 }
 
 const { category } = Astro.props;
-const entries = await listActiveToolEntries();
-const tools = entries
-  .filter((entry) => {
-    const tags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [];
-    return tags.some((tag) => category.matchTags.includes(tag));
-  })
-  .map((entry) => ({ slug: entry.slug, ...getEnglishToolMeta(entry) }))
-  .sort((a, b) => a.title.localeCompare(b.title, "en"));
 const title = categoryTitleEn(category.slug, category.title);
 const description = categoryDescriptionEn(category.slug, category.description);
+
+const tools = [...(await listDisplayTools("en"))]
+  .filter((tool) => tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag)))
+  .sort((a, b) => a.title.localeCompare(b.title, "en"));
+const toolCount = tools.length;
+
+const seoIntro = `${description}\n\nUse this category as a practical starting point when you want to compare tools by workflow fit instead of vendor language.`;
+const seoSections = [
+  {
+    title: `How to compare ${title} tools`,
+    text: "Start with the task you need to solve, then compare pricing, data handling, integrations, export options and how quickly the tool fits into your existing workflow.",
+  },
+  {
+    title: "What Utildesk checks",
+    text: "Utildesk keeps the catalogue focused on real use cases: what the tool does, who it is useful for, and whether the surrounding metadata is clear enough for people and AI agents.",
+  },
+];
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: `${title} tools`,
-  numberOfItems: tools.length,
+  name: title,
+  url: `${SITE_URL}/en/category/${category.slug}/`,
+  numberOfItems: toolCount,
   itemListElement: tools.slice(0, 200).map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -42,7 +56,7 @@ const collectionSchema = buildCollectionPageSchema({
   name: `${title} AI tools`,
   description,
   url: `${SITE_URL}/en/category/${category.slug}/`,
-  about: [title, "AI tools"],
+  about: [title, "AI tools", "Category"],
   mainEntity: itemListSchema,
   inLanguage: SITE_LANGUAGE_EN,
 });
@@ -53,7 +67,11 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 ---
 
-<BaseLayout locale="en" title={`${title} AI Tools - Utildesk`} description={description}>
+<BaseLayout
+  locale="en"
+  title={`${title} - Utildesk`}
+  description={description}
+>
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de/en/category/${category.slug}/`} />
     <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
@@ -61,26 +79,159 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <nav class="breadcrumb"><a href="/en/category/">← All categories</a></nav>
-  <section class="hero" style="padding: 42px 0 32px;">
-    <h1 class="hero-title">{title}</h1>
-    <p class="hero-subtitle">{description}</p>
-  </section>
+  <div class="container">
+    <section class="category-page">
+      <nav class="breadcrumb">
+        <a href="/en/category/">Back to all categories</a>
+      </nav>
 
-  <div class="tools-grid">
-    {tools.map((tool) => (
-      <a href={`/en/tools/${tool.slug}/`} class="card tool-card">
-        <div class="tool-header">
-          <div class="tool-image"><span class="tool-card-logo" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span></div>
-          <div class="tool-info">
-            <h3 class="tool-title">{tool.title}</h3>
-            <p class="tools-desc">{tool.description}</p>
+      <h1 class="page-title">{title}</h1>
+      <p class="page-description">{description}</p>
+
+      <section class="category-seo">
+        <div class="seo-intro" set:html={seoIntro.replace(/\n/g, "</p><p>")}></div>
+        {seoSections.map((section) => (
+          <div class="seo-section">
+            <h2 class="seo-section-title">{section.title}</h2>
+            <p class="seo-section-text">{section.text}</p>
           </div>
-        </div>
-        <div class="tool-badges">
-          {tool.tags.slice(0, 3).map((tag) => <span class="badge badge-tag">{tag}</span>)}
-        </div>
-      </a>
-    ))}
+        ))}
+      </section>
+
+      {toolCount < 5 && (
+        <p class="notice">This category is still being filled.</p>
+      )}
+
+      <p class="tool-count">{toolCount} {toolCount === 1 ? "tool" : "tools"} in this category</p>
+
+      <div class="tools-grid">
+        {tools.map((tool) => (
+          <ToolCard tool={tool} href={`/en/tools/${tool.slug}/`} fallbackText="Short description coming soon." />
+        ))}
+      </div>
+    </section>
   </div>
 </BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .category-page {
+    padding: 40px 0 60px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 24px;
+  }
+
+  .breadcrumb a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9375rem;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .page-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+
+  .page-description {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    max-width: 720px;
+  }
+
+  .notice {
+    padding: 12px 16px;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .tool-count {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 700px) {
+    .tools-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .tools-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .category-seo {
+    max-width: 720px;
+    margin: 32px 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .seo-intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+
+  .seo-intro :global(p) {
+    margin-bottom: 16px;
+  }
+
+  .seo-intro :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .seo-section {
+    margin-bottom: 24px;
+  }
+
+  .seo-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .seo-section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .seo-section-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin: 0;
+  }
+</style>
