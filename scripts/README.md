@@ -21,7 +21,7 @@ Useful commands:
 - `npm run translate:tools:en -- --force --slug=twilio`
 
 Environment:
-- `CODEX_TRANSLATION_MODEL` optional; empty uses the current Codex default model.
+- `CODEX_TRANSLATION_MODEL` optional; if omitted, the translator uses `gpt-5.4-mini`.
 - `CODEX_TRANSLATION_CONCURRENCY=1` is the safe default because each item runs a separate `codex exec` process.
 - `TRANSLATE_LIMIT`, `TRANSLATE_SLUGS`, and `TRANSLATE_LOG_PATH` are supported for batch control.
 - `CODEX_CLI_PATH` is optional; on Windows the script auto-resolves the installed Codex CLI JS entrypoint to avoid PowerShell shim issues.
