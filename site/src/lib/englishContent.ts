@@ -1,4 +1,6 @@
 import { marked } from "marked";
+import { existsSync, readFileSync } from "node:fs";
+import matter from "gray-matter";
 import { stripMarkdown } from "./machineReadable";
 import { normalizePriceModel } from "./priceModel";
 
@@ -81,6 +83,35 @@ const TAG_LABELS: Record<string, string> = {
   webstrategie: "web strategy",
 };
 
+type ToolEntryLike = { slug: string; data: Record<string, any>; content: string };
+type EnglishToolTranslation = {
+  data: Record<string, any>;
+  content: string;
+};
+
+const EN_TOOLS_DIR = new URL("../../../content/en/tools/", import.meta.url);
+const englishToolTranslationCache = new Map<string, EnglishToolTranslation | null>();
+
+const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null => {
+  if (englishToolTranslationCache.has(slug)) {
+    return englishToolTranslationCache.get(slug) ?? null;
+  }
+
+  const fileUrl = new URL(`${slug}.md`, EN_TOOLS_DIR);
+  if (!existsSync(fileUrl)) {
+    englishToolTranslationCache.set(slug, null);
+    return null;
+  }
+
+  const parsed = matter(readFileSync(fileUrl, "utf8"));
+  const translation = {
+    data: parsed.data as Record<string, any>,
+    content: parsed.content.trim(),
+  };
+  englishToolTranslationCache.set(slug, translation);
+  return translation;
+};
+
 export const categoryTitleEn = (slug: string, fallback?: string) =>
   CATEGORY_EN[slug]?.title ?? translateLabel(fallback ?? slug);
 
@@ -113,7 +144,41 @@ const cleanSentence = (value: string) =>
 
 const indefiniteArticle = (value: string) => (/^[aeiou]/i.test(value) ? "an" : "a");
 
-export const getEnglishToolMeta = (entry: { slug: string; data: Record<string, any>; content: string }) => {
+export const getEnglishToolMeta = (entry: ToolEntryLike) => {
+  const translation = getEnglishToolTranslation(entry.slug);
+  if (translation) {
+    const title = String(translation.data.title ?? entry.data.title ?? entry.slug).trim();
+    const category = translation.data.category
+      ? String(translation.data.category)
+      : translateLabel(entry.data.category ? String(entry.data.category) : "");
+    const priceModel = translation.data.price_model
+      ? normalizePriceModel(String(translation.data.price_model)) || String(translation.data.price_model)
+      : translatePriceModel(entry.data.price_model ? String(entry.data.price_model) : "");
+    const tags = Array.isArray(translation.data.tags)
+      ? translation.data.tags.map(String).filter(Boolean)
+      : translateTags(Array.isArray(entry.data.tags) ? entry.data.tags.map(String) : []);
+    const officialUrl = entry.data.official_url ? String(entry.data.official_url) : "";
+    const affiliateUrl = entry.data.affiliate_url ? String(entry.data.affiliate_url) : "";
+    const firstParagraph = cleanSentence(
+      translation.data.description
+        ? String(translation.data.description)
+        : translation.content.split(/\n\s*\n/).find((paragraph) => !paragraph.trim().startsWith("#")) ?? "",
+    );
+    const description = firstParagraph || `${title} in the Utildesk AI tools directory.`;
+
+    return {
+      title,
+      category,
+      priceModel,
+      tags,
+      officialUrl,
+      affiliateUrl,
+      targetUrl: affiliateUrl || officialUrl,
+      description,
+      metaDescription: description.length > 158 ? `${description.slice(0, 155).trimEnd()}...` : description,
+    };
+  }
+
   const title = String(entry.data.title ?? entry.slug).trim();
   const category = translateLabel(entry.data.category ? String(entry.data.category) : "");
   const priceModel = translatePriceModel(entry.data.price_model ? String(entry.data.price_model) : "");
@@ -156,9 +221,7 @@ export const extractAlternativeNames = (content: string, maxItems = 5) => {
     .slice(0, maxItems);
 };
 
-export const buildEnglishToolFeatureList = (
-  entry: { slug: string; data: Record<string, any>; content: string },
-) => {
+export const buildEnglishToolFeatureList = (entry: ToolEntryLike) => {
   const meta = getEnglishToolMeta(entry);
   const focusTags = meta.tags.filter((tag) => tag.toLowerCase() !== "ai").slice(0, 4);
   const focusText = focusTags.length ? focusTags.join(", ") : meta.category || "AI workflow";
@@ -171,7 +234,12 @@ export const buildEnglishToolFeatureList = (
   ];
 };
 
-export const buildEnglishToolMarkdown = (entry: { slug: string; data: Record<string, any>; content: string }) => {
+export const buildEnglishToolMarkdown = (entry: ToolEntryLike) => {
+  const translation = getEnglishToolTranslation(entry.slug);
+  if (translation?.content) {
+    return translation.content;
+  }
+
   const meta = getEnglishToolMeta(entry);
   const focusTags = meta.tags.filter((tag) => tag.toLowerCase() !== "ai").slice(0, 5);
   const features = buildEnglishToolFeatureList(entry);
@@ -219,5 +287,5 @@ export const buildEnglishToolMarkdown = (entry: { slug: string; data: Record<str
   return lines.join("\n");
 };
 
-export const buildEnglishToolHtml = (entry: { slug: string; data: Record<string, any>; content: string }) =>
+export const buildEnglishToolHtml = (entry: ToolEntryLike) =>
   String(marked.parse(buildEnglishToolMarkdown(entry)));

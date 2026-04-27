@@ -1,34 +1,51 @@
 ---
+import ToolCard from "../../../../components/ToolCard.astro";
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
-import { getEnglishToolMeta } from "../../../../lib/englishContent";
-import { listActiveToolEntries } from "../../../../lib/toolEntries.mjs";
+import { listDisplayTools } from "../../../../lib/toolDisplay";
 import { slugifyTag, tagHref } from "../../../../lib/tagRoutes";
-import { buildBreadcrumbSchema, buildCollectionPageSchema, SITE_LANGUAGE_EN, SITE_URL } from "../../../../lib/siteMeta";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_LANGUAGE_EN,
+  SITE_URL,
+} from "../../../../lib/siteMeta";
 
 export async function getStaticPaths() {
-  const entries = await listActiveToolEntries();
+  const tools = await listDisplayTools("en");
   const tags = new Map<string, string>();
-  entries.forEach((entry) => {
-    const meta = getEnglishToolMeta(entry);
-    meta.tags.forEach((tag) => tags.set(slugifyTag(tag), tag));
+  tools.forEach((tool) => {
+    tool.tags.forEach((tag) => {
+      const tagSlug = slugifyTag(tag);
+      if (tagSlug && !tags.has(tagSlug)) tags.set(tagSlug, tag);
+    });
   });
-  return Array.from(tags.entries()).map(([slug, tag]) => ({ params: { locale: "en", slug }, props: { tag } }));
+  return Array.from(tags.entries()).map(([slug, tag]) => ({
+    params: { locale: "en", slug },
+    props: { tag },
+  }));
 }
 
-const { tag } = Astro.props;
-const entries = await listActiveToolEntries();
-const tools = entries
-  .map((entry) => ({ slug: entry.slug, ...getEnglishToolMeta(entry) }))
-  .filter((tool) => tool.tags.some((item) => slugifyTag(item) === slugifyTag(tag)))
-  .sort((a, b) => a.title.localeCompare(b.title, "en"));
-const tagSlug = slugifyTag(tag);
-const description = `AI tools tagged ${tag} in the Utildesk English catalogue.`;
+const { slug } = Astro.params;
+const selectedTag = String(Astro.props.tag || "");
+
+if (!selectedTag) {
+  return Astro.redirect("/404");
+}
+
+const enabledTools = await listDisplayTools("en");
+const selectedTagLower = selectedTag.toLowerCase();
+const filteredTools = enabledTools
+  .filter((tool) => tool.tags.some((tag) => tag.toLowerCase() === selectedTagLower))
+  .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "en"));
+const tagSlug = slugifyTag(selectedTag);
+const description = `Filtered selection of AI tools tagged ${selectedTag}.`;
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: `${tag} AI tools`,
-  numberOfItems: tools.length,
-  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+  name: `${selectedTag} AI tools`,
+  numberOfItems: filteredTools.length,
+  itemListElement: filteredTools.slice(0, 200).map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.title,
@@ -36,49 +53,76 @@ const itemListSchema = {
   })),
 };
 const collectionSchema = buildCollectionPageSchema({
-  name: `${tag} AI tools`,
+  name: `Tag: ${selectedTag}`,
   description,
   url: `${SITE_URL}/en/tools/tag/${tagSlug}/`,
-  about: [tag, "AI tools"],
+  about: [selectedTag, "AI tools", "Tags"],
   mainEntity: itemListSchema,
   inLanguage: SITE_LANGUAGE_EN,
 });
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Directory", url: `${SITE_URL}/en/` },
   { name: "Tools", url: `${SITE_URL}/en/tools/` },
-  { name: `#${tag}`, url: `${SITE_URL}/en/tools/tag/${tagSlug}/` },
+  { name: `Tag: ${selectedTag}`, url: `${SITE_URL}${tagHref(selectedTag, "en")}` },
 ]);
+
+const tagFrequency = new Map<string, number>();
+enabledTools.forEach((tool) => {
+  tool.tags.forEach((tag) => {
+    const normalized = tag.trim().toLowerCase();
+    if (!normalized) return;
+    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
+  });
+});
+const visibleTags = Array.from(tagFrequency.entries())
+  .sort((a, b) => {
+    if (b[1] !== a[1]) return b[1] - a[1];
+    return a[0].localeCompare(b[0], "en");
+  })
+  .map(([tag]) => tag)
+  .filter((tag) => (tagFrequency.get(tag) || 0) >= 2)
+  .slice(0, 32);
 ---
 
-<BaseLayout locale="en" title={`${tag} AI Tools - Utildesk`} description={description}>
+<BaseLayout
+  locale="en"
+  title={`${selectedTag} - Utildesk Tools`}
+  description={`Tools tagged ${selectedTag} in the Utildesk directory`}
+>
   <Fragment slot="head">
-    <link rel="canonical" href={`https://tools.utildesk.de${tagHref(tag, "en")}`} />
+    <link rel="canonical" href={`https://tools.utildesk.de${tagHref(selectedTag, "en")}`} />
     <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <nav class="breadcrumb"><a href="/en/tools/">← All tools</a></nav>
-  <section class="hero" style="padding: 42px 0 32px;">
-    <h1 class="hero-title">#{tag}</h1>
-    <p class="hero-subtitle">{description}</p>
+  <section class="hero" style="padding: 60px 0 40px;">
+    <h1 class="hero-title">Tag: {selectedTag}</h1>
+    <p class="hero-subtitle">
+      Filtered selection of tools tagged {selectedTag}.
+    </p>
   </section>
 
-  <div class="tools-grid">
-    {tools.map((tool) => (
-      <a href={`/en/tools/${tool.slug}/`} class="card tool-card">
-        <div class="tool-header">
-          <div class="tool-image"><span class="tool-card-logo" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span></div>
-          <div class="tool-info">
-            <h3 class="tool-title">{tool.title}</h3>
-            <p class="tools-desc">{tool.description}</p>
-          </div>
-        </div>
-        <div class="tool-badges">
-          {tool.category && <span class="badge badge-category">{tool.category}</span>}
-          {tool.priceModel && <span class="badge badge-price">{tool.priceModel}</span>}
-        </div>
-      </a>
+  {visibleTags.length > 0 && (
+    <div class="tag-filter-row">
+      <label class="tag-filter-label">More tags:</label>
+      <div class="tag-filter-list">
+        {visibleTags.map((tag) => (
+          <a
+            href={tagHref(tag, "en")}
+            class:list={["tag-filter-item", tag.toLowerCase() === selectedTagLower && "active"]}
+          >
+            {tag}
+          </a>
+        ))}
+        <a href="/en/tools/" class="clear-filter-btn">All tools</a>
+      </div>
+    </div>
+  )}
+
+  <div class="tools-grid" id="tools-grid">
+    {filteredTools.map((tool) => (
+      <ToolCard tool={tool} href={`/en/tools/${tool.slug}/`} fallbackText="Short description coming soon." />
     ))}
   </div>
 </BaseLayout>

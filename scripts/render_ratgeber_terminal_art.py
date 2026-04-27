@@ -116,6 +116,9 @@ def parse_frontmatter(path: Path) -> Article:
 
 def kind(article: Article) -> str:
     title = article.title.lower()
+    text = " ".join([title, article.excerpt.lower(), " ".join(tag.lower() for tag in article.tags)])
+    if any(term in text for term in ["wispr", "diktat", "dictation", "voice", "sprach", "transkrip", "speech"]):
+        return "voice"
     if "chatgpt" in title:
         return "models"
     if "website" in title:
@@ -133,6 +136,7 @@ def article_terms(article: Article) -> list[str]:
         "crawl": ["Crawler", "Agenten", "IndexNow", "Guardrails"],
         "orchestration": ["NotebookLM", "Agenten", "Review", "Kontext"],
         "developer": ["IDE", "CLI", "Tests", "Release"],
+        "voice": ["Diktat", "Voice", "Textfluss", "Workflow"],
     }
     terms = by_kind.get(kind(article), [article.category, *article.tags])
     seen: set[str] = set()
@@ -502,6 +506,33 @@ def draw_developer_cover(a: Art, article: Article) -> None:
     a.gear((1404, 684), 30, BLUE_D, fill=BLUE_2)
 
 
+def draw_voice_cover(a: Art, article: Article) -> None:
+    a.header(article, "VOICE WRITING")
+    a.dots(88, 184, 10, 8, fill=SUN, step=18, r=4)
+    a.browser_window((118, 214, 530, 548), "input")
+    a.round_rect((194, 286, 454, 476), fill=BLUE_2, outline=BLUE_D, radius=96, width=4, shadow=True)
+    a.round_rect((280, 320, 368, 430), fill=WHITE, outline=BLUE_D, radius=36, width=4)
+    a.line([(324, 430), (324, 484)], fill=BLUE_D, width=6)
+    a.draw.arc((248, 354, 400, 498), 20, 160, fill=ORANGE, width=5)
+    a.draw.arc((226, 326, 422, 526), 20, 160, fill=SUN, width=4)
+    for x, y, w in [(600, 286, 180), (650, 382, 230), (610, 478, 150), (692, 574, 260)]:
+        a.flow([(x, y), (x + w // 2, y - 30), (x + w, y + 8)], fill=[BLUE_D, ORANGE, GREEN_D, BLUE_D][(x + y) % 4], width=4)
+    a.robot(875, 372, 0.82, accent=SUN)
+    a.round_rect((736, 548, 1018, 672), fill=WHITE, outline=GREEN_D, radius=62, width=3, shadow=True)
+    a.text((796, 584), "tone cleanup", F["sm_b"], GREEN_D)
+    a.browser_window((1110, 202, 1510, 724), "ready text")
+    for index, y in enumerate([300, 356, 412, 490, 546, 602]):
+        color = [GREEN, BLUE_D, LINE_D, ORANGE, GREEN, LINE_D][index]
+        a.line([(1160, y), (1458 - (index % 3) * 70, y)], fill=color, width=5 if index in [0, 3] else 3)
+        if index in [1, 4]:
+            a.line([(1160, y + 22), (1370, y + 22)], fill=LINE_D, width=2)
+    for x, y, label in [(156, 702, "speak"), (390, 702, "rewrite"), (1204, 760, "paste")]:
+        a.round_rect((x, y, x + 160, y + 54), fill=WHITE, outline=GREEN_D, radius=26, width=2, shadow=True)
+        a.text((x + 28, y + 15), label, F["tiny"], GREEN_D)
+    for x, y in [(584, 214), (1038, 236), (1044, 706), (1458, 158)]:
+        a.star(x, y, 22, fill=SUN)
+
+
 def draw_generic_cover(a: Art, article: Article) -> None:
     draw_orchestration_cover(a, article)
 
@@ -597,6 +628,37 @@ def draw_developer_workflow(a: Art, article: Article) -> None:
     a.gear((1390, 706), 34, GREEN_D, fill=MINT_2)
 
 
+def draw_voice_workflow(a: Art, article: Article) -> None:
+    a.header(article, "VOICE TO TEXT")
+    steps = [
+        (124, 300, "Speak", "raw thought", BLUE_2),
+        (404, 220, "Capture", "microphone", SUN_2),
+        (700, 332, "AI cleanup", "tone + structure", MINT_2),
+        (1010, 246, "Paste", "current app", BLUE_2),
+        (1284, 438, "Review", "human check", SUN_2),
+    ]
+    for x, y, title, sub, color in steps:
+        a.small_label((x, y, x + 210, y + 124), title, sub, accent=GREEN_D)
+        if title == "Capture":
+            a.round_rect((x + 134, y + 34, x + 174, y + 84), fill=WHITE, outline=BLUE_D, radius=18, width=3)
+            a.line([(x + 154, y + 84), (x + 154, y + 108)], fill=BLUE_D, width=4)
+        elif title == "AI cleanup":
+            a.robot(x + 160, y + 64, 0.42, accent=SUN)
+        else:
+            a.gear((x + 164, y + 58), 20, BLUE_D, fill=color)
+    a.flow([(334, 362), (386, 284), (404, 280)], fill=BLUE_D, width=5)
+    a.flow([(614, 280), (680, 334), (700, 394)], fill=ORANGE, width=5)
+    a.flow([(910, 394), (982, 314), (1010, 306)], fill=GREEN_D, width=5)
+    a.flow([(1220, 306), (1276, 388), (1284, 498)], fill=BLUE_D, width=5)
+    a.round_rect((256, 650, 1344, 776), fill=PAPER_2, outline=LINE_D, radius=64, width=2, shadow=True)
+    for i, label_text in enumerate(["voice", "context", "rewrite", "insert", "approve"]):
+        x = 330 + i * 192
+        a.round_rect((x, 690, x + 148, 730), fill=WHITE, outline=LINE, radius=20, width=2)
+        a.text((x + 18, 701), label_text, F["tiny"], GREEN_D)
+    for x, y in [(238, 214), (624, 548), (1188, 596), (1472, 278)]:
+        a.star(x, y, 24, fill=SUN)
+
+
 def render_cover(article: Article, output: Path) -> None:
     art = Art()
     {
@@ -604,6 +666,7 @@ def render_cover(article: Article, output: Path) -> None:
         "crawl": draw_crawl_cover,
         "orchestration": draw_orchestration_cover,
         "developer": draw_developer_cover,
+        "voice": draw_voice_cover,
     }.get(kind(article), draw_generic_cover)(art, article)
     output.parent.mkdir(parents=True, exist_ok=True)
     art.img.convert("RGB").save(output, "PNG", optimize=True)
@@ -616,6 +679,7 @@ def render_workflow(article: Article, output: Path) -> None:
         "crawl": draw_crawl_workflow,
         "orchestration": draw_orchestration_workflow,
         "developer": draw_developer_workflow,
+        "voice": draw_voice_workflow,
     }.get(kind(article), draw_orchestration_workflow)(art, article)
     output.parent.mkdir(parents=True, exist_ok=True)
     art.img.convert("RGB").save(output, "PNG", optimize=True)

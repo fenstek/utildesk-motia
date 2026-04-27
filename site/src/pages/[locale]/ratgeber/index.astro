@@ -13,6 +13,17 @@ export function getStaticPaths() {
 }
 
 const articles = await listRatgeberEntries("en");
+
+const normalizeMetaLabel = (value: string) =>
+  String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/^ai[-\s]+/, "")
+    .replace(/^ki[-\s]+/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -59,7 +70,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   </section>
 
   <section class="rg-list">
-    {articles.map((article) => {
+    {articles.length === 0 ? (
+      <p class="rg-empty">Coming soon: the first guide article.</p>
+    ) : articles.map((article) => {
       const published = article.data.date
         ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(article.data.date))
         : "";
@@ -75,7 +88,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           <div class="rg-card-body">
             <div class="rg-card-meta-top">
               {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
-              {article.data.category ? <span class="rg-chip">{article.data.category}</span> : null}
+              {article.data.category && normalizeMetaLabel(article.data.category) !== normalizeMetaLabel(String(article.data.eyebrow ?? "")) ? <span class="rg-chip">{article.data.category}</span> : null}
             </div>
             <h2 class="rg-card-title">{article.data.title}</h2>
             {article.data.excerpt ? <p class="rg-card-excerpt">{article.data.excerpt}</p> : null}
@@ -92,26 +105,221 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 </BaseLayout>
 
 <style>
-  .ratgeber-hero { padding: 44px 0 36px; max-width: 760px; }
-  .rg-eyebrow { margin: 0 0 16px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary); }
-  .ratgeber-hero h1 { margin: 0; font-size: clamp(1.95rem, 3.6vw, 3rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.04em; color: var(--on-surface); }
-  .rg-sub { margin: 16px 0 0; font-size: 1.02rem; line-height: 1.78; color: var(--secondary); max-width: 62ch; }
-  .rg-list { display: flex; flex-direction: column; padding-bottom: 72px; border-top: 1px solid rgba(23, 98, 89, 0.12); }
-  .rg-card { display: grid; grid-template-columns: minmax(280px, 34%) minmax(0, 1fr); gap: 32px; align-items: center; padding: 30px 0; border-bottom: 1px solid rgba(23, 98, 89, 0.12); text-decoration: none; color: inherit; transition: transform var(--transition); }
-  .rg-card:hover { transform: translateY(-2px); }
-  .rg-media-stage { display: flex; align-items: center; justify-content: center; min-height: 248px; padding: 18px; border-radius: 32px; background: linear-gradient(145deg, rgba(255,250,243,.46), rgba(23,98,89,.03)); border: 1px solid rgba(23, 98, 89, 0.12); }
-  .rg-media-stage img { width: 100%; height: 100%; max-height: 292px; object-fit: contain; display: block; }
-  .rg-card-body { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-  .rg-card-meta-top, .rg-card-meta-bottom { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .rg-chip { display: inline-flex; padding: 4px 11px; border-radius: var(--radius-full); font-size: 0.74rem; font-weight: 700; background: rgba(23,98,89,.05); color: var(--on-surface-variant); border: 1px solid rgba(23,98,89,.10); }
-  .rg-chip--accent { background: rgba(23,98,89,.10); color: var(--primary); }
-  .rg-card-title { margin: 0; font-size: clamp(1.4rem, 2vw, 1.95rem); font-weight: 800; line-height: 1.14; letter-spacing: -0.03em; color: var(--on-surface); max-width: 22ch; }
-  .rg-card-excerpt { margin: 0; font-size: 1rem; line-height: 1.74; color: var(--secondary); max-width: 62ch; }
-  .rg-meta { font-size: 0.82rem; color: var(--secondary); opacity: 0.75; }
-  .rg-arrow { margin-left: auto; font-size: 0.74rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary); }
+  .ratgeber-hero {
+    padding: 44px 0 36px;
+    max-width: 760px;
+  }
+
+  .rg-eyebrow {
+    margin: 0 0 16px;
+    font-size: 0.73rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--primary);
+  }
+
+  .ratgeber-hero h1 {
+    margin: 0;
+    font-size: clamp(1.95rem, 3.6vw, 3rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    color: var(--on-surface);
+  }
+
+  .rg-sub {
+    margin: 16px 0 0;
+    font-size: 1.02rem;
+    line-height: 1.78;
+    color: var(--secondary);
+    max-width: 62ch;
+  }
+
+  .rg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 72px;
+    border-top: 1px solid rgba(23, 98, 89, 0.12);
+  }
+
+  .rg-card {
+    display: grid;
+    grid-template-columns: minmax(280px, 34%) minmax(0, 1fr);
+    gap: 32px;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(23, 98, 89, 0.12);
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--transition), color var(--transition);
+  }
+
+  .rg-card:hover {
+    transform: translateY(-2px);
+    color: inherit;
+  }
+
+  .rg-card-figure {
+    padding-right: 8px;
+  }
+
+  .rg-media-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 248px;
+    padding: 18px;
+    border-radius: 32px;
+    background:
+      radial-gradient(circle at top left, rgba(23, 98, 89, 0.10), transparent 44%),
+      linear-gradient(145deg, rgba(255, 250, 243, 0.46), rgba(23, 98, 89, 0.03));
+    border: 1px solid rgba(23, 98, 89, 0.12);
+    box-shadow: 0 14px 34px rgba(18, 28, 24, 0.05);
+  }
+
+  .rg-media-stage img {
+    width: 100%;
+    height: 100%;
+    max-height: 292px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .rg-card-body {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .rg-card-meta-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .rg-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 11px;
+    border-radius: var(--radius-full);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: rgba(23, 98, 89, 0.05);
+    color: var(--on-surface-variant);
+    border: 1px solid rgba(23, 98, 89, 0.10);
+  }
+
+  .rg-chip--accent {
+    background: rgba(23, 98, 89, 0.10);
+    color: var(--primary);
+    border-color: rgba(23, 98, 89, 0.16);
+  }
+
+  .rg-card-title {
+    margin: 0;
+    font-size: clamp(1.4rem, 2vw, 1.95rem);
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -0.03em;
+    color: var(--on-surface);
+    max-width: 18ch;
+  }
+
+  .rg-card-excerpt {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.74;
+    color: var(--secondary);
+    max-width: 62ch;
+  }
+
+  .rg-card-meta-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  .rg-meta {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    opacity: 0.75;
+    font-weight: 500;
+  }
+
+  .rg-arrow {
+    margin-left: auto;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    opacity: 0.84;
+    transition: transform var(--transition), opacity var(--transition);
+  }
+
+  .rg-card:hover .rg-arrow {
+    transform: translateX(3px);
+    opacity: 1;
+  }
+
+  .rg-empty {
+    color: var(--secondary);
+    padding: 40px 0;
+  }
+
+  :root[data-theme="dark"] .rg-list,
+  :root[data-theme="dark"] .rg-card {
+    border-color: rgba(139, 152, 145, 0.18);
+  }
+
+  :root[data-theme="dark"] .rg-media-stage {
+    background:
+      radial-gradient(circle at top left, rgba(129, 208, 192, 0.12), transparent 42%),
+      linear-gradient(145deg, rgba(38, 49, 45, 0.58), rgba(20, 27, 25, 0.96));
+    border-color: rgba(139, 152, 145, 0.18);
+    box-shadow: 0 18px 34px rgba(4, 10, 8, 0.22);
+  }
+
   @media (max-width: 860px) {
-    .rg-card { grid-template-columns: 1fr; gap: 18px; }
-    .rg-card-title { max-width: none; }
-    .rg-arrow { margin-left: 0; }
+    .rg-card {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .rg-card-figure {
+      padding-right: 0;
+    }
+
+    .rg-media-stage {
+      min-height: 210px;
+      padding: 16px;
+    }
+
+    .rg-media-stage img {
+      max-height: 200px;
+    }
+
+    .rg-card-body {
+      padding: 0;
+    }
+
+    .ratgeber-hero {
+      padding: 28px 0 24px;
+    }
+
+    .rg-card-title {
+      max-width: none;
+    }
+
+    .rg-arrow {
+      margin-left: 0;
+    }
   }
 </style>

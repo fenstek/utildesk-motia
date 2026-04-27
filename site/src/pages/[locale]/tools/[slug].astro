@@ -1,12 +1,16 @@
 ---
+import ToolCard from "../../../components/ToolCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
 import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
+import { CATEGORIES } from "../../../lib/categories";
 import {
   buildEnglishToolFeatureList,
   buildEnglishToolHtml,
+  categoryTitleEn,
   getEnglishToolMeta,
 } from "../../../lib/englishContent";
+import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { tagHref } from "../../../lib/tagRoutes";
 import {
@@ -40,6 +44,82 @@ const logoUrl = brandLogo || localLogo || faviconLogo;
 const logoFallbacks = logoUrl === faviconLogo ? [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(meta.title)] : [];
 const articleHtml = buildEnglishToolHtml(entry);
 const featureList = buildEnglishToolFeatureList(entry);
+const norm = (value: unknown) => String(value ?? "").trim().toLowerCase();
+const categoryNorm = norm(meta.category);
+const seenTags = new Set<string>();
+const displayTags = meta.tags
+  .map(String)
+  .filter((tag) => {
+    const normalized = norm(tag);
+    if (!normalized) return false;
+    if (normalized === "ai") return false;
+    if (categoryNorm && normalized === categoryNorm) return false;
+    if (seenTags.has(normalized)) return false;
+    seenTags.add(normalized);
+    return true;
+  });
+
+const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [];
+const categoryResults = CATEGORIES.map((category) => {
+  const matches = rawTags.filter((tag) => category.matchTags.includes(tag));
+  const matchCount = matches.length;
+  const firstMatchPos = matchCount > 0 ? rawTags.findIndex((tag) => category.matchTags.includes(tag)) : Infinity;
+  return { category, matchCount, firstMatchPos };
+}).filter((result) => result.matchCount > 0);
+categoryResults.sort((a, b) => {
+  if (b.matchCount !== a.matchCount) return b.matchCount - a.matchCount;
+  return a.firstMatchPos - b.firstMatchPos;
+});
+const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category : undefined;
+const providerCtaLabel = providerUrl ? `Open ${meta.title}` : "Open provider";
+
+const normalizeAltName = (value: string) =>
+  String(value ?? "")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/[`*_]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+const normalizeAltNameFuzzy = (value: string) =>
+  normalizeAltName(value)
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\b(ai|tool|app|platform)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+const parseAltItem = (item: string) => {
+  const internalLink = item.match(/^\[([^\]]+)\]\(\/tools\/([^/)\s]+)\/?\)\s*(?::\s*(.*))?$/);
+  if (internalLink) return { name: internalLink[1], slug: internalLink[2] };
+
+  const linked = item.match(/^\[([^\]]+)\]\(([^)]+)\)\s*(?::\s*(.*))?$/);
+  if (linked) return { name: linked[1], slug: "" };
+
+  const bold = item.match(/^\s*\*\*([^*]+)\*\*\s*(?::|\u2013|\u2014|-)?/i);
+  if (bold) return { name: bold[1], slug: "" };
+
+  const plainWithSeparator = item.match(/^\s*([^:\u2013\u2014-][^:\u2013\u2014-]{1,80})\s*(?::|\u2013|\u2014|-)\s*(.+)?$/);
+  if (plainWithSeparator) return { name: plainWithSeparator[1], slug: "" };
+
+  return null;
+};
+const altSection = entry.content.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
+const rawAltItems: string[] = altSection
+  ? (altSection[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((line) => line.replace(/^[-*]\s+/, "").trim())
+  : [];
+const allDisplayTools = await listDisplayTools("en");
+const enabledBySlug = new Map(allDisplayTools.map((tool) => [tool.slug, tool]));
+const enabledByNormTitle = new Map(allDisplayTools.map((tool) => [normalizeAltName(tool.title), tool]));
+const enabledByNormTitleFuzzy = new Map(allDisplayTools.map((tool) => [normalizeAltNameFuzzy(tool.title), tool]));
+const alternatives = rawAltItems.reduce<typeof allDisplayTools>((acc, item) => {
+  const parsed = parseAltItem(item);
+  if (!parsed) return acc;
+  const tool = parsed.slug
+    ? enabledBySlug.get(parsed.slug)
+    : enabledByNormTitle.get(normalizeAltName(parsed.name)) ?? enabledByNormTitleFuzzy.get(normalizeAltNameFuzzy(parsed.name));
+  if (!tool || tool.slug === slug || acc.some((current) => current.slug === tool.slug)) return acc;
+  acc.push(tool);
+  return acc;
+}, []);
+const alternativesTop = alternatives.slice(0, 3);
 const canonicalUrl = `${SITE_URL}/en/tools/${slug}/`;
 const offer = buildOfferFromPriceModel(entry.data.price_model ? String(entry.data.price_model) : null);
 if (offer && meta.priceModel) {
@@ -89,10 +169,23 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   <div class="tool-detail-header">
     <h1 class="tool-detail-title">{meta.title}</h1>
     <div class="tool-detail-badges">
-      {meta.category && <span class="badge badge-category">{meta.category}</span>}
+      {meta.category && primaryCategory ? (
+        <a class="badge badge-category" href={`/en/category/${primaryCategory.slug}/`}>{meta.category}</a>
+      ) : meta.category ? (
+        <span class="badge badge-category">{meta.category}</span>
+      ) : null}
       {meta.priceModel && <span class="badge badge-price">{meta.priceModel}</span>}
-      {meta.tags.slice(0, 7).map((tag) => <a class="badge badge-tag" href={tagHref(tag, "en")}>{tag}</a>)}
+      {displayTags.map((tag) => <a class="badge badge-tag" href={tagHref(tag, "en")}>{tag}</a>)}
     </div>
+
+    {primaryCategory && (
+      <div class="tool-category-link">
+        <span class="category-label">Category:</span>
+        <a href={`/en/category/${primaryCategory.slug}/`} class="category-link-anchor">
+          {categoryTitleEn(primaryCategory.slug, primaryCategory.title)}
+        </a>
+      </div>
+    )}
   </div>
 
   <article class="card article">
@@ -106,14 +199,30 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           ) : null}
           <div class="tool-primary-link-text">
             <span class="tool-primary-link-kicker">Provider</span>
-            <a class="tool-primary-link-anchor" href={providerUrl} target="_blank" rel="noopener noreferrer">Open {meta.title}</a>
+            <a class="tool-primary-link-anchor" href={providerUrl} target="_blank" rel="noopener noreferrer" title={providerCtaLabel}>{providerCtaLabel}</a>
             <p class="tool-primary-link-note">External provider website</p>
           </div>
         </div>
       )}
+      {!providerUrl && logoUrl ? (
+        <span class="tool-float-logo">
+          <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
+        </span>
+      ) : null}
       <div set:html={articleHtml}></div>
     </div>
   </article>
+
+  {alternativesTop.length > 0 && (
+    <section>
+      <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--on-surface); margin: 2.5rem 0 1rem; letter-spacing: -0.02em;">Alternatives</h2>
+      <div class="alt-grid">
+        {alternativesTop.map((tool) => (
+          <ToolCard tool={tool} href={`/en/tools/${tool.slug}/`} fallbackText="Short description coming soon." />
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>
 
 <style>
@@ -167,5 +276,44 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     margin: 0;
     font-size: 0.88rem;
     color: var(--secondary);
+  }
+
+  .tool-category-link {
+    margin-top: 16px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .category-label {
+    color: var(--secondary);
+    margin-right: 8px;
+  }
+
+  .category-link-anchor {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .category-link-anchor:hover {
+    text-decoration: none;
+  }
+
+  .alt-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  @media (min-width: 700px) {
+    .alt-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .alt-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 </style>
