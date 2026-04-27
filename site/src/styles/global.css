@@ -1114,6 +1114,7 @@ main.container {
   min-height: 160px;
   padding: 14px;
   color: inherit;
+  height: 100%;
   transition: background var(--transition), border-color var(--transition);
 }
 
@@ -1140,13 +1141,23 @@ main.container {
 
 .tool-title,
 .home-card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-height: calc(1.35em * 2);
 }
 
 .tools-desc {
   margin: 4px 0 0;
   font-size: 12px;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  min-height: calc(1.55em * 4);
 }
 
 .tool-badges,
