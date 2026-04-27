@@ -23,7 +23,6 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
       slug: entry.slug,
       title: meta.title,
       language: "en",
-      sourceLanguage: "de",
       canonicalUrl: `https://tools.utildesk.de/en/tools/${entry.slug}/`,
       category: meta.category,
       priceModel: meta.priceModel,

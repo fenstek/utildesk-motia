@@ -27,8 +27,6 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
     canonicalUrl: `${SITE_URL}/en/tools/${entry.slug}/`,
     markdownUrl: `${SITE_URL}/en/markdown/tools/${entry.slug}.md`,
     language: "en",
-    sourceLanguage: "de",
-    translationMode: "generated-from-curated-metadata",
     data: {
       slug: entry.slug,
       title: meta.title,
