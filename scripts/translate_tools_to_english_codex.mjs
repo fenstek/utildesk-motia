@@ -17,7 +17,7 @@ const MAX_RETRIES = Math.max(0, Number(process.env.CODEX_TRANSLATION_RETRIES || 
 const LIMIT = Number(process.env.TRANSLATE_LIMIT || argValue("--limit") || 0);
 const FORCE = hasArg("--force");
 const DRY_RUN = hasArg("--dry-run");
-const SLUGS = new Set(parseSlugArgs());
+const SLUGS = new Set(await resolveSlugSelection());
 const SCHEMA_PATH = path.join(TMP_DIR, "tool-translation.schema.json");
 
 const PRICE_MODEL_EN = new Map([
@@ -39,8 +39,6 @@ const FORBIDDEN_META_COPY = [
   /Use this English/i,
   /listed on Utildesk/i,
   /translated from/i,
-  /source language/i,
-  /translation process/i,
 ];
 
 const LEFTOVER_GERMAN_HEADINGS = [
@@ -56,14 +54,34 @@ const LEFTOVER_GERMAN_HEADINGS = [
 
 function argValue(name) {
   const prefix = `${name}=`;
-  return process.argv.find((arg) => arg.startsWith(prefix))?.slice(prefix.length);
+  const eqForm = process.argv.find((arg) => arg.startsWith(prefix));
+  if (eqForm) {
+    return eqForm.slice(prefix.length);
+  }
+  const idx = process.argv.findIndex((arg) => arg === name);
+  if (idx >= 0 && idx + 1 < process.argv.length) {
+    return process.argv[idx + 1];
+  }
+  return "";
 }
 
 function hasArg(name) {
   return process.argv.includes(name);
 }
 
-function parseSlugArgs() {
+async function resolveSlugSelection() {
+  const filePath = String(process.env.TRANSLATE_SLUG_FILE || argValue("--slug-file") || "").trim();
+  if (filePath) {
+    const resolved = path.isAbsolute(filePath) ? filePath : path.join(ROOT, filePath);
+    if (!existsSync(resolved)) {
+      throw new Error(`Slug file not found: ${resolved}`);
+    }
+    const text = await readFile(resolved, "utf8");
+    return text
+      .split(/[\r\n,]+/g)
+      .map((slug) => slug.trim())
+      .filter(Boolean);
+  }
   const raw = [
     process.env.TRANSLATE_SLUGS || "",
     argValue("--slug") || "",
