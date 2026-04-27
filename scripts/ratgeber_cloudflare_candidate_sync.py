@@ -137,7 +137,6 @@ def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
     if visual == "models":
         return """
     <section class="visual bench">
-      <div class="visual-label">[ comparative_model_bench ]</div>
       <div class="router">task -&gt; choose model by strength, risk, context</div>
       <article><b>ChatGPT</b><i>write</i><span style="--w:78%"></span><i>research</i><span style="--w:62%"></span><i>code</i><span style="--w:58%"></span></article>
       <article><b>Claude</b><i>write</i><span style="--w:66%"></span><i>research</i><span style="--w:74%"></span><i>code</i><span style="--w:82%"></span></article>
@@ -147,7 +146,6 @@ def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
     if visual == "crawl":
         return """
     <section class="visual crawl-room">
-      <div class="visual-label">[ crawl_control_room ]</div>
       <div class="bot b1">bot_1</div><div class="bot b2 warn">bot_2</div><div class="bot b3 warn">bot_3</div>
       <div class="waf">WAF</div>
       <div class="site"><b>tools.utildesk.de</b><i></i><i></i><i></i><i></i></div>
@@ -157,7 +155,6 @@ def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
     if visual == "orchestration":
         return """
     <section class="visual agent-bus">
-      <div class="visual-label">[ orchestration_bus ]</div>
       <div class="bus">context bus</div>
       <article class="n1 warn">NotebookLM<small>source draft</small></article>
       <article class="n2">Planner<small>scope</small></article>
@@ -168,7 +165,6 @@ def cover_visual_html(title: str, terms: list[str], job: dict[str, Any]) -> str:
     </section>"""
     return """
     <section class="visual ide-workbench">
-      <div class="visual-label">[ ide_cli_workbench ]</div>
       <div class="ide"><b>IDE / context</b><p>+ define acceptance</p><p>+ split shard tests</p><p>- remove blind merge</p><p>+ verify preview</p></div>
       <div class="cli"><b>$ codex run</b><p>spawn shards</p><p>collect diffs</p><p>run checks</p></div>
       <div class="gate"><b>review gate</b><p>tests: ok</p><p>merge: held</p></div>
@@ -658,7 +654,6 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
 <body>
   <main class="wrap">
     <section>
-      <div class="label">[ utildesk.ratgeber / terminal_illustration ]</div>
       <h1>{escape(visual)}</h1>
       <div class="bar"></div>
       <p class="title">{title_lines}</p>
@@ -870,7 +865,6 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
 </head>
 <body>
   <main class="frame">
-    <div class="label">[ workflow.trace ]</div>
     <h1>FROM SIGNAL TO PUBLISH</h1>
     <p class="dek">{escape(short_label(title, 110))}</p>
     {visual_markup}
@@ -1098,7 +1092,7 @@ def cover_html(title: str, job: dict[str, Any]) -> str:
 <head><meta charset="utf-8"><style>{editorial_image_css()}</style></head>
 <body>
   <main class="frame cover-frame">
-    <section class="meta"><div class="label">[ utildesk.ratgeber ]</div><h1>{escape(visual)}</h1></section>
+    <section class="meta"><h1>{escape(visual)}</h1></section>
     {visual_markup}
     <section class="chips">{render_chips_html(terms)}</section>
   </main>
@@ -1114,12 +1108,96 @@ def workflow_html(title: str, job: dict[str, Any]) -> str:
 <head><meta charset="utf-8"><style>{editorial_image_css()}</style></head>
 <body>
   <main class="frame workflow-frame">
-    <section class="meta"><div class="label">[ workflow.trace ]</div><h1>{escape(workflow_heading(title))}</h1></section>
+    <section class="meta"><h1>{escape(workflow_heading(title))}</h1></section>
     {visual_markup}
     <section class="chips">{render_chips_html(terms)}</section>
   </main>
 </body>
 </html>"""
+
+
+def is_voice_comparison_article(title: str, job: dict[str, Any]) -> bool:
+    haystack = " ".join([
+        title,
+        str(job.get("topic") or ""),
+        str(job.get("angle") or ""),
+        " ".join(str(item) for item in (job.get("related_tool_hints") or [])),
+    ]).lower()
+    return any(token in haystack for token in ("wispr", "diktier", "voice-to-text", "speech", "superwhisper", "aqua voice"))
+
+
+def voice_cover_html(title: str, job: dict[str, Any]) -> str:
+    title_lines = "<br>".join(escape(line) for line in textwrap.wrap(title, width=46)[:4])
+    return f"""<!doctype html>
+<html><head><meta charset="utf-8"><style>
+* {{ box-sizing: border-box; }}
+body {{ margin:0; width:1600px; height:980px; overflow:hidden; font-family:"JetBrains Mono","IBM Plex Mono",Consolas,monospace; color:#16211b; background:#f5f3ea; background-image:linear-gradient(#e0dccb 1px,transparent 1px),linear-gradient(90deg,#e0dccb 1px,transparent 1px); background-size:24px 24px; border:2px solid #c7c3ae; }}
+.scene {{ position:relative; width:100%; height:100%; padding:64px 72px; }}
+.wash-a,.wash-b,.wash-c {{ position:absolute; border-radius:999px; opacity:.52; filter:blur(.2px); }}
+.wash-a {{ width:520px; height:520px; left:86px; top:96px; background:#dff0f0; }}
+.wash-b {{ width:520px; height:520px; right:78px; top:46px; background:#fff1bd; }}
+.wash-c {{ width:440px; height:440px; right:80px; bottom:-130px; background:#dff0e5; }}
+h1 {{ position:absolute; left:76px; top:112px; width:650px; margin:0; color:#275f43; font-size:64px; line-height:.96; letter-spacing:-.06em; }}
+.title {{ position:absolute; left:76px; top:252px; width:650px; font-size:35px; line-height:1.18; font-weight:900; letter-spacing:-.045em; }}
+.voice-card {{ position:absolute; left:90px; top:470px; width:520px; height:260px; border:3px solid #286c7e; border-radius:42px; background:#fffdf4; box-shadow:18px 22px 0 rgba(22,33,27,.16); }}
+.voice-card:before {{ content:""; position:absolute; left:52px; right:52px; top:74px; height:18px; border-radius:99px; background:linear-gradient(90deg,#94d2e7 0 18%,transparent 18% 25%,#f3c85f 25% 45%,transparent 45% 53%,#e58a35 53% 70%,transparent 70% 77%,#4f812c 77%); }}
+.voice-card:after {{ content:"voice note"; position:absolute; left:52px; top:128px; color:#275f43; font-size:34px; font-weight:900; }}
+.mic {{ position:absolute; left:690px; top:332px; width:270px; height:370px; border:3px solid #286c7e; border-radius:110px 110px 86px 86px; background:#d7eef2; box-shadow:18px 22px 0 rgba(22,33,27,.14); }}
+.mic:before {{ content:""; position:absolute; left:62px; right:62px; top:64px; height:96px; border-radius:60px; background:#16211b; box-shadow:0 0 0 22px #bfe5d8; }}
+.mic:after {{ content:""; position:absolute; left:118px; top:-35px; width:34px; height:82px; border-radius:24px; background:#f1ca63; border:3px solid #286c7e; }}
+.wave {{ position:absolute; left:626px; top:395px; width:86px; height:160px; border:8px solid transparent; border-left-color:#e58a35; border-radius:80px; }}
+.wave.two {{ left:604px; top:366px; width:132px; height:218px; border-left-color:#286c7e; opacity:.75; }}
+.output {{ position:absolute; right:88px; top:316px; width:470px; height:330px; border:3px solid #286c7e; border-radius:34px; background:#fffdf4; box-shadow:18px 22px 0 rgba(22,33,27,.14); padding:52px 58px; }}
+.output b {{ display:block; color:#275f43; font-size:34px; margin-bottom:30px; }}
+.line {{ height:10px; margin:22px 0; border-radius:20px; background:#8fcde3; }}
+.line:nth-child(3) {{ width:82%; background:#f1ca63; }} .line:nth-child(4) {{ width:68%; background:#e58a35; }} .line:nth-child(5) {{ width:92%; background:#4f812c; }}
+.apps {{ position:absolute; left:76px; right:76px; bottom:64px; display:flex; gap:18px; align-items:center; }}
+.app {{ padding:16px 22px; border:2px solid #a7a28e; border-radius:22px; background:#fffdf4; color:#275f43; font-size:25px; font-weight:900; box-shadow:8px 9px 0 rgba(22,33,27,.10); }}
+.app.hot {{ background:#4f812c; color:#fffdf4; border-color:#4f812c; }}
+.caption {{ position:absolute; right:92px; bottom:150px; width:480px; color:#63645a; font-size:22px; line-height:1.35; }}
+.spark {{ position:absolute; width:30px; height:30px; transform:rotate(45deg); background:#f1ca63; }} .s1 {{ left:638px; top:236px; }} .s2 {{ right:190px; top:250px; }} .s3 {{ right:350px; bottom:278px; }}
+</style></head><body><main class="scene">
+<div class="wash-a"></div><div class="wash-b"></div><div class="wash-c"></div>
+<h1>VOICE<br>WORKBENCH</h1><div class="title">{title_lines}</div>
+<div class="voice-card"></div><div class="wave two"></div><div class="wave"></div><div class="mic"></div>
+<section class="output"><b>polished text</b><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></section>
+<p class="caption">Sprache wird nicht nur transkribiert. Gute Tools gl&auml;tten, kontextualisieren und halten trotzdem genug Kontrolle beim Menschen.</p>
+<div class="apps"><span class="app hot">Wispr Flow</span><span class="app">Superwhisper</span><span class="app">Aqua Voice</span><span class="app">Otter.ai</span><span class="app">Descript</span></div>
+<div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div>
+</main></body></html>"""
+
+
+def voice_workflow_html(title: str, job: dict[str, Any]) -> str:
+    return """<!doctype html>
+<html><head><meta charset="utf-8"><style>
+* { box-sizing:border-box; }
+body { margin:0; width:1600px; height:980px; overflow:hidden; font-family:"JetBrains Mono","IBM Plex Mono",Consolas,monospace; color:#16211b; background:#f5f3ea; background-image:linear-gradient(#e0dccb 1px,transparent 1px),linear-gradient(90deg,#e0dccb 1px,transparent 1px); background-size:24px 24px; border:2px solid #c7c3ae; }
+.frame { position:relative; width:100%; height:100%; padding:60px 74px; }
+h1 { margin:28px 0 16px; width:980px; color:#275f43; font-size:56px; line-height:1.02; letter-spacing:-.055em; }
+.dek { width:900px; color:#57594f; font-size:26px; line-height:1.32; }
+.wash-a,.wash-b,.wash-c { position:absolute; border-radius:999px; opacity:.48; }
+.wash-a{right:70px;top:58px;width:430px;height:430px;background:#fff1bd;}
+.wash-b{left:72px;bottom:-120px;width:480px;height:480px;background:#dff0e5;}
+.wash-c{right:250px;bottom:78px;width:300px;height:300px;background:#dff0f0;}
+.apps { position:absolute; right:86px; top:88px; display:flex; flex-direction:column; gap:12px; }
+.apps span { padding:10px 16px; border:2px solid #a7a28e; border-radius:18px; background:#fffdf4; color:#275f43; font-size:20px; font-weight:900; box-shadow:7px 8px 0 rgba(22,33,27,.08); }
+.signal { position:absolute; left:116px; right:116px; top:356px; height:128px; border-radius:76px; background:#d7eef2; border:3px solid #286c7e; box-shadow:18px 20px 0 rgba(22,33,27,.13); }
+.signal:before { content:""; position:absolute; left:70px; right:70px; top:52px; height:18px; border-radius:50px; background:linear-gradient(90deg,#286c7e 0 10%,transparent 10% 14%,#f1ca63 14% 28%,transparent 28% 35%,#e58a35 35% 44%,transparent 44% 51%,#4f812c 51% 68%,transparent 68% 73%,#286c7e 73%); }
+.signal small { position:absolute; left:72px; top:18px; color:#275f43; font-size:19px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+.step { position:absolute; top:560px; width:322px; height:278px; padding:30px 30px 28px; border:3px solid #286c7e; border-radius:34px; background:#fffdf4; box-shadow:14px 16px 0 rgba(22,33,27,.13); overflow:hidden; }
+.step b { display:block; color:#275f43; font-size:31px; margin:0 0 12px; }
+.step p { margin:0; color:#57594f; font-size:20px; line-height:1.3; }
+.step .icon { width:78px; height:78px; border-radius:28px; margin-bottom:20px; background:#d7eef2; border:3px solid #286c7e; position:relative; }
+.step .icon:after { content:""; position:absolute; inset:24px 14px; border-radius:40px; background:#16211b; }
+.speak { left:106px; } .clean { left:454px; } .check { left:802px; } .ship { left:1150px; }
+.clean .icon { background:#fff1bd; } .check .icon { background:#e3f0df; } .ship .icon { background:#f8d6ad; }
+.clean .icon:after { inset:18px; border-radius:12px; background:linear-gradient(#286c7e 0 18%,transparent 18% 34%,#e58a35 34% 52%,transparent 52% 68%,#4f812c 68%); }
+.check .icon:after { inset:15px 22px; width:34px; height:48px; transform:rotate(38deg); border-right:9px solid #4f812c; border-bottom:9px solid #4f812c; background:transparent; border-radius:0; }
+.ship .icon:after { inset:22px; background:#4f812c; clip-path:polygon(0 22%,68% 22%,68% 0,100% 50%,68% 100%,68% 78%,0 78%); border-radius:0; }
+.num { position:absolute; right:24px; top:22px; color:#e58a35; font-weight:900; font-size:26px; }
+.rule { position:absolute; left:118px; right:118px; bottom:60px; height:2px; background:#c7c3ae; }
+.spark { position:absolute; width:30px; height:30px; transform:rotate(45deg); background:#f1ca63; } .s1{left:620px;top:294px;} .s2{right:300px;top:326px;} .s3{left:310px;bottom:92px;}
+</style></head><body><main class="frame"><div class="wash-a"></div><div class="wash-b"></div><div class="wash-c"></div><h1>Vom Roh-Diktat zum brauchbaren Workflow</h1><p class="dek">Erst vergleichen, dann entscheiden: Diktat, KI-Gl&auml;ttung, Review und Einsatz geh&ouml;ren in einen kontrollierbaren Ablauf.</p><div class="apps"><span>Wispr Flow</span><span>Superwhisper</span><span>Aqua Voice</span></div><div class="signal"><small>SPRACHE / TEXT / PR&Uuml;FUNG</small></div><section class="step speak"><span class="num">01</span><div class="icon"></div><b>Sprechen</b><p>Rohgedanken aufnehmen, ohne den Fluss zu stoppen.</p></section><section class="step clean"><span class="num">02</span><div class="icon"></div><b>Gl&auml;tten</b><p>KI macht daraus lesbaren Text mit erkennbarem Ton.</p></section><section class="step check"><span class="num">03</span><div class="icon"></div><b>Pr&uuml;fen</b><p>Fakten, Datenschutz und App-Kontext kurz kontrollieren.</p></section><section class="step ship"><span class="num">04</span><div class="icon"></div><b>Einsetzen</b><p>In Mail, Dokument, Kommentar oder Meeting-Notiz nutzen.</p></section><div class="rule"></div><div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div></main></body></html>"""
 
 
 def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool = False) -> None:
@@ -1144,8 +1222,14 @@ def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool
         tmp = Path(tmpdir)
         cover_html_path = tmp / "cover.html"
         workflow_html_path = tmp / "workflow.html"
-        cover_html_path.write_text(cover_html(title, job), encoding="utf-8")
-        workflow_html_path.write_text(workflow_html(title, job), encoding="utf-8")
+        if is_voice_comparison_article(title, job):
+            cover_source = voice_cover_html(title, job)
+            workflow_source = voice_workflow_html(title, job)
+        else:
+            cover_source = cover_html(title, job)
+            workflow_source = workflow_html(title, job)
+        cover_html_path.write_text(cover_source, encoding="utf-8")
+        workflow_html_path.write_text(workflow_source, encoding="utf-8")
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(**launch_kwargs)
             page = browser.new_page(viewport={"width": 1600, "height": 980}, device_scale_factor=1)
