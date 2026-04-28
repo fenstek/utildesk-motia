@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import html
 import json
 import os
@@ -1311,6 +1312,36 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
     return candidate, assets
 
 
+def stable_for_signature(value: Any) -> Any:
+    if isinstance(value, list):
+        return [stable_for_signature(item) for item in value]
+    if isinstance(value, dict):
+        ignored = {"uploadedAt", "updatedAt", "publish", "uploadSignature"}
+        return {
+            key: stable_for_signature(value[key])
+            for key in sorted(value)
+            if key not in ignored
+        }
+    return value
+
+
+def upload_signature(candidate: dict[str, Any], assets: list[dict[str, str]]) -> str:
+    payload = {"candidate": candidate, "assets": assets}
+    encoded = json.dumps(stable_for_signature(payload), ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def read_previous_upload_signature(artifact_dir: Path) -> str:
+    upload_path = artifact_dir / "cloudflare_review_uploaded.json"
+    if not upload_path.exists():
+        return ""
+    try:
+        data = load_json(upload_path)
+    except Exception:
+        return ""
+    return str(data.get("uploadSignature") or data.get("result", {}).get("uploadSignature") or "")
+
+
 def post_json(endpoint: str, token: str, payload: dict[str, Any]) -> dict[str, Any]:
     data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
@@ -1354,21 +1385,56 @@ def find_review_ready_artifacts(root: Path) -> list[Path]:
     return sorted(candidates, key=lambda path: path.stat().st_mtime, reverse=True)
 
 
-def upload_one(artifact_dir: Path, endpoint: str, token: str, force_images: bool, dry_run: bool) -> dict[str, Any]:
+def upload_one(
+    artifact_dir: Path,
+    endpoint: str,
+    token: str,
+    force_images: bool,
+    dry_run: bool,
+    force_upload: bool,
+    local_dedupe: bool,
+) -> dict[str, Any]:
     candidate, assets = build_candidate_payload(artifact_dir, force_images=force_images)
+    signature = upload_signature(candidate, assets)
+    candidate["uploadSignature"] = signature
     payload = {"candidate": candidate, "assets": assets}
+    if force_upload:
+        payload["force"] = True
     (artifact_dir / "cloudflare_review_candidate.json").write_text(
-        json.dumps({"candidate": candidate, "asset_names": [asset["name"] for asset in assets]}, ensure_ascii=False, indent=2),
+        json.dumps(
+            {"candidate": candidate, "asset_names": [asset["name"] for asset in assets], "uploadSignature": signature},
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
     )
 
+    if local_dedupe and not force_upload and not dry_run and read_previous_upload_signature(artifact_dir) == signature:
+        return {
+            "ok": True,
+            "skipped": True,
+            "reason": "unchanged-local",
+            "jobId": candidate["jobId"],
+            "uploadSignature": signature,
+        }
+
     if dry_run:
-        result = {"ok": True, "dry_run": True, "candidate": candidate, "asset_count": len(assets)}
+        result = {
+            "ok": True,
+            "dry_run": True,
+            "candidate": candidate,
+            "asset_count": len(assets),
+            "uploadSignature": signature,
+        }
     else:
         result = post_json(endpoint, token, payload)
         if result.get("ok"):
             (artifact_dir / "cloudflare_review_uploaded.json").write_text(
-                json.dumps({"uploaded_at": result.get("uploadedAt") or "", "result": result}, ensure_ascii=False, indent=2),
+                json.dumps(
+                    {"uploaded_at": result.get("uploadedAt") or "", "uploadSignature": signature, "result": result},
+                    ensure_ascii=False,
+                    indent=2,
+                ),
                 encoding="utf-8",
             )
     return result
@@ -1384,6 +1450,8 @@ def main() -> int:
     parser.add_argument("--token", default=os.getenv("RATGEBER_UPLOAD_TOKEN") or "")
     parser.add_argument("--token-env", type=Path, default=Path(os.getenv("RATGEBER_REVIEW_ENV") or "auth/utildesk_ratgeber_review.env"))
     parser.add_argument("--force-images", action="store_true")
+    parser.add_argument("--force-upload", action="store_true", help="Upload even when the local payload signature is unchanged.")
+    parser.add_argument("--no-local-dedupe", action="store_true", help="Disable local signature dedupe before POSTing to Cloudflare.")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -1404,7 +1472,15 @@ def main() -> int:
 
     results = []
     for artifact_dir in artifact_dirs:
-        result = upload_one(artifact_dir, args.endpoint, token, args.force_images, args.dry_run)
+        result = upload_one(
+            artifact_dir,
+            args.endpoint,
+            token,
+            args.force_images,
+            args.dry_run,
+            args.force_upload,
+            not args.no_local_dedupe,
+        )
         results.append({"artifact_dir": str(artifact_dir), "result": result})
         print(json.dumps(results[-1], ensure_ascii=False, indent=2))
         if not result.get("ok"):

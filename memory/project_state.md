@@ -263,8 +263,13 @@
   - backups before the PNG preference patch:
     - `/opt/openclaw/workspace/agent-newsman/scripts/export_ratgeber_package.py.bak-20260424-png-assets`;
     - `/opt/openclaw/workspace/agent-newsman/scripts/article_review_server.py.bak-20260424-png-assets`.
-- `opcl` crontab now also runs Cloudflare candidate sync:
-  - `55 * * * * cd /opt/openclaw/workspace/agent-newsman && RATGEBER_REVIEW_UPLOAD_ENDPOINT=https://utildesk-motia.pages.dev/admin/ratgeber/api/upload ./.venv/bin/python scripts/ratgeber_cloudflare_candidate_sync.py --all-review-ready --limit 10 --token-env auth/utildesk_ratgeber_review.env >> logs/ratgeber_cloudflare_sync.log 2>&1`
+- `opcl` crontab runs Cloudflare candidate sync:
+  - `55 */6 * * * cd /opt/openclaw/workspace/agent-newsman && RATGEBER_REVIEW_UPLOAD_ENDPOINT=https://utildesk-motia.pages.dev/admin/ratgeber/api/upload ./.venv/bin/python scripts/ratgeber_cloudflare_candidate_sync.py --all-review-ready --limit 10 --token-env auth/utildesk_ratgeber_review.env >> logs/ratgeber_cloudflare_sync.log 2>&1`
+- 2026-04-28 KV protection fix:
+  - Ratgeber candidate uploads now carry a stable `uploadSignature`;
+  - `scripts/ratgeber_cloudflare_candidate_sync.py` skips unchanged local candidates before POSTing to Cloudflare;
+  - `/admin/ratgeber/api/upload` skips KV asset/candidate writes when the incoming signature matches the stored one;
+  - `opcl` Cloudflare candidate sync cron is intentionally reduced from hourly to every 6 hours: `55 */6 * * *`.
 - Current candidate was uploaded with PNG assets:
   - `cover.png`;
   - `workflow.png`.

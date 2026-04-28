@@ -14,6 +14,43 @@ import {
   writeCandidate,
 } from "../_lib/storage.js";
 
+function stableForSignature(value) {
+  if (Array.isArray(value)) {
+    return value.map((item) => stableForSignature(item));
+  }
+  if (value && typeof value === "object") {
+    return Object.keys(value)
+      .sort()
+      .reduce((result, key) => {
+        if (["uploadedAt", "updatedAt", "publish", "uploadSignature"].includes(key)) {
+          return result;
+        }
+        result[key] = stableForSignature(value[key]);
+        return result;
+      }, {});
+  }
+  return value;
+}
+
+async function sha256Hex(input) {
+  const data = new TextEncoder().encode(input);
+  const digest = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(digest))
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+async function uploadSignature(candidate, assets) {
+  return sha256Hex(
+    JSON.stringify(
+      stableForSignature({
+        candidate,
+        assets,
+      }),
+    ),
+  );
+}
+
 function decodeBase64(base64) {
   const binary = atob(String(base64 || ""));
   const bytes = new Uint8Array(binary.length);
@@ -69,6 +106,19 @@ export async function handlePost({ env, request }) {
       candidate.publish && typeof candidate.publish === "object" && candidate.publish.status ? candidate.publish : null;
     const uploadedAssets = {};
     const assets = Array.isArray(payload.assets) ? payload.assets : [];
+    const signature = await uploadSignature(candidate, assets);
+    if (!payload.force && existingCandidate?.uploadSignature === signature) {
+      return jsonResponse({
+        ok: true,
+        skipped: true,
+        reason: "unchanged",
+        jobId,
+        url: `/admin/ratgeber/candidate/${encodeURIComponent(jobId)}`,
+        uploadedAt: existingCandidate.uploadedAt || existingCandidate.updatedAt || null,
+        uploadSignature: signature,
+      });
+    }
+
     for (const asset of assets) {
       const role = String(asset.role || "").trim();
       const name = normalizeAssetName(asset.name);
@@ -92,6 +142,7 @@ export async function handlePost({ env, request }) {
         ...uploadedAssets,
       },
       status: candidate.status || "review_ready",
+      uploadSignature: signature,
       uploadedAt: new Date().toISOString(),
     });
     await updateIndexCandidate(env, nextCandidate);
@@ -101,6 +152,7 @@ export async function handlePost({ env, request }) {
       jobId,
       url: `/admin/ratgeber/candidate/${encodeURIComponent(jobId)}`,
       assets: uploadedAssets,
+      uploadedAt: nextCandidate.uploadedAt,
     });
   } catch (error) {
     if (error instanceof HttpError) {
