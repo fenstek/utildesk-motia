@@ -159,6 +159,7 @@ const tools = await Promise.all(
       tags,
       excerpt,
       addedAtMs: createdAtMs,
+      addedAtOrderMs: stats.mtimeMs,
       popularity: popularity,
       fallbackIcon: resolveCategoryIcon(category, tags),
     };
@@ -166,7 +167,12 @@ const tools = await Promise.all(
 );
 
 const enabledTools = tools.filter(Boolean);
-enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+enabledTools.sort(
+  (a, b) =>
+    b.addedAtMs - a.addedAtMs ||
+    b.addedAtOrderMs - a.addedAtOrderMs ||
+    a.title.localeCompare(b.title, "de")
+);
 
 // Build tag frequency map and keep only the most useful tags
 const tagFrequency = new Map<string, number>();
@@ -262,7 +268,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     />
     <select id="sort-select" class="search-input" aria-label="Sortierung">
       <option value="az">A–Z</option>
-      <option value="new">Neu hinzugefügt</option>
+      <option value="new" selected>Neu hinzugefügt</option>
       <option value="pop">Beliebt</option>
     </select>
   </div>
@@ -277,6 +283,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         data-slug={tool.slug.toLowerCase()}
         data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
         data-added={tool.addedAtMs}
+        data-added-order={tool.addedAtOrderMs}
         data-popularity={tool.popularity}
       >
         <div class="tool-header">
@@ -404,7 +411,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       // Restore sort preference from URL first, then localStorage.
       if (sortSelect) {
         const validSorts = ['az', 'new', 'pop'];
-        let restoredSort = '';
+        const defaultSort = 'new';
+        let restoredSort = defaultSort;
         if (initialSort && validSorts.indexOf(initialSort) !== -1) {
           restoredSort = initialSort;
         } else {
@@ -417,11 +425,14 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             // ignore localStorage access errors
           }
         }
-        if (restoredSort) {
-          sortSelect.value = restoredSort;
-        }
-        if (window.location.search) {
-          history.replaceState(null, '', '/tools/');
+        sortSelect.value = restoredSort;
+        const normalizedParams = new URLSearchParams(window.location.search);
+        if (normalizedParams.get('sort') !== restoredSort) {
+          normalizedParams.set('sort', restoredSort);
+          const nextUrl = normalizedParams.toString()
+            ? '/tools/?' + normalizedParams.toString()
+            : '/tools/';
+          history.replaceState(null, '', nextUrl);
         }
       }
 
@@ -462,6 +473,9 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             const aAdded = Number(a.getAttribute('data-added') || '0');
             const bAdded = Number(b.getAttribute('data-added') || '0');
             if (bAdded !== aAdded) return bAdded - aAdded;
+            const aOrder = Number(a.getAttribute('data-added-order') || '0');
+            const bOrder = Number(b.getAttribute('data-added-order') || '0');
+            if (bOrder !== aOrder) return bOrder - aOrder;
             return aTitle.localeCompare(bTitle, 'de');
           }
           if (sortMode === 'pop') {
@@ -524,7 +538,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         sortSelect.addEventListener('change', function() {
           const sortValue = sortSelect.value;
           try {
-            if (sortValue && sortValue !== 'az') {
+            if (sortValue && ['az', 'new', 'pop'].indexOf(sortValue) !== -1) {
               localStorage.setItem(sortStorageKey, sortValue);
             } else {
               localStorage.removeItem(sortStorageKey);
@@ -532,7 +546,10 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           } catch (e) {
             // ignore localStorage access errors
           }
-          history.replaceState(null, '', '/tools/');
+          const params = new URLSearchParams(window.location.search);
+          params.set('sort', sortValue);
+          const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
+          history.pushState(null, '', nextUrl);
           resetAndFilter();
         });
       }

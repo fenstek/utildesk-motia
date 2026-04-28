@@ -23,6 +23,7 @@ export type DisplayTool = {
   excerpt: string;
   description: string;
   addedAtMs: number;
+  addedAtOrderMs: number;
   popularity: number;
   fallbackIcon: "ai" | "automation" | "design" | "generic";
 };
@@ -62,7 +63,7 @@ export const resolveToolFallbackIcon = (category: string | null, tags: string[])
   return "generic";
 };
 
-const readAddedAtMs = async (entry: any, slug: string) => {
+const readAddedAtInfo = async (entry: any, slug: string) => {
   const createdAt = entry.data.created_at ? String(entry.data.created_at) : "";
   const parsedCreatedAtMs = createdAt ? new Date(createdAt).getTime() : 0;
   const manifestAddedAtMs = Number(toolAddedAtBySlug[slug] || 0);
@@ -75,11 +76,15 @@ const readAddedAtMs = async (entry: any, slug: string) => {
     statAddedAtMs = 0;
   }
 
-  return (
+  const addedAtMs =
     (Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0 ? parsedCreatedAtMs : 0) ||
     manifestAddedAtMs ||
-    statAddedAtMs
-  );
+    statAddedAtMs;
+
+  return {
+    addedAtMs,
+    addedAtOrderMs: statAddedAtMs,
+  };
 };
 
 export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promise<DisplayTool> => {
@@ -117,6 +122,7 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
     brandLogo || localLogo || !faviconLogo
       ? []
       : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
+  const addedAtInfo = await readAddedAtInfo(entry, slug);
 
   return {
     slug,
@@ -130,7 +136,8 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
     rawTags,
     excerpt: description,
     description,
-    addedAtMs: await readAddedAtMs(entry, slug),
+    addedAtMs: addedAtInfo.addedAtMs,
+    addedAtOrderMs: addedAtInfo.addedAtOrderMs,
     popularity,
     fallbackIcon: resolveToolFallbackIcon(category, tags),
   };

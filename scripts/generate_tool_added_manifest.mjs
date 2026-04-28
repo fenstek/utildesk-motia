@@ -1,8 +1,12 @@
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const repoRoot = process.cwd();
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const repoRoot = existsSync(join(scriptDir, "..", "content", "tools"))
+  ? join(scriptDir, "..")
+  : process.cwd();
 const toolsDir = join(repoRoot, "content", "tools");
 const outputPath = join(repoRoot, "site", "src", "data", "tool-added-at.json");
 
