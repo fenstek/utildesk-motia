@@ -17,6 +17,7 @@ const { tool, href, fallbackText = "Kurzbeschreibung folgt." } = Astro.props as 
   data-slug={tool.slug.toLowerCase()}
   data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
   data-added={tool.addedAtMs}
+  data-added-order={tool.addedAtOrderMs}
   data-popularity={tool.popularity}
 >
   <div class="tool-header">

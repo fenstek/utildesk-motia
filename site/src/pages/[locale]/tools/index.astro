@@ -16,7 +16,12 @@ export function getStaticPaths() {
 }
 
 const tools = [...(await listDisplayTools("en"))]
-  .sort((a, b) => a.title.localeCompare(b.title, "en"));
+  .sort(
+    (a, b) =>
+      b.addedAtMs - a.addedAtMs ||
+      b.addedAtOrderMs - a.addedAtOrderMs ||
+      a.title.localeCompare(b.title, "en")
+  );
 
 const tagFrequency = new Map<string, number>();
 tools.forEach((tool) => {
@@ -112,7 +117,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     />
     <select id="sort-select" class="search-input" aria-label="Sort order">
       <option value="az">A-Z</option>
-      <option value="new">Newly added</option>
+      <option value="new" selected>Newly added</option>
       <option value="pop">Popular</option>
     </select>
   </div>
@@ -183,7 +188,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
       if (sortSelect) {
         const validSorts = ['az', 'new', 'pop'];
-        let restoredSort = '';
+        const defaultSort = 'new';
+        let restoredSort = defaultSort;
         if (initialSort && validSorts.indexOf(initialSort) !== -1) {
           restoredSort = initialSort;
         } else {
@@ -196,11 +202,14 @@ const breadcrumbSchema = buildBreadcrumbSchema([
             // ignore localStorage access errors
           }
         }
-        if (restoredSort) {
-          sortSelect.value = restoredSort;
-        }
-        if (window.location.search) {
-          history.replaceState(null, '', '/en/tools/');
+        sortSelect.value = restoredSort;
+        const normalizedParams = new URLSearchParams(window.location.search);
+        if (normalizedParams.get('sort') !== restoredSort) {
+          normalizedParams.set('sort', restoredSort);
+          const nextUrl = normalizedParams.toString()
+            ? '/en/tools/?' + normalizedParams.toString()
+            : '/en/tools/';
+          history.replaceState(null, '', nextUrl);
         }
       }
 
@@ -236,6 +245,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
             const aAdded = Number(a.getAttribute('data-added') || '0');
             const bAdded = Number(b.getAttribute('data-added') || '0');
             if (bAdded !== aAdded) return bAdded - aAdded;
+            const aOrder = Number(a.getAttribute('data-added-order') || '0');
+            const bOrder = Number(b.getAttribute('data-added-order') || '0');
+            if (bOrder !== aOrder) return bOrder - aOrder;
             return aTitle.localeCompare(bTitle, 'en');
           }
           if (sortMode === 'pop') {
@@ -292,7 +304,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         sortSelect.addEventListener('change', function() {
           const sortValue = sortSelect.value;
           try {
-            if (sortValue && sortValue !== 'az') {
+            if (sortValue && ['az', 'new', 'pop'].indexOf(sortValue) !== -1) {
               localStorage.setItem(sortStorageKey, sortValue);
             } else {
               localStorage.removeItem(sortStorageKey);
@@ -300,7 +312,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           } catch (e) {
             // ignore localStorage access errors
           }
-          history.replaceState(null, '', '/en/tools/');
+          const params = new URLSearchParams(window.location.search);
+          params.set('sort', sortValue);
+          const nextUrl = params.toString() ? '/en/tools/?' + params.toString() : '/en/tools/';
+          history.pushState(null, '', nextUrl);
           resetAndFilter();
         });
       }
