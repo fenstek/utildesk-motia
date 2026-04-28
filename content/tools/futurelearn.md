@@ -1,10 +1,11 @@
 ---
-slug: "futurelearn"
-title: "FutureLearn"
-category: "Produktivität"
-price_model: "Freemium"
+slug: futurelearn
+title: FutureLearn
+category: Produktivität
+price_model: Freemium
 tags: [education, courses, learning, productivity]
 official_url: "https://www.futurelearn.com/"
+popularity: 0
 ---
 
 # FutureLearn

@@ -1,10 +1,11 @@
 ---
-slug: "invoca"
-title: "Invoca"
-category: "Marketing"
-price_model: "Abonnement, Je nach Plan"
+slug: invoca
+title: Invoca
+category: Marketing
+price_model: Abonnement, Je nach Plan
 tags: [marketing, analytics, ai, customer-support]
 official_url: "https://www.invoca.com/"
+popularity: 0
 ---
 
 # Invoca

@@ -1,10 +1,11 @@
 ---
-slug: "observe-ai"
-title: "Observe.AI"
-category: "AI"
-price_model: "Je nach Plan"
+slug: observe-ai
+title: Observe.AI
+category: AI
+price_model: Je nach Plan
 tags: [ai, customer-support, analytics, automation]
 official_url: "https://www.observe.ai/"
+popularity: 0
 ---
 
 # Observe.AI

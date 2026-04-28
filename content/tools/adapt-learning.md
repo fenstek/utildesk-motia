@@ -1,10 +1,11 @@
 ---
-slug: "adapt-learning"
-title: "Adapt Learning"
-category: "Developer"
-price_model: "Open Source"
+slug: adapt-learning
+title: Adapt Learning
+category: Developer
+price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://www.adaptlearning.org/"
+popularity: 0
 ---
 
 # Adapt Learning

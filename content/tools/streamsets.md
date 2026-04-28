@@ -1,10 +1,11 @@
 ---
-slug: "streamsets"
-title: "StreamSets"
-category: "Developer"
-price_model: "Je nach Plan"
+slug: streamsets
+title: StreamSets
+category: Developer
+price_model: Je nach Plan
 tags: [data, integration, automation, developer-tools]
 official_url: "https://www.ibm.com/products/streamsets"
+popularity: 0
 ---
 
 # StreamSets

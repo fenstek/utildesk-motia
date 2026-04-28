@@ -1,10 +1,11 @@
 ---
-slug: "mljar"
-title: "MLJAR"
-category: "AI"
-price_model: "Freemium"
+slug: mljar
+title: MLJAR
+category: AI
+price_model: Freemium
 tags: [automl,machine-learning,data,developer-tools]
 official_url: "https://mljar.com/"
+popularity: 0
 ---
 
 # MLJAR

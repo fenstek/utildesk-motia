@@ -1,10 +1,11 @@
 ---
-slug: "elastic-observability"
-title: "Elastic Observability"
-category: "Developer"
-price_model: "Abonnement, Je nach Plan"
+slug: elastic-observability
+title: Elastic Observability
+category: Developer
+price_model: Abonnement, Je nach Plan
 tags: [monitoring, analytics, data, developer-tools]
 official_url: "https://www.elastic.co/observability"
+popularity: 0
 ---
 
 # Elastic Observability

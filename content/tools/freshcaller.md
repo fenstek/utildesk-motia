@@ -1,10 +1,11 @@
 ---
-slug: "freshcaller"
-title: "Freshcaller"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: freshcaller
+title: Freshcaller
+category: Produktivität
+price_model: Abonnement
 tags: [customer-support, phone, communication, productivity]
 official_url: "https://www.freshworks.com/freshcaller-cloud-pbx/"
+popularity: 0
 ---
 
 # Freshcaller

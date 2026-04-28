@@ -1,10 +1,11 @@
 ---
-slug: "elasticsearch"
-title: "Elasticsearch"
-category: "Developer"
-price_model: "Open Source, Abonnement, Nutzungsbasiert"
+slug: elasticsearch
+title: Elasticsearch
+category: Developer
+price_model: Open Source, Abonnement, Nutzungsbasiert
 tags: [search,data,analytics,developer-tools]
 official_url: "https://www.elastic.co/elasticsearch"
+popularity: 0
 ---
 
 # Elasticsearch

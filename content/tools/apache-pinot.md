@@ -1,10 +1,11 @@
 ---
-slug: "apache-pinot"
-title: "Apache Pinot"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-pinot
+title: Apache Pinot
+category: Developer
+price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://pinot.apache.org/"
+popularity: 0
 ---
 
 # Apache Pinot

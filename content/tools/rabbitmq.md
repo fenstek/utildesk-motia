@@ -1,10 +1,11 @@
 ---
-slug: "rabbitmq"
-title: "RabbitMQ"
-category: "Developer"
-price_model: "Open Source"
+slug: rabbitmq
+title: RabbitMQ
+category: Developer
+price_model: Open Source
 tags: [messaging, developer-tools, automation, open-source]
 official_url: "https://www.rabbitmq.com/"
+popularity: 0
 ---
 
 # RabbitMQ

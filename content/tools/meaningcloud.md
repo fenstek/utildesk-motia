@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [api, analytics]
 official_url: "https://www.meaningcloud.com/"
-popularity: 38
+popularity: 41
 ---
 
 # MeaningCloud

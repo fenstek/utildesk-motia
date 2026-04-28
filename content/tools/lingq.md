@@ -1,10 +1,11 @@
 ---
-slug: "lingq"
-title: "LingQ"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: lingq
+title: LingQ
+category: Produktivität
+price_model: Abonnement
 tags: [education, language, reading, learning]
 official_url: "https://www.lingq.com/en/"
+popularity: 0
 ---
 
 # LingQ

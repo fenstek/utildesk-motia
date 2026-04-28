@@ -1,10 +1,11 @@
 ---
-slug: "twilio"
-title: "Twilio"
-category: "Developer"
-price_model: "Nutzungsbasiert, Je nach Plan"
+slug: twilio
+title: Twilio
+category: Developer
+price_model: Nutzungsbasiert, Je nach Plan
 tags: [api, communication, developer-tools, automation]
 official_url: "https://www.twilio.com/en-us"
+popularity: 0
 ---
 
 # Twilio

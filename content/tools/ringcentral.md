@@ -1,10 +1,11 @@
 ---
-slug: "ringcentral"
-title: "RingCentral"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: ringcentral
+title: RingCentral
+category: Produktivität
+price_model: Abonnement
 tags: [communication, meetings, customer-support, productivity]
 official_url: "https://www.ringcentral.com/"
+popularity: 0
 ---
 
 # RingCentral

@@ -1,10 +1,11 @@
 ---
-slug: "mode-analytics"
-title: "Mode Analytics"
-category: "Developer"
-price_model: "Freemium, Abonnement, Je nach Plan"
+slug: mode-analytics
+title: Mode Analytics
+category: Developer
+price_model: Freemium, Abonnement, Je nach Plan
 tags: [analytics, data, collaboration, productivity]
 official_url: "https://mode.com/"
+popularity: 0
 ---
 
 # Mode Analytics

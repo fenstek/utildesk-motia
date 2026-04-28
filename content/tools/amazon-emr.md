@@ -1,10 +1,11 @@
 ---
-slug: "amazon-emr"
-title: "Amazon EMR"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: amazon-emr
+title: Amazon EMR
+category: Developer
+price_model: Nutzungsbasiert
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://aws.amazon.com/emr/"
+popularity: 0
 ---
 
 # Amazon EMR

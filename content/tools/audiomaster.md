@@ -1,10 +1,11 @@
 ---
-slug: "audiomaster"
-title: "AudioMaster"
-category: "Audio"
-price_model: "Je nach Plan"
+slug: audiomaster
+title: AudioMaster
+category: Audio
+price_model: Je nach Plan
 tags: [audio, mastering, editing, mobile]
 official_url: "https://future-moments.com/audiomaster"
+popularity: 0
 ---
 
 # AudioMaster

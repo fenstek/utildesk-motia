@@ -1,10 +1,11 @@
 ---
-slug: "pluralsight"
-title: "Pluralsight"
-category: "Developer"
-price_model: "Abonnement"
+slug: pluralsight
+title: Pluralsight
+category: Developer
+price_model: Abonnement
 tags: [education, courses, developer-tools, productivity]
 official_url: "https://www.pluralsight.com/"
+popularity: 0
 ---
 
 # Pluralsight

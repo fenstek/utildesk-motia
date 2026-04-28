@@ -1,10 +1,11 @@
 ---
-slug: "rosetta-stone"
-title: "Rosetta Stone"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: rosetta-stone
+title: Rosetta Stone
+category: Produktivität
+price_model: Abonnement
 tags: [education, language, learning, mobile]
 official_url: "https://www.rosettastone.com/"
+popularity: 0
 ---
 
 # Rosetta Stone
