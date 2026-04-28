@@ -135,15 +135,16 @@ const tools = await Promise.all(
             : "";
     const excerpt = description || getExcerpt(content);
 
-    // Prefer explicit content dates, then the committed manifest because
-    // Cloudflare Pages builds do not keep reliable per-file mtimes or git history.
+    // Prefer the committed first-add manifest so "Neu hinzugefügt" means
+    // when the tool first entered the catalog, not when the page was built.
     const createdAt = data.created_at ? String(data.created_at) : "";
     const parsedCreatedAtMs = createdAt ? new Date(createdAt).getTime() : 0;
     const manifestAddedAtMs = Number(toolAddedAtBySlug[slug] || 0);
     const gitAddedAtMs = gitAddedAtByFile.get(`${gitToolsPath}/${file}`) || 0;
-    const createdAtMs = (Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0 ? parsedCreatedAtMs : 0) ||
+    const createdAtMs =
       manifestAddedAtMs ||
       gitAddedAtMs ||
+      (Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0 ? parsedCreatedAtMs : 0) ||
       stats.mtimeMs;
 
     // Read popularity from frontmatter, fallback to 0 if missing
@@ -159,7 +160,7 @@ const tools = await Promise.all(
       tags,
       excerpt,
       addedAtMs: createdAtMs,
-      addedAtOrderMs: stats.mtimeMs,
+      addedAtOrderMs: gitAddedAtMs || stats.mtimeMs,
       popularity: popularity,
       fallbackIcon: resolveCategoryIcon(category, tags),
     };
