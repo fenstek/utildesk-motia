@@ -77,8 +77,8 @@ const readAddedAtInfo = async (entry: any, slug: string) => {
   }
 
   const addedAtMs =
-    (Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0 ? parsedCreatedAtMs : 0) ||
     manifestAddedAtMs ||
+    (Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0 ? parsedCreatedAtMs : 0) ||
     statAddedAtMs;
 
   return {
