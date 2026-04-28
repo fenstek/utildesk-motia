@@ -1,14 +1,11 @@
-import { stat } from "node:fs/promises";
 import { getEnglishToolMeta } from "./englishContent";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "./favicon";
 import { normalizePriceModel } from "./priceModel";
 import { resolveLocalLogo } from "./resolveLogoPath";
+import { getToolAddedAtInfo } from "./toolAddedAt";
 import { listActiveToolEntries } from "./toolEntries.mjs";
-import toolAddedAtManifest from "../data/tool-added-at.json";
 
 type Locale = "de" | "en";
-
-const toolAddedAtBySlug = toolAddedAtManifest as Record<string, number>;
 
 export type DisplayTool = {
   slug: string;
@@ -63,30 +60,6 @@ export const resolveToolFallbackIcon = (category: string | null, tags: string[])
   return "generic";
 };
 
-const readAddedAtInfo = async (entry: any, slug: string) => {
-  const createdAt = entry.data.created_at ? String(entry.data.created_at) : "";
-  const parsedCreatedAtMs = createdAt ? new Date(createdAt).getTime() : 0;
-  const manifestAddedAtMs = Number(toolAddedAtBySlug[slug] || 0);
-
-  let statAddedAtMs = 0;
-  try {
-    const stats = await stat(entry.sourcePath);
-    statAddedAtMs = stats.mtimeMs;
-  } catch {
-    statAddedAtMs = 0;
-  }
-
-  const addedAtMs =
-    manifestAddedAtMs ||
-    (Number.isFinite(parsedCreatedAtMs) && parsedCreatedAtMs > 0 ? parsedCreatedAtMs : 0) ||
-    statAddedAtMs;
-
-  return {
-    addedAtMs,
-    addedAtOrderMs: statAddedAtMs,
-  };
-};
-
 export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promise<DisplayTool> => {
   const slug = String(entry.slug ?? entry.data.slug ?? "");
   const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map(String) : [];
@@ -122,7 +95,7 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
     brandLogo || localLogo || !faviconLogo
       ? []
       : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
-  const addedAtInfo = await readAddedAtInfo(entry, slug);
+  const addedAtInfo = getToolAddedAtInfo(slug, entry.data.created_at);
 
   return {
     slug,

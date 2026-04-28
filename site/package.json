@@ -12,6 +12,7 @@
     "postbuild": "node scripts/sync_public_images.mjs && node scripts/generate_published_ratgeber_manifest.mjs && node scripts/generate_sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro",
+    "check:tools-sort": "node ../scripts/check_tools_newest_sort.mjs",
     "fetch:logos": "node ../scripts/fetch_simpleicons_logos.mjs"
   },
   "dependencies": {

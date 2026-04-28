@@ -2,6 +2,7 @@
 import ToolCard from "../../../components/ToolCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { listRatgeberEntries } from "../../../lib/ratgeber";
+import { compareToolsByNewest } from "../../../lib/toolAddedAt";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import { tagHref } from "../../../lib/tagRoutes";
 import {
@@ -15,13 +16,7 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
-const tools = [...(await listDisplayTools("en"))]
-  .sort(
-    (a, b) =>
-      b.addedAtMs - a.addedAtMs ||
-      b.addedAtOrderMs - a.addedAtOrderMs ||
-      a.title.localeCompare(b.title, "en")
-  );
+const tools = [...(await listDisplayTools("en"))].sort(compareToolsByNewest("en"));
 
 const tagFrequency = new Map<string, number>();
 tools.forEach((tool) => {
