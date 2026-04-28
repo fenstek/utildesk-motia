@@ -1,10 +1,11 @@
 ---
-slug: "babbel"
-title: "Babbel"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: babbel
+title: Babbel
+category: Produktivität
+price_model: Abonnement
 tags: [education,language,learning,mobile]
 official_url: "https://www.babbel.com/"
+popularity: 0
 ---
 
 # Babbel

@@ -1,10 +1,11 @@
 ---
-slug: "freecodecamp"
-title: "freeCodeCamp"
-category: "Developer"
-price_model: "Kostenlos, Open Source"
+slug: freecodecamp
+title: freeCodeCamp
+category: Developer
+price_model: Kostenlos, Open Source
 tags: [education, coding, developer-tools, open-source]
 official_url: "https://www.freecodecamp.org/"
+popularity: 0
 ---
 
 # freeCodeCamp

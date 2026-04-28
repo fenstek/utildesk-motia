@@ -1,10 +1,11 @@
 ---
-slug: "tpot"
-title: "TPOT"
-category: "AI"
-price_model: "Open Source"
+slug: tpot
+title: TPOT
+category: AI
+price_model: Open Source
 tags: [automl,machine-learning,open-source,developer-tools]
 official_url: "https://epistasislab.github.io/tpot/"
+popularity: 0
 ---
 
 # TPOT

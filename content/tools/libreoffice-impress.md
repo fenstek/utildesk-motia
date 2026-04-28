@@ -1,10 +1,11 @@
 ---
-slug: "libreoffice-impress"
-title: "LibreOffice Impress"
-category: "Produktivität"
-price_model: "Open Source"
+slug: libreoffice-impress
+title: LibreOffice Impress
+category: Produktivität
+price_model: Open Source
 tags: [presentation, productivity, office, open-source]
 official_url: "https://www.libreoffice.org/#screenshots"
+popularity: 0
 ---
 
 # LibreOffice Impress

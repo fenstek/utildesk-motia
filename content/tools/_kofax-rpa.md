@@ -5,7 +5,7 @@ category: Automation
 price_model: Je nach Plan
 tags: [automation,rpa,workflow]
 official_url: "https://www.tungstenautomation.com/products/rpa"
-popularity: 54
+popularity: 58
 ---
 
 # Kofax RPA

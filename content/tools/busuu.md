@@ -1,10 +1,11 @@
 ---
-slug: "busuu"
-title: "Busuu"
-category: "Produktivität"
-price_model: "Freemium"
+slug: busuu
+title: Busuu
+category: Produktivität
+price_model: Freemium
 tags: [education, language, learning, mobile]
 official_url: "https://www.busuu.com/"
+popularity: 0
 ---
 
 # Busuu

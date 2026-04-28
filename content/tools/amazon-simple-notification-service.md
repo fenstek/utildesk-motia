@@ -1,10 +1,11 @@
 ---
-slug: "amazon-simple-notification-service"
-title: "Amazon Simple Notification Service (SNS)"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: amazon-simple-notification-service
+title: Amazon Simple Notification Service (SNS)
+category: Developer
+price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
 official_url: "https://aws.amazon.com/sns/"
+popularity: 0
 ---
 
 # Amazon Simple Notification Service (SNS)

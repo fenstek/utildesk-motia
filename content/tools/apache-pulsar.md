@@ -1,10 +1,11 @@
 ---
-slug: "apache-pulsar"
-title: "Apache Pulsar"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-pulsar
+title: Apache Pulsar
+category: Developer
+price_model: Open Source
 tags: [messaging,data,developer-tools,open-source]
 official_url: "https://pulsar.apache.org/"
+popularity: 0
 ---
 
 # Apache Pulsar

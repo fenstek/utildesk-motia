@@ -1,10 +1,11 @@
 ---
-slug: "splunk-observability"
-title: "Splunk Observability"
-category: "Developer"
-price_model: "Abonnement, Nutzungsbasiert"
+slug: splunk-observability
+title: Splunk Observability
+category: Developer
+price_model: Abonnement, Nutzungsbasiert
 tags: [monitoring, analytics, data, developer-tools]
 official_url: "https://www.splunk.com/en_us/products/observability-cloud.html"
+popularity: 0
 ---
 
 # Splunk Observability

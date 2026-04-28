@@ -1,10 +1,11 @@
 ---
-slug: "studysmarter"
-title: "StudySmarter"
-category: "Produktivität"
-price_model: "Freemium"
+slug: studysmarter
+title: StudySmarter
+category: Produktivität
+price_model: Freemium
 tags: [education,learning,productivity,ai]
 official_url: "https://www.studysmarter.de/"
+popularity: 0
 ---
 
 # StudySmarter
