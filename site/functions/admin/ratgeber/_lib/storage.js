@@ -58,7 +58,15 @@ export function publishQueueKey(requestId) {
 
 export async function readIndex(env) {
   const kv = requireKv(env);
-  const index = await kv.get(INDEX_KEY, "json");
+  let index = null;
+  try {
+    const raw = await kv.get(INDEX_KEY, "text");
+    if (raw && typeof raw === "string") {
+      index = JSON.parse(raw.replace(/^\uFEFF/, ""));
+    }
+  } catch {
+    index = null;
+  }
   if (!index || typeof index !== "object") {
     return { updatedAt: null, candidates: [] };
   }
