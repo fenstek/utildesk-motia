@@ -114,6 +114,9 @@ const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null 
   return translation;
 };
 
+export const hasEnglishToolTranslation = (slug: string) =>
+  getEnglishToolTranslation(slug) !== null;
+
 export const categoryTitleEn = (slug: string, fallback?: string) =>
   CATEGORY_EN[slug]?.title ?? translateLabel(fallback ?? slug);
 
@@ -277,52 +280,7 @@ export const buildEnglishToolMarkdown = (entry: ToolEntryLike) => {
   if (translation?.content) {
     return translation.content;
   }
-
-  const meta = getEnglishToolMeta(entry);
-  const focusTags = meta.tags.filter((tag) => tag.toLowerCase() !== "ai").slice(0, 5);
-  const features = buildEnglishToolFeatureList(entry);
-  const alternatives = extractAlternativeNames(entry.content, 5);
-  const targetUrl = meta.targetUrl;
-
-  const lines = [
-    `## What is ${meta.title}?`,
-    "",
-    meta.description,
-    "",
-    `${meta.title} should be judged by practical fit: what it helps you do, how it is priced and whether it belongs in your workflow.`,
-    "",
-    "## Best fit",
-    "",
-    `Use ${meta.title} when you are comparing tools for ${focusTags.length ? joinHumanList(focusTags.map((tag) => tag.toLowerCase())) : meta.category || "AI work"}. Check the category, pricing model, related tags and provider link before deciding whether it deserves a deeper trial.`,
-    "",
-    "## Quick signals",
-    "",
-    `- Category: ${meta.category || "AI tool"}`,
-    `- Pricing model: ${meta.priceModel || "Not specified"}`,
-    `- Tags: ${focusTags.length ? focusTags.join(", ") : "AI, productivity, workflow"}`,
-    "",
-    "## Evaluation notes",
-    "",
-    ...features.map((feature) => `- ${feature}`),
-    "",
-    "## Typical use cases",
-    "",
-    `- Shortlist ${meta.title} while comparing tools in the ${meta.category || "AI"} category.`,
-    "- Check whether the pricing model fits a personal, team or enterprise workflow.",
-    "- Compare the tags against your actual work: research, writing, automation, coding, audio, video or operations.",
-    "- Open the provider page only after the tool passes this quick contextual filter.",
-  ];
-
-  if (targetUrl) {
-    lines.push("", "## Provider link", "", `[Open ${meta.title}](${targetUrl})`);
-  }
-
-  if (alternatives.length) {
-    lines.push("", "## Related alternatives", "");
-    alternatives.forEach((name) => lines.push(`- ${name}`));
-  }
-
-  return lines.join("\n");
+  throw new Error(`Missing English translation for tool: ${entry.slug}`);
 };
 
 export const buildEnglishToolHtml = (entry: ToolEntryLike) =>

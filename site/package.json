@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node ../scripts/generate_tool_added_manifest.mjs",
+    "prebuild": "node ../scripts/check_english_tool_translations.mjs && node ../scripts/generate_tool_added_manifest.mjs",
     "build": "astro build",
     "postbuild": "node scripts/sync_public_images.mjs && node scripts/generate_published_ratgeber_manifest.mjs && node scripts/generate_sitemap.mjs",
     "preview": "astro preview",

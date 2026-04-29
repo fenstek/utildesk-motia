@@ -96,6 +96,35 @@ run_post_deploy_hooks() {
   fi
 }
 
+translate_changed_tools_to_english() {
+  local changed_tool_slugs slug_file
+  changed_tool_slugs="$(git status --porcelain -- content/tools/*.md \
+    | awk '{print $2}' \
+    | sed -nE 's#^content/tools/([^/_][^/]*)\.md$#\1#p' \
+    | sort -u || true)"
+
+  if [[ -z "$changed_tool_slugs" ]]; then
+    echo "[cron] english translation: no active changed tool markdown files"
+    return 0
+  fi
+
+  if [[ -z "${CODEX_CLI_PATH:-}" ]] && ! command -v codex >/dev/null 2>&1; then
+    echo "[cron] ERROR: Codex CLI is required before publishing new tools to English"
+    echo "[cron] ERROR: refusing to publish German tools without matching content/en/tools translations"
+    return 3
+  fi
+
+  mkdir -p tmp
+  slug_file="tmp/cron-changed-tool-slugs.txt"
+  printf '%s\n' "$changed_tool_slugs" > "$slug_file"
+
+  echo "[cron] english translation: changed tool slugs"
+  printf '%s\n' "$changed_tool_slugs"
+  CODEX_TRANSLATION_MODEL="${CODEX_TRANSLATION_MODEL:-gpt-5.4-mini}" \
+  CODEX_TRANSLATION_CONCURRENCY="${CODEX_TRANSLATION_CONCURRENCY:-1}" \
+    npm run translate:tools:en -- --slug-file "$slug_file"
+}
+
 echo "[cron] start:
 node scripts/guard_deny_md.mjs
  $(date -Is)"
@@ -187,6 +216,7 @@ else
   PUBLISH_BATCH_SIZE="${PUBLISH_BATCH_SIZE:-10}"
   echo "[cron] batch_size=${PUBLISH_BATCH_SIZE}"
   node scripts/test_run_9_full.mjs "${PUBLISH_BATCH_SIZE}"
+  translate_changed_tools_to_english
 fi
 
 # 2) Detect changes
@@ -196,15 +226,15 @@ if [[ -z "$CHANGED" ]]; then
   exit 0
 fi
 
-# 3) Allowlist: only content/tools/*.md
-BAD="$(printf '%s\n' "$CHANGED" | awk '{print $2}' | grep -vE '^content/tools/[^/]+\.md$' || true)"
+# 3) Allowlist: only generated tool markdown and matching English translations
+BAD="$(printf '%s\n' "$CHANGED" | awk '{print $2}' | grep -vE '^(content/tools/[^/]+\.md|content/en/tools/[^/]+\.md)$' || true)"
 if [[ -n "$BAD" ]]; then
   echo "[cron] ERROR: unexpected changed files (refuse to commit/push):"
   echo "$BAD"
   exit 2
 fi
 
-git add -A content/tools
+git add -A content/tools content/en/tools
 
 if git diff --cached --quiet; then
   echo "[cron] staged is empty -> nothing to commit"

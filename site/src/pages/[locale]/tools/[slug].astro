@@ -9,6 +9,7 @@ import {
   buildEnglishToolHtml,
   categoryTitleEn,
   getEnglishToolMeta,
+  hasEnglishToolTranslation,
 } from "../../../lib/englishContent";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
@@ -26,7 +27,7 @@ import {
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
-  return entries.map((entry) => ({
+  return entries.filter((entry) => hasEnglishToolTranslation(entry.slug)).map((entry) => ({
     params: { locale: "en", slug: entry.slug },
     props: { entry },
   }));

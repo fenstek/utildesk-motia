@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../../lib/categories";
-import { categoryDescriptionEn, categoryTitleEn } from "../../../lib/englishContent";
+import { categoryDescriptionEn, categoryTitleEn, hasEnglishToolTranslation } from "../../../lib/englishContent";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import {
   buildBreadcrumbSchema,
@@ -14,7 +14,7 @@ export function getStaticPaths() {
   return [{ params: { locale: "en" } }];
 }
 
-const entries = await listActiveToolEntries();
+const entries = (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
 const tools = entries.map((entry) => ({
   tags: Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [],
 }));
