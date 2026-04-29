@@ -1,10 +1,11 @@
 ---
-slug: "milestone-systems"
-title: "Milestone Systems"
-category: "Video"
-price_model: "Abonnement"
+slug: milestone-systems
+title: Milestone Systems
+category: Video
+price_model: Abonnement
 tags: [video, security, management, analytics]
 official_url: "https://www.milestonesys.com/"
+popularity: 0
 ---
 
 # Milestone Systems

@@ -1,10 +1,11 @@
 ---
-slug: "rebelle"
-title: "Rebelle"
-category: "Design"
-price_model: "Einmalzahlung"
+slug: rebelle
+title: Rebelle
+category: Design
+price_model: Einmalzahlung
 tags: [design, painting, illustration, desktop]
 official_url: "https://www.escapemotions.com/products/rebelle/about"
+popularity: 0
 ---
 
 # Rebelle
