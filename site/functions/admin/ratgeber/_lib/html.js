@@ -456,16 +456,20 @@ export function pageShell(title, body, options = {}) {
         border: 1px dashed var(--line);
       }
 
-      .review-action-panel {
-        display: flex;
-        justify-content: space-between;
-        gap: 18px;
-        align-items: center;
+                  .review-action-panel {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 18px;
+                    align-items: center;
         flex-wrap: wrap;
         padding: 12px 0;
         border-bottom: 1px solid var(--line);
-        color: var(--fg-2);
-      }
+                    color: var(--fg-2);
+                  }
+
+                  .review-action-panel--stacked {
+                    align-items: flex-start;
+                  }
 
       .review-action-panel p {
         margin: 0 0 4px;
@@ -473,11 +477,34 @@ export function pageShell(title, body, options = {}) {
         font-size: 11px;
       }
 
-      .review-action-panel strong {
-        color: var(--fg);
-        font-size: 12px;
-        word-break: break-word;
-      }
+                  .review-action-panel strong {
+                    color: var(--fg);
+                    font-size: 12px;
+                    word-break: break-word;
+                  }
+
+                  .review-rework-form {
+                    display: grid;
+                    gap: 8px;
+                    min-width: min(560px, 100%);
+                  }
+
+                  .review-rework-label {
+                    color: var(--fg-3);
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.12em;
+                  }
+
+                  .review-rework-form textarea {
+                    width: 100%;
+                    min-height: 86px;
+                    border: 1px solid var(--line);
+                    background: var(--bg-2);
+                    color: var(--fg);
+                    padding: 10px 12px;
+                    resize: vertical;
+                  }
 
       .article-head {
         max-width: 760px;

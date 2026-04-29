@@ -19,7 +19,8 @@ export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
   const isMachineEndpoint = url.pathname.startsWith("/admin/ratgeber/api/upload") ||
-    url.pathname.startsWith("/admin/ratgeber/api/publish-queue");
+    url.pathname.startsWith("/admin/ratgeber/api/publish-queue") ||
+    url.pathname.startsWith("/admin/ratgeber/api/rework-queue");
 
   if (isMachineEndpoint && hasValidUploadToken(request, env)) {
     const response = await context.next();
