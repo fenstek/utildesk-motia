@@ -1,4 +1,4 @@
-import { getEnglishToolMeta } from "./englishContent";
+import { getEnglishToolMeta, hasEnglishToolTranslation } from "./englishContent";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "./favicon";
 import { normalizePriceModel } from "./priceModel";
 import { resolveLocalLogo } from "./resolveLogoPath";
@@ -129,7 +129,9 @@ export const listDisplayTools = async (locale: Locale = "de") => {
   if (cached) return cached;
 
   const promise = (async () => {
-    const entries = await listActiveToolEntries();
+    const entries = (await listActiveToolEntries()).filter(
+      (entry) => locale !== "en" || hasEnglishToolTranslation(entry.slug),
+    );
     return Promise.all(entries.map((entry) => buildDisplayTool(entry, locale)));
   })();
 

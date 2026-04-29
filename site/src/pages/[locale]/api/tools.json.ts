@@ -1,4 +1,4 @@
-import { getEnglishToolMeta } from "../../../lib/englishContent";
+import { getEnglishToolMeta, hasEnglishToolTranslation } from "../../../lib/englishContent";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { SITE_NAME, SITE_URL } from "../../../lib/siteMeta";
 
@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 
 export async function GET() {
-  const entries = await listActiveToolEntries();
+  const entries = (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
   const items = entries.map((entry) => {
     const meta = getEnglishToolMeta(entry);
     return {

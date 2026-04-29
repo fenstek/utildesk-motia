@@ -2,6 +2,7 @@ import { buildMarkdownFrontmatter } from "../../../../lib/machineReadable";
 import {
   buildEnglishToolMarkdown,
   getEnglishToolMeta,
+  hasEnglishToolTranslation,
 } from "../../../../lib/englishContent";
 import { listActiveToolEntries } from "../../../../lib/toolEntries.mjs";
 
@@ -9,7 +10,7 @@ export const prerender = true;
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
-  return entries.map((entry) => ({
+  return entries.filter((entry) => hasEnglishToolTranslation(entry.slug)).map((entry) => ({
     params: { locale: "en", slug: entry.slug },
     props: { entry },
   }));

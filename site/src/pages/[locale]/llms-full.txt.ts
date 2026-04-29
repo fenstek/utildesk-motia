@@ -1,4 +1,4 @@
-import { buildEnglishToolMarkdown, getEnglishToolMeta } from "../../lib/englishContent";
+import { buildEnglishToolMarkdown, getEnglishToolMeta, hasEnglishToolTranslation } from "../../lib/englishContent";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 
@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 
 export async function GET() {
-  const tools = await listActiveToolEntries();
+  const tools = (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
   const guides = await listRatgeberEntries("en");
   const lines = [
     "# Utildesk English Full Manifest",

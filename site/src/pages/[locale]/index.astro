@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
-import { categoryTitleEn, getEnglishToolMeta } from "../../lib/englishContent";
+import { categoryTitleEn, getEnglishToolMeta, hasEnglishToolTranslation } from "../../lib/englishContent";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 import { tagHref } from "../../lib/tagRoutes";
@@ -68,7 +68,7 @@ const getFrequencyClass = (count: number, max: number) => {
   return "tag-freq-low";
 };
 
-const entries = await listActiveToolEntries();
+const entries = (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
 const tools = entries.map((entry) => {
   const meta = getEnglishToolMeta(entry);
   const rawCategory = entry.data.category ? String(entry.data.category) : null;
