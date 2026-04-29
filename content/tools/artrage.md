@@ -1,10 +1,11 @@
 ---
-slug: "artrage"
-title: "ArtRage"
-category: "Design"
-price_model: "Kostenpflichtig, Einmalzahlung"
+slug: artrage
+title: ArtRage
+category: Design
+price_model: Kostenpflichtig, Einmalzahlung
 tags: [design,painting,illustration,desktop]
 official_url: "https://www.artrage.com/"
+popularity: 0
 ---
 
 # ArtRage
