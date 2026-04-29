@@ -1342,6 +1342,27 @@ def read_previous_upload_signature(artifact_dir: Path) -> str:
     return str(data.get("uploadSignature") or data.get("result", {}).get("uploadSignature") or "")
 
 
+def load_published_identifiers(root_dir: Path = ROOT_DIR) -> set[str]:
+    registry_path = root_dir / "data" / "article_jobs" / "published_signatures.json"
+    if not registry_path.exists():
+        return set()
+    try:
+        registry = load_json(registry_path)
+    except Exception:
+        return set()
+    identifiers: set[str] = set()
+    for entry in registry.get("entries") or []:
+        if not isinstance(entry, dict):
+            continue
+        signature = str(entry.get("signature") or "").strip()
+        job_id = str(entry.get("job_id") or "").strip()
+        if signature:
+            identifiers.add(signature)
+        if job_id:
+            identifiers.add(job_id)
+    return identifiers
+
+
 def post_json(endpoint: str, token: str, payload: dict[str, Any]) -> dict[str, Any]:
     data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
@@ -1367,6 +1388,7 @@ def find_review_ready_artifacts(root: Path) -> list[Path]:
     candidates: list[Path] = []
     if not root.exists():
         return candidates
+    published = load_published_identifiers()
     for artifact_dir in root.iterdir():
         if not artifact_dir.is_dir():
             continue
@@ -1377,7 +1399,12 @@ def find_review_ready_artifacts(root: Path) -> list[Path]:
             continue
         try:
             packet = load_json(packet_path)
+            job = load_json(job_path)
         except Exception:
+            continue
+        if str(job.get("job_id") or artifact_dir.name).strip() in published:
+            continue
+        if str(job.get("signature") or "").strip() in published:
             continue
         status = str(packet.get("review_status") or "").strip()
         if status in {"review_ready", "approved_for_publish"}:
