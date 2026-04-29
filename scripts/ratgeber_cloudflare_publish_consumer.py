@@ -273,6 +273,45 @@ def submit_indexnow(repo_dir: Path, url: str, env: dict[str, str]) -> None:
         run([sys.executable, helper, "submit-batch", "--url", url, "--wait-live"], cwd=repo_dir, env=env, timeout=180)
 
 
+def record_published_article(article_workspace: Path, request: dict[str, Any], published_url: str) -> None:
+    job_id = str(request.get("jobId") or "").strip()
+    if not job_id:
+        return
+    registry_path = article_workspace / "data" / "article_jobs" / "published_signatures.json"
+    job_path = article_workspace / "artifacts" / "article_jobs" / job_id / "job.json"
+    try:
+        registry = json.loads(registry_path.read_text(encoding="utf-8-sig")) if registry_path.exists() else {}
+    except Exception:
+        registry = {}
+    entries = registry.get("entries")
+    if not isinstance(entries, list):
+        entries = []
+    seen = {
+        str(entry.get("job_id") or "")
+        for entry in entries
+        if isinstance(entry, dict)
+    }
+    if job_id in seen:
+        return
+    try:
+        job = json.loads(job_path.read_text(encoding="utf-8-sig")) if job_path.exists() else {}
+    except Exception:
+        job = {}
+    entries.append(
+        {
+            "signature": str(job.get("signature") or request.get("signature") or "").strip(),
+            "job_id": job_id,
+            "topic": str(job.get("topic") or request.get("title") or "").strip(),
+            "format": str(job.get("format") or request.get("format") or "").strip(),
+            "published_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "published_url": published_url,
+        }
+    )
+    registry["entries"] = entries[-200:]
+    registry_path.parent.mkdir(parents=True, exist_ok=True)
+    registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def process_request(args: argparse.Namespace, request: dict[str, Any], env_values: dict[str, str]) -> dict[str, Any]:
     request_id = str(request.get("id") or "").strip()
     slug = str(request.get("slug") or "").strip()
@@ -312,6 +351,7 @@ def process_request(args: argparse.Namespace, request: dict[str, Any], env_value
             f"Published DE/EN by Ratgeber consumer from commit {commit_sha}.",
             published_url,
         )
+        record_published_article(args.article_workspace, request, published_url)
     return {"requestId": request_id, "slug": slug, "commit": commit_sha, "url": published_url}
 
 
