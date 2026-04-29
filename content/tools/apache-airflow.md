@@ -1,10 +1,11 @@
 ---
-slug: "apache-airflow"
-title: "Apache Airflow"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-airflow
+title: Apache Airflow
+category: Developer
+price_model: Open Source
 tags: [automation, workflow, data, open-source]
 official_url: "https://airflow.apache.org/"
+popularity: 0
 ---
 
 # Apache Airflow

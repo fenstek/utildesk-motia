@@ -1,10 +1,11 @@
 ---
-slug: "clarivate-analytics"
-title: "Clarivate Analytics (Web of Science)"
-category: "Developer"
-price_model: "Abonnement"
+slug: clarivate-analytics
+title: Clarivate Analytics (Web of Science)
+category: Developer
+price_model: Abonnement
 tags: [research,search,analytics,data]
 official_url: "https://access.clarivate.com/login?app=wos&alternative=true&goto=https%3A%2F%2Fwww.webofknowledge.com&shibShireURL=https%3A%2F%2Fwww.webofknowledge.com%2F%3Fauth%3DShibboleth&shibReturnURL=https%3A%2F%2Fwww.webofknowledge.com%2F&roaming=true"
+popularity: 0
 ---
 
 # Clarivate Analytics (Web of Science)

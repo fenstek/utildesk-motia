@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://jovian.com/"
-popularity: 90
+popularity: 93
 ---
 
 # Jovian

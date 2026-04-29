@@ -1,10 +1,11 @@
 ---
-slug: "wipo-patentscope"
-title: "WIPO PATENTSCOPE"
-category: "Developer"
-price_model: "Kostenlos"
+slug: wipo-patentscope
+title: WIPO PATENTSCOPE
+category: Developer
+price_model: Kostenlos
 tags: [patents, research, search, data]
 official_url: "https://patentscope.wipo.int/"
+popularity: 0
 ---
 
 # WIPO PATENTSCOPE
