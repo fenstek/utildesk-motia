@@ -200,7 +200,7 @@ export const getEnglishToolMeta = (entry: ToolEntryLike) => {
       ? String(translation.data.category)
       : translateLabel(entry.data.category ? String(entry.data.category) : "");
     const priceModel = translation.data.price_model
-      ? normalizePriceModel(String(translation.data.price_model)) || String(translation.data.price_model)
+      ? translatePriceModel(String(translation.data.price_model)) || String(translation.data.price_model).trim()
       : translatePriceModel(entry.data.price_model ? String(entry.data.price_model) : "");
     const tags = Array.isArray(translation.data.tags)
       ? translation.data.tags.map(String).filter(Boolean)
