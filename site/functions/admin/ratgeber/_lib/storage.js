@@ -1,6 +1,7 @@
 export const INDEX_KEY = "ratgeber-review:index";
 export const CANDIDATE_PREFIX = "ratgeber-review:candidates:";
 export const PUBLISH_QUEUE_PREFIX = "ratgeber-review:publish-queue:";
+export const REWORK_QUEUE_PREFIX = "ratgeber-review:rework-queue:";
 
 export class HttpError extends Error {
   constructor(status, message) {
@@ -54,6 +55,10 @@ export function assetKey(jobId, name) {
 
 export function publishQueueKey(requestId) {
   return `${PUBLISH_QUEUE_PREFIX}${normalizeAssetName(requestId)}.json`;
+}
+
+export function reworkQueueKey(requestId) {
+  return `${REWORK_QUEUE_PREFIX}${normalizeAssetName(requestId)}.json`;
 }
 
 export async function readIndex(env) {
@@ -136,6 +141,7 @@ export async function updateIndexCandidate(env, candidate) {
     createdAt: candidate.createdAt || null,
     updatedAt: candidate.updatedAt || new Date().toISOString(),
     publish: candidate.publish || null,
+    rework: candidate.rework || null,
   };
   index.candidates = isPublishedCandidate(summary) ? withoutCurrent : [summary, ...withoutCurrent];
   await writeIndex(env, index);
@@ -170,6 +176,19 @@ export async function readAsset(env, rawJobId, rawName) {
 export async function listPublishRequests(env) {
   const kv = requireKv(env);
   const listed = await kv.list({ prefix: PUBLISH_QUEUE_PREFIX, limit: 1000 });
+  const requests = [];
+  for (const key of listed.keys) {
+    const request = await kv.get(key.name, "json");
+    if (request && typeof request === "object") {
+      requests.push({ ...request, key: key.name });
+    }
+  }
+  return requests.sort((a, b) => String(b.requestedAt || "").localeCompare(String(a.requestedAt || "")));
+}
+
+export async function listReworkRequests(env) {
+  const kv = requireKv(env);
+  const listed = await kv.list({ prefix: REWORK_QUEUE_PREFIX, limit: 1000 });
   const requests = [];
   for (const key of listed.keys) {
     const request = await kv.get(key.name, "json");
