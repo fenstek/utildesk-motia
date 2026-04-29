@@ -1,10 +1,11 @@
 ---
-slug: "axis-communications"
-title: "Axis Communications"
-category: "Video"
-price_model: "Je nach Plan"
+slug: axis-communications
+title: Axis Communications
+category: Video
+price_model: Je nach Plan
 tags: [video, security, hardware, analytics]
 official_url: "https://www.axis.com/de-de"
+popularity: 0
 ---
 
 # Axis Communications

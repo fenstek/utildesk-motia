@@ -1,10 +1,11 @@
 ---
-slug: "mulesoft-anypoint-platform"
-title: "MuleSoft Anypoint Platform"
-category: "Developer"
-price_model: "Abonnement, Individuelles Angebot"
+slug: mulesoft-anypoint-platform
+title: MuleSoft Anypoint Platform
+category: Developer
+price_model: Abonnement, Individuelles Angebot
 tags: [api, integration, automation, developer-tools]
 official_url: "https://www.mulesoft.com/platform/enterprise-integration"
+popularity: 0
 ---
 
 # MuleSoft Anypoint Platform

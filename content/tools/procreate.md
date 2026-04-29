@@ -1,10 +1,11 @@
 ---
-slug: "procreate"
-title: "Procreate"
-category: "Design"
-price_model: "Einmalzahlung"
+slug: procreate
+title: Procreate
+category: Design
+price_model: Einmalzahlung
 tags: [design,illustration,painting,mobile]
 official_url: "https://procreate.com/"
+popularity: 0
 ---
 
 # Procreate

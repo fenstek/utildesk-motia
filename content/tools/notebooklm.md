@@ -5,7 +5,7 @@ category: Produktivitaet
 price_model: Freemium
 tags: [ai, research, notes]
 official_url: "https://notebooklm.google/"
-popularity: 31
+popularity: 30
 ---
 
 # NotebookLM

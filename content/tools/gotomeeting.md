@@ -1,10 +1,11 @@
 ---
-slug: "gotomeeting"
-title: "GoToMeeting"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: gotomeeting
+title: GoToMeeting
+category: Produktivität
+price_model: Abonnement
 tags: [meetings, video, communication, productivity]
 official_url: "https://www.goto.com/meeting"
+popularity: 0
 ---
 
 # GoToMeeting

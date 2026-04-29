@@ -1,10 +1,11 @@
 ---
-slug: "innography"
-title: "Innography"
-category: "Developer"
-price_model: "Abonnement"
+slug: innography
+title: Innography
+category: Developer
+price_model: Abonnement
 tags: [patents,research,analytics,enterprise]
 official_url: "https://clarivate.com/intellectual-property/derwent/patent-analytics/"
+popularity: 0
 ---
 
 # Innography
