@@ -102,6 +102,10 @@ body {
   padding: 0;
 }
 
+html {
+  font-size: 110%;
+}
+
 body {
   min-height: 100vh;
   font-family: var(--mono);
@@ -110,7 +114,7 @@ body {
     radial-gradient(circle at 14% 0%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 28rem),
     var(--bg);
   color: var(--fg);
-  font-size: 13px;
+  font-size: 14.3px;
   line-height: 1.45;
   font-feature-settings: "calt" 0, "liga" 0;
 }
@@ -1364,7 +1368,7 @@ main.container {
 
 @media (max-width: 760px) {
   body {
-    font-size: 12px;
+    font-size: 13.2px;
   }
 
   .container {
