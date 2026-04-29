@@ -1,6 +1,8 @@
 import { marked } from "marked";
 import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import matter from "gray-matter";
+import { fromContent } from "./contentRoot.mjs";
 import { stripMarkdown } from "./machineReadable";
 import { normalizePriceModel } from "./priceModel";
 
@@ -89,7 +91,7 @@ type EnglishToolTranslation = {
   content: string;
 };
 
-const EN_TOOLS_DIR = new URL("../../../content/en/tools/", import.meta.url);
+const EN_TOOLS_DIR = fromContent("en", "tools");
 const englishToolTranslationCache = new Map<string, EnglishToolTranslation | null>();
 
 const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null => {
@@ -97,13 +99,13 @@ const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null 
     return englishToolTranslationCache.get(slug) ?? null;
   }
 
-  const fileUrl = new URL(`${slug}.md`, EN_TOOLS_DIR);
-  if (!existsSync(fileUrl)) {
+  const filePath = join(EN_TOOLS_DIR, `${slug}.md`);
+  if (!existsSync(filePath)) {
     englishToolTranslationCache.set(slug, null);
     return null;
   }
 
-  const parsed = matter(readFileSync(fileUrl, "utf8"));
+  const parsed = matter(readFileSync(filePath, "utf8"));
   const translation = {
     data: parsed.data as Record<string, any>,
     content: parsed.content.trim(),
@@ -176,10 +178,15 @@ const buildHumanFallbackDescription = (title: string, category: string, tags: st
     .filter((tag) => tag.toLowerCase() !== "ai")
     .slice(0, 4)
     .map(formatFocusTag);
-  const focusText = focus.length ? joinHumanList(focus) : category ? `${category.toLowerCase()} work` : "AI-assisted work";
-  const priceHint = priceModel ? ` Pricing signal: ${priceModel}.` : "";
+  const focusText = focus.length
+    ? joinHumanList(focus)
+    : category
+      ? `${category.toLowerCase()} workflows`
+      : "AI-assisted workflows";
+  const categoryHint = category ? ` for ${category.toLowerCase()} teams` : "";
+  const pricingHint = priceModel ? ` The listed pricing model is ${priceModel.toLowerCase()}.` : "";
 
-  return `${title} helps with ${focusText}.${priceHint}`;
+  return `${title} helps${categoryHint} evaluate ${focusText}.${pricingHint}`;
 };
 
 export const getEnglishToolMeta = (entry: ToolEntryLike) => {
@@ -286,12 +293,12 @@ export const buildEnglishToolMarkdown = (entry: ToolEntryLike) => {
     "",
     "## Best fit",
     "",
-    `Use ${meta.title} when you are comparing tools for ${focusTags.length ? joinHumanList(focusTags.map((tag) => tag.toLowerCase())) : meta.category || "AI work"}. Check the category, pricing signal, related tags and provider link before deciding whether it deserves a deeper trial.`,
+    `Use ${meta.title} when you are comparing tools for ${focusTags.length ? joinHumanList(focusTags.map((tag) => tag.toLowerCase())) : meta.category || "AI work"}. Check the category, pricing model, related tags and provider link before deciding whether it deserves a deeper trial.`,
     "",
     "## Quick signals",
     "",
     `- Category: ${meta.category || "AI tool"}`,
-    `- Pricing signal: ${meta.priceModel || "Not specified"}`,
+    `- Pricing model: ${meta.priceModel || "Not specified"}`,
     `- Tags: ${focusTags.length ? focusTags.join(", ") : "AI, productivity, workflow"}`,
     "",
     "## Evaluation notes",

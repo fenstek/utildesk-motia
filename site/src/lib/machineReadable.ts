@@ -4,7 +4,7 @@ export function stripMarkdown(text: string) {
   return String(text ?? "")
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
-    .replace(/[`*_>#-]/g, "")
+    .replace(/[`*_>#]/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
