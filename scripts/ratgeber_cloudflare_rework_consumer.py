@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import subprocess
@@ -17,6 +18,7 @@ from typing import Any
 DEFAULT_QUEUE_ENDPOINT = "https://tools.utildesk.de/admin/ratgeber/api/rework-queue"
 DEFAULT_UPLOAD_ENDPOINT = "https://tools.utildesk.de/admin/ratgeber/api/upload"
 DEFAULT_ARTICLE_WORKSPACE = Path("/opt/openclaw/workspace/agent-newsman")
+VISUAL_ASSET_NAMES = ("cover.png", "workflow.png", "cover.svg", "workflow.svg", "illustration.svg")
 
 
 class ReworkError(RuntimeError):
@@ -42,6 +44,26 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def file_sha256(path: Path) -> str | None:
+    if not path.exists() or not path.is_file():
+        return None
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def visual_asset_snapshot(artifact_dir: Path) -> dict[str, str | None]:
+    return {name: file_sha256(artifact_dir / name) for name in VISUAL_ASSET_NAMES}
+
+
+def scope_requests_visual(request: dict[str, Any]) -> bool:
+    raw_scope = request.get("scope") or ["text", "visual"]
+    scope = [str(item).strip().lower() for item in raw_scope if str(item).strip()]
+    return "visual" in scope or not scope
 
 
 def run(args: list[str | Path], cwd: Path, timeout: int = 900) -> subprocess.CompletedProcess[str]:
@@ -106,11 +128,12 @@ def article_python(article_workspace: Path) -> Path:
 
 def normalize_tasks(notes: str, scope: list[str]) -> tuple[list[str], list[str]]:
     text_tasks = [
-        "Poliere den Text sichtbar redaktionell: weniger PR-Ton, klarerer Einstieg, menschlicherer Rhythmus, konkretere Nutzenabwägung.",
+        "Poliere den Text sichtbar redaktionell: weniger PR-Ton, klarerer Einstieg, menschlicherer Rhythmus, konkretere Nutzenabwaegung.",
         "Pruefe alle Aussagen gegen die vorhandenen Quellen; keine neuen Fakten erfinden.",
     ]
     visual_tasks = [
-        "Erzeuge eine themenspezifische Utildesk-Illustration statt generischer Workflow- oder Platzhaltergrafik.",
+        "Erzeuge eine neue themenspezifische Utildesk-Illustration, die sichtbar zum Text passt.",
+        "Nutze eine frische Bildidee; den bisherigen visuellen Aufbau nicht wiederverwenden.",
         "Keine Service-Labels, keine internen Hinweise, keine generischen Footer-Texte in der Illustration.",
     ]
     if notes:
@@ -158,7 +181,22 @@ def prepare_rework_packet(article_workspace: Path, request: dict[str, Any]) -> P
 
     brief = " ".join(visual_tasks)
     existing_brief = str(job.get("illustration_brief") or "").strip()
-    job["illustration_brief"] = f"{existing_brief} {brief}".strip()
+    if existing_brief and not job.get("original_illustration_brief"):
+        job["original_illustration_brief"] = existing_brief
+    job["illustration_brief"] = brief
+    if "visual" in scope:
+        previous_iteration = int(job.get("visual_rework_iteration") or 0)
+        job["visual_rework_required"] = True
+        job["visual_rework_iteration"] = previous_iteration + 1
+        job["visual_rework_note"] = notes
+        job["visual_rework_tasks"] = visual_tasks
+        job["visual_rework_requested_at"] = now
+        job["visual_rework_do_not_reuse"] = [
+            "same selected renderer variant",
+            "same cover/workflow asset hash",
+            "generic block diagram",
+            "internal footer/service labels",
+        ]
     job["human_rework_notes"] = notes
     job["human_rework_scope"] = scope
     job["rework_requested_at"] = now
@@ -194,6 +232,57 @@ def rebuild_visuals(article_workspace: Path, artifact_dir: Path) -> None:
     run([py, "-c", helper, article_workspace, artifact_dir], cwd=article_workspace, timeout=240)
 
 
+def selected_visual_variants(artifact_dir: Path) -> dict[str, str]:
+    result_path = artifact_dir / "result.json"
+    if not result_path.exists():
+        return {}
+    try:
+        result = load_json(result_path)
+    except Exception:
+        return {}
+    quality = result.get("render", {}).get("illustration_quality") or result.get("illustration_quality") or {}
+    return {
+        "cover": str(quality.get("cover", {}).get("selected_variant") or ""),
+        "workflow": str(quality.get("workflow", {}).get("selected_variant") or ""),
+    }
+
+
+def ensure_visual_rework_changed(
+    artifact_dir: Path,
+    before_assets: dict[str, str | None],
+    before_variants: dict[str, str],
+) -> None:
+    after_assets = visual_asset_snapshot(artifact_dir)
+    after_variants = selected_visual_variants(artifact_dir)
+    changed_assets = [
+        name
+        for name in ("cover.png", "workflow.png")
+        if before_assets.get(name) and after_assets.get(name) and before_assets.get(name) != after_assets.get(name)
+    ]
+    changed_variants = [
+        role
+        for role in ("cover", "workflow")
+        if before_variants.get(role) and after_variants.get(role) and before_variants.get(role) != after_variants.get(role)
+    ]
+    if changed_assets or changed_variants:
+        return
+    write_json(
+        artifact_dir / "visual_rework_failed.json",
+        {
+            "failed_at": datetime.now(timezone.utc).isoformat(),
+            "reason": "visual rework produced the same assets/renderer variants",
+            "before_assets": before_assets,
+            "after_assets": after_assets,
+            "before_variants": before_variants,
+            "after_variants": after_variants,
+        },
+    )
+    raise ReworkError(
+        "Visual rework did not change cover/workflow images. "
+        "The candidate was not returned to review with unchanged visuals."
+    )
+
+
 def upload_candidate(article_workspace: Path, artifact_dir: Path, upload_endpoint: str, token_env: Path) -> None:
     py = article_python(article_workspace)
     run(
@@ -220,6 +309,12 @@ def process_request(args: argparse.Namespace, request: dict[str, Any]) -> dict[s
         raise ReworkError(f"Invalid rework request: {request}")
     update_request(args.queue_endpoint, args.token, request_id, "processing", "Rework consumer picked up the request.")
 
+    visual_rework_requested = scope_requests_visual(request)
+    job_id = str(request.get("jobId") or "").strip()
+    artifact_dir_for_snapshot = args.article_workspace / "artifacts" / "article_jobs" / job_id
+    before_assets = visual_asset_snapshot(artifact_dir_for_snapshot) if visual_rework_requested else {}
+    before_variants = selected_visual_variants(artifact_dir_for_snapshot) if visual_rework_requested else {}
+
     artifact_dir = prepare_rework_packet(args.article_workspace, request)
     py = article_python(args.article_workspace)
     run(
@@ -236,6 +331,8 @@ def process_request(args: argparse.Namespace, request: dict[str, Any]) -> dict[s
         timeout=args.rewrite_timeout,
     )
     rebuild_visuals(args.article_workspace, artifact_dir)
+    if visual_rework_requested:
+        ensure_visual_rework_changed(artifact_dir, before_assets, before_variants)
     upload_candidate(args.article_workspace, artifact_dir, args.upload_endpoint, args.token_env)
     update_request(args.queue_endpoint, args.token, request_id, "completed", "Text and visuals were reworked and candidate preview was refreshed.")
     return {"requestId": request_id, "jobId": request.get("jobId"), "artifactDir": str(artifact_dir)}

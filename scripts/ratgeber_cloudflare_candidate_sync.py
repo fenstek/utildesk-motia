@@ -1201,6 +1201,83 @@ h1 { margin:28px 0 16px; width:980px; color:#275f43; font-size:56px; line-height
 </style></head><body><main class="frame"><div class="wash-a"></div><div class="wash-b"></div><div class="wash-c"></div><h1>Vom Roh-Diktat zum brauchbaren Workflow</h1><p class="dek">Erst vergleichen, dann entscheiden: Diktat, KI-Gl&auml;ttung, Review und Einsatz geh&ouml;ren in einen kontrollierbaren Ablauf.</p><div class="apps"><span>Wispr Flow</span><span>Superwhisper</span><span>Aqua Voice</span></div><div class="signal"><small>SPRACHE / TEXT / PR&Uuml;FUNG</small></div><section class="step speak"><span class="num">01</span><div class="icon"></div><b>Sprechen</b><p>Rohgedanken aufnehmen, ohne den Fluss zu stoppen.</p></section><section class="step clean"><span class="num">02</span><div class="icon"></div><b>Gl&auml;tten</b><p>KI macht daraus lesbaren Text mit erkennbarem Ton.</p></section><section class="step check"><span class="num">03</span><div class="icon"></div><b>Pr&uuml;fen</b><p>Fakten, Datenschutz und App-Kontext kurz kontrollieren.</p></section><section class="step ship"><span class="num">04</span><div class="icon"></div><b>Einsetzen</b><p>In Mail, Dokument, Kommentar oder Meeting-Notiz nutzen.</p></section><div class="rule"></div><div class="spark s1"></div><div class="spark s2"></div><div class="spark s3"></div></main></body></html>"""
 
 
+def visual_rework_requested(job: dict[str, Any]) -> bool:
+    if job.get("visual_rework_required"):
+        return True
+    scope = [str(item).strip().lower() for item in (job.get("human_rework_scope") or []) if str(item).strip()]
+    return "visual" in scope and bool(str(job.get("human_rework_notes") or "").strip())
+
+
+def rework_visual_terms(title: str, job: dict[str, Any]) -> list[str]:
+    raw = topic_terms(title, job)
+    raw.extend(str(item) for item in (job.get("seo_focus") or []) if str(item).strip())
+    fallback = ["Kontext", "Signal", "Review", "Nutzen", "Praxis"]
+    terms: list[str] = []
+    seen: set[str] = set()
+    for value in raw + fallback:
+        label = short_label(re.sub(r"\s+", " ", str(value)).strip(), 18)
+        if not label:
+            continue
+        key = label.lower()
+        if key in seen:
+            continue
+        terms.append(label)
+        seen.add(key)
+        if len(terms) >= 5:
+            break
+    return terms
+
+
+def rework_cover_html(title: str, job: dict[str, Any]) -> str:
+    title_lines = "<br>".join(escape(line) for line in textwrap.wrap(title, width=36)[:4])
+    terms = rework_visual_terms(title, job)
+    chips = "".join(f"<span>{escape(term)}</span>" for term in terms)
+    return f"""<!doctype html>
+<html><head><meta charset="utf-8"><style>
+* {{ box-sizing:border-box; }}
+body {{ margin:0; width:1600px; height:980px; overflow:hidden; font-family:"JetBrains Mono","IBM Plex Mono",Consolas,monospace; color:#16211b; background:#f5f3ea; background-image:linear-gradient(#e0dccb 1px,transparent 1px),linear-gradient(90deg,#e0dccb 1px,transparent 1px); background-size:26px 26px; }}
+.scene {{ position:relative; width:100%; height:100%; padding:72px; }}
+.panel {{ position:absolute; inset:76px; border:2px solid #c7c3ae; background:rgba(255,253,244,.78); box-shadow:22px 26px 0 rgba(22,33,27,.10); }}
+.blob {{ position:absolute; border-radius:999px; opacity:.58; }} .b1 {{ width:520px; height:520px; right:120px; top:82px; background:#fff1bd; }} .b2 {{ width:480px; height:480px; left:104px; bottom:-120px; background:#dff0e5; }} .b3 {{ width:340px; height:340px; right:500px; bottom:110px; background:#dff0f0; }}
+h1 {{ position:absolute; left:126px; top:160px; width:700px; margin:0; color:#16211b; font-size:58px; line-height:1.02; letter-spacing:-.06em; }}
+.note {{ position:absolute; left:130px; top:500px; width:610px; color:#57594f; font-size:28px; line-height:1.32; }}
+.device {{ position:absolute; right:130px; top:176px; width:520px; height:450px; border:3px solid #286c7e; border-radius:42px; background:#fffdf4; box-shadow:18px 22px 0 rgba(22,33,27,.14); overflow:hidden; }}
+.device:before {{ content:""; position:absolute; left:0; right:0; top:0; height:74px; background:#d7eef2; border-bottom:3px solid #286c7e; }}
+.dot {{ position:absolute; top:25px; width:18px; height:18px; border-radius:50%; background:#e58a35; }} .d1 {{ left:34px; }} .d2 {{ left:64px; background:#f1ca63; }} .d3 {{ left:94px; background:#4f812c; }}
+.screen-card {{ position:absolute; left:42px; right:42px; height:74px; border:2px solid #c7c3ae; border-radius:22px; background:#fffaf0; }} .c1 {{ top:116px; }} .c2 {{ top:214px; }} .c3 {{ top:312px; }}
+.screen-card:after {{ content:""; position:absolute; left:28px; right:120px; top:30px; height:12px; border-radius:20px; background:#286c7e; opacity:.55; }}
+.orbit {{ position:absolute; right:54px; bottom:52px; width:140px; height:140px; border:3px solid #286c7e; border-radius:50%; background:rgba(215,238,242,.9); }}
+.orbit:before,.orbit:after {{ content:""; position:absolute; inset:26px; border:3px solid #e58a35; border-radius:50%; }} .orbit:after {{ inset:52px; background:#4f812c; border-color:#4f812c; }}
+.chips {{ position:absolute; left:130px; right:130px; bottom:112px; display:flex; gap:16px; flex-wrap:wrap; }}
+.chips span {{ padding:14px 19px; border:2px solid #a7a28e; background:#fffdf4; color:#275f43; font-weight:900; font-size:24px; box-shadow:8px 8px 0 rgba(22,33,27,.08); }}
+</style></head><body><main class="scene"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="panel"></div><h1>{title_lines}</h1><p class="note">Neue visuelle Fassung: weniger Schema, mehr erz&auml;hlende Einordnung passend zum Text.</p><section class="device"><i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><div class="screen-card c1"></div><div class="screen-card c2"></div><div class="screen-card c3"></div><div class="orbit"></div></section><div class="chips">{chips}</div></main></body></html>"""
+
+
+def rework_workflow_html(title: str, job: dict[str, Any]) -> str:
+    terms = rework_visual_terms(title, job)
+    labels = (terms + ["Quelle", "Kontext", "Freigabe"])[:4]
+    cards = "".join(
+        f"<section class='step s{index + 1}'><b>{index + 1:02d}</b><strong>{escape(label)}</strong><p>{escape(text)}</p></section>"
+        for index, (label, text) in enumerate(
+            zip(labels, ["Material sammeln", "Einordnung verdichten", "Aussage pruefen", "Nutzen sichtbar machen"])
+        )
+    )
+    return f"""<!doctype html>
+<html><head><meta charset="utf-8"><style>
+* {{ box-sizing:border-box; }}
+body {{ margin:0; width:1600px; height:980px; overflow:hidden; font-family:"JetBrains Mono","IBM Plex Mono",Consolas,monospace; color:#16211b; background:#f5f3ea; background-image:linear-gradient(#e0dccb 1px,transparent 1px),linear-gradient(90deg,#e0dccb 1px,transparent 1px); background-size:26px 26px; }}
+.frame {{ position:relative; width:100%; height:100%; padding:70px 82px; }}
+h1 {{ margin:0; width:980px; font-size:54px; line-height:1.06; letter-spacing:-.055em; }}
+.dek {{ margin-top:24px; width:900px; color:#57594f; font-size:27px; line-height:1.32; }}
+.wash {{ position:absolute; border-radius:999px; opacity:.55; }} .w1 {{ right:86px; top:66px; width:420px; height:420px; background:#fff1bd; }} .w2 {{ left:92px; bottom:-120px; width:500px; height:500px; background:#dff0e5; }} .w3 {{ right:380px; bottom:120px; width:290px; height:290px; background:#dff0f0; }}
+.track {{ position:absolute; left:118px; right:118px; top:470px; height:128px; border:3px solid #286c7e; border-radius:80px; background:#d7eef2; box-shadow:16px 18px 0 rgba(22,33,27,.13); }}
+.track:after {{ content:""; position:absolute; left:78px; right:78px; top:54px; height:18px; border-radius:40px; background:linear-gradient(90deg,#286c7e 0 18%,transparent 18% 25%,#f1ca63 25% 42%,transparent 42% 49%,#e58a35 49% 66%,transparent 66% 73%,#4f812c 73%); }}
+.step {{ position:absolute; top:650px; width:316px; height:210px; padding:28px; border:3px solid #286c7e; border-radius:34px; background:#fffdf4; box-shadow:12px 14px 0 rgba(22,33,27,.13); }}
+.step b {{ color:#e58a35; font-size:26px; }} .step strong {{ display:block; margin:16px 0 12px; color:#275f43; font-size:28px; }} .step p {{ margin:0; color:#57594f; font-size:20px; line-height:1.28; }}
+.s1 {{ left:110px; }} .s2 {{ left:456px; }} .s3 {{ left:802px; }} .s4 {{ left:1148px; }}
+</style></head><body><main class="frame"><div class="wash w1"></div><div class="wash w2"></div><div class="wash w3"></div><h1>So passt die Grafik zur Aussage</h1><p class="dek">Der zweite Blick prueft nicht nur Schoenheit, sondern ob Bildidee, Text und Quellen dieselbe Geschichte erzaehlen.</p><div class="track"></div>{cards}</main></body></html>"""
+
+
 def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool = False) -> None:
     cover_path = artifact_dir / "cover.png"
     workflow_path = artifact_dir / "workflow.png"
@@ -1223,7 +1300,10 @@ def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool
         tmp = Path(tmpdir)
         cover_html_path = tmp / "cover.html"
         workflow_html_path = tmp / "workflow.html"
-        if is_voice_comparison_article(title, job):
+        if visual_rework_requested(job):
+            cover_source = rework_cover_html(title, job)
+            workflow_source = rework_workflow_html(title, job)
+        elif is_voice_comparison_article(title, job):
             cover_source = voice_cover_html(title, job)
             workflow_source = voice_workflow_html(title, job)
         else:
