@@ -103,9 +103,18 @@ export function isPublishedCandidate(candidate) {
   return status === "published" || publishStatus === "published";
 }
 
+export function isActiveReworkCandidate(candidate) {
+  const status = String(candidate?.status || "").toLowerCase();
+  const reworkStatus = String(candidate?.rework?.status || "").toLowerCase();
+  if (["pending", "processing"].includes(reworkStatus)) {
+    return true;
+  }
+  return status === "rework_requested" && !["completed", "failed", "cancelled"].includes(reworkStatus);
+}
+
 export function isVisibleReviewCandidate(candidate) {
   const jobId = String(candidate?.jobId || "");
-  return Boolean(jobId) && !jobId.startsWith("test-") && !isPublishedCandidate(candidate);
+  return Boolean(jobId) && !jobId.startsWith("test-") && !isPublishedCandidate(candidate) && !isActiveReworkCandidate(candidate);
 }
 
 export async function readCandidate(env, rawJobId) {
