@@ -4,6 +4,7 @@ import {
   contentTypeForAsset,
   HttpError,
   jsonResponse,
+  isActiveReworkCandidate,
   normalizeAssetName,
   normalizeJobId,
   readCandidate,
@@ -102,6 +103,7 @@ export async function handlePost({ env, request }) {
 
     const jobId = normalizeJobId(candidate.jobId);
     const existingCandidate = await readCandidate(env, jobId);
+    const existingActiveRework = isActiveReworkCandidate(existingCandidate);
     const incomingPublish =
       candidate.publish && typeof candidate.publish === "object" && candidate.publish.status ? candidate.publish : null;
     const uploadedAssets = {};
@@ -137,11 +139,12 @@ export async function handlePost({ env, request }) {
       ...candidate,
       jobId,
       publish: incomingPublish || existingCandidate?.publish || null,
+      rework: existingActiveRework ? existingCandidate.rework : candidate.rework || existingCandidate?.rework || null,
       assets: {
         ...(candidate.assets || {}),
         ...uploadedAssets,
       },
-      status: candidate.status || "review_ready",
+      status: existingActiveRework ? "rework_requested" : candidate.status || "review_ready",
       uploadSignature: signature,
       uploadedAt: new Date().toISOString(),
     });
