@@ -1,10 +1,11 @@
 ---
-slug: "pusher"
-title: "Pusher"
-category: "Developer"
-price_model: "Freemium"
+slug: pusher
+title: Pusher
+category: Developer
+price_model: Freemium
 tags: [messaging,realtime,developer-tools,api]
 official_url: "https://pusher.com/"
+popularity: 0
 ---
 
 # Pusher

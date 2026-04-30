@@ -1,10 +1,11 @@
 ---
-slug: "apache-cassandra"
-title: "Apache Cassandra"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-cassandra
+title: Apache Cassandra
+category: Developer
+price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://cassandra.apache.org/_/index.html"
+popularity: 0
 ---
 
 # Apache Cassandra

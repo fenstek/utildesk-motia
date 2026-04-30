@@ -1,10 +1,11 @@
 ---
-slug: "grafana-cloud"
-title: "Grafana Cloud"
-category: "Developer"
-price_model: "Abonnement"
+slug: grafana-cloud
+title: Grafana Cloud
+category: Developer
+price_model: Abonnement
 tags: [monitoring, analytics, cloud, developer-tools]
 official_url: "https://grafana.com/products/cloud/"
+popularity: 0
 ---
 
 # Grafana Cloud

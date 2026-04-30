@@ -1,10 +1,11 @@
 ---
-slug: "h5p"
-title: "H5P"
-category: "Developer"
-price_model: "Open Source"
+slug: h5p
+title: H5P
+category: Developer
+price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://h5p.org/"
+popularity: 0
 ---
 
 # H5P

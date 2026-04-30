@@ -1,10 +1,11 @@
 ---
-slug: "bigbluebutton"
-title: "BigBlueButton"
-category: "Produktivität"
-price_model: "Open Source"
+slug: bigbluebutton
+title: BigBlueButton
+category: Produktivität
+price_model: Open Source
 tags: [meetings, video, education, open-source]
 official_url: "https://bigbluebutton.org/"
+popularity: 0
 ---
 
 # BigBlueButton

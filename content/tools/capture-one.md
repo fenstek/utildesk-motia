@@ -1,10 +1,11 @@
 ---
-slug: "capture-one"
-title: "Capture One"
-category: "Design"
-price_model: "Abonnement"
+slug: capture-one
+title: Capture One
+category: Design
+price_model: Abonnement
 tags: [photo,editing,raw,design]
 official_url: "https://www.captureone.com/en"
+popularity: 0
 ---
 
 # Capture One

@@ -1,10 +1,11 @@
 ---
-slug: "whereby"
-title: "Whereby"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: whereby
+title: Whereby
+category: Produktivität
+price_model: Abonnement
 tags: [meetings, video, communication, productivity]
 official_url: "https://whereby.com/"
+popularity: 0
 ---
 
 # Whereby

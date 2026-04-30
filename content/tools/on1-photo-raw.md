@@ -1,10 +1,11 @@
 ---
-slug: "on1-photo-raw"
-title: "ON1 Photo RAW"
-category: "Design"
-price_model: "Abonnement"
+slug: on1-photo-raw
+title: ON1 Photo RAW
+category: Design
+price_model: Abonnement
 tags: [photo, editing, raw, ai]
 official_url: "https://www.on1.com/products/photo-raw/"
+popularity: 0
 ---
 
 # ON1 Photo RAW

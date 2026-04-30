@@ -1,10 +1,11 @@
 ---
-slug: "algolia"
-title: "Algolia"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: algolia
+title: Algolia
+category: Developer
+price_model: Nutzungsbasiert
 tags: [search, api, developer-tools, commerce]
 official_url: "https://www.algolia.com/"
+popularity: 0
 ---
 
 # Algolia
