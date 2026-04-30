@@ -75,7 +75,7 @@ export async function handlePost({ env, request }) {
     const acceptsHtml = (request.headers.get("Accept") || "").includes("text/html");
     if (acceptsHtml) {
       return Response.redirect(
-        new URL(`/admin/ratgeber/candidate/${encodeURIComponent(candidate.jobId)}?rework=queued`, request.url).toString(),
+        new URL(`/admin/ratgeber/?rework=queued`, request.url).toString(),
         303,
       );
     }
