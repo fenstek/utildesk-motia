@@ -254,6 +254,14 @@ def ensure_visual_rework_changed(
 ) -> None:
     after_assets = visual_asset_snapshot(artifact_dir)
     after_variants = selected_visual_variants(artifact_dir)
+    comparable_assets = [
+        name for name in ("cover.png", "workflow.png") if before_assets.get(name) and after_assets.get(name)
+    ]
+    comparable_variants = [
+        role for role in ("cover", "workflow") if before_variants.get(role) and after_variants.get(role)
+    ]
+    if not comparable_assets and not comparable_variants:
+        return
     changed_assets = [
         name
         for name in ("cover.png", "workflow.png")
