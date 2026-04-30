@@ -219,6 +219,12 @@ else
   translate_changed_tools_to_english
 fi
 
+echo "[cron] refresh tool added-at manifest"
+node scripts/generate_tool_added_manifest.mjs
+
+echo "[cron] enforce complete English tool translations before commit"
+node scripts/check_english_tool_translations.mjs
+
 # 2) Detect changes
 CHANGED="$(git status --porcelain || true)"
 if [[ -z "$CHANGED" ]]; then
@@ -226,15 +232,16 @@ if [[ -z "$CHANGED" ]]; then
   exit 0
 fi
 
-# 3) Allowlist: only generated tool markdown and matching English translations
-BAD="$(printf '%s\n' "$CHANGED" | awk '{print $2}' | grep -vE '^(content/tools/[^/]+\.md|content/en/tools/[^/]+\.md)$' || true)"
+# 3) Allowlist: generated tool markdown, matching English translations and
+# the stable "newly added" manifest used by the UI sort order.
+BAD="$(printf '%s\n' "$CHANGED" | awk '{print $2}' | grep -vE '^(content/tools/[^/]+\.md|content/en/tools/[^/]+\.md|site/src/data/tool-added-at\.json)$' || true)"
 if [[ -n "$BAD" ]]; then
   echo "[cron] ERROR: unexpected changed files (refuse to commit/push):"
   echo "$BAD"
   exit 2
 fi
 
-git add -A content/tools content/en/tools
+git add -A content/tools content/en/tools site/src/data/tool-added-at.json
 
 if git diff --cached --quiet; then
   echo "[cron] staged is empty -> nothing to commit"

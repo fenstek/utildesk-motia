@@ -28,6 +28,10 @@ function runInherit(cmd, args) {
   }
 }
 
+function npmCommand() {
+  return process.platform === "win32" ? "npm.cmd" : "npm";
+}
+
 function requireSlug() {
   const slug = String(process.argv[2] || "").trim();
   if (!slug) {
@@ -220,6 +224,9 @@ async function main() {
     runInherit("node", ["scripts/generate_tool_md.mjs", tmpPath]);
     runInherit("node", ["scripts/finalize_md.mjs", tmpPath]);
     runInherit("node", ["scripts/check_duplicates.mjs"]);
+    runInherit(npmCommand(), ["run", "translate:tools:en", "--", "--slug", slug]);
+    runInherit("node", ["scripts/generate_tool_added_manifest.mjs"]);
+    runInherit("node", ["scripts/check_english_tool_translations.mjs"]);
 
     if (!fs.existsSync(mdPath)) {
       throw new Error(`Generated markdown not found: ${mdPath}`);
