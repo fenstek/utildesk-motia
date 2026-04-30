@@ -1,5 +1,5 @@
 import { pageShell, renderCandidateCard } from "./_lib/html.js";
-import { isPublishedCandidate, isVisibleReviewCandidate, readIndex, writeIndex } from "./_lib/storage.js";
+import { isActiveReworkCandidate, isPublishedCandidate, isVisibleReviewCandidate, readIndex, writeIndex } from "./_lib/storage.js";
 
 function normalizeComparable(value) {
   return String(value || "")
@@ -75,17 +75,23 @@ function isAlreadyLiveCandidate(candidate, manifest) {
 }
 
 export async function onRequest({ env, request }) {
+  const url = new URL(request.url);
   const index = await readIndex(env);
   const publishedManifest = await readPublishedManifest(request);
   const allCandidates = Array.isArray(index.candidates) ? index.candidates : [];
-  const candidates = allCandidates.filter((candidate) =>
-    isVisibleReviewCandidate(candidate) && !isAlreadyLiveCandidate(candidate, publishedManifest)
-  );
-  const hiddenPublishedCount = allCandidates.filter((candidate) =>
+  const publishedCandidates = allCandidates.filter((candidate) =>
     isPublishedCandidate(candidate) || isAlreadyLiveCandidate(candidate, publishedManifest)
+  );
+  const activeReworkCount = allCandidates.filter((candidate) =>
+    isActiveReworkCandidate(candidate) && !publishedCandidates.some((item) => item?.jobId === candidate?.jobId)
   ).length;
-  if (candidates.length !== allCandidates.length) {
-    await writeIndex(env, { ...index, candidates });
+  const cleanCandidates = allCandidates.filter((candidate) =>
+    !publishedCandidates.some((item) => item?.jobId === candidate?.jobId)
+  );
+  const candidates = cleanCandidates.filter((candidate) => isVisibleReviewCandidate(candidate));
+  const hiddenPublishedCount = publishedCandidates.length;
+  if (cleanCandidates.length !== allCandidates.length) {
+    await writeIndex(env, { ...index, candidates: cleanCandidates });
   }
   const cards = candidates.length
     ? `<div class="grid">${candidates.map(renderCandidateCard).join("")}</div>`
@@ -93,11 +99,17 @@ export async function onRequest({ env, request }) {
   const cleanupNote = hiddenPublishedCount
     ? `<div class="empty">Aufgeraeumt: ${hiddenPublishedCount} bereits veroeffentlichte ${hiddenPublishedCount === 1 ? "Story wurde" : "Storys wurden"} aus dieser Review-Liste entfernt.</div>`
     : "";
+  const reworkNote = activeReworkCount
+    ? `<div class="empty">In Ueberarbeitung: ${activeReworkCount} ${activeReworkCount === 1 ? "Story wird" : "Storys werden"} gerade ausserhalb der Publikationsliste poliert und erscheinen nach der frischen Vorschau wieder hier.</div>`
+    : "";
+  const queuedNote = url.searchParams.get("rework") === "queued"
+    ? `<div class="empty">Ueberarbeitung angenommen: Die Story wurde aus der Publikationsliste genommen, bis Text und Bilder frisch poliert sind.</div>`
+    : "";
 
   const body = `<section class="hero-panel">
     <h1>Ratgeber Kandidaten</h1>
     <p>Geschlossene Review-Paneele fuer die finale Kontrolle vor der Publikation. Bereits veroeffentlichte Artikel verschwinden automatisch aus dieser Liste, damit hier nur echte offene Kandidaten bleiben.</p>
-  </section>${cleanupNote}${cards}`;
+  </section>${queuedNote}${cleanupNote}${reworkNote}${cards}`;
 
   return new Response(pageShell("Kandidaten", body), {
     headers: {
