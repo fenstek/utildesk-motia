@@ -1,10 +1,11 @@
 ---
-slug: "wave-video"
-title: "Wave.video"
-category: "Video"
-price_model: "Freemium"
+slug: wave-video
+title: Wave.video
+category: Video
+price_model: Freemium
 tags: [video, marketing, editing, streaming]
 official_url: "https://wave.video/"
+popularity: 0
 ---
 
 # Wave.video

@@ -1,10 +1,11 @@
 ---
-slug: "apache-solr"
-title: "Apache Solr"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-solr
+title: Apache Solr
+category: Developer
+price_model: Open Source
 tags: [search, data, open-source, developer-tools]
 official_url: "https://solr.apache.org/"
+popularity: 0
 ---
 
 # Apache Solr

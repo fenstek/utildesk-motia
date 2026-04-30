@@ -1,10 +1,11 @@
 ---
-slug: "fabfilter-pro-l-2"
-title: "FabFilter Pro-L 2"
-category: "Audio"
-price_model: "One-time purchase"
+slug: fabfilter-pro-l-2
+title: FabFilter Pro-L 2
+category: Audio
+price_model: One-time purchase
 tags: [audio, mastering, limiter, music]
 official_url: "https://www.fabfilter.com/products/pro-l-2-limiter-plug-in"
+popularity: 0
 ---
 
 # FabFilter Pro-L 2

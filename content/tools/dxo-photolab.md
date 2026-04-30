@@ -1,10 +1,11 @@
 ---
-slug: "dxo-photolab"
-title: "DxO PhotoLab"
-category: "Design"
-price_model: "One-time purchase"
+slug: dxo-photolab
+title: DxO PhotoLab
+category: Design
+price_model: One-time purchase
 tags: [photo, editing, raw, ai]
 official_url: "https://www.dxo.com/dxo-photolab/"
+popularity: 0
 ---
 
 # DxO PhotoLab

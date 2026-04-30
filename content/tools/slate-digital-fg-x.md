@@ -1,10 +1,11 @@
 ---
-slug: "slate-digital-fg-x"
-title: "Slate Digital FG-X"
-category: "Audio"
-price_model: "Abonnement"
+slug: slate-digital-fg-x
+title: Slate Digital FG-X
+category: Audio
+price_model: Abonnement
 tags: [audio, mastering, limiter, music]
 official_url: "https://slatedigital.com/fg-x-2-mastering-plugin/"
+popularity: 0
 ---
 
 # Slate Digital FG-X

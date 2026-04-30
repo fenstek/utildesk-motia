@@ -1,10 +1,11 @@
 ---
-slug: "amazon-opensearch"
-title: "Amazon OpenSearch"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: amazon-opensearch
+title: Amazon OpenSearch
+category: Developer
+price_model: Nutzungsbasiert
 tags: [search, data, analytics, cloud]
 official_url: "https://aws.amazon.com/opensearch-service/"
+popularity: 0
 ---
 
 # Amazon OpenSearch

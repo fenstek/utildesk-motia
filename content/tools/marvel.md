@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [prototyping, ui-design, design-tools]
 official_url: "https://marvelapp.com/"
-popularity: 42
+popularity: 41
 ---
 
 # Marvel

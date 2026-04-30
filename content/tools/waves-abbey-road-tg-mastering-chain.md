@@ -1,10 +1,11 @@
 ---
-slug: "waves-abbey-road-tg-mastering-chain"
-title: "Waves Abbey Road TG Mastering Chain"
-category: "Audio"
-price_model: "Abonnement"
+slug: waves-abbey-road-tg-mastering-chain
+title: Waves Abbey Road TG Mastering Chain
+category: Audio
+price_model: Abonnement
 tags: [audio,mastering,mixing,music]
 official_url: "https://www.waves.com/plugins/abbey-road-tg-mastering-chain"
+popularity: 0
 ---
 
 # Waves Abbey Road TG Mastering Chain

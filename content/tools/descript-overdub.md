@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [audio, video, productivity, automation, content]
 official_url: "https://www.descript.com/regenerate"
-popularity: 71
+popularity: 69
 ---
 
 # Descript Overdub

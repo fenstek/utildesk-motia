@@ -1,10 +1,11 @@
 ---
-slug: "corel-paintshop-pro"
-title: "Corel PaintShop Pro"
-category: "Design"
-price_model: "One-time purchase"
+slug: corel-paintshop-pro
+title: Corel PaintShop Pro
+category: Design
+price_model: One-time purchase
 tags: [photo, editing, design, desktop]
 official_url: "https://www.paintshoppro.com/en/products/paintshop-pro/"
+popularity: 0
 ---
 
 # Corel PaintShop Pro

@@ -5,7 +5,7 @@ category: Design
 price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://play.google.com/store/apps/details?id=com.xt.retouchoversea"
-popularity: 64
+popularity: 62
 ---
 
 # Hypic

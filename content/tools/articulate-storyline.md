@@ -1,10 +1,11 @@
 ---
-slug: "articulate-storyline"
-title: "Articulate Storyline"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: articulate-storyline
+title: Articulate Storyline
+category: Produktivität
+price_model: Abonnement
 tags: [education, authoring, content, elearning]
 official_url: "https://www.articulate.com/360/storyline/"
+popularity: 0
 ---
 
 # Articulate Storyline

@@ -1,10 +1,11 @@
 ---
-slug: "t-racks-von-ik-multimedia"
-title: "T-RackS von IK Multimedia"
-category: "Audio"
-price_model: "One-time purchase"
+slug: t-racks-von-ik-multimedia
+title: T-RackS von IK Multimedia
+category: Audio
+price_model: One-time purchase
 tags: [audio, mastering, mixing, music]
 official_url: "https://www.ikmultimedia.com/products/tr6/"
+popularity: 0
 ---
 
 # T-RackS von IK Multimedia

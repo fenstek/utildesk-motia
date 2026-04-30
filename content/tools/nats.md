@@ -1,10 +1,11 @@
 ---
-slug: "nats"
-title: "NATS"
-category: "Developer"
-price_model: "Open Source"
+slug: nats
+title: NATS
+category: Developer
+price_model: Open Source
 tags: [messaging, developer-tools, open-source, cloud]
 official_url: "https://nats.io/"
+popularity: 0
 ---
 
 # NATS
