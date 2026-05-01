@@ -7,6 +7,7 @@ import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
 import { fromContent } from "../../../lib/contentRoot.mjs";
 import { normalizePriceModel } from "../../../lib/priceModel";
+import { ROBOTS_NOINDEX_FOLLOW } from "../../../lib/searchIndexPolicy.mjs";
 import { slugifyTag, tagHref } from "../../../lib/tagRoutes";
 import {
   buildBreadcrumbSchema,
@@ -189,6 +190,7 @@ const visibleTags = Array.from(tagFrequency.entries())
 <BaseLayout
   title={`${selectedTag} — Utildesk Tools`}
   description={`Tools mit dem Tag ${selectedTag} im Utildesk-Verzeichnis`}
+  robots={ROBOTS_NOINDEX_FOLLOW}
 >
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de${tagHref(selectedTag)}`} />

@@ -5,6 +5,11 @@ import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
+import toolAddedAtManifest from "../../data/tool-added-at.json";
+import {
+  createToolAddedAtRankMap,
+  getToolSearchIndexDecision,
+} from "../../lib/searchIndexPolicy.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
 import {
@@ -31,6 +36,10 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { entry } = Astro.props;
 const { data, content } = entry;
+const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
+const searchIndexDecision = getToolSearchIndexDecision(entry, {
+  addedAtRank: toolAddedAtRankMap.get(entry.slug) ?? 0,
+});
 
 const official_url = data.official_url ? String(data.official_url) : "";
 const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
@@ -350,7 +359,7 @@ const softwareApplicationSchema = {
 };
 ---
 
-<BaseLayout title={`${title} — Utildesk`} description={metaDescription}>
+<BaseLayout title={`${title} — Utildesk`} description={metaDescription} robots={searchIndexDecision.robots}>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/api/tools/${slug}.json`} title={`${title} (JSON)`} />

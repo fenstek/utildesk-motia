@@ -12,6 +12,11 @@ import {
   getEnglishToolMeta,
   hasEnglishToolTranslation,
 } from "../../../lib/englishContent";
+import toolAddedAtManifest from "../../../data/tool-added-at.json";
+import {
+  createToolAddedAtRankMap,
+  getToolSearchIndexDecision,
+} from "../../../lib/searchIndexPolicy.mjs";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { tagHref } from "../../../lib/tagRoutes";
@@ -36,6 +41,10 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { slug } = entry;
+const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
+const searchIndexDecision = getToolSearchIndexDecision(entry, {
+  addedAtRank: toolAddedAtRankMap.get(slug) ?? 0,
+});
 const meta = getEnglishToolMeta(entry);
 const providerUrl = meta.targetUrl || "";
 const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
@@ -167,7 +176,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 ---
 
-<BaseLayout locale="en" title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`} description={meta.metaDescription}>
+<BaseLayout locale="en" title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`} description={meta.metaDescription} robots={searchIndexDecision.robots}>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />

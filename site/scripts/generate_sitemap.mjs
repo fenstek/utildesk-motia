@@ -6,9 +6,14 @@
  * This ensures 1:1 match between sitemap and published pages
  */
 
-import { readdir, writeFile, stat } from 'node:fs/promises';
+import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import matter from 'gray-matter';
+import {
+  createToolAddedAtRankMap,
+  getToolSearchIndexDecision,
+} from '../src/lib/searchIndexPolicy.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,6 +27,8 @@ const DIST_EN_DIR = join(DIST_DIR, 'en');
 const DIST_EN_TOOLS_DIR = join(DIST_EN_DIR, 'tools');
 const DIST_EN_CATEGORY_DIR = join(DIST_EN_DIR, 'category');
 const DIST_EN_RATGEBER_DIR = join(DIST_EN_DIR, 'ratgeber');
+const CONTENT_TOOLS_DIR = join(__dirname, '../../content/tools');
+const TOOL_ADDED_AT_FILE = join(__dirname, '../src/data/tool-added-at.json');
 const OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 const RESERVED_TOOL_SEGMENTS = new Set(['tag']);
 
@@ -47,7 +54,57 @@ async function getFileModTime(filepath) {
   }
 }
 
-async function readBuiltTools() {
+async function readToolIndexableSlugs() {
+  let addedAtManifest = {};
+  try {
+    addedAtManifest = JSON.parse(await readFile(TOOL_ADDED_AT_FILE, 'utf8'));
+  } catch {
+    addedAtManifest = {};
+  }
+
+  const addedAtRankMap = createToolAddedAtRankMap(addedAtManifest);
+  const indexableSlugs = new Set();
+  const decisionCounts = new Map();
+
+  try {
+    const files = await readdir(CONTENT_TOOLS_DIR);
+    for (const file of files) {
+      if (!file.endsWith('.md') || file.startsWith('_')) continue;
+      const sourcePath = join(CONTENT_TOOLS_DIR, file);
+      const raw = await readFile(sourcePath, 'utf8');
+      const parsed = matter(raw);
+      const slug = String(parsed.data.slug ?? file.replace(/\.md$/i, ''));
+      const disabled =
+        parsed.data.disabled === true ||
+        String(parsed.data.disabled || '').toLowerCase() === 'true';
+      if (disabled) continue;
+
+      const decision = getToolSearchIndexDecision(
+        {
+          slug,
+          data: parsed.data,
+          content: parsed.content,
+        },
+        {
+          addedAtRank: addedAtRankMap.get(slug) ?? 0,
+        },
+      );
+      decisionCounts.set(decision.reason, (decisionCounts.get(decision.reason) || 0) + 1);
+      if (decision.indexable) {
+        indexableSlugs.add(slug);
+      }
+    }
+  } catch (error) {
+    throw new Error(`Failed to read tool indexing policy from content/tools/. Error: ${error.message}`);
+  }
+
+  return {
+    indexableSlugs,
+    decisionCounts: Object.fromEntries([...decisionCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
+  };
+}
+
+async function readBuiltTools(indexableSlugs) {
   try {
     const entries = await readdir(DIST_TOOLS_DIR, { withFileTypes: true });
     const tools = [];
@@ -59,6 +116,9 @@ async function readBuiltTools() {
 
       const slug = entry.name;
       if (slug.startsWith('_') || RESERVED_TOOL_SEGMENTS.has(slug)) {
+        continue;
+      }
+      if (indexableSlugs && !indexableSlugs.has(slug)) {
         continue;
       }
       const indexPath = join(DIST_TOOLS_DIR, slug, 'index.html');
@@ -189,11 +249,17 @@ async function readBuiltLocalizedDirectories(rootDir, reservedSegments = new Set
   }
 }
 
+async function readBuiltLocalizedTools(rootDir, indexableSlugs) {
+  const tools = await readBuiltLocalizedDirectories(rootDir, RESERVED_TOOL_SEGMENTS);
+  return indexableSlugs ? tools.filter((tool) => indexableSlugs.has(tool.slug)) : tools;
+}
+
 async function generateSitemap() {
-  const tools = await readBuiltTools();
+  const toolIndexPolicy = await readToolIndexableSlugs();
+  const tools = await readBuiltTools(toolIndexPolicy.indexableSlugs);
   const categories = await readBuiltCategories();
   const ratgeber = await readBuiltRatgeber();
-  const enTools = await readBuiltLocalizedDirectories(DIST_EN_TOOLS_DIR, RESERVED_TOOL_SEGMENTS);
+  const enTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.indexableSlugs);
   const enCategories = await readBuiltLocalizedDirectories(DIST_EN_CATEGORY_DIR);
   const enRatgeber = await readBuiltLocalizedDirectories(DIST_EN_RATGEBER_DIR);
   const today = formatDate(new Date());
@@ -380,6 +446,7 @@ async function generateSitemap() {
     enTools: enTools.length,
     enCategories: enCategories.length,
     enRatgeber: enRatgeber.length,
+    toolIndexDecisionCounts: toolIndexPolicy.decisionCounts,
   };
 }
 
@@ -408,6 +475,7 @@ async function main() {
       (result.enCategories > 0 ? 1 : 0) -
       (result.enRatgeber > 0 ? 1 : 0);
     console.log(`   Static pages: ${staticPages}`);
+    console.log(`   Tool index policy: ${JSON.stringify(result.toolIndexDecisionCounts)}`);
   } catch (error) {
     console.error('❌ Failed to generate sitemap:', error.message);
     process.exit(1);
