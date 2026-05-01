@@ -1,6 +1,7 @@
 ---
 import ToolCard from "../../../../components/ToolCard.astro";
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import { ROBOTS_NOINDEX_FOLLOW } from "../../../../lib/searchIndexPolicy.mjs";
 import { listDisplayTools } from "../../../../lib/toolDisplay";
 import { slugifyTag, tagHref } from "../../../../lib/tagRoutes";
 import {
@@ -88,6 +89,7 @@ const visibleTags = Array.from(tagFrequency.entries())
   locale="en"
   title={`${selectedTag} - Utildesk Tools`}
   description={`Tools tagged ${selectedTag} in the Utildesk directory`}
+  robots={ROBOTS_NOINDEX_FOLLOW}
 >
   <Fragment slot="head">
     <link rel="canonical" href={`https://tools.utildesk.de${tagHref(selectedTag, "en")}`} />
