@@ -25,7 +25,8 @@ const stripMarkdown = (text: string) =>
   text
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
-    .replace(/[`*_>#-]/g, "")
+    .replace(/[`*_>#]/g, "")
+    .replace(/(^|\s)-\s+/g, "$1")
     .replace(/\s+/g, " ")
     .trim();
 
@@ -195,10 +196,10 @@ const featuredToolsSchema = {
 };
 
 const homePageSchema = buildCollectionPageSchema({
-  name: "Utildesk",
-  description: "Kuratiertes Verzeichnis fuer AI-Tools, Automatisierung, Produktivitaet und Ratgeber.",
+  name: "Utildesk KI-Tools Verzeichnis 2026",
+  description: "Kuratiertes KI-Tools Verzeichnis 2026 fuer AI-Tools, Automatisierung, Produktivitaet und Ratgeber.",
   url: `${SITE_URL}/`,
-  about: ["AI-Tools", "Automatisierung", "Produktivitaet", "Ratgeber"],
+  about: ["KI-Tools Verzeichnis 2026", "AI-Tools", "Automatisierung", "Produktivitaet", "Ratgeber"],
   mainEntity: featuredToolsSchema,
 });
 
@@ -211,8 +212,8 @@ const homepageSchemas = [
 ---
 
 <BaseLayout
-  title="Utildesk - Tools & Guides fuer AI und Produktivitaet"
-  description="Kuratiertes Verzeichnis nuetzlicher AI- und Produktivitaetstools."
+  title="KI-Tools Verzeichnis 2026 - Utildesk"
+  description="Kuratiertes KI-Tools Verzeichnis 2026 mit AI-Tools, Automatisierung, Produktivitaet und Ratgeber ohne bezahlte Platzierungen."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/" />
@@ -226,7 +227,7 @@ const homepageSchemas = [
       <div>
         <div class="terminal-kicker">[ manifest_001 ]</div>
         <h1 class="terminal-title">
-          Ein Verzeichnis,<br />
+          KI-Tools Verzeichnis 2026,<br />
           <span class="terminal-accent">keine KI-Shopping-Mall.</span>
         </h1>
         <p class="terminal-copy">

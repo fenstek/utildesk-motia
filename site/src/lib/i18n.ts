@@ -35,6 +35,7 @@ export const localizePath = (path = "/", locale: Locale = DEFAULT_LOCALE) => {
 const SPECIAL_ALTERNATES = [
   { de: "/datenschutz/", en: "/en/privacy/" },
   { de: "/impressum/", en: "/en/imprint/" },
+  { de: "/methodologie/", en: "/en/methodology/" },
 ];
 
 const TRANSLATED_PATH_PATTERNS = [
@@ -92,6 +93,7 @@ export const UI = {
     footerTools: "Tools",
     footerGuides: "Ratgeber",
     footerCategories: "Kategorien",
+    footerMethodology: "Methodologie",
     footerPrivacy: "Datenschutzerkl\u00e4rung",
     footerImprint: "Impressum",
     footerCopy:
@@ -120,6 +122,7 @@ export const UI = {
     footerTools: "Tools",
     footerGuides: "Guides",
     footerCategories: "Categories",
+    footerMethodology: "Methodology",
     footerPrivacy: "Privacy",
     footerImprint: "Imprint",
     footerCopy:

@@ -1,0 +1,161 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { SITE_URL } from "../../lib/siteMeta";
+
+export function getStaticPaths() {
+  return [{ params: { locale: "en" } }];
+}
+
+const title = "Methodology - Utildesk";
+const description =
+  "How Utildesk curates AI tools, guides and recommendations: sources, selection, affiliate transparency and editorial review.";
+const pageUrl = `${SITE_URL}/en/methodology/`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: title,
+  description,
+  url: pageUrl,
+  inLanguage: "en",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "Utildesk",
+    url: SITE_URL,
+  },
+};
+---
+
+<BaseLayout locale="en" title={title} description={description}>
+  <Fragment slot="head">
+    <link rel="canonical" href={pageUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
+
+  <section class="methodology-page">
+    <p class="eyebrow">[ editorial_policy ]</p>
+    <h1>Methodology</h1>
+    <p class="lead">
+      Utildesk is an independent directory for AI tools and productive workflows. We organize tools so readers can
+      quickly understand what a product is useful for, which alternatives exist and when a deeper look is worthwhile.
+    </p>
+
+    <div class="methodology-grid">
+      <article class="methodology-card">
+        <h2>How tools are added</h2>
+        <p>
+          New entries are based on public sources such as provider websites, documentation, pricing pages, product
+          launches and editorial research. Before a tool becomes visible, we check its name, category, pricing signal,
+          tags, provider link and obvious duplicates.
+        </p>
+      </article>
+
+      <article class="methodology-card">
+        <h2>How guides are created</h2>
+        <p>
+          Guides are built from multiple sources and comparison points. They should provide context, link to concrete
+          tools and avoid pure promotional copy. Candidates are reviewed in the final page design before publication.
+        </p>
+      </article>
+
+      <article class="methodology-card">
+        <h2>Affiliate transparency</h2>
+        <p>
+          When a tool has a referral link, Utildesk may receive a commission after signup. These links do not replace
+          editorial judgment: paid slots, bought rankings and sponsored lists are not part of the concept.
+        </p>
+      </article>
+
+      <article class="methodology-card">
+        <h2>Index quality</h2>
+        <p>
+          Not every generated detail page needs to enter search immediately. Priority goes to curated tools, strong
+          guides, categories and pages with standalone value. Duplicates, very thin entries and pure long-tail variants
+          are reduced or excluded from indexing.
+        </p>
+      </article>
+    </div>
+
+    <section class="methodology-note">
+      <h2>Report an issue</h2>
+      <p>
+        If an entry is outdated, miscategorized or unclear, use the contact address in the
+        <a href="/en/imprint/">imprint</a>. Notes about wrong prices, broken links and missing alternatives directly
+        improve the next editorial pass.
+      </p>
+    </section>
+  </section>
+</BaseLayout>
+
+<style>
+  .methodology-page {
+    max-width: 1040px;
+    padding: var(--space-7) 0 var(--space-8);
+  }
+
+  .eyebrow {
+    margin: 0 0 14px;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 7vw, 5.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .lead {
+    max-width: 760px;
+    margin: 28px 0 0;
+    color: var(--secondary);
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    line-height: 1.65;
+  }
+
+  .methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: var(--space-6);
+  }
+
+  .methodology-card,
+  .methodology-note {
+    border: 1px solid rgba(190, 201, 197, 0.32);
+    background: var(--surface-container-low);
+    border-radius: var(--radius-lg);
+    padding: clamp(22px, 3vw, 30px);
+  }
+
+  .methodology-card h2,
+  .methodology-note h2 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+  }
+
+  .methodology-card p,
+  .methodology-note p {
+    margin: 0;
+    color: var(--secondary);
+    line-height: 1.75;
+  }
+
+  .methodology-note {
+    margin-top: 18px;
+  }
+
+  .methodology-note a {
+    color: var(--primary);
+  }
+
+  @media (max-width: 760px) {
+    .methodology-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
