@@ -62,7 +62,13 @@ python scripts/bing_webmaster_api.py call --method GetUserSites
 ## Current Audit Notes
 
 - Bing access is confirmed for `https://tools.utildesk.de`.
-- Bing currently keeps a stale sitemap snapshot with `UrlCount = 861`, while the live sitemap now contains `855` URLs.
+- 2026-04-30 re-check:
+  - live `https://tools.utildesk.de/sitemap.xml` contains `2002` canonical URLs;
+  - Bing initially still showed a stale `UrlCount = 1976`;
+  - `submit-feed` was run again and Bing refreshed the feed to `Status = Success`, `UrlCount = 2002`;
+  - `GetCrawlIssues` returned an empty list;
+  - last-30-day crawl summary showed `0` days blocked by robots and `0` days with `5xx`;
+  - Bing's latest `InIndex` count was `437`.
 - The live site should keep machine-readable non-HTML endpoints fetchable but out of the normal search index via `X-Robots-Tag: noindex`:
   - `/api/*`
   - `/markdown/*`
