@@ -13,6 +13,7 @@ import tempfile
 import textwrap
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -122,6 +123,155 @@ def topic_kind(title: str) -> str:
     if "developer" in lowered:
         return "developer"
     return "generic"
+
+
+COMPARISON_TERMS_RE = re.compile(
+    r"\b("
+    r"vergleich|alternativen|alternative|gegen|versus|vs|benchmark|roundup|"
+    r"ueberblick|uberblick|overview|markt|trend|stack|tools|programme|anbieter|"
+    r"schicht|workflow|kategorien|auswahl|ranking"
+    r")\b",
+    re.IGNORECASE,
+)
+SINGLE_TOOL_TITLE_RE = re.compile(
+    r"(^\s*tool\s*spotlight\b|:\s*was\s+das\s+tool\s+im\s+alltag\s+wirklich\s+taugt\b)",
+    re.IGNORECASE,
+)
+RATGEBER_VISUAL_STYLES = [
+    "editorial narrative scene",
+    "human workbench story",
+    "magazine cutaway illustration",
+    "field report collage",
+    "comparison table as environment",
+    "product ecosystem scene",
+    "soft technical metaphor",
+    "one restrained schematic only when it explains a real process",
+]
+
+
+def flatten_text(value: Any) -> str:
+    if isinstance(value, dict):
+        return " ".join(flatten_text(item) for item in value.values())
+    if isinstance(value, list):
+        return " ".join(flatten_text(item) for item in value)
+    return str(value or "")
+
+
+def collect_related_tool_names(job: dict[str, Any], packet: dict[str, Any]) -> list[str]:
+    names: list[str] = []
+    containers = [
+        job,
+        packet,
+        packet.get("meta") if isinstance(packet.get("meta"), dict) else {},
+        packet.get("article_quality") if isinstance(packet.get("article_quality"), dict) else {},
+        packet.get("visual_quality") if isinstance(packet.get("visual_quality"), dict) else {},
+    ]
+    keys = (
+        "related_tools",
+        "relatedTools",
+        "tool_candidates",
+        "tools",
+        "source_tools",
+        "alternatives",
+        "compared_tools",
+        "products",
+    )
+    for container in containers:
+        if not isinstance(container, dict):
+            continue
+        for key in keys:
+            raw = container.get(key)
+            if not raw:
+                continue
+            items = raw if isinstance(raw, list) else [raw]
+            for item in items:
+                if isinstance(item, dict):
+                    value = item.get("name") or item.get("title") or item.get("tool") or item.get("label")
+                else:
+                    value = item
+                label = re.sub(r"\s+", " ", str(value or "")).strip()
+                if label:
+                    names.append(label)
+    seen: set[str] = set()
+    result: list[str] = []
+    for name in names:
+        key = name.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(name)
+    return result
+
+
+def looks_like_single_tool_title(title: str) -> bool:
+    title = re.sub(r"\s+", " ", title or "").strip()
+    if SINGLE_TOOL_TITLE_RE.search(title):
+        return True
+    if ":" in title:
+        left, right = title.split(":", 1)
+        left_words = re.findall(r"[A-Za-z0-9][A-Za-z0-9.+_-]*", left)
+        right_lower = right.lower()
+        return 1 <= len(left_words) <= 5 and any(token in right_lower for token in ("tool", "alltag", "taugt"))
+    return False
+
+
+def candidate_rejection_reason(
+    artifact_dir: Path,
+    title: str,
+    job: dict[str, Any],
+    packet: dict[str, Any],
+    article_md: str,
+) -> str | None:
+    job_id = artifact_dir.name
+    format_blob = " ".join(
+        str(value or "")
+        for value in [
+            job_id,
+            job.get("format"),
+            job.get("story_format"),
+            job.get("content_type"),
+            job.get("topic"),
+            packet.get("format"),
+            packet.get("story_format"),
+        ]
+    ).lower()
+    if "tool_spotlight" in format_blob or "tool spotlight" in format_blob:
+        return "single-tool spotlight articles are not valid Ratgeber candidates"
+
+    haystack = " ".join([title, flatten_text(job), flatten_text(packet), article_md[:4000]])
+    has_comparative_frame = bool(COMPARISON_TERMS_RE.search(haystack))
+    related_tools = collect_related_tool_names(job, packet)
+    if looks_like_single_tool_title(title) and not has_comparative_frame:
+        return "single-tool article title without comparison or overview framing"
+    if len(related_tools) <= 1 and looks_like_single_tool_title(title):
+        return "single-tool candidate has no real comparison set"
+    return None
+
+
+def visual_generation_policy(title: str, job: dict[str, Any]) -> dict[str, Any]:
+    seed = hashlib.sha256(f"{title}|{job.get('job_id') or job.get('created_at') or ''}".encode("utf-8")).digest()[0]
+    primary_style = RATGEBER_VISUAL_STYLES[seed % (len(RATGEBER_VISUAL_STYLES) - 1)]
+    secondary_style = RATGEBER_VISUAL_STYLES[(seed + 3) % len(RATGEBER_VISUAL_STYLES)]
+    if primary_style == secondary_style:
+        secondary_style = RATGEBER_VISUAL_STYLES[(seed + 4) % len(RATGEBER_VISUAL_STYLES)]
+    return {
+        "primaryStyle": primary_style,
+        "secondaryStyle": secondary_style,
+        "rules": [
+            "Each article must use a fresh visual style; do not clone the previous candidate composition.",
+            "At least one image must be an artistic narrative illustration, not a chart, table, flowchart, or block diagram.",
+            "Use a diagram only when it explains a concrete process; never use two diagrams in the same article by default.",
+            "No internal service labels, debug captions, prompt notes, or footer slogans inside the image.",
+            "Illustrations must match the article argument and name specific compared tool roles only when readable.",
+        ],
+        "forbidden": [
+            "generic four-step cards",
+            "same grid-and-block scheme across articles",
+            "raw SVG-looking wireframes",
+            "service text such as UTILDESK // no cloned diagrams",
+            "decorative graphics that do not add editorial meaning",
+        ],
+    }
 
 
 def visual_heading(title: str) -> str:
@@ -1329,6 +1479,9 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
     packet = load_json(artifact_dir / "review_packet.json")
     article_md = (artifact_dir / "article.md").read_text(encoding="utf-8")
     title = first_heading(article_md)
+    rejection_reason = candidate_rejection_reason(artifact_dir, title, job, packet, article_md)
+    if rejection_reason:
+        raise ValueError(f"Rejected Ratgeber candidate {job_id}: {rejection_reason}")
 
     render_pngs(artifact_dir, title, job, force=force_images)
 
@@ -1346,6 +1499,7 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
     article_html = render_markdown_basic(content_markdown)
     quality = packet.get("article_quality") or {}
     visual_quality = packet.get("visual_quality") or {}
+    illustration_policy = visual_generation_policy(title, job)
 
     candidate = {
         "jobId": job_id,
@@ -1367,11 +1521,14 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
             "relatedTools": [dict(item) for item in (context.get("related_tools") or [])],
             "sidebarTitle": str(context.get("sidebar_title") or "Kurzfazit"),
             "sidebarPoints": [str(item) for item in (context.get("sidebar_points") or [])],
+            "illustrationPolicy": illustration_policy,
         },
         "source": {
             "artifactDir": str(artifact_dir),
             "notebookLmStage": True,
             "uploadTool": "ratgeber_cloudflare_candidate_sync.py",
+            "editorialGate": "comparison-or-overview-only",
+            "illustrationPolicy": illustration_policy,
         },
     }
 
@@ -1488,6 +1645,27 @@ def find_review_ready_artifacts(root: Path) -> list[Path]:
             continue
         status = str(packet.get("review_status") or "").strip()
         if status in {"review_ready", "approved_for_publish"}:
+            try:
+                article_md = article_path.read_text(encoding="utf-8")
+                title = first_heading(article_md)
+                reason = candidate_rejection_reason(artifact_dir, title, job, packet, article_md)
+            except Exception as error:
+                reason = f"candidate policy check failed: {error}"
+            if reason:
+                (artifact_dir / "cloudflare_review_rejected.json").write_text(
+                    json.dumps(
+                        {
+                            "ok": False,
+                            "rejected_at": datetime.now(timezone.utc).isoformat(),
+                            "jobId": artifact_dir.name,
+                            "reason": reason,
+                        },
+                        ensure_ascii=False,
+                        indent=2,
+                    ),
+                    encoding="utf-8",
+                )
+                continue
             candidates.append(artifact_dir)
     return sorted(candidates, key=lambda path: path.stat().st_mtime, reverse=True)
 
@@ -1501,7 +1679,29 @@ def upload_one(
     force_upload: bool,
     local_dedupe: bool,
 ) -> dict[str, Any]:
-    candidate, assets = build_candidate_payload(artifact_dir, force_images=force_images)
+    try:
+        candidate, assets = build_candidate_payload(artifact_dir, force_images=force_images)
+    except ValueError as error:
+        reason = str(error)
+        (artifact_dir / "cloudflare_review_rejected.json").write_text(
+            json.dumps(
+                {
+                    "ok": False,
+                    "skipped": True,
+                    "reason": reason,
+                    "jobId": artifact_dir.name,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+        return {
+            "ok": True,
+            "skipped": True,
+            "reason": reason,
+            "jobId": artifact_dir.name,
+        }
     signature = upload_signature(candidate, assets)
     candidate["uploadSignature"] = signature
     payload = {"candidate": candidate, "assets": assets}
