@@ -149,7 +149,8 @@ const restTools = enabledTools
   .filter((tool) => !pinnedSlugSet.has(tool.slug))
   .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
 const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
-const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
+const allRatgeber = await listRatgeberEntries();
+const recentRatgeber = allRatgeber.slice(0, 3);
 
 const normalizedToolTerms = (tool) =>
   [tool.category, ...tool.tags]
@@ -245,7 +246,7 @@ const homepageSchemas = [
             <span>kategorien</span>
           </div>
           <div class="terminal-stat">
-            <strong>{recentRatgeber.length}</strong>
+            <strong>{allRatgeber.length}</strong>
             <span>guides live</span>
           </div>
           <div class="terminal-stat">
@@ -411,7 +412,7 @@ const homepageSchemas = [
       <pre class="terminal-ascii" aria-hidden="true">{`utildesk://catalog
   tools       ${enabledTools.length}
   categories  ${CATEGORIES.length}
-  guides      ${recentRatgeber.length}
+  guides      ${allRatgeber.length}
   ads         0`}</pre>
     </aside>
   </section>
