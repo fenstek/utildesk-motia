@@ -6,92 +6,130 @@ price_model: Freemium
 tags:
   - ai
   - design
-official_url: 'https://figma.com'
+official_url: "https://figma.com"
 created_at: 2026-02-12T00:00:00.000Z
-popularity: 93
+popularity: 66
 source_language: de
 translation: full
+description: "Collaborative design platform for UI, prototyping, design systems, handoff, whiteboards, and increasingly AI-assisted product work."
 ---
+
 # Figma
 
-Figma is a web-based design and prototyping platform that is particularly well-suited for team collaboration. The platform supports AI-powered features that help designers and developers work more efficiently and optimize creative processes. The platform combines design, prototyping, and feedback in a single environment and is suitable for both beginners and professionals.
+Figma is a collaborative design platform for digital products. Teams use it to design interfaces, test prototypes, maintain design systems, collect feedback, and organize the handoff from design to development.
 
-## For Who is Figma Suitable?
+The core of Figma is not just drawing screens, but shared product work in one file: designers, developers, product managers, and stakeholders see the same state, comment directly in context, and can make decisions faster.
 
-Figma is designed for UX/UI designers, product managers, developers, and creative teams that work on digital products. It is particularly well-suited for teams that work remotely or distributed, as the platform enables real-time collaboration. Freelancers and agencies also benefit from the flexible Freemium and Business models. Additionally, individuals who are just starting to learn digital design can find a gentle learning curve through the intuitive user interface.
+## Who is Figma for?
 
-## Key Features
+Figma is especially useful for:
 
-- **Real-time Collaboration:** Multiple users can work on the same design simultaneously and track changes in real-time.
-- **Vector-based Design Tools:** Comprehensive tools for creating icons, layouts, and UI elements.
-- **Prototyping:** Interactive prototypes with transitions and animations can be created and tested directly in Figma.
-- **Design Systems:** Management of reusable components and styles to maintain consistency across projects.
-- **Plugins and Integrations:** Extension of functionality through a wide range of plugins, such as automation and AI-powered design aids.
-- **Version Control:** Tracking of changes and easy restoration of previous versions.
-- **Platform-agnostic:** Access through browser, macOS, Windows, and mobile apps.
-- **Comment Function:** Feedback and comments can be left directly in the design, simplifying communication.
+- UX and UI designers who create websites, apps, components, and design systems
+- Product teams that discuss concepts, prototypes, and user flows together
+- Developers who need clearer specifications, assets, variables, and design handoff
+- Agencies and freelancers who want client feedback directly in the draft
+- Companies that need to keep brand and product design consistent across teams
 
-## Advantages and Disadvantages
+Figma is less suitable as a pure image editor or as a full replacement for development. It can support websites, prototypes, and code-adjacent workflows, but production code and complex frontends still need engineering.
 
-### Advantages
+## Typical use cases
 
-- Platform-agnostic and browser-based, no installation required.
-- Strong real-time collaboration features in real-time.
-- Comprehensive design and prototyping tools in one tool.
-- Free entry with Freemium model.
-- Numerous plugins and integrations for expansion.
-- Intuitive user interface, even for beginners.
-- Good documentation and community support.
+- **UI design:** Design screens, components, layouts, and responsive states.
+- **Prototyping:** Build clickable flows for tests, stakeholder demos, and product decisions.
+- **Design systems:** Maintain components, variables, styles, and brand assets centrally.
+- **Design handoff:** Provide specs, notes, and code-adjacent information for developers.
+- **Workshops:** Use FigJam to collect ideas, prioritize, and map user journeys.
+- **AI-assisted experiments:** Try first apps, websites, or variants with Figma Make, Sites, and AI features.
 
-### Disadvantages
+## Core features
 
-- Performance in the browser may vary for very complex or large projects.
-- Some advanced features are only available in paid plans.
-- Offline usage is limited.
-- Data protection and cloud storage for some users may raise concerns.
-- Learning curve for users without a design background can be steep.
+- **Figma Design:** UI design, vectors, components, Auto Layout, variables, and prototyping in one interface.
+- **Real-time collaboration:** Several people work at the same time, comment, and see changes live.
+- **Design systems:** Reusable components, libraries, variables, and brand assets.
+- **Dev Mode:** Specifications, spacing, assets, annotations, and code-adjacent information for developers.
+- **FigJam:** Whiteboards for workshops, diagrams, brainstorming, and planning.
+- **Figma Slides, Sites, and Buzz:** Presentations, responsive websites, and brand-compliant assets in adjacent workflows.
+- **Figma AI and Make:** AI-assisted support for drafts, variants, and code-adjacent experiments.
+- **Plugins and community:** Many extensions, templates, UI kits, and integrations.
 
-## Pricing & Costs
+## Pros and cons
 
-Figma offers a Freemium model with the following typical pricing tiers (prices may vary depending on the provider):
+### Pros
 
-- **Free:** Basic functions for individuals and small teams, limited number of projects and files.
-- **Professional:** Monthly or annual payment, expanded features such as unlimited files, team libraries, and enhanced prototyping options.
-- **Organization:** For larger teams with additional security, management, and collaboration features.
-- **Enterprise:** Customized solutions with expanded support and compliance options.
+- Very strong for collaborative product design
+- Design, prototyping, comments, and handoff sit close together
+- Good foundation for design systems and consistent UI work
+- Browser-based and therefore easy to access for distributed teams
+- Large ecosystem of plugins, templates, and community resources
 
-The exact prices should be checked directly on the official website.
+### Cons
+
+- Large files and complex design systems need discipline and maintenance
+- Without clear component rules, Figma can also become messy quickly
+- Advanced team, dev, and enterprise features cost money
+- Design-to-code remains a handoff process, not a magic button, despite AI and Dev Mode
+- Specialized tools are often stronger for pure image editing or illustration
+
+## Workflow fit
+
+Figma belongs early and permanently in the product process: sketch ideas, test variants, document decisions, and hand UI details over to development cleanly. It becomes especially valuable when design system, component logic, and product decisions are actively maintained rather than treated as side effects.
+
+For teams, the important part is this: Figma files should not become a wild storage room. Naming, component structure, versioning, permissions, and handoff rules decide whether Figma accelerates work or only produces prettier chaos.
+
+## Privacy & data notes
+
+Designs can contain internal product plans, customer data, screenshots, roadmaps, or unreleased features. Access rights, external guests, comment permissions, and public links should therefore be checked regularly.
+
+For enterprise or regulated projects, SSO, admin controls, data location, roles, and approval processes matter more than individual design features.
+
+## Pricing & costs
+
+Figma offers free entry options and paid plans for professional teams, organizations, and enterprise requirements. Relevant costs include not only editor seats, but also Dev Mode, organization features, libraries, security, and scaling.
+
+**Go to provider:** https://figma.com
 
 ## Alternatives to Figma
 
-- [Adobe XD](/tools/adobe-xd/): Another tool for UX/UI design with prototyping features, part of the Adobe Creative Cloud.
-- [Sketch](/tools/sketch/): A popular design tool for macOS, specializing in vector graphics and UI design.
-- **InVision:** A platform for prototyping and collaboration, often used in combination with other design tools.
-- [Framer](/tools/framer/): Focus on interactive prototypes with code integration and animations.
-- [Canva](/tools/canva/): A simpler design platform geared more towards beginners and marketing teams, less specialized in UI/UX.
+- [Sketch](/en/tools/sketch/): Strong macOS-oriented design solution focused on UI and vector graphics.
+- [Framer](/en/tools/framer/): Better when design and publishable websites should sit closer together.
+- [Canva](/en/tools/canva/): Easier for marketing graphics, presentations, and quick brand assets.
+- [Adobe Illustrator](/en/tools/adobe-illustrator/): Stronger for vector illustration, brand logos, and precise graphic work.
+- [Miro](/en/tools/miro/): Better for whiteboards, workshops, and collaborative planning.
+
+## Editorial assessment
+
+Figma has almost become infrastructure for digital product teams. It does not replace good product thinking or clean development, but it creates a shared place where ideas, UI, feedback, and handoff become visible. Teams working with design systems can hardly avoid it.
 
 ## FAQ
 
-**1. Is Figma free to use?**  
-Yes, Figma offers a free version with limited features, which is often sufficient for individuals and small teams.
+**Is Figma free to use?**
 
-**2. Do I need an internet connection to use Figma?**  
-Figma is primarily web-based and requires an internet connection. There are limited offline features, but full functionality requires an internet connection.
+Yes, Figma has a free entry level. Paid plans are intended for professional teams, organizations, and advanced features.
 
-**3. Which operating systems are supported?**  
-Figma runs in the browser and is platform-agnostic. There are also desktop apps for Windows and macOS.
+**Does Figma require installation?**
 
-**4. Can Figma be integrated with other tools?**  
-Yes, Figma supports many plugins and integrations, such as with Slack, Zeplin, or Jira.
+Figma runs in the browser and also offers desktop apps. A stable internet connection matters for full collaboration.
 
-**5. How secure are the data in Figma?**  
-Figma stores data in the cloud with industry-standard security measures. Users should review the data protection terms for sensitive data.
+**Can Figma generate code?**
 
-**6. Is Figma suitable for beginners?**  
-Yes, through its intuitive interface and numerous tutorials, Figma is suitable for beginners in the design field.
+Figma can support specifications, code-adjacent information, and AI-assisted prototypes or experiments. Production code still needs to be developed and reviewed.
 
-**7. Can I create prototypes with Figma?**  
-Yes, Figma offers comprehensive prototyping features with interactive transitions and animations.
+**Is Figma only for designers?**
 
-**8. How does collaboration work in teams?**  
-Multiple users can work on the same project simultaneously, leave comments, and exchange feedback in real-time.
+No. Developers, product managers, researchers, marketing teams, and stakeholders also use Figma depending on the workflow.
+
+**What is Dev Mode?**
+
+Dev Mode is an area for design handoff: measurements, variables, annotations, assets, and code-adjacent information become easier for developers to access.
+
+**What is FigJam for?**
+
+FigJam is the whiteboard in the Figma ecosystem for workshops, diagrams, brainstorming, and planning.
+
+**Can Figma manage a design system?**
+
+Yes, components, variables, styles, and libraries are central strengths of Figma.
+
+**When is Canva better than Figma?**
+
+Canva is often easier for quick marketing graphics and social media assets. Figma is stronger for product design, UI, prototyping, and design systems.
