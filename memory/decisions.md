@@ -76,3 +76,17 @@
   `C:\Users\sserg\OneDrive - JGDUS\projects\eventmanagement\.claude\worktrees\youthful-noether\.env.local`.
 - Never commit or print the Cloudflare token value; store only variable names
   and source paths in tracked memory/docs.
+
+## 2026-05-02
+
+- A dedicated Proton mailbox may be used for our project work, including
+  Utildesk affiliate registrations, verification links, vendor/platform
+  communication, outreach, and operational mail.
+- Credentials belong only in `secrets/proton-affiliate-webmail.env`, which is
+  git-ignored. Never print, commit, or log the password.
+- Browser automation may use this mailbox for project tasks, but must not
+  change password, recovery data, forwarding, filters, account settings, or
+  security settings.
+- If a registration or reply requires tax data, payout details, personal
+  identity, company identity, legal declarations, or non-project commitments,
+  stop and ask before continuing.
