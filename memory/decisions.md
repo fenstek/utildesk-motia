@@ -57,3 +57,22 @@
 - Treat multilingual Ratgeber publication as a package contract: autonomous publish requires both `content/ratgeber/<slug>.md` and `content/en/ratgeber/<slug>.md`.
 - Keep English tool pages generated from the curated tool metadata until the sheet/backend has native English fields.
 - Keep machine-readable discovery localized as well: `/en/api/*`, `/en/markdown/*`, `/en/feed.*`, `/en/llms.txt`, and `/en/llms-full.txt`.
+
+## 2026-04-29
+
+- Privacy rule: never submit, publish, or reuse the user's personal first name
+  or surname in any project, account, outreach form, backlink submission, commit
+  metadata, public profile, or third-party communication unless the user gives
+  explicit permission for that exact use.
+- For outreach/name fields, use only non-personal labels such as `Utildesk` or
+  `Utildesk Team`. If a platform requires a real personal name, mark it blocked
+  instead of guessing or copying names from legal/imprint pages.
+
+## 2026-04-30
+
+- For local Cloudflare diagnostics in `C:\projects\utildesk-motia`, use
+  `CLOUDFLARE_API_TOKEN` from the git-ignored local `.env`.
+- If the local `.env` must be restored, the approved source location is
+  `C:\Users\sserg\OneDrive - JGDUS\projects\eventmanagement\.claude\worktrees\youthful-noether\.env.local`.
+- Never commit or print the Cloudflare token value; store only variable names
+  and source paths in tracked memory/docs.
