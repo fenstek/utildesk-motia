@@ -254,6 +254,16 @@ async function readBuiltLocalizedTools(rootDir, indexableSlugs) {
   return indexableSlugs ? tools.filter((tool) => indexableSlugs.has(tool.slug)) : tools;
 }
 
+async function readBuiltStaticPage(...segments) {
+  const indexPath = join(DIST_DIR, ...segments, 'index.html');
+  try {
+    const mtime = await getFileModTime(indexPath);
+    return { lastmod: formatDate(mtime) };
+  } catch {
+    return null;
+  }
+}
+
 async function generateSitemap() {
   const toolIndexPolicy = await readToolIndexableSlugs();
   const tools = await readBuiltTools(toolIndexPolicy.indexableSlugs);
@@ -262,6 +272,8 @@ async function generateSitemap() {
   const enTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.indexableSlugs);
   const enCategories = await readBuiltLocalizedDirectories(DIST_EN_CATEGORY_DIR);
   const enRatgeber = await readBuiltLocalizedDirectories(DIST_EN_RATGEBER_DIR);
+  const methodologyPage = await readBuiltStaticPage('methodologie');
+  const enMethodologyPage = await readBuiltStaticPage('en', 'methodology');
   const today = formatDate(new Date());
 
   // Check if category index exists
@@ -332,6 +344,15 @@ async function generateSitemap() {
       lastmod: today,
       priority: '0.9',
     },
+    ...(methodologyPage
+      ? [
+          {
+            loc: `${BASE_URL}/methodologie/`,
+            lastmod: methodologyPage.lastmod,
+            priority: '0.6',
+          },
+        ]
+      : []),
     // All built tool pages
     ...tools.map((tool) => ({
       loc: `${BASE_URL}/tools/${escapeXml(tool.slug)}/`,
@@ -383,6 +404,15 @@ async function generateSitemap() {
             lastmod: enToolsIndexLastmod,
             priority: '0.8',
           },
+          ...(enMethodologyPage
+            ? [
+                {
+                  loc: `${BASE_URL}/en/methodology/`,
+                  lastmod: enMethodologyPage.lastmod,
+                  priority: '0.5',
+                },
+              ]
+            : []),
         ]
       : []),
     ...enTools.map((tool) => ({

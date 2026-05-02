@@ -10,6 +10,7 @@ import {
   SITE_URL,
   toAbsoluteUrl,
 } from "../../../lib/siteMeta";
+import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../../lib/schema";
 
 export async function getStaticPaths() {
   const entries = await listRatgeberEntries("en");
@@ -35,6 +36,7 @@ const articleHtml = rawArticleHtml.replace(
 );
 const title = String(data.title ?? slug);
 const description = String(data.excerpt ?? title);
+const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(content));
 const published = data.date
   ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.date))
   : "";
@@ -113,6 +115,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <link rel="alternate" type="text/markdown" href={`/en/markdown/ratgeber/${slug}.md`} title={`${title} (Markdown)`} />
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
   <nav class="breadcrumb">
@@ -127,6 +130,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <p class="article-eyebrow">{data.eyebrow || "Guide"}</p>
     <h1>{title}</h1>
     <p class="article-excerpt">{description}</p>
+    <p class="article-byline">
+      By <strong>Utildesk Editorial</strong> · editorially reviewed · <a href="/en/methodology/">Methodology</a>
+    </p>
     <div class="article-pills">
       {published && addRenderedPill(published) ? <span class="pill">{published}</span> : null}
       {data.readTime && addRenderedPill(`${data.readTime} min read`) ? <span class="pill">{data.readTime} min read</span> : null}
@@ -211,6 +217,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   .article-eyebrow { margin: 0 0 12px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary); }
   .article-head h1 { margin: 0; font-size: clamp(1.6rem, 2.8vw, 2.4rem); line-height: 1.2; letter-spacing: -0.025em; font-weight: 800; max-width: 24ch; }
   .article-excerpt { margin: 16px 0 0; max-width: 62ch; color: var(--secondary); font-size: 1.05rem; line-height: 1.75; }
+  .article-byline { margin: 12px 0 0; color: var(--secondary); font-size: 0.9rem; line-height: 1.6; }
+  .article-byline a { color: var(--primary); text-decoration: underline; text-decoration-color: rgba(23, 98, 89, 0.28); text-underline-offset: 2px; }
   .article-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
   .pill { display: inline-flex; align-items: center; padding: 5px 12px; border-radius: var(--radius-full); background: var(--surface-container-low); color: var(--on-surface-variant); font-size: 0.78rem; font-weight: 600; border: 1px solid rgba(190, 201, 197, 0.3); }
   .pill--accent, .pill--tool { background: rgba(23, 98, 89, 0.08); color: var(--primary); border-color: rgba(23, 98, 89, 0.15); text-decoration: none; }
