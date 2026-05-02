@@ -9,6 +9,7 @@ Rules:
 - Do not print, commit, or log credentials.
 - Prefer direct provider programs before affiliate aggregators.
 - Non-cash referrals are valid when they give useful project credits, tokens, premium time, or usage allowance without payout/tax setup.
+- PartnerStack account exists, but PartnerStack has not approved access yet. Treat PartnerStack-based programs as blocked/deferred until that review clears.
 - Stop before tax forms, payout identity, company identity, bank/PayPal setup, or irreversible legal declarations.
 - Ask for explicit confirmation before final account creation or application submission.
 
@@ -38,6 +39,18 @@ Rules:
 | Descript | Likely PartnerStack/affiliate-network flow; defer until direct candidates are processed. |
 | Figma | No obvious direct affiliate program found in first pass. |
 | n8n | Affiliate/partner path appears payout/network-heavy and less aligned with the direct-first rule. |
+
+## Aggregator status
+
+| Network | Status | Notes |
+| --- | --- | --- |
+| PartnerStack | Blocked / pending approval | User has an account, but PartnerStack has not admitted it after review yet. Do not rely on PartnerStack programs for the first affiliate wave. |
+| Impact | Unknown | Likely relevant for larger creator/brand affiliate programs, but not confirmed for this project. |
+| CJ Affiliate / Commission Junction | Unknown | Search results point here for some large programs, but no project account state confirmed. |
+| Awin | Unknown | Keep as later option if direct programs are exhausted. |
+| ShareASale | Unknown | Keep as later option if direct programs are exhausted. |
+| Partnerize | Unknown | Keep as later option for larger enterprise/brand programs. |
+| Rakuten Advertising | Unknown | Keep as later option for larger brand programs. |
 
 ## Next action batch
 
