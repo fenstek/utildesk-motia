@@ -83,4 +83,3 @@ Deep Art Effects lohnt sich, wenn aus vorhandenen Bildern schnell mehrere künst
 **Worauf sollte man vor dem Einsatz achten?**
 
 Vor dem Einsatz sollten Bildrechte, Personenbezug, Exportqualität, Wasserzeichen und die geplante kommerzielle Nutzung geklärt sein.
-
