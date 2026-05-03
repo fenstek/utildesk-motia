@@ -1,88 +1,90 @@
 ---
 slug: looker-studio
 title: Looker Studio
-category: Audio
-price_model: Free
-tags:
-  - analytics
-  - data-visualization
-  - google
-official_url: 'https://lookerstudio.google.com/overview'
-popularity: 47
-description: 'A free Google tool for visualizing and analyzing data, building interactive reports and dashboards, and sharing them with teams or clients.'
+category: "Productivity"
+price_model: "Free"
+tags: ["analytics", "data", "dashboard", "reporting", "productivity"]
+official_url: "https://lookerstudio.google.com/overview"
+affiliate_url: "https://lookerstudio.google.com/overview"
+popularity: 49
+source_language: de
 translation: full
+description: "Free Google tool for dashboards, data visualization, and recurring reports."
 ---
+
 # Looker Studio
 
-Looker Studio is a powerful, free tool from Google for data visualization and analysis. It allows users to present complex datasets from different sources in a clear way and create interactive reports and dashboards. Looker Studio is especially popular with companies and individuals who want to make data-driven decisions without needing advanced programming skills.
+Looker Studio is Google's free tool for dashboards and data visualization. It connects data sources, builds reports, and makes metrics visible for teams.
 
-## Who is Looker Studio suitable for?
+Its strength is simple, shareable reporting. If you regularly analyze Google Analytics, Search Console, Ads, or Sheets, it gives you a usable reporting front end quickly.
 
-Looker Studio is aimed at a broad audience: from marketing and sales professionals to data analysts and small and medium-sized businesses. The tool is especially well suited for anyone using Google data sources such as Google Analytics, Google Ads, or Google Sheets and wanting to consolidate that data into understandable reports. Agencies that create reports for clients also benefit from the simple handling and the wide range of visualization options.
+## Who is it for?
 
-## Key features
+Looker Studio fits marketing, SEO, content, small BI teams, and client reporting. For complex enterprise BI, Power BI, Tableau, or Looker itself are often more robust; for simple Google reporting, Looker Studio is hard to beat.
 
-- **Integration with numerous data sources:** Easy connection to Google products and various third-party databases.
-- **Interactive dashboards:** Create dynamic reports with filters and control elements.
-- **Wide range of visualization types:** Bar charts, line charts, pie charts, tables, maps, and more.
-- **Real-time data updates:** Automatic refresh of reports when new data arrives.
-- **Collaboration features:** Work together on reports in real time.
-- **Template library:** Get started quickly with prebuilt report templates.
-- **Custom calculations:** Ability to define your own metrics and KPIs.
-- **Export and sharing options:** Reports can be exported as PDF or shared via link.
+## Typical use cases
+
+- Build SEO, analytics, and ads dashboards
+- Create automatically updating client reports
+- Visualize Google Sheets data
+- Collect team metrics in a shared dashboard
+
+## Core features
+
+- Free dashboard creation
+- Many Google-native data sources and community connectors
+- Shareable reports and embedded views
+- Charts, filters, date ranges, and layout control
 
 ## Pros and cons
 
 ### Pros
 
-- Free to use with no hidden costs.
-- Easy integration into the Google ecosystem.
-- Intuitive interface, even for beginners.
-- Extensive customization options.
-- Good collaboration and sharing capabilities.
-- Regular updates and ongoing development from Google.
+- Very fast start for Google data
+- Good for recurring reports
+- Free core makes it attractive for small teams
 
 ### Cons
 
-- Limited features compared with specialized paid BI tools.
-- Dependence on Google services and an internet connection.
-- Some limitations in customization for very complex data models.
-- No native desktop app, web-based only.
+- Complex data modeling is limited
+- Connector quality and limits can vary
+- Governance is weaker than in enterprise BI suites
+
+## Workflow fit
+
+Looker Studio is not the most powerful BI tool, but it is extremely useful for fast, visible reports. For many SEO and marketing teams, that is exactly the point.
+
+## Privacy & data notes
+
+Dashboards can expose confidential marketing, revenue, or customer data. Sharing, embedded reports, and source permissions should be set deliberately.
 
 ## Pricing & costs
 
-Looker Studio is offered by Google as a free tool. There are no fees for using the basic features. Depending on your needs, however, costs may arise for connected data sources or additional Google services. For companies with more advanced requirements, Google also offers paid solutions in the Data Analytics space that go beyond Looker Studio.
+Looker Studio is free at its core. Costs can come from external connectors, data sources, or business requirements.
+
+**Go to provider:** https://lookerstudio.google.com/overview
 
 ## Alternatives to Looker Studio
 
-- **Tableau Public:** Free data visualization tool with advanced features, but with limitations on data sources.
-- **Microsoft Power BI:** Powerful analytics and visualization tool with a freemium model.
-- **Qlik Sense:** BI platform focused on associative data analysis, usually paid with trial versions.
-- **Data Studio (older version of Looker Studio):** For users familiar with older Google tools.
-- **Grafana:** Open-source data visualization tool, especially popular in IT and monitoring.
+- [Power BI](/en/tools/power-bi/): for Microsoft-oriented BI and enterprise reporting.
+- [Tableau](/en/tools/tableau/): for strong visual analysis and BI teams.
+- [Metabase](/en/tools/metabase/): as a self-hostable BI alternative.
+- [Databricks](/en/tools/databricks/): when data platform and analytics sit closer together.
+
+## Editorial assessment
+
+Looker Studio is not the most powerful BI tool, but it is extremely useful for fast, visible reports. For many SEO and marketing teams, that is exactly the point.
 
 ## FAQ
 
-**1. Is Looker Studio really free?**  
-Yes, the basic features of Looker Studio are free to use. However, costs may arise from connected data sources or additional Google services.
+**Is Looker Studio free?**
 
-**2. Which data sources can Looker Studio connect to?**  
-Looker Studio supports numerous data sources, including Google Analytics, Google Ads, Google Sheets, BigQuery, and various third-party sources through connectors.
+Yes, the core product is free to use.
 
-**3. Do I need programming skills to use Looker Studio?**  
-No, the tool is designed so that even users without programming knowledge can create reports and dashboards.
+**Is Looker Studio the same as Looker?**
 
-**4. Can I share reports with others?**  
-Yes, reports can be shared via link or exported as PDF. Looker Studio also allows real-time collaboration.
+No. Looker Studio is the dashboard and reporting tool; Looker is a broader BI platform.
 
-**5. Is Looker Studio suitable for large companies?**  
-Looker Studio is suitable for many use cases, but for very complex or large-scale data models, larger companies often turn to paid BI solutions.
+**Can I connect Search Console?**
 
-**6. Are there mobile apps for Looker Studio?**  
-Looker Studio is web-based and optimized for desktop browsers, but it can also be used on mobile through a browser.
-
-**7. How current is the data in Looker Studio?**  
-Data is updated in real time or with short delays, depending on the source.
-
-**8. Can I perform custom calculations in Looker Studio?**  
-Yes, the tool supports custom metrics and calculations directly in the report.
+Yes, Google data sources are a typical use case.
