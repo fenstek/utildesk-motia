@@ -16,7 +16,9 @@ Passend für Entwickler, QA, API-Teams und technische Produktarbeit.
 
 ## Für wen ist Insomnia geeignet?
 
-Insomnia passt vor allem zu Teams und Einzelpersonen, die ein API-Client nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Insomnia eignet sich für Entwicklerinnen, QA, DevOps und technische Produktteams, die APIs direkt testen, dokumentieren und debuggen müssen. Besonders hilfreich ist es, wenn mehrere Umgebungen, Authentifizierungen und Request-Sammlungen übersichtlich getrennt werden sollen.
+
+Für reine Endnutzer oder nicht-technische Teams ist Insomnia nicht gedacht. Es entfaltet seinen Wert dort, wo Schnittstellen regelmäßig geprüft werden und man schneller verstehen muss, ob ein Problem im Client, Backend, Auth-Setup oder Netzwerk liegt.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Insomnia passt vor allem zu Teams und Einzelpersonen, die ein API-Client nicht a
 - Umgebungen für Dev, Staging und Produktion trennen
 - Authentifizierung und Header nachvollziehbar konfigurieren
 - API-Verhalten vor Frontend-Integration prüfen
+- Beispielrequests für Support, QA oder Dokumentation vorbereiten
+- Fehler aus Logs reproduzieren und mit echten Responses vergleichen
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Insomnia passt vor allem zu Teams und Einzelpersonen, die ein API-Client nicht a
 
 ## Workflow-Fit
 
-Insomnia ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Insomnia passt gut in die tägliche API-Arbeit: Request reproduzieren, Variablen setzen, Response prüfen, Fehler isolieren und Erkenntnisse anschließend in Tests, Dokumentation oder Tickets übernehmen. Es ist ein Debugging- und Explorationswerkzeug, kein Ersatz für CI-Tests.
+
+In Teams sollte klar sein, welche Collections geteilt werden dürfen und wie Secrets verwaltet werden. Sonst landen produktive Tokens schnell in synchronisierten Arbeitsbereichen oder Screenshots.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ API-Clients können Tokens, Kundendaten und interne Endpunkte enthalten. Environ
 
 ## Preise & Kosten
 
-Im Katalog ist Insomnia mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Insomnia ist im Katalog als **Je nach Plan** geführt. Für die Entscheidung zählen lokale Nutzung, Sync-Funktionen, Teamspaces, Sicherheitsanforderungen und Integrationen in bestehende Entwicklerprozesse.
+
+Einzelne Entwickler können oft schlank starten. Für Teams sind Rechte, Auditierbarkeit und Secret-Handling wichtiger als reine UI-Präferenz.
 
 **Zum Anbieter:** https://insomnia.rest/
 
 ## Alternativen zu Insomnia
 
-- [Postman](/tools/postman/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Hoppscotch](/tools/hoppscotch/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Bruno: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Curl: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Paw: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Postman](/tools/postman/): breiteres Ökosystem für Teams, Dokumentation, Mocking und API-Plattformfunktionen.
+- [Hoppscotch](/tools/hoppscotch/): leichter und browsernah für schnelle API-Checks.
+- Bruno: interessant für Git-native Collections und lokale API-Workflows.
+- Curl: unschlagbar für Skripte, Minimaltests und reproduzierbare Terminal-Beispiele.
+- Paw: relevant für macOS-orientierte API-Workflows, sofern das Team damit arbeitet.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ Insomnia ist stark als tägliches Werkzeug für API-Arbeit. Für Qualitätssiche
 
 **Ist Insomnia für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Für technische Einsteiger ja. Wer HTTP-Methoden, Header, Body und Statuscodes versteht, kann schnell produktiv werden; ohne API-Grundlagen wirkt Insomnia zunächst abstrakt.
 
 **Wann lohnt sich Insomnia besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Insomnia lohnt sich, wenn APIs regelmäßig manuell geprüft, Fehler reproduziert oder Requests mit verschiedenen Umgebungen verglichen werden. Es spart Zeit vor allem beim Debugging.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Secret-Management, Environment-Trennung, Exportregeln und die Frage, welche Requests in automatisierte Tests überführt werden sollten. Produktive Tokens gehören nicht ungeschützt in Sammlungen.

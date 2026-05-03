@@ -18,14 +18,17 @@ Sinnvoll ist PimEyes vor allem für Personen, die die eigene Bildsichtbarkeit pr
 
 ## Für wen ist PimEyes geeignet?
 
-PimEyes passt vor allem zu Teams und Einzelpersonen, die ein Gesichtssuchmaschine nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+PimEyes ist vor allem für Personen geeignet, die ihre eigene Bildsichtbarkeit im öffentlichen Web prüfen möchten: etwa Selbstständige, Journalisten, Creator, Menschen mit Stalking- oder Identitätsmissbrauchsrisiko und Personen, die unerlaubte Verwendung eigener Porträtfotos finden wollen. Der sinnvolle Einsatz ist defensiv: eigene Bilder finden, Risiken einschätzen und Lösch- oder Meldewege vorbereiten.
+
+Für fremde Personen ist der Einsatz rechtlich und ethisch heikel. Gesichtssuche kann falsche Treffer liefern, Privatsphäre verletzen und missbräuchlich verwendet werden. PimEyes sollte deshalb nicht als Neugier-Tool, Überwachungswerkzeug oder Recherche über Dritte ohne berechtigten Grund genutzt werden.
 
 ## Typische Einsatzszenarien
 
-- Eigene Bilder im öffentlichen Web finden
-- Missbrauch von Profilbildern oder Porträtfotos prüfen
-- Reputations- und Datenschutzrisiken sichtbar machen
-- Entfernungs- oder Löschanfragen vorbereiten
+- **Eigene Bildsichtbarkeit prüfen:** Herausfinden, wo Porträtfotos öffentlich auffindbar sind.
+- **Identitätsmissbrauch erkennen:** Verdächtige Fake-Profile, kopierte Profilbilder oder unerlaubte Veröffentlichungen entdecken.
+- **Reputationsschutz:** Unerwünschte Bildfundstellen dokumentieren und priorisieren.
+- **Lösch- und Meldeprozesse vorbereiten:** Treffer sichern, Betreiber kontaktieren und weitere Schritte planen.
+- **Sicherheitscheck für exponierte Personen:** Öffentlichkeitsrisiken sichtbar machen, ohne daraus automatische Identitätsaussagen abzuleiten.
 
 ## Stärken
 
@@ -41,7 +44,9 @@ PimEyes passt vor allem zu Teams und Einzelpersonen, die ein Gesichtssuchmaschin
 
 ## Workflow-Fit
 
-PimEyes ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+PimEyes passt in einen sehr engen Kontrollworkflow: eigenes Bild hochladen, Treffer prüfen, falsche Matches aussortieren, Fundstellen dokumentieren und danach entscheiden, ob Löschung, Meldung oder rechtliche Beratung nötig ist. Die Trefferliste ist ein Hinweis, kein Beweis.
+
+Bei Organisationen sollte der Einsatz schriftlich geregelt sein. Gesichtssuche berührt biometrische Daten und Privatsphäre; deshalb braucht es Zweckbindung, Berechtigung, Protokollierung und klare Grenzen. Ohne diese Regeln ist das Risiko größer als der Nutzen.
 
 ## Datenschutz & Daten
 
@@ -49,16 +54,16 @@ Gesichtssuche ist besonders sensibel. Das Tool sollte nicht für Stalking, Doxin
 
 ## Preise & Kosten
 
-Im Katalog ist PimEyes mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist PimEyes mit dem Preismodell **Freemium** geführt. Relevant sind Suchlimits, Zugriff auf Fundstellen, Alert-Funktionen, Löschunterstützung und Nutzungsbedingungen. Vor einer Zahlung sollte klar sein, ob es um einmalige Selbstprüfung oder laufendes Monitoring geht.
 
 **Zum Anbieter:** https://pimeyes.com
 
 ## Alternativen zu PimEyes
 
-- Google Lens: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Tineye: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Reverse Image Search: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Clearview AI: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- Google Lens: breiter Bildsuch- und Erkennungskontext, aber nicht speziell als Gesichtssuchmaschine positioniert.
+- Tineye: klassische Reverse-Image-Suche für identische oder ähnliche Bilder, weniger auf Gesichter spezialisiert.
+- Reverse Image Search: allgemeiner Ansatz über Suchmaschinen, wenn ein konkretes Bild statt eine Gesichtssuche im Mittelpunkt steht.
+- Clearview AI: hochsensibles Enterprise- und Behördenumfeld; für private Selbstprüfung kein normaler Ersatz.
 
 ## Redaktionelle Einschätzung
 
@@ -68,12 +73,12 @@ PimEyes kann beim eigenen Reputationsschutz helfen, verlangt aber klare ethische
 
 **Ist PimEyes für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Technisch ja, ethisch nur mit Vorsicht. Einsteiger sollten PimEyes ausschließlich für eigene Bilder oder klar berechtigte Fälle verwenden und Treffer nicht vorschnell als sichere Identifikation behandeln.
 
 **Wann lohnt sich PimEyes besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+PimEyes lohnt sich, wenn eigene Porträtbilder missbraucht wurden, wenn Reputationsschutz wichtig ist oder wenn öffentlich auffindbare Bildkopien systematisch geprüft werden sollen.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Berechtigung, Datenschutz, falsche Treffer, Dokumentation und der Umgang mit Fundstellen. Für fremde Personen sollte Gesichtssuche ohne klare rechtliche Grundlage tabu sein.

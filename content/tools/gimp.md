@@ -16,7 +16,9 @@ Gut für freie Projekte, Bildung, kleine Teams, Linux-Workflows und gelegentlich
 
 ## Für wen ist GIMP geeignet?
 
-GIMP passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-Bildeditor nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+GIMP eignet sich für Menschen und Teams, die pixelbasierte Bildbearbeitung ohne Abo-Kosten brauchen: Retusche, Zuschnitt, Webgrafiken, einfache Composings und technische Bildkorrekturen. Besonders attraktiv ist es für Open-Source-affine Workflows, Bildung, Dokumentation und kleine Projekte mit begrenztem Budget.
+
+Wer moderne Template-Produktion, Designsysteme, kollaborative Freigaben oder schnelle Social-Layouts braucht, ist mit Canva, Figma oder Adobe-Tools oft schneller. GIMP ist stärker als Editor denn als Team-Designplattform.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ GIMP passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-Bildeditor
 - Webgrafiken und einfache Assets erstellen
 - Bilder für Dokumentation oder Content vorbereiten
 - Open-Source-Workflows ohne Lizenzkosten nutzen
+- Screenshots und Produktbilder für Artikel aufbereiten
+- Transparenzen, Ebenen und einfache Montagen lokal bearbeiten
 
 ## Stärken
 
@@ -39,7 +43,9 @@ GIMP passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-Bildeditor
 
 ## Workflow-Fit
 
-GIMP ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+GIMP passt gut als lokaler Bearbeitungsschritt für einzelne Bilder: Rohbild öffnen, Korrektur durchführen, Exportgröße festlegen und final in CMS, Dokumentation oder Präsentation einbauen. Der Workflow bleibt kontrollierbar, weil keine Cloud-Pipeline nötig ist.
+
+Bei wiederkehrenden Marketing-Assets sollte man allerdings Vorlagen und Dateikonventionen sauber pflegen. Sonst entstehen schnell viele Einzeldateien, die niemand mehr zuverlässig aktualisieren kann.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Da GIMP lokal arbeitet, bleiben Dateien grundsätzlich unter eigener Kontrolle. 
 
 ## Preise & Kosten
 
-Im Katalog ist GIMP mit dem Preismodell **Kostenlos** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+GIMP ist im Katalog als **Kostenlos** geführt. Es fallen keine Lizenzkosten an, dafür braucht es etwas Einarbeitung und gegebenenfalls Zeit für Plugins, Farbmanagement oder eigene Vorlagen.
+
+Für Organisationen ist wichtig, Support und Schulung mitzudenken. Kostenlos ist nicht automatisch billiger, wenn Teams dadurch länger für Routineaufgaben brauchen.
 
 **Zum Anbieter:** https://www.gimp.org/downloads/
 
 ## Alternativen zu GIMP
 
-- Adobe Photoshop: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Krita](/tools/krita/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Inkscape](/tools/inkscape/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Canva](/tools/canva/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Photopea](/tools/photopea/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- Adobe Photoshop: stärker für professionelle Retusche, Agenturprozesse und Adobe-Ökosysteme.
+- [Krita](/tools/krita/): besser für digitale Illustration und Malerei.
+- [Inkscape](/tools/inkscape/): passend, wenn Vektorgrafiken statt Pixelbearbeitung gebraucht werden.
+- [Canva](/tools/canva/): schneller für Social-Templates, Präsentationsgrafiken und nicht-technische Teams.
+- [Photopea](/tools/photopea/): praktisch, wenn PSD-nahe Bearbeitung direkt im Browser stattfinden soll.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ GIMP ist ein solides Werkzeug für freie Bildbearbeitung. Für Teamdesign und mo
 
 **Ist GIMP für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+GIMP ist für Einsteiger nutzbar, aber nicht so geführt wie moderne Template-Tools. Wer Ebenen, Masken und Exportformate versteht, bekommt sehr viel Kontrolle.
 
 **Wann lohnt sich GIMP besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+GIMP lohnt sich, wenn lokale, kostenlose Bildbearbeitung wichtiger ist als Kollaboration und Automatisierung. Besonders stark ist es für technische Korrekturen und einmalige Bildarbeiten.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Dateiformate, Exportauflösung, Farbprofil, Plugin-Quellen und eine saubere Ablage der Arbeitsdateien. Für Teamwork sollte klar sein, wer finale Versionen freigibt.

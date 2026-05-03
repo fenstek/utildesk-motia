@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "check:editorial": "node scripts/check_editorial_templates.mjs",
     "translate:tools:en": "node scripts/translate_tools_to_english_codex.mjs",
     "check:tools:en": "node scripts/check_english_tool_translations.mjs"
   },

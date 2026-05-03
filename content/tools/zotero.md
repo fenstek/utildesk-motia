@@ -16,7 +16,9 @@ Gut für Studierende, Forschende, Journalisten und Wissensarbeiter, die Quellen 
 
 ## Für wen ist Zotero geeignet?
 
-Zotero passt vor allem zu Teams und Einzelpersonen, die ein Referenzmanager nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Zotero eignet sich für Studierende, Forschende, Autorinnen und Wissensarbeiter, die Quellen, PDFs, Notizen und Zitate zuverlässig organisieren möchten. Besonders stark ist es für Web-Recherche, Literaturverwaltung, Gruppenbibliotheken und den Übergang vom Sammeln zum Schreiben.
+
+Zotero ist kein Recherche-Orakel und keine automatische Qualitätsprüfung. Es hilft, gefundene Literatur sauber zu verwalten; Relevanz, Quellenkritik und Argumentation bleiben wissenschaftliche Arbeit.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Zotero passt vor allem zu Teams und Einzelpersonen, die ein Referenzmanager nich
 - PDFs und Notizen organisieren
 - Zitate in Word, LibreOffice oder anderen Workflows nutzen
 - Literaturlisten mit Teams teilen
+- Metadaten, Tags und Sammlungen für größere Projekte strukturieren
+- Literatur für Artikel, Abschlussarbeiten oder Reviews nachvollziehbar verwalten
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Zotero passt vor allem zu Teams und Einzelpersonen, die ein Referenzmanager nich
 
 ## Workflow-Fit
 
-Zotero ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Zotero passt früh in den Forschungsworkflow: Quelle speichern, Metadaten prüfen, PDF ablegen, Notizen oder Tags ergänzen und später beim Schreiben korrekt zitieren. Je konsequenter diese Routine ist, desto weniger Chaos entsteht kurz vor Abgabe oder Veröffentlichung.
+
+Bei Teamprojekten sollte vorab klar sein, wie Gruppenbibliotheken, Ordner, Tags und Namensregeln genutzt werden. Sonst hat jedes Mitglied zwar Zotero, aber keine gemeinsame Ordnung.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Zotero-Bibliotheken enthalten Forschungsnotizen, PDFs und Quellenlisten. Sync, G
 
 ## Preise & Kosten
 
-Im Katalog ist Zotero mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Zotero ist im Katalog als **Freemium** geführt. Die Kernsoftware ist kostenlos; Kosten entstehen vor allem, wenn mehr Cloud-Speicher für PDFs und Anhänge gebraucht wird.
+
+Viele Einzelpersonen kommen lange ohne bezahlten Speicher aus, wenn sie lokale Dateien bewusst organisieren. Für Teams sind Sync, Speicher und Gruppenrechte wichtiger.
 
 **Zum Anbieter:** https://www.zotero.org/
 
 ## Alternativen zu Zotero
 
-- [Endnote](/tools/endnote/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Jabref](/tools/jabref/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Citavi](/tools/citavi/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Research Rabbit](/tools/research-rabbit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Mendeley](/tools/mendeley/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Endnote](/tools/endnote/): stärker in manchen institutionellen und Word-zentrierten Forschungsumgebungen.
+- [Jabref](/tools/jabref/): besonders passend für BibTeX- und LaTeX-nahe Workflows.
+- [Citavi](/tools/citavi/): gut für Wissensorganisation, Zitate und deutschsprachige Hochschulkontexte.
+- [Research Rabbit](/tools/research-rabbit/): Ergänzung für explorative Paper-Entdeckung und visuelle Literaturpfade.
+- [Mendeley](/tools/mendeley/): Alternative für PDF-Verwaltung und akademische Literaturarbeit mit eigenem Ökosystem.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ Zotero ist oft der beste Startpunkt für Literaturverwaltung. Nur sehr spezielle
 
 **Ist Zotero für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, Zotero ist sehr einsteigerfreundlich, solange man Metadaten nach dem Speichern kontrolliert. Der Browser-Connector macht den Einstieg besonders leicht.
 
 **Wann lohnt sich Zotero besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Zotero lohnt sich, sobald mehr als eine Handvoll Quellen über längere Zeit verwaltet werden müssen. Je größer das Schreib- oder Forschungsprojekt, desto stärker zahlt sich die Ordnung aus.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind korrekte Metadaten, Zitierstil, PDF-Speicher, Backup, Gruppenrechte und ein konsistentes Tagging. Vor Abgabe sollten Zitate und Bibliografie immer manuell geprüft werden.

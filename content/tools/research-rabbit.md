@@ -16,14 +16,17 @@ Gut für Studierende, Forschende und Analysten, die Themenfelder explorativ kart
 
 ## Für wen ist Research Rabbit geeignet?
 
-Research Rabbit passt vor allem zu Teams und Einzelpersonen, die ein visuelles Recherchetool nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Research Rabbit ist geeignet für Forschende, Studierende und Analysten, die ein Themenfeld nicht nur über Stichwörter, sondern über Beziehungen zwischen Papers verstehen möchten. Besonders hilfreich ist es, wenn bereits einige Kernarbeiten bekannt sind und daraus verwandte Veröffentlichungen, Autorengruppen oder Zitationspfade entdeckt werden sollen.
+
+Das Tool ist stark für Exploration, aber nicht für den Abschluss einer systematischen Recherche. Wer eine formale Review-Methodik braucht, muss Suchstrategie, Datenbanken, Einschlusskriterien und Screening zusätzlich dokumentieren.
 
 ## Typische Einsatzszenarien
 
-- Ausgehend von Kernpapers ähnliche Arbeiten entdecken
-- Autoren- und Zitationsnetzwerke verstehen
-- Literatursammlungen für Reviews aufbauen
-- Blind Spots in einem Themenfeld erkennen
+- **Seed-Paper erweitern:** Von bekannten Schlüsselarbeiten aus ähnliche, zitierende oder verwandte Paper finden.
+- **Themenfelder kartieren:** Cluster, Autorennetzwerke und Forschungsstränge visuell erkunden.
+- **Review-Vorbereitung:** Literatursammlungen aufbauen, bevor Screening und Qualitätsbewertung starten.
+- **Blind Spots entdecken:** Arbeiten finden, die bei klassischen Keyword-Suchen leicht übersehen werden.
+- **Forschungsbriefings:** Ein neues Feld schneller erklären, indem zentrale Paper und Nachbarschaften sichtbar werden.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Research Rabbit passt vor allem zu Teams und Einzelpersonen, die ein visuelles R
 
 ## Workflow-Fit
 
-Research Rabbit ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Research Rabbit passt in die Explorationsphase einer Literaturrecherche. Ein guter Ablauf ist: wenige hochwertige Startpaper auswählen, Netzwerke durchsuchen, relevante Funde in Sammlungen sichern und danach in Zotero, EndNote oder einem Review-Protokoll weiterarbeiten.
+
+Wichtig ist, visuelle Nähe nicht mit inhaltlicher Qualität zu verwechseln. Ein Paper kann im Netzwerk zentral wirken und trotzdem methodisch schwach sein. Research Rabbit zeigt Wege durch Literatur, aber die Bewertung bleibt wissenschaftliche Arbeit.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ Sammlungen können Forschungsideen und Projektfokus verraten. Bei vertraulichen 
 
 ## Preise & Kosten
 
-Im Katalog ist Research Rabbit mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Research Rabbit mit dem Preismodell **Je nach Plan** geführt. Entscheidend sind Sammlungsfunktionen, Exportwege, Abdeckung der eigenen Disziplin und die Frage, wie gut sich Funde in bestehende Literaturmanager übernehmen lassen.
 
 **Zum Anbieter:** https://www.researchrabbit.ai/
 
 ## Alternativen zu Research Rabbit
 
-- [Elicit](/tools/elicit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Zotero](/tools/zotero/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Vosviewer](/tools/vosviewer/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Consensus](/tools/consensus/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Scholarcy](/tools/scholarcy/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Elicit](/tools/elicit/): stärker für KI-gestützte Paper-Suche, Extraktionstabellen und Review-Fragen.
+- [Zotero](/tools/zotero/): Literaturmanager für Sammlung, PDFs, Metadaten und Zitationen.
+- [Vosviewer](/tools/vosviewer/): besser für bibliometrische Karten und Analyse großer Publikationsdaten.
+- [Consensus](/tools/consensus/): stärker auf beantwortbare Forschungsfragen und Evidenzzusammenfassungen fokussiert.
+- [Scholarcy](/tools/scholarcy/): hilfreich zum Zusammenfassen einzelner Paper und Extrahieren von Kernaussagen.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ Research Rabbit ist stark für den Einstieg in ein Feld und für Querbezüge. F�
 
 **Ist Research Rabbit für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, wenn bereits ein paar gute Startpaper vorhanden sind. Ohne Seed-Paper wird die Exploration schnell beliebig; mit guten Startpunkten ist Research Rabbit sehr zugänglich.
 
 **Wann lohnt sich Research Rabbit besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Research Rabbit lohnt sich, wenn man ein Feld verstehen, verwandte Arbeiten finden oder Forschungslinien sichtbar machen möchte. Für reine Zitationsverwaltung ist Zotero oder EndNote passender.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Quellenabdeckung, Exportmöglichkeiten, Dubletten, bibliografische Qualität und die klare Trennung zwischen Exploration und formaler Evidenzbewertung.

@@ -16,7 +16,9 @@ Geeignet für Mobile-Teams, QA-Automatisierung und Projekte mit häufigen Regres
 
 ## Für wen ist Detox geeignet?
 
-Detox passt vor allem zu Teams und Einzelpersonen, die ein Mobile-Testautomatisierung nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Detox eignet sich für Mobile-Teams, besonders im React-Native-Umfeld, die kritische App-Flows automatisiert gegen echte Laufzeitbedingungen prüfen wollen. Es ist sinnvoll, wenn Login, Onboarding, Checkout, Berechtigungen oder Offline-Verhalten vor jedem Release zuverlässig getestet werden müssen.
+
+Für kleine Apps ohne stabile Testumgebung kann Detox zu früh sein. Der Aufwand lohnt sich erst, wenn Build-Pipeline, Testdaten, Simulatoren und Verantwortlichkeiten sauber genug sind, damit E2E-Tests nicht ständig aus falschen Gründen brechen.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Detox passt vor allem zu Teams und Einzelpersonen, die ein Mobile-Testautomatisi
 - Regressionen vor Releases abfangen
 - Mobile CI-Pipelines ergänzen
 - Interaktionen auf Geräten oder Simulatoren automatisieren
+- Push-, Permission- und Deep-Link-Flows absichern
+- Release-Checks für besonders umsatz- oder supportkritische Wege automatisieren
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Detox passt vor allem zu Teams und Einzelpersonen, die ein Mobile-Testautomatisi
 
 ## Workflow-Fit
 
-Detox ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Detox gehört an das obere Ende der Testpyramide. Unit- und Integrationstests sollten schnelle Logik absichern, Detox prüft wenige, aber wichtige Nutzerflüsse so realistisch wie möglich.
+
+Ein guter Workflow hält die Suite klein, stabil und releasekritisch. Wenn jede Kleinigkeit als E2E-Test modelliert wird, wird die Pipeline langsam und fragil; wenn nur Kernflows getestet werden, kann Detox sehr wertvoll sein.
 
 ## Datenschutz & Daten
 
@@ -47,16 +53,18 @@ Testumgebungen sollten keine echten Kundendaten nutzen. Zugangsdaten, Testaccoun
 
 ## Preise & Kosten
 
-Im Katalog ist Detox mit dem Preismodell **Open Source** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Detox ist im Katalog als **Open Source** geführt. Direkte Lizenzkosten sind nicht der Hauptpunkt; entscheidend sind Setup-Zeit, CI-Minuten, Geräte- beziehungsweise Simulatorpflege und der Aufwand für stabile Testdaten.
+
+Teams sollten einkalkulieren, dass E2E-Tests laufend gewartet werden müssen. Der Preis ist also weniger das Tool selbst als die Disziplin, Testfälle aktuell zu halten.
 
 **Zum Anbieter:** https://www.detox.com/
 
 ## Alternativen zu Detox
 
-- [Appium](/tools/appium/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Selenium](/tools/selenium/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Playwright: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Cypress](/tools/cypress/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Appium](/tools/appium/): breiter für native und hybride Mobile-Apps über verschiedene Frameworks hinweg.
+- [Selenium](/tools/selenium/): eher Web- und Browser-Automation, weniger fokussiert auf moderne Mobile-E2E-Setups.
+- Playwright: stark für Web-End-to-End-Tests, aber nicht derselbe Schwerpunkt wie mobile App-Flows.
+- [Cypress](/tools/cypress/): gut für Frontend- und Web-App-Tests, weniger für echte mobile Runtime-Szenarien.
 
 ## Redaktionelle Einschätzung
 
@@ -66,12 +74,12 @@ Detox ist wertvoll, wenn mobile Kernflows wirklich abgesichert werden müssen. E
 
 **Ist Detox für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Detox ist eher ein Werkzeug für Teams mit Test- und CI-Erfahrung. Einsteiger sollten zunächst Teststrategie, stabile Selektoren und Testdaten klären, bevor sie eine große Detox-Suite aufbauen.
 
 **Wann lohnt sich Detox besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Detox lohnt sich, wenn App-Releases regelmäßig Regressionen in Kernflows riskieren. Besonders wertvoll ist es für Login, Bezahlung, Onboarding, Berechtigungen und andere Pfade, die man nicht manuell jedes Mal vollständig prüfen will.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind stabile Test-IDs, kontrollierte Testaccounts, reproduzierbare Builds, CI-Ressourcen und klare Regeln, welche Flows wirklich E2E getestet werden. Echte Kundendaten gehören nicht in diese Tests.

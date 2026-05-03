@@ -16,7 +16,7 @@ Apache NiFi wirkt am überzeugendsten, wenn man es mit einer nüchternen Checkli
 
 ## Der praktische Kern
 
-Datenwerkzeuge sind stark, wenn sie Flüsse sichtbar machen. Gefährlich werden sie, wenn niemand mehr weiß, woher Werte kommen.
+Datenwerkzeuge sind stark, wenn sie Flüsse sichtbar machen. Gefährlich werden sie, wenn niemand mehr weiß, woher Werte kommen. Für Apache NiFi sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 Im Alltag wird Apache NiFi vor allem für Data Engineers, Plattformteams, Integrationsarchitekten und Operations interessant. Die beste Wirkung entsteht, wenn das Ergebnis nicht bewundert, sondern direkt weiterverarbeitet werden kann.
 
@@ -44,48 +44,50 @@ Zusätzlich ist bei Apache NiFi der Kontext wichtig: Manche Teams nutzen solche 
 
 ## Workflow-Fit
 
-Apache NiFi passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+Apache NiFi passt am besten in Workflows, in denen visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Apache NiFi arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
 ## Qualitätssicherung
 
-Die beste Kontrollfrage: Kann ich einen falschen Wert bis zur Quelle zurückverfolgen? Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+Bei Apache NiFi sollte die Prüfung mit einem realen Beispiel beginnen: ob ein anderer Mensch den Ablauf reproduzieren und Fehler nachvollziehen kann. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
 
 ## Datenschutz & Betriebsfragen
 
-Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
+Bei Apache NiFi geht es vor allem um Systemdaten, Logs, Zugangsdaten, Testdaten, Modelle, Metriken und interne Endpunkte. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Im Katalog ist Apache NiFi mit dem Preismodell **Open Source** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+Im Katalog ist Apache NiFi mit dem Preismodell **Open Source** geführt. Für eine belastbare Entscheidung zählen hier vor allem Betrieb, Wartung, Rechenressourcen, Integrationen, Monitoring und Fachwissen; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
 **Zum Anbieter:** https://nifi.apache.org/
 
 ## Alternativen zu Apache NiFi
 
-- [StreamSets](/tools/streamsets/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Apache Airflow](/tools/apache-airflow/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [n8n](/tools/n8n/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Talend Data Fabric](/tools/talend-data-fabric/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- Airbyte: sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [StreamSets](/tools/streamsets/): stärker, wenn Datenpipelines, Streaming, ETL/ELT und operative Datenflüsse gefragt ist.
+- [Apache Airflow](/tools/apache-airflow/): passender, wenn ein anderer Schwerpunkt als bei Apache NiFi im Vordergrund steht.
+- [n8n](/tools/n8n/): guter Vergleich für Teams, die API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows brauchen.
+- [Talend Data Fabric](/tools/talend-data-fabric/): prüfen, wenn ein anderer Schwerpunkt als bei Apache NiFi relevant ist.
+- Airbyte: naheliegend, falls offene ELT-Connectoren und eigene Betriebsoptionen wichtiger sind im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 
-Apache NiFi ist dann eine gute Wahl, wenn visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
+Apache NiFi ist dann eine gute Wahl, wenn visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
 **Ist Apache NiFi für Einsteiger geeignet?**
 
-Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
+Apache NiFi ist für technische Einsteiger geeignet, wenn Grundlagen und Betriebspflichten klar sind. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
 **Wann lohnt sich Apache NiFi besonders?**
 
-Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
+Apache NiFi lohnt sich besonders, wenn visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
+Vor dem Einsatz prüfen: Reproduzierbarkeit, Rechte, Secrets, Monitoring, Tests, Export und Verantwortlichkeit. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Apache NiFi sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 **Was ist der häufigste Fehler?**
 
-Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
+Der häufigste Fehler ist, ein funktionierendes Demo-Setup mit produktionsreifer Infrastruktur zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Apache NiFi sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

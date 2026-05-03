@@ -16,14 +16,17 @@ Besonders nützlich ist Bolt.new für MVPs, Landingpages, Lernprojekte und techn
 
 ## Für wen ist Bolt.new geeignet?
 
-Bolt.new passt vor allem zu Teams und Einzelpersonen, die ein KI-Entwicklungsumgebung nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Bolt.new eignet sich für Entwickler, Gründer, Produktmanager und Lernende, die sehr schnell von einer Idee zu einem laufenden Web-Prototypen kommen wollen. Besonders stark ist das Tool, wenn noch nicht klar ist, wie ein Interface aussehen soll, welche Komponenten gebraucht werden oder ob eine Produktidee technisch grob funktioniert.
+
+Für produktive Anwendungen ist Bolt.new eher Startpunkt als Endstation. Der erzeugte Code muss gelesen, getestet, versioniert und in eine kontrollierte Entwicklungsumgebung überführt werden. Wer Architektur, Security, Datenmodell und Deployment ernsthaft planen muss, darf den schnellen Browser-Loop nicht mit Produktionsreife verwechseln.
 
 ## Typische Einsatzszenarien
 
-- Prototypen direkt im Browser starten
-- UI-Ideen mit laufender Vorschau iterieren
-- Kleine Apps, Demos und Experimente schneller aufsetzen
-- Code anschließend in ein echtes Repository überführen
+- **MVP-Skizzen:** Eine Produktidee in eine erste klickbare Weboberfläche übersetzen.
+- **UI-Experimente:** Layouts, Komponenten und Interaktionsmuster schnell ausprobieren, ohne lokales Setup.
+- **Lern- und Demo-Projekte:** Frameworks, APIs oder kleine App-Ideen praktisch testen.
+- **Hackathon- und Pitch-Vorbereitung:** In kurzer Zeit etwas Vorzeigbares bauen, das Diskussionen konkreter macht.
+- **Übergabe in echte Entwicklung:** Prototyp-Code exportieren, prüfen, refaktorieren und in Git weiterführen.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Bolt.new passt vor allem zu Teams und Einzelpersonen, die ein KI-Entwicklungsumg
 
 ## Workflow-Fit
 
-Bolt.new ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Bolt.new passt sehr gut in die frühe Produktphase. Ein sinnvoller Ablauf ist: Ziel des Prototyps festlegen, UI und Kernlogik schnell erzeugen, im Browser testen, Schwächen notieren und danach entscheiden, ob der Code verworfen, weiterentwickelt oder sauber neu aufgebaut wird.
+
+In Teams sollte klar sein, dass Bolt.new kein Ersatz für Review, Tests, Secrets-Management oder Deployment-Prozesse ist. Der beste Nutzen entsteht, wenn das Tool Diskussionen beschleunigt und frühe Varianten liefert, während produktionsrelevante Entscheidungen später bewusst im normalen Entwicklungsprozess fallen.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ Bei KI-Coding-Tools können Quellcode, Prompts und Produktideen verarbeitet werd
 
 ## Preise & Kosten
 
-Im Katalog ist Bolt.new mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Bolt.new mit dem Preismodell **Je nach Plan** geführt. Relevant sind Prompt- und Nutzungslimits, Projektgröße, Exportmöglichkeiten, Integrationen, Deployment-Wege und Teamfunktionen. Bei intensiver Nutzung sollte man zusätzlich kalkulieren, wie viel Nacharbeit nötig ist, um Prototypen in wartbaren Code zu überführen.
 
 **Zum Anbieter:** https://bolt.new
 
 ## Alternativen zu Bolt.new
 
-- [Openhands](/tools/openhands/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Devin](/tools/devin/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Github Copilot](/tools/github-copilot/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Cursor](/tools/cursor/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Replit](/tools/replit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Openhands](/tools/openhands/): offener Coding-Agent für kontrollierbare Entwicklungsumgebungen und Repository-Arbeit.
+- [Devin](/tools/devin/): stärker auf delegierte Softwareaufgaben und agentische Entwicklerarbeit ausgerichtet.
+- [Github Copilot](/tools/github-copilot/): naheliegend, wenn KI-Hilfe direkt in IDE und GitHub-Workflow gebraucht wird.
+- [Cursor](/tools/cursor/): stärker für laufende Arbeit in echten Codebases und editornahe KI-Unterstützung.
+- [Replit](/tools/replit/): browserbasierte Entwicklungsumgebung mit Hosting- und Lernfokus.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ Bolt.new ist ein starker Beschleuniger für frühe Produktarbeit. Der Übergang 
 
 **Ist Bolt.new für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, gerade weil kein lokales Setup nötig ist. Einsteiger sollten aber verstehen, dass ein funktionierender Prototyp nicht automatisch sauberer, sicherer oder wartbarer Code ist.
 
 **Wann lohnt sich Bolt.new besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Bolt.new lohnt sich besonders, wenn Tempo und Sichtbarkeit zählen: frühe Produktideen, Demos, UI-Varianten, Lernprojekte oder Hackathons. Für langfristige Entwicklung muss der Code anschließend in normale Engineering-Prozesse wandern.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Code-Export, Git-Strategie, Umgang mit Secrets, verwendete Packages, Tests und Deployment. Keine vertraulichen Produktdetails oder Zugangsdaten in Prompts geben, wenn dafür kein freigegebener Rahmen existiert.

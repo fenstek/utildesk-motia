@@ -16,7 +16,9 @@ Gut geeignet für Lernprojekte, YouTube-Entwürfe, interne Videos, einfache Tuto
 
 ## Für wen ist Shotcut geeignet?
 
-Shotcut passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-Videoeditor nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Shotcut eignet sich für Nutzerinnen, die einen kostenlosen, lokalen und plattformübergreifenden Videoeditor brauchen. Es passt gut für einfache Schnitte, Formatkonvertierung, YouTube- oder Lernvideos, technische Clips und Projekte, bei denen Lizenzkosten vermieden werden sollen.
+
+Für hochpolierte Creator-Templates, Teamfreigaben oder professionelle Postproduktion wirkt Shotcut weniger komfortabel als moderne kommerzielle Werkzeuge. Seine Stärke liegt in Offenheit, Formatbreite und solider Desktop-Bearbeitung.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Shotcut passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-Videoed
 - Videoformate konvertieren und exportieren
 - Filter, Übergänge und einfache Effekte einsetzen
 - Kostenlose Videobearbeitung auf Desktop-Systemen nutzen
+- Schulungs-, Dokumentations- oder Screencast-Material vorbereiten
+- Videos lokal bearbeiten, ohne Rohmaterial in Cloud-Tools zu laden
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Shotcut passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-Videoed
 
 ## Workflow-Fit
 
-Shotcut ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Shotcut passt in schlanke lokale Workflows: Material importieren, Timeline schneiden, einfache Korrekturen setzen, Exportprofil wählen und fertige Datei prüfen. Es ist gut, wenn ein Projekt überschaubar bleibt und keine kollaborative Pipeline nötig ist.
+
+Bei regelmäßiger Content-Produktion sollten Vorlagen, Exportprofile und Ablagekonventionen festgelegt werden. Sonst kostet die Freiheit eines offenen Editors bei jedem Video neue Entscheidungszeit.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Lokaler Videoschnitt kann datenschutzfreundlich sein, solange Rohmaterial nicht 
 
 ## Preise & Kosten
 
-Im Katalog ist Shotcut mit dem Preismodell **Kostenlos** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Shotcut ist im Katalog als **Kostenlos** geführt. Es fallen keine Lizenzkosten an, aber Zeit für Einarbeitung, Exporttests und Systemleistung sollte eingeplant werden.
+
+Für einfache Projekte ist das sehr attraktiv. Wenn Schnittgeschwindigkeit, Teamarbeit oder Kundenversionen entscheidend sind, kann ein bezahltes Tool trotz Lizenzkosten effizienter sein.
 
 **Zum Anbieter:** https://shotcut.org/
 
 ## Alternativen zu Shotcut
 
-- Kdenlive: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Openshot: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Filmora](/tools/filmora/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Davinci Resolve](/tools/davinci-resolve/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- Kdenlive: ebenfalls kostenlos und offen, oft stärker für klassischere Schnittworkflows.
+- Openshot: einfacher Einstieg für sehr grundlegende Videoprojekte.
+- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): professioneller für Teamproduktion, Plugins und Agenturprozesse.
+- [Filmora](/tools/filmora/): zugänglicher für Creator mit Vorlagen, Effekten und schneller Social-Produktion.
+- [Davinci Resolve](/tools/davinci-resolve/): deutlich stärker bei Farbkorrektur, Audio-Postproduktion und Finishing.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ Shotcut ist eine solide kostenlose Wahl für einfachen Schnitt. Für Teamprodukt
 
 **Ist Shotcut für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Shotcut ist für Einsteiger nutzbar, wirkt aber technischer als iMovie oder Filmora. Wer bereit ist, Exportprofile und Timeline-Grundlagen zu lernen, bekommt viel kostenlos.
 
 **Wann lohnt sich Shotcut besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Shotcut lohnt sich, wenn lokale, kostenlose Bearbeitung und Formatflexibilität wichtiger sind als Vorlagen und Teamfunktionen. Besonders gut passt es für einfache Desktop-Projekte.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Exportcodec, Auflösung, Framerate, Projektablage und Backup der Rohdateien. Vor Veröffentlichung sollte die exportierte Datei komplett geprüft werden.

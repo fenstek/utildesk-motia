@@ -16,14 +16,17 @@ Interessant ist OpenHands für Entwicklerteams, die Agentenläufe kontrolliert t
 
 ## Für wen ist OpenHands geeignet?
 
-OpenHands passt vor allem zu Teams und Einzelpersonen, die ein KI-Coding-Agent nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+OpenHands ist für Entwicklerteams geeignet, die Coding-Agenten nicht nur ausprobieren, sondern kontrolliert in Repository-Arbeit einordnen wollen. Interessant ist das Tool vor allem für Teams mit klaren Tickets, Testumgebungen und dem Wunsch, agentische Entwicklung transparenter oder selbst kontrollierbarer zu betreiben.
+
+Der Einsatz passt weniger zu völlig offenen Produktfragen. OpenHands braucht abgegrenzte Aufgaben, nachvollziehbare Ziele und ein Review-Gate. Besonders sinnvoll ist es für Experimente mit Bugfixes, Tests, Refactorings oder Recherche im Codebestand, solange kein Agent direkt unkontrolliert produktiven Code zusammenführt.
 
 ## Typische Einsatzszenarien
 
-- Repository-Aufgaben in kleinere Agentenläufe zerlegen
-- Bugfixes, Refactorings oder Tests vorbereiten
-- Open-Source-Agentenarchitektur evaluieren
-- Coding-Agenten mit klaren Guardrails ausprobieren
+- **Ticket-Vorarbeit:** Issues in reproduzierbare Schritte, mögliche Dateien, Testideen und Umsetzungsvorschläge zerlegen.
+- **Bugfix-Experimente:** Einen Agenten isoliert an einem Fehler arbeiten lassen und den Patch anschließend manuell prüfen.
+- **Test- und Refactoring-Aufgaben:** Fehlende Tests vorschlagen, einfache Refactorings vorbereiten oder technische Schulden sichtbar machen.
+- **Agentenarchitektur evaluieren:** Verstehen, wie ein offener Coding-Agent mit Shell, Dateien und Repository-Kontext arbeitet.
+- **Sichere Sandbox-Läufe:** Agenten in begrenzten Umgebungen testen, bevor produktionsnahe Repositories berührt werden.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ OpenHands passt vor allem zu Teams und Einzelpersonen, die ein KI-Coding-Agent n
 
 ## Workflow-Fit
 
-OpenHands ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+OpenHands passt in einen Engineering-Workflow, wenn die Grenzen klar sind: Auftrag definieren, Arbeitsverzeichnis isolieren, Tests bereitstellen, Agentenlauf beobachten, Diff prüfen und erst danach entscheiden, ob etwas übernommen wird. Der Agent kann Arbeit vorbereiten, aber nicht die Verantwortung für Qualität, Architektur oder Sicherheit übernehmen.
+
+Für Teams ist besonders wichtig, keine Secrets und keine unkontrollierten Produktionszugriffe in die Agentenumgebung zu geben. OpenHands ist stark als Labor für agentisches Coding; produktiv wird es erst mit CI, Review-Prozess und klaren Berechtigungen.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ Coding-Agenten sehen Code, Tickets, Fehlerlogs und eventuell Secrets. Sandbox, R
 
 ## Preise & Kosten
 
-Im Katalog ist OpenHands mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist OpenHands mit dem Preismodell **Je nach Plan** geführt. Neben direkten Kosten zählen Setup, Infrastruktur, Modellnutzung, Sandbox-Betrieb und die Zeit für Review. Bei Coding-Agenten ist günstig nur dann wirklich günstig, wenn die erzeugten Änderungen nachvollziehbar und testbar bleiben.
 
 **Zum Anbieter:** https://openhands.dev/
 
 ## Alternativen zu OpenHands
 
-- [Devin](/tools/devin/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Bolt New](/tools/bolt-new/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Github Copilot](/tools/github-copilot/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Cursor](/tools/cursor/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Manus](/tools/manus/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Devin](/tools/devin/): stärker als kommerzieller Coding-Agent für delegierte Softwareaufgaben positioniert.
+- [Bolt New](/tools/bolt-new/): besser für schnelle Web-Prototypen im Browser statt Repository-Agentenläufe.
+- [Github Copilot](/tools/github-copilot/): editor- und GitHub-nah für tägliche Codevervollständigung und Assistenz.
+- [Cursor](/tools/cursor/): KI-Editor für laufende Arbeit in bestehenden Codebases.
+- [Manus](/tools/manus/): allgemeinerer Agent für mehrstufige Aufgaben außerhalb reiner Softwareentwicklung.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ OpenHands ist ein gutes Labor für ernsthafte Agentenarbeit. Produktiv wird es e
 
 **Ist OpenHands für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Nur bedingt. Wer Git, Tests, lokale Entwicklung und Code-Review noch nicht sicher beherrscht, sollte OpenHands zunächst in Demo-Repositories testen. Für erfahrene Entwickler ist es deutlich besser einzuordnen.
 
 **Wann lohnt sich OpenHands besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+OpenHands lohnt sich, wenn wiederkehrende Coding-Aufgaben klar beschrieben, testbar und isolierbar sind. Bei unklarer Produktlogik oder tiefen Architekturentscheidungen bleibt menschliche Analyse wichtiger.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Sandbox, Rechte, Secrets, Modellzugriff, Tests, Logging und Review. Ein Agenten-Patch sollte nie ohne menschliche Prüfung und CI in produktive Branches gelangen.

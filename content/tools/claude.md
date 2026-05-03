@@ -18,14 +18,17 @@ Claude passt gut zu Wissensarbeit, Redaktion, Analyse, Coding-Unterstützung und
 
 ## Für wen ist Claude geeignet?
 
-Claude passt vor allem zu Teams und Einzelpersonen, die ein KI-Assistent nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Claude ist besonders geeignet für Menschen, die lange, unübersichtliche oder sensible Textarbeit strukturieren müssen: Redaktionen, Research-Teams, Juristen, Produktmanager, Entwickler und Wissensarbeiter mit vielen Dokumenten. Der Assistent spielt seine Stärke aus, wenn Material nicht nur kurz beantwortet, sondern gelesen, geordnet, gegengeprüft und in eine brauchbare Form gebracht werden soll.
+
+Für Teams ist Claude dann interessant, wenn Qualität wichtiger ist als möglichst viele schnelle Varianten. Typische Nutzer sind zum Beispiel Personen, die Briefings verdichten, Spezifikationen prüfen, umfangreiche Notizen in Entscheidungen übersetzen oder Code-Reviews vorbereiten. Weniger geeignet ist Claude als ungeprüfte Faktenquelle oder als Ersatz für fachliche Verantwortung.
 
 ## Typische Einsatzszenarien
 
-- Lange Dokumente zusammenfassen und strukturieren
-- Texte entwerfen, kürzen oder redaktionell verbessern
-- Code erklären, prüfen und refaktorieren helfen
-- Argumente, Risiken und Entscheidungsoptionen ausarbeiten
+- **Dokumentenanalyse:** Lange PDFs, Protokolle, Spezifikationen oder Policy-Texte zusammenfassen, offene Fragen extrahieren und Widersprüche sichtbar machen.
+- **Redaktion und Schreiben:** Rohentwürfe in klare Argumentationen, Entscheidungsnotizen, Mails, Produkttexte oder interne Dokumentation überführen.
+- **Code- und Architektur-Review:** Pull Requests erklären, Refactoring-Ideen sammeln, Testszenarien formulieren und technische Kompromisse aufbereiten.
+- **Strategische Vorbereitung:** Risiken, Annahmen, Gegenargumente und Entscheidungsoptionen vor Meetings strukturiert ausarbeiten.
+- **Wissensarbeit mit Kontext:** Mehrere Quellen vergleichen, eine Linie herausarbeiten und daraus einen nachvollziehbaren Arbeitsstand bauen.
 
 ## Stärken
 
@@ -41,7 +44,9 @@ Claude passt vor allem zu Teams und Einzelpersonen, die ein KI-Assistent nicht a
 
 ## Workflow-Fit
 
-Claude ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Claude passt am besten in Workflows, in denen ein Mensch bereits Material, Ziel und Qualitätsmaßstab kennt. Ein sinnvoller Ablauf ist: Quellen oder Notizen sammeln, Aufgabe präzise formulieren, Claude eine erste Struktur oder Kritik erzeugen lassen und danach die relevanten Aussagen selbst prüfen. So wird Claude nicht zur Antwortmaschine, sondern zu einem zweiten Leser mit hoher Verarbeitungsgeschwindigkeit.
+
+In Teams sollte vorher klar sein, welche Dokumente verwendet werden dürfen, wer Ergebnisse freigibt und welche Aussagen belegt werden müssen. Besonders bei Kundendokumenten, Verträgen, Code oder internen Strategien ist ein Review-Schritt Pflicht. Claude beschleunigt die Denk- und Schreibarbeit, aber die Verantwortung für Veröffentlichung, Entscheidung und Fachprüfung bleibt beim Team.
 
 ## Datenschutz & Daten
 
@@ -49,17 +54,17 @@ Prompts können interne Texte, Code oder Kundendaten enthalten. Vor produktiver 
 
 ## Preise & Kosten
 
-Im Katalog ist Claude mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Claude mit dem Preismodell **Freemium** geführt. Für die Auswahl zählen weniger einzelne Prompts als Limits, verfügbare Modelle, Kontextlänge, Teamfunktionen, Datenschutzoptionen und Integrationen. Wer Claude produktiv einsetzt, sollte prüfen, ob der gewählte Plan genug Kapazität für lange Dokumente, wiederkehrende Reviews und kollaborative Arbeit bietet.
 
 **Zum Anbieter:** https://claude.ai/
 
 ## Alternativen zu Claude
 
-- [Chatgpt](/tools/chatgpt/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Gemini](/tools/gemini/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Perplexity](/tools/perplexity/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Notebooklm](/tools/notebooklm/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Kimi](/tools/kimi/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Chatgpt](/tools/chatgpt/): breiter Allzweck-Assistent für Schreiben, Code, Datenanalyse, Bilder und flexible Alltagsarbeit.
+- [Gemini](/tools/gemini/): interessant für Nutzer im Google-Ökosystem und für multimodale Aufgaben mit Workspace-Nähe.
+- [Perplexity](/tools/perplexity/): besser, wenn schnelle Webrecherche mit sichtbaren Quellen und aktuellen Fundstellen im Vordergrund steht.
+- [Notebooklm](/tools/notebooklm/): stärker, wenn Antworten konsequent aus eigenen Dokumenten und kuratierten Quellen entstehen sollen.
+- [Kimi](/tools/kimi/): relevanter Vergleich, wenn lange Kontexte und alternative LLM-Erfahrungen getestet werden.
 
 ## Redaktionelle Einschätzung
 
@@ -69,12 +74,12 @@ Claude ist stark, wenn Qualität und Kontext wichtiger sind als schnelle Einzeil
 
 **Ist Claude für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, für einfache Schreib- und Verständnisaufgaben ist der Einstieg leicht. Schwieriger wird es bei produktiver Nutzung: Dann braucht Claude gute Aufgabenbeschreibungen, Kontext, klare Grenzen und einen Menschen, der Ergebnisse prüft.
 
 **Wann lohnt sich Claude besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Claude lohnt sich besonders bei langen Texten, mehreren Dokumenten, komplexen Argumentationen und Aufgaben, bei denen Ton, Struktur und Vorsicht wichtig sind. Für sehr kurze Einzelfragen kann ein einfacherer Chat- oder Suchworkflow schneller sein.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Datenschutz, erlaubte Dokumenttypen, Teamrechte, Modell- und Kontextlimits sowie der Review-Prozess. Bei Fakten, rechtlichen Aussagen, Codeänderungen und Veröffentlichungen sollte Claude nie die letzte Instanz sein.

@@ -16,7 +16,7 @@ Bei Inkscape sollte man klein anfangen: ein wiederkehrender Vorgang, ein klares 
 
 ## Der praktische Kern
 
-Kreativtools sparen Zeit, wenn sie Material formbar machen. Sie schaden, wenn alle Ergebnisse nach derselben Vorlage oder demselben Filter aussehen.
+Inkscape muss in einem echten Beispiel zeigen, ob Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
 
 Für Designer, Maker, Bildung, Open-Source-Projekte und Teams mit einfachen Vektoranforderungen ist Inkscape dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 
@@ -44,48 +44,50 @@ Zusätzlich ist bei Inkscape der Kontext wichtig: Manche Teams nutzen solche Wer
 
 ## Workflow-Fit
 
-Inkscape passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+Inkscape passt am besten in Workflows, in denen Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Inkscape arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
 ## Qualitätssicherung
 
-Ein guter Kreativtest ist: Erkennt man die Marke oder nur das Tool? Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+Bei Inkscape sollte die Prüfung mit einem realen Beispiel beginnen: ob das Ergebnis eine eigene visuelle Entscheidung zeigt oder nur nach Filter aussieht. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
 
 ## Datenschutz & Betriebsfragen
 
-Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
+Bei Inkscape geht es vor allem um Bilder, Designs, Referenzen, Gesichter, Markenassets und unveröffentlichte Konzepte. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Im Katalog ist Inkscape mit dem Preismodell **Open Source** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+Im Katalog ist Inkscape mit dem Preismodell **Open Source** geführt. Für eine belastbare Entscheidung zählen hier vor allem Exportauflösung, kommerzielle Nutzung, Teamzugänge, Dateiformate und Nachbearbeitungszeit; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
 **Zum Anbieter:** https://inkscape.org/
 
 ## Alternativen zu Inkscape
 
-- [Adobe Illustrator](/tools/adobe-illustrator/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [CorelDRAW](/tools/coreldraw/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Figma](/tools/figma/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [GIMP](/tools/gimp/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Vectr](/tools/vectr/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Adobe Illustrator](/tools/adobe-illustrator/): stärker, wenn Logos, Icons, Illustrationen, Layoutgrafiken und skalierbare Markenassets gefragt ist.
+- [CorelDRAW](/tools/coreldraw/): passender, wenn der Schwerpunkt auf Illustration, Logoarbeit, Druckgrafik, Beschilderung und technische Designs liegt.
+- [Figma](/tools/figma/): guter Vergleich für Teams, die UI-Design, Prototyping, Designsysteme und Produktteams brauchen.
+- [GIMP](/tools/gimp/): prüfen, wenn Fotobearbeitung, Compositing, Grafiken und pixelbasierte Designarbeit wichtiger ist.
+- [Vectr](/tools/vectr/): naheliegend, falls einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 
-Inkscape ist dann eine gute Wahl, wenn Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
+Inkscape ist dann eine gute Wahl, wenn Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
 **Ist Inkscape für Einsteiger geeignet?**
 
-Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
+Inkscape ist für Einsteiger gut nutzbar, wenn Gestaltung und Rechte bewusst geprüft werden. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
 **Wann lohnt sich Inkscape besonders?**
 
-Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
+Inkscape lohnt sich besonders, wenn Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
+Vor dem Einsatz prüfen: Asset-Rechte, Auflösung, Farbprofil, Export, Markenfit und Nachbearbeitung. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Inkscape sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 **Was ist der häufigste Fehler?**
 
-Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
+Der häufigste Fehler ist, einen schnellen Effekt mit belastbarer Gestaltung zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Inkscape sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

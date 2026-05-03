@@ -17,14 +17,17 @@ Figma passt zu Produktdesign, UX, Marketing-Websites, Designsystemen und Teams m
 
 ## Für wen ist Figma geeignet?
 
-Figma passt vor allem zu Teams und Einzelpersonen, die ein kollaborative Designplattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Figma ist besonders geeignet für Produktdesigner, UX-Teams, Frontend-Entwickler, Product Manager und Marketing-Webteams, die nicht nur einzelne Screens gestalten, sondern gemeinsam an Produktlogik, Komponenten und Übergaben arbeiten. Der Wert liegt darin, dass Entwurf, Feedback, Prototyp und Designsystem im selben Arbeitsraum liegen.
+
+Für Einzelpersonen ist Figma ein starkes UI- und Prototyping-Werkzeug. Für Teams wird es wichtig, sobald mehrere Personen an denselben Flows, Komponenten oder Markenmustern arbeiten. Weniger passend ist Figma für finale Bildretusche, komplexe Illustrationen oder Druckproduktion; dort sind spezialisierte Grafik- und Bildwerkzeuge stärker.
 
 ## Typische Einsatzszenarien
 
-- UI-Flows und Wireframes erstellen
-- Prototypen für Tests und Stakeholder bauen
-- Designsysteme mit Komponenten und Tokens pflegen
-- Feedback direkt am visuellen Objekt sammeln
+- **Wireframes und UI-Flows:** Nutzerwege, Screens, Zustände und Varianten sichtbar machen, bevor Entwicklung startet.
+- **Klickbare Prototypen:** Interaktionen für Stakeholder, Nutzertests oder interne Reviews simulieren.
+- **Designsysteme pflegen:** Komponenten, Varianten, Styles und Tokens als gemeinsame Produktgrundlage verwalten.
+- **Developer Handoff:** Maße, States, Assets und Spezifikationen so bereitstellen, dass Frontend-Umsetzung weniger Rätselraten braucht.
+- **Feedback am Objekt:** Kommentare direkt an Screens, Komponenten oder Prototypen sammeln, statt Diskussionen in verstreuten Chats zu führen.
 
 ## Stärken
 
@@ -40,7 +43,9 @@ Figma passt vor allem zu Teams und Einzelpersonen, die ein kollaborative Designp
 
 ## Workflow-Fit
 
-Figma ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Figma passt in den Kern moderner Produktentwicklung: Problem verstehen, Flow skizzieren, Varianten testen, Komponenten anwenden, Prototyp teilen und danach sauber an Entwicklung übergeben. Besonders stark wird es, wenn Designentscheidungen nicht nur als Pixel, sondern als wiederverwendbare Systemelemente entstehen.
+
+Damit Figma nicht zur unübersichtlichen Leinwand wird, braucht es Dateiordnung, Namensregeln, Komponentenpflege und klare Zuständigkeiten. In größeren Teams sollte definiert sein, welche Dateien explorativ sind, welche als Quelle der Wahrheit gelten und wie Änderungen am Designsystem freigegeben werden.
 
 ## Datenschutz & Daten
 
@@ -48,17 +53,17 @@ Figma-Dateien enthalten oft Produktideen, Roadmaps und interne UI-Konzepte. Roll
 
 ## Preise & Kosten
 
-Im Katalog ist Figma mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Figma mit dem Preismodell **Freemium** geführt. Für Teams sind vor allem Editor-Sitze, Dev-Mode-Funktionen, Team Libraries, Versionshistorie, Rechteverwaltung und Organisationsfunktionen relevant. Die Kosten sollten gegen die Frage gestellt werden, ob Figma Übergaben, Abstimmungen und Designsystempflege tatsächlich reduziert.
 
 **Zum Anbieter:** https://figma.com
 
 ## Alternativen zu Figma
 
-- [Canva](/tools/canva/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Adobe Illustrator](/tools/adobe-illustrator/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Sketch](/tools/sketch/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Lunacy: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Marvel](/tools/marvel/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Canva](/tools/canva/): besser für schnelle Marketinggrafiken, Präsentationen und Vorlagenarbeit ohne UI-Design-Tiefe.
+- [Adobe Illustrator](/tools/adobe-illustrator/): stärker für Vektorillustrationen, Logos und präzise Markenassets.
+- [Sketch](/tools/sketch/): klassische Mac-nahe Alternative für UI-Design und Symbolbibliotheken.
+- Lunacy: interessante Option für UI-Design mit anderem Lizenz- und Plattformansatz.
+- [Marvel](/tools/marvel/): stärker auf einfache Prototypen, Präsentation und frühe UX-Validierung ausgerichtet.
 
 ## Redaktionelle Einschätzung
 
@@ -68,12 +73,12 @@ Figma ist weniger ein Zeichenprogramm als ein Produkt-Kommunikationsraum. Stark 
 
 **Ist Figma für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, erste Wireframes und Screens sind schnell möglich. Die eigentliche Lernkurve beginnt bei Auto Layout, Komponenten, Varianten und Designsystemen; genau dort entsteht aber auch der professionelle Nutzen.
 
 **Wann lohnt sich Figma besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Figma lohnt sich besonders, wenn mehrere Personen an Interfaces, Prototypen oder Komponenten arbeiten. Für einzelne Social-Media-Grafiken oder einfache Präsentationen ist Canva oft schneller.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Rollen, Linkfreigaben, Bibliotheken, Namenskonventionen, Komponentenpflege und der Übergabeprozess an Entwicklung. Ohne diese Regeln kann Figma trotz guter Funktionen schnell unordentlich werden.

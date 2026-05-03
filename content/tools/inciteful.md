@@ -16,7 +16,7 @@ Bei Inciteful sollte man klein anfangen: ein wiederkehrender Vorgang, ein klares
 
 ## Der praktische Kern
 
-Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben.
+Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Für Inciteful sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 Inciteful passt am ehesten zu Forschende, Studierende und Analysten, die von einem Paper aus ein Feld erkunden wollen, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
@@ -44,48 +44,50 @@ Zusätzlich ist bei Inciteful der Kontext wichtig: Manche Teams nutzen solche We
 
 ## Workflow-Fit
 
-Inciteful passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+Inciteful passt am besten in Workflows, in denen Literaturnetzwerke und Zitationsbeziehungen für akademische Recherche sichtbar machen nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Inciteful arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
 ## Qualitätssicherung
 
-Die wichtigste Kontrollfrage lautet: Kann ich nachvollziehen, warum genau diese Quelle oder dieses Ergebnis wichtig ist? Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+Bei Inciteful sollte die Prüfung mit einem realen Beispiel beginnen: ob Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
 
 ## Datenschutz & Betriebsfragen
 
-Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
+Bei Inciteful geht es vor allem um Suchfragen, Quellenlisten, Notizen, Forschungsdaten und fachliche Bewertungen. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Im Katalog ist Inciteful mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+Im Katalog ist Inciteful mit dem Preismodell **Je nach Plan** geführt. Für eine belastbare Entscheidung zählen hier vor allem Datenabdeckung, Exportmöglichkeiten, Teamzugänge, Speicher und methodische Prüfzeit; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
 **Zum Anbieter:** https://incitefulmed.com/academic/
 
 ## Alternativen zu Inciteful
 
-- [Research Rabbit](/tools/research-rabbit/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [VOSviewer](/tools/vosviewer/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Elicit](/tools/elicit/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Consensus](/tools/consensus/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Zotero](/tools/zotero/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Research Rabbit](/tools/research-rabbit/): stärker, wenn Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen z gefragt ist.
+- [VOSviewer](/tools/vosviewer/): passender, wenn der Schwerpunkt auf VOSviewer visualisiert bibliometrische Netzwerke, Zitationen, Co-Autorschaften und Forschungslandschaften liegt.
+- [Elicit](/tools/elicit/): guter Vergleich für Teams, die Forschung und Analyse brauchen.
+- [Consensus](/tools/consensus/): prüfen, wenn KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten wichtiger ist.
+- [Zotero](/tools/zotero/): naheliegend, falls Literaturverwaltung, Web-Clipping, Zitate und Forschungsbibliotheken im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 
-Inciteful ist dann eine gute Wahl, wenn Literaturnetzwerke und Zitationsbeziehungen für akademische Recherche sichtbar machen tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
+Inciteful ist dann eine gute Wahl, wenn Literaturnetzwerke und Zitationsbeziehungen für akademische Recherche sichtbar machen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
 **Ist Inciteful für Einsteiger geeignet?**
 
-Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
+Inciteful ist für Einsteiger geeignet, wenn Ergebnisse nicht ungeprüft als Beleg übernommen werden. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
 **Wann lohnt sich Inciteful besonders?**
 
-Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
+Inciteful lohnt sich besonders, wenn Literaturnetzwerke und Zitationsbeziehungen für akademische Recherche sichtbar machen regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
+Vor dem Einsatz prüfen: Datenquelle, Aktualität, Export, Reproduzierbarkeit, Rechte und fachliche Freigabe. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Inciteful sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 **Was ist der häufigste Fehler?**
 
-Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
+Der häufigste Fehler ist, Recherchekomfort mit wissenschaftlicher Belastbarkeit zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Inciteful sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
