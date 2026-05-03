@@ -9,81 +9,92 @@ tags:
   - developer
 official_url: 'https://aws.amazon.com/cloud9/'
 popularity: 0
-source_language: de
+description: 'A cloud-based AWS development environment that keeps code, terminal, runtime, and AWS resources close together for browser-based work on cloud projects.'
 translation: full
 ---
 # AWS Cloud9
 
-AWS Cloud9 is a cloud-based integrated development environment (IDE) that allows developers to write, execute, and debug code directly in the browser. It supports multiple programming languages and offers seamless integration with other AWS services, making it easier to develop and deploy cloud applications.
+AWS Cloud9 is a cloud-based development environment in the AWS ecosystem. The idea is that code, terminal, runtime, and AWS resources stay close together, so developers can work directly in the browser and handle cloud-adjacent projects.
 
-## For whom is AWS Cloud9 suitable?
+Before using it in a new setup, you should check current availability and AWS guidance, because cloud services can change. In terms of content, Cloud9 remains especially interesting when the development environment and AWS infrastructure are tightly integrated.
 
-AWS Cloud9 is primarily designed for software developers who want to work flexibly and remotely. It is particularly suitable for teams that work on projects together and need a shared development environment. DevOps teams and cloud developers also benefit from the tight integration with AWS infrastructure and services. Beginners can take advantage of the user-friendly interface and the ability to start coding without setting up a local environment.
+## Who is AWS Cloud9 suitable for?
 
-## Key Features
+AWS Cloud9 is suitable for AWS-focused developers, training, temporary development environments, and teams that want to work on cloud projects without local setup. For long-term standard development, local IDEs or modern dev-container setups are often more flexible.
 
-- Browser-based IDE with syntax highlighting and code completion for various programming languages
-- Real-time collaboration: multiple developers can work on the same code simultaneously
-- Integrated debugging tools for easy error detection
-- Direct access to AWS services and resources through the IDE
-- Terminal access to the Cloud9 environment with pre-installed tools and SDKs
-- Automatic saving and version control through integration with Git
-- Customizable user interface and keyboard shortcuts
-- Support for serverless applications and container development
-- Ability to quickly create and share development environments
+## Typical use cases
 
-## Advantages and Disadvantages
+- Edit AWS examples, Lambda functions, or infrastructure code directly in a cloud-adjacent environment.
+- Provide training environments without having to explain local installations.
+- Access a preconfigured development environment temporarily.
+- Work with terminal, editor, and AWS access in one browser window.
+- Carry out cloud-adjacent debugging or maintenance tasks.
+
+## What really matters in day-to-day work
+
+In everyday work, Cloud9 is convenient when the environment matches the project exactly. It removes local setup pain, but it does not replace proper permission management, cost control, and project structure.
+
+Teams should avoid treating cloud IDE instances like personal snow globes. Everything important belongs in Git, infrastructure belongs in code, and secrets belong in suitable secret systems.
+
+## Key features
+
+- Browser-based IDE with editor and terminal.
+- Close integration with AWS resources and development workflows.
+- Shared or temporary collaboration depending on the setup.
+- Preconfigured environments for cloud projects.
+- Use for scripts, serverless code, or infrastructure work.
+
+## Pros and limitations
 
 ### Advantages
 
-- No local installation required, as everything runs in the browser
-- Simplified collaboration through shared development environments
-- Tight integration with AWS services makes cloud development easier
-- Scalable infrastructure that adapts to demand
-- Comprehensive support for various programming languages and frameworks
+- Reduces local setup for AWS-focused projects.
+- Practical for training, demos, and temporary development environments.
+- Terminal and cloud context sit close together.
 
-### Disadvantages
+### Limitations
 
-- Requires a stable internet connection
-- Costs can vary depending on usage and resource consumption
-- Limited customization options compared to local IDEs
-- Steep learning curve for users without experience with AWS environments
-- Data security and privacy concerns for sensitive projects in the cloud
+- Current service availability and AWS recommendations should be checked.
+- Depends on AWS account, permissions, and cloud costs.
+- For daily development, local IDEs may be more comfortable.
 
-## Pricing & Costs
+## Workflow fit
 
-AWS Cloud9 is typically billed using a pay-as-you-go model. Costs are primarily based on the resources used for development environments, such as computing power and storage. The IDE itself is often free, but underlying EC2 instances or other AWS services can incur additional costs. Pricing plans can vary depending on the provider and may have different tiers.
+Cloud9 fits controlled cloud workflows: create the environment, limit permissions, clone the repository, commit the work, clean up resources after use. A reset strategy is especially helpful for training.
+
+For training or temporary tasks, it should be clear in advance when the environment will be deleted or stopped. Cloud development environments are convenient, but forgotten instances are small cost wells with keyboards.
+
+## Privacy & data
+
+Because development happens in the cloud account, IAM roles, network access, secrets, and stored files are critical. Do not store credentials in the workspace, and unused environments should be removed or stopped.
+
+## Pricing & costs
+
+Costs depend on the underlying AWS resources, such as compute, storage, and runtime. Before use, it should be clear which instances are running and who is responsible for cleanup. The pricing model listed in the dataset is: usage-based.
 
 ## Alternatives to AWS Cloud9
 
-- **Visual Studio Code with Remote-SSH** – Local IDE with remote access to servers and cloud environments
-- **Gitpod** – Cloud-based IDE with automated development environments and Git integration
-- **Replit** – Browser-based programming platform with real-time collaboration and support for multiple languages
-- **Eclipse Che** – Open-source cloud IDE with container-based development environments
-- **CodeSandbox** – Focus on web development with fast prototyping and sharing projects
+- GitHub Codespaces: very strong for repository-centric cloud development.
+- Gitpod: flexible dev environments for different Git workflows.
+- VS Code Dev Containers: well controlled locally or remotely.
+- JetBrains Gateway: remote development with the comfort of JetBrains IDEs.
+- Local IDE plus AWS CLI: often sufficient for experienced developers.
+
+## Editorial assessment
+
+AWS Cloud9 is useful when AWS-focused development is needed without local friction. For durable team standards, however, costs, availability, and permissions should be clarified very consciously.
+
+A good first test for AWS Cloud9 is therefore not a demo click, but a real mini workflow: edit AWS examples, Lambda functions, or infrastructure code directly in a cloud-adjacent way. If that works with real data, real roles, and a clear outcome, the next expansion step is worthwhile.
+
+At the same time, the most important limitation should be stated openly: current service availability and AWS recommendations should be checked. This friction is not a disqualifier, but it belongs before the decision, not in the frustrated debrief after the purchase.
 
 ## FAQ
 
-**1. Do I need an AWS account to use AWS Cloud9?**
-Yes, an AWS account is required to use AWS Cloud9, as development environments run on AWS infrastructure.
+**Is AWS Cloud9 suitable for small teams?**
+Partially. Small teams should check whether the benefit really justifies the setup and maintenance effort.
 
-**2. Which programming languages are supported?**
-AWS Cloud9 supports many languages, including JavaScript, Python, PHP, Ruby, Go, C++, Java, and more.
+**What should you pay attention to before using AWS Cloud9?**
+Current service availability and AWS recommendations should be checked. It should also be clear in advance who maintains the tool, which data is used, and how success is measured.
 
-**3. Can I use AWS Cloud9 offline?**
-No, AWS Cloud9 is a cloud-based IDE and requires an internet connection.
-
-**4. How does collaboration work in AWS Cloud9?**
-Multiple users can work on the same environment simultaneously and see changes in real-time.
-
-**5. Is there a free trial?**
-Depending on the AWS offering, there may be a free trial period with limited resources for smaller projects.
-
-**6. How secure are my data in AWS Cloud9?**
-Data is stored in the AWS cloud, which offers various security standards and encryption. However, sensitive data should be protected accordingly.
-
-**7. Can I connect my Cloud9 environment to other AWS services?**
-Yes, Cloud9 is tightly integrated into the AWS ecosystem, making it easy to access services like Lambda, S3, or EC2.
-
-**8. How can I version my projects in AWS Cloud9?**
-Cloud9 supports Git integration, making it easy to version and manage projects.
+**Does AWS Cloud9 replace human work?**
+No. AWS Cloud9 can speed up or structure work, but decisions, quality control, and responsibility remain with the team.
