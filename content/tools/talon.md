@@ -65,7 +65,7 @@ Im Katalog ist Talon mit dem Preismodell **Freemium** geführt. Neben dem Preis 
 
 ## Redaktionelle Einschätzung
 
-Talon ist kein bequemes Massenprodukt, sondern ein mächtiges Werkzeug für ernsthafte hands-free Arbeit.
+Talon ist ein Spezialwerkzeug für Menschen, die Sprache und Tastenkürzel tief in die Computerbedienung integrieren wollen. Der Einstieg ist technischer als bei klassischer Diktier-Software, dafür lassen sich Workflows sehr individuell automatisieren.
 
 ## FAQ
 

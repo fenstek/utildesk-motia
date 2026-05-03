@@ -67,7 +67,7 @@ Im Katalog ist Figma mit dem Preismodell **Freemium** geführt. Für Teams sind 
 
 ## Redaktionelle Einschätzung
 
-Figma ist weniger ein Zeichenprogramm als ein Produkt-Kommunikationsraum. Stark wird es erst mit sauberem Designsystem und klarer Dateiordnung.
+Figma ist weniger ein Zeichenprogramm als ein gemeinsamer Arbeitsraum für Produktgestaltung. Der größte Nutzen entsteht, wenn Komponenten, Varianten, Kommentare und Übergaben konsequent gepflegt werden; ohne Designsystem-Disziplin wird auch Figma schnell nur eine hübsche Dateiablage.
 
 ## FAQ
 

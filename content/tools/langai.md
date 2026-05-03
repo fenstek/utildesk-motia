@@ -18,14 +18,17 @@ Statt nur Karteikarten abzufragen, will LangAI Lernende früh ins Sprechen bring
 
 ## Für wen ist das Tool geeignet?
 
-LangAI passt zu Lernenden, die mit KI-Gesprächspartnern üben wollen. Wer gamifizierte Kurse und lange Lernpfade sucht, prüft Duolingo oder Babbel; wer übersetzung statt Lernen braucht, nimmt DeepL oder Lingvanex.
+LangAI passt zu Menschen, die Sprache aktiv üben wollen, aber nicht immer Gesprächspartner, Kurszeiten oder Mut für echte Gespräche haben. Besonders sinnvoll ist es für Lernende, die Aussprache, spontane Formulierungen und Feedback regelmäßig trainieren möchten.
+
+Weniger passend ist LangAI als alleiniger Sprachkurs. Grammatik, Lesen, Hören, Schreiben und echte Kommunikation müssen weiterhin Teil des Lernplans bleiben.
 
 ## Typische Einsatzszenarien
 
-- Neue Sprache mit häufigen Wörtern beginnen
-- Aussprache laut üben und Feedback bekommen
-- Alltagsdialoge mit einem KI-Chatbot simulieren
-- Kurze tägliche Sprachpraxis aufbauen
+- **Sprechpraxis:** kurze Dialoge führen, ohne auf Tandempartner oder Unterricht zu warten.
+- **Aussprache und Flüssigkeit:** Formulierungen wiederholen, korrigieren und sicherer sprechen.
+- **Alltagssituationen üben:** Reisen, Arbeit, Small Talk oder Prüfungssituationen simulieren.
+- **Lernroutine aufbauen:** täglich wenige Minuten sprechen, statt selten lange Lerneinheiten zu planen.
+- **Hemmschwellen senken:** Fehler machen, Feedback bekommen und Gesprächssicherheit entwickeln.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ LangAI passt zu Lernenden, die mit KI-Gesprächspartnern üben wollen. Wer gamif
 
 ## Workflow-Fit
 
-LangAI ist dann spannend, wenn Sprechen und Feedback wichtiger sind als Lektionen abhaken. Als alleinige Lernmethode sollte es mit echten Gesprächen, Hören und Schreiben kombiniert werden.
+LangAI funktioniert am besten mit kleinen, regelmäßigen Übungen. Ein sinnvoller Ablauf ist: Thema wählen, kurze Gesprächssituation trainieren, Korrekturen notieren, schwierige Sätze wiederholen und neues Vokabular später in echten Gesprächen verwenden.
+
+Für nachhaltiges Lernen sollte LangAI nicht isoliert bleiben. Kombiniert mit Hörmaterial, Textarbeit, Grammatik und menschlicher Korrektur wird aus Gesprächssimulation ein stabilerer Lernprozess.
 
 ## Datenschutz & Daten
 
@@ -71,18 +76,18 @@ LangAI bietet eine kostenlose Nutzung bis zu Limits und kostenpflichtige Optione
 
 ## Redaktionelle Einschätzung
 
-LangAI ist dann spannend, wenn Sprechen und Feedback wichtiger sind als Lektionen abhaken. Als alleinige Lernmethode sollte es mit echten Gesprächen, Hören und Schreiben kombiniert werden.
+LangAI ist interessant, wenn Sprachlernen mehr Gesprächssimulation und unmittelbares Feedback braucht. Es ersetzt keine echte Sprachpraxis, kann aber Hemmschwellen senken und Routinen schaffen, wenn Lernende regelmäßig sprechen, korrigieren und wiederholen.
 
 ## FAQ
 
-**Welche Sprachen unterstützt LangAI?**
+**Kann LangAI einen Sprachkurs ersetzen?**
 
-Der Anbieter nennt mehrere Lernsprachen und viele Muttersprachen; Details sollten aktuell geprüft werden.
+Nur teilweise. Für Sprechpraxis und Wiederholung kann es sehr hilfreich sein, aber Struktur, Grammatik, Schreibkorrektur und echte Kommunikation bleiben wichtig.
 
-**Ist LangAI kostenlos?**
+**Für wen ist LangAI besonders nützlich?**
 
-Es gibt eine kostenlose Nutzung mit Limits und kostenpflichtige Erweiterungen.
+Für Lernende, die häufiger sprechen möchten, aber wenig Gelegenheit oder Hemmungen haben. Regelmäßigkeit ist wichtiger als lange Sitzungen.
 
-**Kann LangAI Aussprache verbessern?**
+**Worauf sollte man achten?**
 
-Ja, Aussprachefeedback ist ein Kernversprechen, sollte aber praktisch mit der eigenen Sprache getestet werden.
+Auf korrekte Rückmeldungen, Datenschutz bei Sprachaufnahmen und die Balance zwischen KI-Übung und echter Anwendung mit Menschen.

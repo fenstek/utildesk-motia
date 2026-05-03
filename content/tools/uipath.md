@@ -66,7 +66,7 @@ Im Katalog ist UiPath mit dem Preismodell **Je nach Plan** geführt. Neben Lizen
 
 ## Redaktionelle Einschätzung
 
-UiPath ist stark, wenn RPA als Programm und nicht als einzelne Bastellösung betrieben wird.
+UiPath ist stark, wenn Automatisierung als Unternehmensprogramm betrieben wird und nicht als einzelner Makro-Bot. Der Nutzen entsteht durch Prozessauswahl, Governance, Monitoring und Wiederverwendung; ohne diese Struktur wird RPA schnell teuer und fragil.
 
 ## FAQ
 

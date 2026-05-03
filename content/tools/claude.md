@@ -39,7 +39,7 @@ Für Teams ist Claude dann interessant, wenn Qualität wichtiger ist als möglic
 ## Grenzen
 
 - Fakten müssen geprüft werden
-- Nicht jede Integration ist so tief wie spezialisierte Tools
+- Integrationen, Modellzugang und Teamfunktionen unterscheiden sich je nach Produktumgebung
 - Sensible Daten brauchen klare Regeln
 
 ## Workflow-Fit
@@ -68,7 +68,7 @@ Im Katalog ist Claude mit dem Preismodell **Freemium** geführt. Für die Auswah
 
 ## Redaktionelle Einschätzung
 
-Claude ist stark, wenn Qualität und Kontext wichtiger sind als schnelle Einzeiler. Ohne Prozessdisziplin bleibt es aber ein loses Chatfenster.
+Claude ist eine der besseren Optionen, wenn Texte, Dokumente und Argumente sorgfältig verarbeitet werden müssen. Sein Wert liegt weniger in schnellen Antworten als in ruhiger Strukturarbeit: lesen, ordnen, kritisieren, umformulieren und offene Punkte sichtbar machen.
 
 ## FAQ
 

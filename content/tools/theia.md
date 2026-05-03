@@ -65,7 +65,7 @@ Im Katalog ist Theia mit dem Preismodell **Open Source** geführt. Kostenloser Q
 
 ## Redaktionelle Einschätzung
 
-Theia ist stark, wenn eine eigene Entwicklerplattform entstehen soll. Für normales Coding ist eine fertige IDE schneller.
+Theia ist interessant, wenn eine IDE nicht nur genutzt, sondern als Plattform angepasst werden soll. Für normale Entwickler reicht oft VS Code; für Produktteams, die eigene Cloud- oder Embedded-Entwicklungsumgebungen bauen, ist Theia deutlich spannender.
 
 ## FAQ
 

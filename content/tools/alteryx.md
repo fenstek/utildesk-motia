@@ -66,7 +66,7 @@ Im Katalog ist Alteryx mit dem Preismodell **Je nach Plan** geführt. Für die K
 
 ## Redaktionelle Einschätzung
 
-Alteryx ist stark, wenn Datenarbeit aus verstreuten Tabellen heraus in nachvollziehbare Workflows überführt werden soll.
+Alteryx lohnt sich, wenn Fachbereiche eigene Datenprozesse bauen müssen, ohne jedes Mal ein Data-Engineering-Team zu blockieren. Der Nutzen entsteht aber nur mit Governance: Namenskonventionen, Datenverantwortung und Review sind wichtiger als noch ein zusätzlicher Drag-and-drop-Workflow.
 
 ## FAQ
 
