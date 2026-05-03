@@ -16,14 +16,17 @@ Talon passt zu Power-Usern, Entwicklern und Menschen, die aus ergonomischen oder
 
 ## Für wen ist Talon geeignet?
 
-Talon passt vor allem zu Teams und Einzelpersonen, die ein Voice-Control-Tool nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Talon ist geeignet für Power-User, Entwickler und Menschen, die aus ergonomischen, gesundheitlichen oder Produktivitätsgründen hands-free arbeiten möchten. Es geht nicht nur um Diktat, sondern um präzise Steuerung von Editor, Terminal, Browser und Desktop über Sprache, Geräusche, Skripte oder Eye Tracking.
+
+Der beste Fit entsteht bei Nutzern, die bereit sind, ihre Arbeitsweise aktiv zu konfigurieren. Talon ist weniger bequem als typische Sprachassistenten, aber deutlich mächtiger, wenn eigene Befehle und app-spezifische Workflows aufgebaut werden.
 
 ## Typische Einsatzszenarien
 
-- Code und Text per Stimme eingeben
-- Wiederkehrende Desktop-Aktionen automatisieren
-- Arbeitsplätze ergonomischer gestalten
-- Eigene Sprachbefehle und Skripte bauen
+- **Hands-free Coding:** Editorbefehle, Navigation, Symbole und Codebausteine per Stimme oder Makro ausführen.
+- **Ergonomische Entlastung:** Tastatur- und Mauslast reduzieren, wenn Schmerzen oder repetitive Belastung ein Problem sind.
+- **Desktop-Automation:** Wiederkehrende Aktionen in Browser, Terminal oder Anwendungen als Sprachbefehle abbilden.
+- **Individuelle Profile:** Befehle, Vokabular und Skripte auf die eigene Arbeit zuschneiden.
+- **Barrierearme Workflows:** Computerarbeit für Menschen zugänglicher machen, die klassische Eingabegeräte nur eingeschränkt nutzen können.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Talon passt vor allem zu Teams und Einzelpersonen, die ein Voice-Control-Tool ni
 
 ## Workflow-Fit
 
-Talon ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Talon wird nicht über Nacht produktiv. Ein guter Einstieg ist, zuerst wenige schmerzhafte oder häufige Aktionen zu automatisieren: Fenster wechseln, Textbausteine, Editorbefehle, Navigation. Danach kann man schrittweise Vokabular und Skripte erweitern.
+
+Für Entwickler ist entscheidend, Talon-Befehle wie Code zu behandeln: versionieren, testen, aufräumen. Wer zu viele spontane Kommandos baut, erzeugt ein schwer merkbares System. Wer bewusst kuratiert, bekommt einen sehr persönlichen Arbeitsbeschleuniger.
 
 ## Datenschutz & Daten
 
@@ -47,16 +52,16 @@ Voice-Control-Workflows können sensible Texte und Befehle enthalten. Lokale Ver
 
 ## Preise & Kosten
 
-Im Katalog ist Talon mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Talon mit dem Preismodell **Freemium** geführt. Neben dem Preis zählen Mikrofonqualität, Setup-Zeit, Lernkurve und die Pflege eigener Befehle. Für Menschen mit ergonomischem Bedarf kann der Nutzen deutlich über klassischer Produktivitätsrechnung liegen.
 
 **Zum Anbieter:** https://talonvoice.com/
 
 ## Alternativen zu Talon
 
-- [Wispr Flow](/tools/wispr-flow/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Dragon Naturallyspeaking: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Apple Siri](/tools/apple-siri/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Google Assistant](/tools/google-assistant/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Wispr Flow](/tools/wispr-flow/): stärker für schnelles Diktieren von Text in Alltagsapps.
+- Dragon Naturallyspeaking: klassische Spracherkennung mit Fokus auf Diktat und professionelle Spracheingabe.
+- [Apple Siri](/tools/apple-siri/): bequemer Systemassistent, aber deutlich weniger anpassbar für komplexe Desktop-Workflows.
+- [Google Assistant](/tools/google-assistant/): eher allgemeine Sprachassistenz als präzises Arbeits- und Coding-Werkzeug.
 
 ## Redaktionelle Einschätzung
 
@@ -66,12 +71,12 @@ Talon ist kein bequemes Massenprodukt, sondern ein mächtiges Werkzeug für erns
 
 **Ist Talon für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Nur, wenn man Geduld für Setup und Gewöhnung mitbringt. Für reines Diktat sind andere Tools einfacher; Talon lohnt sich, wenn Steuerung und Automatisierung wichtig sind.
 
 **Wann lohnt sich Talon besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Talon lohnt sich besonders bei täglicher Computerarbeit, Coding, ergonomischer Belastung oder Bedarf an hands-free Workflows. Je häufiger wiederkehrende Aktionen sind, desto stärker zahlt sich Anpassung aus.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Mikrofon, Umgebungsgeräusche, lokale Verarbeitung, Skriptpflege, App-Kompatibilität und eine realistische Lernphase. Gute Befehlsdisziplin ist Teil des Werkzeugs.

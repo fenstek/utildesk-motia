@@ -17,7 +17,9 @@ Gut geeignet für SaaS, digitale Produkte, Support-Teams, Customer Success und O
 
 ## Für wen ist Intercom geeignet?
 
-Intercom passt vor allem zu Teams und Einzelpersonen, die ein Customer-Messaging-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Intercom eignet sich für SaaS-, App- und Online-Businesses, die Support, In-App-Kommunikation, Help Center und Automatisierung eng verbinden wollen. Besonders stark ist es, wenn Kundenkontakt direkt im Produkt stattfindet und Supportdaten für Onboarding oder Lifecycle-Kommunikation genutzt werden sollen.
+
+Für sehr kleine Projekte kann Intercom schnell zu teuer und zu komplex werden. Der Nutzen entsteht erst, wenn Chat, Wissensbasis, Routing, Bots und Teamprozesse bewusst zusammenspielen.
 
 ## Typische Einsatzszenarien
 
@@ -25,6 +27,8 @@ Intercom passt vor allem zu Teams und Einzelpersonen, die ein Customer-Messaging
 - Supportanfragen automatisiert vorsortieren
 - Help-Center-Inhalte mit Chat verbinden
 - Onboarding- und Lifecycle-Nachrichten steuern
+- Produktnutzung mit gezielten Nachrichten begleiten
+- Wiederkehrende Supportfragen über Artikel und Bots entlasten
 
 ## Stärken
 
@@ -40,7 +44,9 @@ Intercom passt vor allem zu Teams und Einzelpersonen, die ein Customer-Messaging
 
 ## Workflow-Fit
 
-Intercom ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Intercom passt in Workflows, in denen Kundenkontakt, Produktdaten und Supportantworten zusammen betrachtet werden. Ein guter Ablauf verbindet Help-Center-Artikel, Bot-Vorqualifizierung, menschliche Übergabe und klare SLA-Regeln.
+
+Schwach wird Intercom, wenn Automationen ohne Pflege live gehen. Dann bekommen Kunden schnelle, aber unpassende Antworten. Die Wissensbasis und Routinglogik müssen regelmäßig aus echten Tickets verbessert werden.
 
 ## Datenschutz & Daten
 
@@ -48,17 +54,19 @@ Intercom verarbeitet Kundendialoge, Nutzungsdaten und Supportinformationen. Date
 
 ## Preise & Kosten
 
-Im Katalog ist Intercom mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Intercom ist im Katalog als **Freemium** geführt. Für die Kostenbewertung sind Sitzplätze, Kontaktvolumen, Bot- oder AI-Funktionen, Help-Center-Module, Integrationen und Support-Level entscheidend.
+
+Bei wachsender Nutzung können Kosten deutlich steigen. Deshalb sollte man vorab modellieren, wie viele Nutzer, Konversationen und Automationen realistisch anfallen.
 
 **Zum Anbieter:** https://www.intercom.com/
 
 ## Alternativen zu Intercom
 
-- [Zendesk](/tools/zendesk/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Freshdesk](/tools/freshdesk/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Liveperson](/tools/liveperson/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Drift](/tools/drift/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Hubspot Service Hub: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Zendesk](/tools/zendesk/): stärker als klassisches Support- und Ticketing-System für größere Service-Teams.
+- [Freshdesk](/tools/freshdesk/): oft pragmatischer für Helpdesk, E-Mail-Support und kostenbewusste Teams.
+- [Liveperson](/tools/liveperson/): eher Enterprise-orientiert für Messaging und Conversational AI im großen Maßstab.
+- [Drift](/tools/drift/): stärker auf Conversational Marketing und Sales-Pipeline ausgerichtet.
+- Hubspot Service Hub: sinnvoll, wenn CRM, Marketing und Service bereits in HubSpot laufen.
 
 ## Redaktionelle Einschätzung
 
@@ -68,12 +76,12 @@ Intercom ist stark, wenn Support und Produktkommunikation zusammenwachsen sollen
 
 **Ist Intercom für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Intercom ist bedienbar, aber gute Ergebnisse brauchen Prozessdenken. Einsteiger sollten mit klaren Inbox-Regeln, wenigen Automationen und gepflegten Help-Center-Artikeln starten.
 
 **Wann lohnt sich Intercom besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Intercom lohnt sich, wenn Support, Produktkommunikation und Onboarding an einem Ort zusammenlaufen sollen. Besonders stark ist es für SaaS-Produkte mit vielen wiederkehrenden Fragen.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Datenschutz, Consent, Datenresidenz, Rollen, Integrationen und die Qualität der Wissensbasis. Automatische Antworten sollten regelmäßig anhand echter Kundengespräche geprüft werden.

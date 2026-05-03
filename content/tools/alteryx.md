@@ -16,14 +16,17 @@ Der stärkste Fit liegt bei Analysten, BI-Teams und Operations-Abteilungen mit v
 
 ## Für wen ist Alteryx geeignet?
 
-Alteryx passt vor allem zu Teams und Einzelpersonen, die ein Analytics- und Data-Preparation-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Alteryx ist besonders geeignet für Analysten, BI-Teams, Finance, Operations und Fachabteilungen, die regelmäßig Daten aus mehreren Quellen zusammenführen, bereinigen und auswerten. Das Tool ist stark, wenn viel Arbeit heute in Excel-Dateien, manuellen Exports, wiederholten Joins und schwer nachvollziehbaren Reportings steckt.
+
+Für reine Ad-hoc-Auswertungen kann Alteryx zu schwer wirken. Sein Wert entsteht, wenn Datenprozesse wiederholbar, dokumentierbar und über Teams hinweg verständlich werden sollen. Dann können Fachbereiche eigene Logik modellieren, ohne jede Transformation als Codepipeline beim Data-Engineering-Team zu bestellen.
 
 ## Typische Einsatzszenarien
 
-- Daten aus mehreren Quellen bereinigen und verbinden
-- Wiederkehrende Reports und analytische Workflows automatisieren
-- Fachbereichslogik transparent in Workflows abbilden
-- Vorarbeiten für BI, Forecasting oder Data Science strukturieren
+- **Datenvorbereitung:** CSV, Excel, Datenbanken und Cloudquellen verbinden, bereinigen, normalisieren und für Reporting vorbereiten.
+- **Reporting-Automatisierung:** Monatliche oder wöchentliche Auswertungen als wiederholbare Workflows statt manueller Klickketten bauen.
+- **Fachbereichslogik sichtbar machen:** Regeln, Filter, Berechnungen und Ausnahmen so modellieren, dass sie überprüfbar bleiben.
+- **BI- und Data-Science-Vorarbeit:** Datensätze für Tableau, Power BI, Forecasting oder Modelltraining vorbereiten.
+- **Governance von Excel-Prozessen:** Kritische Spreadsheet-Abläufe in kontrolliertere Workflows überführen.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Alteryx passt vor allem zu Teams und Einzelpersonen, die ein Analytics- und Data
 
 ## Workflow-Fit
 
-Alteryx ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Alteryx passt in die Mitte des Datenworkflows: nach der Datenerhebung, aber vor Dashboard, Präsentation oder Modell. Ein guter Ablauf ist: Quellen definieren, Transformationen als Workflow abbilden, Ergebnisse mit Stichproben prüfen, Fehlerfälle dokumentieren und erst danach automatisieren.
+
+In Organisationen sollte außerdem geklärt werden, welche Workflows experimentell sind und welche produktiv laufen. Sobald Alteryx Berichte oder Entscheidungen versorgt, braucht es Ownership, Versionskontrolle, Zugriffsregeln und Monitoring. Sonst wird nur die alte Excel-Schattenlogik in ein neues Werkzeug verschoben.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ Alteryx kann viele interne Datenquellen zusammenführen. Rollen, Datenklassifizi
 
 ## Preise & Kosten
 
-Im Katalog ist Alteryx mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Alteryx mit dem Preismodell **Je nach Plan** geführt. Für die Kostenbetrachtung sind Nutzerrollen, Server- oder Cloud-Betrieb, Automatisierung, Datenquellen, Governance-Funktionen und Schulungsaufwand wichtig. Alteryx lohnt sich eher bei wiederkehrenden, wertvollen Datenprozessen als bei gelegentlichen Einzelanalysen.
 
 **Zum Anbieter:** https://www.alteryx.com/
 
 ## Alternativen zu Alteryx
 
-- [Looker Studio](/tools/looker-studio/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Streamsets](/tools/streamsets/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Apache Nifi](/tools/apache-nifi/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Tableau](/tools/tableau/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Power Bi](/tools/power-bi/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Looker Studio](/tools/looker-studio/): leichterer Einstieg für Dashboards und Berichte, aber weniger stark in komplexer Datenaufbereitung.
+- [Streamsets](/tools/streamsets/): stärker für produktive Datenpipelines und Data-Engineering-Betrieb.
+- [Apache Nifi](/tools/apache-nifi/): offene Alternative für Flow-basierte Datenbewegung mit technischerem Setup.
+- [Tableau](/tools/tableau/): stärker in visueller Analyse und Dashboarding, weniger als allgemeine Prep-Automation.
+- [Power Bi](/tools/power-bi/): naheliegend für Microsoft-nahe BI-Workflows mit Power Query und Unternehmensreporting.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ Alteryx ist stark, wenn Datenarbeit aus verstreuten Tabellen heraus in nachvollz
 
 **Ist Alteryx für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Für Analysten mit Excel- oder BI-Erfahrung ist der Einstieg gut machbar. Schwieriger wird es bei produktiven Datenflüssen: Dann braucht es Datenverständnis, Testfälle und klare Verantwortung für die Ergebnisse.
 
 **Wann lohnt sich Alteryx besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Alteryx lohnt sich, wenn wiederkehrende Datenaufbereitung viel Zeit kostet, mehrere Quellen beteiligt sind oder fachliche Logik nachvollziehbar automatisiert werden soll. Bei einmaligen kleinen Analysen reicht oft Excel, SQL oder ein BI-Tool.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Datenzugriffe, Rollen, Produktivbetrieb, Dokumentation, Kosten pro Nutzer und die Frage, wer Workflows pflegt, wenn Fachlogik oder Datenquellen sich ändern.

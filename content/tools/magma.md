@@ -16,7 +16,7 @@ Magma sollte dort getestet werden, wo heute Reibung entsteht: Übergaben, Varian
 
 ## Der praktische Kern
 
-Kreativtools sparen Zeit, wenn sie Material formbar machen. Sie schaden, wenn alle Ergebnisse nach derselben Vorlage oder demselben Filter aussehen.
+Magma muss in einem echten Beispiel zeigen, ob kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
 
 Bei Illustratoren, Konzeptteams, Kreativgruppen und Workshops mit gemeinsamem visuellen Arbeiten spielt Magma seine Stärken aus, wenn die Nutzung bewusst eingegrenzt wird. Ein guter Einsatzbereich ist besser als fünf halb genutzte Funktionen.
 
@@ -44,48 +44,50 @@ Zusätzlich ist bei Magma der Kontext wichtig: Manche Teams nutzen solche Werkze
 
 ## Workflow-Fit
 
-Magma passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+Magma passt am besten in Workflows, in denen kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Magma arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
 ## Qualitätssicherung
 
-Ein guter Kreativtest ist: Erkennt man die Marke oder nur das Tool? Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+Bei Magma sollte die Prüfung mit einem realen Beispiel beginnen: ob das Ergebnis eine eigene visuelle Entscheidung zeigt oder nur nach Filter aussieht. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
 
 ## Datenschutz & Betriebsfragen
 
-Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
+Bei Magma geht es vor allem um Bilder, Designs, Referenzen, Gesichter, Markenassets und unveröffentlichte Konzepte. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Im Katalog ist Magma mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+Im Katalog ist Magma mit dem Preismodell **Freemium** geführt. Für eine belastbare Entscheidung zählen hier vor allem Exportauflösung, kommerzielle Nutzung, Teamzugänge, Dateiformate und Nachbearbeitungszeit; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
 **Zum Anbieter:** https://magma.com/
 
 ## Alternativen zu Magma
 
-- [Figma](/tools/figma/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Milanote](/tools/milanote/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Krita](/tools/krita/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Procreate](/tools/procreate/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Canva](/tools/canva/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Figma](/tools/figma/): stärker, wenn UI-Design, Prototyping, Designsysteme und Produktteams gefragt ist.
+- [Milanote](/tools/milanote/): passender, wenn der Schwerpunkt auf visuelle Planung, Moodboards und Projektstruktur für kreative und konzeptionelle Arbeit liegt.
+- [Krita](/tools/krita/): guter Vergleich für Teams, die Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen brauchen.
+- [Procreate](/tools/procreate/): prüfen, wenn ein anderer Schwerpunkt als bei Magma relevant ist.
+- [Canva](/tools/canva/): naheliegend, falls Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 
-Magma ist dann eine gute Wahl, wenn kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
+Magma ist dann eine gute Wahl, wenn kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
 **Ist Magma für Einsteiger geeignet?**
 
-Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
+Magma ist für Einsteiger gut nutzbar, wenn Gestaltung und Rechte bewusst geprüft werden. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
 **Wann lohnt sich Magma besonders?**
 
-Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
+Magma lohnt sich besonders, wenn kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
+Vor dem Einsatz prüfen: Asset-Rechte, Auflösung, Farbprofil, Export, Markenfit und Nachbearbeitung. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Magma sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 **Was ist der häufigste Fehler?**
 
-Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
+Der häufigste Fehler ist, einen schnellen Effekt mit belastbarer Gestaltung zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Magma sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

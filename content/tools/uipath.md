@@ -16,14 +16,17 @@ UiPath passt zu größeren Organisationen mit vielen wiederkehrenden, regelbasie
 
 ## Für wen ist UiPath geeignet?
 
-UiPath passt vor allem zu Teams und Einzelpersonen, die ein Enterprise-RPA-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+UiPath ist geeignet für größere Organisationen, Shared-Service-Center, Finance, HR, Operations und IT-Teams, die regelbasierte Prozesse in Backoffice- und Legacy-Systemen automatisieren wollen. Das Tool ist besonders relevant, wenn viele wiederholbare Schritte zwischen Anwendungen, Tabellen, Formularen und E-Mails stattfinden.
+
+UiPath lohnt sich nicht für jeden kleinen Prozess. Der beste Fit entsteht, wenn Prozessvolumen, Fehlerkosten und Standardisierung hoch genug sind, um Analyse, Bot-Entwicklung, Betrieb und Governance zu rechtfertigen. Schlechte Prozesse werden durch RPA nicht automatisch gut; sie werden nur schneller ausgeführt.
 
 ## Typische Einsatzszenarien
 
-- Backoffice-Prozesse automatisieren
-- Legacy-Anwendungen ohne moderne APIs einbinden
-- RPA-Bots zentral steuern und überwachen
-- Prozessdaten für Optimierung sichtbar machen
+- **Backoffice-Automation:** Rechnungen, Stammdaten, Reports, Formulare oder wiederkehrende Systemabgleiche automatisieren.
+- **Legacy-Systeme anbinden:** Arbeitsschritte in Anwendungen ohne moderne APIs per UI-Automation abbilden.
+- **Bot-Orchestrierung:** Bots planen, überwachen, skalieren und Fehler zentral behandeln.
+- **Process Mining und Optimierung:** Prozessdaten sichtbar machen, bevor oder während automatisiert wird.
+- **Human-in-the-loop:** Automatisierung mit menschlichen Freigaben verbinden, wenn Entscheidungen nicht vollständig regelbasiert sind.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ UiPath passt vor allem zu Teams und Einzelpersonen, die ein Enterprise-RPA-Platt
 
 ## Workflow-Fit
 
-UiPath ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+UiPath gehört in einen strukturierten Automatisierungsprozess: Prozess aufnehmen, Varianten und Ausnahmen verstehen, Business Case berechnen, Bot entwickeln, testen, freigeben und anschließend überwachen. Ein Bot ist kein einmaliges Skript, sondern ein operativer Bestandteil des Unternehmens.
+
+In der Praxis entscheidet Governance über den Erfolg. Credentials, Rollen, Logs, Fehlerbehandlung, Change Management und Verantwortlichkeiten müssen stehen. Wenn Zielsysteme sich ändern, muss klar sein, wer Bots anpasst und wer Ausfälle bemerkt.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ RPA-Bots arbeiten oft mit sensiblen Geschäftsdaten. Credential Management, Prot
 
 ## Preise & Kosten
 
-Im Katalog ist UiPath mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist UiPath mit dem Preismodell **Je nach Plan** geführt. Neben Lizenzen zählen Implementierung, Bot-Betrieb, Orchestrierung, Monitoring, Schulung und Prozessanalyse. UiPath rechnet sich eher bei hohem Volumen, stabilen Prozessen und klar messbaren Einsparungen.
 
 **Zum Anbieter:** https://www.uipath.com/
 
 ## Alternativen zu UiPath
 
-- [Kofax Rpa](/tools/kofax-rpa/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Automation Anywhere](/tools/automation-anywhere/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Workato](/tools/workato/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [N8n](/tools/n8n/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Microsoft Power Automate](/tools/microsoft-power-automate/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Kofax Rpa](/tools/kofax-rpa/): Enterprise-RPA-Alternative mit Fokus auf Dokumente, Prozesse und Automatisierung.
+- [Automation Anywhere](/tools/automation-anywhere/): direkter RPA-Wettbewerber für größere Automatisierungsprogramme.
+- [Workato](/tools/workato/): stärker auf iPaaS, SaaS-Integration und Business-Workflows ausgerichtet.
+- [N8n](/tools/n8n/): flexibler für API- und Workflow-Automation, besonders wenn Self-Hosting wichtig ist.
+- [Microsoft Power Automate](/tools/microsoft-power-automate/): naheliegend für Microsoft-365- und Dynamics-nahe Automatisierung.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ UiPath ist stark, wenn RPA als Programm und nicht als einzelne Bastellösung bet
 
 **Ist UiPath für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Für einfache Bot-Demos ja, für produktive RPA-Programme nein ohne Schulung und Governance. Einsteiger sollten mit klar begrenzten, risikoarmen Prozessen starten.
 
 **Wann lohnt sich UiPath besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+UiPath lohnt sich bei hohem Prozessvolumen, stabilen Regeln, vielen manuellen Übergaben und messbaren Fehler- oder Zeitkosten. Für seltene Einzelfälle ist der Betriebsaufwand meist zu groß.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Prozessstandardisierung, Credential Management, Audit Logs, Fehlerpfade, Bot-Verantwortliche, Lizenzmodell und Change Management der Zielsysteme.

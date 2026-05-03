@@ -16,7 +16,9 @@ Geeignet für Unternehmen, öffentliche Einrichtungen, Industrie, Retail und Org
 
 ## Für wen ist Avigilon geeignet?
 
-Avigilon passt vor allem zu Teams und Einzelpersonen, die ein Video-Sicherheitsplattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Avigilon richtet sich an Organisationen, die physische Sicherheit professionell betreiben: Industrieareale, öffentliche Einrichtungen, Einzelhandel, Logistik, Campus-Standorte oder größere Gebäudekomplexe. Es geht nicht um einfache Kamerabilder, sondern um ein System aus Kameras, Verwaltung, Suche, Analyse und Sicherheitsprozessen.
+
+Für kleine Büros oder private Überwachung ist Avigilon meist überdimensioniert. Sinnvoll wird es, wenn viele Kameras, mehrere Standorte, definierte Rollen und nachvollziehbare Ereignisprüfung zusammenkommen.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Avigilon passt vor allem zu Teams und Einzelpersonen, die ein Video-Sicherheitsp
 - Sicherheitsereignisse schneller untersuchen
 - Kameras und Videoarchive zentral verwalten
 - Analysen in operative Sicherheitsprozesse einbinden
+- Zutritts- und Vorfallprozesse mit Videobelegen verbinden
+- Kamerainfrastruktur über mehrere Bereiche standardisieren
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Avigilon passt vor allem zu Teams und Einzelpersonen, die ein Video-Sicherheitsp
 
 ## Workflow-Fit
 
-Avigilon ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Avigilon gehört in einen dokumentierten Sicherheitsworkflow: Ereignis erkennen, zuständige Rolle informieren, Video prüfen, Entscheidung dokumentieren und Aufbewahrungsfristen einhalten. Ohne diese Prozesskette bleibt selbst gute Analyse nur ein weiterer Datenstrom.
+
+Vor Einführung sollten Sicherheitsleitung, Datenschutz, IT und Betriebsrat beziehungsweise Arbeitnehmervertretung gemeinsam klären, welche Bereiche überwacht werden, wer zugreifen darf und wie lange Material gespeichert wird.
 
 ## Datenschutz & Daten
 
@@ -47,16 +53,18 @@ Videoüberwachung ist hochsensibel. Rechtsgrundlage, Beschilderung, Aufbewahrung
 
 ## Preise & Kosten
 
-Im Katalog ist Avigilon mit dem Preismodell **Abonnement, Individuelles Angebot** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Avigilon ist im Katalog als **Abonnement, Individuelles Angebot** geführt. Die Kosten hängen typischerweise von Kameras, Lizenzen, Speicher, Analysefunktionen, Installation und Wartung ab.
+
+Bei der Bewertung sollten nicht nur Lizenzpreise betrachtet werden. Planung, Verkabelung, Netzwerkbelastung, Aufbewahrung, Schulung und laufender Support sind oft die größeren Kostenblöcke.
 
 **Zum Anbieter:** https://www.avigilon.com/
 
 ## Alternativen zu Avigilon
 
-- [Milestone Systems](/tools/milestone-systems/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Axis Communications](/tools/axis-communications/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Verkada: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Genetec: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Milestone Systems](/tools/milestone-systems/): starker Vergleich für offene Video-Management-Architekturen und Integrationen.
+- [Axis Communications](/tools/axis-communications/): naheliegend, wenn Kamerahardware und Netzwerkvideo im Mittelpunkt stehen.
+- Verkada: interessant für cloudzentrierte Standortverwaltung und schnelle Rollouts.
+- Genetec: relevant für Enterprise-Sicherheitsplattformen mit breiterer physischer Security-Abdeckung.
 
 ## Redaktionelle Einschätzung
 
@@ -66,12 +74,12 @@ Avigilon ist ein professionelles Sicherheitssystem, kein allgemeines Video-Tool.
 
 **Ist Avigilon für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Nur begrenzt. Avigilon ist kein Einsteiger-Tool zum Ausprobieren, sondern ein professionelles Sicherheitssystem, das Planung, Rechtekonzept und Betrieb braucht.
 
 **Wann lohnt sich Avigilon besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Avigilon lohnt sich, wenn viele Kameras, kritische Bereiche und regelmäßige Vorfallprüfung zusammenkommen. Je wichtiger Nachvollziehbarkeit und schnelle Suche im Archiv sind, desto eher zahlt sich ein professionelles System aus.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Vor dem Einsatz müssen Rechtsgrundlage, Beschilderung, Speicherfristen, Rollen, Exportrechte und Verantwortlichkeiten geklärt sein. Besonders kritisch sind Gesichtserkennung, Arbeitsbereiche und jede Form automatisierter Auswertung.

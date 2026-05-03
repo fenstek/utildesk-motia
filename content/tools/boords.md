@@ -44,48 +44,50 @@ Zusätzlich ist bei Boords der Kontext wichtig: Manche Teams nutzen solche Werkz
 
 ## Workflow-Fit
 
-Boords passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+Boords passt am besten in Workflows, in denen Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Boords arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
 ## Qualitätssicherung
 
-Wenn der Clip ohne Erklärung verständlich bleibt, ist das Werkzeug richtig eingebettet. Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+Bei Boords sollte die Prüfung mit einem realen Beispiel beginnen: ob ein Clip ohne zusätzliche Erklärung verständlich, sauber geschnitten und technisch brauchbar ist. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
 
 ## Datenschutz & Betriebsfragen
 
-Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
+Bei Boords geht es vor allem um Rohvideos, Bilder, Stimmen, Markenmaterial, Projektdateien und Freigabestände. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Im Katalog ist Boords mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+Im Katalog ist Boords mit dem Preismodell **Freemium** geführt. Für eine belastbare Entscheidung zählen hier vor allem Exportlimits, Auflösung, Stock-Medien, Teamfunktionen, Speicher und Produktionsfrequenz; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
 **Zum Anbieter:** https://boords.com/
 
 ## Alternativen zu Boords
 
-- [Milanote](/tools/milanote/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Storyboarder](/tools/storyboarder/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Celtx](/tools/celtx/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Canva](/tools/canva/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Figma](/tools/figma/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Milanote](/tools/milanote/): stärker, wenn visuelle Planung, Moodboards und Projektstruktur für kreative und konzeptionelle Arbeit gefragt ist.
+- [Storyboarder](/tools/storyboarder/): passender, wenn ein anderer Schwerpunkt als bei Boords im Vordergrund steht.
+- [Celtx](/tools/celtx/): prüfen, wenn ein anderer Schwerpunkt als bei Boords relevant ist.
+- [Canva](/tools/canva/): prüfen, wenn Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup wichtiger ist.
+- [Figma](/tools/figma/): naheliegend, falls UI-Design, Prototyping, Designsysteme und Produktteams im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 
-Boords ist dann eine gute Wahl, wenn Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
+Boords ist dann eine gute Wahl, wenn Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
 **Ist Boords für Einsteiger geeignet?**
 
-Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
+Boords ist für Einsteiger geeignet, wenn Projektumfang und Qualitätsanspruch realistisch bleiben. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
 **Wann lohnt sich Boords besonders?**
 
-Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
+Boords lohnt sich besonders, wenn Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
+Vor dem Einsatz prüfen: Bildrechte, Ton, Exportprofil, Untertitel, Freigaben und Archivierung. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Boords sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 **Was ist der häufigste Fehler?**
 
-Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
+Der häufigste Fehler ist, Effekte oder KI-Bewegung wichtiger zu nehmen als Story, Ton und klare Freigabe. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Boords sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

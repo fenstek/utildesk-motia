@@ -16,7 +16,9 @@ Passend für Patentabteilungen, R&D, Legal, Competitive Intelligence und technol
 
 ## Für wen ist Derwent Innovation geeignet?
 
-Derwent Innovation passt vor allem zu Teams und Einzelpersonen, die ein Patent- und IP-Rechercheplattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Derwent Innovation richtet sich an IP-Abteilungen, Patentanwälte, R&D-Teams und Competitive-Intelligence-Verantwortliche, die Patentdaten professionell auswerten müssen. Es ist besonders relevant, wenn Recherche, Technologiebeobachtung und strategische Entscheidungen regelmäßig zusammenlaufen.
+
+Für gelegentliche Patentsuchen ist die Plattform wahrscheinlich zu spezialisiert. Der Mehrwert entsteht bei Tiefe: normalisierte Patentfamilien, präzisere Suchlogik, Wettbewerbsanalysen, Monitoring und exportierbare Entscheidungsgrundlagen.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Derwent Innovation passt vor allem zu Teams und Einzelpersonen, die ein Patent- 
 - Wettbewerber und Technologiefelder beobachten
 - Freedom-to-operate- oder Prior-Art-Recherchen vorbereiten
 - IP-Daten für Strategieentscheidungen auswerten
+- Suchprofile für laufendes Technologie-Monitoring pflegen
+- Patentfamilien und Anmeldeaktivität für Roadmaps interpretieren
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Derwent Innovation passt vor allem zu Teams und Einzelpersonen, die ein Patent- 
 
 ## Workflow-Fit
 
-Derwent Innovation ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Derwent Innovation passt in strukturierte IP-Prozesse: Recherchefrage klären, Suchstrategie dokumentieren, Ergebnisse filtern, relevante Familien prüfen und Erkenntnisse für Legal, Produkt oder Forschung aufbereiten. Die Plattform sollte dabei nicht nur Suchmaschine sein, sondern Teil eines nachvollziehbaren Research-Protokolls.
+
+Wichtig ist, dass fachliche Interpretation und rechtliche Bewertung getrennt bleiben. Das Tool liefert Daten und Analysezugang, aber keine belastbare Rechtsmeinung.
 
 ## Datenschutz & Daten
 
@@ -47,16 +53,18 @@ IP-Recherchen können strategische Entwicklungsfelder offenlegen. Suchprofile, E
 
 ## Preise & Kosten
 
-Im Katalog ist Derwent Innovation mit dem Preismodell **Individuelles Angebot** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Derwent Innovation ist im Katalog als **Individuelles Angebot** geführt. Die Kosten hängen typischerweise von Nutzerzahl, Modulen, Datenzugriff, Monitoring-Funktionen und Support ab.
+
+Für die Entscheidung sollte man nicht nur den Lizenzpreis betrachten. Schulung, Suchqualität, Exportfähigkeit und die Zeitersparnis bei wiederkehrenden IP-Fragen sind mindestens genauso wichtig.
 
 **Zum Anbieter:** https://clarivate.com/intellectual-property/derwent/patent-search/
 
 ## Alternativen zu Derwent Innovation
 
-- [Patsnap](/tools/patsnap/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Innography](/tools/innography/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Wipo Patentscope](/tools/wipo-patentscope/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Google Patents](/tools/google-patents/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Patsnap](/tools/patsnap/): starker Vergleich für Patentintelligenz, Wettbewerbsanalysen und produktnahe IP-Insights.
+- [Innography](/tools/innography/): relevant für IP-Strategie, Portfolioanalyse und kommerzielle Patentbewertung.
+- [Wipo Patentscope](/tools/wipo-patentscope/): gute öffentliche Quelle für internationale Patentrecherche.
+- [Google Patents](/tools/google-patents/): schneller, kostenloser Einstieg für einfache Suchen und erste Orientierung.
 
 ## Redaktionelle Einschätzung
 
@@ -66,12 +74,12 @@ Derwent Innovation ist ein Spezialwerkzeug für ernsthafte IP-Arbeit. Für einfa
 
 **Ist Derwent Innovation für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Nur eingeschränkt. Einsteiger können damit recherchieren, aber ohne IP-Grundwissen, Suchstrategie und Verständnis für Patentfamilien wird die Plattform schnell schwer einzuordnen.
 
 **Wann lohnt sich Derwent Innovation besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Derwent Innovation lohnt sich bei wiederkehrenden, geschäftskritischen Patentfragen: Wettbewerbsbeobachtung, FTO-Vorbereitung, Technologie-Scouting oder Portfolioentscheidungen.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Vor dem Einsatz sollten Suchverantwortung, Dokumentationsstandard, Exportformate, Vertraulichkeit und die Übergabe an juristische Prüfung geklärt sein. Besonders sensibel sind Suchprofile, die zukünftige Entwicklungsrichtungen verraten.

@@ -16,7 +16,9 @@ Geeignet für Sozialforschung, UX-Research, Bildung, Evaluation und Mixed-Method
 
 ## Für wen ist Dedoose geeignet?
 
-Dedoose passt vor allem zu Teams und Einzelpersonen, die ein Qualitative-Analyse-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Dedoose eignet sich für Forschende, UX-Research-Teams, Evaluationen und Hochschulprojekte, die qualitative Daten nicht nur sammeln, sondern sauber codieren und mit quantitativen Merkmalen verbinden wollen. Besonders passend ist es für Mixed-Methods-Projekte mit Interviews, offenen Antworten, Feldnotizen und Fallmerkmalen.
+
+Nicht jedes kleine Interviewprojekt braucht Dedoose. Wenn nur wenige Texte markiert werden sollen, können leichtere Tools genügen. Der Mehrwert entsteht bei Team-Coding, Codebook-Pflege, Vergleichbarkeit und Auswertung über mehrere Datenarten hinweg.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Dedoose passt vor allem zu Teams und Einzelpersonen, die ein Qualitative-Analyse
 - Qualitative und quantitative Merkmale verbinden
 - Team-Coding und Konsistenz prüfen
 - Ergebnisse visualisieren und exportieren
+- Codebooks über mehrere Forschende hinweg pflegen
+- Fallvergleiche nach Gruppen, Segmenten oder demografischen Variablen auswerten
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Dedoose passt vor allem zu Teams und Einzelpersonen, die ein Qualitative-Analyse
 
 ## Workflow-Fit
 
-Dedoose ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Dedoose passt in den Auswertungsteil eines Forschungsprozesses: Material vorbereiten, Anonymisierung prüfen, Codebook anlegen, Pilot-Coding durchführen, Abweichungen besprechen und erst dann breit codieren. Das Tool kann Struktur geben, ersetzt aber keine methodische Entscheidung.
+
+Besonders wichtig ist ein sauberer Start. Wer Codes, Fälle und Deskriptoren zu spät ordnet, muss später mühsam nacharbeiten und gefährdet Vergleichbarkeit.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Forschungsdaten können sensible Aussagen, Namen oder demografische Merkmale ent
 
 ## Preise & Kosten
 
-Im Katalog ist Dedoose mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Dedoose ist im Katalog als **Je nach Plan** geführt. Für die Kostenbewertung zählen Nutzerzahl, Projektlaufzeit, Teamfunktionen, Exportmöglichkeiten und die Frage, ob Studierende oder externe Mitwirkende zeitweise Zugriff benötigen.
+
+Bei Forschungsprojekten sollte außerdem eingeplant werden, wie lange Daten nach Projektende zugänglich bleiben müssen und ob Exporte für Archivierung oder Replikation ausreichen.
 
 **Zum Anbieter:** https://www.dedoose.com/
 
 ## Alternativen zu Dedoose
 
-- [Atlas Ti](/tools/atlas-ti/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Nvivo](/tools/nvivo/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Maxqda](/tools/maxqda/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Taguette](/tools/taguette/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Transana: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Atlas Ti](/tools/atlas-ti/): stark für umfangreiche qualitative Analyse und etablierte Forschungsworkflows.
+- [Nvivo](/tools/nvivo/): verbreitet in Hochschulen und größeren Forschungsprojekten mit vielen Datentypen.
+- [Maxqda](/tools/maxqda/): sehr ausgereift für qualitative und Mixed-Methods-Analyse im deutschsprachigen Raum.
+- [Taguette](/tools/taguette/): schlanker und offener, wenn einfache qualitative Codierung genügt.
+- Transana: besonders relevant für Video-, Audio- und Transkriptanalyse.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ Dedoose ist stark, wenn qualitative Forschung strukturiert und teamfähig werden
 
 **Ist Dedoose für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Dedoose ist lernbar, aber methodische Grundlagen sind wichtiger als Klickwissen. Einsteiger sollten mit kleinem Material, einem Pilot-Codebook und klarer Dokumentation starten.
 
 **Wann lohnt sich Dedoose besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Dedoose lohnt sich bei Projekten, in denen qualitative Aussagen mit Fallmerkmalen, Gruppen oder quantitativen Variablen ausgewertet werden. Auch Team-Coding und Konsistenzprüfungen sprechen für das Tool.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Vor dem Einsatz sollten Anonymisierung, Einwilligungen, Rollen, Exportformate und Backup-Strategie geklärt sein. Außerdem braucht das Team ein gemeinsames Codebook und Regeln für strittige Codierungen.

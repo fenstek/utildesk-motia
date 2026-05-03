@@ -16,14 +16,17 @@ Gut geeignet für Forschende, Analysten, Studierende und Teams, die Literatur sy
 
 ## Für wen ist Elicit geeignet?
 
-Elicit passt vor allem zu Teams und Einzelpersonen, die ein Recherche- und Literature-Review-Tool nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Elicit ist besonders geeignet für Forschende, Studierende, Analysten und Evidence-Teams, die wissenschaftliche Literatur schneller vorsortieren möchten. Das Tool hilft, aus einer Forschungsfrage relevante Paper, Kernaussagen und Vergleichstabellen abzuleiten, bevor die eigentliche methodische Prüfung beginnt.
+
+Der beste Fit liegt bei frühen Review-Phasen: Themen sondieren, Suchbegriffe schärfen, Paper priorisieren und Extraktionen vorbereiten. Für formale systematische Reviews, medizinische Evidenz oder regulatorische Entscheidungen ersetzt Elicit keine dokumentierte Suchstrategie, Qualitätsbewertung oder manuelle Kontrolle der Originalquellen.
 
 ## Typische Einsatzszenarien
 
-- Forschungsfragen mit passenden Papers verbinden
-- Paper-Tabellen mit Kernaussagen aufbauen
-- Studien nach Methoden, Populationen oder Ergebnissen vergleichen
-- Literatur vor einer tieferen manuellen Prüfung priorisieren
+- **Forschungsfrage schärfen:** Aus einer breiten Idee konkrete Suchrichtungen, Synonyme und relevante Paper ableiten.
+- **Trefferlisten vorsortieren:** Große Mengen wissenschaftlicher Literatur schneller nach Relevanz, Methode oder Ergebnis gruppieren.
+- **Extraktionstabellen vorbereiten:** Aussagen zu Population, Intervention, Datensatz, Methode oder Ergebnis strukturiert nebeneinanderstellen.
+- **Literature Reviews planen:** Lücken, wiederkehrende Begriffe und zentrale Autorengruppen erkennen.
+- **Analysten-Briefings:** Wissenschaftliche Quellen für Markt-, Policy- oder Produktfragen in eine erste Übersicht bringen.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Elicit passt vor allem zu Teams und Einzelpersonen, die ein Recherche- und Liter
 
 ## Workflow-Fit
 
-Elicit ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Elicit gehört an den Anfang und in die Mitte einer Literaturrecherche, nicht ans Ende. Ein guter Ablauf ist: Forschungsfrage formulieren, erste Paper sammeln, Extraktionen prüfen, relevante Quellen in einen Literaturmanager übernehmen und danach die Originaltexte methodisch bewerten.
+
+Für Teams ist wichtig, dass Elicit-Ausgaben nicht als finale Evidenz behandelt werden. Extraktionen können falsch, unvollständig oder zu grob sein. Belastbare Arbeit entsteht erst, wenn Suchstrategie, Ausschlusskriterien, Screening und Qualitätsbewertung dokumentiert werden.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ Bei Forschungsprojekten können Fragestellungen, Hypothesen und unveröffentlich
 
 ## Preise & Kosten
 
-Im Katalog ist Elicit mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Elicit mit dem Preismodell **Je nach Plan** geführt. Für die Auswahl sind Such- und Extraktionslimits, Exportformate, Teamfunktionen, Abdeckung der eigenen Disziplin und die Einbindung in bestehende Literaturverwaltungsprozesse entscheidend. Bei intensiver Review-Arbeit zählt vor allem, ob Elicit manuelle Screening-Zeit tatsächlich reduziert.
 
 **Zum Anbieter:** https://elicit.com/
 
 ## Alternativen zu Elicit
 
-- [Research Rabbit](/tools/research-rabbit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Consensus](/tools/consensus/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Scholarcy](/tools/scholarcy/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Zotero](/tools/zotero/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Vosviewer](/tools/vosviewer/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Research Rabbit](/tools/research-rabbit/): besser für Zitationsnetzwerke und visuelle Entdeckung verwandter Paper.
+- [Consensus](/tools/consensus/): fokussiert stärker auf beantwortbare Forschungsfragen und zusammengefasste Studienlage.
+- [Scholarcy](/tools/scholarcy/): nützlich zum schnellen Zusammenfassen einzelner Paper und Extrahieren von Kernaussagen.
+- [Zotero](/tools/zotero/): Literaturmanager für Sammlung, Metadaten, PDFs und Zitationen, nicht primär für KI-Extraktion.
+- [Vosviewer](/tools/vosviewer/): Spezialwerkzeug für bibliometrische Karten, Co-Authorship und Keyword-Cluster.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ Elicit ist stark als Recherche-Beschleuniger, nicht als Wahrheitsmaschine. Die b
 
 **Ist Elicit für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, wenn Einsteiger verstehen, dass Elicit Recherche vorbereitet und nicht abschließt. Es kann helfen, erste Paper zu finden und eine Fragestellung zu strukturieren; die Bewertung der Quellen bleibt aber notwendig.
 
 **Wann lohnt sich Elicit besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Elicit lohnt sich besonders bei Literaturüberblicken, frühen Review-Phasen und wiederkehrender wissenschaftlicher Recherche. Für eine einzelne bekannte Quelle reicht oft ein normaler Literaturmanager oder eine direkte Datenbanksuche.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Quellenabdeckung, Exportwege, Nachvollziehbarkeit, methodische Dokumentation und manuelle Prüfung. Bei medizinischen, juristischen oder regulatorischen Aussagen sollten Elicit-Ergebnisse nie ungeprüft übernommen werden.

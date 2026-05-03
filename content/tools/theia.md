@@ -16,14 +16,17 @@ Geeignet für Plattformteams, Tool-Hersteller und Organisationen, die eigene IDE
 
 ## Für wen ist Theia geeignet?
 
-Theia passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-IDE-Framework nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Theia ist geeignet für Plattformteams, Tool-Hersteller, Enterprise-IT und Open-Source-Projekte, die eine eigene Entwicklerumgebung bauen möchten. Es ist weniger ein Download für einzelne Entwickler, sondern ein Framework für Cloud-IDEs, Desktop-Workbenches und spezialisierte Developer-Portale.
+
+Der Einsatz lohnt sich, wenn Kontrolle über Extensions, Branding, Workspaces, Authentifizierung und Integrationen wichtig ist. Wer einfach nur programmieren will, ist mit VS Code, JetBrains oder einer fertigen Cloud-IDE schneller. Theia ist spannend, wenn die IDE selbst Teil des Produkts oder der Plattform ist.
 
 ## Typische Einsatzszenarien
 
-- Cloud- oder Desktop-IDEs auf eigener Basis entwickeln
-- Erweiterbare Developer-Portale bauen
-- Spezialisierte Toolchains in eine Workbench integrieren
-- VS-Code-nahe Konzepte mit eigener Kontrolle nutzen
+- **Eigene Cloud-IDE bauen:** Browserbasierte Entwicklungsumgebungen für interne Plattformen oder Kunden bereitstellen.
+- **Spezialisierte Workbenches:** Domänentools, SDKs oder proprietäre Toolchains in eine IDE-Oberfläche integrieren.
+- **Developer-Portale:** Workspaces, Auth, Vorlagen und Entwicklungsumgebungen zentral orchestrieren.
+- **Produktisierte IDEs:** Eine angepasste Entwicklungsumgebung als Bestandteil eines Softwareprodukts ausliefern.
+- **Kontrollierte Extension-Strategie:** VS-Code-nahe Konzepte nutzen, aber Governance und Distribution selbst steuern.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Theia passt vor allem zu Teams und Einzelpersonen, die ein Open-Source-IDE-Frame
 
 ## Workflow-Fit
 
-Theia ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Theia passt in Plattform- und Produktentwicklung, nicht nur in den persönlichen Editor-Workflow. Ein guter Ablauf ist: Anforderungen an Workspaces, Laufzeiten, Extensions, Auth und Sicherheit definieren, dann eine angepasste IDE bauen und sie wie ein eigenes Produkt betreiben.
+
+Besonders wichtig sind Wartung und Update-Strategie. Eine Theia-basierte Umgebung muss Extensions, Browser, Container, Terminalzugriff und Nutzerrechte zuverlässig verwalten. Der Nutzen liegt in Kontrolle und Anpassbarkeit; der Preis ist Engineering-Verantwortung.
 
 ## Datenschutz & Daten
 
@@ -47,16 +52,16 @@ Bei Cloud-IDEs sind Quellcode, Terminalzugriff und Secrets besonders kritisch. I
 
 ## Preise & Kosten
 
-Im Katalog ist Theia mit dem Preismodell **Open Source** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Theia mit dem Preismodell **Open Source** geführt. Kostenloser Quellcode bedeutet aber nicht kostenloser Betrieb: Entwicklung, Hosting, Security, Extension-Kompatibilität, Support und Updates müssen eingeplant werden. Theia lohnt sich, wenn diese Investition durch Plattformkontrolle gerechtfertigt ist.
 
 **Zum Anbieter:** https://theia-ide.org/
 
 ## Alternativen zu Theia
 
-- Vscode: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Eclipse Che](/tools/eclipse-che/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Replit](/tools/replit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Codespaces: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- Vscode: beste Wahl für einzelne Entwickler, die eine fertige, breite IDE suchen.
+- [Eclipse Che](/tools/eclipse-che/): stärker als Cloud-Workspace-Plattform für Kubernetes-nahe Entwicklungsumgebungen.
+- [Replit](/tools/replit/): fertige browserbasierte Entwicklungsumgebung mit Hosting- und Lernfokus.
+- Codespaces: GitHub-nahe Cloud-Development-Umgebung für Repositories und Teams.
 
 ## Redaktionelle Einschätzung
 
@@ -66,12 +71,12 @@ Theia ist stark, wenn eine eigene Entwicklerplattform entstehen soll. Für norma
 
 **Ist Theia für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Für normale Coding-Einsteiger eher nicht. Theia ist sinnvoll für Teams, die Entwicklerumgebungen bauen oder betreiben wollen. Einzelne Entwickler fahren mit fertigen IDEs meist besser.
 
 **Wann lohnt sich Theia besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Theia lohnt sich, wenn eine eigene IDE-Erfahrung, kontrollierte Extensions, Cloud-Workspaces oder eine spezialisierte Toolchain Teil des Produkts sind. Für Standardentwicklung ist der Aufwand oft zu hoch.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Sicherheitsmodell, Terminal- und Dateizugriff, Extension-Management, Authentifizierung, Updates, Hosting und Support. Eine IDE-Plattform braucht denselben Produktanspruch wie andere interne Entwicklerwerkzeuge.

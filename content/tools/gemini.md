@@ -18,7 +18,7 @@ Für die Bewertung von Gemini hilft eine einfache Frage: Würde man das Tool auc
 
 ## Der praktische Kern
 
-Bei Assistenten zählt weniger die Demo-Frage als die Frage, ob Antworten, Quellen, Freigaben und Wiederholbarkeit in den Alltag passen.
+Bei Assistenten zählt weniger die Demo-Frage als die Frage, ob Antworten, Quellen, Freigaben und Wiederholbarkeit in den Alltag passen. Für Gemini sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 Bei Gemini zählt nicht nur der Funktionsumfang. Wichtiger ist, ob das Tool in vorhandene Routinen passt und dort Nacharbeit reduziert.
 
@@ -46,48 +46,50 @@ Zusätzlich ist bei Gemini der Kontext wichtig: Manche Teams nutzen solche Werkz
 
 ## Workflow-Fit
 
-Gemini passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+Gemini passt am besten in Workflows, in denen Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Google-Workflows nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Gemini arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
 ## Qualitätssicherung
 
-Ein guter Test ist nicht die spektakulärste Antwort, sondern ein wiederholbarer Arbeitsfall mit echten Randbedingungen. Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+Bei Gemini sollte die Prüfung mit einem realen Beispiel beginnen: ob Antworten bei echten Randbedingungen wiederholbar, belegbar und nützlich bleiben. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
 
 ## Datenschutz & Betriebsfragen
 
-Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
+Bei Gemini geht es vor allem um Prompts, Chatverläufe, Dokumente, persönliche Angaben und eingebundene Arbeitskontexte. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Im Katalog ist Gemini mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+Im Katalog ist Gemini mit dem Preismodell **Freemium** geführt. Für eine belastbare Entscheidung zählen hier vor allem Modellzugang, Limits, Integrationen, Datenschutzoptionen und Teamverwaltung; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
 
 **Zum Anbieter:** https://gemini.google.com/
 
 ## Alternativen zu Gemini
 
-- [Claude](/tools/claude/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [ChatGPT](/tools/chatgpt/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Perplexity](/tools/perplexity/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [Kimi](/tools/kimi/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
-- [NotebookLM](/tools/notebooklm/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Claude](/tools/claude/): stärker, wenn Schreiben, Analyse, Code, Rechercheunterstützung und lange Dokumentkontexte gefragt ist.
+- [ChatGPT](/tools/chatgpt/): passender, wenn der Schwerpunkt auf Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit liegt.
+- [Perplexity](/tools/perplexity/): guter Vergleich für Teams, die schnelle Recherche mit Quellenhinweisen und Web-Kontext brauchen.
+- [Kimi](/tools/kimi/): prüfen, wenn KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben wichtiger ist.
+- [NotebookLM](/tools/notebooklm/): naheliegend, falls Recherche- und Notizassistent, der Antworten aus hochgeladenen Quellen und Dokumentensammlungen ableitet im Vordergrund steht.
 
 ## Redaktionelle Einschätzung
 
-Gemini ist dann eine gute Wahl, wenn Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Google-Workflows tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
+Gemini ist dann eine gute Wahl, wenn Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Google-Workflows tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
 **Ist Gemini für Einsteiger geeignet?**
 
-Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
+Gemini ist für Einsteiger leicht zugänglich, aber nur mit Quellenkritik produktiv belastbar. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
 **Wann lohnt sich Gemini besonders?**
 
-Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
+Gemini lohnt sich besonders, wenn Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Google-Workflows regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
+Vor dem Einsatz prüfen: Datenzugriff, Quellen, Modellgrenzen, Freigaben, Exporte und Review-Verantwortung. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Gemini sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 **Was ist der häufigste Fehler?**
 
-Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
+Der häufigste Fehler ist, eine flüssige Antwort automatisch als richtige oder vollständige Antwort zu behandeln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Gemini sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

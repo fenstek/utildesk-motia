@@ -16,7 +16,9 @@ Passend für kleine und mittlere Teams, Operations, Support und interne Projektk
 
 ## Für wen ist Flock geeignet?
 
-Flock passt vor allem zu Teams und Einzelpersonen, die ein Team-Messenger nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Flock eignet sich für kleine und mittlere Teams, die Kommunikation aus langen E-Mail-Ketten lösen und in Kanäle, Direktnachrichten und einfache Aufgaben überführen möchten. Es passt besonders zu operativen Teams, die schnelle Abstimmung brauchen, aber kein überladenes Enterprise-System einführen wollen.
+
+Weniger passend ist Flock, wenn bereits Microsoft Teams, Slack oder ein stark integriertes Workspace-Ökosystem gesetzt ist. Dann müsste der Wechsel einen klaren Vorteil bringen, sonst entsteht nur ein weiterer Chat-Ort.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Flock passt vor allem zu Teams und Einzelpersonen, die ein Team-Messenger nicht 
 - Schnelle Abstimmungen und Aufgaben festhalten
 - Projektkommunikation aus E-Mail herauslösen
 - Benachrichtigungen und einfache Integrationen bündeln
+- Kleine operative Teams mit klaren Kanälen koordinieren
+- Wiederkehrende Abstimmungen in einfache Aufgaben überführen
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Flock passt vor allem zu Teams und Einzelpersonen, die ein Team-Messenger nicht 
 
 ## Workflow-Fit
 
-Flock ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Flock passt in Teams, die klare Kanalregeln etablieren: welche Themen gehören in welchen Raum, wann wird eine Aufgabe erstellt, welche Entscheidungen müssen dokumentiert werden und wann bleibt E-Mail sinnvoller.
+
+Ohne diese Regeln verlagert Flock nur die Unordnung. Mit Kanaldisziplin kann es schnelle Kommunikation, kurze Entscheidungen und einfache operative Nachverfolgung gut bündeln.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Team-Chats enthalten Entscheidungen, Kundendaten und interne Abstimmungen. Aufbe
 
 ## Preise & Kosten
 
-Im Katalog ist Flock mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Flock ist im Katalog als **Je nach Plan** geführt. Relevant sind Nutzerzahl, Nachrichtenhistorie, Speicher, Integrationen, Gästezugriff und Admin-Funktionen.
+
+Vor einem Wechsel sollte man prüfen, ob bestehende Tools bereits bezahlt werden. Ein günstiger Messenger wird teuer, wenn er parallel zu Teams, Slack oder Projektmanagement ohne klare Rolle läuft.
 
 **Zum Anbieter:** https://www.flock.com/
 
 ## Alternativen zu Flock
 
-- Slack: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Microsoft Teams](/tools/microsoft-teams/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Discord: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Chanty](/tools/chanty/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Rocket Chat: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- Slack: stärkeres Ökosystem für Integrationen, Communities und moderne Teamkommunikation.
+- [Microsoft Teams](/tools/microsoft-teams/): naheliegend, wenn Microsoft 365, Meetings und Dateien zentral sind.
+- Discord: gut für Community- und Voice-nahe Räume, weniger klassisches Business-Management.
+- [Chanty](/tools/chanty/): schlanker Vergleich für einfache Team-Chats mit Aufgabenbezug.
+- Rocket Chat: interessant für Teams mit Self-Hosting- oder stärkeren Kontrollanforderungen.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ Flock ist sinnvoll, wenn Kommunikation zentraler und schneller werden soll. Ohne
 
 **Ist Flock für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, Flock ist leicht zu verstehen. Einsteiger sollten aber früh Kanalregeln festlegen, sonst wird der Chat schnell unübersichtlich.
 
 **Wann lohnt sich Flock besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Flock lohnt sich, wenn ein Team viele kurze Abstimmungen hat und E-Mail dafür zu langsam ist. Besonders nützlich ist es, wenn Aufgaben direkt aus Gesprächen entstehen.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Gästezugriff, Datenaufbewahrung, Exportmöglichkeiten, Benachrichtigungsregeln und die Frage, welche Entscheidungen zusätzlich in Projekt- oder Wissenssystemen dokumentiert werden müssen.

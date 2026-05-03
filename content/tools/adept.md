@@ -16,14 +16,17 @@ Relevant ist Adept vor allem für Teams, die beobachten wollen, wohin agentische
 
 ## Für wen ist Adept geeignet?
 
-Adept passt vor allem zu Teams und Einzelpersonen, die ein KI-Agenten-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Adept ist vor allem für Produkt-, Operations- und Automatisierungsteams interessant, die verstehen wollen, wie KI-Agenten reale Software bedienen können. Es geht weniger um einen weiteren Chatassistenten, sondern um die Frage, wie Modelle Schritte in Oberflächen, Webanwendungen und Business-Tools ausführen oder koordinieren.
+
+Geeignet ist Adept als strategischer Referenzpunkt für Teams, die RPA, agentische Workflows und KI-gestützte Prozessautomatisierung vergleichen. Für den produktiven Einsatz braucht es sehr klare Aufgaben, begrenzte Berechtigungen und menschliche Freigaben. Wer nur Texte schreiben oder einfache Fragen beantworten will, ist mit klassischen Assistenten besser bedient.
 
 ## Typische Einsatzszenarien
 
-- Agentische Bedienung von Software-Oberflächen bewerten
-- Mehrstufige Aufgaben statt einzelner Prompts denken
-- Automatisierungsideen für interne Workflows strukturieren
-- Grenzen zwischen Chatbot, RPA und KI-Agent vergleichen
+- **Agentische Softwarebedienung bewerten:** Prüfen, welche internen Abläufe theoretisch durch Modelle gesteuert werden könnten.
+- **RPA und KI-Agenten vergleichen:** Unterschiede zwischen regelbasierten Bots, Workflow-Automation und flexibleren Agentenmodellen herausarbeiten.
+- **Mehrstufige Aufgaben modellieren:** Prozesse in Ziele, Zwischenschritte, Ausnahmen und Freigaben zerlegen.
+- **Automatisierungsstrategie vorbereiten:** Use Cases priorisieren, bei denen Oberflächenarbeit viel Zeit bindet.
+- **Governance-Fragen klären:** Berechtigungen, Audit Trails, menschliche Kontrolle und Fehlerfälle vor einer Einführung definieren.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Adept passt vor allem zu Teams und Einzelpersonen, die ein KI-Agenten-Plattform 
 
 ## Workflow-Fit
 
-Adept ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Adept passt nicht in jeden Alltagsworkflow, sondern eher in die Planungs- und Bewertungsphase agentischer Automatisierung. Ein sinnvoller Ablauf beginnt mit der Prozessaufnahme: Welche Schritte sind wiederholbar, welche Systeme werden berührt, welche Entscheidungen brauchen menschliche Freigabe und welche Fehler wären kritisch?
+
+Erst danach kann ein Agentenansatz seriös bewertet werden. Gerade weil Adept für ausführende KI steht, müssen Rechte, Protokollierung und Stop-Mechanismen vor der technischen Begeisterung kommen. Der Produktwert liegt nicht in Magie, sondern darin, konkrete Softwarehandlungen kontrollierbar zu automatisieren.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ Agenten, die Software bedienen, können sensible Oberflächen und Daten berühre
 
 ## Preise & Kosten
 
-Im Katalog ist Adept mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Adept mit dem Preismodell **Freemium** geführt. Bei agentischen Werkzeugen zählen aber nicht nur Lizenzkosten, sondern auch Integrationsaufwand, Sicherheitsprüfung, Prozessanalyse und laufendes Monitoring. Vor einer Einführung sollte geprüft werden, ob ein konkretes Produktangebot, eine API oder ein Partnerweg zum gewünschten Use Case passt.
 
 **Zum Anbieter:** https://www.adept.ai/
 
 ## Alternativen zu Adept
 
-- [Manus](/tools/manus/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Devin](/tools/devin/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Openhands](/tools/openhands/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Uipath](/tools/uipath/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [N8n](/tools/n8n/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Manus](/tools/manus/): eher allgemeiner KI-Agent für mehrstufige Aufgaben und Recherche im offenen Arbeitskontext.
+- [Devin](/tools/devin/): stärker auf Softwareentwicklung und Coding-Aufgaben ausgerichtet.
+- [Openhands](/tools/openhands/): offene Alternative für Coding-Agenten in kontrollierbaren Entwicklungsumgebungen.
+- [Uipath](/tools/uipath/): etablierte Enterprise-RPA-Plattform mit Governance, Bot-Betrieb und Prozessautomatisierung.
+- [N8n](/tools/n8n/): Workflow-Automation für APIs und Dienste, stärker regel- und integrationsbasiert als agentisch.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ Adept ist weniger eine einfache Tool-Empfehlung als ein Signal: Software wird zu
 
 **Ist Adept für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Adept ist kein klassisches Einsteiger-Tool wie ein Chatbot. Es eignet sich eher für Teams, die bereits Prozesse, Automatisierung oder Agentenarchitekturen bewerten und die Risiken ausführender KI verstehen wollen.
 
 **Wann lohnt sich Adept besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Adept lohnt sich als Orientierung, wenn viele manuelle Schritte in Softwareoberflächen anfallen und klassische API-Automation oder RPA an Grenzen stößt. Der Nutzen hängt stark davon ab, ob der konkrete Ablauf sicher begrenzbar ist.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Systemzugriffe, Rollen, Auditierbarkeit, menschliche Freigaben, Fehlerbehandlung und Datenschutz. Ein Agent, der handeln kann, braucht strengere Regeln als ein Assistent, der nur Text vorschlägt.

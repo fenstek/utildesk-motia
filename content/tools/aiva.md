@@ -16,7 +16,9 @@ Passend für Creator, Game-Prototypen, Videos, Präsentationen und Teams ohne ei
 
 ## Für wen ist AIVA geeignet?
 
-AIVA passt vor allem zu Teams und Einzelpersonen, die ein KI-Musikgenerator nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+AIVA eignet sich für Creator, Video-Teams, Game-Prototypen und kleine Studios, die schnell musikalische Richtungen ausprobieren wollen. Besonders nützlich ist das Tool, wenn vor einer finalen Vertonung verschiedene Stimmungen, Tempi oder Genres getestet werden müssen.
+
+Für Musik, die eine Marke langfristig prägen soll, ersetzt AIVA keine Komponistin, keinen Sound Designer und kein sauberes Mixing. Es ist eher ein Werkzeug für Skizzen, Mood-Tracks und lizenzierbare Hintergrundmusik als für unverwechselbare Klangidentität.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ AIVA passt vor allem zu Teams und Einzelpersonen, die ein KI-Musikgenerator nich
 - Soundtrack-Ideen für Games oder Demos erzeugen
 - Musikalische Varianten für Stimmungen testen
 - Kompositionsideen vor menschlicher Bearbeitung sammeln
+- Moodboards für Pitches und Storyboards hörbar machen
+- Platzhalter-Musik erzeugen, bevor Budget für Finalmusik freigegeben wird
 
 ## Stärken
 
@@ -39,7 +43,9 @@ AIVA passt vor allem zu Teams und Einzelpersonen, die ein KI-Musikgenerator nich
 
 ## Workflow-Fit
 
-AIVA ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+AIVA passt gut in frühe Kreativphasen: Szene beschreiben, Stimmung wählen, mehrere Fassungen hören und die brauchbaren Motive weitergeben. Danach braucht es eine Entscheidung über Schnittlänge, Lautheit, Wiedererkennbarkeit und Rechte.
+
+In professionellen Workflows sollte AIVA nicht erst kurz vor Veröffentlichung eingesetzt werden. Besser ist es, Musik schon beim Storyboard oder Rohschnitt mitzudenken, damit Timing, Sprachanteile und Sounddesign nicht gegeneinander arbeiten.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Bei kommerzieller Nutzung sind Rechte, Lizenzen und Projektzuordnung wichtiger a
 
 ## Preise & Kosten
 
-Im Katalog ist AIVA mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+AIVA ist im Katalog als **Freemium** geführt. Entscheidend sind nicht nur die monatlichen Kosten, sondern vor allem Nutzungsrechte, Downloadformate, kommerzielle Lizenzierung und die Frage, ob Tracks öffentlich, kundenseitig oder nur intern verwendet werden dürfen.
+
+Wer regelmäßig Videos veröffentlicht, sollte prüfen, ob der Plan zur geplanten Veröffentlichungsfrequenz passt. Für einzelne Demos kann ein kleiner Einstieg reichen, für Agentur- oder Kundenarbeit sind Lizenzdetails wichtiger als der reine Preis.
 
 **Zum Anbieter:** https://www.aiva.ai/
 
 ## Alternativen zu AIVA
 
-- [Boomy](/tools/boomy/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Ecrett Music](/tools/ecrett-music/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Soundraw](/tools/soundraw/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Loudly](/tools/loudly/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Garageband](/tools/garageband/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Boomy](/tools/boomy/): stärker auf schnelle Song-Erstellung und einfache Veröffentlichungsideen ausgerichtet.
+- [Ecrett Music](/tools/ecrett-music/): pragmatisch für Hintergrundmusik in Videos, Spielen und Präsentationen.
+- [Soundraw](/tools/soundraw/): interessant, wenn Länge, Stimmung und Arrangement schnell angepasst werden sollen.
+- [Loudly](/tools/loudly/): naheliegend für Social- und Marketing-Content mit vielen Varianten.
+- [Garageband](/tools/garageband/): besser, wenn man selbst einspielen, arrangieren und lokal weiterproduzieren möchte.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ AIVA ist gut für schnelle musikalische Rohideen. Für markenprägende Musik sol
 
 **Ist AIVA für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, für erste Musikentwürfe ist AIVA leicht zugänglich. Einsteiger sollten aber früh lernen, Lizenzbedingungen zu lesen und Tracks im Kontext des Videos zu prüfen, nicht nur isoliert anzuhören.
 
 **Wann lohnt sich AIVA besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+AIVA lohnt sich, wenn regelmäßig Stimmungsvarianten gebraucht werden und ein kompletter Kompositionsprozess zu teuer oder zu langsam wäre. Besonders stark ist es für Prototypen, interne Präsentationen und wiederkehrende Content-Formate.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Vor dem Einsatz sollten kommerzielle Rechte, Attribution, Downloadformate und die Weitergabe an Kunden geklärt sein. Außerdem lohnt sich ein Hörtest auf generische Passagen, unpassende Dynamik und Konflikte mit Sprecherstimmen.

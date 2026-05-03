@@ -16,14 +16,17 @@ Gut geeignet für Recherche, Lernen, Briefings, redaktionelle Vorbereitung und i
 
 ## Für wen ist NotebookLM geeignet?
 
-NotebookLM passt vor allem zu Teams und Einzelpersonen, die ein quellenbasierter Rechercheassistent nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+NotebookLM ist geeignet für Menschen, die mit einem klar abgegrenzten Quellenbestand arbeiten: Studierende, Forschende, Redaktionen, Analysten, Produktteams und alle, die aus Dokumenten, Transkripten, Links oder Notizen ein verständliches Briefing bauen müssen. Anders als ein offener Chatbot soll NotebookLM nicht frei über alles antworten, sondern auf dem Material im Notebook aufbauen.
+
+Besonders hilfreich ist es, wenn man mehrere Quellen vergleichen, Kernaussagen extrahieren, Lernmaterial vorbereiten oder aus Dokumenten Fragen ableiten möchte. Weniger passend ist NotebookLM, wenn aktuelle Websuche im Vordergrund steht oder wenn Quellen noch gar nicht gesammelt wurden.
 
 ## Typische Einsatzszenarien
 
-- Quellenpakete für ein Thema zusammenstellen
-- Dokumente zusammenfassen und Kernaussagen vergleichen
-- Fragen an eigene Materialien stellen
-- Briefings, Lernkarten oder Artikelgerüste vorbereiten
+- **Quellenpakete auswerten:** PDFs, Notizen, Webseiten oder Transkripte zu einem Thema bündeln und gezielt befragen.
+- **Briefings vorbereiten:** Kernaussagen, offene Fragen, Widersprüche und zitierfähige Stellen für Meetings oder Artikel sammeln.
+- **Lernen und Lehren:** Lernkarten, Zusammenfassungen, Fragenkataloge oder Erklärungen aus bereitgestelltem Material erzeugen.
+- **Redaktionelle Vorarbeit:** Aus Interviews, Reports oder Studien ein erstes Artikelgerüst entwickeln.
+- **Interne Wissensräume:** Projektmaterialien in einem Notebook strukturieren, damit Teams schneller wieder in den Kontext finden.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ NotebookLM passt vor allem zu Teams und Einzelpersonen, die ein quellenbasierter
 
 ## Workflow-Fit
 
-NotebookLM ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+NotebookLM passt in quellenbasierte Arbeitsabläufe: Material auswählen, Notebook sauber benennen, Quellen hochladen, Fragen stellen, Antworten gegen die Fundstellen prüfen und erst danach Texte oder Entscheidungen ableiten. Der wichtigste Schritt ist die Kuration der Quellen; schlechte oder unvollständige Materialien führen zu schwachen Antworten.
+
+Für Teams sollte klar sein, welche Dokumente in ein Notebook dürfen und wie Ergebnisse weiterverwendet werden. NotebookLM kann Recherche und Verständnis deutlich beschleunigen, aber es ersetzt nicht die Prüfung, ob eine Quelle aktuell, vollständig und für die Fragestellung geeignet ist.
 
 ## Datenschutz & Daten
 
@@ -47,17 +52,17 @@ NotebookLM arbeitet mit hochgeladenen Materialien. Interne Dokumente, Kundendate
 
 ## Preise & Kosten
 
-Im Katalog ist NotebookLM mit dem Preismodell **Freemium** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist NotebookLM mit dem Preismodell **Freemium** geführt. Entscheidend sind Quellenlimits, Dateitypen, Team- oder Workspace-Funktionen, Exportmöglichkeiten und Datenschutzregeln. Wer NotebookLM regelmäßig nutzt, sollte prüfen, ob die Grenzen für große Quellenpakete, Audio- oder Videozusammenfassungen und kollaborative Recherche ausreichen.
 
 **Zum Anbieter:** https://notebooklm.google/
 
 ## Alternativen zu NotebookLM
 
-- [Perplexity](/tools/perplexity/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Elicit](/tools/elicit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Research Rabbit](/tools/research-rabbit/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Claude](/tools/claude/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Chatgpt](/tools/chatgpt/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Perplexity](/tools/perplexity/): besser für offene Webrecherche mit sichtbaren Quellen und aktuellen Fundstellen.
+- [Elicit](/tools/elicit/): stärker auf wissenschaftliche Paper, Literaturrecherche und Extraktionstabellen fokussiert.
+- [Research Rabbit](/tools/research-rabbit/): hilfreich, wenn Paper über Zitationsnetzwerke und thematische Nachbarschaften entdeckt werden sollen.
+- [Claude](/tools/claude/): stark bei langen Dokumenten, Schreibarbeit und vorsichtigem Review, auch außerhalb eines Notebook-Konzepts.
+- [Chatgpt](/tools/chatgpt/): breiter Allzweck-Assistent für Text, Code, Analyse und flexible Aufgaben.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +72,12 @@ NotebookLM ist stark, wenn Quellenarbeit sichtbar bleiben soll. Für Utildesk-Ra
 
 **Ist NotebookLM für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, wenn bereits ein konkretes Quellenpaket vorliegt. Einsteiger sollten mit wenigen, gut ausgewählten Dokumenten starten und lernen, Antworten immer an den angegebenen Stellen zu prüfen.
 
 **Wann lohnt sich NotebookLM besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+NotebookLM lohnt sich, wenn man wiederholt mit denselben Quellen arbeitet: Seminarmaterial, Studienpakete, Interviews, Produktdokumentation oder interne Reports. Für eine schnelle Webfrage ist Perplexity oft passender.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Quellenqualität, Datenschutz, Freigabe interner Dokumente, Zitatprüfung und Exportwege. NotebookLM kann Material erklären, aber nicht garantieren, dass die ausgewählten Quellen vollständig oder objektiv sind.

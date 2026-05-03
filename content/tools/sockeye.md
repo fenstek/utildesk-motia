@@ -16,14 +16,17 @@ Passend ist Sockeye für Forschung, NLP-Teams und Entwickler mit eigener Überse
 
 ## Für wen ist Sockeye geeignet?
 
-Sockeye passt vor allem zu Teams und Einzelpersonen, die ein NMT-Toolkit nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Sockeye eignet sich für NLP-Forschende, Machine-Translation-Teams und Entwickler, die neuronale Übersetzung technisch nachvollziehen, trainieren oder evaluieren wollen. Es ist kein Tool für Nutzer, die einfach schnell einen Text übersetzen möchten, sondern ein Framework für Experimente und eigene Übersetzungspipelines.
+
+Der Einsatz lohnt sich, wenn Trainingsdaten, Evaluationsmetriken und Infrastruktur vorhanden sind. Wer keine Parallelkorpora, kein ML-Know-how und keinen Bedarf an eigener Modellkontrolle hat, fährt mit fertigen Übersetzungsdiensten deutlich besser.
 
 ## Typische Einsatzszenarien
 
-- NMT-Modelle trainieren und vergleichen
-- Übersetzungsqualität in Experimenten evaluieren
-- Forschung zu Sprachpaaren oder Modellarchitekturen unterstützen
-- Eigene Pipelines für maschinelle Übersetzung aufbauen
+- **NMT-Experimente:** Modelle für bestimmte Sprachpaare trainieren, Varianten vergleichen und Metriken auswerten.
+- **Forschung und Reproduzierbarkeit:** Architekturen, Trainingsparameter und Datensätze kontrolliert untersuchen.
+- **Domänenspezifische Übersetzung:** Eigene Korpora für Fachsprache, interne Dokumente oder Spezialdomänen vorbereiten.
+- **Pipeline-Aufbau:** Training, Evaluation und Inferenz in eigene technische Workflows integrieren.
+- **Benchmarking:** Sockeye mit anderen NMT-Toolkits oder kommerziellen Diensten vergleichen.
 
 ## Stärken
 
@@ -39,7 +42,9 @@ Sockeye passt vor allem zu Teams und Einzelpersonen, die ein NMT-Toolkit nicht a
 
 ## Workflow-Fit
 
-Sockeye ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Sockeye gehört in einen technischen ML-Workflow: Daten sammeln, bereinigen, Tokenisierung und Splits definieren, Modell trainieren, Qualität messen und Fehlerbeispiele analysieren. Die Qualität hängt weniger vom Namen des Toolkits ab als von Daten, Evaluationsdesign und Nachbearbeitung.
+
+Für produktive Übersetzung braucht es zusätzlich Monitoring, Terminologiepflege, Human Review und klare Entscheidung, wann maschineller Output veröffentlicht werden darf. Sockeye gibt Kontrolle, aber diese Kontrolle muss auch betrieben werden.
 
 ## Datenschutz & Daten
 
@@ -47,16 +52,16 @@ Wer eigene Übersetzungsmodelle trainiert, kontrolliert Daten stärker selbst, t
 
 ## Preise & Kosten
 
-Im Katalog ist Sockeye mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Im Katalog ist Sockeye mit dem Preismodell **Je nach Plan** geführt. Bei Open-Source-nahen NMT-Toolkits entstehen Kosten vor allem durch Rechenzeit, Datenaufbereitung, Engineering und Evaluation. Für viele Business-Fälle sind API-Übersetzer günstiger; Sockeye lohnt sich, wenn Modellkontrolle oder Forschung zentral ist.
 
 **Zum Anbieter:** https://awslabs.github.io/sockeye/
 
 ## Alternativen zu Sockeye
 
-- [Marian Nmt](/tools/marian-nmt/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Lingvanex](/tools/lingvanex/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Deepl](/tools/deepl/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Google Translate](/tools/google-translate/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Marian Nmt](/tools/marian-nmt/): technischer Vergleich für eigene neuronale Übersetzung und Forschung.
+- [Lingvanex](/tools/lingvanex/): fertigerer Übersetzungsdienst mit Produkt- und API-Fokus.
+- [Deepl](/tools/deepl/): starke Wahl für hochwertige Business-Übersetzung ohne eigenes Modelltraining.
+- [Google Translate](/tools/google-translate/): breiter, sofort nutzbarer Übersetzungsdienst mit großer Sprachabdeckung.
 
 ## Redaktionelle Einschätzung
 
@@ -66,12 +71,12 @@ Sockeye ist ein Werkzeug für Spezialisten. Für normale Übersetzungsworkflows 
 
 **Ist Sockeye für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Für normale Übersetzungsnutzer nein. Für Studierende oder Forschende im NLP-Bereich kann Sockeye ein gutes Lern- und Experimentierwerkzeug sein, wenn Python, ML-Grundlagen und Trainingsdaten vorhanden sind.
 
 **Wann lohnt sich Sockeye besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Sockeye lohnt sich, wenn eigene Modelle, Forschung, Benchmarking oder domänenspezifische Übersetzung im Mittelpunkt stehen. Für einzelne Texte ist DeepL, Google Translate oder ein anderer Dienst praktischer.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Trainingsdaten, Lizenzen, Hardware, Evaluationsmetriken, Terminologie, Datenschutz und menschliche Nachprüfung. Ohne gute Daten kann auch ein gutes NMT-Toolkit keine verlässliche Übersetzung liefern.

@@ -16,7 +16,9 @@ Gut für Einzelpersonen und Teams, die keine schwere Projektmanagement-Plattform
 
 ## Für wen ist Google Tasks geeignet?
 
-Google Tasks passt vor allem zu Teams und Einzelpersonen, die ein einfache Aufgabenliste nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+Google Tasks eignet sich für Menschen, die im Google-Ökosystem arbeiten und eine sehr einfache persönliche Aufgabenliste brauchen. Der Nutzen liegt in niedriger Reibung: Aufgabe aus Gmail merken, neben Kalenderterminen sehen und ohne Projektmanagement-Setup abhaken.
+
+Für Teams, komplexe Projekte oder Aufgaben mit Abhängigkeiten ist Google Tasks zu schlicht. Es ist eher ein persönlicher Erinnerungszettel als ein Arbeitssteuerungssystem.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ Google Tasks passt vor allem zu Teams und Einzelpersonen, die ein einfache Aufga
 - Einfache To-do-Listen verwalten
 - Persönliche Arbeit neben Kalenderterminen organisieren
 - Kleine Checklisten ohne Setup nutzen
+- Nachfassaufgaben direkt aus E-Mails ableiten
+- Tagesprioritäten ohne eigenes Projektboard sammeln
 
 ## Stärken
 
@@ -39,7 +43,9 @@ Google Tasks passt vor allem zu Teams und Einzelpersonen, die ein einfache Aufga
 
 ## Workflow-Fit
 
-Google Tasks ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+Google Tasks passt in persönliche Mikro-Workflows: Aus einer Mail entsteht eine Aufgabe, aus einer Aufgabe ein kurzer Tagesblock, nach Erledigung wird sie abgehakt. Der beste Einsatz bleibt bewusst klein.
+
+Sobald Aufgaben delegiert, priorisiert, berichtet oder über mehrere Personen koordiniert werden müssen, sollte man auf Todoist, Microsoft To Do, Trello, Asana oder ein anderes Teamtool wechseln.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Aufgaben können Namen, Termine und private Notizen enthalten. Workspace-Admins 
 
 ## Preise & Kosten
 
-Im Katalog ist Google Tasks mit dem Preismodell **Kostenlos** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+Google Tasks ist im Katalog als **Kostenlos** geführt und in persönliche Google-Konten beziehungsweise Google Workspace eingebettet. Zusatzkosten entstehen normalerweise nicht direkt durch Tasks.
+
+Die eigentliche Frage ist Funktionsumfang: Wenn Erinnerungen, Wiederholungen und einfache Listen reichen, ist es sehr effizient. Wenn Reporting, Automationen oder Teamrechte nötig sind, wird ein anderes Tool wichtiger.
 
 **Zum Anbieter:** https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftasks.google.com%2F&dsh=S84780699%3A1776384015389420&followup=https%3A%2F%2Ftasks.google.com%2F&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AT1y2_WcenzjXfxF9bZy7XkLkO9vWKXVapmfKtvBdFbh4sfANXkw8jfDfneVKd_7ecDn5lq5AJ6xwg
 
 ## Alternativen zu Google Tasks
 
-- [Microsoft To Do](/tools/microsoft-to-do/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Todoist](/tools/todoist/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Ticktick: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Notion: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Trello: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Microsoft To Do](/tools/microsoft-to-do/): naheliegend für Outlook- und Microsoft-365-Nutzer.
+- [Todoist](/tools/todoist/): stärker für Prioritäten, natürliche Eingabe, Projekte und persönliche Produktivität.
+- Ticktick: interessant für Aufgaben, Kalendernähe, Gewohnheiten und Pomodoro-Funktionen.
+- Notion: besser, wenn Aufgaben mit Notizen, Wissensseiten und Datenbanken zusammenlaufen.
+- Trello: sinnvoller, wenn Aufgaben visuell als Board mit Statusspalten organisiert werden sollen.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ Google Tasks ist gut, wenn es wirklich nur um persönliche To-dos geht. Für Tea
 
 **Ist Google Tasks für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+Ja, Google Tasks ist bewusst einfach. Wer Gmail und Google Kalender kennt, braucht kaum Einarbeitung.
 
 **Wann lohnt sich Google Tasks besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Es lohnt sich für persönliche Nachfassaufgaben, kleine Tageslisten und schnelle Erinnerungen aus Gmail heraus. Genau dann ist die Schlichtheit ein Vorteil.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Man sollte wissen, dass Google Tasks kaum Projektlogik bietet. Für vertrauliche Notizen, delegierte Aufgaben oder teamweite Nachverfolgung braucht es klare Grenzen oder ein anderes System.

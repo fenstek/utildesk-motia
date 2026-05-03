@@ -16,7 +16,9 @@ Passend für Data Engineering, Plattformteams, Integrationsteams und Unternehmen
 
 ## Für wen ist StreamSets geeignet?
 
-StreamSets passt vor allem zu Teams und Einzelpersonen, die ein Data-Integration-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
+StreamSets eignet sich für Data-Engineering- und Plattformteams, die Datenpipelines nicht als lose Skripte, sondern als überwachte, betriebene Infrastruktur behandeln. Besonders relevant ist es bei vielen Quellen, Streaming- oder Batch-Flows, Governance-Anforderungen und operativer Transparenz.
+
+Für einzelne Reports oder kleine Datenimporte ist StreamSets meist zu schwergewichtig. Der Nutzen entsteht, wenn Pipelines regelmäßig laufen, Fehler schnell sichtbar sein müssen und Datenflüsse nachvollziehbar dokumentiert werden sollen.
 
 ## Typische Einsatzszenarien
 
@@ -24,6 +26,8 @@ StreamSets passt vor allem zu Teams und Einzelpersonen, die ein Data-Integration
 - Batch- und Streaming-Datenflüsse verbinden
 - Quell- und Zielsysteme kontrolliert integrieren
 - DataOps-Prozesse mit Monitoring unterstützen
+- Pipeline-Drift, Schemaänderungen und Ausfälle früher erkennen
+- Datenflüsse zwischen operativen Systemen und Analytics-Plattformen standardisieren
 
 ## Stärken
 
@@ -39,7 +43,9 @@ StreamSets passt vor allem zu Teams und Einzelpersonen, die ein Data-Integration
 
 ## Workflow-Fit
 
-StreamSets ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+StreamSets passt in DataOps-Workflows, in denen Entwicklung, Betrieb und Monitoring einer Pipeline zusammengehören. Ein guter Einsatz definiert Quellen, Transformationen, Qualitätschecks, Fehlerbehandlung und Ownership für jede produktive Strecke.
+
+Schwach wird die Plattform, wenn sie nur als grafische Oberfläche für ungeklärte Datenlogik genutzt wird. Datenqualität, Lineage und Verantwortlichkeit müssen vor dem Drag-and-drop kommen.
 
 ## Datenschutz & Daten
 
@@ -47,17 +53,19 @@ Datenpipelines transportieren oft personenbezogene oder geschäftskritische Date
 
 ## Preise & Kosten
 
-Im Katalog ist StreamSets mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+StreamSets ist im Katalog als **Je nach Plan** geführt. Für die Kostenbewertung zählen Datenvolumen, Connectoren, Laufzeitumgebungen, Monitoring, Governance-Funktionen und Support.
+
+Der Business Case hängt stark davon ab, wie kritisch Pipeline-Ausfälle sind. Je teurer Datenfehler oder verspätete Lieferungen werden, desto eher lohnt sich professionelle Pipeline-Steuerung.
 
 **Zum Anbieter:** https://www.ibm.com/products/streamsets
 
 ## Alternativen zu StreamSets
 
-- [Apache Nifi](/tools/apache-nifi/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Alteryx](/tools/alteryx/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Fivetran: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- Airbyte: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
-- [Talend Data Fabric](/tools/talend-data-fabric/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Apache Nifi](/tools/apache-nifi/): starke Open-Source-Option für Flow-basierte Datenbewegung und Routing.
+- [Alteryx](/tools/alteryx/): besser für analytische, fachanwendernahe Datenaufbereitung.
+- Fivetran: naheliegend für managed ELT aus Standardquellen in Warehouses.
+- Airbyte: interessant für offene Connector-Strategien und moderne ELT-Pipelines.
+- [Talend Data Fabric](/tools/talend-data-fabric/): breiter für Enterprise-Datenintegration und Governance.
 
 ## Redaktionelle Einschätzung
 
@@ -67,12 +75,12 @@ StreamSets ist stark, wenn Datenflüsse als produktive Infrastruktur betrieben w
 
 **Ist StreamSets für Einsteiger geeignet?**
 
-Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
+StreamSets ist eher für Data-Teams als für absolute Einsteiger. Man sollte Quellen, Ziele, Schemas, Fehlerbehandlung und Betriebsanforderungen verstehen.
 
 **Wann lohnt sich StreamSets besonders?**
 
-Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+StreamSets lohnt sich, wenn Datenpipelines regelmäßig laufen, mehrere Systeme verbinden und im Fehlerfall schnell erklärbar sein müssen. Besonders stark ist es bei operativer Datenintegration.
 
 **Worauf sollte man vor dem Einsatz achten?**
 
-Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
+Wichtig sind Datenklassifizierung, Lineage, Rollen, Monitoring, Schemaänderungen und klare Ownership. Ohne diese Grundlagen wird jede Pipeline-Plattform schwer zu betreiben.
