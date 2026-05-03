@@ -5,6 +5,11 @@ import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
+import toolAddedAtManifest from "../../data/tool-added-at.json";
+import {
+  createToolAddedAtRankMap,
+  getToolSearchIndexDecision,
+} from "../../lib/searchIndexPolicy.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
 import {
@@ -19,6 +24,7 @@ import {
   extractFeatureList,
   mapToolCategoryToSchemaCategory,
 } from "../../lib/machineReadable";
+import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../lib/schema";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
@@ -31,6 +37,10 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { entry } = Astro.props;
 const { data, content } = entry;
+const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
+const searchIndexDecision = getToolSearchIndexDecision(entry, {
+  addedAtRank: toolAddedAtRankMap.get(entry.slug) ?? 0,
+});
 
 const official_url = data.official_url ? String(data.official_url) : "";
 const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
@@ -168,7 +178,8 @@ const stripMd = (text: string) =>
   text
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
-    .replace(/[`*_>#-]/g, "")
+    .replace(/[`*_>#]/g, "")
+    .replace(/(^|\s)-\s+/g, "$1")
     .replace(/\s+/g, " ")
     .trim();
 
@@ -319,9 +330,18 @@ const metaDescription = schemaDescription.length > 160
   ? `${schemaDescription.slice(0, 157).trimEnd()}...`
   : schemaDescription;
 const featureList = extractFeatureList(content);
+const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(content));
 const schemaCategory = mapToolCategoryToSchemaCategory(category, tags);
 const schemaOffer = buildOfferFromPriceModel(price_model);
 const canonicalUrl = `${SITE_URL}/tools/${slug}/`;
+const checkedDateSource = data.updated_at || data.updatedAt || data.created_at || data.createdAt || data.date;
+const checkedDate = checkedDateSource
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(String(checkedDateSource)))
+  : "";
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Startseite", url: `${SITE_URL}/` },
   { name: "Tools", url: `${SITE_URL}/tools/` },
@@ -350,13 +370,14 @@ const softwareApplicationSchema = {
 };
 ---
 
-<BaseLayout title={`${title} — Utildesk`} description={metaDescription}>
+<BaseLayout title={`${title} — Utildesk`} description={metaDescription} robots={searchIndexDecision.robots}>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/api/tools/${slug}.json`} title={`${title} (JSON)`} />
     <link rel="alternate" type="text/markdown" href={`/markdown/tools/${slug}.md`} title={`${title} (Markdown)`} />
     <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
   <!-- Breadcrumb -->
@@ -392,6 +413,12 @@ const softwareApplicationSchema = {
         <a href={`/category/${primaryCategory.slug}/`} class="category-link-anchor">{primaryCategory.title}</a>
       </div>
     )}
+
+    <p class="editorial-note">
+      Kuratiert von <strong>Utildesk Redaktion</strong>
+      {checkedDate ? <span> · zuletzt geprueft: {checkedDate}</span> : null}
+      <span> · <a href="/methodologie/">Methodologie</a></span>
+    </p>
   </div>
 
   <!-- Article Content -->
@@ -589,6 +616,20 @@ const softwareApplicationSchema = {
     margin-top: 16px;
     font-size: 0.9375rem;
     line-height: 1.5;
+  }
+
+  .editorial-note {
+    margin: 14px 0 0;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .editorial-note a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 98, 89, 0.28);
+    text-underline-offset: 2px;
   }
 
   .category-label {

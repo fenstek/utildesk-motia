@@ -1,89 +1,91 @@
 ---
 slug: n8n
 title: n8n
-category: Automation
-price_model: Open Source
-tags:
-  - automation
-  - workflow
-official_url: 'https://n8n.io'
-popularity: 33
-description: 'n8n is a powerful open-source automation platform for building visual workflows, connecting apps and services, and running automations in the cloud or on your own infrastructure.'
+category: "Automation"
+price_model: "Freemium"
+tags: ["automation", "workflow", "integration", "developer", "api"]
+official_url: "https://n8n.io"
+affiliate_url: "https://n8n.io"
+popularity: 35
+source_language: de
 translation: full
+description: "Workflow automation for API-oriented integrations, self-hostable automation, and AI-agent workflows."
 ---
+
 # n8n
 
-n8n is a powerful automation platform that makes it possible to build workflows visually and connect a wide range of applications and services. As an open-source tool, n8n offers flexible deployment options, both in the cloud and as a self-hosted solution. It is aimed at users who want to implement complex automations without extensive programming knowledge.
+n8n is a workflow automation platform for people who want to connect SaaS tools, APIs, data flows, and custom logic.
 
-## Who is n8n suitable for?
+Compared with very simple automation tools, its strength is technical depth: n8n can start near no-code, but remains open to developers and self-hosted workflows.
 
-n8n is ideal for companies, teams, and individuals who want to automate recurring tasks and design data flows between different systems efficiently. Developers, IT administrators, marketing teams, and sales teams benefit especially from the platform, as it offers a wide range of integrations and visual workflow creation. Thanks to its open-source nature, n8n is also interesting for technically savvy users who want to make custom modifications or host the platform themselves.
+## Who is it for?
 
-## Key features
+n8n fits operations, growth, developer teams, and automation builders who want more control than Zapier. For pure enterprise RPA, UiPath or Kofax are better fits; for very simple SaaS zaps, Zapier is often faster.
 
-- Visual workflow creation via drag and drop
-- Support for over 200 integrated applications and APIs
-- Ability to create custom integrations and functions via JavaScript
-- Trigger-based automations (e.g. webhooks, scheduled jobs)
-- Data manipulation and transformation within workflows
-- Self-hosting option for full control over data and infrastructure
-- Cloud hosting with automatic scaling and updates
-- Version management and workflow sharing
-- Support for conditional logic and loops in workflows
-- Monitoring and error handling within automations
+## Typical use cases
+
+- Connect APIs, webhooks, and SaaS tools
+- Automate internal processes and sync data
+- Embed AI steps into workflows
+- Run self-hosted automation with more control
+
+## Core features
+
+- Visual workflow builder with many integrations
+- Webhooks, code steps, and API-oriented logic
+- Cloud and self-hosting options
+- AI and agent-oriented workflow patterns
 
 ## Pros and cons
 
 ### Pros
 
-- Open source and free in the self-hosted version
-- Large selection of ready-made integrations
-- User-friendly visual interface
-- High flexibility through custom scripts and extensions
-- Privacy-friendly thanks to the self-hosting option
-- Active community and regular updates
+- More control than many simple no-code tools
+- Good fit for technical teams and self-hosting
+- Strong for API and data workflows
 
 ### Cons
 
-- For beginners, the range of features can initially feel overwhelming
-- The cloud version is paid, with prices varying by plan
-- Some complex integrations require technical understanding
-- The documentation could be more detailed in some areas
+- Requires more technical understanding than Zapier
+- Self-hosting brings operational responsibility
+- Error handling and monitoring need proper planning
+
+## Workflow fit
+
+n8n is one of the best candidates when automation should become infrastructure, not just a click path. That also requires discipline around operations and secrets.
+
+## Privacy & data notes
+
+Automation workflows often move tokens, customer data, and internal data. Secrets, logs, permissions, and separation between test and production are critical.
 
 ## Pricing & costs
 
-n8n offers a free open-source version that can be self-hosted. For users who prefer a hosted solution, there are various cloud plans, tiered according to features and number of users. Prices often start with a free starter plan for a limited number of workflows or users, then increase depending on requirements. For exact costs, it is best to check the official website or contact the provider.
+n8n offers cloud plans and self-hostable options. The right choice depends on privacy, operational effort, execution volume, and team control.
+
+**Go to provider:** https://n8n.io
 
 ## Alternatives to n8n
 
-- **Zapier**: A widely used automation platform with simple operation and a large app selection, but usually paid.
-- **Integromat (Make)**: Offers complex workflow automations with a visual interface and different pricing models.
-- **Microsoft Power Automate**: Especially suitable for users in the Microsoft ecosystem, with deep integrations into Office 365 and Azure.
-- **Node-RED**: An open-source tool for visual programming and automation, similar to n8n, with a focus on IoT and technical users.
-- **Automate.io**: A simple automation solution focused on marketing and sales, with paid plans.
+- [Zapier](/en/tools/zapier/): for fast SaaS automations.
+- [Pipedream](/en/tools/pipedream/): for developer-oriented integration workflows.
+- [Workato](/en/tools/workato/): for enterprise integration.
+- [UiPath](/en/tools/uipath/): for RPA and desktop-oriented automation.
+- [Kofax RPA](/en/tools/kofax-rpa/): for enterprise RPA with legacy systems.
+
+## Editorial assessment
+
+n8n is one of the best candidates when automation should become infrastructure, not just a click path. That also requires discipline around operations and secrets.
 
 ## FAQ
 
-**1. Is n8n free?**  
-The open-source version of n8n is free and can be self-hosted. The cloud version is paid, but offers various plans, including a free starter plan.
+**Is n8n open source?**
 
-**2. Do you need programming knowledge for n8n?**  
-Basic automations can be created through the visual interface without programming knowledge. For more complex workflows or custom functions, knowledge of JavaScript can be helpful.
+n8n is self-hostable and source-available; check the current license directly.
 
-**3. Can I self-host n8n?**  
-Yes, n8n is open source and can be installed on your own servers, giving you full control over data and infrastructure.
+**Is n8n better than Zapier?**
 
-**4. Which applications can be connected to n8n?**  
-n8n supports over 200 integrations, including well-known services such as Google Sheets, Slack, GitHub, Airtable, and many more.
+If control and technical depth matter, often yes. For simple automations, Zapier is faster.
 
-**5. How secure is n8n?**  
-Security depends on the deployment: with self-hosting, responsibility lies with the user. The cloud version is operated by the provider according to security standards.
+**Can n8n build AI workflows?**
 
-**6. Is there a mobile app for n8n?**  
-There is currently no dedicated mobile app, but the web interface is responsive and can be used through mobile browsers.
-
-**7. How complex can workflows be?**  
-n8n allows very complex automations with conditions, loops, error handling, and custom scripts.
-
-**8. Can I integrate n8n into my company?**  
-Yes, n8n is well suited for enterprise applications, especially when customizations and privacy are important.
+Yes, n8n is often used for LLM and agent-like workflows.

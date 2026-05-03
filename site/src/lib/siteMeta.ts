@@ -1,9 +1,9 @@
 export const SITE_URL = "https://tools.utildesk.de";
 export const SITE_NAME = "Utildesk";
 export const SITE_DESCRIPTION =
-  "Kuratiertes Verzeichnis für AI-Tools, Automatisierung, Produktivität und redaktionelle Ratgeber.";
+  "Kuratiertes KI-Tools Verzeichnis 2026 fuer AI-Tools, Automatisierung, Produktivitaet und redaktionelle Ratgeber.";
 export const SITE_DESCRIPTION_EN =
-  "Curated directory for AI tools, automation, productivity and editorial guides.";
+  "Curated AI tools directory 2026 for automation, productivity and editorial guides.";
 export const SITE_LANGUAGE = "de-DE";
 export const SITE_LANGUAGE_EN = "en";
 export const ORGANIZATION_LOGO_PATH = "/logo-grid.svg";
@@ -107,7 +107,7 @@ export function buildCollectionPageSchema({
 }
 
 export function buildBreadcrumbSchema(
-  items: Array<{ name: string; url: string }>
+  items: Array<{ name: string; url: string }>,
 ) {
   return {
     "@context": "https://schema.org",

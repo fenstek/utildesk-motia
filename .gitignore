@@ -20,6 +20,7 @@ tmp/
 reports/
 output/
 .wrangler/
+.playwright-cli/
 
 # audit scripts output (temporary)
 **/audit_missing_categories.*

@@ -12,6 +12,11 @@ import {
   getEnglishToolMeta,
   hasEnglishToolTranslation,
 } from "../../../lib/englishContent";
+import toolAddedAtManifest from "../../../data/tool-added-at.json";
+import {
+  createToolAddedAtRankMap,
+  getToolSearchIndexDecision,
+} from "../../../lib/searchIndexPolicy.mjs";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { tagHref } from "../../../lib/tagRoutes";
@@ -25,6 +30,7 @@ import {
   buildOfferFromPriceModel,
   mapToolCategoryToSchemaCategory,
 } from "../../../lib/machineReadable";
+import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../../lib/schema";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
@@ -36,6 +42,10 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { slug } = entry;
+const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
+const searchIndexDecision = getToolSearchIndexDecision(entry, {
+  addedAtRank: toolAddedAtRankMap.get(slug) ?? 0,
+});
 const meta = getEnglishToolMeta(entry);
 const providerUrl = meta.targetUrl || "";
 const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
@@ -52,6 +62,7 @@ const englishMarkdownWithoutAlternatives = englishMarkdown.replace(
 let articleHtml = String(marked.parse(englishMarkdownWithoutAlternatives));
 articleHtml = articleHtml.replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 const featureList = buildEnglishToolFeatureList(entry);
+const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(englishMarkdown));
 const norm = (value: unknown) => String(value ?? "").trim().toLowerCase();
 const categoryNorm = norm(meta.category);
 const seenTags = new Set<string>();
@@ -133,6 +144,14 @@ const alternatives = rawAltItems.reduce<typeof allDisplayTools>((acc, item) => {
 }, []);
 const alternativesTop = alternatives.slice(0, 3);
 const canonicalUrl = `${SITE_URL}/en/tools/${slug}/`;
+const checkedDateSource = entry.data.updated_at || entry.data.updatedAt || entry.data.created_at || entry.data.createdAt || entry.data.date;
+const checkedDate = checkedDateSource
+  ? new Intl.DateTimeFormat("en", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(String(checkedDateSource)))
+  : "";
 const offer = buildOfferFromPriceModel(entry.data.price_model ? String(entry.data.price_model) : null);
 if (offer && meta.priceModel) {
   offer.category = meta.priceModel;
@@ -167,13 +186,14 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 ---
 
-<BaseLayout locale="en" title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`} description={meta.metaDescription}>
+<BaseLayout locale="en" title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`} description={meta.metaDescription} robots={searchIndexDecision.robots}>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />
     <link rel="alternate" type="text/markdown" href={`/en/markdown/tools/${slug}.md`} title={`${meta.title} (Markdown)`} />
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
   <nav class="breadcrumb"><a href="/en/tools/">← Back to all tools</a></nav>
@@ -198,6 +218,12 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </a>
       </div>
     )}
+
+    <p class="editorial-note">
+      Curated by <strong>Utildesk Editorial</strong>
+      {checkedDate ? <span> · last checked: {checkedDate}</span> : null}
+      <span> · <a href="/en/methodology/">Methodology</a></span>
+    </p>
   </div>
 
   <article class="card article">
@@ -294,6 +320,20 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     margin-top: 16px;
     font-size: 0.9375rem;
     line-height: 1.5;
+  }
+
+  .editorial-note {
+    margin: 14px 0 0;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .editorial-note a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 98, 89, 0.28);
+    text-underline-offset: 2px;
   }
 
   .category-label {

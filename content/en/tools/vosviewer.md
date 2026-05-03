@@ -9,79 +9,74 @@ tags:
   - visualization
 official_url: 'https://www.vosviewer.com/'
 popularity: 0
-description: 'VOSviewer is a specialized tool for visualizing and analyzing bibliometric networks. It helps researchers map publications, citations, co-authorship patterns, and research trends with interactive network maps and flexible export options.'
 translation: full
+description: "VOSviewer visualizes bibliometric networks, citations, co-authorship, and research landscapes."
 ---
 # VOSviewer
 
-VOSviewer is specialized software for visualizing and analyzing bibliometric networks. It enables researchers to present and interpret scientific publications, citations, and collaboration patterns in a clear way. The application is especially useful for making complex relationships in large datasets from scientific databases understandable.
+VOSviewer helps make scientific literature visible as a network. Instead of treating papers in isolation, it shows clusters, connections, citation patterns, and thematic proximity.
+
+Fits bibliometrics, research management, reviews, and analysis of scientific fields.
 
 ## Who is VOSviewer for?
 
-VOSviewer is primarily aimed at scientists, bibliometricians, and research managers who want to analyze large literature and citation datasets. Librarians and information specialists also benefit from its visualization capabilities for identifying research trends and collaboration networks. The software is suitable both for beginners in bibliometric analysis and for experienced users who want to create detailed maps of scientific publications.
+VOSviewer is most useful for teams and individuals that treat a bibliometric visualization tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
-## Key features
+## Typical use cases
 
-- Creation of network maps based on bibliometric data such as authors, keywords, or publications  
-- Visualization of co-authorship, citation relationships, and keyword co-occurrences  
-- Support for various data formats from scientific databases (e.g., Web of Science, Scopus)  
-- Cluster detection to identify research fields and topic areas  
-- Interactive maps with zoom and filtering functions for detailed analysis  
-- Export options for visualizations in various image and vector formats  
-- Ability to analyze full-text data and abstracts for text mining applications  
-- Integration of time dimensions to show developments over time  
+- Visualize citation and co-author networks
+- Identify topic clusters in research fields
+- Prepare literature landscapes for reviews
+- Explore data from scientific databases
 
-## Pros and cons
+## Strengths
 
-### Pros
+- Very strong for visual bibliometrics
+- Helps identify clusters
+- Free to use
 
-- Free to use and platform-independent (Windows, macOS, Linux)  
-- Intuitive user interface with extensive visualization tools  
-- Supports large datasets and complex networks  
-- Extensive documentation and an active user community  
-- Flexible for a wide range of bibliometric use cases  
+## Limits
 
-### Cons
+- Requires clean input data
+- Visualizations need interpretation
+- Not intended for everyday reference management
 
-- Limited functions for direct data acquisition - users must export data externally  
-- Interpreting complex networks can be challenging for beginners  
-- No integrated cloud solution or collaboration features  
-- No commercial support guarantee; support is mainly provided through the community and documentation  
+## Workflow fit
+
+VOSviewer makes sense when it has a clear place in the process: intake, production, review, or publishing. Without that role, even a strong tool becomes just another open tab.
+
+## Privacy & data
+
+Bibliometric datasets can reveal research strategy or internal analysis. Exports and project files should be protected.
 
 ## Pricing & costs
 
-VOSviewer is available as freeware and can be downloaded and used free of charge. There are no license fees or subscription costs. Depending on your needs, however, there may be costs for access to bibliometric databases, since VOSviewer does not provide the data itself.
+In the catalog, VOSviewer is marked with the pricing model **Free**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
 
-## VOSviewer alternatives
+**Provider:** https://www.vosviewer.com/
 
-- **CiteSpace**: Open-source software for visualizing scientific trends and citation networks, with a focus on time-based developments.  
-- **Gephi**: General-purpose network visualization software that can also be used for bibliometric analysis.  
-- **Bibliometrix (R package)**: A comprehensive toolkit for bibliometric analysis in the R programming language, suitable for users with statistical experience.  
-- **Pajek**: Software for analyzing large networks, also used in bibliometric contexts.  
-- **Sci2 Tool**: A platform for scientific analysis with various analytical methods, including bibliometric visualization.  
+## Alternatives to VOSviewer
+
+- [Research Rabbit](/en/tools/research-rabbit/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Elicit](/en/tools/elicit/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Zotero](/en/tools/zotero/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Endnote](/en/tools/endnote/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Citavi](/en/tools/citavi/): useful comparison point for adjacent workflows, pricing, or team fit.
+
+## Editorial assessment
+
+VOSviewer is ideal when a research field needs to be understood as a map. For reference management, it complements Zotero or EndNote.
 
 ## FAQ
 
-**1. Is VOSviewer suitable for beginners?**  
-Yes, the user interface is relatively intuitive, but interpreting the networks may require some training.
+**Is VOSviewer beginner-friendly?**
 
-**2. Which data formats does VOSviewer support?**  
-VOSviewer supports data from Web of Science, Scopus, Dimensions, as well as RIS and CSV files.
+It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
 
-**3. Can I use VOSviewer on all operating systems?**  
-Yes, VOSviewer is available for Windows, macOS, and Linux.
+**When is VOSviewer worth it?**
 
-**4. Do I have to pay for VOSviewer?**  
-No, VOSviewer can be used free of charge. However, costs may arise for obtaining the data.
+When the recurring value is greater than setup, cost, and review effort. For one-off tasks, a lighter tool is often faster.
 
-**5. Is there a way to collaborate in VOSviewer?**  
-Direct collaboration features are not integrated. Users can, however, export and share visualizations.
+**What should be checked before adoption?**
 
-**6. How current is the data in VOSviewer?**  
-How current the data is depends on the imported data sources, since VOSviewer itself does not provide data.
-
-**7. Can I also do text mining with VOSviewer?**  
-Yes, limited text mining functions for analyzing abstracts and full texts are available.
-
-**8. Where can I find help and tutorials?**  
-There is extensive official documentation as well as numerous online tutorials and an active user community.
+Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
