@@ -18,14 +18,17 @@ Das Tool ist besonders relevant, wenn ein Modell nicht nur funktionieren, sonder
 
 ## Für wen ist das Tool geeignet?
 
-InterpretML passt zu Data Scientists, ML Engineers, Risk-Teams und Analytics-Abteilungen, die Modellentscheidungen erklären müssen. Es ist kein AutoML-Komplettpaket, sondern eine Explainability- und Diagnostik-Schicht.
+InterpretML passt zu Data Scientists, ML Engineers, Risk-Teams und Organisationen, die Modelle erklären und prüfen müssen. Besonders relevant ist es, wenn Vorhersagen nicht nur gut funktionieren, sondern gegenüber Fachbereich, Audit, Compliance oder Kunden nachvollziehbar sein sollen.
+
+Weniger passend ist InterpretML für reine Dashboard-Nutzer oder Teams ohne eigenen Modellierungsprozess. Es setzt voraus, dass Daten, Modell, Metriken und Fragestellung verstanden werden.
 
 ## Typische Einsatzszenarien
 
-- Feature-Einflüsse und Modellverhalten analysieren
-- Erklärungen für Stakeholder oder Audits vorbereiten
-- Black-Box-Modelle mit zusätzlichen Methoden untersuchen
-- Interpretierbare Modelle als Alternative zu komplexeren Verfahren testen
+- **Modell-Erklärbarkeit:** globale und lokale Einflüsse auf Vorhersagen sichtbar machen.
+- **Risikoprüfung:** unerwartete Features, Bias-Hinweise oder instabile Muster untersuchen.
+- **Modellvergleich:** Black-Box-Modelle gegen erklärbarere Alternativen abwägen.
+- **Stakeholder-Kommunikation:** Ergebnisse für Fachbereiche verständlicher aufbereiten.
+- **Audit-Vorbereitung:** Erklärungen, Annahmen und Grenzen von Modellen dokumentieren.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ InterpretML passt zu Data Scientists, ML Engineers, Risk-Teams und Analytics-Abt
 
 ## Workflow-Fit
 
-InterpretML ist kein glänzendes Dashboard, sondern Werkzeug für Verantwortung. Es lohnt sich, wenn Modellentscheidungen erklärbar und auditierbar werden müssen.
+InterpretML sollte nach dem ersten Modelltraining, aber vor produktiver Freigabe eingesetzt werden. Ein guter Ablauf ist: Zielmetrik prüfen, Datenqualität analysieren, Erklärungen erzeugen, auffällige Features untersuchen und die Erkenntnisse mit Fachexperten besprechen.
+
+Das Tool ersetzt keine Modellvalidierung. Es macht Muster sichtbarer, aber Teams müssen selbst entscheiden, ob ein Muster fachlich plausibel, ethisch akzeptabel und stabil genug für den Einsatz ist.
 
 ## Datenschutz & Daten
 
@@ -72,18 +77,18 @@ InterpretML ist Open Source. Kosten entstehen eher durch Infrastruktur, Data-Sci
 
 ## Redaktionelle Einschätzung
 
-InterpretML ist kein glänzendes Dashboard, sondern Werkzeug für Verantwortung. Es lohnt sich, wenn Modellentscheidungen erklärbar und auditierbar werden müssen.
+InterpretML ist ein Werkzeug für Teams, die Modelle nicht nur bauen, sondern erklären müssen. Es wird besonders wertvoll, wenn Entscheidungen auditierbar sein sollen; wer nur ein schönes Dashboard sucht, wird den Nutzen unterschätzen.
 
 ## FAQ
 
-**Ist InterpretML für Einsteiger geeignet?**
+**Ist InterpretML nur für regulierte Branchen relevant?**
 
-Es setzt Python- und ML-Grundlagen voraus.
+Nein. Regulierte Branchen profitieren besonders, aber auch Produkt-, Marketing- oder Operations-Modelle werden besser, wenn Teams verstehen, warum sie bestimmte Vorhersagen treffen.
 
-**Ersetzt InterpretML SHAP?**
+**Braucht man ML-Kenntnisse?**
 
-Nicht unbedingt. Beide können je nach Fragestellung sinnvoll sein.
+Ja. InterpretML ist kein Einsteiger-Dashboard, sondern ein Werkzeug für Menschen, die Daten, Modelle und Bewertungsmetriken einordnen können.
 
-**Macht InterpretML ein Modell automatisch fair?**
+**Kann InterpretML Bias verhindern?**
 
-Nein. Es hilft beim Verstehen, ersetzt aber keine Fairness- und Governance-Prüfung.
+Nicht automatisch. Es kann Hinweise liefern und Muster sichtbar machen, aber Bias-Prüfung braucht Datenverständnis, fachliche Bewertung und klare Entscheidungsregeln.

@@ -18,14 +18,17 @@ Der Unterschied zu sehr einfachen Automatisierern liegt in der technischen Tiefe
 
 ## Für wen ist das Tool geeignet?
 
-n8n passt zu Operations, Growth, Entwicklerteams und Automatisierungsfreunden, die mehr Kontrolle als bei Zapier wollen. Für reine Enterprise-RPA sind UiPath oder Kofax passender; für sehr einfache SaaS-Zaps ist Zapier oft schneller.
+n8n passt zu technischen Operations-Teams, Startups, Agenturen und Unternehmen, die Automatisierung flexibel selbst gestalten wollen. Besonders stark ist es, wenn APIs, SaaS-Tools, Datenbanken, Webhooks und eigene Logik in nachvollziehbaren Workflows verbunden werden müssen.
+
+Für reine Klick-Automatisierung ohne technisches Verständnis kann Zapier oder Make leichter sein. n8n lohnt sich, wenn Kontrolle, Self-Hosting, Erweiterbarkeit und komplexere Logik wichtiger sind.
 
 ## Typische Einsatzszenarien
 
-- APIs, Webhooks und SaaS-Tools verbinden
-- Interne Prozesse automatisieren und Daten synchronisieren
-- KI-Schritte in Workflows einbauen
-- Self-hosted Automation mit mehr Kontrolle betreiben
+- **API- und SaaS-Automation:** CRM, Sheets, Mail, Datenbanken und interne Tools verbinden.
+- **Webhook-Prozesse:** Ereignisse aus Formularen, Apps oder Systemen automatisch weiterverarbeiten.
+- **Daten-Synchronisation:** Informationen zwischen Tools bereinigen, transformieren und verteilen.
+- **Interne Agenten-Workflows:** KI-Schritte mit Freigaben, Speicher und Benachrichtigungen kombinieren.
+- **Self-hosted Automation:** sensible Automatisierungen näher an eigener Infrastruktur betreiben.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ n8n passt zu Operations, Growth, Entwicklerteams und Automatisierungsfreunden, d
 
 ## Workflow-Fit
 
-n8n ist einer der besten Kandidaten, wenn Automatisierung nicht nur Klickstrecke, sondern Infrastruktur werden soll. Dann braucht es aber auch Disziplin bei Betrieb und Secrets.
+n8n sollte wie Infrastruktur behandelt werden. Ein guter Workflow hat Namen, Versionierung, Testdaten, Fehlerpfade, Secrets-Verwaltung und Monitoring. Besonders bei Workflows mit Kundendaten oder Zahlungen reicht es nicht, dass ein Ablauf einmal grün durchläuft.
+
+Für Teams ist Dokumentation Pflicht: Warum existiert der Workflow, welche Systeme berührt er, wer reagiert auf Fehler und wie wird er geändert? Dann wird n8n zu einer belastbaren Automationsschicht statt zu einer Sammlung unsichtbarer Hacks.
 
 ## Datenschutz & Daten
 
@@ -72,18 +77,18 @@ n8n bietet Cloud-Pläne und selbst hostbare Optionen. Die richtige Wahl hängt v
 
 ## Redaktionelle Einschätzung
 
-n8n ist einer der besten Kandidaten, wenn Automatisierung nicht nur Klickstrecke, sondern Infrastruktur werden soll. Dann braucht es aber auch Disziplin bei Betrieb und Secrets.
+n8n ist eines der stärksten Werkzeuge, wenn Automatisierung flexibel, nachvollziehbar und selbst betreibbar sein soll. Der Preis dafür ist Betriebsdisziplin: Credentials, Fehlerpfade, Versionierung und Monitoring entscheiden darüber, ob Workflows helfen oder neue Risiken bauen.
 
 ## FAQ
 
-**Ist n8n Open Source?**
-
-n8n ist selbst hostbar und source-available; Lizenzdetails sollten direkt geprüft werden.
-
 **Ist n8n besser als Zapier?**
 
-Wenn Kontrolle und technische Tiefe wichtig sind, oft ja. Für einfache Automationen ist Zapier schneller.
+Nicht pauschal. n8n ist stärker bei Kontrolle, Self-Hosting und komplexerer Logik. Zapier ist oft schneller für einfache SaaS-Verknüpfungen.
 
-**Kann n8n KI-Workflows bauen?**
+**Braucht man Programmierkenntnisse?**
 
-Ja, n8n wird häufig für LLM- und Agenten-nahe Workflows genutzt.
+Für einfache Workflows nicht zwingend, für robuste Automatisierung aber sehr hilfreich. APIs, Datenformate und Fehlerbehandlung sollte man verstehen.
+
+**Was ist beim Betrieb wichtig?**
+
+Secrets, Backups, Monitoring, Versionskontrolle und klare Verantwortliche. Automatisierung ohne Betriebskonzept wird schnell riskant.

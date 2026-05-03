@@ -65,7 +65,7 @@ Im Katalog ist Slick Write mit dem Preismodell **Freemium** geführt. Relevant s
 
 ## Redaktionelle Einschätzung
 
-Slick Write ist ein gutes Werkzeug für bewussteres Schreiben. Es ersetzt keine Redaktion, macht aber typische Textprobleme sichtbar.
+Slick Write ist kein glamouröses KI-Tool, aber ein nützlicher Prüfschritt für Stil, Lesbarkeit und formale Schwächen. Besonders sinnvoll ist es, wenn Texte vor Veröffentlichung noch einmal nüchtern auf Struktur, Wiederholungen und Stolperstellen geprüft werden sollen.
 
 ## FAQ
 

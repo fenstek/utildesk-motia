@@ -19,14 +19,17 @@ Der sinnvolle Einsatz liegt dort, wo Nutzer Fragen stellen, Erklärungen vereinf
 
 ## Für wen ist das Tool geeignet?
 
-Clara passt zu Lernenden, Lehrenden, Eltern, Studierenden und Teams, die Wissen in kleinere Einheiten zerlegen wollen. Für allgemeine Produktivität, Coding oder Recherche sind ChatGPT, Claude oder Perplexity oft flexibler.
+Clara passt zu Lernenden, die Erklärungen, Wiederholungen und dialogisches Nachfragen brauchen: Schüler, Studierende, Selbstlerner und Menschen, die Themen lieber in kleinen Schritten erschließen. Der größte Nutzen entsteht, wenn Clara nicht nur Antworten liefert, sondern Verständnislücken sichtbar macht.
+
+Als alleinige Quelle ist Clara weniger geeignet. Für Prüfungen, Fachentscheidungen oder komplexe Themen sollten Lehrmaterial, Originalquellen und menschliches Feedback weiterhin die Grundlage bleiben.
 
 ## Typische Einsatzszenarien
 
-- Komplexe Themen in einfache Lernschritte zerlegen
-- Fragen, Beispiele und Wiederholungen für Unterricht oder Selbststudium vorbereiten
-- Lernstoff in verständliche Sprache übertragen
-- Erste Orientierung in einem neuen Wissensgebiet bekommen
+- **Lernfragen klären:** schwierige Begriffe in einfacher Sprache erklären lassen und anschließend nachfragen.
+- **Wiederholung vorbereiten:** Themen in Lernkarten, kurze Zusammenfassungen oder Übungsfragen umwandeln.
+- **Prüfungsvorbereitung:** Wissenslücken sammeln und gezielt vertiefen, statt planlos zu wiederholen.
+- **Sprach- und Verständnisarbeit:** Inhalte umformulieren, Beispiele suchen und Missverständnisse prüfen.
+- **Selbstlern-Routine:** tägliche kurze Lernblöcke mit Feedback und Wiederholung strukturieren.
 
 ## Hauptfunktionen
 
@@ -51,7 +54,9 @@ Clara passt zu Lernenden, Lehrenden, Eltern, Studierenden und Teams, die Wissen 
 
 ## Workflow-Fit
 
-Clara ist interessant, wenn Lernen der eigentliche Job ist. Als alleinige Wissensquelle sollte es nicht genutzt werden, aber als Erklär- und Wiederholungshelfer kann es sinnvoll sein.
+Clara sollte wie ein Lernbegleiter eingesetzt werden: Thema eingrenzen, eigenen Wissensstand nennen, Erklärung anfordern, Verständnis mit Übungsfragen testen und problematische Aussagen gegen Lehrmaterial prüfen. So entsteht aktives Lernen statt passiver Antwortkonsum.
+
+Für Eltern, Lehrkräfte oder Teams ist wichtig, Erwartungen zu begrenzen. Clara kann Motivation und Struktur unterstützen, aber keine Didaktik, Bewertung oder fachliche Verantwortung vollständig ersetzen.
 
 ## Datenschutz & Daten
 
@@ -72,18 +77,18 @@ Clara wird mit einem freien Einstieg beworben. Ob und welche Premiumfunktionen v
 
 ## Redaktionelle Einschätzung
 
-Clara ist interessant, wenn Lernen der eigentliche Job ist. Als alleinige Wissensquelle sollte es nicht genutzt werden, aber als Erklär- und Wiederholungshelfer kann es sinnvoll sein.
+Clara ist interessant, wenn Lernen durch Erklären, Nachfragen und Wiederholen besser funktioniert als durch reine Kurslisten. Der Wert hängt stark von Lernziel und Quellenqualität ab; als alleinige Wissensquelle ist es schwach, als strukturierter Begleiter für Verständnislücken kann es hilfreich sein.
 
 ## FAQ
 
-**Ist Clara ein Chatbot?**
+**Ist Clara für Schüler geeignet?**
 
-Ja, aber mit erkennbarem Lernfokus statt reinem Allzweck-Chat.
+Ja, wenn die Nutzung begleitet und kritisch bleibt. Clara kann erklären und üben helfen, sollte aber nicht als unfehlbare Quelle für Hausaufgaben oder Prüfungen behandelt werden.
 
-**Eignet sich Clara für Schulen?**
+**Kann Clara Nachhilfe ersetzen?**
 
-Möglich, aber Datenschutz, Altersfreigaben und organisatorische Regeln müssen vorher geprüft werden.
+Nur teilweise. Für einfache Erklärungen und Wiederholung kann es reichen; bei Motivation, Lernstrategie, Feedback und komplexen Fehlvorstellungen ist menschliche Unterstützung oft besser.
 
-**Ersetzt Clara Nachhilfe?**
+**Worauf sollte man achten?**
 
-Nein. Es kann helfen, Stoff zu erklären und zu üben, ersetzt aber keine pädagogische Verantwortung.
+Auf Quellen, Datenschutz und die Gefahr, Antworten einfach zu übernehmen. Gute Nutzung bedeutet: nachfragen, prüfen, selbst formulieren und Ergebnisse mit Unterrichtsmaterial abgleichen.

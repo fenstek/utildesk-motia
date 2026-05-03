@@ -66,7 +66,7 @@ Im Katalog ist Adept mit dem Preismodell **Freemium** geführt. Bei agentischen 
 
 ## Redaktionelle Einschätzung
 
-Adept ist weniger eine einfache Tool-Empfehlung als ein Signal: Software wird zunehmend über Agenten bedienbar. Für Produktion zählt aber Kontrolle vor Magie.
+Adept ist weniger ein fertiges Büroprodukt als ein Signal für agentische Bedienung von Software. Spannend ist es für Teams, die beobachten wollen, wie KI von Textantworten zu tatsächlicher Prozessausführung wandert; für sofort planbare Standardautomatisierung bleiben etablierte RPA- und Workflow-Tools verlässlicher.
 
 ## FAQ
 

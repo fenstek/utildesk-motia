@@ -66,7 +66,7 @@ Im Katalog ist NotebookLM mit dem Preismodell **Freemium** geführt. Entscheiden
 
 ## Redaktionelle Einschätzung
 
-NotebookLM ist stark, wenn Quellenarbeit sichtbar bleiben soll. Für Utildesk-Ratgeber ist es ein sinnvoller Baustein vor der redaktionellen Politur.
+NotebookLM ist stark, wenn Antworten aus einem klar abgegrenzten Quellenraum entstehen sollen. Der Nutzen liegt nicht im freien Chatten, sondern darin, eigene Dokumente, Notizen und Materialien als Arbeitsgrundlage zu nutzen und Aussagen anschließend sauber gegen die Quellen zu prüfen.
 
 ## FAQ
 

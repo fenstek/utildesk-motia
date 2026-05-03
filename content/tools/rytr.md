@@ -68,7 +68,7 @@ Im Katalog ist Rytr mit dem Preismodell **Freemium** geführt. Für die Entschei
 
 ## Redaktionelle Einschätzung
 
-Rytr ist brauchbar als schneller Ideen- und Variantenmotor. Die Veröffentlichung sollte immer durch menschliche Redaktion gehen.
+Rytr ist ein leichtes Schreibwerkzeug für schnelle Entwürfe, kurze Marketingtexte und Varianten. Es ist sinnvoll, wenn Geschwindigkeit wichtiger ist als tiefe Markenlogik; für anspruchsvolle Redaktion braucht es Briefing, Überarbeitung und klare Qualitätskontrolle.
 
 ## FAQ
 
