@@ -1,86 +1,89 @@
 ---
 slug: n8n
 title: n8n
-category: Automatisierung
-price_model: Open Source
-tags: ["automation", "workflow"]
+category: "Automatisierung"
+price_model: "Freemium"
+tags: ["automation", "workflow", "integration", "developer", "api"]
 official_url: "https://n8n.io"
+affiliate_url: "https://n8n.io"
 popularity: 35
+description: "Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows."
 ---
 
 # n8n
 
-n8n ist eine leistungsstarke Automatisierungsplattform, die es ermöglicht, Workflows visuell zu erstellen und verschiedenste Anwendungen und Dienste miteinander zu verbinden. Als Open-Source-Tool bietet n8n flexible Einsatzmöglichkeiten, sowohl in der Cloud als auch als selbst gehostete Lösung. Es richtet sich an Nutzer, die komplexe Automatisierungen ohne umfangreiche Programmierkenntnisse realisieren möchten.
+n8n ist eine Workflow-Automation-Plattform für Menschen, die SaaS-Tools, APIs, Datenflüsse und eigene Logik verbinden wollen.
 
-## Für wen ist n8n geeignet?
+Der Unterschied zu sehr einfachen Automatisierern liegt in der technischen Tiefe: n8n kann No-Code-nahe starten, bleibt aber für Entwickler und selbst gehostete Workflows offen.
 
-n8n eignet sich ideal für Unternehmen, Teams und Einzelpersonen, die wiederkehrende Aufgaben automatisieren und Datenflüsse zwischen verschiedenen Systemen effizient gestalten wollen. Besonders profitieren Entwickler, IT-Administratoren, Marketing- und Vertriebsteams von der Plattform, da sie vielfältige Integrationen und eine visuelle Workflow-Erstellung bietet. Dank der Open-Source-Natur ist n8n auch für technisch versierte Nutzer interessant, die individuelle Anpassungen vornehmen oder die Plattform selbst hosten möchten.
+## Für wen ist das Tool geeignet?
+
+n8n passt zu Operations, Growth, Entwicklerteams und Automatisierungsfreunden, die mehr Kontrolle als bei Zapier wollen. Für reine Enterprise-RPA sind UiPath oder Kofax passender; für sehr einfache SaaS-Zaps ist Zapier oft schneller.
+
+## Typische Einsatzszenarien
+
+- APIs, Webhooks und SaaS-Tools verbinden
+- Interne Prozesse automatisieren und Daten synchronisieren
+- KI-Schritte in Workflows einbauen
+- Self-hosted Automation mit mehr Kontrolle betreiben
 
 ## Hauptfunktionen
 
-- Visuelle Workflow-Erstellung per Drag-and-Drop
-- Unterstützung von über 200 integrierten Anwendungen und APIs
-- Möglichkeit zur Erstellung eigener Integrationen und Funktionen via JavaScript
-- Trigger-basierte Automatisierungen (z.B. Webhooks, zeitgesteuerte Jobs)
-- Datenmanipulation und -transformation innerhalb von Workflows
-- Self-Hosting-Option für volle Kontrolle über Daten und Infrastruktur
-- Cloud-Hosting mit automatischem Skalieren und Updates
-- Versionsverwaltung und Workflow-Sharing
-- Unterstützung von Bedingungslogik und Schleifen in Workflows
-- Monitoring und Fehlerbehandlung innerhalb von Automatisierungen
+- Visueller Workflow-Builder mit vielen Integrationen
+- Webhooks, Code-Schritte und API-nahe Logik
+- Cloud- und Self-hosting-Optionen
+- KI- und Agenten-nahe Workflow-Muster
 
-## Vorteile und Nachteile
+## Vorteile und Grenzen
 
 ### Vorteile
 
-- Open-Source und kostenlos in der Self-Hosting-Version
-- Große Auswahl an vorgefertigten Integrationen
-- Benutzerfreundliche, visuelle Oberfläche
-- Hohe Flexibilität durch eigene Skripte und Erweiterungen
-- Datenschutzfreundlich durch Self-Hosting-Möglichkeit
-- Aktive Community und regelmäßige Updates
+- Mehr Kontrolle als viele einfache No-Code-Tools
+- Gut für technische Teams und Self-Hosting
+- Stark für API- und Datenworkflows
 
-### Nachteile
+### Grenzen
 
-- Für Einsteiger kann die Vielzahl der Funktionen zunächst überwältigend sein
-- Cloud-Version ist kostenpflichtig, Preise variieren je nach Plan
-- Einige komplexe Integrationen erfordern technisches Verständnis
-- Dokumentation kann an manchen Stellen detaillierter sein
+- Braucht mehr technisches Verständnis als Zapier
+- Self-Hosting bringt Betriebsverantwortung
+- Fehlerbehandlung und Monitoring müssen sauber geplant werden
+
+## Workflow-Fit
+
+n8n ist einer der besten Kandidaten, wenn Automatisierung nicht nur Klickstrecke, sondern Infrastruktur werden soll. Dann braucht es aber auch Disziplin bei Betrieb und Secrets.
+
+## Datenschutz & Daten
+
+Bei Automatisierung laufen oft Tokens, Kundendaten und interne Daten durch Workflows. Secrets, Logs, Berechtigungen und Trennung zwischen Test und Produktion sind kritisch.
 
 ## Preise & Kosten
 
-n8n bietet eine kostenlose Open-Source-Version, die selbst gehostet werden kann. Für Nutzer, die eine gehostete Lösung bevorzugen, gibt es verschiedene Cloud-Pläne, die je nach Funktionsumfang und Nutzeranzahl gestaffelt sind. Die Preise beginnen häufig mit einem kostenlosen Einstiegstarif für wenige Workflows oder Nutzer, steigen dann je nach Anforderungen. Für genaue Kosten empfiehlt sich ein Blick auf die offizielle Webseite oder Absprache mit dem Anbieter.
+n8n bietet Cloud-Pläne und selbst hostbare Optionen. Die richtige Wahl hängt von Datenschutz, Betriebsaufwand, Ausführungsvolumen und Teamkontrolle ab.
+
+**Zum Anbieter:** https://n8n.io
 
 ## Alternativen zu n8n
 
-- **Zapier**: Eine weit verbreitete Automatisierungsplattform mit einfacher Bedienung und großer App-Auswahl, jedoch meist kostenpflichtig.
-- **Integromat (Make)**: Bietet komplexe Workflow-Automatisierungen mit visueller Oberfläche, mit verschiedenen Preismodellen.
-- **Microsoft Power Automate**: Besonders für Nutzer im Microsoft-Ökosystem geeignet, mit tiefen Integrationen in Office 365 und Azure.
-- **Node-RED**: Open-Source-Tool für visuelle Programmierung und Automatisierung, ähnlich wie n8n, mit Fokus auf IoT und technische Nutzer.
-- **Automate.io**: Einfache Automatisierungslösung mit Fokus auf Marketing und Vertrieb, mit kostenpflichtigen Plänen.
+- [Zapier](/tools/zapier/): für schnelle SaaS-Automationen.
+- [Pipedream](/tools/pipedream/): für entwicklernahe Integrationsworkflows.
+- [Workato](/tools/workato/): für Enterprise-Integration.
+- [UiPath](/tools/uipath/): für RPA und Desktop-nahe Automation.
+- [Kofax RPA](/tools/kofax-rpa/): für Enterprise-RPA mit Legacy-Systemen.
+
+## Redaktionelle Einschätzung
+
+n8n ist einer der besten Kandidaten, wenn Automatisierung nicht nur Klickstrecke, sondern Infrastruktur werden soll. Dann braucht es aber auch Disziplin bei Betrieb und Secrets.
 
 ## FAQ
 
-**1. Ist n8n kostenlos?**  
-Die Open-Source-Version von n8n ist kostenlos und kann selbst gehostet werden. Die Cloud-Version ist kostenpflichtig, bietet aber verschiedene Pläne, darunter auch einen kostenlosen Einstiegstarif.
+**Ist n8n Open Source?**
 
-**2. Braucht man Programmierkenntnisse für n8n?**  
-Grundlegende Automatisierungen lassen sich über die visuelle Oberfläche ohne Programmierkenntnisse erstellen. Für komplexere Workflows oder individuelle Funktionen kann JavaScript-Kenntnis hilfreich sein.
+n8n ist selbst hostbar und source-available; Lizenzdetails sollten direkt geprüft werden.
 
-**3. Kann ich n8n selbst hosten?**  
-Ja, n8n ist Open Source und kann auf eigenen Servern installiert werden, was volle Kontrolle über Daten und Infrastruktur ermöglicht.
+**Ist n8n besser als Zapier?**
 
-**4. Welche Anwendungen kann man mit n8n verbinden?**  
-n8n unterstützt über 200 Integrationen, darunter bekannte Dienste wie Google Sheets, Slack, GitHub, Airtable, und viele mehr.
+Wenn Kontrolle und technische Tiefe wichtig sind, oft ja. Für einfache Automationen ist Zapier schneller.
 
-**5. Wie sicher ist n8n?**  
-Die Sicherheit hängt vom Einsatz ab: Bei Self-Hosting liegt die Verantwortung beim Nutzer. Die Cloud-Version wird vom Anbieter mit Sicherheitsstandards betrieben.
+**Kann n8n KI-Workflows bauen?**
 
-**6. Gibt es eine mobile App für n8n?**  
-Derzeit gibt es keine spezielle mobile App, aber das Webinterface ist responsiv und kann über mobile Browser genutzt werden.
-
-**7. Wie komplex können Workflows sein?**  
-n8n erlaubt sehr komplexe Automatisierungen mit Bedingungen, Schleifen, Fehlerbehandlung und benutzerdefinierten Skripten.
-
-**8. Kann ich n8n in mein Unternehmen integrieren?**  
-Ja, n8n ist gut geeignet für Unternehmensanwendungen, insbesondere wenn individuelle Anpassungen und Datenschutz wichtig sind.
+Ja, n8n wird häufig für LLM- und Agenten-nahe Workflows genutzt.
