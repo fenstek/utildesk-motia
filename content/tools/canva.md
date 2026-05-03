@@ -68,7 +68,7 @@ Im Katalog ist Canva mit dem Preismodell **Freemium** geführt. Für die Entsche
 
 ## Redaktionelle Einschätzung
 
-Canva ist hervorragend für Tempo und Breite. Für unverwechselbare Markenarbeit braucht es trotzdem klare Designregeln.
+Canva ist stark, weil es Gestaltung für Nicht-Designer operationalisiert. Genau deshalb sollte man es nicht mit einem vollwertigen Designsystem verwechseln: Für Kampagnen, Vorlagen und schnelle Varianten ist es hervorragend, für komplexe Marken- und Produktgestaltung braucht es klare Grenzen.
 
 ## FAQ
 

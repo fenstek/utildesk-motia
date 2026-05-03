@@ -41,6 +41,8 @@ for (const file of files) {
     failures.push(`${file}: frontmatter tags leaked into rendered body text`);
   }
 
+  const paragraphsInFile = new Map();
+
   for (const paragraph of body
     .split(/\n\s*\n/)
     .map((value) => value.trim())
@@ -55,8 +57,16 @@ for (const file of files) {
 
     const normalized = paragraph.replace(/\s+/g, ' ').trim();
     if (normalized.length < 120) continue;
+
+    paragraphsInFile.set(normalized, (paragraphsInFile.get(normalized) || 0) + 1);
+
     if (!paragraphs.has(normalized)) paragraphs.set(normalized, new Set());
     paragraphs.get(normalized).add(file);
+  }
+
+  for (const [paragraph, count] of paragraphsInFile.entries()) {
+    if (count < 2) continue;
+    failures.push(`${file}: duplicate long paragraph within file: ${paragraph.slice(0, 180)}`);
   }
 }
 

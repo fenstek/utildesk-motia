@@ -66,7 +66,7 @@ Im Katalog ist EndNote mit dem Preismodell **Einmalzahlung** geführt. Für die 
 
 ## Redaktionelle Einschätzung
 
-EndNote lohnt sich, wenn Quellenverwaltung ein Kernteil des Schreibprozesses ist. Wer nur gelegentlich Webquellen sammelt, fährt mit schlankeren Alternativen oft besser.
+EndNote ist am stärksten, wenn Literaturverwaltung nicht nebenbei passiert, sondern Teil wissenschaftlicher Qualitätssicherung ist. Für kleine Listen wirkt es schwer, für Reviews, Dissertationen und Institutsbibliotheken spart es aber genau dort Zeit, wo Fehler im Literaturverzeichnis später teuer werden.
 
 ## FAQ
 

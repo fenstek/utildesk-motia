@@ -67,7 +67,7 @@ Im Katalog ist PimEyes mit dem Preismodell **Freemium** geführt. Relevant sind 
 
 ## Redaktionelle Einschätzung
 
-PimEyes kann beim eigenen Reputationsschutz helfen, verlangt aber klare ethische Grenzen. Es ist ein Kontrollwerkzeug, kein Spielzeug.
+PimEyes ist ein mächtiges, aber sensibles Werkzeug. Es kann bei Reputationsschutz und Missbrauchserkennung helfen, berührt aber sofort Privatsphäre, Einwilligung und rechtliche Grenzen; der Einsatz sollte deshalb enger begründet sein als bei normalen Suchtools.
 
 ## FAQ
 

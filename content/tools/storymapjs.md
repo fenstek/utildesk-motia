@@ -65,7 +65,7 @@ Im Katalog ist StoryMapJS mit dem Preismodell **Kostenlos** geführt. Trotzdem e
 
 ## Redaktionelle Einschätzung
 
-StoryMapJS ist stark, wenn Karten der Erzählung dienen. Für analytische Geodaten ist ein GIS-Tool besser.
+StoryMapJS ist stark, wenn räumliche oder historische Abläufe erzählt werden sollen. Es ist kein vollwertiges GIS und kein CMS, sondern ein leichtes Storytelling-Werkzeug für Karten, Stationen und narrative Reihenfolgen.
 
 ## FAQ
 

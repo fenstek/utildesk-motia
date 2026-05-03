@@ -66,7 +66,7 @@ Im Katalog ist Elicit mit dem Preismodell **Je nach Plan** geführt. Für die Au
 
 ## Redaktionelle Einschätzung
 
-Elicit ist stark als Recherche-Beschleuniger, nicht als Wahrheitsmaschine. Die beste Nutzung kombiniert KI-Vorsortierung mit sauberer Quellenprüfung.
+Elicit ist stark als Recherche-Vorstufe, nicht als Ersatz für wissenschaftliches Lesen. Es hilft, Literatur schneller zu finden, Fragen zu strukturieren und Paper zu vergleichen; belastbare Schlussfolgerungen entstehen erst, wenn Methoden, Quellen und Zitate selbst geprüft werden.
 
 ## FAQ
 

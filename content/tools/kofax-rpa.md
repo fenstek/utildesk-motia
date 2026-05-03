@@ -18,14 +18,17 @@ Der Fokus liegt auf regelbasierten Workflows, Datenzugriffen, Systeminteraktione
 
 ## Für wen ist das Tool geeignet?
 
-Kofax RPA passt zu Unternehmen mit vielen repetitiven Backoffice-Prozessen, Legacy-Systemen und Compliance-Anforderungen. Für kleine No-Code-Automationen sind n8n oder Zapier leichter; für große Enterprise-Programme konkurrieren UiPath und Automation Anywhere.
+Kofax RPA passt zu Unternehmen mit vielen wiederkehrenden, regelbasierten Prozessen: Backoffice, Finance, Operations, Versicherung, Verwaltung und dokumentenlastige Abläufe. Besonders relevant ist es, wenn Systeme nicht sauber integriert sind und Menschen Daten zwischen Masken, PDFs, Portalen oder Altsystemen übertragen.
+
+Nicht jeder Prozess ist ein guter RPA-Kandidat. Wenn Regeln instabil, Eingaben unklar oder Ausnahmen häufig sind, sollte zuerst der Prozess verbessert werden, bevor ein Bot gebaut wird.
 
 ## Typische Einsatzszenarien
 
-- Daten aus Portalen, Formularen und Legacy-Systemen übertragen
-- Backoffice-Prozesse mit klaren Regeln automatisieren
-- Manuelle Systemarbeit in Finance, Operations oder Service reduzieren
-- RPA in Enterprise-Governance und Monitoring einbetten
+- **Backoffice-Automatisierung:** Daten aus Portalen, Formularen oder Altsystemen übernehmen.
+- **Dokumentenprozesse:** Informationen aus Rechnungen, Anträgen oder Nachweisen in Folgesysteme bringen.
+- **Systembrücken:** Anwendungen verbinden, für die keine saubere API-Integration verfügbar ist.
+- **Compliance-nahe Abläufe:** wiederkehrende Prüfungen, Abgleiche und Protokolle standardisieren.
+- **Entlastung von Routinearbeit:** manuelle Kopier- und Kontrollaufgaben reduzieren.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ Kofax RPA passt zu Unternehmen mit vielen repetitiven Backoffice-Prozessen, Lega
 
 ## Workflow-Fit
 
-Kofax RPA ist sinnvoll, wenn Prozesse teuer, wiederkehrend und regelbasiert sind. Ohne Prozesspflege wird RPA aber schnell nur ein digitaler Klebstreifen auf alten Problemen.
+Kofax RPA sollte mit Prozessanalyse beginnen, nicht mit Bot-Bau. Gute Kandidaten haben klare Regeln, messbare Häufigkeit, stabile Eingaben und bekannte Ausnahmen. Danach sollten Bot, Monitoring, Fehlerpfad und Verantwortliche definiert werden.
+
+Wichtig ist ein Betriebsmodell: Wer pflegt Bots, wer reagiert auf UI-Änderungen, wie werden Credentials geschützt und wie wird Erfolg gemessen? Ohne diese Antworten wird RPA schnell fragil.
 
 ## Datenschutz & Daten
 
@@ -72,18 +77,18 @@ Kofax RPA wird typischerweise als Enterprise-Angebot mit individuellen Kondition
 
 ## Redaktionelle Einschätzung
 
-Kofax RPA ist sinnvoll, wenn Prozesse teuer, wiederkehrend und regelbasiert sind. Ohne Prozesspflege wird RPA aber schnell nur ein digitaler Klebstreifen auf alten Problemen.
+Kofax RPA kann viel Effizienz bringen, wenn Prozesse stabil, regelbasiert und teuer genug sind. Gefährlich wird es, wenn Bots schlechte Prozesse nur verdecken; nachhaltiger Nutzen entsteht erst mit Prozessanalyse, Monitoring und klarer Verantwortung.
 
 ## FAQ
 
-**Ist Kofax RPA für kleine Teams geeignet?**
+**Wann lohnt sich Kofax RPA?**
 
-Eher selten. Kleine Teams starten oft leichter mit n8n oder Zapier.
+Wenn ein regelbasierter Prozess häufig genug vorkommt, manuell teuer ist und sich nicht einfacher per API oder Prozessänderung lösen lässt.
 
-**Braucht RPA APIs?**
+**Ist RPA besser als eine echte Integration?**
 
-Nicht zwingend. Gerade bei fehlenden APIs kann RPA helfen, ist aber wartungsanfälliger.
+Nicht grundsätzlich. Eine stabile API-Integration ist oft robuster. RPA ist besonders nützlich, wenn Altsysteme, Portale oder fehlende Schnittstellen eine andere Lösung blockieren.
 
-**Ist RPA gleich KI?**
+**Was ist das größte Risiko?**
 
-Nein. RPA automatisiert Prozesse; KI kann einzelne Entscheidungen oder Dokumentenverarbeitung ergänzen.
+Bots auf instabilen Prozessen. Wenn Masken, Regeln und Verantwortlichkeiten unklar sind, automatisiert man Chaos statt Arbeit zu sparen.

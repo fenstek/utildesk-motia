@@ -65,7 +65,7 @@ Im Katalog ist Sockeye mit dem Preismodell **Je nach Plan** geführt. Bei Open-S
 
 ## Redaktionelle Einschätzung
 
-Sockeye ist ein Werkzeug für Spezialisten. Für normale Übersetzungsworkflows sind fertige Übersetzer deutlich praktischer.
+Sockeye ist ein technisch orientiertes MT-Werkzeug für Teams, die Übersetzungsmodelle verstehen, trainieren oder reproduzierbar testen wollen. Für normale Nutzer ist es zu nah an Forschung und Infrastruktur; für NLP-Teams kann gerade das der Vorteil sein.
 
 ## FAQ
 

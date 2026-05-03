@@ -18,14 +18,17 @@ Damit ist Marian kein Endnutzer-Übersetzer wie DeepL oder Google Translate, son
 
 ## Für wen ist das Tool geeignet?
 
-Marian passt zu Forschung, NLP-Teams, Sprachdiensten und Unternehmen mit eigenen Anforderungen an Übersetzungsmodelle. Für einzelne Texte ist ein fertiger Übersetzungsdienst sinnvoller.
+Marian NMT passt zu NLP-Teams, Forschenden und Organisationen, die maschinelle Übersetzung selbst trainieren, betreiben oder evaluieren wollen. Besonders relevant ist es, wenn Kontrolle über Modelle, Trainingsdaten, Sprachpaare und Reproduzierbarkeit wichtig ist.
+
+Für normale Nutzer, die schnell einen Text übersetzen wollen, ist Marian NMT zu technisch. Dort sind DeepL, Google Translate oder integrierte Übersetzungsdienste deutlich einfacher.
 
 ## Typische Einsatzszenarien
 
-- Eigene NMT-Modelle trainieren oder evaluieren
-- Übersetzungssysteme in technische Pipelines integrieren
-- Sprachpaare, Domänen und Modellqualität kontrolliert testen
-- Forschung zu maschineller übersetzung reproduzieren
+- **MT-Forschung:** Übersetzungsmodelle trainieren, vergleichen und reproduzierbar evaluieren.
+- **Spezialisierte Sprachpaare:** eigene Daten für weniger gut abgedeckte Domänen oder Sprachen testen.
+- **Lokale Übersetzungspipelines:** Verarbeitung stärker kontrollieren, statt nur externe APIs zu nutzen.
+- **Benchmarking:** Modellqualität, Laufzeit und Ressourcenbedarf systematisch messen.
+- **Lehre und Experimente:** neuronale maschinelle Übersetzung praktisch nachvollziehen.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ Marian passt zu Forschung, NLP-Teams, Sprachdiensten und Unternehmen mit eigenen
 
 ## Workflow-Fit
 
-Marian NMT ist ein Werkzeug für Teams, die Übersetzung kontrollieren wollen. Wer nur schnell einen Text übersetzen will, sollte nicht hier anfangen.
+Marian NMT gehört in einen technischen NLP-Workflow: Daten vorbereiten, Tokenisierung und Trainingsparameter festlegen, Modelltraining dokumentieren, Qualität mit geeigneten Metriken und menschlicher Prüfung bewerten und Deployment separat planen.
+
+Wichtig ist die Datenbasis. Schlechte, unausgewogene oder rechtlich unklare Trainingsdaten führen zu problematischen Übersetzungen, egal wie gut das Framework ist.
 
 ## Datenschutz & Daten
 
@@ -71,18 +76,18 @@ Marian ist Open Source. Kosten entstehen durch Hardware, Trainingsdaten, Enginee
 
 ## Redaktionelle Einschätzung
 
-Marian NMT ist ein Werkzeug für Teams, die Übersetzung kontrollieren wollen. Wer nur schnell einen Text übersetzen will, sollte nicht hier anfangen.
+Marian NMT ist für Teams interessant, die maschinelle Übersetzung selbst betreiben, anpassen oder reproduzierbar evaluieren wollen. Für schnelle Einzelübersetzungen ist es zu technisch; für Forschung, kontrollierte MT-Pipelines und Datenschutzanforderungen ist genau diese Nähe zum Modell der Vorteil.
 
 ## FAQ
 
-**Ist Marian NMT für normale Nutzer geeignet?**
+**Ist Marian NMT für Einsteiger geeignet?**
 
-Nein, es ist ein Entwickler- und Forschungsframework.
+Nur bedingt. Es ist eher ein Framework für technisch versierte Nutzer, Forschung und eigene Übersetzungspipelines.
 
-**Kann Marian lokal laufen?**
+**Wann lohnt sich Marian NMT?**
 
-Ja, Marian ist für eigene technische Umgebungen gedacht.
+Wenn ein Team Kontrolle über Modell, Daten und Betrieb braucht oder Übersetzungsqualität für spezielle Domänen systematisch testen will.
 
-**Ist Marian besser als DeepL?**
+**Was ist die wichtigste Voraussetzung?**
 
-Das ist kein sinnvoller Direktvergleich: Marian ist ein Framework, DeepL ein fertiger Dienst.
+Gute parallele Trainingsdaten, technisches Know-how und ein sauberer Evaluationsprozess. Ohne das ist ein fertiger Übersetzungsdienst meist sinnvoller.

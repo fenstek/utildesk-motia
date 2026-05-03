@@ -18,14 +18,17 @@ Es ist kein modernes SaaS-Dashboard, sondern ein technisches Werkzeug für Forsc
 
 ## Für wen ist das Tool geeignet?
 
-MALLET passt zu Forschung, Digital Humanities, NLP-Experimenten und Teams mit Java- oder CLI-nahem Workflow. Wer moderne LLM-APIs oder No-Code-Textanalyse sucht, ist bei MeaningCloud, Google Natural Language oder Hugging Face schneller.
+MALLET passt zu Forschenden, Digital-Humanities-Teams, NLP-Praktikern und Studierenden, die Textklassifikation oder Topic Modeling kontrolliert durchführen wollen. Besonders relevant ist es, wenn lokale, reproduzierbare Experimente wichtiger sind als eine moderne Oberfläche.
+
+Für schnelle No-Code-Analysen oder generative KI-Workflows ist MALLET nicht die bequemste Wahl. Es richtet sich an Menschen, die mit Korpora, Parametern und Auswertung bewusst arbeiten möchten.
 
 ## Typische Einsatzszenarien
 
-- Topic Modeling auf großen Textsammlungen durchführen
-- Dokumente klassifizieren oder Textkorpora untersuchen
-- NLP-Verfahren in reproduzierbare Forschungspipelines einbauen
-- Ältere, bewährte ML-Methoden für Textanalyse nutzen
+- **Topic Modeling:** Themenstrukturen in größeren Textsammlungen explorieren.
+- **Textklassifikation:** Modelle für Kategorien, Labels oder Forschungsfragen trainieren.
+- **Digital Humanities:** historische, literarische oder wissenschaftliche Korpora systematisch auswerten.
+- **Reproduzierbare Experimente:** lokale Läufe dokumentieren und Parameter nachvollziehbar halten.
+- **Lehre und Methodik:** klassische NLP-Verfahren praktisch demonstrieren.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ MALLET passt zu Forschung, Digital Humanities, NLP-Experimenten und Teams mit Ja
 
 ## Workflow-Fit
 
-MALLET wirkt altmodisch, aber gerade das kann ein Vorteil sein: stabil, lokal, reproduzierbar. Für schnelle KI-Spielereien ist es falsch; für Korpusarbeit kann es sehr richtig sein.
+MALLET verlangt Vorbereitung: Korpus bereinigen, Tokenisierung und Stopwords bewusst wählen, Parameter dokumentieren und Ergebnisse kritisch interpretieren. Topic Modeling liefert keine fertige Wahrheit, sondern Muster, die fachlich gelesen werden müssen.
+
+Für Forschungsprojekte ist Reproduzierbarkeit ein Vorteil. Datenstand, Befehle, Parameter und Auswertung sollten zusammen abgelegt werden, damit Ergebnisse später überprüfbar bleiben.
 
 ## Datenschutz & Daten
 
@@ -72,18 +77,18 @@ MALLET ist Open Source. Kosten entstehen durch Infrastruktur, Datenaufbereitung 
 
 ## Redaktionelle Einschätzung
 
-MALLET wirkt altmodisch, aber gerade das kann ein Vorteil sein: stabil, lokal, reproduzierbar. Für schnelle KI-Spielereien ist es falsch; für Korpusarbeit kann es sehr richtig sein.
+MALLET ist altmodisch im besten Sinne: lokal, reproduzierbar und wissenschaftsnah. Wer moderne No-Code-Oberflächen erwartet, wird enttäuscht; wer Topic Modeling und Textklassifikation kontrolliert auf Korpora anwenden will, bekommt ein belastbares Werkzeug.
 
 ## FAQ
 
-**Ist MALLET noch relevant?**
+**Ist MALLET noch zeitgemäß?**
 
-Ja, vor allem für Topic Modeling, Forschung und reproduzierbare Textanalyse.
+Ja, wenn klassische NLP-Verfahren, lokale Ausführung und Reproduzierbarkeit wichtig sind. Für moderne LLM-Workflows ist es nicht der erste Einstieg.
 
-**Brauche ich Programmierkenntnisse?**
+**Braucht man Programmierkenntnisse?**
 
-Ja, zumindest CLI- und Datenworkflow-Verständnis.
+Grundlegende Kommandozeilen- und Datenkenntnisse helfen sehr. MALLET ist kein komfortables Web-Dashboard.
 
-**Ist MALLET ein LLM-Tool?**
+**Kann MALLET Inhalte automatisch verstehen?**
 
-Nein. Es ist ein klassisches NLP- und Machine-Learning-Toolkit.
+Nein. Es erkennt statistische Muster. Die fachliche Interpretation der Themen oder Klassen bleibt Aufgabe der Nutzer.
