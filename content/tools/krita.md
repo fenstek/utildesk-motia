@@ -2,84 +2,90 @@
 slug: krita
 title: Krita
 category: AI
-price_model: Open Source
+price_model: "Open Source"
 tags: [digital-painting, illustration, creative-tools]
 official_url: "https://krita.org/en/download/krita-desktop"
 popularity: 0
+description: "Krita ist ein Design- und Kreativwerkzeug für Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen."
 ---
-
 # Krita
 
-Krita ist eine leistungsstarke Open-Source-Software für digitale Malerei und Illustration. Sie richtet sich an Künstler und Kreative, die professionelle Werkzeuge für das Zeichnen, Malen und Gestalten benötigen. Krita bietet eine breite Palette an Pinseln, Texturen und Funktionen, die speziell für digitale Künstler entwickelt wurden. Die Software unterstützt sowohl Anfänger als auch Profis und ist auf mehreren Betriebssystemen verfügbar.
+In der Praxis entscheidet bei Krita nicht die Featureliste allein. Entscheidend ist, ob das Tool eine kleine, aber nervige Lücke im Workflow schließt: Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
 
-## Für wen ist Krita geeignet?
+Krita wirkt am überzeugendsten, wenn man es mit einer nüchternen Checkliste prüft: Was spart Zeit, was braucht Kontrolle, und welche Aufgabe wäre ohne das Tool deutlich mühsamer?
 
-Krita ist ideal für digitale Künstler, Illustratoren, Comic-Zeichner und alle, die kreative Projekte am Computer umsetzen möchten. Besonders geeignet ist es für Anwender, die Wert auf ein flexibles, anpassbares Tool legen, das keine Lizenzkosten verursacht. Auch für Lehrende und Studierende im Bereich Kunst und Design ist Krita eine attraktive Option, da es kostenlos und dennoch sehr umfangreich ist. Nutzer, die professionelle Bildbearbeitung und Fotoretusche suchen, könnten ergänzend andere Programme benötigen, da Krita seinen Schwerpunkt auf Malerei und Illustration legt.
+## Der praktische Kern
 
-## Hauptfunktionen
+Kreativtools sparen Zeit, wenn sie Material formbar machen. Sie schaden, wenn alle Ergebnisse nach derselben Vorlage oder demselben Filter aussehen.
 
-- Umfangreiche Pinselbibliothek mit anpassbaren Einstellungen
-- Unterstützung von Ebenen, Masken und Vektorwerkzeugen
-- Animationstools für Frame-by-Frame-Animationen
-- Farbräder, Farbpaletten und -management
-- Stabilisierung von Strichen für präzises Zeichnen
-- Unterstützung von Grafiktabletts inklusive Drucksensitivität
-- OpenGL-Beschleunigung für flüssige Performance
-- Anpassbare Benutzeroberfläche und Arbeitsbereiche
-- Import- und Exportfunktionen in verschiedenen Formaten (z.B. PSD, PNG, TIFF)
-- Ressourcenmanager für Pinsel, Texturen und mehr
-- Integration von Skripten und Plugins zur Erweiterung der Funktionalität
+Besonders passend ist Krita für Illustratoren, Lernende, freie Künstler und Teams mit Open-Source-Anspruch. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
-## Vorteile und Nachteile
+## Typische Einsatzszenarien
 
-### Vorteile
-- Komplett kostenlos und quelloffen
-- Sehr umfangreiche und professionelle Funktionen
-- Regelmäßige Updates und aktive Community
-- Plattformübergreifend (Windows, macOS, Linux)
-- Hohe Anpassbarkeit und Flexibilität für verschiedene Arbeitsstile
-- Gute Unterstützung für Animationen und Comics
+- digitale Illustrationen und Skizzen malen
+- Brushes und Texturen für eigene Stile nutzen
+- Comic- oder Concept-Art-Workflows aufbauen
+- freie Kreativsoftware in Bildung oder Projekten einsetzen
 
-### Nachteile
-- Benutzeroberfläche kann für Einsteiger anfangs komplex wirken
-- Keine integrierten Funktionen für Fotobearbeitung oder Grafikdesign im klassischen Sinne
-- Einige erweiterte Funktionen erfordern Einarbeitung und Übung
-- Support hauptsächlich über Community-Foren und Dokumentation
+## Was im Alltag gut funktioniert
+
+- beschleunigt Entwürfe, Varianten und einfache Assets
+- macht visuelle Arbeit für mehr Menschen zugänglich
+- hilft beim Testen von Richtungen vor der finalen Ausarbeitung
+
+Zusätzlich ist bei Krita der Kontext wichtig: Manche Teams nutzen solche Werkzeuge als schnelle Vorstufe, andere als festen Produktionsbaustein. Die zweite Variante braucht mehr Regeln, zahlt sich aber aus, wenn viele ähnliche Aufgaben anfallen.
+
+## Grenzen und rote Flaggen
+
+- Markenqualität entsteht nicht automatisch
+- Vorlagen und Effekte müssen bewusst gebrochen werden
+- Rechte, Quellen und Exportqualität sind wichtig
+- Krita ist stark für Malerei, aber nicht automatisch das beste Werkzeug für Layout, UI oder Vektorgrafik.
+
+## Workflow-Fit
+
+Krita passt am besten, wenn vorher klar ist, welches Ergebnis am Ende stehen soll. Ein gutes Setup definiert Eingangsmaterial, Verantwortliche, Prüfschritte und Export. Ohne diese vier Punkte wirkt ein Tool zwar produktiv, erzeugt aber oft nur mehr unfertige Zwischenstände.
+
+## Qualitätssicherung
+
+Ein guter Kreativtest ist: Erkennt man die Marke oder nur das Tool? Für die Katalogbewertung heißt das: Nicht nur die erste Ausgabe ansehen, sondern denselben Fall zwei- oder dreimal mit leicht anderen Eingaben testen. Wenn die Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben, ist der Nutzen deutlich belastbarer.
+
+## Datenschutz & Betriebsfragen
+
+Je nach Einsatz können Texte, Bilder, Audiodaten, Kundendaten, Forschungsnotizen oder interne Prozessinformationen verarbeitet werden. Vor produktiver Nutzung sollten Berechtigungen, Speicherorte, Exportwege und Löschmöglichkeiten geklärt sein. Gerade bei Tools mit KI- oder Cloud-Anteil ist außerdem wichtig, ob Daten zum Training, zur Analyse oder nur zur Bereitstellung des Dienstes genutzt werden.
 
 ## Preise & Kosten
 
-Krita ist vollständig kostenlos verfügbar und wird als Open-Source-Projekt entwickelt. Nutzer können die Software ohne Einschränkungen herunterladen und verwenden. Es besteht die Möglichkeit, das Projekt durch Spenden oder den Kauf im Microsoft Store oder Steam zu unterstützen, was jedoch optional ist.
+Im Katalog ist Krita mit dem Preismodell **Open Source** geführt. Für eine echte Entscheidung lohnt sich ein Blick auf aktuelle Limits, Teamfunktionen, Exportmöglichkeiten und die Frage, ob der kostenlose oder günstige Einstieg später in teure Workflows kippt.
+
+**Zum Anbieter:** https://krita.org/en/download/krita-desktop
 
 ## Alternativen zu Krita
 
-- **Adobe Photoshop:** Branchenstandard für digitale Bildbearbeitung und Malerei mit umfangreichen Funktionen, jedoch kostenpflichtig.
-- **Corel Painter:** Professionelle Malsoftware mit realistischen Pinsel- und Textur-Optionen, kostenpflichtig.
-- **Clip Studio Paint:** Beliebtes Tool für Comic- und Manga-Künstler mit vielen spezialisierten Funktionen, kostenpflichtig.
-- **MediBang Paint:** Kostenlose Mal- und Comic-Software mit Cloud-Integration, weniger umfangreich als Krita.
-- **GIMP:** Open-Source-Bildbearbeitungsprogramm, stärker auf Fotobearbeitung fokussiert, aber mit Malfunktionalitäten.
+- [Rebelle](/tools/rebelle/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [GIMP](/tools/gimp/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Inkscape](/tools/inkscape/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Clip Studio Paint](/tools/clip-studio-paint/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+- [Corel Painter](/tools/corel-painter/): sinnvoller Vergleichspunkt, wenn Workflow, Preis oder Spezialisierung anders ausfallen sollen.
+
+## Redaktionelle Einschätzung
+
+Krita ist dann eine gute Wahl, wenn Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen tatsächlich ein wiederkehrender Teil der Arbeit ist. Wenn der Bedarf nur gelegentlich auftaucht, reicht oft ein leichteres Werkzeug oder ein bestehender Prozess. Wenn der Bedarf regelmäßig auftaucht, lohnt sich ein sauberer Test mit echten Daten, echten Freigaben und einem klaren Qualitätsmaßstab.
 
 ## FAQ
 
-**1. Ist Krita kostenlos?**  
-Ja, Krita ist eine komplett kostenlose und Open-Source-Software.
+**Ist Krita für Einsteiger geeignet?**
 
-**2. Auf welchen Betriebssystemen läuft Krita?**  
-Krita ist für Windows, macOS und Linux verfügbar.
+Für erste Tests meistens ja. Der produktive Einsatz hängt aber weniger vom Einstieg ab als davon, ob Aufgaben, Daten und Qualitätskontrolle sauber definiert sind.
 
-**3. Unterstützt Krita Grafiktabletts?**  
-Ja, Krita unterstützt Grafiktabletts mit Drucksensitivität für präzises Zeichnen.
+**Wann lohnt sich Krita besonders?**
 
-**4. Kann man mit Krita Animationen erstellen?**  
-Ja, Krita bietet Funktionen für Frame-by-Frame-Animationen.
+Wenn derselbe Arbeitsschritt regelmäßig wiederkehrt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird.
 
-**5. Welche Dateiformate unterstützt Krita?**  
-Krita unterstützt gängige Formate wie PSD, PNG, TIFF, JPEG und sein eigenes KRA-Format.
+**Was sollte man vor dem Einsatz prüfen?**
 
-**6. Ist Krita für Anfänger geeignet?**  
-Ja, Krita kann von Anfängern genutzt werden, allerdings kann die Vielzahl an Funktionen anfangs überwältigend sein.
+Preismodell, Datenverarbeitung, Export, Teamrechte, Integrationen und die Frage, wer Ergebnisse fachlich freigibt.
 
-**7. Gibt es eine mobile Version von Krita?**  
-Derzeit gibt es keine offizielle mobile Version, Krita ist für Desktop-Plattformen konzipiert.
+**Was ist der häufigste Fehler?**
 
-**8. Wie kann ich Krita unterstützen?**  
-Man kann das Projekt durch Spenden oder den Kauf über Plattformen wie Steam unterstützen.
+Das Tool zu früh als Lösung zu betrachten. Besser ist ein kleiner Praxistest mit einem echten Beispiel und klarer Entscheidung danach.
