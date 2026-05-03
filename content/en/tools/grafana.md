@@ -9,81 +9,91 @@ tags:
   - dashboards
 official_url: 'https://grafana.com/'
 popularity: 0
-description: 'Open-source platform for visualizing and monitoring metrics and logs with interactive dashboards, alerts, and broad data-source support.'
 translation: full
 ---
 # Grafana
 
-Grafana is an open-source platform for visualizing and monitoring metrics and logs. It makes it possible to display data from different sources in interactive dashboards to better understand and monitor systems, applications, or business processes. Grafana is often used in areas such as IT monitoring, observability, and business intelligence.
+Grafana is a platform for dashboards, monitoring, and observability. It makes metrics, logs, traces, and other time-series data visible so teams can not only operate systems, but understand them.
 
-## Who is Grafana suitable for?
+The real value of a Grafana dashboard does not lie in pretty curves, but in better decisions. A good dashboard shows whether a system is healthy, where a problem starts, and which question needs to be asked next.
 
-Grafana is aimed at IT administrators, DevOps teams, software developers, and data analysts who need a flexible and powerful solution for monitoring and analyzing data. It is especially suitable for companies and organizations that want to bring together different data sources centrally and visualize them clearly. Grafana is also a good choice for research institutions and educational institutions that need transparent data visualization.
+## Who is Grafana for?
 
-## Key Features
+Grafana is suitable for DevOps, SRE, platform teams, developers, database owners, and infrastructure owners. Business teams can also benefit when time-series data and operational metrics need to be visualized in a clear and understandable way.
 
-- Support for numerous data sources such as Prometheus, InfluxDB, Elasticsearch, MySQL, PostgreSQL, and many more  
-- Creation of interactive dashboards with a wide range of visualizations (graphs, heatmaps, tables, etc.)  
-- Real-time monitoring and alerting when defined thresholds are reached  
-- User and team management with granular access rights  
-- Plugins and extensions for custom customization and integration  
-- Flexible dashboard layouts and customizable panels  
-- Support for annotations and comments for better contextualization of data  
-- Export and sharing features for dashboards and reports  
-- API access for automation and integration into your own workflows  
+## Typical use cases
 
-## Pros and Cons
+- Monitor service metrics such as latency, errors, throughput, and resource usage.
+- Bring logs, traces, and metrics together in observability workflows.
+- Configure alerts for real operational risks instead of every small spike.
+- Build dashboards for deployments, infrastructure, or product metrics.
+- Visualize data from Prometheus, Loki, Tempo, cloud services, or databases.
 
-### Pros
+## What really matters in day-to-day work
 
-- Open source with a large community and regular updates  
-- Broad support for data sources and integrations  
-- Intuitive user interface and powerful visualizations  
-- Flexible customization options through plugins and themes  
-- Scalable from small projects to large enterprise environments  
-- Free basic version available (freemium model)  
+In day-to-day use, data modeling makes the difference. A dashboard that shows everything often shows nothing. Good Grafana usage starts with SLOs, relevant metrics, and one clear question per panel.
 
-### Cons
+Alerting deserves special care. Too many alerts make teams deaf; too few let outages grow. The goal is not maximum monitoring, but reliable attention.
 
-- Setup and configuration can be complex for beginners  
-- Some advanced features are only available in paid versions  
-- Performance can suffer with very large data volumes without optimization  
-- Support and documentation are partly technical and require prior experience  
+## Key features
 
-## Pricing & Costs
+- Dashboards for metrics, logs, traces, and time-series data.
+- Many data sources and plugins for infrastructure and applications.
+- Alerting, annotations, and team features.
+- Explore views for ad hoc investigations.
+- Cloud and self-hosted options depending on the operating model.
 
-Grafana is available in a freemium version that offers many core features for free. For companies, there are paid subscriptions with expanded features such as enterprise support, additional security features, and improved scalability. Exact prices vary depending on the plan and provider. In addition, Grafana is also available as open-source software that can be self-hosted at no cost.
+## Pros and limitations
+
+### Strengths
+
+- Highly flexible and broadly integrable.
+- Strong for observability and technical operational data.
+- Open-source ecosystem and large community.
+
+### Limitations
+
+- Poor metrics do not get better through good visualization.
+- Dashboard sprawl can make maintenance and orientation harder.
+- Operations, permissions, and data costs need to be planned.
+
+## Workflow fit
+
+Grafana fits into an observability process with clear service goals: define metrics, build dashboards, test alerts, review incidents, and regularly check panels for usefulness. After every major incident, the dashboard should become a little smarter.
+
+After every incident, at least one dashboard question should be answered: Did the board help find the root cause faster? If not, a panel should be removed, added, or named more precisely.
+
+## Privacy & data
+
+Grafana often visualizes sensitive operational data, internal URLs, customer traces, or security events. Data sources, roles, external links, and public dashboards should be configured restrictively.
+
+## Pricing & costs
+
+Grafana can be self-hosted or used as a cloud service. Costs arise from hosting, data volume, retention, team features, and the time needed to maintain dashboards sensibly. The pricing model recorded in the dataset is: Freemium.
 
 ## Alternatives to Grafana
 
-- **Kibana** – Focus on log analysis and Elasticsearch data visualization  
-- **Datadog** – Cloud-based monitoring platform with extensive integrations  
-- **Zabbix** – Open-source solution for network and application monitoring  
-- **Prometheus** – Open-source system for time-series monitoring with its own query language  
-- **Tableau** – Professional business intelligence software focused on data visualization  
+- Datadog: integrated observability platform with less self-management.
+- New Relic: strong for application performance monitoring.
+- Kibana: a natural fit in the Elastic stack.
+- Prometheus UI: simpler for pure Prometheus queries.
+- Chronosphere or Honeycomb: interesting for larger observability programs.
+
+## Editorial assessment
+
+Grafana is excellent when teams want to know what their systems are really doing. But it requires clean metrics and maintenance; otherwise, you are just drawing pretty curves over unresolved problems.
+
+A good first test for Grafana is therefore not a demo click, but a real mini workflow: monitor service metrics such as latency, errors, throughput, and resource usage. If that works with real data, real roles, and a clear outcome, the next expansion step is worthwhile.
+
+At the same time, the most important limitation should be stated openly: poor metrics do not get better through good visualization. That friction is not a deal-breaker, but it belongs in the decision up front, not only in the frustrated post-purchase debrief.
 
 ## FAQ
 
-**1. Is Grafana free to use?**  
-Yes, the basic version of Grafana is open source and free to use. Paid subscriptions are available for advanced features and support.
+**Is Grafana suitable for small teams?**
+Partially. Small teams should check whether the benefit really justifies the setup and maintenance effort.
 
-**2. Which data sources does Grafana support?**  
-Grafana supports many data sources such as Prometheus, InfluxDB, Elasticsearch, MySQL, PostgreSQL, cloud services, and more through plugins.
+**What should you pay attention to before using Grafana?**
+Poor metrics do not get better through good visualization. It should also be clear in advance who will maintain the tool, which data will be used, and how success will be measured.
 
-**3. Can I self-host Grafana?**  
-Yes, Grafana can be installed and run locally or on your own servers. There is also a hosted cloud version.
-
-**4. Which programming languages or APIs can I use with Grafana?**  
-Grafana provides a REST API and supports plugins that can be developed in Go, JavaScript, or TypeScript.
-
-**5. Is Grafana suitable for companies of all sizes?**  
-Yes, Grafana is scalable and is used by both small teams and large enterprises.
-
-**6. How does alerting work in Grafana?**  
-Users can define thresholds that automatically trigger notifications by email, Slack, or other channels when exceeded.
-
-**7. Can I share dashboards with others?**  
-Yes, dashboards can be exported, embedded, or shared with other users, including access control.
-
-**8. Is there a mobile app for Grafana?**  
-There are official and unofficial mobile apps, and the dashboards are responsive and usable in the browser on mobile devices.
+**Does Grafana replace human work?**
+No. Grafana can speed up or structure work, but decisions, quality control, and responsibility remain with the team.
