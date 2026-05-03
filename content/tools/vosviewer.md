@@ -6,78 +6,81 @@ price_model: Kostenlos
 tags: [bibliometrics, research, visualization]
 official_url: "https://www.vosviewer.com/"
 popularity: 0
+description: "VOSviewer visualisiert bibliometrische Netzwerke, Zitationen, Co-Autorschaften und Forschungslandschaften."
 ---
-
 # VOSviewer
 
-VOSviewer ist eine spezialisierte Software zur Visualisierung und Analyse von bibliometrischen Netzwerken. Sie ermöglicht Forschern, wissenschaftliche Publikationen, Zitate und Kooperationsmuster übersichtlich darzustellen und zu interpretieren. Die Anwendung ist besonders nützlich, um komplexe Zusammenhänge in großen Datensätzen aus wissenschaftlichen Datenbanken verständlich zu machen.
+VOSviewer hilft, wissenschaftliche Literatur als Netzwerk sichtbar zu machen. Statt einzelne Paper isoliert zu betrachten, zeigt das Tool Cluster, Verbindungen, Zitationsmuster und thematische Nähe.
+
+Passend für Bibliometrie, Forschungsmanagement, Reviews und Analysen wissenschaftlicher Felder.
 
 ## Für wen ist VOSviewer geeignet?
 
-VOSviewer richtet sich vor allem an Wissenschaftler, Bibliometriker und Forschungsmanager, die umfangreiche Literatur- und Zitationsdaten analysieren möchten. Auch Bibliothekare und Informationsspezialisten profitieren von den Visualisierungsmöglichkeiten, um Forschungstrends und Kooperationsnetzwerke zu identifizieren. Die Software ist sowohl für Einsteiger im Bereich der bibliometrischen Analyse als auch für erfahrene Nutzer geeignet, die detaillierte Karten wissenschaftlicher Publikationen erstellen wollen.
+VOSviewer eignet sich für Forschende, Bibliometrie-Teams, Hochschulen und Research-Analysten, die wissenschaftliche Landschaften visuell erkunden möchten. Besonders stark ist es bei Co-Autorenschaft, Zitationsbeziehungen, Keyword-Clustern und der Frage, welche Themenfelder zusammenhängen.
 
-## Hauptfunktionen
+Für normale Literaturverwaltung ist VOSviewer nicht gedacht. Es ergänzt Zotero, EndNote oder Datenbankrecherchen, indem es aus bibliometrischen Daten eine Karte macht, die anschließend fachlich interpretiert werden muss.
 
-- Erstellung von Netzwerkkarten basierend auf bibliometrischen Daten wie Autoren, Schlagwörtern oder Publikationen  
-- Visualisierung von Co-Autorenschaften, Zitationsbeziehungen und Schlagwort-Kooccurrenzen  
-- Unterstützung verschiedener Datenformate aus wissenschaftlichen Datenbanken (z. B. Web of Science, Scopus)  
-- Cluster-Erkennung zur Identifikation von Forschungsfeldern und Themengebieten  
-- Interaktive Karten mit Zoom- und Filterfunktionen zur detaillierten Analyse  
-- Exportmöglichkeiten von Visualisierungen in verschiedene Bild- und Vektorformate  
-- Möglichkeit zur Analyse von Volltextdaten und Abstracts für Textmining-Anwendungen  
-- Integration von Zeitdimensionen zur Darstellung von Entwicklungen über die Zeit  
+## Typische Einsatzszenarien
 
-## Vorteile und Nachteile
+- Zitations- und Co-Autorennetzwerke visualisieren
+- Themencluster in Forschungsfeldern erkennen
+- Literaturlandschaften für Reviews vorbereiten
+- Daten aus wissenschaftlichen Datenbanken explorieren
+- Forschungsfelder für Scoping Reviews oder Förderanträge kartieren
+- Kooperationen, Hotspots und Randbereiche eines Themengebiets sichtbar machen
 
-### Vorteile
+## Stärken
 
-- Kostenlos verfügbar und plattformunabhängig (Windows, macOS, Linux)  
-- Intuitive Benutzeroberfläche mit umfangreichen Visualisierungstools  
-- Unterstützt große Datensätze und komplexe Netzwerke  
-- Umfangreiche Dokumentation und aktive Nutzer-Community  
-- Flexibel einsetzbar für diverse bibliometrische Fragestellungen  
+- Sehr stark für visuelle Bibliometrie
+- Hilft beim Erkennen von Clustern
+- Kostenlos nutzbar
 
-### Nachteile
+## Grenzen
 
-- Eingeschränkte Funktionen zur direkten Datenbeschaffung – Nutzer müssen Daten extern exportieren  
-- Für Einsteiger kann die Interpretation komplexer Netzwerke herausfordernd sein  
-- Keine integrierte Cloud-Lösung oder Kollaborationsfunktionalität  
-- Keine kommerzielle Supportgarantie, Support erfolgt hauptsächlich über Community und Dokumentation  
+- Erfordert saubere Eingangsdaten
+- Visualisierungen brauchen Interpretation
+- Nicht für normale Quellenverwaltung gedacht
+
+## Workflow-Fit
+
+VOSviewer passt nach der Recherche und vor der vertieften Interpretation. Erst müssen Daten aus Web of Science, Scopus oder anderen Quellen sauber exportiert und bereinigt werden; danach helfen Karten, Cluster und Verbindungen beim Verständnis des Feldes.
+
+Die Visualisierung ist kein Ergebnis an sich. Sie sollte mit Suchstrategie, Datenquelle, Schwellenwerten und fachlicher Deutung dokumentiert werden, damit die Karte nachvollziehbar bleibt.
+
+## Datenschutz & Daten
+
+Bibliometrische Datensätze können Forschungsstrategie oder interne Analysen offenlegen. Exporte und Projektdateien sollten geschützt werden.
 
 ## Preise & Kosten
 
-VOSviewer ist als Freeware erhältlich und kann kostenlos heruntergeladen und genutzt werden. Es fallen keine Lizenzgebühren oder Abonnementkosten an. Je nach Bedarf können jedoch Kosten für den Zugang zu bibliometrischen Datenbanken entstehen, da VOSviewer die Daten nicht selbst bereitstellt.
+VOSviewer ist im Katalog als **Kostenlos** geführt. Kosten entstehen eher indirekt durch Zugang zu bibliografischen Datenbanken, Datenbereinigung und Zeit für Interpretation.
+
+Für Forschungsteams ist das Tool sehr attraktiv, wenn bereits Datenzugang vorhanden ist. Ohne saubere Eingangsdaten helfen auch kostenlose Visualisierungen nur begrenzt.
+
+**Zum Anbieter:** https://www.vosviewer.com/
 
 ## Alternativen zu VOSviewer
 
-- **CiteSpace**: Open-Source-Software für die Visualisierung von wissenschaftlichen Trends und Zitationsnetzwerken mit Fokus auf Zeitverläufe.  
-- **Gephi**: Allgemeine Netzwerkvisualisierungssoftware, die auch für bibliometrische Analysen eingesetzt werden kann.  
-- **Bibliometrix (R-Paket)**: Umfangreiches Toolset für bibliometrische Analysen in der Programmiersprache R, geeignet für statistisch erfahrene Nutzer.  
-- **Pajek**: Software zur Analyse großer Netzwerke, die auch im bibliometrischen Kontext verwendet wird.  
-- **Sci2 Tool**: Plattform für die Wissenschaftsanalyse mit verschiedenen Analysemethoden, einschließlich bibliometrischer Visualisierung.  
+- [Research Rabbit](/tools/research-rabbit/): stärker für explorative Paper-Entdeckung und visuelle Literaturpfade.
+- [Elicit](/tools/elicit/): besser für KI-gestützte Literaturfragen, Paper-Screening und Extraktion.
+- [Zotero](/tools/zotero/): zentrale Ergänzung für Quellenverwaltung, PDFs und Zitationsarbeit.
+- [Endnote](/tools/endnote/): passender für institutionelle Literaturverwaltung und Word-nahe Zitationsprozesse.
+- [Citavi](/tools/citavi/): stark für Wissensorganisation und Literaturarbeit im deutschsprachigen Raum.
+
+## Redaktionelle Einschätzung
+
+VOSviewer ist ideal, wenn man ein Forschungsfeld als Karte verstehen will. Für Quellenverwaltung ergänzt es Zotero oder EndNote.
 
 ## FAQ
 
-**1. Ist VOSviewer für Anfänger geeignet?**  
-Ja, die Benutzeroberfläche ist relativ intuitiv, jedoch kann die Interpretation der Netzwerke etwas Einarbeitung erfordern.
+**Ist VOSviewer für Einsteiger geeignet?**
 
-**2. Welche Datenformate unterstützt VOSviewer?**  
-VOSviewer unterstützt unter anderem Daten aus Web of Science, Scopus, Dimensions sowie RIS und CSV-Dateien.
+VOSviewer ist technisch zugänglich, aber bibliometrisch nicht selbsterklärend. Einsteiger sollten mit kleinen Datensätzen beginnen und Datenquelle sowie Schwellenwerte dokumentieren.
 
-**3. Kann ich VOSviewer auf allen Betriebssystemen nutzen?**  
-Ja, VOSviewer ist für Windows, macOS und Linux verfügbar.
+**Wann lohnt sich VOSviewer besonders?**
 
-**4. Muss ich für VOSviewer bezahlen?**  
-Nein, VOSviewer ist kostenlos nutzbar. Kosten können jedoch für die Datenbeschaffung anfallen.
+Es lohnt sich, wenn ein Forschungsfeld als Netzwerk verstanden werden soll: Wer zitiert wen, welche Themen clustern zusammen und wo liegen zentrale Autorinnen, Journals oder Begriffe.
 
-**5. Gibt es eine Möglichkeit zur Zusammenarbeit in VOSviewer?**  
-Direkte Kollaborationsfunktionen sind nicht integriert. Nutzer können jedoch Visualisierungen exportieren und teilen.
+**Worauf sollte man vor dem Einsatz achten?**
 
-**6. Wie aktuell sind die Daten in VOSviewer?**  
-Die Aktualität hängt von den importierten Datenquellen ab, da VOSviewer selbst keine Daten bereitstellt.
-
-**7. Kann ich mit VOSviewer auch Textmining durchführen?**  
-Ja, eingeschränkte Textmining-Funktionen zur Analyse von Abstracts und Volltexten sind vorhanden.
-
-**8. Wo finde ich Hilfestellungen und Tutorials?**  
-Es gibt umfangreiche offizielle Dokumentationen sowie zahlreiche Online-Tutorials und eine aktive Nutzer-Community.
+Wichtig sind Datenqualität, Dubletten, Suchstrategie, Exportformat und Transparenz der Visualisierungsparameter. Ohne diese Angaben lassen sich Karten leicht überinterpretieren.

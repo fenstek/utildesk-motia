@@ -56,6 +56,7 @@ const homeHref = hrefFor("/", locale);
 const toolsHref = hrefFor("/tools/", locale);
 const ratgeberHref = hrefFor("/ratgeber/", locale);
 const categoryHref = hrefFor("/category/", locale);
+const methodologyHref = locale === "en" ? "/en/methodology/" : "/methodologie/";
 const privacyHref = locale === "en" ? "/en/privacy/" : "/datenschutz/";
 const imprintHref = locale === "en" ? "/en/imprint/" : "/impressum/";
 const llmsHref = locale === "en" ? "/en/llms.txt" : "/llms.txt";
@@ -160,8 +161,8 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
   ]);
 } else if (pathname === "/" || pathname === "/en/") {
   resolvedTitle = locale === "en"
-    ? "Utildesk: AI Tools, Automation and Practical Guides"
-    : "Utildesk: AI-Tools, Automatisierung und KI-Ratgeber";
+    ? "AI Tools Directory 2026 - Utildesk"
+    : "KI-Tools Verzeichnis 2026 - Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
       ? "Discover curated AI tools, workflow context and practical guides in one AI-readable directory."
@@ -393,6 +394,8 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             <a href={toolsHref}>{ui.footerTools}</a>
 
             <a href={categoryHref}>{ui.footerCategories}</a>
+
+            <a href={methodologyHref}>{ui.footerMethodology}</a>
 
             <a href={privacyHref} rel="nofollow">{ui.footerPrivacy}</a>
 

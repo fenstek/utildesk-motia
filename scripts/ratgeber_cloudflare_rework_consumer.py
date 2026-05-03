@@ -135,6 +135,9 @@ def normalize_tasks(notes: str, scope: list[str]) -> tuple[list[str], list[str]]
         "Erzeuge eine neue themenspezifische Utildesk-Illustration, die sichtbar zum Text passt.",
         "Nutze eine frische Bildidee; den bisherigen visuellen Aufbau nicht wiederverwenden.",
         "Keine Service-Labels, keine internen Hinweise, keine generischen Footer-Texte in der Illustration.",
+        "Variiere den Stil zwischen den Artikeln: nicht immer Raster, Flowchart oder Blockdiagramm.",
+        "Mindestens eine Illustration muss eine kuenstlerische, erzaehlende Szene sein; Diagramme nur, wenn sie wirklich etwas erklaeren.",
+        "Bild 1 und Bild 2 duerfen nicht denselben Aufbau haben; eine Szene, ein anderer Blickwinkel oder eine Vergleichssituation ist Pflicht.",
     ]
     if notes:
         if "text" in scope:
@@ -195,6 +198,9 @@ def prepare_rework_packet(article_workspace: Path, request: dict[str, Any]) -> P
             "same selected renderer variant",
             "same cover/workflow asset hash",
             "generic block diagram",
+            "two schematic diagrams in the same article",
+            "same visual style as the previous candidate",
+            "single-tool product card illustration without comparison context",
             "internal footer/service labels",
         ]
     job["human_rework_notes"] = notes

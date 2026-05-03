@@ -11,83 +11,72 @@ official_url: 'https://www.detox.com/'
 popularity: 0
 source_language: de
 translation: full
+description: "Detox is an end-to-end testing framework for mobile apps, especially React Native-oriented development and QA workflows."
 ---
 # Detox
 
-Detox is an open-source testing tool specifically designed for end-to-end testing of mobile applications. It allows developers and QA teams to perform automated tests on real devices and emulators to ensure the quality and stability of apps. Detox works in sync with the app and provides precise and reliable test results.
+Detox helps test mobile apps automatically in the way users would operate them. For React Native teams, it is interesting because tests run closer to real interactions than pure unit tests.
+
+Suitable for mobile teams, QA automation, and projects with frequent regressions in app flows.
 
 ## Who is Detox for?
 
-Detox is primarily aimed at developers, QA engineers, and teams that develop mobile apps (iOS and Android) and want to integrate automated end-to-end tests. It is particularly useful for projects that use React Native or other native mobile frameworks. Teams that focus on stable, reproducible tests at continuous integration also benefit from Detox.
+Detox is most useful for teams and individuals that treat a mobile test automation as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
-## Key Features
+## Typical use cases
 
-- Synchronized end-to-end tests for mobile apps on real devices and emulators
-- Support for iOS and Android platforms
-- Integration with CI/CD systems to automate test runs
-- Automatic synchronization with UI elements for reliable tests
-- Support for React Native and native apps
-- Ability to run tests in parallel on multiple devices
-- Extensible through custom test scripts and plugins
-- Open-source community with active development and support
+- Test login, onboarding, and checkout flows
+- Catch regressions before releases
+- Extend mobile CI pipelines
+- Automate interactions on devices or simulators
 
-## Advantages and Disadvantages
+## Strengths
 
-### Advantages
-- Open source and free to use
-- High reliability through synchronization with app state
-- Supports both Android and iOS
-- Integrates with existing CI/CD pipelines
-- Good documentation and active community
+- Stronger than pure component tests for real flows
+- Good for React Native-oriented projects
+- Helps with release-critical mobile paths
 
-### Disadvantages
-- Setup can be complex for beginners
-- Focus on mobile end-to-end tests, less suitable for unit tests
-- Requires technical knowledge for setup and configuration
-- Dependence on native build tools and emulators
+## Limits
 
-## Pricing and Costs
+- E2E tests can be fragile
+- Setup and CI stability need maintenance
+- Not every test belongs at this level
 
-Detox is an open-source tool and can be used for free. However, costs can arise from infrastructure (e.g., devices, cloud services, CI systems). Professional support or specialized extensions may require individual offers from third-party providers.
+## Workflow fit
+
+Detox makes sense when it has a clear place in the process: intake, production, review, or publishing. Without that role, even a strong tool becomes just another open tab.
+
+## Privacy & data
+
+Test environments should not use real customer data. Credentials, test accounts, and device logs must be controlled.
+
+## Pricing & costs
+
+In the catalog, Detox is marked with the pricing model **Open Source**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
+
+**Provider:** https://www.detox.com/
 
 ## Alternatives to Detox
 
-- **Appium**: A cross-platform open-source tool for mobile testing that supports multiple frameworks and languages.
-- **Espresso**: Google's native testing framework for Android, ideal for UI tests on this platform.
-- **XCUITest**: Apple's native UI testing framework for iOS applications.
-- **Cypress**: Primarily for web applications, but with growing focus on mobile web tests.
-- **TestCafe**: Automation tool for web apps, partially usable for mobile web tests.
+- [Appium](/en/tools/appium/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Selenium](/en/tools/selenium/): useful comparison point for adjacent workflows, pricing, or team fit.
+- Playwright: useful comparison point for adjacent workflows, pricing, or team fit.
+- [Cypress](/en/tools/cypress/): useful comparison point for adjacent workflows, pricing, or team fit.
+
+## Editorial assessment
+
+Detox is valuable when core mobile flows need real protection. It requires disciplined test architecture.
 
 ## FAQ
 
-**1. What is Detox exactly?
+**Is Detox beginner-friendly?**
 
-Detox is an open-source framework for end-to-end testing of mobile applications that enables reliable tests through synchronization with the app.
+It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
 
-**2. Which platforms are supported?
+**When is Detox worth it?**
 
-Detox supports both iOS and Android apps.
+When the recurring value is greater than setup, cost, and review effort. For one-off tasks, a lighter tool is often faster.
 
-**3. Is Detox free?
+**What should be checked before adoption?**
 
-Yes, Detox is open source and free to use. Any additional costs arise from infrastructure or supplementary services.
-
-**4. For which app types is Detox suitable?
-
-Detox is suitable for native and React Native mobile applications.
-
-**5. How do I integrate Detox into CI/CD pipelines?
-
-Detox can be integrated into CI systems through command-line commands to automate tests at every build.
-
-**6. Do I need programming knowledge for Detox?
-
-Yes, basic knowledge of JavaScript and mobile app testing is helpful for setting up and using Detox.
-
-**7. How reliable are the test results?
-
-Detox is very reliable due to synchronization with the app, minimizing fleeting errors.
-
-**8. Can Detox test on multiple devices in parallel?
-
-Yes, Detox supports parallel testing on multiple devices or emulators.
+Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.

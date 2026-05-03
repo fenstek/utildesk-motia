@@ -6,79 +6,81 @@ price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://www.zotero.org/"
 popularity: 0
+description: "Zotero ist ein kostenloser Referenzmanager für Literaturverwaltung, Web-Clipping, Zitate und Forschungsbibliotheken."
 ---
-
 # Zotero
 
-Zotero ist ein kostenloses, Open-Source-Tool zur Literaturverwaltung und Forschungsorganisation. Es unterstützt Nutzer dabei, Quellen, Artikel und Notizen effizient zu sammeln, zu verwalten und in wissenschaftlichen Arbeiten zu zitieren. Zotero integriert sich nahtlos in Webbrowser und Textverarbeitungsprogramme, was den Recherche- und Schreibprozess erheblich erleichtert.
+Zotero ist eine der zugänglichsten Lösungen für Literaturverwaltung. Es sammelt Quellen aus dem Web, organisiert PDFs und Metadaten und unterstützt beim Zitieren in Schreibprogrammen.
+
+Gut für Studierende, Forschende, Journalisten und Wissensarbeiter, die Quellen sauber sammeln wollen.
 
 ## Für wen ist Zotero geeignet?
 
-Zotero richtet sich vor allem an Studierende, Wissenschaftler, Lehrende und alle, die regelmäßig wissenschaftliche Arbeiten verfassen. Es ist ideal für Personen, die ihre Quellen systematisch organisieren und automatisiert Literaturverzeichnisse erstellen möchten. Auch für Teams, die gemeinsam an Forschungsprojekten arbeiten, bietet Zotero praktische Funktionen zur Zusammenarbeit.
+Zotero eignet sich für Studierende, Forschende, Autorinnen und Wissensarbeiter, die Quellen, PDFs, Notizen und Zitate zuverlässig organisieren möchten. Besonders stark ist es für Web-Recherche, Literaturverwaltung, Gruppenbibliotheken und den Übergang vom Sammeln zum Schreiben.
 
-## Hauptfunktionen
+Zotero ist kein Recherche-Orakel und keine automatische Qualitätsprüfung. Es hilft, gefundene Literatur sauber zu verwalten; Relevanz, Quellenkritik und Argumentation bleiben wissenschaftliche Arbeit.
 
-- **Automatisches Erfassen von Quellen:** Erfasst bibliografische Daten direkt aus dem Browser mit einem Klick.
-- **Organisation von Literatur:** Erlaubt das Anlegen von Sammlungen, Unterordnern und Tags zur übersichtlichen Verwaltung.
-- **PDF-Verwaltung:** Speichert und annotiert PDFs direkt in der Bibliothek.
-- **Zitationsunterstützung:** Unterstützt zahlreiche Zitierstile und lässt sich in Textverarbeitungsprogramme wie Microsoft Word und LibreOffice integrieren.
-- **Cloud-Synchronisation:** Synchronisiert die Bibliothek über verschiedene Geräte hinweg.
-- **Teamarbeit:** Ermöglicht das Teilen von Sammlungen und gemeinsame Bearbeitung.
-- **Erweiterbarkeit:** Verfügt über eine breite Palette an Plugins für zusätzliche Funktionen.
-- **Volltextsuche:** Sucht in Metadaten und PDF-Inhalten.
+## Typische Einsatzszenarien
 
-## Vorteile und Nachteile
+- Quellen aus Browser und Datenbanken speichern
+- PDFs und Notizen organisieren
+- Zitate in Word, LibreOffice oder anderen Workflows nutzen
+- Literaturlisten mit Teams teilen
+- Metadaten, Tags und Sammlungen für größere Projekte strukturieren
+- Literatur für Artikel, Abschlussarbeiten oder Reviews nachvollziehbar verwalten
 
-### Vorteile
+## Stärken
 
-- Kostenlos und Open Source
-- Einfache Bedienung und Integration in den Workflow
-- Umfangreiche Funktionen für Literaturverwaltung und Zitation
-- Plattformübergreifende Nutzung (Windows, macOS, Linux)
-- Unterstützung von Teamarbeit und Kollaboration
-- Regelmäßige Updates und aktive Community
+- Kostenloser und offener Einstieg
+- Sehr praktisch für Web-Recherche
+- Großes Ökosystem und gute Community
 
-### Nachteile
+## Grenzen
 
-- Die Cloud-Speicher-Kapazität ist im kostenlosen Plan begrenzt
-- Für sehr komplexe Literaturverwaltungen können zusätzliche Plugins notwendig sein
-- Die Lernkurve für Einsteiger kann anfangs etwas steil sein
-- Die Benutzeroberfläche wirkt teilweise etwas altmodisch im Vergleich zu modernen Tools
+- Große Team- und Institutionsprozesse brauchen Struktur
+- Metadaten müssen kontrolliert werden
+- Cloud-Speicher und Anhänge können Kosten erzeugen
+
+## Workflow-Fit
+
+Zotero passt früh in den Forschungsworkflow: Quelle speichern, Metadaten prüfen, PDF ablegen, Notizen oder Tags ergänzen und später beim Schreiben korrekt zitieren. Je konsequenter diese Routine ist, desto weniger Chaos entsteht kurz vor Abgabe oder Veröffentlichung.
+
+Bei Teamprojekten sollte vorab klar sein, wie Gruppenbibliotheken, Ordner, Tags und Namensregeln genutzt werden. Sonst hat jedes Mitglied zwar Zotero, aber keine gemeinsame Ordnung.
+
+## Datenschutz & Daten
+
+Zotero-Bibliotheken enthalten Forschungsnotizen, PDFs und Quellenlisten. Sync, Gruppenbibliotheken und Freigaben sollten bewusst eingesetzt werden.
 
 ## Preise & Kosten
 
-Zotero ist grundsätzlich kostenlos nutzbar. Die Basisfunktionen und eine begrenzte Menge an Cloud-Speicher stehen ohne Kosten zur Verfügung. Für zusätzlichen Speicherplatz und erweiterte Features bietet Zotero kostenpflichtige Abonnements an. Die Preise variieren je nach Speichergröße und Anbieterplan.
+Zotero ist im Katalog als **Freemium** geführt. Die Kernsoftware ist kostenlos; Kosten entstehen vor allem, wenn mehr Cloud-Speicher für PDFs und Anhänge gebraucht wird.
+
+Viele Einzelpersonen kommen lange ohne bezahlten Speicher aus, wenn sie lokale Dateien bewusst organisieren. Für Teams sind Sync, Speicher und Gruppenrechte wichtiger.
+
+**Zum Anbieter:** https://www.zotero.org/
 
 ## Alternativen zu Zotero
 
-- **Mendeley:** Ebenfalls ein kostenloses Literaturverwaltungsprogramm mit starker Integration in akademische Netzwerke.
-- **EndNote:** Ein professionelles Tool mit umfangreichen Funktionen, oft kostenpflichtig.
-- **Citavi:** Besonders beliebt im deutschsprachigen Raum, bietet Literaturverwaltung und Wissensorganisation.
-- **RefWorks:** Cloud-basierte Lösung, häufig von Universitäten angeboten.
-- **Paperpile:** Moderne, browserbasierte Lösung speziell für Google-Workspace-Nutzer.
+- [Endnote](/tools/endnote/): stärker in manchen institutionellen und Word-zentrierten Forschungsumgebungen.
+- [Jabref](/tools/jabref/): besonders passend für BibTeX- und LaTeX-nahe Workflows.
+- [Citavi](/tools/citavi/): gut für Wissensorganisation, Zitate und deutschsprachige Hochschulkontexte.
+- [Research Rabbit](/tools/research-rabbit/): Ergänzung für explorative Paper-Entdeckung und visuelle Literaturpfade.
+- [Mendeley](/tools/mendeley/): Alternative für PDF-Verwaltung und akademische Literaturarbeit mit eigenem Ökosystem.
+
+## Redaktionelle Einschätzung
+
+Zotero ist oft der beste Startpunkt für Literaturverwaltung. Nur sehr spezielle institutionelle Workflows brauchen schwerere Alternativen.
 
 ## FAQ
 
-**1. Ist Zotero wirklich kostenlos?**  
-Ja, die Grundfunktionen von Zotero sind kostenlos. Für zusätzlichen Cloud-Speicher und einige erweiterte Funktionen gibt es kostenpflichtige Pläne.
+**Ist Zotero für Einsteiger geeignet?**
 
-**2. Auf welchen Betriebssystemen läuft Zotero?**  
-Zotero ist für Windows, macOS und Linux verfügbar.
+Ja, Zotero ist sehr einsteigerfreundlich, solange man Metadaten nach dem Speichern kontrolliert. Der Browser-Connector macht den Einstieg besonders leicht.
 
-**3. Kann ich Zotero mit Microsoft Word verwenden?**  
-Ja, Zotero bietet Plugins zur Integration in Microsoft Word und LibreOffice, die das Einfügen von Zitaten und Literaturverzeichnissen erleichtern.
+**Wann lohnt sich Zotero besonders?**
 
-**4. Wie sicher sind meine Daten bei Zotero?**  
-Die Daten werden lokal auf dem Gerät gespeichert und können optional über Zotero-Server synchronisiert werden. Die Sicherheit hängt auch von den eigenen Einstellungen ab.
+Zotero lohnt sich, sobald mehr als eine Handvoll Quellen über längere Zeit verwaltet werden müssen. Je größer das Schreib- oder Forschungsprojekt, desto stärker zahlt sich die Ordnung aus.
 
-**5. Kann ich Zotero in der Cloud nutzen?**  
-Ja, Zotero bietet eine Cloud-Synchronisation an, die automatisch Bibliotheksdaten und Dateien synchronisiert.
+**Worauf sollte man vor dem Einsatz achten?**
 
-**6. Gibt es eine mobile App für Zotero?**  
-Es gibt keine offizielle mobile App, aber einige Drittanbieter-Apps bieten eingeschränkte Unterstützung.
-
-**7. Wie funktioniert die Zusammenarbeit in Zotero?**  
-Nutzer können Gruppenbibliotheken erstellen und gemeinsam an Literaturlisten arbeiten.
-
-**8. Welche Zitierstile unterstützt Zotero?**  
-Zotero unterstützt tausende Zitierstile, die einfach ausgewählt und angepasst werden können.
+Wichtig sind korrekte Metadaten, Zitierstil, PDF-Speicher, Backup, Gruppenrechte und ein konsistentes Tagging. Vor Abgabe sollten Zitate und Bibliografie immer manuell geprüft werden.

@@ -2,83 +2,80 @@
 slug: bolt-new
 title: Bolt.new
 category: Developer
-price_model: null
+price_model: "Plan-based"
 tags:
   - coding
-  - developer-tools
+  - developer tools
 official_url: 'https://bolt.new'
-popularity: 79
-source_language: de
+popularity: 86
 translation: full
+description: "Bolt.new is a browser-based AI development tool for fast web prototypes, app ideas, and iterative coding experiments."
 ---
 # Bolt.new
 
-Bolt.new is a modern development tool designed to accelerate and simplify the development process. It offers a user-friendly interface and powerful features that help developers get projects started and managed more efficiently. The platform focuses on automating repetitive tasks and enabling seamless integration into existing workflows.
+Bolt.new turns an idea into a visible web prototype quickly. Chat, files, runtime, and preview sit close together, so the first version can be tested before setting up a local project.
 
-## For Who is Bolt.new Suitable?
+Bolt.new is especially useful for MVPs, landing pages, learning projects, and technical demos.
 
-Bolt.new is primarily aimed at software developers, teams, and companies that prioritize fast prototyping and efficient project management. It is ideal for developers looking to optimize their workflows without compromising flexibility. Both beginners and experienced developers can benefit from the tool's versatile and intuitive design.
+## Who is Bolt.new for?
 
-## Key Features
+Bolt.new is most useful for teams and individuals that treat a AI development environment as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
-- **Faster Project Start:** Allows for immediate creation of new projects with pre-defined templates.
-- **Automation of Routine Tasks:** Reduces manual work through integrated automation capabilities.
-- **Integration with Popular Developer Tools:** Supports connection to version control systems, CI/CD pipelines, and more.
-- **Collaboration Features:** Facilitates teamwork through shared workspaces and communication channels.
-- **Adaptable Workflows:** Enables individual adaptation of processes to meet the needs of the team.
-- **Real-time Updates:** Informs about changes and progress in projects in real-time.
-- **Cloud-based Platform:** Provides access from anywhere and simplifies management of distributed teams.
+## Typical use cases
 
-## Benefits and Drawbacks
+- Start prototypes directly in the browser
+- Iterate UI ideas with a live preview
+- Set up small apps, demos, and experiments faster
+- Move code into a real repository afterwards
 
-### Benefits
+## Strengths
 
-- Accelerates the development process through simple project starts.
-- Automates recurring tasks and saves time.
-- Supports seamless integration into existing toolchains.
-- Facilitates collaboration through integrated team features.
-- Flexible adaptation options for individual working styles.
+- Very fast start
+- Good loop between prompt, code, and preview
+- Practical for product ideas without local setup
 
-### Drawbacks
+## Limits
 
-- The extent of automation may require additional setup time.
-- Detailed pricing and feature information varies depending on the provider/plan.
-- For very specific or complex development environments, additional tools may be necessary.
+- Production code still needs review and tests
+- Complex architecture decisions remain team work
+- Secrets and deployments should not happen casually
 
-## Pricing & Costs
+## Workflow fit
 
-The pricing of Bolt.new varies depending on the provider and chosen plan. Typically, there are free basic versions with limited functionality, as well as paid tariffs that include expanded features and support. For accurate information, it is recommended to consult the official website of the provider.
+Bolt.new makes sense when it has a clear place in the process: intake, production, review, or publishing. Without that role, even a strong tool becomes just another open tab.
+
+## Privacy & data
+
+AI coding tools may process source code, prompts, and product ideas. Sensitive repositories should be used only with a clear policy.
+
+## Pricing & costs
+
+In the catalog, Bolt.new is marked with the pricing model **Plan-based**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
+
+**Provider:** https://bolt.new
 
 ## Alternatives to Bolt.new
 
-- [GitHub Codespaces](/tools/github-codespaces/): Cloud-based development environments with comprehensive integration with GitHub.
-- [Gitpod](/tools/gitpod/): Automated development environments that can be started directly from the browser.
-- [CodeSandbox](/tools/codesandbox/): Online editor for fast web development and prototyping.
-- [Replit](/tools/replit/): Collaborative platform for writing, running, and sharing code directly in the browser.
-- [Visual Studio Code with Remote-Extensions](/tools/visual-studio-code-mit-remote-extensions/): Local development environment with extensions for remote work.
+- [Openhands](/en/tools/openhands/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Devin](/en/tools/devin/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Github Copilot](/en/tools/github-copilot/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Cursor](/en/tools/cursor/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Replit](/en/tools/replit/): useful comparison point for adjacent workflows, pricing, or team fit.
+
+## Editorial assessment
+
+Bolt.new is a strong accelerator for early product work. The move from demo to production still needs deliberate control.
 
 ## FAQ
 
-**1. Is Bolt.new suitable for beginners?**  
-Yes, Bolt.new is designed to be user-friendly, allowing beginners to quickly start projects, with advanced features available for experienced developers.
+**Is Bolt.new beginner-friendly?**
 
-**2. Which programming languages are supported?**  
-The supported languages vary depending on the provider and plan, typically including popular languages like JavaScript, Python, and other web and backend technologies.
+It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
 
-**3. Can Bolt.new be integrated into existing workflows?**  
-Yes, Bolt.new supports integration with many popular tools and platforms, ensuring a seamless workflow.
+**When is Bolt.new worth it?**
 
-**4. Is there a free version of Bolt.new?**  
-Often, providers offer a free basic version with limited functionality suitable for smaller projects or testing purposes.
+When the recurring value is greater than setup, cost, and review effort. For one-off tasks, a lighter tool is often faster.
 
-**5. How secure are the data when using Bolt.new?**  
-The security of data depends on the provider; many use modern security standards and encryption to protect user data.
+**What should be checked before adoption?**
 
-**6. Is Bolt.new suitable for teams?**  
-Yes, Bolt.new offers features specifically designed for team collaboration, including shared workspaces and communication channels.
-
-**7. Which operating systems are supported?**  
-As a cloud-based platform, Bolt.new is generally platform-agnostic and can be accessed through popular web browsers on various operating systems.
-
-**8. How can I contact Bolt.new support?**  
-Support options vary depending on the provider; typically, there are documentation, community forums, and direct customer support available in paid plans.
+Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.

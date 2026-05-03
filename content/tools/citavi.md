@@ -2,83 +2,92 @@
 slug: citavi
 title: Citavi
 category: AI
-price_model: Freemium
+price_model: "Freemium"
 tags: [reference-management, academic-research, writing]
 official_url: "https://lumivero.com/products/citavi/"
 popularity: 0
+description: "Citavi ist ein Recherche- und Analysewerkzeug für Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus."
 ---
-
 # Citavi
 
-Citavi ist eine umfassende Software zur Literaturverwaltung und Wissensorganisation, die insbesondere für akademische Forschung und wissenschaftliches Schreiben entwickelt wurde. Sie unterstützt Nutzer dabei, Quellen zu sammeln, zu strukturieren und effizient in eigenen Texten zu verwenden. Mit einer Kombination aus Referenzmanagement, Aufgabenplanung und Wissensorganisation erleichtert Citavi den gesamten Forschungsprozess.
+Man kann Citavi sehr schnell unterschätzen oder überschätzen. Beides ist unpraktisch. Sinnvoller ist die Frage, ob Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus im eigenen Alltag regelmäßig genug vorkommt, um ein eigenes Werkzeug zu rechtfertigen.
 
-## Für wen ist Citavi geeignet?
+Ein guter Einstieg in Citavi ist ein Mini-Pilot mit echtem Material. Nicht die schönste Demo entscheidet, sondern ob das Ergebnis ohne viel Nacharbeit in den nächsten Schritt gehen kann.
 
-Citavi richtet sich vor allem an Studierende, Forschende, Lehrende und Autoren, die umfangreiche wissenschaftliche Arbeiten verfassen. Besonders nützlich ist die Software für Nutzer, die ihre Literaturquellen systematisch verwalten, Zitate korrekt einfügen und den Überblick über komplexe Forschungsprojekte behalten möchten. Auch Teams, die gemeinsam an Projekten arbeiten, profitieren von den Kooperationsfunktionen. Die Software eignet sich für verschiedene Fachbereiche, da sie flexibel an unterschiedliche Anforderungen angepasst werden kann.
+## Der praktische Kern
 
-## Hauptfunktionen
+Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Für Citavi sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
-- **Literaturverwaltung:** Importieren, organisieren und verwalten von Quellen aus zahlreichen Datenbanken und Bibliothekskatalogen.
-- **Zitationsstil-Manager:** Automatisches Einfügen von Zitaten und Literaturverzeichnissen in Textdokumente mit Unterstützung vieler Zitierstile.
-- **Wissensorganisation:** Notizen, Zitate und Gedanken strukturieren und mit Schlagwörtern versehen.
-- **Aufgabenplanung:** Erstellen von To-Do-Listen und Terminen, um den Forschungsfortschritt zu verfolgen.
-- **PDF-Verwaltung:** Annotieren und Durchsuchen von PDF-Dateien direkt in der Software.
-- **Teamarbeit:** Gemeinsames Arbeiten an Projekten mit mehreren Nutzern und Synchronisation über die Cloud.
-- **Integration:** Unterstützung für Microsoft Word, LaTeX und weitere Schreibprogramme.
-- **Automatische Duplikaterkennung:** Vermeidung von mehrfachen Einträgen in der Literaturdatenbank.
+Bei Studierende, Forschende, Hochschulen und Teams mit vielen Quellen und Zitaten spielt Citavi seine Stärken aus, wenn die Nutzung bewusst eingegrenzt wird. Ein guter Einsatzbereich ist besser als fünf halb genutzte Funktionen.
 
-## Vorteile und Nachteile
+## Typische Einsatzszenarien
 
-### Vorteile
+- Literatur sammeln und Zitate organisieren
+- Wissen aus Quellen in Kategorien strukturieren
+- wissenschaftliche Arbeiten mit Gliederung und Nachweisen vorbereiten
+- Team- oder Institutionsworkflows für Quellenarbeit unterstützen
 
-- Umfassende Funktionen, die den gesamten Forschungsprozess abdecken.
-- Intuitive Benutzeroberfläche trotz großer Funktionsvielfalt.
-- Große Auswahl an unterstützten Zitierstilen.
-- Gute Integration in gängige Textverarbeitungsprogramme.
-- Unterstützung für kollaboratives Arbeiten in Teams.
-- Kostenlose Grundversion verfügbar.
+## Was im Alltag gut funktioniert
 
-### Nachteile
+- macht große Quellenmengen schneller überblickbar
+- hilft, Cluster, Muster und Lücken zu erkennen
+- eignet sich gut als Vorstufe zur manuellen Prüfung
 
-- Einarbeitungszeit aufgrund der umfangreichen Funktionen notwendig.
-- Einige erweiterte Funktionen sind nur in kostenpflichtigen Versionen verfügbar.
-- Cloud-Synchronisation erfordert Internetzugang.
-- Benutzeroberfläche wirkt für Anfänger gelegentlich etwas komplex.
+Zusätzlich ist bei Citavi der Kontext wichtig: Manche Teams nutzen solche Werkzeuge als schnelle Vorstufe, andere als festen Produktionsbaustein. Die zweite Variante braucht mehr Regeln, zahlt sich aber aus, wenn viele ähnliche Aufgaben anfallen.
+
+## Grenzen und rote Flaggen
+
+- Rechercheabkürzungen können falsche Sicherheit erzeugen
+- Datenabdeckung ist je nach Feld unterschiedlich
+- Originalquellen bleiben maßgeblich
+- Citavi hilft beim Denken in Struktur, aber Quellenqualität und Argumentation bleiben eigene Arbeit.
+
+## Workflow-Fit
+
+Citavi passt am besten in Workflows, in denen Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+
+Für Citavi arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
+
+## Qualitätssicherung
+
+Bei Citavi sollte die Prüfung mit einem realen Beispiel beginnen: ob Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
+
+## Datenschutz & Betriebsfragen
+
+Bei Citavi geht es vor allem um Suchfragen, Quellenlisten, Notizen, Forschungsdaten und fachliche Bewertungen. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
 ## Preise & Kosten
 
-Citavi bietet eine kostenlose Version mit eingeschränktem Funktionsumfang, die sich für kleinere Projekte und den Einstieg eignet. Für umfangreichere Nutzung und Teamfunktionen gibt es kostenpflichtige Lizenzen, deren Preise je nach Anbieter, Nutzerzahl und Leistungsumfang variieren können. Hochschulen und Forschungseinrichtungen bieten teilweise Campuslizenzen an, die den Zugang erleichtern. Genauere Preisdetails sind auf der offiziellen Webseite bzw. beim jeweiligen Anbieter erhältlich.
+Im Katalog ist Citavi mit dem Preismodell **Freemium** geführt. Für eine belastbare Entscheidung zählen hier vor allem Datenabdeckung, Exportmöglichkeiten, Teamzugänge, Speicher und methodische Prüfzeit; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
+
+**Zum Anbieter:** https://lumivero.com/products/citavi/
 
 ## Alternativen zu Citavi
 
-- **Zotero:** Open-Source-Tool für Literaturverwaltung mit einfacher Bedienung und guter Integration.
-- **EndNote:** Professionelle Software mit umfangreichen Funktionen für Wissenschaftler und Autoren.
-- **Mendeley:** Kombination aus Referenzmanager und soziales Netzwerk für Forscher.
-- **RefWorks:** Webbasierte Lösung für Literaturverwaltung und Zusammenarbeit.
-- **JabRef:** Open-Source-Referenzmanager speziell für LaTeX-Nutzer.
+- [Zotero](/tools/zotero/): stärker, wenn Literaturverwaltung, Web-Clipping, Zitate und Forschungsbibliotheken gefragt ist.
+- [EndNote](/tools/endnote/): passender, wenn der Schwerpunkt auf lange wissenschaftliche Schreibprojekte, Literaturdatenbanken, Zitationsstile und Team-Bibliotheken liegt.
+- [JabRef](/tools/jabref/): guter Vergleich für Teams, die Open-Source-Referenzmanager für BibTeX, LaTeX-nahe Workflows und wissenschaftliches Schreiben brauchen.
+- [Mendeley](/tools/mendeley/): prüfen, wenn ein anderer Schwerpunkt als bei Citavi relevant ist.
+- [Research Rabbit](/tools/research-rabbit/): naheliegend, falls Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen z im Vordergrund steht.
+
+## Redaktionelle Einschätzung
+
+Citavi ist dann eine gute Wahl, wenn Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
 
 ## FAQ
 
-**1. Ist Citavi auch für Mac-Nutzer geeignet?**  
-Citavi ist primär für Windows entwickelt. Mac-Nutzer können Citavi über virtuelle Maschinen oder alternative Tools nutzen.
+**Ist Citavi für Einsteiger geeignet?**
 
-**2. Welche Textverarbeitungsprogramme werden unterstützt?**  
-Citavi unterstützt vor allem Microsoft Word und LaTeX. Für andere Programme gibt es teilweise Exportfunktionen.
+Citavi ist für Einsteiger geeignet, wenn Ergebnisse nicht ungeprüft als Beleg übernommen werden. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
 
-**3. Kann ich Citavi kostenlos testen?**  
-Ja, es gibt eine kostenlose Version mit begrenzten Funktionen, die sich gut zum Ausprobieren eignet.
+**Wann lohnt sich Citavi besonders?**
 
-**4. Wie funktioniert die Zusammenarbeit im Team?**  
-Citavi ermöglicht das gemeinsame Arbeiten an Projekten über Cloud-Synchronisation und Freigaben.
+Citavi lohnt sich besonders, wenn Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
-**5. Welche Zitierstile sind verfügbar?**  
-Es sind viele Zitierstile enthalten, darunter APA, MLA, Chicago und viele weitere, die individuell angepasst werden können.
+**Was sollte man vor dem Einsatz prüfen?**
 
-**6. Wie importiere ich Literaturquellen?**  
-Quellen können aus Bibliothekskatalogen, Datenbanken oder PDF-Dateien importiert werden.
+Vor dem Einsatz prüfen: Datenquelle, Aktualität, Export, Reproduzierbarkeit, Rechte und fachliche Freigabe. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Citavi sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
-**7. Gibt es eine mobile App?**  
-Citavi bietet keine eigenständige mobile App, aber die Cloud-Funktionen ermöglichen Zugriff über Webbrowser.
+**Was ist der häufigste Fehler?**
 
-**8. Wie sicher sind meine Daten?**  
-Citavi speichert Daten lokal und in der Cloud mit Verschlüsselung; Nutzer sollten jedoch die Datenschutzbestimmungen beachten.
+Der häufigste Fehler ist, Recherchekomfort mit wissenschaftlicher Belastbarkeit zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Citavi sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

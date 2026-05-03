@@ -6,76 +6,81 @@ price_model: Je nach Plan
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.dedoose.com/"
 popularity: 0
+description: "Dedoose unterstützt qualitative und Mixed-Methods-Forschung mit Codierung, Analyse, Teamarbeit und Datenvisualisierung."
 ---
-
 # Dedoose
 
-Dedoose ist eine webbasierte Plattform zur qualitativen und quantitativen Datenanalyse, die speziell für Forscher, Pädagogen und Fachleute entwickelt wurde. Das Tool unterstützt die Automatisierung von Analyseprozessen, erleichtert das Management großer Datenmengen und bietet umfangreiche Visualisierungsmöglichkeiten. Dadurch steigert Dedoose die Produktivität und ermöglicht fundierte Entscheidungen auf Basis von Daten.
+Dedoose hilft Forschungsteams, Interviews, Texte, Medien und Codes systematisch auszuwerten. Besonders stark ist es dort, wo qualitative Daten mit quantitativen Merkmalen kombiniert werden.
+
+Geeignet für Sozialforschung, UX-Research, Bildung, Evaluation und Mixed-Methods-Projekte.
 
 ## Für wen ist Dedoose geeignet?
 
-Dedoose richtet sich an Nutzer aus den Bereichen Sozialwissenschaften, Bildungsforschung, Marktforschung und anderen Feldern, in denen qualitative und quantitative Daten kombiniert ausgewertet werden. Besonders geeignet ist das Tool für Teams und Einzelpersonen, die komplexe Datensätze analysieren und dabei Wert auf eine benutzerfreundliche Oberfläche und kollaborative Funktionen legen. Auch in der Lehre und Ausbildung kann Dedoose als unterstützendes Analysewerkzeug eingesetzt werden.
+Dedoose eignet sich für Forschende, UX-Research-Teams, Evaluationen und Hochschulprojekte, die qualitative Daten nicht nur sammeln, sondern sauber codieren und mit quantitativen Merkmalen verbinden wollen. Besonders passend ist es für Mixed-Methods-Projekte mit Interviews, offenen Antworten, Feldnotizen und Fallmerkmalen.
 
-## Hauptfunktionen
+Nicht jedes kleine Interviewprojekt braucht Dedoose. Wenn nur wenige Texte markiert werden sollen, können leichtere Tools genügen. Der Mehrwert entsteht bei Team-Coding, Codebook-Pflege, Vergleichbarkeit und Auswertung über mehrere Datenarten hinweg.
 
-- Integration von qualitativen und quantitativen Daten in einer Plattform  
-- Codierung und Kategorisierung von Text-, Audio- und Videodaten  
-- Automatisierte Analyseprozesse zur Effizienzsteigerung  
-- Umfangreiche Visualisierungsmöglichkeiten wie Diagramme und Tabellen  
-- Kollaborative Funktionen für Teamarbeit und gemeinsame Datenbearbeitung  
-- Exportmöglichkeiten in verschiedene Formate für Berichte und Präsentationen  
-- Cloud-basierter Zugriff für flexibles Arbeiten von überall  
-- Unterstützung bei der Datenorganisation und -verwaltung  
+## Typische Einsatzszenarien
 
-## Vorteile und Nachteile
+- Interviews und Textmaterial codieren
+- Qualitative und quantitative Merkmale verbinden
+- Team-Coding und Konsistenz prüfen
+- Ergebnisse visualisieren und exportieren
+- Codebooks über mehrere Forschende hinweg pflegen
+- Fallvergleiche nach Gruppen, Segmenten oder demografischen Variablen auswerten
 
-### Vorteile
-- Kombination von qualitativer und quantitativer Analyse in einem Tool  
-- Intuitive Benutzeroberfläche auch für Einsteiger  
-- Erleichtert die Zusammenarbeit im Team durch Cloud-Integration  
-- Umfangreiche Funktionen zur Datenvisualisierung und -auswertung  
-- Flexibler Zugriff über das Internet ohne lokale Installation  
+## Stärken
 
-### Nachteile
-- Abhängigkeit von einer stabilen Internetverbindung  
-- Lernkurve bei umfangreichen Funktionen für Neueinsteiger  
-- Preisgestaltung kann je nach Plan und Nutzung variieren  
-- Funktionalitäten können je nach Anbieter-Update unterschiedlich sein  
+- Guter Fokus auf Mixed Methods
+- Nützlich für Teamforschung
+- Hilft bei strukturierter qualitativer Auswertung
+
+## Grenzen
+
+- Methodische Qualität entsteht nicht automatisch
+- Einarbeitung in Codes und Projektstruktur nötig
+- Datenschutz bei Interviews ist besonders wichtig
+
+## Workflow-Fit
+
+Dedoose passt in den Auswertungsteil eines Forschungsprozesses: Material vorbereiten, Anonymisierung prüfen, Codebook anlegen, Pilot-Coding durchführen, Abweichungen besprechen und erst dann breit codieren. Das Tool kann Struktur geben, ersetzt aber keine methodische Entscheidung.
+
+Besonders wichtig ist ein sauberer Start. Wer Codes, Fälle und Deskriptoren zu spät ordnet, muss später mühsam nacharbeiten und gefährdet Vergleichbarkeit.
+
+## Datenschutz & Daten
+
+Forschungsdaten können sensible Aussagen, Namen oder demografische Merkmale enthalten. Anonymisierung, Rollen und Exportkontrolle sind Pflicht.
 
 ## Preise & Kosten
 
-Die Preisstruktur von Dedoose variiert je nach gewähltem Plan und Nutzungsumfang. Typischerweise gibt es Abonnements für Einzelpersonen, Teams und institutionelle Nutzer. Einige Anbieter bieten kostenlose Testversionen oder Demo-Zugänge an, um das Tool vor dem Kauf kennenzulernen. Genauere Informationen zu Preisen und Konditionen sind auf den jeweiligen Webseiten der Anbieter zu finden.
+Dedoose ist im Katalog als **Je nach Plan** geführt. Für die Kostenbewertung zählen Nutzerzahl, Projektlaufzeit, Teamfunktionen, Exportmöglichkeiten und die Frage, ob Studierende oder externe Mitwirkende zeitweise Zugriff benötigen.
+
+Bei Forschungsprojekten sollte außerdem eingeplant werden, wie lange Daten nach Projektende zugänglich bleiben müssen und ob Exporte für Archivierung oder Replikation ausreichen.
+
+**Zum Anbieter:** https://www.dedoose.com/
 
 ## Alternativen zu Dedoose
 
-- **NVivo**: Ein umfassendes Tool für qualitative Datenanalyse mit erweiterten Funktionen und großer Nutzerbasis.  
-- **MAXQDA**: Bietet ebenfalls qualitative und quantitative Analysefunktionen und wird oft in der Sozialforschung eingesetzt.  
-- **ATLAS.ti**: Ein weiteres etabliertes Programm zur Analyse qualitativer Daten mit Fokus auf Text- und Multimediainhalte.  
-- **Quirkos**: Ein benutzerfreundliches Tool, das sich besonders für Einsteiger in die qualitative Datenanalyse eignet.  
-- **Taguette**: Eine Open-Source-Alternative für qualitative Datenanalyse mit einfachen Funktionen und niedrigem Einstiegshürden.  
+- [Atlas Ti](/tools/atlas-ti/): stark für umfangreiche qualitative Analyse und etablierte Forschungsworkflows.
+- [Nvivo](/tools/nvivo/): verbreitet in Hochschulen und größeren Forschungsprojekten mit vielen Datentypen.
+- [Maxqda](/tools/maxqda/): sehr ausgereift für qualitative und Mixed-Methods-Analyse im deutschsprachigen Raum.
+- [Taguette](/tools/taguette/): schlanker und offener, wenn einfache qualitative Codierung genügt.
+- Transana: besonders relevant für Video-, Audio- und Transkriptanalyse.
+
+## Redaktionelle Einschätzung
+
+Dedoose ist stark, wenn qualitative Forschung strukturiert und teamfähig werden soll. Die Methode bleibt aber wichtiger als das Tool.
 
 ## FAQ
 
-**1. Was ist Dedoose?**  
-Dedoose ist eine webbasierte Software zur Analyse qualitativer und quantitativer Daten, die Automatisierung und Kollaboration unterstützt.
+**Ist Dedoose für Einsteiger geeignet?**
 
-**2. Für welche Anwendungsbereiche eignet sich Dedoose?**  
-Das Tool ist ideal für Sozialwissenschaftler, Marktforscher, Pädagogen und andere Fachleute, die komplexe Daten aus verschiedenen Quellen auswerten möchten.
+Dedoose ist lernbar, aber methodische Grundlagen sind wichtiger als Klickwissen. Einsteiger sollten mit kleinem Material, einem Pilot-Codebook und klarer Dokumentation starten.
 
-**3. Benötigt man Vorkenntnisse für die Nutzung?**  
-Grundlegende Computerkenntnisse sind hilfreich, aber die intuitive Benutzeroberfläche erleichtert auch Einsteigern den Einstieg.
+**Wann lohnt sich Dedoose besonders?**
 
-**4. Kann Dedoose offline genutzt werden?**  
-Dedoose ist cloudbasiert und benötigt eine Internetverbindung für den Zugriff und die Nutzung.
+Dedoose lohnt sich bei Projekten, in denen qualitative Aussagen mit Fallmerkmalen, Gruppen oder quantitativen Variablen ausgewertet werden. Auch Team-Coding und Konsistenzprüfungen sprechen für das Tool.
 
-**5. Welche Datentypen können analysiert werden?**  
-Das Tool unterstützt Text-, Audio-, Video- und numerische Daten.
+**Worauf sollte man vor dem Einsatz achten?**
 
-**6. Gibt es eine kostenlose Testversion?**  
-Viele Anbieter bieten kostenlose Testphasen an, um Dedoose vor dem Kauf zu testen.
-
-**7. Wie erfolgt die Zusammenarbeit im Team?**  
-Dedoose ermöglicht es mehreren Nutzern, gleichzeitig an Projekten zu arbeiten und Daten zu teilen.
-
-**8. Wie sicher sind die Daten bei Dedoose?**  
-Die Plattform verwendet gängige Sicherheitsstandards, Details variieren je nach Anbieter und Plan.
+Vor dem Einsatz sollten Anonymisierung, Einwilligungen, Rollen, Exportformate und Backup-Strategie geklärt sein. Außerdem braucht das Team ein gemeinsames Codebook und Regeln für strittige Codierungen.

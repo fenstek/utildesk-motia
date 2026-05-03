@@ -24,7 +24,8 @@ const stripMarkdown = (text: string) =>
   text
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
-    .replace(/[`*_>#-]/g, "")
+    .replace(/[`*_>#]/g, "")
+    .replace(/(^|\s)-\s+/g, "$1")
     .replace(/\s+/g, " ")
     .trim();
 
@@ -166,10 +167,10 @@ const homepageSchemas = [
   buildOrganizationSchema({ description: SITE_DESCRIPTION_EN, inLanguage: SITE_LANGUAGE_EN }),
   buildWebSiteSchema({ description: SITE_DESCRIPTION_EN, inLanguage: SITE_LANGUAGE_EN }),
   buildCollectionPageSchema({
-    name: "Utildesk English",
-    description: "Curated AI tools, workflow context and practical guides in English.",
+    name: "Utildesk AI Tools Directory 2026",
+    description: "Curated AI tools directory 2026 with automation, productivity tools and practical guides in English.",
     url: `${SITE_URL}/en/`,
-    about: ["AI tools", "Automation", "Productivity", "Guides"],
+    about: ["AI tools directory 2026", "AI tools", "Automation", "Productivity", "Guides"],
     mainEntity: featuredToolsSchema,
     inLanguage: SITE_LANGUAGE_EN,
   }),
@@ -179,8 +180,8 @@ const homepageSchemas = [
 
 <BaseLayout
   locale="en"
-  title="Utildesk - AI Tools, Automation and Practical Guides"
-  description="Curated AI tools, workflow context and practical guides in English."
+  title="AI Tools Directory 2026 - Utildesk"
+  description="Curated AI tools directory 2026 with automation, productivity tools and practical guides in English."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/en/" />
@@ -194,7 +195,7 @@ const homepageSchemas = [
       <div>
         <div class="terminal-kicker">[ manifest_en ]</div>
         <h1 class="terminal-title">
-          A curated AI directory,<br />
+          AI Tools Directory 2026,<br />
           <span class="terminal-accent">not another sponsored maze.</span>
         </h1>
         <p class="terminal-copy">
@@ -205,7 +206,7 @@ const homepageSchemas = [
         <div class="terminal-stats" aria-label="Utildesk English statistics">
           <div class="terminal-stat"><strong>{enabledTools.length}</strong><span>tools</span></div>
           <div class="terminal-stat"><strong>{CATEGORIES.length}</strong><span>categories</span></div>
-          <div class="terminal-stat"><strong>{recentRatgeber.length}</strong><span>guides live</span></div>
+          <div class="terminal-stat"><strong>{allRatgeber.length}</strong><span>guides live</span></div>
           <div class="terminal-stat"><strong>0</strong><span>ads</span></div>
         </div>
       </div>
@@ -357,7 +358,7 @@ const homepageSchemas = [
       <pre class="terminal-ascii" aria-hidden="true">{`utildesk://catalog
   tools       ${enabledTools.length}
   categories  ${CATEGORIES.length}
-  guides      ${recentRatgeber.length}
+  guides      ${allRatgeber.length}
   ads         0`}</pre>
     </aside>
   </section>

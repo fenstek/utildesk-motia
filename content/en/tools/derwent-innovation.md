@@ -12,87 +12,72 @@ official_url: 'https://clarivate.com/intellectual-property/derwent/patent-search
 popularity: 0
 source_language: de
 translation: full
+description: "Derwent Innovation is a patent research platform for IP analysis, technology monitoring, and competitive intelligence."
 ---
 # Derwent Innovation
 
-Derwent Innovation is a cutting-edge platform for patent research and innovation analysis based on artificial intelligence. It supports companies and research institutions in tracking technological developments, analyzing patents, and making strategic decisions. With a comprehensive dataset and powerful analysis tools, Derwent Innovation provides in-depth insights into the innovation market.
+Derwent Innovation is aimed at professional patent and IP teams. It helps systematically investigate patent landscapes, competitors, inventors, technology fields, and IP risk.
+
+Suitable for patent departments, R&D, legal, competitive intelligence, and technology-driven companies.
 
 ## Who is Derwent Innovation for?
 
-Derwent Innovation is primarily aimed at:
+Derwent Innovation is most useful for teams and individuals that treat a patent and IP research platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
-- **Research and development departments** in companies that want to monitor patents and identify technological trends.
-- **Patent experts and IP managers** who need efficient patent monitoring and analysis.
-- **Business strategists** who need competitive analysis and market observations.
-- **Research institutes and universities** that need access to extensive patent data for studies and innovation.
-- **Consulting firms** that offer innovation and technology services.
+## Typical use cases
 
-The platform is particularly suited for users with a professional interest in patent information and innovation analysis.
+- Analyze patent landscapes
+- Monitor competitors and technology fields
+- Prepare freedom-to-operate or prior-art research
+- Evaluate IP data for strategic decisions
 
-## Key Features
+## Strengths
 
-- Comprehensive patent database with global patents and applications
-- AI-powered search functions to quickly identify relevant patents
-- Analysis of patent families and technological trends
-- Visualization of innovation landscapes and competitive environments
-- Export functions for reports and data
-- Integration of company and market data to contextualize patents
-- Customizable search filters and alert functions
-- Collaboration tools for teams in companies and research
-- Support for risk analysis and identification of patent infringements
+- Strong focus on professional patent data
+- Useful for deep IP analysis
+- Good for structured competitor monitoring
 
-## Benefits and Drawbacks
+## Limits
 
-### Benefits
+- Too complex and costly for occasional research
+- Results require IP expertise
+- Data interpretation remains human expert work
 
-- Very comprehensive and up-to-date patent data from various countries
-- Powerful AI-powered analysis and search tools
-- User-friendly interface with visualizations
-- Helpful for strategic decisions in the field of innovation and IP
-- Customizable search and reporting functions
-- Suitable for teams through collaboration capabilities
+## Workflow fit
 
-### Drawbacks
+Derwent Innovation makes sense when it has a clear place in the process: intake, production, review, or publishing. Without that role, even a strong tool becomes just another open tab.
 
-- Pricing is customized and can be high for smaller companies
-- Requires time to learn and use the functions efficiently
-- No publicly available pricing information
-- Focus is mainly on patents, less on other innovation data
+## Privacy & data
 
-## Pricing & Costs
+IP searches can reveal strategic development areas. Search profiles, exports, and team access should be treated confidentially.
 
-Derwent Innovation does not offer standardized pricing models. The costs are based on an individual offer that varies depending on the scope of use, number of users, and desired functions. Interested parties should contact the provider to receive a suitable offer.
+## Pricing & costs
+
+In the catalog, Derwent Innovation is marked with the pricing model **Custom quote**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
+
+**Provider:** https://clarivate.com/intellectual-property/derwent/patent-search/
 
 ## Alternatives to Derwent Innovation
 
-- **PatSnap** – A platform for patent data and innovation management with AI support.
-- **Clarivate Analytics (Web of Science)** – Offers extensive scientific and patent-related data.
-- **Google Patents** – Free access to global patent data with simpler search functions.
-- **Innography** – Patent and competitive analysis with a focus on visualization and reporting.
-- **Lens.org** – Open-source platform for patent research and scientific information.
+- [Patsnap](/en/tools/patsnap/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Innography](/en/tools/innography/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Wipo Patentscope](/en/tools/wipo-patentscope/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Google Patents](/en/tools/google-patents/): useful comparison point for adjacent workflows, pricing, or team fit.
+
+## Editorial assessment
+
+Derwent Innovation is a specialist tool for serious IP work. Simpler sources are enough for basic patent lookups.
 
 ## FAQ
 
-**1. What is Derwent Innovation?**  
-Derwent Innovation is a AI-based platform for patent research and innovation analysis.
+**Is Derwent Innovation beginner-friendly?**
 
-**2. What kind of data does Derwent Innovation offer?**  
-The platform offers access to global patent data, patent families, applications, and additional company and market data.
+It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
 
-**3. For whom is Derwent Innovation suited?**  
-For companies, research institutions, patent experts, and consultants who need thorough patent analysis and innovation research.
+**When is Derwent Innovation worth it?**
 
-**4. How is the pricing determined?**  
-The prices are customized based on the number of users, function scope, and usage duration.
+When the recurring value is greater than setup, cost, and review effort. For one-off tasks, a lighter tool is often faster.
 
-**5. Is there a free trial version?**  
-Information about trial versions is dependent on the provider and should be requested directly.
+**What should be checked before adoption?**
 
-**6. Can the platform be used by multiple users?**  
-Yes, Derwent Innovation offers collaboration tools for multiple users.
-
-**7. What benefits does the AI support provide?**  
-AI helps with quickly identifying relevant patents, analyzing trends, and creating reports.
-
-**8. Are there alternatives to Derwent Innovation?**  
-Yes, for example PatSnap, Clarivate Analytics, Google Patents, Innography, and Lens.org.
+Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
