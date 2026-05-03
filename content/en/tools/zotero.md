@@ -8,80 +8,74 @@ tags:
   - automation
 official_url: 'https://www.zotero.org/'
 popularity: 0
-description: 'Free, open-source reference management and research organization software.'
 translation: full
+description: "Zotero is a free reference manager for literature management, web clipping, citations, and research libraries."
 ---
 # Zotero
 
-Zotero is a free, open-source tool for reference management and research organization. It helps users collect, manage, and cite sources, articles, and notes efficiently in academic work. Zotero integrates seamlessly with web browsers and word processors, making the research and writing process significantly easier.
+Zotero is one of the most accessible solutions for reference management. It collects sources from the web, organizes PDFs and metadata, and supports citation in writing tools.
+
+Good for students, researchers, journalists, and knowledge workers who need clean source collections.
 
 ## Who is Zotero for?
 
-Zotero is primarily aimed at students, researchers, teachers, and anyone who regularly writes academic papers. It is ideal for people who want to organize their sources systematically and create bibliographies automatically. Zotero also offers practical collaboration features for teams working together on research projects.
+Zotero is most useful for teams and individuals that treat a reference manager as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
-## Key Features
+## Typical use cases
 
-- **Automatic source capture:** Imports bibliographic data directly from the browser with one click.
-- **Literature organization:** Lets you create collections, subfolders, and tags for clear management.
-- **PDF management:** Stores and annotates PDFs directly in the library.
-- **Citation support:** Supports numerous citation styles and integrates with word processors such as Microsoft Word and LibreOffice.
-- **Cloud synchronization:** Syncs the library across different devices.
-- **Teamwork:** Makes it possible to share collections and collaborate on editing.
-- **Extensibility:** Offers a wide range of plugins for additional functionality.
-- **Full-text search:** Searches metadata and PDF content.
+- Save sources from browsers and databases
+- Organize PDFs and notes
+- Use citations in Word, LibreOffice, or other workflows
+- Share literature lists with teams
 
-## Pros and Cons
+## Strengths
 
-### Pros
+- Free and open entry point
+- Very practical for web research
+- Large ecosystem and strong community
 
-- Free and open source
-- Easy to use and integrates well into the workflow
-- Extensive features for reference management and citation
-- Cross-platform support (Windows, macOS, Linux)
-- Supports teamwork and collaboration
-- Regular updates and an active community
+## Limits
 
-### Cons
+- Large team and institutional processes need structure
+- Metadata still needs checking
+- Cloud storage and attachments can create costs
 
-- Cloud storage capacity is limited in the free plan
-- Additional plugins may be needed for very complex reference management
-- The learning curve can feel a bit steep for beginners at first
-- The interface can feel somewhat outdated compared with modern tools
+## Workflow fit
 
-## Pricing & Costs
+Zotero makes sense when it has a clear place in the process: intake, production, review, or publishing. Without that role, even a strong tool becomes just another open tab.
 
-Zotero is generally free to use. The core features and a limited amount of cloud storage are available at no cost. Zotero offers paid subscriptions for additional storage and advanced features. Prices vary depending on storage size and the selected plan.
+## Privacy & data
+
+Zotero libraries contain research notes, PDFs, and source lists. Sync, group libraries, and sharing should be used deliberately.
+
+## Pricing & costs
+
+In the catalog, Zotero is marked with the pricing model **Freemium**. For a real decision, check the current provider pricing, limits, team features, and export options directly.
+
+**Provider:** https://www.zotero.org/
 
 ## Alternatives to Zotero
 
-- **Mendeley:** Also a free reference management program with strong integration into academic networks.
-- **EndNote:** A professional tool with extensive features, often paid.
-- **Citavi:** Especially popular in German-speaking countries, offering reference management and knowledge organization.
-- **RefWorks:** A cloud-based solution often provided by universities.
-- **Paperpile:** A modern, browser-based solution designed specifically for Google Workspace users.
+- [Endnote](/en/tools/endnote/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Jabref](/en/tools/jabref/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Citavi](/en/tools/citavi/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Research Rabbit](/en/tools/research-rabbit/): useful comparison point for adjacent workflows, pricing, or team fit.
+- [Mendeley](/en/tools/mendeley/): useful comparison point for adjacent workflows, pricing, or team fit.
+
+## Editorial assessment
+
+Zotero is often the best starting point for reference management. Only very specialized institutional workflows need heavier alternatives.
 
 ## FAQ
 
-**1. Is Zotero really free?**  
-Yes, Zotero's core features are free. Paid plans are available for additional cloud storage and some advanced features.
+**Is Zotero beginner-friendly?**
 
-**2. Which operating systems does Zotero run on?**  
-Zotero is available for Windows, macOS, and Linux.
+It depends on the use case. Simple trials are usually manageable, but production workflows need ownership and quality control.
 
-**3. Can I use Zotero with Microsoft Word?**  
-Yes, Zotero offers plugins for integration with Microsoft Word and LibreOffice, which make inserting citations and bibliographies easier.
+**When is Zotero worth it?**
 
-**4. How secure is my data in Zotero?**  
-Data is stored locally on the device and can optionally be synced through Zotero servers. Security also depends on your own settings.
+When the recurring value is greater than setup, cost, and review effort. For one-off tasks, a lighter tool is often faster.
 
-**5. Can I use Zotero in the cloud?**  
-Yes, Zotero offers cloud synchronization that automatically syncs library data and files.
+**What should be checked before adoption?**
 
-**6. Is there a mobile app for Zotero?**  
-There is no official mobile app, but some third-party apps offer limited support.
-
-**7. How does collaboration work in Zotero?**  
-Users can create group libraries and work together on reference lists.
-
-**8. Which citation styles does Zotero support?**  
-Zotero supports thousands of citation styles that can be easily selected and customized.
+Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.

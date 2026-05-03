@@ -6,79 +6,73 @@ price_model:
 tags: [assistant, automation]
 official_url: "https://www.liveperson.com/"
 popularity: 0
+description: "LivePerson ist eine Conversational-AI- und Messaging-Plattform für Kundenservice, Vertrieb und automatisierte Dialoge."
 ---
-
 # LivePerson
 
-LivePerson ist eine KI-gestützte Plattform für Conversational Commerce und Kundenkommunikation, die Unternehmen dabei unterstützt, automatisierte und personalisierte Dialoge mit ihren Kunden zu führen. Die Lösung kombiniert künstliche Intelligenz mit menschlicher Interaktion, um den Kundenservice, Vertrieb und Support effizienter zu gestalten.
+LivePerson verbindet Messaging, Bots und Kundenservice-Prozesse. Der Schwerpunkt liegt auf Dialogen mit Kundinnen und Kunden, die nicht nur beantwortet, sondern in Service- und Sales-Flows integriert werden sollen.
+
+Geeignet für größere Support-, Contact-Center- und Commerce-Teams mit vielen wiederkehrenden Kundenanfragen.
 
 ## Für wen ist LivePerson geeignet?
 
-LivePerson richtet sich vor allem an mittelständische und große Unternehmen, die ihre Kundenkommunikation durch automatisierte Chatbots und KI-gestützte Assistenten verbessern möchten. Besonders geeignet ist die Plattform für Branchen wie E-Commerce, Telekommunikation, Finanzdienstleistungen und den Kundenservice, in denen eine schnelle und personalisierte Interaktion mit Kunden entscheidend ist. Auch Unternehmen, die Omnichannel-Kommunikation über verschiedene Kanäle wie Messaging-Apps, Webchat oder SMS anbieten wollen, profitieren von LivePerson.
+LivePerson passt vor allem zu Teams und Einzelpersonen, die ein Conversational-AI-Plattform nicht als Spielerei, sondern als Teil eines konkreten Arbeitsablaufs einsetzen wollen. Wichtig ist dabei, vor dem Start zu klären, welche Aufgabe wirklich beschleunigt werden soll und wo weiterhin menschliche Prüfung nötig bleibt.
 
-## Hauptfunktionen
+## Typische Einsatzszenarien
 
-- KI-gestützte Chatbots für automatisierte Kundeninteraktionen
-- Live-Chat mit nahtlosem Übergang zu menschlichen Agenten
-- Omnichannel-Support (Web, Mobile, Messaging-Apps wie WhatsApp, Facebook Messenger)
-- Analyse- und Reporting-Tools zur Optimierung der Kundenkommunikation
-- Integration in CRM- und andere Geschäftsanwendungen
-- Personalisierte Dialoge basierend auf Kundendaten und Verhalten
-- Automatisierung von Routineanfragen und Supportprozessen
-- Unterstützung von Sprachassistenten und Conversational AI
-- Sicherheits- und Datenschutzfunktionen für geschützte Kommunikation
+- Chat- und Messaging-Support automatisieren
+- Bots mit menschlicher Übergabe kombinieren
+- Kundenanfragen nach Absicht und Dringlichkeit steuern
+- Service- und Sales-Konversationen auswerten
 
-## Vorteile und Nachteile
+## Stärken
 
-### Vorteile
+- Stark für skalierte Kundenkommunikation
+- Gut für Bot-plus-Agent-Setups
+- Enterprise-nahe Steuerung und Analyse
 
-- Ermöglicht effiziente und skalierbare Kundenkommunikation
-- Kombination aus KI und menschlicher Interaktion für bessere Kundenerfahrung
-- Flexible Integration in bestehende Systeme und Kanäle
-- Verbesserte Reaktionszeiten und Kundenzufriedenheit
-- Umfangreiche Analyse- und Optimierungsfunktionen
+## Grenzen
 
-### Nachteile
+- Einführung braucht Prozessdesign
+- Schlechte Bot-Inhalte verschlechtern Kundenerlebnis
+- Integration in CRM und Supportsysteme muss sauber geplant werden
 
-- Kosten können je nach Unternehmensgröße und Anforderungen variieren
-- Einrichtung und Anpassung erfordern technisches Know-how
-- Manche Funktionen sind möglicherweise nur in höheren Preismodellen verfügbar
-- Abhängigkeit von stabiler Internetverbindung und Plattformverfügbarkeit
+## Workflow-Fit
+
+LivePerson ist dann sinnvoll, wenn das Tool an einer klaren Stelle im Prozess sitzt: Eingang, Bearbeitung, Kontrolle oder Veröffentlichung. Ohne diese Einordnung wird selbst ein gutes Werkzeug schnell zu einem weiteren offenen Tab.
+
+## Datenschutz & Daten
+
+Kundendialoge enthalten personenbezogene und manchmal sensible Daten. Consent, Logging, Datenresidenz und Löschkonzepte sind zentral.
 
 ## Preise & Kosten
 
-Die Preisgestaltung von LivePerson ist abhängig vom Funktionsumfang, der Anzahl der Nutzer und dem Volumen der Interaktionen. In der Regel bieten Anbieter individuelle Angebote, die auf die Bedürfnisse des jeweiligen Unternehmens zugeschnitten sind. Details zu Preisen sind meist nur auf Anfrage erhältlich und können je nach Plan und Zusatzleistungen variieren.
+Im Katalog ist LivePerson mit dem Preismodell **tags: [assistant, automation]** geführt. Für eine echte Entscheidung sollten aktuelle Anbieterpreise, Limits, Teamfunktionen und Exportmöglichkeiten direkt geprüft werden.
+
+**Zum Anbieter:** https://www.liveperson.com/
 
 ## Alternativen zu LivePerson
 
-- **Intercom:** Eine Plattform für Kundenkommunikation mit Chatbots, Live-Chat und Marketing-Automatisierung.
-- **Drift:** Conversational Marketing und Sales-Plattform mit Fokus auf Chatbots und Lead-Generierung.
-- **Zendesk Chat:** Live-Chat-Lösung mit Automatisierungsfunktionen, Teil der Zendesk-Suite.
-- **Freshchat:** Multichannel-Messaging-Plattform mit KI-gestütztem Support und Automatisierung.
-- **ManyChat:** Plattform für Messenger-Automatisierung, besonders geeignet für Marketing und Kundenservice.
+- [Intercom](/tools/intercom/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Zendesk](/tools/zendesk/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Freshdesk](/tools/freshdesk/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- [Drift](/tools/drift/): sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+- Ada: sinnvoller Vergleichspunkt für angrenzende Workflows, Kosten oder Team-Fit.
+
+## Redaktionelle Einschätzung
+
+LivePerson ist stark, wenn Conversational AI als Service-Infrastruktur betrieben wird. Für einfache Website-Chats ist es oft zu groß.
 
 ## FAQ
 
-**1. Was ist LivePerson?**  
-LivePerson ist eine KI-basierte Plattform für automatisierte und menschliche Kundenkommunikation über verschiedene Kanäle.
+**Ist LivePerson für Einsteiger geeignet?**
 
-**2. Welche Branchen profitieren am meisten von LivePerson?**  
-Vor allem E-Commerce, Telekommunikation, Finanzdienstleistungen und Kundenservice profitieren von der Lösung.
+Das hängt vom Einsatz ab. Für einfache Tests reicht oft ein kleiner Einstieg, produktive Workflows brauchen aber klare Verantwortlichkeiten und Qualitätskontrolle.
 
-**3. Wie funktioniert die KI von LivePerson?**  
-Die KI nutzt maschinelles Lernen, um Kundenanfragen zu verstehen und automatisierte, personalisierte Antworten zu geben.
+**Wann lohnt sich LivePerson besonders?**
 
-**4. Kann LivePerson in bestehende Systeme integriert werden?**  
-Ja, LivePerson lässt sich in CRM-Systeme und andere Geschäftsanwendungen integrieren.
+Wenn der wiederkehrende Nutzen größer ist als Setup, Kosten und Prüfaufwand. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
-**5. Welche Kommunikationskanäle unterstützt LivePerson?**  
-Die Plattform unterstützt Webchat, mobile Apps, WhatsApp, Facebook Messenger und weitere Messaging-Dienste.
+**Worauf sollte man vor dem Einsatz achten?**
 
-**6. Gibt es eine kostenlose Testversion?**  
-Informationen zu Testversionen sind vom Anbieter abhängig und sollten direkt erfragt werden.
-
-**7. Wie sicher ist die Kommunikation über LivePerson?**  
-LivePerson bietet Sicherheits- und Datenschutzfunktionen, um die Daten der Nutzer zu schützen.
-
-**8. Benötige ich technisches Know-how zur Nutzung?**  
-Für die Einrichtung und Anpassung sind gewisse technische Kenntnisse hilfreich, insbesondere bei komplexen Integrationen.
+Auf Datenzugriff, Exportmöglichkeiten, Teamrechte, Preismodell und die Frage, ob Ergebnisse vor Veröffentlichung geprüft werden müssen.
