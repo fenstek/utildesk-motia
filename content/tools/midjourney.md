@@ -19,14 +19,17 @@ Das Tool ist besonders stark, wenn eine visuelle Richtung schnell erkundet werde
 
 ## Für wen ist das Tool geeignet?
 
-Midjourney passt zu Designern, Creators, Marketingteams und Produktleuten, die visuelle Ideen entwickeln wollen. Für kontrollierte Markenproduktion braucht es trotzdem menschliche Art Direction, Nachbearbeitung und Rechteprüfung.
+Midjourney passt zu Kreativen, Art Directors, Marken-Teams, Game- und Produktkonzepten, die schnell starke visuelle Richtungen erkunden wollen. Besonders nützlich ist es für Moodboards, Kampagnenideen, Stiltests und frühe visuelle Exploration.
+
+Für rechtlich saubere Endmotive, Produktfotos, CI-genaue Markenassets oder editierbare Designsysteme reicht Midjourney allein nicht. Dort braucht es Auswahl, Nachbearbeitung, Rechteprüfung und oft zusätzliche Werkzeuge.
 
 ## Typische Einsatzszenarien
 
-- Moodboards und Kampagnenideen visualisieren
-- Illustrationsstile und Bildwelten testen
-- Cover, Hero-Visuals und Konzeptbilder entwerfen
-- Visuelle Varianten für Pitches und Redaktionsplanung erzeugen
+- **Moodboards und Stilfindung:** visuelle Richtungen schnell erkunden und vergleichen.
+- **Kampagnenideen:** Bildwelten, Kompositionen und Varianten für Marketingkonzepte testen.
+- **Concept Art:** Szenen, Charakterideen, Räume oder Produktstimmungen ausarbeiten.
+- **Pitch-Vorbereitung:** frühe visuelle Qualität erzeugen, bevor Produktion beauftragt wird.
+- **Creative Sparring:** ungewöhnliche Varianten generieren, die menschliche Gestaltung anstoßen.
 
 ## Hauptfunktionen
 
@@ -51,7 +54,9 @@ Midjourney passt zu Designern, Creators, Marketingteams und Produktleuten, die v
 
 ## Workflow-Fit
 
-Midjourney ist ein Ideenverstärker, kein automatischer Art Director. Die besten Ergebnisse entstehen, wenn Prompts, Auswahl, Nachbearbeitung und Rechtekontrolle zusammenarbeiten.
+Midjourney sollte als Ideenmaschine genutzt werden: Ziel, Stil, Motiv und Ausschlusskriterien definieren, mehrere Richtungen erzeugen, starke Varianten auswählen und anschließend redaktionell oder gestalterisch weiterbearbeiten. Der Prompt ist nur der Start, nicht die fertige Art Direction.
+
+Für Teams sind Rechte, Konsistenz und Freigabe zentral. Vor Veröffentlichung sollten Bildinhalt, Markenpassung, mögliche Ähnlichkeiten, Nutzungsrechte und notwendige Kennzeichnung geprüft werden.
 
 ## Datenschutz & Daten
 
@@ -73,18 +78,18 @@ Midjourney arbeitet mit kostenpflichtigen Plänen. Testmöglichkeiten, Limits un
 
 ## Redaktionelle Einschätzung
 
-Midjourney ist ein Ideenverstärker, kein automatischer Art Director. Die besten Ergebnisse entstehen, wenn Prompts, Auswahl, Nachbearbeitung und Rechtekontrolle zusammenarbeiten.
+Midjourney ist ein starker visueller Ideenmotor, aber kein automatischer Ersatz für Art Direction. Gute Ergebnisse entstehen durch Auswahl, Variantenarbeit, Nachbearbeitung und Rechteprüfung; besonders wertvoll ist es in frühen Moodboard-, Kampagnen- und Konzeptphasen.
 
 ## FAQ
 
-**Ist Midjourney kostenlos?**
+**Kann Midjourney fertige Kampagnenbilder liefern?**
 
-Der Schwerpunkt liegt auf kostenpflichtigen Plänen; aktuelle Testmöglichkeiten sollten direkt geprüft werden.
+Manchmal als Ausgangspunkt, aber selten ohne Nachbearbeitung und Prüfung. Für professionelle Kampagnen braucht es Auswahl, Retusche, Rechtekontrolle und Markenabgleich.
 
-**Kann Midjourney Text sauber in Bilder setzen?**
+**Ist Midjourney gut für Logos?**
 
-Manchmal, aber für verlässliche Typografie braucht es meist Nachbearbeitung.
+Für Inspiration ja, für finale Logos eher nicht. Logos müssen vektorisierbar, rechtlich sauber, reproduzierbar und markenkonsistent sein.
 
-**Darf ich Bilder kommerziell nutzen?**
+**Worauf sollte man achten?**
 
-Das hängt von Plan und Nutzungsbedingungen ab. Vor Nutzung in Kampagnen prüfen.
+Auf Rechte, Ähnlichkeiten zu bestehenden Werken, Personen- oder Markenbezüge, Bildfehler und konsistente Stilführung über mehrere Motive hinweg.

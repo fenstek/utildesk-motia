@@ -66,7 +66,7 @@ Im Katalog ist Bolt.new mit dem Preismodell **Je nach Plan** geführt. Relevant 
 
 ## Redaktionelle Einschätzung
 
-Bolt.new ist ein starker Beschleuniger für frühe Produktarbeit. Der Übergang von Demo zu Produktion muss aber bewusst kontrolliert werden.
+Bolt.new ist ein produktiver Beschleuniger für frühe Web-App-Ideen, aber kein Ersatz für Engineering-Verantwortung. Besonders nützlich ist es, wenn Prototyp, Codebasis und Deploy-Idee schnell sichtbar werden sollen; vor Produktion braucht es trotzdem Review, Tests, Secrets-Handling und Architekturentscheidungen.
 
 ## FAQ
 

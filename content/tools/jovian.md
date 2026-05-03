@@ -18,14 +18,17 @@ Der Nutzen liegt in der Kombination aus Kursen, Aufgaben und coding-nahen Beispi
 
 ## Für wen ist das Tool geeignet?
 
-Jovian passt besonders gut zu Einsteigern, Quereinsteigern und Teams, die Data-Skills strukturiert aufbauen wollen. Weniger passend ist es als Enterprise-ML-Plattform für produktive Pipelines - dafür sind Databricks, SageMaker oder eigene Notebook-Stacks näher am Betrieb.
+Jovian passt zu Lernenden, die Data Science, Python und Machine Learning praktisch verstehen wollen: Studierende, Quereinsteiger, Junior Analysts, Bootcamp-Teilnehmer und Teams, die gemeinsame Grundlagen schaffen möchten. Besonders hilfreich ist die Plattform, wenn nicht nur Videos konsumiert, sondern Notebooks, Übungen und kleine Projekte nachvollzogen werden sollen.
+
+Weniger passend ist Jovian für produktive Datenpipelines, vertrauliche Unternehmensdaten oder fortgeschrittene MLOps-Prozesse. Dort braucht es eigene Infrastruktur, Versionskontrolle, Datenzugriff und Deployment-Standards.
 
 ## Typische Einsatzszenarien
 
-- Python, Pandas und Datenvisualisierung praktisch lernen
-- SQL- und BI-Grundlagen mit klaren Aufgaben üben
-- Machine-Learning-Konzepte in Notebooks nachvollziehen
-- Lernpfade für Junior Data Analysts oder Entwickler vorbereiten
+- **Python- und Pandas-Einstieg:** Grundlagen mit echten Notebook-Beispielen üben, statt nur Syntax isoliert zu lernen.
+- **Data-Science-Lernpfade:** Statistik, Visualisierung, Modelltraining und Auswertung in einem nachvollziehbaren Ablauf verbinden.
+- **Team-Onboarding:** Junior-Rollen mit gemeinsamen Übungen auf ein ähnliches Grundniveau bringen.
+- **Portfolio-Projekte:** Kleine Analysen dokumentieren und als Lernnachweis aufbereiten.
+- **Kursbegleitung:** Aufgaben aus Workshops oder internen Trainings mit praktischen Beispielen vertiefen.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ Jovian passt besonders gut zu Einsteigern, Quereinsteigern und Teams, die Data-S
 
 ## Workflow-Fit
 
-Jovian ist stark, wenn Lernen praktisch werden soll. Für Utildesk ist es keine klassische KI-App, aber ein sinnvoller Einstiegspunkt für Menschen, die Data- und ML-Kompetenz aufbauen wollen.
+Jovian gehört eher in die Lern- und Enablement-Phase als in den produktiven Data Stack. Ein guter Ablauf ist: Lernziel definieren, passende Kurseinheit auswählen, Notebook aktiv nachbauen, eigene Daten nur mit Vorsicht einsetzen und die Ergebnisse anschließend in einem persönlichen Repository oder Team-Wiki dokumentieren.
+
+Für Organisationen ist wichtig, Jovian nicht mit Governance zu überladen. Es kann Lernfortschritt und praktisches Verständnis fördern, ersetzt aber keine Regeln für produktive Datenzugriffe, Modellfreigaben oder Deployment.
 
 ## Datenschutz & Daten
 
@@ -71,18 +76,18 @@ Jovian bietet kostenlose Lerninhalte und je nach Kurs oder Angebot zusätzliche 
 
 ## Redaktionelle Einschätzung
 
-Jovian ist stark, wenn Lernen praktisch werden soll. Für Utildesk ist es keine klassische KI-App, aber ein sinnvoller Einstiegspunkt für Menschen, die Data- und ML-Kompetenz aufbauen wollen.
+Jovian ist besonders sinnvoll, wenn Lernen nicht beim Video endet. Die Plattform passt zu Menschen, die Python, Datenanalyse und Machine Learning über praktische Übungen verstehen wollen; für produktive Datenplattformen oder Enterprise-MLOps ist sie dagegen nur ein Lernbaustein, nicht die Betriebsumgebung.
 
 ## FAQ
 
 **Ist Jovian ein KI-Tool?**
 
-Nicht im engen Sinne. Es ist vor allem eine Lernplattform für Data Science, Python und Machine Learning.
+Nicht im engen Sinne. Jovian ist vor allem eine Lernplattform für Python, Datenanalyse und Machine Learning. KI spielt über die Lerninhalte eine Rolle, nicht als eigenständiger Assistent.
 
 **Eignet sich Jovian für absolute Einsteiger?**
 
-Ja, viele Kurse sind bewusst beginner-friendly aufgebaut.
+Ja, wenn man bereit ist, praktisch mit Code zu arbeiten. Wer nur Erklärvideos sehen möchte, wird weniger profitieren als jemand, der Beispiele nachbaut und eigene Mini-Projekte ausprobiert.
 
 **Kann Jovian produktive ML-Pipelines ersetzen?**
 
-Nein. Für produktiven Betrieb braucht es andere Infrastruktur und Governance.
+Nein. Für produktive Pipelines braucht es Datenzugriff, Versionierung, Tests, Monitoring und Deployment-Infrastruktur. Jovian ist sinnvoll für Lernen und Übung, nicht als Betriebsplattform.

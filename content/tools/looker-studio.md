@@ -18,14 +18,17 @@ Die Stärke liegt in einfachen, teilbaren Reports. Wer Google Analytics, Search 
 
 ## Für wen ist das Tool geeignet?
 
-Looker Studio passt zu Marketing, SEO, Content, kleinen BI-Teams und Kundenreporting. Für komplexe Enterprise-BI sind Power BI, Tableau oder Looker selbst oft robuster; für einfache Google-Reports ist Looker Studio schwer zu schlagen.
+Looker Studio passt zu Marketing-, SEO-, Sales- und Analytics-Teams, die Daten schnell in teilbare Reports bringen wollen. Besonders nützlich ist es, wenn Google-Quellen, Tabellen, Ads- oder Webanalyse-Daten regelmäßig sichtbar gemacht werden müssen.
+
+Für komplexe Datenmodelle, strenge Governance oder große Enterprise-BI-Landschaften sind Power BI, Tableau oder Looker oft stärker. Looker Studio punktet eher mit Tempo, Zugänglichkeit und einfacher Verteilung.
 
 ## Typische Einsatzszenarien
 
-- SEO-, Analytics- und Ads-Dashboards bauen
-- Kundenreports automatisch aktualisieren
-- Google-Sheets-Daten visuell aufbereiten
-- Team-Kennzahlen in einem gemeinsamen Dashboard sammeln
+- **SEO-Reporting:** Search Console, Analytics und Rankingdaten in wiederkehrenden Dashboards bündeln.
+- **Marketing-Performance:** Kampagnen, Ads, Leads und Website-Kennzahlen übersichtlich darstellen.
+- **Management-Übersichten:** einfache KPI-Reports für regelmäßige Meetings vorbereiten.
+- **Kundenreports:** Agentur- oder Freelancer-Daten ohne manuelle Präsentationen teilen.
+- **Datenchecks:** Trends, Ausreißer und Lücken schnell sichtbar machen.
 
 ## Hauptfunktionen
 
@@ -50,7 +53,9 @@ Looker Studio passt zu Marketing, SEO, Content, kleinen BI-Teams und Kundenrepor
 
 ## Workflow-Fit
 
-Looker Studio ist nicht das mächtigste BI-Werkzeug, aber extrem nützlich für schnelle, sichtbare Reports. Für viele SEO- und Marketingteams ist genau das der Punkt.
+Looker Studio sollte mit klaren Definitionen starten: Welche Kennzahl bedeutet was, aus welcher Quelle kommt sie und wie oft wird sie aktualisiert? Danach lohnt sich ein schlankes Dashboard mit wenigen wichtigen Seiten statt überladener Datensammlung.
+
+In Teams ist Wartung entscheidend. Wenn Datenquellen brechen, Filter unklar sind oder Metriken doppelt definiert werden, verlieren Reports schnell Vertrauen. Verantwortlichkeiten für Datenquellen und Dashboard-Versionen sollten deshalb festgelegt sein.
 
 ## Datenschutz & Daten
 
@@ -71,18 +76,18 @@ Looker Studio ist im Kern kostenlos. Kosten können durch externe Connectoren, D
 
 ## Redaktionelle Einschätzung
 
-Looker Studio ist nicht das mächtigste BI-Werkzeug, aber extrem nützlich für schnelle, sichtbare Reports. Für viele SEO- und Marketingteams ist genau das der Punkt.
+Looker Studio ist stark, wenn Reports schnell sichtbar und teilbar werden sollen. Es ist nicht das tiefste BI-System, aber für Marketing, SEO und leichte Management-Dashboards oft genau richtig, solange Datenquellen, Definitionen und Aktualisierung sauber geklärt sind.
 
 ## FAQ
 
 **Ist Looker Studio kostenlos?**
 
-Ja, der Kern ist kostenlos nutzbar.
+Viele Grundfunktionen sind kostenlos nutzbar. Kosten können aber über Datenquellen, Connectoren, größere Setups oder angrenzende Google-/Partnerdienste entstehen.
 
-**Ist Looker Studio dasselbe wie Looker?**
+**Für wen ist Looker Studio besonders geeignet?**
 
-Nein. Looker Studio ist das Reporting- und Dashboard-Tool, Looker ist eine umfassendere BI-Plattform.
+Für Teams, die schnell Reports aus Marketing-, Webanalyse- oder Tabellenquellen teilen wollen, ohne ein schweres BI-Projekt zu starten.
 
-**Kann ich Search Console anbinden?**
+**Wo liegen die Grenzen?**
 
-Ja, Google-Datenquellen sind ein typischer Anwendungsfall.
+Bei komplexer Datenmodellierung, Governance, Performance und großen Enterprise-Anforderungen. Dann sind stärkere BI-Plattformen oft besser geeignet.

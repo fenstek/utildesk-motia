@@ -66,7 +66,7 @@ Im Katalog ist Research Rabbit mit dem Preismodell **Je nach Plan** geführt. En
 
 ## Redaktionelle Einschätzung
 
-Research Rabbit ist stark für den Einstieg in ein Feld und für Querbezüge. Für finale Evidenzarbeit braucht es zusätzliche Prüfung.
+Research Rabbit ist sehr nützlich, wenn Literatur nicht linear gesucht, sondern als Netzwerk verstanden werden soll. Es ersetzt keinen Reference Manager, hilft aber, Nachbarschaften, Autorengruppen und verwandte Paper schneller sichtbar zu machen.
 
 ## FAQ
 
