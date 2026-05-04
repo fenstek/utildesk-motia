@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { existsSync } from "node:fs";
 import { mkdir, readdir, readFile, rename, unlink, writeFile } from "node:fs/promises";
-import { spawn } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "../site/node_modules/gray-matter/index.js";
@@ -19,6 +19,7 @@ const FORCE = hasArg("--force");
 const DRY_RUN = hasArg("--dry-run");
 const SLUGS = new Set(await resolveSlugSelection());
 const SCHEMA_PATH = path.join(TMP_DIR, "tool-translation.schema.json");
+const CODEX_FLAG_SUPPORT = new Map();
 
 const PRICE_MODEL_EN = new Map([
   ["Kostenlos", "Free"],
@@ -231,6 +232,28 @@ function resolveCodexCommand() {
   return { command: "codex", prefixArgs: [] };
 }
 
+function codexExecSupportsFlag(command, prefixArgs, flag) {
+  const key = `${command}\0${prefixArgs.join("\0")}\0${flag}`;
+  if (CODEX_FLAG_SUPPORT.has(key)) return CODEX_FLAG_SUPPORT.get(key);
+
+  const proc = spawnSync(command, [...prefixArgs, "exec", "--help"], {
+    cwd: ROOT,
+    env: { ...process.env, NO_COLOR: "1" },
+    encoding: "utf8",
+    windowsHide: true,
+  });
+  const help = `${proc.stdout || ""}\n${proc.stderr || ""}`;
+  const supported = proc.status === 0 && help.includes(flag);
+  CODEX_FLAG_SUPPORT.set(key, supported);
+  return supported;
+}
+
+function pushOptionalCodexExecFlag(args, command, prefixArgs, flag) {
+  if (codexExecSupportsFlag(command, prefixArgs, flag)) {
+    args.push(flag);
+  }
+}
+
 function compactStreamChunk(previous, chunk, maxLength = 5000) {
   const combined = previous + chunk;
   if (combined.length <= maxLength) return combined;
@@ -251,8 +274,10 @@ async function runCodex(prompt, entry) {
     "--sandbox",
     "read-only",
     "--ephemeral",
-    "--ignore-user-config",
-    "--ignore-rules",
+  );
+  pushOptionalCodexExecFlag(args, command, prefixArgs, "--ignore-user-config");
+  pushOptionalCodexExecFlag(args, command, prefixArgs, "--ignore-rules");
+  args.push(
     "--output-last-message",
     outputPath,
     "--output-schema",
