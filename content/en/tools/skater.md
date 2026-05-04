@@ -58,6 +58,19 @@ Skater's pricing depends on the respective provider and the selected plan. In ge
 - **AthleteIQ:** AI tool for personalized training and performance tracking.
 - **FitAnalytics:** Comprehensive solution for sports data analysis and training optimization.
 
+## What really matters in daily use
+
+Skater is aimed at teams that want to explain and diagnose model predictions more clearly. Its practical value is not one chart, but the comparison of explanation approaches so model behavior, feature influence, and possible false assumptions can be discussed.
+
+## Workflow Fit
+
+- Good for data science reviews, model validation, and conversations with domain teams about black-box models.
+- Less suitable when explainability is used only as a late compliance checkbox without real model inspection.
+
+## Editorial Assessment
+
+Skater helps make models feel less mysterious. It still does not replace data understanding or the decision whether an explained model is actually acceptable in the domain.
+
 ## FAQ
 
 **1. Which sports does Skater support?**  

@@ -60,6 +60,19 @@ Doubao offers a freemium model, with basic functions available for free. Paid pl
 - **Tidio**: A user-friendly chatbot and live chat service with a focus on e-commerce and customer service.  
 - **ManyChat**: A chatbot solution specifically designed for marketing and customer relationship management over messaging platforms.
 
+## What really matters in daily use
+
+Doubao is most interesting as an AI assistant inside the Chinese ecosystem, where language, platform integration, and user habits differ from many Western chatbots. Evaluation should focus on concrete features, data sources, app integration, and the market the assistant is built for.
+
+## Workflow Fit
+
+- Relevant for market observation, multilingual AI strategy, and comparisons of regional assistant ecosystems.
+- Less directly suitable for teams focused mainly on automating German or English business processes in Europe.
+
+## Editorial Assessment
+
+Doubao should not be treated as just another chatbot. The interesting part is how local platform logic, language, and content behavior shape the assistant experience.
+
 ## FAQ
 
 **1. What is Doubao exactly?**  

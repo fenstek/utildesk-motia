@@ -66,6 +66,19 @@ Adobe Firefly bietet ein Freemium-Modell an. Die Basisfunktionen sind kostenlos 
 - [Figma](/tools/figma/): Kollaboratives Design-Tool mit Schwerpunkt auf UI/UX-Design und Prototyping.
 - [Midjourney](/tools/midjourney/): ** KI-gestützte kreative Bildgenerierung mit Fokus auf künstlerische Styles.
 - [Affinity Designer](/tools/affinity-designer/): Leistungsstarke Design-Software als Alternative zu Adobe-Produkten, ohne Abo-Modell.
+## Was im Alltag wirklich zaehlt
+
+Adobe Firefly ist besonders dann interessant, wenn generative Bilder nicht isoliert entstehen, sondern direkt in bestehende Kreativprozesse mit Photoshop, Express oder Illustrator einfliessen sollen. Wichtig ist weniger der einzelne spektakulaere Prompt, sondern ob Varianten, Rechteklaerung, Stiltreue und Nachbearbeitung in einem pruefbaren Prozess zusammenpassen.
+
+## Workflow-Fit
+
+- Stark fuer Marketing-, Content- und Designteams, die viele sichere Bildrichtungen testen und anschliessend manuell veredeln.
+- Vorsicht ist geboten, wenn ein Motiv fotorealistisch, rechtlich heikel oder markenkritisch ist und ohne menschliche Kontrolle live gehen soll.
+
+## Redaktionelle Einschaetzung
+
+Firefly ist kein Ersatz fuer Art Direction, sondern ein Beschleuniger fuer Entwurf, Moodboard und Variantenarbeit. Wer klare Prompts, Freigaben und Nachbearbeitung kombiniert, bekommt mehr Nutzen als reine Prompt-Spielerei.
+
 ## FAQ
 
 **1. Was ist Adobe Firefly?**  

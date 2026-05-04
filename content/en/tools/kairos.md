@@ -59,6 +59,19 @@ Kairos offers different pricing plans based on usage volume and feature scope. A
 - **Google Cloud Vision:** Comprehensive image analysis including facial recognition and object detection.
 - **OpenCV:** Open-source computer vision library, also with facial recognition modules, but it requires more development effort.
 
+## What really matters in daily use
+
+Kairos needs especially careful evaluation in the area of facial recognition and visual identity. Beyond recognition performance, consent, bias testing, privacy, use context, and whether biometric processing is appropriate at all are central.
+
+## Workflow Fit
+
+- Relevant for projects that examine identity or analysis functions with a clear legal basis and strict controls.
+- Less suitable for casual experiments, marketing gimmicks, or deployments without documented consent and risk assessment.
+
+## Editorial Assessment
+
+Kairos requires more care than many other AI tools. Precisely because the technology can be powerful, its use needs tighter ethical and legal control.
+
 ## FAQ
 
 **1. How does facial recognition work in Kairos?**  

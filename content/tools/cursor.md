@@ -58,6 +58,19 @@ Cursor bietet ein Freemium-Modell an. Die kostenlose Version umfasst grundlegend
 - **Codeium:** Kostenloses KI-Coding-Tool mit schnellen Vorschlägen.
 - [Amazon CodeWhisperer](/tools/amazon-codewhisperer/): KI-basierte Programmierhilfe mit Integration in AWS-Services.
 
+## Was im Alltag wirklich zaehlt
+
+Cursor ist fuer Entwickler interessant, weil KI-Unterstuetzung direkt im Editor, im Repository und im laufenden Codekontext arbeitet. Der Nutzen haengt davon ab, ob Vorschlaege geprueft, Tests ausgefuehrt und Architekturentscheidungen weiterhin bewusst getroffen werden.
+
+## Workflow-Fit
+
+- Gut fuer Refactoring, Code-Navigation, Boilerplate, Tests, kleine Features und Erklaerung unbekannter Codebereiche.
+- Riskant bei sicherheitskritischen Aenderungen, Migrationen oder grossen Patches, wenn Reviews und Tests ausgelassen werden.
+
+## Redaktionelle Einschaetzung
+
+Cursor kann Entwicklungsarbeit spuerbar beschleunigen, wenn es als Pairing-Partner genutzt wird. Es wird gefaehrlich, sobald erzeugter Code mehr Vertrauen bekommt als die eigene Verifikation.
+
 ## FAQ
 
 **1. Ist Cursor für Anfänger geeignet?**  

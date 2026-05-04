@@ -69,6 +69,19 @@ Konkrete Preise sollten direkt beim Anbieter erfragt werden.
 - **IBM Watson Assistant:** KI-Assistent mit starker Integration und Analysefunktionen  
 - **Chatfuel:** Benutzerfreundliche Plattform für Facebook-Chatbots und mehr  
 
+## Was im Alltag wirklich zaehlt
+
+Inflection ist im Kontext von KI-Assistenten vor allem als Ansatz fuer dialogorientierte, persoenlichere Interaktion interessant. Fuer Nutzer ist wichtig, zwischen freundlicher Konversation und belastbarer Aufgabenloesung zu unterscheiden: Tonalitaet allein ersetzt keine Quellen, Integrationen oder klare Ergebnispruefung.
+
+## Workflow-Fit
+
+- Relevant fuer KI-Marktbeobachtung, Conversational-AI-Konzepte und Fragen nach Nutzerbindung durch Dialogdesign.
+- Weniger direkt passend, wenn ein Unternehmen sofort eine tief integrierte Automatisierungsplattform mit eigenen Workflows sucht.
+
+## Redaktionelle Einschaetzung
+
+Inflection zeigt, wie wichtig Beziehungston und Zugaenglichkeit in KI-Produkten sein koennen. Praktischer Nutzen entsteht aber erst, wenn diese Staerke mit verlaesslichen Funktionen verbunden wird.
+
 ## FAQ
 
 **1. Was ist Inflection genau?**  

@@ -54,6 +54,19 @@ SuperMemo bietet in der Regel ein Abonnement-Modell an, das verschiedene Tarife 
 - **Brainscape:** Plattform für optimiertes Lernen mit adaptiven Wiederholungen und Fokus auf Produktivität.
 - **TinyCards:** Flashcard-App von Duolingo, ideal für Anfänger und einfache Lerninhalte.
 
+## Was im Alltag wirklich zaehlt
+
+SuperMemo ist fuer langfristiges Lernen interessant, weil Wiederholung nach Vergessenskurven organisiert wird. Der Nutzen entsteht, wenn Karten gut formuliert, regelmaessig bearbeitet und mit echtem Verstehen verbunden werden; schlechte Karten bleiben auch mit bestem Algorithmus schlechte Lernimpulse.
+
+## Workflow-Fit
+
+- Gut fuer Sprachen, Faktenwissen, Medizin, Recht, Pruefungsvorbereitung und andere Inhalte mit langfristiger Behaltensanforderung.
+- Weniger geeignet fuer Themen, die primaer durch Projekte, Diskussion oder offene Problemloesung gelernt werden.
+
+## Redaktionelle Einschaetzung
+
+SuperMemo ist anspruchsvoller als einfache Karteikarten-Apps, aber methodisch stark. Wer die Disziplin fuer saubere Karten und Wiederholungsroutine mitbringt, kann sehr nachhaltig lernen.
+
 ## FAQ
 
 **Wie funktioniert das Spaced Repetition Prinzip bei SuperMemo?**  

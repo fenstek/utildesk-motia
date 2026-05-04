@@ -54,6 +54,19 @@ Zendesk bietet verschiedene Abonnement-Modelle an, die sich je nach Unternehmens
 - **Salesforce Service Cloud:** Leistungsstarke Plattform für große Unternehmen mit umfassenden CRM- und KI-Tools.
 - **LiveAgent:** Multichannel-Support mit starkem Fokus auf Live-Chat und Ticketmanagement.
 
+## Was im Alltag wirklich zaehlt
+
+Zendesk wird wertvoll, wenn Support nicht mehr aus einzelnen Antworten, sondern aus messbaren Prozessen besteht. Tickets, Helpcenter, Automationen und Reporting helfen nur dann, wenn Kategorien, Makros, Eskalationen und Verantwortlichkeiten laufend gepflegt werden.
+
+## Workflow-Fit
+
+- Stark fuer wachsende Supportteams, SaaS-Anbieter, E-Commerce und Unternehmen mit mehreren Kontaktkanaelen.
+- Weniger passend, wenn sehr kleine Teams nur gelegentliche Anfragen haben und kein formaler Supportprozess gewuenscht ist.
+
+## Redaktionelle Einschaetzung
+
+Zendesk ist ein skalierbares Supportsystem, aber kein Selbstlaeufer. Gute Implementierungen fuehlen sich fuer Kunden einfach an, weil im Hintergrund sehr bewusst strukturiert wurde.
+
 ## FAQ
 
 **1. Welche Kommunikationskanäle unterstützt Zendesk?**  

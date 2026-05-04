@@ -62,6 +62,19 @@ KNIME offers a free open-source version that is sufficient for many use cases. F
 - **Apache NiFi** – Open-source data flow management with a focus on data integration and real-time processing.  
 - **Dataiku** – Platform for collaborative data science and machine learning with extensive automation features.  
 
+## What really matters in daily use
+
+KNIME is strongest when data work needs to be visible, repeatable, and understandable for mixed teams. Node-based workflows are especially helpful when analysts, business teams, and data scientists need to see which transformation happens to which data.
+
+## Workflow Fit
+
+- Useful for ETL prototypes, reporting preparation, data mining, and recurring analysis chains that need documentation.
+- Heavier when very large pipelines, CI/CD discipline, or pure code ownership are the central concern.
+
+## Editorial Assessment
+
+KNIME is less a quick script replacement than a workspace for transparent data processes. Its biggest benefit is making workflows understandable before they are automated or moved into code.
+
 ## FAQ
 
 **1. Is KNIME free to use?**  

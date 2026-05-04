@@ -69,6 +69,19 @@ Domo offers a Freemium model that allows for free testing with limited features.
 - [Qlik Sense](/tools/qlik-sense/): Platform focusing on associative data modeling and interactive dashboards
 - [Sisense](/tools/sisense/): BI solution with strong data integration and embedded analytics
 
+## What really matters in daily use
+
+Domo creates value when data from many sources is not merely collected, but made visible for operational decisions. The decisive factors are data modeling, metric ownership, and dashboard discipline; without them, BI only creates prettier arguments rather than better decisions.
+
+## Workflow Fit
+
+- Strong for organizations that want shared dashboards across marketing, sales, finance, or operations data.
+- Less suitable when data quality, definitions, and access rights are still completely unstructured.
+
+## Editorial Assessment
+
+Domo is a powerful BI portal, but not a substitute for data strategy. It becomes more useful when every metric has an owner, a definition, and a clear decision purpose.
+
 ## FAQ
 
 **What is Domo?**  

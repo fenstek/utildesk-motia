@@ -57,6 +57,19 @@ Die Preisstruktur von Hindenburg Journalist variiert je nach gewähltem Plan und
 - **GarageBand:** Einsteigerfreundliche DAW für Mac-Nutzer mit soliden Grundfunktionen.
 - **Auphonic:** Online-Audio-Optimierungsdienst, der automatisierte Lautstärkeanpassung und Rauschunterdrückung bietet.
 
+## Was im Alltag wirklich zaehlt
+
+Hindenburg Journalist ist auf gesprochene Inhalte ausgerichtet und damit naeher an Redaktion als an Musikstudio. Fuer Interviews, Features und Radioformate zaehlen schneller Schnitt, Pegelkontrolle, Sprachverstaendlichkeit und ein Workflow, der journalistisches Material nicht mit unnoetiger Technik ueberlaedt.
+
+## Workflow-Fit
+
+- Gut fuer Reporter, Podcaster, Audiofeatures und Redaktionen mit vielen Sprachaufnahmen.
+- Weniger geeignet fuer komplexe Musikproduktion, Sounddesign oder Projekte mit starkem MIDI- und Instrumentenanteil.
+
+## Redaktionelle Einschaetzung
+
+Hindenburg Journalist ist wertvoll, weil es Sprache ernst nimmt. Wer vor allem Stimmen, Atmosphaere und Erzaehlfluss bearbeiten muss, bekommt ein fokussierteres Werkzeug als in vielen allgemeinen DAWs.
+
 ## FAQ
 
 **1. Ist Hindenburg Journalist für Anfänger geeignet?**  
