@@ -4,14 +4,20 @@ import { mkdir, readdir, readFile, rename, unlink, writeFile } from "node:fs/pro
 import { spawn, spawnSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import dotenv from "dotenv";
+import OpenAI from "openai";
 import matter from "../site/node_modules/gray-matter/index.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+dotenv.config({ path: path.join(ROOT, ".env"), quiet: true });
+
 const SOURCE_DIR = path.resolve(process.env.TRANSLATE_SOURCE_DIR || path.join(ROOT, "content", "tools"));
 const TARGET_DIR = path.resolve(process.env.TRANSLATE_TARGET_DIR || path.join(ROOT, "content", "en", "tools"));
 const TMP_DIR = path.resolve(process.env.TRANSLATE_TMP_DIR || path.join(ROOT, "tmp", "codex-translations"));
 const LOG_PATH = path.resolve(process.env.TRANSLATE_LOG_PATH || path.join(ROOT, "tmp", "translate-tools-en-codex.jsonl"));
 const MODEL = String(process.env.CODEX_TRANSLATION_MODEL || "gpt-5.4-mini").trim();
+const OPENAI_MODEL = String(process.env.OPENAI_TRANSLATION_MODEL || "gpt-4.1-mini").trim();
+const TRANSLATE_BACKEND = String(process.env.TRANSLATE_BACKEND || "").trim().toLowerCase();
 const CONCURRENCY = Math.max(1, Number(process.env.CODEX_TRANSLATION_CONCURRENCY || process.env.TRANSLATE_CONCURRENCY || "1"));
 const MAX_RETRIES = Math.max(0, Number(process.env.CODEX_TRANSLATION_RETRIES || process.env.TRANSLATE_RETRIES || "1"));
 const LIMIT = Number(process.env.TRANSLATE_LIMIT || argValue("--limit") || 0);
@@ -20,6 +26,7 @@ const DRY_RUN = hasArg("--dry-run");
 const SLUGS = new Set(await resolveSlugSelection());
 const SCHEMA_PATH = path.join(TMP_DIR, "tool-translation.schema.json");
 const CODEX_FLAG_SUPPORT = new Map();
+let openaiClient = null;
 
 const PRICE_MODEL_EN = new Map([
   ["Kostenlos", "Free"],
@@ -325,6 +332,80 @@ async function runCodex(prompt, entry) {
   });
 }
 
+function hasOpenAiFallback() {
+  return Boolean(String(process.env.OPENAI_API_KEY || "").trim());
+}
+
+function isCodexAuthFailure(error) {
+  const message = String(error?.message || error);
+  return /refresh token|access token|401 Unauthorized|log out and sign in/i.test(message);
+}
+
+async function runOpenAiFallback(prompt, entry) {
+  if (!hasOpenAiFallback()) {
+    throw new Error("OpenAI fallback requested but OPENAI_API_KEY is not set.");
+  }
+  if (!openaiClient) {
+    openaiClient = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  }
+
+  const schema = JSON.parse(await readFile(SCHEMA_PATH, "utf8"));
+  const response = await openaiClient.chat.completions.create({
+    model: OPENAI_MODEL,
+    messages: [
+      {
+        role: "system",
+        content: "You are a careful localization editor. Return only valid JSON that matches the requested schema.",
+      },
+      { role: "user", content: prompt },
+    ],
+    response_format: {
+      type: "json_schema",
+      json_schema: {
+        name: "tool_translation",
+        schema,
+        strict: true,
+      },
+    },
+  });
+
+  const content = response.choices?.[0]?.message?.content;
+  if (!content) {
+    throw new Error(`OpenAI fallback returned no content for ${entry.slug}.`);
+  }
+  return content;
+}
+
+async function runTranslationBackend(prompt, entry) {
+  if (TRANSLATE_BACKEND === "openai") {
+    return await runOpenAiFallback(prompt, entry);
+  }
+  if (TRANSLATE_BACKEND === "codex") {
+    return await runCodex(prompt, entry);
+  }
+
+  try {
+    return await runCodex(prompt, entry);
+  } catch (error) {
+    if (!isCodexAuthFailure(error) || !hasOpenAiFallback()) {
+      throw error;
+    }
+    await writeFile(
+      LOG_PATH,
+      JSON.stringify({
+        ok: false,
+        fallback: "openai",
+        slug: entry.slug,
+        reason: "codex_auth_failure",
+        error: String(error?.message || error),
+        at: new Date().toISOString(),
+      }) + "\n",
+      { flag: "a" },
+    );
+    return await runOpenAiFallback(prompt, entry);
+  }
+}
+
 async function translate(entry) {
   const source = await readFile(entry.sourcePath, "utf8");
   const parsed = matter(source);
@@ -340,7 +421,7 @@ async function translate(entry) {
   let lastError;
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt += 1) {
     try {
-      const output = await runCodex(buildPrompt(input), entry);
+      const output = await runTranslationBackend(buildPrompt(input), entry);
       const translated = extractJson(output);
       validateTranslation(entry, input, translated);
       const rendered = matter.stringify(`${translated.body.trim()}\n`, normalizeData(parsed.data, translated), { lineWidth: -1 });
@@ -390,6 +471,9 @@ async function main() {
       {
         backend: "codex-oauth",
         model: MODEL || "codex-default",
+        fallbackBackend: hasOpenAiFallback() ? "openai" : null,
+        fallbackModel: hasOpenAiFallback() ? OPENAI_MODEL : null,
+        backendOverride: TRANSLATE_BACKEND || null,
         totalQueued: queue.length,
         selected: selected.length,
         sourceDir: SOURCE_DIR,
