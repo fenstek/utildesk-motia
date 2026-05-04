@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Seeds Google Sheet with NEW rows from alternatives audit missing matches.
+Seeds Google Sheet with NEEDS_REVIEW rows from alternatives audit missing matches.
 
-Reads the alternatives audit JSON (`/tmp/audit_alternatives_render_v2.json`), extracts tools mentioned in alternatives sections but not found in the content/tools directory, and adds them to the Sheet with status=NEW and notes=ALT_SEED.
+Reads the alternatives audit JSON (`/tmp/audit_alternatives_render_v2.json`), extracts tools mentioned in alternatives sections but not found in the content/tools directory, and adds them to the Sheet with status=NEEDS_REVIEW and notes=ALT_SEED_NEEDS_OFFICIAL_URL. The URL rebuild job must resolve `official_url` before publish can pick the row up as NEW.
 
 ## Usage
 
@@ -22,7 +22,7 @@ node scripts/sheet_seed_from_alternatives.mjs --json --limit 50
 ## Flags
 
 - `--dry-run`: Default mode, no writes. Shows summary and sample rows.
-- `--apply`: Write NEW rows to Sheet.
+- `--apply`: Write NEEDS_REVIEW rows to Sheet.
 - `--limit N`: Maximum rows to add (default: 20).
 - `--json`: Output JSON instead of human-readable summary.
 
@@ -40,8 +40,8 @@ Each row written to Sheet (16 columns A-P):
 - B: slug (slugified topic)
 - C: category (auto-detected fallback)
 - D-F: empty (tags, price_model, affiliate_url)
-- G: status = "NEW"
-- H: notes = "ALT_SEED"
+- G: status = "NEEDS_REVIEW"
+- H: notes = "ALT_SEED_NEEDS_OFFICIAL_URL"
 - I-P: empty (title, short_hint, official_url, wikidata fields)
 
 ## Summary Structure
@@ -83,7 +83,7 @@ Schedule: `10 2 * * *` (daily at 02:10 UTC)
 
 - **Dry-run by default**: Requires explicit `--apply` flag.
 - **Limit enforced**: Maximum 20 rows per run (configurable).
-- **No destructive operations**: Only appends NEW rows, never updates or deletes.
+- **No destructive operations**: Only appends NEEDS_REVIEW rows, never updates or deletes.
 - **Deduplication**: Prevents adding duplicates.
 - **Structured logging**: JSON summary for easy monitoring.
 

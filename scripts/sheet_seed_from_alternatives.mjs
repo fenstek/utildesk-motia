@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SEED pipeline: add NEW rows to Sheet from alternatives audit missing matches.
+ * SEED pipeline: add review rows to Sheet from alternatives audit missing matches.
  *
  * Default: dry-run (no writes).
  *
@@ -253,8 +253,8 @@ async function main() {
     '',                      // D - tags
     '',                      // E - price_model
     '',                      // F - affiliate_url
-    'NEW',                   // G - status
-    'ALT_SEED',              // H - notes
+    'NEEDS_REVIEW',          // G - status (official_url must be resolved before publish)
+    'ALT_SEED_NEEDS_OFFICIAL_URL', // H - notes
     '',                      // I - title
     '',                      // J - short_hint
     '',                      // K - official_url

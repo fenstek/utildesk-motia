@@ -49,11 +49,11 @@ Audits consistency between DONE rows in Sheet and actual files in content/tools/
 **Log**: `/var/log/utildesk-motia/alternatives.log`
 **Scripts**:
 1. `scripts/audit_alternatives_render.mjs --json` → generates `/tmp/audit_alternatives_render_v2.json`
-2. `scripts/sheet_seed_from_alternatives.mjs --apply --limit 20` → seeds NEW rows from missing alternatives
+2. `scripts/sheet_seed_from_alternatives.mjs --apply --limit 20` → seeds NEEDS_REVIEW rows from missing alternatives
 
-Scans alternatives sections in existing tools, extracts tools not yet in content/tools/, and adds them to Sheet with status=NEW and notes=ALT_SEED.
+Scans alternatives sections in existing tools, extracts tools not yet in content/tools/, and adds them to Sheet with status=NEEDS_REVIEW and notes=ALT_SEED_NEEDS_OFFICIAL_URL. The URL rebuild job must resolve official_url before these rows become NEW.
 
-**Limits**: 20 new rows per run
+**Limits**: 20 review rows per run
 **Deduplication**: By slug, topic, and file existence
 
 ---
