@@ -54,6 +54,19 @@ Kairos bietet verschiedene Preispläne, die sich nach dem Nutzungsvolumen und Fu
 - **Google Cloud Vision:** Umfassende Bildanalyse inklusive Gesichtserkennung und Objekterkennung.
 - **OpenCV:** Open-Source-Bibliothek für Computer Vision, auch mit Gesichtserkennungsmodulen, erfordert jedoch mehr Entwicklungsaufwand.
 
+## Was im Alltag wirklich zaehlt
+
+Kairos ist im Bereich Gesichtserkennung und visueller Identitaet besonders sensibel zu bewerten. Neben technischer Erkennungsleistung zaehlen Zustimmung, Bias-Pruefung, Datenschutz, Einsatzkontext und die Frage, ob biometrische Verarbeitung ueberhaupt angemessen ist.
+
+## Workflow-Fit
+
+- Relevant fuer Projekte, die Identitaets- oder Analysefunktionen mit klarer Rechtsgrundlage und strenger Kontrolle untersuchen.
+- Weniger geeignet fuer lockere Experimente, Marketing-Gimmicks oder Einsaetze ohne dokumentierte Einwilligung und Risikobewertung.
+
+## Redaktionelle Einschaetzung
+
+Kairos verlangt mehr Sorgfalt als viele andere KI-Werkzeuge. Gerade weil die Technik leistungsfaehig sein kann, muss der Einsatz ethisch und rechtlich enger gefuehrt werden.
+
 ## FAQ
 
 **1. Wie funktioniert die Gesichtserkennung bei Kairos?**  

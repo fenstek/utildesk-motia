@@ -57,6 +57,19 @@ NATS is open source and can be self-hosted without license fees. Costs come from
 - **Apache Pulsar:** Distributed messaging and streaming platform.
 - **Amazon SNS/SQS:** AWS-managed messaging services.
 
+## What really matters in daily use
+
+NATS fits architectures where services need to exchange messages very quickly and with little overhead. In practice, clear subjects, ownership, and the decision between simple pub/sub and stronger needs such as persistence or replay matter more than raw speed alone.
+
+## Workflow Fit
+
+- Strong for cloud-native systems, edge communication, microservices, and internal event distribution with low latency.
+- Not the best choice when a team without messaging experience wants to model complex transactional logic immediately.
+
+## Editorial Assessment
+
+NATS is compelling because it is simple and fast, but it still requires discipline in message design. If subjects grow without structure, the system loses its elegance quickly.
+
 ## FAQ
 
 **Is NATS a Kafka replacement?**  

@@ -68,6 +68,19 @@ LIME is an open-source project and is available free of charge. There are no dir
 - **Anchor:** Explanations based on precise rules as an alternative to LIME  
 - **Skater:** Open-source framework for model interpretation and debugging  
 
+## What really matters in daily use
+
+LIME is useful when machine-learning predictions need local explanations. It helps inspect individual decisions, but it should not be confused with a complete explanation of the whole model; sampling, features, and data preparation strongly influence the result.
+
+## Workflow Fit
+
+- Good for data science teams that want to visualize model behavior for concrete cases and discuss it with domain experts.
+- Less suitable as the only evidence for fairness, compliance, or global model stability.
+
+## Editorial Assessment
+
+LIME is a helpful diagnostic tool, not a permission slip for black-box models. It works best alongside other explainability methods and domain-level plausibility checks.
+
 ## FAQ
 
 **What does “locally interpretable” mean in LIME?**  

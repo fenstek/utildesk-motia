@@ -63,6 +63,19 @@ TPOT is an open-source tool and is therefore available free of charge. It is pro
 - **MLJAR**: Open-source AutoML tool focused on ease of use and interpretable results.  
 - **Azure Automated ML**: Microsoft’s cloud-based AutoML platform with a usage-based pricing model.
 
+## What really matters in daily use
+
+TPOT is interesting for machine-learning teams that want to test many model and feature-pipeline combinations without configuring every option by hand. Its value depends on solid training data, metrics, and validation strategy; otherwise AutoML simply optimizes the wrong target very efficiently.
+
+## Workflow Fit
+
+- Useful for exploratory classification and regression work where a strong baseline comparison is needed.
+- Less suitable when interpretability, leakage control, or production model maintenance have not been defined.
+
+## Editorial Assessment
+
+TPOT can accelerate model discovery, but it does not replace data analysis. It works best as a second pass over prepared data, not as a magic layer over an unclear ML problem.
+
 ## FAQ
 
 **What is TPOT?**  

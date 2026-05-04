@@ -59,6 +59,19 @@ KAI offers a freemium model that allows a free start. The basic features can be 
 - **Microsoft Azure AI:** Integrated AI services with strong cloud connectivity.
 - [Hugging Face](/tools/hugging-face/): Open-source models and tools for developers and researchers.
 
+## What really matters in daily use
+
+KAI should be evaluated by its concrete use case, not by the AI label alone. For assistant, analysis, or automation features, the key is whether inputs remain traceable, decisions can be explained, and the team can fit results into existing workflows.
+
+## Workflow Fit
+
+- Useful when recurring knowledge or communication tasks can be prepared faster and then reviewed.
+- Risky when unclear data sources, missing approvals, or undocumented decisions slip into production processes.
+
+## Editorial Assessment
+
+KAI is only as strong as the process around it. Before broad rollout, a narrow test case with a clear success metric is more useful than a vague expectation of AI productivity.
+
 ## FAQ
 
 **1. Is KAI suitable for beginners?**  

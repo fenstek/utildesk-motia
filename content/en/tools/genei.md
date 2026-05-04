@@ -64,6 +64,19 @@ Genei offers a Freemium model. The free version includes basic functions like si
 - [Scholarcy](/tools/scholarcy/): Specialized summarization software for academic articles with additional analysis features.
 - [SummarizeBot](/tools/summarizebot/): KI tool that automatically summarizes documents and web pages.
 
+## What really matters in daily use
+
+Genei is interesting for research work when long sources need to be summarized, highlighted, and turned into notes faster. The key is whether the summary points back to the actual argument of the source instead of producing only pleasant short versions.
+
+## Workflow Fit
+
+- Good for students, analysts, content research, and literature overviews in early project phases.
+- Less suitable when exact quotations, methodological assessment, or academic evidence standards are required without manual checking.
+
+## Editorial Assessment
+
+Genei can speed up reading work, but not replace critical reading. Its best role is structuring material before a human evaluates claims, evidence, and gaps.
+
 ## FAQ
 
 **1. How does the KI summarization work in Genei?**  

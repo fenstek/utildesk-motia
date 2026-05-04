@@ -62,6 +62,19 @@ Genei bietet ein Freemium-Modell an. Die kostenlose Version enthält grundlegend
 - [Scholarcy](/tools/scholarcy/): Speziell für wissenschaftliche Artikel entwickelte Zusammenfassungssoftware mit zusätzlichen Analysefunktionen.
 - [SummarizeBot](/tools/summarizebot/): KI-Tool, das Dokumente und Webseiten automatisch zusammenfasst.
 
+## Was im Alltag wirklich zaehlt
+
+Genei ist fuer Recherchearbeit interessant, wenn lange Quellen schneller zusammengefasst, markiert und in Notizen ueberfuehrt werden sollen. Entscheidend bleibt, ob die Zusammenfassung auf die tatsaechliche Argumentation der Quelle verweist und nicht nur angenehm lesbare Kurzfassungen erzeugt.
+
+## Workflow-Fit
+
+- Gut fuer Studierende, Analysten, Content-Recherche und Literaturueberblick in fruehen Projektphasen.
+- Weniger geeignet, wenn exakte Zitate, methodische Bewertung oder wissenschaftliche Belegpflicht ohne manuelle Pruefung gebraucht werden.
+
+## Redaktionelle Einschaetzung
+
+Genei kann Lesearbeit beschleunigen, aber nicht das kritische Lesen ersetzen. Der beste Einsatz ist die Vorstrukturierung von Material, bevor der Mensch Thesen, Belege und Luecken bewertet.
+
 ## FAQ
 
 **1. Wie funktioniert die KI-Zusammenfassung bei Genei?**  

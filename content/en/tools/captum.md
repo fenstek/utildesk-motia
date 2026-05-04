@@ -59,6 +59,19 @@ Captum is an open-source project and can be used for free. There are no licensin
 - **Alibi:** Open-source library for explainable AI with a focus on monitoring and explanations.  
 - **ELI5:** Simple-to-use library for explaining predictions of various models.  
 
+## What really matters in daily use
+
+Captum helps PyTorch teams interpret neural models more clearly. Daily use centers on attribution analysis, sensitivity questions, and model reviews where the team needs to see which inputs influence a prediction most strongly.
+
+## Workflow Fit
+
+- Good for research, model validation, and teams that want explainability directly inside PyTorch-oriented experiments.
+- Less suitable as a standalone reporting tool for business stakeholders without technical guidance.
+
+## Editorial Assessment
+
+Captum is a tool for serious model inspection, not for pretty reassurance charts. Its outputs should always be checked against data knowledge, error analysis, and alternative explanation methods.
+
 ## FAQ
 
 **1. What is Captum exactly?**  

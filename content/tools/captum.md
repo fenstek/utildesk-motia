@@ -56,6 +56,19 @@ Captum ist ein Open-Source-Projekt und kann kostenlos genutzt werden. Es fallen 
 - **Alibi:** Open-Source-Bibliothek für erklärbare KI mit Fokus auf Überwachung und Erklärungen.  
 - **ELI5:** Einfach zu nutzende Bibliothek zur Erklärung von Vorhersagen verschiedener Modelle.  
 
+## Was im Alltag wirklich zaehlt
+
+Captum hilft PyTorch-Teams, neuronale Modelle besser zu interpretieren. Der Alltagseinsatz liegt in Attributionsanalysen, Sensitivitaetsfragen und Modellreviews, bei denen sichtbar werden soll, welche Eingaben eine Vorhersage besonders beeinflussen.
+
+## Workflow-Fit
+
+- Gut fuer Forschung, Modellvalidierung und Teams, die Explainability direkt in PyTorch-nahe Experimente einbauen wollen.
+- Weniger geeignet als isoliertes Reporting-Werkzeug fuer Fachbereiche ohne technische Begleitung.
+
+## Redaktionelle Einschaetzung
+
+Captum ist ein Werkzeug fuer ernsthafte Modellinspektion, nicht fuer huebsche Beruhigungsdiagramme. Seine Aussagen sollten immer mit Datenwissen, Fehleranalyse und alternativen Erklaerungsmethoden gegengeprueft werden.
+
 ## FAQ
 
 **1. Was ist Captum genau?**  
