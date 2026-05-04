@@ -54,6 +54,18 @@ Google Cloud AutoML is aimed at companies and developers who want to create cust
 - Learning curve for users without cloud experience.
 - Data protection and data sovereignty must be reviewed carefully, especially for sensitive data.
 
+## What really matters in daily use
+
+In daily use, Google Cloud AutoML is useful only when it can support custom ML models for teams already operating on Google Cloud inside a real workflow. A fair pilot needs real trials with training data, label quality, deployments and monitoring effort; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: useful for structured ML cases, but not a shortcut for unclear data or target metrics.
+
+## Workflow Fit
+
+Google Cloud AutoML should have a narrow job in the workflow: input, quality check, handoff point and owner. For custom ML models for teams already operating on Google Cloud, this kind of evidence is more informative than a long feature list: real trials with training data, label quality, deployments and monitoring effort. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Google Cloud AutoML is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Useful for structured ML cases, but not a shortcut for unclear data or target metrics. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Google Cloud AutoML pricing is based on several factors, including the type of model, training time, number of requests, and storage requirements. In general, there are costs for training, model deployment, and usage. Google offers a usage-based pricing model that can vary depending on project size and requirements.

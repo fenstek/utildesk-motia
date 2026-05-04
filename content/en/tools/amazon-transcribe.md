@@ -15,86 +15,88 @@ translation: full
 ---
 # Amazon Transcribe
 
-Amazon Transcribe ist ein cloudbasierter automatischer Spracherkennungsdienst (ASR) von Amazon Web Services (AWS), der Audioinhalte in Text umwandelt. Der Dienst unterstützt verschiedene Sprachen und Dialekte und wird vor allem zur Transkription von Meetings, Interviews, Kundengesprächen oder Medieninhalten eingesetzt. Durch die Integration in bestehende Anwendungen und Workflows ermöglicht Amazon Transcribe eine effiziente und skalierbare Automatisierung der Transkriptionsprozesse.
+Amazon Transcribe is Amazon Web Services' automatic speech recognition service for turning audio and video into text. It is used for meeting notes, media transcripts, contact-center analysis, subtitles, research interviews and internal documentation. The service is especially relevant for teams that already store files in AWS or want transcription to become part of a larger processing pipeline rather than a standalone manual task.
 
-## Für wen ist Amazon Transcribe geeignet?
+## Who is Amazon Transcribe for?
 
-Amazon Transcribe richtet sich an Unternehmen, Entwickler und Organisationen, die große Mengen an Audio- oder Videodateien schnell und zuverlässig in Text umwandeln möchten. Besonders nützlich ist es für:
+Amazon Transcribe fits organizations that process repeated audio or video material and need structured transcripts at scale. Typical users include media teams producing captions, support teams analyzing calls, researchers working through interviews, product teams adding speech features, and education providers documenting lectures or seminars.
 
-- Medienunternehmen, die Untertitel oder Transkriptionen für Videos benötigen
-- Callcenter und Kundendienst, um Telefonate automatisiert zu protokollieren
-- Forscher und Journalisten, die Interviews transkribieren wollen
-- Entwickler, die Sprachdaten in Anwendungen integrieren möchten
-- Bildungsinstitutionen zur Digitalisierung von Vorlesungen und Seminaren
+It is less compelling for one-off personal transcription if a simpler consumer app is enough. Its strongest use case is a repeatable workflow where files, permissions, review, storage and downstream analysis are already defined.
 
-Die Skalierbarkeit des Dienstes macht ihn sowohl für kleine Projekte als auch für umfangreiche Enterprise-Anwendungen geeignet.
+## Key features
 
-## Hauptfunktionen
+- **Automatic speech recognition:** Converts spoken language into written text for recorded or streaming audio.
+- **Streaming and batch modes:** Supports live transcription as well as processing stored files.
+- **Speaker labeling:** Can separate speakers in multi-person conversations, which is useful for interviews and meetings.
+- **Custom vocabulary:** Lets teams add domain terms, product names and specialist language to improve recognition.
+- **Timestamps:** Adds timing data so transcripts can be linked back to the original audio.
+- **AWS integration:** Works with services such as S3, Lambda and analytics pipelines.
+- **Security controls:** Uses AWS identity, access and encryption controls for regulated environments.
 
-- **Automatische Spracherkennung (ASR):** Umwandlung von Audio in geschriebenen Text mit hoher Genauigkeit.
-- **Unterstützung mehrerer Sprachen und Dialekte:** Erkennung und Transkription in verschiedenen Sprachen.
-- **Echtzeit- und Batch-Verarbeitung:** Transkriptionen können live oder von gespeicherten Dateien durchgeführt werden.
-- **Sprechererkennung:** Automatische Identifikation und Kennzeichnung verschiedener Sprecher im Audio.
-- **Punktuation und Großschreibung:** Automatische Ergänzung von Satzzeichen und korrekter Groß-/Kleinschreibung.
-- **Vokabularanpassung:** Möglichkeit, benutzerdefinierte Wörter oder Fachbegriffe hinzuzufügen, um die Erkennungsgenauigkeit zu verbessern.
-- **Zeitstempel:** Jedes Wort im Transkript wird mit Zeitcodes versehen, was die Navigation erleichtert.
-- **Integration mit AWS-Services:** Nahtlose Anbindung an andere AWS-Produkte wie S3, Lambda oder Comprehend.
-- **Sicherheits- und Datenschutzfunktionen:** Datenverschlüsselung und Compliance mit gängigen Standards.
+## Pros and Cons
 
-## Vorteile und Nachteile
+### Pros
 
-### Vorteile
+- Scales well for recurring audio and video workloads.
+- Useful integrations for teams already using AWS.
+- Supports custom vocabulary and speaker labeling.
+- Can feed transcripts into search, analytics, documentation or compliance workflows.
+- Usage-based pricing can be practical when volume is predictable.
 
-- Hohe Skalierbarkeit und Verfügbarkeit durch Cloud-Infrastruktur
-- Unterstützung zahlreicher Sprachen und Dialekte
-- Flexible Nutzungsmodelle ohne langfristige Bindung
-- Einfache Integration in bestehende Systeme dank APIs
-- Fortschrittliche Funktionen wie Sprechererkennung und benutzerdefiniertes Vokabular
-- Zeitstempel für genaue Text-Audio-Zuordnung
-- Automatische Satzzeichen und Großschreibung verbessern Lesbarkeit
+### Cons
 
-### Nachteile
+- Quality still depends heavily on audio clarity, accents, background noise and specialist vocabulary.
+- Review is still needed for customer-facing, legal, medical or compliance-sensitive transcripts.
+- Setup is more technical than lightweight meeting-transcription apps.
+- Costs can grow quickly when teams process large volumes without monitoring.
+- Privacy and retention rules must be designed carefully before production use.
 
-- Kosten können je nach Nutzungsvolumen variieren und bei großem Umfang höher ausfallen
-- Erkennungsgenauigkeit kann je nach Audioqualität und Sprache schwanken
-- Für manche Sprachen oder Dialekte ist die Unterstützung noch begrenzt
-- Einrichtung und API-Integration erfordern technisches Know-how
-- Datenschutz und Compliance müssen individuell geprüft werden, insbesondere bei sensiblen Daten
+## What really matters in daily use
 
-## Preise & Kosten
+The practical value of Amazon Transcribe is less about the feature list and more about whether automated speech recognition for meetings, media, support and analysis pipelines fits the working routine without friction. The evaluation should therefore be based on real trials with real audio quality, speaker changes, domain terms and privacy requirements. That shows early whether the tool reduces work or simply creates another review step.
 
-Amazon Transcribe verwendet ein nutzungsbasiertes Preismodell, das sich nach der Länge der verarbeiteten Audiodateien richtet. Die genauen Kosten variieren je nach Region und gewähltem Service (z.B. Standardtranskription oder erweiterte Funktionen wie Sprecherkennzeichnung). Häufig gibt es eine kostenlose Testphase oder ein monatliches Kontingent für neue Nutzer. Für detaillierte Preisübersichten empfiehlt es sich, die offizielle AWS-Preisseite zu konsultieren.
+## Workflow Fit
 
-## Alternativen zu Amazon Transcribe
+Workflow fit for Amazon Transcribe depends on clear boundaries: which inputs are allowed, who reviews results, and where outputs go next. For automated speech recognition in meetings, media, support and analysis pipelines, real trials with actual audio quality, speaker changes, domain terms and privacy requirements separate useful production signals from demo impressions. They also expose whether privacy, maintenance and cost are sustainable.
 
-- **Google Cloud Speech-to-Text:** Bietet umfangreiche Sprachunterstützung und Echtzeittranskription mit hoher Genauigkeit.
-- [Microsoft Azure Speech to Text](/tools/microsoft-azure-speech-to-text/): Integriert sich gut in Microsoft-Ökosysteme und bietet erweiterte Spracherkennungsfunktionen.
-- [IBM Watson Speech to Text](/tools/ibm-watson-speech-to-text/): Fokus auf Anpassbarkeit und Datenschutz mit verschiedenen Modelloptionen.
-- [Otter.ai](/tools/otter-ai/): Besonders beliebt für Meeting-Transkriptionen mit Kollaborationsfunktionen.
-- [Sonix](/tools/sonix/): Cloudbasierte Lösung mit automatischer Übersetzung und benutzerfreundlicher Oberfläche.
+## Editorial Assessment
+
+A useful editorial decision rule for Amazon Transcribe is a short real-world test with columns for time saved, output quality, risk and effort. If one of those columns stays unclear, the benefit is not yet reliable. Transcription only saves time when review, speaker labels and downstream processing are planned. That belongs in the first evaluation, not in a late correction cycle.
+
+## Pricing & Costs
+
+Amazon Transcribe uses usage-based pricing, typically calculated by the length of processed audio and the selected region or feature set. Extra capabilities, streaming workloads and storage or transfer in the surrounding AWS setup can affect the total cost. Teams should estimate monthly minutes before rollout and set cost monitoring early.
+
+## Alternatives to Amazon Transcribe
+
+- **Google Cloud Speech-to-Text:** A strong cloud speech API with broad language support and streaming options.
+- [Microsoft Azure Speech to Text](/tools/microsoft-azure-speech-to-text/): A natural fit for Microsoft and Azure-centered environments.
+- [IBM Watson Speech to Text](/tools/ibm-watson-speech-to-text/): Useful where IBM Cloud, customization and enterprise controls matter.
+- [Otter.ai](/tools/otter-ai/): More approachable for meeting transcription and collaborative notes.
+- [Sonix](/tools/sonix/): A user-friendly transcription platform with editing and translation workflows.
 
 ## FAQ
 
-**1. Welche Sprachen unterstützt Amazon Transcribe?**  
-Amazon Transcribe unterstützt eine Vielzahl von Sprachen und Dialekten, darunter Englisch, Spanisch, Deutsch, Französisch, Italienisch und weitere. Die genaue Liste kann sich erweitern, daher empfiehlt sich ein Blick in die aktuelle AWS-Dokumentation.
+**1. Which languages does Amazon Transcribe support?**  
+Amazon Transcribe supports many languages and dialects. The exact list changes over time, so teams should verify language coverage for their target regions before committing.
 
-**2. Wie genau ist die Transkription?**  
-Die Genauigkeit hängt von der Audioqualität, dem Akzent, der Sprache und der Komplexität des gesprochenen Inhalts ab. Amazon Transcribe verwendet moderne KI-Modelle, um eine hohe Erkennungsrate zu erzielen, kann aber bei starkem Hintergrundrauschen oder undeutlicher Sprache eingeschränkt sein.
+**2. How accurate is Amazon Transcribe?**  
+Accuracy depends on audio quality, background noise, accents, speaker overlap and vocabulary. Real sample files are the best test.
 
-**3. Kann Amazon Transcribe auch Live-Audio transkribieren?**  
-Ja, der Dienst unterstützt sowohl die Transkription von aufgezeichneten Audiodateien als auch die Echtzeit-Transkription von Live-Audio.
+**3. Can Amazon Transcribe process live audio?**  
+Yes. It supports both recorded file transcription and streaming transcription for live use cases.
 
-**4. Wie funktioniert die Sprechererkennung?**  
-Amazon Transcribe kann mehrere Sprecher im Audio automatisch identifizieren und ihre Beiträge im Text markieren, was besonders für Interviews oder Meetings hilfreich ist.
+**4. Does Amazon Transcribe identify speakers?**  
+It can label different speakers in a conversation, which helps with meetings, interviews and call analysis.
 
-**5. Gibt es eine Möglichkeit, Fachbegriffe hinzuzufügen?**  
-Ja, Nutzer können benutzerdefinierte Vokabulare anlegen, um die Erkennung von speziellen Namen, Fachbegriffen oder Abkürzungen zu verbessern.
+**5. Can I add custom terms?**  
+Yes. Custom vocabulary helps with product names, abbreviations, specialist terms and names that standard models may miss.
 
-**6. Wie sicher sind meine Daten bei Amazon Transcribe?**  
-Daten werden während der Übertragung und Speicherung verschlüsselt. AWS hält sich an verschiedene Compliance-Standards, dennoch sollten Nutzer Datenschutzanforderungen individuell prüfen.
+**6. Is Amazon Transcribe suitable for sensitive data?**  
+It can be used in controlled AWS environments, but teams still need clear rules for access, retention, encryption, review and compliance.
 
-**7. Brauche ich technisches Wissen, um Amazon Transcribe zu verwenden?**  
-Für die Nutzung der API und Integration in eigene Anwendungen ist technisches Know-how hilfreich. Es gibt aber auch Tools und Plugins, die den Einstieg erleichtern.
+**7. Do I need technical knowledge to use it?**  
+For API use and integration into production workflows, technical knowledge is helpful. Less technical users may prefer a dedicated transcription app.
 
-**8. Kann ich Amazon Transcribe in bestehende Workflows integrieren?**  
-Ja, der Dienst bietet APIs und Integrationen mit anderen AWS-Services, was eine flexible Einbindung in vielfältige Workflows ermöglicht.
+**8. Can transcripts feed other workflows?**  
+Yes. Transcripts can be connected to storage, search, analytics, support tooling or document workflows through AWS services and APIs.

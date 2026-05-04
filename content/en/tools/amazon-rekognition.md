@@ -53,6 +53,18 @@ Amazon Rekognition is designed for businesses, developers, and organizations tha
 - Limited support for on-premises deployment.
 - Learning curve for using and integrating APIs.
 
+## What really matters in daily use
+
+In daily use, Amazon Rekognition is useful only when it can support image and video analysis for moderation, search, security and media processes inside a real workflow. A fair pilot needs real trials with your own images, error tolerance, bias risks and human review; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: powerful, but people, safety or moderation use cases need clear responsibility.
+
+## Workflow Fit
+
+Amazon Rekognition should have a narrow job in the workflow: input, quality check, handoff point and owner. For image and video analysis for moderation, search, security and media processes, this kind of evidence is more informative than a long feature list: real trials with your own images, error tolerance, bias risks and human review. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Amazon Rekognition is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Powerful, but people, safety or moderation use cases need clear responsibility. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Amazon Rekognition offers a Freemium pricing model with a free quota per month that varies by region and usage. In general, a certain number of images and minutes of video material are free for analysis. Additional usage-based fees apply, depending on the amount of processed images, videos, or face recognitions. The exact prices are available on the AWS website and depend on the service package. For businesses with high volumes, individual pricing models are possible.

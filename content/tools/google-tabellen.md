@@ -55,6 +55,18 @@ Google Tabellen ist ideal für Einzelpersonen, Teams und Unternehmen, die eine f
 - Einige erweiterte Funktionen erfordern Kenntnisse in Skripten oder Add-ons.
 - Eingeschränkte Gestaltungsmöglichkeiten für komplexe Layouts.
 
+## Was im Alltag wirklich zaehlt
+
+Bei Google Tabellen entscheidet im Alltag nicht die Demo, sondern ob das Tool bei kollaborative Tabellen, leichte Automatisierung und operative Datenarbeit verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit realen Berechtigungen, Datenqualitaet, Formeln, Apps-Script-Grenzen und Exporten; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Ideal fuer flexible Teamarbeit, aber keine Datenbank, sobald Prozesse kritisch oder stark skaliert sind.
+
+## Workflow-Fit
+
+Im Workflow sollte Google Tabellen eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer kollaborative Tabellen, leichte Automatisierung und operative Datenarbeit sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit realen Berechtigungen, Datenqualitaet, Formeln, Apps-Script-Grenzen und Exporten. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+
+## Redaktionelle Einschaetzung
+
+Redaktionelle Einordnung: Google Tabellen lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Ideal fuer flexible Teamarbeit, aber keine Datenbank, sobald Prozesse kritisch oder stark skaliert sind. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+
 ## Preise & Kosten
 
 Google Tabellen ist in der Basisversion kostenlos nutzbar. Für Unternehmen und professionelle Nutzer bietet Google Workspace kostenpflichtige Pläne mit erweiterten Funktionen, mehr Speicherplatz und zusätzlichem Support an. Die Preise variieren je nach Plan und Anzahl der Nutzer. Es gibt verschiedene Stufen, die von kleinen Teams bis hin zu großen Unternehmen skalierbar sind.

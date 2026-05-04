@@ -59,6 +59,18 @@ The flexible licensing and the option to run Whisper locally also make the tool 
 - Accuracy may be limited for very specialized technical languages or dialects.
 - No dedicated user interface; mainly usable via APIs or the command line.
 
+## What really matters in daily use
+
+The practical value of Whisper is less about the feature list and more about whether speech recognition as a robust technical base for transcription and analysis fits the working routine without friction. The evaluation should therefore be based on real trials with accents, noise, long files, domain language and hosting choices. That shows early whether the tool reduces work or simply creates another review step.
+
+## Workflow Fit
+
+Workflow fit for Whisper depends on clear boundaries: which inputs are allowed, who reviews results, and where outputs go next. For speech recognition as a robust technical base for transcription and analysis, real trials with accents, noise, long files, domain language and hosting choices separates useful production signals from demo impressions. It also exposes whether privacy, maintenance and cost are sustainable.
+
+## Editorial Assessment
+
+A useful editorial decision rule for Whisper is a short real-world test with columns for time saved, output quality, risk and effort. If one of those columns stays unclear, the benefit is not yet reliable. Very strong as an engine, but product comfort, privacy and scale depend on the surrounding setup. That belongs in the first evaluation, not in a late correction cycle.
+
 ## Pricing & costs
 
 Whisper is offered in a freemium model. This means users can use the basic features free of charge to perform simple transcriptions. For advanced features, higher transcription volumes, or commercial use, costs may apply depending on the provider and plan. Prices vary depending on the scope and the chosen service, especially when Whisper is used via cloud services.

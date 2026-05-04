@@ -52,6 +52,18 @@ Microsoft Azure Cognitive Services is aimed at companies, developers, and organi
 - Privacy and compliance requirements must be considered depending on the use case.
 - Limited customization options for pre-trained models compared with custom AI models.
 
+## What really matters in daily use
+
+In daily use, Microsoft Azure Cognitive Services is useful only when it can support API building blocks for speech, vision, text and decision features in Azure inside a real workflow. A fair pilot needs real trials with a concrete use case, region, roles, logging and feature-level cost; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: good as a toolkit, but only when services are not assembled without a clear goal.
+
+## Workflow Fit
+
+Microsoft Azure Cognitive Services should have a narrow job in the workflow: input, quality check, handoff point and owner. For API building blocks for speech, vision, text and decision features in Azure, this kind of evidence is more informative than a long feature list: real trials with a concrete use case, region, roles, logging and feature-level cost. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Microsoft Azure Cognitive Services is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Good as a toolkit, but only when services are not assembled without a clear goal. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & costs
 
 Microsoft Azure Cognitive Services offers a freemium model, with many services starting with a free quota. Exact pricing varies by service and usage volume. In general, charges are based on API calls, per 1,000 processed units, or similar usage metrics. Enterprise plans with volume-based discounts are also available for larger businesses.

@@ -60,6 +60,18 @@ The tool is platform-independent and works directly in the browser, making it ea
 - Dependence on a stable internet connection.
 - Data privacy and storage in the cloud may be a concern for some users.
 
+## What really matters in daily use
+
+In daily use, Canva Video is useful only when it can support quick video formats inside a design and template workflow inside a real workflow. A fair pilot needs real trials with campaign formats, brand kits, approvals and reuse across channels; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: ideal for teams that need speed and consistency; weaker for complex post-production.
+
+## Workflow Fit
+
+Canva Video should have a narrow job in the workflow: input, quality check, handoff point and owner. For quick video formats inside a design and template workflow, this kind of evidence is more informative than a long feature list: real trials with campaign formats, brand kits, approvals and reuse across channels. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Canva Video is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Ideal for teams that need speed and consistency; weaker for complex post-production. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Canva Video offers various pricing plans from different providers. There is a free basic version with limited features and access to a limited number of templates and design elements. For expanded features, access to premium content, and team functionality, paid subscriptions are available. Prices and conditions may vary depending on the region and chosen plan.

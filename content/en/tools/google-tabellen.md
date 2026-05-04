@@ -59,6 +59,18 @@ Google Sheets is ideal for individuals, teams, and companies looking for a flexi
 - Some advanced features require knowledge of scripts or add-ons.
 - Limited design options for complex layouts.
 
+## What really matters in daily use
+
+In daily use, Google Tabellen is useful only when it can support collaborative spreadsheets, light automation and operational data work inside a real workflow. A fair pilot needs real trials with real permissions, data quality, formulas, Apps Script limits and exports; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: ideal for flexible team work, but not a database once processes become critical or scaled.
+
+## Workflow Fit
+
+Google Tabellen should have a narrow job in the workflow: input, quality check, handoff point and owner. For collaborative spreadsheets, light automation and operational data work, this kind of evidence is more informative than a long feature list: real trials with real permissions, data quality, formulas, Apps Script limits and exports. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Google Tabellen is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Ideal for flexible team work, but not a database once processes become critical or scaled. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Google Sheets is free to use in its basic version. For businesses and professional users, Google Workspace offers paid plans with advanced features, more storage, and additional support. Prices vary depending on the plan and number of users. There are different tiers that scale from small teams to large enterprises.

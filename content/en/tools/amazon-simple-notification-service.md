@@ -58,6 +58,18 @@ Amazon SNS is primarily aimed at developers and companies looking for a simple, 
 - Limited customization options beyond the standard AWS features.
 - For some specialized use cases, dedicated messaging services may be better suited.
 
+## What really matters in daily use
+
+In daily use, Amazon Simple Notification Service (SNS) is useful only when it can support messaging, fan-out and notifications in AWS-centered systems inside a real workflow. A fair pilot needs real trials with failure paths, retry rules, subscribers, cost and observability; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: an infrastructure building block that feels quiet until poor design makes it very visible.
+
+## Workflow Fit
+
+Amazon Simple Notification Service (SNS) should have a narrow job in the workflow: input, quality check, handoff point and owner. For messaging, fan-out and notifications in AWS-centered systems, this kind of evidence is more informative than a long feature list: real trials with failure paths, retry rules, subscribers, cost and observability. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Amazon Simple Notification Service (SNS) is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. An infrastructure building block that feels quiet until poor design makes it very visible. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & costs
 
 Amazon SNS uses a usage-based pricing model. Costs are mainly based on the number of published messages and the type of delivery. There is a free tier that is sufficient for low message volumes. Prices may vary depending on region and protocol.

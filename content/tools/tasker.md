@@ -55,6 +55,18 @@ Aufgrund der umfangreichen Funktionen und der vergleichsweise steilen Lernkurve 
 - Manchmal aufwändige Einrichtung komplexer Tasks notwendig.
 - Fehlende offizielle deutschsprachige Dokumentation (hauptsächlich englisch).
 
+## Was im Alltag wirklich zaehlt
+
+Der praktische Wert von Tasker (Android) liegt weniger in der Funktionsliste als in der Frage, ob Android-Automation fuer Power-User, Geraeteablaeufe und persoenliche Workflows ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit echten Triggern, Berechtigungen, Akkulaufzeit und Wartbarkeit basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+
+## Workflow-Fit
+
+Workflow-seitig braucht Tasker (Android) klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei Android-Automation fuer Power-User, Geraeteablaeufe und persoenliche Workflows trennt Praxistests mit echten Triggern, Berechtigungen, Akkulaufzeit und Wartbarkeit brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+
+## Redaktionelle Einschaetzung
+
+Als redaktionelle Entscheidungsregel fuer Tasker (Android) hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Extrem flexibel, aber ohne Dokumentation der eigenen Profile wird Automatisierung schnell fragil. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+
 ## Preise & Kosten
 
 Tasker ist kostenpflichtig und wird als Einmalkauf im Google Play Store angeboten. Es gibt keine dauerhaft kostenlose Version, allerdings kann die App vor dem Kauf in der Regel über eine Testversion oder Geld-zurück-Garantie ausprobiert werden. Preis und Verfügbarkeit können je nach Region variieren.

@@ -58,6 +58,18 @@ KMM is aimed at mobile developers and teams who want to build cross-platform app
 - Not yet as mature or as widely adopted as some other cross-platform frameworks.
 - Dependence on JetBrains tools and the Kotlin ecosystem.
 
+## What really matters in daily use
+
+Kotlin Multiplatform Mobile (KMM) can look useful quickly, but daily work asks a sharper question: does shared mobile logic for Android and iOS teams with a Kotlin focus fit existing data, roles and approvals? Good evaluation means real trials with a real feature boundary, native UI limits and build process, not just a quick look at example outputs. The important constraint is: attractive for shared core logic, but not every app benefits from maximum code sharing.
+
+## Workflow Fit
+
+For teams, Kotlin Multiplatform Mobile (KMM) should not start as a loose side tool; it should attach to a repeatable step in the process. When shared mobile logic for Android and iOS teams with a Kotlin focus happens often, a small pilot makes visible how much control and cleanup are really needed. The evidence should come from real trials with a real feature boundary, native UI limits and build process. That keeps a strong first impression from becoming operational drag later.
+
+## Editorial Assessment
+
+Our assessment: Kotlin Multiplatform Mobile (KMM) is strongest when benefits, limits and owners are named before the test starts. The decision should consider cost, quality and controllability together. Attractive for shared core logic, but not every app benefits from maximum code sharing. Otherwise the tool can look more valuable than the real process gain proves to be.
+
 ## Pricing & Costs
 
 Kotlin Multiplatform Mobile is an open-source framework and can be used for free. Development tools such as Android Studio are also available for free. Additional costs may arise from the use of paid plugins, services, or from the effort involved in platform-specific development.
