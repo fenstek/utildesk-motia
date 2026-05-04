@@ -50,6 +50,18 @@ Amazon Rekognition richtet sich an Unternehmen, Entwickler und Organisationen, d
 - Eingeschränkte Unterstützung für On-Premises-Einsatz.
 - Lernkurve bei der Nutzung und Integration der APIs.
 
+## Was im Alltag wirklich zaehlt
+
+Bei Amazon Rekognition entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Bild- und Videoanalyse fuer Moderation, Suche, Sicherheit und Medienprozesse verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit eigenen Bilddaten, Fehlertoleranzen, Bias-Risiken und menschlichem Review; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Leistungsfaehig, aber bei Personen-, Sicherheits- oder Moderationsfaellen nur mit klarer Verantwortung vertretbar.
+
+## Workflow-Fit
+
+Im Workflow sollte Amazon Rekognition eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer Bild- und Videoanalyse fuer Moderation, Suche, Sicherheit und Medienprozesse sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit eigenen Bilddaten, Fehlertoleranzen, Bias-Risiken und menschlichem Review. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+
+## Redaktionelle Einschaetzung
+
+Redaktionelle Einordnung: Amazon Rekognition lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Leistungsfaehig, aber bei Personen-, Sicherheits- oder Moderationsfaellen nur mit klarer Verantwortung vertretbar. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+
 ## Preise & Kosten
 
 Amazon Rekognition bietet ein Freemium-Preismodell mit einem kostenlosen Kontingent, das je nach Region und Nutzung variiert. In der Regel sind pro Monat eine bestimmte Anzahl von Bildern und Minuten Videomaterial für die Analyse kostenfrei. Darüber hinaus fallen nutzungsabhängige Gebühren an, die sich nach der Menge verarbeiteter Bilder, Videos oder Gesichtserkennungen richten. Die genauen Preise sind auf der AWS-Website einsehbar und hängen vom jeweiligen Serviceumfang ab. Für Unternehmen mit hohem Volumen sind individuelle Preismodelle möglich.

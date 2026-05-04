@@ -53,6 +53,18 @@ Die Plattform eignet sich sowohl für technische Nutzer mit Programmierkenntniss
 - Benutzeroberfläche und Terminologie teilweise technisch und weniger intuitiv für Nicht-Entwickler
 - Abhängigkeit von IBM Cloud kann Integration in andere Cloud-Umgebungen erschweren
 
+## Was im Alltag wirklich zaehlt
+
+IBM Watson Assistant wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt Chatbot- und Service-Dialoge fuer Unternehmen mit kontrollierten Prozessen in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit echten Intent-Daten, Eskalationen, Wissensquellen und Service-Kennzahlen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Hilft bei strukturiertem Support, aber schlechte Prozesse werden durch einen Bot nur sichtbarer.
+
+## Workflow-Fit
+
+Fuer Teams sollte IBM Watson Assistant nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn Chatbot- und Service-Dialoge fuer Unternehmen mit kontrollierten Prozessen haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit echten Intent-Daten, Eskalationen, Wissensquellen und Service-Kennzahlen. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+
+## Redaktionelle Einschaetzung
+
+Unsere Einschaetzung: IBM Watson Assistant ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Hilft bei strukturiertem Support, aber schlechte Prozesse werden durch einen Bot nur sichtbarer. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+
 ## Preise & Kosten
 
 IBM Watson Assistant bietet ein Freemium-Preismodell, das einen kostenlosen Einstieg ermöglicht. Die genauen Kosten variieren je nach Nutzung, Funktionsumfang und gewähltem Tarif. Typischerweise beinhalten kostenpflichtige Pläne:

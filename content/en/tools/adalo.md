@@ -60,6 +60,18 @@ The platform is less suitable for very complex applications with custom backend 
 - Costs can rise as the number of users or functionality grows.
 - Dependence on the platform for updates and support.
 
+## What really matters in daily use
+
+In daily use, Adalo is useful only when it can support no-code app building for simple mobile products and internal prototypes inside a real workflow. A fair pilot needs real trials with data model, roles, performance, app store path and post-MVP maintenance; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: good for fast validation, but long-term product logic can hit platform limits.
+
+## Workflow Fit
+
+Adalo should have a narrow job in the workflow: input, quality check, handoff point and owner. For no-code app building for simple mobile products and internal prototypes, this kind of evidence is more informative than a long feature list: real trials with data model, roles, performance, app store path and post-MVP maintenance. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Adalo is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Good for fast validation, but long-term product logic can hit platform limits. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & costs
 
 Adalo generally offers several subscription plans that differ based on feature set and number of users. Common options include:

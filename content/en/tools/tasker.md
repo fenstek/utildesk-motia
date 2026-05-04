@@ -59,6 +59,18 @@ Because of its extensive features and comparatively steep learning curve, Tasker
 - Setting up complex tasks can sometimes be time-consuming.
 - No official German-language documentation (mainly English).
 
+## What really matters in daily use
+
+The practical value of Tasker (Android) is less about the feature list and more about whether Android automation for power users, device routines and personal workflows fits the working routine without friction. The evaluation should therefore be based on real trials with real triggers, permissions, battery impact and maintainability. That shows early whether the tool reduces work or simply creates another review step.
+
+## Workflow Fit
+
+Workflow fit for Tasker (Android) depends on clear boundaries: which inputs are allowed, who reviews results, and where outputs go next. For Android automation for power users, device routines and personal workflows, real trials with real triggers, permissions, battery impact and maintainability separates useful production signals from demo impressions. It also exposes whether privacy, maintenance and cost are sustainable.
+
+## Editorial Assessment
+
+A useful editorial decision rule for Tasker (Android) is a short real-world test with columns for time saved, output quality, risk and effort. If one of those columns stays unclear, the benefit is not yet reliable. Extremely flexible, but without documenting profiles, automation becomes fragile quickly. That belongs in the first evaluation, not in a late correction cycle.
+
 ## Pricing & costs
 
 Tasker is paid and offered as a one-time purchase in the Google Play Store. There is no permanently free version, although the app can usually be tried before purchase via a trial version or money-back guarantee. Price and availability may vary by region.

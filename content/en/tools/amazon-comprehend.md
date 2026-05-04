@@ -59,6 +59,18 @@ Amazon Comprehend is flexible and can be used for both small projects and large,
 - For very specific application cases, custom models may be more suitable.
 - Learning curve when using and integrating into complex systems.
 
+## What really matters in daily use
+
+In daily use, Amazon Comprehend is useful only when it can support text analysis for classification, entities, sentiment and document processes inside a real workflow. A fair pilot needs real trials with real support tickets, form text or documents instead of demo snippets; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: value appears only when outputs feed decisions or routing rules.
+
+## Workflow Fit
+
+Amazon Comprehend should have a narrow job in the workflow: input, quality check, handoff point and owner. For text analysis for classification, entities, sentiment and document processes, this kind of evidence is more informative than a long feature list: real trials with real support tickets, form text or documents instead of demo snippets. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Amazon Comprehend is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Value appears only when outputs feed decisions or routing rules. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Amazon Comprehend is typically billed based on actual usage. Prices are determined by the number of analyzed text characters and used functions (e.g., entity recognition, sentiment analysis, custom models). Some functions may have different prices. Prices can vary depending on the region and AWS plan.

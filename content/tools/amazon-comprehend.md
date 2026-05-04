@@ -54,6 +54,18 @@ Amazon Comprehend ist flexibel einsetzbar und eignet sich sowohl für kleine Pro
 - Für sehr spezifische Anwendungsfälle sind eventuell eigene Modelle besser geeignet.
 - Lernkurve bei der Nutzung und Integration in komplexe Systeme.
 
+## Was im Alltag wirklich zaehlt
+
+Bei Amazon Comprehend entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Textanalyse fuer Klassifikation, Entitaeten, Sentiment und Dokumentenprozesse verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit echten Supporttickets, Formulartexten oder Dokumenten statt Demo-Beispielen; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Der Wert entsteht erst, wenn Ergebnisse in Entscheidungen oder Routing-Regeln uebersetzt werden.
+
+## Workflow-Fit
+
+Im Workflow sollte Amazon Comprehend eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer Textanalyse fuer Klassifikation, Entitaeten, Sentiment und Dokumentenprozesse sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit echten Supporttickets, Formulartexten oder Dokumenten statt Demo-Beispielen. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+
+## Redaktionelle Einschaetzung
+
+Redaktionelle Einordnung: Amazon Comprehend lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Der Wert entsteht erst, wenn Ergebnisse in Entscheidungen oder Routing-Regeln uebersetzt werden. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+
 ## Preise & Kosten
 
 Amazon Comprehend wird in der Regel nach der tatsächlichen Nutzung abgerechnet. Die Preise richten sich nach der Anzahl der analysierten Textzeichen und den genutzten Funktionen (z. B. Entitätserkennung, Sentimentanalyse, benutzerdefinierte Modelle). Einige Funktionen können unterschiedliche Preise haben. Je nach Region und AWS-Plan können die Kosten variieren.

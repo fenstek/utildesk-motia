@@ -53,6 +53,18 @@ SYSTRAN Translate API is aimed primarily at developers, software companies, and 
 - For beginners, API integration can involve a certain learning curve.
 - The documentation is extensive, but partly complex for beginners.
 
+## What really matters in daily use
+
+In daily use, SYSTRAN Translate API is useful only when it can support API translation for professional terminology and integration scenarios inside a real workflow. A fair pilot needs real trials with glossaries, domain language, privacy and human-in-the-loop approvals; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: stronger for controlled language processes than for spontaneous browser translations.
+
+## Workflow Fit
+
+SYSTRAN Translate API should have a narrow job in the workflow: input, quality check, handoff point and owner. For API translation for professional terminology and integration scenarios, this kind of evidence is more informative than a long feature list: real trials with glossaries, domain language, privacy and human-in-the-loop approvals. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: SYSTRAN Translate API is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Stronger for controlled language processes than for spontaneous browser translations. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 SYSTRAN Translate API pricing depends on the plan and usage. There are usually different plans that vary based on the number of translated characters, feature set, and support. Typical models include:

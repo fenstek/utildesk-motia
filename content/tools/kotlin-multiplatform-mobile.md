@@ -54,6 +54,18 @@ KMM richtet sich an mobile Entwickler und Teams, die plattformübergreifende App
 - Noch nicht so ausgereift oder weit verbreitet wie einige andere plattformübergreifende Frameworks.
 - Abhängigkeit von JetBrains-Tools und Kotlin-Ökosystem.
 
+## Was im Alltag wirklich zaehlt
+
+Kotlin Multiplatform Mobile (KMM) wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt geteilte Mobile-Logik fuer Android- und iOS-Teams mit Kotlin-Schwerpunkt in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit einem echten Feature-Schnitt, nativen UI-Grenzen und Build-Prozess, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Attraktiv fuer gemeinsame Kernlogik, aber nicht jede App gewinnt durch maximale Code-Teilung.
+
+## Workflow-Fit
+
+Fuer Teams sollte Kotlin Multiplatform Mobile (KMM) nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn geteilte Mobile-Logik fuer Android- und iOS-Teams mit Kotlin-Schwerpunkt haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit einem echten Feature-Schnitt, nativen UI-Grenzen und Build-Prozess. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+
+## Redaktionelle Einschaetzung
+
+Unsere Einschaetzung: Kotlin Multiplatform Mobile (KMM) ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Attraktiv fuer gemeinsame Kernlogik, aber nicht jede App gewinnt durch maximale Code-Teilung. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+
 ## Preise & Kosten
 
 Kotlin Multiplatform Mobile ist ein Open-Source-Framework und kann kostenlos genutzt werden. Die Entwicklungswerkzeuge wie Android Studio sind ebenfalls kostenlos verfügbar. Zusatzkosten können durch die Nutzung kostenpflichtiger Plugins, Services oder durch den Aufwand für plattformspezifische Entwicklung entstehen.

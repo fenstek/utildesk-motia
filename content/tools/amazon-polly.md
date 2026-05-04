@@ -53,6 +53,18 @@ Dank der API ist Polly flexibel und kann in unterschiedlichste Softwarelösungen
 - Einrichtung und API-Nutzung erfordern technisches Know-how
 - Datenschutz und Datenhoheit müssen bei sensiblen Inhalten beachtet werden, da Cloud-Service
 
+## Was im Alltag wirklich zaehlt
+
+Bei Amazon Polly entscheidet im Alltag nicht die Demo, sondern ob das Tool bei TTS-Ausgaben fuer Apps, E-Learning, Callcenter und Accessibility-Funktionen verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit echten Produkttexten, Fachwoertern, SSML-Regeln, Latenz und Kosten pro Zeichen; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Stimmenqualitaet allein reicht nicht; wichtig sind Aussprachepflege, Datenschutz und ein Kostenmodell, das auch Spitzenlasten abdeckt.
+
+## Workflow-Fit
+
+Im Workflow sollte Amazon Polly eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer TTS-Ausgaben fuer Apps, E-Learning, Callcenter und Accessibility-Funktionen sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit echten Produkttexten, Fachwoertern, SSML-Regeln, Latenz und Kosten pro Zeichen. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+
+## Redaktionelle Einschaetzung
+
+Redaktionelle Einordnung: Amazon Polly lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Stimmenqualitaet allein reicht nicht; wichtig sind Aussprachepflege, Datenschutz und ein Kostenmodell, das auch Spitzenlasten abdeckt. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+
 ## Preise & Kosten
 
 Amazon Polly wird nach Verbrauch abgerechnet, das heißt nach der Anzahl der in Sprache umgewandelten Zeichen. Die Preise variieren je nach Region, gewählter Stimme (Standard oder Neural) und Sprachoption. Zusätzlich gibt es oft ein kostenloses Kontingent im Rahmen des AWS Free Tier für neue Nutzer.

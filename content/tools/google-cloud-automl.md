@@ -51,6 +51,18 @@ Google Cloud AutoML richtet sich an Unternehmen und Entwickler, die schnell und 
 - Lernkurve für Nutzer ohne Cloud-Erfahrung.
 - Datenschutz und Datenhoheit müssen sorgfältig geprüft werden, besonders bei sensiblen Daten.
 
+## Was im Alltag wirklich zaehlt
+
+Bei Google Cloud AutoML entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Custom-ML-Modelle fuer Teams, die Google Cloud bereits operativ nutzen verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit eigenen Trainingsdaten, Labelqualitaet, Deployments und Monitoringaufwand; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Hilfreich fuer strukturierte ML-Faelle, aber kein Shortcut um unklare Daten oder Zielmetriken zu retten.
+
+## Workflow-Fit
+
+Im Workflow sollte Google Cloud AutoML eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer Custom-ML-Modelle fuer Teams, die Google Cloud bereits operativ nutzen sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit eigenen Trainingsdaten, Labelqualitaet, Deployments und Monitoringaufwand. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+
+## Redaktionelle Einschaetzung
+
+Redaktionelle Einordnung: Google Cloud AutoML lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Hilfreich fuer strukturierte ML-Faelle, aber kein Shortcut um unklare Daten oder Zielmetriken zu retten. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+
 ## Preise & Kosten
 
 Die Preisgestaltung von Google Cloud AutoML basiert auf mehreren Faktoren, darunter die Art des Modells, Trainingszeit, Anzahl der Anfragen und Speicherbedarf. In der Regel fallen Kosten für das Training, die Modellbereitstellung und die Nutzung an. Google bietet ein nutzungsbasiertes Preismodell, das je nach Projektgröße und Anforderungen variieren kann.

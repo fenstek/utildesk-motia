@@ -59,6 +59,18 @@ Due to the API, Polly is flexible and can be integrated into various software so
 - Setting up and using the API requires technical knowledge
 - Data protection and data sovereignty must be considered for sensitive content, as it is a cloud service
 
+## What really matters in daily use
+
+In daily use, Amazon Polly is useful only when it can support text-to-speech output for apps, learning products, contact centers and accessibility features inside a real workflow. A fair pilot needs real trials with real product copy, domain terms, SSML rules, latency and cost per character; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: voice quality is only one part; pronunciation maintenance, privacy and peak-volume pricing matter just as much.
+
+## Workflow Fit
+
+Amazon Polly should have a narrow job in the workflow: input, quality check, handoff point and owner. For text-to-speech output for apps, learning products, contact centers and accessibility features, this kind of evidence is more informative than a long feature list: real trials with real product copy, domain terms, SSML rules, latency and cost per character. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Amazon Polly is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Voice quality is only one part; pronunciation maintenance, privacy and peak-volume pricing matter just as much. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Amazon Polly is billed based on usage, meaning it is charged per number of characters converted into speech. Prices vary depending on the region, chosen voice (standard or neural), and language. There is often a free tier for new AWS customers.

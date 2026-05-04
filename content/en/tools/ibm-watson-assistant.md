@@ -56,6 +56,18 @@ The platform is suitable both for technical users with programming knowledge and
 - User interface and terminology are partly technical and less intuitive for non-developers
 - Dependence on IBM Cloud can make integration into other cloud environments more difficult
 
+## What really matters in daily use
+
+IBM Watson Assistant can look useful quickly, but daily work asks a sharper question: does chatbot and service dialogues for enterprises with controlled processes fit existing data, roles and approvals? Good evaluation means real trials with real intents, escalations, knowledge sources and service metrics, not just a quick look at example outputs. The important constraint is: helps structured support, but weak processes become more visible through a bot.
+
+## Workflow Fit
+
+For teams, IBM Watson Assistant should not start as a loose side tool; it should attach to a repeatable step in the process. When chatbot and service dialogues for enterprises with controlled processes happens often, a small pilot makes visible how much control and cleanup are really needed. The evidence should come from real trials with real intents, escalations, knowledge sources and service metrics. That keeps a strong first impression from becoming operational drag later.
+
+## Editorial Assessment
+
+Our assessment: IBM Watson Assistant is strongest when benefits, limits and owners are named before the test starts. The decision should consider cost, quality and controllability together. Helps structured support, but weak processes become more visible through a bot. Otherwise the tool can look more valuable than the real process gain proves to be.
+
 ## Pricing & costs
 
 IBM Watson Assistant offers a freemium pricing model that allows for a free entry point. The exact costs vary depending on usage, feature scope, and the selected plan. Paid plans typically include:

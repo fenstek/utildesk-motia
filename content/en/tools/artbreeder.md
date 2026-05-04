@@ -58,6 +58,18 @@ The platform is ideal for users who want to experiment with AI in a simple and i
 - Privacy and copyright issues should be considered, especially when using third-party images.
 - Artbreeder may have limitations for very specific or complex design requirements.
 
+## What really matters in daily use
+
+In daily use, Artbreeder is useful only when it can support visual variants, character ideas and style exploration without a classic prompt workflow inside a real workflow. A fair pilot needs a real-world trial with test it against moodboards, image rights, recognizability and export quality; canned demos are not enough to reveal latency, review effort, rights issues and cost. The main caveat is clear: good for exploration, less ideal when a team needs reproducible brand assets with exact control.
+
+## Workflow Fit
+
+Artbreeder should have a narrow job in the workflow: input, quality check, handoff point and owner. For visual variants, character ideas and style exploration without a classic prompt workflow, this kind of evidence is more informative than a long feature list: a real-world trial with test it against moodboards, image rights, recognizability and export quality. Only after that can a team judge whether integration, review and maintenance effort are worth it.
+
+## Editorial Assessment
+
+Editorial view: Artbreeder is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Good for exploration, less ideal when a team needs reproducible brand assets with exact control. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
+
 ## Pricing & Costs
 
 Artbreeder offers a Freemium model. The free version allows basic usage with limited storage capacity and download resolution. For users who work intensively or require higher quality, various paid subscription plans are available, which include:

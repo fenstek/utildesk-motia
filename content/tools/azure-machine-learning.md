@@ -51,6 +51,18 @@ Azure Machine Learning richtet sich an Unternehmen und Fachleute, die KI- und Ma
 - Abhängigkeit von Azure-Cloud kann für manche Nutzer einschränkend sein.
 - Einige Funktionen erfordern technische Vorkenntnisse im Bereich Machine Learning.
 
+## Was im Alltag wirklich zaehlt
+
+Bei Azure Machine Learning entscheidet im Alltag nicht die Demo, sondern ob das Tool bei ML-Entwicklung, Experimente und Deployment in Azure-orientierten Organisationen verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Datenzugriff, Rollenmodell, MLOps-Pipeline, Monitoring und Kostenstellen; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Stark wenn Azure bereits gesetzt ist; ueberdimensioniert, wenn nur ein einzelnes Notebook produktiv werden soll.
+
+## Workflow-Fit
+
+Im Workflow sollte Azure Machine Learning eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer ML-Entwicklung, Experimente und Deployment in Azure-orientierten Organisationen sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit Datenzugriff, Rollenmodell, MLOps-Pipeline, Monitoring und Kostenstellen. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+
+## Redaktionelle Einschaetzung
+
+Redaktionelle Einordnung: Azure Machine Learning lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Stark wenn Azure bereits gesetzt ist; ueberdimensioniert, wenn nur ein einzelnes Notebook produktiv werden soll. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+
 ## Preise & Kosten
 
 Die Preisgestaltung von Azure Machine Learning ist abhängig von der gewählten Nutzung, dem Umfang der Rechenressourcen und den benötigten Features. Typischerweise fallen Kosten für:
