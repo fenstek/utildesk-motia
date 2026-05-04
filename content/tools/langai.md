@@ -1,13 +1,13 @@
 ---
 slug: langai
 title: LangAI
-category: "Schreiben & Content"
-price_model: "Freemium"
+category: Schreiben & Content
+price_model: Freemium
 tags: ["language", "learning", "chatbot", "assistant", "education"]
 official_url: "https://langai.io/"
 affiliate_url: "https://langai.io/"
-popularity: 54
-description: "KI-Sprachlern-App mit Vokabelaufbau, Aussprachefeedback und realistischen Dialogübungen."
+popularity: 48
+description: KI-Sprachlern-App mit Vokabelaufbau, Aussprachefeedback und realistischen Dialogübungen.
 ---
 
 # LangAI

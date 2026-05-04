@@ -1,14 +1,14 @@
 ---
 slug: clara
 title: Clara
-category: "Chatbots & Assistenten"
-price_model: "Freemium"
+category: Chatbots & Assistenten
+price_model: Freemium
 tags: ["ai", "assistant", "learning", "chatbot", "education"]
 official_url: "https://www.clara-ai.org/"
 affiliate_url: "https://www.clara-ai.org/"
 created_at: 2026-02-07
-popularity: 78
-description: "KI-Lernassistent für erklärende Dialoge, Wiederholung, Lernstruktur und niedrigschwellige Wissensarbeit."
+popularity: 65
+description: KI-Lernassistent für erklärende Dialoge, Wiederholung, Lernstruktur und niedrigschwellige Wissensarbeit.
 ---
 
 # Clara

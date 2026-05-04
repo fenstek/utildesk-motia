@@ -7,8 +7,8 @@ tags: ["design", "automation", "marketing"]
 official_url: "https://www.canva.com/"
 affiliate_url: "https://www.canva.com/"
 created_at: 2026-02-07
-popularity: 81
-description: "Canva ist eine Designplattform für Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup."
+popularity: 96
+description: Canva ist eine Designplattform für Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup.
 ---
 # Canva
 

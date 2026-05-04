@@ -1,13 +1,13 @@
 ---
 slug: mallet
 title: MALLET
-category: "Entwickler-Tools"
-price_model: "Open Source"
+category: Entwickler-Tools
+price_model: Open Source
 tags: ["developer", "nlp", "topic-modeling", "machine-learning", "text"]
 official_url: "https://mallet.cs.umass.edu/download.php"
 affiliate_url: "https://mallet.cs.umass.edu/download.php"
-popularity: 47
-description: "Java-basiertes Open-Source-Toolkit für NLP, Topic Modeling, Klassifikation und Textanalyse."
+popularity: 42
+description: Java-basiertes Open-Source-Toolkit für NLP, Topic Modeling, Klassifikation und Textanalyse.
 ---
 
 # MALLET

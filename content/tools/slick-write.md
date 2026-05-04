@@ -5,8 +5,8 @@ category: Produktivität
 price_model: Freemium
 tags: [writing, productivity]
 official_url: "https://www.slickwrite.com/"
-popularity: 15
-description: "Slick Write prüft englische Texte auf Stil, Lesbarkeit, Grammatikmuster und unnötige Komplexität."
+popularity: 18
+description: Slick Write prüft englische Texte auf Stil, Lesbarkeit, Grammatikmuster und unnötige Komplexität.
 ---
 # Slick Write
 

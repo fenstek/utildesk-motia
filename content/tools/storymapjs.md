@@ -5,8 +5,8 @@ category: AI
 price_model: Kostenlos
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
-popularity: 8
-description: "StoryMapJS ist ein kostenloses Storytelling-Werkzeug für Karten, Orte, Zeitleisten und journalistische Erzählungen."
+popularity: 13
+description: StoryMapJS ist ein kostenloses Storytelling-Werkzeug für Karten, Orte, Zeitleisten und journalistische Erzählungen.
 ---
 # StoryMapJS
 

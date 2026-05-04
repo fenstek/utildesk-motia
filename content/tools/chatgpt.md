@@ -7,8 +7,8 @@ tags: ["ai", "chatbot", "llm"]
 official_url: "https://chatgpt.com/"
 affiliate_url: "https://chatgpt.com/"
 created_at: 2026-01-26
-popularity: 0
-description: "KI-Assistent von OpenAI für Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit."
+popularity: 67
+description: KI-Assistent von OpenAI für Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit.
 ---
 
 # ChatGPT

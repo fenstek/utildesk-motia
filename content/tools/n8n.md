@@ -1,13 +1,13 @@
 ---
 slug: n8n
 title: n8n
-category: "Automatisierung"
-price_model: "Freemium"
+category: Automatisierung
+price_model: Freemium
 tags: ["automation", "workflow", "integration", "developer", "api"]
 official_url: "https://n8n.io"
 affiliate_url: "https://n8n.io"
-popularity: 35
-description: "Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows."
+popularity: 36
+description: Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows.
 ---
 
 # n8n

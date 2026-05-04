@@ -1,14 +1,14 @@
 ---
 slug: lingvanex
 title: Lingvanex
-category: "Schreiben & Content"
-price_model: "Freemium"
+category: Schreiben & Content
+price_model: Freemium
 tags: ["translation", "speech", "writing", "api", "language"]
 official_url: "https://lingvanex.com/"
 affiliate_url: "https://lingvanex.com/"
 created_at: 2026-02-15
-popularity: 52
-description: "Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, API- und Unternehmensszenarien."
+popularity: 46
+description: Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, API- und Unternehmensszenarien.
 ---
 
 # Lingvanex

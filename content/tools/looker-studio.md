@@ -1,13 +1,13 @@
 ---
 slug: looker-studio
 title: Looker Studio
-category: "Produktivität"
-price_model: "Kostenlos"
+category: Produktivität
+price_model: Kostenlos
 tags: ["analytics", "data", "dashboard", "reporting", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
 affiliate_url: "https://lookerstudio.google.com/overview"
-popularity: 49
-description: "Kostenloses Google-Tool für Dashboards, Datenvisualisierung und wiederkehrende Reports."
+popularity: 44
+description: Kostenloses Google-Tool für Dashboards, Datenvisualisierung und wiederkehrende Reports.
 ---
 
 # Looker Studio

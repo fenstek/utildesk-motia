@@ -7,8 +7,8 @@ tags: ["ai", "assistant", "automation"]
 official_url: "https://claude.ai/"
 affiliate_url: "https://claude.ai/"
 created_at: 2026-02-08
-popularity: 76
-description: "Claude ist ein KI-Assistent für Schreiben, Analyse, Code, Rechercheunterstützung und lange Dokumentkontexte."
+popularity: 94
+description: Claude ist ein KI-Assistent für Schreiben, Analyse, Code, Rechercheunterstützung und lange Dokumentkontexte.
 ---
 # Claude
 

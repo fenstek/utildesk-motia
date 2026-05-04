@@ -1,13 +1,13 @@
 ---
 slug: kofax-rpa
 title: Kofax RPA
-category: "Automatisierung"
-price_model: "Je nach Plan"
+category: Automatisierung
+price_model: Je nach Plan
 tags: ["automation", "rpa", "workflow", "enterprise", "integration"]
 official_url: "https://www.tungstenautomation.com/products/rpa"
 affiliate_url: "https://www.tungstenautomation.com/products/rpa"
-popularity: 57
-description: "Enterprise-RPA für die Automatisierung regelbasierter Prozesse, Datenzugriffe und Systemarbeit."
+popularity: 50
+description: Enterprise-RPA für die Automatisierung regelbasierter Prozesse, Datenzugriffe und Systemarbeit.
 ---
 
 # Kofax RPA

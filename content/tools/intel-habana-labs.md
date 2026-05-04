@@ -1,13 +1,13 @@
 ---
 slug: intel-habana-labs
 title: Intel Habana Labs
-category: "Entwickler-Tools"
-price_model: "Je nach Plan"
+category: Entwickler-Tools
+price_model: Je nach Plan
 tags: ["developer", "ai", "hardware", "ml", "training"]
 official_url: "https://habana.ai/"
 affiliate_url: "https://habana.ai/"
-popularity: 61
-description: "Intel-Gaudi-Beschleuniger und Software-Stack für KI-Training und Inferenz in professioneller Infrastruktur."
+popularity: 53
+description: Intel-Gaudi-Beschleuniger und Software-Stack für KI-Training und Inferenz in professioneller Infrastruktur.
 ---
 
 # Intel Habana Labs

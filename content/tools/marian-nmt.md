@@ -1,13 +1,13 @@
 ---
 slug: marian-nmt
 title: Marian NMT
-category: "Entwickler-Tools"
-price_model: "Open Source"
+category: Entwickler-Tools
+price_model: Open Source
 tags: ["developer", "translation", "nmt", "open-source", "language"]
 official_url: "https://marian-nmt.github.io/"
 affiliate_url: "https://marian-nmt.github.io/"
-popularity: 44
-description: "Open-Source-Framework für neuronale maschinelle Übersetzung und technische NMT-Workflows."
+popularity: 84
+description: Open-Source-Framework für neuronale maschinelle Übersetzung und technische NMT-Workflows.
 ---
 
 # Marian NMT
