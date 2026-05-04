@@ -3,7 +3,7 @@
 ## Core Automation Scripts
 
 ### sheet_seed_from_alternatives.mjs
-Seeds Google Sheet with NEW rows from alternatives audit missing matches. See [sheet_seed_from_alternatives.md](./sheet_seed_from_alternatives.md) for details.
+Seeds Google Sheet with NEEDS_REVIEW rows from alternatives audit missing matches. See [sheet_seed_from_alternatives.md](./sheet_seed_from_alternatives.md) for details.
 
 ### sheet_rebuild_official_url.mjs
 Rebuilds official_url for rows with specified status (typically NEEDS_REVIEW). Uses DDG + GPT validation.
