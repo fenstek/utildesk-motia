@@ -68,7 +68,10 @@ for (const file of files) {
     continue;
   }
 
-  if (frontmatterValue(de, "active") === "false") {
+  const active = frontmatterValue(de, "active").toLowerCase();
+  const disabled = frontmatterValue(de, "disabled").toLowerCase();
+  const draft = frontmatterValue(de, "draft").toLowerCase();
+  if (active === "false" || disabled === "true" || draft === "true") {
     skipped.inactive += 1;
     continue;
   }

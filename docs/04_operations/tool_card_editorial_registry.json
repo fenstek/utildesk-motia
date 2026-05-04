@@ -443,6 +443,10 @@
         "de",
         "en"
       ],
+      "route_replacement": {
+        "removed_disabled_redirect": "google-data-studio",
+        "added_active_slug": "cypress"
+      },
       "skipped_recent_non_editorial_batch": [
         "adobe-connect",
         "amazon-dynamodb",
@@ -495,7 +499,7 @@
         "apache-spark",
         "automata",
         "deepbrain",
-        "google-data-studio",
+        "cypress",
         "opencv",
         "respeecher",
         "scribens",
