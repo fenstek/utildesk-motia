@@ -6,83 +6,110 @@ price_model: Plan-based
 tags:
   - travel-management
   - expense-management
-  - SaaS
+  - saas
 official_url: 'https://www.concur.com/?&cookie_preferences=gdpr'
 popularity: 0
-source_language: de
+description: 'A travel and expense management tool for companies that need repeatable booking, approvals, and policy control across teams.'
 translation: full
 ---
 # Concur Travel
 
-Concur Travel is a cloud-based solution for managing business travel and expense management. The platform offers companies an integrated way to organize travel bookings, approvals, and expense reports efficiently. By automating and intelligent functions, Concur Travel helps save time and create transparency in travel and expense management.
+Concur Travel is especially relevant when business travel booking and policy enforcement are meant to be used repeatedly by a team, not just tried once. The focus is then not on a single aha moment, but on bringing travel requests, bookings, and cost rules into a controlled process.
 
-## Who is Concur Travel for?
+The critical point is in day-to-day operation: whether local travel policies, payment paths, and reporting are documented cleanly. That is exactly what determines whether the tool reduces work or simply adds another interface.
 
-Concur Travel is primarily aimed at small, medium-sized, and large enterprises that plan and manage business trips. It is particularly suitable for companies with many traveling employees who want to manage and control their travel budgets and expenses centrally. Also, financial departments and travel agencies that want to digitize their processes can benefit from Concur Travel's features.
+## Who is Concur Travel suitable for?
 
-## Key Features
+Concur Travel is a strong fit for users who need a repeatable workflow to bring travel requests, bookings, and cost rules into a controlled process. The tool is particularly helpful in this context: for companies with many trips, approvals, and cost centers.
 
-- **Travel Booking:** Integration of flights, hotels, car rentals, and other services in a single platform.
-- **Approval Workflow:** Automated approval processes for travel requests.
-- **Expense Management:** Tracking, managing, and verifying expenses and receipts.
-- **Mobile App:** Access to travel information and expenses on-the-go.
-- **Compliance with Company Policies:** Support for adhering to company and regulatory guidelines.
-- **Reporting and Analysis:** Evaluations and analyses of travel and expense data.
-- **Integration:** Integration with ERP systems, accounting software, and other tools.
-- **Artificial Intelligence:** Intelligent suggestions and automated data processing to increase efficiency.
+I would be cautious as long as it is unclear whether local travel policies, payment paths, and reporting are set up cleanly. In that case, the tool is easily judged by symptoms, while the real process question remains unresolved.
 
-## Benefits and Drawbacks
+## Editorial assessment
 
-### Benefits
+With Concur Travel, I would distinguish early between the demo experience and operational reality. Many tools look strong in the first hour; what matters is whether they still create fewer questions, less rework, or more transparency after two weeks.
+
+- **Good pilot:** bringing travel requests, bookings, and cost rules into a controlled process.
+- **Quality question:** whether local travel policies, payment paths, and reporting are documented cleanly.
+- **Risk:** with poorly maintained policies, it is more likely to block than to relieve work.
+
+## Key features
+
+- **Travel booking:** integration of flights, hotels, rental cars, and other services in one platform.
+- **Approval workflow:** automated approval processes for travel requests.
+- **Expense management:** capture, manage, and review expenses and receipts.
+- **Mobile app:** access to travel information and expenses on the go.
+- **Travel policy compliance:** support for meeting company and legal requirements.
+- **Reporting:** reports and analyses of travel and expense data.
+- **Integration:** connection to ERP systems, accounting software, and other tools.
+- **Artificial intelligence:** intelligent suggestions and automated data processing to improve efficiency.
+
+- **Practical check:** whether local travel policies, payment paths, and reporting are documented cleanly.
+- **Team rollout:** bringing travel requests, bookings, and cost rules into a controlled process.
+
+## Pros and cons
+
+### Pros
 
 - Centralized management of all business travel and expense processes.
-- Automation reduces manual errors and workload.
-- Mobile usage for flexible travel routes and fast expense processing.
-- Support for company policies.
-- Extensive reporting and analysis functions.
+- Automation reduces manual errors and effort.
+- Mobile access for flexible trips and fast reimbursement.
+- Support for compliance with travel policies.
+- Extensive reporting and analytics features.
 - Scalable for companies of different sizes.
+- Particularly valuable: for companies with many trips, approvals, and cost centers.
 
-### Drawbacks
+### Cons
 
-- Pricing is dependent on the chosen plan and can be high for small businesses.
-- The platform's complexity may require additional time to learn.
-- Customizations and integrations may require additional effort.
+- Pricing depends on the chosen plan and can be high for small businesses.
+- Platform complexity may require onboarding time.
+- Customizations and integrations can add extra effort.
 - Not all features are available in every country or plan.
+- Watch point: with poorly maintained policies, it is more likely to block than to relieve work.
 
 ## Pricing & Costs
 
-Concur Travel is typically offered as a subscription. The exact costs vary depending on the company size, functionality, and contract terms. There are usually different plans tailored to the needs of small, medium, and large businesses. A free trial or demo may be available depending on the provider. For detailed pricing information, it is recommended to contact the provider directly.
+Concur Travel is usually offered as a subscription. Exact costs vary depending on company size, feature set, and contract terms. There are often different plans tailored to the needs of small, medium, or large businesses. A free trial or demo may be available depending on the provider. For detailed pricing, it is best to contact the provider directly.
+
+For budgeting, Concur Travel should not be evaluated by list price alone. More important are operating effort, training, integrations, and whether local travel policies, payment paths, and reporting are documented cleanly.
 
 ## Alternatives to Concur Travel
 
 - **SAP Concur Expense:** A complementary solution for comprehensive expense management.
 - **Expensify:** User-friendly expense reporting with a mobile app.
-- **TravelPerk:** Modern platform for business travel with a focus on flexibility.
-- **Certify:** Integrated solution for expense and travel management.
+- **TravelPerk:** A modern business travel platform focused on flexibility.
+- **Certify:** An integrated solution for travel expense and expense management.
 - **TripActions:** AI-powered travel management with real-time data.
 
-## FAQs
+When comparing alternatives, it is worth looking at the specific bottleneck. If business travel booking and policy enforcement are the main focus, other criteria matter more than in a general tool comparison: data control, learning curve, integrations, and the quality of results in your own materials.
 
-**1. Is Concur Travel suitable for small businesses?**  
-Yes, Concur Travel offers plans for various business sizes, although the functionality and pricing may vary depending on the plan.
+## FAQ
 
-**2. Does Concur Travel have a mobile app?**  
-Yes, Concur Travel provides a mobile application that allows travelers to manage bookings and expenses on-the-go.
+**1. Is Concur Travel suitable for small businesses?**
+Yes, Concur Travel offers plans for different company sizes, although the feature set and price may vary by plan.
 
-**3. How does Concur Travel support company policies?**  
-The platform enables the definition and automated monitoring of company policies, ensuring that bookings and expenses are reviewed accordingly.
+**2. Is there a mobile app for Concur Travel?**
+Yes, Concur Travel provides a mobile application that lets travelers manage bookings and expenses on the go.
 
-**4. Can Concur Travel integrate with existing ERP or accounting systems?**  
-Yes, Concur Travel offers various integration options to seamlessly transfer data to other business software.
+**3. How does Concur Travel support travel policy compliance?**
+The platform allows companies to define and automatically monitor corporate policies so bookings and expenses can be reviewed accordingly.
 
-**5. What payment models does Concur Travel offer?**  
-Concur Travel is typically offered as a subscription, with pricing dependent on the chosen plan and company requirements.
+**4. Can Concur Travel be integrated with existing ERP or accounting systems?**
+Yes, Concur Travel offers various integration options to transfer data seamlessly into other business software.
 
-**6. Does Concur Travel offer a free trial or demo?**  
-Depending on the provider and region, a free trial or demo may be available. It is recommended to contact the provider directly for more information.
+**5. What payment models are available for Concur Travel?**
+Concur Travel is usually offered as a subscription, with prices depending on the chosen plan and company requirements.
 
-**7. How secure are the data at Concur Travel?**  
-Concur Travel uses standard security measures and encryption to protect company and travel data.
+**6. Does Concur Travel offer a trial version?**
+Depending on the provider and region, a free trial or demo may be available. It is best to ask the provider directly.
 
-**8. Can employees manage their own expenses?**  
-Yes, the platform allows employees to track and submit their own expenses and supporting documents.
+**7. How secure is the data in Concur Travel?**
+Concur Travel uses common security standards and encryption to protect company and travel data.
+
+**8. Can employees enter their travel expenses themselves?**
+Yes, the platform allows employees to record expenses and receipts independently and submit them for approval.
+
+**9. How should Concur Travel be tested?**
+Best with a small, real-world scenario from your own day-to-day operations. Check whether the tool helps bring travel requests, bookings, and cost rules into a controlled process, and whether the results are usable without much rework.
+
+**10. What is the most common stumbling block with Concur Travel?**
+The most common stumbling block is starting too broadly. Before rollout, it should be clear whether local travel policies, payment paths, and reporting are documented cleanly; otherwise, the value is hard to assess.

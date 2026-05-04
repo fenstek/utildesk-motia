@@ -7,14 +7,25 @@ tags: [data, analytics, developer-tools, open-source]
 official_url: "https://drill.apache.org/"
 popularity: 0
 ---
-
 # Apache Drill
 
-Apache Drill ist ein Open-Source-Tool für die Analyse und Abfrage großer, heterogener Datensätze in Echtzeit. Es ermöglicht Entwicklern und Datenanalysten, strukturierte und unstrukturierte Daten aus verschiedenen Quellen ohne vorherige Schema-Definition abzufragen. Drill unterstützt SQL-Abfragen über diverse Datenquellen wie Hadoop, NoSQL-Datenbanken, Cloud-Speicher und lokale Dateien. Dadurch eignet es sich besonders für Projekte, bei denen schnelle und flexible Datenanalysen erforderlich sind.
+Apache Drill sollte man weniger über die reine Featureliste lesen als über den konkreten Arbeitsablauf: schemafreie SQL-Abfragen auf verteilten Datenquellen. Der praktische Wert entsteht dort, wo es darum geht, Daten zu erkunden, bevor ein starres Warehouse-Modell steht, ohne jede Entscheidung wieder in Nebentools auszulagern.
+
+Für die Bewertung zählt vor allem die Frage, welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden. Wenn dieser Punkt ungeklärt bleibt, wirkt selbst ein starkes Tool schnell größer als der eigentliche Nutzen.
 
 ## Für wen ist Apache Drill geeignet?
 
-Apache Drill richtet sich vor allem an Datenanalysten, Entwickler und Unternehmen, die große Datenmengen aus unterschiedlichen Quellen analysieren möchten, ohne aufwändige ETL-Prozesse durchführen zu müssen. Es ist ideal für Organisationen, die eine flexible, skalierbare Lösung für Ad-hoc-Abfragen benötigen und dabei auf eine Open-Source-Plattform setzen wollen. Auch für Teams, die mit Big Data und Data Lakes arbeiten, bietet Drill eine effiziente Möglichkeit, komplexe Abfragen schnell umzusetzen.
+Apache Drill eignet sich für technische Analysten, die Datenquellen schnell prüfen müssen. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden.
+
+Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: bei produktivem Reporting ohne Governance schwer kontrollierbar wird. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+
+## Redaktionelle Einschätzung
+
+Apache Drill überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, sondern wenn der Kernprozess sauber geschnitten ist. Ein guter Test beginnt mit einem typischen Fall aus dem eigenen Arbeitsalltag und einem klaren Kriterium, wann das Ergebnis gut genug ist.
+
+- **Starker Einsatz:** für technische Analysten, die Datenquellen schnell prüfen müssen.
+- **Vorher klären:** welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden.
+- **Nicht unterschätzen:** bei produktivem Reporting ohne Governance schwer kontrollierbar wird.
 
 ## Hauptfunktionen
 
@@ -27,6 +38,9 @@ Apache Drill richtet sich vor allem an Datenanalysten, Entwickler und Unternehme
 - **Erweiterbarkeit:** Möglichkeit zur Erweiterung durch benutzerdefinierte Funktionen und Plug-ins.
 - **Open-Source-Community:** Aktive Entwicklung und Unterstützung durch eine große Entwickler-Community.
 
+- **Praxischeck:** welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden.
+- **Einführung im Team:** Daten zu erkunden, bevor ein starres Warehouse-Modell steht.
+
 ## Vorteile und Nachteile
 
 ### Vorteile
@@ -36,16 +50,20 @@ Apache Drill richtet sich vor allem an Datenanalysten, Entwickler und Unternehme
 - Leistungsfähige SQL-Unterstützung für komplexe Abfragen.
 - Skalierbar und geeignet für große Datenmengen.
 - Integration mit gängigen BI-Tools dank JDBC/ODBC.
+- Besonders wertvoll: für technische Analysten, die Datenquellen schnell prüfen müssen.
 
 ### Nachteile
 - Einarbeitungszeit erforderlich, insbesondere bei komplexen Datenquellen.
 - Performance kann je nach Datenquelle und Infrastruktur variieren.
 - Fehlende umfassende kommerzielle Support-Optionen, da Community-getrieben.
 - Nicht immer optimal für hochtransaktionale Systeme oder sehr kleine Datenmengen.
+- Achtungspunkt: bei produktivem Reporting ohne Governance schwer kontrollierbar wird.
 
 ## Preise & Kosten
 
 Apache Drill ist ein Open-Source-Projekt und kann kostenfrei genutzt werden. Für den produktiven Einsatz können jedoch Kosten für Infrastruktur, Betrieb und eventuell kommerzielle Supportleistungen anfallen, je nach gewähltem Anbieter oder Plan.
+
+Für die Budgetplanung sollte Apache Drill nicht nur nach Listenpreis bewertet werden. Wichtiger sind Betriebsaufwand, Schulung, Integrationen und die Frage, welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden.
 
 ## Alternativen zu Apache Drill
 
@@ -55,30 +73,36 @@ Apache Drill ist ein Open-Source-Projekt und kann kostenfrei genutzt werden. Fü
 - **Google BigQuery:** Cloud-basierter Data Warehouse-Service mit schneller SQL-Abfrageleistung.
 - **Snowflake:** Cloud-Datenplattform mit skalierbarer SQL-Analyse und Data-Warehouse-Funktionalitäten.
 
+Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn schemafreie SQL-Abfragen auf verteilten Datenquellen im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.
+
 ## FAQ
 
-**Was ist Apache Drill?**  
+**Was ist Apache Drill?**
 Apache Drill ist eine Open-Source-SQL-Engine, die es ermöglicht, Daten aus verschiedenen Quellen ohne vorherige Schema-Definition abzufragen.
 
-**Welche Datenquellen unterstützt Apache Drill?**  
+**Welche Datenquellen unterstützt Apache Drill?**
 Drill unterstützt Hadoop, NoSQL-Datenbanken wie MongoDB, Cloud-Speicher (z.B. Amazon S3), sowie lokale Dateien und relationale Datenbanken.
 
-**Ist Apache Drill kostenlos?**  
+**Ist Apache Drill kostenlos?**
 Ja, Apache Drill ist Open Source und kann kostenlos genutzt werden. Kosten können jedoch für Infrastruktur und Support entstehen.
 
-**Wie skaliert Apache Drill bei großen Datenmengen?**  
+**Wie skaliert Apache Drill bei großen Datenmengen?**
 Drill ist für verteilte Umgebungen konzipiert und kann durch horizontale Skalierung große Datenmengen effizient verarbeiten.
 
-**Benötige ich spezielle Kenntnisse, um Apache Drill zu nutzen?**  
+**Benötige ich spezielle Kenntnisse, um Apache Drill zu nutzen?**
 Grundkenntnisse in SQL und Datenquellen-Architekturen sind hilfreich. Für komplexe Anwendungen kann eine Einarbeitungszeit notwendig sein.
 
-**Kann Apache Drill mit BI-Tools integriert werden?**  
+**Kann Apache Drill mit BI-Tools integriert werden?**
 Ja, Drill bietet JDBC- und ODBC-Treiber, die eine Integration mit vielen BI- und Analyse-Tools ermöglichen.
 
-**Welche Alternativen gibt es zu Apache Drill?**  
+**Welche Alternativen gibt es zu Apache Drill?**
 Alternativen sind u.a. Presto (Trino), Apache Spark SQL, Dremio, Google BigQuery und Snowflake.
 
-**Gibt es kommerziellen Support für Apache Drill?**  
+**Gibt es kommerziellen Support für Apache Drill?**
 Da Apache Drill ein Community-Projekt ist, ist der kommerzielle Support begrenzt. Einige Drittanbieter bieten jedoch Support-Leistungen an.
 
----
+**9. Wie sollte man Apache Drill testen?**
+Am besten mit einem kleinen, echten Szenario aus dem eigenen Alltag. Dabei sollte geprüft werden, ob das Tool hilft, Daten zu erkunden, bevor ein starres Warehouse-Modell steht, und ob die Ergebnisse ohne viel Nacharbeit nutzbar sind.
+
+**10. Was ist der häufigste Stolperstein bei Apache Drill?**
+Der häufigste Stolperstein ist ein zu breiter Start. Vor dem Rollout sollte klar sein, welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden; sonst wird der Nutzen schwer zu bewerten.
