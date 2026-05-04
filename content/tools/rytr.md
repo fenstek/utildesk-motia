@@ -7,8 +7,8 @@ tags: ["writing", "design", "marketing"]
 official_url: "https://rytr.me/"
 affiliate_url: "https://rytr.me/"
 created_at: 2026-02-07
-popularity: 18
-description: "Rytr ist ein KI-Schreibtool für kurze Marketingtexte, Ideenvarianten, Produktbeschreibungen und einfache Content-Entwürfe."
+popularity: 79
+description: Rytr ist ein KI-Schreibtool für kurze Marketingtexte, Ideenvarianten, Produktbeschreibungen und einfache Content-Entwürfe.
 ---
 # Rytr
 

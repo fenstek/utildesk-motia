@@ -1,13 +1,13 @@
 ---
 slug: adobe-premiere-pro
 title: Adobe Premiere Pro
-category: "Audio & Video"
-price_model: "Abonnement"
+category: Audio & Video
+price_model: Abonnement
 tags: ["video", "editing", "creative", "content", "audio"]
 official_url: "https://www.adobe.com/products/premiere.html"
 affiliate_url: "https://www.adobe.com/products/premiere.html"
-popularity: 88
-description: "Professioneller Video-Editor für Schnitt, Farbkorrektur, Audio, Untertitel und Postproduktion."
+popularity: 0
+description: Professioneller Video-Editor für Schnitt, Farbkorrektur, Audio, Untertitel und Postproduktion.
 ---
 
 # Adobe Premiere Pro

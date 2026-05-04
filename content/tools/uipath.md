@@ -2,11 +2,11 @@
 slug: uipath
 title: UiPath
 category: AI
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: ["automation", "workflow", "data"]
 official_url: "https://www.uipath.com/"
-popularity: 1
-description: "UiPath ist eine Enterprise-Plattform für Robotic Process Automation, Prozessautomatisierung und KI-gestützte Business-Workflows."
+popularity: 5
+description: UiPath ist eine Enterprise-Plattform für Robotic Process Automation, Prozessautomatisierung und KI-gestützte Business-Workflows.
 ---
 # UiPath
 

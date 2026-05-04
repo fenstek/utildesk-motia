@@ -5,8 +5,8 @@ category: AI
 price_model: Je nach Plan
 tags: [productivity, data, analytics, education]
 official_url: "https://www.researchrabbit.ai/"
-popularity: 20
-description: "Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen zu erkunden."
+popularity: 81
+description: Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen zu erkunden.
 ---
 # Research Rabbit
 

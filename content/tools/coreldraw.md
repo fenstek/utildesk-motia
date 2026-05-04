@@ -1,13 +1,13 @@
 ---
 slug: coreldraw
 title: CorelDRAW
-category: "Design"
-price_model: "Je nach Plan"
+category: Design
+price_model: Je nach Plan
 tags: ["design", "vector", "layout", "illustration", "creative"]
 official_url: "https://www.coreldraw.com/"
 affiliate_url: "https://www.coreldraw.com/"
-popularity: 73
-description: "Vektor- und Layoutsuite für Illustration, Logoarbeit, Druckgrafik, Beschilderung und technische Designs."
+popularity: 63
+description: Vektor- und Layoutsuite für Illustration, Logoarbeit, Druckgrafik, Beschilderung und technische Designs.
 ---
 
 # CorelDRAW

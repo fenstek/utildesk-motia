@@ -1,13 +1,13 @@
 ---
 slug: narrato
 title: Narrato
-category: "Schreiben & Content"
-price_model: "Freemium"
+category: Schreiben & Content
+price_model: Freemium
 tags: ["content", "writing", "marketing", "workflow", "ai"]
 official_url: "https://narrato.io/"
 affiliate_url: "https://narrato.io/"
-popularity: 32
-description: "Content-Workflow-Plattform für Planung, KI-Schreiben, Redaktion und Marketingproduktion."
+popularity: 34
+description: Content-Workflow-Plattform für Planung, KI-Schreiben, Redaktion und Marketingproduktion.
 ---
 
 # Narrato

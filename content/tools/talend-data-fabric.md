@@ -5,7 +5,7 @@ category: Developer
 price_model: Abonnement, Je nach Plan
 tags: [data, integration, automation, analytics]
 official_url: "https://www.qlik.com/us/products/talend-data-fabric"
-popularity: 8
+popularity: 11
 ---
 
 # Talend Data Fabric

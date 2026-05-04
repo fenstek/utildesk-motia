@@ -2,14 +2,12 @@
 slug: dall-e
 title: DALL·E
 category: Design
-price_model: "Freemium"
-tags:
-  - ai
-  - design
-official_url: 'https://openai.com/dall-e'
-affiliate_url: 'https://openai.com/dall-e'
-created_at: "2026-02-03"
-popularity: 0
+price_model: Freemium
+tags: 
+official_url: "https://openai.com/dall-e"
+affiliate_url: "https://openai.com/dall-e"
+created_at: 2026-02-03
+popularity: 61
 ---
 # DALL·E
 

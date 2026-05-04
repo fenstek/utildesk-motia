@@ -1,13 +1,13 @@
 ---
 slug: jovian
 title: Jovian
-category: "Entwickler-Tools"
-price_model: "Freemium"
+category: Entwickler-Tools
+price_model: Freemium
 tags: ["education", "data", "analytics", "python", "developer-tools"]
 official_url: "https://jovian.com/"
 affiliate_url: "https://jovian.com/"
-popularity: 93
-description: "Praxisorientierte Lernplattform für Python, Datenanalyse, Machine Learning und Jupyter-Workflows."
+popularity: 86
+description: Praxisorientierte Lernplattform für Python, Datenanalyse, Machine Learning und Jupyter-Workflows.
 ---
 
 # Jovian

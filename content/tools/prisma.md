@@ -2,11 +2,11 @@
 slug: prisma
 title: Prisma
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://prisma-ai.com/"
-popularity: 23
-description: "Prisma ist ein Design- und Kreativwerkzeug für KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten."
+popularity: 22
+description: Prisma ist ein Design- und Kreativwerkzeug für KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten.
 ---
 # Prisma
 

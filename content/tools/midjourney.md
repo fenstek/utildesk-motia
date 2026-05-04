@@ -1,14 +1,14 @@
 ---
 slug: midjourney
 title: Midjourney
-category: "Design"
-price_model: "Abonnement"
+category: Design
+price_model: Abonnement
 tags: ["ai", "design", "image", "creative", "visual"]
 official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
 created_at: 2026-02-02
-popularity: 37
-description: "KI-Bildgenerator für hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente."
+popularity: 83
+description: KI-Bildgenerator für hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente.
 ---
 
 # Midjourney

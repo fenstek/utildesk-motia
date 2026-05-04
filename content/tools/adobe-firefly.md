@@ -7,7 +7,7 @@ tags: ["ai", "design"]
 official_url: "https://firefly.adobe.com/?media=featured"
 affiliate_url: "https://firefly.adobe.com/?media=featured"
 created_at: 2026-02-02
-popularity: 0
+popularity: 75
 ---
 
 # Adobe Firefly

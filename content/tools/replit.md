@@ -2,14 +2,12 @@
 slug: replit
 title: Replit
 category: Developer
-price_model: "Freemium"
-tags:
-  - ai
-  - developer
-official_url: 'https://repl.it'
-affiliate_url: 'https://repl.it'
-created_at: "2026-02-07"
-popularity: 0
+price_model: Freemium
+tags: 
+official_url: "https://repl.it"
+affiliate_url: "https://repl.it"
+created_at: 2026-02-07
+popularity: 20
 ---
 
 # Replit
