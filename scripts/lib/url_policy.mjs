@@ -53,7 +53,7 @@ const DENY_SUBSTR = [
   'mairie', 'stadt', 'gemeinde', 'municip', 'municipal', 'kommune', 'council',
   'gov', 'gouv', 'regierung',
   'comune', 'townof', 'cityof', 'ville', 'township',
-  'visit', 'tourism', 'tourist', 'stadtinfo', 'city',
+  'visit', 'tourism', 'tourist', 'stadtinfo',
   '/search?', '/search/', '?q=', '&q=', 'utm_',
   // Non-product path indicators
   '/film', '/movie', '/stadt/', '/city/',

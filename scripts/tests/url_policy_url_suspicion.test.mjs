@@ -30,6 +30,14 @@ test('url_policy: legitimate google product subdomains are allowed', () => {
   assert.equal(r.ok, true);
 });
 
+test('url_policy: product domains containing city are allowed', () => {
+  const r = validateOfficialUrl('https://www.udacity.com/', {
+    slug: 'udacity',
+    title: 'Udacity',
+  });
+  assert.equal(r.ok, true);
+});
+
 test('url_suspicion: domain-for-sale URL is deny', () => {
   const r = classifyFinalUrl({ finalUrl: 'https://example.com/domain-for-sale' });
   assert.equal(r.verdict, 'deny');
