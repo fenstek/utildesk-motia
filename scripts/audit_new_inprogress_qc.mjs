@@ -134,7 +134,7 @@ function isSelfReference(url) {
     const host = u.hostname.replace(/^www\./, '').toLowerCase();
     const path = String(u.pathname || '').toLowerCase();
     if (host === 'tools.utildesk.de' || host.endsWith('.tools.utildesk.de')) return true;
-    if (path.includes('/tools/')) return true;
+    if ((host === 'utildesk.de' || host.endsWith('.utildesk.de')) && path.includes('/tools/')) return true;
     return false;
   } catch {
     return false;
