@@ -20,6 +20,20 @@ Workday is a cloud-based platform specializing in human capital management (HCM)
 
 Workday is aimed primarily at mid-sized and large companies that want to digitize and automate their HR and finance processes. Organizations across industries benefit from an integrated platform for employee management, payroll, financial planning, and analytics. Workday is especially well suited for companies with complex requirements around compliance, reporting, and global collaboration.
 
+Workday becomes especially relevant when several roles are involved. Then usability matters, but so do handoffs, reviews, and traceable decisions around AI assistance, knowledge work, quality control, and controlled automation.
+
+Before rollout, Workday should pass a small reality check: who owns the result, who reviews it, and what improvement would the team actually notice?
+
+## Editorial assessment
+
+The practical value of Workday becomes visible through repeated use, not a polished first impression. Teams should check whether time saved, output quality, correction effort, and traceability become more stable after real runs.
+
+A useful evaluation starts with a recurring task with inputs, expected outputs, review, and error criteria. Only then can a team decide whether Workday is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** Workday is useful only if time saved, output quality, correction effort, and traceability can be compared after a real run and reviewed by someone else.
+- **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Workday.
+- **Common pitfall:** Workday disappoints when prompts, data permissions, review duties, and boundaries are not documented.
+
 ## Key Features
 
 - **Human Capital Management (HCM):** Management of employee data, recruiting, onboarding, talent management, and performance reviews.
@@ -31,6 +45,10 @@ Workday is aimed primarily at mid-sized and large companies that want to digitiz
 - **Global Compliance:** Support for international regulations and local laws.
 - **Integration:** Interfaces with other business applications and data sources.
 
+- **Practical workflow:** Workday should be tested against a recurring task with inputs, expected outputs, review, and error criteria, not only against a polished demo.
+- **Quality control:** In operation, Workday should leave enough context to explain how time saved, output quality, correction effort, and traceability were judged and corrected.
+- **Team handoff:** Workday becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Pros and Cons
 
 ### Pros
@@ -41,12 +59,18 @@ Workday is aimed primarily at mid-sized and large companies that want to digitiz
 - Strong support for compliance and global requirements.
 - User-friendly interface and mobile availability.
 
+- Stronger in daily work when Workday is used for clearly bounded tasks rather than every possible side problem.
+- Helps most where the work around AI assistance, knowledge work, quality control, and controlled automation still depends on individual people, private routines, or improvised handoffs. For Workday, this point should be part of the acceptance review.
+
 ### Cons
 - Costs can be high depending on company size and feature scope.
 - Implementation and customization require time and resources.
 - May be oversized for smaller companies.
 - Depends on a stable internet connection.
 - Complexity of the solution may require training time.
+
+- Becomes harder to run when Workday enters the workflow while prompts, data permissions, review duties, and boundaries are not documented and the team only discovers that gap later.
+- The setup matters less than whether the team keeps Workday reviewed, cleaned up, and tied to real working rules.
 
 ## Pricing & Costs
 
@@ -85,3 +109,13 @@ Yes, Workday offers mobile applications that allow access to important functions
 
 **8. How does Workday support compliance?**  
 Workday includes features that help meet legal requirements and international standards in HR and finance.
+
+Beyond the list price, Workday should be evaluated by the cost of adoption. Relevant factors include usage limits, model access, privacy, integrations, and human review. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
+
+When comparing options, Workday should not only be measured against very similar products. Depending on the goal, AI assistants, automation platforms, model APIs, and specialized expert tools may fit better if they are closer to the existing process or require less maintenance.
+
+**9. How should a team test Workday?**
+A narrow pilot is enough: real task, clear acceptance point, and a short retrospective on what Workday improved and what stayed manual.
+
+**10. When is Workday a poor fit?**
+When prompts, data permissions, review duties, and boundaries are not documented, or when nobody has time for setup, review, and maintenance. In that case Workday becomes another stop in the process rather than real relief.

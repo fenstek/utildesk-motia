@@ -36,6 +36,10 @@ Gensim is suitable for developers, data scientists, and researchers who work wit
 - **Model Storage:** Ability to store and reuse trained models.
 - **Customizability:** User-defined extensions and modifications through open APIs.
 
+- **Practical workflow:** Gensim should be tested against a limited data set with a clear source, a defined question, and a traceable result, not only against a polished demo.
+- **Quality control:** The team should define how data quality, runtime, maintainability, and acceptance of the analysis are measured, approved, and revisited after Gensim is used.
+- **Team handoff:** Gensim becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Advantages and Disadvantages
 
 ### Advantages
@@ -47,6 +51,9 @@ Gensim is suitable for developers, data scientists, and researchers who work wit
 - Flexible and well-integrated into the Python ecosystem.
 - Enables rapid prototyping and research.
 
+- Stronger in daily work when Gensim is used for clearly bounded tasks rather than every possible side problem.
+- Can distribute knowledge when the work around data flows, queries, analysis, and the reliability of decisions has depended on a few specialists or hand-built transitions. With Gensim, the team should clarify this before rollout.
+
 ### Disadvantages
 
 - No graphical user interface – only programmable.
@@ -55,9 +62,14 @@ Gensim is suitable for developers, data scientists, and researchers who work wit
 - Performance depends on implementation and hardware.
 - Some models require large datasets for good results.
 
+- Needs clear guardrails, because problems surface quickly when data sources, definitions, and ownership are not clarified.
+- The value of Gensim depends on whether review, data care, and ownership are actually followed after the first setup.
+
 ## Pricing & Costs
 
 Gensim is an open-source library and is free to use. There are no licensing fees, regardless of commercial or private use. Costs may arise from infrastructure (e.g., servers, cloud computing) depending on how and where the models are used.
+
+Beyond the list price, Gensim should be evaluated by the cost of adoption. Relevant factors include infrastructure, operations, monitoring, training, and maintenance of data models. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to Gensim
 
@@ -66,6 +78,8 @@ Gensim is an open-source library and is free to use. There are no licensing fees
 - **MALLET:** Java-based software for topic modeling, especially used with LDA models.
 - **Transformers (Hugging Face):** Library for state-of-the-art language models based on deep learning.
 - **scikit-learn:** Provides basic tools for machine learning, also for text classification and clustering.
+
+When comparing options, Gensim should not only be measured against very similar products. Depending on the goal, databases, BI tools, pipeline systems, and open frameworks may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -92,3 +106,23 @@ No, Gensim is a programmable library without a GUI.
 
 **8. For which application areas is Gensim particularly suitable?**  
 Gensim is ideal for text analysis, topic modeling, document classification, and research in the NLP field.
+
+Gensim becomes especially relevant when several roles are involved. Then usability matters, but so do handoffs, reviews, and traceable decisions around data flows, queries, analysis, and the reliability of decisions.
+
+The decision becomes clearer when owners, review steps, and success criteria are written down before Gensim enters the workflow.
+
+**9. How should a team test Gensim?**
+Start with one clear task rather than every feature. After a few runs, check whether Gensim truly saves effort or only moves the work elsewhere.
+
+**10. When is Gensim a poor fit?**
+It becomes risky when data sources, definitions, and ownership are not clarified, or when decisions will not be reviewed later. In that case Gensim adds surface area without enough clarity.
+
+## Editorial assessment
+
+The practical value of Gensim becomes visible through repeated use, not a polished first impression. Teams should check whether data quality, runtime, maintainability, and acceptance of the analysis become more stable after real runs.
+
+A useful evaluation starts with a limited data set with a clear source, a defined question, and a traceable result. Only then can a team decide whether Gensim is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** The important signal is whether Gensim improves data quality, runtime, maintainability, and acceptance of the analysis while keeping the result explainable.
+- **Good starting point:** For Gensim, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
+- **Common pitfall:** Gensim disappoints when data sources, definitions, and ownership are not clarified.

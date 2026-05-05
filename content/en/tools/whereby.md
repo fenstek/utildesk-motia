@@ -20,6 +20,20 @@ Whereby is an easy-to-use video conferencing platform designed specifically for 
 
 Whereby is especially well suited for small to medium-sized teams, freelancers, and companies that want to run straightforward and fast video conferences without much technical effort. The platform is also interesting for educational institutions and customer service, as it does not require software installation and works on various devices. Anyone who values ease of use, privacy, and flexible meeting rooms will find a suitable solution in Whereby.
 
+A small, bounded test is usually enough to learn whether Whereby fits. It should show whether response time, handoff quality, and customer satisfaction improve without creating new shadow processes.
+
+A feature list is not enough here. The team should define the task Whereby is meant to relieve, who accepts the result, and when the pilot counts as a miss.
+
+## Editorial assessment
+
+Whereby can be useful when it is embedded in a clear process. Without ownership and review rules, the value can remain vague even if the product looks convincing in a demo.
+
+A useful evaluation starts with a real service case with intake, prioritization, response, escalation, and follow-up. Only then can a team decide whether Whereby is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** The team should see whether Whereby makes response time, handoff quality, and customer satisfaction more stable after the test, not just more impressive in a demo.
+- **Good starting point:** Keep the first Whereby trial close to daily work, with one owner and a short review after the result is delivered.
+- **Common pitfall:** Whereby disappoints when channels, ownership, and escalation rules are not clearly defined.
+
 ## Key features
 
 - Browser-based video conferencing without app download
@@ -34,6 +48,10 @@ Whereby is especially well suited for small to medium-sized teams, freelancers, 
 - Custom branding options for businesses (depending on plan)
 - Easy participant management and access control through password protection
 
+- **Practical workflow:** Whereby should be tested against a real service case with intake, prioritization, response, escalation, and follow-up, not only against a polished demo.
+- **Quality control:** In daily use, Whereby needs a way to document response time, handoff quality, and customer satisfaction so another person can review the result.
+- **Team handoff:** Whereby becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Pros and cons
 
 ### Pros
@@ -45,6 +63,9 @@ Whereby is especially well suited for small to medium-sized teams, freelancers, 
 - Customizable rooms for company branding possible
 - Good integration with calendar tools and workflows
 
+- Stronger in daily work when Whereby is used for clearly bounded tasks rather than every possible side problem.
+- Creates more value when Whereby exposes recurring friction around customer communication, availability, and clean handoffs between channels instead of merely adding another interface.
+
 ### Cons
 
 - Limited number of participants in the basic plans
@@ -52,6 +73,9 @@ Whereby is especially well suited for small to medium-sized teams, freelancers, 
 - No extensive collaboration tools integrated (e.g. whiteboard)
 - Reliance on a stable internet connection in the browser
 - Limited customization options compared with more complex platforms
+
+- Adds complexity when channels, ownership, and escalation rules are not clearly defined before the rollout and decisions are made informally. For Whereby, this point should be part of the acceptance review.
+- If review and maintenance disappear, Whereby quickly loses reliability in shared workflows.
 
 ## Pricing & costs
 
@@ -63,6 +87,8 @@ Whereby offers a subscription model with different plans that vary in feature se
 
 Detailed pricing information and plan options can be found on the official website depending on the plan.
 
+Beyond the list price, Whereby should be evaluated by the cost of adoption. Relevant factors include setup, phone numbers, integrations, training, and ongoing administration. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
+
 ## Alternatives to Whereby
 
 - **Zoom** – Known for extensive features and high participant limits, with various pricing models.
@@ -70,6 +96,8 @@ Detailed pricing information and plan options can be found on the official websi
 - **Google Meet** – Browser-based video conferencing with easy integration into Google Workspace.
 - **Jitsi Meet** – Open-source alternative for free video conferencing without registration.
 - **Cisco Webex** – Professional video conferencing solution with extensive features for businesses.
+
+When comparing options, Whereby should not only be measured against very similar products. Depending on the goal, contact-center, helpdesk, and collaboration tools may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -96,3 +124,9 @@ Yes, there is a free basic plan with limited features.
 
 **8. How do I invite participants to a meeting?**  
 You can simply share the meeting link by email or chat; participant sign-up is not mandatory.
+
+**9. How should a team test Whereby?**
+Use a small real use case. Define the goal, owner, and success criteria first, then compare effort, quality, and remaining friction around Whereby.
+
+**10. When is Whereby a poor fit?**
+It is a poor fit when channels, ownership, and escalation rules are not clearly defined and the team has no capacity for setup, review, and ongoing care. Then Whereby mostly moves the problem around.

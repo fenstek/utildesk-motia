@@ -26,6 +26,20 @@ OpenNMT is primarily aimed at developers, researchers, and businesses that want 
 
 Because OpenNMT requires a certain level of technical expertise, it is less intended for end users without programming knowledge.
 
+OpenNMT becomes especially relevant when several roles are involved. Then usability matters, but so do handoffs, reviews, and traceable decisions around text quality, research, structure, and consistent publishing.
+
+Before rollout, OpenNMT should pass a small reality check: who owns the result, who reviews it, and what improvement would the team actually notice?
+
+## Editorial assessment
+
+The practical value of OpenNMT becomes visible through repeated use, not a polished first impression. Teams should check whether clarity, fact checking, tone, editing time, and approval quality become more stable after real runs.
+
+A useful evaluation starts with a real writing assignment with brief, draft, review, revision, and publication. Only then can a team decide whether OpenNMT is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** OpenNMT is useful only if clarity, fact checking, tone, editing time, and approval quality can be compared after a real run and reviewed by someone else.
+- **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for OpenNMT.
+- **Common pitfall:** OpenNMT disappoints when sources, tone, review rules, and ownership remain unclear.
+
 ## Main features
 
 - **Neural machine translation (NMT):** Supports modern deep learning models for high-quality translations.
@@ -38,6 +52,10 @@ Because OpenNMT requires a certain level of technical expertise, it is less inte
 - **Customizability:** The ability to adapt models to specific domains through transfer learning.
 - **Documentation and tutorials:** Extensive resources for getting started and continuing development.
 
+- **Practical workflow:** OpenNMT should be tested against a real writing assignment with brief, draft, review, revision, and publication, not only against a polished demo.
+- **Quality control:** In operation, OpenNMT should leave enough context to explain how clarity, fact checking, tone, editing time, and approval quality were judged and corrected.
+- **Team handoff:** OpenNMT becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Advantages and disadvantages
 
 ### Advantages
@@ -49,6 +67,9 @@ Because OpenNMT requires a certain level of technical expertise, it is less inte
 - Platform-independent and flexible to use.
 - Ability to process sensitive data locally without cloud dependency.
 
+- Stronger in daily work when OpenNMT is used for clearly bounded tasks rather than every possible side problem.
+- Helps most where the work around text quality, research, structure, and consistent publishing still depends on individual people, private routines, or improvised handoffs. With OpenNMT, this belongs in the practical test, not only in onboarding.
+
 ### Disadvantages
 
 - Requires technical know-how for installation and operation.
@@ -57,9 +78,14 @@ Because OpenNMT requires a certain level of technical expertise, it is less inte
 - No official commercial support, depends on community help.
 - The user interface is minimal compared with commercial tools.
 
+- Becomes harder to run when OpenNMT enters the workflow while sources, tone, review rules, and ownership remain unclear and the team only discovers that gap later.
+- The setup matters less than whether the team keeps OpenNMT reviewed, cleaned up, and tied to real working rules.
+
 ## Pricing & costs
 
 OpenNMT is an open-source project and can be used for free. There are no license costs. However, there may be costs for infrastructure (for example, servers and GPUs) and personnel for setup and maintenance. Depending on the provider or hosting solution, additional fees may apply if OpenNMT is used as a hosted service.
+
+Beyond the list price, OpenNMT should be evaluated by the cost of adoption. Relevant factors include number of users, language coverage, integrations, review effort, and governance. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to OpenNMT
 
@@ -68,6 +94,8 @@ OpenNMT is an open-source project and can be used for free. There are no license
 - **Fairseq:** Facebook's open-source toolkit for sequence models, also suitable for NMT.
 - **Google Cloud Translation API:** A commercial cloud service with extensive translation features.
 - **DeepL API:** A proprietary translation service with high quality, especially for European languages.
+
+When comparing options, OpenNMT should not only be measured against very similar products. Depending on the goal, writing, research, translation, and editing tools may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -94,3 +122,9 @@ Yes, OpenNMT offers optimized inference features that enable real-time translati
 
 **8. How can I integrate OpenNMT into my applications?**  
 OpenNMT provides APIs and interfaces that allow integration into various software solutions. The documentation includes detailed instructions for this.
+
+**9. How should a team test OpenNMT?**
+A narrow pilot is enough: real task, clear acceptance point, and a short retrospective on what OpenNMT improved and what stayed manual.
+
+**10. When is OpenNMT a poor fit?**
+When sources, tone, review rules, and ownership remain unclear, or when nobody has time for setup, review, and maintenance. In that case OpenNMT becomes another stop in the process rather than real relief.

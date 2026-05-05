@@ -46,7 +46,7 @@ for (const batch of registry.batches || []) {
 }
 
 const files = (await fs.readdir(toolsDir))
-  .filter((name) => name.endsWith(".md"))
+  .filter((name) => name.endsWith(".md") && !name.startsWith("_"))
   .sort((a, b) => a.localeCompare(b));
 
 const candidates = [];
