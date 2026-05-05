@@ -1,10 +1,11 @@
 ---
-slug: "adobe-connect"
-title: "Adobe Connect"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: adobe-connect
+title: Adobe Connect
+category: Produktivität
+price_model: Abonnement
 tags: [meetings, webinar, communication, elearning]
 official_url: "https://www.adobe.com/products/adobeconnect.html"
+popularity: 0
 ---
 
 # Adobe Connect

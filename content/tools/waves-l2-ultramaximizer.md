@@ -1,10 +1,11 @@
 ---
-slug: "waves-l2-ultramaximizer"
-title: "Waves L2 Ultramaximizer"
-category: "Audio"
-price_model: "One-time purchase"
+slug: waves-l2-ultramaximizer
+title: Waves L2 Ultramaximizer
+category: Audio
+price_model: One-time purchase
 tags: [audio, mastering, limiter, music]
 official_url: "https://www.waves.com/plugins/l2-ultramaximizer"
+popularity: 0
 ---
 
 # Waves L2 Ultramaximizer

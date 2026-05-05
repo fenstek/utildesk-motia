@@ -1,10 +1,11 @@
 ---
-slug: "redis"
-title: "Redis"
-category: "Developer"
-price_model: "Open Source"
+slug: redis
+title: Redis
+category: Developer
+price_model: Open Source
 tags: [database, cache, open-source, cloud]
 official_url: "https://redis.io/"
+popularity: 0
 ---
 
 # Redis

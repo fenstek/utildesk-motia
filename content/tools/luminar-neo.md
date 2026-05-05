@@ -1,10 +1,11 @@
 ---
-slug: "luminar-neo"
-title: "Luminar Neo"
-category: "Design"
-price_model: "Abonnement"
+slug: luminar-neo
+title: Luminar Neo
+category: Design
+price_model: Abonnement
 tags: [photo, editing, ai, desktop]
 official_url: "https://skylum.com/luminar"
+popularity: 0
 ---
 
 # Luminar Neo

@@ -2,10 +2,10 @@
 slug: amazon-transcribe
 title: Amazon Transcribe
 category: AI
-price_model: "Nutzungsbasiert"
+price_model: Nutzungsbasiert
 tags: []
 official_url: "https://aws.amazon.com/transcribe/"
-popularity: 0
+popularity: 71
 ---
 
 # Amazon Transcribe

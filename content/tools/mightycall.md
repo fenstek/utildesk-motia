@@ -1,10 +1,11 @@
 ---
-slug: "mightycall"
-title: "MightyCall"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: mightycall
+title: MightyCall
+category: Produktivität
+price_model: Abonnement
 tags: [phone,communication,customer-support,business]
 official_url: "https://www.mightycall.com/"
+popularity: 0
 ---
 
 # MightyCall

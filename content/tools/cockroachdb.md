@@ -1,10 +1,11 @@
 ---
-slug: "cockroachdb"
-title: "CockroachDB"
-category: "Developer"
-price_model: "Freemium"
+slug: cockroachdb
+title: CockroachDB
+category: Developer
+price_model: Freemium
 tags: [database, cloud, data, developer-tools]
 official_url: "https://www.cockroachlabs.com/"
+popularity: 0
 ---
 
 # CockroachDB

@@ -1,10 +1,11 @@
 ---
-slug: "udacity"
-title: "Udacity"
-category: "Developer"
-price_model: "Abonnement"
+slug: udacity
+title: Udacity
+category: Developer
+price_model: Abonnement
 tags: [education, courses, data, developer-tools]
 official_url: "https://www.udacity.com/"
+popularity: 0
 ---
 
 # Udacity

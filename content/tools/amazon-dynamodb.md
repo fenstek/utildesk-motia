@@ -1,10 +1,11 @@
 ---
-slug: "amazon-dynamodb"
-title: "Amazon DynamoDB"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: amazon-dynamodb
+title: Amazon DynamoDB
+category: Developer
+price_model: Nutzungsbasiert
 tags: [database,cloud,data,developer-tools]
 official_url: "https://aws.amazon.com/dynamodb/"
+popularity: 0
 ---
 
 # Amazon DynamoDB

@@ -1,10 +1,11 @@
 ---
-slug: "apache-hbase"
-title: "Apache HBase"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-hbase
+title: Apache HBase
+category: Developer
+price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://hbase.apache.org/"
+popularity: 0
 ---
 
 # Apache HBase

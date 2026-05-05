@@ -1,10 +1,11 @@
 ---
-slug: "zoom-phone"
-title: "Zoom Phone"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: zoom-phone
+title: Zoom Phone
+category: Produktivität
+price_model: Abonnement
 tags: [phone, communication, meetings, customer-support]
 official_url: "https://www.zoom.com/en/products/voip-phone/?cms_guid=false"
+popularity: 0
 ---
 
 # Zoom Phone
