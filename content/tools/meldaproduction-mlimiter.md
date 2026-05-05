@@ -1,10 +1,11 @@
 ---
-slug: "meldaproduction-mlimiter"
-title: "MeldaProduction MLimiter"
-category: "Audio"
-price_model: "Free"
+slug: meldaproduction-mlimiter
+title: MeldaProduction MLimiter
+category: Audio
+price_model: Free
 tags: [audio,mastering,limiter,music]
 official_url: "https://www.meldaproduction.com/MSaturator"
+popularity: 0
 ---
 
 # MeldaProduction MLimiter

@@ -6,7 +6,7 @@ price_model: Je nach Plan
 tags: ["design", "ui", "ux", "prototyping", "collaboration"]
 official_url: "https://marvelapp.com/"
 affiliate_url: "https://marvelapp.com/"
-popularity: 40
+popularity: 39
 description: Design- und Prototyping-Plattform für Wireframes, klickbare Prototypen, Tests und Handoff.
 ---
 

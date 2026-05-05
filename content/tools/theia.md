@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [ide, developer-tools, open-source]
 official_url: "https://theia-ide.org/"
-popularity: 7
+popularity: 10
 description: Theia ist ein Open-Source-Framework für Desktop- und Cloud-IDEs, das Entwicklerplattformen als erweiterbare Workbench ermöglicht.
 ---
 # Theia

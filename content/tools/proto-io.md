@@ -1,10 +1,11 @@
 ---
-slug: "proto-io"
-title: "Proto.io"
-category: "Design"
-price_model: "Abonnement"
+slug: proto-io
+title: Proto.io
+category: Design
+price_model: Abonnement
 tags: [prototyping, design, collaboration, no-code]
 official_url: "https://proto.io/"
+popularity: 0
 ---
 
 # Proto.io

@@ -1,10 +1,11 @@
 ---
-slug: "avaya-onecloud"
-title: "Avaya Experience Platform"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: avaya-onecloud
+title: Avaya Experience Platform
+category: Produktivität
+price_model: Abonnement
 tags: [contact-center, communication, customer-support, ai]
 official_url: "https://www.avaya.com/en/products/infinity-platform/"
+popularity: 0
 ---
 
 # Avaya Experience Platform

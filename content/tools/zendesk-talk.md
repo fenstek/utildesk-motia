@@ -1,10 +1,11 @@
 ---
-slug: "zendesk-talk"
-title: "Zendesk Voice"
-category: "Produktivität"
-price_model: "Nutzungsbasiert"
+slug: zendesk-talk
+title: Zendesk Voice
+category: Produktivität
+price_model: Nutzungsbasiert
 tags: [phone, customer-support, communication, ai]
 official_url: "https://www.zendesk.de/service/voice/#georedirect"
+popularity: 0
 ---
 
 # Zendesk Voice

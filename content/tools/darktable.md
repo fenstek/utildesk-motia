@@ -1,10 +1,11 @@
 ---
-slug: "darktable"
-title: "Darktable"
-category: "Design"
-price_model: "Open Source"
+slug: darktable
+title: Darktable
+category: Design
+price_model: Open Source
 tags: [photo, editing, raw, open-source]
 official_url: "https://www.darktable.org/"
+popularity: 0
 ---
 
 # Darktable

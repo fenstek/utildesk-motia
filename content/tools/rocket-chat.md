@@ -1,10 +1,11 @@
 ---
-slug: "rocket-chat"
-title: "Rocket.Chat"
-category: "Produktivität"
-price_model: "Freemium"
+slug: rocket-chat
+title: Rocket.Chat
+category: Produktivität
+price_model: Freemium
 tags: [chat, communication, open-source, collaboration]
 official_url: "https://www.rocket.chat/"
+popularity: 0
 ---
 
 # Rocket.Chat

@@ -2,10 +2,10 @@
 slug: google-tabellen
 title: Google Tabellen
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["spreadsheet", "data", "productivity"]
 official_url: "https://workspace.google.com/products/sheets/"
-popularity: 0
+popularity: 57
 ---
 
 # Google Tabellen

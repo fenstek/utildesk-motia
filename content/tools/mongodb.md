@@ -1,10 +1,11 @@
 ---
-slug: "mongodb"
-title: "MongoDB"
-category: "Developer"
-price_model: "Freemium"
+slug: mongodb
+title: MongoDB
+category: Developer
+price_model: Freemium
 tags: [database,data,cloud,developer-tools]
 official_url: "https://www.mongodb.com/"
+popularity: 0
 ---
 
 # MongoDB

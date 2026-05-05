@@ -5,7 +5,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [ai, coding, automation, developer]
 official_url: "https://openhands.dev/"
-popularity: 30
+popularity: 0
 description: OpenHands ist ein Open-Source-orientierter KI-Coding-Agent für Softwareaufgaben, Repositories und automatisierte Entwicklungsschritte.
 ---
 # OpenHands

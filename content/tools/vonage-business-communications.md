@@ -1,10 +1,11 @@
 ---
-slug: "vonage-business-communications"
-title: "Vonage Business Communications"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: vonage-business-communications
+title: Vonage Business Communications
+category: Produktivität
+price_model: Abonnement
 tags: [phone, communication, meetings, customer-support]
 official_url: "https://www.vonage.com/unified-communications/"
+popularity: 0
 ---
 
 # Vonage Business Communications

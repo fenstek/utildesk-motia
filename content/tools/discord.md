@@ -1,10 +1,11 @@
 ---
-slug: "discord"
-title: "Discord"
-category: "Produktivität"
-price_model: "Freemium"
+slug: discord
+title: Discord
+category: Produktivität
+price_model: Freemium
 tags: [communication,community,chat,voice]
 official_url: "https://discord.com/"
+popularity: 0
 ---
 
 # Discord
