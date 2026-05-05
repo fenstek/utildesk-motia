@@ -23,6 +23,20 @@ Solomon richtet sich an eine breite Zielgruppe:
 
 Das Tool ist besonders geeignet für alle, die mit Hilfe von KI effizienter arbeiten und lernen möchten, ohne tiefgehende technische Kenntnisse zu benötigen.
 
+In der Auswahl sollte Solomon vor allem an einem konkreten Teamproblem gemessen werden. Wenn KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung bisher über Umwege, Tabellen oder manuelle Abstimmungen gelöst werden, lässt sich der Nutzen deutlich klarer beurteilen.
+
+Praktisch wird die Bewertung erst, wenn Verantwortliche, Prüfschritte und Erfolgskriterien vorher feststehen. Sonst wirkt Solomon schnell nützlich, ohne dass echte Entlastung entsteht.
+
+## Redaktionelle Einschätzung
+
+Bei Solomon lohnt ein nüchterner Blick auf die Arbeitsrealität. Das Tool wirkt nur dann stark, wenn KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung keine zusätzliche Komplexität erzeugen, sondern bestehende Reibung sichtbar reduzieren.
+
+Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwarteten Ergebnissen, Review und Fehlerkriterien. Erst danach sollte entschieden werden, ob Solomon nur ein nettes Zusatzwerkzeug ist oder wirklich ein belastbarer Teil des Workflows werden kann.
+
+- **Worauf achten:** Entscheidend ist, ob Solomon bei Zeitgewinn, Ergebnisqualität, Korrekturaufwand und Nachvollziehbarkeit messbar entlastet und die Prüfung durch andere Personen möglich bleibt.
+- **Guter Startpunkt:** Für Solomon eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
+- **Häufiger Stolperstein:** Solomon enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
+
 ## Hauptfunktionen
 
 - **Intelligente Textgenerierung und -analyse**: Automatisches Erstellen von Texten, Zusammenfassungen und Antworten auf komplexe Fragen.
@@ -33,6 +47,10 @@ Das Tool ist besonders geeignet für alle, die mit Hilfe von KI effizienter arbe
 - **Integration von Bildungsressourcen**: Zugriff auf eine Vielzahl von Lernmaterialien und Datenbanken.
 - **Datenschutzorientierung**: Schutz der Nutzerdaten durch moderne Sicherheitsstandards.
 - **Anpassbare Benutzeroberfläche**: Flexibles Interface, das auf individuelle Bedürfnisse zugeschnitten werden kann.
+
+- **Praxis-Workflow:** Solomon sollte anhand einer wiederkehrenden Aufgabe mit Eingaben, erwarteten Ergebnissen, Review und Fehlerkriterien getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Qualitätssicherung:** Das Team sollte bei Solomon festhalten, wie Zeitgewinn, Ergebnisqualität, Korrekturaufwand und Nachvollziehbarkeit gemessen, freigegeben und später nachvollzogen werden.
+- **Team-Übergabe:** Nützlich wird Solomon besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
 ## Vorteile und Nachteile
 
@@ -45,12 +63,18 @@ Das Tool ist besonders geeignet für alle, die mit Hilfe von KI effizienter arbe
 - Anpassung an individuelle Bedürfnisse möglich
 - Regelmäßige Updates und Verbesserungen
 
+- Stärker im Alltag, wenn Solomon für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
+- Kann Wissen verteilen, wenn KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Solomon ist genau das ein guter Prüfpunkt für die erste Retrospektive.
+
 ### Nachteile
 
 - Funktionalität kann je nach gewähltem Plan eingeschränkt sein
 - Abhängigkeit von Internetverbindung für optimale Nutzung
 - Datenschutzbedenken bei sensiblen Daten müssen individuell bewertet werden
 - Lernkurve bei komplexeren Funktionen möglich
+
+- Braucht klare Leitplanken, denn ohne sie fallen Probleme dort auf, wo Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden. Bei Solomon ist genau das ein guter Prüfpunkt für die erste Retrospektive.
+- Der Nutzen von Solomon hängt stark davon ab, ob Review, Datenpflege und Verantwortlichkeiten im Team tatsächlich gelebt werden.
 
 ## Preise & Kosten
 
@@ -62,6 +86,8 @@ Solomon bietet verschiedene Preismodelle, die sich je nach Anbieter und Plan unt
 
 Die genauen Preise und Konditionen variieren, daher empfiehlt es sich, die offiziellen Anbieterinformationen einzusehen.
 
+Neben dem Listenpreis sollte bei Solomon auch der Einführungsaufwand berücksichtigt werden. Relevant sind Nutzungslimits, Modellzugang, Datenschutz, Integrationen und menschliche Prüfung. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
+
 ## Alternativen zu Solomon
 
 - **ChatGPT**: Ein vielseitiger KI-Chatbot, der für viele textbasierte Aufgaben genutzt werden kann.
@@ -69,6 +95,8 @@ Die genauen Preise und Konditionen variieren, daher empfiehlt es sich, die offiz
 - **Quizlet**: Lernplattform mit KI-Unterstützung für Bildung und Prüfungsvorbereitung.
 - **Microsoft Copilot**: KI-gestützte Assistenz in Microsoft 365-Anwendungen.
 - **Google Bard**: KI-basierter Assistent für Recherche und Textgenerierung.
+
+Beim Vergleich lohnt es sich, Solomon nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch KI-Assistenten, Automationsplattformen, Modell-APIs und spezialisierte Fachtools die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 
 ## FAQ
 
@@ -95,3 +123,9 @@ Kontaktmöglichkeiten variieren, meist stehen Support per E-Mail, Chat oder Tele
 
 **8. Werden regelmäßige Updates angeboten?**  
 Ja, Anbieter aktualisieren Solomon regelmäßig, um neue Funktionen und Verbesserungen bereitzustellen.
+
+**9. Wie testet man Solomon sinnvoll im Team?**
+Ein guter Test startet nicht mit allen Funktionen, sondern mit einer klaren Aufgabe. Danach lässt sich prüfen, ob Solomon wirklich Zeit spart oder nur Arbeit anders verteilt.
+
+**10. Wann passt Solomon eher nicht?**
+Problematisch wird es, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden oder wenn Entscheidungen später nicht überprüft werden. In diesem Fall schafft Solomon mehr Oberfläche als Klarheit.

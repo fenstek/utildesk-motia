@@ -21,6 +21,20 @@ MLJAR eignet sich besonders für:
 - **Unternehmen und Startups**, die datengetriebene Entscheidungen treffen wollen und dabei auf effiziente, skalierbare und reproduzierbare ML-Lösungen setzen.
 - **Bildungseinrichtungen und Forschende**, die AutoML als Lern- und Forschungswerkzeug nutzen möchten.
 
+Zusätzlich passt MLJAR zu Data-, Analytics- und Engineering-Teams, die Ergebnisse reproduzierbar und teamfähig machen müssen. Wichtig ist dabei, vor dem Start nicht nur Funktionen zu vergleichen, sondern einen echten Arbeitsablauf zu benennen, in dem sich Datenflüsse, Abfragen, Auswertungen und die Verlässlichkeit von Entscheidungen sichtbar verbessern sollen.
+
+Für die Entscheidung reicht keine Feature-Liste. Das Team sollte vorher festhalten, welche Aufgabe MLJAR entlastet, wer das Ergebnis abnimmt und wann der Test als gescheitert gilt.
+
+## Redaktionelle Einschätzung
+
+MLJAR sollte nicht als reine Feature-Sammlung bewertet werden. Entscheidend ist, ob sich Datenflüsse, Abfragen, Auswertungen und die Verlässlichkeit von Entscheidungen im Alltag klarer, zuverlässiger oder schneller gestalten lassen und ob das Team die Ergebnisse später noch erklären kann.
+
+Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung und nachvollziehbarem Ergebnis. Erst danach sollte entschieden werden, ob MLJAR nur ein nettes Zusatzwerkzeug ist oder wirklich ein belastbarer Teil des Workflows werden kann.
+
+- **Worauf achten:** Das Team sollte bei MLJAR prüfen, ob Datenqualität, Laufzeit, Wartbarkeit und Akzeptanz der Auswertung nach dem Test stabiler sind und nicht nur in der Demo überzeugen.
+- **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für MLJAR nur schöne Einzelfälle zeigt.
+- **Häufiger Stolperstein:** MLJAR enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
+
 ## Hauptfunktionen
 
 - Automatisierte Datenvorverarbeitung inklusive Feature-Engineering und Datenbereinigung.
@@ -34,6 +48,10 @@ MLJAR eignet sich besonders für:
 - Kollaborationsfunktionen für Teams.
 - Bereitstellung von Modellen als Web-Service.
 
+- **Praxis-Workflow:** MLJAR sollte anhand eines begrenzten Datensatzes mit klarer Quelle, definierter Fragestellung und nachvollziehbarem Ergebnis getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Qualitätssicherung:** Für MLJAR zählt im Alltag, ob Datenqualität, Laufzeit, Wartbarkeit und Akzeptanz der Auswertung so dokumentiert werden, dass eine zweite Person sie prüfen kann.
+- **Team-Übergabe:** Nützlich wird MLJAR besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
+
 ## Vorteile und Nachteile
 
 ### Vorteile
@@ -45,6 +63,9 @@ MLJAR eignet sich besonders für:
 - Flexibles Preismodell mit kostenfreier Basisversion.
 - API-Zugang erleichtert die Integration in bestehende Systeme.
 
+- Stärker im Alltag, wenn MLJAR für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
+- Entlastet vor allem dann, wenn MLJAR wiederkehrende Reibung rund um Datenflüsse, Abfragen, Auswertungen und die Verlässlichkeit von Entscheidungen sichtbar macht und nicht nur eine weitere Oberfläche ergänzt.
+
 ### Nachteile
 
 - Für sehr spezifische oder hochkomplexe ML-Projekte kann die Automatisierung begrenzt sein.
@@ -52,9 +73,14 @@ MLJAR eignet sich besonders für:
 - Die Performance kann je nach Datensatz und Problemstellung variieren.
 - Erweiterte Funktionen sind oft nur in kostenpflichtigen Plänen verfügbar.
 
+- Erhöht eher die Komplexität, wenn vor dem Start Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind und Entscheidungen nur nebenbei getroffen werden. Bei MLJAR ist genau das ein guter Prüfpunkt für die erste Retrospektive.
+- Wenn Review und Pflege ausfallen, verliert MLJAR gerade in Teamprozessen schnell an Verlässlichkeit.
+
 ## Preise & Kosten
 
 MLJAR bietet ein Freemium-Preismodell an. Die kostenlose Basisversion ermöglicht den Einstieg mit grundlegenden Funktionen und limitierten Ressourcen. Für erweiterte Features, größere Projekte oder Teamfunktionen sind verschiedene kostenpflichtige Abonnements verfügbar. Die genauen Preise und Konditionen können je nach Plan und Anbieter variieren.
+
+Neben dem Listenpreis sollte bei MLJAR auch der Einführungsaufwand berücksichtigt werden. Relevant sind Infrastruktur, Betrieb, Monitoring, Schulung und die Pflege von Datenmodellen. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
 
 ## Alternativen zu MLJAR
 
@@ -63,6 +89,8 @@ MLJAR bietet ein Freemium-Preismodell an. Die kostenlose Basisversion ermöglich
 - **Google Cloud AutoML** – Cloudbasierte AutoML-Dienste von Google mit einfacher Integration.
 - **Auto-sklearn** – Open-Source-AutoML-Tool auf Basis von Python und scikit-learn.
 - **TPOT** – Automatisierte Machine-Learning-Pipeline-Optimierung mit genetischen Algorithmen.
+
+Beim Vergleich lohnt es sich, MLJAR nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch Datenbanken, BI-Tools, Pipeline-Systeme und offene Frameworks die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 
 ## FAQ
 
@@ -89,3 +117,9 @@ Ja, MLJAR unterstützt neben Klassifikation und Regression auch Zeitreihenanalys
 
 **8. Welche Vorteile hat MLJAR gegenüber manueller Modellierung?**  
 MLJAR automatisiert zeitaufwändige Schritte, reduziert Fehlerquellen und ermöglicht schnellere Ergebnisse, was insbesondere bei begrenzten Ressourcen von Vorteil ist.
+
+**9. Wie testet man MLJAR sinnvoll im Team?**
+Am sinnvollsten ist ein kleiner Praxisfall: Ziel, Verantwortliche und Erfolgskriterien vor dem Test festlegen, danach Aufwand, Qualität und offene Reibung bei MLJAR ehrlich auswerten.
+
+**10. Wann passt MLJAR eher nicht?**
+Eher nicht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind und das Team keine Kapazität für Einrichtung, Prüfung und laufende Pflege reserviert. Dann verschiebt MLJAR das Problem nur.

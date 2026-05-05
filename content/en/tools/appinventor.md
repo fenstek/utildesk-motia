@@ -28,6 +28,20 @@ AppInventor is particularly suitable for:
 
 AppInventor is less suitable for professional developers who want to create complex, scalable, or cross-platform applications.
 
+A small, bounded test is usually enough to learn whether AppInventor fits. It should show whether defect rate, review effort, speed, and traceability improve without creating new shadow processes.
+
+A feature list is not enough here. The team should define the task AppInventor is meant to relieve, who accepts the result, and when the pilot counts as a miss.
+
+## Editorial assessment
+
+AppInventor can be useful when it is embedded in a clear process. Without ownership and review rules, the value can remain vague even if the product looks convincing in a demo.
+
+A useful evaluation starts with a real development flow from local testing through review to CI execution. Only then can a team decide whether AppInventor is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** The team should see whether AppInventor makes defect rate, review effort, speed, and traceability more stable after the test, not just more impressive in a demo.
+- **Good starting point:** Keep the first AppInventor trial close to daily work, with one owner and a short review after the result is delivered.
+- **Common pitfall:** AppInventor disappoints when standards, test data, and ownership emerge only informally.
+
 ## Key Features
 
 - Visual drag-and-drop interface for app creation without code
@@ -41,6 +55,10 @@ AppInventor is less suitable for professional developers who want to create comp
 - Ability to integrate external extensions (Extensions)
 - Support for databases and web APIs for dynamic content
 
+- **Practical workflow:** AppInventor should be tested against a real development flow from local testing through review to CI execution, not only against a polished demo.
+- **Quality control:** In daily use, AppInventor needs a way to document defect rate, review effort, speed, and traceability so another person can review the result.
+- **Team handoff:** AppInventor becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Advantages and Disadvantages
 
 ### Advantages
@@ -51,6 +69,9 @@ AppInventor is less suitable for professional developers who want to create comp
 - Ideal for educational purposes and prototyping
 - Platform-agnostic and can be accessed through web browsers
 
+- Stronger in daily work when AppInventor is used for clearly bounded tasks rather than every possible side problem.
+- Creates more value when AppInventor exposes recurring friction around development, debugging, testability, and handoff inside technical teams instead of merely adding another interface.
+
 ### Disadvantages
 - Focus on Android apps, iOS support is limited
 - Not suitable for complex or professional app development
@@ -58,9 +79,14 @@ AppInventor is less suitable for professional developers who want to create comp
 - Some features require more technical understanding
 - Less flexible when integrating advanced third-party SDKs
 
+- Adds complexity when standards, test data, and ownership emerge only informally before the rollout and decisions are made informally.
+- If review and maintenance disappear, AppInventor quickly loses reliability in shared workflows.
+
 ## Pricing & Costs
 
 AppInventor is generally free to use, as it is an open-source project. Some additional services or specialized extensions may be chargeable depending on the provider or platform, but this is not the norm. A free account is required for usage.
+
+Beyond the list price, AppInventor should be evaluated by the cost of adoption. Relevant factors include setup, maintenance, CI resources, integrations, and technical onboarding. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to AppInventor
 
@@ -69,6 +95,8 @@ AppInventor is generally free to use, as it is an open-source project. Some addi
 - **MIT Scratch**: Focuses on visual programming, primarily for beginners and education, but less focused on mobile apps.
 - **Flutter (Google)**: For developers with programming knowledge, allows for cross-platform apps with native performance.
 - **Adalo**: No-code platform for app creation with a focus on business applications and easy integration of external data sources.
+
+When comparing options, AppInventor should not only be measured against very similar products. Depending on the goal, testing, developer-tooling, API, and platform solutions may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -95,3 +123,9 @@ Yes, there is an active community, forums, and many tutorials to ease the entry.
 
 **8. For which target groups is AppInventor particularly recommended?**  
 For beginners, students, teachers, and anyone who wants to quickly and easily create mobile apps without learning a programming language.
+
+**9. How should a team test AppInventor?**
+Use a small real use case. Define the goal, owner, and success criteria first, then compare effort, quality, and remaining friction around AppInventor.
+
+**10. When is AppInventor a poor fit?**
+It is a poor fit when standards, test data, and ownership emerge only informally and the team has no capacity for setup, review, and ongoing care. Then AppInventor mostly moves the problem around.

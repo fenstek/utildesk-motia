@@ -25,6 +25,20 @@ MLJAR is especially suitable for:
 - **Companies and startups** that want to make data-driven decisions and rely on efficient, scalable, and reproducible ML solutions.
 - **Educational institutions and researchers** who want to use AutoML as a learning and research tool.
 
+MLJAR also fits data, analytics, and engineering teams that need reproducible and shareable results. Before rollout, the team should name one real workflow where the work around data flows, queries, analysis, and the reliability of decisions is expected to improve.
+
+A feature list is not enough here. The team should define the task MLJAR is meant to relieve, who accepts the result, and when the pilot counts as a miss.
+
+## Editorial assessment
+
+MLJAR should not be assessed as a feature list alone. The real question is whether the work around the work around data flows, queries, analysis, and the reliability of decisions becomes clearer, more reliable, or faster in everyday work.
+
+A useful evaluation starts with a limited data set with a clear source, a defined question, and a traceable result. Only then can a team decide whether MLJAR is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** The team should see whether MLJAR makes data quality, runtime, maintainability, and acceptance of the analysis more stable after the test, not just more impressive in a demo.
+- **Good starting point:** Keep the first MLJAR trial close to daily work, with one owner and a short review after the result is delivered.
+- **Common pitfall:** MLJAR disappoints when data sources, definitions, and ownership are not clarified.
+
 ## Main features
 
 - Automated data preprocessing including feature engineering and data cleansing.
@@ -38,6 +52,10 @@ MLJAR is especially suitable for:
 - Collaboration features for teams.
 - Deployment of models as a web service.
 
+- **Practical workflow:** MLJAR should be tested against a limited data set with a clear source, a defined question, and a traceable result, not only against a polished demo.
+- **Quality control:** In daily use, MLJAR needs a way to document data quality, runtime, maintainability, and acceptance of the analysis so another person can review the result.
+- **Team handoff:** MLJAR becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Pros and cons
 
 ### Pros
@@ -49,6 +67,9 @@ MLJAR is especially suitable for:
 - Flexible pricing model with a free basic version.
 - API access makes integration into existing systems easier.
 
+- Stronger in daily work when MLJAR is used for clearly bounded tasks rather than every possible side problem.
+- Creates more value when MLJAR exposes recurring friction around data flows, queries, analysis, and the reliability of decisions instead of merely adding another interface.
+
 ### Cons
 
 - For very specific or highly complex ML projects, automation may be limited.
@@ -56,9 +77,14 @@ MLJAR is especially suitable for:
 - Performance can vary depending on the dataset and the problem.
 - Advanced features are often only available in paid plans.
 
+- Adds complexity when data sources, definitions, and ownership are not clarified before the rollout and decisions are made informally.
+- If review and maintenance disappear, MLJAR quickly loses reliability in shared workflows.
+
 ## Pricing & Costs
 
 MLJAR offers a freemium pricing model. The free basic version allows users to get started with core features and limited resources. For advanced features, larger projects, or team functionality, various paid subscriptions are available. Exact prices and terms may vary depending on the plan and provider.
+
+Beyond the list price, MLJAR should be evaluated by the cost of adoption. Relevant factors include infrastructure, operations, monitoring, training, and maintenance of data models. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to MLJAR
 
@@ -67,6 +93,8 @@ MLJAR offers a freemium pricing model. The free basic version allows users to ge
 - **Google Cloud AutoML** – Cloud-based AutoML services from Google with easy integration.
 - **Auto-sklearn** – An open-source AutoML tool based on Python and scikit-learn.
 - **TPOT** – Automated machine-learning pipeline optimization with genetic algorithms.
+
+When comparing options, MLJAR should not only be measured against very similar products. Depending on the goal, databases, BI tools, pipeline systems, and open frameworks may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -93,3 +121,9 @@ Yes, MLJAR supports time series analysis in addition to classification and regre
 
 **8. What are the advantages of MLJAR over manual modeling?**  
 MLJAR automates time-consuming steps, reduces sources of error, and enables faster results, which is especially beneficial when resources are limited.
+
+**9. How should a team test MLJAR?**
+Use a small real use case. Define the goal, owner, and success criteria first, then compare effort, quality, and remaining friction around MLJAR.
+
+**10. When is MLJAR a poor fit?**
+It is a poor fit when data sources, definitions, and ownership are not clarified and the team has no capacity for setup, review, and ongoing care. Then MLJAR mostly moves the problem around.

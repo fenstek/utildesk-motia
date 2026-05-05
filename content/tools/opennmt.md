@@ -23,6 +23,20 @@ OpenNMT richtet sich vor allem an Entwickler, Forscher und Unternehmen, die eige
 
 Da OpenNMT eine gewisse technische Expertise erfordert, ist es weniger für Endnutzer ohne Programmierkenntnisse gedacht.
 
+Besonders interessant wird OpenNMT, wenn mehrere Rollen beteiligt sind. Dann zählt nicht nur die Bedienung, sondern ob Übergaben, Reviews und Entscheidungen rund um Textqualität, Recherche, Struktur und konsistente Veröffentlichung nachvollziehbar bleiben.
+
+Vor dem Rollout sollte OpenNMT eine kleine Probe bestehen: Wer entscheidet am Ende, wer prüft nach, und welche Veränderung wäre im Alltag wirklich sichtbar?
+
+## Redaktionelle Einschätzung
+
+Der praktische Wert von OpenNMT zeigt sich weniger in einer Demo als in wiederholbarer Nutzung. Ein Team sollte prüfen, ob Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität nach einigen echten Durchläufen tatsächlich stabiler werden.
+
+Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassung, Review, Überarbeitung und Veröffentlichung. Erst danach sollte entschieden werden, ob OpenNMT nur ein nettes Zusatzwerkzeug ist oder wirklich ein belastbarer Teil des Workflows werden kann.
+
+- **Worauf achten:** Für OpenNMT zählen Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität erst dann als Fortschritt, wenn sie im Test nachvollziehbar dokumentiert werden.
+- **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor OpenNMT breiter ausgerollt wird.
+- **Häufiger Stolperstein:** OpenNMT enttäuscht, wenn Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben.
+
 ## Hauptfunktionen
 
 - **Neuronale maschinelle Übersetzung (NMT):** Unterstützt moderne Deep-Learning-Modelle für hochwertige Übersetzungen.
@@ -35,6 +49,10 @@ Da OpenNMT eine gewisse technische Expertise erfordert, ist es weniger für Endn
 - **Anpassbarkeit:** Möglichkeit, Modelle durch Transfer Learning an spezifische Domänen anzupassen.
 - **Dokumentation und Tutorials:** Umfangreiche Ressourcen für den Einstieg und die Weiterentwicklung.
 
+- **Praxis-Workflow:** OpenNMT sollte anhand eines echten Textauftrags mit Briefing, Rohfassung, Review, Überarbeitung und Veröffentlichung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Qualitätssicherung:** Im Betrieb braucht OpenNMT klare Notizen dazu, wie Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität bewertet und bei Problemen nachgebessert werden.
+- **Team-Übergabe:** Nützlich wird OpenNMT besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
+
 ## Vorteile und Nachteile
 
 ### Vorteile
@@ -46,6 +64,9 @@ Da OpenNMT eine gewisse technische Expertise erfordert, ist es weniger für Endn
 - Plattformunabhängig und flexibel einsetzbar.
 - Möglichkeit, sensible Daten lokal zu verarbeiten ohne Cloud-Abhängigkeit.
 
+- Stärker im Alltag, wenn OpenNMT für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
+- Hilft Teams besonders dort, wo Textqualität, Recherche, Struktur und konsistente Veröffentlichung heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Für OpenNMT gehört das in den Praxistest, nicht nur in die Einführung.
+
 ### Nachteile
 
 - Erfordert technisches Know-how für Installation und Betrieb.
@@ -54,9 +75,14 @@ Da OpenNMT eine gewisse technische Expertise erfordert, ist es weniger für Endn
 - Fehlender offizieller kommerzieller Support, abhängig von Community-Hilfe.
 - Benutzeroberfläche ist im Vergleich zu kommerziellen Tools minimal.
 
+- Wird schnell zäh, wenn OpenNMT eingeführt wird, obwohl Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben und das Team diese Lücke erst im Betrieb bemerkt.
+- Entscheidend ist nicht nur die Einrichtung, sondern ob das Team OpenNMT regelmäßig prüft, aufräumt und an reale Arbeitsregeln bindet.
+
 ## Preise & Kosten
 
 OpenNMT ist ein Open-Source-Projekt und kann kostenlos genutzt werden. Es fallen keine Lizenzkosten an. Allerdings können Kosten für Infrastruktur (z. B. Server, GPUs) und Personal zur Einrichtung und Wartung entstehen. Je nach Anbieter oder Hosting-Lösung können zusätzliche Gebühren anfallen, wenn OpenNMT als gehosteter Service genutzt wird.
+
+Neben dem Listenpreis sollte bei OpenNMT auch der Einführungsaufwand berücksichtigt werden. Relevant sind Nutzerzahl, Sprachumfang, Integrationen, Review-Aufwand und Governance. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
 
 ## Alternativen zu OpenNMT
 
@@ -65,6 +91,8 @@ OpenNMT ist ein Open-Source-Projekt und kann kostenlos genutzt werden. Es fallen
 - **Fairseq:** Facebooks Open-Source-Toolkit für sequenzielle Modelle, auch für NMT geeignet.
 - **Google Cloud Translation API:** Kommerzieller Cloud-Service mit umfangreichen Übersetzungsfunktionen.
 - **DeepL API:** Proprietärer Übersetzungsdienst mit hoher Qualität, insbesondere für europäische Sprachen.
+
+Beim Vergleich lohnt es sich, OpenNMT nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch Schreib-, Recherche-, Übersetzungs- und Lektoratswerkzeuge die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 
 ## FAQ
 
@@ -91,3 +119,9 @@ Ja, OpenNMT bietet optimierte Inferenzfunktionen, die Echtzeitübersetzungen erm
 
 **8. Wie kann ich OpenNMT in meine Anwendungen integrieren?**  
 OpenNMT stellt APIs und Schnittstellen bereit, die eine Integration in verschiedene Softwarelösungen erlauben. Die Dokumentation bietet hierzu ausführliche Anleitungen.
+
+**9. Wie testet man OpenNMT sinnvoll im Team?**
+Für den Einstieg reicht ein enger Pilot mit echter Aufgabe, klarer Abnahme und kurzer Retrospektive: Was wurde mit OpenNMT besser, was blieb Handarbeit?
+
+**10. Wann passt OpenNMT eher nicht?**
+Wenn Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben oder wenn niemand Zeit für Einrichtung, Prüfung und Pflege einplant. Dann wird OpenNMT eher zur zusätzlichen Station im Prozess als zur echten Entlastung.

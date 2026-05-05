@@ -20,6 +20,20 @@ Snorkel is an open-source platform for automated data labeling and data preparat
 
 Snorkel is aimed primarily at data scientists, machine learning engineers, and research teams that need to prepare large volumes of data for AI projects. The platform is especially useful for organizations working with unstructured or difficult-to-annotate data, such as text, images, or sensor information. Companies with limited resources for manual data labeling also benefit from the automation and scalability that Snorkel provides.
 
+Snorkel also fits data, analytics, and engineering teams that need reproducible and shareable results. Before rollout, the team should name one real workflow where the work around data flows, queries, analysis, and the reliability of decisions is expected to improve.
+
+A feature list is not enough here. The team should define the task Snorkel is meant to relieve, who accepts the result, and when the pilot counts as a miss.
+
+## Editorial assessment
+
+Snorkel should not be assessed as a feature list alone. The real question is whether the work around the work around data flows, queries, analysis, and the reliability of decisions becomes clearer, more reliable, or faster in everyday work.
+
+A useful evaluation starts with a limited data set with a clear source, a defined question, and a traceable result. Only then can a team decide whether Snorkel is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** The team should see whether Snorkel makes data quality, runtime, maintainability, and acceptance of the analysis more stable after the test, not just more impressive in a demo.
+- **Good starting point:** Keep the first Snorkel trial close to daily work, with one owner and a short review after the result is delivered.
+- **Common pitfall:** Snorkel disappoints when data sources, definitions, and ownership are not clarified.
+
 ## Key features
 
 - **Programmatic data labeling:** Allows you to create labeling functions to annotate data automatically.
@@ -30,6 +44,10 @@ Snorkel is aimed primarily at data scientists, machine learning engineers, and r
 - **Visualization and monitoring:** Makes it possible to monitor labeling quality and model performance.
 - **Scalability:** Designed for use with large datasets and complex workflows.
 
+- **Practical workflow:** Snorkel should be tested against a limited data set with a clear source, a defined question, and a traceable result, not only against a polished demo.
+- **Quality control:** In daily use, Snorkel needs a way to document data quality, runtime, maintainability, and acceptance of the analysis so another person can review the result.
+- **Team handoff:** Snorkel becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Pros and cons
 
 ### Pros
@@ -39,15 +57,23 @@ Snorkel is aimed primarily at data scientists, machine learning engineers, and r
 - Flexible and adaptable for different use cases and data types.
 - Supports rapid iteration and improvement of training data.
 
+- Stronger in daily work when Snorkel is used for clearly bounded tasks rather than every possible side problem.
+- Creates more value when Snorkel exposes recurring friction around data flows, queries, analysis, and the reliability of decisions instead of merely adding another interface.
+
 ### Cons
 - Getting started with programmatic labeling functions can require technical know-how.
 - Very specific or complex annotations still require manual review.
 - Label quality depends heavily on how well the labeling functions are defined.
 - The freemium model may reach limits for larger projects or advanced features.
 
+- Adds complexity when data sources, definitions, and ownership are not clarified before the rollout and decisions are made informally.
+- If review and maintenance disappear, Snorkel quickly loses reliability in shared workflows.
+
 ## Pricing & costs
 
 Snorkel is fundamentally free to use as open-source software. The freemium model means that core features are available at no cost, while advanced features or commercial support options may be chargeable depending on the provider or plan. For companies that need professional services or scalable cloud solutions, it is advisable to check the respective licensing and support models directly with the provider.
+
+Beyond the list price, Snorkel should be evaluated by the cost of adoption. Relevant factors include infrastructure, operations, monitoring, training, and maintenance of data models. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to Snorkel
 
@@ -56,6 +82,8 @@ Snorkel is fundamentally free to use as open-source software. The freemium model
 - **Amazon SageMaker Ground Truth:** Cloud-based service for scalable data labeling with human and automatic labeling options.
 - **SuperAnnotate:** Platform for image and video annotation with collaboration features.
 - **Dataloop:** Tool for managing, annotating, and automating training data for computer vision.
+
+When comparing options, Snorkel should not only be measured against very similar products. Depending on the goal, databases, BI tools, pipeline systems, and open frameworks may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -82,3 +110,9 @@ Yes, Snorkel is compatible with common machine learning frameworks and can be in
 
 **8. Which programming languages are supported?**  
 The platform is primarily available in Python, which makes it easier to integrate into many data science projects.
+
+**9. How should a team test Snorkel?**
+Use a small real use case. Define the goal, owner, and success criteria first, then compare effort, quality, and remaining friction around Snorkel.
+
+**10. When is Snorkel a poor fit?**
+It is a poor fit when data sources, definitions, and ownership are not clarified and the team has no capacity for setup, review, and ongoing care. Then Snorkel mostly moves the problem around.

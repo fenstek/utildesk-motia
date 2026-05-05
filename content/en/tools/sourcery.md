@@ -20,6 +20,20 @@ Sourcery is a developer tool designed specifically to optimize the programming p
 
 Sourcery is aimed primarily at software developers who want to improve code quality and make their development process more efficient. It is ideal for solo developers, teams, and companies that program in Python and value clean, maintainable code. It can also be a helpful aid for learners who want to improve their programming techniques.
 
+A small, bounded test is usually enough to learn whether Sourcery fits. It should show whether defect rate, review effort, speed, and traceability improve without creating new shadow processes.
+
+The first test for Sourcery should stay deliberately narrow: one process, one owner, a before-and-after comparison, and a short retrospective.
+
+## Editorial assessment
+
+Sourcery can be useful when it is embedded in a clear process. Without ownership and review rules, the value can remain vague even if the product looks convincing in a demo.
+
+A useful evaluation starts with a real development flow from local testing through review to CI execution. Only then can a team decide whether Sourcery is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** With Sourcery, defect rate, review effort, speed, and traceability should be checked against concrete before-and-after evidence, not only against first impressions.
+- **Good starting point:** Test Sourcery in one real workflow where input, output, and review are described before the first run.
+- **Common pitfall:** Sourcery disappoints when standards, test data, and ownership emerge only informally.
+
 ## Main Features
 
 - **Automated code optimization:** Suggestions to improve syntax, structure, and readability.
@@ -31,6 +45,10 @@ Sourcery is aimed primarily at software developers who want to improve code qual
 - **Team collaboration:** Shared use of improvement suggestions and code reviews.
 - **Automated refactoring:** Suggestions for restructuring code without changing functionality.
 
+- **Practical workflow:** Sourcery should be tested against a real development flow from local testing through review to CI execution, not only against a polished demo.
+- **Quality control:** Sourcery becomes stronger when defect rate, review effort, speed, and traceability move from gut feeling into a reviewable process.
+- **Team handoff:** Sourcery becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Advantages and Disadvantages
 
 ### Advantages
@@ -41,6 +59,9 @@ Sourcery is aimed primarily at software developers who want to improve code qual
 - Easy integration into existing development environments.
 - Helps reduce technical debt and improve maintainability.
 
+- Stronger in daily work when Sourcery is used for clearly bounded tasks rather than every possible side problem.
+- Does more than add convenience when Sourcery turns development, debugging, testability, and handoff inside technical teams from personal notes into a shared workflow.
+
 ### Disadvantages
 
 - The focus is mainly on Python; other languages are not currently supported.
@@ -48,9 +69,14 @@ Sourcery is aimed primarily at software developers who want to improve code qual
 - Depending on the plan, some features may be limited.
 - For beginners, the number of suggestions may initially feel overwhelming.
 
+- Can create additional coordination work when Sourcery is introduced before standards, test data, and ownership emerge only informally and nobody owns the open questions.
+- Without maintained ownership, Sourcery can remain another available tool rather than a reliable team routine.
+
 ## Pricing & Costs
 
 Sourcery's pricing varies depending on the provider and the chosen plan. There is usually a free basic version with limited features that is suitable for individuals or small projects. Paid plans are available for teams and companies and include advanced features such as team management, expanded integrations, and support. Detailed information about pricing and available plans should be obtained directly from the provider.
+
+Beyond the list price, Sourcery should be evaluated by the cost of adoption. Relevant factors include setup, maintenance, CI resources, integrations, and technical onboarding. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to Sourcery
 
@@ -59,6 +85,8 @@ Sourcery's pricing varies depending on the provider and the chosen plan. There i
 - **SonarQube:** A platform for continuous code quality monitoring with extensive integrations.
 - **CodeClimate:** Code quality analysis with a focus on maintainability and technical debt.
 - **PyCharm:** IDE with built-in code inspections and refactoring tools (not automated like Sourcery).
+
+When comparing options, Sourcery should not only be measured against very similar products. Depending on the goal, testing, developer-tooling, API, and platform solutions may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -85,3 +113,9 @@ Yes, Sourcery supports team features and makes it easier to review and improve c
 
 **8. What advantages does Sourcery offer over manual code reviews?**  
 Sourcery automates many standard improvements, saves time, and helps identify common errors faster. However, it does not fully replace human reviews.
+
+**9. How should a team test Sourcery?**
+Choose a real task, write down success criteria, and compare after the test whether Sourcery made the work more reviewable and repeatable.
+
+**10. When is Sourcery a poor fit?**
+If standards, test data, and ownership emerge only informally, Sourcery should not be rolled out broadly yet. Without maintenance and review time, it quickly becomes another channel.

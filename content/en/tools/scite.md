@@ -20,6 +20,20 @@ Scite is an innovative AI-powered tool that helps researchers and students evalu
 
 Scite is aimed primarily at scientists, academics, students, and professionals who regularly need to use and evaluate scientific literature. It is also of interest to journalists, librarians, and anyone who needs reliable information from studies. Thanks to its intuitive user interface and AI-powered analysis, both beginners and experienced researchers benefit from this tool.
 
+A small, bounded test is usually enough to learn whether Scite fits. It should show whether data quality, runtime, maintainability, and acceptance of the analysis improve without creating new shadow processes.
+
+The first test for Scite should stay deliberately narrow: one process, one owner, a before-and-after comparison, and a short retrospective.
+
+## Editorial assessment
+
+Scite can be useful when it is embedded in a clear process. Without ownership and review rules, the value can remain vague even if the product looks convincing in a demo.
+
+A useful evaluation starts with a limited data set with a clear source, a defined question, and a traceable result. Only then can a team decide whether Scite is just a nice add-on or a dependable part of the workflow.
+
+- **What to watch:** With Scite, data quality, runtime, maintainability, and acceptance of the analysis should be checked against concrete before-and-after evidence, not only against first impressions.
+- **Good starting point:** Test Scite in one real workflow where input, output, and review are described before the first run.
+- **Common pitfall:** Scite disappoints when data sources, definitions, and ownership are not clarified.
+
 ## Key Features
 
 - **Citation analysis:** Scite classifies citations as supporting, contradicting, or neutral.
@@ -31,6 +45,10 @@ Scite is aimed primarily at scientists, academics, students, and professionals w
 - **Export functions:** Ability to export analysis results for reports or presentations.
 - **Browser plugin:** Direct access to Scite information while reading articles online.
 
+- **Practical workflow:** Scite should be tested against a limited data set with a clear source, a defined question, and a traceable result, not only against a polished demo.
+- **Quality control:** Scite becomes stronger when data quality, runtime, maintainability, and acceptance of the analysis move from gut feeling into a reviewable process.
+- **Team handoff:** Scite becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
+
 ## Pros and Cons
 
 ### Pros
@@ -40,15 +58,23 @@ Scite is aimed primarily at scientists, academics, students, and professionals w
 - Free basic access with useful features.
 - Easy to use and well integrated into existing workflows.
 
+- Stronger in daily work when Scite is used for clearly bounded tasks rather than every possible side problem.
+- Does more than add convenience when Scite turns data flows, queries, analysis, and the reliability of decisions from personal notes into a shared workflow.
+
 ### Cons
 - Full functionality is only available in paid plans.
 - The AI analysis is not always error-free and should be reviewed critically.
 - The focus is on scientific articles rather than other document types.
 - For highly specialized fields, the data coverage may be limited.
 
+- Can create additional coordination work when Scite is introduced before data sources, definitions, and ownership are not clarified and nobody owns the open questions.
+- Without maintained ownership, Scite can remain another available tool rather than a reliable team routine.
+
 ## Pricing & Costs
 
 Scite offers a freemium model. The basic version is free and includes essential citation analysis features. Paid subscriptions are required for advanced features such as detailed reports, unlimited searches, or team functions. Prices vary depending on the number of users and the scope of features; exact costs can be found on the provider's website.
+
+Beyond the list price, Scite should be evaluated by the cost of adoption. Relevant factors include infrastructure, operations, monitoring, training, and maintenance of data models. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to Scite
 
@@ -57,6 +83,8 @@ Scite offers a freemium model. The basic version is free and includes essential 
 - **Litmaps:** Offers interactive maps for literature research and citation tracking.
 - **Zotero:** A free reference manager with some analysis features.
 - **Mendeley:** A combination of reference manager and social network for researchers.
+
+When comparing options, Scite should not only be measured against very similar products. Depending on the goal, databases, BI tools, pipeline systems, and open frameworks may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
@@ -83,3 +111,9 @@ The paid plans include features for teams and collaborative work.
 
 **8. Is there a mobile app?**  
 At present, Scite primarily offers web and browser-based solutions; a standalone mobile app is not yet available.
+
+**9. How should a team test Scite?**
+Choose a real task, write down success criteria, and compare after the test whether Scite made the work more reviewable and repeatable.
+
+**10. When is Scite a poor fit?**
+If data sources, definitions, and ownership are not clarified, Scite should not be rolled out broadly yet. Without maintenance and review time, it quickly becomes another channel.
