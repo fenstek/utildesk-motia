@@ -1,5 +1,22 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-04_
+_Last updated: 2026-05-06_
+
+## 2026-05-06 - Search Sitemap Split
+
+### Done
+- Split search sitemaps into a conservative Google contract and a broad Bing contract.
+- `sitemap.xml` remains the only sitemap advertised in `robots.txt` and submitted to GSC.
+- `sitemap-bing.xml` is generated for Bing and should be submitted explicitly only when Bing needs a refresh.
+- Long-tail tool pages now stay globally `index,follow` but can carry `googlebot noindex,follow`, so Google staging no longer suppresses Bing.
+
+### Verification
+- Live `https://tools.utildesk.de/sitemap.xml`: `322` unique URLs, no long-tail sample `10to8`, includes indexable partner/core sample `wispr-flow`.
+- Live `https://tools.utildesk.de/sitemap-bing.xml`: `2092` unique URLs, includes both `10to8` and `wispr-flow`.
+- GSC accepted and downloaded `sitemap.xml` with `submitted = 322`, `warnings = 0`, `errors = 0`.
+- Bing feed was intentionally not resubmitted during this Google-focused repair.
+
+### Commit
+- `078b3c3` (`fix(seo): split google and bing sitemap policy`)
 
 ## 2026-05-04 — Tool Editorial Expansion Batch 2
 
