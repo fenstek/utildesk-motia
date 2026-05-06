@@ -370,7 +370,12 @@ const softwareApplicationSchema = {
 };
 ---
 
-<BaseLayout title={`${title} — Utildesk`} description={metaDescription} robots={searchIndexDecision.robots}>
+<BaseLayout
+  title={`${title} — Utildesk`}
+  description={metaDescription}
+  robots={searchIndexDecision.robots}
+  googlebotRobots={searchIndexDecision.googlebotRobots}
+>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/api/tools/${slug}.json`} title={`${title} (JSON)`} />

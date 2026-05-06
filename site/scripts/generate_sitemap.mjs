@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 /**
- * Generate sitemap.xml during build
+ * Generate search-engine sitemaps during build
  *
  * Reads BUILT pages from dist/ (not source .md files)
  * This ensures 1:1 match between sitemap and published pages
+ *
+ * sitemap.xml is intentionally conservative for Google.
+ * sitemap-bing.xml keeps the broader tool surface available for Bing without
+ * advertising that broader feed in robots.txt.
  */
 
 import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
@@ -29,7 +33,9 @@ const DIST_EN_CATEGORY_DIR = join(DIST_EN_DIR, 'category');
 const DIST_EN_RATGEBER_DIR = join(DIST_EN_DIR, 'ratgeber');
 const CONTENT_TOOLS_DIR = join(__dirname, '../../content/tools');
 const TOOL_ADDED_AT_FILE = join(__dirname, '../src/data/tool-added-at.json');
-const OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
+const GOOGLE_OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
+const BING_OUTPUT_FILE = join(DIST_DIR, 'sitemap-bing.xml');
+const OUTPUT_FILE = GOOGLE_OUTPUT_FILE;
 const RESERVED_TOOL_SEGMENTS = new Set(['tag']);
 
 function escapeXml(str) {
@@ -54,7 +60,7 @@ async function getFileModTime(filepath) {
   }
 }
 
-async function readToolIndexableSlugs() {
+async function readToolIndexPolicySlugs() {
   let addedAtManifest = {};
   try {
     addedAtManifest = JSON.parse(await readFile(TOOL_ADDED_AT_FILE, 'utf8'));
@@ -63,7 +69,8 @@ async function readToolIndexableSlugs() {
   }
 
   const addedAtRankMap = createToolAddedAtRankMap(addedAtManifest);
-  const indexableSlugs = new Set();
+  const googleIndexableSlugs = new Set();
+  const bingIndexableSlugs = new Set();
   const decisionCounts = new Map();
 
   try {
@@ -91,7 +98,10 @@ async function readToolIndexableSlugs() {
       );
       decisionCounts.set(decision.reason, (decisionCounts.get(decision.reason) || 0) + 1);
       if (decision.indexable) {
-        indexableSlugs.add(slug);
+        googleIndexableSlugs.add(slug);
+      }
+      if (decision.reason !== 'frontmatter_noindex') {
+        bingIndexableSlugs.add(slug);
       }
     }
   } catch (error) {
@@ -99,7 +109,8 @@ async function readToolIndexableSlugs() {
   }
 
   return {
-    indexableSlugs,
+    googleIndexableSlugs,
+    bingIndexableSlugs,
     decisionCounts: Object.fromEntries([...decisionCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
   };
 }
@@ -264,12 +275,48 @@ async function readBuiltStaticPage(...segments) {
   }
 }
 
-async function generateSitemap() {
-  const toolIndexPolicy = await readToolIndexableSlugs();
-  const tools = await readBuiltTools(toolIndexPolicy.indexableSlugs);
+function buildSitemapXml(urls) {
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  for (const url of urls) {
+    xml += '  <url>\n';
+    xml += `    <loc>${url.loc}</loc>\n`;
+    xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
+    if (url.priority) {
+      xml += `    <priority>${url.priority}</priority>\n`;
+    }
+    xml += '  </url>\n';
+  }
+
+  xml += '</urlset>\n';
+  return xml;
+}
+
+async function writeSitemapFile(outputFile, urls) {
+  await writeFile(outputFile, buildSitemapXml(urls), 'utf8');
+}
+
+function countStaticPages(result) {
+  return (
+    result.count -
+    result.tools -
+    result.categories -
+    result.ratgeber -
+    result.enTools -
+    result.enCategories -
+    result.enRatgeber -
+    (result.categories > 0 ? 1 : 0) -
+    (result.ratgeber > 0 ? 1 : 0) -
+    (result.enTools > 0 ? 2 : 0) -
+    (result.enCategories > 0 ? 1 : 0) -
+    (result.enRatgeber > 0 ? 1 : 0)
+  );
+}
+
+async function collectSharedSitemapInputs() {
   const categories = await readBuiltCategories();
   const ratgeber = await readBuiltRatgeber();
-  const enTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.indexableSlugs);
   const enCategories = await readBuiltLocalizedDirectories(DIST_EN_CATEGORY_DIR);
   const enRatgeber = await readBuiltLocalizedDirectories(DIST_EN_RATGEBER_DIR);
   const methodologyPage = await readBuiltStaticPage('methodologie');
@@ -330,6 +377,40 @@ async function generateSitemap() {
   } catch {
     // English ratgeber index doesn't exist, use today
   }
+
+  return {
+    categories,
+    ratgeber,
+    enCategories,
+    enRatgeber,
+    methodologyPage,
+    enMethodologyPage,
+    today,
+    categoryIndexLastmod,
+    ratgeberIndexLastmod,
+    enIndexLastmod,
+    enToolsIndexLastmod,
+    enCategoryIndexLastmod,
+    enRatgeberIndexLastmod,
+  };
+}
+
+function buildUrlList(inputs, tools, enTools) {
+  const {
+    categories,
+    ratgeber,
+    enCategories,
+    enRatgeber,
+    methodologyPage,
+    enMethodologyPage,
+    today,
+    categoryIndexLastmod,
+    ratgeberIndexLastmod,
+    enIndexLastmod,
+    enToolsIndexLastmod,
+    enCategoryIndexLastmod,
+    enRatgeberIndexLastmod,
+  } = inputs;
 
   const urls = [
     // Homepage
@@ -450,39 +531,53 @@ async function generateSitemap() {
     })),
   ];
 
-  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  return urls;
+}
 
-  for (const url of urls) {
-    xml += '  <url>\n';
-    xml += `    <loc>${url.loc}</loc>\n`;
-    xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
-    if (url.priority) {
-      xml += `    <priority>${url.priority}</priority>\n`;
-    }
-    xml += '  </url>\n';
-  }
+async function generateSitemaps() {
+  const toolIndexPolicy = await readToolIndexPolicySlugs();
+  const sharedInputs = await collectSharedSitemapInputs();
+  const googleTools = await readBuiltTools(toolIndexPolicy.googleIndexableSlugs);
+  const googleEnTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.googleIndexableSlugs);
+  const bingTools = await readBuiltTools(toolIndexPolicy.bingIndexableSlugs);
+  const bingEnTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.bingIndexableSlugs);
 
-  xml += '</urlset>\n';
+  const googleUrls = buildUrlList(sharedInputs, googleTools, googleEnTools);
+  const bingUrls = buildUrlList(sharedInputs, bingTools, bingEnTools);
 
-  await writeFile(OUTPUT_FILE, xml, 'utf8');
+  await writeSitemapFile(GOOGLE_OUTPUT_FILE, googleUrls);
+  await writeSitemapFile(BING_OUTPUT_FILE, bingUrls);
 
   return {
-    urls,
-    count: urls.length,
-    tools: tools.length,
-    categories: categories.length,
-    ratgeber: ratgeber.length,
-    enTools: enTools.length,
-    enCategories: enCategories.length,
-    enRatgeber: enRatgeber.length,
+    google: {
+      urls: googleUrls,
+      count: googleUrls.length,
+      tools: googleTools.length,
+      categories: sharedInputs.categories.length,
+      ratgeber: sharedInputs.ratgeber.length,
+      enTools: googleEnTools.length,
+      enCategories: sharedInputs.enCategories.length,
+      enRatgeber: sharedInputs.enRatgeber.length,
+    },
+    bing: {
+      urls: bingUrls,
+      count: bingUrls.length,
+      tools: bingTools.length,
+      categories: sharedInputs.categories.length,
+      ratgeber: sharedInputs.ratgeber.length,
+      enTools: bingEnTools.length,
+      enCategories: sharedInputs.enCategories.length,
+      enRatgeber: sharedInputs.enRatgeber.length,
+    },
     toolIndexDecisionCounts: toolIndexPolicy.decisionCounts,
   };
 }
 
 async function main() {
   try {
-    const result = await generateSitemap();
+    const result = await generateSitemaps();
+    const bingResult = result.bing;
+    Object.assign(result, result.google);
     console.log(`✅ Sitemap generated: ${OUTPUT_FILE}`);
     console.log(`   Total URLs: ${result.count}`);
     console.log(`   Tools: ${result.tools} (from dist/tools/)`);
@@ -505,6 +600,10 @@ async function main() {
       (result.enCategories > 0 ? 1 : 0) -
       (result.enRatgeber > 0 ? 1 : 0);
     console.log(`   Static pages: ${staticPages}`);
+    console.log(`   Bing sitemap: ${BING_OUTPUT_FILE}`);
+    console.log(`   Bing total URLs: ${bingResult.count}`);
+    console.log(`   Bing tools: ${bingResult.tools} (from dist/tools/)`);
+    console.log(`   Bing English tools: ${bingResult.enTools} (from dist/en/tools/)`);
     console.log(`   Tool index policy: ${JSON.stringify(result.toolIndexDecisionCounts)}`);
   } catch (error) {
     console.error('❌ Failed to generate sitemap:', error.message);

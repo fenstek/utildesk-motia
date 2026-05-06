@@ -186,7 +186,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 ---
 
-<BaseLayout locale="en" title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`} description={meta.metaDescription} robots={searchIndexDecision.robots}>
+<BaseLayout
+  locale="en"
+  title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`}
+  description={meta.metaDescription}
+  robots={searchIndexDecision.robots}
+  googlebotRobots={searchIndexDecision.googlebotRobots}
+>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />

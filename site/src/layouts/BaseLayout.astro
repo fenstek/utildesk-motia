@@ -31,6 +31,8 @@ interface Props {
 
   robots?: string;
 
+  googlebotRobots?: string | null;
+
   locale?: Locale;
 
   alternatePaths?: Partial<Record<Locale, string>>;
@@ -43,6 +45,7 @@ const {
   title = SITE_NAME,
   description = SITE_DESCRIPTION,
   robots = DEFAULT_ROBOTS_CONTENT,
+  googlebotRobots = null,
   locale: propLocale,
   alternatePaths: propAlternatePaths,
 } = Astro.props;
@@ -209,6 +212,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     <meta name="description" content={resolvedDescription} />
     <meta name="robots" content={robots} />
+    {googlebotRobots ? <meta name="googlebot" content={googlebotRobots} /> : null}
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={resolvedTitle} />
     <meta property="og:description" content={resolvedDescription} />
