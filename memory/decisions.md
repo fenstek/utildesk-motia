@@ -90,3 +90,13 @@
 - If a registration or reply requires tax data, payout details, personal
   identity, company identity, legal declarations, or non-project commitments,
   stop and ask before continuing.
+
+## 2026-05-06
+
+- Keep separate sitemap contracts for Google and Bing:
+  - Google Search Console and `robots.txt` use only `https://tools.utildesk.de/sitemap.xml`.
+  - Bing uses the broad feed `https://tools.utildesk.de/sitemap-bing.xml`, submitted explicitly through Bing Webmaster API/UI when needed.
+- Do not advertise `sitemap-bing.xml` in `robots.txt`; this avoids shaking Bing when a fix is Google-only.
+- Long-tail tool pages excluded from Google's staged sitemap must keep generic `robots: index,follow` and receive only a Google-specific `googlebot: noindex,follow`.
+- Never replace the Google-specific staging with global `noindex` unless the page is intentionally disabled or explicitly marked noindex in frontmatter.
+- Treat `site/scripts/generate_sitemap.mjs`, `site/src/lib/searchIndexPolicy.mjs`, and `site/src/layouts/BaseLayout.astro` as the coupled source of truth for this split; changing one without the others risks breaking search behavior.
