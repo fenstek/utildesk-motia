@@ -74,7 +74,7 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - Manche Funktionen erfordern mehr technisches Verständnis
 - Weniger flexibel bei Integration von anspruchsvollen Drittanbieter-SDKs
 
-- Erhöht eher die Komplexität, wenn vor dem Start Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen und Entscheidungen nur nebenbei getroffen werden. Bei AppInventor sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Erhöht eher die Komplexität, wenn vor dem Start Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen und Entscheidungen nur nebenbei getroffen werden. Bei AppInventor sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 - Wenn Review und Pflege ausfallen, verliert AppInventor gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

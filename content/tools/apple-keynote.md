@@ -74,7 +74,7 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - Für sehr komplexe Präsentationen fehlen teilweise erweiterte Funktionen, die andere professionelle Tools bieten.
 - Abhängigkeit von einer Internetverbindung für einige Cloud-basierte Funktionen.
 
-- Erhöht eher die Komplexität, wenn vor dem Start Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben und Entscheidungen nur nebenbei getroffen werden. Bei Apple Keynote sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Erhöht eher die Komplexität, wenn vor dem Start Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben und Entscheidungen nur nebenbei getroffen werden. Bei Apple Keynote sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 - Wenn Review und Pflege ausfallen, verliert Apple Keynote gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

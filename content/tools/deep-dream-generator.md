@@ -16,7 +16,7 @@ Bei Deep Dream Generator lohnt sich ein Blick auf den Alltag nach der ersten Woc
 
 ## Der praktische Kern
 
-Deep Dream Generator muss in einem echten Beispiel zeigen, ob KI-Bildexperimente, stilisierte Motive und kreative Bildvarianten mit surrealem Charakter damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Deep Dream Generator muss in einem echten Beispiel zeigen, ob KI-Bildexperimente, stilisierte Motive und kreative Bildvarianten mit surrealem Charakter damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Für Künstler, Creator, Hobby-Designer und visuelle Experimentierer ist Deep Dream Generator dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 

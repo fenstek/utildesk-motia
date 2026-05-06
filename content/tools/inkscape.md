@@ -16,7 +16,7 @@ Bei Inkscape sollte man klein anfangen: ein wiederkehrender Vorgang, ein klares 
 
 ## Der praktische Kern
 
-Inkscape muss in einem echten Beispiel zeigen, ob Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Inkscape muss in einem echten Beispiel zeigen, ob Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Für Designer, Maker, Bildung, Open-Source-Projekte und Teams mit einfachen Vektoranforderungen ist Inkscape dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 

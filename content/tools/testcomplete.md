@@ -57,7 +57,7 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - Flexibles Testdesign durch Kombination von skriptbasierten und skriptlosen Ansätzen
 
 - Stärker im Alltag, wenn TestComplete für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo Entwicklung, Debugging, Testbarkeit und Übergabe im technischen Team heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei TestComplete sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Hilft Teams besonders dort, wo Entwicklung, Debugging, Testbarkeit und Übergabe im technischen Team heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei TestComplete sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 
 ### Nachteile
 

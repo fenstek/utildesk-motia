@@ -16,7 +16,7 @@ Ein sinnvoller Test beginnt bei Prisma nicht mit einer Feature-Liste, sondern mi
 
 ## Der praktische Kern
 
-Prisma muss in einem echten Beispiel zeigen, ob KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Prisma muss in einem echten Beispiel zeigen, ob KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Besonders passend ist Prisma für Creator, Social-Media-Teams und Nutzer, die Bilder schnell stilisieren möchten. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 

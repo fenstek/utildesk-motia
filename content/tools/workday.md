@@ -56,7 +56,7 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Benutzerfreundliche Oberfläche und mobile Verfügbarkeit.
 
 - Stärker im Alltag, wenn Workday für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei Workday sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Hilft Teams besonders dort, wo KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei Workday sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 
 ### Nachteile
 - Kosten können je nach Unternehmensgröße und Funktionsumfang hoch sein.

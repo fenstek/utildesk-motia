@@ -28,6 +28,20 @@ LanguageTool is aimed at a broad audience:
 
 The tool is suitable for both beginners and experienced users, as it detects simple errors but also offers more advanced style suggestions.
 
+LanguageTool is most useful for learners, teachers, and knowledge-work teams that need progress to stay visible. The value should be judged in a real process where learning progress, exercise quality, feedback, motivation, and understanding checks become not only faster but also easier to explain.
+
+The first step with LanguageTool should not be a showroom test. A real work item shows much faster whether ownership, review, and output quality actually fit together.
+
+## Editorial assessment
+
+LanguageTool is worth considering only if it visibly improves an existing workflow. The key is not the longest feature list, but less friction, clearer ownership, and output that other people can review.
+
+A useful pilot for LanguageTool starts with a real learning unit with goal, task, feedback, repetition, and short review. After that, the team should judge whether understanding, repeatability, time required, motivation, and feedback quality are visibly better in the real workflow, not just in a demo.
+
+- **Checkpoint for LanguageTool:** Before rollout, understanding, repeatability, time required, motivation, and feedback quality should be supported by a small before-and-after comparison.
+- **Good start for LanguageTool:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
+- **Risk with LanguageTool:** The rollout turns into extra coordination when learning goal, level, feedback rules, and learner privacy remain unclear.
+
 ## Main features
 
 - **Spelling check** in multiple languages  
@@ -38,7 +52,11 @@ The tool is suitable for both beginners and experienced users, as it detects sim
 - **Custom dictionaries** and adjustment of checking criteria  
 - **Automatic detection of error types** and correction suggestions  
 - **Plagiarism check** (depending on plan and availability)  
-- **Team and collaboration features** for shared editing  
+- **Team and collaboration features** for shared editing
+
+- **Practical run with LanguageTool:** The tool should be tested against a real learning unit with goal, task, feedback, repetition, and short review, so strengths and limits become visible outside a polished demo.
+- **Quality control in LanguageTool:** The team needs a simple way to review understanding, repeatability, time required, motivation, and feedback quality after use.
+- **Handoff with LanguageTool:** Results, open questions, and decisions should be documented so other roles can continue the work later.
 
 ## Pros and cons
 
@@ -48,13 +66,19 @@ The tool is suitable for both beginners and experienced users, as it detects sim
 - Available as a browser add-on, desktop app, and mobile app  
 - Combines spelling, grammar, and style checking in one tool  
 - Free basic version with enough features for everyday use  
-- Regular updates and improvements through AI technology  
+- Regular updates and improvements through AI technology
+
+- LanguageTool is especially useful when a recurring process should no longer depend on one person's private know-how.
+- LanguageTool can make team knowledge easier to reuse when learning progress, exercise quality, feedback, motivation, and understanding checks are scattered, implicit, or hard to verify.
 
 ### Cons
 - The free version is limited in features and in the number of checks  
 - Some complex style suggestions can be subjective and require manual review  
 - Plagiarism checking is not included in all packages and may incur additional costs  
-- For very specialized technical language, the suggestions are sometimes less precise  
+- For very specialized technical language, the suggestions are sometimes less precise
+
+- LanguageTool can merely move the friction elsewhere when learning goal, level, feedback rules, and learner privacy remain unclear.
+- LanguageTool saves little when setup, control, and follow-up are expected to happen only on the side.
 
 ## Pricing & costs
 
@@ -65,13 +89,17 @@ LanguageTool offers various pricing plans:
 
 Exact prices vary depending on the term and scope of the selected plan. Monthly and annual subscriptions are often available with different conditions.
 
+The cost of LanguageTool is not just the plan price. In practice, licenses, learning scope, devices, privacy review, course material, and support also matter because that is where ongoing maintenance and real time investment appear.
+
 ## Alternatives to LanguageTool
 
 - **Grammarly**: A very popular tool with extensive features for English, including style and tone analysis.  
 - **Ginger Software**: Offers corrections as well as translations and personalized training modules.  
 - **ProWritingAid**: Focuses on style improvement and detailed text analysis, especially for writers.  
 - **Scribens**: A free tool with good grammar and spelling checks, especially for French and English.  
-- **Microsoft Editor**: Integrated into Microsoft 365, offering basic corrections and style improvements.  
+- **Microsoft Editor**: Integrated into Microsoft 365, offering basic corrections and style improvements.
+
+A comparison for LanguageTool should go beyond feature lists. The key question is whether learning platforms, language-learning apps, tutor systems, knowledge bases, and practice tools support the current roles, data, and handoffs better.
 
 ## FAQ
 
@@ -98,3 +126,9 @@ The suggestions are based on AI and linguistic rules, are usually reliable, but 
 
 **8. Is there a plagiarism check?**  
 Yes, but this is usually included only in the Premium or Business plans.
+
+**9. How should a team test LanguageTool?**
+For LanguageTool, use one real, bounded use case. Define the goal, owner, data basis, review steps, and success criteria first, then compare effort and output quality after the test.
+
+**10. When is LanguageTool a poor fit?**
+LanguageTool is a poor fit when learning goal, level, feedback rules, and learner privacy remain unclear, or when nobody has time for setup, review, and ongoing maintenance. In that case the operational value is too thin for a clean rollout.

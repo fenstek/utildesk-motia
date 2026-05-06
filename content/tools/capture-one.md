@@ -57,7 +57,7 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - Regelmäßige Updates und Verbesserungen
 
 - Stärker im Alltag, wenn Capture One für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Capture One sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Kann Wissen verteilen, wenn visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Capture One sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 
 ### Nachteile
 - Relativ hohe Einstiegshürde für Anfänger ohne Vorkenntnisse  

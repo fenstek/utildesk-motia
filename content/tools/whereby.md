@@ -70,7 +70,7 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - Abhängigkeit von stabiler Internetverbindung im Browser
 - Eingeschränkte Anpassungsmöglichkeiten im Vergleich zu komplexeren Plattformen
 
-- Erhöht eher die Komplexität, wenn vor dem Start Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind und Entscheidungen nur nebenbei getroffen werden. Bei Whereby sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Erhöht eher die Komplexität, wenn vor dem Start Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind und Entscheidungen nur nebenbei getroffen werden. Bei Whereby sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 - Wenn Review und Pflege ausfallen, verliert Whereby gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

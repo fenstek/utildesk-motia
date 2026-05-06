@@ -20,6 +20,20 @@ WriterDuet is a web-based software solution developed specifically for screenwri
 
 WriterDuet is aimed primarily at professional screenwriters, film students, and creatives who write screenplays, plays, or other narrative texts. It is especially well suited for teams that want to collaborate regardless of location, since the platform offers real-time synchronization. Solo writers also benefit from the organization and formatting features that simplify the writing process.
 
+WriterDuet is most useful for editorial, learning, localization, and knowledge-work teams that need language to be reviewed reliably. The value should be judged in a real process where text quality, language, sources, structure, tone, and consistent publishing become not only faster but also easier to explain.
+
+Before WriterDuet is rolled out more widely, the team should run a small reality check: one concrete workflow, one owner, clear review points, and a visible result after two weeks.
+
+## Editorial assessment
+
+With WriterDuet, the demo impression matters less than daily operation: who maintains the inputs, who checks the result, and where does expert control remain?
+
+A useful pilot for WriterDuet starts with a real writing assignment with brief, draft, review, revision, and publication. After that, the team should judge whether clarity, fact checking, tone, editing time, and approval quality are visibly better in the real workflow, not just in a demo.
+
+- **Checkpoint for WriterDuet:** Before rollout, clarity, fact checking, tone, editing time, and approval quality should be supported by a small before-and-after comparison.
+- **Good start for WriterDuet:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
+- **Risk with WriterDuet:** The rollout turns into extra coordination when sources, tone, review rules, language variants, and ownership remain unclear.
+
 ## Key Features
 
 - **Real-time collaboration:** Multiple users can work on the same document at the same time.
@@ -33,6 +47,10 @@ WriterDuet is aimed primarily at professional screenwriters, film students, and 
 - **Mobile apps:** Access and editing are also available on smartphones and tablets.
 - **Security features:** Encryption and data protection according to current standards.
 
+- **Practical run with WriterDuet:** The tool should be tested against a real writing assignment with brief, draft, review, revision, and publication, so strengths and limits become visible outside a polished demo.
+- **Quality control in WriterDuet:** The team needs a simple way to review clarity, fact checking, tone, editing time, and approval quality after use.
+- **Handoff with WriterDuet:** Results, open questions, and decisions should be documented so other roles can continue the work later.
+
 ## Pros and Cons
 
 ### Pros
@@ -44,12 +62,18 @@ WriterDuet is aimed primarily at professional screenwriters, film students, and 
 - Offline functionality for flexible use.
 - Regular updates and active development.
 
+- WriterDuet is especially useful when a recurring process should no longer depend on one person's private know-how.
+- WriterDuet can improve handoffs when text quality, language, sources, structure, tone, and consistent publishing currently leave too much context in individual heads.
+
 ### Cons
 - Advanced features are often available only in paid plans.
 - Pricing can rise quickly for very large teams.
 - Limited customization options for the user interface.
 - Not a fully open-source solution, so it depends on the provider.
 - The web app can sometimes respond more slowly on weak internet connections.
+
+- WriterDuet becomes harder to run when sources, tone, review rules, language variants, and ownership remain unclear and the team discovers those gaps only after rollout.
+- WriterDuet saves little when setup, control, and follow-up are expected to happen only on the side.
 
 ## Pricing & Costs
 
@@ -88,3 +112,13 @@ Yes, the web app is platform-independent and works on Windows, Mac, Linux, and m
 
 **8. Is there a trial period for the paid plans?**  
 Depending on the provider and plan, a trial period or money-back guarantee may be offered. Details should be checked on the official website.
+
+A fair cost check for WriterDuet should include number of users, language coverage, integrations, review effort, rights, and governance. Otherwise the tool can look cheaper at the start than it is in productive use.
+
+Alternatives to WriterDuet should be chosen by the concrete work problem. In some cases, writing, research, learning, translation, and editing tools are better because they create fewer detours in the existing workflow.
+
+**9. How should a team test WriterDuet?**
+For WriterDuet, use one real, bounded use case. Define the goal, owner, data basis, review steps, and success criteria first, then compare effort and output quality after the test.
+
+**10. When is WriterDuet a poor fit?**
+WriterDuet is a poor fit when sources, tone, review rules, language variants, and ownership remain unclear, or when nobody has time for setup, review, and ongoing maintenance. In that case the work simply moves to another place.

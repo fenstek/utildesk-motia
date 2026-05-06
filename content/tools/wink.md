@@ -64,7 +64,7 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - Gute Integration von Text- und Bildelementen.
 
 - Stärker im Alltag, wenn Wink für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei Wink sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Hilft Teams besonders dort, wo visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei Wink sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 
 ### Nachteile
 

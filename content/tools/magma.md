@@ -16,7 +16,7 @@ Magma sollte dort getestet werden, wo heute Reibung entsteht: Übergaben, Varian
 
 ## Der praktische Kern
 
-Magma muss in einem echten Beispiel zeigen, ob kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Magma muss in einem echten Beispiel zeigen, ob kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Bei Illustratoren, Konzeptteams, Kreativgruppen und Workshops mit gemeinsamem visuellen Arbeiten spielt Magma seine Stärken aus, wenn die Nutzung bewusst eingegrenzt wird. Ein guter Einsatzbereich ist besser als fünf halb genutzte Funktionen.
 

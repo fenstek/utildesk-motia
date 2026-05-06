@@ -25,6 +25,20 @@ NativeScript is aimed at developers and teams who want to build native mobile ap
 - Developers looking for full access to native APIs and UI components without wrappers or WebViews.
 - Teams that prefer open-source technologies and want to stay flexible.
 
+NativeScript is most useful for development, QA, platform, and product teams that want technical work to be handed off more reliably. The value should be judged in a real process where development, testing, debugging, deployment behavior, and traceable technical reviews become not only faster but also easier to explain.
+
+Before NativeScript is rolled out more widely, the team should run a small reality check: one concrete workflow, one owner, clear review points, and a visible result after two weeks.
+
+## Editorial assessment
+
+With NativeScript, the demo impression matters less than daily operation: who maintains the inputs, who checks the result, and where does expert control remain?
+
+NativeScript should first prove itself in a real development flow from setup through test data and review to acceptance. A broader rollout only makes sense when defect rate, review effort, speed, maintainability, and reproducibility look more stable there.
+
+- **Checkpoint for NativeScript:** Before rollout, defect rate, review effort, speed, maintainability, and reproducibility should be supported by a small before-and-after comparison.
+- **Good start for NativeScript:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
+- **Risk with NativeScript:** The rollout turns into extra coordination when standards, test data, ownership, and technical boundaries emerge only informally.
+
 ## Key features
 
 - Development of native iOS and Android apps with JavaScript, TypeScript, or Angular.
@@ -38,6 +52,10 @@ NativeScript is aimed at developers and teams who want to build native mobile ap
 - Debugging tools and performance analysis for mobile apps.
 - Open-source community with active development and support.
 
+- **Practical run with NativeScript:** The tool should be tested against a real development flow from setup through test data and review to acceptance, so strengths and limits become visible outside a polished demo.
+- **Quality control in NativeScript:** The team needs a simple way to review defect rate, review effort, speed, maintainability, and reproducibility after use.
+- **Handoff with NativeScript:** Results, open questions, and decisions should be documented so other roles can continue the work later.
+
 ## Pros and cons
 
 ### Pros
@@ -50,6 +68,9 @@ NativeScript is aimed at developers and teams who want to build native mobile ap
 - Faster development cycles through live reload.
 - Extensive documentation and community support.
 
+- NativeScript is especially useful when a recurring process should no longer depend on one person's private know-how.
+- NativeScript can make team knowledge easier to reuse when development, testing, debugging, deployment behavior, and traceable technical reviews are scattered, implicit, or hard to verify.
+
 ### Cons
 
 - Learning curve for developers without experience in native APIs or mobile platforms.
@@ -58,9 +79,14 @@ NativeScript is aimed at developers and teams who want to build native mobile ap
 - App size can be larger in some cases compared to purely native apps.
 - Dependence on the community for updates and bug fixes.
 
+- NativeScript becomes harder to run when standards, test data, ownership, and technical boundaries emerge only informally and the team discovers those gaps only after rollout.
+- NativeScript is not a self-running fix; without an owner and review, the team quickly loses sight of quality and limits.
+
 ## Pricing & costs
 
 NativeScript is an open-source framework and can be used free of charge. For companies or teams that need additional support, training, or specialized services, some providers offer custom packages. The use of plugins or cloud services may incur costs depending on the provider.
+
+The cost of NativeScript is not just the plan price. In practice, setup, CI resources, maintenance, integrations, documentation, and technical onboarding also matter because that is where ongoing maintenance and real time investment appear.
 
 ## Alternatives to NativeScript
 
@@ -69,6 +95,8 @@ NativeScript is an open-source framework and can be used free of charge. For com
 - **Xamarin**: Microsoft’s cross-platform framework with C# as the programming language.
 - **Ionic**: Uses web technologies (HTML, CSS, JavaScript) to create hybrid apps.
 - **Cordova/PhoneGap**: An older framework for hybrid apps that offers WebView-based solutions.
+
+A useful comparison for NativeScript starts with the goal. Only then does it become clear whether testing, developer-tooling, low-code, API, monitoring, and platform solutions are more robust, cheaper, or easier to operate in practice.
 
 ## FAQ
 
@@ -95,3 +123,9 @@ Developers with JavaScript or TypeScript knowledge can get started relatively qu
 
 **8. How does debugging work in NativeScript?**  
 NativeScript offers built-in debugging tools that can be used together with common IDEs.
+
+**9. How should a team test NativeScript?**
+For NativeScript, use one real, bounded use case. Define the goal, owner, data basis, review steps, and success criteria first, then compare effort and output quality after the test.
+
+**10. When is NativeScript a poor fit?**
+NativeScript is a poor fit when standards, test data, ownership, and technical boundaries emerge only informally, or when nobody has time for setup, review, and ongoing maintenance. In that case the tool quickly becomes another maintenance item.

@@ -16,7 +16,7 @@ Vectr lässt sich am besten über einen konkreten Engpass beurteilen. Wenn diese
 
 ## Der praktische Kern
 
-Vectr muss in einem echten Beispiel zeigen, ob einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Vectr muss in einem echten Beispiel zeigen, ob einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Vectr richtet sich in der Praxis vor allem an Einsteiger, kleine Teams, Bildung und Nutzer mit leichten Vektoraufgaben. Gut eingesetzt wird es, wenn Zuständigkeit, Prüfschritt und Ergebnisformat vorher geklärt sind.
 
