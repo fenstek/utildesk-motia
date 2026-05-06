@@ -16,7 +16,7 @@ Expected keys:
 BING_WEBMASTER_API_KEY=
 BING_WEBMASTER_SITE_URL=https://tools.utildesk.de
 BING_WEBMASTER_API_BASE=https://ssl.bing.com/webmaster/api.svc/json
-BING_WEBMASTER_SMOKE_FEED_URL=https://tools.utildesk.de/sitemap.xml
+BING_WEBMASTER_SMOKE_FEED_URL=https://tools.utildesk.de/sitemap-bing.xml
 ```
 
 ## Safe Workflow
@@ -56,12 +56,25 @@ python scripts/bing_webmaster_api.py call --method GetUserSites
 - list verified sites and active sitemap/feed registrations
 - summarize recent crawl health from Bing's own crawl stats
 - inspect submission quota
-- resubmit sitemap/feed
+- resubmit the Bing-specific sitemap/feed
 - submit important URLs directly, one by one or in a batch
+
+## Operational Split
+
+- Google Search Console should use `https://tools.utildesk.de/sitemap.xml`.
+- Bing Webmaster Tools should use `https://tools.utildesk.de/sitemap-bing.xml`.
+- `robots.txt` intentionally advertises only the conservative Google sitemap. Submit the Bing feed through the API/UI when you explicitly want to refresh Bing.
 
 ## Current Audit Notes
 
 - Bing access is confirmed for `https://tools.utildesk.de`.
+- 2026-05-03 re-check:
+  - live `https://tools.utildesk.de/sitemap.xml` contains `276` canonical URLs;
+  - Bing initially still showed a stale `UrlCount = 2020`;
+  - `submit-feed` was run again and Bing refreshed the feed to `Status = Success`, `UrlCount = 276`;
+  - a `12` URL canonical batch was submitted for home, English, tools, category, and Ratgeber samples;
+  - remaining quota after the batch was `DailyQuota = 88`, `MonthlyQuota = 2988`;
+  - last-7-day crawl summary showed `0` days blocked by robots and `0` days with `5xx`.
 - 2026-04-30 re-check:
   - live `https://tools.utildesk.de/sitemap.xml` contains `2002` canonical URLs;
   - Bing initially still showed a stale `UrlCount = 1976`;

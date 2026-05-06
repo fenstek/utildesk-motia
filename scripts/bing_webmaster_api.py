@@ -21,6 +21,7 @@ from typing import Any
 
 DEFAULT_ENV_FILE = Path("secrets/bing-webmaster.env")
 DEFAULT_API_BASE = "https://ssl.bing.com/webmaster/api.svc/json"
+DEFAULT_FEED_PATH = "/sitemap-bing.xml"
 BING_DATE_RE = re.compile(r"^/Date\((?P<ms>-?\d+)(?:[+-]\d{4})?\)/$")
 
 
@@ -345,7 +346,7 @@ def command_submit_feed(
     final_feed_url = (
         feed_url
         or settings.get("BING_WEBMASTER_SMOKE_FEED_URL", "").strip()
-        or f"{site_url.rstrip('/')}/sitemap.xml"
+        or f"{site_url.rstrip('/')}{DEFAULT_FEED_PATH}"
     )
 
     result = call_bing_api(
@@ -443,7 +444,7 @@ def build_parser() -> argparse.ArgumentParser:
     add_common_args(submit_feed)
     submit_feed.add_argument(
         "--feed-url",
-        help="Absolute sitemap/feed URL. Defaults to BING_WEBMASTER_SMOKE_FEED_URL or /sitemap.xml.",
+        help="Absolute sitemap/feed URL. Defaults to BING_WEBMASTER_SMOKE_FEED_URL or /sitemap-bing.xml.",
     )
 
     call = subparsers.add_parser("call", help="Call an arbitrary Bing Webmaster API method.")

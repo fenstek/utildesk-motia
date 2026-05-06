@@ -153,6 +153,7 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
     return {
       indexable: false,
       robots: ROBOTS_NOINDEX_FOLLOW,
+      googlebotRobots: null,
       reason: "frontmatter_noindex",
     };
   }
@@ -161,6 +162,7 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
     return {
       indexable: true,
       robots: ROBOTS_INDEX_FOLLOW,
+      googlebotRobots: null,
       reason: "frontmatter_index",
     };
   }
@@ -168,15 +170,12 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
   const popularity = asNumber(data.popularity);
   const addedAtRank = asNumber(options.addedAtRank);
   const hasAffiliate = Boolean(String(data.affiliate_url || "").trim());
-  const hasEditorialDescription = Boolean(String(data.description || data.summary || data.excerpt || "").trim());
   const hasEditorialBody = hasSubstantialEditorialBody(entry?.content);
 
   const indexable =
     FORCE_INDEX_TOOL_SLUGS.has(slug) ||
     popularity > 0 ||
     hasAffiliate ||
-    hasEditorialDescription ||
-    hasEditorialBody ||
     (addedAtRank > 0 && addedAtRank <= INDEXABLE_NEWEST_TOOL_LIMIT);
 
   const reason = FORCE_INDEX_TOOL_SLUGS.has(slug)
@@ -185,17 +184,16 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
       ? "popular_tool"
       : hasAffiliate
         ? "partner_tool"
-        : hasEditorialDescription
-          ? "editorial_description"
+        : addedAtRank > 0 && addedAtRank <= INDEXABLE_NEWEST_TOOL_LIMIT
+          ? "newest_tool"
           : hasEditorialBody
-            ? "editorial_body"
-            : addedAtRank > 0 && addedAtRank <= INDEXABLE_NEWEST_TOOL_LIMIT
-              ? "newest_tool"
-              : "long_tail_tool";
+            ? "editorial_body_unstaged"
+            : "long_tail_tool";
 
   return {
     indexable,
-    robots: indexable ? ROBOTS_INDEX_FOLLOW : ROBOTS_NOINDEX_FOLLOW,
+    robots: ROBOTS_INDEX_FOLLOW,
+    googlebotRobots: indexable ? null : ROBOTS_NOINDEX_FOLLOW,
     reason,
   };
 };
