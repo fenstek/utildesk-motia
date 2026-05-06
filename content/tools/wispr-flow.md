@@ -8,7 +8,7 @@ description: Wispr Flow ist ein KI-Diktierwerkzeug fuer schnelles Schreiben per 
 official_url: "https://wisprflow.ai/"
 affiliate_url: "https://wisprflow.ai/r?SSERGEJ1"
 created_at: 2026-04-25
-popularity: 5
+popularity: 4
 ---
 
 # Wispr Flow

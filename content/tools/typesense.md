@@ -1,10 +1,11 @@
 ---
-slug: "typesense"
-title: "Typesense"
-category: "Developer"
-price_model: "Open Source"
+slug: typesense
+title: Typesense
+category: Developer
+price_model: Open Source
 tags: [search, open-source, developer-tools, api]
 official_url: "https://typesense.org/"
+popularity: 0
 ---
 
 # Typesense

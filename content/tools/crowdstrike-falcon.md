@@ -1,10 +1,11 @@
 ---
-slug: "crowdstrike-falcon"
-title: "CrowdStrike Falcon"
-category: "Developer"
-price_model: "Abonnement"
+slug: crowdstrike-falcon
+title: CrowdStrike Falcon
+category: Developer
+price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.crowdstrike.com/en-us/platform/"
+popularity: 0
 ---
 
 # CrowdStrike Falcon

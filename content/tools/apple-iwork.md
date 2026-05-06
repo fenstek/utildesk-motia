@@ -1,10 +1,11 @@
 ---
-slug: "apple-iwork"
-title: "Apple iWork"
-category: "Produktivität"
-price_model: "Free"
+slug: apple-iwork
+title: Apple iWork
+category: Produktivität
+price_model: Free
 tags: [office, documents, presentation, productivity]
 official_url: "https://www.apple.com/apps/"
+popularity: 0
 ---
 
 # Apple iWork

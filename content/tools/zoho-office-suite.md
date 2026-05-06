@@ -1,10 +1,11 @@
 ---
-slug: "zoho-office-suite"
-title: "Zoho Office Suite"
-category: "Produktivität"
-price_model: "Freemium"
+slug: zoho-office-suite
+title: Zoho Office Suite
+category: Produktivität
+price_model: Freemium
 tags: [office,documents,productivity,collaboration]
 official_url: "https://www.zoho.com/de/officeplatform/?sredirect=true"
+popularity: 0
 ---
 
 # Zoho Office Suite

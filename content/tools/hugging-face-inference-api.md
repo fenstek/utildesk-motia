@@ -1,10 +1,11 @@
 ---
-slug: "hugging-face-inference-api"
-title: "Hugging Face Inference API"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: hugging-face-inference-api
+title: Hugging Face Inference API
+category: Developer
+price_model: Nutzungsbasiert
 tags: [ai, api, developer-tools, inference]
 official_url: "https://huggingface.co/docs/inference-providers/index"
+popularity: 0
 ---
 
 # Hugging Face Inference API

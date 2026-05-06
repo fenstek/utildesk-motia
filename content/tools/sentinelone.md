@@ -1,10 +1,11 @@
 ---
-slug: "sentinelone"
-title: "SentinelOne"
-category: "Developer"
-price_model: "Abonnement"
+slug: sentinelone
+title: SentinelOne
+category: Developer
+price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.sentinelone.com/"
+popularity: 0
 ---
 
 # SentinelOne

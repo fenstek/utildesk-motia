@@ -7,7 +7,7 @@ tags: ["chatbot", "writing"]
 official_url: "https://openai.com/research/whisper"
 affiliate_url: "https://openai.com/research/whisper"
 created_at: 2026-02-07
-popularity: 6
+popularity: 5
 ---
 
 # Whisper
