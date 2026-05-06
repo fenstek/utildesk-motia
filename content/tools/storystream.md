@@ -62,7 +62,7 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - Flexible Freemium-Modelle ermöglichen Einstieg ohne große Investitionen
 
 - Stärker im Alltag, wenn StoryStream für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo Kampagnen, Leads, Zielgruppen, Reporting und verlässliche Nachverfolgung heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei StoryStream sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Hilft Teams besonders dort, wo Kampagnen, Leads, Zielgruppen, Reporting und verlässliche Nachverfolgung heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei StoryStream sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 
 ### Nachteile
 

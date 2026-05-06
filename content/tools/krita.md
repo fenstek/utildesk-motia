@@ -16,7 +16,7 @@ Krita wirkt am überzeugendsten, wenn man es mit einer nüchternen Checkliste pr
 
 ## Der praktische Kern
 
-Krita muss in einem echten Beispiel zeigen, ob Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Krita muss in einem echten Beispiel zeigen, ob Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Besonders passend ist Krita für Illustratoren, Lernende, freie Künstler und Teams mit Open-Source-Anspruch. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 

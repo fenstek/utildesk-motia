@@ -66,7 +66,7 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - Für sehr kleine Projekte oder einfache Datenbanken möglicherweise überdimensioniert.
 - Dokumentation und Community wachsen noch, können in speziellen Fällen eingeschränkt sein.
 
-- Erhöht eher die Komplexität, wenn vor dem Start Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind und Entscheidungen nur nebenbei getroffen werden. Bei Qdrant sollte dieser Punkt ausdr?cklich in die Abnahme wandern.
+- Erhöht eher die Komplexität, wenn vor dem Start Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind und Entscheidungen nur nebenbei getroffen werden. Bei Qdrant sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 - Wenn Review und Pflege ausfallen, verliert Qdrant gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

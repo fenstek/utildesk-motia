@@ -16,7 +16,7 @@ Ein guter Einstieg in Pixelcut ist ein Mini-Pilot mit echtem Material. Nicht die
 
 ## Der praktische Kern
 
-Pixelcut muss in einem echten Beispiel zeigen, ob KI-Bildbearbeitung für Produktfotos, Freisteller, Hintergründe und schnelle Shop-Visuals damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Pixelcut muss in einem echten Beispiel zeigen, ob KI-Bildbearbeitung für Produktfotos, Freisteller, Hintergründe und schnelle Shop-Visuals damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Pixelcut passt am ehesten zu E-Commerce, kleine Marken, Social-Seller und Content-Teams, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 

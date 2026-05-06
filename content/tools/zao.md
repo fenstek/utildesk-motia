@@ -16,7 +16,7 @@ Wer Zao einführt, sollte nicht sofort den ganzen Prozess umbauen. Besser ist ei
 
 ## Der praktische Kern
 
-Zao muss in einem echten Beispiel zeigen, ob KI-nahe Face-Swap- und Videoeffekte mit hohem Unterhaltungswert und hohen Datenschutzfragen damit klarer, schneller oder verl?sslicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich gepr?ft und sp?ter nachvollzogen werden kann.
+Zao muss in einem echten Beispiel zeigen, ob KI-nahe Face-Swap- und Videoeffekte mit hohem Unterhaltungswert und hohen Datenschutzfragen damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Bei Zao zählt nicht nur der Funktionsumfang. Wichtiger ist, ob das Tool in vorhandene Routinen passt und dort Nacharbeit reduziert.
 
