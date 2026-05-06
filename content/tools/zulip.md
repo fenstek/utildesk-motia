@@ -1,10 +1,11 @@
 ---
-slug: "zulip"
-title: "Zulip"
-category: "Produktivität"
-price_model: "Open Source"
+slug: zulip
+title: Zulip
+category: Produktivität
+price_model: Open Source
 tags: [chat, communication, open-source, collaboration]
 official_url: "https://zulip.com/"
+popularity: 0
 ---
 
 # Zulip

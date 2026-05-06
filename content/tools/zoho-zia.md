@@ -1,10 +1,11 @@
 ---
-slug: "zoho-zia"
-title: "Zoho Zia"
-category: "AI"
-price_model: "Abonnement"
+slug: zoho-zia
+title: Zoho Zia
+category: AI
+price_model: Abonnement
 tags: [ai, assistant, crm, automation]
 official_url: "https://www.zoho.com/de/zia/?sredirect=true"
+popularity: 0
 ---
 
 # Zoho Zia

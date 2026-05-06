@@ -2,14 +2,12 @@
 slug: grammarly
 title: Grammarly
 category: Produktivität
-price_model: "Freemium"
-tags:
-  - ai
-  - productivity
-official_url: 'https://www.grammarly.com/'
-affiliate_url: 'https://www.grammarly.com/'
-created_at: "2026-02-02"
-popularity: 0
+price_model: Freemium
+tags: 
+official_url: "https://www.grammarly.com/"
+affiliate_url: "https://www.grammarly.com/"
+created_at: 2026-02-02
+popularity: 55
 ---
 
 

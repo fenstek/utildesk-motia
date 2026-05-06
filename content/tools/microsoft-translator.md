@@ -2,10 +2,10 @@
 slug: microsoft-translator
 title: Microsoft Translator
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [translation, productivity, automation]
 official_url: "https://translator.microsoft.com/"
-popularity: 0
+popularity: 36
 ---
 
 # Microsoft Translator

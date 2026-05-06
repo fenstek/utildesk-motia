@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [design, image, automation, productivity]
 official_url: "https://www.fotojet.com/"
-popularity: 89
+popularity: 99
 ---
 
 # FotoJet

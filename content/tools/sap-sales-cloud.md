@@ -1,10 +1,11 @@
 ---
-slug: "sap-sales-cloud"
-title: "SAP Sales Cloud"
-category: "Marketing"
-price_model: "Abonnement"
+slug: sap-sales-cloud
+title: SAP Sales Cloud
+category: Marketing
+price_model: Abonnement
 tags: [crm, sales, enterprise, automation]
 official_url: "https://www.sap.com/products/crm/sales-cloud.html"
+popularity: 19
 ---
 
 # SAP Sales Cloud

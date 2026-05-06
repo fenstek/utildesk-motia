@@ -1,10 +1,11 @@
 ---
-slug: "redash"
-title: "Redash"
-category: "Developer"
-price_model: "Open Source"
+slug: redash
+title: Redash
+category: Developer
+price_model: Open Source
 tags: [analytics, dashboards, data, open-source]
 official_url: "https://redash.io/"
+popularity: 0
 ---
 
 # Redash

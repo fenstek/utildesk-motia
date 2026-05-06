@@ -1,10 +1,11 @@
 ---
-slug: "fountain"
-title: "Fountain"
-category: "AI"
-price_model: "Abonnement"
+slug: fountain
+title: Fountain
+category: AI
+price_model: Abonnement
 tags: [recruiting, hr, automation, ai]
 official_url: "https://www.fountain.com/"
+popularity: 64
 ---
 
 # Fountain

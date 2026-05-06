@@ -1,10 +1,11 @@
 ---
-slug: "textrazor"
-title: "TextRazor"
-category: "Developer"
-price_model: "Freemium"
+slug: textrazor
+title: TextRazor
+category: Developer
+price_model: Freemium
 tags: [nlp, api, text-analysis, developer-tools]
 official_url: "https://www.textrazor.com/"
+popularity: 0
 ---
 
 # TextRazor
