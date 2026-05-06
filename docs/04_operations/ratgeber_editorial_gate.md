@@ -20,6 +20,18 @@ Rejected candidates:
 The Cloudflare candidate sync enforces this before upload. Rejected artifacts get
 `cloudflare_review_rejected.json` and are not sent to the review backend.
 
+Operational enforcement points:
+
+- `opcl:/opt/openclaw/workspace/agent-newsman/scripts/journalist_editor.py`
+  rejects `tool_spotlight`, `tool_review`, `product_spotlight`, and
+  `product_review` before jobs enter the article queue.
+- `scripts/ratgeber_cloudflare_candidate_sync.py` is the final runtime guard
+  before Cloudflare upload. It rejects forbidden single-tool formats, titles
+  like `Tool: Was das Tool im Alltag wirklich taugt`, and candidates whose
+  visual quality gate failed.
+- If the local repo script is changed, the production copy on `opcl` must be
+  updated too; otherwise the review backend can drift back to old behaviour.
+
 ## Illustration direction
 
 Images must not become a cloned diagram factory.
