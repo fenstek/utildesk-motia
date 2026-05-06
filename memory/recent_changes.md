@@ -18,6 +18,21 @@ _Last updated: 2026-05-06_
 ### Commit
 - `078b3c3` (`fix(seo): split google and bing sitemap policy`)
 
+## 2026-05-06 - Ratgeber Candidate Gate Repair
+
+### Done
+- Removed two invalid Cloudflare review candidates:
+  - `20260506-agentic-api-grader-by-saastr-ai-tool_spotlight-658e792b`
+  - `20260505-vyrill-agentic-video-commerce-platform-tool_spotlight-e5394bec`
+- Copied the hardened `scripts/ratgeber_cloudflare_candidate_sync.py` to the live `opcl` article factory.
+- Hardened the `opcl` journalist editor so `tool_spotlight`, `tool_review`, `product_spotlight`, and `product_review` do not enter the Ratgeber article queue.
+- Made visual quality a hard Cloudflare upload gate: failed, generic, fallback, placeholder, raw, unrelated, cloned, or debug-style visuals are rejected before review upload.
+
+### Verification
+- Cloudflare admin review page no longer contains `SaaStr` or `Vyrill` candidates and shows no open candidates.
+- `opcl` dry-run sync reports `uploaded = 0` and both bad artifacts now have `cloudflare_review_rejected.json`.
+- `opcl` article review queue reports `count = 0` open review packets.
+
 ## 2026-05-04 — Tool Editorial Expansion Batch 2
 
 ### Done

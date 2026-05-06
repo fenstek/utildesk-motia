@@ -137,6 +137,39 @@ SINGLE_TOOL_TITLE_RE = re.compile(
     r"(^\s*tool\s*spotlight\b|:\s*was\s+das\s+tool\s+im\s+alltag\s+wirklich\s+taugt\b)",
     re.IGNORECASE,
 )
+# Last-resort runtime guard: the review backend must never receive extended
+# one-tool cards, even if an upstream generator mistakenly marks them ready.
+FORBIDDEN_SINGLE_TOOL_FORMATS = {
+    "tool_spotlight",
+    "tool spotlight",
+    "tool_review",
+    "tool review",
+    "product_spotlight",
+    "product spotlight",
+    "product_review",
+    "product review",
+}
+FORBIDDEN_VISUAL_VARIANTS = {
+    "tool_spotlight",
+    "generic_workflow",
+    "generic_workflow_fallback",
+    "generic",
+    "fallback",
+    "placeholder",
+    "empty",
+}
+FORBIDDEN_VISUAL_ISSUE_TERMS = (
+    "generic",
+    "fallback",
+    "placeholder",
+    "empty",
+    "raw",
+    "unrelated",
+    "cloned",
+    "diagram_factory",
+    "debug",
+    "service_label",
+)
 RATGEBER_VISUAL_STYLES = [
     "editorial narrative scene",
     "human workbench story",
@@ -215,6 +248,64 @@ def looks_like_single_tool_title(title: str) -> bool:
     return False
 
 
+def normalize_label(value: Any) -> str:
+    return re.sub(r"\s+", " ", str(value or "").replace("_", " ")).strip().lower()
+
+
+def has_forbidden_single_tool_format(job: dict[str, Any], packet: dict[str, Any], job_id: str) -> bool:
+    values = [
+        job_id,
+        job.get("format"),
+        job.get("story_format"),
+        job.get("content_type"),
+        job.get("article_type"),
+        packet.get("format"),
+        packet.get("story_format"),
+        packet.get("content_type"),
+        packet.get("article_type"),
+    ]
+    for value in values:
+        label = normalize_label(value)
+        if not label:
+            continue
+        if label in FORBIDDEN_SINGLE_TOOL_FORMATS:
+            return True
+        if any(forbidden in label for forbidden in FORBIDDEN_SINGLE_TOOL_FORMATS):
+            return True
+    return False
+
+
+def visual_rejection_reason(packet: dict[str, Any]) -> str | None:
+    visual = packet.get("visual_quality") if isinstance(packet.get("visual_quality"), dict) else {}
+    if not visual:
+        return None
+    if visual.get("pass") is False:
+        return "visual quality gate did not pass"
+
+    variants = [
+        visual.get("cover_variant"),
+        visual.get("workflow_variant"),
+        visual.get("selected_variant"),
+    ]
+    for variant in variants:
+        label = normalize_label(variant)
+        if label in FORBIDDEN_VISUAL_VARIANTS:
+            return f"forbidden visual variant: {label}"
+
+    issue_values: list[Any] = []
+    for key in ("editorial_issue_codes", "issue_codes", "cover_flags", "workflow_flags", "flags"):
+        raw = visual.get(key)
+        if isinstance(raw, list):
+            issue_values.extend(raw)
+        elif raw:
+            issue_values.append(raw)
+    for issue in issue_values:
+        label = normalize_label(issue)
+        if any(term in label for term in FORBIDDEN_VISUAL_ISSUE_TERMS):
+            return f"forbidden visual issue: {label}"
+    return None
+
+
 def candidate_rejection_reason(
     artifact_dir: Path,
     title: str,
@@ -223,28 +314,13 @@ def candidate_rejection_reason(
     article_md: str,
 ) -> str | None:
     job_id = artifact_dir.name
-    format_blob = " ".join(
-        str(value or "")
-        for value in [
-            job_id,
-            job.get("format"),
-            job.get("story_format"),
-            job.get("content_type"),
-            job.get("topic"),
-            packet.get("format"),
-            packet.get("story_format"),
-        ]
-    ).lower()
-    if "tool_spotlight" in format_blob or "tool spotlight" in format_blob:
+    if has_forbidden_single_tool_format(job, packet, job_id):
         return "single-tool spotlight articles are not valid Ratgeber candidates"
-
-    haystack = " ".join([title, flatten_text(job), flatten_text(packet), article_md[:4000]])
-    has_comparative_frame = bool(COMPARISON_TERMS_RE.search(haystack))
-    related_tools = collect_related_tool_names(job, packet)
-    if looks_like_single_tool_title(title) and not has_comparative_frame:
-        return "single-tool article title without comparison or overview framing"
-    if len(related_tools) <= 1 and looks_like_single_tool_title(title):
-        return "single-tool candidate has no real comparison set"
+    if looks_like_single_tool_title(title):
+        return "single-tool 'what this tool does' articles are not valid Ratgeber candidates"
+    visual_reason = visual_rejection_reason(packet)
+    if visual_reason:
+        return visual_reason
     return None
 
 
