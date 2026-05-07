@@ -103,6 +103,8 @@ Rules:
 - do not use two similar diagrams in one article by default;
 - no internal service labels, debug captions, footer slogans, or prompt notes inside images;
 - the picture must add editorial meaning: scene, metaphor, comparison, or memory hook.
+- the built-in HTML/PNG renderer is a draft fallback only; its output must not be uploaded as `review_ready` final artwork.
+- final review artwork must carry approved visual metadata such as `source: chatgpt_manual` or `manual_approved_artwork` plus `approvedForReview: true`.
 
 Preferred styles rotate between:
 
@@ -116,3 +118,10 @@ Preferred styles rotate between:
 - restrained schematic only when useful.
 
 If a human rework comment says the images are raw or unrelated, the rework consumer must regenerate both text and visuals and must not return the same image hashes or the same renderer variants.
+
+Operationally, this means `scripts/ratgeber_cloudflare_candidate_sync.py` rejects:
+
+- local HTML fallback renderer output;
+- untagged pre-existing PNG pairs;
+- identical cover/workflow hashes;
+- visual metadata that still contains generic diagram, placeholder, debug, or service-label signals.

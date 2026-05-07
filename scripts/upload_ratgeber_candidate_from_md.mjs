@@ -94,6 +94,12 @@ async function main() {
   const tags = Array.isArray(parsed.data.tags) ? parsed.data.tags.map(String) : [];
   const sources = normalizeSources(parsed.data.sources);
   const score = toScore(parsed.data.score ?? parsed.data.readinessScore ?? parsed.data.qualityScore);
+  const visualGeneration = {
+    source: arg("visual-source", "manual_approved_artwork"),
+    approvedForReview: true,
+    approvedAt: new Date().toISOString(),
+    reason: "Manual upload path is reserved for final editorial artwork, not renderer fallbacks.",
+  };
   const candidate = {
     jobId,
     title: String(parsed.data.title || jobId),
@@ -115,12 +121,14 @@ async function main() {
       sources,
       sidebarTitle: String(parsed.data.sidebarTitle || "Kurzfazit"),
       sidebarPoints: Array.isArray(parsed.data.sidebarPoints) ? parsed.data.sidebarPoints.map(String) : [],
+      visualGeneration,
     },
     sources,
     audit: {
       source: path.relative(ROOT, articlePath),
       uploadTool: "upload_ratgeber_candidate_from_md.mjs",
       readinessScore: score,
+      visualGeneration,
     },
   };
 

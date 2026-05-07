@@ -40,6 +40,14 @@ def read_env_file(path: Path) -> dict[str, str]:
     return values
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def first_heading(markdown_text: str) -> str:
     for line in markdown_text.splitlines():
         if line.startswith("# "):
@@ -169,6 +177,40 @@ FORBIDDEN_VISUAL_ISSUE_TERMS = (
     "diagram_factory",
     "debug",
     "service_label",
+)
+VISUAL_GENERATION_META_FILE = "visual_generation_meta.json"
+LOCAL_HTML_VISUAL_SOURCE = "local_html_renderer"
+UNTAGGED_VISUAL_SOURCE = "untagged_existing_png"
+APPROVED_FINAL_VISUAL_SOURCES = {
+    "chatgpt",
+    "chatgpt_web",
+    "chatgpt_manual",
+    "manual_approved_artwork",
+    "approved_editorial_artwork",
+    "approved_external_artwork",
+}
+FORBIDDEN_FINAL_VISUAL_TERMS = (
+    "block diagram",
+    "blockdiagramm",
+    "blockschema",
+    "flowchart",
+    "flussdiagramm",
+    "generic workflow",
+    "generic_workflow",
+    "generic_workflow_fallback",
+    "diagram factory",
+    "diagram_factory",
+    "raw svg",
+    "wireframe",
+    "placeholder",
+    "fallback",
+    "debug",
+    "service label",
+    "service_label",
+    "footer slogan",
+    "prompt note",
+    "utildesk //",
+    "no cloned diagrams",
 )
 RATGEBER_VISUAL_STYLES = [
     "editorial narrative scene",
@@ -337,6 +379,95 @@ def visual_rejection_reason(packet: dict[str, Any]) -> str | None:
         label = normalize_label(issue)
         if any(term in label for term in FORBIDDEN_VISUAL_ISSUE_TERMS):
             return f"forbidden visual issue: {label}"
+    return None
+
+
+def read_visual_generation_meta(artifact_dir: Path) -> dict[str, Any]:
+    path = artifact_dir / VISUAL_GENERATION_META_FILE
+    if not path.exists():
+        return {}
+    try:
+        data = load_json(path)
+    except Exception:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def write_visual_generation_meta(artifact_dir: Path, meta: dict[str, Any]) -> None:
+    payload = dict(meta)
+    payload.setdefault("updatedAt", datetime.now(timezone.utc).isoformat())
+    (artifact_dir / VISUAL_GENERATION_META_FILE).write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def visual_meta_source(meta: dict[str, Any]) -> str:
+    return normalize_label(meta.get("source") or meta.get("visualSource") or meta.get("generator") or "")
+
+
+def visual_meta_approved(meta: dict[str, Any]) -> bool:
+    return bool(
+        meta.get("approvedForReview") is True
+        or meta.get("approved_for_review") is True
+        or meta.get("humanApproved") is True
+        or meta.get("human_approved") is True
+    )
+
+
+def final_visual_rejection_reason(
+    artifact_dir: Path,
+    job: dict[str, Any],
+    packet: dict[str, Any],
+    visual_meta: dict[str, Any],
+    allow_unapproved_visuals: bool = False,
+) -> str | None:
+    cover_path = artifact_dir / "cover.png"
+    workflow_path = artifact_dir / "workflow.png"
+    if not cover_path.exists() or not workflow_path.exists():
+        return "final PNG pair is missing"
+
+    try:
+        if file_sha256(cover_path) == file_sha256(workflow_path):
+            return "cover and workflow images are identical"
+    except OSError as error:
+        return f"could not inspect final PNG pair: {error}"
+
+    source = visual_meta_source(visual_meta)
+    approved = visual_meta_approved(visual_meta)
+    if source == normalize_label(LOCAL_HTML_VISUAL_SOURCE):
+        return "local HTML fallback renderer is not allowed as final Ratgeber artwork"
+    if source == normalize_label(UNTAGGED_VISUAL_SOURCE) and not allow_unapproved_visuals:
+        return "existing PNG pair has no approved artwork metadata"
+    approved_sources = {normalize_label(item) for item in APPROVED_FINAL_VISUAL_SOURCES}
+    if source and source not in approved_sources and not approved and not allow_unapproved_visuals:
+        return f"unapproved visual source: {source}"
+    if not source and not approved and not allow_unapproved_visuals:
+        return "final artwork has no approved visual source metadata"
+
+    visual = packet.get("visual_quality") if isinstance(packet.get("visual_quality"), dict) else {}
+    meta_signals = {
+        key: visual_meta.get(key)
+        for key in (
+            "source",
+            "visualSource",
+            "generator",
+            "selectedVariant",
+            "selected_variant",
+            "coverVariant",
+            "cover_variant",
+            "workflowVariant",
+            "workflow_variant",
+            "flags",
+            "issueCodes",
+            "issue_codes",
+        )
+        if key in visual_meta
+    }
+    visual_text = normalize_label(flatten_text([visual, meta_signals, job.get("illustration_brief"), job.get("visual_brief")]))
+    for term in FORBIDDEN_FINAL_VISUAL_TERMS:
+        if term in visual_text and not allow_unapproved_visuals:
+            return f"forbidden final visual signal: {term}"
     return None
 
 
@@ -1541,11 +1672,18 @@ h1 {{ margin:0; width:980px; font-size:54px; line-height:1.06; letter-spacing:-.
 </style></head><body><main class="frame"><div class="wash w1"></div><div class="wash w2"></div><div class="wash w3"></div><h1>So passt die Grafik zur Aussage</h1><p class="dek">Der zweite Blick prueft nicht nur Schoenheit, sondern ob Bildidee, Text und Quellen dieselbe Geschichte erzaehlen.</p><div class="track"></div>{cards}</main></body></html>"""
 
 
-def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool = False) -> None:
+def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool = False) -> dict[str, Any]:
     cover_path = artifact_dir / "cover.png"
     workflow_path = artifact_dir / "workflow.png"
     if cover_path.exists() and workflow_path.exists() and not force:
-        return
+        meta = read_visual_generation_meta(artifact_dir)
+        if meta:
+            return meta
+        return {
+            "source": UNTAGGED_VISUAL_SOURCE,
+            "approvedForReview": False,
+            "reason": "PNG assets existed before sync, but no approved artwork metadata was present.",
+        }
 
     from article_execution.render_article_package import browser_env, resolve_browser_executable
     from playwright.sync_api import sync_playwright
@@ -1582,9 +1720,26 @@ def render_pngs(artifact_dir: Path, title: str, job: dict[str, Any], force: bool
             page.goto(workflow_html_path.as_uri(), wait_until="load")
             page.screenshot(path=str(workflow_path), full_page=False)
             browser.close()
+    meta = {
+        "source": LOCAL_HTML_VISUAL_SOURCE,
+        "approvedForReview": False,
+        "reason": (
+            "The built-in HTML renderer is only a draft fallback. "
+            "Final review candidates require human/ChatGPT-approved editorial artwork."
+        ),
+        "cover": "cover.png",
+        "workflow": "workflow.png",
+        "renderedAt": datetime.now(timezone.utc).isoformat(),
+    }
+    write_visual_generation_meta(artifact_dir, meta)
+    return meta
 
 
-def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> tuple[dict[str, Any], list[dict[str, str]]]:
+def build_candidate_payload(
+    artifact_dir: Path,
+    force_images: bool = False,
+    allow_unapproved_visuals: bool = False,
+) -> tuple[dict[str, Any], list[dict[str, str]]]:
     from scripts.article_review_server import build_publish_preview_context, render_markdown_basic
 
     job_id = artifact_dir.name
@@ -1596,7 +1751,16 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
     if rejection_reason:
         raise ValueError(f"Rejected Ratgeber candidate {job_id}: {rejection_reason}")
 
-    render_pngs(artifact_dir, title, job, force=force_images)
+    visual_meta = render_pngs(artifact_dir, title, job, force=force_images)
+    final_visual_reason = final_visual_rejection_reason(
+        artifact_dir,
+        job,
+        packet,
+        visual_meta,
+        allow_unapproved_visuals=allow_unapproved_visuals,
+    )
+    if final_visual_reason:
+        raise ValueError(f"Rejected Ratgeber candidate {job_id}: {final_visual_reason}")
 
     context = build_publish_preview_context(job_id, artifact_dir, packet)
     content_markdown = str(context.get("content") or "")
@@ -1635,6 +1799,7 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
             "sidebarTitle": str(context.get("sidebar_title") or "Kurzfazit"),
             "sidebarPoints": [str(item) for item in (context.get("sidebar_points") or [])],
             "illustrationPolicy": illustration_policy,
+            "visualGeneration": visual_meta,
         },
         "source": {
             "artifactDir": str(artifact_dir),
@@ -1642,6 +1807,7 @@ def build_candidate_payload(artifact_dir: Path, force_images: bool = False) -> t
             "uploadTool": "ratgeber_cloudflare_candidate_sync.py",
             "editorialGate": "comparison-or-overview-only",
             "illustrationPolicy": illustration_policy,
+            "visualGeneration": visual_meta,
         },
     }
 
@@ -1791,9 +1957,14 @@ def upload_one(
     dry_run: bool,
     force_upload: bool,
     local_dedupe: bool,
+    allow_unapproved_visuals: bool = False,
 ) -> dict[str, Any]:
     try:
-        candidate, assets = build_candidate_payload(artifact_dir, force_images=force_images)
+        candidate, assets = build_candidate_payload(
+            artifact_dir,
+            force_images=force_images,
+            allow_unapproved_visuals=allow_unapproved_visuals,
+        )
     except ValueError as error:
         reason = str(error)
         (artifact_dir / "cloudflare_review_rejected.json").write_text(
@@ -1872,6 +2043,11 @@ def main() -> int:
     parser.add_argument("--force-images", action="store_true")
     parser.add_argument("--force-upload", action="store_true", help="Upload even when the local payload signature is unchanged.")
     parser.add_argument("--no-local-dedupe", action="store_true", help="Disable local signature dedupe before POSTing to Cloudflare.")
+    parser.add_argument(
+        "--allow-unapproved-visuals",
+        action="store_true",
+        help="Emergency/debug only: bypass the final artwork metadata gate.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -1900,6 +2076,7 @@ def main() -> int:
             args.dry_run,
             args.force_upload,
             not args.no_local_dedupe,
+            args.allow_unapproved_visuals,
         )
         results.append({"artifact_dir": str(artifact_dir), "result": result})
         print(json.dumps(results[-1], ensure_ascii=False, indent=2))

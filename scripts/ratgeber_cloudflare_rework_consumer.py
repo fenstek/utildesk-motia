@@ -310,7 +310,6 @@ def upload_candidate(article_workspace: Path, artifact_dir: Path, upload_endpoin
             "--token-env",
             token_env,
             "--force-upload",
-            "--force-images",
         ],
         cwd=article_workspace,
         timeout=240,
