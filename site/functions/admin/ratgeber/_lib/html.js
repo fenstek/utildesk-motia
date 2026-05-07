@@ -944,14 +944,14 @@ export function pageShell(title, body, options = {}) {
 
       :root[data-theme="dark"] .article-cover img,
       :root[data-theme="dark"] .ratgeber-prose img {
-        filter: brightness(0.72) saturate(0.9) contrast(0.98);
-        opacity: 0.94;
+        filter: none;
+        opacity: 1;
       }
 
       :root[data-theme="dark"] .article-cover-trigger:hover img,
       :root[data-theme="dark"] .ratgeber-prose img:hover {
-        filter: brightness(0.82) saturate(0.95) contrast(1);
-        opacity: 0.98;
+        filter: none;
+        opacity: 1;
       }
 
       :root[data-theme="dark"] .ratgeber-prose img {
