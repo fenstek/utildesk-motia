@@ -6,8 +6,6 @@ category: "Workflow"
 eyebrow: "KI-Workflow"
 excerpt: "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
 readTime: 6
-coverImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.png
-secondaryImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png
 tags:
   - "Automatisierung"
   - "KI-Agenten"
@@ -79,8 +77,6 @@ Für harmlose Aufgaben reicht oft ein leichter Review: Der Agent sammelt Daten, 
 Bei kritischen Aufgaben braucht es zusätzliche Prüfungen: Dry-Run, Vergleich gegen erwartete Daten, Screenshot-Beleg, Audit-Log und möglichst eine zweite technische Kontrolle. Wenn ein Agent Code oder Konfiguration erzeugt, sollte ein klassischer Validator danachlaufen. Wenn er Daten extrahiert, sollte ein Stichprobencheck oder Schema-Check folgen.
 
 Die beste Faustregel lautet: Je schwerer eine Aktion rückgängig zu machen ist, desto weniger autonom sollte der Browser-Agent handeln.
-
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png)
 
 ## Welche Tool-Schichten man vergleichen sollte
 
