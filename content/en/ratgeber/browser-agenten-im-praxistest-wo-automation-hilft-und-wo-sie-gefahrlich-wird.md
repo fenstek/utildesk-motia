@@ -6,8 +6,6 @@ category: "Workflow"
 eyebrow: "AI Workflow"
 excerpt: "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
 readTime: 6
-coverImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.png
-secondaryImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png
 tags:
   - "Automation"
   - "AI Agents"
@@ -79,8 +77,6 @@ For harmless tasks, a light review is often enough: the agent collects data, the
 For critical tasks, you need additional checks: dry-run, comparison against expected data, screenshot evidence, audit logs, and ideally a second technical control. If an agent generates code or configuration, a classic validator should run afterward. If it extracts data, a sample check or schema check should follow.
 
 The best rule of thumb is: the harder an action is to reverse, the less autonomously the browser agent should act.
-
-![Diagram of an orchestrated AI workflow](/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png)
 
 ## Which tool layers to compare
 
