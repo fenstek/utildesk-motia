@@ -2,11 +2,11 @@ import {
   HttpError,
   jsonResponse,
   listPublishRequests,
-  publishQueueKey,
+  readPublishRequest,
   readCandidate,
-  requireKv,
   updateIndexCandidate,
   writeCandidate,
+  writePublishRequest,
 } from "../_lib/storage.js";
 
 export async function onRequestGet({ env }) {
@@ -23,7 +23,6 @@ export async function onRequestGet({ env }) {
 
 export async function onRequestPost({ env, request }) {
   try {
-    const kv = requireKv(env);
     const payload = await request.json();
     const requestId = String(payload.requestId || "").trim();
     const status = String(payload.status || "").trim();
@@ -31,8 +30,7 @@ export async function onRequestPost({ env, request }) {
       throw new HttpError(400, "requestId and valid status are required");
     }
 
-    const requestKey = publishQueueKey(requestId);
-    const publishRequest = await kv.get(requestKey, "json");
+    const publishRequest = await readPublishRequest(env, requestId);
     if (!publishRequest) {
       throw new HttpError(404, "Publish request not found");
     }
@@ -44,7 +42,7 @@ export async function onRequestPost({ env, request }) {
       publishedUrl: payload.publishedUrl || publishRequest.publishedUrl || "",
       updatedAt: new Date().toISOString(),
     };
-    await kv.put(requestKey, JSON.stringify(updatedRequest, null, 2));
+    await writePublishRequest(env, updatedRequest);
 
     const candidate = await readCandidate(env, publishRequest.jobId);
     if (candidate) {

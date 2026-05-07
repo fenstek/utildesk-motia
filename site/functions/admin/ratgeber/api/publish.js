@@ -1,11 +1,10 @@
 import {
   HttpError,
   jsonResponse,
-  publishQueueKey,
   readCandidate,
-  requireKv,
   updateIndexCandidate,
   writeCandidate,
+  writePublishRequest,
 } from "../_lib/storage.js";
 
 async function readJobId(request) {
@@ -20,7 +19,6 @@ async function readJobId(request) {
 
 export async function handlePost({ env, request }) {
   try {
-    const kv = requireKv(env);
     const jobId = String(await readJobId(request) || "").trim();
     const candidate = await readCandidate(env, jobId);
     if (!candidate) {
@@ -37,7 +35,7 @@ export async function handlePost({ env, request }) {
       status: "pending",
       requestedAt: timestamp,
     };
-    await kv.put(publishQueueKey(requestId), JSON.stringify(publishRequest, null, 2));
+    const queuedRequest = await writePublishRequest(env, publishRequest);
     const nextCandidate = await writeCandidate(env, {
       ...candidate,
       publish: {
@@ -52,7 +50,7 @@ export async function handlePost({ env, request }) {
     if (acceptsHtml) {
       return Response.redirect(new URL(`/admin/ratgeber/candidate/${encodeURIComponent(candidate.jobId)}?publish=queued`, request.url).toString(), 303);
     }
-    return jsonResponse({ ok: true, request: publishRequest });
+    return jsonResponse({ ok: true, request: queuedRequest });
   } catch (error) {
     if (error instanceof HttpError) {
       return jsonResponse({ ok: false, error: error.message }, { status: error.status });
