@@ -22,6 +22,11 @@ The Cloudflare candidate sync enforces this before upload. Rejected artifacts ge
 
 Operational enforcement points:
 
+- `opcl:/opt/openclaw/workspace/agent-newsman/scripts/ratgeber_topic_harvester.py`
+  is the source-driven topic collector. It accumulates multi-source clusters
+  from the latest intel manifest, local tool candidates, RSS feeds, and optional
+  Perplexity enrichment. It may append jobs only when a cluster has several
+  sources and several tools/approaches; it must never emit a one-tool article.
 - `opcl:/opt/openclaw/workspace/agent-newsman/scripts/journalist_editor.py`
   rejects `tool_spotlight`, `tool_review`, `product_spotlight`, and
   `product_review` before jobs enter the article queue.
@@ -31,6 +36,60 @@ Operational enforcement points:
   visual quality gate failed.
 - If the local repo script is changed, the production copy on `opcl` must be
   updated too; otherwise the review backend can drift back to old behaviour.
+- `opcl:/opt/openclaw/workspace/agent-newsman/intel/run_daily_host.sh` runs the
+  topic harvester after the daily intel/news pass. The hourly orchestrator then
+  queues only jobs accepted by `journalist_editor.py`.
+
+## Source policy
+
+Ratgeber source material is German/English only.
+
+Hard rejects:
+
+- Russian-language or Chinese-language source text;
+- `/ru/`, `/zh/`, `/cn/`, `.ru`, `.cn`, Russian/Chinese locale URLs;
+- Russian corporate PR, Russian state/local-market "know-how", and sources around
+  Sber/Sberbank/SberTech, Platform V, Yandex, VK, Mail.ru, Rambler, Rutube,
+  Skolkovo, Tinkoff/T-Bank, MTS, Kaspersky, or Habr.
+
+If a capable Russian-speaking author or founder is used as a source, they must be
+working in an international context and publishing in English or German. The site
+must not use Russian or Chinese language excerpts in article sources, article
+bodies, public previews, metadata, or sidebars.
+
+## Tool linking contract
+
+Ratgeber articles are part of the Utildesk catalog, not detached blog posts.
+
+Rules:
+
+- every recognized tool name in the article body should link to its internal
+  Utildesk card when that card exists;
+- source links remain only in the `Quellen` section or explicit source context;
+- if the article mentions a relevant tool that has no Utildesk card yet, the
+  pipeline must add it to the tool-candidate queue/Sheets review flow and leave
+  the mention unlinked until the card exists;
+- after the missing card is published, the article can be re-exported so the
+  mention becomes an internal link.
+
+## Topic harvesting
+
+Ratgeber topic production is intentionally cluster-first:
+
+- gather signals from Hacker News, Product Hunt, the existing daily candidates
+  file, and optional Perplexity research;
+- do not gather Habr or other RU/CN/CJK/Russian-corporate sources;
+- keep a persistent pool in
+  `data/article_jobs/ratgeber_topic_pool.json`;
+- wait until a topic has source diversity, enough URLs, and multiple relevant
+  tools or approaches;
+- append only comparison, trend, workflow, how-to, or explainer jobs to
+  `data/article_jobs/latest_run.json`;
+- let NotebookLM/article runner produce the article only after the orchestrator
+  and editor gate accept the job.
+
+This means zero candidates is an acceptable state. A weak one-tool candidate is
+not acceptable.
 
 ## Illustration direction
 
