@@ -163,8 +163,30 @@ def approve_and_export_package(article_workspace: Path, request: dict[str, Any])
 
     package_dir = article_workspace / "publish_ready" / "ratgeber" / slug
     if not package_dir.exists():
-        raise PublishError(f"Exported package is missing: {package_dir}")
+        package_dir = find_exported_package(article_workspace, job_id, package_dir)
     return package_dir
+
+
+def find_exported_package(article_workspace: Path, job_id: str, expected_package_dir: Path) -> Path:
+    """Find the package exported for this job even if the final slug was normalized differently."""
+    root = article_workspace / "publish_ready" / "ratgeber"
+    matches: list[Path] = []
+    if root.exists():
+        for package_json in root.glob("*/package.json"):
+            try:
+                package = json.loads(package_json.read_text(encoding="utf-8-sig"))
+            except Exception:
+                continue
+            source_job = str(package.get("source_job") or "")
+            package_job = str(package.get("job_id") or package.get("jobId") or "")
+            if job_id and (package_job == job_id or job_id in source_job):
+                matches.append(package_json.parent)
+    if len(matches) == 1:
+        return matches[0]
+    if len(matches) > 1:
+        names = [str(path) for path in matches]
+        raise PublishError(f"Multiple exported packages match {job_id}: {names}")
+    raise PublishError(f"Exported package is missing: {expected_package_dir}")
 
 
 def write_askpass(run_dir: Path) -> Path:
