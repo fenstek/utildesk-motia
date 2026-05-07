@@ -180,6 +180,16 @@ RATGEBER_VISUAL_STYLES = [
     "soft technical metaphor",
     "one restrained schematic only when it explains a real process",
 ]
+DISALLOWED_PUBLIC_LANGUAGE_RE = re.compile(r"[\u0400-\u04ff\u3400-\u9fff\uf900-\ufaff]")
+DISALLOWED_SOURCE_URL_RE = re.compile(
+    r"(?i)(?:^https?://(?:ru|zh|cn)\.|[/.](?:ru|zh|zh-cn|zh-tw|cn)(?:[/?#]|$)|[?&](?:lang|locale|hl)=(?:ru|zh|zh-cn|zh-tw|cn)(?:&|$))"
+)
+DISALLOWED_SOURCE_ORG_RE = re.compile(
+    r"(?i)\b("
+    r"habr|sber|sberbank|sbertech|platform\s*v|yandex|vk|mail\.ru|rambler|"
+    r"rutube|skolkovo|tinkoff|t-bank|mts|kaspersky|russian\s+market|russia-based"
+    r")\b"
+)
 
 
 def flatten_text(value: Any) -> str:
@@ -188,6 +198,30 @@ def flatten_text(value: Any) -> str:
     if isinstance(value, list):
         return " ".join(flatten_text(item) for item in value)
     return str(value or "")
+
+
+def source_publication_allowed(source: dict[str, Any]) -> bool:
+    text = " ".join(
+        str(source.get(key) or "")
+        for key in ("name", "title", "summary", "description")
+    )
+    url = str(source.get("url") or source.get("source_item_url") or "").strip()
+    return (
+        not DISALLOWED_PUBLIC_LANGUAGE_RE.search(text)
+        and not DISALLOWED_SOURCE_URL_RE.search(url)
+        and not DISALLOWED_SOURCE_ORG_RE.search(" ".join([text, url]))
+    )
+
+
+def forbidden_public_language_reason(job: dict[str, Any], packet: dict[str, Any], article_md: str) -> str | None:
+    if DISALLOWED_PUBLIC_LANGUAGE_RE.search(article_md or ""):
+        return "article body contains Russian/Chinese/CJK text"
+    for container_name, container in (("job", job), ("review_packet", packet)):
+        for source in container.get("sources") or []:
+            if isinstance(source, dict) and not source_publication_allowed(source):
+                label = source.get("title") or source.get("name") or source.get("url") or "source"
+                return f"{container_name} contains disallowed source: {label}"
+    return None
 
 
 def collect_related_tool_names(job: dict[str, Any], packet: dict[str, Any]) -> list[str]:
@@ -318,6 +352,9 @@ def candidate_rejection_reason(
         return "single-tool spotlight articles are not valid Ratgeber candidates"
     if looks_like_single_tool_title(title):
         return "single-tool 'what this tool does' articles are not valid Ratgeber candidates"
+    language_reason = forbidden_public_language_reason(job, packet, article_md)
+    if language_reason:
+        return language_reason
     visual_reason = visual_rejection_reason(packet)
     if visual_reason:
         return visual_reason

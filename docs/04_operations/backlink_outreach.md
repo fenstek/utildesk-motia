@@ -1,6 +1,6 @@
 # Backlink Outreach Log
 
-Last updated: 2026-04-30
+Last updated: 2026-05-02
 
 ## Scope
 
@@ -99,6 +99,72 @@ Follow-up verification on 2026-04-30:
   directories checked by direct/search routes also remain moderation-pending or
   not visible.
 
+## Free Quality Submissions - 2026-05-02
+
+All submissions below used `utildesk@proton.me` where account or email
+confirmation was needed. No personal first name or surname was submitted. Use
+only `Utildesk` or `Utildesk Team` for name-like fields; keep Proton and any
+account credentials in project secrets and never expose or reuse the Proton
+password in logs.
+
+| Resource | URL / route | Status | Notes |
+| --- | --- | --- | --- |
+| ToolNova | https://toolnova.ai/submit-tool | Submitted / pending | Free form accepted and showed the thank-you screen. Category used: `AI Productivity Tools`. Public search did not show a live listing yet. |
+| AimyFlow | https://www.aimyflow.com/en/submit | Submitted / pending | Public form POST to `/api/submit` returned `200` with `pending_review`. Public explore search did not show a live listing yet. |
+| Tuvavo | https://tuvavo.com/submit-tool | Submitted / pending | Free form accepted and showed review timing of 3-5 business days. Public tools search did not show a live listing yet. |
+| AI You Imagine | https://aiyouimagine.com/submit | Submitted / pending | Account was created with email confirmation only, no personal name. Logo upload returned `200`; `ai_tool_submissions` insert returned `201`. Public category page did not show a live listing yet. |
+| AIToolboard | https://aitoolboard.com/submit | Submitted / pending | Free listing form showed `Tool submitted successfully! It will be reviewed by our team.` Search currently only echoes the query, so no backlink is confirmed yet. |
+| BestAiToolSpot | https://bestaitoolspot.com/submit-ai/ | Email submission sent / pending | Their page requests email submissions. Sent tool details from `utildesk@proton.me` to `hassaan.baits@gmail.com`; no public listing yet. |
+| MakerHunt | https://makerhunt.io/project/utildesk | Scheduled / backlink visible | Registered by magic link only, selected the free no-badge `Nofollow Launch`, and scheduled launch for week 2026-W19, May 4-11. Raw public HTML returns `200` and contains `https://tools.utildesk.de/` with `nofollow`. |
+| SaaSRow | https://saasrow.com/submit | Submitted / pending | Free tier accepted the URL, fetched site metadata, and created a pending submission. Free listing is advertised as dofollow but expires after 90 days; management-link email endpoint returned `404`, so treat public listing as pending until visible. |
+| EarlyHunt | https://earlyhunt.com/project/utildesk | Scheduled / backlink visible | Registered by email magic link only, no personal profile data. Selected free `Nofollow Launch`, no badge required, scheduled week 2026-W34, Aug 17-24. Raw public HTML returns `200` and contains `https://tools.utildesk.de/` with `nofollow`. |
+| IndieHunt | https://indiehunt.io/project/utildesk | Scheduled / backlink visible | Registered by email magic link only, no personal profile data. Selected free `Nofollow Launch`, no badge required, scheduled week 2026-W38, Sep 14-21. Raw public HTML returns `200` and contains `tools.utildesk.de` with `nofollow`. |
+
+Follow-up verification on 2026-05-02:
+
+- MakerHunt was the first newly confirmed public backlink from this batch. It
+  is nofollow and scheduled for the May 4-11, 2026 launch week, but the public
+  project page already contains the Utildesk URL in raw HTML.
+- ToolNova, AimyFlow, Tuvavo, AI You Imagine, AIToolboard, and BestAiToolSpot
+  did not show a public `tools.utildesk.de` backlink immediately after
+  submission. Treat them as moderation-pending, not failed.
+- Second-pass checks confirmed EarlyHunt and IndieHunt as additional live
+  public nofollow backlinks. SaaSRow submission remains moderation-pending and
+  did not expose a public `tools.utildesk.de` backlink yet.
+
+## Blocked Or Failed New Attempts - 2026-05-02
+
+| Resource | Current finding |
+| --- | --- |
+| ToolJunction | Free listing path requires adding their badge/backlink on the homepage or footer; not submitted. |
+| ToolIndex | `toolindex.ai` and `www.toolindex.ai` still returned DNS resolution errors. |
+| EveryAI | Requires login and the live site has mixed low-signal/spammy listings; not submitted. |
+| Tools AI Online | Submission page is protected by reCAPTCHA and broad ad-consent flow; not submitted. |
+| Aindexc | `/submit` returned `404`; no usable submission form found. |
+| Aieternals | HTTPS returned SSL/protocol failures and HTTP returned empty response; not submitted. |
+| AIToolsMarketer | Form exists, but submit is blocked by reCAPTCHA; not submitted without human captcha handling. |
+| AITrove | `/submit` returned `404`; contact form requires first name and last name; not submitted. |
+| Launching Next | Submit flow is blocked by a Cloudflare security check; not submitted. |
+| AI Respo | `https://airespo.com/submit-ai-tool` returned `404`; not submitted. |
+| AI Dreamhub | Submission flow requires either a verification badge/backlink or a paid option; not submitted. |
+| Zearches | Public URL submission exists, but directory quality is borderline because of affiliate/ad-heavy signals; skipped unless volume is explicitly prioritized over quality. |
+| SaaSCity | Submit flow showed registration/backlink/badge signals; not submitted. |
+| ShowMeYour.site | Login, paid, badge, founder identity, and Twitter signals; not submitted. |
+| ShowMeYourSaaS | Inspected as a SaaS-directory candidate, but not submitted yet because of quality/identity uncertainty. |
+| BetterLaunch | Free dofollow path requires a badge; not submitted. |
+| SaaSCubes | Free route showed mutual backlink/badge and founder/Twitter signals; not submitted. |
+| Projektify.de | Flow showed captcha/login/register/paid and personal-name/Twitter signals; not submitted. |
+| Dofollow.Tools | Form is usable, but the free plan requires adding a dofollow backlink/badge in the site footer; not submitted. |
+| ToolDirs | Same submit-template family as Dofollow.Tools; held because the free path is expected to require reciprocal badge/backlink. |
+| First Look | Same submit-template family as Dofollow.Tools; held because the free path is expected to require reciprocal badge/backlink. |
+| MarketingDB | Free plan requires embedding their badge; premium no-badge route is paid. Not submitted. |
+| ListMySaaS | Free plan requires badge verification; premium no-badge route is paid. Not submitted. |
+| BuildHop | Signup-only flow found, but no public submit route was available without creating an account first. Not submitted. |
+| RaceToShip | Submit route forces login before form access; not submitted in this pass. |
+| FutureTools | Public form requires CAPTCHA and a submitter name field; not submitted. |
+| SideProjectors | Marketplace/profile flow rather than a clean directory submission; account/profile risk is higher. Not submitted. |
+| Aitoonic | Public form exists, but browser automation was redirected to an Access Denied page; not submitted. |
+
 ## Blocked Or Failed New Attempts - 2026-04-29
 
 | Resource | Current finding |
@@ -140,11 +206,11 @@ These are worth doing, but may still require account confirmation:
 
 | Resource | Why it is relevant | Blocker |
 | --- | --- | --- |
-| Launching Next | Free startup/project submission, human review, no reciprocal requirement observed. | Requires submitter name and email; Cloudflare/browser challenge may block raw HTTP. |
-| AI Respo | Free manual AI directory, no paid feature requirement observed. | Requires name and email. |
-| AITrove | Curated AI tools directory with manual review. | Requires email; likely browser/JS form. |
+| Launching Next | Free startup/project submission, human review, no reciprocal requirement observed. | Cloudflare security check confirmed on 2026-05-02; needs manual browser access if pursued. |
+| AI Respo | Free manual AI directory, no paid feature requirement observed from search context. | Submit route returned `404` on 2026-05-02; hold until a valid route is found. |
+| AITrove | Curated AI tools directory with manual review. | Submit route returned `404`; contact form requires first name and last name. |
 | AI Review Battle | Free AI review/directory submission with manual review. | Requires email. |
-| AIToolsMarketer | Free AI software/tool submission; marketing-oriented audience. | Requires email. |
+| AIToolsMarketer | Free AI software/tool submission; marketing-oriented audience. | reCAPTCHA blocks automated submission; not suitable without human captcha handling. |
 | AlternativeTo | High-quality software alternatives graph; strong long-term backlink potential. | Requires account and product fit review. |
 | Product Hunt | High-authority launch platform with real audience. | Requires account and launch strategy; should not be used as a casual backlink drop. |
 | Uneed | Product Hunt alternative with active maker audience. | Requires account. |
@@ -210,7 +276,9 @@ to find reliable AI and automation tools faster.
 ## Next Required Input
 
 Use the public imprint contact for no-account editorial forms:
-`outcome_washed828@simplelogin.com`. For submitter/name fields, use only
-`Utildesk` or `Utildesk Team`. If a platform requires a real personal name,
-skip it and mark it as blocked unless the project owner explicitly approves
-that submission.
+`outcome_washed828@simplelogin.com`. For account/email-verification flows, use
+`utildesk@proton.me` only when the platform does not require personal identity;
+keep credentials in project secrets and never reuse or expose the Proton
+password. For submitter/name fields, use only `Utildesk` or `Utildesk Team`.
+If a platform requires a real personal name, skip it and mark it as blocked
+unless the project owner explicitly approves that exact submission.
