@@ -4,7 +4,7 @@ title: "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlic
 date: 2026-05-06
 category: "Workflow"
 eyebrow: "KI-Workflow"
-excerpt: "Browser-Agenten k?nnen Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+excerpt: "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
 readTime: 6
 coverImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.png
 secondaryImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png

@@ -1,6 +1,7 @@
 export const INDEX_KEY = "ratgeber-review:index";
 export const CANDIDATE_PREFIX = "ratgeber-review:candidates:";
 export const PUBLISH_QUEUE_PREFIX = "ratgeber-review:publish-queue:";
+export const PUBLISH_QUEUE_INDEX_KEY = "ratgeber-review:publish-queue:index";
 export const REWORK_QUEUE_PREFIX = "ratgeber-review:rework-queue:";
 
 export class HttpError extends Error {
@@ -55,6 +56,72 @@ export function assetKey(jobId, name) {
 
 export function publishQueueKey(requestId) {
   return `${PUBLISH_QUEUE_PREFIX}${normalizeAssetName(requestId)}.json`;
+}
+
+export async function readPublishRequest(env, rawRequestId) {
+  const kv = requireKv(env);
+  const requestId = normalizeAssetName(rawRequestId);
+  const key = publishQueueKey(requestId);
+  const direct = await kv.get(key, "json");
+  if (direct && typeof direct === "object") {
+    return { ...direct, key };
+  }
+
+  const index = await readPublishQueueIndex(env);
+  const indexed = index.requests.find((request) => request && request.id === requestId);
+  return indexed ? { ...indexed, key: indexed.key || key } : null;
+}
+
+export async function readPublishQueueIndex(env) {
+  const kv = requireKv(env);
+  let index = null;
+  try {
+    const raw = await kv.get(PUBLISH_QUEUE_INDEX_KEY, "text");
+    if (raw && typeof raw === "string") {
+      index = JSON.parse(raw.replace(/^\uFEFF/, ""));
+    }
+  } catch {
+    index = null;
+  }
+  if (!index || typeof index !== "object" || !Array.isArray(index.requests)) {
+    return { updatedAt: null, requests: [] };
+  }
+  return {
+    updatedAt: index.updatedAt || null,
+    requests: index.requests.filter((request) => request && typeof request === "object"),
+  };
+}
+
+export async function writePublishQueueIndex(env, requests) {
+  const kv = requireKv(env);
+  await kv.put(
+    PUBLISH_QUEUE_INDEX_KEY,
+    JSON.stringify(
+      {
+        updatedAt: new Date().toISOString(),
+        requests: Array.isArray(requests) ? requests.slice(0, 500) : [],
+      },
+      null,
+      2,
+    ),
+  );
+}
+
+export async function writePublishRequest(env, request) {
+  const kv = requireKv(env);
+  const requestId = normalizeAssetName(request?.id);
+  const key = publishQueueKey(requestId);
+  const nextRequest = {
+    ...request,
+    id: requestId,
+    key,
+  };
+  await kv.put(key, JSON.stringify(nextRequest, null, 2));
+
+  const index = await readPublishQueueIndex(env);
+  const withoutCurrent = index.requests.filter((item) => item && item.id !== requestId);
+  await writePublishQueueIndex(env, [nextRequest, ...withoutCurrent]);
+  return nextRequest;
 }
 
 export function reworkQueueKey(requestId) {
@@ -184,6 +251,11 @@ export async function readAsset(env, rawJobId, rawName) {
 
 export async function listPublishRequests(env) {
   const kv = requireKv(env);
+  const index = await readPublishQueueIndex(env);
+  if (index.requests.length) {
+    return index.requests.sort((a, b) => String(b.requestedAt || "").localeCompare(String(a.requestedAt || "")));
+  }
+
   const listed = await kv.list({ prefix: PUBLISH_QUEUE_PREFIX, limit: 1000 });
   const requests = [];
   for (const key of listed.keys) {
