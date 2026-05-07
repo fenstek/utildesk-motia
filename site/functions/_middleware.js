@@ -21,6 +21,11 @@ const PUBLIC_EXACT_PATHS = new Set([
   "/en/imprint/",
 ]);
 
+const RETIRED_ASSET_PATHS = new Set([
+  "/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.png",
+  "/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png",
+]);
+
 const slugify = (value) =>
   String(value || "")
     .toLowerCase()
@@ -54,6 +59,16 @@ export function onRequest(context) {
   }
 
   const url = new URL(request.url);
+  if (RETIRED_ASSET_PATHS.has(url.pathname)) {
+    return new Response(null, {
+      status: 410,
+      headers: {
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow",
+      },
+    });
+  }
+
   if (!url.search || !isPublicHtmlPath(url.pathname)) {
     return context.next();
   }
