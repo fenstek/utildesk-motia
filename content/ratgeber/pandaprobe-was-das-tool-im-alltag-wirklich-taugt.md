@@ -6,8 +6,8 @@ category: "Tool-Analyse"
 eyebrow: "Tool-Spotlight"
 excerpt: "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
 readTime: 5
-coverImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-cover.png
-secondaryImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.png
+coverImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-cover.webp
+secondaryImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.webp
 tags:
   - "KI-Orchestrierung"
   - "KI-Agenten"
@@ -72,7 +72,7 @@ In der Praxis zeigt sich, dass die Arbeit mit Agenten oft parallele Arbeitsumgeb
 
 Git-Worktrees erlauben es, für jede Agenten-Session eine saubere, isolierte Umgebung zu schaffen, die nach Abschluss einfach wieder entfernt werden kann.
 
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.png)
+![Schema eines orchestrierten KI-Workflows](/images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.webp)
 
 ## Wo die Grenzen liegen: Spec-Drift und blinde Flecken
 

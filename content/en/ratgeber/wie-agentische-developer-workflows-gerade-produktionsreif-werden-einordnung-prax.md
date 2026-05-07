@@ -6,7 +6,7 @@ category: Workflow
 eyebrow: AI Workflow
 excerpt: The age of simple autocomplete in software development is coming to an end.
 readTime: 7
-coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.png
+coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.webp
 secondaryImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.png
 tags:
   - Developer tools

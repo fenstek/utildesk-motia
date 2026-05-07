@@ -6,8 +6,8 @@ category: Guide
 eyebrow: AI Guide
 excerpt: Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible.
 readTime: 8
-coverImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-cover.png
-secondaryImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.png
+coverImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-cover.webp
+secondaryImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.webp
 tags:
   - AI Search
   - Web strategy
@@ -60,7 +60,7 @@ Traditional crawling is inefficient. Bots repeatedly check pages because they do
 
 Crawler hints and protocols such as IndexNow move the site toward proactive communication. Instead of hoping that a bot returns at the right moment, the site can send update signals when content is created, changed or removed.
 
-![AI-ready website workflow with crawl control and update signals](/images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.png)
+![AI-ready website workflow with crawl control and update signals](/images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.webp)
 
 For operators, this is not only an SEO feature. It is an infrastructure feature: fresher data, lower wasted crawl budget and more predictable server load.
 

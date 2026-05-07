@@ -6,8 +6,8 @@ category: "Tool Analysis"
 eyebrow: "Tool Spotlight"
 excerpt: "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
 readTime: 5
-coverImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-cover.png
-secondaryImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.png
+coverImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-cover.webp
+secondaryImage: /images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.webp
 tags:
   - "AI Orchestration"
   - "AI Agents"
@@ -39,12 +39,12 @@ In this fast-moving environment, PandaProbe positions itself as an open-source p
 
 If you want to not only place this topic in context but compare it in practice, these tools and frameworks are a good starting point:
 
-- [Claude](/tools/claude/) — if you want to test agentic coding sessions in the terminal or IDE against real-world use.
-- [GitHub Copilot](/tools/github-copilot/) — as a reference for the productive Copilot layer directly in the editor.
-- [Cursor](/tools/cursor/) — if you want to compare a more agentic IDE workflow with its own working context.
-- [Aider](/tools/aider/) — if you prefer to steer Git-native coding sessions directly from the terminal.
-- [LangChain](/tools/langchain/) — if you want to understand the orchestration logic and framework layer behind agents.
-- [CrewAI](/tools/crew-ai/) — if collaborative multi-agent flows with guardrails and observability interest you.
+- [Claude](/en/tools/claude/) — if you want to test agentic coding sessions in the terminal or IDE against real-world use.
+- [GitHub Copilot](/en/tools/github-copilot/) — as a reference for the productive Copilot layer directly in the editor.
+- [Cursor](/en/tools/cursor/) — if you want to compare a more agentic IDE workflow with its own working context.
+- [Aider](/en/tools/aider/) — if you prefer to steer Git-native coding sessions directly from the terminal.
+- [LangChain](/en/tools/langchain/) — if you want to understand the orchestration logic and framework layer behind agents.
+- [CrewAI](/en/tools/crew-ai/) — if collaborative multi-agent flows with guardrails and observability interest you.
 
 ## The Crisis of AI-Assisted Development
 
@@ -72,7 +72,7 @@ In practice, working with agents often requires parallel environments. This is w
 
 Git worktrees make it possible to create a clean, isolated environment for each agent session, which can then be removed just as easily after completion.
 
-![Diagram of an orchestrated AI workflow](/images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.png)
+![Diagram of an orchestrated AI workflow](/images/ratgeber/pandaprobe-was-das-tool-im-alltag-wirklich-taugt-workflow.webp)
 
 ## Where the Limits Are: Spec Drift and Blind Spots
 

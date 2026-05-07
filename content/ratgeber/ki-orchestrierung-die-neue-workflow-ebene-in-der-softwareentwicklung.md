@@ -6,8 +6,8 @@ category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
 readTime: 7
-coverImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-cover.png
-secondaryImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.png
+coverImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-cover.webp
+secondaryImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.webp
 tags:
   - "KI-Orchestrierung"
   - "KI-Agenten"
@@ -39,7 +39,7 @@ Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination v
 
 An diesem Punkt verschiebt sich die Herausforderung. Teams kämpfen dann nicht mehr primär mit fehlender Generierungsgeschwindigkeit, sondern mit fehlender Ordnung. Wer arbeitet gerade an welcher Teilaufgabe? Wo wird gegen die Spezifikation geprüft? Welche Änderung ist wirklich mergefähig? Aus Sicht produktiver Entwicklung ist genau das der Moment, in dem aus "KI hilft beim Coding" eine neue Workflow-Frage wird.
 
-![Schema eines orchestrierten KI-Workflows mit Spezifikation, Planung, Agenten, Prüfung und Review](/images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.png)
+![Schema eines orchestrierten KI-Workflows mit Spezifikation, Planung, Agenten, Prüfung und Review](/images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.webp)
 
 ## Was eine Orchestrierungsschicht konkret leistet
 
@@ -66,7 +66,7 @@ Für Teams heißt das: Ein guter Orchestrierungs-Workflow wird nicht daran erken
 
 Mit mehr Agenten steigt nicht nur der Bedarf an Planung, sondern auch an Nachvollziehbarkeit. Wer agentische Entwicklung ernsthaft nutzt, braucht früher oder später Antworten auf sehr operative Fragen: Welche Sitzung ist noch offen? Welche Entscheidung wurde in welcher Session getroffen? Wo kann ich in eine längere Bearbeitung wieder einsteigen, ohne mir den Kontext neu zusammenzusuchen?
 
-Genau deshalb ist ein Werkzeug wie Jeeves interessant. Der Punkt ist nicht, dass es noch eine weitere TUI gibt. Spannend ist, dass Session-Verwaltung, Verlauf und Wiederaufnahme plötzlich als eigenständige Produktaufgabe sichtbar werden. Dasselbe sieht man auch in den offiziellen Unterlagen zu Claude Code: mehrere Sessions, wiederkehrende Aufgaben, Automatisierung und Kontextpflege sind dort nicht Randnotizen, sondern Teil der Kernlogik.
+Genau deshalb ist ein Werkzeug wie Jeeves interessant. Der Punkt ist nicht, dass es noch eine weitere TUI gibt. Spannend ist, dass Session-Verwaltung, Verlauf und Wiederaufnahme plötzlich als eigenständige Produktaufgabe sichtbar werden. Dasselbe sieht man auch in den offiziellen Unterlagen zu [Claude](/tools/claude/) Code: mehrere Sessions, wiederkehrende Aufgaben, Automatisierung und Kontextpflege sind dort nicht Randnotizen, sondern Teil der Kernlogik.
 
 Der Markt lernt gerade, dass agentische Produktivität nicht nur aus Generierung besteht. Sie hängt daran, wie gut ein Team Verlauf, Zwischenstände, offene Fragen und Eingriffe über längere Arbeitsläufe kontrollieren kann.
 

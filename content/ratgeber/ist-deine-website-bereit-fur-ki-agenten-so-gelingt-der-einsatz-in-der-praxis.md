@@ -6,8 +6,8 @@ category: "Anleitung"
 eyebrow: "KI-Anleitung"
 excerpt: "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
 readTime: 8
-coverImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-cover.png
-secondaryImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.png
+coverImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-cover.webp
+secondaryImage: /images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.webp
 tags:
   - "AI Search"
   - "Webstrategie"
@@ -30,11 +30,11 @@ relatedTools:
   - title: "CrewAI"
     href: "/tools/crew-ai/"
 ---
-Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht **Cloudflare AI Crawl Control** heute eine präzise Identifikation und Steuerung von KI-Agenten wie **ChatGPT** oder **Anthropic** in Echtzeit.
+Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht **Cloudflare AI Crawl Control** heute eine präzise Identifikation und Steuerung von KI-Agenten wie **[ChatGPT](/tools/chatgpt/)** oder **[Anthropic](/tools/anthropic/)** in Echtzeit.
 
 Diese operative Verschiebung bedeutet, dass Webmaster nicht mehr nur passiv auf Crawler reagieren, sondern den Zugriff auf ihre wertvollen Datenbestände aktiv regeln können, um einer unkontrollierten Extraktion durch **Large Language Models (LLMs)** vorzubeugen.
 
-Wer seine technische Infrastruktur heute nicht anpasst, riskiert nicht nur hohe Serverlasten, sondern auch den Verlust der Kontrolle über das eigene geistige Eigentum in einer Ära, in der Dienste wie **Perplexity** herkömmliche Suchanfragen zunehmend ersetzen.
+Wer seine technische Infrastruktur heute nicht anpasst, riskiert nicht nur hohe Serverlasten, sondern auch den Verlust der Kontrolle über das eigene geistige Eigentum in einer Ära, in der Dienste wie **[Perplexity](/tools/perplexity/)** herkömmliche Suchanfragen zunehmend ersetzen.
 
 ## Relevante Tools auf Utildesk
 
@@ -55,7 +55,7 @@ Mit modernen Lösungen wie **AI Crawl Control** gewinnen Betreiber eine detailli
 
 Über zentrale Dashboards lässt sich exakt überwachen, welche KI-Modelle auf welche Verzeichnisse zugreifen. Dies ist besonders für Publisher, E-Commerce-Plattformen und Betreiber von Dokumentations-Seiten kritisch, um den Nutzen eines Crawls gegen die verbrauchten Ressourcen abzuwägen.
 
-Nur mit dieser Transparenz können fundierte Entscheidungen getroffen werden, ob ein Zugriff von **OpenAI** oder **Anthropic** den Unternehmenszielen dient oder lediglich Kosten verursacht.
+Nur mit dieser Transparenz können fundierte Entscheidungen getroffen werden, ob ein Zugriff von **OpenAI** oder **[Anthropic](/tools/anthropic/)** den Unternehmenszielen dient oder lediglich Kosten verursacht.
 
 Die Analyse des Traffics erlaubt es zudem, Verhaltensmuster zu bewerten und zu erkennen, welche Inhalte für KI-Systeme besonders attraktiv sind. Diese Erkenntnisse bilden die Grundlage für eine differenzierte Content-Strategie, die sowohl die Sichtbarkeit in KI-generierten Antworten erhöht als auch den Schutz sensibler Daten sicherstellt.
 
@@ -75,7 +75,7 @@ Crawler Hints nutzen den Cache-Status **MISS** als Signal für eine notwendige A
 
 Für den Betreiber bedeutet dies eine effizientere Indexierung bei gleichzeitig sinkenden Betriebskosten für die IT-Infrastruktur.
 
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.png)
+![Schema eines orchestrierten KI-Workflows](/images/ratgeber/ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis-workflow.webp)
 
 ## Risikomanagement und Guardrails: Schutz vor Datenextraktion
 
