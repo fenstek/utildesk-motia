@@ -557,6 +557,63 @@ export function pageShell(title, body, options = {}) {
         border: 1px solid rgba(190, 201, 197, 0.3);
       }
 
+      .review-meta-panel {
+        display: grid;
+        grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
+        gap: 18px;
+        margin: 22px 0 0;
+        padding: 16px;
+        border: 1px solid var(--line);
+        background: color-mix(in srgb, var(--bg-2) 78%, transparent);
+      }
+
+      .review-score {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .review-score strong {
+        color: var(--accent);
+        font-size: 1.8rem;
+        line-height: 1;
+      }
+
+      .review-score span,
+      .review-sources-title {
+        color: var(--fg-3);
+        font-size: 0.72rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
+
+      .review-sources {
+        min-width: 0;
+      }
+
+      .review-source-list {
+        display: grid;
+        gap: 7px;
+        margin: 7px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .review-source-list li {
+        min-width: 0;
+        color: var(--fg-2);
+        font-size: 0.82rem;
+        line-height: 1.45;
+      }
+
+      .review-source-list a {
+        color: var(--fg);
+        text-decoration: underline;
+        text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+        text-underline-offset: 2px;
+      }
+
       .pill--accent,
       .pill--tool {
         color: var(--primary);
@@ -905,6 +962,7 @@ export function pageShell(title, body, options = {}) {
       @media (max-width: 860px) {
         .grid,
         .article-body,
+        .review-meta-panel,
         .footer-content {
           grid-template-columns: 1fr;
         }
@@ -1073,12 +1131,57 @@ export function assetUrl(jobId, name, version = "") {
   return `/admin/ratgeber/asset?jobId=${encodeURIComponent(jobId)}&name=${encodeURIComponent(name)}${cacheBust}`;
 }
 
+function normalizeSourceItems(candidate, meta) {
+  const containers = [
+    candidate?.sources,
+    candidate?.source?.sources,
+    candidate?.audit?.sources,
+    meta?.sources,
+  ];
+  const seen = new Set();
+  const result = [];
+  for (const container of containers) {
+    if (!Array.isArray(container)) {
+      continue;
+    }
+    for (const item of container) {
+      const source = typeof item === "string" ? { title: item } : item || {};
+      const title = String(source.title || source.name || source.publisher || source.url || "").trim();
+      const publisher = String(source.publisher || source.name || "").trim();
+      const url = String(source.url || source.source_item_url || "").trim();
+      const key = `${title}|${url}`.toLowerCase();
+      if ((!title && !url) || seen.has(key)) {
+        continue;
+      }
+      seen.add(key);
+      result.push({ title, publisher, url });
+    }
+  }
+  return result.slice(0, 10);
+}
+
 export function renderFinalArticle(candidate) {
   const meta = candidate.meta || {};
   const coverName = candidate.assets?.cover?.name;
   const workflowName = candidate.assets?.workflow?.name;
   const assetVersion = candidate.uploadSignature || candidate.updatedAt || candidate.uploadedAt || "";
   let articleHtml = candidate.articleHtml || "";
+  const score = candidate.score === null || candidate.score === undefined ? "" : String(candidate.score);
+  const sourceItems = normalizeSourceItems(candidate, meta);
+  const sourceList = sourceItems.length
+    ? `<div class="review-sources"><p class="review-sources-title">Quellen</p><ul class="review-source-list">${sourceItems.map((source) => {
+        const label = source.publisher && source.publisher !== source.title
+          ? `${source.publisher}: ${source.title}`
+          : source.title || source.url;
+        return `<li>${source.url ? `<a href="${escapeAttribute(source.url)}" rel="nofollow noopener" target="_blank">${escapeHtml(label)}</a>` : escapeHtml(label)}</li>`;
+      }).join("")}</ul></div>`
+    : "";
+  const reviewMeta = score || sourceList
+    ? `<section class="review-meta-panel" aria-label="Review metadata">
+      <div class="review-score"><span>Bereitschaft</span><strong>${escapeHtml(score || "n/a")}${score ? "%" : ""}</strong></div>
+      ${sourceList || `<div class="review-sources"><p class="review-sources-title">Quellen</p><ul class="review-source-list"><li>Keine Quellen im Kandidatenpaket hinterlegt.</li></ul></div>`}
+    </section>`
+    : "";
 
   if (workflowName) {
     articleHtml = articleHtml.replaceAll("__WORKFLOW_IMAGE_URL__", assetUrl(candidate.jobId, workflowName, assetVersion));
@@ -1116,6 +1219,7 @@ export function renderFinalArticle(candidate) {
       <p class="article-excerpt">${escapeHtml(candidate.excerpt || "")}</p>
       <div class="article-pills">${pillHtml}</div>
     </header>
+    ${reviewMeta}
     ${cover}
     <div class="article-body">
       <article class="ratgeber-prose">${articleHtml}</article>
