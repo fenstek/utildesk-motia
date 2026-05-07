@@ -1,5 +1,19 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-06_
+_Last updated: 2026-05-07_
+
+## 2026-05-07 - Ratgeber Source And Tool-Link Guardrails
+
+### Done
+- Added a hard Ratgeber source rule: no Russian/Chinese/CJK source text, no RU/CN locale URLs, and no Russian corporate PR/local-market "know-how" as article source material.
+- Removed Habr from the topic-harvester source mix and added explicit filters for Habr, Sber/Sberbank/SberTech, Platform V, Yandex, VK, Mail.ru, Rambler, Rutube, Skolkovo, Tinkoff/T-Bank, MTS, and Kaspersky.
+- Added the catalog contract for Ratgeber text: recognized tool names must link to internal Utildesk cards when a card exists.
+- Added the missing-card contract: if a Ratgeber draft mentions a relevant tool without a card, queue that tool for review instead of inventing an external text link.
+- Clarified the admin-review contract: candidates do not self-improve in place; only an explicit rework request enters the KV queue, and the old preview should stay hidden until the rework consumer has produced real text or visual changes.
+- Replaced the current Browser-Agenten candidate's lower workflow illustration with a distinct ChatGPT-generated PNG scene and force-uploaded the refreshed candidate preview to Cloudflare at `2026-05-07T08:16:15Z`.
+
+### Verification
+- Local Python compile passed for `scripts/ratgeber_topic_harvester.py`, `scripts/ratgeber_cloudflare_candidate_sync.py`, and the patched `opcl` export script draft.
+- `opcl` rework cron is installed every 10 minutes and currently reports no pending rework requests; the refreshed candidate upload returned `ok: true` with both `cover.png` and `workflow.png` assets.
 
 ## 2026-05-06 - Search Sitemap Split
 
@@ -32,6 +46,22 @@ _Last updated: 2026-05-06_
 - Cloudflare admin review page no longer contains `SaaStr` or `Vyrill` candidates and shows no open candidates.
 - `opcl` dry-run sync reports `uploaded = 0` and both bad artifacts now have `cloudflare_review_rejected.json`.
 - `opcl` article review queue reports `count = 0` open review packets.
+
+## 2026-05-06 - Ratgeber Topic Harvester
+
+### Done
+- Added `scripts/ratgeber_topic_harvester.py` as the production-ready source-driven topic collector.
+- Copied it to `opcl:/opt/openclaw/workspace/agent-newsman/scripts/ratgeber_topic_harvester.py`.
+- Disabled the old `tool_spotlight` single-release fallback in both `opcl` copies of `intel_agent.py`.
+- Wired the harvester into `opcl` daily intel run after the news/source pass.
+- Queued two accepted multi-source Ratgeber jobs:
+  - `AI-Agenten im Betrieb: Welche Tools Kontrolle, Monitoring und Review wirklich leisten`
+  - `Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefaehrlich wird`
+
+### Verification
+- `python3 -m py_compile` passed for the harvester and patched `intel_agent.py` files on `opcl`.
+- Harvester dry-run produced only multi-source jobs; no `tool_spotlight` remained in `latest_run.json`.
+- `scripts/article_orchestrator.py --limit 2 --dry-run` accepted both jobs with `rejected_count = 0`.
 
 ## 2026-05-04 — Tool Editorial Expansion Batch 2
 

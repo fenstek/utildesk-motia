@@ -1068,18 +1068,20 @@ export function renderCandidateCard(candidate) {
   </article>`;
 }
 
-export function assetUrl(jobId, name) {
-  return `/admin/ratgeber/asset?jobId=${encodeURIComponent(jobId)}&name=${encodeURIComponent(name)}`;
+export function assetUrl(jobId, name, version = "") {
+  const cacheBust = version ? `&v=${encodeURIComponent(version)}` : "";
+  return `/admin/ratgeber/asset?jobId=${encodeURIComponent(jobId)}&name=${encodeURIComponent(name)}${cacheBust}`;
 }
 
 export function renderFinalArticle(candidate) {
   const meta = candidate.meta || {};
   const coverName = candidate.assets?.cover?.name;
   const workflowName = candidate.assets?.workflow?.name;
+  const assetVersion = candidate.uploadSignature || candidate.updatedAt || candidate.uploadedAt || "";
   let articleHtml = candidate.articleHtml || "";
 
   if (workflowName) {
-    articleHtml = articleHtml.replaceAll("__WORKFLOW_IMAGE_URL__", assetUrl(candidate.jobId, workflowName));
+    articleHtml = articleHtml.replaceAll("__WORKFLOW_IMAGE_URL__", assetUrl(candidate.jobId, workflowName, assetVersion));
   }
   articleHtml = articleHtml.replace(
     /<p>\s*(<img\b[^>]*>)\s*<\/p>/g,
@@ -1094,7 +1096,7 @@ export function renderFinalArticle(candidate) {
     ...tags,
   ].filter(Boolean);
   const pillHtml = pills.map((pill) => `<span class="pill">${escapeHtml(pill)}</span>`).join("");
-  const coverUrl = coverName ? assetUrl(candidate.jobId, coverName) : "";
+  const coverUrl = coverName ? assetUrl(candidate.jobId, coverName, assetVersion) : "";
   const cover = coverUrl
     ? `<figure class="article-cover">
       <button type="button" class="article-cover-trigger js-lightbox-image" data-lightbox-src="${escapeAttribute(coverUrl)}" data-lightbox-alt="${escapeAttribute(meta.eyebrow || "Illustration")}" aria-label="Illustration vergroessern: ${escapeAttribute(candidate.title)}">
