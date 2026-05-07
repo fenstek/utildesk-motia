@@ -4,6 +4,8 @@ title: "Browser Agents in Practice: Where Automation Helps and Where It Becomes 
 date: 2026-05-06
 category: "Workflow"
 eyebrow: "AI Workflow"
+coverImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.webp
+secondaryImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.webp
 excerpt: "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
 readTime: 6
 tags:
@@ -69,6 +71,8 @@ That is why OpenAI explicitly describes a handoff mode in Operator for sensitive
 A second problem is reliability. Browser agents are not automatically more robust than scripts. If they only look at screenshots and guess, they can get stuck in loops, click the wrong elements, or report success even though the actual step was never completed. Good agents therefore need stop rules, timeouts, retry limits, and a clear status: done, uncertain, or aborted.
 
 ## The sensible middle ground: agent plus guardrails
+
+![Browser agents with human approval and clear guardrails](/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.webp)
 
 A productive browser agent should not work like an invisible intern, but like a tightly logged assistant. Every run needs a goal, allowed domains, forbidden actions, and a clear escalation signal.
 

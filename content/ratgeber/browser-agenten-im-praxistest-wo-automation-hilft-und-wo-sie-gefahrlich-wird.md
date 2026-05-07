@@ -4,6 +4,8 @@ title: "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlic
 date: 2026-05-06
 category: "Workflow"
 eyebrow: "KI-Workflow"
+coverImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.webp
+secondaryImage: /images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.webp
 excerpt: "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
 readTime: 6
 tags:
@@ -69,6 +71,8 @@ OpenAI beschreibt bei Operator deshalb ausdrücklich einen Übernahmemodus für 
 Ein zweites Problem ist Zuverlässigkeit. Browser-Agenten sind nicht automatisch robuster als Skripte. Wenn sie nur Screenshots betrachten und raten, können sie in Schleifen geraten, falsche Elemente anklicken oder Erfolg melden, obwohl der eigentliche Schritt nie abgeschlossen wurde. Gute Agenten brauchen deshalb Stop-Regeln, Timeouts, Wiederholungsgrenzen und einen klaren Status: erledigt, unsicher oder abgebrochen.
 
 ## Der sinnvolle Mittelweg: Agent plus Guardrails
+
+![Browser-Agenten mit menschlicher Freigabe und klaren Guardrails](/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.webp)
 
 Ein produktiver Browser-Agent sollte nicht wie ein unsichtbarer Praktikant arbeiten, sondern wie ein streng protokollierter Assistent. Jeder Lauf braucht ein Ziel, erlaubte Domains, verbotene Aktionen und ein klares Eskalationssignal.
 
