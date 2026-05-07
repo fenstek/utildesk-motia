@@ -51,6 +51,28 @@ function toIsoDate(value) {
   return new Date().toISOString().slice(0, 10);
 }
 
+function normalizeSources(value) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (typeof item === "string") {
+        return { title: item, url: "" };
+      }
+      if (!item || typeof item !== "object") return null;
+      return {
+        title: String(item.title || item.name || item.publisher || item.url || "").trim(),
+        publisher: String(item.publisher || item.name || "").trim(),
+        url: String(item.url || item.source_item_url || "").trim(),
+      };
+    })
+    .filter((item) => item && (item.title || item.url));
+}
+
+function toScore(value) {
+  const score = Number(value);
+  return Number.isFinite(score) ? Math.max(0, Math.min(100, Math.round(score))) : 100;
+}
+
 async function main() {
   const articlePath = path.resolve(ROOT, arg("article"));
   const coverPath = path.resolve(ROOT, arg("cover"));
@@ -70,6 +92,8 @@ async function main() {
   const bodyMarkdown = stripTopHeading(parsed.content);
   const articleHtml = String(marked.parse(bodyMarkdown.replaceAll(parsed.data.secondaryImage || "", "__WORKFLOW_IMAGE_URL__")));
   const tags = Array.isArray(parsed.data.tags) ? parsed.data.tags.map(String) : [];
+  const sources = normalizeSources(parsed.data.sources);
+  const score = toScore(parsed.data.score ?? parsed.data.readinessScore ?? parsed.data.qualityScore);
   const candidate = {
     jobId,
     title: String(parsed.data.title || jobId),
@@ -77,7 +101,7 @@ async function main() {
     excerpt: String(parsed.data.excerpt || ""),
     status: "review_ready",
     reviewStatus: "review_ready",
-    score: null,
+    score,
     visualStatus: "png_ready",
     createdAt: new Date().toISOString(),
     articleHtml,
@@ -88,12 +112,15 @@ async function main() {
       eyebrow: String(parsed.data.eyebrow || "Ratgeber"),
       tags,
       relatedTools: Array.isArray(parsed.data.relatedTools) ? parsed.data.relatedTools : [],
+      sources,
       sidebarTitle: String(parsed.data.sidebarTitle || "Kurzfazit"),
       sidebarPoints: Array.isArray(parsed.data.sidebarPoints) ? parsed.data.sidebarPoints.map(String) : [],
     },
+    sources,
     audit: {
       source: path.relative(ROOT, articlePath),
       uploadTool: "upload_ratgeber_candidate_from_md.mjs",
+      readinessScore: score,
     },
   };
 
@@ -105,6 +132,7 @@ async function main() {
     },
     body: JSON.stringify({
       candidate,
+      force: Boolean(arg("force")),
       assets: [imageAsset("cover", coverPath), imageAsset("workflow", workflowPath)],
     }),
   });
