@@ -6,8 +6,8 @@ category: "Trend"
 eyebrow: "KI-Trend"
 excerpt: "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
 readTime: 8
-coverImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-cover.png
-secondaryImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.png
+coverImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-cover.webp
+secondaryImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.webp
 tags:
   - "AI-Tools"
   - "Distribution"
@@ -67,7 +67,7 @@ Es geht darum, das "Launch-Theater" – das bloße Erzeugen von kurzem Rauschen 
 
 ## Workflow-Automatisierung mit Tiefgang: Heym
 
-Während Tools wie Submit.DIY die äußere Schicht der Distribution bedienen, verändert sich im Hintergrund die Art und Weise, wie KI-Produkte intern arbeiten und gewartet werden. Die Plattform **Heym** zeigt, wie eine moderne, KI-native Automatisierungsschicht aussieht. Im Gegensatz zu klassischen No-Code-Tools wie Zapier wurde Heym von Grund auf für KI-Workflows konzipiert.
+Während Tools wie Submit.DIY die äußere Schicht der Distribution bedienen, verändert sich im Hintergrund die Art und Weise, wie KI-Produkte intern arbeiten und gewartet werden. Die Plattform **Heym** zeigt, wie eine moderne, KI-native Automatisierungsschicht aussieht. Im Gegensatz zu klassischen No-Code-Tools wie [Zapier](/tools/zapier/) wurde Heym von Grund auf für KI-Workflows konzipiert.
 
 Ein entscheidendes Merkmal ist die Fähigkeit zur Multi-Agenten-Orchestrierung. Ein zentraler Orchestrator-Agent delegiert Aufgaben an spezialisierte Unter-Agenten, wobei die Kontrolle visuell auf einem Canvas erhalten bleibt.
 
@@ -85,7 +85,7 @@ Das Besondere: Die Agenten kommunizieren untereinander, deklarieren Abhängigkei
 
 Für Teams bedeutet das eine Verschiebung der Arbeit: Man wird zum "Routing Layer" oder Kurator, anstatt jeden Schritt selbst zu steuern. WUPHF nutzt dabei lokale Speicherlösungen und Wissensgraphen, um sicherzustellen, dass die Agenten sich auch am nächsten Tag noch an getroffene Entscheidungen und Projektfortschritte erinnern.
 
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.png)
+![Schema eines orchestrierten KI-Workflows](/images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.webp)
 
 ## Grenzen, Risiken und die Realität der Self-Hosting-Modelle
 

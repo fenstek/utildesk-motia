@@ -6,7 +6,7 @@ category: "Workflow"
 eyebrow: "KI-Workflow"
 excerpt: "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
 readTime: 7
-coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.png
+coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.webp
 secondaryImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.png
 tags:
   - "Developer Tools"
@@ -48,13 +48,13 @@ Wenn du das Thema nicht nur einordnen, sondern praktisch vergleichen willst, sin
 
 ## Werkzeuge für aktives Handeln in der Codebasis
 
-Moderne agentische Tools zeichnen sich dadurch aus, dass sie aktiv mit der Entwicklungsumgebung interagieren können. Ein zentrales Beispiel ist Claude Code, das direkt im Terminal, in der IDE oder im Browser operiert. Das Werkzeug beschränkt sich nicht auf Antworten, sondern liest die gesamte Codebasis, bearbeitet Dateien und führt Befehle eigenständig aus.
+Moderne agentische Tools zeichnen sich dadurch aus, dass sie aktiv mit der Entwicklungsumgebung interagieren können. Ein zentrales Beispiel ist [Claude](/tools/claude/) Code, das direkt im Terminal, in der IDE oder im Browser operiert. Das Werkzeug beschränkt sich nicht auf Antworten, sondern liest die gesamte Codebasis, bearbeitet Dateien und führt Befehle eigenständig aus.
 
 ![Schema eines orchestrierten KI-Workflows](/images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.png)
 
 Solche Agenten beheben Fehler, bauen neue Funktionen oder übernehmen mühsame Routineaufgaben wie das Schreiben von Tests.
 
-Parallel dazu setzen Frameworks wie CrewAI auf die Kollaboration mehrerer spezialisierter Agenten innerhalb sogenannter "Crews". Diese Systeme nutzen definiertes Zustandsmanagement und Prozesse, um komplexe Abläufe mit integrierten Guardrails abzubilden.
+Parallel dazu setzen Frameworks wie [CrewAI](/tools/crew-ai/) auf die Kollaboration mehrerer spezialisierter Agenten innerhalb sogenannter "Crews". Diese Systeme nutzen definiertes Zustandsmanagement und Prozesse, um komplexe Abläufe mit integrierten Guardrails abzubilden.
 
 Für Teams bedeutet dies eine Verschiebung der Arbeitslast, da Agenten beispielsweise Lint-Fehler beheben können, während Menschen sich auf die Architektur konzentrieren. Durch das Model Context Protocol (MCP) erhalten Agenten zudem Zugriff auf externe Datenquellen wie Jira-Tickets oder Slack-Nachrichten.
 
@@ -93,7 +93,7 @@ Besonders Teams mit Microservice-Architekturen profitieren von der Konsistenzwah
 
 ## Fazit
 
-Agentische Developer-Workflows markieren den Punkt, an dem KI von einem reinen Inspirationstool zu einer tragenden Säule der Softwareproduktion wird. Durch das Zusammenspiel von handelnden Agenten wie Claude Code, stabilen Orchestrierungs-Frameworks wie LangGraph und strengen Verifikations-Layern wie Intent wird autonome Code-Erstellung sicher skalierbar.
+Agentische Developer-Workflows markieren den Punkt, an dem KI von einem reinen Inspirationstool zu einer tragenden Säule der Softwareproduktion wird. Durch das Zusammenspiel von handelnden Agenten wie [Claude](/tools/claude/) Code, stabilen Orchestrierungs-Frameworks wie LangGraph und strengen Verifikations-Layern wie Intent wird autonome Code-Erstellung sicher skalierbar.
 
 Die Kombination dieser Technologien ermöglicht es, die Geschwindigkeit der KI mit der notwendigen architektonischen Integrität zu vereinen.
 

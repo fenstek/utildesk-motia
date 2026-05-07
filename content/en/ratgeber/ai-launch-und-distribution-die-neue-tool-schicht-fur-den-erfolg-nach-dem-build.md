@@ -6,8 +6,8 @@ category: "Trend"
 eyebrow: "AI Trend"
 excerpt: "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
 readTime: 8
-coverImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-cover.png
-secondaryImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.png
+coverImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-cover.webp
+secondaryImage: /images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.webp
 tags:
   - "AI Tools"
   - "Distribution"
@@ -44,12 +44,12 @@ This new infrastructure closes the gap between product development and market en
 
 If you want to compare the topic in a practical tool context, these entries are a useful starting point:
 
-- [Claude](/tools/claude/) - useful when you want to test agentic coding sessions in the terminal or IDE against real work.
-- [GitHub Copilot](/tools/github-copilot/) - the reference point for a productive copilot layer directly inside the editor.
-- [Cursor](/tools/cursor/) - relevant if you want a more agentic IDE workflow with persistent project context.
-- [Aider](/tools/aider/) - a good fit when you prefer Git-centered coding sessions directly in the terminal.
-- [LangChain](/tools/langchain/) - helpful for understanding the orchestration and framework layer behind agents.
-- [CrewAI](/tools/crew-ai/) - relevant for collaborative multi-agent flows with guardrails and observability.
+- [Claude](/en/tools/claude/) - useful when you want to test agentic coding sessions in the terminal or IDE against real work.
+- [GitHub Copilot](/en/tools/github-copilot/) - the reference point for a productive copilot layer directly inside the editor.
+- [Cursor](/en/tools/cursor/) - relevant if you want a more agentic IDE workflow with persistent project context.
+- [Aider](/en/tools/aider/) - a good fit when you prefer Git-centered coding sessions directly in the terminal.
+- [LangChain](/en/tools/langchain/) - helpful for understanding the orchestration and framework layer behind agents.
+- [CrewAI](/en/tools/crew-ai/) - relevant for collaborative multi-agent flows with guardrails and observability.
 
 ## Strategic Distribution Instead of Launch Theater
 
@@ -81,7 +81,7 @@ The mechanism goes beyond simple command chains. A user posts a goal in a genera
 
 For teams, this changes the nature of work. The human becomes more of a routing layer, editor and final decision-maker instead of manually steering every individual step. WUPHF also uses local memory and knowledge graphs so agents can retain decisions and project progress across sessions.
 
-![Map of an AI launch and distribution workflow](/images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.png)
+![Map of an AI launch and distribution workflow](/images/ratgeber/ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build-workflow.webp)
 
 ## Limits, Risks and the Reality of Self-Hosting
 

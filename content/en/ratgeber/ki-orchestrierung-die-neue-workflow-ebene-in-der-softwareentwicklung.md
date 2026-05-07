@@ -6,8 +6,8 @@ category: Analysis
 eyebrow: AI Workflow
 excerpt: The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps.
 readTime: 7
-coverImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-cover.png
-secondaryImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.png
+coverImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-cover.webp
+secondaryImage: /images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.webp
 tags:
   - AI orchestration
   - AI agents
@@ -42,7 +42,7 @@ That pressure creates a new layer in the stack: AI orchestration.
 
 The real problem starts one layer above that. When multiple agents, branches, reviews and sessions run in parallel, a good chat interface is not enough. Teams need to know who is working on what, where the implementation is being checked against the specification, and which changes are actually safe to merge.
 
-![Orchestrated AI workflow with specification, planning, agents, verification and review](/images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.png)
+![Orchestrated AI workflow with specification, planning, agents, verification and review](/images/ratgeber/ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung-workflow.webp)
 
 ## What an orchestration layer does
 
