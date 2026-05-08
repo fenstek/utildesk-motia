@@ -63,6 +63,17 @@ function readGitLastmodMap() {
   return lastmodByPath;
 }
 
+function shouldIgnoreGitLastmodMap(gitLastmodByPath, existingManifest) {
+  const gitDates = new Set(gitLastmodByPath.values());
+  const existingDates = new Set(Object.values(existingManifest).filter(Boolean));
+
+  return (
+    gitLastmodByPath.size > 1000 &&
+    gitDates.size <= 2 &&
+    existingDates.size > 5
+  );
+}
+
 async function listMarkdownFiles(relativeDir) {
   const absoluteDir = join(REPO_ROOT, relativeDir);
   const files = [];
@@ -95,6 +106,7 @@ async function listMarkdownFiles(relativeDir) {
 async function main() {
   const existingManifest = await readExistingManifest();
   const gitLastmodByPath = readGitLastmodMap();
+  const ignoreGitLastmod = shouldIgnoreGitLastmodMap(gitLastmodByPath, existingManifest);
   const files = [];
 
   for (const dir of CONTENT_DIRS) {
@@ -103,7 +115,7 @@ async function main() {
 
   const nextManifest = {};
   for (const relativePath of files.sort((a, b) => a.localeCompare(b))) {
-    let lastmod = gitLastmodByPath.get(relativePath) || existingManifest[relativePath];
+    let lastmod = (ignoreGitLastmod ? null : gitLastmodByPath.get(relativePath)) || existingManifest[relativePath];
     if (!/^\d{4}-\d{2}-\d{2}$/.test(String(lastmod || ''))) {
       try {
         lastmod = formatDate((await stat(join(REPO_ROOT, relativePath))).mtime);
@@ -122,7 +134,9 @@ async function main() {
 
   console.log(
     `Wrote ${Object.keys(nextManifest).length} content lastmod dates to ${OUTPUT_FILE} ` +
-      `(${gitLastmodByPath.size} from git, ${Object.keys(existingManifest).length} preserved candidates)`,
+      `(${ignoreGitLastmod ? 0 : gitLastmodByPath.size} from git, ` +
+      `${Object.keys(existingManifest).length} preserved candidates` +
+      `${ignoreGitLastmod ? ', ignored shallow git snapshot' : ''})`,
   );
 }
 
