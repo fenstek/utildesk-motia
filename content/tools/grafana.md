@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [monitoring, observability, dashboards]
 official_url: "https://grafana.com/"
-popularity: 57
+popularity: 56
 ---
 
 # Grafana
