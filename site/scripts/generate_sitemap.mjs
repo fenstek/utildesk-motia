@@ -10,6 +10,7 @@
  * advertising that broader feed in robots.txt.
  */
 
+import { execFileSync } from 'node:child_process';
 import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,6 +24,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const BASE_URL = 'https://tools.utildesk.de';
+const REPO_ROOT = join(__dirname, '../..');
 const DIST_DIR = join(__dirname, '../dist');
 const DIST_TOOLS_DIR = join(DIST_DIR, 'tools');
 const DIST_CATEGORY_DIR = join(DIST_DIR, 'category');
@@ -31,7 +33,7 @@ const DIST_EN_DIR = join(DIST_DIR, 'en');
 const DIST_EN_TOOLS_DIR = join(DIST_EN_DIR, 'tools');
 const DIST_EN_CATEGORY_DIR = join(DIST_EN_DIR, 'category');
 const DIST_EN_RATGEBER_DIR = join(DIST_EN_DIR, 'ratgeber');
-const CONTENT_TOOLS_DIR = join(__dirname, '../../content/tools');
+const CONTENT_TOOLS_DIR = join(REPO_ROOT, 'content/tools');
 const TOOL_ADDED_AT_FILE = join(__dirname, '../src/data/tool-added-at.json');
 const GOOGLE_OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 const BING_OUTPUT_FILE = join(DIST_DIR, 'sitemap-bing.xml');
@@ -49,6 +51,98 @@ function escapeXml(str) {
 
 function formatDate(date) {
   return date.toISOString().split('T')[0];
+}
+
+let gitLastmodByPath = null;
+
+function normalizeRepoPath(relativePath) {
+  return String(relativePath || '').replace(/\\/g, '/');
+}
+
+function readGitLastmodMap() {
+  if (gitLastmodByPath) {
+    return gitLastmodByPath;
+  }
+
+  const lastmodByPath = new Map();
+  try {
+    const output = execFileSync(
+      'git',
+      [
+        'log',
+        '--format=%cs',
+        '--name-only',
+        '--',
+        'content/tools',
+        'content/en/tools',
+        'content/ratgeber',
+        'content/en/ratgeber',
+      ],
+      {
+        cwd: REPO_ROOT,
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'ignore'],
+      },
+    );
+
+    let currentDate = null;
+    for (const rawLine of output.split(/\r?\n/)) {
+      const line = rawLine.trim();
+      if (!line) {
+        continue;
+      }
+      if (/^\d{4}-\d{2}-\d{2}$/.test(line)) {
+        currentDate = line;
+        continue;
+      }
+      if (currentDate) {
+        const relativePath = normalizeRepoPath(line);
+        if (!lastmodByPath.has(relativePath)) {
+          lastmodByPath.set(relativePath, currentDate);
+        }
+      }
+    }
+  } catch {
+    // Non-git build environments fall back to source file mtimes below.
+  }
+
+  gitLastmodByPath = lastmodByPath;
+  return gitLastmodByPath;
+}
+
+function readGitLastmod(relativePath) {
+  return readGitLastmodMap().get(normalizeRepoPath(relativePath)) ?? null;
+}
+
+async function readSourceLastmod(relativePath, fallbackPath = null) {
+  const gitLastmod = readGitLastmod(relativePath);
+  if (gitLastmod) {
+    return gitLastmod;
+  }
+
+  try {
+    const stats = await stat(join(REPO_ROOT, relativePath));
+    return formatDate(stats.mtime);
+  } catch {
+    if (fallbackPath) {
+      return formatDate(await getFileModTime(fallbackPath));
+    }
+    return formatDate(new Date());
+  }
+}
+
+async function readToolSourceLastmod(slug, locale, fallbackPath) {
+  const relativePath = locale === 'en'
+    ? `content/en/tools/${slug}.md`
+    : `content/tools/${slug}.md`;
+  return readSourceLastmod(relativePath, fallbackPath);
+}
+
+async function readRatgeberSourceLastmod(slug, locale, fallbackPath) {
+  const relativePath = locale === 'en'
+    ? `content/en/ratgeber/${slug}.md`
+    : `content/ratgeber/${slug}.md`;
+  return readSourceLastmod(relativePath, fallbackPath);
 }
 
 async function getFileModTime(filepath) {
@@ -115,9 +209,9 @@ async function readToolIndexPolicySlugs() {
   };
 }
 
-async function readBuiltTools(indexableSlugs) {
+async function readBuiltTools(indexableSlugs, rootDir = DIST_TOOLS_DIR, locale = 'de') {
   try {
-    const entries = await readdir(DIST_TOOLS_DIR, { withFileTypes: true });
+    const entries = await readdir(rootDir, { withFileTypes: true });
     const tools = [];
 
     for (const entry of entries) {
@@ -132,14 +226,14 @@ async function readBuiltTools(indexableSlugs) {
       if (indexableSlugs && !indexableSlugs.has(slug)) {
         continue;
       }
-      const indexPath = join(DIST_TOOLS_DIR, slug, 'index.html');
+      const indexPath = join(rootDir, slug, 'index.html');
 
       // Verify index.html exists
       try {
-        const mtime = await getFileModTime(indexPath);
+        await stat(indexPath);
         tools.push({
           slug,
-          lastmod: formatDate(mtime),
+          lastmod: await readToolSourceLastmod(slug, locale, indexPath),
         });
       } catch {
         // Skip if index.html doesn't exist
@@ -198,17 +292,17 @@ async function readBuiltCategories() {
   }
 }
 
-async function readBuiltRatgeber() {
+async function readBuiltRatgeber(rootDir = DIST_RATGEBER_DIR, locale = 'de') {
   try {
     const ratgeber = [];
 
     try {
-      await stat(DIST_RATGEBER_DIR);
+      await stat(rootDir);
     } catch {
       return ratgeber;
     }
 
-    const entries = await readdir(DIST_RATGEBER_DIR, { withFileTypes: true });
+    const entries = await readdir(rootDir, { withFileTypes: true });
 
     for (const entry of entries) {
       if (!entry.isDirectory()) {
@@ -216,13 +310,13 @@ async function readBuiltRatgeber() {
       }
 
       const slug = entry.name;
-      const indexPath = join(DIST_RATGEBER_DIR, slug, 'index.html');
+      const indexPath = join(rootDir, slug, 'index.html');
 
       try {
-        const mtime = await getFileModTime(indexPath);
+        await stat(indexPath);
         ratgeber.push({
           slug,
-          lastmod: formatDate(mtime),
+          lastmod: await readRatgeberSourceLastmod(slug, locale, indexPath),
         });
       } catch {
         continue;
@@ -261,8 +355,7 @@ async function readBuiltLocalizedDirectories(rootDir, reservedSegments = new Set
 }
 
 async function readBuiltLocalizedTools(rootDir, indexableSlugs) {
-  const tools = await readBuiltLocalizedDirectories(rootDir, RESERVED_TOOL_SEGMENTS);
-  return indexableSlugs ? tools.filter((tool) => indexableSlugs.has(tool.slug)) : tools;
+  return readBuiltTools(indexableSlugs, rootDir, 'en');
 }
 
 async function readBuiltStaticPage(...segments) {
@@ -318,7 +411,7 @@ async function collectSharedSitemapInputs() {
   const categories = await readBuiltCategories();
   const ratgeber = await readBuiltRatgeber();
   const enCategories = await readBuiltLocalizedDirectories(DIST_EN_CATEGORY_DIR);
-  const enRatgeber = await readBuiltLocalizedDirectories(DIST_EN_RATGEBER_DIR);
+  const enRatgeber = await readBuiltRatgeber(DIST_EN_RATGEBER_DIR, 'en');
   const methodologyPage = await readBuiltStaticPage('methodologie');
   const enMethodologyPage = await readBuiltStaticPage('en', 'methodology');
   const today = formatDate(new Date());
