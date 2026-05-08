@@ -35,6 +35,7 @@ const DIST_EN_CATEGORY_DIR = join(DIST_EN_DIR, 'category');
 const DIST_EN_RATGEBER_DIR = join(DIST_EN_DIR, 'ratgeber');
 const CONTENT_TOOLS_DIR = join(REPO_ROOT, 'content/tools');
 const TOOL_ADDED_AT_FILE = join(__dirname, '../src/data/tool-added-at.json');
+const CONTENT_LASTMOD_FILE = join(__dirname, '../src/data/content-lastmod.json');
 const GOOGLE_OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 const BING_OUTPUT_FILE = join(DIST_DIR, 'sitemap-bing.xml');
 const OUTPUT_FILE = GOOGLE_OUTPUT_FILE;
@@ -54,6 +55,7 @@ function formatDate(date) {
 }
 
 let gitLastmodByPath = null;
+let contentLastmodManifest = null;
 
 function normalizeRepoPath(relativePath) {
   return String(relativePath || '').replace(/\\/g, '/');
@@ -114,10 +116,30 @@ function readGitLastmod(relativePath) {
   return readGitLastmodMap().get(normalizeRepoPath(relativePath)) ?? null;
 }
 
+async function readContentLastmodManifest() {
+  if (contentLastmodManifest) {
+    return contentLastmodManifest;
+  }
+
+  try {
+    contentLastmodManifest = JSON.parse(await readFile(CONTENT_LASTMOD_FILE, 'utf8'));
+  } catch {
+    contentLastmodManifest = {};
+  }
+
+  return contentLastmodManifest;
+}
+
 async function readSourceLastmod(relativePath, fallbackPath = null) {
   const gitLastmod = readGitLastmod(relativePath);
   if (gitLastmod) {
     return gitLastmod;
+  }
+
+  const manifest = await readContentLastmodManifest();
+  const manifestLastmod = manifest[normalizeRepoPath(relativePath)];
+  if (/^\d{4}-\d{2}-\d{2}$/.test(String(manifestLastmod || ''))) {
+    return manifestLastmod;
   }
 
   try {
