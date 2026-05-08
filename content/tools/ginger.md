@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [writing, productivity, automation, assistant]
 official_url: "https://www.gingersoftware.com/"
-popularity: 61
+popularity: 60
 ---
 
 # Ginger

@@ -2,12 +2,12 @@
 slug: consensus
 title: Consensus
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["design"]
-official_url: 'https://consensus.app/'
-created_at: "2026-02-14"
-popularity: 0
-description: "Consensus ist ein Recherche- und Analysewerkzeug für KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten."
+official_url: "https://consensus.app/"
+created_at: 2026-02-14
+popularity: 70
+description: Consensus ist ein Recherche- und Analysewerkzeug für KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten.
 ---
 # Consensus
 
