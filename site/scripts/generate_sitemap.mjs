@@ -131,15 +131,15 @@ async function readContentLastmodManifest() {
 }
 
 async function readSourceLastmod(relativePath, fallbackPath = null) {
-  const gitLastmod = readGitLastmod(relativePath);
-  if (gitLastmod) {
-    return gitLastmod;
-  }
-
   const manifest = await readContentLastmodManifest();
   const manifestLastmod = manifest[normalizeRepoPath(relativePath)];
   if (/^\d{4}-\d{2}-\d{2}$/.test(String(manifestLastmod || ''))) {
     return manifestLastmod;
+  }
+
+  const gitLastmod = readGitLastmod(relativePath);
+  if (gitLastmod) {
+    return gitLastmod;
   }
 
   try {
