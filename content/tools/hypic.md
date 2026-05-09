@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["design", "photo", "image", "mobile", "ai"]
 official_url: "https://play.google.com/store/apps/details?id=com.xt.retouchoversea"
 affiliate_url: "https://play.google.com/store/apps/details?id=com.xt.retouchoversea"
-popularity: 51
+popularity: 48
 description: Mobile Foto- und Bildbearbeitung mit KI-Funktionen für Retusche, Looks, Social Content und schnelle Visuals.
 ---
 

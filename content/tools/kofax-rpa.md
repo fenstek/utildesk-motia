@@ -6,7 +6,7 @@ price_model: Je nach Plan
 tags: ["automation", "rpa", "workflow", "enterprise", "integration"]
 official_url: "https://www.tungstenautomation.com/products/rpa"
 affiliate_url: "https://www.tungstenautomation.com/products/rpa"
-popularity: 46
+popularity: 44
 description: Enterprise-RPA für die Automatisierung regelbasierter Prozesse, Datenzugriffe und Systemarbeit.
 ---
 

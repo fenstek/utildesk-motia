@@ -7,7 +7,7 @@ tags: ["translation", "speech", "writing", "api", "language"]
 official_url: "https://lingvanex.com/"
 affiliate_url: "https://lingvanex.com/"
 created_at: 2026-02-15
-popularity: 44
+popularity: 41
 description: Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, API- und Unternehmensszenarien.
 ---
 
