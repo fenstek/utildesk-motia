@@ -76,7 +76,7 @@ Typisch ist eine Staffelung nach:
 - **Pro-Plan** für Einzelpersonen mit mehr Downloads, Vorlagen und Produktionsfreiheit;
 - **Team-Plan** für gemeinsame Vorlagen, Zusammenarbeit und zentrale Markenarbeit.
 
-Vor einer Entscheidung sollte man nicht nur den monatlichen Preis vergleichen, sondern auch die tatsaechlichen Limits prüfen: Anzahl der Downloads, Verfügbarkeit von Markenfunktionen, Teamrechte, Exportformate und Nutzungsrechte für Bilder. Für ein Team, das jede Woche viele Social-Media-Grafiken erstellt, kann ein bezahlter Plan schnell sinnvoll sein. Für seltene Einzelgrafiken reicht eventuell ein einfacheres oder bereits vorhandenes Tool.
+Vor einer Entscheidung sollte man nicht nur den monatlichen Preis vergleichen, sondern auch die tatsächlichen Limits prüfen: Anzahl der Downloads, Verfügbarkeit von Markenfunktionen, Teamrechte, Exportformate und Nutzungsrechte für Bilder. Für ein Team, das jede Woche viele Social-Media-Grafiken erstellt, kann ein bezahlter Plan schnell sinnvoll sein. Für seltene Einzelgrafiken reicht eventuell ein einfacheres oder bereits vorhandenes Tool.
 
 ## Alternativen zu Snappa
 

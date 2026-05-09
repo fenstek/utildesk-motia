@@ -55,16 +55,16 @@ Gladia bietet verschiedene Preismodelle an, die sich nach dem gewählten Plan un
 - **Google Cloud AI**: Breites Spektrum an KI-Diensten, darunter Sprach-, Bild- und Videoanalyse.
 - **Microsoft Azure AI**: Integrierte KI-Services für Entwickler und Unternehmen zur Workflow-Optimierung.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Gladia ist fuer Teams interessant, die Audio- und Videoinhalte automatisiert transkribieren oder weiterverarbeiten wollen. Entscheidend sind Erkennungsqualitaet bei realen Aufnahmen, Sprecherwechsel, Sprachen, API-Zuverlaessigkeit und wie gut Transkripte in Suche, Analyse oder Supportprozesse einfliessen.
+Gladia ist für Teams interessant, die Audio- und Videoinhalte automatisiert transkribieren oder weiterverarbeiten wollen. Entscheidend sind Erkennungsqualität bei realen Aufnahmen, Sprecherwechsel, Sprachen, API-Zuverlaessigkeit und wie gut Transkripte in Suche, Analyse oder Supportprozesse einfließen.
 
 ## Workflow-Fit
 
-- Gut fuer Medienarchive, Meeting-Auswertung, Call-Analyse, Untertitel und Voice-Datenpipelines.
+- Gut für Medienarchive, Meeting-Auswertung, Call-Analyse, Untertitel und Voice-Datenpipelines.
 - Weniger passend, wenn jede Transkription juristisch verbindlich sein muss und keine menschliche Kontrolle vorgesehen ist.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 Gladia kann Audio in nutzbare Daten verwandeln. Der produktive Wert entsteht aber erst, wenn Transkripte korrigiert, strukturiert und in konkrete Folgeprozesse eingebunden werden.
 

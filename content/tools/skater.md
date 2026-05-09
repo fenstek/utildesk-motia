@@ -53,18 +53,18 @@ Die Preisgestaltung von Skater hängt vom jeweiligen Anbieter und dem gewählten
 - **AthleteIQ:** KI-Tool für personalisiertes Training und Performance-Tracking.
 - **FitAnalytics:** Umfassende Lösung für Sportdatenanalyse und Trainingsoptimierung.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Skater richtet sich an Teams, die Modellvorhersagen besser erklaeren und diagnostizieren wollen. Der praktische Wert liegt nicht in einer einzelnen Grafik, sondern im Vergleich verschiedener Erklaerungsansaetze, damit Modellverhalten, Feature-Einfluss und moegliche Fehlannahmen diskutierbar werden.
+Skater richtet sich an Teams, die Modellvorhersagen besser erklären und diagnostizieren wollen. Der praktische Wert liegt nicht in einer einzelnen Grafik, sondern im Vergleich verschiedener Erklärungsansätze, damit Modellverhalten, Feature-Einfluss und mögliche Fehlannahmen diskutierbar werden.
 
 ## Workflow-Fit
 
-- Gut fuer Data-Science-Reviews, Modellvalidierung und Gespraeche mit Fachbereichen ueber Blackbox-Modelle.
-- Weniger geeignet, wenn Explainability nur als nachtraegliches Compliance-Haekchen ohne echte Modellpruefung genutzt wird.
+- Gut für Data-Science-Reviews, Modellvalidierung und Gespräche mit Fachbereichen über Blackbox-Modelle.
+- Weniger geeignet, wenn Explainability nur als nachtraegliches Compliance-Haekchen ohne echte Modellprüfung genutzt wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Skater hilft, Modelle weniger mystisch wirken zu lassen. Es ersetzt aber weder Datenverstaendnis noch die Entscheidung, ob ein erklaertes Modell fachlich tatsaechlich vertretbar ist.
+Skater hilft, Modelle weniger mystisch wirken zu lassen. Es ersetzt aber weder Datenverständnis noch die Entscheidung, ob ein erklärtes Modell fachlich tatsächlich vertretbar ist.
 
 ## FAQ
 

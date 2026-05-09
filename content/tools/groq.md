@@ -46,17 +46,17 @@ Groq eignet sich für Unternehmen und Organisationen, die anspruchsvolle KI-Mode
 - Weniger Community- und Support-Ressourcen im Vergleich zu großen GPU-Herstellern
 - Für sehr spezialisierte Anwendungsfälle kann eine individuelle Anpassung notwendig sein
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Groq entscheidet im Alltag nicht die Demo, sondern ob das Tool bei schnelle LLM-Inferenz fuer Anwendungen, bei denen Antwortzeit stark zaehlt verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit echten Prompts, Tokenlaengen, Rate Limits, Modellqualitaet und Fallbacks; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Spannend fuer Latenz, aber Auswahl und Qualitaet des Modells bleiben genauso wichtig wie Geschwindigkeit.
+Bei Groq entscheidet im Alltag nicht die Demo, sondern ob das Tool bei schnelle LLM-Inferenz für Anwendungen, bei denen Antwortzeit stark zählt verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit echten Prompts, Tokenlängen, Rate Limits, Modellqualität und Fallbacks; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Spannend für Latenz, aber Auswahl und Qualität des Modells bleiben genauso wichtig wie Geschwindigkeit.
 
 ## Workflow-Fit
 
-Im Workflow sollte Groq eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer schnelle LLM-Inferenz fuer Anwendungen, bei denen Antwortzeit stark zaehlt sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit echten Prompts, Tokenlaengen, Rate Limits, Modellqualitaet und Fallbacks. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Groq eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für schnelle LLM-Inferenz für Anwendungen, bei denen Antwortzeit stark zählt sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit echten Prompts, Tokenlängen, Rate Limits, Modellqualität und Fallbacks. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Groq lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Spannend fuer Latenz, aber Auswahl und Qualitaet des Modells bleiben genauso wichtig wie Geschwindigkeit. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Groq lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Spannend für Latenz, aber Auswahl und Qualität des Modells bleiben genauso wichtig wie Geschwindigkeit. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

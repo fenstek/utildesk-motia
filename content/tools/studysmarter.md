@@ -57,16 +57,16 @@ StudySmarter bietet ein Freemium-Modell an. Die Grundfunktionen sind kostenlos n
 - **Brainscape:** Intelligente Lernkarten, die sich an den individuellen Lerntempo anpassen.
 - **MindMeister:** Mindmapping-Tool zur visuellen Organisation von Lerninhalten und Ideen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-StudySmarter ist fuer Lernorganisation interessant, wenn Notizen, Karteikarten, Zusammenfassungen und Wiederholung an einem Ort zusammenlaufen. Der Nutzen haengt stark davon ab, ob Lernende aktiv mit Material arbeiten, statt nur fremde Zusammenfassungen passiv zu sammeln.
+StudySmarter ist für Lernorganisation interessant, wenn Notizen, Karteikarten, Zusammenfassungen und Wiederholung an einem Ort zusammenlaufen. Der Nutzen hängt stark davon ab, ob Lernende aktiv mit Material arbeiten, statt nur fremde Zusammenfassungen passiv zu sammeln.
 
 ## Workflow-Fit
 
-- Gut fuer Schule, Studium, Pruefungsvorbereitung und Faecher mit viel wiederholbarem Fakten- oder Konzeptwissen.
-- Weniger geeignet, wenn tiefes Verstaendnis, Schreiben eigener Loesungen oder praktische Anwendung kaum geuebt wird.
+- Gut für Schule, Studium, Prüfungsvorbereitung und Faecher mit viel wiederholbarem Fakten- oder Konzeptwissen.
+- Weniger geeignet, wenn tiefes Verständnis, Schreiben eigener Lösungen oder praktische Anwendung kaum geuebt wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 StudySmarter kann Lernrhythmus und Struktur verbessern. Es wird aber erst wirklich wirksam, wenn Wiederholung, eigene Formulierungen und Selbsttests konsequent genutzt werden.
 

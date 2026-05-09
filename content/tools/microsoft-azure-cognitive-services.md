@@ -49,17 +49,17 @@ Microsoft Azure Cognitive Services richtet sich an Unternehmen, Entwickler und O
 - Datenschutz- und Compliance-Aspekte müssen je nach Einsatzgebiet beachtet werden.
 - Eingeschränkte Anpassungsmöglichkeiten bei vortrainierten Modellen im Vergleich zu eigenen KI-Modellen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Microsoft Azure Cognitive Services entscheidet im Alltag nicht die Demo, sondern ob das Tool bei API-Bausteine fuer Sprache, Vision, Text und Entscheidungsfunktionen in Azure verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit konkretem Use Case, Region, Rollen, Logging und Kosten je Feature; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Gut als Baukasten, aber nur wenn nicht mehrere Services ohne klares Ziel zusammengeklickt werden.
+Bei Microsoft Azure Cognitive Services entscheidet im Alltag nicht die Demo, sondern ob das Tool bei API-Bausteine für Sprache, Vision, Text und Entscheidungsfunktionen in Azure verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit konkretem Use Case, Region, Rollen, Logging und Kosten je Feature; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Gut als Baukasten, aber nur wenn nicht mehrere Services ohne klares Ziel zusammengeklickt werden.
 
 ## Workflow-Fit
 
-Im Workflow sollte Microsoft Azure Cognitive Services eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer API-Bausteine fuer Sprache, Vision, Text und Entscheidungsfunktionen in Azure sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit konkretem Use Case, Region, Rollen, Logging und Kosten je Feature. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Microsoft Azure Cognitive Services eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für API-Bausteine für Sprache, Vision, Text und Entscheidungsfunktionen in Azure sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit konkretem Use Case, Region, Rollen, Logging und Kosten je Feature. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Microsoft Azure Cognitive Services lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Gut als Baukasten, aber nur wenn nicht mehrere Services ohne klares Ziel zusammengeklickt werden. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Microsoft Azure Cognitive Services lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Gut als Baukasten, aber nur wenn nicht mehrere Services ohne klares Ziel zusammengeklickt werden. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

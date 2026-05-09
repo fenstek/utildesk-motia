@@ -55,16 +55,16 @@ Die Preisgestaltung von Coder ist je nach Anbieter und gewähltem Plan unterschi
 - **Replit:** Online-Coding-Plattform mit Fokus auf einfache Kollaboration und schnelle Prototypen.
 - **Theia:** Open-Source-IDE, die als Basis für cloudbasierte Entwicklungsumgebungen dient.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Coder ist fuer Teams interessant, die Entwicklungsumgebungen standardisieren und in die Cloud verlagern wollen. Der Nutzen zeigt sich, wenn Onboarding, Sicherheit, Ressourcenverbrauch und reproduzierbare Workspaces wichtiger werden als individuell gepflegte lokale Setups.
+Coder ist für Teams interessant, die Entwicklungsumgebungen standardisieren und in die Cloud verlagern wollen. Der Nutzen zeigt sich, wenn Onboarding, Sicherheit, Ressourcenverbrauch und reproduzierbare Workspaces wichtiger werden als individuell gepflegte lokale Setups.
 
 ## Workflow-Fit
 
-- Gut fuer groessere Engineering-Teams, regulierte Umgebungen, Remote-Entwicklung und Projekte mit schwer einzurichtenden Dependencies.
-- Weniger noetig fuer kleine Teams mit einfachen Repositories und stabilen lokalen Entwicklungsumgebungen.
+- Gut für größere Engineering-Teams, regulierte Umgebungen, Remote-Entwicklung und Projekte mit schwer einzurichtenden Dependencies.
+- Weniger nötig für kleine Teams mit einfachen Repositories und stabilen lokalen Entwicklungsumgebungen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 Coder kann Entwicklungsarbeit berechenbarer machen. Der Gewinn liegt weniger im Editor selbst als in kontrollierten, schnell startbaren und administrierbaren Workspaces.
 

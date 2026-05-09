@@ -56,16 +56,16 @@ Bubble bietet ein Freemium-Modell an, das den Einstieg und die Entwicklung einfa
 - [Wix mit Velo](/tools/wix-mit-velo/): Website-Builder mit erweiterten Entwicklungsoptionen für individuelle Web-Apps.
 - [Glide](/tools/glide/): No-Code-App-Builder, der Google Sheets als Datenquelle nutzt.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bubble ist stark, wenn Webapps ohne klassischen Code gebaut und schnell iteriert werden sollen. Wichtig ist, Datenstruktur, Rechte, Performance und Wartbarkeit frueh ernst zu nehmen, weil No-Code-Projekte sonst bei Wachstum genauso technische Schulden aufbauen wie Codeprojekte.
+Bubble ist stark, wenn Webapps ohne klassischen Code gebaut und schnell iteriert werden sollen. Wichtig ist, Datenstruktur, Rechte, Performance und Wartbarkeit früh ernst zu nehmen, weil No-Code-Projekte sonst bei Wachstum genauso technische Schulden aufbauen wie Codeprojekte.
 
 ## Workflow-Fit
 
-- Gut fuer MVPs, interne Tools, Marktplatzideen, einfache SaaS-Prototypen und Founder ohne eigenes Entwicklerteam.
-- Weniger passend fuer hochskalierende Systeme, komplexe Echtzeitlogik oder Produkte mit sehr spezifischer technischer Architektur.
+- Gut für MVPs, interne Tools, Marktplatzideen, einfache SaaS-Prototypen und Founder ohne eigenes Entwicklerteam.
+- Weniger passend für hochskalierende Systeme, komplexe Echtzeitlogik oder Produkte mit sehr spezifischer technischer Architektur.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 Bubble demokratisiert Produktbau, aber es hebt technische Verantwortung nicht auf. Die besten Ergebnisse entstehen, wenn No-Code-Geschwindigkeit mit sauberem Daten- und Prozessdesign kombiniert wird.
 

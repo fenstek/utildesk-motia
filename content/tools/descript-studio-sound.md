@@ -37,10 +37,10 @@ Weniger geeignet ist Studio Sound für Musikproduktion, kreative Soundgestaltung
 
 - **KI-basierte Sprachverbesserung:** Studio Sound analysiert Sprachaufnahmen und hebt die Stimme deutlicher hervor, damit sie näher, klarer und professioneller wirkt.
 - **Rauschreduktion:** Hintergrundgeräusche wie Lüfter, Raumrauschen, entfernte Verkehrsgeräusche oder leichte Störanteile können reduziert werden.
-- **Hall- und Raumkorrektur:** Aufnahmen aus halligen Zimmern oder unguenstigen Raumsituationen können trockener und fokussierter klingen.
+- **Hall- und Raumkorrektur:** Aufnahmen aus halligen Zimmern oder ungünstigen Raumsituationen können trockener und fokussierter klingen.
 - **Pegel- und Klangglättung:** Unruhige Lautstärke und ungleichmäßige Sprachpräsenz werden geglättet, was gerade bei Interviews hilfreich sein kann.
 - **Integration in Descript:** Die Funktion sitzt direkt im Descript-Umfeld mit Transkription, textbasiertem Schnitt, Video-Editing und Export.
-- **Schnelle Verarbeitung:** Statt mehrere Plugin-Schritte manuell einzustellen, kann ein Team Aufnahmen zuegig verbessern und danach weiter schneiden.
+- **Schnelle Verarbeitung:** Statt mehrere Plugin-Schritte manuell einzustellen, kann ein Team Aufnahmen zügig verbessern und danach weiter schneiden.
 - **Einfache Bedienung:** Studio Sound ist für Nutzer:innen gedacht, die keinen klassischen Audio-Mixing-Prozess aufbauen wollen.
 - **Anwendbar auf Content-Workflows:** Die Funktion passt gut in Produktionsabläufe für Podcast, Video, Kursmaterial und interne Kommunikation.
 
@@ -111,7 +111,7 @@ Typisch ist: Aufnahme importieren, Transkript erzeugen, Studio Sound anwenden, S
 
 **Muss ich Datenschutz beachten?**
 
-Ja, besonders bei vertraulichen Interviews, Kundengespraechen oder internen Schulungen. Vor der Nutzung sollte klar sein, welche Daten hochgeladen werden, wer Zugriff hat und welche Aufbewahrungsregeln gelten.
+Ja, besonders bei vertraulichen Interviews, Kundengesprächen oder internen Schulungen. Vor der Nutzung sollte klar sein, welche Daten hochgeladen werden, wer Zugriff hat und welche Aufbewahrungsregeln gelten.
 
 **Wann lohnt sich Descript Studio Sound am meisten?**
 

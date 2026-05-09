@@ -55,16 +55,16 @@ Die Preisgestaltung von MAXQDA variiert je nach Lizenztyp (Einzellizenz, Teamliz
 - [Dedoose](/tools/dedoose/): Cloud-basierte Plattform für qualitative und quantitative Forschung, besonders geeignet für kollaborative Projekte.  
 - [Quirkos](/tools/quirkos/): Einfache und visuelle Software für qualitative Datenanalyse, die sich gut für Einsteiger eignet.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-MAXQDA ist stark, wenn qualitative Daten nicht nur gelesen, sondern systematisch codiert, verglichen und ausgewertet werden sollen. Interviews, Fokusgruppen, Literatur und offene Antworten profitieren von klaren Codebuechern, Memos und Analysepfaden, die spaeter nachvollziehbar bleiben.
+MAXQDA ist stark, wenn qualitative Daten nicht nur gelesen, sondern systematisch codiert, verglichen und ausgewertet werden sollen. Interviews, Fokusgruppen, Literatur und offene Antworten profitieren von klaren Codebuechern, Memos und Analysepfaden, die später nachvollziehbar bleiben.
 
 ## Workflow-Fit
 
-- Gut fuer Forschung, Evaluation, UX-Research und Organisationen, die Text-, Audio- oder Mixed-Methods-Daten strukturiert analysieren.
-- Weniger passend fuer schnelle Notizensammlungen, bei denen kein methodischer Auswertungsrahmen geplant ist.
+- Gut für Forschung, Evaluation, UX-Research und Organisationen, die Text-, Audio- oder Mixed-Methods-Daten strukturiert analysieren.
+- Weniger passend für schnelle Notizensammlungen, bei denen kein methodischer Auswertungsrahmen geplant ist.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 MAXQDA belohnt methodische Sorgfalt. Wer Codes, Kategorien und Memos sauber pflegt, gewinnt Tiefe; wer nur Material hineinwirft, bekommt am Ende lediglich eine teurere Ablage.
 

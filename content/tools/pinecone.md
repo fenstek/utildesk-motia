@@ -61,18 +61,18 @@ Pinecone bietet ein Freemium-Modell an, das für kleinere Projekte und erste Tes
 - **Qdrant:** Vektor-Suchmaschine mit Fokus auf einfache Integration und Skalierbarkeit.
 - **Vespa:** Suchplattform mit Unterstützung für Vektor- und Textsuche.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
 Pinecone wird relevant, sobald semantische Suche, RAG oder Empfehlungssysteme nicht mehr nur als Demo laufen. Entscheidend sind dann Indexdesign, Embedding-Strategie, Filterlogik, Aktualisierung von Dokumenten und Kostenkontrolle, nicht nur die Frage, ob ein einzelner Vektor schnell gefunden wird.
 
 ## Workflow-Fit
 
-- Stark fuer Anwendungen, die viele Aehnlichkeitssuchen mit stabiler Latenz und verwalteter Infrastruktur brauchen.
-- Weniger passend fuer sehr kleine Datenmengen oder Teams, die Vector Search vollstaendig im eigenen Stack betreiben wollen.
+- Stark für Anwendungen, die viele Aehnlichkeitssuchen mit stabiler Latenz und verwalteter Infrastruktur brauchen.
+- Weniger passend für sehr kleine Datenmengen oder Teams, die Vector Search vollständig im eigenen Stack betreiben wollen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Pinecone ist ein produktionsnaher Baustein fuer Vektor-Infrastruktur. Der Erfolg haengt stark davon ab, wie sauber Inhalte chunked, versioniert und mit Metadaten versehen werden.
+Pinecone ist ein produktionsnaher Baustein für Vektor-Infrastruktur. Der Erfolg hängt stark davon ab, wie sauber Inhalte chunked, versioniert und mit Metadaten versehen werden.
 
 ## FAQ
 

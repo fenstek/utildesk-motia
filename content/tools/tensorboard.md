@@ -58,18 +58,18 @@ TensorBoard ist Open Source und somit kostenlos nutzbar. Es fallen keine direkte
 - **Comet.ml:** Plattform zur Nachverfolgung von Experimenten und Visualisierung von Trainingsmetriken.
 - **Sacred + Omniboard:** Kombination aus Experiment-Tracking und Dashboard-Visualisierung für ML-Projekte.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-TensorBoard ist wertvoll, wenn Modelltraining nicht als Blackbox laufen soll. Kurven, Metriken, Embeddings und Graphen helfen, Ueberanpassung, Datenprobleme oder instabile Trainingslaeufe frueher zu erkennen, sofern Experimente konsistent benannt und vergleichbar geloggt werden.
+TensorBoard ist wertvoll, wenn Modelltraining nicht als Blackbox laufen soll. Kurven, Metriken, Embeddings und Graphen helfen, Überanpassung, Datenprobleme oder instabile Trainingslaeufe früher zu erkennen, sofern Experimente konsistent benannt und vergleichbar geloggt werden.
 
 ## Workflow-Fit
 
-- Gut fuer TensorFlow-nahe Teams, die Trainingsverlaeufe, Hyperparameter und Modellartefakte visuell nachvollziehen wollen.
+- Gut für TensorFlow-nahe Teams, die Trainingsverlaeufe, Hyperparameter und Modellartefakte visuell nachvollziehen wollen.
 - Weniger stark als alleinige Experimentplattform, wenn Governance, Modellfreigaben und teamweite Registry-Funktionen gebraucht werden.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-TensorBoard ist kein glamouroeses Dashboard, sondern ein Arbeitsmikroskop fuer ML-Training. Sein Nutzen steigt stark, wenn Logging-Standards im Team festgelegt sind und nicht jedes Experiment anders dokumentiert wird.
+TensorBoard ist kein glamouroeses Dashboard, sondern ein Arbeitsmikroskop für ML-Training. Sein Nutzen steigt stark, wenn Logging-Standards im Team festgelegt sind und nicht jedes Experiment anders dokumentiert wird.
 
 ## FAQ
 

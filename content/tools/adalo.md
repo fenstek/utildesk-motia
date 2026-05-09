@@ -56,17 +56,17 @@ Die Plattform eignet sich weniger für sehr komplexe Anwendungen mit individuell
 - Kosten können bei wachsender Nutzerzahl oder Funktionalität steigen.
 - Abhängigkeit von der Plattform für Updates und Support.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Adalo entscheidet im Alltag nicht die Demo, sondern ob das Tool bei No-Code-App-Bau fuer einfache mobile Produkte und interne Prototypen verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Datenmodell, Rollen, Performance, App-Store-Weg und Wartung nach dem MVP; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Gut fuer schnelle Validierung, aber langfristige Produktlogik kann an Plattformgrenzen stossen.
+Bei Adalo entscheidet im Alltag nicht die Demo, sondern ob das Tool bei No-Code-App-Bau für einfache mobile Produkte und interne Prototypen verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Datenmodell, Rollen, Performance, App-Store-Weg und Wartung nach dem MVP; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Gut für schnelle Validierung, aber langfristige Produktlogik kann an Plattformgrenzen stossen.
 
 ## Workflow-Fit
 
-Im Workflow sollte Adalo eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer No-Code-App-Bau fuer einfache mobile Produkte und interne Prototypen sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit Datenmodell, Rollen, Performance, App-Store-Weg und Wartung nach dem MVP. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Adalo eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für No-Code-App-Bau für einfache mobile Produkte und interne Prototypen sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit Datenmodell, Rollen, Performance, App-Store-Weg und Wartung nach dem MVP. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Adalo lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Gut fuer schnelle Validierung, aber langfristige Produktlogik kann an Plattformgrenzen stossen. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Adalo lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Gut für schnelle Validierung, aber langfristige Produktlogik kann an Plattformgrenzen stossen. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

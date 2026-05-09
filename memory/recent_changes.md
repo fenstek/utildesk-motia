@@ -1,6 +1,17 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-09_
 
+## 2026-05-09 - German Visible Umlaut Normalization
+
+### Done
+- Normalized visible German ASCII transliteration leftovers across the tool and Ratgeber content corpus, especially `fuer`, `ueber`, `Qualitaet`, `Pruefung`, `Moeglichkeit`, `tatsaechlich`, `Einstiegshuerde`, and compound forms like `Produktivitaetswerkzeug`.
+- Scope was limited to German `content/tools` and `content/ratgeber` Markdown; URL, slug, source, image, and inline-code segments were intentionally skipped.
+- The first attempted inline PowerShell Unicode write was discarded before build; the applied pass used ASCII-only placeholder decoding to avoid `?` mojibake.
+
+### Verification
+- Targeted German transliteration grep returned no hits for the configured visible bad-pattern set.
+- `npm run check:editorial`, `node scripts/check_english_tool_translations.mjs`, `git diff --check`, and full `npm --prefix site run build` passed.
+
 ## 2026-05-09 - Tool Card Editorial Illustrations Batch 1
 
 ### Done

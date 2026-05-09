@@ -57,18 +57,18 @@ Die Preisgestaltung von Podcastle ist abhängig vom gewählten Abonnement und de
 - **Alitu**: Speziell für Podcaster entwickelte Software zur einfachen Bearbeitung und Produktion.
 - **Otter.ai**: Fokus auf automatische Transkription und Zusammenarbeit mit umfangreichen Exportoptionen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Podcastle ist praktisch, wenn Aufnahme, Transkription, Schnitt und Audioverbesserung in einem einfachen Produktionsfluss liegen sollen. Der groesste Nutzen entsteht bei regelmaessigen Podcast- oder Interviewformaten, bei denen Rohmaterial schnell in eine veroeffentlichbare Episode verwandelt werden muss.
+Podcastle ist praktisch, wenn Aufnahme, Transkription, Schnitt und Audioverbesserung in einem einfachen Produktionsfluss liegen sollen. Der größte Nutzen entsteht bei regelmäßigen Podcast- oder Interviewformaten, bei denen Rohmaterial schnell in eine veröffentlichbare Episode verwandelt werden muss.
 
 ## Workflow-Fit
 
-- Gut fuer kleine Content-Teams, Coaches, Medienprojekte und interne Kommunikation mit wiederkehrenden Audioformaten.
-- Weniger geeignet fuer sehr komplexe Musikproduktion oder Tonregie, bei der spezialisierte DAWs und erfahrene Engineers gebraucht werden.
+- Gut für kleine Content-Teams, Coaches, Medienprojekte und interne Kommunikation mit wiederkehrenden Audioformaten.
+- Weniger geeignet für sehr komplexe Musikproduktion oder Tonregie, bei der spezialisierte DAWs und erfahrene Engineers gebraucht werden.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Podcastle nimmt vielen nicht-technischen Nutzern die Angst vor Audioproduktion. Die Qualitaet bleibt aber davon abhaengig, wie sauber Aufnahmeumgebung, Mikrofon und redaktioneller Schnitt vorbereitet sind.
+Podcastle nimmt vielen nicht-technischen Nutzern die Angst vor Audioproduktion. Die Qualität bleibt aber davon abhängig, wie sauber Aufnahmeumgebung, Mikrofon und redaktioneller Schnitt vorbereitet sind.
 
 ## FAQ
 
