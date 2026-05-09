@@ -35,7 +35,6 @@ It is less suitable when exact quotations, legal interpretation, medical evidenc
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/genei-editorial.webp" alt="Illustration for Genei: long documents compressed into concise notes" loading="lazy" decoding="async" />
-  <figcaption>The paper machine represents the practical value: reducing long sources to their main points faster.</figcaption>
 </figure>
 
 ## Key Features

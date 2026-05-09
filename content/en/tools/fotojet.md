@@ -36,7 +36,6 @@ It is less suitable when several people need strict brand rules, versioning, app
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/fotojet-editorial.webp" alt="Illustration for FotoJet: collage and design workshop with photos and color cards" loading="lazy" decoding="async" />
-  <figcaption>Photos, paper shapes and color cards emphasize FotoJet?s strength in quick everyday graphics and collages.</figcaption>
 </figure>
 
 ## Key Features

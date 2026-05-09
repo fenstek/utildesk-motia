@@ -31,7 +31,6 @@ Weniger geeignet ist Adobe Enhance Speech fuer Musik, fein abgestimmtes Sounddes
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-enhance-speech-editorial.webp" alt="Illustration zu Adobe Enhance Speech: Mikrofon zwischen Rauschen und klarer Sprachwelle" loading="lazy" decoding="async" />
-  <figcaption>Die Szene macht den Kern des Tools sichtbar: aus unruhigem Rohmaterial soll eine klarere Sprachaufnahme werden.</figcaption>
 </figure>
 
 ## Hauptfunktionen

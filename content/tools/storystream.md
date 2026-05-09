@@ -39,7 +39,6 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/storystream-editorial.webp" alt="Illustration zu StoryStream: Content-Strom aus Bildern, Kampagnenmomenten und Freigaben" loading="lazy" decoding="async" />
-  <figcaption>Der Bildstrom macht deutlich, dass StoryStream weniger Einzelgrafik als kuratierter Content-Fluss ist.</figcaption>
 </figure>
 
 ## Hauptfunktionen

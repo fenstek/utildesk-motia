@@ -34,7 +34,6 @@ YouCanBook.me works best when implementation is understood not as a tool switch,
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/youcanbook-me-editorial.webp" alt="Illustration for YouCanBook.me: bookable time slots as a path to a meeting room" loading="lazy" decoding="async" />
-  <figcaption>Calendar windows, a light path and a meeting room translate scheduling into a simple visual decision.</figcaption>
 </figure>
 
 ## Key features

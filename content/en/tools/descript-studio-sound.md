@@ -35,7 +35,6 @@ Studio Sound is less suitable for music production, creative sound design, detai
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/descript-studio-sound-editorial.webp" alt="Illustration for Descript Studio Sound: rough recording becoming studio-quality voice" loading="lazy" decoding="async" />
-  <figcaption>The split audio scene contrasts a noisy recording with a cleaner studio-like voice result.</figcaption>
 </figure>
 
 ## Key Features

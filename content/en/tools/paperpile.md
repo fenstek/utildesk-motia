@@ -35,7 +35,6 @@ Paperpile is less suitable when an institution is already strongly standardized 
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/paperpile-editorial.webp" alt="Illustration for Paperpile: organized PDF and reference archive drawer" loading="lazy" decoding="async" />
-  <figcaption>Archive drawer, tabs and PDF stacks show Paperpile as an ordering system for papers, sources and citations.</figcaption>
 </figure>
 
 ## Main features

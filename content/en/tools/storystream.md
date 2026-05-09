@@ -43,7 +43,6 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/storystream-editorial.webp" alt="Illustration for StoryStream: content stream of images, campaign moments and approvals" loading="lazy" decoding="async" />
-  <figcaption>The image stream shows that StoryStream is less about single graphics and more about curated content flow.</figcaption>
 </figure>
 
 ## Key features

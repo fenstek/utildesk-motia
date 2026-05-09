@@ -34,7 +34,6 @@ Adobe Enhance Speech is less suitable for music, detailed sound design, professi
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-enhance-speech-editorial.webp" alt="Illustration for Adobe Enhance Speech: microphone between noise and a clear speech wave" loading="lazy" decoding="async" />
-  <figcaption>The scene shows the core job of the tool: turning rough spoken audio into a cleaner voice track.</figcaption>
 </figure>
 
 ## Key Features

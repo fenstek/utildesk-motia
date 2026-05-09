@@ -31,7 +31,6 @@ Weniger geeignet ist Resolve, wenn ausschliesslich sehr schnelle Smartphone-Clip
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/davinci-resolve-editorial.webp" alt="Illustration zu DaVinci Resolve: Color-Grading-Suite mit Filmstreifen und Lichtfarben" loading="lazy" decoding="async" />
-  <figcaption>Filmstreifen, Kontrollpult und Farblicht verweisen auf Schnitt, Grading und die professionelle Postproduktion.</figcaption>
 </figure>
 
 ## Hauptfunktionen

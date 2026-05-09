@@ -31,7 +31,6 @@ Weniger passend ist FotoJet, wenn mehrere Personen mit strengen Brand-Guidelines
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/fotojet-editorial.webp" alt="Illustration zu FotoJet: Collage- und Designwerkstatt mit Fotos und Farbkarten" loading="lazy" decoding="async" />
-  <figcaption>Fotos, Papierformen und Farbkarten betonen FotoJets Staerke bei schnellen Alltagsgrafiken und Collagen.</figcaption>
 </figure>
 
 ## Hauptfunktionen

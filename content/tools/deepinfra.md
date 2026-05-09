@@ -39,7 +39,6 @@ Ein belastbarer Pilot für DeepInfra beginnt mit einem realen Entwicklungsablauf
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/deepinfra-editorial.webp" alt="Illustration zu DeepInfra: KI-Infrastruktur als unterirdisches Modell- und API-System" loading="lazy" decoding="async" />
-  <figcaption>Die technische Unterwelt zeigt DeepInfra als Schicht fuer Modelle, API-Zugriffe, Latenz und Rechenleistung.</figcaption>
 </figure>
 
 ## Hauptfunktionen
