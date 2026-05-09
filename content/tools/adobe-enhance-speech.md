@@ -61,7 +61,7 @@ Weniger geeignet ist Adobe Enhance Speech für Musik, fein abgestimmtes Sounddes
 - Schlechte Rohaufnahmen bleiben problematisch, besonders bei Clipping, fehlenden Wörtern oder extremem Lärm.
 - Datenschutz und Upload-Regeln müssen bei vertraulichen Aufnahmen geklärt werden.
 - Das Tool ersetzt keine vollwertige Audioreparatur für professionelle Produktionen.
-- Für Musik und atmosphaerische Aufnahmen ist der Sprachfokus ungeeignet.
+- Für Musik und atmosphärische Aufnahmen ist der Sprachfokus ungeeignet.
 - Planlimits, Dateigrößen, Längen oder Qualitätsoptionen sollten vor produktiver Nutzung geprüft werden.
 
 ## Preise & Kosten
@@ -103,7 +103,7 @@ Es kann typische Probleme verbessern, aber keine Wunder leisten. Übersteuerung,
 
 **Ist das Tool für Musik geeignet?**
 
-Nein, der Schwerpunkt liegt auf Sprache. Für Musik oder atmosphaerischen Ton sind spezialisierte Audiowerkzeuge besser geeignet.
+Nein, der Schwerpunkt liegt auf Sprache. Für Musik oder atmosphärischen Ton sind spezialisierte Audiowerkzeuge besser geeignet.
 
 **Muss Datenschutz beachtet werden?**
 

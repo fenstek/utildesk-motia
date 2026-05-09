@@ -12,7 +12,7 @@ popularity: 53
 
 Grafana ist eine Plattform für Dashboards, Monitoring und Observability. Sie macht Metriken, Logs, Traces und andere Zeitreihendaten sichtbar, damit Teams Systeme nicht nur betreiben, sondern verstehen können.
 
-Der eigentliche Wert eines Grafana-Dashboards liegt nicht in schoenen Kurven, sondern in besseren Entscheidungen. Ein gutes Dashboard zeigt, ob ein System gesund ist, wo ein Problem beginnt und welche Frage als Naechstes gestellt werden muss.
+Der eigentliche Wert eines Grafana-Dashboards liegt nicht in schönen Kurven, sondern in besseren Entscheidungen. Ein gutes Dashboard zeigt, ob ein System gesund ist, wo ein Problem beginnt und welche Frage als Nächstes gestellt werden muss.
 
 ## Für wen ist Grafana geeignet?
 
@@ -78,7 +78,7 @@ Grafana kann selbst betrieben oder als Cloud-Service genutzt werden. Kosten ents
 
 ## Redaktionelle Einschätzung
 
-Grafana ist hervorragend, wenn Teams wissen wollen, was ihre Systeme wirklich tun. Es braucht aber saubere Metriken und Pflege; sonst malt man nur schoene Kurven über ungeklärte Probleme.
+Grafana ist hervorragend, wenn Teams wissen wollen, was ihre Systeme wirklich tun. Es braucht aber saubere Metriken und Pflege; sonst malt man nur schöne Kurven über ungeklärte Probleme.
 
 Ein guter erster Test für Grafana ist deshalb kein Demo-Klick, sondern ein realer Mini-Workflow: Service-Metriken wie Latenz, Fehler, Durchsatz und Ressourcenverbrauch überwachen. Wenn das mit echten Daten, echten Rollen und einem klaren Ergebnis funktioniert, lohnt die nächste Ausbaustufe.
 

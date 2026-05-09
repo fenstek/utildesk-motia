@@ -56,7 +56,7 @@ Die Lernkurve ist real, aber nicht unfreundlich. Man muss nicht alles können, u
 
 ## Workflow-Fit
 
-Cubase passt in klassische Produktionsablaeufe: Idee skizzieren, Arrangement bauen, aufnehmen, editieren, mixen und exportieren. Wer regelmäßig produziert, sollte eigene Templates für Songwriting, Recording und Mixing anlegen.
+Cubase passt in klassische Produktionsabläufe: Idee skizzieren, Arrangement bauen, aufnehmen, editieren, mixen und exportieren. Wer regelmäßig produziert, sollte eigene Templates für Songwriting, Recording und Mixing anlegen.
 
 Für produktive Musikarbeit lohnt ein eigenes Template mit Routing, Gruppen, Lieblingsinstrumenten und Markerstruktur. Das klingt banal, ist aber oft der Unterschied zwischen kreativer Session und zwanzig Minuten Kabelziehen im Kopf.
 

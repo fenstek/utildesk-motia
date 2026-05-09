@@ -24,7 +24,7 @@ Geeignet ist LiveChat für E-Commerce, SaaS, Supportteams, Vertrieb und Dienstle
 - Supportanfragen direkt aus dem Chat aufnehmen und weiterleiten.
 - Wiederkehrende Antworten mit Makros und Wissensdatenbank verkürzen.
 - Leads qualifizieren und an Vertrieb oder CRM übergeben.
-- Servicequalität über Antwortzeiten, Bewertungen und Chatverlaeufe messen.
+- Servicequalität über Antwortzeiten, Bewertungen und Chatverläufe messen.
 
 ## Was im Alltag wirklich zählt
 
@@ -35,7 +35,7 @@ Gute Teams pflegen kurze Makros, aber klingen nicht wie Automaten. Der Trick lie
 ## Hauptfunktionen
 
 - Website-Chat mit Agentenoberfläche und Routing.
-- Chatverlaeufe, Tags, Makros und interne Notizen.
+- Chatverläufe, Tags, Makros und interne Notizen.
 - Integrationen mit CRM, Helpdesk, E-Commerce oder Analytics je nach Plan.
 - Berichte für Antwortzeiten, Zufriedenheit und Volumen.
 - Automatisierungen oder Chatbot-nahe Funktionen je nach Setup.
@@ -51,12 +51,12 @@ Gute Teams pflegen kurze Makros, aber klingen nicht wie Automaten. Der Trick lie
 ### Grenzen
 
 - Braucht Personalplanung und klare Antwortversprechen.
-- Schlechte Makros wirken schnell unpersoenlich.
+- Schlechte Makros wirken schnell unpersönlich.
 - Datenschutz, Tracking und Chatprotokolle müssen sauber geregelt werden.
 
 ## Workflow-Fit
 
-LiveChat passt in einen Supportprozess mit klaren Schichten: Chatannahme, Qualifikation, Lösung oder Übergabe, Nachverfolgung im Ticket oder CRM. Regelmäßige Auswertung der haeufigsten Fragen verbessert Website, Produkt und Helpcenter.
+LiveChat passt in einen Supportprozess mit klaren Schichten: Chatannahme, Qualifikation, Lösung oder Übergabe, Nachverfolgung im Ticket oder CRM. Regelmäßige Auswertung der häufigsten Fragen verbessert Website, Produkt und Helpcenter.
 
 Nach den ersten Wochen sollte das Team die häufigsten Chatgründe in Website-Verbesserungen übersetzen. Wenn dieselbe Frage täglich kommt, ist nicht der Chat erfolgreich, sondern die Seite wahrscheinlich unklar.
 

@@ -36,7 +36,7 @@ Teams sollten nicht alles sammeln, was hübsch ist. Besser sind kuratierte Board
 
 - Sammlung und Organisation visueller Referenzen und Assets.
 - Moodboards und Projektbibliotheken für kreative Arbeit.
-- Suche, Tags und teamfaehige Strukturierung je nach Plan.
+- Suche, Tags und teamfähige Strukturierung je nach Plan.
 - Unterstützung für Bilder, Videos oder weitere Kreativmaterialien.
 - Teilen und Praesentieren von visuellen Richtungen.
 
@@ -44,7 +44,7 @@ Teams sollten nicht alles sammeln, was hübsch ist. Besser sind kuratierte Board
 
 ### Vorteile
 
-- Macht kreative Referenzen wiederauffindbar und teamfaehig.
+- Macht kreative Referenzen wiederauffindbar und teamfähig.
 - Gut für Agenturen und Marken mit vielen visuellen Projekten.
 - Kann Briefings und Pitches deutlich strukturierter machen.
 

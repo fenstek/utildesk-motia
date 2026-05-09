@@ -71,7 +71,7 @@ Konkrete Preise sollten direkt beim Anbieter erfragt werden.
 
 ## Was im Alltag wirklich zählt
 
-Inflection ist im Kontext von KI-Assistenten vor allem als Ansatz für dialogorientierte, persoenlichere Interaktion interessant. Für Nutzer ist wichtig, zwischen freundlicher Konversation und belastbarer Aufgabenlösung zu unterscheiden: Tonalität allein ersetzt keine Quellen, Integrationen oder klare Ergebnisprüfung.
+Inflection ist im Kontext von KI-Assistenten vor allem als Ansatz für dialogorientierte, persönlichere Interaktion interessant. Für Nutzer ist wichtig, zwischen freundlicher Konversation und belastbarer Aufgabenlösung zu unterscheiden: Tonalität allein ersetzt keine Quellen, Integrationen oder klare Ergebnisprüfung.
 
 ## Workflow-Fit
 

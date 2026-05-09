@@ -10,7 +10,7 @@ popularity: 0
 
 # Nintex
 
-Nintex ist eine Plattform für Prozessautomatisierung, Workflows, Formulare und digitale Abläufe. Sie richtet sich an Organisationen, die wiederkehrende Business-Prozesse aus E-Mail, Tabellen und manuellen Freigaben herausloesen wollen.
+Nintex ist eine Plattform für Prozessautomatisierung, Workflows, Formulare und digitale Abläufe. Sie richtet sich an Organisationen, die wiederkehrende Business-Prozesse aus E-Mail, Tabellen und manuellen Freigaben herauslösen wollen.
 
 Der Wert liegt in der Verbindung von Fachprozess und Automatisierung. Nintex ist dann interessant, wenn nicht nur eine Aufgabe geskriptet, sondern ein ganzer Genehmigungs-, Dokument- oder Betriebsprozess kontrolliert werden soll.
 

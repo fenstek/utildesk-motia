@@ -12,7 +12,7 @@ popularity: 0
 
 Apache Storm ist ein verteiltes System für Echtzeit-Stream-Processing. Es verarbeitet kontinuierliche Datenströme, etwa Events, Logs oder Messdaten, und führt darauf Topologien aus, die Daten transformieren, analysieren oder weiterleiten.
 
-Storm war für viele Echtzeit-Architekturen praegend. Heute wird es oft neben Alternativen wie Flink, Kafka Streams oder Spark Structured Streaming bewertet. Relevant bleibt es besonders dort, wo bestehende Storm-Topologien betrieben oder sehr spezifische Streaming-Anforderungen umgesetzt werden.
+Storm war für viele Echtzeit-Architekturen prägend. Heute wird es oft neben Alternativen wie Flink, Kafka Streams oder Spark Structured Streaming bewertet. Relevant bleibt es besonders dort, wo bestehende Storm-Topologien betrieben oder sehr spezifische Streaming-Anforderungen umgesetzt werden.
 
 ## Für wen ist Apache Storm geeignet?
 
@@ -30,7 +30,7 @@ Geeignet ist Apache Storm für erfahrene Data- und Plattformteams mit Bedarf an 
 
 Im Alltag verlangt Storm betriebliches Denken. Topologien müssen überwacht, Backpressure verstanden und Fehler sauber behandelt werden. Ein Stream-System läuft nicht einfach, weil es gestern lief.
 
-Für neue Projekte sollte ehrlich geprüft werden, ob Storm noch die beste Wahl ist. Bestehende Kompetenz und Infrastruktur können dafür sprechen; gruene Wiese spricht häufig für Alternativen.
+Für neue Projekte sollte ehrlich geprüft werden, ob Storm noch die beste Wahl ist. Bestehende Kompetenz und Infrastruktur können dafür sprechen; grüne Wiese spricht häufig für Alternativen.
 
 ## Hauptfunktionen
 
@@ -44,7 +44,7 @@ Für neue Projekte sollte ehrlich geprüft werden, ob Storm noch die beste Wahl 
 
 ### Vorteile
 
-- Bewaehrt für Echtzeit-Streaming und verteilte Verarbeitung.
+- Bewährt für Echtzeit-Streaming und verteilte Verarbeitung.
 - Gut, wenn bestehende Storm-Kompetenz oder Topologien vorhanden sind.
 - Erlaubt feingranulare Kontrolle über Streaming-Pipelines.
 

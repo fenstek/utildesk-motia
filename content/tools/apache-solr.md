@@ -45,7 +45,7 @@ Suchqualität braucht Testqueries. Teams sollten echte Suchanfragen sammeln, erw
 ### Vorteile
 
 - Sehr mächtig für kontrollierte Suchanwendungen.
-- Open Source und bewaehrt in vielen großen Installationen.
+- Open Source und bewährt in vielen großen Installationen.
 - Feine Steuerung über Index, Analyse und Relevanz.
 
 ### Grenzen
@@ -64,7 +64,7 @@ Zusätzlich lohnt ein Blick auf Null-Treffer und schlechte Treffer. Gerade diese
 
 ## Datenschutz & Daten
 
-Suchindizes können personenbezogene oder vertrauliche Inhalte duplizieren. Berechtigungen, Feldmaskierung, Loeschprozesse und Index-Retention müssen zur Quellanwendung passen.
+Suchindizes können personenbezogene oder vertrauliche Inhalte duplizieren. Berechtigungen, Feldmaskierung, Löschprozesse und Index-Retention müssen zur Quellanwendung passen.
 
 ## Preise & Kosten
 

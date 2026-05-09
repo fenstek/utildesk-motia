@@ -56,7 +56,7 @@ Die Preisgestaltung von Framer variiert je nach gewähltem Plan und Nutzeranzahl
 
 ## Was im Alltag wirklich zählt
 
-Framer ist stark, wenn visuell anspruchsvolle Websites schnell gebaut und veröffentlicht werden sollen. Der praktische Wert liegt in Designfreiheit, Animation, Komponenten und direktem Publishing, solange Performance, SEO-Struktur und langfristige Wartung nicht nachtraeglich improvisiert werden.
+Framer ist stark, wenn visuell anspruchsvolle Websites schnell gebaut und veröffentlicht werden sollen. Der praktische Wert liegt in Designfreiheit, Animation, Komponenten und direktem Publishing, solange Performance, SEO-Struktur und langfristige Wartung nicht nachträglich improvisiert werden.
 
 ## Workflow-Fit
 

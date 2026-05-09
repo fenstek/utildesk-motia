@@ -35,7 +35,7 @@ Die wertvollsten Erkenntnisse liegen oft in kleinen Momenten: Wann wird zu früh
 ## Hauptfunktionen
 
 - Aufzeichnung, Transkription und Suche in Gesprächen.
-- Analyse von Themen, Schluesselstellen und Mustern.
+- Analyse von Themen, Schlüsselstellen und Mustern.
 - Coaching-Workflows, Playlists und Feedbackfunktionen.
 - Integrationen mit CRM- und Kommunikationssystemen je nach Setup.
 - Reporting für Teams, Manager und Enablement.
