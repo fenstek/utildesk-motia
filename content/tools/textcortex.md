@@ -1,7 +1,7 @@
 ---
 slug: textcortex
 title: TextCortex
-category: Produktivitat
+category: Produktivität
 price_model: "Freemium"
 tags: [ai,produktivitat,writing]
 official_url: "https://textcortex.net/"

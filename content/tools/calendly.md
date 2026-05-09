@@ -1,7 +1,7 @@
 ---
 slug: calendly
 title: Calendly
-category: Produktivitat
+category: Produktivität
 price_model: Freemium
 tags: [meeting, workflow, productivity]
 official_url: "https://calendly.com/"

@@ -1,7 +1,7 @@
 ---
 slug: stormboard
 title: Stormboard
-category: Produktivitat
+category: Produktivität
 price_model: Je nach Plan
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://stormboard.com/home"
