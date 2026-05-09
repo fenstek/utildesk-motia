@@ -39,7 +39,7 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Häufiger Stolperstein:** Ourdream.ai enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/ourdream-ai-editorial.webp" alt="Illustration zu Ourdream AI: Traumatelier fuer kreative Bild- und Charakterideen" loading="lazy" decoding="async" />
+  <img src="/images/tools/ourdream-ai-editorial.webp" alt="Illustration zu Ourdream AI: Traumatelier für kreative Bild- und Charakterideen" loading="lazy" decoding="async" />
 </figure>
 
 ## Hauptfunktionen

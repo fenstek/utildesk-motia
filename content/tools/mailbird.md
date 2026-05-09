@@ -36,7 +36,7 @@ Mailbird sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, A
 - **Risiko bei Mailbird:** Kritisch wird es, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/mailbird-editorial.webp" alt="Illustration zu Mailbird: Mehrere Postfaecher als geordnetes Kommunikationsnest" loading="lazy" decoding="async" />
+  <img src="/images/tools/mailbird-editorial.webp" alt="Illustration zu Mailbird: Mehrere Postfächer als geordnetes Kommunikationsnest" loading="lazy" decoding="async" />
 </figure>
 
 ## Hauptfunktionen
