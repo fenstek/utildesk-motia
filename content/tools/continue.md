@@ -32,7 +32,6 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/continue-editorial.webp" alt="Illustration zu Continue: Coding-Workflow als verzweigender Schaltkreis-Bonsai" loading="lazy" decoding="async" />
-  <figcaption>Der Schaltkreis-Bonsai steht fuer assistiertes Programmieren: Vorschlaege wachsen aus Kontext, Review und Codebasis.</figcaption>
 </figure>
 
 ## Hauptfunktionen

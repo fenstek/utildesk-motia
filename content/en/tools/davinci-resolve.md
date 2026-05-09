@@ -35,7 +35,6 @@ Resolve is less suitable when the only need is very quick smartphone clips, simp
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/davinci-resolve-editorial.webp" alt="Illustration for DaVinci Resolve: color grading suite with film strip and cinematic light" loading="lazy" decoding="async" />
-  <figcaption>Film, control surface and colored light point to editing, grading and professional post-production work.</figcaption>
 </figure>
 
 ## Key Features

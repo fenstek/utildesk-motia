@@ -29,7 +29,6 @@ YouCanBook.me gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als P
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/youcanbook-me-editorial.webp" alt="Illustration zu YouCanBook.me: Buchbare Zeitfenster als Weg zu einem Terminraum" loading="lazy" decoding="async" />
-  <figcaption>Kalenderfenster, Lichtweg und Terminraum uebersetzen Terminbuchung in eine einfache visuelle Entscheidung.</figcaption>
 </figure>
 
 ## Hauptfunktionen

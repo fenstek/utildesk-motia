@@ -41,7 +41,6 @@ Mailbird should first prove itself in a real contact case with intake, prioritiz
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/mailbird-editorial.webp" alt="Illustration for Mailbird: multiple inboxes as an organized communications nest" loading="lazy" decoding="async" />
-  <figcaption>The communications nest presents Mailbird as a calmer place for multiple inboxes, appointments and contacts.</figcaption>
 </figure>
 
 ## Key features

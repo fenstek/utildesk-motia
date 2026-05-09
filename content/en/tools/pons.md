@@ -36,7 +36,6 @@ Pons is less suitable as the only solution for large professional localization p
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/pons-editorial.webp" alt="Illustration for PONS: language bridge between dictionary pages and speech bubbles" loading="lazy" decoding="async" />
-  <figcaption>The bridge made of book pages makes PONS feel like a guide between languages and meanings.</figcaption>
 </figure>
 
 ## Key features

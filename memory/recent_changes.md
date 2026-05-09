@@ -4,7 +4,7 @@ _Last updated: 2026-05-09_
 ## 2026-05-09 - Tool Card Editorial Illustrations Batch 1
 
 ### Done
-- Added one mid-article ChatGPT-generated WebP illustration to 20 already edited tool cards, with matching German and English figure captions.
+- Added one mid-article ChatGPT-generated WebP illustration to 20 already edited tool cards, with German and English alt text. The later cleanup removed visible captions because they added visual noise under the artwork.
 - Used the second, corrected generation run only; the first stopped run was intentionally discarded because the visuals looked too uniform.
 - Added `docs/04_operations/tool_card_illustration_registry.json` as the project memory for illustrated tool cards so future batches do not repeat these slugs.
 - Removed the temporary local FotoJet illustration preview directory from `site/public/editorial-preview` so it cannot leak into production.

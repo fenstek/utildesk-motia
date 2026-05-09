@@ -12,7 +12,7 @@
       ],
       "image_format": "webp",
       "image_width_px": 1400,
-      "placement": "mid-article figure before the main functions/features section",
+      "placement": "mid-article image-only figure before the main functions/features section",
       "note": "Second generation run only. The first stopped run was discarded because it looked too uniform; this batch uses one distinct tool-specific visual metaphor per tool.",
       "slugs": [
         "adobe-enhance-speech",

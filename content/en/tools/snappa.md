@@ -35,7 +35,6 @@ It is less suitable when a company needs a highly customized design system, adva
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/snappa-editorial.webp" alt="Illustration for Snappa: marketing graphics, phone format and color papers on a worktable" loading="lazy" decoding="async" />
-  <figcaption>Blank post formats and campaign materials show Snappa as a tool for quick social and marketing graphics.</figcaption>
 </figure>
 
 ## Main Features

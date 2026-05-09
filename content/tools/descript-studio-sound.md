@@ -31,7 +31,6 @@ Weniger geeignet ist Studio Sound fuer Musikproduktion, kreative Soundgestaltung
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/descript-studio-sound-editorial.webp" alt="Illustration zu Descript Studio Sound: Rohaufnahme wird zur Studio-Stimme" loading="lazy" decoding="async" />
-  <figcaption>Die geteilte Audioszene zeigt den Unterschied zwischen verrauschter Aufnahme und sauberer Studioanmutung.</figcaption>
 </figure>
 
 ## Hauptfunktionen

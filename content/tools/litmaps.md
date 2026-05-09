@@ -31,7 +31,6 @@ Weniger geeignet ist Litmaps, wenn man nur eine einzelne bekannte Quelle sucht o
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/litmaps-editorial.webp" alt="Illustration zu Litmaps: Zitationsnetz als Sternkarte wissenschaftlicher Arbeiten" loading="lazy" decoding="async" />
-  <figcaption>Die Sternkarte passt zu Litmaps, weil Forschung hier vor allem als Netz aus Arbeiten, Spuren und Clustern sichtbar wird.</figcaption>
 </figure>
 
 ## Hauptfunktionen

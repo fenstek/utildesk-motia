@@ -26,7 +26,6 @@ In practice, OBS Studio is aimed mainly at streamers, educators, event teams, Yo
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/obs-studio-editorial.webp" alt="Illustration for OBS Studio: streaming workspace with camera, microphone and scene control" loading="lazy" decoding="async" />
-  <figcaption>Camera, mixer and scene areas show OBS Studio as a control room for recording and livestreaming.</figcaption>
 </figure>
 
 ## Typical use cases
