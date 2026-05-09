@@ -58,18 +58,18 @@ Der Hemingway Editor ist in einer kostenlosen Web-Version verfügbar, die grundl
 - [LanguageTool](/tools/languagetool/): Open-Source-Tool für Grammatik- und Stilprüfungen in mehreren Sprachen.
 - **Readable:** Spezialisierte Plattform zur Bewertung der Lesbarkeit von Texten.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Hemingway Editor hilft, Texte auf Klarheit, Satzlaenge und Lesbarkeit zu pruefen. Besonders nuetzlich ist es als Gegenmittel zu ueberladenen Formulierungen, solange Autorinnen und Autoren fachliche Praezision nicht blind zugunsten kuerzerer Saetze opfern.
+Hemingway Editor hilft, Texte auf Klarheit, Satzlaenge und Lesbarkeit zu prüfen. Besonders nützlich ist es als Gegenmittel zu überladenen Formulierungen, solange Autorinnen und Autoren fachliche Präzision nicht blind zugunsten kürzerer Sätze opfern.
 
 ## Workflow-Fit
 
-- Gut fuer Blogposts, Newsletter, Produkttexte, Erklaertexte und englische Copy, die einfacher lesbar werden soll.
-- Weniger geeignet fuer juristische, wissenschaftliche oder literarische Texte, bei denen Komplexitaet bewusst eingesetzt wird.
+- Gut für Blogposts, Newsletter, Produkttexte, Erklärtexte und englische Copy, die einfacher lesbar werden soll.
+- Weniger geeignet für juristische, wissenschaftliche oder literarische Texte, bei denen Komplexität bewusst eingesetzt wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Hemingway Editor ist ein scharfes, aber enges Werkzeug. Es zeigt Reibung im Text, entscheidet jedoch nicht, welche Nuance fuer Inhalt und Zielgruppe notwendig bleibt.
+Hemingway Editor ist ein scharfes, aber enges Werkzeug. Es zeigt Reibung im Text, entscheidet jedoch nicht, welche Nuance für Inhalt und Zielgruppe notwendig bleibt.
 
 ## FAQ
 

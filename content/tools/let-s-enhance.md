@@ -49,17 +49,17 @@ Let’s Enhance richtet sich an professionelle und private Nutzer, die ihre Bild
 - Abhängig von der Internetverbindung, da hauptsächlich als Webservice verfügbar.
 - Begrenzte Anpassungsmöglichkeiten im Vergleich zu professioneller Bildbearbeitungssoftware.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Let’s Enhance wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt Bildvergroesserung, Schaerfung und schnelle Verbesserung von Marketing- oder Produktbildern in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit Originalmaterial, Artefakten, Druckgroessen, Bildrechten und Batch-Bedarf, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Hilfreich fuer Rettung und Aufwertung, aber schlechte Bildquellen werden nicht automatisch markenreif.
+Let’s Enhance wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt Bildvergrößerung, Schaerfung und schnelle Verbesserung von Marketing- oder Produktbildern in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit Originalmaterial, Artefakten, Druckgrößen, Bildrechten und Batch-Bedarf, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Hilfreich für Rettung und Aufwertung, aber schlechte Bildquellen werden nicht automatisch markenreif.
 
 ## Workflow-Fit
 
-Fuer Teams sollte Let’s Enhance nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn Bildvergroesserung, Schaerfung und schnelle Verbesserung von Marketing- oder Produktbildern haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit Originalmaterial, Artefakten, Druckgroessen, Bildrechten und Batch-Bedarf. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+Für Teams sollte Let’s Enhance nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn Bildvergrößerung, Schaerfung und schnelle Verbesserung von Marketing- oder Produktbildern häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit Originalmaterial, Artefakten, Druckgrößen, Bildrechten und Batch-Bedarf. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Unsere Einschaetzung: Let’s Enhance ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Hilfreich fuer Rettung und Aufwertung, aber schlechte Bildquellen werden nicht automatisch markenreif. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+Unsere Einschätzung: Let’s Enhance ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Hilfreich für Rettung und Aufwertung, aber schlechte Bildquellen werden nicht automatisch markenreif. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
 
 ## Preise & Kosten
 

@@ -57,18 +57,18 @@ LibreOffice Impress ist Open Source und kostenlos nutzbar. Es fallen keine Lizen
 - **WPS Presentation**: Teil der WPS Office Suite mit kompatiblen Präsentationsfunktionen, bietet kostenlose und kostenpflichtige Versionen.
 - **Canva**: Online-Design-Tool mit einfachen Präsentationsfunktionen, Freemium-Modell mit erweiterten Features gegen Bezahlung.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-LibreOffice Impress ist besonders attraktiv, wenn Praesentationen offline, offen und ohne Abo-Zwang erstellt werden sollen. Der Alltagstest liegt bei Kompatibilitaet, Vorlagenpflege und Exporten: Wer viel mit PowerPoint-Nutzern austauscht, sollte Layouts nach jedem Import und PDF-Export pruefen.
+LibreOffice Impress ist besonders attraktiv, wenn Präsentationen offline, offen und ohne Abo-Zwang erstellt werden sollen. Der Alltagstest liegt bei Kompatibilität, Vorlagenpflege und Exporten: Wer viel mit PowerPoint-Nutzern austauscht, sollte Layouts nach jedem Import und PDF-Export prüfen.
 
 ## Workflow-Fit
 
-- Gut fuer Schulen, Vereine, Verwaltung, Linux-Umgebungen und Teams mit Fokus auf offene Dokumentformate.
-- Weniger ideal, wenn stark animierte Pitch-Decks, Cloud-Kollaboration oder pixelgenaue PowerPoint-Kompatibilitaet entscheidend sind.
+- Gut für Schulen, Vereine, Verwaltung, Linux-Umgebungen und Teams mit Fokus auf offene Dokumentformate.
+- Weniger ideal, wenn stark animierte Pitch-Decks, Cloud-Kollaboration oder pixelgenaue PowerPoint-Kompatibilität entscheidend sind.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Impress ist solide fuer sachliche Decks und unabhaengige Arbeitsumgebungen. Bei hochpolierten Sales- oder Investor-Praesentationen braucht es mehr manuelle Kontrolle als bei einfacheren Folien.
+Impress ist solide für sachliche Decks und unabhaengige Arbeitsumgebungen. Bei hochpolierten Sales- oder Investor-Präsentationen braucht es mehr manuelle Kontrolle als bei einfacheren Folien.
 
 ## FAQ
 

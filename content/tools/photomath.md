@@ -1,7 +1,7 @@
 ---
 slug: photomath
 title: Photomath
-category: Produktivitaet
+category: Produktivität
 price_model: Freemium
 tags: [ai, education]
 official_url: "https://photomath.com/"

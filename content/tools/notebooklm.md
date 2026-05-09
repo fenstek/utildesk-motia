@@ -1,7 +1,7 @@
 ---
 slug: notebooklm
 title: NotebookLM
-category: Produktivitaet
+category: Produktivität
 price_model: Freemium
 tags: [ai, research, notes]
 official_url: "https://notebooklm.google/"

@@ -53,17 +53,17 @@ Amazon SNS richtet sich hauptsächlich an Entwickler und Unternehmen, die eine e
 - Begrenzte Anpassungsmöglichkeiten jenseits der AWS-Standardfunktionen.
 - Für einige spezielle Anwendungsfälle sind dedizierte Messaging-Dienste eventuell besser geeignet.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Amazon Simple Notification Service (SNS) entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Messaging, Fan-out und Benachrichtigungen in AWS-nahen Systemen verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Fehlerpfaden, Retry-Regeln, Abonnenten, Kosten und Observability; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Ein Infrastrukturbaustein, der leise wirkt, aber bei falschem Design sehr sichtbar ausfallen kann.
+Bei Amazon Simple Notification Service (SNS) entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Messaging, Fan-out und Benachrichtigungen in AWS-nahen Systemen verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Fehlerpfaden, Retry-Regeln, Abonnenten, Kosten und Observability; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Ein Infrastrukturbaustein, der leise wirkt, aber bei falschem Design sehr sichtbar ausfallen kann.
 
 ## Workflow-Fit
 
-Im Workflow sollte Amazon Simple Notification Service (SNS) eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer Messaging, Fan-out und Benachrichtigungen in AWS-nahen Systemen sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit Fehlerpfaden, Retry-Regeln, Abonnenten, Kosten und Observability. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Amazon Simple Notification Service (SNS) eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für Messaging, Fan-out und Benachrichtigungen in AWS-nahen Systemen sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit Fehlerpfaden, Retry-Regeln, Abonnenten, Kosten und Observability. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Amazon Simple Notification Service (SNS) lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Ein Infrastrukturbaustein, der leise wirkt, aber bei falschem Design sehr sichtbar ausfallen kann. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Amazon Simple Notification Service (SNS) lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Ein Infrastrukturbaustein, der leise wirkt, aber bei falschem Design sehr sichtbar ausfallen kann. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

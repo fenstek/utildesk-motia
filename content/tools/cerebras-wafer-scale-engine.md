@@ -52,17 +52,17 @@ Aufgrund der spezialisierten Architektur und der hohen Investitionskosten ist de
 - Nicht für kleinere oder weniger anspruchsvolle KI-Anwendungen geeignet
 - Begrenzte Verfügbarkeit und nur über ausgewählte Partner zugänglich
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von Cerebras Wafer-Scale Engine liegt weniger in der Funktionsliste als in der Frage, ob spezialisierte KI-Beschleunigung fuer sehr grosse Trainings- und Inferenz-Workloads ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf eine Bewertung an Modellgroesse, Speicherbedarf, Datenpipeline und Betriebsteam messen, nicht an reinen Benchmark-Zahlen basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von Cerebras Wafer-Scale Engine liegt weniger in der Funktionsliste als in der Frage, ob spezialisierte KI-Beschleunigung für sehr große Trainings- und Inferenz-Workloads ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf eine Bewertung an Modellgröße, Speicherbedarf, Datenpipeline und Betriebsteam messen, nicht an reinen Benchmark-Zahlen basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht Cerebras Wafer-Scale Engine klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei spezialisierte KI-Beschleunigung fuer sehr grosse Trainings- und Inferenz-Workloads trennt eine Bewertung an Modellgroesse, Speicherbedarf, Datenpipeline und Betriebsteam messen, nicht an reinen Benchmark-Zahlen brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht Cerebras Wafer-Scale Engine klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei spezialisierte KI-Beschleunigung für sehr große Trainings- und Inferenz-Workloads trennt eine Bewertung an Modellgröße, Speicherbedarf, Datenpipeline und Betriebsteam messen, nicht an reinen Benchmark-Zahlen brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer Cerebras Wafer-Scale Engine hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Die Hardware kann stark sein, aber nur wenn Software-Stack, Beschaffung und Auslastung zum Projekt passen. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für Cerebras Wafer-Scale Engine hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Die Hardware kann stark sein, aber nur wenn Software-Stack, Beschaffung und Auslastung zum Projekt passen. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 

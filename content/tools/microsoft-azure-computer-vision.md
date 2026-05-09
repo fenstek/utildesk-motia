@@ -44,17 +44,17 @@ Microsoft Azure Computer Vision richtet sich vor allem an Unternehmen und Entwic
 - Einige erweiterte Funktionen sind nur in höheren Preismodellen verfügbar.
 - Abhängigkeit von Internetverbindung und Cloud-Diensten.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Microsoft Azure Computer Vision wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt Bildanalyse, OCR und visuelle Klassifikation in Azure-nahen Anwendungen in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit realen Bildquellen, Fehlertypen, Regionseinstellungen und Review-Schleifen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Gut fuer strukturierte Vision-Aufgaben, aber riskant wenn Grenzfaelle ohne menschliche Kontrolle wirken.
+Microsoft Azure Computer Vision wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt Bildanalyse, OCR und visuelle Klassifikation in Azure-nahen Anwendungen in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit realen Bildquellen, Fehlertypen, Regionseinstellungen und Review-Schleifen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Gut für strukturierte Vision-Aufgaben, aber riskant wenn Grenzfälle ohne menschliche Kontrolle wirken.
 
 ## Workflow-Fit
 
-Fuer Teams sollte Microsoft Azure Computer Vision nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn Bildanalyse, OCR und visuelle Klassifikation in Azure-nahen Anwendungen haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit realen Bildquellen, Fehlertypen, Regionseinstellungen und Review-Schleifen. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+Für Teams sollte Microsoft Azure Computer Vision nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn Bildanalyse, OCR und visuelle Klassifikation in Azure-nahen Anwendungen häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit realen Bildquellen, Fehlertypen, Regionseinstellungen und Review-Schleifen. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Unsere Einschaetzung: Microsoft Azure Computer Vision ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Gut fuer strukturierte Vision-Aufgaben, aber riskant wenn Grenzfaelle ohne menschliche Kontrolle wirken. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+Unsere Einschätzung: Microsoft Azure Computer Vision ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Gut für strukturierte Vision-Aufgaben, aber riskant wenn Grenzfälle ohne menschliche Kontrolle wirken. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
 
 ## Preise & Kosten
 

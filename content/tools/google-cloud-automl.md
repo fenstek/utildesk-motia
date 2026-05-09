@@ -51,17 +51,17 @@ Google Cloud AutoML richtet sich an Unternehmen und Entwickler, die schnell und 
 - Lernkurve für Nutzer ohne Cloud-Erfahrung.
 - Datenschutz und Datenhoheit müssen sorgfältig geprüft werden, besonders bei sensiblen Daten.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Google Cloud AutoML entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Custom-ML-Modelle fuer Teams, die Google Cloud bereits operativ nutzen verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit eigenen Trainingsdaten, Labelqualitaet, Deployments und Monitoringaufwand; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Hilfreich fuer strukturierte ML-Faelle, aber kein Shortcut um unklare Daten oder Zielmetriken zu retten.
+Bei Google Cloud AutoML entscheidet im Alltag nicht die Demo, sondern ob das Tool bei Custom-ML-Modelle für Teams, die Google Cloud bereits operativ nutzen verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit eigenen Trainingsdaten, Labelqualität, Deployments und Monitoringaufwand; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Hilfreich für strukturierte ML-Fälle, aber kein Shortcut um unklare Daten oder Zielmetriken zu retten.
 
 ## Workflow-Fit
 
-Im Workflow sollte Google Cloud AutoML eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer Custom-ML-Modelle fuer Teams, die Google Cloud bereits operativ nutzen sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit eigenen Trainingsdaten, Labelqualitaet, Deployments und Monitoringaufwand. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Google Cloud AutoML eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für Custom-ML-Modelle für Teams, die Google Cloud bereits operativ nutzen sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit eigenen Trainingsdaten, Labelqualität, Deployments und Monitoringaufwand. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Google Cloud AutoML lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Hilfreich fuer strukturierte ML-Faelle, aber kein Shortcut um unklare Daten oder Zielmetriken zu retten. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Google Cloud AutoML lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Hilfreich für strukturierte ML-Fälle, aber kein Shortcut um unklare Daten oder Zielmetriken zu retten. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

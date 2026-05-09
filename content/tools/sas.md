@@ -61,16 +61,16 @@ SAS bietet verschiedene Preisoptionen, darunter auch freemium-Modelle für einen
 - **KNIME:** Open-Source-Tool für Datenanalyse und Workflow-Management.
 - **Alteryx:** Analytics-Plattform, die Datenvorbereitung, Analyse und Automatisierung kombiniert.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-SAS steht fuer analytische Stabilitaet in Umgebungen, in denen Daten, Modelle und Reports nachvollziehbar bleiben muessen. Der Nutzen zeigt sich besonders in regulierten Branchen, bei grossen Datenbestaenden und bei Teams, die Governance, Auditierbarkeit und langjaehrige Prozesse hoeher gewichten als schnelle Toolwechsel.
+SAS steht für analytische Stabilität in Umgebungen, in denen Daten, Modelle und Reports nachvollziehbar bleiben müssen. Der Nutzen zeigt sich besonders in regulierten Branchen, bei großen Datenbeständen und bei Teams, die Governance, Auditierbarkeit und langjaehrige Prozesse hoeher gewichten als schnelle Toolwechsel.
 
 ## Workflow-Fit
 
-- Stark fuer Banken, Versicherungen, Pharma, Verwaltung und Enterprise-Analytics mit formalen Anforderungen.
-- Weniger attraktiv fuer kleine Teams, die offene Python/R-Stacks, niedrige Einstiegskosten und schnelle Experimente bevorzugen.
+- Stark für Banken, Versicherungen, Pharma, Verwaltung und Enterprise-Analytics mit formalen Anforderungen.
+- Weniger attraktiv für kleine Teams, die offene Python/R-Stacks, niedrige Einstiegskosten und schnelle Experimente bevorzugen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 SAS ist nicht das leichteste Werkzeug, aber in vielen Organisationen ein belastbarer Standard. Wer es bewertet, sollte Lizenz, Skillbasis und Compliance-Nutzen zusammen betrachten.
 

@@ -58,18 +58,18 @@ VivaCut bietet ein Freemium-Modell an. Die Basisversion ist kostenlos und beinha
 - **FilmoraGo** – Einsteigerfreundlicher Video-Editor mit zahlreichen Effekten und Exportoptionen.  
 - **CapCut** – Kostenloser Video-Editor mit starken AI-Funktionen, besonders beliebt bei TikTok-Nutzern.  
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-VivaCut ist fuer mobile Videoproduktion interessant, wenn Clips schnell auf dem Smartphone geschnitten, animiert und fuer soziale Plattformen vorbereitet werden. Der Vorteil liegt in Tempo und Effektzugang, nicht in maximaler Produktionskontrolle.
+VivaCut ist für mobile Videoproduktion interessant, wenn Clips schnell auf dem Smartphone geschnitten, animiert und für soziale Plattformen vorbereitet werden. Der Vorteil liegt in Tempo und Effektzugang, nicht in maximaler Produktionskontrolle.
 
 ## Workflow-Fit
 
-- Gut fuer Creator, kurze Social Videos, Reels, Stories und spontane Kampagnenideen.
-- Weniger passend fuer lange Projekte, Teamreviews, professionelle Farbkorrektur oder Audio-Postproduktion.
+- Gut für Creator, kurze Social Videos, Reels, Stories und spontane Kampagnenideen.
+- Weniger passend für lange Projekte, Teamreviews, professionelle Farbkorrektur oder Audio-Postproduktion.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-VivaCut ist ein mobiles Schnittwerkzeug fuer schnelle visuelle Energie. Gute Ergebnisse entstehen, wenn Schnitte, Texte und Effekte die Aussage unterstuetzen, statt den Clip nur lauter wirken zu lassen.
+VivaCut ist ein mobiles Schnittwerkzeug für schnelle visuelle Energie. Gute Ergebnisse entstehen, wenn Schnitte, Texte und Effekte die Aussage unterstützen, statt den Clip nur lauter wirken zu lassen.
 
 ## FAQ
 

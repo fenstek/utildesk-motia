@@ -60,18 +60,18 @@ RabbitMQ ist Open Source und kann kostenlos genutzt werden. Für Unternehmen, di
 - **Amazon SQS** – Cloud-basierter Messaging-Service von AWS mit hoher Skalierbarkeit und einfacher Integration.  
 - **NATS** – Leichtgewichtiger, Cloud-native Messaging-System mit Fokus auf Performance und Einfachheit.  
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
 RabbitMQ lohnt sich, wenn Systeme nicht mehr alles synchron voneinander erwarten sollen. Der praktische Gewinn liegt in entkoppelten Queues, Retry-Strategien und kontrolliertem Durchsatz, aber nur, wenn Nachrichtenformate, Dead-Letter-Verhalten und Monitoring vor dem Ernstfall sauber geplant sind.
 
 ## Workflow-Fit
 
-- Stark fuer Hintergrundjobs, Integrationen, Event-Bruecken und Workloads, die Lastspitzen abfedern muessen.
-- Nicht ideal als blosse Ablage fuer unklare Prozesslogik, weil schlecht modellierte Queues Fehler nur zeitversetzt sichtbar machen.
+- Stark für Hintergrundjobs, Integrationen, Event-Brücken und Workloads, die Lastspitzen abfedern müssen.
+- Nicht ideal als blosse Ablage für unklare Prozesslogik, weil schlecht modellierte Queues Fehler nur zeitversetzt sichtbar machen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-RabbitMQ ist ein verlaesslicher Baustein fuer robuste Systeme, wenn Teams die Betriebsseite ernst nehmen. Ohne klare Ownership fuer Verbraucher, Alerts und Backpressure wird aus der Queue schnell ein unsichtbarer Problemparkplatz.
+RabbitMQ ist ein verlässlicher Baustein für robuste Systeme, wenn Teams die Betriebsseite ernst nehmen. Ohne klare Ownership für Verbraucher, Alerts und Backpressure wird aus der Queue schnell ein unsichtbarer Problemparkplatz.
 
 ## FAQ
 

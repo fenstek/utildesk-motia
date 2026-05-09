@@ -55,17 +55,17 @@ Colab ist ideal für Nutzer, die eine unkomplizierte, sofort nutzbare Plattform 
 - Eingeschränkte Kontrolle über die Hardwareumgebung.
 - Kostenpflichtige Upgrades für längere Laufzeiten und leistungsfähigere Ressourcen nötig.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Google Colab wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt Notebook-Arbeit fuer Lernen, Experimente, Demos und leichte Data-Science-Workflows in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit Laufzeitlimits, Datenzugriff, GPU-Bedarf und Reproduzierbarkeit, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Grossartig fuer Einstieg und Austausch, aber produktive Pipelines brauchen stabilere Umgebung und Versionsdisziplin.
+Google Colab wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt Notebook-Arbeit für Lernen, Experimente, Demos und leichte Data-Science-Workflows in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit Laufzeitlimits, Datenzugriff, GPU-Bedarf und Reproduzierbarkeit, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Großartig für Einstieg und Austausch, aber produktive Pipelines brauchen stabilere Umgebung und Versionsdisziplin.
 
 ## Workflow-Fit
 
-Fuer Teams sollte Google Colab nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn Notebook-Arbeit fuer Lernen, Experimente, Demos und leichte Data-Science-Workflows haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit Laufzeitlimits, Datenzugriff, GPU-Bedarf und Reproduzierbarkeit. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+Für Teams sollte Google Colab nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn Notebook-Arbeit für Lernen, Experimente, Demos und leichte Data-Science-Workflows häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit Laufzeitlimits, Datenzugriff, GPU-Bedarf und Reproduzierbarkeit. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Unsere Einschaetzung: Google Colab ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Grossartig fuer Einstieg und Austausch, aber produktive Pipelines brauchen stabilere Umgebung und Versionsdisziplin. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+Unsere Einschätzung: Google Colab ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Großartig für Einstieg und Austausch, aber produktive Pipelines brauchen stabilere Umgebung und Versionsdisziplin. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
 
 ## Preise & Kosten
 

@@ -73,18 +73,18 @@ Die genauen Preise und enthaltenen Leistungen hängen vom gewählten Plan ab und
 - **TextCortex** – KI-Tool für automatisierte Content-Erstellung und Textoptimierung.
 - **Anyword** – Speziell auf Werbetexte fokussiertes KI-Tool mit Performance-Analyse.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Writesonic ist vor allem fuer Teams nuetzlich, die regelmaessig Varianten von Landingpage-Texten, Anzeigen, Produktbeschreibungen oder Blogskizzen brauchen. Qualitaet entsteht nicht durch den Rohoutput allein, sondern durch Briefing, Tonalitaetsvorgaben, Faktencheck und anschliessende redaktionelle Verdichtung.
+Writesonic ist vor allem für Teams nützlich, die regelmäßig Varianten von Landingpage-Texten, Anzeigen, Produktbeschreibungen oder Blogskizzen brauchen. Qualität entsteht nicht durch den Rohoutput allein, sondern durch Briefing, Tonalitätsvorgaben, Faktencheck und anschließende redaktionelle Verdichtung.
 
 ## Workflow-Fit
 
-- Gut geeignet fuer Content-Pipelines mit klaren Themenclustern, Suchintentionen und definierten Freigabeschritten.
+- Gut geeignet für Content-Pipelines mit klaren Themenclustern, Suchintentionen und definierten Freigabeschritten.
 - Schwach wird es bei sehr fachlichen Aussagen, rechtlichen Versprechen oder Markenstimmen, die nicht sauber als Kontext mitgegeben werden.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Writesonic kann Schreibarbeit beschleunigen, aber nicht die Verantwortung fuer Aussage, Positionierung und Belegbarkeit uebernehmen. Als Ideengeber und Variantenmaschine ist es deutlich staerker als als unbeaufsichtigter Publisher.
+Writesonic kann Schreibarbeit beschleunigen, aber nicht die Verantwortung für Aussage, Positionierung und Belegbarkeit übernehmen. Als Ideengeber und Variantenmaschine ist es deutlich stärker als als unbeaufsichtigter Publisher.
 
 ## FAQ
 

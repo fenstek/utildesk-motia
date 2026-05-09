@@ -1,7 +1,7 @@
 ---
 slug: brainly
 title: Brainly
-category: Produktivitaet
+category: Produktivität
 price_model: Freemium
 tags: [ai, education]
 official_url: "https://brainly.com/"

@@ -54,18 +54,18 @@ Die Preisgestaltung von Espresso variiert je nach Anbieter, Funktionsumfang und 
 - **Microsoft Azure Machine Learning** – Integrierte Cloud-Plattform für KI-Entwicklung und Automatisierung  
 - **RapidMiner** – Benutzerfreundliche Plattform für Datenwissenschaft und Predictive Analytics  
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Espresso ist ein schlankes Werkzeug fuer Webentwicklung, bei dem direkte Bearbeitung, Vorschau und Projektdateien nah beieinander liegen. Der Wert zeigt sich besonders bei kleinen Frontend-Aenderungen, wenn man HTML, CSS oder JavaScript schnell pruefen moechte, ohne eine schwere IDE zu starten.
+Espresso ist ein schlankes Werkzeug für Webentwicklung, bei dem direkte Bearbeitung, Vorschau und Projektdateien nah beieinander liegen. Der Wert zeigt sich besonders bei kleinen Frontend-Änderungen, wenn man HTML, CSS oder JavaScript schnell prüfen möchte, ohne eine schwere IDE zu starten.
 
 ## Workflow-Fit
 
-- Gut fuer statische Seiten, kleine Kundenanpassungen, CSS-Feinschliff und schnelle lokale Experimente.
-- Weniger geeignet fuer grosse Repositories mit komplexem Buildsystem, Team-Reviews und tiefen Integrationen in moderne DevOps-Prozesse.
+- Gut für statische Seiten, kleine Kundenanpassungen, CSS-Feinschliff und schnelle lokale Experimente.
+- Weniger geeignet für große Repositories mit komplexem Buildsystem, Team-Reviews und tiefen Integrationen in moderne DevOps-Prozesse.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Espresso ist angenehm, wenn Fokus und Tempo wichtiger sind als maximale Erweiterbarkeit. Fuer professionelle Teams bleibt es eher ein leichtes Spezialwerkzeug als die zentrale Entwicklungsplattform.
+Espresso ist angenehm, wenn Fokus und Tempo wichtiger sind als maximale Erweiterbarkeit. Für professionelle Teams bleibt es eher ein leichtes Spezialwerkzeug als die zentrale Entwicklungsplattform.
 
 ## FAQ
 

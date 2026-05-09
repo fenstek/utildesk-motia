@@ -1,7 +1,7 @@
 ---
 slug: gamma
 title: Gamma
-category: Produktivitaet
+category: Produktivität
 price_model: Freemium
 tags: [ai, presentation, productivity]
 official_url: "https://gamma.app/"

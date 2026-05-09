@@ -56,17 +56,17 @@ Das Tool ist plattformunabhängig und funktioniert direkt im Browser, was den Ei
 - Abhängigkeit von einer stabilen Internetverbindung.
 - Datenschutz und Speicherung der Daten in der Cloud können für manche Nutzer ein Thema sein.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Canva Video entscheidet im Alltag nicht die Demo, sondern ob das Tool bei schnelle Videoformate innerhalb eines Design- und Template-Workflows verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Kampagnenformaten, Brand Kit, Freigaben und Wiederverwendung ueber mehrere Kanaele; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Ideal fuer Teams, die Tempo und Konsistenz brauchen; weniger stark bei komplexer Postproduktion.
+Bei Canva Video entscheidet im Alltag nicht die Demo, sondern ob das Tool bei schnelle Videoformate innerhalb eines Design- und Template-Workflows verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Kampagnenformaten, Brand Kit, Freigaben und Wiederverwendung über mehrere Kanäle; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Ideal für Teams, die Tempo und Konsistenz brauchen; weniger stark bei komplexer Postproduktion.
 
 ## Workflow-Fit
 
-Im Workflow sollte Canva Video eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer schnelle Videoformate innerhalb eines Design- und Template-Workflows sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit Kampagnenformaten, Brand Kit, Freigaben und Wiederverwendung ueber mehrere Kanaele. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Canva Video eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für schnelle Videoformate innerhalb eines Design- und Template-Workflows sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit Kampagnenformaten, Brand Kit, Freigaben und Wiederverwendung über mehrere Kanäle. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Canva Video lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Ideal fuer Teams, die Tempo und Konsistenz brauchen; weniger stark bei komplexer Postproduktion. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Canva Video lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Ideal für Teams, die Tempo und Konsistenz brauchen; weniger stark bei komplexer Postproduktion. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

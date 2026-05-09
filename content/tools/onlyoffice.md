@@ -57,18 +57,18 @@ OnlyOffice bietet verschiedene Preismodelle, die sich nach den benötigten Funkt
 - **LibreOffice:** Open-Source-Office-Paket, das lokal installiert wird, mit umfangreichen Funktionen.
 - **WPS Office:** Kostenlose und kostenpflichtige Office-Programme mit Cloud-Synchronisation.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-OnlyOffice ist interessant fuer Teams, die Office-kompatible Dokumentbearbeitung mit mehr Kontrolle ueber Hosting und Integration verbinden wollen. Entscheidend sind Dateitreue, gemeinsame Bearbeitung, Rechte und die Frage, ob bestehende Speicher- oder Kollaborationssysteme sauber angebunden werden koennen.
+OnlyOffice ist interessant für Teams, die Office-kompatible Dokumentbearbeitung mit mehr Kontrolle über Hosting und Integration verbinden wollen. Entscheidend sind Dateitreue, gemeinsame Bearbeitung, Rechte und die Frage, ob bestehende Speicher- oder Kollaborationssysteme sauber angebunden werden können.
 
 ## Workflow-Fit
 
-- Gut fuer Organisationen mit Nextcloud-, Self-Hosting- oder Datenschutzanforderungen, die trotzdem vertraute Dokumentformate brauchen.
-- Weniger passend, wenn maximale Microsoft-365-Integration, Makro-Kompatibilitaet oder sehr komplexe Office-Vorlagen entscheidend sind.
+- Gut für Organisationen mit Nextcloud-, Self-Hosting- oder Datenschutzanforderungen, die trotzdem vertraute Dokumentformate brauchen.
+- Weniger passend, wenn maximale Microsoft-365-Integration, Makro-Kompatibilität oder sehr komplexe Office-Vorlagen entscheidend sind.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-OnlyOffice ist eine ernsthafte Alternative, wenn Kontrolle und Formatnaehe wichtiger sind als ein komplettes Enterprise-Oekosystem. Vor der Einfuehrung sollten anspruchsvolle Dokumente real getestet werden.
+OnlyOffice ist eine ernsthafte Alternative, wenn Kontrolle und Formatnähe wichtiger sind als ein komplettes Enterprise-Ökosystem. Vor der Einführung sollten anspruchsvolle Dokumente real getestet werden.
 
 ## FAQ
 

@@ -18,7 +18,7 @@ Splice eignet sich ideal für:
 
 - Musiker und Produzenten, die hochwertige Samples, Loops und Sounds für ihre Tracks suchen
 - Videoproduzenten, die einfache Tools für Schnitt und Bearbeitung benötigen
-- Content-Ersteller, die Audio- und Videoelemente für Social Media oder andere Plattformen erstellen
+- Content-Ersteller, die Audio- und Videölemente für Social Media oder andere Plattformen erstellen
 - Designer und Kreative, die ihre Projekte mit professionellen Audio-Assets bereichern wollen
 - Alle, die ihre kreative Produktivität durch KI-gestützte Funktionen verbessern möchten
 
