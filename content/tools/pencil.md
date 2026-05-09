@@ -23,7 +23,7 @@ Geeignet ist Pencil2D für Einsteiger, Kunstunterricht, Animationsskizzen, klein
 ## Typische Einsatzszenarien
 
 - Kurze handgezeichnete Animationen erstellen.
-- Bewegungsstudien, Walk Cycles oder Unterrichtsuebungen bauen.
+- Bewegungsstudien, Walk Cycles oder Unterrichtsübungen bauen.
 - Animatics oder grobe Storyideen testen.
 - Frame-by-Frame-Prinzipien ohne teure Software lernen.
 - Einfache GIFs oder Clips mit traditionellem Look produzieren.
@@ -37,7 +37,7 @@ Gute Ergebnisse kommen durch Planung: Keyframes, Zwischenzeichnungen, Timing und
 ## Hauptfunktionen
 
 - Frame-by-Frame-Animation mit Bitmap- und Vektorzeichnungen.
-- Onion-Skinning für Bewegungsübergaenge.
+- Onion-Skinning für Bewegungsübergänge.
 - Zeitleiste, Ebenen und einfache Animationssteuerung.
 - Import und Export einfacher Formate je nach Setup.
 - Open-Source-Nutzung für Lernen und kleine Projekte.

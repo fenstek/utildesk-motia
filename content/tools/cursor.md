@@ -69,7 +69,7 @@ Cursor ist für Entwickler interessant, weil KI-Unterstützung direkt im Editor,
 
 ## Redaktionelle Einschätzung
 
-Cursor kann Entwicklungsarbeit spürbar beschleunigen, wenn es als Pairing-Partner genutzt wird. Es wird gefaehrlich, sobald erzeugter Code mehr Vertrauen bekommt als die eigene Verifikation.
+Cursor kann Entwicklungsarbeit spürbar beschleunigen, wenn es als Pairing-Partner genutzt wird. Es wird gefährlich, sobald erzeugter Code mehr Vertrauen bekommt als die eigene Verifikation.
 
 ## FAQ
 

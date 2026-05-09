@@ -22,13 +22,13 @@ Geeignet ist SwiftKey für Vielschreiber am Smartphone, mehrsprachige Nutzer, Me
 
 - Mehrsprachig schreiben, ohne ständig die Tastatur zu wechseln.
 - Autokorrektur und Wortvorschlaege für schnellere mobile Antworten nutzen.
-- Persoenliche Schreibmuster über Zeit besser abbilden lassen.
+- Persönliche Schreibmuster über Zeit besser abbilden lassen.
 - Swipe- oder Gesteneingabe für einhaendiges Tippen verwenden.
 - Tastaturlayouts, Themes und Eingabesprachen anpassen.
 
 ## Was im Alltag wirklich zählt
 
-Im Alltag arbeitet SwiftKey im Hintergrund. Wenn es gut funktioniert, merkt man es kaum; wenn es falsch lernt, merkt man es sehr schnell. Ab und zu das persönliche Woerterbuch zu korrigieren, ist kleine Tastaturhygiene.
+Im Alltag arbeitet SwiftKey im Hintergrund. Wenn es gut funktioniert, merkt man es kaum; wenn es falsch lernt, merkt man es sehr schnell. Ab und zu das persönliche Wörterbuch zu korrigieren, ist kleine Tastaturhygiene.
 
 Mehrsprachige Nutzer profitieren besonders, weil Satzmischungen und Sprachwechsel weniger holprig werden. Trotzdem sollte man wichtige Nachrichten gegenlesen, bevor die Autokorrektur aus einer Zusage ein kleines Drama macht.
 

@@ -24,7 +24,7 @@ Geeignet ist fairseq für ML-Forschende, NLP-Teams, Studierende mit technischem 
 - Sequenz-zu-Sequenz-Modelle trainieren, evaluieren oder vergleichen.
 - Bestehende fairseq-Checkpoints warten oder weiterverwenden.
 - Forschungspipelines für Übersetzung, Sprache oder generative Sequenzen bauen.
-- Modelle und Trainingsablaeufe auf niedrigerer Ebene verstehen.
+- Modelle und Trainingsabläufe auf niedrigerer Ebene verstehen.
 
 ## Was im Alltag wirklich zählt
 

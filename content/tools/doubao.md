@@ -67,7 +67,7 @@ Doubao ist als KI-Assistent vor allem im chinesischen Ökosystem interessant, wo
 
 ## Redaktionelle Einschätzung
 
-Doubao sollte nicht nur als weiterer Chatbot betrachtet werden. Interessant ist, wie lokale Plattformlogik, Sprache und Content-Nutzung die Form eines KI-Assistenten praegen.
+Doubao sollte nicht nur als weiterer Chatbot betrachtet werden. Interessant ist, wie lokale Plattformlogik, Sprache und Content-Nutzung die Form eines KI-Assistenten prägen.
 
 ## FAQ
 

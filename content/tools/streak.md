@@ -46,7 +46,7 @@ Teams sollten außerdem regeln, welche Informationen in Streak gehören und welc
 
 - Sehr niedrige Einstiegshürde für Gmail-zentrierte Teams.
 - Reduziert Kontextwechsel zwischen Postfach und CRM.
-- Gut für einfache Pipelines, die sonst in Tabellen landen wuerden.
+- Gut für einfache Pipelines, die sonst in Tabellen landen würden.
 
 ### Grenzen
 

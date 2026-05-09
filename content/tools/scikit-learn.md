@@ -58,7 +58,7 @@ Scikit-learn ist grundsätzlich als Open-Source-Software kostenlos verfügbar. E
 
 ## Was im Alltag wirklich zählt
 
-Scikit-learn ist ein Grundwerkzeug für klassisches Machine Learning in Python. Es glaenzt bei transparenten Pipelines, Modellvergleichen, Preprocessing und soliden Baselines; für Deep Learning oder riesige verteilte Trainingslaeufe ist es dagegen nicht die richtige Hauptbuehne.
+Scikit-learn ist ein Grundwerkzeug für klassisches Machine Learning in Python. Es glänzt bei transparenten Pipelines, Modellvergleichen, Preprocessing und soliden Baselines; für Deep Learning oder riesige verteilte Trainingsläufe ist es dagegen nicht die richtige Hauptbuehne.
 
 ## Workflow-Fit
 

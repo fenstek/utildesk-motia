@@ -62,7 +62,7 @@ Corel Painter ist für digitale Malerei interessant, wenn Pinselgefühl, Textur 
 
 ## Workflow-Fit
 
-- Gut für Illustratorinnen, Kuenstler, Concept Artists und alle, die digitale Werkzeuge mit analoger Anmutung suchen.
+- Gut für Illustratorinnen, Künstler, Concept Artists und alle, die digitale Werkzeuge mit analoger Anmutung suchen.
 - Weniger passend für UI-Design, einfache Social Templates oder kollaborative Designsysteme.
 
 ## Redaktionelle Einschätzung

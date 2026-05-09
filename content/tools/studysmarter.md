@@ -64,7 +64,7 @@ StudySmarter ist für Lernorganisation interessant, wenn Notizen, Karteikarten, 
 ## Workflow-Fit
 
 - Gut für Schule, Studium, Prüfungsvorbereitung und Faecher mit viel wiederholbarem Fakten- oder Konzeptwissen.
-- Weniger geeignet, wenn tiefes Verständnis, Schreiben eigener Lösungen oder praktische Anwendung kaum geuebt wird.
+- Weniger geeignet, wenn tiefes Verständnis, Schreiben eigener Lösungen oder praktische Anwendung kaum geübt wird.
 
 ## Redaktionelle Einschätzung
 

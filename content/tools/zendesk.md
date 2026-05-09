@@ -65,7 +65,7 @@ Zendesk wird wertvoll, wenn Support nicht mehr aus einzelnen Antworten, sondern 
 
 ## Redaktionelle Einschätzung
 
-Zendesk ist ein skalierbares Supportsystem, aber kein Selbstlaeufer. Gute Implementierungen fühlen sich für Kunden einfach an, weil im Hintergrund sehr bewusst strukturiert wurde.
+Zendesk ist ein skalierbares Supportsystem, aber kein Selbstläufer. Gute Implementierungen fühlen sich für Kunden einfach an, weil im Hintergrund sehr bewusst strukturiert wurde.
 
 ## FAQ
 

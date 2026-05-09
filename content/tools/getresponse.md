@@ -10,7 +10,7 @@ popularity: 0
 
 # GetResponse
 
-GetResponse ist eine Plattform für E-Mail-Marketing, Automatisierung, Landingpages und Kampagnenkommunikation. Der praktische Nutzen liegt darin, Zielgruppen nicht nur anzuschreiben, sondern entlang von Listen, Segmenten und Ausloesern systematischer zu begleiten.
+GetResponse ist eine Plattform für E-Mail-Marketing, Automatisierung, Landingpages und Kampagnenkommunikation. Der praktische Nutzen liegt darin, Zielgruppen nicht nur anzuschreiben, sondern entlang von Listen, Segmenten und Auslösern systematischer zu begleiten.
 
 Gutes E-Mail-Marketing entsteht aber nicht durch mehr Versand. Entscheidend sind saubere Zustimmung, relevante Inhalte, Zustellbarkeit und ein Rhythmus, der Empfänger nicht ermuedet. GetResponse liefert Werkzeuge; die Verantwortung für Beziehung und Ton bleibt beim Team.
 
@@ -66,7 +66,7 @@ E-Mail-Marketing beruehrt direkt Datenschutz und Einwilligung. Double-Opt-in, Ab
 
 ## Preise & Kosten
 
-GetResponse wird plan- und kontaktabhaengig abgerechnet. Vor dem Upgrade sollte klar sein, welche Funktionen wirklich Umsatz oder Zeitersparnis bringen und welche nur in der Demo glaenzen. Das im Datensatz geführte Preismodell ist: Abonnement.
+GetResponse wird plan- und kontaktabhaengig abgerechnet. Vor dem Upgrade sollte klar sein, welche Funktionen wirklich Umsatz oder Zeitersparnis bringen und welche nur in der Demo glänzen. Das im Datensatz geführte Preismodell ist: Abonnement.
 
 ## Alternativen zu GetResponse
 

@@ -51,7 +51,7 @@ Besonders wertvoll ist Jira, wenn Teams regelmäßig aufräumen: alte Felder ent
 ### Grenzen
 
 - Kann schnell überkonfiguriert und schwerfällig werden.
-- Schlechte Ticketkultur wird nicht geloest, sondern nur dokumentiert.
+- Schlechte Ticketkultur wird nicht gelöst, sondern nur dokumentiert.
 - Administrationsaufwand und Lizenzkosten wachsen mit Teamgröße und Komplexität.
 
 ## Workflow-Fit

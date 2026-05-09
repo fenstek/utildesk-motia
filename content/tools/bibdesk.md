@@ -72,7 +72,7 @@ BibDesk ist kostenlos nutzbar. Die eigentlichen Kosten liegen in Pflegezeit und 
 
 ## Alternativen zu BibDesk
 
-- Zotero: moderner, cloudfaehig und stark für Browser-Recherche.
+- Zotero: moderner, cloudfähig und stark für Browser-Recherche.
 - JabRef: ebenfalls BibTeX-nah und plattformübergreifend.
 - Mendeley: cloud- und PDF-orientiert, aber mit anderem Ökosystem.
 - EndNote: etabliert in vielen institutionellen Umgebungen.

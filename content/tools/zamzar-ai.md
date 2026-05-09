@@ -45,7 +45,7 @@ Bei wiederkehrenden Aufgaben lohnt sich irgendwann ein kontrollierter Workflow. 
 ### Vorteile
 
 - Sehr praktisch für schnelle Einmal-Konvertierungen.
-- Unterstützt viele gaengige und seltenere Formate.
+- Unterstützt viele gängige und seltenere Formate.
 - Keine lokale Softwareinstallation nötig.
 
 ### Grenzen
@@ -62,7 +62,7 @@ Für Teams ist eine einfache Ampelregel hilfreich: grün für harmlose öffentli
 
 ## Datenschutz & Daten
 
-Bei Online-Konvertierung verlassen Dateien die eigene Umgebung. Deshalb sollten vertrauliche, personenbezogene oder regulierte Inhalte nur hochgeladen werden, wenn die Datenschutz- und Loeschbedingungen zum eigenen Risiko passen.
+Bei Online-Konvertierung verlassen Dateien die eigene Umgebung. Deshalb sollten vertrauliche, personenbezogene oder regulierte Inhalte nur hochgeladen werden, wenn die Datenschutz- und Löschbedingungen zum eigenen Risiko passen.
 
 ## Preise & Kosten
 

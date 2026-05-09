@@ -28,7 +28,7 @@ Geeignet ist remove.bg für E-Commerce, Social Media, Creator, kleine Marketingt
 
 ## Was im Alltag wirklich zählt
 
-Im Alltag ist remove.bg ein klassischer Zeitgewinner. Trotzdem sollte jedes Ergebnis kurz bei 100 Prozent geprüft werden: Haare, Schatten, Brillen, Produktkanten und weisse Objekte sind die ueblichen Verdächtigen.
+Im Alltag ist remove.bg ein klassischer Zeitgewinner. Trotzdem sollte jedes Ergebnis kurz bei 100 Prozent geprüft werden: Haare, Schatten, Brillen, Produktkanten und weisse Objekte sind die üblichen Verdächtigen.
 
 Für konsistente Markenbilder lohnt es sich, nach dem Freistellen Licht, Schatten und Hintergrundstil zu vereinheitlichen. Nur den Hintergrund zu entfernen macht noch kein gutes Produktbild.
 
