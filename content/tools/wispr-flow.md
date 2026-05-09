@@ -23,6 +23,10 @@ Wispr Flow passt zu Nutzern, die regelmäßig schreiben, aber nicht jedes Detail
 
 Besonders stark ist das Tool, wenn Ideen schnell aus dem Kopf in Text müssen: E-Mail-Entwürfe, Chat-Antworten, Meeting-Notizen, Produktideen, kurze Dokumentation, Social Posts oder Recherche-Notizen. Auch ergonomisch kann Flow hilfreich sein, weil weniger Tastaturarbeit nötig ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wispr-flow-editorial.webp" alt="Illustration zu Wispr Flow: gesprochene Gedanken werden am Schreibtisch zu geordneten Notizen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-Diktat in bestehenden Apps:** Wispr Flow ist für schnelles Schreiben per Stimme gedacht und soll nicht nur in einer isolierten Editor-App funktionieren.

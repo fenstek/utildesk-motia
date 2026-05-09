@@ -22,6 +22,10 @@ Claude ist besonders geeignet für Menschen, die lange, unübersichtliche oder s
 
 Für Teams ist Claude dann interessant, wenn Qualität wichtiger ist als möglichst viele schnelle Varianten. Typische Nutzer sind zum Beispiel Personen, die Briefings verdichten, Spezifikationen prüfen, umfangreiche Notizen in Entscheidungen übersetzen oder Code-Reviews vorbereiten. Weniger geeignet ist Claude als ungeprüfte Faktenquelle oder als Ersatz für fachliche Verantwortung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/claude-editorial.webp" alt="Illustration zu Claude: lange Dokumente und Randnotizen werden zu einer klaren Antwort verdichtet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Dokumentenanalyse:** Lange PDFs, Protokolle, Spezifikationen oder Policy-Texte zusammenfassen, offene Fragen extrahieren und Widersprüche sichtbar machen.

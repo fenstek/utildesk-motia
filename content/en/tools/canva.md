@@ -24,6 +24,10 @@ The best fit is marketing, small businesses, content teams, education, and inter
 
 Canva is most useful for teams and individuals that treat a design and content platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/canva-editorial.webp" alt="Illustration for Canva: templates, color cards and social media formats on a design table" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Create social posts and campaign material

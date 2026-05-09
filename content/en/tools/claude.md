@@ -25,6 +25,10 @@ Claude fits knowledge work, editing, analysis, coding support, and document work
 
 Claude is most useful for teams and individuals that treat a AI assistant as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/claude-editorial.webp" alt="Illustration for Claude: long documents and margin notes distilled into a clear answer" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Summarize and structure long documents

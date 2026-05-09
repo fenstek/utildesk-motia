@@ -20,6 +20,10 @@ EndNote ist vor allem für Menschen geeignet, die wissenschaftliche Texte nicht 
 
 Der Nutzen entsteht, wenn Quellen früh sauber importiert, verschlagwortet und geprüft werden. EndNote ist weniger ein spontanes Lesezeichen-Tool als eine Literatur-Infrastruktur für lange Projekte. Wer nur gelegentlich ein paar Webquellen sammelt, ist mit Zotero oder einem leichteren Workflow oft schneller.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/endnote-editorial.webp" alt="Illustration zu EndNote: Zitationskarten, PDFs und Bibliografiepfad in einem Forschungsarchiv" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Dissertationen und Abschlussarbeiten:** Hunderte Quellen sammeln, Gruppen bilden, PDFs anhängen und Zitationen im Manuskript konsistent halten.

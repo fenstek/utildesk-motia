@@ -24,6 +24,10 @@ Fountain also fits design, content, and product teams that need outcomes to beco
 
 The first test for Fountain should stay deliberately narrow: one process, one owner, a before-and-after comparison, and a short retrospective.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fountain-editorial.webp" alt="Illustration for Fountain: scene cards, dialogue blocks and a fountain pen structuring a script" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 Fountain should not be assessed as a feature list alone. The real question is whether the work around the work around visual production, feedback, variants, and handoff to other roles becomes clearer, more reliable, or faster in everyday work.

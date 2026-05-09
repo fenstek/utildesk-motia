@@ -20,6 +20,10 @@ Zusätzlich passt Fountain zu Design-, Content- und Produktteams, die Ergebnisse
 
 Darum sollte der erste Test mit Fountain bewusst klein bleiben: ein Prozess, ein Owner, ein messbarer Vorher-nachher-Vergleich und eine ehrliche Nachbesprechung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fountain-editorial.webp" alt="Illustration zu Fountain: Szenenkarten, Dialogblöcke und Füllfederhalter strukturieren ein Drehbuch" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einschätzung
 
 Fountain sollte nicht als reine Feature-Sammlung bewertet werden. Entscheidend ist, ob sich visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen im Alltag klarer, zuverlässiger oder schneller gestalten lassen und ob das Team die Ergebnisse später noch erklären kann.

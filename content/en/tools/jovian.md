@@ -22,6 +22,10 @@ Its value is the mix of courses, assignments, and coding-focused examples. It gi
 
 Jovian fits beginners, career switchers, and teams that want to build data skills in a structured way. It is less suitable as an enterprise ML platform for production pipelines - Databricks, SageMaker, or a managed notebook stack are closer to that job.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jovian-editorial.webp" alt="Illustration for Jovian: data science notebook with models, charts and learning notes" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Learn Python, Pandas, and data visualization by doing

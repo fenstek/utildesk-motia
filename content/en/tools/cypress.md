@@ -29,6 +29,10 @@ Cypress fits product and engineering teams that ship web interfaces regularly an
 
 Cypress is less suitable when the main target is native mobile apps, desktop software, or very broad cross-browser matrices. In those cases, Playwright, Appium, or classic Selenium setups may be a better fit.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cypress-editorial.webp" alt="Illustration for Cypress: browser tests moving through checkpoints in a quality assurance landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 Cypress is valuable not because it is "another test tool", but because it brings testing closer to daily development work. The interface shows which step failed, which requests ran, and how the browser state changed. That lowers the friction of actually maintaining tests.
