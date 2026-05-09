@@ -29,6 +29,11 @@ Gute Einsatzgruppen sind:
 
 Weniger geeignet ist Paperpile, wenn eine Institution bereits stark auf EndNote, Zotero, Citavi oder Mendeley standardisiert ist und alle Prozesse daran haengen. Dann kann ein Wechsel mehr Reibung erzeugen als Nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paperpile-editorial.webp" alt="Illustration zu Paperpile: Geordnete PDF- und Quellenablage im Archivkasten" loading="lazy" decoding="async" />
+  <figcaption>Archivkasten, Tabs und PDF-Stapel zeigen Paperpile als Ordnungssystem fuer Literatur, Quellen und Zitationen.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Literaturbibliothek:** Quellen, PDFs und Metadaten koennen gesammelt, sortiert und durchsucht werden.

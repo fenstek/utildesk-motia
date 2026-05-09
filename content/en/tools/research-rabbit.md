@@ -34,6 +34,11 @@ It is a good fit for:
 
 Research Rabbit is less useful when the exact paper is already known or when the workflow requires a strict, reproducible database search from the start. In systematic reviews, it can support discovery, but it should not replace documented search strategy, screening criteria, or manual quality assessment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/research-rabbit-editorial.webp" alt="Illustration for Research Rabbit: paper trails and citation roots in a research landscape" loading="lazy" decoding="async" />
+  <figcaption>The paper trails capture the discovery aspect: Research Rabbit guides users through related work and citation paths.</figcaption>
+</figure>
+
 ## Typical use cases
 
 - Discover similar papers from a small set of trusted seed studies.

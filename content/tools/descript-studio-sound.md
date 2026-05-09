@@ -29,6 +29,11 @@ Sinnvolle Einsatzgruppen sind:
 
 Weniger geeignet ist Studio Sound fuer Musikproduktion, kreative Soundgestaltung, fein abgestimmtes Mixing oder stark beschaedigte Audiodateien. Wenn eine Aufnahme uebersteuert, abgeschnitten, extrem verrauscht oder inhaltlich kaum verstaendlich ist, kann auch KI die fehlenden Informationen nicht verlaesslich rekonstruieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/descript-studio-sound-editorial.webp" alt="Illustration zu Descript Studio Sound: Rohaufnahme wird zur Studio-Stimme" loading="lazy" decoding="async" />
+  <figcaption>Die geteilte Audioszene zeigt den Unterschied zwischen verrauschter Aufnahme und sauberer Studioanmutung.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Sprachverbesserung:** Studio Sound analysiert Sprachaufnahmen und hebt die Stimme deutlicher hervor, damit sie naeher, klarer und professioneller wirkt.

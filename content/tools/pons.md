@@ -29,6 +29,11 @@ Sinnvoll ist Pons fuer:
 
 Weniger geeignet ist Pons als alleinige Loesung fuer grosse professionelle Lokalisierungsprojekte. Wenn Translation Memory, Terminologiedatenbanken, Freigabeprozesse, Rollen und Versionierung gebraucht werden, sind spezialisierte Lokalisierungsplattformen passender.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pons-editorial.webp" alt="Illustration zu PONS: Sprachbruecke zwischen Woerterbuchseiten und Sprechblasen" loading="lazy" decoding="async" />
+  <figcaption>Die Bruecke aus Buchseiten macht PONS als Hilfe beim Wechsel zwischen Sprachen und Bedeutungen greifbar.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Woerterbuch und Bedeutungsvarianten:** Pons zeigt nicht nur eine Uebersetzung, sondern verschiedene Bedeutungen, Wortarten, Beispiele und typische Verwendungen.

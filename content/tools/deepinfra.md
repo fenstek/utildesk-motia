@@ -37,6 +37,11 @@ Ein belastbarer Pilot für DeepInfra beginnt mit einem realen Entwicklungsablauf
 - **Guter Start für DeepInfra:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei DeepInfra:** Der Einsatz kippt in Zusatzarbeit, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepinfra-editorial.webp" alt="Illustration zu DeepInfra: KI-Infrastruktur als unterirdisches Modell- und API-System" loading="lazy" decoding="async" />
+  <figcaption>Die technische Unterwelt zeigt DeepInfra als Schicht fuer Modelle, API-Zugriffe, Latenz und Rechenleistung.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Skalierbare Rechenleistung:** Unterstützung von GPU- und CPU-Ressourcen für unterschiedliche KI-Anwendungen.

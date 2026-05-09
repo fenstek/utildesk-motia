@@ -32,6 +32,11 @@ Good use cases include:
 
 Adobe Enhance Speech is less suitable for music, detailed sound design, professional mixing, or heavily damaged recordings. If audio is clipped, missing words, or barely intelligible, AI cannot reliably recover information that was not captured.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-enhance-speech-editorial.webp" alt="Illustration for Adobe Enhance Speech: microphone between noise and a clear speech wave" loading="lazy" decoding="async" />
+  <figcaption>The scene shows the core job of the tool: turning rough spoken audio into a cleaner voice track.</figcaption>
+</figure>
+
 ## Key Features
 
 - **AI speech enhancement:** Voices are made clearer, closer, and more present automatically.

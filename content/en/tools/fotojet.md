@@ -34,6 +34,11 @@ FotoJet is a good fit for:
 
 It is less suitable when several people need strict brand rules, versioning, approvals, and reusable components. In those cases, design systems, Figma, Canva Teams, or more professional creative workflows are usually stronger.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fotojet-editorial.webp" alt="Illustration for FotoJet: collage and design workshop with photos and color cards" loading="lazy" decoding="async" />
+  <figcaption>Photos, paper shapes and color cards emphasize FotoJet?s strength in quick everyday graphics and collages.</figcaption>
+</figure>
+
 ## Key Features
 
 - **Design templates:** FotoJet offers templates for social media, posters, flyers, cards, collages, banners, and other standard formats.

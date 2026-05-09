@@ -29,6 +29,11 @@ Elicit passt gut fuer:
 
 Weniger passend ist Elicit, wenn ein Thema kaum wissenschaftlich publiziert ist, wenn Quellenqualitaet wichtiger als Geschwindigkeit ist oder wenn eine finale validierte Schlussfolgerung ohne Review-Arbeit erwartet wird. Elicit kann Evidenz ordnen, aber Verantwortung fuer Interpretation bleibt beim Menschen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elicit-editorial.webp" alt="Illustration zu Elicit: Forschungsunterlagen werden zu einer Evidenzspur verbunden" loading="lazy" decoding="async" />
+  <figcaption>Lose Paper, Suchfrage und Verbindungen zeigen, wie Elicit Literaturarbeit und Evidenzsuche strukturieren kann.</figcaption>
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Eine Forschungsfrage in einen recherchierbaren Evidenzworkflow ueberfuehren.

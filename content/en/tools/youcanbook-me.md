@@ -32,6 +32,11 @@ YouCanBook.me works best when implementation is understood not as a tool switch,
 - **Good prerequisite:** for consulting, recruiting, sales, and support appointments.
 - **Watch out for:** opening too many slots or creating false expectations with unclear meeting types.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youcanbook-me-editorial.webp" alt="Illustration for YouCanBook.me: bookable time slots as a path to a meeting room" loading="lazy" decoding="async" />
+  <figcaption>Calendar windows, a light path and a meeting room translate scheduling into a simple visual decision.</figcaption>
+</figure>
+
 ## Key features
 
 - **Automated appointment booking:** Syncs with calendars such as Google Calendar or Microsoft Outlook to display available times in real time.

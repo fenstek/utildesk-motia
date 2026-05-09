@@ -29,6 +29,11 @@ Sinnvoll ist Snappa vor allem fuer:
 
 Weniger passend ist Snappa, wenn ein Unternehmen sehr individuelle Layoutsysteme, komplexe Illustrationen, tiefgehende Bildretusche oder streng kontrollierte Corporate-Design-Prozesse braucht. Fuer solche Aufgaben bleiben Tools wie Figma, Adobe Illustrator, Photoshop oder ein professioneller Designprozess besser geeignet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snappa-editorial.webp" alt="Illustration zu Snappa: Marketinggrafiken, Smartphone-Format und Farbpapiere auf einem Arbeitstisch" loading="lazy" decoding="async" />
+  <figcaption>Leere Postformate und Kampagnenmaterial zeigen Snappa als Werkzeug fuer schnelle Social- und Marketinggrafiken.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Vorlagenbibliothek:** Snappa bietet Vorlagen fuer Social Media, Bloggrafiken, Anzeigen, Header, Banner und weitere Standardformate. Der Vorteil liegt darin, dass Nutzer:innen nicht mit einer leeren Flaeche starten muessen.

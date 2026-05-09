@@ -33,6 +33,11 @@ Genei is a good fit for:
 
 It is less suitable when exact quotations, legal interpretation, medical evidence, or methodological details are expected without human verification. In those cases, Genei can prepare the work but not complete it.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genei-editorial.webp" alt="Illustration for Genei: long documents compressed into concise notes" loading="lazy" decoding="async" />
+  <figcaption>The paper machine represents the practical value: reducing long sources to their main points faster.</figcaption>
+</figure>
+
 ## Key Features
 
 - **AI summarization:** Long texts can be turned into shorter overviews so users can judge relevance faster.

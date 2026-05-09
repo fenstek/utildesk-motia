@@ -35,6 +35,11 @@ Mailbird sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, A
 - **Guter Start für Mailbird:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Mailbird:** Kritisch wird es, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailbird-editorial.webp" alt="Illustration zu Mailbird: Mehrere Postfaecher als geordnetes Kommunikationsnest" loading="lazy" decoding="async" />
+  <figcaption>Das Kommunikationsnest zeigt Mailbird als ruhigen Ort fuer mehrere Postfaecher, Termine und Kontakte.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung mehrerer E-Mail-Konten aus verschiedenen Diensten (z. B. Gmail, Outlook, Yahoo).
