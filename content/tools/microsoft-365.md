@@ -53,18 +53,18 @@ Microsoft 365 wird in verschiedenen Abonnementplänen angeboten, die sich je nac
 - **OnlyOffice:** Kollaborative Office-Plattform mit Integration in verschiedene Cloud-Dienste.
 - **Apple iWork:** Kostenlose Office-Anwendungen für macOS und iOS mit Fokus auf Design und einfache Bedienung.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Microsoft 365 ist im Alltag weniger ein einzelnes Tool als eine Arbeitsumgebung aus Mail, Dateien, Meetings, Dokumenten und Identitaeten. Der Nutzen haengt stark davon ab, ob Teams klare Ablageorte, Freigaben, Namensregeln und Sicherheitsrichtlinien vereinbaren, statt SharePoint, OneDrive und Teams wild zu vermischen.
+Microsoft 365 ist im Alltag weniger ein einzelnes Tool als eine Arbeitsumgebung aus Mail, Dateien, Meetings, Dokumenten und Identitäten. Der Nutzen hängt stark davon ab, ob Teams klare Ablageorte, Freigaben, Namensregeln und Sicherheitsrichtlinien vereinbaren, statt SharePoint, OneDrive und Teams wild zu vermischen.
 
 ## Workflow-Fit
 
-- Stark fuer Organisationen, die Office-Dokumente, Zusammenarbeit, Kalender, Kommunikation und Rechteverwaltung in einem Oekosystem buendeln wollen.
+- Stark für Organisationen, die Office-Dokumente, Zusammenarbeit, Kalender, Kommunikation und Rechteverwaltung in einem Ökosystem buendeln wollen.
 - Schwierig wird es, wenn Governance fehlt und jede Abteilung eigene Teamraeume, Dateikopien und Freigabelogiken erzeugt.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Microsoft 365 ist sehr leistungsfaehig, aber nur mit Ordnung wirklich produktiv. Die groesste Hebelwirkung liegt oft nicht in neuen Apps, sondern in klaren Standards fuer Zusammenarbeit.
+Microsoft 365 ist sehr leistungsfähig, aber nur mit Ordnung wirklich produktiv. Die größte Hebelwirkung liegt oft nicht in neuen Apps, sondern in klaren Standards für Zusammenarbeit.
 
 ## FAQ
 

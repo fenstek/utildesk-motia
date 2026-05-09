@@ -54,18 +54,18 @@ Die Preisgestaltung von Framer variiert je nach gewähltem Plan und Nutzeranzahl
 - **Webflow:** Kombination aus Design-Tool und CMS für No-Code-Webentwicklung.
 - **Marvel:** Einfaches Prototyping und Testing mit Fokus auf schnelle Iterationen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Framer ist stark, wenn visuell anspruchsvolle Websites schnell gebaut und veroeffentlicht werden sollen. Der praktische Wert liegt in Designfreiheit, Animation, Komponenten und direktem Publishing, solange Performance, SEO-Struktur und langfristige Wartung nicht nachtraeglich improvisiert werden.
+Framer ist stark, wenn visuell anspruchsvolle Websites schnell gebaut und veröffentlicht werden sollen. Der praktische Wert liegt in Designfreiheit, Animation, Komponenten und direktem Publishing, solange Performance, SEO-Struktur und langfristige Wartung nicht nachtraeglich improvisiert werden.
 
 ## Workflow-Fit
 
-- Gut fuer Landingpages, Portfolios, Kampagnenseiten, Startup-Websites und designgetriebene Prototypen.
-- Weniger passend fuer sehr komplexe Webapps, tiefe Backendlogik oder Content-Strukturen mit anspruchsvollen Redaktionsprozessen.
+- Gut für Landingpages, Portfolios, Kampagnenseiten, Startup-Websites und designgetriebene Prototypen.
+- Weniger passend für sehr komplexe Webapps, tiefe Backendlogik oder Content-Strukturen mit anspruchsvollen Redaktionsprozessen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Framer ist eine starke Bruecke zwischen Design und Live-Seite. Wer es nutzt, sollte frueh klaeren, welche Teile Website, welche Teile CMS und welche Teile echte Produktentwicklung sind.
+Framer ist eine starke Brücke zwischen Design und Live-Seite. Wer es nutzt, sollte früh klären, welche Teile Website, welche Teile CMS und welche Teile echte Produktentwicklung sind.
 
 ## FAQ
 

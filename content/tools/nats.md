@@ -60,18 +60,18 @@ NATS ist ein Open-Source-Projekt und steht kostenlos zur Verfügung. Für den Be
 - **Google Pub/Sub:** Managed Cloud-Service für Messaging und Event-Streaming.
 - **ActiveMQ:** Open-Source Message Broker mit Unterstützung für verschiedene Protokolle.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-NATS passt zu Architekturen, in denen Services sehr schnell und leichtgewichtig Nachrichten austauschen muessen. In der Praxis zaehlen klare Subjects, verstaendliche Ownership und die Entscheidung, wo einfache Pub/Sub-Kommunikation reicht und wo Persistenz, Replay oder strengere Garantien benoetigt werden.
+NATS passt zu Architekturen, in denen Services sehr schnell und leichtgewichtig Nachrichten austauschen müssen. In der Praxis zählen klare Subjects, verständliche Ownership und die Entscheidung, wo einfache Pub/Sub-Kommunikation reicht und wo Persistenz, Replay oder strengere Garantien benötigt werden.
 
 ## Workflow-Fit
 
-- Stark fuer Cloud-native Systeme, Edge-Kommunikation, Microservices und interne Event-Verteilung mit niedriger Latenz.
-- Nicht die beste Wahl, wenn ein Team ohne Messaging-Erfahrung sofort komplexe Transaktionslogik darueber abbilden will.
+- Stark für Cloud-native Systeme, Edge-Kommunikation, Microservices und interne Event-Verteilung mit niedriger Latenz.
+- Nicht die beste Wahl, wenn ein Team ohne Messaging-Erfahrung sofort komplexe Transaktionslogik darüber abbilden will.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-NATS ueberzeugt durch Einfachheit und Geschwindigkeit, verlangt aber Disziplin im Design der Nachrichtenlandschaft. Wer Subjects wild wachsen laesst, verliert die Eleganz des Systems schnell wieder.
+NATS überzeugt durch Einfachheit und Geschwindigkeit, verlangt aber Disziplin im Design der Nachrichtenlandschaft. Wer Subjects wild wachsen lässt, verliert die Eleganz des Systems schnell wieder.
 
 ## FAQ
 

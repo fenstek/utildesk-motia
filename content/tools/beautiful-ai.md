@@ -56,18 +56,18 @@ Beautiful.ai bietet ein Freemium-Modell an: Die Grundfunktionen sind kostenlos n
 - **Prezi**: Präsentationen mit dynamischen Zoom-Effekten und unkonventionellem Layout.
 - **Visme**: Tool für Präsentationen und Infografiken mit Fokus auf visuelle Storytelling-Elemente.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Beautiful.ai hilft, Praesentationen schneller sauber aussehen zu lassen, weil Layoutregeln und Designlogik viel Handarbeit abfangen. Entscheidend bleibt aber die Geschichte: Ein automatisch ordentliches Deck ueberzeugt nur, wenn Botschaft, Reihenfolge und Aussage pro Folie klar sind.
+Beautiful.ai hilft, Präsentationen schneller sauber aussehen zu lassen, weil Layoutregeln und Designlogik viel Handarbeit abfangen. Entscheidend bleibt aber die Geschichte: Ein automatisch ordentliches Deck überzeugt nur, wenn Botschaft, Reihenfolge und Aussage pro Folie klar sind.
 
 ## Workflow-Fit
 
-- Gut fuer Teams, die regelmaessig Statusdecks, Sales-Unterlagen, interne Praesentationen oder einfache Pitch-Versionen brauchen.
-- Weniger geeignet fuer stark individualisierte Brand-Decks, komplexe Animationen oder Folien, die pixelgenau in bestehenden Templates leben muessen.
+- Gut für Teams, die regelmäßig Statusdecks, Sales-Unterlagen, interne Präsentationen oder einfache Pitch-Versionen brauchen.
+- Weniger geeignet für stark individualisierte Brand-Decks, komplexe Animationen oder Folien, die pixelgenau in bestehenden Templates leben müssen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Beautiful.ai loest vor allem das Layoutproblem, nicht das Denkproblem. Wer zuerst die Story klaert, bekommt mit dem Tool deutlich schneller ein professionell wirkendes Ergebnis.
+Beautiful.ai loest vor allem das Layoutproblem, nicht das Denkproblem. Wer zuerst die Story klärt, bekommt mit dem Tool deutlich schneller ein professionell wirkendes Ergebnis.
 
 ## FAQ
 

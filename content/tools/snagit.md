@@ -56,18 +56,18 @@ Die Preisstruktur von Snagit variiert je nach Anbieter und Lizenztyp. Üblicherw
 - **Camtasia**: Professionelles Bildschirmaufnahme- und Videobearbeitungstool, das sich an Nutzer mit höheren Anforderungen richtet.
 - **PicPick**: All-in-One-Tool für Screenshots, Bildbearbeitung und Farbauswahl, geeignet für Einsteiger und Profis.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Snagit ist im Arbeitsalltag stark, wenn Screenshots nicht nur aufgenommen, sondern erklaert werden muessen. Markierungen, Schrittbilder, kurze Videos und einfache Bearbeitung sparen Rueckfragen in Support, Dokumentation, QA und interner Abstimmung deutlich mehr als ein reines Screenshot-Tool.
+Snagit ist im Arbeitsalltag stark, wenn Screenshots nicht nur aufgenommen, sondern erklärt werden müssen. Markierungen, Schrittbilder, kurze Videos und einfache Bearbeitung sparen Rückfragen in Support, Dokumentation, QA und interner Abstimmung deutlich mehr als ein reines Screenshot-Tool.
 
 ## Workflow-Fit
 
-- Gut fuer Helpdesk, Produktdokumentation, Schulungen, Bugreports und visuelle Prozessanleitungen.
-- Weniger passend fuer aufwendige Videoproduktion oder Designarbeit, bei der professionelle Schnitt- oder Layouttools gebraucht werden.
+- Gut für Helpdesk, Produktdokumentation, Schulungen, Bugreports und visuelle Prozessanleitungen.
+- Weniger passend für aufwendige Videoproduktion oder Designarbeit, bei der professionelle Schnitt- oder Layouttools gebraucht werden.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Snagit ist ein kleines Werkzeug mit grossem Kommunikationseffekt. Sein Wert zeigt sich, wenn ein gut beschriftetes Bild drei lange Erklaerungsnachrichten ersetzt.
+Snagit ist ein kleines Werkzeug mit großem Kommunikationseffekt. Sein Wert zeigt sich, wenn ein gut beschriftetes Bild drei lange Erklärungsnachrichten ersetzt.
 
 ## FAQ
 

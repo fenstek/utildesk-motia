@@ -54,16 +54,16 @@ PowerDirector wird überwiegend im Abonnement-Modell angeboten. Die genauen Prei
 - **Final Cut Pro:** Leistungsstarke Mac-exklusive Videobearbeitung mit professionellen Features.
 - **Shotcut:** Open-Source-Videoeditor mit guter Grundausstattung und plattformübergreifender Verfügbarkeit.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-PowerDirector ist ein Videowerkzeug fuer Nutzer, die schnell zu fertigen Clips kommen wollen, ohne in eine professionelle Postproduktionsumgebung einzusteigen. Templates, Effekte und einfache Timeline-Bedienung helfen, solange Story, Ton und Exportformat nicht dem Effektkatalog untergeordnet werden.
+PowerDirector ist ein Videowerkzeug für Nutzer, die schnell zu fertigen Clips kommen wollen, ohne in eine professionelle Postproduktionsumgebung einzusteigen. Templates, Effekte und einfache Timeline-Bedienung helfen, solange Story, Ton und Exportformat nicht dem Effektkatalog untergeordnet werden.
 
 ## Workflow-Fit
 
-- Gut fuer YouTube, Social Clips, Familienvideos, Schulprojekte und kleine Marketingproduktionen.
-- Weniger geeignet fuer High-End-Farbkorrektur, komplexe Teamworkflows oder Projekte mit strengen Broadcast-Anforderungen.
+- Gut für YouTube, Social Clips, Familienvideos, Schulprojekte und kleine Marketingproduktionen.
+- Weniger geeignet für High-End-Farbkorrektur, komplexe Teamworkflows oder Projekte mit strengen Broadcast-Anforderungen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 PowerDirector trifft eine gute Mitte zwischen Einsteigerkomfort und kreativer Kontrolle. Der beste Output entsteht, wenn Nutzer Effekte gezielt einsetzen und nicht jede automatische Option gleichzeitig aktivieren.
 

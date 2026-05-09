@@ -27,7 +27,7 @@ Geeignet ist Litmaps vor allem für:
 - Bibliothekar:innen und Informationsspezialist:innen, die Forschungsfelder erklärbar machen;
 - Produkt-, Policy- oder Research-Teams, die wissenschaftliche Evidenz für Entscheidungen auswerten.
 
-Weniger geeignet ist Litmaps, wenn man nur eine einzelne bekannte Quelle sucht oder bereits eine streng definierte systematische Review-Methode mit festem Datenbankprotokoll durchführt. In solchen Faellen ist Litmaps eher Ergänzung als Hauptsystem.
+Weniger geeignet ist Litmaps, wenn man nur eine einzelne bekannte Quelle sucht oder bereits eine streng definierte systematische Review-Methode mit festem Datenbankprotokoll durchführt. In solchen Fällen ist Litmaps eher Ergänzung als Hauptsystem.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/litmaps-editorial.webp" alt="Illustration zu Litmaps: Zitationsnetz als Sternkarte wissenschaftlicher Arbeiten" loading="lazy" decoding="async" />

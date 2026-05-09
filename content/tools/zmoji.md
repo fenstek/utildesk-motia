@@ -67,16 +67,16 @@ Detaillierte Informationen zu den Preisen sind auf der offiziellen Webseite des 
 - **Integromat (Make):** Visuelles Tool zur Erstellung komplexer Automatisierungen.
 - **Automate.io:** Plattform zur Integration und Automatisierung von Cloud-Anwendungen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Zmoji ist ein leichtes Kreativtool fuer personalisierte Avatare, Sticker und informelle visuelle Identitaet. Der Einsatz ist dann sinnvoll, wenn lockere Kommunikation, Social Profile oder spielerische Markenmomente gefragt sind, nicht wenn serioese Corporate Identity oder rechtlich klare Personenabbildung benoetigt wird.
+Zmoji ist ein leichtes Kreativtool für personalisierte Avatare, Sticker und informelle visuelle Identität. Der Einsatz ist dann sinnvoll, wenn lockere Kommunikation, Social Profile oder spielerische Markenmomente gefragt sind, nicht wenn serioese Corporate Identity oder rechtlich klare Personenabbildung benötigt wird.
 
 ## Workflow-Fit
 
-- Gut fuer private Profile, Messenger-Inhalte, Community-Kommunikation und kleine Creator-Formate.
-- Weniger passend fuer professionelle Markenauftritte, HR-Kommunikation oder Situationen, in denen echte Fotos Vertrauen schaffen muessen.
+- Gut für private Profile, Messenger-Inhalte, Community-Kommunikation und kleine Creator-Formate.
+- Weniger passend für professionelle Markenauftritte, HR-Kommunikation oder Situationen, in denen echte Fotos Vertrauen schaffen müssen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 Zmoji ist bewusst leichtgewichtig. Es kann Kommunikation sympathischer machen, sollte aber nicht mit einem vollwertigen Design- oder Brandingwerkzeug verwechselt werden.
 

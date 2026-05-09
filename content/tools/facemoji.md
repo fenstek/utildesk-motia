@@ -1,7 +1,7 @@
 ---
 slug: facemoji
 title: Facemoji
-category: Produktivitaet
+category: Produktivität
 price_model: Freemium
 tags: [mobile, communication, productivity]
 official_url: "https://facemojikeyboard.com/"

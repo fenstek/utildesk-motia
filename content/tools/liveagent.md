@@ -53,18 +53,18 @@ LiveAgent bietet verschiedene Abonnement-Modelle an, deren Preise je nach Funkti
 - **Help Scout:** Einfach zu nutzende Support-Plattform mit Fokus auf E-Mail- und Chat-Kommunikation.
 - **Intercom:** Plattform für Kundenkommunikation mit Chatbots und Marketing-Tools.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-LiveAgent ist dann stark, wenn Supportkanaele nicht laenger getrennt in Mailbox, Chat und Social Inbox liegen sollen. Entscheidend ist, ob Tickets sauber priorisiert, Agenten entlastet und Antwortzeiten sichtbar werden, ohne dass Kunden zwischen Kanaelen unterschiedliche Aussagen bekommen.
+LiveAgent ist dann stark, wenn Supportkanäle nicht länger getrennt in Mailbox, Chat und Social Inbox liegen sollen. Entscheidend ist, ob Tickets sauber priorisiert, Agenten entlastet und Antwortzeiten sichtbar werden, ohne dass Kunden zwischen Kanälen unterschiedliche Aussagen bekommen.
 
 ## Workflow-Fit
 
-- Gut fuer kleine und mittlere Supportteams, die Omnichannel-Kommunikation, Wissensdatenbank und Live-Chat zusammenfuehren wollen.
+- Gut für kleine und mittlere Supportteams, die Omnichannel-Kommunikation, Wissensdatenbank und Live-Chat zusammenführen wollen.
 - Weniger passend, wenn bereits ein tief angepasstes Enterprise-CRM mit eigenen Supportobjekten und komplexen SLAs dominiert.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-LiveAgent kann Ordnung in wachsenden Kundendialog bringen. Der Nutzen haengt jedoch daran, ob Kategorien, Makros und Eskalationsregeln gepflegt werden; sonst wird nur die alte Unuebersichtlichkeit in ein neues System verschoben.
+LiveAgent kann Ordnung in wachsenden Kundendialog bringen. Der Nutzen hängt jedoch daran, ob Kategorien, Makros und Eskalationsregeln gepflegt werden; sonst wird nur die alte Unübersichtlichkeit in ein neues System verschoben.
 
 ## FAQ
 

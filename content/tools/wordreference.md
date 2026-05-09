@@ -56,18 +56,18 @@ WordReference bietet ein Freemium-Modell an: Die Grundfunktionen sind kostenlos 
 - **Reverso Context** – Übersetzungen im Kontext mit Beispielsätzen und Lernhilfen.
 - **Bab.la** – Online-Wörterbuch mit Übersetzungen, Spielen und Lernmaterialien.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-WordReference ist stark, wenn Nutzer nicht nur eine schnelle Uebersetzung, sondern Bedeutungsnuancen, Beispiele und Community-Erklaerungen brauchen. Besonders bei Redewendungen, Registerfragen und mehrdeutigen Begriffen ist es hilfreicher, mehrere Belege zu lesen als ein einzelnes maschinelles Ergebnis zu uebernehmen.
+WordReference ist stark, wenn Nutzer nicht nur eine schnelle Übersetzung, sondern Bedeutungsnuancen, Beispiele und Community-Erklärungen brauchen. Besonders bei Redewendungen, Registerfragen und mehrdeutigen Begriffen ist es hilfreicher, mehrere Belege zu lesen als ein einzelnes maschinelles Ergebnis zu übernehmen.
 
 ## Workflow-Fit
 
-- Gut fuer Sprachlernende, Uebersetzer, Redaktionen und alle, die Formulierungen in Kontext absichern wollen.
-- Weniger geeignet fuer vollautomatische Dokumentuebersetzung oder Lokalisierungsmanagement mit Freigabeprozessen.
+- Gut für Sprachlernende, Übersetzer, Redaktionen und alle, die Formulierungen in Kontext absichern wollen.
+- Weniger geeignet für vollautomatische Dokumentübersetzung oder Lokalisierungsmanagement mit Freigabeprozessen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-WordReference ist ein Recherchewerkzeug fuer Sprache. Sein Wert liegt in der geduldigen Auswahl des passenden Ausdrucks, nicht in der schnellsten Antwortbox.
+WordReference ist ein Recherchewerkzeug für Sprache. Sein Wert liegt in der geduldigen Auswahl des passenden Ausdrucks, nicht in der schnellsten Antwortbox.
 
 ## FAQ
 

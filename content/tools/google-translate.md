@@ -56,17 +56,17 @@ Die einfache Handhabung macht Google Translate besonders attraktiv für Nutzer o
 - Einige erweiterte Funktionen sind nur über kostenpflichtige APIs verfügbar.
 - Keine vollständige menschliche Übersetzungsqualität, daher für professionelle Übersetzungen oft nicht ausreichend.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Bei Google Translate entscheidet im Alltag nicht die Demo, sondern ob das Tool bei schnelle Alltagsuebersetzung fuer Verstehen, Recherche und einfache Kommunikation verlaesslich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Zielsprachen, Fachbegriffen, Tonalitaet und vertraulichen Inhalten; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Sehr praktisch fuer Orientierung, aber fuer veroeffentlichte oder rechtliche Texte braucht es Kontrolle.
+Bei Google Translate entscheidet im Alltag nicht die Demo, sondern ob das Tool bei schnelle Alltagsübersetzung für Verstehen, Recherche und einfache Kommunikation verlässlich in einen echten Ablauf passt. Ein fairer Pilot braucht Praxistests mit Zielsprachen, Fachbegriffen, Tonalität und vertraulichen Inhalten; erst damit werden Latenz, Nacharbeit, Rechte und Kosten sichtbar. Kritisch bleibt: Sehr praktisch für Orientierung, aber für veröffentlichte oder rechtliche Texte braucht es Kontrolle.
 
 ## Workflow-Fit
 
-Im Workflow sollte Google Translate eine klar begrenzte Aufgabe bekommen: Eingang, Qualitaetskontrolle, Ausgabeort und Verantwortliche. Fuer schnelle Alltagsuebersetzung fuer Verstehen, Recherche und einfache Kommunikation sind solche Praxissignale aussagekraeftiger als eine lange Feature-Liste: Praxistests mit Zielsprachen, Fachbegriffen, Tonalitaet und vertraulichen Inhalten. Danach laesst sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
+Im Workflow sollte Google Translate eine klar begrenzte Aufgabe bekommen: Eingang, Qualitätskontrolle, Ausgabeort und Verantwortliche. Für schnelle Alltagsübersetzung für Verstehen, Recherche und einfache Kommunikation sind solche Praxissignale aussagekräftiger als eine lange Feature-Liste: Praxistests mit Zielsprachen, Fachbegriffen, Tonalität und vertraulichen Inhalten. Danach lässt sich sauber beurteilen, ob Integration, Review und laufender Pflegeaufwand zusammenpassen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Redaktionelle Einordnung: Google Translate lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Sehr praktisch fuer Orientierung, aber fuer veroeffentlichte oder rechtliche Texte braucht es Kontrolle. Diese Grenze sollte vor einem breiteren Rollout offen geklaert sein.
+Redaktionelle Einordnung: Google Translate lohnt sich, wenn der Einsatzfall eng genug beschrieben ist und Erfolg messbar bleibt. Wer nur allgemein nach Automatisierung sucht, bewertet zu unscharf. Sehr praktisch für Orientierung, aber für veröffentlichte oder rechtliche Texte braucht es Kontrolle. Diese Grenze sollte vor einem breiteren Rollout offen geklärt sein.
 
 ## Preise & Kosten
 

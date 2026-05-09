@@ -56,16 +56,16 @@ Doubao bietet ein Freemium-Modell an, bei dem grundlegende Funktionen kostenfrei
 - **Tidio**: Ein benutzerfreundlicher Chatbot- und Live-Chat-Service mit Fokus auf E-Commerce und Kundenservice.  
 - **ManyChat**: Speziell für Marketing und Kundenbindung über Messenger-Plattformen entwickelte Chatbot-Lösung.  
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Doubao ist als KI-Assistent vor allem im chinesischen Oekosystem interessant, wo Sprache, Plattformanbindung und Nutzergewohnheiten anders gewichtet sind als bei westlichen Chatbots. Fuer die Bewertung zaehlen konkrete Funktionen, Datenquellen, App-Integration und die Frage, fuer welchen Markt der Assistent gedacht ist.
+Doubao ist als KI-Assistent vor allem im chinesischen Ökosystem interessant, wo Sprache, Plattformanbindung und Nutzergewohnheiten anders gewichtet sind als bei westlichen Chatbots. Für die Bewertung zählen konkrete Funktionen, Datenquellen, App-Integration und die Frage, für welchen Markt der Assistent gedacht ist.
 
 ## Workflow-Fit
 
-- Relevant fuer Marktbeobachtung, mehrsprachige KI-Strategie und Vergleiche regionaler Assistant-Oekosysteme.
-- Weniger direkt geeignet fuer Teams, die primaer deutsch- oder englischsprachige Unternehmensprozesse in Europa automatisieren wollen.
+- Relevant für Marktbeobachtung, mehrsprachige KI-Strategie und Vergleiche regionaler Assistant-Oekosysteme.
+- Weniger direkt geeignet für Teams, die primär deutsch- oder englischsprachige Unternehmensprozesse in Europa automatisieren wollen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
 Doubao sollte nicht nur als weiterer Chatbot betrachtet werden. Interessant ist, wie lokale Plattformlogik, Sprache und Content-Nutzung die Form eines KI-Assistenten praegen.
 

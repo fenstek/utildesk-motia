@@ -56,17 +56,17 @@ Die flexible Lizenzierung und die Möglichkeit, Whisper lokal zu betreiben, mach
 - Für sehr spezifische Fachsprachen oder Dialekte ist die Genauigkeit eventuell eingeschränkt.
 - Keine dedizierte Benutzeroberfläche, hauptsächlich über APIs oder Kommandozeile nutzbar.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von Whisper liegt weniger in der Funktionsliste als in der Frage, ob Spracherkennung als robuste technische Basis fuer Transkription und Analyse ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit Akzenten, Laerm, langen Dateien, Fachsprache und Hosting-Fragen basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von Whisper liegt weniger in der Funktionsliste als in der Frage, ob Spracherkennung als robuste technische Basis für Transkription und Analyse ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf Praxistests mit Akzenten, Lärm, langen Dateien, Fachsprache und Hosting-Fragen basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht Whisper klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei Spracherkennung als robuste technische Basis fuer Transkription und Analyse trennt Praxistests mit Akzenten, Laerm, langen Dateien, Fachsprache und Hosting-Fragen brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht Whisper klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei Spracherkennung als robuste technische Basis für Transkription und Analyse trennt Praxistests mit Akzenten, Lärm, langen Dateien, Fachsprache und Hosting-Fragen brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer Whisper hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Sehr stark als Engine, aber Produktkomfort, Datenschutz und Skalierung haengen vom umgebenden Setup ab. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für Whisper hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Sehr stark als Engine, aber Produktkomfort, Datenschutz und Skalierung hängen vom umgebenden Setup ab. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 

@@ -12,7 +12,7 @@ tags:
   - "Wispr Flow"
   - "Diktier-App"
   - "Voice-to-Text"
-  - "Produktivitaet"
+  - "Produktivität"
   - "KI-Tools"
 sidebarTitle: "Kurzfazit"
 sidebarPoints:

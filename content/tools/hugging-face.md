@@ -53,17 +53,17 @@ Dabei ist Hugging Face sowohl für Einsteiger mit Basiswissen als auch für fort
 - Je nach Anwendungsfall sind technische Kenntnisse erforderlich  
 - Hosting und Skalierung eigener Modelle können zusätzlichen Aufwand bedeuten
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Hugging Face wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt Modelle, Datasets, Spaces und ML-Kollaboration fuer Entwickler und Forschungsteams in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit Modelllizenz, Inferenzkosten, Datenschutz, Deploymentweg und Wartung, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Sehr stark als Oekosystem, aber produktive Nutzung braucht klare Auswahl und Verantwortung fuer Modelle.
+Hugging Face wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt Modelle, Datasets, Spaces und ML-Kollaboration für Entwickler und Forschungsteams in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit Modelllizenz, Inferenzkosten, Datenschutz, Deploymentweg und Wartung, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Sehr stark als Ökosystem, aber produktive Nutzung braucht klare Auswahl und Verantwortung für Modelle.
 
 ## Workflow-Fit
 
-Fuer Teams sollte Hugging Face nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn Modelle, Datasets, Spaces und ML-Kollaboration fuer Entwickler und Forschungsteams haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit Modelllizenz, Inferenzkosten, Datenschutz, Deploymentweg und Wartung. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+Für Teams sollte Hugging Face nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn Modelle, Datasets, Spaces und ML-Kollaboration für Entwickler und Forschungsteams häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit Modelllizenz, Inferenzkosten, Datenschutz, Deploymentweg und Wartung. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Unsere Einschaetzung: Hugging Face ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Sehr stark als Oekosystem, aber produktive Nutzung braucht klare Auswahl und Verantwortung fuer Modelle. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+Unsere Einschätzung: Hugging Face ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Sehr stark als Ökosystem, aber produktive Nutzung braucht klare Auswahl und Verantwortung für Modelle. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
 
 ## Preise & Kosten
 
