@@ -39,6 +39,11 @@ Mailbird should first prove itself in a real contact case with intake, prioritiz
 - **Good start for Mailbird:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Mailbird:** Even a good interface helps only partly when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailbird-editorial.webp" alt="Illustration for Mailbird: multiple inboxes as an organized communications nest" loading="lazy" decoding="async" />
+  <figcaption>The communications nest presents Mailbird as a calmer place for multiple inboxes, appointments and contacts.</figcaption>
+</figure>
+
 ## Key features
 
 - Support for multiple email accounts from different services (e.g. Gmail, Outlook, Yahoo).

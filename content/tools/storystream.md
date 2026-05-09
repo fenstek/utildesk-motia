@@ -37,6 +37,11 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor StoryStream breiter ausgerollt wird.
 - **Häufiger Stolperstein:** StoryStream enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/storystream-editorial.webp" alt="Illustration zu StoryStream: Content-Strom aus Bildern, Kampagnenmomenten und Freigaben" loading="lazy" decoding="async" />
+  <figcaption>Der Bildstrom macht deutlich, dass StoryStream weniger Einzelgrafik als kuratierter Content-Fluss ist.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Content-Erstellung:** Automatische Generierung von Texten, die auf Zielgruppen und Themen zugeschnitten sind  

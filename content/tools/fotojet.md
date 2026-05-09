@@ -29,6 +29,11 @@ FotoJet passt gut fuer:
 
 Weniger passend ist FotoJet, wenn mehrere Personen mit strengen Brand-Guidelines, Versionierung, Freigaben und wiederverwendbaren Komponenten arbeiten. Fuer solche Arbeitsweisen sind Designsysteme, Figma, Canva Teams oder professionelle Creative-Workflows oft besser geeignet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fotojet-editorial.webp" alt="Illustration zu FotoJet: Collage- und Designwerkstatt mit Fotos und Farbkarten" loading="lazy" decoding="async" />
+  <figcaption>Fotos, Papierformen und Farbkarten betonen FotoJets Staerke bei schnellen Alltagsgrafiken und Collagen.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Designvorlagen:** FotoJet bietet Vorlagen fuer Social Media, Poster, Flyer, Karten, Collagen, Banner und weitere Standardformate.

@@ -32,6 +32,11 @@ Power BI is a good fit for:
 
 Power BI is less useful when a team only needs to visualize a small table once in a while or has no owner for data modeling, permissions, and report maintenance. For simple one-off analysis, Excel may be faster. For heavy data science work, Power BI usually needs to be paired with data platforms, notebooks, or machine learning environments.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/power-bi-editorial.webp" alt="Illustration for Power BI: data sculptures, charts and a decision compass" loading="lazy" decoding="async" />
+  <figcaption>The data sculptures frame business intelligence not as a spreadsheet, but as a decision space.</figcaption>
+</figure>
+
 ## Main Features
 
 - **Data integration:** Power BI connects to many sources, including Excel, SharePoint, SQL databases, Azure, web APIs, SaaS products, and on-premise systems through gateways.

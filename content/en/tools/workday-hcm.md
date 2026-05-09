@@ -32,6 +32,11 @@ Workday HCM should not be evaluated in isolation. What matters is its place in t
 - **Measurement point:** which processes should be standardized and where local exceptions must remain necessary.
 - **Limit:** with weak master data, it feels expensive before it helps operationally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workday-hcm-editorial.webp" alt="Illustration for Workday HCM: HR processes as a walkable organization landscape" loading="lazy" decoding="async" />
+  <figcaption>The miniature world connects recruiting, HR administration, planning and payroll into one HR process view.</figcaption>
+</figure>
+
 ## Key features
 
 - **Personnel management:** Central management of employee data, organizational units, and employment contracts.

@@ -27,6 +27,11 @@ Workday HCM sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Wor
 - **Messpunkt:** welche Prozesse vereinheitlicht werden sollen und wo lokale Ausnahmen nötig bleiben.
 - **Grenze:** bei schwachen Stammdaten teuer wirkt, bevor es operativ hilft.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/workday-hcm-editorial.webp" alt="Illustration zu Workday HCM: HR-Prozesse als begehbare Organisationslandschaft" loading="lazy" decoding="async" />
+  <figcaption>Die Miniaturwelt verbindet Recruiting, Personalverwaltung, Planung und Abrechnung zu einem HR-Prozessbild.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Personalverwaltung:** Zentrale Verwaltung von Mitarbeiterdaten, Organisationseinheiten und Arbeitsverträgen.

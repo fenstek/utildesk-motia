@@ -33,6 +33,11 @@ Litmaps is a good fit for:
 
 Litmaps is less useful when you only need to find one known source or when a strict systematic review protocol already defines the databases and search strategy. In those cases, Litmaps is better used as a complement rather than the main system.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/litmaps-editorial.webp" alt="Illustration for Litmaps: citation network as a star map of research papers" loading="lazy" decoding="async" />
+  <figcaption>The star map fits Litmaps because research becomes visible as a network of papers, trails and clusters.</figcaption>
+</figure>
+
 ## Main features
 
 - **Interactive literature maps:** Litmaps visualizes relationships between papers, citations, and related work, making research landscapes easier to read.

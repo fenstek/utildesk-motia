@@ -33,6 +33,11 @@ Good fit users include:
 
 Resolve is less suitable when the only need is very quick smartphone clips, simple template videos, or spontaneous social posts. In those cases, lighter tools are often faster.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/davinci-resolve-editorial.webp" alt="Illustration for DaVinci Resolve: color grading suite with film strip and cinematic light" loading="lazy" decoding="async" />
+  <figcaption>Film, control surface and colored light point to editing, grading and professional post-production work.</figcaption>
+</figure>
+
 ## Key Features
 
 - **Non-linear editing:** Timelines, multicam, trimming, media management, and editing tools for short and longer projects.

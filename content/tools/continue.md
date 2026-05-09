@@ -30,6 +30,11 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Continue breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Continue enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/continue-editorial.webp" alt="Illustration zu Continue: Coding-Workflow als verzweigender Schaltkreis-Bonsai" loading="lazy" decoding="async" />
+  <figcaption>Der Schaltkreis-Bonsai steht fuer assistiertes Programmieren: Vorschlaege wachsen aus Kontext, Review und Codebasis.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Codevervollständigung:** Continue schlägt passende Code-Snippets und Funktionen in Echtzeit vor.
