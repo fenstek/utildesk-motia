@@ -53,18 +53,18 @@ Zoho Workplace wird in der Regel als Abonnement angeboten, wobei die Preise je n
 - **Slack:** Schwerpunkt auf Teamkommunikation, ergänzt durch Integrationen mit Office-Tools.
 - **Dropbox Business:** Cloudspeicher mit Optionen zur Zusammenarbeit und Dateiverwaltung.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
 Zoho Workplace buendelt Mail, Office-Dokumente, Chat und Zusammenarbeit in einem preisbewussten Suite-Ansatz. Entscheidend ist, ob ein Team die Zoho-Welt konsequent nutzt oder ob zu viele externe Tools parallel bleiben und dadurch Ablage, Suche und Kommunikation wieder zerfasern.
 
 ## Workflow-Fit
 
-- Gut fuer kleine und mittlere Unternehmen, die eine Alternative zu Google Workspace oder Microsoft 365 suchen.
-- Weniger passend, wenn bereits viele tief integrierte Spezialprozesse in einem anderen Oekosystem laufen.
+- Gut für kleine und mittlere Unternehmen, die eine Alternative zu Google Workspace oder Microsoft 365 suchen.
+- Weniger passend, wenn bereits viele tief integrierte Spezialprozesse in einem anderen Ökosystem laufen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Zoho Workplace kann viel abdecken, wenn man die Suite wirklich als gemeinsamen Arbeitsraum einfuehrt. Als halb genutzter Nebenstack verliert es schnell gegen die Gewohnheiten der bestehenden Werkzeuge.
+Zoho Workplace kann viel abdecken, wenn man die Suite wirklich als gemeinsamen Arbeitsraum einführt. Als halb genutzter Nebenstack verliert es schnell gegen die Gewohnheiten der bestehenden Werkzeuge.
 
 ## FAQ
 

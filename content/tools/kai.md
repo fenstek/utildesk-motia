@@ -56,18 +56,18 @@ KAI bietet ein Freemium-Modell an, das einen kostenfreien Einstieg ermöglicht. 
 - **Microsoft Azure AI:** Integrierte KI-Dienste mit starker Cloud-Anbindung.
 - [Hugging Face](/tools/hugging-face/): Open-Source-Modelle und Tools für Entwickler und Forscher.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-KAI sollte man anhand des konkreten Einsatzfelds pruefen, nicht nur anhand der KI-Bezeichnung. Bei Assistenz-, Analyse- oder Automatisierungsfunktionen zaehlt, ob Eingaben nachvollziehbar bleiben, Entscheidungen erklaerbar sind und ein Team die Ergebnisse in bestehende Arbeitsschritte einordnen kann.
+KAI sollte man anhand des konkreten Einsatzfelds prüfen, nicht nur anhand der KI-Bezeichnung. Bei Assistenz-, Analyse- oder Automatisierungsfunktionen zählt, ob Eingaben nachvollziehbar bleiben, Entscheidungen erklärbar sind und ein Team die Ergebnisse in bestehende Arbeitsschritte einordnen kann.
 
 ## Workflow-Fit
 
-- Sinnvoll, wenn wiederkehrende Wissens- oder Kommunikationsaufgaben schneller vorbereitet und anschliessend kontrolliert werden.
+- Sinnvoll, wenn wiederkehrende Wissens- oder Kommunikationsaufgaben schneller vorbereitet und anschließend kontrolliert werden.
 - Problematisch, wenn unklare Datenquellen, fehlende Freigaben oder nicht dokumentierte Entscheidungen in produktive Prozesse rutschen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-KAI ist nur so gut wie der Prozess, in den es eingebettet wird. Vor einer breiten Einfuehrung lohnt sich ein enger Testfall mit klarer Messgroesse statt einer allgemeinen KI-Erwartung.
+KAI ist nur so gut wie der Prozess, in den es eingebettet wird. Vor einer breiten Einführung lohnt sich ein enger Testfall mit klarer Messgröße statt einer allgemeinen KI-Erwartung.
 
 ## FAQ
 

@@ -60,18 +60,18 @@ Acast bietet verschiedene Preispläne an, die sich nach dem Funktionsumfang und 
 - **Libsyn:** Etablierter Anbieter mit vielfältigen Monetarisierungs- und Distributionsmöglichkeiten.
 - **Spreaker:** Bietet Live-Streaming und Podcast-Hosting mit integrierten Werbemöglichkeiten.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Acast ist fuer Podcaster interessant, die Hosting, Distribution, Analyse und Monetarisierung zusammen betrachten. Im Alltag geht es nicht nur darum, Episoden hochzuladen, sondern Feeds stabil zu halten, Reichweite zu verstehen und Werbe- oder Mitgliedschaftsmodelle sauber einzubinden.
+Acast ist für Podcaster interessant, die Hosting, Distribution, Analyse und Monetarisierung zusammen betrachten. Im Alltag geht es nicht nur darum, Episoden hochzuladen, sondern Feeds stabil zu halten, Reichweite zu verstehen und Werbe- oder Mitgliedschaftsmodelle sauber einzubinden.
 
 ## Workflow-Fit
 
-- Gut fuer professionelle oder wachsende Podcasts, Netzwerke und Medienmarken mit Vermarktungsambition.
-- Weniger noetig fuer sehr kleine private Formate, die nur einen einfachen RSS-Host ohne Monetarisierung brauchen.
+- Gut für professionelle oder wachsende Podcasts, Netzwerke und Medienmarken mit Vermarktungsambition.
+- Weniger nötig für sehr kleine private Formate, die nur einen einfachen RSS-Host ohne Monetarisierung brauchen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Acast ist staerker als reines Podcast-Hosting, wenn ein Format ernsthaft Publikum und Umsatz entwickeln soll. Entscheidend bleibt jedoch, ob Inhalt, Erscheinungsrhythmus und Vermarktung zusammenpassen.
+Acast ist stärker als reines Podcast-Hosting, wenn ein Format ernsthaft Publikum und Umsatz entwickeln soll. Entscheidend bleibt jedoch, ob Inhalt, Erscheinungsrhythmus und Vermarktung zusammenpassen.
 
 ## FAQ
 

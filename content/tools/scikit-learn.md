@@ -56,18 +56,18 @@ Scikit-learn ist grundsätzlich als Open-Source-Software kostenlos verfügbar. E
 - **LightGBM:** Effiziente Implementierung von Gradient Boosting mit Fokus auf Geschwindigkeit und Speicherverbrauch.
 - **WEKA:** Java-basierte Software für Datenanalyse und maschinelles Lernen mit grafischer Benutzeroberfläche.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Scikit-learn ist ein Grundwerkzeug fuer klassisches Machine Learning in Python. Es glaenzt bei transparenten Pipelines, Modellvergleichen, Preprocessing und soliden Baselines; fuer Deep Learning oder riesige verteilte Trainingslaeufe ist es dagegen nicht die richtige Hauptbuehne.
+Scikit-learn ist ein Grundwerkzeug für klassisches Machine Learning in Python. Es glaenzt bei transparenten Pipelines, Modellvergleichen, Preprocessing und soliden Baselines; für Deep Learning oder riesige verteilte Trainingslaeufe ist es dagegen nicht die richtige Hauptbuehne.
 
 ## Workflow-Fit
 
-- Gut fuer Klassifikation, Regression, Clustering, Feature Engineering und nachvollziehbare Experimente auf tabellarischen Daten.
-- Weniger geeignet fuer neuronale Netze, GPU-zentriertes Training oder produktive Feature Stores ohne zusaetzliche Infrastruktur.
+- Gut für Klassifikation, Regression, Clustering, Feature Engineering und nachvollziehbare Experimente auf tabellarischen Daten.
+- Weniger geeignet für neuronale Netze, GPU-zentriertes Training oder produktive Feature Stores ohne zusätzliche Infrastruktur.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Scikit-learn bleibt wertvoll, weil es robuste ML-Grundlagen gut zugaenglich macht. Wer damit eine saubere Baseline baut, versteht oft besser, ob komplexere Modelle ueberhaupt noetig sind.
+Scikit-learn bleibt wertvoll, weil es robuste ML-Grundlagen gut zugänglich macht. Wer damit eine saubere Baseline baut, versteht oft besser, ob komplexere Modelle überhaupt nötig sind.
 
 ## FAQ
 

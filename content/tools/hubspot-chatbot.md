@@ -57,18 +57,18 @@ Die Preisgestaltung für den HubSpot Chatbot variiert je nach gewähltem HubSpot
 - **Tidio:** Einfache Chatbot-Lösung mit Fokus auf kleine Unternehmen und E-Commerce.
 - **Zendesk Chat:** Integration in das Zendesk Kundenservice-Ökosystem mit Chatbot-Erweiterungen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
 HubSpot Chatbot ist sinnvoll, wenn Website-Dialoge direkt mit CRM, Leads und Marketingprozessen verbunden werden sollen. Entscheidend ist, ob der Bot qualifiziert, routet und dokumentiert, ohne Besucher in starre Fragenketten zu zwingen.
 
 ## Workflow-Fit
 
-- Gut fuer Inbound-Marketing, Leadqualifizierung, Terminbuchung und Support-Triage in HubSpot-nahen Teams.
+- Gut für Inbound-Marketing, Leadqualifizierung, Terminbuchung und Support-Triage in HubSpot-nahen Teams.
 - Weniger passend, wenn kein HubSpot-CRM genutzt wird oder sehr individuelle Conversational-AI-Logik gebraucht wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-HubSpot Chatbot ist am staerksten als Teil eines CRM-Flusses. Als isolierter Website-Bot bleibt er deutlich weniger wertvoll, weil der Kontext nach dem Chat verloren gehen kann.
+HubSpot Chatbot ist am stärksten als Teil eines CRM-Flusses. Als isolierter Website-Bot bleibt er deutlich weniger wertvoll, weil der Kontext nach dem Chat verloren gehen kann.
 
 ## FAQ
 

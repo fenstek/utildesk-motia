@@ -66,7 +66,7 @@ Terminbuchungen enthalten häufig personenbezogene Daten und manchmal sensible A
 
 ## Preise & Kosten
 
-Setmore bietet je nach Funktionsumfang kostenlose und kostenpflichtige Plaene. Entscheidend ist, ob Erinnerungen, Zahlungen, Integrationen oder mehrere Mitarbeitende gebraucht werden. Das im Datensatz geführte Preismodell ist: Je nach Plan.
+Setmore bietet je nach Funktionsumfang kostenlose und kostenpflichtige Pläne. Entscheidend ist, ob Erinnerungen, Zahlungen, Integrationen oder mehrere Mitarbeitende gebraucht werden. Das im Datensatz geführte Preismodell ist: Je nach Plan.
 
 ## Alternativen zu Setmore
 

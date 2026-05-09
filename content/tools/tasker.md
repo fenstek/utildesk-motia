@@ -55,17 +55,17 @@ Aufgrund der umfangreichen Funktionen und der vergleichsweise steilen Lernkurve 
 - Manchmal aufwändige Einrichtung komplexer Tasks notwendig.
 - Fehlende offizielle deutschsprachige Dokumentation (hauptsächlich englisch).
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von Tasker (Android) liegt weniger in der Funktionsliste als in der Frage, ob Android-Automation fuer Power-User, Geraeteablaeufe und persoenliche Workflows ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit echten Triggern, Berechtigungen, Akkulaufzeit und Wartbarkeit basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von Tasker (Android) liegt weniger in der Funktionsliste als in der Frage, ob Android-Automation für Power-User, Geräteabläufe und persönliche Workflows ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf Praxistests mit echten Triggern, Berechtigungen, Akkulaufzeit und Wartbarkeit basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht Tasker (Android) klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei Android-Automation fuer Power-User, Geraeteablaeufe und persoenliche Workflows trennt Praxistests mit echten Triggern, Berechtigungen, Akkulaufzeit und Wartbarkeit brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht Tasker (Android) klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei Android-Automation für Power-User, Geräteabläufe und persönliche Workflows trennt Praxistests mit echten Triggern, Berechtigungen, Akkulaufzeit und Wartbarkeit brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer Tasker (Android) hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Extrem flexibel, aber ohne Dokumentation der eigenen Profile wird Automatisierung schnell fragil. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für Tasker (Android) hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Extrem flexibel, aber ohne Dokumentation der eigenen Profile wird Automatisierung schnell fragil. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 

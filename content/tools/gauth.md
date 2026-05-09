@@ -1,7 +1,7 @@
 ---
 slug: gauth
 title: Gauth
-category: Produktivitaet
+category: Produktivität
 price_model: Freemium
 tags: [ai, education]
 official_url: "https://www.gauthmath.com/"

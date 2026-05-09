@@ -55,17 +55,17 @@ Die Plattform eignet sich sowohl für Anfänger mit wenig technischem Hintergrun
 - Manche Nutzer berichten von einer komplexen Benutzeroberfläche bei fortgeschrittenen Features
 - Offline-Nutzung ist eingeschränkt, da es sich um eine webbasierte Lösung handelt
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von DominKnow | ONE liegt weniger in der Funktionsliste als in der Frage, ob E-Learning-Autorentools fuer modulare Kurse, Teams und Wiederverwendung ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit Kursstruktur, Rollen, Review-Prozess, SCORM/xAPI und Lokalisierung basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von DominKnow | ONE liegt weniger in der Funktionsliste als in der Frage, ob E-Learning-Autorentools für modulare Kurse, Teams und Wiederverwendung ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf Praxistests mit Kursstruktur, Rollen, Review-Prozess, SCORM/xAPI und Lokalisierung basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht DominKnow | ONE klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei E-Learning-Autorentools fuer modulare Kurse, Teams und Wiederverwendung trennt Praxistests mit Kursstruktur, Rollen, Review-Prozess, SCORM/xAPI und Lokalisierung brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht DominKnow | ONE klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei E-Learning-Autorentools für modulare Kurse, Teams und Wiederverwendung trennt Praxistests mit Kursstruktur, Rollen, Review-Prozess, SCORM/xAPI und Lokalisierung brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer DominKnow | ONE hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Wertvoll fuer Learning-Teams mit Standards, aber schwergewichtig fuer schnelle Einzelpraesentationen. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für DominKnow | ONE hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Wertvoll für Learning-Teams mit Standards, aber schwergewichtig für schnelle Einzelpraesentationen. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 

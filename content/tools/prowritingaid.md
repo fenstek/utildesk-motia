@@ -54,18 +54,18 @@ Die Preisgestaltung von ProWritingAid variiert je nach gewähltem Plan und Abonn
 - **Slick Write:** Ein kostenloses Tool für schnelle Grammatik- und Stilprüfungen.
 - **Ginger Software:** Bietet Korrekturen, Übersetzungen und weitere Schreibhilfen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
 ProWritingAid ist hilfreich, wenn Texte nicht nur fehlerfrei, sondern stilistisch klarer und konsistenter werden sollen. Der Nutzen liegt in konkreten Hinweisen zu Lesbarkeit, Wiederholungen, Satzbau und Ton, solange Autoren nicht jede Empfehlung mechanisch akzeptieren.
 
 ## Workflow-Fit
 
-- Gut fuer lange Texte, Blogartikel, Manuskripte, Business Copy und nicht-muttersprachliche Autorinnen und Autoren.
-- Weniger geeignet fuer hochspezialisierte Fachtexte, wenn Terminologie, juristische Praezision oder Markenstil gegen generische Stilregeln sprechen.
+- Gut für lange Texte, Blogartikel, Manuskripte, Business Copy und nicht-muttersprachliche Autorinnen und Autoren.
+- Weniger geeignet für hochspezialisierte Fachtexte, wenn Terminologie, juristische Präzision oder Markenstil gegen generische Stilregeln sprechen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-ProWritingAid ist ein guter zweiter Blick auf Text. Es sollte Autoritaet nicht ersetzen, sondern helfen, bewusstere Entscheidungen ueber Rhythmus, Klarheit und Wiederholung zu treffen.
+ProWritingAid ist ein guter zweiter Blick auf Text. Es sollte Autorität nicht ersetzen, sondern helfen, bewusstere Entscheidungen über Rhythmus, Klarheit und Wiederholung zu treffen.
 
 ## FAQ
 

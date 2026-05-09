@@ -56,17 +56,17 @@ Die Skalierbarkeit des Dienstes macht ihn sowohl für kleine Projekte als auch f
 - Einrichtung und API-Integration erfordern technisches Know-how
 - Datenschutz und Compliance müssen individuell geprüft werden, insbesondere bei sensiblen Daten
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von Amazon Transcribe liegt weniger in der Funktionsliste als in der Frage, ob automatisierte Spracherkennung fuer Meetings, Medien, Support und Analysepipelines ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit realen Audioqualitaeten, Sprecherwechseln, Fachwoertern und Datenschutzanforderungen basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von Amazon Transcribe liegt weniger in der Funktionsliste als in der Frage, ob automatisierte Spracherkennung für Meetings, Medien, Support und Analysepipelines ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf Praxistests mit realen Audioqualitäten, Sprecherwechseln, Fachwörtern und Datenschutzanforderungen basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht Amazon Transcribe klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei automatisierte Spracherkennung fuer Meetings, Medien, Support und Analysepipelines trennt Praxistests mit realen Audioqualitaeten, Sprecherwechseln, Fachwoertern und Datenschutzanforderungen brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht Amazon Transcribe klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei automatisierte Spracherkennung für Meetings, Medien, Support und Analysepipelines trennt Praxistests mit realen Audioqualitäten, Sprecherwechseln, Fachwörtern und Datenschutzanforderungen brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer Amazon Transcribe hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Transkription spart nur dann Zeit, wenn Nachkorrektur, Speaker-Labels und Weiterverarbeitung sauber eingeplant sind. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für Amazon Transcribe hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Transkription spart nur dann Zeit, wenn Nachkorrektur, Speaker-Labels und Weiterverarbeitung sauber eingeplant sind. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 

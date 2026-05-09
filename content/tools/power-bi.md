@@ -110,7 +110,7 @@ Power BI kann unter anderem Excel, CSV, SQL-Datenbanken, SharePoint, Azure-Diens
 
 **Wie sicher sind Daten in Power BI?**
 
-Power BI bietet Berechtigungen, Rollen, Row-Level Security, Verschlüsselung und Microsoft-Compliance-Funktionen. Die tatsaechliche Sicherheit hängt aber stark von Tenant-Konfiguration, Freigaben und Datenmodell ab.
+Power BI bietet Berechtigungen, Rollen, Row-Level Security, Verschlüsselung und Microsoft-Compliance-Funktionen. Die tatsächliche Sicherheit hängt aber stark von Tenant-Konfiguration, Freigaben und Datenmodell ab.
 
 **Warum stimmen Power-BI-Zahlen manchmal nicht mit Excel überein?**
 

@@ -107,7 +107,7 @@ Nein, der Schwerpunkt liegt auf Sprache. Für Musik oder atmosphaerischen Ton si
 
 **Muss Datenschutz beachtet werden?**
 
-Ja. Bei Interviews, Kundengespraechen, internen Schulungen oder vertraulichen Inhalten sollte vor dem Upload geklärt werden, welche Daten verarbeitet werden dürfen.
+Ja. Bei Interviews, Kundengesprächen, internen Schulungen oder vertraulichen Inhalten sollte vor dem Upload geklärt werden, welche Daten verarbeitet werden dürfen.
 
 **Wann klingt das Ergebnis unnatürlich?**
 

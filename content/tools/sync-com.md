@@ -58,18 +58,18 @@ Sync.com bietet ein Freemium-Modell mit kostenlosem Einstiegsspeicher und Basisf
 - **OneDrive**: Microsofts Cloudlösung mit enger Verzahnung zu Office-Anwendungen.
 - **pCloud**: Cloudspeicher mit optionaler clientseitiger Verschlüsselung und Lifetime-Plänen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Sync.com ist vor allem fuer Nutzer interessant, die Cloud-Speicher mit starkem Datenschutz und einfacher Dateisynchronisierung verbinden wollen. Im Alltag zaehlen nicht nur Gigabyte, sondern Wiederherstellung, Freigabelinks, Teamrechte und die Frage, wie bequem verschluesselte Zusammenarbeit tatsaechlich bleibt.
+Sync.com ist vor allem für Nutzer interessant, die Cloud-Speicher mit starkem Datenschutz und einfacher Dateisynchronisierung verbinden wollen. Im Alltag zählen nicht nur Gigabyte, sondern Wiederherstellung, Freigabelinks, Teamrechte und die Frage, wie bequem verschlüsselte Zusammenarbeit tatsächlich bleibt.
 
 ## Workflow-Fit
 
-- Gut fuer kleine Teams, Freiberufler und Organisationen, die sensible Dateien teilen und synchron halten muessen.
-- Weniger geeignet, wenn tiefe Office-Kollaboration, komplexe Automationen oder sehr grosse Medienproduktionspipelines gebraucht werden.
+- Gut für kleine Teams, Freiberufler und Organisationen, die sensible Dateien teilen und synchron halten müssen.
+- Weniger geeignet, wenn tiefe Office-Kollaboration, komplexe Automationen oder sehr große Medienproduktionspipelines gebraucht werden.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Sync.com ist eine ruhige, datenschutzorientierte Speicherloesung. Wer maximale Kollaboration wie bei grossen Suite-Plattformen erwartet, sollte die Grenzen bei gemeinsamer Bearbeitung vorher testen.
+Sync.com ist eine ruhige, datenschutzorientierte Speicherlösung. Wer maximale Kollaboration wie bei großen Suite-Plattformen erwartet, sollte die Grenzen bei gemeinsamer Bearbeitung vorher testen.
 
 ## FAQ
 

@@ -52,7 +52,7 @@ Trotzdem sollte man Beispiele nicht ungeprüft kopieren. Register, Region und Fa
 
 - Nicht ausreichend für verbindliche Fachübersetzungen.
 - Beispiele müssen zum Register und Kontext passen.
-- Maschinelle Vorschlaege können stilistisch oder sachlich danebenliegen.
+- Maschinelle Vorschläge können stilistisch oder sachlich danebenliegen.
 
 ## Workflow-Fit
 

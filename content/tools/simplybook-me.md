@@ -58,18 +58,18 @@ SimplyBook.me bietet ein Freemium-Modell mit einer kostenlosen Basisversion, die
 - **Setmore** – Kostenlose und kostenpflichtige Pläne mit Schwerpunkt auf kleinen Unternehmen  
 - **10to8** – Terminverwaltung mit starken Kommunikations- und Erinnerungsfunktionen  
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-SimplyBook.me ist stark, wenn Termine nicht mehr manuell per Nachricht, Telefon oder Tabellenkoordination vergeben werden sollen. In der Praxis zaehlen Verfuegbarkeiten, Pufferzeiten, Erinnerungen, Zahlungen und die Frage, ob Kunden ohne Rueckfragen den richtigen Service buchen koennen.
+SimplyBook.me ist stark, wenn Termine nicht mehr manuell per Nachricht, Telefon oder Tabellenkoordination vergeben werden sollen. In der Praxis zählen Verfuegbarkeiten, Pufferzeiten, Erinnerungen, Zahlungen und die Frage, ob Kunden ohne Rückfragen den richtigen Service buchen können.
 
 ## Workflow-Fit
 
-- Gut fuer Studios, Praxen, Beratungen, Kurse, lokale Dienstleistungen und kleine Teams mit buchbaren Zeitfenstern.
-- Weniger passend fuer sehr komplexe Ressourcenplanung mit individueller Disposition, Aussendienstlogik oder tiefem ERP-Bezug.
+- Gut für Studios, Praxen, Beratungen, Kurse, lokale Dienstleistungen und kleine Teams mit buchbaren Zeitfenstern.
+- Weniger passend für sehr komplexe Ressourcenplanung mit individueller Disposition, Aussendienstlogik oder tiefem ERP-Bezug.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-SimplyBook.me reduziert Terminchaos, wenn Services klar beschrieben und Kalender sauber gepflegt sind. Die beste Buchungsseite ersetzt jedoch keine durchdachte Kapazitaetsplanung.
+SimplyBook.me reduziert Terminchaos, wenn Services klar beschrieben und Kalender sauber gepflegt sind. Die beste Buchungsseite ersetzt jedoch keine durchdachte Kapazitätsplanung.
 
 ## FAQ
 

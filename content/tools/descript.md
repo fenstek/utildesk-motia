@@ -50,17 +50,17 @@ Descript eignet sich ideal für Podcaster, Videoproduzenten, Content Creators un
 - Internetverbindung erforderlich, da das Tool webbasiert ist.
 - Datenschutz und Speicherung sensibler Daten sollten vor Nutzung geprüft werden.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Descript wirkt schnell nuetzlich, aber der Alltagstest ist konkreter: Passt textbasierte Audio- und Videobearbeitung fuer Creator, Podcasts und Schulungsinhalte in bestehende Daten, Rollen und Freigaben? Gute Evaluation heisst hier Praxistests mit Rohaufnahmen, Sprecherkorrekturen, Overdub-Grenzen und Exportwegen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Sehr stark fuer redaktionelle Medienarbeit, aber finale Qualitaet braucht weiterhin Hoerpruefung und Schnittgefuehl.
+Descript wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt textbasierte Audio- und Videobearbeitung für Creator, Podcasts und Schulungsinhalte in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit Rohaufnahmen, Sprecherkorrekturen, Overdub-Grenzen und Exportwegen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Sehr stark für redaktionelle Medienarbeit, aber finale Qualität braucht weiterhin Hörprüfung und Schnittgefühl.
 
 ## Workflow-Fit
 
-Fuer Teams sollte Descript nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess haengen. Wenn textbasierte Audio- und Videobearbeitung fuer Creator, Podcasts und Schulungsinhalte haeufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich noetig ist. Entscheidend ist dabei Praxistests mit Rohaufnahmen, Sprecherkorrekturen, Overdub-Grenzen und Exportwegen. Das verhindert, dass ein guter Ersteindruck spaeter zu operativem Ballast wird.
+Für Teams sollte Descript nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn textbasierte Audio- und Videobearbeitung für Creator, Podcasts und Schulungsinhalte häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit Rohaufnahmen, Sprecherkorrekturen, Overdub-Grenzen und Exportwegen. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Unsere Einschaetzung: Descript ist am staerksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualitaet und Kontrollierbarkeit gemeinsam betrachten. Sehr stark fuer redaktionelle Medienarbeit, aber finale Qualitaet braucht weiterhin Hoerpruefung und Schnittgefuehl. Sonst wirkt das Tool groesser, als der reale Prozessgewinn am Ende ist.
+Unsere Einschätzung: Descript ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Sehr stark für redaktionelle Medienarbeit, aber finale Qualität braucht weiterhin Hörprüfung und Schnittgefühl. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
 
 ## Preise & Kosten
 

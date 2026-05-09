@@ -55,18 +55,18 @@ Groove bietet ein Abonnement-Modell mit verschiedenen Plänen, die sich nach der
 - **Zoho Desk:** Integriertes Helpdesk-System mit KI-Features und flexiblen Anpassungsmöglichkeiten.
 - **Intercom:** Kombination aus Messaging, Support und Marketing mit AI-gestützten Automatisierungen.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Groove ist als Support- und Kundenkommunikationswerkzeug interessant, wenn ein Team einfache Inbox-Strukturen, Wissensartikel und Kundenhistorie ohne ueberladene Enterprise-Komplexitaet braucht. Der Alltagstest liegt darin, ob Anfragen schneller beantwortet und Verantwortlichkeiten klarer werden.
+Groove ist als Support- und Kundenkommunikationswerkzeug interessant, wenn ein Team einfache Inbox-Strukturen, Wissensartikel und Kundenhistorie ohne überladene Enterprise-Komplexität braucht. Der Alltagstest liegt darin, ob Anfragen schneller beantwortet und Verantwortlichkeiten klarer werden.
 
 ## Workflow-Fit
 
-- Gut fuer kleine Supportteams, SaaS-Startups und Servicebereiche, die von geteilter Mailbox zu strukturiertem Helpdesk wechseln.
-- Weniger passend fuer sehr grosse Organisationen mit komplexen SLAs, Workforce-Management und tiefen Callcenter-Prozessen.
+- Gut für kleine Supportteams, SaaS-Startups und Servicebereiche, die von geteilter Mailbox zu strukturiertem Helpdesk wechseln.
+- Weniger passend für sehr große Organisationen mit komplexen SLAs, Workforce-Management und tiefen Callcenter-Prozessen.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Groove punktet durch Fokus. Es ist stark, wenn ein Team Support professionalisieren will, ohne sofort ein schweres System einzufuehren.
+Groove punktet durch Fokus. Es ist stark, wenn ein Team Support professionalisieren will, ohne sofort ein schweres System einzuführen.
 
 ## FAQ
 

@@ -60,18 +60,18 @@ Chatbot.com bietet ein Freemium-Modell, das den Einstieg ohne Kosten ermöglicht
 - **MobileMonkey:** Plattform für Omnichannel-Chatbots mit Fokus auf Lead-Generierung.
 - **Dialogflow:** Google-basierte KI-Plattform für komplexe, sprachgesteuerte Chatbots.
 - **Botsify:** Einfache Chatbot-Plattform mit Fokus auf Bildung und Kundenservice.
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Chatbot.com hilft vor allem dort, wo wiederkehrende Support- oder Lead-Fragen strukturiert abgefangen werden sollen. Gute Ergebnisse entstehen nicht durch einen Bot allein, sondern durch saubere Dialogpfade, Eskalation zu Menschen, gepflegte Antworten und regelmaessige Auswertung gescheiterter Konversationen.
+Chatbot.com hilft vor allem dort, wo wiederkehrende Support- oder Lead-Fragen strukturiert abgefangen werden sollen. Gute Ergebnisse entstehen nicht durch einen Bot allein, sondern durch saubere Dialogpfade, Eskalation zu Menschen, gepflegte Antworten und regelmäßige Auswertung gescheiterter Konversationen.
 
 ## Workflow-Fit
 
-- Passend fuer Websites mit haeufigen Standardfragen, Termin- oder Lead-Erfassung und klaren Supportprozessen.
-- Kritisch bei komplexen Beratungsfaellen, Beschwerden oder Situationen, in denen Nutzer eine verbindliche menschliche Antwort erwarten.
+- Passend für Websites mit häufigen Standardfragen, Termin- oder Lead-Erfassung und klaren Supportprozessen.
+- Kritisch bei komplexen Beratungsfällen, Beschwerden oder Situationen, in denen Nutzer eine verbindliche menschliche Antwort erwarten.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Chatbot.com kann Service entlasten, wenn der Bot als Empfang und Filter gedacht ist. Wird er als Ersatz fuer Support missverstanden, steigt eher die Frustration als die Automatisierungsquote.
+Chatbot.com kann Service entlasten, wenn der Bot als Empfang und Filter gedacht ist. Wird er als Ersatz für Support missverstanden, steigt eher die Frustration als die Automatisierungsquote.
 
 ## FAQ
 

@@ -55,17 +55,17 @@ Dank der skalierbaren Architektur eignet sich der Dienst sowohl für kleine Proj
 - Benutzeroberfläche und Dokumentation können für Einsteiger komplex wirken
 - Datenschutzbestimmungen können je nach Einsatzszenario zusätzliche Prüfungen erfordern
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von IBM Watson Visual Recognition liegt weniger in der Funktionsliste als in der Frage, ob Computer-Vision-Szenarien in Unternehmens- und Analyseumgebungen ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit eigenen Bilddaten, Klassen, Fehlertoleranzen und Compliance-Vorgaben basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von IBM Watson Visual Recognition liegt weniger in der Funktionsliste als in der Frage, ob Computer-Vision-Szenarien in Unternehmens- und Analyseumgebungen ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf Praxistests mit eigenen Bilddaten, Klassen, Fehlertoleranzen und Compliance-Vorgaben basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht IBM Watson Visual Recognition klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei Computer-Vision-Szenarien in Unternehmens- und Analyseumgebungen trennt Praxistests mit eigenen Bilddaten, Klassen, Fehlertoleranzen und Compliance-Vorgaben brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht IBM Watson Visual Recognition klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei Computer-Vision-Szenarien in Unternehmens- und Analyseumgebungen trennt Praxistests mit eigenen Bilddaten, Klassen, Fehlertoleranzen und Compliance-Vorgaben brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer IBM Watson Visual Recognition hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Nur sinnvoll, wenn Datenqualitaet, Modellpflege und fachliche Fehlerrisiken mitgeplant werden. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für IBM Watson Visual Recognition hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Nur sinnvoll, wenn Datenqualität, Modellpflege und fachliche Fehlerrisiken mitgeplant werden. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 

@@ -14,7 +14,7 @@ StudioBinder ist eine umfassende Produktionssoftware, die sich vor allem an Film
 
 ## Für wen ist StudioBinder geeignet?
 
-StudioBinder eignet sich ideal für Filmproduzenten, Videografen, Postproduktions-Teams und Kreativagenturen, die ihre Produktionsabläufe digitalisieren und strukturieren möchten. Besonders nützlich ist das Tool für Teams, die an komplexen Projekten mit vielen Beteiligten arbeiten und dabei sowohl Video- als auch Audioelemente koordinieren müssen. Auch Freelancer im Bereich Video- und Audioproduktion können von den Workflow-Optimierungen profitieren.
+StudioBinder eignet sich ideal für Filmproduzenten, Videografen, Postproduktions-Teams und Kreativagenturen, die ihre Produktionsabläufe digitalisieren und strukturieren möchten. Besonders nützlich ist das Tool für Teams, die an komplexen Projekten mit vielen Beteiligten arbeiten und dabei sowohl Video- als auch Audiölemente koordinieren müssen. Auch Freelancer im Bereich Video- und Audioproduktion können von den Workflow-Optimierungen profitieren.
 
 ## Hauptfunktionen
 

@@ -69,7 +69,7 @@ Pons arbeitet mit einem Freemium-Ansatz. Viele grundlegende Wörterbuch- und Üb
 
 Vor einem Upgrade sollte man klären:
 
-- ob Pons taeglich oder nur gelegentlich genutzt wird;
+- ob Pons täglich oder nur gelegentlich genutzt wird;
 - welche Sprachen und Fachgebiete wirklich wichtig sind;
 - ob Offline-Zugriff benötigt wird;
 - ob Lernfunktionen oder nur Übersetzung gebraucht werden;

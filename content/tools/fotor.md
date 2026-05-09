@@ -58,17 +58,17 @@ Durch die Kombination aus KI-gestützten Funktionen und manuellen Bearbeitungsop
 - Batch-Bearbeitung und KI-Features teilweise nur in Premium-Version enthalten.
 - Die AI-Text-zu-Bild Funktion kann je nach Plan eingeschränkt sein.
 
-## Was im Alltag wirklich zaehlt
+## Was im Alltag wirklich zählt
 
-Der praktische Wert von Fotor liegt weniger in der Funktionsliste als in der Frage, ob schnelle Bildbearbeitung, Designvorlagen und einfache KI-gestuetzte Visuals ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Pruefung auf Praxistests mit echten Social-Formaten, Bildrechten, Exportgroessen und Brand-Anforderungen basieren. So sieht man frueh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
+Der praktische Wert von Fotor liegt weniger in der Funktionsliste als in der Frage, ob schnelle Bildbearbeitung, Designvorlagen und einfache KI-gestützte Visuals ohne Reibung in die Arbeitsroutine passt. Deshalb sollte die Prüfung auf Praxistests mit echten Social-Formaten, Bildrechten, Exportgrößen und Brand-Anforderungen basieren. So sieht man früh, ob das Tool echte Entlastung bringt oder nur einen weiteren Review-Schritt erzeugt.
 
 ## Workflow-Fit
 
-Workflow-seitig braucht Fotor klare Grenzen: Welche Eingaben sind erlaubt, wer prueft Ergebnisse, und wo landen die Ausgaben? Bei schnelle Bildbearbeitung, Designvorlagen und einfache KI-gestuetzte Visuals trennt Praxistests mit echten Social-Formaten, Bildrechten, Exportgroessen und Brand-Anforderungen brauchbare Produktivsignale von reinen Demo-Eindruecken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
+Workflow-seitig braucht Fotor klare Grenzen: Welche Eingaben sind erlaubt, wer prüft Ergebnisse, und wo landen die Ausgaben? Bei schnelle Bildbearbeitung, Designvorlagen und einfache KI-gestützte Visuals trennt Praxistests mit echten Social-Formaten, Bildrechten, Exportgrößen und Brand-Anforderungen brauchbare Produktivsignale von reinen Demo-Eindrücken. Genau dort zeigt sich auch, ob Datenschutz, Wartung und Kosten tragbar bleiben.
 
-## Redaktionelle Einschaetzung
+## Redaktionelle Einschätzung
 
-Als redaktionelle Entscheidungsregel fuer Fotor hilft ein kurzer Realtest mit Spalten fuer Zeitgewinn, Qualitaet, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Praktisch fuer Alltagsgrafiken, aber keine vollwertige Designumgebung fuer komplexe Kampagnen. Das gehoert in die erste Bewertung, nicht in eine spaete Korrekturrunde.
+Als redaktionelle Entscheidungsregel für Fotor hilft ein kurzer Realtest mit Spalten für Zeitgewinn, Qualität, Risiko und Aufwand. Wenn eine dieser Spalten unklar bleibt, ist der Nutzen noch nicht belastbar. Praktisch für Alltagsgrafiken, aber keine vollwertige Designumgebung für komplexe Kampagnen. Das gehört in die erste Bewertung, nicht in eine späte Korrekturrunde.
 
 ## Preise & Kosten
 
