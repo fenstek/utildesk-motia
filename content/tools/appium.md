@@ -24,7 +24,7 @@ Geeignet ist Appium für QA-Teams, Mobile-Entwickler, Produktteams mit iOS- und 
 - iOS- und Android-Testlogik teilweise wiederverwenden.
 - Regressionstests vor App-Store-Releases ausführen.
 - Hybride Apps mit nativen und Web-Elementen testen.
-- Testlaeufe in CI oder Device Clouds integrieren.
+- Testläufe in CI oder Device Clouds integrieren.
 
 ## Was im Alltag wirklich zählt
 

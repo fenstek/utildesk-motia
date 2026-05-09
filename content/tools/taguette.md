@@ -56,13 +56,13 @@ Für kleine Projekte ist gerade die Schlichtheit ein Vorteil: weniger Menues, me
 
 ## Workflow-Fit
 
-Taguette passt in einen qualitativen Workflow mit Materialimport, erstem offenen Codieren, Codebook-Schaerfung, zweiter Codierphase und Auswertung nach Themen. Wichtig ist, analytische Notizen außerhalb oder neben dem reinen Markieren festzuhalten.
+Taguette passt in einen qualitativen Workflow mit Materialimport, erstem offenen Codieren, Codebook-Schärfung, zweiter Codierphase und Auswertung nach Themen. Wichtig ist, analytische Notizen außerhalb oder neben dem reinen Markieren festzuhalten.
 
 Bei Forschungsvorhaben sollte regelmäßig ein zweiter Blick auf Codes und Grenzfälle stattfinden. Schon eine kurze Intercoder-Diskussion zeigt, ob Kategorien tragfähig sind oder ob nur hübsch benannte Bauchgefühle gesammelt wurden.
 
 ## Datenschutz & Daten
 
-Interviewdaten können sehr sensibel sein. Vor der Nutzung sollten Anonymisierung, Speicherort, Zugriff und Loeschfristen geklärt werden. Bei Selbsthosting liegt mehr Kontrolle, aber auch mehr technische Verantwortung beim Team.
+Interviewdaten können sehr sensibel sein. Vor der Nutzung sollten Anonymisierung, Speicherort, Zugriff und Löschfristen geklärt werden. Bei Selbsthosting liegt mehr Kontrolle, aber auch mehr technische Verantwortung beim Team.
 
 ## Preise & Kosten
 

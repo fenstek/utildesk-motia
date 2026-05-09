@@ -31,14 +31,14 @@ Geeignet ist Audacity für Podcaster, Lehrende, Studierende, Vereine, Journalist
 
 Im Alltag ist Audacity besonders gut für klare Audiohygiene: saubere Aufnahme, grobe Schnitte, Pegel prüfen, Export. Wer schon bei der Aufnahme auf Mikrofonabstand und Raum achtet, spart später Zauberei.
 
-Die Oberfläche wirkt nicht immer modern, aber sie ist zweckmaessig. Der wichtigste Skill bleibt das Hören: Knackt es, pumpt es, ist Sprache verständlich? Das Tool zeigt Wellenformen, die Entscheidung trifft das Ohr.
+Die Oberfläche wirkt nicht immer modern, aber sie ist zweckmäßig. Der wichtigste Skill bleibt das Hören: Knackt es, pumpt es, ist Sprache verständlich? Das Tool zeigt Wellenformen, die Entscheidung trifft das Ohr.
 
 ## Hauptfunktionen
 
 - Audioaufnahme und Bearbeitung einzelner oder mehrerer Spuren.
 - Schnitt, Kopieren, Fade, Normalisierung und einfache Effekte.
 - Rauschminderung, Kompressor und weitere Bearbeitungswerkzeuge.
-- Import und Export gaengiger Audioformate.
+- Import und Export gängiger Audioformate.
 - Erweiterbarkeit durch Plugins je nach Setup.
 
 ## Vorteile und Grenzen

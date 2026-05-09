@@ -44,7 +44,7 @@ Ein guter Social-Plan ist kein starrer Stundenplan. Er lässt Raum für aktuelle
 
 ### Vorteile
 
-- Hilft, Contentplanung sichtbarer und teamfaehiger zu machen.
+- Hilft, Contentplanung sichtbarer und teamfähiger zu machen.
 - Gut für wiederkehrende Formate und Kampagnenrhythmen.
 - Kann Abstimmungen zwischen Kreativ- und Marketingrollen reduzieren.
 

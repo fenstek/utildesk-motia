@@ -60,11 +60,11 @@ TensorBoard ist Open Source und somit kostenlos nutzbar. Es fallen keine direkte
 
 ## Was im Alltag wirklich zählt
 
-TensorBoard ist wertvoll, wenn Modelltraining nicht als Blackbox laufen soll. Kurven, Metriken, Embeddings und Graphen helfen, Überanpassung, Datenprobleme oder instabile Trainingslaeufe früher zu erkennen, sofern Experimente konsistent benannt und vergleichbar geloggt werden.
+TensorBoard ist wertvoll, wenn Modelltraining nicht als Blackbox laufen soll. Kurven, Metriken, Embeddings und Graphen helfen, Überanpassung, Datenprobleme oder instabile Trainingsläufe früher zu erkennen, sofern Experimente konsistent benannt und vergleichbar geloggt werden.
 
 ## Workflow-Fit
 
-- Gut für TensorFlow-nahe Teams, die Trainingsverlaeufe, Hyperparameter und Modellartefakte visuell nachvollziehen wollen.
+- Gut für TensorFlow-nahe Teams, die Trainingsverläufe, Hyperparameter und Modellartefakte visuell nachvollziehen wollen.
 - Weniger stark als alleinige Experimentplattform, wenn Governance, Modellfreigaben und teamweite Registry-Funktionen gebraucht werden.
 
 ## Redaktionelle Einschätzung

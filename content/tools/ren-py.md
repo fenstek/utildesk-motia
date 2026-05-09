@@ -10,7 +10,7 @@ popularity: 0
 
 # Ren’Py
 
-Ren'Py ist eine Engine für Visual Novels und storylastige Spiele. Sie verbindet Dialogskripte, Charakterbilder, Hintergründe, Entscheidungen und einfache Spiellogik zu interaktiven Erzaehlungen.
+Ren'Py ist eine Engine für Visual Novels und storylastige Spiele. Sie verbindet Dialogskripte, Charakterbilder, Hintergründe, Entscheidungen und einfache Spiellogik zu interaktiven Erzählungen.
 
 Die Stärke liegt darin, dass Schreibende und kleine Teams relativ schnell spielbare Geschichten bauen können. Man muss nicht zuerst eine komplette Game Engine bezwingen, um Dialog, Szene und Entscheidung auf den Bildschirm zu bringen.
 
@@ -78,7 +78,7 @@ Ren'Py ist frei nutzbar. Kosten entstehen durch Art, Musik, Lektorat, Lokalisier
 
 ## Redaktionelle Einschätzung
 
-Ren'Py ist ein wunderbarer Spezialist für interaktive Geschichten. Wer Dialog, Figuren und Entscheidungen ernst nimmt, bekommt eine Engine, die der Erzaehlung nicht im Weg steht.
+Ren'Py ist ein wunderbarer Spezialist für interaktive Geschichten. Wer Dialog, Figuren und Entscheidungen ernst nimmt, bekommt eine Engine, die der Erzählung nicht im Weg steht.
 
 Ein guter erster Test für Ren’Py ist deshalb kein Demo-Klick, sondern ein realer Mini-Workflow: Visual Novels mit Dialogen, Charakteren und Branching Story erstellen. Wenn das mit echten Daten, echten Rollen und einem klaren Ergebnis funktioniert, lohnt die nächste Ausbaustufe.
 

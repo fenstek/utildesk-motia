@@ -12,11 +12,11 @@ popularity: 0
 
 ArtRage ist eine digitale Mal- und Zeichenanwendung mit starkem Fokus auf natürlich wirkende Medien wie Öl, Aquarell, Bleistift und Leinwandtexturen. Statt nur Pixel zu verschieben, versucht das Tool, das Gefühl traditioneller Materialien digital abzubilden.
 
-Das macht ArtRage besonders für Menschen interessant, die digital arbeiten wollen, aber die Logik echter Farben und Werkzeuge moegen. Es ist weniger ein Allzweck-Designprogramm und mehr ein kreativer Malraum.
+Das macht ArtRage besonders für Menschen interessant, die digital arbeiten wollen, aber die Logik echter Farben und Werkzeuge mögen. Es ist weniger ein Allzweck-Designprogramm und mehr ein kreativer Malraum.
 
 ## Für wen ist ArtRage geeignet?
 
-Geeignet ist ArtRage für Illustratoren, Hobbykuenstler, Art-Students, Concept-Skizzen und Menschen, die digitale Malerei mit traditioneller Anmutung suchen. Für Vektorlayouts, UI-Design oder hochindustrielle Produktionspipelines sind andere Tools besser.
+Geeignet ist ArtRage für Illustratoren, Hobbykünstler, Art-Students, Concept-Skizzen und Menschen, die digitale Malerei mit traditioneller Anmutung suchen. Für Vektorlayouts, UI-Design oder hochindustrielle Produktionspipelines sind andere Tools besser.
 
 ## Typische Einsatzszenarien
 

@@ -60,7 +60,7 @@ Skater richtet sich an Teams, die Modellvorhersagen besser erklären und diagnos
 ## Workflow-Fit
 
 - Gut für Data-Science-Reviews, Modellvalidierung und Gespräche mit Fachbereichen über Blackbox-Modelle.
-- Weniger geeignet, wenn Explainability nur als nachtraegliches Compliance-Haekchen ohne echte Modellprüfung genutzt wird.
+- Weniger geeignet, wenn Explainability nur als nachträgliches Compliance-Häkchen ohne echte Modellprüfung genutzt wird.
 
 ## Redaktionelle Einschätzung
 

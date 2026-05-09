@@ -67,7 +67,7 @@ Domo bietet ein Freemium-Modell, das es ermöglicht, die Plattform kostenfrei mi
 
 ## Was im Alltag wirklich zählt
 
-Domo entfaltet Wert, wenn Daten aus vielen Quellen nicht nur gesammelt, sondern für operative Entscheidungen sichtbar werden. Entscheidend sind Datenmodell, Verantwortlichkeit für Kennzahlen und Dashboard-Disziplin; ohne diese Grundlagen produziert BI nur schoenere, aber nicht bessere Diskussionen.
+Domo entfaltet Wert, wenn Daten aus vielen Quellen nicht nur gesammelt, sondern für operative Entscheidungen sichtbar werden. Entscheidend sind Datenmodell, Verantwortlichkeit für Kennzahlen und Dashboard-Disziplin; ohne diese Grundlagen produziert BI nur schönere, aber nicht bessere Diskussionen.
 
 ## Workflow-Fit
 
@@ -76,7 +76,7 @@ Domo entfaltet Wert, wenn Daten aus vielen Quellen nicht nur gesammelt, sondern 
 
 ## Redaktionelle Einschätzung
 
-Domo ist ein leistungsfaehiges BI-Portal, aber kein Ersatz für Datenstrategie. Sein Nutzen steigt, wenn jede Kennzahl einen Besitzer, eine Definition und einen klaren Entscheidungszweck hat.
+Domo ist ein leistungsfähiges BI-Portal, aber kein Ersatz für Datenstrategie. Sein Nutzen steigt, wenn jede Kennzahl einen Besitzer, eine Definition und einen klaren Entscheidungszweck hat.
 
 ## FAQ
 

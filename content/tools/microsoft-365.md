@@ -60,7 +60,7 @@ Microsoft 365 ist im Alltag weniger ein einzelnes Tool als eine Arbeitsumgebung 
 ## Workflow-Fit
 
 - Stark für Organisationen, die Office-Dokumente, Zusammenarbeit, Kalender, Kommunikation und Rechteverwaltung in einem Ökosystem buendeln wollen.
-- Schwierig wird es, wenn Governance fehlt und jede Abteilung eigene Teamraeume, Dateikopien und Freigabelogiken erzeugt.
+- Schwierig wird es, wenn Governance fehlt und jede Abteilung eigene Teamräume, Dateikopien und Freigabelogiken erzeugt.
 
 ## Redaktionelle Einschätzung
 

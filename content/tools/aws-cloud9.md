@@ -35,7 +35,7 @@ Teams sollten vermeiden, Cloud-IDE-Instanzen als persönliche Schneekugeln zu be
 ## Hauptfunktionen
 
 - Browserbasierte IDE mit Editor und Terminal.
-- Nahe Integration in AWS-Ressourcen und Entwicklungsablaeufe.
+- Nahe Integration in AWS-Ressourcen und Entwicklungsabläufe.
 - Gemeinsames oder temporäres Arbeiten je nach Setup.
 - Vorkonfigurierte Umgebungen für Cloud-Projekte.
 - Nutzung für Skripte, Serverless-Code oder Infrastrukturarbeit.

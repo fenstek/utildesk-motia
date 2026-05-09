@@ -12,7 +12,7 @@ popularity: 0
 
 Reverso ist ein Sprachwerkzeug für Übersetzung, Kontextbeispiele, Synonyme, Grammatik und Konjugation. Besonders nützlich ist es, wenn man nicht nur ein einzelnes Wort übersetzen will, sondern sehen möchte, wie eine Formulierung in echten Sätzen funktioniert.
 
-Der Vorteil gegenüber einer reinen Maschinenübersetzung liegt im Kontext. Reverso hilft, Nuancen zu prüfen, typische Wendungen zu finden und peinliche Woertlichkeitsfallen zu vermeiden.
+Der Vorteil gegenüber einer reinen Maschinenübersetzung liegt im Kontext. Reverso hilft, Nuancen zu prüfen, typische Wendungen zu finden und peinliche Wörtlichkeitsfallen zu vermeiden.
 
 ## Für wen ist Reverso geeignet?
 

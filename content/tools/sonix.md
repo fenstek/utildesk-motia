@@ -52,7 +52,7 @@ Für Teams lohnt ein Standard: Welche Genauigkeit reicht für interne Suche, und
 
 - Automatische Genauigkeit variiert mit Audioqualität, Akzent und Fachsprache.
 - Sensible Aufnahmen brauchen Datenschutzprüfung.
-- Publikationsfaehige Transkripte erfordern menschliches Korrekturlesen.
+- Publikationsfähige Transkripte erfordern menschliches Korrekturlesen.
 
 ## Workflow-Fit
 
@@ -64,7 +64,7 @@ Bei Serienformaten lohnt außerdem ein Glossar mit Namen, Produktbegriffen und w
 
 ## Datenschutz & Daten
 
-Aufnahmen können personenbezogene, vertrauliche oder rechtlich sensible Inhalte enthalten. Einwilligungen, Speicherort, Zugriff, Loeschfristen und Exportwege sollten vor Upload geklärt werden.
+Aufnahmen können personenbezogene, vertrauliche oder rechtlich sensible Inhalte enthalten. Einwilligungen, Speicherort, Zugriff, Löschfristen und Exportwege sollten vor Upload geklärt werden.
 
 ## Preise & Kosten
 
