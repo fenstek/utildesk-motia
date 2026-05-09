@@ -10,24 +10,24 @@ popularity: 0
 
 # Power BI
 
-Power BI ist Microsofts Business-Intelligence-Plattform fuer Datenmodelle, Berichte, Dashboards und datengetriebene Entscheidungsprozesse. Das Tool hilft Unternehmen, Daten aus Excel, Datenbanken, Cloud-Diensten, CRM-Systemen, ERP-Quellen und Web-APIs zusammenzufuehren und daraus auswertbare Berichte zu bauen. Der eigentliche Nutzen entsteht aber nicht durch ein einzelnes schoenes Dashboard, sondern durch verlaessliche Kennzahlen, klare Datenverantwortung und Berichte, denen Fachbereiche wirklich vertrauen.
+Power BI ist Microsofts Business-Intelligence-Plattform für Datenmodelle, Berichte, Dashboards und datengetriebene Entscheidungsprozesse. Das Tool hilft Unternehmen, Daten aus Excel, Datenbanken, Cloud-Diensten, CRM-Systemen, ERP-Quellen und Web-APIs zusammenzuführen und daraus auswertbare Berichte zu bauen. Der eigentliche Nutzen entsteht aber nicht durch ein einzelnes schönes Dashboard, sondern durch verlässliche Kennzahlen, klare Datenverantwortung und Berichte, denen Fachbereiche wirklich vertrauen.
 
-Im Alltag ist Power BI besonders stark, wenn Daten nicht nur einmal visualisiert, sondern regelmaessig aktualisiert, verteilt und diskutiert werden muessen. Vertriebssteuerung, Finanzreporting, operative Kennzahlen, Management-Dashboards oder Qualitaetskontrolle profitieren davon, wenn Rohdaten in nachvollziehbare Modelle, Measures und interaktive Ansichten uebersetzt werden. Ohne sauberes Datenmodell bleibt Power BI dagegen schnell nur eine Sammlung bunter Diagramme.
+Im Alltag ist Power BI besonders stark, wenn Daten nicht nur einmal visualisiert, sondern regelmäßig aktualisiert, verteilt und diskutiert werden müssen. Vertriebssteuerung, Finanzreporting, operative Kennzahlen, Management-Dashboards oder Qualitätskontrolle profitieren davon, wenn Rohdaten in nachvollziehbare Modelle, Measures und interaktive Ansichten übersetzt werden. Ohne sauberes Datenmodell bleibt Power BI dagegen schnell nur eine Sammlung bunter Diagramme.
 
-## Fuer wen ist Power BI geeignet?
+## Für wen ist Power BI geeignet?
 
-Power BI eignet sich fuer Unternehmen, Teams und Fachabteilungen, die Daten wiederkehrend auswerten und Entscheidungen nicht mehr nur auf Tabellenexporte stuetzen wollen. Besonders relevant ist es fuer Business-Analyst:innen, Controlling, Vertrieb, Operations, Produktteams, IT, Datenverantwortliche und Fuehrungskraefte, die einen gemeinsamen Blick auf Kennzahlen brauchen.
+Power BI eignet sich für Unternehmen, Teams und Fachabteilungen, die Daten wiederkehrend auswerten und Entscheidungen nicht mehr nur auf Tabellenexporte stützen wollen. Besonders relevant ist es für Business-Analyst:innen, Controlling, Vertrieb, Operations, Produktteams, IT, Datenverantwortliche und Führungskräfte, die einen gemeinsamen Blick auf Kennzahlen brauchen.
 
-Power BI ist sinnvoll fuer:
+Power BI ist sinnvoll für:
 
-- Fachabteilungen, die Excel-Reports ablösen und Berichte zentraler pflegen moechten;
+- Fachabteilungen, die Excel-Reports ablösen und Berichte zentraler pflegen möchten;
 - Controlling- und Finance-Teams, die Umsatz, Kosten, Forecasts oder Budgetabweichungen nachvollziehbar darstellen wollen;
-- Vertriebs- und Marketingteams, die Pipeline, Kampagnenleistung oder Kundenaktivitaet beobachten;
-- Operations-Teams, die Prozesse, Durchlaufzeiten, Auslastung oder Servicequalitaet messen;
-- IT- und Data-Teams, die Datenmodelle, Berechtigungen und Aktualisierungslogik kontrollieren muessen;
-- Management-Teams, die interaktive Kennzahlen statt statischer Praesentationsfolien nutzen wollen.
+- Vertriebs- und Marketingteams, die Pipeline, Kampagnenleistung oder Kundenaktivität beobachten;
+- Operations-Teams, die Prozesse, Durchlaufzeiten, Auslastung oder Servicequalität messen;
+- IT- und Data-Teams, die Datenmodelle, Berechtigungen und Aktualisierungslogik kontrollieren müssen;
+- Management-Teams, die interaktive Kennzahlen statt statischer Präsentationsfolien nutzen wollen.
 
-Weniger geeignet ist Power BI, wenn ein Team nur gelegentlich eine kleine Tabelle visualisiert oder keine Person fuer Datenmodell, Berechtigungen und Pflege verantwortlich ist. Fuer einfache Einzelanalysen reicht Excel oft aus. Fuer sehr komplexe Data-Science-Workflows braucht es ergaenzend spezialisierte Datenplattformen, Notebooks oder Machine-Learning-Umgebungen.
+Weniger geeignet ist Power BI, wenn ein Team nur gelegentlich eine kleine Tabelle visualisiert oder keine Person für Datenmodell, Berechtigungen und Pflege verantwortlich ist. Für einfache Einzelanalysen reicht Excel oft aus. Für sehr komplexe Data-Science-Workflows braucht es ergänzend spezialisierte Datenplattformen, Notebooks oder Machine-Learning-Umgebungen.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/power-bi-editorial.webp" alt="Illustration zu Power BI: Datenskulpturen, Diagramme und Entscheidungskompass" loading="lazy" decoding="async" />
@@ -35,15 +35,15 @@ Weniger geeignet ist Power BI, wenn ein Team nur gelegentlich eine kleine Tabell
 
 ## Hauptfunktionen
 
-- **Datenintegration:** Power BI verbindet sich mit vielen Quellen, darunter Excel, SharePoint, SQL-Datenbanken, Azure, Web-APIs, SaaS-Dienste und lokale Systeme ueber Gateways.
-- **Power Query:** Daten koennen bereinigt, transformiert, zusammengefuehrt und fuer Berichte vorbereitet werden. Das ist oft der wichtigste Schritt, bevor Visualisierungen entstehen.
-- **Datenmodellierung:** Beziehungen, Tabellen, Measures und DAX-Berechnungen bilden die Grundlage fuer belastbare Kennzahlen.
-- **Interaktive Dashboards und Reports:** Nutzer:innen koennen filtern, drillen, Details anzeigen und verschiedene Perspektiven auf dieselben Daten nutzen.
-- **Automatische Aktualisierung:** Berichte koennen je nach Quelle und Lizenz regelmaessig aktualisiert werden, damit Entscheidungen nicht auf veralteten Exporten beruhen.
+- **Datenintegration:** Power BI verbindet sich mit vielen Quellen, darunter Excel, SharePoint, SQL-Datenbanken, Azure, Web-APIs, SaaS-Dienste und lokale Systeme über Gateways.
+- **Power Query:** Daten können bereinigt, transformiert, zusammengeführt und für Berichte vorbereitet werden. Das ist oft der wichtigste Schritt, bevor Visualisierungen entstehen.
+- **Datenmodellierung:** Beziehungen, Tabellen, Measures und DAX-Berechnungen bilden die Grundlage für belastbare Kennzahlen.
+- **Interaktive Dashboards und Reports:** Nutzer:innen können filtern, drillen, Details anzeigen und verschiedene Perspektiven auf dieselben Daten nutzen.
+- **Automatische Aktualisierung:** Berichte können je nach Quelle und Lizenz regelmäßig aktualisiert werden, damit Entscheidungen nicht auf veralteten Exporten beruhen.
 - **Zusammenarbeit und Teilen:** Dashboards lassen sich in Workspaces organisieren, mit Teams teilen oder in Microsoft-Umgebungen einbetten.
 - **Berechtigungen und Governance:** Rollenbasierte Sicherheit, Row-Level Security und zentrale Datenmodelle helfen, sensible Daten gezielter zu steuern.
-- **AI- und Analysefunktionen:** Power BI bietet Funktionen fuer Mustererkennung, Q&A, automatische Erklaerungen und erweiterte Analysen, sofern Datenqualitaet und Modellstruktur passen.
-- **Integration in Microsoft 365:** Die Naehe zu Teams, Excel, SharePoint, Fabric, Azure und Power Automate macht Power BI besonders interessant fuer Microsoft-orientierte Organisationen.
+- **AI- und Analysefunktionen:** Power BI bietet Funktionen für Mustererkennung, Q&A, automatische Erklärungen und erweiterte Analysen, sofern Datenqualität und Modellstruktur passen.
+- **Integration in Microsoft 365:** Die Nähe zu Teams, Excel, SharePoint, Fabric, Azure und Power Automate macht Power BI besonders interessant für Microsoft-orientierte Organisationen.
 
 ## Vorteile und Nachteile
 
@@ -52,74 +52,74 @@ Weniger geeignet ist Power BI, wenn ein Team nur gelegentlich eine kleine Tabell
 - Power BI ist stark in Microsoft-Umgebungen integriert und passt gut zu Excel-, Teams-, SharePoint- und Azure-Workflows.
 - Die Plattform verbindet Self-Service-Reporting mit zentraler Datenmodellierung und Governance.
 - Berichte lassen sich interaktiv nutzen, statt nur als statische PDF- oder Excel-Dateien verschickt zu werden.
-- Power Query und DAX ermoeglichen auch anspruchsvollere Datenlogik, wenn das Team die Kompetenz aufbaut.
-- Fuer viele Unternehmen ist Power BI kostenseitig attraktiver als manche Enterprise-BI-Alternative.
-- Dashboards koennen von kleinen Teams bis zu grossen Organisationen skaliert werden.
-- Wiederverwendbare Datenmodelle reduzieren doppelte Kennzahlen und widerspruechliche Reportversionen.
+- Power Query und DAX ermöglichen auch anspruchsvollere Datenlogik, wenn das Team die Kompetenz aufbaut.
+- Für viele Unternehmen ist Power BI kostenseitig attraktiver als manche Enterprise-BI-Alternative.
+- Dashboards können von kleinen Teams bis zu großen Organisationen skaliert werden.
+- Wiederverwendbare Datenmodelle reduzieren doppelte Kennzahlen und widersprüchliche Reportversionen.
 
 ### Nachteile
 
-- Gute Power-BI-Ergebnisse haengen stark von Datenqualitaet, Modellierung und Verantwortlichkeiten ab.
+- Gute Power-BI-Ergebnisse hängen stark von Datenqualität, Modellierung und Verantwortlichkeiten ab.
 - DAX, Datenmodellierung und Performance-Optimierung brauchen Einarbeitung.
-- Ohne Governance entstehen schnell viele aehnliche Reports mit widerspruechlichen Zahlen.
-- Manche Team-, Freigabe-, Kapazitaets- und Aktualisierungsfunktionen haengen von Lizenzen und Tenant-Konfiguration ab.
-- Sehr grosse Datenmengen oder komplexe Modelle koennen Performanceprobleme verursachen, wenn Architektur und Abfragen nicht sauber geplant sind.
-- Power BI ist fuer reine Ad-hoc-Tabellenarbeit manchmal zu schwergewichtig.
+- Ohne Governance entstehen schnell viele ähnliche Reports mit widersprüchlichen Zahlen.
+- Manche Team-, Freigabe-, Kapazitäts- und Aktualisierungsfunktionen hängen von Lizenzen und Tenant-Konfiguration ab.
+- Sehr große Datenmengen oder komplexe Modelle können Performanceprobleme verursachen, wenn Architektur und Abfragen nicht sauber geplant sind.
+- Power BI ist für reine Ad-hoc-Tabellenarbeit manchmal zu schwergewichtig.
 
 ## Preise & Kosten
 
-Power BI wird je nach Nutzungsmodell, Lizenztyp und Microsoft-Umgebung unterschiedlich abgerechnet. Fuer Einzelpersonen gibt es Einstiegs- und Pro-Optionen, waehrend groessere Organisationen haeufig Premium-, Fabric- oder Kapazitaetsmodelle pruefen. Entscheidend ist nicht nur der Preis pro Nutzer, sondern auch, wer Berichte erstellen, wer sie nur ansehen, wie oft Daten aktualisiert und wie viele Workspaces oder Kapazitaeten benoetigt werden.
+Power BI wird je nach Nutzungsmodell, Lizenztyp und Microsoft-Umgebung unterschiedlich abgerechnet. Für Einzelpersonen gibt es Einstiegs- und Pro-Optionen, während größere Organisationen häufig Premium-, Fabric- oder Kapazitätsmodelle prüfen. Entscheidend ist nicht nur der Preis pro Nutzer, sondern auch, wer Berichte erstellen, wer sie nur ansehen, wie oft Daten aktualisiert und wie viele Workspaces oder Kapazitäten benötigt werden.
 
-Vor einer Einfuehrung sollte man klaeren:
+Vor einer Einführung sollte man klären:
 
 - wie viele Personen Berichte bauen und wie viele sie nur konsumieren;
-- welche Datenquellen angebunden werden muessen;
-- ob lokale Gateways, Row-Level Security oder Premium-Kapazitaeten benoetigt werden;
-- wie haeufig Dashboards aktualisiert werden sollen;
+- welche Datenquellen angebunden werden müssen;
+- ob lokale Gateways, Row-Level Security oder Premium-Kapazitäten benötigt werden;
+- wie häufig Dashboards aktualisiert werden sollen;
 - ob Berichte in Teams, SharePoint, Apps oder Kundenportale eingebettet werden;
-- wer Datenmodell, Berechtigungen, Namenskonventionen und Qualitaetskontrolle verantwortet.
+- wer Datenmodell, Berechtigungen, Namenskonventionen und Qualitätskontrolle verantwortet.
 
-Fuer kleine Teams kann Power BI schnell starten, wenn Datenquellen ueberschaubar sind. Fuer Unternehmen sollte Power BI eher als BI-Programm mit Datenmodell, Governance, Schulung und Betrieb geplant werden, nicht nur als Visualisierungstool.
+Für kleine Teams kann Power BI schnell starten, wenn Datenquellen überschaubar sind. Für Unternehmen sollte Power BI eher als BI-Programm mit Datenmodell, Governance, Schulung und Betrieb geplant werden, nicht nur als Visualisierungstool.
 
 ## Alternativen zu Power BI
 
-- [Tableau](/tools/tableau/): Starke Plattform fuer visuelle Analyse und explorative Dashboards, oft beliebt bei Analyst:innen mit hohem Anspruch an Visualisierung.
+- [Tableau](/tools/tableau/): Starke Plattform für visuelle Analyse und explorative Dashboards, oft beliebt bei Analyst:innen mit hohem Anspruch an Visualisierung.
 - [Qlik Sense](/tools/qlik-sense/): BI-Plattform mit assoziativem Datenmodell und starkem Fokus auf flexible Datenexploration.
-- **Looker:** Besonders interessant fuer Organisationen, die ein modelliertes, code-naeheres BI-Layer und zentrale Metrikdefinitionen bevorzugen.
-- **Google Looker Studio:** Gut fuer einfachere Web-, Marketing- und Google-Reporting-Szenarien, aber weniger umfangreich fuer Enterprise-Governance.
-- **Microsoft Excel:** Weiterhin sehr stark fuer schnelle Einzelanalysen, Planungstabellen und ad-hoc Berechnungen, aber weniger robust als zentrale Reporting-Plattform.
-- **Metabase:** Open-Source-nahe BI-Option fuer Teams, die schnell Datenbankfragen, einfache Dashboards und Self-Service-Analysen aufbauen wollen.
+- **Looker:** Besonders interessant für Organisationen, die ein modelliertes, code-näheres BI-Layer und zentrale Metrikdefinitionen bevorzugen.
+- **Google Looker Studio:** Gut für einfachere Web-, Marketing- und Google-Reporting-Szenarien, aber weniger umfangreich für Enterprise-Governance.
+- **Microsoft Excel:** Weiterhin sehr stark für schnelle Einzelanalysen, Planungstabellen und ad-hoc Berechnungen, aber weniger robust als zentrale Reporting-Plattform.
+- **Metabase:** Open-Source-nahe BI-Option für Teams, die schnell Datenbankfragen, einfache Dashboards und Self-Service-Analysen aufbauen wollen.
 
 ## FAQ
 
 **Brauche ich Programmierkenntnisse, um Power BI zu nutzen?**
 
-Fuer einfache Reports reichen oft Excel- und Analysekenntnisse. Fuer stabile Datenmodelle, eigene Kennzahlen und komplexere Logik werden DAX, Power Query und Grundverstaendnis fuer Datenmodellierung wichtig.
+Für einfache Reports reichen oft Excel- und Analysekenntnisse. Für stabile Datenmodelle, eigene Kennzahlen und komplexere Logik werden DAX, Power Query und Grundverständnis für Datenmodellierung wichtig.
 
 **Kann Power BI Echtzeitdaten anzeigen?**
 
-Ja, Power BI kann mit regelmaessigen Aktualisierungen, DirectQuery, Streaming- und Echtzeit-Szenarien arbeiten. Welche Variante sinnvoll ist, haengt von Datenquelle, Performance, Lizenz und Aktualitaetsanforderung ab.
+Ja, Power BI kann mit regelmäßigen Aktualisierungen, DirectQuery, Streaming- und Echtzeit-Szenarien arbeiten. Welche Variante sinnvoll ist, hängt von Datenquelle, Performance, Lizenz und Aktualitätsanforderung ab.
 
-**Ist Power BI fuer kleine Unternehmen geeignet?**
+**Ist Power BI für kleine Unternehmen geeignet?**
 
-Ja, wenn die Datenquellen ueberschaubar sind und jemand die Pflege uebernimmt. Kleine Teams profitieren besonders, wenn sie wiederkehrende Excel-Reports in ein gemeinsames Dashboard ueberfuehren.
+Ja, wenn die Datenquellen überschaubar sind und jemand die Pflege übernimmt. Kleine Teams profitieren besonders, wenn sie wiederkehrende Excel-Reports in ein gemeinsames Dashboard überführen.
 
 **Welche Datenquellen kann Power BI anbinden?**
 
-Power BI kann unter anderem Excel, CSV, SQL-Datenbanken, SharePoint, Azure-Dienste, Web-APIs, SaaS-Anwendungen und viele weitere Quellen verbinden. Fuer lokale Systeme kann ein Gateway erforderlich sein.
+Power BI kann unter anderem Excel, CSV, SQL-Datenbanken, SharePoint, Azure-Dienste, Web-APIs, SaaS-Anwendungen und viele weitere Quellen verbinden. Für lokale Systeme kann ein Gateway erforderlich sein.
 
 **Wie sicher sind Daten in Power BI?**
 
-Power BI bietet Berechtigungen, Rollen, Row-Level Security, Verschluesselung und Microsoft-Compliance-Funktionen. Die tatsaechliche Sicherheit haengt aber stark von Tenant-Konfiguration, Freigaben und Datenmodell ab.
+Power BI bietet Berechtigungen, Rollen, Row-Level Security, Verschlüsselung und Microsoft-Compliance-Funktionen. Die tatsaechliche Sicherheit hängt aber stark von Tenant-Konfiguration, Freigaben und Datenmodell ab.
 
-**Warum stimmen Power-BI-Zahlen manchmal nicht mit Excel ueberein?**
+**Warum stimmen Power-BI-Zahlen manchmal nicht mit Excel überein?**
 
-Meist liegt das an unterschiedlichen Filtern, Zeitraeumen, Berechnungslogik, Datenstaenden oder Definitionen einer Kennzahl. Deshalb sind zentrale Measures und klare Datenregeln so wichtig.
+Meist liegt das an unterschiedlichen Filtern, Zeiträumen, Berechnungslogik, Datenständen oder Definitionen einer Kennzahl. Deshalb sind zentrale Measures und klare Datenregeln so wichtig.
 
 **Kann Power BI mit Teams und SharePoint verbunden werden?**
 
-Ja. Power BI laesst sich gut in Microsoft 365 einbetten, etwa in Teams, SharePoint und Power Automate. Gerade diese Integration ist fuer viele Organisationen ein Hauptargument.
+Ja. Power BI lässt sich gut in Microsoft 365 einbetten, etwa in Teams, SharePoint und Power Automate. Gerade diese Integration ist für viele Organisationen ein Hauptargument.
 
 **Wann lohnt sich Power BI wirklich?**
 
-Power BI lohnt sich, wenn Berichte regelmaessig genutzt werden, Entscheidungen beeinflussen und Datenquellen nicht jedes Mal manuell zusammenkopiert werden sollen. Der beste Start ist ein klar abgegrenzter Report mit echten Nutzer:innen, festen Kennzahlen und sichtbarer Zeitersparnis.
+Power BI lohnt sich, wenn Berichte regelmäßig genutzt werden, Entscheidungen beeinflussen und Datenquellen nicht jedes Mal manuell zusammenkopiert werden sollen. Der beste Start ist ein klar abgegrenzter Report mit echten Nutzer:innen, festen Kennzahlen und sichtbarer Zeitersparnis.
