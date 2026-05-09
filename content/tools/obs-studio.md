@@ -20,6 +20,11 @@ Bei Videowerkzeugen entscheidet der Workflow: Aufnahme, Schnitt, Ton, Freigabe u
 
 OBS Studio richtet sich in der Praxis vor allem an Streamer, Lehrende, Eventteams, YouTuber und technische Kommunikatoren. Gut eingesetzt wird es, wenn Zuständigkeit, Prüfschritt und Ergebnisformat vorher geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/obs-studio-editorial.webp" alt="Illustration zu OBS Studio: Streaming-Arbeitsplatz mit Kamera, Mikrofon und Szenensteuerung" loading="lazy" decoding="async" />
+  <figcaption>Kamera, Mixer und Szenenflaechen zeigen OBS Studio als Schaltzentrale fuer Aufnahme und Livestreaming.</figcaption>
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Livestreams mit Szenen und Quellen aufbauen

@@ -29,6 +29,11 @@ Sinnvoll ist Research Rabbit fuer:
 
 Weniger geeignet ist Research Rabbit, wenn ein konkretes Paper bereits bekannt ist oder wenn von Beginn an eine streng reproduzierbare systematische Suche erforderlich ist. In systematischen Reviews kann es die Exploration unterstuetzen, ersetzt aber weder Suchprotokoll noch Screening-Kriterien oder Qualitaetsbewertung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/research-rabbit-editorial.webp" alt="Illustration zu Research Rabbit: Papierpfade und Zitationswurzeln in einer Forschungslandschaft" loading="lazy" decoding="async" />
+  <figcaption>Die Papierpfade greifen den Entdeckungscharakter auf: Research Rabbit fuehrt durch verwandte Arbeiten und Zitationsspuren.</figcaption>
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Von wenigen guten Seed-Papers aus aehnliche und relevante Arbeiten entdecken.

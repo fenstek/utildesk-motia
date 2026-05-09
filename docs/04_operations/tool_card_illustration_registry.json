@@ -1,0 +1,63 @@
+{
+  "last_updated": "2026-05-09",
+  "purpose": "Persistent registry of tool cards that already received editorial mid-article illustrations. Check this file before adding future tool-card artwork so the same page is not illustrated twice.",
+  "selection_rule": "Exclude every slug listed in batches[].slugs unless the user explicitly asks to replace or revise an existing illustration.",
+  "batches": [
+    {
+      "id": "2026-05-09-bing-signal-20-editorial-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article figure before the main functions/features section",
+      "note": "Second generation run only. The first stopped run was discarded because it looked too uniform; this batch uses one distinct tool-specific visual metaphor per tool.",
+      "slugs": [
+        "adobe-enhance-speech",
+        "davinci-resolve",
+        "descript-studio-sound",
+        "elicit",
+        "fotojet",
+        "genei",
+        "litmaps",
+        "paperpile",
+        "pons",
+        "power-bi",
+        "research-rabbit",
+        "snappa",
+        "workday-hcm",
+        "continue",
+        "storystream",
+        "deepinfra",
+        "youcanbook-me",
+        "obs-studio",
+        "ourdream-ai",
+        "mailbird"
+      ],
+      "images": [
+        "content/images/tools/adobe-enhance-speech-editorial.webp",
+        "content/images/tools/davinci-resolve-editorial.webp",
+        "content/images/tools/descript-studio-sound-editorial.webp",
+        "content/images/tools/elicit-editorial.webp",
+        "content/images/tools/fotojet-editorial.webp",
+        "content/images/tools/genei-editorial.webp",
+        "content/images/tools/litmaps-editorial.webp",
+        "content/images/tools/paperpile-editorial.webp",
+        "content/images/tools/pons-editorial.webp",
+        "content/images/tools/power-bi-editorial.webp",
+        "content/images/tools/research-rabbit-editorial.webp",
+        "content/images/tools/snappa-editorial.webp",
+        "content/images/tools/workday-hcm-editorial.webp",
+        "content/images/tools/continue-editorial.webp",
+        "content/images/tools/storystream-editorial.webp",
+        "content/images/tools/deepinfra-editorial.webp",
+        "content/images/tools/youcanbook-me-editorial.webp",
+        "content/images/tools/obs-studio-editorial.webp",
+        "content/images/tools/ourdream-ai-editorial.webp",
+        "content/images/tools/mailbird-editorial.webp"
+      ]
+    }
+  ]
+}

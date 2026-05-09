@@ -33,6 +33,11 @@ Snappa is a good fit for:
 
 It is less suitable when a company needs a highly customized design system, advanced illustration, detailed image retouching, or strict corporate design governance. For those tasks, tools such as Figma, Adobe Illustrator, Photoshop, or a dedicated design process remain stronger.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snappa-editorial.webp" alt="Illustration for Snappa: marketing graphics, phone format and color papers on a worktable" loading="lazy" decoding="async" />
+  <figcaption>Blank post formats and campaign materials show Snappa as a tool for quick social and marketing graphics.</figcaption>
+</figure>
+
 ## Main Features
 
 - **Template library:** Snappa includes templates for social media posts, blog graphics, ads, headers, banners, and other standard formats, so users do not have to begin with an empty canvas.

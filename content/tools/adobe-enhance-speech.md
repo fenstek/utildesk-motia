@@ -29,6 +29,11 @@ Gute Einsatzgruppen sind:
 
 Weniger geeignet ist Adobe Enhance Speech fuer Musik, fein abgestimmtes Sounddesign, hochprofessionelles Mixing oder extrem beschaedigte Audiodateien. Wenn eine Aufnahme uebersteuert, abgeschnitten oder kaum verstaendlich ist, kann auch KI fehlende Informationen nicht verlaesslich retten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-enhance-speech-editorial.webp" alt="Illustration zu Adobe Enhance Speech: Mikrofon zwischen Rauschen und klarer Sprachwelle" loading="lazy" decoding="async" />
+  <figcaption>Die Szene macht den Kern des Tools sichtbar: aus unruhigem Rohmaterial soll eine klarere Sprachaufnahme werden.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-Sprachverbesserung:** Stimmen werden automatisch klarer, naeher und praesentierter dargestellt.

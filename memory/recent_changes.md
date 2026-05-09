@@ -1,5 +1,16 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-07_
+_Last updated: 2026-05-09_
+
+## 2026-05-09 - Tool Card Editorial Illustrations Batch 1
+
+### Done
+- Added one mid-article ChatGPT-generated WebP illustration to 20 already edited tool cards, with matching German and English figure captions.
+- Used the second, corrected generation run only; the first stopped run was intentionally discarded because the visuals looked too uniform.
+- Added `docs/04_operations/tool_card_illustration_registry.json` as the project memory for illustrated tool cards so future batches do not repeat these slugs.
+- Removed the temporary local FotoJet illustration preview directory from `site/public/editorial-preview` so it cannot leak into production.
+
+### Slugs
+`adobe-enhance-speech`, `davinci-resolve`, `descript-studio-sound`, `elicit`, `fotojet`, `genei`, `litmaps`, `paperpile`, `pons`, `power-bi`, `research-rabbit`, `snappa`, `workday-hcm`, `continue`, `storystream`, `deepinfra`, `youcanbook-me`, `obs-studio`, `ourdream-ai`, `mailbird`.
 
 ## 2026-05-07 - Ratgeber Final Artwork Gate
 

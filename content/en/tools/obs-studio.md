@@ -24,6 +24,11 @@ With video tools, the workflow decides: recording, editing, audio, approval, and
 
 In practice, OBS Studio is aimed mainly at streamers, educators, event teams, YouTubers, and technical communicators. It works best when ownership, review, and output format are clear before the tool enters the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/obs-studio-editorial.webp" alt="Illustration for OBS Studio: streaming workspace with camera, microphone and scene control" loading="lazy" decoding="async" />
+  <figcaption>Camera, mixer and scene areas show OBS Studio as a control room for recording and livestreaming.</figcaption>
+</figure>
+
 ## Typical use cases
 
 - build live streams with scenes and sources
