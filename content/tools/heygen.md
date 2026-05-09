@@ -64,7 +64,7 @@ Besonders sinnvoll ist eine kleine Produktionsrichtlinie: Welche Avatar-Typen pa
 
 ## Datenschutz & Daten
 
-Bei Video, Stimme und Avataren sind Datenschutz und Persoenlichkeitsrechte zentral. Teams sollten klären, welche Aufnahmen hochgeladen werden dürfen, wer Avatare freigibt und ob synthetische Medien gegenüber Zuschauern kenntlich gemacht werden sollen oder müssen.
+Bei Video, Stimme und Avataren sind Datenschutz und Persönlichkeitsrechte zentral. Teams sollten klären, welche Aufnahmen hochgeladen werden dürfen, wer Avatare freigibt und ob synthetische Medien gegenüber Zuschauern kenntlich gemacht werden sollen oder müssen.
 
 ## Preise & Kosten
 

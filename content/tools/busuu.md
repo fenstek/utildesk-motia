@@ -22,7 +22,7 @@ Geeignet ist Busuu für Selbstlernende, Berufstätige, Reisende, Schüler und Me
 
 - Tägliche kurze Lerneinheiten für Wortschatz und Grammatik einplanen.
 - Reise- oder Berufssituationen sprachlich vorbereiten.
-- Aussprache und Schreibuebungen mit Rückmeldungen verbessern.
+- Aussprache und Schreibübungen mit Rückmeldungen verbessern.
 - Vorhandene Sprachkenntnisse auffrischen, ohne direkt einen Kurs zu buchen.
 - Lernfortschritt über strukturierte Level und Ziele verfolgen.
 
@@ -30,7 +30,7 @@ Geeignet ist Busuu für Selbstlernende, Berufstätige, Reisende, Schüler und Me
 
 Im Alltag hilft Busuu, wenn Lernen einen festen Platz bekommt: zehn Minuten morgens, eine Wiederholung abends, einmal pro Woche Sprechen. Kleine Gewohnheiten schlagen große Neujahrsvorsätze, o wackerer Vokabelbezwinger.
 
-Wichtig ist, nicht nur zu tippen. Sprache braucht Mund, Ohr und Kontext. Wer Busuu mit Podcasts, echten Gesprächen oder kurzen Texten kombiniert, baut stabilere Faehigkeiten auf.
+Wichtig ist, nicht nur zu tippen. Sprache braucht Mund, Ohr und Kontext. Wer Busuu mit Podcasts, echten Gesprächen oder kurzen Texten kombiniert, baut stabilere Fähigkeiten auf.
 
 ## Hauptfunktionen
 
@@ -51,7 +51,7 @@ Wichtig ist, nicht nur zu tippen. Sprache braucht Mund, Ohr und Kontext. Wer Bus
 ### Grenzen
 
 - Sprechen unter realem Druck wird nur begrenzt ersetzt.
-- Fach- oder Prüfungssprache braucht zusaetzliches Material.
+- Fach- oder Prüfungssprache braucht zusätzliches Material.
 - Motivation bleibt beim Nutzer, nicht bei der App.
 
 ## Workflow-Fit
@@ -62,7 +62,7 @@ Ein sinnvoller Lernrhythmus kombiniert App-Lektionen mit eigenen Beispielen. Wer
 
 ## Datenschutz & Daten
 
-Sprachlernapps verarbeiten Nutzungsdaten, Lernfortschritt und teilweise Sprach- oder Texteingaben. Vor intensiver Nutzung lohnt ein Blick auf Datenschutz, Community-Sichtbarkeit und Optionen zum Loeschen oder Exportieren.
+Sprachlernapps verarbeiten Nutzungsdaten, Lernfortschritt und teilweise Sprach- oder Texteingaben. Vor intensiver Nutzung lohnt ein Blick auf Datenschutz, Community-Sichtbarkeit und Optionen zum Löschen oder Exportieren.
 
 ## Preise & Kosten
 
@@ -78,7 +78,7 @@ Busuu bietet je nach Sprache und Funktionsumfang kostenlose sowie Premium-Option
 
 ## Redaktionelle Einschätzung
 
-Busuu ist ein gutes Werkzeug für Sprachroutine. Es gewinnt nicht durch Magie, sondern durch Regelmaessigkeit, Lautsprechen und die Bereitschaft, Fehler als Trainingsmaterial zu behandeln.
+Busuu ist ein gutes Werkzeug für Sprachroutine. Es gewinnt nicht durch Magie, sondern durch Regelmäßigkeit, Lautsprechen und die Bereitschaft, Fehler als Trainingsmaterial zu behandeln.
 
 Ein guter erster Test für Busuu ist deshalb kein Demo-Klick, sondern ein realer Mini-Workflow: Tägliche kurze Lerneinheiten für Wortschatz und Grammatik einplanen. Wenn das mit echten Daten, echten Rollen und einem klaren Ergebnis funktioniert, lohnt die nächste Ausbaustufe.
 

@@ -30,7 +30,7 @@ Geeignet ist MURAL für Produktteams, UX, Strategie, Consulting, Bildung und rem
 
 Im Alltag braucht MURAL Vorbereitung. Ein gutes Board hat Startpunkt, klare Aufgaben, Zeitboxen und genug Raum, aber nicht unendlich viel. Teilnehmende sollten nicht erst im Workshop lernen müssen, wie man denkt und klickt.
 
-Nach dem Workshop ist Aufräumen Pflicht: Entscheidungen, offene Punkte und nächste Schritte müssen aus dem Board herausgezogen werden. Sonst bleibt die schoene Leinwand ein digitales Lagerfeuer ohne Folgen.
+Nach dem Workshop ist Aufräumen Pflicht: Entscheidungen, offene Punkte und nächste Schritte müssen aus dem Board herausgezogen werden. Sonst bleibt die schöne Leinwand ein digitales Lagerfeuer ohne Folgen.
 
 ## Hauptfunktionen
 
@@ -51,7 +51,7 @@ Nach dem Workshop ist Aufräumen Pflicht: Entscheidungen, offene Punkte und näc
 ### Grenzen
 
 - Ohne Moderation wird das Board schnell unübersichtlich.
-- Sehr große Boards können kognitiv und technisch traege werden.
+- Sehr große Boards können kognitiv und technisch träge werden.
 - Entscheidungen müssen nach dem Workshop in operative Tools überführt werden.
 
 ## Workflow-Fit

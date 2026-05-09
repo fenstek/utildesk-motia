@@ -37,7 +37,7 @@ Besser ist ein kleiner Markenstandard: zwei Schriften, ein Untertitelstil, klare
 - Videoschnitt, Trimmen, Teilen, Zusammenfuegen und Formatwechsel.
 - Text, Sticker, Musik, Voice-over und einfache Effekte.
 - Foto- und Collage-Funktionen für Social Posts.
-- Export in gaengige Social-Media-Formate.
+- Export in gängige Social-Media-Formate.
 - Mobile Bedienung ohne Desktop-Setup.
 
 ## Vorteile und Grenzen

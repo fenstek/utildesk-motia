@@ -5,6 +5,7 @@ _Last updated: 2026-05-09_
 
 ### Done
 - Normalized visible German ASCII transliteration leftovers across the tool and Ratgeber content corpus, especially `fuer`, `ueber`, `Qualitaet`, `Pruefung`, `Moeglichkeit`, `tatsaechlich`, `Einstiegshuerde`, and compound forms like `Produktivitaetswerkzeug`.
+- Follow-up tail audit fixed rarer forms such as `atmosphaerisch`, `anschlussfaehig`, `Loeschfristen`, `Trainingslaeufe`, `Privatsphaere`, `Woerterbuch`, and `moegen`; remaining suspicious scan hits are the proper name `BigBlueButton`.
 - Scope was limited to German `content/tools` and `content/ratgeber` Markdown; URL, slug, source, image, and inline-code segments were intentionally skipped.
 - The first attempted inline PowerShell Unicode write was discarded before build; the applied pass used ASCII-only placeholder decoding to avoid `?` mojibake.
 

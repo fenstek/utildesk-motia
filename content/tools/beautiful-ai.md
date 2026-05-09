@@ -67,7 +67,7 @@ Beautiful.ai hilft, Präsentationen schneller sauber aussehen zu lassen, weil La
 
 ## Redaktionelle Einschätzung
 
-Beautiful.ai loest vor allem das Layoutproblem, nicht das Denkproblem. Wer zuerst die Story klärt, bekommt mit dem Tool deutlich schneller ein professionell wirkendes Ergebnis.
+Beautiful.ai löst vor allem das Layoutproblem, nicht das Denkproblem. Wer zuerst die Story klärt, bekommt mit dem Tool deutlich schneller ein professionell wirkendes Ergebnis.
 
 ## FAQ
 

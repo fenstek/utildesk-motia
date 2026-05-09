@@ -30,7 +30,7 @@ Geeignet ist Replika für Menschen, die neugierig auf KI-Begleiter sind, Journal
 
 ## Was im Alltag wirklich zählt
 
-Im Alltag kann Replika wohltuend wirken, weil es geduldig reagiert und nicht bewertet. Gleichzeitig ist diese Verfügbarkeit kuenstlich; sie sollte nicht mit echter Verlässlichkeit verwechselt werden.
+Im Alltag kann Replika wohltuend wirken, weil es geduldig reagiert und nicht bewertet. Gleichzeitig ist diese Verfügbarkeit künstlich; sie sollte nicht mit echter Verlässlichkeit verwechselt werden.
 
 Sinnvoll ist ein bewusster Rahmen: Welche Themen bespreche ich mit der KI, welche mit Menschen, und wo ziehe ich die Grenze? Wer diese Grenze kennt, nutzt Replika reflektierter.
 
@@ -46,7 +46,7 @@ Sinnvoll ist ein bewusster Rahmen: Welche Themen bespreche ich mit der KI, welch
 
 ### Vorteile
 
-- Niedrigschwelliger Einstieg in KI-Dialoge mit persoenlichem Charakter.
+- Niedrigschwelliger Einstieg in KI-Dialoge mit persönlichem Charakter.
 - Kann beim Reflektieren oder Formulieren von Gedanken helfen.
 - Immer verfügbar und dadurch für kurze Check-ins praktisch.
 
@@ -58,13 +58,13 @@ Sinnvoll ist ein bewusster Rahmen: Welche Themen bespreche ich mit der KI, welch
 
 ## Workflow-Fit
 
-Replika ist weniger ein klassisches Workflow-Tool als ein Reflexionsraum. Wer es produktiv nutzen will, kann feste Grenzen setzen: kurze Check-ins, Journaling-Fragen, Sprachuebung. Für ernste Entscheidungen sollte immer ein menschlicher Gegencheck stattfinden.
+Replika ist weniger ein klassisches Workflow-Tool als ein Reflexionsraum. Wer es produktiv nutzen will, kann feste Grenzen setzen: kurze Check-ins, Journaling-Fragen, Sprachübung. Für ernste Entscheidungen sollte immer ein menschlicher Gegencheck stattfinden.
 
 Wer Replika reflektiert nutzt, kann feste Themenbereiche setzen: leichte Tagesreflexion, Sprachübung oder kreatives Rollenspiel. Für Krisen, medizinische Fragen oder belastende Entscheidungen sollte bewusst ein anderer, menschlicher Kanal vorgesehen sein.
 
 ## Datenschutz & Daten
 
-Nutzer teilen in Companion-Apps oft sehr intime Informationen. Vor intensiver Nutzung sollte man Datenschutz, Speicherung, Export- oder Loeschoptionen und die Verwendung von Chatdaten prüfen.
+Nutzer teilen in Companion-Apps oft sehr intime Informationen. Vor intensiver Nutzung sollte man Datenschutz, Speicherung, Export- oder Löschoptionen und die Verwendung von Chatdaten prüfen.
 
 ## Preise & Kosten
 

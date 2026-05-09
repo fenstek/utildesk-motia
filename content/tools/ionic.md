@@ -78,7 +78,7 @@ Ionic ist als Technologie offen nutzbar, während kommerzielle Services, Enterpr
 
 ## Redaktionelle Einschätzung
 
-Ionic ist ein pragmatischer Weg für Teams, die gute Apps mit Webkompetenz bauen wollen. Es glaenzt bei Business- und Produktivitäts-Apps, braucht aber echte mobile Sorgfalt statt Web-Recycling.
+Ionic ist ein pragmatischer Weg für Teams, die gute Apps mit Webkompetenz bauen wollen. Es glänzt bei Business- und Produktivitäts-Apps, braucht aber echte mobile Sorgfalt statt Web-Recycling.
 
 Ein guter erster Test für Ionic ist deshalb kein Demo-Klick, sondern ein realer Mini-Workflow: Eine bestehende Web-App als mobile App erweitern. Wenn das mit echten Daten, echten Rollen und einem klaren Ergebnis funktioniert, lohnt die nächste Ausbaustufe.
 

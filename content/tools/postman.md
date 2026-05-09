@@ -12,7 +12,7 @@ popularity: 0
 
 Postman ist eine Plattform für API-Entwicklung, Tests, Dokumentation und Zusammenarbeit. Aus dem einfachen REST-Client ist ein umfangreiches Werkzeug geworden, mit dem Teams Schnittstellen entwerfen, prüfen, teilen und automatisiert absichern können.
 
-Der praktische Wert liegt darin, APIs nicht als lose URLs in Chatnachrichten zu behandeln. Collections, Environments, Tests und Dokumentation machen Schnittstellen nachvollziehbar und teamfaehig.
+Der praktische Wert liegt darin, APIs nicht als lose URLs in Chatnachrichten zu behandeln. Collections, Environments, Tests und Dokumentation machen Schnittstellen nachvollziehbar und teamfähig.
 
 ## Für wen ist Postman geeignet?
 

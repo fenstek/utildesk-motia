@@ -10,7 +10,7 @@ popularity: 0
 
 # SpyFu
 
-SpyFu ist ein Wettbewerbsanalyse-Tool für SEO und PPC. Es zeigt, für welche Keywords Wettbewerber sichtbar sind, welche Anzeigen sie schalten koennten und wo Chancen für organische oder bezahlte Suche liegen.
+SpyFu ist ein Wettbewerbsanalyse-Tool für SEO und PPC. Es zeigt, für welche Keywords Wettbewerber sichtbar sind, welche Anzeigen sie schalten könnten und wo Chancen für organische oder bezahlte Suche liegen.
 
 Der Wert liegt in Orientierung, nicht in absoluter Wahrheit. Keyword- und Traffic-Schätzungen sind Modelle. Sie helfen beim Priorisieren, sollten aber immer mit eigenen Daten, Search Console, Ads-Konten und gesundem Menschenverstand abgeglichen werden.
 

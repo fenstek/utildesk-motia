@@ -68,7 +68,7 @@ Hindenburg Journalist ist auf gesprochene Inhalte ausgerichtet und damit näher 
 
 ## Redaktionelle Einschätzung
 
-Hindenburg Journalist ist wertvoll, weil es Sprache ernst nimmt. Wer vor allem Stimmen, Atmosphaere und Erzaehlfluss bearbeiten muss, bekommt ein fokussierteres Werkzeug als in vielen allgemeinen DAWs.
+Hindenburg Journalist ist wertvoll, weil es Sprache ernst nimmt. Wer vor allem Stimmen, Atmosphäre und Erzählfluss bearbeiten muss, bekommt ein fokussierteres Werkzeug als in vielen allgemeinen DAWs.
 
 ## FAQ
 

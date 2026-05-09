@@ -24,7 +24,7 @@ Geeignet ist Resemble AI für Medienproduktion, Gaming, E-Learning, Lokalisierun
 - Charakterstimmen für Spiele, Prototypen oder interaktive Erlebnisse erzeugen.
 - Mehrsprachige Audiofassungen vorbereiten und redaktionell prüfen.
 - Personalisierte Sprachbausteine für Apps oder Customer Experience testen.
-- Bestehende Audio-Workflows mit API-gestuetzter Sprachgenerierung verbinden.
+- Bestehende Audio-Workflows mit API-gestützter Sprachgenerierung verbinden.
 
 ## Was im Alltag wirklich zählt
 
@@ -51,7 +51,7 @@ Für professionelle Teams lohnt sich eine kleine Freigabematrix: Welche Stimme d
 ### Grenzen
 
 - Stimmrechte und Einwilligung sind nicht optional.
-- Emotionale Nuancen können je nach Sprache und Material kuenstlich wirken.
+- Emotionale Nuancen können je nach Sprache und Material künstlich wirken.
 - Falsche Nutzung kann erhebliche Vertrauens- und Reputationsschaeden erzeugen.
 
 ## Workflow-Fit
@@ -62,7 +62,7 @@ Für Markenstimmen sollte zusätzlich dokumentiert werden, wer die Stimme freige
 
 ## Datenschutz & Daten
 
-Stimmaufnahmen können personenbezogene und hochsensible Daten sein. Vor Upload und Training sollten Einwilligung, Zweckbindung, Loeschung und Zugriff geklärt sein. Bei Kundenprojekten gehört diese Frage in den Vertrag, nicht ans Ende der Produktion.
+Stimmaufnahmen können personenbezogene und hochsensible Daten sein. Vor Upload und Training sollten Einwilligung, Zweckbindung, Löschung und Zugriff geklärt sein. Bei Kundenprojekten gehört diese Frage in den Vertrag, nicht ans Ende der Produktion.
 
 ## Preise & Kosten
 

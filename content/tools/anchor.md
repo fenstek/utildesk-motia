@@ -12,7 +12,7 @@ popularity: 0
 
 Anchor, heute im Umfeld von Spotify for Podcasters bekannt, hat Podcast-Vertrieb für viele Creator stark vereinfacht. Die Grundidee bleibt attraktiv: Aufnahme, Hosting, Distribution und einfache Auswertung sollen ohne technische Infrastruktur möglich sein.
 
-Für Podcasts ist das Werkzeug aber nur ein Teil der Arbeit. Entscheidend sind Format, Rhythmus, Audioqualität, Themenfokus und die Frage, ob Episoden auch nach der Veröffentlichung auffindbar und anschlussfaehig bleiben.
+Für Podcasts ist das Werkzeug aber nur ein Teil der Arbeit. Entscheidend sind Format, Rhythmus, Audioqualität, Themenfokus und die Frage, ob Episoden auch nach der Veröffentlichung auffindbar und anschlussfähig bleiben.
 
 ## Für wen ist Anchor geeignet?
 

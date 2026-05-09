@@ -10,7 +10,7 @@ popularity: 0
 
 # Viktor for Media Buyers
 
-Viktor for Media Buyers ist auf Werbekampagnen, Performance-Signale und Slack-nahe Arbeitsablaeufe ausgerichtet. Für Media-Buying-Teams kann das hilfreich sein, wenn Kampagnen nicht nur in Ads-Managern liegen, sondern im Team schnell besprochen und angepasst werden müssen.
+Viktor for Media Buyers ist auf Werbekampagnen, Performance-Signale und Slack-nahe Arbeitsabläufe ausgerichtet. Für Media-Buying-Teams kann das hilfreich sein, wenn Kampagnen nicht nur in Ads-Managern liegen, sondern im Team schnell besprochen und angepasst werden müssen.
 
 Der Nutzen liegt in Reaktionsgeschwindigkeit. Wenn Budgets, Creatives oder KPIs kippen, sollte die Information nicht erst am Ende der Woche in einem Reporting auftauchen. Viktor will solche Signale näher an den Arbeitskanal bringen.
 
