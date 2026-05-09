@@ -20,6 +20,10 @@ Adept ist vor allem für Produkt-, Operations- und Automatisierungsteams interes
 
 Geeignet ist Adept als strategischer Referenzpunkt für Teams, die RPA, agentische Workflows und KI-gestützte Prozessautomatisierung vergleichen. Für den produktiven Einsatz braucht es sehr klare Aufgaben, begrenzte Berechtigungen und menschliche Freigaben. Wer nur Texte schreiben oder einfache Fragen beantworten will, ist mit klassischen Assistenten besser bedient.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adept-editorial.webp" alt="Illustration zu Adept: beaufsichtigter Agent folgt einem sicheren Pfad durch App-Fenster" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Agentische Softwarebedienung bewerten:** Prüfen, welche internen Abläufe theoretisch durch Modelle gesteuert werden könnten.

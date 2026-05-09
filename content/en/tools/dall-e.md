@@ -21,6 +21,10 @@ DALL·E is a AI-based image generator developed by OpenAI. It enables the creati
 
 DALL·E is suitable for designers, artists, marketing professionals, content creators, and anyone who wants to quickly and easily create visual content. It is particularly useful for individuals without extensive graphic design knowledge who need professional and creative images. DALL·E can also be used for inspiration and prototyping in creative processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dall-e-editorial.webp" alt="Illustration for DALL-E: an idea opening a studio of image variants and visual drafts" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Functions
 
 - **Text-to-Image Generation:** Creates images from detailed or simple text descriptions.

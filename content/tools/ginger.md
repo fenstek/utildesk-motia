@@ -20,6 +20,10 @@ Zusätzlich passt Ginger zu Redaktions-, Marketing- und Wissensarbeitsteams, die
 
 Darum sollte der erste Test mit Ginger bewusst klein bleiben: ein Prozess, ein Owner, ein messbarer Vorher-nachher-Vergleich und eine ehrliche Nachbesprechung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ginger-editorial.webp" alt="Illustration zu Ginger: Satzstreifen werden mit Grammatik- und Stilhinweisen überarbeitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einschätzung
 
 Ginger sollte nicht als reine Feature-Sammlung bewertet werden. Entscheidend ist, ob sich Textqualität, Recherche, Struktur und konsistente Veröffentlichung im Alltag klarer, zuverlässiger oder schneller gestalten lassen und ob das Team die Ergebnisse später noch erklären kann.

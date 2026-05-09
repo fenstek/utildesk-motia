@@ -22,6 +22,10 @@ EndNote is strongest for dissertations, reviews, lab publications, and instituti
 
 EndNote is most useful for teams and individuals that treat a reference manager as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/endnote-editorial.webp" alt="Illustration for EndNote: citation cards, PDFs and bibliography trail in a research archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Build literature libraries for theses or research projects

@@ -1,6 +1,16 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-09_
 
+## 2026-05-09 - Tool Card Editorial Illustrations Batch 2
+
+### Done
+- Added one mid-article ChatGPT-generated WebP illustration to 30 additional tool cards, covering homepage pinned tools first and then high-popularity non-illustrated tools.
+- Kept the existing image-only figure pattern: no visible captions, German and English alt text, shared WebP asset per tool.
+- Updated `docs/04_operations/tool_card_illustration_registry.json` so future batches skip these slugs.
+
+### Slugs
+`wispr-flow`, `chatgpt`, `claude`, `midjourney`, `perplexity`, `zapier`, `endnote`, `bolt-new`, `canva`, `figma`, `jovian`, `marian-nmt`, `rytr`, `adept`, `adobe-firefly`, `adobe-photoshop-express`, `alteryx`, `amazon-dynamodb`, `amazon-transcribe`, `capcut`, `clara`, `consensus`, `coreldraw`, `cypress`, `dall-e`, `descript-overdub`, `fountain`, `gemini`, `ginger`, `google-tabellen`.
+
 ## 2026-05-09 - German Visible Umlaut Normalization
 
 ### Done

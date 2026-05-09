@@ -22,6 +22,10 @@ Jovian passt zu Lernenden, die Data Science, Python und Machine Learning praktis
 
 Weniger passend ist Jovian für produktive Datenpipelines, vertrauliche Unternehmensdaten oder fortgeschrittene MLOps-Prozesse. Dort braucht es eigene Infrastruktur, Versionskontrolle, Datenzugriff und Deployment-Standards.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jovian-editorial.webp" alt="Illustration zu Jovian: Data-Science-Notizbuch mit Modellen, Diagrammen und Lernnotizen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Python- und Pandas-Einstieg:** Grundlagen mit echten Notebook-Beispielen üben, statt nur Syntax isoliert zu lernen.

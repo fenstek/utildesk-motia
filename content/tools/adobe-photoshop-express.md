@@ -15,6 +15,10 @@ Adobe Photoshop Express ist die leichte Photoshop-Variante für schnelle Fotover
 
 Geeignet ist Photoshop Express für Creator, kleine Teams, Social-Media-Verantwortliche und Nutzer, die Fotos ohne lange Einarbeitung verbessern möchten. Wer mit Ebenen, Masken, Compositing oder farbverbindlicher Produktion arbeitet, sollte eher zur Desktop-Version von Photoshop oder zu Lightroom greifen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-photoshop-express-editorial.webp" alt="Illustration zu Adobe Photoshop Express: mobiles Fotostudio mit Zuschnitt, Retusche und Farbkorrektur" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Portraits und Produktbilder für Social Media zuschneiden, schärfen und farblich anpassen.

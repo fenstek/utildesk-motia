@@ -23,6 +23,10 @@ Clara passt zu Lernenden, die Erklärungen, Wiederholungen und dialogisches Nach
 
 Als alleinige Quelle ist Clara weniger geeignet. Für Prüfungen, Fachentscheidungen oder komplexe Themen sollten Lehrmaterial, Originalquellen und menschliches Feedback weiterhin die Grundlage bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clara-editorial.webp" alt="Illustration zu Clara: Kalenderblöcke, E-Mails und Besprechungsräume finden einen freien Termin" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Lernfragen klären:** schwierige Begriffe in einfacher Sprache erklären lassen und anschließend nachfragen.

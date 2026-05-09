@@ -29,6 +29,10 @@ Adobe Firefly is suitable for:
 
 The tool offers a user-friendly interface that is accessible to both beginners and experienced designers.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-firefly-editorial.webp" alt="Illustration for Adobe Firefly: luminous creative studio for image ideas and visual variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered Image Generation:** Create images and graphics based on text input (Text-to-Image)

@@ -16,6 +16,10 @@ Amazon DynamoDB ist ein vollständig verwalteter NoSQL-Datenbankservice von Amaz
 
 Amazon DynamoDB eignet sich besonders für Entwickler und Unternehmen, die skalierbare, leistungsfähige und flexible Datenbanklösungen benötigen. Es ist ideal für Anwendungen, die geringe Latenzzeiten und hohe Durchsatzraten erfordern, wie z.B. Web- und Mobile-Apps, Spiele, IoT-Anwendungen oder Echtzeit-Analysen. Auch Unternehmen, die Cloud-native Architekturen bevorzugen und den Betrieb ihrer Datenbanken auslagern möchten, profitieren von DynamoDB.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-dynamodb-editorial.webp" alt="Illustration zu Amazon DynamoDB: verteilte Datenablage mit schnellen, geordneten Zugriffspfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vollständig verwalteter Service**: Keine Serververwaltung, automatische Skalierung und Wartung durch AWS.

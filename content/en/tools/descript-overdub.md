@@ -22,6 +22,10 @@ Instead of editing only a waveform, you work from the transcript. That is especi
 
 Descript fits podcasters, creator teams, marketers, and course producers who edit a lot of spoken material. Premiere or Resolve remain better for classic high-end video; Otter is often simpler for pure meeting transcription.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/descript-overdub-editorial.webp" alt="Illustration for Descript Overdub: voice waves, script pages and microphone under human review" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Fix podcast mistakes and small speech issues faster

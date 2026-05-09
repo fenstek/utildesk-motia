@@ -21,6 +21,10 @@ Bolt.new is especially useful for MVPs, landing pages, learning projects, and te
 
 Bolt.new is most useful for teams and individuals that treat a AI development environment as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bolt-new-editorial.webp" alt="Illustration for Bolt.new: an app prototype taking shape on a bright development workbench" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Start prototypes directly in the browser

@@ -21,6 +21,10 @@ Zapier is a powerful automation platform that allows users to connect different 
 
 Zapier is aimed at a broad audience: from solo entrepreneurs, freelancers, and small to medium-sized businesses to larger organizations that want to automate their workflows. Zapier is especially suitable for people and teams that use multiple online tools and want to connect them without technical effort. Developers who want to implement simple automations quickly also benefit from the user-friendly interface and the wide range of integrations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zapier-editorial.webp" alt="Illustration for Zapier: automation workshop with triggers, cables and organized tasks" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Integration of more than 3,000 apps**: Zapier connects a wide variety of web applications such as Google Workspace, Slack, Trello, Salesforce, and many more.

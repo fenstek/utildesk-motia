@@ -20,6 +20,10 @@ Bolt.new eignet sich für Entwickler, Gründer, Produktmanager und Lernende, die
 
 Für produktive Anwendungen ist Bolt.new eher Startpunkt als Endstation. Der erzeugte Code muss gelesen, getestet, versioniert und in eine kontrollierte Entwicklungsumgebung überführt werden. Wer Architektur, Security, Datenmodell und Deployment ernsthaft planen muss, darf den schnellen Browser-Loop nicht mit Produktionsreife verwechseln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bolt-new-editorial.webp" alt="Illustration zu Bolt.new: App-Prototyp entsteht auf einer hellen Entwicklungswerkbank" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **MVP-Skizzen:** Eine Produktidee in eine erste klickbare Weboberfläche übersetzen.

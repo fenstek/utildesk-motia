@@ -19,6 +19,10 @@ Adobe Photoshop Express is a user-friendly photo editing app designed for quick 
 
 Adobe Photoshop Express is ideal for hobby photographers, social media users, and anyone who wants to quickly improve their photos. It is also suitable for beginners in photo editing, as it offers many automatic features and intuitive interface. For professional designers and photographers who need extensive editing, the app can be a useful addition, but it does not replace the full desktop version of Adobe Photoshop.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-photoshop-express-editorial.webp" alt="Illustration for Adobe Photoshop Express: mobile photo studio with crop, retouching and color adjustment" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Quick Photo Improvement:** Automatic correction of brightness, contrast, color, and sharpness.

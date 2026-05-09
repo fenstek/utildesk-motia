@@ -25,6 +25,10 @@ Ginger also fits editorial, marketing, and knowledge-work teams that need not on
 
 The first test for Ginger should stay deliberately narrow: one process, one owner, a before-and-after comparison, and a short retrospective.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ginger-editorial.webp" alt="Illustration for Ginger: sentence strips revised with grammar and style guidance" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 Ginger should not be assessed as a feature list alone. The real question is whether the work around the work around text quality, research, structure, and consistent publishing becomes clearer, more reliable, or faster in everyday work.

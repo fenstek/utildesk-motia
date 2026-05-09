@@ -23,6 +23,10 @@ It is most useful when users want to ask questions, simplify explanations, organ
 
 Clara fits learners, teachers, parents, students, and teams that want to break knowledge into smaller pieces. For general productivity, coding, or research, ChatGPT, Claude, or Perplexity are often more flexible.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clara-editorial.webp" alt="Illustration for Clara: calendar blocks, emails and meeting rooms finding an open slot" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Break complex topics into simple learning steps

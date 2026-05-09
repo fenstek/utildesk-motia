@@ -26,6 +26,10 @@ Adobe Firefly eignet sich vor allem für:
 
 Das Tool bietet eine benutzerfreundliche Oberfläche, die sowohl für Einsteiger als auch für erfahrene Designer zugänglich ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-firefly-editorial.webp" alt="Illustration zu Adobe Firefly: leuchtendes Kreativatelier für Bildideen und visuelle Varianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Bildgenerierung:** Erstellen von Bildern und Grafiken basierend auf Texteingaben (Text-to-Image)

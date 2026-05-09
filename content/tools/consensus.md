@@ -21,6 +21,10 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 Im Alltag wird Consensus vor allem für Forschende, Studierende, Analysten, Health- und Policy-Teams interessant. Die beste Wirkung entsteht, wenn das Ergebnis nicht bewundert, sondern direkt weiterverarbeitet werden kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/consensus-editorial.webp" alt="Illustration zu Consensus: Studien, Evidenzwaage und Quellenkarten führen zu einer belastbaren Antwort" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Forschungsfragen mit Studienhinweisen beantworten
