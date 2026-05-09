@@ -1,7 +1,7 @@
 ---
 slug: conceptboard
 title: Conceptboard
-category: Produktivitat
+category: Produktivität
 price_model: Freemium
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://conceptboard.com/"

@@ -1,7 +1,7 @@
 ---
 slug: "inklewriter"
 title: "Inklewriter"
-category: "Produktivitat"
+category: "Produktivität"
 price_model: "Freemium"
 tags: [ai, produktivitat, writing]
 official_url: "https://www.inklestudios.com/inklewriter/"
