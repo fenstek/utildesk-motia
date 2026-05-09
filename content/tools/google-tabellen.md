@@ -22,6 +22,10 @@ Google Tabellen ist ideal für Einzelpersonen, Teams und Unternehmen, die eine f
 - Kleine bis mittelgroße Unternehmen, die eine kostengünstige Alternative zu traditionellen Tabellenkalkulationsprogrammen suchen.
 - Nutzer, die von überall und mit verschiedenen Geräten auf ihre Tabellen zugreifen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-tabellen-editorial.webp" alt="Illustration zu Google Tabellen: Tabellenraster, Formelfäden und Diagramme werden zum Planungsboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Kollaboration:** Mehrere Nutzer können gleichzeitig an einer Tabelle arbeiten und Änderungen live sehen.

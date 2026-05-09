@@ -24,6 +24,10 @@ Rytr fits small teams, solo marketing, shops, and content experiments with clear
 
 Rytr is most useful for teams and individuals that treat a AI writing tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rytr-editorial.webp" alt="Illustration for Rytr: writing studio with tone cards, drafts and marketing copy" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Generate variants for ads, emails, or product text

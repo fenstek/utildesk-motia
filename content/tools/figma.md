@@ -21,6 +21,10 @@ Figma ist besonders geeignet für Produktdesigner, UX-Teams, Frontend-Entwickler
 
 Für Einzelpersonen ist Figma ein starkes UI- und Prototyping-Werkzeug. Für Teams wird es wichtig, sobald mehrere Personen an denselben Flows, Komponenten oder Markenmustern arbeiten. Weniger passend ist Figma für finale Bildretusche, komplexe Illustrationen oder Druckproduktion; dort sind spezialisierte Grafik- und Bildwerkzeuge stärker.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/figma-editorial.webp" alt="Illustration zu Figma: kollaborative Designfläche aus Komponenten, Cursorn und Übergabekarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Wireframes und UI-Flows:** Nutzerwege, Screens, Zustände und Varianten sichtbar machen, bevor Entwicklung startet.

@@ -21,6 +21,10 @@ Adept is most relevant for teams tracking where agentic automation in business s
 
 Adept is most useful for teams and individuals that treat a AI agent platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adept-editorial.webp" alt="Illustration for Adept: supervised agent following a safe path through app windows" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Evaluate agentic control of software interfaces

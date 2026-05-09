@@ -23,6 +23,10 @@ Figma fits product design, UX, marketing websites, design systems, and teams whe
 
 Figma is most useful for teams and individuals that treat a collaborative design platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/figma-editorial.webp" alt="Illustration for Figma: collaborative design canvas made of components, cursors and handoff cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Create UI flows and wireframes

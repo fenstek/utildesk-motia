@@ -24,6 +24,10 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 For researchers, students, analysts, health teams, and policy teams, Consensus becomes useful when the result is not just impressive, but can be moved directly into the next practical step.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/consensus-editorial.webp" alt="Illustration for Consensus: studies, evidence scale and source cards leading to a reliable answer" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - answer research questions with study pointers

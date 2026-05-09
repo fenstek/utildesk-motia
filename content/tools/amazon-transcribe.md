@@ -24,6 +24,10 @@ Amazon Transcribe richtet sich an Unternehmen, Entwickler und Organisationen, di
 
 Die Skalierbarkeit des Dienstes macht ihn sowohl für kleine Projekte als auch für umfangreiche Enterprise-Anwendungen geeignet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-transcribe-editorial.webp" alt="Illustration zu Amazon Transcribe: Interviewwellen werden zu geordneten Transkriptseiten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung (ASR):** Umwandlung von Audio in geschriebenen Text mit hoher Genauigkeit.

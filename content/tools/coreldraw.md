@@ -22,6 +22,10 @@ CorelDRAW passt zu Grafikern, Druckereien, Signage-Betrieben, Werbetechnikern un
 
 Für reine UI- oder Webdesign-Prozesse sind Figma und andere Produktdesign-Tools näher am Workflow. CorelDRAW lohnt sich, wenn robuste Vektorarbeit, Seitenlayout und Ausgabeformate in einer eingespielten Umgebung gebraucht werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coreldraw-editorial.webp" alt="Illustration zu CorelDRAW: Vektorkurven, Lineale und Verpackungsskizzen auf einem Zeichentisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Print- und Werbetechnik:** Flyer, Schilder, Fahrzeugbeschriftung, Aufkleber und Produktionsgrafiken vorbereiten.

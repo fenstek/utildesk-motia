@@ -29,6 +29,10 @@ ChatGPT passt besonders gut für:
 
 Weniger passend ist ChatGPT als alleinige Faktenquelle für rechtliche, medizinische, finanzielle oder sicherheitskritische Entscheidungen. Dort kann es vorbereiten, erklären und Fragen ordnen, ersetzt aber keine belastbare Prüfung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatgpt-editorial.webp" alt="Illustration zu ChatGPT: Fragen und Ideen verbinden sich zu einer hilfreichen Gesprächskonstellation" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Schreiben und Überarbeiten:** Rohtext in klare E-Mails, Landingpage-Texte, Präsentationsnotizen oder Dokumentationen verwandeln.

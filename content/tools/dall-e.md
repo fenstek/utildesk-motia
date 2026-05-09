@@ -17,6 +17,10 @@ DALL·E ist ein KI-Bildgenerator von OpenAI für Text-zu-Bild-Ideen, visuelle Va
 
 DALL·E passt zu Designern, Marketingteams, Redaktionen, Produktteams und Creators, die Bildideen schnell sichtbar machen möchten. Für markenkritische Kampagnen, Produktabbildungen oder rechtlich sensible Motive braucht es menschliche Auswahl und Kontrolle.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dall-e-editorial.webp" alt="Illustration zu DALL-E: eine Idee öffnet ein Atelier aus Bildvarianten und visuellen Entwürfen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Bildideen aus Textbriefings erzeugen und vergleichen.

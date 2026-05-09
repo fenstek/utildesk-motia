@@ -25,6 +25,10 @@ With assistants, the demo prompt matters less than whether answers, sources, app
 
 Gemini should not be judged by feature count alone. For Google Workspace users, knowledge workers, teams, and individuals with broad AI tasks, the more important question is whether it fits existing routines and reduces rework.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gemini-editorial.webp" alt="Illustration for Gemini: two assistant constellations organizing context, images and notes" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - prepare text and idea variants

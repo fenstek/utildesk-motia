@@ -22,6 +22,10 @@ Canva ist besonders geeignet für Teams, die regelmäßig sichtbare Inhalte brau
 
 Stark ist Canva vor allem dann, wenn Vorlagen, Brand Kit und Freigaben sauber eingerichtet sind. Dann können auch Nicht-Designer wiederkehrende Formate produzieren, ohne jedes Mal bei null anzufangen. Weniger geeignet ist Canva für sehr präzise Layoutsysteme, komplexe Illustrationen, druckkritische Spezialproduktionen oder Markenarbeit, die bewusst unverwechselbar und nicht vorlagenhaft wirken soll.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/canva-editorial.webp" alt="Illustration zu Canva: Vorlagen, Farbkarten und Social-Media-Formate auf einem Designtisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Social-Media-Produktion:** Posts, Stories, Reels-Cover, Kampagnenvarianten und saisonale Motive aus Vorlagen erstellen.
