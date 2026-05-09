@@ -22,6 +22,10 @@ Marian NMT passt zu NLP-Teams, Forschenden und Organisationen, die maschinelle �
 
 Für normale Nutzer, die schnell einen Text übersetzen wollen, ist Marian NMT zu technisch. Dort sind DeepL, Google Translate oder integrierte Übersetzungsdienste deutlich einfacher.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marian-nmt-editorial.webp" alt="Illustration zu Marian NMT: Sätze reisen durch Übersetzungsschienen zwischen Sprachstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **MT-Forschung:** Übersetzungsmodelle trainieren, vergleichen und reproduzierbar evaluieren.

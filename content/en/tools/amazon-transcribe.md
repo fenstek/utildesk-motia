@@ -23,6 +23,10 @@ Amazon Transcribe fits organizations that process repeated audio or video materi
 
 It is less compelling for one-off personal transcription if a simpler consumer app is enough. Its strongest use case is a repeatable workflow where files, permissions, review, storage and downstream analysis are already defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-transcribe-editorial.webp" alt="Illustration for Amazon Transcribe: interview waveforms becoming organized transcript pages" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automatic speech recognition:** Converts spoken language into written text for recorded or streaming audio.

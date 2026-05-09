@@ -22,6 +22,10 @@ Descript Overdub ist für Podcaster, Video-Teams, Kursproduzenten und Marketinga
 
 Nicht geeignet ist Overdub für verdeckte Imitation, fremde Stimmen ohne Zustimmung oder Inhalte ohne Review. Synthetische Sprache braucht klare Rechte, Freigaben und Qualitätskontrolle.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/descript-overdub-editorial.webp" alt="Illustration zu Descript Overdub: Sprachwellen, Skriptseiten und Mikrofon unter menschlicher Kontrolle" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Podcast-Korrekturen:** kleine Versprecher oder Satzänderungen nachträglich einfügen.

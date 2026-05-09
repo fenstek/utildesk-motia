@@ -22,6 +22,10 @@ Bei Assistenten zählt weniger die Demo-Frage als die Frage, ob Antworten, Quell
 
 Bei Gemini zählt nicht nur der Funktionsumfang. Wichtiger ist, ob das Tool in vorhandene Routinen passt und dort Nacharbeit reduziert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gemini-editorial.webp" alt="Illustration zu Gemini: zwei Assistenz-Konstellationen ordnen Kontext, Bilder und Notizen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Texte und Ideenvarianten vorbereiten

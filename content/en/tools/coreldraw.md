@@ -22,6 +22,10 @@ It is especially relevant where design and production sit close together: advert
 
 CorelDRAW fits designers, print providers, signage teams, and small businesses that need vector and layout work in one package. Teams deeply invested in Adobe often stay with Illustrator; open-source users should look at Inkscape.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coreldraw-editorial.webp" alt="Illustration for CorelDRAW: vector curves, rulers and packaging sketches on a drafting table" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Create logos, posters, flyers, and print-ready files

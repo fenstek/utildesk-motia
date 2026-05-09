@@ -26,6 +26,10 @@ Google Sheets is ideal for individuals, teams, and companies looking for a flexi
 - Small to medium-sized businesses looking for a cost-effective alternative to traditional spreadsheet programs.
 - Users who want to access their spreadsheets from anywhere and on different devices.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-tabellen-editorial.webp" alt="Illustration for Google Sheets: spreadsheet grid, formula threads and charts becoming a planning board" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Real-time collaboration:** Multiple users can work on a spreadsheet at the same time and see changes live.

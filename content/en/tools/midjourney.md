@@ -23,6 +23,10 @@ It is especially strong when a visual direction needs to be explored quickly: ca
 
 Midjourney fits designers, creators, marketing teams, and product people who want to develop visual ideas. Controlled brand production still needs human art direction, post-processing, and rights review.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/midjourney-editorial.webp" alt="Illustration for Midjourney: mood boards, colors and image ideas in a surreal creative studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Visualize moodboards and campaign ideas

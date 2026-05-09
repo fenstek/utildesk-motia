@@ -34,6 +34,10 @@ ChatGPT is especially useful for:
 
 ChatGPT is less suitable as the sole source for legal, medical, financial, or security-critical decisions. It can prepare, explain, and organize questions, but it does not replace a reliable expert review.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatgpt-editorial.webp" alt="Illustration for ChatGPT: questions and ideas connecting into a helpful conversation constellation" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - **Writing and editing:** Turn rough notes into clear emails, landing page copy, presentation notes, or documentation.

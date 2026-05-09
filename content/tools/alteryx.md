@@ -20,6 +20,10 @@ Alteryx ist besonders geeignet für Analysten, BI-Teams, Finance, Operations und
 
 Für reine Ad-hoc-Auswertungen kann Alteryx zu schwer wirken. Sein Wert entsteht, wenn Datenprozesse wiederholbar, dokumentierbar und über Teams hinweg verständlich werden sollen. Dann können Fachbereiche eigene Logik modellieren, ohne jede Transformation als Codepipeline beim Data-Engineering-Team zu bestellen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/alteryx-editorial.webp" alt="Illustration zu Alteryx: Datenströme werden in einer analytischen Werkstatt bereinigt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Datenvorbereitung:** CSV, Excel, Datenbanken und Cloudquellen verbinden, bereinigen, normalisieren und für Reporting vorbereiten.

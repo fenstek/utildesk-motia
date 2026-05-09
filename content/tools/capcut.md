@@ -22,6 +22,10 @@ CapCut richtet sich an Nutzer, die unkompliziert und effizient Videos bearbeiten
 - Kleine Unternehmen oder Marketer, die schnell ansprechende Werbeclips erstellen wollen.
 - Fortgeschrittene Anwender, die auf AI-basierte Funktionen und kreative Bearbeitungsmöglichkeiten Wert legen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/capcut-editorial.webp" alt="Illustration zu CapCut: vertikale Videos, Schnittspuren und Social-Clips auf einem Kreativtisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Einfacher Video-Editor:** Trimmen, schneiden, zusammenfügen von Clips mit intuitiver Bedienung.

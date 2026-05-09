@@ -23,6 +23,10 @@ Midjourney passt zu Kreativen, Art Directors, Marken-Teams, Game- und Produktkon
 
 Für rechtlich saubere Endmotive, Produktfotos, CI-genaue Markenassets oder editierbare Designsysteme reicht Midjourney allein nicht. Dort braucht es Auswahl, Nachbearbeitung, Rechteprüfung und oft zusätzliche Werkzeuge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/midjourney-editorial.webp" alt="Illustration zu Midjourney: Moodboards, Farben und Bildideen in einem surrealen Kreativatelier" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Moodboards und Stilfindung:** visuelle Richtungen schnell erkunden und vergleichen.

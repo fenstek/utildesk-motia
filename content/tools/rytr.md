@@ -22,6 +22,10 @@ Rytr eignet sich für kleine Marketingteams, Solo-Selbstständige, Shopbetreiber
 
 Der Nutzen liegt in Rohmaterial und Varianten, nicht in finaler Markenkommunikation. Rytr kann Schreibblockaden lösen und Tempo bringen, aber Tonalität, Fakten, Differenzierung und rechtliche Aussagen müssen redaktionell geprüft werden. Für lange Fachartikel, Thought Leadership oder strategische Kampagnen braucht es deutlich mehr menschliche Arbeit.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rytr-editorial.webp" alt="Illustration zu Rytr: Schreibstudio mit Tonkarten, Entwürfen und Marketingtexten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Anzeigenvarianten:** Headlines, Hooks und kurze Benefit-Texte für A/B-Tests vorbereiten.

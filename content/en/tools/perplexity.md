@@ -22,6 +22,10 @@ Good for research, news orientation, product comparisons, and fast fact checks w
 
 Perplexity is most useful for teams and individuals that treat a AI search engine as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/perplexity-editorial.webp" alt="Illustration for Perplexity: research compass between source cards, books and questions" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Get into a new topic quickly

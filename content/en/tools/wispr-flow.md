@@ -30,6 +30,10 @@ Wispr Flow suits users who write regularly but do not want to type every detail 
 
 The tool is especially strong when ideas need to move quickly from your head into text: email drafts, chat replies, meeting notes, product ideas, short documentation, social posts, or research notes. It can also be helpful from an ergonomic perspective, because less keyboard work is required.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wispr-flow-editorial.webp" alt="Illustration for Wispr Flow: spoken thoughts becoming organized notes on a writing desk" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **AI dictation in existing apps:** Wispr Flow is designed for fast voice-first writing and is meant to work beyond a standalone editor app.

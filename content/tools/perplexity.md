@@ -22,6 +22,10 @@ Perplexity eignet sich für Nutzer, die nicht einfach einen Chatbot befragen, so
 
 Der wichtigste Unterschied zu klassischen KI-Assistenten: Perplexity ist stärker rechercheorientiert. Es hilft beim Finden, Eingrenzen und Vergleichen von Informationen. Für finale Aussagen, Zitate, Kaufentscheidungen oder fachliche Bewertungen müssen die verlinkten Quellen trotzdem geöffnet und geprüft werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/perplexity-editorial.webp" alt="Illustration zu Perplexity: Recherchekompass zwischen Quellenkarten, Büchern und Fragen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Schneller Themeneinstieg:** Einen Überblick über neue Technologien, Anbieter, Begriffe oder Debatten gewinnen, bevor tiefer recherchiert wird.

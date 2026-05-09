@@ -22,6 +22,10 @@ That makes Marian different from end-user translators like DeepL or Google Trans
 
 Marian fits research, NLP teams, language services, and companies with specific requirements for translation models. For individual text translation, a finished translation service is more practical.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marian-nmt-editorial.webp" alt="Illustration for Marian NMT: sentences moving through translation rails between language stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Train or evaluate custom NMT models
