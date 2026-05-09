@@ -40,7 +40,6 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/ourdream-ai-editorial.webp" alt="Illustration zu Ourdream AI: Traumatelier fuer kreative Bild- und Charakterideen" loading="lazy" decoding="async" />
-  <figcaption>Das naechtliche Atelier betont den kreativen Teil: Bildideen, Figuren und Stimmungen entstehen aus visuellen Fragmenten.</figcaption>
 </figure>
 
 ## Hauptfunktionen

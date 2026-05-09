@@ -34,7 +34,6 @@ Workday HCM should not be evaluated in isolation. What matters is its place in t
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/workday-hcm-editorial.webp" alt="Illustration for Workday HCM: HR processes as a walkable organization landscape" loading="lazy" decoding="async" />
-  <figcaption>The miniature world connects recruiting, HR administration, planning and payroll into one HR process view.</figcaption>
 </figure>
 
 ## Key features

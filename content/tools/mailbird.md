@@ -37,7 +37,6 @@ Mailbird sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, A
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/mailbird-editorial.webp" alt="Illustration zu Mailbird: Mehrere Postfaecher als geordnetes Kommunikationsnest" loading="lazy" decoding="async" />
-  <figcaption>Das Kommunikationsnest zeigt Mailbird als ruhigen Ort fuer mehrere Postfaecher, Termine und Kontakte.</figcaption>
 </figure>
 
 ## Hauptfunktionen

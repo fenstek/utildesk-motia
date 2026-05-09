@@ -42,7 +42,6 @@ DeepInfra should first prove itself in a real development flow from setup throug
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/deepinfra-editorial.webp" alt="Illustration for DeepInfra: AI infrastructure as an underground model and API system" loading="lazy" decoding="async" />
-  <figcaption>The underground technical world frames DeepInfra as a layer for models, API calls, latency and compute.</figcaption>
 </figure>
 
 ## Key Features

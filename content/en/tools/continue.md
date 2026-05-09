@@ -37,7 +37,6 @@ A useful evaluation starts with a real development flow from local testing throu
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/continue-editorial.webp" alt="Illustration for Continue: coding workflow as a branching circuit bonsai" loading="lazy" decoding="async" />
-  <figcaption>The circuit bonsai represents assisted coding: suggestions grow from context, review and the codebase.</figcaption>
 </figure>
 
 ## Key Features

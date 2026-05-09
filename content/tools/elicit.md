@@ -31,7 +31,6 @@ Weniger passend ist Elicit, wenn ein Thema kaum wissenschaftlich publiziert ist,
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/elicit-editorial.webp" alt="Illustration zu Elicit: Forschungsunterlagen werden zu einer Evidenzspur verbunden" loading="lazy" decoding="async" />
-  <figcaption>Lose Paper, Suchfrage und Verbindungen zeigen, wie Elicit Literaturarbeit und Evidenzsuche strukturieren kann.</figcaption>
 </figure>
 
 ## Typische Einsatzszenarien
