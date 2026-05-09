@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [translation, nmt, deep-learning]
 official_url: "https://awslabs.github.io/sockeye/"
-popularity: 15
+popularity: 14
 description: Sockeye ist ein Open-Source-Toolkit für neuronale maschinelle Übersetzung, besonders für Forschung und technische NMT-Experimente.
 ---
 # Sockeye

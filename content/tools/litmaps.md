@@ -5,7 +5,7 @@ category: Schreiben & Content
 price_model: Abonnement
 tags: [research, data, writing]
 official_url: "https://www.litmaps.com/"
-popularity: 42
+popularity: 87
 ---
 
 # Litmaps
