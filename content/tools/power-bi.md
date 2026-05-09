@@ -29,6 +29,11 @@ Power BI ist sinnvoll fuer:
 
 Weniger geeignet ist Power BI, wenn ein Team nur gelegentlich eine kleine Tabelle visualisiert oder keine Person fuer Datenmodell, Berechtigungen und Pflege verantwortlich ist. Fuer einfache Einzelanalysen reicht Excel oft aus. Fuer sehr komplexe Data-Science-Workflows braucht es ergaenzend spezialisierte Datenplattformen, Notebooks oder Machine-Learning-Umgebungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/power-bi-editorial.webp" alt="Illustration zu Power BI: Datenskulpturen, Diagramme und Entscheidungskompass" loading="lazy" decoding="async" />
+  <figcaption>Die Datenskulpturen zeigen Business Intelligence nicht als Tabelle, sondern als Entscheidungsraum.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenintegration:** Power BI verbindet sich mit vielen Quellen, darunter Excel, SharePoint, SQL-Datenbanken, Azure, Web-APIs, SaaS-Dienste und lokale Systeme ueber Gateways.

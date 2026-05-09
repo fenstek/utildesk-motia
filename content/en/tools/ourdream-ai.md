@@ -42,6 +42,11 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Keep the first Ourdream.ai trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Ourdream.ai disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ourdream-ai-editorial.webp" alt="Illustration for Ourdream AI: dream atelier for creative image and character ideas" loading="lazy" decoding="async" />
+  <figcaption>The moonlit atelier emphasizes the creative side: images, characters and moods emerging from visual fragments.</figcaption>
+</figure>
+
 ## Key Features
 
 - **Intelligent chatbot:** Answers questions, carries on conversations, and supports information search.

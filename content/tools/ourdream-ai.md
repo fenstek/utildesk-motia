@@ -38,6 +38,11 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Ourdream.ai nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Ourdream.ai enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ourdream-ai-editorial.webp" alt="Illustration zu Ourdream AI: Traumatelier fuer kreative Bild- und Charakterideen" loading="lazy" decoding="async" />
+  <figcaption>Das naechtliche Atelier betont den kreativen Teil: Bildideen, Figuren und Stimmungen entstehen aus visuellen Fragmenten.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligenter Chatbot:** Beantwortet Fragen, führt Dialoge und unterstützt bei der Informationssuche.

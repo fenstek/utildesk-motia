@@ -36,6 +36,11 @@ Elicit is a good fit for:
 
 It is less suitable when the topic is not well covered by academic literature, when source quality is more important than speed, or when the user needs a final validated conclusion without doing the review work. Elicit can organize evidence, but responsibility for interpretation stays with the researcher.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elicit-editorial.webp" alt="Illustration for Elicit: research papers connected into an evidence trail" loading="lazy" decoding="async" />
+  <figcaption>Loose papers, a research question and connecting threads show how Elicit can structure evidence work.</figcaption>
+</figure>
+
 ## Typical use cases
 
 - Turn a research question into a searchable evidence workflow.

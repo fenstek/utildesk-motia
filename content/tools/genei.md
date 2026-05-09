@@ -31,6 +31,11 @@ Geeignet ist Genei fuer:
 
 Weniger geeignet ist Genei, wenn exakte Zitate, juristische Bewertung, medizinische Evidenz oder methodische Details ohne menschliche Pruefung uebernommen werden sollen. Bei solchen Aufgaben kann Genei vorbereiten, aber nicht abschliessen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genei-editorial.webp" alt="Illustration zu Genei: Lange Dokumente werden zu kompakten Notizen verdichtet" loading="lazy" decoding="async" />
+  <figcaption>Die Papiermaschine steht fuer den praktischen Nutzen: lange Quellen schneller auf Kernaussagen reduzieren.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-Zusammenfassung:** Lange Texte koennen in kuerzere Ueberblicke ueberfuehrt werden, damit Nutzer:innen schneller erkennen, ob eine Quelle relevant ist.

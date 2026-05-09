@@ -33,6 +33,11 @@ Good use cases include:
 
 Studio Sound is less suitable for music production, creative sound design, detailed mixing, or badly damaged audio. If a recording is clipped, distorted, missing words, or barely intelligible, AI cannot reliably reconstruct information that was never captured cleanly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/descript-studio-sound-editorial.webp" alt="Illustration for Descript Studio Sound: rough recording becoming studio-quality voice" loading="lazy" decoding="async" />
+  <figcaption>The split audio scene contrasts a noisy recording with a cleaner studio-like voice result.</figcaption>
+</figure>
+
 ## Key Features
 
 - **AI speech enhancement:** Studio Sound analyzes speech recordings and makes the voice sound more present, focused, and polished.

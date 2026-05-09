@@ -27,6 +27,11 @@ YouCanBook.me gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als P
 - **Gute Voraussetzung:** für Beratung, Recruiting, Sales und Supporttermine.
 - **Aufpassen bei:** bei unklaren Meetingtypen zu viele Slots oder falsche Erwartungen öffnet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youcanbook-me-editorial.webp" alt="Illustration zu YouCanBook.me: Buchbare Zeitfenster als Weg zu einem Terminraum" loading="lazy" decoding="async" />
+  <figcaption>Kalenderfenster, Lichtweg und Terminraum uebersetzen Terminbuchung in eine einfache visuelle Entscheidung.</figcaption>
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Terminbuchung:** Synchronisation mit Kalendern wie Google Calendar oder Microsoft Outlook, um verfügbare Zeiten in Echtzeit anzuzeigen.

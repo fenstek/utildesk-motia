@@ -41,6 +41,11 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for StoryStream.
 - **Common pitfall:** StoryStream disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/storystream-editorial.webp" alt="Illustration for StoryStream: content stream of images, campaign moments and approvals" loading="lazy" decoding="async" />
+  <figcaption>The image stream shows that StoryStream is less about single graphics and more about curated content flow.</figcaption>
+</figure>
+
 ## Key features
 
 - **AI-powered content creation:** Automatic generation of texts tailored to target audiences and topics  

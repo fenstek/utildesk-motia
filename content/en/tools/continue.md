@@ -35,6 +35,11 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Continue.
 - **Common pitfall:** Continue disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/continue-editorial.webp" alt="Illustration for Continue: coding workflow as a branching circuit bonsai" loading="lazy" decoding="async" />
+  <figcaption>The circuit bonsai represents assisted coding: suggestions grow from context, review and the codebase.</figcaption>
+</figure>
+
 ## Key Features
 
 - **Automated Code Completion:** Continue suggests suitable code snippets and functions in real-time.

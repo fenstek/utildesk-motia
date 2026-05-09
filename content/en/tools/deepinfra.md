@@ -40,6 +40,11 @@ DeepInfra should first prove itself in a real development flow from setup throug
 - **Good start for DeepInfra:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with DeepInfra:** The rollout turns into extra coordination when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepinfra-editorial.webp" alt="Illustration for DeepInfra: AI infrastructure as an underground model and API system" loading="lazy" decoding="async" />
+  <figcaption>The underground technical world frames DeepInfra as a layer for models, API calls, latency and compute.</figcaption>
+</figure>
+
 ## Key Features
 
 - **Scalable computing power:** Support for GPU and CPU resources for different AI applications.
