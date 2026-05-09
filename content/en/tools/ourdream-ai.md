@@ -44,7 +44,6 @@ A useful evaluation starts with a real service case with intake, prioritization,
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/ourdream-ai-editorial.webp" alt="Illustration for Ourdream AI: dream atelier for creative image and character ideas" loading="lazy" decoding="async" />
-  <figcaption>The moonlit atelier emphasizes the creative side: images, characters and moods emerging from visual fragments.</figcaption>
 </figure>
 
 ## Key Features

@@ -38,7 +38,6 @@ It is less suitable when the topic is not well covered by academic literature, w
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/elicit-editorial.webp" alt="Illustration for Elicit: research papers connected into an evidence trail" loading="lazy" decoding="async" />
-  <figcaption>Loose papers, a research question and connecting threads show how Elicit can structure evidence work.</figcaption>
 </figure>
 
 ## Typical use cases

@@ -31,7 +31,6 @@ Weniger passend ist Snappa, wenn ein Unternehmen sehr individuelle Layoutsysteme
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/snappa-editorial.webp" alt="Illustration zu Snappa: Marketinggrafiken, Smartphone-Format und Farbpapiere auf einem Arbeitstisch" loading="lazy" decoding="async" />
-  <figcaption>Leere Postformate und Kampagnenmaterial zeigen Snappa als Werkzeug fuer schnelle Social- und Marketinggrafiken.</figcaption>
 </figure>
 
 ## Hauptfunktionen

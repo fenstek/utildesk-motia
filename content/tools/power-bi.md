@@ -31,7 +31,6 @@ Weniger geeignet ist Power BI, wenn ein Team nur gelegentlich eine kleine Tabell
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/power-bi-editorial.webp" alt="Illustration zu Power BI: Datenskulpturen, Diagramme und Entscheidungskompass" loading="lazy" decoding="async" />
-  <figcaption>Die Datenskulpturen zeigen Business Intelligence nicht als Tabelle, sondern als Entscheidungsraum.</figcaption>
 </figure>
 
 ## Hauptfunktionen

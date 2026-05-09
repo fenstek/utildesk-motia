@@ -31,7 +31,6 @@ Weniger geeignet ist Pons als alleinige Loesung fuer grosse professionelle Lokal
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/pons-editorial.webp" alt="Illustration zu PONS: Sprachbruecke zwischen Woerterbuchseiten und Sprechblasen" loading="lazy" decoding="async" />
-  <figcaption>Die Bruecke aus Buchseiten macht PONS als Hilfe beim Wechsel zwischen Sprachen und Bedeutungen greifbar.</figcaption>
 </figure>
 
 ## Hauptfunktionen

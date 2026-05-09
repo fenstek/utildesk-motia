@@ -36,7 +36,6 @@ Research Rabbit is less useful when the exact paper is already known or when the
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/research-rabbit-editorial.webp" alt="Illustration for Research Rabbit: paper trails and citation roots in a research landscape" loading="lazy" decoding="async" />
-  <figcaption>The paper trails capture the discovery aspect: Research Rabbit guides users through related work and citation paths.</figcaption>
 </figure>
 
 ## Typical use cases

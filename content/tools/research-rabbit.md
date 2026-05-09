@@ -31,7 +31,6 @@ Weniger geeignet ist Research Rabbit, wenn ein konkretes Paper bereits bekannt i
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/research-rabbit-editorial.webp" alt="Illustration zu Research Rabbit: Papierpfade und Zitationswurzeln in einer Forschungslandschaft" loading="lazy" decoding="async" />
-  <figcaption>Die Papierpfade greifen den Entdeckungscharakter auf: Research Rabbit fuehrt durch verwandte Arbeiten und Zitationsspuren.</figcaption>
 </figure>
 
 ## Typische Einsatzszenarien
