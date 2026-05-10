@@ -32,6 +32,12 @@ Im Alltag wird Postman schnell zum gemeinsamen API-Gedächtnis. Das funktioniert
 
 Gute Teams schreiben kleine Tests direkt an wichtige Requests: Statuscode, Pflichtfelder, Fehlermeldungen. Das ist keine vollständige QA, aber ein erstaunlich wirksames Fruehwarnsystem.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/postman-editorial.webp" alt="Illustration zu Postman: API-Anfragen fließen durch ein sauberes Testlabor mit verbundenen Leitungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - API-Requests, Collections, Environments und Variablen.

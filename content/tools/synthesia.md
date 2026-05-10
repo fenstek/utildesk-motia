@@ -23,6 +23,12 @@ Synthesia richtet sich an Unternehmen, Marketingteams, Bildungseinrichtungen und
 - Content Creator, die ohne großen Aufwand qualitativ hochwertige Videos produzieren möchten  
 - Kleine und mittlere Unternehmen, die ihre Online-Präsenz mit Videos ausbauen wollen  
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/synthesia-editorial.webp" alt="Illustration zu Synthesia: Videostudio mit abstrakten Präsentationsszenen und Produktionsablauf" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Video-Erstellung:** Wandelt eingegebenen Text in ein Video mit einem virtuellen Avatar um.  

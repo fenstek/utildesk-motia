@@ -20,6 +20,12 @@ Inkscape muss in einem echten Beispiel zeigen, ob Open-Source-Vektorgrafik für 
 
 Für Designer, Maker, Bildung, Open-Source-Projekte und Teams mit einfachen Vektoranforderungen ist Inkscape dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inkscape-editorial.webp" alt="Illustration zu Inkscape: offene Vektorkurven entstehen in einer strukturierten Linolschnitt-Werkstatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - SVGs, Icons und Logos bearbeiten

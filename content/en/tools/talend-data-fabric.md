@@ -23,6 +23,10 @@ Talend becomes especially interesting where Excel exports, individual scripts, a
 
 Talend Data Fabric is suitable for data engineering teams, BI departments, larger operations teams, and companies that want to professionalize their data landscape. For very small teams, the platform can feel too large; its value shows when data flows must be operated, documented, and controlled over the long term.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/talend-data-fabric-editorial.webp" alt="Illustration for Talend Data Fabric: data streams woven into a reliable fabric" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Move data from CRM, ERP, SaaS tools, and databases into a warehouse or lakehouse.

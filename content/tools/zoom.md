@@ -30,6 +30,10 @@ Als Prüfstück für Zoom eignet sich einem echten Kontaktfall mit Eingang, Prio
 - **Guter Start für Zoom:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Zoom:** Kritisch wird es, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoom-editorial.webp" alt="Illustration zu Zoom: verteilte Meetingfenster leuchten wie Räume in einer gemeinsamen Nachtlandschaft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Videokonferenzen in HD-Qualität** mit bis zu mehreren hundert Teilnehmern, je nach Plan

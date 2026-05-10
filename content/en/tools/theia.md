@@ -22,6 +22,12 @@ Suitable for platform teams, tool vendors, and organizations building custom IDE
 
 Theia is most useful for teams and individuals that treat a open-source IDE framework as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/theia-editorial.webp" alt="Illustration for Theia: development environment as a modular building with terminal and code rooms" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Build cloud or desktop IDEs on a custom base

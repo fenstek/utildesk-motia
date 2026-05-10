@@ -30,6 +30,10 @@ Als Prüfstück für Airtable eignet sich einem begrenzten Datensatz mit klarer 
 - **Guter Start für Airtable:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Airtable:** Kritisch wird es, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/airtable-editorial.webp" alt="Illustration zu Airtable: Tabellenfelder und Datenansichten als gepflegter Datengarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Anpassbare Tabellen und Datenbanken:** Erstellen und verwalten Sie Datenbanken mit verschiedenen Feldtypen (Text, Datum, Checkbox, Anhänge usw.).

@@ -23,6 +23,12 @@ OpenHands is interesting for engineering teams that want to test agent runs with
 
 OpenHands is most useful for teams and individuals that treat a AI coding agent as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openhands-editorial.webp" alt="Illustration for OpenHands: small coding agents passing tasks through a supervised workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Break repository tasks into smaller agent runs

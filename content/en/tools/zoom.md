@@ -34,6 +34,10 @@ A good test case for Zoom is a real contact case with intake, prioritization, re
 - **Good start for Zoom:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Zoom:** The rollout turns into extra coordination when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zoom-editorial.webp" alt="Illustration for Zoom: distributed meeting windows glowing like rooms in a shared night landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **HD video conferencing** with up to several hundred participants, depending on the plan

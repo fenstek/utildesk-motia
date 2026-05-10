@@ -24,6 +24,10 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 In practice, Copilot is aimed mainly at agencies, consultancies, accounting firms, and service businesses with recurring client communication. It works best when ownership, review, and output format are clear before the tool enters the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/copilot-editorial.webp" alt="Illustration for Copilot: client portal with files, forms and service handoffs on a calm workspace" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - build client portals instead of scattered email chains

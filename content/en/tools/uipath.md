@@ -22,6 +22,12 @@ UiPath fits larger organizations with many recurring, rule-based process chains.
 
 UiPath is most useful for teams and individuals that treat a enterprise RPA platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/uipath-editorial.webp" alt="Illustration for UiPath: office tasks moving through robotic arms as an automated paper line" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Automate back-office processes

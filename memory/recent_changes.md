@@ -177,3 +177,10 @@ _Last updated: 2026-05-09_
 - Added one mid-article WebP illustration to the next 30 highest-popularity non-illustrated tool cards, in both German and English.
 - Slugs: `google-translate`, `grafana`, `grammarly`, `groq`, `hubspot-sales-hub`, `hypic`, `intel-habana-labs`, `interpretml`, `kofax-rpa`, `langai`, `lingvanex`, `looker-studio`, `mallet`, `marvel`, `meaningcloud`, `microsoft-translator`, `mongodb`, `n8n`, `narrato`, `notebooklm`, `papago`, `pimeyes`, `poe`, `prisma`, `redis`, `replit`, `sap-sales-cloud`, `scribens`, `slick-write`, `sockeye`.
 - Recorded the batch in `docs/04_operations/tool_card_illustration_registry.json` so future illustration passes skip these tools.
+
+## 2026-05-10 - Tool illustration batch 4
+
+- Added one mid-article WebP illustration to 30 more tool cards in both German and English.
+- Selection: remaining non-illustrated tools with non-zero DE/EN popularity first, then high-intent catalogue tools without prior artwork.
+- Slugs: `adobe-illustrator`, `10to8`, `adobe-premiere-pro`, `amazon-codewhisperer`, `copilot`, `openhands`, `speechmatics`, `storymapjs`, `talend-data-fabric`, `talon`, `theia`, `uipath`, `whisper`, `writesonic`, `youcam-makeup`, `affinity-designer`, `inkscape`, `adobe-express`, `miro`, `trello-mit-butler`, `airtable`, `tableau`, `semrush`, `postman`, `spacy`, `tensorflow`, `zotero`, `zoom`, `webflow`, `synthesia`.
+- Recorded the batch in `docs/04_operations/tool_card_illustration_registry.json` so future illustration passes skip these tools.

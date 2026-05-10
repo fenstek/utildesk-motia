@@ -22,6 +22,12 @@ Good for media, research, support, compliance, call analysis, and product teams 
 
 Speechmatics is most useful for teams and individuals that treat a speech-to-text platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speechmatics-editorial.webp" alt="Illustration for Speechmatics: multilingual speech waves becoming organized transcript pages" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Transcribe interviews, podcasts, and videos

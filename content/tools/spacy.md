@@ -16,6 +16,12 @@ spaCy ist eine leistungsstarke Open-Source-Bibliothek für die Verarbeitung nat�
 
 spaCy richtet sich vor allem an Entwickler, Data Scientists und Unternehmen, die natürliche Sprache in ihren Anwendungen verarbeiten möchten. Es ist ideal für Projekte, die eine schnelle, skalierbare und produktionsreife NLP-Lösung benötigen. Durch die Integration mit Machine-Learning-Frameworks und die Unterstützung mehrerer Sprachen eignet sich spaCy sowohl für Prototypen als auch für produktive Systeme in Bereichen wie Chatbots, Textklassifikation, Informationsentnahme und mehr.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spacy-editorial.webp" alt="Illustration zu spaCy: Sprachbestandteile verzweigen sich wie ein botanisches Analyseblatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Tokenisierung und Lemmatisierung:** Zerlegung von Text in einzelne Wörter oder Tokens und Bestimmung der Grundform.
