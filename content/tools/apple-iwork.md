@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Für Apple iWork eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Apple iWork enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-iwork-editorial.webp" alt="Illustration zu Apple iWork: Office-Arbeit mit Dokumenten, Tabellen und Folienkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Pages**: Textverarbeitung mit umfangreichen Formatierungsoptionen, Vorlagen für Briefe, Berichte, Flyer und mehr, Unterstützung von Bildern, Tabellen und Diagrammen.

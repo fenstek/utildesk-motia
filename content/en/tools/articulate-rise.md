@@ -31,6 +31,10 @@ Articulate Rise is convincing not because it offers as many options as possible,
 - **Clarify beforehand:** which learning objectives, assessments, and LMS requirements are already defined in advance.
 - **Do not underestimate:** it reaches template limits when didactics become complex.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/articulate-rise-editorial.webp" alt="Illustration for Articulate Rise: e-learning courses as a responsive module landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Cloud-based course development:** access and editing from anywhere without installation.

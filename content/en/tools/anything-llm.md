@@ -32,6 +32,10 @@ AnythingLLM is convincing not because it offers as many options as possible, but
 - **Clarify first:** which documents are current and who validates answers from a subject-matter perspective.
 - **Do not underestimate:** it can produce convincing but incorrect answers when data sources have not been reviewed.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anything-llm-editorial.webp" alt="Illustration for AnythingLLM: local knowledge assistant with document archive and chat links" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Natural language processing in multiple languages

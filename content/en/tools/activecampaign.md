@@ -33,6 +33,10 @@ ActiveCampaign should first prove itself in a real campaign with audience, conte
 - **Good start for ActiveCampaign:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with ActiveCampaign:** The value becomes weak when audiences, tracking, consent, data care, and follow-up processes are not defined clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/activecampaign-editorial.webp" alt="Illustration for ActiveCampaign: marketing automation as a tended campaign garden" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email Marketing:** Create and send personalized email campaigns with a drag-and-drop editor

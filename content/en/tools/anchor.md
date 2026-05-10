@@ -36,6 +36,10 @@ In day-to-day use, Anchor helps most at the start. The most important work remai
 
 Anyone who wants to grow long term should clarify ownership questions early: RSS feed, export, brand assets, episode archive, and the ability to switch hosts later.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anchor-editorial.webp" alt="Illustration for Anchor: podcast production with microphone, episode cards and distribution" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Podcast hosting and distribution through a simple workflow.

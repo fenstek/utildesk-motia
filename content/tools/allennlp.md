@@ -23,6 +23,10 @@ Geeignet ist AllenNLP für NLP-Forschende, Studierende, Machine-Learning-Teams u
 - Baseline-Modelle für wissenschaftliche Vergleiche aufbauen.
 - Sprachverarbeitung als ML-Thema systematisch verstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/allennlp-editorial.webp" alt="Illustration zu AllenNLP: NLP-Labor mit Sprachmodellen, Korpuskarten und Analysewand" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Framework-nahe Bausteine für NLP-Modelle und Training.

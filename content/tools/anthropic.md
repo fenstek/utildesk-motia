@@ -24,6 +24,10 @@ Relevant ist Anthropic für Entwickler, Produktteams, Unternehmen und Wissensarb
 - Sicherheits-, Datenschutz- und Governance-Fragen für KI-Nutzung klären.
 - Prototypen mit API-Zugriff oder Chatoberflächen testen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anthropic-editorial.webp" alt="Illustration zu Anthropic: Sicherheitsorientierte KI-Arbeit mit Kontrollpfaden und Wissenskarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Claude-Modelle und zugehörige Produkt-/API-Zugänge.

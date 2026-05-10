@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Adobe Connect nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Adobe Connect enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-connect-editorial.webp" alt="Illustration zu Adobe Connect: Virtuelle Webinare und Online-Sitzungen als Raumplan" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Virtuelle Meetingräume** mit anpassbaren Layouts und interaktiven Pods

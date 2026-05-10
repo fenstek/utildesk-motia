@@ -28,6 +28,10 @@ Amazon Comprehend is particularly suitable for businesses and developers who wan
 
 Amazon Comprehend is flexible and can be used for both small projects and large, scalable applications in the cloud.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-comprehend-editorial.webp" alt="Illustration for Amazon Comprehend: text analysis map of documents, topics and signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Entity Recognition:** Automatic identification of people, places, organizations, data, and other entities in text.

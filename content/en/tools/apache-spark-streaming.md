@@ -36,6 +36,10 @@ A useful evaluation starts with a limited data set, a clear event source, a defi
 - **Good starting point:** Use one event stream with known input, expected output, owner, monitoring requirement, and review path before expanding to several sources.
 - **Common pitfall:** Apache Spark Streaming disappoints when teams start with cluster tuning before they have clarified data ownership, failure handling, and acceptance criteria.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-streaming-editorial.webp" alt="Illustration for Apache Spark Streaming: streaming data as a control room with live waves and windows" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Stream processing on Spark:** Processes live data streams with the same ecosystem that supports Spark batch and analytical workloads.

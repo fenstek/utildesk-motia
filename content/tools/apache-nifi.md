@@ -56,6 +56,10 @@ Bei Apache NiFi sollte die Prüfung mit einem realen Beispiel beginnen: ob ein a
 
 Bei Apache NiFi geht es vor allem um Systemdaten, Logs, Zugangsdaten, Testdaten, Modelle, Metriken und interne Endpunkte. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-nifi-editorial.webp" alt="Illustration zu Apache NiFi: Datenstrom-Kontrollraum mit Pumpen, Knoten und Leitungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Im Katalog ist Apache NiFi mit dem Preismodell **Open Source** geführt. Für eine belastbare Entscheidung zählen hier vor allem Betrieb, Wartung, Rechenressourcen, Integrationen, Monitoring und Fachwissen; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.

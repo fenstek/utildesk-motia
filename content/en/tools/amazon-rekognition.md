@@ -20,6 +20,10 @@ Amazon Rekognition is a cloud-based service from Amazon Web Services (AWS) that 
 
 Amazon Rekognition is designed for businesses, developers, and organizations that need automated image and video analysis. It is particularly relevant for industries such as security, retail, media, healthcare, and marketing. Users who want to use face recognition for access control, content moderation, customer analysis, or video surveillance will benefit from the various features. Startups and small businesses can also take advantage of the Freemium model to implement their first projects and scale up as needed.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-rekognition-editorial.webp" alt="Illustration for Amazon Rekognition: image analysis lab with photos, frames and signal markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Face Detection and Analysis:** Identifying, comparing, and analyzing faces in images and videos.

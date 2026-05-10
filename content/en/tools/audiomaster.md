@@ -40,6 +40,10 @@ A useful evaluation starts with a real recording with source material, editing, 
 - **Good starting point:** Keep the first AudioMaster trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** AudioMaster disappoints when source material, rights, target platforms, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audiomaster-editorial.webp" alt="Illustration for AudioMaster: mastering studio with levels, sound curves and monitor speakers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automatic mastering**: Optimizes your audio files with intelligent algorithms for the best possible sound.

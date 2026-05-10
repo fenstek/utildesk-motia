@@ -32,6 +32,10 @@ Im Alltag hilft Any.do, wenn Aufgaben klein genug formuliert sind. Steuer machen
 
 Wichtig ist regelmäßiges Aufräumen. Eine Aufgabenliste, die alles sammelt und nichts entscheidet, wird zur stillen Anklage. Besser wenige sichtbare Prioritäten als ein Palast der unerledigten Zettel.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/any-do-editorial.webp" alt="Illustration zu Any.do: Tagesplanung mit Aufgabenliste, Notizen und mobilen Erinnerungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - To-do-Listen, Erinnerungen und wiederkehrende Aufgaben.

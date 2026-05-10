@@ -32,6 +32,10 @@ Im Alltag ist ArtRage ein angenehmer Gegenpol zu klinischer Software. Pinsel, Pa
 
 Gute Ergebnisse entstehen, wenn man das Digitale nicht gegen das Traditionelle ausspielt. Ebenen und Undo sind hilfreich, aber Bildaufbau, Licht und Form bleiben dieselben alten Meister, nur ohne Terpentingeruch.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/artrage-editorial.webp" alt="Illustration zu ArtRage: Digitales Malatelier mit Pinseln, Farbschichten und Canvas" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Natürlich wirkende Malwerkzeuge und Medienemulation.

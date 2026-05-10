@@ -56,6 +56,10 @@ Bei Atlas.ti sollte die Prüfung mit einem realen Beispiel beginnen: ob Quellen,
 
 Bei Atlas.ti geht es vor allem um Suchfragen, Quellenlisten, Notizen, Forschungsdaten und fachliche Bewertungen. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/atlas-ti-editorial.webp" alt="Illustration zu ATLAS.ti: Qualitative Analyse mit Interviewkarten, Codes und Themenwand" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Im Katalog ist Atlas.ti mit dem Preismodell **Je nach Plan** geführt. Für eine belastbare Entscheidung zählen hier vor allem Datenabdeckung, Exportmöglichkeiten, Teamzugänge, Speicher und methodische Prüfzeit; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.

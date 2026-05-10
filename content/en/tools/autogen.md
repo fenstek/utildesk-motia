@@ -39,6 +39,10 @@ A useful pilot for AutoGen starts with a recurring task with input, expected out
 - **Good start for AutoGen:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with AutoGen:** The value becomes weak when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/autogen-editorial.webp" alt="Illustration for AutoGen: several AI agents coordinating tasks, tools and results" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent Agent Creation:** Development and training of AI agents for specific tasks

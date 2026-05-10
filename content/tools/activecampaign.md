@@ -30,6 +30,10 @@ Als Prüfstück für ActiveCampaign eignet sich einer realen Kampagne mit Zielgr
 - **Guter Start für ActiveCampaign:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei ActiveCampaign:** Der Einsatz kippt in Zusatzarbeit, wenn Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/activecampaign-editorial.webp" alt="Illustration zu ActiveCampaign: Marketing-Automation als gepflegter Kampagnen-Garten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mail-Marketing:** Erstellung und Versand personalisierter E-Mail-Kampagnen mit Drag-and-Drop-Editor

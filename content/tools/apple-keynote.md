@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Apple Keynote nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Apple Keynote enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-keynote-editorial.webp" alt="Illustration zu Apple Keynote: Vortragsfolien als Theatermodell mit Licht, Karten und Storyboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Intuitive Benutzeroberfläche mit Drag-and-Drop-Funktionalität.

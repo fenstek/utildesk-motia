@@ -27,6 +27,10 @@ Automata sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Workfl
 - **Messpunkt:** welche Aufgaben reproduzierbar genug sind, um überhaupt automatisiert zu werden.
 - **Grenze:** ohne klaren Scope zu experimentell für produktive Teams bleibt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/automata-editorial.webp" alt="Illustration zu Automata: Autonome Workflows als mechanischer Garten mit Aufgabenpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Workflow-Automatisierung:** Erstellung und Verwaltung automatisierter Abläufe ohne umfangreiche Programmierkenntnisse.

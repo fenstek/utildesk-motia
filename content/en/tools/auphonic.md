@@ -44,6 +44,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** For Auphonic, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Auphonic disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/auphonic-editorial.webp" alt="Illustration for Auphonic: podcast post-production as an audio workshop with leveling machines" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Volume Normalization**: Standardizes the volume of different audio tracks for a pleasant listening experience.

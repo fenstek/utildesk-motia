@@ -32,6 +32,10 @@ Avatarify should not be evaluated in isolation. What matters is the position in 
 - **Measure:** whether rights, labeling, and context are clearly defined.
 - **Boundary:** it becomes problematic and misleading when used on real people without consent.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avatarify-editorial.webp" alt="Illustration for Avatarify: avatar animation as a puppet studio with masks and camera" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Real-time face animation:** Animate photos with facial expressions and gestures based on video sources or webcam input.

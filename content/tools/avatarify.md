@@ -27,6 +27,10 @@ Avatarify sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Workf
 - **Messpunkt:** ob Rechte, Kennzeichnung und Kontext eindeutig geklärt sind.
 - **Grenze:** bei realen Personen ohne Einwilligung problematisch und missverständlich wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avatarify-editorial.webp" alt="Illustration zu Avatarify: Avatar-Animation als Puppenstudio mit Masken und Kamera" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Gesichtsanimation in Echtzeit:** Animieren von Fotos mit Mimik und Gestik basierend auf Videoquellen oder Webcam-Input.

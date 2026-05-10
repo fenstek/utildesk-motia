@@ -24,6 +24,10 @@ Amazon Polly eignet sich besonders für Unternehmen und Entwickler, die Sprachfu
 
 Dank der API ist Polly flexibel und kann in unterschiedlichste Softwarelösungen eingebunden werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-polly-editorial.webp" alt="Illustration zu Amazon Polly: Text-to-Speech-Studio mit Mikrofon, Stimme und Klangwellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-to-Speech (TTS)**: Umwandlung von Text in natürlich klingende Sprache in Echtzeit

@@ -29,6 +29,10 @@ Artbreeder is geared towards a wide range of users from the design and creative 
 
 The platform is ideal for users who want to experiment with AI in a simple and intuitive way and enhance their creative projects with unique visual elements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/artbreeder-editorial.webp" alt="Illustration for Artbreeder: image variants as a botanical genetics lab with cards and controls" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based Image Combination:** Combine and merge multiple images to create unique artworks.
