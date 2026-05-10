@@ -24,6 +24,10 @@ Adalo richtet sich an Personen und Teams, die eigene Apps erstellen möchten, oh
 
 Die Plattform eignet sich weniger für sehr komplexe Anwendungen mit individuellen Backend-Anforderungen oder für große Unternehmen mit speziellen Sicherheits- und Compliance-Vorgaben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adalo-editorial.webp" alt="Illustration zu Adalo: No-Code-App aus Modulen, Screens und Bausteinen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Drag-and-Drop-App-Builder:** Einfache Gestaltung von Benutzeroberflächen ohne Programmieraufwand.

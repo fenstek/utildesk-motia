@@ -31,6 +31,10 @@ Automata should not be evaluated in isolation. What matters is the place in the 
 - **Measurement point:** which tasks are reproducible enough to be automated at all.
 - **Limit:** without a clear scope, it remains too experimental for productive teams.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/automata-editorial.webp" alt="Illustration for Automata: autonomous workflows as a mechanical garden with task paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Workflow automation:** Creation and management of automated workflows without extensive programming knowledge.

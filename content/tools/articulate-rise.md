@@ -27,6 +27,10 @@ Articulate Rise überzeugt nicht dadurch, dass möglichst viele Optionen vorhand
 - **Vorher klären:** welche Lernziele, Prüfungen und LMS-Anforderungen vorher feststehen.
 - **Nicht unterschätzen:** bei komplexer Didaktik an Template-Grenzen stößt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/articulate-rise-editorial.webp" alt="Illustration zu Articulate Rise: E-Learning-Kurse als responsive Modul-Landschaft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte Kursentwicklung:** Zugriff und Bearbeitung von überall ohne Installation.

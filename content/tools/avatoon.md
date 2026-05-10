@@ -37,6 +37,10 @@ Ein belastbarer Pilot für Avatoon beginnt mit einem konkreten Asset mit Briefin
 - **Guter Start für Avatoon:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Avatoon:** Der Einsatz kippt in Zusatzarbeit, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avatoon-editorial.webp" alt="Illustration zu Avatoon: Avatar-Erstellung mit Charakterkarten, Farben und Profilvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Avatar-Erstellung:** Automatische Generierung von Avataren aus Fotos.

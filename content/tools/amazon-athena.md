@@ -23,6 +23,10 @@ Athena passt zu Data Engineers, Analysten und Cloud-Teams im AWS-Umfeld. Für kl
 - Reporting- oder BI-Zugriffe auf dateibasierte Daten ermöglichen.
 - Kostenarme Exploration ohne dauerhaft laufenden Cluster nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-athena-editorial.webp" alt="Illustration zu Amazon Athena: Data-Lake-Abfragen als Observatorium mit Suchstrahlen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Serverlose SQL-Abfragen auf Daten in S3.

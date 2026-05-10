@@ -51,6 +51,10 @@ Aive makes sense when it has a clear place in the process: intake, production, r
 
 Video assets can contain customers, brand material, and campaign strategy. Rights, approvals, and asset governance matter.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aive-editorial.webp" alt="Illustration for Aive: video marketing with editing monitors, scenes and campaign clips" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, Aive is marked with the pricing model **Freemium**. For a real decision, check the current provider pricing, limits, team features, and export options directly.

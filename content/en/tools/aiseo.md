@@ -52,6 +52,10 @@ AISEO makes sense when it has a clear place in the process: intake, production, 
 
 Content tools can process unpublished campaigns, keywords, and product information. Sensitive strategy should not go into prompts without control.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aiseo-editorial.webp" alt="Illustration for AISEO: SEO editing desk with content brief, keywords and structure cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, AISEO is marked with the pricing model **Freemium**. For a real decision, check the current provider pricing, limits, team features, and export options directly.

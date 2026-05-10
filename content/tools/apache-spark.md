@@ -27,6 +27,10 @@ Bei Apache Spark würde ich früh zwischen Demo-Eindruck und Betriebsrealität u
 - **Qualitätsfrage:** ob Team, Clusterbetrieb und Datenmodell zum Spark-Einsatz passen.
 - **Risiko:** bei kleinen Datenmengen mehr Cluster-Aufwand als Nutzen erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-editorial.webp" alt="Illustration zu Apache Spark: Verteiltes Rechnen als Bergobservatorium mit Datenrouten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Verteilte Datenverarbeitung mit hoher Geschwindigkeit durch In-Memory-Computing

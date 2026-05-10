@@ -25,6 +25,10 @@ Anyword eignet sich besonders für:
 
 Dank der einfachen Bedienung und der Integration in verschiedene Plattformen ist Anyword auch für weniger technikaffine Nutzer geeignet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anyword-editorial.webp" alt="Illustration zu Anyword: Werbetext-Varianten als Kampagnenwand mit Testsignalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Texterstellung:** Automatische Generierung von Marketingtexten, Blogbeiträgen, Produktbeschreibungen und mehr.

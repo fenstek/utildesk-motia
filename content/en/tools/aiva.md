@@ -50,6 +50,10 @@ AIVA makes sense when it has a clear place in the process: intake, production, r
 
 For commercial use, rights, licenses, and project attribution matter as much as sound quality.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aiva-editorial.webp" alt="Illustration for AIVA: AI music composition studio with scores and sound tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, AIVA is marked with the pricing model **Freemium**. For a real decision, check the current provider pricing, limits, team features, and export options directly.

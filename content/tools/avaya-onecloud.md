@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte Avaya Experience Platform zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Avaya Experience Platform enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avaya-onecloud-editorial.webp" alt="Illustration zu Avaya OneCloud: Cloud-Kommunikation mit Kontaktcenter-Routen und Servicekanalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Omnichannel-Kommunikation:** Integration von Telefonie, Chat, E-Mail und Social Media in einer Plattform für nahtlose Kundeninteraktion.

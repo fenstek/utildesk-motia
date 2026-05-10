@@ -21,6 +21,10 @@ Amazon SNS richtet sich hauptsächlich an Entwickler und Unternehmen, die eine e
 - Unternehmen, die automatisierte Alarmierungen per SMS, E-Mail oder Push-Nachricht realisieren möchten.
 - Nutzer, die eine flexible Integration mit anderen AWS-Diensten wie Lambda, SQS oder CloudWatch anstreben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-simple-notification-service-editorial.webp" alt="Illustration zu Amazon Simple Notification Service: Benachrichtigungen als verteilte Lichtwege und Nachrichtenpakete" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Themenbasierte Nachrichtenübermittlung:** Ermöglicht die Veröffentlichung von Nachrichten an mehrere Abonnenten gleichzeitig.

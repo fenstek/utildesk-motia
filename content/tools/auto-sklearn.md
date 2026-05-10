@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Auto-sklearn beginnt mit einem begrenzten Datensatz m
 - **Guter Start für Auto-sklearn:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Auto-sklearn:** Kritisch wird es, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/auto-sklearn-editorial.webp" alt="Illustration zu Auto-Sklearn: AutoML-Labor mit Pipeline-Bausteinen und Modellvergleich" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Modellauswahl:** Auto-sklearn wählt automatisch die besten Algorithmen für gegebene Datensätze aus.

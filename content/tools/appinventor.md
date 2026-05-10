@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für AppInventor nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** AppInventor enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appinventor-editorial.webp" alt="Illustration zu App Inventor: No-Code-App-Baukasten mit Puzzlemodulen und Smartphone-Prototyp" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle Drag-and-Drop-Oberfläche zur App-Erstellung ohne Code

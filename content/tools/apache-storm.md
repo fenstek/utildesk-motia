@@ -32,6 +32,10 @@ Im Alltag verlangt Storm betriebliches Denken. Topologien müssen überwacht, Ba
 
 Für neue Projekte sollte ehrlich geprüft werden, ob Storm noch die beste Wahl ist. Bestehende Kompetenz und Infrastruktur können dafür sprechen; grüne Wiese spricht häufig für Alternativen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-storm-editorial.webp" alt="Illustration zu Apache Storm: Echtzeitverarbeitung als Sturmkarte mit leuchtenden Ereignissen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Verteilte Verarbeitung kontinuierlicher Datenströme.

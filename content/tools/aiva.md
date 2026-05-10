@@ -51,6 +51,10 @@ In professionellen Workflows sollte AIVA nicht erst kurz vor Veröffentlichung e
 
 Bei kommerzieller Nutzung sind Rechte, Lizenzen und Projektzuordnung wichtiger als die reine Klangqualität.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aiva-editorial.webp" alt="Illustration zu AIVA: KI-Musikkomposition als Studio mit Partituren und Klangspuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 AIVA ist im Katalog als **Freemium** geführt. Entscheidend sind nicht nur die monatlichen Kosten, sondern vor allem Nutzungsrechte, Downloadformate, kommerzielle Lizenzierung und die Frage, ob Tracks öffentlich, kundenseitig oder nur intern verwendet werden dürfen.

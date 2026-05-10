@@ -37,6 +37,10 @@ In day-to-day work, Audacity is especially good for clear audio hygiene: clean r
 
 The interface does not always look modern, but it is practical. The most important skill remains listening: does it crackle, pump, is the speech understandable? The tool shows waveforms; the ear makes the decision.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audacity-editorial.webp" alt="Illustration for Audacity: audio editing desk with waveforms, tracks and studio hardware" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Audio recording and editing of single or multiple tracks.

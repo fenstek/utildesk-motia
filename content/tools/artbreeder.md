@@ -29,6 +29,10 @@ Artbreeder richtet sich an ein breites Spektrum von Anwendern aus dem Design- un
 
 Die Plattform ist ideal für Nutzer, die auf einfache Weise mit künstlicher Intelligenz experimentieren und ihre kreativen Projekte mit einzigartigen visuellen Elementen bereichern möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/artbreeder-editorial.webp" alt="Illustration zu Artbreeder: Bildvarianten als botanisches Genetik-Labor mit Karten und Reglern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Bildkombination:** Verschmelzen und vermischen Sie mehrere Bilder, um neue, einzigartige Kunstwerke zu erzeugen.

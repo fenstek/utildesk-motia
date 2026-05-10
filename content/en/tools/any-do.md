@@ -36,6 +36,10 @@ In day-to-day use, Any.do helps when tasks are framed small enough. Doing taxes 
 
 Regular cleanup is important. A task list that collects everything and decides nothing becomes a silent accusation. Better a few visible priorities than a palace of unfinished notes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/any-do-editorial.webp" alt="Illustration for Any.do: daily planning with task list, notes and mobile reminders" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - To-do lists, reminders, and recurring tasks.

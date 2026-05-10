@@ -50,6 +50,10 @@ Apple Siri makes sense when it has a clear place in the process: intake, product
 
 Voice assistants touch private routines, contacts, and devices. Microphone access, history, and app permissions should be reviewed regularly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-siri-editorial.webp" alt="Illustration for Apple Siri: voice assistance in a living room with light waves and smart-home scenes" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, Apple Siri is marked with the pricing model **Free**. For a real decision, check the current provider pricing, limits, team features, and export options directly.

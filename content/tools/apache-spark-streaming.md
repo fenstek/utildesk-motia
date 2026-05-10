@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Für Apache Spark Streaming eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Apache Spark Streaming enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-streaming-editorial.webp" alt="Illustration zu Apache Spark Streaming: Streaming-Daten als Kontrollraum mit Live-Wellen und Fenstern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Datenverarbeitung:** Analysiert kontinuierliche Datenströme mit geringer Latenz.

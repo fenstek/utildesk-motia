@@ -50,6 +50,10 @@ Audo makes sense when it has a clear place in the process: intake, production, r
 
 Audio can contain voices, names, and confidential content. Uploads should follow consent and deletion rules.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audo-editorial.webp" alt="Illustration for Audo: speech cleanup with microphone, filter wall and clear wave" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, Audo is marked with the pricing model **Freemium**. For a real decision, check the current provider pricing, limits, team features, and export options directly.

@@ -36,6 +36,10 @@ Ein belastbarer Pilot für Amazon Lex beginnt mit einem realen Entwicklungsablau
 - **Guter Start für Amazon Lex:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Amazon Lex:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-lex-editorial.webp" alt="Illustration zu Amazon Lex: Dialog-Bot-Flows als Theatermodell mit Antwortwegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung (ASR):** Verarbeitet gesprochene Sprache in Text.

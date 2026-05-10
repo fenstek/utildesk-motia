@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Amazon Alexa nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Amazon Alexa enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-alexa-editorial.webp" alt="Illustration zu Amazon Alexa: Smart-Home-Sprachsteuerung mit Lichtwellen im Wohnraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Sprachsteuerung für Smart-Home-Geräte (Licht, Thermostate, Steckdosen u.v.m.)

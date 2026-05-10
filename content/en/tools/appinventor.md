@@ -42,6 +42,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** Keep the first AppInventor trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** AppInventor disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appinventor-editorial.webp" alt="Illustration for App Inventor: no-code app kit with puzzle modules and smartphone prototype" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual drag-and-drop interface for app creation without code

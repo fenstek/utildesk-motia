@@ -30,6 +30,10 @@ Als Prüfstück für Acuity Scheduling eignet sich einem echten Wochenablauf mit
 - **Guter Start für Acuity Scheduling:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Acuity Scheduling:** Ohne klare Regeln wird der Nutzen schwach, sobald Regeln, Benachrichtigungen, Datenpflege und Verantwortlichkeiten nicht gemeinsam festgelegt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/acuity-scheduling-editorial.webp" alt="Illustration zu Acuity Scheduling: Terminplanung mit Kalenderkarten und Buchungswegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Online-Terminplanung mit Echtzeit-Verfügbarkeitsanzeige  

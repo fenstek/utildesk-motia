@@ -37,6 +37,10 @@ Amazon Alexa is suitable for anyone who wants to simplify their daily routine th
 - **Quality control:** In daily use, Amazon Alexa needs a way to document response time, handoff quality, and customer satisfaction so another person can review the result.
 - **Team handoff:** Amazon Alexa becomes more useful when outputs, decisions, and open questions remain understandable for other roles.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-alexa-editorial.webp" alt="Illustration for Amazon Alexa: smart-home voice control with light waves in a living room" loading="lazy" decoding="async" />
+</figure>
+
 ## Advantages and Disadvantages
 
 ### Advantages

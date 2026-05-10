@@ -33,6 +33,10 @@ The best real-world test for Apache Airflow is small, but real. A team should ru
 - **Rollout question:** who versions DAGs, monitors them, and responds when errors occur.
 - **Brake:** it can create too much operational overhead for small standalone scripts.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-airflow-editorial.webp" alt="Illustration for Apache Airflow: data pipeline orchestration as an airport map with DAG routes" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Workflow orchestration:** Define workflows as Directed Acyclic Graphs (DAGs) in Python.

@@ -32,6 +32,10 @@ Im Alltag ist Appium stark, aber Mobile-Tests bleiben empfindlich. Gute Selektor
 
 Ein reifer Appium-Setup behandelt Flakiness als Produktivitätsproblem. Screenshots, Logs, Wiederholungsregeln und klare Fehleranalyse sparen mehr Zeit als noch ein weiterer Test ohne Diagnose.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appium-editorial.webp" alt="Illustration zu Appium: Mobile Testautomatisierung mit Telefonen, Roboterarm und Kontrollstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisierung nativer, hybrider und mobiler Web-Apps.

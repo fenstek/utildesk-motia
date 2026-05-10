@@ -35,6 +35,10 @@ Auto-sklearn should first prove itself in a limited data set with a clear source
 - **Good start for Auto-sklearn:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Auto-sklearn:** The rollout turns into extra coordination when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/auto-sklearn-editorial.webp" alt="Illustration for Auto-Sklearn: AutoML lab with pipeline blocks and model comparison" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated algorithm selection:** Auto-sklearn automatically selects the best algorithms for given datasets.

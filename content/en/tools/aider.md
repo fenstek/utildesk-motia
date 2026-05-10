@@ -40,6 +40,10 @@ Aider should first prove itself in a real development flow from setup through te
 - **Good start for Aider:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Aider:** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aider-editorial.webp" alt="Illustration for Aider: terminal pair programming with task board and code context" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-Powered Code Generation**: Automatically generates code snippets based on inputs or existing code fragments.

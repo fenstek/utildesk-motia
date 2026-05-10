@@ -29,6 +29,10 @@ Anyword is particularly suited for:
 
 Due to its user-friendly interface and integration with various platforms, Anyword is also suitable for less tech-savvy users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anyword-editorial.webp" alt="Illustration for Anyword: copy variants as a campaign wall with testing signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered content generation:** Automatic creation of marketing copy, blog posts, product descriptions, and more.

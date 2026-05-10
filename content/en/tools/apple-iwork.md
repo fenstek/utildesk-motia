@@ -34,6 +34,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** For Apple iWork, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Apple iWork disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-iwork-editorial.webp" alt="Illustration for Apple iWork: office work with documents, spreadsheets and slide cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Pages**: Word processing with extensive formatting options, templates for letters, reports, flyers, and more, support for images, tables, and charts.
