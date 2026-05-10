@@ -18,6 +18,11 @@ Der eigentliche Wert eines Grafana-Dashboards liegt nicht in schönen Kurven, so
 
 Geeignet ist Grafana für DevOps, SRE, Plattformteams, Entwickler, Datenbank- und Infrastrukturverantwortliche. Auch Business-Teams können profitieren, wenn Zeitreihendaten und operative Kennzahlen nachvollziehbar visualisiert werden sollen.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grafana-editorial.webp" alt="Illustration zu Grafana: Datenkonstellationen leuchten ?ber einem Observability-Kontrollraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Service-Metriken wie Latenz, Fehler, Durchsatz und Ressourcenverbrauch überwachen.

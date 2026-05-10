@@ -22,6 +22,11 @@ It matters when a model should not only work, but also be explainable, reviewabl
 
 InterpretML fits data scientists, ML engineers, risk teams, and analytics groups that need to explain model behavior. It is not a full AutoML platform; it is an explainability and diagnostics layer.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/interpretml-editorial.webp" alt="Illustration for InterpretML: a transparent model showing feature levers and explainable predictions" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Analyze feature effects and model behavior

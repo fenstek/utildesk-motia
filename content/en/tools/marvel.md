@@ -22,6 +22,11 @@ The focus is fast product visualization: ideas should become clickable before en
 
 Marvel fits product teams, designers, founders, and agencies that want to show prototypes quickly and collect feedback. Figma is the broader standard in many teams; Marvel remains interesting when simple prototyping and testing flows matter most.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marvel-editorial.webp" alt="Illustration for Marvel: wireframes and prototype cards on a design studio wall" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Turn wireframes into clickable prototypes

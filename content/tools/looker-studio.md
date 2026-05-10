@@ -22,6 +22,11 @@ Looker Studio passt zu Marketing-, SEO-, Sales- und Analytics-Teams, die Daten s
 
 Für komplexe Datenmodelle, strenge Governance oder große Enterprise-BI-Landschaften sind Power BI, Tableau oder Looker oft stärker. Looker Studio punktet eher mit Tempo, Zugänglichkeit und einfacher Verteilung.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/looker-studio-editorial.webp" alt="Illustration zu Looker Studio: Datenquellen werden in einem hellen Analysestudio zu Reports" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **SEO-Reporting:** Search Console, Analytics und Rankingdaten in wiederkehrenden Dashboards bündeln.

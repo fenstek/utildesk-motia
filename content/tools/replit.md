@@ -24,6 +24,11 @@ Replit eignet sich ideal für:
 - **Entwickler, die KI-gestützte Hilfsmittel** zur Code-Generierung und Fehlerbehebung nutzen möchten.
 - Personen, die plattformunabhängig und ohne lokale Installation programmieren möchten.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/replit-editorial.webp" alt="Illustration zu Replit: eine Cloud-Werkstatt zeigt kollaboratives Coding ohne Code-Text" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung von über 50 Programmiersprachen inklusive Python, JavaScript, Java, C++ u.v.m.

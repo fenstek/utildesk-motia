@@ -23,6 +23,11 @@ A small, bounded test is usually enough to learn whether Papago fits. It should 
 
 The first test for Papago should stay deliberately narrow: one process, one owner, a before-and-after comparison, and a short retrospective.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/papago-editorial.webp" alt="Illustration for Papago: an origami messenger guiding speech bubbles through a travel scene" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 Papago can be useful when it is embedded in a clear process. Without ownership and review rules, the value can remain vague even if the product looks convincing in a demo.

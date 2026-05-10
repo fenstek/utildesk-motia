@@ -22,6 +22,11 @@ Marvel passt zu Produktteams, Gründern, UX-Designern und Stakeholdern, die Idee
 
 Für große Designsysteme, komplexe Komponentenbibliotheken oder tief integrierte Produktarbeit ist Figma meist stärker. Marvel punktet bei Geschwindigkeit und einfacher Verständlichkeit.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marvel-editorial.webp" alt="Illustration zu Marvel: Wireframes und Prototyp-Karten h?ngen an einer Design-Studiowand" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Frühe Produktideen:** Screens verknüpfen und Nutzerführung schnell sichtbar machen.
