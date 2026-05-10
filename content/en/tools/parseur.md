@@ -85,6 +85,10 @@ Pricing model: **Subscription**. For Parseur, the real comparison should include
 
 Depending on the problem, alternatives to Parseur may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
 
+## Related Guides
+
+- [Extract PDF Data with AI: Tools, APIs and Cost Comparison](/en/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)
+
 ## FAQ
 
 **Is Parseur only an OCR tool?**  

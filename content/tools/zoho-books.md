@@ -87,6 +87,11 @@ Bei Zoho Books lohnt sich ein Blick auf die Betriebskosten hinter dem Preisschil
 
 Wer Zoho Books vergleicht, sollte nicht nur Featurelisten nebeneinanderlegen. Wichtig ist, ob Buchhaltungs-, ERP-, Rechnungs-, Banking- und Reporting-Werkzeuge die vorhandenen Rollen, Daten und Übergaben besser unterstützen.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten](/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Ist Zoho Books DSGVO-konform?**  

@@ -70,6 +70,10 @@ Im Katalog ist Smallpdf mit dem Preismodell **Freemium** geführt. Für eine ech
 
 Smallpdf ist ein nützlicher PDF-Werkzeugkasten. Je sensibler das Dokument, desto stärker zählt die Frage, ob ein Online-Tool überhaupt passend ist.
 
+## Passende Ratgeber
+
+- [PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich](/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)
+
 ## FAQ
 
 **Ist Smallpdf für Einsteiger geeignet?**

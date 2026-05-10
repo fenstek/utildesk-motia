@@ -59,6 +59,10 @@ Wave bietet ein kostenloses Basispaket, das Buchhaltung, Rechnungsstellung und g
 - **Zoho Books:** Teil der Zoho Suite, bietet umfassende Finanz- und Rechnungsstellungsfunktionen.
 - **Sage Business Cloud Accounting:** Flexibles Tool für kleine Unternehmen mit Fokus auf Buchhaltung und Steuern.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+
 ## FAQ
 
 **1. Ist Wave wirklich kostenlos?**  

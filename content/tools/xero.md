@@ -74,6 +74,11 @@ Für die Budgetplanung sollte Xero nicht nur nach Listenpreis bewertet werden. W
 
 Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn Cloud-Buchhaltung für kleine Unternehmen und Kanzleien im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten](/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Ist Xero wirklich kostenlos nutzbar?**

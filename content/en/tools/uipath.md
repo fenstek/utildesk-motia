@@ -73,6 +73,10 @@ In the catalog, UiPath is marked with the pricing model **Plan-based**. For a re
 
 UiPath is strong when RPA is run as a program rather than as isolated automation hacks.
 
+## Related Guides
+
+- [Make vs n8n vs Zapier for Invoice Automation](/en/ratgeber/make-vs-n8n-vs-zapier-rechnungsautomatisierung/)
+
 ## FAQ
 
 **Is UiPath beginner-friendly?**

@@ -80,6 +80,11 @@ For budget planning, Xero should not be evaluated by list price alone. More impo
 
 When choosing alternatives, it is worth comparing them along the specific bottleneck. If cloud accounting for small businesses and firms is the focus, other criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results on your own material.
 
+## Related Guides
+
+- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Is Xero really free to use?**

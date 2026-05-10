@@ -86,6 +86,11 @@ Zoho Books pricing is based on a subscription model with multiple plans that var
 - **Wave Accounting** – Free tool for small businesses with basic accounting features.  
 - **Xero** – Cloud-based software with strong integrations and extensive reporting options.  
 
+## Related Guides
+
+- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Is Zoho Books GDPR-compliant?**  

@@ -92,6 +92,11 @@ For Airtable, it is worth looking behind the sticker price: infrastructure, oper
 
 Alternatives to Airtable should be chosen by the concrete work problem. In some cases, databases, BI tools, pipeline systems, research platforms, and open frameworks are better because they create fewer detours in the existing workflow.
 
+## Related Guides
+
+- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Is Airtable suitable for beginners?**

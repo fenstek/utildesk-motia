@@ -62,6 +62,10 @@ Wave offers a free basic plan that includes accounting, invoicing, and basic fin
 - **Zoho Books:** Part of the Zoho Suite, offering comprehensive financial and invoicing features.
 - **Sage Business Cloud Accounting:** Flexible tool for small businesses with a focus on accounting and taxes.
 
+## Related Guides
+
+- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+
 ## FAQ
 
 **1. Is Wave really free?**  

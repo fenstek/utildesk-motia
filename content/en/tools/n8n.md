@@ -81,6 +81,12 @@ n8n offers cloud plans and self-hostable options. The right choice depends on pr
 
 n8n is one of the best candidates when automation should become infrastructure, not just a click path. That also requires discipline around operations and secrets.
 
+## Related Guides
+
+- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [Make vs n8n vs Zapier for Invoice Automation](/en/ratgeber/make-vs-n8n-vs-zapier-rechnungsautomatisierung/)
+- [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **Is n8n open source?**

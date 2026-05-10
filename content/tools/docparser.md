@@ -83,6 +83,10 @@ Preismodell: **Abonnement**. Für Docparser zählt im Vergleich nicht nur der Ei
 
 Als Alternative zu Docparser kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
 
+## Passende Ratgeber
+
+- [PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich](/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)
+
 ## FAQ
 
 **Ist Docparser ein reines OCR-Tool?**  
