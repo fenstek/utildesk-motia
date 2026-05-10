@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Freemium
 tags: [office,documents,productivity,collaboration]
 official_url: "https://www.zoho.com/de/officeplatform/?sredirect=true"
-popularity: 0
+popularity: 1
 ---
 
 # Zoho Office Suite

@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["spreadsheet", "data", "productivity"]
 official_url: "https://workspace.google.com/products/sheets/"
-popularity: 56
+popularity: 87
 ---
 
 # Google Tabellen

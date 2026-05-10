@@ -5,7 +5,7 @@ category: Marketing
 price_model: Freemium
 tags: [crm, sales, automation, marketing]
 official_url: "https://www.hubspot.com/products/sales"
-popularity: 49
+popularity: 51
 ---
 
 # HubSpot Sales Hub

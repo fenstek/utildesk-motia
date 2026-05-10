@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [scheduling,appointments,booking]
 official_url: "https://youcanbook.me/"
-popularity: 0
+popularity: 3
 ---
 # YouCanBook.me
 

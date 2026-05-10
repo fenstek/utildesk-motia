@@ -2,12 +2,12 @@
 slug: genei
 title: Genei
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: ["writing"]
-official_url: 'https://www.genei.io'
-affiliate_url: 'https://www.genei.io'
-created_at: "2026-02-11"
-popularity: 0
+official_url: "https://www.genei.io"
+affiliate_url: "https://www.genei.io"
+created_at: 2026-02-11
+popularity: 88
 ---
 
 # Genei

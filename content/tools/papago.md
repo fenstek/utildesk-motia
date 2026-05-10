@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://papago.naver.com/"
-popularity: 28
+popularity: 30
 ---
 
 # Papago
