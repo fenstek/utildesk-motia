@@ -32,6 +32,12 @@ Im Alltag entscheidet nicht die laengste Featureliste, sondern ob Datenfehler fr
 
 Eine gute Einführung beginnt klein: ein wichtiger Datenfluss, klare Qualitätskriterien, Monitoring und ein sauberer Rollback-Plan. Danach lässt sich die Plattform organisch erweitern, statt sofort die ganze Datenlandschaft umzubauen.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/talend-data-fabric-editorial.webp" alt="Illustration zu Talend Data Fabric: Datenströme werden zu einem belastbaren Gewebe verwoben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Connectoren und Integrationsflüsse für Datenbanken, Cloud-Dienste und Unternehmenssysteme.

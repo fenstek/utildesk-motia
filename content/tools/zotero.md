@@ -20,6 +20,12 @@ Zotero eignet sich für Studierende, Forschende, Autorinnen und Wissensarbeiter,
 
 Zotero ist kein Recherche-Orakel und keine automatische Qualitätsprüfung. Es hilft, gefundene Literatur sauber zu verwalten; Relevanz, Quellenkritik und Argumentation bleiben wissenschaftliche Arbeit.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zotero-editorial.webp" alt="Illustration zu Zotero: Forschungsnotizen, Bücher und Karteikarten werden zu einem Zitationsnetz sortiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Quellen aus Browser und Datenbanken speichern

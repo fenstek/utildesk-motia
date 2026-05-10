@@ -28,6 +28,10 @@ Writesonic is suitable for a broad audience, including:
 
 The platform is especially helpful for users who want to save time and overcome creative blocks.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/writesonic-editorial.webp" alt="Illustration for Writesonic: campaign ideas, drafts and speech bubbles arranged on a desk" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - AI-based text generation for different types of content (blogs, ads, social media posts, emails).

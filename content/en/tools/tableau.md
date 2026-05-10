@@ -52,6 +52,10 @@ Tableau should first prove itself in a limited data set with a clear source, def
 - **Quality control in Tableau:** The team needs a simple way to review data quality, runtime, maintainability, result stability, and acceptance of the analysis after use.
 - **Handoff with Tableau:** Results, open questions, and decisions should be documented so other roles can continue the work later.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tableau-editorial.webp" alt="Illustration for Tableau: business charts made visible as a glass data sculpture" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and cons
 
 ### Pros

@@ -26,6 +26,12 @@ Adobe Express is ideal for users who want to create simple and quick visual cont
 
 The tool is suitable for both beginners and users with basic design knowledge. The free version may be sufficient for basic needs, while premium features and more extensive templates are available for larger projects.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-express-editorial.webp" alt="Illustration for Adobe Express: quick campaign cards, image crops and color blocks on a creative desk" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Template Library**: Access to thousands of customizable templates for social media, posters, invitations, and more

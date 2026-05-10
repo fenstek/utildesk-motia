@@ -26,6 +26,12 @@ Creative tools save time when they make material malleable. They hurt when every
 
 Inkscape makes sense for designers, makers, education, open-source projects, and teams with simple vector needs when it stabilizes part of the process: less searching, less manual repetition, fewer unclear handoffs.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inkscape-editorial.webp" alt="Illustration for Inkscape: open vector curves formed in a structured linocut workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - edit SVGs, icons, and logos

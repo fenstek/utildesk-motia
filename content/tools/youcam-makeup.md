@@ -23,6 +23,12 @@ Die App passt zu privaten Nutzern, Beauty-Creators, Social-Media-Teams und Marke
 - Vorher-nachher-Varianten für Looks vergleichen.
 - AR-nahe Produkt- oder Stilvorschauen ausprobieren.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youcam-makeup-editorial.webp" alt="Illustration zu YouCam Makeup: virtuelle Make-up-Farben und Spiegelansichten für Beauty-Tests" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Virtuelle Make-up- und Beauty-Filter.

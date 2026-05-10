@@ -29,6 +29,10 @@ Whisper is aimed at a broad audience:
 
 The flexible licensing and the option to run Whisper locally also make the tool interesting for privacy-conscious users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/whisper-editorial.webp" alt="Illustration for Whisper: tape, microphone and speech waves condensing into notes" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic speech recognition (ASR)** with high accuracy in numerous languages.

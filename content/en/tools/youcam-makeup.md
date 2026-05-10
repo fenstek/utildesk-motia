@@ -25,6 +25,12 @@ YouCam Makeup is aimed at anyone interested in beauty and digital styling. The a
 - People who enjoy creative photo effects and individual looks.
 - Users looking for a simple mobile solution for beauty editing.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/youcam-makeup-editorial.webp" alt="Illustration for YouCam Makeup: virtual makeup colors and mirror views for beauty tests" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Virtual makeup:** Realistic application of lipstick, eyeshadow, blush, eyeliner, and more in real time.

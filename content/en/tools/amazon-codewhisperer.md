@@ -21,6 +21,12 @@ Amazon CodeWhisperer is a KI-based tool for code generation that helps developer
 
 Amazon CodeWhisperer is suitable for software developers of all skill levels who want to speed up their programming work. It is particularly useful for developers who frequently write similar code snippets or implement complex algorithms. Teams that want to ensure consistent and high-quality code also benefit from the automated suggestions. The tool supports multiple programming languages and is therefore versatile and adaptable.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-codewhisperer-editorial.webp" alt="Illustration for Amazon CodeWhisperer: code suggestions glowing inside a safe developer workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **KI-based Code Completion:** Intelligent suggestions for code lines and functions based on the existing context.

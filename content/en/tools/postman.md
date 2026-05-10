@@ -22,6 +22,10 @@ Its practical value lies in treating APIs not as loose URLs in chat messages. Co
 
 Postman is a good fit for backend developers, QA, product teams, API platforms, support, and technical partner collaboration. It is especially strong when multiple people need to understand and test the same interfaces.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/postman-editorial.webp" alt="Illustration for Postman: API requests flowing through a clean testing lab with connected pipes" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Explore and document REST or GraphQL APIs manually.
