@@ -11,6 +11,7 @@ tags:
   - open-source
 official_url: "https://hermes-agent.nousresearch.com/"
 popularity: 0
+search_index: true
 source_language: de
 translation: full
 description: "Hermes Agent is an open-source Nous Research agent designed as a long-running personal work agent with memory, skills, tools, and messaging integrations."
