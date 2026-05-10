@@ -21,6 +21,10 @@ Acast richtet sich an Podcaster aller Erfahrungsstufen, die ihre Reichweite erh�
 - Kreative, die Wert auf detaillierte Analysen und Monetarisierungsoptionen legen.
 - Nutzer, die Wert auf eine integrierte Plattform mit KI-gestützten Funktionen legen, um Inhalte zu optimieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/acast-editorial.webp" alt="Illustration zu Acast: Podcast-Studio mit Hosting, Verteilung und Reichweitenanalyse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Podcast-Hosting:** Zuverlässiges Speichern und Verteilen von Audioinhalten.

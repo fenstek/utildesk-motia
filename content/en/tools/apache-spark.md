@@ -32,6 +32,10 @@ With Apache Spark, I would distinguish early between demo impression and operati
 - **Quality question:** whether the team, cluster operations, and data model fit Spark usage.
 - **Risk:** creating more cluster overhead than benefit for small data volumes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-editorial.webp" alt="Illustration for Apache Spark: distributed computing as a mountain observatory with data routes" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Distributed data processing with high speed through in-memory computing

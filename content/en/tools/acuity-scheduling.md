@@ -34,6 +34,10 @@ A useful pilot for Acuity Scheduling starts with a real weekly workflow with tas
 - **Good start for Acuity Scheduling:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Acuity Scheduling:** The value becomes weak when rules, notifications, data care, and ownership are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/acuity-scheduling-editorial.webp" alt="Illustration for Acuity Scheduling: appointment planning with calendar cards and booking paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Online scheduling with real-time availability display 

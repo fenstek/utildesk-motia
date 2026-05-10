@@ -28,6 +28,10 @@ Adalo is aimed at individuals and teams who want to build their own apps without
 
 The platform is less suitable for very complex applications with custom backend requirements or for large companies with specific security and compliance requirements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adalo-editorial.webp" alt="Illustration for Adalo: no-code app assembled from modules, screens and blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Drag-and-drop app builder:** Easy design of user interfaces without coding.

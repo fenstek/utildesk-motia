@@ -27,6 +27,10 @@ AnythingLLM überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden s
 - **Vorher klären:** welche Dokumente aktuell sind und wer Antworten fachlich validiert.
 - **Nicht unterschätzen:** bei ungeprüften Datenquellen überzeugende, aber falsche Antworten liefern kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anything-llm-editorial.webp" alt="Illustration zu AnythingLLM: Lokaler Wissensassistent mit Dokumentenarchiv und Chat-Verbindungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Verarbeitung natürlicher Sprache in mehreren Sprachen

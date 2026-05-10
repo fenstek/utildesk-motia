@@ -23,6 +23,10 @@ Acast is suitable for podcasters of all levels who want to increase their reach 
 - Creatives who prioritize detailed analytics and monetization options.
 - Users who value an integrated platform with AI-powered features to optimize content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/acast-editorial.webp" alt="Illustration for Acast: podcast studio with hosting, distribution and reach analytics" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Podcast Hosting:** Reliable storage and distribution of audio content.

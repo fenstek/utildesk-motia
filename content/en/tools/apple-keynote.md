@@ -40,6 +40,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Keep the first Apple Keynote trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Apple Keynote disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-keynote-editorial.webp" alt="Illustration for Apple Keynote: presentation slides as a theatre model with lights, cards and storyboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Intuitive user interface with drag-and-drop functionality.

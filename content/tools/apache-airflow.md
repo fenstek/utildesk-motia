@@ -27,6 +27,10 @@ Der beste Praxistest für Apache Airflow ist klein, aber echt. Ein Team sollte e
 - **Rollout-Frage:** wer DAGs versioniert, überwacht und bei Fehlern reagiert.
 - **Bremse:** für kleine Einzelskripte zu viel Betriebsaufwand erzeugen kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-airflow-editorial.webp" alt="Illustration zu Apache Airflow: Datenpipeline-Orchestrierung als Flughafenplan mit DAG-Routen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Workflow-Orchestrierung:** Definition von Workflows als Directed Acyclic Graphs (DAGs) in Python.

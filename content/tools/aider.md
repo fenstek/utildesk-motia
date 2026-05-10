@@ -35,6 +35,10 @@ Aider sollte zuerst in einem realen Entwicklungsablauf von Setup über Testdaten
 - **Guter Start für Aider:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Aider:** Der Einsatz kippt in Zusatzarbeit, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aider-editorial.webp" alt="Illustration zu Aider: Pair-Programming im Terminal mit Aufgabenboard und Code-Kontext" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Code-Erstellung**: Automatisches Generieren von Code-Snippets basierend auf Eingaben oder bestehenden Codefragmenten.

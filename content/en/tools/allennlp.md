@@ -22,6 +22,10 @@ AllenNLP is an Open-Source Framework for the development and research of Natural
 
 AllenNLP is suitable for developers, researchers, and data scientists working in the field of artificial intelligence with a focus on NLP. It is particularly suitable for users who want to create their own NLP models or adapt existing models. It is also interesting for educational purposes, as it offers a clear API and many pre-built components that make learning and experimentation easier.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/allennlp-editorial.webp" alt="Illustration for AllenNLP: NLP laboratory with language models, corpus cards and analysis wall" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Modular architecture for easy adaptation and extension of NLP models

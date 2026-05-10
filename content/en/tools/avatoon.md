@@ -41,6 +41,10 @@ Avatoon should first prove itself in one concrete asset with briefing, versions,
 - **Good start for Avatoon:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Avatoon:** The value becomes weak when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avatoon-editorial.webp" alt="Illustration for Avatoon: avatar creation with character cards, colors and profile variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based Avatar Creation:** Automatic generation of avatars from uploaded photos.

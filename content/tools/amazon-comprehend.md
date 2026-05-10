@@ -23,6 +23,10 @@ Amazon Comprehend eignet sich besonders für Unternehmen und Entwickler, die umf
 
 Amazon Comprehend ist flexibel einsetzbar und eignet sich sowohl für kleine Projekte als auch für große, skalierbare Anwendungen in der Cloud.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-comprehend-editorial.webp" alt="Illustration zu Amazon Comprehend: Textanalyse als Karte aus Dokumenten, Themen und Signalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Entitätserkennung:** Automatische Identifikation von Personen, Orten, Organisationen, Daten und weiteren Entitäten in Texten.

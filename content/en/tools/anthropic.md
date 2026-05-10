@@ -25,6 +25,10 @@ Anthropic is geared towards developers, companies, and organizations looking for
 - Research institutions that want to experiment with modern AI models
 - Companies that prioritize AI security and ethical standards
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anthropic-editorial.webp" alt="Illustration for Anthropic: safety-oriented AI work with control paths and knowledge cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Advanced Language Models:** Access to AI models that can understand and generate natural language  

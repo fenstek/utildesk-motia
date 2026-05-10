@@ -37,6 +37,10 @@ Als Prüfstück für AutoGen eignet sich einer wiederkehrenden Aufgabe mit Einga
 - **Guter Start für AutoGen:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei AutoGen:** Ohne klare Regeln wird der Nutzen schwach, sobald Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/autogen-editorial.webp" alt="Illustration zu AutoGen: Mehrere KI-Agenten koordinieren Aufgaben, Werkzeuge und Ergebnisse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Agentenerstellung:** Entwicklung und Training von KI-Agenten für spezifische Aufgaben

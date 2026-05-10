@@ -32,6 +32,10 @@ Im Alltag entscheidet Solr-Arbeit an kleinen Details. Ein Feld falsch analysiert
 
 Suchqualität braucht Testqueries. Teams sollten echte Suchanfragen sammeln, erwartete Treffer definieren und Relevanz nicht nur nach Bauchgefühl beurteilen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-solr-editorial.webp" alt="Illustration zu Apache Solr: Suchindex als Archiv mit Lichtstrahlen, Regalen und Fundstellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Volltextindexierung und Suche auf Lucene-Basis.

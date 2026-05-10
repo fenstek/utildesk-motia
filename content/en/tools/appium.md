@@ -36,6 +36,10 @@ In practice, Appium is powerful, but mobile tests remain sensitive. Good selecto
 
 A mature Appium setup treats flakiness as a productivity problem. Screenshots, logs, retry rules, and clear failure analysis save more time than yet another test without diagnostics.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appium-editorial.webp" alt="Illustration for Appium: mobile test automation with phones, robot arm and control stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Automation of native, hybrid, and mobile web apps.

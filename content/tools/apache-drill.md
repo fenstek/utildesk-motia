@@ -27,6 +27,10 @@ Apache Drill überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden 
 - **Vorher klären:** welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden.
 - **Nicht unterschätzen:** bei produktivem Reporting ohne Governance schwer kontrollierbar wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-drill-editorial.webp" alt="Illustration zu Apache Drill: Datenabfragen als geologischer Schnitt durch viele Quellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Schemafreie SQL-Abfragen:** Ermöglicht die Abfrage von Daten ohne vorherige Schema-Definition.

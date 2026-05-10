@@ -38,6 +38,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Für Auphonic eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Auphonic enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/auphonic-editorial.webp" alt="Illustration zu Auphonic: Podcast-Nachbearbeitung als Audio-Werkstatt mit Pegelmaschinen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Lautstärkeanpassung**: Vereinheitlicht die Lautstärke unterschiedlicher Tonspuren für ein angenehmes Hörerlebnis.

@@ -37,6 +37,10 @@ In practice, Solr work comes down to small details. Analyze one field incorrectl
 
 Search quality needs test queries. Teams should collect real search queries, define expected results, and judge relevance not just by intuition.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-solr-editorial.webp" alt="Illustration for Apache Solr: search index as an archive with light beams, shelves and findings" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Full-text indexing and search based on Lucene.
