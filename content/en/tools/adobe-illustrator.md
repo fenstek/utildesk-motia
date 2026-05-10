@@ -29,6 +29,10 @@ Illustrator fits designers, agencies, brand teams, illustrators, and product tea
 - Prepare print-ready graphics, packaging, and typography
 - Export SVGs, PDF files, and asset sets for teams
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-illustrator-editorial.webp" alt="Illustration for Adobe Illustrator: precise vector shapes and curves on a technical drawing sheet" loading="lazy" decoding="async" />
+</figure>
+
 ## Core features
 
 - Precise vector paths, shapes, layers, and artboards

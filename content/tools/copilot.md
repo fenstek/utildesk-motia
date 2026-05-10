@@ -20,6 +20,12 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Copilot richtet sich in der Praxis vor allem an Agenturen, Beratungen, Buchhaltungsbüros und Dienstleister mit wiederkehrender Kundenkommunikation. Gut eingesetzt wird es, wenn Zuständigkeit, Prüfschritt und Ergebnisformat vorher geklärt sind.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/copilot-editorial.webp" alt="Illustration zu Copilot: Kundenportal mit Dateien, Formularen und Service-Übergaben auf einem ruhigen Arbeitsplatz" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Kundenportale statt verstreuter E-Mail-Ketten aufbauen

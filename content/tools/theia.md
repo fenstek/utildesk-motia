@@ -20,6 +20,12 @@ Theia ist geeignet für Plattformteams, Tool-Hersteller, Enterprise-IT und Open-
 
 Der Einsatz lohnt sich, wenn Kontrolle über Extensions, Branding, Workspaces, Authentifizierung und Integrationen wichtig ist. Wer einfach nur programmieren will, ist mit VS Code, JetBrains oder einer fertigen Cloud-IDE schneller. Theia ist spannend, wenn die IDE selbst Teil des Produkts oder der Plattform ist.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/theia-editorial.webp" alt="Illustration zu Theia: Entwicklungsumgebung als modulares Gebäude mit Terminal- und Code-Räumen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Eigene Cloud-IDE bauen:** Browserbasierte Entwicklungsumgebungen für interne Plattformen oder Kunden bereitstellen.

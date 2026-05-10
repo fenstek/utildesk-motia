@@ -22,6 +22,12 @@ Trello mit Butler richtet sich an Nutzer, die ihre Projektmanagementprozesse ver
 - Unternehmen, die Trello bereits nutzen und Automatisierungen integrieren möchten
 - Nutzer, die eine einfache, integrierte Lösung ohne komplexe Programmierung suchen
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/trello-mit-butler-editorial.webp" alt="Illustration zu Trello mit Butler: Kanban-Karten bewegen sich automatisch über ein mechanisches Board" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Regelbasierte Automatisierungen:** Erstellen von Regeln, die Aktionen bei bestimmten Ereignissen ausführen (z. B. Karten verschieben, Labels hinzufügen)

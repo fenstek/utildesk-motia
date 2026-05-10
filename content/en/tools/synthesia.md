@@ -38,6 +38,10 @@ Synthesia is aimed at companies, marketing teams, educational institutions, and 
 - **Subtitle generation:** Automatically creates subtitles for accessibility and better comprehension.  
 - **Integration with other tools:** Can be connected to existing marketing or learning platforms.  
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/synthesia-editorial.webp" alt="Illustration for Synthesia: video studio with abstract presentation scenes and production workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and cons
 
 ### Pros

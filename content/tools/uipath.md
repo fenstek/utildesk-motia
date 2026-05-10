@@ -20,6 +20,12 @@ UiPath ist geeignet für größere Organisationen, Shared-Service-Center, Financ
 
 UiPath lohnt sich nicht für jeden kleinen Prozess. Der beste Fit entsteht, wenn Prozessvolumen, Fehlerkosten und Standardisierung hoch genug sind, um Analyse, Bot-Entwicklung, Betrieb und Governance zu rechtfertigen. Schlechte Prozesse werden durch RPA nicht automatisch gut; sie werden nur schneller ausgeführt.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/uipath-editorial.webp" alt="Illustration zu UiPath: Büroaufgaben laufen als automatisierte Papierstrecke durch Roboterarme" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Backoffice-Automation:** Rechnungen, Stammdaten, Reports, Formulare oder wiederkehrende Systemabgleiche automatisieren.

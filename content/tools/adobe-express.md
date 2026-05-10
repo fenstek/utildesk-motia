@@ -24,6 +24,12 @@ Adobe Express eignet sich ideal für Nutzer, die unkompliziert und schnell visue
 
 Das Tool ist sowohl für Einsteiger als auch für Nutzer mit Grundkenntnissen im Grafikdesign geeignet. Je nach Anforderungen kann die kostenfreie Version ausreichen, während Premium-Funktionen für umfangreichere Projekte verfügbar sind.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-express-editorial.webp" alt="Illustration zu Adobe Express: schnelle Kampagnenkarten, Bildzuschnitte und Farbflächen auf einem Kreativtisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vorlagenbibliothek**: Zugriff auf tausende anpassbare Vorlagen für Social Media, Poster, Einladungen und mehr

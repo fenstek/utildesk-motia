@@ -33,6 +33,10 @@ A good test case for Airtable is a limited data set with a clear source, defined
 - **Good start for Airtable:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Airtable:** The rollout turns into extra coordination when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/airtable-editorial.webp" alt="Illustration for Airtable: table fields and data views as a tended data garden" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Adaptable Tables and Databases:** Create and manage databases with various field types (text, date, checkbox, attachments, etc.).

@@ -34,6 +34,12 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Test Affinity Designer in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Affinity Designer disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/affinity-designer-editorial.webp" alt="Illustration for Affinity Designer: curves, compass and color fields on an elegant drafting table" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Vector and Raster Design:** Seamlessly combines vector and raster graphics in a single project.

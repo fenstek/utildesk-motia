@@ -30,6 +30,10 @@ Als Prüfstück für Tableau eignet sich einem begrenzten Datensatz mit klarer Q
 - **Guter Start für Tableau:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Tableau:** Der Einsatz kippt in Zusatzarbeit, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tableau-editorial.webp" alt="Illustration zu Tableau: Geschäftsdiagramme werden als gläserne Datenskulptur sichtbar" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenvisualisierung:** Erstellung interaktiver Dashboards und Berichte mit Drag-and-Drop-Funktionalität.

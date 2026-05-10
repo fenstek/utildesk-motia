@@ -24,6 +24,12 @@ Talon fits power users, developers, and people who want hands-free work for ergo
 
 Talon is most useful for teams and individuals that treat a voice control tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/talon-editorial.webp" alt="Illustration for Talon: voice waves guiding a cursor across a quiet workstation" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Enter code and text by voice

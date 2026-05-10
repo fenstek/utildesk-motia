@@ -17,6 +17,12 @@ TensorFlow ist ein Open-Source-Framework für maschinelles Lernen und künstlich
 
 TensorFlow richtet sich an Data Scientists, KI-Forscher, Softwareentwickler und Unternehmen, die Anwendungen mit maschinellem Lernen entwickeln möchten. Es eignet sich sowohl für Einsteiger, die erste Modelle erstellen wollen, als auch für erfahrene Profis, die skalierbare und leistungsfähige KI-Systeme benötigen. Durch den modularen Aufbau und die breite Community ist TensorFlow flexibel einsetzbar – von Prototypen bis hin zu produktiven Lösungen.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tensorflow-editorial.webp" alt="Illustration zu TensorFlow: geometrische Tensorblöcke verbinden sich zu einem Lernmodell" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung für neuronale Netze, Deep Learning und andere ML-Modelle  

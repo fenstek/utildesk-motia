@@ -23,6 +23,10 @@ Webflow passt zu Designern, Marketingteams, Agenturen, Startups und Unternehmen 
 - Agentur- und Kundenprojekte visuell schneller umsetzen.
 - Prototypen nahe an echter Website-Qualität testen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/webflow-editorial.webp" alt="Illustration zu Webflow: responsive Webseitenblöcke werden auf einem architektonischen Raster aufgebaut" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visueller Website-Builder mit CSS-naher Kontrolle.

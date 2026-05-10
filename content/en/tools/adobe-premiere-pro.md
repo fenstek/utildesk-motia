@@ -29,6 +29,10 @@ Premiere Pro fits people who produce video regularly and need control over editi
 - Handle captions, audio cleanup, and color looks in one workflow
 - Coordinate team editing with Adobe and Frame.io integrations
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-premiere-pro-editorial.webp" alt="Illustration for Adobe Premiere Pro: editing desk with film tracks, audio waves and color grading light" loading="lazy" decoding="async" />
+</figure>
+
 ## Core features
 
 - Professional multi-track video timeline

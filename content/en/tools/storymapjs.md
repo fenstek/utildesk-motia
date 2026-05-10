@@ -22,6 +22,12 @@ Useful for journalism, education, museums, NGOs, and projects where place and st
 
 StoryMapJS is most useful for teams and individuals that treat a map-based storytelling tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/storymapjs-editorial.webp" alt="Illustration for StoryMapJS: map routes connecting places, images and story points" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Present research as a geographic story

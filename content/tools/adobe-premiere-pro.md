@@ -30,6 +30,12 @@ Wer nur gelegentlich kurze Clips auf dem Smartphone bearbeitet, ist mit CapCut, 
 - **Team-Reviews:** Versionen exportieren, Feedback einarbeiten und Abnahmen nachvollziehbar halten.
 - **Creative-Cloud-Pipeline:** Material mit After Effects, Audition, Photoshop oder Stock-Assets kombinieren.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-premiere-pro-editorial.webp" alt="Illustration zu Adobe Premiere Pro: Schnittplatz mit Filmspuren, Tonwellen und Farbkorrekturlicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Mehrspuriger Videoschnitt mit professioneller Timeline

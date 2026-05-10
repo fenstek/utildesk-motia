@@ -29,6 +29,12 @@ Miro is designed for teams and individuals across a variety of industries who va
 
 The platform is scalable for both small teams and large organizations and offers features that adapt to different requirements.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/miro-editorial.webp" alt="Illustration for Miro: workshop board with colored notes, diagrams and team alignment" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Unlimited whiteboards:** Create and organize as many digital whiteboards as you need for different projects.
