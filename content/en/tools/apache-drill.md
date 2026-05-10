@@ -33,6 +33,10 @@ Apache Drill does not stand out because it offers as many options as possible, b
 - **Clarify first:** which sources are connected and how permissions are enforced.
 - **Do not underestimate:** it becomes hard to control for production reporting without governance.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-drill-editorial.webp" alt="Illustration for Apache Drill: data queries as a geological cross-section through many sources" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Schema-free SQL queries:** Enables querying data without defining a schema in advance.

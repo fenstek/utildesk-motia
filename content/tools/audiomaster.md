@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitu
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für AudioMaster nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** AudioMaster enttäuscht, wenn Ausgangsmaterial, Rechte, Zielplattformen und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audiomaster-editorial.webp" alt="Illustration zu AudioMaster: Mastering-Studio mit Pegeln, Klangkurven und Monitorboxen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisches Mastering**: Optimiert Ihre Audiodateien mit intelligenten Algorithmen für bestmöglichen Klang.

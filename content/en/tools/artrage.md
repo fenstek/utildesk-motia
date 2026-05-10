@@ -37,6 +37,10 @@ In everyday use, ArtRage is a pleasant counterweight to clinical software. Brush
 
 Good results come when you do not pit the digital against the traditional. Layers and undo are helpful, but image composition, light, and form remain the same old masters, only without the smell of turpentine.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/artrage-editorial.webp" alt="Illustration for ArtRage: digital painting studio with brushes, paint layers and canvas" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Naturally behaving painting tools and media emulation.

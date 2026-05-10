@@ -33,6 +33,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test Avaya Experience Platform in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Avaya Experience Platform disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avaya-onecloud-editorial.webp" alt="Illustration for Avaya OneCloud: cloud communication with contact-center routes and service channels" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Omnichannel communication:** Integration of telephony, chat, email, and social media in one platform for seamless customer interaction.

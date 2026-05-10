@@ -27,6 +27,10 @@ Apache Flink sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Wo
 - **Messpunkt:** welche Latenz, Genauigkeit und Wiederherstellung nach Fehlern erwartet wird.
 - **Grenze:** ohne sauberes State- und Fehlerkonzept schwer zu betreiben ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-flink-editorial.webp" alt="Illustration zu Apache Flink: Event-Streams als leuchtendes Flussdelta aus Daten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Stream-Processing**: Verarbeitung von Datenströmen mit sehr niedriger Latenz

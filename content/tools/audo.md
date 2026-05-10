@@ -53,6 +53,10 @@ Nicht sinnvoll ist es, Audo als Ersatz für Aufnahmequalität zu betrachten. Wer
 
 Audio kann Stimmen, Namen und vertrauliche Inhalte enthalten. Uploads sollten nur mit passenden Einwilligungen und Löschregeln erfolgen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audo-editorial.webp" alt="Illustration zu Audo: Sprachreinigung mit Mikrofon, Filterwand und klarer Welle" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Audo ist im Katalog als **Freemium** geführt. Für die Entscheidung zählen vor allem Upload-Minuten, Exportqualität, Dateiformate, Stapelverarbeitung und die Frage, ob Teammitglieder dieselben Projekte bearbeiten können.

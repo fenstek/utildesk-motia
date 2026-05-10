@@ -20,6 +20,10 @@ Amazon Athena is a serverless interactive query service that allows users to ana
 
 Amazon Athena is suitable for data analysts, developers, and companies that want to efficiently analyze large datasets without managing servers. It is particularly useful for teams that need quick insights into their data, want to automate decisions based on analysis results, or want to optimize workflows. Also, for users who already use AWS services, Athena is a seamless integration solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-athena-editorial.webp" alt="Illustration for Amazon Athena: data-lake queries as an observatory with search beams" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Serverless data querying with standard SQL

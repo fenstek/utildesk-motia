@@ -32,6 +32,10 @@ Im Alltag hilft Anchor vor allem beim Start. Die wichtigste Arbeit bleibt redakt
 
 Wer langfristig wachsen will, sollte früh Besitzfragen klären: RSS-Feed, Export, Markenassets, Episodenarchiv und die Möglichkeit, später den Hoster zu wechseln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anchor-editorial.webp" alt="Illustration zu Anchor: Podcast-Produktion mit Mikrofon, Episodenkarten und Verteilung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Podcast-Hosting und Distribution über einen einfachen Workflow.

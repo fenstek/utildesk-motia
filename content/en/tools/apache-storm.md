@@ -36,6 +36,10 @@ In practice, Storm requires operational thinking. Topologies must be monitored, 
 
 For new projects, it should be assessed honestly whether Storm is still the best choice. Existing expertise and infrastructure may argue in its favor; greenfield projects often point to alternatives.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-storm-editorial.webp" alt="Illustration for Apache Storm: real-time processing as a storm map with glowing events" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Distributed processing of continuous data streams.

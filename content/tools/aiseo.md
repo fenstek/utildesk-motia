@@ -51,6 +51,10 @@ Problematisch wird der Einsatz, wenn mehrere Tools denselben Text immer wieder u
 
 Content-Tools können unveröffentlichte Kampagnen, Keywords und Produktinformationen verarbeiten. Sensible Strategien gehören nicht unkontrolliert in Prompts.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aiseo-editorial.webp" alt="Illustration zu AISEO: SEO-Redaktion mit Content-Briefing, Keywords und Strukturkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 AISEO ist im Katalog als **Freemium** geführt. Für die Kostenbewertung sind vor allem Wort- oder Credit-Limits, Plagiats- beziehungsweise Detection-Funktionen, Teamzugänge und Exportoptionen wichtig.

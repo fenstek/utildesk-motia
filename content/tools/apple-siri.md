@@ -51,6 +51,10 @@ Für längere Texte, Recherchen oder strukturierte Teamarbeit sollte Siri nicht 
 
 Sprachassistenten berühren private Routinen, Kontakte und Geräte. Mikrofonzugriffe, Verlauf und App-Berechtigungen sollten regelmäßig geprüft werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-siri-editorial.webp" alt="Illustration zu Apple Siri: Sprachassistenz im Wohnraum mit Lichtwellen und Smart-Home-Szenen" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Apple Siri ist im Katalog als **Kostenlos** geführt, weil es in Apple-Geräte integriert ist. Die eigentlichen Kosten liegen im Ökosystem: Wer Siri sinnvoll nutzen will, braucht kompatible Geräte, Apps und gegebenenfalls Smart-Home-Hardware.

@@ -32,6 +32,10 @@ Apache Flink should not be evaluated in isolation. What matters is the step in t
 - **Measurement point:** what latency, accuracy, and recovery after failures are expected.
 - **Limit:** without a clean state and error concept, it is difficult to operate.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-flink-editorial.webp" alt="Illustration for Apache Flink: event streams as a glowing river delta of data" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Real-time stream processing**: processing data streams with very low latency

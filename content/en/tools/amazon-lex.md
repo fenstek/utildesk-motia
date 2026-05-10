@@ -42,6 +42,10 @@ Amazon Lex should first prove itself in a real development flow from setup throu
 - **Good start for Amazon Lex:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Amazon Lex:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-lex-editorial.webp" alt="Illustration for Amazon Lex: dialog bot flows as a theatre model with response paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Speech Recognition (ASR):** Transcribes spoken language into text.

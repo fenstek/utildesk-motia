@@ -23,6 +23,10 @@ AIDE passt zu Supportteams, SaaS-Anbietern, kleinen Unternehmen und Operations-R
 - Wiederkehrende Workflows rund um Anfragen priorisieren.
 - Supportqualität messen und Lücken in der Dokumentation erkennen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aide-editorial.webp" alt="Illustration zu AIDE: Mobile-App-Entwicklung am neutralen Smartphone-Arbeitsplatz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-Unterstützung für Supportantworten und Wissensnutzung.

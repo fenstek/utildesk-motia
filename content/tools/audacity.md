@@ -33,6 +33,10 @@ Im Alltag ist Audacity besonders gut für klare Audiohygiene: saubere Aufnahme, 
 
 Die Oberfläche wirkt nicht immer modern, aber sie ist zweckmäßig. Der wichtigste Skill bleibt das Hören: Knackt es, pumpt es, ist Sprache verständlich? Das Tool zeigt Wellenformen, die Entscheidung trifft das Ohr.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audacity-editorial.webp" alt="Illustration zu Audacity: Audio-Schnittplatz mit Wellenformen, Spuren und Studiohardware" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Audioaufnahme und Bearbeitung einzelner oder mehrerer Spuren.

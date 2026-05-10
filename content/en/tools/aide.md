@@ -26,6 +26,10 @@ AIDE is suitable for businesses and teams looking to improve customer service, a
 - Teams looking to reduce repetitive tasks and gain more time for important tasks
 - Businesses seeking a scalable solution that grows with their growth
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aide-editorial.webp" alt="Illustration for AIDE: mobile app development at a neutral smartphone workbench" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered customer communication:** Automated responses to frequently asked questions and support for more complex issues

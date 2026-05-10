@@ -52,6 +52,10 @@ Wenn Aive nur als weiterer Editor neben Premiere, Canva oder Agentur-Exports gen
 
 Video-Assets können Kunden, Markenmaterial und Kampagnenstrategie enthalten. Rechte, Freigaben und Asset-Governance sind wichtig.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aive-editorial.webp" alt="Illustration zu Aive: Videomarketing mit Schnittmonitoren, Szenen und Kampagnenclips" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Aive ist im Katalog als **Freemium** geführt. Relevant sind vor allem Asset-Volumen, Exportlimits, Integrationen, Rechteverwaltung und die Frage, ob mehrere Marken oder Kunden getrennt verwaltet werden können.

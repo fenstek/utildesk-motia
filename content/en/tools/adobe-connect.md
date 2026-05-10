@@ -38,6 +38,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Keep the first Adobe Connect trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Adobe Connect disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-connect-editorial.webp" alt="Illustration for Adobe Connect: virtual webinars and online sessions shown as a room plan" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Virtual meeting rooms** with customizable layouts and interactive pods
