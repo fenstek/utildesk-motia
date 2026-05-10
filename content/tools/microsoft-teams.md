@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-teams"
-popularity: 0
+popularity: 38
 ---
 
 # Microsoft Teams
