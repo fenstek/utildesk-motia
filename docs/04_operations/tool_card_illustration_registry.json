@@ -402,6 +402,24 @@
         "content/images/tools/avatoon-editorial.webp",
         "content/images/tools/avaya-onecloud-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-05-10-hermes-agent-manual-publish-illustration",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article image-only figure after the target-audience section",
+      "note": "Manual publish illustration for Hermes Agent. One tool-specific editorial scene generated through the Codex image generation flow; no logos, readable text, or trademarked imagery.",
+      "slugs": [
+        "hermes-agent"
+      ],
+      "images": [
+        "content/images/tools/hermes-agent-editorial.webp"
+      ]
     }
   ]
 }
