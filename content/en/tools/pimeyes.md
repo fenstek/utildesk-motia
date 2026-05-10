@@ -23,6 +23,11 @@ PimEyes is most useful for people who want to check their own image visibility o
 
 PimEyes is most useful for teams and individuals that treat a face search engine as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pimeyes-editorial.webp" alt="Illustration for PimEyes: abstract face silhouettes appearing in mirrors and privacy shutters" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Find your own images on the public web

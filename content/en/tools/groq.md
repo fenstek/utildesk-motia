@@ -18,6 +18,11 @@ Groq is an innovative platform in the AI infrastructure space that specializes i
 
 Groq is suitable for companies and organizations that develop and operate demanding AI models. Users in autonomous driving, robotics, healthcare, finance, and telecommunications especially benefit from the high computing power and low latency. Developers and data scientists who want to train complex deep learning models or run them in real time will also find Groq to be a flexible and scalable infrastructure. The platform is ideal for users looking for an alternative to traditional GPU-based systems and who value efficiency and performance.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/groq-editorial.webp" alt="Illustration for Groq: light pulses racing through an AI accelerator" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Specialized AI hardware:** Groq develops its own processors that are specifically optimized for machine learning operations and enable high throughput rates.

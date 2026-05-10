@@ -22,6 +22,11 @@ MALLET passt zu Forschenden, Digital-Humanities-Teams, NLP-Praktikern und Studie
 
 Für schnelle No-Code-Analysen oder generative KI-Workflows ist MALLET nicht die bequemste Wahl. Es richtet sich an Menschen, die mit Korpora, Parametern und Auswertung bewusst arbeiten möchten.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mallet-editorial.webp" alt="Illustration zu MALLET: Papiercluster auf einem Forschungstisch zeigen Topic Modeling" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Topic Modeling:** Themenstrukturen in größeren Textsammlungen explorieren.

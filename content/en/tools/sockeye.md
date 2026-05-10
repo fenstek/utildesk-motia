@@ -22,6 +22,11 @@ Sockeye fits research, NLP teams, and developers with their own translation infr
 
 Sockeye is most useful for teams and individuals that treat a NMT toolkit as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sockeye-editorial.webp" alt="Illustration for Sockeye: language streams passing through a neural translation model" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Train and compare NMT models

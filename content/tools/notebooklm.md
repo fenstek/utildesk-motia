@@ -20,6 +20,11 @@ NotebookLM ist geeignet für Menschen, die mit einem klar abgegrenzten Quellenbe
 
 Besonders hilfreich ist es, wenn man mehrere Quellen vergleichen, Kernaussagen extrahieren, Lernmaterial vorbereiten oder aus Dokumenten Fragen ableiten möchte. Weniger passend ist NotebookLM, wenn aktuelle Websuche im Vordergrund steht oder wenn Quellen noch gar nicht gesammelt wurden.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/notebooklm-editorial.webp" alt="Illustration zu NotebookLM: Quellen und Notizen sammeln sich in einem leuchtenden Wissenskern" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Quellenpakete auswerten:** PDFs, Notizen, Webseiten oder Transkripte zu einem Thema bündeln und gezielt befragen.

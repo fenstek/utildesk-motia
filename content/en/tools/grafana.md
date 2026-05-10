@@ -21,6 +21,11 @@ The real value of a Grafana dashboard does not lie in pretty curves, but in bett
 
 Grafana is suitable for DevOps, SRE, platform teams, developers, database owners, and infrastructure owners. Business teams can also benefit when time-series data and operational metrics need to be visualized in a clear and understandable way.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grafana-editorial.webp" alt="Illustration for Grafana: data constellations glowing above an observability control room" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Monitor service metrics such as latency, errors, throughput, and resource usage.

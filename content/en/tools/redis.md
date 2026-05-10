@@ -24,6 +24,11 @@ Redis is ideal for developers, software architects, and companies that need a fa
 - Projects that need a flexible data structure and easy scalability
 - Developers who prefer an open-source solution that integrates well with various programming languages and cloud environments
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/redis-editorial.webp" alt="Illustration for Redis: red data stacks and light trails showing fast cache access" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **In-memory database:** Stores data in memory for extremely fast access

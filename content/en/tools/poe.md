@@ -26,6 +26,11 @@ Poe is ideal for users who want to communicate with AI technologies quickly and 
 
 The platform is especially suitable for users who are looking for a simple, accessible solution without complex setup or programming knowledge.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/poe-editorial.webp" alt="Illustration for Poe: several glowing conversation islands forming a salon for AI chats" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Access to multiple AI models through a single central platform.

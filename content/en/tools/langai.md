@@ -22,6 +22,11 @@ Instead of only drilling flashcards, LangAI tries to get learners speaking early
 
 LangAI fits learners who want to practice with AI conversation partners. If you want gamified courses and long learning paths, compare Duolingo or Babbel; if you need translation rather than learning, use DeepL or Lingvanex.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/langai-editorial.webp" alt="Illustration for LangAI: a cafe table with speech bubbles, flashcards and pronunciation waves" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Start a new language with frequent words

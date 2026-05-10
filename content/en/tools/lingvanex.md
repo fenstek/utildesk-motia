@@ -23,6 +23,11 @@ It becomes interesting when translation should not only happen in a browser, but
 
 Lingvanex fits companies, developers, and international teams that need translation, speech, or multilingual workflows. For individual high-quality text translation, DeepL is often the obvious comparison; for technical open-source NMT, Marian is relevant.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lingvanex-editorial.webp" alt="Illustration for Lingvanex: documents, voice waves and app tiles connecting in a translation network" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Translate texts, documents, or app content

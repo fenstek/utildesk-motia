@@ -22,6 +22,11 @@ It is useful when text should not only be read, but analyzed systematically: cus
 
 MeaningCloud fits developers, data teams, CX teams, and companies that want to add NLP features to products or reports. For research and local analysis, MALLET or custom models may be better; for Google-centered cloud stacks, Google Natural Language is an obvious comparison.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meaningcloud-editorial.webp" alt="Illustration for MeaningCloud: semantic clouds, entities and classification paths above a work desk" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Analyze customer feedback by topic and sentiment

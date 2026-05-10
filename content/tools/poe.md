@@ -17,6 +17,11 @@ Poe ist eine Chat-Plattform, über die Nutzer mit verschiedenen KI-Bots und Mode
 
 Poe passt zu Menschen, die verschiedene KI-Modelle ausprobieren, Prompts vergleichen oder Chatbots entdecken möchten. Für Unternehmen, die Governance, Datenkontrolle und stabile API-Integration brauchen, ist ein direkter Anbieter- oder Enterprise-Workflow oft besser.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/poe-editorial.webp" alt="Illustration zu Poe: mehrere leuchtende Dialoginseln bilden einen Salon f?r KI-Gespr?che" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Mehrere KI-Assistenten für dieselbe Aufgabe vergleichen.

@@ -22,6 +22,11 @@ Good for research, learning, briefings, editorial preparation, and internal know
 
 NotebookLM is most useful for teams and individuals that treat a source-grounded research assistant as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/notebooklm-editorial.webp" alt="Illustration for NotebookLM: sources and notes gathering into a glowing knowledge core" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Collect source packs for a topic

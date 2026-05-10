@@ -20,6 +20,11 @@ Sockeye eignet sich für NLP-Forschende, Machine-Translation-Teams und Entwickle
 
 Der Einsatz lohnt sich, wenn Trainingsdaten, Evaluationsmetriken und Infrastruktur vorhanden sind. Wer keine Parallelkorpora, kein ML-Know-how und keinen Bedarf an eigener Modellkontrolle hat, fährt mit fertigen Übersetzungsdiensten deutlich besser.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sockeye-editorial.webp" alt="Illustration zu Sockeye: Sprachstr?me laufen durch ein neuronales ?bersetzungsmodell" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **NMT-Experimente:** Modelle für bestimmte Sprachpaare trainieren, Varianten vergleichen und Metriken auswerten.

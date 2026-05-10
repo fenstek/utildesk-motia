@@ -22,6 +22,11 @@ n8n passt zu technischen Operations-Teams, Startups, Agenturen und Unternehmen, 
 
 Für reine Klick-Automatisierung ohne technisches Verständnis kann Zapier oder Make leichter sein. n8n lohnt sich, wenn Kontrolle, Self-Hosting, Erweiterbarkeit und komplexere Logik wichtiger sind.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/n8n-editorial.webp" alt="Illustration zu n8n: Node-Bl?cke und Kabel verbinden Automatisierungen auf einer Werkbank" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **API- und SaaS-Automation:** CRM, Sheets, Mail, Datenbanken und interne Tools verbinden.

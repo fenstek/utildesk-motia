@@ -23,6 +23,11 @@ Creative tools save time when they make material malleable. They hurt when every
 
 Prisma is especially relevant for creators, social media teams, and users who want to stylize images quickly. The value shows up when it owns a clearly named task instead of becoming just another window beside the real process.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prisma-editorial.webp" alt="Illustration for Prisma: a photo splitting through a prism into different art styles" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - turn portraits and social images into multiple looks
