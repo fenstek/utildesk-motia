@@ -85,6 +85,12 @@ Pricing model: **Custom quote**. For Rossum, the real comparison should include 
 
 Depending on the problem, alternatives to Rossum may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
 
+## Related Guides
+
+- [Best OCR APIs for Invoices in Germany 2026](/en/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/)
+- [Read Invoices Automatically from Emails: Tools and Workflows](/en/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **Is Rossum only an OCR tool?**  

@@ -83,6 +83,11 @@ Preismodell: **Nutzungsbasiert**. Für Veryfi zählt im Vergleich nicht nur der 
 
 Als Alternative zu Veryfi kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
 
+## Passende Ratgeber
+
+- [Beste OCR-APIs für Rechnungen in Deutschland 2026](/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/)
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+
 ## FAQ
 
 **Ist Veryfi ein reines OCR-Tool?**  

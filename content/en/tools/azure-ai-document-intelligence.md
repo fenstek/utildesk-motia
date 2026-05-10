@@ -85,6 +85,13 @@ Pricing model: **Usage-based**. For Azure AI Document Intelligence, the real com
 
 Depending on the problem, alternatives to Azure AI Document Intelligence may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
 
+## Related Guides
+
+- [Best OCR APIs for Invoices in Germany 2026](/en/ratgeber/beste-ocr-apis-rechnungen-deutschland-2026/)
+- [Extract PDF Data with AI: Tools, APIs and Cost Comparison](/en/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)
+- [AI Tools with EU Data Processing: What Small Businesses Should Check](/en/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+- [Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough](/en/ratgeber/open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr/)
+
 ## FAQ
 
 **Is Azure AI Document Intelligence only an OCR tool?**  

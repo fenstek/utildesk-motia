@@ -63,6 +63,11 @@ Make bietet ein Freemium-Modell an, das einen guten Einstieg mit grundlegenden F
 - **n8n:** Open-Source-Alternative mit flexiblen Anpassungsmöglichkeiten und Selbsthosting.
 - **Workato:** Enterprise-orientierte Plattform mit erweiterten Integrations- und Automatisierungsfunktionen.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [Make vs n8n vs Zapier für Rechnungsautomatisierung](/ratgeber/make-vs-n8n-vs-zapier-rechnungsautomatisierung/)
+
 ## FAQ
 
 **1. Brauche ich Programmierkenntnisse, um Make zu nutzen?**  

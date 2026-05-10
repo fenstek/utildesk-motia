@@ -84,6 +84,12 @@ n8n bietet Cloud-Pläne und selbst hostbare Optionen. Die richtige Wahl hängt v
 
 n8n ist eines der stärksten Werkzeuge, wenn Automatisierung flexibel, nachvollziehbar und selbst betreibbar sein soll. Der Preis dafür ist Betriebsdisziplin: Credentials, Fehlerpfade, Versionierung und Monitoring entscheiden darüber, ob Workflows helfen oder neue Risiken bauen.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [Make vs n8n vs Zapier für Rechnungsautomatisierung](/ratgeber/make-vs-n8n-vs-zapier-rechnungsautomatisierung/)
+- [KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten](/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **Ist n8n besser als Zapier?**

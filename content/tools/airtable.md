@@ -89,6 +89,11 @@ Für eine faire Kostenprüfung von Airtable sollten Infrastruktur, Betrieb, Moni
 
 Alternativen zu Airtable sollten nach dem konkreten Arbeitsproblem ausgewählt werden. Manchmal sind Datenbanken, BI-Werkzeuge, Pipeline-Systeme, Research-Plattformen und offene Frameworks sinnvoller, wenn sie weniger Umwege im bestehenden Ablauf erzeugen.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten](/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Ist Airtable für Einsteiger geeignet?**  

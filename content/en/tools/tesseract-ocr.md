@@ -85,6 +85,11 @@ Pricing model: **Open Source**. For Tesseract OCR, the real comparison should in
 
 Depending on the problem, alternatives to Tesseract OCR may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
 
+## Related Guides
+
+- [Extract PDF Data with AI: Tools, APIs and Cost Comparison](/en/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)
+- [Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough](/en/ratgeber/open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr/)
+
 ## FAQ
 
 **Is Tesseract OCR only an OCR tool?**  

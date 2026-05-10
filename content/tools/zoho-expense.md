@@ -83,6 +83,11 @@ Eine kostenlose Testphase oder ein Freemium-Modell kann je nach Anbieterzeitraum
 - **Rydoo:** Mobile-first Lösung mit starkem Fokus auf Reise- und Spesenmanagement für internationale Teams.
 - **SAP Concur:** Enterprise-Lösung für komplexe Anforderungen im Finanz- und Reisemanagement.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten](/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Ist Zoho Expense in deutscher Sprache verfügbar?**  

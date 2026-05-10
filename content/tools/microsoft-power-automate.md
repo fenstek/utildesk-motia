@@ -65,6 +65,12 @@ Microsoft Power Automate bietet ein Freemium-Modell an. Die kostenlose Version e
 - **Automate.io:** Plattform mit Fokus auf Marketing-, Vertriebs- und Geschäftsanwendungen.
 - **UiPath:** Spezialisierter Anbieter für Robotic Process Automation in Unternehmen mit Fokus auf komplexe Prozessautomatisierung.
 
+## Passende Ratgeber
+
+- [Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows](/ratgeber/rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows/)
+- [Make vs n8n vs Zapier für Rechnungsautomatisierung](/ratgeber/make-vs-n8n-vs-zapier-rechnungsautomatisierung/)
+- [KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten](/ratgeber/ki-tools-eu-datenverarbeitung-kleine-unternehmen/)
+
 ## FAQ
 
 **1. Brauche ich Programmierkenntnisse, um Microsoft Power Automate zu nutzen?**  

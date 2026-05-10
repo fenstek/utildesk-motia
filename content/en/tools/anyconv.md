@@ -77,6 +77,10 @@ The exact prices and models vary depending on the provider and may change. It is
 - **Online-Convert:** Supports many file types and offers additional configuration options during conversion.
 - **FreeFileConvert:** A simple tool for free file conversion with limited features.
 
+## Related Guides
+
+- [Extract PDF Data with AI: Tools, APIs and Cost Comparison](/en/ratgeber/pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich/)
+
 ## FAQ
 
 **1. Is AnyConv secure for sensitive documents?**  
