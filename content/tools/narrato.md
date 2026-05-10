@@ -22,6 +22,11 @@ Narrato ist vor allem für bestehende Nutzer relevant, die Content-Projekte, Bri
 
 Wer aktuell ein Content-Workflow-Tool auswählt, sollte Narrato eher als Vergleichspunkt nutzen: Welche Funktionen brauche ich wirklich, wie exportiere ich Inhalte, und welche Alternative ist langfristig stabiler?
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/narrato-editorial.webp" alt="Illustration zu Narrato: ein Redaktionstisch organisiert Entw?rfe, Planung und Freigaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Bestandsaufnahme:** vorhandene Projekte, Briefings, Workflows und Nutzerrollen erfassen.

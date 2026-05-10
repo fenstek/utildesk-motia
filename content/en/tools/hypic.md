@@ -22,6 +22,11 @@ Its appeal is speed: instead of a desktop Photoshop workflow, it focuses on inst
 
 Hypic fits mobile creators, social teams, and users who want to improve images quickly. For professional retouching, print files, or deep layer control, Photoshop-style desktop tools are still more suitable.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hypic-editorial.webp" alt="Illustration for Hypic: mobile image editing with retouching brushes, color swatches and portrait layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Edit portraits and social images directly on a phone

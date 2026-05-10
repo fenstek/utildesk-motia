@@ -27,6 +27,11 @@ Replit is ideal for:
 - **Developers who want AI-powered tools** for code generation and troubleshooting.
 - People who want to program across platforms without a local installation.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/replit-editorial.webp" alt="Illustration for Replit: a cloud workshop showing collaborative coding without code text" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Support for more than 50 programming languages, including Python, JavaScript, Java, C++, and many more.

@@ -25,6 +25,11 @@ Google Translate eignet sich für eine breite Nutzergruppe, darunter:
 
 Die einfache Handhabung macht Google Translate besonders attraktiv für Nutzer ohne spezielle technische Vorkenntnisse, während die API und erweiterte Funktionen auch professionelle Anforderungen abdecken.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-translate-editorial.webp" alt="Illustration zu Google Translate: abstrakte Sprachkarten und Reisekarten verbinden sich zu einem ?bersetzungsfluss" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Textübersetzung:** Sofortige Übersetzung von Texten in über 100 Sprachen.

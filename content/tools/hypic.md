@@ -22,6 +22,11 @@ Hypic passt zu Creatorinnen, Social-Media-Teams, kleinen Shops und mobilen Conte
 
 Für professionelle Retusche, Farbmanagement, Kampagnenmotive oder große Asset-Bibliotheken ist Hypic zu leichtgewichtig. Dort sind Photoshop, Lightroom, Capture One oder klare Markenprozesse besser geeignet.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hypic-editorial.webp" alt="Illustration zu Hypic: mobile Bildbearbeitung mit Retusche-Pinseln, Farbfeldern und Portrait-Ebenen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Social-Media-Bilder:** Portraits, Lifestyle-Fotos und Produktbilder schnell für Posts aufbereiten.

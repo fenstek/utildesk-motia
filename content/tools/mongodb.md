@@ -20,6 +20,11 @@ Für kleinere Tests reicht oft ein klar abgegrenzter Prozess. MongoDB sollte zei
 
 Für die Entscheidung reicht keine Feature-Liste. Das Team sollte vorher festhalten, welche Aufgabe MongoDB entlastet, wer das Ergebnis abnimmt und wann der Test als gescheitert gilt.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mongodb-editorial.webp" alt="Illustration zu MongoDB: gr?ne Dokumentkarten flie?en durch einen skalierbaren Datenbanktunnel" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einschätzung
 
 MongoDB kann viel Wirkung entfalten, wenn es in einen sauberen Prozess eingebettet wird. Ohne klare Zuständigkeiten bleibt der Nutzen dagegen schnell diffus, selbst wenn die Oberfläche überzeugend aussieht.

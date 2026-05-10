@@ -21,6 +21,11 @@ Good for writers, students, bloggers, and teams that want to polish English text
 
 Slick Write is most useful for teams and individuals that treat a writing and style checker as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/slick-write-editorial.webp" alt="Illustration for Slick Write: a style scanner reviewing a manuscript with colored diagnostic tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Check English drafts for readability

@@ -16,6 +16,11 @@ SAP Sales Cloud ist eine umfassende CRM- und Vertriebssoftware, die Unternehmen 
 
 SAP Sales Cloud richtet sich vor allem an mittelständische bis große Unternehmen, die ihre Vertriebsorganisation digitalisieren und automatisieren möchten. Besonders geeignet ist die Lösung für Firmen mit komplexen Vertriebsprozessen, die mehrere Vertriebskanäle bedienen oder international tätig sind. Auch Unternehmen, die eine enge Integration mit anderen SAP-Produkten oder umfangreiche Analysefunktionen wünschen, profitieren von dieser Plattform. Kleine Unternehmen oder Start-ups könnten die Lösung als zu umfangreich oder kostenintensiv empfinden.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sap-sales-cloud-editorial.webp" alt="Illustration zu SAP Sales Cloud: eine Enterprise-Vertriebspipeline verbindet Accounts, Forecasts und Handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Lead- und Opportunity-Management:** Verwaltung und Nachverfolgung von Vertriebschancen in einem zentralen System.

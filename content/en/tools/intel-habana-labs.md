@@ -22,6 +22,11 @@ This is not a SaaS tool for individual users. It is infrastructure for teams tha
 
 Gaudi fits ML infrastructure teams, research groups, cloud providers, and companies with large training or inference workloads. For beginners, single notebooks, or small experiments, Colab, SageMaker, or Hugging Face are more practical.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intel-habana-labs-editorial.webp" alt="Illustration for Intel Habana Labs: a technical cutaway of an AI accelerator lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Evaluate AI training on specialized accelerators

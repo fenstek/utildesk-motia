@@ -23,6 +23,11 @@ Lingvanex passt zu Teams, die Übersetzung nicht nur gelegentlich im Browser nut
 
 Für einzelne schnelle Übersetzungen reichen oft DeepL, Google Translate oder Browserfunktionen. Lingvanex wird interessanter, wenn Sprachpaare, API, Offline-Nutzung, Kontrolle und Integration wichtiger sind als maximale Bequemlichkeit.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lingvanex-editorial.webp" alt="Illustration zu Lingvanex: Dokumente, Sprachwellen und App-Kacheln verbinden sich in einem ?bersetzungsnetz" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **API-Übersetzung:** Übersetzungen in Produkte, Workflows oder interne Tools einbauen.

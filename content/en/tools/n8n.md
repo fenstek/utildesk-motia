@@ -22,6 +22,11 @@ Compared with very simple automation tools, its strength is technical depth: n8n
 
 n8n fits operations, growth, developer teams, and automation builders who want more control than Zapier. For pure enterprise RPA, UiPath or Kofax are better fits; for very simple SaaS zaps, Zapier is often faster.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/n8n-editorial.webp" alt="Illustration for n8n: node blocks and cables connecting automations on a workbench" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Connect APIs, webhooks, and SaaS tools

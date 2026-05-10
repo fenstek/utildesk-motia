@@ -22,6 +22,11 @@ Its strength is simple, shareable reporting. If you regularly analyze Google Ana
 
 Looker Studio fits marketing, SEO, content, small BI teams, and client reporting. For complex enterprise BI, Power BI, Tableau, or Looker itself are often more robust; for simple Google reporting, Looker Studio is hard to beat.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/looker-studio-editorial.webp" alt="Illustration for Looker Studio: data sources becoming reports in a bright analytics studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Build SEO, analytics, and ads dashboards

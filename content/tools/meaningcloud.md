@@ -22,6 +22,11 @@ MeaningCloud passt zu Teams, die größere Mengen Text in strukturierte Signale 
 
 Für einzelne Texte oder gelegentliche Analyse ist ein leichtes KI-Tool oft schneller. MeaningCloud lohnt sich eher, wenn Textanalyse wiederholbar, integrierbar und messbar werden soll.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meaningcloud-editorial.webp" alt="Illustration zu MeaningCloud: semantische Wolken, Entit?ten und Klassifikationspfade ?ber einem Arbeitstisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Sentiment-Analyse:** Kundenfeedback, Bewertungen oder Supporttexte nach Stimmung und Themen auswerten.

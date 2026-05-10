@@ -19,6 +19,11 @@ Scribens ist eine gute Option für Organisationen, in denen Grammatik- und Stilp
 
 Nicht ideal ist das Tool, wenn der Achtungspunkt schwer kontrollierbar bleibt: Stilentscheidungen nicht vollständig ersetzt und Fachkontext übersehen kann. Dann sollte zuerst der Ablauf vereinfacht werden, bevor zusätzliche Software eingeführt wird.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scribens-editorial.webp" alt="Illustration zu Scribens: ein Korrekturtisch mit rotem Stift und stilistischen Markierungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einschätzung
 
 Scribens sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Workflow davor und danach: Woher kommen die Eingaben, wer prüft das Ergebnis, und wie wird ein Fehler korrigiert? Erst dann zeigt sich, ob das Tool wirklich Arbeit verschiebt oder nur hübscher verpackt.

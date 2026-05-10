@@ -22,6 +22,11 @@ Important: the provider has announced that Narrato will shut down on June 15, 20
 
 Narrato may still matter for existing users who need to export content or move workflows. New teams should be very careful and compare alternatives such as Jasper, Copy.ai, Frase, or Canva before adopting it.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/narrato-editorial.webp" alt="Illustration for Narrato: an editorial desk organizing drafts, planning and approvals" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Assess and migrate existing Narrato workflows

@@ -20,6 +20,11 @@ HubSpot Sales Hub is a comprehensive sales platform that helps companies optimiz
 
 HubSpot Sales Hub is aimed primarily at small and medium-sized businesses that want to digitize and automate their sales activities. Sales reps, team leaders, and marketing managers all benefit from features that make the sales process more transparent and efficient. The tool is ideal for teams looking for an integrated CRM that can be connected to marketing and service tools. Startups and companies just beginning with structured sales management will also find a flexible solution here.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-sales-hub-editorial.webp" alt="Illustration for HubSpot Sales Hub: contact cards and pipeline elements organizing a sales process" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Contact and lead management:** Manage contacts, leads, and customers in a central database.

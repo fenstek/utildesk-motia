@@ -22,6 +22,11 @@ Kofax RPA passt zu Unternehmen mit vielen wiederkehrenden, regelbasierten Prozes
 
 Nicht jeder Prozess ist ein guter RPA-Kandidat. Wenn Regeln instabil, Eingaben unklar oder Ausnahmen häufig sind, sollte zuerst der Prozess verbessert werden, bevor ein Bot gebaut wird.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kofax-rpa-editorial.webp" alt="Illustration zu Kofax RPA: mechanische Arme bewegen Dokumente durch einen Backoffice-Prozess" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Backoffice-Automatisierung:** Daten aus Portalen, Formularen oder Altsystemen übernehmen.

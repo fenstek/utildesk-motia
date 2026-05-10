@@ -25,6 +25,11 @@ Scribens is a good option for organizations where grammar and style checking for
 
 The tool is not ideal if the main caution is hard to control: it cannot fully replace style decisions and may miss specialist context. In that case, the workflow should be simplified first before introducing additional software.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scribens-editorial.webp" alt="Illustration for Scribens: a proofreading desk with a red pencil and style markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 Scribens should not be evaluated in isolation. What matters is its place in the workflow before and after: Where do the inputs come from, who checks the result, and how is an error corrected? Only then does it become clear whether the tool really shifts work or just wraps it more neatly.

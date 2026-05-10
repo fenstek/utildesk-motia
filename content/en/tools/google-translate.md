@@ -27,6 +27,11 @@ Google Translate is suitable for a broad range of users, including:
 
 Its ease of use makes Google Translate especially attractive to users without specialized technical knowledge, while the API and advanced features also cover professional requirements.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-translate-editorial.webp" alt="Illustration for Google Translate: abstract language cards and travel maps forming a translation flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text translation:** Instant translation of text into more than 100 languages.
