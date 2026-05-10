@@ -22,6 +22,11 @@ It is not a modern SaaS dashboard. It is a technical tool for researchers, devel
 
 MALLET fits research, digital humanities, NLP experiments, and teams with Java or CLI-oriented workflows. If you want modern LLM APIs or no-code text analysis, MeaningCloud, Google Natural Language, or Hugging Face are faster.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mallet-editorial.webp" alt="Illustration for MALLET: paper clusters on a research table showing topic modeling" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Run topic modeling on large text collections

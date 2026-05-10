@@ -22,6 +22,11 @@ InterpretML passt zu Data Scientists, ML Engineers, Risk-Teams und Organisatione
 
 Weniger passend ist InterpretML für reine Dashboard-Nutzer oder Teams ohne eigenen Modellierungsprozess. Es setzt voraus, dass Daten, Modell, Metriken und Fragestellung verstanden werden.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/interpretml-editorial.webp" alt="Illustration zu InterpretML: ein transparentes Modell zeigt Feature-Hebel und erkl?rbare Vorhersagen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Modell-Erklärbarkeit:** globale und lokale Einflüsse auf Vorhersagen sichtbar machen.

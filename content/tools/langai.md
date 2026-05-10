@@ -22,6 +22,11 @@ LangAI passt zu Menschen, die Sprache aktiv üben wollen, aber nicht immer Gespr
 
 Weniger passend ist LangAI als alleiniger Sprachkurs. Grammatik, Lesen, Hören, Schreiben und echte Kommunikation müssen weiterhin Teil des Lernplans bleiben.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/langai-editorial.webp" alt="Illustration zu LangAI: ein Caf?-Tisch mit Sprachblasen, Lernkarten und Aussprachewellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Sprechpraxis:** kurze Dialoge führen, ohne auf Tandempartner oder Unterricht zu warten.

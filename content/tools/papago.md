@@ -20,6 +20,11 @@ Für kleinere Tests reicht oft ein klar abgegrenzter Prozess. Papago sollte zeig
 
 Darum sollte der erste Test mit Papago bewusst klein bleiben: ein Prozess, ein Owner, ein messbarer Vorher-nachher-Vergleich und eine ehrliche Nachbesprechung.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/papago-editorial.webp" alt="Illustration zu Papago: ein Origami-Bote f?hrt Sprachblasen durch eine Reiseszene" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einschätzung
 
 Papago kann viel Wirkung entfalten, wenn es in einen sauberen Prozess eingebettet wird. Ohne klare Zuständigkeiten bleibt der Nutzen dagegen schnell diffus, selbst wenn die Oberfläche überzeugend aussieht.

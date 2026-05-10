@@ -20,6 +20,11 @@ Prisma muss in einem echten Beispiel zeigen, ob KI-nahe Bildbearbeitung und visu
 
 Besonders passend ist Prisma für Creator, Social-Media-Teams und Nutzer, die Bilder schnell stilisieren möchten. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prisma-editorial.webp" alt="Illustration zu Prisma: ein Foto bricht durch ein Prisma in unterschiedliche Kunststile auf" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Porträts und Social-Bilder in mehrere Looks übersetzen

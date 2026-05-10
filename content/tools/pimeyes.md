@@ -22,6 +22,11 @@ PimEyes ist vor allem für Personen geeignet, die ihre eigene Bildsichtbarkeit i
 
 Für fremde Personen ist der Einsatz rechtlich und ethisch heikel. Gesichtssuche kann falsche Treffer liefern, Privatsphäre verletzen und missbräuchlich verwendet werden. PimEyes sollte deshalb nicht als Neugier-Tool, Überwachungswerkzeug oder Recherche über Dritte ohne berechtigten Grund genutzt werden.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pimeyes-editorial.webp" alt="Illustration zu PimEyes: abstrakte Gesichtssilhouetten erscheinen in Spiegeln und Datenschutzlamellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Eigene Bildsichtbarkeit prüfen:** Herausfinden, wo Porträtfotos öffentlich auffindbar sind.

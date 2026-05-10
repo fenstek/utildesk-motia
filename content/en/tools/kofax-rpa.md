@@ -22,6 +22,11 @@ The focus is on rule-based workflows, data access, system interactions, and proc
 
 Kofax RPA fits organizations with many repetitive back-office processes, legacy systems, and compliance requirements. For small no-code automations, n8n or Zapier are lighter; for large enterprise programs, UiPath and Automation Anywhere are direct alternatives.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kofax-rpa-editorial.webp" alt="Illustration for Kofax RPA: mechanical arms moving documents through a back-office process" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Transfer data from portals, forms, and legacy systems

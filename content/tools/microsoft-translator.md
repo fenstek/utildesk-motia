@@ -22,6 +22,11 @@ Microsoft Translator richtet sich an ein breites Spektrum von Nutzern:
 - **Privatnutzer**: Für Reisen, persönliche Kommunikation und das Verstehen fremdsprachiger Inhalte.
 - **Teams und Remote-Arbeiter**: Für Echtzeit-Übersetzungen in Meetings und Chats zur besseren Zusammenarbeit.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-translator-editorial.webp" alt="Illustration zu Microsoft Translator: farbige Sprachwellen verbinden ein mehrsprachiges Meeting" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Textübersetzung**: Übersetzung von Texten in mehr als 70 Sprachen mit hoher Genauigkeit.

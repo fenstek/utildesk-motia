@@ -23,6 +23,11 @@ A small, bounded test is usually enough to learn whether MongoDB fits. It should
 
 A feature list is not enough here. The team should define the task MongoDB is meant to relieve, who accepts the result, and when the pilot counts as a miss.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mongodb-editorial.webp" alt="Illustration for MongoDB: green document cards flowing through a scalable database tunnel" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 MongoDB can be useful when it is embedded in a clear process. Without ownership and review rules, the value can remain vague even if the product looks convincing in a demo.

@@ -172,3 +172,8 @@ _Last updated: 2026-05-09_
 - 639 tools published to production
 - 743 tools in content/ directory
 - Cron pipeline healthy, 0 errors
+## 2026-05-10 - Tool illustration batch 3
+
+- Added one mid-article WebP illustration to the next 30 highest-popularity non-illustrated tool cards, in both German and English.
+- Slugs: `google-translate`, `grafana`, `grammarly`, `groq`, `hubspot-sales-hub`, `hypic`, `intel-habana-labs`, `interpretml`, `kofax-rpa`, `langai`, `lingvanex`, `looker-studio`, `mallet`, `marvel`, `meaningcloud`, `microsoft-translator`, `mongodb`, `n8n`, `narrato`, `notebooklm`, `papago`, `pimeyes`, `poe`, `prisma`, `redis`, `replit`, `sap-sales-cloud`, `scribens`, `slick-write`, `sockeye`.
+- Recorded the batch in `docs/04_operations/tool_card_illustration_registry.json` so future illustration passes skip these tools.

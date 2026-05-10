@@ -19,6 +19,11 @@ Grammarly ist ein digitales Schreibassistenz-Tool, das Nutzern hilft, ihre Texte
 
 Grammarly richtet sich an alle, die ihre schriftliche Kommunikation verbessern möchten. Besonders nützlich ist es für Studierende, Berufstätige, Autoren, Blogger und alle, die regelmäßig Texte verfassen. Auch Nicht-Muttersprachler profitieren von den Korrekturhilfen, um Fehler zu vermeiden und den Schreibstil zu optimieren. Darüber hinaus unterstützt Grammarly Teams bei der einheitlichen und professionellen Textgestaltung.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grammarly-editorial.webp" alt="Illustration zu Grammarly: ein Schreibplatz mit gr?ner Korrekturschleife und ruhiger Textpr?fung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Grammatik- und Rechtschreibprüfung:** Automatische Erkennung und Korrektur von Fehlern in Echtzeit.

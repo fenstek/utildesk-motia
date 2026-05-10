@@ -22,6 +22,11 @@ Intel Habana Labs richtet sich nicht an normale Endanwender, sondern an Teams, d
 
 Für einzelne KI-Apps, Chatbots oder No-Code-Workflows ist das Thema zu tief im Stack. Dort sind fertige APIs, Cloud-Modelle oder MLOps-Plattformen näher am Alltag.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intel-habana-labs-editorial.webp" alt="Illustration zu Intel Habana Labs: ein technischer Schnitt durch ein KI-Beschleunigerlabor" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **KI-Infrastruktur bewerten:** Alternativen zu GPU-zentrierten Trainings- und Inferenzumgebungen prüfen.

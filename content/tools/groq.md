@@ -16,6 +16,11 @@ Groq ist eine innovative Plattform im Bereich der KI-Infrastruktur, die sich auf
 
 Groq eignet sich für Unternehmen und Organisationen, die anspruchsvolle KI-Modelle entwickeln und betreiben. Besonders profitieren Nutzer aus den Bereichen autonomes Fahren, Robotik, Gesundheitswesen, Finanzwesen und Telekommunikation von der hohen Rechenleistung und niedrigen Latenzzeiten. Auch Entwickler und Data Scientists, die komplexe Deep-Learning-Modelle trainieren oder in Echtzeit ausführen möchten, finden in Groq eine flexible und skalierbare Infrastruktur. Die Plattform ist ideal für Nutzer, die eine Alternative zu herkömmlichen GPU-basierten Systemen suchen und Wert auf Effizienz und Performance legen.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/groq-editorial.webp" alt="Illustration zu Groq: Lichtimpulse rasen durch einen KI-Beschleuniger" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spezialisierte KI-Hardware:** Groq entwickelt eigene Prozessoren, die speziell für Machine-Learning-Operationen optimiert sind und hohe Durchsatzraten ermöglichen.

@@ -21,6 +21,11 @@ Redis ist ideal für Entwickler, Softwarearchitekten und Unternehmen, die eine s
 - Projekte, die eine flexible Datenstruktur und einfache Skalierbarkeit benötigen
 - Entwickler, die eine Open-Source-Lösung bevorzugen, die sich gut in verschiedene Programmiersprachen und Cloud-Umgebungen integrieren lässt
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/redis-editorial.webp" alt="Illustration zu Redis: rote Datenstapel und Lichtspuren zeigen schnellen Cache-Zugriff" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **In-Memory-Datenbank:** Speicherung von Daten im Arbeitsspeicher für extrem schnelle Zugriffe
