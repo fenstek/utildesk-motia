@@ -456,6 +456,52 @@
         "content/images/tools/babbel-editorial.webp",
         "content/images/tools/balsamiq-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-05-10-ocr-pdf-cluster-15-technical-diagrams",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article image-only technical figure after the intro section",
+      "note": "OCR/PDF/Rechnungsautomatisierung cluster: strict technical diagrams generated as controlled SVG-to-WebP assets, with no logos, stock photos, robots, cyberpunk, or decorative 3D.",
+      "slugs": [
+        "rossum",
+        "mindee",
+        "nanonets",
+        "klippa",
+        "veryfi",
+        "aws-textract",
+        "google-document-ai",
+        "azure-ai-document-intelligence",
+        "abbyy-vantage",
+        "mistral-ocr",
+        "docparser",
+        "parseur",
+        "tesseract-ocr",
+        "ocrmypdf",
+        "paddleocr"
+      ],
+      "images": [
+        "content/images/tools/rossum-editorial.webp",
+        "content/images/tools/mindee-editorial.webp",
+        "content/images/tools/nanonets-editorial.webp",
+        "content/images/tools/klippa-editorial.webp",
+        "content/images/tools/veryfi-editorial.webp",
+        "content/images/tools/aws-textract-editorial.webp",
+        "content/images/tools/google-document-ai-editorial.webp",
+        "content/images/tools/azure-ai-document-intelligence-editorial.webp",
+        "content/images/tools/abbyy-vantage-editorial.webp",
+        "content/images/tools/mistral-ocr-editorial.webp",
+        "content/images/tools/docparser-editorial.webp",
+        "content/images/tools/parseur-editorial.webp",
+        "content/images/tools/tesseract-ocr-editorial.webp",
+        "content/images/tools/ocrmypdf-editorial.webp",
+        "content/images/tools/paddleocr-editorial.webp"
+      ]
     }
   ]
 }
