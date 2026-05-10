@@ -2,11 +2,11 @@
 slug: obs-studio
 title: OBS Studio
 category: Video
-price_model: "Kostenlos"
+price_model: Kostenlos
 tags: [video, streaming, audio]
 official_url: "https://obsproject.com/"
-popularity: 0
-description: "OBS Studio ist ein Video- und Produktionswerkzeug für Open-Source-Streaming und Bildschirmaufnahme für Live-Produktionen, Tutorials und Events."
+popularity: 82
+description: OBS Studio ist ein Video- und Produktionswerkzeug für Open-Source-Streaming und Bildschirmaufnahme für Live-Produktionen, Tutorials und Events.
 ---
 # OBS Studio
 

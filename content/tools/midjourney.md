@@ -7,7 +7,7 @@ tags: ["ai", "design", "image", "creative", "visual"]
 official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
 created_at: 2026-02-02
-popularity: 84
+popularity: 83
 description: KI-Bildgenerator für hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente.
 ---
 
