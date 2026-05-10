@@ -36,6 +36,10 @@ In everyday work, Cloud9 is convenient when the environment matches the project 
 
 Teams should avoid treating cloud IDE instances like personal snow globes. Everything important belongs in Git, infrastructure belongs in code, and secrets belong in suitable secret systems.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-cloud9-editorial.webp" alt="Illustration for AWS Cloud9: cloud development desk with abstract code panels and resources" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Browser-based IDE with editor and terminal.

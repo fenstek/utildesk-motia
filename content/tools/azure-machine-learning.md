@@ -22,6 +22,10 @@ Azure Machine Learning richtet sich an Unternehmen und Fachleute, die KI- und Ma
 - Organisationen mit Bedarf an umfangreicher Datenanalyse und Vorhersagemodellen.
 - Nutzer, die eine flexible Plattform mit Unterstützung für verschiedene Programmiersprachen und Frameworks bevorzugen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-machine-learning-editorial.webp" alt="Illustration zu Azure Machine Learning: Daten, Training, Modellpruefung und Deployment als Laborlandschaft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisiertes Machine Learning (AutoML):** Automatisiert die Auswahl und Optimierung von Modellen, um schnell leistungsfähige Vorhersagen zu erzielen.

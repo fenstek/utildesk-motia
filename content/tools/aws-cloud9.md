@@ -32,6 +32,10 @@ Im Alltag ist Cloud9 bequem, wenn die Umgebung exakt zum Projekt passt. Es nimmt
 
 Teams sollten vermeiden, Cloud-IDE-Instanzen als persönliche Schneekugeln zu behandeln. Alles Wichtige gehört in Git, Infrastruktur in Code und Geheimnisse in geeignete Secret-Systeme.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-cloud9-editorial.webp" alt="Illustration zu AWS Cloud9: Cloud-Entwicklungsplatz mit abstrakten Codeflaechen und Ressourcen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Browserbasierte IDE mit Editor und Terminal.

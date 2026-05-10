@@ -23,6 +23,10 @@ Kinesis passt zu Data Engineers, Cloud-Architekten und Plattformteams, die Echtz
 - Realtime-Dashboards oder Fraud-/Monitoring-Signale vorbereiten.
 - Datenströme für Lambda, S3, Redshift oder andere AWS-Dienste nutzbar machen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-kinesis-editorial.webp" alt="Illustration zu AWS Kinesis: Datenstroeme aus Sensoren, Logs und Apps fliessen in Analysewege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Aufnahme und Verarbeitung kontinuierlicher Datenströme.

@@ -20,6 +20,10 @@ Balsamiq is a popular tool for creating wireframes and prototypes for user inter
 
 Balsamiq is primarily aimed at UX/UI designers, product managers, developers, and teams looking to create simple and effective wireframes in the early stages of product development. It's particularly useful for individuals who want to quickly create visual designs without getting bogged down in technical details. It's also suitable for agencies and educational institutions offering training in interface design.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/balsamiq-editorial.webp" alt="Illustration for Balsamiq: rough wireframes, blank sketch cards and workshop decisions" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Intuitive drag-and-drop interface for fast wireframing 

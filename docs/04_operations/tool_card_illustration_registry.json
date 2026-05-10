@@ -420,6 +420,42 @@
       "images": [
         "content/images/tools/hermes-agent-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-05-10-edited-tail-next-10-editorial-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "note": "Sixth production batch: next 10 remaining manually edited cards after the edited-tail 50 selection, using the same registry-first alphabetical selection and varied Codex image generation styles.",
+      "slugs": [
+        "avigilon",
+        "avoma",
+        "aweber",
+        "aws-cloud9",
+        "aws-kinesis",
+        "axis-communications",
+        "azure-machine-learning",
+        "b612",
+        "babbel",
+        "balsamiq"
+      ],
+      "images": [
+        "content/images/tools/avigilon-editorial.webp",
+        "content/images/tools/avoma-editorial.webp",
+        "content/images/tools/aweber-editorial.webp",
+        "content/images/tools/aws-cloud9-editorial.webp",
+        "content/images/tools/aws-kinesis-editorial.webp",
+        "content/images/tools/axis-communications-editorial.webp",
+        "content/images/tools/azure-machine-learning-editorial.webp",
+        "content/images/tools/b612-editorial.webp",
+        "content/images/tools/babbel-editorial.webp",
+        "content/images/tools/balsamiq-editorial.webp"
+      ]
     }
   ]
 }

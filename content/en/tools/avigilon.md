@@ -16,6 +16,10 @@ Suitable for companies, public institutions, industry, retail, and organizations
 
 Avigilon is most useful for teams and individuals that treat a video security platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avigilon-editorial.webp" alt="Illustration for Avigilon: security control room, camera viewpoints and building review in a night plan" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Monitor sites by video

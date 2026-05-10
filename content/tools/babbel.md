@@ -30,6 +30,10 @@ Als Prüfstück für Babbel eignet sich einer echten Lerneinheit mit Ziel, Aufga
 - **Guter Start für Babbel:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Babbel:** Der Einsatz kippt in Zusatzarbeit, wenn Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/babbel-editorial.webp" alt="Illustration zu Babbel: Sprachlernnotizbuch mit Sprechuebung, Wiederholung und Feedback" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Interaktive Lektionen mit Fokus auf praktische Alltagssituationen

@@ -23,6 +23,10 @@ Balsamiq passt zu Produktmanagern, UX-Teams, Gründern, Business Analysts und Wo
 - Workshops mit sichtbaren Skizzen und niedrigem Perfektionsdruck unterstützen.
 - Anforderungen für Entwicklung oder Design vorbereiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/balsamiq-editorial.webp" alt="Illustration zu Balsamiq: grobe Wireframes, leere Skizzenkarten und Workshop-Entscheidungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Absichtlich skizzenhafte Wireframe-Optik.
