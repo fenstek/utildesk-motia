@@ -25,6 +25,10 @@ Axis Communications richtet sich an Unternehmen und Organisationen verschiedenst
 
 Die Systeme von Axis eignen sich sowohl für kleine Installationen mit wenigen Kameras als auch für großflächige, vernetzte Überwachungslösungen mit umfangreichen Analysefunktionen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/axis-communications-editorial.webp" alt="Illustration zu Axis Communications: vernetzte Videokameras und Sicherheitsknoten auf einem Campusmodell" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Netzwerkbasierte Videoüberwachung:** IP-Kameras mit hoher Auflösung und vielfältigen Formaten (Dome, Bullet, PTZ)

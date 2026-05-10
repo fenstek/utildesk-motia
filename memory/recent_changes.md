@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-09_
+_Last updated: 2026-05-10_
+
+## 2026-05-10 - Tool illustration batch 6
+
+- Added one mid-article WebP illustration to 10 additional manually edited tool cards in both German and English.
+- Selection follows the previous edited-tail batch: next registry-backed alphabetical candidates not already listed in `docs/04_operations/tool_card_illustration_registry.json`.
+- Slugs: `avigilon`, `avoma`, `aweber`, `aws-cloud9`, `aws-kinesis`, `axis-communications`, `azure-machine-learning`, `b612`, `babbel`, `balsamiq`.
+- Recorded the batch in `docs/04_operations/tool_card_illustration_registry.json` so future illustration passes skip these tools.
 
 ## 2026-05-09 - Tool Card Editorial Illustrations Batch 2
 

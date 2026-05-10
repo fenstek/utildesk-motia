@@ -25,6 +25,10 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 For creators, small businesses, newsletter operators, and marketing teams, Aweber can be a real lever. The key is to attach it to a repeatable work moment rather than using it as a vague productivity promise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aweber-editorial.webp" alt="Illustration for Aweber: newsletter automation with envelopes, segments and campaign paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - build and maintain newsletter lists

@@ -35,6 +35,10 @@ A good test case for Babbel is a real learning unit with goal, task, feedback, r
 - **Good start for Babbel:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Babbel:** The value becomes weak when learning goal, level, feedback rules, and learner privacy remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/babbel-editorial.webp" alt="Illustration for Babbel: language learning notebook with speaking practice, repetition and feedback" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Interactive lessons focused on practical everyday situations

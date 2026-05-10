@@ -20,6 +20,10 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Für Creator, kleine Unternehmen, Newsletter-Betreiber und Marketingteams kann Aweber ein echter Hebel sein. Entscheidend ist, dass der Einsatz nicht beliebig bleibt, sondern an einem wiederholbaren Arbeitsmoment hängt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aweber-editorial.webp" alt="Illustration zu Aweber: Newsletter-Automation mit Umschlaegen, Segmenten und Kampagnenwegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Newsletter-Listen aufbauen und pflegen

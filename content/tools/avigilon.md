@@ -20,6 +20,10 @@ Avigilon richtet sich an Organisationen, die physische Sicherheit professionell 
 
 Für kleine Büros oder private Überwachung ist Avigilon meist überdimensioniert. Sinnvoll wird es, wenn viele Kameras, mehrere Standorte, definierte Rollen und nachvollziehbare Ereignisprüfung zusammenkommen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avigilon-editorial.webp" alt="Illustration zu Avigilon: Sicherheitszentrale, Kameraperspektiven und Gebaeudepruefung in einem Nachtplan" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Standorte per Video überwachen

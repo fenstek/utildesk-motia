@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte Avoma zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Avoma enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avoma-editorial.webp" alt="Illustration zu Avoma: Meeting, Audiowellen und Follow-up-Karten fuer Vertriebsteams" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-gestützte Echtzeit-Transkription von Meetings und Telefonaten

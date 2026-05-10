@@ -34,6 +34,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test Avoma in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Avoma disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avoma-editorial.webp" alt="Illustration for Avoma: meeting audio, follow-up cards and sales team handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Real-time AI-powered transcription of meetings and phone calls

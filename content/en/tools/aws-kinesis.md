@@ -21,6 +21,10 @@ AWS Kinesis is a scalable cloud service from Amazon Web Services that enables re
 
 AWS Kinesis is designed for companies and developers who need to process real-time streaming data. This includes industries such as finance, media, IoT, e-commerce, and telecommunications. It is particularly useful for teams that need to analyze data streams from sensors, logs, clickstreams, or social media and automate actions based on them. The solution is ideal for users who prefer a cloud-based, scalable platform and already use other AWS services.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-kinesis-editorial.webp" alt="Illustration for AWS Kinesis: data streams from sensors, logs and apps flowing into analytics paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time Data Ingestion:** Capture large data streams from various sources in real-time.
