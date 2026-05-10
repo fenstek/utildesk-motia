@@ -23,6 +23,12 @@ Trello with Butler is aimed at users who want to simplify and automate their pro
 - Companies that already use Trello and want to integrate automations
 - Users looking for a simple, integrated solution without complex programming
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/trello-mit-butler-editorial.webp" alt="Illustration for Trello with Butler: kanban cards moving automatically across a mechanical board" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Rule-based automations:** Create rules that trigger actions for specific events (e.g. moving cards, adding labels)

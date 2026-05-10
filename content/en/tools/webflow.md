@@ -35,6 +35,12 @@ Webflow is aimed at designers, marketing professionals, small to medium-sized bu
 - Team collaboration with role and access management
 - Export of clean HTML, CSS, and JavaScript code
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/webflow-editorial.webp" alt="Illustration for Webflow: responsive website blocks assembled on an architectural grid" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and cons
 
 ### Pros

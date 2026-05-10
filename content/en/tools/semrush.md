@@ -21,6 +21,12 @@ SEMrush is a comprehensive digital marketing software solution used primarily in
 
 SEMrush is aimed at marketing professionals, SEO specialists, content managers, and agencies that want to improve their online marketing strategies. Small and medium-sized businesses also benefit from the extensive analysis and automation features to increase their visibility in search engines. In addition, SEMrush is suitable for freelancers and content creators looking for well-founded insights into keyword trends and competitor analysis.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/semrush-editorial.webp" alt="Illustration for SEMrush: SEO research as an expedition through search landscapes and ranking curves" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Keyword research:** Identification of relevant search terms with search volume, competition, and trends.

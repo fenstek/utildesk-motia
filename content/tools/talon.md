@@ -20,6 +20,12 @@ Talon ist geeignet für Power-User, Entwickler und Menschen, die aus ergonomisch
 
 Der beste Fit entsteht bei Nutzern, die bereit sind, ihre Arbeitsweise aktiv zu konfigurieren. Talon ist weniger bequem als typische Sprachassistenten, aber deutlich mächtiger, wenn eigene Befehle und app-spezifische Workflows aufgebaut werden.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/talon-editorial.webp" alt="Illustration zu Talon: Sprachwellen lenken einen Cursor über einen ruhigen Arbeitsplatz" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Hands-free Coding:** Editorbefehle, Navigation, Symbole und Codebausteine per Stimme oder Makro ausführen.

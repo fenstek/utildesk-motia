@@ -20,6 +20,12 @@ OpenHands ist für Entwicklerteams geeignet, die Coding-Agenten nicht nur auspro
 
 Der Einsatz passt weniger zu völlig offenen Produktfragen. OpenHands braucht abgegrenzte Aufgaben, nachvollziehbare Ziele und ein Review-Gate. Besonders sinnvoll ist es für Experimente mit Bugfixes, Tests, Refactorings oder Recherche im Codebestand, solange kein Agent direkt unkontrolliert produktiven Code zusammenführt.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openhands-editorial.webp" alt="Illustration zu OpenHands: kleine Coding-Agenten reichen Aufgaben durch eine überwachte Werkstatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Ticket-Vorarbeit:** Issues in reproduzierbare Schritte, mögliche Dateien, Testideen und Umsetzungsvorschläge zerlegen.

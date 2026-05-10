@@ -24,6 +24,12 @@ Miro richtet sich an Teams und Einzelpersonen in verschiedenen Branchen, die Wer
 
 Die Plattform ist sowohl für kleine Teams als auch für große Organisationen skalierbar und bietet Funktionen, die sich an unterschiedliche Anforderungen anpassen.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/miro-editorial.webp" alt="Illustration zu Miro: Workshop-Board mit farbigen Notizen, Diagrammen und Teamabstimmung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unbegrenzte Whiteboards:** Erstellen und organisieren Sie beliebig viele digitale Whiteboards für verschiedene Projekte.

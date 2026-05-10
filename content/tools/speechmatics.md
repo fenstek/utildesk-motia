@@ -21,6 +21,12 @@ Speechmatics eignet sich für Teams, die Audio und Video nicht nur transkribiere
 
 Für einzelne kurze Aufnahmen reicht oft ein einfaches Transkriptionswerkzeug. Speechmatics wird stärker, wenn Transkripte in Archive, Untertitel, Analysepipelines oder eigene Produkte fließen. Bei juristisch, medizinisch oder öffentlich relevanten Inhalten bleibt Nachkorrektur unverzichtbar.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speechmatics-editorial.webp" alt="Illustration zu Speechmatics: mehrsprachige Sprachwellen werden zu geordneten Transkriptseiten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Interviews und Podcasts:** Sprachmaterial schneller verschriftlichen und für Redaktion oder Schnitt nutzbar machen.

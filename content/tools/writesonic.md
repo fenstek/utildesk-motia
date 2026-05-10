@@ -24,6 +24,12 @@ Writesonic eignet sich für eine breite Zielgruppe, darunter:
 
 Die Plattform ist besonders hilfreich für Nutzer, die Zeit sparen und kreative Schreibblockaden überwinden wollen.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/writesonic-editorial.webp" alt="Illustration zu Writesonic: Kampagnenideen, Entwürfe und Sprechblasen werden am Schreibtisch arrangiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-basierte Texterstellung für verschiedene Textarten (Blogs, Anzeigen, Social Media Posts, E-Mails).

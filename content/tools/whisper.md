@@ -26,6 +26,12 @@ Whisper richtet sich an eine breite Zielgruppe:
 
 Die flexible Lizenzierung und die Möglichkeit, Whisper lokal zu betreiben, machen das Tool auch für datenschutzbewusste Nutzer interessant.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/whisper-editorial.webp" alt="Illustration zu Whisper: Tonband, Mikrofon und Sprachwellen werden zu Notizen verdichtet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung (ASR)** mit hoher Genauigkeit in zahlreichen Sprachen.

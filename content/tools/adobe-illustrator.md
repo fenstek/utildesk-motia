@@ -30,6 +30,12 @@ Für schnelle Social-Media-Layouts ist Canva oft effizienter, für UI-Design ist
 - **SVG- und Asset-Export:** Grafiken für Websites, Apps und Designsysteme in kontrollierten Formaten ausgeben.
 - **Creative-Cloud-Workflows:** Assets mit Photoshop, InDesign und anderen Adobe-Werkzeugen kombinieren.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-illustrator-editorial.webp" alt="Illustration zu Adobe Illustrator: präzise Vektorformen und Kurven auf einem technischen Zeichenblatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Präzise Vektorpfade, Formen, Ebenen und Zeichenflächen

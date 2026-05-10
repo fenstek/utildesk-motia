@@ -21,6 +21,12 @@ Good for students, researchers, journalists, and knowledge workers who need clea
 
 Zotero is most useful for teams and individuals that treat a reference manager as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/zotero-editorial.webp" alt="Illustration for Zotero: research notes, books and index cards sorted into a citation network" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Save sources from browsers and databases

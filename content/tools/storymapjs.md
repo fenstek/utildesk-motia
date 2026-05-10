@@ -20,6 +20,12 @@ StoryMapJS eignet sich für Journalisten, Lehrende, Museen, NGOs, Stadtprojekte 
 
 Weniger passend ist StoryMapJS für GIS-Analysen, große Datensätze oder komplexe interaktive Karten. Der Fokus liegt auf kuratierten Stationen, Medien und Text. Wer eine Geschichte nicht klar in Stationen strukturieren kann, sollte zuerst Konzept und Dramaturgie klären.
 
+
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/storymapjs-editorial.webp" alt="Illustration zu StoryMapJS: Kartenrouten verbinden Orte, Bilder und Erzählstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Journalistische Dossiers:** Orte, Ereignisse, Bilder und kurze Texte zu einer geführten Recherche verbinden.
