@@ -2,10 +2,10 @@
 slug: pons
 title: Pons
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [translation, education, automation, assistant]
 official_url: "https://en.pons.com/translate"
-popularity: 0
+popularity: 26
 ---
 
 # Pons
