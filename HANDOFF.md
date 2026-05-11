@@ -1,5 +1,22 @@
 # Handoff
 
+## 2026-05-11 Ableton Live Tool Editorial Rewrite
+
+- Ubuntu worker `jgdus-optiplex-3000` produced a manual editorial rewrite for `ableton-live`.
+- Production files in this change:
+  - `content/tools/ableton-live.md`
+  - `content/en/tools/ableton-live.md`
+  - `content/images/tools/ableton-live-editorial.webp`
+  - `docs/04_operations/tool_card_editorial_registry.json`
+  - `docs/04_operations/tool_card_illustration_registry.json`
+  - `memory/recent_changes.md`
+- The update rewrites the old production-generated card into a more practical German/English tool article and adds one PNG-to-WebP artistic tool-card illustration.
+- The slug is now registered in both the manual editorial registry and the illustration registry, so future batches should skip it unless the user explicitly asks for another revision.
+- Handoff path used:
+  - Ubuntu commit: `0163437` (`content: update Ableton Live tool card`);
+  - exchange branch: `hub/codex/ableton-live-editorial-20260511`;
+  - clean deploy worktree on the laptop: `C:\projects\utildesk-motia-deploy-ableton-live-20260511`.
+
 ## 2026-05-11 Clip Studio Paint Tool Illustration
 
 - Ubuntu worker `jgdus-optiplex-3000` created one approved artistic tool-card illustration for `clip-studio-paint`.
