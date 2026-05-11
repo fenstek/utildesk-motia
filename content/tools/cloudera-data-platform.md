@@ -27,6 +27,10 @@ Cloudera Data Platform gewinnt, wenn die Einführung nicht als Toolwechsel, sond
 - **Gute Voraussetzung:** für Organisationen mit Hadoop-Erbe, hybriden Datenlandschaften und Compliance-Druck.
 - **Aufpassen bei:** ohne klares Plattformteam sehr groß und schwerfällig wirkt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cloudera-data-platform-editorial.webp" alt="Illustration zur Cloudera Data Platform: Hybride Datenlandschaft verbindet Governance, Cloud und Analysearbeit" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenintegration und -verwaltung**: Zentrale Verwaltung von strukturieren und unstrukturierten Daten aus unterschiedlichen Quellen.

@@ -27,6 +27,10 @@ Celtx gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozesskl
 - **Gute Voraussetzung:** für Film-, Video- und Medienprojekte mit mehreren Beteiligten.
 - **Aufpassen bei:** für reine Schreibarbeit größer wirkt als ein schlanker Texteditor.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/celtx-editorial.webp" alt="Illustration zu Celtx: Filmteam entwickelt Drehbuch, Storyboard und Produktionsplanung an einem Arbeitstisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Drehbuchschreiben:** Intuitive Editor-Umgebung mit automatischer Formatierung nach Industriestandards.

@@ -19,6 +19,10 @@ Bubble is an innovative platform that allows users to create complex web applica
 
 Bubble is ideal for founders, freelancers, and small to medium-sized enterprises that want to develop their own web applications or prototypes without relying on expensive development resources. Product managers and designers also benefit from the ability to visualize and test their ideas. Additionally, developers can use Bubble to reduce repetitive programming tasks and focus on more complex features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bubble-editorial.webp" alt="Illustration for Bubble: team builds a web app from visual data and workflow blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Visual drag-and-drop editor for designing user interfaces without programming knowledge

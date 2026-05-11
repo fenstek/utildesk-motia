@@ -27,6 +27,10 @@ A useful pilot for Clarivate Analytics (Web of Science) starts with a limited da
 - **Good start for Clarivate Analytics (Web of Science):** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Clarivate Analytics (Web of Science):** The value becomes weak when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clarivate-analytics-editorial.webp" alt="Illustration for Clarivate Analytics: researchers explore publications and citation networks in a library" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Workflow support in Clarivate Analytics (Web of Science):** The tool should help teams move from input to reviewed output without hiding important decisions.

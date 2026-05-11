@@ -23,6 +23,10 @@ Der Cerebras WSE richtet sich vor allem an Unternehmen, Forschungseinrichtungen 
 
 Aufgrund der spezialisierten Architektur und der hohen Investitionskosten ist der WSE weniger geeignet für kleine Unternehmen oder Anwender mit geringem KI-Rechenbedarf.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cerebras-wafer-scale-engine-editorial.webp" alt="Illustration zum Cerebras Wafer-Scale Engine: Ingenieure betrachten einen grossen KI-Prozessor im Rechenlabor" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Wafer-Scale Architektur:** Nutzung eines kompletten Siliziumwafers als eine einzelne Recheneinheit für enorme Parallelität

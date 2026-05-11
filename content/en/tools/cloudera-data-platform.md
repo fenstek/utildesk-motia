@@ -33,6 +33,10 @@ Cloudera Data Platform delivers best results when implementation is understood n
 - **Good fit:** for organizations with Hadoop legacy systems, hybrid data landscapes, and compliance pressure.
 - **Watch out for:** feeling very large and cumbersome without a clear platform team.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cloudera-data-platform-editorial.webp" alt="Illustration for Cloudera Data Platform: hybrid data landscape connects governance, cloud, and analytics work" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Data integration and management**: Central management of structured and unstructured data from different sources.

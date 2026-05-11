@@ -34,6 +34,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Clipchamp.
 - **Common pitfall:** Clipchamp disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clipchamp-editorial.webp" alt="Illustration for Clipchamp: video team edits clips, audio tracks, and export paths in a browser workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Online video editing:** Cut, trim, merge, and adjust video clips directly in the browser.

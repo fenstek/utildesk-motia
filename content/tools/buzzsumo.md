@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Für BuzzSumo eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** BuzzSumo enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/buzzsumo-editorial.webp" alt="Illustration zu BuzzSumo: Content-Team ordnet Themencluster und Trendsignale fuer die Kampagnenplanung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Content-Analyse:** Identifikation von populären Inhalten basierend auf Shares, Likes und Kommentaren in sozialen Netzwerken.

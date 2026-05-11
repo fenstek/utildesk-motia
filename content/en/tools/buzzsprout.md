@@ -32,6 +32,10 @@ A useful evaluation starts with a real recording with source material, editing, 
 - **Good starting point:** Test Buzzsprout in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Buzzsprout disappoints when source material, rights, target platforms, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/buzzsprout-editorial.webp" alt="Illustration for Buzzsprout: podcast team publishes episodes through abstract audio and distribution paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Podcast Hosting:** Reliable storage and distribution of audio files with good performance.

@@ -34,6 +34,10 @@ Civitai should first prove itself in one concrete asset with briefing, versions,
 - **Good start for Civitai:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Civitai:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/civitai-editorial.webp" alt="Illustration for Civitai: creators curate generative image styles and model variants in a digital gallery" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based Image Generation:** Automatic creation of images based on text descriptions or predefined parameters.

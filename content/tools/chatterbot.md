@@ -27,6 +27,10 @@ Bei ChatterBot würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - **Qualitätsfrage:** ob Trainingsdaten, Antwortgrenzen und Wartung realistisch sind.
 - **Risiko:** für moderne produktive Assistenten ohne Zusatzarchitektur oft zu begrenzt ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatterbot-editorial.webp" alt="Illustration zu ChatterBot: Entwickler testet Trainingsbeispiele und Dialoglogik fuer einen Chatbot" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisches Lernen:** ChatterBot kann durch Trainingsdaten aus verschiedenen Quellen wie Textdateien oder Datenbanken seine Antworten stetig verbessern.

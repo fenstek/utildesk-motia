@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitu
 - **Guter Startpunkt:** Ein Team sollte Buzzsprout zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Buzzsprout enttäuscht, wenn Ausgangsmaterial, Rechte, Zielplattformen und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/buzzsprout-editorial.webp" alt="Illustration zu Buzzsprout: Podcast-Team veroeffentlicht Episoden ueber abstrakte Audio- und Vertriebspfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Podcast-Hosting:** Zuverlässiges Speichern und Bereitstellen von Audio-Dateien mit guter Performance.

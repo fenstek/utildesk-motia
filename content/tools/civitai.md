@@ -30,6 +30,10 @@ Als Prüfstück für Civitai eignet sich einem konkreten Asset mit Briefing, Ver
 - **Guter Start für Civitai:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Civitai:** Ohne klare Regeln wird der Nutzen schwach, sobald Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/civitai-editorial.webp" alt="Illustration zu Civitai: Kreative kuratieren generative Bildstile und Modellvarianten in einer digitalen Galerie" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Bildgenerierung:** Automatisches Erstellen von Bildern auf Basis von Textbeschreibungen oder vorgegebenen Parametern.

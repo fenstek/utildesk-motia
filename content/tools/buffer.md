@@ -27,6 +27,10 @@ Buffer gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozessk
 - **Gute Voraussetzung:** für kleine Marketingteams, Gründer und Creator mit wiederkehrenden Beiträgen.
 - **Aufpassen bei:** bei fehlender Content-Strategie nur regelmäßig Mittelmaß verteilt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/buffer-editorial.webp" alt="Illustration zu Buffer: Redaktionsteam plant Social-Media-Beitraege auf einer gemeinsamen Zeitachse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Social-Media-Planung:** Beiträge können im Voraus für verschiedene Plattformen wie Facebook, Twitter, LinkedIn, Instagram und Pinterest geplant und automatisiert veröffentlicht werden.

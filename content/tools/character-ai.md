@@ -32,6 +32,10 @@ Character AI sollte zuerst in einer wiederkehrenden Aufgabe mit Eingabe, erwarte
 - **Guter Start für Character AI:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Character AI:** Ohne klare Regeln wird der Nutzen schwach, sobald Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/character-ai-editorial.webp" alt="Illustration zu Character AI: Nutzer waehlt zwischen unterschiedlichen KI-Persoenlichkeiten fuer kreative Dialoge" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung:** Die KI versteht und antwortet in natürlicher, flüssiger Sprache.

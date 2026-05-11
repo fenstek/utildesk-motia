@@ -33,6 +33,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** For Capture One, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Capture One disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/capture-one-editorial.webp" alt="Illustration for Capture One: photography team refines RAW images through color and selection workflows" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Professional RAW conversion with high color depth and detail fidelity  
