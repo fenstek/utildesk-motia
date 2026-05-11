@@ -9,6 +9,13 @@ _Last updated: 2026-05-11_
 - Added runbook `docs/04_operations/ubuntu_deploy_sync.md` and linked it from `scripts/README.md`.
 - The new flow requires clean committed work, production-relevant memory/handoff updates, `origin/master`/`origin/autobot` alignment, and a safe laptop production-memory mirror when the main checkout is dirty.
 
+## 2026-05-11 - Tool illustration batch 8
+
+- Added one mid-article WebP illustration to 10 additional manually edited tool cards in both German and English.
+- Selection follows the previous edited-tail runs: next registry-backed alphabetical candidates not already listed in `docs/04_operations/tool_card_illustration_registry.json`.
+- Slugs: `beautiful-ai`, `beautyplus`, `befunky`, `bert`, `betty-blocks`, `bigbluebutton`, `binder`, `bookafy`, `box`, `branchtrack`.
+- Recorded the batch in `docs/04_operations/tool_card_illustration_registry.json` so future illustration passes skip these tools.
+
 ## 2026-05-11 - Ableton Live manual editorial rewrite
 
 - Rewrote the previously unregistered production-generated Ableton Live tool card in German and English.

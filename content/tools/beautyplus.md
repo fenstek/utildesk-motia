@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für BeautyPlus nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** BeautyPlus enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/beautyplus-editorial.webp" alt="Illustration zu BeautyPlus: Creator-Team prüft Portraitbearbeitung mit abstrakten Retuschemasken im Studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Retusche:** Automatische Verschönerung von Haut, Entfernung von Unreinheiten und Anpassung von Gesichtszügen

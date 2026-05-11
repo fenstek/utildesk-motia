@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Für BranchTrack eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** BranchTrack enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/branchtrack-editorial.webp" alt="Illustration zu BranchTrack: Trainer gestalten verzweigte Entscheidungsszenarien für interaktive Schulungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Simulationserstellung:** Nutzer können ohne Programmierkenntnisse komplexe Entscheidungsbäume und Szenarien gestalten.

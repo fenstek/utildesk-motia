@@ -27,6 +27,10 @@ Box überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, son
 - **Vorher klären:** welche Datenklassen, Freigaben und Aufbewahrungsregeln sauber abgebildet werden.
 - **Nicht unterschätzen:** ohne klare Ordner- und Rechtepolitik zum Ablagefriedhof wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/box-editorial.webp" alt="Illustration zu Box: Team organisiert sichere Dateiablage mit Freigaben, Versionen und Cloud-Archiv" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Aufgabenverwaltung:** Erstellung und Steuerung von wiederkehrenden Aufgaben ohne manuellen Aufwand.

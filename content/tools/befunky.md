@@ -37,6 +37,10 @@ BeFunky sollte zuerst in einem konkreten Asset mit Briefing, Versionen, Feedback
 - **Guter Start für BeFunky:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei BeFunky:** Kritisch wird es, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/befunky-editorial.webp" alt="Illustration zu BeFunky: Designer erstellt Collage- und Bildvarianten an einem kreativen Arbeitsplatz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Bildbearbeitung:** Umfassende Tools zur Anpassung von Helligkeit, Kontrast, Sättigung und Schärfe

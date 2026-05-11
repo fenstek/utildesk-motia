@@ -30,6 +30,10 @@ Ein belastbarer Pilot für BERT (Bidirectional Encoder Representations from Tran
 - **Guter Start für BERT (Bidirectional Encoder Representations from Transformers):** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei BERT (Bidirectional Encoder Representations from Transformers):** Kritisch wird es, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bert-editorial.webp" alt="Illustration zu BERT: Entwickler analysieren abstrakte Sprach-Tokens und Attention-Pfade in einem Modellraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Bidirektionale Kontextanalyse:** Versteht Wörter im Kontext von links und rechts, was zu genaueren Ergebnissen führt.

@@ -27,6 +27,10 @@ Der beste Praxistest für Betty Blocks ist klein, aber echt. Ein Team sollte ein
 - **Rollout-Frage:** welche Apps produktiv kritisch werden und wer sie langfristig betreibt.
 - **Bremse:** bei fehlender Architekturkontrolle Schatten-IT und Wartungsprobleme erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/betty-blocks-editorial.webp" alt="Illustration zu Betty Blocks: Team baut aus modularen No-Code-Bausteinen einen internen Workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle Drag-and-Drop-Oberfläche zur Erstellung von Anwendungen ohne Code

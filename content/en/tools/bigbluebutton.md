@@ -33,6 +33,10 @@ BigBlueButton performs best when implementation is understood not as a tool chan
 - **Good prerequisite:** for schools, universities, and organizations that want self-hosting.
 - **Watch out for:** can quickly run into audio and scaling limits with weak server administration.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bigbluebutton-editorial.webp" alt="Illustration for BigBlueButton: instructor moderates an online class with abstract video tiles and a whiteboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Video and audio conferencing with multiple participants

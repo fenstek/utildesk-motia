@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Für Bookafy eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Bookafy enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bookafy-editorial.webp" alt="Illustration zu Bookafy: Koordinatorin ordnet Termine, Verfügbarkeit und Erinnerungen in einem Servicebüro" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Online-Terminbuchung:** Kunden können verfügbare Zeiten direkt online einsehen und buchen.

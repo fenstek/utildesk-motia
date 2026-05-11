@@ -41,6 +41,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** For BranchTrack, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** BranchTrack disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/branchtrack-editorial.webp" alt="Illustration for BranchTrack: trainers design branching decision scenarios for interactive learning" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Simulation Creation:** Users can create complex decision trees and scenarios without programming knowledge.

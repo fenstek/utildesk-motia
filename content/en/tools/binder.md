@@ -34,6 +34,10 @@ A good test case for Binder is a real development flow from setup through test d
 - **Good start for Binder:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Binder:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/binder-editorial.webp" alt="Illustration for Binder: researcher launches a reproducible notebook environment from data, packages, and cloud resources" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Cloud-based execution of Jupyter Notebooks:** Start Notebooks directly in the browser without local installation.

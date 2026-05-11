@@ -31,6 +31,10 @@ Box does not impress because it offers as many options as possible, but when the
 - **Clarify first:** which data classes, approvals, and retention rules can be represented cleanly.
 - **Do not underestimate:** without a clear folder and permissions policy, it turns into a dumping ground.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/box-editorial.webp" alt="Illustration for Box: team organizes secure file storage with approvals, versions, and a cloud archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automated task management:** Creation and control of recurring tasks without manual effort.

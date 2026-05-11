@@ -40,6 +40,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Keep the first BeautyPlus trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** BeautyPlus disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/beautyplus-editorial.webp" alt="Illustration for BeautyPlus: creator team reviews portrait editing with abstract retouching masks in a studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based Retouching:** Automatic enhancement of skin, removal of blemishes, and adjustment of facial features
