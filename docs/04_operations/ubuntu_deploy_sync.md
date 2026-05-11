@@ -149,7 +149,7 @@ Windows scheduled task:
 powershell -ExecutionPolicy Bypass -File scripts\install_windows_auto_sync_task.ps1
 ```
 
-This installs `UtildeskMotiaAutoSync`, running every 5 minutes. It calls
+This installs `UtildeskMotiaAutoSync`, running every 15 minutes. It calls
 `scripts/run_windows_auto_sync_hidden.vbs`, which launches PowerShell with
 `-WindowStyle Hidden`. That runner calls `scripts/run_windows_auto_sync.ps1`,
 which in turn runs the production sync helper and updates Ubuntu by SSH unless
@@ -163,7 +163,7 @@ cd ~/projects/utildesk-motia-worker
 bash scripts/install_ubuntu_auto_sync_cron.sh
 ```
 
-This installs a managed crontab block that runs every 5 minutes. It calls
+This installs a managed crontab block that runs every 15 minutes. It calls
 `scripts/run_ubuntu_auto_sync.sh`, which fetches production refs, mirrors hub,
 and fast-forwards only when the worker checkout is clean.
 
@@ -171,3 +171,7 @@ Logs:
 
 - Windows: `C:\projects\utildesk-motia-production-sync\logs\auto-sync.log`
 - Ubuntu: `~/utildesk-chatgpt-worker/logs/auto-sync.log`
+
+The logs are ignored by Git (`*.log`) and are not project memory. Auto-sync does
+not edit `memory/*.md`, `HANDOFF.md`, or content files; it only fetches refs,
+fast-forwards clean checkouts, and updates clean production mirrors.

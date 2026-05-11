@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-INTERVAL_MINUTES="${INTERVAL_MINUTES:-5}"
+INTERVAL_MINUTES="${INTERVAL_MINUTES:-15}"
 REPO="${UTILDESK_REPO:-$HOME/projects/utildesk-motia-worker}"
 RUNNER="$REPO/scripts/run_ubuntu_auto_sync.sh"
 MARKER_START="# >>> utildesk-motia auto-sync (managed)"

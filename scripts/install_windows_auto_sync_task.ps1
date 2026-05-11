@@ -2,7 +2,7 @@ param(
   [string]$TaskName = "UtildeskMotiaAutoSync",
   [string]$RunScript = "C:\projects\utildesk-motia-production-sync\scripts\run_windows_auto_sync.ps1",
   [string]$HiddenRunner = "",
-  [int]$IntervalMinutes = 5
+  [int]$IntervalMinutes = 15
 )
 
 $ErrorActionPreference = "Stop"
