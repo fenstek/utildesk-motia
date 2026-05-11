@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Cohere beginnt mit einer wiederkehrenden Aufgabe mit 
 - **Guter Start für Cohere:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Cohere:** Ohne klare Regeln wird der Nutzen schwach, sobald Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cohere-editorial.webp" alt="Illustration zu Cohere: KI-Team ordnet Dokumente, Embeddings und Retrieval-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Textgenerierung:** Erstellen von Texten, Zusammenfassungen und Antworten basierend auf Eingaben.

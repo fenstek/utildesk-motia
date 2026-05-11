@@ -36,6 +36,10 @@ Als Prüfstück für Convai eignet sich einem echten Kontaktfall mit Eingang, Pr
 - **Guter Start für Convai:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Convai:** Der Einsatz kippt in Zusatzarbeit, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/convai-editorial.webp" alt="Illustration zu Convai: Game-Designer verbindet virtuelle Figuren mit Dialogpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (NLP):** Convai nutzt fortschrittliche Algorithmen, um menschliche Sprache präzise zu verstehen und zu verarbeiten.

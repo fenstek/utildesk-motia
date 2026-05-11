@@ -34,6 +34,10 @@ In day-to-day work, Cubase rewards people who maintain templates and project str
 
 The learning curve is real, but not unfriendly. You do not have to know everything to make music. It makes sense to first master your own production workflow and add specialized features later.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cubase-editorial.webp" alt="Illustration for Cubase: music producer arranges tracks, instruments, and mixer signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Multitrack recording, audio editing, and arrangement.

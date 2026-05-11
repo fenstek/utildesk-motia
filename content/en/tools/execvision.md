@@ -37,6 +37,10 @@ In day-to-day work, ExecVision should not be introduced as a monitoring tool. Ot
 
 The most valuable insights often lie in small moments: When is the pitch too early, which question opens the customer up, which objections repeat themselves? That is exactly where analysis turns into training.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/execvision-editorial.webp" alt="Illustration for ExecVision: sales team analyzes conversation moments in a coaching room" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Recording, transcription, and search in conversations.

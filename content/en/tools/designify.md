@@ -43,6 +43,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Keep the first Designify trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Designify disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/designify-editorial.webp" alt="Illustration for Designify: e-commerce studio refines product photos with backgrounds and shadows" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Background Removal:** Removes backgrounds from images precisely and quickly, ideal for product photos.  

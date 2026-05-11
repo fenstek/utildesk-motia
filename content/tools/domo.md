@@ -22,6 +22,10 @@ Domo richtet sich an Unternehmen jeder Größe, die ihre Daten zentralisieren un
 - Fachabteilungen wie Vertrieb, Marketing, Finanzen und IT, die datenbasierte Entscheidungen treffen wollen
 - Organisationen, die skalierbare und anpassbare Business-Intelligence-Tools bevorzugen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/domo-editorial.webp" alt="Illustration zu Domo: Business-Team liest Unternehmenssignale in einer Datensternwarte" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenintegration:** Verbindung zu hunderten Datenquellen, einschließlich Cloud-Diensten, Datenbanken und On-Premises-Systemen

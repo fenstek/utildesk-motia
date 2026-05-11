@@ -16,6 +16,10 @@ Doubao ist ein KI-gestützter Chatbot und Assistent, der entwickelt wurde, um di
 
 Doubao richtet sich an Unternehmen, Entwickler und Einzelpersonen, die eine intelligente, automatisierte Unterstützung für Kundenservice, Informationsbeschaffung oder tägliche Aufgaben suchen. Besonders nützlich ist das Tool für kleine und mittelständische Unternehmen, die ohne großen Aufwand KI-Technologie integrieren möchten, sowie für Tech-Enthusiasten, die Chatbots testen oder personalisieren wollen. Je nach Funktionsumfang und Tarif kann Doubao auch in größeren Organisationen als Teil von Kommunikations- oder Supportlösungen eingesetzt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/doubao-editorial.webp" alt="Illustration zu Doubao: Nutzerin organisiert Alltag, Lernen und Sprache mit KI-Hilfen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Intelligente Konversation: Verarbeitung natürlicher Sprache zur dynamischen und kontextbezogenen Kommunikation  

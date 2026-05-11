@@ -40,6 +40,10 @@ A good test case for Convai is a real contact case with intake, prioritization, 
 - **Good start for Convai:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Convai:** The rollout turns into extra coordination when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/convai-editorial.webp" alt="Illustration for Convai: game designer connects virtual characters with dialogue paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Convai uses advanced algorithms to precisely understand and process human language.

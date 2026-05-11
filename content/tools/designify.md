@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Designify nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Designify enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/designify-editorial.webp" alt="Illustration zu Designify: E-Commerce-Studio veredelt Produktfotos mit Hintergruenden und Schatten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Hintergrundentfernung:** Entfernt Hintergründe von Bildern präzise und schnell, ideal für Produktfotos.  

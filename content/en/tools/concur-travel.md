@@ -32,6 +32,10 @@ With Concur Travel, I would distinguish early between the demo experience and op
 - **Quality question:** whether local travel policies, payment paths, and reporting are documented cleanly.
 - **Risk:** with poorly maintained policies, it is more likely to block than to relieve work.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/concur-travel-editorial.webp" alt="Illustration for Concur Travel: travel team plans routes, receipts, and approvals on a shared table" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Travel booking:** integration of flights, hotels, rental cars, and other services in one platform.

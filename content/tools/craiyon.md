@@ -31,6 +31,10 @@ Ein belastbarer Pilot für Craiyon beginnt mit einem konkreten Asset mit Briefin
 - **Guter Start für Craiyon:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Craiyon:** Der Einsatz kippt in Zusatzarbeit, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/craiyon-editorial.webp" alt="Illustration zu Craiyon: Kreative waehlt aus spielerischen KI-Bildvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Text-zu-Bild-Generierung: Erstellung von Bildern basierend auf kurzen oder ausführlichen Texteingaben.

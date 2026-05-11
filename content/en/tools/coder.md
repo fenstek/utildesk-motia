@@ -19,6 +19,10 @@ Coder is a tool specifically designed for developers to optimize their coding wo
 
 Coder is geared towards professional software developers, teams, and enterprises looking to standardize and centralize their development environment. It is particularly useful for developers working in distributed teams, requiring remote coding, or managing complex projects with multiple stakeholders. Developers prioritizing a secure, scalable, and cloud-based development environment will also find Coder a suitable solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coder-editorial.webp" alt="Illustration for Coder: development team connects cloud workspaces with containers and code environments" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Cloud-based Development Environments:** Access to fully configured workspaces over the cloud, without the need for local installation.

@@ -39,6 +39,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Deep AI.
 - **Common pitfall:** Deep AI disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-ai-editorial.webp" alt="Illustration for Deep AI: creators and analysts use several AI tools around a model core" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Image and Video Analysis:** Object recognition, sentiment analysis, and content analysis of images and videos.

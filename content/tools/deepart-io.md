@@ -25,6 +25,10 @@ DeepArt.io passt zu Nutzern, die visuelle Experimente, Posterideen oder künstle
 - Geschenk-, Poster- oder Dekorationsideen vorbereiten.
 - KI-Stiltransfer als Inspiration für manuelle Gestaltung nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepart-io-editorial.webp" alt="Illustration zu DeepArt.io: Kurator prueft Stiltransfer zwischen Foto und Kunstvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-basierter Stiltransfer auf vorhandene Bilder.

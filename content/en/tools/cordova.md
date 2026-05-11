@@ -32,6 +32,10 @@ Cordova does not convince by having as many options as possible, but when the co
 - **Clarify first:** which device features are really needed and whether plugins are maintained.
 - **Do not underestimate:** it can hit limits with demanding native UX or performance.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cordova-editorial.webp" alt="Illustration for Cordova: developer connects web code with native mobile devices" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Cross-platform development with HTML5, CSS3, and JavaScript

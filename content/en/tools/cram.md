@@ -33,6 +33,10 @@ Cram should not be evaluated in isolation. What matters is where it sits in the 
 - **Measure:** whether learning sets are maintained, reviewed, and not blindly copied.
 - **Limit:** understanding is not replaced when only answer pairs are memorized.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cram-editorial.webp" alt="Illustration for Cram: student organizes digital flashcards and review paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Creation of digital flashcards:** Easy creation and organization of flashcards on any topic.

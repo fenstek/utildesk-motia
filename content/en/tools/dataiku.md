@@ -39,6 +39,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** For Dataiku, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Dataiku disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dataiku-editorial.webp" alt="Illustration for Dataiku: data science team connects raw data, models, and governance" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Visual workflow creation:** Drag-and-drop interface for easily modeling data pipelines.

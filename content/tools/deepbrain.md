@@ -27,6 +27,10 @@ Der beste Praxistest für DeepBrain ist klein, aber echt. Ein Team sollte einen 
 - **Rollout-Frage:** welche Sprecherrolle, Sprache und Freigabequalität zur Marke passen.
 - **Bremse:** ohne gutes Skript und Markenprüfung generisch oder künstlich wirkt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepbrain-editorial.webp" alt="Illustration zu DeepBrain: Videostudio produziert generische Avatare mit Stimme und Skriptstruktur" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierung von Geschäftsprozessen:** DeepBrain ermöglicht die Automatisierung wiederkehrender Aufgaben ohne umfangreiche Programmierkenntnisse.

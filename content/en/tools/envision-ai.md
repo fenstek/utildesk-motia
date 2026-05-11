@@ -31,6 +31,10 @@ With Envision AI, I would draw a clear line early between demo impression and op
 - **Quality question:** how privacy, offline situations, and misinterpretations are handled.
 - **Risk:** does not reliably recognize every situation and does not replace human judgment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/envision-ai-editorial.webp" alt="Illustration for Envision AI: person with smart glasses navigates a station with audio cues" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Automatic video recognition and classification

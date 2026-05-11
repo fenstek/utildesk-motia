@@ -24,6 +24,10 @@ DominKnow | ONE richtet sich an eine breite Zielgruppe im Bildungs- und Training
 
 Die Plattform eignet sich sowohl für Anfänger mit wenig technischem Hintergrund als auch für erfahrene Entwickler, die komplexere Lerninhalte erstellen wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dominknow-one-editorial.webp" alt="Illustration zu DominKnow | ONE: Instructional Designer bauen verzweigte Lernmodule auf einer Studiobuehne" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multimediale Content-Erstellung:** Unterstützung von Text, Bildern, Videos, Audio, Animationen und interaktiven Elementen.

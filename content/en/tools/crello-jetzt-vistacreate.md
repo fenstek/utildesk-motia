@@ -34,6 +34,10 @@ A useful pilot for Crello (jetzt VistaCreate) starts with one concrete asset wit
 - **Good start for Crello (jetzt VistaCreate):** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Crello (jetzt VistaCreate):** The rollout turns into extra coordination when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crello-jetzt-vistacreate-editorial.webp" alt="Illustration for Crello (jetzt VistaCreate): designer arranges templates, color boards, and social media visuals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Workflow support in Crello (jetzt VistaCreate):** The tool should help teams move from input to reviewed output without hiding important decisions.

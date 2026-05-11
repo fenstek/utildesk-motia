@@ -35,6 +35,10 @@ Elasticsearch should first prove itself in a real development flow from setup th
 - **Good start for Elasticsearch:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Elasticsearch:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elasticsearch-editorial.webp" alt="Illustration for Elasticsearch: search team indexes documents in an underground search observatory" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Full-text search:** Fast and precise search across large document collections with support for complex queries.

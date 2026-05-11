@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Duolingo beginnt mit einer echten Lerneinheit mit Zie
 - **Guter Start für Duolingo:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Duolingo:** Ohne klare Regeln wird der Nutzen schwach, sobald Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/duolingo-editorial.webp" alt="Illustration zu Duolingo: Sprachlernende folgt Uebungspfaden durch einen bunten Markt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Sprachlektionen:** Spielerische Übungen zu Wortschatz, Grammatik und Aussprache.

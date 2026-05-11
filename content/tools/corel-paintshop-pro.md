@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Corel PaintShop Pro nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Corel PaintShop Pro enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/corel-paintshop-pro-editorial.webp" alt="Illustration zu Corel PaintShop Pro: Fototeam bearbeitet Farben, Ebenen und Auswahlmasken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Umfangreiche Werkzeuge zur Bildretusche und -korrektur (z. B. Farbkorrektur, Rauschreduzierung, Objektentfernung)

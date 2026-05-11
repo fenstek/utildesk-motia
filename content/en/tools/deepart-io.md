@@ -20,6 +20,10 @@ DeepArt.io is an innovative online tool that utilizes artificial intelligence to
 
 DeepArt.io is designed for creatives, photographers, designers, and hobby artists who want to enhance their photos with artistic effects without requiring extensive image editing knowledge. It is also ideal for social media users who want to visually highlight their content, as well as small businesses that want to create visually appealing marketing materials with a touch of artistic flair. Since the tool is easy to use and does not require software installation, it is also suitable for beginners and occasional users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepart-io-editorial.webp" alt="Illustration for DeepArt.io: curator reviews style transfer between a photo and art variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Artistic Style Transfer:** Transforms photos into artworks in the style of famous artists or individual artistic styles.

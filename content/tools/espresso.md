@@ -16,6 +16,10 @@ Espresso ist ein modernes KI-Tool, das speziell für Datenanalyse, maschinelles 
 
 Espresso richtet sich an Datenanalysten, Data Scientists, IT-Manager und Unternehmen, die ihre Prozesse durch intelligente Automatisierung und fortgeschrittene Analyseverfahren optimieren möchten. Besonders geeignet ist es für Organisationen, die große Datenmengen verarbeiten und auf Cloud-basierte Lösungen setzen, um ihre Effizienz zu steigern und fundierte Entscheidungen zu treffen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/espresso-editorial.webp" alt="Illustration zu Espresso: Mobile-Testlabor prueft Gesten, Navigation und Fehlzustaende" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Datenintegration aus verschiedenen Quellen, einschließlich Cloud-Datenbanken und APIs  

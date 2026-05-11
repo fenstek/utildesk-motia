@@ -35,6 +35,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Keep the first Corel PaintShop Pro trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Corel PaintShop Pro disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/corel-paintshop-pro-editorial.webp" alt="Illustration for Corel PaintShop Pro: photo team edits colors, layers, and selection masks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Photo correction, retouching, cropping, and color adjustment.

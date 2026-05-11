@@ -32,6 +32,10 @@ Im Alltag belohnt Cubase Menschen, die Templates und Projektstruktur pflegen. Sp
 
 Die Lernkurve ist real, aber nicht unfreundlich. Man muss nicht alles können, um Musik zu machen. Sinnvoll ist, zuerst den eigenen Produktionsweg zu beherrschen und Spezialfunktionen später dazuzunehmen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cubase-editorial.webp" alt="Illustration zu Cubase: Musikproduzent arrangiert Spuren, Instrumente und Mixer-Signale" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Mehrspuraufnahme, Audioediting und Arrangement.

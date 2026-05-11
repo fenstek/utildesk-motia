@@ -24,6 +24,10 @@ Suitable for patent departments, R&D, legal, competitive intelligence, and techn
 
 Derwent Innovation is most useful for teams and individuals that treat a patent and IP research platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/derwent-innovation-editorial.webp" alt="Illustration for Derwent Innovation: patent analysts explore technology paths in a research archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Analyze patent landscapes

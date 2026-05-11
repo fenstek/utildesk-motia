@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor ConvertKit breiter ausgerollt wird.
 - **Häufiger Stolperstein:** ConvertKit enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/convertkit-editorial.webp" alt="Illustration zu ConvertKit: Creator plant Newsletter, Zielgruppen und E-Mail-Journeys" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mail-Marketing:** Erstellen und Versenden von Newslettern und Kampagnen mit anpassbaren Vorlagen.

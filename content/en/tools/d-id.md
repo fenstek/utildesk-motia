@@ -36,6 +36,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** Keep the first D-ID trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** D-ID disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/d-id-editorial.webp" alt="Illustration for D-ID: video team creates generic presenters with voice and storyboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Face Animation from Photos**: Creates lifelike animations from static images.

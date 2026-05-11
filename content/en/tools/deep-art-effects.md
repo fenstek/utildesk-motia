@@ -28,6 +28,10 @@ Deep Art Effects is particularly suitable for creatives who want to enhance thei
 
 The tool is suitable for both beginners and experienced users, as it offers a user-friendly interface and various customization options.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-art-effects-editorial.webp" alt="Illustration for Deep Art Effects: artist transforms photos into layered art styles" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered Style Transfer:** Transfers the style of famous artists such as Van Gogh, Picasso, or Monet onto your own photos.  

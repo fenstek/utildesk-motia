@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-11_
 
+## 2026-05-11 - Tool illustration batch 10
+
+- Added one mid-article WebP illustration to 50 additional manually edited tool cards in both German and English.
+- Continued the smaller illustration scheme: 1260px source WebP assets and the existing 90% `.tool-editorial-figure` display width.
+- Selection follows the edited-tail illustration registry after `cloudera-data-platform`; slugs run from `codecademy` through `faceapp`.
+- Expanded the newer story prompts within the batch to vary settings and visual metaphors more strongly, following user feedback during generation.
+- Generated PNG originals for this batch were removed after WebP conversion so the local image cache does not keep unnecessary source files.
+
 ## 2026-05-11 - Tool illustration batch 9
 
 - Added one mid-article WebP illustration to 20 additional manually edited tool cards in both German and English.

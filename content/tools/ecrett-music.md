@@ -20,6 +20,10 @@ Ecrett Music eignet sich für Video-Creator, kleine Game-Teams, Präsentationen 
 
 Besonders sinnvoll ist das Tool, wenn Szenen viele Stimmungsvarianten brauchen oder Content regelmäßig vertont wird. Für markante Brand-Sounds, Trailer-Musik oder musikalisch anspruchsvolle Produktionen sollte man dagegen mehr Kontrolle und menschliche Komposition einplanen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ecrett-music-editorial.webp" alt="Illustration zu Ecrett Music: Creator erzeugt Soundtracks aus Stimmungen, Genres und Melodiepfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Hintergrundmusik für Videos erzeugen

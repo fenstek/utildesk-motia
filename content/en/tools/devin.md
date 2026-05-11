@@ -24,6 +24,10 @@ Devin is relevant for teams that seriously evaluate coding agents and can define
 
 Devin is most useful for teams and individuals that treat a AI software agent as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/devin-editorial.webp" alt="Illustration for Devin: engineering agent moves tasks between tickets, code, and a test bench" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Cut bug fixes or small features into agent tasks

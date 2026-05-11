@@ -16,6 +16,10 @@ Coder ist ein Tool, das speziell für Entwickler entwickelt wurde, um den Progra
 
 Coder richtet sich an professionelle Softwareentwickler, Teams und Unternehmen, die ihre Entwicklungsumgebung standardisieren und zentralisieren möchten. Es ist besonders nützlich für Entwickler, die in verteilten Teams arbeiten, Remote-Coding benötigen oder komplexe Projekte mit mehreren Beteiligten koordinieren wollen. Auch Entwickler, die Wert auf eine sichere, skalierbare und cloudbasierte Entwicklungsumgebung legen, finden in Coder eine passende Lösung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coder-editorial.webp" alt="Illustration zu Coder: Entwicklungsteam verbindet Cloud-Workspaces mit Containern und Code-Umgebungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte Entwicklungsumgebungen:** Zugriff auf vollständig konfigurierte Workspaces über die Cloud, ohne lokale Installation.

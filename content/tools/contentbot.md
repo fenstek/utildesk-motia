@@ -38,6 +38,10 @@ Ein belastbarer Pilot für ContentBot beginnt mit einem echten Textauftrag mit B
 - **Guter Start für ContentBot:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei ContentBot:** Ohne klare Regeln wird der Nutzen schwach, sobald Quellen, Tonalität, Review-Regeln, Sprachvarianten und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/contentbot-editorial.webp" alt="Illustration zu ContentBot: Marketingteam formt Ideen, Entwuerfe und Kampagnenkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Texterstellung:** Generierung von Blogartikeln, Produktbeschreibungen, Social-Media-Posts und mehr.

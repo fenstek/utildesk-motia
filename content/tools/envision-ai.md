@@ -27,6 +27,10 @@ Bei Envision AI würde ich früh zwischen Demo-Eindruck und Betriebsrealität un
 - **Qualitätsfrage:** wie Datenschutz, Offline-Situationen und Fehlinterpretationen gehandhabt werden.
 - **Risiko:** nicht jede Situation zuverlässig erkennt und keine menschliche Einschätzung ersetzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/envision-ai-editorial.webp" alt="Illustration zu Envision AI: Person mit Smart Glasses navigiert Bahnhof mit Audio-Hinweisen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Videoerkennung und -klassifikation

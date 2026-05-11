@@ -45,6 +45,10 @@ The best practical test for DeepBrain is small, but real. A team should run thro
 - **Practical check:** which speaker role, language, and approval quality fit the brand.
 - **Team rollout:** create explainer videos and announcements from scripts faster.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepbrain-editorial.webp" alt="Illustration for DeepBrain: video studio produces generic avatars with voice and script structure" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and Cons
 
 ### Pros

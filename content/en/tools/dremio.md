@@ -40,6 +40,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Test Dremio in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Dremio disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dremio-editorial.webp" alt="Illustration for Dremio: analysts build query bridges across an open data landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Data Virtualization:** Access to various data sources without physical data movement.

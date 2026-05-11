@@ -21,6 +21,10 @@ Cursor is an innovative developer tool that utilizes artificial intelligence to 
 
 Cursor is primarily aimed at software developers who want to increase their productivity and automate routine tasks. The tool is of interest to both beginners and experienced programmers, as it provides intelligent support in code creation. It is particularly useful for developers who spend a lot of time with debugging and code reviews or want to learn new programming languages. Teams seeking a collaborative development environment can also benefit from its features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cursor-editorial.webp" alt="Illustration for Cursor: developer navigates a codebase, tests, and AI suggestions" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Functions
 
 - **AI-based Code Completion:** Cursor suggests context-dependent code snippets and helps with faster programming.

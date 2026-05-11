@@ -27,6 +27,10 @@ Cordova überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind,
 - **Vorher klären:** welche Gerätefunktionen wirklich gebraucht werden und ob Plugins gepflegt sind.
 - **Nicht unterschätzen:** bei anspruchsvoller nativer UX oder Performance an Grenzen stößt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cordova-editorial.webp" alt="Illustration zu Cordova: Entwickler verbindet Webcode mit nativen Mobilgeraeten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Plattformübergreifende Entwicklung mit HTML5, CSS3 und JavaScript

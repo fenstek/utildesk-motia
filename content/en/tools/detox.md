@@ -23,6 +23,10 @@ Suitable for mobile teams, QA automation, and projects with frequent regressions
 
 Detox is most useful for teams and individuals that treat a mobile test automation as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/detox-editorial.webp" alt="Illustration for Detox: mobile QA team runs app tests across devices and check gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Test login, onboarding, and checkout flows

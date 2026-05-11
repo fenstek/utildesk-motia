@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Ein Team sollte FaceApp zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** FaceApp enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/faceapp-editorial.webp" alt="Illustration zu FaceApp: Portraitstudio zeigt generische Varianten fuer Licht, Alter und Ausdruck" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Gesichtsbearbeitung:** Realistische Veränderungen wie Alterung, Verjüngung oder Geschlechtswechsel.

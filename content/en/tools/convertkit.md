@@ -34,6 +34,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for ConvertKit.
 - **Common pitfall:** ConvertKit disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/convertkit-editorial.webp" alt="Illustration for ConvertKit: creator plans newsletters, audiences, and email journeys" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email Marketing:** Create and send newsletters and campaigns with customizable templates.

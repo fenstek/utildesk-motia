@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte Dremio zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Dremio enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dremio-editorial.webp" alt="Illustration zu Dremio: Analysten bauen Abfragebruecken ueber eine offene Datenlandschaft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenvirtualisierung:** Zugriff auf verschiedenste Datenquellen ohne physische Datenverschiebung.

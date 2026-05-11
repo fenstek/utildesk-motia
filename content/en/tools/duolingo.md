@@ -34,6 +34,10 @@ Duolingo should first prove itself in a real learning unit with goal, task, feed
 - **Good start for Duolingo:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Duolingo:** The rollout turns into extra coordination when learning goal, level, feedback rules, and learner privacy remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/duolingo-editorial.webp" alt="Illustration for Duolingo: language learner follows practice paths through a colorful market" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Interactive language lessons:** Playful exercises for vocabulary, grammar, and pronunciation.

@@ -36,6 +36,10 @@ A useful pilot for DataRobot starts with a limited data set with a clear source,
 - **Good start for DataRobot:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with DataRobot:** The value becomes weak when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datarobot-editorial.webp" alt="Illustration for DataRobot: AutoML team compares model cards, monitoring, and deployment gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Machine Learning (AutoML):** Automated selection, training, and optimization of models.

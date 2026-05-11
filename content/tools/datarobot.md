@@ -30,6 +30,10 @@ Ein belastbarer Pilot für DataRobot beginnt mit einem begrenzten Datensatz mit 
 - **Guter Start für DataRobot:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei DataRobot:** Ohne klare Regeln wird der Nutzen schwach, sobald Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datarobot-editorial.webp" alt="Illustration zu DataRobot: AutoML-Team vergleicht Modellkarten, Monitoring und Deployment-Gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisiertes maschinelles Lernen (AutoML):** Automatische Auswahl, Training und Optimierung von Modellen.

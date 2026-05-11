@@ -27,6 +27,10 @@ Bei Concur Travel würde ich früh zwischen Demo-Eindruck und Betriebsrealität 
 - **Qualitätsfrage:** ob lokale Reiserichtlinien, Zahlungswege und Reporting sauber hinterlegt sind.
 - **Risiko:** bei schlecht gepflegten Policies eher blockiert als entlastet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/concur-travel-editorial.webp" alt="Illustration zu Concur Travel: Travel-Team plant Reiserouten, Belege und Freigaben auf einem Tisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Reisebuchung:** Integration von Flügen, Hotels, Mietwagen und weiteren Services in einer Plattform.

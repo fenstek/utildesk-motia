@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Deep AI breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Deep AI enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-ai-editorial.webp" alt="Illustration zu Deep AI: Kreative und Analysten nutzen mehrere KI-Werkzeuge um einen Modellkern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Bild- und Videoanalyse:** Erkennung von Objekten, Stimmungen und Inhalten in Bildern und Videos.
