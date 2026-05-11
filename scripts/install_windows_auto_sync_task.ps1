@@ -15,9 +15,11 @@ $action = New-ScheduledTaskAction `
   -Execute "powershell.exe" `
   -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$escapedScript`""
 
-$trigger = New-ScheduledTaskTrigger -Once -At ((Get-Date).AddMinutes(1))
-$trigger.Repetition.Interval = "PT${IntervalMinutes}M"
-$trigger.Repetition.Duration = "P3650D"
+$trigger = New-ScheduledTaskTrigger `
+  -Once `
+  -At ((Get-Date).AddMinutes(1)) `
+  -RepetitionInterval (New-TimeSpan -Minutes $IntervalMinutes) `
+  -RepetitionDuration (New-TimeSpan -Days 3650)
 
 $settings = New-ScheduledTaskSettingsSet `
   -MultipleInstances IgnoreNew `
