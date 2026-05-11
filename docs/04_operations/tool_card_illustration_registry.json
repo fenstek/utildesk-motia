@@ -539,6 +539,25 @@
         "content/images/tools/chanty-editorial.webp",
         "content/images/tools/citavi-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-05-11-clip-studio-paint-png-editorial-illustration",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "source_format": "png",
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "note": "Single-card continuation of the previous PNG-to-WebP tool-card illustration scheme. Uses an artistic narrative scene; no SVG renderer, logos, readable text, captions, or brand marks.",
+      "slugs": [
+        "clip-studio-paint"
+      ],
+      "images": [
+        "content/images/tools/clip-studio-paint-editorial.webp"
+      ]
     }
   ]
 }

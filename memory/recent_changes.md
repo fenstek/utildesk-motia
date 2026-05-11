@@ -1,5 +1,10 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-10_
+_Last updated: 2026-05-11_
+
+## 2026-05-11 - Clip Studio Paint tool illustration
+
+- Added one mid-article WebP illustration to the Clip Studio Paint tool card in both German and English.
+- Followed the previous PNG-to-WebP scheme: generated raster artwork, converted to 1400px-wide WebP, inserted an image-only `tool-editorial-figure`, and recorded the slug in `docs/04_operations/tool_card_illustration_registry.json`.
 
 ## 2026-05-10 - Tool illustration batch 6
 
