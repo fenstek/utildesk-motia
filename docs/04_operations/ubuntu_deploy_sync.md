@@ -112,10 +112,11 @@ work-in-progress.
 
 ## Ubuntu sync after a Windows deploy
 
-Windows can push production first and then sync the Ubuntu worker:
+Windows syncs the Ubuntu worker by default after a production sync. Use
+`-NoUbuntuSync` only when the Ubuntu machine is intentionally offline or you do
+not want the callback.
 
 ```powershell
-$env:UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS = "1"
 $env:UTILDESK_UBUNTU_SYNC_SSH = "jgdus@100.98.97.98"
 $env:UTILDESK_UBUNTU_SYNC_REPO = "~/projects/utildesk-motia-worker"
 powershell -ExecutionPolicy Bypass -File scripts/sync_after_remote_deploy.ps1 -SyncHub

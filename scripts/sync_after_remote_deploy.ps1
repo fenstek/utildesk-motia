@@ -4,7 +4,7 @@ param(
   [string]$Branch = "master",
   [string]$ProductionWorktree = "C:\projects\utildesk-motia-production-sync",
   [switch]$SyncHub,
-  [switch]$SyncUbuntu = ($env:UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS -eq "1"),
+  [switch]$SyncUbuntu = ($env:UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS -ne "0"),
   [switch]$NoUbuntuSync,
   [string]$UbuntuSsh = $(if ($env:UTILDESK_UBUNTU_SYNC_SSH) { $env:UTILDESK_UBUNTU_SYNC_SSH } else { "jgdus@100.98.97.98" }),
   [string]$UbuntuRepo = $(if ($env:UTILDESK_UBUNTU_SYNC_REPO) { $env:UTILDESK_UBUNTU_SYNC_REPO } else { "~/projects/utildesk-motia-worker" }),
