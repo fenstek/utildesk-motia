@@ -3,15 +3,11 @@ slug: tesseract-ocr
 title: Tesseract OCR
 category: Developer
 price_model: Open Source
-tags:
-  - ocr
-  - open-source
-  - developer
-  - documents
-  - local
-official_url: 'https://github.com/tesseract-ocr/tesseract'
-description: 'Tesseract OCR ist eine Open-Source-OCR-Engine für lokale Texterkennung und bleibt ein wichtiger Baustein, wenn Datenschutz, Kontrolle oder Kosten gegen Cloud-OCR sprechen.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://github.com/tesseract-ocr/tesseract"
+description: Tesseract OCR ist eine Open-Source-OCR-Engine für lokale Texterkennung und bleibt ein wichtiger Baustein, wenn Datenschutz, Kontrolle oder Kosten gegen Cloud-OCR sprechen.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Tesseract OCR
 

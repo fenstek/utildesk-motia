@@ -3,15 +3,11 @@ slug: docparser
 title: Docparser
 category: Automatisierung
 price_model: Abonnement
-tags:
-  - pdf
-  - document-parser
-  - data-extraction
-  - automation
-  - no-code
-official_url: 'https://docparser.com/'
-description: 'Docparser extrahiert strukturierte Daten aus wiederkehrenden PDFs und Dokumenten, wenn Layouts stabil genug sind, um Regeln, Zonen oder Parser-Logik zuverlässig anzuwenden.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://docparser.com/"
+description: Docparser extrahiert strukturierte Daten aus wiederkehrenden PDFs und Dokumenten, wenn Layouts stabil genug sind, um Regeln, Zonen oder Parser-Logik zuverlässig anzuwenden.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Docparser
 

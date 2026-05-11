@@ -6,7 +6,7 @@ price_model: Je nach Plan
 tags: ["api", "analytics", "nlp", "text", "developer"]
 official_url: "https://www.meaningcloud.com/"
 affiliate_url: "https://www.meaningcloud.com/"
-popularity: 40
+popularity: 33
 description: Textanalyse-API für Sentiment, Themen, Klassifikation, Extraktion und semantische Verarbeitung.
 ---
 

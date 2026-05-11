@@ -6,7 +6,7 @@ price_model: Freemium
 tags: [ai, design]
 official_url: "https://figma.com"
 created_at: 2026-02-12
-popularity: 89
+popularity: 91
 description: Figma ist eine kollaborative Designplattform für UI-Design, Prototyping, Designsysteme und Produktteams.
 ---
 # Figma

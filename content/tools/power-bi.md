@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [analytics, workflow]
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
-popularity: 25
+popularity: 20
 ---
 
 # Power BI

@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [video-editing,color-grading,post-production]
 official_url: "https://www.blackmagicdesign.com/products/davinciresolve"
-popularity: 63
+popularity: 54
 ---
 
 # DaVinci Resolve

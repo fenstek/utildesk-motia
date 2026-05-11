@@ -3,15 +3,11 @@ slug: aws-textract
 title: AWS Textract
 category: Developer
 price_model: Nutzungsbasiert
-tags:
-  - ocr
-  - documents
-  - api
-  - cloud
-  - data-extraction
-official_url: 'https://aws.amazon.com/textract/'
-description: 'AWS Textract ist ein Cloud-Dienst zum Extrahieren von Text, Tabellen, Formularfeldern und strukturierten Dokumentdaten innerhalb von AWS-Architekturen.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://aws.amazon.com/textract/"
+description: AWS Textract ist ein Cloud-Dienst zum Extrahieren von Text, Tabellen, Formularfeldern und strukturierten Dokumentdaten innerhalb von AWS-Architekturen.
+created_at: 2026-05-10
+popularity: 0
 ---
 # AWS Textract
 

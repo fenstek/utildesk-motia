@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [recruiting, hr, automation, ai]
 official_url: "https://www.fountain.com/"
-popularity: 59
+popularity: 51
 ---
 
 # Fountain

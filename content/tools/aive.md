@@ -6,8 +6,8 @@ price_model: Freemium
 tags: ["video", "content", "marketing"]
 official_url: "https://www.aive.com/"
 created_at: 2026-02-15
-popularity: 0
-description: "Aive unterstützt videozentrierte Marketing- und Content-Workflows mit Automatisierung, Analyse und kreativer Optimierung."
+popularity: 69
+description: Aive unterstützt videozentrierte Marketing- und Content-Workflows mit Automatisierung, Analyse und kreativer Optimierung.
 ---
 # Aive
 

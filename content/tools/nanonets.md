@@ -3,15 +3,11 @@ slug: nanonets
 title: Nanonets
 category: Automatisierung
 price_model: Je nach Plan
-tags:
-  - ocr
-  - invoice
-  - document-ai
-  - workflow
-  - api
-official_url: 'https://nanonets.com/'
-description: 'Nanonets verbindet OCR, Feldextraktion und Workflow-Automatisierung, damit Dokumente nicht nur erkannt, sondern auch geprüft und weitergeleitet werden.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://nanonets.com/"
+description: Nanonets verbindet OCR, Feldextraktion und Workflow-Automatisierung, damit Dokumente nicht nur erkannt, sondern auch geprüft und weitergeleitet werden.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Nanonets
 

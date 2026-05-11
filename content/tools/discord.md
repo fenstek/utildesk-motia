@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Freemium
 tags: [communication,community,chat,voice]
 official_url: "https://discord.com/"
-popularity: 60
+popularity: 52
 ---
 
 # Discord

@@ -3,15 +3,11 @@ slug: abbyy-vantage
 title: ABBYY Vantage
 category: Automatisierung
 price_model: Individuelles Angebot
-tags:
-  - ocr
-  - document-ai
-  - enterprise
-  - invoice
-  - automation
-official_url: 'https://www.abbyy.com/vantage/'
-description: 'ABBYY Vantage ist eine Enterprise-Plattform für intelligente Dokumentenverarbeitung, bei der OCR, Klassifikation, Extraktion und menschliche Prüfung zusammenspielen.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://www.abbyy.com/vantage/"
+description: ABBYY Vantage ist eine Enterprise-Plattform für intelligente Dokumentenverarbeitung, bei der OCR, Klassifikation, Extraktion und menschliche Prüfung zusammenspielen.
+created_at: 2026-05-10
+popularity: 0
 ---
 # ABBYY Vantage
 

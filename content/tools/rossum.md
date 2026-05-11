@@ -3,15 +3,11 @@ slug: rossum
 title: Rossum
 category: Automatisierung
 price_model: Individuelles Angebot
-tags:
-  - ocr
-  - invoice
-  - document-ai
-  - automation
-  - api
-official_url: 'https://rossum.ai/'
-description: 'Rossum ist eine Document-AI-Plattform für Unternehmen, die wiederkehrende Geschäftsdokumente wie Rechnungen, Bestellungen oder Lieferscheine strukturiert auslesen und prüfen wollen.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://rossum.ai/"
+description: Rossum ist eine Document-AI-Plattform für Unternehmen, die wiederkehrende Geschäftsdokumente wie Rechnungen, Bestellungen oder Lieferscheine strukturiert auslesen und prüfen wollen.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Rossum
 

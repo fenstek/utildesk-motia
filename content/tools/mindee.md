@@ -3,15 +3,11 @@ slug: mindee
 title: Mindee
 category: Developer
 price_model: Nutzungsbasiert
-tags:
-  - ocr
-  - invoice
-  - document-ai
-  - api
-  - data-extraction
-official_url: 'https://www.mindee.com/'
-description: 'Mindee ist eine API-orientierte OCR- und Document-AI-Lösung, mit der Entwickler strukturierte Felder aus Rechnungen, Belegen und anderen Dokumenten extrahieren können.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://www.mindee.com/"
+description: Mindee ist eine API-orientierte OCR- und Document-AI-Lösung, mit der Entwickler strukturierte Felder aus Rechnungen, Belegen und anderen Dokumenten extrahieren können.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Mindee
 

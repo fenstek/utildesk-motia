@@ -3,15 +3,11 @@ slug: google-document-ai
 title: Google Document AI
 category: Developer
 price_model: Nutzungsbasiert
-tags:
-  - ocr
-  - document-ai
-  - api
-  - cloud
-  - data-extraction
-official_url: 'https://cloud.google.com/document-ai'
-description: 'Google Document AI bündelt OCR, spezialisierte Dokumentprozessoren und strukturierte Extraktion für Teams, die Dokumentdaten in Google-Cloud-Workflows verarbeiten.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://cloud.google.com/document-ai"
+description: Google Document AI bündelt OCR, spezialisierte Dokumentprozessoren und strukturierte Extraktion für Teams, die Dokumentdaten in Google-Cloud-Workflows verarbeiten.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Google Document AI
 
