@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-11_
 
+## 2026-05-11 - Ubuntu deploy and laptop sync helpers
+
+- Added a guarded Ubuntu production deploy helper: `scripts/deploy_from_ubuntu.sh`.
+- Added a Windows laptop sync helper: `scripts/sync_after_remote_deploy.ps1`.
+- Added a Windows hub fallback publisher: `scripts/publish_hub_ref_from_windows.ps1`.
+- Added runbook `docs/04_operations/ubuntu_deploy_sync.md` and linked it from `scripts/README.md`.
+- The new flow requires clean committed work, production-relevant memory/handoff updates, `origin/master`/`origin/autobot` alignment, and a safe laptop production-memory mirror when the main checkout is dirty.
+
 ## 2026-05-11 - Ableton Live manual editorial rewrite
 
 - Rewrote the previously unregistered production-generated Ableton Live tool card in German and English.

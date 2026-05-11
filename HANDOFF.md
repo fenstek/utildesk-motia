@@ -1,5 +1,26 @@
 # Handoff
 
+## 2026-05-11 Ubuntu Deploy And Laptop Sync Helpers
+
+- Added a guarded remote-deploy flow so the Ubuntu worker can publish clean committed work directly once its GitHub credential has write access.
+- New files:
+  - `scripts/deploy_from_ubuntu.sh`
+  - `scripts/sync_after_remote_deploy.ps1`
+  - `scripts/publish_hub_ref_from_windows.ps1`
+  - `docs/04_operations/ubuntu_deploy_sync.md`
+- Direct Ubuntu path:
+  - `cd ~/projects/utildesk-motia-worker`
+  - `source ~/utildesk-chatgpt-worker/env.sh`
+  - commit content plus memory/handoff
+  - `bash scripts/deploy_from_ubuntu.sh`
+- Hub fallback path while GitHub push is unavailable from Ubuntu:
+  - `bash scripts/deploy_from_ubuntu.sh --hub-only`
+  - then run the printed `scripts/publish_hub_ref_from_windows.ps1 -HubRef ...` command on the laptop.
+- Laptop sync path after any remote deploy:
+  - `powershell -ExecutionPolicy Bypass -File scripts/sync_after_remote_deploy.ps1 -SyncHub`
+- The laptop sync helper fast-forwards the main checkout only when it is clean. If the main checkout is dirty, it leaves it untouched and updates the clean production-memory mirror at `C:\projects\utildesk-motia-production-sync`.
+- Future agents should treat GitHub `origin/master` plus tracked project memory as the source of truth after Ubuntu deploys, not the dirty main checkout alone.
+
 ## 2026-05-11 Ableton Live Tool Editorial Rewrite
 
 - Ubuntu worker `jgdus-optiplex-3000` produced a manual editorial rewrite for `ableton-live`.

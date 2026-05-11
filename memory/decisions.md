@@ -109,3 +109,9 @@
 - Ratgeber admin candidates do not continuously self-improve. A candidate waits for human action; only the `Ueberarbeiten`/rework button creates a Cloudflare KV rework request. The `openclaw-ratgeber-rework-consumer` cron must then hide the old preview, process text and visual polish, and return the candidate only after real content or asset changes.
 - Update the Ratgeber source rule: do not use Russian-language or Chinese-language sources, `/ru/`, `/zh/`, `/cn/`, `.ru`, `.cn`, Russian/Chinese locale URLs, Habr, or Russian corporate PR/claimed local know-how as article source material. This includes Sber/Sberbank/SberTech, Platform V, Yandex, VK, Mail.ru, Rambler, Rutube, Skolkovo, Tinkoff/T-Bank, MTS, and Kaspersky. International Russian-speaking authors are acceptable only when the source itself is English/German and independent of Russian corporate/state PR.
 - Ratgeber articles must internally link every recognized tool name to its Utildesk card when the card exists. If a mentioned tool has no card, add it to the tool-candidate/Sheets review flow and keep the article mention unlinked until the card is published.
+
+## 2026-05-11
+
+- Remote deploy state must use GitHub `origin/master` as the source of truth, with `origin/autobot` aligned to the same commit after every manual release.
+- Ubuntu-originated production changes must carry their project memory in git (`memory/recent_changes.md`, `memory/decisions.md`, or `HANDOFF.md`) so the Windows laptop can sync knowledge by fetching/pulling, not by relying on chat history.
+- If the Windows main checkout is dirty, do not force-update it during remote deploy sync; update a clean production-memory mirror instead and leave local work-in-progress untouched.
