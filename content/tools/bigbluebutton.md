@@ -27,6 +27,10 @@ BigBlueButton gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als P
 - **Gute Voraussetzung:** für Schulen, Hochschulen und Organisationen mit Self-Hosting-Wunsch.
 - **Aufpassen bei:** bei schwacher Serveradministration schnell an Audio- und Skalierungsgrenzen stößt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bigbluebutton-editorial.webp" alt="Illustration zu BigBlueButton: Lehrperson moderiert eine Onlineklasse mit abstrakten Videokacheln und Whiteboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Video- und Audiokonferenzen mit mehreren Teilnehmern

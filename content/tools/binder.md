@@ -30,6 +30,10 @@ Binder sollte zuerst in einem realen Entwicklungsablauf von Setup über Testdate
 - **Guter Start für Binder:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Binder:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/binder-editorial.webp" alt="Illustration zu Binder: Forscher startet reproduzierbare Notebook-Umgebung aus Daten, Paketen und Cloud-Ressourcen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte Ausführung von Jupyter-Notebooks:** Starten von Notebooks direkt im Browser ohne lokale Installation.

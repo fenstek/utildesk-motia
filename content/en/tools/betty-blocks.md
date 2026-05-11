@@ -32,6 +32,10 @@ The best practical test for Betty Blocks is small, but real. A team should run t
 - **Rollout question:** which apps are mission-critical and who will operate them in the long term.
 - **Brake:** if architecture control is missing, it can create shadow IT and maintenance problems.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/betty-blocks-editorial.webp" alt="Illustration for Betty Blocks: team builds an internal workflow from modular no-code blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual drag-and-drop interface for building applications without code

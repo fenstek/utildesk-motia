@@ -20,6 +20,10 @@ Beautiful.ai is an intelligent presentation tool that uses artificial intelligen
 
 Beautiful.ai is ideal for professionals, marketing and sales teams, educators, and solo entrepreneurs who regularly create presentations but do not have extensive design skills. Also, agencies and companies that want to develop consistent and professional presentations in a team will benefit from the tools and collaboration features in the cloud. This tool is particularly suitable for users who prioritize efficiency, design quality, and ease of use.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/beautiful-ai-editorial.webp" alt="Illustration for Beautiful.ai: team arranges abstract presentation slides into a clear story" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Design**: AI-based layout adjustments ensure that content is visually harmonious and engaging.

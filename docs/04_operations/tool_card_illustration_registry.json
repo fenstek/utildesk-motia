@@ -577,6 +577,43 @@
       "images": [
         "content/images/tools/ableton-live-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-05-11-edited-tail-next-10-b-png-editorial-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "source_format": "png",
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "note": "Eighth production batch: next 10 remaining manually edited cards after the previous PNG-to-WebP run, selected alphabetically from non-illustrated registry-backed tool cards. Uses varied artistic narrative editorial scenes; no SVG renderer, logos, readable text, captions, or brand marks.",
+      "slugs": [
+        "beautiful-ai",
+        "beautyplus",
+        "befunky",
+        "bert",
+        "betty-blocks",
+        "bigbluebutton",
+        "binder",
+        "bookafy",
+        "box",
+        "branchtrack"
+      ],
+      "images": [
+        "content/images/tools/beautiful-ai-editorial.webp",
+        "content/images/tools/beautyplus-editorial.webp",
+        "content/images/tools/befunky-editorial.webp",
+        "content/images/tools/bert-editorial.webp",
+        "content/images/tools/betty-blocks-editorial.webp",
+        "content/images/tools/bigbluebutton-editorial.webp",
+        "content/images/tools/binder-editorial.webp",
+        "content/images/tools/bookafy-editorial.webp",
+        "content/images/tools/box-editorial.webp",
+        "content/images/tools/branchtrack-editorial.webp"
+      ]
     }
   ]
 }

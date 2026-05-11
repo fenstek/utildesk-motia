@@ -34,6 +34,10 @@ BERT (Bidirectional Encoder Representations from Transformers) should first prov
 - **Good start for BERT (Bidirectional Encoder Representations from Transformers):** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with BERT (Bidirectional Encoder Representations from Transformers):** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bert-editorial.webp" alt="Illustration for BERT: developers analyze abstract language tokens and attention paths in a model workspace" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Bidirectional context analysis:** Understands words in context from both the left and the right, leading to more accurate results.

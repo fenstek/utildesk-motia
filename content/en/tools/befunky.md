@@ -42,6 +42,10 @@ A good test case for BeFunky is one concrete asset with briefing, versions, feed
 - **Good start for BeFunky:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with BeFunky:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/befunky-editorial.webp" alt="Illustration for BeFunky: designer creates collage and image variants at a creative workspace" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Image Editing:** Comprehensive tools for adjusting brightness, contrast, saturation, and sharpness

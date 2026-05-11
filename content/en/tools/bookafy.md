@@ -34,6 +34,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** For Bookafy, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Bookafy disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bookafy-editorial.webp" alt="Illustration for Bookafy: coordinator organizes appointments, availability, and reminders in a service office" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Online Booking:** Customers can view available times directly online and book them.
