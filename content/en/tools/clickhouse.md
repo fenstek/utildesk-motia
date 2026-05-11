@@ -39,6 +39,10 @@ ClickHouse should first prove itself in a limited data set with a clear source, 
 - **Good start for ClickHouse:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with ClickHouse:** The value becomes weak when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clickhouse-editorial.webp" alt="Illustration for ClickHouse: column storage and fast queries form an analytical data architecture" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Column-oriented storage:** Optimized for fast read access to analytical queries  

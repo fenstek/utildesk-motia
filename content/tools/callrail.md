@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte CallRail zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** CallRail enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/callrail-editorial.webp" alt="Illustration zu CallRail: Marketingteam verbindet Anrufe mit Kampagnen und Lead-Attribution" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Anruftracking:** Verfolgen Sie, welche Marketingkanäle und Kampagnen zu Anrufen führen.

@@ -33,6 +33,10 @@ With ChatterBot, I would distinguish early between demo impression and operation
 - **Quality question:** whether training data, response boundaries, and maintenance are realistic.
 - **Risk:** often too limited for modern production assistants without additional architecture.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatterbot-editorial.webp" alt="Illustration for ChatterBot: developer tests training examples and dialogue logic for a chatbot" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic learning:** ChatterBot can continuously improve its responses through training data from various sources such as text files or databases.

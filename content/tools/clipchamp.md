@@ -31,6 +31,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Clipchamp breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Clipchamp enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clipchamp-editorial.webp" alt="Illustration zu Clipchamp: Videoteam bearbeitet Clips, Audiospuren und Exportwege im Browser-Workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Online-Videobearbeitung:** Schneiden, Trimmen, Zusammenfügen und Anpassen von Videoclips direkt im Browser.

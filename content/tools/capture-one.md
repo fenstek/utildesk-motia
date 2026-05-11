@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Für Capture One eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Capture One enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/capture-one-editorial.webp" alt="Illustration zu Capture One: Fotografieteam verfeinert RAW-Aufnahmen mit Farb- und Auswahlworkflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Professionelle RAW-Konvertierung mit hoher Farbtiefe und Detailtreue  

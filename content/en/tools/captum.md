@@ -19,6 +19,10 @@ Captum is an open-source tool for developers and researchers in the field of art
 
 Captum is primarily aimed at developers, data scientists, and researchers who work with machine learning models and want to make their decisions more understandable. It is particularly useful for teams working in areas such as deep learning, artificial intelligence, and data-driven research who need to interpret models to verify their reliability or comply with regulatory requirements. It is also beneficial for educators and students in the field of AI, as it provides practical tools for visualization and analysis.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/captum-editorial.webp" alt="Illustration for Captum: research team studies model decisions with attribution maps and neural networks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Provides a range of integrated explanation methods such as Integrated Gradients, Saliency Maps, Feature Ablation, and more  

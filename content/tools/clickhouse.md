@@ -35,6 +35,10 @@ Ein belastbarer Pilot für ClickHouse beginnt mit einem begrenzten Datensatz mit
 - **Guter Start für ClickHouse:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei ClickHouse:** Ohne klare Regeln wird der Nutzen schwach, sobald Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clickhouse-editorial.webp" alt="Illustration zu ClickHouse: Spaltenspeicher und schnelle Abfragen formen eine analytische Datenarchitektur" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spaltenorientierte Speicherung:** Optimiert für schnelle Lesezugriffe bei analytischen Abfragen  

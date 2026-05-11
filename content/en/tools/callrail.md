@@ -35,6 +35,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test CallRail in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** CallRail disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/callrail-editorial.webp" alt="Illustration for CallRail: marketing team connects calls with campaigns and lead attribution" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Call Tracking:** Track calls to determine which marketing channels and campaigns lead to calls.

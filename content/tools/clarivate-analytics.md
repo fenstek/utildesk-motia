@@ -30,6 +30,10 @@ Clarivate Analytics (Web of Science) sollte zuerst in einem begrenzten Datensatz
 - **Guter Start für Clarivate Analytics (Web of Science):** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Clarivate Analytics (Web of Science):** Kritisch wird es, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clarivate-analytics-editorial.webp" alt="Illustration zu Clarivate Analytics: Forschende erkunden Publikationen und Zitationsnetzwerke in einer Bibliothek" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Umfassende Suche in multidisziplinären wissenschaftlichen Datenbanken

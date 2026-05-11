@@ -20,6 +20,10 @@ Chorus.ai is a AI-powered platform that helps businesses automate the analysis a
 
 Chorus.ai is primarily aimed at sales leaders, sales teams, and customer success managers who want to improve conversation quality and close rates. Additionally, executives who want to gain insights into team communication can also benefit from the platform. The platform is suitable for small to large-sized companies that want to automate and transparently improve their sales processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chorus-ai-editorial.webp" alt="Illustration for Chorus.ai: sales team analyzes conversation waves, coaching moments, and pipeline signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic recording and transcription of sales conversations and meetings

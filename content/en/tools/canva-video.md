@@ -28,6 +28,10 @@ Canva Video is ideal for:
 
 The tool is platform-independent and works directly in the browser, making it easy to get started and eliminating the need for installation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/canva-video-editorial.webp" alt="Illustration for Canva Video: creative team arranges clips, colors, and scenes into a short video" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Drag-and-Drop Editor:** Easy to use without technical knowledge.

@@ -34,6 +34,10 @@ Character AI should first prove itself in a recurring task with input, expected 
 - **Good start for Character AI:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Character AI:** The value becomes weak when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/character-ai-editorial.webp" alt="Illustration for Character AI: user chooses between different AI personalities for creative dialogue" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing:** The AI understands and responds in natural, fluent language.

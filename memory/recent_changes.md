@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-11_
 
+## 2026-05-11 - Tool illustration batch 9
+
+- Added one mid-article WebP illustration to 20 additional manually edited tool cards in both German and English.
+- Reduced editorial illustration display width to 90% in `site/public/styles/global.css`; this also makes earlier editorial figures visually smaller.
+- New assets use 1260px source width instead of the earlier 1400px batches.
+- Slugs: `bubble`, `buffer`, `buzzsprout`, `buzzsumo`, `c3-ai`, `callrail`, `canva-video`, `captum`, `capture-one`, `celtx`, `cerebras-wafer-scale-engine`, `character-ai`, `chatbot-com`, `chatterbot`, `chorus-ai`, `civitai`, `clarivate-analytics`, `clickhouse`, `clipchamp`, `cloudera-data-platform`.
+- Generated PNG originals for this batch were removed after WebP conversion so the local image cache does not keep unnecessary source files.
+
 ## 2026-05-11 - Bidirectional Ubuntu/Windows deploy sync
 
 - Added `scripts/sync_after_remote_deploy.sh` so the Ubuntu worker can fast-forward safely after a Windows-side deploy, or update a clean production-memory mirror when the worker checkout is dirty.

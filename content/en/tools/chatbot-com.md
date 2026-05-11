@@ -21,6 +21,10 @@ Chatbot.com is a user-friendly platform for creating and managing chatbots that 
 
 Chatbot.com is designed for small and medium-sized enterprises that want to streamline their customer communication without requiring deep programming knowledge. Marketing and sales departments also benefit from automation of recurring tasks. Additionally, the platform is suitable for startups and agencies that want to implement chatbots quickly and cost-effectively. Both beginners and experienced users can benefit from the features, depending on their needs and requirements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatbot-com-editorial.webp" alt="Illustration for Chatbot.com: support team routes abstract chat requests between bot and humans" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Visual Chatbot Builder:** An intuitive drag-and-drop interface for creating chatbot dialogues without any programming.

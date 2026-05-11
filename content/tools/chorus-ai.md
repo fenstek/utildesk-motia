@@ -16,6 +16,10 @@ Chorus.ai ist eine KI-gestützte Plattform, die Unternehmen dabei unterstützt, 
 
 Chorus.ai richtet sich vor allem an Vertriebsleiter, Verkaufsteams und Customer-Success-Manager, die ihre Gesprächsqualität und Abschlussraten verbessern möchten. Ebenso profitieren Führungskräfte, die Einblicke in die Kommunikation ihrer Teams erhalten wollen, um gezieltes Coaching zu ermöglichen. Die Plattform eignet sich für kleine bis große Unternehmen, die ihre Vertriebsprozesse mit Hilfe von KI automatisieren und transparent machen wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chorus-ai-editorial.webp" alt="Illustration zu Chorus.ai: Vertriebsteam analysiert Gespraechswellen, Coaching-Momente und Pipeline-Signale" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Aufzeichnung und Transkription von Verkaufsgesprächen und Meetings

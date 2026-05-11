@@ -614,6 +614,64 @@
         "content/images/tools/box-editorial.webp",
         "content/images/tools/branchtrack-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-05-11-edited-tail-next-20-c-png-editorial-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "source_format": "png",
+      "image_format": "webp",
+      "image_width_px": 1260,
+      "display_width_percent": 90,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "note": "Ninth production batch: next 20 remaining manually edited cards after BranchTrack, selected alphabetically from non-illustrated registry-backed tool cards. New assets are converted to 1260px WebP and the shared editorial figure display width is reduced to 90%; generated PNG originals are deleted after conversion to avoid local disk clutter. Uses varied artistic narrative editorial scenes; no logos, readable text, captions, or brand marks.",
+      "slugs": [
+        "bubble",
+        "buffer",
+        "buzzsprout",
+        "buzzsumo",
+        "c3-ai",
+        "callrail",
+        "canva-video",
+        "captum",
+        "capture-one",
+        "celtx",
+        "cerebras-wafer-scale-engine",
+        "character-ai",
+        "chatbot-com",
+        "chatterbot",
+        "chorus-ai",
+        "civitai",
+        "clarivate-analytics",
+        "clickhouse",
+        "clipchamp",
+        "cloudera-data-platform"
+      ],
+      "images": [
+        "content/images/tools/bubble-editorial.webp",
+        "content/images/tools/buffer-editorial.webp",
+        "content/images/tools/buzzsprout-editorial.webp",
+        "content/images/tools/buzzsumo-editorial.webp",
+        "content/images/tools/c3-ai-editorial.webp",
+        "content/images/tools/callrail-editorial.webp",
+        "content/images/tools/canva-video-editorial.webp",
+        "content/images/tools/captum-editorial.webp",
+        "content/images/tools/capture-one-editorial.webp",
+        "content/images/tools/celtx-editorial.webp",
+        "content/images/tools/cerebras-wafer-scale-engine-editorial.webp",
+        "content/images/tools/character-ai-editorial.webp",
+        "content/images/tools/chatbot-com-editorial.webp",
+        "content/images/tools/chatterbot-editorial.webp",
+        "content/images/tools/chorus-ai-editorial.webp",
+        "content/images/tools/civitai-editorial.webp",
+        "content/images/tools/clarivate-analytics-editorial.webp",
+        "content/images/tools/clickhouse-editorial.webp",
+        "content/images/tools/clipchamp-editorial.webp",
+        "content/images/tools/cloudera-data-platform-editorial.webp"
+      ]
     }
   ]
 }

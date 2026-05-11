@@ -32,6 +32,10 @@ Celtx works best when implementation is understood not as a tool switch, but as 
 - **Good fit:** for film, video, and media projects with multiple stakeholders.
 - **Watch out for:** seeming larger for pure writing work than a lightweight text editor.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/celtx-editorial.webp" alt="Illustration for Celtx: film team develops script, storyboard, and production planning at a worktable" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Scriptwriting:** Intuitive editor environment with automatic formatting to industry standards.

@@ -34,6 +34,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** For BuzzSumo, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** BuzzSumo disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/buzzsumo-editorial.webp" alt="Illustration for BuzzSumo: content team organizes topic clusters and trend signals for campaign planning" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Content Analysis:** Identifying popular content based on social media shares, likes, and comments.

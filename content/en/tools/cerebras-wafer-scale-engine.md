@@ -27,6 +27,10 @@ The Cerebras WSE is primarily targeted at enterprises, research institutions, an
 
 Due to the specialized architecture and high investment costs, the WSE is less suitable for small businesses or users with low AI computing requirements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cerebras-wafer-scale-engine-editorial.webp" alt="Illustration for Cerebras Wafer-Scale Engine: engineers inspect a large AI processor in a computing lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Wafer-Scale Architecture:** Utilization of a complete silicon wafer as a single computing unit for immense parallelism

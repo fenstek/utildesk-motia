@@ -24,6 +24,10 @@ Canva Video eignet sich ideal für:
 
 Das Tool ist plattformunabhängig und funktioniert direkt im Browser, was den Einstieg erleichtert und keine Installation erfordert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/canva-video-editorial.webp" alt="Illustration zu Canva Video: Kreativteam arrangiert Clips, Farben und Szenen zu einem kurzen Video" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Drag-and-Drop-Editor:** Einfache Bedienung ohne technische Vorkenntnisse.

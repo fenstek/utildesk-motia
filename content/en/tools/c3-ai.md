@@ -35,6 +35,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for C3.ai.
 - **Common pitfall:** C3.ai disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/c3-ai-editorial.webp" alt="Illustration for C3.ai: industrial and enterprise data converge in an AI operations room" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Enterprise AI Application Development:** Enables rapid creation, training, and deployment of AI models on a scalable cloud platform.

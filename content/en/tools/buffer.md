@@ -33,6 +33,10 @@ Buffer gains value when implementation is understood not as a tool switch, but a
 - **Good fit:** for small marketing teams, founders, and creators with recurring posts.
 - **Watch out for:** without a content strategy, it only distributes mediocrity on a regular basis.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/buffer-editorial.webp" alt="Illustration for Buffer: editorial team plans social posts on a shared timeline" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Social media planning:** Posts can be planned in advance for various platforms such as Facebook, Twitter, LinkedIn, Instagram, and Pinterest and published automatically.

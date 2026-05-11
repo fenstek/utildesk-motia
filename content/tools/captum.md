@@ -16,6 +16,10 @@ Captum ist ein Open-Source-Tool für Entwickler und Forscher im Bereich Künstli
 
 Captum richtet sich vor allem an Entwickler, Datenwissenschaftler und Forscher, die mit Machine-Learning-Modellen arbeiten und deren Entscheidungen nachvollziehbar machen möchten. Es ist besonders hilfreich für Teams, die in Bereichen wie Deep Learning, künstliche Intelligenz und datengetriebene Forschung tätig sind und Modelle interpretieren müssen, um deren Zuverlässigkeit zu prüfen oder regulatorischen Anforderungen gerecht zu werden. Auch Lehrende und Lernende im Bereich KI profitieren von Captum, da es praktische Werkzeuge zur Visualisierung und Analyse bietet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/captum-editorial.webp" alt="Illustration zu Captum: Forschungsteam untersucht Modellentscheidungen mit Attributionskarten und neuronalen Netzen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bereitstellung zahlreicher integrierter Erklärmethoden wie Integrated Gradients, Saliency Maps, Feature Ablation und mehr  

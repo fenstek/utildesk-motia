@@ -31,6 +31,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor C3.ai breiter ausgerollt wird.
 - **Häufiger Stolperstein:** C3.ai enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/c3-ai-editorial.webp" alt="Illustration zu C3.ai: Industrie- und Unternehmensdaten laufen in einem KI-Operationsraum zusammen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Enterprise AI-Anwendungsentwicklung:** Ermöglicht das schnelle Erstellen, Trainieren und Bereitstellen von KI-Modellen auf einer skalierbaren Cloud-Plattform.
