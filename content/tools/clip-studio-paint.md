@@ -23,6 +23,10 @@ Geeignet ist Clip Studio Paint für Illustratoren, Comiczeichner, Konzeptkünstl
 - Pinsel, Materialien und Vorlagen für wiederkehrende Stile nutzen.
 - Zeichenprozesse mit Tablet, Stift und Ebenen systematisch verbessern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clip-studio-paint-editorial.webp" alt="Illustration zu Clip Studio Paint: Comiczeichnung entwickelt sich von Skizzen zu farbigen Panels auf einem Zeichentablet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Starke Pinsel- und Zeichenwerkzeuge.

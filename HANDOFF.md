@@ -1,5 +1,22 @@
 # Handoff
 
+## 2026-05-11 Clip Studio Paint Tool Illustration
+
+- Ubuntu worker `jgdus-optiplex-3000` created one approved artistic tool-card illustration for `clip-studio-paint`.
+- Production files in this change:
+  - `content/images/tools/clip-studio-paint-editorial.webp`
+  - `content/tools/clip-studio-paint.md`
+  - `content/en/tools/clip-studio-paint.md`
+  - `docs/04_operations/tool_card_illustration_registry.json`
+  - `memory/recent_changes.md`
+- The artwork follows the tool-card PNG-to-WebP scheme, not the Ratgeber SVG/diagram scheme.
+- The image is inserted as a single image-only `tool-editorial-figure` in both DE and EN pages, with no figcaption.
+- Raw/browser generation happened on the Ubuntu ChatGPT profile; only the final WebP and content metadata are committed.
+- Handoff path used for this offload:
+  - Ubuntu branch: `codex/clip-studio-paint-illustration-20260511`
+  - exchange remote: `hub/codex/clip-studio-paint-illustration-20260511`
+  - clean deploy worktree on the laptop: `C:\projects\utildesk-motia-deploy-clip-studio-20260511`
+
 ## 2026-04-22 SEO Handoff
 
 - Current good backup baseline:
