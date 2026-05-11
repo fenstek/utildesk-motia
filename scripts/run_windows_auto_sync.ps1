@@ -34,7 +34,42 @@ try {
     $syncParams.NoUbuntuSync = $true
   }
 
-  & $SyncScript @syncParams *>> $LogFile
+  $outFile = Join-Path $env:TEMP "utildesk-motia-auto-sync-$([guid]::NewGuid()).out.log"
+  $errFile = Join-Path $env:TEMP "utildesk-motia-auto-sync-$([guid]::NewGuid()).err.log"
+  $processArgs = @(
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    $SyncScript,
+    "-Repo",
+    $Repo,
+    "-SyncHub"
+  )
+  if ($NoUbuntuSync) {
+    $processArgs += "-NoUbuntuSync"
+  }
+
+  $process = Start-Process `
+    -FilePath "powershell.exe" `
+    -ArgumentList $processArgs `
+    -Wait `
+    -PassThru `
+    -WindowStyle Hidden `
+    -RedirectStandardOutput $outFile `
+    -RedirectStandardError $errFile
+
+  foreach ($file in @($outFile, $errFile)) {
+    if (Test-Path -LiteralPath $file) {
+      Get-Content -LiteralPath $file -ErrorAction SilentlyContinue | Add-Content -Path $LogFile
+      Remove-Item -LiteralPath $file -Force -ErrorAction SilentlyContinue
+    }
+  }
+
+  if ($process.ExitCode -ne 0) {
+    throw "sync helper exited with code $($process.ExitCode)"
+  }
+
   Write-AutoSyncLog "complete: windows auto-sync"
 } catch {
   Write-AutoSyncLog "ERROR: $($_.Exception.Message)"
