@@ -187,3 +187,25 @@ Fast URL-change notifications for canonical HTML pages on `tools.utildesk.de`.
 - By default the helper submits to both the global IndexNow endpoint and the direct Bing endpoint.
 - Submit canonical HTML pages only.
 - `scripts/cron_publish_push.sh` now includes a non-blocking post-deploy IndexNow step for tools releases, and the hook is called from the real synced-publish path.
+
+---
+
+## Ubuntu Worker Deploy And Laptop Sync
+
+### Purpose
+Publish clean, committed Ubuntu worker changes without losing project memory or
+letting `master` and `autobot` drift.
+
+### Helpers
+- `bash scripts/deploy_from_ubuntu.sh`
+- `bash scripts/deploy_from_ubuntu.sh --hub-only`
+- `powershell -ExecutionPolicy Bypass -File scripts/publish_hub_ref_from_windows.ps1 -HubRef <hub-ref>`
+- `powershell -ExecutionPolicy Bypass -File scripts/sync_after_remote_deploy.ps1 -SyncHub`
+
+### Runbook
+See `docs/04_operations/ubuntu_deploy_sync.md`.
+
+### Notes
+- Direct Ubuntu deploy requires GitHub write access from the Ubuntu credential.
+- Until that is available, use the hub fallback and finalize from the laptop.
+- Tracked memory or handoff updates are required for production-relevant releases.
