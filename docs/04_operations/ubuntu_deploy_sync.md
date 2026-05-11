@@ -150,8 +150,11 @@ powershell -ExecutionPolicy Bypass -File scripts\install_windows_auto_sync_task.
 ```
 
 This installs `UtildeskMotiaAutoSync`, running every 5 minutes. It calls
-`scripts/run_windows_auto_sync.ps1`, which in turn runs the production sync
-helper and updates Ubuntu by SSH unless `-NoUbuntuSync` is passed to the runner.
+`scripts/run_windows_auto_sync_hidden.vbs`, which launches PowerShell with
+`-WindowStyle Hidden`. That runner calls `scripts/run_windows_auto_sync.ps1`,
+which in turn runs the production sync helper and updates Ubuntu by SSH unless
+`-NoUbuntuSync` is passed to the runner. The scheduled task itself is also
+registered with the hidden setting.
 
 Ubuntu cron:
 
