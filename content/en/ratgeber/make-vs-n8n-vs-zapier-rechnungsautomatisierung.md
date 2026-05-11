@@ -7,7 +7,7 @@ eyebrow: "Tool Comparison"
 excerpt: "For invoice automation, the choice depends on privacy, error paths, API flexibility and maintenance, not only setup speed."
 readTime: 10
 coverImage: /images/ratgeber/make-n8n-zapier-rechnungsautomatisierung.webp
-secondaryImage: /images/ratgeber/make-n8n-zapier-entscheidung.webp
+secondaryImage: /images/ratgeber/make-n8n-zapier-vergleichsmatrix.webp
 tags:
   - "n8n"
   - "Make"
@@ -46,7 +46,6 @@ The best choice depends on four questions: where do invoices arrive, who may see
 | [Power Automate](/en/tools/microsoft-power-automate/) | Microsoft 365, Outlook, SharePoint | tenant-near, setup-dependent | approvals and connectors | license and governance topic |
 | [UiPath](/en/tools/uipath/) | enterprise, RPA, legacy systems | strong but complex | orchestration and queues | professional operation needed |
 
-![Decision tree: when n8n, Make, Zapier or Power Automate fits invoice automation](/images/ratgeber/make-n8n-zapier-entscheidung.webp)
 
 ## When n8n Fits
 

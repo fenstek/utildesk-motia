@@ -7,7 +7,7 @@ eyebrow: "PDF-Extraktion"
 excerpt: "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
 readTime: 12
 coverImage: /images/ratgeber/pdf-daten-extraktion-ki-workflow.webp
-secondaryImage: /images/ratgeber/pdf-daten-extraktion-output.webp
+secondaryImage: /images/ratgeber/pdf-dokumenttypen-erkennen.webp
 tags:
   - "PDF"
   - "OCR"
@@ -66,7 +66,6 @@ Dieser Artikel unterscheidet vier Klassen: einfache PDF-Converter wie [Smallpdf]
 | E-Mail-PDFs parsen | Parser-Workflow | [Docparser](/tools/docparser/), [Parseur](/tools/parseur/) | Dokumentvolumen, Regeln, Postfächer |
 | lokal und anpassbar | Open Source | [PaddleOCR](/tools/paddleocr/), [Tesseract OCR](/tools/tesseract-ocr/) | Infrastruktur, Wartung, Qualitätssicherung |
 
-![Schema: PDF wird in Text, Tabellen, Felder und JSON-Strukturen extrahiert](/images/ratgeber/pdf-daten-extraktion-output.webp)
 
 ## Erst den PDF-Typ bestimmen
 

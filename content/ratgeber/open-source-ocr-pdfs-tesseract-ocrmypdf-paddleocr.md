@@ -7,7 +7,7 @@ eyebrow: "Lokale OCR"
 excerpt: "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
 readTime: 11
 coverImage: /images/ratgeber/open-source-ocr-pipeline.webp
-secondaryImage: /images/ratgeber/open-source-vs-cloud-ocr.webp
+secondaryImage: /images/ratgeber/open-source-ocr-toolvergleich.webp
 tags:
   - "Open Source"
   - "OCR"
@@ -54,7 +54,6 @@ Für lokale OCR stehen [Tesseract OCR](/tools/tesseract-ocr/), [OCRmyPDF](/tools
 | [Mistral OCR](/tools/mistral-ocr/) | API und moderne Dokumentausgabe | Cloud/API-Abhängigkeit | PDF-OCR in Anwendungen |
 | Cloud Document AI | Formulare, Tabellen, Felder | Kosten, Datenschutz, Plattformbindung | strukturierte Extraktion |
 
-![Gegenüberstellung: lokale OCR-Pipeline und Cloud-OCR-API](/images/ratgeber/open-source-vs-cloud-ocr.webp)
 
 ## Wann lokale OCR genügt
 

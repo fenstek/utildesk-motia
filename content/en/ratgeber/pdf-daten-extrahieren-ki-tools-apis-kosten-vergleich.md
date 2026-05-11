@@ -7,7 +7,7 @@ eyebrow: "PDF Extraction"
 excerpt: "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
 readTime: 12
 coverImage: /images/ratgeber/pdf-daten-extraktion-ki-workflow.webp
-secondaryImage: /images/ratgeber/pdf-daten-extraktion-output.webp
+secondaryImage: /images/ratgeber/pdf-dokumenttypen-erkennen.webp
 tags:
   - "PDF"
   - "OCR"
@@ -66,7 +66,6 @@ This guide separates four classes: simple PDF converters such as [Smallpdf](/en/
 | Parse email PDFs | Parser workflow | [Docparser](/en/tools/docparser/), [Parseur](/en/tools/parseur/) | document volume, rules, inboxes |
 | Local and customizable | Open source | [PaddleOCR](/en/tools/paddleocr/), [Tesseract OCR](/en/tools/tesseract-ocr/) | infrastructure and QA |
 
-![Diagram: PDF is extracted into text, tables, fields and JSON structures](/images/ratgeber/pdf-daten-extraktion-output.webp)
 
 ## Start with the PDF Type
 

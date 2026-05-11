@@ -7,7 +7,7 @@ eyebrow: "Toolvergleich"
 excerpt: "Für Rechnungsautomatisierung zählt nicht nur, welches Tool schneller klickbar ist, sondern wie gut Datenschutz, Fehlerpfade, API-Logik und Wartung zum Team passen."
 readTime: 10
 coverImage: /images/ratgeber/make-n8n-zapier-rechnungsautomatisierung.webp
-secondaryImage: /images/ratgeber/make-n8n-zapier-entscheidung.webp
+secondaryImage: /images/ratgeber/make-n8n-zapier-vergleichsmatrix.webp
 tags:
   - "n8n"
   - "Make"
@@ -46,7 +46,6 @@ Die beste Wahl hängt nicht am Toolnamen, sondern an vier Fragen: Wo liegen die 
 | [Power Automate](/tools/microsoft-power-automate/) | Microsoft 365, Outlook, SharePoint | tenant-nah, abhängig von Setup | Genehmigungen und Connectoren | Lizenz- und Governance-Thema |
 | [UiPath](/tools/uipath/) | Enterprise, RPA, Legacy-Systeme | stark, aber komplex | Orchestrierung und Queues | professioneller Betrieb nötig |
 
-![Decision Tree: Wann n8n, Make, Zapier oder Power Automate für Rechnungsautomatisierung passt](/images/ratgeber/make-n8n-zapier-entscheidung.webp)
 
 ## Wann n8n passt
 

@@ -7,7 +7,7 @@ eyebrow: "E-Mail zu Buchhaltung"
 excerpt: "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
 readTime: 11
 coverImage: /images/ratgeber/email-rechnung-automatisierung-workflow.webp
-secondaryImage: /images/ratgeber/email-rechnung-automatisierung-flow.webp
+secondaryImage: /images/ratgeber/email-rechnung-toolwahl-decision-tree.webp
 tags:
   - "Rechnungen"
   - "E-Mail"
@@ -60,7 +60,6 @@ Für den Workflow-Layer sind [n8n](/tools/n8n/), [Make](/tools/make-ehemals-inte
 | [Microsoft Power Automate](/tools/microsoft-power-automate/) | Microsoft 365 und Outlook-Prozesse | Tenant-Nähe, SharePoint, Teams, Rechte | Lizenz- und Connector-Komplexität |
 | [UiPath](/tools/uipath/) | Enterprise- und RPA-Prozesse | starke Orchestrierung, Legacy-Systeme | schwerer Einstieg für kleine Teams |
 
-![Workflow-Schema: E-Mail-Anhang, PDF-Rechnung, OCR, Prüfung, Tabelle und Buchhaltung](/images/ratgeber/email-rechnung-automatisierung-flow.webp)
 
 ## Szenario 1: einfacher No-Code-Workflow
 

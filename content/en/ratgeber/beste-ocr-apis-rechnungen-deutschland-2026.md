@@ -7,7 +7,7 @@ eyebrow: "Invoice OCR"
 excerpt: "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
 readTime: 12
 coverImage: /images/ratgeber/rechnung-ocr-api-vergleich-2026.webp
-secondaryImage: /images/ratgeber/rechnung-ocr-api-workflow.webp
+secondaryImage: /images/ratgeber/rechnung-ocr-toolklassen-matrix.webp
 tags:
   - "OCR"
   - "Rechnungen"
@@ -65,7 +65,6 @@ This comparison focuses on [Rossum](/en/tools/rossum/), [Mindee](/en/tools/minde
 | [ABBYY Vantage](/en/tools/abbyy-vantage/) | Enterprise IDP with strong document recognition | API, workflow | Implementation effort, governance, cost |
 | [Mistral OCR](/en/tools/mistral-ocr/) | OCR for PDFs and developer workflows | API, Markdown/text/structure | Downstream field logic, privacy, model limits |
 
-![Workflow diagram: invoice upload, OCR API, field extraction, validation and export](/images/ratgeber/rechnung-ocr-api-workflow.webp)
 
 ## API, Enterprise IDP or OCR Building Block?
 
