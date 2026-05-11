@@ -28,6 +28,29 @@ git status --short
 bash scripts/deploy_from_ubuntu.sh
 ```
 
+Current worker paths:
+
+- Ubuntu repo: `~/projects/utildesk-motia-worker`
+- Ubuntu env file: `~/utildesk-chatgpt-worker/env.sh`
+- Ubuntu clean production mirror: `~/projects/utildesk-motia-production-sync`
+- Windows main checkout: `C:\projects\utildesk-motia`
+- Windows clean production mirror: `C:\projects\utildesk-motia-production-sync`
+
+For a direct Ubuntu deploy, `env.sh` should contain the non-secret laptop sync
+target:
+
+```bash
+export UTILDESK_REPO="$HOME/projects/utildesk-motia-worker"
+export UTILDESK_WINDOWS_SYNC_SSH="sserg@100.84.157.110"
+export UTILDESK_WINDOWS_SYNC_REPO="C:\\projects\\utildesk-motia"
+export UTILDESK_WINDOWS_SYNC_SCRIPT="C:\\projects\\utildesk-motia-production-sync\\scripts\\sync_after_remote_deploy.ps1"
+export UTILDESK_WINDOWS_SYNC_HUB=1
+```
+
+The GitHub write token is stored outside the repo in Ubuntu's Git credential
+store (`~/.git-credentials`, mode `0600`). Do not commit it, print it, or paste
+it into project memory.
+
 The script checks:
 
 - clean worktree;
@@ -36,6 +59,9 @@ The script checks:
 - `git diff --check`;
 - editorial checks and site build;
 - `origin/master` and `origin/autobot` end at the same commit;
+- `hub/master` and `hub/autobot` are mirrored when the hub remote exists;
+- the Windows production-memory mirror is updated via SSH when
+  `UTILDESK_WINDOWS_SYNC_SSH` is set;
 - IndexNow notification for changed canonical pages.
 
 If GitHub still denies the Ubuntu key, the script pushes a pending hub ref and
@@ -83,3 +109,30 @@ Behavior:
 When the main checkout is dirty, future agents should read memory from the
 production mirror before deciding whether local dirty files are stale or user
 work-in-progress.
+
+## Ubuntu sync after a Windows deploy
+
+Windows can push production first and then sync the Ubuntu worker:
+
+```powershell
+$env:UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS = "1"
+$env:UTILDESK_UBUNTU_SYNC_SSH = "jgdus@100.98.97.98"
+$env:UTILDESK_UBUNTU_SYNC_REPO = "~/projects/utildesk-motia-worker"
+powershell -ExecutionPolicy Bypass -File scripts/sync_after_remote_deploy.ps1 -SyncHub
+```
+
+On Ubuntu the equivalent manual command is:
+
+```bash
+cd ~/projects/utildesk-motia-worker
+bash scripts/sync_after_remote_deploy.sh --sync-hub
+```
+
+Behavior:
+
+- fetches `origin/master` and `origin/autobot`;
+- fails if those refs are not equal;
+- mirrors production refs to `hub` when `--sync-hub` is passed;
+- fast-forwards the worker checkout only when it is clean and safe;
+- if the worker checkout is dirty, leaves it untouched and updates the clean
+  production memory mirror at `~/projects/utildesk-motia-production-sync`.

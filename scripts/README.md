@@ -199,6 +199,7 @@ letting `master` and `autobot` drift.
 ### Helpers
 - `bash scripts/deploy_from_ubuntu.sh`
 - `bash scripts/deploy_from_ubuntu.sh --hub-only`
+- `bash scripts/sync_after_remote_deploy.sh --sync-hub`
 - `powershell -ExecutionPolicy Bypass -File scripts/publish_hub_ref_from_windows.ps1 -HubRef <hub-ref>`
 - `powershell -ExecutionPolicy Bypass -File scripts/sync_after_remote_deploy.ps1 -SyncHub`
 
@@ -207,5 +208,12 @@ See `docs/04_operations/ubuntu_deploy_sync.md`.
 
 ### Notes
 - Direct Ubuntu deploy requires GitHub write access from the Ubuntu credential.
-- Until that is available, use the hub fallback and finalize from the laptop.
+- Ubuntu direct deploy can call back into the Windows laptop sync helper via
+  `UTILDESK_WINDOWS_SYNC_SSH`, keeping the Windows production-memory mirror
+  current even when the main checkout is dirty.
+- Windows sync can call the Ubuntu sync helper via
+  `UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS=1`, keeping the Ubuntu worker current
+  after laptop-side deploys.
+- Until GitHub write access is available, use the hub fallback and finalize from
+  the laptop.
 - Tracked memory or handoff updates are required for production-relevant releases.

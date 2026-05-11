@@ -4,6 +4,11 @@ param(
   [string]$Branch = "master",
   [string]$ProductionWorktree = "C:\projects\utildesk-motia-production-sync",
   [switch]$SyncHub,
+  [switch]$SyncUbuntu = ($env:UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS -eq "1"),
+  [switch]$NoUbuntuSync,
+  [string]$UbuntuSsh = $(if ($env:UTILDESK_UBUNTU_SYNC_SSH) { $env:UTILDESK_UBUNTU_SYNC_SSH } else { "jgdus@100.98.97.98" }),
+  [string]$UbuntuRepo = $(if ($env:UTILDESK_UBUNTU_SYNC_REPO) { $env:UTILDESK_UBUNTU_SYNC_REPO } else { "~/projects/utildesk-motia-worker" }),
+  [int]$UbuntuConnectTimeoutSeconds = $(if ($env:UTILDESK_UBUNTU_SYNC_TIMEOUT) { [int]$env:UTILDESK_UBUNTU_SYNC_TIMEOUT } else { 20 }),
   [switch]$SkipMainFastForward,
   [switch]$NoProductionWorktree
 )
@@ -43,6 +48,54 @@ function Test-Remote {
   )
   & git -C $Cwd remote get-url $Name *> $null
   return $LASTEXITCODE -eq 0
+}
+
+function Invoke-UbuntuSync {
+  param(
+    [string]$SshTarget,
+    [string]$RemoteRepo,
+    [int]$ConnectTimeoutSeconds
+  )
+
+  if ([string]::IsNullOrWhiteSpace($SshTarget)) {
+    Write-Warning "[sync] Ubuntu sync requested but no SSH target is configured"
+    return
+  }
+
+  $remoteScript = @"
+set -euo pipefail
+repo="$RemoteRepo"
+if [[ "`$repo" == "~/"* ]]; then
+  repo="`$HOME/`${repo:2}"
+elif [[ "`$repo" == "~" ]]; then
+  repo="`$HOME"
+fi
+cd "`$repo"
+if [[ -f scripts/sync_after_remote_deploy.sh ]]; then
+  bash scripts/sync_after_remote_deploy.sh --repo "`$repo" --sync-hub
+else
+  git fetch origin master autobot
+  master_sha="`$(git rev-parse refs/remotes/origin/master)"
+  autobot_sha="`$(git rev-parse refs/remotes/origin/autobot)"
+  if [[ "`$master_sha" != "`$autobot_sha" ]]; then
+    echo "ERROR: origin/master and origin/autobot differ on Ubuntu" >&2
+    exit 1
+  fi
+  if [[ -z "`$(git status --porcelain)" ]]; then
+    git pull --ff-only origin master
+  else
+    echo "WARNING: Ubuntu checkout is dirty; left untouched" >&2
+    git status --short
+  fi
+fi
+"@
+
+  $encoded = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($remoteScript))
+  Write-Host "[sync] syncing Ubuntu worker via $SshTarget"
+  & ssh -o BatchMode=yes -o ConnectTimeout=$ConnectTimeoutSeconds $SshTarget "printf '%s' '$encoded' | base64 -d | bash"
+  if ($LASTEXITCODE -ne 0) {
+    Write-Warning "[sync] Ubuntu worker sync failed; production refs remain published"
+  }
 }
 
 $RepoRoot = Get-GitOutput -Cwd $Repo -GitArgs @("rev-parse", "--show-toplevel")
@@ -126,4 +179,9 @@ if (-not $NoProductionWorktree) {
   Write-Host "  $ProductionWorktree\HANDOFF.md"
   Write-Host "  $ProductionWorktree\memory\decisions.md"
 }
+
+if ($SyncUbuntu -and -not $NoUbuntuSync) {
+  Invoke-UbuntuSync -SshTarget $UbuntuSsh -RemoteRepo $UbuntuRepo -ConnectTimeoutSeconds $UbuntuConnectTimeoutSeconds
+}
+
 Write-Host "[sync] complete"

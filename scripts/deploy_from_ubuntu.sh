@@ -103,6 +103,29 @@ warn() {
   echo "WARNING: $*" >&2
 }
 
+sync_windows_laptop() {
+  if [[ -z "${UTILDESK_WINDOWS_SYNC_SSH:-}" ]]; then
+    return 0
+  fi
+
+  local sync_script="${UTILDESK_WINDOWS_SYNC_SCRIPT:-C:\\projects\\utildesk-motia-production-sync\\scripts\\sync_after_remote_deploy.ps1}"
+  local sync_repo="${UTILDESK_WINDOWS_SYNC_REPO:-C:\\projects\\utildesk-motia}"
+  local connect_timeout="${UTILDESK_WINDOWS_SYNC_TIMEOUT:-20}"
+  local sync_hub_arg=""
+
+  if [[ "${UTILDESK_WINDOWS_SYNC_HUB:-1}" == "1" ]]; then
+    sync_hub_arg=" -SyncHub"
+  fi
+
+  echo "[deploy] syncing Windows laptop memory mirror via ${UTILDESK_WINDOWS_SYNC_SSH}"
+  local windows_cmd
+  windows_cmd="powershell -NoProfile -ExecutionPolicy Bypass -File \"${sync_script}\" -Repo \"${sync_repo}\"${sync_hub_arg} -NoUbuntuSync"
+
+  if ! ssh -o BatchMode=yes -o ConnectTimeout="${connect_timeout}" "${UTILDESK_WINDOWS_SYNC_SSH}" "${windows_cmd}"; then
+    warn "Windows laptop sync failed or is unavailable; production deploy remains complete."
+  fi
+}
+
 echo "[deploy] repo: $REPO_ROOT"
 echo "[deploy] remote: $REMOTE branch: $BRANCH"
 
@@ -213,6 +236,8 @@ echo "[deploy] production refs aligned at $HEAD_SHORT"
 if [[ "$SYNC_HUB" -eq 1 ]] && remote_exists "$HUB_REMOTE"; then
   git push "$HUB_REMOTE" "HEAD:$BRANCH" "HEAD:autobot" || warn "Could not mirror production refs to $HUB_REMOTE."
 fi
+
+sync_windows_laptop
 
 if [[ "$RUN_INDEXNOW" -eq 1 && -f scripts/indexnow_submit.py && -n "$CHANGED_FILES" ]]; then
   if ! python scripts/indexnow_submit.py submit-git-range --rev-range "$RANGE" --wait-live; then

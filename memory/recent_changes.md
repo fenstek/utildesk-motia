@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-11_
 
+## 2026-05-11 - Bidirectional Ubuntu/Windows deploy sync
+
+- Added `scripts/sync_after_remote_deploy.sh` so the Ubuntu worker can fast-forward safely after a Windows-side deploy, or update a clean production-memory mirror when the worker checkout is dirty.
+- Extended `scripts/deploy_from_ubuntu.sh` so successful direct Ubuntu deploys can call the Windows laptop sync helper via `UTILDESK_WINDOWS_SYNC_SSH`, keeping `C:\projects\utildesk-motia-production-sync` current.
+- Extended `scripts/sync_after_remote_deploy.ps1` with optional Ubuntu callback sync via `UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS=1`.
+- Updated the Ubuntu deploy/sync runbook with the active Ubuntu/Windows paths and the rule that GitHub credentials stay outside the repo.
+
 ## 2026-05-11 - Ubuntu deploy and laptop sync helpers
 
 - Added a guarded Ubuntu production deploy helper: `scripts/deploy_from_ubuntu.sh`.
