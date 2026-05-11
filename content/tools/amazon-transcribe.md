@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: [audio, transcription, automation, productivity]
 official_url: "https://aws.amazon.com/transcribe/"
-popularity: 74
+popularity: 67
 ---
 
 # Amazon Transcribe

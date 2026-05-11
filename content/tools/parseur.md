@@ -3,15 +3,11 @@ slug: parseur
 title: Parseur
 category: Automatisierung
 price_model: Abonnement
-tags:
-  - pdf
-  - email-parser
-  - data-extraction
-  - automation
-  - no-code
-official_url: 'https://parseur.com/'
-description: 'Parseur ist ein Parser für E-Mails, PDFs und Anhänge, der Dokumentdaten in Tabellen, Webhooks oder Automatisierungstools übergeben kann.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://parseur.com/"
+description: Parseur ist ein Parser für E-Mails, PDFs und Anhänge, der Dokumentdaten in Tabellen, Webhooks oder Automatisierungstools übergeben kann.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Parseur
 

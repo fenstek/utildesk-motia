@@ -2,11 +2,11 @@
 slug: aiva
 title: AIVA
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai,assistant,automation]
 official_url: "https://www.aiva.ai/"
-popularity: 0
-description: "AIVA ist ein KI-Musikgenerator für Kompositionen, Soundtracks, Hintergrundmusik und kreative Audio-Entwürfe."
+popularity: 70
+description: AIVA ist ein KI-Musikgenerator für Kompositionen, Soundtracks, Hintergrundmusik und kreative Audio-Entwürfe.
 ---
 # AIVA
 

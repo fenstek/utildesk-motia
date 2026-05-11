@@ -2,11 +2,11 @@
 slug: inkscape
 title: Inkscape
 category: AI
-price_model: "Open Source"
+price_model: Open Source
 tags: [ai,design,vector,creative,open-source]
 official_url: "https://inkscape.org/"
-popularity: 0
-description: "Inkscape ist ein Design- und Kreativwerkzeug für Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen."
+popularity: 42
+description: Inkscape ist ein Design- und Kreativwerkzeug für Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen.
 ---
 # Inkscape
 

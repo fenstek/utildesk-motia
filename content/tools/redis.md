@@ -5,7 +5,7 @@ category: Developer
 price_model: Open Source
 tags: [database, cache, open-source, cloud]
 official_url: "https://redis.io/"
-popularity: 22
+popularity: 18
 ---
 
 # Redis

@@ -2,10 +2,10 @@
 slug: agorapulse
 title: Agorapulse
 category: AI
-price_model: "Abonnement"
+price_model: Abonnement
 tags: ["social-media", "marketing", "automation", "analytics"]
 official_url: "https://www.agorapulse.com/"
-popularity: 0
+popularity: 73
 ---
 
 # Agorapulse

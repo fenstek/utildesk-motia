@@ -3,15 +3,11 @@ slug: azure-ai-document-intelligence
 title: Azure AI Document Intelligence
 category: Developer
 price_model: Nutzungsbasiert
-tags:
-  - ocr
-  - document-ai
-  - api
-  - cloud
-  - forms
-official_url: 'https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence'
-description: 'Azure AI Document Intelligence ist Microsofts Dienst für OCR, Formularanalyse und strukturierte Dokumentextraktion in Azure- und Microsoft-365-nahen Architekturen.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence"
+description: Azure AI Document Intelligence ist Microsofts Dienst für OCR, Formularanalyse und strukturierte Dokumentextraktion in Azure- und Microsoft-365-nahen Architekturen.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Azure AI Document Intelligence
 

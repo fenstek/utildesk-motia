@@ -3,15 +3,11 @@ slug: ocrmypdf
 title: OCRmyPDF
 category: Developer
 price_model: Open Source
-tags:
-  - ocr
-  - pdf
-  - open-source
-  - automation
-  - local
-official_url: 'https://ocrmypdf.readthedocs.io/en/stable/'
+tags: 
+official_url: "https://ocrmypdf.readthedocs.io/en/stable/"
 description: OCRmyPDF ergänzt gescannte PDFs um eine durchsuchbare Textebene und eignet sich besonders als sauberer Vorverarbeitungsschritt in lokalen Dokumentenpipelines.
-created_at: '2026-05-10'
+created_at: 2026-05-10
+popularity: 0
 ---
 # OCRmyPDF
 

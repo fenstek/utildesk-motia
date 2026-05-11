@@ -3,15 +3,11 @@ slug: klippa
 title: Klippa
 category: Automatisierung
 price_model: Je nach Plan
-tags:
-  - ocr
-  - invoice
-  - expenses
-  - api
-  - data-extraction
-official_url: 'https://www.klippa.com/en/ocr-api/'
-description: 'Klippa bietet OCR- und Dokumentenverarbeitung für Rechnungen, Belege und weitere Geschäftsdokumente, häufig mit Fokus auf API-Integration und Finanzprozesse.'
-created_at: '2026-05-10'
+tags: 
+official_url: "https://www.klippa.com/en/ocr-api/"
+description: Klippa bietet OCR- und Dokumentenverarbeitung für Rechnungen, Belege und weitere Geschäftsdokumente, häufig mit Fokus auf API-Integration und Finanzprozesse.
+created_at: 2026-05-10
+popularity: 0
 ---
 # Klippa
 
