@@ -27,6 +27,10 @@ Camtasia ist für Schulungsteams, Support, Lehrende, Produktmarketing und Softwa
 - Schulungs- und Onboarding-Videos schneiden
 - Supportantworten als wiederverwendbare Clips produzieren
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/camtasia-editorial.webp" alt="Illustration zu Camtasia: Bildschirmaufnahme und Lernvideo-Schnitt am Editiertisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Was im Alltag gut funktioniert
 
 - verkürzt Wege von Rohmaterial zu veröffentlichbarem Clip

@@ -27,6 +27,10 @@ Bei Videoagenturen, Erklärvideo-Teams, Kreativabteilungen und Producer spielt B
 - Shotlisten und Animationsideen strukturieren
 - Skripte, Bilder und Timing zusammenbringen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/boords-editorial.webp" alt="Illustration zu Boords: Storyboardplanung an einer Filmstudio-Wand" loading="lazy" decoding="async" />
+</figure>
+
 ## Was im Alltag gut funktioniert
 
 - verkürzt Wege von Rohmaterial zu veröffentlichbarem Clip

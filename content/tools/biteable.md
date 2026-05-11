@@ -23,6 +23,10 @@ Biteable passt zu Marketingteams, HR, interner Kommunikation, kleinen Unternehme
 - Präsentationsinhalte in einfache Videos übersetzen.
 - Teams ohne Videostudio zu wiederkehrender Videokommunikation befähigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/biteable-editorial.webp" alt="Illustration zu Biteable: Kurzvideos entstehen in einem kleinen Animationsstudio" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Vorlagenbasierte Videoproduktion.

@@ -24,6 +24,10 @@ Chai passt zu Nutzern, die KI-Dialoge ausprobieren, Bots testen oder kreative Ge
 - Prompt- und Bot-Persönlichkeiten iterativ verfeinern.
 - Grenzen von freien KI-Konversationen kennenlernen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chai-editorial.webp" alt="Illustration zu Chai: KI-Gespraeche als leuchtende Figuren in einer Teelounge" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Chatbot- und Charakterinteraktion mit niedrigem Einstieg.

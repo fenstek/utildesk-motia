@@ -19,6 +19,10 @@ Chai is an innovative AI platform specifically designed to enable interactive ch
 
 Chai is suitable for developers, startups, businesses, and content creators who want to integrate intelligent chatbots or virtual assistants into their applications or websites. Chai is particularly well-suited for users who seek a simple way to create AI dialogues without requiring deep programming knowledge. Chai is also a practical choice for educational purposes or experimental projects in the field of AI conversation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chai-editorial.webp" alt="Illustration for Chai: AI conversations as glowing figures in a tea lounge" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Enables smooth and context-dependent conversations.

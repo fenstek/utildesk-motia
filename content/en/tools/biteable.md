@@ -20,6 +20,10 @@ Biteable is a user-friendly online tool that utilizes artificial intelligence to
 
 Biteable is suitable for small and medium-sized businesses, marketing agencies, social media managers, and individuals who need engaging videos for customer retention, product presentation, or brand communication. Additionally, beginners without video experience will find the platform's intuitive interface ideal. Teams that want to create video content quickly and efficiently will also benefit from Biteable's AI-powered templates and automation features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/biteable-editorial.webp" alt="Illustration for Biteable: short videos being assembled in a small animation studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Template Library:** A vast selection of customizable video templates for marketing, explainer videos, social media, and more.

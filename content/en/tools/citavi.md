@@ -32,6 +32,10 @@ Citavi is strongest for students, researchers, universities, and teams with many
 - prepare academic writing with outlines and references
 - support team or institutional source workflows
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/citavi-editorial.webp" alt="Illustration for Citavi: sources, notes and reference work inside a research library" loading="lazy" decoding="async" />
+</figure>
+
 ## What works well in daily use
 
 - makes large source sets easier to scan
