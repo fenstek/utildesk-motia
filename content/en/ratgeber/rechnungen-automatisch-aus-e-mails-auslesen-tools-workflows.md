@@ -7,7 +7,7 @@ eyebrow: "Email to Accounting"
 excerpt: "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
 readTime: 11
 coverImage: /images/ratgeber/email-rechnung-automatisierung-workflow.webp
-secondaryImage: /images/ratgeber/email-rechnung-automatisierung-flow.webp
+secondaryImage: /images/ratgeber/email-rechnung-toolwahl-decision-tree.webp
 tags:
   - "Rechnungen"
   - "E-Mail"
@@ -60,7 +60,6 @@ The workflow layer includes [n8n](/en/tools/n8n/), [Make](/en/tools/make-ehemals
 | [Microsoft Power Automate](/en/tools/microsoft-power-automate/) | Microsoft 365 and Outlook | tenant proximity, SharePoint, Teams | licenses and connector complexity |
 | [UiPath](/en/tools/uipath/) | enterprise and RPA flows | orchestration, legacy systems | heavy for small teams |
 
-![Workflow diagram: email attachment, PDF invoice, OCR, review, table and accounting](/images/ratgeber/email-rechnung-automatisierung-flow.webp)
 
 ## Scenario 1: Simple No-code Flow
 

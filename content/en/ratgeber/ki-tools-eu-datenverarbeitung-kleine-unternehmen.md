@@ -7,7 +7,7 @@ eyebrow: "EU Data Processing"
 excerpt: "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
 readTime: 11
 coverImage: /images/ratgeber/ki-tools-eu-datenverarbeitung-checkliste.webp
-secondaryImage: /images/ratgeber/ki-tools-datenfluss-subprozessoren.webp
+secondaryImage: /images/ratgeber/ki-tools-eu-checkliste.webp
 tags:
   - "GDPR"
   - "EU"
@@ -63,7 +63,6 @@ Workflow examples include [n8n](/en/tools/n8n/), [Microsoft Power Automate](/en/
 | Subprocessors | shows the real supply chain | Which services process data too? |
 | Export/deletion | supports control and switching | Can data be exported and deleted fully? |
 
-![Data-flow diagram: user, AI tool, OCR API, subprocessor and storage location](/images/ratgeber/ki-tools-datenfluss-subprozessoren.webp)
 
 ## Draw the Data Flow First
 

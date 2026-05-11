@@ -7,7 +7,7 @@ eyebrow: "EU-Datenverarbeitung"
 excerpt: "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
 readTime: 11
 coverImage: /images/ratgeber/ki-tools-eu-datenverarbeitung-checkliste.webp
-secondaryImage: /images/ratgeber/ki-tools-datenfluss-subprozessoren.webp
+secondaryImage: /images/ratgeber/ki-tools-eu-checkliste.webp
 tags:
   - "GDPR"
   - "EU"
@@ -63,7 +63,6 @@ Für Automatisierung und Datenflüsse sind [n8n](/tools/n8n/), [Microsoft Power 
 | Subprozessoren | zeigt die echte Lieferkette | Welche Dienste verarbeiten mit? |
 | Export/Löschung | wichtig für Wechsel und Kontrolle | Können Daten vollständig exportiert und gelöscht werden? |
 
-![Data-Flow-Schema: Nutzer, KI-Tool, OCR API, Subprozessor und Speicherort](/images/ratgeber/ki-tools-datenfluss-subprozessoren.webp)
 
 ## Den Datenfluss zeichnen, bevor ein Tool gekauft wird
 

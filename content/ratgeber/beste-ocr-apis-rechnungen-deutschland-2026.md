@@ -7,7 +7,7 @@ eyebrow: "Rechnungs-OCR"
 excerpt: "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
 readTime: 12
 coverImage: /images/ratgeber/rechnung-ocr-api-vergleich-2026.webp
-secondaryImage: /images/ratgeber/rechnung-ocr-api-workflow.webp
+secondaryImage: /images/ratgeber/rechnung-ocr-toolklassen-matrix.webp
 tags:
   - "OCR"
   - "Rechnungen"
@@ -65,7 +65,6 @@ Für diesen Vergleich sind vor allem [Rossum](/tools/rossum/), [Mindee](/tools/m
 | [ABBYY Vantage](/tools/abbyy-vantage/) | Enterprise-IDP mit starker Dokumentenerkennung | API, Workflow | Implementierungsaufwand, Governance, Kosten |
 | [Mistral OCR](/tools/mistral-ocr/) | OCR für PDFs und Entwickler-Workflows | API, Markdown/Text/Struktur | Nachgelagerte Feldlogik, Datenschutz, Modellgrenzen |
 
-![Workflow-Schema: Upload einer Rechnung, OCR API, Feldextraktion, Validierung und Export](/images/ratgeber/rechnung-ocr-api-workflow.webp)
 
 ## API, Enterprise-IDP oder moderner OCR-Baustein?
 
