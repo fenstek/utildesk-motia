@@ -7,6 +7,7 @@ _Last updated: 2026-05-11_
 - Extended `scripts/deploy_from_ubuntu.sh` so successful direct Ubuntu deploys can call the Windows laptop sync helper via `UTILDESK_WINDOWS_SYNC_SSH`, keeping `C:\projects\utildesk-motia-production-sync` current.
 - Extended `scripts/sync_after_remote_deploy.ps1` with Ubuntu callback sync by default; pass `-NoUbuntuSync` or set `UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS=0` to opt out.
 - Added background auto-sync installers/runners: Windows Scheduled Task helper and Ubuntu cron helper, both defaulting to a 5-minute cadence and log files outside content.
+- Windows auto-sync is installed via a hidden `wscript.exe` runner that launches PowerShell with `-WindowStyle Hidden`, so scheduled background sync should not pop up PowerShell or cmd windows.
 - Updated the Ubuntu deploy/sync runbook with the active Ubuntu/Windows paths and the rule that GitHub credentials stay outside the repo.
 
 ## 2026-05-11 - Ubuntu deploy and laptop sync helpers
