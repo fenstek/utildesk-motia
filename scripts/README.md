@@ -200,6 +200,8 @@ letting `master` and `autobot` drift.
 - `bash scripts/deploy_from_ubuntu.sh`
 - `bash scripts/deploy_from_ubuntu.sh --hub-only`
 - `bash scripts/sync_after_remote_deploy.sh --sync-hub`
+- `bash scripts/install_ubuntu_auto_sync_cron.sh`
+- `powershell -ExecutionPolicy Bypass -File scripts/install_windows_auto_sync_task.ps1`
 - `powershell -ExecutionPolicy Bypass -File scripts/publish_hub_ref_from_windows.ps1 -HubRef <hub-ref>`
 - `powershell -ExecutionPolicy Bypass -File scripts/sync_after_remote_deploy.ps1 -SyncHub`
 
@@ -214,6 +216,8 @@ See `docs/04_operations/ubuntu_deploy_sync.md`.
 - Windows sync can call the Ubuntu sync helper via
   `UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS=1`, keeping the Ubuntu worker current
   after laptop-side deploys.
+- The Windows scheduled task and Ubuntu cron wrappers keep production memory
+  mirrors current in the background every 5 minutes.
 - Until GitHub write access is available, use the hub fallback and finalize from
   the laptop.
 - Tracked memory or handoff updates are required for production-relevant releases.
