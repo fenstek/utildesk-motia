@@ -19,6 +19,10 @@ BandLab is a cloud-based music production platform that utilizes artificial inte
 
 BandLab is suitable for musicians, producers, songwriters, and sound designers looking for a flexible, platform-independent solution for music production. Thanks to its user-friendly interface and integrated AI features, it's ideal for beginners who want to create music without expensive hardware or complex software. At the same time, BandLab also offers powerful tools for advanced users to create professional tracks and collaborate with other artists worldwide.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bandlab-editorial.webp" alt="Illustration for BandLab: music production and collaboration inside a night studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Cloud-based DAW:** Access to a full music production environment through the browser or mobile apps, without installation.

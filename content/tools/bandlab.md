@@ -23,6 +23,10 @@ BandLab passt zu Musikern, Produzenten, Songwritern, Lernenden und Creators, die
 - Lernende an Recording und Arrangement heranführen.
 - Einfache Veröffentlichungs- und Community-Workflows nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bandlab-editorial.webp" alt="Illustration zu BandLab: Musikproduktion und Zusammenarbeit in einem naechtlichen Studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Mehrspuraufnahme und Bearbeitung im Browser oder mobil.

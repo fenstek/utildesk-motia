@@ -32,6 +32,10 @@ Im Alltag hilft Busuu, wenn Lernen einen festen Platz bekommt: zehn Minuten morg
 
 Wichtig ist, nicht nur zu tippen. Sprache braucht Mund, Ohr und Kontext. Wer Busuu mit Podcasts, echten Gesprächen oder kurzen Texten kombiniert, baut stabilere Fähigkeiten auf.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/busuu-editorial.webp" alt="Illustration zu Busuu: Sprachuebung als Reise zwischen Karte, Cafe und Gespraech" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Strukturierte Sprachkurse mit Lektionen und Übungen.

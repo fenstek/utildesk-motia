@@ -36,6 +36,10 @@ In daily work, BibDesk rewards clean metadata. A misspelled author or inconsiste
 
 Good use means checking sources directly on import: title, year, DOI, journal, pages. It is a small amount of work with a big effect on later bibliographies.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bibdesk-editorial.webp" alt="Illustration for BibDesk: reference cards, books and source work on a library desk" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Management of BibTeX databases and literature entries.

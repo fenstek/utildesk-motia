@@ -34,6 +34,10 @@ For training teams, support, educators, product marketing, and software document
 - edit training and onboarding videos
 - produce reusable support-answer clips
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/camtasia-editorial.webp" alt="Illustration for Camtasia: screen recording and tutorial editing at an editing desk" loading="lazy" decoding="async" />
+</figure>
+
 ## What works well in daily use
 
 - shortens the path from raw material to publishable clip

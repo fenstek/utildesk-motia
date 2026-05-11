@@ -32,6 +32,10 @@ Boords is strongest for video agencies, explainer-video teams, creative departme
 - structure shot lists and animation ideas
 - bring scripts, images, and timing together
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/boords-editorial.webp" alt="Illustration for Boords: storyboard planning on a film studio wall" loading="lazy" decoding="async" />
+</figure>
+
 ## What works well in daily use
 
 - shortens the path from raw material to publishable clip

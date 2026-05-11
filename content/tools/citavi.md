@@ -27,6 +27,10 @@ Bei Studierende, Forschende, Hochschulen und Teams mit vielen Quellen und Zitate
 - wissenschaftliche Arbeiten mit Gliederung und Nachweisen vorbereiten
 - Team- oder Institutionsworkflows für Quellenarbeit unterstützen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/citavi-editorial.webp" alt="Illustration zu Citavi: Quellen, Notizen und Literaturarbeit in einer Forschungsbibliothek" loading="lazy" decoding="async" />
+</figure>
+
 ## Was im Alltag gut funktioniert
 
 - macht große Quellenmengen schneller überblickbar

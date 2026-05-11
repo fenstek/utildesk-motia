@@ -32,6 +32,10 @@ Im Alltag belohnt BibDesk saubere Metadaten. Ein falsch geschriebener Autor oder
 
 Gute Nutzung bedeutet, Quellen direkt beim Import zu prüfen: Titel, Jahr, DOI, Journal, Seiten. Das ist kleine Arbeit mit großer Wirkung für spätere Bibliographien.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bibdesk-editorial.webp" alt="Illustration zu BibDesk: Literaturkarten, Buecher und Quellenarbeit auf einem Bibliothekstisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Verwaltung von BibTeX-Datenbanken und Literatureinträgen.

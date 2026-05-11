@@ -37,6 +37,10 @@ In everyday use, Busuu helps when learning has a fixed place: ten minutes in the
 
 The important part is not to just tap through. Language needs mouth, ear, and context. Anyone who combines Busuu with podcasts, real conversations, or short texts builds more stable skills.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/busuu-editorial.webp" alt="Illustration for Busuu: language practice as a journey between map, cafe and conversation" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Structured language courses with lessons and exercises.

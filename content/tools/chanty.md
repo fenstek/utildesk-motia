@@ -23,6 +23,10 @@ Chanty passt zu kleinen und mittleren Teams, die Chat, Aufgaben und schnelle Abs
 - E-Mail-Flut durch thematische Kanäle reduzieren.
 - Kleine Teams ohne schwere Suite schneller arbeitsfähig machen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chanty-editorial.webp" alt="Illustration zu Chanty: Teamnachrichten und Aufgaben in einer kollaborativen Werkstatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Team-Chat, Kanäle, Direktnachrichten und Aufgabenbezug.

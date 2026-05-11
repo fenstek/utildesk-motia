@@ -27,6 +27,10 @@ Bei Creator, kleine Videoteams, Hobby-Musiker und Content-Produzenten spielt Boo
 - Stimmungen und Genres schnell vergleichen
 - Audio-Rohmaterial für spätere Bearbeitung sammeln
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/boomy-editorial.webp" alt="Illustration zu Boomy: Klangideen wachsen in einem futuristischen Musikgarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Was im Alltag gut funktioniert
 
 - beschleunigt Aufnahme, Bearbeitung oder musikalische Skizzen

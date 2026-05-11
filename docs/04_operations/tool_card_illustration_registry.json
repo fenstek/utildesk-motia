@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10",
+  "last_updated": "2026-05-11",
   "purpose": "Persistent registry of tool cards that already received editorial mid-article illustrations. Check this file before adding future tool-card artwork so the same page is not illustrated twice.",
   "selection_rule": "Exclude every slug listed in batches[].slugs unless the user explicitly asks to replace or revise an existing illustration.",
   "batches": [
@@ -501,6 +501,43 @@
         "content/images/tools/tesseract-ocr-editorial.webp",
         "content/images/tools/ocrmypdf-editorial.webp",
         "content/images/tools/paddleocr-editorial.webp"
+      ]
+    },
+    {
+      "id": "2026-05-11-edited-tail-next-10-png-editorial-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "source_format": "png",
+      "image_format": "webp",
+      "image_width_px": 1400,
+      "placement": "mid-article image-only figure before the main functions/features or practical-use section",
+      "note": "Seventh production batch: next 10 remaining manually edited cards after Balsamiq, generated first as PNG raster artwork and then converted to WebP. Uses varied artistic narrative editorial scenes; no SVG renderer, logos, readable text, captions, or brand marks.",
+      "slugs": [
+        "bandlab",
+        "bibdesk",
+        "biteable",
+        "boomy",
+        "boords",
+        "busuu",
+        "camtasia",
+        "chai",
+        "chanty",
+        "citavi"
+      ],
+      "images": [
+        "content/images/tools/bandlab-editorial.webp",
+        "content/images/tools/bibdesk-editorial.webp",
+        "content/images/tools/biteable-editorial.webp",
+        "content/images/tools/boomy-editorial.webp",
+        "content/images/tools/boords-editorial.webp",
+        "content/images/tools/busuu-editorial.webp",
+        "content/images/tools/camtasia-editorial.webp",
+        "content/images/tools/chai-editorial.webp",
+        "content/images/tools/chanty-editorial.webp",
+        "content/images/tools/citavi-editorial.webp"
       ]
     }
   ]

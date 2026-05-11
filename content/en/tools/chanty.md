@@ -20,6 +20,10 @@ Chanty is a AI-powered communication tool that helps teams work more efficiently
 
 Chanty is suitable for small and medium-sized enterprises, start-ups, and teams looking to improve their internal communication and collaboration. The tool is particularly well-suited for teams seeking a simple, yet powerful platform that combines chat and task management. Remote teams and distributed work groups also benefit from Chanty's AI features, which optimize workflows and provide a clear overview of projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chanty-editorial.webp" alt="Illustration for Chanty: team messages and tasks inside a collaborative workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Team Chat**: Real-time communication with direct messages and group chats.

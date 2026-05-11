@@ -32,6 +32,10 @@ Boomy is strongest for creators, small video teams, hobby musicians, and content
 - compare moods and genres quickly
 - collect audio raw material for later editing
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/boomy-editorial.webp" alt="Illustration for Boomy: sound ideas growing inside a futuristic music garden" loading="lazy" decoding="async" />
+</figure>
+
 ## What works well in daily use
 
 - speeds up recording, editing, or musical sketches
