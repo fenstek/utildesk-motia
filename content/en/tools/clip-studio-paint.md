@@ -21,6 +21,10 @@ Clip Studio Paint is a versatile software specializing in digital drawing, paint
 
 Clip Studio Paint is designed for artists, illustrators, comic artists, and animators seeking a powerful and flexible solution for digital drawing and animation. The software is suitable for hobbyists and professionals alike who want to create detailed illustrations, comics, or animated sequences. Designers who prioritize precise brushes and a variety of drawing tools will also find a suitable platform here.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clip-studio-paint-editorial.webp" alt="Illustration for Clip Studio Paint: comic artwork evolving from sketches into colored panels on a drawing tablet" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Natural and customizable brushes with realistic texture
