@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08",
+  "last_updated": "2026-05-11",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -791,6 +791,18 @@
         "power-bi",
         "research-rabbit",
         "snappa"
+      ]
+    },
+    {
+      "id": "2026-05-11-ableton-live-manual-editorial",
+      "source_commits": [],
+      "note": "Manual single-card editorial rewrite of a production-generated tool page that had not been listed in the editorial registry.",
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "slugs": [
+        "ableton-live"
       ]
     }
   ]

@@ -1,6 +1,16 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-11_
 
+## 2026-05-11 - Ableton Live manual editorial rewrite
+
+- Rewrote the previously unregistered production-generated Ableton Live tool card in German and English.
+- Added the slug to `docs/04_operations/tool_card_editorial_registry.json` so future manual editorial passes skip it.
+
+## 2026-05-11 - Ableton Live tool illustration
+
+- Added one mid-article WebP illustration to the Ableton Live tool card in both German and English.
+- Registered the image in `docs/04_operations/tool_card_illustration_registry.json`.
+
 ## 2026-05-11 - Clip Studio Paint tool illustration
 
 - Added one mid-article WebP illustration to the Clip Studio Paint tool card in both German and English.
