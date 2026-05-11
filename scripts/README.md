@@ -217,7 +217,8 @@ See `docs/04_operations/ubuntu_deploy_sync.md`.
   `UTILDESK_SYNC_UBUNTU_AFTER_WINDOWS=1`, keeping the Ubuntu worker current
   after laptop-side deploys.
 - The Windows scheduled task and Ubuntu cron wrappers keep production memory
-  mirrors current in the background every 5 minutes.
+  mirrors current in the background every 15 minutes. Their `*.log` files are
+  ignored by Git and are not project memory.
 - Until GitHub write access is available, use the hub fallback and finalize from
   the laptop.
 - Tracked memory or handoff updates are required for production-relevant releases.
