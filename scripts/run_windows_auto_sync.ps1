@@ -26,12 +26,15 @@ try {
   }
 
   Write-AutoSyncLog "start: windows auto-sync"
-  $syncArgs = @("-Repo", $Repo, "-SyncHub")
+  $syncParams = @{
+    Repo = $Repo
+    SyncHub = $true
+  }
   if ($NoUbuntuSync) {
-    $syncArgs += "-NoUbuntuSync"
+    $syncParams.NoUbuntuSync = $true
   }
 
-  & $SyncScript @syncArgs *>> $LogFile
+  & $SyncScript @syncParams *>> $LogFile
   Write-AutoSyncLog "complete: windows auto-sync"
 } catch {
   Write-AutoSyncLog "ERROR: $($_.Exception.Message)"
