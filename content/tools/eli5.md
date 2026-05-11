@@ -23,6 +23,10 @@ ELI5 passt zu Lernenden, Lehrenden, Supportteams, Produktkommunikation und Mensc
 - Technische Konzepte für Stakeholder vorbereiten.
 - Vor dem Deep Dive eine grobe Orientierung gewinnen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/eli5-editorial.webp" alt="Illustration zu ELI5: ML-Erklaerer zerlegt ein Modell in transparente Feature-Schichten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Vereinfachung komplexer Inhalte.

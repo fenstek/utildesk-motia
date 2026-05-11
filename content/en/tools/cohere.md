@@ -33,6 +33,10 @@ A good test case for Cohere is a recurring task with input, expected output, rev
 - **Good start for Cohere:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Cohere:** The rollout turns into extra coordination when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cohere-editorial.webp" alt="Illustration for Cohere: AI team organizes documents, embeddings, and retrieval paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text Generation:** Creating text, summaries, and responses based on inputs.

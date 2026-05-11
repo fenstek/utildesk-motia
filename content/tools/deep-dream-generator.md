@@ -20,6 +20,10 @@ Deep Dream Generator muss in einem echten Beispiel zeigen, ob KI-Bildexperimente
 
 Für Künstler, Creator, Hobby-Designer und visuelle Experimentierer ist Deep Dream Generator dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-dream-generator-editorial.webp" alt="Illustration zu Deep Dream Generator: Surreale Bildideen entstehen aus Skizzen und neuronalen Mustern" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - surreale oder stilisierte Bildideen erzeugen

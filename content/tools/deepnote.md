@@ -37,6 +37,10 @@ Ein belastbarer Pilot für Deepnote beginnt mit einem begrenzten Datensatz mit k
 - **Guter Start für Deepnote:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Deepnote:** Ohne klare Regeln wird der Nutzen schwach, sobald Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepnote-editorial.webp" alt="Illustration zu Deepnote: Analysten arbeiten in einem Notebook-Labor an reproduzierbaren Experimenten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Notebooks**: Unterstützung von Python, SQL, R und anderen Sprachen in einer einheitlichen Umgebung

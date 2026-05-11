@@ -20,6 +20,10 @@ Devin richtet sich an Engineering-Teams, die KI nicht nur als Chat-Assistenten, 
 
 Nicht geeignet ist Devin als unbeaufsichtigter Ersatz für Senior Engineering. Architekturentscheidungen, Sicherheitsänderungen, Datenmigrationen und produktionskritische Eingriffe brauchen weiterhin menschliche Verantwortung und ein enges Review-Gate.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/devin-editorial.webp" alt="Illustration zu Devin: Engineering-Agent bewegt Aufgaben zwischen Tickets, Code und Testbank" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Bugfixes oder kleine Features als Agentenaufgaben schneiden

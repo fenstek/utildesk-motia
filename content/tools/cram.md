@@ -27,6 +27,10 @@ Cram sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Workflow d
 - **Messpunkt:** ob Lernsets gepflegt, geprüft und nicht blind kopiert werden.
 - **Grenze:** Verständnis nicht ersetzt, wenn nur Antwortpaare auswendig gelernt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cram-editorial.webp" alt="Illustration zu Cram: Lernende organisiert digitale Karteikarten und Wiederholungspfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Erstellung digitaler Karteikarten:** Einfaches Anlegen und Organisieren von Karteikarten zu beliebigen Themen.

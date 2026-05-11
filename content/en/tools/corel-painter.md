@@ -21,6 +21,10 @@ Corel Painter is a professional digital painting and illustration software desig
 
 Corel Painter is ideal for professional artists, illustrators, concept artists, and designers who value a realistic painting experience. Also, advanced hobbyists who want to build their digital painting skills can benefit from the extensive toolset. The software is perfect for users who work on desktop systems and value precise control and a wide range of creative possibilities.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/corel-painter-editorial.webp" alt="Illustration for Corel Painter: digital artist blends brush textures and layers on a tablet" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Realistic brushes and textures that mimic traditional painting techniques

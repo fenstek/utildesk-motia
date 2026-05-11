@@ -22,6 +22,10 @@ Espresso is a modern AI tool designed specifically for data analysis, machine le
 
 Espresso is suitable for data analysts, data scientists, IT managers, and organizations looking to optimize their processes through intelligent automation and advanced analysis methods. It is particularly well-suited for organizations handling large data volumes and leveraging cloud-based solutions to boost efficiency and make informed decisions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/espresso-editorial.webp" alt="Illustration for Espresso: mobile testing lab checks gestures, navigation, and failed states" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Integrates data from various sources, including cloud databases and APIs

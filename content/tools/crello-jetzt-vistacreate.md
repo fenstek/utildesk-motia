@@ -37,6 +37,10 @@ Ein belastbarer Pilot für Crello (jetzt VistaCreate) beginnt mit einem konkrete
 - **Guter Start für Crello (jetzt VistaCreate):** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Crello (jetzt VistaCreate):** Ohne klare Regeln wird der Nutzen schwach, sobald Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crello-jetzt-vistacreate-editorial.webp" alt="Illustration zu Crello (jetzt VistaCreate): Designer arrangiert Vorlagen, Farbtafeln und Social-Media-Motive" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vorlagenbibliothek:** Tausende professionell gestaltete Vorlagen für verschiedene Anwendungsbereiche (Social Media, Werbung, Print, etc.)

@@ -23,6 +23,10 @@ DominKnow | ONE is relevant for instructional designers, learning and developmen
 
 It can be heavy for very small projects. Teams that only need a quick presentation or a single informal tutorial may be faster with a simpler authoring tool.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dominknow-one-editorial.webp" alt="Illustration for DominKnow | ONE: instructional designers build branching learning modules on a studio stage" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Course authoring:** Supports text, images, video, audio, interactions, assessments and structured lessons.

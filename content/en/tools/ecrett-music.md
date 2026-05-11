@@ -23,6 +23,10 @@ Suitable for creators, small studios, YouTube, courses, games, and marketing mat
 
 Ecrett Music is most useful for teams and individuals that treat a AI music tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ecrett-music-editorial.webp" alt="Illustration for Ecrett Music: creator builds soundtracks from moods, genres, and melody paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Generate background music for videos

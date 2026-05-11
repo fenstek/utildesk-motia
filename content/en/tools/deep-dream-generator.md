@@ -27,6 +27,10 @@ Creative tools save time when they make material malleable. They hurt when every
 
 Deep Dream Generator makes sense for artists, creators, hobby designers, and visual experimenters when it stabilizes part of the process: less searching, less manual repetition, fewer unclear handoffs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-dream-generator-editorial.webp" alt="Illustration for Deep Dream Generator: surreal image ideas emerge from sketches and neural patterns" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - generate surreal or stylized image ideas

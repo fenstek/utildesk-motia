@@ -41,6 +41,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Keep the first CrushOn trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** CrushOn disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crushon-editorial.webp" alt="Illustration for CrushOn: user explores fictional AI characters and dialogue branches" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent Conversation:** CrushOn utilizes advanced KI models to engage in natural and fluid dialogues.

@@ -43,6 +43,10 @@ A useful pilot for Codecademy starts with a real development flow from setup thr
 - **Good start for Codecademy:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Codecademy:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codecademy-editorial.webp" alt="Illustration for Codecademy: learner builds a web app learning path from code blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Interactive coding exercises:** Immediate feedback directly in the browser without local installation

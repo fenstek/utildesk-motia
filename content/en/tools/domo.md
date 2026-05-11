@@ -26,6 +26,10 @@ Domo is suitable for any size of business that wants to centralize and intellige
 - Departments such as Sales, Marketing, Finance, and IT that want to make data-driven decisions
 - Organizations that prefer scalable and customizable business intelligence tools
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/domo-editorial.webp" alt="Illustration for Domo: business team reads company signals in a data observatory" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Data Integration:** Connection to hundreds of data sources, including cloud services, databases, and on-premises systems

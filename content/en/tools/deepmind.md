@@ -28,6 +28,10 @@ DeepMind is suitable for companies, research institutions, and developers lookin
 
 Depending on individual requirements and technical expertise, users can benefit from the basic functions or access to more advanced offerings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepmind-editorial.webp" alt="Illustration for DeepMind: research lab connects simulations, game boards, and scientific models" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Machine Learning and Deep Learning:** Access to modern algorithms for neural networks and other learning methods

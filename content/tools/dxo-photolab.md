@@ -30,6 +30,10 @@ Ein belastbarer Pilot für DxO PhotoLab beginnt mit einem konkreten Asset mit Br
 - **Guter Start für DxO PhotoLab:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei DxO PhotoLab:** Ohne klare Regeln wird der Nutzen schwach, sobald Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dxo-photolab-editorial.webp" alt="Illustration zu DxO PhotoLab: Fotograf kalibriert RAW-Aufnahmen in einem digitalen Dunkelkammer-Labor" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **RAW-Konvertierung:** Hochwertige Verarbeitung von RAW-Dateien mit präziser Farb- und Belichtungskorrektur.

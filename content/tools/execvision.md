@@ -32,6 +32,10 @@ Im Alltag sollte ExecVision nicht als Überwachungsinstrument eingeführt werden
 
 Die wertvollsten Erkenntnisse liegen oft in kleinen Momenten: Wann wird zu früh gepitcht, welche Frage öffnet den Kunden, welche Einwände wiederholen sich? Genau dort wird aus Analyse Training.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/execvision-editorial.webp" alt="Illustration zu ExecVision: Sales-Team analysiert Gespraechsmomente in einem Coaching-Raum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Aufzeichnung, Transkription und Suche in Gesprächen.

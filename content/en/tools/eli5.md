@@ -20,6 +20,10 @@ ELI5 is an innovative AI tool that explains complex information in simple and un
 
 ELI5 is ideal for teachers, students, content creators, support staff, and anyone who needs to communicate complex concepts in a clear and simple manner. Companies also benefit from automating explanatory content to simplify internal processes or efficiently answer customer inquiries. In general, the tool is suitable for anyone who values clear and simple explanations, regardless of their field of expertise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/eli5-editorial.webp" alt="Illustration for ELI5: ML explainer breaks a model into transparent feature layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Functions
 
 - Automatic simplification of complex texts into easily understandable language  

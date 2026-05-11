@@ -20,6 +20,10 @@ ElevenLabs ist eine fortschrittliche KI-basierte Audio-Plattform, die sich auf d
 
 ElevenLabs richtet sich an eine breite Zielgruppe, darunter Content-Ersteller, Podcaster, Entwickler, Unternehmen und Bildungseinrichtungen. Besonders nützlich ist das Tool für alle, die qualitativ hochwertige, natürliche Sprachaufnahmen benötigen, ohne selbst aufnehmen zu müssen. Auch für Menschen mit eingeschränkter Stimme oder für barrierefreie Anwendungen bietet ElevenLabs wertvolle Unterstützung. Je nach Anwendungsfall und Budget kann die Plattform flexibel genutzt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elevenlabs-editorial.webp" alt="Illustration zu ElevenLabs: Voice-Team formt Erzaehlstimmen mit Wellenformen und Emotionsreglern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Text-zu-Sprache-Synthese:** Erzeugt realistisch klingende Stimmen auf Basis von KI.

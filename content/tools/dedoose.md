@@ -20,6 +20,10 @@ Dedoose eignet sich für Forschende, UX-Research-Teams, Evaluationen und Hochsch
 
 Nicht jedes kleine Interviewprojekt braucht Dedoose. Wenn nur wenige Texte markiert werden sollen, können leichtere Tools genügen. Der Mehrwert entsteht bei Team-Coding, Codebook-Pflege, Vergleichbarkeit und Auswertung über mehrere Datenarten hinweg.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dedoose-editorial.webp" alt="Illustration zu Dedoose: Forschende codieren Interviews und Mixed-Methods-Daten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Interviews und Textmaterial codieren

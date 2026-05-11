@@ -37,6 +37,10 @@ Als Prüfstück für DeepFaceLab eignet sich einem konkreten Asset mit Briefing,
 - **Guter Start für DeepFaceLab:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei DeepFaceLab:** Ohne klare Regeln wird der Nutzen schwach, sobald Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepfacelab-editorial.webp" alt="Illustration zu DeepFaceLab: Medienlabor untersucht generische Gesichter, Landmarken und Pruefschritte" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Open-Source Deepfake-Engine mit umfangreichen Anpassungsmöglichkeiten

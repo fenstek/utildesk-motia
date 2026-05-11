@@ -41,6 +41,10 @@ Deepnote should first prove itself in a limited data set with a clear source, de
 - **Good start for Deepnote:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Deepnote:** The rollout turns into extra coordination when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepnote-editorial.webp" alt="Illustration for Deepnote: analysts work in a notebook lab on reproducible experiments" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Interactive Notebooks**: Support for Python, SQL, R, and other languages in a unified environment

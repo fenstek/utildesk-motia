@@ -25,6 +25,10 @@ DeepMind richtet sich an Unternehmen, Forschungseinrichtungen und Entwickler, di
 
 Je nach individuellen Anforderungen und technischem Know-how können Nutzer von den Basisfunktionen profitieren oder auf erweiterte Angebote zugreifen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepmind-editorial.webp" alt="Illustration zu DeepMind: Forschungslabor verbindet Simulationen, Spielbretter und Wissenschaftsmodelle" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Maschinelles Lernen und Deep Learning:** Zugang zu modernen Algorithmen für neuronale Netze und andere Lernverfahren

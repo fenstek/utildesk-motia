@@ -20,6 +20,10 @@ Doubao is a AI-powered chatbot and assistant designed to simplify the interactio
 
 Doubao is suitable for companies, developers, and individuals seeking intelligent, automated support for customer service, information acquisition, or daily tasks. It is particularly useful for small and medium-sized enterprises looking to integrate AI technology without significant upfront costs, as well as tech enthusiasts who want to test or personalize chatbots.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/doubao-editorial.webp" alt="Illustration for Doubao: user organizes daily tasks, learning, and language with AI helpers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Intelligent Conversation: Natural language processing for dynamic and context-dependent communication  

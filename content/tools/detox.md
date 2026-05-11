@@ -20,6 +20,10 @@ Detox eignet sich für Mobile-Teams, besonders im React-Native-Umfeld, die kriti
 
 Für kleine Apps ohne stabile Testumgebung kann Detox zu früh sein. Der Aufwand lohnt sich erst, wenn Build-Pipeline, Testdaten, Simulatoren und Verantwortlichkeiten sauber genug sind, damit E2E-Tests nicht ständig aus falschen Gründen brechen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/detox-editorial.webp" alt="Illustration zu Detox: Mobile QA-Team laesst App-Tests ueber Geraete und Pruefgates laufen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Login-, Onboarding- und Checkout-Flows testen

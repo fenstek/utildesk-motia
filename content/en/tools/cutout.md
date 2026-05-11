@@ -32,6 +32,10 @@ The best practical test for Cutout is small, but real. A team should run through
 - **Rollout question:** whether the cutout is clean enough around hair, shadows, and transparency.
 - **Obstacle:** difficult edges or brand imagery require manual review.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cutout-editorial.webp" alt="Illustration for Cutout: designer cuts out subjects and checks masks on a transparent background" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Automatic removal of image backgrounds with high precision.

@@ -23,6 +23,10 @@ Deep Art Effects passt zu Creators, Fotografen, Marketingteams, Lehrprojekten un
 - Kampagnenideen mit auffälligen Looks skizzieren, ohne sofort eine Illustration zu beauftragen.
 - Private Bilder für Geschenke, Dekoration oder kreative Experimente verfremden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-art-effects-editorial.webp" alt="Illustration zu Deep Art Effects: Kuenstlerin verwandelt Fotos in geschichtete Kunststile" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-basierter Stiltransfer auf vorhandene Fotos und Grafiken.

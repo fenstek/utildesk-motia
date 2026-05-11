@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für D-ID nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** D-ID enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/d-id-editorial.webp" alt="Illustration zu D-ID: Videoteam erstellt generische Presenter mit Stimme und Storyboard" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Gesichtsanimation aus Fotos**: Erzeugt lebensechte Animationen aus Standbildern.

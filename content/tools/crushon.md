@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für CrushOn nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** CrushOn enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crushon-editorial.webp" alt="Illustration zu CrushOn: Nutzer erkundet fiktive KI-Charaktere und Dialogzweige" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Konversation:** CrushOn nutzt fortschrittliche KI-Modelle, um natürliche und flüssige Dialoge zu führen.

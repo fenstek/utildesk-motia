@@ -30,6 +30,10 @@ Als Prüfstück für Elasticsearch eignet sich einem realen Entwicklungsablauf v
 - **Guter Start für Elasticsearch:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Elasticsearch:** Der Einsatz kippt in Zusatzarbeit, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elasticsearch-editorial.webp" alt="Illustration zu Elasticsearch: Suchteam indexiert Dokumente in einer unterirdischen Suchsternwarte" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Volltextsuche:** Schnelle und präzise Suche in großen Dokumentenbeständen mit Unterstützung für komplexe Abfragen.

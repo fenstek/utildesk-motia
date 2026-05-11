@@ -20,6 +20,10 @@ Derwent Innovation richtet sich an IP-Abteilungen, Patentanwälte, R&D-Teams und
 
 Für gelegentliche Patentsuchen ist die Plattform wahrscheinlich zu spezialisiert. Der Mehrwert entsteht bei Tiefe: normalisierte Patentfamilien, präzisere Suchlogik, Wettbewerbsanalysen, Monitoring und exportierbare Entscheidungsgrundlagen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/derwent-innovation-editorial.webp" alt="Illustration zu Derwent Innovation: Patentanalysten erkunden Technologiepfade in einem Forschungsarchiv" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Patentlandschaften analysieren

@@ -42,6 +42,10 @@ ContentBot should first prove itself in a real writing assignment with brief, dr
 - **Good start for ContentBot:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with ContentBot:** The rollout turns into extra coordination when sources, tone, review rules, language variants, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/contentbot-editorial.webp" alt="Illustration for ContentBot: marketing team shapes ideas, drafts, and campaign cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated text generation:** Creation of blog posts, product descriptions, social media posts, and more.

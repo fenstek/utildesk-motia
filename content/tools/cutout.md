@@ -27,6 +27,10 @@ Der beste Praxistest für Cutout ist klein, aber echt. Ein Team sollte einen typ
 - **Rollout-Frage:** ob die Freistellung bei Haaren, Schatten und Transparenzen sauber genug ist.
 - **Bremse:** bei schwierigen Kanten oder Markenmotiven manuelle Kontrolle braucht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cutout-editorial.webp" alt="Illustration zu Cutout: Designer stellt Motive frei und prueft Masken auf transparentem Hintergrund" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Entfernung von Bildhintergründen mit hoher Präzision.

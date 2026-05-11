@@ -21,6 +21,10 @@ ElevenLabs is a cutting-edge AI-based audio platform specializing in the creatio
 
 ElevenLabs is suitable for a wide range of users, including content creators, podcasters, developers, businesses, and educational institutions. The tool is particularly useful for anyone who needs high-quality, natural speech recordings without having to record them themselves. ElevenLabs is also beneficial for individuals with limited vocal abilities or for barrier-free applications. The platform can be used flexibly depending on the application and budget.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elevenlabs-editorial.webp" alt="Illustration for ElevenLabs: voice team shapes narration voices with waveforms and emotion controls" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Text-to-Speech Synthesis:** Generates realistic voices based on AI.

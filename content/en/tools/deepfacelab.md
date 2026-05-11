@@ -41,6 +41,10 @@ DeepFaceLab should first prove itself in one concrete asset with briefing, versi
 - **Good start for DeepFaceLab:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with DeepFaceLab:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepfacelab-editorial.webp" alt="Illustration for DeepFaceLab: media lab studies generic faces, landmarks, and verification steps" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Open-source deepfake engine with extensive customization options

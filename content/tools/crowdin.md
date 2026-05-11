@@ -16,6 +16,10 @@ Crowdin ist eine cloudbasierte Plattform zur Übersetzungs- und Lokalisierungsve
 
 Crowdin eignet sich für Unternehmen und Teams, die regelmäßig mehrsprachige Inhalte erstellen und verwalten müssen. Besonders nützlich ist die Plattform für Softwareentwickler, Marketingteams, Content-Manager und Übersetzungsagenturen, die eine zentrale Lösung zur Koordination von Übersetzungen suchen. Auch Open-Source-Projekte und Start-ups profitieren von den Automatisierungsfunktionen und der flexiblen Preisgestaltung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crowdin-editorial.webp" alt="Illustration zu Crowdin: Lokalisierungsteam koordiniert Sprachversionen und Review-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Übersetzungsverwaltung:** Integration von maschineller Übersetzung und Translation Memory zur Beschleunigung des Übersetzungsprozesses.

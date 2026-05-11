@@ -38,6 +38,10 @@ Codecademy sollte zuerst in einem realen Entwicklungsablauf von Setup über Test
 - **Guter Start für Codecademy:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Codecademy:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codecademy-editorial.webp" alt="Illustration zu Codecademy: Lernende baut aus Code-Bloecken einen Webapp-Lernpfad" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Programmierübungen:** Sofortiges Feedback direkt im Browser ohne lokale Installation

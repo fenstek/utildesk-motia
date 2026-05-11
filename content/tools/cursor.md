@@ -20,6 +20,10 @@ Cursor ist ein innovatives Entwickler-Tool, das künstliche Intelligenz nutzt, u
 
 Cursor richtet sich vor allem an Softwareentwickler, die ihre Produktivität steigern und Routineaufgaben automatisieren möchten. Das Tool ist sowohl für Einsteiger als auch für erfahrene Programmierer interessant, da es eine intelligente Unterstützung bei der Codeerstellung bietet. Besonders nützlich ist Cursor für Entwickler, die viel Zeit mit Debugging und Code-Reviews verbringen oder neue Programmiersprachen lernen wollen. Auch Teams, die eine kollaborative Entwicklungsumgebung suchen, können von den Funktionen profitieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cursor-editorial.webp" alt="Illustration zu Cursor: Entwickler navigiert Codebasis, Tests und KI-Vorschlaege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Code-Vervollständigung:** Cursor schlägt kontextabhängige Code-Snippets vor und hilft so, schneller zu programmieren.

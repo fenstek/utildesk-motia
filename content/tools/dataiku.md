@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Für Dataiku eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Dataiku enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dataiku-editorial.webp" alt="Illustration zu Dataiku: Data-Science-Team fuehrt Rohdaten, Modelle und Governance zusammen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visuelle Workflow-Erstellung:** Drag-and-Drop-Interface zur einfachen Modellierung von Datenpipelines.

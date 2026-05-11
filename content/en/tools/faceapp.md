@@ -34,6 +34,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Test FaceApp in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** FaceApp disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/faceapp-editorial.webp" alt="Illustration for FaceApp: portrait studio shows generic variants for lighting, age, and expression" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based Face Editing:** Realistic changes such as aging, rejuvenation, or gender swapping.

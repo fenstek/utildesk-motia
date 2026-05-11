@@ -34,6 +34,10 @@ A good test case for DxO PhotoLab is one concrete asset with briefing, versions,
 - **Good start for DxO PhotoLab:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with DxO PhotoLab:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dxo-photolab-editorial.webp" alt="Illustration for DxO PhotoLab: photographer calibrates RAW images in a digital darkroom lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **RAW conversion:** High-quality processing of RAW files with precise color and exposure correction.

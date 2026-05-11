@@ -18,6 +18,10 @@ Descript ist eine innovative AI-gestützte Softwareplattform, die speziell für 
 
 Descript eignet sich ideal für Podcaster, Videoproduzenten, Content Creators und Marketingteams, die ihre Audio- und Videoinhalte effizient bearbeiten möchten. Besonders nützlich ist das Tool für Nutzer, die ohne tiefgehende technische Kenntnisse professionelle Ergebnisse erzielen wollen. Auch Lehrkräfte, Journalisten und Social-Media-Manager profitieren von den Funktionen, um Transkripte zu erstellen, Interviews zu schneiden oder Lernvideos zu produzieren. Durch den freemium-Preisplan lässt sich Descript sowohl für Einsteiger als auch für Profis anpassen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/descript-editorial.webp" alt="Illustration zu Descript: Podcast-Editor schneidet Sprache, Wellenformen und Videoframes im Audiotheater" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Transkription:** Schnelle und präzise Umwandlung von Audio- und Videodateien in editierbaren Text.

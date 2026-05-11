@@ -20,6 +20,10 @@ Convertio is a versatile online tool for file and document conversion based on a
 
 Convertio is suitable for a broad target audience: from private individuals who occasionally need to convert files, to students and professionals who need to convert documents into other formats, and even small and medium-sized enterprises that regularly work with different file types. It is particularly useful for users who do not want to install complex programs and prefer a fast, web-based solution. Additionally, users with little technical experience will find the tool easy to understand and intuitive to use.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/convertio-editorial.webp" alt="Illustration for Convertio: files move through an abstract conversion pipeline" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Support for a wide range of file formats:** Conversion of documents (PDF, DOCX, PPTX), images (JPG, PNG, SVG), audio (MP3, WAV), and video (MP4, AVI).

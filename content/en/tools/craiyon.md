@@ -34,6 +34,10 @@ A useful pilot for Craiyon starts with one concrete asset with briefing, version
 - **Good start for Craiyon:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Craiyon:** The rollout turns into extra coordination when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/craiyon-editorial.webp" alt="Illustration for Craiyon: creative user chooses between playful AI image variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Text-to-Image Generation: Creating images based on short or detailed text inputs.
