@@ -6,7 +6,7 @@ price_model: Abonnement
 tags: ["video", "editing", "creative", "content", "audio"]
 official_url: "https://www.adobe.com/products/premiere.html"
 affiliate_url: "https://www.adobe.com/products/premiere.html"
-popularity: 74
+popularity: 77
 description: Professioneller Video-Editor für Schnitt, Farbkorrektur, Audio, Untertitel und Postproduktion.
 ---
 

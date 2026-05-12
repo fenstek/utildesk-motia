@@ -2,10 +2,10 @@
 slug: cleanvoice-ai
 title: Cleanvoice AI
 category: Audio
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [ai, audio, editing, automation]
 official_url: "https://cleanvoice.ai/"
-popularity: 0
+popularity: 59
 ---
 
 # Cleanvoice AI

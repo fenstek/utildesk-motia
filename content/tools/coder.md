@@ -2,10 +2,10 @@
 slug: coder
 title: Coder
 category: Developer
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [coding,workflow]
 official_url: "https://coder.com/"
-popularity: 0
+popularity: 57
 ---
 
 # Coder
