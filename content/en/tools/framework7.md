@@ -36,6 +36,10 @@ In everyday work, Framework7 is pleasant when you stick to mobile conventions. T
 
 Real device testing remains important. What looks nice in a desktop browser can behave very differently with touch, a keyboard, safe areas, or a slower device.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/framework7-editorial.webp" alt="Illustration for Framework7: mobile app screens are assembled from components and gestures" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Mobile UI components for app-like interfaces.

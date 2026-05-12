@@ -24,6 +24,10 @@ Audio is brutally honest: noise, timing, voice, and rights show up faster than o
 
 FL Studio is strongest for producers, beatmakers, musicians, sound designers, and learners when the use case is deliberately narrow. One good use case is better than five half-used features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fl-studio-editorial.webp" alt="Illustration for FL Studio: music production with sequencer garden, synths and rhythm blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - arrange beats and songs

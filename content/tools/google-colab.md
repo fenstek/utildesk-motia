@@ -23,6 +23,10 @@ Google Colab richtet sich an eine breite Zielgruppe aus dem Bereich Softwareentw
 
 Colab ist ideal für Nutzer, die eine unkomplizierte, sofort nutzbare Plattform bevorzugen und keine komplexe lokale Entwicklungsumgebung einrichten wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-colab-editorial.webp" alt="Illustration zu Google Colab: Notebook-Observatorium verbindet Experimente, GPU-Ressourcen und Diagramme" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloud-basierte Jupyter-Notebooks**: Schreiben und Ausführen von Python-Code direkt im Browser.

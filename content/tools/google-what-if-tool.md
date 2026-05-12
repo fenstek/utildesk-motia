@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Google What-If Tool breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Google What-If Tool enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-what-if-tool-editorial.webp" alt="Illustration zu Google What-If Tool: Modellpruefung mit Szenario-Linsen, Datenpunkten und Fairness-Waage" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Interaktive Visualisierung von Modellvorhersagen und Datenpunkten

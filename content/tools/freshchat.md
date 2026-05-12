@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte Freshchat zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Freshchat enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshchat-editorial.webp" alt="Illustration zu Freshchat: Support-Lounge sortiert Chatkacheln zwischen Automation und Team" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multi-Channel Messaging:** Integration von Chat auf Webseiten, mobilen Apps, sozialen Medien und Messaging-Plattformen.

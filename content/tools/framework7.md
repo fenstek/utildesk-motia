@@ -32,6 +32,10 @@ Im Alltag ist Framework7 dann angenehm, wenn man sich an mobile Konventionen hä
 
 Wichtig bleibt echtes Gerätetesting. Was im Desktop-Browser hübsch aussieht, kann mit Touch, Keyboard, Safe Areas oder langsamerem Gerät ganz andere Launen zeigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/framework7-editorial.webp" alt="Illustration zu Framework7: Mobile App-Screens werden aus Komponenten und Gesten zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Mobile UI-Komponenten für App-ähnliche Oberflächen.

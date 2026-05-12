@@ -25,6 +25,10 @@ With video tools, the workflow decides: recording, editing, audio, approval, and
 
 Filmora makes sense for creators, small marketing teams, educators, and users who want to edit faster than they want to learn when it stabilizes part of the process: less searching, less manual repetition, fewer unclear handoffs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/filmora-editorial.webp" alt="Illustration for Filmora: creator edits scenes, audio tracks and export cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - edit social videos and short tutorials

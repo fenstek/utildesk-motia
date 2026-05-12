@@ -21,6 +21,10 @@ Granola is an intelligent meeting assistant designed to make meetings more effic
 
 Granola is aimed at professionals and managers, project teams, and organizations of all sizes that hold meetings regularly and value structured, traceable minutes. The tool is especially useful for teams working remotely or in hybrid setups that are looking for a digital solution to document and follow up on meeting outcomes. Granola can also be a great help for individuals who want to automate their meeting notes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/granola-editorial.webp" alt="Illustration for Granola: meeting notebook gathers speech waves, decisions and tasks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automatic note creation:** AI-based transcription and summarization of meetings in real time.

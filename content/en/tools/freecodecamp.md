@@ -26,6 +26,10 @@ freeCodeCamp is aimed primarily at beginners and intermediate learners who want 
 - Self-learners who want to learn programming online flexibly and at their own pace.
 - Developers who want to support open-source projects and improve their skills through hands-on projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freecodecamp-editorial.webp" alt="Illustration for freeCodeCamp: learning camp with project cards, code blocks and milestones" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Interactive learning paths:** Step-by-step courses on HTML, CSS, JavaScript, React, Node.js, and more.

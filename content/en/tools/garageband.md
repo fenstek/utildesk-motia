@@ -22,6 +22,10 @@ Good for beginners, education, demos, singer-songwriters, and quick audio ideas 
 
 GarageBand is most useful for teams and individuals that treat a music production app as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/garageband-editorial.webp" alt="Illustration for GarageBand: bedroom studio builds songs from loops, instruments and tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Record song ideas

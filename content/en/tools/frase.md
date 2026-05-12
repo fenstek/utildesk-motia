@@ -43,6 +43,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Frase.
 - **Common pitfall:** Frase disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/frase-editorial.webp" alt="Illustration for Frase: research greenhouse for content briefs and search intent" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Create content briefs:** Automatic generation of detailed briefs based on top-ranking pages and relevant keywords.

@@ -26,6 +26,10 @@ Fotor richtet sich an unterschiedliche Nutzergruppen:
 
 Durch die Kombination aus KI-gestützten Funktionen und manuellen Bearbeitungsoptionen eignet sich Fotor sowohl für schnelle Ergebnisse als auch für detaillierte Anpassungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fotor-editorial.webp" alt="Illustration zu Fotor: Fotolabor kombiniert Filter, Collagen und Designvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Bildverbesserung:** Automatische Optimierung von Belichtung, Kontrast, Farben und Schärfe.

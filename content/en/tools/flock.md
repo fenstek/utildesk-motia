@@ -23,6 +23,10 @@ Fits small and mid-sized teams, operations, support, and internal project commun
 
 Flock is most useful for teams and individuals that treat a team messenger as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flock-editorial.webp" alt="Illustration for Flock: team communication connects messages, tasks and rooms" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Organize team chats and channels

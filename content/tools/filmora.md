@@ -20,6 +20,10 @@ Bei Videowerkzeugen entscheidet der Workflow: Aufnahme, Schnitt, Ton, Freigabe u
 
 Für Creator, kleine Marketingteams, Lehrende und Nutzer, die schneller schneiden als lernen wollen ist Filmora dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/filmora-editorial.webp" alt="Illustration zu Filmora: Creator schneidet Szenen, Tonspuren und Exportkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Social-Videos und kurze Tutorials schneiden

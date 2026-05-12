@@ -34,6 +34,10 @@ Google Cloud Dataflow should first prove itself in a limited data set with a cle
 - **Good start for Google Cloud Dataflow:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Google Cloud Dataflow:** The rollout turns into extra coordination when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-dataflow-editorial.webp" alt="Illustration for Google Cloud Dataflow: data canals move streams and batches through transformation stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Unified Batch and Streaming Processing:** Support for both processing types in a single pipeline.

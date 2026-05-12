@@ -36,6 +36,10 @@ In day-to-day use, GetResponse should be used not as a loudspeaker, but as a rel
 
 Before every automation, it is worth asking: does this message truly help the recipient right now? If the answer is unclear, even the best sequence becomes nothing more than louder noise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/getresponse-editorial.webp" alt="Illustration for GetResponse: marketing team steers newsletters, audiences and automations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Newsletter creation, list management, and segmentation.

@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Google Meet breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Google Meet enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-meet-editorial.webp" alt="Illustration zu Google Meet: Hybrider Meetingraum verbindet Videofenster, Notizen und Sprachsignale" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **HD-Video- und Audioqualität:** Klare Bild- und Tonübertragung für effektive Meetings.

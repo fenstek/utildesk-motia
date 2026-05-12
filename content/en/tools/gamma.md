@@ -40,6 +40,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** For Gamma, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Gamma disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gamma-editorial.webp" alt="Illustration for Gamma: presentation studio turns ideas into visual panels" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered Content Generation:** Automatic suggestions for text and structure based on input points.

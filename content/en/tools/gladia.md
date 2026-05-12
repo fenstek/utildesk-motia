@@ -21,6 +21,10 @@ Gladia is an innovative AI platform that helps businesses and individuals optimi
 
 Gladia is particularly suited for small and medium-sized enterprises, developers, content creators, and teams looking to improve their workflows with AI technology. Freelancers and agencies also benefit from the automation features, saving time and enhancing the quality of their work. The platform is flexible enough to adapt to various industries and applications, such as marketing, customer service, data analysis, and more.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gladia-editorial.webp" alt="Illustration for Gladia: speech lab turns audio waves into structured note cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered text generation**: Automatically creates text, summaries, and translations.

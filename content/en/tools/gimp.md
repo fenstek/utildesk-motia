@@ -23,6 +23,10 @@ Good for open projects, education, small teams, Linux workflows, and occasional 
 
 GIMP is most useful for teams and individuals that treat a open-source image editor as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gimp-editorial.webp" alt="Illustration for GIMP: digital darkroom studio for layers, masks and compositing" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Retouch and crop photos

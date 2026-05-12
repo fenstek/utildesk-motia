@@ -36,6 +36,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Google What-If Tool.
 - **Common pitfall:** Google What-If Tool disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-what-if-tool-editorial.webp" alt="Illustration for Google What-If Tool: model inspection with scenario lenses, data points and fairness scale" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Interactive visualization of model predictions and data points

@@ -24,6 +24,10 @@ Support tools are only as good as the response paths behind them. A fast channel
 
 Freshcaller makes sense for support teams, small contact centers, sales teams, and service organizations when it stabilizes part of the process: less searching, less manual repetition, fewer unclear handoffs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshcaller-editorial.webp" alt="Illustration for Freshcaller: support lead routes call waves and escalations" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - run phone support without a classic PBX

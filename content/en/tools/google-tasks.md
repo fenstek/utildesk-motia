@@ -22,6 +22,10 @@ Good for individuals and teams that do not need a heavy project management platf
 
 Google Tasks is most useful for teams and individuals that treat a simple task list as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-tasks-editorial.webp" alt="Illustration for Google Tasks: quiet desk organizes tasks, reminders and calendar tiles" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Capture tasks from Gmail context

@@ -27,6 +27,10 @@ Google Colab is aimed at a broad audience in software development and data scien
 
 Colab is ideal for users who prefer a straightforward, ready-to-use platform and do not want to set up a complex local development environment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-colab-editorial.webp" alt="Illustration for Google Colab: notebook observatory connects experiments, GPU resources and charts" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Cloud-based Jupyter notebooks**: Write and run Python code directly in the browser.

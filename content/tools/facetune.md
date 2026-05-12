@@ -32,6 +32,10 @@ Im Alltag verführt Facetune zu Überkorrektur. Das beste Ergebnis ist oft eines
 
 Für Marken und Creator lohnt ein eigener Bildstandard: Welche Retuschen sind erlaubt, was bleibt echt, und wann wird ein Bild gekennzeichnet? Diese Klarheit schützt Vertrauen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/facetune-editorial.webp" alt="Illustration zu Facetune: Portraitstudio mit Retusche, Licht und Bildvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Portrait-Retusche für Haut, Details, Licht und Hintergrund.

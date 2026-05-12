@@ -33,6 +33,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Google Meet.
 - **Common pitfall:** Google Meet disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-meet-editorial.webp" alt="Illustration for Google Meet: hybrid meeting room connects video windows, notes and speech signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **HD video and audio quality:** Clear video and sound transmission for effective meetings.

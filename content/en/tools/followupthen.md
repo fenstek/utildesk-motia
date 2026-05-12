@@ -40,6 +40,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** For FollowUpThen, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** FollowUpThen disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/followupthen-editorial.webp" alt="Illustration for FollowUpThen: mailroom with time rails for scheduled follow-up reminders" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email-based Reminders:** Users send an email to a special address (e.g., 1week@followupthen.com) to be reminded at a later time.

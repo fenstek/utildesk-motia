@@ -38,6 +38,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test Freshchat in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Freshchat disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshchat-editorial.webp" alt="Illustration for Freshchat: support lounge sorts chat tiles between automation and team" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Multi-channel messaging:** Integration of chat on websites, mobile apps, social media, and messaging platforms.

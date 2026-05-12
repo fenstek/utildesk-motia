@@ -40,6 +40,10 @@ Google T5 (Text-to-Text Transfer Transformer) should first prove itself in a rec
 - **Good start for Google T5 (Text-to-Text Transfer Transformer):** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Google T5 (Text-to-Text Transfer Transformer):** Even a good interface helps only partly when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-t5-editorial.webp" alt="Illustration for Google T5: model foundry turns input cards into different text tasks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text-to-text transformation:** Unified handling of a wide range of NLP tasks as text input and text output.

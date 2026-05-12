@@ -34,6 +34,10 @@ The best real-world test for Glide is small, but real. A team should work throug
 - **Rollout question:** which data source is the source of truth and how access rights are maintained.
 - **Constraint:** limits show up when the logic becomes highly custom or the scaling gets complex.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/glide-editorial.webp" alt="Illustration for Glide: spreadsheet data grows into mobile app cards and forms" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **No-code app builder:** Create mobile and web apps using a drag-and-drop interface.

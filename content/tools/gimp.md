@@ -20,6 +20,10 @@ GIMP eignet sich für Menschen und Teams, die pixelbasierte Bildbearbeitung ohne
 
 Wer moderne Template-Produktion, Designsysteme, kollaborative Freigaben oder schnelle Social-Layouts braucht, ist mit Canva, Figma oder Adobe-Tools oft schneller. GIMP ist stärker als Editor denn als Team-Designplattform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gimp-editorial.webp" alt="Illustration zu GIMP: Digitales Dunkelkammer-Studio fuer Ebenen, Masken und Compositing" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Fotos retuschieren und zuschneiden

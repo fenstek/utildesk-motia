@@ -20,6 +20,10 @@ Google Calendar is a versatile and user-friendly online tool for managing appoin
 
 Google Calendar is suitable for individuals who want to easily manage their daily schedules, as well as for small and large businesses that need to coordinate complex schedules. Teams also benefit from shared calendar management. The tool is particularly useful for those who already use Google services and value seamless integration.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-calendar-editorial.webp" alt="Illustration for Google Calendar: calendar garden organizes events, reminders and availability" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Creating and managing appointments and events

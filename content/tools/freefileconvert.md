@@ -24,6 +24,10 @@ FreeFileConvert richtet sich an eine breite Zielgruppe, darunter:
 
 Das Tool ist ideal für alle, die eine unkomplizierte und schnelle Möglichkeit suchen, Dateien online zu konvertieren, ohne sich mit komplexen Einstellungen auseinandersetzen zu müssen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freefileconvert-editorial.webp" alt="Illustration zu FreeFileConvert: Dateikarten werden in einer Konvertierungswerkstatt sortiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unterstützung zahlreicher Dateiformate:** Konvertierung von Dokumenten, Bildern, Audio, Video und Archiven.

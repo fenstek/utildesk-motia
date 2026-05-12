@@ -21,6 +21,10 @@ Google Cloud AutoML richtet sich an Unternehmen und Entwickler, die schnell und 
 - Teams, die spezifische Anwendungsfälle mit maßgeschneiderten Modellen abdecken wollen.
 - Branchen wie Einzelhandel, Gesundheitswesen, Fertigung und Medien, die von automatisierter Datenanalyse profitieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-automl-editorial.webp" alt="Illustration zu Google Cloud AutoML: Cloud-Labor trainiert Modelle aus Datenbloecken und Validierungssignalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisiertes Modelltraining:** Automatische Optimierung von Modellen basierend auf den bereitgestellten Trainingsdaten.

@@ -40,6 +40,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** For Grok, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Grok disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grok-editorial.webp" alt="Illustration for Grok: cosmic conversation cockpit explores questions, context and source fragments" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural language processing:** Analysis and interpretation of text in different languages.

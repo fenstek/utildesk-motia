@@ -28,6 +28,10 @@ Fotor is designed for different user groups:
 
 Fotor combines AI-powered features with manual editing options, making it suitable for both quick results and detailed adjustments.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fotor-editorial.webp" alt="Illustration for Fotor: photo lab combines filters, collages and design variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered image enhancement:** Automatic optimization of brightness, contrast, colors, and sharpness.

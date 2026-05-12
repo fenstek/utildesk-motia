@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Flair nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Flair enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flair-editorial.webp" alt="Illustration zu Flair: Produktstudio baut Kampagnenmotive mit Licht, Props und Hintergruenden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Named Entity Recognition (NER):** Erkennung von Entitäten wie Personen, Organisationen, Orten und mehr in Texten.
