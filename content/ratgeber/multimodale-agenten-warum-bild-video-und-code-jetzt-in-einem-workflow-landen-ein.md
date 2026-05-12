@@ -26,6 +26,12 @@ relatedTools:
     href: "/tools/cursor/"
   - title: "Aider"
     href: "/tools/aider/"
+  - title: "Vyrill"
+    href: "/tools/vyrill/"
+  - title: "Naoma AI"
+    href: "/tools/naoma-ai/"
+  - title: "Hera"
+    href: "/tools/hera/"
   - title: "LangChain"
     href: "/tools/langchain/"
   - title: "CrewAI"
@@ -60,9 +66,9 @@ Wenn ein Agent eine komplexe Software bedienen soll, muss er verstehen, wie sich
 
 Die theoretische Reife dieser Technologie spiegelt sich bereits in einer Vielzahl spezialisierter Anwendungen wider. Wir sehen derzeit eine Welle von Werkzeugen, die multimodale Fähigkeiten für sehr spezifische Geschäftsprozesse nutzbar machen.
 
-* **Vyrill:** Diese Plattform nutzt agentische Infrastruktur, um die Suche und Monetarisierung von Video-Inhalten zu automatisieren. Es geht hierbei nicht nur um das bloße Abspielen, sondern um ein tiefes Verständnis des Videoinhalts für den E-Commerce.
-* **Naoma AI:** Ein spezialisierter Video-KI-Agent für den B2B-SaaS-Bereich. Er erstellt sofortige Demos, was den Vertriebsprozess massiv beschleunigt, indem er Produktfunktionen visuell und inhaltlich korrekt präsentiert.
-* **Hera:** Dieses Tool zielt auf die Erstellung von Launch-Videos in Studioqualität ab. Es kombiniert KI-gestützte Videoproduktion mit einem agentischen Ansatz, um professionelles Marketingmaterial effizienter zu gestalten.
+* **[Vyrill](/tools/vyrill/):** Diese Plattform nutzt agentische Infrastruktur, um die Suche und Monetarisierung von Video-Inhalten zu automatisieren. Es geht hierbei nicht nur um das bloße Abspielen, sondern um ein tiefes Verständnis des Videoinhalts für den E-Commerce.
+* **[Naoma AI](/tools/naoma-ai/):** Ein spezialisierter Video-KI-Agent für den B2B-SaaS-Bereich. Er erstellt sofortige Demos, was den Vertriebsprozess massiv beschleunigt, indem er Produktfunktionen visuell und inhaltlich korrekt präsentiert.
+* **[Hera](/tools/hera/):** Dieses Tool zielt auf die Erstellung von Launch-Videos in Studioqualität ab. Es kombiniert KI-gestützte Videoproduktion mit einem agentischen Ansatz, um professionelles Marketingmaterial effizienter zu gestalten.
 
 Für Entwickler und Power-User bieten Frameworks wie MiniMax CLI die Möglichkeit, eigenen Agenten native multimodale Fähigkeiten zu verleihen. Gleichzeitig drängen Schwergewichte wie Xiaomi mit den MiMo-V2-Pro- und Omni-Modellen auf den Markt, um Flaggschiff-Lösungen für omnimodale Anwendungen zu etablieren.
 
@@ -104,7 +110,7 @@ Wer heute die richtigen Weichen stellt und multimodale Strategien in seine Workf
 
 Um den Anschluss an diese Entwicklung nicht zu verlieren, empfiehlt sich ein stufenweises Vorgehen. Beginne damit, deine aktuellen Text-basierten Workflows auf visuelle Engpässe zu prüfen. Überall dort, wo Mitarbeiter derzeit zwischen Screenshots, Videos und Textbeschreibungen hin- und herwechseln, liegt das größte Potenzial für multimodale Agenten.
 
-Experimentiere mit spezifischen Frameworks wie der MiniMax CLI, um ein Gefühl für die Steuerung multimodaler Funktionen zu bekommen. Falls dein Fokus auf Marketing oder Vertrieb liegt, bieten Tools wie Naoma oder Hera einen schnellen Einstieg, ohne dass eine eigene Modell-Infrastruktur aufgebaut werden muss.
+Experimentiere mit spezifischen Frameworks wie der MiniMax CLI, um ein Gefühl für die Steuerung multimodaler Funktionen zu bekommen. Falls dein Fokus auf Marketing oder Vertrieb liegt, bieten Tools wie [Naoma AI](/tools/naoma-ai/) oder [Hera](/tools/hera/) einen schnellen Einstieg, ohne dass eine eigene Modell-Infrastruktur aufgebaut werden muss.
 
 Behalte dabei stets die Entwicklung nativer Modelle wie GLM-5V-Turbo im Blick, da diese die technologische Basis für die nächsten Jahre definieren werden. Evaluierung und Verifikation sollten von Anfang an Teil deines Setups sein, um die Zuverlässigkeit deiner automatisierten Prozesse sicherzustellen.
 
