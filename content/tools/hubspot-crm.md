@@ -30,6 +30,10 @@ Ein belastbarer Pilot für HubSpot CRM beginnt mit einer realen Kampagne mit Zie
 - **Guter Start für HubSpot CRM:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei HubSpot CRM:** Der Einsatz kippt in Zusatzarbeit, wenn Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-crm-editorial.webp" alt="Illustration zu HubSpot CRM: Kontakte, Pipeline-Stufen und Nachverfolgung in einem CRM-Arbeitsraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Kontakt- und Lead-Management:** Übersichtliche Verwaltung aller Kundenkontakte und Leads mit detaillierten Profilen.

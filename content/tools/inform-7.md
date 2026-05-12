@@ -23,6 +23,10 @@ Inform 7 passt zu Menschen, die narrative Räume, Textadventures und interaktive
 - Narrative Prototypen ohne Grafikpipeline bauen.
 - Logik, Weltmodell und Storytelling gemeinsam testen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inform-7-editorial.webp" alt="Illustration zu Inform 7: interaktive Fiktion entsteht aus Raumkarten, Regeln und Erzaehlpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Natürliche Sprache zur Beschreibung von Regeln und Welten.

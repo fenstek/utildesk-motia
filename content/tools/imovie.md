@@ -20,6 +20,10 @@ iMovie eignet sich für Apple-Nutzer, die schnell einfache Videos schneiden, Tit
 
 Für professionelle Produktionen mit vielen Spuren, Farbkorrektur, Teamfreigaben oder komplexem Sounddesign ist iMovie zu begrenzt. Dort ist es eher ein Einstieg oder Vorbereitungswerkzeug, bevor Material in Premiere Pro, Final Cut oder DaVinci Resolve weitergeht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/imovie-editorial.webp" alt="Illustration zu iMovie: Videoschnittplatz mit Clipstreifen, Musikspuren und einfachen Exporten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Videos schneiden und Titel hinzufügen

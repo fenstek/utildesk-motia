@@ -32,6 +32,10 @@ A useful pilot for HubSpot CRM starts with a real campaign with audience, conten
 - **Good start for HubSpot CRM:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with HubSpot CRM:** The rollout turns into extra coordination when audiences, tracking, consent, data care, and follow-up processes are not defined clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-crm-editorial.webp" alt="Illustration for HubSpot CRM: contacts, pipeline stages, and follow-up in a CRM workspace" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Contact and lead management:** Clear management of all customer contacts and leads with detailed profiles.

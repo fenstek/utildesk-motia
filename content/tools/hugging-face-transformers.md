@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Ein Team sollte Hugging Face Transformers zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Hugging Face Transformers enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-transformers-editorial.webp" alt="Illustration zu Hugging Face Transformers: Tokenstroeme und Modellmodule werden im KI-Labor zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Zugriff auf vortrainierte Transformer-Modelle:** Über 1000 Modelle für diverse Aufgaben wie Textklassifikation, Fragebeantwortung, Textgenerierung, Übersetzung und mehr.

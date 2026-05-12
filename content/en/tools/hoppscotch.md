@@ -39,6 +39,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** For Hoppscotch, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Hoppscotch disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hoppscotch-editorial.webp" alt="Illustration for Hoppscotch: API requests move through test nodes, response containers, and check paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Support for multiple API protocols:** REST, GraphQL, WebSocket, SSE, and more.

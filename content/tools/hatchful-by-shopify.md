@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Hatchful by Shopify nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Hatchful by Shopify enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hatchful-by-shopify-editorial.webp" alt="Illustration zu Hatchful by Shopify: kleine Marke entsteht aus Farbtafeln, Symbolideen und Shop-Material" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vielfältige Designvorlagen:** Auswahl aus zahlreichen vorgefertigten Logo-Stilen, passend für verschiedene Branchen und Zielgruppen.

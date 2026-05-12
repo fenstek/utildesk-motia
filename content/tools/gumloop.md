@@ -35,6 +35,10 @@ Ein belastbarer Pilot für Gumloop beginnt mit einem echten Wochenablauf mit Auf
 - **Guter Start für Gumloop:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Gumloop:** Der Einsatz kippt in Zusatzarbeit, wenn Regeln, Benachrichtigungen, Datenpflege und Verantwortlichkeiten nicht gemeinsam festgelegt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gumloop-editorial.webp" alt="Illustration zu Gumloop: No-Code-Workflow aus KI-Schritten, Freigaben und Ergebnispruefungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **No-Code-Workflow-Builder:** Intuitive Gestaltung von Automatisierungen per Drag-and-Drop ohne Programmieraufwand.

@@ -20,6 +20,10 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 Inciteful passt am ehesten zu Forschende, Studierende und Analysten, die von einem Paper aus ein Feld erkunden wollen, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inciteful-editorial.webp" alt="Illustration zu Inciteful: Zitationsnetzwerk verbindet Quellen, Themencluster und Forschungswege" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - ähnliche Papers und Zitationspfade entdecken

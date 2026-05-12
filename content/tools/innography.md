@@ -20,6 +20,10 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 Innography ist für Patentabteilungen, R&D, Legal und Competitive-Intelligence-Teams vor allem dann wertvoll, wenn es einen sichtbaren Vorher-nachher-Unterschied im Workflow erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/innography-editorial.webp" alt="Illustration zu Innography: Patent- und Innovationsanalyse mit Technologiekarten und Recherchepfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Patentlandschaften kartieren

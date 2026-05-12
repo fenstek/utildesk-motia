@@ -20,6 +20,10 @@ Ink by Inkle eignet sich für Autorinnen, Narrative Designer und Game-Teams, die
 
 Für lineare Texte oder einfache Präsentationen ist Ink zu technisch. Der Mehrwert entsteht bei interaktiver Fiction, Dialogsystemen, Quest-Prototypen und Story-lastigen Spielen, in denen Autorenschaft und Implementierung eng verbunden sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ink-by-inkle-editorial.webp" alt="Illustration zu Ink by Inkle: verzweigte Storypfade, Dialogkarten und Entscheidungsknoten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Verzweigte Dialoge schreiben

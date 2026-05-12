@@ -38,6 +38,10 @@ In practice, HeyGen should not be treated as a button for generating any number 
 
 An approval process for avatars, voices, and brand assets is also important. Especially when people’s likenesses are involved, the question should not be whether it is technically possible, but whether consent is documented cleanly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/heygen-editorial.webp" alt="Illustration for HeyGen: avatar video production with storyboard, language tracks, and approval flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - AI avatars for presentation and explainer videos.

@@ -22,6 +22,10 @@ Inflection richtet sich an Unternehmen und Einzelpersonen, die ihre Kommunikatio
 - Bildungseinrichtungen und Informationsdienste, die auf dialogorientierte Systeme setzen  
 - Nutzer, die eine natürliche, KI-gestützte Konversation bevorzugen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inflection-editorial.webp" alt="Illustration zu Inflection: Konversationsassistent ordnet Gespraechskarten, Planung und Kontext" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (NLP):** Versteht und interpretiert komplexe Anfragen in Alltagssprache.  

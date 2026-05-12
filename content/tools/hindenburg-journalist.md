@@ -16,6 +16,10 @@ Hindenburg Journalist ist eine spezialisierte Audio-Editing-Software, die vor al
 
 Hindenburg Journalist richtet sich an professionelle und angehende Journalisten, Podcaster, Radiomacher und Content-Produzenten, die regelmäßig Audioinhalte erstellen. Die Software ist ideal für Nutzer, die Wert auf eine intuitive Benutzeroberfläche legen, ohne auf leistungsstarke Funktionen verzichten zu wollen. Auch für Redaktionen und Teams, die ihre Audio-Produktionen effizienter gestalten möchten, bietet Hindenburg Journalist passende Werkzeuge. Anfänger finden dank der automatischen Audioverbesserungen und klar strukturierten Abläufe einen einfachen Einstieg.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hindenburg-journalist-editorial.webp" alt="Illustration zu Hindenburg Journalist: Audio-Redaktion schneidet Interviewspuren und Story-Timeline" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multitrack-Editing:** Bearbeitung mehrerer Audiokanäle gleichzeitig mit übersichtlicher Timeline.

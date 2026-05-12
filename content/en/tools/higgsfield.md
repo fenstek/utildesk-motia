@@ -24,6 +24,10 @@ With video tools, the workflow decides: recording, editing, audio, approval, and
 
 Higgsfield should not be judged by feature count alone. For creators, performance marketing, social teams, and visual experimenters, the more important question is whether it fits existing routines and reduces rework.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/higgsfield-editorial.webp" alt="Illustration for Higgsfield: AI video lab with storyboards, camera paths, and clip variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - generate short AI videos or motion ideas

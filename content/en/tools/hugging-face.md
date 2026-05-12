@@ -27,6 +27,10 @@ Hugging Face is aimed at a broad range of users: developers, data scientists, re
 
 Hugging Face is suitable both for beginners with basic knowledge and for advanced users, as it offers extensive documentation and community support.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-editorial.webp" alt="Illustration for Hugging Face: open model library with datasets, model cards, and experiments" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Access to pre-trained models:** A large selection of NLP models such as BERT, GPT, T5, and many more  

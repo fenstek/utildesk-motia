@@ -32,6 +32,10 @@ Im Alltag gewinnt InShot durch kurze Wege. Rohclip rein, Verschnitt raus, Hook n
 
 Besser ist ein kleiner Markenstandard: zwei Schriften, ein Untertitelstil, klare Exportformate und ein ruhiger Umgang mit Übergängen. Dann wirkt mobiler Schnitt nicht nach Notlösung, sondern nach bewusstem Format.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inshot-editorial.webp" alt="Illustration zu InShot: mobiler Videoschnitt mit Hochformat-Clips, Musikspuren und Creator-Exporten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Videoschnitt, Trimmen, Teilen, Zusammenfuegen und Formatwechsel.

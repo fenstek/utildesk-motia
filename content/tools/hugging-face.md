@@ -23,6 +23,10 @@ Hugging Face richtet sich an ein breites Spektrum von Anwendern: Entwickler, Dat
 
 Dabei ist Hugging Face sowohl für Einsteiger mit Basiswissen als auch für fortgeschrittene Nutzer geeignet, da es eine umfangreiche Dokumentation und Community-Support bietet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-editorial.webp" alt="Illustration zu Hugging Face: offene Modellbibliothek mit Datensaetzen, Modellkarten und Experimenten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Zugriff auf vortrainierte Modelle:** Große Auswahl an NLP-Modellen wie BERT, GPT, T5 und viele mehr  

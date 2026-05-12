@@ -20,6 +20,10 @@ Hemingway Editor is a modern writing tool designed to make text clearer, more co
 
 Hemingway Editor is aimed at anyone who wants to improve their written communication, whether professionally or privately. Authors and journalists benefit from the ability to check their text for clarity. Students can express their ideas more clearly, while marketing and content teams can use the editor to create audience-focused content. Non-native speakers also find the tool helpful for improving the style of their writing.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hemingway-editor-editorial.webp" alt="Illustration for Hemingway Editor: manuscript becomes clearer through focused editing steps" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Readability analysis:** Automatic assessment of text complexity based on various criteria.

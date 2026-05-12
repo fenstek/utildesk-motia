@@ -28,6 +28,10 @@ Bei IFTTT würde ich früh zwischen Demo-Eindruck und Betriebsrealität untersch
 - **Qualitätsfrage:** welche Auslöser zuverlässig genug sind und was bei Fehlern passieren soll.
 - **Risiko:** bei geschäftskritischen Abläufen zu wenig Kontrolle und Observability bietet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ifttt-editorial.webp" alt="Illustration zu IFTTT: Ausloeser und Aktionen verbinden Apps, Geraete und Routinen auf einem Automationsbrett" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Erstellung und Verwaltung von Applets (Automatisierungsregeln) mit intuitivem Drag-and-Drop-Editor.

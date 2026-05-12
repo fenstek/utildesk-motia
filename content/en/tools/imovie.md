@@ -22,6 +22,10 @@ Good for beginners, family videos, school, small social clips, and quick interna
 
 iMovie is most useful for teams and individuals that treat a simple video editor as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/imovie-editorial.webp" alt="Illustration for iMovie: video editing desk with clip strips, music tracks, and simple exports" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Cut videos and add titles

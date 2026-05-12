@@ -39,6 +39,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** Test Hugging Face Transformers in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Hugging Face Transformers disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-transformers-editorial.webp" alt="Illustration for Hugging Face Transformers: token streams and model modules assembled in an AI lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Access to pretrained Transformer models:** More than 1,000 models for a wide range of tasks such as text classification, question answering, text generation, translation, and more.

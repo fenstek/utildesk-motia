@@ -24,6 +24,10 @@ Inflection is aimed at companies and individuals who want to improve their commu
 - Educational institutions and information services that rely on dialog-based systems  
 - Users who prefer a natural, AI-powered conversation
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inflection-editorial.webp" alt="Illustration for Inflection: conversational assistant organizes message cards, planning, and context" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Understands and interprets complex requests in everyday language.  

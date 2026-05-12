@@ -33,6 +33,10 @@ Im Alltag ist Watson dann stark, wenn Anforderungen vorab sauber beschrieben sin
 
 Ohne diese Leitplanken wird aus Enterprise-KI schnell ein teures Experiment. Mit klarer Architektur kann Watson dagegen helfen, KI nicht als Fremdkoerper, sondern als Teil der betrieblichen Landschaft zu führen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-editorial.webp" alt="Illustration zu IBM Watson: Enterprise-KI-Labor prueft Daten, Modelle und Entscheidungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI- und NLP-Funktionen für Unternehmensanwendungen.

@@ -34,6 +34,10 @@ Im Alltag sollte HeyGen nicht als Knopf für beliebige Massenclips verstanden we
 
 Wichtig ist auch ein Freigabeprozess für Avatare, Stimmen und Markenassets. Gerade bei Personenabbildungen darf die Frage nicht lauten, ob es technisch geht, sondern ob die Zustimmung sauber dokumentiert ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/heygen-editorial.webp" alt="Illustration zu HeyGen: Avatar-Video-Produktion mit Storyboard, Sprachspuren und Freigabe" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-Avatare für Praesentations- und Erklärvideos.

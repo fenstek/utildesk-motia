@@ -27,6 +27,10 @@ HubSpot Sales überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden
 - **Vorher klären:** welche Felder, Sequenzen und Deal-Phasen wirklich gepflegt werden.
 - **Nicht unterschätzen:** ohne Datenhygiene schnell zu einem zweiten Postfach mit CRM-Etikett wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-sales-editorial.webp" alt="Illustration zu HubSpot Sales: Vertriebsteam steuert Outreach, Deal-Stufen und Follow-ups" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **CRM-Integration:** Zentralisierte Verwaltung von Kontakten, Leads und Kundeninformationen.
