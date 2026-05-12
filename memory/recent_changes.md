@@ -301,3 +301,12 @@ _Last updated: 2026-05-12_
 - Each repaired card now includes audience fit, use cases, practical workflow notes, features, pros/limits, workflow fit, privacy/data notes, pricing/costs, renderable internal alternatives, editorial assessment, and 5-item FAQ.
 - Normalized alternatives to the renderable internal-link format (`[Tool](/tools/slug/): ...`) so the tool page template actually shows the alternatives grid.
 - Rechecked editorial template, English translations, alternatives rendering, and the Astro production build before publication.
+
+## 2026-05-12 - Ratgeber NotebookLM auth refreshed and visual upload unblocked
+
+- Refreshed the local NotebookLM browser storage and copied the fresh `storage_state.json` to `opcl:/home/opcl/.notebooklm/storage_state.json`.
+- Verified `scripts/notebooklm_auth_status.py` on `opcl`: `ok=true`, reason `notebooklm_auth_ready`, `notebook_count=21`.
+- Manual runner checks after refresh:
+  - `scripts/run_article_runner_host.sh` returned `ok=true` / no pending article jobs.
+  - `scripts/run_article_rewrite_runner_host.sh` returned `ok=true` / `count=0`.
+- Restored the Ratgeber Cloudflare candidate sync cron with `--allow-unapproved-visuals`, per current policy not to block review uploads on image quality while the contour lacks a reliable high-quality image-production stage.
