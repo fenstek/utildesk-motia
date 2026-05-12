@@ -6,8 +6,8 @@ category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
 readTime: 6
-coverImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-cover.png
-secondaryImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.png
+coverImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-cover.webp
+secondaryImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp
 tags:
   - "Multimodal"
   - "KI-Agenten"
@@ -78,7 +78,7 @@ Entscheidend für die Auswahl der Tools ist dabei die Tiefe der Integration. Tea
 
 Die Fähigkeit zur hierarchischen Planung und zur verlässlichen End-to-End-Verifikation, wie sie bei GLM-5V-Turbo hervorgehoben wird, ist ein wichtiges Qualitätsmerkmal für stabile Workflows. Ein Agent, der seine eigenen Handlungsschritte visuell überprüft, produziert deutlich weniger Fehler als ein System, das blind Befehlsketten abarbeitet.
 
-![Schema eines orchestrierten KI-Workflows](/images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.png)
+![KI-gestützte Videoproduktion mit multimodalem Workflow](/images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp)
 
 ## Grenzen, Risiken und notwendige Guardrails
 

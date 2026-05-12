@@ -6,8 +6,8 @@ category: "Analysis"
 eyebrow: "AI Analysis"
 excerpt: "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
 readTime: 6
-coverImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-cover.png
-secondaryImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.png
+coverImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-cover.webp
+secondaryImage: /images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp
 tags:
   - "Multimodal"
   - "AI Agents"
@@ -79,7 +79,7 @@ What matters most when selecting tools is the depth of integration. Teams should
 
 The ability to plan hierarchically and verify end-to-end reliably, as highlighted in GLM-5V-Turbo, is an important quality marker for stable workflows. An agent that visually checks its own steps produces far fewer errors than a system that blindly executes chains of commands.
 
-![Schema of an orchestrated AI workflow](/images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.png)
+![AI-assisted video production with a multimodal workflow](/images/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein-workflow.webp)
 
 ## Limits, risks, and necessary guardrails
 
