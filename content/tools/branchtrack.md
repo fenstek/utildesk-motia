@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [sales, training, simulations]
 official_url: "https://www.branchtrack.com/"
-popularity: 0
+popularity: 63
 ---
 
 # BranchTrack

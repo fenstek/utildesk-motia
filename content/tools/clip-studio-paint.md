@@ -5,7 +5,7 @@ category: Audio
 price_model: Abonnement, Einmalzahlung
 tags: [design, painting, illustration, animation]
 official_url: "https://www.clipstudio.net/en/"
-popularity: 0
+popularity: 59
 ---
 # Clip Studio Paint
 

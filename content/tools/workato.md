@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: ["automation", "workflow", "no-code", "productivity"]
 official_url: "https://www.workato.com/"
-popularity: 0
+popularity: 5
 ---
 
 # Workato
