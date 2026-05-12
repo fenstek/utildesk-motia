@@ -41,6 +41,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** For Lumiere, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Lumiere disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lumiere-editorial.webp" alt="Illustration for Lumiere: image sequences transform through motion paths into AI video" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automated text creation:** Generation of text for blog posts, social media, product descriptions, and more.

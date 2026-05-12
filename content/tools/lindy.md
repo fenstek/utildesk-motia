@@ -37,6 +37,10 @@ Lindy sollte zuerst in einer wiederkehrenden Aufgabe mit Eingabe, erwarteter Aus
 - **Guter Start für Lindy:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Lindy:** Ohne klare Regeln wird der Nutzen schwach, sobald Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lindy-editorial.webp" alt="Illustration zu Lindy: KI-Agent plant Aufgaben, verbindet Apps und fuehrt Workflows durch Pruefgates" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Workflow-Steuerung:** Lindy kann verschiedene Anwendungen und Dienste miteinander verknüpfen und so wiederkehrende Aufgaben automatisch ausführen.

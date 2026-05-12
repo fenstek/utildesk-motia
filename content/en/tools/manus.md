@@ -23,6 +23,10 @@ Relevant for teams testing research, automation, planning, and operational agent
 
 Manus is most useful for teams and individuals that treat a AI agent as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/manus-editorial.webp" alt="Illustration for Manus: agentic tasks are planned, executed, and assembled into a result" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Prepare multi-step tasks through agents

@@ -36,6 +36,10 @@ Ein belastbarer Pilot für Lens.org beginnt mit einem begrenzten Datensatz mit k
 - **Guter Start für Lens.org:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Lens.org:** Ohne klare Regeln wird der Nutzen schwach, sobald Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lens-org-editorial.webp" alt="Illustration zu Lens.org: Patent- und Forschungskarten werden zu einem Wissensnetz verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Umfassende Patentsuche:** Zugriff auf Millionen von Patenten weltweit mit präzisen Filtermöglichkeiten.

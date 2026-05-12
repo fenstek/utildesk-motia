@@ -32,6 +32,10 @@ Im Alltag zählt bei Video Pro X vor allem Projektorganisation. Ordner, Proxy-Da
 
 Effekte sollten Inhalt tragen, nicht davon ablenken. Ein sauberer Schnitt, verständlicher Ton und gute Dramaturgie schlagen die wildeste Übergangssammlung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/magix-video-pro-x-editorial.webp" alt="Illustration zu Magix Video Pro X: Clips, Audio, Effekte und Farblook werden zur Produktion montiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Timeline-basierter Videoschnitt mit mehreren Spuren.

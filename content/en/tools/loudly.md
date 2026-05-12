@@ -24,6 +24,10 @@ Audio is brutally honest: noise, timing, voice, and rights show up faster than o
 
 For creators, video teams, social marketing, and small production setups, Loudly is valuable when it creates a visible before-and-after difference in the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/loudly-editorial.webp" alt="Illustration for Loudly: music ideas become soundtrack variants, selection, and licensing paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - test background music for clips

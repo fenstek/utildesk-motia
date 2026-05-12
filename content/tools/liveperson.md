@@ -20,6 +20,10 @@ LivePerson eignet sich für größere Service-, Sales- und Contact-Center-Organi
 
 Für einfache Website-Chats ist LivePerson meist zu groß. Der Mehrwert liegt in Conversational-AI-Prozessen, Integrationen, Routing, Reporting und Governance für hohe Kontaktvolumen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/liveperson-editorial.webp" alt="Illustration zu LivePerson: Dialogstroeme laufen durch Conversational-AI-Routing und Review-Gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Chat- und Messaging-Support automatisieren

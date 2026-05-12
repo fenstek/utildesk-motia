@@ -20,6 +20,10 @@ Lovable is a modern developer tool focused on supporting app development with th
 
 Lovable is aimed at professional software developers, startups, and companies that want to speed up app development. Developers who want to experiment with AI-powered tools or automate complex coding tasks can also benefit from Lovable. Thanks to its intuitive interface and integrated features, the tool is suitable for both experienced developers and technically savvy beginners.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lovable-editorial.webp" alt="Illustration for Lovable: app prototype forms from ideas, components, data blocks, and tests" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered code generation:** Automatically creates code snippets based on user requests or predefined requirements.

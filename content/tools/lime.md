@@ -23,6 +23,10 @@ LIME richtet sich an Datenwissenschaftler, Machine-Learning-Entwickler, Forscher
 
 Das Tool ist modellagnostisch und somit mit verschiedenen Machine-Learning-Algorithmen kompatibel.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lime-editorial.webp" alt="Illustration zu LIME: Modellvorhersage wird in lokale Einflussfaktoren und Pruefschritte zerlegt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Lokale Erklärungen:** Fokus auf die Interpretation einzelner Vorhersagen, statt globaler Modellübersicht  

@@ -26,6 +26,10 @@ Let’s Enhance is aimed at professional and private users who want to improve t
 - Social media users who want to improve their photos with minimal effort
 - Small and medium-sized businesses looking for cost-effective image editing
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/let-s-enhance-editorial.webp" alt="Illustration for Let’s Enhance: a blurry image tile is refined through upscaling and denoising" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic image enhancement:** AI-powered optimization of colors, contrast, and details.

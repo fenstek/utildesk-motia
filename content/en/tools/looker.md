@@ -34,6 +34,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Test Looker in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Looker disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/looker-editorial.webp" alt="Illustration for Looker: data blocks are modeled, analyzed, and presented as visual insights" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Data modeling with LookML:** Enables the creation of a reusable data model that can be used by different teams.

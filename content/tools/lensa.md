@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Für Lensa eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Lensa enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lensa-editorial.webp" alt="Illustration zu Lensa: mobile Fotobearbeitung verbessert Portraitkarten, Licht und Farbe" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Hautretusche:** Entfernt Hautunreinheiten, glättet die Haut und verbessert den Hautton

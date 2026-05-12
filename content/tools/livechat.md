@@ -32,6 +32,10 @@ Im Alltag ist LiveChat nur dann ein Gewinn, wenn jemand wirklich antwortet. Ein 
 
 Gute Teams pflegen kurze Makros, aber klingen nicht wie Automaten. Der Trick liegt in vorbereiteten Antworten mit menschlichem Feinschliff.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/livechat-editorial.webp" alt="Illustration zu LiveChat: Chatnachrichten werden priorisiert, geroutet und geloest" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Website-Chat mit Agentenoberfläche und Routing.

@@ -41,6 +41,10 @@ A good test case for Leonardo AI is one concrete asset with briefing, versions, 
 - **Good start for Leonardo AI:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Leonardo AI:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/leonardo-ai-editorial.webp" alt="Illustration for Leonardo AI: generative design cards become abstract assets and style variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **AI-based image generation:** Create images from text descriptions (text-to-image)

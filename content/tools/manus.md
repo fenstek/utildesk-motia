@@ -20,6 +20,10 @@ Manus eignet sich für Nutzerinnen, die agentische KI-Workflows ausprobieren mö
 
 Für produktionskritische Automatisierung ist Vorsicht nötig. Ein Agent kann hilfreich strukturieren und ausführen, braucht aber klare Grenzen, überprüfbare Zwischenergebnisse und menschliche Freigabe, bevor etwas veröffentlicht, verschickt oder technisch geändert wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/manus-editorial.webp" alt="Illustration zu Manus: agentische Aufgaben werden geplant, ausgefuehrt und zu einem Ergebnis gebuendelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Mehrstufige Aufgaben durch Agenten vorbereiten

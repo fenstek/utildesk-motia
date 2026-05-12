@@ -23,6 +23,10 @@ LingQ passt zu Sprachlernenden, die gern mit Texten, Podcasts, Artikeln oder imp
 - Eigene Interessen als Lernmaterial nutzen.
 - Fortgeschrittene Lernende aus Lehrbuchsprache herausführen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lingq-editorial.webp" alt="Illustration zu LingQ: Lese- und Audioinhalte werden zu Wortschatzclustern und Lernpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Import und Bearbeitung von Text- und Audioinhalten.

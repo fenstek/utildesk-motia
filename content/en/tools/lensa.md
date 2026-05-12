@@ -38,6 +38,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** For Lensa, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Lensa disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lensa-editorial.webp" alt="Illustration for Lensa: mobile photo editing improves portrait cards, light, and color" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Automatic skin retouching:** Removes skin blemishes, smooths the skin, and improves skin tone

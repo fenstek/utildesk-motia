@@ -36,6 +36,10 @@ In everyday use, project organization is what matters most in Video Pro X. Folde
 
 Effects should support the content, not distract from it. Clean editing, understandable audio, and good pacing beat the wildest collection of transitions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/magix-video-pro-x-editorial.webp" alt="Illustration for Magix Video Pro X: clips, audio, effects, and color look are edited into production" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Timeline-based video editing with multiple tracks.

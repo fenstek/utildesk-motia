@@ -40,6 +40,10 @@ Als Prüfstück für Leonardo AI eignet sich einem konkreten Asset mit Briefing,
 - **Guter Start für Leonardo AI:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Leonardo AI:** Kritisch wird es, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/leonardo-ai-editorial.webp" alt="Illustration zu Leonardo AI: generative Designkarten werden zu abstrakten Assets und Stilvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Bildgenerierung:** Erstellung von Bildern aus Textbeschreibungen (Text-to-Image)

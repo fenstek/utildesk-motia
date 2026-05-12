@@ -33,6 +33,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** For Luminar Neo, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Luminar Neo disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/luminar-neo-editorial.webp" alt="Illustration for Luminar Neo: masks, layers, and corrections refine a photo" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered image enhancement:** Automatic optimization of exposure, colors, and details.
