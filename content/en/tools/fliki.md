@@ -35,6 +35,10 @@ A good test case for Fliki is a real recording with source material, editing, ex
 - **Good start for Fliki:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Fliki:** Even a good interface helps only partly when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fliki-editorial.webp" alt="Illustration for Fliki: script, voice and scene cards become a video" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text-to-Video Conversion:** Automatic creation of videos from input text.

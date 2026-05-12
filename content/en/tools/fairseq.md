@@ -37,6 +37,10 @@ In practice, fairseq requires solid ML and infrastructure knowledge. Data prepar
 
 Its value lies in controlled experimentation. fairseq is interesting when you need to know what is happening during training and do not just want to call a finished model.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fairseq-editorial.webp" alt="Illustration for Fairseq: language model workshop with sentence ribbons and training stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Training and evaluation of sequence models.

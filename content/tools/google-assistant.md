@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Google Assistant beginnt mit einem echten Kontaktfall
 - **Guter Start für Google Assistant:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Google Assistant:** Ohne klare Regeln wird der Nutzen schwach, sobald Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-assistant-editorial.webp" alt="Illustration zu Google Assistant: Sprachassistent koordiniert Alltag, Erinnerungen und Smart-Home-Signale" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Sprachsteuerung für Smartphones, Smart Speaker und andere Geräte  

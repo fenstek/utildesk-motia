@@ -41,6 +41,10 @@ A useful pilot for Genspark starts with a recurring task with input, expected ou
 - **Good start for Genspark:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Genspark:** The rollout turns into extra coordination when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genspark-editorial.webp" alt="Illustration for Genspark: research atlas gathers sources, answers and comparison cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent text generation:** Automatic creation of texts on various topics based on short inputs.

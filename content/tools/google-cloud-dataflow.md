@@ -30,6 +30,10 @@ Google Cloud Dataflow sollte zuerst in einem begrenzten Datensatz mit klarer Que
 - **Guter Start für Google Cloud Dataflow:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Google Cloud Dataflow:** Der Einsatz kippt in Zusatzarbeit, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-dataflow-editorial.webp" alt="Illustration zu Google Cloud Dataflow: Datenkanaele fuehren Streams und Batches durch Transformationsstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unified Batch- und Streaming-Verarbeitung:** Unterstützung für beide Verarbeitungsarten in einer einzigen Pipeline.

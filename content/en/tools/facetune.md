@@ -35,6 +35,10 @@ In day-to-day use, Facetune tempts you into overcorrection. The best result is o
 
 For brands and creators, it is worth defining an image standard: Which retouches are allowed, what stays real, and when should an image be labeled? That clarity protects trust.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/facetune-editorial.webp" alt="Illustration for Facetune: portrait studio with retouching, lighting and image variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Portrait retouching for skin, details, light, and background.

@@ -33,6 +33,10 @@ A useful pilot for Google Assistant starts with a real contact case with intake,
 - **Good start for Google Assistant:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Google Assistant:** The rollout turns into extra coordination when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-assistant-editorial.webp" alt="Illustration for Google Assistant: voice assistant coordinates daily tasks, reminders and smart-home signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Speech control for smartphones, smart speakers, and other devices  

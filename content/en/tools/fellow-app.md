@@ -31,6 +31,10 @@ Fellow.app becomes more valuable when the introduction is understood not as a to
 - **Good fit:** for managers, project teams, and recurring 1:1 formats.
 - **Watch out for:** becoming yet another note system if meeting discipline is missing.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fellow-app-editorial.webp" alt="Illustration for Fellow.app: team organizes agenda, decisions and tasks in a meeting" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Create and share meeting agendas:** Users can create agendas in advance and share them with participants to make preparation easier.

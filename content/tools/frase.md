@@ -40,6 +40,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Frase breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Frase enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/frase-editorial.webp" alt="Illustration zu Frase: Recherche-Gewaechshaus fuer Content-Briefings und Suchintentionen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Content-Briefings erstellen:** Automatische Generierung von detaillierten Briefings basierend auf Top-Ranking-Seiten und relevanten Keywords.

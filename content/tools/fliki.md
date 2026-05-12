@@ -31,6 +31,10 @@ Ein belastbarer Pilot für Fliki beginnt mit einer echten Aufnahme mit Rohmateri
 - **Guter Start für Fliki:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Fliki:** Der Einsatz kippt in Zusatzarbeit, wenn Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fliki-editorial.webp" alt="Illustration zu Fliki: Skript, Stimme und Szenenkarten werden zu einem Video" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Video-Konvertierung:** Automatische Erstellung von Videos aus eingegebenem Text.

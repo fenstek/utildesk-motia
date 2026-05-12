@@ -23,6 +23,10 @@ Google AI Studio eignet sich vor allem für Softwareentwickler, Data Scientists 
 
 Die Plattform bietet sowohl Einsteigern als auch erfahrenen Entwicklern Werkzeuge, um KI-Projekte flexibel zu realisieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-ai-studio-editorial.webp" alt="Illustration zu Google AI Studio: KI-Prototyping-Labor mit Prompts, Modellen und Sicherheitspruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Zugriff auf vortrainierte KI-Modelle:** Nutzung von Googles leistungsfähigen Modellen für Text, Bild, Sprache und mehr.

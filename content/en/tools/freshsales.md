@@ -34,6 +34,10 @@ A useful pilot for Freshsales starts with a real campaign with audience, content
 - **Good start for Freshsales:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Freshsales:** Even a good interface helps only partly when audiences, tracking, consent, data care, and follow-up processes are not defined clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshsales-editorial.webp" alt="Illustration for Freshsales: sales team moves contacts through a pipeline sculpture" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Lead and Contact Management:** Management of customer contacts and leads with clear profiles and interaction histories.

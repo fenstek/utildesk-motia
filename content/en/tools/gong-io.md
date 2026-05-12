@@ -35,6 +35,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test Gong.io in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Gong.io disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gong-io-editorial.webp" alt="Illustration for Gong.io: sales call stage with speech signals, coaching and deal cues" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Call Recording**: Recording of phone calls, video conferences, and emails across various communication channels.

@@ -27,6 +27,10 @@ Google Cloud Translation is primarily suited for:
 
 The service is particularly useful when fast, automated translations with high availability and easy integration are required. For very specialized or creative text, manual post-processing may be necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-translation-editorial.webp" alt="Illustration for Google Cloud Translation: language signals pass through colorful translation prisms" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic translation in over 100 languages**: Supports a wide range of languages and language combinations.

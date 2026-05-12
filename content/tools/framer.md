@@ -16,6 +16,10 @@ Framer ist eine innovative Design- und Prototyping-Plattform, die durch den Eins
 
 Framer richtet sich an Designer, Produktmanager, Marketingexperten und Entwickler, die schnell und effizient interaktive Prototypen erstellen möchten. Besonders geeignet ist das Tool für Teams, die Wert auf eine enge Zusammenarbeit zwischen Design und Entwicklung legen, sowie für Nutzer, die Automatisierungsfunktionen und No-Code-Lösungen bevorzugen. Auch für Startups und Agenturen, die ihre Design-Workflows optimieren wollen, bietet Framer vielfältige Möglichkeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/framer-editorial.webp" alt="Illustration zu Framer: Website-Modell entsteht aus responsiven Screens und Interaktionen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktives Prototyping:** Erstellung von animierten und klickbaren Prototypen ohne Programmieraufwand.

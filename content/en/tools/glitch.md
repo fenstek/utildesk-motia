@@ -38,6 +38,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** For Glitch, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Glitch disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/glitch-editorial.webp" alt="Illustration for Glitch: web project is rebuilt in a colorful remix workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent Automation:** Create and manage automated workflows without requiring extensive programming knowledge.

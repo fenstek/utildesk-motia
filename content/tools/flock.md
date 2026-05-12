@@ -20,6 +20,10 @@ Flock eignet sich für kleine und mittlere Teams, die Kommunikation aus langen E
 
 Weniger passend ist Flock, wenn bereits Microsoft Teams, Slack oder ein stark integriertes Workspace-Ökosystem gesetzt ist. Dann müsste der Wechsel einen klaren Vorteil bringen, sonst entsteht nur ein weiterer Chat-Ort.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flock-editorial.webp" alt="Illustration zu Flock: Teamkommunikation verbindet Nachrichten, Aufgaben und Raeume" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Team-Chats und Kanäle organisieren

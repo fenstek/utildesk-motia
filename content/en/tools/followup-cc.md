@@ -20,6 +20,10 @@ FollowUp.cc is an intelligent tool for automating and optimizing email follow-up
 
 FollowUp.cc is primarily aimed at professionals who send and receive a large number of emails on a regular basis, such as sales representatives, project managers, customer support staff, and freelancers. Also, companies and teams that want to structure their communication and don't want to miss important follow-ups will benefit from the automation features. The tool is ideal for anyone who wants to make their email communication more professional and time-saving.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/followup-cc-editorial.webp" alt="Illustration for FollowUp.cc: email reminders return to the desk at the right time" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Automatic reminders for unanswered emails

@@ -28,6 +28,10 @@ FreeFileConvert is suitable for a wide range of users, including:
 
 The tool is ideal for anyone looking for a hassle-free and fast way to convert files online, without having to deal with complex settings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freefileconvert-editorial.webp" alt="Illustration for FreeFileConvert: file cards are sorted in a conversion workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Support for numerous file formats:** Conversion of documents, images, audio, video, and archives.

@@ -27,6 +27,10 @@ Google AI Studio is primarily suited for software developers, data scientists, a
 
 The platform offers tools for both beginners and experienced developers to realize AI projects flexibly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-ai-studio-editorial.webp" alt="Illustration for Google AI Studio: AI prototyping lab with prompts, models and safety checks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Access to pre-trained AI models:** Utilize Google's powerful models for text, image, language, and more.

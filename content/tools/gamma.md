@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Für Gamma eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Gamma enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gamma-editorial.webp" alt="Illustration zu Gamma: Praesentationsstudio verwandelt Ideen in visuelle Panels" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Inhaltsgenerierung:** Automatische Vorschläge für Texte und Struktur basierend auf eingegebenen Stichpunkten.

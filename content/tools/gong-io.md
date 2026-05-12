@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte Gong.io zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Gong.io enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gong-io-editorial.webp" alt="Illustration zu Gong.io: Sales-Call-Buehne mit Sprachsignalen, Coaching und Deal-Hinweisen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Gesprächsaufzeichnung**: Erfassung von Telefonaten, Videokonferenzen und E-Mails über verschiedene Kommunikationskanäle.

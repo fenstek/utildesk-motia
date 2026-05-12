@@ -30,6 +30,10 @@ Fathom sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, Ant
 - **Guter Start für Fathom:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Fathom:** Ohne klare Regeln wird der Nutzen schwach, sobald Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fathom-editorial.webp" alt="Illustration zu Fathom: Meetingnotizen entstehen aus Audiowellen und Gespraechsmomenten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Transkription:** Wandelt gesprochene Sprache in Text um, um Meetings schriftlich festzuhalten.

@@ -32,6 +32,10 @@ Im Alltag verlangt fairseq solide ML- und Infrastrukturkenntnisse. Datenaufberei
 
 Der Wert liegt im kontrollierten Experiment. fairseq ist interessant, wenn man wissen muss, was im Training passiert, und nicht nur ein fertiges Modell aufrufen will.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fairseq-editorial.webp" alt="Illustration zu Fairseq: Sprachmodell-Werkstatt mit Satzbaendern und Trainingsstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Training und Evaluation von Sequenzmodellen.

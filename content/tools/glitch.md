@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Für Glitch eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Glitch enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/glitch-editorial.webp" alt="Illustration zu Glitch: Webprojekt wird in einer bunten Remix-Werkstatt neu zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Automatisierung:** Erstellen und verwalten Sie automatisierte Abläufe ohne umfangreiche Programmierkenntnisse.

@@ -20,6 +20,10 @@ Audio wirkt sofort ehrlich: Rauschen, Timing, Stimme und Rechte fallen schneller
 
 Bei Producer, Beatmaker, Musiker, Sounddesigner und Lernende spielt FL Studio seine Stärken aus, wenn die Nutzung bewusst eingegrenzt wird. Ein guter Einsatzbereich ist besser als fünf halb genutzte Funktionen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fl-studio-editorial.webp" alt="Illustration zu FL Studio: Musikproduktion mit Sequencer-Garten, Synths und Rhythmusbausteinen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Beats und Songs arrangieren

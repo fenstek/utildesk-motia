@@ -35,6 +35,10 @@ A good test case for Fathom is a real contact case with intake, prioritization, 
 - **Good start for Fathom:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Fathom:** Even a good interface helps only partly when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fathom-editorial.webp" alt="Illustration for Fathom: meeting notes emerge from audio waves and conversation moments" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Transcription:** Converts spoken language into text to capture meeting notes.

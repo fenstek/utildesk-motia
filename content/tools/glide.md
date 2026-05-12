@@ -27,6 +27,10 @@ Der beste Praxistest für Glide ist klein, aber echt. Ein Team sollte einen typi
 - **Rollout-Frage:** welche Datenquelle führend ist und wie Zugriffsrechte gepflegt werden.
 - **Bremse:** bei sehr individueller Logik oder komplexer Skalierung Grenzen zeigt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/glide-editorial.webp" alt="Illustration zu Glide: Tabellendaten wachsen zu mobilen App-Karten und Formularen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **No-Code App-Builder:** Erstellen von mobilen und Web-Apps mittels Drag-and-Drop-Oberfläche.

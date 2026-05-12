@@ -35,6 +35,10 @@ Als Prüfstück für Google T5 (Text-to-Text Transfer Transformer) eignet sich e
 - **Guter Start für Google T5 (Text-to-Text Transfer Transformer):** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Google T5 (Text-to-Text Transfer Transformer):** Kritisch wird es, wenn Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-t5-editorial.webp" alt="Illustration zu Google T5: Modellgiesserei verwandelt Eingabekarten in verschiedene Textaufgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Text-Transformation:** Einheitliche Verarbeitung verschiedenster NLP-Aufgaben als Textinput und Textoutput.

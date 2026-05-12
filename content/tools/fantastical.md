@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Fantastical nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Fantastical enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fantastical-editorial.webp" alt="Illustration zu Fantastical: Kalenderkacheln und Terminuebersicht in einer Zeitwarte" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Spracheingabe:** Termine und Erinnerungen lassen sich einfach per Text oder Sprache erfassen, z. B. „Treffen mit Max morgen um 15 Uhr“.

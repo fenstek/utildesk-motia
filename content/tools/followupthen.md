@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Für FollowUpThen eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** FollowUpThen enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/followupthen-editorial.webp" alt="Illustration zu FollowUpThen: Mailroom mit Zeitrails fuer geplante Nachfass-Erinnerungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mail-basierte Erinnerungen:** Nutzer senden eine E-Mail an eine spezielle Adresse (z. B. 1week@followupthen.com), um sich später automatisch erinnern zu lassen.

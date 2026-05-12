@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte Google Cloud Pub/Sub zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Google Cloud Pub/Sub enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-pub-sub-editorial.webp" alt="Illustration zu Google Cloud Pub/Sub: Nachrichtenkapseln fahren durch Topic-Stationen zu Subscriber-Docks" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Asynchrone Nachrichtenübermittlung:** Publisher senden Nachrichten an Themen (Topics), die von Abonnenten (Subscribers) empfangen werden. Bei Google Cloud Pub/Sub ist genau das ein guter Prüfpunkt für die erste Retrospektive.

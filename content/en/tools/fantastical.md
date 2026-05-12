@@ -34,6 +34,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** Keep the first Fantastical trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Fantastical disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fantastical-editorial.webp" alt="Illustration for Fantastical: calendar tiles and schedule overview in a time observatory" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Input:** Users can quickly enter appointments and reminders by speaking or typing in natural language, e.g., "Meeting with Max at 3 PM today".

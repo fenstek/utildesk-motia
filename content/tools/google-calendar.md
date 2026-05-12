@@ -23,6 +23,10 @@ Google Calendar passt zu Einzelpersonen, Teams, Schulen, kleinen Unternehmen und
 - Private und berufliche Termine getrennt oder gemeinsam sichtbar machen.
 - Planungslinks oder Buchungsseiten für einfache Terminfindung nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-calendar-editorial.webp" alt="Illustration zu Google Calendar: Kalendergarten ordnet Termine, Erinnerungen und Verfuegbarkeit" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Kalender, Einladungen, Erinnerungen und Verfügbarkeiten.

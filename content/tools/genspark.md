@@ -37,6 +37,10 @@ Als Prüfstück für Genspark eignet sich einer wiederkehrenden Aufgabe mit Eing
 - **Guter Start für Genspark:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Genspark:** Der Einsatz kippt in Zusatzarbeit, wenn Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genspark-editorial.webp" alt="Illustration zu Genspark: Rechercheatlas sammelt Quellen, Antworten und Vergleichskarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Textgenerierung:** Automatisches Erstellen von Texten zu verschiedenen Themen basierend auf kurzen Eingaben.

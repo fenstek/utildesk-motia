@@ -27,6 +27,10 @@ Fellow.app gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Proz
 - **Gute Voraussetzung:** für Führungskräfte, Projektteams und regelmäßige 1:1-Formate.
 - **Aufpassen bei:** bei fehlender Meeting-Disziplin noch ein weiteres Notizsystem wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fellow-app-editorial.webp" alt="Illustration zu Fellow.app: Team ordnet Agenda, Entscheidungen und Aufgaben im Meeting" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Meeting-Agenda erstellen und teilen:** Nutzer können Agenden vorab anlegen und mit Teilnehmern teilen, um die Vorbereitung zu erleichtern.

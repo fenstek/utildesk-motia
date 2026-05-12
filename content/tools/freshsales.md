@@ -30,6 +30,10 @@ Freshsales sollte zuerst in einer realen Kampagne mit Zielgruppe, Inhalt, Ausspi
 - **Guter Start für Freshsales:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Freshsales:** Ohne klare Regeln wird der Nutzen schwach, sobald Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshsales-editorial.webp" alt="Illustration zu Freshsales: Vertriebsteam bewegt Kontakte durch eine Pipeline-Skulptur" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Lead- und Kontaktmanagement:** Verwaltung von Kundenkontakten und Leads mit übersichtlichen Profilen und Interaktionshistorien.

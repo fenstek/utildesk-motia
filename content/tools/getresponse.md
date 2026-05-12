@@ -32,6 +32,10 @@ Im Alltag sollte GetResponse nicht als Lautsprecher, sondern als Beziehungswerkz
 
 Vor jeder Automation lohnt die Frage: Hilft diese Nachricht dem Empfänger gerade wirklich? Wenn die Antwort unscharf ist, wird auch die beste Sequenz nur lauter Lärm.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/getresponse-editorial.webp" alt="Illustration zu GetResponse: Marketingteam steuert Newsletter, Zielgruppen und Automationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Newsletter-Erstellung, Listenmanagement und Segmentierung.

@@ -23,6 +23,10 @@ Final Cut Pro passt zu Videoproduzenten, YouTubern, Agenturen und Teams im Apple
 - YouTube-, Kurs- oder Marketingvideos wiederkehrend produzieren.
 - Projekte mit hoher Medienmenge sauber strukturieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/final-cut-pro-editorial.webp" alt="Illustration zu Final Cut Pro: Filmstudio mit Timeline, Farbkorrektur und Schnittplatz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Magnetic Timeline und mediennahe Organisationslogik.

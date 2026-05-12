@@ -20,6 +20,10 @@ Google Tasks eignet sich für Menschen, die im Google-Ökosystem arbeiten und ei
 
 Für Teams, komplexe Projekte oder Aufgaben mit Abhängigkeiten ist Google Tasks zu schlicht. Es ist eher ein persönlicher Erinnerungszettel als ein Arbeitssteuerungssystem.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-tasks-editorial.webp" alt="Illustration zu Google Tasks: Ruhiger Schreibtisch ordnet Aufgaben, Erinnerungen und Kalenderkacheln" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Aufgaben aus Gmail-Kontext festhalten

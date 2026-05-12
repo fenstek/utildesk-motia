@@ -25,6 +25,10 @@ FreshBooks is primarily aimed at:
 - Teams requiring a collaborative platform for project management and time tracking.
 - Users who want to benefit from automated workflows and AI-powered functions to reduce administrative burden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshbooks-editorial.webp" alt="Illustration for FreshBooks: studio owner organizes invoices, receipts and payment paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Invoicing:** Creation and sending professional invoices via email, including automatic payment reminders.

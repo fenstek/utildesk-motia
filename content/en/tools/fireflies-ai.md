@@ -34,6 +34,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test Fireflies.ai in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Fireflies.ai disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fireflies-ai-editorial.webp" alt="Illustration for Fireflies.ai: conversations become notes, actions and a memory archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic transcription of meetings in real-time or post-meetings  

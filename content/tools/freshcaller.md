@@ -20,6 +20,10 @@ Supportwerkzeuge sind nur so gut wie die Antwortwege dahinter. Ein schneller Kan
 
 Für Supportteams, kleine Contact Center, Sales und Service-Organisationen ist Freshcaller dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshcaller-editorial.webp" alt="Illustration zu Freshcaller: Support-Leitung routet Anrufwellen und Eskalationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Telefon-Support ohne klassische Telefonanlage betreiben

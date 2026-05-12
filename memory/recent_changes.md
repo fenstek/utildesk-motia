@@ -1,5 +1,13 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-11_
+_Last updated: 2026-05-12_
+
+## 2026-05-12 - Tool illustration batch 11
+
+- Added one mid-article WebP illustration to 50 additional manually edited tool cards in both German and English.
+- Continued the 1260px source WebP and 90% `.tool-editorial-figure` display scheme from the latest batches.
+- Selection follows the edited-tail illustration registry after `faceapp`; slugs run from `facetune` through `grok`.
+- Generated extra replacement variants for scenes with anatomy, text, brand-like, or screenshot artifacts; only the selected WebP outputs were copied into the workspace.
+- Generated PNG originals remain in the Codex image cache per the current save-path policy.
 
 ## 2026-05-11 - Tool illustration batch 10
 

@@ -20,6 +20,10 @@ GarageBand eignet sich für Apple-Nutzer, die Songideen, Podcasts, Voice-overs o
 
 Für professionelle Mixing-, Mastering- oder Studio-Workflows ist GarageBand eher ein Einstieg als ein Zielsystem. Der Vorteil liegt in Geschwindigkeit und Zugänglichkeit, nicht in maximaler Kontrolle.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/garageband-editorial.webp" alt="Illustration zu GarageBand: Bedroom-Studio baut Songs aus Loops, Instrumenten und Spuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Songideen aufnehmen

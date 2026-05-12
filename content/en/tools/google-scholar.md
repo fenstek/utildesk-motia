@@ -34,6 +34,10 @@ A useful pilot for Google Scholar starts with a limited data set with a clear so
 - **Good start for Google Scholar:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Google Scholar:** Even a good interface helps only partly when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-scholar-editorial.webp" alt="Illustration for Google Scholar: citation library connects study cards and research questions" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Comprehensive search**: Access to a large number of scholarly publications from various sources.

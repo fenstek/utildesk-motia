@@ -22,6 +22,10 @@ Framer is an innovative design and prototyping platform that leverages AI-driven
 
 Framer is designed for designers, product managers, marketing experts, and developers who want to quickly and efficiently create interactive prototypes. It is particularly suitable for teams that value close collaboration between design and development, as well as users who prefer automation and no-code solutions. Framer is also ideal for startups and agencies looking to optimize their design workflows.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/framer-editorial.webp" alt="Illustration for Framer: website model emerges from responsive screens and interactions" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Interactive Prototyping:** Create animated and clickable prototypes without coding.

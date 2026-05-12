@@ -25,6 +25,10 @@ Final Cut Pro is ideal for professional users and ambitious amateurs seeking a c
 - Post-production studios that use macOS and benefit from the integration into the Apple ecosystem  
 - Users who prefer a one-time investment over subscription-based models
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/final-cut-pro-editorial.webp" alt="Illustration for Final Cut Pro: film studio with timeline, color grading and editing desk" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Multicam editing with automatic synchronization of multiple camera angles  

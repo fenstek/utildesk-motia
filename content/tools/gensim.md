@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Für Gensim eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Gensim enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gensim-editorial.webp" alt="Illustration zu Gensim: Dokumente werden in einer Forschungsbibliothek zu Themenclustern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Themenmodellierung:** Latent Dirichlet Allocation (LDA), Latent Semantic Analysis (LSA) und Hierarchische Dirichlet Prozesse (HDP) zur Identifikation von Themen in Textsammlungen.

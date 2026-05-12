@@ -34,6 +34,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** Keep the first Flair trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Flair disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flair-editorial.webp" alt="Illustration for Flair: product studio builds campaign scenes with lights, props and backdrops" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Named Entity Recognition (NER):** Recognition of entities such as people, organizations, locations, and more in text.

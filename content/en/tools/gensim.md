@@ -25,6 +25,10 @@ Gensim is suitable for developers, data scientists, and researchers who work wit
 - Are looking for efficient and space-saving algorithms for vector space models.
 - Prefer Python as a programming language and require a flexible library with no extensive dependencies.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gensim-editorial.webp" alt="Illustration for Gensim: documents become topic clusters in a research library" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Functions
 
 - **Topic Modeling:** Latent Dirichlet Allocation (LDA), Latent Semantic Analysis (LSA), and Hierarchical Dirichlet Processes (HDP) for identifying topics in text collections.

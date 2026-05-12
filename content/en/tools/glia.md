@@ -19,6 +19,10 @@ Glia is a AI-based platform that helps businesses improve their digital customer
 
 Glia is primarily aimed at financial services companies, insurance providers, telecommunications companies, and e-commerce businesses that want to digitize their customer service. It is particularly suitable for organizations that aim to achieve omnichannel communication and leverage AI-driven automation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/glia-editorial.webp" alt="Illustration for Glia: service desk connects customer guidance, co-browsing and secure channels" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered chatbots:** Automated responses to frequently asked questions and support for more complex issues.

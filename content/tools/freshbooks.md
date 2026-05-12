@@ -22,6 +22,10 @@ FreshBooks richtet sich vor allem an:
 - Teams, die eine kollaborative Plattform für Projektmanagement und Zeitverfolgung benötigen.
 - Anwender, die von automatisierten Abläufen und KI-gestützten Funktionen profitieren wollen, um den Verwaltungsaufwand zu reduzieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshbooks-editorial.webp" alt="Illustration zu FreshBooks: Studioinhaber ordnet Rechnungen, Belege und Zahlungswege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Rechnungsstellung:** Erstellung und Versand professioneller Rechnungen per E-Mail, inklusive automatischer Zahlungserinnerungen.

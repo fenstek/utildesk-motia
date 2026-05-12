@@ -30,6 +30,10 @@ Google Scholar sollte zuerst in einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Start für Google Scholar:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Google Scholar:** Ohne klare Regeln wird der Nutzen schwach, sobald Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-scholar-editorial.webp" alt="Illustration zu Google Scholar: Zitationsbibliothek verbindet Studienkarten und Forschungsfragen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Umfassende Suche**: Zugriff auf eine große Anzahl wissenschaftlicher Publikationen aus verschiedenen Quellen.

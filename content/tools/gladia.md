@@ -16,6 +16,10 @@ Gladia ist eine innovative KI-Plattform, die Unternehmen und Einzelpersonen dabe
 
 Gladia eignet sich besonders für kleine und mittelständische Unternehmen, Entwickler, Content-Ersteller sowie Teams, die ihre Arbeitsprozesse durch KI-Technologien verbessern wollen. Auch Freelancer und Agenturen profitieren von den Automatisierungsfunktionen, die Zeit sparen und die Qualität der Arbeit erhöhen. Die Plattform ist flexibel genug, um sich an verschiedene Branchen und Anwendungsfälle anzupassen, beispielsweise Marketing, Kundenservice, Datenanalyse und mehr.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gladia-editorial.webp" alt="Illustration zu Gladia: Sprachlabor wandelt Audiowellen in strukturierte Notizkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Textgenerierung**: Automatisches Erstellen von Texten, Zusammenfassungen und Übersetzungen.

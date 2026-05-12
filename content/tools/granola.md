@@ -23,6 +23,10 @@ Granola passt zu Wissensarbeitern, Produktteams, Führungskräften, Sales- und P
 - Persönliche Notizen mit KI-gestützter Verdichtung kombinieren.
 - Wiederkehrende Meetingmuster und Follow-ups besser erfassen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/granola-editorial.webp" alt="Illustration zu Granola: Meetingnotizbuch sammelt Sprachwellen, Entscheidungen und Aufgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-gestützte Meetingnotizen und Zusammenfassungen.

@@ -37,6 +37,10 @@ A useful evaluation starts with one real event source, one topic, one subscriber
 - **Good starting point:** Test one event workflow where the input, topic, subscriber, dead-letter behavior, and expected business result are documented before the first run.
 - **Common pitfall:** Google Cloud Pub/Sub disappoints when teams create topics quickly but do not define ownership, retention, replay, schema changes, or monitoring.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-pub-sub-editorial.webp" alt="Illustration for Google Cloud Pub/Sub: message capsules travel through topic stations to subscriber docks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Publish and subscribe messaging:** Publishers send messages to topics, while subscribers consume them through pull or push subscriptions.
