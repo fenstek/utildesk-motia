@@ -26,6 +26,12 @@ relatedTools:
     href: "/tools/cursor/"
   - title: "Aider"
     href: "/tools/aider/"
+  - title: "Vyrill"
+    href: "/tools/vyrill/"
+  - title: "Naoma AI"
+    href: "/tools/naoma-ai/"
+  - title: "Hera"
+    href: "/tools/hera/"
   - title: "LangChain"
     href: "/tools/langchain/"
   - title: "CrewAI"
@@ -61,9 +67,9 @@ If an agent is supposed to operate complex software, it must understand how the 
 
 The theoretical maturity of this technology is already reflected in a range of specialized applications. We are currently seeing a wave of tools that make multimodal capabilities usable for highly specific business processes.
 
-* **Vyrill:** This platform uses agentic infrastructure to automate the search and monetization of video content. The goal is not simply playback, but a deep understanding of video content for e-commerce.
-* **Naoma AI:** A specialized video AI agent for the B2B SaaS sector. It creates instant demos, massively accelerating the sales process by presenting product features accurately in both visual and contextual terms.
-* **Hera:** This tool focuses on producing launch videos in studio quality. It combines AI-assisted video production with an agentic approach to create professional marketing materials more efficiently.
+* **[Vyrill](/tools/vyrill/):** This platform uses agentic infrastructure to automate the search and monetization of video content. The goal is not simply playback, but a deep understanding of video content for e-commerce.
+* **[Naoma AI](/tools/naoma-ai/):** A specialized video AI agent for the B2B SaaS sector. It creates instant demos, massively accelerating the sales process by presenting product features accurately in both visual and contextual terms.
+* **[Hera](/tools/hera/):** This tool focuses on producing launch videos in studio quality. It combines AI-assisted video production with an agentic approach to create professional marketing materials more efficiently.
 
 For developers and power users, frameworks such as MiniMax CLI make it possible to give custom agents native multimodal capabilities. At the same time, heavyweights like Xiaomi are entering the market with the MiMo-V2-Pro and Omni models to establish flagship solutions for omnimodal applications.
 
@@ -105,7 +111,7 @@ Anyone who sets the right course today and integrates multimodal strategies into
 
 To avoid falling behind this development, a gradual approach is recommended. Start by checking your current text-based workflows for visual bottlenecks. Wherever employees currently switch back and forth between screenshots, videos, and text descriptions, that is where multimodal agents have the greatest potential.
 
-Experiment with specific frameworks such as MiniMax CLI to get a feel for controlling multimodal functions. If your focus is marketing or sales, tools like Naoma or Hera offer a quick entry point without requiring your own model infrastructure.
+Experiment with specific frameworks such as MiniMax CLI to get a feel for controlling multimodal functions. If your focus is marketing or sales, tools like [Naoma AI](/tools/naoma-ai/) or [Hera](/tools/hera/) offer a quick entry point without requiring your own model infrastructure.
 
 Keep a close eye on the development of native models such as GLM-5V-Turbo, as they will define the technological foundation for the next few years. Evaluation and verification should be part of your setup from the start to ensure the reliability of your automated processes.
 
