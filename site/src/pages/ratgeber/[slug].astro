@@ -273,7 +273,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
   /* Article header */
   .article-head {
-    max-width: 760px;
+    max-width: 100%;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(190, 201, 197, 0.25);
   }
@@ -293,7 +293,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     line-height: 1.2;
     letter-spacing: -0.025em;
     font-weight: 800;
-    max-width: 24ch;
+    max-width: min(62ch, 100%);
   }
 
   .article-excerpt {

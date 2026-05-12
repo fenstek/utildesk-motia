@@ -213,9 +213,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
 <style>
   .breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: var(--space-5) 0 24px; color: var(--secondary); font-size: 0.88rem; opacity: 0.75; }
-  .article-head { max-width: 760px; padding-bottom: 32px; border-bottom: 1px solid rgba(190, 201, 197, 0.25); }
+  .article-head { max-width: 100%; padding-bottom: 32px; border-bottom: 1px solid rgba(190, 201, 197, 0.25); }
   .article-eyebrow { margin: 0 0 12px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary); }
-  .article-head h1 { margin: 0; font-size: clamp(1.6rem, 2.8vw, 2.4rem); line-height: 1.2; letter-spacing: -0.025em; font-weight: 800; max-width: 24ch; }
+  .article-head h1 { margin: 0; font-size: clamp(1.6rem, 2.8vw, 2.4rem); line-height: 1.2; letter-spacing: -0.025em; font-weight: 800; max-width: min(62ch, 100%); }
   .article-excerpt { margin: 16px 0 0; max-width: 62ch; color: var(--secondary); font-size: 1.05rem; line-height: 1.75; }
   .article-byline { margin: 12px 0 0; color: var(--secondary); font-size: 0.9rem; line-height: 1.6; }
   .article-byline a { color: var(--primary); text-decoration: underline; text-decoration-color: rgba(23, 98, 89, 0.28); text-underline-offset: 2px; }
