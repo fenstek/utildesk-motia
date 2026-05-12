@@ -42,6 +42,10 @@ A useful pilot for Lindy starts with a recurring task with input, expected outpu
 - **Good start for Lindy:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Lindy:** The value becomes weak when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lindy-editorial.webp" alt="Illustration for Lindy: AI agent plans tasks, connects apps, and runs workflows through check gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automated workflow control:** Lindy can connect different applications and services, allowing recurring tasks to be carried out automatically.

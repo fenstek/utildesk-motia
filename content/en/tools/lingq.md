@@ -21,6 +21,10 @@ LingQ is an innovative language-learning platform that focuses on reading and li
 
 LingQ is aimed at language learners of all levels who want to improve their vocabulary and reading comprehension. It is especially suitable for people who like learning with authentic texts and audio content and want to stay flexible. The platform is ideal for self-learners, busy people who want to learn efficiently, and anyone looking for an alternative to traditional language courses. It can also be interesting for teachers and tutors as a complementary tool.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lingq-editorial.webp" alt="Illustration for LingQ: reading and audio content becomes vocabulary clusters and learning paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Extensive library of texts and audio content in many languages

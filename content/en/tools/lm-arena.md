@@ -34,6 +34,10 @@ A good test case for LM Arena is a recurring task with input, expected output, r
 - **Good start for LM Arena:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with LM Arena:** The value becomes weak when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lm-arena-editorial.webp" alt="Illustration for LM Arena: language models are tested, compared, and reviewed in parallel" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multiple LLMs in one environment:** Access to various large language models to compare their performance and behavior directly.

@@ -21,6 +21,10 @@ Suitable for larger support, contact center, and commerce teams with many recurr
 
 LivePerson is most useful for teams and individuals that treat a conversational AI platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/liveperson-editorial.webp" alt="Illustration for LivePerson: dialogue streams move through conversational AI routing and review gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Automate chat and messaging support

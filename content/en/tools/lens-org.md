@@ -40,6 +40,10 @@ A good test case for Lens.org is a limited data set with a clear source, defined
 - **Good start for Lens.org:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Lens.org:** The value becomes weak when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lens-org-editorial.webp" alt="Illustration for Lens.org: patent and research cards connect into a knowledge map" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Comprehensive patent search:** Access millions of patents worldwide with precise filtering options.

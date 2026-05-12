@@ -34,6 +34,10 @@ A useful evaluation starts with a real writing assignment with brief, draft, rev
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Lex.
 - **Common pitfall:** Lex disappoints when sources, tone, review rules, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lex-editorial.webp" alt="Illustration for Lex: draft cards are structured, rewritten, and gathered into a document" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered text creation:** Automatically generates text based on short inputs or bullet points.

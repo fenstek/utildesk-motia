@@ -32,6 +32,10 @@ A useful evaluation starts with a real recording with source material, editing, 
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Libsyn.
 - **Common pitfall:** Libsyn disappoints when source material, rights, target platforms, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/libsyn-editorial.webp" alt="Illustration for Libsyn: podcast episodes move from studio to hosting, distribution, and analytics" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Podcast hosting:** Storage and management of audio files with high availability.

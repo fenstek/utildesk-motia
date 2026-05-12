@@ -37,6 +37,10 @@ LanguageTool sollte zuerst in einer echten Lerneinheit mit Ziel, Aufgabe, Feedba
 - **Guter Start für LanguageTool:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei LanguageTool:** Kritisch wird es, wenn Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/languagetool-editorial.webp" alt="Illustration zu LanguageTool: Dokumentkarten laufen durch Grammatik-, Stil- und Mehrsprachigkeitspruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Rechtschreibprüfung** in mehreren Sprachen  

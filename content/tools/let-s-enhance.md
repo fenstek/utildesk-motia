@@ -23,6 +23,10 @@ Let’s Enhance richtet sich an professionelle und private Nutzer, die ihre Bild
 - Social-Media-Nutzer, die ihre Fotos mit minimalem Aufwand verbessern möchten
 - Kleine und mittelständische Unternehmen, die kosteneffiziente Bildbearbeitung suchen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/let-s-enhance-editorial.webp" alt="Illustration zu Let’s Enhance: unscharfe Bildkachel wird durch Upscaling und Rauschreduktion verfeinert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Bildverbesserung:** KI-gestützte Optimierung von Farben, Kontrast und Details.

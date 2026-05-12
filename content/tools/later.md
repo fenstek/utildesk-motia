@@ -27,6 +27,10 @@ Der beste Praxistest für Later ist klein, aber echt. Ein Team sollte einen typi
 - **Rollout-Frage:** welche Kanäle echte Wirkung haben und wer Freigaben verantwortet.
 - **Bremse:** bei schwacher Content-Strategie nur einen leeren Kalender verwaltet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/later-editorial.webp" alt="Illustration zu Later: Social-Content-Karten werden geplant, freigegeben und ausgewertet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle Content-Planung per Drag-and-Drop-Kalender

@@ -27,6 +27,10 @@ Luminar gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozess
 - **Gute Voraussetzung:** für Fotografen, Creator und Marketingbilder mit moderatem Retuschebedarf.
 - **Aufpassen bei:** bei zu starken Presets künstlich oder überbearbeitet wirken kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/luminar-editorial.webp" alt="Illustration zu Luminar: Foto-Workflow verbessert Licht, Farbe, Klarheit und Bildwirkung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Bildverbesserung:** Automatische Optimierung von Belichtung, Farben und Details mit wenigen Klicks.

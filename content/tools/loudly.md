@@ -20,6 +20,10 @@ Audio wirkt sofort ehrlich: Rauschen, Timing, Stimme und Rechte fallen schneller
 
 Loudly ist für Creator, Video-Teams, Social-Marketing und kleine Produktionsumgebungen vor allem dann wertvoll, wenn es einen sichtbaren Vorher-nachher-Unterschied im Workflow erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/loudly-editorial.webp" alt="Illustration zu Loudly: Musikideen werden zu Soundtrack-Varianten, Auswahl und Lizenzpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Hintergrundmusik für Clips testen

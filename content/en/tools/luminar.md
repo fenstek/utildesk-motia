@@ -48,6 +48,10 @@ Luminar works best when the introduction is understood not as a tool switch, but
 - **Practical check:** which look is brand-compliant and when manual retouching should take over.
 - **Team rollout:** retouch image series faster and keep the style consistent.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/luminar-editorial.webp" alt="Illustration for Luminar: photo workflow improves light, color, clarity, and image mood" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and Cons
 
 ### Pros

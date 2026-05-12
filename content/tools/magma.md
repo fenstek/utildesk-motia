@@ -20,6 +20,10 @@ Magma muss in einem echten Beispiel zeigen, ob kollaboratives digitales Zeichnen
 
 Bei Illustratoren, Konzeptteams, Kreativgruppen und Workshops mit gemeinsamem visuellen Arbeiten spielt Magma seine Stärken aus, wenn die Nutzung bewusst eingegrenzt wird. Ein guter Einsatzbereich ist besser als fünf halb genutzte Funktionen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/magma-editorial.webp" alt="Illustration zu Magma: gemeinsame Kreativleinwand verbindet Skizzen, Pinselspuren und Ebenen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - gemeinsam skizzieren und Feedback direkt einzeichnen

@@ -21,6 +21,10 @@ MailerLite is a user-friendly email marketing platform that helps businesses and
 
 MailerLite is primarily aimed at small and medium-sized businesses, freelancers, bloggers, and marketing teams looking for a cost-effective solution for email marketing. Users without deep technical knowledge also benefit from the intuitive interface and ready-made templates. With automation features and segmentation, MailerLite is also interesting for users who want to optimize their marketing processes and send personalized content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailerlite-editorial.webp" alt="Illustration for MailerLite: campaign cards move through segments, automation, and reporting" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Drag-and-drop email editor for easy newsletter design  

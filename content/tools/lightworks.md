@@ -20,6 +20,10 @@ Bei Videowerkzeugen entscheidet der Workflow: Aufnahme, Schnitt, Ton, Freigabe u
 
 Lightworks ist für Videoproduktion, Filmprojekte, Creator und Teams mit klassischem Schnittbedarf vor allem dann wertvoll, wenn es einen sichtbaren Vorher-nachher-Unterschied im Workflow erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lightworks-editorial.webp" alt="Illustration zu Lightworks: Videoclips, Farbkorrektur und Audiospuren werden zu einer Sequenz montiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Narrative oder dokumentarische Projekte schneiden

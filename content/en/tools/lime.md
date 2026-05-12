@@ -29,6 +29,10 @@ LIME is aimed at data scientists, machine learning developers, researchers, and 
 
 The tool is model-agnostic and therefore compatible with different machine learning algorithms.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lime-editorial.webp" alt="Illustration for LIME: a model prediction is broken into local feature influences and review steps" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Local explanations:** Focuses on interpreting individual predictions rather than providing a global model overview  

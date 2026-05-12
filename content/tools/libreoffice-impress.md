@@ -16,6 +16,10 @@ LibreOffice Impress ist ein leistungsstarkes, kostenloses Präsentationsprogramm
 
 LibreOffice Impress eignet sich ideal für Studierende, Lehrkräfte, Firmenmitarbeiter und alle, die Präsentationen erstellen möchten, ohne dafür kostenpflichtige Software zu nutzen. Besonders Anwender, die Wert auf eine offene, plattformübergreifende Lösung legen und dabei auf umfangreiche Funktionen nicht verzichten wollen, finden in Impress ein passendes Werkzeug. Auch für Organisationen mit begrenztem Budget oder solche, die Open-Source-Software bevorzugen, ist Impress eine attraktive Option.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/libreoffice-impress-editorial.webp" alt="Illustration zu LibreOffice Impress: Folienkarten, Layouts und Medienbausteine werden zu einer Praesentation" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Erstellung von Folien mit Text, Bildern, Tabellen und Multimedia-Inhalten

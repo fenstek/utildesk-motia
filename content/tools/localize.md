@@ -20,6 +20,10 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Im Alltag wird Localize vor allem für SaaS-Teams, Produktmanager, Marketing und internationale Webprojekte interessant. Die beste Wirkung entsteht, wenn das Ergebnis nicht bewundert, sondern direkt weiterverarbeitet werden kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/localize-editorial.webp" alt="Illustration zu Localize: Website- und App-Inhalte laufen durch Uebersetzung, Review und Release" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Websites und Apps mehrsprachig ausspielen

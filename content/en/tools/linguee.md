@@ -31,6 +31,10 @@ With Linguee, I would distinguish early between the demo impression and operatio
 - **Quality question:** which source examples reliably match your own language style.
 - **Risk:** in technical language, it can lead to literal decisions if there is no internal quality check.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/linguee-editorial.webp" alt="Illustration for Linguee: phrase cards are matched through context search and meaning bridges" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Extensive bilingual dictionary with numerous language pairs

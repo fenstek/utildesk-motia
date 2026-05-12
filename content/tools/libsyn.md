@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitu
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Libsyn breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Libsyn enttäuscht, wenn Ausgangsmaterial, Rechte, Zielplattformen und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/libsyn-editorial.webp" alt="Illustration zu Libsyn: Podcast-Episoden laufen vom Studio in Hosting, Verteilung und Analyse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Podcast-Hosting:** Speicherung und Verwaltung von Audio-Dateien mit hoher Verfügbarkeit.

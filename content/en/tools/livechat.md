@@ -36,6 +36,10 @@ In everyday use, LiveChat is only an advantage if someone actually responds. A c
 
 Good teams keep macros short, but do not sound like machines. The trick is prepared answers with a human touch.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/livechat-editorial.webp" alt="Illustration for LiveChat: chat messages are prioritized, routed, and resolved" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Website chat with agent interface and routing.

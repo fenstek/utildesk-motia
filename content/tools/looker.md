@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte Looker zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Looker enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/looker-editorial.webp" alt="Illustration zu Looker: Datenbloecke werden modelliert, analysiert und als visuelle Insights dargestellt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenmodellierung mit LookML:** Ermöglicht die Erstellung eines wiederverwendbaren Datenmodells, das von verschiedenen Teams genutzt werden kann.

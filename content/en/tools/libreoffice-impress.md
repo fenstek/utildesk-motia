@@ -20,6 +20,10 @@ LibreOffice Impress is a powerful, free presentation program that is part of the
 
 LibreOffice Impress is ideal for students, teachers, company employees, and anyone who wants to create presentations without using paid software. Users who value an open, cross-platform solution and do not want to give up extensive features will find Impress a suitable tool. Impress is also an attractive option for organizations with limited budgets or those that prefer open-source software.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/libreoffice-impress-editorial.webp" alt="Illustration for LibreOffice Impress: slide cards, layouts, and media blocks become a presentation" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Creation of slides with text, images, tables, and multimedia content

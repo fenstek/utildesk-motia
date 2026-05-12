@@ -32,6 +32,10 @@ The best practical test for Mailbutler is small, but real. A team should run thr
 - **Rollout question:** where tracking is legally and communicatively appropriate.
 - **Brake:** using tracking on every contact can damage trust.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailbutler-editorial.webp" alt="Illustration for Mailbutler: email cards become reminders, follow-ups, and scheduled actions" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Email tracking:** Track when and where emails are opened

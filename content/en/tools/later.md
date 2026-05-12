@@ -31,6 +31,10 @@ The best practical test for Later is small, but real. A team should walk through
 - **Rollout question:** which channels have real impact and who is responsible for approvals.
 - **Brake:** with a weak content strategy, it only manages an empty calendar.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/later-editorial.webp" alt="Illustration for Later: social content cards are planned, approved, and measured" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual content planning with a drag-and-drop calendar

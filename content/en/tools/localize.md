@@ -24,6 +24,10 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 For SaaS teams, product managers, marketing teams, and international web projects, Localize becomes useful when the result is not just impressive, but can be moved directly into the next practical step.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/localize-editorial.webp" alt="Illustration for Localize: website and app content moves through translation, review, and release" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - serve websites and apps in multiple languages

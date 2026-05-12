@@ -16,6 +16,10 @@ LiveAgent ist eine umfassende Kundenservice-Software, die Unternehmen dabei unte
 
 LiveAgent richtet sich an kleine bis mittelständische Unternehmen sowie größere Organisationen, die ihren Kundenservice optimieren möchten. Besonders geeignet ist die Software für Unternehmen, die mehrere Kommunikationskanäle gleichzeitig verwalten wollen und eine zentralisierte Lösung für Support, CRM und Kommunikation suchen. Branchenübergreifend profitieren vor allem Teams, die Wert auf schnelle Reaktionszeiten und eine strukturierte Bearbeitung von Kundenanfragen legen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/liveagent-editorial.webp" alt="Illustration zu LiveAgent: Kundenanfragen laufen durch Tickets, Kanaele und Support-Workflows" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multichannel-Ticketsystem:** Verwaltung von Kundenanfragen aus E-Mail, Live-Chat, Telefon, sozialen Netzwerken und mehr in einer einzigen Oberfläche.

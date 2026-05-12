@@ -24,6 +24,10 @@ With video tools, the workflow decides: recording, editing, audio, approval, and
 
 For video production, film projects, creators, and teams with classic editing needs, Lightworks is valuable when it creates a visible before-and-after difference in the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lightworks-editorial.webp" alt="Illustration for Lightworks: video clips, color correction, and audio tracks are edited into a sequence" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - edit narrative or documentary projects

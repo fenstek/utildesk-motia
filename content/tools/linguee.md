@@ -28,6 +28,10 @@ Bei Linguee würde ich früh zwischen Demo-Eindruck und Betriebsrealität unters
 - **Qualitätsfrage:** welche Quellenbeispiele zuverlässig zum eigenen Sprachstil passen.
 - **Risiko:** bei Fachsprache ohne eigene Qualitätsprüfung zu wörtlichen Entscheidungen verleiten kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/linguee-editorial.webp" alt="Illustration zu Linguee: Ausdruckskarten werden durch Kontextsuche und Bedeutungsbruecken abgeglichen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Umfangreiches zweisprachiges Wörterbuch mit zahlreichen Sprachpaaren

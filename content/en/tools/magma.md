@@ -24,6 +24,10 @@ Creative tools save time when they make material malleable. They hurt when every
 
 Magma is strongest for illustrators, concept teams, creative groups, and workshops doing shared visual work when the use case is deliberately narrow. One good use case is better than five half-used features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/magma-editorial.webp" alt="Illustration for Magma: shared creative canvas connects sketches, brush strokes, and layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - sketch together and draw feedback directly

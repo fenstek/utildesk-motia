@@ -39,6 +39,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Für Lumiere eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Lumiere enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lumiere-editorial.webp" alt="Illustration zu Lumiere: Bildsequenzen verwandeln sich durch Motion-Pfade in KI-Video" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Texterstellung:** Generierung von Texten für Blogbeiträge, Social Media, Produktbeschreibungen und mehr.

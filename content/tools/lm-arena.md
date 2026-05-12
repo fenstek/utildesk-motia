@@ -30,6 +30,10 @@ Ein belastbarer Pilot für LM Arena beginnt mit einer wiederkehrenden Aufgabe mi
 - **Guter Start für LM Arena:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei LM Arena:** Kritisch wird es, wenn Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lm-arena-editorial.webp" alt="Illustration zu LM Arena: Sprachmodelle werden parallel getestet, verglichen und geprueft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mehrere LLMs in einer Umgebung:** Zugriff auf verschiedene große Sprachmodelle, um deren Leistung und Verhalten direkt zu vergleichen.

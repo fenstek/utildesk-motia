@@ -23,6 +23,10 @@ MailerLite passt zu kleinen Unternehmen, Creators, Vereinen, Shops und Marketing
 - Segmentierung und Basis-Reporting für Kampagnen verbessern.
 - E-Mail-Marketing starten, ohne sofort eine schwere Marketing-Suite einzuführen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailerlite-editorial.webp" alt="Illustration zu MailerLite: Kampagnenkarten laufen durch Segmente, Automation und Reporting" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Newsletter-Editor, Formulare, Landingpages und Automationen.

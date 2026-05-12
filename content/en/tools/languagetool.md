@@ -42,6 +42,10 @@ A useful pilot for LanguageTool starts with a real learning unit with goal, task
 - **Good start for LanguageTool:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with LanguageTool:** The rollout turns into extra coordination when learning goal, level, feedback rules, and learner privacy remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/languagetool-editorial.webp" alt="Illustration for LanguageTool: document cards pass through grammar, style, and multilingual review" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Spelling check** in multiple languages  

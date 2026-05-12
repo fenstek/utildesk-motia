@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassun
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Lex breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Lex enttäuscht, wenn Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lex-editorial.webp" alt="Illustration zu Lex: Entwurfskarten werden strukturiert, ueberarbeitet und zu einem Dokument gebuendelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Texterstellung:** Automatisches Generieren von Texten basierend auf kurzen Eingaben oder Stichpunkten.
