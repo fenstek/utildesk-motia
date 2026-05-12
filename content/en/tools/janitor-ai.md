@@ -32,6 +32,10 @@ Janitor AI should not be evaluated in isolation. What matters is its place in th
 - **Measurement point:** which personas, content, and safeguards are acceptable.
 - **Boundary:** with unclear safety rules, it can generate problematic content or expectations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/janitor-ai-editorial.webp" alt="Illustration for Janitor AI: safe chatbot workshop designs dialogue paths and character cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered chatbot integration:** Enables natural, context-aware conversations with users.

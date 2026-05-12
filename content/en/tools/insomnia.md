@@ -22,6 +22,10 @@ Fits developers, QA, API teams, and technical product work.
 
 Insomnia is most useful for teams and individuals that treat a API client as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/insomnia-editorial.webp" alt="Illustration for Insomnia: API requests move through test nodes, response containers, and debug paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Test REST, GraphQL, and gRPC requests

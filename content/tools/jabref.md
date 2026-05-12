@@ -20,6 +20,10 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 JabRef passt am ehesten zu Forschende, Studierende, LaTeX-Nutzer und Open-Source-orientierte Teams, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jabref-editorial.webp" alt="Illustration zu JabRef: Literaturkarten, BibTeX-Quellen und Forschungsnotizen werden geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - BibTeX-Bibliotheken sauber pflegen

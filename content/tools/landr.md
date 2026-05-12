@@ -20,6 +20,10 @@ Audio wirkt sofort ehrlich: Rauschen, Timing, Stimme und Rechte fallen schneller
 
 Für Musiker, Podcaster, Beatmaker und kleine Labels, die Veröffentlichungen pragmatisch vorbereiten kann LANDR ein echter Hebel sein. Entscheidend ist, dass der Einsatz nicht beliebig bleibt, sondern an einem wiederholbaren Arbeitsmoment hängt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/landr-editorial.webp" alt="Illustration zu LANDR: Musikstudio mastert Tracks, prueft Pegel und plant Distribution" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Demos oder Singles schnell mastern

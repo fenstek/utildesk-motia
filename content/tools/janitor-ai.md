@@ -27,6 +27,10 @@ Janitor AI sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Work
 - **Messpunkt:** welche Personas, Inhalte und Schutzmechanismen akzeptabel sind.
 - **Grenze:** bei unklaren Sicherheitsregeln problematische Inhalte oder Erwartungen erzeugen kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/janitor-ai-editorial.webp" alt="Illustration zu Janitor AI: sichere Chatbot-Werkstatt gestaltet Dialogpfade und Charakterkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Chatbot-Integration:** Ermöglicht natürliche, kontextbezogene Dialoge mit Nutzern.

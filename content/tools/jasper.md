@@ -22,6 +22,10 @@ Schreibtools sind dann nützlich, wenn sie Rohmaterial, Varianten und Struktur l
 
 Für Marketingteams, Content-Operations, Agenturen und Unternehmen mit wiederkehrender Textproduktion kann Jasper ein echter Hebel sein. Entscheidend ist, dass der Einsatz nicht beliebig bleibt, sondern an einem wiederholbaren Arbeitsmoment hängt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jasper-editorial.webp" alt="Illustration zu Jasper: Marketingteam entwickelt Kampagnentexte, Tonalitaet und Content-Varianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Kampagnen- und Landingpage-Texte vorbereiten

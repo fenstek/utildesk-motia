@@ -34,6 +34,10 @@ A good test case for Kore.ai is a real contact case with intake, prioritization,
 - **Good start for Kore.ai:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Kore.ai:** The value becomes weak when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kore-ai-editorial.webp" alt="Illustration for Kore.ai: enterprise chatbot flows connect intents, channels, and escalations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multichannel support:** Integration of chatbots across web, mobile, social media, messaging apps, and voice assistants.

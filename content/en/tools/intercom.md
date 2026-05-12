@@ -21,6 +21,10 @@ Good for SaaS, digital products, support teams, customer success, and onboarding
 
 Intercom is most useful for teams and individuals that treat a customer messaging platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intercom-editorial.webp" alt="Illustration for Intercom: customer chat, help center, and support handoffs in a service hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Offer website and in-app chat

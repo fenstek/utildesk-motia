@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Kore.ai beginnt mit einem echten Kontaktfall mit Eing
 - **Guter Start für Kore.ai:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Kore.ai:** Der Einsatz kippt in Zusatzarbeit, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kore-ai-editorial.webp" alt="Illustration zu Kore.ai: Enterprise-Chatbot-Flows verbinden Intents, Kanaele und Eskalationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multichannel-Unterstützung:** Integration von Chatbots über Web, Mobile, Social Media, Messaging-Apps und Sprachassistenten.

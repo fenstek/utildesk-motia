@@ -30,6 +30,10 @@ Ein belastbarer Pilot für iZotope Ozone beginnt mit einer echten Aufnahme mit R
 - **Guter Start für iZotope Ozone:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei iZotope Ozone:** Kritisch wird es, wenn Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/izotope-ozone-editorial.webp" alt="Illustration zu iZotope Ozone: Mastering-Studio balanciert Frequenzen, Pegel und finalen Mix" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mastering-Assistent**: Automatische Analyse des Tracks und Vorschläge für EQ, Kompression und Lautstärke.

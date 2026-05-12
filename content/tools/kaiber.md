@@ -20,6 +20,10 @@ Bei Videowerkzeugen entscheidet der Workflow: Aufnahme, Schnitt, Ton, Freigabe u
 
 Für Musiker, Creator, Visual Artists und Kampagnenteams mit experimentellem Look ist Kaiber dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kaiber-editorial.webp" alt="Illustration zu Kaiber: KI-Videolabor verwandelt Musik, Szenen und Motion-Pfade in Clips" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Musikvisuals und kurze Clips erzeugen

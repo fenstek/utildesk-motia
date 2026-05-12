@@ -23,6 +23,10 @@ Jan passt zu Entwicklern, KI-interessierten Power-Usern, Datenschutzbewussten un
 - Modellqualität, Geschwindigkeit und Hardwarebedarf vergleichen.
 - KI-Nutzung für Entwickler- oder Research-Setups flexibler machen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jan-ai-editorial.webp" alt="Illustration zu Jan: lokaler KI-Arbeitsplatz ordnet Modelle, Datenkarten und private Prompts" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Desktop-nahe Oberfläche für LLM-Nutzung.

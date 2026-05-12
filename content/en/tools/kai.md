@@ -19,6 +19,10 @@ KAI is a modern AI-powered assistant that helps companies and individuals automa
 
 KAI is designed for a broad audience: companies that want to make their processes more efficient with artificial intelligence, marketing teams that want to create personalized content, developers who want to integrate AI capabilities into their products, and individuals who want to benefit from automated solutions. KAI is especially well suited for users looking for a flexible and scalable solution that can adapt to different requirements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kai-editorial.webp" alt="Illustration for KAI: conversational AI team connects chat channels, data cards, and answer review" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Text generation and optimization:** Create content for marketing, social media, blogs, and more.

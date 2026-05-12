@@ -20,6 +20,10 @@ Bei Assistenten zählt weniger die Demo-Frage als die Frage, ob Antworten, Quell
 
 Kimi ist für Wissensarbeiter, Rechercheteams, Studierende und Nutzer mit langen Materialien vor allem dann wertvoll, wenn es einen sichtbaren Vorher-nachher-Unterschied im Workflow erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kimi-editorial.webp" alt="Illustration zu Kimi: KI-Assistent ordnet lange Dokumente, Recherchepfade und Kontextkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - lange Dokumente und Quellenpakete bearbeiten

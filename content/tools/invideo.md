@@ -27,6 +27,10 @@ InVideo gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozess
 - **Gute Voraussetzung:** für kleine Marketingteams, Creator und Kampagnen mit hohem Outputdruck.
 - **Aufpassen bei:** ohne eigene Dramaturgie schnell wie generisches Template-Marketing aussieht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/invideo-editorial.webp" alt="Illustration zu InVideo: Creator-Studio baut Social-Videos aus Storyboards, Szenen und Audiospuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vorlagenbibliothek:** Zugriff auf tausende anpassbare Video-Templates für verschiedene Anlässe und Branchen.

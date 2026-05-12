@@ -34,6 +34,10 @@ A good test case for Kafka Streams is a limited data set with a clear source, de
 - **Good start for Kafka Streams:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Kafka Streams:** The rollout turns into extra coordination when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kafka-streams-editorial.webp" alt="Illustration for Kafka Streams: event streams pass through processing nodes and state windows" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time stream processing:** Processing events with low latency directly from Kafka topics.

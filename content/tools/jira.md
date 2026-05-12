@@ -32,6 +32,10 @@ Im Alltag entscheidet die Qualität der Tickets. Ein gutes Ticket beantwortet, w
 
 Besonders wertvoll ist Jira, wenn Teams regelmäßig aufräumen: alte Felder entfernen, Status vereinfachen, Automationen prüfen und Dashboards nicht als Wandtapete behandeln. Weniger Konfiguration ist oft mehr Steuerbarkeit.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jira-editorial.webp" alt="Illustration zu Jira: Produktteam plant Issues, Sprint-Aufgaben und Entwicklungsuebergaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Backlogs, Epics, Issues, Boards und Releases für agile oder hybride Arbeitsweisen.

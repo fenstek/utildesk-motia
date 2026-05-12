@@ -25,6 +25,10 @@ KMM is aimed at mobile developers and teams who want to build cross-platform app
 - Companies that want to reduce development time and maintenance costs without compromising native performance.
 - Projects that are intended to combine a native user interface with a shared codebase.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kotlin-multiplatform-mobile-editorial.webp" alt="Illustration for Kotlin Multiplatform Mobile: shared code flows into Android and iOS app blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Shared code for business logic, networking, databases, and more between Android and iOS.

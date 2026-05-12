@@ -40,6 +40,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** Keep the first JupyterHub trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** JupyterHub disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jupyterhub-editorial.webp" alt="Illustration for JupyterHub: shared notebook hub connects experiments, data, and compute resources" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Centralized user management with authentication and access control

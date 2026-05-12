@@ -32,6 +32,10 @@ Im Alltag funktioniert Ionic gut, wenn das Team mobile UX ernst nimmt und nicht 
 
 Besonders wichtig ist fruehes Testen auf echten Geräten. Der Browser ist bequem, aber Akkulaufzeit, Tastaturverhalten und native Berechtigungen zeigen ihre Launen erst auf dem Smartphone.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ionic-editorial.webp" alt="Illustration zu Ionic: mobile App-Bausteine verbinden Webkomponenten, Geraete und Build-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - UI-Komponenten für mobile und responsive Oberflächen.

@@ -25,6 +25,10 @@ Writing tools are useful when they provide raw material, variants, and structure
 
 For marketing teams, content operations, agencies, and companies with recurring text production, Jasper can be a real lever. The key is to attach it to a repeatable work moment rather than using it as a vague productivity promise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jasper-editorial.webp" alt="Illustration for Jasper: marketing team develops campaign copy, tone, and content variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - prepare campaign and landing page copy

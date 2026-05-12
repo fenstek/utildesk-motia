@@ -30,6 +30,10 @@ Als Prüfstück für Invoca eignet sich einem begrenzten Datensatz mit klarer Qu
 - **Guter Start für Invoca:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Invoca:** Der Einsatz kippt in Zusatzarbeit, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/invoca-editorial.webp" alt="Illustration zu Invoca: Anrufwellen werden zu Kampagnensignalen, Attribution und Sales-Handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Anrufanalyse:** Automatische Erkennung von Gesprächsinhalten, Stimmungen und Kundenabsichten in Echtzeit.

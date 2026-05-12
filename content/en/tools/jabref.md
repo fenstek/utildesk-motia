@@ -24,6 +24,10 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 JabRef fits researchers, students, LaTeX users, and open-source-oriented teams best when there is a concrete bottleneck to solve. The more clearly that bottleneck is described, the easier the tool is to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jabref-editorial.webp" alt="Illustration for JabRef: reference cards, BibTeX sources, and research notes are organized" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - maintain BibTeX libraries cleanly

@@ -20,6 +20,10 @@ Insomnia eignet sich für Entwicklerinnen, QA, DevOps und technische Produktteam
 
 Für reine Endnutzer oder nicht-technische Teams ist Insomnia nicht gedacht. Es entfaltet seinen Wert dort, wo Schnittstellen regelmäßig geprüft werden und man schneller verstehen muss, ob ein Problem im Client, Backend, Auth-Setup oder Netzwerk liegt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/insomnia-editorial.webp" alt="Illustration zu Insomnia: API-Anfragen laufen durch Testknoten, Antwortcontainer und Debug-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - REST-, GraphQL- und gRPC-Requests testen
