@@ -287,3 +287,10 @@ _Last updated: 2026-05-12_
 ### Operational note
 - Windows `origin/master` and `origin/autobot` reached `8bc2854`; `C:\projects\utildesk-motia-production-sync` and VPS `/opt/utildesk-motia` were reset/synced to the same commit.
 - Hub/Ubuntu mirror push to `jgdus@100.98.97.98` was blocked by a Tailscale SSH browser check, so `hub/master` and `hub/autobot` were still at `ce9109e` at the time of this note. Once Tailscale SSH is re-authorized, run the normal Windows sync with `-SyncHub` to mirror the current production refs to hub/Ubuntu.
+
+## 2026-05-12 - Repair: Vyrill, Naoma AI, Hera expanded to full tool-card standard
+
+- Replaced the earlier too-short Vyrill, Naoma AI, and Hera card bodies with full German and English editorial cards.
+- Each repaired card now includes audience fit, use cases, practical workflow notes, features, pros/limits, workflow fit, privacy/data notes, pricing/costs, renderable internal alternatives, editorial assessment, and 5-item FAQ.
+- Normalized alternatives to the renderable internal-link format (`[Tool](/tools/slug/): ...`) so the tool page template actually shows the alternatives grid.
+- Rechecked editorial template, English translations, alternatives rendering, and the Astro production build before publication.

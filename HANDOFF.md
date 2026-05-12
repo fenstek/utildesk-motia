@@ -235,3 +235,9 @@
 - Production content commit is `8bc2854`; live pages all returned 200 after a direct Wrangler Pages deployment.
 - Direct deploy was needed because GitHub push did not make the new pages live during the polling window. Use local `C:\projects\utildesk-motia\.env` for `CLOUDFLARE_API_TOKEN`; never print or commit its value.
 - Hub/Ubuntu sync is the remaining mechanical follow-up: Tailscale SSH to `jgdus@100.98.97.98` requested an additional browser check and blocked `git push hub`. After re-auth, run `powershell -NoProfile -ExecutionPolicy Bypass -File C:\projects\utildesk-motia-production-sync\scripts\sync_after_remote_deploy.ps1 -Repo C:\projects\utildesk-motia -SyncHub`.
+
+## 2026-05-12 Repair note: no quick tool-card scheme
+
+- The first Vyrill/Naoma AI/Hera publication used a too-short emergency card pattern; this is now explicitly deprecated and recorded in `memory/decisions.md`.
+- The current repair expands all six files (`content/tools/*` and `content/en/tools/*`) to the full editorial catalogue standard with renderable alternatives and FAQ.
+- Keep this as the baseline for future urgent tool publications: if the full structure cannot be produced, the tool should remain blocked instead of being published as a minimal card.

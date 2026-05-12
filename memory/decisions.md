@@ -115,3 +115,10 @@
 - Remote deploy state must use GitHub `origin/master` as the source of truth, with `origin/autobot` aligned to the same commit after every manual release.
 - Ubuntu-originated production changes must carry their project memory in git (`memory/recent_changes.md`, `memory/decisions.md`, or `HANDOFF.md`) so the Windows laptop can sync knowledge by fetching/pulling, not by relying on chat history.
 - If the Windows main checkout is dirty, do not force-update it during remote deploy sync; update a clean production-memory mirror instead and leave local work-in-progress untouched.
+
+
+## 2026-05-12
+
+- Tool card publication rule: never publish a short/minimal "quick card" for a tool. New or repaired tool cards must use the full editorial catalogue structure, including audience fit, typical use cases, day-to-day workflow notes, key features, pros/limitations, workflow fit, privacy/data notes when relevant, pricing/costs, strong alternatives, editorial assessment, and FAQ in both German and English.
+- If a tool must be published urgently from a Ratgeber mention, urgency does not lower the editorial bar. Either publish a full card or keep the item blocked until the full card is ready.
+- The earlier Vyrill/Naoma AI/Hera minimal-card release is explicitly treated as a mistake to repair, not as a reusable pattern.
