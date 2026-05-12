@@ -144,7 +144,6 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   <header class="article-head">
     <p class="article-eyebrow">{data.eyebrow || "Ratgeber"}</p>
     <h1>{title}</h1>
-    <p class="article-excerpt">{description}</p>
     <p class="article-byline">
       Von <strong>Utildesk Redaktion</strong> · redaktionell geprüft · <a href="/methodologie/">Methodologie</a>
     </p>
@@ -296,16 +295,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     max-width: min(62ch, 100%);
   }
 
-  .article-excerpt {
-    margin: 16px 0 0;
-    max-width: 62ch;
-    color: var(--secondary);
-    font-size: 1.05rem;
-    line-height: 1.75;
-  }
-
   .article-byline {
-    margin: 12px 0 0;
+    margin: 18px 0 0;
     color: var(--secondary);
     font-size: 0.9rem;
     line-height: 1.6;
