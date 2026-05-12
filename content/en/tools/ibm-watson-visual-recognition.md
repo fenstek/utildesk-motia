@@ -26,6 +26,10 @@ IBM Watson Visual Recognition is primarily aimed at businesses and developers wh
 
 Thanks to its scalable architecture, the service is suitable both for small projects and for large-scale enterprise deployments.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-visual-recognition-editorial.webp" alt="Illustration for IBM Watson Visual Recognition: image tiles pass through visual analysis and human review" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automatic image recognition:** Identification of objects, scenes, faces, and text in images

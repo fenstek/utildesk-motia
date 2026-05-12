@@ -35,6 +35,10 @@ In day-to-day work, Watson is strongest when requirements are clearly defined in
 
 Without these guardrails, enterprise AI quickly becomes an expensive experiment. With a clear architecture, Watson can instead help AI become part of the operational landscape rather than a foreign object.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-editorial.webp" alt="Illustration for IBM Watson: enterprise AI lab reviews data, models, and decisions" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - AI and NLP capabilities for enterprise applications.

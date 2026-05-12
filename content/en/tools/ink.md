@@ -25,6 +25,10 @@ Writing tools are useful when they provide raw material, variants, and structure
 
 For SEO editors, content marketing teams, small businesses, and agencies, Ink can be a real lever. The key is to attach it to a repeatable work moment rather than using it as a vague productivity promise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ink-editorial.webp" alt="Illustration for Ink: SEO content desk organizes drafts, search intent, and optimization signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - structure article drafts around search intent

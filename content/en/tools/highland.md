@@ -31,6 +31,10 @@ Highland is strongest when adoption is understood not as a tool switch, but as p
 - **Good fit:** for writers and small creative teams focused on text.
 - **Watch out for:** it does not replace the entire studio workflow for complex production planning.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/highland-editorial.webp" alt="Illustration for Highland: writing studio organizes scenes, drafts, and screenplay structure" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Automation of routine tasks and workflows

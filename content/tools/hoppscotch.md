@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Für Hoppscotch eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Hoppscotch enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hoppscotch-editorial.webp" alt="Illustration zu Hoppscotch: API-Anfragen laufen durch Testknoten, Antwortcontainer und Pruefpfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unterstützung mehrerer API-Protokolle:** REST, GraphQL, WebSocket, SSE und weitere.

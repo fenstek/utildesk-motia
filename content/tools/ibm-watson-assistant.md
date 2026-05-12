@@ -23,6 +23,10 @@ IBM Watson Assistant richtet sich an Unternehmen und Entwickler, die leistungsf�
 
 Die Plattform eignet sich sowohl für technische Nutzer mit Programmierkenntnissen als auch für Business-Anwender, die über eine grafische Benutzeroberfläche einfache Chatbots erstellen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-assistant-editorial.webp" alt="Illustration zu IBM Watson Assistant: Dialogkarte verbindet Intents, Kanaele und Support-Eskalation" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (NLP):** Versteht Benutzeranfragen in natürlicher Sprache und interpretiert Intentionen und Entitäten.

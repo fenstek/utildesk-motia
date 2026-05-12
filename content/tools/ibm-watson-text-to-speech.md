@@ -22,6 +22,10 @@ IBM Watson Text to Speech richtet sich an Unternehmen und Entwickler, die automa
 - Marketing- und Content-Teams, die Audioinhalte für verschiedene Kanäle generieren.
 - Unternehmen, die Prozesse durch Sprachautomatisierung effizienter gestalten wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-text-to-speech-editorial.webp" alt="Illustration zu IBM Watson Text to Speech: Dokumentseiten verwandeln sich in Sprachwellen und Audiopruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Stimmenvielfalt:** Auswahl aus zahlreichen Stimmen und Sprachen mit individuellen Anpassungsmöglichkeiten.

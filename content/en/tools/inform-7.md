@@ -20,6 +20,10 @@ Inform 7 is a unique development environment for creating interactive fiction ba
 
 Inform 7 is aimed primarily at writers, game developers, and hobbyists who want to create interactive text adventures or narrative games without needing deep programming knowledge. It is also interesting for educators who want to encourage creativity and logical thinking through interactive stories. Because it uses natural language as its programming interface, it is ideal for users who struggle with traditional programming but still want to build complex interactive worlds.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inform-7-editorial.webp" alt="Illustration for Inform 7: interactive fiction forms from room maps, rules, and narrative paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Natural language as a programming language:** Enables stories to be written in a clear, English-like syntax.

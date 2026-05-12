@@ -34,6 +34,10 @@ With IBM Watson Studio, I would distinguish early between the demo impression an
 - **Quality question:** which data platform, model approval process, and runtime environment will be connected.
 - **Risk:** may feel heavier for small experiments than notebook-only setups.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-studio-editorial.webp" alt="Illustration for IBM Watson Studio: data science studio with datasets, notebooks, and model approvals" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Data preparation and integration:** Tools for collecting, cleaning, and preparing data from various sources.

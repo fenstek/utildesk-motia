@@ -32,6 +32,10 @@ Im Alltag ist Hive dann wertvoll, wenn Aufgaben konkret und aktuell bleiben. Ein
 
 Teams sollten entscheiden, was in Hive entschieden wird und was nur kommuniziert wird. Sonst entstehen parallele Wahrheiten in Chat, E-Mail, Tabellen und Aufgabenkarte.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hive-editorial.webp" alt="Illustration zu Hive: Projektteam plant Aufgaben, Abhaengigkeiten und Uebergaben an einer Arbeitswand" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Projekt- und Aufgabenmanagement mit mehreren Ansichten.

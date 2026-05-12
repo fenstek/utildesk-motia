@@ -21,6 +21,10 @@ Schreibtools sind dann nützlich, wenn sie Rohmaterial, Varianten und Struktur l
 
 Für SEO-Redaktionen, Content-Marketing, kleine Unternehmen und Agenturen kann Ink ein echter Hebel sein. Entscheidend ist, dass der Einsatz nicht beliebig bleibt, sondern an einem wiederholbaren Arbeitsmoment hängt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ink-editorial.webp" alt="Illustration zu Ink: SEO-Content-Desk ordnet Entwuerfe, Suchintentionen und Optimierungssignale" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Artikelentwürfe suchorientiert strukturieren

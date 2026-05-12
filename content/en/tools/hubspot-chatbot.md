@@ -19,6 +19,10 @@ HubSpot Chatbot is an AI-powered tool for automating customer communication dire
 
 HubSpot Chatbot is especially suitable for small to medium-sized businesses that want to make customer communication more efficient without tying up manual resources all the time. Marketing and sales teams in particular benefit from automated lead capture and qualification. Customer service departments can also be relieved by handling frequently asked questions. Integration into the HubSpot ecosystem is ideal for users who already use other HubSpot products or prefer an all-in-one solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-chatbot-editorial.webp" alt="Illustration for HubSpot Chatbot: chatbot flows connect customer requests, contact cards, and support handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Automated real-time communication with website visitors

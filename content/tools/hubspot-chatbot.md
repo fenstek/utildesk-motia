@@ -16,6 +16,10 @@ HubSpot Chatbot ist ein KI-gestütztes Tool zur Automatisierung der Kundenkommun
 
 HubSpot Chatbot eignet sich vor allem für kleine bis mittelständische Unternehmen, die ihre Kundenkommunikation effizienter gestalten möchten, ohne ständig manuelle Ressourcen zu binden. Besonders profitieren Marketing- und Vertriebsteams, die Leads automatisiert erfassen und qualifizieren wollen. Auch Kundenservice-Abteilungen können durch häufig gestellte Fragen entlastet werden. Die Integration in das HubSpot Ökosystem ist ideal für Nutzer, die bereits andere HubSpot-Produkte einsetzen oder eine All-in-One-Lösung bevorzugen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-chatbot-editorial.webp" alt="Illustration zu HubSpot Chatbot: Chatbot-Flows verbinden Kundenanfragen, Kontaktkarten und Support-Handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisierte Echtzeit-Kommunikation mit Webseitenbesuchern

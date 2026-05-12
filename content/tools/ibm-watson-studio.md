@@ -27,6 +27,10 @@ Bei IBM Watson Studio würde ich früh zwischen Demo-Eindruck und Betriebsrealit
 - **Qualitätsfrage:** welche Datenplattform, Modellfreigabe und Betriebsumgebung angebunden werden.
 - **Risiko:** für kleine Experimente schwergewichtiger wirkt als Notebook-only-Setups.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-studio-editorial.webp" alt="Illustration zu IBM Watson Studio: Data-Science-Studio mit Datensaetzen, Notebooks und Modellfreigaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenvorbereitung und -integration:** Tools zum Sammeln, Bereinigen und Vorbereiten von Daten aus verschiedenen Quellen.

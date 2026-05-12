@@ -20,6 +20,10 @@ Datenwerkzeuge sind stark, wenn sie Flüsse sichtbar machen. Gefährlich werden 
 
 Hadoop MapReduce passt am ehesten zu Data Engineers, Plattformteams und Organisationen mit Legacy-Big-Data-Umgebungen, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hadoop-mapreduce-editorial.webp" alt="Illustration zu Hadoop MapReduce: verteilte Datenverarbeitung mit parallelen Worker-Knoten und Ergebnisstapeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - große Datenmengen verteilt verarbeiten

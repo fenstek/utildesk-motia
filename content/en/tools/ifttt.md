@@ -31,6 +31,10 @@ With IFTTT, I would distinguish early between the demo impression and operationa
 - **Quality question:** which triggers are reliable enough and what should happen when errors occur.
 - **Risk:** too little control and observability for business-critical processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ifttt-editorial.webp" alt="Illustration for IFTTT: triggers and actions connect apps, devices, and routines on an automation board" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Creation and management of applets (automation rules) with an intuitive drag-and-drop editor.

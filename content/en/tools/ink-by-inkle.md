@@ -22,6 +22,10 @@ Suitable for narrative games, interactive fiction, prototypes, dialogue systems,
 
 Ink by Inkle is most useful for teams and individuals that treat a narrative scripting tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ink-by-inkle-editorial.webp" alt="Illustration for Ink by Inkle: branching story paths, dialogue cards, and decision nodes" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Write branching dialogue

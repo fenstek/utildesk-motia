@@ -40,6 +40,10 @@ A useful pilot for Gumloop starts with a real weekly workflow with tasks, meetin
 - **Good start for Gumloop:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Gumloop:** The value becomes weak when rules, notifications, data care, and ownership are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gumloop-editorial.webp" alt="Illustration for Gumloop: no-code workflow with AI steps, approvals, and output checks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **No-code workflow builder:** Intuitive drag-and-drop creation of automations without any programming effort.

@@ -24,6 +24,10 @@ Data tools are strong when they make flows visible. They become dangerous when n
 
 Hadoop MapReduce fits data engineers, platform teams, and organizations with legacy big-data environments best when there is a concrete bottleneck to solve. The more clearly that bottleneck is described, the easier the tool is to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hadoop-mapreduce-editorial.webp" alt="Illustration for Hadoop MapReduce: distributed data processing with parallel worker nodes and result stacks" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - process large datasets in a distributed way

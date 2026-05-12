@@ -27,6 +27,10 @@ Highland gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozes
 - **Gute Voraussetzung:** für Autorinnen, Autoren und kleine Kreativteams mit Fokus auf Text.
 - **Aufpassen bei:** für komplexe Produktionsplanung nicht den gesamten Studio-Workflow ersetzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/highland-editorial.webp" alt="Illustration zu Highland: Schreibstudio ordnet Szenen, Entwuerfe und Drehbuchstruktur" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisierung von Routineaufgaben und Workflows

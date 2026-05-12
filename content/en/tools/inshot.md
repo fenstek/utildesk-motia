@@ -36,6 +36,10 @@ In everyday work, InShot wins through short paths. Put in the raw clip, remove t
 
 A better approach is a small brand standard: two fonts, one subtitle style, clear export formats, and a calm approach to transitions. Then mobile editing does not feel like a workaround, but like an intentional format.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inshot-editorial.webp" alt="Illustration for InShot: mobile video editing with vertical clips, music tracks, and creator exports" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Video editing, trimming, splitting, merging, and format changes.

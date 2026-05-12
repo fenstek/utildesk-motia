@@ -19,6 +19,10 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 For patent departments, R&D, legal, and competitive-intelligence teams, Innography is valuable when it creates a visible before-and-after difference in the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/innography-editorial.webp" alt="Illustration for Innography: patent and innovation analytics with technology maps and research paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - map patent landscapes

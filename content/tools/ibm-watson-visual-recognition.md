@@ -24,6 +24,10 @@ IBM Watson Visual Recognition richtet sich vor allem an Unternehmen und Entwickl
 
 Dank der skalierbaren Architektur eignet sich der Dienst sowohl für kleine Projekte als auch für umfangreiche Unternehmenseinsätze.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-visual-recognition-editorial.webp" alt="Illustration zu IBM Watson Visual Recognition: Bildkacheln laufen durch visuelle Analyse und menschliche Pruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Bilderkennung:** Identifikation von Objekten, Szenen, Gesichtern und Text in Bildern

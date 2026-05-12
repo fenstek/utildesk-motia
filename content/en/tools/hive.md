@@ -36,6 +36,10 @@ In daily work, Hive is valuable when tasks stay concrete and up to date. A platf
 
 Teams should decide what gets decided in Hive and what is only communicated there. Otherwise, parallel truths emerge in chat, email, spreadsheets, and task cards.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hive-editorial.webp" alt="Illustration for Hive: project team plans tasks, dependencies, and handoffs on a work wall" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Project and task management with multiple views.

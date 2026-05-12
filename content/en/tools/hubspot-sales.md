@@ -32,6 +32,10 @@ HubSpot Sales does not stand out because it offers as many options as possible, 
 - **Clarify first:** which fields, sequences, and deal stages are actually maintained.
 - **Do not underestimate:** without data hygiene, it quickly turns into a second inbox with a CRM label.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-sales-editorial.webp" alt="Illustration for HubSpot Sales: sales team manages outreach, deal stages, and follow-ups" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **CRM integration:** Centralized management of contacts, leads, and customer information.

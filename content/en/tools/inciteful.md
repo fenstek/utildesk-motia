@@ -24,6 +24,10 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 Inciteful fits researchers, students, and analysts exploring a field from one paper best when there is a concrete bottleneck to solve. The more clearly that bottleneck is described, the easier the tool is to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inciteful-editorial.webp" alt="Illustration for Inciteful: citation network connects sources, topic clusters, and research paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - discover similar papers and citation paths

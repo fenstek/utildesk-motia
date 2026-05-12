@@ -16,6 +16,10 @@ Groove ist eine KI-gestützte Helpdesk-Software, die Unternehmen dabei unterstü
 
 Groove richtet sich vor allem an kleine bis mittelständische Unternehmen, die einen zentralisierten und intelligenten Kundenservice aufbauen möchten. Besonders nützlich ist das Tool für Support-Teams, die viele Anfragen über verschiedene Kanäle (E-Mail, Chat, Social Media) erhalten und dabei Zeit sparen wollen. Auch Startups und Dienstleister, die ihre Produktivität steigern und Kundenanfragen schneller beantworten möchten, profitieren von Groove.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/groove-editorial.webp" alt="Illustration zu Groove: Support-Team sortiert Kundenanfragen, Tickets und Antwortwege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multichannel-Support:** Verwaltung von Kundenanfragen aus E-Mail, Chat, Social Media und anderen Kanälen an einem Ort.

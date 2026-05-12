@@ -33,6 +33,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - **Good starting point:** Keep the first Hatchful by Shopify trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Hatchful by Shopify disappoints when audiences, tracking, consent, and follow-up processes are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hatchful-by-shopify-editorial.webp" alt="Illustration for Hatchful by Shopify: small brand kit forms from color boards, symbol ideas, and shop materials" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Varied design templates:** Choose from numerous prebuilt logo styles suitable for different industries and target groups.
