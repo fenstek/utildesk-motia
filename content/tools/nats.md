@@ -16,6 +16,10 @@ NATS ist ein leichtgewichtiges, hochperformantes Messaging-System, das speziell 
 
 NATS richtet sich an Entwickler und Unternehmen, die eine schlanke und effiziente Messaging-Lösung benötigen, um Dienste und Anwendungen miteinander zu verbinden. Besonders geeignet ist NATS für Teams, die verteilte Systeme, Event-Streaming oder Echtzeitkommunikation in Cloud-Umgebungen aufbauen wollen. Durch seine einfache API und breite Unterstützung in verschiedenen Programmiersprachen eignet sich NATS sowohl für Startups als auch für große Unternehmen, die auf Open-Source-Technologien setzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nats-editorial.webp" alt="Illustration zu NATS: Nachrichtenpartikel laufen durch Pub-Sub-Knoten und verteilte Servicepfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Pub/Sub-Messaging:** Unterstützt Publisher-Subscriber-Modelle für asynchrone Kommunikation.

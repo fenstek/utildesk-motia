@@ -27,6 +27,10 @@ Mendeley gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozes
 - **Gute Voraussetzung:** für Studierende, Forschende und Teams mit gemeinsamen Bibliotheken.
 - **Aufpassen bei:** bei unsauber importierten Metadaten später Zitationsfehler verursacht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mendeley-editorial.webp" alt="Illustration zu Mendeley: PDFs, Quellenkarten und Zitierpfade werden zu einer Forschungsbibliothek geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Literaturverwaltung:** Einfache Organisation von PDFs und anderen Dokumenten in persönlichen Bibliotheken mit Tags und Notizen.

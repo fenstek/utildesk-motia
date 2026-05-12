@@ -21,6 +21,10 @@ Audio wirkt sofort ehrlich: Rauschen, Timing, Stimme und Rechte fallen schneller
 
 Besonders passend ist Murf für E-Learning, Marketing, Video-Teams, Produktdemos und Creator. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/murf-editorial.webp" alt="Illustration zu Murf: Skriptkarten, Wellenformen und Timing-Spuren werden zu Voiceover-Produktion verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Voiceover für Erklärvideos erzeugen

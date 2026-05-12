@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für MLJAR nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** MLJAR enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mljar-editorial.webp" alt="Illustration zu MLJAR: Datensaetze, Modellkandidaten und Pruefgates bilden eine AutoML-Pipeline" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisierte Datenvorverarbeitung inklusive Feature-Engineering und Datenbereinigung.

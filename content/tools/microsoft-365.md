@@ -16,6 +16,10 @@ Microsoft 365 ist eine umfassende Office-Suite, die produktivitätssteigernde An
 
 Microsoft 365 richtet sich an Einzelpersonen, kleine und mittlere Unternehmen sowie Großunternehmen, die eine zuverlässige und vielseitige Office-Lösung suchen. Besonders geeignet ist es für Teams, die kollaborativ an Dokumenten und Projekten arbeiten wollen, sowie für Nutzer, die von intelligenten Automatisierungen und cloudbasiertem Arbeiten profitieren möchten. Auch Bildungseinrichtungen und Organisationen mit hohem Bedarf an Kommunikation und Dokumentenmanagement finden hier passende Werkzeuge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-365-editorial.webp" alt="Illustration zu Microsoft 365: Dokumente, Kalender, E-Mail und Cloud-Dateien laufen in einem Arbeitsbereich zusammen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Office-Anwendungen:** Word, Excel, PowerPoint, Outlook, OneNote und mehr, stets aktuell und plattformübergreifend verfügbar.

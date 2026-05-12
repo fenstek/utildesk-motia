@@ -35,6 +35,10 @@ Ein belastbarer Pilot für Mendix beginnt mit einem realen Entwicklungsablauf vo
 - **Guter Start für Mendix:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Mendix:** Der Einsatz kippt in Zusatzarbeit, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mendix-editorial.webp" alt="Illustration zu Mendix: Prozessbausteine, Datenverbindungen und Deployment-Gates werden zu einer Low-Code-App zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle Modellierung von Anwendungen mit Drag-and-Drop-Elementen.

@@ -24,6 +24,10 @@ Audio is brutally honest: noise, timing, voice, and rights show up faster than o
 
 Murf is especially relevant for e-learning, marketing, video teams, product demos, and creators. The value shows up when it owns a clearly named task instead of becoming just another window beside the real process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/murf-editorial.webp" alt="Illustration for Murf: script cards, waveforms, and timing tracks connect into voiceover production" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - create voiceovers for explainer videos

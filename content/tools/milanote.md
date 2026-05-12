@@ -20,6 +20,10 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Milanote passt am ehesten zu Designer, Kreativteams, Strategen, Autoren und Agenturen, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/milanote-editorial.webp" alt="Illustration zu Milanote: Moodboard-Karten, Referenzen und Projektskizzen werden zu einem visuellen Plan geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Moodboards und Recherchematerial sammeln

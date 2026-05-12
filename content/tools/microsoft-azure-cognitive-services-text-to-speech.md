@@ -22,6 +22,10 @@ Dieser Dienst richtet sich vor allem an Entwickler, Unternehmen und Organisation
 - Entwickler von Barrierefreiheitslösungen, um Menschen mit Sehbehinderungen zu unterstützen.
 - Medien- und Content-Produzenten, die Audioinhalte effizient erstellen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cognitive-services-text-to-speech-editorial.webp" alt="Illustration zu Microsoft Azure Cognitive Services - Text to Speech: Dokumentseiten verwandeln sich ueber eine Cloud-Pipeline in Sprachwellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachsynthese:** Große Auswahl an Stimmen mit natürlicher Intonation und Betonung in vielen Sprachen und Dialekten.

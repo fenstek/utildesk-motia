@@ -20,6 +20,10 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Im Alltag wird Milestone Systems vor allem für Sicherheitsabteilungen, Facility Management, öffentliche Einrichtungen und Integratoren interessant. Die beste Wirkung entsteht, wenn das Ergebnis nicht bewundert, sondern direkt weiterverarbeitet werden kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/milestone-systems-editorial.webp" alt="Illustration zu Milestone Systems: Kameraknoten, Videokacheln und Standortsignale laufen in einer Sicherheitszentrale zusammen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Kameras und Videoarchive zentral verwalten

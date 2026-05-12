@@ -39,6 +39,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Keep the first MLJAR trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** MLJAR disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mljar-editorial.webp" alt="Illustration for MLJAR: datasets, model candidates, and validation gates form an AutoML pipeline" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Automated data preprocessing including feature engineering and data cleansing.

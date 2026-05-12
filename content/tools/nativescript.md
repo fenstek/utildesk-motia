@@ -36,6 +36,10 @@ NativeScript sollte zuerst in einem realen Entwicklungsablauf von Setup über Te
 - **Guter Start für NativeScript:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei NativeScript:** Der Einsatz kippt in Zusatzarbeit, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nativescript-editorial.webp" alt="Illustration zu NativeScript: gemeinsame Komponenten verzweigen in zwei mobile App-Ausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Entwicklung nativer iOS- und Android-Apps mit JavaScript, TypeScript oder Angular.

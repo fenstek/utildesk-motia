@@ -19,6 +19,10 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 For security departments, facility management, public institutions, and integrators, Milestone Systems becomes useful when the result is not just impressive, but can be moved directly into the next practical step.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/milestone-systems-editorial.webp" alt="Illustration for Milestone Systems: camera nodes, video tiles, and site signals converge in a security control center" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - manage cameras and video archives centrally

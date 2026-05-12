@@ -33,6 +33,10 @@ MXNet should first prove itself in a real development flow from setup through te
 - **Good start for MXNet:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with MXNet:** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mxnet-editorial.webp" alt="Illustration for MXNet: tensor blocks, model graphs, and training paths form a deep learning architecture" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Support for multiple programming languages, including Python, R, Scala, Julia, and C++

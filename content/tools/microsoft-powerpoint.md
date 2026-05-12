@@ -22,6 +22,10 @@ Microsoft PowerPoint richtet sich an Nutzer aus verschiedensten Bereichen, darun
 - Teams, die kollaborativ an Projekten arbeiten und dabei auf Cloud-gestützte Tools angewiesen sind.
 - Alle, die eine bewährte, weit verbreitete Software für Präsentationen suchen, die regelmäßig mit neuen Features aktualisiert wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-powerpoint-editorial.webp" alt="Illustration zu Microsoft PowerPoint: Folien, Diagramme und Erzaehlpfade werden zu einer Praesentation aufgebaut" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive Foliengestaltung:** Einfache Erstellung und Bearbeitung von Folien mit Text, Bildern, Grafiken, Videos und Animationen.

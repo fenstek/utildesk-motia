@@ -16,6 +16,10 @@ Microsoft Azure Computer Vision ist ein leistungsstarker KI-basierter Dienst, de
 
 Microsoft Azure Computer Vision richtet sich vor allem an Unternehmen und Entwickler, die Bild- und Videoanalyse automatisieren möchten. Es eignet sich für Branchen, die große Mengen visueller Daten verarbeiten, wie z.B. E-Commerce, Gesundheitswesen, Versicherungen, Fertigung oder Medien. Auch Startups und Forschungseinrichtungen, die KI-Funktionalitäten in ihre Produkte integrieren wollen, finden hier eine flexible Lösung. Durch die API-basierte Architektur ist das Tool für Nutzer mit Programmierkenntnissen besonders gut geeignet, während weniger technische Anwender von vorgefertigten Lösungen und Integrationen profitieren können.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-computer-vision-editorial.webp" alt="Illustration zu Microsoft Azure Computer Vision: Bildkacheln werden analysiert und in strukturierte visuelle Signale uebersetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Bildanalyse**: Identifikation von Objekten, Kategorien und Marken in Bildern.

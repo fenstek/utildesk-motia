@@ -26,6 +26,10 @@ Memrise is ideal for anyone who wants to learn a new language, regardless of the
 - People who want to make efficient use of their learning time with the help of AI-powered learning.
 - Teachers and educational institutions looking for supplementary materials for language instruction.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/memrise-editorial.webp" alt="Illustration for Memrise: vocabulary cards move through review cycles and language practice" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **AI-powered personalization:** Memrise adapts exercises and reviews individually to the learner's progress and needs.

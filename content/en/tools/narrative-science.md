@@ -33,6 +33,10 @@ Narrative Science should not be evaluated in isolation. What matters is the plac
 - **Measure:** which metrics need to be explained, and which interpretation remains human.
 - **Limit:** without a clear data logic, it produces interchangeable report sentences.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/narrative-science-editorial.webp" alt="Illustration for Narrative Science: data cards and charts turn into explanatory report narratives" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Automatic text generation from structured data.

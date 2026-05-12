@@ -40,6 +40,10 @@ A useful pilot for Mattermost starts with a real contact case with intake, prior
 - **Good start for Mattermost:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Mattermost:** Even a good interface helps only partly when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mattermost-editorial.webp" alt="Illustration for Mattermost: team channels, server areas, and notifications converge into secure collaboration" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Team chat and messaging:** Real-time communication with channels, direct messages, and threads.

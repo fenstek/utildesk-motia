@@ -24,6 +24,10 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 In practice, Microsoft To Do is aimed mainly at individuals, small teams, and Microsoft 365 users with lightweight task needs. It works best when ownership, review, and output format are clear before the tool enters the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-to-do-editorial.webp" alt="Illustration for Microsoft To Do: task lists, calendar items, and priorities are organized into daily plans" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - separate personal and work to-dos

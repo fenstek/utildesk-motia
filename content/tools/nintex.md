@@ -18,6 +18,10 @@ Der Wert liegt in der Verbindung von Fachprozess und Automatisierung. Nintex ist
 
 Geeignet ist Nintex für Fachbereiche, Operations, IT, Prozessmanagement, HR, Finance und Enterprise-Teams mit vielen Freigaben oder Formularprozessen. Für kleine Einzelautomationen kann ein leichteres No-Code-Tool schneller sein.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nintex-editorial.webp" alt="Illustration zu Nintex: Formulare, Freigaben und Dokumente laufen durch einen automatisierten Workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Genehmigungsprozesse für Einkauf, HR oder Finance digitalisieren.

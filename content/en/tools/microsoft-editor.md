@@ -35,6 +35,10 @@ A useful pilot for Microsoft Editor starts with a real writing assignment with b
 - **Good start for Microsoft Editor:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Microsoft Editor:** The value becomes weak when sources, tone, review rules, language variants, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-editor-editorial.webp" alt="Illustration for Microsoft Editor: draft documents are improved with proofing signals, style marks, and clarity markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Grammar and spelling checks:** Automatic detection and correction of errors in multiple languages.

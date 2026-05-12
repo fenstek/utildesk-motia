@@ -26,6 +26,10 @@ Microsoft PowerPoint is aimed at users from a wide range of fields, including:
 - Teams working collaboratively on projects and relying on cloud-based tools.
 - Anyone looking for a proven, widely used presentation software that is regularly updated with new features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-powerpoint-editorial.webp" alt="Illustration for Microsoft PowerPoint: slides, charts, and story paths are assembled into a presentation" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intuitive slide design:** Easy creation and editing of slides with text, images, charts, videos, and animations.

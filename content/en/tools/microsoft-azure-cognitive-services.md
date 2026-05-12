@@ -24,6 +24,10 @@ Microsoft Azure Cognitive Services is aimed at companies, developers, and organi
 - Industries such as healthcare, retail, finance, and education that benefit from automated image recognition, speech recognition, or translations.
 - Startups and mid-sized businesses looking for scalable AI solutions with flexible pricing models.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cognitive-services-editorial.webp" alt="Illustration for Microsoft Azure Cognitive Services: language, vision, and decision services are connected as cloud AI modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Speech recognition and speech synthesis:** Converting speech to text and vice versa, including support for multiple languages and dialects.

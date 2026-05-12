@@ -41,6 +41,10 @@ A useful pilot for Mate Translate starts with a real writing assignment with bri
 - **Good start for Mate Translate:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Mate Translate:** Even a good interface helps only partly when sources, tone, review rules, language variants, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mate-translate-editorial.webp" alt="Illustration for Mate Translate: language cards, documents, and meaning paths form a translation workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Multilingual translations:** Support for over 100 languages for texts, websites, and documents.

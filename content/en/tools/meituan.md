@@ -18,6 +18,10 @@ Meituan is a versatile AI-powered platform that focuses in particular on mobile 
 
 Meituan is aimed primarily at users who want to improve their productivity on mobile devices, as well as small and medium-sized businesses looking for digital tools to organize and optimize workflows. Private individuals also benefit from its ease of use and practical AI features, which can automate and simplify everyday tasks. Depending on their needs, Meituan can be used for both personal and business purposes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meituan-editorial.webp" alt="Illustration for Meituan: local service requests move through routes, bookings, and operations stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Intelligent task management:** Automated planning and prioritization of to-dos.

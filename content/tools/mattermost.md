@@ -36,6 +36,10 @@ Ein belastbarer Pilot für Mattermost beginnt mit einem echten Kontaktfall mit E
 - **Guter Start für Mattermost:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Mattermost:** Ohne klare Regeln wird der Nutzen schwach, sobald Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mattermost-editorial.webp" alt="Illustration zu Mattermost: Teamkanaele, Serverbereiche und Benachrichtigungen laufen in einer sicheren Zusammenarbeit zusammen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Team-Chat und Messaging:** Echtzeitkommunikation mit Kanälen, Direktnachrichten und Threads.

@@ -22,6 +22,10 @@ Memrise ist ideal für alle, die eine neue Sprache lernen möchten, unabhängig 
 - Menschen, die mit Hilfe von KI-gestütztem Lernen ihre Lernzeit effizient nutzen möchten.
 - Lehrer und Bildungseinrichtungen, die ergänzende Materialien für den Sprachunterricht suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/memrise-editorial.webp" alt="Illustration zu Memrise: Vokabelkarten wandern durch Wiederholungszyklen und Sprachuebung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Personalisierung:** Memrise passt die Übungen und Wiederholungen individuell an den Lernfortschritt und die Bedürfnisse des Nutzers an.

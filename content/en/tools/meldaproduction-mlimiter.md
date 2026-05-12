@@ -34,6 +34,10 @@ A useful pilot for MeldaProduction MLimiter starts with a real recording with so
 - **Good start for MeldaProduction MLimiter:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with MeldaProduction MLimiter:** The rollout turns into extra coordination when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meldaproduction-mlimiter-editorial.webp" alt="Illustration for MeldaProduction MLimiter: audio waves are controlled in mastering and exported cleanly" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Precise loudness limiting without audible distortion

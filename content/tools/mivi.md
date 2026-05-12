@@ -15,6 +15,10 @@ Mivi ist ein KI-nahes Video-Tool für schnelle Clipproduktion und einfache visue
 
 Mivi passt zu Creators, Social-Media-Teams, kleinen Unternehmen und Marketingrollen, die schnell Videoentwürfe erstellen möchten. Für aufwendige Postproduktion, genaue Markenanimation oder lange Formate braucht es stärkere Video- oder Motion-Design-Tools.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mivi-editorial.webp" alt="Illustration zu Mivi: Medienfragmente, Clips und Exportmodule werden zu kurzen Videovarianten montiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Kurze Social-Clips aus Ideen, Texten oder Bildmaterial erstellen.
