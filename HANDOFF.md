@@ -226,3 +226,12 @@
 3. выполнить `python scripts/import_ratgeber_package.py --package-dir ...`
 4. проверить diff только по `content/ratgeber` и `content/images/ratgeber`
 5. коммитить и публиковать отдельно от `tools`
+
+
+## 2026-05-12 Video AI tools / Ratgeber publication handoff
+
+- Published Vyrill, Naoma AI, and Hera as full DE/EN tool cards from the multimodal agents Ratgeber mentions.
+- Sheet rows are released: `vyrill` row 1646 DONE, `naoma-ai` row 1647 DONE, `hera` row 1648 DONE.
+- Production content commit is `8bc2854`; live pages all returned 200 after a direct Wrangler Pages deployment.
+- Direct deploy was needed because GitHub push did not make the new pages live during the polling window. Use local `C:\projects\utildesk-motia\.env` for `CLOUDFLARE_API_TOKEN`; never print or commit its value.
+- Hub/Ubuntu sync is the remaining mechanical follow-up: Tailscale SSH to `jgdus@100.98.97.98` requested an additional browser check and blocked `git push hub`. After re-auth, run `powershell -NoProfile -ExecutionPolicy Bypass -File C:\projects\utildesk-motia-production-sync\scripts\sync_after_remote_deploy.ps1 -Repo C:\projects\utildesk-motia -SyncHub`.

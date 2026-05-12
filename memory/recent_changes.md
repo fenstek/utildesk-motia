@@ -254,3 +254,29 @@ _Last updated: 2026-05-12_
 - Selection: remaining non-illustrated tools with non-zero DE/EN popularity first, then high-intent catalogue tools without prior artwork.
 - Slugs: `adobe-illustrator`, `10to8`, `adobe-premiere-pro`, `amazon-codewhisperer`, `copilot`, `openhands`, `speechmatics`, `storymapjs`, `talend-data-fabric`, `talon`, `theia`, `uipath`, `whisper`, `writesonic`, `youcam-makeup`, `affinity-designer`, `inkscape`, `adobe-express`, `miro`, `trello-mit-butler`, `airtable`, `tableau`, `semrush`, `postman`, `spacy`, `tensorflow`, `zotero`, `zoom`, `webflow`, `synthesia`.
 - Recorded the batch in `docs/04_operations/tool_card_illustration_registry.json` so future illustration passes skip these tools.
+
+
+## 2026-05-12 - Video AI tool cards published from Ratgeber mentions
+
+### Done
+- Added and manually edited German and English tool cards for `vyrill`, `naoma-ai`, and `hera` after they were mentioned in the multimodal agents Ratgeber article but were missing from the catalogue.
+- Added the three tools to the source Sheet rows 1646-1648 and marked them `DONE` after live production verification.
+- Linked the existing German and English Ratgeber article mentions to the new tool cards and added the tools to article `relatedTools`.
+- Published directly to Cloudflare Pages with Wrangler because GitHub push alone did not make the new pages live within the wait window.
+
+### Commit / deploy
+- Content commit: `8bc2854` (`content: add Vyrill Naoma AI and Hera tool cards`).
+- Direct Cloudflare Pages deployment URL: `https://190b28d4.utildesk-motia.pages.dev`.
+- Live verification passed for:
+  - `https://tools.utildesk.de/tools/vyrill/`
+  - `https://tools.utildesk.de/en/tools/vyrill/`
+  - `https://tools.utildesk.de/tools/naoma-ai/`
+  - `https://tools.utildesk.de/en/tools/naoma-ai/`
+  - `https://tools.utildesk.de/tools/hera/`
+  - `https://tools.utildesk.de/en/tools/hera/`
+  - `https://tools.utildesk.de/ratgeber/multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein/`
+- IndexNow submission succeeded for 9 derived URLs; both `api.indexnow.org` and Bing returned `200`.
+
+### Operational note
+- Windows `origin/master` and `origin/autobot` reached `8bc2854`; `C:\projects\utildesk-motia-production-sync` and VPS `/opt/utildesk-motia` were reset/synced to the same commit.
+- Hub/Ubuntu mirror push to `jgdus@100.98.97.98` was blocked by a Tailscale SSH browser check, so `hub/master` and `hub/autobot` were still at `ce9109e` at the time of this note. Once Tailscale SSH is re-authorized, run the normal Windows sync with `-SyncHub` to mirror the current production refs to hub/Ubuntu.
