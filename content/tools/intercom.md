@@ -21,6 +21,10 @@ Intercom eignet sich für SaaS-, App- und Online-Businesses, die Support, In-App
 
 Für sehr kleine Projekte kann Intercom schnell zu teuer und zu komplex werden. Der Nutzen entsteht erst, wenn Chat, Wissensbasis, Routing, Bots und Teamprozesse bewusst zusammenspielen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intercom-editorial.webp" alt="Illustration zu Intercom: Kundenchat, Help Center und Support-Handoffs in einem Service-Hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Website- und In-App-Chat anbieten

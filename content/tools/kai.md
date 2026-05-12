@@ -16,6 +16,10 @@ KAI ist ein moderner KI-gestützter Assistent, der Unternehmen und Einzelpersone
 
 KAI richtet sich an eine breite Zielgruppe: Unternehmen, die ihre Prozesse durch Künstliche Intelligenz effizienter gestalten möchten, Marketing-Teams, die personalisierte Inhalte erzeugen wollen, Entwickler, die KI-Funktionalitäten in ihre Produkte integrieren möchten, sowie Einzelpersonen, die von automatisierten Lösungen profitieren wollen. Besonders geeignet ist KAI für Nutzer, die eine flexible und skalierbare Lösung suchen, die sich an unterschiedliche Anforderungen anpassen lässt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kai-editorial.webp" alt="Illustration zu KAI: Conversational-AI-Team verbindet Chatkanaele, Datenkarten und Antwortpruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Textgenerierung und -optimierung:** Erstellung von Texten für Marketing, Social Media, Blogs und mehr.

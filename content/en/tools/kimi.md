@@ -24,6 +24,10 @@ With assistants, the demo prompt matters less than whether answers, sources, app
 
 For knowledge workers, research teams, students, and users with long material, Kimi is valuable when it creates a visible before-and-after difference in the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kimi-editorial.webp" alt="Illustration for Kimi: AI assistant organizes long documents, research paths, and context cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - work through long documents and source packs

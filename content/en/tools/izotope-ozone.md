@@ -35,6 +35,10 @@ A useful pilot for iZotope Ozone starts with a real recording with source materi
 - **Good start for iZotope Ozone:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with iZotope Ozone:** The rollout turns into extra coordination when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/izotope-ozone-editorial.webp" alt="Illustration for iZotope Ozone: mastering studio balances frequencies, levels, and final mix" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Mastering Assistant**: Automatic track analysis and suggestions for EQ, compression, and loudness.

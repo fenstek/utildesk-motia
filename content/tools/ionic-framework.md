@@ -35,6 +35,10 @@ Ionic Framework sollte zuerst in einem realen Entwicklungsablauf von Setup über
 - **Guter Start für Ionic Framework:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Ionic Framework:** Kritisch wird es, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ionic-framework-editorial.webp" alt="Illustration zu Ionic Framework: Cross-Platform-App entsteht aus Komponenten, Screens und Testgeraeten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cross-Plattform-Entwicklung:** Ein Codebase für iOS, Android und Web.

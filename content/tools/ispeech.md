@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitu
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor iSpeech breiter ausgerollt wird.
 - **Häufiger Stolperstein:** iSpeech enttäuscht, wenn Ausgangsmaterial, Rechte, Zielplattformen und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ispeech-editorial.webp" alt="Illustration zu iSpeech: Sprachdienste verbinden Mikrofon, Textkarten und Audiowellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Sprache (TTS):** Umwandlung von Text in natürlich klingende Sprache mit verschiedenen Stimmen und Sprachen.

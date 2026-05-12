@@ -23,6 +23,10 @@ KineMaster passt zu Creators, Lehrenden, kleinen Marketingteams und mobilen Vide
 - Schnelle Kampagnenvarianten ohne Desktop-Setup produzieren.
 - Mobile Videobearbeitung als Routine im Creator-Alltag nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kinemaster-editorial.webp" alt="Illustration zu KineMaster: mobiler Videoschnitt mit Ebenen, Musikspuren und Exportkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Mehrspur- und Ebenenbearbeitung im mobilen Kontext.

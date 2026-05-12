@@ -32,6 +32,10 @@ Im Alltag lohnt Kive, wenn Assets beim Speichern bereits etwas Kontext bekommen.
 
 Teams sollten nicht alles sammeln, was hübsch ist. Besser sind kuratierte Boards mit klarer Absicht: Tonalität, Licht, Komposition, Zielgruppe, No-Gos. So wird Recherche zur Entscheidungshilfe statt zur endlosen Galerie.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kive-editorial.webp" alt="Illustration zu Kive: Kreativteam sortiert Referenzen, Moodboards und Asset-Sammlungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Sammlung und Organisation visueller Referenzen und Assets.

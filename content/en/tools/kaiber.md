@@ -23,6 +23,10 @@ With video tools, the workflow decides: recording, editing, audio, approval, and
 
 Kaiber makes sense for musicians, creators, visual artists, and campaign teams seeking an experimental look when it stabilizes part of the process: less searching, less manual repetition, fewer unclear handoffs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kaiber-editorial.webp" alt="Illustration for Kaiber: AI video lab turns music, scenes, and motion paths into clips" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - generate music visuals and short clips

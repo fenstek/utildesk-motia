@@ -32,6 +32,10 @@ Kibana is convincing not because it offers as many options as possible, but when
 - **Clarify first:** which events are actually decision-relevant and who maintains the dashboards.
 - **Do not underestimate:** without clean index models, it quickly leads to overloaded dashboards.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kibana-editorial.webp" alt="Illustration for Kibana: observability room visualizes logs, metrics, and search signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Interactive dashboards:** Creation and customization of dashboards for visualizing data in various chart types.

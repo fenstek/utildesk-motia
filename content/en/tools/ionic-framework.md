@@ -55,6 +55,10 @@ Ionic Framework should first prove itself in a real development flow from setup 
 - **Quality control in Ionic Framework:** The team needs a simple way to review defect rate, review effort, speed, maintainability, and reproducibility after use.
 - **Handoff with Ionic Framework:** Results, open questions, and decisions should be documented so other roles can continue the work later.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ionic-framework-editorial.webp" alt="Illustration for Ionic Framework: cross-platform app forms from components, screens, and test devices" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and Cons
 
 ### Pros

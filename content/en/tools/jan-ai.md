@@ -27,6 +27,10 @@ Jan is aimed at companies and individuals who want to integrate AI technologies 
 
 Depending on the use case, Jan can be used flexibly, both for simple tasks and for complex projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jan-ai-editorial.webp" alt="Illustration for Jan: local AI workspace organizes models, data cards, and private prompts" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Automated data analysis and pattern recognition

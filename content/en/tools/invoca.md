@@ -50,6 +50,10 @@ Invoca should first prove itself in a limited data set with a clear source, defi
 - **Quality control in Invoca:** The team needs a simple way to review data quality, runtime, maintainability, result stability, and acceptance of the analysis after use.
 - **Handoff with Invoca:** Results, open questions, and decisions should be documented so other roles can continue the work later.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/invoca-editorial.webp" alt="Illustration for Invoca: call waves become campaign signals, attribution, and sales handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Pros and Cons
 
 ### Pros

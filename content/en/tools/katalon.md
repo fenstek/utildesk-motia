@@ -41,6 +41,10 @@ A useful pilot for Katalon starts with a real development flow from setup throug
 - **Good start for Katalon:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Katalon:** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/katalon-editorial.webp" alt="Illustration for Katalon: test automation runs web and app scenarios through check gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Test automation for web, API, mobile, and desktop:** Support for different platforms and technologies in a unified environment.

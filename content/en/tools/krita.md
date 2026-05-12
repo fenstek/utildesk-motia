@@ -24,6 +24,10 @@ Creative tools save time when they make material malleable. They hurt when every
 
 Krita is especially relevant for illustrators, learners, independent artists, and teams that prefer open-source tools. The value shows up when it owns a clearly named task instead of becoming just another window beside the real process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/krita-editorial.webp" alt="Illustration for Krita: digital painting studio with brushes, layers, and comic drafts" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - paint digital illustrations and sketches

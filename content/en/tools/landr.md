@@ -25,6 +25,10 @@ Audio is brutally honest: noise, timing, voice, and rights show up faster than o
 
 For musicians, podcasters, beatmakers, and small labels preparing releases pragmatically, LANDR can be a real lever. The key is to attach it to a repeatable work moment rather than using it as a vague productivity promise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/landr-editorial.webp" alt="Illustration for LANDR: music studio masters tracks, reviews levels, and plans distribution" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - master demos or singles quickly

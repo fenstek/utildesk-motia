@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Kafka Streams beginnt mit einem begrenzten Datensatz 
 - **Guter Start für Kafka Streams:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Kafka Streams:** Kritisch wird es, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kafka-streams-editorial.webp" alt="Illustration zu Kafka Streams: Ereignisstroeme laufen durch Verarbeitungsknoten und Zustandsfenster" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Datenstromverarbeitung:** Verarbeitung von Ereignissen mit geringer Latenz direkt aus Kafka-Topics.

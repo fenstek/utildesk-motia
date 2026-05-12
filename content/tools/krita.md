@@ -20,6 +20,10 @@ Krita muss in einem echten Beispiel zeigen, ob Open-Source-Malsoftware für Illu
 
 Besonders passend ist Krita für Illustratoren, Lernende, freie Künstler und Teams mit Open-Source-Anspruch. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/krita-editorial.webp" alt="Illustration zu Krita: digitales Malatelier mit Pinseln, Ebenen und Comic-Entwuerfen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - digitale Illustrationen und Skizzen malen

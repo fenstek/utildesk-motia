@@ -20,6 +20,10 @@ KineMaster is a powerful mobile video editing app designed specifically for smar
 
 KineMaster is aimed at a broad audience: from social media influencers, YouTubers, and marketing professionals to students and anyone who wants to edit videos quickly and easily on mobile devices. The app is especially well suited for users looking for a combination of ease of use and extensive editing options without needing a desktop computer. KineMaster is also a practical solution for creative personal projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kinemaster-editorial.webp" alt="Illustration for KineMaster: mobile video editing with layers, music tracks, and export cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Multi-track video editing with multiple video and audio layers

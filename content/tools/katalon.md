@@ -38,6 +38,10 @@ Ein belastbarer Pilot für Katalon beginnt mit einem realen Entwicklungsablauf v
 - **Guter Start für Katalon:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Katalon:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/katalon-editorial.webp" alt="Illustration zu Katalon: Testautomation laesst Web- und App-Szenarien durch Pruefgates laufen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Testautomatisierung für Web, API, Mobile und Desktop:** Unterstützung verschiedener Plattformen und Technologien in einer einheitlichen Umgebung.

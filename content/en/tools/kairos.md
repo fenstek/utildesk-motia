@@ -21,6 +21,10 @@ Kairos is an advanced facial recognition API that gives businesses and developer
 
 Kairos is aimed at companies and developers who want to integrate facial recognition technology into their applications or systems. It is especially well suited for industries such as security, retail, financial services, and smart home, where biometric authentication or user analysis is needed. Developers of mobile apps or web services also benefit from the easy-to-use API, which allows for quick implementation. From small startups to large enterprises, users can benefit from Kairos' scalable solutions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kairos-editorial.webp" alt="Illustration for Kairos: visual recognition checks image tiles with privacy and review gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Face recognition and verification:** Identify people by matching them against stored faces.

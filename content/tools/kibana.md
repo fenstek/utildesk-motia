@@ -27,6 +27,10 @@ Kibana überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - **Vorher klären:** welche Events wirklich entscheidungsrelevant sind und wer Dashboards pflegt.
 - **Nicht unterschätzen:** ohne saubere Index-Modelle schnell zu überladenen Dashboards führt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kibana-editorial.webp" alt="Illustration zu Kibana: Observability-Raum visualisiert Logs, Metriken und Suchsignale" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Dashboards:** Erstellung und Anpassung von Dashboards zur Visualisierung von Daten in verschiedenen Diagrammtypen.

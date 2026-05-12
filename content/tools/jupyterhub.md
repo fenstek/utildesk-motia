@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für JupyterHub nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** JupyterHub enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jupyterhub-editorial.webp" alt="Illustration zu JupyterHub: gemeinsamer Notebook-Hub verbindet Experimente, Daten und Rechenressourcen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Zentralisierte Benutzerverwaltung mit Authentifizierung und Zugriffssteuerung

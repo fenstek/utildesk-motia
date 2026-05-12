@@ -36,6 +36,10 @@ In day-to-day work, the quality of the tickets decides. A good ticket answers wh
 
 Jira is especially valuable when teams regularly clean up: remove old fields, simplify statuses, review automations, and treat dashboards as more than wallpaper. Less configuration is often more control.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jira-editorial.webp" alt="Illustration for Jira: product team plans issues, sprint tasks, and development handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Backlogs, epics, issues, boards, and releases for agile or hybrid ways of working.

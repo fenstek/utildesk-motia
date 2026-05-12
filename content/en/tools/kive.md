@@ -35,6 +35,10 @@ In day-to-day work, Kive pays off when assets already receive some context at th
 
 Teams should not collect everything that looks pretty. Curated boards with a clear intention are better: tone, lighting, composition, target audience, no-gos. In this way, research becomes a decision aid instead of an endless gallery.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kive-editorial.webp" alt="Illustration for Kive: creative team sorts references, mood boards, and asset collections" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Collect and organize visual references and assets.

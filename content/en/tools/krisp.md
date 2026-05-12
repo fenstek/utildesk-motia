@@ -35,6 +35,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Krisp.
 - **Common pitfall:** Krisp disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/krisp-editorial.webp" alt="Illustration for Krisp: meeting audio is separated from background noise and cleaned" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Real-time noise cancellation:** Automatically filters out background noise during calls or recordings.

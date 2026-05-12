@@ -36,6 +36,10 @@ In practice, Ionic works well when the team takes mobile UX seriously and does n
 
 Early testing on real devices is especially important. The browser is convenient, but battery life, keyboard behavior, and native permissions only reveal their quirks on a smartphone.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ionic-editorial.webp" alt="Illustration for Ionic: mobile app blocks connect web components, devices, and build paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - UI components for mobile and responsive interfaces.

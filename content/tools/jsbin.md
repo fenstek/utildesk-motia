@@ -23,6 +23,10 @@ JSBin passt zu Webentwicklern, Lernenden, Lehrenden und Supportfällen, in denen
 - Snippets ausprobieren, bevor sie in ein Projekt wandern.
 - Antworten in Foren oder Supportfällen verständlicher machen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jsbin-editorial.webp" alt="Illustration zu JSBin: Web-Prototypen werden aus abstrakten HTML-, Stil- und Script-Bloecken getestet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Browserbasierte Editorflächen für HTML, CSS und JavaScript.

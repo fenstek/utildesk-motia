@@ -34,6 +34,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Krisp breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Krisp enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/krisp-editorial.webp" alt="Illustration zu Krisp: Meeting-Audio wird von Stoergeraeuschen getrennt und sauber ausgegeben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Geräuschunterdrückung:** Filtert Hintergrundgeräusche während Anrufen oder Aufnahmen automatisch heraus.

@@ -31,6 +31,10 @@ InVideo becomes more valuable when the rollout is understood not as a tool switc
 - **Good fit:** for small marketing teams, creators, and campaigns under high output pressure.
 - **Watch out for:** quickly looking like generic template marketing without its own pacing and structure.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/invideo-editorial.webp" alt="Illustration for InVideo: creator studio builds social videos from storyboards, scenes, and audio tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Template library:** Access to thousands of customizable video templates for different occasions and industries.

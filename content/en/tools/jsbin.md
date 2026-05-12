@@ -27,6 +27,10 @@ JSBin is aimed at web developers, frontend designers, and anyone who wants to tr
 
 Because it is easy to use and allows code to run directly in the browser, JSBin is also suitable for beginners learning HTML, CSS, and JavaScript.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jsbin-editorial.webp" alt="Illustration for JSBin: web prototypes are tested from abstract HTML, style, and script blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Live editor for HTML, CSS, and JavaScript with instant preview.

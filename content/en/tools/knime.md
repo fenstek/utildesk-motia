@@ -20,6 +20,10 @@ KNIME is a powerful open-source platform for data analysis, reporting, and integ
 
 KNIME is aimed at data scientists, analysts, business intelligence experts, and developers who want to support data-driven decisions. The platform is especially suitable for companies and individuals looking for a flexible, scalable solution for data science, ETL processes, and analytics, regardless of industry. Users without strong programming knowledge also benefit from its intuitive, visual workflow development.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/knime-editorial.webp" alt="Illustration for KNIME: data nodes connect ETL steps, analytics, and model review" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual workflow creation for data integration and analysis  
