@@ -39,6 +39,10 @@ A good test case for Mendix is a real development flow from setup through test d
 - **Good start for Mendix:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Mendix:** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mendix-editorial.webp" alt="Illustration for Mendix: process blocks, data connectors, and deployment gates assemble into a low-code app" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Visual application modeling with drag-and-drop elements.

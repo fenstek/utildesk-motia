@@ -20,6 +20,10 @@ Microsoft 365 is a comprehensive office suite that combines productivity apps wi
 
 Microsoft 365 is aimed at individuals, small and medium-sized businesses, and large enterprises looking for a reliable and versatile office solution. It is especially well suited for teams that want to collaborate on documents and projects, as well as for users who want to benefit from smart automation and cloud-based work. Educational institutions and organizations with a high need for communication and document management will also find suitable tools here.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-365-editorial.webp" alt="Illustration for Microsoft 365: documents, calendars, email, and cloud files converge in one workspace" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Office applications:** Word, Excel, PowerPoint, Outlook, OneNote, and more, always up to date and available across platforms.

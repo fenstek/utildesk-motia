@@ -21,6 +21,10 @@ NATS is a lightweight, high-performance messaging system for distributed applica
 
 NATS is a good fit for developers and platform teams building distributed systems that need simple, fast, and reliable messaging. It is often used in microservices, IoT, edge systems, internal platforms, and event-driven architectures.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nats-editorial.webp" alt="Illustration for NATS: message particles move through pub-sub nodes and distributed service paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Publish-subscribe and request-reply messaging.

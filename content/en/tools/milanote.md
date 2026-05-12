@@ -25,6 +25,10 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 Milanote fits designers, creative teams, strategists, writers, and agencies best when there is a concrete bottleneck to solve. The more clearly that bottleneck is described, the easier the tool is to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/milanote-editorial.webp" alt="Illustration for Milanote: moodboard cards, references, and project sketches are organized into a visual plan" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - collect moodboards and research material

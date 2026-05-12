@@ -38,6 +38,10 @@ Als Prüfstück für Mate Translate eignet sich einem echten Textauftrag mit Bri
 - **Guter Start für Mate Translate:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Mate Translate:** Ohne klare Regeln wird der Nutzen schwach, sobald Quellen, Tonalität, Review-Regeln, Sprachvarianten und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mate-translate-editorial.webp" alt="Illustration zu Mate Translate: Sprachkarten, Dokumente und Bedeutungswege werden zu einem Uebersetzungsfluss verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mehrsprachige Übersetzungen:** Unterstützung von über 100 Sprachen für Texte, Webseiten und Dokumente.

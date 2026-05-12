@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Für Mimic eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Mimic enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mimic-editorial.webp" alt="Illustration zu Mimic: Stimmwellen werden analysiert und zu kontrollierten synthetischen Varianten geformt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Realistische Sprachsynthese mit natürlicher Betonung und Intonation.

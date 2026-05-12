@@ -30,6 +30,10 @@ MeldaProduction MLimiter sollte zuerst in einer echten Aufnahme mit Rohmaterial,
 - **Guter Start für MeldaProduction MLimiter:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei MeldaProduction MLimiter:** Der Einsatz kippt in Zusatzarbeit, wenn Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meldaproduction-mlimiter-editorial.webp" alt="Illustration zu MeldaProduction MLimiter: Audiowellen werden im Mastering kontrolliert begrenzt und sauber ausgegeben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Präzise Lautstärkebegrenzung ohne hörbare Verzerrungen

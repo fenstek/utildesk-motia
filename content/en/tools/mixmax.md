@@ -32,6 +32,10 @@ Mixmax is convincing not because it offers as many options as possible, but when
 - **Clarify first:** which sequences remain personalized and how opt-outs are respected.
 - **Do not underestimate:** unpersonalized templates quickly optimize response rates instead of relationships.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mixmax-editorial.webp" alt="Illustration for Mixmax: email cards, meetings, and follow-up loops organize the sales workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email tracking:** Track when and how often emails are opened or links are clicked.

@@ -19,6 +19,10 @@ Microsoft Azure Computer Vision is a powerful AI-based service that enables deve
 
 Microsoft Azure Computer Vision is aimed primarily at businesses and developers who want to automate image and video analysis. It is suitable for industries that process large volumes of visual data, such as e-commerce, healthcare, insurance, manufacturing, or media. Startups and research institutions that want to integrate AI capabilities into their products will also find a flexible solution here. Thanks to its API-based architecture, the tool is particularly well suited to users with programming knowledge, while less technical users can benefit from ready-made solutions and integrations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-computer-vision-editorial.webp" alt="Illustration for Microsoft Azure Computer Vision: image tiles are analyzed and translated into structured visual signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Image analysis**: Identification of objects, categories, and brands in images.

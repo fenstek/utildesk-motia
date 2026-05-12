@@ -29,6 +29,10 @@ Narrative Science sollte nicht isoliert bewertet werden. Wichtig ist die Stelle 
 - **Messpunkt:** welche Kennzahlen erklärt werden müssen und welche Interpretation menschlich bleibt.
 - **Grenze:** ohne klare Datenlogik austauschbare Berichtssätze produziert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/narrative-science-editorial.webp" alt="Illustration zu Narrative Science: Datenkarten und Diagramme verwandeln sich in erklaerende Berichtserzaehlungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Textgenerierung aus strukturierten Daten.

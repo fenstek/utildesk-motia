@@ -30,6 +30,10 @@ MXNet sollte zuerst in einem realen Entwicklungsablauf von Setup über Testdaten
 - **Guter Start für MXNet:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei MXNet:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mxnet-editorial.webp" alt="Illustration zu MXNet: Tensorbloecke, Modellgraphen und Trainingspfade bilden eine Deep-Learning-Architektur" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung mehrerer Programmiersprachen, darunter Python, R, Scala, Julia und C++

@@ -20,6 +20,10 @@ MIT Scratch is a visual programming language and online platform designed specif
 
 MIT Scratch is primarily aimed at children around the age of 8 and up, teenagers, and beginners who want to get started in the world of programming without any prior knowledge. The platform is ideal for teachers, parents, and educational institutions that want to encourage creative learning and digital thinking. Scratch is also a good fit for people who want to get familiar with algorithms and logical thinking in a playful way.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mit-scratch-editorial.webp" alt="Illustration for MIT Scratch: colorful programming blocks connect into a simple interactive scene" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Visual programming through drag-and-drop code blocks

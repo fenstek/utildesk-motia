@@ -22,6 +22,10 @@ The difference between good and bad use of MURAL rarely lies in the tool itself.
 
 MURAL is suitable for product teams, UX, strategy, consulting, education, and remote or hybrid workshops. It is especially helpful when groups need to structure work together, prioritize, or prepare decisions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mural-editorial.webp" alt="Illustration for MURAL: sticky notes, clusters, and voting points structure a workshop canvas" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Facilitate design-thinking workshops, retrospectives, or ideation sessions.

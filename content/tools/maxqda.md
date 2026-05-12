@@ -16,6 +16,10 @@ MAXQDA ist eine leistungsstarke Software zur qualitativen und quantitativen Date
 
 MAXQDA richtet sich an Forschende, Studierende, Lehrende sowie Fachkräfte aus den Bereichen Sozialwissenschaften, Psychologie, Pädagogik, Gesundheitswesen, Markt- und Meinungsforschung. Auch Unternehmen und Organisationen, die qualitative und quantitative Daten auswerten möchten, profitieren von den vielfältigen Funktionen der Software. Durch die Benutzerfreundlichkeit eignet sich MAXQDA sowohl für Einsteiger als auch für erfahrene Analysten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/maxqda-editorial.webp" alt="Illustration zu MAXQDA: Interviewnotizen, Codes und Themencluster werden zu einer qualitativen Analyse geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Qualitative Datenanalyse: Codierung und Kategorisierung von Texten, Interviews, Dokumenten und Multimedia-Daten  

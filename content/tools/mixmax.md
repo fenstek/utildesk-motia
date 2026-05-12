@@ -27,6 +27,10 @@ Mixmax überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - **Vorher klären:** welche Sequenzen personalisiert bleiben und wie Opt-outs respektiert werden.
 - **Nicht unterschätzen:** bei unpersönlichen Vorlagen schnell Antwortraten statt Beziehungen optimiert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mixmax-editorial.webp" alt="Illustration zu Mixmax: E-Mail-Karten, Termine und Follow-up-Schleifen ordnen den Vertriebsablauf" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mail-Tracking:** Verfolgen, wann und wie oft E-Mails geöffnet oder Links angeklickt werden.

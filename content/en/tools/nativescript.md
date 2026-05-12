@@ -39,6 +39,10 @@ NativeScript should first prove itself in a real development flow from setup thr
 - **Good start for NativeScript:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with NativeScript:** The rollout turns into extra coordination when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nativescript-editorial.webp" alt="Illustration for NativeScript: shared components branch into two mobile app outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Development of native iOS and Android apps with JavaScript, TypeScript, or Angular.

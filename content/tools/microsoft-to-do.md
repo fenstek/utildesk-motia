@@ -20,6 +20,10 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Microsoft To Do richtet sich in der Praxis vor allem an Einzelpersonen, kleine Teams und Microsoft-365-Nutzer mit überschaubaren Aufgaben. Gut eingesetzt wird es, wenn Zuständigkeit, Prüfschritt und Ergebnisformat vorher geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-to-do-editorial.webp" alt="Illustration zu Microsoft To Do: Aufgabenlisten, Kalenderpunkte und Prioritaeten werden in Tagesplaene geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - private und berufliche To-dos trennen

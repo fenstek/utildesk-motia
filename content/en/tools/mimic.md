@@ -38,6 +38,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** For Mimic, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Mimic disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mimic-editorial.webp" alt="Illustration for Mimic: voice waves are analyzed and shaped into controlled synthetic variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Realistic speech synthesis with natural emphasis and intonation.

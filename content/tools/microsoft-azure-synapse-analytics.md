@@ -21,6 +21,10 @@ Microsoft Azure Synapse Analytics richtet sich an Unternehmen und Entwickler, di
 - Unternehmen, die eine einheitliche Plattform für Data Warehousing, Big Data und KI suchen, um Geschäftsprozesse zu optimieren.
 - Organisationen, die ihre Daten aus verschiedenen Quellen zusammenführen und in Echtzeit analysieren wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-synapse-analytics-editorial.webp" alt="Illustration zu Microsoft Azure Synapse Analytics: Datenstroeme, Abfragen und Analysebloecke werden zu Business-Insights gebuendelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Integriertes Data Warehousing:** Verwaltung und Analyse großer Datenbestände mit SQL-basierten Data Warehouses.

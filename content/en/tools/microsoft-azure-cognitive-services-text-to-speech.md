@@ -25,6 +25,10 @@ This service is aimed primarily at developers, businesses, and organizations tha
 - Developers of accessibility solutions to support people with visual impairments.
 - Media and content producers who want to create audio content efficiently.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cognitive-services-text-to-speech-editorial.webp" alt="Illustration for Microsoft Azure Cognitive Services - Text to Speech: document pages turn into speech waves through a cloud pipeline" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural speech synthesis:** A large selection of voices with natural intonation and emphasis in many languages and dialects.

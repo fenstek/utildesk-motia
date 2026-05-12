@@ -30,6 +30,10 @@ Als Prüfstück für Microsoft Editor eignet sich einem echten Textauftrag mit B
 - **Guter Start für Microsoft Editor:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Microsoft Editor:** Ohne klare Regeln wird der Nutzen schwach, sobald Quellen, Tonalität, Review-Regeln, Sprachvarianten und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-editor-editorial.webp" alt="Illustration zu Microsoft Editor: Dokumententwuerfe werden mit Pruefsignalen, Stilmarken und Klarheitsmarkern verbessert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Grammatik- und Rechtschreibprüfung:** Automatische Erkennung und Korrektur von Fehlern in mehreren Sprachen.

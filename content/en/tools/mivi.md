@@ -19,6 +19,10 @@ Mivi is a video tool that specializes in using artificial intelligence (AI) to m
 
 Mivi is aimed at a broad audience: content creators, marketing professionals, social media managers, and small and medium-sized businesses that want to produce appealing videos easily and quickly. It also offers a simple way for people without in-depth technical knowledge to create professional videos with AI support. It is also interesting for users looking for cost-efficient solutions, since getting started is free.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mivi-editorial.webp" alt="Illustration for Mivi: media fragments, clips, and export modules are assembled into short video variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **AI-powered video creation:** Automatic generation of videos based on text or images.

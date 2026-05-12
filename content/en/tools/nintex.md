@@ -22,6 +22,10 @@ Its value lies in connecting business processes with automation. Nintex is espec
 
 Nintex is suitable for business teams, operations, IT, process management, HR, finance, and enterprise teams with many approvals or form-based processes. For small individual automations, a lighter no-code tool may be faster.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nintex-editorial.webp" alt="Illustration for Nintex: forms, approvals, and documents move through an automated workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Digitize approval processes for procurement, HR, or finance.

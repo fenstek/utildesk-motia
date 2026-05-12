@@ -15,6 +15,10 @@ MIT Scratch ist eine visuelle Programmierumgebung, mit der Kinder, Einsteiger un
 
 Scratch passt zu Schulen, Workshops, Eltern, Bibliotheken und Lernenden, die Programmierkonzepte ohne Syntaxfrust entdecken möchten. Für produktive Apps, KI-Projekte oder fortgeschrittene Entwicklung ist es zu begrenzt, als Lernbrücke aber sehr wertvoll.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mit-scratch-editorial.webp" alt="Illustration zu MIT Scratch: farbige Programmierbloecke werden zu einer einfachen interaktiven Szene verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Erste Programmierkonzepte wie Schleifen, Variablen und Ereignisse spielerisch vermitteln.

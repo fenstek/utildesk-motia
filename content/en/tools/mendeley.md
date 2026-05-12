@@ -32,6 +32,10 @@ Mendeley works best when implementation is understood not as a tool change, but 
 - **Good fit:** for students, researchers, and teams with shared libraries.
 - **Watch out for:** citation errors later caused by poorly imported metadata.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mendeley-editorial.webp" alt="Illustration for Mendeley: PDFs, reference cards, and citation paths are organized into a research library" loading="lazy" decoding="async" />
+</figure>
+
 ## Core Features
 
 - **Literature management:** Simple organization of PDFs and other documents in personal libraries with tags and notes.

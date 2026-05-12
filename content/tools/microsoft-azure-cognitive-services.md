@@ -21,6 +21,10 @@ Microsoft Azure Cognitive Services richtet sich an Unternehmen, Entwickler und O
 - Branchen wie Gesundheitswesen, Einzelhandel, Finanzen und Bildung, die von automatisierter Bilderkennung, Spracherkennung oder Übersetzungen profitieren.
 - Startups und Mittelständler, die skalierbare KI-Lösungen mit flexiblen Preismodellen suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cognitive-services-editorial.webp" alt="Illustration zu Microsoft Azure Cognitive Services: Sprach-, Bild- und Entscheidungsdienste werden als Cloud-KI-Module verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spracherkennung und Sprachsynthese:** Umwandlung von Sprache in Text und umgekehrt, inklusive Unterstützung mehrerer Sprachen und Dialekte.
