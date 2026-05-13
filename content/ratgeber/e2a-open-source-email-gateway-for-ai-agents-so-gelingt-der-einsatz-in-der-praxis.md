@@ -6,8 +6,8 @@ category: "Anleitung"
 eyebrow: "KI-Anleitung"
 excerpt: "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
 readTime: 6
-coverImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-cover.webp
-secondaryImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow.webp
+coverImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-cover-chagall.webp
+secondaryImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp
 tags:
   - "KI-Agenten"
   - "E-Mail-Automatisierung"
@@ -66,7 +66,7 @@ Für eine erste Prüfung reicht ein Docker-basierter Start. Der Stack bringt API
 
 Sobald echte eingehende Mail getestet werden soll, wird DNS wichtig. Die eigene Domain braucht einen passenden MX-Eintrag zum Relay; zusätzlich muss die Domain im System verifiziert werden. Für schnelle Tests bietet die gehostete Variante einen geteilten Domainpfad mit Slug-Adressen, während Self-Hosting mehr Kontrolle über Infrastruktur, Datenhaltung und Zustellbarkeit gibt. Genau hier sollte ein Team entscheiden, ob es E2a zunächst als Laborumgebung oder gleich als produktionsnahen Kommunikationskanal betrachtet.
 
-![KI-Agent verarbeitet geprüfte E-Mail-Ereignisse über ein Open-Source-Gateway](/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow.webp)
+![KI-Agent verarbeitet geprüfte E-Mail-Ereignisse über ein Open-Source-Gateway](/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp)
 
 ## Vertrauen entsteht nicht durch Header allein
 

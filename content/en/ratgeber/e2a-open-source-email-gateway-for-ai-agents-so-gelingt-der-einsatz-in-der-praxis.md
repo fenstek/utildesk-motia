@@ -6,8 +6,8 @@ category: "Guide"
 eyebrow: "AI Guide"
 excerpt: "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
 readTime: 7
-coverImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-cover.webp
-secondaryImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow.webp
+coverImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-cover-chagall.webp
+secondaryImage: /images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp
 tags:
   - "AI Agents"
   - "Email Automation"
@@ -66,7 +66,7 @@ A first evaluation can begin with Docker. The stack brings up the API, dashboard
 
 Real inbound mail changes the picture. A custom domain needs an MX record that points to the relay, and the domain has to be verified in the system. For fast tests, the hosted version offers slug-based addresses on a shared domain. Self-hosting gives more control over infrastructure, data handling, and deliverability. This is the point where a team should decide whether E2a is only a lab experiment or already a near-production communication channel.
 
-![AI agent processes verified email events through an open-source gateway](/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow.webp)
+![AI agent processes verified email events through an open-source gateway](/images/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis-workflow-chagall.webp)
 
 ## Trust does not come from headers alone
 
