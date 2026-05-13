@@ -22,6 +22,19 @@ Gitpod richtet sich an Entwickler, Teams und Organisationen, die ihre Entwicklun
 - Unternehmen, die DevOps und Continuous Integration verbessern möchten
 - Entwickler, die von überall und auf verschiedenen Geräten arbeiten möchten
 
+## Typische Einsatzszenarien
+
+- **Gezielter Einstieg:** Gitpod eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um automation, coding nicht mehr improvisieren wollen.
+- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Prompts, Modelle, Ausgaben und Freigaben sauber dokumentiert und nicht nur einmalig ausprobiert werden.
+- **Übergaben im Team:** Gitpod kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
+- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
+
+## Was im Alltag wirklich zählt
+
+Im Alltag zählt bei Gitpod weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+
+Praktisch ist Gitpod vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+
 ## Hauptfunktionen
 
 - **Automatisierte Dev-Umgebungen:** Gitpod erstellt automatisch eine komplette Entwicklungsumgebung basierend auf dem Projekt-Repository.
@@ -52,6 +65,24 @@ Gitpod richtet sich an Entwickler, Teams und Organisationen, die ihre Entwicklun
 - Performance kann je nach Netzwerk und Plan variieren
 - Einige Funktionen sind nur in kostenpflichtigen Plänen verfügbar
 - Für sehr spezifische oder ressourcenintensive Projekte kann lokale Entwicklung weiterhin vorteilhaft sein
+
+## Workflow-Fit
+
+Gitpod passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
+
+Wenn Gitpod nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
+
+## Datenschutz & Daten
+
+Vor dem Einsatz sollte geklärt werden, welche Daten in Gitpod landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
+
+Für Teams in Europa ist bei Gitpod außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Gitpod.
+
+## Redaktionelle Einschätzung
+
+Gitpod wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+
+Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Gitpod wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 
 ## Preise & Kosten
 

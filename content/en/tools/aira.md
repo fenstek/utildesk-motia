@@ -20,6 +20,19 @@ Aira is an innovative AI-powered platform that supports people with visual impai
 
 Aira is primarily designed for people with visual impairments or blindness who rely on assistance in their daily lives. The platform is ideal for users who need flexible, on-demand support, whether it's shopping, traveling, or navigating unfamiliar environments. Organizations and institutions that want to promote accessibility can also benefit from Aira by offering their customers or employees enhanced access to supportive services.
 
+## Typical Use Cases
+
+- **Focused rollout:** Aira is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around accessibility, remote interpreting, video communication.
+- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
+- **Team handovers:** Aira can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
+- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+
+## What really matters in daily use
+
+In day-to-day work, Aira is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+
+Aira is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+
 ## Key Features
 
 - **Real-time Video Communication:** Users can connect to trained agents through their smartphone camera or smart glasses for live video assistance.
@@ -45,6 +58,24 @@ Aira is primarily designed for people with visual impairments or blindness who r
 - Subscription costs may vary depending on the plan and are not free for all users.
 - Functionality may differ depending on the device and region.
 - Not all features are available in every language or region.
+
+## Workflow Fit
+
+Aira fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+
+If Aira becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+
+## Privacy & Data
+
+Before adopting Aira, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
+
+For European teams evaluating Aira, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Aira before the data path is understood.
+
+## Editorial Assessment
+
+Aira is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+
+Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Aira genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
 ## Pricing & Costs
 

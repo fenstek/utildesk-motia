@@ -24,6 +24,19 @@ Wysa richtet sich an Personen, die Unterstützung bei Stress, Angst, Depressione
 
 Da Wysa kein Ersatz für professionelle Psychotherapie ist, sollten Nutzer mit schweren psychischen Erkrankungen oder akuten Krisen zusätzlich fachärztliche Hilfe in Anspruch nehmen.
 
+## Typische Einsatzszenarien
+
+- **Gezielter Einstieg:** Wysa eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um mental health, chatbot, health tech nicht mehr improvisieren wollen.
+- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Prompts, Modelle, Ausgaben und Freigaben sauber dokumentiert und nicht nur einmalig ausprobiert werden.
+- **Übergaben im Team:** Wysa kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
+- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
+
+## Was im Alltag wirklich zählt
+
+Im Alltag zählt bei Wysa weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+
+Praktisch ist Wysa vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+
 ## Hauptfunktionen
 
 - **KI-gestützter Chatbot:** Interaktive Gespräche, die auf kognitive Verhaltenstherapie (CBT) und andere therapeutische Methoden basieren  
@@ -51,7 +64,25 @@ Da Wysa kein Ersatz für professionelle Psychotherapie ist, sollten Nutzer mit s
 - Eingeschränkte menschliche Interaktion, da KI-basiert  
 - Einige Funktionen nur in der kostenpflichtigen Version verfügbar  
 - Abhängig von der Verfügbarkeit eines Smartphones oder Internetzugangs  
-- Keine individuelle Diagnostik oder Behandlung  
+- Keine individuelle Diagnostik oder Behandlung
+
+## Workflow-Fit
+
+Wysa passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
+
+Wenn Wysa nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
+
+## Datenschutz & Daten
+
+Vor dem Einsatz sollte geklärt werden, welche Daten in Wysa landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
+
+Für Teams in Europa ist bei Wysa außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Wysa.
+
+## Redaktionelle Einschätzung
+
+Wysa wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+
+Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Wysa wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 
 ## Preise & Kosten
 

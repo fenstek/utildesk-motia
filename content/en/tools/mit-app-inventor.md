@@ -28,6 +28,19 @@ MIT App Inventor is primarily aimed at:
 
 The tool is ideal for users with no or little programming experience who still want to achieve visible results quickly. It is less suitable for professional developers with more complex requirements.
 
+## Typical Use Cases
+
+- **Focused rollout:** MIT App Inventor is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around developer tools, education, mobile.
+- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
+- **Team handovers:** MIT App Inventor can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
+- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+
+## What really matters in daily use
+
+In day-to-day work, MIT App Inventor is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+
+MIT App Inventor is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+
 ## Main features
 
 - **Visual block programming:** Apps are created with drag-and-drop blocks that represent logic and functions.
@@ -58,6 +71,24 @@ The tool is ideal for users with no or little programming experience who still w
 - Performance optimization is limited compared with native development environments
 - Design options are rather basic and not suited for high-end UI
 - Depends on a stable internet connection for the development environment
+
+## Workflow Fit
+
+MIT App Inventor fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+
+If MIT App Inventor becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+
+## Privacy & Data
+
+Before adopting MIT App Inventor, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
+
+For European teams evaluating MIT App Inventor, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing MIT App Inventor before the data path is understood.
+
+## Editorial Assessment
+
+MIT App Inventor is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+
+Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether MIT App Inventor genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
 ## Pricing & costs
 

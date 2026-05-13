@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-12_
+_Last updated: 2026-05-13_
+
+## 2026-05-13 - Tool editorial completion from production-sync
+
+- Ported the clean generated-text editorial pass onto current production head `0f7f556` instead of the stale dirty main checkout.
+- Publish scope is 390 additional DE/EN tool cards; `ableton-live` stayed untouched because current production already had 2026-05-11 manual editorial/illustration registry coverage.
+- Updated `docs/04_operations/tool_card_editorial_registry.json` with the three 2026-05-13 editorial batches and tightened `scripts/list_tool_editorial_candidates.mjs` so future selection skips the illustration registry.
+- Validation before release passed: editorial checks, EN tool checks, marker/registry overlap audit, `git diff --check`, and Astro build.
 
 ## 2026-05-12 - Tool illustration batch 15
 
