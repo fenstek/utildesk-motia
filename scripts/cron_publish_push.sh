@@ -108,6 +108,7 @@ run_post_deploy_hooks() {
     POSTPRODUCTION_TIMEOUT_SECONDS="${POSTPRODUCTION_TIMEOUT_SECONDS:-600}"
     POSTPRODUCTION_POLL_INTERVAL="${POSTPRODUCTION_POLL_INTERVAL:-15}"
     POSTPRODUCTION_RESUBMIT_WINDOW_HOURS="${POSTPRODUCTION_RESUBMIT_WINDOW_HOURS:-20}"
+    POSTPRODUCTION_MAX_SUBMIT_URLS="${POSTPRODUCTION_MAX_SUBMIT_URLS:-80}"
     POSTPRODUCTION_NODE="${POSTPRODUCTION_NODE:-node}"
 
     if [[ ! -f "scripts/postproduction_pipeline.mjs" ]]; then
@@ -123,6 +124,7 @@ run_post_deploy_hooks() {
         --timeout-seconds "${POSTPRODUCTION_TIMEOUT_SECONDS}" \
         --poll-interval "${POSTPRODUCTION_POLL_INTERVAL}" \
         --resubmit-window-hours "${POSTPRODUCTION_RESUBMIT_WINDOW_HOURS}" \
+        --max-submit-urls "${POSTPRODUCTION_MAX_SUBMIT_URLS}" \
         --no-indexnow \
         --submit-bing-feeds; then
         echo "[cron] postproduction pipeline completed"
