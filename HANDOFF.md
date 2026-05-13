@@ -1,5 +1,19 @@
 # Handoff
 
+
+## 2026-05-13 E2a Ratgeber publication handoff
+
+- User-approved candidate: `20260511-e2a-open-source-email-gateway-for-ai-agents-how_to-bb2d056d`.
+- Live URLs:
+  - `https://tools.utildesk.de/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis/`
+  - `https://tools.utildesk.de/en/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis/`
+- Content was first published in `6141cfbf`; final user-approved imagery is in `84f6ae24` with new `-chagall.webp` filenames to avoid CDN cache collisions.
+- Final art direction: poetic early-modernist / Chagall-inspired dream scenes about email as a trusted bridge between a human operator and an AI agent. Keep this as mood inspiration only; do not copy known artworks, signatures, or direct compositions.
+- Final asset sizes: cover `200798` bytes, workflow `172430` bytes, both WebP at `1536x864`.
+- Candidate was marked `published` through the Cloudflare Ratgeber upload API, and machine queues returned `publishPending=0`, `reworkPending=0`.
+- Final validation for the release: editorial check, EN translation check, Astro build on `2844` pages, live DE/EN page check, and direct image asset check.
+- Operational caution: this work happened while Ubuntu continues producing/publishing tool-card illustrations. Keep Ratgeber publication changes isolated from tool-card batches and do not stage unrelated generated build manifests.
+
 ## 2026-05-11 Ubuntu Deploy And Laptop Sync Helpers
 
 - Added a guarded remote-deploy flow so the Ubuntu worker can publish clean committed work directly once its GitHub credential has write access.

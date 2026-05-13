@@ -1,6 +1,16 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-13_
 
+
+## 2026-05-13 - E2a Ratgeber published and Chagall-inspired visual refresh
+
+- Published the approved E2a Ratgeber as a full DE/EN package: `content/ratgeber/e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis.md` and the English sibling under `/en/`.
+- Initial content release commit: `6141cfbf` (`content: publish e2a email gateway guide`); final visual refresh commit: `84f6ae24` (`content: refresh e2a guide illustrations`).
+- Replaced the first cinematic/technical-looking visuals after user feedback with two cache-busting, Chagall-inspired poetic story WebP files: `*-cover-chagall.webp` (1536x864, 200798 bytes) and `*-workflow-chagall.webp` (1536x864, 172430 bytes).
+- Live verification passed for the German and English URLs plus both WebP assets; live HTML references the `-chagall.webp` files and no longer references the old `*-cover.webp` / `*-workflow.webp` artwork.
+- Cloudflare Ratgeber candidate `20260511-e2a-open-source-email-gateway-for-ai-agents-how_to-bb2d056d` was marked `published` via the upload API with the final WebP assets; publish and rework queues reported 0 pending requests.
+- Validation before publication passed: editorial template check, English tool translation check, and Astro build (`2844` pages).
+
 ## 2026-05-13 - Tool illustration batch 17
 
 - Added one mid-article WebP illustration to 30 additional manually edited tool cards in both German and English.

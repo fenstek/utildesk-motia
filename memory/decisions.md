@@ -132,3 +132,9 @@
 
 - Ratgeber image production cost policy: do not make OpenAI Images API the default production path for Ratgeber illustrations. The project should use the existing ChatGPT/Codex subscription-backed `imagegen-workflow` whenever possible, because the subscription is already paid for and should be consumed before adding API image costs.
 - API-based image generation may be used only as an explicitly approved fallback or for small technical tests. The preferred architecture is: `opcl` Ratgeber pipeline creates image briefs and queue artifacts; Windows/Codex consumes those briefs with the subscription-backed imagegen workflow; generated assets are copied back as `cover.png` and `workflow.png` with approved visual metadata.
+
+## 2026-05-13
+
+- Ratgeber final imagery must be real compressed WebP artwork, not SVG/technical placeholders. If the user rejects a plot/style as repetitive, replace the visual concept and filenames instead of recoloring the same composition.
+- Named artist references for Ratgeber visuals are allowed only as loose mood/art-direction references. Do not reproduce known compositions, signatures, or direct copies; generate legally distinct story scenes tied to the article topic.
+- For live replacements, use new cache-busting filenames such as `-chagall.webp`, update both DE/EN frontmatter and inline image references, then verify the live HTML no longer points at the old assets.
