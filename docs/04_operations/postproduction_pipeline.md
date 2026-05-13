@@ -72,6 +72,7 @@ POST_DEPLOY_POSTPRODUCTION=1
 - `POSTPRODUCTION_TIMEOUT_SECONDS` — ожидание live URL, по умолчанию `600`.
 - `POSTPRODUCTION_POLL_INTERVAL` — интервал проверки live URL, по умолчанию `15`.
 - `POSTPRODUCTION_RESUBMIT_WINDOW_HOURS` — защита от повторной отправки URL, по умолчанию `20`.
+- `POSTPRODUCTION_MAX_SUBMIT_URLS` — максимум URL для внешней отправки за один прогон cron, по умолчанию `80`, чтобы не сжечь Bing daily quota.
 - `POST_DEPLOY_POSTPRODUCTION=0` — полностью отключить postproduction hook.
 
 Bing:
@@ -93,6 +94,7 @@ Umami:
 - Секреты не логируются.
 - Отчёты не коммитятся.
 - State-файл нужен для идемпотентности: одинаковые URL не отправляются повторно в пределах `POSTPRODUCTION_RESUBMIT_WINDOW_HOURS`.
+- Большие диапазоны не отправляются целиком: лишние URL попадут в `deferredSubmitUrls` в отчёте и будут обработаны отдельным/следующим прогоном.
 
 ## Минимальный ожидаемый результат после deploy
 
