@@ -27,6 +27,11 @@ Robot Framework gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als
 - **Gute Voraussetzung:** für QA-Teams, die Regressionstests und Business-Akzeptanz abbilden.
 - **Aufpassen bei:** bei schlecht gepflegten Keywords schnell schwer wartbar wird.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/robot-framework-editorial.webp" alt="Illustration zu Robot Framework: Ein Testfall rollt durch Pruefstationen, Geraete-Rahmen und Freigabeglocke" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Keyword-basierte Testautomatisierung:** Ermöglicht die Erstellung von wiederverwendbaren Testschritten in einer verständlichen Sprache.

@@ -33,6 +33,11 @@ SalesLoft works best when implementation is understood not as a tool switch, but
 - **Good condition:** when sales teams want to measure recurring outreach workflows cleanly.
 - **Watch out for:** sequences that are too aggressive can quickly feel like mass sales outreach.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/salesloft-editorial.webp" alt="Illustration for SalesLoft: Outreach tokens follow a route from first contact to call, meeting, and response signal" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Sales automation:** Automation of recurring tasks such as follow-ups, appointment scheduling, and email campaigns.

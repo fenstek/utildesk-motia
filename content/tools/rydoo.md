@@ -16,6 +16,11 @@ Rydoo ist eine innovative AI-gestützte Lösung für das Ausgabenmanagement, die
 
 Rydoo richtet sich vor allem an kleine bis mittelständische Unternehmen sowie größere Organisationen, die ihre Ausgabenprozesse digitalisieren und optimieren möchten. Besonders geeignet ist das Tool für Teams mit häufigen Geschäftsreisen, da es die Erfassung und Genehmigung von Reisekosten stark vereinfacht. Auch Finanzabteilungen profitieren von der Automatisierung und der transparenten Übersicht über Ausgaben.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rydoo-editorial.webp" alt="Illustration zu Rydoo: Reisebelege und Ausgabentokens werden zu einem Erstattungsweg sortiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Rydoo eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um expense management, finance, productivity nicht mehr improvisieren wollen.

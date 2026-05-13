@@ -27,6 +27,11 @@ Der beste Praxistest für SAP Analytics Cloud ist klein, aber echt. Ein Team sol
 - **Rollout-Frage:** welche Datenmodelle, Rollen und Planungszyklen verbindlich sind.
 - **Bremse:** bei schwacher SAP-Datenbasis komplexe Modellierung statt Erkenntnis erzeugt.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sap-analytics-cloud-editorial.webp" alt="Illustration zu SAP Analytics Cloud: Acryl-Tuerme und Prognoseobjekte treffen sich auf einem Entscheidungstisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Data Discovery und Visualisierung:** Interaktive Dashboards und Berichte zur einfachen Darstellung komplexer Daten.

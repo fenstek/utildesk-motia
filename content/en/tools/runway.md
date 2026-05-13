@@ -27,6 +27,11 @@ Runway is aimed at a broad audience, including:
 
 The platform is especially well suited to users who value ease of use without wanting to compromise on professional results.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/runway-editorial.webp" alt="Illustration for Runway: Storyboard cards turn into a projected scene on a film set" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Runway is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around video, automation.

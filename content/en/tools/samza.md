@@ -26,6 +26,11 @@ Samza is primarily aimed at developers, data engineers, and companies that need 
 - Teams that rely on open-source solutions and need tight integration with Apache Kafka and other messaging systems.
 - Companies that process large amounts of data in real time, e.g. for monitoring, fraud detection, or personalized recommendations.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/samza-editorial.webp" alt="Illustration for Samza: Event droplets flow through processing mills, branches, and storage basins" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Real-time stream processing:** Processing data streams with low latency.

@@ -20,6 +20,11 @@ Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Z
 
 Besonders passend ist SAP SuccessFactors für größere Unternehmen, HR-Abteilungen, People Operations und internationale Organisationen. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sap-successfactors-editorial.webp" alt="Illustration zu SAP SuccessFactors: Ein HR-Garten zeigt Einstellung, Onboarding, Lernen, Feedback und Bindung als Stationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - HR-Stammdaten und Mitarbeiterprozesse strukturieren

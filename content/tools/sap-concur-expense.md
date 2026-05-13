@@ -16,6 +16,11 @@ SAP Concur Expense ist eine cloudbasierte Lösung zur Automatisierung und Verein
 
 SAP Concur Expense richtet sich vor allem an mittelständische und große Unternehmen, die ihre Spesenprozesse digitalisieren und optimieren möchten. Besonders geeignet ist das Tool für Organisationen mit vielen Mitarbeitenden, die häufig Geschäftsreisen unternehmen oder diverse Auslagen abrechnen müssen. Auch Finanzabteilungen, Buchhalter und Reisekostenmanager profitieren von der automatisierten Verarbeitung und der verbesserten Transparenz.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sap-concur-expense-editorial.webp" alt="Illustration zu SAP Concur Expense: Origami-Reiseobjekte fuehren vom Koffer ueber Taxi und Cafe zur Freigabe" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** SAP Concur Expense eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation, workflow nicht mehr improvisieren wollen.

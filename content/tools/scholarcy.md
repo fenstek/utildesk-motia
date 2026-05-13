@@ -20,6 +20,11 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 Scholarcy ist für Studierende, Forschende, Analysten und Teams mit vielen PDFs vor allem dann wertvoll, wenn es einen sichtbaren Vorher-nachher-Unterschied im Workflow erzeugt.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scholarcy-editorial.webp" alt="Illustration zu Scholarcy: Ein langer Artikelstreifen wird zu einer kompakten Studienkarte gefaltet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - lange Papers vor der Detaillektüre erfassen

@@ -22,6 +22,11 @@ The advantage over a pure machine translation lies in the context. Reverso helps
 
 Reverso is suitable for learners, writers, international teams, support, everyday texts, and quick language checks. For legal, medical, or certified translations, you still need subject-matter experts and binding review processes.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reverso-editorial.webp" alt="Illustration for Reverso: Language cards are compared across dictionary, context, and correction paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Check phrases in a foreign language with example sentences.

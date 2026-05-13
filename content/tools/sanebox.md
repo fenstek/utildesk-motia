@@ -15,6 +15,11 @@ SaneBox ist ein E-Mail-Produktivitätstool, das Posteingänge automatisch sortie
 
 SaneBox passt zu Menschen mit hohem E-Mail-Aufkommen: Führungskräfte, Vertrieb, Support, Freelancer und Wissensarbeiter. Wer nur wenige Nachrichten erhält oder bereits strenge Mailregeln nutzt, braucht es möglicherweise nicht.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sanebox-editorial.webp" alt="Illustration zu SaneBox: Ein Mailroom sortiert Umschlaege in Fokusfaecher, Spaeter-Ablage und Archivschublade" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Unwichtige E-Mails automatisch aus dem Hauptposteingang herausfiltern.

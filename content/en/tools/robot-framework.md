@@ -32,6 +32,11 @@ Robot Framework works best when adoption is understood not as a tool switch, but
 - **Good prerequisite:** for QA teams that map regression tests and business acceptance.
 - **Watch out for:** poorly maintained keywords quickly becoming hard to maintain.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/robot-framework-editorial.webp" alt="Illustration for Robot Framework: A test case rolls through check stations, device frames, and a pass bell" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Keyword-based test automation:** Enables the creation of reusable test steps in a clear language.

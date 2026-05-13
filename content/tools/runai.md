@@ -23,6 +23,11 @@ RunAI richtet sich vor allem an Unternehmen und Teams, die ihre Arbeitsprozesse 
 
 Die Plattform ist sowohl für kleine bis mittelständische Unternehmen als auch für größere Konzerne geeignet, abhängig von den individuellen Anforderungen und dem gewählten Plan.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/runai-editorial.webp" alt="Illustration zu RunAI: Workload-Wagen werden in einem Mini-Rechenzentrum zu GPU-Spuren geleitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** RunAI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, assistant, automation nicht mehr improvisieren wollen.

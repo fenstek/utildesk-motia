@@ -20,6 +20,11 @@ Scopus is a comprehensive, multidisciplinary database for scholarly literature t
 
 Scopus is primarily aimed at scientists, researchers, librarians, and academic institutions that need access to a broad collection of scholarly articles and conference papers. Research managers and bibliometricians also benefit from the analysis features to assess research performance and support funding decisions. Companies with research departments also use Scopus to monitor scientific developments and competitors.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scopus-editorial.webp" alt="Illustration for Scopus: Research cards from archive drawers are connected into a knowledge map" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Scopus is a good fit when content, design, and production teams want to stop improvising a recurring workflow around research, bibliometrics, publications.

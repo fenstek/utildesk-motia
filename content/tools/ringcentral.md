@@ -22,6 +22,11 @@ RingCentral richtet sich vor allem an kleine, mittlere und große Unternehmen, d
 - Organisationen, die bestehende IT-Infrastruktur modernisieren und Cloud-Lösungen bevorzugen.
 - Branchen, die auf schnelle und flexible Kommunikation angewiesen sind, etwa Vertrieb, IT, Bildung oder Gesundheitswesen.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ringcentral-editorial.webp" alt="Illustration zu RingCentral: Leere Besprechungsraeume verbinden Sprach-, Nachrichten- und Meeting-Signale an einem Tisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** RingCentral eignet sich, wenn Marketing-, Sales- und Customer-Teams einen wiederkehrenden Ablauf rund um communication, meetings, customer support nicht mehr improvisieren wollen.
