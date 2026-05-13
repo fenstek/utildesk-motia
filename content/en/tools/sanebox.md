@@ -20,6 +20,11 @@ SaneBox is an intelligent email management tool that uses artificial intelligenc
 
 SaneBox is designed for busy professionals, entrepreneurs, freelancers, and anyone who receives a large number of emails every day and struggles to keep track of them. The tool is especially useful for users who want to optimize their email communication and save time without relying on manual sorting.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sanebox-editorial.webp" alt="Illustration for SaneBox: A mailroom sorts envelopes into focus trays, later storage, and archive drawers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic sorting:** SaneBox automatically sorts emails into different folders such as “Important,” “Read Later,” or “Newsletters.”

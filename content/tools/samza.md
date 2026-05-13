@@ -21,6 +21,11 @@ Samza richtet sich vor allem an Entwickler, Data Engineers und Unternehmen, die 
 - Teams, die auf Open-Source-Lösungen setzen und eine enge Integration mit Apache Kafka und anderen Messaging-Systemen benötigen.
 - Unternehmen, die große Datenmengen in Echtzeit verarbeiten, z.B. für Monitoring, Betrugserkennung oder personalisierte Empfehlungen.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/samza-editorial.webp" alt="Illustration zu Samza: Ereignistropfen fliessen durch Verarbeitungsmuehlen, Abzweige und Speicherbecken" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Samza eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data, streaming, open source nicht mehr improvisieren wollen.

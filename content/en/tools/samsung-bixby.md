@@ -34,6 +34,11 @@ Samsung Bixby should first prove itself in a real contact case with intake, prio
 - **Good start for Samsung Bixby:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Samsung Bixby:** The value becomes weak when channels, ownership, escalation paths, and privacy rules are not agreed together.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/samsung-bixby-editorial.webp" alt="Illustration for Samsung Bixby: Sound ribbons control lights, curtains, and task objects in a living room" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Voice control:** Control smartphone functions, apps, and settings with voice commands.

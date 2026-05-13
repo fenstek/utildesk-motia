@@ -29,6 +29,11 @@ Rosetta Stone is aimed at a broad audience. The platform is especially suitable 
 
 By adapting to different learning levels and focusing on everyday communication, Rosetta Stone is suitable for both beginners and advanced learners.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rosetta-stone-editorial.webp" alt="Illustration for Rosetta Stone: Language practice is built from stone tiles, image cards, and sound paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Immersive learning:** Lessons are based on visual and audio contexts without translations to encourage natural language learning.

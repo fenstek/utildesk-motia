@@ -19,6 +19,11 @@ RX Elements by iZotope is specialized audio editing software that focuses primar
 
 RX Elements is aimed at podcasters, musicians, audio engineers, and anyone who wants to optimize audio recordings quickly and easily. The tool is especially suitable for users who frequently work with noisy or damaged recordings and need a simple but effective solution to improve audio quality. Thanks to its user-friendly interface, RX Elements also offers beginners a good introduction to professional audio editing.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rx-elements-von-izotope-editorial.webp" alt="Illustration for RX Elements by iZotope: Damaged audio strips are cleaned and smoothed on a studio workbench" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** RX Elements by iZotope is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around AI, audio, editing.

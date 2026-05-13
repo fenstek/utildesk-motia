@@ -21,6 +21,11 @@ Rydoo is an innovative AI-powered expense management solution designed specifica
 
 Rydoo is primarily aimed at small and medium-sized businesses as well as larger organizations that want to digitize and optimize their expense processes. The tool is especially well suited for teams with frequent business travel, since it greatly simplifies the recording and approval of travel expenses. Finance departments also benefit from automation and a transparent overview of spending.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rydoo-editorial.webp" alt="Illustration for Rydoo: Travel receipts and expense tokens are sorted into a reimbursement path" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic receipt capture:** Scan and upload receipts via the app with automatic data extraction.

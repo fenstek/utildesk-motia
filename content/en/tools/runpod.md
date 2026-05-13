@@ -40,6 +40,11 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Test RunPod in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** RunPod disappoints when data sources, definitions, and ownership are not clarified.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/runpod-editorial.webp" alt="Illustration for RunPod: Small compute pods open as workshops for different AI tasks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Provisioning of GPU instances in different performance classes (e.g. Nvidia A100, RTX 3090)

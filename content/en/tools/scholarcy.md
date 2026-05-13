@@ -25,6 +25,11 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 For students, researchers, analysts, and teams with many PDFs, Scholarcy is valuable when it creates a visible before-and-after difference in the workflow.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scholarcy-editorial.webp" alt="Illustration for Scholarcy: A long article ribbon is folded into a compact study card" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - understand long papers before deep reading

@@ -28,6 +28,11 @@ Reverso Context is aimed at a broad range of users:
 
 The tool is especially useful for anyone who wants more than simple word-for-word translations and is looking for deeper insight into language use and the nuances of different expressions.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reverso-context-editorial.webp" alt="Illustration for Reverso Context: A phrase moves between reading scenes and gains meaning from context" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Context-based translations:** Translates words and phrases using millions of example sentences from real texts.

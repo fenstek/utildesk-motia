@@ -23,6 +23,11 @@ SAS richtet sich an Unternehmen und Organisationen verschiedener Größen und Br
 
 Je nach Plan und Modul kann SAS sowohl für Einsteiger als auch für erfahrene Analysten angepasst werden.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sas-editorial.webp" alt="Illustration zu SAS: Messpunkte werden in einem Statistiklabor durch Linsen, Hebel und Wahrscheinlichkeitswege gefuehrt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenmanagement:** Umfangreiche Werkzeuge zur Datenintegration, -bereinigung und -vorbereitung.

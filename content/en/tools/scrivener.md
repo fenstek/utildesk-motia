@@ -20,6 +20,11 @@ Scrivener is a powerful writing app designed specifically for authors, writers, 
 
 Scrivener is aimed primarily at professional authors, screenwriters, journalists, researchers, and students who need to handle large writing projects. It is also a valuable tool for bloggers and content creators who prefer a structured way of working. Anyone who works a lot with research, notes, and multiple documents at the same time will especially benefit from its organizational features. Beginners may initially feel overwhelmed by the range of features, but with some familiarization, the tool can significantly increase productivity.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scrivener-editorial.webp" alt="Illustration for Scrivener: Scene cards, manuscript pages, and research objects shape a writing arc" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Project organization:** Structure texts into chapters, sections, and subdocuments

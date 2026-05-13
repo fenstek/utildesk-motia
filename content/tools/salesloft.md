@@ -27,6 +27,11 @@ SalesLoft gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Proze
 - **Gute Voraussetzung:** wenn Vertriebsteams wiederkehrende Outreach-Abläufe sauber messen wollen.
 - **Aufpassen bei:** bei zu aggressiven Sequenzen schnell wie Massenvertrieb wirkt.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/salesloft-editorial.webp" alt="Illustration zu SalesLoft: Outreach-Tokens folgen einer Route von Erstkontakt zu Gespraech, Termin und Antwortsignal" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vertriebsautomatisierung:** Automatisierung wiederkehrender Aufgaben wie Follow-ups, Terminvereinbarungen und E-Mail-Kampagnen.

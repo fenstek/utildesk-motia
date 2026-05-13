@@ -16,6 +16,11 @@ Salesforce Sales Cloud ist eine führende cloudbasierte CRM-Lösung, die speziel
 
 Salesforce Sales Cloud richtet sich vor allem an kleine, mittlere und große Unternehmen, die ihre Vertriebsprozesse digitalisieren und effizienter gestalten möchten. Besonders geeignet ist die Lösung für Vertriebsleiter, Account Manager und Marketingteams, die eine zentrale Plattform zur Verwaltung von Kundenkontakten, Leads und Verkaufschancen suchen. Auch Unternehmen, die Wert auf Automatisierung, personalisierte Kundenansprache und datengestützte Entscheidungen legen, profitieren von den vielfältigen Funktionen der Sales Cloud.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/salesforce-sales-cloud-editorial.webp" alt="Illustration zu Salesforce Sales Cloud: Lead-Tokens bewegen sich wie in einem Brettspiel vom Marktstand zum Abschluss-Tresor" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Salesforce Sales Cloud eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um crm, sales, productivity nicht mehr improvisieren wollen.

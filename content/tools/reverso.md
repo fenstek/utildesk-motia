@@ -18,6 +18,11 @@ Der Vorteil gegenüber einer reinen Maschinenübersetzung liegt im Kontext. Reve
 
 Geeignet ist Reverso für Lernende, Schreibende, internationale Teams, Support, Alltagstexte und schnelle Sprachprüfung. Für juristische, medizinische oder zertifizierte Übersetzungen braucht es weiterhin Fachmenschen und verbindliche Reviewprozesse.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reverso-editorial.webp" alt="Illustration zu Reverso: Sprachkarten werden zwischen Woerterbuch, Kontext und Korrekturpfad abgeglichen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Formulierungen in einer Fremdsprache mit Beispielsätzen prüfen.

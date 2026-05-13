@@ -34,6 +34,11 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Test Scite in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Scite disappoints when data sources, definitions, and ownership are not clarified.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scite-editorial.webp" alt="Illustration for Scite: Research cards are connected as evidence pieces with colored support paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Citation analysis:** Scite classifies citations as supporting, contradicting, or neutral.

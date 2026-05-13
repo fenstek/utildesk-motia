@@ -32,6 +32,11 @@ RightInbox does not impress because it offers as many options as possible, but w
 - **Clarify first:** which follow-ups are truly valuable and which only create noise.
 - **Do not underestimate:** too many reminders can just make the inbox full in a different way.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rightinbox-editorial.webp" alt="Illustration for RightInbox: Email envelopes move through reminders, scheduling, and follow-up into storage trays" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic follow-ups:** reminders for unanswered emails are set up automatically so important messages are not forgotten.

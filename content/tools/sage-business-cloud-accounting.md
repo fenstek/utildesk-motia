@@ -16,6 +16,11 @@ Sage Business Cloud Accounting ist eine cloudbasierte Buchhaltungssoftware, die 
 
 Sage Business Cloud Accounting richtet sich vor allem an kleine und mittlere Unternehmen, Selbstständige sowie Freiberufler, die eine einfache und flexible Lösung zur Buchhaltung suchen. Auch Start-ups profitieren von der Skalierbarkeit der Software, da sie mit dem Unternehmen mitwächst. Für Nutzer ohne tiefgehende Buchhaltungskenntnisse bietet die Software eine benutzerfreundliche Oberfläche und zahlreiche Automatisierungsfunktionen, die den Verwaltungsaufwand reduzieren. Unternehmen, die mobil oder im Team arbeiten möchten, finden hier ebenfalls passende Funktionen, da die Software cloudbasiert und plattformunabhängig ist.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sage-business-cloud-accounting-editorial.webp" alt="Illustration zu Sage Business Cloud Accounting: Verkaeufe, Rechnungen und Banktokens werden vor Ladenoeffnung in Buchhaltungsschalen gelegt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Buchhaltung**: Automatische Erfassung und Kategorisierung von Einnahmen und Ausgaben.

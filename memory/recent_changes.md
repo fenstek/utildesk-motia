@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-13_
 
+## 2026-05-13 - Tool illustration batch 18
+
+- Added one mid-article WebP illustration to 30 additional manually edited tool cards in both German and English.
+- Continued the 1260px source WebP and 90% `.tool-editorial-figure` display scheme.
+- Selection follows the edited-tail illustration registry after `rev-com`; slugs run from `reverso` through `scrivener`.
+- Shifted the visual direction toward story-forward scenes after feedback about dashboard repetition: photo still lifes, mixed-media collage, paper dioramas, miniature labs, film sets, and physical workflow props.
+- Accepted normal props such as phones, keypads, envelopes, calendars, stamps, and office pictograms when they supported a scene; replaced variants that still felt readable-text, logo, face/avatar-heavy, or dashboard-like.
+- Generated PNG originals are removed from the local cache after WebP conversion so the image folder stays clean after publication-style batches.
 
 ## 2026-05-13 - E2a Ratgeber published and Chagall-inspired visual refresh
 

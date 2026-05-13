@@ -16,6 +16,11 @@ Salesforce Inbox ist ein intelligentes Tool, das E-Mail-Kommunikation und Custom
 
 Salesforce Inbox richtet sich vor allem an Vertriebsmitarbeiter, Kundenbetreuer und Teams, die Salesforce als CRM-Plattform nutzen und ihre E-Mail-Kommunikation effizienter gestalten möchten. Besonders geeignet ist das Tool für Unternehmen, die viel Kundenkontakt per E-Mail haben und dabei den Überblick über Verkaufschancen, Termine und Follow-ups behalten wollen. Auch für Teams, die ihre Arbeitsabläufe durch Automatisierung und KI-gestützte Empfehlungen optimieren möchten, ist Salesforce Inbox eine gute Wahl.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/salesforce-inbox-editorial.webp" alt="Illustration zu Salesforce Inbox: Umschlaege, Kontaktkarten und Terminsignale liegen fuer den naechsten Vertriebsnachgang bereit" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Salesforce Inbox eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um crm, email productivity, sales nicht mehr improvisieren wollen.

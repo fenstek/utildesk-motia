@@ -27,6 +27,11 @@ RightInbox überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden si
 - **Vorher klären:** welche Follow-ups wirklich wertvoll sind und welche nur Lärm erzeugen.
 - **Nicht unterschätzen:** bei zu vielen Erinnerungen die Inbox nur anders voll macht.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rightinbox-editorial.webp" alt="Illustration zu RightInbox: E-Mail-Umschlaege werden mit Erinnerung, Termin und Nachverfolgung in Ablagefaecher geleitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Follow-ups:** Erinnerungen an unbeantwortete E-Mails werden automatisch eingerichtet, um keine wichtigen Nachrichten zu vergessen.

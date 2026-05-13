@@ -32,6 +32,11 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte Scite zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Scite enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scite-editorial.webp" alt="Illustration zu Scite: Forschungskarten werden als Beweisstuecke mit farbigen Unterstuetzungswegen verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Zitationsanalyse:** Scite klassifiziert Zitate als unterstützend, widersprechend oder neutral.

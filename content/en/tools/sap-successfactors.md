@@ -24,6 +24,11 @@ Business tools rarely solve only one problem. They change handoffs, ownership, a
 
 SAP SuccessFactors is especially relevant for larger companies, HR departments, people operations, and international organizations. The value shows up when it owns a clearly named task instead of becoming just another window beside the real process.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sap-successfactors-editorial.webp" alt="Illustration for SAP SuccessFactors: An HR garden shows hiring, onboarding, learning, feedback, and retention as stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - structure HR master data and employee processes

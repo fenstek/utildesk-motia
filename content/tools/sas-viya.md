@@ -21,6 +21,11 @@ SAS Viya ist ideal für Unternehmen und Organisationen, die ihre Datenanalyse- u
 - Unternehmen mit hohen Anforderungen an Datenintegration und -verarbeitung  
 - Branchen wie Finanzdienstleistungen, Gesundheitswesen, Einzelhandel und Fertigung, die komplexe Datenanalysen und prädiktive Modelle einsetzen
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sas-viya-editorial.webp" alt="Illustration zu SAS Viya: Daten wachsen in einem Gewaechshaus von Vorbereitung ueber Modelltraining bis Deployment" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** SAS Viya eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um analytics, data science, enterprise ai nicht mehr improvisieren wollen.

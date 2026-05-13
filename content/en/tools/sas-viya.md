@@ -25,6 +25,11 @@ SAS Viya is ideal for companies and organizations that want to bring their data 
 - Companies with high requirements for data integration and processing  
 - Industries such as financial services, healthcare, retail, and manufacturing that use complex data analysis and predictive models  
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sas-viya-editorial.webp" alt="Illustration for SAS Viya: Data grows in a greenhouse from preparation through model training to deployment" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Cloud-native architecture:** Flexible and scalable, supports on-premises, private, and public clouds  

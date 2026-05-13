@@ -32,6 +32,11 @@ The best real-world test for SAP Analytics Cloud is small, but genuine. A team s
 - **Rollout question:** which data models, roles, and planning cycles are mandatory.
 - **Constraint:** with a weak SAP data foundation, it produces complex modeling instead of insight.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sap-analytics-cloud-editorial.webp" alt="Illustration for SAP Analytics Cloud: Acrylic towers and forecast objects meet on a decision table" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Data discovery and visualization:** Interactive dashboards and reports for easy presentation of complex data.

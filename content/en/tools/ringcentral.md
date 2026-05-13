@@ -26,6 +26,11 @@ RingCentral is aimed primarily at small, medium-sized, and large businesses look
 - Organizations that want to modernize existing IT infrastructure and prefer cloud solutions.
 - Industries that rely on fast and flexible communication, such as sales, IT, education, or healthcare.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ringcentral-editorial.webp" alt="Illustration for RingCentral: Empty meeting rooms connect voice, message, and meeting signals at one table" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Cloud telephony:** VoIP telephony with features such as call forwarding, voicemail, call recording, and more.

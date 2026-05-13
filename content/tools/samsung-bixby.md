@@ -30,6 +30,11 @@ Samsung Bixby sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisieru
 - **Guter Start für Samsung Bixby:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Samsung Bixby:** Der Einsatz kippt in Zusatzarbeit, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/samsung-bixby-editorial.webp" alt="Illustration zu Samsung Bixby: Klangbaender steuern Licht, Vorhaenge und Aufgabenobjekte in einem Wohnzimmer" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Sprachsteuerung:** Steuerung von Smartphone-Funktionen, Apps und Einstellungen per Sprachbefehl.

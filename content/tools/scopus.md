@@ -16,6 +16,11 @@ Scopus ist eine umfangreiche, multidisziplinäre Datenbank für wissenschaftlich
 
 Scopus richtet sich vor allem an Wissenschaftler, Forscher, Bibliothekare und akademische Institutionen, die Zugang zu einer breiten Sammlung wissenschaftlicher Artikel und Konferenzbeiträge benötigen. Ebenso profitieren Forschungsmanager und Bibliometriker von den Analysefunktionen, um Forschungsleistungen zu bewerten und Förderentscheidungen zu unterstützen. Auch Unternehmen mit Forschungsabteilungen nutzen Scopus, um wissenschaftliche Entwicklungen und Wettbewerber zu verfolgen.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scopus-editorial.webp" alt="Illustration zu Scopus: Forschungskarten aus Archivschubladen werden zu einer Wissenskarte verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Scopus eignet sich, wenn Content-, Design- und Produktionsteams einen wiederkehrenden Ablauf rund um research, bibliometrics, publications nicht mehr improvisieren wollen.

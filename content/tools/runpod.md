@@ -36,6 +36,11 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte RunPod zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** RunPod enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/runpod-editorial.webp" alt="Illustration zu RunPod: Kleine Compute-Pods oeffnen sich als Werkstaetten fuer verschiedene KI-Aufgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bereitstellung von GPU-Instanzen unterschiedlicher Leistungsklassen (z. B. Nvidia A100, RTX 3090)

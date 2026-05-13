@@ -20,6 +20,11 @@ Rocket.Chat is a versatile open-source communications platform that helps teams 
 
 Rocket.Chat is aimed at small, medium-sized, and large businesses that are looking for a flexible and secure communication solution. The platform is especially well suited for organizations that value privacy and prefer an open-source alternative to proprietary chat solutions. Development teams, educational institutions, and non-profit organizations also benefit from its customizability and extensive integration options. Because Rocket.Chat can be self-hosted, the platform is suitable for users with specific compliance requirements.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rocket-chat-editorial.webp" alt="Illustration for Rocket.Chat: Message slips travel through workshop rooms, a moderation gate, and a toolbox shelf" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Real-time chat:** Direct messages, group chats, and channel chats with extensive formatting options.

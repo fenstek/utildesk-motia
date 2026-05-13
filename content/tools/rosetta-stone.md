@@ -24,6 +24,11 @@ Rosetta Stone richtet sich an eine breite Zielgruppe. Besonders geeignet ist die
 
 Durch die Anpassung an verschiedene Lernniveaus und den Fokus auf alltagsnahe Kommunikation eignet sich Rosetta Stone sowohl für Anfänger als auch für Fortgeschrittene.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rosetta-stone-editorial.webp" alt="Illustration zu Rosetta Stone: Sprachuebungen werden als Steinplaettchen, Bildkarten und Klangpfade aufgebaut" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Rosetta Stone eignet sich, wenn Operations-, Lern- und Office-Teams einen wiederkehrenden Ablauf rund um education, language, learning nicht mehr improvisieren wollen.

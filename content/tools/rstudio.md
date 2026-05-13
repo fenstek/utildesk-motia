@@ -16,6 +16,11 @@ RStudio ist eine integrierte Entwicklungsumgebung (IDE) für die Programmierspra
 
 RStudio richtet sich an Datenwissenschaftler, Statistikexperten, Entwickler und Analysten, die mit der Programmiersprache R arbeiten. Besonders geeignet ist es für Nutzer, die umfangreiche Datenanalysen, statistische Modellierungen oder Visualisierungen durchführen möchten. Im Audio-Bereich profitieren vor allem diejenigen von RStudio, die Audiodaten quantitativ auswerten oder mit maschinellem Lernen im Kontext von Audioexperimenten arbeiten. Auch Entwickler, die datenbasierte Anwendungen oder Prototypen in R erstellen möchten, finden hier eine leistungsfähige Umgebung.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rstudio-editorial.webp" alt="Illustration zu RStudio: Datenblaetter, Modellkarten und Plot-Folien werden zu einer reproduzierbaren Analyse gelegt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** RStudio eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um data, analytics, developer tools nicht mehr improvisieren wollen.

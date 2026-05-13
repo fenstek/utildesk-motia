@@ -28,6 +28,11 @@ RunAI is aimed primarily at companies and teams that want to make their work pro
 
 The platform is suitable for both small and medium-sized businesses as well as larger enterprises, depending on individual requirements and the selected plan.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/runai-editorial.webp" alt="Illustration for RunAI: Workload cars are routed through a miniature data center into GPU lanes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered workflow automation:** Automation of complex processes using AI models.

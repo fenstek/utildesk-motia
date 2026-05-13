@@ -16,6 +16,11 @@ Scikit-learn ist eine weit verbreitete Open-Source-Bibliothek für maschinelles 
 
 Scikit-learn richtet sich an Programmierer, Data Scientists und Analysten, die maschinelles Lernen in ihre Projekte integrieren möchten. Besonders geeignet ist die Bibliothek für Nutzer, die bereits mit Python arbeiten und eine umfassende, aber zugleich leicht verständliche Sammlung von Algorithmen benötigen. Auch Einsteiger im Bereich Machine Learning profitieren von der klaren API und der umfangreichen Dokumentation. Für Unternehmen, die Prototypen entwickeln oder datengetriebene Modelle implementieren wollen, ist Scikit-learn ebenfalls eine praktische Wahl.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/scikit-learn-editorial.webp" alt="Illustration zu Scikit-learn: Beispielkugeln laufen durch Modellspielplaetze, Cluster-Schalen und Validierungsskalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Klassifikation:** Unterstützung für Algorithmen wie Support Vector Machines (SVM), k-Nearest Neighbors (k-NN), Random Forests und mehr.

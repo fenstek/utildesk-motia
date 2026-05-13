@@ -25,6 +25,11 @@ Runway richtet sich an eine breite Zielgruppe, darunter:
 
 Die Plattform eignet sich besonders für Nutzer, die Wert auf eine einfache Bedienung legen, ohne auf professionelle Ergebnisse verzichten zu wollen.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/runway-editorial.webp" alt="Illustration zu Runway: Storyboard-Karten verwandeln sich auf einem Filmset in eine projizierte Szene" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Runway eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um video, automation nicht mehr improvisieren wollen.

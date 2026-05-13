@@ -26,6 +26,11 @@ SAS is aimed at businesses and organizations of different sizes and industries t
 
 Depending on the plan and module, SAS can be adapted for both beginners and experienced analysts.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sas-editorial.webp" alt="Illustration for SAS: Measurement points move through lenses, levers, and probability paths in a statistics lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Data management:** Extensive tools for data integration, cleansing, and preparation.
