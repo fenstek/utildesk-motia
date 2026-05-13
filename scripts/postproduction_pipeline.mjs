@@ -15,6 +15,7 @@ const DEFAULT_REV_RANGE = "HEAD~1..HEAD";
 const DEFAULT_TIMEOUT_SECONDS = 600;
 const DEFAULT_POLL_INTERVAL_SECONDS = 15;
 const DEFAULT_RESUBMIT_WINDOW_HOURS = 20;
+const DEFAULT_MAX_SUBMIT_URLS = 90;
 
 function die(message) {
   console.error(`[postproduction] ERROR: ${message}`);
@@ -44,6 +45,7 @@ function parseArgs(argv) {
     timeoutSeconds: DEFAULT_TIMEOUT_SECONDS,
     pollIntervalSeconds: DEFAULT_POLL_INTERVAL_SECONDS,
     resubmitWindowHours: DEFAULT_RESUBMIT_WINDOW_HOURS,
+    maxSubmitUrls: DEFAULT_MAX_SUBMIT_URLS,
     json: false,
   };
 
@@ -80,6 +82,8 @@ function parseArgs(argv) {
       opts.pollIntervalSeconds = parsePositiveInt(next(), arg);
     } else if (arg === "--resubmit-window-hours") {
       opts.resubmitWindowHours = parsePositiveInt(next(), arg);
+    } else if (arg === "--max-submit-urls") {
+      opts.maxSubmitUrls = parsePositiveInt(next(), arg);
     } else if (arg === "--dry-run") {
       opts.dryRun = true;
     } else if (arg === "--wait-live") {
@@ -132,6 +136,7 @@ function printHelp() {
 `  --submit-bing-feeds          Also submit sitemap.xml and sitemap-bing.xml to Bing\n` +
 `  --no-umami                  Skip Umami snapshot\n` +
 `  --resubmit-window-hours <n>  Skip URLs submitted recently (default: ${DEFAULT_RESUBMIT_WINDOW_HOURS})\n` +
+`  --max-submit-urls <n>        Cap external URL submissions per run (default: ${DEFAULT_MAX_SUBMIT_URLS})\n` +
 `  --json                       Print final report JSON path/result\n`);
 }
 
@@ -734,10 +739,15 @@ async function main() {
   const allUrls = dedupe([...contentUrls, ...explicitUrls, ...hubUrls], (url) => url);
 
   const recentInfo = filterRecentUrls(allUrls, state, opts.resubmitWindowHours, now.getTime());
-  const submitUrls = recentInfo.filter((item) => !item.recentlySubmitted).map((item) => item.url);
+  const eligibleSubmitUrls = recentInfo.filter((item) => !item.recentlySubmitted).map((item) => item.url);
+  const submitUrls = eligibleSubmitUrls.slice(0, opts.maxSubmitUrls);
+  const deferredSubmitUrls = eligibleSubmitUrls.slice(opts.maxSubmitUrls);
 
   log(`rev_range=${opts.revRange}`);
   log(`changed_files=${changedFiles.length} content_items=${derivedItems.length} urls=${allUrls.length} submit_urls=${submitUrls.length}`);
+  if (deferredSubmitUrls.length) {
+    log(`deferred_urls=${deferredSubmitUrls.length} because max_submit_urls=${opts.maxSubmitUrls}`);
+  }
   if (opts.dryRun) log("dry-run enabled: external submissions are skipped or simulated");
 
   const liveCheck = opts.waitLive && allUrls.length
@@ -780,6 +790,7 @@ async function main() {
     items: derivedItems,
     urls: allUrls,
     submitUrls,
+    deferredSubmitUrls,
     recentlySubmitted: recentInfo.filter((item) => item.recentlySubmitted),
     liveCheck,
     submissions: submissionResults,
