@@ -23,6 +23,10 @@ That is exactly why Replika should be considered carefully. The tool can be plea
 
 Replika is suitable for people who are curious about AI companions, looking for journaling prompts, or want to try low-threshold conversations. Caution is advised if users are emotionally very vulnerable or treat the AI as their only important point of contact.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/replika-editorial.webp" alt="Illustration for Replika: Chat bubbles, mood cards, and memory paths form a private conversation flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Organize thoughts and answer light reflection questions.

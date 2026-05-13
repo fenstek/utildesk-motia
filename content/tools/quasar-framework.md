@@ -30,6 +30,10 @@ Als Prüfstück für Quasar Framework eignet sich einem realen Entwicklungsablau
 - **Guter Start für Quasar Framework:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Quasar Framework:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quasar-framework-editorial.webp" alt="Illustration zu Quasar Framework: Komponenten, App-Panels und Build-Pfade formen einen Cross-Plattform-Workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Plattformübergreifende Entwicklung:** Erstellen Sie Web-, Mobile- (iOS, Android) und Desktop-Anwendungen mit einer einzigen Codebasis.

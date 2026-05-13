@@ -18,6 +18,10 @@ Der Reiz liegt in der Geschwindigkeit. Ein gutes Freistellungsergebnis spart Min
 
 Geeignet ist remove.bg für E-Commerce, Social Media, Creator, kleine Marketingteams, Marktplatzbilder und schnelle Designworkflows. Für High-End-Retusche, große Kampagnen oder komplexe Composings ist eine manuelle Kontrolle in Photoshop oder Affinity sinnvoll.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/remove-bg-editorial.webp" alt="Illustration zu Remove.bg: Produktfotos werden freigestellt, maskiert und mit neuen Hintergründen vorbereitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Produktbilder für Shops oder Marktplatz-Listings freistellen.

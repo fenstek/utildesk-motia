@@ -26,6 +26,10 @@ Readable is aimed at a broad audience, including:
 - **Educational institutions and trainers** who want to design teaching materials clearly and precisely.
 - **Anyone who wants to improve their writing skills and make texts easier to read.**
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/readable-editorial.webp" alt="Illustration for Readable: Document drafts are refined through readability, clarity, and review" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Readable is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around readability, writing, content.

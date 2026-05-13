@@ -20,6 +20,10 @@ Schreibtools sind dann nützlich, wenn sie Rohmaterial, Varianten und Struktur l
 
 Bei Quest zählt nicht nur der Funktionsumfang. Wichtiger ist, ob das Tool in vorhandene Routinen passt und dort Nacharbeit reduziert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quest-editorial.webp" alt="Illustration zu Quest: Szenenkarten, Objektkacheln und Entscheidungswege formen eine interaktive Geschichte" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Textadventures ohne große Engine bauen

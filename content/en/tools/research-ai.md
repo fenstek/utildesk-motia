@@ -26,6 +26,10 @@ Research AI is aimed at students, scientists, academics, and professionals who r
 
 Thanks to its intuitive interface and extensive search and analysis functions, Research AI is suitable for both beginners and experienced users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/research-ai-editorial.webp" alt="Illustration for Research AI: Source cards, evidence nodes, and checks condense research findings" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **AI-powered literature search:** Automated search for relevant scientific articles, studies, and publications.

@@ -25,6 +25,10 @@ Quirkos is designed for professionals and teams that want to analyze and visuali
 
 The tool is suitable for both individual users and teams working collaboratively on projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quirkos-editorial.webp" alt="Illustration for Quirkos: Interview cards, codes, and theme clusters are organized into qualitative insights" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Quirkos is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around design, workflow.

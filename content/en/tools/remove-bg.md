@@ -22,6 +22,10 @@ The appeal lies in speed. A good cutout result saves minutes or hours, but with 
 
 remove.bg is suitable for e-commerce, social media, creators, small marketing teams, marketplace images, and fast design workflows. For high-end retouching, large campaigns, or complex compositing, manual control in Photoshop or Affinity makes sense.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/remove-bg-editorial.webp" alt="Illustration for Remove.bg: Product photos are cut out, masked, and prepared with new backgrounds" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Cut out product images for shops or marketplace listings.

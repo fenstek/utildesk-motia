@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-13_
 
+## 2026-05-13 - Tool illustration batch 17
+
+- Added one mid-article WebP illustration to 30 additional manually edited tool cards in both German and English.
+- Continued the 1260px source WebP and 90% `.tool-editorial-figure` display scheme.
+- Selection follows the edited-tail illustration registry after `quark`; slugs run from `quasar-framework` through `rev-com`.
+- Regenerated the batch with deliberately varied styles after uniformity feedback: paper collage, parchment map, blueprint, light isometric, studio still life, darkroom, acoustic sculpture, and pastel logistics diagrams.
+- Rejected replacement variants with platform-logo, face/head, user/profile-icon, readable-text, or repeated-dashboard artifacts before converting the selected outputs.
+
 ## 2026-05-13 - Tool illustration batch 16
 
 - Added one mid-article WebP illustration to 50 additional manually edited tool cards in both German and English.

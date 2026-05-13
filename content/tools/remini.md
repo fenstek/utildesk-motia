@@ -15,6 +15,10 @@ Remini ist ein KI-gestütztes Bildverbesserungswerkzeug, das vor allem für Sch�
 
 Remini passt zu Nutzern, die alte, unscharfe oder niedrig aufgelöste Bilder schnell verbessern möchten. Für Markenproduktion, forensische Arbeit oder dokumentarisch exakte Bildkorrektur ist Vorsicht nötig, weil KI Details plausibel ergänzen kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/remini-editorial.webp" alt="Illustration zu Remini: Unscharfe Bildkacheln werden über Restaurierung und Upscaling klarer ausgegeben" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Alte Familienfotos oder niedrig aufgelöste Portraits sichtbar verbessern.

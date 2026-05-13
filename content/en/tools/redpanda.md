@@ -33,6 +33,10 @@ With Redpanda, I would distinguish early between the demo impression and operati
 - **Quality question:** Which latency, retention, and compatibility with existing Kafka clients are required.
 - **Risk:** Even with simpler operations, clear schema and consumer design is still required.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/redpanda-editorial.webp" alt="Illustration for Redpanda: Event streams move through partitions, broker nodes, and monitoring paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Kafka compatibility**: Redpanda is API-compatible with Apache Kafka, so existing Kafka clients and tools can continue to be used.

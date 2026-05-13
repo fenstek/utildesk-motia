@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitu
 - **Guter Startpunkt:** Für Reaper eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Reaper enttäuscht, wenn Ausgangsmaterial, Rechte, Zielplattformen und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reaper-editorial.webp" alt="Illustration zu Reaper: Mehrspur-Aufnahmen laufen durch Schnitt, Mix, Routing und Renderpfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Automatisierung:** Automatisierung von Routineaufgaben durch KI-basierte Workflows.

@@ -22,6 +22,10 @@ The technology is powerful, but sensitive. A cloned voice is not just a media as
 
 Resemble AI is suitable for media production, gaming, e-learning, localization, voice interfaces, and brands that want to build consistent audio experiences. It is not suitable for covert imitation, unverified mass production, or content where authenticity is legally or humanly sensitive.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/resemble-ai-editorial.webp" alt="Illustration for Resemble AI: Waveforms, voice profiles, and checkpoints produce synthetic speech outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Update voice-over for training modules or product videos more quickly.

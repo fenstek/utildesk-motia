@@ -27,6 +27,10 @@ Bei Redpanda würde ich früh zwischen Demo-Eindruck und Betriebsrealität unter
 - **Qualitätsfrage:** welche Latenz, Retention und Kompatibilität zu bestehenden Kafka-Clients nötig ist.
 - **Risiko:** trotz einfacherem Betrieb weiterhin klares Schema- und Consumer-Design verlangt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/redpanda-editorial.webp" alt="Illustration zu Redpanda: Event-Streams laufen durch Partitionen, Broker-Knoten und Monitoring-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Kafka-Kompatibilität**: Redpanda ist API-kompatibel mit Apache Kafka, sodass bestehende Kafka-Clients und -Tools weiterverwendet werden können.

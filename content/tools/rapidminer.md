@@ -27,6 +27,10 @@ Bei RapidMiner würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - **Qualitätsfrage:** welche Datenqualität, Validierung und Modellverantwortung definiert sind.
 - **Risiko:** ohne methodisches Verständnis keine belastbaren Modelle garantiert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rapidminer-editorial.webp" alt="Illustration zu RapidMiner: Datenblöcke laufen durch Vorbereitung, Training, Validierung und Deployment" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visuelle Workflow-Erstellung:** Drag-and-Drop-Oberfläche zur einfachen Modellierung von Datenprozessen.

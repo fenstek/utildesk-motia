@@ -18,6 +18,10 @@ Die Technologie ist stark, aber sensibel. Eine geklonte Stimme ist nicht nur ein
 
 Geeignet ist Resemble AI für Medienproduktion, Gaming, E-Learning, Lokalisierung, Voice Interfaces und Marken, die konsistente Audioerlebnisse aufbauen wollen. Nicht geeignet ist es für heimliche Imitation, ungeprüfte Massenproduktion oder Inhalte, bei denen Authentizität rechtlich oder menschlich heikel ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/resemble-ai-editorial.webp" alt="Illustration zu Resemble AI: Wellenformen, Stimmprofile und Prüfpunkte erzeugen synthetische Sprachausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Voice-over für Trainingsmodule oder Produktvideos schneller aktualisieren.

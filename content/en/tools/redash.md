@@ -20,6 +20,10 @@ Redash is an open-source platform for data visualization and analysis that helps
 
 Redash is aimed primarily at developers, data analysts, data scientists, and technical teams that work with data regularly and want to visualize it. The platform is well suited for companies of any size that prefer an open and extensible solution for centrally analyzing data from different sources. Because it supports SQL queries, Redash is especially useful for users familiar with relational databases. Startups and organizations with limited budgets also benefit from the open-source model, since there are no license fees.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/redash-editorial.webp" alt="Illustration for Redash: Data sources, queries, and chart cards become shareable dashboards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Support for numerous data sources such as MySQL, PostgreSQL, MongoDB, Google BigQuery, Amazon Redshift, and many more  

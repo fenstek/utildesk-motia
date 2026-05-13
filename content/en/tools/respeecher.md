@@ -32,6 +32,10 @@ With Respeecher, I would separate the demo impression from operational reality e
 - **Quality question:** whether consent, labeling, and quality approval are regulated in writing.
 - **Risk:** legally and ethically viable only with clear consent.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/respeecher-editorial.webp" alt="Illustration for Respeecher: Source tracks, voice models, and quality gates shape voice conversion" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Voice cloning:** generation of realistic speech recordings in the voice of a target person

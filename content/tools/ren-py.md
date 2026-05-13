@@ -18,6 +18,10 @@ Die Stärke liegt darin, dass Schreibende und kleine Teams relativ schnell spiel
 
 Geeignet ist Ren'Py für Visual-Novel-Autorinnen, Indie-Entwickler, Lernprojekte, interaktive Fiction, Dating Sims, Prototypen und narrative Experimente. Für actionlastige Spiele oder komplexe 3D-Welten ist eine andere Engine passender.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ren-py-editorial.webp" alt="Illustration zu Ren’Py: Szenenkarten, Auswahlpfade und Asset-Ordner formen eine Visual-Novel-Struktur" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Visual Novels mit Dialogen, Charakteren und Branching Story erstellen.

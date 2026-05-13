@@ -42,6 +42,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test QuillBot in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** QuillBot disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quillbot-editorial.webp" alt="Illustration for QuillBot: Drafts move through tone, rewriting, and review into clearer variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Paraphrasing:** Automatic rewriting of text in different styles and tones.

@@ -16,6 +16,10 @@ Reface ist eine innovative KI-basierte App, die es Nutzern ermöglicht, Gesichte
 
 Reface richtet sich an eine breite Zielgruppe, die Spaß an kreativen visuellen Effekten hat. Besonders geeignet ist die App für Social-Media-Nutzer, die ihre Posts mit einzigartigen, personalisierten Videos aufwerten möchten. Ebenso finden Content Creator, Influencer und Marketingexperten Gefallen an den schnellen und beeindruckenden Ergebnissen. Auch für alle, die Interesse an KI-Technologien und Deepfakes haben, bietet Reface eine zugängliche Plattform zum Experimentieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reface-editorial.webp" alt="Illustration zu Reface: Medienkacheln, Masken und Prüfpunkte bilden einen sicheren Transformationsfluss" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Reface eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation nicht mehr improvisieren wollen.

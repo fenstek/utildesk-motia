@@ -20,6 +20,10 @@ Rebelle eignet sich für Illustratorinnen, Concept Artists und digitale Künstle
 
 Für Fotoretusche, Social-Templates oder Vektordesign ist Rebelle nicht die naheliegendste Wahl. Der Fokus liegt auf künstlerischer Bildentstehung, nicht auf Teamfreigaben oder Asset-Management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rebelle-editorial.webp" alt="Illustration zu Rebelle: Pinsel, Pigmente und Papiertexturen bauen eine digitale Naturmedien-Illustration auf" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Digitale Aquarelle und Illustrationen malen
