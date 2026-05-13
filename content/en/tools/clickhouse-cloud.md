@@ -26,6 +26,19 @@ ClickHouse Cloud is primarily aimed at businesses and developers who want to qui
 - Businesses that want to process Big Data and IoT data in the cloud.
 - Companies that rely on fast queries on large data sets, such as web analytics, finance, or marketing.
 
+## Typical Use Cases
+
+- **Focused rollout:** ClickHouse Cloud is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data, analytics, cloud.
+- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
+- **Team handovers:** ClickHouse Cloud can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
+- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+
+## What really matters in daily use
+
+In day-to-day work, ClickHouse Cloud is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+
+ClickHouse Cloud is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+
 ## Key Features
 
 - **Cloud-native architecture**: Fully managed service with no infrastructure overhead.
@@ -57,6 +70,24 @@ ClickHouse Cloud is primarily aimed at businesses and developers who want to qui
 - May not be suitable for very specific or complex use cases.
 - Dependence on cloud connection and internet availability.
 - May require overdimensioning, leading to unnecessary costs.
+
+## Workflow Fit
+
+ClickHouse Cloud fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+
+If ClickHouse Cloud becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+
+## Privacy & Data
+
+Before adopting ClickHouse Cloud, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
+
+For European teams evaluating ClickHouse Cloud, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing ClickHouse Cloud before the data path is understood.
+
+## Editorial Assessment
+
+ClickHouse Cloud is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+
+Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether ClickHouse Cloud genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
 ## Pricing & Costs
 

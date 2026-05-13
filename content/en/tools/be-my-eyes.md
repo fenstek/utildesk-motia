@@ -48,6 +48,37 @@ Be My Eyes is primarily designed for people with visual impairments or blindness
 - Data protection concerns with video transmission.
 - AI-powered functions are still in development and not fully mature.
 
+## Typical Use Cases
+
+- **Focused rollout:** Be My Eyes is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around assistant, automation, workflow.
+- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
+- **Team handovers:** Be My Eyes can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
+- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+
+## What really matters in daily use
+
+In day-to-day work, Be My Eyes is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+
+Be My Eyes is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+
+## Workflow Fit
+
+Be My Eyes fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+
+If Be My Eyes becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+
+## Privacy & Data
+
+Before adopting Be My Eyes, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
+
+For European teams evaluating Be My Eyes, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Be My Eyes before the data path is understood.
+
+## Editorial Assessment
+
+Be My Eyes is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+
+Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Be My Eyes genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+
 ## Pricing and Costs
 
 Be My Eyes is free for visually impaired users and volunteers. For companies and organizations that want to offer professional support, costs may apply depending on the scope and usage plan. The app primarily follows a freemium model, where the basic functions are free, and additional features may incur costs.

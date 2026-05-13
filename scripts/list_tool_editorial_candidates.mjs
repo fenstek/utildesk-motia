@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const registryPath = path.join(root, "docs", "04_operations", "tool_card_editorial_registry.json");
+const illustrationRegistryPath = path.join(root, "docs", "04_operations", "tool_card_illustration_registry.json");
 const toolsDir = path.join(root, "content", "tools");
 const enToolsDir = path.join(root, "content", "en", "tools");
 
@@ -38,11 +39,23 @@ function hasEditorialMarker(text) {
 
 const registry = JSON.parse(await fs.readFile(registryPath, "utf8"));
 const registered = new Set();
+const illustrated = new Set();
 
 for (const batch of registry.batches || []) {
   for (const slug of batch.slugs || []) {
     registered.add(slug);
   }
+}
+
+try {
+  const illustrationRegistry = JSON.parse(await fs.readFile(illustrationRegistryPath, "utf8"));
+  for (const batch of illustrationRegistry.batches || []) {
+    for (const slug of batch.slugs || []) {
+      illustrated.add(slug);
+    }
+  }
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
 }
 
 const files = (await fs.readdir(toolsDir))
@@ -52,6 +65,7 @@ const files = (await fs.readdir(toolsDir))
 const candidates = [];
 const skipped = {
   registered: 0,
+  illustrated: 0,
   inactive: 0,
   missingEnglish: 0,
   alreadyMarked: 0,
@@ -65,6 +79,11 @@ for (const file of files) {
 
   if (registered.has(slug)) {
     skipped.registered += 1;
+    continue;
+  }
+
+  if (illustrated.has(slug)) {
+    skipped.illustrated += 1;
     continue;
   }
 

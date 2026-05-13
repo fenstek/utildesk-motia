@@ -20,6 +20,19 @@ Kayako is a cloud-based helpdesk and customer service platform that helps compan
 
 Kayako is aimed primarily at small to medium-sized businesses looking for a scalable solution for customer service. The tool is especially suitable for companies that want to bring multiple communication channels together on one platform, including email, live chat, social media, and phone. Support teams that value collaborative workflows and want to improve service quality through automation can also benefit from Kayako. Because of its SaaS structure, the solution is flexible and can be adapted to different requirements depending on the plan.
 
+## Typical Use Cases
+
+- **Focused rollout:** Kayako is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around helpdesk, customer support, SaaS.
+- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
+- **Team handovers:** Kayako can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
+- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+
+## What really matters in daily use
+
+In day-to-day work, Kayako is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+
+Kayako is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+
 ## Key Features
 
 - **Multichannel ticketing:** Manage customer requests from different channels centrally in a single system.
@@ -47,6 +60,24 @@ Kayako is aimed primarily at small to medium-sized businesses looking for a scal
 - Some advanced features are only included in higher-priced packages.
 - Customization options for the user interface design are limited.
 - Less suitable for very large companies with complex custom requirements.
+
+## Workflow Fit
+
+Kayako fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+
+If Kayako becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+
+## Privacy & Data
+
+Before adopting Kayako, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
+
+For European teams evaluating Kayako, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Kayako before the data path is understood.
+
+## Editorial Assessment
+
+Kayako is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+
+Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Kayako genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
 ## Pricing & Costs
 
