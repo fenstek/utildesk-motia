@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [hcm, hr, enterprise-software]
 official_url: "https://www.workday.com/en-us/products/human-capital-management/overview.html"
-popularity: 5
+popularity: 4
 ---
 # Workday HCM
 

@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["chatbot", "writing"]
 official_url: "https://www.anthropic.com/"
 created_at: 2026-02-12
-popularity: 69
+popularity: 71
 ---
 # Anthropic
 

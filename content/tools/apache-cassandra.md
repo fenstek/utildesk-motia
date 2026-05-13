@@ -5,7 +5,7 @@ category: Developer
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://cassandra.apache.org/_/index.html"
-popularity: 69
+popularity: 70
 ---
 
 # Apache Cassandra

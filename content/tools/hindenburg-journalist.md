@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [audio, productivity, automation, workflow]
 official_url: "https://hindenburg.com/"
-popularity: 43
+popularity: 45
 ---
 
 # Hindenburg Journalist

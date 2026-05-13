@@ -5,7 +5,7 @@ category: Developer
 price_model: Je nach Plan
 tags: [coding,workflow]
 official_url: "https://coder.com/"
-popularity: 57
+popularity: 60
 ---
 
 # Coder

@@ -1,13 +1,13 @@
 ---
 slug: hera
 title: Hera
-category: "Audio & Video"
-price_model: "Je nach Plan"
+category: Audio & Video
+price_model: Je nach Plan
 tags: ["video", "ai", "motion-design", "launch-video", "marketing"]
 official_url: "https://hera.video/"
 affiliate_url: "https://hera.video/"
 created_at: 2026-05-12
-popularity: 0
+popularity: 91
 ---
 
 # Hera

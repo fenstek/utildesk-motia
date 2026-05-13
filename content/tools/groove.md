@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [helpdesk, support, productivity]
 official_url: "https://www.groovehq.com/"
-popularity: 0
+popularity: 47
 ---
 
 # Groove

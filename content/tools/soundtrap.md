@@ -2,11 +2,11 @@
 slug: soundtrap
 title: Soundtrap
 category: Audio
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [audio, productivity]
 official_url: "https://www.soundtrap.com/home/"
-popularity: 0
-description: "Soundtrap ist ein Audio- und Musikwerkzeug für browserbasierte Musikproduktion und Audio-Kollaboration für Songs, Podcasts und Unterricht."
+popularity: 12
+description: Soundtrap ist ein Audio- und Musikwerkzeug für browserbasierte Musikproduktion und Audio-Kollaboration für Songs, Podcasts und Unterricht.
 ---
 # Soundtrap
 

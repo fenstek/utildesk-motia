@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [productivity,collaboration,workspace]
 official_url: "https://workspace.google.com/"
-popularity: 47
+popularity: 48
 ---
 
 # Google Workspace

@@ -6,7 +6,7 @@ price_model: Kostenlos
 tags: ["analytics", "data", "dashboard", "reporting", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
 affiliate_url: "https://lookerstudio.google.com/overview"
-popularity: 35
+popularity: 36
 description: Kostenloses Google-Tool für Dashboards, Datenvisualisierung und wiederkehrende Reports.
 ---
 
