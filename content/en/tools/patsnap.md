@@ -25,6 +25,10 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 PatSnap is especially relevant for R&D, IP management, product strategy, and technology-driven companies. The value shows up when it owns a clearly named task instead of becoming just another window beside the real process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/patsnap-editorial.webp" alt="Illustration for PatSnap: Patent data, technology fields, and market signals are linked strategically" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - analyze technology fields and competitors

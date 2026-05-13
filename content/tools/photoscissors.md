@@ -30,6 +30,10 @@ PhotoScissors sollte zuerst in einem konkreten Asset mit Briefing, Versionen, Fe
 - **Guter Start für PhotoScissors:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei PhotoScissors:** Kritisch wird es, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photoscissors-editorial.webp" alt="Illustration zu PhotoScissors: Bildobjekte werden ueber Masken sauber vom Hintergrund getrennt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Hintergrundentfernung per KI-Algorithmus

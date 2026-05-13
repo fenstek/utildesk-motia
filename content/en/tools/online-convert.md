@@ -34,6 +34,10 @@ A useful pilot for Online-Convert starts with a real weekly workflow with tasks,
 - **Good start for Online-Convert:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Online-Convert:** Even a good interface helps only partly when rules, notifications, data care, and ownership are not agreed together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/online-convert-editorial.webp" alt="Illustration for Online-Convert: File types move through conversion paths into organized outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Support for numerous file formats for documents, images, audio, video, and e-books.

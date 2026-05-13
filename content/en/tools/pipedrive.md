@@ -34,6 +34,10 @@ Pipedrive should first prove itself in a real campaign with audience, content, d
 - **Good start for Pipedrive:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Pipedrive:** The rollout turns into extra coordination when audiences, tracking, consent, data care, and follow-up processes are not defined clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipedrive-editorial.webp" alt="Illustration for Pipedrive: Deals move through pipeline stages, activities, and forecast paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Sales pipeline management:** Visualize and control each sales stage for better clarity.

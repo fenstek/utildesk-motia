@@ -39,6 +39,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** Test OutSystems in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** OutSystems disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/outsystems-editorial.webp" alt="Illustration for OutSystems: Low-code blocks, integrations, and deployment gates shape business apps" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Visual app development via drag-and-drop without extensive programming  

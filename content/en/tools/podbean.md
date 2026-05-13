@@ -31,6 +31,10 @@ A good test case for Podbean is a real recording with source material, editing, 
 - **Good start for Podbean:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Podbean:** Even a good interface helps only partly when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/podbean-editorial.webp" alt="Illustration for Podbean: Podcast episodes are hosted, distributed, and evaluated through signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Podcast Hosting**: Storage space and bandwidth for publishing audio content.

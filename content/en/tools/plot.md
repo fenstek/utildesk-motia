@@ -37,6 +37,10 @@ In daily work, Plot is worthwhile when the team does more than manage dates: it 
 
 A good social plan is not a rigid timetable. It leaves room for current topics, but protects against the permanent state of creative panic shortly before the end of the workday.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/plot-editorial.webp" alt="Illustration for Plot: Scene cards and timelines form a structured story arc" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Planning and organizing social media content.

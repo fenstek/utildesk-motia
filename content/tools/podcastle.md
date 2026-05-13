@@ -16,6 +16,10 @@ Podcastle ist eine KI-gestützte Plattform, die sich auf die Erstellung, Aufnahm
 
 Podcastle richtet sich an Podcaster, Content Creator, Journalisten und Marketingfachleute, die qualitativ hochwertige Audio- und Videoinhalte erstellen möchten, ohne aufwendige Technikkenntnisse zu benötigen. Ebenso profitieren Teams, die remote zusammenarbeiten, von den kollaborativen Funktionen der Plattform. Auch für Bildungsinhalte, Interviews und Voiceover-Projekte ist Podcastle eine praktische Lösung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/podcastle-editorial.webp" alt="Illustration zu Podcastle: Mehrspur-Aufnahmen werden bereinigt, geschnitten und fuer Veroeffentlichung gebuendelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Audioaufnahme**: Aufnahme in Studioqualität direkt im Browser.

@@ -20,6 +20,10 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 Besonders passend ist PatSnap für R&D, IP-Management, Produktstrategie und technologiegetriebene Unternehmen. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/patsnap-editorial.webp" alt="Illustration zu PatSnap: Patentdaten, Technologiefelder und Marktsignale werden strategisch verknuepft" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Technologiefelder und Wettbewerber analysieren

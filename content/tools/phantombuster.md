@@ -21,6 +21,10 @@ PhantomBuster eignet sich für Growth-, Sales- und Research-Teams, die wiederkeh
 
 Das Tool ist aber kein Freifahrtschein für Scraping oder Spam. Wer personenbezogene Daten sammelt oder Plattformen automatisiert, muss Nutzungsbedingungen, Datenschutz, Opt-out und Kontaktqualität ernst nehmen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phantombuster-editorial.webp" alt="Illustration zu PhantomBuster: Websignale werden extrahiert, bereinigt und in Workflows geroutet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Öffentliche Webdaten strukturiert erfassen

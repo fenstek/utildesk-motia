@@ -30,6 +30,10 @@ Als Prüfstück für Noise Blocker eignet sich einer echten Aufnahme mit Rohmate
 - **Guter Start für Noise Blocker:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Noise Blocker:** Der Einsatz kippt in Zusatzarbeit, wenn Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/noise-blocker-editorial.webp" alt="Illustration zu Noise Blocker: Stoerwellen werden gefiltert und als klares Audiosignal ausgegeben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Geräuschunterdrückung:** Reduziert automatisch störende Hintergrundgeräusche während Gesprächen oder Aufnahmen.

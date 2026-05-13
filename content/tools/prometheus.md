@@ -38,6 +38,10 @@ Ein belastbarer Pilot für Prometheus beginnt mit einem realen Entwicklungsablau
 - **Guter Start für Prometheus:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Prometheus:** Kritisch wird es, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prometheus-editorial.webp" alt="Illustration zu Prometheus: Metriken laufen durch Zeitreihen, Alerts und Service-Health-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Automatisierung:** Automatisierung von Routineaufgaben ohne Programmierkenntnisse.

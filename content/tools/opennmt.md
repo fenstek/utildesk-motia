@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassun
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor OpenNMT breiter ausgerollt wird.
 - **Häufiger Stolperstein:** OpenNMT enttäuscht, wenn Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/opennmt-editorial.webp" alt="Illustration zu OpenNMT: Sprachsegmente werden ausgerichtet und durch ein Uebersetzungsmodell gefuehrt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Neuronale maschinelle Übersetzung (NMT):** Unterstützt moderne Deep-Learning-Modelle für hochwertige Übersetzungen.

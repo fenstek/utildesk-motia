@@ -35,6 +35,10 @@ A useful pilot for Pillar starts with a limited data set with a clear source, de
 - **Good start for Pillar:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Pillar:** The rollout turns into extra coordination when data sources, definitions, access rights, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pillar-editorial.webp" alt="Illustration for Pillar: Creator offers and link paths are bundled into a monetization flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Intelligent AI assistant:** Helps with task organization, scheduling, and information lookup.

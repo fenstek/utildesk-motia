@@ -36,6 +36,10 @@ In daily work, Picsart is a fast creative toolbox. The risk is that every post s
 
 For teams, a small style guide inside the tool is worthwhile: colors, fonts, logo spacing, image style. That keeps the speed while preventing the brand from showing up with a new face every Tuesday.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/picsart-editorial.webp" alt="Illustration for Picsart: Photos, effects, and layout cards combine into social graphics" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Image editing, collages, text, and creative effects.

@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Für OpenAI GPT-Modelle eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** OpenAI GPT-Modelle enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-modelle-editorial.webp" alt="Illustration zu OpenAI GPT-Modelle: Modellvarianten werden nach Faehigkeit, Kosten und Aufgabe geroutet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Textgenerierung:** Erzeugen von natürlichem, zusammenhängendem Text basierend auf Eingaben.

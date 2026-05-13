@@ -31,6 +31,10 @@ Ein belastbarer Pilot für Phrase beginnt mit einem echten Textauftrag mit Brief
 - **Guter Start für Phrase:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Phrase:** Kritisch wird es, wenn Quellen, Tonalität, Review-Regeln, Sprachvarianten und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phrase-editorial.webp" alt="Illustration zu Phrase: Inhalte laufen durch Terminologie, Uebersetzung und Review zur Lokalisierung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Translation Management System (TMS):** Zentralisierte Verwaltung von Übersetzungsprojekten mit Echtzeit-Updates und Fortschrittsverfolgung.

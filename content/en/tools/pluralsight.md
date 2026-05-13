@@ -21,6 +21,10 @@ Pluralsight is a comprehensive online learning platform designed specifically fo
 
 Pluralsight is aimed primarily at software developers, IT specialists, data scientists, and technology professionals who want to expand their skills or learn new technologies. Companies also benefit from Pluralsight when they want to invest in employee training. The platform is suitable both for beginners who want to learn the basics and for experienced professionals who want to advance in specialized areas.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pluralsight-editorial.webp" alt="Illustration for Pluralsight: Learning modules, skill paths, and lab tasks become training routes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Extensive library with thousands of technical courses and learning paths

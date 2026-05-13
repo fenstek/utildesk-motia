@@ -21,6 +21,10 @@ Podcastle is an AI-powered platform focused on creating, recording, and editing 
 
 Podcastle is aimed at podcasters, content creators, journalists, and marketing professionals who want to create high-quality audio and video content without needing extensive technical knowledge. Teams working remotely also benefit from the platform's collaborative features. Podcastle is also a practical solution for educational content, interviews, and voiceover projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/podcastle-editorial.webp" alt="Illustration for Podcastle: Multitrack recordings are cleaned, edited, and bundled for publishing" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered audio recording**: Record in studio quality directly in the browser.

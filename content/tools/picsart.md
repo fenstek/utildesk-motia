@@ -32,6 +32,10 @@ Im Alltag ist Picsart ein schneller Kreativkasten. Die Gefahr ist, dass jeder Po
 
 Für Teams lohnt ein kleiner Styleguide innerhalb des Tools: Farben, Schriften, Logoabstand, Bildstil. Dann bleibt die Geschwindigkeit erhalten, ohne dass die Marke jeden Dienstag ein neues Gesicht bekommt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/picsart-editorial.webp" alt="Illustration zu Picsart: Fotos, Effekte und Layoutkarten werden zu Social-Grafiken kombiniert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bildbearbeitung, Collagen, Text und kreative Effekte.

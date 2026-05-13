@@ -34,6 +34,10 @@ A good test case for PhotoScissors is one concrete asset with briefing, versions
 - **Good start for PhotoScissors:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with PhotoScissors:** The value becomes weak when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photoscissors-editorial.webp" alt="Illustration for PhotoScissors: Image objects are separated cleanly from the background with masks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic background removal using an AI algorithm

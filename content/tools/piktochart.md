@@ -37,6 +37,10 @@ Als Prüfstück für Piktochart eignet sich einem konkreten Asset mit Briefing, 
 - **Guter Start für Piktochart:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Piktochart:** Der Einsatz kippt in Zusatzarbeit, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/piktochart-editorial.webp" alt="Illustration zu Piktochart: Datenkarten werden zu Diagrammen, Infografiken und Berichtsseiten geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Vielzahl an vorgefertigten Templates für Infografiken, Präsentationen, Berichte und Poster

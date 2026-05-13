@@ -19,6 +19,10 @@ ProWritingAid is a comprehensive AI-powered writing and editing tool that helps 
 
 ProWritingAid is aimed at a broad audience, including professional writers, students, bloggers, marketing and content teams, and anyone who regularly writes and wants to improve their texts. The tool is especially useful for people who value stylistically polished, clear, and error-free writing and want to steadily improve their writing quality.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prowritingaid-editorial.webp" alt="Illustration for ProWritingAid: Document drafts are refined through style, grammar, and structure checks" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Grammar and spell check:** Detects and corrects spelling, grammar, and punctuation errors.

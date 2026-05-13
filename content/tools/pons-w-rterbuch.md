@@ -20,6 +20,10 @@ Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, we
 
 PONS Wörterbuch passt am ehesten zu Lernende, Übersetzer, Reisende und Menschen, die einzelne Wörter oder Wendungen präzise prüfen wollen, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pons-w-rterbuch-editorial.webp" alt="Illustration zu PONS Wörterbuch: Woerterbuchkarten verbinden Bedeutungen, Beispiele und Sprachreferenzen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Bedeutungen und Beispielsätze nachschlagen

@@ -16,6 +16,10 @@ Pixero AI ist eine innovative KI-basierte Plattform, die speziell für die Autom
 
 Pixero AI richtet sich vor allem an Marketing-Profis, Werbeagenturen sowie kleine und mittelständische Unternehmen (KMU), die ihre Marketingaktivitäten automatisieren und durch den Einsatz von künstlicher Intelligenz effektiver gestalten möchten. Auch Startups, die schnell skalieren wollen, profitieren von den vielfältigen Automatisierungsfunktionen. Die Plattform eignet sich sowohl für Einsteiger mit Grundkenntnissen im digitalen Marketing als auch für erfahrene Nutzer, die komplexe Kampagnen managen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixero-ai-editorial.webp" alt="Illustration zu Pixero AI: Prompt-Karten erzeugen Bildvarianten, Stilzweige und Asset-Ausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Kampagnenplanung:** Erstellung und Steuerung von Werbekampagnen basierend auf Zielgruppen- und Marktanalysen.

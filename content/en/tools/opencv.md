@@ -32,6 +32,10 @@ OpenCV is convincing not because it offers as many options as possible, but when
 - **Clarify first:** which accuracy, runtime, and hardware environment are realistic.
 - **Do not underestimate:** it remains hard to access without ML and image processing knowledge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/opencv-editorial.webp" alt="Illustration for OpenCV: Image tiles are processed into contours, features, and recognition signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Image and video processing (filters, transformations, edge detection)

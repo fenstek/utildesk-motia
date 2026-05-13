@@ -35,6 +35,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** Keep the first Nintex RPA trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Nintex RPA disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nintex-rpa-editorial.webp" alt="Illustration for Nintex RPA: Documents, forms, and approvals move through automated bot paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual workflow designer for easy creation of automation processes  

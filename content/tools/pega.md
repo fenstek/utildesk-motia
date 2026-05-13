@@ -16,6 +16,10 @@ Pega ist eine führende Plattform für Workflow-Automatisierung und Low-Code-Ent
 
 Pega richtet sich vor allem an mittelständische und große Unternehmen, die ihre Geschäftsprozesse optimieren und automatisieren möchten. Besonders geeignet ist die Plattform für Branchen mit komplexen Workflows, wie Finanzdienstleistungen, Gesundheitswesen, Telekommunikation und Versicherungen. IT-Teams, Prozessmanager und Fachabteilungen profitieren gleichermaßen von der Low-Code-Umgebung, die schnelle Anpassungen ermöglicht. Auch Organisationen, die eine skalierbare und KI-gestützte Lösung für Enterprise-Automatisierung suchen, finden in Pega eine passende Plattform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pega-editorial.webp" alt="Illustration zu Pega: Faelle laufen durch Entscheidungswege, Prozessstufen und Automatisierung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Workflow-Automatisierung:** Automatisierung von Geschäftsprozessen mit visuellen Designern und flexiblen Regeln.

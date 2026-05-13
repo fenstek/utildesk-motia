@@ -30,6 +30,10 @@ Procreate sollte zuerst in einem konkreten Asset mit Briefing, Versionen, Feedba
 - **Guter Start für Procreate:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Procreate:** Kritisch wird es, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/procreate-editorial.webp" alt="Illustration zu Procreate: Skizzen, Pinselstriche und Ebenen werden zu digitaler Illustration aufgebaut" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vielfältige Pinselbibliothek**: Hunderte anpassbare Pinsel für verschiedene Maltechniken.

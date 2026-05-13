@@ -34,6 +34,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - **Good starting point:** Test ON1 Photo RAW in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** ON1 Photo RAW disappoints when briefing, rights, brand rules, and export formats remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/on1-photo-raw-editorial.webp" alt="Illustration for ON1 Photo RAW: RAW images are developed with layers, masks, and color corrections" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **RAW image editing:** Support for numerous camera formats with precise color editing and exposure correction.

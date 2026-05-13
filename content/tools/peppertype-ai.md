@@ -23,6 +23,10 @@ Peppertype.ai passt zu Marketingteams, Freelancern, kleinen Unternehmen und Cont
 - Content-Engpässe in kleinen Teams abfedern.
 - Erste Rohfassungen für Kampagnen oder Landingpages vorbereiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/peppertype-ai-editorial.webp" alt="Illustration zu Peppertype.ai: Briefing-Karten werden ueber Tonalitaet und Review zu Content-Varianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-gestützte Textideen und Vorlagen.

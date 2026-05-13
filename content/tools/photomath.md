@@ -38,6 +38,10 @@ Als Prüfstück für Photomath eignet sich einer echten Lerneinheit mit Ziel, Au
 - **Guter Start für Photomath:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Photomath:** Ohne klare Regeln wird der Nutzen schwach, sobald Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photomath-editorial.webp" alt="Illustration zu Photomath: Matheaufgaben werden in Lernschritte und visuelle Loesungspfade zerlegt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Texterkennung (OCR):** Scannt mathematische Ausdrücke mit der Kamera und erkennt sie präzise  

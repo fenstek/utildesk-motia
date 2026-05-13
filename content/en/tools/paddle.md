@@ -18,6 +18,10 @@ Paddle is an innovative platform that provides companies and developers with too
 
 Paddle is aimed at small and medium-sized businesses, startups, and developers who want to integrate AI functionality into their products or services. Thanks to the freemium model, it is particularly attractive for users who want to try it free of charge first before deciding on a paid plan. It can also be a suitable option for companies that need scalable AI solutions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paddle-editorial.webp" alt="Illustration for Paddle: Data arrays move through model layers, training, and inference checks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Integration of AI models into applications without in-depth AI expertise

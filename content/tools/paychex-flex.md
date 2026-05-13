@@ -21,6 +21,10 @@ Paychex Flex richtet sich vor allem an Unternehmen jeder Größe, die eine integ
 - Firmen, die eine benutzerfreundliche und anpassbare Plattform bevorzugen.
 - Organisationen, die Wert auf automatisierte Workflows und KI-gestützte Analysen legen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paychex-flex-editorial.webp" alt="Illustration zu Paychex Flex: HR-Karten, Payroll-Pfade und Compliance-Pruefungen werden geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Lohn- und Gehaltsabrechnung:** Automatisierte Berechnung, Steuerabzüge und pünktliche Auszahlung.

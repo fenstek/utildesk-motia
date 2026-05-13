@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Nintex RPA nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Nintex RPA enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nintex-rpa-editorial.webp" alt="Illustration zu Nintex RPA: Dokumente, Formulare und Freigaben laufen durch automatisierte Bot-Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visueller Workflow-Designer zur einfachen Erstellung von Automatisierungsprozessen  

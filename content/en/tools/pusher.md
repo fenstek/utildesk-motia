@@ -35,6 +35,10 @@ A good test case for Pusher is a real development flow from setup through test d
 - **Good start for Pusher:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Pusher:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pusher-editorial.webp" alt="Illustration for Pusher: Live events are distributed through channels to connected apps" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Hosted realtime messaging channels.

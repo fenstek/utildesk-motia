@@ -16,6 +16,10 @@ OnlyOffice ist eine vielseitige Plattform, die kollaborative Office-Tools mit Au
 
 OnlyOffice eignet sich besonders für kleine bis mittelständische Unternehmen, Bildungseinrichtungen und Freiberufler, die eine integrierte Lösung für Dokumentenmanagement und Teamarbeit suchen. Die Plattform ist ideal für Nutzer, die Wert auf Datenschutz legen und ihre Daten sowohl lokal als auch in der Cloud verwalten möchten. Darüber hinaus profitieren Teams, die automatisierte Workflows und KI-gestützte Assistenzfunktionen nutzen wollen, von den angebotenen Features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/onlyoffice-editorial.webp" alt="Illustration zu OnlyOffice: Dokumente, Tabellen und Praesentationen werden gemeinsam geprueft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Online-Dokumentenbearbeitung:** Erstellung und gemeinsame Bearbeitung von Textdokumenten, Tabellen und Präsentationen in Echtzeit.

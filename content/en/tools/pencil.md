@@ -38,6 +38,10 @@ In everyday use, Pencil2D is pleasantly direct. You draw, flip through, correct.
 
 Good results come from planning: keyframes, inbetweens, timing, and clean layers. If you try to polish every frame right away, you quickly paint yourself into a corner.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pencil-editorial.webp" alt="Illustration for Pencil: Wireframes and components are arranged into a prototype flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Frame-by-frame animation with bitmap and vector drawings.

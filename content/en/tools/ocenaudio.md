@@ -21,6 +21,10 @@ Good for podcast preparation, voice recordings, teaching material, small sound c
 
 Ocenaudio is most useful for teams and individuals that treat a audio editor as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ocenaudio-editorial.webp" alt="Illustration for Ocenaudio: Audio waves are cut, checked, and exported as a clean clip" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Cut audio and remove passages

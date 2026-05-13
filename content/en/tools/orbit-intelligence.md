@@ -35,6 +35,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Test Orbit Intelligence in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Orbit Intelligence disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/orbit-intelligence-editorial.webp" alt="Illustration for Orbit Intelligence: Patent and market signals form an innovation landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Extensive patent database with global access  

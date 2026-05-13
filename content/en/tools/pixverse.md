@@ -24,6 +24,10 @@ With video tools, the workflow decides: recording, editing, audio, approval, and
 
 For creators, social teams, experimenters, and early campaign concepts, PixVerse can be a real lever. The key is to attach it to a repeatable work moment rather than using it as a vague productivity promise.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixverse-editorial.webp" alt="Illustration for PixVerse: Image ideas become short video variants through motion paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - visualize short video ideas quickly

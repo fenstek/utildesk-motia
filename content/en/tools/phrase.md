@@ -35,6 +35,10 @@ Phrase should first prove itself in a real writing assignment with brief, draft,
 - **Good start for Phrase:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Phrase:** The rollout turns into extra coordination when sources, tone, review rules, language variants, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phrase-editorial.webp" alt="Illustration for Phrase: Content moves through terminology, translation, and review for localization" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Translation Management System (TMS):** Centralized management of translation projects with real-time updates and progress tracking.

@@ -16,6 +16,10 @@ PowerDirector ist eine leistungsstarke Videobearbeitungssoftware, die sich durch
 
 PowerDirector richtet sich an eine breite Zielgruppe: von Hobby-Videografen, die einfache und ansprechende Videos erstellen möchten, bis hin zu professionellen Content-Erstellern, die komplexe Projekte realisieren. Besonders geeignet ist das Tool für Nutzer, die Wert auf schnelle und effiziente Bearbeitung legen und dabei von KI-gestützten Funktionen profitieren möchten. Die Software eignet sich für den Einsatz auf Desktop-Computern und ist kompatibel mit verschiedenen Betriebssystemen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/powerdirector-editorial.webp" alt="Illustration zu PowerDirector: Videoclips laufen durch Schnitt, Effekte, Farbkorrektur und Export" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive Zeitleisten-Bearbeitung:** Einfache Anordnung und Bearbeitung von Videoclips, Audio und Effekten.

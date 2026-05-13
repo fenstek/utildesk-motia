@@ -34,6 +34,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** Test Quark in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Quark disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quark-editorial.webp" alt="Illustration for Quark: Page grids, layout cards, and assets are assembled into a publication" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered search:** Intelligent processing of search queries to deliver precise, context-aware results.

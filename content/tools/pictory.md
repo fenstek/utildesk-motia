@@ -23,6 +23,10 @@ Pictory passt zu Marketingteams, Coaches, Creators und kleinen Unternehmen, die 
 - Webinar- oder Kursinhalte in kurze Ausschnitte verwandeln.
 - Content-Varianten für mehrere Kanäle testen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pictory-editorial.webp" alt="Illustration zu Pictory: Skripte werden in Szenen, Clips und Exportpfade fuer Videos verwandelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Text-zu-Video-Workflow mit KI-Unterstützung.

@@ -25,6 +25,10 @@ Research tools help organize uncertainty. They become strong when sources, selec
 
 PONS Dictionary fits learners, translators, travelers, and people checking words or phrases precisely best when there is a concrete bottleneck to solve. The more clearly that bottleneck is described, the easier the tool is to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pons-w-rterbuch-editorial.webp" alt="Illustration for PONS Dictionary: Dictionary cards connect meanings, examples, and language references" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - look up meanings and example sentences

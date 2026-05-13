@@ -33,6 +33,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** For OpenAI GPT Models, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** OpenAI GPT-Modelle disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-modelle-editorial.webp" alt="Illustration for OpenAI GPT Models: Model variants are routed by capability, cost, and task" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text generation:** Producing natural, coherent text based on prompts.

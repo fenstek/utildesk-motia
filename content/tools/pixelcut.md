@@ -20,6 +20,10 @@ Pixelcut muss in einem echten Beispiel zeigen, ob KI-Bildbearbeitung für Produk
 
 Pixelcut passt am ehesten zu E-Commerce, kleine Marken, Social-Seller und Content-Teams, die einen konkreten Engpass lösen wollen. Je genauer dieser Engpass beschrieben ist, desto leichter lässt sich der Nutzen bewerten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixelcut-editorial.webp" alt="Illustration zu Pixelcut: Produktfotos werden freigestellt, bereinigt und fuer Shop-Visuals vorbereitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Produktbilder freistellen

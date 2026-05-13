@@ -32,6 +32,10 @@ Im Alltag lohnt Plot, wenn das Team nicht nur Termine verwaltet, sondern Entsche
 
 Ein guter Social-Plan ist kein starrer Stundenplan. Er lässt Raum für aktuelle Themen, schützt aber vor dem Dauerzustand kreativer Panik kurz vor Feierabend.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/plot-editorial.webp" alt="Illustration zu Plot: Szenenkarten und Zeitlinien formen einen strukturierten Erzaehlbogen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Planung und Organisation von Social-Media-Inhalten.

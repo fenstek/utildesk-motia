@@ -19,6 +19,10 @@ Pictory is an AI-powered tool for automated video creation and editing. It allow
 
 Pictory is aimed at content creators, marketing teams, social media managers, bloggers, and small to medium-sized businesses that want to produce video content efficiently and cost-effectively. People without prior video editing experience can also benefit from the automated features. Pictory is especially useful for anyone who wants to generate regular video content from text, for example for YouTube, Instagram, or LinkedIn.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pictory-editorial.webp" alt="Illustration for Pictory: Scripts are turned into scenes, clips, and export paths for videos" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic video creation from text, blog posts, or scripts  

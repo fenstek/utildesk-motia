@@ -19,6 +19,10 @@ OpenRouter is a flexible platform for managing and serving AI models, specifical
 
 OpenRouter is aimed at developers, startups, and businesses looking for a straightforward way to integrate AI models into their applications without having to deal in depth with the underlying infrastructure. OpenRouter is especially well suited for teams that want to manage multiple AI models or need a flexible, scalable solution for accessing different AI providers. Researchers and AI enthusiasts who want to experiment with different models also benefit from the platform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openrouter-editorial.webp" alt="Illustration for OpenRouter: AI requests are routed through paths to suitable model endpoints" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Support for various AI models and providers in a single central platform  

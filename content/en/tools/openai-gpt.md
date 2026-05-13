@@ -41,6 +41,10 @@ A useful evaluation starts with a recurring task with inputs, expected outputs, 
 - **Good starting point:** Test OpenAI GPT in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** OpenAI GPT disappoints when prompts, data permissions, review duties, and boundaries are not documented.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-editorial.webp" alt="Illustration for OpenAI GPT: Prompts are structured through model paths into reviewable outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Natural language processing:** Understanding and generating text in different languages and styles.

@@ -19,6 +19,10 @@ QQ Browser is a modern web browser developed by Tencent that stands out for comb
 
 QQ Browser is suitable for users looking for a fast, resource-efficient browser with additional productivity features. It is especially interesting for users who value integrated AI tools to optimize their online research and workflows. It can also be a good fit for people who often work with multiple tabs or pay attention to security while browsing. Because of its freemium model, it is attractive to both casual users and more intensive users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qq-browser-editorial.webp" alt="Illustration for QQ Browser: Tabs, search, and downloads are organized into a browser workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Fast loading times**: Optimized engine for smooth browsing even with several tabs open.

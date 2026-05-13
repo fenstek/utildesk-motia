@@ -27,6 +27,10 @@ A useful pilot for Procreate starts with one concrete asset with briefing, versi
 - **Good start for Procreate:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Procreate:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/procreate-editorial.webp" alt="Illustration for Procreate: Sketches, brush strokes, and layers build into a digital illustration" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Workflow support in Procreate:** The tool should help teams move from input to reviewed output without hiding important decisions.

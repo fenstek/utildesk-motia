@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte Orbit Intelligence zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Orbit Intelligence enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/orbit-intelligence-editorial.webp" alt="Illustration zu Orbit Intelligence: Patent- und Marktsignale bilden eine Innovationslandschaft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Umfangreiche Patentdatenbank mit globalem Zugriff  
