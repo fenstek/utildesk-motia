@@ -2,11 +2,11 @@
 slug: devin
 title: Devin
 category: AI Agents
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [ai, coding, automation, developer]
 official_url: "https://devin.ai/"
-popularity: 0
-description: "Devin ist ein KI-Software-Agent für Entwicklungsaufgaben, Codeänderungen, Debugging und längere Engineering-Läufe."
+popularity: 54
+description: Devin ist ein KI-Software-Agent für Entwicklungsaufgaben, Codeänderungen, Debugging und längere Engineering-Läufe.
 ---
 # Devin
 

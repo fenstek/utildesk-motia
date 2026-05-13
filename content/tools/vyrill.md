@@ -1,13 +1,13 @@
 ---
 slug: vyrill
 title: Vyrill
-category: "Audio & Video"
-price_model: "Ab 249 $/Monat"
+category: Audio & Video
+price_model: Ab 249 $/Monat
 tags: ["video", "ai", "ecommerce", "ugc", "analytics"]
 official_url: "https://www.vyrill.com/"
 affiliate_url: "https://www.vyrill.com/"
 created_at: 2026-05-12
-popularity: 0
+popularity: 85
 ---
 
 # Vyrill
