@@ -94,6 +94,43 @@ run_post_deploy_hooks() {
       fi
     fi
   fi
+
+  # Optional post-production distribution pipeline.
+  # Keeps discovery/promotion work outside the content commit:
+  # - Bing URL/feed submission
+  # - outreach queue + LinkedIn/newsletter drafts under ignored reports/
+  # - Umami snapshot when credentials are available
+  # IndexNow is handled by the block above, so it is disabled here to avoid
+  # duplicate submissions on the same deploy.
+  if [[ "${POST_DEPLOY_POSTPRODUCTION:-1}" == "1" ]]; then
+    PROD_BASE_URL="${PROD_BASE_URL:-https://tools.utildesk.de}"
+    POSTPRODUCTION_REV_RANGE="${POSTPRODUCTION_REV_RANGE:-${INDEXNOW_REV_RANGE:-HEAD~1..HEAD}}"
+    POSTPRODUCTION_TIMEOUT_SECONDS="${POSTPRODUCTION_TIMEOUT_SECONDS:-600}"
+    POSTPRODUCTION_POLL_INTERVAL="${POSTPRODUCTION_POLL_INTERVAL:-15}"
+    POSTPRODUCTION_RESUBMIT_WINDOW_HOURS="${POSTPRODUCTION_RESUBMIT_WINDOW_HOURS:-20}"
+    POSTPRODUCTION_NODE="${POSTPRODUCTION_NODE:-node}"
+
+    if [[ ! -f "scripts/postproduction_pipeline.mjs" ]]; then
+      echo "[cron] WARN postproduction skipped: scripts/postproduction_pipeline.mjs missing"
+    elif ! command -v "$POSTPRODUCTION_NODE" >/dev/null 2>&1; then
+      echo "[cron] WARN postproduction skipped: node command not found (${POSTPRODUCTION_NODE})"
+    else
+      echo "[cron] postproduction pipeline: base=${PROD_BASE_URL} rev_range=${POSTPRODUCTION_REV_RANGE}"
+      if "$POSTPRODUCTION_NODE" scripts/postproduction_pipeline.mjs \
+        --site-url "${PROD_BASE_URL}" \
+        --rev-range "${POSTPRODUCTION_REV_RANGE}" \
+        --wait-live \
+        --timeout-seconds "${POSTPRODUCTION_TIMEOUT_SECONDS}" \
+        --poll-interval "${POSTPRODUCTION_POLL_INTERVAL}" \
+        --resubmit-window-hours "${POSTPRODUCTION_RESUBMIT_WINDOW_HOURS}" \
+        --no-indexnow \
+        --submit-bing-feeds; then
+        echo "[cron] postproduction pipeline completed"
+      else
+        echo "[cron] WARN postproduction pipeline failed"
+      fi
+    fi
+  fi
 }
 
 translate_changed_tools_to_english() {
