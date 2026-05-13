@@ -25,6 +25,10 @@ Rev.com is aimed at a broad audience, including:
 - **Lawyers and researchers**: For documenting conversations and meetings.
 - **Content creators and YouTubers**: For easily creating captions to increase reach and usability.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rev-com-editorial.webp" alt="Illustration for Rev.com: Media cards, transcripts, and quality checks move into delivery paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automatic transcription**: Fast conversion of audio and video files into text using AI-powered speech recognition.

@@ -33,6 +33,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Test ResponsiveVoice in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** ResponsiveVoice disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/responsivevoice-editorial.webp" alt="Illustration for ResponsiveVoice: Web page cards, waveforms, and device outputs connect text with speech" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Real-time text-to-speech conversion directly in the browser

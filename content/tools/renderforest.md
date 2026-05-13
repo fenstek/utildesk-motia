@@ -24,6 +24,10 @@ Renderforest richtet sich an eine breite Zielgruppe, darunter:
 
 Die Plattform ist besonders für Nutzer geeignet, die eine intuitive, browserbasierte Lösung bevorzugen und keine umfangreiche Videobearbeitungskompetenz besitzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/renderforest-editorial.webp" alt="Illustration zu Renderforest: Storyboard-Panels, Motion-Knoten und Renderpfade erzeugen Video-Assets" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vorlagenbibliothek:** Zugriff auf Hunderte anpassbare Videovorlagen für verschiedene Anwendungsbereiche wie Werbung, Erklärvideos, Slideshows und Intros.

@@ -16,6 +16,10 @@ ResearchGate ist eine spezialisierte Online-Plattform, die Forschenden weltweit 
 
 ResearchGate richtet sich vor allem an Wissenschaftler, Forscher, Doktoranden und akademische Fachkräfte aus verschiedenen Disziplinen. Es ist ideal für Personen, die ihre Forschungsergebnisse einem breiten Publikum zugänglich machen möchten oder auf der Suche nach Kollaborationen und Expertenaustausch sind. Auch Institutionen und Forschungsgruppen profitieren von der Plattform, um ihre Sichtbarkeit zu erhöhen und den Kontakt zu anderen Wissenschaftlern zu fördern. Für Studierende kann ResearchGate eine hilfreiche Ressource sein, um Zugang zu Fachliteratur zu erhalten und sich mit der Forschungsgemeinschaft zu vernetzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/researchgate-editorial.webp" alt="Illustration zu ResearchGate: Publikationskarten, Netzwerkpfade und Projektordner strukturieren akademische Zusammenarbeit" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** ResearchGate eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um research, publications, academic networking nicht mehr improvisieren wollen.

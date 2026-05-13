@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Ein Team sollte Ranorex Studio zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Ranorex Studio enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ranorex-studio-editorial.webp" alt="Illustration zu Ranorex Studio: Geräte, Testschritte und Fehlerpfade werden zu automatisierten UI-Prüfungen verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung von Desktop-, Web- und mobilen Anwendungen für plattformübergreifende Tests  

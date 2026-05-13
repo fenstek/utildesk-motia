@@ -23,6 +23,10 @@ Research AI richtet sich an Studierende, Wissenschaftler, Akademiker und Fachleu
 
 Dank der intuitiven Bedienung und den umfangreichen Such- und Analysefunktionen eignet sich Research AI sowohl für Einsteiger als auch für erfahrene Nutzer.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/research-ai-editorial.webp" alt="Illustration zu Research AI: Quellenkarten, Evidenzknoten und Prüfschritte verdichten Rechercheergebnisse" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Research AI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um research assistant, ai search, academic research nicht mehr improvisieren wollen.

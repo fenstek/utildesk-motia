@@ -32,6 +32,10 @@ Rasa should not be evaluated in isolation. What matters is the step before and a
 - **Measurement point:** which intents are robust and how escalation to humans works.
 - **Limit:** without training data and dialog design, it does not automatically produce good bots.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rasa-editorial.webp" alt="Illustration for Rasa: Intent nodes, dialog paths, and integrations shape a chatbot workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Recognition of intents and entities to interpret user requests.

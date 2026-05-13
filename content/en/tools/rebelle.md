@@ -16,6 +16,10 @@ Good for digital illustration, concept art, traditional painting styles, and art
 
 Rebelle is most useful for teams and individuals that treat a digital painting software as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rebelle-editorial.webp" alt="Illustration for Rebelle: Brushes, pigments, and paper textures build a natural-media digital illustration" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Paint digital watercolors and illustrations

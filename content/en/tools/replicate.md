@@ -18,6 +18,10 @@ Replicate is a platform that makes it easy for developers and businesses to acce
 
 Replicate is aimed primarily at developers, startups, and companies that want to integrate AI functionality into their products without deep expertise in AI model development or infrastructure management. Researchers and data scientists can also benefit from the platform to quickly test or validate models. The platform is suitable for anyone who wants flexible and fast access to a wide range of AI models without needing their own hardware or complex setups.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/replicate-editorial.webp" alt="Illustration for Replicate: Model cards, API nodes, and inference paths become scalable AI outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Replicate is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around developer tools, API.

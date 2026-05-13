@@ -20,6 +20,10 @@ Genau deshalb sollte man Replika aufmerksam einordnen. Das Tool kann für Reflex
 
 Geeignet ist Replika für Menschen, die neugierig auf KI-Begleiter sind, Journaling-Impulse suchen oder niedrigschwellige Gespräche ausprobieren möchten. Vorsicht ist angebracht, wenn Nutzer emotional sehr verletzlich sind oder die KI als einzige wichtige Bezugsperson behandeln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/replika-editorial.webp" alt="Illustration zu Replika: Chatblasen, Stimmungskarten und Erinnerungswege bilden einen privaten Dialogfluss" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Gedanken sortieren und leichte Reflexionsfragen beantworten.

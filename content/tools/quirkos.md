@@ -23,6 +23,10 @@ Quirkos richtet sich an Fachkräfte und Teams, die qualitative Daten aus Intervi
 
 Das Tool eignet sich sowohl für Einzelanwender als auch für Teams, die kollaborativ an Projekten arbeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quirkos-editorial.webp" alt="Illustration zu Quirkos: Interviewkarten, Codes und Themencluster werden zu qualitativen Erkenntnissen geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Quirkos eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um design, workflow nicht mehr improvisieren wollen.

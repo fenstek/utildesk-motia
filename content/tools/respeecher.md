@@ -28,6 +28,10 @@ Bei Respeecher würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - **Qualitätsfrage:** ob Consent, Kennzeichnung und Qualitätsabnahme schriftlich geregelt sind.
 - **Risiko:** rechtlich und ethisch nur mit klaren Einwilligungen tragfähig ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/respeecher-editorial.webp" alt="Illustration zu Respeecher: Quellspuren, Voice-Modelle und Qualitätsgates formen eine Sprachumwandlung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Stimmenklonung:** Erzeugung realistischer Sprachaufnahmen in der Stimme einer Zielperson

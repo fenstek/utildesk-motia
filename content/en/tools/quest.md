@@ -25,6 +25,10 @@ Writing tools are useful when they provide raw material, variants, and structure
 
 Quest should not be judged by feature count alone. For writers, learners, game jams, schools, and narrative experimenters, the more important question is whether it fits existing routines and reduces rework.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quest-editorial.webp" alt="Illustration for Quest: Scene cards, object tiles, and decision paths shape an interactive story" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - build text adventures without a large engine

@@ -27,6 +27,10 @@ Rally is aimed primarily at mid-sized and large companies that want to implement
 
 The solution is suitable for both IT and software development teams as well as other areas that use agile principles.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rally-editorial.webp" alt="Illustration for Rally: Backlog cards, sprint lanes, and release paths are bundled into an agile plan" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Rally is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around agile, project management, enterprise.

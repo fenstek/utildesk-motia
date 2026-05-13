@@ -21,6 +21,10 @@ React Native richtet sich an Entwickler und Teams, die mobile Anwendungen effizi
 - Entwickler, die native Performance und Zugang zu nativen APIs wollen, aber den Entwicklungsaufwand minimieren möchten.
 - Teams, die plattformübergreifende Apps mit einer gemeinsamen Codebasis pflegen wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/react-native-editorial.webp" alt="Illustration zu React Native: Gemeinsame Komponenten laufen durch Build-Pfade zu mobilen App-Ausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** React Native eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um mobile development, framework, developer tools nicht mehr improvisieren wollen.

@@ -33,6 +33,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** Test Ranorex Studio in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Ranorex Studio disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ranorex-studio-editorial.webp" alt="Illustration for Ranorex Studio: Devices, test steps, and defect paths connect into automated UI checks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Support for desktop, web, and mobile applications for cross-platform testing  

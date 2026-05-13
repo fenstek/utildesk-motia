@@ -26,6 +26,10 @@ Rev is aimed at a broad audience, including:
 
 The combination of AI and human quality assurance makes Rev appealing for both occasional and regular use.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rev-editorial.webp" alt="Illustration for Rev: Audio waves, transcript cards, and review paths become captions and text outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Rev is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around chatbot, data.

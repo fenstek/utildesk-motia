@@ -33,6 +33,10 @@ A useful evaluation starts with a real recording with source material, editing, 
 - **Good starting point:** For Reaper, use a narrow pilot with real material, clear ownership, and a defined acceptance point at the end.
 - **Common pitfall:** Reaper disappoints when source material, rights, target platforms, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reaper-editorial.webp" alt="Illustration for Reaper: Multitrack recordings move through editing, mixing, routing, and render paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent automation:** Automation of routine tasks through AI-based workflows.

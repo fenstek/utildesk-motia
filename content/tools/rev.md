@@ -24,6 +24,10 @@ Rev richtet sich an eine breite Zielgruppe, darunter:
 
 Die Kombination aus KI und menschlicher Qualitätssicherung macht Rev sowohl für den gelegentlichen als auch den regelmäßigen Einsatz attraktiv.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rev-editorial.webp" alt="Illustration zu Rev: Audiowellen, Transkriptkarten und Review-Pfade werden zu Untertiteln und Textausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Rev eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um chatbot, data nicht mehr improvisieren wollen.

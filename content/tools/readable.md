@@ -22,6 +22,10 @@ Readable richtet sich an eine breite Zielgruppe, darunter:
 - **Bildungseinrichtungen und Trainer**, die Lehrmaterialien klar und präzise gestalten möchten.
 - **Jeder, der seine Schreibfähigkeiten verbessern und Texte lesefreundlicher gestalten will.**
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/readable-editorial.webp" alt="Illustration zu Readable: Dokumententwürfe werden über Lesbarkeit, Klarheit und Review verfeinert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Readable eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um readability, writing, content nicht mehr improvisieren wollen.

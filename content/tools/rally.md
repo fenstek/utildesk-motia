@@ -23,6 +23,10 @@ Rally richtet sich vor allem an mittelständische und große Unternehmen, die ag
 
 Die Lösung eignet sich sowohl für IT- und Software-Entwicklungsteams als auch für andere Bereiche, die agile Prinzipien nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rally-editorial.webp" alt="Illustration zu Rally: Backlog-Karten, Sprint-Lanes und Release-Pfade werden zu einem Agile-Plan gebündelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Rally eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um agile, project management, enterprise nicht mehr improvisieren wollen.

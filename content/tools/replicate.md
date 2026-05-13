@@ -16,6 +16,10 @@ Replicate ist eine Plattform, die Entwicklern und Unternehmen den Zugriff auf mo
 
 Replicate richtet sich vor allem an Entwickler, Start-ups und Unternehmen, die KI-Funktionalitäten in ihre Produkte integrieren möchten, ohne tiefgehende Kenntnisse in KI-Modellentwicklung oder Infrastrukturmanagement. Auch Forscher und Datenwissenschaftler können von der Plattform profitieren, um Modelle schnell zu testen oder zu validieren. Die Plattform eignet sich für alle, die flexibel und schnell auf eine Vielzahl von KI-Modellen zugreifen wollen, ohne eigene Hardware oder komplexe Setups zu benötigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/replicate-editorial.webp" alt="Illustration zu Replicate: Modellkarten, API-Knoten und Inferenzpfade werden zu skalierbaren KI-Ausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Replicate eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um developer tools, api nicht mehr improvisieren wollen.

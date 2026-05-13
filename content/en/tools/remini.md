@@ -20,6 +20,10 @@ Remini is an AI-powered design tool that specializes in improving and restoring 
 
 Remini is aimed at a broad audience of users, including photographers, designers, social media managers, artists, and hobby photographers. The tool is especially useful for anyone who wants to restore old family photos, improve pixelated or blurry images, or simply increase the quality of images for professional or personal use. Even users without in-depth technical knowledge benefit from the user-friendly interface and automated functions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/remini-editorial.webp" alt="Illustration for Remini: Blurred image tiles are restored and upscaled into clearer outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **AI-powered image enhancement:** Automatic improvement of photos through sharpening, noise reduction, and detail reconstruction.

@@ -18,6 +18,10 @@ Reface is an innovative AI-based app that lets users realistically swap faces in
 
 Reface is aimed at a broad audience that enjoys creative visual effects. The app is especially well suited for social media users who want to enhance their posts with unique, personalized videos. Content creators, influencers, and marketing professionals also appreciate the fast and impressive results. It also offers an accessible platform for anyone interested in AI technologies and deepfakes to experiment with.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/reface-editorial.webp" alt="Illustration for Reface: Media tiles, masks, and checkpoints form a safe transformation flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Reface is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around assistant, automation.

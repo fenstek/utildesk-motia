@@ -25,6 +25,10 @@ React Native is aimed at developers and teams that want to build mobile applicat
 - Developers who want native performance and access to native APIs, but want to reduce development effort.
 - Teams that want to maintain cross-platform apps with a shared codebase.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/react-native-editorial.webp" alt="Illustration for React Native: Shared components move through build paths into mobile app outputs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Cross-platform development:** One codebase for iOS and Android.

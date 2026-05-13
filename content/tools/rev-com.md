@@ -22,6 +22,10 @@ Rev.com richtet sich an eine breite Zielgruppe, darunter:
 - **Rechtsanwälte und Forscher**: Zur Dokumentation von Gesprächen und Meetings.
 - **Content Creator und YouTuber**: Für die einfache Erstellung von Untertiteln, um Reichweite und Nutzerfreundlichkeit zu erhöhen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rev-com-editorial.webp" alt="Illustration zu Rev.com: Medienkarten, Transkripte und Qualitätsprüfungen laufen in Lieferpfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Rev.com eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation, workflow nicht mehr improvisieren wollen.

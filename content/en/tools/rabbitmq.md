@@ -21,6 +21,10 @@ RabbitMQ is a powerful open-source message broker used for reliable message deli
 
 RabbitMQ is aimed primarily at developers, DevOps teams, and companies that need robust and flexible messaging solutions. It is ideal for projects that require asynchronous communication, such as microservices, event-driven architectures, or the integration of heterogeneous systems. RabbitMQ is also a proven choice for automation processes, data pipelines, or processing large volumes of data in real time. Thanks to its open-source nature, it is also a cost-effective solution for start-ups and companies of all sizes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rabbitmq-editorial.webp" alt="Illustration for RabbitMQ: Message packets move through exchanges, queues, and consumer paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Support for various messaging protocols such as AMQP, MQTT, and STOMP  

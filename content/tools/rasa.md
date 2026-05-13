@@ -27,6 +27,10 @@ Rasa sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Workflow d
 - **Messpunkt:** welche Intents belastbar sind und wie Eskalation zu Menschen funktioniert.
 - **Grenze:** ohne Trainingsdaten und Dialogdesign nicht automatisch gute Bots erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rasa-editorial.webp" alt="Illustration zu Rasa: Intent-Knoten, Dialogpfade und Integrationen formen einen Chatbot-Workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (NLP):** Erkennung von Intents und Entities zur Interpretation von Nutzeranfragen.

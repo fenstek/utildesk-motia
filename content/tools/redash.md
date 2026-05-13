@@ -16,6 +16,10 @@ Redash ist eine Open-Source-Plattform zur Datenvisualisierung und Analyse, die E
 
 Redash richtet sich vor allem an Entwickler, Datenanalysten, Data Scientists sowie technische Teams, die regelmäßig mit Daten arbeiten und diese visualisieren möchten. Die Plattform eignet sich gut für Unternehmen jeder Größe, die eine offene und erweiterbare Lösung bevorzugen, um Daten aus unterschiedlichen Quellen zentral auszuwerten. Aufgrund der Unterstützung von SQL-Abfragen ist Redash besonders für Nutzer geeignet, die mit relationalen Datenbanken vertraut sind. Auch Startups und Organisationen mit begrenztem Budget profitieren vom Open-Source-Modell, da keine Lizenzkosten anfallen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/redash-editorial.webp" alt="Illustration zu Redash: Datenquellen, Abfragen und Diagrammkarten werden zu gemeinsam nutzbaren Dashboards" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Redash eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um analytics, dashboards, data nicht mehr improvisieren wollen.

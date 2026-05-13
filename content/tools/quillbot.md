@@ -42,6 +42,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte QuillBot zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** QuillBot enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quillbot-editorial.webp" alt="Illustration zu QuillBot: Entwürfe laufen durch Tonalität, Umschreibung und Review zu klareren Varianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Paraphrasierung:** Automatisches Umschreiben von Texten in verschiedenen Stilen und Tonalitäten.

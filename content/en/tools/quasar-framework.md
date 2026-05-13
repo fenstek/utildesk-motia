@@ -34,6 +34,10 @@ A useful pilot for Quasar Framework starts with a real development flow from set
 - **Good start for Quasar Framework:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Quasar Framework:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quasar-framework-editorial.webp" alt="Illustration for Quasar Framework: Components, app panels, and build paths form a cross-platform workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Cross-platform development:** Build web, mobile (iOS, Android), and desktop applications with a single codebase.

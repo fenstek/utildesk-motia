@@ -25,6 +25,10 @@ ReadSpeaker is aimed at companies, educational institutions, publishers, and dev
 - Publishers and media companies that want to offer articles or books in audio form.
 - Developers who want to integrate text-to-speech functionality into their own applications.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/readspeaker-editorial.webp" alt="Illustration for ReadSpeaker: Document cards become voice profiles, waveforms, and output paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Text-to-speech conversion:** Converts text into natural speech in real time.

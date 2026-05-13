@@ -31,6 +31,10 @@ With RapidMiner, I would distinguish early between the demo impression and opera
 - **Quality question:** what data quality, validation, and model ownership are defined.
 - **Risk:** without methodological understanding, no reliable models are guaranteed.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/rapidminer-editorial.webp" alt="Illustration for RapidMiner: Data blocks move through preparation, training, validation, and deployment" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Visual workflow creation:** drag-and-drop interface for easy modeling of data processes.

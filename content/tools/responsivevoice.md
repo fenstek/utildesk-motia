@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Ein Team sollte ResponsiveVoice zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** ResponsiveVoice enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/responsivevoice-editorial.webp" alt="Illustration zu ResponsiveVoice: Webseitenkarten, Wellenformen und Geräteausgaben verbinden Text mit Sprache" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Text-zu-Sprache-Konvertierung in Echtzeit direkt im Browser
