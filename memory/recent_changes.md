@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-13_
 
+## 2026-05-13 - Tool illustration batch 16
+
+- Added one mid-article WebP illustration to 50 additional manually edited tool cards in both German and English.
+- Continued the 1260px source WebP and 90% `.tool-editorial-figure` display scheme.
+- Selection follows the edited-tail illustration registry after `nintex`; slugs run from `nintex-rpa` through `quark`.
+- Generated replacement variants for readable-text, formula, and letter-icon artifacts, then converted only the selected outputs into workspace WebP assets.
+- Cleaned generated PNG cache after conversion so the local image folder stays empty after publication-style batches.
+
 ## 2026-05-13 - Tool editorial completion from production-sync
 
 - Ported the clean generated-text editorial pass onto current production head `0f7f556` instead of the stale dirty main checkout.

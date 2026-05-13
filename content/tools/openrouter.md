@@ -23,6 +23,10 @@ OpenRouter passt zu Entwicklern, Startups, Produktteams und KI-Experimenten, die
 - Fallbacks zwischen Modellen und Providern vorbereiten.
 - Modellverfügbarkeit und Preis-Leistung im Produktbetrieb beobachten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openrouter-editorial.webp" alt="Illustration zu OpenRouter: KI-Anfragen werden ueber Routing-Pfade zu passenden Modell-Endpunkten geleitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Einheitlicher API-Zugang zu unterschiedlichen Modellen.

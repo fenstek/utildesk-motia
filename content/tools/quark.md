@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Ein Team sollte Quark zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Quark enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/quark-editorial.webp" alt="Illustration zu Quark: Seitenraster, Layoutkarten und Assets werden zu einer Publikation gesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Suche:** Intelligente Verarbeitung von Suchanfragen, um präzise und kontextbezogene Ergebnisse zu liefern.

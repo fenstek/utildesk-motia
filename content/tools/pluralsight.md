@@ -23,6 +23,10 @@ Pluralsight passt zu Entwicklern, IT-Teams, Unternehmen, Lernenden und Führungs
 - Onboarding für neue technische Rollen unterstützen.
 - Zertifizierungsvorbereitung mit Kursen und Übungsformaten begleiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pluralsight-editorial.webp" alt="Illustration zu Pluralsight: Lernmodule, Skillpfade und Laboraufgaben werden zu Trainingsrouten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Kurse, Lernpfade und Skill-Assessments.

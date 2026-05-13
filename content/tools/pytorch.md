@@ -24,6 +24,10 @@ PyTorch passt zu ML-Forschenden, Data Scientists, KI-Entwicklern und Teams, die 
 - Experimentelles Prototyping mit Python-naher Kontrolle betreiben.
 - Training, Evaluation und Deployment in MLOps-Pipelines einbetten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pytorch-editorial.webp" alt="Illustration zu PyTorch: Tensoren, Modellgraphen und Experimente laufen durch Trainingsschleifen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Tensor-Operationen, Autograd und flexible Modellklassen.

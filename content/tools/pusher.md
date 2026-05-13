@@ -30,6 +30,10 @@ Als Prüfstück für Pusher eignet sich einem realen Entwicklungsablauf von Setu
 - **Guter Start für Pusher:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Pusher:** Der Einsatz kippt in Zusatzarbeit, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pusher-editorial.webp" alt="Illustration zu Pusher: Live-Ereignisse werden ueber Channels an verbundene Apps verteilt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Push-Benachrichtigungen**: Sofortige Übertragung von Nachrichten und Events an Nutzer.

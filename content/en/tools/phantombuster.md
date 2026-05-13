@@ -21,6 +21,10 @@ PhantomBuster best fits growth, sales ops, agencies, and research teams with cle
 
 PhantomBuster is most useful for teams and individuals that treat a web automation platform as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phantombuster-editorial.webp" alt="Illustration for PhantomBuster: Web signals are extracted, cleaned, and routed into workflows" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - Collect public web data in a structured way

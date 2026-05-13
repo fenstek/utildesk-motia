@@ -28,6 +28,10 @@ OpenCV überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - **Vorher klären:** welche Genauigkeit, Laufzeit und Hardwareumgebung realistisch sind.
 - **Nicht unterschätzen:** ohne ML- und Bildverarbeitungswissen schwer zugänglich bleibt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/opencv-editorial.webp" alt="Illustration zu OpenCV: Bildkacheln werden zu Konturen, Merkmalen und Erkennungssignalen verarbeitet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bild- und Videoverarbeitung (Filter, Transformationen, Kantenerkennung)

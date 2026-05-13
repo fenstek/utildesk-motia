@@ -23,6 +23,10 @@ Paddle passt zu Machine-Learning-Teams, Forschenden und Entwicklern mit Framewor
 - Trainingspipelines in technische Produkte einbetten.
 - ML-Kompetenz in Teams mit Python- und Datenkenntnissen ausbauen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paddle-editorial.webp" alt="Illustration zu Paddle: Datenarrays laufen durch Modellschichten, Training und Inferenzpruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Framework-Bausteine für Modelltraining und Inferenz.

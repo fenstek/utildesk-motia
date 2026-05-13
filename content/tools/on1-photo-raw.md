@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Ein Team sollte ON1 Photo RAW zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** ON1 Photo RAW enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/on1-photo-raw-editorial.webp" alt="Illustration zu ON1 Photo RAW: RAW-Bilder werden mit Ebenen, Masken und Farbkorrekturen entwickelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **RAW-Bildbearbeitung:** Unterstützung zahlreicher Kameraformate mit präziser Farbbearbeitung und Belichtungskorrektur.

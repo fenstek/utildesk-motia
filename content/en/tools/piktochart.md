@@ -40,6 +40,10 @@ Piktochart should first prove itself in one concrete asset with briefing, versio
 - **Good start for Piktochart:** Use one production-like case with an owner, an acceptance criterion, and a short review instead of a long comparison without real use.
 - **Risk with Piktochart:** Even a good interface helps only partly when briefing, rights, brand rules, file formats, and review steps remain vague.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/piktochart-editorial.webp" alt="Illustration for Piktochart: Data cards are organized into charts, infographics, and report pages" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - A wide range of ready-made templates for infographics, presentations, reports, and posters

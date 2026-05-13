@@ -25,6 +25,10 @@ Paychex Flex is aimed primarily at companies of all sizes that are looking for a
 - Companies that prefer a user-friendly and customizable platform.
 - Organizations that value automated workflows and AI-powered analytics.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paychex-flex-editorial.webp" alt="Illustration for Paychex Flex: HR cards, payroll paths, and compliance checks are organized" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Payroll and salary administration:** Automated calculations, tax deductions, and timely payments.

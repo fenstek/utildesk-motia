@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Ein Team sollte OutSystems zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** OutSystems enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/outsystems-editorial.webp" alt="Illustration zu OutSystems: Low-Code-Bausteine, Integrationen und Deployment-Gates formen Business-Apps" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle App-Entwicklung per Drag-and-Drop ohne umfangreiche Programmierung  

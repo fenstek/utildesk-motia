@@ -42,6 +42,10 @@ Prometheus should first prove itself in a real development flow from setup throu
 - **Good start for Prometheus:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Prometheus:** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prometheus-editorial.webp" alt="Illustration for Prometheus: Metrics move through time series, alerts, and service health paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Intelligent automation:** Automates routine tasks without programming knowledge.

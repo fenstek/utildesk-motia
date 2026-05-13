@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Qdrant nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Qdrant enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qdrant-editorial.webp" alt="Illustration zu Qdrant: Query-Vektoren durchsuchen Embedding-Cluster und liefern passende Ergebnisse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Vektorbasierte Suche:** Effiziente Speicherung und Abfrage von Vektordaten für schnelle Ähnlichkeitssuche.

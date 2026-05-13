@@ -20,6 +20,10 @@ Bei Videowerkzeugen entscheidet der Workflow: Aufnahme, Schnitt, Ton, Freigabe u
 
 Für Creator, Social-Teams, Experimentierer und frühe Kampagnenkonzepte kann PixVerse ein echter Hebel sein. Entscheidend ist, dass der Einsatz nicht beliebig bleibt, sondern an einem wiederholbaren Arbeitsmoment hängt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixverse-editorial.webp" alt="Illustration zu PixVerse: Bildideen werden ueber Bewegungsbahnen zu kurzen Videovarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - kurze Videoideen schnell visualisieren

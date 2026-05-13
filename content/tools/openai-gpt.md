@@ -40,6 +40,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Ein Team sollte OpenAI GPT zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** OpenAI GPT enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-editorial.webp" alt="Illustration zu OpenAI GPT: Prompts werden ueber Modellpfade zu pruefbaren Ausgaben strukturiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung:** Verstehen und Generieren von Texten in verschiedenen Sprachen und Stilen.

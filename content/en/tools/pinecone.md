@@ -20,6 +20,10 @@ Pinecone is a scalable vector database built specifically for artificial intelli
 
 Pinecone is aimed at developers, data scientists, and companies that want to build AI applications with complex vector data. It is especially suitable for teams that need scalable solutions for vector similarity search without having to worry about the underlying infrastructure. Startups and companies that want to build prototypes or production systems with AI-powered search also benefit from Pinecone.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pinecone-editorial.webp" alt="Illustration for Pinecone: Data points are indexed as embeddings and retrieved semantically" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Scalable vector database:** Manage and store millions to billions of vector entries.

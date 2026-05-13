@@ -35,6 +35,10 @@ Noise Blocker should first prove itself in a real recording with source material
 - **Good start for Noise Blocker:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Noise Blocker:** Even a good interface helps only partly when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/noise-blocker-editorial.webp" alt="Illustration for Noise Blocker: Noise waves are filtered into a clean audio signal" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Real-time noise suppression:** Automatically reduces distracting background noise during conversations or recordings.

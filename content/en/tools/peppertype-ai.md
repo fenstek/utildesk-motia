@@ -30,6 +30,10 @@ Peppertype.ai is aimed at:
 
 The tool is especially suitable for users who value fast results and want to use flexible text formats.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/peppertype-ai-editorial.webp" alt="Illustration for Peppertype.ai: Briefing cards become content variants through tone and review paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Automated text creation:** Generation of blog articles, social media posts, product descriptions, emails, and more.

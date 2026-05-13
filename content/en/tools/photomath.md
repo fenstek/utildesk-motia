@@ -40,6 +40,10 @@ Photomath should first prove itself in a real learning unit with goal, task, fee
 - **Good start for Photomath:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with Photomath:** The value becomes weak when learning goal, level, feedback rules, and learner privacy remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photomath-editorial.webp" alt="Illustration for Photomath: Math tasks are broken into learning steps and visual solution paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic text recognition (OCR):** Scans mathematical expressions with the camera and recognizes them accurately  

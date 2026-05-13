@@ -33,6 +33,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Keep the first Qdrant trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Qdrant disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qdrant-editorial.webp" alt="Illustration for Qdrant: Query vectors search embedding clusters and return matching results" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Vector-based search:** Efficient storage and querying of vector data for fast similarity search.

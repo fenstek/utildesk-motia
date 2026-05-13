@@ -22,6 +22,10 @@ NVIDIA Tensor Core GPUs sind ideal für Unternehmen, Entwickler, Forschungseinri
 - Hochleistungsrechnen (HPC) mit Fokus auf KI-Anwendungen
 - Unternehmen, die KI-gestützte Produkte oder Dienstleistungen entwickeln
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-tensor-core-gpus-editorial.webp" alt="Illustration zu NVIDIA Tensor Core GPUs: Tensor-Kacheln laufen durch Beschleuniger und Trainingspfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Tensor Cores**: Spezielle Kerne zur Beschleunigung von Tensoroperationen, die bei Deep Learning zentral sind.

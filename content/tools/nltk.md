@@ -23,6 +23,10 @@ NLTK passt zu Studierenden, Lehrenden, Forschenden und Entwicklern, die Tokenisi
 - Lehrbeispiele für Sprachverarbeitung aufbauen.
 - Prototypen für einfache Textanalyse erstellen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nltk-editorial.webp" alt="Illustration zu NLTK (Natural Language Toolkit): Sprachproben werden tokenisiert, codiert und zu NLP-Strukturen geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Viele klassische NLP-Funktionen und Beispielkorpora.

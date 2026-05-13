@@ -18,6 +18,10 @@ Pinecone ist eine skalierbare Vektor-Datenbank, die speziell für Anwendungen im
 
 Pinecone richtet sich an Entwickler, Data Scientists und Unternehmen, die AI-Anwendungen mit komplexen Vektordaten realisieren wollen. Besonders geeignet ist es für Teams, die skalierbare Lösungen zur Vektorähnlichkeitssuche benötigen, ohne sich um die zugrundeliegende Infrastruktur kümmern zu müssen. Auch Startups und Firmen, die Prototypen oder produktive Systeme mit AI-gestützter Suche aufbauen möchten, profitieren von Pinecone.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pinecone-editorial.webp" alt="Illustration zu Pinecone: Datenpunkte werden als Embeddings indexiert und semantisch abgerufen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Skalierbare Vektor-Datenbank:** Verwaltung und Speicherung von Millionen bis Milliarden Vektor-Einträgen.

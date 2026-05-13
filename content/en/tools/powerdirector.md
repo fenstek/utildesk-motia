@@ -21,6 +21,10 @@ PowerDirector is a powerful video editing software distinguished by its user-fri
 
 PowerDirector is aimed at a broad audience: from hobby videographers who want to create simple, appealing videos to professional content creators who need to complete complex projects. The tool is especially suitable for users who value fast and efficient editing and want to benefit from AI-supported features. The software is designed for use on desktop computers and is compatible with various operating systems.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/powerdirector-editorial.webp" alt="Illustration for PowerDirector: Video clips move through editing, effects, color correction, and export" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Intuitive timeline editing:** Easy arrangement and editing of video clips, audio, and effects.

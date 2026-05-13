@@ -27,6 +27,10 @@ Der beste Praxistest für QDA Miner ist klein, aber echt. Ein Team sollte einen 
 - **Rollout-Frage:** wie das Codebuch gepflegt, abgestimmt und dokumentiert wird.
 - **Bremse:** bei unklarer Codierlogik eher Ordnung simuliert als Erkenntnisse liefert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qda-miner-editorial.webp" alt="Illustration zu QDA Miner: Transkripte und Notizen werden codiert, gruppiert und ausgewertet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Codierung von Textdaten:** Ermöglicht das Markieren und Verschlagworten von Textstellen zur systematischen Analyse.

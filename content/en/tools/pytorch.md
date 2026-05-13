@@ -19,6 +19,10 @@ PyTorch is an open-source framework for machine learning and deep learning, used
 
 PyTorch is aimed at researchers, developers, and data scientists who want to build powerful and customizable deep learning models. It is ideal for users who value flexibility in modeling and need rapid prototyping. It is also very popular in academic research because of its intuitive syntax and strong community. Beginners in AI benefit from extensive tutorials and an active user base that makes it easier to get started.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pytorch-editorial.webp" alt="Illustration for PyTorch: Tensors, model graphs, and experiments move through training loops" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Dynamic computational graphs that enable flexible model architectures  

@@ -34,6 +34,10 @@ Im Alltag ist Pencil2D angenehm direkt. Man zeichnet, blaettert, korrigiert. Gen
 
 Gute Ergebnisse kommen durch Planung: Keyframes, Zwischenzeichnungen, Timing und saubere Ebenen. Wer sofort jedes Frame ausarbeitet, malt sich schnell in eine Ecke.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pencil-editorial.webp" alt="Illustration zu Pencil: Wireframes und Komponenten werden zu einem Prototypenfluss geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Frame-by-Frame-Animation mit Bitmap- und Vektorzeichnungen.

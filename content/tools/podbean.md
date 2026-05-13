@@ -30,6 +30,10 @@ Als Prüfstück für Podbean eignet sich einer echten Aufnahme mit Rohmaterial, 
 - **Guter Start für Podbean:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Podbean:** Ohne klare Regeln wird der Nutzen schwach, sobald Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/podbean-editorial.webp" alt="Illustration zu Podbean: Podcastfolgen werden gehostet, verteilt und anhand von Signalen ausgewertet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Podcast-Hosting**: Speicherplatz und Bandbreite für die Veröffentlichung von Audioinhalten.

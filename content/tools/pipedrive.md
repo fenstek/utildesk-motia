@@ -30,6 +30,10 @@ Als Prüfstück für Pipedrive eignet sich einer realen Kampagne mit Zielgruppe,
 - **Guter Start für Pipedrive:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Pipedrive:** Der Einsatz kippt in Zusatzarbeit, wenn Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipedrive-editorial.webp" alt="Illustration zu Pipedrive: Deals bewegen sich durch Pipeline-Stufen, Aktivitaeten und Prognosepfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Verkaufs-Pipeline-Management:** Visualisierung und Steuerung der einzelnen Verkaufsphasen für bessere Übersicht.

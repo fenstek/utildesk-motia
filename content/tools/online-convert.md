@@ -30,6 +30,10 @@ Online-Convert sollte zuerst in einem echten Wochenablauf mit Aufgaben, Terminen
 - **Guter Start für Online-Convert:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Online-Convert:** Der Einsatz kippt in Zusatzarbeit, wenn Regeln, Benachrichtigungen, Datenpflege und Verantwortlichkeiten nicht gemeinsam festgelegt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/online-convert-editorial.webp" alt="Illustration zu Online-Convert: Dateitypen laufen durch Konvertierungspfade zu geordneten Ausgaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung zahlreicher Dateiformate für Dokumente, Bilder, Audio, Video und E-Books.

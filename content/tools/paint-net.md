@@ -23,6 +23,10 @@ Paint.NET passt zu Windows-Nutzern, kleinen Teams, Lehrkontexten und Menschen, d
 - Einsteiger an Ebenen, Auswahl und Bildformate heranführen.
 - Schnelle Aufgaben erledigen, für die Photoshop überdimensioniert wäre.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paint-net-editorial.webp" alt="Illustration zu Paint.NET: Bildbereiche, Ebenen und Werkzeuge formen eine schnelle Rasterbearbeitung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Ebenen, Auswahlwerkzeuge, einfache Effekte und Korrekturen.

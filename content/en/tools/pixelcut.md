@@ -24,6 +24,10 @@ Creative tools save time when they make material malleable. They hurt when every
 
 Pixelcut fits e-commerce, small brands, social sellers, and content teams best when there is a concrete bottleneck to solve. The more clearly that bottleneck is described, the easier the tool is to judge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixelcut-editorial.webp" alt="Illustration for Pixelcut: Product photos are cut out, cleaned, and prepared for shop visuals" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical use cases
 
 - remove product backgrounds

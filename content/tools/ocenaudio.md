@@ -20,6 +20,10 @@ Ocenaudio eignet sich für Nutzerinnen, die Audiodateien schnell prüfen, schnei
 
 Für Mehrspurproduktionen, Musikarrangements oder professionelles Mastering ist Ocenaudio nicht die richtige Zentrale. Seine Stärke liegt in Klarheit und Geschwindigkeit bei einzelnen Audiodateien.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ocenaudio-editorial.webp" alt="Illustration zu Ocenaudio: Audiowellen werden geschnitten, geprueft und als sauberer Clip exportiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - Audio schneiden und Passagen entfernen

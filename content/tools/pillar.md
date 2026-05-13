@@ -30,6 +30,10 @@ Als Prüfstück für Pillar eignet sich einem begrenzten Datensatz mit klarer Qu
 - **Guter Start für Pillar:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Pillar:** Kritisch wird es, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pillar-editorial.webp" alt="Illustration zu Pillar: Creator-Angebote und Linkpfade werden zu einem Monetarisierungsfluss gebuendelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligenter KI-Assistent:** Unterstützt bei der Organisation von Aufgaben, Terminplanung und Informationssuche.

@@ -32,6 +32,10 @@ The best practical test for QDA Miner is small, but real. A team should run thro
 - **Rollout question:** how the codebook is maintained, aligned, and documented.
 - **Drag:** with unclear coding logic, it tends to simulate order rather than deliver insights.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qda-miner-editorial.webp" alt="Illustration for QDA Miner: Transcripts and notes are coded, grouped, and analyzed" loading="lazy" decoding="async" />
+</figure>
+
 ## Core features
 
 - **Coding text data:** Enables marking and tagging text passages for systematic analysis.

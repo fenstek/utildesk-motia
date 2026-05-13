@@ -20,6 +20,10 @@ Paint.NET is a user-friendly image editing application originally developed as a
 
 Paint.NET is aimed primarily at hobby users, students, bloggers, and small businesses that are looking for a powerful but easy-to-use image editing solution. It is suitable for users who want to carry out simple to moderately complex image edits without having to learn overly complex professional software. Paint.NET is also a practical choice for designers who want to create quick sketches or drafts.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paint-net-editorial.webp" alt="Illustration for Paint.NET: Image regions, layers, and tools shape fast raster editing" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Support for layers and transparency
