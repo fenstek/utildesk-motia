@@ -33,6 +33,10 @@ In day-to-day work, Caffe is less about having every edge feature and more about
 
 Caffe is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/caffe-editorial.webp" alt="Illustration for Caffe: espresso machine as a neural network of cups and beans" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Support for deep neural networks (Deep Learning) with various architectures such as CNNs (Convolutional Neural Networks)

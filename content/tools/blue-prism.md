@@ -29,6 +29,10 @@ Im Alltag zählt bei Blue Prism weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Blue Prism vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/blue-prism-editorial.webp" alt="Illustration zu Blue Prism: Automatisierungszentrale mit blauen Prozessmodulen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visuelle Prozessmodellierung:** Erstellung automatisierter Workflows über eine benutzerfreundliche Drag-and-Drop-Oberfläche.

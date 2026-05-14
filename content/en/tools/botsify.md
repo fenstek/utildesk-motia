@@ -26,6 +26,10 @@ Botsify is aimed at companies of all sizes that want to improve customer communi
   
 Depending on the plan and requirements, both beginners and technically experienced users can benefit from Botsify.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/botsify-editorial.webp" alt="Illustration for Botsify: support counter with chatbot and request cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Visual chatbot builder:** Intuitive drag-and-drop interface for easily creating chat flows without programming knowledge.

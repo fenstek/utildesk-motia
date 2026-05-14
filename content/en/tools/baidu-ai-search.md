@@ -40,6 +40,10 @@ In day-to-day work, Baidu AI Search is less about having every edge feature and 
 
 Baidu AI Search is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/baidu-ai-search-editorial.webp" alt="Illustration for Baidu AI Search: knowledge garden with search paths and organized results" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent Search Results:** Utilization of AI algorithms to enhance the relevance and contextualization of search queries.

@@ -39,6 +39,10 @@ In day-to-day work, AWS SageMaker is less about having every edge feature and mo
 
 AWS SageMaker is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-sagemaker-editorial.webp" alt="Illustration for AWS SageMaker: workbench for training, model review, and deployment" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Integrated Development Environment (SageMaker Studio):** A web-based IDE for creating, training, and monitoring ML models.

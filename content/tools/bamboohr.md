@@ -29,6 +29,10 @@ Im Alltag zählt bei BambooHR weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist BambooHR vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bamboohr-editorial.webp" alt="Illustration zu BambooHR: HR-Schreibtisch mit Profilkarten und Pflanzen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mitarbeiterverwaltung:** Zentrale Speicherung und Verwaltung aller Mitarbeiterdaten inklusive Dokumenten, Verträgen und persönlichen Informationen.

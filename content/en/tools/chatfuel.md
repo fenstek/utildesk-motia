@@ -32,6 +32,10 @@ In day-to-day work, Chatfuel is less about having every edge feature and more ab
 
 Chatfuel is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatfuel-editorial.webp" alt="Illustration for Chatfuel: chatbot at a small service counter with conversation cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Visual Bot Builder:** Intuitive drag-and-drop interface for creating chatbot dialogues without coding.

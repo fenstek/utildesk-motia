@@ -29,6 +29,10 @@ Im Alltag zählt bei CockroachDB weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist CockroachDB vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cockroachdb-editorial.webp" alt="Illustration zu CockroachDB: verteilte Daten-Tresore mit redundanten Verbindungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Verteilte SQL-Datenbank:** Unterstützt standardmäßige SQL-Abfragen über eine horizontal skalierbare Infrastruktur.

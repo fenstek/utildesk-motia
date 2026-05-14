@@ -36,6 +36,10 @@ Im Alltag zählt bei Bitmoji weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Bitmoji vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bitmoji-editorial.webp" alt="Illustration zu Bitmoji: Avatar-Atelier mit Kostümen, Posen und Ausdrucksvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Avatar-Erstellung:** Umfangreiche Optionen zur Gestaltung von Gesicht, Frisur, Kleidung und Accessoires.

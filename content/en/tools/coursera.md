@@ -34,6 +34,10 @@ In day-to-day work, Coursera is less about having every edge feature and more ab
 
 Coursera is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coursera-editorial.webp" alt="Illustration for Coursera: learning path of course materials, lecture stage, and notes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Access to thousands of online courses and specializations, especially in AI and Data Science

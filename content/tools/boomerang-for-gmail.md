@@ -34,6 +34,10 @@ Im Alltag zählt bei Boomerang for Gmail weniger, ob jede Randfunktion vorhanden
 
 Praktisch ist Boomerang for Gmail vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/boomerang-for-gmail-editorial.webp" alt="Illustration zu Boomerang for Gmail: E-Mail-Zeitplanung mit Umschlägen, Uhr und Rücklaufspur" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mails planen:** Senden Sie Nachrichten zu einem späteren Zeitpunkt automatisch.

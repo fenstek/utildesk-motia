@@ -24,6 +24,10 @@ CrewAI is especially well suited for businesses of all sizes that want to digiti
 
 The platform is flexible and can be adapted depending on the use case, making it suitable for different industries and requirements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crew-ai-editorial.webp" alt="Illustration for CrewAI: coordinated assistants working on a shared blueprint" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Automated task management:** AI agents take over recurring tasks and processes.

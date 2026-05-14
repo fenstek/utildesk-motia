@@ -36,6 +36,10 @@ Im Alltag zählt bei Baidu AI Search weniger, ob jede Randfunktion vorhanden ist
 
 Praktisch ist Baidu AI Search vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/baidu-ai-search-editorial.webp" alt="Illustration zu Baidu AI Search: Wissensgarten mit Suchpfaden und geordneten Fundstellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Suchergebnisse:** Nutzung von AI-Algorithmen zur Verbesserung der Relevanz und Kontextualisierung von Suchanfragen.

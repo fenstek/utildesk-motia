@@ -41,6 +41,10 @@ In day-to-day work, CodePen is less about having every edge feature and more abo
 
 CodePen is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codepen-editorial.webp" alt="Illustration for CodePen: geometric frontend experiments from code, color, and layout" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Live Editor:** Real-time preview of HTML, CSS, and JavaScript while editing

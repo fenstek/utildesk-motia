@@ -33,6 +33,10 @@ In day-to-day work, CockroachDB is less about having every edge feature and more
 
 CockroachDB is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cockroachdb-editorial.webp" alt="Illustration for CockroachDB: distributed data vaults with redundant connections" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Distributed SQL database:** Supports standard SQL queries across a horizontally scalable infrastructure.

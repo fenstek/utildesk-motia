@@ -29,6 +29,10 @@ Im Alltag zählt bei ContentStudio weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist ContentStudio vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/contentstudio-editorial.webp" alt="Illustration zu ContentStudio: Content-Studio mit Kamera, Mikrofon und Planungskarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Content-Kuration:** Finden und teilen Sie relevante Inhalte aus verschiedenen Quellen, um Ihre Social-Media-Kanäle abwechslungsreich zu gestalten.

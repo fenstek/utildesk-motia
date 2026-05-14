@@ -29,6 +29,10 @@ Im Alltag zählt bei ClickUp weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist ClickUp vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clickup-editorial.webp" alt="Illustration zu ClickUp: Projekt-Werkbank mit Aufgaben, Kalenderteilen und Modellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Aufgaben- und Projektmanagement:** Erstellen, zuweisen und verfolgen von Aufgaben mit Prioritäten, Fälligkeitsdaten und Status.

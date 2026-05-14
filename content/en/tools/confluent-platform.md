@@ -38,6 +38,10 @@ In day-to-day work, Confluent Platform is less about having every edge feature a
 
 Confluent Platform is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/confluent-platform-editorial.webp" alt="Illustration for Confluent Platform: data streams branching like rivers through channels" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time Data Streaming:** Processing and transferring data streams with very low latency.

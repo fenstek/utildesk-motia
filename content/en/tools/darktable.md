@@ -32,6 +32,10 @@ In day-to-day work, Darktable is less about having every edge feature and more a
 
 Darktable is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/darktable-editorial.webp" alt="Illustration for Darktable: darkroom table with contact sheets, filters, and landscape print" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Non-destructive editing of RAW files with extensive support for various camera models

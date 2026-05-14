@@ -29,6 +29,10 @@ Im Alltag zählt bei Darktable weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Darktable vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/darktable-editorial.webp" alt="Illustration zu Darktable: Dunkelkammer-Tisch mit Kontaktboegen, Filtern und Landschaftsabzug" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Nicht-destruktive Bearbeitung von RAW-Dateien mit umfassender Unterstützung verschiedener Kameramodelle

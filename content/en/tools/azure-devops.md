@@ -25,6 +25,10 @@ Azure DevOps is aimed at development teams, platform teams, and organizations th
 - Companies that prefer cloud-based solutions but also need hybrid or on-premises options.
 - Teams that want close collaboration between development, testing, and operations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-devops-editorial.webp" alt="Illustration for Azure DevOps: release station with pipeline, tickets, and handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Azure Boards:** Agile planning tools with Kanban boards, backlogs, and sprint planning.

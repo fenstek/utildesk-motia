@@ -32,6 +32,10 @@ In day-to-day work, Coda is less about having every edge feature and more about 
 
 Coda is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coda-editorial.webp" alt="Illustration for Coda: notebook unfolding into a paper app and workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **All-in-One Document:** Combines text, tables, images, and interactive elements in a single document.

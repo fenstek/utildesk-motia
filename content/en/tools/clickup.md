@@ -19,6 +19,10 @@ ClickUp is a versatile project management and productivity platform powered by A
 
 ClickUp is aimed at a broad audience: from small startups and mid-sized companies to large enterprises. It is especially well suited for teams looking for a central solution to bring together projects, tasks, and communication. Freelancers and individual users also benefit from the flexible structure and customizable workflows. Across industries, ClickUp supports teams in IT, marketing, sales, design, education, and many other fields.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clickup-editorial.webp" alt="Illustration for ClickUp: project workbench with tasks, calendar pieces, and models" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Task and project management:** Create, assign, and track tasks with priorities, due dates, and statuses.

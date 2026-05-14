@@ -42,6 +42,10 @@ In day-to-day work, BriefCam is less about having every edge feature and more ab
 
 BriefCam is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/briefcam-editorial.webp" alt="Illustration for BriefCam: city scene layered into camera time slices" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Video Summarization:** Automatic summarization of long video recordings into concise, relevant clips.

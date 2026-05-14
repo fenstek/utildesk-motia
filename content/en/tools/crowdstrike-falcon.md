@@ -20,6 +20,10 @@ CrowdStrike Falcon is a leading endpoint security platform that uses modern tech
 
 CrowdStrike Falcon is primarily aimed at companies and organizations with high endpoint security requirements. It is ideal for IT teams in mid-sized to large companies that are looking for a central platform to monitor and defend against cyber threats. CrowdStrike Falcon is particularly relevant for industries with sensitive data, such as financial services, healthcare, or government agencies. Developers who want to create secure software environments also benefit from the advanced analysis and protection features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crowdstrike-falcon-editorial.webp" alt="Illustration for CrowdStrike Falcon: security lab trapping a red intrusion signal" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Endpoint Detection and Response (EDR):** Continuous monitoring and analysis of endpoints for rapid detection and defense against threats.

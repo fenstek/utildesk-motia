@@ -37,6 +37,10 @@ Im Alltag zählt bei Botpress weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Botpress vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/botpress-editorial.webp" alt="Illustration zu Botpress: Chatbot-Werkstatt mit verbundenen Dialogbausteinen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visueller Flow-Builder:** Intuitive Drag-and-Drop-Oberfläche zur Erstellung von Dialogabläufen ohne Programmierkenntnisse

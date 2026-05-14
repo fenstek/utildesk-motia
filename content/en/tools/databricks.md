@@ -32,6 +32,10 @@ In day-to-day work, Databricks is less about having every edge feature and more 
 
 Databricks is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/databricks-editorial.webp" alt="Illustration for Databricks: data bricks connecting a lake and warehouse" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Unified Data Analytics:** Integration of data processing, analytics, and machine learning in one platform.

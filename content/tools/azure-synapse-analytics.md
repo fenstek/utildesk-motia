@@ -34,6 +34,10 @@ Im Alltag zählt bei Azure Synapse Analytics weniger, ob jede Randfunktion vorha
 
 Praktisch ist Azure Synapse Analytics vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-synapse-analytics-editorial.webp" alt="Illustration zu Azure Synapse Analytics: Datenobservatorium mit verbundenen Analysepfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Integriertes Data Warehouse**: Kombination von Data Warehousing und Big Data-Technologien für umfassende Analysen.

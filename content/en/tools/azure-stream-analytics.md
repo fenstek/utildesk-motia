@@ -19,6 +19,10 @@ Azure Stream Analytics is Microsoft's managed service for streaming queries insi
 
 Azure Stream Analytics is aimed at data engineers, cloud teams, and developers who need to evaluate data streams quickly: IoT telemetry, logs, usage events, fraud signals, or operational metrics. It is an obvious fit when the surrounding architecture already runs heavily on Azure. Teams needing a cloud-neutral streaming layer or deep low-level control should compare Kafka, Flink, or Dataflow first.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-stream-analytics-editorial.webp" alt="Illustration for Azure Stream Analytics: real-time data streams as a glass measurement lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time data analysis:** Process and analyze streaming data in real time with SQL-like queries.

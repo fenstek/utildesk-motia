@@ -43,6 +43,10 @@ In day-to-day work, Copy.ai is less about having every edge feature and more abo
 
 Copy.ai is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/copy-ai-editorial.webp" alt="Illustration for Copy.ai: writing desk with typewriter, idea stacks, and tone cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated text generation:** Creates text suggestions based on fewer keywords or short inputs.

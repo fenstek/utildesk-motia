@@ -29,6 +29,10 @@ Im Alltag zählt bei Automation Anywhere weniger, ob jede Randfunktion vorhanden
 
 Praktisch ist Automation Anywhere vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/automation-anywhere-editorial.webp" alt="Illustration zu Automation Anywhere: automatisierte Dokumentenstrecke mit Roboterarmen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Robotic Process Automation (RPA):** Automatisierung von sich wiederholenden Aufgaben durch Software-Roboter.

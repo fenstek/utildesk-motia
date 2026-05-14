@@ -39,6 +39,10 @@ In day-to-day work, AWS Inferentia is less about having every edge feature and m
 
 AWS Inferentia is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-inferentia-editorial.webp" alt="Illustration for AWS Inferentia: AI accelerator chip with glowing signal paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Specialized Hardware for Machine Learning Inference:** Optimized for the execution of deep learning models with high efficiency.

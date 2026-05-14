@@ -35,6 +35,10 @@ Im Alltag zählt bei CodeSandbox weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist CodeSandbox vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codesandbox-editorial.webp" alt="Illustration zu CodeSandbox: Entwicklungs-Sandbox als Glas-Terrarium mit Modulen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Browserbasierte IDE:** Voll ausgestattete Entwicklungsumgebung direkt im Webbrowser, ohne lokale Installation.

@@ -37,6 +37,10 @@ Im Alltag zählt bei BriefCam weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist BriefCam vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/briefcam-editorial.webp" alt="Illustration zu BriefCam: Stadtszene in überlagerten Zeitschichten einer Kamera" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Video-Summarization:** Automatische Zusammenfassung langer Videoaufnahmen in kurze, relevante Clips.

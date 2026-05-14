@@ -32,6 +32,10 @@ In day-to-day work, Clarifai Video Recognition is less about having every edge f
 
 Clarifai Video Recognition is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clarifai-video-recognition-editorial.webp" alt="Illustration for Clarifai Video Recognition: film strip with recognized motion and objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Object Detection in Videos:** Real-time identification of people, vehicles, animals, and other objects in recorded or live videos.

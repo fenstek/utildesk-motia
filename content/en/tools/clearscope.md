@@ -34,6 +34,10 @@ In day-to-day work, Clearscope is less about having every edge feature and more 
 
 Clearscope is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clearscope-editorial.webp" alt="Illustration for Clearscope: editorial desk with content map, highlights, and topic links" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Keyword Research and Analysis:** Identify relevant keywords with high potential for the specific topic.

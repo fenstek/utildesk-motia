@@ -34,6 +34,10 @@ Im Alltag zählt bei AWS SageMaker weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist AWS SageMaker vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-sagemaker-editorial.webp" alt="Illustration zu AWS SageMaker: Arbeitsfläche für Training, Modellprüfung und Auslieferung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Integrierte Entwicklungsumgebung (SageMaker Studio):** Eine webbasierte IDE für das Erstellen, Trainieren und Überwachen von ML-Modellen.

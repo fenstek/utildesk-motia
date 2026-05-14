@@ -37,6 +37,10 @@ Im Alltag zählt bei Bitwig Studio weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Bitwig Studio vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bitwig-studio-editorial.webp" alt="Illustration zu Bitwig Studio: elektronisches Musikstudio mit Synthesizern und Spuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Modulares Clip-basiertes Arrangement:** Ermöglicht flexible Komposition und Performance mit Clips.

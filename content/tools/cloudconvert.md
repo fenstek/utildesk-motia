@@ -29,6 +29,10 @@ Im Alltag zählt bei CloudConvert weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist CloudConvert vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cloudconvert-editorial.webp" alt="Illustration zu CloudConvert: Wolkenmaschine verwandelt Medien und Dateien in neue Formate" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung von über 200 Dateiformaten, darunter PDF, DOCX, JPG, MP4, MP3 und viele mehr  

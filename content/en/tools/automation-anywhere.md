@@ -35,6 +35,10 @@ In day-to-day work, Automation Anywhere is less about having every edge feature 
 
 Automation Anywhere is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/automation-anywhere-editorial.webp" alt="Illustration for Automation Anywhere: automated document workflow with robotic arms" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Robotic Process Automation (RPA):** Automation of repetitive tasks using software robots.

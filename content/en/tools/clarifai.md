@@ -33,6 +33,10 @@ In day-to-day work, Clarifai is less about having every edge feature and more ab
 
 Clarifai is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clarifai-editorial.webp" alt="Illustration for Clarifai: camera lens organizing objects on a market table" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Image and Video Recognition:** Automatic identification of objects, scenes, faces, and text in images and videos.

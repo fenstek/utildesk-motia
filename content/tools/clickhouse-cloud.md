@@ -34,6 +34,10 @@ Im Alltag zählt bei ClickHouse Cloud weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist ClickHouse Cloud vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clickhouse-cloud-editorial.webp" alt="Illustration zu ClickHouse Cloud: schwebendes Cloud-Lager aus schnellen Datensäulen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloud-native Architektur**: Vollständig verwalteter Service ohne Infrastrukturaufwand.

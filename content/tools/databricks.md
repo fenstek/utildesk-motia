@@ -29,6 +29,10 @@ Im Alltag zählt bei Databricks weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Databricks vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/databricks-editorial.webp" alt="Illustration zu Databricks: Datenbausteine verbinden See und Warehouse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unified Data Analytics:** Integration von Datenverarbeitung, Analyse und Machine Learning in einer Plattform.

@@ -32,6 +32,10 @@ In day-to-day work, Connected Papers is less about having every edge feature and
 
 Connected Papers is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/connected-papers-editorial.webp" alt="Illustration for Connected Papers: research papers as a connected citation network" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual graphs to represent relationships between research papers

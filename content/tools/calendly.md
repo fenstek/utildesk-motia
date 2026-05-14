@@ -37,6 +37,10 @@ Im Alltag zählt bei Calendly weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Calendly vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/calendly-editorial.webp" alt="Illustration zu Calendly: Planer mit Terminfeldern, Uhr und Einladungskarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Terminplanung:** Nutzer können ihre Verfügbarkeit einstellen, und andere wählen passende Zeiten aus.

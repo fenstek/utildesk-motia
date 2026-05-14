@@ -38,6 +38,10 @@ In day-to-day work, Boomerang for Gmail is less about having every edge feature 
 
 Boomerang for Gmail is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/boomerang-for-gmail-editorial.webp" alt="Illustration for Boomerang for Gmail: email scheduling with envelopes, clock, and return path" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email planning:** Send emails at a later time automatically.

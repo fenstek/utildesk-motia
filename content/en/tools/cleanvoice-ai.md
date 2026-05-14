@@ -34,6 +34,10 @@ In day-to-day work, Cleanvoice AI is less about having every edge feature and mo
 
 Cleanvoice AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cleanvoice-ai-editorial.webp" alt="Illustration for Cleanvoice AI: microphone and cleaned audio waves as hanging ribbons" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic detection and removal of filler words such as "ahm", "ah" and "hm"

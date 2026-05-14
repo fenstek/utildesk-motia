@@ -40,6 +40,10 @@ In day-to-day work, Brainscape is less about having every edge feature and more 
 
 Brainscape is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brainscape-editorial.webp" alt="Illustration for Brainscape: flashcards unfolding into a memory palace" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered learning cards**: Automatic adjustment of repetition intervals based on individual learning progress.

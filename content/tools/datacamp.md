@@ -29,6 +29,10 @@ Im Alltag zählt bei DataCamp weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist DataCamp vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datacamp-editorial.webp" alt="Illustration zu DataCamp: Lerncamp mit Datenfeuer, Notizbüchern und Analysezeichen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Interaktive Online-Kurse zu Themen wie Python, R, SQL, Datenanalyse und maschinelles Lernen  

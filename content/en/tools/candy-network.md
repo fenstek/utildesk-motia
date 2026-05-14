@@ -36,6 +36,10 @@ In day-to-day work, Candy Network is less about having every edge feature and mo
 
 Candy Network is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/candy-network-editorial.webp" alt="Illustration for Candy Network: colorful collectibles and fan cards as a pop-art collage" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing:** Candy Network uses modern KI algorithms to enable human-like conversations.

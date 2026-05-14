@@ -29,6 +29,10 @@ Im Alltag zählt bei Coursera weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Coursera vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coursera-editorial.webp" alt="Illustration zu Coursera: Lernpfad aus Kursmaterialien, Vorlesungsbuehne und Notizen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Zugang zu tausenden Online-Kursen und Spezialisierungen, insbesondere im Bereich AI und Data Science

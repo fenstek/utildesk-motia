@@ -36,6 +36,10 @@ Im Alltag zählt bei Cisco Webex weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Cisco Webex vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cisco-webex-editorial.webp" alt="Illustration zu Cisco Webex: hybrider Besprechungstisch mit Lichtkacheln fuer Teilnehmende" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - HD-Video- und Audioqualität für Meetings und Webinare  

@@ -29,6 +29,10 @@ Im Alltag zählt bei Chatfuel weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Chatfuel vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/chatfuel-editorial.webp" alt="Illustration zu Chatfuel: Chatbot am kleinen Service-Tresen mit Dialogkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visueller Bot-Builder:** Intuitive Drag-and-Drop-Oberfläche zum Erstellen von Chatbot-Dialogen ohne Programmieraufwand.

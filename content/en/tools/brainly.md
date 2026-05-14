@@ -25,6 +25,10 @@ Brainly is primarily aimed at students of all age groups who need support with t
 - prefer free or cost-effective learning assistance
 - prefer flexible and location-independent learning
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brainly-editorial.webp" alt="Illustration for Brainly: shared study table with questions, ideas, and notes" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Community-based questions & answers:** Users post questions that are answered by other members.
