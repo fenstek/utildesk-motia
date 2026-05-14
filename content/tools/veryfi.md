@@ -71,6 +71,21 @@ Bei Veryfi sollten Entwickler früh prüfen, wie stabil API, Antwortschema, Fehl
 - Ohne Review-Regeln können falsche Felder unbemerkt in Buchhaltung oder Datenbanken landen.
 - Datenschutz, AVV/DPA, Datenstandort und Löschung müssen vor Produktivbetrieb geprüft werden.
 
+
+## Was im Alltag wirklich zählt
+
+Bei Veryfi zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Der Nutzen entsteht erst, wenn wiederkehrende Dokumenttypen sauber modelliert sind und Ausnahmen nicht im Postfach liegen bleiben.
+
+Für Veryfi sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+
+## Workflow-Fit
+
+Veryfi passt am besten, wenn Rechnungen, Bestellungen, Leads oder Formulare in ähnlichen Formaten eintreffen und nach der Prüfung an operative Systeme übergeben werden. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+
+## Redaktionelle Einschätzung
+
+Veryfi lohnt sich vor allem für wiederholbare Extraktionsaufgaben mit klaren Feldern, Besitzern und Korrekturwegen. Wenn jedes Dokument ein neues Layout hat oder die Zielsysteme noch nicht feststehen, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
+
 ## Preise & Kosten
 
 Preismodell: **Nutzungsbasiert**. Für Veryfi zählt im Vergleich nicht nur der Einstiegspreis. Relevant sind Seitenvolumen, Dokumenttypen, API-Aufrufe, Nutzerplätze, Review-Funktionen, Speicherfristen sowie Aufwand für Einrichtung, Betrieb und Support.

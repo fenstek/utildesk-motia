@@ -48,6 +48,20 @@ Kaggle Learn richtet sich an Entwickler, Datenwissenschaftler, Studierende und a
 - Keine zertifizierten Abschlüsse oder formale Qualifikationen
 - Weniger strukturierte Lernpfade im Vergleich zu manchen kostenpflichtigen Plattformen
 
+
+## Was im Alltag wirklich zählt
+
+Bei Kaggle Learn zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Lernplattformen helfen nur, wenn kurze Lektionen in einen echten Lernplan passen. Einzelne Übungen ohne Anwendung bleiben schnell unverbindlich.
+
+Für Kaggle Learn sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+
+## Workflow-Fit
+
+Kaggle Learn passt am besten, wenn Einsteiger Grundlagen üben oder Teams gemeinsame Skill-Bausteine für Daten-, Code- oder Analysearbeit aufbauen wollen. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+
+## Redaktionelle Einschätzung
+
+Kaggle Learn ist gut für fokussierte Grundlagen und Wiederholung, braucht aber praktische Projekte, damit Wissen in Arbeitssituationen ankommt. Wenn ein Zertifikat wichtiger wird als angewendete Kompetenz oder Lernzeit nicht regelmäßig eingeplant ist, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
 ## Preise & Kosten
 
 Kaggle Learn ist vollständig **kostenlos** nutzbar. Es gibt keine Beschränkungen hinsichtlich der Kursanzahl oder der Nutzungsdauer. Der Zugang zu allen Lernmodulen und Ressourcen ist ohne Registrierung möglich, allerdings bietet eine Anmeldung zusätzliche Funktionen wie das Speichern von Fortschritten und die Teilnahme an Wettbewerben.

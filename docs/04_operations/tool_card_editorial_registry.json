@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13",
+  "last_updated": "2026-05-14",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -1232,6 +1232,82 @@
         "gotomeeting",
         "lumen5",
         "google-chat"
+      ]
+    },
+    {
+      "id": "2026-05-14-editorial-final-unregistered-tool-cards",
+      "date": "2026-05-14",
+      "count": 40,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "registry gap audit on paired tool cards",
+      "notes": "Closed the final 40 DE/EN tool-card text-edit registry gaps, including disabled legacy aliases. Added or normalized practical workflow-fit and editorial-assessment sections, and registered already hand-edited document/OCR cards so future audits no longer treat them as untouched.",
+      "slugs": [
+        "abbyy-vantage",
+        "adobe-express",
+        "amazon-codewhisperer",
+        "amazon-dynamodb",
+        "aws-textract",
+        "azure-ai-document-intelligence",
+        "capcut",
+        "docparser",
+        "google-cloud-vision-api",
+        "google-data-studio",
+        "google-document-ai",
+        "grammarly",
+        "hera",
+        "hermes-agent",
+        "hubspot-sales-hub",
+        "klippa",
+        "microsoft-translator",
+        "mindee",
+        "miro",
+        "mistral-ocr",
+        "nanonets",
+        "naoma-ai",
+        "ocrmypdf",
+        "openai-chatgpt",
+        "paddleocr",
+        "parseur",
+        "redis",
+        "right-inbox",
+        "rossum",
+        "sap-sales-cloud",
+        "semrush",
+        "spacy",
+        "swagger-ui",
+        "tensorflow",
+        "tesseract-ocr",
+        "trello-mit-butler",
+        "veryfi",
+        "vyrill",
+        "zapier",
+        "_slack"
+      ]
+    },
+    {
+      "id": "2026-05-14-editorial-post-rebase-sheet-tools",
+      "date": "2026-05-14",
+      "count": 10,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "post-rebase registry gap audit after concurrent sheet publish batch",
+      "notes": "Closed 10 additional DE/EN tool-card text-edit registry gaps that appeared after rebasing over the latest sheet-publish production commit.",
+      "slugs": [
+        "adobe-captivate",
+        "azure-devops",
+        "azure-stream-analytics",
+        "h2o-automl",
+        "kaggle-learn",
+        "medibang-paint",
+        "microsoft-azure-event-hubs",
+        "microsoft-azure-hdinsight",
+        "tara-ai",
+        "teradata-vantage"
       ]
     }
   ]

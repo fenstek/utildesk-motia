@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-14_
 
+## 2026-05-14 - Final tool-card text editorial gap pass
+- Manually improved or normalized the remaining 40 DE/EN tool cards that were missing from the text editorial registry, including disabled legacy aliases.
+- Added practical workflow-fit and editorial-assessment language where pages still had generic generated structure, and registered already hand-edited OCR/document cards.
+- Updated `docs/04_operations/tool_card_editorial_registry.json` so the manual text-edit audit has 0 unregistered paired tool cards.
+- Post-rebase addendum: after the concurrent sheet publish commit added 10 more paired tool cards, manually edited and registered those cards too before production deploy.
+
 ## 2026-05-14 - Publish QC gate unblocked for large NEW queues
 
 - Investigated why Google Sheet `NEW` rows were no longer reaching production: VPS publish cron was healthy and unpaused, but `qc_before_publish.mjs` timed out before generation.

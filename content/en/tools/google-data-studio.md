@@ -48,6 +48,21 @@ Google Data Studio is aimed at data analysts, marketing professionals, content m
 - Dependence on an internet connection because it is cloud-based
 - No dedicated audio analysis functions; customization requires your own data sources
 
+
+## What Really Matters in Daily Use
+
+With Google Data Studio, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. For reporting, the chart is not the point; metrics, sources, and owners need to be stable enough to support decisions. Because this card is marked as a legacy entry, separate the name carefully from current reporting decisions.
+
+For Google Data Studio, start with a small pilot using real material: who provides the inputs, who reviews the result, and where does the output go next?
+
+## Workflow Fit
+
+Google Data Studio fits best when teams share recurring reports and define data sources, metric definitions, and refresh cadence clearly. Before rollout, roles, permissions, export paths, and quality control should be explicit; otherwise the tool quickly becomes another storage place beside the real process.
+
+## Editorial Assessment
+
+Google Data Studio helps as a reporting layer when the data foundation is already clear and dashboards support concrete decisions. If unclean data is only made visually attractive or legacy naming is mixed into current platform decisions, start with a lighter or more specialized approach first.
+
 ## Pricing & Costs
 
 Google Data Studio is generally available for free. There are no license fees or subscription costs. Access to certain data sources or advanced features may incur additional costs depending on the provider or plan, but these are usually independent of Google Data Studio itself.

@@ -47,6 +47,21 @@ Swagger UI richtet sich an Entwickler, API-Designer und Teams, die APIs erstelle
 - UI-Design ist funktional, aber weniger modern im Vergleich zu einigen kommerziellen Lösungen.
 - Benötigt technische Kenntnisse für tiefergehende Anpassungen.
 
+
+## Was im Alltag wirklich zählt
+
+Bei Swagger UI zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Bei API-Dokumentation zählt, ob sie die tatsächliche Schnittstelle erklärt und Tests erleichtert. Eine schöne Oberfläche rettet keine unklare Spezifikation. Da diese Karte als Legacy-Eintrag markiert ist, sollte sie vor allem als Einordnung des Dokumentationsmusters und nicht als vollständige aktuelle Toolauswahl verstanden werden.
+
+Für Swagger UI sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+
+## Workflow-Fit
+
+Swagger UI passt am besten, wenn Teams OpenAPI-Spezifikationen pflegen und Dokumentation, Testaufrufe und Abstimmung mit Integrationspartnern an einem Ort brauchen. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+
+## Redaktionelle Einschätzung
+
+Swagger UI ist hilfreich als sichtbare Schicht über einer gepflegten API-Spezifikation, nicht als Ersatz für saubere Modellierung und Versionspflege. Wenn die Spezifikation veraltet ist oder Breaking Changes nicht sauber dokumentiert werden, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
+
 ## Preise & Kosten
 
 Swagger UI ist ein Open-Source-Projekt und kann kostenlos genutzt werden. Es fallen keine Lizenzgebühren an. Je nach Anbieter oder Hosting-Lösung können jedoch Kosten für Infrastruktur oder Support entstehen. Für erweiterte Funktionen oder professionelle Services bieten manche Anbieter kostenpflichtige Pakete an, die auf individuellen Angeboten basieren.

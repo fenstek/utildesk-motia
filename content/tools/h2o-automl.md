@@ -45,6 +45,20 @@ H2O AutoML richtet sich an Datenwissenschaftler, Analysten und Machine-Learning-
 - Ressourcenintensiv bei sehr großen Datensätzen oder komplexen Modellen
 - Fehlende dedizierte Support-Services, da Open Source
 
+
+## Was im Alltag wirklich zählt
+
+Bei H2O AutoML zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. AutoML spart Zeit nur, wenn Datenqualität, Zielmetrik und fachliche Prüfung vorher klar sind. Sonst werden schlechte Annahmen lediglich schneller getestet.
+
+Für H2O AutoML sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+
+## Workflow-Fit
+
+H2O AutoML passt am besten, wenn Teams tabellarische ML-Probleme systematisch vergleichen und Modelle mit nachvollziehbarer Evaluation in bestehende Analyse- oder Betriebsprozesse überführen wollen. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+
+## Redaktionelle Einschätzung
+
+H2O AutoML ist nützlich für strukturierte Experimente und Baselines, ersetzt aber keine Datenstrategie und keine fachliche Modellbewertung. Wenn Daten unsauber sind oder ein Modell ohne Monitoring und Verantwortliche produktiv gehen soll, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
 ## Preise & Kosten
 
 H2O AutoML ist Open Source und somit kostenlos nutzbar. Es fallen keine Lizenzgebühren an. Je nach Anwendungsfall können jedoch Infrastrukturkosten (z. B. Server oder Cloud-Ressourcen) entstehen.

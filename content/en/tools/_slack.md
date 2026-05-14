@@ -57,11 +57,23 @@ With its intuitive interface and extensive customization options, Slack is suita
 - Some users find the large number of features overwhelming
 - Depends on a stable internet connection
 
+## What Really Matters in Daily Use
+
+With Slack, the number of channels matters less than whether communication, decisions, and handoffs remain findable. Without clear channel rules, chat quickly becomes a second inbox.
+
+Start with a small pilot using real projects: which conversations belong in channels, which decisions get documented, and which notifications are allowed to interrupt?
+
+## Workflow Fit
+
+Slack fits best when teams work across locations, handle many operational discussions, and use integrations deliberately as signals instead of noise. Before rollout, channel naming, retention, permissions, and escalation paths should be explicit.
+
+## Editorial Assessment
+
+Slack is strong for fast coordination and tool notifications, but it needs moderation, search hygiene, and clear rules for decisions. If a team actually needs binding task management or knowledge documentation, Slack should only be the communication layer.
+
 ## Pricing & costs
 
-Slack offers a freemium pricing model. The basic version is free and includes core features such as messaging, file sharing, and the use of up to 10,000 messages in the history.
-
-Advanced features, such as unlimited message history, enhanced security options, and more integrations, are available in paid subscription plans. Prices vary depending on the plan and number of users.
+Slack offers a freemium model. The free version is useful for getting started and for small teams, but it is limited around history, administration, security, and integrations. Paid plans expand those limits depending on team size and governance needs. Before choosing a plan, check current pricing, retention rules, and compliance features on the official pricing page.
 
 ## Alternatives to Slack
 

@@ -52,6 +52,21 @@ spaCy richtet sich vor allem an Entwickler, Data Scientists und Unternehmen, die
 - Modelle benötigen teilweise viel Speicher und Rechenressourcen.
 - Nicht alle Sprachen sind gleich gut unterstützt.
 
+
+## Was im Alltag wirklich zählt
+
+Bei spaCy zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Bei ML-Bibliotheken zählt die Produktionskette: Datenqualität, Experimente, Evaluation, Deployment und Wartung müssen zusammen gedacht werden.
+
+Für spaCy sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+
+## Workflow-Fit
+
+spaCy passt am besten, wenn Teams eigene Modelle oder Sprachpipelines verantworten und dafür nachvollziehbare Daten, Tests und Release-Prozesse aufbauen. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+
+## Redaktionelle Einschätzung
+
+spaCy ist stark für Teams mit technischem Ownership, die Modelle nicht nur trainieren, sondern auch beobachten und verbessern können. Wenn ein Prototyp ohne Datenstrategie, Monitoring oder fachliche Evaluation produktiv gehen soll, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
+
 ## Preise & Kosten
 
 spaCy ist grundsätzlich Open Source und unter der MIT-Lizenz frei verfügbar. Für Unternehmen, die spezielle Anforderungen oder Support benötigen, bietet der Hersteller kommerzielle Lizenzen und Services an. Die genauen Preise hängen vom Anbieter und dem gewünschten Leistungsumfang ab. Für den Einstieg und kleinere Projekte ist die Nutzung kostenfrei.
