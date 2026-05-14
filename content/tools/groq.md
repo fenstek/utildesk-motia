@@ -5,7 +5,7 @@ category: AI Infrastructure
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com"
-popularity: 46
+popularity: 43
 ---
 
 # Groq

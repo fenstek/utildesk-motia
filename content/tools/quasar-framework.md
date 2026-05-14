@@ -5,7 +5,7 @@ category: AI
 price_model: Open Source
 tags: [developer-tools, web, mobile, open-source]
 official_url: "https://quasar.dev/"
-popularity: 0
+popularity: 17
 ---
 
 # Quasar Framework

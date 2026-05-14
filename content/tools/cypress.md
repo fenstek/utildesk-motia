@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.cypress.io/"
-popularity: 57
+popularity: 54
 ---
 
 # Cypress

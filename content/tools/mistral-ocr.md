@@ -7,7 +7,7 @@ tags:
 official_url: "https://docs.mistral.ai/capabilities/document_ai/basic_ocr/"
 description: Mistral OCR ist eine Dokument-KI-Funktion für Entwickler, die OCR-Ergebnisse in LLM- und Agenten-Workflows weiterverarbeiten möchten.
 created_at: 2026-05-10
-popularity: 29
+popularity: 27
 ---
 # Mistral OCR
 

@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["automation", "workflow"]
 official_url: "https://www.adept.ai/"
-popularity: 82
+popularity: 79
 description: Adept steht für KI-Agenten, die Software bedienen, Arbeitsabläufe automatisieren und komplexe Aufgaben über mehrere Schritte koordinieren sollen.
 ---
 # Adept

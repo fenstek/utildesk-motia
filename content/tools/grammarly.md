@@ -7,7 +7,7 @@ tags:
 official_url: "https://www.grammarly.com/"
 affiliate_url: "https://www.grammarly.com/"
 created_at: 2026-02-02
-popularity: 48
+popularity: 44
 ---
 
 

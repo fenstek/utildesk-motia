@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [wireframing, ui-design, prototyping]
 official_url: "https://balsamiq.com/"
-popularity: 67
+popularity: 63
 ---
 # Balsamiq
 

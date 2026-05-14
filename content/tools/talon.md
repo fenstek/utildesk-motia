@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, productivity, automation, workflow]
 official_url: "https://talonvoice.com/"
-popularity: 86
+popularity: 84
 description: Talon ist ein Voice-Control- und Automatisierungstool für hands-free Computing, Programmieren und produktive Workflows.
 ---
 # Talon
