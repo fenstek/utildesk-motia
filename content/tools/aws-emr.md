@@ -29,6 +29,10 @@ Im Alltag zählt bei AWS EMR (Elastic MapReduce) weniger, ob jede Randfunktion v
 
 Praktisch ist AWS EMR (Elastic MapReduce) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-emr-editorial.webp" alt="Illustration zu AWS EMR (Elastic MapReduce): Datenlandschaft mit Rechenclustern am Berg" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Skalierbare Big Data-Verarbeitung:** Automatische Skalierung von Cluster-Ressourcen je nach Bedarf.

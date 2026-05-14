@@ -29,6 +29,10 @@ Im Alltag zählt bei ChoiceScript weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist ChoiceScript vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/choicescript-editorial.webp" alt="Illustration zu ChoiceScript: offenes Buch mit verzweigten Erzählpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Einfache Skriptsprache:** Speziell für interaktive Geschichten entwickelt, leicht zu erlernen und anzuwenden.

@@ -33,6 +33,10 @@ In day-to-day work, ChoiceScript is less about having every edge feature and mor
 
 ChoiceScript is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/choicescript-editorial.webp" alt="Illustration for ChoiceScript: open book with branching story paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Simple Scripting Language:** Designed specifically for interactive stories, easy to learn and use.

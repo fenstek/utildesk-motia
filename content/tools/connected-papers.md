@@ -29,6 +29,10 @@ Im Alltag zählt bei Connected Papers weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist Connected Papers vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/connected-papers-editorial.webp" alt="Illustration zu Connected Papers: Forschungsblaetter als verbundenes Zitiernetz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle Graphen zur Darstellung von Beziehungen zwischen wissenschaftlichen Arbeiten  

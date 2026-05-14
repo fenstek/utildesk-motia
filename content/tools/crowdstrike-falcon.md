@@ -29,6 +29,10 @@ Im Alltag zählt bei CrowdStrike Falcon weniger, ob jede Randfunktion vorhanden 
 
 Praktisch ist CrowdStrike Falcon vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crowdstrike-falcon-editorial.webp" alt="Illustration zu CrowdStrike Falcon: Sicherheitslabor fängt ein rotes Angriffssignal ab" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Endpoint Detection and Response (EDR):** Kontinuierliche Überwachung und Analyse von Endgeräten zur schnellen Erkennung und Abwehr von Bedrohungen.

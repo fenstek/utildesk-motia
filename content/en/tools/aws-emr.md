@@ -33,6 +33,10 @@ In day-to-day work, AWS EMR (Elastic MapReduce) is less about having every edge 
 
 AWS EMR (Elastic MapReduce) is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-emr-editorial.webp" alt="Illustration for AWS EMR (Elastic MapReduce): mountain data landscape with compute clusters" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Scalable Big Data Processing:** Automatic scaling of cluster resources based on demand.

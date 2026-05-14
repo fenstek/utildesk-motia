@@ -38,6 +38,10 @@ In day-to-day work, Azure Synapse Analytics is less about having every edge feat
 
 Azure Synapse Analytics is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-synapse-analytics-editorial.webp" alt="Illustration for Azure Synapse Analytics: data observatory with connected analytics paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Integrated Data Warehouse**: Combines data warehousing and big data technologies for comprehensive analysis.

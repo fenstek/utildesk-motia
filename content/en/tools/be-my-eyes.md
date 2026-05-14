@@ -20,6 +20,10 @@ Be My Eyes is an innovative app that uses artificial intelligence and a global c
 
 Be My Eyes is primarily designed for people with visual impairments or blindness who need support in their daily lives. The app is ideal for users who need occasional visual assistance, such as reading labels, recognizing colors, or navigating unfamiliar environments. It is also suitable for volunteers who want to use their time to help others and for organizations that support people with visual impairments.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/be-my-eyes-editorial.webp" alt="Illustration for Be My Eyes: everyday scene with camera and tactile guidance aids" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Live Video Calls:** Direct connection between visually impaired users and sighted volunteers for visual support.

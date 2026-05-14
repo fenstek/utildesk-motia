@@ -35,6 +35,10 @@ Im Alltag zählt bei Brainly weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Brainly vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brainly-editorial.webp" alt="Illustration zu Brainly: gemeinsamer Lerntisch mit Fragen, Ideen und Notizen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Community-basierte Fragen & Antworten:** Nutzer stellen Fragen, die von anderen Mitgliedern beantwortet werden.

@@ -33,6 +33,10 @@ In day-to-day work, DataCamp is less about having every edge feature and more ab
 
 DataCamp is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datacamp-editorial.webp" alt="Illustration for DataCamp: learning camp with data fire, notebooks, and analytics markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Interactive online courses on topics such as Python, R, SQL, data analysis, and machine learning  

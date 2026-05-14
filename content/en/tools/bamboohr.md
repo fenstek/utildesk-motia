@@ -33,6 +33,10 @@ In day-to-day work, BambooHR is less about having every edge feature and more ab
 
 BambooHR is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bamboohr-editorial.webp" alt="Illustration for BambooHR: HR desk with profile cards and plants" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Personnel Management:** Central storage and management of all employee data including documents, contracts, and personal information.

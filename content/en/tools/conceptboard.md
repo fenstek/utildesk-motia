@@ -27,6 +27,10 @@ Conceptboard is aimed at teams and companies that value efficient, visual collab
 
 The tool is flexible enough to be used in both small teams and large organizations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/conceptboard-editorial.webp" alt="Illustration for Conceptboard: collaborative creative wall with notes, sketches, and arrows" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Unlimited whiteboards:** Create as many digital boards as you need for different projects and topics.

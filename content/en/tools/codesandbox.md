@@ -41,6 +41,10 @@ In day-to-day work, CodeSandbox is less about having every edge feature and more
 
 CodeSandbox is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codesandbox-editorial.webp" alt="Illustration for CodeSandbox: development sandbox as a glass terrarium with modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Browser-based IDE:** A fully-fledged development environment directly in the web browser, without local installation.

@@ -36,6 +36,10 @@ Im Alltag zählt bei CrewAI weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist CrewAI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crew-ai-editorial.webp" alt="Illustration zu CrewAI: koordinierte Assistenten arbeiten an einem gemeinsamen Bauplan" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Aufgabenverwaltung:** AI-Agenten übernehmen wiederkehrende Aufgaben und Prozesse.

@@ -29,6 +29,10 @@ Im Alltag zählt bei Clearscope weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Clearscope vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clearscope-editorial.webp" alt="Illustration zu Clearscope: Redaktionstisch mit Inhaltskarte, Markierungen und Themenverbindungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Keyword-Recherche und -Analyse:** Identifikation relevanter Suchbegriffe mit hohem Potenzial für das jeweilige Thema.

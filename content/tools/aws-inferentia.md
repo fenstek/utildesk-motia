@@ -34,6 +34,10 @@ Im Alltag zählt bei AWS Inferentia weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist AWS Inferentia vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-inferentia-editorial.webp" alt="Illustration zu AWS Inferentia: KI-Beschleunigerchip mit leuchtenden Signalbahnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spezialisierte Hardware für KI-Inferenz:** Optimiert für die Ausführung von Deep-Learning-Modellen mit hoher Effizienz.

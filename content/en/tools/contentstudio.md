@@ -33,6 +33,10 @@ In day-to-day work, ContentStudio is less about having every edge feature and mo
 
 ContentStudio is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/contentstudio-editorial.webp" alt="Illustration for ContentStudio: content studio with camera, microphone, and planning cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Content Curation:** Find and share relevant content from various sources to diversify your social media channels.

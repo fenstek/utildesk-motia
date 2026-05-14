@@ -36,6 +36,10 @@ Im Alltag zählt bei Brainscape weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Brainscape vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brainscape-editorial.webp" alt="Illustration zu Brainscape: Karteikarten, die zu einem Gedächtnispalast werden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Lernkarten**: Automatische Anpassung der Wiederholungsintervalle basierend auf dem individuellen Lernfortschritt.

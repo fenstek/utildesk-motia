@@ -39,6 +39,10 @@ In day-to-day work, ClickHouse Cloud is less about having every edge feature and
 
 ClickHouse Cloud is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clickhouse-cloud-editorial.webp" alt="Illustration for ClickHouse Cloud: floating cloud warehouse made of fast data columns" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Cloud-native architecture**: Fully managed service with no infrastructure overhead.

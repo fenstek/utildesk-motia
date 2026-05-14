@@ -29,6 +29,10 @@ Im Alltag zählt bei Coda weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Coda vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/coda-editorial.webp" alt="Illustration zu Coda: Notizbuch entfaltet sich zu Papier-App und Workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **All-in-One-Dokumente:** Kombination aus Text, Tabellen, Bildern und interaktiven Elementen in einem einzigen Dokument.

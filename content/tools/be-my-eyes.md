@@ -29,6 +29,10 @@ Im Alltag zählt bei Be My Eyes weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Be My Eyes vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/be-my-eyes-editorial.webp" alt="Illustration zu Be My Eyes: Alltagsszene mit Kamera und taktilen Orientierungshilfen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Live-Videoanrufe:** Direkte Verbindung zwischen sehbehinderten Nutzern und sehenden Freiwilligen zur visuellen Unterstützung.

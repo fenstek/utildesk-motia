@@ -29,6 +29,10 @@ Im Alltag zählt bei Clarifai Video Recognition weniger, ob jede Randfunktion vo
 
 Praktisch ist Clarifai Video Recognition vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/clarifai-video-recognition-editorial.webp" alt="Illustration zu Clarifai Video Recognition: Filmstreifen mit erkannten Bewegungen und Objekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Objekterkennung in Videos:** Identifikation von Personen, Fahrzeugen, Tieren und weiteren Objekten in Echtzeit oder aufgezeichneten Videos.  

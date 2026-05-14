@@ -33,6 +33,10 @@ In day-to-day work, Blue Prism is less about having every edge feature and more 
 
 Blue Prism is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/blue-prism-editorial.webp" alt="Illustration for Blue Prism: automation control room with blue process modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Visual Process Modeling:** Creating automated workflows through a user-friendly drag-and-drop interface.

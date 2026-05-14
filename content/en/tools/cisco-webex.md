@@ -41,6 +41,10 @@ In day-to-day work, Cisco Webex is less about having every edge feature and more
 
 Cisco Webex is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cisco-webex-editorial.webp" alt="Illustration for Cisco Webex: hybrid meeting table with participant light panels" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - HD video and audio quality for meetings and webinars  

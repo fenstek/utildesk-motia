@@ -39,6 +39,10 @@ Im Alltag zählt bei Copy.ai weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Copy.ai vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/copy-ai-editorial.webp" alt="Illustration zu Copy.ai: Schreibtisch mit Schreibmaschine, Ideenstapeln und Tonkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Textgenerierung:** Erzeugt auf Basis weniger Stichworte oder kurzer Eingaben verschiedene Textvorschläge.

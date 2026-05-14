@@ -37,6 +37,10 @@ Im Alltag zählt bei Conceptboard weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist Conceptboard vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/conceptboard-editorial.webp" alt="Illustration zu Conceptboard: gemeinsame Kreativwand mit Haftnotizen, Skizzen und Pfeilen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unbegrenzte Whiteboards:** Erstellen Sie beliebig viele digitale Tafeln für verschiedene Projekte und Themen.

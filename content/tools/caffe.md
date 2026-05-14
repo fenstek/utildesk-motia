@@ -29,6 +29,10 @@ Im Alltag zählt bei Caffe weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Caffe vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/caffe-editorial.webp" alt="Illustration zu Caffe: Espressomaschine als neuronales Netz aus Tassen und Bohnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung von tiefen neuronalen Netzen (Deep Learning) mit verschiedenen Architekturen wie CNNs (Convolutional Neural Networks)

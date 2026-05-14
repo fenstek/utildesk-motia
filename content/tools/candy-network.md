@@ -36,6 +36,10 @@ Im Alltag zählt bei Candy Network weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Candy Network vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/candy-network-editorial.webp" alt="Illustration zu Candy Network: farbige Sammlerobjekte und Fan-Karten als Pop-Art-Collage" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung:** Candy Network nutzt moderne KI-Algorithmen, um menschenähnliche Gespräche zu ermöglichen.

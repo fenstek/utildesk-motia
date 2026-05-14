@@ -39,6 +39,10 @@ In day-to-day work, BeautyCam is less about having every edge feature and more a
 
 BeautyCam is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/beautycam-editorial.webp" alt="Illustration for BeautyCam: beauty workstation with mirror, light, and color samples" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered Image Enhancement:** Automatic adjustment of brightness, contrast, sharpness, and colors.

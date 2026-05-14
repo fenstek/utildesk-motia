@@ -37,6 +37,10 @@ Im Alltag zählt bei CodePen weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist CodePen vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/codepen-editorial.webp" alt="Illustration zu CodePen: geometrische Frontend-Experimente aus Code, Farbe und Layout" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Live-Editor:** Echtzeit-Vorschau von HTML, CSS und JavaScript während der Eingabe

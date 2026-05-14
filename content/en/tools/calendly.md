@@ -41,6 +41,10 @@ In day-to-day work, Calendly is less about having every edge feature and more ab
 
 Calendly is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/calendly-editorial.webp" alt="Illustration for Calendly: planner with appointment blocks, clock, and invite cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Scheduling:** Users can set their availability, and others can choose suitable times.
