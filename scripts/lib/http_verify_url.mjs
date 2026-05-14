@@ -109,7 +109,9 @@ async function requestOnce(url, { connectTimeoutMs, deadlineAt }) {
  */
 export async function resolveFinalUrl(inputUrl, options = {}) {
   const connectTimeoutMs = clampTimeout(options.connectTimeoutMs, DEFAULT_CONNECT_TIMEOUT_MS);
-  const requestTimeoutMs = clampTimeout(options.requestTimeoutMs, DEFAULT_REQUEST_TIMEOUT_MS, 1000);
+  // Older callers used `timeoutMs`; keep it as an alias so safety checks do
+  // not silently fall back to the much longer default timeout.
+  const requestTimeoutMs = clampTimeout(options.requestTimeoutMs ?? options.timeoutMs, DEFAULT_REQUEST_TIMEOUT_MS, 1000);
   const maxRedirects = Math.max(0, Number(options.maxRedirects || DEFAULT_MAX_REDIRECTS));
   const deadlineAt = Date.now() + requestTimeoutMs;
 

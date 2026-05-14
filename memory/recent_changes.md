@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-13_
+_Last updated: 2026-05-14_
+
+## 2026-05-14 - Publish QC gate unblocked for large NEW queues
+
+- Investigated why Google Sheet `NEW` rows were no longer reaching production: VPS publish cron was healthy and unpaused, but `qc_before_publish.mjs` timed out before generation.
+- Root cause: the Sheet had 207 `NEW` rows, while the QC helper tried to resolve every `NEW`/`IN_PROGRESS` official URL before each 10-row publish batch; the helper timed out with `spawnSync node ETIMEDOUT`, causing the fail-closed marker `QC_MOVED_TO_NEEDS_REVIEW=9999`.
+- Fixed the gate so publish QC checks all `IN_PROGRESS` rows plus a bounded leading slice of `NEW` rows tied to `PUBLISH_BATCH_SIZE` before each run, instead of verifying the entire backlog every time.
+- Also fixed `resolveFinalUrl()` to honor the older `timeoutMs` option used by existing QC/audit callers, avoiding accidental fallback to the longer default request timeout.
 
 ## 2026-05-13 - Tool illustration batch 18
 

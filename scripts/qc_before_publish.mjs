@@ -21,6 +21,11 @@ function emit(report, moved, errorMessage = '') {
   console.log(`QC_MOVED_TO_NEEDS_REVIEW=${moved}`);
 }
 
+function parsePositiveInt(value, fallback) {
+  const n = Number(value);
+  return Number.isFinite(n) && n > 0 ? Math.trunc(n) : fallback;
+}
+
 function runSelfTest() {
   const fake = {
     ok: true,
@@ -42,8 +47,13 @@ function runSelfTest() {
 }
 
 function runQcApply() {
-  const timeoutMs = Math.max(10000, Number(process.env.QC_BEFORE_PUBLISH_TIMEOUT_MS || 180000));
-  const proc = spawnSync('node', ['scripts/audit_new_inprogress_qc.mjs', '--apply=1', '--json'], {
+  const batchSize = parsePositiveInt(process.env.PUBLISH_BATCH_SIZE, 10);
+  const defaultLimit = Math.min(50, Math.max(batchSize, batchSize * 2));
+  const rowLimit = parsePositiveInt(process.env.QC_BEFORE_PUBLISH_NEW_LIMIT || process.env.QC_NEW_ROW_LIMIT, defaultLimit);
+  const defaultTimeoutMs = Math.max(120000, rowLimit * 9000 + 30000);
+  const timeoutMs = Math.max(10000, Number(process.env.QC_BEFORE_PUBLISH_TIMEOUT_MS || defaultTimeoutMs));
+
+  const proc = spawnSync('node', ['scripts/audit_new_inprogress_qc.mjs', '--apply=1', '--json', `--limit=${rowLimit}`], {
     encoding: 'utf8',
     timeout: timeoutMs,
     cwd: process.cwd(),
