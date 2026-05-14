@@ -1296,7 +1296,7 @@
         "en"
       ],
       "source": "post-rebase registry gap audit after concurrent sheet publish batch",
-      "notes": "Closed 10 additional DE/EN tool-card text-edit registry gaps that appeared after rebasing over the latest sheet-publish production commit.",
+      "notes": "Closed 10 additional DE/EN tool-card text-edit registry gaps that appeared after rebasing over the latest sheet-publish production commit; followed by a dedicated manual polish pass on introductions, workflow-fit, daily-use and editorial-assessment sections.",
       "slugs": [
         "adobe-captivate",
         "azure-devops",

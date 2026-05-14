@@ -6,6 +6,7 @@ _Last updated: 2026-05-14_
 - Added practical workflow-fit and editorial-assessment language where pages still had generic generated structure, and registered already hand-edited OCR/document cards.
 - Updated `docs/04_operations/tool_card_editorial_registry.json` so the manual text-edit audit has 0 unregistered paired tool cards.
 - Post-rebase addendum: after the concurrent sheet publish commit added 10 more paired tool cards, manually edited and registered those cards too before production deploy.
+- Follow-up polish: revisited the 10 freshly published Sheet tool cards (`tara-ai`, `adobe-captivate`, `azure-stream-analytics`, `teradata-vantage`, `azure-devops`, `microsoft-azure-event-hubs`, `microsoft-azure-hdinsight`, `kaggle-learn`, `medibang-paint`, `h2o-automl`) and rewrote their DE/EN introductions, daily-use, workflow-fit, and editorial-assessment sections to remove the remaining generic template phrasing.
 
 ## 2026-05-14 - Publish QC gate unblocked for large NEW queues
 
