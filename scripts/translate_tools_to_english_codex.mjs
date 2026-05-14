@@ -26,6 +26,7 @@ const DRY_RUN = hasArg("--dry-run");
 const SLUGS = new Set(await resolveSlugSelection());
 const SCHEMA_PATH = path.join(TMP_DIR, "tool-translation.schema.json");
 const CODEX_FLAG_SUPPORT = new Map();
+let autoCodexDisabledReason = "";
 
 function normalizeBackend(value) {
   const backend = String(value || "auto").trim().toLowerCase();
@@ -436,10 +437,15 @@ async function runTranslator(prompt, entry) {
     return { backend: "codex-oauth", model: CODEX_MODEL || "codex-default", output: await runCodex(prompt, entry) };
   }
 
+  if (autoCodexDisabledReason && openAiKey()) {
+    return { backend: "openai-api", model: OPENAI_MODEL, output: await runOpenAi(prompt, entry) };
+  }
+
   try {
     return { backend: "codex-oauth", model: CODEX_MODEL || "codex-default", output: await runCodex(prompt, entry) };
   } catch (error) {
     if (!openAiKey()) throw error;
+    autoCodexDisabledReason = String(error?.message || error).slice(0, 500);
     console.warn(`[translator] Codex backend failed for ${entry.slug}; falling back to OpenAI API.`);
     await writeFile(
       LOG_PATH,
