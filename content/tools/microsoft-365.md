@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [productivity, office-suite, collaboration]
 official_url: "https://www.microsoft.com/de-de/microsoft-365"
-popularity: 32
+popularity: 29
 ---
 
 # Microsoft 365

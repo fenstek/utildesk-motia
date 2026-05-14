@@ -5,7 +5,7 @@ category: Marketing
 price_model: Abonnement
 tags: [crm, sales, enterprise, automation]
 official_url: "https://www.sap.com/products/crm/sales-cloud.html"
-popularity: 15
+popularity: 13
 ---
 
 # SAP Sales Cloud
