@@ -23,6 +23,10 @@ Amazon OpenSearch richtet sich vor allem an Entwickler, Datenanalysten und Unter
 
 Dank der Nutzung der Open-Source-Basis ist Amazon OpenSearch auch für Nutzer interessant, die Wert auf Anpassbarkeit und Erweiterbarkeit legen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-opensearch-editorial.webp" alt="Illustration zu Amazon OpenSearch: Indexschubladen, Suchprisma und Signalfaeden ordnen Log- und Suchdaten" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon OpenSearch eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um search, data, analytics nicht mehr improvisieren wollen.

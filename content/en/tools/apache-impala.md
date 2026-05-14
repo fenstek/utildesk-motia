@@ -32,6 +32,10 @@ Apache Impala is ideal for companies and developers who want to analyze large am
 - **Multiple storage formats:** Support for Parquet, Avro, Text, and other common formats.
 - **Open-source community:** Ongoing development and support from an active developer community.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-impala-editorial.webp" alt="Illustration for Apache Impala: query capsules travel on high-speed rails through data arches" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Impala is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around assistant, automation, workflow.

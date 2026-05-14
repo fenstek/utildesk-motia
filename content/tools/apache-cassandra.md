@@ -22,6 +22,10 @@ Apache Cassandra richtet sich vor allem an Entwickler und Unternehmen, die groß
 - Unternehmen, die Open-Source-Technologien bevorzugen und Kosten für Lizenzierung vermeiden möchten
 - Entwickler, die verteilte Systeme und Big-Data-Anwendungen realisieren wollen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-cassandra-editorial.webp" alt="Illustration zu Apache Cassandra: Verteilte Archivsaeulen speichern Daten ueber leuchtende Wurzelpfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Cassandra eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um database, data, open source nicht mehr improvisieren wollen.

@@ -21,6 +21,10 @@ AppDynamics is a comprehensive platform for Application Performance Monitoring (
 
 AppDynamics is primarily aimed at mid-sized to large enterprises that rely on complex and distributed applications. It is particularly suitable for IT teams, DevOps, and SRE teams, as well as business leaders and developers who require a transparent view of application performance, user experiences, and infrastructure.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appdynamics-editorial.webp" alt="Illustration for AppDynamics: service machines, gauges, and signal lights show performance paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AppDynamics is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around monitoring, analytics, observability.

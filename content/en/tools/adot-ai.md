@@ -27,6 +27,10 @@ Adot AI is geared towards professionals, teams, and businesses looking to optimi
 
 Given its Freemium model, Adot AI is suitable for both beginners and professional users who require more advanced features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adot-ai-editorial.webp" alt="Illustration for Adot AI: task cards, calendar blocks, and light trails organize a workday" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Adot AI is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ai, assistant, productivity.

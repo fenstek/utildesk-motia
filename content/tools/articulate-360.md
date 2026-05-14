@@ -24,6 +24,10 @@ Articulate 360 eignet sich besonders für:
 
 Die Plattform bietet eine breite Palette von Tools, die sowohl für Anfänger als auch für erfahrene Entwickler geeignet sind. Je nach Anforderungen können Nutzer zwischen verschiedenen Modulen wählen und so die Lerninhalte an ihre spezifischen Ziele anpassen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/articulate-360-editorial.webp" alt="Illustration zu Articulate 360: Lernstudio mit Quizraedern, Reviewkarten und Geraeterahmen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Articulate 360 eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um education, authoring, content nicht mehr improvisieren wollen.

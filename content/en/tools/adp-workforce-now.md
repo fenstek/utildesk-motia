@@ -20,6 +20,10 @@ ADP Workforce Now is an all-encompassing cloud-based platform for Human Capital 
 
 ADP Workforce Now is primarily aimed at mid-sized to large companies that require a centralized platform for personnel management, payroll, and talent management. The solution is suitable for HR teams that want to automate complex processes, as well as for executives who want to make informed decisions based on data. Companies with multiple locations or international operations can benefit from the scalability and compliance features of the platform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adp-workforce-now-editorial.webp" alt="Illustration for ADP Workforce Now: payroll envelopes, time cards, and approval stamps structure an HR workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** ADP Workforce Now is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around payroll, hr, hcm.

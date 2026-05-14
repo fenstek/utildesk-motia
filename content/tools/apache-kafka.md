@@ -24,6 +24,10 @@ Apache Kafka richtet sich vor allem an Entwickler, Dateningenieure und Unternehm
 
 Durch seine offene Architektur eignet sich Kafka sowohl für Startups als auch für große Unternehmen, die eine flexible und skalierbare Streaming-Plattform benötigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-kafka-editorial.webp" alt="Illustration zu Apache Kafka: Nachrichtenkapseln fahren zwischen Producer-Docks und Consumer-Haefen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Kafka eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data, streaming, open source nicht mehr improvisieren wollen.

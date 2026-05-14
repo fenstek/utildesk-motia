@@ -16,6 +16,10 @@ Agorapulse ist ein vielseitiges Social-Media-Management-Tool, das Unternehmen un
 
 Agorapulse richtet sich vor allem an kleine bis mittelgroße Unternehmen, Social-Media-Manager, Marketingagenturen und Teams, die mehrere Social-Media-Kanäle gleichzeitig betreuen. Auch größere Organisationen profitieren von den kollaborativen Funktionen und der umfassenden Berichterstattung. Nutzer, die Wert auf ein übersichtliches Dashboard, automatisierte Moderationsfunktionen und detaillierte Analysen legen, finden in Agorapulse ein passendes Werkzeug. Es eignet sich für alle, die Social-Media-Aktivitäten systematisch planen, steuern und auswerten möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/agorapulse-editorial.webp" alt="Illustration zu Agorapulse: Kampagnenkarten, Nachrichtenkapseln und Kalenderpunkte kreisen um einen Social-Media-Plan" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Agorapulse eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um social media, marketing, automation nicht mehr improvisieren wollen.

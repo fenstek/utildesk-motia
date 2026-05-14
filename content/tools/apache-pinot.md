@@ -16,6 +16,10 @@ Apache Pinot ist eine verteilte, Open-Source-Analysedatenbank, die speziell für
 
 Apache Pinot richtet sich an Entwickler, Dateningenieure und Unternehmen, die Echtzeit-Datenanalysen auf großen Datenströmen oder umfangreichen historischen Datensätzen durchführen möchten. Besonders geeignet ist es für Organisationen, die schnelle Antwortzeiten bei analytischen Abfragen benötigen, beispielsweise im Bereich E-Commerce, Werbung, Telekommunikation oder IoT. Da Pinot Open Source ist, eignet es sich sowohl für Startups als auch für etablierte Unternehmen, die eine skalierbare und anpassbare Lösung suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-pinot-editorial.webp" alt="Illustration zu Apache Pinot: Farbsamples werden in Glas-Saeulen fuer Echtzeit-OLAP sortiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Pinot eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um data, analytics, open source nicht mehr improvisieren wollen.

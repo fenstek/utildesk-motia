@@ -16,6 +16,10 @@ Amazon EMR (Elastic MapReduce) ist ein skalierbarer Cloud-Service von Amazon Web
 
 Amazon EMR richtet sich vor allem an Entwickler, Dateningenieure und Data Scientists, die große Datenmengen analysieren oder verarbeiten müssen. Unternehmen, die Big-Data-Analysen, Machine Learning oder ETL-Prozesse (Extract, Transform, Load) betreiben, profitieren von der flexiblen Skalierbarkeit und der Integration in das AWS-Ökosystem. Auch Organisationen, die keine eigene Infrastruktur für Hadoop-Cluster betreiben möchten, finden in Amazon EMR eine kosteneffiziente Alternative, da die Abrechnung nutzungsbasiert erfolgt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-emr-editorial.webp" alt="Illustration zu Amazon EMR: Datenhuetten, Kabelbahnen und Verarbeitungspfade bilden ein Cluster-Gebirge" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon EMR eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um data, analytics, cloud nicht mehr improvisieren wollen.

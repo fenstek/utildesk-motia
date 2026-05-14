@@ -22,6 +22,10 @@ AnyConv richtet sich an Privatpersonen und professionelle Anwender, die regelmä
 - Nutzer ohne technische Vorkenntnisse, die eine einfache und schnelle Lösung suchen.
 - Alle, die keine zusätzliche Software installieren wollen und eine webbasierte Lösung bevorzugen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anyconv-editorial.webp" alt="Illustration zu AnyConv: Dateikarten laufen durch eine kleine Konvertiermaschine" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AnyConv eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um file conversion, documents, utilities nicht mehr improvisieren wollen.

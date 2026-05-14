@@ -27,6 +27,10 @@ Apache Hadoop is primarily aimed at companies and developers who need to process
 - Developers who prefer open-source technologies and want to make individual adaptations.
 - Organizations that seek cost-effective solutions for data processing in distributed environments.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-hadoop-editorial.webp" alt="Illustration for Apache Hadoop: data crates and processing rails form a self-hosted cluster" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Hadoop (self-hosted) is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data, analytics, open source.

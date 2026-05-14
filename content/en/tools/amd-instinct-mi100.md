@@ -21,6 +21,10 @@ The AMD Instinct MI100 is a high-performance GPU specifically designed for use i
 
 The AMD Instinct MI100 is primarily aimed at enterprises, research institutions, and data centers that require high-performance hardware for AI training, deep learning, and HPC applications. It is ideal for organizations that need to process large amounts of data and train complex models. Additionally, system integrators and cloud providers benefit from the flexibility and scalability of this GPU.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amd-instinct-mi100-editorial.webp" alt="Illustration for AMD Instinct MI100: accelerator module under glass shows cooling, traces, and compute light" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AMD Instinct MI100 is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around hardware, gpu, ai accelerators.

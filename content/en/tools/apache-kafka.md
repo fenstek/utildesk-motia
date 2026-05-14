@@ -28,6 +28,10 @@ Apache Kafka is primarily aimed at developers, data engineers, and organizations
 
 Thanks to its open architecture, Kafka is suitable for both startups and large enterprises that need a flexible and scalable streaming platform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-kafka-editorial.webp" alt="Illustration for Apache Kafka: message capsules travel between producer docks and consumer harbors" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Kafka is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data, streaming, open source.

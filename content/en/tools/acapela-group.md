@@ -28,6 +28,10 @@ Acapela Group is suitable for companies, developers, and organizations that requ
 
 The solutions offered by Acapela are flexible and scalable, making them suitable for both small projects and large enterprise implementations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/acapela-group-editorial.webp" alt="Illustration for Acapela Group: studio microphone turns text cards into colorful voice waves" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Acapela Group is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around text to speech, voice, audio.

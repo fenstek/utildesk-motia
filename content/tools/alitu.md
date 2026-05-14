@@ -23,6 +23,10 @@ Alitu richtet sich an Podcaster aller Erfahrungsstufen, die ihre Produktion effi
 
 Professionelle Tonstudios oder Produzenten mit sehr individuellen Anforderungen könnten hingegen auf spezialisiertere Software zurückgreifen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/alitu-editorial.webp" alt="Illustration zu Alitu: Podcast-Schreibtisch mit Mikrofon, Wellenstreifen und Schnittmarken" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Alitu eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um podcasting, audio, editing nicht mehr improvisieren wollen.

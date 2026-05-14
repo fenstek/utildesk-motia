@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-14_
 
+## 2026-05-14 - Tool illustration batch 19
+
+- Added one mid-article WebP illustration to 50 additional manually edited tool cards in both German and English.
+- Selection covers the current next registry-backed, non-illustrated cards alphabetically, from `acapela-group` through `audiotool`.
+- Continued the 1260px source WebP and 90% `.tool-editorial-figure` display scheme.
+- Broadened the visual direction after feedback about dashboard repetition: photo still lifes, paper dioramas, mixed-media collage, physical data metaphors, hardware macro scenes, audio workbenches, learning stages, and workflow objects.
+- Converted generated PNG sources directly to WebP without copying PNG files into the project workspace.
+
 ## 2026-05-14 - Final tool-card text editorial gap pass
 - Manually improved or normalized the remaining 40 DE/EN tool cards that were missing from the text editorial registry, including disabled legacy aliases.
 - Added practical workflow-fit and editorial-assessment language where pages still had generic generated structure, and registered already hand-edited OCR/document cards.

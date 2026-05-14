@@ -16,6 +16,10 @@ Apache Hive ist eine Open-Source-Datenbank-Software, die speziell für die Analy
 
 Apache Hive richtet sich an Datenanalysten, Dateningenieure und Entwickler, die große Datenmengen effizient speichern, verwalten und analysieren möchten. Besonders geeignet ist Hive für Unternehmen und Organisationen, die bereits Hadoop-Cluster einsetzen oder planen, Big-Data-Workloads zu verarbeiten. Da Hive SQL-ähnliche Abfragen unterstützt, profitieren auch Nutzer, die mit relationalen Datenbanken vertraut sind, von einem schnellen Einstieg. Zudem ist Hive für Cloud-Umgebungen optimiert und eignet sich für Projekte, die skalierbare und kosteneffiziente Datenanalysen erfordern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-hive-editorial.webp" alt="Illustration zu Apache Hive: Hexagonales Datenlager verbindet Tabellenkammern mit Query-Pfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Hive eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um developer tools, data, cloud nicht mehr improvisieren wollen.

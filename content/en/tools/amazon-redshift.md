@@ -38,6 +38,10 @@ Amazon Redshift is aimed at companies and organizations that want to store and a
 - **Data sharing:** Allows secure and fast data exchange between Redshift clusters.
 - **Machine learning integration:** Direct connection to AWS ML services for advanced data analysis.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-redshift-editorial.webp" alt="Illustration for Amazon Redshift: data cubes move through a warehouse for analytics queries" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Amazon Redshift is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data warehouse, analytics, AWS.

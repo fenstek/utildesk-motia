@@ -16,6 +16,10 @@ Amazon Rekognition Video ist ein cloudbasierter Dienst von Amazon Web Services (
 
 Amazon Rekognition Video richtet sich vor allem an Unternehmen und Entwickler, die große Mengen an Videomaterial automatisiert auswerten möchten. Dazu zählen Organisationen aus den Bereichen Medien, Sicherheit, Marketing und Forschung, die Video-Workflows optimieren wollen. Auch Entwickler, die Videoanalyse-Funktionen in ihre Anwendungen integrieren möchten, profitieren von der einfachen API-Anbindung. Besonders geeignet ist der Dienst für Nutzer, die eine skalierbare, cloudbasierte Lösung mit umfangreichen Analysefunktionen suchen und bereits AWS-Dienste nutzen oder integrieren möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-rekognition-video-editorial.webp" alt="Illustration zu Amazon Rekognition Video: Filmstreifen, Lichtbox und Erkennungsmarker strukturieren Videopruefung" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon Rekognition Video eignet sich, wenn Content-, Design- und Produktionsteams einen wiederkehrenden Ablauf rund um video, workflow nicht mehr improvisieren wollen.

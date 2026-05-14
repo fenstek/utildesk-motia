@@ -37,6 +37,10 @@ The GPU is less intended for traditional gaming and instead focuses on professio
 - **Automation support:** Integration into automated workflows to improve efficiency.
 - **Robust drivers and software tools:** AMD offers comprehensive software solutions for easy integration and management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amd-instinct-gpu-editorial.webp" alt="Illustration for AMD Instinct GPU: generic accelerator card with cooling fins and data light in a lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AMD Instinct GPU is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around assistant, automation, workflow.

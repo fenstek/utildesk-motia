@@ -24,6 +24,10 @@ Amazon SageMaker is designed for companies and developers who want to implement 
 - Companies of all sizes that want to realize AI projects using cloud computing resources.
 - Teams that want to benefit from automated functions and end-to-end workflows.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-sagemaker-editorial.webp" alt="Illustration for Amazon SageMaker: dataset crates, training rails, and model capsules form an ML production line" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Amazon SageMaker is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around assistant, automation.

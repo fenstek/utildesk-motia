@@ -23,6 +23,10 @@ Die AMD Instinct GPU richtet sich vor allem an Unternehmen, Forschungseinrichtun
 
 Die GPU ist weniger für den klassischen Gaming-Bereich gedacht, sondern fokussiert sich auf professionelle und industrielle Anwendungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amd-instinct-gpu-editorial.webp" alt="Illustration zu AMD Instinct GPU: Generische Beschleunigerkarte mit Kuehlrippen und Datenlicht im Labor" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AMD Instinct GPU eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation, workflow nicht mehr improvisieren wollen.

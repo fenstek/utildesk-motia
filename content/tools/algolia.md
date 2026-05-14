@@ -21,6 +21,10 @@ Algolia richtet sich an Entwickler, Produktmanager und Unternehmen, die eine ein
 - Unternehmen, die skalierbare Suchfunktionen benötigen, die mit dem Wachstum der Anwendung oder Webseite mitwachsen.
 - Projekte, die eine hohe Anpassbarkeit der Suchergebnisse und Ranking-Optionen erfordern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/algolia-editorial.webp" alt="Illustration zu Algolia: Suchlinse buendelt Produktobjekte, Dokumentkacheln und Query-Faeden" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Algolia eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um search, api, developer tools nicht mehr improvisieren wollen.

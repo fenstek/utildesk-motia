@@ -30,6 +30,10 @@ Storyline is a good fit for learning and development teams, corporate trainers, 
 - LMS export formats such as SCORM and xAPI.
 - Templates and interaction patterns for faster production.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/articulate-storyline-editorial.webp" alt="Illustration for Articulate Storyline: scene boxes, decision paths, and quiz tokens form branching training" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Articulate Storyline is a good fit when operations, learning, and office teams want to stop improvising a recurring workflow around education, authoring, content.

@@ -27,6 +27,10 @@ Apache Pulsar is aimed at developers, DevOps teams, and companies that need a sc
 - Companies that prefer an open-source solution to control costs and make customizations.
 - Projects that need to support both queue-based and publish-subscribe messaging.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-pulsar-editorial.webp" alt="Illustration for Apache Pulsar: message capsules orbit along pub-sub paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Pulsar is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around messaging, data, developer tools.

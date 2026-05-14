@@ -23,6 +23,10 @@ Adot AI richtet sich an Berufstätige, Teams und Unternehmen, die ihre Arbeitsab
 
 Durch das Freemium-Modell eignet sich Adot AI sowohl für Einsteiger als auch für professionelle Anwender, die erweiterte Funktionen benötigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adot-ai-editorial.webp" alt="Illustration zu Adot AI: Aufgabenkarten, Kalenderbloecke und Lichtspuren ordnen einen Arbeitstag" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Adot AI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, assistant, productivity nicht mehr improvisieren wollen.

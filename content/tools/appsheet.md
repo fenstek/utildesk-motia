@@ -16,6 +16,10 @@ AppSheet ist eine innovative No-Code-Plattform, die es Nutzern ermöglicht, ohne
 
 AppSheet richtet sich vor allem an kleine und mittelständische Unternehmen, Projektmanager, IT-Teams ohne tiefe Programmierkenntnisse sowie Einzelpersonen, die ihre Geschäftsprozesse optimieren möchten. Besonders geeignet ist die Plattform für Anwender, die schnell maßgeschneiderte Apps zur Datenerfassung, Prozessautomatisierung oder Workflow-Management benötigen, ohne teure Entwicklerressourcen einzusetzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appsheet-editorial.webp" alt="Illustration zu AppSheet: Tabellenkacheln, Telefonrahmen und Workflow-Schalter rasten zu einer App ein" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AppSheet eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um no code, app development, workflow nicht mehr improvisieren wollen.

@@ -23,6 +23,10 @@ Asana richtet sich an Teams und Unternehmen jeder Größe, die ihre Projekte und
 
 Je nach Anforderungen kann Asana sowohl für einfache To-Do-Listen als auch für umfangreiche, mehrstufige Projekte eingesetzt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/asana-editorial.webp" alt="Illustration zu Asana: Aufgabensteine, Zeitbaender und Meilensteinflaggen ordnen Teamarbeit" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Asana eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um project management, work management, collaboration nicht mehr improvisieren wollen.
