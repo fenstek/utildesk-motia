@@ -26,6 +26,10 @@ AnyConv is suitable for private individuals and professional users who regularly
 - Users without technical knowledge who are looking for a simple and fast solution.
 - Anyone who prefers a web-based solution and does not want to install additional software.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anyconv-editorial.webp" alt="Illustration for AnyConv: file cards pass through a small conversion machine" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AnyConv is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around file conversion, documents, utilities.

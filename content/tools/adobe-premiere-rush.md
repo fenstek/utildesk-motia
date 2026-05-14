@@ -16,6 +16,10 @@ Adobe Premiere Rush ist eine benutzerfreundliche Videobearbeitungssoftware, die 
 
 Adobe Premiere Rush richtet sich vor allem an Hobbyfilmer, Social-Media-Influencer, Vlogger und kleine Unternehmen, die ohne großen technischen Aufwand ansprechende Videos erstellen möchten. Die Software eignet sich ideal für Nutzer, die eine einfache Lösung suchen, um ihre Videos auf Plattformen wie YouTube, Instagram oder TikTok zu veröffentlichen. Auch Einsteiger in die Videobearbeitung finden hier eine zugängliche Software, die dennoch professionelle Ergebnisse ermöglicht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-premiere-rush-editorial.webp" alt="Illustration zu Adobe Premiere Rush: Videoclips, Kamera und Audiospuren liegen fuer einen schnellen Social-Clip bereit" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Adobe Premiere Rush eignet sich, wenn Content-, Design- und Produktionsteams einen wiederkehrenden Ablauf rund um design, video, image nicht mehr improvisieren wollen.

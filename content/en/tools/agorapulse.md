@@ -21,6 +21,10 @@ Agorapulse is a versatile social media management tool that helps businesses and
 
 Agorapulse is primarily aimed at small to medium-sized businesses, social media managers, marketing agencies, and teams managing multiple social media channels. Larger organizations also benefit from its collaborative features and comprehensive reporting. Users who value a clear dashboard, automated moderation, and detailed analytics will find Agorapulse to be a suitable tool.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/agorapulse-editorial.webp" alt="Illustration for Agorapulse: campaign cards, message capsules, and calendar points orbit a social media plan" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Agorapulse is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around social media, marketing, automation.

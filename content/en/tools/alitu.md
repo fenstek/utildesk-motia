@@ -27,6 +27,10 @@ Alitu is suitable for podcasters of all skill levels who want to streamline thei
 
 Professional recording studios or producers with very specific requirements may be better off using specialized software.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/alitu-editorial.webp" alt="Illustration for Alitu: podcast desk with microphone, waveform strips, and editing markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Alitu is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around podcasting, audio, editing.

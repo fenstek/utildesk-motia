@@ -34,6 +34,10 @@ Adapt Learning is primarily aimed at developers, e-learning designers, and educa
 - **Cloud or Self-Hosting:** Flexible deployment options depending on requirements.
 - **User-Friendly Interface:** Intuitive operation for content creators with a technical background.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adapt-learning-editorial.webp" alt="Illustration for Adapt Learning: course modules, quiz cards, and device frames assemble into learning paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Adapt Learning is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around education, authoring, content.

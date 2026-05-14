@@ -24,6 +24,10 @@ AssemblyAI richtet sich hauptsächlich an Entwickler, Unternehmen und Organisati
 
 Die Plattform eignet sich für Nutzer mit technischem Hintergrund, die APIs verwenden können, um die Funktionen flexibel in eigene Systeme einzubinden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/assemblyai-editorial.webp" alt="Illustration zu AssemblyAI: Mikrofon, Wellenbaender und Transkriptkarten analysieren Audiosignale" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AssemblyAI eignet sich, wenn Content-, Design- und Produktionsteams einen wiederkehrenden Ablauf rund um audio nicht mehr improvisieren wollen.

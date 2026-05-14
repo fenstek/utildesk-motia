@@ -20,6 +20,10 @@ Aira is an innovative AI-powered platform that supports people with visual impai
 
 Aira is primarily designed for people with visual impairments or blindness who rely on assistance in their daily lives. The platform is ideal for users who need flexible, on-demand support, whether it's shopping, traveling, or navigating unfamiliar environments. Organizations and institutions that want to promote accessibility can also benefit from Aira by offering their customers or employees enhanced access to supportive services.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aira-editorial.webp" alt="Illustration for Aira: tactile paving, cane handle, and light paths mark accessible navigation" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Aira is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around accessibility, remote interpreting, video communication.

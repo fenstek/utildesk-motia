@@ -27,6 +27,10 @@ Asana is aimed at teams and companies of any size that want to manage their proj
 
 Depending on their needs, Asana can be used for both simple to-do lists and extensive, multi-stage projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/asana-editorial.webp" alt="Illustration for Asana: task stones, timeline ribbons, and milestone flags organize teamwork" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Asana is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around project management, work management, collaboration.

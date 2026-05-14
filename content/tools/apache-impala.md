@@ -16,6 +16,10 @@ Apache Impala ist eine Open-Source-SQL-Abfrageengine, die speziell für die Vera
 
 Apache Impala ist ideal für Unternehmen und Entwickler, die große Datenmengen in Hadoop-Umgebungen analysieren möchten und dabei auf schnelle Abfragezeiten angewiesen sind. Besonders geeignet ist es für Data Scientists, Datenanalysten und BI-Teams, die interaktive und komplexe SQL-Abfragen ausführen wollen, ohne lange Wartezeiten. Ebenso profitieren Organisationen, die eine kosteneffiziente Alternative zu traditionellen Data Warehouses suchen, von Impalas Open-Source-Natur und seiner Integrationsfähigkeit mit bestehenden Big-Data-Ökosystemen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-impala-editorial.webp" alt="Illustration zu Apache Impala: Query-Kapseln fahren auf Hochgeschwindigkeitsgleisen durch Datenboegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Impala eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation, workflow nicht mehr improvisieren wollen.

@@ -24,6 +24,10 @@ Acapela Group richtet sich an Unternehmen, Entwickler und Organisationen, die qu
 
 Die Lösungen von Acapela sind flexibel und skalierbar, wodurch sie sowohl für kleine Projekte als auch für große Unternehmenseinsätze geeignet sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/acapela-group-editorial.webp" alt="Illustration zu Acapela Group: Studiomikrofon verwandelt Textkarten in farbige Sprachwellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Acapela Group eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um text to speech, voice, audio nicht mehr improvisieren wollen.

@@ -30,6 +30,10 @@ Algolia is a strong fit for developer and product teams that want a managed sear
 - Tools for merchandising, personalization, and relevance tuning.
 - Scalable infrastructure for high-query-volume applications.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/algolia-editorial.webp" alt="Illustration for Algolia: search lens gathers product objects, document tiles, and query threads" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Algolia is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around search, api, developer tools.

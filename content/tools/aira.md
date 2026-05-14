@@ -16,6 +16,10 @@ Aira ist eine innovative KI-gestützte Plattform, die Menschen mit Sehbehinderun
 
 Aira richtet sich insbesondere an Menschen mit Sehbehinderungen oder Blindheit, die im Alltag auf Unterstützung angewiesen sind. Die Plattform ist ideal für Nutzer, die flexible, ortsunabhängige Hilfe benötigen, sei es beim Einkaufen, Reisen oder bei der Navigation in unbekannten Umgebungen. Auch Organisationen und Institutionen, die Barrierefreiheit fördern möchten, können von Aira profitieren, indem sie ihren Kunden oder Mitarbeitern einen verbesserten Zugang zu unterstützenden Dienstleistungen bieten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aira-editorial.webp" alt="Illustration zu Aira: Taststreifen, Stockgriff und Lichtpfade markieren barrierearme Orientierung" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Aira eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um accessibility, remote interpreting, video communication nicht mehr improvisieren wollen.

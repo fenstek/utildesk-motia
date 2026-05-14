@@ -16,6 +16,10 @@ AirBrush ist eine mobile Foto-Editing-App, die speziell für die Verschönerung 
 
 AirBrush richtet sich vor allem an Menschen, die ihre Selfies und Porträtaufnahmen verbessern möchten, ohne dabei auf professionelle Bildbearbeitungssoftware angewiesen zu sein. Die App ist ideal für Social-Media-Nutzer, Influencer, Blogger und alle, die Wert auf ein makelloses Erscheinungsbild in Fotos legen. Auch für Nutzer, die unterwegs unkompliziert und zeitsparend retuschieren wollen, ist AirBrush optimal geeignet. Da die App mobil ist, profitieren vor allem Smartphone-User von der einfachen Bedienung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/airbrush-editorial.webp" alt="Illustration zu AirBrush: Beauty-Stillleben mit Farbfolien, Pinseln und abstraktem Smartphone-Bild" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AirBrush eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um photo editing, mobile, beauty nicht mehr improvisieren wollen.

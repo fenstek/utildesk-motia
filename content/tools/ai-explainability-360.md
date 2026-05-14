@@ -16,6 +16,10 @@ AI Explainability 360 ist ein Open-Source-Toolkit, das entwickelt wurde, um die 
 
 AI Explainability 360 richtet sich primär an Data Scientists, Machine-Learning-Ingenieure und Forscher, die Wert auf transparente und nachvollziehbare KI-Modelle legen. Besonders nützlich ist es für Fachleute in regulierten Branchen wie Finanzen, Gesundheitswesen oder Recht, wo Erklärbarkeit gesetzlich vorgeschrieben oder aus ethischen Gründen gefordert wird. Auch Entwickler, die ihre Modelle verbessern und Vertrauen bei Stakeholdern schaffen wollen, profitieren von den angebotenen Funktionen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ai-explainability-360-editorial.webp" alt="Illustration zu AI Explainability 360: Glasmodell, Attributionspunkte und Waage machen KI-Entscheidungen pruefbar" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AI Explainability 360 eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ml, explainability, ai nicht mehr improvisieren wollen.

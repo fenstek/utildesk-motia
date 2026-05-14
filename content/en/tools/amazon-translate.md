@@ -29,6 +29,10 @@ Amazon Translate is particularly suitable for businesses and developers who:
 
 Even smaller teams can benefit from usage-based billing, as there is no minimum usage threshold and only the actual translated characters are charged.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-translate-editorial.webp" alt="Illustration for Amazon Translate: paper bridges connect abstract speech bubbles and translation paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Amazon Translate is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ai, translation, api.

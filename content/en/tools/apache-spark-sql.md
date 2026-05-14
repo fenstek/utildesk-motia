@@ -60,6 +60,10 @@ Apache Spark SQL ist Teil von Apache Spark und unter der Apache 2.0 Open-Source-
 - **Apache Flink SQL:** SQL-Engine für Stream- und Batch-Verarbeitung mit Fokus auf Echtzeit-Daten.  
 - **Dremio:** Data-as-a-Service-Plattform mit SQL-Abfrageunterstützung und Self-Service-Datenzugang.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-sql-editorial.webp" alt="Illustration for Apache Spark SQL: query tiles split into parallel compute lanes" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Spark SQL is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data, workflow.

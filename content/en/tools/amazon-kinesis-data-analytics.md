@@ -66,6 +66,10 @@ Amazon Kinesis Data Analytics verwendet ein nutzungsbasiertes Preismodell. Die K
 - **Apache Kafka mit KSQL:** Streaming-Plattform mit SQL-ähnlicher Abfragesprache für Echtzeit-Daten.
 - **Snowflake Snowpipe:** Daten-Streaming und Ingestion für Data Warehouses.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-kinesis-data-analytics-editorial.webp" alt="Illustration for Amazon Kinesis Data Analytics: glass channels guide colored event beads through analytics gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Amazon Kinesis Data Analytics is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around data, analytics.

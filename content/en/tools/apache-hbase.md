@@ -39,6 +39,10 @@ Apache HBase is aimed primarily at developers and organizations that need to man
 - **API support:** Java API as well as REST and Thrift interfaces for a wide range of integrations.
 - **Open source:** Free access to the source code and active community support.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-hbase-editorial.webp" alt="Illustration for Apache HBase: card catalog with row ribbons and distributed storage drawers" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache HBase is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around database, data, open source.

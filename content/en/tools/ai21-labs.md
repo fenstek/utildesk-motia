@@ -27,6 +27,10 @@ AI21 Labs is ideal for:
 - Educational institutions and researchers interested in experimenting with modern speech model technology.
 - Startups and tech companies requiring innovative AI solutions for automating writing and analysis processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ai21-labs-editorial.webp" alt="Illustration for AI21 Labs: manuscript pages, language blocks, and ink paths emerge in a writing lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AI21 Labs is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ai, writing, creative.

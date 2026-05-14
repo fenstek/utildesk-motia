@@ -22,6 +22,10 @@ Amazon Redshift richtet sich an Unternehmen und Organisationen, die große Daten
 - Organisationen mit hohem Bedarf an Business Intelligence und Reporting.
 - Firmen, die Echtzeit-Analysen und Data-Lakes kombinieren möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-redshift-editorial.webp" alt="Illustration zu Amazon Redshift: Datenwuerfel laufen durch ein Lagerhaus fuer Analyse-Abfragen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon Redshift eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data warehouse, analytics, aws nicht mehr improvisieren wollen.

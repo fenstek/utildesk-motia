@@ -16,6 +16,10 @@ Apache Spark Structured Streaming ist eine leistungsstarke Open-Source-Engine zu
 
 Apache Spark Structured Streaming richtet sich an Datenwissenschaftler, Dateningenieure und Entwickler, die Echtzeit-Datenanalyse und -verarbeitung benötigen. Besonders geeignet ist es für Unternehmen und Organisationen, die große Mengen an Streaming-Daten aus verschiedenen Quellen wie Sensoren, Log-Dateien, Social Media oder IoT-Geräten verarbeiten wollen. Es eignet sich sowohl für Start-ups als auch für große Unternehmen, die eine skalierbare und robuste Lösung für automatisierte Daten-Workflows und KI-Anwendungen suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-structured-streaming-editorial.webp" alt="Illustration zu Apache Spark Structured Streaming: Datenfluss verzweigt sich als leuchtendes Flussdelta mit Checkpoints" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Spark Structured Streaming eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation, workflow nicht mehr improvisieren wollen.

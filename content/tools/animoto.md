@@ -24,6 +24,10 @@ Animoto richtet sich an Anwender, die ohne tiefgehende Videobearbeitungskenntnis
 
 Das Tool eignet sich sowohl für Einsteiger als auch für Nutzer mit etwas Erfahrung, die Zeit sparen und dennoch professionelle Ergebnisse erzielen wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/animoto-editorial.webp" alt="Illustration zu Animoto: Fotokarten, Musikpunkte und Filmstreifen werden zu Video-Montage gelegt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Animoto eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, video, design nicht mehr improvisieren wollen.

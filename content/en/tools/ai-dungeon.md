@@ -28,6 +28,10 @@ AI Dungeon is designed for anyone who enjoys creative stories and interactive ex
 
 The tool is suitable for both beginners and experienced users who enjoy innovative, AI-driven storytelling formats.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ai-dungeon-editorial.webp" alt="Illustration for AI Dungeon: adventure map, choice stones, and lantern light open branching story paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AI Dungeon is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around writing, design.

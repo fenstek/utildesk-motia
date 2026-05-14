@@ -16,6 +16,10 @@ Adobe XD ist eine leistungsstarke Design- und Prototyping-Software, die speziell
 
 Adobe XD richtet sich vor allem an UX/UI-Designer, Webdesigner, App-Entwickler und Produktteams, die digitale Produkte gestalten und testen möchten. Auch Freelancer und Agenturen profitieren von den Funktionen für Prototyping und Zusammenarbeit. Aufgrund der Integration in das Adobe-Ökosystem ist es zudem für Nutzer geeignet, die bereits andere Adobe-Produkte verwenden und eine durchgängige Designpipeline suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-xd-editorial.webp" alt="Illustration zu Adobe XD: Acryl-Screens, Komponenten und Verbindungslinien formen einen Prototyp" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Adobe XD eignet sich, wenn Content-, Design- und Produktionsteams einen wiederkehrenden Ablauf rund um design, image nicht mehr improvisieren wollen.

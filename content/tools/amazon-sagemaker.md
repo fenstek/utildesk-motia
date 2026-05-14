@@ -21,6 +21,10 @@ Amazon SageMaker richtet sich an Unternehmen und Entwickler, die Machine-Learnin
 - Unternehmen jeder Größe, die KI-Projekte mit Cloud-Computing-Ressourcen realisieren möchten.
 - Teams, die von automatisierten Funktionen und End-to-End-Workflows profitieren wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-sagemaker-editorial.webp" alt="Illustration zu Amazon SageMaker: Dataset-Kisten, Trainingsrails und Modellkapseln bilden ML-Produktionslinie" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon SageMaker eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation nicht mehr improvisieren wollen.

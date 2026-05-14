@@ -30,6 +30,10 @@ Cassandra is best suited for engineering teams building large-scale systems with
 - Replication across data centers or regions.
 - Open-source ecosystem and broad driver support.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-cassandra-editorial.webp" alt="Illustration for Apache Cassandra: distributed archive columns store data through glowing root paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Cassandra is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around database, data, open source.

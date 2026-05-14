@@ -29,6 +29,10 @@ Amazon OpenSearch is suitable for teams already using AWS that need scalable sea
 - Security features such as encryption, access policies, and fine-grained access control.
 - Scalable storage and compute options for changing workloads.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-opensearch-editorial.webp" alt="Illustration for Amazon OpenSearch: index drawers, search prism, and signal threads organize logs and search data" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Amazon OpenSearch is a good fit when engineering, data, and platform teams want to stop improvising a recurring workflow around search, data, analytics.

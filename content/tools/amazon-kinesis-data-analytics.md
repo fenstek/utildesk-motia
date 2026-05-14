@@ -21,6 +21,10 @@ Amazon Kinesis Data Analytics richtet sich an Unternehmen und Entwickler, die Ec
 - Entwickler, die Streaming-Daten mit minimalem Verwaltungsaufwand verarbeiten möchten.
 - Organisationen, die ihre bestehenden AWS-Dienste zur Datenverarbeitung erweitern wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-kinesis-data-analytics-editorial.webp" alt="Illustration zu Amazon Kinesis Data Analytics: Glasrinnen leiten farbige Ereignisperlen durch Analyse-Gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon Kinesis Data Analytics eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data, analytics nicht mehr improvisieren wollen.

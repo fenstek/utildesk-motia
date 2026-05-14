@@ -20,6 +20,10 @@ Ahrefs Content Explorer is a powerful tool for analyzing web content and SEO per
 
 Ahrefs Content Explorer is particularly suitable for content marketing managers, SEO specialists, bloggers, and agencies that want to make data-driven decisions. Also, companies looking to improve their online presence and create targeted content will benefit from the comprehensive analysis functions. Whether you're an beginner or a pro, the tool can be helpful, as it offers intuitive search functions with detailed metrics.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ahrefs-content-explorer-editorial.webp" alt="Illustration for Ahrefs Content Explorer: research board with lenses, cards, and topic connections for content analysis" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Ahrefs Content Explorer is a good fit when operations, learning, and office teams want to stop improvising a recurring workflow around SEO, Content, Analytics.

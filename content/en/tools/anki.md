@@ -87,6 +87,10 @@ Our recommendation is to start with one concrete use case, write down success cr
 - **SuperMemo:** Pioneer of spaced repetition learning with extensive features. Paid.
 - **Tinycards (formerly by Duolingo):** Simple to use flashcard app, now discontinued, but similar apps exist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anki-editorial.webp" alt="Illustration for Anki: flashcards, time markers, and study stacks organize review intervals" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Anki is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around flashcards, education, learning.

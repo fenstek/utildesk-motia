@@ -25,6 +25,10 @@ Amazon Translate eignet sich besonders für Unternehmen und Entwickler, die:
 
 Auch kleinere Teams können von der nutzungsabhängigen Abrechnung profitieren, da keine Mindestabnahme besteht und nur tatsächlich übersetzte Zeichen bezahlt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-translate-editorial.webp" alt="Illustration zu Amazon Translate: Papierbruecken verbinden abstrakte Sprachblasen und Uebersetzungswege" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon Translate eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, translation, api nicht mehr improvisieren wollen.

@@ -21,6 +21,10 @@ Appian richtet sich an Unternehmen unterschiedlicher Größen und Branchen, die 
 - Organisationen, die Compliance, Datenintegration und Prozessoptimierung in einer zentralen Plattform vereinen wollen.
 - Unternehmen, die eine flexible, cloudbasierte Lösung für Prozessautomatisierung und Case Management suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appian-editorial.webp" alt="Illustration zu Appian: Workflow-Karten laufen durch Papier-Gates und Automationsstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Appian eignet sich, wenn Teams mit wiederkehrenden digitalen Abläufen einen wiederkehrenden Ablauf rund um automation, workflow, no code nicht mehr improvisieren wollen.

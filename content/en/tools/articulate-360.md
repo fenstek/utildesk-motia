@@ -29,6 +29,10 @@ Articulate 360 is particularly suitable for:
 
 The platform offers a range of tools that are suitable for both beginners and experienced developers. Users can choose from various modules to tailor the learning content to their specific needs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/articulate-360-editorial.webp" alt="Illustration for Articulate 360: learning studio with quiz wheels, review cards, and device frames" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Articulate 360 is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around education, authoring, content.

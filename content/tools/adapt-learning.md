@@ -16,6 +16,10 @@ Adapt Learning ist eine Open-Source-Authoring-Tool-Plattform, die speziell für 
 
 Adapt Learning richtet sich in erster Linie an Entwickler, E-Learning-Designer und Bildungseinrichtungen, die maßgeschneiderte, responsive Lerninhalte erstellen möchten. Aufgrund seines Open-Source-Charakters ist es besonders attraktiv für Organisationen, die volle Kontrolle über ihre Lernplattformen wünschen und bereit sind, technische Ressourcen für Anpassungen bereitzustellen. Auch Agenturen und Freiberufler im Bereich E-Learning profitieren von der Möglichkeit, komplexe und moderne Lernformate ohne Lizenzkosten zu entwickeln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adapt-learning-editorial.webp" alt="Illustration zu Adapt Learning: Kursmodule, Quizkarten und Geraeterahmen werden zu Lernpfaden zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Adapt Learning eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um education, authoring, content nicht mehr improvisieren wollen.

@@ -30,6 +30,10 @@ Animoto is designed for users who want to create high-quality videos without nee
 
 The tool is suitable for both beginners and users with some experience who want to save time and still achieve professional results.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/animoto-editorial.webp" alt="Illustration for Animoto: photo cards, music points, and film strips are arranged into a video montage" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Animoto is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ai, video, design.

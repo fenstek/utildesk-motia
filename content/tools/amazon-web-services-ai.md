@@ -22,6 +22,10 @@ AWS AI richtet sich an Entwickler, Data Scientists und Unternehmen jeder Größe
 - Organisationen, die auf umfangreiche Datenanalyse und -verarbeitung angewiesen sind.
 - Start-ups und Großunternehmen, die flexible und anpassbare KI-Lösungen benötigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-web-services-ai-editorial.webp" alt="Illustration zu Amazon Web Services AI: Modulare KI-Werkzeuge fuer Sprache, Vision, Daten und Automatisierung liegen bereit" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Amazon Web Services (AWS) AI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um api, developer tools, automation nicht mehr improvisieren wollen.

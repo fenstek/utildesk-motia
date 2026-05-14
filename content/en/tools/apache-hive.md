@@ -20,6 +20,10 @@ Apache Hive is an open-source data storage software specifically designed for an
 
 Apache Hive is suitable for data analysts, data engineers, and developers who want to efficiently store, manage, and analyze large datasets. It is particularly well-suited for companies and organizations that already have Hadoop clusters or plan to process big-data workloads. Since Hive supports SQL-like queries, users familiar with relational databases can also benefit from a quick start. Additionally, Hive is optimized for cloud environments and is suitable for projects that require scalable and cost-effective data analysis.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-hive-editorial.webp" alt="Illustration for Apache Hive: hexagonal data warehouse connects table chambers with query paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Apache Hive is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around developer tools, data, cloud.

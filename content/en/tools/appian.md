@@ -25,6 +25,10 @@ Appian is suitable for businesses of all sizes and industries that want to digit
 - Organizations that want to combine compliance, data integration, and process optimization in a centralized platform.
 - Businesses that are looking for a flexible, cloud-based solution for process automation and case management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/appian-editorial.webp" alt="Illustration for Appian: workflow cards move through paper gates and automation stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Appian is a good fit when teams with recurring digital workflows want to stop improvising a recurring workflow around automation, workflow, no code.

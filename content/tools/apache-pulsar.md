@@ -22,6 +22,10 @@ Apache Pulsar richtet sich an Entwickler, DevOps-Teams und Unternehmen, die eine
 - Unternehmen, die eine Open-Source-Lösung bevorzugen, um Kosten zu kontrollieren und Anpassungen vorzunehmen.
 - Projekte, die sowohl Queue-basierte als auch Publish-Subscribe-Messaging unterstützen müssen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-pulsar-editorial.webp" alt="Illustration zu Apache Pulsar: Nachrichtenkapseln kreisen auf orbitalen Pub-Sub-Bahnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Pulsar eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um messaging, data, developer tools nicht mehr improvisieren wollen.

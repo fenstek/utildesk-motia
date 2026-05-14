@@ -22,6 +22,10 @@ Apache Hadoop richtet sich vor allem an Unternehmen und Entwickler, die große D
 - Entwickler, die Open-Source-Technologien bevorzugen und individuelle Anpassungen vornehmen wollen.
 - Organisationen, die kosteneffiziente Lösungen für Datenverarbeitung in verteilten Umgebungen suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-hadoop-editorial.webp" alt="Illustration zu Apache Hadoop: Datenkisten und Verarbeitungsschienen bilden selbst gehostetes Cluster" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Hadoop (selbst gehostet) eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data, analytics, open source nicht mehr improvisieren wollen.

@@ -16,6 +16,10 @@ Apache Druid ist eine leistungsstarke, Open-Source-Analysedatenbank, die speziel
 
 Apache Druid richtet sich vor allem an Entwickler, Dateningenieure und Datenanalysten, die große Mengen an Streaming- und Batch-Daten schnell und effizient auswerten möchten. Besonders geeignet ist Druid für Unternehmen, die Echtzeit-Analysen benötigen, zum Beispiel im E-Commerce, in der Telekommunikation oder bei Online-Marketing-Plattformen. Auch Startups und Organisationen mit hohen Anforderungen an Skalierbarkeit und Performance profitieren von Druid. Aufgrund seiner Komplexität ist es weniger geeignet für Anwender ohne technische Kenntnisse oder kleine Datenmengen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-druid-editorial.webp" alt="Illustration zu Apache Druid: Ereignisperlen fliessen in Glaszylinder fuer Echtzeit-Analyse" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Druid eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data, analytics, open source nicht mehr improvisieren wollen.

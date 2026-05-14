@@ -20,6 +20,10 @@ AirBrush is a mobile photo-editing app specifically designed for enhancing portr
 
 AirBrush is primarily aimed at individuals who want to improve their selfies and portrait photos without relying on professional image editing software. The app is ideal for social media users, influencers, bloggers, and anyone who values a flawless appearance in photos. It is also suitable for users who want to retouch photos on-the-go without hassle and time constraints. Since the app is mobile, it is particularly beneficial for smartphone users who value ease of use.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/airbrush-editorial.webp" alt="Illustration for AirBrush: beauty still life with color gels, brushes, and an abstract smartphone image" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AirBrush is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around photo editing, mobile, beauty.

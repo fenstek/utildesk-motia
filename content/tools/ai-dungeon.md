@@ -25,6 +25,10 @@ AI Dungeon richtet sich an alle, die Freude an kreativen Geschichten und interak
 
 Das Tool eignet sich sowohl für Anfänger als auch für erfahrene Nutzer, die Spaß an innovativen, KI-gestützten Erzählformen finden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ai-dungeon-editorial.webp" alt="Illustration zu AI Dungeon: Abenteuerkarte, Wahlsteine und Laternenlicht oeffnen verzweigte Erzaehlpfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** AI Dungeon eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um writing, design nicht mehr improvisieren wollen.

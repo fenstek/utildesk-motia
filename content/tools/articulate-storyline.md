@@ -23,6 +23,10 @@ Articulate Storyline richtet sich vor allem an Bildungseinrichtungen, Unternehme
 
 Die intuitive Benutzeroberfläche macht es auch für Nutzer mit wenig Programmierkenntnissen zugänglich, während erfahrene Entwickler erweiterte Funktionen und Anpassungsmöglichkeiten nutzen können.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/articulate-storyline-editorial.webp" alt="Illustration zu Articulate Storyline: Szenenboxen, Entscheidungspfade und Quizmarken formen verzweigtes Training" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Articulate Storyline eignet sich, wenn Operations-, Lern- und Office-Teams einen wiederkehrenden Ablauf rund um education, authoring, content nicht mehr improvisieren wollen.

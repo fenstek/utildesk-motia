@@ -21,6 +21,10 @@ Alibaba Cloud AI richtet sich vor allem an Unternehmen und Entwickler, die KI-Te
 - Branchen wie E-Commerce, Finanzen, Logistik, Gesundheitswesen und Fertigung, die von spezialisierten KI-Anwendungen profitieren.
 - Organisationen, die sowohl vorgefertigte KI-Dienste als auch individuelle Modellierungsmöglichkeiten suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/alibaba-cloud-ai-editorial.webp" alt="Illustration zu Alibaba Cloud AI: Modulare Cloud-Werkstatt mit Modellkristallen, Datenstroemen und Service-Bloecken" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Alibaba Cloud AI eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um machine learning, cloud, enterprise ai nicht mehr improvisieren wollen.

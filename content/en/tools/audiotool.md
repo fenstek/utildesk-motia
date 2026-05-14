@@ -20,6 +20,10 @@ Audiotool is a browser-based music production platform that allows users to crea
 
 Audiotool is designed for music producers, DJs, and hobbyists who seek a flexible and accessible solution for music production without being dependent on local software. It is particularly well-suited for users who want to work in the browser, on-the-go, or on various devices. Beginners will also benefit from Audiotool's intuitive user interface, which provides an easy entry into electronic music production. Experienced users will enjoy the wide range of effects, synthesizers, and the ability to share and collaborate on projects with others.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/audiotool-editorial.webp" alt="Illustration for Audiotool: patch cables, synth modules, and sound shapes build a browser music studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Audiotool is a good fit when content, design, and production teams want to stop improvising a recurring workflow around music production, audio, browser based.

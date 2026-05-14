@@ -16,6 +16,10 @@ Adobe Captivate ist ein professionelles Autorentool für E-Learning-Teams, die K
 
 Adobe Captivate richtet sich an Instructional Designer, Learning-&-Development-Teams, Schulungsabteilungen und Softwareanbieter, die wiederkehrend digitale Trainings erstellen. Besonders stark ist es bei Kursen mit Interaktionen, Compliance-Nachweisen, Software-Demos oder LMS-Ausspielung. Wer nur gelegentlich ein Erklärvideo oder eine einfache Präsentation braucht, wird mit Captivate häufig mehr Werkzeug als nötig einkaufen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-captivate-editorial.webp" alt="Illustration zu Adobe Captivate: Trainingsbuehne mit Simulationen, Quizmarken und verzweigten Lernpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Erstellung responsiver E-Learning-Kurse für Desktop, Tablet und Smartphone  

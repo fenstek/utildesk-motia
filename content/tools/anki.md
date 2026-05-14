@@ -24,6 +24,10 @@ Anki richtet sich an Lernende aller Altersgruppen, die ihr Wissen systematisch v
 
 Die offene Struktur von Anki erlaubt es, die Lerninhalte individuell anzupassen und an verschiedene Fachgebiete anzupassen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anki-editorial.webp" alt="Illustration zu Anki: Karteikarten, Zeitmarker und Lernstapel ordnen Wiederholungsintervalle" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Anki eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um flashcards, education, learning nicht mehr improvisieren wollen.

@@ -16,6 +16,10 @@ Apache Spark SQL ist ein leistungsstarkes Modul von Apache Spark, das speziell f
 
 Apache Spark SQL richtet sich an Dateningenieure, Datenwissenschaftler und Entwickler, die große Datenmengen effizient analysieren und verarbeiten möchten. Besonders geeignet ist es für Unternehmen und Organisationen, die Big Data Workflows automatisieren und skalierbare Analysen durchführen wollen. Anwender, die bereits Erfahrung mit SQL haben und diese Kenntnisse auf verteilte Datenverarbeitung ausweiten möchten, finden in Spark SQL eine vertraute und zugleich leistungsfähige Plattform. Auch für KI- und Machine-Learning-Projekte bietet Spark SQL die nötige Grundlage, um Daten schnell und flexibel vorzubereiten und zu transformieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-spark-sql-editorial.webp" alt="Illustration zu Apache Spark SQL: Query-Kacheln teilen sich in parallele Rechenbahnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache Spark SQL eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um data, workflow nicht mehr improvisieren wollen.

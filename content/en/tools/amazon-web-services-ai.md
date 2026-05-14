@@ -27,6 +27,10 @@ AWS AI is aimed at developers, data scientists, and companies of all sizes that 
 - Organizations that rely on extensive data analysis and processing.
 - Start-ups and large enterprises that need flexible and customizable AI solutions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/amazon-web-services-ai-editorial.webp" alt="Illustration for Amazon Web Services AI: modular AI tools for speech, vision, data, and automation are ready on a bench" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** Amazon Web Services (AWS) AI is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around api, developer tools, automation.

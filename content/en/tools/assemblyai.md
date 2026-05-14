@@ -26,6 +26,10 @@ AssemblyAI is mainly geared towards developers, enterprises, and organizations t
 
 The platform is suitable for users with a technical background who can use APIs to flexibly integrate the functions into their own systems.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/assemblyai-editorial.webp" alt="Illustration for AssemblyAI: microphone, waveform ribbons, and transcript cards analyze audio signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Typical Use Cases
 
 - **Focused rollout:** AssemblyAI is a good fit when content, design, and production teams want to stop improvising a recurring workflow around audio.

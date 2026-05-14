@@ -22,6 +22,10 @@ Apache HBase richtet sich vor allem an Entwickler und Unternehmen, die große Da
 - Entwickler, die flexible Datenmodelle für unstrukturierte oder halbstrukturierte Daten benötigen
 - Organisationen mit Anforderungen an verteilte Datenspeicherung und -analyse
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apache-hbase-editorial.webp" alt="Illustration zu Apache HBase: Karteikatalog mit Reihenbaendern und verteilten Speicherfaechern" loading="lazy" decoding="async" />
+</figure>
+
 ## Typische Einsatzszenarien
 
 - **Gezielter Einstieg:** Apache HBase eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um database, data, open source nicht mehr improvisieren wollen.
