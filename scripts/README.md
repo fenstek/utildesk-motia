@@ -12,7 +12,7 @@ Rebuilds official_url for rows with specified status (typically NEEDS_REVIEW). U
 Main autopilot: processes NEW rows, generates content, creates markdown files.
 
 ### translate_tools_to_english_codex.mjs
-Primary English localization backfill for `content/tools/*.md`. Uses the local Codex CLI OAuth session (`codex exec`), not Cloudflare AI and not `OPENAI_API_KEY`.
+Primary English localization backfill for `content/tools/*.md`. Uses the local Codex CLI OAuth session (`codex exec`) by default and can fall back to the OpenAI API when `OPENAI_API_KEY` is available.
 
 Useful commands:
 - `npm run translate:tools:en -- --dry-run --limit=10`
@@ -21,12 +21,15 @@ Useful commands:
 - `npm run translate:tools:en -- --force --slug=twilio`
 
 Environment:
+- `TRANSLATE_BACKEND=auto|codex|openai`; `auto` tries Codex first and falls back to the OpenAI API if Codex fails and an API key is available.
 - `CODEX_TRANSLATION_MODEL` optional; if omitted, the translator uses `gpt-5.4-mini`.
+- `OPENAI_TRANSLATION_MODEL` optional; otherwise the OpenAI fallback uses `OPENAI_MODEL_TEXT`, `OPENAI_MODEL`, or `gpt-4.1-mini`.
 - `CODEX_TRANSLATION_CONCURRENCY=1` is the safe default because each item runs a separate `codex exec` process.
 - `TRANSLATE_LIMIT`, `TRANSLATE_SLUGS`, and `TRANSLATE_LOG_PATH` are supported for batch control.
 - `CODEX_CLI_PATH` is optional; on Windows the script auto-resolves the installed Codex CLI JS entrypoint to avoid PowerShell shim issues.
+- `.env` is loaded when `dotenv` is installed, so cron can use a repo-local `OPENAI_API_KEY` without printing it.
 
-The old `translate_tools_to_english_cf_ai.mjs` script is legacy fallback only. Do not use it for production translations unless Codex OAuth is unavailable and the Cloudflare Workers AI quota is intentionally approved.
+The old `translate_tools_to_english_cf_ai.mjs` script is legacy fallback only. Do not use it for production translations unless both Codex OAuth and the OpenAI API fallback are unavailable and the Cloudflare Workers AI quota is intentionally approved.
 
 ### audit_alternatives_render.mjs
 Audits alternatives sections in existing tools, generates JSON report of missing tools.

@@ -147,11 +147,7 @@ translate_changed_tools_to_english() {
     return 0
   fi
 
-  if [[ -z "${CODEX_CLI_PATH:-}" ]] && ! command -v codex >/dev/null 2>&1; then
-    echo "[cron] ERROR: Codex CLI is required before publishing new tools to English"
-    echo "[cron] ERROR: refusing to publish German tools without matching content/en/tools translations"
-    return 3
-  fi
+  preflight_english_translation_backend || return $?
 
   mkdir -p tmp
   slug_file="tmp/cron-changed-tool-slugs.txt"
@@ -162,6 +158,52 @@ translate_changed_tools_to_english() {
   CODEX_TRANSLATION_MODEL="${CODEX_TRANSLATION_MODEL:-gpt-5.4-mini}" \
   CODEX_TRANSLATION_CONCURRENCY="${CODEX_TRANSLATION_CONCURRENCY:-1}" \
     npm run translate:tools:en -- --slug-file "$slug_file"
+}
+
+has_openai_translation_key() {
+  if [[ -n "${OPENAI_API_KEY:-}" ]]; then
+    return 0
+  fi
+  if [[ -f ".env" ]] && grep -Eq '^OPENAI_API_KEY=.+$' ".env"; then
+    return 0
+  fi
+  return 1
+}
+
+has_codex_translation_cli() {
+  if [[ -n "${CODEX_CLI_PATH:-}" ]]; then
+    return 0
+  fi
+  command -v codex >/dev/null 2>&1
+}
+
+preflight_english_translation_backend() {
+  local backend="${TRANSLATE_BACKEND:-auto}"
+  case "$backend" in
+    openai)
+      if has_openai_translation_key; then
+        return 0
+      fi
+      echo "[cron] ERROR: TRANSLATE_BACKEND=openai but OPENAI_API_KEY is not available"
+      ;;
+    codex)
+      if has_codex_translation_cli; then
+        return 0
+      fi
+      echo "[cron] ERROR: TRANSLATE_BACKEND=codex but Codex CLI is not available"
+      ;;
+    auto)
+      if has_codex_translation_cli || has_openai_translation_key; then
+        return 0
+      fi
+      echo "[cron] ERROR: no English translation backend available (need Codex CLI or OPENAI_API_KEY)"
+      ;;
+    *)
+      echo "[cron] ERROR: unsupported TRANSLATE_BACKEND=${backend} (use auto, codex, or openai)"
+      ;;
+  esac
+  echo "[cron] ERROR: refusing to publish German tools without matching content/en/tools translations"
+  return 3
 }
 
 echo "[cron] start:
@@ -253,6 +295,7 @@ else
     exit 0
   fi
   PUBLISH_BATCH_SIZE="${PUBLISH_BATCH_SIZE:-10}"
+  preflight_english_translation_backend
   echo "[cron] batch_size=${PUBLISH_BATCH_SIZE}"
   node scripts/test_run_9_full.mjs "${PUBLISH_BATCH_SIZE}"
   translate_changed_tools_to_english
