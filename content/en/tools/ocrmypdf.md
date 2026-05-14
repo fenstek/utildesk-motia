@@ -77,6 +77,21 @@ For OCRmyPDF, developers should verify API stability, response schemas, error co
 - Without review rules, wrong fields can silently flow into accounting or databases.
 - Privacy, DPA, data location, and deletion requirements must be checked before production use.
 
+
+## What Really Matters in Daily Use
+
+With OCRmyPDF, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. In day-to-day use, the main issue is how well the tool fits existing scripts, queues, and quality checks. OCR is only the first step.
+
+For OCRmyPDF, start with a small pilot using real material: who provides the inputs, who reviews the result, and where does the output go next?
+
+## Workflow Fit
+
+OCRmyPDF fits best when teams build their own document pipeline and want control over storage, preprocessing, correction, and deployment. Before rollout, roles, permissions, export paths, and quality control should be explicit; otherwise the tool quickly becomes another storage place beside the real process.
+
+## Editorial Assessment
+
+OCRmyPDF fits technical teams that own extraction, validation, and post-processing themselves and value transparency more than a finished business-user interface. If business teams expect a complete review application without engineering support, start with a lighter or more specialized approach first.
+
 ## Pricing & Costs
 
 Pricing model: **Open Source**. For OCRmyPDF, the real comparison should include page volume, document types, API calls, user seats, review features, retention, setup effort, operations, and support.

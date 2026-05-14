@@ -52,6 +52,21 @@ Google Cloud Vision API is aimed primarily at developers, businesses, and organi
 - No fully offline use, since cloud access is required.
 - No direct identification of people for privacy reasons.
 
+
+## What Really Matters in Daily Use
+
+With Google Cloud Vision API, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. In day-to-day use, the main issue is how well the tool fits existing scripts, queues, and quality checks. OCR is only the first step. Because this card is marked as a legacy entry, it should mainly be read as orientation for image and text recognition; for new document workflows, compare it with the active document tools in the catalogue.
+
+For Google Cloud Vision API, start with a small pilot using real material: who provides the inputs, who reviews the result, and where does the output go next?
+
+## Workflow Fit
+
+Google Cloud Vision API fits best when teams build their own document pipeline and want control over storage, preprocessing, correction, and deployment. Before rollout, roles, permissions, export paths, and quality control should be explicit; otherwise the tool quickly becomes another storage place beside the real process.
+
+## Editorial Assessment
+
+Google Cloud Vision API fits technical teams that own extraction, validation, and post-processing themselves and value transparency more than a finished business-user interface. If business teams expect a complete review application without engineering support, start with a lighter or more specialized approach first.
+
 ## Pricing & costs
 
 Google Cloud Vision API uses a usage-based pricing model. Costs depend on the number of API requests and the type of analysis function used (e.g. label detection, OCR, face detection). Google offers a free monthly quota for many functions, which is often sufficient for smaller projects. For larger volumes or special requirements, fees apply and may vary depending on the plan and region. Details and current pricing can be found on the official Google Cloud website.

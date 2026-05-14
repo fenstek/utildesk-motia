@@ -71,6 +71,21 @@ Bei Mistral OCR sollten Entwickler früh prüfen, wie stabil API, Antwortschema,
 - Ohne Review-Regeln können falsche Felder unbemerkt in Buchhaltung oder Datenbanken landen.
 - Datenschutz, AVV/DPA, Datenstandort und Löschung müssen vor Produktivbetrieb geprüft werden.
 
+
+## Was im Alltag wirklich zählt
+
+Bei Mistral OCR zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Entscheidend ist, ob aus wechselnden Dokumenten verlässlich geprüfte Felder werden, nicht ob eine Demo ein sauberes Beispiel-PDF erkennt.
+
+Für Mistral OCR sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+
+## Workflow-Fit
+
+Mistral OCR passt am besten, wenn Dokumente regelmäßig eingehen und die extrahierten Daten nach einer Prüfung in Buchhaltung, CRM, ERP oder Automationen weiterlaufen. Vor dem Rollout sollten Rollen, Rechte, Exportwege und Qualitätskontrolle feststehen; sonst entsteht schnell ein weiterer Ablageort neben dem eigentlichen Prozess.
+
+## Redaktionelle Einschätzung
+
+Mistral OCR ist stark, wenn Dokumente als kontrollierter Fachprozess behandelt werden: mit Stichproben, Ausnahmequeue, Feldverantwortung und klaren Exportformaten. Wenn nur gelegentlich einzelne PDFs gelesen oder Ergebnisse ohne fachliche Prüfung in Zielsysteme geschrieben werden sollen, sollte zuerst ein schlankerer oder spezialisierterer Ansatz geprüft werden.
+
 ## Preise & Kosten
 
 Preismodell: **Nutzungsbasiert**. Für Mistral OCR zählt im Vergleich nicht nur der Einstiegspreis. Relevant sind Seitenvolumen, Dokumenttypen, API-Aufrufe, Nutzerplätze, Review-Funktionen, Speicherfristen sowie Aufwand für Einrichtung, Betrieb und Support.

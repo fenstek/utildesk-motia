@@ -77,6 +77,21 @@ For Rossum, business teams should look closely at transparent error lists, trace
 - Without review rules, wrong fields can silently flow into accounting or databases.
 - Privacy, DPA, data location, and deletion requirements must be checked before production use.
 
+
+## What Really Matters in Daily Use
+
+With Rossum, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. The value appears when recurring document types are modeled well and exceptions do not get stuck in an inbox.
+
+For Rossum, start with a small pilot using real material: who provides the inputs, who reviews the result, and where does the output go next?
+
+## Workflow Fit
+
+Rossum fits best when invoices, orders, leads, or forms arrive in similar formats and are handed to operational systems after review. Before rollout, roles, permissions, export paths, and quality control should be explicit; otherwise the tool quickly becomes another storage place beside the real process.
+
+## Editorial Assessment
+
+Rossum is most useful for repeatable extraction tasks with clear fields, owners, and correction paths. If every document has a new layout or the downstream systems are not defined yet, start with a lighter or more specialized approach first.
+
 ## Pricing & Costs
 
 Pricing model: **Custom quote**. For Rossum, the real comparison should include page volume, document types, API calls, user seats, review features, retention, setup effort, operations, and support.

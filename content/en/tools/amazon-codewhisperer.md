@@ -56,6 +56,21 @@ Amazon CodeWhisperer is suitable for software developers of all skill levels who
 - Depending on the plan, costs may apply.
 - Learning curve for optimal use of the features.
 
+
+## What Really Matters in Daily Use
+
+With Amazon CodeWhisperer, the longest feature list matters less than whether the tool gets a clear place in the existing workflow. The value depends on whether suggestions are wrapped in reviews, tests, and architecture rules. Without that frame, an assistant just produces more code faster.
+
+For Amazon CodeWhisperer, start with a small pilot using real material: who provides the inputs, who reviews the result, and where does the output go next?
+
+## Workflow Fit
+
+Amazon CodeWhisperer fits best when engineering teams already take standards, tests, and code review seriously and want to speed up repetitive implementation work. Before rollout, roles, permissions, export paths, and quality control should be explicit; otherwise the tool quickly becomes another storage place beside the real process.
+
+## Editorial Assessment
+
+Amazon CodeWhisperer can reduce routine work, but it does not replace technical ownership or judgment around security, licenses, and maintainability. If teams accept suggestions without review or try to compensate for missing tests by trusting generated code, start with a lighter or more specialized approach first.
+
 ## Pricing & Costs
 
 The pricing of Amazon CodeWhisperer varies depending on usage and the chosen plan. There is usually a free stage with limited functionality, while expanded features and higher usage levels incur costs. For more accurate information, please contact the provider, as prices and conditions can change.

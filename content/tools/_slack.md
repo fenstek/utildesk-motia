@@ -53,11 +53,23 @@ Durch seine intuitive Bedienung und vielfältigen Anpassungsmöglichkeiten eigne
 - Einige Nutzer empfinden die Vielzahl der Funktionen als überwältigend
 - Abhängigkeit von einer stabilen Internetverbindung
 
+## Was im Alltag wirklich zählt
+
+Bei Slack zählt weniger die Zahl der Channels als die Frage, ob Kommunikation, Entscheidungen und Übergaben auffindbar bleiben. Ohne klare Channel-Regeln wird ein Chat schnell zum zweiten Posteingang.
+
+Wichtig ist ein kleiner Pilot mit echten Projekten: Welche Gespräche gehören in Channels, welche Entscheidungen werden dokumentiert und welche Benachrichtigungen dürfen stören?
+
+## Workflow-Fit
+
+Slack passt am besten, wenn Teams verteilt arbeiten, viele operative Abstimmungen haben und Integrationen bewusst als Signal- statt als Lärmquelle einsetzen. Vor dem Rollout sollten Channel-Namen, Aufbewahrung, Rechte und Eskalationswege feststehen.
+
+## Redaktionelle Einschätzung
+
+Slack ist stark für schnelle Abstimmung und Tool-Benachrichtigungen, braucht aber Moderation, Suchhygiene und klare Regeln für Entscheidungen. Wenn ein Team eigentlich verbindliche Aufgabensteuerung oder Wissensdokumentation sucht, sollte Slack nur die Kommunikationsschicht sein.
+
 ## Preise & Kosten
 
-Slack bietet ein Freemium-Preismodell an. Die Basisversion ist kostenlos und enthält grundlegende Funktionen wie Messaging, Dateifreigabe und die Nutzung von bis zu 10.000 Nachrichten im Verlauf.
-
-Erweiterte Funktionen, wie unbegrenzte Nachrichtenhistorie, erweiterte Sicherheitsoptionen und mehr Integrationen, sind in kostenpflichtigen Abonnementplänen verfügbar. Die Preise variieren je nach Plan und Nutzeranzahl.
+Slack bietet ein Freemium-Modell. Die kostenlose Version eignet sich für Einstieg und kleine Teams, ist aber bei Verlauf, Administration, Sicherheit und Integrationen begrenzt. Kostenpflichtige Pläne erweitern diese Grenzen je nach Teamgröße und Governance-Anforderungen. Vor der Auswahl sollten aktuelle Preise, Aufbewahrungsregeln und Compliance-Funktionen auf der offiziellen Preisseite geprüft werden.
 
 ## Alternativen zu Slack
 
