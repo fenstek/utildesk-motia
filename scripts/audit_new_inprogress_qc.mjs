@@ -146,20 +146,6 @@ function isSelfReference(url) {
   }
 }
 
-function isTransientVerificationError(error) {
-  const e = String(error || '').toLowerCase();
-  return (
-    e.includes('timeout') ||
-    e.includes('fetch failed') ||
-    e.includes('network') ||
-    e.includes('socket') ||
-    e.includes('tls') ||
-    e.includes('econnreset') ||
-    e.includes('etimedout') ||
-    e.includes('und_err')
-  );
-}
-
 async function sheetsClient() {
   if (GOOGLE_CLIENT_EMAIL && GOOGLE_PRIVATE_KEY) {
     const auth = new google.auth.JWT({
@@ -256,7 +242,7 @@ async function main() {
     moved_to_needs_review: 0,
     duplicates_found: 0,
     fixed_final_url_count: 0,
-    transient_verify_skipped: 0,
+    url_verify_warning_skipped: 0,
   };
 
   const reasonsBreakdown = {};
@@ -309,24 +295,12 @@ async function main() {
         maxRedirects: 5,
       });
       if (!verified.ok || !verified.finalUrl) {
-        // cf_bot_protection: both HEAD and GET returned 403 — Cloudflare Bot Fight Mode
-        // blocking this VPS's datacenter IP.  The URL already passed all static policy
-        // checks above (url_policy, DENY_HOSTS, parking patterns).  403 on a legitimate
-        // Cloudflare-protected site is NOT evidence of an invalid URL.  Parking pages
-        // return 200, not 403, so accepting cf_bot_protection does not weaken that guard.
-        if (verified.error === 'cf_bot_protection') {
-          // Non-blocking: pass through with original finalUrl (no redirect followed).
-          // urlPassed stays true; no entry added to reasons.
-        } else if (isTransientVerificationError(verified.error)) {
-          // A transient VPS/network verification failure is not strong evidence that
-          // a statically valid official_url is bad. Keep publishing moving and let
-          // post-publish audits or later recrawls catch persistent failures.
-          counters.transient_verify_skipped += 1;
-          details.push(`transient_verify:${verified.error || 'unknown'}`);
-        } else {
-          reasons.push(`head_check_failed:${verified.error || 'unknown'}`);
-          urlPassed = false;
-        }
+        // Live reachability from the VPS is advisory here: vendor sites often block
+        // datacenter HEAD/Range requests, move product pages, or rate-limit checks.
+        // Static URL policy still blocks clearly bad inputs, and successful resolves
+        // still run through the suspicious-final-URL classifier below.
+        counters.url_verify_warning_skipped += 1;
+        details.push(`url_verify_warning:${verified.error || 'unknown'}`);
       } else {
         finalUrl = String(verified.finalUrl || '').trim();
         const suspicion = classifyFinalUrl({
