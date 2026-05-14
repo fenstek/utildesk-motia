@@ -44,9 +44,14 @@ function colLetter(idx) {
 }
 
 function parseArgs(argv) {
+  const limitArg = argv.find((arg) => arg.startsWith('--limit='));
+  const limitValue = limitArg ? limitArg.split('=').slice(1).join('=') : process.env.QC_NEW_ROW_LIMIT;
+  const limit = Math.max(0, Number(limitValue || 0) || 0);
+
   return {
     apply: argv.includes('--apply=1') || argv.includes('--apply'),
     json: argv.includes('--json'),
+    limit,
   };
 }
 
@@ -198,13 +203,13 @@ async function main() {
     official_url: colLetter(idx.official_url),
   };
 
-  const rows = [];
+  const allRows = [];
   for (let i = 1; i < values.length; i += 1) {
     const row = values[i] || [];
     const status = String(row[idx.status] || '').trim().toUpperCase();
     if (status !== 'NEW' && status !== 'IN_PROGRESS') continue;
 
-    rows.push({
+    allRows.push({
       rowNumber: i + 1,
       status,
       slug: String(row[idx.slug] || '').trim(),
@@ -219,11 +224,20 @@ async function main() {
     });
   }
 
-  rows.sort((a, b) => a.rowNumber - b.rowNumber);
+  allRows.sort((a, b) => a.rowNumber - b.rowNumber);
+
+  const availableNewRows = allRows.filter((r) => r.status === 'NEW');
+  const availableInProgressRows = allRows.filter((r) => r.status === 'IN_PROGRESS');
+  const rows = args.limit > 0
+    ? [...availableInProgressRows, ...availableNewRows.slice(0, args.limit)].sort((a, b) => a.rowNumber - b.rowNumber)
+    : allRows;
 
   const counters = {
+    total_available_new: availableNewRows.length,
+    total_available_in_progress: availableInProgressRows.length,
     total_checked_new: rows.filter((r) => r.status === 'NEW').length,
     total_checked_in_progress: rows.filter((r) => r.status === 'IN_PROGRESS').length,
+    new_row_limit: args.limit,
     passed: 0,
     moved_to_needs_review: 0,
     duplicates_found: 0,
@@ -274,7 +288,11 @@ async function main() {
 
     let verified = null;
     if (urlPassed) {
-      verified = await resolveFinalUrl(finalUrl, { timeoutMs: 4000, maxRedirects: 5 });
+      verified = await resolveFinalUrl(finalUrl, {
+        timeoutMs: Number(process.env.QC_URL_TIMEOUT_MS || 4000),
+        connectTimeoutMs: Number(process.env.QC_CONNECT_TIMEOUT_MS || 2500),
+        maxRedirects: 5,
+      });
       if (!verified.ok || !verified.finalUrl) {
         // cf_bot_protection: both HEAD and GET returned 403 — Cloudflare Bot Fight Mode
         // blocking this VPS's datacenter IP.  The URL already passed all static policy
