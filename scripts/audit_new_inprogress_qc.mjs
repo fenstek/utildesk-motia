@@ -146,6 +146,20 @@ function isSelfReference(url) {
   }
 }
 
+function isTransientVerificationError(error) {
+  const e = String(error || '').toLowerCase();
+  return (
+    e.includes('timeout') ||
+    e.includes('fetch failed') ||
+    e.includes('network') ||
+    e.includes('socket') ||
+    e.includes('tls') ||
+    e.includes('econnreset') ||
+    e.includes('etimedout') ||
+    e.includes('und_err')
+  );
+}
+
 async function sheetsClient() {
   if (GOOGLE_CLIENT_EMAIL && GOOGLE_PRIVATE_KEY) {
     const auth = new google.auth.JWT({
@@ -242,6 +256,7 @@ async function main() {
     moved_to_needs_review: 0,
     duplicates_found: 0,
     fixed_final_url_count: 0,
+    transient_verify_skipped: 0,
   };
 
   const reasonsBreakdown = {};
@@ -302,8 +317,14 @@ async function main() {
         if (verified.error === 'cf_bot_protection') {
           // Non-blocking: pass through with original finalUrl (no redirect followed).
           // urlPassed stays true; no entry added to reasons.
+        } else if (isTransientVerificationError(verified.error)) {
+          // A transient VPS/network verification failure is not strong evidence that
+          // a statically valid official_url is bad. Keep publishing moving and let
+          // post-publish audits or later recrawls catch persistent failures.
+          counters.transient_verify_skipped += 1;
+          details.push(`transient_verify:${verified.error || 'unknown'}`);
         } else {
-          reasons.push('head_check_failed');
+          reasons.push(`head_check_failed:${verified.error || 'unknown'}`);
           urlPassed = false;
         }
       } else {
