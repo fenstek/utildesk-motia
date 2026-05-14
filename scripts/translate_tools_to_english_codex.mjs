@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+await import("dotenv/config").catch(() => {});
+
 import { existsSync } from "node:fs";
 import { mkdir, readdir, readFile, rename, unlink, writeFile } from "node:fs/promises";
 import { spawn, spawnSync } from "node:child_process";
@@ -11,7 +13,11 @@ const SOURCE_DIR = path.resolve(process.env.TRANSLATE_SOURCE_DIR || path.join(RO
 const TARGET_DIR = path.resolve(process.env.TRANSLATE_TARGET_DIR || path.join(ROOT, "content", "en", "tools"));
 const TMP_DIR = path.resolve(process.env.TRANSLATE_TMP_DIR || path.join(ROOT, "tmp", "codex-translations"));
 const LOG_PATH = path.resolve(process.env.TRANSLATE_LOG_PATH || path.join(ROOT, "tmp", "translate-tools-en-codex.jsonl"));
-const MODEL = String(process.env.CODEX_TRANSLATION_MODEL || "gpt-5.4-mini").trim();
+const CODEX_MODEL = String(process.env.CODEX_TRANSLATION_MODEL || "gpt-5.4-mini").trim();
+const OPENAI_MODEL = String(process.env.OPENAI_TRANSLATION_MODEL || process.env.OPENAI_MODEL_TEXT || process.env.OPENAI_MODEL || "gpt-4.1-mini").trim();
+const TRANSLATE_BACKEND = normalizeBackend(process.env.TRANSLATE_BACKEND || "auto");
+const OPENAI_API_BASE = String(process.env.OPENAI_API_BASE || process.env.OPENAI_BASE_URL || "https://api.openai.com/v1").replace(/\/+$/, "");
+const OPENAI_TIMEOUT_MS = Math.max(10000, Number(process.env.OPENAI_TRANSLATION_TIMEOUT_MS || process.env.OPENAI_TIMEOUT_MS || "180000"));
 const CONCURRENCY = Math.max(1, Number(process.env.CODEX_TRANSLATION_CONCURRENCY || process.env.TRANSLATE_CONCURRENCY || "1"));
 const MAX_RETRIES = Math.max(0, Number(process.env.CODEX_TRANSLATION_RETRIES || process.env.TRANSLATE_RETRIES || "1"));
 const LIMIT = Number(process.env.TRANSLATE_LIMIT || argValue("--limit") || 0);
@@ -20,6 +26,12 @@ const DRY_RUN = hasArg("--dry-run");
 const SLUGS = new Set(await resolveSlugSelection());
 const SCHEMA_PATH = path.join(TMP_DIR, "tool-translation.schema.json");
 const CODEX_FLAG_SUPPORT = new Map();
+
+function normalizeBackend(value) {
+  const backend = String(value || "auto").trim().toLowerCase();
+  if (["auto", "codex", "openai"].includes(backend)) return backend;
+  throw new Error(`Unsupported TRANSLATE_BACKEND="${value}". Use auto, codex, or openai.`);
+}
 
 const PRICE_MODEL_EN = new Map([
   ["Kostenlos", "Free"],
@@ -96,7 +108,11 @@ async function resolveSlugSelection() {
 
 async function ensureSchema() {
   await mkdir(TMP_DIR, { recursive: true });
-  const schema = {
+  await writeFile(SCHEMA_PATH, `${JSON.stringify(buildTranslationSchema(), null, 2)}\n`, "utf8");
+}
+
+function buildTranslationSchema() {
+  return {
     type: "object",
     additionalProperties: false,
     required: ["title", "description", "category", "price_model", "tags", "body"],
@@ -109,7 +125,6 @@ async function ensureSchema() {
       body: { type: "string" },
     },
   };
-  await writeFile(SCHEMA_PATH, `${JSON.stringify(schema, null, 2)}\n`, "utf8");
 }
 
 function extractJson(text) {
@@ -264,8 +279,8 @@ async function runCodex(prompt, entry) {
   const outputPath = path.join(TMP_DIR, `${process.pid}-${Date.now()}-${entry.slug}.json`);
   const { command, prefixArgs } = resolveCodexCommand();
   const args = [...prefixArgs, "-a", "never", "exec"];
-  if (MODEL) {
-    args.push("-m", MODEL);
+  if (CODEX_MODEL) {
+    args.push("-m", CODEX_MODEL);
   }
   args.push(
     "-C",
@@ -325,6 +340,116 @@ async function runCodex(prompt, entry) {
   });
 }
 
+function openAiKey() {
+  return String(process.env.OPENAI_API_KEY || "").trim();
+}
+
+function isOpenAiResponseFormatError(error) {
+  const message = String(error?.message || error || "");
+  return /response_format|json_schema|schema|unsupported.*format/i.test(message);
+}
+
+async function requestOpenAiChat(payload, entry) {
+  const apiKey = openAiKey();
+  if (!apiKey) {
+    throw new Error("OPENAI_API_KEY is not set for TRANSLATE_BACKEND=openai.");
+  }
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), OPENAI_TIMEOUT_MS);
+  try {
+    const response = await fetch(`${OPENAI_API_BASE}/chat/completions`, {
+      method: "POST",
+      headers: {
+        "authorization": `Bearer ${apiKey}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(payload),
+      signal: controller.signal,
+    });
+    const text = await response.text();
+    if (!response.ok) {
+      throw new Error(`OpenAI API failed for ${entry.slug} with HTTP ${response.status}: ${text.slice(0, 1200)}`);
+    }
+    return JSON.parse(text);
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function extractOpenAiContent(response) {
+  const content = response?.choices?.[0]?.message?.content;
+  if (typeof content !== "string" || !content.trim()) {
+    throw new Error("OpenAI API returned an empty translation.");
+  }
+  return content;
+}
+
+async function runOpenAi(prompt, entry) {
+  const schema = buildTranslationSchema();
+  const basePayload = {
+    model: OPENAI_MODEL,
+    messages: [
+      {
+        role: "system",
+        content: "You are a careful English localization editor. Return only valid JSON for the requested tool translation.",
+      },
+      { role: "user", content: prompt },
+    ],
+  };
+
+  const schemaPayload = {
+    ...basePayload,
+    response_format: {
+      type: "json_schema",
+      json_schema: {
+        name: "tool_translation",
+        strict: true,
+        schema,
+      },
+    },
+  };
+
+  try {
+    return extractOpenAiContent(await requestOpenAiChat(schemaPayload, entry));
+  } catch (error) {
+    if (!isOpenAiResponseFormatError(error)) throw error;
+    const fallbackPayload = {
+      ...basePayload,
+      messages: [
+        basePayload.messages[0],
+        {
+          role: "user",
+          content: `${prompt}\n\nReturn only JSON with exactly these fields: title, description, category, price_model, tags, body.`,
+        },
+      ],
+    };
+    return extractOpenAiContent(await requestOpenAiChat(fallbackPayload, entry));
+  }
+}
+
+async function runTranslator(prompt, entry) {
+  if (TRANSLATE_BACKEND === "openai") {
+    return { backend: "openai-api", model: OPENAI_MODEL, output: await runOpenAi(prompt, entry) };
+  }
+  if (TRANSLATE_BACKEND === "codex") {
+    return { backend: "codex-oauth", model: CODEX_MODEL || "codex-default", output: await runCodex(prompt, entry) };
+  }
+
+  try {
+    return { backend: "codex-oauth", model: CODEX_MODEL || "codex-default", output: await runCodex(prompt, entry) };
+  } catch (error) {
+    if (!openAiKey()) throw error;
+    console.warn(`[translator] Codex backend failed for ${entry.slug}; falling back to OpenAI API.`);
+    await writeFile(
+      LOG_PATH,
+      JSON.stringify({ ok: false, fallback: "openai-api", slug: entry.slug, error: String(error?.message || error), at: new Date().toISOString() }) + "\n",
+      { flag: "a" },
+    );
+    return { backend: "openai-api", model: OPENAI_MODEL, output: await runOpenAi(prompt, entry) };
+  }
+}
+
 async function translate(entry) {
   const source = await readFile(entry.sourcePath, "utf8");
   const parsed = matter(source);
@@ -340,14 +465,15 @@ async function translate(entry) {
   let lastError;
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt += 1) {
     try {
-      const output = await runCodex(buildPrompt(input), entry);
+      const result = await runTranslator(buildPrompt(input), entry);
+      const output = result.output;
       const translated = extractJson(output);
       validateTranslation(entry, input, translated);
       const rendered = matter.stringify(`${translated.body.trim()}\n`, normalizeData(parsed.data, translated), { lineWidth: -1 });
       const tmpPath = `${entry.targetPath}.tmp`;
       await writeFile(tmpPath, rendered, "utf8");
       await rename(tmpPath, entry.targetPath);
-      await writeFile(LOG_PATH, JSON.stringify({ ok: true, slug: entry.slug, at: new Date().toISOString() }) + "\n", { flag: "a" });
+      await writeFile(LOG_PATH, JSON.stringify({ ok: true, slug: entry.slug, backend: result.backend, model: result.model, at: new Date().toISOString() }) + "\n", { flag: "a" });
       return;
     } catch (error) {
       lastError = error;
@@ -388,8 +514,10 @@ async function main() {
   console.log(
     JSON.stringify(
       {
-        backend: "codex-oauth",
-        model: MODEL || "codex-default",
+        backend: TRANSLATE_BACKEND,
+        codexModel: CODEX_MODEL || "codex-default",
+        openaiModel: openAiKey() ? OPENAI_MODEL : undefined,
+        openaiAvailable: Boolean(openAiKey()),
         totalQueued: queue.length,
         selected: selected.length,
         sourceDir: SOURCE_DIR,

@@ -14,6 +14,7 @@ _Last updated: 2026-05-14_
 - Fixed the gate so publish QC checks all `IN_PROGRESS` rows plus a bounded leading slice of `NEW` rows tied to `PUBLISH_BATCH_SIZE` before each run, instead of verifying the entire backlog every time.
 - Also fixed `resolveFinalUrl()` to honor the older `timeoutMs` option used by existing QC/audit callers, avoiding accidental fallback to the longer default request timeout.
 - Follow-up hardening: live URL reachability failures from the VPS are now advisory in the pre-publish gate instead of a hard `NEEDS_REVIEW` reason; definite static policy failures, self-references, suspicious resolved redirects, and duplicate rows still block.
+- Follow-up translation hardening: the English tool translator now supports `TRANSLATE_BACKEND=auto|codex|openai`; `auto` keeps Codex OAuth as the first choice but falls back to the OpenAI API when `OPENAI_API_KEY` is available, and the cron preflight accepts either backend before touching new Sheet rows.
 
 ## 2026-05-13 - Tool illustration batch 18
 
