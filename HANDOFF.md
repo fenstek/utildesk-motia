@@ -1,6 +1,16 @@
 # Handoff
 
 
+
+## 2026-05-15 Umami v3.1.0 operations handoff
+
+- Umami for `stats.utildesk.de` runs on SSH host `utildesk` as root, path `/opt/umami`.
+- Docker Compose image is pinned to `docker.umami.is/umami-software/umami:3.1.0`; do not drift back to floating `postgresql-latest` without a reason.
+- Database service is PostgreSQL 16 in container `umami-db`; app service is `umami`; Traefik exposes `stats.utildesk.de`.
+- Rollback assets from the upgrade are under `/opt/umami/backups/pre-v3.1.0-20260515T154952Z/`, including the previous compose file, full root-only env copy, Docker inspect output, and custom-format `pg_dump`.
+- Successful post-upgrade checks: compose running, logs show `umami@3.1.0`, Prisma migrations 15-19 applied, heartbeat/script/root all HTTP 200, browser smoke request produced `/api/send` 200 and fresh `website_event` row.
+- Do not enable Session Replay casually. Treat it as a separate privacy/GDPR change because v3.1.0 adds replay support.
+
 ## 2026-05-13 E2a Ratgeber publication handoff
 
 - User-approved candidate: `20260511-e2a-open-source-email-gateway-for-ai-agents-how_to-bb2d056d`.

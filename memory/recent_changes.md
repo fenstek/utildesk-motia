@@ -2,6 +2,16 @@
 _Last updated: 2026-05-15_
 
 
+
+## 2026-05-15 - Umami upgraded to v3.1.0
+
+- Upgraded `https://stats.utildesk.de` on server `utildesk` (`46.224.94.65`) from the old `ghcr.io/umami-software/umami:postgresql-latest` container to pinned `docker.umami.is/umami-software/umami:3.1.0`.
+- Deployment location: `/opt/umami`; stack uses Docker Compose, Traefik, app container `umami`, and PostgreSQL container `umami-db`.
+- Pre-upgrade backup: `/opt/umami/backups/pre-v3.1.0-20260515T154952Z/umami-postgres.dump`; SHA256 `7f3c254475d23f0b5f754793a5e61debd4a57d7ce07df232fd6f7097ecfb972e`.
+- Automatic migrations applied successfully: `15_add_share`, `16_boards`, `17_remove_duplicate_key`, `18_add_performance`, `19_add_session_replay`.
+- Verification passed: `https://stats.utildesk.de/` HTTP 200, `/api/heartbeat` returns ok, `/script.js` HTTP 200 with new 4595-byte tracker, real-browser smoke hit `tools.utildesk.de` and `/api/send` returned 200; PostgreSQL `website_event` received a fresh event at `2026-05-15 15:55:33 UTC`.
+- Privacy note: v3.1.0 includes Session Replay, but it was not enabled during the upgrade. Keep replay disabled unless there is a separate GDPR/privacy decision.
+
 ## 2026-05-15 - Tool illustration batch 23
 
 - Added one landscape 1260x800 WebP editorial illustration to 50 additional manually edited tool cards in both German and English.
