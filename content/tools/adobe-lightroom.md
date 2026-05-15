@@ -1,10 +1,11 @@
 ---
-slug: "adobe-lightroom"
-title: "Adobe Lightroom"
-category: "Design"
-price_model: "Abonnement"
+slug: adobe-lightroom
+title: Adobe Lightroom
+category: Design
+price_model: Abonnement
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop-lightroom.html"
+popularity: 0
 ---
 
 # Adobe Lightroom

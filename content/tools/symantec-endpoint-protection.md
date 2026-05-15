@@ -1,10 +1,11 @@
 ---
-slug: "symantec-endpoint-protection"
-title: "Symantec Endpoint Protection"
-category: "Developer"
-price_model: "Abonnement"
+slug: symantec-endpoint-protection
+title: Symantec Endpoint Protection
+category: Developer
+price_model: Abonnement
 tags: [security, endpoint, enterprise, device-management]
 official_url: "https://www.broadcom.com/products/cybersecurity/endpoint"
+popularity: 0
 ---
 
 # Symantec Endpoint Protection

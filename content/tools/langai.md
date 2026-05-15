@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["language", "learning", "chatbot", "assistant", "education"]
 official_url: "https://langai.io/"
 affiliate_url: "https://langai.io/"
-popularity: 34
+popularity: 0
 description: KI-Sprachlern-App mit Vokabelaufbau, Aussprachefeedback und realistischen Dialogübungen.
 ---
 

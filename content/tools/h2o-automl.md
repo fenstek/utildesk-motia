@@ -1,11 +1,12 @@
 ---
-slug: "h2o-automl"
-title: "H2O AutoML"
-category: "AI"
-price_model: "Open Source"
+slug: h2o-automl
+title: H2O AutoML
+category: AI
+price_model: Open Source
 tags: [automl,machine-learning,data,automation]
 official_url: "https://h2o.ai/platform/h2o-automl/"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # H2O AutoML

@@ -1,11 +1,12 @@
 ---
-slug: "kaggle-learn"
-title: "Kaggle Learn"
-category: "Developer"
-price_model: "Free"
+slug: kaggle-learn
+title: Kaggle Learn
+category: Developer
+price_model: Free
 tags: [education, data, machine-learning, practice]
 official_url: "https://www.kaggle.com/learn"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Kaggle Learn

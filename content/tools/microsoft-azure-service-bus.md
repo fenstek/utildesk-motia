@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-service-bus"
-title: "Microsoft Azure Service Bus"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-service-bus
+title: Microsoft Azure Service Bus
+category: Developer
+price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
 official_url: "https://azure.microsoft.com/en-us/products/service-bus"
+popularity: 0
 ---
 
 # Microsoft Azure Service Bus

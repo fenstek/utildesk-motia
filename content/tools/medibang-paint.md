@@ -1,11 +1,12 @@
 ---
-slug: "medibang-paint"
-title: "MediBang Paint"
-category: "Design"
-price_model: "Freemium"
+slug: medibang-paint
+title: MediBang Paint
+category: Design
+price_model: Freemium
 tags: [design,painting,illustration,manga]
 official_url: "https://medibangpaint.com/en/medibangpaint/"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # MediBang Paint

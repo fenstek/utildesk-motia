@@ -1,10 +1,11 @@
 ---
-slug: "mozilla-firefox"
-title: "Mozilla Firefox"
-category: "Produktivität"
-price_model: "Free"
+slug: mozilla-firefox
+title: Mozilla Firefox
+category: Produktivität
+price_model: Free
 tags: [browser, web, privacy, developer-tools]
 official_url: "https://www.firefox.com/en-US/"
+popularity: 0
 ---
 
 # Mozilla Firefox

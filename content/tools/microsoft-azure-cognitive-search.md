@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-cognitive-search"
-title: "Microsoft Azure Cognitive Search"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-cognitive-search
+title: Microsoft Azure Cognitive Search
+category: Developer
+price_model: Nutzungsbasiert
 tags: [search, ai, cloud, developer-tools]
 official_url: "https://azure.microsoft.com/en-us/products/ai-services/ai-search/"
+popularity: 0
 ---
 
 # Microsoft Azure Cognitive Search

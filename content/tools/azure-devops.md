@@ -1,11 +1,12 @@
 ---
-slug: "azure-devops"
-title: "Azure DevOps"
-category: "Developer"
-price_model: "Freemium"
+slug: azure-devops
+title: Azure DevOps
+category: Developer
+price_model: Freemium
 tags: [developer-tools, project-management, collaboration, devops]
 official_url: "https://azure.microsoft.com/en-us/products/devops"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Azure DevOps

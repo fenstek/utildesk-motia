@@ -1,10 +1,11 @@
 ---
-slug: "swiftype"
-title: "Swiftype"
-category: "Developer"
-price_model: "Abonnement"
+slug: swiftype
+title: Swiftype
+category: Developer
+price_model: Abonnement
 tags: [search, site-search, api, developer-tools]
 official_url: "https://swiftype.com/"
+popularity: 0
 ---
 
 # Swiftype

@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: []
 official_url: "https://aws.amazon.com/transcribe/"
-popularity: 68
+popularity: 69
 ---
 
 # Amazon Transcribe

@@ -1,11 +1,12 @@
 ---
-slug: "microsoft-azure-event-hubs"
-title: "Microsoft Azure Event Hubs"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-event-hubs
+title: Microsoft Azure Event Hubs
+category: Developer
+price_model: Nutzungsbasiert
 tags: [data, messaging, cloud, analytics]
 official_url: "https://azure.microsoft.com/en-us/products/event-hubs/"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Microsoft Azure Event Hubs

@@ -1,11 +1,12 @@
 ---
-slug: "microsoft-azure-hdinsight"
-title: "Microsoft Azure HDInsight"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-hdinsight
+title: Microsoft Azure HDInsight
+category: Developer
+price_model: Nutzungsbasiert
 tags: [data, analytics, cloud, enterprise]
 official_url: "https://azure.microsoft.com/en-us/products/hdinsight/"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Microsoft Azure HDInsight

@@ -1,10 +1,11 @@
 ---
-slug: "marketo"
-title: "Marketo"
-category: "Marketing"
-price_model: "Abonnement"
+slug: marketo
+title: Marketo
+category: Marketing
+price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
 official_url: "https://business.adobe.com/products/marketo.html"
+popularity: 0
 ---
 
 # Marketo

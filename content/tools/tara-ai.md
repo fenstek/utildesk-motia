@@ -1,11 +1,12 @@
 ---
-slug: "tara-ai"
-title: "Tara AI"
-category: "AI"
-price_model: "Abonnement"
+slug: tara-ai
+title: Tara AI
+category: AI
+price_model: Abonnement
 tags: [product-management, developer-tools, planning, ai]
 official_url: "https://tara.ai/"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Tara AI

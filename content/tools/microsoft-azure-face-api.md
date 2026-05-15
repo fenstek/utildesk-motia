@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-face-api"
-title: "Microsoft Azure Face API"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-face-api
+title: Microsoft Azure Face API
+category: Developer
+price_model: Nutzungsbasiert
 tags: [ai,api,computer-vision,cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity"
+popularity: 0
 ---
 
 # Microsoft Azure Face API

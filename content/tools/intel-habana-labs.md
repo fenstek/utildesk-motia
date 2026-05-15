@@ -6,7 +6,7 @@ price_model: Je nach Plan
 tags: ["developer", "ai", "hardware", "ml", "training"]
 official_url: "https://habana.ai/"
 affiliate_url: "https://habana.ai/"
-popularity: 38
+popularity: 0
 description: Intel-Gaudi-Beschleuniger und Software-Stack für KI-Training und Inferenz in professioneller Infrastruktur.
 ---
 

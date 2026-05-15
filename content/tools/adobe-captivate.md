@@ -1,11 +1,12 @@
 ---
-slug: "adobe-captivate"
-title: "Adobe Captivate"
-category: "Design"
-price_model: "Abonnement"
+slug: adobe-captivate
+title: Adobe Captivate
+category: Design
+price_model: Abonnement
 tags: [education, authoring, design, content]
 official_url: "https://www.adobe.com/products/captivate.html"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Adobe Captivate

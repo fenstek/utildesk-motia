@@ -1,10 +1,11 @@
 ---
-slug: "sophos-intercept-x"
-title: "Sophos Intercept X"
-category: "Developer"
-price_model: "Abonnement"
+slug: sophos-intercept-x
+title: Sophos Intercept X
+category: Developer
+price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.sophos.com/en-us/products/endpoint-security"
+popularity: 0
 ---
 
 # Sophos Intercept X

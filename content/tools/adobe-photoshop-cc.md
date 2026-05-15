@@ -1,10 +1,11 @@
 ---
-slug: "adobe-photoshop-cc"
-title: "Adobe Photoshop"
-category: "Design"
-price_model: "Abonnement"
+slug: adobe-photoshop-cc
+title: Adobe Photoshop
+category: Design
+price_model: Abonnement
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop.html"
+popularity: 0
 ---
 
 # Adobe Photoshop

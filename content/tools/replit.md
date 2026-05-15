@@ -7,7 +7,7 @@ tags:
 official_url: "https://repl.it"
 affiliate_url: "https://repl.it"
 created_at: 2026-02-07
-popularity: 15
+popularity: 16
 ---
 
 # Replit

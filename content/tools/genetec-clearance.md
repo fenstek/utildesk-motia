@@ -1,10 +1,11 @@
 ---
-slug: "genetec-clearance"
-title: "Genetec Clearance"
-category: "Video"
-price_model: "Abonnement"
+slug: genetec-clearance
+title: Genetec Clearance
+category: Video
+price_model: Abonnement
 tags: [evidence, video, security, collaboration]
 official_url: "https://www.genetec.com/products/operations/clearance"
+popularity: 0
 ---
 
 # Genetec Clearance
