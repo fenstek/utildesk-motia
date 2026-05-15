@@ -38,6 +38,10 @@ Im Alltag zählt bei Inklewriter weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Inklewriter vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inklewriter-editorial.webp" alt="Illustration zu Inklewriter: leere Storykarten verzweigen sich zu mehreren Erzaehlpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive Story-Map:** Visualisierung der Handlungsstränge und Verzweigungen für bessere Übersicht

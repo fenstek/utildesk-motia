@@ -39,6 +39,10 @@ In day-to-day work, JetBrains Gateway is less about having every edge feature an
 
 JetBrains Gateway is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jetbrains-gateway-editorial.webp" alt="Illustration for JetBrains Gateway: local workstation and remote environment are connected by a secure tunnel" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Remote IDE connection:** Access JetBrains IDEs running on remote servers without local installation.

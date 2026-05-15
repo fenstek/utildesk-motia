@@ -34,6 +34,10 @@ Google Keep ist im Alltag stark, wenn Notizen schnell entstehen und schnell wied
 
 Damit Keep nicht chaotisch wird, braucht es einfache Regeln: Labels sparsam nutzen, erledigte Notizen archivieren und wichtige Inhalte rechtzeitig in Dokumente oder Aufgaben übertragen. Sonst wird aus schneller Erfassung ein dauerhaftes Suchproblem.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-keep-editorial.webp" alt="Illustration zu Google Keep: Haftnotizen, Erinnerungen und Farbkarten fangen schnelle Ideen ein" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Notizen erstellen:** Text-, Listen-, Bild- und Sprachnotizen anlegen

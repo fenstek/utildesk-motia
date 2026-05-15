@@ -28,6 +28,10 @@ Adobe Lightroom ist im Alltag vor allem ein System für Bildauswahl und Wiederho
 
 Wer Lightroom nur als Filter-App nutzt, verschenkt einen großen Teil des Nutzens. Stark wird es, wenn Rohdaten, Varianten, Kundenfreigaben und Ausgabeformate nachvollziehbar bleiben und auch nach Monaten wiedergefunden werden können.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-lightroom-editorial.webp" alt="Illustration zu Adobe Lightroom: Fotoabzuege werden sortiert, geprueft und farblich abgestimmt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Nicht-destruktive Bildbearbeitung:** Änderungen können jederzeit rückgängig gemacht oder angepasst werden, ohne das Originalbild zu verändern.  

@@ -27,6 +27,10 @@ Meitu is aimed at a broad audience, including:
 
 The tool is especially attractive for users who prefer an intuitive interface and want to benefit from AI features without needing deep image editing knowledge.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meitu-editorial.webp" alt="Illustration for Meitu: light, color filters, and retouching masks refine mobile photo aesthetics" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered image enhancement:** Automatic photo optimization, including skin retouching, color correction, and background improvement.

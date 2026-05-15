@@ -32,6 +32,10 @@ Adobe Photoshop is extremely powerful in everyday work, but it is efficient only
 
 For professional work, templates, naming rules, and clear approval versions are worth the effort. That keeps Photoshop as a production tool instead of a place where decisions and corrections disappear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-photoshop-cc-editorial.webp" alt="Illustration for Adobe Photoshop: image layers, masks, and retouching materials form a composition" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Image Editing:** Comprehensive tools for retouching, color correction, cutting out, and repairing photos.

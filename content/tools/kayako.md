@@ -29,6 +29,10 @@ Im Alltag zählt bei Kayako weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist Kayako vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kayako-editorial.webp" alt="Illustration zu Kayako: Supportanfragen wandern von Eingang und Triage bis zur Loesung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multichannel-Ticketing:** Verwalten Sie Kundenanfragen aus verschiedenen Kanälen zentral in einem einzigen System.

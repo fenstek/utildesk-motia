@@ -29,6 +29,10 @@ Im Alltag zählt bei IBM Watson Video Analytics weniger, ob jede Randfunktion vo
 
 Praktisch ist IBM Watson Video Analytics vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-video-analytics-editorial.webp" alt="Illustration zu IBM Watson Video Analytics: Filmstreifen laufen durch optische Analyse-Stationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Videoanalyse:** Erkennung von Bewegungen, Objekten und Personen in Live-Streams.

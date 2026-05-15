@@ -37,6 +37,10 @@ In daily use, Adobe Fresco depends on whether its brushes, layers, and export pa
 
 Fresco is most helpful for teams that move between freehand drawing and the wider Adobe workflow. Someone who only wants quick visual notes may not need it, while illustrators who reuse their work benefit from the brushes, vector options, and Creative Cloud connection.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-fresco-editorial.webp" alt="Illustration for Adobe Fresco: digital painting tools connect sketch, color, and brush textures" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Combination of vector and raster brushes for flexible creative options  

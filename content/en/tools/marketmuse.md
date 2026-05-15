@@ -21,6 +21,10 @@ MarketMuse is an AI-powered platform for content optimization and planning that 
 
 MarketMuse is aimed primarily at content marketing teams, SEO specialists, copywriters, and agencies that want to optimize their content strategies based on data. Companies with larger content portfolios also benefit from the automation and efficiency gains in topic research, content planning, and quality control. The platform is also relevant for anyone who wants to systematically review and improve their content for search engine relevance.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marketmuse-editorial.webp" alt="Illustration for MarketMuse: topic clusters, research threads, and brief cards organize content strategy" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Content analysis:** Automated evaluation of texts in terms of topic coverage, relevance, and SEO potential.

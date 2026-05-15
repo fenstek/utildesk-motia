@@ -29,6 +29,10 @@ Im Alltag zählt bei Keras weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Keras vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/keras-editorial.webp" alt="Illustration zu Keras: Modellschichten, Trainingspfade und Validierungsstationen bilden ein Deep-Learning-Labor" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Einfache und modulare API**: Ermöglicht schnelles Erstellen von Schichten, Modellen und Trainingsprozessen.

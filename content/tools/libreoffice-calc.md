@@ -27,6 +27,10 @@ LibreOffice Calc ist im Alltag besonders interessant, wenn Dateien lokal kontrol
 
 Entscheidend ist die Kompatibilität: Wer regelmäßig komplexe Excel-Dateien austauscht, sollte Formeln, Makros, Diagramme und Formatierungen testen. Für eigenständige Tabellen oder offene Standards ist Calc dagegen sehr verlässlich.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/libreoffice-calc-editorial.webp" alt="Illustration zu LibreOffice Calc: Tabellenraster, Rechenobjekte und Diagramme formen eine offene Analyseflaeche" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Erstellung und Bearbeitung von Tabellen mit umfangreichen Formelfunktionen

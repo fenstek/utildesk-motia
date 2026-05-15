@@ -29,6 +29,10 @@ Im Alltag zählt bei JupyterLab weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist JupyterLab vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jupyterlab-editorial.webp" alt="Illustration zu JupyterLab: Notizbuch, Datenproben und Ergebnisobjekte laufen durch ein Analyse-Labor" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Notebooks**: Unterstützung von Jupyter Notebooks mit Code, Text, Visualisierungen und Formeln.

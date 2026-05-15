@@ -28,6 +28,10 @@ Lookout is aimed primarily at companies and organizations that need a robust mob
 
 Even small businesses with mobile devices benefit from automated security analysis and easy integration into existing IT infrastructures.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lookout-editorial.webp" alt="Illustration for Lookout: mobile devices are secured by protection layers and security checks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Mobile Threat Defense (MTD):** Automated detection and defense against malware, phishing, and network attacks on mobile devices

@@ -18,6 +18,10 @@ IBM Watson Video Analytics is an advanced solution for analyzing and evaluating 
 
 IBM Watson Video Analytics is primarily aimed at companies and organizations that want to efficiently analyze large amounts of video material. These include security services, retailers, traffic monitoring organizations, logistics companies, and public authorities. The tool is especially well suited for users who rely on AI-based automation to reduce manual monitoring tasks and obtain precise real-time analytics. Developers and IT teams who want to integrate customized video analysis solutions also benefit from IBM's flexible platform.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-video-analytics-editorial.webp" alt="Illustration for IBM Watson Video Analytics: film strips pass through optical analysis stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Real-time video analysis:** Detection of movement, objects, and people in live streams.

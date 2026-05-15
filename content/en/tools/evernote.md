@@ -32,6 +32,10 @@ Evernote depends on disciplined capture in everyday use. If every note is simply
 
 It is especially useful for loose information that is not ready for a project management tool. The critical step is handoff: collected notes eventually need to become tasks, decisions, or archived references.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/evernote-editorial.webp" alt="Illustration for Evernote: notes, cards, and clippings are gathered into an organized archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Create and manage notes:** Text notes, checklists, audio recordings, and handwritten notes.

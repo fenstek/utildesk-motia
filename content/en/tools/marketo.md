@@ -32,6 +32,10 @@ Marketo is not a simple newsletter tool in daily use; it is an operating platfor
 
 Many Marketo problems start outside the editor, in unclear audiences, duplicates, old lists, and poorly aligned sales rules. Before launching new campaigns, teams should review data quality and ownership.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marketo-editorial.webp" alt="Illustration for Marketo: leads move through segmentation, campaigns, and sales handoff" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Marketing Automation:** Automate email campaigns, follow-ups, and lead nurturing processes.

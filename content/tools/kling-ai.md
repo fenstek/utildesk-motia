@@ -37,6 +37,10 @@ Im Alltag zählt bei Kling AI weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Kling AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kling-ai-editorial.webp" alt="Illustration zu Kling AI: Storyboards, Lichtkegel und Szenenstreifen formen eine generierte Videosequenz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Videoerstellung:** Basierend auf Text, Bildern oder vorhandenen Clips generiert Kling AI in kurzer Zeit ein fertiges Video.

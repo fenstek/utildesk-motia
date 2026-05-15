@@ -36,6 +36,10 @@ Im Alltag zählt bei Khan Academy weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist Khan Academy vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/khan-academy-editorial.webp" alt="Illustration zu Khan Academy: Lernkarten, Uebungen und Fortschrittspfad strukturieren selbststaendiges Lernen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Umfangreiche Videobibliothek:** Tausende von kurzen, gut strukturierten Lehrvideos zu zahlreichen Schulfächern und Themen.

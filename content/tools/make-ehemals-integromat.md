@@ -36,6 +36,10 @@ Im Alltag zählt bei Make (ehemals Integromat) weniger, ob jede Randfunktion vor
 
 Praktisch ist Make (ehemals Integromat) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/make-ehemals-integromat-editorial.webp" alt="Illustration zu Make: Automationsmodule, Filter und Ausgabefaehren verbinden Arbeitsschritte" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visueller Workflow-Editor:** Drag-and-Drop-Oberfläche zum Erstellen und Anpassen von Automatisierungen.

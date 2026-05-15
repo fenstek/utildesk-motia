@@ -32,6 +32,10 @@ LibreOffice Calc is especially relevant in daily work when files should be contr
 
 Compatibility is the decisive point: teams that exchange complex Excel files should test formulas, macros, charts, and formatting. For independent spreadsheets or open standards, Calc is very reliable.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/libreoffice-calc-editorial.webp" alt="Illustration for LibreOffice Calc: grids, calculation objects, and charts form an open analysis surface" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Creation and editing of spreadsheets with extensive formula functions

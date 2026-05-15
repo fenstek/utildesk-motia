@@ -28,6 +28,10 @@ Inklewriter is aimed at authors, game designers, educators, and creatives who wa
 
 The application is suitable for both beginners and experienced users who value ease of use and a flexible structure.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/inklewriter-editorial.webp" alt="Illustration for Inklewriter: blank story cards branch into multiple narrative paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Intuitive story map:** Visualization of plotlines and branches for better overview

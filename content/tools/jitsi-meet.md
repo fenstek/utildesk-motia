@@ -35,6 +35,10 @@ Im Alltag zählt bei Jitsi Meet weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Jitsi Meet vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jitsi-meet-editorial.webp" alt="Illustration zu Jitsi Meet: entfernte Meeting-Stationen verbinden sich in einem gemeinsamen Gespraechsraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Videokonferenzen ohne Registrierung:** Ein Meeting kann sofort über einen Link gestartet und geteilt werden.

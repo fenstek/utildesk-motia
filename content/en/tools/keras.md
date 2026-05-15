@@ -21,6 +21,10 @@ Keras is a powerful, easy-to-use open-source deep learning library written in Py
 
 Keras is aimed at developers, data scientists, researchers, and machine learning enthusiasts who are looking for an intuitive yet flexible solution for building and deploying neural networks. Both beginners who want to get started with deep learning and experienced professionals who want to develop rapid prototypes benefit from the clear API and extensive documentation. Keras is also suitable for companies and educational institutions that want to automate AI applications or integrate them into their systems.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/keras-editorial.webp" alt="Illustration for Keras: model layers, training paths, and validation stations form a deep learning lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Simple and modular API**: Enables rapid creation of layers, models, and training workflows.

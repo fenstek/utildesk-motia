@@ -40,6 +40,10 @@ In day-to-day work, Lumen5 is less about having every edge feature and more abou
 
 Lumen5 is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lumen5-editorial.webp" alt="Illustration for Lumen5: article cards become video scenes through storyboard and media selection" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic video creation from text:** Import blog posts, scripts, or text sections, which are automatically converted into a video format.

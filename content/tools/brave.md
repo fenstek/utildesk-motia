@@ -27,6 +27,10 @@ Bei Brave zählt im Alltag, ob der Schutz vor Tracking mit den genutzten Website
 
 Brave wirkt am stärksten für Nutzer, die Datenschutz wirklich in den Browser verlagern wollen. Wer viele Unternehmens-Erweiterungen, zentrale Richtlinien oder spezifische SSO-Prozesse nutzt, sollte die Verwaltungsmöglichkeiten vor einem breiten Rollout prüfen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brave-editorial.webp" alt="Illustration zu Brave: ein geschuetzter Browsing-Pfad blockt Tracking-Signale in einem Papierlabyrinth" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Integrierter Werbeblocker und Tracker-Blockierung:** Standardmäßiger Schutz vor Werbung und Tracking-Skripten für ein schnelleres und sichereres Surferlebnis.

@@ -36,6 +36,10 @@ Im Alltag zählt bei Meitu weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Meitu vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meitu-editorial.webp" alt="Illustration zu Meitu: Licht, Farbfilter und Retuschemasken verfeinern mobile Fotoaesthetik" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Bildverschönerung:** Automatische Optimierung von Fotos, inklusive Hautretusche, Farbkorrektur und Hintergrundverbesserung.

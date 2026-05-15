@@ -35,6 +35,10 @@ Im Alltag zählt bei Kapwing weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Kapwing vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kapwing-editorial.webp" alt="Illustration zu Kapwing: Videoclips, Formatrahmen und Tonspuren werden zu Social-Media-Szenen montiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Video-Editor**: Schneiden, trimmen, drehen und zusammenfügen von Videoclips direkt im Browser.

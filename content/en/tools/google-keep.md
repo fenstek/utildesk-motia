@@ -39,6 +39,10 @@ Google Keep is strong in daily use when notes need to appear quickly and disappe
 
 To keep it from becoming chaotic, simple rules help: use labels sparingly, archive finished notes, and move important content into documents or tasks in time. Otherwise fast capture becomes a long-term search problem.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-keep-editorial.webp" alt="Illustration for Google Keep: sticky notes, reminders, and color cards capture quick ideas" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Create Notes:** Create text, list, image, and voice notes

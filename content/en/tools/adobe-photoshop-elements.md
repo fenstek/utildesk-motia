@@ -32,6 +32,10 @@ Photoshop Elements is less a reduced Photoshop and more a deliberately guided ph
 
 Its value depends on how often the tasks come up. For one-off quick fixes, phone apps may be enough; for recurring photo projects, Elements is more comfortable because editing, organizing, and output sit in one calm environment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-photoshop-elements-editorial.webp" alt="Illustration for Adobe Photoshop Elements: everyday photos are sorted, cropped, and gently corrected" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Automatic photo organization:** Intelligent sorting and searching of photos based on people, places, and events.

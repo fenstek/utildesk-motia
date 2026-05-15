@@ -27,6 +27,10 @@ Make is aimed at individuals, small and medium-sized businesses, and teams that 
 
 The platform is ideal for users looking for flexible and scalable automations while placing value on a visual, intuitive interface.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/make-ehemals-integromat-editorial.webp" alt="Illustration for Make: automation modules, filters, and output carriers connect workflow steps" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Visual workflow editor:** Drag-and-drop interface for creating and customizing automations.

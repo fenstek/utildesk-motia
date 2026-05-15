@@ -32,6 +32,10 @@ Trellix Endpoint Security depends on policy quality and alert hygiene in daily u
 
 False positives should be handled seriously without weakening protection for convenience. Security teams should regularly review which rules trigger, which devices fall out of coverage, and which alerts require action.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mcafee-endpoint-security-editorial.webp" alt="Illustration for Trellix Endpoint Security: endpoints are secured by protection layers, quarantine, and response paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multi-layered Malware Protection**: Guards against viruses, ransomware, spyware, and other malicious software using signature-based and behavior-based detection.

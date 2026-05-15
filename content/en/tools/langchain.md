@@ -38,6 +38,10 @@ In day-to-day work, LangChain is less about having every edge feature and more a
 
 LangChain is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/langchain-editorial.webp" alt="Illustration for LangChain: documents, tools, and memory blocks are linked into an AI chain" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Modular architecture:** Enables the combination of different components such as LLMs, memory, data sources, and tools.

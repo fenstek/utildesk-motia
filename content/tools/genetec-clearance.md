@@ -28,6 +28,10 @@ Bei Genetec Clearance zählt im Alltag die Nachvollziehbarkeit jeder Datei. Wer 
 
 Der praktische Nutzen entsteht, wenn Sicherheits-, Rechts- und Einsatzteams dieselbe Falllogik verwenden. Ohne klare Benennungen und Rollen kann ein Beweismittelportal genauso unübersichtlich werden wie ein geteilter Ordner.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genetec-clearance-editorial.webp" alt="Illustration zu Genetec Clearance: Videobelege wandern durch Pruefung, Freigabe und sichere Ablage" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Sichere Speicherung von Videobeweisen**: Cloudbasierte Ablage mit hoher Datensicherheit und Verschlüsselung.

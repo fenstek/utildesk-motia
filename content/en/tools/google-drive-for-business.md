@@ -32,6 +32,10 @@ Google Drive for Business works only as well as its file structure. If ownership
 
 The main benefit comes when teams consistently use shared drives and avoid turning personal drives into shadow archives. That requires rules for file names, external links, ownership, and archiving.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-drive-for-business-editorial.webp" alt="Illustration for Google Drive for Business: team folders, permissions, and cloud storage connect shared files" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Cloud Storage:** Secure access to files from anywhere with automatic synchronization.

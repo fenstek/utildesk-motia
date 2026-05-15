@@ -38,6 +38,10 @@ In day-to-day work, Khan Academy is less about having every edge feature and mor
 
 Khan Academy is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/khan-academy-editorial.webp" alt="Illustration for Khan Academy: lesson cards, exercises, and a progress path structure self-paced learning" loading="lazy" decoding="async" />
+</figure>
+
 ## Workflow Fit
 
 Khan Academy fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.

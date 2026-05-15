@@ -27,6 +27,10 @@ Evernote lebt im Alltag von konsequenter Ablage. Wer jede Notiz einfach hineinwi
 
 Besonders nützlich ist Evernote für lose Informationen, die noch nicht in ein Projektmanagement-Tool gehören. Der kritische Punkt ist die Übergabe: Aus gesammelten Notizen müssen irgendwann Aufgaben, Entscheidungen oder archivierte Referenzen werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/evernote-editorial.webp" alt="Illustration zu Evernote: Notizen, Karten und Fundstuecke werden in einem geordneten Archiv gesammelt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Notizen erstellen und verwalten:** Textnotizen, Checklisten, Audioaufnahmen und handschriftliche Notizen.

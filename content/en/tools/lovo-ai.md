@@ -19,6 +19,10 @@ Lovo AI is an advanced AI-based audio and voice synthesis platform that enables 
 
 Lovo AI is suitable for businesses and individuals who want to create high-quality voice content quickly and cost-effectively. This includes content creators, marketing teams, e-learning providers, podcasters, audiobook producers, and developers who want to integrate voice assistants or automation solutions. Lovo AI also offers valuable tools for startups and small to medium-sized businesses that focus on personalized customer communication.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lovo-ai-editorial.webp" alt="Illustration for Lovo AI: microphones, sound ribbons, and script cards become synthetic voices" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Realistic voice synthesis:** Generates natural-sounding voices with different accents and styles.

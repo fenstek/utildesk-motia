@@ -32,6 +32,10 @@ Adobe Lightroom is primarily a system for selection and repeatability in everyda
 
 Using Lightroom only as a filter app leaves much of its value unused. It becomes strong when raw files, variants, client approvals, and output formats remain traceable and can still be found months later.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-lightroom-editorial.webp" alt="Illustration for Adobe Lightroom: photo prints are sorted, reviewed, and color graded" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Non-destructive editing:** Changes can be undone or adjusted anytime without altering the original image.  

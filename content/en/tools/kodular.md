@@ -41,6 +41,10 @@ In day-to-day work, Kodular is less about having every edge feature and more abo
 
 Kodular is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kodular-editorial.webp" alt="Illustration for Kodular: app screens and logic blocks are assembled into mobile prototypes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Drag-and-drop components**: Visual interface design with prebuilt building blocks.

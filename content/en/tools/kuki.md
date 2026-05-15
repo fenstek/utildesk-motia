@@ -39,6 +39,10 @@ In day-to-day work, Kuki is less about having every edge feature and more about 
 
 Kuki is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kuki-editorial.webp" alt="Illustration for Kuki: blank speech bubbles and response paths form a dialogue workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural language processing:** Kuki understands and processes natural language input to deliver fluid, context-aware responses.

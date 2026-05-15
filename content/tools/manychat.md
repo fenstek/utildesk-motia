@@ -29,6 +29,10 @@ Im Alltag zählt bei ManyChat weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist ManyChat vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/manychat-editorial.webp" alt="Illustration zu ManyChat: Dialogpfade verzweigen Kundenfragen in Antworten und Uebergaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visueller Chatbot-Builder:** Intuitive Drag-and-Drop-Oberfläche zum Erstellen von Chat-Dialogen ohne Programmierkenntnisse.

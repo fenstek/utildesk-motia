@@ -28,6 +28,10 @@ Marketo ist im Alltag kein einfaches Newsletter-Tool, sondern eine Betriebsplatt
 
 Viele Marketo-Probleme entstehen nicht im Editor, sondern in unklaren Zielgruppen, Dubletten, alten Listen und schlecht abgestimmten Sales-Regeln. Vor neuen Kampagnen lohnt deshalb ein Blick auf Datenqualität und Verantwortlichkeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marketo-editorial.webp" alt="Illustration zu Marketo: Leads laufen durch Segmentierung, Kampagnen und Sales-Handoff" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Marketing-Automatisierung:** Automatisierung von E-Mail-Kampagnen, Follow-ups und Lead-Nurturing-Prozessen.

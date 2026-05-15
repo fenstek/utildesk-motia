@@ -33,6 +33,10 @@ Apple Numbers ist im Alltag angenehm, wenn Tabellen nicht wie starre Datenbanken
 
 Wer Numbers produktiv nutzt, sollte zwischen schönem Layout und belastbarer Datenstruktur unterscheiden. Für kleine Planungen ist die Freiheit ein Vorteil, für wiederkehrende Auswertungen braucht es klare Tabellenbereiche, Benennungen und Exportregeln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-numbers-editorial.webp" alt="Illustration zu Apple Numbers: Tabellenfelder wachsen zu Diagrammen und Planungsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Intuitive Bedienoberfläche mit Drag-and-Drop-Funktionalität.
