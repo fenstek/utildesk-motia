@@ -1,10 +1,11 @@
 ---
-slug: "temi"
-title: "Temi"
-category: "Audio"
-price_model: "Nutzungsbasiert"
+slug: temi
+title: Temi
+category: Audio
+price_model: Nutzungsbasiert
 tags: [transcription,audio,productivity]
 official_url: "https://www.temi.com/"
+popularity: 0
 ---
 
 # Temi

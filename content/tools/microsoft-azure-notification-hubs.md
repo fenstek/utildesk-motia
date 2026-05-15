@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-notification-hubs"
-title: "Microsoft Azure Notification Hubs"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-notification-hubs
+title: Microsoft Azure Notification Hubs
+category: Developer
+price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, mobile]
 official_url: "https://azure.microsoft.com/en-us/products/notification-hubs"
+popularity: 0
 ---
 
 # Microsoft Azure Notification Hubs

@@ -1,11 +1,12 @@
 ---
-slug: "teradata-vantage"
-title: "Teradata Vantage"
-category: "Developer"
-price_model: "Abonnement"
+slug: teradata-vantage
+title: Teradata Vantage
+category: Developer
+price_model: Abonnement
 tags: [data, analytics, cloud, enterprise]
 official_url: "https://www.teradata.com/platform"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Teradata Vantage

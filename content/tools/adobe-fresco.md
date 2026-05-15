@@ -1,10 +1,11 @@
 ---
-slug: "adobe-fresco"
-title: "Adobe Fresco"
-category: "Design"
-price_model: "Freemium"
+slug: adobe-fresco
+title: Adobe Fresco
+category: Design
+price_model: Freemium
 tags: [design, illustration, painting, mobile]
 official_url: "https://www.adobe.com/products/fresco.html"
+popularity: 0
 ---
 
 # Adobe Fresco

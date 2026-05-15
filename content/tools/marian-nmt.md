@@ -6,7 +6,7 @@ price_model: Open Source
 tags: ["developer", "translation", "nmt", "open-source", "language"]
 official_url: "https://marian-nmt.github.io/"
 affiliate_url: "https://marian-nmt.github.io/"
-popularity: 90
+popularity: 91
 description: Open-Source-Framework für neuronale maschinelle Übersetzung und technische NMT-Workflows.
 ---
 

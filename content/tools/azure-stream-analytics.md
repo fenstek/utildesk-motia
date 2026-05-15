@@ -1,11 +1,12 @@
 ---
-slug: "azure-stream-analytics"
-title: "Azure Stream Analytics"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: azure-stream-analytics
+title: Azure Stream Analytics
+category: Developer
+price_model: Nutzungsbasiert
 tags: [data, analytics, streaming, cloud]
 official_url: "https://azure.microsoft.com/en-us/products/stream-analytics/"
 created_at: 2026-05-14
+popularity: 0
 ---
 
 # Azure Stream Analytics

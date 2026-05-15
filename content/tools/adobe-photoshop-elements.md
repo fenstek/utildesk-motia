@@ -1,10 +1,11 @@
 ---
-slug: "adobe-photoshop-elements"
-title: "Adobe Photoshop Elements"
-category: "Design"
-price_model: "One-time purchase"
+slug: adobe-photoshop-elements
+title: Adobe Photoshop Elements
+category: Design
+price_model: One-time purchase
 tags: [photo, editing, design, desktop]
 official_url: "https://www.adobe.com/products/photoshop-elements.html"
+popularity: 0
 ---
 
 # Adobe Photoshop Elements

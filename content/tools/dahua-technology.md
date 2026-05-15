@@ -1,10 +1,11 @@
 ---
-slug: "dahua-technology"
-title: "Dahua Technology"
-category: "Video"
-price_model: "Abonnement"
+slug: dahua-technology
+title: Dahua Technology
+category: Video
+price_model: Abonnement
 tags: [video, security, hardware, analytics]
 official_url: "https://www.dahuasecurity.com/"
+popularity: 0
 ---
 
 # Dahua Technology

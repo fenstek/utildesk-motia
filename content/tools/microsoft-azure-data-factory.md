@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-data-factory"
-title: "Microsoft Azure Data Factory"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-data-factory
+title: Microsoft Azure Data Factory
+category: Developer
+price_model: Nutzungsbasiert
 tags: [data, integration, automation, cloud]
 official_url: "https://azure.microsoft.com/en-us/products/data-factory/"
+popularity: 0
 ---
 
 # Microsoft Azure Data Factory

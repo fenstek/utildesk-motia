@@ -1,10 +1,11 @@
 ---
-slug: "google-chrome"
-title: "Google Chrome"
-category: "Produktivität"
-price_model: "Free"
+slug: google-chrome
+title: Google Chrome
+category: Produktivität
+price_model: Free
 tags: [browser, web, productivity, developer-tools]
 official_url: "https://chrome.google/"
+popularity: 0
 ---
 
 # Google Chrome

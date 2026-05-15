@@ -1,10 +1,11 @@
 ---
-slug: "mcafee-endpoint-security"
-title: "Trellix Endpoint Security"
-category: "Developer"
-price_model: "Abonnement"
+slug: mcafee-endpoint-security
+title: Trellix Endpoint Security
+category: Developer
+price_model: Abonnement
 tags: [security, endpoint, enterprise, device-management]
 official_url: "https://www.trellix.com/products/endpoint-security/"
+popularity: 0
 ---
 
 # Trellix Endpoint Security

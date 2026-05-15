@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["education", "data", "analytics", "python", "developer-tools"]
 official_url: "https://jovian.com/"
 affiliate_url: "https://jovian.com/"
-popularity: 91
+popularity: 37
 description: Praxisorientierte Lernplattform für Python, Datenanalyse, Machine Learning und Jupyter-Workflows.
 ---
 
