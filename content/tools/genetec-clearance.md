@@ -16,6 +16,18 @@ Genetec Clearance ist eine cloudbasierte Plattform zur sicheren Verwaltung und g
 
 Genetec Clearance richtet sich vor allem an Sicherheitsbehörden, Strafverfolgungsbehörden, private Sicherheitsunternehmen und Organisationen, die große Mengen an Videomaterial als Beweismittel verwalten müssen. Ebenso profitieren Unternehmen aus dem Einzelhandel, der Verkehrssicherheit und dem öffentlichen Sektor von der Lösung, wenn es darum geht, Videobeweise sicher zu speichern und mit internen oder externen Partnern zu teilen. Durch die Cloud-basierte Architektur ist die Plattform auch für Teams mit verteilten Standorten geeignet.
 
+## Typische Einsatzszenarien
+
+- **Digitale Beweismittel verwalten:** Genetec Clearance unterstützt Teams, die Video-, Bild- und Falldaten nachvollziehbar organisieren müssen.
+- **Zusammenarbeit mit Behörden:** Freigaben und Fallakten sind nützlich, wenn Material kontrolliert mit externen Stellen geteilt wird.
+- **Sicherheits- und Ermittlungsprozesse:** Das Tool passt zu Workflows, in denen Chain of Custody und Dokumentation wichtig sind.
+
+## Was im Alltag wirklich zählt
+
+Bei Genetec Clearance zählt im Alltag die Nachvollziehbarkeit jeder Datei. Wer Beweismaterial sammelt, braucht mehr als Speicherplatz: Herkunft, Bearbeitungen, Freigaben und Zugriffe müssen sauber dokumentiert bleiben.
+
+Der praktische Nutzen entsteht, wenn Sicherheits-, Rechts- und Einsatzteams dieselbe Falllogik verwenden. Ohne klare Benennungen und Rollen kann ein Beweismittelportal genauso unübersichtlich werden wie ein geteilter Ordner.
+
 ## Hauptfunktionen
 
 - **Sichere Speicherung von Videobeweisen**: Cloudbasierte Ablage mit hoher Datensicherheit und Verschlüsselung.
@@ -45,6 +57,18 @@ Genetec Clearance richtet sich vor allem an Sicherheitsbehörden, Strafverfolgun
 - Abhängigkeit von Internetverbindung für Zugriff und Upload.
 - Einige Funktionen können je nach Plan eingeschränkt sein.
 - Einarbeitungszeit für Benutzer ohne Erfahrung mit Beweismittelmanagement.
+
+## Workflow-Fit
+
+Genetec Clearance gehört in einen Vorfallsworkflow von der Aufnahme über die Prüfung bis zur Weitergabe. Wichtig sind feste Regeln für Fallnummern, Uploads, Sichtungen, Schwärzungen und externe Freigaben. Besonders bei mehreren Beteiligten sollte vorab getestet werden, wer Material sehen, herunterladen oder kommentieren darf.
+
+## Datenschutz & Daten
+
+Beweismaterial enthält häufig personenbezogene, sicherheitsrelevante und rechtlich heikle Daten. Zugriff, Aufbewahrung, Audit-Logs, Löschung und Export müssen streng geregelt sein. Bei Video- oder Bildmaterial sind Schwärzung, Zweckbindung und kontrollierte Weitergabe keine Komfortfunktionen, sondern Kernanforderungen.
+
+## Redaktionelle Einschätzung
+
+Genetec Clearance ist sinnvoll, wenn Organisationen Beweismaterial professioneller behandeln wollen als mit Dateiordnern und E-Mail-Anhängen. Der Nutzen hängt stark von Prozessdisziplin ab. Ohne klare Fallführung bleibt auch ein spezialisiertes Tool nur ein weiterer Speicherort.
 
 ## Preise & Kosten
 

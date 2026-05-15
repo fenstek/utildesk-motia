@@ -20,6 +20,18 @@ Marketo is a comprehensive marketing automation platform that helps businesses c
 
 Marketo is primarily aimed at medium-sized and large companies looking to automate complex marketing processes. It is especially suitable for marketing and sales teams that prioritize a close connection between lead generation and customer management. Agencies managing multiple client campaigns also benefit from its extensive customization and reporting options. Small businesses with simple requirements may find the platform too comprehensive or costly.
 
+## Typical Use Cases
+
+- **B2B marketing automation:** Marketo fits teams that develop leads through campaigns, scoring, and nurturing.
+- **Connecting sales and marketing:** The platform becomes valuable when CRM and sales handoffs are clearly defined.
+- **Complex campaigns:** Multi-step programs, segmentation, and attribution are typical use cases.
+
+## What really matters in daily use
+
+Marketo is not a simple newsletter tool in daily use; it is an operating platform for marketing processes. Its value depends on the quality of the data model, campaign logic, lead scoring, and handoffs.
+
+Many Marketo problems start outside the editor, in unclear audiences, duplicates, old lists, and poorly aligned sales rules. Before launching new campaigns, teams should review data quality and ownership.
+
 ## Key Features
 
 - **Marketing Automation:** Automate email campaigns, follow-ups, and lead nurturing processes.
@@ -48,6 +60,18 @@ Marketo is primarily aimed at medium-sized and large companies looking to automa
 - Higher costs vary depending on chosen plan and company size.
 - Setup and training often require significant time and resources.
 - May be oversized for small businesses or simple marketing needs.
+
+## Workflow Fit
+
+Marketo fits workflows where marketing does more than send messages and instead guides prospects through a defined funnel. CRM integration, campaign calendars, consent status, and reporting should be treated as one structure. Without alignment with sales, lead scoring loses credibility quickly.
+
+## Data Protection & Data
+
+Marketo processes contact data, interests, campaign responses, consent information, and scoring data. Privacy rules, opt-ins, deletion processes, data sources, and CRM synchronization need strict governance. Imported lists and historically grown fields are common risk areas.
+
+## Editorial Assessment
+
+Marketo is worthwhile for mature marketing organizations with complex B2B processes. It is powerful, but not lightweight. Teams that only send occasional emails may find it heavy; teams that seriously manage campaigns, data, and sales handoffs get a strong system.
 
 ## Pricing & Costs
 

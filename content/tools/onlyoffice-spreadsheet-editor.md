@@ -23,6 +23,18 @@ OnlyOffice Spreadsheet Editor richtet sich an verschiedene Nutzergruppen:
 
 Das Tool ist besonders geeignet für Anwender, die eine Kombination aus Desktop- und Cloud-Funktionalität bevorzugen und dabei auf eine klare Benutzeroberfläche Wert legen.
 
+## Typische Einsatzszenarien
+
+- **Tabellen im Office-Stack:** OnlyOffice Spreadsheet Editor eignet sich für Teams, die Tabellen gemeinsam in einer Office-ähnlichen Umgebung bearbeiten.
+- **Selbsthosting und Integration:** Der Editor passt gut, wenn Dokumente in Nextcloud, ownCloud oder eigenen Portalen laufen sollen.
+- **Excel-nahe Zusammenarbeit:** Viele Workflows profitieren von vertrauter Bedienung und guter Formatkompatibilität.
+
+## Was im Alltag wirklich zählt
+
+OnlyOffice Spreadsheet Editor ist im Alltag vor allem dann interessant, wenn Zusammenarbeit und Dateikompatibilität zusammenkommen müssen. Er fühlt sich für viele Excel-Nutzer vertraut an, ohne zwingend an Microsoft 365 gebunden zu sein.
+
+Wichtig ist, komplexe Tabellen nicht nur optisch zu öffnen, sondern fachlich zu prüfen. Formeln, geschützte Bereiche, Makros, Diagramme und gleichzeitige Bearbeitung sollten mit echten Dateien getestet werden.
+
 ## Hauptfunktionen
 
 - **Umfangreiche Tabellenbearbeitung:** Unterstützung von Formeln, Pivot-Tabellen, Diagrammen und bedingter Formatierung.
@@ -53,6 +65,18 @@ Das Tool ist besonders geeignet für Anwender, die eine Kombination aus Desktop-
 - Gelegentlich können Performance-Einbußen bei sehr großen Tabellen auftreten
 - Benutzer, die ausschließlich offline arbeiten möchten, sind durch Cloud-Features eingeschränkt
 - Support und Dokumentation könnten je nach Plan variieren
+
+## Workflow-Fit
+
+Der Editor passt in Workflows, in denen Dokumente zentral gespeichert und gemeinsam bearbeitet werden. Besonders sinnvoll ist er als Teil einer größeren Plattform, etwa mit Dateiablage, Rechten und Versionierung. Für kritische Finanz- oder Controllingmodelle sollten Freigabe- und Exportregeln feststehen.
+
+## Datenschutz & Daten
+
+Tabellen enthalten oft personenbezogene, finanzielle oder operative Daten. Bei OnlyOffice hängt Datenschutz stark von der gewählten Bereitstellung ab: Cloud, Self-hosting, Integration und Speicherort müssen geprüft werden. Zugriff, Versionshistorie und externe Freigaben sollten nicht dem Zufall überlassen werden.
+
+## Redaktionelle Einschätzung
+
+OnlyOffice Spreadsheet Editor ist eine gute Option, wenn Teams Office-Komfort und mehr Kontrolle über die Umgebung verbinden wollen. Er ersetzt nicht jedes Excel-Spezialszenario, deckt aber viele Alltagsaufgaben solide ab. Entscheidend ist ein Test mit den eigenen komplexesten Tabellen.
 
 ## Preise & Kosten
 

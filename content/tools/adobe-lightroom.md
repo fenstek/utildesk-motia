@@ -16,6 +16,18 @@ Adobe Lightroom ist eine leistungsstarke Software zur Bildbearbeitung und -verwa
 
 Adobe Lightroom ist ideal für Hobbyfotografen, professionelle Fotografen, Grafikdesigner und alle, die eine effiziente Lösung zur Bildbearbeitung und -verwaltung suchen. Die Software eignet sich sowohl für Einsteiger, die von vordefinierten Presets profitieren, als auch für Profis, die umfangreiche Einstellungsmöglichkeiten und eine präzise Kontrolle über ihre Bildbearbeitung wünschen. Auch Teams und Agenturen, die auf Cloud-basierte Zusammenarbeit setzen, finden in Lightroom eine passende Lösung.
 
+## Typische Einsatzszenarien
+
+- **Fotobestände ordnen:** Lightroom hilft, Shootings zu importieren, zu bewerten und über Sammlungen oder Alben nutzbar zu halten.
+- **Serien konsistent bearbeiten:** Presets und Stapelbearbeitung sind sinnvoll, wenn viele Bilder einen gemeinsamen Look brauchen.
+- **Mobile und Desktop verbinden:** Fotografen profitieren, wenn Auswahl, Korrektur und Freigabe über mehrere Geräte laufen.
+
+## Was im Alltag wirklich zählt
+
+Adobe Lightroom ist im Alltag vor allem ein System für Bildauswahl und Wiederholbarkeit. Die eigentliche Zeitersparnis entsteht nicht durch spektakuläre Einzeleffekte, sondern durch gute Importregeln, klare Bewertungen, konsistente Presets und einen verlässlichen Exportprozess.
+
+Wer Lightroom nur als Filter-App nutzt, verschenkt einen großen Teil des Nutzens. Stark wird es, wenn Rohdaten, Varianten, Kundenfreigaben und Ausgabeformate nachvollziehbar bleiben und auch nach Monaten wiedergefunden werden können.
+
 ## Hauptfunktionen
 
 - **Nicht-destruktive Bildbearbeitung:** Änderungen können jederzeit rückgängig gemacht oder angepasst werden, ohne das Originalbild zu verändern.  
@@ -48,6 +60,18 @@ Adobe Lightroom ist ideal für Hobbyfotografen, professionelle Fotografen, Grafi
 - Hohe Systemanforderungen für optimale Performance  
 - Einige Funktionen sind nur in der Desktop-Version verfügbar  
 - Internetverbindung für Cloud-Funktionen erforderlich
+
+## Workflow-Fit
+
+Lightroom sitzt sinnvoll zwischen Kamera, Archiv und Veröffentlichung. Ein sauberer Workflow definiert, wann Bilder ausgesondert werden, welche Bearbeitungsschritte global gelten und welche Dateien für Web, Druck oder Social Media exportiert werden. Für Teams ist zusätzlich wichtig, ob Kataloge lokal, cloudbasiert oder über geteilte Speicherorte geführt werden.
+
+## Datenschutz & Daten
+
+Fotos können Personen, Orte, Metadaten und Kundeninformationen enthalten. Vor allem bei Event-, Bewerbungs- oder Unternehmensfotografie sollten Zugriffsrechte, Cloud-Synchronisation, Löschfristen und Freigaben geklärt sein. Auch Presets und Kataloge sind Arbeitsvermögen und sollten nicht nur auf einem privaten Gerät liegen.
+
+## Redaktionelle Einschätzung
+
+Lightroom lohnt sich für alle, die regelmäßig mit Serien, Rohdaten und wiederkehrenden Looks arbeiten. Die Lernkurve ist moderat, aber ein ungeordneter Katalog rächt sich schnell. Wer nur einzelne Bilder stark manipulieren möchte, ist in Photoshop besser aufgehoben; für Fotoworkflows ist Lightroom meist die ruhigere Wahl.
 
 ## Preise & Kosten
 

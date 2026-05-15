@@ -22,6 +22,18 @@ Microsoft Azure Face API richtet sich an Entwickler, Unternehmen und Organisatio
 - Forschungs- und Analyseprojekte im Bereich Computer Vision und künstliche Intelligenz.
 - Nutzer, die eine Cloud-Lösung bevorzugen, die sich flexibel an den Verbrauch anpasst.
 
+## Typische Einsatzszenarien
+
+- **Gesichtserkennung bewerten:** Azure Face API ist relevant, wenn Anwendungen Gesichter erkennen, vergleichen oder analysieren sollen.
+- **Zugangs- und Prüfprozesse:** Der Dienst kann in Identitäts- oder Verifikationsszenarien auftauchen, die besonders sorgfältig geprüft werden müssen.
+- **Computer-Vision-Prototypen:** Entwickler können Funktionen testen, sollten aber früh rechtliche und ethische Grenzen einziehen.
+
+## Was im Alltag wirklich zählt
+
+Bei Azure Face API ist die technische Machbarkeit nur ein Teil der Entscheidung. Im Alltag zählt, ob der Anwendungsfall wirklich legitim, erklärbar und kontrollierbar ist. Gesichtsdaten sind sensibel; ein schneller Prototyp kann organisatorisch deutlich schwerer wiegen als andere KI-Tests.
+
+Teams sollten nicht mit der API starten, sondern mit Zweck, Einwilligung, Alternativen und Fehlerrisiken. Gerade bei Erkennung, Abgleich oder Zugangskontrolle müssen falsch positive und falsch negative Ergebnisse praktisch bewertet werden.
+
 ## Hauptfunktionen
 
 - **Gesichtserkennung:** Identifikation und Lokalisierung von Gesichtern in Bildern und Videos.
@@ -53,6 +65,18 @@ Microsoft Azure Face API richtet sich an Entwickler, Unternehmen und Organisatio
 - Datenschutzrechtliche Anforderungen müssen vom Nutzer beachtet werden.
 - Eingeschränkte Offline-Nutzung möglich.
 - Einarbeitungszeit für Entwickler, um API-Funktionen optimal zu nutzen.
+
+## Workflow-Fit
+
+Face API gehört nur in Workflows mit klarer Zweckbindung, menschlicher Kontrolle und dokumentierten Ausnahmefällen. Ergebnisse sollten nicht unbesehen automatisierte Entscheidungen auslösen. Für produktive Szenarien sind Review-Schritte, Logging, Modellgrenzen und ein Abschaltweg wichtig.
+
+## Datenschutz & Daten
+
+Gesichtsbilder und biometrische Merkmale zählen zu den sensibelsten Datenkategorien. Speicherung, Verarbeitung, Einwilligung, Datenregion, Löschung und Zugriff müssen vorab geklärt werden. In vielen Kontexten ist eine Datenschutz-Folgenabschätzung oder rechtliche Prüfung notwendig, bevor überhaupt ein Pilot sinnvoll ist.
+
+## Redaktionelle Einschätzung
+
+Azure Face API kann technisch nützlich sein, ist aber kein gewöhnlicher Cloud-Baustein. Der Einsatz sollte sehr streng begründet werden. Wenn ein Prozess auch ohne biometrische Erkennung funktioniert, ist die einfachere Lösung oft robuster und gesellschaftlich weniger riskant.
 
 ## Preise & Kosten
 

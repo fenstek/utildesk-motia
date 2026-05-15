@@ -26,6 +26,18 @@ Microsoft Azure Face API is aimed at developers, businesses, and organizations l
 - Research and analysis projects focusing on computer vision and artificial intelligence.
 - Users preferring a cloud solution that flexibly adapts to consumption.
 
+## Typical Use Cases
+
+- **Evaluating face recognition:** Azure Face API is relevant when applications need to detect, compare, or analyze faces.
+- **Access and verification processes:** The service may appear in identity or verification scenarios that require special care.
+- **Computer vision prototypes:** Developers can test capabilities, but legal and ethical limits should be set early.
+
+## What really matters in daily use
+
+With Azure Face API, technical feasibility is only part of the decision. In daily use, the key question is whether the use case is legitimate, explainable, and controllable. Face data is sensitive; a quick prototype can carry more organizational weight than many other AI tests.
+
+Teams should start with purpose, consent, alternatives, and error risks rather than with the API. Especially in recognition, matching, or access control, false positives and false negatives need practical evaluation.
+
 ## Key Features
 
 - **Face Detection:** Identifies and locates faces in images and videos.
@@ -57,6 +69,18 @@ Microsoft Azure Face API is aimed at developers, businesses, and organizations l
 - Users must consider data protection regulations.
 - Limited offline functionality.
 - Developers may need time to fully leverage API features.
+
+## Workflow Fit
+
+Face API belongs only in workflows with purpose limitation, human oversight, and documented exception handling. Results should not trigger automated decisions without review. Production scenarios need review steps, logging, model boundary documentation, and a way to disable the process.
+
+## Data Protection & Data
+
+Face images and biometric features are among the most sensitive data categories. Storage, processing, consent, region, deletion, and access must be clarified before use. In many contexts, a data protection impact assessment or legal review is necessary before even a pilot is sensible.
+
+## Editorial Assessment
+
+Azure Face API can be technically useful, but it is not an ordinary cloud component. Its use should be justified very strictly. If a process works without biometric recognition, the simpler approach is often more robust and less socially risky.
 
 ## Pricing & Costs
 

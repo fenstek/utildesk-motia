@@ -25,6 +25,18 @@ Swiftype primarily targets developers, agencies, and companies seeking to embed 
 - Teams wanting to implement search features with minimal effort while tailoring them to specific needs.
 - Organizations valuing easy management and reporting of search activity.
 
+## Typical Use Cases
+
+- **Improving site search:** Swiftype is useful when users need to find content faster on websites, help centers, or documentation portals.
+- **Controlling relevance:** Teams can tune weighting, synonyms, and result logic deliberately.
+- **Product and support pages:** The service fits situations where search directly affects conversion or support effort.
+
+## What really matters in daily use
+
+Swiftype is mainly a tool for search quality in daily use. Setup is only the beginning; good results come from maintained content, synonyms, exclusions, and regular review of search queries.
+
+Zero-result searches and frequent terms are especially valuable. They show which content is missing, named poorly, or buried too deep on the site.
+
 ## Key Features
 
 - **Customizable Search API:** Allows developers to shape search queries flexibly and weigh search results individually.
@@ -54,6 +66,18 @@ Swiftype primarily targets developers, agencies, and companies seeking to embed 
 - Complex search requirements may require learning the API in detail.
 - Some features are limited depending on the subscription plan.
 - No permanent free tier available; only trial periods offered.
+
+## Workflow Fit
+
+Swiftype fits content, support, and product workflows. Editorial, SEO, support, and development teams should define together which content is indexed and how search feedback leads to improvements. Larger sites should test new index rules in staging before they go live.
+
+## Data Protection & Data
+
+Search logs can contain user interests, internal terminology, and sometimes personal input. Teams should review which queries are stored, how long logs remain available, and who can access analytics. For internal portals, content permissions must also be preserved in search results.
+
+## Editorial Assessment
+
+Swiftype is worthwhile when search is treated as part of user guidance. The tool cannot fully repair poor information architecture, but it makes problems visible. Teams that review search data regularly can reduce support effort and improve content more precisely.
 
 ## Pricing & Costs
 

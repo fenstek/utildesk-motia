@@ -15,6 +15,18 @@ Google Drive for Business ist eine cloudbasierte Speicher- und Kollaborationspla
 
 Google Drive for Business richtet sich an kleine, mittlere und große Unternehmen, die eine zuverlässige und flexible Lösung für das Dokumentenmanagement und die Zusammenarbeit suchen. Besonders geeignet ist es für Teams, die viel Wert auf ortsunabhängiges Arbeiten, einfache Integration in bestehende Google Workspace Anwendungen und sichere Datenverwaltung legen. Auch Freiberufler und Selbstständige können von den Grundfunktionen profitieren.
 
+## Typische Einsatzszenarien
+
+- **Gemeinsame Dateiablage:** Google Drive for Business eignet sich für Teams, die Dokumente, Medien und Projektdateien zentral teilen.
+- **Kollaboration in Workspace:** Der Nutzen steigt, wenn Docs, Sheets, Slides und Drive als zusammenhängender Arbeitsraum genutzt werden.
+- **Externe Freigaben:** Drive ist stark, wenn Kunden oder Partner kontrolliert Zugriff auf ausgewählte Dateien erhalten sollen.
+
+## Was im Alltag wirklich zählt
+
+Google Drive for Business funktioniert im Alltag nur so gut wie die Ablagestruktur. Wenn Besitzrechte, geteilte Ablagen und Ordnerregeln unklar sind, entstehen Dubletten, verwaiste Dateien und riskante Freigaben.
+
+Der größte Gewinn entsteht, wenn Teams gemeinsame Ablagen konsequent nutzen und persönliche Drives nicht als Schattenarchiv einsetzen. Dazu gehören klare Regeln für Dateinamen, externe Links, Eigentümerschaft und Archivierung.
+
 ## Hauptfunktionen
 
 - **Cloud-Speicher:** Sicherer Zugriff auf Dateien von überall mit automatischer Synchronisation.
@@ -42,6 +54,18 @@ Google Drive for Business richtet sich an kleine, mittlere und große Unternehme
 - Abhängigkeit von einer stabilen Internetverbindung für optimale Nutzung.
 - Erweiterte Funktionen sind oft nur in kostenpflichtigen Plänen verfügbar.
 - Eingeschränkte Anpassungsmöglichkeiten im Vergleich zu spezialisierten Enterprise-Lösungen.
+
+## Workflow-Fit
+
+Drive passt als Dateischicht zwischen Kommunikation, Dokumentenerstellung und Freigabeprozessen. Für Projekte sollten Teams vorab festlegen, welche Dateien in Shared Drives gehören, welche nur intern bleiben und wie finale Versionen markiert werden. Bei Kundenarbeit sind Freigabelinks und Ablaufdaten besonders wichtig.
+
+## Datenschutz & Daten
+
+Drive kann nahezu alle Geschäftsdaten enthalten: Verträge, Kundendokumente, Entwürfe, Tabellen und personenbezogene Informationen. Zugriffskontrolle, externe Freigaben, Datenresidenz, Löschregeln und Audit-Logs sollten nicht erst nach dem Wachstum der Ordnerstruktur geprüft werden. Besonders kritisch sind persönliche Konten und weitervererbte Berechtigungen.
+
+## Redaktionelle Einschätzung
+
+Google Drive for Business ist sehr stark, wenn Teams bereits in Google Workspace arbeiten und ihre Dateiordnung ernst nehmen. Ohne Governance wird es schnell zur bequemen, aber undurchsichtigen Ablage. Der Unterschied zwischen guter und schlechter Nutzung liegt weniger im Tool als in Freigabe- und Besitzregeln.
 
 ## Preise & Kosten
 

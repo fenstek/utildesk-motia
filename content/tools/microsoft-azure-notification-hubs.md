@@ -21,6 +21,18 @@ Microsoft Azure Notification Hubs richtet sich an Entwickler und Unternehmen, di
 - Entwickler, die eine einfache Integration in bestehende Cloud-Architekturen und Azure-Dienste suchen.
 - Teams, die eine skalierbare und leistungsfähige Messaging-Lösung für Marketing, Benutzerengagement oder Systembenachrichtigungen benötigen.
 
+## Typische Einsatzszenarien
+
+- **Push-Benachrichtigungen skalieren:** Azure Notification Hubs passt zu Apps, die viele mobile Nutzer zuverlässig erreichen müssen.
+- **Mehrere Plattformen bedienen:** iOS, Android und andere Kanäle lassen sich über eine zentrale Schicht organisieren.
+- **Betriebsnachrichten und Kampagnen:** Der Dienst eignet sich für Alerts, Statusmeldungen und gezielte App-Kommunikation.
+
+## Was im Alltag wirklich zählt
+
+Azure Notification Hubs ist im Alltag dann wertvoll, wenn Push-Nachrichten nicht mehr als Nebenfunktion behandelt werden können. Zustellung, Zielgruppen, Opt-ins und Fehlerquoten müssen messbar sein, sonst werden Benachrichtigungen schnell laut, aber nicht hilfreich.
+
+Gute Teams testen nicht nur, ob eine Nachricht ankommt, sondern ob sie zum richtigen Zeitpunkt, in der richtigen Sprache und mit passender Priorität erscheint. Gerade mobile Nutzer reagieren empfindlich auf zu viele oder schlecht segmentierte Pushes.
+
 ## Hauptfunktionen
 
 - **Plattformübergreifende Unterstützung:** Versand von Push-Benachrichtigungen an iOS, Android, Windows und andere Plattformen.
@@ -49,6 +61,18 @@ Microsoft Azure Notification Hubs richtet sich an Entwickler und Unternehmen, di
 - Kosten können bei sehr hohem Nachrichtenvolumen steigen.
 - Abhängigkeit von Microsoft Azure Cloud, was für manche Nutzer Einschränkungen bedeuten kann.
 - Einige Funktionen erfordern tiefergehendes technisches Wissen zur optimalen Nutzung.
+
+## Workflow-Fit
+
+Notification Hubs gehört in einen Kommunikationsworkflow mit Ereignisquelle, Segmentierung, Versandlogik und Rückmeldung. Entwickler sollten Staging-Umgebungen, Testgeräte und Fallbacks einplanen. Marketing- oder Produktteams brauchen klare Regeln, wann technische Alerts und Kampagnennachrichten getrennt laufen.
+
+## Datenschutz & Daten
+
+Push-Systeme verarbeiten Geräte-Token, App-Installationen, Segmentinformationen und manchmal Nutzerpräferenzen. Diese Daten sollten nicht unnötig mit personenbezogenen Profilen verknüpft werden. Opt-in-Status, Abmeldung, Löschung und Zugriff auf Segmente müssen sauber geregelt sein.
+
+## Redaktionelle Einschätzung
+
+Azure Notification Hubs ist stark für technische Teams, die Push-Versand über Plattformgrenzen hinweg betreiben müssen. Der Dienst löst jedoch nicht die inhaltliche Frage, welche Nachricht wirklich sinnvoll ist. Ohne Segmentierung und Governance wird Skalierung schnell zur Belästigung.
 
 ## Preise & Kosten
 

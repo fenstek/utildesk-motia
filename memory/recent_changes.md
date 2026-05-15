@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-14_
+_Last updated: 2026-05-15_
+
+## 2026-05-15 - Final active tool-card text editorial pass
+
+- Manually expanded the remaining 30 active DE/EN tool cards missing from the text editorial registry, from `8x8` through `vivaldi`.
+- Added practical use cases, daily-use judgement, workflow-fit guidance, data/privacy notes, and editorial assessments in both German and English.
+- Updated `docs/04_operations/tool_card_editorial_registry.json` so the active paired tool-card manual text audit is closed again.
 
 ## 2026-05-14 - Tool illustration batch 19
 

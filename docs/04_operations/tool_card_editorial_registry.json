@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14",
+  "last_updated": "2026-05-15",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -1308,6 +1308,49 @@
         "microsoft-azure-hdinsight",
         "tara-ai",
         "teradata-vantage"
+      ]
+    },
+    {
+      "id": "2026-05-15-editorial-final-active-tool-card-gaps",
+      "date": "2026-05-15",
+      "count": 30,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "registry gap audit on active paired tool cards",
+      "notes": "Manually expanded the remaining 30 active DE/EN tool-card text-edit gaps with practical use cases, daily-use guidance, workflow-fit, data/privacy notes, and editorial assessment sections.",
+      "slugs": [
+        "8x8",
+        "adobe-fresco",
+        "adobe-lightroom",
+        "adobe-photoshop-cc",
+        "adobe-photoshop-elements",
+        "apple-numbers",
+        "brave",
+        "dahua-technology",
+        "evernote",
+        "genetec-clearance",
+        "google-chrome",
+        "google-drive-for-business",
+        "google-keep",
+        "libreoffice-calc",
+        "marketo",
+        "mcafee-endpoint-security",
+        "microsoft-azure-cognitive-search",
+        "microsoft-azure-data-factory",
+        "microsoft-azure-face-api",
+        "microsoft-azure-notification-hubs",
+        "microsoft-azure-service-bus",
+        "mozilla-firefox",
+        "nextcloud",
+        "onlyoffice-spreadsheet-editor",
+        "opera",
+        "sophos-intercept-x",
+        "swiftype",
+        "symantec-endpoint-protection",
+        "temi",
+        "vivaldi"
       ]
     }
   ]

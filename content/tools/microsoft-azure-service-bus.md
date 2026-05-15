@@ -16,6 +16,18 @@ Microsoft Azure Service Bus ist ein hochskalierbarer Messaging-Dienst in der Clo
 
 Microsoft Azure Service Bus richtet sich vor allem an Entwickler, DevOps-Teams und Unternehmen, die robuste Messaging-Lösungen für verteilte Systeme benötigen. Es eignet sich ideal für Szenarien, in denen Anwendungen oder Services lose gekoppelt miteinander kommunizieren müssen, z. B. bei Microservices-Architekturen, Event-Driven-Designs oder Integrationsprojekten zwischen Cloud- und On-Premises-Komponenten. Auch Teams, die Automatisierung und skalierbare Workflows auf Basis von Nachrichtenflüssen implementieren möchten, profitieren von den Funktionen des Service Bus.
 
+## Typische Einsatzszenarien
+
+- **Systeme entkoppeln:** Azure Service Bus eignet sich, wenn Anwendungen Nachrichten zuverlässig austauschen sollen, ohne direkt voneinander abhängig zu sein.
+- **Geschäftsprozesse absichern:** Queues und Topics helfen, Bestellungen, Events oder Aufgaben kontrolliert zu verarbeiten.
+- **Cloud-Integration:** Der Dienst passt zu Azure-Architekturen, in denen mehrere Services asynchron zusammenarbeiten.
+
+## Was im Alltag wirklich zählt
+
+Azure Service Bus ist im Alltag unsichtbar, solange alles funktioniert, und genau deshalb braucht er gute Betriebsregeln. Dead-Letter-Queues, Wiederholungen, Nachrichtenformate und Monitoring entscheiden darüber, ob Fehler beherrschbar bleiben.
+
+Wer Messaging nur als technische Verbindung betrachtet, übersieht oft die Geschäftslogik in den Nachrichten. Teams sollten wissen, welche Nachricht fachlich wichtig ist, wie lange sie gültig bleibt und was bei doppelter Zustellung passieren darf.
+
 ## Hauptfunktionen
 
 - **Warteschlangen (Queues):** Ermöglichen das asynchrone Senden und Empfangen von Nachrichten zwischen Produzenten und Konsumenten.
@@ -46,6 +58,18 @@ Microsoft Azure Service Bus richtet sich vor allem an Entwickler, DevOps-Teams u
 - Abhängigkeit von Azure-Infrastruktur und damit verbundenen Kosten
 - Nutzungsbasierte Preisstruktur kann bei hohem Datenvolumen teuer werden
 - Für sehr einfache Messaging-Anforderungen möglicherweise überdimensioniert
+
+## Workflow-Fit
+
+Service Bus passt in Workflows mit asynchronen Übergaben zwischen Anwendungen. Gute Architekturen definieren Producer, Consumer, Schemas, Retry-Strategien und manuelle Eingriffe. Besonders wichtig ist die Dokumentation der Topics und Queues, damit spätere Teams verstehen, welche Prozesse darüber laufen.
+
+## Datenschutz & Daten
+
+Nachrichten können Bestell-, Kunden-, Zahlungs- oder Betriebsdaten enthalten. Inhalte sollten minimiert, verschlüsselt und nur so lange gespeichert werden, wie es der Prozess braucht. Zugriffsschlüssel, Managed Identities, Netzwerkregeln und Protokolle gehören zur Sicherheitsprüfung.
+
+## Redaktionelle Einschätzung
+
+Azure Service Bus ist ein solides Fundament für verlässliche Integration, wenn Teams Messaging ernsthaft betreiben. Er wirkt schlicht, verhindert aber viele Kopplungsprobleme. Ohne saubere Schemas und Monitoring kann aus einer Queue allerdings schnell eine schwer lesbare Fehlerablage werden.
 
 ## Preise & Kosten
 
