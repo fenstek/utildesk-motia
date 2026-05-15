@@ -34,6 +34,10 @@ Im Alltag zählt bei Google TPU (Tensor Processing Unit) weniger, ob jede Randfu
 
 Praktisch ist Google TPU (Tensor Processing Unit) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-tpu-editorial.webp" alt="Illustration zu Google TPU: keramischer KI-Prozessor mit leuchtenden Tensor-Pfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spezialisierte Hardwarearchitektur:** Entwickelt zur effizienten Verarbeitung von Tensor-Operationen.

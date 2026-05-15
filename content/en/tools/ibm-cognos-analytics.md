@@ -32,6 +32,10 @@ In day-to-day work, IBM Cognos Analytics is less about having every edge feature
 
 IBM Cognos Analytics is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-cognos-analytics-editorial.webp" alt="Illustration for IBM Cognos Analytics: analytics model of glass blocks and decision lenses" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Data visualization:** Interactive dashboards and reports with drag-and-drop functionality.

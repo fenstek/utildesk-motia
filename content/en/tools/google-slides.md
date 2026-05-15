@@ -36,6 +36,10 @@ In day-to-day work, Google Slides is less about having every edge feature and mo
 
 Google Slides is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-slides-editorial.webp" alt="Illustration for Google Slides: paper stage with blank presentation cards and spotlights" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time collaboration:** Multiple users can work on a presentation at the same time and see changes live.

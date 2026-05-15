@@ -34,6 +34,10 @@ Im Alltag zählt bei Help Scout weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Help Scout vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/help-scout-editorial.webp" alt="Illustration zu Help Scout: Support-Schreibtisch mit Postfaechern, Headset und Kundenkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Gemeinsame Inbox zur zentralen Verwaltung von Kundenanfragen über verschiedene Kanäle

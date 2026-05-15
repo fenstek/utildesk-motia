@@ -25,6 +25,10 @@ IBM Db2 Warehouse is aimed at organizations of all sizes that need a robust and 
 - Companies with high data volumes that need real-time or near-real-time analytics.
 - Organizations pursuing hybrid cloud or multi-cloud strategies and wanting a platform-independent solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-db2-warehouse-editorial.webp" alt="Illustration for IBM Db2 Warehouse: data warehouse as a miniature hall with translucent storage crates" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Scalable data warehouse:** Dynamic adjustment of resources based on data volume and analysis requirements.

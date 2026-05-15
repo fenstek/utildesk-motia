@@ -29,6 +29,10 @@ Im Alltag zählt bei Grain weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Grain vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grain-editorial.webp" alt="Illustration zu Grain: Aufnahmetisch mit Meeting-Filmstreifen und Highlight-Karten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Transkription von Meetings:** Aufnahme und Umwandlung von Gesprächsinhalten in Text in Echtzeit.

@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Labs weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Google Labs vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-labs-editorial.webp" alt="Illustration zu Google Labs: Experimentiertisch mit Prototypen unter Glasglocken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Zugang zu experimentellen KI-Modellen und Anwendungen aus verschiedenen Bereichen

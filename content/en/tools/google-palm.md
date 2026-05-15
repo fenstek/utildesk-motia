@@ -40,6 +40,10 @@ In day-to-day work, Google PaLM is less about having every edge feature and more
 
 Google PaLM is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-palm-editorial.webp" alt="Illustration for Google PaLM: neural palm structure inside a botanical knowledge house" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural language processing:** Recognition, understanding, and generation of text in different languages and contexts

@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Cloud Dataproc weniger, ob jede Randfunktion vorhand
 
 Praktisch ist Google Cloud Dataproc vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-dataproc-editorial.webp" alt="Illustration zu Google Cloud Dataproc: Datenverarbeitungscluster als kristallene Berglandschaft" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Verwaltete Cluster:** Automatisches Erstellen, Verwalten und Skalieren von Hadoop- und Spark-Clustern in wenigen Minuten.

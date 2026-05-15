@@ -21,6 +21,10 @@ Google Cloud Dataproc ist ein verwalteter Cloud-Service zur schnellen und einfac
 
 Google Cloud Dataproc richtet sich an Dateningenieure, Data Scientists und Entwickler, die große Datenmengen effizient verarbeiten und analysieren möchten. Besonders geeignet ist der Service für Unternehmen und Teams, die bereits in der Google Cloud arbeiten oder Open-Source-Frameworks für Big Data nutzen. Dataproc eignet sich für Projekte, die flexible Skalierung, schnelle Cluster-Erstellung und Integration in andere Google Cloud-Dienste erfordern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-dataproc-editorial.webp" alt="Illustration for Google Cloud Dataproc: data processing cluster as a crystal mountain landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Verwaltete Cluster:** Automatisches Erstellen, Verwalten und Skalieren von Hadoop- und Spark-Clustern in wenigen Minuten.

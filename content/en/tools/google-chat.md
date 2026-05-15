@@ -32,6 +32,10 @@ In day-to-day work, Google Chat is less about having every edge feature and more
 
 Google Chat is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-chat-editorial.webp" alt="Illustration for Google Chat: sorted conversation cards on a team table" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Direct messages and group chats**: Communication in one-on-one or group chats with an easy-to-follow overview.

@@ -41,6 +41,10 @@ In day-to-day work, IBM Watson Natural Language Understanding is less about havi
 
 IBM Watson Natural Language Understanding is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-natural-language-understanding-editorial.webp" alt="Illustration for IBM Watson Natural Language Understanding: semantic map of document layers, beads and meaning threads" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Entity recognition:** Identification of people, organizations, places, events, and more in text  

@@ -29,6 +29,10 @@ Im Alltag zählt bei H2O.ai Driverless AI weniger, ob jede Randfunktion vorhande
 
 Praktisch ist H2O.ai Driverless AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/h2o-ai-driverless-ai-editorial.webp" alt="Illustration zu H2O.ai Driverless AI: AutoML-Teststrecke mit Modellfahrzeug und Datenkanaelen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisiertes Feature Engineering:** Automatische Generierung und Auswahl relevanter Merkmale aus Rohdaten.

@@ -37,6 +37,10 @@ Im Alltag zählt bei Google Cloud Translation API weniger, ob jede Randfunktion 
 
 Praktisch ist Google Cloud Translation API vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-translation-api-editorial.webp" alt="Illustration zu Google Cloud Translation API: Glasbruecke zwischen leeren Schriftrollen als Uebersetzungsfluss" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung:** Erkennt die Sprache des Eingabetextes ohne Vorangabe.

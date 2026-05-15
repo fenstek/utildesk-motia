@@ -40,6 +40,10 @@ In practice, the generated animation is only part of the story. A good launch vi
 
 Hera should therefore not be treated as an autopilot. The better use is as a creative accelerator: sketch ideas, generate variants, find a visual direction, then review and sharpen the result in a final design or editing process if needed. For launches, that can be valuable because teams are often under time pressure but still do not want to publish static screenshots only.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hera-editorial.webp" alt="Illustration for Hera: motion design studio with miniature stage and moving product cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - AI-assisted creation of motion-graphics and marketing videos.

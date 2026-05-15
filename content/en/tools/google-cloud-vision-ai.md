@@ -30,6 +30,10 @@ In day-to-day work, Google Cloud Vision AI is less about having every edge featu
 
 Google Cloud Vision AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-vision-ai-editorial.webp" alt="Illustration for Google Cloud Vision AI: optical workbench with prisms and sorted color crystals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Object detection:** Identification of thousands of objects and scenes in images.

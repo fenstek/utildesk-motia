@@ -29,6 +29,10 @@ Im Alltag zählt bei IBM Cognos Analytics weniger, ob jede Randfunktion vorhande
 
 Praktisch ist IBM Cognos Analytics vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-cognos-analytics-editorial.webp" alt="Illustration zu IBM Cognos Analytics: Analytikmodell aus Glasbloecken und Entscheidungslinsen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenvisualisierung:** Interaktive Dashboards und Berichte mit Drag-and-Drop-Funktionalität.

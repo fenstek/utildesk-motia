@@ -37,6 +37,10 @@ Im Alltag zählt bei Google Patents weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist Google Patents vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-patents-editorial.webp" alt="Illustration zu Google Patents: Patentarchiv mit Lupe, leeren Blaupausen und Erfindungsmodellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Umfassende Patentsuche**: Zugriff auf Millionen von Patenten und Patentanmeldungen weltweit.

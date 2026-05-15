@@ -29,6 +29,10 @@ Im Alltag zählt bei Grafana Cloud weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Grafana Cloud vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grafana-cloud-editorial.webp" alt="Illustration zu Grafana Cloud: Cloud-Observatorium mit Messglaesern und Systemwetter" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visualisierung von Metriken**: Erstellung individueller Dashboards mit vielfältigen Widgets zur Darstellung von Zeitreihendaten.

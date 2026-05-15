@@ -29,6 +29,10 @@ Im Alltag zählt bei Graphcore IPU weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Graphcore IPU vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/graphcore-ipu-editorial.webp" alt="Illustration zu Graphcore IPU: Prozessorgarten aus Rechenkacheln und Glasfaserverbindungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Spezialisierte Prozessorarchitektur zur effizienten Verarbeitung neuronaler Netzwerke  

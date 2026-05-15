@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Workspace weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist Google Workspace vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-workspace-editorial.webp" alt="Illustration zu Google Workspace: kollaborativer Arbeitstisch mit Dokumenten, Karten und Abstimmungsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Gmail:** Professionelle E-Mail mit eigener Domain und umfangreichen Funktionen zur Organisation.

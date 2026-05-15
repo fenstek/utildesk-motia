@@ -29,6 +29,10 @@ Im Alltag zählt bei Hootsuite weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Hootsuite vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hootsuite-editorial.webp" alt="Illustration zu Hootsuite: Social-Media-Planung als Papierkalender mit Content-Kacheln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Social-Media-Management:** Verwaltung mehrerer Profile auf Plattformen wie Facebook, Instagram, Twitter, LinkedIn und weiteren.

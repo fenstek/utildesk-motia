@@ -29,6 +29,10 @@ IBM Watson Speech to Text is designed for businesses and developers who want to 
 
 The solution is scalable and can be used for both small projects and large volumes of audio content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-speech-to-text-editorial.webp" alt="Illustration for IBM Watson Speech to Text: acoustic studio with sound ribbons and blank transcript tiles" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automatic speech recognition:** Converts audio into text with high accuracy  

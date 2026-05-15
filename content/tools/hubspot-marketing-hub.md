@@ -29,6 +29,10 @@ Im Alltag zählt bei HubSpot Marketing Hub weniger, ob jede Randfunktion vorhand
 
 Praktisch ist HubSpot Marketing Hub vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-marketing-hub-editorial.webp" alt="Illustration zu HubSpot Marketing Hub: Marketing-Gewaechshaus mit Lead-Trichtern und Kampagnenbahnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Marketing-Automatisierung:** Erstellung und Verwaltung automatisierter Workflows zur Lead-Nurturing und Kampagnensteuerung.

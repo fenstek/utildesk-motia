@@ -29,6 +29,10 @@ Im Alltag zählt bei H2O.ai weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist H2O.ai vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/h2o-ai-editorial.webp" alt="Illustration zu H2O.ai: ML-Terrarium mit Wasserschichten und Modellbaeumen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisiertes maschinelles Lernen (AutoML) zur schnellen Modellgenerierung  

@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Chat weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Google Chat vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-chat-editorial.webp" alt="Illustration zu Google Chat: sortierte Gespraechskarten auf einem Teamtisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Direktnachrichten und Gruppenchats**: Kommunikation in Einzel- oder Gruppenchats mit einfacher Übersicht.

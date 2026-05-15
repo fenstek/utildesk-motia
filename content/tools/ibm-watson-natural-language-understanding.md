@@ -36,6 +36,10 @@ Im Alltag zählt bei IBM Watson Natural Language Understanding weniger, ob jede 
 
 Praktisch ist IBM Watson Natural Language Understanding vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-natural-language-understanding-editorial.webp" alt="Illustration zu IBM Watson Natural Language Understanding: semantische Karte aus Dokumentlagen, Perlen und Bedeutungsfaeden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Entitätserkennung:** Identifikation von Personen, Organisationen, Orten, Ereignissen und mehr im Text  

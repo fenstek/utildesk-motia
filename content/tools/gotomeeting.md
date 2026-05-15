@@ -35,6 +35,10 @@ Im Alltag zählt bei GoToMeeting weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist GoToMeeting vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gotomeeting-editorial.webp" alt="Illustration zu GoToMeeting: hybrider Besprechungstisch mit Sprechergeraet und Notizkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **HD-Video- und Audiokonferenzen:** Ermöglicht klare und unterbrechungsfreie Video- und Tonübertragungen.
