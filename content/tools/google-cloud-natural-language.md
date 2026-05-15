@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Cloud Natural Language weniger, ob jede Randfunktion
 
 Praktisch ist Google Cloud Natural Language vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-natural-language-editorial.webp" alt="Illustration zu Google Cloud Natural Language: Sprachlabor mit semantischen Faeden und Analyseglaesern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Sentiment-Analyse:** Erkennt die Stimmung in Texten und bewertet sie als positiv, negativ oder neutral.

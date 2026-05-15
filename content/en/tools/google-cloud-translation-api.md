@@ -41,6 +41,10 @@ In day-to-day work, Google Cloud Translation API is less about having every edge
 
 Google Cloud Translation API is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-translation-api-editorial.webp" alt="Illustration for Google Cloud Translation API: glass bridge between blank scrolls as a translation flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Language Detection:** Automatically detects the language of the input text without prior specification.

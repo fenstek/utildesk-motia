@@ -39,6 +39,10 @@ In day-to-day work, Google TPU (Tensor Processing Unit) is less about having eve
 
 Google TPU (Tensor Processing Unit) is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-tpu-editorial.webp" alt="Illustration for Google TPU: ceramic AI processor with glowing tensor paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Specialized hardware architecture:** Designed for efficient processing of tensor operations.

@@ -33,6 +33,10 @@ In day-to-day work, H2O.ai is less about having every edge feature and more abou
 
 H2O.ai is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/h2o-ai-editorial.webp" alt="Illustration for H2O.ai: machine learning terrarium with water layers and model trees" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automated machine learning (AutoML) for rapid model generation  

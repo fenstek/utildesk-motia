@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Cloud Video Intelligence weniger, ob jede Randfunkti
 
 Praktisch ist Google Cloud Video Intelligence vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-video-intelligence-editorial.webp" alt="Illustration zu Google Cloud Video Intelligence: Filmarchiv mit schwebenden Szenenframes und Analyselicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Objekt- und Szenenerkennung:** Automatische Identifikation von Objekten, Personen, Logos und Umgebungen in Videos.

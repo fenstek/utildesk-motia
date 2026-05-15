@@ -42,6 +42,10 @@ In day-to-day work, Google Cloud Text-to-Speech is less about having every edge 
 
 Google Cloud Text-to-Speech is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-text-to-speech-editorial.webp" alt="Illustration for Google Cloud Text-to-Speech: mechanical speech machine turning paper strips into sound waves" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multi-language support:** Supports over 30 languages and variants with numerous voice options

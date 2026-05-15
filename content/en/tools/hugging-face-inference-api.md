@@ -32,6 +32,10 @@ In day-to-day work, Hugging Face Inference API is less about having every edge f
 
 Hugging Face Inference API is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-inference-api-editorial.webp" alt="Illustration for Hugging Face Inference API: API workbench with model capsules and request light streams" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Access to a wide range of pretrained AI models in NLP, computer vision, and more

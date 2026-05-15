@@ -25,6 +25,10 @@ Help Scout is primarily aimed at companies that want to provide personal yet sca
 - Companies that want to make their support processes more efficient through automations and AI
 - Organizations that value ease of use and integration with other tools
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/help-scout-editorial.webp" alt="Illustration for Help Scout: support desk with inbox trays, headset and customer cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Shared inbox for central management of customer inquiries across different channels

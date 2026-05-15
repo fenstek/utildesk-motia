@@ -39,6 +39,10 @@ Im Alltag zählt bei Google Cloud Text-to-Speech weniger, ob jede Randfunktion v
 
 Praktisch ist Google Cloud Text-to-Speech vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-text-to-speech-editorial.webp" alt="Illustration zu Google Cloud Text-to-Speech: mechanische Sprechmaschine verwandelt Papierstreifen in Klangwellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mehrsprachige Unterstützung:** Über 30 Sprachen und Varianten mit zahlreichen Stimmenoptionen

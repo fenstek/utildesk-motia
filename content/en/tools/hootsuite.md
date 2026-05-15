@@ -35,6 +35,10 @@ In day-to-day work, Hootsuite is less about having every edge feature and more a
 
 Hootsuite is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hootsuite-editorial.webp" alt="Illustration for Hootsuite: social media planning as a paper calendar with content tiles" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Social Media Management:** Manage multiple profiles on platforms such as Facebook, Instagram, Twitter, LinkedIn, and more.

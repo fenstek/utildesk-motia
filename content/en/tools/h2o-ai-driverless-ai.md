@@ -33,6 +33,10 @@ In day-to-day work, H2O.ai Driverless AI is less about having every edge feature
 
 H2O.ai Driverless AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/h2o-ai-driverless-ai-editorial.webp" alt="Illustration for H2O.ai Driverless AI: AutoML test track with model vehicle and data channels" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated feature engineering:** Automatic generation and selection of relevant features from raw data.

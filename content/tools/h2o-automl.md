@@ -17,6 +17,10 @@ H2O AutoML automatisiert zentrale Schritte beim Training tabellarischer Machine-
 
 H2O AutoML richtet sich an Data Scientists, Analystinnen und ML-Teams, die für strukturierte Daten schnell belastbare Modellkandidaten erzeugen und vergleichen möchten. Es ist nützlich für Prototypen, Benchmarking, Feature-Tests und wiederkehrende Vorhersageprobleme. Für Teams ohne Datenverständnis oder ohne Plan für Monitoring, Validierung und Verantwortung ist AutoML dagegen riskant: Es beschleunigt auch schlechte Annahmen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/h2o-automl-editorial.webp" alt="Illustration zu H2O AutoML: Modellwerkstatt mit Foerderband und Abstimmstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Auswahl und Kombination verschiedener Machine-Learning-Algorithmen (Ensemble Learning)

@@ -32,6 +32,10 @@ In day-to-day work, Google Cloud Video Intelligence is less about having every e
 
 Google Cloud Video Intelligence is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-video-intelligence-editorial.webp" alt="Illustration for Google Cloud Video Intelligence: film archive with floating scene frames and analysis light" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Object and scene recognition:** Automatic identification of objects, people, logos, and environments in videos.

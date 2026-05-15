@@ -21,6 +21,10 @@ Grafana Cloud is a managed observability platform for monitoring applications, i
 
 Grafana Cloud is useful for DevOps, SRE, platform engineering, and software teams that need visibility into systems in production. It fits teams that like Grafana dashboards but prefer a managed service for scaling, storage, and maintenance.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grafana-cloud-editorial.webp" alt="Illustration for Grafana Cloud: cloud observatory with measuring glass and system weather" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Managed Grafana dashboards.

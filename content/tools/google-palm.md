@@ -36,6 +36,10 @@ Im Alltag zählt bei Google PaLM weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Google PaLM vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-palm-editorial.webp" alt="Illustration zu Google PaLM: neuronale Palmstruktur in einem botanischen Wissenshaus" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung:** Erkennung, Verständnis und Generierung von Text in verschiedenen Sprachen und Kontexten

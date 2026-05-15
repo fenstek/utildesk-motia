@@ -33,6 +33,10 @@ Im Alltag zählt bei Google Slides weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Google Slides vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-slides-editorial.webp" alt="Illustration zu Google Slides: Papierbuehne mit leeren Praesentationskarten und Lichtkegeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Kollaboration:** Mehrere Nutzer können gleichzeitig an einer Präsentation arbeiten und Änderungen live sehen.

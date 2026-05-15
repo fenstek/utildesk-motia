@@ -34,6 +34,10 @@ In day-to-day work, Graphcore IPU is less about having every edge feature and mo
 
 Graphcore IPU is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/graphcore-ipu-editorial.webp" alt="Illustration for Graphcore IPU: processor garden of compute tiles and fiber connections" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Specialized processor architecture for efficient neural network processing  

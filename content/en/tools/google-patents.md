@@ -42,6 +42,10 @@ In day-to-day work, Google Patents is less about having every edge feature and m
 
 Google Patents is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-patents-editorial.webp" alt="Illustration for Google Patents: patent archive with magnifier, blank blueprints and invention models" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Comprehensive patent search**: Access to millions of patents and patent applications worldwide.

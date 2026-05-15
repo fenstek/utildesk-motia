@@ -34,6 +34,10 @@ Im Alltag zählt bei IBM Db2 Warehouse weniger, ob jede Randfunktion vorhanden i
 
 Praktisch ist IBM Db2 Warehouse vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-db2-warehouse-editorial.webp" alt="Illustration zu IBM Db2 Warehouse: Datenlager als Miniaturhalle mit transluzenten Speicherkisten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Skalierbares Data Warehouse:** Dynamische Anpassung der Ressourcen je nach Datenvolumen und Analysebedarf.

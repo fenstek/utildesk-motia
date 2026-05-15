@@ -21,6 +21,10 @@ H5P is an open-source framework for creating interactive learning content. It is
 
 H5P is useful for educators, instructional designers, universities, schools, training teams, and developers who need interactive educational content that can be embedded into learning platforms and websites.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/h5p-editorial.webp" alt="Illustration for H5P: interactive learning table with module cards, wheels and game pieces" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Many ready-made interactive content types.

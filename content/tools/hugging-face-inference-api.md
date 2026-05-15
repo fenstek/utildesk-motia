@@ -29,6 +29,10 @@ Im Alltag zählt bei Hugging Face Inference API weniger, ob jede Randfunktion vo
 
 Praktisch ist Hugging Face Inference API vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-inference-api-editorial.webp" alt="Illustration zu Hugging Face Inference API: API-Werkbank mit Modellkapseln und Anfrage-Lichtstroemen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Zugriff auf eine Vielzahl vortrainierter KI-Modelle aus den Bereichen NLP, Computer Vision und mehr

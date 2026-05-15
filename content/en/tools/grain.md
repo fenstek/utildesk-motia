@@ -20,6 +20,10 @@ Grain is an AI-powered tool that specializes in automating workflows and support
 
 Grain is aimed at professionals, managers, teams, and companies that hold meetings regularly and value structured documentation and follow-up. It is especially useful for project managers, sales representatives, HR professionals, and anyone who wants to capture conversation content quickly and accurately in order to derive actions or share knowledge. Grain also offers helpful features for remote teams that rely on digital communication to optimize their workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/grain-editorial.webp" alt="Illustration for Grain: recording desk with meeting filmstrip and highlight cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Automatic meeting transcription:** Record and convert conversation content into text in real time.

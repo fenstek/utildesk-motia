@@ -29,6 +29,10 @@ Im Alltag zählt bei Google Cloud Vision AI weniger, ob jede Randfunktion vorhan
 
 Praktisch ist Google Cloud Vision AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-vision-ai-editorial.webp" alt="Illustration zu Google Cloud Vision AI: optische Werkbank mit Prismen und sortierten Farbkristallen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Objekterkennung:** Identifikation von Tausenden von Objekten und Szenen in Bildern.

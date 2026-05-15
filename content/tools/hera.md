@@ -37,6 +37,10 @@ Im Alltag entscheidet nicht nur die generierte Animation, sondern die Kontrollie
 
 Hera sollte deshalb nicht als Autopilot betrachtet werden. Der bessere Einsatz ist ein kreativer Beschleuniger: Ideen skizzieren, Varianten erzeugen, visuelle Richtung finden, dann prüfen und gegebenenfalls in einem finalen Design- oder Schnittprozess nachschärfen. Gerade bei Launches kann das wertvoll sein, weil Teams oft unter Zeitdruck stehen und trotzdem nicht mit statischen Screenshots veröffentlichen wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hera-editorial.webp" alt="Illustration zu Hera: Motion-Design-Studio mit Miniaturbuehne und bewegten Produktkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-gestützte Erstellung von Motion-Graphics- und Marketingvideos.

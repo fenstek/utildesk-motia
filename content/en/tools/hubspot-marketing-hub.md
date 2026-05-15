@@ -20,6 +20,10 @@ HubSpot Marketing Hub is a comprehensive marketing platform that helps businesse
 
 HubSpot Marketing Hub is designed for small to large businesses that want to digitize and optimize their marketing activities. The platform is especially well suited for marketing teams that value close alignment between marketing and sales, as well as for companies that want to improve lead generation and customer retention through automated processes. Agencies and service providers also benefit from the wide range of functions for campaign management and analysis.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-marketing-hub-editorial.webp" alt="Illustration for HubSpot Marketing Hub: marketing greenhouse with lead funnels and campaign paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Marketing automation:** Create and manage automated workflows for lead nurturing and campaign management.

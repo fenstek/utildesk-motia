@@ -33,6 +33,10 @@ In day-to-day work, Google Labs is less about having every edge feature and more
 
 Google Labs is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-labs-editorial.webp" alt="Illustration for Google Labs: experiment table with prototypes under glass domes" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Access to experimental AI models and applications from various fields

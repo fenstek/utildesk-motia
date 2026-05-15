@@ -33,6 +33,10 @@ In day-to-day work, Google Cloud Natural Language is less about having every edg
 
 Google Cloud Natural Language is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-natural-language-editorial.webp" alt="Illustration for Google Cloud Natural Language: language lab with semantic threads and analysis jars" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Sentiment Analysis:** Identifies the sentiment in text and evaluates it as positive, negative, or neutral.

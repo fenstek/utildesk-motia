@@ -20,6 +20,10 @@ Google Workspace is a comprehensive suite of cloud-based tools and applications 
 
 Google Workspace is aimed at businesses of all sizes, from small startups to large enterprises, as well as educational institutions and nonprofit organizations. It is especially well suited for teams that want to work flexibly and from any location. It is also a fitting solution for freelancers and solo entrepreneurs who need a professional email address and efficient tools to organize their work.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-workspace-editorial.webp" alt="Illustration for Google Workspace: collaborative work table with documents, cards and coordination objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Gmail:** Professional email with a custom domain and extensive organization features.

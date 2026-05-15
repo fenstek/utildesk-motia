@@ -37,6 +37,10 @@ Im Alltag zählt bei IBM Watson Speech to Text weniger, ob jede Randfunktion vor
 
 Praktisch ist IBM Watson Speech to Text vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-watson-speech-to-text-editorial.webp" alt="Illustration zu IBM Watson Speech to Text: akustisches Studio mit Schallbaendern und leeren Transkriptkacheln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung:** Umwandlung von Audio in Text mit hoher Genauigkeit  
