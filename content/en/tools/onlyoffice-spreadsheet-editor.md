@@ -28,6 +28,18 @@ OnlyOffice Spreadsheet Editor is designed for various user groups:
 
 The tool is especially well-suited for users who prefer a combination of desktop and cloud functionality with a clear user interface.
 
+## Typical Use Cases
+
+- **Spreadsheets in an office stack:** OnlyOffice Spreadsheet Editor is useful for teams editing spreadsheets together in an office-like environment.
+- **Self-hosting and integration:** The editor fits when documents should run in Nextcloud, ownCloud, or custom portals.
+- **Excel-like collaboration:** Many workflows benefit from familiar controls and good format compatibility.
+
+## What really matters in daily use
+
+OnlyOffice Spreadsheet Editor is most relevant when collaboration and file compatibility need to meet. It feels familiar to many Excel users without requiring a Microsoft 365 dependency.
+
+The important step is to verify complex spreadsheets functionally, not just visually. Formulas, protected areas, macros, charts, and simultaneous editing should be tested with real files.
+
 ## Main Features
 
 - **Comprehensive spreadsheet editing:** Support for formulas, pivot tables, charts, and conditional formatting.
@@ -58,6 +70,18 @@ The tool is especially well-suited for users who prefer a combination of desktop
 - Occasional performance slowdowns with very large spreadsheets
 - Users working exclusively offline may find cloud features limiting
 - Support and documentation quality may vary depending on the plan
+
+## Workflow Fit
+
+The editor fits workflows where documents are stored centrally and edited collaboratively. It is especially useful as part of a larger platform with storage, permissions, and versioning. For critical finance or controlling models, approval and export rules should be defined.
+
+## Data Protection & Data
+
+Spreadsheets often contain personal, financial, or operational data. With OnlyOffice, privacy depends heavily on deployment choice: cloud, self-hosting, integration, and storage location should be reviewed. Access, version history, and external sharing should not be left to chance.
+
+## Editorial Assessment
+
+OnlyOffice Spreadsheet Editor is a good option when teams want office comfort with more control over the environment. It does not replace every specialized Excel scenario, but it covers many everyday tasks well. The decisive test is with the organization’s most complex real spreadsheets.
 
 ## Pricing & Costs
 

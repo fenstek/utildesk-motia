@@ -16,6 +16,18 @@ Microsoft Azure Data Factory ist ein Cloud-basierter Dienst zur Orchestrierung u
 
 Azure Data Factory richtet sich vor allem an Entwickler, Dateningenieure und IT-Teams, die umfangreiche Datenintegrationsprojekte umsetzen möchten. Es eignet sich für Unternehmen jeder Größe, die Daten aus unterschiedlichen Quellen konsolidieren und automatisiert verarbeiten wollen. Besonders nützlich ist das Tool für Organisationen, die bereits Azure-Dienste nutzen oder planen, ihre Datenverarbeitung in die Cloud zu verlagern. Auch Analysten und Data Scientists profitieren indirekt von den automatisierten und zuverlässigen Datenpipelines.
 
+## Typische Einsatzszenarien
+
+- **Datenpipelines bauen:** Azure Data Factory eignet sich für geplante Datenbewegungen zwischen Quellen, Speichern und Analyseplattformen.
+- **ETL und ELT orchestrieren:** Der Dienst hilft, Transformationen, Abhängigkeiten und Ausführungspläne nachvollziehbar zu steuern.
+- **Hybrid-Umgebungen verbinden:** On-Premises-Daten, Cloud-Dienste und Azure-Analytics können in einem Prozess zusammenlaufen.
+
+## Was im Alltag wirklich zählt
+
+Azure Data Factory ist im Alltag ein Orchestrierungswerkzeug, kein Ersatz für saubere Datenverantwortung. Pipelines laufen nur stabil, wenn Quellen, Schemas, Fehlerbehandlung und Monitoring aktiv gepflegt werden.
+
+Besonders wichtig sind Wiederanlauf, Teilfehler und Kostenkontrolle. Eine Pipeline, die in der Demo funktioniert, muss im Betrieb auch mit verspäteten Dateien, geänderten Spalten und temporären Ausfällen umgehen.
+
 ## Hauptfunktionen
 
 - Visuelle Erstellung und Verwaltung von Datenpipelines ohne umfangreiche Programmierung  
@@ -44,7 +56,19 @@ Azure Data Factory richtet sich vor allem an Entwickler, Dateningenieure und IT-
 - Für Einsteiger kann die Vielzahl an Funktionen und Konfigurationsmöglichkeiten zunächst komplex wirken  
 - Abhängigkeit von der Azure-Cloud kann für Unternehmen mit Multi-Cloud-Strategien einschränkend sein  
 - Bei sehr großen Datenmengen können Kosten schnell steigen, wenn Pipelines nicht optimiert sind  
-- Einige erweiterte Funktionen erfordern Kenntnisse in Azure und Datenverarbeitungstechnologien  
+- Einige erweiterte Funktionen erfordern Kenntnisse in Azure und Datenverarbeitungstechnologien
+
+## Workflow-Fit
+
+Data Factory passt in Datenworkflows, die planbar, wiederholbar und auditierbar sein müssen. Gute Setups trennen Entwicklung, Test und Produktion, versionieren Pipeline-Definitionen und melden Fehler in Systeme, die tatsächlich überwacht werden. Für komplexe Transformationen sollte klar sein, welcher Teil in Data Factory und welcher in Databricks, SQL oder anderen Diensten liegt.
+
+## Datenschutz & Daten
+
+Datenpipelines bewegen häufig personenbezogene, finanzielle oder operative Informationen. Zugriff auf Quellen und Ziele, Secrets, Netzwerkpfade, Protokolle und Datenregionen müssen sauber geregelt sein. Auch temporäre Staging-Bereiche dürfen nicht übersehen werden, weil dort oft Kopien sensibler Daten entstehen.
+
+## Redaktionelle Einschätzung
+
+Azure Data Factory ist stark, wenn Datenintegration als Betriebsaufgabe verstanden wird. Es bringt Transparenz in wiederkehrende Datenbewegungen, verlangt aber saubere Architektur. Wer nur schnell Daten kopieren möchte, kann starten; wer produktiv arbeiten will, braucht Monitoring, Tests und klare Ownership.
 
 ## Preise & Kosten
 

@@ -16,6 +16,18 @@ Mozilla Firefox ist ein kostenloser Webbrowser, der für seine Geschwindigkeit, 
 
 Mozilla Firefox richtet sich an Nutzer, die Wert auf Datenschutz und Sicherheit legen, ohne dabei auf eine schnelle und benutzerfreundliche Browser-Erfahrung verzichten zu wollen. Er ist ideal für Privatpersonen, die regelmäßig im Internet unterwegs sind, sowie für Entwickler, die umfangreiche Web-Entwickler-Tools benötigen. Ebenso eignet sich Firefox für alle, die eine Alternative zu den marktbeherrschenden Browsern suchen und dabei auf Open-Source-Lösungen setzen möchten.
 
+## Typische Einsatzszenarien
+
+- **Alltagsbrowser mit Datenschutzfokus:** Firefox eignet sich für Nutzer, die eine unabhängige Browser-Engine und starke Privatsphäre-Einstellungen schätzen.
+- **Webentwicklung und Tests:** Entwickler nutzen Firefox, um Websites nicht nur in Chromium-Umgebungen zu prüfen.
+- **Organisationen mit Richtlinienbedarf:** Unternehmen können Firefox verwalten, wenn Erweiterungen, Updates und Profile zentral geregelt werden sollen.
+
+## Was im Alltag wirklich zählt
+
+Mozilla Firefox ist im Alltag besonders wertvoll, wenn Browserwahl nicht nur Gewohnheit sein soll. Die unabhängige Engine, gute Entwicklerwerkzeuge und klare Datenschutzoptionen machen ihn zu mehr als einer Ausweichlösung.
+
+Wichtig ist trotzdem Kompatibilität: Manche Unternehmens- oder Spezialanwendungen werden zuerst für Chromium getestet. Teams sollten kritische Web-Apps prüfen und danach entscheiden, ob Firefox Standardbrowser, Zweitbrowser oder Testbrowser wird.
+
 ## Hauptfunktionen
 
 - **Starker Datenschutz:** Eingebaute Tracking-Schutz-Funktionen blockieren automatisch viele Tracker und unerwünschte Inhalte.
@@ -43,6 +55,18 @@ Mozilla Firefox richtet sich an Nutzer, die Wert auf Datenschutz und Sicherheit 
 - Kann im Vergleich zu anderen Browsern manchmal mehr Systemressourcen nutzen
 - Einige Webseiten sind auf andere Browser optimiert und könnten vereinzelt Darstellungsunterschiede zeigen
 - Erweiterungen können die Performance beeinflussen, wenn zu viele installiert sind
+
+## Workflow-Fit
+
+Firefox passt in persönliche Produktivitäts-, Recherche- und Entwicklungsworkflows. Für Webteams ist er wichtig, weil Fehler sichtbar werden, die in Chrome nicht auffallen. Im Unternehmensumfeld sollten Profile, Erweiterungen, Zertifikate und Updatefenster zentral geplant werden.
+
+## Datenschutz & Daten
+
+Firefox verarbeitet Verlauf, Cookies, Logins, Erweiterungen und Synchronisationsdaten. Nutzer sollten Sync, Telemetrie, Passwortspeicherung und Add-ons bewusst konfigurieren. Für Teams ist entscheidend, ob private und geschäftliche Profile getrennt bleiben und welche Erweiterungen erlaubt sind.
+
+## Redaktionelle Einschätzung
+
+Firefox ist eine starke Wahl für Nutzer, die Datenschutz, Offenheit und Webvielfalt ernst nehmen. Er ist nicht in jedem Unternehmensstack der bequemste Browser, aber als Standard oder ergänzender Testbrowser sehr sinnvoll. Die Entscheidung sollte auf Kompatibilität und Verwaltungsbedarf beruhen, nicht auf Markenroutine.
 
 ## Preise & Kosten
 

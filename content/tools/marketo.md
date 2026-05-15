@@ -16,6 +16,18 @@ Marketo ist eine umfassende Marketing-Automatisierungsplattform, die Unternehmen
 
 Marketo richtet sich vor allem an mittelständische und große Unternehmen, die komplexe Marketingprozesse automatisieren möchten. Besonders geeignet ist es für Marketing- und Vertriebsteams, die Wert auf eine enge Verknüpfung von Lead-Generierung und Kundenmanagement legen. Auch Agenturen, die mehrere Kundenkampagnen verwalten, profitieren von den umfangreichen Anpassungs- und Reporting-Möglichkeiten. Kleine Unternehmen mit einfachen Anforderungen könnten die Plattform als zu umfangreich oder kostenintensiv empfinden.
 
+## Typische Einsatzszenarien
+
+- **B2B-Marketing-Automation:** Marketo passt zu Teams, die Leads über Kampagnen, Scoring und Nurturing entwickeln.
+- **Vertrieb und Marketing verbinden:** Die Plattform wird wertvoll, wenn Übergaben an CRM und Sales-Prozesse klar geregelt sind.
+- **Komplexe Kampagnen:** Mehrstufige Programme, Segmentierungen und Attribution sind typische Einsatzfelder.
+
+## Was im Alltag wirklich zählt
+
+Marketo ist im Alltag kein einfaches Newsletter-Tool, sondern eine Betriebsplattform für Marketingprozesse. Der Nutzen hängt davon ab, ob Datenmodell, Kampagnenlogik, Lead-Scoring und Übergaben sauber gepflegt werden.
+
+Viele Marketo-Probleme entstehen nicht im Editor, sondern in unklaren Zielgruppen, Dubletten, alten Listen und schlecht abgestimmten Sales-Regeln. Vor neuen Kampagnen lohnt deshalb ein Blick auf Datenqualität und Verantwortlichkeiten.
+
 ## Hauptfunktionen
 
 - **Marketing-Automatisierung:** Automatisierung von E-Mail-Kampagnen, Follow-ups und Lead-Nurturing-Prozessen.
@@ -44,6 +56,18 @@ Marketo richtet sich vor allem an mittelständische und große Unternehmen, die 
 - Höhere Kosten, die je nach gewähltem Plan und Unternehmensgröße variieren.
 - Einrichtung und Schulung erfordern oft Zeit und Ressourcen.
 - Für kleine Unternehmen oder einfache Marketingbedürfnisse möglicherweise überdimensioniert.
+
+## Workflow-Fit
+
+Marketo passt in Workflows, in denen Marketing nicht nur sendet, sondern Interessenten entlang eines definierten Funnels begleitet. CRM-Integration, Kampagnenkalender, Consent-Status und Reporting sollten als gemeinsame Struktur betrachtet werden. Ohne Abstimmung mit Sales verliert Lead-Scoring schnell an Glaubwürdigkeit.
+
+## Datenschutz & Daten
+
+Marketo verarbeitet Kontaktdaten, Interessen, Kampagnenreaktionen, Consent-Informationen und Scoring-Daten. Datenschutz, Opt-ins, Löschprozesse, Datenquellen und Synchronisation mit dem CRM müssen sehr sauber geregelt sein. Besonders kritisch sind importierte Listen und historisch gewachsene Felder.
+
+## Redaktionelle Einschätzung
+
+Marketo lohnt sich für reife Marketingorganisationen mit komplexen B2B-Prozessen. Es ist mächtig, aber nicht leichtgewichtig. Wer nur gelegentlich E-Mails verschickt, wird vom Aufwand eher gebremst; wer Kampagnen, Daten und Sales-Übergaben ernsthaft steuern will, bekommt ein starkes System.
 
 ## Preise & Kosten
 
