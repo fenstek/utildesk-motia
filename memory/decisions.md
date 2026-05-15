@@ -138,3 +138,8 @@
 - Ratgeber final imagery must be real compressed WebP artwork, not SVG/technical placeholders. If the user rejects a plot/style as repetitive, replace the visual concept and filenames instead of recoloring the same composition.
 - Named artist references for Ratgeber visuals are allowed only as loose mood/art-direction references. Do not reproduce known compositions, signatures, or direct copies; generate legally distinct story scenes tied to the article topic.
 - For live replacements, use new cache-busting filenames such as `-chagall.webp`, update both DE/EN frontmatter and inline image references, then verify the live HTML no longer points at the old assets.
+
+## 2026-05-15
+
+- Umami Session Replay stays disabled by default. Even though Umami v3.1.0 adds replay support, enabling it requires a separate privacy/GDPR decision and review of masking settings.
+- Pin the production Umami container to an explicit version tag after upgrades (`docker.umami.is/umami-software/umami:3.1.0` as of 2026-05-15) instead of relying on floating `latest`/`postgresql-latest` tags.
