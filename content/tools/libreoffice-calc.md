@@ -1,0 +1,85 @@
+---
+slug: "libreoffice-calc"
+title: "LibreOffice Calc"
+category: "Produktivität"
+price_model: "Open Source"
+tags: [spreadsheet,office,open-source,productivity]
+official_url: "https://www.libreoffice.org/#screenshots"
+---
+
+# LibreOffice Calc
+
+LibreOffice Calc ist ein leistungsstarkes, kostenloses Tabellenkalkulationsprogramm aus der Open-Source-Suite LibreOffice. Es bietet umfangreiche Funktionen zur Datenanalyse, Tabellenverwaltung und Visualisierung, die sowohl für private Anwender als auch für professionelle Nutzer geeignet sind. Als Alternative zu kommerziellen Office-Programmen ist Calc besonders attraktiv durch seine Offenheit und Anpassbarkeit.
+
+## Für wen ist LibreOffice Calc geeignet?
+
+LibreOffice Calc richtet sich an alle, die eine kostengünstige und dennoch vielseitige Tabellenkalkulationssoftware suchen. Es eignet sich für Studenten, Lehrer, Selbstständige, kleine und mittlere Unternehmen sowie für alle, die regelmäßig mit Tabellen, Datenbanken oder Diagrammen arbeiten. Dank der Unterstützung vieler Dateiformate ist es ideal für Nutzer, die plattformübergreifend oder in heterogenen Umgebungen arbeiten. Auch Anwender, die Wert auf Datenschutz und Open-Source-Software legen, finden in Calc eine passende Lösung.
+
+## Hauptfunktionen
+
+- Erstellung und Bearbeitung von Tabellen mit umfangreichen Formelfunktionen
+- Unterstützung von Pivot-Tabellen zur dynamischen Datenanalyse
+- Umfangreiche Diagramm- und Grafikfunktionen zur Visualisierung von Daten
+- Kompatibilität mit Microsoft Excel-Dateiformaten (.xls, .xlsx) und anderen gängigen Formaten
+- Automatisierung durch Makros und Skripte (unterstützt verschiedene Programmiersprachen)
+- Datenvalidierung und bedingte Formatierung zur besseren Übersicht
+- Import und Export von CSV, HTML, PDF und weiteren Formaten
+- Mehrbenutzerfähigkeit mit Änderungsverfolgung und Kommentaren
+- Erweiterbarkeit durch Plugins und Erweiterungen aus der LibreOffice-Community
+- Offline nutzbar ohne Internetverbindung
+
+## Vorteile und Nachteile
+
+### Vorteile
+
+- Kostenlos und Open Source ohne versteckte Kosten
+- Hohe Kompatibilität mit anderen Office-Formaten
+- Keine Abhängigkeit von Cloud-Diensten oder proprietärer Software
+- Umfangreiche Funktionen, die professionellen Ansprüchen genügen
+- Regelmäßige Updates und eine aktive Entwickler-Community
+- Plattformübergreifend verfügbar (Windows, macOS, Linux)
+
+### Nachteile
+
+- Benutzeroberfläche wirkt im Vergleich zu kommerziellen Lösungen etwas altmodisch
+- Eingeschränkte Cloud-Integration im Vergleich zu webbasierten Tools
+- Gelegentlich können komplexe Excel-Makros nicht vollständig kompatibel sein
+- Support erfolgt überwiegend über Community-Foren, kein professioneller Kundendienst
+
+## Preise & Kosten
+
+LibreOffice Calc ist komplett Open Source und somit kostenlos nutzbar. Es fallen keine Lizenzgebühren oder Abonnements an. Die Software kann frei heruntergeladen, installiert und genutzt werden. Für Unternehmen oder Nutzer, die professionellen Support wünschen, bieten einige Dienstleister kostenpflichtige Support- und Schulungsleistungen an, die jedoch optional sind.
+
+## Alternativen zu LibreOffice Calc
+
+- **Microsoft Excel** – Marktführende Tabellenkalkulation mit umfangreichen Funktionen, kostenpflichtig im Rahmen von Microsoft 365
+- **Google Sheets** – Webbasierte Tabellenkalkulation mit einfacher Zusammenarbeit, kostenfrei mit Google-Konto, aber cloudbasiert
+- **OnlyOffice Spreadsheet Editor** – Open-Source-Alternative mit Fokus auf Zusammenarbeit und Kompatibilität
+- **WPS Spreadsheets** – Teil der WPS Office Suite, bietet viele Excel-ähnliche Funktionen, mit Freemium-Modell
+- **Zoho Sheet** – Cloudbasierte Tabellenkalkulation mit Collaboration-Features, Freemium-Modell
+
+## FAQ
+
+**1. Ist LibreOffice Calc mit Microsoft Excel-Dateien kompatibel?**  
+Ja, LibreOffice Calc kann Excel-Dateien (.xls und .xlsx) öffnen, bearbeiten und speichern. Die Kompatibilität ist in den meisten Fällen sehr gut, allerdings können bei komplexen Makros oder speziellen Excel-Funktionen Einschränkungen auftreten.
+
+**2. Benötige ich eine Internetverbindung, um LibreOffice Calc zu nutzen?**  
+Nein, LibreOffice Calc ist eine Desktop-Anwendung und funktioniert vollständig offline. Eine Internetverbindung ist nur für Updates oder die Installation von Erweiterungen erforderlich.
+
+**3. Kann ich mit LibreOffice Calc Makros verwenden?**  
+Ja, Calc unterstützt Makros, die in verschiedenen Programmiersprachen wie LibreOffice Basic geschrieben werden können. Die Makro-Umgebung ist flexibel, aber die Kompatibilität mit Excel-Makros ist nicht immer gewährleistet.
+
+**4. Auf welchen Betriebssystemen läuft LibreOffice Calc?**  
+LibreOffice Calc ist plattformübergreifend verfügbar und läuft unter Windows, macOS und Linux.
+
+**5. Gibt es professionelle Support-Angebote für LibreOffice Calc?**  
+LibreOffice selbst wird hauptsächlich von der Community unterstützt. Es gibt jedoch verschiedene Dienstleister, die kostenpflichtigen Support, Schulungen und Beratung anbieten.
+
+**6. Wie sicher ist LibreOffice Calc im Umgang mit sensiblen Daten?**  
+Da Calc lokal auf dem Rechner läuft und keine Cloud-Anbindung erfordert, behalten Nutzer die volle Kontrolle über ihre Daten. Die Open-Source-Natur ermöglicht zudem Transparenz und Prüfung des Quellcodes.
+
+**7. Kann ich LibreOffice Calc auch für die Zusammenarbeit mit anderen nutzen?**  
+Calc unterstützt Funktionen wie Kommentare und Änderungsverfolgung. Für Echtzeit-Zusammenarbeit sind jedoch webbasierte Lösungen wie Google Sheets besser geeignet.
+
+**8. Wie oft wird LibreOffice Calc aktualisiert?**  
+LibreOffice veröffentlicht regelmäßig Updates und neue Versionen, die Fehler beheben und neue Funktionen hinzufügen. Die genaue Häufigkeit variiert je nach Entwicklungsschwerpunkt.
