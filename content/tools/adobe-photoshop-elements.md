@@ -28,6 +28,10 @@ Photoshop Elements ist im Alltag weniger ein abgespecktes Photoshop als ein bewu
 
 Der Nutzen hängt stark davon ab, ob die Aufgaben regelmäßig genug sind. Für einzelne schnelle Korrekturen reichen oft Smartphone-Apps; für wiederkehrende Fotoprojekte ist Elements angenehmer, weil Bearbeitung, Organisation und Ausgabe in einem ruhigen Umfeld liegen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-photoshop-elements-editorial.webp" alt="Illustration zu Adobe Photoshop Elements: Alltagsfotos werden sortiert, zugeschnitten und behutsam korrigiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Fotoorganisation:** Intelligente Sortierung und Suche nach Fotos basierend auf Personen, Orten und Ereignissen.

@@ -32,6 +32,10 @@ With Dahua Technology, daily value is determined not only by camera images but b
 
 Before deployment, teams should test real scenarios: night images, backlight, network stability, storage needs, and security staff access. That shows whether the system supports the site or merely adds more technology to manage.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dahua-technology-editorial.webp" alt="Illustration for Dahua Technology: camera lenses, network paths, and archive modules form a security workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - High-resolution IP and analog cameras with various lens types  

@@ -33,6 +33,10 @@ In day-to-day work, Meta AI is less about having every edge feature and more abo
 
 Meta AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meta-ai-editorial.webp" alt="Illustration for Meta AI: prompt cards, media objects, and checks move through an assistant workspace" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Understands and processes human language in text form accurately and in context.

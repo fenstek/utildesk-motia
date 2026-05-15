@@ -29,6 +29,10 @@ Im Alltag zählt bei JSFiddle weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist JSFiddle vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jsfiddle-editorial.webp" alt="Illustration zu JSFiddle: Frontend-Bausteine werden in getrennten Testbereichen zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Online-Code-Editor:** Bearbeitung von HTML, CSS und JavaScript mit Syntax-Highlighting und Autovervollständigung.

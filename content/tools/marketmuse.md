@@ -29,6 +29,10 @@ Im Alltag zählt bei MarketMuse weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist MarketMuse vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/marketmuse-editorial.webp" alt="Illustration zu MarketMuse: Themencluster, Recherchefaeden und Briefingkarten ordnen Content-Strategie" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Content-Analyse:** Automatisierte Bewertung von Texten hinsichtlich Themenabdeckung, Relevanz und SEO-Potenzial.

@@ -26,6 +26,10 @@ Intel Habana Labs Gaudi is especially suitable for companies and research instit
 - Users looking for an alternative to GPU-based accelerators.
 - AI service providers that run highly parallel workloads.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intel-habana-labs-gaudi-editorial.webp" alt="Illustration for Intel Habana Labs Gaudi: training data flows through accelerator hardware and model layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Specialized hardware architecture for efficient training of deep learning models.

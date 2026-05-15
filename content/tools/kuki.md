@@ -38,6 +38,10 @@ Im Alltag zählt bei Kuki weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Kuki vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kuki-editorial.webp" alt="Illustration zu Kuki: leere Sprechblasen und Antwortpfade bilden eine Dialogwerkstatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung:** Kuki versteht und verarbeitet Eingaben in natürlicher Sprache, um flüssige und kontextbezogene Antworten zu liefern.

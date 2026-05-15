@@ -36,6 +36,10 @@ Im Alltag zählt bei Lookout weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Lookout vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lookout-editorial.webp" alt="Illustration zu Lookout: mobile Geraete werden durch Schutzschichten und Sicherheitspruefungen abgesichert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mobile Threat Defense (MTD):** Automatisierte Erkennung und Abwehr von Malware, Phishing und Netzwerkangriffen auf mobilen Geräten

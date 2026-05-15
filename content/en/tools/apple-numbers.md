@@ -38,6 +38,10 @@ Apple Numbers is pleasant in everyday work when spreadsheets should not feel lik
 
 Productive use requires a distinction between attractive layout and reliable data structure. The freedom is useful for small plans, but recurring reports still need clear table areas, naming rules, and export conventions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apple-numbers-editorial.webp" alt="Illustration for Apple Numbers: table cells grow into charts and planning objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Intuitive user interface with drag-and-drop functionality.

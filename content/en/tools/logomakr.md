@@ -29,6 +29,10 @@ LogoMakr is ideal for:
 
 The tool is less suitable for professional designers who want to create highly customized and complex logos.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/logomakr-editorial.webp" alt="Illustration for LogoMakr: shapes, color swatches, and grids combine into neutral brand drafts" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Intuitive drag-and-drop interface:** Easy to use without prior knowledge.

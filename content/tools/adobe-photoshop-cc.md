@@ -28,6 +28,10 @@ Adobe Photoshop ist im Alltag extrem mächtig, aber nur dann effizient, wenn Ebe
 
 Für professionelle Arbeit lohnt es sich, mit Vorlagen, Namensregeln und klaren Abnahmeversionen zu arbeiten. So bleibt Photoshop ein Produktionswerkzeug und wird nicht zum Ort, an dem Entscheidungen und Korrekturen unauffindbar verschwinden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-photoshop-cc-editorial.webp" alt="Illustration zu Adobe Photoshop: Bildschichten, Masken und Retuschematerial formen eine Komposition" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Bildbearbeitung:** Umfangreiche Werkzeuge für Retusche, Farbkorrektur, Freistellung und Reparatur von Fotos.

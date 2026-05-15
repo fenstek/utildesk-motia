@@ -41,6 +41,10 @@ In day-to-day work, Kling AI is less about having every edge feature and more ab
 
 Kling AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kling-ai-editorial.webp" alt="Illustration for Kling AI: storyboards, light cones, and scene strips shape a generated video sequence" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic video creation:** Based on text, images, or existing clips, Kling AI generates a finished video in a short time.

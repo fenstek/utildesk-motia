@@ -33,6 +33,10 @@ In day-to-day work, Looka is less about having every edge feature and more about
 
 Looka is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/looka-editorial.webp" alt="Illustration for Looka: color palettes, mockups, and abstract marks form a brand kit" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based logo generation:** Automatic creation of logo designs based on user input such as industry, style, and colors.

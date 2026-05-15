@@ -21,6 +21,10 @@ Lectora is a powerful e-learning authoring software specifically designed for cr
 
 Lectora is aimed primarily at instructional designers, e-learning developers, trainers, as well as educational institutions and companies that want to create their own online training. The platform is suitable for both small teams and larger organizations that want to enrich complex learning content with interactive elements, tests, and multimedia components. Educational institutions that want to provide digital teaching materials for pupils and students also benefit from the many design and customization options.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lectora-editorial.webp" alt="Illustration for Lectora: slides, interactions, and checkpoints are built into learning modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Drag-and-drop editor for easily creating course content without programming knowledge  

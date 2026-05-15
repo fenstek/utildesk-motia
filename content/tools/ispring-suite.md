@@ -29,6 +29,10 @@ Im Alltag zählt bei iSpring Suite weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist iSpring Suite vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ispring-suite-editorial.webp" alt="Illustration zu iSpring Suite: Lernmodule, Quizstationen und Folienkarten bilden einen Kursablauf" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **PowerPoint-Integration:** Direkte Umwandlung von PowerPoint-Präsentationen in SCORM- oder HTML5-kompatible E-Learning-Kurse.

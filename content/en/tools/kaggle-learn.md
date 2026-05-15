@@ -25,6 +25,10 @@ Kaggle Learn is aimed at people who want to build practical data skills without 
 - Practitioners who want to apply their knowledge using real datasets and projects
 - People looking for a flexible, free learning option
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kaggle-learn-editorial.webp" alt="Illustration for Kaggle Learn: practice stations lead from sample data to model insights" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Interactive learning modules:** Short, practical tutorials with immediate feedback

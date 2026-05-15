@@ -29,6 +29,10 @@ Im Alltag zählt bei Lovo AI weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Lovo AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lovo-ai-editorial.webp" alt="Illustration zu Lovo AI: Mikrofone, Klangbaender und Skriptkarten werden zu synthetischen Stimmen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Realistische Sprachsynthese:** Erzeugung natürlicher Stimmen mit verschiedenen Akzenten und Stilen.

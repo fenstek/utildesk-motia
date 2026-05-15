@@ -17,6 +17,10 @@ MediBang Paint ist ein leicht zugängliches Zeichen- und Comic-Tool mit starkem 
 
 MediBang Paint richtet sich an Hobbyzeichner, Manga-Künstlerinnen, Illustratoren, Studierende und Content Creator, die schnell mit digitalen Zeichnungen, Comic-Panels oder Social-Artworks starten wollen. Es ist besonders attraktiv, wenn mehrere Geräte genutzt werden oder Skizzen unterwegs weiterbearbeitet werden sollen. Für professionelle Druckproduktion, komplexes Farbmanagement oder große Agentur-Workflows ist es dagegen eher Ergänzung als Hauptsystem.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/medibang-paint-editorial.webp" alt="Illustration zu MediBang Paint: Comic-Panels entstehen aus Skizze, Tinte, Rasterfolie und Farbe" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Umfangreiche Pinselbibliothek mit verschiedenen Stilen und anpassbaren Einstellungen

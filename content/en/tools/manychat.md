@@ -32,6 +32,10 @@ In day-to-day work, ManyChat is less about having every edge feature and more ab
 
 ManyChat is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/manychat-editorial.webp" alt="Illustration for ManyChat: dialogue paths branch customer questions into replies and handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Visual chatbot builder:** Intuitive drag-and-drop interface for creating chat dialogs without programming knowledge.

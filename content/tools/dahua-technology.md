@@ -28,6 +28,10 @@ Bei Dahua Technology entscheidet der Alltag nicht nur über Kamerabilder, sonder
 
 Vor einem Einsatz sollten Verantwortliche reale Szenarien prüfen: Nachtbilder, Gegenlicht, Netzwerkstabilität, Speicherbedarf und Zugriff durch Sicherheitskräfte. So wird sichtbar, ob das System den Standort unterstützt oder nur zusätzliche Technik verwaltet werden muss.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dahua-technology-editorial.webp" alt="Illustration zu Dahua Technology: Kameralinsen, Netzwerkwege und Archivmodule bilden einen Sicherheitsprozess" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Hochauflösende IP- und Analogkameras mit verschiedenen Objektivtypen  

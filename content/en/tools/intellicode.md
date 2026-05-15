@@ -37,6 +37,10 @@ In day-to-day work, IntelliCode (Microsoft) is less about having every edge feat
 
 IntelliCode (Microsoft) is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intellicode-editorial.webp" alt="Illustration for IntelliCode: code blocks are guided into clearer structures by suggestion cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based code completion:** IntelliCode suggests context-dependent lines of code based on common patterns from open-source projects.

@@ -39,6 +39,10 @@ In day-to-day work, Lokalise is less about having every edge feature and more ab
 
 Lokalise is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lokalise-editorial.webp" alt="Illustration for Lokalise: string cards move through context, review, and localized delivery" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Cloud-based translation platform:** Access from anywhere, no local installation required.

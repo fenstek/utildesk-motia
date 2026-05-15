@@ -35,6 +35,10 @@ Im Alltag zählt bei Intel Habana Labs Gaudi weniger, ob jede Randfunktion vorha
 
 Praktisch ist Intel Habana Labs Gaudi vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intel-habana-labs-gaudi-editorial.webp" alt="Illustration zu Intel Habana Labs Gaudi: Trainingsdaten laufen durch Beschleuniger-Hardware und Modellschichten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Spezialisierte Hardwarearchitektur für effizientes Training von Deep-Learning-Modellen.

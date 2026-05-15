@@ -28,6 +28,10 @@ Trellix Endpoint Security steht und fällt im Alltag mit Richtlinienqualität un
 
 Wichtig ist, Fehlalarme ernst zu nehmen, ohne den Schutz aus Bequemlichkeit zu schwächen. Security-Teams sollten regelmäßig prüfen, welche Regeln greifen, welche Geräte ausfallen und welche Meldungen wirklich Reaktion brauchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mcafee-endpoint-security-editorial.webp" alt="Illustration zu Trellix Endpoint Security: Endgeraete werden durch Schutzschichten, Quarantaene und Reaktionspfade abgesichert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mehrschichtiger Malware-Schutz**: Schutz vor Viren, Ransomware, Spyware und anderen Schadprogrammen durch signaturbasierte und verhaltensbasierte Erkennung.

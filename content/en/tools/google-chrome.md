@@ -32,6 +32,10 @@ Chrome is so common in daily work that maintenance and risk are easy to overlook
 
 Teams benefit from a deliberate browser setup: approved extensions, separate profiles for clients or environments, and clear update rules. That keeps Chrome a stable work tool instead of an uncontrolled collection point for logins and add-ons.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-chrome-editorial.webp" alt="Illustration for Google Chrome: browser cards, extensions, and safe paths organize web work" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Fast load times and high performance while browsing

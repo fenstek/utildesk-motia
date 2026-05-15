@@ -26,6 +26,10 @@ Logic Pro is aimed at companies and professionals who want to increase productiv
 
 Depending on the use case, Logic Pro can be useful for both beginners and experienced users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/logic-pro-editorial.webp" alt="Illustration for Logic Pro: instruments, tracks, and mixer objects are shaped into an arrangement" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automated task management:** Support for planning and carrying out recurring tasks  

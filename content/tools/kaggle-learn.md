@@ -22,6 +22,10 @@ Kaggle Learn richtet sich an Menschen, die Datenkompetenz praktisch aufbauen mö
 - Praktiker, die ihr Wissen anhand von realen Datensätzen und Projekten anwenden wollen
 - Personen, die eine flexible und kostenfreie Lernmöglichkeit suchen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kaggle-learn-editorial.webp" alt="Illustration zu Kaggle Learn: Uebungsstationen fuehren von Beispieldaten zu Modell-Insights" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Lernmodule:** Kurze, praxisnahe Tutorials mit sofortigem Feedback

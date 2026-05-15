@@ -29,6 +29,10 @@ Im Alltag zählt bei Lectora weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Lectora vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lectora-editorial.webp" alt="Illustration zu Lectora: Folien, Interaktionen und Pruefpunkte werden zu Lernmodulen gebaut" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Drag-and-Drop-Editor zur einfachen Erstellung von Kursinhalten ohne Programmierkenntnisse  

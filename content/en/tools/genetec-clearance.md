@@ -32,6 +32,10 @@ In daily use, Genetec Clearance is about traceability for every file. Evidence m
 
 The practical value appears when security, legal, and operations teams use the same case logic. Without naming rules and clear roles, an evidence portal can become as confusing as a shared folder.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/genetec-clearance-editorial.webp" alt="Illustration for Genetec Clearance: video evidence moves through review, approval, and secure storage" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Secure Storage of Video Evidence**: Cloud storage with high data security and encryption.

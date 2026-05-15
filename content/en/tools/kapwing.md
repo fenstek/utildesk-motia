@@ -27,6 +27,10 @@ Kapwing is ideal for:
 - Teachers and educational institutions that want to present learning videos and presentations in an engaging way.
 - People without in-depth technical knowledge who still want to achieve high-quality results.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kapwing-editorial.webp" alt="Illustration for Kapwing: video clips, format frames, and audio tracks are assembled into social media scenes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Video editor**: Cut, trim, rotate, and combine video clips directly in the browser.

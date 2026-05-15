@@ -28,6 +28,10 @@ Chrome ist im Alltag oft so selbstverständlich, dass Risiken und Pflege überse
 
 Für Teams lohnt sich ein bewusstes Browser-Setup: erlaubte Erweiterungen, getrennte Profile für Kunden oder Umgebungen und klare Update-Regeln. So bleibt Chrome ein stabiles Arbeitswerkzeug statt ein unkontrollierter Sammelpunkt für Logins und Add-ons.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-chrome-editorial.webp" alt="Illustration zu Google Chrome: Browserkarten, Erweiterungen und sichere Wege ordnen Webarbeit" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Schnelle Ladezeiten und hohe Performance beim Surfen

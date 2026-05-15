@@ -33,6 +33,10 @@ In day-to-day work, JSFiddle is less about having every edge feature and more ab
 
 JSFiddle is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jsfiddle-editorial.webp" alt="Illustration for JSFiddle: frontend building blocks are assembled in separate test areas" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Online code editor:** Edit HTML, CSS, and JavaScript with syntax highlighting and autocomplete.

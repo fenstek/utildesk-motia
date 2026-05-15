@@ -37,6 +37,10 @@ Im Alltag zählt bei LogoMakr weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist LogoMakr vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/logomakr-editorial.webp" alt="Illustration zu LogoMakr: Formen, Farbfelder und Raster werden zu neutralen Markenentwuerfen kombiniert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive Drag-and-Drop-Oberfläche:** Einfache Bedienung ohne Vorkenntnisse.

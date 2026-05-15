@@ -27,6 +27,10 @@ Jitsi Meet is suitable for a broad target group:
 - **Developers and tech enthusiasts** who benefit from its open-source nature and want to make their own customizations.
 - **Organizations focused on privacy**, since Jitsi Meet does not require user profiles and supports encrypted connections.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jitsi-meet-editorial.webp" alt="Illustration for Jitsi Meet: remote meeting stations connect in a shared conversation space" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Video conferences without registration:** A meeting can be started and shared immediately via a link.

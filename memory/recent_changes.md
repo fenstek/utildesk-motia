@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-15_
 
+
+## 2026-05-15 - Tool illustration batch 23
+
+- Added one landscape 1260x800 WebP editorial illustration to 50 additional manually edited tool cards in both German and English.
+- Selection covers active non-illustrated registry-backed cards from 8x8 through Meta AI, including the newly edited earlier alphabetical gaps.
+- Published only wide landscape generations; square draft variants were not inserted. The batch keeps the varied story direction with paper dioramas, photo still lifes, collage, hardware/security scenes, learning workshops, audio/video production tables, and marketing workflow objects.
+- Updated the tool-card illustration registry so future batches skip these slugs.
+
 ## 2026-05-15 - Final active tool-card text editorial pass
 
 - Manually expanded the remaining 30 active DE/EN tool cards missing from the text editorial registry, from `8x8` through `vivaldi`.

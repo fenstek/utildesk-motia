@@ -33,6 +33,10 @@ Bei Adobe Fresco zählt im Alltag vor allem, ob Stifte, Ebenen und Exportwege zu
 
 Hilfreich ist Fresco besonders für Teams, die zwischen freier Zeichnung und Adobe-Workflow wechseln. Wer nur gelegentlich Notizen kritzelt, braucht den Funktionsumfang kaum; wer Illustrationen weiterverarbeitet, profitiert von Pinseln, Vektorelementen und der Nähe zur Creative Cloud.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-fresco-editorial.webp" alt="Illustration zu Adobe Fresco: digitale Malwerkzeuge verbinden Skizze, Farbe und Pinseltexturen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Kombination aus Vektor- und Rasterpinseln für flexible Gestaltungsmöglichkeiten  

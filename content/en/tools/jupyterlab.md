@@ -20,6 +20,10 @@ JupyterLab is a web-based interactive development environment built specifically
 
 JupyterLab is aimed at data scientists, AI researchers, developers, and students who want to use interactive notebooks for analysis, visualization, and prototyping. It is especially well suited for teams working collaboratively on projects and managing different data types and code formats in a unified interface. It is also a practical tool for teachers and learners in the field of data science, since it makes it easy to combine code and explanatory text.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jupyterlab-editorial.webp" alt="Illustration for JupyterLab: notebook, data samples, and result objects move through an analysis lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Interactive notebooks**: Support for Jupyter Notebooks with code, text, visualizations, and formulas.

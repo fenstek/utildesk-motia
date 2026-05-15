@@ -32,6 +32,10 @@ In daily use, Brave depends on whether its tracking protection works well with t
 
 Brave is strongest for users who want privacy controls directly in the browser. Teams with many enterprise extensions, central policies, or specific SSO flows should test management options before a broad rollout.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brave-editorial.webp" alt="Illustration for Brave: a protected browsing path blocks tracking signals in a paper maze" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Built-in ad and tracker blocking:** Default protection against ads and tracking scripts for a faster and safer browsing experience.

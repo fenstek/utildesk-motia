@@ -32,6 +32,10 @@ In day-to-day work, Mailchimp is less about having every edge feature and more a
 
 Mailchimp is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailchimp-editorial.webp" alt="Illustration for Mailchimp: audience groups, campaign cards, and envelopes form an email marketing flow" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email marketing:** Create and send personalized email campaigns with customizable templates.

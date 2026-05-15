@@ -33,6 +33,10 @@ In day-to-day work, Kayako is less about having every edge feature and more abou
 
 Kayako is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kayako-editorial.webp" alt="Illustration for Kayako: support requests move from intake and triage to resolution" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multichannel ticketing:** Manage customer requests from different channels centrally in a single system.

@@ -34,6 +34,10 @@ Im Alltag zählt bei IntelliCode (Microsoft) weniger, ob jede Randfunktion vorha
 
 Praktisch ist IntelliCode (Microsoft) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/intellicode-editorial.webp" alt="Illustration zu IntelliCode: Code-Bausteine werden durch Vorschlagskarten zu klareren Strukturen gefuehrt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Code-Vervollständigung:** IntelliCode schlägt kontextabhängige Codezeilen vor, basierend auf häufigen Mustern aus Open-Source-Projekten.

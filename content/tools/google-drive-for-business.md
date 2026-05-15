@@ -27,6 +27,10 @@ Google Drive for Business funktioniert im Alltag nur so gut wie die Ablagestrukt
 
 Der größte Gewinn entsteht, wenn Teams gemeinsame Ablagen konsequent nutzen und persönliche Drives nicht als Schattenarchiv einsetzen. Dazu gehören klare Regeln für Dateinamen, externe Links, Eigentümerschaft und Archivierung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-drive-for-business-editorial.webp" alt="Illustration zu Google Drive for Business: Teamordner, Rechte und Cloud-Ablage verbinden geteilte Dateien" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloud-Speicher:** Sicherer Zugriff auf Dateien von überall mit automatischer Synchronisation.
