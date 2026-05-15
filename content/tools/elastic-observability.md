@@ -29,6 +29,10 @@ Im Alltag zählt bei Elastic Observability weniger, ob jede Randfunktion vorhand
 
 Praktisch ist Elastic Observability vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elastic-observability-editorial.webp" alt="Illustration zu Elastic Observability: gewebtes Monitoring-Netz um Services, Sensoren und Linse" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Zentrale Datenaggregation:** Sammlung und Zusammenführung von Logs, Metriken und Traces aus verschiedensten Quellen.

@@ -35,6 +35,10 @@ Im Alltag zählt bei Deepgram weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Deepgram vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepgram-editorial.webp" alt="Illustration zu Deepgram: Mikrofon mit Audiowellen, die sich in strukturierte Signale verwandeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung (ASR):** Umwandlung von Audio in Text mit hoher Genauigkeit

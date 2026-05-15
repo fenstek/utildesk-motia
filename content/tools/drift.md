@@ -36,6 +36,10 @@ Im Alltag zählt bei Drift weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Drift vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/drift-editorial.webp" alt="Illustration zu Drift: nächtliches Servicefenster mit leuchtenden Gesprächswegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Live-Chat mit KI-Unterstützung:** Automatisierte und menschliche Interaktion in Echtzeit  

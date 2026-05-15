@@ -36,6 +36,10 @@ Im Alltag zählt bei Discord weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Discord vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/discord-editorial.webp" alt="Illustration zu Discord: Community-Clubhaus mit verbundenen Sprach- und Themenräumen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text- und Sprachchat**: Echtzeitkommunikation über private oder öffentliche Kanäle.

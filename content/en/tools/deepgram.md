@@ -40,6 +40,10 @@ In day-to-day work, Deepgram is less about having every edge feature and more ab
 
 Deepgram is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepgram-editorial.webp" alt="Illustration for Deepgram: microphone with audio waves turning into structured signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic Speech Recognition (ASR):** Conversion of audio into text with high accuracy

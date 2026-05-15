@@ -37,6 +37,10 @@ In day-to-day work, Fireworks AI is less about having every edge feature and mor
 
 Fireworks AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fireworks-ai-editorial.webp" alt="Illustration for Fireworks AI: model rockets launching inference bursts over a server landscape" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Scalable Computing Resources:** Automatic adjustment of infrastructure according to demand, to optimize training and inference processes.

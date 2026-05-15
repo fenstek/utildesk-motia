@@ -37,6 +37,10 @@ Im Alltag zählt bei Espacenet weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Espacenet vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/espacenet-editorial.webp" alt="Illustration zu Espacenet: Patentarchiv mit Erfindungsskizzen, Lupe und Metallmarkern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Umfangreiche Patentdatenbank:** Zugriff auf mehr als 130 Millionen Patentdokumente aus aller Welt.

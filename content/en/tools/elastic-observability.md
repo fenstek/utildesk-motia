@@ -21,6 +21,10 @@ Elastic Observability is a comprehensive platform for monitoring, analyzing, and
 
 Elastic Observability is aimed primarily at developers, DevOps teams, and IT operations that need a holistic view of their applications and infrastructure. The platform is especially suitable for companies looking for a scalable solution to bring together logs, metrics, and traces from distributed systems and evaluate them in real time. Organizations with complex cloud environments or hybrid architectures also benefit from Elastic Observability's extensive integrations and flexibility.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elastic-observability-editorial.webp" alt="Illustration for Elastic Observability: woven monitoring net around services, sensors, and a lens" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Central data aggregation:** Collection and consolidation of logs, metrics, and traces from a wide variety of sources.

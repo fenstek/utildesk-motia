@@ -29,6 +29,10 @@ Im Alltag zählt bei FrameForge weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist FrameForge vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/frameforge-editorial.webp" alt="Illustration zu FrameForge: Miniatur-Filmset mit Kameraachsen, Licht und Storyboardkarten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **3D-Storyboard-Erstellung:** Erstellen Sie realistische, dreidimensionale Storyboards mit virtuellen Kameras, Beleuchtung und Set-Elementen.

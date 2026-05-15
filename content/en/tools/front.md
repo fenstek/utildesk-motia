@@ -32,6 +32,10 @@ In day-to-day work, Front is less about having every edge feature and more about
 
 Front is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/front-editorial.webp" alt="Illustration for Front: front-office mailroom with team trays and handoff ribbons" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Shared inboxes: Manage emails, SMS, chat messages, and social media in a central inbox.

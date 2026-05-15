@@ -37,6 +37,10 @@ In day-to-day work, Dialogflow CX is less about having every edge feature and mo
 
 Dialogflow CX is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dialogflow-cx-editorial.webp" alt="Illustration for Dialogflow CX: contact-center routes as a circular conversation station" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multi-step dialogues:** Creating complex conversation flows with a graphical flow editor

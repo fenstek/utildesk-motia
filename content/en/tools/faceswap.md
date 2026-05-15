@@ -19,6 +19,10 @@ FaceSwap is a KI-based tool that enables automatic face swapping in images or vi
 
 FaceSwap is suitable for various user groups, including professional content creators, marketing teams, social media influencers, and hobbyists who want to implement creative projects. It can also be used in film and video production for the rapid creation of visual effects. Additionally, it offers opportunities for businesses to create personalized advertising or interactive experiences. In general, FaceSwap is suitable for anyone looking for automated image and video editing with a focus on face swapping.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/faceswap-editorial.webp" alt="Illustration for FaceSwap: darkroom with anonymous masks and interchangeable film layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Functions
 
 - Automatic face swapping in photos and videos  

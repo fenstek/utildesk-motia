@@ -29,6 +29,10 @@ Im Alltag zählt bei Front weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Front vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/front-editorial.webp" alt="Illustration zu Front: Frontoffice-Postraum mit Team-Ablagen und Handoff-Bändern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Gemeinsame Postfächer: Verwaltung von E-Mails, SMS, Chatnachrichten und sozialen Medien in einem zentralen Inbox.

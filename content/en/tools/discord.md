@@ -26,6 +26,10 @@ Discord is aimed at a broad audience. Originally very popular with gamers, the p
 
 Thanks to its scalability, Discord is suitable for both small groups and large communities with thousands of members.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/discord-editorial.webp" alt="Illustration for Discord: community clubhouse with connected voice and topic rooms" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Text and voice chat**: Real-time communication through private or public channels.

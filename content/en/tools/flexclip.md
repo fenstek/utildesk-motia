@@ -35,6 +35,10 @@ In day-to-day work, FlexClip is less about having every edge feature and more ab
 
 FlexClip is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flexclip-editorial.webp" alt="Illustration for FlexClip: video table with storyboard cards, scene strips, and transitions" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Video creation and editing:** Cutting, trimming, and combining clips directly in the browser.

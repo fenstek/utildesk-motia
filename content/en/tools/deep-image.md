@@ -42,6 +42,10 @@ In day-to-day work, Deep Image is less about having every edge feature and more 
 
 Deep Image is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-image-editorial.webp" alt="Illustration for Deep Image: photo lab where blurred images become crisp prints" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based image enlargement:** Enlargement of images up to 4-8 times without visible quality loss.

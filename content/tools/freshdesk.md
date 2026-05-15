@@ -36,6 +36,10 @@ Im Alltag zählt bei Freshdesk weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Freshdesk vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshdesk-editorial.webp" alt="Illustration zu Freshdesk: Support-Werkstatt mit Ticketkarten, Umschlägen und Lösungsstempeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Ticketmanagement:** Zentrale Verwaltung aller Kundenanfragen mit Priorisierung, Zuweisung und Statusverfolgung.

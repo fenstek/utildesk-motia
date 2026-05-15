@@ -33,6 +33,10 @@ In day-to-day work, Forecast is less about having every edge feature and more ab
 
 Forecast is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/forecast-editorial.webp" alt="Illustration for Forecast: project planning as a weather station with resources and timelines" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Project planning and tracking:** Create project plans with time and budget constraints, real-time progress reports.

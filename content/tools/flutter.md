@@ -35,6 +35,10 @@ Im Alltag zählt bei Flutter (Google) weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist Flutter (Google) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flutter-editorial.webp" alt="Illustration zu Flutter (Google): krossplattformige App-Bauteile in neutralen Geräte-Rahmen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Plattformübergreifende Entwicklung:** Eine einzige Codebasis für Android, iOS, Web und Desktop.

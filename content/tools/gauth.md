@@ -29,6 +29,10 @@ Im Alltag zählt bei Gauth weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Gauth vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gauth-editorial.webp" alt="Illustration zu Gauth: Lerntisch mit Geometrieformen, Aufgaben-Karten und Tutor-Lampe" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **AI-gestützte Zusammenfassungen:** Automatische Erstellung von kompakten Textzusammenfassungen aus umfangreichen Lernmaterialien.

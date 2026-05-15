@@ -38,6 +38,10 @@ In day-to-day work, Gitpod is less about having every edge feature and more abou
 
 Gitpod is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gitpod-editorial.webp" alt="Illustration for Gitpod: portable development environment growing from a technical pod" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Development Environments:** Gitpod creates an entire development environment automatically based on the project repository.

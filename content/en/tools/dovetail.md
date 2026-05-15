@@ -32,6 +32,10 @@ In day-to-day work, Dovetail is less about having every edge feature and more ab
 
 Dovetail is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dovetail-editorial.webp" alt="Illustration for Dovetail: research room with interview cards, clusters, and an insight prism" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Data Import and Organization:** Easy integration of various data sources such as interviews, notes, and transcripts.

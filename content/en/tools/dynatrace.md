@@ -34,6 +34,10 @@ In day-to-day work, Dynatrace is less about having every edge feature and more a
 
 Dynatrace is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dynatrace-editorial.webp" alt="Illustration for Dynatrace: technical clockwork of services, sensors, and trace path" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **End-to-End Monitoring:** Real-time monitoring of applications, infrastructure, cloud platforms, and user experiences.

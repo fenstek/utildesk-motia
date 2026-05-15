@@ -29,6 +29,10 @@ Im Alltag zählt bei Datadog weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Datadog vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datadog-editorial.webp" alt="Illustration zu Datadog: Observability-Stadtmodell mit farbigen Telemetrie-Spuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Infrastrukturüberwachung:** Echtzeit-Monitoring von Servern, Containern, Cloud-Diensten und Netzwerken.

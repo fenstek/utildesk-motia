@@ -39,6 +39,10 @@ In day-to-day work, Elucidat is less about having every edge feature and more ab
 
 Elucidat is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elucidat-editorial.webp" alt="Illustration for Elucidat: course table with lesson blocks, quiz shapes, and progress beads" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intuitive Drag-and-Drop Interface:** Allows for easy course creation without programming.

@@ -35,6 +35,10 @@ Im Alltag zählt bei GitHub Codespaces weniger, ob jede Randfunktion vorhanden i
 
 Praktisch ist GitHub Codespaces vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/github-codespaces-editorial.webp" alt="Illustration zu GitHub Codespaces: Cloud-Entwicklungswerkstatt aus Repository-Kiste und Teststrecken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte Entwicklungsumgebung:** Zugriff auf komplette Dev-Umgebungen über den Browser oder Visual Studio Code.

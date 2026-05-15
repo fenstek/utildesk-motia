@@ -39,6 +39,10 @@ In day-to-day work, DeepL is less about having every edge feature and more about
 
 DeepL is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepl-editorial.webp" alt="Illustration for DeepL: paper bridge between languages and desks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered translation:** Utilizes neural networks for precise and fluent translations.

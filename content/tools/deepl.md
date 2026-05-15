@@ -38,6 +38,10 @@ Im Alltag zählt bei DeepL weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist DeepL vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepl-editorial.webp" alt="Illustration zu DeepL: Papierbrücke zwischen Sprachen und Schreibtischen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Übersetzung:** Nutzung neuronaler Netzwerke für präzise und flüssige Übersetzungen.

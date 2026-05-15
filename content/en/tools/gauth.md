@@ -32,6 +32,10 @@ In day-to-day work, Gauth is less about having every edge feature and more about
 
 Gauth is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gauth-editorial.webp" alt="Illustration for Gauth: study table with geometry shapes, problem cards, and tutor lamp" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-driven Summarizations:** Automatic creation of concise summary texts from extensive learning materials.

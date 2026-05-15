@@ -32,6 +32,10 @@ In day-to-day work, Datadog is less about having every edge feature and more abo
 
 Datadog is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datadog-editorial.webp" alt="Illustration for Datadog: observability city model with colored telemetry trails" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Infrastructure Monitoring:** Real-time monitoring of servers, containers, cloud services, and networks.

@@ -29,6 +29,10 @@ Im Alltag zählt bei Facemoji weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Facemoji vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/facemoji-editorial.webp" alt="Illustration zu Facemoji: Tastatur- und Sticker-Bastelset mit bunten Ausdrucksformen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Personalisierte Emojis und Avatare:** Erstellen Sie eigene animierte Emojis und Avatare, die Ihre Persönlichkeit widerspiegeln.

@@ -26,6 +26,10 @@ Deepfake tools are ideal for creatives, developers, and companies that want to c
 - Developers and researchers who work on AI-based applications and automation.
 - Individuals who want to experiment with the technology responsibly to better understand it.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepfake-editorial.webp" alt="Illustration for Deepfake: anonymous masks, film strips, and synthetic image layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Main functions
 
 - **Face swap**: Replace a person's face in video or image content with that of another.

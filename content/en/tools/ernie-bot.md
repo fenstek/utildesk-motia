@@ -40,6 +40,10 @@ In day-to-day work, Ernie Bot is less about having every edge feature and more a
 
 Ernie Bot is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ernie-bot-editorial.webp" alt="Illustration for Ernie Bot: library garden with assistant lantern and knowledge paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Understands and processes human language precisely and contextually.

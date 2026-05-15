@@ -41,6 +41,10 @@ In day-to-day work, Fastai is less about having every edge feature and more abou
 
 Fastai is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fastai-editorial.webp" alt="Illustration for Fastai: learning lab with neural blocks and training stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Simple and Intuitive API:** Allows for easy entry and uncomplicated modeling.

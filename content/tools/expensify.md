@@ -35,6 +35,10 @@ Im Alltag zählt bei Expensify weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Expensify vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/expensify-editorial.webp" alt="Illustration zu Expensify: Spesentisch mit Belegen, Karten und Freigabemarkierungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Belegerfassung:** Fotografieren oder hochladen von Belegen, die automatisch erkannt und verarbeitet werden.

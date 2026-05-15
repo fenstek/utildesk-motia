@@ -29,6 +29,10 @@ Im Alltag zählt bei FutureLearn weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist FutureLearn vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/futurelearn-editorial.webp" alt="Illustration zu FutureLearn: Kursweg durch einen hellen Campusgarten mit Lernstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Breite Kursauswahl:** Kurse aus verschiedenen Fachbereichen wie Wirtschaft, Technik, Gesundheit, Kunst und mehr.

@@ -41,6 +41,10 @@ In day-to-day work, Freepik is less about having every edge feature and more abo
 
 Freepik is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freepik-editorial.webp" alt="Illustration for Freepik: creative market with pattern rolls, image cards, and 3D shapes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Large Library of Resources**: Access to millions of vector graphics, illustrations, photos, and PSD files.

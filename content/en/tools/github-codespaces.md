@@ -27,6 +27,11 @@ GitHub Codespaces richtet sich vor allem an Entwickler und Teams, die schnell un
 - Entwickler, die von verschiedenen Geräten aus arbeiten und eine flexible Umgebung benötigen.
 - Projekte mit komplexen Abhängigkeiten, die durch vordefinierte Container-Umgebungen einfacher zu handhaben sind.
 
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/github-codespaces-editorial.webp" alt="Illustration for GitHub Codespaces: cloud development workshop from a repository crate and test tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte Entwicklungsumgebung:** Zugriff auf komplette Dev-Umgebungen über den Browser oder Visual Studio Code.
