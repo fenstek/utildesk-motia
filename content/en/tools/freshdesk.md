@@ -40,6 +40,10 @@ In day-to-day work, Freshdesk is less about having every edge feature and more a
 
 Freshdesk is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freshdesk-editorial.webp" alt="Illustration for Freshdesk: support workshop with ticket cards, envelopes, and resolution stamps" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Ticket management:** Central management of all customer requests with prioritization, assignment, and status tracking.

@@ -29,6 +29,10 @@ Im Alltag zählt bei Dynatrace weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Dynatrace vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dynatrace-editorial.webp" alt="Illustration zu Dynatrace: technisches Uhrwerk aus Services, Sensoren und Trace-Pfad" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **End-to-End Monitoring:** Überwachung von Anwendungen, Infrastruktur, Cloud-Plattformen und Benutzererfahrungen in Echtzeit.

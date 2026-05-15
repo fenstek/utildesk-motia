@@ -38,6 +38,10 @@ Im Alltag zählt bei Dialogflow weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Dialogflow vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dialogflow-editorial.webp" alt="Illustration zu Dialogflow: Dialogwerkstatt mit Sprechblasen als Zahnräder und Pfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (NLP):** Erkennung und Interpretation von Nutzeranfragen in vielen Sprachen  

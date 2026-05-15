@@ -29,6 +29,10 @@ Im Alltag zählt bei Dollify weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Dollify vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dollify-editorial.webp" alt="Illustration zu Dollify: Avatar-Atelier mit Gesichtsvorlagen, Accessoires und Farbfächern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Avatar-Erstellung:** Einfaches Generieren von personalisierten Figuren basierend auf vorgegebenen Stilen und Merkmalen.

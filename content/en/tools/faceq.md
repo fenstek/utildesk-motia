@@ -41,6 +41,10 @@ In day-to-day work, FaceQ is less about having every edge feature and more about
 
 FaceQ is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/faceq-editorial.webp" alt="Illustration for FaceQ: cartoon avatar atelier with templates and accessory cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Workflow Creation:** Users can create complex workflows with just a few clicks and customize them as needed.

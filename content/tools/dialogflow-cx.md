@@ -34,6 +34,10 @@ Im Alltag zählt bei Dialogflow CX weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Dialogflow CX vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dialogflow-cx-editorial.webp" alt="Illustration zu Dialogflow CX: Kontaktcenter-Routen als kreisförmiger Gesprächsbahnhof" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multistep-Dialoge:** Erstellung komplexer Gesprächsabläufe mit grafischem Flow-Editor

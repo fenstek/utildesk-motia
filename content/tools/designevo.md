@@ -35,6 +35,10 @@ Im Alltag zählt bei DesignEvo weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist DesignEvo vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/designevo-editorial.webp" alt="Illustration zu DesignEvo: Design-Tisch mit abstrakten Emblemen, Formen und Farbfeldern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Große Auswahl an Vorlagen:** Über 10.000 vorgefertigte Logo-Designs aus verschiedenen Branchen und Stilen.

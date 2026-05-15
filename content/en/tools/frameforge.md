@@ -34,6 +34,10 @@ In day-to-day work, FrameForge is less about having every edge feature and more 
 
 FrameForge is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/frameforge-editorial.webp" alt="Illustration for FrameForge: miniature film set with camera angles, light, and storyboard cards" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **3D-Storyboard Creation:** Create realistic, 3D storyboards with virtual cameras, lighting, and set elements.

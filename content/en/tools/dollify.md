@@ -33,6 +33,10 @@ In day-to-day work, Dollify is less about having every edge feature and more abo
 
 Dollify is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dollify-editorial.webp" alt="Illustration for Dollify: avatar atelier with face templates, accessories, and color palettes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Avatar Creation:** Easy generation of personalized figures based on given styles and characteristics.

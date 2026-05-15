@@ -34,6 +34,10 @@ Im Alltag zählt bei Fireworks AI weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist Fireworks AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fireworks-ai-editorial.webp" alt="Illustration zu Fireworks AI: Modell-Raketen, die Inferenzfunken über einer Serverlandschaft zünden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Skalierbare Rechenressourcen:** Automatische Anpassung der Infrastruktur je nach Bedarf, um Trainings- und Inferenzprozesse zu optimieren.

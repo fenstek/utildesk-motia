@@ -39,6 +39,10 @@ In day-to-day work, Expensify is less about having every edge feature and more a
 
 Expensify is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/expensify-editorial.webp" alt="Illustration for Expensify: expense table with receipts, cards, and approval markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated Expense Capture:** Capture receipts by photographing or uploading them, which are then automatically recognized and processed.

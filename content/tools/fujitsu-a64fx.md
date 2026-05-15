@@ -36,6 +36,10 @@ Im Alltag zählt bei Fujitsu A64FX weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Fujitsu A64FX vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fujitsu-a64fx-editorial.webp" alt="Illustration zu Fujitsu A64FX: Hochleistungsprozessor in einem wissenschaftlichen Hardware-Labor" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - ARM-basierte 48-Kern-CPU mit hoher Parallelverarbeitungskapazität

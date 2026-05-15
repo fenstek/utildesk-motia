@@ -390,3 +390,4 @@ _Last updated: 2026-05-14_
   - `scripts/run_article_rewrite_runner_host.sh` returned `ok=true` / `count=0`.
 - Restored the Ratgeber Cloudflare candidate sync cron with `--allow-unapproved-visuals`, per current policy not to block review uploads on image quality while the contour lacks a reliable high-quality image-production stage.
 - 2026-05-14: Added the next 50 varied editorial WebP illustrations for manually edited tool cards from Automation Anywhere through DataCamp; inserted localized DE/EN figure blocks and updated the illustration registry.
+- 2026-05-15: Added the next 50 varied editorial WebP illustrations for active manually edited tool cards from Datadog through Google BigQuery; inserted localized DE/EN figure blocks, updated the illustration registry, and rejected generated variants with text/logo/dashboard artifacts.

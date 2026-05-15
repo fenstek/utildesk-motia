@@ -29,6 +29,10 @@ Im Alltag zählt bei Forecast weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Forecast vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/forecast-editorial.webp" alt="Illustration zu Forecast: Projektplanung als Wetterstation mit Ressourcen und Zeitlinien" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Projektplanung und -verfolgung:** Erstellung von Projektplänen mit Zeit- und Budgetvorgaben, Fortschrittsberichte in Echtzeit.

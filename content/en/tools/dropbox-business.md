@@ -20,6 +20,10 @@ Dropbox Business ist eine cloudbasierte Plattform, die speziell für Unternehmen
 
 Dropbox Business richtet sich an kleine, mittelständische und große Unternehmen, die eine zuverlässige und skalierbare Lösung für Datei-Management und Zusammenarbeit benötigen. Besonders geeignet ist es für Teams, die häufig remote arbeiten, an gemeinsamen Projekten beteiligt sind oder großen Wert auf Datensicherheit legen. Auch Organisationen, die komplexe Zugriffsrechte verwalten und eine zentrale Plattform für Dokumente suchen, profitieren von Dropbox Business.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dropbox-business-editorial.webp" alt="Illustration for Dropbox Business: shared cloud vault with file cubes and team trays" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloud-Speicher:** Umfangreicher und sicherer Speicherplatz für Dateien und Ordner, je nach Plan skalierbar.

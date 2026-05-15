@@ -39,6 +39,10 @@ In day-to-day work, Drift is less about having every edge feature and more about
 
 Drift is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/drift-editorial.webp" alt="Illustration for Drift: night service window with glowing conversation paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Live Chat with AI Support:** Automated and human interaction in real-time  

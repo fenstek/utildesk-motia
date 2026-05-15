@@ -29,6 +29,10 @@ Im Alltag zählt bei Google BigQuery weniger, ob jede Randfunktion vorhanden ist
 
 Praktisch ist Google BigQuery vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-bigquery-editorial.webp" alt="Illustration zu Google BigQuery: serverloses Datenlager aus schwebenden Glas-Spalten und Abfrage-Licht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Serverloses Data-Warehouse:** Keine Verwaltung von Hardware oder Infrastruktur notwendig.

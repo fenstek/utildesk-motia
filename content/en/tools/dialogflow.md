@@ -42,6 +42,10 @@ In day-to-day work, Dialogflow is less about having every edge feature and more 
 
 Dialogflow is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dialogflow-editorial.webp" alt="Illustration for Dialogflow: conversation workshop with speech bubbles as gears and paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Recognition and interpretation of user queries in many languages  

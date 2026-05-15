@@ -20,6 +20,10 @@ FutureLearn is an online learning platform that offers a wide range of courses f
 
 FutureLearn is suitable for anyone who wants to continue learning, regardless of their current level of knowledge. Students, professionals looking to build new skills, and people interested in academic or career-related courses can all benefit in particular. Companies and organizations that want to train their employees can also benefit from the courses offered. The platform is ideal for those who want to learn independently of location and time and value high-quality content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/futurelearn-editorial.webp" alt="Illustration for FutureLearn: course path through a bright campus garden with learning stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Wide course selection:** Courses in various subject areas such as business, technology, health, art, and more.

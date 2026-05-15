@@ -41,6 +41,10 @@ In day-to-day work, Fujitsu A64FX is less about having every edge feature and mo
 
 Fujitsu A64FX is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fujitsu-a64fx-editorial.webp" alt="Illustration for Fujitsu A64FX: high-performance processor in a scientific hardware lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - 48-core ARM-based CPU with high parallel processing capabilities

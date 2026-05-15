@@ -36,6 +36,10 @@ Im Alltag zählt bei DeepSeek weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist DeepSeek vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepseek-editorial.webp" alt="Illustration zu DeepSeek: Unterwasser-Forschungsstation mit leuchtenden Wissenspfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (NLP):** Versteht und interpretiert komplexe Anfragen in natürlicher Sprache.

@@ -35,6 +35,10 @@ Im Alltag zählt bei Elucidat weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Elucidat vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/elucidat-editorial.webp" alt="Illustration zu Elucidat: Kurstisch mit Lernblöcken, Quizformen und Fortschrittsperlen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive Drag-and-Drop-Oberfläche:** Ermöglicht die einfache Erstellung von Kursen ohne Programmieraufwand.

@@ -37,6 +37,10 @@ Im Alltag zählt bei Freepik weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Freepik vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/freepik-editorial.webp" alt="Illustration zu Freepik: Kreativmarkt mit Musterrollen, Bildkarten und 3D-Formen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Große Bibliothek an Ressourcen**: Zugriff auf Millionen von Vektorgrafiken, Illustrationen, Fotos und PSD-Dateien.

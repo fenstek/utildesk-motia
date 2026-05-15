@@ -29,6 +29,10 @@ Espacenet is suitable for a wide range of users, including:
 
 The platform is designed to be user-friendly for both beginners and experienced users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/espacenet-editorial.webp" alt="Illustration for Espacenet: patent archive with invention sketches, magnifier, and metal tags" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Comprehensive patent database:** Access to over 130 million patent documents from around the world.

@@ -35,6 +35,10 @@ Im Alltag zählt bei Eclipse Che weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Eclipse Che vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/eclipse-che-editorial.webp" alt="Illustration zu Eclipse Che: modulare Container-Werkstatt für portable Entwicklungsräume" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte IDE:** Zugriff auf eine voll ausgestattete Entwicklungsumgebung über den Browser

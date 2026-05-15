@@ -38,6 +38,10 @@ In day-to-day work, FabFilter Pro-L 2 is less about having every edge feature an
 
 FabFilter Pro-L 2 is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fabfilter-pro-l-2-editorial.webp" alt="Illustration for FabFilter Pro-L 2: mastering studio with a limited light waveform between glass plates" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Transparent signal limiting:** Prevents overload and clipping at maximum loudness.

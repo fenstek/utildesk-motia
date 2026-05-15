@@ -29,6 +29,10 @@ Im Alltag zählt bei Dovetail weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Dovetail vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dovetail-editorial.webp" alt="Illustration zu Dovetail: Research-Raum mit Interviewkarten, Clustern und Insight-Prisma" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenimport und -organisation:** Einfache Integration verschiedener Datenquellen wie Interviews, Notizen und Transkripte.

@@ -29,6 +29,10 @@ Im Alltag zählt bei edX weniger, ob jede Randfunktion vorhanden ist, sondern ob
 
 Praktisch ist edX vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/edx-editorial.webp" alt="Illustration zu edX: Lernhof mit Kursbüchern, Laborstationen und Meilensteinen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Zugang zu tausenden Online-Kursen von Top-Universitäten und Institutionen weltweit

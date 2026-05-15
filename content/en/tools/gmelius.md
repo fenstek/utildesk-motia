@@ -20,6 +20,10 @@ Gmelius is a versatile platform for improving productivity and automating email 
 
 Gmelius is aimed primarily at small and medium-sized businesses, sales teams, support departments, and freelancers who want to structure and automate their email communication and workflows. It is especially useful for teams that use Gmail as their main email client and are looking for a central platform for collaboration and customer management. Gmelius is also a practical solution for project managers and marketing teams that want to reduce repetitive tasks.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gmelius-editorial.webp" alt="Illustration for Gmelius: email workflow table with team trays and automation rails" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Email automation:** Automatically send follow-ups, scheduling messages, and standardized emails.

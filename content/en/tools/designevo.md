@@ -40,6 +40,10 @@ In day-to-day work, DesignEvo is less about having every edge feature and more a
 
 DesignEvo is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/designevo-editorial.webp" alt="Illustration for DesignEvo: design table with abstract emblems, shapes, and color swatches" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Large Template Library:** Over 10,000 pre-designed logos from various industries and styles.

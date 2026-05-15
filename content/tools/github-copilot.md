@@ -38,6 +38,10 @@ Im Alltag zählt bei GitHub Copilot weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist GitHub Copilot vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/github-copilot-editorial.webp" alt="Illustration zu GitHub Copilot: Coding-Cockpit mit Vorschlagsbausteinen und Navigationslicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Code-Vervollständigung:** Automatische Vorschläge für Codezeilen oder ganze Funktionen basierend auf dem aktuellen Kontext.

@@ -38,6 +38,10 @@ In day-to-day work, GitHub Copilot is less about having every edge feature and m
 
 GitHub Copilot is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/github-copilot-editorial.webp" alt="Illustration for GitHub Copilot: coding cockpit with suggestion blocks and navigation light" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered code completion:** Automatic suggestions for code lines or entire functions based on the current context.

@@ -33,6 +33,10 @@ In day-to-day work, Facemoji is less about having every edge feature and more ab
 
 Facemoji is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/facemoji-editorial.webp" alt="Illustration for Facemoji: keyboard and sticker craft kit with colorful expressions" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Personalized Emojis and Avatars:** Create your own animated emojis and avatars that reflect your personality.

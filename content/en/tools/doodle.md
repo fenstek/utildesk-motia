@@ -40,6 +40,10 @@ In day-to-day work, Doodle is less about having every edge feature and more abou
 
 Doodle is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/doodle-editorial.webp" alt="Illustration for Doodle: meeting scheduling on a table with calendar cards and time blocks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Simple Scheduling:** Participants can suggest their preferred times, resulting in the fastest possible common time being determined.

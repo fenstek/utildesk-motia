@@ -35,6 +35,10 @@ Im Alltag zählt bei Deepfake weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Deepfake vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepfake-editorial.webp" alt="Illustration zu Deepfake: anonyme Masken, Filmstreifen und synthetische Bildebenen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Gesichtsaustausch**: Ersetzen des Gesichts einer Person in Video- oder Bildmaterial durch das eines anderen.

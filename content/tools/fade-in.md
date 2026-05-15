@@ -29,6 +29,10 @@ Im Alltag zählt bei Fade In weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Fade In vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fade-in-editorial.webp" alt="Illustration zu Fade In: Drehbuchstudio mit Seiten, Szenenkarten und weichem Bühnenlicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisches Formatieren nach Industriestandard (z.B. Hollywood-Format)

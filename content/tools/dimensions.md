@@ -29,6 +29,10 @@ Im Alltag zählt bei Dimensions weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Dimensions vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dimensions-editorial.webp" alt="Illustration zu Dimensions: Forschungsarchiv mit Zitierfäden und bibliometrischem Kompass" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Umfangreiche Datenbank mit Millionen wissenschaftlicher Publikationen, Patente, klinischer Studien und Förderinformationen  

@@ -37,6 +37,10 @@ Im Alltag zählt bei Deep Image weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Deep Image vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deep-image-editorial.webp" alt="Illustration zu Deep Image: Fotolabor, in dem unscharfe Bilder zu klaren Prints werden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Bildvergrößerung:** Hochskalierung von Bildern um das bis zu 4- bis 8-fache ohne sichtbaren Qualitätsverlust.

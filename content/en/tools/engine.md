@@ -33,6 +33,10 @@ In day-to-day work, ENGINE is less about having every edge feature and more abou
 
 ENGINE is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/engine-editorial.webp" alt="Illustration for ENGINE: travel planning table with routes, booking cards, and budget markers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Central management of business trips and bookings

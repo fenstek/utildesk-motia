@@ -29,6 +29,10 @@ Im Alltag zählt bei Final Draft weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Final Draft vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/final-draft-editorial.webp" alt="Illustration zu Final Draft: Skriptraum mit Beat-Karten, Storybogen und Produktionsklappe" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisches Formatieren**: Final Draft formatiert Drehbücher automatisch nach branchenüblichen Standards (z. B. Hollywood-Standard).

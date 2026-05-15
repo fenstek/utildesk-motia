@@ -34,6 +34,10 @@ Im Alltag zählt bei FabFilter Pro-L 2 weniger, ob jede Randfunktion vorhanden i
 
 Praktisch ist FabFilter Pro-L 2 vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fabfilter-pro-l-2-editorial.webp" alt="Illustration zu FabFilter Pro-L 2: Mastering-Studio mit begrenzter Lichtwelle zwischen Glasplatten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Transparente Signalbegrenzung:** Verhindert Übersteuerung und Clipping bei maximaler Lautstärke.

@@ -37,6 +37,10 @@ Im Alltag zählt bei Fastai weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist Fastai vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fastai-editorial.webp" alt="Illustration zu Fastai: Lernlabor mit neuronalen Blöcken und Trainingsstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Einfache und intuitive API:** Ermöglicht schnellen Einstieg und unkomplizierte Modellierung.

@@ -36,6 +36,10 @@ Im Alltag zählt bei Doodle weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist Doodle vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/doodle-editorial.webp" alt="Illustration zu Doodle: Terminfindung auf einem Tisch mit Kalenderkarten und Zeitblöcken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Einfache Terminabstimmung:** Teilnehmer können ihre bevorzugten Zeiten angeben, wodurch der beste gemeinsame Termin schnell ermittelt wird.

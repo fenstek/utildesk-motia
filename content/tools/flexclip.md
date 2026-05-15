@@ -29,6 +29,10 @@ Im Alltag zählt bei FlexClip weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist FlexClip vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/flexclip-editorial.webp" alt="Illustration zu FlexClip: Videotisch mit Storyboardkarten, Szenenstreifen und Übergängen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Videoerstellung und -bearbeitung:** Schneiden, Trimmen, Zusammenfügen von Clips direkt im Browser.
