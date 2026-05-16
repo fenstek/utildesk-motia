@@ -42,6 +42,10 @@ In day-to-day work, Otter.ai is less about having every edge feature and more ab
 
 Otter.ai is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/otter-ai-editorial.webp" alt="Illustration for Otter.ai: conversation waves flow through a recording studio of tape paths and acoustic panels" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Automatic transcription of audio and video files in real time

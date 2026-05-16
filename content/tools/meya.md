@@ -35,6 +35,10 @@ Im Alltag zählt bei Meya weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Meya vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meya-editorial.webp" alt="Illustration zu Meya: Chatbot-Pfade, Integrationen und Support-Uebergaben laufen durch eine Service-Werkstatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visueller Bot-Builder:** Erstellung von Chatbots ohne tiefgehende Programmierkenntnisse.

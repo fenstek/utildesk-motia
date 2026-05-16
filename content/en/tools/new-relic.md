@@ -24,7 +24,11 @@ New Relic is primarily aimed at companies and development teams that run complex
 - Software developers and DevOps teams that need detailed insights into the health of their applications  
 - IT departments looking for a central solution for infrastructure and system monitoring  
 - Companies that want to improve the performance and availability of their digital services through data-driven analysis  
-- Organizations with cloud-native architectures or hybrid environments that need a flexible monitoring tool  
+- Organizations with cloud-native architectures or hybrid environments that need a flexible monitoring tool
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/new-relic-editorial.webp" alt="Illustration for New Relic: editorial workflow scene for New Relic with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
 
 ## Key features
 

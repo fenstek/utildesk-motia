@@ -29,6 +29,10 @@ Im Alltag zählt bei MightyCall weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist MightyCall vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mightycall-editorial.webp" alt="Illustration zu MightyCall: redaktionelle Workflow-Szene zu MightyCall mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Virtuelle Telefonnummern**: Auswahl und Verwaltung von lokalen oder internationalen Rufnummern.

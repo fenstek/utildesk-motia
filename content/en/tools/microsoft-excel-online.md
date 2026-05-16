@@ -38,6 +38,10 @@ In day-to-day work, Microsoft Excel Online is less about having every edge featu
 
 Microsoft Excel Online is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-excel-online-editorial.webp" alt="Illustration for Microsoft Excel Online: editorial workflow scene for Microsoft Excel Online with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time collaboration:** Multiple users can work on the same spreadsheet at the same time and see changes live.

@@ -44,6 +44,10 @@ In day-to-day work, NVIDIA DGX Systems is less about having every edge feature a
 
 NVIDIA DGX Systems is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-dgx-systeme-editorial.webp" alt="Illustration for NVIDIA DGX Systeme: editorial workflow scene for NVIDIA DGX Systeme with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - High-performance GPUs (e.g. NVIDIA A100 Tensor Core GPUs) for efficient deep learning and AI computations.

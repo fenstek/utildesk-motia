@@ -39,6 +39,10 @@ In day-to-day work, Microsoft Power Apps is less about having every edge feature
 
 Microsoft Power Apps is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-power-apps-editorial.webp" alt="Illustration for Microsoft Power Apps: editorial workflow scene for Microsoft Power Apps with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **No-code/low-code app development:** Create apps with drag-and-drop, with little or no programming effort  

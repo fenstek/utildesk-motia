@@ -24,6 +24,10 @@ Microsoft Bot Framework is aimed at developers, businesses, and organizations th
 - Organizations that want to integrate bots into different platforms such as Microsoft Teams, Skype, Facebook Messenger, or websites.
 - Developers who want to benefit from the scalability and security of a cloud-based solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-bot-framework-editorial.webp" alt="Illustration for Microsoft Bot Framework: editorial workflow scene for Microsoft Bot Framework with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Multichannel support:** Integration of bots into various communication channels such as Teams, Slack, Facebook Messenger, SMS, and more.

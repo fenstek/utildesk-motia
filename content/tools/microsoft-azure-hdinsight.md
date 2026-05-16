@@ -17,6 +17,10 @@ Microsoft Azure HDInsight bringt klassische Big-Data-Frameworks wie Hadoop, Spar
 
 Microsoft Azure HDInsight passt zu Data-Engineering-Teams, Plattformgruppen und Unternehmen, die Hadoop-, Spark- oder Kafka-Workloads in Azure betreiben wollen. Sinnvoll ist es vor allem, wenn es bereits verteilte Jobs, große Datenbestände oder Migrationspfade aus bestehenden Big-Data-Umgebungen gibt. Für einfache BI-Auswertungen oder kleine ML-Experimente ist HDInsight meist unnötig schwer.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-hdinsight-editorial.webp" alt="Illustration zu Microsoft Azure HDInsight: redaktionelle Workflow-Szene zu Microsoft Azure HDInsight mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Vollständig verwalteter Hadoop-, Spark-, Hive-, Kafka-, HBase- und Storm-Cluster-Betrieb

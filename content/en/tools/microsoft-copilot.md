@@ -39,6 +39,10 @@ In day-to-day work, Microsoft Copilot is less about having every edge feature an
 
 Microsoft Copilot is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-copilot-editorial.webp" alt="Illustration for Microsoft Copilot: editorial workflow scene for Microsoft Copilot with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text generation and editing:** Automatically drafting text, summaries, and improved wording in Word and Outlook

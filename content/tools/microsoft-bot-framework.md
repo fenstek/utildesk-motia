@@ -34,6 +34,10 @@ Im Alltag zählt bei Microsoft Bot Framework weniger, ob jede Randfunktion vorha
 
 Praktisch ist Microsoft Bot Framework vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-bot-framework-editorial.webp" alt="Illustration zu Microsoft Bot Framework: redaktionelle Workflow-Szene zu Microsoft Bot Framework mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multichannel-Unterstützung:** Integration von Bots in diverse Kommunikationskanäle wie Teams, Slack, Facebook Messenger, SMS und mehr.

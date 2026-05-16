@@ -35,6 +35,10 @@ Im Alltag zählt bei Monday.com weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Monday.com vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/monday-com-editorial.webp" alt="Illustration zu Monday.com: redaktionelle Workflow-Szene zu Monday.com mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Task- und Projektmanagement:** Erstellung, Zuweisung und Nachverfolgung von Aufgaben mit individuellen Ansichten (Kanban, Gantt, Kalender)

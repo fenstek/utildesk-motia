@@ -29,6 +29,10 @@ Im Alltag zählt bei Microsoft Defender for Endpoint weniger, ob jede Randfunkti
 
 Praktisch ist Microsoft Defender for Endpoint vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-defender-for-endpoint-editorial.webp" alt="Illustration zu Microsoft Defender for Endpoint: redaktionelle Workflow-Szene zu Microsoft Defender for Endpoint mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Endpoint Detection and Response (EDR):** Kontinuierliche Überwachung und Analyse von Endgeräten zur Erkennung verdächtiger Aktivitäten.

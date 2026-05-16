@@ -35,6 +35,10 @@ Im Alltag zählt bei Photopea weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Photopea vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photopea-editorial.webp" alt="Illustration zu Photopea: Glaslayer, Masken und Farbflaechen schweben in einem Restaurierungsatelier" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Unterstützung zahlreicher Dateiformate wie PSD, JPG, PNG, GIF, SVG, PDF und mehr.

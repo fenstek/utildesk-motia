@@ -21,6 +21,10 @@ Pardot is a powerful marketing automation solution from Salesforce, designed spe
 
 Pardot is primarily aimed at medium-sized and large companies that want to digitize and automate their marketing and sales processes. The platform is especially well suited for B2B companies with complex sales cycles that need tight alignment between marketing and sales. Agencies and marketing teams looking for robust CRM integration and value data-driven lead analysis will also find Pardot a suitable solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pardot-editorial.webp" alt="Illustration for Pardot: lead nurturing grows as a greenhouse with channels, lamps, and handoff paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Core Features
 
 - **Lead generation and management:** Automated lead capture, lead scoring, and nurturing for better qualification.

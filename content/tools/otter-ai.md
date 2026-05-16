@@ -42,6 +42,10 @@ Im Alltag zählt bei Otter.ai weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Otter.ai vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/otter-ai-editorial.webp" alt="Illustration zu Otter.ai: Gespraechswellen schweben durch ein Aufnahmestudio aus Baendern und Akustikpaneelen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Transkription von Audio- und Videodateien in Echtzeit

@@ -41,6 +41,10 @@ Im Alltag zählt bei Notion AI weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Notion AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/notion-ai-editorial.webp" alt="Illustration zu Notion AI: redaktionelle Workflow-Szene zu Notion AI mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisches Verfassen von Texten:** Unterstützung bei der Erstellung von Artikeln, E-Mails, Berichten und mehr.

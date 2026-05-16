@@ -40,6 +40,10 @@ Opera is less a plain default browser and more a browser with many built-in conv
 
 At the same time, users should check whether these features improve the workflow or create extra distraction. Productive browsing still depends on deliberate organization of tabs, profiles, and extensions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/opera-editorial.webp" alt="Illustration for Opera: web navigation is staged as an opera house with scene paths, curtains, and light trails" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Integrated AI Tools:** Assistance with searching and text composition through AI-powered assistants.

@@ -25,6 +25,10 @@ In day-to-day work, MuleSoft Anypoint Platform is less about having every edge f
 
 MuleSoft Anypoint Platform is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mulesoft-anypoint-platform-editorial.webp" alt="Illustration for MuleSoft Anypoint Platform: editorial workflow scene for MuleSoft Anypoint Platform with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Workflow Fit
 
 MuleSoft Anypoint Platform fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.

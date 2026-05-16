@@ -38,6 +38,10 @@ Azure Cognitive Search is less a finished search engine and more a toolkit for r
 
 Teams should test with real queries early. A demo with clean sample data says little about whether users will later find misspelled terms, old documents, or domain-specific abbreviations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cognitive-search-editorial.webp" alt="Illustration for Microsoft Azure Cognitive Search: editorial workflow scene for Microsoft Azure Cognitive Search with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Full-text search with natural language:** Supports complex queries, including filtering, facets, and ranking.

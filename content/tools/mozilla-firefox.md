@@ -28,6 +28,10 @@ Mozilla Firefox ist im Alltag besonders wertvoll, wenn Browserwahl nicht nur Gew
 
 Wichtig ist trotzdem Kompatibilität: Manche Unternehmens- oder Spezialanwendungen werden zuerst für Chromium getestet. Teams sollten kritische Web-Apps prüfen und danach entscheiden, ob Firefox Standardbrowser, Zweitbrowser oder Testbrowser wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mozilla-firefox-editorial.webp" alt="Illustration zu Mozilla Firefox: redaktionelle Workflow-Szene zu Mozilla Firefox mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Starker Datenschutz:** Eingebaute Tracking-Schutz-Funktionen blockieren automatisch viele Tracker und unerwünschte Inhalte.

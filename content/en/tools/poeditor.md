@@ -33,6 +33,10 @@ In day-to-day work, POEditor is less about having every edge feature and more ab
 
 POEditor is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/poeditor-editorial.webp" alt="Illustration for POEditor: localization segments move as colored cargo through an unmarked harbor" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Support for numerous file formats:** Import and export common localization files such as .po, .xliff, .json, .xml, .resx, and more.

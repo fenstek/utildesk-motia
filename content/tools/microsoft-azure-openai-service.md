@@ -34,6 +34,10 @@ Im Alltag zählt bei Microsoft Azure OpenAI Service weniger, ob jede Randfunktio
 
 Praktisch ist Microsoft Azure OpenAI Service vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-openai-service-editorial.webp" alt="Illustration zu Microsoft Azure OpenAI Service: redaktionelle Workflow-Szene zu Microsoft Azure OpenAI Service mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Zugriff auf leistungsstarke OpenAI-Modelle wie GPT für Textgenerierung, -analyse und mehr.

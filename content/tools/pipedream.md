@@ -30,6 +30,10 @@ Im Alltag zählt bei Pipedream weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Pipedream vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipedream-editorial.webp" alt="Illustration zu Pipedream: Eventstroeme laufen durch transparente Rohre, Ventile und Verzweigungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Einfache Erstellung von Workflows mit mehreren Schritten, die APIs, Datenbanken und KI-Modelle einbinden

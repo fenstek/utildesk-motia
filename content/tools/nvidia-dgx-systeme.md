@@ -34,6 +34,10 @@ Im Alltag zählt bei NVIDIA DGX Systeme weniger, ob jede Randfunktion vorhanden 
 
 Praktisch ist NVIDIA DGX Systeme vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-dgx-systeme-editorial.webp" alt="Illustration zu NVIDIA DGX Systeme: redaktionelle Workflow-Szene zu NVIDIA DGX Systeme mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Hochleistungs-GPUs (z.B. NVIDIA A100 Tensor Core GPUs) für effizientes Deep Learning und KI-Berechnungen.

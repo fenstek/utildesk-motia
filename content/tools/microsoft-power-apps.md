@@ -36,6 +36,10 @@ Im Alltag zählt bei Microsoft Power Apps weniger, ob jede Randfunktion vorhande
 
 Praktisch ist Microsoft Power Apps vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-power-apps-editorial.webp" alt="Illustration zu Microsoft Power Apps: redaktionelle Workflow-Szene zu Microsoft Power Apps mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **No-Code/Low-Code App-Entwicklung:** Erstellen von Apps per Drag-and-Drop, ohne oder mit wenig Programmieraufwand  

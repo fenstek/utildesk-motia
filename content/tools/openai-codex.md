@@ -29,6 +29,10 @@ Im Alltag zählt bei OpenAI Codex weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist OpenAI Codex vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-codex-editorial.webp" alt="Illustration zu OpenAI Codex: farbige Codefaeden werden in einer mechanischen Weberei zu Softwarestrukturen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Code-Generierung aus natürlicher Sprache:** Schreibe einfache oder komplexe Anforderungen in Textform, Codex generiert den entsprechenden Programmcode.

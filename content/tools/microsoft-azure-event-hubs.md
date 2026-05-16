@@ -22,6 +22,10 @@ Microsoft Azure Event Hubs richtet sich an Entwickler, Data Engineers und Plattf
 - Teams, die skalierbare Event-Streaming-Lösungen suchen
 - Firmen, die Daten aus verschiedenen Quellen zentralisieren und weiterverarbeiten wollen
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-event-hubs-editorial.webp" alt="Illustration zu Microsoft Azure Event Hubs: redaktionelle Workflow-Szene zu Microsoft Azure Event Hubs mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Ereignisaufnahme in großem Maßstab:** Unterstützt Millionen von Ereignissen pro Sekunde mit hoher Durchsatzkapazität.

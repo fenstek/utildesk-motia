@@ -20,6 +20,10 @@ Pipio is an innovative AI tool designed specifically to automate tasks and suppo
 
 Pipio is aimed at individuals, small to medium-sized businesses, and teams that want to make their workflows more efficient with the help of AI. The tool is especially well suited for users who want to automate repetitive tasks, need help with organization, or are looking for intelligent assistant features without having deep technical knowledge. Pipio also offers helpful automation options for freelancers and creative professionals.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipio-editorial.webp" alt="Illustration for Pipio: avatar production appears as a film studio with lighting, wardrobe, and voice lines" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **AI-powered automation:** Pipio automates recurring tasks such as scheduling, email management, or data analysis.

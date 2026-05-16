@@ -33,6 +33,10 @@ In day-to-day work, Microsoft Dynamics 365 Sales is less about having every edge
 
 Microsoft Dynamics 365 Sales is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-dynamics-365-sales-editorial.webp" alt="Illustration for Microsoft Dynamics 365 Sales: editorial workflow scene for Microsoft Dynamics 365 Sales with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Lead and contact management:** Centralized management of leads, contacts, and customer information.

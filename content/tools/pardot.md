@@ -29,6 +29,10 @@ Im Alltag zählt bei Pardot (Salesforce) weniger, ob jede Randfunktion vorhanden
 
 Praktisch ist Pardot (Salesforce) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pardot-editorial.webp" alt="Illustration zu Pardot: Lead-Pflege waechst als Gewaechshaus mit Kanaelen, Lampen und Uebergabepfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Lead-Generierung und -Management:** Automatisierte Lead-Erfassung, Lead-Scoring und -Nurturing zur besseren Qualifizierung.

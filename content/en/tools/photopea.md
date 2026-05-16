@@ -38,6 +38,10 @@ In day-to-day work, Photopea is less about having every edge feature and more ab
 
 Photopea is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photopea-editorial.webp" alt="Illustration for Photopea: glass layers, masks, and color panels float inside a restoration atelier" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Support for numerous file formats such as PSD, JPG, PNG, GIF, SVG, PDF, and more.

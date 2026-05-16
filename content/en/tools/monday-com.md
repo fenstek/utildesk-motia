@@ -26,6 +26,10 @@ Monday.com is aimed at companies and teams across a wide range of industries and
 - Creative and marketing teams planning and managing complex campaigns
 - IT and development departments using agile methods and task management
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/monday-com-editorial.webp" alt="Illustration for Monday.com: editorial workflow scene for Monday.com with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Task and project management:** Create, assign, and track tasks with custom views (Kanban, Gantt, calendar)

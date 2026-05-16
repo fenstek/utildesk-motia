@@ -34,6 +34,10 @@ Im Alltag zählt bei Microsoft Azure Bot Service weniger, ob jede Randfunktion v
 
 Praktisch ist Microsoft Azure Bot Service vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-bot-service-editorial.webp" alt="Illustration zu Microsoft Azure Bot Service: redaktionelle Workflow-Szene zu Microsoft Azure Bot Service mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Mehrkanal-Unterstützung:** Bereitstellung von Bots auf Websites, Microsoft Teams, Facebook Messenger, Slack, SMS und weiteren Plattformen.

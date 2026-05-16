@@ -34,6 +34,10 @@ In day-to-day work, Planoly is less about having every edge feature and more abo
 
 Planoly is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/planoly-editorial.webp" alt="Illustration for Planoly: content planning appears as a rooftop garden with rows, lanterns, and visual planting beds" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Visual content planning:** Drag-and-drop planning for Instagram posts and Stories with feed preview.

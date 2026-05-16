@@ -41,6 +41,10 @@ In day-to-day work, PhotoRoom is less about having every edge feature and more a
 
 PhotoRoom is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/photoroom-editorial.webp" alt="Illustration for PhotoRoom: product objects separate cleanly from old backgrounds inside a photo studio" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automatic background removal**: AI-based technology accurately detects and separates objects from the background.

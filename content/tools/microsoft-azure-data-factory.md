@@ -28,6 +28,10 @@ Azure Data Factory ist im Alltag ein Orchestrierungswerkzeug, kein Ersatz für s
 
 Besonders wichtig sind Wiederanlauf, Teilfehler und Kostenkontrolle. Eine Pipeline, die in der Demo funktioniert, muss im Betrieb auch mit verspäteten Dateien, geänderten Spalten und temporären Ausfällen umgehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-data-factory-editorial.webp" alt="Illustration zu Microsoft Azure Data Factory: redaktionelle Workflow-Szene zu Microsoft Azure Data Factory mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Visuelle Erstellung und Verwaltung von Datenpipelines ohne umfangreiche Programmierung  

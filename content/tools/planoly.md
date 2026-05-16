@@ -29,6 +29,10 @@ Im Alltag zählt bei Planoly weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Planoly vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/planoly-editorial.webp" alt="Illustration zu Planoly: Content-Planung erscheint als Dachgarten mit Reihen, Laternen und visuellen Pflanzfeldern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visuelle Inhaltsplanung:** Drag-and-Drop-Planung von Instagram-Posts und Stories mit Vorschau des Feeds.

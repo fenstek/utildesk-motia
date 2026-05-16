@@ -29,6 +29,10 @@ Im Alltag zählt bei Observable weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Observable vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/observable-editorial.webp" alt="Illustration zu Observable: Dateninseln und Sternpfade bilden eine offene Forschungssternwarte" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive Notebooks:** Erstellen und teilen Sie dynamische Dokumente, die Code, Visualisierungen und Text kombinieren.

@@ -41,6 +41,10 @@ In day-to-day work, Notion AI is less about having every edge feature and more a
 
 Notion AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/notion-ai-editorial.webp" alt="Illustration for Notion AI: editorial workflow scene for Notion AI with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic text generation:** Support for creating articles, emails, reports, and more.

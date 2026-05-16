@@ -20,6 +20,10 @@ OpenAI Codex is an AI-powered programming assistant that helps developers write 
 
 OpenAI Codex is aimed at software developers, programming beginners, technical teams, and companies that want to optimize their development processes. It is especially useful for those who spend a lot of time writing boilerplate code or want to quickly implement new programming concepts. Codex also offers practical support for educational institutions and self-learners who want to build programming skills.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-codex-editorial.webp" alt="Illustration for OpenAI Codex: colored code threads are woven into software structures in a mechanical loom" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Code generation from natural language:** Write simple or complex requirements in text form, and Codex generates the corresponding source code.

@@ -25,6 +25,10 @@ OpenClaw is especially suitable for companies and professionals looking for a fl
 
 Depending on the individual use case, OpenClaw can be adapted to different industries and requirements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openclaw-editorial.webp" alt="Illustration for OpenClaw: modular level pieces form a handmade side-scrolling stage set" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Autonomous execution of complex tasks by AI-driven agents.

@@ -36,6 +36,10 @@ Im Alltag zählt bei MIT App Inventor weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist MIT App Inventor vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mit-app-inventor-editorial.webp" alt="Illustration zu MIT App Inventor: redaktionelle Workflow-Szene zu MIT App Inventor mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visuelle Blockprogrammierung:** Apps werden per Drag-and-Drop mit Bausteinen erstellt, die Logik und Funktionen repräsentieren.

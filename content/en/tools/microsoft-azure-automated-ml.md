@@ -38,6 +38,10 @@ In day-to-day work, Microsoft Azure Automated ML is less about having every edge
 
 Microsoft Azure Automated ML is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-automated-ml-editorial.webp" alt="Illustration for Microsoft Azure Automated ML: model candidates, validation gates, and deployment tracks form an AutoML line" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated model generation:** Automatically tests different algorithms and hyperparameters.

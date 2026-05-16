@@ -37,6 +37,10 @@ Im Alltag zählt bei NightCafe Studio weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist NightCafe Studio vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nightcafe-studio-editorial.webp" alt="Illustration zu NightCafe Studio: redaktionelle Workflow-Szene zu NightCafe Studio mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Audioerzeugung:** Automatische Komposition von Musikstücken und Soundeffekten durch künstliche Intelligenz.

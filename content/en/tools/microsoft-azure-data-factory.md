@@ -32,6 +32,10 @@ Azure Data Factory is an orchestration tool in daily work, not a replacement for
 
 Restart behavior, partial failures, and cost control matter especially. A pipeline that works in a demo must also handle late files, changed columns, and temporary outages in production.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-data-factory-editorial.webp" alt="Illustration for Microsoft Azure Data Factory: editorial workflow scene for Microsoft Azure Data Factory with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Visual creation and management of data pipelines without extensive coding  

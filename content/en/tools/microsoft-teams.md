@@ -33,6 +33,10 @@ In day-to-day work, Microsoft Teams is less about having every edge feature and 
 
 Microsoft Teams is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-teams-editorial.webp" alt="Illustration for Microsoft Teams: editorial workflow scene for Microsoft Teams with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Chat and Messaging:** Real-time communication with individuals or groups, including emojis, GIFs, and file sharing.

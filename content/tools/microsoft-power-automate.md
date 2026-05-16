@@ -36,6 +36,10 @@ Im Alltag zählt bei Microsoft Power Automate weniger, ob jede Randfunktion vorh
 
 Praktisch ist Microsoft Power Automate vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-power-automate-editorial.webp" alt="Illustration zu Microsoft Power Automate: redaktionelle Workflow-Szene zu Microsoft Power Automate mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Workflow-Erstellung per Drag & Drop:** Intuitive Gestaltung von Automatisierungen ohne Programmieraufwand

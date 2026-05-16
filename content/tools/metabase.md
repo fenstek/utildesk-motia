@@ -29,6 +29,10 @@ Im Alltag zählt bei Metabase weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Metabase vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/metabase-editorial.webp" alt="Illustration zu Metabase: Datenfragen, Diagrammobjekte und Antwortpfade werden in einer BI-Werkstatt geordnet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Einfache Einrichtung und Bedienung:** Nutzerfreundliche Oberfläche ohne Programmierkenntnisse erforderlich.

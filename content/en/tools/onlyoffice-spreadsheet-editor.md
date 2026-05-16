@@ -40,6 +40,10 @@ OnlyOffice Spreadsheet Editor is most relevant when collaboration and file compa
 
 The important step is to verify complex spreadsheets functionally, not just visually. Formulas, protected areas, macros, charts, and simultaneous editing should be tested with real files.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/onlyoffice-spreadsheet-editor-editorial.webp" alt="Illustration for OnlyOffice Spreadsheet Editor: spreadsheet logic grows as an unlabeled greenhouse of plots and formula vines" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Comprehensive spreadsheet editing:** Support for formulas, pivot tables, charts, and conditional formatting.

@@ -34,6 +34,10 @@ Im Alltag zählt bei Onsen UI weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Onsen UI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/onsen-ui-editorial.webp" alt="Illustration zu Onsen UI: mobile Komponenten erscheinen als ruhige Badehaus-Architektur aus Modulen und Wegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Plattformübergreifende UI-Komponenten:** Umfangreiche Sammlung an nativen UI-Elementen wie Buttons, Listen, Tabs, Modals und mehr.

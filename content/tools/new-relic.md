@@ -34,6 +34,10 @@ Im Alltag zählt bei New Relic weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist New Relic vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/new-relic-editorial.webp" alt="Illustration zu New Relic: redaktionelle Workflow-Szene zu New Relic mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Application Performance Monitoring (APM):** Überwachung der Anwendungsleistung mit detaillierten Metriken zu Antwortzeiten, Fehlern und Transaktionen  

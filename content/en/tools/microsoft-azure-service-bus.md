@@ -32,6 +32,10 @@ Azure Service Bus is invisible in daily work while everything functions, which i
 
 Treating messaging only as a technical connection often hides the business logic inside the messages. Teams should know which message matters, how long it remains valid, and what may happen if delivery is duplicated.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-service-bus-editorial.webp" alt="Illustration for Microsoft Azure Service Bus: editorial workflow scene for Microsoft Azure Service Bus with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Queues:** Enable asynchronous sending and receiving of messages between producers and consumers.

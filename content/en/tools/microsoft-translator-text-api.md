@@ -38,6 +38,10 @@ In day-to-day work, Microsoft Translator Text API is less about having every edg
 
 Microsoft Translator Text API is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-translator-text-api-editorial.webp" alt="Illustration for Microsoft Translator Text API: editorial workflow scene for Microsoft Translator Text API with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic text translation:** Support for more than 70 languages with ongoing expansion.

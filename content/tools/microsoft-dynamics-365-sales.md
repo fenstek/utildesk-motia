@@ -29,6 +29,10 @@ Im Alltag zählt bei Microsoft Dynamics 365 Sales weniger, ob jede Randfunktion 
 
 Praktisch ist Microsoft Dynamics 365 Sales vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-dynamics-365-sales-editorial.webp" alt="Illustration zu Microsoft Dynamics 365 Sales: redaktionelle Workflow-Szene zu Microsoft Dynamics 365 Sales mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Lead- und Kontaktmanagement:** Zentralisierte Verwaltung von Leads, Kontakten und Kundeninformationen.

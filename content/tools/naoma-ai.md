@@ -37,6 +37,10 @@ Der wichtigste Punkt ist nicht, ob Naoma eine Demo hübsch präsentiert. Entsche
 
 Teams müssen deshalb vor dem Rollout klären, welche Aussagen erlaubt sind, welche Fragen an Menschen gehen, wie Leads bewertet werden und welche Daten ins CRM geschrieben werden. Ohne diese Leitplanken kann Naoma modern wirken, aber falsche Erwartungen erzeugen. Mit sauberem Skript und klarer Übergabe kann es dagegen genau den Engpass entschärfen, der viele SaaS-Websites bremst: Besucher sind interessiert, aber niemand führt sie sofort durch den relevanten Produktmoment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/naoma-ai-editorial.webp" alt="Illustration zu Naoma AI: redaktionelle Workflow-Szene zu Naoma AI mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-gestützte Video-Demos für Website-Besucher und Interessenten.

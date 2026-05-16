@@ -33,6 +33,10 @@ In day-to-day work, Microsoft OneNote is less about having every edge feature an
 
 Microsoft OneNote is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-onenote-editorial.webp" alt="Illustration for Microsoft OneNote: editorial workflow scene for Microsoft OneNote with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multimedia Notes**: Insert text, images, audio recordings, videos, and files into notes.

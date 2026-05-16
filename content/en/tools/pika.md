@@ -27,6 +27,10 @@ Pika is aimed at a broad audience, including:
 - Individuals or creatives looking for simple, fast video creation with AI support.
 - Beginners or users without extensive video experience who want to benefit from automated processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pika-editorial.webp" alt="Illustration for Pika: film frames unfold into glowing motion trails on a backlot" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered video creation:** Automatic generation of video sequences based on text prompts or existing media.

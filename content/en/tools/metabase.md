@@ -20,6 +20,10 @@ Metabase is an open-source business intelligence platform that enables companies
 
 Metabase is ideal for small and medium-sized businesses, start-ups, and teams in larger organizations that are looking for a straightforward solution for data analysis. It is especially suitable for users who have little or no experience with complex analytics tools but still want to create meaningful reports and dashboards. Data analysts and business intelligence teams also benefit from the ability to connect data sources and create custom queries with minimal effort.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/metabase-editorial.webp" alt="Illustration for Metabase: data questions, chart objects, and answer paths are arranged inside a BI workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Easy setup and use:** User-friendly interface with no programming knowledge required.

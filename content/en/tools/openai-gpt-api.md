@@ -22,6 +22,10 @@ The OpenAI GPT API gives developers access to powerful AI models for natural lan
 
 The OpenAI GPT API is aimed primarily at developers, companies, and startups that want to integrate AI functionality into their products or processes. Researchers and data analysts also benefit from the options for processing and generating large volumes of text. The API is suitable both for small projects and for extensive enterprise applications that require scalability and adaptability.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-api-editorial.webp" alt="Illustration for OpenAI GPT API: glowing message capsules travel through an underwater research station" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Natural language processing:** Understand and generate text in different languages and styles.

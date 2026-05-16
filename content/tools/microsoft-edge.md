@@ -35,6 +35,10 @@ Im Alltag zählt bei Microsoft Edge weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist Microsoft Edge vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-edge-editorial.webp" alt="Illustration zu Microsoft Edge: redaktionelle Workflow-Szene zu Microsoft Edge mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Chromium-basiert:** Kompatibilität mit den meisten Websites und Browser-Erweiterungen

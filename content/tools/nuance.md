@@ -36,6 +36,10 @@ Im Alltag zählt bei Nuance weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist Nuance vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nuance-editorial.webp" alt="Illustration zu Nuance: redaktionelle Workflow-Szene zu Nuance mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spracherkennung in Echtzeit:** Wandelt gesprochene Sprache schnell und genau in Text um.

@@ -20,6 +20,10 @@ Nuance Dragon is a powerful speech recognition software that converts spoken lan
 
 Nuance Dragon is suitable for professionals who regularly write texts and want to save time in the process. Lawyers, medical professionals, journalists, and other specialists in particular benefit from the fast and precise speech recognition. The software is also a valuable aid for users with physical limitations or for anyone who prefers speaking to typing. Depending on the version and plan, Nuance Dragon can be used in both personal and professional settings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nuance-dragon-editorial.webp" alt="Illustration for Nuance Dragon: editorial workflow scene for Nuance Dragon with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - Highly accurate speech recognition with adaptive software

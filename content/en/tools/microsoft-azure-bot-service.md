@@ -24,6 +24,10 @@ Microsoft Azure Bot Service is aimed primarily at businesses, developers, and or
 - Organizations that need multichannel communication across different platforms.
 - Users who want to benefit from AI-powered features such as language processing and machine learning.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-bot-service-editorial.webp" alt="Illustration for Microsoft Azure Bot Service: editorial workflow scene for Microsoft Azure Bot Service with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Multichannel support:** Deploy bots on websites, Microsoft Teams, Facebook Messenger, Slack, SMS, and other platforms.

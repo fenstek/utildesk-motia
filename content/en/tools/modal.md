@@ -20,6 +20,10 @@ Modal is a cloud-based platform specifically designed to make it easier for deve
 
 Modal is aimed primarily at software developers, data scientists, and companies that rely on cloud computing to run compute-intensive tasks. Modal is especially well suited for teams that need flexible and scalable infrastructure to train machine learning models, perform data analysis, or deploy applications with high resource requirements. Startups and mid-sized companies also benefit from its ease of use and the ability to optimize costs through on-demand usage.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/modal-editorial.webp" alt="Illustration for Modal: editorial workflow scene for Modal with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Scalable cloud infrastructure:** Automatically adjusts resources as needed.

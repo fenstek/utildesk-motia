@@ -20,6 +20,10 @@ Mycroft is an open-source voice assistant designed to offer users a flexible and
 
 Mycroft is aimed primarily at tech-savvy users who value privacy and customization. Since the voice assistant is open source, it is well suited for developers, tinkerers, and companies that want to implement their own voice assistant solution without being tied to large corporations. Users looking for an alternative to well-known voice assistants will also find Mycroft to be a privacy-friendly and flexible option. It is also a good fit for everyday use in the smart home or as a personal assistant, provided you are willing to spend some time on setup.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mycroft-editorial.webp" alt="Illustration for Mycroft: editorial workflow scene for Mycroft with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Voice control:** Recognition and processing of voice commands for hands-free operation.
