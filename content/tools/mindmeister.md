@@ -1,10 +1,11 @@
 ---
-slug: "mindmeister"
-title: "MindMeister"
-category: "Produktivität"
-price_model: "Freemium"
+slug: mindmeister
+title: MindMeister
+category: Produktivität
+price_model: Freemium
 tags: [mind-mapping, collaboration, planning, productivity]
 official_url: "https://www.mindmeister.com/"
+popularity: 0
 ---
 
 # MindMeister

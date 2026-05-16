@@ -2,10 +2,10 @@
 slug: ibm-watson-text-to-speech
 title: IBM Watson Text to Speech
 category: Produktivität
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [audio, productivity, automation, customer-support]
 official_url: "https://www.ibm.com/products/text-to-speech"
-popularity: 0
+popularity: 40
 ---
 
 # IBM Watson Text to Speech

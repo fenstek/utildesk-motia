@@ -1,10 +1,11 @@
 ---
-slug: "apple-numbers"
-title: "Apple Numbers"
-category: "Produktivität"
-price_model: "Free"
+slug: apple-numbers
+title: Apple Numbers
+category: Produktivität
+price_model: Free
 tags: [spreadsheet, office, productivity, collaboration]
 official_url: "https://support.apple.com/numbers"
+popularity: 0
 ---
 
 # Apple Numbers

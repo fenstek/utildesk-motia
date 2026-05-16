@@ -1,10 +1,11 @@
 ---
-slug: "vs-code-dev-containers"
-title: "VS Code Dev Containers"
-category: "Developer"
-price_model: "Free"
+slug: vs-code-dev-containers
+title: VS Code Dev Containers
+category: Developer
+price_model: Free
 tags: [developer-tools, containers, coding, open-source]
 official_url: "https://code.visualstudio.com/docs/devcontainers/containers"
+popularity: 0
 ---
 
 # VS Code Dev Containers

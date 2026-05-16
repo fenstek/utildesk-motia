@@ -1,10 +1,11 @@
 ---
-slug: "apache-beam"
-title: "Apache Beam"
-category: "Developer"
-price_model: "Open Source"
+slug: apache-beam
+title: Apache Beam
+category: Developer
+price_model: Open Source
 tags: [data,streaming,open-source,developer-tools]
 official_url: "https://beam.apache.org/"
+popularity: 0
 ---
 
 # Apache Beam

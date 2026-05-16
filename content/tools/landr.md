@@ -5,7 +5,7 @@ category: AI
 price_model: Einmalzahlung
 tags: [audio, productivity, automation, workflow]
 official_url: "https://www.landr.com/"
-popularity: 35
+popularity: 34
 description: LANDR ist ein Audio- und Musikwerkzeug für Mastering, Musikdistribution und Audio-Workflows für unabhängige Musiker und Creator.
 ---
 # LANDR

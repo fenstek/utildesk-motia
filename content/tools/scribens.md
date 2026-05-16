@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [writing, grammar, productivity, editing]
 official_url: "https://www.scribens.com/"
-popularity: 14
+popularity: 13
 ---
 # Scribens
 

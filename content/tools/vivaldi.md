@@ -1,10 +1,11 @@
 ---
-slug: "vivaldi"
-title: "Vivaldi"
-category: "Produktivität"
-price_model: "Free"
+slug: vivaldi
+title: Vivaldi
+category: Produktivität
+price_model: Free
 tags: [browser, web, privacy, productivity]
 official_url: "https://vivaldi.com/"
+popularity: 0
 ---
 
 # Vivaldi

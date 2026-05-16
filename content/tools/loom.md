@@ -1,10 +1,11 @@
 ---
-slug: "loom"
-title: "Loom"
-category: "Video"
-price_model: "Freemium"
+slug: loom
+title: Loom
+category: Video
+price_model: Freemium
 tags: [video, screen-recording, communication, productivity]
 official_url: "https://www.loom.com/"
+popularity: 0
 ---
 
 # Loom

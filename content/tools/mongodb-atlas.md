@@ -1,10 +1,11 @@
 ---
-slug: "mongodb-atlas"
-title: "MongoDB Atlas"
-category: "Developer"
-price_model: "Freemium"
+slug: mongodb-atlas
+title: MongoDB Atlas
+category: Developer
+price_model: Freemium
 tags: [database,cloud,developer-tools,analytics]
 official_url: "https://www.mongodb.com/products/platform/atlas-database"
+popularity: 0
 ---
 
 # MongoDB Atlas

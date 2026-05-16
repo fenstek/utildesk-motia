@@ -1,10 +1,11 @@
 ---
-slug: "opera"
-title: "Opera"
-category: "Produktivität"
-price_model: "Free"
+slug: opera
+title: Opera
+category: Produktivität
+price_model: Free
 tags: [browser, web, ai, productivity]
 official_url: "https://www.opera.com/"
+popularity: 0
 ---
 
 # Opera

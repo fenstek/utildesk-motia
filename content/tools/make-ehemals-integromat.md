@@ -2,10 +2,10 @@
 slug: make-ehemals-integromat
 title: Make (ehemals Integromat)
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
-popularity: 0
+popularity: 31
 ---
 
 # Make (ehemals Integromat)

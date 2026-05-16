@@ -1,10 +1,11 @@
 ---
-slug: "adobe-podcast"
-title: "Adobe Podcast"
-category: "Audio"
-price_model: "Freemium"
+slug: adobe-podcast
+title: Adobe Podcast
+category: Audio
+price_model: Freemium
 tags: [audio,podcast,transcription,ai]
 official_url: "https://podcast.adobe.com/"
+popularity: 0
 ---
 
 # Adobe Podcast

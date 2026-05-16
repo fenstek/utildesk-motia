@@ -1,10 +1,11 @@
 ---
-slug: "amazon-aurora"
-title: "Amazon Aurora"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: amazon-aurora
+title: Amazon Aurora
+category: Developer
+price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, aws]
 official_url: "https://aws.amazon.com/rds/aurora/"
+popularity: 0
 ---
 
 # Amazon Aurora

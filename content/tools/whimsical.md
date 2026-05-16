@@ -1,10 +1,11 @@
 ---
-slug: "whimsical"
-title: "Whimsical"
-category: "Produktivität"
-price_model: "Freemium"
+slug: whimsical
+title: Whimsical
+category: Produktivität
+price_model: Freemium
 tags: [whiteboard, diagrams, collaboration, productivity]
 official_url: "https://whimsical.com/"
+popularity: 0
 ---
 
 # Whimsical

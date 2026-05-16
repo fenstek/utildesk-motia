@@ -1,10 +1,11 @@
 ---
-slug: "talkdesk"
-title: "Talkdesk"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: talkdesk
+title: Talkdesk
+category: Produktivität
+price_model: Abonnement
 tags: [contact-center, customer-support, communication, ai]
 official_url: "https://www.talkdesk.com/"
+popularity: 0
 ---
 
 # Talkdesk

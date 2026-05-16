@@ -1,10 +1,11 @@
 ---
-slug: "cisco-contact-center"
-title: "Cisco Contact Center"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: cisco-contact-center
+title: Cisco Contact Center
+category: Produktivität
+price_model: Abonnement
 tags: [contact-center, customer-support, communication, ai]
 official_url: "https://www.webex.com/customer-experience.html"
+popularity: 0
 ---
 
 # Cisco Contact Center

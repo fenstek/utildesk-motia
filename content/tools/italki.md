@@ -1,10 +1,11 @@
 ---
-slug: "italki"
-title: "italki"
-category: "Produktivität"
-price_model: "Nutzungsbasiert"
+slug: italki
+title: italki
+category: Produktivität
+price_model: Nutzungsbasiert
 tags: [education, language, learning, marketplace]
 official_url: "https://www.italki.com/"
+popularity: 0
 ---
 
 # italki

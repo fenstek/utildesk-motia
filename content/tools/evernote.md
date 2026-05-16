@@ -1,10 +1,11 @@
 ---
-slug: "evernote"
-title: "Evernote"
-category: "Produktivität"
-price_model: "Freemium"
+slug: evernote
+title: Evernote
+category: Produktivität
+price_model: Freemium
 tags: [notes,productivity,documents,organization]
 official_url: "https://evernote.com/"
+popularity: 0
 ---
 
 # Evernote
