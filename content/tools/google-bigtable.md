@@ -1,10 +1,11 @@
 ---
-slug: "google-bigtable"
-title: "Google Bigtable"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: google-bigtable
+title: Google Bigtable
+category: Developer
+price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, analytics]
 official_url: "https://cloud.google.com/bigtable"
+popularity: 0
 ---
 
 # Google Bigtable

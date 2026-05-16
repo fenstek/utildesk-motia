@@ -1,10 +1,11 @@
 ---
-slug: "brave"
-title: "Brave"
-category: "Produktivität"
-price_model: "Free"
+slug: brave
+title: Brave
+category: Produktivität
+price_model: Free
 tags: [browser,privacy,web,ai]
 official_url: "https://brave.com/"
+popularity: 0
 ---
 
 # Brave

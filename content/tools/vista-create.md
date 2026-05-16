@@ -1,10 +1,11 @@
 ---
-slug: "vista-create"
-title: "Vista Create"
-category: "Design"
-price_model: "Freemium"
+slug: vista-create
+title: Vista Create
+category: Design
+price_model: Freemium
 tags: [design, content, marketing, templates]
 official_url: "https://create.vista.com/"
+popularity: 0
 ---
 
 # Vista Create

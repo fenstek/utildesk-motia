@@ -1,10 +1,11 @@
 ---
-slug: "couchbase"
-title: "Couchbase"
-category: "Developer"
-price_model: "Freemium"
+slug: couchbase
+title: Couchbase
+category: Developer
+price_model: Freemium
 tags: [database,cloud,developer-tools,analytics]
 official_url: "https://www.couchbase.com/"
+popularity: 0
 ---
 
 # Couchbase

@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-spanner"
-title: "Google Cloud Spanner"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-spanner
+title: Google Cloud Spanner
+category: Developer
+price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, analytics]
 official_url: "https://cloud.google.com/spanner"
+popularity: 0
 ---
 
 # Google Cloud Spanner

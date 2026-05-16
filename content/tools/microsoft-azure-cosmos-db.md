@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-azure-cosmos-db"
-title: "Microsoft Azure Cosmos DB"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: microsoft-azure-cosmos-db
+title: Microsoft Azure Cosmos DB
+category: Developer
+price_model: Nutzungsbasiert
 tags: [database,cloud,developer-tools,analytics]
 official_url: "https://azure.microsoft.com/en-us/products/cosmos-db/"
+popularity: 0
 ---
 
 # Microsoft Azure Cosmos DB

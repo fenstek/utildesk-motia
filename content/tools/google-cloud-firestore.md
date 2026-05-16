@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-firestore"
-title: "Google Cloud Firestore"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-firestore
+title: Google Cloud Firestore
+category: Developer
+price_model: Nutzungsbasiert
 tags: [database,cloud,developer-tools,serverless]
 official_url: "https://cloud.google.com/products/firestore"
+popularity: 0
 ---
 
 # Google Cloud Firestore

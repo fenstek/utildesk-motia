@@ -1,10 +1,11 @@
 ---
-slug: "zendesk-suite"
-title: "Zendesk Suite"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: zendesk-suite
+title: Zendesk Suite
+category: Produktivität
+price_model: Abonnement
 tags: [customer-support, helpdesk, crm, ai]
 official_url: "https://www.zendesk.de/service/#georedirect"
+popularity: 0
 ---
 
 # Zendesk Suite

@@ -1,10 +1,11 @@
 ---
-slug: "google-drive-for-business"
-title: "Google Drive for Business"
-category: "Produktivität"
-price_model: "Freemium"
+slug: google-drive-for-business
+title: Google Drive for Business
+category: Produktivität
+price_model: Freemium
 tags: [cloud-storage,documents,collaboration,productivity]
 official_url: "https://workspace.google.com/products/drive/"
+popularity: 0
 ---
 
 # Google Drive for Business

@@ -1,10 +1,11 @@
 ---
-slug: "airbyte"
-title: "Airbyte"
-category: "Developer"
-price_model: "Freemium"
+slug: airbyte
+title: Airbyte
+category: Developer
+price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
+popularity: 0
 ---
 
 # Airbyte

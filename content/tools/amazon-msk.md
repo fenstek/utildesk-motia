@@ -1,10 +1,11 @@
 ---
-slug: "amazon-msk"
-title: "Amazon MSK"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: amazon-msk
+title: Amazon MSK
+category: Developer
+price_model: Nutzungsbasiert
 tags: [data, streaming, kafka, cloud]
 official_url: "https://aws.amazon.com/msk/"
+popularity: 0
 ---
 
 # Amazon MSK

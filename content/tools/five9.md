@@ -1,10 +1,11 @@
 ---
-slug: "five9"
-title: "Five9"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: five9
+title: Five9
+category: Produktivität
+price_model: Abonnement
 tags: [contact-center, customer-support, communication, ai]
 official_url: "https://www.five9.com/de-de"
+popularity: 0
 ---
 
 # Five9

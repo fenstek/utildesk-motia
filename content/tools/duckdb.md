@@ -1,10 +1,11 @@
 ---
-slug: "duckdb"
-title: "DuckDB"
-category: "Developer"
-price_model: "Open Source"
+slug: duckdb
+title: DuckDB
+category: Developer
+price_model: Open Source
 tags: [database, analytics, open-source, developer-tools]
 official_url: "https://duckdb.org/"
+popularity: 0
 ---
 
 # DuckDB

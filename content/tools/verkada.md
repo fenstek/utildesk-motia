@@ -1,10 +1,11 @@
 ---
-slug: "verkada"
-title: "Verkada"
-category: "Video"
-price_model: "Abonnement"
+slug: verkada
+title: Verkada
+category: Video
+price_model: Abonnement
 tags: [video, security, hardware, analytics]
 official_url: "https://www.verkada.com/"
+popularity: 0
 ---
 
 # Verkada

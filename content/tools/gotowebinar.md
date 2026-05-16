@@ -1,10 +1,11 @@
 ---
-slug: "gotowebinar"
-title: "GoToWebinar"
-category: "Marketing"
-price_model: "Abonnement"
+slug: gotowebinar
+title: GoToWebinar
+category: Marketing
+price_model: Abonnement
 tags: [webinar, meetings, marketing, communication]
 official_url: "https://www.goto.com/webinar"
+popularity: 0
 ---
 
 # GoToWebinar

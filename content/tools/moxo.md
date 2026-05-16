@@ -1,10 +1,11 @@
 ---
-slug: "moxo"
-title: "Moxo"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: moxo
+title: Moxo
+category: Produktivität
+price_model: Abonnement
 tags: [workflow, collaboration, customer-support, automation]
 official_url: "https://www.moxo.com/"
+popularity: 0
 ---
 
 # Moxo

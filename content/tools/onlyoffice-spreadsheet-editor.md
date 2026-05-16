@@ -1,10 +1,11 @@
 ---
-slug: "onlyoffice-spreadsheet-editor"
-title: "OnlyOffice Spreadsheet Editor"
-category: "Produktivität"
-price_model: "Freemium"
+slug: onlyoffice-spreadsheet-editor
+title: OnlyOffice Spreadsheet Editor
+category: Produktivität
+price_model: Freemium
 tags: [spreadsheet, office, collaboration, productivity]
 official_url: "https://www.onlyoffice.com/sheets"
+popularity: 0
 ---
 
 # OnlyOffice Spreadsheet Editor

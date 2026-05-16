@@ -1,10 +1,11 @@
 ---
-slug: "ticktick"
-title: "TickTick"
-category: "Produktivität"
-price_model: "Freemium"
+slug: ticktick
+title: TickTick
+category: Produktivität
+price_model: Freemium
 tags: [tasks, calendar, productivity, planning]
 official_url: "https://ticktick.com/"
+popularity: 0
 ---
 
 # TickTick

@@ -1,10 +1,11 @@
 ---
-slug: "google-keep"
-title: "Google Keep"
-category: "Produktivität"
-price_model: "Free"
+slug: google-keep
+title: Google Keep
+category: Produktivität
+price_model: Free
 tags: [notes,productivity,workspace,collaboration]
 official_url: "https://workspace.google.com/products/keep/"
+popularity: 0
 ---
 
 # Google Keep

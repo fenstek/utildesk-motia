@@ -5,7 +5,7 @@ category: AI Infrastructure
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://deepinfra.com"
-popularity: 52
+popularity: 53
 ---
 
 # DeepInfra

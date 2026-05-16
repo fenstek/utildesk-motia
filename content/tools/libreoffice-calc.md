@@ -1,10 +1,11 @@
 ---
-slug: "libreoffice-calc"
-title: "LibreOffice Calc"
-category: "Produktivität"
-price_model: "Open Source"
+slug: libreoffice-calc
+title: LibreOffice Calc
+category: Produktivität
+price_model: Open Source
 tags: [spreadsheet,office,open-source,productivity]
 official_url: "https://www.libreoffice.org/#screenshots"
+popularity: 0
 ---
 
 # LibreOffice Calc

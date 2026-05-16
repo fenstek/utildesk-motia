@@ -1,10 +1,11 @@
 ---
-slug: "avigilon-control-center"
-title: "Avigilon Control Center"
-category: "Video"
-price_model: "Abonnement"
+slug: avigilon-control-center
+title: Avigilon Control Center
+category: Video
+price_model: Abonnement
 tags: [video,security,vms,analytics]
 official_url: "https://www.avigilon.com/fs/documents/ba4afb9b-7de1-459f-878c-793a494855a9.pdf"
+popularity: 0
 ---
 
 # Avigilon Control Center

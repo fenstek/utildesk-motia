@@ -1,10 +1,11 @@
 ---
-slug: "axis-camera-station"
-title: "Axis Camera Station"
-category: "Video"
-price_model: "Abonnement"
+slug: axis-camera-station
+title: Axis Camera Station
+category: Video
+price_model: Abonnement
 tags: [video, security, vms, hardware]
 official_url: "https://www.axis.com/en-us/products/axis-camera-station-5"
+popularity: 0
 ---
 
 # Axis Camera Station

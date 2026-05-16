@@ -1,10 +1,11 @@
 ---
-slug: "nextcloud"
-title: "Nextcloud"
-category: "Produktivität"
-price_model: "Open Source"
+slug: nextcloud
+title: Nextcloud
+category: Produktivität
+price_model: Open Source
 tags: [cloud-storage, collaboration, open-source, productivity]
 official_url: "https://nextcloud.com/"
+popularity: 0
 ---
 
 # Nextcloud

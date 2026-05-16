@@ -1,10 +1,11 @@
 ---
-slug: "zoho-notebook"
-title: "Zoho Notebook"
-category: "Produktivität"
-price_model: "Freemium"
+slug: zoho-notebook
+title: Zoho Notebook
+category: Produktivität
+price_model: Freemium
 tags: [notes,productivity,documents,organization]
 official_url: "https://www.zoho.com/de/notebook/?sredirect=true"
+popularity: 0
 ---
 
 # Zoho Notebook

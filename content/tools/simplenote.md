@@ -1,10 +1,11 @@
 ---
-slug: "simplenote"
-title: "Simplenote"
-category: "Produktivität"
-price_model: "Free"
+slug: simplenote
+title: Simplenote
+category: Produktivität
+price_model: Free
 tags: [notes, writing, productivity, open-source]
 official_url: "https://simplenote.com/"
+popularity: 0
 ---
 
 # Simplenote
