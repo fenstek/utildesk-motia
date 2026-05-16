@@ -1,0 +1,85 @@
+---
+slug: lever
+title: Lever
+category: Productivity
+price_model: Subscription
+tags:
+  - recruiting
+  - hr
+  - applicant tracking
+  - automation
+official_url: 'https://www.lever.co/'
+description: 'Lever is a comprehensive recruiting and applicant tracking software designed to help companies optimize and automate their hiring processes. With a focus on team collaboration and seamless integration of various HR workflows, Lever offers a platform covering the entire recruitment cycle from candidate sourcing to hiring.'
+translation: full
+---
+# Lever
+
+Lever is a comprehensive recruiting and applicant tracking software that supports companies in optimizing and automating their hiring process. With an emphasis on team collaboration and seamless integration of various HR processes, Lever offers a platform that covers the entire recruiting cycle from candidate sourcing to hiring.
+
+## Who is Lever suitable for?
+
+Lever is mainly aimed at medium-sized and large companies that want to digitize and make their recruiting processes more efficient. HR departments, HR teams, and recruiting managers benefit from the automation features and streamlined applicant management. Agencies and headhunters managing multiple clients and positions simultaneously also find Lever to be a flexible tool for candidate management.
+
+## Key Features
+
+- **Applicant Tracking System (ATS):** Centralized application management, candidate status tracking, and interview scheduling coordination.
+- **Recruitment Process Automation:** Automatic notifications, follow-ups, and workflow triggers reduce manual effort.
+- **Collaborative Tools:** Shared applicant evaluations, commenting features, and task distribution within the team.
+- **Integration with Job Boards and Career Sites:** Posting job listings on various platforms directly from Lever.
+- **Reporting & Analytics:** Insights on recruitment metrics, pipeline status, and team performance.
+- **Candidate Relationship Management (CRM):** Building and maintaining talent pools for long-term candidate engagement.
+- **Calendar and Interview Management:** Planning and syncing interviews with integrated calendars.
+- **Data Privacy and Compliance:** Features to ensure GDPR and other data protection standards compliance.
+- **API and Integrations:** Connecting with HR software, email tools, and other systems to extend functionality.
+
+## Advantages and Disadvantages
+
+### Advantages
+- Intuitive user interface facilitates onboarding and daily use.
+- Extensive automation features save time and reduce errors.
+- Strong collaboration capabilities for HR teams.
+- Wide range of integrations with other HR and business tools.
+- Scalable to meet different company sizes and needs.
+
+### Disadvantages
+- Costs can vary depending on company size and requirements and are not always transparent.
+- Some users report a learning curve due to the breadth of features.
+- The system may be oversized for very small businesses or solo users.
+
+## Pricing & Costs
+
+Lever is offered as a subscription. Exact prices depend on the chosen plan and company size. Typically, multiple plans are available with varying feature sets aimed at small, medium, and large businesses. A free trial or demo is often available to test the software before committing to a subscription.
+
+## Alternatives to Lever
+
+- **Greenhouse:** Another leading applicant tracking system with focus on scalability and integration.
+- **BambooHR:** HR software with integrated recruiting module, suitable for small and medium businesses.
+- **Workable:** Recruiting platform with ease of use and many automation options.
+- **SmartRecruiters:** End-to-end solution for applicant management and talent acquisition with global reach.
+- **JazzHR:** Cost-effective ATS for small businesses with essential features.
+
+## FAQ
+
+**1. Is Lever suitable for small businesses?**  
+Lever is primarily designed for medium and large companies but can be suitable for smaller teams depending on the plan.
+
+**2. What integrations does Lever offer?**  
+Lever supports numerous integrations, including email clients, calendars, job boards, and HR software. Details vary by plan.
+
+**3. Is there a free trial available?**  
+Many providers of Lever offer trial periods or demos to test the software before purchase.
+
+**4. How does Lever support GDPR compliance?**  
+Lever provides data encryption, access controls, and consent management features to meet privacy requirements.
+
+**5. Can Lever cover the entire recruiting process?**  
+Yes, Lever covers all steps – from job posting through application reception, interview management, to hiring.
+
+**6. How flexible are the automations in Lever?**  
+Automations can be customized to control notifications, status changes, and other workflow actions.
+
+**7. Does Lever have mobile apps?**  
+Lever offers mobile access via web browsers; specific apps may be available depending on the provider.
+
+**8. How does team collaboration work in Lever?**  
+Lever enables commenting, task assignment, and joint evaluation of candidates within the platform.
