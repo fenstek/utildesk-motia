@@ -37,6 +37,10 @@ Im Alltag zählt bei NVIDIA A100 Tensor Core GPU weniger, ob jede Randfunktion v
 
 Praktisch ist NVIDIA A100 Tensor Core GPU vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-a100-tensor-core-gpu-editorial.webp" alt="Illustration zu NVIDIA A100 Tensor Core GPU: redaktionelle Workflow-Szene zu NVIDIA A100 Tensor Core GPU mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Ampere-Architektur**: Modernste GPU-Architektur mit verbesserter Energieeffizienz und Leistung.

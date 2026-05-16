@@ -29,6 +29,10 @@ Im Alltag zählt bei Observe.AI weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Observe.AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/observe-ai-editorial.webp" alt="Illustration zu Observe.AI: Sprachwellen werden auf einer Theaterbuehne zu Coaching-Lichtspuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Sprachanalyse in Echtzeit**: Automatische Transkription und Analyse von Kundenanrufen, um Gesprächsinhalte und Stimmungen zu erfassen.

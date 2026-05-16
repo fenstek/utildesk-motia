@@ -29,6 +29,10 @@ Im Alltag zählt bei MuleSoft Anypoint Platform weniger, ob jede Randfunktion vo
 
 Praktisch ist MuleSoft Anypoint Platform vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mulesoft-anypoint-platform-editorial.webp" alt="Illustration zu MuleSoft Anypoint Platform: redaktionelle Workflow-Szene zu MuleSoft Anypoint Platform mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **API-Design und -Management:** Erstellung, Test und Verwaltung von APIs mit grafischen Tools und automatisierten Workflows.

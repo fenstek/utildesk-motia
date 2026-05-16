@@ -40,6 +40,10 @@ In day-to-day work, Microsoft Azure Speech to Text is less about having every ed
 
 Microsoft Azure Speech to Text is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-speech-to-text-editorial.webp" alt="Illustration for Microsoft Azure Speech to Text: editorial workflow scene for Microsoft Azure Speech to Text with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automatic Speech Recognition (ASR):** Converts spoken language into written text in real time or as a batch process.

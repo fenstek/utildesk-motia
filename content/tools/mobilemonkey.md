@@ -36,6 +36,10 @@ Im Alltag zählt bei Customers.ai (ehemals MobileMonkey) weniger, ob jede Randfu
 
 Praktisch ist Customers.ai (ehemals MobileMonkey) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mobilemonkey-editorial.webp" alt="Illustration zu Customers.ai (ehemals MobileMonkey): redaktionelle Workflow-Szene zu Customers.ai (ehemals MobileMonkey) mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multichannel-Chatbots:** Erstellung von Chatbots für Facebook Messenger, Instagram, SMS, WhatsApp und Webchat über eine zentrale Plattform

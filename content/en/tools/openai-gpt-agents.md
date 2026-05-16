@@ -24,6 +24,10 @@ OpenAI GPT Agents are especially suitable for companies and individuals who want
 - Small and medium-sized businesses that want to benefit from AI technologies without much effort.
 - Researchers and data analysts who use natural language for their projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-agents-editorial.webp" alt="Illustration for OpenAI GPT Agents: task routes move through a glass station with tool and approval tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Automated workflow control:** OpenAI GPT Agents can independently execute and adapt complex sequences of tasks.

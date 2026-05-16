@@ -35,6 +35,10 @@ Im Alltag zählt bei Microsoft Excel Online weniger, ob jede Randfunktion vorhan
 
 Praktisch ist Microsoft Excel Online vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-excel-online-editorial.webp" alt="Illustration zu Microsoft Excel Online: redaktionelle Workflow-Szene zu Microsoft Excel Online mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Kollaboration:** Mehrere Nutzer können gleichzeitig an derselben Tabelle arbeiten und Änderungen live sehen.

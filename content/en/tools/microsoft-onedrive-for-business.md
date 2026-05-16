@@ -20,6 +20,10 @@ Microsoft OneDrive for Business is a cloud-based storage solution designed speci
 
 OneDrive for Business is aimed at companies of all sizes that need a reliable and secure platform for file management and collaboration. It is especially suitable for teams that already use Microsoft 365 and want to benefit from seamless integration. Organizations that want to use automated workflows and AI-powered assistant features in their day-to-day work will also benefit.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-onedrive-for-business-editorial.webp" alt="Illustration for Microsoft OneDrive for Business: editorial workflow scene for Microsoft OneDrive for Business with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Cloud storage:** Secure storage of documents and files in the cloud with automatic synchronization across different devices.

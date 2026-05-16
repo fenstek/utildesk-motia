@@ -29,6 +29,10 @@ Im Alltag zählt bei Microsoft Teams weniger, ob jede Randfunktion vorhanden ist
 
 Praktisch ist Microsoft Teams vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-teams-editorial.webp" alt="Illustration zu Microsoft Teams: redaktionelle Workflow-Szene zu Microsoft Teams mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Chat und Messaging:** Echtzeitkommunikation mit Einzelpersonen oder Gruppen, inklusive Emojis, GIFs und Dateifreigabe.

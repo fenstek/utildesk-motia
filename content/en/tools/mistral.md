@@ -38,6 +38,10 @@ In day-to-day work, Mistral is less about having every edge feature and more abo
 
 Mistral is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mistral-editorial.webp" alt="Illustration for Mistral: editorial workflow scene for Mistral with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Provision of powerful AI language models in different sizes and specifications.

@@ -40,6 +40,10 @@ Im Alltag zählt bei Pika weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Pika vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pika-editorial.webp" alt="Illustration zu Pika: Filmframes entfalten sich auf einem Backlot zu leuchtenden Bewegungsspuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Videoerstellung:** Automatische Generierung von Videosequenzen basierend auf Textvorgaben oder vorhandenen Medien.

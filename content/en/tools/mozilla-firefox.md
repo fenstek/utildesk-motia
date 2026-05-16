@@ -32,6 +32,10 @@ Mozilla Firefox is valuable in daily work when browser choice should be more tha
 
 Compatibility still matters. Some enterprise or specialist apps are tested first in Chromium browsers. Teams should check critical web apps and then decide whether Firefox is the default browser, a second browser, or a testing browser.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mozilla-firefox-editorial.webp" alt="Illustration for Mozilla Firefox: editorial workflow scene for Mozilla Firefox with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Strong Privacy:** Built-in tracking protection automatically blocks many trackers and unwanted content.

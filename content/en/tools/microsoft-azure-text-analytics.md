@@ -39,6 +39,10 @@ In day-to-day work, Microsoft Azure Text Analytics is less about having every ed
 
 Microsoft Azure Text Analytics is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-text-analytics-editorial.webp" alt="Illustration for Microsoft Azure Text Analytics: editorial workflow scene for Microsoft Azure Text Analytics with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Sentiment analysis:** Detection of sentiment in text (positive, neutral, negative).

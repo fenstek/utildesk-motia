@@ -39,6 +39,10 @@ In day-to-day work, Onsen UI is less about having every edge feature and more ab
 
 Onsen UI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/onsen-ui-editorial.webp" alt="Illustration for Onsen UI: mobile components appear as calm bathhouse architecture made from modules and paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Cross-platform UI components:** A comprehensive collection of native UI elements such as buttons, lists, tabs, modals, and more.

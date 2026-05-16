@@ -26,6 +26,10 @@ Nuance is aimed at companies and professionals who want to improve their documen
 
 The software is designed for both small and medium-sized businesses as well as large enterprises, and offers different functionality depending on the plan.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nuance-editorial.webp" alt="Illustration for Nuance: editorial workflow scene for Nuance with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Real-time speech recognition:** Converts spoken language into text quickly and accurately.

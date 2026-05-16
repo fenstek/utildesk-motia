@@ -38,6 +38,10 @@ In day-to-day work, Microsoft Power Automate is less about having every edge fea
 
 Microsoft Power Automate is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-power-automate-editorial.webp" alt="Illustration for Microsoft Power Automate: editorial workflow scene for Microsoft Power Automate with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Workflow creation via drag & drop:** Intuitive design of automations without programming effort

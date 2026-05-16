@@ -40,6 +40,10 @@ Im Alltag zählt bei OpenAI API weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist OpenAI API vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-api-editorial.webp" alt="Illustration zu OpenAI API: Anfragekapseln passieren Schleusen, Modellkammern und Sicherheitsventile" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Textgenerierung:** Erstellung von menschlich wirkenden Texten basierend auf Eingabeaufforderungen.

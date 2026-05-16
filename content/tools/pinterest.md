@@ -36,6 +36,10 @@ Im Alltag zählt bei Pinterest weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Pinterest vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pinterest-editorial.webp" alt="Illustration zu Pinterest: Inspirationsbilder und Farbfelder bilden Wege in einem botanischen Ideenraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Visuelle Suchmaschine:** Nutzer können Bilder, Grafiken und Videos suchen und entdecken.

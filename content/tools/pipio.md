@@ -29,6 +29,10 @@ Im Alltag zählt bei Pipio weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Pipio vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipio-editorial.webp" alt="Illustration zu Pipio: Avatar-Produktion wird als Filmstudio mit Licht, Garderobe und Stimmlinien gezeigt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Automatisierung:** Pipio automatisiert wiederkehrende Aufgaben wie Terminplanung, E-Mail-Verwaltung oder Datenanalyse.

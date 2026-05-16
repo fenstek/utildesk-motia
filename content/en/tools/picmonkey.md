@@ -27,6 +27,10 @@ PicMonkey is aimed at a broad range of users, including:
 
 The platform is especially useful for users looking for a combination of ease of use and powerful automation features to save time and achieve professional results.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/picmonkey-editorial.webp" alt="Illustration for PicMonkey: collage shapes, color swatches, and image frames hang inside a creative garden" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Intuitive image editing:** Cropping, resizing, color corrections, effects, and retouching tools.

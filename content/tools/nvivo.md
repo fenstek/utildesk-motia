@@ -29,6 +29,10 @@ Im Alltag zählt bei NVivo weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist NVivo vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvivo-editorial.webp" alt="Illustration zu NVivo: Forschungsfragmente, Codierfaeden und Archivlichter bilden eine qualitative Themenhoehle" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenimport und -organisation**: Unterstützung zahlreicher Datenformate wie Textdokumente, PDFs, Audio-, Video- und Bilddateien sowie soziale Medien.

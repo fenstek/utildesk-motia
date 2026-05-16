@@ -28,6 +28,10 @@ Azure Service Bus ist im Alltag unsichtbar, solange alles funktioniert, und gena
 
 Wer Messaging nur als technische Verbindung betrachtet, übersieht oft die Geschäftslogik in den Nachrichten. Teams sollten wissen, welche Nachricht fachlich wichtig ist, wie lange sie gültig bleibt und was bei doppelter Zustellung passieren darf.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-service-bus-editorial.webp" alt="Illustration zu Microsoft Azure Service Bus: redaktionelle Workflow-Szene zu Microsoft Azure Service Bus mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Warteschlangen (Queues):** Ermöglichen das asynchrone Senden und Empfangen von Nachrichten zwischen Produzenten und Konsumenten.

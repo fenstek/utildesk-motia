@@ -33,6 +33,10 @@ In day-to-day work, Moz Pro is less about having every edge feature and more abo
 
 Moz Pro is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/moz-pro-editorial.webp" alt="Illustration for Moz Pro: editorial workflow scene for Moz Pro with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Keyword Research:** Find and analyze relevant keywords with search volume, difficulty, and potential.

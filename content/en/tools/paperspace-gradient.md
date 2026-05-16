@@ -34,6 +34,10 @@ In day-to-day work, Paperspace Gradient is less about having every edge feature 
 
 Paperspace Gradient is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paperspace-gradient-editorial.webp" alt="Illustration for Paperspace Gradient: GPU tents and experiment balloons form an alpine compute camp" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Provisioning of GPU- and CPU-based cloud instances for fast AI model training  

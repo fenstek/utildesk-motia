@@ -27,6 +27,10 @@ NightCafe Studio is aimed at a broad audience:
 
 Thanks to its intuitive interface, the tool is suitable for both beginners and experienced users.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nightcafe-studio-editorial.webp" alt="Illustration for NightCafe Studio: editorial workflow scene for NightCafe Studio with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-based audio generation:** Automatic composition of musical pieces and sound effects by artificial intelligence.

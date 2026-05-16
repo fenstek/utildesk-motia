@@ -34,6 +34,10 @@ Im Alltag zählt bei Microsoft Azure Automated ML weniger, ob jede Randfunktion 
 
 Praktisch ist Microsoft Azure Automated ML vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-automated-ml-editorial.webp" alt="Illustration zu Microsoft Azure Automated ML: Modellkandidaten, Validierungstore und Deployment-Spuren bilden eine AutoML-Linie" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Modellgenerierung:** Automatisches Testen verschiedener Algorithmen und Hyperparameter.

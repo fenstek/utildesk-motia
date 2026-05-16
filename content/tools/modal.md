@@ -29,6 +29,10 @@ Im Alltag zählt bei Modal weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Modal vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/modal-editorial.webp" alt="Illustration zu Modal: redaktionelle Workflow-Szene zu Modal mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Skalierbare Cloud-Infrastruktur:** Ermöglicht die automatische Anpassung der Ressourcen je nach Bedarf.

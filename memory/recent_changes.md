@@ -1,6 +1,19 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-15_
 
+## 2026-05-15 - Tool illustration batch 25
+
+- Added one landscape 1260x800 WebP editorial illustration to 30 additional manually edited tool cards in both German and English.
+- Selection continues the active registry-backed, non-illustrated sequence from `nvivo` through `poeditor`.
+- Expanded the visual direction after feedback about repeated dashboards and desks: theater stages, observatories, greenhouses, mountain lodges, canal locks, code looms, underwater labs, film backlots, gardens, rail yards, concert halls, and harbor logistics.
+- Regenerated three variants with visible alphanumeric artifacts before inserting localized image-only `tool-editorial-figure` blocks and updating the illustration registry.
+
+## 2026-05-15 - Tool illustration batch 24
+
+- Added one landscape 1260x800 WebP editorial illustration to 50 additional manually edited tool cards in both German and English.
+- Selection continues the active registry-backed, non-illustrated sequence from `metabase` through `nvidia-dgx-systeme`; the interrupted run had 43 generated PNGs and was resumed for the final seven.
+- Inserted localized image-only `tool-editorial-figure` blocks, updated the illustration registry, and kept the generated PNG originals in the Codex image cache while only WebP assets are referenced by the site.
+
 
 
 ## 2026-05-15 - Umami upgraded to v3.1.0

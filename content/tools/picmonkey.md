@@ -37,6 +37,10 @@ Im Alltag zählt bei PicMonkey weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist PicMonkey vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/picmonkey-editorial.webp" alt="Illustration zu PicMonkey: Collageformen, Farbfelder und Bildrahmen haengen in einem kreativen Garten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive Bildbearbeitung:** Zuschneiden, Größenanpassung, Farbkorrekturen, Effekte und Retuschewerkzeuge.

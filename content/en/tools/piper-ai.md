@@ -21,6 +21,10 @@ Piper AI is an intelligent tool specifically designed to optimize business proce
 
 Piper AI is primarily aimed at small and medium-sized businesses that want to automate their sales and customer service processes. Freelancers and teams working in customer management, sales, or support also benefit from its AI-based features. Piper AI is especially useful for companies that already use a CRM system and want to complement it with intelligent automations to save time and increase customer satisfaction.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/piper-ai-editorial.webp" alt="Illustration for Piper AI: prospect lights travel through a rail network of signals and handoffs" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered customer assistance:** Automatic responses to customer inquiries and support in customer communication.

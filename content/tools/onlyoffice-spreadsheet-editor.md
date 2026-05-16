@@ -36,6 +36,10 @@ OnlyOffice Spreadsheet Editor ist im Alltag vor allem dann interessant, wenn Zus
 
 Wichtig ist, komplexe Tabellen nicht nur optisch zu öffnen, sondern fachlich zu prüfen. Formeln, geschützte Bereiche, Makros, Diagramme und gleichzeitige Bearbeitung sollten mit echten Dateien getestet werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/onlyoffice-spreadsheet-editor-editorial.webp" alt="Illustration zu OnlyOffice Spreadsheet Editor: Tabellenlogik waechst als markierungsfreies Gewaechshaus aus Feldern und Formelranken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Umfangreiche Tabellenbearbeitung:** Unterstützung von Formeln, Pivot-Tabellen, Diagrammen und bedingter Formatierung.

@@ -19,6 +19,10 @@ NovelAI is an AI-powered writing platform designed specifically to generate and 
 
 NovelAI is aimed primarily at authors, writers, role-players, and creatives who want to optimize their writing process with the help of modern AI technologies. Whether you are working on a novel, a short story, or an interactive text, NovelAI can serve as a supportive tool. The platform also offers valuable features for beginners looking for inspiration as well as experienced authors who want to increase their productivity. NovelAI is equally well suited for content creators who regularly need high-quality text and want to save time in the process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/novelai-editorial.webp" alt="Illustration for NovelAI: editorial workflow scene for NovelAI with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered text generation:** Produces fluent, context-aware text based on user input.

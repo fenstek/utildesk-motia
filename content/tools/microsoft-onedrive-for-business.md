@@ -29,6 +29,10 @@ Im Alltag zählt bei Microsoft OneDrive for Business weniger, ob jede Randfunkti
 
 Praktisch ist Microsoft OneDrive for Business vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-onedrive-for-business-editorial.webp" alt="Illustration zu Microsoft OneDrive for Business: redaktionelle Workflow-Szene zu Microsoft OneDrive for Business mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloud-Speicherung:** Sichere Speicherung von Dokumenten und Dateien in der Cloud mit automatischer Synchronisierung über verschiedene Geräte.

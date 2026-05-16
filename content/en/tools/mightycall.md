@@ -19,6 +19,10 @@ MightyCall is a cloud-based phone system designed specifically for small and med
 
 MightyCall is aimed primarily at small and medium-sized businesses looking for a professional phone solution without having to build out a large infrastructure. The tool is particularly well suited for companies with customer contact, such as service providers, consulting firms, startups, and e-commerce businesses. Freelancers and teams working from different locations also benefit from the flexible features and ease of use.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mightycall-editorial.webp" alt="Illustration for MightyCall: editorial workflow scene for MightyCall with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Virtual phone numbers**: Choose and manage local or international phone numbers.

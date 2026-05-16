@@ -29,6 +29,10 @@ Im Alltag zählt bei POEditor weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist POEditor vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/poeditor-editorial.webp" alt="Illustration zu POEditor: Lokalisierungssegmente wandern als farbige Fracht durch einen markierungsfreien Hafen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Unterstützung zahlreicher Dateiformate:** Import und Export von gängigen Lokalisierungsdateien wie .po, .xliff, .json, .xml, .resx und mehr.

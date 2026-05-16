@@ -20,6 +20,10 @@ Phrasee is an AI-powered tool that specializes in optimizing and automating mark
 
 Phrasee is mainly aimed at marketing teams, e-commerce businesses, and agencies that want to automate their promotional copy while also improving quality. The tool is especially well suited for companies that need to produce large volumes of marketing content on a regular basis and value data-driven performance. Startups and small businesses can also benefit from the freemium version to gain their first experience with AI-supported copywriting.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phrasee-editorial.webp" alt="Illustration for Phrasee: paper messages are tested for lift, tone, and response inside a wind tunnel" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Automated generation of marketing copy for emails, social media, SMS, and push notifications  

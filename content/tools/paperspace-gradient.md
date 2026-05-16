@@ -29,6 +29,10 @@ Im Alltag zählt bei Paperspace Gradient weniger, ob jede Randfunktion vorhanden
 
 Praktisch ist Paperspace Gradient vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/paperspace-gradient-editorial.webp" alt="Illustration zu Paperspace Gradient: GPU-Zelte und Experimentballons bilden ein alpines Compute-Camp" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bereitstellung von GPU- und CPU-basierten Cloud-Instanzen für schnelles Training von KI-Modellen  

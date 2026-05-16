@@ -29,6 +29,10 @@ Im Alltag zählt bei Nuance Dragon weniger, ob jede Randfunktion vorhanden ist, 
 
 Praktisch ist Nuance Dragon vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nuance-dragon-editorial.webp" alt="Illustration zu Nuance Dragon: redaktionelle Workflow-Szene zu Nuance Dragon mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Hochpräzise Spracherkennung mit lernfähiger Software

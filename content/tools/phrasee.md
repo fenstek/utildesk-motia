@@ -31,6 +31,10 @@ Im Alltag zählt bei Phrasee weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Phrasee vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phrasee-editorial.webp" alt="Illustration zu Phrasee: Papierbotschaften werden in einem Windkanal auf Wirkung und Ton getestet" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatisierte Generierung von Marketingtexten für E-Mails, Social Media, SMS und Push-Nachrichten  

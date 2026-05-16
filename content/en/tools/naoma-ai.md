@@ -40,6 +40,10 @@ The most important point is not whether Naoma presents a demo nicely. The key qu
 
 Teams therefore need to define which claims are allowed, which questions go to humans, how leads are scored and which data is written to the CRM. Without those guardrails, Naoma can look modern while creating wrong expectations. With a clean script and clear handoff, it can address a real bottleneck on many SaaS websites: visitors are interested, but nobody guides them through the relevant product moment right away.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/naoma-ai-editorial.webp" alt="Illustration for Naoma AI: editorial workflow scene for Naoma AI with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - AI-assisted video demos for website visitors and prospects.

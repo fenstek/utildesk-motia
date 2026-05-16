@@ -35,6 +35,10 @@ Im Alltag zählt bei Play.ht weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Play.ht vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/play-ht-editorial.webp" alt="Illustration zu Play.ht: Sprachbaender schwingen durch eine Konzerthalle aus Orgelpfeifen und Klangkapseln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Realistische KI-Stimmen:** Große Auswahl an natürlichen Stimmen in vielen Sprachen und Dialekten.

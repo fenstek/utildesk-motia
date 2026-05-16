@@ -35,6 +35,10 @@ Im Alltag zählt bei Mistral weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Mistral vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mistral-editorial.webp" alt="Illustration zu Mistral: redaktionelle Workflow-Szene zu Mistral mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bereitstellung von leistungsstarken KI-Sprachmodellen mit verschiedenen Größen und Spezifikationen.

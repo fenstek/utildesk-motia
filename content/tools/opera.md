@@ -36,6 +36,10 @@ Opera ist im Alltag weniger ein nüchterner Standardbrowser als ein Browser mit 
 
 Gleichzeitig sollten Nutzer prüfen, ob diese Funktionen den Arbeitsfluss verbessern oder nur zusätzliche Ablenkung schaffen. Für produktives Browsen ist entscheidend, Tabs, Profile und Erweiterungen bewusst zu ordnen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/opera-editorial.webp" alt="Illustration zu Opera: Webnavigation wird als Opernhaus mit Szenenwegen, Vorhaengen und Lichtpfaden inszeniert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Integrierte KI-Tools:** Unterstützung bei der Suche und beim Verfassen von Texten durch KI-gestützte Assistenten.

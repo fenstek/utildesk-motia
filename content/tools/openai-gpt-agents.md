@@ -35,6 +35,10 @@ Im Alltag zählt bei OpenAI GPT Agents weniger, ob jede Randfunktion vorhanden i
 
 Praktisch ist OpenAI GPT Agents vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-agents-editorial.webp" alt="Illustration zu OpenAI GPT Agents: Aufgabenrouten laufen durch einen gläsernen Bahnhof mit Werkzeug- und Freigabegleisen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Workflow-Steuerung:** OpenAI GPT Agents können komplexe Aufgabenketten selbstständig ausführen und anpassen.

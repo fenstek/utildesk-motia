@@ -31,6 +31,10 @@ In day-to-day work, Open WebUI is less about having every edge feature and more 
 
 Open WebUI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/open-webui-editorial.webp" alt="Illustration for Open WebUI: a protected mountain lodge organizes local model capsules and private data routes" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Web-based interface:** Access AI models directly in the browser without local installation.

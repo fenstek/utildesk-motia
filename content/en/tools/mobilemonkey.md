@@ -24,6 +24,10 @@ Customers.ai is aimed at marketing teams, e-commerce businesses, and small to me
 - Companies that want to implement multichannel marketing automation (Messenger, SMS, email, web chat)
 - Agencies that provide chatbot solutions for clients
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mobilemonkey-editorial.webp" alt="Illustration for Customers.ai (ehemals MobileMonkey): editorial workflow scene for Customers.ai (ehemals MobileMonkey) with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Multichannel chatbots:** Create chatbots for Facebook Messenger, Instagram, SMS, WhatsApp, and web chat from a single central platform

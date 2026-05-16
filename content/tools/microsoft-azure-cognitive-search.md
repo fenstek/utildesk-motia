@@ -34,6 +34,10 @@ Azure Cognitive Search ist im Alltag weniger eine fertige Suchmaschine als ein B
 
 Teams sollten früh mit echten Suchanfragen testen. Eine Demo mit sauberen Beispieldaten sagt wenig darüber aus, ob Nutzer später falsch geschriebene Begriffe, alte Dokumente oder domänenspezifische Abkürzungen finden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cognitive-search-editorial.webp" alt="Illustration zu Microsoft Azure Cognitive Search: redaktionelle Workflow-Szene zu Microsoft Azure Cognitive Search mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Volltextsuche mit natürlicher Sprache:** Unterstützt komplexe Suchanfragen, inklusive Filter, Facetten und Rangfolge.

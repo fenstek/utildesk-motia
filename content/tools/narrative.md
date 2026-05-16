@@ -39,6 +39,10 @@ Im Alltag zählt bei Narrative weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Narrative vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/narrative-editorial.webp" alt="Illustration zu Narrative: redaktionelle Workflow-Szene zu Narrative mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Texterstellung auf Basis von vorgegebenen Themen oder Stichwörtern

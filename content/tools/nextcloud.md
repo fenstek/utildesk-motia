@@ -28,6 +28,10 @@ Nextcloud ist im Alltag nur dann angenehm, wenn Betrieb und Verantwortlichkeiten
 
 Der Vorteil gegenüber großen Cloud-Suiten entsteht nicht automatisch durch Selbsthosting. Er entsteht, wenn Organisationen wirklich wissen, welche Daten wo liegen, wer sie administriert und welche Integrationen zuverlässig betrieben werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nextcloud-editorial.webp" alt="Illustration zu Nextcloud: redaktionelle Workflow-Szene zu Nextcloud mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Dateispeicherung und -verwaltung:** Sicheres Hochladen, Synchronisieren und Teilen von Dateien über verschiedene Endgeräte hinweg.

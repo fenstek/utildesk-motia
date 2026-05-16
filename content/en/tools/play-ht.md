@@ -27,6 +27,10 @@ Play.ht is especially suitable for:
 - **Marketing and media agencies** that want to create podcasts or commercials with natural voices.
 - Anyone looking for a simple and scalable text-to-speech solution without having to produce their own voice recordings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/play-ht-editorial.webp" alt="Illustration for Play.ht: voice ribbons resonate through a concert hall of organ pipes and sound capsules" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Realistic AI voices:** Large selection of natural voices in many languages and dialects.

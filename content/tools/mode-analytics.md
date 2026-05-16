@@ -29,6 +29,10 @@ Im Alltag zählt bei Mode Analytics weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist Mode Analytics vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mode-analytics-editorial.webp" alt="Illustration zu Mode Analytics: redaktionelle Workflow-Szene zu Mode Analytics mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **SQL-basierte Datenabfragen:** Leistungsstarke SQL-Editoren mit Autovervollständigung und Syntax-Hervorhebung.

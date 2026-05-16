@@ -29,6 +29,10 @@ Im Alltag zählt bei OpenAI GPT API weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist OpenAI GPT API vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openai-gpt-api-editorial.webp" alt="Illustration zu OpenAI GPT API: leuchtende Nachrichtenkapseln reisen durch eine Unterwasser-Forschungsstation" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung:** Verstehen und Generieren von Text in verschiedenen Sprachen und Stilen.

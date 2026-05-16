@@ -42,6 +42,10 @@ In day-to-day work, Narrative is less about having every edge feature and more a
 
 Narrative is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/narrative-editorial.webp" alt="Illustration for Narrative: editorial workflow scene for Narrative with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Automatic text generation based on specified topics or keywords

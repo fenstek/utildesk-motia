@@ -37,6 +37,10 @@ Im Alltag zählt bei OpenNLP weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist OpenNLP vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/opennlp-editorial.webp" alt="Illustration zu OpenNLP: blanke Tokensteine fliessen durch Holzmaschinen, Bruecken und Sortierboegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Tokenizer:** Zerlegt Text in einzelne Wörter oder Token.

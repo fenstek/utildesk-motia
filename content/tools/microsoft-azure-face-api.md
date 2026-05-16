@@ -34,6 +34,10 @@ Bei Azure Face API ist die technische Machbarkeit nur ein Teil der Entscheidung.
 
 Teams sollten nicht mit der API starten, sondern mit Zweck, Einwilligung, Alternativen und Fehlerrisiken. Gerade bei Erkennung, Abgleich oder Zugangskontrolle müssen falsch positive und falsch negative Ergebnisse praktisch bewertet werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-face-api-editorial.webp" alt="Illustration zu Microsoft Azure Face API: redaktionelle Workflow-Szene zu Microsoft Azure Face API mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Gesichtserkennung:** Identifikation und Lokalisierung von Gesichtern in Bildern und Videos.

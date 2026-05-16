@@ -32,6 +32,10 @@ Nextcloud is pleasant in daily use only when operations and ownership are taken 
 
 The advantage over large cloud suites does not appear automatically through self-hosting. It appears when organizations truly know where data lives, who administers it, and which integrations are operated reliably.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nextcloud-editorial.webp" alt="Illustration for Nextcloud: editorial workflow scene for Nextcloud with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **File Storage and Management:** Securely upload, synchronize, and share files across multiple devices.

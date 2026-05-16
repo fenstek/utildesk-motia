@@ -40,6 +40,10 @@ In day-to-day work, Microsoft Azure Speech Service is less about having every ed
 
 Microsoft Azure Speech Service is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-speech-service-editorial.webp" alt="Illustration for Microsoft Azure Speech Service: editorial workflow scene for Microsoft Azure Speech Service with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Speech recognition (Speech-to-Text):** Converts spoken language into written text with high accuracy.

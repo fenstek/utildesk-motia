@@ -22,6 +22,10 @@ NVivo is a powerful qualitative data analysis software that helps researchers, a
 
 NVivo is primarily aimed at academics, market researchers, social scientists, students, and professionals in education and healthcare who conduct qualitative and mixed-methods research. Companies that want to analyze customer feedback, social media data, or other qualitative information also benefit from NVivo. The software is suitable for individual users as well as teams working together on research projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvivo-editorial.webp" alt="Illustration for NVivo: research fragments, coding threads, and archive lights form a qualitative evidence cave" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Data import and organization**: Support for numerous data formats such as text documents, PDFs, audio, video, and image files, as well as social media.

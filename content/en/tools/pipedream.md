@@ -18,6 +18,10 @@ Pipedream is a powerful integration and automation platform that makes it possib
 
 Pipedream is especially suitable for developers, technical teams, and businesses that want to implement automations and integrations in their workflows. The platform is ideal for users who have programming knowledge, but also for technically skilled users who want to build their own workflows quickly using ready-made building blocks and templates. Pipedream is particularly useful for startups, SaaS providers, and companies that want to connect APIs and AI services to optimize and automate processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pipedream-editorial.webp" alt="Illustration for Pipedream: event streams move through transparent pipes, valves, and branches" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Easy creation of multi-step workflows that integrate APIs, databases, and AI models

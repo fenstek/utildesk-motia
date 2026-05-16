@@ -41,6 +41,10 @@ In day-to-day work, NVIDIA A100 Tensor Core GPU is less about having every edge 
 
 NVIDIA A100 Tensor Core GPU is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-a100-tensor-core-gpu-editorial.webp" alt="Illustration for NVIDIA A100 Tensor Core GPU: editorial workflow scene for NVIDIA A100 Tensor Core GPU with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Ampere architecture**: State-of-the-art GPU architecture with improved energy efficiency and performance.

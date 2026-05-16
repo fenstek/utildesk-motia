@@ -35,6 +35,10 @@ Im Alltag zählt bei Microsoft Azure Speech to Text weniger, ob jede Randfunktio
 
 Praktisch ist Microsoft Azure Speech to Text vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-speech-to-text-editorial.webp" alt="Illustration zu Microsoft Azure Speech to Text: redaktionelle Workflow-Szene zu Microsoft Azure Speech to Text mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung (ASR):** Umwandlung von gesprochener Sprache in geschriebenen Text in Echtzeit oder als Batch-Prozess.

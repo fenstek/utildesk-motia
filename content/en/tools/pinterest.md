@@ -41,6 +41,10 @@ In day-to-day work, Pinterest is less about having every edge feature and more a
 
 Pinterest is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pinterest-editorial.webp" alt="Illustration for Pinterest: inspiration images and color palettes form paths inside a botanical idea room" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Visual search engine:** Users can search for and discover images, graphics, and videos.

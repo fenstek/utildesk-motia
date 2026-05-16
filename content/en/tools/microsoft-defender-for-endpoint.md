@@ -35,6 +35,10 @@ In day-to-day work, Microsoft Defender for Endpoint is less about having every e
 
 Microsoft Defender for Endpoint is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-defender-for-endpoint-editorial.webp" alt="Illustration for Microsoft Defender for Endpoint: editorial workflow scene for Microsoft Defender for Endpoint with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Endpoint Detection and Response (EDR):** Continuous monitoring and analysis of endpoints to detect suspicious activity.

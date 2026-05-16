@@ -38,6 +38,10 @@ In day-to-day work, Meya is less about having every edge feature and more about 
 
 Meya is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/meya-editorial.webp" alt="Illustration for Meya: chatbot paths, integrations, and support handoffs move through a service workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Visual Bot Builder:** Create chatbots without deep programming knowledge.

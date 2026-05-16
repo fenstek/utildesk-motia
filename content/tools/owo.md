@@ -37,6 +37,10 @@ Im Alltag zählt bei Owo weniger, ob jede Randfunktion vorhanden ist, sondern ob
 
 Praktisch ist Owo vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/owo-editorial.webp" alt="Illustration zu Owo: Charakterdialoge erscheinen als Masken, Lichtbaender und Grenzen auf einer Mondscheinbuehne" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Aufgabenverwaltung:** Automatisiert wiederkehrende Arbeitsabläufe und erinnert an wichtige Termine oder To-Dos.

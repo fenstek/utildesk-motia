@@ -29,6 +29,10 @@ Im Alltag zählt bei Open WebUI weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Open WebUI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/open-webui-editorial.webp" alt="Illustration zu Open WebUI: ein geschuetztes Berghaus ordnet lokale Modellkapseln und private Datenwege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Webbasierte Benutzeroberfläche:** Zugriff auf KI-Modelle direkt im Browser ohne lokale Installation.

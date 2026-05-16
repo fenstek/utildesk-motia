@@ -41,6 +41,10 @@ In day-to-day work, MIT App Inventor is less about having every edge feature and
 
 MIT App Inventor is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mit-app-inventor-editorial.webp" alt="Illustration for MIT App Inventor: editorial workflow scene for MIT App Inventor with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Visual block programming:** Apps are created with drag-and-drop blocks that represent logic and functions.

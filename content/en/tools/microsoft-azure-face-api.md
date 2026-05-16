@@ -38,6 +38,10 @@ With Azure Face API, technical feasibility is only part of the decision. In dail
 
 Teams should start with purpose, consent, alternatives, and error risks rather than with the API. Especially in recognition, matching, or access control, false positives and false negatives need practical evaluation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-face-api-editorial.webp" alt="Illustration for Microsoft Azure Face API: editorial workflow scene for Microsoft Azure Face API with tool-related work objects" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Face Detection:** Identifies and locates faces in images and videos.

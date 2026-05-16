@@ -34,6 +34,10 @@ In day-to-day work, Pixlr is less about having every edge feature and more about
 
 Pixlr is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixlr-editorial.webp" alt="Illustration for Pixlr: color prisms, masks, and light layers shape an image in a neon darkroom" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered image editing:** Automatic adjustment of brightness, contrast, colors, and removal of blemishes.

@@ -30,6 +30,10 @@ Im Alltag zählt bei NovelAI weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist NovelAI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/novelai-editorial.webp" alt="Illustration zu NovelAI: redaktionelle Workflow-Szene zu NovelAI mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Textgenerierung:** Erzeugt flüssige, kontextbezogene Texte auf Basis von Nutzereingaben.

@@ -40,6 +40,10 @@ In day-to-day work, Owo is less about having every edge feature and more about w
 
 Owo is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/owo-editorial.webp" alt="Illustration for Owo: character conversations appear as masks, light ribbons, and boundaries on a moonlit stage" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Automated task management:** Automates recurring workflows and reminds users of important appointments or to-dos.

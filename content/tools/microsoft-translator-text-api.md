@@ -35,6 +35,10 @@ Im Alltag zählt bei Microsoft Translator Text API weniger, ob jede Randfunktion
 
 Praktisch ist Microsoft Translator Text API vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-translator-text-api-editorial.webp" alt="Illustration zu Microsoft Translator Text API: redaktionelle Workflow-Szene zu Microsoft Translator Text API mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Textübersetzung:** Unterstützung von über 70 Sprachen mit kontinuierlicher Erweiterung.

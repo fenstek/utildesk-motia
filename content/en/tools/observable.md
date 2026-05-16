@@ -32,6 +32,10 @@ In day-to-day work, Observable is less about having every edge feature and more 
 
 Observable is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/observable-editorial.webp" alt="Illustration for Observable: data islands and star paths form an open computational observatory" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Interactive notebooks:** Create and share dynamic documents that combine code, visualizations, and text.

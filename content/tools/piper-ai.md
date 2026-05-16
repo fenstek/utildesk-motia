@@ -29,6 +29,10 @@ Im Alltag zählt bei Piper AI weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Piper AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/piper-ai-editorial.webp" alt="Illustration zu Piper AI: Prospect-Lichter fahren durch ein Schienennetz aus Signalen und Uebergaben" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Kundenassistenz:** Automatische Beantwortung von Kundenanfragen und Unterstützung bei der Kundenkommunikation.

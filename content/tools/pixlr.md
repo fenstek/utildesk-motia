@@ -29,6 +29,10 @@ Im Alltag zählt bei Pixlr weniger, ob jede Randfunktion vorhanden ist, sondern 
 
 Praktisch ist Pixlr vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/pixlr-editorial.webp" alt="Illustration zu Pixlr: Farbprismen, Masken und Lichtlayer formen ein Bild in einer Neon-Dunkelkammer" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Bildbearbeitung:** Automatische Anpassung von Helligkeit, Kontrast, Farben und Entfernung von Unreinheiten.

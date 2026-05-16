@@ -34,6 +34,10 @@ In day-to-day work, Observe.AI is less about having every edge feature and more 
 
 Observe.AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/observe-ai-editorial.webp" alt="Illustration for Observe.AI: voice waves become coaching light trails on a theater stage" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time speech analytics**: Automatic transcription and analysis of customer calls to capture conversation content and sentiment.

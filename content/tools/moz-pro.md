@@ -29,6 +29,10 @@ Im Alltag zählt bei Moz Pro weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Moz Pro vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/moz-pro-editorial.webp" alt="Illustration zu Moz Pro: redaktionelle Workflow-Szene zu Moz Pro mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Keyword-Recherche:** Finden und analysieren Sie relevante Keywords mit Suchvolumen, Schwierigkeitsgrad und Potenzial.

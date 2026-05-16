@@ -33,6 +33,10 @@ Azure Notification Hubs ist im Alltag dann wertvoll, wenn Push-Nachrichten nicht
 
 Gute Teams testen nicht nur, ob eine Nachricht ankommt, sondern ob sie zum richtigen Zeitpunkt, in der richtigen Sprache und mit passender Priorität erscheint. Gerade mobile Nutzer reagieren empfindlich auf zu viele oder schlecht segmentierte Pushes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-notification-hubs-editorial.webp" alt="Illustration zu Microsoft Azure Notification Hubs: redaktionelle Workflow-Szene zu Microsoft Azure Notification Hubs mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Plattformübergreifende Unterstützung:** Versand von Push-Benachrichtigungen an iOS, Android, Windows und andere Plattformen.
