@@ -39,6 +39,10 @@ In day-to-day work, Serpstat is less about having every edge feature and more ab
 
 Serpstat is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/serpstat-editorial.webp" alt="Illustration for Serpstat: search canyon with keyword paths and measurement points" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Keyword research:** Find relevant keywords with search volume, competition, and trends.

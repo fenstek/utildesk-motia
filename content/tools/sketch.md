@@ -23,6 +23,10 @@ Sketch passt zu Designern und Produktteams, die auf macOS arbeiten und UI-Dateie
 - Designübergaben und Spezifikationen für Entwicklung vorbereiten.
 - Mac-native Designarbeit mit Plugins und Bibliotheken unterstützen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sketch-editorial.webp" alt="Illustration zu Sketch: Design-Mural mit Vektorformen und Layout-Schichten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Vektorbasierte UI- und Layoutgestaltung.

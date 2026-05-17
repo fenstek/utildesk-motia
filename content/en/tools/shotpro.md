@@ -33,6 +33,10 @@ In day-to-day work, ShotPro is less about having every edge feature and more abo
 
 ShotPro is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/shotpro-editorial.webp" alt="Illustration for ShotPro: previsualization stage with camera paths and scene marks" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intuitive 3D storyboarding environment**: Create and edit scenes in a three-dimensional view to represent camera positions and movements realistically.

@@ -29,6 +29,10 @@ Im Alltag zählt bei ShotPro weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist ShotPro vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/shotpro-editorial.webp" alt="Illustration zu ShotPro: Previsualisierungsbuehne mit Kamerawegen und Szenenmarken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intuitive 3D-Storyboarding-Umgebung**: Erstellen und bearbeiten Sie Szenen in einer dreidimensionalen Ansicht, um Kamerapositionen und Bewegungen realistisch darzustellen.

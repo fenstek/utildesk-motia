@@ -33,6 +33,10 @@ In day-to-day work, Promo.com is less about having every edge feature and more a
 
 Promo.com is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/promo-com-editorial.webp" alt="Illustration for Promo.com: film backlot with scene tracks and editing light" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Large selection of templates:** Over 100,000 customizable video templates for various industries and occasions.

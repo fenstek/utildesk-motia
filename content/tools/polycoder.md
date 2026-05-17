@@ -29,6 +29,10 @@ Im Alltag zählt bei PolyCoder weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist PolyCoder vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/polycoder-editorial.webp" alt="Illustration zu PolyCoder: Code-Schmiede mit Lernbloecken und Testfunken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multilinguale Code-Unterstützung:** PolyCoder unterstützt eine Vielzahl von Programmiersprachen und erleichtert so das Schreiben und Verstehen von Code.

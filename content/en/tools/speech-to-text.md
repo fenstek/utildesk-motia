@@ -90,6 +90,10 @@ Speech-to-Text is strongest when it is treated as one component in a clearly des
 
 Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Speech-to-Text genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speech-to-text-editorial.webp" alt="Illustration for Speech-to-Text: speech canal turning waves into document tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Most speech-to-text tools operate on a freemium model:

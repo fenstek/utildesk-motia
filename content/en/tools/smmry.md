@@ -79,6 +79,10 @@ A useful evaluation starts with a real writing assignment with brief, draft, rev
 - Can create additional coordination work when SMMRY is introduced before sources, tone, review rules, and ownership remain unclear and nobody owns the open questions.
 - Without maintained ownership, SMMRY can remain another available tool rather than a reliable team routine.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smmry-editorial.webp" alt="Illustration for SMMRY: archive condensing long texts into compact signal bundles" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 SMMRY's pricing varies depending on the provider and the selected plan. There is often a free basic version with limited features and restrictions on text length or the number of summaries. For professional use, several paid plans are usually available that offer advanced features, larger text volumes, and API access. Pricing details should be checked directly with the provider.

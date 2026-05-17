@@ -32,6 +32,10 @@ Ein sinnvoller Test beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitu
 - **Guter Startpunkt:** Ein Team sollte Speechify zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Speechify enttäuscht, wenn Ausgangsmaterial, Rechte, Zielplattformen und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speechify-editorial.webp" alt="Illustration zu Speechify: Lesekabine verwandelt Seiten in warme Audio-Lichtspuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Sprache-Konvertierung:** Wandelt Texte aus Dokumenten, Webseiten oder PDFs in Audio um.

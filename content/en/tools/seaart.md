@@ -78,6 +78,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - Can create additional coordination work when SeaArt is introduced before briefing, rights, brand rules, and export formats remain vague and nobody owns the open questions.
 - Without maintained ownership, SeaArt can remain another available tool rather than a reliable team routine.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/seaart-editorial.webp" alt="Illustration for SeaArt: tidal gallery for image ideas and style variants" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 SeaArt offers a freemium model that provides a free way to get started. The free version includes basic features and a limited number of image generations or templates.

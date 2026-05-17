@@ -33,6 +33,10 @@ In day-to-day work, Presto is less about having every edge feature and more abou
 
 Presto is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/presto-editorial.webp" alt="Illustration for Presto: fast query rails through a data warehouse" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Distributed SQL queries:** Enables parallel processing of data across multiple nodes for fast results.

@@ -37,6 +37,10 @@ Im Alltag zählt bei Polybuzz weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Polybuzz vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/polybuzz-editorial.webp" alt="Illustration zu Polybuzz: Laternenmarkt aus Chat-Signalen und Antwortwegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Konversation:** Polybuzz nutzt natürliche Sprachverarbeitung (NLP), um Nutzeranfragen präzise zu verstehen und passende Antworten zu liefern.

@@ -40,6 +40,10 @@ In day-to-day work, Sony Vegas Pro is less about having every edge feature and m
 
 Sony Vegas Pro is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sony-vegas-pro-editorial.webp" alt="Illustration for Sony Vegas Pro: neon edit bay with timeline ribbons and effect light" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Multitrack video and audio editing with unlimited tracks

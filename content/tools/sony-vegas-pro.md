@@ -37,6 +37,10 @@ Im Alltag zählt bei Sony Vegas Pro weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist Sony Vegas Pro vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sony-vegas-pro-editorial.webp" alt="Illustration zu Sony Vegas Pro: Neon-Schnittbucht mit Timeline-Baendern und Effektlicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Multitrack-Video- und Audiobearbeitung mit unbegrenzten Spuren

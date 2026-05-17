@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Sora breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Sora enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sora-editorial.webp" alt="Illustration zu Sora: Wolkenkino formt Videosequenzen aus Storyboards" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Videobearbeitung:** Schneiden, Trimmen, Zusammenfügen und Anpassen von Videoclips mit einer benutzerfreundlichen Timeline.

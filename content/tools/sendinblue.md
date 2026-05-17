@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Sendinblue breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Sendinblue enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sendinblue-editorial.webp" alt="Illustration zu Sendinblue: Mail-Kanal mit Segment-Schleusen und Versandbooten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mail-Marketing:** Erstellung und Versand von Newslettern mit Drag-and-Drop-Editor und responsiven Templates  

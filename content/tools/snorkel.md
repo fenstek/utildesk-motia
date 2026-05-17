@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Snorkel nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Snorkel enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snorkel-editorial.webp" alt="Illustration zu Snorkel: Label-Hafen mit Trainingsbojen und Datenkanaelen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Programmgesteuerte Datenkennzeichnung:** Erlaubt die Erstellung von Labeling-Funktionen, um Daten automatisch zu annotieren.

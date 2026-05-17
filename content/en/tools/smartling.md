@@ -63,6 +63,10 @@ Smartling should not be judged in isolation. What matters is its place in the wo
 - May be oversized for very small teams or individual translators.
 - Point of caution: without terminology and review rules, it only produces inconsistent texts faster.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smartling-editorial.webp" alt="Illustration for Smartling: translation bridge between language islands" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Smartling offers various pricing plans that are tailored to the user's requirements. Costs vary depending on the number of languages, the volume of content, and desired additional services such as machine translation or dedicated support. There are usually no publicly available standard prices because custom quotes are prepared. Interested parties should contact the provider directly to receive a tailored offer.

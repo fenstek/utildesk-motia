@@ -57,6 +57,10 @@ The simple practical test: would someone willingly listen to the result with hea
 
 Depending on the use case, text, images, audio, customer data, research notes, or internal process information may be processed. Before production use, permissions, storage location, export paths, and deletion options should be clear. For AI or cloud-based tools, it also matters whether data is used for training, analytics, or only for providing the service.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/soundtrap-editorial.webp" alt="Illustration for Soundtrap: recording stage with tracks, instruments, and collaboration" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, Soundtrap is marked with the pricing model **Subscription**. For a real decision, check current limits, team features, export options, and whether a free or cheap entry point turns into an expensive workflow later.

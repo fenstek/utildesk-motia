@@ -29,6 +29,10 @@ Im Alltag zählt bei Presto weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist Presto vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/presto-editorial.webp" alt="Illustration zu Presto: schnelle Query-Schienen durch ein Datenlager" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Verteilte SQL-Abfragen:** Ermöglicht parallele Verarbeitung von Daten über mehrere Knoten hinweg für schnelle Ergebnisse.

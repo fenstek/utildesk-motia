@@ -29,6 +29,10 @@ Im Alltag zählt bei Proto.io weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Proto.io vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/proto-io-editorial.webp" alt="Illustration zu Proto.io: Prototypen-Theater mit klickbaren Modellkulissen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Drag-and-Drop-Editor für die einfache Erstellung interaktiver Prototypen  

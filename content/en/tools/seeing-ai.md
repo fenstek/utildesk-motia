@@ -35,6 +35,10 @@ A useful pilot for Seeing AI starts with a recurring task with input, expected o
 - **Good start for Seeing AI:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Seeing AI:** The rollout turns into extra coordination when prompts, data rights, boundaries, and review duties are not documented clearly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/seeing-ai-editorial.webp" alt="Illustration for Seeing AI: tactile city path with light signals for orientation" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text recognition (OCR):** Captures printed or handwritten text and reads it aloud.

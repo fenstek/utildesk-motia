@@ -27,6 +27,10 @@ Smartling sollte nicht isoliert bewertet werden. Wichtig ist die Stelle im Workf
 - **Messpunkt:** wie Glossar, Kontext-Screenshots und Freigaben in den Workflow eingebunden werden.
 - **Grenze:** ohne Terminologie und Review-Regeln nur schneller inkonsistente Texte produziert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smartling-editorial.webp" alt="Illustration zu Smartling: Uebersetzungsbruecke zwischen Sprachinseln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisiertes Übersetzungsmanagement:** Integrierte Workflows zur Steuerung und Automatisierung des gesamten Übersetzungsprozesses.

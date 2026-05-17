@@ -16,6 +16,10 @@ SimplyBook.me ist eine vielseitige Online-Buchungsplattform, die Unternehmen jed
 
 SimplyBook.me eignet sich vor allem für kleine und mittlere Unternehmen, Freiberufler sowie Dienstleister aus verschiedensten Branchen wie Gesundheit, Schönheit, Bildung oder Beratung. Auch größere Unternehmen mit komplexen Terminmanagement-Anforderungen können von den vielfältigen Anpassungsmöglichkeiten profitieren. Die Plattform ist ideal für alle, die ihre Buchungen digitalisieren und automatisieren möchten, um Zeit zu sparen und die Kundenzufriedenheit zu erhöhen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/simplybook-me-editorial.webp" alt="Illustration zu SimplyBook.me: Termin-Arkade mit freien Slots und Empfangswegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Online-Terminbuchung über eine eigene Webseite oder eingebettete Widgets  

@@ -41,6 +41,10 @@ In day-to-day work, Polybuzz is less about having every edge feature and more ab
 
 Polybuzz is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/polybuzz-editorial.webp" alt="Illustration for Polybuzz: lantern market made of chat signals and answer paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-powered conversation:** Polybuzz uses natural language processing (NLP) to understand user requests accurately and provide suitable responses.

@@ -34,6 +34,10 @@ A useful evaluation starts with a real development flow from local testing throu
 - **Good starting point:** Test Sourcery in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Sourcery disappoints when standards, test data, and ownership emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sourcery-editorial.webp" alt="Illustration for Sourcery: refactoring forge shaping code into clearer modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Automated code optimization:** Suggestions to improve syntax, structure, and readability.

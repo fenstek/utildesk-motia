@@ -47,6 +47,10 @@ Sketch is mainly aimed at professional designers and teams building digital prod
 - More focused on UI design and less suitable for complex graphic designs
 - Pricing can vary depending on the plan and is not always transparent
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sketch-editorial.webp" alt="Illustration for Sketch: design mural with vector forms and layout layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Sketch offers various subscription models that can vary depending on the provider and the plan chosen. Typically, there is a monthly or annual license fee that may also include team usage. For individual users, there are often more affordable options, while businesses benefit from expanded features and collaboration tools. More detailed pricing information should be obtained directly from the official Sketch website or from authorized resellers.

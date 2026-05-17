@@ -32,6 +32,10 @@ In day-to-day work, Soundraw is less about having every edge feature and more ab
 
 Soundraw is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/soundraw-editorial.webp" alt="Illustration for Soundraw: music garden with melody paths and arrangement lights" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **AI-based music creation**: Automatically generate music tracks based on selected moods, genres, and lengths.

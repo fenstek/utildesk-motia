@@ -47,6 +47,10 @@ Sendible should first prove itself in a real campaign with audience, content, di
 - **Automation:** Use recurring tasks and automatic publishing.
 - **Inbox management:** Centralize messages and comments from different networks.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sendible-editorial.webp" alt="Illustration for Sendible: social kite network over a campaign square" loading="lazy" decoding="async" />
+</figure>
+
 ## Advantages and disadvantages
 
 ### Advantages

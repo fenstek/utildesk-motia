@@ -27,6 +27,10 @@ Sourcegraph überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden s
 - **Vorher klären:** welche Repositories indexiert werden und wie Suchergebnisse in Reviews münden.
 - **Nicht unterschätzen:** ohne Rechte- und Indexkonzept sensible Codebereiche zu breit sichtbar machen kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sourcegraph-editorial.webp" alt="Illustration zu Sourcegraph: Code-Hoehle mit Suchstrahlen und Repository-Schichten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Code-Suche:** Ermöglicht die schnelle und präzise Suche in umfangreichen Codebasen über mehrere Repositories und Programmiersprachen hinweg.

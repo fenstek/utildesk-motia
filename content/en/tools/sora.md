@@ -77,6 +77,10 @@ A useful evaluation starts with one concrete asset or mockup with briefing, vers
 - Becomes harder to run when Sora enters the workflow while briefing, rights, brand rules, and export formats remain vague and the team only discovers that gap later.
 - The setup matters less than whether the team keeps Sora reviewed, cleaned up, and tied to real working rules.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sora-editorial.webp" alt="Illustration for Sora: cloud cinema shaping video sequences from storyboards" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Sora's pricing varies depending on the provider and selected plan. Typically, there are:

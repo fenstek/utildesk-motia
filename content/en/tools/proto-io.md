@@ -33,6 +33,10 @@ In day-to-day work, Proto.io is less about having every edge feature and more ab
 
 Proto.io is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/proto-io-editorial.webp" alt="Illustration for Proto.io: prototype theater with clickable model scenery" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Drag-and-drop editor for easily creating interactive prototypes  

@@ -23,6 +23,10 @@ SoapUI passt zu QA-Teams, Backend-Entwicklern, Integrationsprojekten und Unterne
 - Mock-Services für Entwicklung und QA bereitstellen.
 - Schnittstellen in legacy-nahen Systemlandschaften absichern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/soapui-editorial.webp" alt="Illustration zu SoapUI: API-Rohrlabor mit Testdruck und Antwortventilen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - API-Testing für SOAP und REST.

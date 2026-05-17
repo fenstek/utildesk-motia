@@ -69,6 +69,10 @@ For series formats, a glossary with names, product terms, and recurring technica
 
 Recordings can contain personal, confidential, or legally sensitive content. Consent, storage location, access, retention periods, and export paths should be clarified before upload.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sonix-editorial.webp" alt="Illustration for Sonix: sound archive turning audio waves into organized transcript rolls" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Sonix charges depending on minutes, plan, and team features. The price should be weighed against saved transcription time and quality requirements. The pricing model listed in the dataset is: Freemium.

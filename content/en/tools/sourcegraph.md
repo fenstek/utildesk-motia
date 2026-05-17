@@ -31,6 +31,10 @@ Sourcegraph does not stand out because it offers as many options as possible, bu
 - **Clarify first:** which repositories are indexed and how search results feed into reviews.
 - **Do not underestimate:** without a permissions and indexing concept, sensitive code areas can become too broadly visible.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sourcegraph-editorial.webp" alt="Illustration for Sourcegraph: code cave with search beams and repository layers" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent code search:** Enables fast and precise search across large codebases spanning multiple repositories and programming languages.

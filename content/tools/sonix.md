@@ -32,6 +32,10 @@ Im Alltag spart Sonix vor allem beim ersten Rohtext. Die eigentliche Redaktion b
 
 Für Teams lohnt ein Standard: Welche Genauigkeit reicht für interne Suche, und wann braucht ein Transkript Publikationsqualität? Diese Grenze verhindert falsche Sicherheit.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sonix-editorial.webp" alt="Illustration zu Sonix: Tonarchiv wandelt Audiowellen in geordnete Transkriptrollen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Transkription von Audio- und Videodateien.

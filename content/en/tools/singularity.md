@@ -90,6 +90,10 @@ Singularity is strongest when it is treated as one component in a clearly descri
 
 Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Singularity genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/singularity-editorial.webp" alt="Illustration for Singularity: orbit workshop for agents, tasks, and automations" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Singularity offers a freemium model, with basic features available at no cost. Paid subscriptions are available for advanced features, higher usage limits, or team functionality. Depending on the provider and plan, prices may vary and usually include monthly or annual subscriptions. Details on the individual plans are available on the official website.

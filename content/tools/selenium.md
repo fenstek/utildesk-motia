@@ -56,6 +56,10 @@ Bei Selenium sollte die Prüfung mit einem realen Beispiel beginnen: ob ein ande
 
 Bei Selenium geht es vor allem um Systemdaten, Logs, Zugangsdaten, Testdaten, Modelle, Metriken und interne Endpunkte. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/selenium-editorial.webp" alt="Illustration zu Selenium: Testparcours mit Browser-Toren und Pruefmarken" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Im Katalog ist Selenium mit dem Preismodell **Open Source** geführt. Für eine belastbare Entscheidung zählen hier vor allem Betrieb, Wartung, Rechenressourcen, Integrationen, Monitoring und Fachwissen; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.

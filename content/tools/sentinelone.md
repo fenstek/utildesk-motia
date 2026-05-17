@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Schutzszenario mit Alarm, Analy
 - **Guter Startpunkt:** Ein Team sollte SentinelOne zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** SentinelOne enttäuscht, wenn Zuständigkeiten, Eskalationen und Datenzugriffe nicht vorab geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sentinelone-editorial.webp" alt="Illustration zu SentinelOne: Endpoint-Schutzwall mit Signalpatrouillen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Bedrohungserkennung:** Automatisierte Erkennung von Malware, Ransomware, Exploits und anderen Angriffsmethoden durch Machine Learning.

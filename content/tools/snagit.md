@@ -16,6 +16,10 @@ Snagit ist ein vielseitiges Bildschirmaufnahme- und Screenshot-Tool, das speziel
 
 Snagit richtet sich an Fachkräfte aus verschiedenen Bereichen wie Marketing, Schulung, IT-Support und Produktentwicklung. Besonders geeignet ist es für Personen, die regelmäßig Bildschirmfotos oder Videos erstellen und diese mit Anmerkungen versehen müssen. Auch Teams, die visuelle Inhalte zur Dokumentation, Präsentation oder Fehlerbehebung benötigen, profitieren von den kollaborativen Funktionen. Dabei ist Snagit sowohl für Einsteiger als auch für erfahrene Anwender durch seine benutzerfreundliche Oberfläche gut geeignet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snagit-editorial.webp" alt="Illustration zu Snagit: Capture-Rig nimmt Bildschirmmomente und Markierungen auf" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Bildschirmaufnahmen von ganzen Bildschirmen, Fenstern oder frei wählbaren Bereichen

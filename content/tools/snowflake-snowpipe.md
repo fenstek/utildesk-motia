@@ -35,6 +35,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Guter Startpunkt:** Ein Team sollte Snowflake Snowpipe zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Snowflake Snowpipe enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snowflake-snowpipe-editorial.webp" alt="Illustration zu Snowflake Snowpipe: alpine Datenpipeline mit kontinuierlichen Ladestationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisiertes Datenladen:** Snowpipe lädt Daten automatisch, sobald sie in einem Cloud-Speicher (z. B. AWS S3, Azure Blob Storage, Google Cloud Storage) abgelegt werden.

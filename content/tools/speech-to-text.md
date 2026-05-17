@@ -37,6 +37,10 @@ Im Alltag zählt bei Speech-to-Text weniger, ob jede Randfunktion vorhanden ist,
 
 Praktisch ist Speech-to-Text vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speech-to-text-editorial.webp" alt="Illustration zu Speech-to-Text: Sprachkanal verwandelt Wellen in Dokumentbahnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatische Spracherkennung (ASR):** Umwandlung von Audio in Text in Echtzeit oder nachträglich.

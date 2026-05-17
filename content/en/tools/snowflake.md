@@ -76,6 +76,10 @@ Snowflake should first prove itself in a limited data set with a clear source, d
 - Snowflake becomes harder to run when data sources, definitions, access rights, and ownership remain unclear and the team discovers those gaps only after rollout.
 - Snowflake stays reliable only when maintenance, quality checks, and open decisions are reviewed regularly.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snowflake-editorial.webp" alt="Illustration for Snowflake: ice vault for analytics stores and secure queries" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Snowflake offers a usage-based pricing model that depends on the amount of compute power and storage used. Prices vary depending on the provider and plan. In general, there are no monthly base fees; billing is based on usage. New users often get free trial periods or credits. Companies can receive custom offers for larger volumes or special requirements.

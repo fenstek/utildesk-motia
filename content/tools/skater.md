@@ -16,6 +16,10 @@ Skater ist ein innovatives KI-gestütztes Tool, das speziell für den Bereich Sp
 
 Skater richtet sich an Sporttrainer, Coaches und Athleten, die ihre Leistung anhand datenbasierter Erkenntnisse verbessern möchten. Ebenso eignet sich das Tool für Sportanalysten und Teams, die Wert auf detaillierte Bewegungsanalysen und Performance-Optimierung legen. Auch Sportwissenschaftler und Physiotherapeuten können von den präzisen Auswertungen profitieren, um Trainings- und Rehabilitationsmaßnahmen gezielt anzupassen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/skater-editorial.webp" alt="Illustration zu Skater: Sportbahn mit Bewegungsanalyse und Coaching-Punkten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Bewegungsanalyse in Echtzeit:** Erfassung und Auswertung von Bewegungsabläufen mittels KI-gestützter Videoanalyse.

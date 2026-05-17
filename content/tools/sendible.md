@@ -30,6 +30,10 @@ Sendible sollte zuerst in einer realen Kampagne mit Zielgruppe, Inhalt, Ausspiel
 - **Guter Start für Sendible:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
 - **Risiko bei Sendible:** Kritisch wird es, wenn Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sendible-editorial.webp" alt="Illustration zu Sendible: Social-Kite-Netzwerk ueber einem Kampagnenplatz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Multi-Channel-Management:** Verwalten Sie mehrere Social-Media-Konten wie Facebook, Twitter, Instagram, LinkedIn, Pinterest und mehr an einem Ort.
