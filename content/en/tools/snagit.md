@@ -47,6 +47,10 @@ Snagit is aimed at professionals in a wide range of fields such as marketing, tr
 - Pricing can vary depending on the licensing model and is not always transparent
 - No native mobile app for screen recording
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snagit-editorial.webp" alt="Illustration for Snagit: capture rig collecting screen moments and annotations" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Snagit's pricing structure varies depending on the provider and license type. Typically, there is an individual license for private users as well as volume licenses for companies and educational institutions. A one-time payment for a perpetual license is often required, though subscription models are also sometimes available. Prices may vary by region and sales partner. A free trial allows you to test the features before purchasing.

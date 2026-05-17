@@ -32,6 +32,10 @@ Im Alltag ist Setmore dann hilfreich, wenn Verfügbarkeit ehrlich abgebildet wir
 
 Auch Texte sind wichtig: Servicebeschreibung, Dauer, Ort, Stornoregeln und Vorbereitungshinweise sparen Rückfragen. Ein gutes Buchungsformular ist kleine Kundenkommunikation, nicht nur ein Kalenderfenster.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/setmore-editorial.webp" alt="Illustration zu Setmore: Buchungsbahnhof mit Zeitfenstern und Ankunftsspuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Online-Buchungsseite für Services, Mitarbeitende und Zeiten.

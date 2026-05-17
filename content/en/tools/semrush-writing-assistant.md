@@ -33,6 +33,10 @@ In day-to-day work, SEMrush Writing Assistant is less about having every edge fe
 
 SEMrush Writing Assistant is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/semrush-writing-assistant-editorial.webp" alt="Illustration for SEMrush Writing Assistant: editorial press with SEO signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time SEO analysis**: The tool checks text for relevant keywords, keyword density, and SEO best practices.

@@ -29,6 +29,10 @@ Im Alltag zählt bei Sisense weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Sisense vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sisense-editorial.webp" alt="Illustration zu Sisense: Insight-Leuchtturm ueber Dateninseln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenintegration:** Verknüpfung von Daten aus verschiedensten Quellen, wie Datenbanken, Cloud-Diensten, APIs und mehr.

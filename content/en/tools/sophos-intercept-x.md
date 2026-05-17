@@ -32,6 +32,10 @@ Sophos Intercept X is only as useful as the response to its alerts. Protection m
 
 Teams should regularly check which devices are protected, which policies apply, and which incidents need follow-up. Ransomware protection in particular requires tests of recovery, isolation, and communication paths.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sophos-intercept-x-editorial.webp" alt="Illustration for Sophos Intercept X: quarantine lab shielding endpoints from attack signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Malware and Ransomware Protection:** Detection and blocking of malware and ransomware using signature-based and AI-powered methods.

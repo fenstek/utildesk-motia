@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Seeing AI beginnt mit einer wiederkehrenden Aufgabe m
 - **Guter Start für Seeing AI:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei Seeing AI:** Kritisch wird es, wenn Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind; dann hilft auch eine gute Oberfläche nur begrenzt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/seeing-ai-editorial.webp" alt="Illustration zu Seeing AI: taktile Stadtspur mit Lichtsignalen fuer Orientierung" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Texterkennung (OCR):** Erfasst gedruckte oder handgeschriebene Texte und liest sie laut vor.

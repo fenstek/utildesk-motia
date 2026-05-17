@@ -50,6 +50,10 @@ Smallpdf is designed for anyone who works regularly with PDF documents, from stu
 - May not be sufficient for very complex PDF editing  
 - Privacy and document storage on servers when used on the web (depending on the terms of use)
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smallpdf-editorial.webp" alt="Illustration for Smallpdf: PDF origami folding documents into clean output paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Smallpdf offers a freemium model:  

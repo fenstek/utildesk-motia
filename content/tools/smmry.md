@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassun
 - **Guter Startpunkt:** Ein Team sollte SMMRY zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** SMMRY enttäuscht, wenn Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smmry-editorial.webp" alt="Illustration zu SMMRY: Archiv verdichtet lange Texte zu kompakten Signalbuendeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Textzusammenfassung auf Basis von KI-Algorithmen.

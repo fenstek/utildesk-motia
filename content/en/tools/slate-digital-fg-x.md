@@ -34,6 +34,10 @@ A useful pilot for Slate Digital FG-X starts with a real recording with source m
 - **Good start for Slate Digital FG-X:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Slate Digital FG-X:** The value becomes weak when source material, rights, target platforms, loudness goals, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/slate-digital-fg-x-editorial.webp" alt="Illustration for Slate Digital FG-X: mastering hall with level arcs and sound pressure" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent limiter:** Maximizes loudness without creating distortion or unwanted artifacts.  

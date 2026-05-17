@@ -39,6 +39,10 @@ In day-to-day work, PolyAI is less about having every edge feature and more abou
 
 PolyAI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/polyai-editorial.webp" alt="Illustration for PolyAI: voice terrace with dialogue arcs and handoff lights" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Natural Language Processing (NLP):** Understands and interprets human language in multiple languages and dialects.  

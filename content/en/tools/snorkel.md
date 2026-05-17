@@ -69,6 +69,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - Adds complexity when data sources, definitions, and ownership are not clarified before the rollout and decisions are made informally.
 - If review and maintenance disappear, Snorkel quickly loses reliability in shared workflows.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snorkel-editorial.webp" alt="Illustration for Snorkel: labeling harbor with training buoys and data channels" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Snorkel is fundamentally free to use as open-source software. The freemium model means that core features are available at no cost, while advanced features or commercial support options may be chargeable depending on the provider or plan. For companies that need professional services or scalable cloud solutions, it is advisable to check the respective licensing and support models directly with the provider.

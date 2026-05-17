@@ -32,6 +32,10 @@ In day-to-day work, Qlik is less about having every edge feature and more about 
 
 Qlik is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qlik-editorial.webp" alt="Illustration for Qlik: prism observatory for data relationships" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Data integration:** Connects and combines data from numerous sources such as databases, cloud services, files, and APIs.

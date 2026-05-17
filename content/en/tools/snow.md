@@ -85,6 +85,10 @@ Snow is strongest when it is treated as one component in a clearly described wor
 
 Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Snow genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snow-editorial.webp" alt="Illustration for Snow: frosted portrait studio with image filters and light masks" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Snow offers a freemium pricing model that can include the following options (prices vary depending on provider and plan):

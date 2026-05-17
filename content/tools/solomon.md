@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - **Guter Startpunkt:** Für Solomon eignet sich ein überschaubarer Testlauf mit realem Material, klarer Zuständigkeit und einer festen Abnahme am Ende.
 - **Häufiger Stolperstein:** Solomon enttäuscht, wenn Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/solomon-editorial.webp" alt="Illustration zu Solomon: Lernkarten-Halle mit Assistenzpfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Textgenerierung und -analyse**: Automatisches Erstellen von Texten, Zusammenfassungen und Antworten auf komplexe Fragen.

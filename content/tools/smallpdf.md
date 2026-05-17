@@ -23,6 +23,10 @@ Smallpdf passt zu Büroarbeit, Studium, kleinen Unternehmen und Menschen, die re
 - Einfache Unterschriften- und Formularprozesse erledigen.
 - Schnelle PDF-Hilfe im Browser nutzen, wenn keine Spezialsoftware verfügbar ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smallpdf-editorial.webp" alt="Illustration zu Smallpdf: PDF-Origami faltet Dokumente in klare Ausgabewege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Viele kleine PDF-Werkzeuge in einer Oberfläche.

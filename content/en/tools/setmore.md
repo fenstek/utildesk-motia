@@ -68,6 +68,10 @@ After launch, real bookings should be evaluated: Where do users drop off, which 
 
 Appointment bookings often contain personal data and sometimes sensitive concerns. Required fields should be kept to a minimum, access should be limited, and notes on storage, cancellation, and communication should be clear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/setmore-editorial.webp" alt="Illustration for Setmore: booking station with time slots and arrival tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Setmore offers free and paid plans depending on the feature set. The key question is whether reminders, payments, integrations, or multiple staff members are needed. The pricing model recorded in the dataset is: Depends on plan.

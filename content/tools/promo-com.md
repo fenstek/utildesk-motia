@@ -29,6 +29,10 @@ Im Alltag zählt bei Promo.com weniger, ob jede Randfunktion vorhanden ist, sond
 
 Praktisch ist Promo.com vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/promo-com-editorial.webp" alt="Illustration zu Promo.com: Film-Backlot mit Szenenbahnen und Schnittlicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Große Auswahl an Vorlagen:** Über 100.000 anpassbare Videovorlagen für verschiedene Branchen und Anlässe.

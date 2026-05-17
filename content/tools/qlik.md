@@ -29,6 +29,10 @@ Im Alltag zählt bei Qlik weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Qlik vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qlik-editorial.webp" alt="Illustration zu Qlik: Prisma-Observatorium fuer Datenbeziehungen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenintegration:** Verbindung und Zusammenführung von Daten aus zahlreichen Quellen wie Datenbanken, Cloud-Diensten, Dateien und APIs.

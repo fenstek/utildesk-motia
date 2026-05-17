@@ -29,6 +29,10 @@ Im Alltag zählt bei SEMrush Writing Assistant weniger, ob jede Randfunktion vor
 
 Praktisch ist SEMrush Writing Assistant vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/semrush-writing-assistant-editorial.webp" alt="Illustration zu SEMrush Writing Assistant: Redaktionspresse mit SEO-Signalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **SEO-Analyse in Echtzeit**: Das Tool prüft den Text auf relevante Keywords, Keyword-Dichte und SEO-Best Practices.

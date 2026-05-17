@@ -41,6 +41,10 @@ A useful evaluation starts with a real service case with intake, prioritization,
 - **Good starting point:** Keep the first Solvea trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Solvea disappoints when channels, ownership, and escalation rules are not clearly defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/solvea-editorial.webp" alt="Illustration for Solvea: service roundabout for appointments, requests, and responses" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Conversational AI:** Automated responses to customer inquiries in natural language

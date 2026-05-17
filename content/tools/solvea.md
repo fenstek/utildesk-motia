@@ -37,6 +37,10 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Solvea nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Solvea enttäuscht, wenn Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/solvea-editorial.webp" alt="Illustration zu Solvea: Service-Kreisverkehr fuer Termine, Anliegen und Antworten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Konversationelle KI:** Automatisierte Beantwortung von Kundenanfragen in natürlicher Sprache

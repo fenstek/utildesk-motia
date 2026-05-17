@@ -21,6 +21,10 @@ Skater is an innovative AI-powered tool specifically designed for sports, coachi
 
 Skater is aimed at sports trainers, coaches, and athletes who want to improve performance based on data-driven insights. It is also suitable for sports analysts and teams that value detailed movement analysis and performance optimization. Sports scientists and physiotherapists can also benefit from the precise evaluations to adjust training and rehabilitation measures in a targeted way.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/skater-editorial.webp" alt="Illustration for Skater: sports track with motion analysis and coaching points" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Real-time movement analysis:** Capture and evaluate movement patterns using AI-powered video analysis.

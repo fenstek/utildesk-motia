@@ -37,6 +37,10 @@ Im Alltag zählt bei Semantic Scholar weniger, ob jede Randfunktion vorhanden is
 
 Praktisch ist Semantic Scholar vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/semantic-scholar-editorial.webp" alt="Illustration zu Semantic Scholar: Forschungs-Planetarium mit Quellenbahnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Suche:** Nutzt maschinelles Lernen, um relevante Artikel auch bei komplexen Suchanfragen zu finden.

@@ -78,6 +78,10 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 - Becomes harder to run when Sendinblue enters the workflow while audiences, tracking, consent, and follow-up processes are not clearly defined and the team only discovers that gap later.
 - The setup matters less than whether the team keeps Sendinblue reviewed, cleaned up, and tied to real working rules.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sendinblue-editorial.webp" alt="Illustration for Sendinblue: mail canal with segment locks and delivery boats" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Sendinblue offers a freemium model with limited features and a monthly sending limit. Paid subscriptions are tiered by plan and include, among other things, higher sending quotas, expanded automations, and additional features such as A/B testing and priority support. There is no one-time payment; billing is monthly or yearly. Individual quotes are available for larger companies or special requirements.

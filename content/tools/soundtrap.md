@@ -56,6 +56,10 @@ Bei Soundtrap sollte die Prüfung mit einem realen Beispiel beginnen: ob das Erg
 
 Bei Soundtrap geht es vor allem um Audiodateien, Stimmen, Projektmetadaten, Lizenzen und Veröffentlichungsinformationen. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/soundtrap-editorial.webp" alt="Illustration zu Soundtrap: Recording-Buehne mit Spuren, Instrumenten und Kollaboration" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Im Katalog ist Soundtrap mit dem Preismodell **Abonnement** geführt. Für eine belastbare Entscheidung zählen hier vor allem Exportqualität, Nutzungsrechte, Speicher, Teamzugänge und wiederkehrende Produktionsmenge; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.

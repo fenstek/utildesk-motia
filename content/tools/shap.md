@@ -29,6 +29,10 @@ Im Alltag zählt bei SHAP (SHapley Additive exPlanations) weniger, ob jede Randf
 
 Praktisch ist SHAP (SHapley Additive exPlanations) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/shap-editorial.webp" alt="Illustration zu SHAP: Erklaer-Kristalle zeigen Modellbeitraege und Einflusslinien" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Modellagnostische Erklärungen:** SHAP kann mit verschiedenen Modelltypen wie Entscheidungsbäumen, neuronalen Netzen oder Support Vector Machines verwendet werden.

@@ -53,6 +53,10 @@ Semantic Scholar is strongest when it reduces friction in an existing workflow i
 - **User profiles:** Ability to save favorites and manage search history.
 - **Automatic summaries:** Generates short abstracts that make it quick to grasp the content of an article.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/semantic-scholar-editorial.webp" alt="Illustration for Semantic Scholar: research planetarium with source orbits" loading="lazy" decoding="async" />
+</figure>
+
 ## Advantages and disadvantages
 
 ### Advantages

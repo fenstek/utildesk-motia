@@ -29,6 +29,10 @@ Im Alltag zählt bei Soundraw weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Soundraw vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/soundraw-editorial.webp" alt="Illustration zu Soundraw: Musikgarten mit Melodiepfaden und Arrangement-Lichtern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Musikkreation**: Automatisches Generieren von Musikstücken basierend auf ausgewählten Stimmungen, Genres und Längen.

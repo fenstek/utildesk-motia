@@ -48,7 +48,11 @@ SimplyBook.me is especially suitable for small and medium-sized businesses, free
 - Some advanced features are only available in higher-priced plans  
 - Setup and customization may initially seem complex for beginners  
 - Depending on the plan, additional costs may apply for SMS reminders  
-- Design customization is limited without programming knowledge  
+- Design customization is limited without programming knowledge
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/simplybook-me-editorial.webp" alt="Illustration for SimplyBook.me: booking arcade with open slots and reception paths" loading="lazy" decoding="async" />
+</figure>
 
 ## Pricing & costs
 

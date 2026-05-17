@@ -49,6 +49,10 @@ Shotcut makes sense when it has a clear place in the process: intake, production
 
 Local video editing can be privacy-friendly as long as raw footage is not unnecessarily uploaded to cloud services.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/shotcut-editorial.webp" alt="Illustration for Shotcut: film splicing atelier with clips and color tracks" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 In the catalog, Shotcut is marked with the pricing model **Free**. For a real decision, check the current provider pricing, limits, team features, and export options directly.

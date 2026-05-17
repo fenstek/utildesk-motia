@@ -35,6 +35,10 @@ Im Alltag zählt bei PolyAI weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist PolyAI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/polyai-editorial.webp" alt="Illustration zu PolyAI: Stimmen-Terrasse mit Dialogboegen und Uebergabe-Lichtern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Natürliche Sprachverarbeitung (Natural Language Processing, NLP):** Versteht und interpretiert menschliche Sprache in mehreren Sprachen und Dialekten.  

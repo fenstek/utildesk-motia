@@ -49,6 +49,10 @@ SoapUI is aimed at software developers, QA teams, and test automation engineers 
 - Performance tests are not as extensive as those in specialized tools
 - Documentation is sometimes unclear or outdated
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/soapui-editorial.webp" alt="Illustration for SoapUI: API plumbing lab with test pressure and response valves" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 SoapUI is available in a free open-source version that covers many basic features. For professional requirements, SoapUI Pro (now part of ReadyAPI) offers additional features and support. Pricing for the Pro version varies depending on the license type and usage period and is usually available as a subscription. Depending on the provider and plan, enterprise licenses with additional services may also be available.

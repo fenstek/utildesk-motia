@@ -37,6 +37,10 @@ Im Alltag zählt bei Sift weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Sift vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sift-editorial.webp" alt="Illustration zu Sift: Signalsieb trennt Muster, Risiken und klare Hinweise" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligente Datenfilterung:** Sift verwendet KI-Algorithmen, um relevante Informationen aus komplexen und umfangreichen Datensätzen herauszufiltern.

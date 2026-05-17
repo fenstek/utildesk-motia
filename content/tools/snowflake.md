@@ -30,6 +30,10 @@ Als Prüfstück für Snowflake eignet sich einem begrenzten Datensatz mit klarer
 - **Guter Start für Snowflake:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Snowflake:** Der Einsatz kippt in Zusatzarbeit, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snowflake-editorial.webp" alt="Illustration zu Snowflake: Eis-Tresor fuer Analysebestaende und sichere Abfragen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloud-native Architektur:** Snowflake läuft vollständig in der Cloud und nutzt die Skalierbarkeit von Anbietern wie AWS, Azure und Google Cloud.

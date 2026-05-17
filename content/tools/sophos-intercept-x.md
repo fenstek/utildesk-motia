@@ -28,6 +28,10 @@ Sophos Intercept X ist im Alltag nur so gut wie die Reaktion auf seine Meldungen
 
 Teams sollten regelmäßig prüfen, welche Geräte geschützt sind, welche Richtlinien greifen und welche Vorfälle nachbearbeitet werden müssen. Gerade Ransomware-Schutz verlangt Tests von Wiederherstellung, Isolation und Kommunikationswegen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sophos-intercept-x-editorial.webp" alt="Illustration zu Sophos Intercept X: Quarantaene-Labor schuetzt Endpunkte vor Angriffssignalen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Malware- und Ransomware-Schutz:** Erkennung und Blockierung von Schadsoftware und Erpressungstrojanern durch signaturbasierte und KI-gestützte Verfahren.

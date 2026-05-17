@@ -31,6 +31,10 @@ In day-to-day work, Smartsheet is less about having every edge feature and more 
 
 Smartsheet is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smartsheet-editorial.webp" alt="Illustration for Smartsheet: workflow scaffold with task modules and approval paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Spreadsheet-based project planning:** Intuitive creation and management of project plans in tabular form.

@@ -51,6 +51,10 @@ Bei regelmäßiger Content-Produktion sollten Vorlagen, Exportprofile und Ablage
 
 Lokaler Videoschnitt kann datenschutzfreundlich sein, solange Rohmaterial nicht unnötig in Cloud-Dienste gelangt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/shotcut-editorial.webp" alt="Illustration zu Shotcut: Filmspleiss-Atelier mit Clips und Farbspuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Preise & Kosten
 
 Shotcut ist im Katalog als **Kostenlos** geführt. Es fallen keine Lizenzkosten an, aber Zeit für Einarbeitung, Exporttests und Systemleistung sollte eingeplant werden.

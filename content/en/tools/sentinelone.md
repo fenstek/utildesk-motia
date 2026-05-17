@@ -73,6 +73,10 @@ A useful evaluation starts with a limited protection scenario with alert, analys
 - Can create additional coordination work when SentinelOne is introduced before ownership, escalation paths, and data access are not clarified in advance and nobody owns the open questions.
 - Without maintained ownership, SentinelOne can remain another available tool rather than a reliable team routine.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sentinelone-editorial.webp" alt="Illustration for SentinelOne: endpoint rampart with signal patrols" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 SentinelOne is offered on a subscription basis. Exact costs depend on the chosen plan, the number of endpoints, and additional features. In most cases, custom quotes are available and tailored to the needs and size of the company. Prospective customers should request pricing directly from the provider or authorized partners, as no fixed pricing information is publicly available.

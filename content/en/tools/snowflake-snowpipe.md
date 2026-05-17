@@ -40,6 +40,10 @@ A useful evaluation starts with a limited data set with a clear source, a define
 - **Good starting point:** Test Snowflake Snowpipe in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Snowflake Snowpipe disappoints when data sources, definitions, and ownership are not clarified.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snowflake-snowpipe-editorial.webp" alt="Illustration for Snowflake Snowpipe: alpine data pipeline with continuous loading stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Automated data loading:** Snowpipe automatically loads data as soon as it is placed in cloud storage (e.g. AWS S3, Azure Blob Storage, Google Cloud Storage).

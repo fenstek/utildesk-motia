@@ -30,6 +30,10 @@ Ein belastbarer Pilot für Slate Digital FG-X beginnt mit einer echten Aufnahme 
 - **Guter Start für Slate Digital FG-X:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Slate Digital FG-X:** Ohne klare Regeln wird der Nutzen schwach, sobald Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/slate-digital-fg-x-editorial.webp" alt="Illustration zu Slate Digital FG-X: Mastering-Halle mit Pegelboegen und Klangdruck" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Intelligenter Limiter:** Maximiert die Lautstärke, ohne Verzerrungen oder unerwünschte Artefakte zu erzeugen.  

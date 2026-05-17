@@ -34,6 +34,10 @@ A useful evaluation starts with a real recording with source material, editing, 
 - **Good starting point:** Test Speechify in one real workflow where input, output, and review are described before the first run.
 - **Common pitfall:** Speechify disappoints when source material, rights, target platforms, and quality standards are not defined.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speechify-editorial.webp" alt="Illustration for Speechify: reading booth turning pages into warm audio light trails" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text-to-speech conversion:** Converts text from documents, websites, or PDFs into audio.

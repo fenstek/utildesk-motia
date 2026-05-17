@@ -133,3 +133,7 @@ It becomes risky when prompts, data permissions, review duties, and boundaries a
 - The value of Solomon depends on whether review, data care, and ownership are actually followed after the first setup.
 
 Beyond the list price, Solomon should be evaluated by the cost of adoption. Relevant factors include usage limits, model access, privacy, integrations, and human review. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/solomon-editorial.webp" alt="Illustration for Solomon: learning map hall with assistance paths" loading="lazy" decoding="async" />
+</figure>

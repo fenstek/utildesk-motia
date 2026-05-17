@@ -29,6 +29,10 @@ Im Alltag zählt bei Smartsheet weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Smartsheet vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/smartsheet-editorial.webp" alt="Illustration zu Smartsheet: Workflow-Geruest mit Aufgabenmodulen und Freigabewegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Tabellenbasierte Projektplanung:** Intuitive Erstellung und Verwaltung von Projektplänen in tabellarischer Form.

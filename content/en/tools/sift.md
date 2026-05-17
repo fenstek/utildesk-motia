@@ -39,6 +39,10 @@ In day-to-day work, Sift is less about having every edge feature and more about 
 
 Sift is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sift-editorial.webp" alt="Illustration for Sift: signal sieve separating patterns, risk, and clear evidence" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Intelligent data filtering:** Sift uses AI algorithms to filter relevant information from complex and extensive datasets.

@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Guter Startpunkt:** Ein Team sollte Sourcery zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Sourcery enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sourcery-editorial.webp" alt="Illustration zu Sourcery: Refactoring-Schmiede formt Code in klarere Module" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Code-Optimierung:** Vorschläge zur Verbesserung von Syntax, Struktur und Lesbarkeit.

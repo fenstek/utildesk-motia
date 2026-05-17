@@ -83,6 +83,10 @@ Qlik Sense is strongest when it is treated as one component in a clearly describ
 
 Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Qlik Sense genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qlik-sense-editorial.webp" alt="Illustration for Qlik Sense: data greenhouse with growing analysis paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Qlik Sense pricing varies depending on the provider, license type, and scope of use. Typically, there are different models, including:

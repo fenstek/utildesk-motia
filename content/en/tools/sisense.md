@@ -80,6 +80,10 @@ Sisense is strongest when it is treated as one component in a clearly described 
 
 Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Sisense genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sisense-editorial.webp" alt="Illustration for Sisense: insight lighthouse over data islands" loading="lazy" decoding="async" />
+</figure>
+
 ## Pricing & costs
 
 Sisense pricing varies depending on company size, number of users, required features, and deployment type (cloud or on-premise). In general, Sisense does not offer fixed standard prices, but instead provides custom quotes based on customer requirements. Interested parties should make a direct inquiry to receive a suitable price offer.

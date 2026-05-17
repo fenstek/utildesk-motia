@@ -35,6 +35,10 @@ In day-to-day work, SHAP (SHapley Additive exPlanations) is less about having ev
 
 SHAP (SHapley Additive exPlanations) is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/shap-editorial.webp" alt="Illustration for SHAP: explanation crystals showing model contributions and influence lines" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Model-agnostic explanations:** SHAP can be used with various model types such as decision trees, neural networks, or support vector machines.

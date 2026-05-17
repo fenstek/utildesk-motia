@@ -34,6 +34,10 @@ Im Alltag zählt bei Qlik Sense weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Qlik Sense vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/qlik-sense-editorial.webp" alt="Illustration zu Qlik Sense: Daten-Gewaechshaus mit wachsenden Analysepfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Datenvisualisierung:** Interaktive Dashboards mit vielfältigen Diagrammtypen und anpassbaren Layouts.

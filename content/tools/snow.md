@@ -35,6 +35,10 @@ Im Alltag zählt bei Snow weniger, ob jede Randfunktion vorhanden ist, sondern o
 
 Praktisch ist Snow vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/snow-editorial.webp" alt="Illustration zu Snow: frostiges Portraetstudio mit Bildfiltern und Lichtmasken" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - KI-gestützte Bildgenerierung und -bearbeitung

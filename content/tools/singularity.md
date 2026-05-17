@@ -37,6 +37,10 @@ Im Alltag zählt bei Singularity weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Singularity vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/singularity-editorial.webp" alt="Illustration zu Singularity: Orbit-Werkstatt fuer Agenten, Aufgaben und Automationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Automatisierte Aufgabenverwaltung:** Erstellung und Steuerung von Workflows zur Automatisierung wiederkehrender Tätigkeiten.

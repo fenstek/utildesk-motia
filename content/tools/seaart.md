@@ -36,6 +36,10 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Guter Startpunkt:** Ein Team sollte SeaArt zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** SeaArt enttäuscht, wenn Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/seaart-editorial.webp" alt="Illustration zu SeaArt: Gezeiten-Galerie fuer Bildideen und Stilvarianten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-basierte Bildgenerierung:** Automatisches Erstellen von Bildern und Grafiken basierend auf Textbeschreibungen oder Vorlagen.
