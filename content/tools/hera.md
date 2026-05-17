@@ -7,7 +7,7 @@ tags: ["video", "ai", "motion-design", "launch-video", "marketing"]
 official_url: "https://hera.video/"
 affiliate_url: "https://hera.video/"
 created_at: 2026-05-12
-popularity: 91
+popularity: 92
 ---
 
 # Hera

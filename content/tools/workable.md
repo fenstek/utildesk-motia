@@ -1,10 +1,11 @@
 ---
-slug: "workable"
-title: "Workable"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: workable
+title: Workable
+category: Produktivität
+price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.workable.com/"
+popularity: 0
 ---
 
 # Workable

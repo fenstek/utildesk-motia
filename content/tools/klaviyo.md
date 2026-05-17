@@ -1,10 +1,11 @@
 ---
-slug: "klaviyo"
-title: "Klaviyo"
-category: "Marketing"
-price_model: "Abonnement"
+slug: klaviyo
+title: Klaviyo
+category: Marketing
+price_model: Abonnement
 tags: [email, marketing, crm, automation]
 official_url: "https://www.klaviyo.com/de/"
+popularity: 0
 ---
 
 # Klaviyo

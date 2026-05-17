@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [meetings, webinar, communication, elearning]
 official_url: "https://www.adobe.com/products/adobeconnect.html"
-popularity: 79
+popularity: 82
 ---
 
 # Adobe Connect

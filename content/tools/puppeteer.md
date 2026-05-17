@@ -1,10 +1,11 @@
 ---
-slug: "puppeteer"
-title: "Puppeteer"
-category: "Developer"
-price_model: "Open Source"
+slug: puppeteer
+title: Puppeteer
+category: Developer
+price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://pptr.dev/"
+popularity: 0
 ---
 
 # Puppeteer

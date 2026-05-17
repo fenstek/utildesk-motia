@@ -1,10 +1,11 @@
 ---
-slug: "brevo"
-title: "Brevo"
-category: "Marketing"
-price_model: "Freemium"
+slug: brevo
+title: Brevo
+category: Marketing
+price_model: Freemium
 tags: [email, marketing, crm, automation]
 official_url: "https://www.brevo.com/"
+popularity: 0
 ---
 
 # Brevo

@@ -6,7 +6,7 @@ price_model: Freemium
 tags: [ai,audio]
 official_url: "https://www.speechmatics.com/"
 created_at: 2026-02-14
-popularity: 11
+popularity: 0
 description: Speechmatics bietet automatische Spracherkennung und Transkription für Audio, Video, Meetings und mehrsprachige Workflows.
 ---
 # Speechmatics

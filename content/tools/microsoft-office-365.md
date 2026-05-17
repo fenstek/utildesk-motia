@@ -1,10 +1,11 @@
 ---
-slug: "microsoft-office-365"
-title: "Microsoft Office 365"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: microsoft-office-365
+title: Microsoft Office 365
+category: Produktivität
+price_model: Abonnement
 tags: [office,documents,productivity,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365"
+popularity: 0
 ---
 
 # Microsoft Office 365

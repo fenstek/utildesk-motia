@@ -1,10 +1,11 @@
 ---
-slug: "unity"
-title: "Unity"
-category: "Developer"
-price_model: "Freemium"
+slug: unity
+title: Unity
+category: Developer
+price_model: Freemium
 tags: [game-engine, developer-tools, 3d, design]
 official_url: "https://unity.com/"
+popularity: 0
 ---
 
 # Unity

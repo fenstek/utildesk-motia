@@ -1,10 +1,11 @@
 ---
-slug: "yarn-spinner"
-title: "Yarn Spinner"
-category: "Developer"
-price_model: "Open Source"
+slug: yarn-spinner
+title: Yarn Spinner
+category: Developer
+price_model: Open Source
 tags: [writing, game-development, open-source, developer-tools]
 official_url: "https://yarnspinner.dev/"
+popularity: 0
 ---
 
 # Yarn Spinner

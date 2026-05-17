@@ -1,10 +1,11 @@
 ---
-slug: "smartrecruiters"
-title: "SmartRecruiters"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: smartrecruiters
+title: SmartRecruiters
+category: Produktivität
+price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, ai]
 official_url: "https://www.smartrecruiters.com/"
+popularity: 0
 ---
 
 # SmartRecruiters

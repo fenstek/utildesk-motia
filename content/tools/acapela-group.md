@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [text-to-speech, voice, audio]
 official_url: "https://www.acapela-group.com/"
-popularity: 81
+popularity: 84
 ---
 
 # Acapela Group

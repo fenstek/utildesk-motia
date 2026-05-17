@@ -1,10 +1,11 @@
 ---
-slug: "avid-media-composer"
-title: "Avid Media Composer"
-category: "Video"
-price_model: "Abonnement"
+slug: avid-media-composer
+title: Avid Media Composer
+category: Video
+price_model: Abonnement
 tags: [video, editing, production, post-production]
 official_url: "https://www.avid.com/media-composer"
+popularity: 0
 ---
 
 # Avid Media Composer

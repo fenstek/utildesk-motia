@@ -1,10 +1,11 @@
 ---
-slug: "playwright"
-title: "Playwright"
-category: "Developer"
-price_model: "Open Source"
+slug: playwright
+title: Playwright
+category: Developer
+price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://playwright.dev/"
+popularity: 0
 ---
 
 # Playwright

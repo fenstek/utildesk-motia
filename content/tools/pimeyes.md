@@ -7,7 +7,7 @@ tags: ["design", "marketing"]
 official_url: "https://pimeyes.com"
 affiliate_url: "https://pimeyes.com"
 created_at: 2026-02-11
-popularity: 20
+popularity: 0
 description: PimEyes ist eine Gesichtssuchmaschine, mit der öffentlich auffindbare Bilder einer Person im Web entdeckt werden können.
 ---
 # PimEyes

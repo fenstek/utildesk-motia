@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["design"]
 official_url: "https://ifttt.com"
 created_at: 2026-02-13
-popularity: 39
+popularity: 38
 ---
 # IFTTT
 

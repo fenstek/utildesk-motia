@@ -1,10 +1,11 @@
 ---
-slug: "lever"
-title: "Lever"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: lever
+title: Lever
+category: Produktivität
+price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.lever.co/"
+popularity: 0
 ---
 
 # Lever

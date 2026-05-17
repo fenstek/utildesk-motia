@@ -6,7 +6,7 @@ price_model: Open Source
 tags: ["developer", "ml", "explainability", "ai", "analytics"]
 official_url: "https://interpret.ml/"
 affiliate_url: "https://interpret.ml/"
-popularity: 37
+popularity: 0
 description: Open-Source-Paket für interpretierbares Machine Learning, Erklärungen und Modell-Diagnostik.
 ---
 
