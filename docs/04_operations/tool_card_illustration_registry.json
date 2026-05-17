@@ -2251,13 +2251,13 @@
         "de",
         "en"
       ],
-      "source_format": "svg",
+      "source_format": "imagegen-png",
       "image_format": "webp",
       "image_width_px": 1260,
       "image_height_px": 800,
       "display_width_percent": 90,
       "placement": "mid-article image-only figure before the main functions/features section",
-      "note": "Twenty-sixth production-style batch: next 50 active, registry-backed, non-illustrated cards after POEditor, from PolyAI through Speechify. The visuals deliberately avoid dashboards and desk/table scenes: voice terraces, lantern markets, code forges, rail systems, film backlots, greenhouses, observatories, canals, ramparts, canyon surveys, stations, crystal labs, sieves, lighthouses, sports trajectories, mural studios, mastering halls, origami workshops, translation bridges, scaffolds, archives, capture rigs, harbors, portrait studios, alpine pipelines, ice vaults, map halls, roundabouts, sound archives, cloud cinema, music gardens, recording stages, code caves, refactoring forges, speech canals, and reading booths. Generated as controlled SVG scenes and converted to 1260x800 WebP; no logos, readable text, captions, or brand marks.",
+      "note": "Twenty-sixth production-style batch: next 50 active, registry-backed, non-illustrated cards after POEditor, from PolyAI through Speechify. Reworked after review on 2026-05-17: the earlier controlled SVG scenes were replaced with imagegen raster story illustrations and converted to 1260x800 WebP. The new visuals deliberately avoid dashboards and desk/table scenes: station conversations, lantern markets, code forges, query rail yards, film backlots, prototype theaters, observatories, canyon expeditions, mural festivals, accessible city navigation, testing stages, research observatories, greenhouse editing, rooftop message stations, harbor delivery scenes, security ramparts, appointment plazas, glass labs, sports trajectories, river sieves, wellness courtyards, cosmic halls, rooftop city planning, ice rinks, paper design courtyards, mastering halls, paper mills, translation bridges, bridge construction, archive lighthouses, capture rigs, lagoons, alpine pipelines, ice vaults, harbor tests, decision courts, rescue routes, sound archives, desert editing sets, security checkpoints, moonlit cinema, music gardens, recording depots, code caves, refactoring forges, speech canals, and reading booths. No logos, captions, or brand marks.",
       "slugs": [
         "polyai",
         "polybuzz",
