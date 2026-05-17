@@ -1,10 +1,11 @@
 ---
-slug: "postgresql"
-title: "PostgreSQL"
-category: "Developer"
-price_model: "Open Source"
+slug: postgresql
+title: PostgreSQL
+category: Developer
+price_model: Open Source
 tags: [database, open-source, developer-tools, sql]
 official_url: "https://www.postgresql.org/"
+popularity: 0
 ---
 
 # PostgreSQL

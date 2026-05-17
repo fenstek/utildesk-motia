@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [translation, education, automation, assistant]
 official_url: "https://en.pons.com/translate"
-popularity: 19
+popularity: 17
 ---
 
 # Pons

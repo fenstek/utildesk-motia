@@ -1,10 +1,11 @@
 ---
-slug: "webdriverio"
-title: "WebdriverIO"
-category: "Developer"
-price_model: "Open Source"
+slug: webdriverio
+title: WebdriverIO
+category: Developer
+price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://webdriver.io/"
+popularity: 0
 ---
 
 # WebdriverIO

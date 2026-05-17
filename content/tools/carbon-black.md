@@ -1,10 +1,11 @@
 ---
-slug: "carbon-black"
-title: "Carbon Black (VMware)"
-category: "Developer"
-price_model: "Abonnement"
+slug: carbon-black
+title: Carbon Black (VMware)
+category: Developer
+price_model: Abonnement
 tags: [cybersecurity, endpoint-security, xdr, enterprise]
 official_url: "https://www.broadcom.com/products/carbon-black"
+popularity: 0
 ---
 
 # Carbon Black (VMware)

@@ -1,10 +1,11 @@
 ---
-slug: "teamspeak"
-title: "TeamSpeak"
-category: "Produktivität"
-price_model: "Freemium"
+slug: teamspeak
+title: TeamSpeak
+category: Produktivität
+price_model: Freemium
 tags: [voice, communication, gaming, collaboration]
 official_url: "https://www.teamspeak.com/en/"
+popularity: 0
 ---
 
 # TeamSpeak

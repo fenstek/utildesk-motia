@@ -1,10 +1,11 @@
 ---
-slug: "breezy-hr"
-title: "Breezy HR"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: breezy-hr
+title: Breezy HR
+category: Produktivität
+price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://breezy.hr/"
+popularity: 0
 ---
 
 # Breezy HR

@@ -1,10 +1,11 @@
 ---
-slug: "bruno"
-title: "Bruno"
-category: "Developer"
-price_model: "Open Source"
+slug: bruno
+title: Bruno
+category: Developer
+price_model: Open Source
 tags: [api, developer-tools, testing, open-source]
 official_url: "https://www.usebruno.com/"
+popularity: 0
 ---
 
 # Bruno

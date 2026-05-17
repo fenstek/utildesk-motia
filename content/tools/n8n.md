@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["automation", "workflow", "integration", "developer", "api"]
 official_url: "https://n8n.io"
 affiliate_url: "https://n8n.io"
-popularity: 25
+popularity: 0
 description: Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows.
 ---
 

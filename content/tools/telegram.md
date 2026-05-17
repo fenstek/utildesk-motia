@@ -1,10 +1,11 @@
 ---
-slug: "telegram"
-title: "Telegram"
-category: "Produktivität"
-price_model: "Free"
+slug: telegram
+title: Telegram
+category: Produktivität
+price_model: Free
 tags: [chat, communication, community, productivity]
 official_url: "https://telegram.org/"
+popularity: 0
 ---
 
 # Telegram

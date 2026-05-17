@@ -1,10 +1,11 @@
 ---
-slug: "lunacy"
-title: "Lunacy"
-category: "Design"
-price_model: "Free"
+slug: lunacy
+title: Lunacy
+category: Design
+price_model: Free
 tags: [design, ui, prototyping, collaboration]
 official_url: "https://icons8.com/lunacy"
+popularity: 0
 ---
 
 # Lunacy

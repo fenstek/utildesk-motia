@@ -1,10 +1,11 @@
 ---
-slug: "dubsado"
-title: "Dubsado"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: dubsado
+title: Dubsado
+category: Produktivität
+price_model: Abonnement
 tags: [crm, project-management, automation, productivity]
 official_url: "https://www.dubsado.com/"
+popularity: 0
 ---
 
 # Dubsado

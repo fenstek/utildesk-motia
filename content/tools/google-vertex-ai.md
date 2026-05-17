@@ -1,10 +1,11 @@
 ---
-slug: "google-vertex-ai"
-title: "Google Vertex AI"
-category: "AI"
-price_model: "Nutzungsbasiert"
+slug: google-vertex-ai
+title: Google Vertex AI
+category: AI
+price_model: Nutzungsbasiert
 tags: [ai, developer-tools, cloud, mlops]
 official_url: "https://cloud.google.com/products/gemini-enterprise-agent-platform"
+popularity: 0
 ---
 
 # Google Vertex AI

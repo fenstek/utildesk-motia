@@ -1,10 +1,11 @@
 ---
-slug: "honeybook"
-title: "Honeybook"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: honeybook
+title: Honeybook
+category: Produktivität
+price_model: Abonnement
 tags: [crm, project-management, automation, ai]
 official_url: "https://www.honeybook.com/"
+popularity: 0
 ---
 
 # Honeybook

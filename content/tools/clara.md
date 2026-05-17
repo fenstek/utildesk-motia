@@ -7,7 +7,7 @@ tags: ["ai", "assistant", "learning", "chatbot", "education"]
 official_url: "https://www.clara-ai.org/"
 affiliate_url: "https://www.clara-ai.org/"
 created_at: 2026-02-07
-popularity: 97
+popularity: 60
 description: KI-Lernassistent für erklärende Dialoge, Wiederholung, Lernstruktur und niedrigschwellige Wissensarbeit.
 ---
 

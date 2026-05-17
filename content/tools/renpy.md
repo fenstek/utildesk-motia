@@ -1,10 +1,11 @@
 ---
-slug: "renpy"
-title: "Renpy"
-category: "Developer"
-price_model: "Open Source"
+slug: renpy
+title: Renpy
+category: Developer
+price_model: Open Source
 tags: [game-engine, writing, open-source, developer-tools]
 official_url: "https://www.renpy.org/"
+popularity: 0
 ---
 
 # Renpy

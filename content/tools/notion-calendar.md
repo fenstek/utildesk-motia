@@ -1,10 +1,11 @@
 ---
-slug: "notion-calendar"
-title: "Notion Calendar"
-category: "Produktivität"
-price_model: "Freemium"
+slug: notion-calendar
+title: Notion Calendar
+category: Produktivität
+price_model: Freemium
 tags: [calendar, productivity, planning, collaboration]
 official_url: "https://www.notion.com/product/calendar"
+popularity: 0
 ---
 
 # Notion Calendar

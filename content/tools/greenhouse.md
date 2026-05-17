@@ -1,10 +1,11 @@
 ---
-slug: "greenhouse"
-title: "Greenhouse"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: greenhouse
+title: Greenhouse
+category: Produktivität
+price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.greenhouse.com/"
+popularity: 0
 ---
 
 # Greenhouse

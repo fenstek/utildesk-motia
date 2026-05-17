@@ -1,10 +1,11 @@
 ---
-slug: "transana"
-title: "Transana"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: transana
+title: Transana
+category: Produktivität
+price_model: Abonnement
 tags: [research, transcription, analysis, video]
 official_url: "https://www.transana.com/"
+popularity: 0
 ---
 
 # Transana

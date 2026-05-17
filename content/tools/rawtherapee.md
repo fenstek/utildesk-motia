@@ -1,10 +1,11 @@
 ---
-slug: "rawtherapee"
-title: "RawTherapee"
-category: "Design"
-price_model: "Open Source"
+slug: rawtherapee
+title: RawTherapee
+category: Design
+price_model: Open Source
 tags: [photo, editing, raw, open-source]
 official_url: "https://rawtherapee.com/"
+popularity: 0
 ---
 
 # RawTherapee

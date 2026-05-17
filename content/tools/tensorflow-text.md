@@ -1,10 +1,11 @@
 ---
-slug: "tensorflow-text"
-title: "TensorFlow Text"
-category: "Developer"
-price_model: "Open Source"
+slug: tensorflow-text
+title: TensorFlow Text
+category: Developer
+price_model: Open Source
 tags: [nlp,machine-learning,developer-tools,open-source]
 official_url: "https://www.tensorflow.org/text?hl=zh-tw"
+popularity: 0
 ---
 
 # TensorFlow Text

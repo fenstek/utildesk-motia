@@ -1,10 +1,11 @@
 ---
-slug: "curl"
-title: "Curl"
-category: "Developer"
-price_model: "Open Source"
+slug: curl
+title: Curl
+category: Developer
+price_model: Open Source
 tags: [api, developer-tools, command-line, open-source]
 official_url: "https://curl.se/"
+popularity: 0
 ---
 
 # Curl
