@@ -6,8 +6,8 @@ category: "Comparison"
 eyebrow: "AI Comparison"
 excerpt: "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
 readTime: 7
-coverImage: /images/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter-cover.png
-secondaryImage: /images/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter-workflow.png
+coverImage: /images/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter-cover-story-v2.webp
+secondaryImage: /images/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter-workflow-story-v2.webp
 tags:
   - "Perplexity"
   - "AI Search"
@@ -71,7 +71,7 @@ Other providers such as Andi Search or DuckDuckGo are taking similar paths. Andi
 
 These tools solve the problem of source laundering — that is, one-sided information supply from a few large providers — and give users control over their data again.
 
-![Schema eines orchestrierten KI-वर्कflows](/images/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter-workflow.png)
+![Research desk with verified source paths and an answer engine](/images/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter-workflow-story-v2.webp)
 
 ## The trust issue: when AI invents sources instead of finding them
 
@@ -101,8 +101,8 @@ The best strategy remains healthy skepticism: trust the structure of the answer,
 4. [10 Best AI Search Engines in 2026: Which One Should You Use? - Wellows](https://wellows.com/blog/best-ai-search-engines/)
 5. [Perplexity vs. ChatGPT: Which AI tool is better? (2026) - Zapier](https://zapier.com/blog/perplexity-vs-chatgpt/)
 6. [The best AI productivity tools in 2026 - Zapier](https://zapier.com/blog/best-ai-productivity-tools/)
-7. [https://www.google.com/search?udm=50&aep=11](https://www.google.com/ai/)
-8. [Just a moment...](https://openai.com/index/introducing-chatgpt-search/)
+7. [Google AI](https://www.google.com/ai/)
+8. [Introducing ChatGPT search | OpenAI](https://openai.com/index/introducing-chatgpt-search/)
 9. [Phind Guide 2026: Features, Pricing, How to Use & Complete Tutorial - AI Tools DevPro](https://aitoolsdevpro.com/ai-tools/phind-guide/)
 10. [Perplexity Pro Review 2026: Is It Worth $20/Month? - Tech Jacks Solutions](https://techjacksolutions.com/ai-tools/perplexity/perplexity-pro-review/)
 11. [You.com Enterprise AI Search Review 2026: Features & Pricing - Misar.Blog](https://www.misar.blog/@misar/articles/you-com-complete-guide-2026)

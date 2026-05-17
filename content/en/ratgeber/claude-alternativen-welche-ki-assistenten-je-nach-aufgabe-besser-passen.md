@@ -6,8 +6,8 @@ category: "Comparison"
 eyebrow: "AI Comparison"
 excerpt: "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
 readTime: 7
-coverImage: /images/ratgeber/claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen-cover.png
-secondaryImage: /images/ratgeber/claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen-workflow.png
+coverImage: /images/ratgeber/claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen-cover-story-v2.webp
+secondaryImage: /images/ratgeber/claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen-workflow-story-v2.webp
 tags:
   - "Claude"
   - "AI Assistants"
@@ -77,7 +77,7 @@ For academic work or deeper scientific analysis, [Gemini](/tools/gemini/) with i
 
 In a world of information overload, a model’s ability to independently evaluate and connect sources becomes a decisive competitive advantage.
 
-![A diagram of an orchestrated AI workflow](/images/ratgeber/claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen-workflow.png)
+![Team routes project work to the right AI assistants](/images/ratgeber/claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen-workflow-story-v2.webp)
 
 ## The downside: Risks, guardrails, and operational hurdles
 
@@ -106,8 +106,8 @@ Remember: the best AI is not an oracle, but a cognitive exoskeleton. It does not
 ## Sources
 
 1. [ChatGPT vs Claude vs Gemini: The Honest Comparison 2026 | FindSkill.ai — Learn AI for Your Job](https://findskill.ai/de/blog/chatgpt-vs-claude-vs-gemini-der-ehrliche-vergleich-2026/)
-2. [Just a moment...](https://www.perplexity.ai/)
-3. [Just a moment...](https://openai.com/chatgpt/)
+2. [Perplexity AI](https://www.perplexity.ai/)
+3. [ChatGPT | OpenAI](https://openai.com/chatgpt/)
 4. [Chatbots Compared 2026: Which One Is Right for You? - Jörg Schieb | Digital and AI](https://www.schieb.de/chatbots-im-vergleich-2026-welcher-ist-der-richtige-fuer-dich)
 5. [ChatGPT Alternatives 2026 – Claude, Gemini, Copilot, Perplexity Compared | EbeneX](https://www.ebenex.de/guides/chatgpt-alternativen/)
 6. [Gemini vs Claude AI vs ChatGPT: Which AI Tool Is Really Worth It in 2026? (German)](https://www.youtube.com/watch?v=pPK9OFE6xGU)
