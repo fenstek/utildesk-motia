@@ -23,6 +23,10 @@ Stanza passt zu NLP-Teams, Forschenden, Digital-Humanities-Projekten und Entwick
 - Mehrsprachige NLP-Analysen in Forschungsprojekten durchführen.
 - Klassische Sprachverarbeitung vor ML- oder Suchprozessen vorbereiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stanza-editorial.webp" alt="Illustration zu Stanza: Bahnhofshalle fuehrt Sprachvoegel durch Lichtpfade" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Linguistische Pipeline für mehrere NLP-Aufgaben.

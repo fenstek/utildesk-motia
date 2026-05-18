@@ -33,6 +33,10 @@ Stable Diffusion should not be evaluated in isolation. What matters is its place
 - **Measure:** which models, licenses, hardware, and approvals may be used.
 - **Limit:** without prompt, rights, and quality checks, it delivers highly inconsistent results.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stable-diffusion-editorial.webp" alt="Illustration for Stable Diffusion: print workshop guiding pigment currents into images" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 - **Text-to-image generation:** Produces high-quality images based on detailed or simple text prompts.

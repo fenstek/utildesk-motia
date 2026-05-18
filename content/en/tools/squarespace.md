@@ -33,6 +33,10 @@ In day-to-day work, Squarespace is less about having every edge feature and more
 
 Squarespace is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/squarespace-editorial.webp" alt="Illustration for Squarespace: coastal village building a creative storefront" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Drag-and-drop website builder:** Easy creation and customization of pages without programming knowledge.

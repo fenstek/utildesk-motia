@@ -42,6 +42,10 @@ Zusätzlich ist bei Spicychat der Kontext wichtig: Manche Teams nutzen solche We
 - sensible Daten brauchen verbindliche Regeln
 - Bei Companion- und Roleplay-Tools sind Altersgrenzen, Datenschutz und emotionale Abhängigkeit besonders ernst zu nehmen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spicychat-editorial.webp" alt="Illustration zu Spicychat: Laternenhof mit Figurenmasken und Story-Funken" loading="lazy" decoding="async" />
+</figure>
+
 ## Workflow-Fit
 
 Spicychat passt am besten in Workflows, in denen KI-Chat- und Charakterinteraktionen für Rollenspiel, Unterhaltung und persönliche Dialoge nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.

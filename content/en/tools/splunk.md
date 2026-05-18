@@ -21,6 +21,10 @@ Splunk is a powerful platform for analyzing and monitoring machine data in real 
 
 Splunk is aimed primarily at medium to large companies and organizations that want to centrally analyze extensive data sources from IT systems, applications, networks, and security solutions. The platform is ideal for IT operations teams, security professionals, data analysts, and executives who need deep insights into their infrastructure and business processes. Thanks to its scalability and flexibility, Splunk is also suitable for industries with high compliance requirements and security standards, such as financial services, healthcare, or government agencies.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/splunk-editorial.webp" alt="Illustration for Splunk: harbor investigation following luminous event trails" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Real-time data collection and indexing from a wide range of sources

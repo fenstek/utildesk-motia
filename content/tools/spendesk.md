@@ -29,6 +29,10 @@ Im Alltag zählt bei Spendesk weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Spendesk vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spendesk-editorial.webp" alt="Illustration zu Spendesk: Marktgasse mit sichtbaren Freigabe-Muenzen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Digitale Ausgabenerfassung:** Erfassung und Verwaltung von Belegen und Rechnungen über eine mobile App oder Webplattform.

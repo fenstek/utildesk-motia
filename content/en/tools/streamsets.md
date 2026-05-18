@@ -29,6 +29,10 @@ StreamSets is most useful for teams and individuals that treat a data integratio
 - Integrate source and destination systems in a controlled way
 - Support DataOps with monitoring
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streamsets-editorial.webp" alt="Illustration for StreamSets: river crew guiding data streams through sluices" loading="lazy" decoding="async" />
+</figure>
+
 ## Strengths
 
 - Strong for operational data integration

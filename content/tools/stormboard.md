@@ -36,6 +36,10 @@ Im Alltag zählt bei Stormboard weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Stormboard vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stormboard-editorial.webp" alt="Illustration zu Stormboard: Sturmpier faengt Ideen-Drachen im Wind" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Digitale Whiteboards:** Erstellen von interaktiven Boards mit Notizen, Zeichnungen, Bildern und Videos.

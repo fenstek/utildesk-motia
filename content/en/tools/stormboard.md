@@ -27,6 +27,10 @@ Stormboard is aimed at teams and organizations of any size that value efficient 
 
 Thanks to its flexible usage options, Stormboard can be adapted to different industries and ways of working.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stormboard-editorial.webp" alt="Illustration for Stormboard: storm pier catching idea kites in the wind" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Digital whiteboards:** Create interactive boards with notes, drawings, images, and videos.

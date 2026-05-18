@@ -36,6 +36,10 @@ Ein belastbarer Pilot für StackBlitz beginnt mit einem realen Entwicklungsablau
 - **Guter Start für StackBlitz:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
 - **Risiko bei StackBlitz:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stackblitz-editorial.webp" alt="Illustration zu StackBlitz: Blitzwerkstatt baut Module im Gebirgspass" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Cloudbasierte IDE:** Programmieren direkt im Browser ohne lokale Installation

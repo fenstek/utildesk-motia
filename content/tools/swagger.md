@@ -29,6 +29,10 @@ Im Alltag zählt bei Swagger (OpenAPI) weniger, ob jede Randfunktion vorhanden i
 
 Praktisch ist Swagger (OpenAPI) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/swagger-editorial.webp" alt="Illustration zu Swagger (OpenAPI): API-Bahnhof verbindet Vertrauensrouten und Service-Zuege" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **API-Spezifikation in OpenAPI-Format**: Erstellen und bearbeiten von API-Definitionen in einem standardisierten JSON- oder YAML-Format.

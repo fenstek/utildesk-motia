@@ -34,6 +34,10 @@ In day-to-day work, StudioBinder is less about having every edge feature and mor
 
 StudioBinder is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/studiobinder-editorial.webp" alt="Illustration for StudioBinder: film camp connecting crew, locations and props with light ropes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Shooting schedule and call sheet creation:** Automated creation of schedules and daily shooting plans for productions.

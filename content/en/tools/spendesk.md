@@ -33,6 +33,10 @@ In day-to-day work, Spendesk is less about having every edge feature and more ab
 
 Spendesk is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spendesk-editorial.webp" alt="Illustration for Spendesk: market lane with visible approval coins" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Digital expense capture:** Capture and manage receipts and invoices via a mobile app or web platform.

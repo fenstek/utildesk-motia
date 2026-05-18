@@ -29,6 +29,10 @@ Im Alltag zählt bei Spreaker weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Spreaker vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spreaker-editorial.webp" alt="Illustration zu Spreaker: Dachfestival sendet warme Klangwellen durch die Stadt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Podcast-Aufnahme und -Bearbeitung:** Aufnahme direkt über die Plattform mit integrierten Bearbeitungswerkzeugen.

@@ -42,6 +42,10 @@ Im Alltag zählt bei Suno AI weniger, ob jede Randfunktion vorhanden ist, sonder
 
 Praktisch ist Suno AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/suno-ai-editorial.webp" alt="Illustration zu Suno AI: Tal-Amphitheater laesst Lieder als Lichtvoegel steigen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Audioerstellung:** Automatische Generierung von Musik, Soundeffekten oder Sprachaufnahmen basierend auf Nutzerangaben.

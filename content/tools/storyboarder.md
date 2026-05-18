@@ -27,6 +27,10 @@ Storyboarder überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden 
 - **Vorher klären:** ob Storyboards wirklich Entscheidungen beschleunigen oder nur zusätzlich gepflegt werden.
 - **Nicht unterschätzen:** ohne klare Shot-Liste schnell bei hübschen Einzelbildern stehen bleibt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/storyboarder-editorial.webp" alt="Illustration zu Storyboarder: Canyon-Filmset plant Szenen mit blanken Panels" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Intuitive Zeichenwerkzeuge für schnelle Skizzen und detaillierte Storyboards

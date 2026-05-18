@@ -41,6 +41,10 @@ A useful pilot for Stanford NLP starts with a real development flow from setup t
 - **Good start for Stanford NLP:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
 - **Risk with Stanford NLP:** The value becomes weak when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stanford-nlp-editorial.webp" alt="Illustration for Stanford NLP: campus arches guiding light birds of meaning" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Tokenization and segmentation:** Breaks text down into words, sentences, and sections

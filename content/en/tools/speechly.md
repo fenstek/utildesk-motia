@@ -28,6 +28,10 @@ Speechly is ideally suited for software developers, product managers, and compan
 
 Thanks to its freemium pricing structure, Speechly is also attractive for small teams and startups that want to start experimenting with voice features.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speechly-editorial.webp" alt="Illustration for Speechly: voice plaza with luminous command paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Real-time speech recognition:** Detects and processes speech in real time, ideal for interactive applications.

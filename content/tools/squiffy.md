@@ -27,6 +27,10 @@ Squiffy überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind,
 - **Vorher klären:** wie Verzweigungen dokumentiert und Sackgassen getestet werden.
 - **Nicht unterschätzen:** bei großen Projekten schnell an Struktur- und Testgrenzen kommt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/squiffy-editorial.webp" alt="Illustration zu Squiffy: Waldpfade verzweigen sich zu kleinen Story-Buehnen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Designvorschläge:** Automatische Generierung von Designideen basierend auf Benutzerpräferenzen und aktuellen Trends.

@@ -31,6 +31,10 @@ The best real-world test for SummarizeBot is small, but genuine. A team should r
 - **Rollout question:** which content may be summarized and how results will be validated.
 - **Limitation:** it omits important nuances if sources are not checked against each other.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/summarizebot-editorial.webp" alt="Illustration for SummarizeBot: mountain archive distilling scrolls into one clear light ribbon" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic summarization of texts, documents, and web pages

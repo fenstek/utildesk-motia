@@ -29,6 +29,10 @@ Für einzelne Reports oder kleine Datenimporte ist StreamSets meist zu schwergew
 - Pipeline-Drift, Schemaänderungen und Ausfälle früher erkennen
 - Datenflüsse zwischen operativen Systemen und Analytics-Plattformen standardisieren
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streamsets-editorial.webp" alt="Illustration zu StreamSets: Flusscrew lenkt Datenstroeme durch Schleusen" loading="lazy" decoding="async" />
+</figure>
+
 ## Stärken
 
 - Stark für operative Datenintegration

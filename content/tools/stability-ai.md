@@ -37,6 +37,10 @@ Im Alltag zählt bei Stability AI weniger, ob jede Randfunktion vorhanden ist, s
 
 Praktisch ist Stability AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stability-ai-editorial.webp" alt="Illustration zu Stability AI: Kuestenatelier stabilisiert einen Sturm aus Bildern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Bild-Generierung:** Erstellen von hochwertigen Bildern aus textlichen Eingaben mit Hilfe fortschrittlicher KI-Modelle.

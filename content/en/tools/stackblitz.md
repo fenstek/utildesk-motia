@@ -39,6 +39,10 @@ A useful pilot for StackBlitz starts with a real development flow from setup thr
 - **Good start for StackBlitz:** The team should define in advance what counts as improvement and which open issues would block rollout.
 - **Risk with StackBlitz:** The rollout turns into extra coordination when standards, test data, ownership, and technical boundaries emerge only informally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stackblitz-editorial.webp" alt="Illustration for StackBlitz: lightning workshop building modules in a mountain pass" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Cloud-based IDE:** Code directly in the browser without local installation

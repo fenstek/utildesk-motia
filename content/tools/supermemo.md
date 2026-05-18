@@ -16,6 +16,10 @@ SuperMemo ist eine innovative Lernsoftware, die auf dem Prinzip der Spaced Repet
 
 SuperMemo richtet sich an Schüler, Studenten, Berufstätige und alle, die ihre Lern- und Memorierungsfähigkeiten verbessern möchten. Besonders nützlich ist es für Menschen, die große Mengen an Informationen über einen längeren Zeitraum behalten müssen, wie zum Beispiel Sprachlernende, Medizinstudenten oder Personen, die sich auf Prüfungen vorbereiten. Auch Lehrer und Trainer können SuperMemo nutzen, um Lerninhalte effizient zu vermitteln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/supermemo-editorial.webp" alt="Illustration zu SuperMemo: Gebirgspfad laesst Erinnerungslaternen heller werden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Spaced Repetition Algorithmus:** Automatisches Wiederholungsmanagement basierend auf individuellem Lernfortschritt.
