@@ -1,10 +1,11 @@
 ---
-slug: "lm-studio"
-title: "LM Studio"
-category: "AI"
-price_model: "Free"
+slug: lm-studio
+title: LM Studio
+category: AI
+price_model: Free
 tags: [llm, developer-tools, local-ai, desktop]
 official_url: "https://lmstudio.ai/"
+popularity: 0
 ---
 
 # LM Studio

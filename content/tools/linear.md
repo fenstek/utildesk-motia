@@ -1,10 +1,11 @@
 ---
-slug: "linear"
-title: "Linear"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: linear
+title: Linear
+category: Produktivität
+price_model: Abonnement
 tags: [project-management, developer-tools, planning, productivity]
 official_url: "https://linear.app/"
+popularity: 0
 ---
 
 # Linear

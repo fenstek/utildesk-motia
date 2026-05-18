@@ -1,10 +1,11 @@
 ---
-slug: "tdr-limiter-6-ge"
-title: "TDR Limiter 6 GE"
-category: "Audio"
-price_model: "One-time purchase"
+slug: tdr-limiter-6-ge
+title: TDR Limiter 6 GE
+category: Audio
+price_model: One-time purchase
 tags: [audio,music,mastering,plugins]
 official_url: "https://www.tokyodawn.net/tdr-limiter6-ge/TDR/"
+popularity: 0
 ---
 
 # TDR Limiter 6 GE

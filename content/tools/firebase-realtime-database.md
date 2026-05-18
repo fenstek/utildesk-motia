@@ -1,10 +1,11 @@
 ---
-slug: "firebase-realtime-database"
-title: "Firebase Realtime Database"
-category: "Developer"
-price_model: "Freemium"
+slug: firebase-realtime-database
+title: Firebase Realtime Database
+category: Developer
+price_model: Freemium
 tags: [database, realtime, cloud, developer-tools]
 official_url: "https://firebase.google.com/products/realtime-database"
+popularity: 0
 ---
 
 # Firebase Realtime Database

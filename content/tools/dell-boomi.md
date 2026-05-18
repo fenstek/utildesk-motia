@@ -1,10 +1,11 @@
 ---
-slug: "dell-boomi"
-title: "Dell Boomi"
-category: "Developer"
-price_model: "Abonnement"
+slug: dell-boomi
+title: Dell Boomi
+category: Developer
+price_model: Abonnement
 tags: [integration, automation, data, api]
 official_url: "https://boomi.com/"
+popularity: 0
 ---
 
 # Dell Boomi

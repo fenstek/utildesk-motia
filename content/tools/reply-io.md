@@ -1,10 +1,11 @@
 ---
-slug: "reply-io"
-title: "Reply.io"
-category: "Marketing"
-price_model: "Abonnement"
+slug: reply-io
+title: Reply.io
+category: Marketing
+price_model: Abonnement
 tags: [sales,email-marketing,outreach,automation]
 official_url: "https://reply.io/sales-engagement-platform/"
+popularity: 0
 ---
 
 # Reply.io

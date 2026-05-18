@@ -1,10 +1,11 @@
 ---
-slug: "google-cloud-functions"
-title: "Google Cloud Functions"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: google-cloud-functions
+title: Google Cloud Functions
+category: Developer
+price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://cloud.google.com/functions"
+popularity: 0
 ---
 
 # Google Cloud Functions

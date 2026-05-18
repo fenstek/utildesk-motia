@@ -2,10 +2,10 @@
 slug: soundraw
 title: Soundraw
 category: Audio
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://soundraw.io/"
-popularity: 0
+popularity: 10
 ---
 
 # Soundraw

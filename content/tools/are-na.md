@@ -1,10 +1,11 @@
 ---
-slug: "are-na"
-title: "Are.na"
-category: "Produktivität"
-price_model: "Freemium"
+slug: are-na
+title: Are.na
+category: Produktivität
+price_model: Freemium
 tags: [research, curation, collaboration, productivity]
 official_url: "https://www.are.na/"
+popularity: 0
 ---
 
 # Are.na

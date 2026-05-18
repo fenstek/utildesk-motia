@@ -1,10 +1,11 @@
 ---
-slug: "weglot"
-title: "Weglot"
-category: "Marketing"
-price_model: "Abonnement"
+slug: weglot
+title: Weglot
+category: Marketing
+price_model: Abonnement
 tags: [translation, localization, seo, marketing]
 official_url: "https://www.weglot.com/"
+popularity: 0
 ---
 
 # Weglot

@@ -1,10 +1,11 @@
 ---
-slug: "flyr"
-title: "Flyr"
-category: "AI"
-price_model: "Abonnement"
+slug: flyr
+title: Flyr
+category: AI
+price_model: Abonnement
 tags: [ai, travel, revenue-management, analytics]
 official_url: "https://flyr.com/"
+popularity: 0
 ---
 
 # Flyr

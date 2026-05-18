@@ -1,10 +1,11 @@
 ---
-slug: "hubspot-service-hub"
-title: "Hubspot Service Hub"
-category: "Produktivität"
-price_model: "Freemium"
+slug: hubspot-service-hub
+title: Hubspot Service Hub
+category: Produktivität
+price_model: Freemium
 tags: [customer-support, crm, automation, ai]
 official_url: "https://www.hubspot.com/products/service"
+popularity: 0
 ---
 
 # Hubspot Service Hub

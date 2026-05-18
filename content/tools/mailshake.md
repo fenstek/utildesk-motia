@@ -1,10 +1,11 @@
 ---
-slug: "mailshake"
-title: "Mailshake"
-category: "Marketing"
-price_model: "Abonnement"
+slug: mailshake
+title: Mailshake
+category: Marketing
+price_model: Abonnement
 tags: [sales,email-marketing,outreach,automation]
 official_url: "https://mailshake.com/"
+popularity: 0
 ---
 
 # Mailshake

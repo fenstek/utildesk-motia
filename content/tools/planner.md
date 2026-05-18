@@ -1,10 +1,11 @@
 ---
-slug: "planner"
-title: "Planner"
-category: "Produktivität"
-price_model: "Freemium"
+slug: planner
+title: Planner
+category: Produktivität
+price_model: Freemium
 tags: [project-management,tasks,planning,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner"
+popularity: 0
 ---
 
 # Planner
