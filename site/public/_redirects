@@ -5,6 +5,24 @@
 
 # Duplicate tool redirects (301)
 # Specific rules must come BEFORE any wildcard rules
+# Vendor duplicate redirects (SEO cleanup 2026-05-18)
+/tools/amazon-sagemaker    /tools/aws-sagemaker/   301
+/tools/amazon-sagemaker/   /tools/aws-sagemaker/   301
+/en/tools/amazon-sagemaker    /en/tools/aws-sagemaker/   301
+/en/tools/amazon-sagemaker/   /en/tools/aws-sagemaker/   301
+/tools/aws-emr    /tools/amazon-emr/   301
+/tools/aws-emr/   /tools/amazon-emr/   301
+/en/tools/aws-emr    /en/tools/amazon-emr/   301
+/en/tools/aws-emr/   /en/tools/amazon-emr/   301
+/tools/google-cloud-translation-api    /tools/google-cloud-translation/   301
+/tools/google-cloud-translation-api/   /tools/google-cloud-translation/   301
+/en/tools/google-cloud-translation-api    /en/tools/google-cloud-translation/   301
+/en/tools/google-cloud-translation-api/   /en/tools/google-cloud-translation/   301
+/tools/microsoft-azure-synapse-analytics    /tools/azure-synapse-analytics/   301
+/tools/microsoft-azure-synapse-analytics/   /tools/azure-synapse-analytics/   301
+/en/tools/microsoft-azure-synapse-analytics    /en/tools/azure-synapse-analytics/   301
+/en/tools/microsoft-azure-synapse-analytics/   /en/tools/azure-synapse-analytics/   301
+
 /tools/jasper-ai    /tools/jasper/   301
 /tools/jasper-ai/*  /tools/jasper/   301
 

@@ -435,3 +435,4 @@ _Last updated: 2026-05-15_
 - Fixed high-risk vendor card issues: corrected Google Tasks and Google AI official URLs, deactivated duplicate Amazon/AWS, Google Cloud Translation, and Azure Synapse pages, and clarified the ambiguous `copilot` card as Assembly (formerly Copilot).
 - Removed `copilot` from the Google force-index list so Microsoft Copilot remains the Google-priority Copilot page.
 - Added `scripts/audit_vendor_tool_cards.mjs` plus `npm run audit:vendor`; the audit blocks known duplicate vendor pages, transient login/docs URLs, and ambiguous force-index entries.
+- Added explicit Cloudflare Pages 301 redirects for disabled duplicate vendor slugs so stale static assets cannot keep returning 200 after deploy.
