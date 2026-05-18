@@ -150,3 +150,4 @@
 - Canonical vendor choices from the first repair pass: keep `aws-sagemaker`, `amazon-emr`, `google-cloud-translation`, and `azure-synapse-analytics`; disable the duplicate pages `amazon-sagemaker`, `aws-emr`, `google-cloud-translation-api`, and `microsoft-azure-synapse-analytics`.
 - The ambiguous `copilot` slug represents Assembly's client-portal product, not Microsoft Copilot or GitHub Copilot; keep it out of `FORCE_INDEX_TOOL_SLUGS` unless it later earns index eligibility through real traffic or manual strategy.
 - Run `npm run audit:vendor` before re-enabling automatic tool-card publication.
+- Disabled duplicate vendor pages must also have explicit 301 redirects in `site/public/_redirects`; otherwise old Cloudflare Pages assets can continue returning 200 even after the page is removed from the build output.
