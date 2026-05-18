@@ -8,6 +8,7 @@ tags:
   - data
   - cloud
 official_url: 'https://learn.microsoft.com/en-us/azure/synapse-analytics'
+disabled: true
 popularity: 0
 description: 'Microsoft Azure Synapse Analytics is a unified analytics platform that combines data warehousing, big data, and AI for cloud-based storage, processing, and analysis.'
 translation: full

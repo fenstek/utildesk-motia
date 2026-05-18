@@ -4,7 +4,8 @@ title: Amazon SageMaker
 category: AI
 price_model: Nutzungsbasiert
 tags: [assistant, automation]
-official_url: "https://openai.com/index/amazon-partnership/"
+official_url: "https://aws.amazon.com/sagemaker/"
+disabled: true
 popularity: 0
 ---
 

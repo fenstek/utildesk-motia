@@ -1,99 +1,97 @@
 ---
 slug: copilot
-title: Copilot
-category: Developer
+title: Assembly (formerly Copilot)
+category: Business
 price_model: "Freemium"
-tags:
-  - ai
-  - developer
-official_url: "https://assembly.com/"
-popularity: 68
+tags: [client-portal, workflow, automation]
+official_url: "https://assembly.com/platform"
+popularity: 0
 source_language: de
 translation: full
-description: "Copilot is a business and operations platform for client portal and service-business workflows; the former Copilot context is now closely tied to Assembly."
+description: "Assembly (formerly Copilot) is a client portal platform for service businesses, agencies, and consultancies, not Microsoft Copilot."
 ---
-# Copilot
+# Assembly (formerly Copilot)
 
-Copilot deserves a practical look. It is strongest when judged along a real workflow: who puts material in, who reviews the output, and where does the result go next?
+Assembly, formerly known as Copilot, is a platform for client portals and recurring service workflows. The distinction matters: this page is not about Microsoft Copilot or GitHub Copilot, but about Assembly's client portal product.
 
-With Copilot, it is better to start small: one recurring task, one clear outcome, one visible benefit. That shows faster whether the tool removes friction or merely adds new habits.
+Its value appears when agencies, consultancies, law firms, bookkeeping firms, or service businesses need to organize many small client handoffs: files, forms, messages, invoices, status updates, and repeat onboarding steps.
 
-## Practical core
+## Who is Assembly for?
 
-Business tools rarely solve only one problem. They change handoffs, ownership, and how customers or teams experience work.
+Assembly fits service businesses that no longer want to run client work through scattered emails, folders, and spreadsheets. It is especially useful for teams with recurring client processes that need a clear portal without building custom software from scratch.
 
-In practice, Copilot is aimed mainly at agencies, consultancies, accounting firms, and service businesses with recurring client communication. It works best when ownership, review, and output format are clear before the tool enters the workflow.
+It is less useful if the team only needs a simple task board or if clients should not log into a separate portal at all. In those cases, project management tools, CRM systems, or lightweight forms may be simpler.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/copilot-editorial.webp" alt="Illustration for Copilot: client portal with files, forms and service handoffs on a calm workspace" loading="lazy" decoding="async" />
+  <img src="/images/tools/copilot-editorial.webp" alt="Illustration for Assembly: client portal with files, forms and service handoffs on a calm workspace" loading="lazy" decoding="async" />
 </figure>
 
 ## Typical use cases
 
-- build client portals instead of scattered email chains
-- bundle files, forms, invoices, and messages in one place
-- structure onboarding and recurring client processes
-- embed external dashboards or tools for clients
+- build client portals for agencies, consultancies, and service businesses
+- collect onboarding forms, tasks, and files in one place
+- bundle invoices, contracts, messages, and status updates for clients
+- structure recurring service packages or productized services
+- embed external tools and automations in a client portal
+- separate client communication from internal work management
 
-## What works well in daily use
+## Strengths
 
-- bundles workflows, communication, and status
-- can reduce manual coordination
-- makes recurring processes easier to manage
+- clear focus on client portals rather than generic project management
+- useful for recurring client processes with many handoffs
+- can combine automations, forms, files, and billing-related workflows
+- often faster for small service businesses than custom development
+- reduces scattered communication when roles and rules are defined
 
-Context matters as well: some teams use tools like Copilot as a quick pre-production step, while others make them part of the production workflow. The second path needs more rules, but it pays off when many similar tasks repeat.
+## Limitations
 
-## Limits and red flags
-
-- adoption needs process clarity
-- bad data and unclear roles otherwise move into the new tool
-- cost often scales with team size and usage
-- The name is ambiguous; this card does not refer to GitHub Copilot or Microsoft Copilot.
+- easy to confuse with Microsoft Copilot or GitHub Copilot by name
+- value depends on whether clients actually use the portal
+- often not the right fit for internal product teams or pure developer workflows
+- sensitive client data requires checks around roles, storage, and export
+- portal software does not fix an unclear process; it only makes it visible
 
 ## Workflow fit
 
-Copilot fits best when the desired output is clear before the tool is opened. A good setup defines input material, ownership, review steps, and export. Without those four points, a tool may feel productive while creating more unfinished intermediate work.
+Before adopting Assembly, test one real client workflow: onboarding, recurring monthly documents, or a service package with fixed steps. The key question is whether clients ask fewer follow-up questions, whether the team can approve work faster, and whether information remains easier to find later.
 
-## Quality control
+A good pilot has a clear stop condition. If the portal becomes just another place next to email, chat, and project boards, the workflow is not ready yet.
 
-Before adoption, it should be clear which handoff becomes easier afterwards. For catalog evaluation, that means looking beyond the first output. Test the same case two or three times with slightly different inputs. If the results remain stable, explainable, and editable, the value is much more reliable.
+## Privacy and data
 
-## Privacy & operations
-
-Depending on the use case, text, images, audio, customer data, research notes, or internal process information may be processed. Before production use, permissions, storage location, export paths, and deletion options should be clear. For AI or cloud-based tools, it also matters whether data is used for training, analytics, or only for providing the service.
+Assembly can involve client data, files, messages, contracts, and payment-related information. Before production use, check responsibilities, export paths, roles, retention, deletion, and data processing terms. For sensitive client data, start with a narrow pilot and explicit permissions.
 
 ## Pricing & costs
 
-In the catalog, Copilot is marked with the pricing model **Freemium**. For a real decision, check current limits, team features, export options, and whether a free or cheap entry point turns into an expensive workflow later.
+Assembly uses a freemium or subscription-style model. The real cost is not only the license: setup time, client roles, integrations, automations, and ongoing maintenance of portal templates also matter.
 
-**Provider:** https://assembly.com/
+**Provider:** https://assembly.com/platform
 
-## Alternatives to Copilot
+## Alternatives to Assembly
 
-- Moxo: useful comparison point if workflow, pricing, or specialization should differ.
-- Honeybook: useful comparison point if workflow, pricing, or specialization should differ.
-- Dubsado: useful comparison point if workflow, pricing, or specialization should differ.
-- Notion: useful comparison point if workflow, pricing, or specialization should differ.
-- [Monday.com](/en/tools/monday-com/): useful comparison point if workflow, pricing, or specialization should differ.
+- [Moxo](/en/tools/moxo/): useful when secure client communication and digital workflows are central.
+- [HoneyBook](/en/tools/honeybook/): useful for proposals, invoices, and client management in creative services.
+- [Monday.com](/en/tools/monday-com/): better when internal project management matters more than a client portal.
+- [ClickUp](/en/tools/clickup/): useful when tasks, docs, and team collaboration should live in a broader work platform.
 
 ## Editorial assessment
 
-Copilot is a good choice when client portal and service-business workflows; the former Copilot context is now closely tied to Assembly is truly a recurring part of the work. If the need appears only occasionally, a lighter tool or an existing process may be enough. If the need appears regularly, run a clean test with real material, real approvals, and a clear quality bar.
+Assembly is interesting when client communication, files, and recurring service steps are too scattered today. The right test is not a demo portal, but one real client case with clear roles: the client provides material, the team reviews it, and an outcome is approved. If that workflow becomes measurably calmer, Assembly has a place.
 
 ## FAQ
 
-**Is Copilot beginner-friendly?**
+**Is Assembly the same as Microsoft Copilot?**
 
-Usually for first tests, yes. Productive use depends less on the first click and more on whether tasks, data, and quality control are defined.
+No. This page covers Assembly, formerly Copilot, a client portal platform. Microsoft Copilot and GitHub Copilot are separate AI assistants for different use cases.
 
-**When is Copilot worth it?**
+**When is Assembly worth it?**
 
-When the same work step repeats regularly and is currently manual, scattered, or hard to review.
+When service businesses have recurring client processes that are currently spread across email, folders, forms, and manual follow-ups.
 
 **What should be checked before adoption?**
 
-Pricing model, data processing, export, team permissions, integrations, and who signs off on the results.
+Check roles, privacy, export, client adoption, integrations, and whether a real process becomes easier through the portal.
 
 **What is the most common mistake?**
 
-Treating the tool as the solution too early. A small practical test with a real example and a clear decision afterwards works better.
+The most common mistake is introducing a portal before the client process is clear. Then it becomes just another place everyone has to maintain.

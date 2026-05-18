@@ -5,6 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://aws.amazon.com/emr/"
+disabled: true
 popularity: 0
 ---
 

@@ -4,7 +4,7 @@ title: Google AI
 category: AI
 price_model: "Freemium"
 tags: ["chatbot", "data"]
-official_url: "http://ai.google"
+official_url: "https://ai.google/"
 popularity: 0
 ---
 

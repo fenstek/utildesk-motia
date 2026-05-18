@@ -73,7 +73,7 @@ In the catalog, Hadoop MapReduce is marked with the pricing model **Open Source*
 - [Apache Spark](/en/tools/apache-spark/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Apache Flink](/en/tools/apache-flink/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Apache Hive](/en/tools/apache-hive/): useful comparison point if workflow, pricing, or specialization should differ.
-- [AWS EMR (Elastic MapReduce)](/en/tools/aws-emr/): useful comparison point if workflow, pricing, or specialization should differ.
+- [Amazon EMR](/en/tools/amazon-emr/): useful comparison point if workflow, pricing, or specialization should differ.
 - [Databricks](/en/tools/databricks/): useful comparison point if workflow, pricing, or specialization should differ.
 
 ## Editorial assessment
