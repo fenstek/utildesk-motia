@@ -32,6 +32,10 @@ In day-to-day work, Swagger (OpenAPI) is less about having every edge feature an
 
 Swagger (OpenAPI) is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/swagger-editorial.webp" alt="Illustration for Swagger (OpenAPI): API station connecting contract routes and service trains" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **API specification in OpenAPI format**: Create and edit API definitions in a standardized JSON or YAML format.

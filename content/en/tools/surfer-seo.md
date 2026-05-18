@@ -34,6 +34,10 @@ In day-to-day work, Surfer SEO is less about having every edge feature and more 
 
 Surfer SEO is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/surfer-seo-editorial.webp" alt="Illustration for Surfer SEO: search expedition following waves and reefs to shore" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Content editor with real-time optimization:** Analysis and suggestions for text structure, keyword density, and other SEO factors while writing.

@@ -31,6 +31,10 @@ With Sphinx, I would separate the demo impression from operational reality early
 - **Quality question:** which parts come automatically from code and which are explained editorially.
 - **Risk:** with poorly maintained docstrings, it only creates formal documentation without value.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sphinx-editorial.webp" alt="Illustration for Sphinx: archive temple with luminous documentation paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Automatic generation of documentation from source code or text

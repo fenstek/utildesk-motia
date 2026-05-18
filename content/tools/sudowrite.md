@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassun
 - **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für Sudowrite nur schöne Einzelfälle zeigt.
 - **Häufiger Stolperstein:** Sudowrite enttäuscht, wenn Quellen, Tonalität, Review-Regeln und Verantwortlichkeiten unklar bleiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sudowrite-editorial.webp" alt="Illustration zu Sudowrite: Waldtheater laesst Figuren aus Baumtueren treten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **KI-gestützte Textgenerierung:** Automatisches Erstellen von Textvorschlägen basierend auf eingegebenen Stichwörtern oder Textfragmenten.

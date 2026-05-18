@@ -32,6 +32,10 @@ Streak fühlt sich dann gut an, wenn Pipeline-Stufen einfach bleiben. Drei bis f
 
 Teams sollten außerdem regeln, welche Informationen in Streak gehören und welche im eigentlichen Fachsystem bleiben. Sonst entstehen doppelte Wahrheiten zwischen Gmail, Tabellen und CRM.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streak-editorial.webp" alt="Illustration zu Streak: Postarkade bewegt leuchtende Gespraechsfaeden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Pipelines und Boxen direkt innerhalb von Gmail.

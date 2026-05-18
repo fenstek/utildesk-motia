@@ -39,6 +39,10 @@ Im Alltag zählt bei Speechly weniger, ob jede Randfunktion vorhanden ist, sonde
 
 Praktisch ist Speechly vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/speechly-editorial.webp" alt="Illustration zu Speechly: Sprachplatz mit leuchtenden Befehlswegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Echtzeit-Spracherkennung:** Erkennung und Verarbeitung von Sprache in Echtzeit, ideal für interaktive Anwendungen.

@@ -42,6 +42,10 @@ In day-to-day work, Suno AI is less about having every edge feature and more abo
 
 Suno AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/suno-ai-editorial.webp" alt="Illustration for Suno AI: valley amphitheater releasing songs as light birds" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **AI-powered audio creation:** Automatic generation of music, sound effects, or voice recordings based on user input.

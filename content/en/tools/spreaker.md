@@ -18,6 +18,10 @@ Spreaker is a versatile platform for podcast creation and publishing that provid
 
 Spreaker is aimed at a broad audience: from hobby podcasters who want to create their first episode without complications to professional content creators and media companies that need extensive production and monetization features. It also offers suitable solutions for educational institutions, companies in content marketing, and influencers who want to expand their reach with audio formats.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spreaker-editorial.webp" alt="Illustration for Spreaker: rooftop festival sending warm sound waves across the city" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **Podcast recording and editing:** Record directly through the platform with integrated editing tools.

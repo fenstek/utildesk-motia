@@ -27,6 +27,10 @@ Der beste Praxistest für SummarizeBot ist klein, aber echt. Ein Team sollte ein
 - **Rollout-Frage:** welche Inhalte zusammengefasst werden dürfen und wie Ergebnisse validiert werden.
 - **Bremse:** wichtige Nuancen auslässt, wenn Quellen nicht gegengeprüft werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/summarizebot-editorial.webp" alt="Illustration zu SummarizeBot: Bergarchiv verdichtet Rollen zu einem klaren Lichtband" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Zusammenfassung von Texten, Dokumenten und Webseiten

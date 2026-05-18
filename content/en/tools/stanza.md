@@ -27,6 +27,10 @@ Stanza is aimed at developers, researchers, and data scientists who want to inte
 
 Thanks to its open-source license, Stanza is ideal for anyone looking for a flexible and customizable NLP solution.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stanza-editorial.webp" alt="Illustration for Stanza: station hall guiding speech birds through light paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Multilingual support:** Models available for over 70 languages.

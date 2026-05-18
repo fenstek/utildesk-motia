@@ -35,6 +35,10 @@ Im Alltag zählt bei Splice weniger, ob jede Randfunktion vorhanden ist, sondern
 
 Praktisch ist Splice vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/splice-editorial.webp" alt="Illustration zu Splice: Musikwerkstatt webt leuchtende Audio-Loops" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Große Bibliothek an Sounds und Samples:** Zugriff auf Tausende von Audio-Loops, Instrumentals und Effekten

@@ -35,6 +35,10 @@ A useful evaluation starts with a limited protection scenario with alert, analys
 - **Good starting point:** A small pilot with a few users and real examples is more useful than a broad demo that only shows ideal cases for Splunk Observability.
 - **Common pitfall:** Splunk Observability disappoints when ownership, escalation paths, and data access are not clarified in advance.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/splunk-observability-editorial.webp" alt="Illustration for Splunk Observability: mountain observatory reading a city system pulse" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Real-time monitoring of infrastructure, applications, and cloud resources

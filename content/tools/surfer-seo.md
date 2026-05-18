@@ -29,6 +29,10 @@ Im Alltag zählt bei Surfer SEO weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Surfer SEO vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/surfer-seo-editorial.webp" alt="Illustration zu Surfer SEO: Such-Expedition folgt Wellen und Riffen zum Ufer" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Content-Editor mit Echtzeit-Optimierung:** Analyse und Vorschläge zur Textstruktur, Keyword-Dichte und weiteren SEO-Faktoren während des Schreibens.

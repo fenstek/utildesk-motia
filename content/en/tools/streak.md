@@ -36,6 +36,10 @@ Streak feels good when pipeline stages stay simple. Three to five clear statuses
 
 Teams should also define which information belongs in Streak and which should remain in the actual source system. Otherwise, duplicate truths emerge between Gmail, spreadsheets, and the CRM.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streak-editorial.webp" alt="Illustration for Streak: mail arcade moving luminous conversation threads" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Pipelines and boxes directly inside Gmail.

@@ -33,6 +33,10 @@ Storyboarder stands out not because it offers as many options as possible, but w
 - **Clarify first:** whether storyboards really speed up decisions or just create more work to maintain.
 - **Do not underestimate:** without a clear shot list, it quickly gets stuck on pretty individual images.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/storyboarder-editorial.webp" alt="Illustration for Storyboarder: canyon film set planning scenes with blank panels" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - Intuitive drawing tools for quick sketches and detailed storyboards

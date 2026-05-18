@@ -29,6 +29,10 @@ Stable Diffusion sollte nicht isoliert bewertet werden. Wichtig ist die Stelle i
 - **Messpunkt:** welche Modelle, Lizenzen, Hardware und Freigaben genutzt werden dürfen.
 - **Grenze:** ohne Prompt-, Rechte- und Qualitätsprüfung sehr uneinheitliche Ergebnisse liefert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stable-diffusion-editorial.webp" alt="Illustration zu Stable Diffusion: Druckwerkstatt lenkt Pigmentstroeme zu Bildern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Text-zu-Bild-Generierung:** Erzeugt hochwertige Bilder basierend auf detaillierten oder einfachen Texteingaben.

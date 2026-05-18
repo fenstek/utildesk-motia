@@ -30,6 +30,10 @@ Squiffy does not impress because it offers as many options as possible, but when
 - **Clarify first:** how branches are documented and dead ends are tested.
 - **Do not underestimate:** it quickly runs into structure and testing limits on large projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/squiffy-editorial.webp" alt="Illustration for Squiffy: forest paths branching into small story stages" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **AI-powered design suggestions:** Automatic generation of design ideas based on user preferences and current trends.

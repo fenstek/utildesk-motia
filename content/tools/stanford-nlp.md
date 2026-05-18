@@ -37,6 +37,10 @@ Ein belastbarer Pilot für Stanford NLP beginnt mit einem realen Entwicklungsabl
 - **Guter Start für Stanford NLP:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
 - **Risiko bei Stanford NLP:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stanford-nlp-editorial.webp" alt="Illustration zu Stanford NLP: Campus-Arkaden lenken Bedeutungsvoegel aus Licht" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Tokenisierung und Segmentierung:** Zerlegt Texte in Wörter, Sätze und Abschnitte

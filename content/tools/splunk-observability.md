@@ -30,6 +30,10 @@ Ein sinnvoller Test beginnt mit einem begrenzten Schutzszenario mit Alarm, Analy
 - **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Splunk Observability breiter ausgerollt wird.
 - **Häufiger Stolperstein:** Splunk Observability enttäuscht, wenn Zuständigkeiten, Eskalationen und Datenzugriffe nicht vorab geklärt sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/splunk-observability-editorial.webp" alt="Illustration zu Splunk Observability: Bergobservatorium liest die Pulse einer Stadt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Echtzeit-Monitoring von Infrastruktur, Anwendungen und Cloud-Ressourcen

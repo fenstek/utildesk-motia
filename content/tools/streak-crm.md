@@ -29,6 +29,10 @@ Im Alltag zählt bei Streak CRM weniger, ob jede Randfunktion vorhanden ist, son
 
 Praktisch ist Streak CRM vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streak-crm-editorial.webp" alt="Illustration zu Streak CRM: Gewaechshaus pflegt Kundenvines von Kontakt bis Abschluss" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **E-Mail-basierte CRM-Verwaltung:** Kundenkontakte und Verkaufschancen direkt im Gmail-Posteingang organisieren.

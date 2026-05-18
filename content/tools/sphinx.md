@@ -27,6 +27,10 @@ Bei Sphinx würde ich früh zwischen Demo-Eindruck und Betriebsrealität untersc
 - **Qualitätsfrage:** welche Teile automatisch aus Code kommen und welche redaktionell erklärt werden.
 - **Risiko:** bei ungepflegten Docstrings nur formale Dokumentation ohne Nutzen erzeugt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sphinx-editorial.webp" alt="Illustration zu Sphinx: Archivtempel mit leuchtenden Dokumentationswegen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Generierung von Dokumentationen aus Quellcode oder Texten

@@ -40,6 +40,10 @@ In day-to-day work, Splice is less about having every edge feature and more abou
 
 Splice is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/splice-editorial.webp" alt="Illustration for Splice: music workshop weaving luminous audio loops" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 - **Large library of sounds and samples:** Access to thousands of audio loops, instrumentals, and effects

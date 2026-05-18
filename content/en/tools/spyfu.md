@@ -36,6 +36,10 @@ In day-to-day work, SpyFu is good for questions like: Where are others competing
 
 You should not let large numbers hypnotize you. A small term with high purchase intent can be more valuable than a huge traffic mountain full of the wrong visitors.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spyfu-editorial.webp" alt="Illustration for SpyFu: noir alley tracing hidden competitor routes" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - SEO and PPC competitive analysis.

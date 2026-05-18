@@ -31,6 +31,10 @@ In day-to-day work, Streak CRM is less about having every edge feature and more 
 
 Streak CRM is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streak-crm-editorial.webp" alt="Illustration for Streak CRM: greenhouse tending customer vines from contact to close" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Email-based CRM management:** Organize customer contacts and sales opportunities directly in the Gmail inbox.

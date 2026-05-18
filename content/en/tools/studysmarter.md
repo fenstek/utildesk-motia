@@ -21,6 +21,10 @@ StudySmarter is an innovative learning platform designed to make learning more e
 
 StudySmarter is aimed at anyone who wants to improve their learning processes, from school students to university students and professionals who want to continue their education. The platform is especially helpful for users who prefer structured learning materials and want to benefit from digital tools for organization and revision. Teachers can also use StudySmarter to create materials and share them with their classes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/studysmarter-editorial.webp" alt="Illustration for StudySmarter: campus path turning study notes into luminous stepping stones" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Interactive flashcards:** Create and use digital flashcards for effective revision.

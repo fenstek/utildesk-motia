@@ -32,6 +32,10 @@ Im Alltag ist SpyFu gut für Fragen wie: Wo kaempfen andere sichtbar um Nachfrag
 
 Man sollte sich nicht von großen Zahlen hypnotisieren lassen. Ein kleiner Begriff mit hoher Kaufabsicht kann wertvoller sein als ein riesiger Traffic-Berg voller falscher Besucher.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spyfu-editorial.webp" alt="Illustration zu SpyFu: Noir-Gasse verfolgt verborgene Wettbewerbsrouten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - SEO- und PPC-Wettbewerbsanalyse.

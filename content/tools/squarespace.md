@@ -29,6 +29,10 @@ Im Alltag zählt bei Squarespace weniger, ob jede Randfunktion vorhanden ist, so
 
 Praktisch ist Squarespace vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/squarespace-editorial.webp" alt="Illustration zu Squarespace: Kuestendorf baut einen kreativen Schaufensterraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Website-Builder mit Drag-and-Drop:** Einfaches Erstellen und Anpassen von Seiten ohne Programmierkenntnisse.

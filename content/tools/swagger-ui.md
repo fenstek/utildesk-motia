@@ -17,6 +17,10 @@ Swagger UI ist ein Open-Source-Tool, das Entwicklern hilft, interaktive und leic
 
 Swagger UI richtet sich an Entwickler, API-Designer und Teams, die APIs erstellen, dokumentieren und testen möchten. Besonders nützlich ist es für Backend-Entwickler, die ihre Schnittstellen verständlich darstellen wollen, sowie für Frontend-Entwickler und Tester, die schnell und unkompliziert API-Funktionalitäten prüfen möchten. Ebenso profitieren technische Redakteure und Projektmanager von der klaren Visualisierung der API-Strukturen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/swagger-ui-editorial.webp" alt="Illustration zu Swagger UI: API-Ausstellung oeffnet leuchtende Service-Tore" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - **Interaktive API-Dokumentation**: Darstellung der API-Endpunkte mit Beschreibung, Parametern und möglichen Antworten.

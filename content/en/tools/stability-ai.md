@@ -40,6 +40,10 @@ In day-to-day work, Stability AI is less about having every edge feature and mor
 
 Stability AI is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stability-ai-editorial.webp" alt="Illustration for Stability AI: coastal atelier stabilizing a storm of images" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - **Text-to-Image Generation:** Create high-quality images from text prompts using advanced AI models.

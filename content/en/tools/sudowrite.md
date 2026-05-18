@@ -33,6 +33,10 @@ A useful evaluation starts with a real writing assignment with brief, draft, rev
 - **Good starting point:** Keep the first Sudowrite trial close to daily work, with one owner and a short review after the result is delivered.
 - **Common pitfall:** Sudowrite disappoints when sources, tone, review rules, and ownership remain unclear.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sudowrite-editorial.webp" alt="Illustration for Sudowrite: forest theater where characters step from tree doorways" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - **AI-powered text generation:** Automatically creates text suggestions based on entered keywords or text fragments.

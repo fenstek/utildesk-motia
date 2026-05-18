@@ -46,6 +46,10 @@ Context matters as well: some teams use tools like Spicychat as a quick pre-prod
 - sensitive data needs binding rules
 - With companion and roleplay tools, age limits, privacy, and emotional dependence need serious attention.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/spicychat-editorial.webp" alt="Illustration for Spicychat: lantern courtyard with character masks and story sparks" loading="lazy" decoding="async" />
+</figure>
+
 ## Workflow fit
 
 Spicychat fits best when the desired output is clear before the tool is opened. A good setup defines input material, ownership, review steps, and export. Without those four points, a tool may feel productive while creating more unfinished intermediate work.
