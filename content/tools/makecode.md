@@ -1,10 +1,11 @@
 ---
-slug: "makecode"
-title: "MakeCode"
-category: "Developer"
-price_model: "Free"
+slug: makecode
+title: MakeCode
+category: Developer
+price_model: Free
 tags: [education, coding, block-coding, developer-tools]
 official_url: "https://www.microsoft.com/en-us/makecode"
+popularity: 0
 ---
 
 # MakeCode

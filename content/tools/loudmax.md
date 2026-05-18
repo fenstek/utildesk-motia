@@ -1,10 +1,11 @@
 ---
-slug: "loudmax"
-title: "LoudMax"
-category: "Audio"
-price_model: "Free"
+slug: loudmax
+title: LoudMax
+category: Audio
+price_model: Free
 tags: [audio, music, limiter, plugins]
 official_url: "https://loudmax.blogspot.com/"
+popularity: 0
 ---
 
 # LoudMax

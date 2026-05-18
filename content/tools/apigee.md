@@ -1,10 +1,11 @@
 ---
-slug: "apigee"
-title: "Apigee (Google Cloud)"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: apigee
+title: Apigee (Google Cloud)
+category: Developer
+price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://cloud.google.com/apigee"
+popularity: 0
 ---
 
 # Apigee (Google Cloud)

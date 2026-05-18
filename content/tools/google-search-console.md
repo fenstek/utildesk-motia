@@ -1,10 +1,11 @@
 ---
-slug: "google-search-console"
-title: "Google Search Console"
-category: "Marketing"
-price_model: "Free"
+slug: google-search-console
+title: Google Search Console
+category: Marketing
+price_model: Free
 tags: [seo, analytics, search-console, webmaster-tools]
 official_url: "https://search.google.com/search-console/about"
+popularity: 0
 ---
 
 # Google Search Console

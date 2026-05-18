@@ -1,10 +1,11 @@
 ---
-slug: "sistrix"
-title: "Sistrix"
-category: "Marketing"
-price_model: "Abonnement"
+slug: sistrix
+title: Sistrix
+category: Marketing
+price_model: Abonnement
 tags: [seo, analytics, marketing, keyword-research]
 official_url: "https://www.sistrix.com/"
+popularity: 0
 ---
 
 # Sistrix

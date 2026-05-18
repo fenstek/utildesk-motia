@@ -5,7 +5,7 @@ category: Design & Kreativitat
 price_model: Kostenlos
 tags: [design,image,photo]
 official_url: "https://www.gimp.org/downloads/"
-popularity: 48
+popularity: 47
 description: GIMP ist ein kostenloser Open-Source-Bildeditor für Fotobearbeitung, Compositing, Grafiken und pixelbasierte Designarbeit.
 ---
 # GIMP

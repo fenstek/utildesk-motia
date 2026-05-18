@@ -1,10 +1,11 @@
 ---
-slug: "openfaas"
-title: "OpenFaaS"
-category: "Developer"
-price_model: "Freemium"
+slug: openfaas
+title: OpenFaaS
+category: Developer
+price_model: Freemium
 tags: [serverless, developer-tools, cloud, open-source]
 official_url: "https://www.openfaas.com/"
+popularity: 0
 ---
 
 # OpenFaaS

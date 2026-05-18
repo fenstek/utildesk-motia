@@ -1,10 +1,11 @@
 ---
-slug: "eagle"
-title: "Eagle"
-category: "Design"
-price_model: "One-time purchase"
+slug: eagle
+title: Eagle
+category: Design
+price_model: One-time purchase
 tags: [design, asset-management, productivity, organization]
 official_url: "https://en.eagle.cool/"
+popularity: 0
 ---
 
 # Eagle

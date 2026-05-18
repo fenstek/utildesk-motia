@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [localization, translation-management, developers]
 official_url: "https://poeditor.com/"
-popularity: 0
+popularity: 18
 ---
 
 # POEditor

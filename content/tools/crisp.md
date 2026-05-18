@@ -1,10 +1,11 @@
 ---
-slug: "crisp"
-title: "Crisp"
-category: "Produktivität"
-price_model: "Freemium"
+slug: crisp
+title: Crisp
+category: Produktivität
+price_model: Freemium
 tags: [customer-support, chatbot, communication, ai]
 official_url: "https://crisp.chat/en/"
+popularity: 0
 ---
 
 # Crisp

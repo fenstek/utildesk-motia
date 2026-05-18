@@ -1,10 +1,11 @@
 ---
-slug: "blockly"
-title: "Blockly"
-category: "Developer"
-price_model: "Open Source"
+slug: blockly
+title: Blockly
+category: Developer
+price_model: Open Source
 tags: [coding, education, javascript, open-source]
 official_url: "https://developers.google.com/blockly?hl=zh-cn"
+popularity: 0
 ---
 
 # Blockly

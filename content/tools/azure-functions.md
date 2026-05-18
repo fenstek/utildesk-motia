@@ -1,10 +1,11 @@
 ---
-slug: "azure-functions"
-title: "Azure Functions"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: azure-functions
+title: Azure Functions
+category: Developer
+price_model: Nutzungsbasiert
 tags: [serverless,cloud,developer-tools,api]
 official_url: "https://azure.microsoft.com/en-us/products/functions"
+popularity: 0
 ---
 
 # Azure Functions

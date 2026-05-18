@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [automation, rpa, workflow, enterprise]
 official_url: "https://www.nintex.com/platforms/cloud-automation/rpa/"
-popularity: 22
+popularity: 23
 ---
 
 # Nintex RPA

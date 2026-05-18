@@ -1,10 +1,11 @@
 ---
-slug: "code-org"
-title: "Code.org"
-category: "Developer"
-price_model: "Free"
+slug: code-org
+title: Code.org
+category: Developer
+price_model: Free
 tags: [education,coding,children,developer-tools]
 official_url: "https://code.org/en-US"
+popularity: 0
 ---
 
 # Code.org

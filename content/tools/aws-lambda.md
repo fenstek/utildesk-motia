@@ -1,10 +1,11 @@
 ---
-slug: "aws-lambda"
-title: "AWS Lambda"
-category: "Developer"
-price_model: "Nutzungsbasiert"
+slug: aws-lambda
+title: AWS Lambda
+category: Developer
+price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://aws.amazon.com/lambda/"
+popularity: 0
 ---
 
 # AWS Lambda

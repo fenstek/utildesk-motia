@@ -1,10 +1,11 @@
 ---
-slug: "kodex"
-title: "Kodex"
-category: "Developer"
-price_model: "Freemium"
+slug: kodex
+title: Kodex
+category: Developer
+price_model: Freemium
 tags: [code-editor, ios, developer-tools, productivity]
 official_url: "https://www.kodex.app/"
+popularity: 0
 ---
 
 # Kodex

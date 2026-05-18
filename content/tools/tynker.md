@@ -1,10 +1,11 @@
 ---
-slug: "tynker"
-title: "Tynker"
-category: "Developer"
-price_model: "Freemium"
+slug: tynker
+title: Tynker
+category: Developer
+price_model: Freemium
 tags: [education, coding, children, learning]
 official_url: "https://www.tynker.com/"
+popularity: 0
 ---
 
 # Tynker

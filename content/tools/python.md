@@ -1,10 +1,11 @@
 ---
-slug: "python"
-title: "Python"
-category: "Developer"
-price_model: "Open Source"
+slug: python
+title: Python
+category: Developer
+price_model: Open Source
 tags: [programming-language, developer-tools, open-source, coding]
 official_url: "https://www.python.org/"
+popularity: 0
 ---
 
 # Python
