@@ -143,3 +143,10 @@
 
 - Umami Session Replay stays disabled by default. Even though Umami v3.1.0 adds replay support, enabling it requires a separate privacy/GDPR decision and review of masking settings.
 - Pin the production Umami container to an explicit version tag after upgrades (`docker.umami.is/umami-software/umami:3.1.0` as of 2026-05-15) instead of relying on floating `latest`/`postgresql-latest` tags.
+
+## 2026-05-18 - Vendor-card SEO repair policy
+
+- During the Google indexing recovery phase, hyperscaler/vendor pages are curated rather than mass-promoted. Ambiguous or duplicate vendor pages must not be forced into the Google sitemap.
+- Canonical vendor choices from the first repair pass: keep `aws-sagemaker`, `amazon-emr`, `google-cloud-translation`, and `azure-synapse-analytics`; disable the duplicate pages `amazon-sagemaker`, `aws-emr`, `google-cloud-translation-api`, and `microsoft-azure-synapse-analytics`.
+- The ambiguous `copilot` slug represents Assembly's client-portal product, not Microsoft Copilot or GitHub Copilot; keep it out of `FORCE_INDEX_TOOL_SLUGS` unless it later earns index eligibility through real traffic or manual strategy.
+- Run `npm run audit:vendor` before re-enabling automatic tool-card publication.

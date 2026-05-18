@@ -4,7 +4,8 @@ title: Google Cloud Translation API
 category: AI
 price_model: Nutzungsbasiert
 tags: [translation,api,google-cloud]
-official_url: "https://docs.cloud.google.com/translate/docs/overview"
+official_url: "https://cloud.google.com/translate"
+disabled: true
 popularity: 0
 ---
 

@@ -5,6 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [developer-tools, data, cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/synapse-analytics"
+disabled: true
 popularity: 0
 ---
 

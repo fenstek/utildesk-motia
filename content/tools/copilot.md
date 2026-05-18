@@ -1,99 +1,95 @@
 ---
 slug: copilot
-title: Copilot
-category: Developer
+title: Assembly (ehemals Copilot)
+category: Business
 price_model: "Freemium"
-tags: [ai, developer]
-official_url: "https://assembly.com/"
+tags: [client-portal, workflow, automation]
+official_url: "https://assembly.com/platform"
 popularity: 0
-description: "Copilot ist ein Business- und Operations-Plattform für Client-Portal- und Service-Business-Workflows; der frühere Copilot-Kontext ist inzwischen eng mit Assembly verbunden."
+description: "Assembly (ehemals Copilot) ist eine Client-Portal-Plattform fuer Dienstleister, Agenturen und Beratungen, nicht Microsoft Copilot."
 ---
-# Copilot
+# Assembly (ehemals Copilot)
 
-Bei Copilot lohnt sich ein nüchterner Blick. Das Tool wirkt am stärksten, wenn man es nicht isoliert bewertet, sondern entlang eines echten Arbeitsablaufs: Wer gibt Material hinein, wer prüft das Ergebnis, und wo landet es danach?
+Assembly, frueher als Copilot bekannt, ist eine Plattform fuer Kundenportale und wiederkehrende Service-Prozesse. Wichtig ist die Einordnung: Diese Karte meint nicht Microsoft Copilot und nicht GitHub Copilot, sondern das Client-Portal-Produkt von Assembly.
 
-Bei Copilot sollte man klein anfangen: ein wiederkehrender Vorgang, ein klares Ergebnis, ein prüfbarer Nutzen. So erkennt man schneller, ob das Tool wirklich entlastet oder nur neue Gewohnheiten verlangt.
+Der Nutzen entsteht vor allem dort, wo Agenturen, Beratungen, Kanzleien oder Buchhaltungsbueros viele kleine Uebergaben mit Kunden strukturieren muessen: Dateien, Formulare, Nachrichten, Rechnungen, Statusupdates und wiederkehrende Onboarding-Schritte.
 
-## Der praktische Kern
+## Fuer wen ist Assembly geeignet?
 
-Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Zuständigkeiten und die Art, wie Kunden oder Teams Arbeit wahrnehmen. Für Copilot sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Assembly passt zu Dienstleistern, die Kundenarbeit nicht laenger ueber verstreute E-Mails, Ordner und Tabellen steuern wollen. Besonders sinnvoll ist es fuer Teams, die wiederkehrende Kundenprozesse haben und ein klar abgegrenztes Portal brauchen, ohne sofort eine eigene Software zu entwickeln.
 
-Copilot richtet sich in der Praxis vor allem an Agenturen, Beratungen, Buchhaltungsbüros und Dienstleister mit wiederkehrender Kundenkommunikation. Gut eingesetzt wird es, wenn Zuständigkeit, Prüfschritt und Ergebnisformat vorher geklärt sind.
-
-
+Weniger geeignet ist Assembly, wenn nur ein einfaches Aufgabenboard gesucht wird oder wenn Kunden gar keinen eigenen Portalzugang nutzen sollen. Dann sind Projektmanagement-Tools, CRM-Systeme oder einfache Formularstrecken oft schlanker.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/copilot-editorial.webp" alt="Illustration zu Copilot: Kundenportal mit Dateien, Formularen und Service-Übergaben auf einem ruhigen Arbeitsplatz" loading="lazy" decoding="async" />
+  <img src="/images/tools/copilot-editorial.webp" alt="Illustration zu Assembly: Kundenportal mit Dateien, Formularen und Service-Uebergaben auf einem ruhigen Arbeitsplatz" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien
 
-- Kundenportale statt verstreuter E-Mail-Ketten aufbauen
-- Dateien, Formulare, Rechnungen und Nachrichten an einem Ort bündeln
-- Onboarding und wiederkehrende Kundenprozesse strukturieren
-- externe Dashboards oder Tools kundennah einbetten
+- Kundenportale fuer Agenturen, Beratungen und Dienstleister aufbauen
+- Onboarding-Formulare, Aufgaben und Dateien an einem Ort sammeln
+- Rechnungen, Vertrage, Nachrichten und Statusupdates kundenfreundlich buendeln
+- wiederkehrende Servicepakete oder productized services strukturieren
+- externe Tools und Automationen in ein Kundenportal einbetten
+- Kundenkommunikation von internen Arbeitsablaeufen trennen
 
-## Was im Alltag gut funktioniert
+## Staerken
 
-- bündelt Abläufe, Kommunikation und Status
-- kann manuelle Koordination reduzieren
-- macht wiederkehrende Prozesse besser steuerbar
+- klarer Fokus auf Client-Portale statt allgemeines Projektmanagement
+- nuetzlich fuer wiederkehrende Kundenprozesse mit vielen Uebergaben
+- kombinierbar mit Automationen, Formularen, Dateien und Zahlungsprozessen
+- fuer kleine Dienstleister oft schneller als eine Eigenentwicklung
+- reduziert verstreute Kommunikation, wenn Regeln und Rollen sauber definiert sind
 
-Zusätzlich ist bei Copilot der Kontext wichtig: Manche Teams nutzen solche Werkzeuge als schnelle Vorstufe, andere als festen Produktionsbaustein. Die zweite Variante braucht mehr Regeln, zahlt sich aber aus, wenn viele ähnliche Aufgaben anfallen.
+## Grenzen
 
-## Grenzen und rote Flaggen
-
-- Einführung braucht Prozessklarheit
-- schlechte Daten und unklare Rollen wandern sonst nur ins neue Tool
-- Kosten steigen oft mit Teamgröße und Nutzung
-- Der Name ist mehrdeutig; diese Karte meint nicht GitHub Copilot oder Microsoft Copilot.
+- nicht zu verwechseln mit Microsoft Copilot oder GitHub Copilot
+- Nutzen haengt stark davon ab, ob Kunden das Portal wirklich verwenden
+- fuer interne Produktteams oder reine Entwickler-Workflows oft nicht passend
+- bei sensiblen Kundendaten muessen Rollen, Speicherorte und Exporte geprueft werden
+- Portal-Software loest keinen unklaren Prozess; sie macht ihn nur sichtbarer
 
 ## Workflow-Fit
 
-Copilot passt am besten in Workflows, in denen Client-Portal- und Service-Business-Workflows; der frühere Copilot-Kontext ist inzwischen eng mit Assembly verbunden nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+Vor einem produktiven Einsatz sollte ein konkreter Kundenprozess getestet werden: zum Beispiel Onboarding, wiederkehrende Monatsunterlagen oder ein Servicepaket mit festen Schritten. Entscheidend ist, ob Kunden weniger nachfragen, ob das Team schneller freigeben kann und ob Informationen spaeter wiederauffindbar bleiben.
 
-Für Copilot arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
+Ein guter Pilot hat ein klares Abbruchkriterium. Wenn das Portal nur ein weiterer Ort neben E-Mail, Chat und Projektboard wird, ist der Workflow noch nicht reif genug.
 
-## Qualitätssicherung
+## Datenschutz und Daten
 
-Bei Copilot sollte die Prüfung mit einem realen Beispiel beginnen: ob eine echte Übergabe danach einfacher, messbarer oder zuverlässiger wird. Zusätzlich lohnt sich ein zweiter Durchlauf mit veränderten Randbedingungen, damit sichtbar wird, ob Ergebnisse stabil, erklärbar und nachbearbeitbar bleiben.
-
-## Datenschutz & Betriebsfragen
-
-Bei Copilot geht es vor allem um Kundendaten, interne Prozesse, Rollen, Nachrichten, Dateien und operative Kennzahlen. Vor produktiver Nutzung sollten Zugriff, Speicherort, Exportwege und Löschmöglichkeiten konkret dokumentiert werden; bei sensiblen Inhalten ist ein Pilot mit anonymisierten oder synthetischen Daten sicherer.
+Assembly kann Kundendaten, Dateien, Nachrichten, Vertrage und Zahlungsinformationen beruehren. Vor dem Einsatz sollten Verantwortlichkeiten, Exportwege, Rollen, Loeschfristen und Auftragsverarbeitung geprueft werden. Fuer sensible Mandanten- oder Gesundheitsdaten ist ein enger Test mit klaren Berechtigungen Pflicht.
 
 ## Preise & Kosten
 
-Im Katalog ist Copilot mit dem Preismodell **Freemium** geführt. Für eine belastbare Entscheidung zählen hier vor allem Nutzerrollen, Integrationen, Automationen, Admin-Funktionen und laufender Betriebsaufwand; aktuelle Anbieterlimits, Teamfunktionen und Vertragsdetails sollten vor Einführung direkt geprüft werden.
+Assembly arbeitet mit einem Freemium- beziehungsweise Abo-Modell. Fuer die Entscheidung zaehlen nicht nur die Lizenzkosten, sondern auch Einrichtungsaufwand, Kundenrollen, Integrationen, Automationen und der laufende Pflegeaufwand fuer Portalvorlagen.
 
-**Zum Anbieter:** https://assembly.com/
+**Zum Anbieter:** https://assembly.com/platform
 
-## Alternativen zu Copilot
+## Alternativen zu Assembly
 
-- Moxo: stärker, wenn Client-Portale und Kundenprozesse stärker standardisiert werden sollen gefragt ist.
-- Honeybook: passender, wenn der Schwerpunkt auf Buchungen, Angebote und Zahlungen für kreative Dienstleister zentral sind liegt.
-- Dubsado: guter Vergleich für Teams, die CRM- und Workflow-Automation für kleine Service-Businesses gefragt ist brauchen.
-- Notion: prüfen, wenn Dokumentation, Datenbanken und Aufgaben zusammenlaufen sollen wichtiger ist.
-- [Monday.com](/tools/monday-com/): naheliegend, falls ein anderer Schwerpunkt als bei Copilot im Vordergrund steht.
+- [Moxo](/tools/moxo/): wenn sichere Kundenkommunikation und digitale Workflows im Vordergrund stehen.
+- [HoneyBook](/tools/honeybook/): wenn Angebote, Rechnungen und Kundenverwaltung fuer Kreativdienstleister wichtig sind.
+- [Monday.com](/tools/monday-com/): wenn interne Projektsteuerung wichtiger ist als ein Kundenportal.
+- [ClickUp](/tools/clickup/): wenn Aufgaben, Dokumente und Teamarbeit in einer breiteren Arbeitsplattform liegen sollen.
 
-## Redaktionelle Einschätzung
+## Redaktionelle Einschaetzung
 
-Copilot ist dann eine gute Wahl, wenn Client-Portal- und Service-Business-Workflows; der frühere Copilot-Kontext ist inzwischen eng mit Assembly verbunden tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Assembly ist interessant, wenn Kundenkommunikation, Dateien und wiederkehrende Service-Schritte heute zu stark verteilt sind. Der richtige Test ist kein Demo-Portal, sondern ein echter Kundenfall mit klaren Rollen: Kunde liefert etwas, Team prueft, Ergebnis wird freigegeben. Wenn dieser Ablauf messbar ruhiger wird, hat Assembly einen Platz im Workflow.
 
 ## FAQ
 
-**Ist Copilot für Einsteiger geeignet?**
+**Ist Assembly dasselbe wie Microsoft Copilot?**
 
-Copilot ist für Einsteiger nur dann sinnvoll, wenn der zugrunde liegende Prozess bereits klar ist. Für produktive Nutzung sollte trotzdem ein kleines Beispiel mit echten Anforderungen getestet werden.
+Nein. Diese Karte meint Assembly, frueher Copilot, eine Client-Portal-Plattform. Microsoft Copilot und GitHub Copilot sind separate KI-Assistenten mit anderen Einsatzbereichen.
 
-**Wann lohnt sich Copilot besonders?**
+**Wann lohnt sich Assembly besonders?**
 
-Copilot lohnt sich besonders, wenn Client-Portal- und Service-Business-Workflows; der frühere Copilot-Kontext ist inzwischen eng mit Assembly verbunden regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Wenn Dienstleister wiederkehrende Kundenprozesse haben, die heute ueber E-Mail, Ordner, Formulare und manuelle Nachfragen verteilt sind.
 
-**Was sollte man vor dem Einsatz prüfen?**
+**Was sollte man vor dem Einsatz pruefen?**
 
-Vor dem Einsatz prüfen: Rollen, Datenschutz, Integrationen, Exporte, Benachrichtigungen und Verantwortlichkeiten. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Copilot sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Pruefen sollte man Rollen, Datenschutz, Export, Kundenakzeptanz, Integrationen und ob ein echter Prozess durch das Portal einfacher wird.
 
-**Was ist der häufigste Fehler?**
+**Was ist der haeufigste Fehler?**
 
-Der häufigste Fehler ist, Software einzuführen, bevor Prozess, Zuständigkeit und Erfolgskriterium geklärt sind. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Copilot sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Der haeufigste Fehler ist, ein Portal einzufuehren, bevor der eigentliche Kundenprozess klar ist. Dann entsteht nur ein weiterer Ort, den alle pflegen muessen.

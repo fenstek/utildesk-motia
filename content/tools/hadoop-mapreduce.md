@@ -71,7 +71,7 @@ Im Katalog ist Hadoop MapReduce mit dem Preismodell **Open Source** gef체hrt. F�
 - [Apache Spark](/tools/apache-spark/): pr체fen, wenn ein anderer Schwerpunkt als bei Hadoop MapReduce relevant ist.
 - [Apache Flink](/tools/apache-flink/): passender, wenn ein anderer Schwerpunkt als bei Hadoop MapReduce im Vordergrund steht.
 - [Apache Hive](/tools/apache-hive/): pr체fen, wenn ein anderer Schwerpunkt als bei Hadoop MapReduce relevant ist.
-- [AWS EMR (Elastic MapReduce)](/tools/aws-emr/): pr체fen, wenn ein anderer Schwerpunkt als bei Hadoop MapReduce relevant ist.
+- [Amazon EMR](/tools/amazon-emr/): pr체fen, wenn ein anderer Schwerpunkt als bei Hadoop MapReduce relevant ist.
 - [Databricks](/tools/databricks/): naheliegend, falls ein anderer Schwerpunkt als bei Hadoop MapReduce im Vordergrund steht.
 
 ## Redaktionelle Einsch채tzung

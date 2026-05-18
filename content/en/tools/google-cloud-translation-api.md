@@ -7,7 +7,8 @@ tags:
   - translation
   - api
   - google-cloud
-official_url: 'https://docs.cloud.google.com/translate/docs/overview'
+official_url: "https://cloud.google.com/translate"
+disabled: true
 popularity: 0
 source_language: de
 translation: full

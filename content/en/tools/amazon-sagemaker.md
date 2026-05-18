@@ -6,7 +6,8 @@ price_model: Usage-based
 tags:
   - assistant
   - automation
-official_url: 'https://openai.com/index/amazon-partnership/'
+official_url: "https://aws.amazon.com/sagemaker/"
+disabled: true
 popularity: 0
 source_language: de
 translation: full

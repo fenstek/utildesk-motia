@@ -429,3 +429,9 @@ _Last updated: 2026-05-15_
 - 2026-05-14: Added the next 50 varied editorial WebP illustrations for manually edited tool cards from Automation Anywhere through DataCamp; inserted localized DE/EN figure blocks and updated the illustration registry.
 - 2026-05-15: Added the next 50 varied editorial WebP illustrations for active manually edited tool cards from Datadog through Google BigQuery; inserted localized DE/EN figure blocks, updated the illustration registry, and rejected generated variants with text/logo/dashboard artifacts.
 - 2026-05-15: Added 30 varied editorial WebP illustrations for active manually edited tool cards from Google Chat through IBM Watson Speech to Text; inserted localized DE/EN figure blocks, updated the illustration registry, and rejected an early translation variant with symbol artifacts.
+
+## 2026-05-18 - Vendor-card SEO repairs implemented
+
+- Fixed high-risk vendor card issues: corrected Google Tasks and Google AI official URLs, deactivated duplicate Amazon/AWS, Google Cloud Translation, and Azure Synapse pages, and clarified the ambiguous `copilot` card as Assembly (formerly Copilot).
+- Removed `copilot` from the Google force-index list so Microsoft Copilot remains the Google-priority Copilot page.
+- Added `scripts/audit_vendor_tool_cards.mjs` plus `npm run audit:vendor`; the audit blocks known duplicate vendor pages, transient login/docs URLs, and ambiguous force-index entries.

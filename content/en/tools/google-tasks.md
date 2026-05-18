@@ -7,7 +7,7 @@ tags:
   - assistant
   - automation
   - workflow
-official_url: 'https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Ftasks.google.com%2F&dsh=S84780699%3A1776384015389420&followup=https%3A%2F%2Ftasks.google.com%2F&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AT1y2_WcenzjXfxF9bZy7XkLkO9vWKXVapmfKtvBdFbh4sfANXkw8jfDfneVKd_7ecDn5lq5AJ6xwg'
+official_url: "https://workspace.google.com/products/tasks/"
 popularity: 0
 translation: full
 description: "Google Tasks is a simple task list in the Google ecosystem for personal to-dos, Gmail context, and calendar-adjacent work."

@@ -8,6 +8,7 @@ tags:
   - automation
   - workflow
 official_url: 'https://aws.amazon.com/emr/'
+disabled: true
 popularity: 0
 source_language: de
 translation: full

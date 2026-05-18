@@ -2,9 +2,9 @@
 slug: azure-synapse-analytics
 title: Azure Synapse Analytics
 category: AI
-price_model: 
+price_model: Nutzungsbasiert
 tags: [analytics, data-warehouse, azure]
-official_url: "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+official_url: "https://azure.microsoft.com/en-us/products/synapse-analytics/"
 popularity: 0
 ---
 

@@ -49,7 +49,6 @@ const FORCE_INDEX_TOOL_SLUGS = new Set([
   "clickup",
   "cohere",
   "continue",
-  "copilot",
   "davinci-resolve",
   "deepinfra",
   "descript",
