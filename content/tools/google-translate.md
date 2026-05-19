@@ -6,7 +6,7 @@ price_model: Freemium
 tags: ["writing"]
 official_url: "https://translate.google.com"
 created_at: 2026-02-11
-popularity: 44
+popularity: 45
 ---
 
 # Google Translate

@@ -5,7 +5,7 @@ category: Developer
 price_model: Abonnement
 tags: [security,enterprise,automation,analytics,developer-tools]
 official_url: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint"
-popularity: 27
+popularity: 28
 ---
 
 # Microsoft Defender for Endpoint

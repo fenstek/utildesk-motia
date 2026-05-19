@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [data, analytics, education, productivity, automation]
 official_url: "https://elicit.com/"
-popularity: 96
+popularity: 95
 description: Elicit unterstützt Literaturrecherche, Paper-Sichtung und strukturierte Evidenzarbeit für Forschung und Analyse.
 ---
 # Elicit
