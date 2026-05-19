@@ -27,7 +27,7 @@ relatedTools:
   - title: "OpenAI Codex"
     href: "/tools/openai-codex/"
 ---
-Vibe coding was the perfect phrase for the first rush: describe an idea, let the agent work, admire the result. For prototypes, that can be wonderful. For production software, it is only the beginning.
+Vibe coding was the perfect phrase for the first rush: describe an idea, let an agent work in [Cursor](/tools/cursor/), [GitHub Copilot](/tools/github-copilot/), [Claude Code](/tools/claude/) or [OpenAI Codex](/tools/openai-codex/), then admire the result. For prototypes, that can be wonderful. For production software, it is only the beginning.
 
 The hype can hide a simple fact: AI-generated code is not automatically more maintainable, more secure or more correct. It arrives faster — and that shifts the bottleneck. Teams write less by hand, but they must verify, explain and constrain more. The real productivity question is not “How much code can AI generate?” It is “How reliably can we turn that code into a reviewable change?”
 
@@ -65,6 +65,10 @@ A useful checklist is:
 - Can a human explain the patch in five minutes?
 
 If the last answer is no, the diff is probably too large.
+
+## Relevant tools on Utildesk
+
+In practice, the roles differ. [GitHub Copilot](/tools/github-copilot/) remains strong inside the editor, [Cursor](/tools/cursor/) ties AI coding closely to project context, [Claude Code](/tools/claude/) is useful for explanation-heavy agent sessions, and [OpenAI Codex](/tools/openai-codex/) fits terminal-oriented work with tests and Git discipline. The important point is not the tool name, but whether the workflow forces small diffs, reproducible tests and real review.
 
 ## The workflow after the hype
 

@@ -29,7 +29,7 @@ relatedTools:
 ---
 Das Model Context Protocol hat ein altes Problem neu verpackt: Wie verbindet man intelligente Systeme mit echten Unternehmensdaten, ohne ihnen zu viel Macht zu geben? MCP macht Tool-Zugriffe standardisierter. Genau dadurch wird es attraktiv – und riskant.
 
-Sobald ein Agent Tickets lesen, Dateien abrufen, Datenbanken befragen oder interne APIs auslösen kann, ist er nicht mehr nur ein Chatfenster. Er wird zu einem nicht-menschlichen Akteur im Unternehmensnetz. Für Security-Teams bedeutet das: Prompt-Sicherheit allein reicht nicht. Die entscheidende Frage lautet, welche Aktion der Agent in welchem Kontext tatsächlich ausführen darf.
+Sobald ein Agent Tickets lesen, Dateien abrufen, Datenbanken befragen oder interne [APIs](/tools/openai-api/) auslösen kann, ist er nicht mehr nur ein Chatfenster. Er wird zu einem nicht-menschlichen Akteur im Unternehmensnetz. Für Security-Teams bedeutet das: Prompt-Sicherheit allein reicht nicht. Die entscheidende Frage lautet, welche Aktion der Agent in welchem Kontext tatsächlich ausführen darf.
 
 ## Warum MCP-Governance mehr ist als ein Prompt-Problem
 
@@ -56,6 +56,10 @@ Dieses Gateway kann riskante Tool-Beschreibungen filtern, verdächtige Antworten
 Für produktive Agenten reicht es nicht, am Ende ein Ergebnis zu sehen. Teams müssen rekonstruieren können, welche Eingabe zu welchem Tool-Call geführt hat, welche Daten gelesen wurden, welche Policy entschieden hat und wer eine Freigabe erteilt hat.
 
 Ohne solche Audit-Trails wird Governance zur Behauptung. Mit ihnen können Security, Legal und Engineering gemeinsam prüfen, ob ein Agent innerhalb seiner Grenzen gehandelt hat. Das ist besonders wichtig, wenn Agenten über längere Sessions arbeiten oder mehrere Systeme nacheinander berühren.
+
+## Relevante Tools auf Utildesk
+
+Wer Agenten produktiv baut, sollte die Tool-Schicht nicht isoliert betrachten. [OpenAI GPT Agents](/tools/openai-gpt-agents/) stehen für den Plattformansatz rund um handlungsfähige Assistenten, [LangChain](/tools/langchain/) und [CrewAI](/tools/crew-ai/) zeigen typische Framework-Pfade für orchestrierte Agenten, und die [OpenAI API](/tools/openai-api/) bleibt für viele Teams die operative Schnittstelle, an der Authentifizierung, Kostenkontrolle und Logging sauber gelöst werden müssen.
 
 ## Praxis-Check für Unternehmen
 
