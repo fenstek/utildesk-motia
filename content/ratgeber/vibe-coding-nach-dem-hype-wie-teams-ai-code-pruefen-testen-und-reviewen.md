@@ -27,7 +27,7 @@ relatedTools:
   - title: "OpenAI Codex"
     href: "/tools/openai-codex/"
 ---
-Vibe Coding war der perfekte Begriff für den ersten Rausch: Idee formulieren, Agent arbeiten lassen, Ergebnis bestaunen. Für Prototypen ist das großartig. Für produktive Software ist es nur der Anfang.
+Vibe Coding war der perfekte Begriff für den ersten Rausch: Idee formulieren, in [Cursor](/tools/cursor/), [GitHub Copilot](/tools/github-copilot/), [Claude Code](/tools/claude/) oder [OpenAI Codex](/tools/openai-codex/) einen Agenten arbeiten lassen, Ergebnis bestaunen. Für Prototypen ist das großartig. Für produktive Software ist es nur der Anfang.
 
 Der Hype verdeckt leicht, dass KI-Code nicht automatisch wartbarer, sicherer oder fachlich richtiger ist. Er entsteht schneller – und genau dadurch verschiebt sich der Engpass. Teams schreiben weniger von Hand, müssen aber mehr prüfen, erklären und begrenzen. Die eigentliche Produktivitätsfrage lautet deshalb nicht: „Wie viel Code kann die KI erzeugen?“ Sondern: „Wie zuverlässig bekommen wir diesen Code in einen reviewbaren Zustand?“
 
@@ -65,6 +65,10 @@ Eine brauchbare Review-Checkliste lautet:
 - Kann ein Mensch den Patch in fünf Minuten erklären?
 
 Wenn die letzte Frage mit Nein beantwortet wird, ist der Diff wahrscheinlich zu groß.
+
+## Relevante Tools auf Utildesk
+
+Für die Praxis lohnt der Vergleich der Werkzeugrollen: [GitHub Copilot](/tools/github-copilot/) bleibt stark direkt im Editor, [Cursor](/tools/cursor/) bündelt KI-Coding enger mit Projektkontext, [Claude Code](/tools/claude/) eignet sich für erklärungsintensive Agenten-Sessions, und [OpenAI Codex](/tools/openai-codex/) passt gut zu terminalnahen Aufgaben mit Tests und Git-Disziplin. Entscheidend ist nicht der Name des Tools, sondern ob der Workflow kleine Diffs, reproduzierbare Tests und echten Review erzwingt.
 
 ## Der Workflow nach dem Hype
 

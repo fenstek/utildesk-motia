@@ -29,7 +29,7 @@ relatedTools:
 ---
 The Model Context Protocol packages an old security problem in a new form: how do you connect intelligent systems to real company data without giving them too much power? MCP standardizes tool access. That is exactly why it is attractive — and risky.
 
-Once an agent can read tickets, fetch files, query databases or trigger internal APIs, it is no longer just a chat window. It becomes a non-human actor inside the enterprise environment. For security teams, that means prompt hardening is not enough. The decisive question is what action the agent is actually allowed to perform in a specific context.
+Once an agent can read tickets, fetch files, query databases or trigger internal [APIs](/tools/openai-api/), it is no longer just a chat window. It becomes a non-human actor inside the enterprise environment. For security teams, that means prompt hardening is not enough. The decisive question is what action the agent is actually allowed to perform in a specific context.
 
 ## Why MCP governance is not just a prompt problem
 
@@ -56,6 +56,10 @@ That gateway can filter risky tool descriptions, sanitize suspicious responses, 
 For production agents, seeing the final answer is not enough. Teams need to reconstruct which input led to which tool call, which data was read, which policy decision applied and who approved a risky step.
 
 Without audit trails, governance becomes a claim. With them, security, legal and engineering can verify that an agent stayed within its boundaries. This matters especially for long-running sessions and workflows that touch several systems in sequence.
+
+## Relevant tools on Utildesk
+
+Teams building production agents should not treat the tool layer as an afterthought. [OpenAI GPT Agents](/tools/openai-gpt-agents/) represent the platform path for action-capable assistants, [LangChain](/tools/langchain/) and [CrewAI](/tools/crew-ai/) show common framework routes for orchestration, and the [OpenAI API](/tools/openai-api/) is often the operational surface where authentication, cost controls and logging need to be designed properly.
 
 ## A practical company checklist
 
