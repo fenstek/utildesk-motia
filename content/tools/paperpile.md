@@ -5,7 +5,7 @@ category: Schreiben & Content
 price_model: Abonnement
 tags: [research, writing, productivity]
 official_url: "https://paperpile.com/"
-popularity: 89
+popularity: 88
 ---
 
 # Paperpile

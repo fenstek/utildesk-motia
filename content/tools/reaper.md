@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://ghostsecurity.com/"
-popularity: 15
+popularity: 16
 ---
 
 # Reaper

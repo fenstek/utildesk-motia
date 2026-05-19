@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [expense-management, finance, productivity, travel]
 official_url: "https://www.rydoo.com/"
-popularity: 12
+popularity: 13
 ---
 
 # Rydoo

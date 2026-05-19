@@ -7,7 +7,7 @@ tags:
 official_url: "https://rossum.ai/"
 description: Rossum ist eine Document-AI-Plattform für Unternehmen, die wiederkehrende Geschäftsdokumente wie Rechnungen, Bestellungen oder Lieferscheine strukturiert auslesen und prüfen wollen.
 created_at: 2026-05-10
-popularity: 13
+popularity: 14
 ---
 # Rossum
 

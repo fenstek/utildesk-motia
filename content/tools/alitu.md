@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [podcasting, audio, editing]
 official_url: "https://alitu.com/"
-popularity: 73
+popularity: 72
 ---
 
 # Alitu
