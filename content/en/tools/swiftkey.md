@@ -36,6 +36,10 @@ In everyday use, SwiftKey works in the background. When it works well, you barel
 
 Multilingual users benefit especially, because mixed sentences and language switches feel less awkward. Still, important messages should be proofread before autocorrect turns a promise into a small drama.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/swiftkey-editorial.webp" alt="Illustration for SwiftKey: tram ride with luminous prediction paths for messages" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 - Autocorrect, word prediction, and learning input.
