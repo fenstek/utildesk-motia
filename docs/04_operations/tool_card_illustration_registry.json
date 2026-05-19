@@ -2376,7 +2376,7 @@
       "image_height_px": 800,
       "display_width_percent": 90,
       "placement": "mid-article image-only figure before the main functions/features section",
-      "note": "Twenty-seventh production-style batch: next 30 active, registry-backed, non-illustrated cards after Speechify, from Speechly through Swagger UI. Generated as imagegen raster story illustrations and converted to 1260x800 WebP. The visuals deliberately use narrative scenes with people, places, and action: voice plazas, market approvals, archive temples, story courtyards, music workshops, operations harbors, observatories, podcast rooftops, noir alleys, storefront building, forest story paths, coastal image ateliers, pigment workshops, lightning build camps, campus language birds, station speech paths, idea-kite piers, canyon film rehearsals, mail arcades, relationship greenhouses, river sluices, film basecamps, study paths, forest theaters, mountain archives, valley music, memory trails, search-water expeditions, API stations, and API exhibition halls. No logos, captions, brand marks, dashboards, or office-desk compositions.",
+      "note": "Twenty-seventh production-style batch: next 30 active, registry-backed, non-illustrated visible cards after Speechify, from Speechly through SwiftKey, skipping redirected Swagger UI. Generated as imagegen raster story illustrations and converted to 1260x800 WebP. The visuals deliberately use narrative scenes with people, places, and action: voice plazas, market approvals, archive temples, story courtyards, music workshops, operations harbors, observatories, podcast rooftops, noir alleys, storefront building, forest story paths, coastal image ateliers, pigment workshops, lightning build camps, campus language birds, station speech paths, idea-kite piers, canyon film rehearsals, mail arcades, relationship greenhouses, river sluices, film basecamps, study paths, forest theaters, mountain archives, valley music, memory trails, search-water expeditions, API stations, and mobile message tram rides. No logos, captions, brand marks, dashboards, or office-desk compositions.",
       "slugs": [
         "speechly",
         "spendesk",
@@ -2407,7 +2407,7 @@
         "supermemo",
         "surfer-seo",
         "swagger",
-        "swagger-ui"
+        "swiftkey"
       ],
       "images": [
         "content/images/tools/speechly-editorial.webp",
@@ -2439,7 +2439,7 @@
         "content/images/tools/supermemo-editorial.webp",
         "content/images/tools/surfer-seo-editorial.webp",
         "content/images/tools/swagger-editorial.webp",
-        "content/images/tools/swagger-ui-editorial.webp"
+        "content/images/tools/swiftkey-editorial.webp"
       ]
     }
   ]

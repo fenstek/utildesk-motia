@@ -32,6 +32,10 @@ Im Alltag arbeitet SwiftKey im Hintergrund. Wenn es gut funktioniert, merkt man 
 
 Mehrsprachige Nutzer profitieren besonders, weil Satzmischungen und Sprachwechsel weniger holprig werden. Trotzdem sollte man wichtige Nachrichten gegenlesen, bevor die Autokorrektur aus einer Zusage ein kleines Drama macht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/swiftkey-editorial.webp" alt="Illustration zu SwiftKey: Tramfahrt mit leuchtenden Vorhersagepfaden fuer Nachrichten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Autokorrektur, Wortvorhersage und lernende Eingabe.
