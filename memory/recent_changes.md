@@ -436,3 +436,15 @@ _Last updated: 2026-05-15_
 - Removed `copilot` from the Google force-index list so Microsoft Copilot remains the Google-priority Copilot page.
 - Added `scripts/audit_vendor_tool_cards.mjs` plus `npm run audit:vendor`; the audit blocks known duplicate vendor pages, transient login/docs URLs, and ambiguous force-index entries.
 - Added explicit Cloudflare Pages 301 redirects for disabled duplicate vendor slugs so stale static assets cannot keep returning 200 after deploy.
+﻿
+## 2026-05-20 - Ratgeber hot-topic publication: AI agents, MCP governance, Vibe Coding
+
+- Removed the duplicate `Browser-Agenten vs. Workflows` candidate from the NotebookLM/article pipeline and kept the already-published Browser-Agenten and AI Search Ratgeber pages as canonical.
+- Created and manually edited three non-duplicate hot-topic Ratgeber articles in German and English:
+  - `coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow`
+  - `agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen`
+  - `vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen`
+- Generated two distinct narrative WebP illustrations per article via the ChatGPT/Codex OAuth image provider (`openai-codex`, not a standalone OpenAI API key) and inserted them as `coverImage` and `secondaryImage`.
+- Ran `npm --prefix site run build`; build passed with 23 German and 23 English Ratgeber pages.
+- Content commit: `96fb9b3f` (`content: publish AI agent workflow ratgeber`).
+- Operational note: GitHub push alone did not make the new Ratgeber pages live within the first polling window, matching the 2026-05-12 behavior. Use `scripts/deploy_from_ubuntu.sh` or direct Wrangler Pages deployment if live URLs still return 404.
