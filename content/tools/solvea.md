@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [customer-service, scheduling, conversational-ai]
 official_url: "https://solvea.cx/"
-popularity: 11
+popularity: 12
 ---
 
 # Solvea

@@ -5,7 +5,7 @@ category: Audio
 price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://soundraw.io/"
-popularity: 10
+popularity: 12
 ---
 
 # Soundraw

@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://translator.microsoft.com/"
-popularity: 26
+popularity: 28
 ---
 
 # Microsoft Translator
