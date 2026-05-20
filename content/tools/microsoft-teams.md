@@ -6,11 +6,18 @@ price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-teams"
 popularity: 29
+updated_at: 2026-05-21
 ---
 
 # Microsoft Teams
 
 Microsoft Teams ist eine umfassende Kollaborationsplattform, die Kommunikation, Zusammenarbeit und Automatisierung in einem Tool vereint. Besonders im Bereich der KI-gestützten Assistenz und Workflow-Optimierung bietet Teams vielfältige Möglichkeiten, um Arbeitsprozesse effizienter zu gestalten. Die Integration von Chat, Videokonferenzen, Dateiablage und automatisierten Workflows macht es zu einem zentralen Werkzeug für Unternehmen aller Größen.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+Microsoft Teams ist 2026 stärker als Kommunikations- und Arbeits-Hub mit Copilot-Schicht zu bewerten. Meeting-Zusammenfassungen, Recaps, Kanäle, Dateien, Telefonie, Webinare, Loop-Komponenten, Apps und agentische Erweiterungen verbinden sich enger mit Microsoft 365.
+
+Der aktuelle Prüfpunkt ist Informationsarchitektur. Teams funktioniert deutlich besser, wenn Kanäle, Besprechungen, Dateien und Berechtigungen konsequent gepflegt werden. Sonst machen Copilot-Zusammenfassungen zwar mehr sichtbar, aber nicht automatisch mehr verständlich.
 
 ## Für wen ist Microsoft Teams geeignet?
 

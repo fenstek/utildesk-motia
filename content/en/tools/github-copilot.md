@@ -7,6 +7,7 @@ tags: null
 official_url: 'https://github.com/features/copilot/'
 affiliate_url: 'https://github.com/features/copilot/'
 created_at: 2026-02-02T00:00:00.000Z
+updated_at: 2026-05-21
 popularity: 0
 source_language: de
 translation: full
@@ -14,6 +15,12 @@ translation: full
 # GitHub Copilot
 
 GitHub Copilot is a code-assisted AI tool that helps developers write code faster and more efficiently. By integrating with popular code editors like Visual Studio Code, Copilot provides context-dependent code completions and suggestions based on millions of open-source code examples. This tool supports a wide range of programming languages and frameworks and is ideal for automating routine tasks, implementing new features, or developing complex algorithms.
+
+## 2026 update: what to review now
+
+GitHub Copilot has moved from autocomplete toward a broader development assistant in 2026. Alongside editor suggestions, chat, agentic multi-file changes, pull request help, code review, test ideas, and GitHub workflow integration now matter more in the overall evaluation.
+
+The useful question is not whether Copilot can write code, but whether review culture, tests, and ownership are strong enough. Teams should use Copilot to accelerate traceable changes: small commits, clear prompts, CI, security checks, and human review remain the quality frame.
 
 ## Who is GitHub Copilot for?
 

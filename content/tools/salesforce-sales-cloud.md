@@ -6,11 +6,18 @@ price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.salesforce.com/sales/"
 popularity: 0
+updated_at: 2026-05-21
 ---
 
 # Salesforce Sales Cloud
 
 Salesforce Sales Cloud ist eine führende cloudbasierte CRM-Lösung, die speziell für Vertriebsorganisationen entwickelt wurde. Sie unterstützt Unternehmen dabei, ihre Verkaufsprozesse zu optimieren, Kundenbeziehungen zu stärken und die Produktivität ihrer Vertriebsteams zu steigern. Mit intelligenten Funktionen wie KI-gestützter Lead-Qualifizierung, Automatisierung und umfassenden Analysewerkzeugen bietet Sales Cloud eine umfassende Plattform für modernes Sales-Management.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+Salesforce Sales Cloud ist 2026 eng mit Agentforce, Einstein, Data Cloud, Forecasting, Pipeline-Steuerung und Workflow-Automation verbunden. Für größere Vertriebsteams ist damit nicht nur CRM-Dokumentation relevant, sondern die Frage, wie Daten, Prozesse und KI-Agenten zusammenarbeiten.
+
+Vor einer Modernisierung sollte man das Datenmodell prüfen: Accounts, Kontakte, Opportunities, Aktivitäten, Berechtigungen und Pflichtfelder müssen sauber sein. Sonst verstärken KI-Funktionen bestehende Unordnung, statt Vertriebsteams verlässlicher zu machen.
 
 ## Für wen ist Salesforce Sales Cloud geeignet?
 

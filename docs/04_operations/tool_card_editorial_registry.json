@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15",
+  "last_updated": "2026-05-21",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -1351,6 +1351,59 @@
         "symantec-endpoint-protection",
         "temi",
         "vivaldi"
+      ]
+    },
+    {
+      "id": "2026-05-21-recency-refresh-popular-40",
+      "date": "2026-05-21",
+      "count": 40,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "manual recency refresh of high-recognition Google-staged and strategically important tool cards",
+      "notes": "Added a concise 2026 feature and workflow update block to each DE/EN card, refreshed updated_at metadata, and advanced content-lastmod so sitemaps surface the editorial freshness signal.",
+      "slugs": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "perplexity",
+        "microsoft-copilot",
+        "github-copilot",
+        "midjourney",
+        "canva",
+        "figma",
+        "notion-ai",
+        "zapier",
+        "make-ehemals-integromat",
+        "n8n",
+        "cursor",
+        "replit",
+        "runway",
+        "synthesia",
+        "capcut",
+        "descript",
+        "elevenlabs",
+        "grammarly",
+        "deepl",
+        "google-translate",
+        "microsoft-translator",
+        "hubspot-crm",
+        "hubspot-sales-hub",
+        "salesforce-sales-cloud",
+        "miro",
+        "airtable",
+        "asana",
+        "monday-com",
+        "clickup",
+        "microsoft-teams",
+        "zoom",
+        "tableau",
+        "power-bi",
+        "aws-sagemaker",
+        "openai-api",
+        "hugging-face",
+        "langchain"
       ]
     }
   ]

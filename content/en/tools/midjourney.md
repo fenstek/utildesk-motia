@@ -7,6 +7,7 @@ tags: ["ai", "design", "image", "creative", "visual"]
 official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
 created_at: 2026-02-02
+updated_at: 2026-05-21
 popularity: 37
 source_language: de
 translation: full
@@ -18,6 +19,12 @@ description: "AI image generator for high-quality concept images, illustrations,
 Midjourney is an AI image generator for high-quality visual concepts, illustrations, moods, and image experiments.
 
 It is especially strong when a visual direction needs to be explored quickly: campaign images, moodboards, style variants, cover ideas, or abstract concept visuals.
+
+## 2026 update: what to review now
+
+Midjourney remains one of the strongest tools for visual style exploration, moodboards, and polished image variations. In 2026, the web interface matters more because style references, personalization, moodboards, and series logic are easier for teams to control than pure prompt experiments in chat.
+
+For brand work, the current evaluation point is consistency: can image series, product worlds, and campaign visuals be produced repeatably without ignoring rights and approval questions? Midjourney is strong for visual exploration, but needs clear rules for usage rights, source material, and final approvals.
 
 ## Who is it for?
 

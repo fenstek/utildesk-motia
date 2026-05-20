@@ -6,11 +6,18 @@ price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
 popularity: 33
+updated_at: 2026-05-21
 ---
 
 # Make (ehemals Integromat)
 
 Make, früher bekannt als Integromat, ist eine leistungsstarke Automatisierungsplattform, die es ermöglicht, verschiedene Anwendungen und Dienste miteinander zu verbinden und komplexe Workflows zu erstellen. Mit einem visuellen Editor können Nutzer ohne Programmierkenntnisse Prozesse automatisieren, Daten synchronisieren und repetitive Aufgaben vereinfachen. Make bietet dabei vielfältige Integrationen und unterstützt sowohl einfache als auch komplexe Automatisierungsszenarien.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+Make bleibt 2026 stark, wenn Automationen visuell geplant, verzweigt und debuggt werden müssen. Szenarien, Router, Webhooks, Datenmapping, Fehlerpfade, App-Module und KI-Schritte lassen sich sehr transparent kombinieren, was bei komplexeren Integrationen oft greifbarer ist als reine Formular-Automation.
+
+Der aktuelle Prüfpunkt ist Wartbarkeit: Sind Szenarien benannt, versioniert, dokumentiert und mit klaren Fehlerwegen versehen? Make kann viel Logik ohne Code abbilden, aber produktive Workflows brauchen trotzdem Tests, Zuständigkeiten und Kostenkontrolle pro Operation.
 
 ## Für wen ist Make (ehemals Integromat) geeignet?
 

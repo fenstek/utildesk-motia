@@ -11,10 +11,17 @@ official_url: 'https://www.zoom.com/'
 popularity: 0
 description: 'A widely used communication platform for video conferencing, online meetings, webinars, and AI-assisted workflow automation.'
 translation: full
+updated_at: 2026-05-21
 ---
 # Zoom
 
 Zoom is a widely used communication platform primarily used for video conferencing, online meetings, and webinars. With AI-powered features, Zoom helps users automate their workflows and work more efficiently. The platform is especially well suited for companies and teams that rely on a reliable and scalable solution for virtual collaboration.
+
+## 2026 update: what to review now
+
+Zoom in 2026 is much broader than video conferencing software. Zoom Workplace, AI Companion, meeting summaries, smart compose, Docs, Phone, Clips, whiteboards, contact center features, and agentic workflows make Zoom more relevant for communication and customer interaction.
+
+Data protection, recording, summaries, and approvals now matter more than before. AI notes and meeting assistants are helpful, but need clear rules for when they are enabled, who has access, and how sensitive conversation content is handled.
 
 ## Who is Zoom for?
 

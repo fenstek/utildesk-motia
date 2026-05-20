@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-15_
+_Last updated: 2026-05-21_
+
+## 2026-05-21 - Popular tool-card recency refresh
+
+- Refreshed 40 high-recognition DE/EN tool cards with a focused 2026 feature/workflow update block rather than rewriting the full already-edited articles.
+- Updated `updated_at` frontmatter and `site/src/data/content-lastmod.json` for the 80 affected localized pages so sitemap freshness can move with the editorial change.
+- Registered the batch as `2026-05-21-recency-refresh-popular-40` in `docs/04_operations/tool_card_editorial_registry.json` for future skip/audit logic.
+- Selection: `chatgpt`, `claude`, `gemini`, `perplexity`, `microsoft-copilot`, `github-copilot`, `midjourney`, `canva`, `figma`, `notion-ai`, `zapier`, `make-ehemals-integromat`, `n8n`, `cursor`, `replit`, `runway`, `synthesia`, `capcut`, `descript`, `elevenlabs`, `grammarly`, `deepl`, `google-translate`, `microsoft-translator`, `hubspot-crm`, `hubspot-sales-hub`, `salesforce-sales-cloud`, `miro`, `airtable`, `asana`, `monday-com`, `clickup`, `microsoft-teams`, `zoom`, `tableau`, `power-bi`, `aws-sagemaker`, `openai-api`, `hugging-face`, `langchain`.
 
 ## 2026-05-15 - Tool illustration batch 25
 

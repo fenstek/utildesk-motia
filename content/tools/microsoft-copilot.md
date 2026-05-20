@@ -7,12 +7,19 @@ tags: ["writing"]
 official_url: "https://copilot.microsoft.com/"
 affiliate_url: "https://copilot.microsoft.com/"
 created_at: 2026-02-02
+updated_at: 2026-05-21
 popularity: 0
 ---
 
 # Microsoft Copilot
 
 Microsoft Copilot ist ein KI-gestütztes Tool, das in Microsoft 365 integriert ist und Nutzern dabei hilft, produktiver zu arbeiten. Es unterstützt bei der Erstellung von Texten, der Datenanalyse, der Automatisierung von Aufgaben und vielem mehr, indem es natürliche Sprache versteht und darauf reagiert. Copilot nutzt fortschrittliche KI-Modelle, um komplexe Aufgaben zu vereinfachen und Arbeitsprozesse effizienter zu gestalten.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+Microsoft Copilot ist 2026 nicht mehr nur ein einzelner Assistent, sondern eine Produktfamilie: Consumer-Copilot, Microsoft 365 Copilot, Copilot Chat, Copilot Studio und Agentenfunktionen bedienen unterschiedliche Szenarien. Der größte Nutzen entsteht dort, wo Word, Excel, PowerPoint, Outlook, Teams, SharePoint und Unternehmensdaten bereits sauber strukturiert sind.
+
+Vor einer Einführung sollte man deshalb nicht nur Funktionen vergleichen, sondern Informationsarchitektur und Governance prüfen. Copilot kann Meetings, Dokumente, Tabellen und Chats produktiv verbinden, aber nur wenn Berechtigungen, Datenqualität und sensible Inhalte vorher aufgeräumt sind.
 
 ## Für wen ist Microsoft Copilot geeignet?
 
