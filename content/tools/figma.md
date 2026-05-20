@@ -6,6 +6,7 @@ price_model: Freemium
 tags: [ai, design]
 official_url: "https://figma.com"
 created_at: 2026-02-12
+updated_at: 2026-05-21
 popularity: 50
 description: Figma ist eine kollaborative Designplattform für UI-Design, Prototyping, Designsysteme und Produktteams.
 ---
@@ -14,6 +15,12 @@ description: Figma ist eine kollaborative Designplattform für UI-Design, Protot
 Figma ist zum Arbeitsraum vieler Produktteams geworden, weil Design, Feedback, Prototyping und Designsysteme im Browser zusammenlaufen. Der eigentliche Wert liegt nicht nur in Zeichenwerkzeugen, sondern in der gemeinsamen Produktkommunikation.
 
 Figma passt zu Produktdesign, UX, Marketing-Websites, Designsystemen und Teams mit enger Abstimmung zwischen Design und Entwicklung.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+Figma hat sich weiter von der Design-Datei zur Produktentwicklungsplattform bewegt. Figma AI, Dev Mode, Code Connect, Sites, Make und bessere Übergaben an Entwicklungsteams machen den Unterschied nicht nur im Interface-Design, sondern im Zusammenspiel von Designsystem, Prototyp, Code und Dokumentation.
+
+2026 sollte man Figma danach bewerten, ob es Übergaben verkürzt und Designentscheidungen überprüfbarer macht. Wichtig sind gepflegte Komponenten, klare Tokens, benannte Zustände und ein gemeinsames Verständnis zwischen Design, Product und Engineering.
 
 ## Für wen ist Figma geeignet?
 

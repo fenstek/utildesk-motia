@@ -6,11 +6,18 @@ price_model: Freemium
 tags: [crm, sales, automation, marketing]
 official_url: "https://www.hubspot.com/products/sales"
 popularity: 40
+updated_at: 2026-05-21
 ---
 
 # HubSpot Sales Hub
 
 HubSpot Sales Hub ist eine umfassende Vertriebsplattform, die Unternehmen dabei unterstützt, ihre Verkaufsprozesse zu optimieren und die Kundenbeziehungen effizienter zu gestalten. Das Tool bietet eine Kombination aus CRM-Funktionalitäten, Automatisierung und Analyse, die speziell auf die Bedürfnisse von Vertriebsteams ausgerichtet sind. Mit einer Freemium-Preisstruktur ermöglicht HubSpot Sales Hub sowohl kleinen als auch großen Unternehmen den Einstieg in ein modernes Sales-Management.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+HubSpot Sales Hub ist 2026 stärker auf KI-unterstützte Vertriebsarbeit ausgerichtet. Sequenzen, E-Mails, Meetings, Deal-Fortschritt, Forecasting, Playbooks, Breeze-Funktionen und CRM-Kontext helfen Sales-Teams, Follow-ups und Pipeline-Arbeit strukturierter zu steuern.
+
+Wichtig ist, Automatisierung nicht mit Beziehungspflege zu verwechseln. Gute Regeln für Opt-outs, Personalisierung, Datenqualität, Übergaben an Customer Success und Review von KI-Texten entscheiden, ob Sales Hub als produktiver Vertriebsarbeitsplatz wirkt oder nur mehr Nachrichten erzeugt.
 
 ## Für wen ist HubSpot Sales Hub geeignet?
 

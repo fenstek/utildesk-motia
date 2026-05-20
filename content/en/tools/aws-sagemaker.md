@@ -12,10 +12,17 @@ official_url: 'https://aws.amazon.com/sagemaker/'
 popularity: 0
 source_language: de
 translation: full
+updated_at: 2026-05-21
 ---
 # AWS SageMaker
 
 AWS SageMaker is a comprehensive cloud platform from Amazon Web Services that enables developers and data scientists to quickly create, train, and deploy machine learning models. The platform supports the entire ML workflow – from data preparation to model training, scaling, and monitoring in production. AWS SageMaker integrates various tools and frameworks to ease the development of AI applications and automate them.
+
+## 2026 update: what to review now
+
+AWS SageMaker in 2026 should be evaluated as part of a broader AWS data and AI environment. Training, feature engineering, pipelines, model registry, deployment, Unified Studio-style workflows, Bedrock connections, data access, notebooks, SQL, Python, and data agents are moving closer together.
+
+Useful adoption needs architecture discipline. IAM, cost control, data classification, MLOps, monitoring, model approvals, and a clear split between experiment and production decide whether SageMaker scales or merely creates complex cloud costs.
 
 ## For whom is AWS SageMaker suitable?
 

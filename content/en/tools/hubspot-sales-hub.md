@@ -11,10 +11,17 @@ tags:
 official_url: 'https://www.hubspot.com/products/sales'
 description: 'A comprehensive sales platform for managing contacts, automating workflows, tracking deals, and analyzing performance, with integrations for marketing tools and a free entry plan.'
 translation: full
+updated_at: 2026-05-21
 ---
 # HubSpot Sales Hub
 
 HubSpot Sales Hub is a comprehensive sales platform that helps companies optimize their sales processes and manage customer relationships more efficiently. The tool combines CRM functionality, automation, and analytics tailored specifically to the needs of sales teams. With a freemium pricing structure, HubSpot Sales Hub gives both small and large businesses an entry point into modern sales management.
+
+## 2026 update: what to review now
+
+HubSpot Sales Hub in 2026 is increasingly oriented toward AI-assisted sales work. Sequences, email, meetings, deal progression, forecasting, playbooks, Breeze features, and CRM context help sales teams manage follow-ups and pipeline work more systematically.
+
+It is important not to confuse automation with relationship building. Good rules for opt-outs, personalization, data quality, handoff to customer success, and review of AI-generated text determine whether Sales Hub becomes a productive sales workspace or simply creates more messages.
 
 ## Who is HubSpot Sales Hub suitable for?
 

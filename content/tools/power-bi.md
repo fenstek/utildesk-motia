@@ -6,6 +6,7 @@ price_model: Je nach Plan
 tags: [analytics, workflow]
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
 popularity: 19
+updated_at: 2026-05-21
 ---
 
 # Power BI
@@ -13,6 +14,12 @@ popularity: 19
 Power BI ist Microsofts Business-Intelligence-Plattform für Datenmodelle, Berichte, Dashboards und datengetriebene Entscheidungsprozesse. Das Tool hilft Unternehmen, Daten aus Excel, Datenbanken, Cloud-Diensten, CRM-Systemen, ERP-Quellen und Web-APIs zusammenzuführen und daraus auswertbare Berichte zu bauen. Der eigentliche Nutzen entsteht aber nicht durch ein einzelnes schönes Dashboard, sondern durch verlässliche Kennzahlen, klare Datenverantwortung und Berichte, denen Fachbereiche wirklich vertrauen.
 
 Im Alltag ist Power BI besonders stark, wenn Daten nicht nur einmal visualisiert, sondern regelmäßig aktualisiert, verteilt und diskutiert werden müssen. Vertriebssteuerung, Finanzreporting, operative Kennzahlen, Management-Dashboards oder Qualitätskontrolle profitieren davon, wenn Rohdaten in nachvollziehbare Modelle, Measures und interaktive Ansichten übersetzt werden. Ohne sauberes Datenmodell bleibt Power BI dagegen schnell nur eine Sammlung bunter Diagramme.
+
+## Aktualisierung 2026: Was sich jetzt lohnt zu prüfen
+
+Power BI ist 2026 eng mit Microsoft Fabric und Copilot verbunden. Berichte, semantische Modelle, DAX, Dashboards, mobile Abfragen, Fabric-Workloads, Datenagenten und Governance-Funktionen machen Power BI besonders stark in Microsoft-orientierten Datenlandschaften.
+
+Der wichtigste Prüfpunkt ist das semantische Modell. Copilot und natürliche Sprache helfen nur dann zuverlässig, wenn Kennzahlen, Beziehungen, Row-Level-Security, Aktualisierung und Namenskonventionen sauber gepflegt sind. Sonst werden falsche Fragen nur schneller beantwortet.
 
 ## Für wen ist Power BI geeignet?
 

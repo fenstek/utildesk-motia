@@ -9,12 +9,19 @@ tags:
 official_url: 'https://runwayml.com/'
 affiliate_url: 'https://runwayml.com/'
 created_at: '2026-02-02'
+updated_at: 2026-05-21
 popularity: 0
 translation: full
 ---
 # Runway
 
 Runway is an innovative AI platform that gives creators and developers powerful tools for creating and editing media content. With a focus on machine learning and real-time video processing, Runway makes it possible to integrate state-of-the-art AI models into creative workflows. The platform is suitable for both beginners and professionals and combines an intuitive interface with extensive functionality.
+
+## 2026 update: what to review now
+
+Runway remains one of the most important tools for professional AI video experimentation in 2026. Current Gen models, reference control, style and motion logic, more consistent characters, camera ideas, and editing features make it especially interesting for concept films, social clips, storyboards, and previsualization.
+
+Evaluation should go beyond the visual quality of isolated clips. The key question is whether a team gets a repeatable production process: brief, references, takes, rights checks, post-production, and approval should be planned just like in classic video production.
 
 ## Who is Runway for?
 

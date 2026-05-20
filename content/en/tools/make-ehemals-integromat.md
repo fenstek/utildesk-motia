@@ -11,10 +11,17 @@ official_url: 'https://www.make.com/'
 popularity: 0
 description: 'Make is a powerful automation platform for connecting apps and services, building visual workflows, syncing data, and simplifying repetitive tasks without coding.'
 translation: full
+updated_at: 2026-05-21
 ---
 # Make (formerly Integromat)
 
 Make, formerly known as Integromat, is a powerful automation platform that makes it possible to connect different applications and services and create complex workflows. With a visual editor, users can automate processes, synchronize data, and simplify repetitive tasks without any programming knowledge. Make offers a wide range of integrations and supports both simple and complex automation scenarios.
+
+## 2026 update: what to review now
+
+Make remains strong in 2026 when automations need to be visually planned, branched, and debugged. Scenarios, routers, webhooks, data mapping, error paths, app modules, and AI steps can be combined transparently, which is often easier for complex integrations than form-based automation alone.
+
+The current evaluation point is maintainability: are scenarios named, versioned, documented, and equipped with clear error paths? Make can express a lot of logic without code, but production workflows still need tests, owners, and cost control per operation.
 
 ## Who is Make (formerly Integromat) suitable for?
 

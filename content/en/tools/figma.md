@@ -8,6 +8,7 @@ tags:
   - design
 official_url: "https://figma.com"
 created_at: 2026-02-12T00:00:00.000Z
+updated_at: 2026-05-21
 popularity: 66
 source_language: de
 translation: full
@@ -18,6 +19,12 @@ description: "Figma is a collaborative design platform for UI design, prototypin
 Figma has become the workspace for many product teams because design, feedback, prototyping, and design systems meet in the browser. Its real value is not only drawing tools, but shared product communication.
 
 Figma fits product design, UX, marketing websites, design systems, and teams where design and engineering collaborate closely.
+
+## 2026 update: what to review now
+
+Figma has continued to move from design file toward product development platform. Figma AI, Dev Mode, Code Connect, Sites, Make, and better developer handoff matter not only for interface design, but for the connection between design system, prototype, code, and documentation.
+
+In 2026, evaluate Figma by whether it shortens handoffs and makes design decisions easier to verify. Maintained components, clear tokens, named states, and shared understanding between design, product, and engineering are the real leverage points.
 
 ## Who is Figma for?
 

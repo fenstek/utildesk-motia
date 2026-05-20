@@ -10,6 +10,7 @@ popularity: 35
 source_language: de
 translation: full
 description: "Workflow automation for API-oriented integrations, self-hostable automation, and AI-agent workflows."
+updated_at: 2026-05-21
 ---
 
 # n8n
@@ -17,6 +18,12 @@ description: "Workflow automation for API-oriented integrations, self-hostable a
 n8n is a workflow automation platform for people who want to connect SaaS tools, APIs, data flows, and custom logic.
 
 Compared with very simple automation tools, its strength is technical depth: n8n can start near no-code, but remains open to developers and self-hosted workflows.
+
+## 2026 update: what to review now
+
+n8n is especially interesting in 2026 for teams that want to combine automation, AI agents, and self-hosting. AI Agent nodes, tool calls, LangChain-like building blocks, templates, credentials, queues, and versioning make n8n stronger for technical workflows than many pure no-code automation services.
+
+The value depends on operational discipline. Self-hosted n8n needs updates, secret management, access controls, backups, monitoring, and clear boundaries for agentic workflows. With that in place, n8n can become a very flexible automation core.
 
 ## Who is it for?
 
