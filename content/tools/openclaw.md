@@ -5,7 +5,7 @@ category: AI Agents
 price_model: 
 tags: ["automation"]
 official_url: "https://openclaw.ai/"
-popularity: 22
+popularity: 24
 ---
 
 # OpenClaw

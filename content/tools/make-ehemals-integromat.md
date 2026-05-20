@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
-popularity: 31
+popularity: 33
 ---
 
 # Make (ehemals Integromat)
