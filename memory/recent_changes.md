@@ -449,6 +449,11 @@ _Last updated: 2026-05-21_
 - Added a build-generated `sitemap-focus.xml` beside the existing Google and Bing sitemap files.
 - Local build produced 96 focused URLs: core hubs/methodology, 24 German Ratgeber pages, 24 English Ratgeber pages, and 20 curated DE/EN tool-card pairs around AI assistants, coding agents, workflow automation, design/productivity, and BI.
 - `robots.txt` remains unchanged and advertises only `https://tools.utildesk.de/sitemap.xml`; the focus sitemap is meant for explicit GSC/Bing submission, not broad crawler discovery.
+- Production release commit: `9f08fcd9` (`seo: add focused sitemap`), published to `origin/master`, `origin/autobot`, and `hub`; direct Cloudflare Pages deploy was also used because the custom domain initially returned 404 for the new file.
+- Live verification passed for `https://tools.utildesk.de/sitemap-focus.xml`: HTTP 200, XML content type, 96 `<loc>` entries, no machine endpoints, and `robots.txt` still lists only the main Google sitemap.
+- Google Search Console submission succeeded for property `sc-domain:tools.utildesk.de`; API readback showed `lastSubmitted` and `lastDownloaded` on 2026-05-21, `warnings=0`, `errors=0`, and `submitted=96`.
+- Bing Webmaster `SubmitFeed` succeeded for `https://tools.utildesk.de/sitemap-focus.xml`; immediate feed state was `Pending`, while broad `sitemap-bing.xml` stayed registered separately.
+- IndexNow was submitted for all 96 focused canonical URLs to both `api.indexnow.org` and the direct Bing IndexNow endpoint; both returned HTTP 200.
 ﻿
 ## 2026-05-20 - Ratgeber hot-topic publication: AI agents, MCP governance, Vibe Coding
 
