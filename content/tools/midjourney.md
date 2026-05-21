@@ -8,7 +8,7 @@ official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 91
+popularity: 90
 description: KI-Bildgenerator für hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente.
 ---
 

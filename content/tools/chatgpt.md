@@ -8,7 +8,7 @@ official_url: "https://chatgpt.com/"
 affiliate_url: "https://chatgpt.com/"
 created_at: 2026-01-26
 updated_at: 2026-05-21
-popularity: 60
+popularity: 97
 description: KI-Assistent von OpenAI für Schreiben, Recherche, Code, Datenanalyse, Bilder und alltägliche Wissensarbeit.
 ---
 
