@@ -443,6 +443,12 @@ _Last updated: 2026-05-21_
 - Removed `copilot` from the Google force-index list so Microsoft Copilot remains the Google-priority Copilot page.
 - Added `scripts/audit_vendor_tool_cards.mjs` plus `npm run audit:vendor`; the audit blocks known duplicate vendor pages, transient login/docs URLs, and ambiguous force-index entries.
 - Added explicit Cloudflare Pages 301 redirects for disabled duplicate vendor slugs so stale static assets cannot keep returning 200 after deploy.
+
+## 2026-05-21 - Compact thematic sitemap for search recovery
+
+- Added a build-generated `sitemap-focus.xml` beside the existing Google and Bing sitemap files.
+- Local build produced 96 focused URLs: core hubs/methodology, 24 German Ratgeber pages, 24 English Ratgeber pages, and 20 curated DE/EN tool-card pairs around AI assistants, coding agents, workflow automation, design/productivity, and BI.
+- `robots.txt` remains unchanged and advertises only `https://tools.utildesk.de/sitemap.xml`; the focus sitemap is meant for explicit GSC/Bing submission, not broad crawler discovery.
 ﻿
 ## 2026-05-20 - Ratgeber hot-topic publication: AI agents, MCP governance, Vibe Coding
 

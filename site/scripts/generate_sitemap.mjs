@@ -38,8 +38,31 @@ const TOOL_ADDED_AT_FILE = join(__dirname, '../src/data/tool-added-at.json');
 const CONTENT_LASTMOD_FILE = join(__dirname, '../src/data/content-lastmod.json');
 const GOOGLE_OUTPUT_FILE = join(DIST_DIR, 'sitemap.xml');
 const BING_OUTPUT_FILE = join(DIST_DIR, 'sitemap-bing.xml');
+const FOCUS_OUTPUT_FILE = join(DIST_DIR, 'sitemap-focus.xml');
 const OUTPUT_FILE = GOOGLE_OUTPUT_FILE;
 const RESERVED_TOOL_SEGMENTS = new Set(['tag']);
+const FOCUS_TOOL_SLUGS = [
+  'chatgpt',
+  'claude',
+  'gemini',
+  'perplexity',
+  'microsoft-copilot',
+  'github-copilot',
+  'openai-api',
+  'langchain',
+  'cursor',
+  'tabnine',
+  'replit',
+  'n8n',
+  'zapier',
+  'make-ehemals-integromat',
+  'aws-sagemaker',
+  'figma',
+  'canva',
+  'miro',
+  'airtable',
+  'power-bi',
+];
 
 function escapeXml(str) {
   return String(str || '')
@@ -649,6 +672,123 @@ function buildUrlList(inputs, tools, enTools) {
   return urls;
 }
 
+function dedupeUrls(urls) {
+  const seen = new Set();
+  return urls.filter((url) => {
+    if (seen.has(url.loc)) {
+      return false;
+    }
+    seen.add(url.loc);
+    return true;
+  });
+}
+
+function buildFocusedUrlList(inputs, tools, enTools) {
+  const {
+    ratgeber,
+    enRatgeber,
+    methodologyPage,
+    enMethodologyPage,
+    today,
+    ratgeberIndexLastmod,
+    enIndexLastmod,
+    enToolsIndexLastmod,
+    enRatgeberIndexLastmod,
+  } = inputs;
+
+  const toolsBySlug = new Map(tools.map((tool) => [tool.slug, tool]));
+  const enToolsBySlug = new Map(enTools.map((tool) => [tool.slug, tool]));
+  const focusedTools = FOCUS_TOOL_SLUGS
+    .map((slug) => toolsBySlug.get(slug))
+    .filter(Boolean);
+  const focusedEnTools = FOCUS_TOOL_SLUGS
+    .map((slug) => enToolsBySlug.get(slug))
+    .filter(Boolean);
+
+  return dedupeUrls([
+    {
+      loc: `${BASE_URL}/`,
+      lastmod: today,
+      priority: '1.0',
+    },
+    {
+      loc: `${BASE_URL}/tools/`,
+      lastmod: today,
+      priority: '0.9',
+    },
+    ...(methodologyPage
+      ? [
+          {
+            loc: `${BASE_URL}/methodologie/`,
+            lastmod: methodologyPage.lastmod,
+            priority: '0.7',
+          },
+        ]
+      : []),
+    ...(ratgeber.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/ratgeber/`,
+            lastmod: ratgeberIndexLastmod,
+            priority: '0.9',
+          },
+        ]
+      : []),
+    ...ratgeber.map((article) => ({
+      loc: `${BASE_URL}/ratgeber/${article.slug}/`,
+      lastmod: article.lastmod,
+      priority: '0.8',
+    })),
+    ...focusedTools.map((tool) => ({
+      loc: `${BASE_URL}/tools/${tool.slug}/`,
+      lastmod: tool.lastmod,
+      priority: '0.8',
+    })),
+    ...(focusedEnTools.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/en/`,
+            lastmod: enIndexLastmod,
+            priority: '0.8',
+          },
+          {
+            loc: `${BASE_URL}/en/tools/`,
+            lastmod: enToolsIndexLastmod,
+            priority: '0.7',
+          },
+          ...(enMethodologyPage
+            ? [
+                {
+                  loc: `${BASE_URL}/en/methodology/`,
+                  lastmod: enMethodologyPage.lastmod,
+                  priority: '0.6',
+                },
+              ]
+            : []),
+        ]
+      : []),
+    ...(enRatgeber.length > 0
+      ? [
+          {
+            loc: `${BASE_URL}/en/ratgeber/`,
+            lastmod: enRatgeberIndexLastmod,
+            priority: '0.7',
+          },
+        ]
+      : []),
+    ...enRatgeber.map((article) => ({
+      loc: `${BASE_URL}/en/ratgeber/${article.slug}/`,
+      lastmod: article.lastmod,
+      priority: '0.7',
+    })),
+    ...focusedEnTools.map((tool) => ({
+      loc: `${BASE_URL}/en/tools/${tool.slug}/`,
+      lastmod: tool.lastmod,
+      priority: '0.6',
+    })),
+  ]);
+}
+
 async function generateSitemaps() {
   const toolIndexPolicy = await readToolIndexPolicySlugs();
   const sharedInputs = await collectSharedSitemapInputs();
@@ -659,9 +799,11 @@ async function generateSitemaps() {
 
   const googleUrls = buildUrlList(sharedInputs, googleTools, googleEnTools);
   const bingUrls = buildUrlList(sharedInputs, bingTools, bingEnTools);
+  const focusUrls = buildFocusedUrlList(sharedInputs, googleTools, googleEnTools);
 
   await writeSitemapFile(GOOGLE_OUTPUT_FILE, googleUrls);
   await writeSitemapFile(BING_OUTPUT_FILE, bingUrls);
+  await writeSitemapFile(FOCUS_OUTPUT_FILE, focusUrls);
 
   return {
     google: {
@@ -683,6 +825,14 @@ async function generateSitemaps() {
       enTools: bingEnTools.length,
       enCategories: sharedInputs.enCategories.length,
       enRatgeber: sharedInputs.enRatgeber.length,
+    },
+    focus: {
+      urls: focusUrls,
+      count: focusUrls.length,
+      tools: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/tools\/[^/]+\/$/.test(url.loc)).length,
+      enTools: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/en\/tools\/[^/]+\/$/.test(url.loc)).length,
+      ratgeber: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/ratgeber\/[^/]+\/$/.test(url.loc)).length,
+      enRatgeber: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/en\/ratgeber\/[^/]+\/$/.test(url.loc)).length,
     },
     toolIndexDecisionCounts: toolIndexPolicy.decisionCounts,
   };
@@ -719,6 +869,12 @@ async function main() {
     console.log(`   Bing total URLs: ${bingResult.count}`);
     console.log(`   Bing tools: ${bingResult.tools} (from dist/tools/)`);
     console.log(`   Bing English tools: ${bingResult.enTools} (from dist/en/tools/)`);
+    console.log(`   Focus sitemap: ${FOCUS_OUTPUT_FILE}`);
+    console.log(`   Focus total URLs: ${result.focus.count}`);
+    console.log(`   Focus tools: ${result.focus.tools}`);
+    console.log(`   Focus English tools: ${result.focus.enTools}`);
+    console.log(`   Focus Ratgeber: ${result.focus.ratgeber}`);
+    console.log(`   Focus English Ratgeber: ${result.focus.enRatgeber}`);
     console.log(`   Tool index policy: ${JSON.stringify(result.toolIndexDecisionCounts)}`);
   } catch (error) {
     console.error('❌ Failed to generate sitemap:', error.message);

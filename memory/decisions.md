@@ -151,3 +151,9 @@
 - The ambiguous `copilot` slug represents Assembly's client-portal product, not Microsoft Copilot or GitHub Copilot; keep it out of `FORCE_INDEX_TOOL_SLUGS` unless it later earns index eligibility through real traffic or manual strategy.
 - Run `npm run audit:vendor` before re-enabling automatic tool-card publication.
 - Disabled duplicate vendor pages must also have explicit 301 redirects in `site/public/_redirects`; otherwise old Cloudflare Pages assets can continue returning 200 even after the page is removed from the build output.
+
+## 2026-05-21 - Compact search-recovery sitemap
+
+- `https://tools.utildesk.de/sitemap-focus.xml` is the compact thematic sitemap for direct Search Console/Bing submission experiments during search recovery.
+- Do not advertise `sitemap-focus.xml` in `robots.txt`; keep `robots.txt` pointing only at `https://tools.utildesk.de/sitemap.xml`, and keep broad Bing discovery on explicitly submitted `sitemap-bing.xml`.
+- Build the focus sitemap only from pages that are already Google-indexable: Ratgeber depth, core hubs, methodology pages, and a small curated set of AI/automation/productivity tool cards. Do not use it to sneak Googlebot-noindex long-tail pages into GSC.
