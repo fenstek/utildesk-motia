@@ -14,6 +14,10 @@ Tabnine ist besonders interessant, wenn Code-Vervollständigung und KI-Unterstü
 
 Der kritische Punkt liegt im Betrieb: die Frage, welche Repositories, Lizenzen und Datenschutzregeln in der IDE gelten. Genau daran entscheidet sich, ob das Tool entlastet oder nur eine zusätzliche Oberfläche einführt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tabnine-editorial.webp" alt="Illustration zu tabnine: Code-Hinweise auf dem naechtlichen Dach" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Tabnine geeignet?
 
 Am stärksten passt Tabnine zu Anwendern, die einen wiederholbaren Ablauf brauchen, um wiederkehrende Code-Muster schneller zu schreiben und Kontextwechsel zu reduzieren. Besonders hilfreich ist das Tool in diesem Kontext: für Teams mit klaren Coding-Standards und bestehender Testkultur.

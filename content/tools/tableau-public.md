@@ -13,6 +13,10 @@ Tableau Public ist besonders interessant, wenn öffentliche Datenvisualisierunge
 
 Der kritische Punkt liegt im Betrieb: die Frage, ob die Daten öffentlich sein dürfen und wie Quellen sichtbar bleiben. Genau daran entscheidet sich, ob das Tool entlastet oder nur eine zusätzliche Oberfläche einführt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tableau-public-editorial.webp" alt="Illustration zu tableau-public: Offene Datenmural in der Stadt" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Tableau Public geeignet?
 
 Am stärksten passt Tableau Public zu Anwendern, die einen wiederholbaren Ablauf brauchen, um Analysen teilbar zu machen, ohne eine geschlossene BI-Umgebung aufzubauen. Besonders hilfreich ist das Tool in diesem Kontext: für Datenjournalismus, Lehre, Community-Projekte und offene Reports.

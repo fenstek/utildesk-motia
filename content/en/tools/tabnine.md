@@ -18,6 +18,10 @@ Tabnine is especially interesting when code completion and AI support in develop
 
 The critical point lies in operations: the question of which repositories, licenses, and data protection rules apply in the IDE. That is exactly what determines whether the tool relieves work or simply adds another interface.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tabnine-editorial.webp" alt="Illustration for tabnine: code hints on a night rooftop" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Tabnine suitable for?
 
 Tabnine is most suitable for users who need a repeatable workflow to write recurring code patterns faster and reduce context switching. The tool is especially helpful in this context for teams with clear coding standards and an established testing culture.

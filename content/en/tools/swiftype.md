@@ -16,6 +16,10 @@ translation: full
 
 Swiftype is a powerful search solution designed specifically for developers and businesses to seamlessly integrate custom search features into websites and applications. With a flexible API, customizable search results, and extensive analytical tools, Swiftype offers a scalable platform tailored to diverse requirements. The platform facilitates the deployment of fast, relevant, and intuitive search experiences that greatly improve usability.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/swiftype-editorial.webp" alt="Illustration for swiftype: night library search trails" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Swiftype for?
 
 Swiftype primarily targets developers, agencies, and companies seeking to embed high-quality search functionality into their digital products. The tool is especially suitable for:

@@ -16,6 +16,10 @@ translation: full
 
 The TDR Limiter 6 GE is a professional audio plugin specifically designed for mastering and volume control. It provides precise and flexible dynamic processing with multiple limiter types and extensive adjustable settings. The tool is known for its high sound quality and ease of use, making it a popular choice for sound engineers and music producers.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tdr-limiter-6-ge-editorial.webp" alt="Illustration for tdr-limiter-6-ge: loudness shaping in the mastering room" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is TDR Limiter 6 GE for?
 
 TDR Limiter 6 GE targets professional musicians, sound engineers, mixing and mastering specialists, as well as hobby producers who value excellent sound quality. It is especially useful for users who need detailed control over dynamics and loudness in their projects, whether in a studio or home setup. Thanks to its versatile limiter algorithms, it suits various music genres and audio applications.

@@ -13,6 +13,10 @@ Bei Tars lohnt ein nüchterner Blick auf den Alltag hinter dem Versprechen. Im Z
 
 Vor der Einführung sollte die Frage beantwortet sein, welche Antwortpfade Nutzer wirklich schneller zum Ziel bringen. Andernfalls bleibt der Nutzen schwer messbar. Der wichtigste Achtungspunkt: bei schlecht geschriebenen Dialogen nur ein längeres Formular mit anderem Gesicht ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tars-editorial.webp" alt="Illustration zu tars: Chatbot-Fuehrung durch die Messe" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Tars geeignet?
 
 Tars ist eine gute Option für Organisationen, in denen Chatbot- und Formularstrecken für Lead- und Support-Flows regelmäßig Zeit kostet. Der Einstieg lohnt sich besonders vor allem dann, wenn Qualifizierung, Terminierung oder Support-Triage klar begrenzt sind. Ein klarer Verantwortlicher sollte den Prozess begleiten.

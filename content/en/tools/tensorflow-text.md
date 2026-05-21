@@ -16,6 +16,10 @@ translation: full
 
 TensorFlow Text is a powerful open-source library designed specifically for processing and analyzing text data within the field of machine learning. It complements TensorFlow with extensive natural language processing (NLP) tools, allowing developers to efficiently build, train, and deploy complex text models.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tensorflow-text-editorial.webp" alt="Illustration for tensorflow-text: text flow through a language loom" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is TensorFlow Text for?
 
 TensorFlow Text is aimed at developers, data scientists, and researchers working in the areas of natural language processing and machine learning. It is particularly suitable for those who already have experience with TensorFlow and want to enhance their projects with advanced text processing functionalities. Companies and organizations seeking flexible and scalable NLP solutions also benefit from its extensive tools and integration within the TensorFlow ecosystem.

@@ -14,6 +14,10 @@ In der Praxis entscheidet bei Syllable nicht die Featureliste allein. Entscheide
 
 Syllable sollte dort getestet werden, wo heute Reibung entsteht: Übergaben, Varianten, Korrekturen, Suche oder Produktion. Wenn diese Stellen sauberer werden, passt das Werkzeug in den Ablauf.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/syllable-editorial.webp" alt="Illustration zu syllable: Stimme und Weiterleitung in der Klinik" loading="lazy" decoding="async" />
+</figure>
+
 ## Der praktische Kern
 
 Supportwerkzeuge sind nur so gut wie die Antwortwege dahinter. Ein schneller Kanal ohne klare Zuständigkeit macht Kunden nicht glücklicher. Für Syllable sollte dieser Punkt am konkreten Einsatzfall geprüft werden.

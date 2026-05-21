@@ -16,6 +16,10 @@ translation: full
 
 TapTapSee is an innovative AI-based app designed specifically to help people with visual impairments identify objects in everyday life. By using the camera and artificial intelligence, TapTapSee provides fast and accurate descriptions of items, giving users greater independence and confidence.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/taptapsee-editorial.webp" alt="Illustration for taptapsee: object recognition in the market" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is TapTapSee for?
 
 TapTapSee is aimed primarily at people who are visually impaired or blind and need support identifying objects. The app is also useful for caregivers, family members, or support workers who want to help people with limited vision in daily life. In addition, TapTapSee can be helpful for anyone looking for a simple and quick way to identify objects, such as in a professional setting or when organizing a personal workflow.

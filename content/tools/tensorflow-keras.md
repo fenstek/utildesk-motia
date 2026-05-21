@@ -12,6 +12,10 @@ popularity: 0
 
 TensorFlow und Keras sind leistungsstarke Open-Source-Bibliotheken für maschinelles Lernen und Deep Learning. TensorFlow, entwickelt von Google, bietet eine flexible Plattform für numerische Berechnungen und ermöglicht die Erstellung und das Training komplexer neuronaler Netze. Keras fungiert als benutzerfreundliche API, die eng mit TensorFlow integriert ist und den Einstieg in die Modellierung und das Experimentieren mit Deep-Learning-Architekturen erleichtert. Gemeinsam bilden sie ein robustes Toolset für Entwickler, Forscher und Lernende im Bereich der künstlichen Intelligenz.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tensorflow-keras-editorial.webp" alt="Illustration zu tensorflow-keras: Schichten eines neuronalen Modells" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist TensorFlow / Keras geeignet?
 
 TensorFlow und Keras richten sich an ein breites Spektrum von Anwendern:
