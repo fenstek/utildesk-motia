@@ -13,6 +13,10 @@ popularity: 0
 
 Tara AI positioniert sich zwischen Produkt-Roadmap, Sprint-Planung und Entwicklerkoordination. Das Tool ist interessant für Teams, die nicht noch ein loses Aufgabenboard suchen, sondern Planungssignale aus Roadmaps, Backlog, Kapazität und Delivery-Status dichter zusammenführen wollen. Der KI-Anteil ist dabei vor allem dann nützlich, wenn schon verlässliche Projekt- und Engineering-Daten vorhanden sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tara-ai-editorial.webp" alt="Illustration zu tara-ai: Roadmap auf dem Hafenpier" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Tara AI geeignet?
 
 Tara AI passt zu Produktmanagerinnen, Engineering-Leads und Gründerteams, die regelmäßig zwischen Feature-Wünschen, Sprint-Zielen und realer Entwicklungskapazität vermitteln müssen. Besonders sinnvoll ist es in Teams, die bereits mit GitHub, Jira oder ähnlichen Systemen arbeiten und eine zusätzliche Planungsebene für Prioritäten, Abhängigkeiten und Release-Transparenz brauchen. Für sehr kleine Teams ohne gepflegtes Backlog ist Tara AI dagegen oft zu früh: Erst müssen Zuständigkeiten und Arbeitsrhythmus stimmen.

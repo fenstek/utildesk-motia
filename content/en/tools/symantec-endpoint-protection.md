@@ -16,6 +16,10 @@ translation: full
 
 Symantec Endpoint Protection is a comprehensive security solution specifically developed for businesses to effectively protect endpoints from various threats. The software combines antivirus, firewall, intrusion prevention, and other security functions into a unified platform. This enables centralized management and improves security within enterprise networks.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/symantec-endpoint-protection-editorial.webp" alt="Illustration for symantec-endpoint-protection: protective shield around endpoints" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Symantec Endpoint Protection for?
 
 Symantec Endpoint Protection is mainly aimed at medium-sized and large companies that require a holistic security solution for their endpoints. It is particularly suitable for IT departments seeking centralized management of security policies, securing different device types such as desktops, laptops, and mobile devices. Organizations with high compliance requirements also benefit from its extensive protection mechanisms.

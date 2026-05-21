@@ -16,6 +16,10 @@ translation: full
 
 Sync.com is a cloud-based platform for secure file storage and sharing with a focus on privacy and simple collaboration. In addition to classic cloud storage, the solution also offers automation functions and supports efficient workflows in teams and businesses. Sync.com combines an easy-to-use interface with advanced security and automation features, making it an interesting option in the field of AI-supported workflow tools.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sync-com-editorial.webp" alt="Illustration for sync-com: secure file sharing on the bridge" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Sync.com suitable for?
 
 Sync.com is aimed at individuals, small and medium-sized businesses, and teams looking for a secure cloud solution that complies with data protection requirements. It is especially suitable for users who value end-to-end encryption and want to protect their data from unauthorized access. Users who want to automate work processes and keep data exchange within the team smooth also benefit from the integrated workflow and automation features.

@@ -17,6 +17,10 @@ translation: full
 
 TADS is a powerful open-source development system designed specifically for creating text adventures and interactive fiction. It offers a comprehensive programming language and an integrated development environment that allows authors and developers to build complex narrative games with extensive worlds and interactions. TADS supports both beginners and experienced developers and encourages creative writing combined with technical flexibility.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tads-editorial.webp" alt="Illustration for tads: text adventure opening fantasy worlds" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is TADS suitable for?
 
 TADS is primarily aimed at authors, game developers, and hobbyists who are interested in creating interactive text adventures. It is suitable for users with programming knowledge or for those who are willing to learn a new scripting language. Creative writers who want to combine their stories with game elements will find TADS to be a versatile platform. Educators in the fields of game design or narrative programming can also use TADS as a practical tool.

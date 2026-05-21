@@ -14,6 +14,10 @@ T-RackS von IK Multimedia ist eine Suite für Mixing und Mastering mit Modulen f
 
 Mastering-Tools wirken schnell wie Zauberkaesten, aber sie ersetzen kein Hören. T-RackS kann viel formen, gluehen und glätten; ob ein Mix dadurch besser wird, entscheidet der Kontext, nicht die Anzeige im Plugin.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/t-racks-von-ik-multimedia-editorial.webp" alt="Illustration zu t-racks-von-ik-multimedia: Mastering im Konzertsaal" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist T-RackS von IK Multimedia geeignet?
 
 Geeignet ist T-RackS für Homestudios, Produzenten, Mixing Engineers, Podcaster mit hoeherem Klanganspruch und Musiker, die ihre Releases selbst vorbereiten. Für sehr kritische kommerzielle Releases bleibt ein erfahrener Mastering Engineer oft die bessere Investition.

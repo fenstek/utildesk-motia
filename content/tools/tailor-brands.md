@@ -12,6 +12,10 @@ popularity: 0
 
 Tailor Brands ist eine KI-gestützte Plattform, die Unternehmen und Einzelpersonen dabei unterstützt, professionelle Logos, Markenidentitäten und Marketingmaterialien schnell und einfach zu erstellen. Durch den Einsatz von künstlicher Intelligenz werden Designprozesse automatisiert, wodurch auch Nutzer ohne Designkenntnisse ansprechende Ergebnisse erzielen können. Tailor Brands bietet eine breite Palette von Tools, die von Logo-Design über Branding bis hin zu Social-Media-Marketing reichen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tailor-brands-editorial.webp" alt="Illustration zu tailor-brands: Markenwerkstatt mit Stoff und Farben" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Tailor Brands geeignet?
 
 Tailor Brands richtet sich vor allem an kleine und mittelständische Unternehmen, Start-ups, Freiberufler und Unternehmer, die eine kosteneffiziente und schnelle Lösung für ihr Branding suchen. Auch Personen ohne fundierte Designkenntnisse profitieren von der intuitiven Benutzeroberfläche und den automatisierten Designvorschlägen. Darüber hinaus eignet sich Tailor Brands für Marketingteams, die konsistente Markeninhalte erstellen möchten, ohne externe Designer zu beauftragen.

@@ -12,6 +12,10 @@ popularity: 0
 
 SYSTRAN Translate ist eine leistungsstarke KI-gestützte Übersetzungssoftware, die sich auf professionelle und unternehmensgerechte Sprachübersetzungen spezialisiert hat. Mit fortschrittlichen neuronalen Netzwerken und umfangreichen Sprachdaten ermöglicht SYSTRAN eine schnelle, präzise und kontextbewusste Übersetzung von Texten in zahlreiche Sprachen. Die Lösung unterstützt sowohl Einzelanwender als auch Großunternehmen bei der Lokalisierung von Inhalten, der Kommunikation über Sprachbarrieren hinweg und der Automatisierung von Übersetzungsprozessen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/systran-translate-editorial.webp" alt="Illustration zu systran-translate: Marktgespraech mit fliessenden Sprachribbons" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist SYSTRAN Translate geeignet?
 
 SYSTRAN Translate richtet sich vor allem an Unternehmen, die mehrsprachige Inhalte effizient verwalten und übersetzen müssen. Besonders geeignet ist das Tool für:

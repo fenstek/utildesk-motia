@@ -16,6 +16,10 @@ translation: full
 
 TeamSpeak is a versatile voice chat software primarily used for online gaming and team communication. With stable audio quality, low latency, and comprehensive features, TeamSpeak supports effective collaboration and clear real-time communication. The software offers both free and paid options and suits different user groups who value reliable voice connections.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/teamspeak-editorial.webp" alt="Illustration for teamspeak: voice team in a mountain storm" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is TeamSpeak for?
 
 TeamSpeak targets gamers who need a stable and clear voice connection during gameplay, as well as teams and organizations seeking a professional solution for online communication and collaboration. The platform is especially suitable for:

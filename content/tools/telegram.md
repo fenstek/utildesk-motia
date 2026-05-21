@@ -12,6 +12,10 @@ popularity: 0
 
 Telegram ist eine cloud-basierte Instant-Messaging-App, die sich durch hohe Geschwindigkeit, Sicherheit und vielseitige Funktionen auszeichnet. Sie ermöglicht es Nutzern, Nachrichten, Medien und Dateien schnell und unkompliziert zu senden sowie Gruppen und Kanäle für den Austausch innerhalb von Communities zu erstellen. Telegram ist kostenlos verfügbar und auf verschiedenen Plattformen wie Smartphones, Tablets und Desktop-Computern einsetzbar.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/telegram-editorial.webp" alt="Illustration zu telegram: Nachrichten fliegen ueber die Stadt" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Telegram geeignet?
 
 Telegram richtet sich an Privatpersonen, Teams und Communities, die eine zuverlässige und sichere Kommunikationslösung suchen. Besonders geeignet ist die App für Nutzer, die Wert auf Datenschutz legen, da Telegram Ende-zu-Ende-verschlüsselte Chats und selbstlöschende Nachrichten bietet. Ebenso profitieren kleinere und größere Gruppen, Unternehmen und Organisationen von den vielfältigen Funktionen für die Zusammenarbeit und den Austausch von Informationen in Echtzeit. Auch für Nutzer, die eine Alternative zu klassischen Messenger-Diensten mit mehr Funktionen und weniger Einschränkungen suchen, ist Telegram interessant.

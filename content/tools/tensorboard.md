@@ -12,6 +12,10 @@ popularity: 0
 
 TensorBoard ist ein leistungsstarkes Open-Source-Tool zur Visualisierung von Machine-Learning-Modellen und deren Trainingsprozessen. Es ermöglicht Entwicklern, komplexe Modelle besser zu verstehen, Trainingsfortschritte zu überwachen und wichtige Metriken übersichtlich darzustellen. TensorBoard wurde ursprünglich von Google entwickelt und ist eng mit TensorFlow integriert, kann jedoch auch mit anderen Frameworks verwendet werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tensorboard-editorial.webp" alt="Illustration zu tensorboard: Trainingskonstellation im Observatorium" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist TensorBoard geeignet?
 
 TensorBoard richtet sich vor allem an Data Scientists, Machine-Learning-Ingenieure und Entwickler, die Modelle trainieren, optimieren und analysieren möchten. Es ist besonders nützlich für Teams, die an komplexen Projekten mit großen Datenmengen arbeiten und eine transparente Visualisierung der Trainingsprozesse benötigen. Auch Forscher und Lehrende profitieren von TensorBoard, um Lernprozesse anschaulich zu machen.

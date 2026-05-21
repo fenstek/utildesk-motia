@@ -16,6 +16,10 @@ translation: full
 
 Talkdesk is a cloud-based contact center software that helps businesses manage customer service and communication efficiently. Equipped with modern AI features and an intuitive interface, Talkdesk offers solutions for different company sizes and industries to boost customer satisfaction and optimize internal processes.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/talkdesk-editorial.webp" alt="Illustration for talkdesk: customer support in the service hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Talkdesk for?
 
 Talkdesk targets businesses looking to centralize and enhance their customer communication. It is especially suitable for contact centers, customer service departments, and sales organizations of all sizes. Thanks to scalable features, Talkdesk adapts to both small companies and large corporations. Industries such as e-commerce, telecommunications, financial services, and healthcare benefit from extensive integration options and automation capabilities.

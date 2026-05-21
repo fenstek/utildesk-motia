@@ -15,6 +15,10 @@ translation: full
 
 TestCafe is a modern automation tool for end-to-end testing of web applications. It enables developers and testers to run cross-browser tests without complex setup steps. With its simple syntax and support for different browser environments, TestCafe speeds up quality assurance and streamlines the workflow in the software development process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/testcafe-editorial.webp" alt="Illustration for testcafe: browser portals in the QA corridor" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is TestCafe suitable for?
 
 TestCafe is aimed at developers, QA teams, and automation specialists who want to create reliable and maintainable tests for web applications. It is especially well suited for teams that need cross-platform testing without having to worry about browser plugins or additional drivers. Companies that want to make their testing processes more efficient with automated workflows also benefit from it.

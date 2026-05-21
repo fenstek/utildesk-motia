@@ -12,6 +12,10 @@ popularity: 0
 
 Temi ist ein automatischer Transkriptionsdienst, der es ermöglicht, Audio- und Videodateien schnell und präzise in Text umzuwandeln. Durch den Einsatz moderner Spracherkennungstechnologien unterstützt Temi vor allem Menschen, die regelmäßig Audioinhalte transkribieren müssen, beispielsweise Journalisten, Studierende oder Content-Ersteller. Der Dienst bietet eine einfache Bedienung und liefert Ergebnisse in kurzer Zeit, was die Produktivität deutlich steigern kann.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/temi-editorial.webp" alt="Illustration zu temi: Interview und Transkription vor Ort" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Temi geeignet?
 
 Temi richtet sich an alle, die Audioaufnahmen effizient und kostengünstig in schriftliche Form bringen möchten. Besonders geeignet ist Temi für:

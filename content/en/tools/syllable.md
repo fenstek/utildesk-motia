@@ -16,6 +16,10 @@ In practice, Syllable is not defined by the feature list alone. It matters wheth
 
 Syllable should be tested where friction already exists: handoffs, variants, corrections, search, or production. If those points become cleaner, the tool has a plausible place in the workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/syllable-editorial.webp" alt="Illustration for syllable: voice and routing in the clinic" loading="lazy" decoding="async" />
+</figure>
+
 ## Practical core
 
 Support tools are only as good as the response paths behind them. A fast channel without ownership does not make customers happier.

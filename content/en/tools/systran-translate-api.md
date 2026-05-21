@@ -16,6 +16,10 @@ translation: full
 
 SYSTRAN Translate API is a powerful translation API that enables developers to equip multilingual applications with automatic text translation. The API supports numerous languages and offers flexible integration options for different platforms and use cases. With a focus on quality and speed, SYSTRAN Translate API is particularly well suited for companies and developers who want to integrate reliable translations into their products or services.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/systran-translate-api-editorial.webp" alt="Illustration for systran-translate-api: translation signal paths in a transit hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is SYSTRAN Translate API suitable for?
 
 SYSTRAN Translate API is aimed primarily at developers, software companies, and organizations that want to make their applications or websites multilingual. The tool is especially suitable for:

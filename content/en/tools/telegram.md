@@ -16,6 +16,10 @@ translation: full
 
 Telegram is a cloud-based instant messaging app that stands out for its high speed, security, and versatile features. It allows users to send messages, media, and files quickly and easily, as well as create groups and channels for community exchanges. Telegram is free and available on various platforms such as smartphones, tablets, and desktop computers.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/telegram-editorial.webp" alt="Illustration for telegram: messages flying across the city" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Telegram for?
 
 Telegram targets individuals, teams, and communities seeking a reliable and secure communication solution. It is especially suitable for users who value privacy, as Telegram offers end-to-end encrypted chats and self-destructing messages. Both small and large groups, companies, and organizations benefit from the diverse features for collaboration and real-time information exchange. Telegram also appeals to users looking for an alternative to classic messaging services with more features and fewer restrictions.

@@ -16,6 +16,10 @@ translation: full
 
 Tara AI sits between product roadmapping, sprint planning, and engineering coordination. It is most interesting for teams that do not simply need another task board, but want roadmap intent, backlog status, capacity, and delivery signals closer together. The AI layer is useful only when the underlying product and engineering data is already reasonably clean.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tara-ai-editorial.webp" alt="Illustration for tara-ai: roadmap on the harbor pier" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Tara AI suitable for?
 
 Tara AI is aimed at product managers, engineering leads, and founder teams that regularly have to balance feature requests, sprint goals, and real development capacity. It is especially relevant for teams already working with GitHub, Jira, or similar systems and needing an extra planning layer for priorities, dependencies, and release visibility. For very small teams without a maintained backlog, Tara AI is often premature: ownership and delivery rhythm need to exist first.

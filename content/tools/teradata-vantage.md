@@ -13,6 +13,10 @@ popularity: 0
 
 Teradata Vantage ist eine Enterprise-Datenplattform für Organisationen, die große analytische Workloads nicht auf mehrere lose Systeme verteilen wollen. Im Mittelpunkt stehen skalierbare SQL-Analysen, Data-Warehouse-Workloads, Governance und die Verbindung von Cloud-, Hybrid- und On-Premise-Umgebungen. Der Nutzen entsteht vor allem dort, wo Datenvolumen, Compliance und Performance gemeinsam betrachtet werden müssen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/teradata-vantage-editorial.webp" alt="Illustration zu teradata-vantage: Enterprise-Daten im Logistik-Hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Teradata Vantage geeignet?
 
 Teradata Vantage richtet sich an größere Unternehmen, Datenplattform-Teams und Analytics-Organisationen, die bereits mit anspruchsvollen Datenmodellen, vielen Fachbereichen und hohen Betriebsanforderungen arbeiten. Besonders geeignet ist die Plattform für:

@@ -12,6 +12,10 @@ popularity: 0
 
 Tasker ist eine leistungsstarke Automatisierungs-App für Android-Geräte, die es Nutzern ermöglicht, vielfältige Aufgaben und Abläufe auf ihrem Smartphone oder Tablet zu automatisieren. Durch die Kombination von Bedingungen, Aktionen und Ereignissen können Nutzer individuelle Workflows erstellen, die den Alltag erleichtern und die Produktivität steigern. Tasker ist besonders beliebt bei Anwendern, die ihr Android-Gerät flexibel an ihre Bedürfnisse anpassen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tasker-editorial.webp" alt="Illustration zu tasker: Android-Automation im Morgenablauf" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Tasker geeignet?
 
 Tasker richtet sich an technisch versierte Android-Nutzer, die ihre Smartphones oder Tablets weit über die Standardfunktionen hinaus anpassen möchten. Die App ist ideal für:

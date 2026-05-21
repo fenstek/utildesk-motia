@@ -18,6 +18,10 @@ Taguette is an open-source tool for qualitative data analysis, especially for ma
 
 Its strength lies in simplicity. If you want to code text passages, develop categories, and find evidence again later, you get a clear working space. If you need complex mixed-methods projects, team governance, or multimedia analysis, you will more likely look to larger CAQDAS tools.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/taguette-editorial.webp" alt="Illustration for taguette: qualitative coding in the archive room" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Taguette suitable for?
 
 Taguette is suitable for students, researchers, NGOs, UX researchers, and small teams working with text-based material. It is especially appealing for projects that prefer transparent, lean, and open tools.

@@ -16,6 +16,10 @@ translation: full
 
 Tableau Prep is a powerful data-preparation tool that helps users prepare data quickly and efficiently for analysis. It combines a user-friendly interface with intelligent features that simplify cleaning, transforming, and combining data. Tableau Prep is especially useful for data analysts, business intelligence professionals, and anyone who wants to prepare complex datasets for meaningful visualizations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tableau-prep-editorial.webp" alt="Illustration for tableau-prep: data being sorted in a warehouse" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Tableau Prep suitable for?
 
 Tableau Prep is aimed at professionals and teams that regularly need to clean and structure large or heterogeneous data sets. It is suitable for:

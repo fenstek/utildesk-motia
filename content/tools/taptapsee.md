@@ -12,6 +12,10 @@ popularity: 0
 
 TapTapSee ist eine innovative KI-basierte App, die speziell entwickelt wurde, um Menschen mit Sehbehinderungen beim Erkennen von Objekten im Alltag zu unterstützen. Durch die Nutzung von Kamera und künstlicher Intelligenz ermöglicht TapTapSee eine schnelle und präzise Beschreibung von Gegenständen, was den Nutzern mehr Selbstständigkeit und Sicherheit bietet.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/taptapsee-editorial.webp" alt="Illustration zu taptapsee: Objekterkennung im Markt" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist TapTapSee geeignet?
 
 TapTapSee richtet sich vor allem an sehbehinderte und blinde Menschen, die Unterstützung bei der Identifikation von Gegenständen benötigen. Die App ist auch für Pflegekräfte, Angehörige oder Betreuer interessant, die Menschen mit eingeschränktem Sehvermögen im Alltag helfen möchten. Darüber hinaus kann TapTapSee für jeden hilfreich sein, der eine einfache und schnelle Möglichkeit sucht, Objekte zu identifizieren, etwa im beruflichen Umfeld oder bei der Organisation des persönlichen Workflows.

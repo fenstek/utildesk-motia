@@ -17,6 +17,10 @@ With Tars, it pays to take a sober look at the everyday reality behind the promi
 
 Before implementation, you should be clear about which response paths actually get users to their goal faster. Otherwise, the benefit remains hard to measure. The most important caution point: when conversations are poorly written, it is just a longer form with a different face.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tars-editorial.webp" alt="Illustration for tars: chatbot guidance through the expo" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Tars suitable for?
 
 Tars is a good option for organizations where chatbot and form flows for lead and support processes regularly take time. It is especially worth considering when qualification, scheduling, or support triage are clearly defined. A clear owner should oversee the process.

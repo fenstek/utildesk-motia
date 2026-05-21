@@ -12,6 +12,10 @@ popularity: 0
 
 TestComplete ist eine umfassende Testautomatisierungsplattform, die speziell für die Automatisierung von UI-Tests entwickelt wurde. Mit einer benutzerfreundlichen Oberfläche und leistungsfähigen Funktionen ermöglicht es Entwicklern und Testern, Tests für Desktop-, Web- und mobile Anwendungen zu erstellen, auszuführen und zu verwalten. Durch die Integration von KI-gestützten Technologien unterstützt TestComplete die schnelle Identifikation von UI-Elementen und trägt zur Effizienzsteigerung im Testprozess bei.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/testcomplete-editorial.webp" alt="Illustration zu testcomplete: Umfassende UI-Pruefung im Testlabor" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist TestComplete geeignet?
 
 TestComplete eignet sich für Softwareentwickler, QA-Teams und Testautomatisierungsingenieure, die eine zuverlässige Lösung zur Automatisierung von Benutzeroberflächentests suchen. Insbesondere Organisationen, die umfangreiche Anwendungen mit komplexen Benutzeroberflächen entwickeln, profitieren von den vielseitigen Funktionen. Auch Unternehmen, die ihre Testprozesse durch den Einsatz von KI-Technologien optimieren möchten, finden in TestComplete ein geeignetes Werkzeug.

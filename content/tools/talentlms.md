@@ -12,6 +12,10 @@ popularity: 0
 
 TalentLMS ist eine cloudbasierte Lernmanagement-Plattform (LMS), die Unternehmen und Bildungseinrichtungen dabei unterstützt, Schulungen und Lerninhalte effizient zu verwalten und zu verteilen. Mit Fokus auf Automatisierung und Workflow-Optimierung bietet TalentLMS eine benutzerfreundliche Oberfläche für die Erstellung, Durchführung und Auswertung von Online-Kursen. Die Plattform eignet sich besonders für die digitale Weiterbildung, Onboarding-Prozesse und die Förderung von Mitarbeiterschulungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/talentlms-editorial.webp" alt="Illustration zu talentlms: Mobiles Training fuer eine Lerngruppe" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist TalentLMS geeignet?
 
 TalentLMS richtet sich vor allem an Unternehmen jeder Größe, Bildungseinrichtungen sowie Organisationen, die interne Schulungen und Weiterbildungsprogramme digitalisieren möchten. Besonders geeignet ist das Tool für Personalabteilungen, Trainer und Schulungsleiter, die eine einfache und automatisierte Lösung zur Verwaltung von Lerninhalten suchen. Auch für Freiberufler und Berater, die Online-Kurse anbieten wollen, kann TalentLMS eine passende Plattform sein. Die Skalierbarkeit und Anpassbarkeit machen es interessant für kleine Teams ebenso wie für große Unternehmen mit komplexen Anforderungen.
