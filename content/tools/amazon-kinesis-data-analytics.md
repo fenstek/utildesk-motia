@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
-popularity: 70
+popularity: 69
 ---
 
 # Amazon Kinesis Data Analytics

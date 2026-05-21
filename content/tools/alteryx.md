@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [analytics, data-preparation, automation]
 official_url: "https://www.alteryx.com/"
-popularity: 71
+popularity: 70
 description: Alteryx ist eine Analytics- und Data-Preparation-Plattform für Teams, die Datenflüsse, Analysen und Automatisierungen ohne reinen Code-Stack bauen wollen.
 ---
 # Alteryx
