@@ -5,7 +5,7 @@ category: AI
 price_model: Einmalzahlung
 tags: [reference-manager,citations,research]
 official_url: "https://endnote.com/de/?"
-popularity: 51
+popularity: 49
 description: EndNote ist ein Referenzmanager für lange wissenschaftliche Schreibprojekte, Literaturdatenbanken, Zitationsstile und Team-Bibliotheken.
 ---
 # EndNote

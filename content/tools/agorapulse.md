@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: ["social-media", "marketing", "automation", "analytics"]
 official_url: "https://www.agorapulse.com/"
-popularity: 75
+popularity: 73
 ---
 
 # Agorapulse

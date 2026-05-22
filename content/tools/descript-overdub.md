@@ -6,7 +6,7 @@ price_model: Abonnement
 tags: ["audio", "voice", "video", "transcription", "editing"]
 official_url: "https://www.descript.com/regenerate"
 affiliate_url: "https://www.descript.com/regenerate"
-popularity: 52
+popularity: 51
 description: Descript-Sprachfunktion für Voice-Cloning, Sprachkorrektur und textbasiertes Audio-Editing.
 ---
 
