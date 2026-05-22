@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["data", "automation"]
 official_url: "https://airtable.com"
-popularity: 73
+popularity: 72
 updated_at: 2026-05-21
 ---
 

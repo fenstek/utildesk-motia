@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: []
 official_url: "https://www.descript.com/regenerate"
-popularity: 52
+popularity: 51
 ---
 
 # Descript Overdub

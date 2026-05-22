@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
-popularity: 33
+popularity: 32
 updated_at: 2026-05-21
 ---
 
