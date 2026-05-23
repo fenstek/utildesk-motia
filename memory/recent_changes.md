@@ -466,3 +466,11 @@ _Last updated: 2026-05-21_
 - Ran `npm --prefix site run build`; build passed with 23 German and 23 English Ratgeber pages.
 - Content commit: `96fb9b3f` (`content: publish AI agent workflow ratgeber`).
 - Operational note: GitHub push alone did not make the new Ratgeber pages live within the first polling window, matching the 2026-05-12 behavior. Use `scripts/deploy_from_ubuntu.sh` or direct Wrangler Pages deployment if live URLs still return 404.
+
+## 2026-05-23 - Catalog readability and masthead cleanup
+
+- Improved the light-theme reading experience across the catalog homepage, tool detail pages, and Ratgeber detail pages by increasing practical contrast, text sizing, and content spacing.
+- Moved the homepage `query_interface` and live feed blocks into the right `detail.preview` column, so the main hero has one clear editorial message instead of competing panels.
+- Removed the nested right-column scrollbar by letting `detail.preview` grow with the page; the page now has one normal browser scroll.
+- Replaced the rejected oversized rounded-card hero with a flatter compact masthead: Space Grotesk display title, subtle grid/green wash, and small stat pills under the intro copy.
+- Verification before release: `npm --prefix site run build` passed with 3204 pages; direct Cloudflare Pages deployment `91446d24` was live-checked on `https://tools.utildesk.de/` with HTTP 200 and screenshot artifact `output/compact-masthead-live-production-light.png`.

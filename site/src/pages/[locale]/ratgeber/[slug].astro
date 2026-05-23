@@ -211,14 +211,14 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 </script>
 
 <style>
-  .breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: var(--space-5) 0 24px; color: var(--secondary); font-size: 0.88rem; opacity: 0.75; }
+  .breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: var(--space-5) 0 24px; color: var(--secondary); font-size: 0.94rem; opacity: 0.95; }
   .article-head { max-width: 100%; padding-bottom: 32px; border-bottom: 1px solid rgba(190, 201, 197, 0.25); }
   .article-eyebrow { margin: 0 0 12px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary); }
   .article-head h1 { margin: 0; font-size: clamp(1.6rem, 2.8vw, 2.4rem); line-height: 1.2; letter-spacing: -0.025em; font-weight: 800; max-width: min(62ch, 100%); }
-  .article-byline { margin: 18px 0 0; color: var(--secondary); font-size: 0.9rem; line-height: 1.6; }
+  .article-byline { margin: 18px 0 0; color: var(--secondary); font-size: 0.96rem; line-height: 1.6; }
   .article-byline a { color: var(--primary); text-decoration: underline; text-decoration-color: rgba(23, 98, 89, 0.28); text-underline-offset: 2px; }
   .article-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-  .pill { display: inline-flex; align-items: center; padding: 5px 12px; border-radius: var(--radius-full); background: var(--surface-container-low); color: var(--on-surface-variant); font-size: 0.78rem; font-weight: 600; border: 1px solid rgba(190, 201, 197, 0.3); }
+  .pill { display: inline-flex; align-items: center; padding: 5px 12px; border-radius: var(--radius-full); background: var(--surface-container-low); color: var(--on-surface-variant); font-size: 0.84rem; font-weight: 600; border: 1px solid rgba(190, 201, 197, 0.3); }
   .pill--accent, .pill--tool { background: rgba(23, 98, 89, 0.08); color: var(--primary); border-color: rgba(23, 98, 89, 0.15); text-decoration: none; }
   .article-cover { margin: 28px 0 0; border-radius: clamp(24px, 2.4vw, 32px); overflow: visible; border: none; background: transparent; box-shadow: none; }
   .article-cover-trigger { display: block; width: 100%; padding: 0; border: none; margin: 0; background: transparent; cursor: zoom-in; text-align: left; border-radius: inherit; overflow: hidden; }
@@ -232,7 +232,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   .summary-label { margin: 0 0 12px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--primary); }
   .summary-list { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 10px; }
   .article-footer { margin-top: var(--space-7); padding-top: var(--space-5); border-top: 1px solid rgba(190, 201, 197, 0.25); padding-bottom: var(--space-8); }
-  .footer-back { font-size: 0.9rem; font-weight: 700; color: var(--secondary); text-decoration: none; }
+  .footer-back { font-size: 0.96rem; font-weight: 700; color: var(--secondary); text-decoration: none; }
   .lightbox { border: none; background: transparent; padding: 24px; width: 100vw; max-width: 100vw; height: 100vh; max-height: 100vh; box-sizing: border-box; overflow: hidden; }
   dialog.lightbox[open] { display: grid; place-items: center; }
   .lightbox::backdrop { background: rgba(18, 20, 16, 0.92); backdrop-filter: blur(6px); }
@@ -345,8 +345,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   }
   .summary-list li {
     color: var(--secondary);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.96rem;
+    line-height: 1.68;
   }
   .article-footer {
     display: flex;
@@ -356,7 +356,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     gap: var(--space-4);
   }
   .footer-back {
-    opacity: 0.75;
+    opacity: 0.9;
     transition: opacity var(--transition), color var(--transition);
   }
   .footer-back:hover { opacity: 1; color: var(--primary); }

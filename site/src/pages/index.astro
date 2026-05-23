@@ -225,7 +225,7 @@ const homepageSchemas = [
 
   <section class="terminal-hero">
     <div class="terminal-hero-grid">
-      <div>
+      <div class="terminal-hero-main">
         <div class="terminal-kicker">[ manifest_001 ]</div>
         <h1 class="terminal-title">
           KI-Tools Verzeichnis 2026,<br />
@@ -255,33 +255,6 @@ const homepageSchemas = [
           </div>
         </div>
       </div>
-
-      <div>
-        <div class="terminal-kicker">[ query_interface ]</div>
-        <div class="terminal-query">
-          <span class="terminal-prompt">$</span>
-          <a href="/tools/">finde: transkription, agenten, automation, bilder, code</a>
-          <span class="terminal-caret">_</span>
-        </div>
-        <div class="terminal-hints">
-          <span>tipp:</span>
-          <code>kategorie:code</code>
-          <code>tag:research</code>
-          <code>preis:free</code>
-        </div>
-      </div>
-
-      <aside class="terminal-feed" aria-label="Aktuelle Eintraege">
-        <div class="terminal-kicker">[ live_feed ]</div>
-        <ul class="terminal-feed-list">
-          {feedRows.map((row) => (
-            <li class="terminal-feed-row">
-              <span class="terminal-feed-time">{row.stamp}</span>
-              <a class="terminal-feed-msg" href={row.href}>{row.title}</a>
-            </li>
-          ))}
-        </ul>
-      </aside>
     </div>
   </section>
 
@@ -397,6 +370,33 @@ const homepageSchemas = [
             <a class="btn-primary" href={`/tools/${primaryDetailTool.slug}/`}>eintrag ansehen</a>
           </>
         )}
+      </div>
+
+      <div class="terminal-detail-card terminal-detail-card--query">
+        <h2 class="terminal-detail-title">query_interface</h2>
+        <div class="terminal-query terminal-query--side">
+          <span class="terminal-prompt">$</span>
+          <a href="/tools/">finde: transkription, agenten, automation, bilder, code</a>
+          <span class="terminal-caret">_</span>
+        </div>
+        <div class="terminal-hints terminal-hints--side">
+          <span>tipp:</span>
+          <code>kategorie:code</code>
+          <code>tag:research</code>
+          <code>preis:free</code>
+        </div>
+      </div>
+
+      <div class="terminal-detail-card terminal-detail-card--feed" aria-label="Aktuelle Eintraege">
+        <h2 class="terminal-detail-title">five.feeds</h2>
+        <ul class="terminal-feed-list terminal-feed-list--side">
+          {feedRows.map((row) => (
+            <li class="terminal-feed-row terminal-feed-row--side">
+              <span class="terminal-feed-time">{row.stamp}</span>
+              <a class="terminal-feed-msg" href={row.href}>{row.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div class="terminal-detail-card">
