@@ -1103,10 +1103,13 @@ main.container {
 .page-header h1,
 .page-title,
 .tool-hero h1,
+.tool-detail-title,
+.ratgeber-hero h1,
+.article-head h1,
 .article h1,
 .section-title {
   color: var(--fg);
-  font-family: var(--mono);
+  font-family: var(--display);
   letter-spacing: -0.03em;
 }
 
