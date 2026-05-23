@@ -474,3 +474,10 @@ _Last updated: 2026-05-21_
 - Removed the nested right-column scrollbar by letting `detail.preview` grow with the page; the page now has one normal browser scroll.
 - Replaced the rejected oversized rounded-card hero with a flatter compact masthead: Space Grotesk display title, subtle grid/green wash, and small stat pills under the intro copy.
 - Verification before release: `npm --prefix site run build` passed with 3204 pages; direct Cloudflare Pages deployment `91446d24` was live-checked on `https://tools.utildesk.de/` with HTTP 200 and screenshot artifact `output/compact-masthead-live-production-light.png`.
+
+## 2026-05-24 - Typography system cleanup
+
+- Kept the live site typography to two active font roles: `Space Grotesk` for display headings and numeric emphasis, `JetBrains Mono` for catalogue/interface/body text.
+- Removed the old inline `Plus Jakarta Sans` headings from German and English tool-detail alternative sections and replaced them with the shared `.alternatives-title` style.
+- Fixed the 404 page to use the current `--display` and `--mono` font tokens instead of the stale `--font-mono` variable.
+- Removed the unused legacy public stylesheet `site/public/styles/global.css`, which still described the old Inter/Plus Jakarta design system and was no longer imported by the Astro app.

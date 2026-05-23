@@ -1430,6 +1430,16 @@ main.container {
   margin-top: 28px;
 }
 
+.alternatives-title {
+  margin: 2.5rem 0 1rem;
+  color: var(--fg);
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
 .prose ul {
   padding-left: 1.2rem;
 }
