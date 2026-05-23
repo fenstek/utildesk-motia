@@ -5,7 +5,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [ai, agent, automation, research]
 official_url: "https://manus.im/"
-popularity: 31
+popularity: 32
 description: Manus steht für agentische KI-Workflows, bei denen Aufgaben über mehrere Schritte geplant, ausgeführt und zusammengeführt werden.
 ---
 # Manus

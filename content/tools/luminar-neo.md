@@ -5,7 +5,7 @@ category: Design
 price_model: Abonnement
 tags: [photo, editing, ai, desktop]
 official_url: "https://skylum.com/luminar"
-popularity: 33
+popularity: 34
 ---
 
 # Luminar Neo
