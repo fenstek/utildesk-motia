@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [translation, productivity, automation]
 official_url: "https://translator.microsoft.com/"
-popularity: 28
+popularity: 27
 updated_at: 2026-05-21
 ---
 

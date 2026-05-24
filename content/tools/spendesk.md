@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.spendesk.com/"
-popularity: 11
+popularity: 10
 ---
 
 # Spendesk

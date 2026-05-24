@@ -5,7 +5,7 @@ category: Developer
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://hbase.apache.org/"
-popularity: 65
+popularity: 66
 ---
 
 # Apache HBase
