@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Je nach Plan
 tags: [audio, productivity, automation, customer-support]
 official_url: "https://www.ibm.com/products/text-to-speech"
-popularity: 39
+popularity: 38
 ---
 
 # IBM Watson Text to Speech

@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.mixmax.com/"
-popularity: 27
+popularity: 26
 ---
 # Mixmax
 
