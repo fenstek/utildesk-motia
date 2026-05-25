@@ -12,6 +12,9 @@ popularity: 0
 
 Tresorit ist eine cloudbasierte Lösung für sichere Dateispeicherung und Zusammenarbeit, die besonderen Wert auf Datenschutz und Verschlüsselung legt. Mit Funktionen, die den Arbeitsalltag automatisieren und den Workflow optimieren, richtet sich Tresorit vor allem an Unternehmen und Einzelpersonen, die vertrauliche Daten schützen möchten. Die Plattform kombiniert Cloud-Sicherheit mit einer benutzerfreundlichen Oberfläche und unterstützt damit effiziente Arbeitsprozesse.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tresorit-editorial.webp" alt="Illustration zu tresorit: Ein Kurier schützt ein vertrauliches Paket" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Tresorit geeignet?
 
 Tresorit eignet sich für Unternehmen jeder Größe, die hohen Wert auf Datensicherheit legen, insbesondere solche, die sensible Informationen verwalten wie Rechtsanwälte, Finanzdienstleister, Gesundheitsanbieter oder Forschungseinrichtungen. Auch Freelancer und Teams, die remote arbeiten und einen sicheren Austausch von Dateien benötigen, profitieren von den Funktionen. Nutzer, die eine einfache Integration in bestehende Workflows und Automatisierungsmöglichkeiten suchen, finden in Tresorit eine passende Lösung.

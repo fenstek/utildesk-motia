@@ -16,6 +16,9 @@ translation: full
 
 Typesense is a modern, open-source search engine built specifically for developers who want to integrate fast, relevant, and simple full-text search into applications. With a focus on ease of use, low latency, and a straightforward API, Typesense offers a powerful alternative to more complex search solutions. Thanks to its open-source license, developers can use Typesense for free, customize it, and integrate it into a wide variety of projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/typesense-editorial.webp" alt="Illustration for typesense: Librarian finding the right answer instantly" loading="lazy" decoding="async" />
+</figure>
 ## Who is Typesense for?
 
 Typesense is aimed primarily at developers and teams that want to add a fast, easy-to-implement search function to their web or mobile applications. It is ideal for startups, small to medium-sized businesses, and open-source projects that need high-performance search without much administrative overhead. It also offers a clear and low-maintenance solution for developers looking for an alternative to complex search services such as Elasticsearch or Algolia. Since Typesense is available as open-source software, it is also well suited for companies that want to keep full control over their search infrastructure.

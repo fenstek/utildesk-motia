@@ -17,6 +17,9 @@ TravelPerk fits workflows where business travel management with booking, policie
 
 For a fair test, demo data is rarely enough. A real mini workflow is better for this use case: growing companies with decentralized bookings and reporting needs. That also quickly reveals the watch point on a smaller scale: with weak policy maintenance, it does not automatically lead to cheaper travel.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/travelperk-editorial.webp" alt="Illustration for travelperk: Manager orchestrating a business trip" loading="lazy" decoding="async" />
+</figure>
 ## Who is TravelPerk suitable for?
 
 TravelPerk is suitable for users who need more structure to make travel more predictable and handle exceptions transparently. The benefit becomes especially visible once the question of how approvals, budgets, and emergency support work in day-to-day operations has been answered.

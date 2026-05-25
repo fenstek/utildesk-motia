@@ -17,6 +17,9 @@ translation: full
 
 Topaz Gigapixel AI is specialized software for image enlargement and enhancement that uses artificial intelligence to upscale photos without loss of quality. With advanced algorithms, the program analyzes image details and reconstructs missing information to produce razor-sharp, high-resolution images. This solution is especially well suited for photographers, designers, and anyone who needs high-quality image enlargements.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/topaz-gigapixel-ai-editorial.webp" alt="Illustration for topaz-gigapixel-ai: Conservator restoring tiny details into a larger image" loading="lazy" decoding="async" />
+</figure>
 ## Who is Topaz Gigapixel AI suitable for?
 
 Topaz Gigapixel AI is suitable for professional photographers, graphic designers, artists, and hobby photographers who want to print or present their images at higher resolution. The tool is also useful for content creators and marketing professionals who prepare visual material for the web, social media, or print media. Users who often work with old or low-resolution photos and want to improve them also benefit from the software. Basic image-editing knowledge is an advantage, but the intuitive user interface also makes it easy for beginners to get started.

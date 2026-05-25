@@ -12,6 +12,9 @@ popularity: 0
 
 TPOT ist ein Open-Source-Tool für automatisiertes maschinelles Lernen (AutoML), das Entwicklern und Datenwissenschaftlern hilft, optimale Machine-Learning-Pipelines zu erstellen. Es nutzt genetische Programmierung, um Modelle automatisch anzupassen, zu optimieren und zu kombinieren, wodurch der Zeitaufwand für die manuelle Modelloptimierung erheblich reduziert wird. TPOT eignet sich besonders für Nutzer, die komplexe Datenanalysen durchführen möchten, ohne tiefgehende Kenntnisse in der Modellierung und Parametertuning zu benötigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tpot-editorial.webp" alt="Illustration zu tpot: Ein Roboter-Gärtner optimiert ein lebendiges System" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TPOT geeignet?
 
 TPOT richtet sich an Datenwissenschaftler, Machine-Learning-Entwickler, Forscher und Analysten, die effizient und automatisiert robuste Vorhersagemodelle erstellen möchten. Besonders geeignet ist TPOT für Teams und Einzelpersonen, die mit tabellarischen Daten arbeiten und verschiedene Algorithmen sowie deren Hyperparameter automatisch evaluieren wollen. Auch Einsteiger im Bereich Machine Learning profitieren von TPOT, da das Tool viele komplexe Schritte automatisiert und so den Einstieg erleichtert. Da TPOT eine Open-Source-Software ist, eignet sie sich zudem für Entwickler, die flexibles und anpassbares Automatisierungs-Framework suchen.

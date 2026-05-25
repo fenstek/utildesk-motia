@@ -12,6 +12,9 @@ popularity: 0
 
 Tidio ist eine Plattform für Live Chat, Chatbots und Kundenkommunikation auf Websites. Sie ist interessant, wenn Besucherfragen schneller beantwortet und einfache Support- oder Sales-Flows automatisiert werden sollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tidio-editorial.webp" alt="Illustration zu tidio: Ein Support-Team bringt ein Schiff sicher in den Hafen" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Tidio geeignet?
 
 Tidio passt zu kleinen und mittleren Unternehmen, Shops, SaaS-Websites und Supportteams. Für große Contact-Center, komplexe Routinglogik oder stark regulierte Supportprozesse sind Enterprise-Helpdesk-Systeme oft robuster.

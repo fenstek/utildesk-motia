@@ -13,6 +13,9 @@ Der hilfreiche Blick auf Twilio beginnt bei der Frage, welches Problem im Prozes
 
 Gleichzeitig braucht es klare Grenzen und die Antwort auf die Frage, welche Länder, Zustellraten, Datenschutzregeln und Fallbacks relevant sind. Sonst entsteht schnell ein Setup, das formal modern aussieht, aber im Team nicht stabil genutzt wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/twilio-editorial.webp" alt="Illustration zu twilio: Ein Ingenieur routet Kommunikation zwischen Menschen und Diensten" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Twilio geeignet?
 
 Die beste Zielgruppe für Twilio sind Teams mit wiederkehrendem Bedarf an APIs für SMS, Voice, WhatsApp und Kommunikationslogik. Dort hilft das Tool, Routinen zu stabilisieren und Kommunikation direkt in Produkte und Prozesse einzubauen.

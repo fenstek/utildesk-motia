@@ -13,6 +13,9 @@ Todoist ist besonders interessant, wenn Aufgabenmanagement für persönliche und
 
 Der kritische Punkt liegt im Betrieb: die Frage, welche Projekte, Labels und Review-Zeiten wirklich genutzt werden. Genau daran entscheidet sich, ob das Tool entlastet oder nur eine zusätzliche Oberfläche einführt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/todoist-editorial.webp" alt="Illustration zu todoist: Ein Bergsteiger macht aus einer Aufgabenliste einen Aufstieg" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Todoist geeignet?
 
 Am stärksten passt Todoist zu Anwendern, die einen wiederholbaren Ablauf brauchen, um Aufgaben, Projekte und wiederkehrende Routinen schnell greifbar zu machen. Besonders hilfreich ist das Tool in diesem Kontext: für Einzelpersonen, kleine Teams und klare operative Routinen.

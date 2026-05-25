@@ -12,6 +12,9 @@ popularity: 0
 
 ToonMe ist eine innovative mobile Anwendung, die es ermöglicht, Fotos mithilfe künstlicher Intelligenz in Cartoon- oder Comic-Stil-Bilder zu verwandeln. Die App nutzt fortschrittliche Algorithmen, um Porträts automatisch zu erkennen und sie in verschiedene künstlerische Stile umzuwandeln. ToonMe erfreut sich großer Beliebtheit bei Nutzern, die kreative und individuelle Profilbilder oder Kunstwerke aus ihren Fotos erstellen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/toonme-editorial.webp" alt="Illustration zu toonme: Eine Fotografin verwandelt ein Gesicht in einen Toon-Stil" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist ToonMe geeignet?
 
 ToonMe richtet sich an alle, die Spaß an der kreativen Bearbeitung von Fotos haben und ihre Bilder in einzigartige Cartoon- oder Comic-Formate verwandeln möchten. Die Anwendung ist besonders geeignet für:

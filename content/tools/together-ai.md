@@ -11,6 +11,9 @@ popularity: 0
 
 Together AI ist eine Infrastrukturplattform für KI-Modelle, Inferenz und Entwicklung mit offenen oder gehosteten Modellen. Sie ist besonders interessant, wenn Teams mehr Kontrolle über Modellwahl, Kosten und Deployment-Optionen brauchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/together-ai-editorial.webp" alt="Illustration zu together-ai: Ein Team entwickelt gemeinsam Ideen am selben Feuer" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Together AI geeignet?
 
 Together AI passt zu Entwicklern, ML-Teams, Startups und Produktteams, die LLMs oder generative Modelle in eigene Anwendungen integrieren. Für reine Chatnutzung ohne technische Integration sind Endnutzer-Tools einfacher.

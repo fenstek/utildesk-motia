@@ -12,6 +12,9 @@ popularity: 0
 
 TextBlob ist eine benutzerfreundliche Python-Bibliothek für die Verarbeitung natürlicher Sprache (Natural Language Processing, NLP). Sie bietet einfache APIs zur Durchführung typischer NLP-Aufgaben wie Sentiment-Analyse, Textklassifikation, Übersetzung und mehr. TextBlob eignet sich besonders für Entwickler und Datenwissenschaftler, die schnell und unkompliziert Textdaten analysieren möchten, ohne sich tief in komplexe NLP-Frameworks einzuarbeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textblob-editorial.webp" alt="Illustration zu textblob: Eine Lektorin beobachtet, wie Sprache zu schwebenden Blasen wird" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TextBlob geeignet?
 
 TextBlob richtet sich an Programmierer, Datenwissenschaftler und Forscher, die mit Python arbeiten und grundlegende bis mittlere NLP-Aufgaben umsetzen wollen. Es eignet sich ideal für Einsteiger im Bereich NLP, die einfache Lösungen suchen, aber auch für Fortgeschrittene, die schnelle Prototypen entwickeln möchten. Außerdem ist TextBlob nützlich für Anwendungen in der Produktivitätssteigerung, etwa bei der automatischen Textanalyse, Kundenfeedback-Auswertung oder Chatbot-Entwicklung.

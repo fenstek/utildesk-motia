@@ -18,6 +18,9 @@ translation: full
 
 Thunkable is a no-code platform that lets users build mobile apps without programming knowledge. With an intuitive drag-and-drop interface, users can develop both simple and complex applications for iOS and Android. Thunkable offers many features, especially for automation, productivity, and education, that simplify and speed up the development process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/thunkable-editorial.webp" alt="Illustration for thunkable: Inventor assembling an app from modular parts" loading="lazy" decoding="async" />
+</figure>
 ## Who is Thunkable for?
 
 Thunkable is aimed at beginners and advanced users who want to create their own mobile apps without in-depth programming knowledge. The platform is especially suitable for:

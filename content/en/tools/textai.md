@@ -19,6 +19,9 @@ With TextAI, it is worth taking a sober look at everyday use rather than the pro
 
 Before introducing it, the question should already be answered of which text types may be automated and where professional responsibility remains. Otherwise, the benefit is hard to measure. The main point of caution: without tone and fact checking, it amplifies generic content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textai-editorial.webp" alt="Illustration for textai: Reporter uncovering patterns in text" loading="lazy" decoding="async" />
+</figure>
 ## Who is TextAI suitable for?
 
 TextAI is a good option for organizations where AI text functions for drafting, summarizing, and rewriting regularly take up time. It is especially worthwhile for teams with many short text formats and clear review rules. A clearly assigned owner should guide the process.

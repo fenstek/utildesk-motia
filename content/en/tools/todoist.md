@@ -18,6 +18,9 @@ Todoist is especially interesting when task management for personal and small-te
 
 The critical point is in day-to-day operation: which projects, labels, and review times are actually used. That is what determines whether the tool reduces friction or simply adds another interface.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/todoist-editorial.webp" alt="Illustration for todoist: Mountaineer turning a task list into a climb" loading="lazy" decoding="async" />
+</figure>
 ## Who is Todoist suitable for?
 
 Todoist fits best for users who need a repeatable workflow to make tasks, projects, and recurring routines quickly tangible. The tool is especially helpful in this context for individuals, small teams, and clear operational routines.

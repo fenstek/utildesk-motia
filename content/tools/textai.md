@@ -17,6 +17,9 @@ Bei TextAI lohnt ein nüchterner Blick auf den Alltag hinter dem Versprechen. Im
 
 Vor der Einführung sollte die Frage beantwortet sein, welche Textarten automatisiert werden dürfen und wo fachliche Verantwortung bleibt. Andernfalls bleibt der Nutzen schwer messbar. Der wichtigste Achtungspunkt: ohne Tonalitäts- und Faktenprüfung generische Inhalte verstärkt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textai-editorial.webp" alt="Illustration zu textai: Eine Reporterin entdeckt Muster in Texten" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TextAI geeignet?
 
 TextAI ist eine gute Option für Organisationen, in denen KI-Textfunktionen für Entwurf, Zusammenfassung und Umformulierung regelmäßig Zeit kostet. Der Einstieg lohnt sich besonders für Teams mit vielen kurzen Textformaten und klaren Review-Regeln. Ein klarer Verantwortlicher sollte den Prozess begleiten.

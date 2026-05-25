@@ -12,6 +12,9 @@ popularity: 0
 
 Twist ist ein KI-gestütztes Tool, das entwickelt wurde, um Arbeitsabläufe zu optimieren und die Kommunikation in Teams zu verbessern. Es kombiniert Funktionen eines intelligenten Assistenten mit Automatisierungsmöglichkeiten, um repetitive Aufgaben zu vereinfachen und den Workflow effizienter zu gestalten. Durch die Integration moderner KI-Technologien ermöglicht Twist eine strukturierte und klarere Zusammenarbeit, die besonders in dynamischen Arbeitsumgebungen von Vorteil ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/twist-editorial.webp" alt="Illustration zu twist: Kolleginnen und Kollegen tauschen verzweigte Gespräche aus" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Twist geeignet?
 
 Twist richtet sich an Teams und Einzelpersonen, die ihre Arbeitsabläufe automatisieren und die Kommunikation strukturieren möchten. Besonders geeignet ist das Tool für:

@@ -25,7 +25,7 @@ Trello mit Butler richtet sich an Nutzer, die ihre Projektmanagementprozesse ver
 
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/trello-mit-butler-editorial.webp" alt="Illustration zu Trello mit Butler: Kanban-Karten bewegen sich automatisch über ein mechanisches Board" loading="lazy" decoding="async" />
+  <img src="/images/tools/trello-mit-butler-editorial.webp" alt="Illustration zu trello-mit-butler: Ein Butler verwandelt ein Board in geordnetes Handeln" loading="lazy" decoding="async" />
 </figure>
 
 ## Hauptfunktionen

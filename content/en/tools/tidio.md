@@ -15,6 +15,9 @@ translation: full
 
 Tidio is a versatile customer communication platform that combines artificial intelligence (AI) with live chat and chatbots. It helps businesses automate customer service and improve interactions with website visitors. With an intuitive user interface and flexible customization options, Tidio is especially well suited for small and medium-sized businesses that want to make their online communication more efficient.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tidio-editorial.webp" alt="Illustration for tidio: Support team guiding a ship to safety" loading="lazy" decoding="async" />
+</figure>
 ## Who is Tidio suitable for?
 
 Tidio is aimed primarily at small and medium-sized businesses that want to digitize and automate their customer communication. The tool is especially useful for online stores, service providers, and businesses with frequent customer contact through their websites. Startups and freelancers also benefit from the easy integration and AI-powered features to answer inquiries quickly and generate leads.

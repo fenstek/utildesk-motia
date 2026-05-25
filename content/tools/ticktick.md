@@ -12,6 +12,9 @@ popularity: 0
 
 TickTick ist eine vielseitige Produktivitäts-App, die Aufgabenmanagement, Kalenderintegration und Zeitplanung in einer benutzerfreundlichen Oberfläche kombiniert. Mit einer klaren Struktur unterstützt TickTick dabei, den Alltag besser zu organisieren und die Produktivität zu steigern – sowohl im privaten als auch im beruflichen Umfeld.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ticktick-editorial.webp" alt="Illustration zu ticktick: Eine Reisende hält Schritt mit einer lebendigen Aufgabenliste" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TickTick geeignet?
 
 TickTick richtet sich an alle, die ihre Aufgaben und Termine effizient verwalten möchten. Besonders nützlich ist die App für Berufstätige, Studenten und Selbstständige, die sowohl einfache To-Do-Listen als auch komplexe Planungen benötigen. Durch die Kombination von Aufgaben, Kalender und Erinnerungen ist TickTick ideal für Nutzer, die eine umfassende Lösung für Zeitmanagement suchen, ohne mehrere Apps nutzen zu müssen. Auch Teams können von den kollaborativen Funktionen profitieren, je nach gewähltem Plan.

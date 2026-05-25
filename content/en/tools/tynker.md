@@ -16,6 +16,9 @@ translation: full
 
 Tynker is an interactive learning platform that introduces children to programming in a playful way. With a focus on creative projects and user-friendly design, Tynker helps young users understand and apply basic programming concepts. The platform combines visual programming with exciting challenges to foster interest in technology and coding.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tynker-editorial.webp" alt="Illustration for tynker: Young builder bringing code to life" loading="lazy" decoding="async" />
+</figure>
 ## Who is Tynker for?
 
 Tynker is primarily aimed at children and teenagers taking their first steps in programming. The platform is ideal for beginners without prior experience who want to learn how to create interactive stories, games, and apps through play. Educators and parents can also use Tynker to provide children with a structured and motivating introduction to coding. Depending on the plan, Tynker offers content tailored to various age groups and experience levels.

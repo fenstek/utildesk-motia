@@ -19,6 +19,9 @@ The useful way to look at Twilio starts with the question of which part of the p
 
 At the same time, it requires clear boundaries and an answer to which countries, delivery rates, privacy rules, and fallbacks matter. Otherwise, it is easy to end up with a setup that looks modern on paper but is not used reliably by the team.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/twilio-editorial.webp" alt="Illustration for twilio: Engineer routing communication between people and services" loading="lazy" decoding="async" />
+</figure>
 ## Who is Twilio suitable for?
 
 Twilio is best suited to teams with a recurring need for APIs for SMS, voice, WhatsApp, and communication logic. In that setting, the tool helps stabilize routines and embed communication directly into products and processes.

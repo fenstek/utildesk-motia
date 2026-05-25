@@ -17,6 +17,9 @@ translation: full
 
 Transifex is a cloud-based translation management platform designed specifically for businesses and developers to create and manage multilingual content efficiently. With a focus on automation and integration, Transifex supports collaboration between translators, developers, and content managers, making the entire localization process easier.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/transifex-editorial.webp" alt="Illustration for transifex: Translator crossing from one language world to another" loading="lazy" decoding="async" />
+</figure>
 ## Who is Transifex suitable for?
 
 Transifex is ideal for businesses of all sizes that want to offer their products, websites, or apps in multiple languages. Software developers, project managers, and localization teams especially benefit from the extensive API integrations and workflow optimizations. Agencies coordinating translation projects will also find Transifex a powerful tool for structuring workflows and ensuring translation quality.

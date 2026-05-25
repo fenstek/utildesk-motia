@@ -16,6 +16,9 @@ translation: full
 
 TickTick is a versatile productivity app that combines task management, calendar integration, and time planning in a user-friendly interface. With a clear structure, TickTick helps organize everyday life better and increase productivity—both in private and professional settings.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ticktick-editorial.webp" alt="Illustration for ticktick: Traveler keeping pace with a living checklist" loading="lazy" decoding="async" />
+</figure>
 ## Who is TickTick for?
 
 TickTick is designed for anyone who wants to efficiently manage their tasks and appointments. The app is especially useful for professionals, students, and freelancers who need both simple to-do lists and complex planning. By combining tasks, calendar, and reminders, TickTick is ideal for users seeking a comprehensive time management solution without needing multiple apps. Teams can also benefit from its collaborative features, depending on the chosen plan.

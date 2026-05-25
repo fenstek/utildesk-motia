@@ -16,6 +16,9 @@ translation: full
 
 Ubersuggest is a versatile SEO tool that is primarily used for keyword research, competitor analysis, and content optimization. It helps marketers, website owners, and SEO experts increase their online visibility and develop targeted marketing strategies. The integration of AI elements makes data-driven decisions easier and provides insights into search trends and ranking opportunities.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ubersuggest-editorial.webp" alt="Illustration for ubersuggest: Marketer discovering opportunities in search" loading="lazy" decoding="async" />
+</figure>
 ## Who is Ubersuggest suitable for?
 
 Ubersuggest is aimed at a broad audience, including:

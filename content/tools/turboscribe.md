@@ -12,6 +12,9 @@ popularity: 0
 
 TurboScribe ist ein modernes Transkriptions-Tool, das auf künstlicher Intelligenz basiert und speziell für die schnelle und präzise Umwandlung von Audio- in Textdateien entwickelt wurde. Es eignet sich ideal für Nutzer, die Audioinhalte automatisiert transkribieren möchten, sei es für Interviews, Meetings, Podcasts oder andere Sprachaufnahmen. Durch eine intuitive Benutzeroberfläche und flexible Preisgestaltung bietet TurboScribe sowohl Einsteigern als auch professionellen Anwendern eine effektive Lösung im Bereich der Audio-Transkription.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/turboscribe-editorial.webp" alt="Illustration zu turboscribe: Eine Transkribiererin hält Sprache in hoher Geschwindigkeit fest" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TurboScribe geeignet?
 
 TurboScribe richtet sich an eine breite Zielgruppe, darunter:
