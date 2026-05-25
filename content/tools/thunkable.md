@@ -12,6 +12,9 @@ popularity: 0
 
 Thunkable ist eine No-Code-Plattform, die es Nutzern ermöglicht, mobile Apps ohne Programmierkenntnisse zu erstellen. Mit einer intuitiven Drag-and-Drop-Oberfläche können Anwender sowohl einfache als auch komplexe Anwendungen für iOS und Android entwickeln. Besonders im Bereich Automatisierung, Produktivität und Bildung bietet Thunkable zahlreiche Funktionen, die den Entwicklungsprozess vereinfachen und beschleunigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/thunkable-editorial.webp" alt="Illustration zu thunkable: Ein Erfinder setzt eine App aus modularen Teilen zusammen" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Thunkable geeignet?
 
 Thunkable richtet sich an Einsteiger und Fortgeschrittene, die ohne tiefgehende Programmierkenntnisse eigene mobile Apps erstellen möchten. Besonders geeignet ist die Plattform für:

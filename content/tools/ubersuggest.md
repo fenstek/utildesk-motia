@@ -12,6 +12,9 @@ popularity: 0
 
 Ubersuggest ist ein vielseitiges SEO-Tool, das vor allem für Keyword-Recherche, Wettbewerbsanalyse und Content-Optimierung genutzt wird. Es unterstützt Marketer, Website-Betreiber und SEO-Experten dabei, ihre Online-Sichtbarkeit zu erhöhen und gezielte Marketingstrategien zu entwickeln. Die Integration von KI-Elementen erleichtert datengetriebene Entscheidungen und bietet Einblicke in Suchtrends und Ranking-Chancen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ubersuggest-editorial.webp" alt="Illustration zu ubersuggest: Eine Marketerin entdeckt Chancen in der Suche" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Ubersuggest geeignet?
 
 Ubersuggest richtet sich an eine breite Zielgruppe, darunter:

@@ -12,6 +12,9 @@ popularity: 0
 
 TextCortex ist ein KI-gestütztes Schreibtool, das Nutzern hilft, Texte effizienter zu erstellen und zu optimieren. Es unterstützt bei der Generierung von Inhalten für verschiedene Anwendungsbereiche wie Marketing, Blogging oder E-Mails. Mit intelligenten Algorithmen erleichtert TextCortex den Schreibprozess und spart Zeit, indem es kreative Vorschläge und Textvariationen liefert.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textcortex-editorial.webp" alt="Illustration zu textcortex: Eine Autorin navigiert durch ein lebendiges Netzwerk von Ideen" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TextCortex geeignet?
 
 TextCortex richtet sich an alle, die regelmäßig Texte verfassen und dabei Zeit sparen möchten. Besonders geeignet ist das Tool für Content Creator, Marketing-Teams, Blogger, Unternehmer und Freelancer. Auch für Studierende oder alle, die Unterstützung beim Formulieren benötigen, kann TextCortex hilfreich sein. Die KI passt sich verschiedenen Schreibstilen und Anforderungen an, was es vielseitig einsetzbar macht.

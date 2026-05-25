@@ -17,6 +17,9 @@ translation: full
 
 TextAdventures.co.uk is an online platform that makes it easy for users to create and share interactive stories and text adventures. With a focus on creativity and ease of use, the tool is suitable for both beginners and experienced authors who want to present their stories in a playful format. By combining text formatting with decision trees, TextAdventures.co.uk offers a unique way to make narrative content interactive.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textadventures-co-uk-editorial.webp" alt="Illustration for textadventures-co-uk: A game writer discovering branching story paths" loading="lazy" decoding="async" />
+</figure>
 ## Who is TextAdventures.co.uk suitable for?
 
 TextAdventures.co.uk is ideal for:

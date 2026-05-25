@@ -16,6 +16,9 @@ translation: full
 
 TripActions is a comprehensive SaaS platform that helps companies manage business travel and travel expenses with the support of artificial intelligence. The solution offers automated bookings, real-time reporting, and integrated expense management to make the entire travel process more efficient and transparent. With a focus on ease of use and flexibility, TripActions is aimed at companies of all sizes that want to optimize their travel policies and control costs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tripactions-editorial.webp" alt="Illustration for tripactions: Manager orchestrating a business trip" loading="lazy" decoding="async" />
+</figure>
 ## Who is TripActions suitable for?
 
 TripActions is especially well suited for small to large companies looking for a central, automated solution for business travel planning and expense management. Companies with regular travel activity in particular benefit from combining booking, billing, and reporting in one platform. HR departments and finance teams can also simplify their processes through a clear overview and better control of travel costs. The platform is suitable for companies that value modern technologies such as AI-assisted recommendations and real-time data.

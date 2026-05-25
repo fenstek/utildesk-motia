@@ -15,6 +15,9 @@ translation: full
 
 Together AI is a modern AI infrastructure platform designed to make it easier to develop, deploy, and collaborate on AI models. With a focus on efficient use of resources and seamless integration, Together AI helps teams deliver AI projects faster and at greater scale.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/together-ai-editorial.webp" alt="Illustration for together-ai: Team building ideas together around one fire" loading="lazy" decoding="async" />
+</figure>
 ## Who is Together AI suitable for?
 
 Together AI is aimed primarily at companies, developers, and research teams that need powerful AI infrastructure. It is ideal for teams that want to train or deploy complex AI models without building extensive in-house hardware. It also provides a solid foundation for startups and smaller companies looking for scalable and flexible solutions. In addition, data scientists and AI researchers benefit from the collaboration and AI model management tools.

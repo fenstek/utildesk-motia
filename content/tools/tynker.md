@@ -12,6 +12,9 @@ popularity: 0
 
 Tynker ist eine interaktive Lernplattform, die Kindern auf spielerische Weise das Programmieren näherbringt. Mit einem Fokus auf kreative Projekte und einfache Benutzerführung unterstützt Tynker junge Nutzer dabei, grundlegende Programmierkonzepte zu verstehen und anzuwenden. Die Plattform kombiniert visuelle Programmierung mit spannenden Herausforderungen, um das Interesse an Technologie und Coding zu fördern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tynker-editorial.webp" alt="Illustration zu tynker: Ein junger Tüftler erweckt Code zum Leben" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Tynker geeignet?
 
 Tynker richtet sich vor allem an Kinder und Jugendliche, die erste Schritte in der Programmierung machen möchten. Die Plattform ist ideal für Anfänger ohne Vorkenntnisse, die spielerisch lernen wollen, wie man mit Code interaktive Geschichten, Spiele und Apps entwickelt. Auch Lehrkräfte und Eltern können Tynker nutzen, um Kindern strukturierten und motivierenden Zugang zum Thema Coding zu ermöglichen. Je nach Plan bietet Tynker zudem Inhalte für unterschiedliche Altersgruppen und Erfahrungsstufen.

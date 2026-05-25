@@ -12,6 +12,9 @@ popularity: 0
 
 Typesense ist eine moderne, Open-Source-Suchmaschine, die speziell für Entwickler entwickelt wurde, um schnelle, relevante und einfache Volltextsuche in Anwendungen zu integrieren. Mit einem Fokus auf Benutzerfreundlichkeit, niedrige Latenzzeiten und eine einfache API bietet Typesense eine leistungsfähige Alternative zu komplexeren Suchlösungen. Dank seiner Open-Source-Lizenz können Entwickler Typesense kostenlos nutzen, anpassen und in verschiedenste Projekte einbinden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/typesense-editorial.webp" alt="Illustration zu typesense: Eine Bibliothekarin findet sofort die richtige Antwort" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Typesense geeignet?
 
 Typesense richtet sich vor allem an Entwickler und Teams, die eine schnelle und leicht zu implementierende Suchfunktion in ihre Web- oder mobilen Anwendungen integrieren möchten. Es ist ideal für Startups, kleine bis mittelgroße Unternehmen und Open-Source-Projekte, die eine performante Suche ohne großen Verwaltungsaufwand benötigen. Auch für Entwickler, die eine Alternative zu komplexen Suchdiensten wie Elasticsearch oder Algolia suchen, bietet Typesense eine übersichtliche und wartungsarme Lösung. Da Typesense als Open-Source-Software verfügbar ist, eignet es sich zudem für Unternehmen, die vollständige Kontrolle über ihre Suchinfrastruktur behalten wollen.

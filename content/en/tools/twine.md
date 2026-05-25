@@ -16,6 +16,9 @@ translation: full
 
 Twine is an open-source tool for creating interactive stories and text-based games. It allows authors to design branching storylines without programming knowledge while still offering the flexibility to build complex narrative structures. Twine is very popular with writers, game developers, and educators who want to create interactive content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/twine-editorial.webp" alt="Illustration for twine: Storyteller weaving a branching narrative" loading="lazy" decoding="async" />
+</figure>
 ## Who is Twine suitable for?
 
 Twine is aimed at anyone who wants to write interactive stories or games without needing in-depth programming knowledge. It is ideal for:

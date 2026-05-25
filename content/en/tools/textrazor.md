@@ -16,6 +16,9 @@ translation: full
 
 TextRazor is a powerful text analysis API that helps developers understand and process natural language. With extensive features for entity recognition, topic extraction, and semantic analysis, TextRazor offers a flexible solution for a wide range of applications in NLP (Natural Language Processing) and data processing. The tool makes it possible to turn unstructured text into structured data, which is especially useful for search engines, content management systems, and analytics platforms.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textrazor-editorial.webp" alt="Illustration for textrazor: Scientist extracting structure from text" loading="lazy" decoding="async" />
+</figure>
 ## Who is TextRazor suitable for?
 
 TextRazor is aimed primarily at developers, data scientists, and companies that want to integrate robust text analysis capabilities into their applications or workflows. It is suitable for anyone who wants to:

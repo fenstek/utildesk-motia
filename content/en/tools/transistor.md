@@ -18,6 +18,9 @@ In practice, Transistor is not defined by the feature list alone. It matters whe
 
 When introducing Transistor, avoid rebuilding the whole process at once. A limited pilot with clear criteria for time saved, quality, review effort, and team acceptance is more useful.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/transistor-editorial.webp" alt="Illustration for transistor: Podcaster sending a story out to listeners" loading="lazy" decoding="async" />
+</figure>
 ## Practical core
 
 Audio is brutally honest: noise, timing, voice, and rights show up faster than one expects.

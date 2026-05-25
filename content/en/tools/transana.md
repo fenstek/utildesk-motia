@@ -16,6 +16,9 @@ translation: full
 
 Transana is specialized software designed for transcription, coding, and analysis of audio and video material. Especially in the fields of research and qualitative data analysis, Transana helps users systematically evaluate and interpret extensive multimedia data. The software offers diverse tools to efficiently search, annotate, and categorize media content.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/transana-editorial.webp" alt="Illustration for transana: Researcher tracing meaning through recorded audio" loading="lazy" decoding="async" />
+</figure>
 ## Who is Transana suitable for?
 
 Transana is primarily aimed at scientists, researchers, and analysts who want to evaluate qualitative data from interviews, group discussions, observations, or other video and audio sources. Teachers and students engaged in qualitative research also benefit from the software’s features. Due to its specialized nature, Transana is less suitable for simple transcription tasks and is designed more for complex analyses where linking media content with annotations and codes is central.

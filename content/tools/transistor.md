@@ -14,6 +14,9 @@ In der Praxis entscheidet bei Transistor nicht die Featureliste allein. Entschei
 
 Wer Transistor einführt, sollte nicht sofort den ganzen Prozess umbauen. Besser ist ein begrenzter Versuch mit klaren Kriterien: Zeitgewinn, Ergebnisqualität, Nacharbeit und Akzeptanz im Team.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/transistor-editorial.webp" alt="Illustration zu transistor: Ein Podcaster sendet eine Geschichte an sein Publikum" loading="lazy" decoding="async" />
+</figure>
 ## Der praktische Kern
 
 Audio wirkt sofort ehrlich: Rauschen, Timing, Stimme und Rechte fallen schneller auf, als einem lieb ist.

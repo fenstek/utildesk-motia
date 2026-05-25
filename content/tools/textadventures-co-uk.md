@@ -14,6 +14,9 @@ popularity: 0
 
 TextAdventures.co.uk ist eine Online-Plattform, die es Nutzern ermöglicht, interaktive Geschichten und Textabenteuer einfach zu erstellen und zu teilen. Mit einem Fokus auf Kreativität und Nutzerfreundlichkeit eignet sich das Tool sowohl für Anfänger als auch für erfahrene Autoren, die ihre Geschichten in einem spielerischen Format präsentieren möchten. Durch die Kombination von Textgestaltung und Entscheidungsbäumen bietet TextAdventures.co.uk eine einzigartige Möglichkeit, narrative Inhalte interaktiv zu gestalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textadventures-co-uk-editorial.webp" alt="Illustration zu textadventures-co-uk: Eine Spieleautorin entdeckt verzweigte Story-Pfade" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist TextAdventures.co.uk geeignet?
 
 TextAdventures.co.uk ist ideal für:

@@ -18,6 +18,9 @@ Trelby is not a magic button, but a tool with a fairly clear place: open-source 
 
 With Trelby, look at daily use after the first week. If the tool is still used because it makes work easier, that is stronger than a good first impression.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/trelby-editorial.webp" alt="Illustration for trelby: Screenwriter shaping scenes into a filmable story" loading="lazy" decoding="async" />
+</figure>
 ## Practical core
 
 Writing tools are useful when they provide raw material, variants, and structure without hiding editorial responsibility.

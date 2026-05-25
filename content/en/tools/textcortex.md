@@ -16,6 +16,9 @@ translation: full
 
 TextCortex is an AI-powered writing tool that helps users create and optimize text more efficiently. It supports content generation for a range of use cases such as marketing, blogging, or emails. With intelligent algorithms, TextCortex simplifies the writing process and saves time by providing creative suggestions and text variations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/textcortex-editorial.webp" alt="Illustration for textcortex: Writer navigating a living network of ideas" loading="lazy" decoding="async" />
+</figure>
 ## Who is TextCortex suitable for?
 
 TextCortex is aimed at anyone who regularly writes text and wants to save time in the process. The tool is especially suitable for content creators, marketing teams, bloggers, entrepreneurs, and freelancers. It can also be helpful for students or anyone who needs support with wording. The AI adapts to different writing styles and requirements, making it versatile.

@@ -12,6 +12,9 @@ popularity: 0
 
 Twine ist ein Open-Source-Tool zur Erstellung interaktiver Geschichten und textbasierter Spiele. Es ermöglicht Autor:innen, verzweigte Handlungsstränge ohne Programmierkenntnisse zu gestalten und bietet gleichzeitig die Flexibilität, komplexe narrative Strukturen zu entwickeln. Twine erfreut sich großer Beliebtheit bei Schriftsteller:innen, Spieleentwickler:innen und Lehrkräften, die interaktive Inhalte erstellen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/twine-editorial.webp" alt="Illustration zu twine: Eine Erzählerin webt eine verzweigte Geschichte" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Twine geeignet?
 
 Twine richtet sich an alle, die interaktive Geschichten oder Spiele schreiben wollen, ohne tiefgehende Programmierkenntnisse zu benötigen. Es ist ideal für:

@@ -23,7 +23,7 @@ Der Einsatz lohnt sich, wenn Kontrolle über Extensions, Branding, Workspaces, A
 
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/theia-editorial.webp" alt="Illustration zu Theia: Entwicklungsumgebung als modulares Gebäude mit Terminal- und Code-Räumen" loading="lazy" decoding="async" />
+  <img src="/images/tools/theia-editorial.webp" alt="Illustration zu theia: Eine Astronomin erlebt eine Offenbarung in den Sternen" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

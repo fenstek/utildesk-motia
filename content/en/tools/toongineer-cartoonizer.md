@@ -17,6 +17,9 @@ translation: full
 
 Toongineer Cartoonizer is an AI-powered online tool that automatically turns photos into cartoon-like illustrations. It is especially well suited for users who want to create creative and artistic image edits without much effort. Using advanced algorithms, Toongineer Cartoonizer transforms simple portraits or landscape images into appealing cartoons that work well for social media, personal projects, or professional presentations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/toongineer-cartoonizer-editorial.webp" alt="Illustration for toongineer-cartoonizer: Artist turning reality into cartoons" loading="lazy" decoding="async" />
+</figure>
 ## Who is Toongineer Cartoonizer suitable for?
 
 Toongineer Cartoonizer is ideal for people without in-depth image editing knowledge who want to create stylized images quickly and easily. Creative content creators, social media managers, bloggers, and hobby photographers benefit especially from this tool. Small businesses and marketing agencies can also use Toongineer to create visually appealing content without having to work with complex design software. For professional illustrators, the tool can serve as a source of inspiration or for quick pre-visualization.

@@ -14,6 +14,9 @@ Trelby ist kein Zauberknopf, sondern ein Werkzeug mit einem ziemlich klaren Plat
 
 Bei Trelby lohnt sich ein Blick auf den Alltag nach der ersten Woche. Wenn das Tool dann noch genutzt wird, weil es Arbeit einfacher macht, ist das ein besseres Zeichen als ein starker Ersteindruck.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/trelby-editorial.webp" alt="Illustration zu trelby: Ein Drehbuchautor formt Szenen zu einer verfilmbaren Geschichte" loading="lazy" decoding="async" />
+</figure>
 ## Der praktische Kern
 
 Schreibtools sind dann nützlich, wenn sie Rohmaterial, Varianten und Struktur liefern, ohne die redaktionelle Verantwortung zu verschleiern. Für Trelby sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
