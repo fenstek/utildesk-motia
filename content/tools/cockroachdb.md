@@ -5,7 +5,7 @@ category: Developer
 price_model: Freemium
 tags: [database, cloud, data, developer-tools]
 official_url: "https://www.cockroachlabs.com/"
-popularity: 56
+popularity: 57
 ---
 
 # CockroachDB

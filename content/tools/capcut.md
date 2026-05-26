@@ -5,7 +5,7 @@ category: Video
 price_model: Freemium
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/nl-nl/"
-popularity: 59
+popularity: 61
 updated_at: 2026-05-21
 ---
 

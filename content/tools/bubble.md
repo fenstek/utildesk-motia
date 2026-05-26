@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://bubble.io/"
-popularity: 60
+popularity: 62
 ---
 
 # Bubble

@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [hr, hcm, payroll]
 official_url: "https://www.bamboohr.com/"
-popularity: 62
+popularity: 64
 ---
 
 # BambooHR

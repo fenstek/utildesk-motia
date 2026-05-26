@@ -5,7 +5,7 @@ category: Audio & Video
 price_model: Je nach Plan
 tags: [video, editing, audio]
 official_url: "https://filmora.wondershare.com/"
-popularity: 47
+popularity: 49
 description: Filmora ist ein Video- und Produktionswerkzeug für zugänglicher Videoschnitt für Creator, Tutorials, Social Clips und einfache Produktionen.
 ---
 # Filmora

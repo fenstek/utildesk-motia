@@ -5,7 +5,7 @@ category: Design
 price_model: Abonnement
 tags: [prototyping, design, collaboration, no-code]
 official_url: "https://proto.io/"
-popularity: 18
+popularity: 19
 ---
 
 # Proto.io

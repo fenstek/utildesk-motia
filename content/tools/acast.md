@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.acast.com/en"
-popularity: 80
+popularity: 82
 ---
 
 # Acast

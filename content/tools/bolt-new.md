@@ -5,7 +5,7 @@ category: Developer
 price_model: Je nach Plan
 tags: ["coding", "developer-tools"]
 official_url: "https://bolt.new"
-popularity: 61
+popularity: 63
 description: Bolt.new ist ein browserbasiertes KI-Entwicklungstool für schnelle Web-Prototypen, App-Ideen und iterative Code-Experimente.
 ---
 # Bolt.new

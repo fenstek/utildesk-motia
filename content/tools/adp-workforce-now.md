@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [payroll, hr, hcm]
 official_url: "https://www.adp.com/what-we-offer/products/adp-workforce-now.aspx"
-popularity: 75
+popularity: 77
 ---
 
 # ADP Workforce Now
