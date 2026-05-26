@@ -5,7 +5,7 @@ category: Developer
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.crowdstrike.com/en-us/platform/"
-popularity: 54
+popularity: 55
 ---
 
 # CrowdStrike Falcon

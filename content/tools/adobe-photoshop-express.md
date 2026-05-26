@@ -5,7 +5,7 @@ category: Design
 price_model: Freemium
 tags: [design, image]
 official_url: "https://www.adobe.com/express/feature/photo/editor"
-popularity: 76
+popularity: 78
 ---
 # Adobe Photoshop Express
 

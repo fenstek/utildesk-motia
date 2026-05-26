@@ -6,7 +6,7 @@ price_model: Abonnement
 tags: ["design", "vector", "creative", "illustration", "automation"]
 official_url: "https://www.adobe.com/products/illustrator.html"
 affiliate_url: "https://www.adobe.com/products/illustrator.html"
-popularity: 77
+popularity: 79
 description: Professionelles Vektorwerkzeug für Logos, Icons, Illustrationen, Layoutgrafiken und skalierbare Markenassets.
 ---
 

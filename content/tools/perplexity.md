@@ -8,7 +8,7 @@ official_url: "https://www.perplexity.ai"
 affiliate_url: "https://www.perplexity.ai"
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 87
+popularity: 88
 description: Perplexity ist eine KI-Such- und Antwortmaschine für schnelle Recherche mit Quellenhinweisen und Web-Kontext.
 ---
 # Perplexity
