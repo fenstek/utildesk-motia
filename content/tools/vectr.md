@@ -14,6 +14,9 @@ Bei Vectr lohnt sich ein nüchterner Blick. Das Tool wirkt am stärksten, wenn m
 
 Vectr lässt sich am besten über einen konkreten Engpass beurteilen. Wenn dieser Engpass nach einigen Tests messbar kleiner wird, ist das ein stärkeres Signal als jede lange Funktionsliste.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vectr-editorial.webp" alt="Illustration zu vectr: Artist shaping vectors into clean forms" loading="lazy" decoding="async" />
+</figure>
 ## Der praktische Kern
 
 Vectr muss in einem echten Beispiel zeigen, ob einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.

@@ -12,6 +12,9 @@ popularity: 0
 
 VivaCut ist ein vielseitiger Video-Editor, der sich besonders an Nutzer richtet, die professionelle Videos auf mobilen Geräten oder Desktop bearbeiten möchten. Mit einer Mischung aus benutzerfreundlichen Werkzeugen und fortschrittlichen Features unterstützt VivaCut sowohl Anfänger als auch erfahrene Videokünstler bei der Erstellung ansprechender Videos für soziale Medien, Präsentationen oder persönliche Projekte.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vivacut-editorial.webp" alt="Illustration zu vivacut: Filmmaker cutting an action sequence on the move" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VivaCut geeignet?
 
 VivaCut eignet sich ideal für Content Creator, Influencer, Social Media Manager und Hobbyfilmer, die ihre Videos mit kreativen Effekten, mehrspuriger Bearbeitung und AI-gestützten Tools verbessern wollen. Auch für Nutzer, die unterwegs schnell und unkompliziert schneiden möchten, bietet VivaCut eine flexible Plattform. Aufgrund der Freemium-Preisstruktur können Einsteiger kostenlos starten und bei Bedarf auf professionelle Funktionen zugreifen.

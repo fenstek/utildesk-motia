@@ -17,6 +17,9 @@ translation: full
 
 Udemy is a leading online learning platform with a wide range of courses across different subject areas, including many on artificial intelligence (AI) and related technologies. The platform allows learners to build new skills from the comfort of home and develop professionally or personally.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/udemy-editorial.webp" alt="Illustration for udemy: Instructor guiding learners through many subjects" loading="lazy" decoding="async" />
+</figure>
 ## Who is Udemy suitable for?
 
 Udemy is aimed at a broad audience: from beginners who want to learn the basics of a new subject area, to advanced learners who want to deepen their knowledge, and professionals seeking targeted upskilling. Udemy is especially suitable for people who want to learn flexibly and at their own pace, whether in AI, programming, data analysis, or other technical and non-technical disciplines.

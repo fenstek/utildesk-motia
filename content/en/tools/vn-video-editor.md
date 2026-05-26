@@ -16,6 +16,9 @@ translation: full
 
 VN Video Editor is a user-friendly and powerful video editing app available on both mobile devices and desktop computers. With a clean interface and versatile features, it makes it easy for beginners and advanced users alike to create and edit creative, professional videos.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vn-video-editor-editorial.webp" alt="Illustration for vn-video-editor: Creator editing a mobile video story" loading="lazy" decoding="async" />
+</figure>
 ## Who is VN Video Editor for?
 
 VN Video Editor is aimed at anyone who wants to edit videos easily and flexibly. The app is especially suitable for:

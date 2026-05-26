@@ -12,6 +12,9 @@ popularity: 0
 
 Das Vercel AI SDK ist ein Entwickler-Toolkit, das speziell für die Integration von KI-Funktionalitäten in Webanwendungen entwickelt wurde. Es erleichtert die Nutzung moderner KI-Modelle und bietet eine nahtlose Verbindung zu Vercels Hosting- und Deployment-Plattform. So können Entwickler KI-gestützte Features schnell und effizient in ihre Projekte einbinden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vercel-ai-editorial.webp" alt="Illustration zu vercel-ai: Developer launching an app into the sky" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Vercel AI SDK geeignet?
 
 Das Vercel AI SDK richtet sich vor allem an Webentwickler und Softwareingenieure, die KI-Technologien in ihre Anwendungen integrieren möchten, ohne sich tiefgehend mit der komplexen Infrastruktur dahinter beschäftigen zu müssen. Es ist ideal für Teams, die bereits Vercel als Hosting-Plattform nutzen und KI-gestützte Funktionen wie Chatbots, personalisierte Empfehlungen oder natürliche Sprachverarbeitung implementieren wollen. Auch Startups und Unternehmen, die schnelle Prototypen mit KI-Komponenten erstellen möchten, finden im SDK eine praktische Lösung.

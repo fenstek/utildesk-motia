@@ -16,6 +16,9 @@ translation: full
 
 Unity is a widely adopted, powerful game engine and development platform primarily used for creating 2D and 3D games as well as interactive applications. With a wide range of tools and an active community, Unity supports developers in delivering projects for various platforms including PC, mobile devices, consoles, and VR/AR. Its flexible pricing structure enables both beginners and professional studios to use the software.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/unity-editorial.webp" alt="Illustration for unity: Developer building a game universe" loading="lazy" decoding="async" />
+</figure>
 ## Who is Unity suitable for?
 
 Unity targets developers, designers, and creatives looking to build interactive content—especially games, but also simulations, VR/AR applications, and visual projects. The engine is suitable for beginners seeking a free entry point, as well as experienced developers wanting to build complex 3D worlds and cross-platform applications. Educational institutions, indie studios, and large companies all benefit from the extensive features and vast ecosystem.

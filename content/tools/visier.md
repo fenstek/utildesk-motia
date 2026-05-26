@@ -12,6 +12,9 @@ popularity: 0
 
 Visier ist eine KI-gestützte Analyseplattform, die Unternehmen dabei unterstützt, datenbasierte Entscheidungen zu treffen. Mit Fokus auf Automatisierung, Datenintegration und fortschrittliche Analytik bietet Visier Werkzeuge, die komplexe Datenmengen verständlich aufbereiten und wertvolle Insights liefern. Die Plattform eignet sich besonders für Personalabteilungen, Management-Teams und Datenanalysten, die ihre Prozesse durch intelligente Automatisierung und präzise Analysen verbessern möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/visier-editorial.webp" alt="Illustration zu visier: Strategist aligning people and roles" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Visier geeignet?
 
 Visier richtet sich an Unternehmen jeder Größe, die ihre Datenbestände effizient nutzen wollen, um strategische Entscheidungen zu optimieren. Besonders relevant ist die Lösung für:

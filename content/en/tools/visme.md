@@ -18,6 +18,9 @@ With Visme, it is worth taking a sober look at the everyday reality behind the p
 
 Before introducing it, the questions should be answered: which templates are brand-compliant, and how are approvals organized? Otherwise, the benefit remains hard to measure. The key caution: too many effects hide the message behind decoration.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/visme-editorial.webp" alt="Illustration for visme: Designer building visual stories from many elements" loading="lazy" decoding="async" />
+</figure>
 ## Who is Visme suitable for?
 
 Visme is a good option for organizations where presentations, infographics, and visual business content regularly take time. Getting started is especially worthwhile for marketing, HR, training, and internal communications. A clear owner should oversee the process.

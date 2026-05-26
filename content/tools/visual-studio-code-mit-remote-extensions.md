@@ -12,6 +12,9 @@ popularity: 0
 
 Visual Studio Code (VS Code) ist ein beliebter, kostenloser Code-Editor, der durch Remote-Extensions erweitert werden kann. Diese ermöglichen es Entwicklern, in entfernten Umgebungen zu arbeiten, ohne die gewohnte lokale Entwicklungsumgebung zu verlassen. So lassen sich Projekte auf Servern, virtuellen Maschinen oder Containern direkt bearbeiten und debuggen, was den Workflow erheblich vereinfacht und flexibler macht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/visual-studio-code-mit-remote-extensions-editorial.webp" alt="Illustration zu visual-studio-code-mit-remote-extensions: Developer working across distance via remote extensions" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Visual Studio Code mit Remote-Extensions geeignet?
 
 Visual Studio Code mit Remote-Extensions richtet sich vor allem an Softwareentwickler, DevOps-Teams und IT-Profis, die häufig mit verteilten Systemen, Cloud-Umgebungen oder Container-basierten Anwendungen arbeiten. Auch für Entwickler, die von verschiedenen Geräten aus auf ihre Projekte zugreifen möchten, bieten die Remote-Extensions eine praktische Lösung. Besonders vorteilhaft ist das Tool für Teams, die konsistente Entwicklungsumgebungen benötigen, ohne lokale Setups auf jedem Rechner einzurichten.

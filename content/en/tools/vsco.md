@@ -16,6 +16,9 @@ translation: full
 
 VSCO is a versatile photo and video editing app that stands out in particular for its high-quality filters and creative tools. It is aimed at photographers and creative users who want to give their images and videos professional-looking effects. The combination of ease of use and powerful features makes VSCO a popular tool in the photo editing community.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vsco-editorial.webp" alt="Illustration for vsco: Photographer crafting a visual aesthetic" loading="lazy" decoding="async" />
+</figure>
 ## Who is VSCO suitable for?
 
 VSCO is suitable for hobby photographers, influencers, content creators, and anyone who wants to edit their photos and videos in a simple, stylish way. Thanks to its intuitive user interface, it is suitable for both beginners and experienced users. Creative users who value aesthetic filters and creative editing also benefit from the app's many possibilities.

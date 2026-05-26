@@ -17,6 +17,9 @@ translation: full
 
 Valohai is an MLOps platform specifically designed to automate and manage the entire lifecycle of machine learning projects. The platform helps data scientists and developers train, version, and scale models efficiently, both in the cloud and on-premises. With Valohai, companies can deliver their AI projects faster and more reliably by ensuring repeatable workflows and centralized experiment management.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/valohai-editorial.webp" alt="Illustration for valohai: Researcher orchestrating machine-learning experiments" loading="lazy" decoding="async" />
+</figure>
 ## Who is Valohai suitable for?
 
 Valohai is aimed primarily at companies and teams that want to integrate machine learning models into production-ready applications and place value on automation, scalability, and reproducibility. In particular, data scientists, ML engineers, and developers who build and manage complex training pipelines benefit from the platform’s features. Organizations that want to run their AI projects in the cloud or in hybrid environments will also find Valohai to be a flexible solution. For beginners in machine learning, the platform may be somewhat complex because of its technical depth.

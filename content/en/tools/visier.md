@@ -16,6 +16,9 @@ translation: full
 
 Visier is an AI-powered analytics platform that helps companies make data-driven decisions. With a focus on automation, data integration, and advanced analytics, Visier provides tools that make complex data sets easier to understand and deliver valuable insights. The platform is especially well suited for HR departments, management teams, and data analysts who want to improve their processes through intelligent automation and precise analysis.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/visier-editorial.webp" alt="Illustration for visier: Strategist aligning people and roles" loading="lazy" decoding="async" />
+</figure>
 ## Who is Visier for?
 
 Visier is aimed at companies of all sizes that want to use their data assets efficiently to improve strategic decision-making. The solution is especially relevant for:

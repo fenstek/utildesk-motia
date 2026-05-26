@@ -11,6 +11,9 @@ popularity: 0
 
 VN Video Editor ist ein leicht zugänglicher Videoeditor für mobile und einfache Desktop-nahe Workflows. Er ist stark, wenn Clips schnell geschnitten, mit Musik, Text und Übergängen versehen und für Social Media exportiert werden sollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vn-video-editor-editorial.webp" alt="Illustration zu vn-video-editor: Creator editing a mobile video story" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VN Video Editor geeignet?
 
 VN passt zu Creators, kleinen Marken, Lernenden und Teams, die ohne schwere Postproduktion zügig Videos bauen. Für professionelle Farbkorrektur, komplexen Ton, große Projekte oder Studio-Workflows sind Premiere Pro, Final Cut Pro oder DaVinci Resolve besser geeignet.

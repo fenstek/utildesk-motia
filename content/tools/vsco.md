@@ -11,6 +11,9 @@ popularity: 0
 
 VSCO ist eine Foto- und Video-App mit starkem Fokus auf Looks, Filter und visuelle Stimmung. Sie ist weniger ein klassischer Editor als ein Werkzeug für konsistente Ästhetik und schnelle Veröffentlichung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vsco-editorial.webp" alt="Illustration zu vsco: Photographer crafting a visual aesthetic" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VSCO geeignet?
 
 VSCO passt zu Fotografen, Creators, Social-Media-Nutzern und Marken, die Bildstimmung und Farblook schnell kontrollieren möchten. Für komplexe Retusche, RAW-Archive oder produktionskritische Farbworkflows sind Lightroom oder Capture One stärker.

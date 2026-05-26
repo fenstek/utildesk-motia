@@ -13,6 +13,9 @@ Bei Visme lohnt ein nüchterner Blick auf den Alltag hinter dem Versprechen. Im 
 
 Vor der Einführung sollte die Frage beantwortet sein, welche Vorlagen markenkonform sind und wie Freigaben organisiert werden. Andernfalls bleibt der Nutzen schwer messbar. Der wichtigste Achtungspunkt: bei zu vielen Effekten die Aussage hinter Dekoration versteckt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/visme-editorial.webp" alt="Illustration zu visme: Designer building visual stories from many elements" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Visme geeignet?
 
 Visme ist eine gute Option für Organisationen, in denen Präsentationen, Infografiken und visuelle Business-Inhalte regelmäßig Zeit kostet. Der Einstieg lohnt sich besonders für Marketing, HR, Training und interne Kommunikation. Ein klarer Verantwortlicher sollte den Prozess begleiten.

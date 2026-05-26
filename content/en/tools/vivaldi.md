@@ -16,6 +16,9 @@ translation: full
 
 Vivaldi is a free web browser distinguished by its strong customization options and comprehensive features. Developed with a focus on productivity and privacy, Vivaldi offers users a flexible and efficient browsing experience that can be adapted to their individual needs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vivaldi-editorial.webp" alt="Illustration for vivaldi: Traveler navigating the web like a musical composition" loading="lazy" decoding="async" />
+</figure>
 ## Who is Vivaldi for?
 
 Vivaldi targets users who want more control over their browser and value privacy. It is especially suitable for productive users who manage multiple tabs and windows, want to optimize their workflow, and use features like notes or integrated tools directly within the browser. Technically savvy users looking for an alternative to mainstream browsers will also find Vivaldi appealing.

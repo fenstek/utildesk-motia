@@ -15,6 +15,9 @@ translation: full
 
 VN is a modern video editing app designed for both beginners and experienced users. With a clear focus on ease of use and powerful features, VN makes it possible to create high-quality videos for a range of purposes, from social media to professional projects. The app combines intuitive controls with flexible tools that make cutting, editing, and sharing videos easier.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vn-editorial.webp" alt="Illustration for vn: Editor assembling a film from fragments" loading="lazy" decoding="async" />
+</figure>
 ## Who is VN suitable for?
 
 VN is aimed at a broad audience: hobby filmmakers, content creators, social media influencers, small businesses, and anyone who wants to edit video content quickly and easily. VN is especially suitable for users looking for a free or low-cost solution without having to give up important features. It also offers a clear interface and helpful tools for beginners who want to gain their first experience with video editing.
