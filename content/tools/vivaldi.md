@@ -12,6 +12,9 @@ popularity: 0
 
 Vivaldi ist ein kostenloser Webbrowser, der sich durch hohe Anpassbarkeit und umfangreiche Funktionen auszeichnet. Entwickelt mit Fokus auf Produktivität und Privatsphäre, bietet Vivaldi Nutzern eine flexible und effiziente Browser-Erfahrung, die sich an individuelle Bedürfnisse anpassen lässt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vivaldi-editorial.webp" alt="Illustration zu vivaldi: Traveler navigating the web like a musical composition" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Vivaldi geeignet?
 
 Vivaldi richtet sich an Nutzer, die mehr Kontrolle über ihren Browser wünschen und Wert auf Datenschutz legen. Besonders geeignet ist der Browser für produktive Anwender, die mehrere Tabs und Fenster verwalten, ihren Workflow optimieren und Funktionen wie Notizen oder integrierte Tools direkt im Browser nutzen möchten. Auch für technisch versierte Nutzer, die eine Alternative zu den gängigen Browsern suchen, ist Vivaldi interessant.

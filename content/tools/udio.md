@@ -15,6 +15,9 @@ popularity: 0
 
 Udio ist ein innovatives Audio-Tool, das künstliche Intelligenz nutzt, um die Erstellung, Bearbeitung und Optimierung von Audioinhalten zu vereinfachen. Es richtet sich an Nutzer, die professionelle Audioaufnahmen erstellen oder verbessern möchten – von Podcastern über Musiker bis hin zu Content-Erstellern. Mit einer benutzerfreundlichen Oberfläche und leistungsfähigen Funktionen bietet Udio eine flexible Lösung für verschiedenste Audioanforderungen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/udio-editorial.webp" alt="Illustration zu udio: Composer shaping sound into a living scene" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Udio geeignet?
 
 Udio eignet sich ideal für:

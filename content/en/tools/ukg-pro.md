@@ -18,6 +18,9 @@ UKG Pro (Ultimate Kronos Group) is best understood less as a list of features an
 
 For evaluation, the key question is which payroll, compliance, and integration requirements are already defined before rollout. If that point remains unclear, even a strong tool can quickly feel larger than the actual benefit.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ukg-pro-editorial.webp" alt="Illustration for ukg-pro: Manager coordinating people and time" loading="lazy" decoding="async" />
+</figure>
 ## Who is UKG Pro suitable for?
 
 UKG Pro (Ultimate Kronos Group) is suitable for companies with many locations, shifts, and HR rules. If you only need a quick one-off action, keep the effort small and first check which payroll, compliance, and integration requirements are already defined before rollout.

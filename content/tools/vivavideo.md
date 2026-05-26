@@ -12,6 +12,9 @@ popularity: 0
 
 VivaVideo ist eine beliebte mobile Video-Editing-App, die speziell für Nutzer entwickelt wurde, die schnell und einfach Videos auf ihrem Smartphone erstellen und bearbeiten möchten. Mit einer benutzerfreundlichen Oberfläche und einer Vielzahl von Funktionen ermöglicht VivaVideo sowohl Anfängern als auch fortgeschrittenen Erstellern, kreative und professionelle Videos zu produzieren. Die App bietet eine breite Palette an Bearbeitungswerkzeugen, Effekten und Vorlagen, die das Erstellen von Videos für soziale Medien, Präsentationen oder persönliche Projekte erleichtern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vivavideo-editorial.webp" alt="Illustration zu vivavideo: Creator editing a travel montage on the move" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VivaVideo geeignet?
 
 VivaVideo richtet sich vor allem an mobile Nutzer, die Videos unkompliziert und flexibel bearbeiten wollen. Die App ist ideal für:

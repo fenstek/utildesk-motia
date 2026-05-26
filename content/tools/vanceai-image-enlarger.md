@@ -12,6 +12,9 @@ popularity: 0
 
 VanceAI Image Enlarger ist ein KI-gestütztes Tool zur Bildvergrößerung, das es ermöglicht, Fotos ohne Qualitätsverlust hochzuskalieren. Es nutzt fortschrittliche Algorithmen, um Details zu rekonstruieren und Unschärfen zu minimieren, wodurch Bilder für verschiedene Einsatzzwecke optimiert werden können. Ideal für Fotografen, Designer und alle, die Bilder in hoher Auflösung benötigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vanceai-image-enlarger-editorial.webp" alt="Illustration zu vanceai-image-enlarger: Conservator enlarging a small image into a large sharp scene" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VanceAI Image Enlarger geeignet?
 
 VanceAI Image Enlarger richtet sich an Nutzer, die Bilder vergrößern möchten, ohne dabei an Qualität einzubüßen. Dazu zählen:

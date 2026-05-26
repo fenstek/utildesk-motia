@@ -12,6 +12,9 @@ popularity: 0
 
 Vista Create ist eine vielseitige Online-Design-Plattform, die es Nutzern ermöglicht, ansprechende Grafiken, Videos und andere Marketinginhalte einfach und schnell zu erstellen. Mit einer großen Auswahl an Vorlagen und intuitiven Tools richtet sich Vista Create an Einsteiger und Profis gleichermaßen, die ohne umfangreiche Designkenntnisse professionelle Ergebnisse erzielen möchten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vista-create-editorial.webp" alt="Illustration zu vista-create: Designer preparing a brand launch" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Vista Create geeignet?
 
 Vista Create eignet sich ideal für kleine und mittelständische Unternehmen, Marketing-Teams, Social-Media-Manager, Content-Ersteller sowie Einzelpersonen, die visuelle Inhalte selbst gestalten möchten. Auch Freelancer und Agenturen profitieren von den vielfältigen Designmöglichkeiten und der einfachen Handhabung. Die Plattform ist besonders hilfreich für Nutzer, die schnell und effizient hochwertige Grafiken, Banner, Präsentationen oder Social-Media-Posts erstellen wollen, ohne teure Designsoftware zu benötigen.

@@ -12,6 +12,9 @@ popularity: 0
 
 Udemy ist eine weltweit führende Online-Lernplattform, die eine Vielzahl von Kursen in unterschiedlichen Bereichen anbietet, darunter auch viele zu Künstlicher Intelligenz (KI) und verwandten Technologien. Die Plattform ermöglicht es Lernenden, neue Fähigkeiten bequem von zu Hause aus zu erwerben und sich beruflich oder persönlich weiterzuentwickeln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/udemy-editorial.webp" alt="Illustration zu udemy: Instructor guiding learners through many subjects" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Udemy geeignet?
 
 Udemy richtet sich an ein breites Publikum: von Einsteigern, die Grundlagen in einem neuen Themengebiet erlernen möchten, über Fortgeschrittene, die ihre Kenntnisse vertiefen wollen, bis hin zu Fachleuten, die sich gezielt weiterbilden. Besonders geeignet ist Udemy für Menschen, die flexibel und selbstbestimmt lernen möchten, sei es im Bereich KI, Programmierung, Datenanalyse oder anderen technischen und nicht-technischen Disziplinen.

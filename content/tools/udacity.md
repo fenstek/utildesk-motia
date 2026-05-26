@@ -12,6 +12,9 @@ popularity: 0
 
 Udacity ist eine Online-Lernplattform, die sich auf technologische und berufliche Weiterbildung spezialisiert hat. Mit einem starken Fokus auf Entwickler, Data Science und IT bietet Udacity praxisorientierte Kurse und Nanodegree-Programme, die darauf abzielen, die Fähigkeiten der Lernenden direkt auf den Arbeitsmarkt anzupassen. Die Plattform kombiniert theoretisches Wissen mit praktischen Projekten, um ein tiefgehendes Verständnis und anwendbare Kompetenzen zu vermitteln.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/udacity-editorial.webp" alt="Illustration zu udacity: Student embarking on a long learning journey" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Udacity geeignet?
 
 Udacity richtet sich an Berufstätige, Studenten und Quereinsteiger, die ihre Kenntnisse im Bereich Softwareentwicklung, Datenanalyse, künstliche Intelligenz und verwandten Technologien vertiefen möchten. Besonders geeignet ist Udacity für Personen, die eine flexible Lernmethode bevorzugen und sich auf praxisnahe Inhalte konzentrieren wollen, um ihre Karrierechancen zu verbessern oder sich beruflich neu zu orientieren. Die Plattform eignet sich sowohl für Anfänger als auch für Fortgeschrittene, je nach gewähltem Kurs oder Programm.

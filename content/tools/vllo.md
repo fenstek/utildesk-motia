@@ -12,6 +12,9 @@ popularity: 0
 
 VLLO ist eine benutzerfreundliche Videobearbeitungs-App, die speziell für mobile Geräte entwickelt wurde. Sie ermöglicht es Anwendern, schnell und einfach professionelle Videos zu erstellen, zu bearbeiten und zu teilen – ganz ohne umfangreiche Vorkenntnisse. Dank einer intuitiven Oberfläche und vielseitigen Funktionen eignet sich VLLO sowohl für Anfänger als auch für fortgeschrittene Content-Ersteller.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vllo-editorial.webp" alt="Illustration zu vllo: Creator assembling a short video story" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VLLO geeignet?
 
 VLLO richtet sich an alle, die unterwegs oder zu Hause hochwertige Videos erstellen möchten, ohne auf komplexe Desktop-Software angewiesen zu sein. Besonders geeignet ist die App für:

@@ -12,6 +12,9 @@ popularity: 0
 
 Veed ist ein innovatives Online-Tool zur Videobearbeitung, das durch den Einsatz von Künstlicher Intelligenz (KI) eine einfache und schnelle Erstellung sowie Bearbeitung von Videos ermöglicht. Die Plattform richtet sich sowohl an Anfänger als auch an professionelle Nutzer, die ohne umfangreiche Vorkenntnisse ansprechende Videos produzieren möchten. Veed bietet eine Vielzahl an Funktionen, die von automatischer Untertitelung bis hin zu Effekten und Textintegration reichen, und erleichtert somit den gesamten Workflow der Videoproduktion.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/veed-editorial.webp" alt="Illustration zu veed: Editor shaping a video story from moving footage" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Veed geeignet?
 
 Veed eignet sich ideal für Content-Ersteller, Social-Media-Manager, Marketing-Teams, Lehrkräfte und alle, die regelmäßig Videos für Präsentationen, Tutorials oder soziale Netzwerke erstellen. Dank seiner benutzerfreundlichen Oberfläche können auch Personen ohne technische Vorkenntnisse schnell professionelle Ergebnisse erzielen. Besonders praktisch ist Veed für Nutzer, die Wert auf schnelle Bearbeitung und automatisierte Funktionen legen, um Zeit zu sparen und dennoch qualitativ hochwertige Videos zu produzieren.

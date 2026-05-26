@@ -18,6 +18,9 @@ VOSviewer helps make scientific literature visible as a network. Instead of trea
 
 Fits bibliometrics, research management, reviews, and analysis of scientific fields.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vosviewer-editorial.webp" alt="Illustration for vosviewer: Researcher exploring a knowledge map" loading="lazy" decoding="async" />
+</figure>
 ## Who is VOSviewer for?
 
 VOSviewer is most useful for teams and individuals that treat a bibliometric visualization tool as part of a real workflow, not as a novelty. Before adopting it, define the task it should accelerate and where human review still remains necessary.

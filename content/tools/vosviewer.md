@@ -14,6 +14,9 @@ VOSviewer hilft, wissenschaftliche Literatur als Netzwerk sichtbar zu machen. St
 
 Passend für Bibliometrie, Forschungsmanagement, Reviews und Analysen wissenschaftlicher Felder.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vosviewer-editorial.webp" alt="Illustration zu vosviewer: Researcher exploring a knowledge map" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VOSviewer geeignet?
 
 VOSviewer eignet sich für Forschende, Bibliometrie-Teams, Hochschulen und Research-Analysten, die wissenschaftliche Landschaften visuell erkunden möchten. Besonders stark ist es bei Co-Autorenschaft, Zitationsbeziehungen, Keyword-Clustern und der Frage, welche Themenfelder zusammenhängen.

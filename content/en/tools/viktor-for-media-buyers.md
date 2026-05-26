@@ -18,6 +18,9 @@ Viktor for Media Buyers is geared toward ad campaigns, performance signals, and 
 
 The value lies in response speed. When budgets, creatives, or KPIs start to shift, the information should not first appear in a report at the end of the week. Viktor aims to bring those signals closer to the working channel.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/viktor-for-media-buyers-editorial.webp" alt="Illustration for viktor-for-media-buyers: Media buyer steering an ad campaign" loading="lazy" decoding="async" />
+</figure>
 ## Who is Viktor for Media Buyers suitable for?
 
 Viktor is suitable for media buyers, performance marketing teams, and agencies that use Slack heavily and monitor campaigns closely. It is less suitable for teams without clear campaign ownership or without regular optimization cycles.

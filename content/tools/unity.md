@@ -12,6 +12,9 @@ popularity: 0
 
 Unity ist eine weitverbreitete, leistungsstarke Game-Engine und Entwicklungsplattform, die vor allem für die Erstellung von 2D- und 3D-Spielen sowie interaktiven Anwendungen genutzt wird. Mit einer breiten Palette von Tools und einer aktiven Community unterstützt Unity Entwickler dabei, Projekte für verschiedene Plattformen wie PC, Mobilgeräte, Konsolen und VR/AR umzusetzen. Die flexible Preisstruktur ermöglicht es sowohl Einsteigern als auch professionellen Studios, die Software zu nutzen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/unity-editorial.webp" alt="Illustration zu unity: Developer building a game universe" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Unity geeignet?
 
 Unity richtet sich an Entwickler, Designer und Kreative, die interaktive Inhalte erstellen möchten – insbesondere Spiele, aber auch Simulationen, VR/AR-Anwendungen und visuelle Projekte. Die Engine eignet sich sowohl für Anfänger, die eine kostenlose Einstiegsmöglichkeit suchen, als auch für erfahrene Entwickler, die komplexe 3D-Welten und plattformübergreifende Anwendungen realisieren wollen. Bildungseinrichtungen, Indie-Studios und große Unternehmen profitieren gleichermaßen von den umfangreichen Features und dem großen Ökosystem.

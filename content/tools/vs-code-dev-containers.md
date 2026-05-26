@@ -12,6 +12,9 @@ popularity: 0
 
 VS Code Dev Containers ist eine Open-Source-Erweiterung für Visual Studio Code, die es Entwicklern ermöglicht, Entwicklungsumgebungen in Docker-Containern zu definieren und zu nutzen. Diese Container bieten eine konsistente und isolierte Umgebung, die das Setup und die Verwaltung von Projekten vereinfacht und plattformübergreifend reproduzierbare Entwicklungsbedingungen schafft. Besonders in Teams und bei komplexen Projekten sorgt VS Code Dev Containers für einen schnelleren Einstieg und weniger Fehlkonfigurationen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vs-code-dev-containers-editorial.webp" alt="Illustration zu vs-code-dev-containers: Developer building inside a dev container" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist VS Code Dev Containers geeignet?
 
 VS Code Dev Containers richtet sich an Entwickler, die Wert auf eine einheitliche und leicht reproduzierbare Entwicklungsumgebung legen. Es ist besonders nützlich für:

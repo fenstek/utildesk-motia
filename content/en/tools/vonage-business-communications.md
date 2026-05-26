@@ -15,6 +15,9 @@ translation: full
 
 Vonage Business Communications is a cloud-based communications solution designed specifically for businesses to bring telephony, video conferencing, and customer service together on a single platform. With flexible features and integrations, the tool supports efficient collaboration and improves accessibility for teams and customers. It is aimed at companies looking for a reliable and scalable communications solution to optimize internal processes and customer interactions.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vonage-business-communications-editorial.webp" alt="Illustration for vonage-business-communications: Architect coordinating business communication" loading="lazy" decoding="async" />
+</figure>
 ## Who is Vonage Business Communications suitable for?
 
 Vonage Business Communications is suitable for small to medium-sized businesses that want to digitize their telephony and communication processes. The tool is particularly well suited for teams that handle a lot of customer contact, such as sales, customer service, or support. Companies with distributed locations or remote employees also benefit from the flexible cloud features. Depending on the industry, the system can be customized to meet specific communication requirements.

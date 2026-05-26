@@ -12,6 +12,9 @@ popularity: 0
 
 Verkada ist eine moderne Videoüberwachungslösung, die Cloud-basierte Sicherheitstechnologie mit intelligenter Hardware verbindet. Das System bietet Unternehmen eine einfache Möglichkeit, Sicherheitskameras zu verwalten, Videodaten zu analysieren und den Überblick über mehrere Standorte in Echtzeit zu behalten. Verkada kombiniert Videoüberwachung mit erweiterten Analysefunktionen und ermöglicht so eine bessere Kontrolle und schnellere Reaktion bei Sicherheitsvorfällen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/verkada-editorial.webp" alt="Illustration zu verkada: Security specialist guarding a connected property" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Verkada geeignet?
 
 Verkada richtet sich vor allem an Unternehmen und Organisationen, die eine skalierbare und zentral verwaltbare Videoüberwachungslösung benötigen. Besonders geeignet ist Verkada für:

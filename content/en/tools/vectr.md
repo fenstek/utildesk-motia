@@ -18,6 +18,9 @@ Vectr deserves a practical look. It is strongest when judged along a real workfl
 
 Vectr is best judged through a concrete bottleneck. If that bottleneck becomes measurably smaller after a few tests, that says more than a long feature list.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vectr-editorial.webp" alt="Illustration for vectr: Artist shaping vectors into clean forms" loading="lazy" decoding="async" />
+</figure>
 ## Practical core
 
 Creative tools save time when they make material malleable. They hurt when every result looks like the same template or filter.

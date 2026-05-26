@@ -16,6 +16,9 @@ translation: full
 
 Veed.io is a web-based video editing platform that stands out for its integration of AI-powered features. It allows users to create, edit, and optimize videos easily and quickly without requiring extensive technical knowledge. With an intuitive interface and a wide range of tools, Veed.io is suitable for both beginners and professional content creators.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/veed-io-editorial.webp" alt="Illustration for veed-io: Creator shaping a short video story" loading="lazy" decoding="async" />
+</figure>
 ## Who is Veed.io suitable for?
 
 Veed.io is designed for a broad audience, including:
