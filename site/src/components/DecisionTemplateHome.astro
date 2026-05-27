@@ -67,7 +67,6 @@ const copy = isEn
       navGuides: "Guides",
       navTools: "Tool index",
       navMethod: "Methodology",
-      navArchive: "Archive",
       masthead: "Decision Desk",
       mastSub: "An editorial decision desk for AI tools",
       issueLine: "Issue",
@@ -96,6 +95,8 @@ const copy = isEn
       taskTitle: "Start by task, not by vendor.",
       indexTitle: "Back matter: compact tool index.",
       footer: "No paid slots. No ranking theater. Editorial notes first, tools second.",
+      footerPrivacy: "Privacy",
+      footerImprint: "Imprint",
     }
   : {
       tabIssue: "↳ Ausgabe № 049",
@@ -105,7 +106,6 @@ const copy = isEn
       navGuides: "Ratgeber",
       navTools: "Tool-Index",
       navMethod: "Methodologie",
-      navArchive: "Archiv",
       masthead: "Entscheidungsblatt",
       mastSub: "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge",
       issueLine: "Ausgabe",
@@ -134,6 +134,8 @@ const copy = isEn
       taskTitle: "Nach Aufgabe starten, nicht nach Anbieter.",
       indexTitle: "Hintere Seiten: kompakter Tool-Index.",
       footer: "Keine bezahlten Slots. Kein Ranking-Theater. Erst redaktionelle Einordnung, dann Tools.",
+      footerPrivacy: "Datenschutz",
+      footerImprint: "Impressum",
     };
 
 const primaryGuide = guides[0];
@@ -182,7 +184,6 @@ const categoryRows = categories.slice(0, 8);
           <a href={`${prefix}/ratgeber/`}>{copy.navGuides}</a>
           <a href={`${prefix}/tools/`}>{copy.navTools}</a>
           <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
-          <a href={`${prefix}/feed.xml`}>{copy.navArchive}</a>
         </div>
         <div class="ds-nav-right">
           <a href={isEn ? "/" : "/en/"}>{isEn ? "DE" : "EN"}</a>
@@ -345,9 +346,18 @@ const categoryRows = categories.slice(0, 8);
       </section>
 
       <footer class="ds-footer">
-        <strong>utildesk</strong>
-        <span>{copy.footer}</span>
-        <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
+        <div class="ds-footer-brand">
+          <strong>utildesk</strong>
+          <span>{copy.footer}</span>
+        </div>
+        <nav class="ds-footer-links" aria-label={isEn ? "Footer navigation" : "Footer-Navigation"}>
+          <a href={`${prefix}/tools/`}>{copy.navTools}</a>
+          <a href={`${prefix}/ratgeber/`}>{copy.navGuides}</a>
+          <a href={`${prefix}/category/`}>{isEn ? "Categories" : "Kategorien"}</a>
+          <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
+          <a href={isEn ? "/en/privacy/" : "/datenschutz/"} rel="nofollow">{copy.footerPrivacy}</a>
+          <a href={isEn ? "/en/imprint/" : "/impressum/"} rel="nofollow">{copy.footerImprint}</a>
+        </nav>
       </footer>
     </div>
   </div>
