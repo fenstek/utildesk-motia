@@ -4105,3 +4105,61 @@ html[data-design="decision"]:not(:has(.ds-template)) .footer-links a {
     text-align: left;
   }
 }
+
+/* Ratgeber cards: keep editorial grid, but stop media and CTA from touching the frame. */
+html[data-design="decision"]:not(:has(.ds-template)) .rg-list {
+  gap: 1px;
+  padding-bottom: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card {
+  grid-template-columns: minmax(300px, 34%) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 28px 32px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-figure {
+  padding-right: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-media-stage {
+  min-height: 238px;
+  padding: 18px;
+  border: 1px solid #b6b1a0;
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at top left, rgba(197, 37, 28, 0.08), transparent 42%),
+    linear-gradient(145deg, rgba(238, 236, 228, 0.82), rgba(246, 244, 238, 0.96));
+  box-shadow: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-body {
+  min-width: 0;
+  padding: 8px 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-meta-bottom {
+  width: 100%;
+  padding-top: 8px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-arrow {
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 2px;
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .rg-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .rg-arrow {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
