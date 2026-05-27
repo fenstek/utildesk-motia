@@ -2380,3 +2380,79 @@ html[data-design="decision"] .theme-toggle {
 html[data-design="decision"] .terminal-stat {
   border-radius: 0;
 }
+
+/* Decision desk compact pass: keep the editorial paper style, but make it usable. */
+html[data-design="decision"] body {
+  background: var(--paper);
+}
+
+html[data-design="decision"] .site-header,
+html[data-design="decision"] main.container,
+html[data-design="decision"] .site-footer .container {
+  width: min(1440px, 100%);
+  box-shadow: none;
+}
+
+html[data-design="decision"] .site-header .container::after {
+  padding: 14px 0 16px;
+  font-size: clamp(2.45rem, 5.8vw, 5.9rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+
+html[data-design="decision"] .terminal-hero {
+  padding: clamp(28px, 5vw, 58px) 0 clamp(28px, 4.5vw, 52px);
+}
+
+html[data-design="decision"] .terminal-title {
+  max-width: 1120px;
+  margin: 14px 0 18px;
+  font-size: clamp(3rem, 6.2vw, 6.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+html[data-design="decision"] .terminal-copy {
+  max-width: 860px;
+  font-size: clamp(1.15rem, 1.55vw, 1.55rem);
+  line-height: 1.35;
+}
+
+html[data-design="decision"] .terminal-stats {
+  margin-top: 24px;
+}
+
+html[data-design="decision"] .terminal-stat {
+  padding: 14px 18px;
+}
+
+html[data-design="decision"] .terminal-stat strong {
+  font-size: clamp(1.9rem, 2.8vw, 2.75rem);
+}
+
+html[data-design="decision"] .home-guides,
+html[data-design="decision"] .home-intents,
+html[data-design="decision"] .terminal-main,
+html[data-design="decision"] .terminal-bottom {
+  padding-top: clamp(32px, 4vw, 48px);
+  padding-bottom: clamp(32px, 4vw, 48px);
+}
+
+@media (min-width: 1600px) {
+  html[data-design="decision"] .site-header,
+  html[data-design="decision"] main.container,
+  html[data-design="decision"] .site-footer .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 720px) {
+  html[data-design="decision"] .site-header .container::after {
+    padding: 12px 0 14px;
+    font-size: clamp(2.15rem, 12vw, 3.7rem);
+  }
+
+  html[data-design="decision"] .terminal-title {
+    font-size: clamp(2.65rem, 14vw, 4.2rem);
+  }
+}
