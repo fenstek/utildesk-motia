@@ -3901,7 +3901,7 @@ html[data-design="decision"]:not(:has(.ds-template)) .nav-actions {
 
 html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost,
 html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .design-toggle {
-  min-height: 28px;
+  min-height: 25px;
   padding: 4px 10px;
   border: 1px solid #b6b1a0;
   border-radius: 3px;
@@ -4162,4 +4162,41 @@ html[data-design="decision"]:not(:has(.ds-template)) .rg-arrow {
     margin-left: 0;
     padding-left: 0;
   }
+}
+
+/* Pixel parity pass: internal frame, badge and masthead meta match the homepage template. */
+html[data-design="decision"]:not(:has(.ds-template)) .decision-global-badge {
+  top: 20px;
+  min-height: 0;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #c5251c;
+  box-shadow:
+    0 0 0 6px rgba(12, 12, 10, 0.92),
+    0 4px 24px rgba(0,0,0,0.3);
+  font: 500 12px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header,
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead,
+html[data-design="decision"]:not(:has(.ds-template)) main.container,
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  border-left: 0;
+  border-right: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header {
+  border-bottom: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
+  border-bottom: 1px solid #d8d4c5;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
+  letter-spacing: normal;
 }
