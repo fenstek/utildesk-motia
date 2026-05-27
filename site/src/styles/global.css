@@ -3222,3 +3222,56 @@ html[data-design="decision"]:has(.ds-template) main.container {
     font-size: clamp(46px, 10vw, 68px);
   }
 }
+
+/* Sticky behavior fix: the masthead scrolls; only the compact menu stays sticky. */
+.decision-masthead {
+  display: none;
+}
+
+html[data-design="decision"] .site-header .container::after {
+  content: none;
+  display: none;
+}
+
+html[data-design="decision"] .decision-masthead {
+  display: block;
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 24px 56px 22px;
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  border-bottom: 3px double #0c0c0a;
+  background: var(--paper);
+  color: #0c0c0a;
+  text-align: center;
+}
+
+html[data-design="decision"] .decision-masthead span {
+  display: block;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(3.2rem, 6vw, 6.1rem);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+html[data-design="decision"] .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+html[data-design="decision"]:has(.ds-template) .decision-masthead {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  html[data-design="decision"] .decision-masthead {
+    padding: 18px 20px 18px;
+  }
+
+  html[data-design="decision"] .decision-masthead span {
+    font-size: clamp(2.35rem, 12vw, 4rem);
+  }
+}

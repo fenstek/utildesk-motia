@@ -140,12 +140,23 @@ const fallbackTasks = isEn
   ? [
       { title: "Compare privacy risk", desc: "Check hosting, retention and auditability before sensitive prompts.", href: `${prefix}/ratgeber/` },
       { title: "Choose a team default", desc: "Separate safe defaults from specialist tools for expert teams.", href: `${prefix}/category/` },
+      { title: "Prepare AI governance", desc: "Define owners, logs and review rituals before rollout.", href: `${prefix}/ratgeber/` },
+      { title: "Review vendor claims", desc: "Turn landing-page promises into concrete checks and evidence.", href: `${prefix}/tools/` },
+      { title: "Map automation risks", desc: "Find handoffs where agents need limits, logs and rollback.", href: `${prefix}/category/automatisierung/` },
+      { title: "Pick research tools", desc: "Compare source quality, citation habits and export workflows.", href: `${prefix}/tools/` },
     ]
   : [
       { title: "Datenschutzrisiko vergleichen", desc: "Hosting, Aufbewahrung und Nachvollziehbarkeit vor sensiblen Prompts prüfen.", href: `${prefix}/ratgeber/` },
       { title: "Team-Standard auswählen", desc: "Sichere Defaults von Spezialtools für Expertenteams trennen.", href: `${prefix}/category/` },
+      { title: "KI-Governance vorbereiten", desc: "Owner, Logs und Review-Rituale vor dem Rollout klären.", href: `${prefix}/ratgeber/` },
+      { title: "Vendor-Versprechen prüfen", desc: "Landingpage-Claims in konkrete Checks und Belege übersetzen.", href: `${prefix}/tools/` },
+      { title: "Automationsrisiken kartieren", desc: "Übergaben finden, bei denen Agenten Grenzen, Logs und Rollback brauchen.", href: `${prefix}/category/automatisierung/` },
+      { title: "Recherche-Tools auswählen", desc: "Quellenqualität, Zitierverhalten und Export-Workflows vergleichen.", href: `${prefix}/tools/` },
     ];
 const taskRows = [...tasks, ...fallbackTasks].slice(0, 6);
+while (taskRows.length < 6) {
+  taskRows.push(fallbackTasks[taskRows.length % fallbackTasks.length]);
+}
 const tagRows = tags.slice(0, 12);
 const categoryRows = categories.slice(0, 8);
 ---

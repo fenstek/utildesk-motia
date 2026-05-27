@@ -217,6 +217,7 @@ const designLabels = JSON.stringify({
   toDecision: locale === "en" ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
   toClassic: locale === "en" ? "Switch to classic design" : "Zum klassischen Design wechseln",
 });
+const decisionMastheadTitle = locale === "en" ? "Decision Desk." : "Entscheidungsblatt.";
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
@@ -411,6 +412,12 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
       </div>
 
     </header>
+
+    <div class="decision-masthead" aria-hidden="true">
+
+      <span>{decisionMastheadTitle}</span>
+
+    </div>
 
 
 
