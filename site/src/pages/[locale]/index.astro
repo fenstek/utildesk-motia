@@ -109,8 +109,57 @@ const bySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
 const latestTools = [
   ...pinnedSlugs.map((slug) => bySlug.get(slug)).filter(Boolean),
   ...enabledTools.filter((tool) => !pinnedSlugs.includes(tool.slug)).sort((a, b) => b.popularity - a.popularity),
-].slice(0, 12);
+].slice(0, 6);
 const allRatgeber = await listRatgeberEntries("en");
+const editorialRatgeberSlugs = [
+  "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+  "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+  "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+  "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+];
+const ratgeberBySlug = new Map(allRatgeber.map((article) => [article.slug, article]));
+const editorialRatgeber = [
+  ...editorialRatgeberSlugs.map((slug) => ratgeberBySlug.get(slug)).filter(Boolean),
+  ...allRatgeber.filter((article) => !editorialRatgeberSlugs.includes(article.slug)),
+].slice(0, 4);
+const taskIntents = [
+  {
+    title: "Write code with AI",
+    desc: "Understand agents, review pressure and AI-code boundaries before a pull request reaches production.",
+    href: "/en/ratgeber/ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen/",
+    links: [
+      { label: "Codex", href: "/en/tools/openai-codex/" },
+      { label: "Copilot", href: "/en/tools/github-copilot/" },
+    ],
+  },
+  {
+    title: "Use AI tools safely",
+    desc: "Put privacy, no-login tools and team rules into a practical workflow frame.",
+    href: "/en/ratgeber/ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat/",
+    links: [
+      { label: "ChatGPT", href: "/en/tools/chatgpt/" },
+      { label: "DeepL", href: "/en/tools/deepl/" },
+    ],
+  },
+  {
+    title: "Automate workflows",
+    desc: "Choose tools by job: invoices, PDFs, repeatable automations and process handoffs.",
+    href: "/en/ratgeber/beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast/",
+    links: [
+      { label: "Zapier", href: "/en/tools/zapier/" },
+      { label: "n8n", href: "/en/tools/n8n/" },
+    ],
+  },
+  {
+    title: "Check research and sources",
+    desc: "Treat research tools, AI search and crawler agents as evidence workflows, not answer machines.",
+    href: "/en/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter/",
+    links: [
+      { label: "Perplexity", href: "/en/tools/perplexity/" },
+      { label: "You.com", href: "/en/tools/you-com/" },
+    ],
+  },
+];
 const recentRatgeber = allRatgeber.slice(0, 3);
 const tagFrequency = new Map<string, number>();
 enabledTools.forEach((tool) => {
@@ -180,8 +229,8 @@ const homepageSchemas = [
 
 <BaseLayout
   locale="en"
-  title="AI Tools Directory 2026 - Utildesk"
-  description="Curated AI tools directory 2026 with automation, productivity tools and practical guides in English."
+  title="Understand, compare and use AI tools safely - Utildesk"
+  description="Practical guides, curated tool comparisons and clear recommendations for AI tools, automation and safer workflows."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/en/" />
@@ -193,23 +242,82 @@ const homepageSchemas = [
   <section class="terminal-hero">
     <div class="terminal-hero-grid">
       <div class="terminal-hero-main">
-        <div class="terminal-kicker">[ manifest_en ]</div>
+        <div class="terminal-kicker">[ guide_first ]</div>
         <h1 class="terminal-title">
-          AI Tools Directory 2026,<br />
-          <span class="terminal-accent">not another sponsored maze.</span>
+          Understand AI tools,<br />
+          <span class="terminal-accent">compare them and use them safely.</span>
         </h1>
         <p class="terminal-copy">
           <span class="terminal-comment"># </span>
-          Explore tools, categories and editorial guides in English. The German catalogue remains the source of truth;
-          this layer makes Utildesk useful for international readers and AI agents.
+          Practical guides, curated tool comparisons and clear recommendations for real workflows:
+          from AI coding and privacy to automation, research and productivity.
         </p>
+        <div class="terminal-hero-actions" aria-label="Quick entry points">
+          <a class="btn-primary" href="/en/ratgeber/">Read guides</a>
+          <a class="btn-ghost" href="/en/tools/">Compare tools</a>
+        </div>
         <div class="terminal-stats" aria-label="Utildesk English statistics">
-          <div class="terminal-stat"><strong>{enabledTools.length}</strong><span>tools</span></div>
+          <div class="terminal-stat"><strong>{enabledTools.length}</strong><span>tools listed</span></div>
           <div class="terminal-stat"><strong>{CATEGORIES.length}</strong><span>categories</span></div>
-          <div class="terminal-stat"><strong>{allRatgeber.length}</strong><span>guides live</span></div>
+          <div class="terminal-stat"><strong>{allRatgeber.length}</strong><span>guides</span></div>
           <div class="terminal-stat"><strong>0</strong><span>ads</span></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="home-guides" aria-labelledby="home-guides-title">
+    <div class="home-section-head">
+      <div>
+        <p class="terminal-kicker">[ editorial_picks ]</p>
+        <h2 id="home-guides-title">Recommended guides</h2>
+        <p>Editorial entry points that connect tool choice with practice, risk and concrete workflows.</p>
+      </div>
+      <a class="btn-ghost" href="/en/ratgeber/">Open all guides</a>
+    </div>
+    <div class="home-guide-grid">
+      {editorialRatgeber.map((article, index) => (
+        <article class="home-guide-card">
+          {article.data.coverImage ? (
+            <a class="home-guide-image" href={`/en/ratgeber/${article.slug}/`} aria-label={article.data.title}>
+              <img src={article.data.coverImage} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+            </a>
+          ) : null}
+          <div class="home-guide-body">
+            <div class="home-guide-meta">
+              <span>{article.data.eyebrow || article.data.category || "Guide"}</span>
+              {article.data.readTime ? <span>{article.data.readTime} min</span> : null}
+            </div>
+            <h3><a href={`/en/ratgeber/${article.slug}/`}>{article.data.title}</a></h3>
+            <p>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="home-intents" aria-labelledby="home-intents-title">
+    <div class="home-section-head">
+      <div>
+        <p class="terminal-kicker">[ start_by_task ]</p>
+        <h2 id="home-intents-title">Start by task</h2>
+        <p>If you do not know the tool name yet, start with the problem you want to solve.</p>
+      </div>
+      <a class="btn-ghost" href="/en/category/">Browse categories</a>
+    </div>
+    <div class="home-intent-grid">
+      {taskIntents.map((intent) => (
+        <article class="home-intent-card">
+          <a class="home-intent-main" href={intent.href}>
+            <span class="home-intent-marker">-&gt;</span>
+            <strong>{intent.title}</strong>
+            <span>{intent.desc}</span>
+          </a>
+          <div class="home-intent-links">
+            {intent.links.map((link) => <a href={link.href}>{link.label}</a>)}
+          </div>
+        </article>
+      ))}
     </div>
   </section>
 
@@ -217,7 +325,7 @@ const homepageSchemas = [
     <span class="terminal-catbar-label">categories:</span>
     <div class="terminal-catbar-list">
       <a class="terminal-pill is-active" href="/en/tools/"><span>*</span><span>all</span><span>{enabledTools.length}</span></a>
-      {categoryStats.slice(0, 11).map((category) => (
+      {categoryStats.slice(0, 7).map((category) => (
         <a class="terminal-pill" href={`/en/category/${category.slug}/`}>
           <span>#</span>
           <span>{category.titleEn}</span>
@@ -255,11 +363,11 @@ const homepageSchemas = [
       </p>
     </aside>
 
-    <section class="terminal-results" aria-label="Selected tools">
+    <section class="terminal-results" aria-label="Compact tool selection">
       <div class="terminal-results-head">
-        <h2 class="terminal-results-title">results.selected</h2>
+        <h2 class="terminal-results-title">tools.shortlist</h2>
         <span class="terminal-results-meta">{latestTools.length} of {enabledTools.length} tools</span>
-        <span class="terminal-results-meta">sort: curated + popularity</span>
+        <span class="terminal-results-meta">shortlist by editorial + demand</span>
       </div>
       <div class="terminal-table-head" aria-hidden="true">
         <span>idx</span>
@@ -301,7 +409,7 @@ const homepageSchemas = [
         ))}
       </div>
       <div class="terminal-results-foot">
-        <span>next: <a href="/en/tools/">open full directory</a></span>
+        <span>next: <a href="/en/tools/">open all tools</a></span>
         <span>/</span>
         <span>machine: <a href="/en/api/tools.json">/en/api/tools.json</a></span>
       </div>
