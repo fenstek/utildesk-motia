@@ -97,6 +97,7 @@ const copy = isEn
       footer: "No paid slots. No ranking theater. Editorial notes first, tools second.",
       footerPrivacy: "Privacy",
       footerImprint: "Imprint",
+      footerFeed: "Feed",
     }
   : {
       tabIssue: "↳ Ausgabe № 049",
@@ -136,6 +137,7 @@ const copy = isEn
       footer: "Keine bezahlten Slots. Kein Ranking-Theater. Erst redaktionelle Einordnung, dann Tools.",
       footerPrivacy: "Datenschutz",
       footerImprint: "Impressum",
+      footerFeed: "Feed",
     };
 
 const primaryGuide = guides[0];
@@ -357,6 +359,7 @@ const categoryRows = categories.slice(0, 8);
           <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
           <a href={isEn ? "/en/privacy/" : "/datenschutz/"} rel="nofollow">{copy.footerPrivacy}</a>
           <a href={isEn ? "/en/imprint/" : "/impressum/"} rel="nofollow">{copy.footerImprint}</a>
+          <a href={`${prefix}/feed.xml`}>{copy.footerFeed}</a>
         </nav>
       </footer>
     </div>
