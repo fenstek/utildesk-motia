@@ -3100,9 +3100,9 @@ html[data-design="decision"]:has(.ds-template) main.container {
 }
 
 .ds-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
   align-items: flex-start;
-  justify-content: space-between;
   gap: 48px;
   padding: 40px 56px 56px;
   background: #0c0c0a;
@@ -3114,7 +3114,7 @@ html[data-design="decision"]:has(.ds-template) main.container {
 .ds-footer-brand {
   display: grid;
   gap: 14px;
-  max-width: 720px;
+  max-width: none;
 }
 
 .ds-footer-home {
@@ -3133,12 +3133,22 @@ html[data-design="decision"]:has(.ds-template) main.container {
   color: #b6b1a0;
 }
 
+.ds-footer-note {
+  display: grid;
+  gap: 4px;
+}
+
+.ds-footer-note span {
+  display: block;
+  white-space: nowrap;
+}
+
 .ds-footer-links {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, max-content);
   justify-content: flex-end;
+  align-items: start;
   gap: 14px 22px;
-  min-width: min(560px, 45%);
   text-align: right;
 }
 
@@ -3176,6 +3186,33 @@ html[data-design="decision"]:has(.ds-template) main.container {
   .ds-front-main h2,
   .ds-mast-main h1 {
     font-size: clamp(48px, 12vw, 84px);
+  }
+}
+
+@media (max-width: 1280px) {
+  .ds-footer {
+    grid-template-columns: minmax(0, 1fr) max-content;
+  }
+
+  .ds-footer-links {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media (max-width: 760px) {
+  .ds-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-footer-note span {
+    white-space: normal;
+  }
+
+  .ds-footer-links {
+    justify-content: start;
+    text-align: left;
   }
 }
 
@@ -3683,15 +3720,19 @@ html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
 }
 
 html[data-design="decision"]:not(:has(.ds-template)) .footer-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
   align-items: flex-start;
   gap: 48px;
 }
 
 html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, max-content);
   justify-content: flex-end;
+  align-items: start;
   gap: 14px 22px;
+  text-align: right;
 }
 
 html[data-design="decision"]:not(:has(.ds-template)) .footer-links a,
@@ -3704,6 +3745,14 @@ html[data-design="decision"]:not(:has(.ds-template)) .footer-brand {
 html[data-design="decision"]:not(:has(.ds-template)) .footer-copy {
   margin-top: 24px;
   color: #b6b1a0;
+}
+
+@media (max-width: 1280px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(4, auto);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -3738,5 +3787,14 @@ html[data-design="decision"]:not(:has(.ds-template)) .footer-copy {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
+    justify-content: start;
+    text-align: left;
   }
 }

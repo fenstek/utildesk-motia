@@ -96,6 +96,7 @@ const copy = isEn
       taskTitle: "Start by task, not by vendor.",
       indexTitle: "Back matter: compact tool index.",
       footer: "No paid slots. No ranking theater. Editorial notes first, tools second.",
+      footerLines: ["No paid slots. No ranking theater.", "Editorial notes first, tools second."],
       footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
       footerPrivacy: "Privacy",
       footerImprint: "Imprint",
@@ -137,6 +138,7 @@ const copy = isEn
       taskTitle: "Nach Aufgabe starten, nicht nach Anbieter.",
       indexTitle: "Hintere Seiten: kompakter Tool-Index.",
       footer: "Keine bezahlten Slots. Kein Ranking-Theater. Erst redaktionelle Einordnung, dann Tools.",
+      footerLines: ["Keine bezahlten Slots. Kein Ranking-Theater.", "Erst redaktionelle Einordnung, dann Tools."],
       footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
       footerPrivacy: "Datenschutz",
       footerImprint: "Impressum",
@@ -353,7 +355,9 @@ const categoryRows = categories.slice(0, 8);
       <footer class="ds-footer">
         <div class="ds-footer-brand">
           <a class="ds-footer-home" href={`${prefix}/`} aria-label={isEn ? "Utildesk home" : "Utildesk Startseite"}>utildesk</a>
-          <span>{copy.footer}</span>
+          <span class="ds-footer-note">
+            {copy.footerLines.map((line) => <span>{line}</span>)}
+          </span>
           <span>{copy.footerCopyright}</span>
         </div>
         <nav class="ds-footer-links" aria-label={isEn ? "Footer navigation" : "Footer-Navigation"}>
