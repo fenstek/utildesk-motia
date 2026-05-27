@@ -51,11 +51,11 @@ export function humanizeTagLabel(tag: string): string {
     .filter(Boolean)
     .map((part) => {
       const lower = part.toLowerCase();
+      if (/^\d+d$/.test(lower)) return lower.toUpperCase();
+      if (["api", "aws", "cms", "cli", "crm", "daw", "etl", "gpu", "hcm", "hpc", "ibm", "ide", "ios", "llm", "ml", "mlops", "nmt", "nlp", "ocr", "pdf", "psa", "qa", "raw", "rpa", "seo", "sql", "ugc", "ui", "ux", "vms", "web", "xdr"].includes(lower)) {
+        return lower.toUpperCase();
+      }
       if (lower === "ai") return "AI";
-      if (lower === "seo") return "SEO";
-      if (lower === "ui") return "UI";
-      if (lower === "ux") return "UX";
-      if (lower === "crm") return "CRM";
       return lower.charAt(0).toUpperCase() + lower.slice(1);
     })
     .join(" ");
