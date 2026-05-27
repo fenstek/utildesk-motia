@@ -148,8 +148,57 @@ const pinnedSlugSet = new Set(pinnedSlugs);
 const restTools = enabledTools
   .filter((tool) => !pinnedSlugSet.has(tool.slug))
   .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
-const latestTools = [...pinnedTools, ...restTools].slice(0, 12);
+const latestTools = [...pinnedTools, ...restTools].slice(0, 6);
 const allRatgeber = await listRatgeberEntries();
+const editorialRatgeberSlugs = [
+  "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+  "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+  "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+  "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+];
+const ratgeberBySlug = new Map(allRatgeber.map((article) => [article.slug, article]));
+const editorialRatgeber = [
+  ...editorialRatgeberSlugs.map((slug) => ratgeberBySlug.get(slug)).filter(Boolean),
+  ...allRatgeber.filter((article) => !editorialRatgeberSlugs.includes(article.slug)),
+].slice(0, 4);
+const taskIntents = [
+  {
+    title: "Code mit KI schreiben",
+    desc: "Agenten, Reviews und Grenzen von AI-Code verstehen, bevor ein Pull Request produktiv wird.",
+    href: "/ratgeber/ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen/",
+    links: [
+      { label: "Codex", href: "/tools/openai-codex/" },
+      { label: "Copilot", href: "/tools/github-copilot/" },
+    ],
+  },
+  {
+    title: "Sichere KI-Tools nutzen",
+    desc: "Datenschutz, No-Login-Tools und Team-Regeln pragmatisch einordnen.",
+    href: "/ratgeber/ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat/",
+    links: [
+      { label: "ChatGPT", href: "/tools/chatgpt/" },
+      { label: "DeepL", href: "/tools/deepl/" },
+    ],
+  },
+  {
+    title: "Workflows automatisieren",
+    desc: "Von Rechnungen und PDFs bis zu stabilen Automationen: Tools nach Aufgabe auswählen.",
+    href: "/ratgeber/beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast/",
+    links: [
+      { label: "Zapier", href: "/tools/zapier/" },
+      { label: "n8n", href: "/tools/n8n/" },
+    ],
+  },
+  {
+    title: "Recherche und Quellen prüfen",
+    desc: "Recherche-Tools, AI Search und Agenten-Crawler nicht als magische Antwortmaschine behandeln.",
+    href: "/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter/",
+    links: [
+      { label: "Perplexity", href: "/tools/perplexity/" },
+      { label: "You.com", href: "/tools/you-com/" },
+    ],
+  },
+];
 const recentRatgeber = allRatgeber.slice(0, 3);
 
 const normalizedToolTerms = (tool) =>
@@ -213,8 +262,8 @@ const homepageSchemas = [
 ---
 
 <BaseLayout
-  title="KI-Tools Verzeichnis 2026 - Utildesk"
-  description="Kuratiertes KI-Tools Verzeichnis 2026 mit AI-Tools, Automatisierung, Produktivität und Ratgeber ohne bezahlte Platzierungen."
+  title="KI-Tools verstehen, vergleichen und sicher einsetzen - Utildesk"
+  description="Praxisnahe Ratgeber, kuratierte Tool-Vergleiche und klare Empfehlungen für KI-Tools, Automatisierung und sichere Workflows."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/" />
@@ -226,20 +275,24 @@ const homepageSchemas = [
   <section class="terminal-hero">
     <div class="terminal-hero-grid">
       <div class="terminal-hero-main">
-        <div class="terminal-kicker">[ manifest_001 ]</div>
+        <div class="terminal-kicker">[ ratgeber_first ]</div>
         <h1 class="terminal-title">
-          KI-Tools Verzeichnis 2026,<br />
-          <span class="terminal-accent">keine KI-Shopping-Mall.</span>
+          KI-Tools verstehen,<br />
+          <span class="terminal-accent">vergleichen und sicher einsetzen.</span>
         </h1>
         <p class="terminal-copy">
           <span class="terminal-comment"># </span>
-          Kuratiert statt zugemuellt: Tools, Kategorien und Ratgeber werden als nutzbares Arbeitsverzeichnis
-          organisiert, nicht als endlose Sponsored-Liste.
+          Praxisnahe Ratgeber, kuratierte Tool-Vergleiche und klare Empfehlungen für echte Workflows:
+          von AI-Coding und Datenschutz bis Automatisierung, Recherche und Produktivität.
         </p>
+        <div class="terminal-hero-actions" aria-label="Schnelle Einstiege">
+          <a class="btn-primary" href="/ratgeber/">Ratgeber lesen</a>
+          <a class="btn-ghost" href="/tools/">Tools vergleichen</a>
+        </div>
         <div class="terminal-stats" aria-label="Utildesk Kennzahlen">
           <div class="terminal-stat">
             <strong>{enabledTools.length}</strong>
-            <span>werkzeuge</span>
+            <span>tools im katalog</span>
           </div>
           <div class="terminal-stat">
             <strong>{CATEGORIES.length}</strong>
@@ -247,7 +300,7 @@ const homepageSchemas = [
           </div>
           <div class="terminal-stat">
             <strong>{allRatgeber.length}</strong>
-            <span>guides live</span>
+            <span>ratgeber</span>
           </div>
           <div class="terminal-stat">
             <strong>0</strong>
@@ -255,6 +308,61 @@ const homepageSchemas = [
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="home-guides" aria-labelledby="home-guides-title">
+    <div class="home-section-head">
+      <div>
+        <p class="terminal-kicker">[ editorial_picks ]</p>
+        <h2 id="home-guides-title">Empfohlene Ratgeber</h2>
+        <p>Redaktionelle Einstiege, die Tool-Auswahl mit Praxis, Risiken und konkreten Workflows verbinden.</p>
+      </div>
+      <a class="btn-ghost" href="/ratgeber/">Alle Ratgeber öffnen</a>
+    </div>
+    <div class="home-guide-grid">
+      {editorialRatgeber.map((article, index) => (
+        <article class="home-guide-card">
+          {article.data.coverImage ? (
+            <a class="home-guide-image" href={`/ratgeber/${article.slug}/`} aria-label={article.data.title}>
+              <img src={article.data.coverImage} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+            </a>
+          ) : null}
+          <div class="home-guide-body">
+            <div class="home-guide-meta">
+              <span>{article.data.eyebrow || article.data.category || "Guide"}</span>
+              {article.data.readTime ? <span>{article.data.readTime} min</span> : null}
+            </div>
+            <h3><a href={`/ratgeber/${article.slug}/`}>{article.data.title}</a></h3>
+            <p>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="home-intents" aria-labelledby="home-intents-title">
+    <div class="home-section-head">
+      <div>
+        <p class="terminal-kicker">[ nach_aufgabe_starten ]</p>
+        <h2 id="home-intents-title">Nach Aufgabe starten</h2>
+        <p>Wenn du nicht den Tool-Namen suchst, sondern ein Problem lösen willst: Starte hier.</p>
+      </div>
+      <a class="btn-ghost" href="/category/">Kategorien ansehen</a>
+    </div>
+    <div class="home-intent-grid">
+      {taskIntents.map((intent) => (
+        <article class="home-intent-card">
+          <a class="home-intent-main" href={intent.href}>
+            <span class="home-intent-marker">-&gt;</span>
+            <strong>{intent.title}</strong>
+            <span>{intent.desc}</span>
+          </a>
+          <div class="home-intent-links">
+            {intent.links.map((link) => <a href={link.href}>{link.label}</a>)}
+          </div>
+        </article>
+      ))}
     </div>
   </section>
 
@@ -266,7 +374,7 @@ const homepageSchemas = [
         <span>alle</span>
         <span>{enabledTools.length}</span>
       </a>
-      {categoryStats.slice(0, 11).map((category) => (
+      {categoryStats.slice(0, 7).map((category) => (
         <a class="terminal-pill" href={`/category/${category.slug}/`}>
           <span>#</span>
           <span>{category.title}</span>
@@ -304,11 +412,11 @@ const homepageSchemas = [
       </p>
     </aside>
 
-    <section class="terminal-results" aria-label="Ausgewaehlte Tools">
+    <section class="terminal-results" aria-label="Kompakte Tool-Auswahl">
       <div class="terminal-results-head">
-        <h2 class="terminal-results-title">results.selected</h2>
+        <h2 class="terminal-results-title">tools.kurzliste</h2>
         <span class="terminal-results-meta">{latestTools.length} von {enabledTools.length} Werkzeugen</span>
-        <span class="terminal-results-meta">sort: curated + popularity</span>
+        <span class="terminal-results-meta">kurzliste nach redaktion + nachfrage</span>
       </div>
       <div class="terminal-table-head" aria-hidden="true">
         <span>idx</span>
@@ -354,7 +462,7 @@ const homepageSchemas = [
         ))}
       </div>
       <div class="terminal-results-foot">
-        <span>next: <a href="/tools/">vollstaendiges verzeichnis oeffnen</a></span>
+        <span>next: <a href="/tools/">alle tools öffnen</a></span>
         <span>/</span>
         <span>machine: <a href="/api/tools.json">/api/tools.json</a></span>
       </div>
