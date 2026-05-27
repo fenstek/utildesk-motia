@@ -150,6 +150,9 @@ const restTools = enabledTools
   .filter((tool) => !pinnedSlugSet.has(tool.slug))
   .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
 const latestTools = [...pinnedTools, ...restTools].slice(0, 6);
+const templateTools = Array.from(
+  new Map([...latestTools, ...restTools].map((tool) => [tool.slug, tool])).values()
+).slice(0, 8);
 const allRatgeber = await listRatgeberEntries();
 const editorialRatgeberSlugs = [
   "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
@@ -278,7 +281,7 @@ const homepageSchemas = [
     toolsCount={enabledTools.length}
     categories={categoryStats}
     guides={editorialRatgeber}
-    tools={latestTools}
+    tools={templateTools}
     tasks={taskIntents}
     tags={topTags}
   />

@@ -72,7 +72,7 @@ const copy = isEn
       rightStats: `${guides.length || 25} decisions · ${toolsCount} tools indexed`,
       noAds: "0 paid placements",
       kicker: `Decision № ${issueNo} · AI tool review`,
-      headline: "Should my team use AI tools without losing control?",
+      headline: "Should my team adopt AI tools without losing control?",
       dek: "We read the tools before you adopt them: practical verdicts, risks and next steps instead of another endless directory.",
       verdictLabel: "Editorial verdict",
       verdict: "Recommend with safeguards.",
@@ -85,6 +85,10 @@ const copy = isEn
       minutes: "min read",
       evidence: "Evidence file",
       evidenceText: "What we compare before a tool enters the front page.",
+      factsLabel: "At a glance",
+      factOne: "Start with one workflow, not the full stack.",
+      factTwo: "No production use without review ownership.",
+      factThree: "Prefer boring logs over impressive demos.",
       antiTitle: "What we would not recommend this week.",
       taskTitle: "Start by task, not by vendor.",
       indexTitle: "Back matter: compact tool index.",
@@ -106,7 +110,7 @@ const copy = isEn
       rightStats: `${guides.length || 25} Entscheidungen · ${toolsCount} Tools indiziert`,
       noAds: "0 bezahlte Platzierungen",
       kicker: `Entscheidung № ${issueNo} · AI-Tool Review`,
-      headline: "Soll mein Team KI-Tools nutzen, ohne die Kontrolle zu verlieren?",
+      headline: "Soll mein Team KI-Tools kontrolliert einführen?",
       dek: "Wir lesen die Tools, bevor du sie einführst: klare Urteile, Risiken und nächste Schritte statt noch einer endlosen Linkliste.",
       verdictLabel: "Verdikt der Redaktion",
       verdict: "Empfehlen — mit Guardrails.",
@@ -119,6 +123,10 @@ const copy = isEn
       minutes: "min Lesezeit",
       evidence: "Beweismaterial",
       evidenceText: "Was wir vergleichen, bevor ein Tool auf die Titelseite kommt.",
+      factsLabel: "Auf einen Blick",
+      factOne: "Mit einem Workflow starten, nicht mit dem ganzen Stack.",
+      factTwo: "Keine Produktivnutzung ohne klare Review-Verantwortung.",
+      factThree: "Lieber langweilige Logs als beeindruckende Demos.",
       antiTitle: "Was wir diese Woche nicht empfehlen würden.",
       taskTitle: "Nach Aufgabe starten, nicht nach Anbieter.",
       indexTitle: "Hintere Seiten: kompakter Tool-Index.",
@@ -128,7 +136,16 @@ const copy = isEn
 const primaryGuide = guides[0];
 const guideCards = guides.slice(0, 3);
 const toolRows = tools.slice(0, 8);
-const taskRows = tasks.slice(0, 6);
+const fallbackTasks = isEn
+  ? [
+      { title: "Compare privacy risk", desc: "Check hosting, retention and auditability before sensitive prompts.", href: `${prefix}/ratgeber/` },
+      { title: "Choose a team default", desc: "Separate safe defaults from specialist tools for expert teams.", href: `${prefix}/category/` },
+    ]
+  : [
+      { title: "Datenschutzrisiko vergleichen", desc: "Hosting, Aufbewahrung und Nachvollziehbarkeit vor sensiblen Prompts prüfen.", href: `${prefix}/ratgeber/` },
+      { title: "Team-Standard auswählen", desc: "Sichere Defaults von Spezialtools für Expertenteams trennen.", href: `${prefix}/category/` },
+    ];
+const taskRows = [...tasks, ...fallbackTasks].slice(0, 6);
 const tagRows = tags.slice(0, 12);
 const categoryRows = categories.slice(0, 8);
 ---
@@ -223,6 +240,12 @@ const categoryRows = categories.slice(0, 8);
             <h3>{copy.avoidLabel}</h3>
             <p>× {copy.avoidOne}</p>
             <p>× {copy.avoidTwo}</p>
+          </div>
+          <div class="ds-box ds-box-facts">
+            <h3>{copy.factsLabel}</h3>
+            <p>01 · {copy.factOne}</p>
+            <p>02 · {copy.factTwo}</p>
+            <p>03 · {copy.factThree}</p>
           </div>
         </aside>
       </section>
