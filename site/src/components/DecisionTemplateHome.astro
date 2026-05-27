@@ -57,6 +57,7 @@ const isEn = locale === "en";
 const prefix = isEn ? "/en" : "";
 const issueNo = "049";
 const today = "27.05.2026";
+const copyrightYear = 2026;
 const totalGuides = typeof guidesCount === "number" ? guidesCount : guides.length;
 const copy = isEn
   ? {
@@ -95,6 +96,7 @@ const copy = isEn
       taskTitle: "Start by task, not by vendor.",
       indexTitle: "Back matter: compact tool index.",
       footer: "No paid slots. No ranking theater. Editorial notes first, tools second.",
+      footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
       footerPrivacy: "Privacy",
       footerImprint: "Imprint",
       footerFeed: "Feed",
@@ -135,6 +137,7 @@ const copy = isEn
       taskTitle: "Nach Aufgabe starten, nicht nach Anbieter.",
       indexTitle: "Hintere Seiten: kompakter Tool-Index.",
       footer: "Keine bezahlten Slots. Kein Ranking-Theater. Erst redaktionelle Einordnung, dann Tools.",
+      footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
       footerPrivacy: "Datenschutz",
       footerImprint: "Impressum",
       footerFeed: "Feed",
@@ -351,6 +354,7 @@ const categoryRows = categories.slice(0, 8);
         <div class="ds-footer-brand">
           <a class="ds-footer-home" href={`${prefix}/`} aria-label={isEn ? "Utildesk home" : "Utildesk Startseite"}>utildesk</a>
           <span>{copy.footer}</span>
+          <span>{copy.footerCopyright}</span>
         </div>
         <nav class="ds-footer-links" aria-label={isEn ? "Footer navigation" : "Footer-Navigation"}>
           <a href={`${prefix}/tools/`}>{copy.navTools}</a>

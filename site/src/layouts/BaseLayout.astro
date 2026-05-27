@@ -17,6 +17,7 @@ import {
   getAlternatePaths,
   getLocaleFromPath,
   hrefFor,
+  normalizePath,
   LOCALE_META,
   type Locale,
   toAbsoluteLocalizedUrl,
@@ -72,6 +73,43 @@ const feedXmlHref = locale === "en" ? "/en/feed.xml" : "/feed.xml";
 const feedJsonHref = locale === "en" ? "/en/feed.json" : "/feed.json";
 const toolsApiHref = locale === "en" ? "/en/api/tools.json" : "/api/tools.json";
 const ratgeberApiHref = locale === "en" ? "/en/api/ratgeber.json" : "/api/ratgeber.json";
+const currentYear = new Date().getFullYear();
+const normalizedPathname = normalizePath(pathname);
+const decisionIssueLabel = locale === "en" ? "↳ Issue № 049" : "↳ Ausgabe № 049";
+const decisionNavHome = locale === "en" ? "Decisions" : "Entscheidungen";
+const decisionNavTools = locale === "en" ? "Tool Index" : "Tool-Index";
+const decisionNavGuides = locale === "en" ? "Guides" : "Ratgeber";
+const decisionNavMethod = locale === "en" ? "Methodology" : "Methodologie";
+const decisionOldVersion = locale === "en" ? "Old version" : "Alte Version";
+const decisionDeck = locale === "en"
+  ? "An editorial decision desk for AI tools"
+  : "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge";
+const decisionEdited = locale === "en" ? "Edited in Germany" : "Redigiert in Deutschland";
+const decisionMastheadTitle = (() => {
+  const deTitles: Record<string, string> = {
+    "/tools/": "Tool-Index.",
+    "/ratgeber/": "Ratgeber.",
+    "/category/": "Kategorien.",
+    "/methodologie/": "Methodologie.",
+    "/impressum/": "Impressum.",
+    "/datenschutz/": "Datenschutz.",
+  };
+  const enTitles: Record<string, string> = {
+    "/en/tools/": "Tool Index.",
+    "/en/ratgeber/": "Guides.",
+    "/en/category/": "Categories.",
+    "/en/methodology/": "Methodology.",
+    "/en/imprint/": "Imprint.",
+    "/en/privacy/": "Privacy.",
+  };
+  const exact = locale === "en" ? enTitles[normalizedPathname] : deTitles[normalizedPathname];
+  if (exact) return exact;
+  if (/^(?:\/en)?\/tools\/tag\/[^/]+\/$/.test(normalizedPathname)) return locale === "en" ? "Tag Index." : "Tag-Index.";
+  if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(normalizedPathname)) return locale === "en" ? "Tool File." : "Tool-Akte.";
+  if (/^(?:\/en)?\/ratgeber\/[^/]+\/$/.test(normalizedPathname)) return locale === "en" ? "Guide." : "Ratgeber.";
+  if (/^(?:\/en)?\/category\/[^/]+\/$/.test(normalizedPathname)) return locale === "en" ? "Category." : "Kategorie.";
+  return locale === "en" ? "Decision Desk." : "Entscheidungsblatt.";
+})();
 const DEFAULT_SOCIAL_IMAGE = "/social/utildesk-og.jpg";
 const socialImageSource = propImage || DEFAULT_SOCIAL_IMAGE;
 const socialImageUrl = /^(?:https?:)?\/\//i.test(socialImageSource)
@@ -212,12 +250,11 @@ const themeLabels = JSON.stringify({
   toLight: ui.themeToLight,
 });
 const designLabels = JSON.stringify({
-  decision: locale === "en" ? "decision desk" : "entscheidungsblatt",
-  classic: locale === "en" ? "classic" : "klassisch",
+  decision: decisionOldVersion,
+  classic: locale === "en" ? "Decision desk" : "Entscheidungsblatt",
   toDecision: locale === "en" ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
-  toClassic: locale === "en" ? "Switch to classic design" : "Zum klassischen Design wechseln",
+  toClassic: locale === "en" ? "Switch to old design" : "Zur alten Version wechseln",
 });
-const decisionMastheadTitle = locale === "en" ? "Decision Desk." : "Entscheidungsblatt.";
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
@@ -328,6 +365,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
   <body>
     <a href="#main-content" class="skip-link">{ui.skipLink}</a>
+    <a class="decision-global-badge" href={homeHref} aria-label={locale === "en" ? "Go to home" : "Zur Startseite"}>{decisionIssueLabel}</a>
 
     <header class="site-header">
 
@@ -345,7 +383,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           <div class="hdr-meta" aria-label={ui.systemStatus}>
 
-            <span>v4.2.0-catalog</span>
+            <span>v4.3.0-decisions</span>
 
             <span class="dot">/</span>
 
@@ -363,21 +401,21 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           <div class="nav-links">
 
-            <a href={homeHref}>{ui.navHome}</a>
+            <a href={homeHref}>{decisionNavHome}</a>
 
-            <a href={toolsHref}>{ui.navTools}</a>
+            <a href={ratgeberHref}>{decisionNavGuides}</a>
 
-            <a href={ratgeberHref}>{ui.navGuides}</a>
+            <a href={toolsHref}>{decisionNavTools}</a>
 
-            <a href={categoryHref}>{ui.navCategories}</a>
+            <a href={methodologyHref}>{decisionNavMethod}</a>
 
           </div>
 
           <div class="nav-actions">
 
-            <a class="btn-ghost" href={llmsHref}>{ui.llms}</a>
+            <a class="btn-ghost" href={languageSwitchTarget} hreflang={locale === "en" ? "de" : "en"} aria-label={ui.languageLabel}>{locale === "en" ? "DE" : "EN"}</a>
 
-            <a class="btn-ghost" href={languageSwitchTarget} hreflang={locale === "en" ? "de" : "en"} aria-label={ui.languageLabel}>{ui.languageSwitch}</a>
+            <a class="btn-ghost" href={llmsHref}>⌘ K</a>
 
             <button type="button" class="theme-toggle btn-ghost" id="theme-toggle" aria-label={ui.themeToggleLabel} aria-pressed="false" title={ui.themeToggleLabel} data-theme-labels={themeLabels}>
 
@@ -387,7 +425,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             <button type="button" class="design-toggle btn-ghost" id="design-toggle" aria-pressed="true" title={locale === "en" ? "Switch site design" : "Site-Design wechseln"} data-design-toggle data-design-labels={designLabels}>
 
-              <span data-design-label>{locale === "en" ? "decision desk" : "entscheidungsblatt"}</span>
+              <span data-design-label>{decisionOldVersion}</span>
 
             </button>
 
@@ -415,7 +453,20 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
     <div class="decision-masthead" aria-hidden="true">
 
-      <span>{decisionMastheadTitle}</span>
+      <div class="decision-masthead-side">
+        {decisionIssueLabel.replace("↳ ", "")}<br />
+        Mittwoch · 27. Mai 2026<br />
+        {decisionEdited}
+      </div>
+      <div class="decision-masthead-main">
+        <span>{decisionMastheadTitle}</span>
+        <p>{decisionDeck}</p>
+      </div>
+      <div class="decision-masthead-side decision-masthead-side-right">
+        25 {locale === "en" ? "decisions" : "Entscheidungen"}<br />
+        1171 {locale === "en" ? "tools indexed" : "Tools indiziert"}<br />
+        0 {locale === "en" ? "paid placements" : "bezahlte Platzierungen"}
+      </div>
 
     </div>
 
@@ -457,11 +508,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             <a href={imprintHref} rel="nofollow">{ui.footerImprint}</a>
 
+            <a href={feedXmlHref}>Feed</a>
+
           </div>
 
         </div>
 
-        <p class="footer-copy">&copy; {new Date().getFullYear()} Utildesk. {ui.footerCopy}</p>
+        <p class="footer-copy">Copyright &copy; {currentYear} Utildesk. {ui.footerCopy}</p>
 
       </div>
 
@@ -790,4 +843,3 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
   </body>
 
 </html>
-
