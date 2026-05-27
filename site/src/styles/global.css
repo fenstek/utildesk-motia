@@ -3092,6 +3092,7 @@ html[data-design="decision"]:has(.ds-template) main.container {
 
 .ds-footer {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 48px;
   padding: 40px 56px 56px;
@@ -3101,8 +3102,32 @@ html[data-design="decision"]:has(.ds-template) main.container {
   font-size: 12px;
 }
 
+.ds-footer-brand {
+  display: grid;
+  gap: 14px;
+  max-width: 720px;
+}
+
 .ds-footer span {
   color: #b6b1a0;
+}
+
+.ds-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px 22px;
+  min-width: min(560px, 45%);
+  text-align: right;
+}
+
+.ds-footer-links a {
+  white-space: nowrap;
+}
+
+.ds-footer-links a:hover,
+.ds-footer-links a:focus-visible {
+  color: #e0261d;
 }
 
 @media (max-width: 1100px) {
