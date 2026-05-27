@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import DecisionTemplateHome from "../../components/DecisionTemplateHome.astro";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
@@ -239,6 +240,17 @@ const homepageSchemas = [
     ))}
   </Fragment>
 
+  <DecisionTemplateHome
+    locale="en"
+    toolsCount={enabledTools.length}
+    categories={categoryStats}
+    guides={editorialRatgeber}
+    tools={latestTools}
+    tasks={taskIntents}
+    tags={topTags}
+  />
+
+  <div class="legacy-home">
   <section class="terminal-hero">
     <div class="terminal-hero-grid">
       <div class="terminal-hero-main">
@@ -506,4 +518,5 @@ const homepageSchemas = [
       </div>
     </div>
   </section>
+  </div>
 </BaseLayout>

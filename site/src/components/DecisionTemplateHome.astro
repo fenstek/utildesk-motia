@@ -1,0 +1,316 @@
+---
+interface ToolItem {
+  slug: string;
+  title: string;
+  category?: string | null;
+  price_model?: string | null;
+  excerpt?: string | null;
+  tags?: string[];
+}
+
+interface ArticleItem {
+  slug: string;
+  data: {
+    title: string;
+    excerpt?: string;
+    eyebrow?: string;
+    category?: string;
+    readTime?: number;
+  };
+}
+
+interface CategoryItem {
+  slug: string;
+  title: string;
+  titleEn?: string;
+  count: number;
+}
+
+interface TaskItem {
+  title: string;
+  desc: string;
+  href: string;
+  links?: { label: string; href: string }[];
+}
+
+const {
+  locale = "de",
+  toolsCount = 0,
+  categories = [],
+  guides = [],
+  tools = [],
+  tasks = [],
+  tags = [],
+} = Astro.props as {
+  locale?: "de" | "en";
+  toolsCount: number;
+  categories: CategoryItem[];
+  guides: ArticleItem[];
+  tools: ToolItem[];
+  tasks: TaskItem[];
+  tags: [string, number][];
+};
+
+const isEn = locale === "en";
+const prefix = isEn ? "/en" : "";
+const issueNo = "049";
+const today = "27.05.2026";
+const copy = isEn
+  ? {
+      tabIssue: "↳ Issue № 049",
+      tabClassic: "↳ Classic design",
+      brand: "utildesk · decision desk",
+      navDecisions: "Decisions",
+      navGuides: "Guides",
+      navTools: "Tool index",
+      navMethod: "Methodology",
+      navArchive: "Archive",
+      masthead: "Decision Desk",
+      mastSub: "An editorial decision desk for AI tools",
+      issueLine: "Issue",
+      edited: "Edited in Berlin",
+      rightStats: `${guides.length || 25} decisions · ${toolsCount} tools indexed`,
+      noAds: "0 paid placements",
+      kicker: `Decision № ${issueNo} · AI tool review`,
+      headline: "Should my team use AI tools without losing control?",
+      dek: "We read the tools before you adopt them: practical verdicts, risks and next steps instead of another endless directory.",
+      verdictLabel: "Editorial verdict",
+      verdict: "Recommend with safeguards.",
+      verdictText: "Start with narrow workflows, clear review rules and tools your team can still understand after the first week.",
+      toolsLabel: "Tools in this decision",
+      avoidLabel: "Do not start with",
+      avoidOne: "autonomous agents without audit trails",
+      avoidTwo: "no-login tools for internal documents",
+      read: "Read the current decision",
+      minutes: "min read",
+      evidence: "Evidence file",
+      evidenceText: "What we compare before a tool enters the front page.",
+      antiTitle: "What we would not recommend this week.",
+      taskTitle: "Start by task, not by vendor.",
+      indexTitle: "Back matter: compact tool index.",
+      footer: "No paid slots. No ranking theater. Editorial notes first, tools second.",
+    }
+  : {
+      tabIssue: "↳ Ausgabe № 049",
+      tabClassic: "↳ Klassisches Design",
+      brand: "utildesk · entscheidungsblatt",
+      navDecisions: "Entscheidungen",
+      navGuides: "Ratgeber",
+      navTools: "Tool-Index",
+      navMethod: "Methodologie",
+      navArchive: "Archiv",
+      masthead: "Entscheidungsblatt",
+      mastSub: "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge",
+      issueLine: "Ausgabe",
+      edited: "Redigiert in Berlin",
+      rightStats: `${guides.length || 25} Entscheidungen · ${toolsCount} Tools indiziert`,
+      noAds: "0 bezahlte Platzierungen",
+      kicker: `Entscheidung № ${issueNo} · AI-Tool Review`,
+      headline: "Soll mein Team KI-Tools nutzen, ohne die Kontrolle zu verlieren?",
+      dek: "Wir lesen die Tools, bevor du sie einführst: klare Urteile, Risiken und nächste Schritte statt noch einer endlosen Linkliste.",
+      verdictLabel: "Verdikt der Redaktion",
+      verdict: "Empfehlen — mit Guardrails.",
+      verdictText: "Starte mit engen Workflows, klaren Review-Regeln und Werkzeugen, die dein Team nach der ersten Woche noch versteht.",
+      toolsLabel: "Tools in dieser Entscheidung",
+      avoidLabel: "Nicht damit starten",
+      avoidOne: "autonome Agenten ohne Audit-Trail",
+      avoidTwo: "No-Login-Tools für interne Dokumente",
+      read: "Aktuelle Entscheidung lesen",
+      minutes: "min Lesezeit",
+      evidence: "Beweismaterial",
+      evidenceText: "Was wir vergleichen, bevor ein Tool auf die Titelseite kommt.",
+      antiTitle: "Was wir diese Woche nicht empfehlen würden.",
+      taskTitle: "Nach Aufgabe starten, nicht nach Anbieter.",
+      indexTitle: "Hintere Seiten: kompakter Tool-Index.",
+      footer: "Keine bezahlten Slots. Kein Ranking-Theater. Erst redaktionelle Einordnung, dann Tools.",
+    };
+
+const primaryGuide = guides[0];
+const guideCards = guides.slice(0, 3);
+const toolRows = tools.slice(0, 8);
+const taskRows = tasks.slice(0, 6);
+const tagRows = tags.slice(0, 12);
+const categoryRows = categories.slice(0, 8);
+---
+
+<section class="ds-template" aria-label={copy.masthead}>
+  <div class="ds-tabbar">
+    <button type="button" class="active">{copy.tabIssue}</button>
+    <button
+      type="button"
+      data-design-toggle
+      data-design-labels={JSON.stringify({
+        decision: isEn ? "decision desk" : "entscheidungsblatt",
+        classic: isEn ? "classic" : "klassisch",
+        toDecision: isEn ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
+        toClassic: isEn ? "Switch to classic design" : "Zum klassischen Design wechseln",
+      })}
+    >
+      <span data-design-label>{copy.tabClassic}</span>
+    </button>
+  </div>
+
+  <div class="ds-stage">
+    <div class="ds-frame">
+      <nav class="ds-nav" aria-label={isEn ? "Decision navigation" : "Entscheidungsnavigation"}>
+        <div class="ds-nav-left">
+          <strong>{copy.brand}</strong>
+          <span>v4.3.0-decisions</span>
+          <span><i></i>live · {today}</span>
+        </div>
+        <div class="ds-nav-links">
+          <a href={`${prefix}/`}>{copy.navDecisions}</a>
+          <a href={`${prefix}/ratgeber/`}>{copy.navGuides}</a>
+          <a href={`${prefix}/tools/`}>{copy.navTools}</a>
+          <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
+          <a href={`${prefix}/feed.xml`}>{copy.navArchive}</a>
+        </div>
+        <div class="ds-nav-right">
+          <a href={isEn ? "/" : "/en/"}>{isEn ? "DE" : "EN"}</a>
+          <a href={`${prefix}/llms.txt`}>⌘ K</a>
+        </div>
+      </nav>
+
+      <header class="ds-masthead">
+        <div class="ds-mast-side">
+          {copy.issueLine} {issueNo}<br />
+          Mittwoch · 27. Mai 2026<br />
+          {copy.edited}
+        </div>
+        <div class="ds-mast-main">
+          <h1>{copy.masthead}<span>.</span></h1>
+          <p>{copy.mastSub}</p>
+        </div>
+        <div class="ds-mast-side ds-mast-side-right">
+          {copy.rightStats}<br />
+          {copy.noAds}<br />
+          ISSN — wir arbeiten dran
+        </div>
+      </header>
+
+      <section class="ds-front">
+        <article class="ds-front-main">
+          <p class="ds-kicker">{copy.kicker}</p>
+          <h2>{copy.headline}</h2>
+          <p class="ds-dek">{copy.dek}</p>
+
+          <div class="ds-verdict">
+            <span class="ds-verdict-label">{copy.verdictLabel}</span>
+            <span class="ds-verdict-glyph">✔</span>
+            <div>
+              <strong>{copy.verdict}</strong>
+              <p>{copy.verdictText}</p>
+            </div>
+          </div>
+
+          <div class="ds-front-actions">
+            <a href={primaryGuide ? `${prefix}/ratgeber/${primaryGuide.slug}/` : `${prefix}/ratgeber/`}>{copy.read}</a>
+            <span>{primaryGuide?.data.readTime || 8} {copy.minutes}</span>
+          </div>
+        </article>
+
+        <aside class="ds-front-aside">
+          <div class="ds-box">
+            <h3>{copy.toolsLabel}</h3>
+            {toolRows.slice(0, 3).map((tool, index) => (
+              <a href={`${prefix}/tools/${tool.slug}/`}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{tool.title}</strong>
+              </a>
+            ))}
+          </div>
+          <div class="ds-box ds-box-warn">
+            <h3>{copy.avoidLabel}</h3>
+            <p>× {copy.avoidOne}</p>
+            <p>× {copy.avoidTwo}</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="ds-stack" aria-label={isEn ? "Recent decisions" : "Aktuelle Entscheidungen"}>
+        {guideCards.map((article, index) => (
+          <article>
+            <div class="ds-card-no">№ {String(issueNo - index).padStart(3, "0")}</div>
+            <h3><a href={`${prefix}/ratgeber/${article.slug}/`}>{article.data.title}</a></h3>
+            <p>{article.data.excerpt || copy.evidenceText}</p>
+            <div class="ds-card-foot">
+              <span>{article.data.eyebrow || article.data.category || "AI"}</span>
+              <span>{article.data.readTime || 7} min</span>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <section class="ds-evidence">
+        <div>
+          <p class="ds-kicker">↳ {copy.evidence}</p>
+          <h2>{copy.evidenceText}</h2>
+        </div>
+        <div class="ds-evidence-grid">
+          <span>{toolsCount}</span><p>Tools</p>
+          <span>{categories.length}</span><p>{isEn ? "Categories" : "Kategorien"}</p>
+          <span>{guides.length}</span><p>{isEn ? "Guides" : "Ratgeber"}</p>
+          <span>0</span><p>Ads</p>
+        </div>
+      </section>
+
+      <section class="ds-anti">
+        <h2>{copy.antiTitle}</h2>
+        <div>
+          <article><span>nicht empfehlen</span><strong>AI-Detector-Tools</strong><p>False positives machen sie als Entscheidungsgrundlage unbrauchbar.</p></article>
+          <article><span>überbewertet</span><strong>Autonome Agenten</strong><p>Ohne Scope, Logs und Review werden Demos schneller als Prozesse.</p></article>
+          <article><span>abwarten</span><strong>AI-first SaaS-Resterampe</strong><p>GPT-Wrapper mit Abo-Preis brauchen mehr Belege als Landingpages.</p></article>
+        </div>
+      </section>
+
+      <section class="ds-tasks">
+        <p class="ds-kicker">↳ Aufgaben</p>
+        <h2>{copy.taskTitle}</h2>
+        <div>
+          {taskRows.map((task, index) => (
+            <a href={task.href}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{task.title}</strong>
+              <em>{task.desc}</em>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="ds-index">
+        <div class="ds-index-head">
+          <p class="ds-kicker">↳ Tool-Index</p>
+          <h2>{copy.indexTitle}</h2>
+        </div>
+        <div class="ds-index-grid">
+          <div class="ds-tool-table">
+            {toolRows.map((tool, index) => (
+              <a href={`${prefix}/tools/${tool.slug}/`}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{tool.title}</strong>
+                <em>{tool.category || "AI"}</em>
+                <small>{tool.price_model || "n/a"}</small>
+              </a>
+            ))}
+          </div>
+          <aside>
+            <h3>Tags</h3>
+            <div class="ds-tags">
+              {tagRows.map(([tag, count]) => <a href={`${prefix}/tools/tag/${tag.toLowerCase().replaceAll(" ", "-")}/`}>#{tag}<span>{count}</span></a>)}
+            </div>
+            <h3>{isEn ? "Categories" : "Kategorien"}</h3>
+            <div class="ds-cats">
+              {categoryRows.map((cat) => <a href={`${prefix}/category/${cat.slug}/`}><span>{isEn ? cat.titleEn : cat.title}</span><strong>{cat.count}</strong></a>)}
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <footer class="ds-footer">
+        <strong>utildesk</strong>
+        <span>{copy.footer}</span>
+        <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
+      </footer>
+    </div>
+  </div>
+</section>
