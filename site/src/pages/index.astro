@@ -152,7 +152,7 @@ const restTools = enabledTools
 const latestTools = [...pinnedTools, ...restTools].slice(0, 6);
 const templateTools = Array.from(
   new Map([...latestTools, ...restTools].map((tool) => [tool.slug, tool])).values()
-).slice(0, 8);
+).slice(0, 12);
 const allRatgeber = await listRatgeberEntries();
 const editorialRatgeberSlugs = [
   "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",

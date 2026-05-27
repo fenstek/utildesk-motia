@@ -3275,3 +3275,21 @@ html[data-design="decision"]:has(.ds-template) .decision-masthead {
     font-size: clamp(2.35rem, 12vw, 4rem);
   }
 }
+
+/* Bottom-density pass: keep the tool-index section filled instead of ending with empty paper. */
+.ds-frame {
+  min-height: auto;
+}
+
+.ds-index {
+  padding-bottom: 32px;
+}
+
+.ds-tool-table a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ds-tool-table strong {
+  font-size: 21px;
+}
