@@ -87,6 +87,11 @@ const decisionDeck = locale === "en"
   : "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge";
 const decisionEdited = locale === "en" ? "Edited in Germany" : "Redigiert in Deutschland";
 const decisionBrandSub = locale === "en" ? "decision desk" : "entscheidungsblatt";
+const decisionFooterLines = locale === "en"
+  ? ["No paid slots. No ranking theater.", "Editorial notes first, tools second."]
+  : ["Keine bezahlten Slots. Kein Ranking-Theater.", "Erst redaktionelle Einordnung, dann Tools."];
+const decisionFooterCopyright = `Copyright © ${currentYear} Utildesk`;
+const decisionFooterPrivacy = locale === "en" ? "Privacy" : "Datenschutz";
 const decisionMastheadTitle = (() => {
   const deTitles: Record<string, string> = {
     "/tools/": "Tool-Index.",
@@ -495,25 +500,29 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         <div class="footer-content">
 
-          <a href={homeHref} class="footer-brand">
+          <div class="footer-brand">
 
-            <img src="/logo-grid.svg" alt="Utildesk" height="16" />
+            <a href={homeHref} class="footer-home" aria-label={locale === "en" ? "Utildesk home" : "Utildesk Startseite"}>utildesk</a>
 
-            Utildesk
+            <span class="footer-note">
+              {decisionFooterLines.map((line) => <span>{line}</span>)}
+            </span>
 
-          </a>
+            <span class="footer-copyright">{decisionFooterCopyright}</span>
+
+          </div>
 
           <div class="footer-links">
 
-            <a href={ratgeberHref}>{ui.footerGuides}</a>
+            <a href={toolsHref}>{decisionNavTools}</a>
 
-            <a href={toolsHref}>{ui.footerTools}</a>
+            <a href={ratgeberHref}>{ui.footerGuides}</a>
 
             <a href={categoryHref}>{ui.footerCategories}</a>
 
             <a href={methodologyHref}>{ui.footerMethodology}</a>
 
-            <a href={privacyHref} rel="nofollow">{ui.footerPrivacy}</a>
+            <a href={privacyHref} rel="nofollow">{decisionFooterPrivacy}</a>
 
             <a href={imprintHref} rel="nofollow">{ui.footerImprint}</a>
 
@@ -523,7 +532,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         </div>
 
-        <p class="footer-copy">Copyright &copy; {currentYear} Utildesk. {ui.footerCopy}</p>
+        <p class="footer-copy">{ui.footerCopy}</p>
 
       </div>
 
