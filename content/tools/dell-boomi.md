@@ -5,7 +5,7 @@ category: Developer
 price_model: Abonnement
 tags: [integration, automation, data, api]
 official_url: "https://boomi.com/"
-popularity: 52
+popularity: 53
 ---
 
 # Dell Boomi

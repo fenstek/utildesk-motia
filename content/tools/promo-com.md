@@ -5,7 +5,7 @@ category: AI
 price_model: Abonnement
 tags: [video-marketing, video-editing, creator-tools]
 official_url: "https://promo.com/"
-popularity: 0
+popularity: 22
 ---
 
 # Promo.com

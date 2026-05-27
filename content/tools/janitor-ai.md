@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://janitorai.com/"
-popularity: 37
+popularity: 38
 ---
 # Janitor AI
 

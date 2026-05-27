@@ -8,7 +8,7 @@ official_url: "https://github.com/features/copilot/"
 affiliate_url: "https://github.com/features/copilot/"
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 46
+popularity: 47
 ---
 
 

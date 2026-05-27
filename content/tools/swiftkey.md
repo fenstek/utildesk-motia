@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [keyboard, mobile, productivity]
 official_url: "https://www.microsoft.com/en-us/swiftkey"
-popularity: 9
+popularity: 12
 ---
 
 # SwiftKey

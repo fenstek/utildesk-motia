@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://onlyoffice.com/"
-popularity: 90
+popularity: 89
 ---
 
 # OnlyOffice

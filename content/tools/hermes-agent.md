@@ -7,7 +7,7 @@ tags: [ai, assistant, llm, developer-tools, open-source]
 official_url: "https://hermes-agent.nousresearch.com/"
 created_at: "2026-05-10T17:00:00+02:00"
 search_index: true
-popularity: 41
+popularity: 42
 description: Hermes Agent ist ein Open-Source-Agent von Nous Research, der mit Memory, Skills, Tools und Messaging-Integrationen als langfristiger persönlicher Arbeitsagent gedacht ist.
 ---
 # Hermes Agent

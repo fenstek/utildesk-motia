@@ -5,7 +5,7 @@ category: Developer
 price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://azure.microsoft.com/en-us/products/api-management"
-popularity: 92
+popularity: 91
 ---
 
 # Microsoft Azure API Management

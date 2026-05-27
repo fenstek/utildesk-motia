@@ -7,7 +7,7 @@ tags:
 official_url: "https://aws.amazon.com/textract/"
 description: AWS Textract ist ein Cloud-Dienst zum Extrahieren von Text, Tabellen, Formularfeldern und strukturierten Dokumentdaten innerhalb von AWS-Architekturen.
 created_at: 2026-05-10
-popularity: 66
+popularity: 65
 ---
 # AWS Textract
 
