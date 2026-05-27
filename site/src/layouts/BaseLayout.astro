@@ -384,7 +384,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             </button>
 
-            <button type="button" class="design-toggle btn-ghost" id="design-toggle" aria-pressed="true" title={locale === "en" ? "Switch site design" : "Site-Design wechseln"} data-design-labels={designLabels}>
+            <button type="button" class="design-toggle btn-ghost" id="design-toggle" aria-pressed="true" title={locale === "en" ? "Switch site design" : "Site-Design wechseln"} data-design-toggle data-design-labels={designLabels}>
 
               <span data-design-label>{locale === "en" ? "decision desk" : "entscheidungsblatt"}</span>
 
@@ -472,10 +472,10 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         const root = document.documentElement;
 
         const button = document.getElementById("theme-toggle");
-        const designButton = document.getElementById("design-toggle");
+        const designButtons = Array.from(document.querySelectorAll("[data-design-toggle]"));
+        const designButton = designButtons[0] || null;
 
         const label = button?.querySelector("[data-theme-label]");
-        const designLabel = designButton?.querySelector("[data-design-label]");
         const themeLabels = (() => {
           try {
             return JSON.parse(button?.getAttribute("data-theme-labels") || "{}");
@@ -565,7 +565,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             ? "light"
             : root.dataset.theme === "dark" ? "dark" : "light";
 
-          if (designButton) {
+          designButtons.forEach((designButton) => {
 
             designButton.dataset.design = safeDesign;
 
@@ -573,13 +573,15 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             designButton.title = safeDesign === "decision" ? designLabels.toClassic : designLabels.toDecision;
 
-          }
+            const designLabel = designButton.querySelector("[data-design-label]");
 
-          if (designLabel) {
+            if (designLabel) {
 
-            designLabel.textContent = safeDesign === "decision" ? designLabels.decision : designLabels.classic;
+              designLabel.textContent = safeDesign === "decision" ? designLabels.decision : designLabels.classic;
 
-          }
+            }
+
+          });
 
           if (persist) {
 
@@ -613,7 +615,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         }
 
-        if (designButton) {
+        designButtons.forEach((designButton) => {
 
           designButton.addEventListener("click", () => {
 
@@ -623,7 +625,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           });
 
-        }
+        });
 
 
 
