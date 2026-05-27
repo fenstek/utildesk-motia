@@ -3360,3 +3360,383 @@ html[data-design="decision"]:has(.ds-template) .decision-masthead {
 .ds-tool-table strong {
   font-size: 21px;
 }
+
+
+/* Interior decision pages: bring catalog, guide, category and legal pages in line with the front page. */
+.decision-global-badge {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-global-badge {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 28px;
+  transform: translateX(-50%);
+  border: 6px solid rgba(12, 12, 10, 0.96);
+  border-radius: 999px;
+  background: #c5251c;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  font: 700 14px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) body {
+  background: #1a1a18;
+  color: #0c0c0a;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header,
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead,
+html[data-design="decision"]:not(:has(.ds-template)) main.container,
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+  width: min(1440px, calc(100% - 48px));
+  max-width: 1440px;
+  background: #f6f4ee;
+  border-left: 1px solid #d8d4c5;
+  border-right: 1px solid #d8d4c5;
+  box-shadow: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-top: 64px;
+  border-bottom: 1px solid #d8d4c5;
+  color: #0c0c0a;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
+  padding: 0 56px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-top {
+  padding: 14px 0 8px;
+  border-bottom: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand {
+  color: #0c0c0a;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand-sub,
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-meta,
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-status {
+  color: #6a6a62;
+  font: 11px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-bottom {
+  padding: 12px 0;
+  border-top: 1px solid #d8d4c5;
+  border-bottom: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links a {
+  margin: 0;
+  border-bottom: 2px solid transparent;
+  color: #0c0c0a;
+  font: 600 16px/1 "Bricolage Grotesque", system-ui, sans-serif;
+  letter-spacing: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links a:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links a[aria-current="page"] {
+  border-bottom-color: #c5251c;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions {
+  gap: 14px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .btn-ghost,
+html[data-design="decision"]:not(:has(.ds-template)) .design-toggle {
+  min-height: 36px;
+  border: 1px solid #b6b1a0;
+  border-radius: 3px;
+  background: transparent;
+  color: #0c0c0a;
+  font: 700 12px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .theme-toggle {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-status {
+  margin: 0 -56px;
+  padding: 8px 56px;
+  border-top: 1px solid #d8d4c5;
+  background: #eeece4;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead {
+  display: grid;
+  grid-template-columns: minmax(160px, auto) 1fr minmax(210px, auto);
+  align-items: end;
+  gap: 32px;
+  margin: 0 auto;
+  padding: 28px 56px 24px;
+  border-bottom: 3px double #0c0c0a;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main span {
+  display: block;
+  color: #0c0c0a;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(4.2rem, 8vw, 9.2rem);
+  font-style: italic;
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+  text-align: center;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main p {
+  margin: 22px 0 0;
+  color: #3a3a35;
+  font: 700 14px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.36em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
+  color: #3a3a35;
+  font: 13px/1.5 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side-right {
+  text-align: right;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) main.container {
+  padding: 0 56px 72px;
+  min-height: 60vh;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hero,
+html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero,
+html[data-design="decision"]:not(:has(.ds-template)) .category-index,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-page,
+html[data-design="decision"]:not(:has(.ds-template)) .legal {
+  max-width: none;
+  padding: 44px 0 36px;
+  border-bottom: 1px solid #d8d4c5;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .legal {
+  max-width: 980px;
+  border-bottom: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hero-title,
+html[data-design="decision"]:not(:has(.ds-template)) .page-title,
+html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero h1,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-page h1,
+html[data-design="decision"]:not(:has(.ds-template)) .legal h1 {
+  margin: 0 0 18px;
+  color: #0c0c0a;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(3rem, 6.4vw, 6.7rem);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hero-subtitle,
+html[data-design="decision"]:not(:has(.ds-template)) .page-intro,
+html[data-design="decision"]:not(:has(.ds-template)) .rg-sub,
+html[data-design="decision"]:not(:has(.ds-template)) .lead,
+html[data-design="decision"]:not(:has(.ds-template)) .legal p,
+html[data-design="decision"]:not(:has(.ds-template)) .legal li {
+  max-width: 880px;
+  color: #3a3a35;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  line-height: 1.55;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-eyebrow,
+html[data-design="decision"]:not(:has(.ds-template)) .eyebrow,
+html[data-design="decision"]:not(:has(.ds-template)) .tag-filter-label {
+  color: #c5251c;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .search-wrapper,
+html[data-design="decision"]:not(:has(.ds-template)) .tag-filter-row {
+  margin: 24px 0;
+  padding: 18px;
+  border: 1px solid #d8d4c5;
+  background: #eeece4;
+  border-radius: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .search-input,
+html[data-design="decision"]:not(:has(.ds-template)) .tag-filter-item,
+html[data-design="decision"]:not(:has(.ds-template)) .clear-filter-btn {
+  border: 1px solid #b6b1a0;
+  border-radius: 0;
+  background: #f6f4ee;
+  color: #0c0c0a;
+  font-family: "JetBrains Mono", monospace;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .tools-grid,
+html[data-design="decision"]:not(:has(.ds-template)) .category-grid,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-grid {
+  gap: 1px;
+  background: #d8d4c5;
+  border: 1px solid #0c0c0a;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .tools-grid,
+html[data-design="decision"]:not(:has(.ds-template)) .category-grid {
+  margin-top: 24px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .card,
+html[data-design="decision"]:not(:has(.ds-template)) .tool-card,
+html[data-design="decision"]:not(:has(.ds-template)) .category-card,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-card,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-note {
+  border: 0;
+  border-radius: 0;
+  background: #f6f4ee;
+  box-shadow: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .tool-card:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .category-card:hover {
+  background: #eeece4;
+  transform: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .category-shell {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-list {
+  gap: 1px;
+  margin-bottom: 72px;
+  padding-bottom: 0;
+  border: 1px solid #0c0c0a;
+  background: #d8d4c5;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card {
+  border: 0;
+  border-radius: 0;
+  background: #f6f4ee;
+  box-shadow: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-title,
+html[data-design="decision"]:not(:has(.ds-template)) .category-title,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-card h2,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-note h2,
+html[data-design="decision"]:not(:has(.ds-template)) .legal h2 {
+  color: #0c0c0a;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 850;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer {
+  background: transparent;
+  border-top: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+  margin-bottom: 56px;
+  padding: 40px 56px 48px;
+  background: #0c0c0a;
+  color: #f6f4ee;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-content {
+  align-items: flex-start;
+  gap: 48px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px 22px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-links a,
+html[data-design="decision"]:not(:has(.ds-template)) .footer-copy,
+html[data-design="decision"]:not(:has(.ds-template)) .footer-brand {
+  color: #f6f4ee;
+  font-family: "JetBrains Mono", monospace;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-copy {
+  margin-top: 24px;
+  color: #b6b1a0;
+}
+
+@media (max-width: 1000px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .site-header,
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead,
+  html[data-design="decision"]:not(:has(.ds-template)) main.container,
+  html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+    width: min(100%, calc(100% - 20px));
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .site-header .container,
+  html[data-design="decision"]:not(:has(.ds-template)) main.container,
+  html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main span,
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main p,
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side-right {
+    text-align: left;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .hdr-status {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
