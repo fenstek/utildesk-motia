@@ -2376,3 +2376,7 @@ html[lang^="en"][data-design="decision"] .site-header .container::after {
 html[data-design="decision"] .theme-toggle {
   display: none;
 }
+
+html[data-design="decision"] .terminal-stat {
+  border-radius: 0;
+}
