@@ -173,12 +173,12 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
   ]);
 } else if (pathname === "/" || pathname === "/en/") {
   resolvedTitle = locale === "en"
-    ? "AI Tools Directory 2026 - Utildesk"
-    : "KI-Tools Verzeichnis 2026 - Utildesk";
+    ? "Understand, Compare and Use AI Tools Safely | Utildesk"
+    : "KI-Tools verstehen, vergleichen und sicher einsetzen | Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
-      ? "Discover curated AI tools, workflow context and practical guides in one AI-readable directory."
-      : "Entdecke kuratierte Tools, Workflows und redaktionelle Guides für produktive KI-Einsätze an einem Ort.",
+      ? "Start with practical AI guides, curated comparisons and compact tool entries for safer workflows."
+      : "Starte mit praxisnahen KI-Ratgebern, kuratierten Vergleichen und kompakten Tool-Einträgen für sichere Workflows.",
   ]);
 } else {
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
