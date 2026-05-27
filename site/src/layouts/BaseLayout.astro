@@ -211,6 +211,12 @@ const themeLabels = JSON.stringify({
   toDark: ui.themeToDark,
   toLight: ui.themeToLight,
 });
+const designLabels = JSON.stringify({
+  decision: locale === "en" ? "decision desk" : "entscheidungsblatt",
+  classic: locale === "en" ? "classic" : "klassisch",
+  toDecision: locale === "en" ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
+  toClassic: locale === "en" ? "Switch to classic design" : "Zum klassischen Design wechseln",
+});
 
 const UMAMI_SRC = import.meta.env.PUBLIC_UMAMI_SRC || "https://stats.utildesk.de/script.js";
 
@@ -224,7 +230,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
 <!DOCTYPE html>
 
-<html lang={LOCALE_META[locale].lang} data-accent="lime">
+<html lang={LOCALE_META[locale].lang} data-accent="lime" data-design="decision">
 
   <head>
 
@@ -279,20 +285,25 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
       (() => {
 
         const storageKey = "utildesk-theme";
+        const designStorageKey = "utildesk-design";
 
         try {
 
           const storedTheme = localStorage.getItem(storageKey);
+          const storedDesign = localStorage.getItem(designStorageKey);
 
           const theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : "dark";
+          const design = storedDesign === "classic" || storedDesign === "decision" ? storedDesign : "decision";
 
           document.documentElement.dataset.theme = theme;
+          document.documentElement.dataset.design = design;
 
           document.documentElement.style.colorScheme = theme;
 
         } catch {
 
           document.documentElement.dataset.theme = "dark";
+          document.documentElement.dataset.design = "decision";
 
           document.documentElement.style.colorScheme = "dark";
 
@@ -373,6 +384,12 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             </button>
 
+            <button type="button" class="design-toggle btn-ghost" id="design-toggle" aria-pressed="true" title={locale === "en" ? "Switch site design" : "Site-Design wechseln"} data-design-labels={designLabels}>
+
+              <span data-design-label>{locale === "en" ? "decision desk" : "entscheidungsblatt"}</span>
+
+            </button>
+
           </div>
 
         </nav>
@@ -450,15 +467,25 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
       (() => {
 
         const storageKey = "utildesk-theme";
+        const designStorageKey = "utildesk-design";
 
         const root = document.documentElement;
 
         const button = document.getElementById("theme-toggle");
+        const designButton = document.getElementById("design-toggle");
 
         const label = button?.querySelector("[data-theme-label]");
+        const designLabel = designButton?.querySelector("[data-design-label]");
         const themeLabels = (() => {
           try {
             return JSON.parse(button?.getAttribute("data-theme-labels") || "{}");
+          } catch {
+            return {};
+          }
+        })();
+        const designLabels = (() => {
+          try {
+            return JSON.parse(designButton?.getAttribute("data-design-labels") || "{}");
           } catch {
             return {};
           }
@@ -528,6 +555,50 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         applyTheme(root.dataset.theme === "dark" ? "dark" : "light");
 
+        const applyDesign = (design, persist = false) => {
+
+          const safeDesign = design === "classic" ? "classic" : "decision";
+
+          root.dataset.design = safeDesign;
+
+          root.style.colorScheme = safeDesign === "decision"
+            ? "light"
+            : root.dataset.theme === "dark" ? "dark" : "light";
+
+          if (designButton) {
+
+            designButton.dataset.design = safeDesign;
+
+            designButton.setAttribute("aria-pressed", String(safeDesign === "decision"));
+
+            designButton.title = safeDesign === "decision" ? designLabels.toClassic : designLabels.toDecision;
+
+          }
+
+          if (designLabel) {
+
+            designLabel.textContent = safeDesign === "decision" ? designLabels.decision : designLabels.classic;
+
+          }
+
+          if (persist) {
+
+            try {
+
+              localStorage.setItem(designStorageKey, safeDesign);
+
+            } catch {
+
+              // ignore storage errors
+
+            }
+
+          }
+
+        };
+
+        applyDesign(root.dataset.design === "classic" ? "classic" : "decision");
+
 
 
         if (button) {
@@ -537,6 +608,18 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
 
             applyTheme(nextTheme, true);
+
+          });
+
+        }
+
+        if (designButton) {
+
+          designButton.addEventListener("click", () => {
+
+            const nextDesign = root.dataset.design === "decision" ? "classic" : "decision";
+
+            applyDesign(nextDesign, true);
 
           });
 

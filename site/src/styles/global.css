@@ -3,7 +3,7 @@
    Adapted from the supplied utildesk design reference.
    ===================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,900;1,8..60,400;1,8..60,700;1,8..60,900&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 :root {
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -1818,4 +1818,561 @@ main.container {
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+/* =====================================================
+   Optional design from utildesk1.zip: Entscheidungsblatt.
+   Default is the new paper/decision-desk design; the header
+   switch stores `classic` or `decision` in localStorage.
+   ===================================================== */
+
+:root[data-design="decision"] {
+  color-scheme: light;
+  --paper: #f6f4ee;
+  --paper-alt: #eceae2;
+  --ink: #0c0c0a;
+  --ink-soft: #3a3a35;
+  --ink-mid: #6a6a62;
+  --ink-dim: #9a988e;
+  --rule: #d8d4c5;
+  --rule-hi: #b6b1a0;
+  --vermillion: #c5251c;
+  --green: #0f6a3b;
+  --amber: #a86200;
+  --ocean: #0042b8;
+  --parchment: #e8e3d2;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --serif: "Source Serif 4", Georgia, serif;
+  --container: 1440px;
+  --bg: var(--paper);
+  --bg-2: var(--paper-alt);
+  --bg-3: var(--parchment);
+  --line: var(--rule);
+  --line-2: var(--rule-hi);
+  --fg: var(--ink);
+  --fg-2: var(--ink-soft);
+  --fg-3: var(--ink-mid);
+  --accent: var(--vermillion);
+  --accent-d: #8f1913;
+  --warn: var(--amber);
+  --ok: var(--green);
+  --err: var(--vermillion);
+  --surface: var(--paper);
+  --surface-container-lowest: var(--paper);
+  --surface-container-low: var(--paper-alt);
+  --surface-container: var(--paper-alt);
+  --surface-container-high: var(--parchment);
+  --surface-container-highest: var(--parchment);
+  --on-primary: #ffffff;
+  --text: var(--ink);
+  --muted: var(--ink-mid);
+}
+
+html[data-design="decision"] {
+  font-size: 100%;
+}
+
+html[data-design="decision"] body {
+  background:
+    radial-gradient(circle at 50% -8rem, rgba(246,244,238,0.18), transparent 26rem),
+    #1a1a18;
+  color: var(--ink);
+  font-family: var(--display);
+  font-feature-settings: normal;
+  letter-spacing: 0;
+}
+
+html[data-design="decision"] .site-header,
+html[data-design="decision"] main.container,
+html[data-design="decision"] .site-footer .container {
+  width: min(1440px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.32);
+}
+
+html[data-design="decision"] .site-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 0;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  color: var(--ink);
+}
+
+html[data-design="decision"] .site-header .container,
+html[data-design="decision"] main.container,
+html[data-design="decision"] .site-footer .container {
+  width: 100%;
+  padding-left: 56px;
+  padding-right: 56px;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+}
+
+html[data-design="decision"] .site-header .container {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+html[data-design="decision"] .site-header .container::after {
+  content: "Entscheidungsblatt.";
+  display: block;
+  padding: 22px 0 24px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 3px double var(--ink);
+  text-align: center;
+  font-family: var(--serif);
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(3.2rem, 8.2vw, 7.8rem);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+  color: var(--ink);
+}
+
+html[data-design="decision"] .hdr-row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+html[data-design="decision"] .hdr-top {
+  border-bottom: 0;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+html[data-design="decision"] .brand {
+  gap: 8px;
+  color: var(--ink);
+  text-transform: lowercase;
+}
+
+html[data-design="decision"] .brand-mark-text,
+html[data-design="decision"] .brand-mark {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+html[data-design="decision"] .brand-sub,
+html[data-design="decision"] .hdr-meta,
+html[data-design="decision"] .hdr-status {
+  color: var(--ink-mid);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+html[data-design="decision"] .hdr-bottom {
+  min-height: 0;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  border-top: 1px solid var(--rule);
+}
+
+html[data-design="decision"] .nav-links a {
+  margin-right: 22px;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+html[data-design="decision"] .nav-links a:hover,
+html[data-design="decision"] .nav-links a[aria-current="page"],
+html[data-design="decision"] .nav-links a.active {
+  color: var(--ink);
+  border-bottom-color: var(--vermillion);
+}
+
+html[data-design="decision"] .nav-links a[aria-current="page"]::before,
+html[data-design="decision"] .nav-links a.active::before {
+  content: "";
+}
+
+html[data-design="decision"] .hdr-status {
+  margin: 0 -56px;
+  padding: 7px 56px;
+  border-top: 1px solid var(--rule);
+  background: var(--paper-alt);
+}
+
+html[data-design="decision"] .btn-ghost,
+html[data-design="decision"] .btn-primary,
+html[data-design="decision"] .theme-toggle,
+html[data-design="decision"] .design-toggle {
+  min-height: 31px;
+  border: 1px solid var(--rule-hi);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .btn-ghost:hover,
+html[data-design="decision"] .theme-toggle:hover,
+html[data-design="decision"] .design-toggle:hover {
+  background: var(--parchment);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+html[data-design="decision"] .btn-primary,
+html[data-design="decision"] .hero-cta {
+  background: var(--vermillion);
+  border-color: var(--vermillion);
+  color: #fff;
+}
+
+html[data-design="decision"] main.container {
+  padding-top: 0;
+  padding-bottom: 72px;
+}
+
+html[data-design="decision"] .terminal-hero {
+  border-bottom: 1px solid var(--rule);
+  padding: 42px 0 48px;
+}
+
+html[data-design="decision"] .terminal-hero-grid,
+html[data-design="decision"] .terminal-hero-main {
+  display: block;
+}
+
+html[data-design="decision"] .terminal-kicker,
+html[data-design="decision"] .home-guide-meta,
+html[data-design="decision"] .terminal-results-title,
+html[data-design="decision"] .terminal-detail-title,
+html[data-design="decision"] .terminal-rail-title,
+html[data-design="decision"] .terminal-panel-head h2,
+html[data-design="decision"] .terminal-catbar-label {
+  color: var(--vermillion);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .terminal-title {
+  max-width: 980px;
+  margin: 16px 0 18px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(4.4rem, 9.6vw, 8.9rem);
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+  text-transform: none;
+}
+
+html[data-design="decision"] .terminal-accent {
+  color: var(--ink);
+  display: inline;
+}
+
+html[data-design="decision"] .terminal-copy {
+  max-width: 860px;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  font-style: italic;
+  line-height: 1.28;
+}
+
+html[data-design="decision"] .terminal-comment {
+  display: none;
+}
+
+html[data-design="decision"] .terminal-hero-actions,
+html[data-design="decision"] .terminal-stats {
+  margin-top: 28px;
+}
+
+html[data-design="decision"] .terminal-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+html[data-design="decision"] .terminal-stat {
+  background: var(--paper);
+  padding: 18px 20px;
+  border: 0;
+}
+
+html[data-design="decision"] .terminal-stat strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+
+html[data-design="decision"] .terminal-stat span {
+  color: var(--ink-mid);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .home-guides,
+html[data-design="decision"] .home-intents,
+html[data-design="decision"] .terminal-main,
+html[data-design="decision"] .terminal-bottom {
+  margin-top: 0;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+html[data-design="decision"] .home-section-head {
+  align-items: end;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 20px;
+  margin-bottom: 1px;
+}
+
+html[data-design="decision"] .home-section-head h2,
+html[data-design="decision"] .terminal-panel-head h2 {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4.4vw, 4.4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+html[data-design="decision"] .home-section-head p,
+html[data-design="decision"] .home-guide-card p,
+html[data-design="decision"] .home-intent-main span,
+html[data-design="decision"] .terminal-row-desc,
+html[data-design="decision"] .terminal-mini-item span,
+html[data-design="decision"] .terminal-detail-card p,
+html[data-design="decision"] .terminal-rail-note {
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.52;
+}
+
+html[data-design="decision"] .home-guide-grid,
+html[data-design="decision"] .home-intent-grid,
+html[data-design="decision"] .terminal-bottom-grid {
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--ink);
+}
+
+html[data-design="decision"] .home-guide-card,
+html[data-design="decision"] .home-intent-card,
+html[data-design="decision"] .terminal-panel,
+html[data-design="decision"] .terminal-detail-card,
+html[data-design="decision"] .terminal-rail-block {
+  background: var(--paper);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+html[data-design="decision"] .home-guide-card:first-child {
+  background: var(--parchment);
+}
+
+html[data-design="decision"] .home-guide-card h3,
+html[data-design="decision"] .home-intent-main strong,
+html[data-design="decision"] .terminal-row-title,
+html[data-design="decision"] .terminal-detail-card h3,
+html[data-design="decision"] .terminal-mini-item strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+html[data-design="decision"] .home-guide-card h3 {
+  font-size: clamp(1.55rem, 2.2vw, 2.45rem);
+  line-height: 1.03;
+}
+
+html[data-design="decision"] .home-guide-image {
+  border-bottom: 1px solid var(--ink);
+  background: var(--parchment);
+  border-radius: 0;
+}
+
+html[data-design="decision"] .home-guide-image img {
+  filter: grayscale(0.35) contrast(1.08) sepia(0.08);
+}
+
+html[data-design="decision"] .home-intent-marker,
+html[data-design="decision"] .terminal-index,
+html[data-design="decision"] .terminal-row-action a,
+html[data-design="decision"] .terminal-open {
+  color: var(--vermillion);
+  font-family: var(--mono);
+}
+
+html[data-design="decision"] .terminal-catbar {
+  margin: 0;
+  padding: 26px 0;
+  border-top: 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+html[data-design="decision"] .terminal-pill,
+html[data-design="decision"] .tag-cloud-item,
+html[data-design="decision"] .terminal-row-tags a,
+html[data-design="decision"] .terminal-row-price,
+html[data-design="decision"] .terminal-row-category {
+  border: 1px solid var(--rule-hi);
+  background: transparent;
+  color: var(--ink-soft);
+  border-radius: 0;
+  font-family: var(--mono);
+}
+
+html[data-design="decision"] .terminal-pill.is-active,
+html[data-design="decision"] .terminal-pill:hover,
+html[data-design="decision"] .tag-cloud-item:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+html[data-design="decision"] .terminal-main {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr) 320px;
+  gap: 1px;
+  background: var(--rule);
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+html[data-design="decision"] .terminal-rail,
+html[data-design="decision"] .terminal-results,
+html[data-design="decision"] .terminal-detail {
+  background: var(--paper);
+  padding: 24px;
+}
+
+html[data-design="decision"] .terminal-table-head,
+html[data-design="decision"] .terminal-results-head {
+  border-color: var(--ink);
+  color: var(--ink-mid);
+  font-family: var(--mono);
+}
+
+html[data-design="decision"] .terminal-row {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  border-radius: 0;
+  background: transparent;
+}
+
+html[data-design="decision"] .terminal-row:hover {
+  background: var(--paper-alt);
+}
+
+html[data-design="decision"] .terminal-glyph {
+  background: var(--parchment);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+html[data-design="decision"] .terminal-detail-card,
+html[data-design="decision"] .terminal-rail-block {
+  border: 1px solid var(--rule-hi);
+  margin-bottom: 18px;
+}
+
+html[data-design="decision"] .site-footer {
+  background: transparent;
+  border-top: 0;
+}
+
+html[data-design="decision"] .site-footer .container {
+  margin-bottom: 56px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+html[data-design="decision"] .footer-links a,
+html[data-design="decision"] .footer-copy,
+html[data-design="decision"] .footer-brand {
+  color: var(--paper);
+}
+
+@media (max-width: 1000px) {
+  html[data-design="decision"] .site-header,
+  html[data-design="decision"] main.container,
+  html[data-design="decision"] .site-footer .container {
+    width: min(100%, calc(100% - 20px));
+  }
+
+  html[data-design="decision"] .site-header .container,
+  html[data-design="decision"] main.container,
+  html[data-design="decision"] .site-footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  html[data-design="decision"] .hdr-status {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  html[data-design="decision"] .terminal-main {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-design="decision"] .terminal-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  html[data-design="decision"] .site-header .container::after {
+    font-size: clamp(2.5rem, 15vw, 4.7rem);
+  }
+
+  html[data-design="decision"] .terminal-title {
+    font-size: clamp(3.1rem, 17vw, 5.2rem);
+  }
+
+  html[data-design="decision"] .terminal-stats,
+  html[data-design="decision"] .home-guide-grid,
+  html[data-design="decision"] .home-intent-grid,
+  html[data-design="decision"] .terminal-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+html[lang^="en"][data-design="decision"] .site-header .container::after {
+  content: "Decision Desk.";
+}
+
+html[data-design="decision"] .theme-toggle {
+  display: none;
 }
