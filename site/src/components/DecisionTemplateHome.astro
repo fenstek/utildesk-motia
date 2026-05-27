@@ -36,6 +36,7 @@ interface TaskItem {
 const {
   locale = "de",
   toolsCount = 0,
+  guidesCount,
   categories = [],
   guides = [],
   tools = [],
@@ -44,6 +45,7 @@ const {
 } = Astro.props as {
   locale?: "de" | "en";
   toolsCount: number;
+  guidesCount?: number;
   categories: CategoryItem[];
   guides: ArticleItem[];
   tools: ToolItem[];
@@ -55,6 +57,7 @@ const isEn = locale === "en";
 const prefix = isEn ? "/en" : "";
 const issueNo = "049";
 const today = "27.05.2026";
+const totalGuides = typeof guidesCount === "number" ? guidesCount : guides.length;
 const copy = isEn
   ? {
       tabIssue: "↳ Issue № 049",
@@ -69,7 +72,7 @@ const copy = isEn
       mastSub: "An editorial decision desk for AI tools",
       issueLine: "Issue",
       edited: "Edited in Berlin",
-      rightStats: `${guides.length || 25} decisions · ${toolsCount} tools indexed`,
+      rightStats: `${totalGuides || guides.length || 25} decisions · ${toolsCount} tools indexed`,
       noAds: "0 paid placements",
       kicker: `Decision № ${issueNo} · AI tool review`,
       headline: "Should my team adopt AI tools without losing control?",
@@ -107,7 +110,7 @@ const copy = isEn
       mastSub: "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge",
       issueLine: "Ausgabe",
       edited: "Redigiert in Berlin",
-      rightStats: `${guides.length || 25} Entscheidungen · ${toolsCount} Tools indiziert`,
+      rightStats: `${totalGuides || guides.length || 25} Entscheidungen · ${toolsCount} Tools indiziert`,
       noAds: "0 bezahlte Platzierungen",
       kicker: `Entscheidung № ${issueNo} · AI-Tool Review`,
       headline: "Soll mein Team KI-Tools kontrolliert einführen?",
@@ -283,7 +286,7 @@ const categoryRows = categories.slice(0, 8);
         <div class="ds-evidence-grid">
           <span>{toolsCount}</span><p>Tools</p>
           <span>{categories.length}</span><p>{isEn ? "Categories" : "Kategorien"}</p>
-          <span>{guides.length}</span><p>{isEn ? "Guides" : "Ratgeber"}</p>
+          <span>{totalGuides}</span><p>{isEn ? "Guides" : "Ratgeber"}</p>
           <span>0</span><p>Ads</p>
         </div>
       </section>
