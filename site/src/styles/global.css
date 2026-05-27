@@ -3944,3 +3944,164 @@ html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main spa
     justify-content: flex-start;
   }
 }
+
+/* Exact homepage sizing for interior decision pages: no oversized masthead, hero, or footer drift. */
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead {
+  grid-template-columns: auto 1fr auto;
+  gap: 32px;
+  padding: 28px 56px 24px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main {
+  text-align: center;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main span {
+  margin: 0;
+  padding-bottom: 4px;
+  font-size: 84px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main p {
+  margin: 14px 0 0;
+  font: 11px/1.3 "JetBrains Mono", monospace;
+  letter-spacing: 0.32em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
+  font: 11px/1.7 "JetBrains Mono", monospace;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hero,
+html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero,
+html[data-design="decision"]:not(:has(.ds-template)) .category-index,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-page,
+html[data-design="decision"]:not(:has(.ds-template)) .legal {
+  padding: 32px 0 34px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hero-title,
+html[data-design="decision"]:not(:has(.ds-template)) .page-title,
+html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero h1,
+html[data-design="decision"]:not(:has(.ds-template)) .methodology-page h1,
+html[data-design="decision"]:not(:has(.ds-template)) .legal h1 {
+  max-width: 780px;
+  margin: 14px 0 14px;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hero-subtitle,
+html[data-design="decision"]:not(:has(.ds-template)) .page-intro,
+html[data-design="decision"]:not(:has(.ds-template)) .rg-sub,
+html[data-design="decision"]:not(:has(.ds-template)) .lead {
+  max-width: 730px;
+  font-size: 23px;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 40px 56px 56px;
+  font: 12px/1.45 "JetBrains Mono", monospace;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-content {
+  display: contents;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-brand {
+  display: grid;
+  gap: 14px;
+  max-width: none;
+  color: #f6f4ee;
+  font: inherit;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-home {
+  width: fit-content;
+  color: #f6f4ee;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-home:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .footer-home:focus-visible {
+  color: #e0261d;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-note {
+  display: grid;
+  gap: 4px;
+  color: #b6b1a0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-note span {
+  display: block;
+  white-space: nowrap;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-copyright {
+  color: #b6b1a0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-copy {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
+  grid-template-columns: repeat(7, max-content);
+  gap: 14px 22px;
+  font: inherit;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-links a {
+  white-space: nowrap;
+}
+
+@media (max-width: 1280px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media (max-width: 1100px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main span,
+  html[data-design="decision"]:not(:has(.ds-template)) .hero-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .page-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .methodology-page h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .legal h1 {
+    font-size: clamp(46px, 10vw, 68px);
+  }
+}
+
+@media (max-width: 760px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container,
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-note span {
+    white-space: normal;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .footer-links {
+    justify-content: start;
+    text-align: left;
+  }
+}
