@@ -4185,8 +4185,8 @@ html[data-design="decision"]:not(:has(.ds-template)) main.container,
 html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
   width: 1440px;
   max-width: calc(100% - 48px);
-  border-left: 0;
-  border-right: 0;
+  border-left: 0 !important;
+  border-right: 0 !important;
 }
 
 html[data-design="decision"]:not(:has(.ds-template)) .site-header {
@@ -4199,4 +4199,13 @@ html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
 
 html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
   letter-spacing: normal;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+  outline: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .footer-links a:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .footer-links a:focus-visible {
+  color: #e0261d;
 }
