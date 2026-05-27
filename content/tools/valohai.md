@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [mlops,machine-learning,cloud,developer-tools]
 official_url: "https://valohai.com/"
-popularity: 0
+popularity: 7
 ---
 
 # Valohai

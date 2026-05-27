@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [education, assistant, productivity, ai]
 official_url: "https://usesolomon.ai/"
-popularity: 12
+popularity: 15
 ---
 
 # Solomon

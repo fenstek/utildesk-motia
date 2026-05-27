@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [email-productivity,communication,inbox]
 official_url: "https://www.getmailbird.com/"
-popularity: 34
+popularity: 35
 ---
 
 # Mailbird

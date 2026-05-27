@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [hcm, hr, payroll]
 official_url: "https://www.ukg.com/solutions/hcm/ukg-pro"
-popularity: 0
+popularity: 8
 ---
 # UKG Pro (Ultimate Kronos Group)
 

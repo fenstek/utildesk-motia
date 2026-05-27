@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [education, courses, learning, skills]
 official_url: "https://www.udemy.com/"
-popularity: 0
+popularity: 9
 ---
 
 # Udemy

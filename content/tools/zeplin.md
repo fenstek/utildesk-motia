@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://zeplin.io/"
-popularity: 0
+popularity: 2
 ---
 
 # Zeplin

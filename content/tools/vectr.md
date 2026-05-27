@@ -2,11 +2,11 @@
 slug: vectr
 title: Vectr
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: [vector-graphics, design, editing]
 official_url: "https://vectr.com/"
-popularity: 0
-description: "Vectr ist ein Design- und Kreativwerkzeug für einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken."
+popularity: 6
+description: Vectr ist ein Design- und Kreativwerkzeug für einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken.
 ---
 # Vectr
 

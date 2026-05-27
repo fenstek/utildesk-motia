@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Freemium
 tags: [chat,communication,collaboration,productivity]
 official_url: "https://workspace.google.com/products/chat/"
-popularity: 45
+popularity: 47
 ---
 
 # Google Chat
