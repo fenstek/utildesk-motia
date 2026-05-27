@@ -480,7 +480,6 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
         const button = document.getElementById("theme-toggle");
         const designButtons = Array.from(document.querySelectorAll("[data-design-toggle]"));
-        const designButton = designButtons[0] || null;
 
         const label = button?.querySelector("[data-theme-label]");
         const themeLabels = (() => {
@@ -490,13 +489,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             return {};
           }
         })();
-        const designLabels = (() => {
+        const getDesignLabels = (designButton) => {
           try {
             return JSON.parse(designButton?.getAttribute("data-design-labels") || "{}");
           } catch {
             return {};
           }
-        })();
+        };
 
         const media = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
 
@@ -577,6 +576,8 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             designButton.dataset.design = safeDesign;
 
             designButton.setAttribute("aria-pressed", String(safeDesign === "decision"));
+
+            const designLabels = getDesignLabels(designButton);
 
             designButton.title = safeDesign === "decision" ? designLabels.toClassic : designLabels.toDecision;
 

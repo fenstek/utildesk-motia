@@ -165,20 +165,8 @@ const categoryRows = categories.slice(0, 8);
 ---
 
 <section class="ds-template" aria-label={copy.masthead}>
-  <div class="ds-tabbar">
-    <button type="button" class="active">{copy.tabIssue}</button>
-    <button
-      type="button"
-      data-design-toggle
-      data-design-labels={JSON.stringify({
-        decision: isEn ? "decision desk" : "entscheidungsblatt",
-        classic: isEn ? "classic" : "klassisch",
-        toDecision: isEn ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
-        toClassic: isEn ? "Switch to classic design" : "Zum klassischen Design wechseln",
-      })}
-    >
-      <span data-design-label>{copy.tabClassic}</span>
-    </button>
+  <div class="ds-tabbar" aria-hidden="true">
+    <span class="active">{copy.tabIssue}</span>
   </div>
 
   <div class="ds-stage">
@@ -199,6 +187,19 @@ const categoryRows = categories.slice(0, 8);
         <div class="ds-nav-right">
           <a href={isEn ? "/" : "/en/"}>{isEn ? "DE" : "EN"}</a>
           <a href={`${prefix}/llms.txt`}>⌘ K</a>
+          <button
+            type="button"
+            class="ds-design-switch"
+            data-design-toggle
+            data-design-labels={JSON.stringify({
+              decision: isEn ? "Old version" : "Alte Version",
+              classic: isEn ? "Decision desk" : "Entscheidungsblatt",
+              toDecision: isEn ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
+              toClassic: isEn ? "Switch to old design" : "Zur alten Version wechseln",
+            })}
+          >
+            <span data-design-label>{isEn ? "Old version" : "Alte Version"}</span>
+          </button>
         </div>
       </nav>
 
