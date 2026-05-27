@@ -3111,3 +3111,114 @@ html[data-design="decision"]:has(.ds-template) main.container {
     font-size: clamp(48px, 12vw, 84px);
   }
 }
+
+/* Density pass after visual review: remove unused air in the exact template. */
+.ds-front {
+  grid-template-columns: 1.22fr 0.92fr;
+  gap: 44px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+
+.ds-front-main h2 {
+  max-width: 780px;
+  margin: 14px 0 14px;
+  font-size: 68px;
+  line-height: 0.96;
+}
+
+.ds-dek {
+  max-width: 730px;
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.ds-verdict {
+  margin-top: 24px;
+  padding: 20px 24px;
+}
+
+.ds-verdict-glyph {
+  min-width: 48px;
+  font-size: 50px;
+}
+
+.ds-verdict strong {
+  font-size: 25px;
+}
+
+.ds-verdict p {
+  font-size: 16px;
+}
+
+.ds-front-actions {
+  margin-top: 20px;
+}
+
+.ds-front-aside {
+  gap: 14px;
+}
+
+.ds-box {
+  padding: 18px 20px;
+}
+
+.ds-box h3 {
+  margin-bottom: 12px;
+}
+
+.ds-box a {
+  padding: 10px 0;
+}
+
+.ds-box a strong {
+  font-size: 21px;
+}
+
+.ds-box-warn p,
+.ds-box-facts p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.ds-box-facts {
+  background: #e8e3d2;
+}
+
+.ds-stack {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ds-tasks > div {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ds-tasks a {
+  min-height: 150px;
+}
+
+.ds-index-grid {
+  align-items: start;
+}
+
+.ds-tool-table a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.ds-tool-table strong {
+  font-size: 22px;
+}
+
+.ds-index {
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+@media (max-width: 1100px) {
+  .ds-front-main h2 {
+    font-size: clamp(46px, 10vw, 68px);
+  }
+}
