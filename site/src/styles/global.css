@@ -2519,19 +2519,25 @@ html[data-design="decision"]:has(.ds-template) main.container {
   font-family: "JetBrains Mono", monospace;
 }
 
-.ds-tabbar button {
+.ds-tabbar button,
+.ds-tabbar span {
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: #f6f4ee;
-  cursor: pointer;
+  cursor: default;
   font: 500 12px/1 "JetBrains Mono", monospace;
   letter-spacing: 0.08em;
   padding: 8px 16px;
   text-transform: uppercase;
 }
 
-.ds-tabbar button.active {
+.ds-tabbar button {
+  cursor: pointer;
+}
+
+.ds-tabbar button.active,
+.ds-tabbar span.active {
   background: #c5251c;
   color: #fff;
 }
@@ -2603,11 +2609,26 @@ html[data-design="decision"]:has(.ds-template) main.container {
   gap: 14px;
 }
 
-.ds-nav-right a:last-child {
+.ds-nav-right a:last-of-type,
+.ds-nav-right .ds-design-switch {
   border: 1px solid #b6b1a0;
   border-radius: 3px;
   color: #0c0c0a;
   padding: 4px 10px;
+}
+
+.ds-nav-right .ds-design-switch {
+  background: transparent;
+  cursor: pointer;
+  font: 700 11px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ds-nav-right .ds-design-switch:hover,
+.ds-nav-right .ds-design-switch:focus-visible {
+  border-color: #c5251c;
+  color: #c5251c;
 }
 
 .ds-masthead {
