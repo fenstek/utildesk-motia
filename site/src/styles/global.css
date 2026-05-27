@@ -2520,24 +2520,33 @@ html[data-design="decision"]:has(.ds-template) main.container {
 }
 
 .ds-tabbar button,
-.ds-tabbar span {
+.ds-tabbar span,
+.ds-tabbar a {
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: #f6f4ee;
   cursor: default;
+  text-decoration: none;
   font: 500 12px/1 "JetBrains Mono", monospace;
   letter-spacing: 0.08em;
   padding: 8px 16px;
   text-transform: uppercase;
 }
 
-.ds-tabbar button {
+.ds-tabbar button,
+.ds-tabbar a {
   cursor: pointer;
 }
 
+.ds-tabbar a:hover,
+.ds-tabbar a:focus-visible {
+  color: #fff;
+}
+
 .ds-tabbar button.active,
-.ds-tabbar span.active {
+.ds-tabbar span.active,
+.ds-tabbar a.active {
   background: #c5251c;
   color: #fff;
 }
@@ -3106,6 +3115,18 @@ html[data-design="decision"]:has(.ds-template) main.container {
   display: grid;
   gap: 14px;
   max-width: 720px;
+}
+
+.ds-footer-home {
+  color: #f6f4ee;
+  font-weight: 700;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.ds-footer-home:hover,
+.ds-footer-home:focus-visible {
+  color: #e0261d;
 }
 
 .ds-footer span {

@@ -167,8 +167,8 @@ const categoryRows = categories.slice(0, 8);
 ---
 
 <section class="ds-template" aria-label={copy.masthead}>
-  <div class="ds-tabbar" aria-hidden="true">
-    <span class="active">{copy.tabIssue}</span>
+  <div class="ds-tabbar">
+    <a class="active" href={`${prefix}/`} aria-label={isEn ? "Go to home" : "Zur Startseite"}>{copy.tabIssue}</a>
   </div>
 
   <div class="ds-stage">
@@ -347,7 +347,7 @@ const categoryRows = categories.slice(0, 8);
 
       <footer class="ds-footer">
         <div class="ds-footer-brand">
-          <strong>utildesk</strong>
+          <a class="ds-footer-home" href={`${prefix}/`} aria-label={isEn ? "Utildesk home" : "Utildesk Startseite"}>utildesk</a>
           <span>{copy.footer}</span>
         </div>
         <nav class="ds-footer-links" aria-label={isEn ? "Footer navigation" : "Footer-Navigation"}>
