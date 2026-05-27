@@ -2,6 +2,7 @@
 import ToolCard from "../../../../components/ToolCard.astro";
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import { ROBOTS_NOINDEX_FOLLOW } from "../../../../lib/searchIndexPolicy.mjs";
+import { humanizeTagLabel } from "../../../../lib/seoText";
 import { listDisplayTools } from "../../../../lib/toolDisplay";
 import { slugifyTag, tagHref } from "../../../../lib/tagRoutes";
 import {
@@ -35,16 +36,17 @@ if (!selectedTag) {
 
 const enabledTools = await listDisplayTools("en");
 const selectedTagLower = selectedTag.toLowerCase();
+const selectedTagLabel = humanizeTagLabel(selectedTag);
 const filteredTools = enabledTools
   .filter((tool) => tool.tags.some((tag) => tag.toLowerCase() === selectedTagLower))
   .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "en"));
 const tagSlug = slugifyTag(selectedTag);
-const description = `Filtered selection of AI tools tagged ${selectedTag}.`;
+const description = `Filtered selection of AI tools tagged ${selectedTagLabel}.`;
 
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: `${selectedTag} AI tools`,
+  name: `${selectedTagLabel} AI tools`,
   numberOfItems: filteredTools.length,
   itemListElement: filteredTools.slice(0, 200).map((tool, index) => ({
     "@type": "ListItem",
@@ -54,17 +56,17 @@ const itemListSchema = {
   })),
 };
 const collectionSchema = buildCollectionPageSchema({
-  name: `Tag: ${selectedTag}`,
+  name: `Tag: ${selectedTagLabel}`,
   description,
   url: `${SITE_URL}/en/tools/tag/${tagSlug}/`,
-  about: [selectedTag, "AI tools", "Tags"],
+  about: [selectedTagLabel, "AI tools", "Tags"],
   mainEntity: itemListSchema,
   inLanguage: SITE_LANGUAGE_EN,
 });
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Directory", url: `${SITE_URL}/en/` },
   { name: "Tools", url: `${SITE_URL}/en/tools/` },
-  { name: `Tag: ${selectedTag}`, url: `${SITE_URL}${tagHref(selectedTag, "en")}` },
+  { name: `Tag: ${selectedTagLabel}`, url: `${SITE_URL}${tagHref(selectedTag, "en")}` },
 ]);
 
 const tagFrequency = new Map<string, number>();
@@ -87,8 +89,8 @@ const visibleTags = Array.from(tagFrequency.entries())
 
 <BaseLayout
   locale="en"
-  title={`${selectedTag} - Utildesk Tools`}
-  description={`Tools tagged ${selectedTag} in the Utildesk directory`}
+  title={`${selectedTagLabel} - Utildesk Tools`}
+  description={`Tools tagged ${selectedTagLabel} in the Utildesk directory`}
   robots={ROBOTS_NOINDEX_FOLLOW}
 >
   <Fragment slot="head">
@@ -99,9 +101,9 @@ const visibleTags = Array.from(tagFrequency.entries())
   </Fragment>
 
   <section class="hero" style="padding: 60px 0 40px;">
-    <h1 class="hero-title">Tag: {selectedTag}</h1>
+    <h1 class="hero-title">Tag: {selectedTagLabel}</h1>
     <p class="hero-subtitle">
-      Filtered selection of tools tagged {selectedTag}.
+      Filtered selection of tools tagged {selectedTagLabel}.
     </p>
   </section>
 
