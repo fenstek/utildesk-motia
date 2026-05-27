@@ -81,6 +81,10 @@ const normalizedTitle = normalizeSeoText(title);
 const normalizedDescription = normalizeSeoText(description);
 const siteSuffixPattern = /\s+(?:—|–|-|\|)\s+Utildesk$/;
 const baseTitle = normalizeSeoText(normalizedTitle.replace(siteSuffixPattern, ""));
+const englishAiSubject = (label: string, fallback = "AI tools") => {
+  const subject = normalizeSeoText(label || fallback);
+  return subject.toLowerCase() === "ai" ? "AI tools" : `${subject} AI tools`;
+};
 
 let resolvedTitle = normalizedTitle;
 let resolvedDescription = normalizedDescription;
@@ -109,7 +113,7 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
 } else if (/^(?:\/en)?\/tools\/tag\/[^/]+\/$/.test(pathname)) {
   const tagLabel = humanizeTagLabel(contentSegments[2] ?? baseTitle);
   resolvedTitle = locale === "en"
-    ? `${tagLabel || "Tag"} AI tools | Utildesk`
+    ? `${englishAiSubject(tagLabel, "Tagged tools")}: compare use cases and workflow fit | Utildesk`
     : buildCollectionMetaTitle(tagLabel || "Tag", "AI-Tools mit diesem Tag entdecken");
   resolvedDescription = enrichMetaDescription(
     resolvedDescription || `Tools mit dem Tag ${tagLabel} im Utildesk-Verzeichnis.`,
@@ -121,7 +125,7 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
   );
 } else if (pathname === "/category/" || pathname === "/en/category/") {
   resolvedTitle = locale === "en"
-    ? "AI Tool Categories | Utildesk"
+    ? "AI Tool Categories: Browse Tools by Workflow and Use Case | Utildesk"
     : buildCollectionMetaTitle("AI-Tools", "nach Kategorien entdecken");
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
@@ -131,7 +135,7 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
 } else if (/^(?:\/en)?\/category\/[^/]+\/$/.test(pathname)) {
   const categoryName = baseTitle || humanizeTagLabel(contentSegments[1] ?? "Kategorie");
   resolvedTitle = locale === "en"
-    ? `${categoryName} AI tools | Utildesk`
+    ? `${englishAiSubject(categoryName, "Category tools")}: compare use cases and pricing | Utildesk`
     : buildCollectionMetaTitle(categoryName, "passende AI-Tools entdecken");
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
@@ -168,8 +172,17 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
     : "Impressum und Anbieterkennzeichnung | Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
-      ? "Legal provider and contact information for Utildesk."
+      ? "Legal provider details, editorial responsibility and contact information for the Utildesk AI tools directory."
       : "Hier findest du die gesetzlichen Anbieterangaben und Kontaktinformationen für Utildesk.",
+  ]);
+} else if (pathname === "/methodologie" || pathname === "/methodologie/" || pathname === "/en/methodology/" || pathname === "/en/methodology") {
+  resolvedTitle = locale === "en"
+    ? "Utildesk Methodology: How AI Tools Are Reviewed and Structured | Utildesk"
+    : "Utildesk-Methodologie: Wie KI-Tools geprüft und strukturiert werden | Utildesk";
+  resolvedDescription = enrichMetaDescription(resolvedDescription, [
+    locale === "en"
+      ? "Learn how Utildesk structures AI tool profiles, categories, pricing signals and editorial review notes."
+      : "So strukturiert Utildesk Tool-Profile, Kategorien, Preis-Hinweise und redaktionelle Prüfnotizen.",
   ]);
 } else if (pathname === "/" || pathname === "/en/") {
   resolvedTitle = locale === "en"
