@@ -3798,3 +3798,149 @@ html[data-design="decision"]:not(:has(.ds-template)) .footer-copy {
     text-align: left;
   }
 }
+
+/* Interior header parity: use the same one-line Entscheidungsblatt menu as the front page. */
+html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) auto minmax(0, 0.72fr);
+  align-items: center;
+  gap: 24px;
+  padding: 14px 56px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-top {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-bottom {
+  display: contents;
+  padding: 0;
+  border: 0;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-status {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand {
+  flex: 0 0 auto;
+  gap: 6px;
+  color: #0c0c0a;
+  font: 700 13px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand-mark-text,
+html[data-design="decision"]:not(:has(.ds-template)) .brand-sub,
+html[data-design="decision"]:not(:has(.ds-template)) .brand-dot {
+  color: #0c0c0a;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-meta {
+  flex-wrap: nowrap;
+  gap: 10px;
+  min-width: 0;
+  color: #6a6a62;
+  font: 400 12px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .live-dot {
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  background: #c5251c;
+  animation: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 28px;
+  color: #0c0c0a;
+  font: 500 13px/1 "Bricolage Grotesque", system-ui, sans-serif;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links a {
+  margin: 0;
+  padding: 0 0 2px;
+  color: #0c0c0a;
+  font: inherit;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links a:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .nav-links a[aria-current="page"] {
+  border-bottom-color: #c5251c;
+  color: #0c0c0a;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions {
+  grid-column: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 14px;
+  white-space: nowrap;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost,
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .design-toggle {
+  min-height: 28px;
+  padding: 4px 10px;
+  border: 1px solid #b6b1a0;
+  border-radius: 3px;
+  background: transparent;
+  color: #0c0c0a;
+  font: 700 11px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost:first-child {
+  border-color: transparent;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .design-toggle:hover,
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost:focus-visible,
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .design-toggle:focus-visible {
+  border-color: #c5251c;
+  color: #c5251c;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main span em {
+  color: #c5251c;
+  font: inherit;
+}
+
+@media (max-width: 1180px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .hdr-top,
+  html[data-design="decision"]:not(:has(.ds-template)) .nav-links,
+  html[data-design="decision"]:not(:has(.ds-template)) .nav-actions {
+    grid-column: 1;
+    justify-content: flex-start;
+  }
+}

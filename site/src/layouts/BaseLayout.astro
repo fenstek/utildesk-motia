@@ -76,6 +76,7 @@ const ratgeberApiHref = locale === "en" ? "/en/api/ratgeber.json" : "/api/ratgeb
 const currentYear = new Date().getFullYear();
 const normalizedPathname = normalizePath(pathname);
 const decisionIssueLabel = locale === "en" ? "↳ Issue № 049" : "↳ Ausgabe № 049";
+const decisionIssueLine = locale === "en" ? "Issue 049" : "Ausgabe 049";
 const decisionNavHome = locale === "en" ? "Decisions" : "Entscheidungen";
 const decisionNavTools = locale === "en" ? "Tool Index" : "Tool-Index";
 const decisionNavGuides = locale === "en" ? "Guides" : "Ratgeber";
@@ -85,6 +86,7 @@ const decisionDeck = locale === "en"
   ? "An editorial decision desk for AI tools"
   : "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge";
 const decisionEdited = locale === "en" ? "Edited in Germany" : "Redigiert in Deutschland";
+const decisionBrandSub = locale === "en" ? "decision desk" : "entscheidungsblatt";
 const decisionMastheadTitle = (() => {
   const deTitles: Record<string, string> = {
     "/tools/": "Tool-Index.",
@@ -110,6 +112,11 @@ const decisionMastheadTitle = (() => {
   if (/^(?:\/en)?\/category\/[^/]+\/$/.test(normalizedPathname)) return locale === "en" ? "Category." : "Kategorie.";
   return locale === "en" ? "Decision Desk." : "Entscheidungsblatt.";
 })();
+const decisionMastheadTitleText = decisionMastheadTitle.replace(/\.$/, "");
+const isDecisionHome = normalizedPathname === "/" || normalizedPathname === "/en/";
+const isRatgeberSection = /^(?:\/en)?\/ratgeber(?:\/|$)/.test(normalizedPathname);
+const isToolsSection = /^(?:\/en)?\/tools(?:\/|$)/.test(normalizedPathname);
+const isMethodologySection = normalizedPathname === "/methodologie/" || normalizedPathname === "/en/methodology/";
 const DEFAULT_SOCIAL_IMAGE = "/social/utildesk-og.jpg";
 const socialImageSource = propImage || DEFAULT_SOCIAL_IMAGE;
 const socialImageUrl = /^(?:https?:)?\/\//i.test(socialImageSource)
@@ -375,9 +382,11 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           <a href={homeHref} class="brand">
 
-            <span class="brand-mark-text">[ utildesk ]</span>
+            <span class="brand-mark-text">utildesk</span>
 
-            <span class="brand-sub">{ui.brandSub}</span>
+            <span class="brand-dot">·</span>
+
+            <span class="brand-sub">{decisionBrandSub}</span>
 
           </a>
 
@@ -385,13 +394,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
             <span>v4.3.0-decisions</span>
 
-            <span class="dot">/</span>
+            <span class="dot">·</span>
 
             <span><span class="live-dot"></span>live</span>
 
-            <span class="dot">/</span>
+            <span class="dot">·</span>
 
-            <span>curated-no-ads</span>
+            <span>27.05.2026</span>
 
           </div>
 
@@ -401,13 +410,13 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
           <div class="nav-links">
 
-            <a href={homeHref}>{decisionNavHome}</a>
+            <a href={homeHref} aria-current={isDecisionHome ? "page" : undefined}>{decisionNavHome}</a>
 
-            <a href={ratgeberHref}>{decisionNavGuides}</a>
+            <a href={ratgeberHref} aria-current={isRatgeberSection ? "page" : undefined}>{decisionNavGuides}</a>
 
-            <a href={toolsHref}>{decisionNavTools}</a>
+            <a href={toolsHref} aria-current={isToolsSection ? "page" : undefined}>{decisionNavTools}</a>
 
-            <a href={methodologyHref}>{decisionNavMethod}</a>
+            <a href={methodologyHref} aria-current={isMethodologySection ? "page" : undefined}>{decisionNavMethod}</a>
 
           </div>
 
@@ -454,18 +463,19 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <div class="decision-masthead" aria-hidden="true">
 
       <div class="decision-masthead-side">
-        {decisionIssueLabel.replace("↳ ", "")}<br />
+        {decisionIssueLine}<br />
         Mittwoch · 27. Mai 2026<br />
         {decisionEdited}
       </div>
       <div class="decision-masthead-main">
-        <span>{decisionMastheadTitle}</span>
+        <span>{decisionMastheadTitleText}<em>.</em></span>
         <p>{decisionDeck}</p>
       </div>
       <div class="decision-masthead-side decision-masthead-side-right">
         25 {locale === "en" ? "decisions" : "Entscheidungen"}<br />
         1171 {locale === "en" ? "tools indexed" : "Tools indiziert"}<br />
-        0 {locale === "en" ? "paid placements" : "bezahlte Platzierungen"}
+        0 {locale === "en" ? "paid placements" : "bezahlte Platzierungen"}<br />
+        ISSN — {locale === "en" ? "work in progress" : "wir arbeiten dran"}
       </div>
 
     </div>
