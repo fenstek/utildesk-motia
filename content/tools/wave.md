@@ -12,6 +12,9 @@ popularity: 0
 
 Wave ist eine cloudbasierte Buchhaltungs- und Finanzsoftware, die speziell für kleine Unternehmen, Freiberufler und Selbstständige entwickelt wurde. Die Plattform bietet eine Kombination aus Buchhaltung, Rechnungsstellung und Finanzmanagement mit einem starken Fokus auf Benutzerfreundlichkeit und Automatisierung. Wave nutzt KI-gestützte Funktionen, um den Verwaltungsaufwand zu reduzieren und Finanzprozesse effizienter zu gestalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wave-editorial.webp" alt="Illustration zu Wave: Belege, Rechnungen und Zahlungsströme werden für die Buchhaltung sortiert" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Wave geeignet?
 
 Wave richtet sich vor allem an Kleinunternehmer, Start-ups, Freiberufler und Selbstständige, die eine kostengünstige und einfach zu bedienende Lösung für Buchhaltung und Rechnungsstellung suchen. Die Software ist ideal für Nutzer, die keine umfangreichen Vorkenntnisse in Buchhaltung haben, aber dennoch professionelle Finanztools benötigen. Zudem eignet sich Wave für Unternehmen, die ihre Finanzprozesse digitalisieren und automatisieren möchten, ohne in teure Software investieren zu müssen.

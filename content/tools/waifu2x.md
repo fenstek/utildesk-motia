@@ -11,6 +11,9 @@ popularity: 0
 
 waifu2x ist ein Upscaling- und Rauschreduktionswerkzeug, das besonders für Anime-, Illustrations- und bestimmte Grafikstile bekannt ist. Der Nutzen liegt in schneller Vergrößerung und Glättung, nicht in universeller Foto-Restaurierung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/waifu2x-editorial.webp" alt="Illustration zu Waifu2x: kleine verrauschte Grafiken werden in einem Atelier sauber vergrößert" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Waifu2x geeignet?
 
 waifu2x passt zu Nutzern, die kleine Illustrationen, Anime-Bilder, Icons oder stilisierte Grafiken verbessern möchten. Für Fotos, Produktbilder oder professionelle Printproduktion sind spezialisierte Upscaler und manuelle Prüfung oft besser.

@@ -16,6 +16,9 @@ Vyrill ist eine Video-Commerce-Plattform für Marken, Retailer und Agenturen, di
 
 Damit sitzt Vyrill an einer Stelle, die viele Teams unterschätzen. Video ist oft vorhanden, aber schlecht erschlossen: Dateien liegen in DAM-Systemen, Social-Ordnern, Agentur-Übergaben oder alten Kampagnenarchiven. Vyrill will daraus eine aktivierbare Bibliothek machen. Das ist besonders relevant, wenn UGC und Produktvideos nicht nur Content, sondern ein Verkaufs- und Datensignal sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/vyrill-editorial.webp" alt="Illustration zu Vyrill: Videoarchive werden für Commerce-Kampagnen durchsucht und kuratiert" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Vyrill geeignet?
 
 Vyrill passt zu E-Commerce-Teams, Brand Managern, Retail-Media-Teams, Performance-Marketing, Agenturen und Content-Operations, die bereits viele Videos besitzen oder regelmäßig neues Creator- und Kundenmaterial einsammeln. Besonders sinnvoll ist es für Marken mit größeren Produktkatalogen, wiederkehrenden Kampagnen und vielen Clips, die man nicht mehr manuell durchsehen möchte.

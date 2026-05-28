@@ -15,6 +15,9 @@ translation: full
 
 Wave is cloud-based accounting and finance software designed specifically for small businesses, freelancers, and self-employed professionals. The platform combines accounting, invoicing, and financial management with a strong focus on ease of use and automation. Wave uses AI-powered features to reduce administrative work and make financial processes more efficient.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wave-editorial.webp" alt="Illustration for Wave: receipts, invoices, and payment flows are organized for bookkeeping" loading="lazy" decoding="async" />
+</figure>
 ## Who is Wave for?
 
 Wave is aimed primarily at small business owners, startups, freelancers, and self-employed professionals who are looking for an affordable, easy-to-use solution for accounting and invoicing. The software is ideal for users who do not have extensive accounting experience but still need professional financial tools. It is also suitable for businesses that want to digitize and automate their financial processes without investing in expensive software.
