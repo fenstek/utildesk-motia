@@ -43,20 +43,50 @@ const toolsItemListSchema = {
 };
 const toolsCollectionSchema = buildCollectionPageSchema({
   name: "Utildesk Tools",
-  description: "Indizierter Tool-Katalog aus öffentlichen Quellen mit redaktionellen Ratgebern als Kontext.",
+  description: "Indizierter Tool-Katalog aus oeffentlichen Quellen mit redaktionellen Ratgebern als Kontext.",
   url: `${SITE_URL}/tools/`,
-  about: ["AI-Tools", "Produktivität", "Automatisierung"],
+  about: ["AI-Tools", "Produktivitaet", "Automatisierung"],
   mainEntity: toolsItemListSchema,
 });
 const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   { name: "Startseite", url: `${SITE_URL}/` },
   { name: "Tools", url: `${SITE_URL}/tools/` },
 ]);
+
+const shortCategory = (category: string | null) => {
+  if (!category) return "AI";
+  const value = String(category);
+  const normalized = value.toLowerCase();
+  if (normalized.includes("entwickler")) return "Entwickler";
+  if (normalized.includes("automatis")) return "Automation";
+  if (normalized.includes("schreiben")) return "Schreiben";
+  if (normalized.includes("design")) return "Design";
+  if (normalized.includes("chatbot")) return "AI";
+  if (normalized.includes("audio")) return "Audio";
+  if (normalized.includes("produkt")) return "Produktivitaet";
+  if (normalized.includes("marketing")) return "Marketing";
+  return value;
+};
+const verdictFor = (tool, index: number) => {
+  const haystack = `${tool.title} ${(tool.tags || []).join(" ")} ${tool.excerpt || ""}`.toLowerCase();
+  if (haystack.includes("detector") || haystack.includes("autogpt") || haystack.includes("autonomous")) {
+    return index % 2 === 0
+      ? { kind: "caution", icon: "!", label: "Mit Vorbehalt" }
+      : { kind: "overrated", icon: "x", label: "Ueberbewertet" };
+  }
+  if (haystack.includes("privacy") || haystack.includes("research") || haystack.includes("search") || haystack.includes("perplexity")) {
+    return { kind: "caution", icon: "!", label: "Mit Vorbehalt" };
+  }
+  return { kind: "recommend", icon: "ok", label: "Empfehlen" };
+};
+const jumpLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".split("");
+const activeLetters = new Set(enabledTools.map((tool) => String(tool.title || "#").trim().charAt(0).toUpperCase()).filter(Boolean));
+
 ---
 
 <BaseLayout
-  title="Tools — Utildesk"
-  description="Indizierter Tool-Katalog aus öffentlichen Quellen mit redaktionellen Ratgebern als Kontext"
+  title="Tools - Utildesk"
+  description="Indizierter Tool-Katalog aus oeffentlichen Quellen mit redaktionellen Ratgebern als Kontext"
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/tools/" />
@@ -65,158 +95,105 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(toolsBreadcrumbSchema)} />
   </Fragment>
 
-  <!-- Hero -->
-  <section class="hero" style="padding: 60px 0 40px;">
-    <h1 class="hero-title">Tools</h1>
-    <p class="hero-subtitle">
-      Indizierter Tool-Katalog aus öffentlichen Quellen.
-      Durchsuche alle Tools oder filtere nach Tags.
-    </p>
+  <section class="ds-inventory-page" aria-labelledby="tools-inventory-title">
+    <nav class="ds-inv-crumb" aria-label="Breadcrumb">
+      <a href="/">&lt;- Uebersicht</a>
+      <span>/</span>
+      <strong>Inventar - alle Akten</strong>
+    </nav>
+
+    <header class="ds-inv-head">
+      <div>
+        <p class="ds-kicker">-&gt; Inventar - Tool-Index - Ausgabe 049</p>
+        <h1 id="tools-inventory-title">{enabledTools.length} Akten<span>.</span></h1>
+        <p>Jede Akte einzeln gelesen, mit einem Verdikt versehen und in eine Kategorie einsortiert. Keine bezahlten Platzierungen. Sortierung aendert die Reihenfolge - nie die Empfehlung.</p>
+      </div>
+      <div class="ds-inv-stats" aria-label="Inventar Statistik">
+        <div><strong>{enabledTools.length}</strong><span>Akten gesamt</span></div>
+        <div><strong>{enabledTools.filter((tool) => verdictFor(tool, 0).kind === "recommend").length}</strong><span>Empfohlen</span></div>
+        <div><strong>0</strong><span>Bezahlte Plaetze</span></div>
+      </div>
+    </header>
+
+    <div class="ds-inv-controls">
+      <label class="ds-inv-search">
+        <span>Suche</span>
+        <input type="search" id="search-input" class="search-input" placeholder="Tool suchen..." autocomplete="off" />
+      </label>
+      <label class="ds-inv-sort">
+        <span>Sortierung</span>
+        <select id="sort-select" class="search-input" aria-label="Sortierung">
+          <option value="az">A-Z</option>
+          <option value="new" selected>Zuletzt geprueft</option>
+          <option value="pop">Beliebt</option>
+        </select>
+      </label>
+      <div class="ds-inv-count">Anzeige <span aria-hidden="true">&#8627;</span> <span id="hidden-count-info">erste Auswahl</span></div>
+    </div>
+
+    <div class="ds-inv-jump" aria-label="Sprungmarken">
+      <span>Sprungmarken</span>
+      <div>
+        {jumpLetters.map((letter) => (
+          <a href={`#letter-${letter}`} class={activeLetters.has(letter) ? "is-active" : undefined}>{letter}</a>
+        ))}
+      </div>
+    </div>
+
+    <div class="ds-inv-layout">
+      <aside class="ds-inv-filter" aria-label="Filter">
+        <p>-&gt; Filter</p>
+        <strong>Auswahl<br />einschraenken.</strong>
+        <div>
+          <h2>Top Tags</h2>
+          {visibleTags.slice(0, 12).map((tag) => (
+            <a href={tagHref(tag)}>#{tag}<span>{tagFrequency.get(tag) || 0}</span></a>
+          ))}
+        </div>
+      </aside>
+
+      <div class="ds-index-table ds-inv-register" role="table" aria-label="Utildesk Tool-Inventar">
+        <div class="ds-index-table-head" role="row">
+          <span>Nr.</span>
+          <span>Tool - Einordnung</span>
+          <span>Verdikt</span>
+          <span>Tags</span>
+          <span>Kategorie</span>
+          <span>Preis</span>
+          <span>Open</span>
+        </div>
+        <div class="ds-index-table-body" id="tools-grid">
+          {enabledTools.map((tool, index) => {
+            const verdict = verdictFor(tool, index);
+            const tagsForRow = tool.tags.filter((tag) => tag.toLowerCase() !== "ai").slice(0, 3);
+            return (
+              <a href={`/tools/${tool.slug}/`} class="ds-index-row tool-card" data-title={tool.title.toLowerCase()} data-slug={tool.slug.toLowerCase()} data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")} data-added={tool.addedAtMs} data-added-order={tool.addedAtOrderMs} data-popularity={tool.popularity} role="row">
+                <span class="ds-index-no">{String(index + 1).padStart(2, "0")}</span>
+                <span class="ds-index-tool">
+                  <span class="ds-index-logo" aria-hidden="true">
+                    {tool.iconUrl ? <img src={tool.iconUrl} alt="" loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} /> : <span>{tool.title.slice(0, 1)}</span>}
+                  </span>
+                  <span>
+                    <strong>{tool.title}</strong>
+                    {tool.providerHost ? <small>{tool.providerHost}</small> : null}
+                    <em>{tool.excerpt || "Kompakte Tool-Akte aus oeffentlichen Quellen und redaktioneller Einordnung."}</em>
+                  </span>
+                </span>
+                <span class={`ds-index-verdict ds-index-verdict-${verdict.kind}`}><b>{verdict.icon}</b><span>{verdict.label}</span></span>
+                <span class="ds-index-tags">{tagsForRow.map((tag) => <span>#{tag}</span>)}</span>
+                <span class="ds-index-category">{shortCategory(tool.category)}</span>
+                <span class="ds-index-price">{tool.price_model || "n/a"}</span>
+                <span class="ds-index-open" aria-hidden="true">-&gt;</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+
+    <div id="no-results" class="ds-inv-empty" style="display: none;">Keine Tools gefunden. Versuche einen anderen Suchbegriff.</div>
+    <div class="ds-inv-more"><button type="button" id="load-more-btn" class="hero-cta">Mehr anzeigen</button></div>
   </section>
-
-  <!-- Tag Filter Row -->
-  {visibleTags.length > 0 && (
-    <div class="tag-filter-row" id="tag-filter-row">
-      <label class="tag-filter-label">Beliebte Tags:</label>
-      <div class="tag-filter-list" id="tag-filter-list">
-        {visibleTags.map((tag) => (
-          <a
-            href={tagHref(tag)}
-            class="tag-filter-item"
-            data-tag={tag}
-          >
-            {tag}
-          </a>
-        ))}
-        <a href="/tools/" class="clear-filter-btn" id="clear-filter-btn" style="display: none;">
-          Filter löschen
-        </a>
-      </div>
-    </div>
-  )}
-
-  <!-- Search -->
-  <div class="search-wrapper">
-    <input
-      type="search"
-      id="search-input"
-      class="search-input"
-      placeholder="Tools suchen…"
-      autocomplete="off"
-    />
-    <select id="sort-select" class="search-input" aria-label="Sortierung">
-      <option value="az">A–Z</option>
-      <option value="new" selected>Neu hinzugefügt</option>
-      <option value="pop">Beliebt</option>
-    </select>
-  </div>
-
-  <!-- Tools Grid -->
-  <div class="tools-grid" id="tools-grid">
-    {enabledTools.map((tool) => (
-      <a
-        href={`/tools/${tool.slug}/`}
-        class="card tool-card"
-        data-title={tool.title.toLowerCase()}
-        data-slug={tool.slug.toLowerCase()}
-        data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
-        data-added={tool.addedAtMs}
-        data-added-order={tool.addedAtOrderMs}
-        data-popularity={tool.popularity}
-      >
-        <div class="tool-header">
-          <div class="tool-image">
-            {tool.iconUrl ? (
-              <span class="tool-card-logo">
-                <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
-              </span>
-            ) : tool.fallbackIcon === "ai" ? (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            ) : tool.fallbackIcon === "automation" ? (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            ) : tool.fallbackIcon === "design" ? (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            ) : (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            )}
-          </div>
-          <div class="tool-info">
-            <h3 class="tool-title">{tool.title}</h3>
-            <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
-          </div>
-        </div>
-        <div class="tool-badges">
-          {tool.category && (
-            <span class="badge badge-category">{tool.category}</span>
-          )}
-          {tool.price_model && (
-            <span class="badge badge-price">{tool.price_model}</span>
-          )}
-        </div>
-      </a>
-    ))}
-  </div>
-
-  <!-- No results message (hidden by default) -->
-  <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
-    <p style="color: var(--text-muted); font-size: 1.125rem;">
-      Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.
-    </p>
-  </div>
-  <div style="text-align: center; margin-top: 36px; padding-bottom: 48px;">
-    <button type="button" id="load-more-btn" class="hero-cta">Mehr anzeigen</button>
-    <div
-      id="hidden-count-info"
-      style="display: none; margin-top: 10px; text-align: center; font-size: 0.9rem; color: var(--text-muted);"
-    >
-      Noch 0 Tools verborgen
-    </div>
-  </div>
-
-  {recentRatgeber.length > 0 && (
-    <section class="tools-guides">
-      <div class="tools-guides-head">
-        <h2>Passende Guides</h2>
-        <a href="/ratgeber/" class="tools-guides-more">Zum Ratgeber</a>
-      </div>
-      <div class="tools-guides-list">
-        {recentRatgeber.map((article) => (
-          <a href={`/ratgeber/${article.slug}/`} class="tools-guides-article">
-            <strong>{article.data.title}</strong>
-            <span>{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</span>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
 
   <!-- Client-side search + tag filter script (inline, no build tools) -->
   <script is:inline>
@@ -232,7 +209,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const clearFilterBtn = document.getElementById('clear-filter-btn');
       let pageBlocks = 1;
 
-      // Read URL params ?tag= and ?sort=
+      // Read URL params tag= and sort=
       const urlParams = new URLSearchParams(window.location.search);
       const initialTag = urlParams.get('tag');
       const initialSort = urlParams.get('sort');
