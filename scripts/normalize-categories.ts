@@ -119,11 +119,16 @@ const files = fs
 
 const changes = [];
 const categoryCounts = new Map();
+let activeTools = 0;
 
 for (const file of files) {
   const filePath = path.join(toolsDir, file);
   const raw = fs.readFileSync(filePath, "utf8");
   const data = parseSimpleFrontmatter(raw);
+  if (data.disabled === true || String(data.disabled || "").toLowerCase() === "true") {
+    continue;
+  }
+  activeTools += 1;
   const body = raw.replace(/^---\n[\s\S]*?\n---\n?/, "");
   const slug = String(data.slug || file.replace(/\.md$/, ""));
   const title = String(data.title || slug);
@@ -147,7 +152,7 @@ for (const file of files) {
 
 const summary = {
   dryRun: !write,
-  totalTools: files.length,
+  totalTools: activeTools,
   changed: changes.length,
   uniqueCategoriesAfter: categoryCounts.size,
   categoryCounts: Object.fromEntries([...categoryCounts.entries()].sort((a, b) => a[0].localeCompare(b[0], "de"))),
