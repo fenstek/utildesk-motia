@@ -211,6 +211,15 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
   const tierDNoindex =
     quality.tier === "D" && (quality.bodyLen < 4000 || (!hasAffiliate && popularity <= 0));
 
+  if (quality.tier === "A" || quality.tier === "B") {
+    return {
+      indexable: true,
+      robots: ROBOTS_INDEX_FOLLOW,
+      googlebotRobots: null,
+      reason: "curated_tier",
+    };
+  }
+
   if (tierDNoindex) {
     return {
       indexable: false,
