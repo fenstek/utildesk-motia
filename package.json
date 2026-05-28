@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check:editorial": "node scripts/check_editorial_templates.mjs",
+    "check:tool-quality": "node scripts/check_tool_quality_guard.mjs",
     "audit:templates": "node scripts/audit-templates.mjs",
     "apply:tool-quality": "node scripts/apply-tool-quality-frontmatter.mjs",
     "normalize:categories": "node --no-warnings scripts/normalize-categories.ts",
