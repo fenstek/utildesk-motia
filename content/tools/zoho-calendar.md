@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://www.zoho.com/de/calendar/"
-popularity: 0
+popularity: 2
 ---
 
 # Zoho Calendar

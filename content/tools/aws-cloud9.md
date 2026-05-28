@@ -2,10 +2,10 @@
 slug: aws-cloud9
 title: AWS Cloud9
 category: Developer
-price_model: "Nutzungsbasiert"
+price_model: Nutzungsbasiert
 tags: [coding, cloud, developer]
 official_url: "https://aws.amazon.com/cloud9/"
-popularity: 0
+popularity: 65
 ---
 
 # AWS Cloud9

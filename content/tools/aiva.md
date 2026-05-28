@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai,assistant,automation]
 official_url: "https://www.aiva.ai/"
-popularity: 73
+popularity: 72
 description: AIVA ist ein KI-Musikgenerator für Kompositionen, Soundtracks, Hintergrundmusik und kreative Audio-Entwürfe.
 ---
 # AIVA
