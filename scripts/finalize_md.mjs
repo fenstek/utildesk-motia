@@ -3,6 +3,7 @@ import fs from "node:fs";
 import process from "node:process";
 import path from "node:path";
 import { normalizePriceModel } from "./lib/price_model_policy.mjs";
+import { stripTemplateBoilerplate } from "../site/src/lib/toolQuality.mjs";
 
 const TOOL_JSON = process.argv[2];
 if (!TOOL_JSON) {
@@ -68,7 +69,7 @@ function upsertFrontmatter(md, kv){
 
   const outLines = [];
   // keep stable order: slug,title,category,price_model,tags,official_url,affiliate_url then rest
-  const preferred = ["slug","title","category","price_model","tags","official_url","affiliate_url"];
+  const preferred = ["slug","title","category","price_model","tags","official_url","affiliate_url","tier","generated_at"];
   const seen = new Set();
 
   for (const k of preferred){
@@ -83,6 +84,28 @@ function upsertFrontmatter(md, kv){
   }
 
   return `---\n${outLines.join("\n")}\n---\n` + rest;
+}
+
+function removeFrontmatterKeys(md, keys) {
+  const fmMatch = md.match(/^---\n([\s\S]*?)\n---\n/);
+  if (!fmMatch) return md;
+
+  const deny = new Set(keys);
+  const cleaned = fmMatch[1]
+    .split("\n")
+    .filter((line) => {
+      const match = line.match(/^([A-Za-z0-9_]+):/);
+      return !match || !deny.has(match[1]);
+    })
+    .join("\n");
+
+  return `---\n${cleaned}\n---\n` + md.slice(fmMatch[0].length);
+}
+
+function stripDocumentBoilerplate(md) {
+  const fmMatch = md.match(/^---\n[\s\S]*?\n---\n?/);
+  if (!fmMatch) return stripTemplateBoilerplate(md);
+  return fmMatch[0] + stripTemplateBoilerplate(md.slice(fmMatch[0].length));
 }
 
 (async () => {
@@ -117,7 +140,19 @@ function upsertFrontmatter(md, kv){
   const price_model = normalizePriceModel(tool.price_model || "");
 
   // Upsert frontmatter values so UI can read canonical metadata
-  md = upsertFrontmatter(md, { official_url, affiliate_url, price_model });
+  md = removeFrontmatterKeys(md, [
+    "lastReviewed",
+    "last_reviewed",
+    "lastReviewedAt",
+    "last_reviewed_at",
+  ]);
+  md = upsertFrontmatter(md, {
+    official_url,
+    affiliate_url,
+    price_model,
+    tier: tool.tier || "D",
+    generated_at: tool.generated_at || new Date().toISOString().slice(0, 10),
+  });
 
   // Remove handlebars blocks
   md = md.replace(/{{#if[^}]*}}/g, "");
@@ -143,6 +178,8 @@ function upsertFrontmatter(md, kv){
 
   // Remove any remaining {{...}}
   md = md.replace(/{{[^}]+}}/g, "");
+
+  md = stripDocumentBoilerplate(md);
 
   // Clean extra blank lines
   md = md.replace(/\n{3,}/g, "\n\n").trim() + "\n";

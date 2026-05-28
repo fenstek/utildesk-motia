@@ -67,6 +67,8 @@ async function main() {
 - Структура: H1, краткое intro, блок "Für wen geeignet", "Hauptfunktionen" (список), "Vorteile/Nachteile", "Preise", "Alternativen" (3–5), "FAQ" (5–8).
 - Без выдуманных фактов: если не уверен — формулируй обобщённо (например "je nach Anbieter/Plan").
 - Если в frontmatter или в тексте упоминается Preis/Preismodell, используй только канонические формулировки: ${CANONICAL_PRICE_MODELS.join(", ")}.
+- Не добавляй псевдоредакционные блоки или bulletpoints с формулировками "Prüfpunkt für", "Praxislauf mit", "Qualitätssicherung in", "Übergabe mit", "Guter Start für" или "Risiko bei".
+- Не используй claims "kuratiert", "redaktionell geprüft" или "zuletzt geprüft", если они не переданы во входных данных.
 - Вставь affiliate ссылку только как placeholder: {{AFFILIATE_URL}} (если ссылки нет — оставь пустым).
 - Верни ОДИН готовый Markdown документ.
 
