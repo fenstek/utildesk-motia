@@ -4227,6 +4227,38 @@ html[data-design="decision"]:not(:has(.ds-template)) .nav-actions #theme-toggle.
   display: none !important;
 }
 
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions {
+  color: #6a6a62;
+  font: 11px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost:first-child {
+  min-height: 0;
+  width: auto;
+  padding: 0;
+  border: 0;
+  color: #6a6a62;
+  font: 11px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .btn-ghost:nth-child(2) {
+  width: 49px;
+  min-height: 25px;
+  font: 11px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions .design-toggle {
+  width: 112px;
+  min-height: 21px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font: 700 11px/1 "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+}
+
 html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
   letter-spacing: normal;
   text-align: left;
