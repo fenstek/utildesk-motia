@@ -1,11 +1,13 @@
 ---
 slug: sanebox
 title: SaneBox
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [productivity, automation, workflow]
 official_url: "https://www.sanebox.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # SaneBox
 
@@ -14,7 +16,6 @@ SaneBox ist ein E-Mail-Produktivitätstool, das Posteingänge automatisch sortie
 ## Für wen ist SaneBox geeignet?
 
 SaneBox passt zu Menschen mit hohem E-Mail-Aufkommen: Führungskräfte, Vertrieb, Support, Freelancer und Wissensarbeiter. Wer nur wenige Nachrichten erhält oder bereits strenge Mailregeln nutzt, braucht es möglicherweise nicht.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sanebox-editorial.webp" alt="Illustration zu SaneBox: Ein Mailroom sortiert Umschlaege in Fokusfaecher, Spaeter-Ablage und Archivschublade" loading="lazy" decoding="async" />

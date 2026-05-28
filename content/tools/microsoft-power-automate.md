@@ -1,14 +1,16 @@
 ---
 slug: microsoft-power-automate
 title: Microsoft Power Automate
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: ["automation"]
 official_url: 'https://flow.microsoft.com/en-us/'
 created_at: "2026-02-13"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-16"
+mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
-
 # Microsoft Power Automate
 
 Microsoft Power Automate ist eine cloudbasierte Automatisierungsplattform, die es Nutzern ermöglicht, wiederkehrende Aufgaben und Prozesse ohne umfangreiche Programmierkenntnisse zu automatisieren. Mit Hilfe von KI-gestützten Workflows können verschiedene Anwendungen und Dienste miteinander verbunden werden, um Zeit zu sparen und die Effizienz zu steigern. Power Automate integriert sich nahtlos in das Microsoft-Ökosystem und unterstützt zahlreiche Drittanbieter-Anwendungen.

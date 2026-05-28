@@ -1,13 +1,14 @@
 ---
 slug: mode-analytics
 title: Mode Analytics
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [analytics, data, collaboration, productivity]
 official_url: "https://mode.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Mode Analytics
 
 Mode Analytics ist eine leistungsstarke Analyseplattform, die speziell für Datenexperten und Entwickler entwickelt wurde. Sie kombiniert SQL-Analyse, Python- und R-Notebooks sowie interaktive Dashboards in einer einzigen Umgebung, um datengetriebene Entscheidungen zu erleichtern. Mit Fokus auf Zusammenarbeit und Produktivität ermöglicht Mode Analytics Teams, komplexe Datenprobleme effizient zu lösen und Erkenntnisse schnell zu teilen.

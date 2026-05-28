@@ -1,13 +1,14 @@
 ---
 slug: frameforge
 title: FrameForge
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [design, video, productivity, automation]
 official_url: "https://www.storyboardsmarter.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # FrameForge
 
 FrameForge ist eine innovative Softwarelösung, die speziell für die Planung und Visualisierung von Film- und Videoprojekten entwickelt wurde. Durch den Einsatz moderner KI-Technologien unterstützt FrameForge Filmemacher, Designer und Kreative dabei, Drehbücher in detaillierte Storyboards und virtuelle Sets umzusetzen. Dies ermöglicht eine effizientere Planung, bessere Kommunikation im Team und eine deutliche Zeitersparnis während der Produktionsvorbereitung.

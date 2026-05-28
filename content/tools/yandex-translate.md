@@ -1,13 +1,14 @@
 ---
 slug: yandex-translate
 title: Yandex.Translate
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [translation, language-tools, writing]
 official_url: "https://translate.yandex.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # Yandex.Translate
 
 Yandex Translate ist ein Online-Übersetzer für schnelle Übersetzungen zwischen vielen Sprachen. Er kann im Alltag helfen, Texte grob zu verstehen, Formulierungen zu prüfen oder einfache Kommunikation vorzubereiten.

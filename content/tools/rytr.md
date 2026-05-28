@@ -1,11 +1,13 @@
 ---
 slug: rytr
 title: Rytr
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "design", "marketing"]
 official_url: "https://rytr.me/"
 affiliate_url: "https://rytr.me/"
+tier: "C"
+generated_at: "2026-05-27"
 created_at: 2026-02-07
 popularity: 17
 description: Rytr ist ein KI-Schreibtool für kurze Marketingtexte, Ideenvarianten, Produktbeschreibungen und einfache Content-Entwürfe.

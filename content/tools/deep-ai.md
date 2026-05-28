@@ -1,13 +1,14 @@
 ---
 slug: deep-ai
 title: Deep AI
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://deepai.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Deep AI
 
 Deep AI ist eine vielseitige Plattform, die Künstliche Intelligenz (KI) und Automatisierung für verschiedene Anwendungsbereiche bereitstellt. Mit einem Fokus auf einfache Integration und nutzerfreundliche Schnittstellen ermöglicht Deep AI Entwicklern und Unternehmen, KI-gestützte Funktionen in ihre Anwendungen einzubinden. Das Angebot reicht von Bild- und Sprachanalyse bis hin zu Textgenerierung und Datenverarbeitung, wobei ein Freemium-Preismodell flexible Nutzung erlaubt.

@@ -1,13 +1,14 @@
 ---
 slug: deepgram
 title: Deepgram
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [audio, transcription, api, developer-tools]
 official_url: "https://deepgram.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Deepgram
 
 Deepgram ist eine KI-basierte Plattform für automatische Spracherkennung und Transkription. Mit modernsten Algorithmen ermöglicht Deepgram die Umwandlung von Audio- und Videoinhalten in durchsuchbaren Text – präzise, schnell und skalierbar. Die Lösung richtet sich insbesondere an Entwickler und Unternehmen, die Spracherkennung in ihre Anwendungen integrieren möchten, und bietet dazu flexible APIs und SDKs.

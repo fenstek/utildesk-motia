@@ -1,13 +1,14 @@
 ---
 slug: ibm-watson-video-analytics
 title: IBM Watson Video Analytics
-category: Video
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [video, analytics]
 official_url: "https://www.ibm.com/products/watsonx"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # IBM Watson Video Analytics
 
 IBM Watson Video Analytics ist eine fortschrittliche Lösung zur Analyse und Auswertung von Videodaten mithilfe künstlicher Intelligenz. Die Plattform ermöglicht es Unternehmen, große Mengen an Videoaufnahmen automatisiert zu verarbeiten, um wertvolle Einblicke zu gewinnen, Sicherheitsmaßnahmen zu verbessern und betriebliche Abläufe zu optimieren. Mit leistungsstarken Funktionen wie Objekterkennung, Bewegungsanalyse und automatischer Ereigniserkennung unterstützt IBM Watson Video Analytics vielfältige Anwendungsbereiche in Industrie, Einzelhandel, öffentlichem Raum und mehr.

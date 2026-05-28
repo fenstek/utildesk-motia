@@ -1,13 +1,14 @@
 ---
 slug: kotlin-multiplatform-mobile
 title: Kotlin Multiplatform Mobile (KMM)
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [mobile-development, framework, developer-tools]
 official_url: "https://kotlinlang.org/multiplatform/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Kotlin Multiplatform Mobile (KMM)
 
 Kotlin Multiplatform Mobile (KMM) ist ein von JetBrains entwickeltes Framework, das es Entwicklern ermöglicht, gemeinsame Codebasen für Android- und iOS-Anwendungen zu erstellen. Durch die Wiederverwendung von Geschäftslogik und anderen Kernkomponenten können mobile Apps effizienter entwickelt werden, während die nativen UI-Elemente beider Plattformen genutzt werden. KMM unterstützt somit eine plattformübergreifende Entwicklung, ohne auf native Performance oder Benutzererfahrung verzichten zu müssen.

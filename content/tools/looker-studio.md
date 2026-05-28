@@ -6,10 +6,11 @@ price_model: Kostenlos
 tags: ["analytics", "data", "dashboard", "reporting", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
 affiliate_url: "https://lookerstudio.google.com/overview"
+tier: "C"
+generated_at: "2026-05-17"
 popularity: 0
 description: Kostenloses Google-Tool für Dashboards, Datenvisualisierung und wiederkehrende Reports.
 ---
-
 # Looker Studio
 
 Looker Studio ist Googles kostenloses Tool für Dashboards und Datenvisualisierung. Es verbindet Datenquellen, baut Reports und macht Kennzahlen für Teams sichtbar.
@@ -21,7 +22,6 @@ Die Stärke liegt in einfachen, teilbaren Reports. Wer Google Analytics, Search 
 Looker Studio passt zu Marketing-, SEO-, Sales- und Analytics-Teams, die Daten schnell in teilbare Reports bringen wollen. Besonders nützlich ist es, wenn Google-Quellen, Tabellen, Ads- oder Webanalyse-Daten regelmäßig sichtbar gemacht werden müssen.
 
 Für komplexe Datenmodelle, strenge Governance oder große Enterprise-BI-Landschaften sind Power BI, Tableau oder Looker oft stärker. Looker Studio punktet eher mit Tempo, Zugänglichkeit und einfacher Verteilung.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/looker-studio-editorial.webp" alt="Illustration zu Looker Studio: Datenquellen werden in einem hellen Analysestudio zu Reports" loading="lazy" decoding="async" />

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [communication,community,chat,voice]
 official_url: "https://discord.com/"
 popularity: 51
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Discord
 
 Discord ist eine vielseitige Kommunikationsplattform, die speziell für den Austausch in Communities, Teams und Gruppen entwickelt wurde. Sie kombiniert Text-, Sprach- und Videochat in einer benutzerfreundlichen Oberfläche und eignet sich hervorragend für produktive Zusammenarbeit sowie Freizeitkommunikation. Mit seinem Freemium-Preismodell bietet Discord sowohl kostenfreie Grundfunktionen als auch optionale Premium-Features, die den Nutzerkomfort erweitern.

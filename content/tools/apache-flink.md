@@ -1,11 +1,13 @@
 ---
 slug: apache-flink
 title: Apache Flink
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [stream-processing,big-data,developer-tools]
 official_url: "https://flink.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Apache Flink
 

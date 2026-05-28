@@ -1,13 +1,14 @@
 ---
 slug: observe-ai
 title: Observe.AI
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [ai, customer-support, analytics, automation]
 official_url: "https://www.observe.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Observe.AI
 
 Observe.AI ist eine KI-gestützte Plattform, die speziell für die Optimierung von Kundenservice-Teams entwickelt wurde. Durch die Kombination von Sprachanalyse, Automatisierung und detaillierten Analysen unterstützt das Tool Unternehmen dabei, die Qualität der Kundeninteraktionen zu verbessern und gleichzeitig Effizienzsteigerungen zu erzielen. Die Lösung hilft dabei, Gespräche in Echtzeit oder nachträglich zu analysieren, um wertvolle Einblicke in die Performance von Agenten und die Kundenzufriedenheit zu gewinnen.

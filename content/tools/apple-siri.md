@@ -1,12 +1,14 @@
 ---
 slug: apple-siri
 title: Apple Siri
-category: AI
+category: "AI Chatbots"
 price_model: Kostenlos
 tags: [assistant, voice, ios]
 official_url: "https://www.apple.com/siri/"
 popularity: 0
 description: "Apple Siri ist Apples Sprachassistent für iPhone, iPad, Mac, HomePod und einfache alltägliche Automationen."
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Apple Siri
 

@@ -1,13 +1,14 @@
 ---
 slug: microsoft-bot-framework
 title: Microsoft Bot Framework
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://learn.microsoft.com/en-us/azure/bot-service?view=azure-bot-service-4.0"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Bot Framework
 
 Das Microsoft Bot Framework ist eine umfassende Plattform zur Entwicklung, Verbindung, Bereitstellung und Verwaltung intelligenter Chatbots. Es ermöglicht Entwicklern, flexible und leistungsfähige Bots zu erstellen, die nahtlos mit Benutzern über verschiedene Kanäle kommunizieren. Die Plattform bietet zahlreiche Tools und SDKs, die den Entwicklungsprozess erleichtern und die Integration mit Microsoft Azure-Diensten unterstützen.

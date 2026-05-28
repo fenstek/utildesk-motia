@@ -1,13 +1,14 @@
 ---
 slug: hubspot-chatbot
 title: HubSpot Chatbot
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [chatbots, customer-support, crm]
 official_url: "https://www.hubspot.com/products/crm/chatbot-builder"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # HubSpot Chatbot
 
 HubSpot Chatbot ist ein KI-gestütztes Tool zur Automatisierung der Kundenkommunikation direkt auf Ihrer Webseite. Es unterstützt Unternehmen dabei, Besucher in Echtzeit zu betreuen, qualifizierte Leads zu generieren und häufige Anfragen ohne manuellen Aufwand zu beantworten. Durch die Integration in das HubSpot CRM können Konversationen nahtlos dokumentiert und personalisierte Marketing- und Vertriebsprozesse ausgelöst werden.

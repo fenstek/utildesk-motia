@@ -1,13 +1,14 @@
 ---
 slug: deepfake
 title: Deepfake
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://deepfake.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Deepfake
 
 Deepfake-Technologie ermöglicht die Erstellung realistischer, künstlich erzeugter Videos und Bilder, bei denen Gesichter oder Stimmen von Personen täuschend echt ausgetauscht oder manipuliert werden. Diese Technik basiert auf Künstlicher Intelligenz und maschinellem Lernen, insbesondere auf Methoden wie Generative Adversarial Networks (GANs). Deepfake-Tools finden Anwendung in Bereichen wie Filmproduktion, Unterhaltung, Bildung und Marketing, bergen aber auch Herausforderungen hinsichtlich Ethik und Missbrauchspotenzial.

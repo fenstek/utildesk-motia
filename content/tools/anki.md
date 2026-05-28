@@ -1,13 +1,14 @@
 ---
 slug: anki
 title: Anki
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [flashcards, education, learning]
 official_url: "https://apps.ankiweb.net/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Anki
 
 Anki ist eine leistungsstarke digitale Lernplattform, die auf dem Prinzip der wiederholten Abfrage basiert. Mit Hilfe von Karteikarten (Flashcards) unterstützt Anki das langfristige Behalten von Wissen durch das sogenannte Spaced Repetition System (SRS). Die Software eignet sich besonders für Schüler, Studenten und alle, die effektiv und nachhaltig lernen möchten.

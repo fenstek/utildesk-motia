@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [no-code, automation, developer]
 official_url: "https://www.microsoft.com/de-de/power-platform/products/power-apps"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Power Apps
 
 Microsoft Power Apps ist eine Plattform zur schnellen Entwicklung von benutzerdefinierten Geschäftsanwendungen ohne umfangreiche Programmierkenntnisse. Die Lösung ermöglicht es Unternehmen, Prozesse zu automatisieren und digitale Lösungen für verschiedene Anforderungen zu erstellen – von einfachen Formularen bis zu komplexen Workflows. Power Apps ist Teil der Microsoft Power Platform und lässt sich nahtlos mit anderen Microsoft-Diensten wie Office 365, Dynamics 365 oder Azure integrieren.

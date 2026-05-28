@@ -1,13 +1,14 @@
 ---
 slug: openfaas
 title: OpenFaaS
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [serverless, developer-tools, cloud, open-source]
 official_url: "https://www.openfaas.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # OpenFaaS
 
 OpenFaaS ist eine Open-Source-Plattform, die es Entwicklern ermöglicht, serverlose Funktionen einfach zu erstellen, bereitzustellen und zu verwalten. Mit Fokus auf Containerisierung und Cloud-Integration bietet OpenFaaS eine flexible Umgebung, um Microservices und Funktionen unabhängig von der Infrastruktur zu betreiben. Die Plattform unterstützt verschiedene Programmiersprachen und kann sowohl lokal als auch in der Cloud genutzt werden.

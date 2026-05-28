@@ -1,13 +1,14 @@
 ---
 slug: engine
 title: ENGINE
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [travel-management, booking, business-travel]
 official_url: "https://engine.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # ENGINE
 
 ENGINE ist eine innovative KI-gestützte Plattform zur Verwaltung von Geschäftsreisen und Buchungen. Die Software richtet sich an Unternehmen, die ihre Reiseplanung optimieren und automatisieren möchten. Durch intelligente Algorithmen ermöglicht ENGINE eine effiziente Organisation von Reiseabläufen, Buchungsprozessen und Reisekostenmanagement. Das Tool bietet eine Kombination aus Benutzerfreundlichkeit und leistungsstarken Funktionen, die sowohl kleinen als auch großen Firmen zugutekommen können.

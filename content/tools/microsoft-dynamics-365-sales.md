@@ -1,13 +1,14 @@
 ---
 slug: microsoft-dynamics-365-sales
 title: Microsoft Dynamics 365 Sales
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.microsoft.com/en-us/dynamics-365/products/sales"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Dynamics 365 Sales
 
 Microsoft Dynamics 365 Sales ist eine umfassende CRM-Lösung, die speziell entwickelt wurde, um Vertriebsprozesse durch den Einsatz von Künstlicher Intelligenz (KI) zu optimieren und die Produktivität von Verkaufsteams zu steigern. Die Plattform vereint datengestützte Einblicke, Automatisierung und integrierte Kommunikation, um den gesamten Vertriebszyklus effizienter zu gestalten.

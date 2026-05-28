@@ -1,13 +1,14 @@
 ---
 slug: libsyn
 title: Libsyn
-category: AI
+category: "AI Audio"
 price_model: Abonnement
 tags: [audio]
 official_url: "https://libsyn.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Libsyn
 
 Libsyn ist eine etablierte Podcast-Hosting-Plattform, die sich auf die einfache Verbreitung und Monetarisierung von Audioinhalten spezialisiert hat. Die Plattform bietet umfassende Tools zur Verwaltung, Veröffentlichung und Analyse von Podcasts. Libsyn unterstützt Podcaster dabei, ihre Reichweite zu erweitern und ihre Inhalte effizient zu verwalten, unabhängig vom Erfahrungslevel.

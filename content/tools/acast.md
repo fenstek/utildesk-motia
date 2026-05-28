@@ -1,13 +1,14 @@
 ---
 slug: acast
 title: Acast
-category: AI
+category: "AI Audio"
 price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.acast.com/en"
 popularity: 79
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Acast
 
 Acast ist eine innovative Plattform, die sich auf das Hosting, die Monetarisierung und die Analyse von Podcasts spezialisiert hat. Durch den Einsatz moderner Technologien, einschließlich KI-gestützter Tools, ermöglicht Acast Podcastern, ihre Inhalte effizient zu verwalten und zielgerichtet einem breiten Publikum zugänglich zu machen. Die Plattform unterstützt sowohl Anfänger als auch erfahrene Podcaster und bietet vielseitige Funktionen rund um Audio-Inhalte.

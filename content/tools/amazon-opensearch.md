@@ -1,13 +1,14 @@
 ---
 slug: amazon-opensearch
 title: Amazon OpenSearch
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [search, data, analytics, cloud]
 official_url: "https://aws.amazon.com/opensearch-service/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon OpenSearch
 
 Amazon OpenSearch ist ein skalierbarer Such- und Analyse-Service, der auf der Open-Source-Technologie von OpenSearch basiert. Er ermöglicht es Entwicklern und Unternehmen, große Datenmengen in Echtzeit zu durchsuchen, zu visualisieren und zu analysieren – alles in der Cloud. Durch die Integration in das AWS-Ökosystem bietet Amazon OpenSearch eine flexible und leistungsfähige Lösung für vielfältige Anwendungsfälle, von der Protokollanalyse bis zur Volltextsuche.

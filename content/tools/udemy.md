@@ -1,13 +1,14 @@
 ---
 slug: udemy
 title: Udemy
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [education, courses, learning, skills]
 official_url: "https://www.udemy.com/"
 popularity: 9
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Udemy
 
 Udemy ist eine weltweit führende Online-Lernplattform, die eine Vielzahl von Kursen in unterschiedlichen Bereichen anbietet, darunter auch viele zu Künstlicher Intelligenz (KI) und verwandten Technologien. Die Plattform ermöglicht es Lernenden, neue Fähigkeiten bequem von zu Hause aus zu erwerben und sich beruflich oder persönlich weiterzuentwickeln.

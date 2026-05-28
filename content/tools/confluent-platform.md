@@ -1,13 +1,14 @@
 ---
 slug: confluent-platform
 title: Confluent Platform
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.confluent.io/product/confluent-platform/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Confluent Platform
 
 Confluent Platform ist eine umfassende Streaming-Datenplattform, die Unternehmen dabei unterstützt, Echtzeit-Datenströme effizient zu verarbeiten, zu analysieren und zu integrieren. Mit einem Fokus auf Automatisierung und Workflow-Optimierung ermöglicht die Plattform die nahtlose Verbindung von Datenquellen und Anwendungen, um intelligente, datengesteuerte Entscheidungen zu fördern. Besonders im Bereich Künstliche Intelligenz (AI) unterstützt Confluent Platform die Bereitstellung von Echtzeit-Daten für AI-Modelle und Assistenzsysteme.

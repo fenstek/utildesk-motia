@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-firestore
 title: Google Cloud Firestore
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [database,cloud,developer-tools,serverless]
 official_url: "https://cloud.google.com/products/firestore"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Google Cloud Firestore
 
 Google Cloud Firestore ist eine flexible, skalierbare NoSQL-Datenbank, die speziell für die Entwicklung moderner Web- und Mobilanwendungen in der Cloud konzipiert wurde. Als Teil der Google Cloud Plattform bietet Firestore eine serverlose Infrastruktur, die Entwicklern ermöglicht, sich auf die Anwendungslogik zu konzentrieren, ohne sich um die Verwaltung von Datenbankservern kümmern zu müssen. Die Datenbank unterstützt sowohl Echtzeit-Synchronisation als auch offlinefähige Anwendungen und eignet sich besonders für Projekte, die eine schnelle, zuverlässige und skalierbare Datenhaltung benötigen.

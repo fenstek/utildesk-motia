@@ -1,13 +1,14 @@
 ---
 slug: ionic-framework
 title: Ionic Framework
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [developer-tools,mobile,web,open-source]
 official_url: "https://ionicframework.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Ionic Framework
 
 Ionic Framework ist ein Open-Source-Toolkit zur Entwicklung von plattformübergreifenden mobilen und Web-Anwendungen. Es ermöglicht Entwicklern, mit vertrauten Webtechnologien wie HTML, CSS und JavaScript native-ähnliche Apps für iOS, Android und das Web zu erstellen. Mit einer umfangreichen Sammlung von UI-Komponenten und leistungsstarken Entwicklungswerkzeugen unterstützt Ionic Framework eine schnelle und effiziente Entwicklung moderner Anwendungen.
@@ -25,20 +26,6 @@ Ionic Framework ist besonders nützlich für Entwicklungs-, QA-, Plattform- und 
 
 Ionic Framework gewinnt vor allem dann, wenn der Einsatz bewusst eng gestartet wird: ein klarer Zweck, ein überschaubarer Daten- oder Aufgabenraum und ein Review, das nicht erst nach Problemen entsteht.
 
-## Redaktionelle Einschätzung
-
-Ionic Framework sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Ionic Framework sollte zuerst in einem realen Entwicklungsablauf von Setup über Testdaten und Review bis zur Abnahme zeigen, ob es trägt. Erst wenn Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Ionic Framework:** Vor dem Rollout sollten Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Ionic Framework:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Ionic Framework:** Kritisch wird es, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen; dann hilft auch eine gute Oberfläche nur begrenzt.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/ionic-framework-editorial.webp" alt="Illustration zu Ionic Framework: Cross-Platform-App entsteht aus Komponenten, Screens und Testgeraeten" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Cross-Plattform-Entwicklung:** Ein Codebase für iOS, Android und Web.
@@ -50,10 +37,6 @@ Ionic Framework sollte zuerst in einem realen Entwicklungsablauf von Setup über
 - **Theming & Styling:** Einfache Anpassung von Design und Layout.
 - **Open-Source-Community:** Umfangreiche Dokumentation, Plugins und Support.
 - **CLI-Tools:** Kommandozeilenwerkzeuge zur Projektverwaltung und -erstellung.
-
-- **Praxislauf mit Ionic Framework:** Das Tool sollte mit einem realen Entwicklungsablauf von Setup über Testdaten und Review bis zur Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Ionic Framework:** Das Team braucht eine einfache Methode, um Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Ionic Framework:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

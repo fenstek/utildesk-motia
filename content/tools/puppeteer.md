@@ -1,13 +1,14 @@
 ---
 slug: puppeteer
 title: Puppeteer
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://pptr.dev/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Puppeteer
 
 Puppeteer ist eine leistungsstarke Open-Source-Bibliothek, die von Google entwickelt wurde und Entwicklern ermöglicht, automatisierte Browser-Interaktionen mit Chrome oder Chromium durchzuführen. Mit Puppeteer lassen sich Webanwendungen automatisiert testen, Screenshots erstellen, Webseiten crawlen und vieles mehr – alles über eine einfach zu bedienende API. Die enge Integration mit Headless Chrome macht es besonders attraktiv für Entwickler, die zuverlässige Browserautomatisierung suchen.

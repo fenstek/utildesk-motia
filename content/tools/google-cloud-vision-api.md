@@ -1,14 +1,15 @@
 ---
 slug: google-cloud-vision-api
 title: Google Cloud Vision API
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [vision, ocr, ai]
 official_url: "https://cloud.google.com/vision"
 popularity: 0
 disabled: true
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Google Cloud Vision API
 
 Google Cloud Vision API ist ein leistungsstarker Dienst von Google, der es Entwicklern ermöglicht, Bildinhalte automatisch zu analysieren und zu interpretieren. Mit Hilfe von künstlicher Intelligenz und maschinellem Lernen erkennt die API Objekte, Gesichter, Text und vieles mehr in Bildern. Diese Technologie unterstützt vielfältige Anwendungsfälle, von der automatischen Bilderkennung über die Texterkennung (OCR) bis hin zur Kategorisierung und Moderation von visuellen Inhalten.
@@ -47,7 +48,6 @@ Google Cloud Vision API richtet sich vor allem an Entwickler, Unternehmen und Or
 - Für sehr spezifische oder branchenspezifische Bildanalysen kann eine individuelle Anpassung nötig sein.
 - Keine komplette Offline-Nutzung, da Cloud-Zugriff erforderlich ist.
 - Fehlende direkte Identifikation von Personen aus Datenschutzgründen.
-
 
 ## Was im Alltag wirklich zählt
 

@@ -1,13 +1,14 @@
 ---
 slug: livechat
 title: LiveChat
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [customer-support, live-chat, helpdesk]
 official_url: "https://www.livechat.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # LiveChat
 
 LiveChat ist eine Plattform für Kundenkommunikation per Website-Chat, Support-Routing und Service-Workflows. Sie hilft, Besucher nicht nur mit Kontaktformularen allein zu lassen, sondern Fragen im richtigen Moment aufzunehmen.

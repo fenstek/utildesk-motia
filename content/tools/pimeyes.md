@@ -1,11 +1,13 @@
 ---
 slug: pimeyes
 title: PimEyes
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: ["design", "marketing"]
 official_url: "https://pimeyes.com"
 affiliate_url: "https://pimeyes.com"
+tier: "C"
+generated_at: "2026-05-17"
 created_at: 2026-02-11
 popularity: 0
 description: PimEyes ist eine Gesichtssuchmaschine, mit der öffentlich auffindbare Bilder einer Person im Web entdeckt werden können.
@@ -21,7 +23,6 @@ Sinnvoll ist PimEyes vor allem für Personen, die die eigene Bildsichtbarkeit pr
 PimEyes ist vor allem für Personen geeignet, die ihre eigene Bildsichtbarkeit im öffentlichen Web prüfen möchten: etwa Selbstständige, Journalisten, Creator, Menschen mit Stalking- oder Identitätsmissbrauchsrisiko und Personen, die unerlaubte Verwendung eigener Porträtfotos finden wollen. Der sinnvolle Einsatz ist defensiv: eigene Bilder finden, Risiken einschätzen und Lösch- oder Meldewege vorbereiten.
 
 Für fremde Personen ist der Einsatz rechtlich und ethisch heikel. Gesichtssuche kann falsche Treffer liefern, Privatsphäre verletzen und missbräuchlich verwendet werden. PimEyes sollte deshalb nicht als Neugier-Tool, Überwachungswerkzeug oder Recherche über Dritte ohne berechtigten Grund genutzt werden.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/pimeyes-editorial.webp" alt="Illustration zu PimEyes: abstrakte Gesichtssilhouetten erscheinen in Spiegeln und Datenschutzlamellen" loading="lazy" decoding="async" />

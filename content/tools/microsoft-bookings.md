@@ -1,13 +1,14 @@
 ---
 slug: microsoft-bookings
 title: Microsoft Bookings
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [scheduling,appointments,microsoft-365]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/business/scheduling-and-booking-app"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Bookings
 
 Microsoft Bookings ist ein Online-Terminplanungs-Tool, das speziell für Unternehmen entwickelt wurde, die ihre Terminverwaltung vereinfachen möchten. Es ist Teil der Microsoft 365 Suite und ermöglicht es Nutzern, Termine effizient zu organisieren, Kundenbuchungen zu automatisieren und interne Ressourcen besser zu verwalten. Mit einer intuitiven Benutzeroberfläche und tiefen Integration in andere Microsoft-Dienste eignet sich Bookings besonders für Dienstleister, die viele Termine koordinieren müssen.

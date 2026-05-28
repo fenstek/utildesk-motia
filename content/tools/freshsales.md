@@ -1,13 +1,14 @@
 ---
 slug: freshsales
 title: Freshsales
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.freshworks.com/crm/sales/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Freshsales
 
 Freshsales ist eine KI-gestützte CRM-Lösung, die speziell für Vertriebsteams entwickelt wurde, um Verkaufsprozesse zu optimieren, Kundenbeziehungen zu verbessern und die Produktivität zu steigern. Die Plattform integriert intelligente Automatisierungen, Lead-Management und Analysefunktionen in einer benutzerfreundlichen Oberfläche. So unterstützt Freshsales Unternehmen dabei, ihre Vertriebszyklen zu verkürzen und den Umsatz effizient zu erhöhen.
@@ -19,20 +20,6 @@ Freshsales richtet sich an kleine und mittelständische Unternehmen sowie größ
 Freshsales ist besonders nützlich für Marketing-, Sales- und Growth-Teams, die Kampagnen messbarer und wiederholbarer steuern wollen. Der Nutzen sollte an einem realen Prozess gemessen werden, in dem Zielgruppen, Kampagnen, Leads, Conversion, Reporting und verlässliche Nachverfolgung nicht nur schneller, sondern auch besser erklärbar werden.
 
 Vor einer breiteren Einführung von Freshsales lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
-
-## Redaktionelle Einschätzung
-
-Freshsales sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Freshsales sollte zuerst in einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Follow-up zeigen, ob es trägt. Erst wenn Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Freshsales:** Vor dem Rollout sollten Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Freshsales:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Freshsales:** Ohne klare Regeln wird der Nutzen schwach, sobald Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/freshsales-editorial.webp" alt="Illustration zu Freshsales: Vertriebsteam bewegt Kontakte durch eine Pipeline-Skulptur" loading="lazy" decoding="async" />
-</figure>
 
 ## Hauptfunktionen
 
@@ -46,10 +33,6 @@ Freshsales sollte zuerst in einer realen Kampagne mit Zielgruppe, Inhalt, Ausspi
 - **Integration mit Drittanbieter-Apps:** Unterstützung zahlreicher Integrationen, z. B. mit Kalendern, Marketing-Tools und Helpdesk-Systemen.
 - **Mobile App:** Zugriff auf CRM-Daten jederzeit und überall über mobile Endgeräte.
 - **Kundensegmentierung:** Zielgerichtete Kampagnen durch Segmentierung der Kundenbasis.
-
-- **Praxislauf mit Freshsales:** Das Tool sollte mit einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Follow-up getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Freshsales:** Das Team braucht eine einfache Methode, um Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung nach dem Einsatz zu prüfen.
-- **Übergabe mit Freshsales:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

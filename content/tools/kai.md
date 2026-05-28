@@ -1,13 +1,14 @@
 ---
 slug: kai
 title: KAI
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://kai.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # KAI
 
 KAI ist ein moderner KI-gestützter Assistent, der Unternehmen und Einzelpersonen dabei unterstützt, komplexe Aufgaben zu automatisieren und datenbasierte Entscheidungen zu treffen. Die Plattform kombiniert fortschrittliche Algorithmen mit einer benutzerfreundlichen Oberfläche, um vielfältige Anwendungsbereiche abzudecken – von Textgenerierung bis hin zu Analyse und Optimierung.

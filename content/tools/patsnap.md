@@ -1,12 +1,14 @@
 ---
 slug: patsnap
 title: PatSnap
-category: AI
+category: "AI Research"
 price_model: "Individuelles Angebot"
 tags: [research, patents, analytics, innovation]
 official_url: "https://www.patsnap.com/"
 popularity: 0
 description: "PatSnap ist ein Recherche- und Analysewerkzeug für Innovation Intelligence, Patentdaten und Marktinformationen für forschungsnahe Strategiearbeit."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # PatSnap
 

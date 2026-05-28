@@ -1,14 +1,15 @@
 ---
 slug: audacity
 title: Audacity
-category: AI
+category: "AI Audio"
 price_model: Freemium
 tags: ["ai", "assistant", "automation"]
 official_url: "https://www.audacityteam.org/"
 created_at: 2026-02-12
 popularity: 66
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Audacity
 
 Audacity ist ein kostenloser Open-Source-Audioeditor für Aufnahme, Schnitt und einfache Bearbeitung. Er ist seit Jahren eine der niedrigschwelligsten Optionen für Podcasts, Sprachaufnahmen, kleine Musikprojekte und Audio-Reparaturen.

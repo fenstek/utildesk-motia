@@ -1,13 +1,14 @@
 ---
 slug: microsoft-onedrive-for-business
 title: Microsoft OneDrive for Business
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/business/online-cloud-storage"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft OneDrive for Business
 
 Microsoft OneDrive for Business ist eine cloudbasierte Speicherlösung, die speziell für Unternehmen entwickelt wurde. Es ermöglicht die sichere Speicherung, gemeinsame Nutzung und Synchronisation von Dateien innerhalb von Organisationen. Durch die Integration in Microsoft 365 und die Unterstützung von KI-gestützten Funktionen unterstützt OneDrive for Business automatisierte Arbeitsabläufe und verbessert die Produktivität im Team.

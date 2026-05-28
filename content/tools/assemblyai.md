@@ -1,13 +1,14 @@
 ---
 slug: assemblyai
 title: AssemblyAI
-category: Audio
+category: "Audio & Video"
 price_model: 
 tags: ["audio"]
 official_url: "https://www.assemblyai.com"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AssemblyAI
 
 AssemblyAI ist eine leistungsstarke Plattform für automatische Spracherkennung (ASR) und Sprachverarbeitung, die vor allem für Entwickler und Unternehmen entwickelt wurde. Sie bietet fortschrittliche KI-basierte Transkriptionsdienste, die Audio- und Videodateien schnell und präzise in Text umwandeln. Die API von AssemblyAI ermöglicht eine einfache Integration in verschiedene Anwendungen, um Sprachdaten effizient zu analysieren und zu verarbeiten.

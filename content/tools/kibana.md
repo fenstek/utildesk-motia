@@ -1,11 +1,13 @@
 ---
 slug: kibana
 title: Kibana
-category: AI
+category: "AI Image"
 price_model: Abonnement, Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://www.elastic.co/kibana"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Kibana
 

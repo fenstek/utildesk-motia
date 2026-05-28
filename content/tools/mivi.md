@@ -1,11 +1,13 @@
 ---
 slug: mivi
 title: Mivi
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, video]
 official_url: "https://miviapp.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # Mivi
 

@@ -1,13 +1,14 @@
 ---
 slug: fairseq
 title: Fairseq
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [coding, developer-tools, translation, education]
 official_url: "https://github.com/facebookresearch/fairseq"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Fairseq
 
 fairseq ist ein Machine-Learning-Toolkit von Meta AI für Sequenzmodelle, insbesondere rund um Übersetzung, Sprachverarbeitung und Forschung an neuronalen Architekturen. Es richtet sich klar an technische Nutzer, nicht an Menschen, die eine fertige App erwarten.

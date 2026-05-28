@@ -1,14 +1,15 @@
 ---
 slug: c3-ai
 title: C3.ai
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["data", "analytics", "automation"]
 official_url: "http://www.c3.ai/"
 created_at: 2026-02-15
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # C3.ai
 
 C3.ai ist eine umfassende Plattform für Enterprise-Künstliche Intelligenz (KI), die Unternehmen dabei unterstützt, datengetriebene Anwendungen zu entwickeln, zu implementieren und zu skalieren. Mit einem Fokus auf Industrie- und Geschäftsprozesse bietet C3.ai Lösungen, die komplexe KI-Modelle mit großen Datenmengen verbinden, um Entscheidungsprozesse zu optimieren und betriebliche Effizienz zu steigern.

@@ -1,13 +1,14 @@
 ---
 slug: reverso
 title: Reverso
-category: AI
+category: "AI Writing"
 price_model: "Je nach Plan"
 tags: [translation, writing, productivity]
 official_url: "https://www.reverso.net/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Reverso
 
 Reverso ist ein Sprachwerkzeug für Übersetzung, Kontextbeispiele, Synonyme, Grammatik und Konjugation. Besonders nützlich ist es, wenn man nicht nur ein einzelnes Wort übersetzen will, sondern sehen möchte, wie eine Formulierung in echten Sätzen funktioniert.
@@ -17,7 +18,6 @@ Der Vorteil gegenüber einer reinen Maschinenübersetzung liegt im Kontext. Reve
 ## Für wen ist Reverso geeignet?
 
 Geeignet ist Reverso für Lernende, Schreibende, internationale Teams, Support, Alltagstexte und schnelle Sprachprüfung. Für juristische, medizinische oder zertifizierte Übersetzungen braucht es weiterhin Fachmenschen und verbindliche Reviewprozesse.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/reverso-editorial.webp" alt="Illustration zu Reverso: Sprachkarten werden zwischen Woerterbuch, Kontext und Korrekturpfad abgeglichen" loading="lazy" decoding="async" />

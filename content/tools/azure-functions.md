@@ -1,13 +1,14 @@
 ---
 slug: azure-functions
 title: Azure Functions
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [serverless,cloud,developer-tools,api]
 official_url: "https://azure.microsoft.com/en-us/products/functions"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Azure Functions
 
 Azure Functions ist ein serverloser Compute-Dienst von Microsoft Azure, der es Entwicklern ermöglicht, Code ereignisgesteuert auszuführen, ohne sich um die zugrunde liegende Infrastruktur kümmern zu müssen. Mit Azure Functions können Sie schnell skalierbare APIs, Automatisierungen und Microservices erstellen und so Ihre Anwendungen effizienter gestalten.

@@ -1,13 +1,14 @@
 ---
 slug: framework7
 title: Framework7
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [developer-tools,mobile,web]
 official_url: "https://framework7.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Framework7
 
 Framework7 ist ein UI-Framework für mobile, hybride und Web-Apps mit nativer App-Anmutung. Es richtet sich an Teams, die mobile Interfaces schnell bauen wollen, besonders mit Webtechnologien und Frameworks wie Vue, React oder Svelte je nach Setup.

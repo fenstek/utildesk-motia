@@ -1,13 +1,14 @@
 ---
 slug: google-ai-studio
 title: Google AI Studio
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [ai,developer,api]
 official_url: "https://aistudio.google.com/welcome"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google AI Studio
 
 Google AI Studio ist eine vielseitige Plattform, die Entwicklern den Zugang zu fortschrittlichen KI-Tools und APIs ermöglicht. Mit einer benutzerfreundlichen Oberfläche und umfangreichen Funktionen unterstützt es die Entwicklung, das Testen und die Integration von KI-Modellen in Anwendungen. Die Plattform richtet sich an Entwickler, die künstliche Intelligenz in ihre Projekte einbinden möchten, ohne tiefgehende Kenntnisse in Machine Learning vorauszusetzen.

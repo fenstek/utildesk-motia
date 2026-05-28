@@ -1,13 +1,14 @@
 ---
 slug: microsoft-editor
 title: Microsoft Editor
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [writing, grammar, productivity, editing]
 official_url: "https://www.microsoft.com/de-de/microsoft-365/microsoft-editor/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Microsoft Editor
 
 Microsoft Editor ist ein KI-gestütztes Schreib- und Korrekturtool, das in Microsoft 365 integriert ist und Nutzern dabei hilft, ihre Texte klarer, präziser und fehlerfrei zu gestalten. Es unterstützt Grammatik-, Rechtschreib- und Stilprüfungen in mehreren Sprachen und bietet Vorschläge zur Verbesserung der Ausdrucksweise. Das Tool ist sowohl für den Alltag als auch für professionelle Textarbeiten geeignet.
@@ -20,20 +21,6 @@ Microsoft Editor ist besonders nützlich für Redaktions-, Lern-, Lokalisierungs
 
 Vor einer breiteren Einführung von Microsoft Editor lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Microsoft Editor sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Als Prüfstück für Microsoft Editor eignet sich einem echten Textauftrag mit Briefing, Rohfassung, Review, Überarbeitung und Veröffentlichung. Wenn Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Microsoft Editor:** Vor dem Rollout sollten Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Microsoft Editor:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Microsoft Editor:** Ohne klare Regeln wird der Nutzen schwach, sobald Quellen, Tonalität, Review-Regeln, Sprachvarianten und Verantwortlichkeiten unklar bleiben.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/microsoft-editor-editorial.webp" alt="Illustration zu Microsoft Editor: Dokumententwuerfe werden mit Pruefsignalen, Stilmarken und Klarheitsmarkern verbessert" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Grammatik- und Rechtschreibprüfung:** Automatische Erkennung und Korrektur von Fehlern in mehreren Sprachen.
@@ -44,10 +31,6 @@ Als Prüfstück für Microsoft Editor eignet sich einem echten Textauftrag mit B
 - **Personalisierte Vorschläge:** Anpassung der Korrekturen an den Schreibstil des Nutzers.
 - **Benutzerfreundliche Oberfläche:** Übersichtliche Anzeige von Fehlern und Verbesserungsvorschlägen.
 - **Cloud-basierte Analyse:** Schnelle Verarbeitung und Aktualisierung der Korrekturregeln.
-
-- **Praxislauf mit Microsoft Editor:** Das Tool sollte mit einem echten Textauftrag mit Briefing, Rohfassung, Review, Überarbeitung und Veröffentlichung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Microsoft Editor:** Das Team braucht eine einfache Methode, um Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität nach dem Einsatz zu prüfen.
-- **Übergabe mit Microsoft Editor:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

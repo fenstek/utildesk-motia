@@ -1,11 +1,13 @@
 ---
 slug: storyboarder
 title: Storyboarder
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [design, video, productivity, automation, workflow]
 official_url: "https://storyboarder.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Storyboarder
 

@@ -1,13 +1,14 @@
 ---
 slug: espacenet
 title: Espacenet
-category: AI
+category: "AI Research"
 price_model: Kostenlos
 tags: [research,patents,search,innovation]
 official_url: "https://worldwide.espacenet.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Espacenet
 
 Espacenet ist eine leistungsstarke Online-Plattform, die von der Europäischen Patentorganisation bereitgestellt wird und den Zugang zu über 130 Millionen Patenten weltweit ermöglicht. Die Suchmaschine unterstützt Nutzer dabei, technische Innovationen zu recherchieren, den Stand der Technik zu analysieren und gezielt nach Patentinformationen zu suchen. Dank intelligenter Suchalgorithmen und einer klar strukturierten Benutzeroberfläche ist Espacenet ein unverzichtbares Werkzeug für Forscher, Entwickler, Patentanwälte und Unternehmen, die Innovationen schützen oder neue Technologien entdecken möchten.

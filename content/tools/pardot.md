@@ -1,13 +1,14 @@
 ---
 slug: pardot
 title: Pardot (Salesforce)
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
 official_url: "https://www.salesforce.com/marketing/b2b-automation/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Pardot (Salesforce)
 
 Pardot ist eine leistungsfähige Marketing-Automation-Lösung von Salesforce, die speziell für B2B-Unternehmen entwickelt wurde. Die Plattform unterstützt Marketing- und Vertriebsteams dabei, Leads zu generieren, zu qualifizieren und gezielt zu pflegen – alles mit dem Ziel, den Umsatz zu steigern und die Kundenbeziehungen zu verbessern. Mit umfassenden CRM-Integrationen und KI-gestützten Analysefunktionen ermöglicht Pardot eine effiziente Automatisierung von Marketingkampagnen und eine datengetriebene Entscheidungsfindung.

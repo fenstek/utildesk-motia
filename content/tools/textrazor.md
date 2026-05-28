@@ -1,13 +1,14 @@
 ---
 slug: textrazor
 title: TextRazor
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [nlp, api, text-analysis, developer-tools]
 official_url: "https://www.textrazor.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # TextRazor
 
 TextRazor ist eine leistungsstarke API zur Textanalyse, die Entwicklern hilft, natürliche Sprache zu verstehen und zu verarbeiten. Mit umfangreichen Funktionen zur Entitätserkennung, Themenextraktion und semantischen Analyse bietet TextRazor eine flexible Lösung für vielfältige Anwendungen in den Bereichen NLP (Natural Language Processing) und Datenverarbeitung. Das Tool ermöglicht es, unstrukturierte Texte in strukturierte Daten umzuwandeln, was besonders für Suchmaschinen, Content-Management-Systeme und Analyseplattformen nützlich ist.

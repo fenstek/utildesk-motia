@@ -1,16 +1,17 @@
 ---
 slug: runway
 title: Runway
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: ["video", "automation"]
 official_url: 'https://runwayml.com/'
 affiliate_url: 'https://runwayml.com/'
+tier: "C"
+generated_at: "2026-05-21"
 created_at: "2026-02-02"
 updated_at: 2026-05-21
 popularity: 0
 ---
-
 # Runway
 
 Runway ist eine innovative KI-Plattform, die Kreativen und Entwicklern leistungsstarke Werkzeuge für die Erstellung und Bearbeitung von Medieninhalten bietet. Mit einem Fokus auf maschinelles Lernen und Echtzeit-Videoverarbeitung ermöglicht Runway die Integration modernster KI-Modelle in kreative Workflows. Die Plattform ist sowohl für Anfänger als auch für Profis geeignet und bietet eine Kombination aus intuitiver Benutzeroberfläche und umfangreichen Funktionen.
@@ -31,7 +32,6 @@ Runway richtet sich an eine breite Zielgruppe, darunter:
 - **Bildungsinstitutionen und Studierende**, die praktische Erfahrungen mit KI-Technologien sammeln möchten.
 
 Die Plattform eignet sich besonders für Nutzer, die Wert auf eine einfache Bedienung legen, ohne auf professionelle Ergebnisse verzichten zu wollen.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/runway-editorial.webp" alt="Illustration zu Runway: Storyboard-Karten verwandeln sich auf einem Filmset in eine projizierte Szene" loading="lazy" decoding="async" />

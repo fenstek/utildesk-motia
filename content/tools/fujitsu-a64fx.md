@@ -1,13 +1,14 @@
 ---
 slug: fujitsu-a64fx
 title: Fujitsu A64FX
-category: AI
+category: "AI Infrastructure"
 price_model: Individuelles Angebot
 tags: [hardware, hpc, ai-accelerators, enterprise]
 official_url: "https://global.fujitsu/en-global/capabilities/computer-platform"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Fujitsu A64FX
 
 Der Fujitsu A64FX ist ein Hochleistungsprozessor, der speziell für Anwendungen im Bereich High Performance Computing (HPC) und Künstliche Intelligenz (KI) entwickelt wurde. Er zeichnet sich durch seine fortschrittliche Architektur aus, die auf der ARM-Technologie basiert und insbesondere bei rechenintensiven Aufgaben wie wissenschaftlichen Simulationen, Datenanalyse und KI-Beschleunigung hervorragende Leistung bietet.

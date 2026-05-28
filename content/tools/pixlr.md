@@ -1,13 +1,14 @@
 ---
 slug: pixlr
 title: Pixlr
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [design, image, automation, productivity]
 official_url: "https://pixlr.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Pixlr
 
 Pixlr ist ein vielseitiges Online-Bildbearbeitungstool, das auf künstlicher Intelligenz basiert und sich sowohl an Anfänger als auch an professionelle Anwender richtet. Es ermöglicht die schnelle und effiziente Bearbeitung von Bildern direkt im Browser, ohne dass eine Installation erforderlich ist. Mit einer intuitiven Benutzeroberfläche und automatisierten Funktionen unterstützt Pixlr bei der Gestaltung, Retusche und Optimierung von Fotos und Grafiken.

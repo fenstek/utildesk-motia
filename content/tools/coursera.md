@@ -1,13 +1,14 @@
 ---
 slug: coursera
 title: Coursera
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [education, courses, career, learning]
 official_url: "https://www.coursera.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Coursera
 
 Coursera ist eine der führenden Online-Lernplattformen, die weltweit Zugang zu hochwertigen Kursen, Spezialisierungen und Abschlüssen bietet – oft in Zusammenarbeit mit renommierten Universitäten und Unternehmen. Besonders im Bereich Künstliche Intelligenz (AI) finden Lernende eine breite Palette an Inhalten, die sowohl für Einsteiger als auch für Fortgeschrittene geeignet sind. Die Plattform ermöglicht flexibles Lernen, das sich an individuelle Bedürfnisse und Karriereziele anpasst.

@@ -1,11 +1,13 @@
 ---
 slug: buffer
 title: Buffer
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: [social-media, automation, marketing, productivity]
 official_url: "https://buffer.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Buffer
 

@@ -1,11 +1,14 @@
 ---
 slug: poe
 title: Poe
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot"]
 official_url: "https://poe.com"
 affiliate_url: "https://poe.com"
+tier: "A"
+lastReviewed: "2026-05-27"
+mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
 created_at: 2026-02-07
 popularity: 24
 ---

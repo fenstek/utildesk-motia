@@ -1,13 +1,14 @@
 ---
 slug: tensorflow-text
 title: TensorFlow Text
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [nlp,machine-learning,developer-tools,open-source]
 official_url: "https://www.tensorflow.org/text?hl=zh-tw"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # TensorFlow Text
 
 TensorFlow Text ist eine leistungsfähige Open-Source-Bibliothek, die speziell für die Verarbeitung und Analyse von Textdaten im Bereich des maschinellen Lernens entwickelt wurde. Sie ergänzt TensorFlow mit umfangreichen Werkzeugen zur natürlichen Sprachverarbeitung (NLP) und bietet Entwicklern die Möglichkeit, komplexe Textmodelle effizient zu erstellen, zu trainieren und zu implementieren.

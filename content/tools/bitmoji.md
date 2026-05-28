@@ -1,13 +1,14 @@
 ---
 slug: bitmoji
 title: Bitmoji
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [avatar, social, mobile]
 official_url: "https://www.bitmoji.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Bitmoji
 
 Bitmoji ist eine beliebte App zur Erstellung personalisierter Avatare, die sich besonders im sozialen Umfeld und auf mobilen Geräten großer Beliebtheit erfreut. Nutzer können mit Bitmoji individuelle, cartoonartige Charaktere erstellen, die ihre Persönlichkeit widerspiegeln und in verschiedenen Messaging-Apps oder sozialen Netzwerken verwendet werden können. Die App bietet eine einfache Benutzeroberfläche und eine breite Palette an Anpassungsoptionen, um den Avatar nach eigenen Vorstellungen zu gestalten.

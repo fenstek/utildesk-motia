@@ -1,13 +1,14 @@
 ---
 slug: flair
 title: Flair
-category: AI
+category: "AI Infrastructure"
 price_model: 
 tags: [nlp, python, library]
 official_url: "https://flairnlp.github.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Flair
 
 Flair ist eine leistungsstarke Open-Source-Bibliothek für Natural Language Processing (NLP) in Python. Sie bietet einfache und zugleich flexible Werkzeuge zur Verarbeitung und Analyse von Texten, insbesondere für Aufgaben wie Named Entity Recognition (NER), Textklassifikation und Part-of-Speech-Tagging. Entwickelt von der Zalando Research Gruppe, ermöglicht Flair die Nutzung moderner Deep-Learning-Modelle auf intuitive Weise und unterstützt verschiedene vortrainierte Embeddings, um die Genauigkeit von NLP-Anwendungen zu verbessern.

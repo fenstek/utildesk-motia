@@ -1,12 +1,14 @@
 ---
 slug: krita
 title: Krita
-category: AI
+category: "AI Image"
 price_model: Open Source
 tags: [digital-painting, illustration, creative-tools]
 official_url: "https://krita.org/en/download/krita-desktop"
 popularity: 37
 description: Krita ist ein Design- und Kreativwerkzeug für Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
+tier: "C"
+generated_at: "2026-05-27"
 ---
 # Krita
 

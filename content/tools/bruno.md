@@ -1,13 +1,14 @@
 ---
 slug: bruno
 title: Bruno
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [api, developer-tools, testing, open-source]
 official_url: "https://www.usebruno.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Bruno
 
 Bruno ist ein Open-Source-Tool, das speziell für Entwickler entwickelt wurde, um API-Tests und die Entwicklung effizienter zu gestalten. Es unterstützt Entwickler dabei, APIs schnell zu testen, zu debuggen und zu optimieren, wodurch Entwicklungszyklen verkürzt und die Qualität der Software verbessert werden kann. Als kostenloses Tool bietet Bruno eine flexible und anpassbare Plattform für Entwickler, die Wert auf Transparenz und Community-Support legen.

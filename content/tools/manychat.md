@@ -1,13 +1,14 @@
 ---
 slug: manychat
 title: ManyChat
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot]
 official_url: "https://manychat.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # ManyChat
 
 ManyChat ist eine vielseitige Plattform zur Erstellung und Verwaltung von Chatbots, die vor allem auf Messaging-Dienste wie Facebook Messenger, Instagram und SMS spezialisiert ist. Die Software ermöglicht es Unternehmen, automatisierte Konversationen zu gestalten, um Kundenservice, Marketing und Vertrieb effizienter zu gestalten. Durch die Kombination von Künstlicher Intelligenz und benutzerfreundlichen Tools eignet sich ManyChat sowohl für Anfänger als auch für erfahrene Marketer.

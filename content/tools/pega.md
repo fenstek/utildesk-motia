@@ -1,13 +1,14 @@
 ---
 slug: pega
 title: Pega
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [workflow-automation, low-code, enterprise]
 official_url: "https://www.pega.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Pega
 
 Pega ist eine führende Plattform für Workflow-Automatisierung und Low-Code-Entwicklung, die speziell auf die Anforderungen von Unternehmen ausgerichtet ist. Mit Pega können komplexe Geschäftsprozesse digitalisiert, automatisiert und flexibel angepasst werden, um Effizienz und Kundenzufriedenheit zu steigern. Die Plattform nutzt künstliche Intelligenz, um intelligente Entscheidungen zu unterstützen und bietet umfangreiche Werkzeuge für die Erstellung und Verwaltung von Anwendungen ohne tiefgreifende Programmierkenntnisse.

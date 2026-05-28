@@ -1,13 +1,14 @@
 ---
 slug: alitu
 title: Alitu
-category: AI
+category: "AI Audio"
 price_model: Abonnement
 tags: [podcasting, audio, editing]
 official_url: "https://alitu.com/"
 popularity: 71
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Alitu
 
 Alitu ist ein KI-gestütztes Tool, das speziell für Podcaster entwickelt wurde, um den Aufnahme- und Bearbeitungsprozess von Podcasts zu vereinfachen. Es automatisiert viele technische Schritte, die üblicherweise zeitaufwendig sind, und ermöglicht so auch Nutzern ohne umfassende Audio-Expertise, professionelle Podcasts zu erstellen. Alitu ist besonders hilfreich, um Audiodateien zu säubern, zu schneiden und mit Musik oder Effekten zu versehen, ohne dass komplexe Software benötigt wird.

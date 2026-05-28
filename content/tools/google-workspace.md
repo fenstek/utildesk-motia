@@ -6,8 +6,10 @@ price_model: Abonnement
 tags: [productivity,collaboration,workspace]
 official_url: "https://workspace.google.com/"
 popularity: 46
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
 ---
-
 # Google Workspace
 
 Google Workspace ist eine umfassende Sammlung von cloudbasierten Tools und Anwendungen, die speziell für die Steigerung der Produktivität und Zusammenarbeit in Unternehmen und Teams entwickelt wurde. Mit Anwendungen wie Gmail, Google Docs, Google Drive und Google Meet bietet Google Workspace eine integrierte Plattform, die Kommunikation, Dokumentenmanagement und Projektarbeit nahtlos verbindet.

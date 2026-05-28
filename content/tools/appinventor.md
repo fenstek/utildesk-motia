@@ -1,13 +1,14 @@
 ---
 slug: appinventor
 title: AppInventor
-category: AI
+category: "AI Coding"
 price_model: 
 tags: ["no-code", "education", "developer-tools", "automation"]
 official_url: "https://appinventor.mit.edu/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # AppInventor
 
 AppInventor ist eine visuelle Entwicklungsplattform, die es Anwendern ermöglicht, ohne umfangreiche Programmierkenntnisse eigene Apps für mobile Geräte zu erstellen. Ursprünglich von Google entwickelt und nun von der MIT-Organisation betreut, richtet sich AppInventor vor allem an Einsteiger, Studierende und Lehrkräfte, die den Einstieg in die App-Entwicklung erleichtern möchten. Die benutzerfreundliche Drag-and-Drop-Oberfläche kombiniert mit einer logischen Blockprogrammierung macht es möglich, funktionale Apps schnell und intuitiv zu gestalten.

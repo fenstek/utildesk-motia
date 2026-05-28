@@ -1,13 +1,14 @@
 ---
 slug: anchor
 title: Anchor
-category: AI
+category: "AI Audio"
 price_model: Freemium
 tags: [podcast, creator-tools, audio]
 official_url: "https://creators.spotify.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Anchor
 
 Anchor, heute im Umfeld von Spotify for Podcasters bekannt, hat Podcast-Vertrieb für viele Creator stark vereinfacht. Die Grundidee bleibt attraktiv: Aufnahme, Hosting, Distribution und einfache Auswertung sollen ohne technische Infrastruktur möglich sein.

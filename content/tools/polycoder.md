@@ -1,13 +1,14 @@
 ---
 slug: polycoder
 title: PolyCoder
-category: Developer
+category: "Entwickler-Tools"
 price_model: "Je nach Plan"
 tags: [coding, developer-tools, education]
 official_url: "https://github.com/VHellendoorn/Code-LMs"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # PolyCoder
 
 PolyCoder ist ein fortschrittliches KI-basiertes Programmierwerkzeug, das speziell für Entwickler und Programmierbegeisterte entwickelt wurde. Es unterstützt beim Schreiben von Code, bietet intelligente Vorschläge und erleichtert so den Entwicklungsprozess. Mit Fokus auf mehrere Programmiersprachen eignet sich PolyCoder besonders gut für die Automatisierung von Routineaufgaben und das Lernen neuer Programmierkonzepte.

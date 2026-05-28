@@ -1,14 +1,15 @@
 ---
 slug: microsoft-azure-synapse-analytics
 title: Microsoft Azure Synapse Analytics
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [developer-tools, data, cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/synapse-analytics"
 disabled: true
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Microsoft Azure Synapse Analytics
 
 Microsoft Azure Synapse Analytics ist eine umfassende Analyseplattform, die Data Warehousing, Big Data und künstliche Intelligenz in einer einheitlichen Umgebung vereint. Die Plattform ermöglicht es Unternehmen, große Datenmengen effizient zu speichern, zu verarbeiten und zu analysieren. Durch die Integration von SQL-Abfragen, Spark-Workloads und Data Integration bietet Azure Synapse eine flexible Lösung für datengetriebene Anwendungen und Entscheidungsfindung.

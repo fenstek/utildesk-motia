@@ -1,13 +1,14 @@
 ---
 slug: ibm-watson-natural-language-understanding
 title: IBM Watson Natural Language Understanding
-category: AI
+category: "AI Infrastructure"
 price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, api]
 official_url: "https://www.ibm.com/products/natural-language-understanding"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # IBM Watson Natural Language Understanding
 
 IBM Watson Natural Language Understanding (NLU) ist ein leistungsstarkes KI-Tool zur Analyse und Verarbeitung natürlicher Sprache. Es ermöglicht Unternehmen, Texte automatisiert zu verstehen, zu kategorisieren und wichtige Informationen daraus zu extrahieren. Mit vielfältigen Analysefunktionen wie Sentiment-Analyse, Entitätserkennung oder Keyword-Extraktion unterstützt Watson NLU datengetriebene Entscheidungen und verbessert Geschäftsprozesse durch Automatisierung.

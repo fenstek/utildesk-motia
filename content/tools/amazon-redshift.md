@@ -1,13 +1,14 @@
 ---
 slug: amazon-redshift
 title: Amazon Redshift
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, aws]
 official_url: "https://aws.amazon.com/redshift/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon Redshift
 
 Amazon Redshift ist ein vollständig verwaltetes Data-Warehouse-Service von Amazon Web Services (AWS), das speziell für schnelle Abfragen und Analysen großer Datenmengen entwickelt wurde. Es ermöglicht Unternehmen, umfangreiche Datenbestände effizient zu speichern, zu verarbeiten und zu analysieren, um fundierte Entscheidungen zu treffen. Redshift integriert sich nahtlos in das AWS-Ökosystem und unterstützt verschiedene Analysewerkzeuge und BI-Anwendungen.

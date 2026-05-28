@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [voice, communication, gaming, collaboration]
 official_url: "https://www.teamspeak.com/en/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # TeamSpeak
 
 TeamSpeak ist eine vielseitige Voice-Chat-Software, die vor allem für Online-Gaming und Teamkommunikation genutzt wird. Mit stabiler Audioqualität, geringer Latenz und umfangreichen Funktionen unterstützt TeamSpeak effektive Zusammenarbeit und klare Kommunikation in Echtzeit. Die Software bietet sowohl kostenlose als auch kostenpflichtige Optionen an und eignet sich für unterschiedliche Nutzergruppen, die Wert auf zuverlässige Sprachverbindungen legen.

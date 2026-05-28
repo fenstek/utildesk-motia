@@ -1,13 +1,14 @@
 ---
 slug: adp-workforce-now
 title: ADP Workforce Now
-category: AI
+category: "AI Infrastructure"
 price_model: 
 tags: [payroll, hr, hcm]
 official_url: "https://www.adp.com/what-we-offer/products/adp-workforce-now.aspx"
 popularity: 75
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # ADP Workforce Now
 
 ADP Workforce Now ist eine umfassende cloudbasierte Plattform für Human Capital Management (HCM), die Unternehmen bei der Verwaltung von Personal, Gehaltsabrechnung und weiteren HR-Prozessen unterstützt. Die Lösung kombiniert automatisierte Abläufe mit datengestützten Einblicken, um die Effizienz in der Personalverwaltung zu steigern und Compliance-Anforderungen zu erfüllen. ADP Workforce Now eignet sich besonders für mittelständische und größere Unternehmen, die eine integrierte Lösung für ihre HR- und Payroll-Aufgaben suchen.

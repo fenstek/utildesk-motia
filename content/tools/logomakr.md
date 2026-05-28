@@ -1,13 +1,14 @@
 ---
 slug: logomakr
 title: LogoMakr
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [design, logo, branding, marketing]
 official_url: "https://logomakr.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # LogoMakr
 
 LogoMakr ist ein benutzerfreundliches Online-Tool, das es ermöglicht, individuelle Logos schnell und einfach zu gestalten. Mit einer intuitiven Oberfläche und einer großen Auswahl an Design-Elementen eignet sich LogoMakr besonders für kleine Unternehmen, Startups und Einzelpersonen, die ohne umfangreiche Designkenntnisse ein professionelles Branding erstellen möchten. Das Tool kombiniert künstliche Intelligenz mit vorgefertigten Grafiken und Schriftarten, um den Logoerstellungsprozess zu vereinfachen.

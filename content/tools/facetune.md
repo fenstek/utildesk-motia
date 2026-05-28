@@ -1,13 +1,14 @@
 ---
 slug: facetune
 title: Facetune
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [photo-editing, creative-tools, mobile]
 official_url: "https://www.facetuneapp.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Facetune
 
 Facetune ist eine App für Portrait- und Selfie-Bearbeitung, die Retusche, Licht, Haut, Gesichtszüge und Social-Media-Look schnell veraenderbar macht. Sie ist beliebt, weil sie ohne Photoshop-Kenntnisse sichtbare Ergebnisse liefert.

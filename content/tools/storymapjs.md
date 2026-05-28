@@ -1,12 +1,14 @@
 ---
 slug: storymapjs
 title: StoryMapJS
-category: AI
+category: "AI Image"
 price_model: Kostenlos
 tags: [storytelling, maps, journalism]
 official_url: "https://storymap.knightlab.com/"
 popularity: 0
 description: StoryMapJS ist ein kostenloses Storytelling-Werkzeug für Karten, Orte, Zeitleisten und journalistische Erzählungen.
+tier: "C"
+generated_at: "2026-05-17"
 ---
 # StoryMapJS
 
@@ -19,8 +21,6 @@ Geeignet für Journalismus, Bildung, Museen, NGOs und Projekte, bei denen Ort un
 StoryMapJS eignet sich für Journalisten, Lehrende, Museen, NGOs, Stadtprojekte und Forschungskommunikation, wenn Orte Teil der Erzählung sind. Es ist hilfreich, wenn Leser nicht nur eine Karte sehen sollen, sondern Schritt für Schritt durch eine räumliche Geschichte geführt werden.
 
 Weniger passend ist StoryMapJS für GIS-Analysen, große Datensätze oder komplexe interaktive Karten. Der Fokus liegt auf kuratierten Stationen, Medien und Text. Wer eine Geschichte nicht klar in Stationen strukturieren kann, sollte zuerst Konzept und Dramaturgie klären.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/storymapjs-editorial.webp" alt="Illustration zu StoryMapJS: Kartenrouten verbinden Orte, Bilder und Erzählstationen" loading="lazy" decoding="async" />

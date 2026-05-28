@@ -6,10 +6,11 @@ price_model: Je nach Plan
 tags: ["developer", "ai", "hardware", "ml", "training"]
 official_url: "https://habana.ai/"
 affiliate_url: "https://habana.ai/"
+tier: "C"
+generated_at: "2026-05-15"
 popularity: 0
 description: Intel-Gaudi-Beschleuniger und Software-Stack für KI-Training und Inferenz in professioneller Infrastruktur.
 ---
-
 # Intel Habana Labs
 
 Intel Habana Labs steht für Intels Gaudi-KI-Beschleuniger und den zugehörigen Software-Stack für Training und Inferenz großer Modelle.
@@ -21,7 +22,6 @@ Das ist kein SaaS-Tool für einzelne Nutzer, sondern Infrastruktur für Teams, d
 Intel Habana Labs richtet sich nicht an normale Endanwender, sondern an Teams, die KI-Infrastruktur planen: ML-Plattformteams, Cloud-Architekten, Forschungsgruppen und Unternehmen mit hohen Trainings- oder Inferenzkosten. Relevant ist es, wenn Beschleunigerhardware, Kosten pro Modelllauf und Lieferketten eine strategische Rolle spielen.
 
 Für einzelne KI-Apps, Chatbots oder No-Code-Workflows ist das Thema zu tief im Stack. Dort sind fertige APIs, Cloud-Modelle oder MLOps-Plattformen näher am Alltag.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/intel-habana-labs-editorial.webp" alt="Illustration zu Intel Habana Labs: ein technischer Schnitt durch ein KI-Beschleunigerlabor" loading="lazy" decoding="async" />

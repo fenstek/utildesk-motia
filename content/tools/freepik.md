@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, creative]
 official_url: "https://www.freepik.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Freepik
 
 Freepik ist eine umfangreiche Plattform, die Millionen von Vektor-Grafiken, Illustrationen, Fotos und PSD-Dateien für kreative Projekte anbietet. Besonders beliebt bei Designern, Marketingspezialisten und Content-Erstellern, ermöglicht Freepik den einfachen Zugriff auf hochwertige Ressourcen, die sich für verschiedenste Anwendungsbereiche eignen. Mit einem Freemium-Modell bietet Freepik sowohl kostenlose als auch kostenpflichtige Inhalte an, was es zu einer vielseitigen Lösung für unterschiedliche Nutzerbedürfnisse macht.

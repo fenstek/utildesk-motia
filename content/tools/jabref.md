@@ -1,12 +1,14 @@
 ---
 slug: jabref
 title: JabRef
-category: AI
+category: "AI Research"
 price_model: "Open Source"
 tags: [reference-management, research, writing]
 official_url: "https://www.jabref.org/"
 popularity: 0
 description: "JabRef ist ein Recherche- und Analysewerkzeug für Open-Source-Referenzmanager für BibTeX, LaTeX-nahe Workflows und wissenschaftliches Schreiben."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # JabRef
 

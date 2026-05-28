@@ -1,14 +1,15 @@
 ---
 slug: hubspot-crm
 title: HubSpot CRM
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [crm, workflow]
 official_url: "https://www.hubspot.com/products/crm"
 popularity: 0
 updated_at: 2026-05-21
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # HubSpot CRM
 
 HubSpot CRM ist eine vielseitige Plattform zur Verwaltung von Kundenbeziehungen, die speziell darauf ausgelegt ist, Vertriebs-, Marketing- und Kundenserviceprozesse zu optimieren. Mit einer benutzerfreundlichen Oberfläche und einer Vielzahl von Automatisierungsfunktionen unterstützt HubSpot Unternehmen dabei, ihre Workflows effizienter zu gestalten und Kundenbeziehungen nachhaltig zu stärken – vom ersten Kontakt bis zum Abschluss.
@@ -27,20 +28,6 @@ HubSpot CRM ist besonders nützlich für Marketing-, Sales- und Growth-Teams, di
 
 Vor einer breiteren Einführung von HubSpot CRM lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-HubSpot CRM sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Ein belastbarer Pilot für HubSpot CRM beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Follow-up. Danach geht es nicht um Bauchgefühl, sondern darum, ob Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für HubSpot CRM:** Vor dem Rollout sollten Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für HubSpot CRM:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei HubSpot CRM:** Der Einsatz kippt in Zusatzarbeit, wenn Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/hubspot-crm-editorial.webp" alt="Illustration zu HubSpot CRM: Kontakte, Pipeline-Stufen und Nachverfolgung in einem CRM-Arbeitsraum" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Kontakt- und Lead-Management:** Übersichtliche Verwaltung aller Kundenkontakte und Leads mit detaillierten Profilen.
@@ -52,10 +39,6 @@ Ein belastbarer Pilot für HubSpot CRM beginnt mit einer realen Kampagne mit Zie
 - **Mobile App:** Zugriff auf CRM-Daten von unterwegs über iOS- und Android-Apps.
 - **Kundensupport-Tools:** Ticketverwaltung und Wissensdatenbank zur Verbesserung des Kundenservices.
 - **KI-gestützte Funktionen:** Unterstützung bei der Lead-Qualifizierung und Prognosen basierend auf Datenanalysen.
-
-- **Praxislauf mit HubSpot CRM:** Das Tool sollte mit einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Follow-up getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in HubSpot CRM:** Das Team braucht eine einfache Methode, um Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung nach dem Einsatz zu prüfen.
-- **Übergabe mit HubSpot CRM:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

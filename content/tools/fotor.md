@@ -1,15 +1,16 @@
 ---
 slug: fotor
 title: Fotor
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://www.fotor.com/'
 affiliate_url: 'https://www.fotor.com/'
+tier: "C"
+generated_at: "2026-05-12"
 created_at: "2026-02-08"
 popularity: 0
 ---
-
 # Fotor
 
 Fotor ist eine vielseitige Online-Plattform für Bildbearbeitung und Design, die durch den Einsatz von Künstlicher Intelligenz (KI) viele Prozesse automatisiert und vereinfacht. Die Anwendung eignet sich sowohl für Einsteiger als auch für erfahrene Nutzer, die schnell und effizient hochwertige Grafiken, Collagen oder Fotobearbeitungen erstellen möchten. Mit einer benutzerfreundlichen Oberfläche und einer breiten Palette an Tools unterstützt Fotor kreative Projekte aller Art – von Social-Media-Posts bis hin zu professionellen Marketingmaterialien.

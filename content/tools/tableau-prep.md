@@ -1,13 +1,14 @@
 ---
 slug: tableau-prep
 title: Tableau Prep
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [data-preparation, analytics, etl]
 official_url: "https://www.tableau.com/products/prep"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Tableau Prep
 
 Tableau Prep ist ein leistungsfähiges Tool zur Datenvorbereitung, das Nutzern hilft, Daten schnell und effizient für die Analyse aufzubereiten. Es kombiniert eine benutzerfreundliche Oberfläche mit intelligenten Funktionen, die das Bereinigen, Transformieren und Kombinieren von Daten vereinfachen. Tableau Prep ist besonders nützlich für Datenanalysten, Business-Intelligence-Experten und alle, die komplexe Datensätze für aussagekräftige Visualisierungen vorbereiten möchten.

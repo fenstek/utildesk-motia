@@ -1,13 +1,14 @@
 ---
 slug: dollify
 title: Dollify
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://dollify.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dollify
 
 Dollify ist eine innovative AI-basierte Anwendung, die Nutzern dabei hilft, digitale Avatare und personalisierte Charaktere zu erstellen. Mit einem benutzerfreundlichen Interface und automatisierten Funktionen ermöglicht Dollify die einfache Gestaltung einzigartiger Figuren, die sich in verschiedenen digitalen Kontexten einsetzen lassen. Die Anwendung kombiniert Automatisierung und kreative Freiheit, um den Workflow bei der Erstellung von Avataren zu optimieren.

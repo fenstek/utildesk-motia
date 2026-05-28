@@ -1,11 +1,13 @@
 ---
 slug: invideo
 title: InVideo
-category: Video
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [video,workflow]
 official_url: "https://invideo.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # InVideo
 

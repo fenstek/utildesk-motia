@@ -1,11 +1,13 @@
 ---
 slug: pictory
 title: Pictory
-category: AI
+category: "AI Writing"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://pictory.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # Pictory
 

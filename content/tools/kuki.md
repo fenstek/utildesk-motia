@@ -1,15 +1,16 @@
 ---
 slug: kuki
 title: Kuki
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot"]
 official_url: "https://www.kuki.ai/"
 affiliate_url: "https://www.kuki.ai/"
+tier: "C"
+generated_at: "2026-05-15"
 created_at: 2026-02-07
 popularity: 0
 ---
-
 # Kuki
 
 Kuki ist ein fortschrittlicher KI-basierter Chatbot, der entwickelt wurde, um natürliche und unterhaltsame Konversationen zu ermöglichen. Mit einem Fokus auf menschenähnliche Interaktionen bietet Kuki eine vielseitige Plattform, die sowohl für den privaten als auch für den geschäftlichen Gebrauch geeignet ist. Die Kombination aus freiem Zugang und erweiterten Premium-Funktionen macht Kuki zu einer zugänglichen Lösung für Nutzer, die eine intelligente und interaktive Kommunikation suchen.

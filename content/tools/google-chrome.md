@@ -6,8 +6,9 @@ price_model: Free
 tags: [browser, web, productivity, developer-tools]
 official_url: "https://chrome.google/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Chrome
 
 Google Chrome ist ein weitverbreiteter Webbrowser, der von Google entwickelt wurde. Er zeichnet sich durch seine Geschwindigkeit, Benutzerfreundlichkeit und umfangreiche Erweiterungsmöglichkeiten aus. Chrome unterstützt moderne Webstandards und bietet integrierte Entwicklerwerkzeuge, die besonders für Webentwickler interessant sind. Als kostenloser Browser ist er auf vielen Plattformen verfügbar und eignet sich sowohl für private Nutzer als auch für professionelle Anwender, die im Internet produktiv arbeiten möchten.

@@ -1,12 +1,14 @@
 ---
 slug: camtasia
 title: Camtasia
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [video, automation, productivity, design, education]
 official_url: "https://www.techsmith.com/camtasia/"
 popularity: 0
 description: "Camtasia ist ein Video- und Produktionswerkzeug für Screen Recording, Tutorial-Schnitt und Lernvideo-Produktion für verständliche Schritt-für-Schritt-Inhalte."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Camtasia
 

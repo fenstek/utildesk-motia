@@ -1,13 +1,14 @@
 ---
 slug: dataiku
 title: Dataiku
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [machine-learning, analytics, data-science]
 official_url: "https://www.dataiku.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Dataiku
 
 Dataiku ist eine umfassende Plattform für Data Science, Machine Learning und Analytics, die Unternehmen dabei unterstützt, datengetriebene Projekte effizient zu realisieren. Mit einem Fokus auf Kollaboration ermöglicht Dataiku sowohl Data Scientists als auch Fachanwendern, komplexe Datenpipelines zu erstellen, Modelle zu entwickeln und Erkenntnisse zu gewinnen – alles in einer einzigen Umgebung.
@@ -67,7 +68,6 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - Starke Automatisierungs- und Governance-Funktionen.
 
 - Stärker im Alltag, wenn Dataiku für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn Datenflüsse, Abfragen, Auswertungen und die Verlässlichkeit von Entscheidungen bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Dataiku ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 

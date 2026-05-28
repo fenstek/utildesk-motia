@@ -1,14 +1,15 @@
 ---
 slug: wordtune
 title: Wordtune
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "design"]
 official_url: 'https://www.wordtune.com/'
 created_at: "2026-02-14"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Wordtune
 
 Wordtune ist ein KI-gestütztes Schreibwerkzeug, das Nutzern hilft, ihre Texte klarer, präziser und ansprechender zu formulieren. Die Software nutzt moderne Algorithmen zur natürlichen Sprachverarbeitung, um alternative Formulierungen, Verbesserungen und Umschreibungen anzubieten. Wordtune eignet sich für verschiedenste Textarten, von E-Mails über Blogbeiträge bis hin zu akademischen Arbeiten, und unterstützt damit die Produktivität und Kreativität beim Schreiben.

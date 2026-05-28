@@ -1,13 +1,14 @@
 ---
 slug: waves-abbey-road-tg-mastering-chain
 title: Waves Abbey Road TG Mastering Chain
-category: Audio
+category: "Audio & Video"
 price_model: Abonnement
 tags: [audio,mastering,mixing,music]
 official_url: "https://www.waves.com/plugins/abbey-road-tg-mastering-chain"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Waves Abbey Road TG Mastering Chain
 
 Die Waves Abbey Road TG Mastering Chain ist ein hochwertiges Audio-Plugin, das die legendäre Klangästhetik des Abbey Road Studios nachbildet. Inspiriert von der berühmten EMI TG12410 Transfer Console aus den 1960er Jahren, bietet dieses Tool eine umfassende Mastering-Kette, die speziell für die professionelle Audiobearbeitung entwickelt wurde. Mit seiner Kombination aus Präzision, Wärme und musikalischem Charakter ist es eine beliebte Wahl für Toningenieure und Produzenten, die ihren Mixen den letzten Schliff verleihen möchten.

@@ -1,11 +1,13 @@
 ---
 slug: eli5
 title: ELI5
-category: AI
+category: "AI Agents"
 price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://eli5.readthedocs.io/en/latest/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
 ---
 # ELI5
 

@@ -1,13 +1,14 @@
 ---
 slug: datadog
 title: Datadog
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Je nach Plan
 tags: [data, workflow]
 official_url: "https://www.datadoghq.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Datadog
 
 Datadog ist eine umfassende Überwachungs- und Analyseplattform, die speziell für moderne IT-Infrastrukturen und Anwendungen entwickelt wurde. Die Lösung kombiniert Daten aus verschiedenen Quellen, um tiefgehende Einblicke in Performance, Sicherheit und Betriebsabläufe zu bieten. Mit Unterstützung von KI-gestützten Funktionen hilft Datadog dabei, komplexe Datenflüsse zu verstehen und Workflows effizienter zu gestalten.

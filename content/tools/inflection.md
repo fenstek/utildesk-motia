@@ -1,13 +1,14 @@
 ---
 slug: inflection
 title: Inflection
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, chatbot]
 official_url: "https://inflection.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Inflection
 
 Inflection ist ein KI-gestützter Assistent, der entwickelt wurde, um die Kommunikation zwischen Mensch und Maschine zu vereinfachen. Durch natürliche Sprachverarbeitung und kontextbezogene Antworten ermöglicht Inflection eine intuitive Interaktion, die sich besonders im Bereich von Chatbots und virtuellen Assistenten bewährt hat. Die Technologie zielt darauf ab, den Nutzern produktive und hilfreiche Unterstützung zu bieten, sei es im Kundenservice, bei der Informationssuche oder in anderen dialogbasierten Anwendungen.

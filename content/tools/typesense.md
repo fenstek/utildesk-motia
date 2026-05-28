@@ -1,13 +1,14 @@
 ---
 slug: typesense
 title: Typesense
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [search, open-source, developer-tools, api]
 official_url: "https://typesense.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Typesense
 
 Typesense ist eine moderne, Open-Source-Suchmaschine, die speziell für Entwickler entwickelt wurde, um schnelle, relevante und einfache Volltextsuche in Anwendungen zu integrieren. Mit einem Fokus auf Benutzerfreundlichkeit, niedrige Latenzzeiten und eine einfache API bietet Typesense eine leistungsfähige Alternative zu komplexeren Suchlösungen. Dank seiner Open-Source-Lizenz können Entwickler Typesense kostenlos nutzen, anpassen und in verschiedenste Projekte einbinden.

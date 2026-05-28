@@ -1,13 +1,14 @@
 ---
 slug: google-slides
 title: Google Slides
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [presentations,productivity,google-workspace]
 official_url: "https://workspace.google.com/products/slides/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Slides
 
 Google Slides ist ein webbasiertes Präsentationstool, das Teil der Google Workspace Suite ist. Es ermöglicht Nutzern, Präsentationen online zu erstellen, zu bearbeiten und gemeinsam in Echtzeit zu arbeiten. Das Tool eignet sich besonders für Produktivität und Zusammenarbeit, da es nahtlos mit anderen Google-Diensten verknüpft ist und plattformübergreifend funktioniert.

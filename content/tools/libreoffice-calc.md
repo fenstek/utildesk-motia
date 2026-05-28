@@ -6,8 +6,9 @@ price_model: Open Source
 tags: [spreadsheet,office,open-source,productivity]
 official_url: "https://www.libreoffice.org/#screenshots"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # LibreOffice Calc
 
 LibreOffice Calc ist ein leistungsstarkes, kostenloses Tabellenkalkulationsprogramm aus der Open-Source-Suite LibreOffice. Es bietet umfangreiche Funktionen zur Datenanalyse, Tabellenverwaltung und Visualisierung, die sowohl für private Anwender als auch für professionelle Nutzer geeignet sind. Als Alternative zu kommerziellen Office-Programmen ist Calc besonders attraktiv durch seine Offenheit und Anpassbarkeit.

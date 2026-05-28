@@ -1,13 +1,14 @@
 ---
 slug: intellicode
 title: IntelliCode (Microsoft)
-category: Developer
+category: "Entwickler-Tools"
 price_model: "Je nach Plan"
 tags: [coding, developer-tools]
 official_url: "https://visualstudio.microsoft.com/services/intellicode/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # IntelliCode (Microsoft)
 
 IntelliCode ist ein KI-gestütztes Entwickler-Tool von Microsoft, das die Programmierproduktivität durch intelligente Code-Vervollständigungen und kontextbezogene Empfehlungen verbessert. Es integriert sich nahtlos in Visual Studio und Visual Studio Code und unterstützt Entwickler dabei, schneller und effizienter zu arbeiten, indem es Vorschläge auf Basis von tausenden Open-Source-Projekten und individuellen Projektmustern liefert.

@@ -1,11 +1,13 @@
 ---
 slug: chanty
 title: Chanty
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [communication, collaboration, productivity]
 official_url: "https://www.chanty.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
 ---
 # Chanty
 

@@ -6,10 +6,11 @@ price_model: Je nach Plan
 tags: ["automation", "rpa", "workflow", "enterprise", "integration"]
 official_url: "https://www.tungstenautomation.com/products/rpa"
 affiliate_url: "https://www.tungstenautomation.com/products/rpa"
+tier: "C"
+generated_at: "2026-05-20"
 popularity: 0
 description: Enterprise-RPA für die Automatisierung regelbasierter Prozesse, Datenzugriffe und Systemarbeit.
 ---
-
 # Kofax RPA
 
 Kofax RPA, heute im Tungsten-Automation-Portfolio, richtet sich an Unternehmen, die wiederkehrende digitale Prozesse automatisieren wollen.
@@ -21,7 +22,6 @@ Der Fokus liegt auf regelbasierten Workflows, Datenzugriffen, Systeminteraktione
 Kofax RPA passt zu Unternehmen mit vielen wiederkehrenden, regelbasierten Prozessen: Backoffice, Finance, Operations, Versicherung, Verwaltung und dokumentenlastige Abläufe. Besonders relevant ist es, wenn Systeme nicht sauber integriert sind und Menschen Daten zwischen Masken, PDFs, Portalen oder Altsystemen übertragen.
 
 Nicht jeder Prozess ist ein guter RPA-Kandidat. Wenn Regeln instabil, Eingaben unklar oder Ausnahmen häufig sind, sollte zuerst der Prozess verbessert werden, bevor ein Bot gebaut wird.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/kofax-rpa-editorial.webp" alt="Illustration zu Kofax RPA: mechanische Arme bewegen Dokumente durch einen Backoffice-Prozess" loading="lazy" decoding="async" />

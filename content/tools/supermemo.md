@@ -1,13 +1,14 @@
 ---
 slug: supermemo
 title: SuperMemo
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [education, learning, flashcards, productivity]
 official_url: "https://www.supermemo.com/en"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # SuperMemo
 
 SuperMemo ist eine innovative Lernsoftware, die auf dem Prinzip der Spaced Repetition basiert und speziell entwickelt wurde, um das Langzeitgedächtnis zu verbessern. Mit Hilfe von intelligenten Algorithmen hilft SuperMemo dabei, Wissen effektiver und nachhaltiger zu speichern. Das Tool unterstützt Lernende aller Altersgruppen und Fachrichtungen, indem es personalisierte Lernpläne und eine Vielzahl von Lernmaterialien bietet.

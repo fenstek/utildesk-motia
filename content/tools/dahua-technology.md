@@ -1,13 +1,14 @@
 ---
 slug: dahua-technology
 title: Dahua Technology
-category: Video
+category: "Audio & Video"
 price_model: Abonnement
 tags: [video, security, hardware, analytics]
 official_url: "https://www.dahuasecurity.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dahua Technology
 
 Dahua Technology ist ein führender Anbieter von Videoüberwachungs- und Sicherheitslösungen. Das Unternehmen bietet eine breite Palette an Hardware- und Softwareprodukten, die moderne Videoanalyse, intelligente Überwachung und zuverlässige Sicherheitsfunktionen kombinieren. Dahua richtet sich an Unternehmen und Organisationen, die robuste und skalierbare Videoüberwachungssysteme benötigen, um ihre Objekte und Mitarbeiter effektiv zu schützen.

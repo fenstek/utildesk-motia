@@ -1,13 +1,14 @@
 ---
 slug: ableton-live
 title: Ableton Live
-category: Audio
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Ableton Live
 
 Ableton Live ist eine Digital Audio Workstation für Menschen, die Musik nicht nur linear aufnehmen, sondern mit Loops, Clips, MIDI-Ideen, Sounddesign und Bühnen-Setups arbeiten. Die Software ist besonders stark, wenn aus einer Skizze schnell ein spielbares Arrangement werden soll.

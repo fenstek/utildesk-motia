@@ -1,13 +1,14 @@
 ---
 slug: google-tpu
 title: Google TPU (Tensor Processing Unit)
-category: AI
+category: "AI Infrastructure"
 price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://cloud.google.com/tpu"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google TPU (Tensor Processing Unit)
 
 Google TPU (Tensor Processing Unit) ist eine speziell entwickelte Hardware, die von Google zur Beschleunigung von Machine-Learning-Workloads konzipiert wurde. Sie optimiert die Ausführung von TensorFlow-Modellen und bietet eine hohe Rechenleistung bei gleichzeitig geringem Energieverbrauch. TPUs sind vor allem für komplexe KI-Anwendungen und große Datenanalysen geeignet, die hohe Performance und Effizienz erfordern.

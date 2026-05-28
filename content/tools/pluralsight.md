@@ -1,11 +1,13 @@
 ---
 slug: pluralsight
 title: Pluralsight
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [education, courses, developer-tools, productivity]
 official_url: "https://www.pluralsight.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # Pluralsight
 

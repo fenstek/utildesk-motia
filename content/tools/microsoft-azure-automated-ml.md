@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-automated-ml
 title: Microsoft Azure Automated ML
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Nutzungsbasiert
 tags: [ml, auto-ml, cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Automated ML
 
 Microsoft Azure Automated ML ist ein cloudbasierter Dienst, der es ermöglicht, Machine-Learning-Modelle automatisiert zu erstellen, zu trainieren und bereitzustellen. Ohne tiefgehende Programmierkenntnisse können Anwender so effizient prädiktive Modelle entwickeln und optimieren. Die Plattform unterstützt verschiedene Algorithmen und Datenquellen und ist in die Azure-Cloud-Umgebung integriert, was Skalierbarkeit und Flexibilität gewährleistet.

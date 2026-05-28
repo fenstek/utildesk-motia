@@ -1,13 +1,15 @@
 ---
 slug: textai
 title: TextAI
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags:
   - ai
   - writing
 official_url: 'https://www.usetextai.com'
 affiliate_url: 'https://www.usetextai.com'
+tier: "C"
+generated_at: "2026-05-25"
 created_at: "2026-02-11"
 popularity: 0
 ---

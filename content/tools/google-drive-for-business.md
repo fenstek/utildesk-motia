@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [cloud-storage,documents,collaboration,productivity]
 official_url: "https://workspace.google.com/products/drive/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Google Drive for Business
 
 Google Drive for Business ist eine cloudbasierte Speicher- und Kollaborationsplattform, die speziell für Unternehmen entwickelt wurde. Sie ermöglicht das sichere Speichern, Teilen und gemeinsame Bearbeiten von Dokumenten und Dateien in Echtzeit. Mit einer Vielzahl von Funktionen unterstützt Google Drive for Business Teams dabei, produktiver und effizienter zu arbeiten, unabhängig vom Standort der Mitarbeitenden.

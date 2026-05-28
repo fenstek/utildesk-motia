@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-functions
 title: Google Cloud Functions
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://cloud.google.com/functions"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Google Cloud Functions
 
 Google Cloud Functions ist ein serverloser Compute-Dienst von Google, der es Entwicklern ermöglicht, Code in der Cloud auszuführen, ohne sich um Serverinfrastruktur oder Skalierung kümmern zu müssen. Funktionen werden ereignisgesteuert ausgelöst, beispielsweise durch HTTP-Anfragen, Cloud-Events oder Änderungen in Cloud-Speichern. Dadurch eignet sich Google Cloud Functions besonders für die schnelle Entwicklung und Bereitstellung von APIs, Microservices und Backend-Logik.

@@ -1,13 +1,14 @@
 ---
 slug: apache-hive
 title: Apache Hive
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [developer-tools,data,cloud]
 official_url: "https://hive.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Hive
 
 Apache Hive ist eine Open-Source-Datenbank-Software, die speziell für die Analyse großer Datensätze in verteilten Umgebungen entwickelt wurde. Ursprünglich von Facebook entwickelt und später der Apache Software Foundation übergeben, ermöglicht Hive die Ausführung von SQL-ähnlichen Abfragen auf Hadoop-Daten. Es dient als Brücke zwischen traditionellen Datenbanktechnologien und Big-Data-Frameworks, indem es die Komplexität von MapReduce und anderen Hadoop-Operationen abstrahiert.

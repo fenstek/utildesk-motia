@@ -1,11 +1,13 @@
 ---
 slug: cram
 title: Cram
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [education, flashcards, learning, productivity]
 official_url: "https://www.cram.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Cram
 

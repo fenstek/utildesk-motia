@@ -1,13 +1,14 @@
 ---
 slug: coda
 title: Coda
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://coda.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Coda
 
 Coda ist ein vielseitiges, cloudbasiertes Tool, das Dokumente, Tabellenkalkulationen und Anwendungen in einer einzigen Plattform vereint. Durch die Integration von KI-gestützten Funktionen ermöglicht Coda eine smarte Automatisierung und unterstützt Teams dabei, komplexe Arbeitsabläufe effizienter zu gestalten. Mit flexiblen Anpassungsmöglichkeiten und einer intuitiven Benutzeroberfläche eignet sich Coda sowohl für Einzelpersonen als auch für Unternehmen verschiedenster Größen.

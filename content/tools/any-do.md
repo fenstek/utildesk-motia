@@ -1,13 +1,14 @@
 ---
 slug: any-do
 title: Any.do
-category: AI
+category: "AI Coding"
 price_model: Freemium
 tags: [todo,productivity,task-management]
 official_url: "https://www.any.do/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Any.do
 
 Any.do ist ein Aufgaben- und Planungswerkzeug für To-dos, Kalender, Erinnerungen und einfache Alltagsorganisation. Es richtet sich an Menschen, die private und berufliche Kleinigkeiten nicht mehr im Kopf balancieren wollen.

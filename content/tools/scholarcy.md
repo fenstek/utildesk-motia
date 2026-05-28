@@ -1,12 +1,14 @@
 ---
 slug: scholarcy
 title: Scholarcy
-category: AI
+category: "AI Agents"
 price_model: "Abonnement"
 tags: [assistant, automation, education, productivity]
 official_url: "https://www.scholarcy.com/"
 popularity: 0
 description: "Scholarcy ist ein Recherche- und Analysewerkzeug für wissenschaftliche Texte zusammenfassen, Kernaussagen extrahieren und Papers schneller vorsortieren."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # Scholarcy
 
@@ -19,7 +21,6 @@ Ein guter Einstieg in Scholarcy ist ein Mini-Pilot mit echtem Material. Nicht di
 Recherchetools helfen beim Sortieren von Unsicherheit. Stark werden sie erst, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Für Scholarcy sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 Scholarcy ist für Studierende, Forschende, Analysten und Teams mit vielen PDFs vor allem dann wertvoll, wenn es einen sichtbaren Vorher-nachher-Unterschied im Workflow erzeugt.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scholarcy-editorial.webp" alt="Illustration zu Scholarcy: Ein langer Artikelstreifen wird zu einer kompakten Studienkarte gefaltet" loading="lazy" decoding="async" />

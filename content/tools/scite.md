@@ -1,15 +1,16 @@
 ---
 slug: scite
 title: Scite
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://scite.ai'
 affiliate_url: 'https://scite.ai'
+tier: "C"
+generated_at: "2026-05-13"
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # Scite
 
 Scite ist ein innovatives KI-gestütztes Tool, das Forschern und Studierenden hilft, wissenschaftliche Arbeiten schneller und effizienter zu bewerten. Mit Hilfe von maschinellem Lernen analysiert Scite Zitate in wissenschaftlichen Artikeln und zeigt an, ob diese unterstützend, widersprechend oder neutral sind. So erleichtert es die Einschätzung der Glaubwürdigkeit von Quellen und fördert fundierte wissenschaftliche Arbeit.
@@ -31,7 +32,6 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Worauf achten:** Bei Scite sollten Datenqualität, Laufzeit, Wartbarkeit und Akzeptanz der Auswertung nicht nur gefühlt besser wirken, sondern anhand konkreter Vorher-nachher-Belege verglichen werden.
 - **Guter Startpunkt:** Ein Team sollte Scite zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** Scite enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scite-editorial.webp" alt="Illustration zu Scite: Forschungskarten werden als Beweisstuecke mit farbigen Unterstuetzungswegen verbunden" loading="lazy" decoding="async" />

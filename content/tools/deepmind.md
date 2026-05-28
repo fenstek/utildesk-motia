@@ -1,15 +1,17 @@
 ---
 slug: deepmind
 title: DeepMind
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["data", "automation"]
 official_url: 'https://deepmind.google/'
 affiliate_url: 'https://deepmind.google/'
+tier: "A"
+lastReviewed: "2026-05-11"
+mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar"]
 created_at: "2026-02-11"
 popularity: 0
 ---
-
 # DeepMind
 
 DeepMind ist ein führendes Unternehmen im Bereich der Künstlichen Intelligenz (KI), das sich auf die Entwicklung fortschrittlicher Algorithmen und maschinellen Lernens spezialisiert hat. Die Technologien von DeepMind werden in verschiedenen Branchen eingesetzt, um komplexe Probleme zu lösen, von der Gesundheitsforschung bis hin zur Optimierung von Geschäftsprozessen. Mit einem freemium Preismodell bietet DeepMind sowohl frei zugängliche als auch erweiterte, kostenpflichtige Funktionen an.

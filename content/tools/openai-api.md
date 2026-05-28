@@ -1,19 +1,20 @@
 ---
 slug: openai-api
 title: OpenAI API
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags:
   - ai
   - devtools
 official_url: 'https://platform.openai.com/'
 affiliate_url: 'https://platform.openai.com/'
+tier: "A"
+lastReviewed: "2026-05-21"
+mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen"]
 created_at: "2026-02-11"
 updated_at: 2026-05-21
 popularity: 0
 ---
-
-
 # OpenAI API
 
 Die OpenAI API ist eine leistungsstarke Schnittstelle, die es Entwicklern ermöglicht, moderne KI-Modelle in ihre Anwendungen zu integrieren. Sie bietet Zugang zu fortschrittlichen Sprachmodellen, die natürliche Sprache verstehen und generieren können, und unterstützt vielfältige Anwendungsfälle wie Textgenerierung, Übersetzungen, Zusammenfassungen und mehr. Die API ist flexibel und skalierbar, wodurch sie sowohl für kleine Projekte als auch für große Unternehmen geeignet ist.

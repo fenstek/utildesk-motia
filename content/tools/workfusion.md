@@ -1,13 +1,14 @@
 ---
 slug: workfusion
 title: WorkFusion
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.workfusion.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # WorkFusion
 
 WorkFusion ist eine leistungsstarke Plattform für intelligente Automatisierung, die Unternehmen dabei unterstützt, repetitive und zeitaufwändige Aufgaben durch den Einsatz von Künstlicher Intelligenz (KI) und Robotic Process Automation (RPA) zu optimieren. Die Lösung kombiniert maschinelles Lernen, Prozessautomatisierung und Datenverarbeitung, um Geschäftsprozesse effizienter zu gestalten und Mitarbeiter von Routinearbeiten zu entlasten.

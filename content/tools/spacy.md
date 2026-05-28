@@ -1,13 +1,14 @@
 ---
 slug: spacy
 title: spaCy
-category: AI
+category: "AI Coding"
 price_model: "Open Source"
 tags: [coding, developer-tools, api, data]
 official_url: "https://spacy.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # spaCy
 
 spaCy ist eine leistungsstarke Open-Source-Bibliothek für die Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) in Python. Sie wurde speziell für Entwickler und Datenwissenschaftler entwickelt, die robuste und effiziente Werkzeuge zur Textanalyse benötigen. spaCy bietet moderne Algorithmen, vortrainierte Modelle und eine einfache API, um komplexe NLP-Aufgaben wie Tokenisierung, Named Entity Recognition (NER), Part-of-Speech-Tagging und Abhängigkeitsparsing schnell und zuverlässig zu lösen.
@@ -15,8 +16,6 @@ spaCy ist eine leistungsstarke Open-Source-Bibliothek für die Verarbeitung nat�
 ## Für wen ist spaCy geeignet?
 
 spaCy richtet sich vor allem an Entwickler, Data Scientists und Unternehmen, die natürliche Sprache in ihren Anwendungen verarbeiten möchten. Es ist ideal für Projekte, die eine schnelle, skalierbare und produktionsreife NLP-Lösung benötigen. Durch die Integration mit Machine-Learning-Frameworks und die Unterstützung mehrerer Sprachen eignet sich spaCy sowohl für Prototypen als auch für produktive Systeme in Bereichen wie Chatbots, Textklassifikation, Informationsentnahme und mehr.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/spacy-editorial.webp" alt="Illustration zu spaCy: Sprachbestandteile verzweigen sich wie ein botanisches Analyseblatt" loading="lazy" decoding="async" />
@@ -51,7 +50,6 @@ spaCy richtet sich vor allem an Entwickler, Data Scientists und Unternehmen, die
 - Kommerzielle Nutzung in großem Maßstab kann zusätzliche Lizenzen erfordern.
 - Modelle benötigen teilweise viel Speicher und Rechenressourcen.
 - Nicht alle Sprachen sind gleich gut unterstützt.
-
 
 ## Was im Alltag wirklich zählt
 

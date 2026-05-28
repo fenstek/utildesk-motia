@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.meitu.com/en"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Meitu
 
 Meitu ist eine vielseitige Design- und Bildbearbeitungssoftware, die vor allem für ihre KI-gestützten Funktionen bekannt ist. Das Tool ermöglicht es Nutzern, Fotos schnell und einfach zu verschönern, kreative Designs zu erstellen und visuelle Inhalte mit modernen AI-Technologien zu optimieren. Meitu bietet eine Mischung aus einfachen Bearbeitungswerkzeugen und fortschrittlichen Effekten, die sowohl Anfänger als auch erfahrene Designer ansprechen.

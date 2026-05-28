@@ -1,12 +1,14 @@
 ---
 slug: streamsets
 title: StreamSets
-category: Developer
+category: "Entwickler-Tools"
 price_model: Je nach Plan
 tags: [data, integration, automation, developer-tools]
 official_url: "https://www.ibm.com/products/streamsets"
 popularity: 0
 description: "StreamSets ist eine Data-Integration-Plattform für Datenpipelines, Streaming, ETL/ELT und operative Datenflüsse."
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # StreamSets
 

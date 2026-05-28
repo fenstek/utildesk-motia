@@ -1,13 +1,14 @@
 ---
 slug: avoma
 title: Avoma
-category: AI
+category: "AI Audio"
 price_model: Abonnement
 tags: [meetings, sales, transcription]
 official_url: "https://www.avoma.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Avoma
 
 Avoma ist ein KI-gestütztes Tool, das speziell für die Optimierung von Meetings, Vertriebsprozessen und Transkriptionen entwickelt wurde. Es unterstützt Teams dabei, Besprechungen effizienter zu gestalten, wichtige Gesprächsinhalte automatisch zu erfassen und wertvolle Erkenntnisse zu gewinnen. Durch intelligente Analysefunktionen hilft Avoma, die Kommunikation zu verbessern und die Nachbereitung von Meetings zu vereinfachen.

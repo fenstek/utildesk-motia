@@ -1,13 +1,14 @@
 ---
 slug: photopea
 title: Photopea
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [image, workflow]
 official_url: "https://www.photopea.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Photopea
 
 Photopea ist ein vielseitiges Online-Bildbearbeitungsprogramm, das viele Funktionen bekannter Desktop-Software bietet, aber direkt im Browser läuft. Es eignet sich für die Bearbeitung von Fotos, Grafiken und Designs ohne Installation zusätzlicher Software. Die Anwendung unterstützt verschiedene Dateiformate, darunter PSD, XCF, Sketch, XD und CDR, und ermöglicht so eine flexible und schnelle Bildbearbeitung.

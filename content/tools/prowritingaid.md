@@ -1,13 +1,14 @@
 ---
 slug: prowritingaid
 title: ProWritingAid
-category: AI
+category: "AI Writing"
 price_model: Je nach Plan
 tags: [writing, workflow]
 official_url: "https://prowritingaid.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # ProWritingAid
 
 ProWritingAid ist ein umfassendes KI-gestütztes Schreib- und Korrekturtool, das Autoren, Redakteuren und Content-Erstellern hilft, ihre Texte zu verbessern. Es bietet eine Vielzahl von Funktionen, um Grammatik, Stil, Lesbarkeit und Kohärenz zu optimieren und unterstützt dabei, den Schreibprozess effizienter zu gestalten.

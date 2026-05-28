@@ -1,13 +1,14 @@
 ---
 slug: sony-vegas-pro
 title: Sony Vegas Pro
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [video-editing, post-production, audio-video]
 official_url: "https://www.vegascreativesoftware.com/us/vegas-pro/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sony Vegas Pro
 
 Sony Vegas Pro ist eine professionelle Software für die Videobearbeitung und Postproduktion, die sowohl von Einsteigern als auch von erfahrenen Filmemachern und Content-Erstellern genutzt wird. Mit einer breiten Palette an Funktionen für Schnitt, Effekte, Farbkorrektur und Audiobearbeitung bietet Vegas Pro eine leistungsstarke Plattform für die Erstellung hochwertiger Videos. Die Software unterstützt moderne Formate und ermöglicht effiziente Arbeitsabläufe durch eine intuitive Benutzeroberfläche.

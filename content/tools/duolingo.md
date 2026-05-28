@@ -1,13 +1,14 @@
 ---
 slug: duolingo
 title: Duolingo
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [education,language,learning,mobile]
 official_url: "https://www.duolingo.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
 ---
-
 # Duolingo
 
 Duolingo ist eine beliebte Lernplattform, die sich auf das Erlernen von Sprachen mithilfe von KI-gestützten Übungen spezialisiert hat. Die App bietet interaktive Lektionen, die spielerisch und abwechslungsreich gestaltet sind, um das Sprachlernen einfach und motivierend zu gestalten. Mit einer Kombination aus Vokabeltraining, Grammatikübungen und Hörverständnis unterstützt Duolingo Nutzer aller Niveaustufen beim kontinuierlichen Ausbau ihrer Sprachkenntnisse.
@@ -20,20 +21,6 @@ Duolingo ist besonders nützlich für Lernende, Lehrende und Wissensarbeitsteams
 
 Vor einer breiteren Einführung von Duolingo lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Duolingo sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Ein belastbarer Pilot für Duolingo beginnt mit einer echten Lerneinheit mit Ziel, Aufgabe, Feedback, Wiederholung und kurzer Auswertung. Danach geht es nicht um Bauchgefühl, sondern darum, ob Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Duolingo:** Vor dem Rollout sollten Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Duolingo:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Duolingo:** Ohne klare Regeln wird der Nutzen schwach, sobald Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/duolingo-editorial.webp" alt="Illustration zu Duolingo: Sprachlernende folgt Uebungspfaden durch einen bunten Markt" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Interaktive Sprachlektionen:** Spielerische Übungen zu Wortschatz, Grammatik und Aussprache.
@@ -44,10 +31,6 @@ Ein belastbarer Pilot für Duolingo beginnt mit einer echten Lerneinheit mit Zie
 - **Gamification-Elemente:** Belohnungen, Levelaufstiege und tägliche Herausforderungen motivieren zum kontinuierlichen Lernen.
 - **Community-Funktionen:** Möglichkeit, sich mit anderen Lernenden zu messen oder auszutauschen.
 - **Offline-Modus:** Teilweise Nutzung auch ohne Internetverbindung möglich.
-
-- **Praxislauf mit Duolingo:** Das Tool sollte mit einer echten Lerneinheit mit Ziel, Aufgabe, Feedback, Wiederholung und kurzer Auswertung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Duolingo:** Das Team braucht eine einfache Methode, um Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks nach dem Einsatz zu prüfen.
-- **Übergabe mit Duolingo:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

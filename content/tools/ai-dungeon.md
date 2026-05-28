@@ -1,15 +1,16 @@
 ---
 slug: ai-dungeon
 title: AI Dungeon
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "design"]
 official_url: "https://play.aidungeon.io"
 affiliate_url: "https://play.aidungeon.io"
+tier: "C"
+generated_at: "2026-05-14"
 created_at: 2026-02-03
 popularity: 0
 ---
-
 # AI Dungeon
 
 AI Dungeon ist ein innovatives textbasiertes Abenteuerspiel, das auf künstlicher Intelligenz basiert. Es ermöglicht Nutzern, interaktive Geschichten in Echtzeit zu erleben und eigene Abenteuer zu gestalten. Durch die Nutzung von fortschrittlichen Sprachmodellen generiert AI Dungeon dynamisch Handlungsstränge, die sich flexibel an die Eingaben der Spieler anpassen. So entsteht ein einzigartiges, personalisiertes Spielerlebnis, das weit über traditionelle Textadventures hinausgeht.

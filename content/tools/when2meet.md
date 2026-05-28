@@ -1,13 +1,14 @@
 ---
 slug: when2meet
 title: When2meet
-category: AI
+category: "AI Image"
 price_model: 
 tags: [scheduling, availability, meeting-planning]
 official_url: "https://www.when2meet.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-06"
 ---
-
 # When2meet
 
 When2meet ist ein einfaches, webbasiertes Tool zur Terminplanung, das es Gruppen ermöglicht, schnell und unkompliziert gemeinsame verfügbare Zeiten für Meetings oder Veranstaltungen zu finden. Ohne Registrierung kann jeder Teilnehmer seine Verfügbarkeit angeben, wodurch die Koordination von Terminen deutlich erleichtert wird.
@@ -28,16 +29,6 @@ When2meet ist besonders nützlich für Teams und Einzelpersonen, die wiederkehre
 
 When2meet gewinnt vor allem dann, wenn der Einsatz bewusst eng gestartet wird: ein klarer Zweck, ein überschaubarer Daten- oder Aufgabenraum und ein Review, das nicht erst nach Problemen entsteht.
 
-## Redaktionelle Einschätzung
-
-When2meet lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Als Prüfstück für When2meet eignet sich einem echten Wochenablauf mit Aufgaben, Terminen, Übergaben, Erinnerungen und Review. Wenn Zeitersparnis, weniger Nachfragen, bessere Übergaben, Vollständigkeit und Routinen danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für When2meet:** Vor dem Rollout sollten Zeitersparnis, weniger Nachfragen, bessere Übergaben, Vollständigkeit und Routinen mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für When2meet:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei When2meet:** Ohne klare Regeln wird der Nutzen schwach, sobald Regeln, Benachrichtigungen, Datenpflege und Verantwortlichkeiten nicht gemeinsam festgelegt werden.
-
 ## Hauptfunktionen
 
 - **Einfache Erstellung von Terminabstimmungen:** Erstellen Sie mit wenigen Klicks eine Umfrage zur Verfügbarkeit.
@@ -48,10 +39,6 @@ Als Prüfstück für When2meet eignet sich einem echten Wochenablauf mit Aufgabe
 - **Teilen per Link:** Die Umfrage kann einfach per URL an alle Teilnehmer verteilt werden.
 - **Mobil optimiert:** Zugriff und Bedienung auch auf Smartphones und Tablets möglich.
 - **Mehrsprachigkeit:** Die Benutzeroberfläche ist in mehreren Sprachen verfügbar.
-
-- **Praxislauf mit When2meet:** Das Tool sollte mit einem echten Wochenablauf mit Aufgaben, Terminen, Übergaben, Erinnerungen und Review getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in When2meet:** Das Team braucht eine einfache Methode, um Zeitersparnis, weniger Nachfragen, bessere Übergaben, Vollständigkeit und Routinen nach dem Einsatz zu prüfen.
-- **Übergabe mit When2meet:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 
@@ -75,7 +62,6 @@ Als Prüfstück für When2meet eignet sich einem echten Wochenablauf mit Aufgabe
 - Eingeschränkte Anpassungsmöglichkeiten der Umfrage
 
 - When2meet braucht vor dem Rollout Klärung, wenn Regeln, Benachrichtigungen, Datenpflege und Verantwortlichkeiten nicht gemeinsam festgelegt werden; sonst entstehen Nebenprozesse.
-- When2meet spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit dauerhaft nebenbei laufen sollen.
 
 ## Preise & Kosten
 

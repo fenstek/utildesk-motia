@@ -6,8 +6,9 @@ price_model: "Je nach Plan"
 tags: [marketing, social, analytics]
 official_url: "https://www.zoho.com/de/social/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zoho Social
 
 Zoho Social ist eine umfassende Social-Media-Management-Plattform, die Unternehmen und Marketingteams dabei unterstützt, ihre Online-Präsenz effizient zu verwalten, Inhalte zu planen und die Performance in sozialen Netzwerken zu analysieren. Mit einer benutzerfreundlichen Oberfläche und vielfältigen Funktionen richtet sich das Tool an Unternehmen jeder Größe, die ihre Social-Media-Strategie professionalisieren möchten.

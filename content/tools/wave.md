@@ -1,13 +1,15 @@
 ---
 slug: wave
 title: Wave
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["accounting", "finance"]
 official_url: "https://www.waveapps.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
-
 # Wave
 
 Wave ist eine cloudbasierte Buchhaltungs- und Finanzsoftware, die speziell für kleine Unternehmen, Freiberufler und Selbstständige entwickelt wurde. Die Plattform bietet eine Kombination aus Buchhaltung, Rechnungsstellung und Finanzmanagement mit einem starken Fokus auf Benutzerfreundlichkeit und Automatisierung. Wave nutzt KI-gestützte Funktionen, um den Verwaltungsaufwand zu reduzieren und Finanzprozesse effizienter zu gestalten.

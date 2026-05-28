@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-pub-sub
 title: Google Cloud Pub/Sub
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data,messaging,cloud,developer-tools]
 official_url: "https://cloud.google.com/pubsub"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google Cloud Pub/Sub
 
 Google Cloud Pub/Sub ist ein skalierbarer, vollständig verwalteter Messaging-Dienst, der es Entwicklern ermöglicht, asynchrone Kommunikation zwischen Anwendungen und Diensten in der Cloud zu realisieren. Als Teil der Google Cloud Platform unterstützt Pub/Sub die Verarbeitung großer Datenströme in Echtzeit und ist ideal für Anwendungen, die auf eine zuverlässige und flexible Nachrichtenübermittlung angewiesen sind.
@@ -42,7 +43,6 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 
 ## Hauptfunktionen
 
-- **Asynchrone Nachrichtenübermittlung:** Publisher senden Nachrichten an Themen (Topics), die von Abonnenten (Subscribers) empfangen werden. Bei Google Cloud Pub/Sub ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - **Skalierbarkeit:** Automatische Skalierung, um Millionen von Nachrichten pro Sekunde zu verarbeiten.
 - **Zuverlässigkeit:** Garantierte mindestens einmalige Zustellung von Nachrichten.
 - **Echtzeit-Datenverarbeitung:** Unterstützt Streaming- und Batch-Verarbeitungsworkflows.

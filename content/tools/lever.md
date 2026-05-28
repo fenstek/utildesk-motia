@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.lever.co/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Lever
 
 Lever ist eine umfassende Recruiting- und Applicant-Tracking-Software, die Unternehmen dabei unterstützt, den Einstellungsprozess zu optimieren und zu automatisieren. Mit einem Fokus auf Zusammenarbeit im Team und nahtlose Integration verschiedener HR-Prozesse bietet Lever eine Plattform, die den gesamten Recruiting-Zyklus von der Bewerbersuche bis zur Einstellung abdeckt.

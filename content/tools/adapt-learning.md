@@ -1,13 +1,14 @@
 ---
 slug: adapt-learning
 title: Adapt Learning
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://www.adaptlearning.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Adapt Learning
 
 Adapt Learning ist eine Open-Source-Authoring-Tool-Plattform, die speziell für die Erstellung von responsiven E-Learning-Inhalten entwickelt wurde. Das Tool ermöglicht es Entwicklern und Bildungsexperten, interaktive und ansprechende Lernmodule zu gestalten, die auf verschiedenen Endgeräten optimal dargestellt werden. Adapt Learning ist besonders bekannt für seine Flexibilität und die Unterstützung von adaptivem Lernen, wodurch Inhalte je nach Nutzerverhalten angepasst werden können.

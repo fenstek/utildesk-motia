@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [contact-center, customer-support, communication, ai]
 official_url: "https://www.webex.com/customer-experience.html"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Cisco Contact Center
 
 Cisco Contact Center ist eine umfassende Lösung zur Optimierung von Kundenservice und Kommunikation. Mit modernen Funktionen unterstützt es Unternehmen dabei, Kundenanfragen effizient zu verwalten und die Kundenzufriedenheit zu steigern. Die Plattform integriert KI-Technologien, um Interaktionen zu automatisieren und personalisierte Serviceerlebnisse zu ermöglichen.

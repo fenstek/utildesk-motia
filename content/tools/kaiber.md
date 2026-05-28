@@ -1,12 +1,14 @@
 ---
 slug: kaiber
 title: Kaiber
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.kaiber.ai/superstudio"
 popularity: 0
 description: "Kaiber ist ein Video- und Produktionswerkzeug für KI-Video und kreative Motion-Ästhetik für Musik, Social Clips und visuelle Experimente."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Kaiber
 

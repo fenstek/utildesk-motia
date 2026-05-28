@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-computer-vision
 title: Microsoft Azure Computer Vision
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: ["education", "automation"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Microsoft Azure Computer Vision
 
 Microsoft Azure Computer Vision ist ein leistungsstarker KI-basierter Dienst, der es Entwicklern ermöglicht, visuelle Daten automatisch zu analysieren und zu interpretieren. Mit umfangreichen Funktionen zur Bilderkennung, Objekterkennung und Texterkennung (OCR) unterstützt das Tool vielfältige Anwendungsfälle in Bereichen wie Automatisierung, Sicherheit, Einzelhandel und mehr. Dank der Integration in die Azure Cloud-Plattform profitieren Nutzer von Skalierbarkeit und einfacher Einbindung in eigene Anwendungen.

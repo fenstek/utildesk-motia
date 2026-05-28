@@ -1,13 +1,14 @@
 ---
 slug: faceswap
 title: FaceSwap
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://faceswap.dev/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # FaceSwap
 
 FaceSwap ist ein KI-gestütztes Tool, das es ermöglicht, Gesichter in Bildern oder Videos automatisch auszutauschen. Durch den Einsatz moderner Algorithmen kann das Programm realistische und nahtlose Ergebnisse liefern, die in Bereichen wie Unterhaltung, Marketing oder Social Media Anwendung finden. Die Bedienung ist meist benutzerfreundlich gestaltet, sodass auch Nutzer ohne tiefgehende technische Kenntnisse von den Funktionen profitieren können.

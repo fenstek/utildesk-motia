@@ -1,15 +1,15 @@
 ---
 slug: "speechify"
 title: "Speechify"
-category: "AI"
+category: "AI Audio"
 price_model: "Freemium"
 tags: [ai, audio]
 official_url: "https://speechify.com/"
 created_at: "2026-02-15"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
-
 # Speechify
 
 Speechify ist ein KI-gestütztes Text-zu-Sprache-Tool, das es Nutzern ermöglicht, geschriebenen Text in natürlich klingende Audiodateien umzuwandeln. Mit einer benutzerfreundlichen Oberfläche und vielfältigen Funktionen unterstützt Speechify Menschen dabei, Texte effizienter zu konsumieren – sei es für Studium, Arbeit oder Freizeit. Das Tool bietet sowohl kostenlose als auch kostenpflichtige Versionen mit erweiterten Features.

@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-notification-hubs
 title: Microsoft Azure Notification Hubs
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, mobile]
 official_url: "https://azure.microsoft.com/en-us/products/notification-hubs"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Notification Hubs
 
 Microsoft Azure Notification Hubs ist ein skalierbarer Cloud-Dienst, der Entwicklern ermöglicht, Push-Benachrichtigungen an Millionen von mobilen Geräten und Plattformen zu senden. Der Dienst unterstützt verschiedene Betriebssysteme wie iOS, Android, Windows und mehr und erleichtert die Integration von Messaging-Funktionalitäten in mobile und Web-Anwendungen.

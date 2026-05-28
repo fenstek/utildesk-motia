@@ -1,12 +1,14 @@
 ---
 slug: loudly
 title: Loudly
-category: AI
+category: "AI Audio"
 price_model: "Je nach Plan"
 tags: [music-generation, audio, ai-music]
 official_url: "https://www.loudly.com/"
 popularity: 0
 description: "Loudly ist ein Audio- und Musikwerkzeug für KI-Musik, Soundtracks und lizenzierbare Audio-Varianten für Content-Produktion."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Loudly
 

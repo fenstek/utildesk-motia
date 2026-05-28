@@ -1,13 +1,14 @@
 ---
 slug: cubase
 title: Cubase
-category: AI
+category: "AI Agents"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.steinberg.net/cubase/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Cubase
 
 Cubase ist eine professionelle Digital Audio Workstation für Recording, Komposition, MIDI, Arrangement, Mixing und Musikproduktion. Es ist kein klassisches KI-Tool, sondern ein ausgewachsenes Studio-System, das besonders bei Musikern, Produzenten und Komponisten seit Jahren etabliert ist.

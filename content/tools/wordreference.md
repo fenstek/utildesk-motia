@@ -1,13 +1,14 @@
 ---
 slug: wordreference
 title: WordReference
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [translation, language, reference, productivity]
 official_url: "https://www.wordreference.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # WordReference
 
 WordReference ist ein umfassendes Online-Wörterbuch und Übersetzungstool, das Nutzern hilft, Sprachbarrieren zu überwinden. Es bietet schnelle und präzise Übersetzungen, umfangreiche Wörterbucheinträge sowie Foren für den Austausch mit Muttersprachlern. Ideal für Studierende, Berufstätige und jeden, der Fremdsprachen lernen oder übersetzen möchte.

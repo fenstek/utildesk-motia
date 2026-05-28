@@ -1,12 +1,14 @@
 ---
 slug: alteryx
 title: Alteryx
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [analytics, data-preparation, automation]
 official_url: "https://www.alteryx.com/"
 popularity: 0
 description: Alteryx ist eine Analytics- und Data-Preparation-Plattform für Teams, die Datenflüsse, Analysen und Automatisierungen ohne reinen Code-Stack bauen wollen.
+tier: "C"
+generated_at: "2026-05-28"
 ---
 # Alteryx
 

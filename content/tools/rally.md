@@ -1,13 +1,14 @@
 ---
 slug: rally
 title: Rally
-category: AI
+category: "AI Image"
 price_model: 
 tags: [agile, project-management, enterprise]
 official_url: "https://www.broadcom.com/products/software/value-stream-management/rally"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Rally
 
 Rally ist eine fortschrittliche Softwarelösung, die speziell für agiles Projektmanagement in Unternehmen entwickelt wurde. Die Plattform unterstützt Teams dabei, komplexe Projekte effizient zu planen, zu verfolgen und zu steuern. Mit einem Fokus auf Transparenz und Kollaboration hilft Rally, agile Methoden wie Scrum oder Kanban effektiv umzusetzen und die Produktivität zu steigern.

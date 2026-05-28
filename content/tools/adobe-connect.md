@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [meetings, webinar, communication, elearning]
 official_url: "https://www.adobe.com/products/adobeconnect.html"
 popularity: 78
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Adobe Connect
 
 Adobe Connect ist eine umfassende Plattform für Online-Meetings, Webinare und E-Learning. Sie ermöglicht es Unternehmen und Bildungseinrichtungen, interaktive virtuelle Räume zu schaffen, in denen Teilnehmer in Echtzeit kommunizieren, zusammenarbeiten und Inhalte teilen können. Dank vielfältiger Funktionen eignet sich Adobe Connect besonders für professionelle Online-Kommunikation und Schulungen.
@@ -77,7 +78,6 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - Einige Funktionen erfordern eine gewisse Einarbeitungszeit
 - Abhängigkeit von einer stabilen Internetverbindung für optimale Nutzung
 
-- Erhöht eher die Komplexität, wenn vor dem Start Kanäle, Zuständigkeiten und Eskalationen nicht eindeutig geregelt sind und Entscheidungen nur nebenbei getroffen werden. Bei Adobe Connect ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Wenn Review und Pflege ausfallen, verliert Adobe Connect gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

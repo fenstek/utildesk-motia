@@ -1,13 +1,14 @@
 ---
 slug: doodle
 title: Doodle
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: [productivity, automation, meeting]
 official_url: "https://doodle.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Doodle
 
 Doodle ist ein innovatives Tool zur Terminplanung, das durch intelligente Automatisierung und einfache Bedienung überzeugt. Es erleichtert die Koordination von Meetings und Veranstaltungen, indem es die Verfügbarkeit der Teilnehmer schnell und unkompliziert abfragt. Mit einer Kombination aus KI-gestützten Funktionen und benutzerfreundlichem Design ist Doodle ideal für Teams, Unternehmen und Einzelpersonen, die ihre Produktivität steigern und Zeit bei der Organisation sparen möchten.

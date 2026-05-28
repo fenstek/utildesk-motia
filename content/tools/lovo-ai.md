@@ -1,13 +1,14 @@
 ---
 slug: lovo-ai
 title: Lovo AI
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://lovo.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Lovo AI
 
 Lovo AI ist eine fortschrittliche KI-basierte Audio- und Sprachsynthese-Plattform, die es Nutzern ermöglicht, realistische und natürliche Sprachaufnahmen zu erstellen. Mit Hilfe von Deep Learning-Technologien bietet Lovo AI eine breite Palette von Stimmen und Anpassungsmöglichkeiten, die sowohl für Marketing, E-Learning, Hörbücher als auch für Automatisierung von Sprachprozessen genutzt werden können. Die Plattform zielt darauf ab, die Erstellung von Audioinhalten zu vereinfachen und zu beschleunigen, ohne dass professionelle Sprecher benötigt werden.

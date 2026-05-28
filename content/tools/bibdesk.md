@@ -1,13 +1,14 @@
 ---
 slug: bibdesk
 title: BibDesk
-category: AI
+category: "AI Research"
 price_model: Open Source
 tags: [research, open-source, productivity]
 official_url: "https://bibdesk.sourceforge.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # BibDesk
 
 BibDesk ist ein Literaturverwaltungsprogramm für macOS mit starkem Fokus auf BibTeX-Workflows. Es richtet sich an Menschen, die wissenschaftliche Quellen sauber erfassen, organisieren und in LaTeX- oder akademischen Schreibprozessen nutzen wollen.

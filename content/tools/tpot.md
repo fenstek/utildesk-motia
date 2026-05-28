@@ -1,13 +1,14 @@
 ---
 slug: tpot
 title: TPOT
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [automl,machine-learning,open-source,developer-tools]
 official_url: "https://epistasislab.github.io/tpot/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # TPOT
 
 TPOT ist ein Open-Source-Tool für automatisiertes maschinelles Lernen (AutoML), das Entwicklern und Datenwissenschaftlern hilft, optimale Machine-Learning-Pipelines zu erstellen. Es nutzt genetische Programmierung, um Modelle automatisch anzupassen, zu optimieren und zu kombinieren, wodurch der Zeitaufwand für die manuelle Modelloptimierung erheblich reduziert wird. TPOT eignet sich besonders für Nutzer, die komplexe Datenanalysen durchführen möchten, ohne tiefgehende Kenntnisse in der Modellierung und Parametertuning zu benötigen.

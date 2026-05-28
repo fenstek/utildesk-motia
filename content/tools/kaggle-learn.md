@@ -1,14 +1,15 @@
 ---
 slug: kaggle-learn
 title: Kaggle Learn
-category: Developer
+category: "Entwickler-Tools"
 price_model: Free
 tags: [education, data, machine-learning, practice]
 official_url: "https://www.kaggle.com/learn"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Kaggle Learn
 
 Kaggle Learn ist die kompakte Lernschicht rund um Kaggle: kurze, browserbasierte Lektionen zu Python, Data Science, Machine Learning und verwandten Themen. Der Schwerpunkt liegt nicht auf langen Vorlesungen, sondern auf unmittelbarer Anwendung in Notebooks mit echten Datensätzen. Dadurch eignet sich Kaggle Learn besonders als schneller Einstieg oder als Wiederholung vor eigenen Projekten und Kaggle-Wettbewerben.
@@ -52,7 +53,6 @@ Kaggle Learn richtet sich an Menschen, die Datenkompetenz praktisch aufbauen mö
 - Fokus liegt vor allem auf maschinellem Lernen und Datenwissenschaft – weniger allgemeine Programmierinhalte
 - Keine zertifizierten Abschlüsse oder formale Qualifikationen
 - Weniger strukturierte Lernpfade im Vergleich zu manchen kostenpflichtigen Plattformen
-
 
 ## Was im Alltag wirklich zählt
 

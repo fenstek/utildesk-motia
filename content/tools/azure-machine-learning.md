@@ -1,13 +1,14 @@
 ---
 slug: azure-machine-learning
 title: Azure Machine Learning
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [data, analytics, automation]
 official_url: "https://azure.microsoft.com/en-us/products/machine-learning/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Azure Machine Learning
 
 Azure Machine Learning ist eine umfassende Cloud-basierte Plattform von Microsoft, die es Unternehmen und Entwicklern ermöglicht, Machine-Learning-Modelle zu erstellen, zu trainieren und bereitzustellen. Die Plattform unterstützt den gesamten Lebenszyklus von KI-Projekten, von der Datenvorbereitung über das Modelltraining bis hin zur Automatisierung und Skalierung von Workflows. Azure Machine Learning integriert sich nahtlos in andere Azure-Dienste und bietet vielfältige Werkzeuge für Data Scientists, Entwickler und Unternehmen, die ihre Analyse- und Automatisierungsprozesse verbessern möchten.

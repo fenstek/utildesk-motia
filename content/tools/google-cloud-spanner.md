@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-spanner
 title: Google Cloud Spanner
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, analytics]
 official_url: "https://cloud.google.com/spanner"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Google Cloud Spanner
 
 Google Cloud Spanner ist ein global verteilter, skalierbarer und verwalteter relationaler Datenbankdienst von Google, der speziell für anspruchsvolle Anwendungen entwickelt wurde, die hohe Verfügbarkeit und starke Konsistenz erfordern. Als hybride Lösung kombiniert Spanner die Vorteile von relationalen Datenbanken mit der Skalierbarkeit von NoSQL-Systemen und eignet sich besonders für Entwickler, die Cloud-native Anwendungen mit großer Datenmenge und komplexen Transaktionen realisieren möchten.

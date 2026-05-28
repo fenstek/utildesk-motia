@@ -1,13 +1,14 @@
 ---
 slug: google-what-if-tool
 title: Google What-If Tool
-category: AI
+category: "AI Coding"
 price_model: "Kostenlos"
 tags: ["data", "analytics", "developer-tools", "education", "chatbot"]
 official_url: "https://pair-code.github.io/what-if-tool/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google What-If Tool
 
 Das Google What-If Tool ist eine interaktive Visualisierungs- und Analyseplattform, die es Nutzern ermöglicht, maschinelle Lernmodelle ohne Programmieraufwand zu untersuchen und zu verstehen. Entwickelt von Google, unterstützt das Tool die Exploration von Modellergebnissen durch einfache Anpassungen von Eingabedaten („Was-wäre-wenn“-Szenarien), um die Auswirkungen auf Vorhersagen zu analysieren. Dies fördert ein besseres Verständnis für Modellverhalten, Fairness und Robustheit.
@@ -60,7 +61,6 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - Gut geeignet für Bildung, Forschung und Entwicklung
 
 - Stärker im Alltag, wenn Google What-If Tool für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo Kundenkommunikation, Erreichbarkeit und saubere Übergaben zwischen Kanälen heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei Google What-If Tool ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 

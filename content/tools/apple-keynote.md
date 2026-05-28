@@ -1,13 +1,14 @@
 ---
 slug: apple-keynote
 title: Apple Keynote
-category: AI
+category: "AI Agents"
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://support.apple.com/keynote"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Apple Keynote
 
 Apple Keynote ist eine leistungsstarke Präsentationssoftware, die speziell für macOS und iOS entwickelt wurde. Sie ermöglicht es Nutzern, ansprechende und professionelle Präsentationen mit einer Vielzahl von Design- und Automatisierungsfunktionen zu erstellen. In Kombination mit intelligenten Assistenten und Automatisierungsoptionen unterstützt Keynote den effizienten Workflow bei der Erstellung und Durchführung von Präsentationen.

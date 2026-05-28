@@ -1,13 +1,14 @@
 ---
 slug: twine
 title: Twine
-category: AI
+category: "AI Writing"
 price_model: Kostenlos, Open Source
 tags: [interactive-fiction, writing, games]
 official_url: "https://twinery.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Twine
 
 Twine ist ein Open-Source-Tool zur Erstellung interaktiver Geschichten und textbasierter Spiele. Es ermöglicht Autor:innen, verzweigte Handlungsstränge ohne Programmierkenntnisse zu gestalten und bietet gleichzeitig die Flexibilität, komplexe narrative Strukturen zu entwickeln. Twine erfreut sich großer Beliebtheit bei Schriftsteller:innen, Spieleentwickler:innen und Lehrkräften, die interaktive Inhalte erstellen möchten.

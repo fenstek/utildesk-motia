@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-openai-service
 title: Microsoft Azure OpenAI Service
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["assistant", "chatbot", "education"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure OpenAI Service
 
 Der Microsoft Azure OpenAI Service bietet eine leistungsstarke Plattform zur Integration modernster KI-Modelle, darunter GPT-Modelle, in verschiedene Anwendungen. Durch die Kombination von Microsofts Cloud-Infrastruktur mit den fortschrittlichen KI-Technologien von OpenAI ermöglicht dieser Service Unternehmen und Entwicklern, intelligente und skalierbare Lösungen zu erstellen.

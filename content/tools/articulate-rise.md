@@ -1,11 +1,13 @@
 ---
 slug: articulate-rise
 title: Articulate Rise
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.articulate.com/360/rise/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Articulate Rise
 

@@ -1,13 +1,14 @@
 ---
 slug: sas
 title: SAS
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://www.sas.com/en_us/home.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # SAS
 
 SAS ist eine leistungsstarke Plattform für Datenanalyse, künstliche Intelligenz (KI) und Business Intelligence. Die Software kombiniert fortschrittliche analytische Werkzeuge mit benutzerfreundlichen Schnittstellen, um Unternehmen dabei zu unterstützen, aus großen Datenmengen wertvolle Erkenntnisse zu gewinnen. SAS bietet Lösungen, die von Datenaufbereitung über Machine Learning bis hin zu Visualisierung und Reporting reichen.
@@ -22,7 +23,6 @@ SAS richtet sich an Unternehmen und Organisationen verschiedener Größen und Br
 - Branchen wie Finanzen, Gesundheitswesen, Einzelhandel, Telekommunikation und Fertigung, die spezifische analytische Lösungen erfordern.
 
 Je nach Plan und Modul kann SAS sowohl für Einsteiger als auch für erfahrene Analysten angepasst werden.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sas-editorial.webp" alt="Illustration zu SAS: Messpunkte werden in einem Statistiklabor durch Linsen, Hebel und Wahrscheinlichkeitswege gefuehrt" loading="lazy" decoding="async" />

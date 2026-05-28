@@ -1,13 +1,14 @@
 ---
 slug: amazon-sagemaker-autopilot
 title: Amazon SageMaker Autopilot
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [ml, auto-ml, cloud]
 official_url: "https://aws.amazon.com/sagemaker/ai/autopilot/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon SageMaker Autopilot
 
 Amazon SageMaker Autopilot ist ein cloudbasierter AutoML-Dienst von AWS, der es ermöglicht, Machine-Learning-Modelle automatisch zu erstellen, zu trainieren und zu optimieren. Ohne tiefgreifende Kenntnisse in Data Science oder Programmierung können Anwender mit Autopilot eigene ML-Modelle generieren, indem sie einfach ihre Daten hochladen. Der Dienst übernimmt die komplette Pipeline von der Datenvorbereitung über die Modellauswahl bis hin zur Hyperparameter-Optimierung.

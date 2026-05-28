@@ -1,15 +1,16 @@
 ---
 slug: looka
 title: Looka
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://looka.com/'
 affiliate_url: 'https://looka.com/'
+tier: "C"
+generated_at: "2026-05-15"
 created_at: "2026-02-08"
 popularity: 0
 ---
-
 # Looka
 
 Looka ist ein KI-gestütztes Design-Tool, das speziell für die einfache und schnelle Erstellung von Logos und Markenidentitäten entwickelt wurde. Mit Hilfe von künstlicher Intelligenz können Nutzer ohne Designkenntnisse professionelle Ergebnisse erzielen. Looka kombiniert automatisierte Designvorschläge mit individuellen Anpassungsmöglichkeiten, um maßgeschneiderte Markenauftritte zu gestalten.

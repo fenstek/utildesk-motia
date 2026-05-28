@@ -1,13 +1,14 @@
 ---
 slug: resemble-ai
 title: Resemble AI
-category: Audio
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [audio, voice, api]
 official_url: "https://www.resemble.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Resemble AI
 
 Resemble AI konzentriert sich auf synthetische Stimmen, Voice Cloning und Sprachproduktion. Für Teams kann das interessant sein, wenn Audioinhalte schnell aktualisiert, personalisiert oder in mehreren Varianten produziert werden müssen.

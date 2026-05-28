@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.snow.me/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Snow
 
 Snow ist ein innovatives Design-Tool, das auf künstlicher Intelligenz basiert und vor allem die Erstellung und Bearbeitung von Bildern unterstützt. Es richtet sich an Designer, Kreative und alle, die visuelle Inhalte effizient und ansprechend gestalten möchten. Mit einer Kombination aus benutzerfreundlichen Funktionen und KI-gestützter Automatisierung erleichtert Snow die Umsetzung kreativer Ideen und spart dabei Zeit.

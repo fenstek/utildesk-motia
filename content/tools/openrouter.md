@@ -1,11 +1,13 @@
 ---
 slug: openrouter
 title: OpenRouter
-category: AI Infrastructure
+category: "AI Coding"
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://openrouter.ai"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # OpenRouter
 

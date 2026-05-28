@@ -1,13 +1,14 @@
 ---
 slug: google-search-console
 title: Google Search Console
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Free
 tags: [seo, analytics, search-console, webmaster-tools]
 official_url: "https://search.google.com/search-console/about"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Google Search Console
 
 Google Search Console ist ein kostenloses Tool von Google, das Website-Betreibern und Online-Marketing-Experten umfassende Einblicke in die Leistung ihrer Websites in der Google-Suche bietet. Es ermöglicht die Überwachung, Analyse und Optimierung der Sichtbarkeit und Suchpräsenz, indem es wichtige Daten zu Suchanfragen, Klicks, Impressionen und technischen Problemen bereitstellt.

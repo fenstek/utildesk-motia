@@ -1,13 +1,14 @@
 ---
 slug: replicate
 title: Replicate
-category: AI Infrastructure
+category: "AI Coding"
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://replicate.com"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Replicate
 
 Replicate ist eine Plattform, die Entwicklern und Unternehmen den Zugriff auf modernste KI-Modelle vereinfacht. Sie ermöglicht es, KI-Modelle direkt in Anwendungen zu integrieren, ohne sich um die komplexe Infrastruktur kümmern zu müssen. Mit Replicate können Nutzer verschiedene KI-Modelle ausführen, vergleichen und in ihre Projekte einbinden – alles über eine benutzerfreundliche API.

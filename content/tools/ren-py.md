@@ -1,13 +1,14 @@
 ---
 slug: ren-py
 title: Ren’Py
-category: AI
+category: "AI Agents"
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://www.renpy.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Ren’Py
 
 Ren'Py ist eine Engine für Visual Novels und storylastige Spiele. Sie verbindet Dialogskripte, Charakterbilder, Hintergründe, Entscheidungen und einfache Spiellogik zu interaktiven Erzählungen.

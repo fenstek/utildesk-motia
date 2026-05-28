@@ -1,13 +1,14 @@
 ---
 slug: temi
 title: Temi
-category: Audio
+category: "Audio & Video"
 price_model: Nutzungsbasiert
 tags: [transcription,audio,productivity]
 official_url: "https://www.temi.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Temi
 
 Temi ist ein automatischer Transkriptionsdienst, der es ermöglicht, Audio- und Videodateien schnell und präzise in Text umzuwandeln. Durch den Einsatz moderner Spracherkennungstechnologien unterstützt Temi vor allem Menschen, die regelmäßig Audioinhalte transkribieren müssen, beispielsweise Journalisten, Studierende oder Content-Ersteller. Der Dienst bietet eine einfache Bedienung und liefert Ergebnisse in kurzer Zeit, was die Produktivität deutlich steigern kann.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.meitu.com/en/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # BeautyCam
 
 BeautyCam ist eine innovative Design-Anwendung, die sich auf die Bearbeitung und Verschönerung von Bildern spezialisiert hat. Mit Hilfe von KI-Technologie ermöglicht das Tool eine einfache und schnelle Optimierung von Fotos, um professionelle und ansprechende Ergebnisse zu erzielen. Ob für Social Media, persönliche Projekte oder professionelle Designaufgaben – BeautyCam bietet vielseitige Funktionen, die sowohl Einsteiger als auch erfahrene Nutzer ansprechen.

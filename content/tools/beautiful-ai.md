@@ -1,13 +1,14 @@
 ---
 slug: beautiful-ai
 title: Beautiful.ai
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [presentations, design, ai]
 official_url: "https://www.beautiful.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Beautiful.ai
 
 Beautiful.ai ist ein intelligentes Präsentationstool, das mithilfe von Künstlicher Intelligenz (KI) die Erstellung von professionellen und optisch ansprechenden Präsentationen erleichtert. Es richtet sich an Nutzer, die ohne tiefgehende Designkenntnisse schnell überzeugende Slides erstellen möchten. Die Plattform bietet automatisierte Designvorschläge, praktische Vorlagen und eine benutzerfreundliche Oberfläche, die den Präsentationsprozess deutlich vereinfacht.

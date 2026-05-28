@@ -1,13 +1,14 @@
 ---
 slug: apache-pulsar
 title: Apache Pulsar
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [messaging,data,developer-tools,open-source]
 official_url: "https://pulsar.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Pulsar
 
 Apache Pulsar ist eine leistungsstarke Open-Source-Plattform für verteiltes Messaging und Streaming-Datenverarbeitung. Sie wurde entwickelt, um hohe Skalierbarkeit, Zuverlässigkeit und niedrige Latenz bei der Verarbeitung von Nachrichtenströmen zu gewährleisten. Pulsar unterstützt sowohl Messaging- als auch Streaming-Anwendungsfälle und bietet eine moderne Architektur, die Multi-Tenant-Fähigkeiten und Geo-Replikation ermöglicht. Aufgrund seiner Flexibilität und Robustheit wird Pulsar in verschiedenen Branchen eingesetzt, von Finanzdienstleistungen bis hin zu IoT-Anwendungen.

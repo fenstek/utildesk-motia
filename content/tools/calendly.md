@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [meeting, workflow, productivity]
 official_url: "https://calendly.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Calendly
 
 Calendly ist ein benutzerfreundliches Online-Tool zur Terminplanung, das die Koordination von Meetings und Terminen erheblich vereinfacht. Es automatisiert die Terminvereinbarung, indem es Nutzern ermöglicht, ihre Verfügbarkeit zu teilen und Termine direkt in ihren Kalendern zu buchen. So sparen Teams und Einzelpersonen Zeit und vermeiden den lästigen E-Mail-Verkehr zur Terminfindung.

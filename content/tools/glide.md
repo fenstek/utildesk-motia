@@ -1,11 +1,13 @@
 ---
 slug: glide
 title: Glide
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [no-code, automation, productivity, data, analytics]
 official_url: "https://www.glideapps.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Glide
 

@@ -1,13 +1,14 @@
 ---
 slug: vanceai-image-enlarger
 title: VanceAI Image Enlarger
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [image, photo, upscaling, editing]
 official_url: "https://vanceai.com/image-enlarger/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # VanceAI Image Enlarger
 
 VanceAI Image Enlarger ist ein KI-gestütztes Tool zur Bildvergrößerung, das es ermöglicht, Fotos ohne Qualitätsverlust hochzuskalieren. Es nutzt fortschrittliche Algorithmen, um Details zu rekonstruieren und Unschärfen zu minimieren, wodurch Bilder für verschiedene Einsatzzwecke optimiert werden können. Ideal für Fotografen, Designer und alle, die Bilder in hoher Auflösung benötigen.

@@ -1,14 +1,15 @@
 ---
 slug: google-cloud-translation-api
 title: Google Cloud Translation API
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [translation,api,google-cloud]
 official_url: "https://cloud.google.com/translate"
 disabled: true
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Google Cloud Translation API
 
 Die Google Cloud Translation API ist ein leistungsstarker Dienst von Google, der es ermöglicht, Texte in über 100 Sprachen automatisch und in Echtzeit zu übersetzen. Entwickelt für Unternehmen und Entwickler, die mehrsprachige Anwendungen erstellen möchten, bietet diese API eine einfache Integration, hohe Genauigkeit und Skalierbarkeit. Sie eignet sich besonders für Web- und Mobile-Apps, E-Commerce-Plattformen sowie für die Automatisierung von Übersetzungsprozessen.

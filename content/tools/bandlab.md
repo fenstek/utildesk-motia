@@ -1,11 +1,13 @@
 ---
 slug: bandlab
 title: BandLab
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://www.bandlab.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
 ---
 # BandLab
 

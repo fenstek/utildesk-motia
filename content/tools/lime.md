@@ -1,13 +1,14 @@
 ---
 slug: lime
 title: LIME (Local Interpretable Model-agnostic Explanations)
-category: AI
+category: "AI Infrastructure"
 price_model: "Open Source"
 tags: ["data", "analytics", "education", "developer-tools", "chatbot"]
 official_url: "https://github.com/marcotcr/lime"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # LIME (Local Interpretable Model-agnostic Explanations)
 
 LIME ist ein Open-Source-Tool zur Erklärung von Vorhersagen komplexer Machine-Learning-Modelle. Es ermöglicht Entwicklern und Datenwissenschaftlern, die Entscheidungen von Algorithmen besser zu verstehen, indem es lokal interpretierbare Erklärungen für einzelne Vorhersagen liefert. Dies fördert Transparenz und Vertrauen in KI-Systeme, insbesondere bei Modellen, die als Blackbox gelten.

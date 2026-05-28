@@ -1,13 +1,14 @@
 ---
 slug: wix-mit-velo
 title: Wix mit Velo
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [developer-tools, no-code, automation, design, marketing]
 official_url: "https://www.wix.com/studio/developers/web-development"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Wix mit Velo
 
 Wix mit Velo ist eine erweiterte Entwicklungsplattform, die auf dem beliebten Website-Builder Wix basiert. Sie kombiniert die Vorteile von No-Code-Tools mit der Flexibilität von benutzerdefiniertem JavaScript-Code. So können Entwickler und kreative Anwender komplexe Webanwendungen erstellen, automatisieren und individuell anpassen – ohne auf externe Entwicklungsumgebungen angewiesen zu sein.

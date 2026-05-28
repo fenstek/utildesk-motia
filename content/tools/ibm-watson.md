@@ -1,14 +1,15 @@
 ---
 slug: ibm-watson
 title: IBM Watson
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["automation"]
 official_url: "https://www.ibm.com/watson"
 created_at: 2026-02-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # IBM Watson
 
 IBM Watson steht für ein breites Enterprise-KI-Umfeld, nicht für ein einzelnes kleines Chattool. In der Praxis geht es um KI-Funktionen für Suche, Automatisierung, Sprachverarbeitung, Wissensarbeit, Assistenzsysteme und regulierte Unternehmensprozesse.

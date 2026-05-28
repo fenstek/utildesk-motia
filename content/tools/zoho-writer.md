@@ -1,13 +1,14 @@
 ---
 slug: zoho-writer
 title: Zoho Writer
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: [ai, writing]
 official_url: "http://zoho.com"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zoho Writer
 
 Zoho Writer ist ein cloudbasierter Texteditor, der durch KI-Funktionen unterstützt wird und das Schreiben, Bearbeiten und Zusammenarbeiten an Dokumenten vereinfacht. Das Tool kombiniert klassische Textverarbeitung mit modernen, intelligenten Features, die sowohl den Schreibprozess als auch die Textqualität verbessern können. Zoho Writer eignet sich dabei für Einzelpersonen, Teams und Unternehmen, die eine flexible und effiziente Lösung für ihre Textdokumente suchen.

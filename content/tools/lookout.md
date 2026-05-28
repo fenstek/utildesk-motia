@@ -1,13 +1,14 @@
 ---
 slug: lookout
 title: Lookout
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [security, mobile, enterprise, ai]
 official_url: "https://www.lookout.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Lookout
 
 Lookout ist eine innovative Sicherheitsplattform, die auf künstlicher Intelligenz basiert und speziell für den Schutz mobiler Geräte in Unternehmen entwickelt wurde. Die Lösung bietet umfassenden Schutz vor Bedrohungen wie Malware, Phishing und unsicheren Netzwerken, um Unternehmensdaten und persönliche Informationen zuverlässig zu sichern. Lookout kombiniert modernste KI-Technologien mit mobiler Sicherheitsarchitektur, um Risiken frühzeitig zu erkennen und automatisiert Gegenmaßnahmen einzuleiten.

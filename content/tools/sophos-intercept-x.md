@@ -1,13 +1,14 @@
 ---
 slug: sophos-intercept-x
 title: Sophos Intercept X
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.sophos.com/en-us/products/endpoint-security"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sophos Intercept X
 
 Sophos Intercept X ist eine moderne Endpoint-Sicherheitslösung, die speziell für Unternehmen entwickelt wurde, um umfassenden Schutz vor Malware, Ransomware und anderen Cyberbedrohungen zu bieten. Die Lösung kombiniert klassische Antivirus-Technologien mit fortschrittlicher KI-basierter Bedrohungserkennung und zusätzlichen Sicherheitsfunktionen, um Endgeräte effektiv abzusichern. Durch die Integration von Deep Learning und Exploit-Prävention unterstützt Sophos Intercept X IT-Teams dabei, Sicherheitsvorfälle schnell zu erkennen und zu verhindern.

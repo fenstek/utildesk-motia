@@ -1,13 +1,14 @@
 ---
 slug: ibm-cognos-analytics
 title: IBM Cognos Analytics
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [analytics, enterprise, data]
 official_url: "https://www.ibm.com/products/cognos-analytics"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # IBM Cognos Analytics
 
 IBM Cognos Analytics ist eine umfassende Business-Intelligence-Plattform, die Unternehmen dabei unterstützt, Daten zu analysieren, Berichte zu erstellen und datengetriebene Entscheidungen zu treffen. Mit integrierten KI-Funktionen ermöglicht das Tool eine intuitive Datenvisualisierung und automatisierte Analysen, die auch Nutzern ohne tiefgehende technische Kenntnisse zugänglich sind. Es eignet sich besonders für Unternehmen, die große Datenmengen aus verschiedenen Quellen zentral auswerten möchten.

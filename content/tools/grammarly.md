@@ -6,12 +6,12 @@ price_model: Freemium
 tags: 
 official_url: "https://www.grammarly.com/"
 affiliate_url: "https://www.grammarly.com/"
+tier: "C"
+generated_at: "2026-05-27"
 created_at: 2026-02-02
 updated_at: 2026-05-21
 popularity: 45
 ---
-
-
 # Grammarly
 
 Grammarly ist ein digitales Schreibassistenz-Tool, das Nutzern hilft, ihre Texte auf Grammatik, Rechtschreibung, Stil und Lesbarkeit zu überprüfen und zu verbessern. Es eignet sich sowohl für private als auch berufliche Zwecke und unterstützt verschiedene Plattformen wie Web, Desktop und mobile Geräte. Mit einer freemium-Preisstruktur bietet Grammarly sowohl kostenfreie Grundfunktionen als auch erweiterte Features in der Premium-Version.
@@ -25,7 +25,6 @@ Der Nutzen hängt vom Kommunikationsstandard ab. Teams sollten definieren, welch
 ## Für wen ist Grammarly geeignet?
 
 Grammarly richtet sich an alle, die ihre schriftliche Kommunikation verbessern möchten. Besonders nützlich ist es für Studierende, Berufstätige, Autoren, Blogger und alle, die regelmäßig Texte verfassen. Auch Nicht-Muttersprachler profitieren von den Korrekturhilfen, um Fehler zu vermeiden und den Schreibstil zu optimieren. Darüber hinaus unterstützt Grammarly Teams bei der einheitlichen und professionellen Textgestaltung.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/grammarly-editorial.webp" alt="Illustration zu Grammarly: ein Schreibplatz mit gr?ner Korrekturschleife und ruhiger Textpr?fung" loading="lazy" decoding="async" />
@@ -60,7 +59,6 @@ Grammarly richtet sich an alle, die ihre schriftliche Kommunikation verbessern m
 - Datenschutzbedenken können bei sensiblen Texten auftreten, da Inhalte online analysiert werden.
 - Manchmal werden Korrekturvorschläge vorgeschlagen, die nicht zum individuellen Schreibstil passen.
 - Die Plagiatsprüfung ist nur in höheren Preismodellen enthalten.
-
 
 ## Was im Alltag wirklich zählt
 

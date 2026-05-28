@@ -1,13 +1,14 @@
 ---
 slug: datacamp
 title: DataCamp
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [education, data, machine-learning]
 official_url: "https://www.datacamp.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # DataCamp
 
 DataCamp ist eine Online-Lernplattform, die sich auf datenwissenschaftliche und KI-bezogene Themen spezialisiert hat. Sie bietet interaktive Kurse, Projekte und Übungen in Bereichen wie Datenanalyse, maschinelles Lernen und Programmierung an. Durch praxisorientierte Lerninhalte unterstützt DataCamp Anwender dabei, ihre Fähigkeiten im Umgang mit Daten systematisch auszubauen.

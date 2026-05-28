@@ -1,13 +1,14 @@
 ---
 slug: audiotool
 title: Audiotool
-category: Audio
+category: "Audio & Video"
 price_model: Freemium
 tags: [music-production,audio,browser-based]
 official_url: "https://www.audiotool.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Audiotool
 
 Audiotool ist eine browserbasierte Musikproduktionsplattform, die es Nutzern ermöglicht, elektronische Musik direkt im Web zu erstellen, zu bearbeiten und zu veröffentlichen. Ohne Softwareinstallation bietet Audiotool eine umfassende Sammlung von virtuellen Instrumenten, Effekten und Mixer-Tools, die sowohl für Anfänger als auch für erfahrene Produzenten attraktiv sind. Die Plattform unterstützt kollaboratives Arbeiten und den direkten Austausch von Projekten in der Community.

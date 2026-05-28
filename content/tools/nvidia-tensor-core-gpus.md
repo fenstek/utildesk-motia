@@ -1,13 +1,14 @@
 ---
 slug: nvidia-tensor-core-gpus
 title: NVIDIA Tensor Core GPUs
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [hardware,gpu,ai-accelerators,developer-tools]
 official_url: "https://www.nvidia.com/en-us/data-center/tensor-cores/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # NVIDIA Tensor Core GPUs
 
 NVIDIA Tensor Core GPUs sind spezialisierte Grafikprozessoren, die für rechenintensive KI-Anwendungen und Deep Learning optimiert wurden. Sie kombinieren herkömmliche CUDA-Kerne mit Tensor Cores, die speziell für die Beschleunigung von Matrixoperationen entwickelt sind, welche die Grundlage moderner neuronaler Netze bilden. Diese GPUs bieten Entwicklern und Forschern leistungsstarke Hardware, um komplexe KI-Modelle schneller und effizienter zu trainieren und auszuführen.

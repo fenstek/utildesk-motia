@@ -1,13 +1,14 @@
 ---
 slug: espresso
 title: Espresso
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [data, analytics, machine-learning, automation, cloud]
 official_url: "https://espresso.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Espresso
 
 Espresso ist ein modernes KI-Tool, das speziell für Datenanalyse, maschinelles Lernen und Automatisierung in der Cloud entwickelt wurde. Es unterstützt Unternehmen dabei, datenbasierte Entscheidungen zu treffen und komplexe Analysen effizient umzusetzen. Durch die Integration verschiedener Machine-Learning-Algorithmen und Automatisierungsfunktionen ermöglicht Espresso eine flexible und skalierbare Nutzung.

@@ -6,8 +6,9 @@ price_model: Free
 tags: [browser, web, privacy, developer-tools]
 official_url: "https://www.firefox.com/en-US/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Mozilla Firefox
 
 Mozilla Firefox ist ein kostenloser Webbrowser, der für seine Geschwindigkeit, Sicherheit und Anpassungsfähigkeit bekannt ist. Er bietet umfangreiche Datenschutzfunktionen und Werkzeuge für Entwickler, um das Surfen im Internet effizienter und sicherer zu gestalten. Firefox ist Open Source und wird von einer gemeinnützigen Organisation entwickelt, die sich dem Schutz der Privatsphäre ihrer Nutzer verpflichtet hat.

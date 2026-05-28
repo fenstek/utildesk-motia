@@ -1,13 +1,14 @@
 ---
 slug: veed-io
 title: Veed.io
-category: AI
+category: "AI Coding"
 price_model: Freemium, Abonnement
 tags: [video-editing, creator-tools, ai-video]
 official_url: "https://www.veed.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Veed.io
 
 Veed.io ist eine webbasierte Plattform für Videobearbeitung, die sich durch die Integration von KI-gestützten Funktionen auszeichnet. Sie ermöglicht es Nutzern, Videos einfach und schnell zu erstellen, zu bearbeiten und zu optimieren – ganz ohne umfangreiche technische Vorkenntnisse. Mit einer intuitiven Benutzeroberfläche und vielfältigen Tools eignet sich Veed.io sowohl für Anfänger als auch für professionelle Content Creator.

@@ -1,12 +1,14 @@
 ---
 slug: linguee
 title: Linguee
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://www.linguee.com/'
 created_at: "2026-02-14"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Linguee
 

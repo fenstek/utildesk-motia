@@ -1,13 +1,14 @@
 ---
 slug: kling-ai
 title: Kling AI
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, video, creative]
 official_url: "https://klingai.com/global/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Kling AI
 
 Kling AI ist ein innovatives Videotool, das Künstliche Intelligenz nutzt, um kreative Videoinhalte schneller und einfacher zu erstellen. Es eignet sich besonders für Nutzer, die professionelle Videos mit minimalem Aufwand produzieren möchten. Das Tool bietet eine Kombination aus automatischer Videoerstellung, intelligenter Bearbeitung und kreativen Effekten, die den Workflow deutlich beschleunigen können.

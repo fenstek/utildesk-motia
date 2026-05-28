@@ -1,14 +1,15 @@
 ---
 slug: microsoft-azure-hdinsight
 title: Microsoft Azure HDInsight
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, analytics, cloud, enterprise]
 official_url: "https://azure.microsoft.com/en-us/products/hdinsight/"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure HDInsight
 
 Microsoft Azure HDInsight bringt klassische Big-Data-Frameworks wie Hadoop, Spark, Hive, Kafka, HBase und Storm als verwaltete Cluster in Azure. Das Tool ist interessant, wenn Teams vorhandene Open-Source-Workloads nicht komplett neu bauen möchten, aber Infrastruktur, Sicherheit und Integration stärker über Azure betreiben wollen. Es ist damit eher Plattformbetrieb als einfacher Analytics-Klickbaukasten.
@@ -48,7 +49,6 @@ Microsoft Azure HDInsight passt zu Data-Engineering-Teams, Plattformgruppen und 
 - Erfordert Grundkenntnisse in Big-Data-Technologien und Cloud-Services
 - Eingeschränkte Kontrolle über die zugrundeliegende Infrastruktur im Vergleich zu selbstverwalteten Clustern
 - Abhängigkeit von der Azure-Plattform, was den Anbieterwechsel erschweren kann
-
 
 ## Was im Alltag wirklich zählt
 

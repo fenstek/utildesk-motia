@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, presentation, productivity]
 official_url: "https://gamma.app/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Gamma
 
 Gamma ist ein innovatives Tool, das sich auf die Erstellung von Präsentationen mit Hilfe von Künstlicher Intelligenz spezialisiert hat. Es kombiniert einfache Bedienung mit leistungsstarken Funktionen, um den Prozess der Präsentationserstellung zu beschleunigen und zu optimieren. Mit Gamma lassen sich professionell aussehende Präsentationen erstellen, die sowohl visuell ansprechend als auch inhaltlich überzeugend sind.

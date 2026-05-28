@@ -1,13 +1,14 @@
 ---
 slug: meta-ai
 title: Meta AI
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai,assistant,chatbot]
 official_url: "https://www.meta.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Meta AI
 
 Meta AI ist eine fortschrittliche KI-Plattform, die darauf ausgelegt ist, natürliche Sprachverarbeitung und kontextbasierte Interaktionen zu ermöglichen. Sie bietet vielseitige Einsatzmöglichkeiten in Bereichen wie Kundenservice, Automatisierung und persönlicher Assistenz. Meta AI kombiniert modernste Algorithmen mit benutzerfreundlichen Schnittstellen, um eine effiziente und intuitive Kommunikation zwischen Mensch und Maschine zu gewährleisten.

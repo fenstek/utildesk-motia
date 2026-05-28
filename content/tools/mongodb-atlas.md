@@ -1,13 +1,14 @@
 ---
 slug: mongodb-atlas
 title: MongoDB Atlas
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [database,cloud,developer-tools,analytics]
 official_url: "https://www.mongodb.com/products/platform/atlas-database"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # MongoDB Atlas
 
 MongoDB Atlas ist eine cloudbasierte Datenbankplattform, die Entwicklern eine vollständig verwaltete, skalierbare und sichere Umgebung für den Betrieb von MongoDB-Datenbanken bietet. Mit Atlas können Unternehmen und Entwickler ihre Datenbanken ohne den Aufwand der Infrastrukturverwaltung betreiben und sich stattdessen auf die Entwicklung ihrer Anwendungen konzentrieren. Die Plattform unterstützt mehrere Cloud-Anbieter und bietet flexible Tools für Datenanalyse, Backup und Monitoring.

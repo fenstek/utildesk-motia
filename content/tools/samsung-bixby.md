@@ -1,13 +1,14 @@
 ---
 slug: samsung-bixby
 title: Samsung Bixby
-category: AI
+category: "AI Chatbots"
 price_model: Kostenlos
 tags: [assistant, voice, mobile]
 official_url: "https://www.samsung.com/us/apps/bixby/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
-
 # Samsung Bixby
 
 Samsung Bixby ist ein intelligenter virtueller Assistent, der speziell für Samsung-Geräte entwickelt wurde. Er unterstützt Nutzer dabei, ihr Smartphone und andere kompatible Geräte per Sprachbefehl zu steuern, Aufgaben zu automatisieren und Informationen schnell abzurufen. Bixby integriert sich tief in das Samsung-Ökosystem und bietet neben Sprachsteuerung auch Funktionen zur Text- und Bildeingabe.
@@ -20,21 +21,6 @@ Samsung Bixby ist besonders nützlich für Support-, Sales-, Kommunikations- und
 
 Vor einer breiteren Einführung von Samsung Bixby lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Samsung Bixby sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Samsung Bixby sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung zeigen, ob es trägt. Erst wenn Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Samsung Bixby:** Vor dem Rollout sollten Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Samsung Bixby:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Samsung Bixby:** Der Einsatz kippt in Zusatzarbeit, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
-
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/samsung-bixby-editorial.webp" alt="Illustration zu Samsung Bixby: Klangbaender steuern Licht, Vorhaenge und Aufgabenobjekte in einem Wohnzimmer" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Sprachsteuerung:** Steuerung von Smartphone-Funktionen, Apps und Einstellungen per Sprachbefehl.
@@ -45,10 +31,6 @@ Samsung Bixby sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisieru
 - **Text- und Bildeingabe:** Eingabe von Befehlen nicht nur per Sprache, sondern auch per Tippen oder Kamera.
 - **Benachrichtigungen und Erinnerungen:** Verwaltung von Terminen, Alarmen und Nachrichten.
 - **Multi-Device-Unterstützung:** Nutzung auf verschiedenen Samsung-Geräten mit synchronisierten Daten.
-
-- **Praxislauf mit Samsung Bixby:** Das Tool sollte mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Samsung Bixby:** Das Team braucht eine einfache Methode, um Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Samsung Bixby:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

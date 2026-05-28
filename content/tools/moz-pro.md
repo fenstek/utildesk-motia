@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [seo, marketing, analytics]
 official_url: "https://moz.com/products/pro"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Moz Pro
 
 Moz Pro ist ein umfassendes SEO-Tool, das Unternehmen und Marketingexperten dabei unterstützt, ihre Online-Sichtbarkeit zu verbessern. Mit einer Vielzahl an Funktionen zur Keyword-Recherche, Wettbewerbsanalyse und Website-Optimierung bietet Moz Pro eine solide Grundlage für effektives Suchmaschinenmarketing. Das Tool richtet sich an Nutzer, die ihre SEO-Strategien datenbasiert planen und umsetzen möchten.

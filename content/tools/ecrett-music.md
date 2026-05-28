@@ -1,12 +1,14 @@
 ---
 slug: ecrett-music
 title: Ecrett Music
-category: Audio
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [audio, productivity, automation]
 official_url: "https://ecrettmusic.com/"
 popularity: 0
 description: "Ecrett Music erzeugt lizenzierbare Hintergrundmusik für Videos, Spiele, Präsentationen und Content-Projekte."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Ecrett Music
 

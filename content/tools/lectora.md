@@ -1,13 +1,14 @@
 ---
 slug: lectora
 title: Lectora
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [education, authoring, content, design]
 official_url: "https://products.elblearning.com/create-learning/lectora"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Lectora
 
 Lectora ist eine leistungsstarke E-Learning-Autorensoftware, die speziell für die Erstellung interaktiver und ansprechender Online-Kurse entwickelt wurde. Mit einem Fokus auf benutzerfreundliches Design und umfangreiche Anpassungsmöglichkeiten unterstützt Lectora Bildungseinrichtungen und Unternehmen bei der schnellen Entwicklung von Lerninhalten. Die Software kombiniert intuitive Drag-and-Drop-Funktionalitäten mit fortschrittlichen Features, um sowohl Anfängern als auch erfahrenen Entwicklern eine effiziente Content-Erstellung zu ermöglichen.

@@ -1,13 +1,14 @@
 ---
 slug: shotpro
 title: ShotPro
-category: AI
+category: "AI Image"
 price_model: 
 tags: [storyboarding, previsualization, filmmaking]
 official_url: "https://www.shotprofessional.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # ShotPro
 
 ShotPro ist eine spezialisierte Softwarelösung, die Filmemachern und Kreativen hilft, ihre Filmideen effizient in visuelle Storyboards und Previsualisierungen umzusetzen. Mit intuitiven Tools ermöglicht ShotPro die Planung von Kamerawinkeln, Bewegungen und Szenenabläufen, um den gesamten Produktionsprozess zu optimieren und Missverständnisse im Team zu reduzieren.

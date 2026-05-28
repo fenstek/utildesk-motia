@@ -1,11 +1,13 @@
 ---
 slug: visme
 title: Visme
-category: AI
+category: "AI Agents"
 price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.visme.co/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
 # Visme
 

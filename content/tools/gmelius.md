@@ -1,13 +1,14 @@
 ---
 slug: gmelius
 title: Gmelius
-category: AI
+category: "AI Agents"
 price_model: "Abonnement"
 tags: [productivity, automation, workflow, crm]
 official_url: "https://gmelius.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Gmelius
 
 Gmelius ist eine vielseitige Plattform zur Verbesserung der Produktivität und Automatisierung im E-Mail- und Workflow-Management. Es integriert sich nahtlos in Gmail und verwandelt das Postfach in ein kollaboratives Tool, das CRM-Funktionen, Automatisierungen und Teamkommunikation vereint. So können Teams effizienter zusammenarbeiten, Prozesse optimieren und den Arbeitsalltag digitaler gestalten.

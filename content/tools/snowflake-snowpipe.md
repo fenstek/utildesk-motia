@@ -1,13 +1,14 @@
 ---
 slug: snowflake-snowpipe
 title: Snowflake Snowpipe
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data, automation, streaming, cloud]
 official_url: "https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Snowflake Snowpipe
 
 Snowflake Snowpipe ist ein Cloud-basierter Dienst zur kontinuierlichen Datenintegration, der speziell für die automatisierte und nahezu in Echtzeit stattfindende Datenaufnahme in Snowflake-Datenbanken entwickelt wurde. Mit Snowpipe können Unternehmen Daten aus verschiedenen Quellen automatisch und effizient in ihre Data-Warehouse-Umgebung streamen, um schnelle Analysen und datengetriebene Entscheidungen zu ermöglichen.

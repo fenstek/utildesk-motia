@@ -1,14 +1,15 @@
 ---
 slug: salesforce-sales-cloud
 title: Salesforce Sales Cloud
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.salesforce.com/sales/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Salesforce Sales Cloud
 
 Salesforce Sales Cloud ist eine führende cloudbasierte CRM-Lösung, die speziell für Vertriebsorganisationen entwickelt wurde. Sie unterstützt Unternehmen dabei, ihre Verkaufsprozesse zu optimieren, Kundenbeziehungen zu stärken und die Produktivität ihrer Vertriebsteams zu steigern. Mit intelligenten Funktionen wie KI-gestützter Lead-Qualifizierung, Automatisierung und umfassenden Analysewerkzeugen bietet Sales Cloud eine umfassende Plattform für modernes Sales-Management.
@@ -22,7 +23,6 @@ Vor einer Modernisierung sollte man das Datenmodell prüfen: Accounts, Kontakte,
 ## Für wen ist Salesforce Sales Cloud geeignet?
 
 Salesforce Sales Cloud richtet sich vor allem an kleine, mittlere und große Unternehmen, die ihre Vertriebsprozesse digitalisieren und effizienter gestalten möchten. Besonders geeignet ist die Lösung für Vertriebsleiter, Account Manager und Marketingteams, die eine zentrale Plattform zur Verwaltung von Kundenkontakten, Leads und Verkaufschancen suchen. Auch Unternehmen, die Wert auf Automatisierung, personalisierte Kundenansprache und datengestützte Entscheidungen legen, profitieren von den vielfältigen Funktionen der Sales Cloud.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/salesforce-sales-cloud-editorial.webp" alt="Illustration zu Salesforce Sales Cloud: Lead-Tokens bewegen sich wie in einem Brettspiel vom Marktstand zum Abschluss-Tresor" loading="lazy" decoding="async" />

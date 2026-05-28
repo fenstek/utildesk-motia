@@ -1,13 +1,14 @@
 ---
 slug: yarn-spinner
 title: Yarn Spinner
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [writing, game-development, open-source, developer-tools]
 official_url: "https://yarnspinner.dev/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Yarn Spinner
 
 Yarn Spinner ist ein Open-Source-Tool, das speziell für die Erstellung von interaktiven Dialogen und erzählerischen Inhalten in Spielen entwickelt wurde. Es ermöglicht Entwicklern und Autoren, komplexe Geschichten mit verzweigten Dialogen einfach zu schreiben, zu verwalten und in ihre Spiele zu integrieren. Durch seine flexible Skriptsprache und die einfache Integration in verschiedene Game-Engines ist Yarn Spinner eine beliebte Wahl für Entwickler, die narrative Tiefe in ihre Projekte bringen möchten.

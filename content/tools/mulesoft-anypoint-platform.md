@@ -1,13 +1,14 @@
 ---
 slug: mulesoft-anypoint-platform
 title: MuleSoft Anypoint Platform
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement, Individuelles Angebot
 tags: [api, integration, automation, developer-tools]
 official_url: "https://www.mulesoft.com/platform/enterprise-integration"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # MuleSoft Anypoint Platform
 
 MuleSoft Anypoint Platform ist eine umfassende Integrationsplattform, die es Unternehmen ermöglicht, APIs zu erstellen, zu verwalten und verschiedene Anwendungen sowie Datenquellen nahtlos zu verbinden. Die Plattform unterstützt Entwickler und IT-Teams dabei, komplexe Integrationsprojekte zu automatisieren und moderne, skalierbare Architekturen zu realisieren. Mit einem Fokus auf API-Design, Lifecycle-Management und Konnektivität bietet Anypoint Platform eine zentrale Lösung für digitale Transformationsvorhaben.

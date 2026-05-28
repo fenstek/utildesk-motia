@@ -1,11 +1,13 @@
 ---
 slug: aide
 title: AIDE
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: [customer-support, automation, productivity, workflow]
 official_url: "https://aide.app/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-10"
 ---
 # AIDE
 

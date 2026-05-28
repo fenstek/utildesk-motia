@@ -1,13 +1,14 @@
 ---
 slug: sync-com
 title: Sync.com
-category: AI
+category: "AI Agents"
 price_model: Abonnement, Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.sync.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Sync.com
 
 Sync.com ist eine cloudbasierte Plattform zur sicheren Dateispeicherung und -freigabe mit Fokus auf Datenschutz und einfache Zusammenarbeit. Die Lösung bietet neben klassischem Cloud-Speicher auch Automatisierungsfunkesse und unterstützt so effiziente Workflows in Teams und Unternehmen. Sync.com kombiniert benutzerfreundliche Bedienung mit erweiterten Funktionen für Sicherheit und Automatisierung, was es zu einer interessanten Option im Bereich KI-gestützter Workflow-Tools macht.

@@ -1,12 +1,14 @@
 ---
 slug: flock
 title: Flock
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.flock.com/"
 popularity: 0
 description: "Flock ist ein Team-Messenger für Chats, Kanäle, Aufgaben und einfache Zusammenarbeit in Organisationen."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Flock
 

@@ -1,13 +1,14 @@
 ---
 slug: reply-io
 title: Reply.io
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [sales,email-marketing,outreach,automation]
 official_url: "https://reply.io/sales-engagement-platform/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Reply.io
 
 Reply.io ist eine leistungsstarke Plattform für automatisiertes Verkaufs- und E-Mail-Marketing, die Unternehmen dabei unterstützt, ihre Outreach-Prozesse zu optimieren und die Effektivität ihrer Vertriebsaktivitäten zu steigern. Mit einer Kombination aus E-Mail-Automatisierung, CRM-Integration und Analyse-Tools ermöglicht Reply.io eine personalisierte Ansprache potenzieller Kunden bei gleichzeitiger Zeitersparnis.

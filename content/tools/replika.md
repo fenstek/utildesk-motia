@@ -1,15 +1,16 @@
 ---
 slug: replika
 title: Replika
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "design"]
 official_url: 'https://replika.com/'
 affiliate_url: 'https://replika.com/'
+tier: "C"
+generated_at: "2026-05-13"
 created_at: "2026-02-03"
 popularity: 0
 ---
-
 # Replika
 
 Replika ist ein KI-Companion, der auf persönliche Gespräche, emotionale Begleitung und wiederkehrende Interaktion ausgelegt ist. Anders als reine Produktivitätsassistenten steht hier nicht die Erledigung einer Aufgabe im Vordergrund, sondern die Beziehungssimulation.

@@ -1,13 +1,14 @@
 ---
 slug: semrush
 title: SEMrush
-category: AI
+category: "AI Agents"
 price_model: "Abonnement"
 tags: [marketing, seo, automation, analytics]
 official_url: "https://www.semrush.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # SEMrush
 
 SEMrush ist eine umfassende Softwarelösung für digitales Marketing, die vor allem im Bereich Suchmaschinenoptimierung (SEO) und Online-Marketing eingesetzt wird. Das Tool bietet eine Vielzahl an Funktionen zur Analyse von Keywords, Wettbewerbern und Webseitenperformance. Durch den Einsatz von Automatisierung und KI-gestützten Analysen unterstützt SEMrush Marketing-Teams dabei, ihre Online-Präsenz zu optimieren und datenbasierte Entscheidungen zu treffen.
@@ -15,8 +16,6 @@ SEMrush ist eine umfassende Softwarelösung für digitales Marketing, die vor al
 ## Für wen ist SEMrush geeignet?
 
 SEMrush richtet sich an Marketing-Profis, SEO-Spezialisten, Content-Manager und Agenturen, die ihre Online-Marketing-Strategien verbessern möchten. Auch kleine und mittelständische Unternehmen profitieren von den umfangreichen Analyse- und Automatisierungsfunktionen, um ihre Sichtbarkeit in Suchmaschinen zu erhöhen. Darüber hinaus eignet sich SEMrush für Freelancer und Content-Ersteller, die fundierte Einblicke in Keyword-Trends und Wettbewerbsanalysen suchen.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/semrush-editorial.webp" alt="Illustration zu SEMrush: SEO-Recherche als Expedition durch Suchlandschaften und Rankingkurven" loading="lazy" decoding="async" />
@@ -51,7 +50,6 @@ SEMrush richtet sich an Marketing-Profis, SEO-Spezialisten, Content-Manager und 
 - Einarbeitungszeit erforderlich, um alle Funktionen effektiv zu nutzen.
 - Einige Funktionen sind nur in höheren Preisklassen verfügbar.
 - Manchmal kann die Fülle an Daten überwältigend wirken.
-
 
 ## Was im Alltag wirklich zählt
 

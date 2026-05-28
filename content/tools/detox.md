@@ -1,12 +1,14 @@
 ---
 slug: detox
 title: Detox
-category: AI
+category: "AI Agents"
 price_model: Open Source
 tags: [detox, qa, test-automation]
 official_url: "https://www.detox.com/"
 popularity: 0
 description: "Detox ist ein End-to-End-Testframework für mobile Apps, besonders für React-Native-nahe Entwicklungs- und QA-Workflows."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Detox
 

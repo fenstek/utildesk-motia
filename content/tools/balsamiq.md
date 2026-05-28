@@ -1,11 +1,13 @@
 ---
 slug: balsamiq
 title: Balsamiq
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [wireframing, ui-design, prototyping]
 official_url: "https://balsamiq.com/"
 popularity: 63
+tier: "D"
+generated_at: "2026-05-28"
 ---
 # Balsamiq
 

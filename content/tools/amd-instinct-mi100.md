@@ -1,13 +1,14 @@
 ---
 slug: amd-instinct-mi100
 title: AMD Instinct MI100
-category: AI
+category: "AI Infrastructure"
 price_model: Individuelles Angebot
 tags: [hardware,gpu,ai-accelerators,enterprise]
 official_url: "https://www.amd.com/en/products/accelerators/instinct/mi100.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AMD Instinct MI100
 
 Der AMD Instinct MI100 ist eine Hochleistungs-GPU, die speziell für den Einsatz in der künstlichen Intelligenz (KI), High-Performance-Computing (HPC) und datenintensiven Unternehmensanwendungen entwickelt wurde. Mit modernster Architektur und optimierter Rechenleistung bietet die MI100 eine skalierbare Lösung für anspruchsvolle KI-Workloads und wissenschaftliche Berechnungen.

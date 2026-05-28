@@ -1,13 +1,14 @@
 ---
 slug: front
 title: Front
-category: AI
+category: "AI Infrastructure"
 price_model: 
 tags: [customer-support, shared-inbox, communication]
 official_url: "https://front.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Front
 
 Front ist eine innovative Kommunikationsplattform, die speziell für Teams entwickelt wurde, um E-Mail-Postfächer und andere Kommunikationskanäle zentral zu verwalten. Durch die Kombination von E-Mail, Chat und Kollaborationsfunktionen ermöglicht Front eine effiziente Kundenbetreuung und verbessert die interne Zusammenarbeit. Die Plattform nutzt moderne Technologien, darunter AI-gestützte Automatisierungen, um Arbeitsprozesse zu optimieren und die Antwortzeiten zu verkürzen.

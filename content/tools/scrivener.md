@@ -1,13 +1,14 @@
 ---
 slug: scrivener
 title: Scrivener
-category: AI
+category: "AI Writing"
 price_model: Kostenpflichtig
 tags: [writing, authors, productivity]
 official_url: "https://www.literatureandlatte.com/scrivener/overview"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Scrivener
 
 Scrivener ist eine leistungsstarke Schreibsoftware, die speziell für Autoren, Schriftsteller und alle, die umfangreiche Texte erstellen, entwickelt wurde. Mit einem Fokus auf Organisation, Strukturierung und Produktivität unterstützt Scrivener den gesamten Schreibprozess – von der ersten Idee bis zum fertigen Manuskript. Es bietet zahlreiche Werkzeuge, um komplexe Projekte übersichtlich zu verwalten und den kreativen Fluss zu fördern.
@@ -15,7 +16,6 @@ Scrivener ist eine leistungsstarke Schreibsoftware, die speziell für Autoren, S
 ## Für wen ist Scrivener geeignet?
 
 Scrivener richtet sich vor allem an professionelle Autoren, Drehbuchschreiber, Journalisten, Wissenschaftler und Studenten, die große Textprojekte bewältigen müssen. Auch für Blogger und Content-Ersteller, die eine strukturierte Arbeitsweise bevorzugen, ist Scrivener eine wertvolle Hilfe. Wer viel mit Recherche, Notizen und mehreren Dokumenten gleichzeitig arbeitet, profitiert besonders von den Organisationsmöglichkeiten. Anfänger können sich anfangs etwas in der Fülle der Funktionen verlieren, doch mit etwas Einarbeitung steigert das Tool die Produktivität erheblich.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scrivener-editorial.webp" alt="Illustration zu Scrivener: Szenenkarten, Manuskriptseiten und Rechercheobjekte formen einen Schreibbogen" loading="lazy" decoding="async" />

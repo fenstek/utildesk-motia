@@ -1,15 +1,15 @@
 ---
 slug: google-cloud-text-to-speech
 title: Google Cloud Text-to-Speech
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [ai,audio,writing]
 official_url: "https://ai.google.dev/gemini-api/docs/speech-generation"
 created_at: 2026-02-15
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
-
 # Google Cloud Text-to-Speech
 
 Google Cloud Text-to-Speech ist ein leistungsfähiger KI-basierter Dienst, der geschriebenen Text in natürlich klingende Sprache umwandelt. Er nutzt fortschrittliche Deep-Learning-Modelle, um eine Vielzahl von Stimmen und Sprachen bereitzustellen, die sich für Anwendungen in Hörbüchern, Sprachassistenten, Lernprogrammen und mehr eignen. Mit flexiblen Anpassungsmöglichkeiten und einer benutzerfreundlichen API ist dieser Service ideal für Entwickler und Unternehmen, die hochwertige Audioinhalte automatisiert erzeugen möchten.

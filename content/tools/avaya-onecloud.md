@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [contact-center, communication, customer-support, ai]
 official_url: "https://www.avaya.com/en/products/infinity-platform/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Avaya Experience Platform
 
 Avaya Experience Platform ist eine umfassende Cloud-basierte Lösung, die Unternehmen dabei unterstützt, ihre Kundenkommunikation und Kontaktcenter effizienter zu gestalten. Mit modernen KI-Funktionen und flexiblen Tools zur Integration verschiedener Kommunikationskanäle ermöglicht die Plattform eine verbesserte Kundenbetreuung und optimiert interne Arbeitsabläufe.

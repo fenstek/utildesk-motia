@@ -1,13 +1,14 @@
 ---
 slug: adot-ai
 title: Adot AI
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai,assistant,productivity]
 official_url: "https://adot.ai/note/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Adot AI
 
 Adot AI ist ein fortschrittlicher KI-gestützter Assistent, der darauf ausgelegt ist, die Produktivität im Arbeitsalltag zu erhöhen. Mit intelligenten Automatisierungsfunktionen und intuitiver Nutzerführung unterstützt Adot AI dabei, repetitive Aufgaben zu reduzieren und komplexe Prozesse effizienter zu gestalten. Die Plattform bietet eine Kombination aus freemium-Modell und erweiterten Premium-Features, die sich flexibel an unterschiedliche Bedürfnisse anpassen lassen.

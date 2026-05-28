@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-bot-service
 title: Microsoft Azure Bot Service
-category: AI
+category: "AI Chatbots"
 price_model: "Nutzungsbasiert"
 tags: [chatbot, api, automation]
 official_url: "https://azure.microsoft.com/en-us/services/bot-services/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Bot Service
 
 Microsoft Azure Bot Service ist eine cloudbasierte Plattform zur Entwicklung, Bereitstellung und Verwaltung intelligenter Chatbots. Sie ermöglicht Unternehmen und Entwicklern, automatisierte Kommunikationslösungen zu erstellen, die über verschiedene Kanäle wie Websites, Messenger, Telefon und mehr funktionieren. Die Integration von Künstlicher Intelligenz (KI) und Natural Language Processing (NLP) erlaubt es Bots, auf komplexe Nutzeranfragen zu reagieren und personalisierte Interaktionen zu bieten.

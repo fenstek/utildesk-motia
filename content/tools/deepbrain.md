@@ -1,11 +1,13 @@
 ---
 slug: deepbrain
 title: DeepBrain
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [automation, data, analytics, productivity]
 official_url: "https://thedeepbrain.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # DeepBrain
 

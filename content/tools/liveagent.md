@@ -1,13 +1,14 @@
 ---
 slug: liveagent
 title: LiveAgent
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, communication, crm]
 official_url: "https://www.liveagent.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # LiveAgent
 
 LiveAgent ist eine umfassende Kundenservice-Software, die Unternehmen dabei unterstützt, die Kommunikation mit Kunden effizient zu gestalten. Durch die Integration verschiedener Kommunikationskanäle wie E-Mail, Live-Chat, Telefon und soziale Medien bietet LiveAgent eine zentrale Plattform für den Kunden-Support. Die Lösung nutzt KI-gestützte Funktionen, um Anfragen schneller zu bearbeiten und das Kundenerlebnis zu verbessern.

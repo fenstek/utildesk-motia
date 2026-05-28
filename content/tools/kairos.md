@@ -1,13 +1,14 @@
 ---
 slug: kairos
 title: Kairos
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [face-recognition, api, security, ai]
 official_url: "https://www.kairos.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Kairos
 
 Kairos ist eine fortschrittliche Gesichtserkennungs-API, die Unternehmen und Entwicklern leistungsstarke Werkzeuge zur biometrischen Identifikation und Analyse bietet. Durch den Einsatz von künstlicher Intelligenz ermöglicht Kairos sichere und effiziente Lösungen für Zugangsmanagement, Betrugsprävention und Kundenanalyse. Die Plattform ist flexibel einsetzbar und unterstützt verschiedene Anwendungen im Bereich Sicherheit und User-Authentifizierung.

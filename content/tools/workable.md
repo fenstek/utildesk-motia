@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.workable.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Workable
 
 Workable ist eine umfassende Recruiting-Software, die Unternehmen dabei unterstützt, den gesamten Einstellungsprozess effizient zu gestalten. Von der Veröffentlichung von Stellenanzeigen über das Bewerbermanagement bis hin zur Automatisierung von Routineaufgaben bietet Workable eine benutzerfreundliche Plattform, die Personalabteilungen und HR-Teams entlastet.

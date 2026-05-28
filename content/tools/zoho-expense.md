@@ -1,13 +1,15 @@
 ---
 slug: zoho-expense
 title: Zoho Expense
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.zoho.com/de-de/expense/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-10"
+mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
-
 # Zoho Expense
 
 Zoho Expense ist eine cloudbasierte Lösung zur Verwaltung von Geschäftsausgaben, die Unternehmen dabei unterstützt, ihre Spesenabrechnungen effizient zu erfassen, zu verfolgen und zu kontrollieren. Die Software nutzt Automatisierung und KI-Technologien, um manuelle Prozesse zu reduzieren, die Einhaltung von Firmenrichtlinien sicherzustellen und die finanzielle Transparenz zu erhöhen. Zoho Expense eignet sich besonders für kleine bis mittelgroße Unternehmen, die ihre Ausgabenprozesse digitalisieren möchten.

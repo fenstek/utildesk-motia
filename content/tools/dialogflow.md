@@ -1,14 +1,15 @@
 ---
 slug: dialogflow
 title: Dialogflow
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["ai", "chatbot", "automation"]
 official_url: 'https://cloud.google.com/dialogflow'
 created_at: "2026-02-13"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dialogflow
 
 Dialogflow ist eine von Google entwickelte Plattform zur Erstellung von Chatbots und Sprachassistenten. Sie ermöglicht die einfache Gestaltung natürlicher, kontextbezogener Unterhaltungen für verschiedene Anwendungen wie Kundenservice, E-Commerce oder IoT-Geräte. Durch die Integration von natürlicher Sprachverarbeitung (Natural Language Processing, NLP) unterstützt Dialogflow Unternehmen dabei, automatisierte und interaktive Benutzererfahrungen zu schaffen.

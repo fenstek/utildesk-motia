@@ -1,12 +1,15 @@
 ---
 slug: copilot
 title: Assembly (ehemals Copilot)
-category: Business
+category: "Produktivität"
 price_model: "Freemium"
 tags: [client-portal, workflow, automation]
 official_url: "https://assembly.com/platform"
 popularity: 0
 description: "Assembly (ehemals Copilot) ist eine Client-Portal-Plattform fuer Dienstleister, Agenturen und Beratungen, nicht Microsoft Copilot."
+tier: "A"
+lastReviewed: "2026-05-18"
+mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
 ---
 # Assembly (ehemals Copilot)
 

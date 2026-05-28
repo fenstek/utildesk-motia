@@ -1,12 +1,14 @@
 ---
 slug: opencv
 title: OpenCV
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "video"]
 official_url: 'https://opencv.org/'
 created_at: "2026-02-13"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # OpenCV
 

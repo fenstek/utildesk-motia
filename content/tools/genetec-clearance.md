@@ -1,13 +1,14 @@
 ---
 slug: genetec-clearance
 title: Genetec Clearance
-category: Video
+category: "Audio & Video"
 price_model: Abonnement
 tags: [evidence, video, security, collaboration]
 official_url: "https://www.genetec.com/products/operations/clearance"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Genetec Clearance
 
 Genetec Clearance ist eine cloudbasierte Plattform zur sicheren Verwaltung und gemeinsamen Nutzung von Videobeweisen und anderen digitalen Beweismitteln. Sie ermöglicht es Sicherheitsbehörden, Unternehmen und Organisationen, Videodaten effizient zu speichern, zu organisieren und mit autorisierten Partnern zu teilen. Die Plattform unterstützt die Zusammenarbeit bei Ermittlungen und fördert die Transparenz durch einfache Zugriffsverwaltung und Nachverfolgbarkeit.

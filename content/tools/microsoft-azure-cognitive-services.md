@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-cognitive-services
 title: Microsoft Azure Cognitive Services
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: ["education", "automation"]
 official_url: "https://learn.microsoft.com/en-us/azure/cognitive-services"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Microsoft Azure Cognitive Services
 
 Microsoft Azure Cognitive Services ist eine Sammlung von Cloud-basierten APIs und Diensten, die es Entwicklern ermöglichen, intelligente Anwendungen mit kognitiven Fähigkeiten wie Sprachverarbeitung, Bilderkennung, Textanalyse und mehr zu erstellen. Die Plattform bietet vortrainierte Modelle, die leicht in verschiedene Anwendungen integriert werden können, um komplexe KI-Funktionen ohne tiefgehende Kenntnisse im Machine Learning umzusetzen.

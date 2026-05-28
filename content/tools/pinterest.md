@@ -1,13 +1,14 @@
 ---
 slug: pinterest
 title: Pinterest
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [inspiration, design, content, marketing]
 official_url: "https://www.pinterest.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Pinterest
 
 Pinterest ist eine visuelle Suchmaschine und Inspirationsplattform, die Nutzern hilft, kreative Ideen zu entdecken, zu sammeln und zu teilen. Besonders im Bereich Design, Marketing und Content-Erstellung ist Pinterest eine wertvolle Ressource, um Trends zu verfolgen und neue Konzepte zu entwickeln. Die Plattform kombiniert Elemente sozialer Netzwerke mit einer leistungsfähigen Bildersuche, unterstützt durch KI-Algorithmen, die personalisierte Empfehlungen ermöglichen.

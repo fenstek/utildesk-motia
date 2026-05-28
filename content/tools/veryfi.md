@@ -1,13 +1,16 @@
 ---
 slug: veryfi
 title: Veryfi
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: 
 official_url: "https://www.veryfi.com/"
 description: Veryfi ist eine API-first Lösung für Beleg-, Rechnungs- und Buchhaltungsdaten, bei der strukturierte Ausgabe wichtiger ist als eine einfache Texterkennung.
 created_at: 2026-05-10
 popularity: 6
+tier: "A"
+lastReviewed: "2026-05-27"
+mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Veryfi
 

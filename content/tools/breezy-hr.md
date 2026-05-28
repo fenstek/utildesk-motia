@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://breezy.hr/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Breezy HR
 
 Breezy HR ist eine moderne Recruiting- und Bewerbermanagement-Software, die Unternehmen dabei unterstützt, den Einstellungsprozess zu optimieren und zu automatisieren. Mit einer benutzerfreundlichen Oberfläche und umfangreichen Funktionen erleichtert Breezy HR die Verwaltung von Bewerbungen, das Screening von Kandidaten und die Zusammenarbeit im Team. Die Software ist besonders auf kleine und mittelständische Unternehmen zugeschnitten, die eine effiziente Lösung für ihr Personalmanagement suchen.

@@ -1,13 +1,14 @@
 ---
 slug: followup-cc
 title: FollowUp.cc
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [email-productivity, automation, scheduling]
 official_url: "https://followup.cc/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # FollowUp.cc
 
 FollowUp.cc ist ein intelligentes Tool zur Automatisierung und Optimierung von E-Mail-Nachverfolgungen. Es hilft Nutzern, den Überblick über wichtige E-Mails zu behalten, indem es Erinnerungen und Follow-up-Aktionen automatisch plant. Besonders im beruflichen Umfeld unterstützt FollowUp.cc dabei, Produktivität und Effizienz im E-Mail-Management deutlich zu steigern.

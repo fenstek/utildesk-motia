@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [education, courses, learning, productivity]
 official_url: "https://www.futurelearn.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # FutureLearn
 
 FutureLearn ist eine Online-Lernplattform, die eine breite Palette an Kursen von Universitäten und Institutionen aus aller Welt anbietet. Sie richtet sich an Lernende, die ihre Kenntnisse erweitern und neue Fähigkeiten entwickeln möchten, sei es zur persönlichen Weiterbildung oder zur beruflichen Qualifikation. Die Plattform kombiniert flexibles Lernen mit interaktiven Inhalten und ermöglicht es, in eigenem Tempo zu lernen.

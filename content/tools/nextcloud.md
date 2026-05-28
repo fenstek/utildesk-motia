@@ -6,8 +6,9 @@ price_model: Open Source
 tags: [cloud-storage, collaboration, open-source, productivity]
 official_url: "https://nextcloud.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Nextcloud
 
 Nextcloud ist eine Open-Source-Plattform für Cloud-Speicher und Zusammenarbeit, die Unternehmen und Privatpersonen eine flexible, sichere und selbst gehostete Alternative zu kommerziellen Cloud-Diensten bietet. Mit Nextcloud lassen sich Dateien speichern, teilen und gemeinsam bearbeiten – und das unter voller Kontrolle über die eigenen Daten. Die Software unterstützt vielfältige Integrationen und Erweiterungen, die Produktivität und Teamarbeit fördern.

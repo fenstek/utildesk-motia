@@ -1,13 +1,15 @@
 ---
 slug: anyconv
 title: AnyConv
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [file-conversion,documents,utilities]
 official_url: "https://anyconv.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-14"
+mentionedIn: ["pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
-
 # AnyConv
 
 AnyConv ist ein vielseitiges Online-Tool zur Datei- und Dokumentenkonvertierung, das eine breite Palette von Formaten unterstützt. Es ermöglicht Nutzern, Dateien direkt im Browser umzuwandeln, ohne zusätzliche Software installieren zu müssen. Die Anwendung ist besonders für schnelle und unkomplizierte Konvertierungen geeignet und bietet eine benutzerfreundliche Oberfläche für verschiedene Dateitypen.

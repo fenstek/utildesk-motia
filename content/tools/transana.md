@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [research, transcription, analysis, video]
 official_url: "https://www.transana.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-25"
 ---
-
 # Transana
 
 Transana ist eine spezialisierte Software zur Transkription, Kodierung und Analyse von Audio- und Videomaterial. Besonders in den Bereichen Forschung und qualitative Datenanalyse unterstützt Transana Nutzer dabei, umfangreiche Multimedia-Daten systematisch auszuwerten und zu interpretieren. Die Software bietet vielfältige Werkzeuge, um Medieninhalte effizient zu durchsuchen, zu annotieren und zu kategorisieren.

@@ -1,13 +1,14 @@
 ---
 slug: clearscope
 title: Clearscope
-category: AI
+category: "AI Writing"
 price_model: Abonnement
 tags: [seo, content, marketing, automation]
 official_url: "https://www.clearscope.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Clearscope
 
 Clearscope ist ein leistungsstarkes SEO- und Content-Optimierungstool, das vor allem für die Erstellung und Verbesserung von suchmaschinenfreundlichen Texten entwickelt wurde. Mit Hilfe von künstlicher Intelligenz unterstützt Clearscope Content-Ersteller und Marketing-Teams dabei, Inhalte zu analysieren, zu optimieren und die Sichtbarkeit in Suchmaschinen zu erhöhen. Das Tool hilft dabei, relevante Keywords zu identifizieren, Wettbewerbsanalysen durchzuführen und Content-Strategien datenbasiert zu gestalten.

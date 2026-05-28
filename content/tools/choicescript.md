@@ -1,13 +1,14 @@
 ---
 slug: choicescript
 title: ChoiceScript
-category: AI
+category: "AI Writing"
 price_model: Kostenlos
 tags: [interactive-fiction, writing, games]
 official_url: "https://www.choiceofgames.com/make-your-own-games/choicescript-intro/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # ChoiceScript
 
 ChoiceScript ist eine speziell entwickelte Programmiersprache und ein Entwicklungswerkzeug, das es Autoren ermöglicht, interaktive Textabenteuer und Spiele ohne tiefgehende Programmierkenntnisse zu erstellen. Es richtet sich vor allem an Schriftsteller und Spieleentwickler, die komplexe, verzweigte Handlungen mit variablen Spielerentscheidungen realisieren wollen. ChoiceScript wird häufig für textbasierte Rollenspiele und interaktive Geschichten genutzt.

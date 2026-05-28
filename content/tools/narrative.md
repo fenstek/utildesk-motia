@@ -1,15 +1,16 @@
 ---
 slug: narrative
 title: Narrative
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "marketing"]
 official_url: 'https://narrative.so'
 affiliate_url: 'https://narrative.so'
+tier: "C"
+generated_at: "2026-05-16"
 created_at: "2026-02-11"
 popularity: 0
 ---
-
 # Narrative
 
 Narrative ist ein KI-gestütztes Tool, das darauf spezialisiert ist, automatisierte Texte und Geschichten zu generieren. Es unterstützt Nutzer dabei, kreative Inhalte schnell und effizient zu erstellen, sei es für Marketing, Social Media, Blogging oder andere Kommunikationszwecke. Dank moderner Algorithmen bietet Narrative eine intuitive Plattform, die sowohl Anfängern als auch erfahrenen Content-Erstellern hilft, die Qualität und Vielfalt ihrer Texte zu erhöhen.

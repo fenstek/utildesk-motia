@@ -1,13 +1,14 @@
 ---
 slug: execvision
 title: ExecVision
-category: AI
+category: "AI Chatbots"
 price_model: Abonnement
 tags: [sales, coaching, analytics, conversation-intelligence]
 official_url: "https://execvision.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # ExecVision
 
 ExecVision ist eine Plattform für Conversation Intelligence und Sales Coaching. Sie analysiert Kunden- und Vertriebsgespräche, macht Muster sichtbar und hilft Führungskräften, Coaching nicht nur nach Bauchgefühl zu betreiben.

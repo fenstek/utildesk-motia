@@ -1,13 +1,14 @@
 ---
 slug: ibm-db2-warehouse
 title: IBM Db2 Warehouse
-category: AI
+category: "AI Infrastructure"
 price_model: Individuelles Angebot
 tags: [data-warehouse, analytics, ibm]
 official_url: "https://www.ibm.com/products/db2-warehouse"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # IBM Db2 Warehouse
 
 IBM Db2 Warehouse ist eine skalierbare, cloudbasierte Data-Warehouse-Lösung, die speziell für datenintensive Analysen und KI-Anwendungen entwickelt wurde. Es kombiniert leistungsstarke Datenmanagement-Funktionen mit integrierten Analyse-Tools, um Unternehmen dabei zu unterstützen, große Datenmengen effizient zu speichern, zu verarbeiten und zu analysieren. Die Plattform ist auf Flexibilität und Performance ausgelegt und eignet sich besonders für Unternehmen, die datengetriebene Entscheidungen treffen möchten.

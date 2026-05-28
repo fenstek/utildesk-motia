@@ -1,11 +1,13 @@
 ---
 slug: inform-7
 title: Inform 7
-category: AI
+category: "AI Agents"
 price_model: Kostenlos, Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://ganelson.github.io/inform-website/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # Inform 7
 

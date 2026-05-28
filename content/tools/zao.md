@@ -1,12 +1,14 @@
 ---
 slug: zao
 title: Zao
-category: AI
+category: "AI Agents"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://zao.ai/"
 popularity: 0
 description: "Zao ist ein Design- und Kreativwerkzeug für KI-nahe Face-Swap- und Videoeffekte mit hohem Unterhaltungswert und hohen Datenschutzfragen."
+tier: "C"
+generated_at: "2026-05-06"
 ---
 # Zao
 

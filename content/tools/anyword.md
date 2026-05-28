@@ -1,14 +1,15 @@
 ---
 slug: anyword
 title: Anyword
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "content", "marketing"]
 official_url: "https://www.anyword.com/"
 created_at: 2026-02-15
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Anyword
 
 Anyword ist eine KI-gestützte Plattform zur Erstellung von Textinhalten, die speziell darauf ausgelegt ist, Marketingtexte zu optimieren und die Conversion-Raten zu steigern. Die Software nutzt maschinelles Lernen, um ansprechende und zielgruppenorientierte Werbetexte, Blogartikel, Social-Media-Beiträge und mehr zu generieren. Anyword richtet sich an Unternehmen und Einzelpersonen, die ihre Content-Erstellung effizienter gestalten und gleichzeitig die Wirkung ihrer Botschaften verbessern möchten.

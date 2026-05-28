@@ -1,13 +1,14 @@
 ---
 slug: airbrush
 title: AirBrush
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [photo-editing, mobile, beauty]
 official_url: "https://airbrush.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AirBrush
 
 AirBrush ist eine mobile Foto-Editing-App, die speziell für die Verschönerung von Porträtfotos entwickelt wurde. Mit intelligenten KI-basierten Werkzeugen ermöglicht die App Nutzern, Hautunreinheiten zu retuschieren, Zähne aufzuhellen, das Gesicht zu formen und viele weitere kosmetische Anpassungen vorzunehmen – und das alles einfach und schnell direkt auf dem Smartphone. Die intuitive Benutzeroberfläche macht AirBrush sowohl für Anfänger als auch für erfahrene Nutzer attraktiv.

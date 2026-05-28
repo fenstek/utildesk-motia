@@ -1,13 +1,14 @@
 ---
 slug: google-meet
 title: Google Meet
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://workspace.google.com/products/meet/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google Meet
 
 Google Meet ist eine benutzerfreundliche Videokonferenzlösung, die von Google entwickelt wurde. Sie ermöglicht es Einzelpersonen und Teams, einfach und sicher virtuelle Meetings abzuhalten. Durch die Integration in das Google-Ökosystem sowie intelligente Funktionen unterstützt Google Meet effiziente Kommunikation und Zusammenarbeit – sowohl für den privaten als auch für den geschäftlichen Gebrauch.

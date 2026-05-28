@@ -1,13 +1,14 @@
 ---
 slug: pipio
 title: Pipio
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://www.pipio.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Pipio
 
 Pipio ist ein innovatives KI-Tool, das speziell zur Automatisierung von Aufgaben und zur Unterstützung bei der täglichen Arbeit entwickelt wurde. Es kombiniert fortschrittliche künstliche Intelligenz mit benutzerfreundlichen Funktionen, um Prozesse zu optimieren und die Produktivität zu steigern. Als freemium-Modell bietet Pipio sowohl kostenfreie Grundfunktionen als auch erweiterte Features in bezahlten Plänen an.

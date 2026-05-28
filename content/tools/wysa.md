@@ -1,13 +1,14 @@
 ---
 slug: wysa
 title: Wysa
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [mental-health, chatbot, health-tech]
 official_url: "https://www.wysa.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Wysa
 
 Wysa ist ein KI-gestützter Chatbot, der speziell entwickelt wurde, um Menschen bei der Bewältigung von psychischen Herausforderungen und der Förderung des mentalen Wohlbefindens zu unterstützen. Die App kombiniert evidenzbasierte therapeutische Techniken mit künstlicher Intelligenz, um Nutzern rund um die Uhr eine anonyme und zugängliche Selbsthilfe anzubieten. Wysa wird zunehmend als ergänzendes Werkzeug in der Gesundheitsvorsorge und im Bereich Mental Health eingesetzt.

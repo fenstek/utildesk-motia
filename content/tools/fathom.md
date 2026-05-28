@@ -1,13 +1,14 @@
 ---
 slug: fathom
 title: Fathom
-category: AI
+category: "AI Audio"
 price_model: Freemium
 tags: [meetings, notes, transcription, productivity]
 official_url: "https://www.fathom.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Fathom
 
 Fathom ist ein intelligentes Tool zur automatischen Transkription und Zusammenfassung von Online-Meetings. Es hilft Nutzern, wichtige Gesprächsinhalte festzuhalten, ohne manuell mitschreiben zu müssen, und unterstützt so die Produktivität in Teams. Durch die Integration in gängige Videokonferenzplattformen ermöglicht Fathom eine einfache und effiziente Nachbereitung von Besprechungen.
@@ -20,20 +21,6 @@ Fathom ist besonders nützlich für Support-, Sales-, Kommunikations- und Servic
 
 Bei Fathom sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Fathom sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Fathom sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung zeigen, ob es trägt. Erst wenn Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Fathom:** Vor dem Rollout sollten Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Fathom:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Fathom:** Ohne klare Regeln wird der Nutzen schwach, sobald Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/fathom-editorial.webp" alt="Illustration zu Fathom: Meetingnotizen entstehen aus Audiowellen und Gespraechsmomenten" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Automatische Transkription:** Wandelt gesprochene Sprache in Text um, um Meetings schriftlich festzuhalten.
@@ -44,10 +31,6 @@ Fathom sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, Ant
 - **Markierung wichtiger Stellen:** Nutzer können während des Meetings relevante Passagen markieren.
 - **Datenschutz und Sicherheit:** Bietet Funktionen zur Einhaltung von Datenschutzstandards je nach Anbieter.
 - **Team-Kollaboration:** Unterstützt die gemeinsame Nutzung und Bearbeitung von Notizen.
-
-- **Praxislauf mit Fathom:** Das Tool sollte mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Fathom:** Das Team braucht eine einfache Methode, um Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Fathom:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 
@@ -71,7 +54,6 @@ Fathom sollte zuerst in einem echten Kontaktfall mit Eingang, Priorisierung, Ant
 - Abhängigkeit von stabiler Internetverbindung während der Meetings.
 
 - Fathom wird mühsam, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind und das Team diese Lücken erst im Betrieb entdeckt.
-- Fathom spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit dauerhaft nebenbei laufen sollen.
 
 ## Preise & Kosten
 

@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-translation
 title: Google Cloud Translation
-category: AI
+category: "AI Coding"
 price_model: Nutzungsbasiert
 tags: [translation, api, cloud]
 official_url: "https://cloud.google.com/translate"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google Cloud Translation
 
 Google Cloud Translation ist ein leistungsstarker Cloud-basierter Übersetzungsdienst von Google, der eine automatische Übersetzung von Texten und Dokumenten in über 100 Sprachen ermöglicht. Dank modernster KI-Technologien bietet der Dienst schnelle, zuverlässige und skalierbare Übersetzungen, die sich nahtlos in Anwendungen, Webseiten oder Workflows integrieren lassen. Ob für Unternehmen, Entwickler oder Einzelpersonen – Google Cloud Translation unterstützt dabei, Sprachbarrieren zu überwinden und globale Kommunikation zu erleichtern.

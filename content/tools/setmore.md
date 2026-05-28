@@ -1,13 +1,14 @@
 ---
 slug: setmore
 title: Setmore
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [scheduling, appointments, booking]
 official_url: "https://www.setmore.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Setmore
 
 Setmore ist ein Terminbuchungs- und Scheduling-Tool für Dienstleistungen, Beratungen, Kurse und kleine Teams. Es hilft, Verfügbarkeiten online sichtbar zu machen, Buchungen anzunehmen und Erinnerungen zu verschicken.

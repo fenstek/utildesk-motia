@@ -1,13 +1,14 @@
 ---
 slug: paperspace-gradient
 title: Paperspace Gradient
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [data, analytics, automation, workflow]
 official_url: "https://www.paperspace.com/artificial-intelligence"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Paperspace Gradient
 
 Paperspace Gradient ist eine cloudbasierte Plattform, die speziell für maschinelles Lernen und KI-Entwicklung entwickelt wurde. Sie bietet leistungsstarke Tools und Infrastruktur, um Modelle effizient zu trainieren, zu testen und zu deployen. Die Plattform unterstützt Datenanalysen, Automatisierung und optimiert den Workflow von KI-Projekten durch eine benutzerfreundliche Oberfläche und skalierbare Ressourcen.

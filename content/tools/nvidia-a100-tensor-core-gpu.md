@@ -1,13 +1,14 @@
 ---
 slug: nvidia-a100-tensor-core-gpu
 title: NVIDIA A100 Tensor Core GPU
-category: AI
+category: "AI Infrastructure"
 price_model: Individuelles Angebot
 tags: [gpu, infrastructure, ml]
 official_url: "https://www.nvidia.com/en-us/data-center/a100/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # NVIDIA A100 Tensor Core GPU
 
 Die NVIDIA A100 Tensor Core GPU ist eine Hochleistungs-Grafikkarte, die speziell für anspruchsvolle KI-Anwendungen, maschinelles Lernen (ML) und wissenschaftliche Berechnungen entwickelt wurde. Sie basiert auf der Ampere-Architektur und bietet enorme Rechenleistung, um komplexe Modelle effizient zu trainieren und auszuführen. Mit ihrer Fähigkeit, große Datenmengen zu verarbeiten und parallele Berechnungen zu beschleunigen, ist die A100 ein zentraler Baustein moderner KI-Infrastrukturen.

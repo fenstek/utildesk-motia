@@ -1,13 +1,14 @@
 ---
 slug: forecast
 title: Forecast
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [project-management, resource-planning, psa]
 official_url: "https://www.forecast.app/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Forecast
 
 Forecast ist eine AI-gestützte Plattform für Projektmanagement und Ressourcenplanung, die Unternehmen dabei unterstützt, ihre Projekte effizienter zu planen, zu verfolgen und zu steuern. Die Lösung kombiniert intelligente Automatisierung mit klassischen PSA-Funktionalitäten (Professional Services Automation), um Teams eine bessere Übersicht über Zeit, Budget und Ressourcen zu geben. Dank freemium-Modell können Nutzer erste Funktionen kostenlos testen und bei Bedarf auf erweiterte Features zugreifen.

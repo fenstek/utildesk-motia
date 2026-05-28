@@ -1,11 +1,13 @@
 ---
 slug: tableau-public
 title: Tableau Public
-category: AI
+category: "AI Image"
 price_model: Kostenlos
 tags: [data-visualization, analytics, dashboards]
 official_url: "https://public.tableau.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
 # Tableau Public
 

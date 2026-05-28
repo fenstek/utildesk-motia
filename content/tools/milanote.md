@@ -1,12 +1,14 @@
 ---
 slug: milanote
 title: Milanote
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [productivity, collaboration, planning, design]
 official_url: "https://milanote.com/"
 popularity: 0
 description: "Milanote ist ein Business- und Operations-Plattform für visuelle Planung, Moodboards und Projektstruktur für kreative und konzeptionelle Arbeit."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Milanote
 

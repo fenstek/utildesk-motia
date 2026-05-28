@@ -1,13 +1,14 @@
 ---
 slug: aws-bedrock
 title: AWS Bedrock
-category: AI
+category: "AI Coding"
 price_model: Nutzungsbasiert
 tags: [ai, developer-tools, cloud, api]
 official_url: "https://aws.amazon.com/bedrock/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # AWS Bedrock
 
 AWS Bedrock ist ein Cloud-basierter Service von Amazon Web Services, der Entwicklern den Zugang zu Large Language Models (LLMs) verschiedener Anbieter über eine einheitliche API ermöglicht. Mit AWS Bedrock können Unternehmen KI-gestützte Anwendungen schneller und einfacher entwickeln, ohne sich um die zugrundeliegende Infrastruktur kümmern zu müssen. Der Dienst unterstützt den Aufbau von maßgeschneiderten KI-Lösungen, die skalierbar und flexibel sind.

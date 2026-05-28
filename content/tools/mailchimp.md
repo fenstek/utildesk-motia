@@ -1,13 +1,14 @@
 ---
 slug: mailchimp
 title: Mailchimp
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://mailchimp.com/de/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Mailchimp
 
 Mailchimp ist eine führende Marketing-Automatisierungsplattform, die vor allem für E-Mail-Marketing und Kundenkommunikation bekannt ist. Mit einer Vielzahl von KI-gestützten Funktionen unterstützt Mailchimp Unternehmen dabei, ihre Marketingkampagnen zu optimieren, Arbeitsabläufe zu automatisieren und personalisierte Inhalte zu erstellen. Die Plattform eignet sich sowohl für kleine als auch für größere Unternehmen, die ihre Reichweite erhöhen und Kundenbeziehungen effizienter gestalten wollen.

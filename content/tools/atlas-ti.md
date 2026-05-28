@@ -1,12 +1,14 @@
 ---
 slug: atlas-ti
 title: Atlas.ti
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [data, analytics, productivity, automation, education]
 official_url: "https://atlasti.com/"
 popularity: 0
 description: "Atlas.ti ist ein Recherche- und Analysewerkzeug für qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten."
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Atlas.ti
 

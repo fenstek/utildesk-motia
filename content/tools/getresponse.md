@@ -1,13 +1,14 @@
 ---
 slug: getresponse
 title: GetResponse
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant,automation,workflow]
 official_url: "https://www.getresponse.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # GetResponse
 
 GetResponse ist eine Plattform für E-Mail-Marketing, Automatisierung, Landingpages und Kampagnenkommunikation. Der praktische Nutzen liegt darin, Zielgruppen nicht nur anzuschreiben, sondern entlang von Listen, Segmenten und Auslösern systematischer zu begleiten.

@@ -1,13 +1,14 @@
 ---
 slug: litmaps
 title: Litmaps
-category: Schreiben & Content
+category: "AI Research"
 price_model: Abonnement
 tags: [research, data, writing]
 official_url: "https://www.litmaps.com/"
 popularity: 98
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Litmaps
 
 Litmaps ist ein Recherchewerkzeug für wissenschaftliche Literatur, das Publikationen nicht nur als Trefferliste zeigt, sondern als Netzwerk aus Zitierungen, ähnlichen Arbeiten und thematischen Nachbarschaften. Der Nutzen liegt besonders in der frühen und mittleren Phase einer Recherche: Man startet mit einigen bekannten Studien, sieht verwandte Arbeiten, entdeckt fehlende Quellen und kann nachvollziehen, wie sich ein Themenfeld entwickelt.

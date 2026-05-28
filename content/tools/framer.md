@@ -1,13 +1,14 @@
 ---
 slug: framer
 title: Framer
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [design, automation, productivity, no-code, marketing]
 official_url: "https://www.framer.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Framer
 
 Framer ist eine innovative Design- und Prototyping-Plattform, die durch den Einsatz von KI-gestützten Automatisierungen und No-Code-Ansätzen die Produktivität von Designern und Marketingteams erhöht. Die Software ermöglicht es, interaktive Prototypen zu erstellen, ohne umfangreiche Programmierkenntnisse zu benötigen, und unterstützt dabei sowohl kreative als auch technische Arbeitsprozesse.

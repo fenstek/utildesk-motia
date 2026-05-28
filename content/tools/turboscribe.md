@@ -1,13 +1,14 @@
 ---
 slug: turboscribe
 title: TurboScribe
-category: Audio
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, transcription, audio]
 official_url: "https://turboscribe.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # TurboScribe
 
 TurboScribe ist ein modernes Transkriptions-Tool, das auf künstlicher Intelligenz basiert und speziell für die schnelle und präzise Umwandlung von Audio- in Textdateien entwickelt wurde. Es eignet sich ideal für Nutzer, die Audioinhalte automatisiert transkribieren möchten, sei es für Interviews, Meetings, Podcasts oder andere Sprachaufnahmen. Durch eine intuitive Benutzeroberfläche und flexible Preisgestaltung bietet TurboScribe sowohl Einsteigern als auch professionellen Anwendern eine effektive Lösung im Bereich der Audio-Transkription.

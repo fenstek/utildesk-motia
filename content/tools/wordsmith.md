@@ -1,11 +1,13 @@
 ---
 slug: wordsmith
 title: Wordsmith
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://www.wordsmith.ai/'
 affiliate_url: 'https://www.wordsmith.ai/'
+tier: "C"
+generated_at: "2026-05-03"
 created_at: "2026-02-11"
 popularity: 0
 description: "Wordsmith ist ein Schreib- und Content-Tool für Natural-Language-Generation für datengetriebene Texte, Berichte und wiederkehrende Narratives."

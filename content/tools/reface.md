@@ -1,13 +1,14 @@
 ---
 slug: reface
 title: Reface
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://reface.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Reface
 
 Reface ist eine innovative KI-basierte App, die es Nutzern ermöglicht, Gesichter in Videos und Bildern realistisch auszutauschen. Dank fortschrittlicher Deepfake-Technologie können Nutzer eigene Fotos hochladen und diese nahtlos in bekannte Filmclips, Memes oder GIFs einfügen. Die Anwendung bietet eine einfache Benutzeroberfläche und vielfältige kreative Möglichkeiten, um unterhaltsame und personalisierte Inhalte zu erstellen.

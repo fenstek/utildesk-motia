@@ -1,11 +1,13 @@
 ---
 slug: qda-miner
 title: QDA Miner
-category: Analytics
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: ["analytics", "data", "automation"]
 official_url: "https://provalisresearch.com/products/qualitative-data-analysis-software/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # QDA Miner
 

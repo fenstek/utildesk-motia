@@ -1,13 +1,14 @@
 ---
 slug: wombo-ai
 title: Wombo AI
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [ai-art,image-generation,mobile]
 official_url: "https://w.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Wombo AI
 
 Wombo AI ist eine innovative KI-basierte Anwendung, die es Nutzern ermöglicht, aus einfachen Eingaben beeindruckende digitale Kunstwerke zu erzeugen. Die App kombiniert künstliche Intelligenz mit kreativen Algorithmen, um in wenigen Sekunden Bilder in verschiedenen Stilrichtungen zu generieren. Wombo AI richtet sich vor allem an Nutzer, die ohne tiefergehende Designkenntnisse einzigartige Grafiken erstellen möchten – sei es für Social Media, persönliche Projekte oder zur Inspiration.

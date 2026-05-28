@@ -1,13 +1,14 @@
 ---
 slug: dremio
 title: Dremio
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://www.dremio.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Dremio
 
 Dremio ist eine moderne Datenplattform, die es Unternehmen ermöglicht, Daten aus verschiedenen Quellen schnell und effizient zu analysieren. Mit Fokus auf Self-Service-Analytics kombiniert Dremio leistungsstarke Datenvirtualisierung, Cloud-Integration und KI-gestützte Optimierungen, um den Zugriff auf Daten für Entwickler, Analysten und Data Scientists zu vereinfachen. Die Plattform unterstützt heterogene Datenquellen und beschleunigt die Datenaufbereitung sowie Analyseprozesse.

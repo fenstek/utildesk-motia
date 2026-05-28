@@ -1,12 +1,14 @@
 ---
 slug: elicit
 title: Elicit
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [data, analytics, education, productivity, automation]
 official_url: "https://elicit.com/"
 popularity: 95
 description: Elicit unterstützt Literaturrecherche, Paper-Sichtung und strukturierte Evidenzarbeit für Forschung und Analyse.
+tier: "C"
+generated_at: "2026-05-28"
 ---
 # Elicit
 

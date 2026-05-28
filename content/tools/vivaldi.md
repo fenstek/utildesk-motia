@@ -6,8 +6,9 @@ price_model: Free
 tags: [browser, web, privacy, productivity]
 official_url: "https://vivaldi.com/"
 popularity: 6
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Vivaldi
 
 Vivaldi ist ein kostenloser Webbrowser, der sich durch hohe Anpassbarkeit und umfangreiche Funktionen auszeichnet. Entwickelt mit Fokus auf Produktivität und Privatsphäre, bietet Vivaldi Nutzern eine flexible und effiziente Browser-Erfahrung, die sich an individuelle Bedürfnisse anpassen lässt.

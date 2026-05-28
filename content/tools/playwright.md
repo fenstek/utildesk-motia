@@ -1,13 +1,14 @@
 ---
 slug: playwright
 title: Playwright
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://playwright.dev/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Playwright
 
 Playwright ist ein modernes Open-Source-Tool zur Automatisierung von Browsern und zum Testen von Webanwendungen. Es ermöglicht Entwicklern, zuverlässige End-to-End-Tests über verschiedene Browser hinweg zu schreiben und auszuführen. Playwright unterstützt Chromium, Firefox und WebKit und bietet eine leistungsstarke API, die speziell für die Entwicklung von robusten und wartbaren Tests konzipiert ist.

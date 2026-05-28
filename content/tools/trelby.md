@@ -1,12 +1,14 @@
 ---
 slug: trelby
 title: Trelby
-category: AI
+category: "AI Writing"
 price_model: "Open Source"
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://trelby.org/"
 popularity: 0
 description: "Trelby ist ein Schreib- und Content-Tool für Open-Source-Drehbuchsoftware für Formatierung, Szenenarbeit und klassische Screenplay-Struktur."
+tier: "C"
+generated_at: "2026-05-25"
 ---
 # Trelby
 

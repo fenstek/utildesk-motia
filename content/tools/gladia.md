@@ -1,13 +1,14 @@
 ---
 slug: gladia
 title: Gladia
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [ai, assistant, automation, workflow]
 official_url: "https://www.gladia.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Gladia
 
 Gladia ist eine innovative KI-Plattform, die Unternehmen und Einzelpersonen dabei unterstützt, Arbeitsabläufe durch Automatisierung und intelligente Assistenz zu optimieren. Mit einer Vielzahl von KI-gestützten Tools erleichtert Gladia die Datenverarbeitung, Textgenerierung und Workflow-Integration. Die Plattform richtet sich an Nutzer, die ihre Produktivität steigern und repetitive Aufgaben effizienter gestalten möchten.

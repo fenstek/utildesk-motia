@@ -1,13 +1,14 @@
 ---
 slug: glitch
 title: Glitch
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://blog.glitch.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Glitch
 
 Glitch ist ein leistungsstarkes KI-Tool, das speziell für die Automatisierung von Arbeitsabläufen und die Unterstützung bei kreativen Prozessen entwickelt wurde. Es kombiniert intelligente Assistentenfunktionen mit flexibler Automatisierung, um Nutzern dabei zu helfen, effizienter zu arbeiten und repetitive Aufgaben zu vereinfachen.
@@ -66,7 +67,6 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Integration mit vielen gängigen Tools und Plattformen.
 
 - Stärker im Alltag, wenn Glitch für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Glitch ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 
@@ -75,7 +75,6 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Abhängigkeit von der Stabilität der integrierten Drittanbieter-Services.
 - Für sehr spezifische oder komplexe Automatisierungen eventuell nicht ausreichend.
 
-- Braucht klare Leitplanken, denn ohne sie fallen Probleme dort auf, wo Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden. Bei Glitch ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Der Nutzen von Glitch hängt stark davon ab, ob Review, Datenpflege und Verantwortlichkeiten im Team tatsächlich gelebt werden.
 
 ## Preise & Kosten

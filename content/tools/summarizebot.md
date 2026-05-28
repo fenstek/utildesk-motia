@@ -1,11 +1,13 @@
 ---
 slug: summarizebot
 title: SummarizeBot
-category: AI
+category: "AI Chatbots"
 price_model:
 tags: [chatbot, meeting]
 official_url: "https://www.summarizebot.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # SummarizeBot
 

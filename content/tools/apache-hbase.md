@@ -1,13 +1,14 @@
 ---
 slug: apache-hbase
 title: Apache HBase
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://hbase.apache.org/"
 popularity: 67
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Apache HBase
 
 Apache HBase ist eine verteilte, skalierbare, NoSQL-Datenbank, die auf dem Hadoop-Ökosystem basiert. Sie ermöglicht die Speicherung und schnelle Abfrage großer Mengen unstrukturierter Daten in Echtzeit. HBase ist besonders für Anwendungen geeignet, die hohe Durchsatzraten und niedrige Latenzzeiten bei der Verarbeitung von Big Data benötigen. Als Open-Source-Projekt wird Apache HBase von der Apache Software Foundation gepflegt und bietet Entwicklern eine flexible Plattform für die Verwaltung großer Datensätze.

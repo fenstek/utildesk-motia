@@ -1,13 +1,14 @@
 ---
 slug: maxqda
 title: MAXQDA
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.maxqda.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # MAXQDA
 
 MAXQDA ist eine leistungsstarke Software zur qualitativen und quantitativen Datenanalyse, die vor allem in den Bereichen Sozialwissenschaften, Marktforschung, Bildung und weiteren Forschungsfeldern eingesetzt wird. Die Anwendung unterstützt Nutzer dabei, große Mengen an Text-, Bild-, Audio- und Videodaten systematisch zu codieren, zu analysieren und zu visualisieren, um fundierte Erkenntnisse zu gewinnen und produktiv zu arbeiten.

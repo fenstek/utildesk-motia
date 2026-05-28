@@ -1,13 +1,14 @@
 ---
 slug: cisco-webex
 title: Cisco Webex
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [communication,video,meetings,collaboration]
 official_url: "https://www.webex.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Cisco Webex
 
 Cisco Webex ist eine umfassende Plattform für Videokonferenzen, Online-Meetings und Zusammenarbeit, die sich durch eine benutzerfreundliche Oberfläche und vielfältige Funktionen auszeichnet. Die Lösung unterstützt Unternehmen und Teams dabei, effizient zu kommunizieren und zusammenzuarbeiten – unabhängig vom Standort der Teilnehmer. Mit integrierten KI-Funktionen optimiert Webex Meetings und erleichtert die Organisation von virtuellen Zusammenkünften.

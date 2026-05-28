@@ -1,13 +1,14 @@
 ---
 slug: continue
 title: Continue
-category: Developer
+category: "Entwickler-Tools"
 price_model: 
 tags: [ai, coding, developer, assistant]
 official_url: "https://www.continue.dev/"
 popularity: 55
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Continue
 
 Continue ist ein KI-gestütztes Entwickler-Tool, das darauf ausgelegt ist, Programmierern und Entwicklern beim Schreiben von Code effizient zu unterstützen. Es hilft dabei, Code-Snippets automatisch zu vervollständigen, Vorschläge zu machen und repetitive Aufgaben zu vereinfachen. So können Entwickler schneller und präziser arbeiten, ohne den Fluss beim Coden zu verlieren.

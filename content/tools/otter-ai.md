@@ -1,18 +1,19 @@
 ---
 slug: otter-ai
 title: Otter.ai
-category: Audio
+category: "Audio & Video"
 price_model: "Freemium"
 tags:
   - ai
   - audio
 official_url: 'https://otter.ai'
 affiliate_url: 'https://otter.ai'
+tier: "A"
+lastReviewed: "2026-05-16"
+mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: "2026-02-02"
 popularity: 0
 ---
-
-
 # Otter.ai
 
 Otter.ai ist ein fortschrittliches Transkriptions- und Notiztool, das Audioinhalte automatisch in Text umwandelt. Es unterstützt Nutzer dabei, Meetings, Interviews, Vorträge und andere gesprochene Inhalte einfach und schnell zu transkribieren. Durch die Kombination von künstlicher Intelligenz und Spracherkennungstechnologie bietet Otter.ai eine praktische Lösung für alle, die Zeit bei der Nachbereitung von Audioaufnahmen sparen möchten.

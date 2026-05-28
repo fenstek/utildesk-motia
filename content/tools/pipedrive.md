@@ -1,13 +1,14 @@
 ---
 slug: pipedrive
 title: Pipedrive
-category: AI
+category: "AI Image"
 price_model: Abonnement, Je nach Plan
 tags: [crm, sales, pipeline]
 official_url: "https://www.pipedrive.com/de"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
-
 # Pipedrive
 
 Pipedrive ist eine cloudbasierte CRM-Software, die speziell für Vertriebsteams entwickelt wurde, um Verkaufsprozesse zu optimieren und den Überblick über Leads und Opportunities zu behalten. Mit einem klar strukturierten Pipeline-Management und intelligenten Automatisierungen unterstützt Pipedrive Unternehmen dabei, effizienter zu verkaufen und bessere Abschlüsse zu erzielen.
@@ -20,20 +21,6 @@ Pipedrive ist besonders nützlich für Marketing-, Sales- und Growth-Teams, die 
 
 Vor einer breiteren Einführung von Pipedrive lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Pipedrive lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Als Prüfstück für Pipedrive eignet sich einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Follow-up. Wenn Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Pipedrive:** Vor dem Rollout sollten Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Pipedrive:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei Pipedrive:** Der Einsatz kippt in Zusatzarbeit, wenn Zielgruppen, Tracking, Einwilligungen, Datenpflege und Follow-up-Prozesse nicht sauber definiert sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/pipedrive-editorial.webp" alt="Illustration zu Pipedrive: Deals bewegen sich durch Pipeline-Stufen, Aktivitaeten und Prognosepfade" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Verkaufs-Pipeline-Management:** Visualisierung und Steuerung der einzelnen Verkaufsphasen für bessere Übersicht.
@@ -45,10 +32,6 @@ Als Prüfstück für Pipedrive eignet sich einer realen Kampagne mit Zielgruppe,
 - **Integration mit Drittanbieter-Tools:** Anbindung an Kalender, Marketing-Tools und weitere Systeme.
 - **KI-gestützte Empfehlungen:** Vorschläge zur Priorisierung von Leads und nächsten Schritten.
 - **Anpassbare Felder und Layouts:** Flexibilität zur individuellen Gestaltung des CRM.
-
-- **Praxislauf mit Pipedrive:** Das Tool sollte mit einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Follow-up getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Pipedrive:** Das Team braucht eine einfache Methode, um Reichweite, Conversion, Leadqualität, Aufwand, Attribution und Nachverfolgung nach dem Einsatz zu prüfen.
-- **Übergabe mit Pipedrive:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

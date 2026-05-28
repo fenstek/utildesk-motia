@@ -1,13 +1,14 @@
 ---
 slug: picmonkey
 title: PicMonkey
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.picmonkey.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # PicMonkey
 
 PicMonkey ist eine vielseitige Online-Plattform für Bildbearbeitung und Grafikdesign, die sich durch benutzerfreundliche Funktionen und intelligente Automatisierung auszeichnet. Die Software kombiniert klassische Bildbearbeitungswerkzeuge mit modernen KI-gestützten Funktionen, um sowohl Anfängern als auch Profis die Erstellung ansprechender visueller Inhalte zu erleichtern. Mit PicMonkey lassen sich Fotos retuschieren, Layouts gestalten und kreative Projekte schnell und effizient umsetzen.

@@ -1,16 +1,18 @@
 ---
 slug: langchain
 title: LangChain
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "automation"]
 official_url: 'https://langchain.com/'
 affiliate_url: 'https://langchain.com/'
+tier: "A"
+lastReviewed: "2026-05-21"
+mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen", "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: "2026-02-07"
 updated_at: 2026-05-21
 popularity: 0
 ---
-
 # LangChain
 
 LangChain ist eine innovative Plattform, die speziell für die Entwicklung von Anwendungen mit großen Sprachmodellen (Large Language Models, LLMs) konzipiert wurde. Sie bietet Entwicklern eine flexible Umgebung, um KI-gesteuerte Workflows zu erstellen, die natürliche Sprache verstehen und verarbeiten können. Mit einer Vielzahl von Integrationen und Tools unterstützt LangChain die einfache Verbindung von Sprachmodellen mit anderen Datenquellen und APIs, was die Erstellung komplexer, kontextbezogener Anwendungen erleichtert.

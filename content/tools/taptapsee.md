@@ -1,13 +1,14 @@
 ---
 slug: taptapsee
 title: TapTapSee
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://taptapsee.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # TapTapSee
 
 TapTapSee ist eine innovative KI-basierte App, die speziell entwickelt wurde, um Menschen mit Sehbehinderungen beim Erkennen von Objekten im Alltag zu unterstützen. Durch die Nutzung von Kamera und künstlicher Intelligenz ermöglicht TapTapSee eine schnelle und präzise Beschreibung von Gegenständen, was den Nutzern mehr Selbstständigkeit und Sicherheit bietet.

@@ -1,13 +1,14 @@
 ---
 slug: crowdin
 title: Crowdin
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: [automation, translation, productivity]
 official_url: "https://crowdin.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Crowdin
 
 Crowdin ist eine cloudbasierte Plattform zur Übersetzungs- und Lokalisierungsverwaltung, die speziell für die Automatisierung und Optimierung von Übersetzungsprozessen entwickelt wurde. Durch den Einsatz von KI-gestützten Tools und Kollaborationsfunktionen unterstützt Crowdin Unternehmen dabei, ihre Inhalte effizient in mehreren Sprachen zu veröffentlichen und so ihre internationale Reichweite zu erhöhen.

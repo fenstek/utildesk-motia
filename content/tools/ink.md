@@ -1,13 +1,15 @@
 ---
 slug: ink
 title: Ink
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "content", "seo"]
 official_url: "https://ink.ai/"
 created_at: 2026-02-15
 popularity: 0
 description: "Ink ist ein Schreib- und Content-Tool für SEO-orientiertes Schreiben, Content-Optimierung und Textvarianten für Marketingteams."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Ink
 

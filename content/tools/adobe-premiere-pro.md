@@ -6,10 +6,11 @@ price_model: Abonnement
 tags: ["video", "editing", "creative", "content", "audio"]
 official_url: "https://www.adobe.com/products/premiere.html"
 affiliate_url: "https://www.adobe.com/products/premiere.html"
+tier: "C"
+generated_at: "2026-05-28"
 popularity: 76
 description: Professioneller Video-Editor für Schnitt, Farbkorrektur, Audio, Untertitel und Postproduktion.
 ---
-
 # Adobe Premiere Pro
 
 Adobe Premiere Pro ist ein professioneller Video-Editor für Creator, Agenturen, Redaktionen und Postproduktions-Teams. Es deckt Schnitt, Ton, Farbe, Untertitel, Effekte und Export in einem etablierten Workflow ab.
@@ -29,8 +30,6 @@ Wer nur gelegentlich kurze Clips auf dem Smartphone bearbeitet, ist mit CapCut, 
 - **Postproduktion:** Ton, Farbe, Untertitel, B-Roll, Grafiken und Übergänge in einem professionellen Projekt verwalten.
 - **Team-Reviews:** Versionen exportieren, Feedback einarbeiten und Abnahmen nachvollziehbar halten.
 - **Creative-Cloud-Pipeline:** Material mit After Effects, Audition, Photoshop oder Stock-Assets kombinieren.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-premiere-pro-editorial.webp" alt="Illustration zu Adobe Premiere Pro: Schnittplatz mit Filmspuren, Tonwellen und Farbkorrekturlicht" loading="lazy" decoding="async" />

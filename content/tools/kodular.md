@@ -1,13 +1,14 @@
 ---
 slug: kodular
 title: Kodular
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: [no-code, automation, productivity, design, developer-tools]
 official_url: "https://www.kodular.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Kodular
 
 Kodular ist eine No-Code-Plattform, die es ermöglicht, mobile Apps einfach und schnell zu erstellen, ohne dass Programmierkenntnisse erforderlich sind. Mit einer intuitiven Drag-and-Drop-Oberfläche sowie vielfältigen Komponenten unterstützt Kodular sowohl Anfänger als auch erfahrene Entwickler dabei, individuelle Anwendungen für Android zu gestalten. Die Plattform fördert Automatisierung, Produktivität und Design, indem sie komplexe Entwicklungsprozesse vereinfacht.

@@ -8,6 +8,9 @@ official_url: "https://nanonets.com/"
 description: Nanonets verbindet OCR, Feldextraktion und Workflow-Automatisierung, damit Dokumente nicht nur erkannt, sondern auch geprüft und weitergeleitet werden.
 created_at: 2026-05-10
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-14"
+mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Nanonets
 

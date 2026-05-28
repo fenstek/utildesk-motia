@@ -1,13 +1,14 @@
 ---
 slug: research-ai
 title: Research AI
-category: AI
+category: "AI Research"
 price_model: Freemium
 tags: [research-assistant, ai-search, academic-research]
 official_url: "https://www.researchai.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Research AI
 
 Research AI ist ein innovatives KI-gestütztes Tool, das speziell für die Unterstützung bei wissenschaftlichen Recherchen und akademischen Arbeiten entwickelt wurde. Es kombiniert fortschrittliche Suchalgorithmen mit natürlicher Sprachverarbeitung, um relevante Studien, Artikel und Daten effizient zu finden und aufzubereiten. Mit einer freemium Preisstruktur ermöglicht es sowohl Einsteigern als auch erfahrenen Forschern den Zugang zu leistungsstarken Funktionen.

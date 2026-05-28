@@ -6,10 +6,12 @@ price_model: Ab 249 $/Monat
 tags: ["video", "ai", "ecommerce", "ugc", "analytics"]
 official_url: "https://www.vyrill.com/"
 affiliate_url: "https://www.vyrill.com/"
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]
 created_at: 2026-05-12
 popularity: 84
 ---
-
 # Vyrill
 
 Vyrill ist eine Video-Commerce-Plattform für Marken, Retailer und Agenturen, die Produktvideos, UGC-Clips, Reviews und Creator-Material nicht nur verwalten, sondern inhaltlich durchsuchbar und für Commerce nutzbar machen wollen. Der Kern ist nicht klassischer Videoschnitt, sondern Video Intelligence: Welche Produkte erscheinen im Clip? Welche Aussagen, Einwände oder Kaufmotive tauchen auf? Welche Szenen eignen sich für eine Produktseite, Kampagne oder Retail-Media-Ausspielung?

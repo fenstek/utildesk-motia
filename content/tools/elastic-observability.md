@@ -1,13 +1,14 @@
 ---
 slug: elastic-observability
 title: Elastic Observability
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement, Je nach Plan
 tags: [monitoring, analytics, data, developer-tools]
 official_url: "https://www.elastic.co/observability"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Elastic Observability
 
 Elastic Observability ist eine umfassende Plattform zur Überwachung, Analyse und Visualisierung von IT-Systemen, Anwendungen und Infrastrukturen. Sie ermöglicht Entwicklern und IT-Teams, Daten aus verschiedenen Quellen zentral zu sammeln, um Probleme schnell zu erkennen, die Leistung zu optimieren und die Benutzererfahrung zu verbessern. Die Lösung basiert auf der Elastic Stack-Technologie und bietet flexible Dashboards, intelligente Alerting-Funktionen sowie leistungsstarke Such- und Analysewerkzeuge.

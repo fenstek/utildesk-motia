@@ -1,13 +1,14 @@
 ---
 slug: hemingway-editor
 title: Hemingway Editor
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [writing, productivity, automation]
 official_url: "https://hemingwayapp.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Hemingway Editor
 
 Der Hemingway Editor ist ein modernes Schreibwerkzeug, das darauf abzielt, Texte klarer, prägnanter und leichter lesbar zu gestalten. Mit Hilfe von automatisierten Analysen hebt das Tool komplexe Sätze, unnötige Adverbien und passive Konstruktionen hervor, um die Schreibqualität zu verbessern. Besonders geeignet ist es für Autoren, Blogger, Studenten und alle, die ihre Texte verständlicher machen möchten.

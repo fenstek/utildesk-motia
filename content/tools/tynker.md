@@ -1,13 +1,14 @@
 ---
 slug: tynker
 title: Tynker
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [education, coding, children, learning]
 official_url: "https://www.tynker.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-25"
 ---
-
 # Tynker
 
 Tynker ist eine interaktive Lernplattform, die Kindern auf spielerische Weise das Programmieren näherbringt. Mit einem Fokus auf kreative Projekte und einfache Benutzerführung unterstützt Tynker junge Nutzer dabei, grundlegende Programmierkonzepte zu verstehen und anzuwenden. Die Plattform kombiniert visuelle Programmierung mit spannenden Herausforderungen, um das Interesse an Technologie und Coding zu fördern.

@@ -1,13 +1,14 @@
 ---
 slug: ionic
 title: Ionic
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [mobile-development, framework, developer-tools]
 official_url: "https://ionic.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Ionic
 
 Ionic ist ein Framework für hybride und cross-platform Apps auf Basis von Webtechnologien. Teams können mit HTML, CSS und JavaScript beziehungsweise modernen Frameworks mobile Oberflächen bauen und sie über Capacitor in native App-Umgebungen bringen.

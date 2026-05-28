@@ -1,13 +1,14 @@
 ---
 slug: splunk
 title: Splunk
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Individuelles Angebot, Je nach Plan
 tags: [analytics, observability, security, enterprise]
 official_url: "https://www.splunk.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Splunk
 
 Splunk ist eine leistungsstarke Plattform für die Analyse und Überwachung von Maschinendaten in Echtzeit. Mit Fokus auf Datenanalyse, Sicherheit und IT-Observability unterstützt Splunk Unternehmen dabei, komplexe Datenmengen aus verschiedenen Quellen zu sammeln, zu durchsuchen und zu visualisieren. Die Lösung eignet sich besonders für Unternehmen, die datengetriebene Entscheidungen treffen und ihre IT-Infrastruktur sowie Sicherheitslage kontinuierlich überwachen möchten.

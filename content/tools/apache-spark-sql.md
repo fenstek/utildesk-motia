@@ -1,13 +1,14 @@
 ---
 slug: apache-spark-sql
 title: Apache Spark SQL
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [data,workflow]
 official_url: "https://spark.apache.org/sql/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Spark SQL
 
 Apache Spark SQL ist ein leistungsstarkes Modul von Apache Spark, das speziell für die Verarbeitung und Analyse großer Datenmengen mittels SQL-Abfragen entwickelt wurde. Es ermöglicht die nahtlose Integration von relationalen Datenabfragen in Spark-Anwendungen und unterstützt dabei komplexe Datenanalysen und Workflows in Echtzeit. Spark SQL kombiniert die Vorteile von SQL mit der Skalierbarkeit und Geschwindigkeit der Spark-Engine und ist damit ein unverzichtbares Werkzeug im Bereich Big Data und KI.

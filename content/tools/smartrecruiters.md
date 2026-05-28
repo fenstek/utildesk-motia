@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, ai]
 official_url: "https://www.smartrecruiters.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # SmartRecruiters
 
 SmartRecruiters ist eine umfassende Recruiting-Plattform, die Unternehmen dabei unterstützt, den gesamten Einstellungsprozess effizient zu gestalten. Mit modernen Funktionen wie Bewerbermanagement, KI-gestützter Kandidatensuche und kollaborativen Tools hilft die Software, Talente schneller und besser zu finden und einzustellen. Ideal für HR-Teams, die ihre Recruiting-Prozesse digitalisieren und optimieren möchten.

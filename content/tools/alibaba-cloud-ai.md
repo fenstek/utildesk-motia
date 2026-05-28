@@ -1,13 +1,14 @@
 ---
 slug: alibaba-cloud-ai
 title: Alibaba Cloud AI
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [machine-learning, cloud, enterprise-ai]
 official_url: "https://www.alibabacloud.com/en/product/machine-learning?_p_lc=1"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Alibaba Cloud AI
 
 Alibaba Cloud AI ist eine umfassende Plattform für künstliche Intelligenz, die Unternehmen leistungsstarke Tools und Dienste bietet, um KI-Anwendungen in der Cloud zu entwickeln, zu implementieren und zu skalieren. Die Plattform kombiniert fortschrittliche Machine-Learning-Algorithmen, Cloud-Infrastruktur und branchenspezifische Lösungen, um vielfältige Einsatzszenarien abzudecken.

@@ -1,13 +1,14 @@
 ---
 slug: connected-papers
 title: Connected Papers
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [analytics, automation]
 official_url: "https://www.connectedpapers.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Connected Papers
 
 Connected Papers ist ein innovatives Tool im Bereich der wissenschaftlichen Recherche und Analyse. Es nutzt fortschrittliche Algorithmen, um Forschungspapiere visuell miteinander zu verknüpfen und so einen umfassenden Überblick über ein bestimmtes Forschungsthema zu bieten. Mit Connected Papers können Nutzer schnell relevante Studien finden, Zusammenhänge erkennen und neue Forschungsansätze entdecken – alles unterstützt durch künstliche Intelligenz und automatisierte Analyseverfahren.

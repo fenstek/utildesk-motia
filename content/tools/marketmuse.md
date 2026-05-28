@@ -1,13 +1,14 @@
 ---
 slug: marketmuse
 title: MarketMuse
-category: AI
+category: "AI Writing"
 price_model: "Abonnement"
 tags: [assistant, automation, writing, content, marketing]
 official_url: "https://www.marketmuse.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # MarketMuse
 
 MarketMuse ist eine KI-gestützte Plattform zur Content-Optimierung und -Planung, die Unternehmen und Content-Erstellern hilft, ihre Inhalte gezielt zu verbessern und ihre SEO-Strategien zu stärken. Durch automatisierte Analysen und Empfehlungen unterstützt MarketMuse dabei, thematisch relevante und qualitativ hochwertige Inhalte zu erstellen, die bessere Rankings in Suchmaschinen erzielen können.

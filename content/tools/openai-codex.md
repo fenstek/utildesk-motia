@@ -1,13 +1,15 @@
 ---
 slug: openai-codex
 title: OpenAI Codex
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: [ai, devtools, coding, workflow]
 official_url: "https://openai.com/codex"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-16"
+mentionedIn: ["coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"]
 ---
-
 # OpenAI Codex
 
 OpenAI Codex ist eine KI-basierte Programmierhilfe, die Entwicklern dabei hilft, Code schneller und effizienter zu schreiben. Durch natürliche Spracheingaben kann Codex Programmieraufgaben verstehen und passenden Code generieren, was den Workflow erheblich erleichtert. Es eignet sich besonders für die Automatisierung von Routineaufgaben, die Unterstützung bei komplexen Algorithmen und das Lernen neuer Programmiersprachen.

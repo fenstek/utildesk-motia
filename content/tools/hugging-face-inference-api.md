@@ -1,13 +1,14 @@
 ---
 slug: hugging-face-inference-api
 title: Hugging Face Inference API
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [ai, api, developer-tools, inference]
 official_url: "https://huggingface.co/docs/inference-providers/index"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Hugging Face Inference API
 
 Die Hugging Face Inference API bietet Entwicklern einfachen Zugang zu modernsten KI-Modellen für verschiedene Anwendungsfälle wie Textgenerierung, Übersetzung, Sentiment-Analyse und mehr. Über eine RESTful API können leistungsstarke Machine-Learning-Modelle direkt in Anwendungen integriert werden, ohne dass eigene Infrastruktur für das Hosting oder die Wartung der Modelle erforderlich ist.

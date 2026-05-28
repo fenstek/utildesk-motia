@@ -7,9 +7,9 @@ tags: [ai, produktivitat, writing]
 official_url: "https://www.inklestudios.com/inklewriter/"
 created_at: "2026-02-12"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
-
 # Inklewriter
 
 Inklewriter ist ein innovatives Online-Tool, das speziell für interaktives Schreiben und Storytelling entwickelt wurde. Es ermöglicht Autoren, komplexe Geschichten mit verzweigten Handlungssträngen einfach und übersichtlich zu erstellen, ohne technische Vorkenntnisse. Die intuitive Benutzeroberfläche unterstützt das kreative Arbeiten und hilft dabei, den Überblick über verschiedene Erzählpfade zu behalten. Ideal für Schriftsteller, Spieleentwickler und alle, die interaktive Geschichten gestalten möchten.

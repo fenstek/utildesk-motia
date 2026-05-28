@@ -1,11 +1,13 @@
 ---
 slug: google-calendar
 title: Google Calendar
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://workspace.google.com/products/calendar/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # Google Calendar
 

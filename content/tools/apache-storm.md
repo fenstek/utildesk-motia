@@ -1,13 +1,14 @@
 ---
 slug: apache-storm
 title: Apache Storm
-category: AI
+category: "AI Agents"
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://storm.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Apache Storm
 
 Apache Storm ist ein verteiltes System für Echtzeit-Stream-Processing. Es verarbeitet kontinuierliche Datenströme, etwa Events, Logs oder Messdaten, und führt darauf Topologien aus, die Daten transformieren, analysieren oder weiterleiten.

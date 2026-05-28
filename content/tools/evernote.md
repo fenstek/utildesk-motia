@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [notes,productivity,documents,organization]
 official_url: "https://evernote.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Evernote
 
 Evernote ist eine vielseitige Notiz- und Organisationsanwendung, die es Nutzern ermöglicht, Informationen digital zu erfassen, zu speichern und zu verwalten. Die Plattform unterstützt das Erstellen von Notizen, das Speichern von Dokumenten, das Organisieren von Aufgaben und das Teilen von Inhalten über verschiedene Geräte hinweg. Als Freemium-Tool bietet Evernote eine Basisversion mit grundlegenden Funktionen sowie optionale kostenpflichtige Pläne mit erweiterten Features.

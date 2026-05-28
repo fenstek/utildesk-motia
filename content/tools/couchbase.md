@@ -1,13 +1,14 @@
 ---
 slug: couchbase
 title: Couchbase
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [database,cloud,developer-tools,analytics]
 official_url: "https://www.couchbase.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Couchbase
 
 Couchbase ist eine leistungsstarke NoSQL-Datenbankplattform, die speziell für moderne Anwendungen entwickelt wurde, die hohe Skalierbarkeit, Flexibilität und Performance benötigen. Sie vereint die Vorteile von Dokumenten-orientierten Datenbanken mit der Unterstützung für Multi-Model-Datenmanagement und bietet umfangreiche Funktionen für Entwickler und Unternehmen, die Cloud-native und datenintensive Anwendungen erstellen.

@@ -1,13 +1,14 @@
 ---
 slug: zoho-desk
 title: Zoho Desk
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [helpdesk,customer-support,saas]
 official_url: "https://www.zoho.com/de/desk/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zoho Desk
 
 Zoho Desk ist eine cloudbasierte Helpdesk-Software, die Unternehmen dabei unterstützt, ihren Kundenservice effizient zu gestalten. Mit KI-gestützten Funktionen und einer intuitiven Benutzeroberfläche ermöglicht Zoho Desk die zentrale Verwaltung von Kundenanfragen über verschiedene Kanäle hinweg. So können Support-Teams schneller reagieren, Arbeitsprozesse automatisieren und die Kundenzufriedenheit steigern.

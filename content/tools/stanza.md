@@ -1,11 +1,13 @@
 ---
 slug: stanza
 title: Stanza
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [nlp, python, developer-tools]
 official_url: "https://stanfordnlp.github.io/stanza/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
 # Stanza
 

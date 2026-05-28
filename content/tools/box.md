@@ -1,11 +1,13 @@
 ---
 slug: box
 title: Box
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.box.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Box
 

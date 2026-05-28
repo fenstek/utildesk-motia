@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://picsart.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Picsart
 
 Picsart ist eine kreative Bild- und Design-App für schnelle visuelle Inhalte, Social Posts, Collagen, Sticker, Effekte und einfache Bearbeitung. Sie sitzt zwischen klassischer Fotobearbeitung und Template-Design: weniger schwer als Photoshop, verspielter als reine Layout-Tools.

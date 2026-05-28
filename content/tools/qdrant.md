@@ -1,13 +1,14 @@
 ---
 slug: qdrant
 title: Qdrant
-category: AI Infrastructure
+category: "AI Coding"
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://qdrant.tech"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Qdrant
 
 Qdrant ist eine spezialisierte Vektor-Datenbank, die für die Verwaltung und Suche großer Mengen von Vektordaten entwickelt wurde. Sie unterstützt Entwickler und Unternehmen dabei, KI-gestützte Anwendungen zu erstellen, die auf semantischer Suche, Ähnlichkeitserkennung und maschinellem Lernen basieren. Qdrant bietet eine skalierbare Infrastruktur, die sich besonders für Anwendungen im Bereich der künstlichen Intelligenz und datenintensiven Projekten eignet.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [education, language, learning, mobile]
 official_url: "https://www.busuu.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Busuu
 
 Busuu ist eine Sprachlernplattform, die strukturierte Lektionen, Übungen und Community-Elemente kombiniert. Sie eignet sich weniger für theoretische Sprachwissenschaft, sondern für den alltäglichen Aufbau von Wortschatz, Grammatik und Routine.

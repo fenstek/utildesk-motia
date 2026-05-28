@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [customer-support, helpdesk, crm, ai]
 official_url: "https://www.zendesk.de/service/#georedirect"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Zendesk Suite
 
 Zendesk Suite ist eine umfassende Customer-Service-Plattform, die Unternehmen dabei unterstützt, Kundenanfragen effizient zu verwalten und den Support zu optimieren. Die Lösung kombiniert Helpdesk, CRM und KI-gestützte Tools in einer einheitlichen Oberfläche, um die Kommunikation mit Kunden über verschiedene Kanäle hinweg zu vereinfachen.

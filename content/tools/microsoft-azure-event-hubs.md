@@ -1,14 +1,15 @@
 ---
 slug: microsoft-azure-event-hubs
 title: Microsoft Azure Event Hubs
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, messaging, cloud, analytics]
 official_url: "https://azure.microsoft.com/en-us/products/event-hubs/"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Event Hubs
 
 Microsoft Azure Event Hubs ist der Azure-Dienst für Event-Ingestion im großen Maßstab. Er sammelt Ereignisse aus Anwendungen, Geräten und Infrastruktur, hält sie kurzzeitig verfügbar und gibt sie an nachgelagerte Systeme wie Stream Analytics, Functions, Data Lake oder eigene Consumer weiter. Wichtig ist: Event Hubs ist vor allem die Eingangsschicht für Events, nicht die komplette Analyseplattform.
@@ -54,7 +55,6 @@ Microsoft Azure Event Hubs richtet sich an Entwickler, Data Engineers und Plattf
 - Kosten können bei sehr hohem Datenvolumen steigen
 - Abhängigkeit von der Azure-Cloud-Plattform
 - Eingeschränkte Offline-Verarbeitungsmöglichkeiten
-
 
 ## Was im Alltag wirklich zählt
 

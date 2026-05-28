@@ -1,13 +1,14 @@
 ---
 slug: davinci-resolve
 title: DaVinci Resolve
-category: AI
+category: "AI Coding"
 price_model: Freemium
 tags: [video-editing,color-grading,post-production]
 official_url: "https://www.blackmagicdesign.com/products/davinciresolve"
 popularity: 95
+tier: "D"
+generated_at: "2026-05-28"
 ---
-
 # DaVinci Resolve
 
 DaVinci Resolve ist eine professionelle Postproduktionssoftware für Videoschnitt, Farbkorrektur, visuelle Effekte, Audiobearbeitung und Export. Der besondere Reiz liegt darin, dass mehrere Arbeitsschritte, die sonst oft über verschiedene Programme verteilt sind, in einer Umgebung zusammenlaufen. Schnitt, Color Grading, Fusion-Effekte, Fairlight-Audio und Delivery können innerhalb eines Projekts organisiert werden.

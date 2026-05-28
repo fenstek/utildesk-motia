@@ -1,13 +1,14 @@
 ---
 slug: loom
 title: Loom
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [video, screen-recording, communication, productivity]
 official_url: "https://www.loom.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Loom
 
 Loom ist ein leistungsstarkes Tool zur Bildschirmaufnahme und Video-Kommunikation, das vor allem in der digitalen Zusammenarbeit und im Kundenkontakt eingesetzt wird. Mit Loom können Nutzer schnell und einfach Videos erstellen, um komplexe Sachverhalte zu erklären, Feedback zu geben oder Informationen visuell zu teilen – ohne lange Meetings oder E-Mails. Die intuitive Bedienung macht es sowohl für Einzelpersonen als auch Teams attraktiv.

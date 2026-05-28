@@ -1,13 +1,14 @@
 ---
 slug: sendinblue
 title: Sendinblue
-category: AI
+category: "AI Agents"
 price_model: Abonnement, Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.brevo.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sendinblue
 
 Sendinblue ist eine umfassende Plattform für Marketing-Automatisierung und Kommunikation, die sich besonders auf E-Mail-Marketing, SMS-Kampagnen und Kundenmanagement konzentriert. Mithilfe von AI-gestützten Tools unterstützt Sendinblue Unternehmen dabei, ihre Marketingprozesse zu optimieren, personalisierte Nachrichten zu erstellen und Workflows effizient zu automatisieren. Die Lösung eignet sich für kleine bis mittelgroße Unternehmen, die ihre Kundenkommunikation verbessern und automatisieren möchten, ohne dabei auf komplexe IT-Infrastruktur angewiesen zu sein.

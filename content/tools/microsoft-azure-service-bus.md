@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-service-bus
 title: Microsoft Azure Service Bus
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
 official_url: "https://azure.microsoft.com/en-us/products/service-bus"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Service Bus
 
 Microsoft Azure Service Bus ist ein hochskalierbarer Messaging-Dienst in der Cloud, der es Entwicklern ermöglicht, zuverlässige und asynchrone Kommunikation zwischen verteilten Anwendungen und Diensten herzustellen. Mit Service Bus können Nachrichten sicher und geordnet übertragen, Warteschlangen verwaltet und Ereignisse über Topics und Subscriptions verteilt werden. Dies erleichtert die Integration komplexer Systeme und unterstützt Automatisierungsprozesse in Cloud- und Hybridumgebungen.

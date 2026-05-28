@@ -1,7 +1,7 @@
 ---
 slug: quillbot
 title: QuillBot
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags:
   - ai
@@ -9,11 +9,11 @@ tags:
   - design
 official_url: 'https://quillbot.com/'
 affiliate_url: 'https://quillbot.com/'
+tier: "C"
+generated_at: "2026-05-13"
 created_at: "2026-02-03"
 popularity: 0
 ---
-
-
 # QuillBot
 
 QuillBot ist ein KI-gestütztes Schreib- und Paraphrasierungstool, das Nutzern hilft, Texte effizienter und kreativer zu gestalten. Es unterstützt bei der Umformulierung von Inhalten, verbessert die Lesbarkeit und bietet verschiedene Modi für unterschiedliche Schreibbedürfnisse. QuillBot eignet sich sowohl für Studierende, Autoren als auch für Fachkräfte, die ihre Texte optimieren möchten, ohne dabei den ursprünglichen Sinn zu verlieren.

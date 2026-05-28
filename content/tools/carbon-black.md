@@ -1,13 +1,14 @@
 ---
 slug: carbon-black
 title: Carbon Black (VMware)
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [cybersecurity, endpoint-security, xdr, enterprise]
 official_url: "https://www.broadcom.com/products/carbon-black"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Carbon Black (VMware)
 
 Carbon Black von VMware ist eine umfassende Endpoint-Security-Plattform, die speziell entwickelt wurde, um Unternehmen bei der Erkennung, Prävention und Reaktion auf Cyberangriffe zu unterstützen. Mit Fokus auf moderne Bedrohungen bietet Carbon Black eine Kombination aus Echtzeitüberwachung, Verhaltensanalyse und Threat Intelligence, um Sicherheitslücken schnell zu identifizieren und zu schließen.

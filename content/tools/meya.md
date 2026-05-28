@@ -1,13 +1,14 @@
 ---
 slug: meya
 title: Meya
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.meya.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Meya
 
 Meya ist eine vielseitige KI-Plattform, die Unternehmen und Entwicklern dabei hilft, intelligente Chatbots und Automatisierungslösungen zu erstellen. Mit einem flexiblen Freemium-Modell bietet Meya leistungsstarke Tools zur Integration von KI in Kundenservice, Marketing und interne Prozesse. Die Plattform unterstützt sowohl technische als auch weniger technische Nutzer durch eine Kombination aus visuellen Editoren und Programmierschnittstellen.

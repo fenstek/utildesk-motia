@@ -6,10 +6,11 @@ price_model: Je nach Plan
 tags: ["design", "ui", "ux", "prototyping", "collaboration"]
 official_url: "https://marvelapp.com/"
 affiliate_url: "https://marvelapp.com/"
+tier: "D"
+generated_at: "2026-05-28"
 popularity: 91
 description: Design- und Prototyping-Plattform für Wireframes, klickbare Prototypen, Tests und Handoff.
 ---
-
 # Marvel
 
 Marvel ist eine Plattform für Prototyping, Wireframes, Design-Zusammenarbeit, User Testing und Handoff.
@@ -21,7 +22,6 @@ Der Fokus liegt auf schneller Produktvisualisierung: Ideen sollen klickbar werde
 Marvel passt zu Produktteams, Gründern, UX-Designern und Stakeholdern, die Ideen schnell klickbar machen wollen. Besonders nützlich ist es, wenn frühe Flows, App-Ideen oder Website-Strukturen getestet werden sollen, bevor viel Design- oder Entwicklungsaufwand entsteht.
 
 Für große Designsysteme, komplexe Komponentenbibliotheken oder tief integrierte Produktarbeit ist Figma meist stärker. Marvel punktet bei Geschwindigkeit und einfacher Verständlichkeit.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/marvel-editorial.webp" alt="Illustration zu Marvel: Wireframes und Prototyp-Karten h?ngen an einer Design-Studiowand" loading="lazy" decoding="async" />

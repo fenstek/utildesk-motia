@@ -1,13 +1,14 @@
 ---
 slug: qlik
 title: Qlik
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://www.qlik.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Qlik
 
 Qlik ist eine leistungsstarke Business-Intelligence- und Analyseplattform, die Unternehmen dabei unterstützt, Daten aus verschiedenen Quellen zu verbinden, zu visualisieren und zu analysieren. Mit seinen KI-gestützten Funktionen ermöglicht Qlik tiefere Einblicke und datengetriebene Entscheidungen. Die Plattform bietet sowohl eine kostenlose Einstiegsversion als auch erweiterte kostenpflichtige Pläne, die sich an unterschiedliche Unternehmensgrößen und Anforderungen anpassen.

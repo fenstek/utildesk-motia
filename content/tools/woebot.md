@@ -1,13 +1,14 @@
 ---
 slug: woebot
 title: Woebot
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [mental-health, chatbot, health-tech]
 official_url: "https://woebothealth.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Woebot
 
 Woebot ist ein innovativer KI-basierter Chatbot, der zur Unterstützung der psychischen Gesundheit entwickelt wurde. Durch den Einsatz von kognitiver Verhaltenstherapie (KVT) und täglichen Gesprächen bietet Woebot eine zugängliche Möglichkeit, emotionale Unterstützung und mentale Gesundheitspflege in den Alltag zu integrieren. Die Anwendung ist besonders darauf ausgelegt, Nutzern dabei zu helfen, Stress, Angst und depressive Symptome besser zu bewältigen.

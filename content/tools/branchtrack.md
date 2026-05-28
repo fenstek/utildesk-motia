@@ -1,13 +1,14 @@
 ---
 slug: branchtrack
 title: BranchTrack
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [sales, training, simulations]
 official_url: "https://www.branchtrack.com/"
 popularity: 61
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # BranchTrack
 
 BranchTrack ist eine innovative KI-gestützte Plattform, die sich auf die Erstellung interaktiver Simulationen und Trainingsprogramme spezialisiert hat. Mit BranchTrack können Unternehmen maßgeschneiderte Lernpfade entwickeln, die insbesondere im Vertrieb und in der Mitarbeiterschulung eingesetzt werden. Die Plattform ermöglicht es, komplexe Entscheidungsprozesse realistisch abzubilden und so praxisnahe Trainingsumgebungen zu schaffen.

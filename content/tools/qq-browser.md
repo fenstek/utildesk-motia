@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, browser, web]
 official_url: "https://browser.qq.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # QQ Browser
 
 QQ Browser ist ein moderner Webbrowser, der von Tencent entwickelt wurde und sich durch eine Kombination aus Geschwindigkeit, Sicherheit und integrierten KI-Funktionen auszeichnet. Er richtet sich an Nutzer, die eine effiziente und produktive Internetnutzung anstreben, insbesondere mit Fokus auf einfache Bedienbarkeit und nützliche Zusatztools. Als Freemium-Modell bietet QQ Browser sowohl eine kostenlose Basisversion als auch erweiterte Funktionen in kostenpflichtigen Varianten an.

@@ -1,13 +1,14 @@
 ---
 slug: followupthen
 title: FollowUpThen
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [productivity, automation, workflow, crm]
 official_url: "https://www.followupthen.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # FollowUpThen
 
 FollowUpThen ist ein praktisches Tool zur Automatisierung von Erinnerungen per E-Mail, das sich besonders für die Verwaltung von Follow-ups und Aufgaben im Arbeitsalltag eignet. Es lässt sich unkompliziert in bestehende E-Mail-Systeme integrieren und unterstützt Nutzer dabei, den Überblick über wichtige Nachrichten und Termine zu behalten, ohne zusätzliche Apps öffnen zu müssen.
@@ -66,7 +67,6 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - Hilft, wichtige Aufgaben und Kundenkontakte nicht zu vergessen.
 
 - Stärker im Alltag, wenn FollowUpThen für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn Kampagnen, Leads, Zielgruppen, Reporting und verlässliche Nachverfolgung bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei FollowUpThen ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 
@@ -76,7 +76,6 @@ Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Au
 - Keine native mobile App, Nutzung erfolgt über E-Mail.
 - Datenschutz- und Sicherheitsbedenken bei der Verarbeitung von E-Mails sollten berücksichtigt werden.
 
-- Braucht klare Leitplanken, denn ohne sie fallen Probleme dort auf, wo Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind. Bei FollowUpThen ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Der Nutzen von FollowUpThen hängt stark davon ab, ob Review, Datenpflege und Verantwortlichkeiten im Team tatsächlich gelebt werden.
 
 ## Preise & Kosten

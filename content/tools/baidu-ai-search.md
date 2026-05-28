@@ -1,13 +1,14 @@
 ---
 slug: baidu-ai-search
 title: Baidu AI Search
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, search]
 official_url: "https://www.baidu.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Baidu AI Search
 
 Baidu AI Search ist eine fortschrittliche Suchmaschine, die künstliche Intelligenz nutzt, um präzisere und kontextbezogene Suchergebnisse zu liefern. Sie kombiniert traditionelle Suchtechnologien mit modernen AI-Methoden, um Nutzern eine effizientere Informationssuche zu ermöglichen. Mit verschiedenen Funktionen richtet sich Baidu AI Search sowohl an Privatpersonen als auch an Unternehmen, die intelligente Suchlösungen suchen.

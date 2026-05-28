@@ -1,13 +1,14 @@
 ---
 slug: klaviyo
 title: Klaviyo
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [email, marketing, crm, automation]
 official_url: "https://www.klaviyo.com/de/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Klaviyo
 
 Klaviyo ist eine leistungsstarke Marketing-Automation-Plattform, die sich speziell auf E-Mail-Marketing und Customer-Relationship-Management (CRM) konzentriert. Mit Fokus auf datengetriebene Kampagnen hilft Klaviyo Unternehmen, personalisierte und zielgerichtete Kommunikation zu gestalten, um Kundenbindung und Umsatz zu steigern. Die Plattform richtet sich vor allem an Online-Händler und Marketer, die ihre Marketingaktivitäten automatisieren und optimieren möchten.

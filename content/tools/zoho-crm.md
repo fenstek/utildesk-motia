@@ -1,13 +1,14 @@
 ---
 slug: zoho-crm
 title: Zoho CRM
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Je nach Plan
 tags: [crm, sales, productivity]
 official_url: "https://www.zoho.com/de/crm/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zoho CRM
 
 Zoho CRM ist eine umfassende Customer-Relationship-Management-Lösung, die Unternehmen dabei unterstützt, ihre Kundenbeziehungen zu optimieren, den Vertrieb zu automatisieren und die Produktivität zu steigern. Mit intelligenten Automatisierungsfunktionen und einer benutzerfreundlichen Oberfläche bietet Zoho CRM eine flexible Plattform, die sich an die Bedürfnisse verschiedenster Branchen und Unternehmensgrößen anpasst.

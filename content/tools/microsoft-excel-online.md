@@ -6,8 +6,9 @@ price_model: "Freemium"
 tags: [spreadsheet,productivity,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/excel"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Excel Online
 
 Microsoft Excel Online ist die webbasierte Version der bekannten Tabellenkalkulationssoftware Microsoft Excel. Es ermöglicht Nutzern, Tabellen, Diagramme und Datenanalysen direkt im Browser zu erstellen, zu bearbeiten und gemeinsam mit anderen in Echtzeit zu arbeiten – ohne eine lokale Installation. Die Integration in Microsoft 365 und die Cloud-Anbindung sorgen für einfachen Zugriff von verschiedenen Geräten aus und nahtlose Zusammenarbeit.

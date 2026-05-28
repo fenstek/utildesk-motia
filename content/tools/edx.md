@@ -1,13 +1,14 @@
 ---
 slug: edx
 title: edX
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [education, courses, career, learning]
 official_url: "https://www.edx.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # edX
 
 edX ist eine führende Online-Lernplattform, die hochwertige Kurse von renommierten Universitäten und Institutionen weltweit anbietet. Sie ermöglicht es Lernenden, neue Fähigkeiten zu erwerben, sich beruflich weiterzuentwickeln oder einfach ihr Wissen zu erweitern – alles bequem von zu Hause aus. Die Plattform bietet eine breite Palette an Themen, darunter auch zahlreiche Kurse im Bereich Künstliche Intelligenz (AI).

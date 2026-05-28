@@ -1,13 +1,14 @@
 ---
 slug: snagit
 title: Snagit
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.techsmith.com/snagit/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Snagit
 
 Snagit ist ein vielseitiges Bildschirmaufnahme- und Screenshot-Tool, das speziell für die einfache Erstellung, Bearbeitung und Weitergabe von visuellen Inhalten entwickelt wurde. Es kombiniert leistungsstarke Funktionen zur Bildschirmaufnahme mit intuitiven Bearbeitungswerkzeugen, die sowohl für Einzelanwender als auch für Teams nützlich sind. Die Integration von Automatisierungsfunktionen erleichtert die tägliche Arbeit und spart Zeit bei der Dokumentation und Kommunikation.

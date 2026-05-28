@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [calendar, productivity, planning, collaboration]
 official_url: "https://www.notion.com/product/calendar"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Notion Calendar
 
 Notion Calendar ist ein flexibles und integriertes Kalendertool innerhalb der Notion-Plattform, das die Organisation von Terminen, Aufgaben und Projekten vereinfacht. Es verbindet Kalenderfunktionalitäten mit der leistungsstarken Notiz- und Datenbankstruktur von Notion, wodurch Nutzer ihre Planung individuell anpassen können. Ideal für Einzelpersonen und Teams, die ihre Produktivität steigern und Zusammenarbeit optimieren möchten.

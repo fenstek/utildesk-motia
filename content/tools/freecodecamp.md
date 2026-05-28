@@ -1,13 +1,14 @@
 ---
 slug: freecodecamp
 title: freeCodeCamp
-category: Developer
+category: "Entwickler-Tools"
 price_model: Kostenlos, Open Source
 tags: [education, coding, developer-tools, open-source]
 official_url: "https://www.freecodecamp.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # freeCodeCamp
 
 freeCodeCamp ist eine kostenlose, quelloffene Lernplattform, die darauf abzielt, Menschen weltweit beim Erlernen von Programmier- und Webentwicklungskompetenzen zu unterstützen. Mit interaktiven Kursen, Projekten und Zertifizierungen bietet freeCodeCamp eine praxisnahe Möglichkeit, Programmieren von Grund auf zu lernen und die erworbenen Fähigkeiten in realen Anwendungen zu vertiefen.

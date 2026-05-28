@@ -6,6 +6,8 @@ price_model: Open Source
 tags: [meetings, video, education, open-source]
 official_url: "https://bigbluebutton.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # BigBlueButton
 

@@ -1,12 +1,14 @@
 ---
 slug: ocenaudio
 title: Ocenaudio
-category: Audio
+category: "Audio & Video"
 price_model: "Kostenlos"
 tags: [audio, workflow]
 official_url: "https://www.ocenaudio.com/"
 popularity: 0
 description: "Ocenaudio ist ein kostenloser Audio-Editor für schnelle Schnitte, Aufnahmeprüfung und einfache Bearbeitung ohne komplexe Studio-Umgebung."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # Ocenaudio
 

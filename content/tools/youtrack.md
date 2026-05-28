@@ -1,13 +1,14 @@
 ---
 slug: youtrack
 title: YouTrack
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [project-management, collaboration, developer-tools]
 official_url: "https://www.jetbrains.com/youtrack/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # YouTrack
 
 YouTrack ist ein flexibles und leistungsstarkes Tool für Projektmanagement und Issue-Tracking, das speziell für Entwicklerteams und agile Arbeitsmethoden entwickelt wurde. Es unterstützt Teams dabei, Aufgaben effizient zu organisieren, den Fortschritt zu verfolgen und die Zusammenarbeit zu verbessern. Mit intelligenten Features wie anpassbaren Workflows, Zeiterfassung und umfangreichen Suchmöglichkeiten erleichtert YouTrack die Verwaltung komplexer Projekte.

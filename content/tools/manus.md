@@ -7,6 +7,8 @@ tags: [ai, agent, automation, research]
 official_url: "https://manus.im/"
 popularity: 34
 description: Manus steht für agentische KI-Workflows, bei denen Aufgaben über mehrere Schritte geplant, ausgeführt und zusammengeführt werden.
+tier: "C"
+generated_at: "2026-05-27"
 ---
 # Manus
 

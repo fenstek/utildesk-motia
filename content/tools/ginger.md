@@ -1,13 +1,14 @@
 ---
 slug: ginger
 title: Ginger
-category: AI
+category: "AI Writing"
 price_model: Je nach Plan
 tags: [writing, productivity, automation, assistant]
 official_url: "https://www.gingersoftware.com/"
 popularity: 48
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Ginger
 
 Ginger ist eine KI-gestützte Schreib- und Produktivitätssoftware, die Nutzern dabei hilft, ihre Texte zu optimieren, Fehler zu korrigieren und effizienter zu arbeiten. Die Anwendung kombiniert Grammatik- und Rechtschreibprüfung mit erweiterten Funktionen wie Stilverbesserungen und Übersetzungen, um das Schreiben in mehreren Sprachen zu erleichtern. Ginger richtet sich an Menschen, die ihre schriftliche Kommunikation verbessern und gleichzeitig Zeit sparen möchten.

@@ -1,12 +1,14 @@
 ---
 slug: sap-successfactors
 title: SAP SuccessFactors
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [hr, hcm, talent-management]
 official_url: "https://www.sap.com/products/hcm/what-is-sap-successfactors.html"
 popularity: 0
 description: "SAP SuccessFactors ist ein Business- und Operations-Plattform für Human-Capital-Management für HR-Prozesse, Talentmanagement, Recruiting und Mitarbeiterentwicklung."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # SAP SuccessFactors
 
@@ -19,7 +21,6 @@ Bei SAP SuccessFactors lohnt sich ein Blick auf den Alltag nach der ersten Woche
 Business-Tools lösen selten ein einzelnes Problem. Sie verändern Übergaben, Zuständigkeiten und die Art, wie Kunden oder Teams Arbeit wahrnehmen. Für SAP SuccessFactors sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
 
 Besonders passend ist SAP SuccessFactors für größere Unternehmen, HR-Abteilungen, People Operations und internationale Organisationen. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sap-successfactors-editorial.webp" alt="Illustration zu SAP SuccessFactors: Ein HR-Garten zeigt Einstellung, Onboarding, Lernen, Feedback und Bindung als Stationen" loading="lazy" decoding="async" />

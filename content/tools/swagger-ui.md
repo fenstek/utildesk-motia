@@ -1,14 +1,15 @@
 ---
 slug: swagger-ui
 title: Swagger UI
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [api, docs, development]
 official_url: "https://swagger.io/"
 popularity: 0
 disabled: true
+tier: "C"
+generated_at: "2026-05-19"
 ---
-
 # Swagger UI
 
 Swagger UI ist ein Open-Source-Tool, das Entwicklern hilft, interaktive und leicht verständliche API-Dokumentationen zu erstellen und anzuzeigen. Es visualisiert RESTful APIs, basierend auf OpenAPI-Spezifikationen, und ermöglicht es, API-Endpunkte direkt im Browser zu testen. Dadurch wird die Entwicklung und Nutzung von APIs effizienter und transparenter gestaltet.
@@ -46,7 +47,6 @@ Swagger UI richtet sich an Entwickler, API-Designer und Teams, die APIs erstelle
 - Keine integrierten erweiterten Analyse- oder Monitoring-Funktionen.
 - UI-Design ist funktional, aber weniger modern im Vergleich zu einigen kommerziellen Lösungen.
 - Benötigt technische Kenntnisse für tiefergehende Anpassungen.
-
 
 ## Was im Alltag wirklich zählt
 

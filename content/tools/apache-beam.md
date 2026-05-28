@@ -1,13 +1,14 @@
 ---
 slug: apache-beam
 title: Apache Beam
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [data,streaming,open-source,developer-tools]
 official_url: "https://beam.apache.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Apache Beam
 
 Apache Beam ist ein leistungsstarkes Open-Source-Framework zur einheitlichen Entwicklung von Datenverarbeitungs-Pipelines. Es ermöglicht Entwicklern, sowohl Batch- als auch Streaming-Datenverarbeitung in einem einzigen Modell zu erstellen, das auf verschiedenen Ausführungsumgebungen ausgeführt werden kann. Apache Beam unterstützt mehrere Programmiersprachen und lässt sich flexibel in unterschiedliche Backend-Engines wie Apache Flink, Apache Spark oder Google Cloud Dataflow integrieren.

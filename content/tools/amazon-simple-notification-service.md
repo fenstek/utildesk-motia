@@ -1,13 +1,14 @@
 ---
 slug: amazon-simple-notification-service
 title: Amazon Simple Notification Service (SNS)
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
 official_url: "https://aws.amazon.com/sns/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Amazon Simple Notification Service (SNS)
 
 Amazon Simple Notification Service (SNS) ist ein skalierbarer und flexibler Cloud-basierter Messaging-Dienst von Amazon Web Services (AWS). Er ermöglicht die schnelle und zuverlässige Zustellung von Nachrichten an eine Vielzahl von Endpunkten wie E-Mail, SMS, mobile Geräte und andere Dienste. SNS ist besonders nützlich für Entwickler, die automatisierte Benachrichtigungen oder Ereignis-getriebene Kommunikation in verteilten Systemen integrieren möchten.

@@ -1,13 +1,14 @@
 ---
 slug: postgresql
 title: PostgreSQL
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [database, open-source, developer-tools, sql]
 official_url: "https://www.postgresql.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # PostgreSQL
 
 PostgreSQL ist ein leistungsstarkes, objektrelationales Datenbankmanagementsystem (ORDBMS), das für seine Stabilität, Flexibilität und Erweiterbarkeit bekannt ist. Als Open-Source-Software bietet es Entwicklern und Unternehmen eine robuste Plattform zur Verwaltung relationaler Daten mit SQL-Unterstützung und zahlreichen erweiterten Funktionen. PostgreSQL eignet sich sowohl für kleine Projekte als auch für komplexe Anwendungen mit hohem Datenvolumen.

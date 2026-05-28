@@ -1,14 +1,15 @@
 ---
 slug: azure-stream-analytics
 title: Azure Stream Analytics
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, analytics, streaming, cloud]
 official_url: "https://azure.microsoft.com/en-us/products/stream-analytics/"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Azure Stream Analytics
 
 Azure Stream Analytics ist Microsofts verwalteter Dienst für Streaming-Abfragen in Azure. Er nimmt kontinuierliche Daten aus Quellen wie Event Hubs, IoT Hub oder Blob Storage auf, verarbeitet sie mit SQL-ähnlichen Abfragen und schreibt Ergebnisse in Analytics-, Monitoring- oder Automationsziele. Spannend ist der Dienst vor allem, wenn Teams Echtzeitlogik betreiben wollen, ohne selbst ein komplettes Stream-Processing-Cluster zu verwalten.
@@ -50,7 +51,6 @@ Azure Stream Analytics richtet sich an Data Engineers, Cloud-Teams und Entwickle
 - Eingeschränkte Anpassungsmöglichkeiten außerhalb der vorgegebenen Funktionen.
 - Einarbeitung in die spezifische Abfragesprache und Azure-Umgebung erforderlich.
 - Für sehr komplexe Analysen kann zusätzliche Verarbeitung außerhalb von Stream Analytics nötig sein.
-
 
 ## Was im Alltag wirklich zählt
 

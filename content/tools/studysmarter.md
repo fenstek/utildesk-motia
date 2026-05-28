@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [education,learning,productivity,ai]
 official_url: "https://www.studysmarter.de/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # StudySmarter
 
 StudySmarter ist eine innovative Lernplattform, die darauf abzielt, das Lernen effizienter und produktiver zu gestalten. Mit einer Kombination aus interaktiven Lernmaterialien, KI-gestützten Funktionen und einer großen Community unterstützt StudySmarter Schüler, Studenten und Berufstätige dabei, ihre Lernziele zu erreichen und den Lernprozess zu optimieren.

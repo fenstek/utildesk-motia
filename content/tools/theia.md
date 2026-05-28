@@ -1,12 +1,14 @@
 ---
 slug: theia
 title: Theia
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [ide, developer-tools, open-source]
 official_url: "https://theia-ide.org/"
 popularity: 0
 description: Theia ist ein Open-Source-Framework für Desktop- und Cloud-IDEs, das Entwicklerplattformen als erweiterbare Workbench ermöglicht.
+tier: "C"
+generated_at: "2026-05-25"
 ---
 # Theia
 
@@ -19,8 +21,6 @@ Geeignet für Plattformteams, Tool-Hersteller und Organisationen, die eigene IDE
 Theia ist geeignet für Plattformteams, Tool-Hersteller, Enterprise-IT und Open-Source-Projekte, die eine eigene Entwicklerumgebung bauen möchten. Es ist weniger ein Download für einzelne Entwickler, sondern ein Framework für Cloud-IDEs, Desktop-Workbenches und spezialisierte Developer-Portale.
 
 Der Einsatz lohnt sich, wenn Kontrolle über Extensions, Branding, Workspaces, Authentifizierung und Integrationen wichtig ist. Wer einfach nur programmieren will, ist mit VS Code, JetBrains oder einer fertigen Cloud-IDE schneller. Theia ist spannend, wenn die IDE selbst Teil des Produkts oder der Plattform ist.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/theia-editorial.webp" alt="Illustration zu theia: Eine Astronomin erlebt eine Offenbarung in den Sternen" loading="lazy" decoding="async" />

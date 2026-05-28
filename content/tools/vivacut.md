@@ -1,13 +1,14 @@
 ---
 slug: vivacut
 title: VivaCut
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.vivacut.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # VivaCut
 
 VivaCut ist ein vielseitiger Video-Editor, der sich besonders an Nutzer richtet, die professionelle Videos auf mobilen Geräten oder Desktop bearbeiten möchten. Mit einer Mischung aus benutzerfreundlichen Werkzeugen und fortschrittlichen Features unterstützt VivaCut sowohl Anfänger als auch erfahrene Videokünstler bei der Erstellung ansprechender Videos für soziale Medien, Präsentationen oder persönliche Projekte.

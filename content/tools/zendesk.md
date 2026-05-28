@@ -1,13 +1,14 @@
 ---
 slug: zendesk
 title: Zendesk
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, helpdesk, ticketing]
 official_url: "https://www.zendesk.de/#georedirect"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # Zendesk
 
 Zendesk ist eine cloudbasierte Kundenservice-Plattform, die Unternehmen dabei unterstützt, den Support effizient zu organisieren und Kundenanfragen über verschiedene Kanäle zu verwalten. Mit integrierten KI-Funktionen und einem benutzerfreundlichen Interface ermöglicht Zendesk eine nahtlose Kommunikation zwischen Support-Teams und Kunden.

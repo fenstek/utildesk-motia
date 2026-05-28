@@ -1,11 +1,13 @@
 ---
 slug: sap-analytics-cloud
 title: SAP Analytics Cloud
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: ["data", "analytics", "productivity", "automation"]
 official_url: "https://www.sap.com/products/data-cloud/cloud-analytics.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # SAP Analytics Cloud
 
@@ -26,7 +28,6 @@ Der beste Praxistest für SAP Analytics Cloud ist klein, aber echt. Ein Team sol
 - **Nutzenhebel:** Finanz-, Planungs- und operative Daten in gemeinsamen Modellen zu analysieren.
 - **Rollout-Frage:** welche Datenmodelle, Rollen und Planungszyklen verbindlich sind.
 - **Bremse:** bei schwacher SAP-Datenbasis komplexe Modellierung statt Erkenntnis erzeugt.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sap-analytics-cloud-editorial.webp" alt="Illustration zu SAP Analytics Cloud: Acryl-Tuerme und Prognoseobjekte treffen sich auf einem Entscheidungstisch" loading="lazy" decoding="async" />

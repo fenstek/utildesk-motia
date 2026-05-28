@@ -1,13 +1,14 @@
 ---
 slug: blue-prism
 title: Blue Prism
-category: Automation
+category: "Automatisierung"
 price_model: Je nach Plan
 tags: [automation, rpa, workflow]
 official_url: "https://www.blueprism.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Blue Prism
 
 Blue Prism ist eine führende Robotic Process Automation (RPA)-Plattform, die Unternehmen dabei unterstützt, wiederkehrende Geschäftsprozesse zu automatisieren. Durch den Einsatz von Software-Robotern ermöglicht Blue Prism die Steigerung der Effizienz, Reduzierung von Fehlern und Entlastung der Mitarbeiter von monotonen Aufgaben. Die Plattform ist bekannt für ihre Skalierbarkeit, Sicherheit und Integration in bestehende IT-Landschaften.

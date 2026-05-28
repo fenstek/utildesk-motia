@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Adobe Photoshop
 
 Adobe Photoshop ist eine weltweit anerkannte Software zur Bildbearbeitung und digitalen Gestaltung. Sie bietet eine Vielzahl von Werkzeugen für professionelle Fotografen, Designer und Kreative, die hochwertige Grafiken, Fotos und digitale Kunstwerke erstellen möchten. Dank regelmäßiger Updates und Integration von KI-Funktionen bleibt Photoshop stets auf dem neuesten Stand der Technik.

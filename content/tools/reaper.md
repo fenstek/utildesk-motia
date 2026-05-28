@@ -1,13 +1,14 @@
 ---
 slug: reaper
 title: Reaper
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://ghostsecurity.com/"
 popularity: 20
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Reaper
 
 Reaper ist ein KI-gestütztes Tool, das entwickelt wurde, um Arbeitsabläufe durch Automatisierung und intelligente Assistenz zu optimieren. Es unterstützt Nutzer dabei, repetitive Aufgaben effizienter zu gestalten und komplexe Prozesse zu vereinfachen. Dabei legt Reaper besonderen Wert auf Anpassungsfähigkeit und Integration in verschiedene Arbeitsumgebungen.

@@ -1,13 +1,14 @@
 ---
 slug: convertkit
 title: ConvertKit
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://kit.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # ConvertKit
 
 ConvertKit ist eine leistungsstarke E-Mail-Marketing- und Automatisierungsplattform, die speziell für Kreative, Blogger und kleine Unternehmen entwickelt wurde. Das Tool unterstützt Nutzer dabei, ihre E-Mail-Listen zu verwalten, automatisierte Workflows zu erstellen und gezielte Kampagnen durchzuführen. Durch eine intuitive Benutzeroberfläche und zahlreiche Automatisierungsfunktionen hilft ConvertKit, den Workflow zu optimieren und die Kundenbindung zu verbessern.

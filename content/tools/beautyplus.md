@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai,design,image]
 official_url: "https://www.beautyplus.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # BeautyPlus
 
 BeautyPlus ist eine vielseitige Design-App, die sich auf die Bearbeitung und Verschönerung von Bildern spezialisiert hat. Mit einer Kombination aus KI-gestützten Tools und benutzerfreundlichen Funktionen bietet BeautyPlus sowohl Hobbyfotografen als auch professionellen Designern die Möglichkeit, Fotos schnell und einfach zu optimieren. Die App ist besonders beliebt für Portrait-Retusche, kreative Filter und Effekte sowie für die Anpassung von Bildern für soziale Medien.

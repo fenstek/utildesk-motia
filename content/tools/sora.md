@@ -1,13 +1,14 @@
 ---
 slug: sora
 title: Sora
-category: Video
+category: "Audio & Video"
 price_model: 
 tags: ["video"]
 official_url: "https://openai.com/sora"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sora
 
 Sora ist eine vielseitige Video-Software, die speziell für die Erstellung, Bearbeitung und Verwaltung von Videoinhalten entwickelt wurde. Ob für professionelle Videoproduzenten, Content Creator oder Unternehmen – Sora bietet eine Reihe von Tools, die den gesamten Videoprozess effizient unterstützen. Die intuitive Benutzeroberfläche erleichtert den Einstieg, während leistungsstarke Funktionen auch komplexe Projekte ermöglichen.
@@ -67,7 +68,6 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - Regelmäßige Updates und Verbesserungen.
 
 - Stärker im Alltag, wenn Sora für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Hilft Teams besonders dort, wo visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Bei Sora ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 

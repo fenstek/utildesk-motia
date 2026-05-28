@@ -1,13 +1,14 @@
 ---
 slug: kore-ai
 title: Kore.ai
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [conversational-ai, chatbots, enterprise-ai]
 official_url: "https://www.kore.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Kore.ai
 
 Kore.ai ist eine führende Plattform für Conversational AI, die Unternehmen dabei unterstützt, intelligente Chatbots und virtuelle Assistenten zu erstellen und zu verwalten. Die Plattform kombiniert natürliche Sprachverarbeitung (NLP), maschinelles Lernen und Automatisierung, um personalisierte und effiziente Kundenerlebnisse über verschiedene Kanäle hinweg zu ermöglichen. Kore.ai richtet sich vor allem an Unternehmen, die ihre Kundenkommunikation und interne Prozesse durch KI-gesteuerte Interaktionen verbessern möchten.
@@ -19,20 +20,6 @@ Kore.ai eignet sich besonders für mittlere und große Unternehmen, die komplexe
 Kore.ai ist besonders nützlich für Support-, Sales-, Kommunikations- und Service-Teams, die viele Kontakte nachvollziehbar steuern müssen. Der Nutzen sollte an einem realen Prozess gemessen werden, in dem Erreichbarkeit, Antwortqualität, Gesprächsübergaben und saubere Nachverfolgung nicht nur schneller, sondern auch besser erklärbar werden.
 
 Vor einer breiteren Einführung von Kore.ai lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
-
-## Redaktionelle Einschätzung
-
-Kore.ai sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Ein belastbarer Pilot für Kore.ai beginnt mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung. Danach geht es nicht um Bauchgefühl, sondern darum, ob Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Kore.ai:** Vor dem Rollout sollten Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Kore.ai:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Kore.ai:** Der Einsatz kippt in Zusatzarbeit, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/kore-ai-editorial.webp" alt="Illustration zu Kore.ai: Enterprise-Chatbot-Flows verbinden Intents, Kanaele und Eskalationen" loading="lazy" decoding="async" />
-</figure>
 
 ## Hauptfunktionen
 
@@ -46,10 +33,6 @@ Ein belastbarer Pilot für Kore.ai beginnt mit einem echten Kontaktfall mit Eing
 - **Sicherheits- und Compliance-Funktionen:** Schutz sensibler Daten durch Verschlüsselung und Einhaltung von Datenschutzstandards.
 - **Sprach- und Textbasierte Interaktionen:** Unterstützung von Sprachbefehlen und Textchat in mehreren Sprachen.
 - **Enterprise-Skalierbarkeit:** Plattformarchitektur ausgelegt für hohe Nutzerzahlen und komplexe Anforderungen.
-
-- **Praxislauf mit Kore.ai:** Das Tool sollte mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Kore.ai:** Das Team braucht eine einfache Methode, um Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Kore.ai:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

@@ -1,11 +1,13 @@
 ---
 slug: amazon-athena
 title: Amazon Athena
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://aws.amazon.com/athena/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-10"
 ---
 # Amazon Athena
 

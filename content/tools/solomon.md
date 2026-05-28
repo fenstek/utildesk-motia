@@ -1,13 +1,14 @@
 ---
 slug: solomon
 title: Solomon
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [education, assistant, productivity, ai]
 official_url: "https://usesolomon.ai/"
 popularity: 16
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Solomon
 
 Solomon ist ein KI-gestütztes Tool, das speziell entwickelt wurde, um Bildung, Produktivität und persönliche Assistenz zu fördern. Es kombiniert fortschrittliche künstliche Intelligenz mit benutzerfreundlichen Funktionen, die Anwendern helfen, ihre Aufgaben effizienter zu organisieren und zu erledigen. Ob im Bildungsbereich, im Arbeitsalltag oder für die persönliche Nutzung – Solomon unterstützt bei der Informationsbeschaffung, der Planung und dem kreativen Arbeiten.
@@ -68,7 +69,6 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Regelmäßige Updates und Verbesserungen
 
 - Stärker im Alltag, wenn Solomon für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Solomon ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 
@@ -77,7 +77,6 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Datenschutzbedenken bei sensiblen Daten müssen individuell bewertet werden
 - Lernkurve bei komplexeren Funktionen möglich
 
-- Braucht klare Leitplanken, denn ohne sie fallen Probleme dort auf, wo Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden. Bei Solomon ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Der Nutzen von Solomon hängt stark davon ab, ob Review, Datenpflege und Verantwortlichkeiten im Team tatsächlich gelebt werden.
 
 ## Preise & Kosten

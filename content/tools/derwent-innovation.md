@@ -1,12 +1,14 @@
 ---
 slug: derwent-innovation
 title: Derwent Innovation
-category: AI
+category: "AI Research"
 price_model: Individuelles Angebot
 tags: [research,patents,analytics,enterprise]
 official_url: "https://clarivate.com/intellectual-property/derwent/patent-search/"
 popularity: 0
 description: "Derwent Innovation ist eine Patent-Rechercheplattform für IP-Analyse, Technologiebeobachtung und Wettbewerbsinformationen."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Derwent Innovation
 

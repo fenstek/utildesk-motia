@@ -6,8 +6,9 @@ price_model: Nutzungsbasiert
 tags: [translation, api, microsoft-azure]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation-overview"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Translator Text API
 
 Die Microsoft Translator Text API ist ein cloudbasierter Dienst, der Entwicklern ermöglicht, leistungsstarke Übersetzungsfunktionen in ihre Anwendungen, Websites oder Systeme zu integrieren. Mit Unterstützung für zahlreiche Sprachen und kontinuierlich verbesserten KI-Modellen bietet die API schnelle, genaue und skalierbare Übersetzungen, die besonders in globalen und mehrsprachigen Umgebungen von Vorteil sind.

@@ -1,13 +1,14 @@
 ---
 slug: auphonic
 title: Auphonic
-category: AI
+category: "AI Audio"
 price_model: Je nach Plan
 tags: [audio, automation, productivity, transcription, video]
 official_url: "https://auphonic.com/"
 popularity: 65
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Auphonic
 
 Auphonic ist ein KI-gestütztes Tool zur automatischen Audioproduktion und -optimierung. Es hilft Nutzern, Audio- und Videodateien schnell zu verbessern, zu transkribieren und für verschiedene Plattformen aufzubereiten. Besonders geeignet ist Auphonic für Podcaster, Journalisten, Content-Ersteller und alle, die Wert auf hochwertige Tonqualität legen, ohne viel Zeit mit manueller Nachbearbeitung zu verbringen.

@@ -1,14 +1,15 @@
 ---
 title: Amazon Rekognition
 slug: amazon-rekognition
-category: AI
+category: "AI Coding"
 price_model: Freemium
 tags: ["video", "automation"]
 official_url: "https://aws.amazon.com/rekognition/"
 created_at: 2026-02-13
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Amazon Rekognition
 
 Amazon Rekognition ist ein cloudbasierter Dienst von Amazon Web Services (AWS), der leistungsstarke KI-gestützte Bilderkennung und Videoanalyse bietet. Mit Hilfe von maschinellem Lernen kann Rekognition Gesichter, Objekte, Szenen und Aktivitäten in Bildern und Videos automatisch erkennen und analysieren. Durch seine Skalierbarkeit und einfache Integration eignet sich das Tool sowohl für Entwickler als auch Unternehmen, die visuelle Inhalte intelligent auswerten möchten.

@@ -1,13 +1,14 @@
 ---
 slug: grafana
 title: Grafana
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [monitoring, observability, dashboards]
 official_url: "https://grafana.com/"
 popularity: 92
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Grafana
 
 Grafana ist eine Plattform für Dashboards, Monitoring und Observability. Sie macht Metriken, Logs, Traces und andere Zeitreihendaten sichtbar, damit Teams Systeme nicht nur betreiben, sondern verstehen können.
@@ -17,7 +18,6 @@ Der eigentliche Wert eines Grafana-Dashboards liegt nicht in schönen Kurven, so
 ## Für wen ist Grafana geeignet?
 
 Geeignet ist Grafana für DevOps, SRE, Plattformteams, Entwickler, Datenbank- und Infrastrukturverantwortliche. Auch Business-Teams können profitieren, wenn Zeitreihendaten und operative Kennzahlen nachvollziehbar visualisiert werden sollen.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/grafana-editorial.webp" alt="Illustration zu Grafana: Datenkonstellationen leuchten ?ber einem Observability-Kontrollraum" loading="lazy" decoding="async" />

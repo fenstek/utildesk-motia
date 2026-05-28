@@ -1,13 +1,15 @@
 ---
 slug: google-ai
 title: Google AI
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://ai.google/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-18"
+mentionedIn: ["perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 ---
-
 # Google AI
 
 Google AI ist eine umfassende Plattform und Sammlung von Tools, die künstliche Intelligenz (KI) und maschinelles Lernen (ML) zugänglich machen. Entwickelt von Google, bietet die Plattform Technologien und Dienste, die es Unternehmen, Entwicklern und Forschern ermöglichen, intelligente Anwendungen zu erstellen, Daten zu analysieren und Automatisierungsprozesse zu optimieren. Google AI kombiniert modernste Algorithmen, leistungsstarke Cloud-Infrastruktur und benutzerfreundliche Schnittstellen.

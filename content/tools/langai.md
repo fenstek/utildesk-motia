@@ -1,15 +1,16 @@
 ---
 slug: langai
 title: LangAI
-category: Schreiben & Content
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["language", "learning", "chatbot", "assistant", "education"]
 official_url: "https://langai.io/"
 affiliate_url: "https://langai.io/"
+tier: "C"
+generated_at: "2026-05-15"
 popularity: 0
 description: KI-Sprachlern-App mit Vokabelaufbau, Aussprachefeedback und realistischen Dialogübungen.
 ---
-
 # LangAI
 
 LangAI ist eine Sprachlern-App mit KI-Dialogen, Aussprachefeedback und einem Fokus auf häufige Wörter für schnelle Alltagskommunikation.
@@ -21,7 +22,6 @@ Statt nur Karteikarten abzufragen, will LangAI Lernende früh ins Sprechen bring
 LangAI passt zu Menschen, die Sprache aktiv üben wollen, aber nicht immer Gesprächspartner, Kurszeiten oder Mut für echte Gespräche haben. Besonders sinnvoll ist es für Lernende, die Aussprache, spontane Formulierungen und Feedback regelmäßig trainieren möchten.
 
 Weniger passend ist LangAI als alleiniger Sprachkurs. Grammatik, Lesen, Hören, Schreiben und echte Kommunikation müssen weiterhin Teil des Lernplans bleiben.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/langai-editorial.webp" alt="Illustration zu LangAI: ein Caf?-Tisch mit Sprachblasen, Lernkarten und Aussprachewellen" loading="lazy" decoding="async" />

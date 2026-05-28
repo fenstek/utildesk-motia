@@ -1,13 +1,14 @@
 ---
 slug: vllo
 title: VLLO
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [video, editing, mobile, content]
 official_url: "https://www.vllo.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # VLLO
 
 VLLO ist eine benutzerfreundliche Videobearbeitungs-App, die speziell für mobile Geräte entwickelt wurde. Sie ermöglicht es Anwendern, schnell und einfach professionelle Videos zu erstellen, zu bearbeiten und zu teilen – ganz ohne umfangreiche Vorkenntnisse. Dank einer intuitiven Oberfläche und vielseitigen Funktionen eignet sich VLLO sowohl für Anfänger als auch für fortgeschrittene Content-Ersteller.

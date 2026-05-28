@@ -1,13 +1,14 @@
 ---
 slug: modal
 title: Modal
-category: Cloud
+category: "AI Infrastructure"
 price_model: 
 tags: ["automation", "data", "api"]
 official_url: "https://modal.com"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Modal
 
 Modal ist eine Cloud-basierte Plattform, die speziell entwickelt wurde, um Entwicklern und Unternehmen die Ausführung von rechenintensiven Anwendungen in der Cloud zu erleichtern. Durch die Bereitstellung skalierbarer Infrastruktur und einfacher Integration ermöglicht Modal eine effiziente Verarbeitung großer Datenmengen und komplexer Workloads, ohne dass lokale Ressourcen überlastet werden.

@@ -1,13 +1,14 @@
 ---
 slug: toongineer-cartoonizer
 title: Toongineer Cartoonizer
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [image, cartoonizer, photo, editing]
 official_url: "https://vanceai.com/toongineer-cartoonizer/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Toongineer Cartoonizer
 
 Toongineer Cartoonizer ist ein KI-gestütztes Online-Tool, das Fotos automatisch in Cartoon-ähnliche Illustrationen verwandelt. Es eignet sich besonders für Nutzer, die ohne großen Aufwand kreative und künstlerische Bildbearbeitungen erstellen möchten. Durch die Nutzung fortschrittlicher Algorithmen verwandelt Toongineer Cartoonizer einfache Porträts oder Landschaftsbilder in ansprechende Cartoons, die sich für Social Media, persönliche Projekte oder professionelle Präsentationen eignen.

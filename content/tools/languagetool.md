@@ -1,13 +1,14 @@
 ---
 slug: languagetool
 title: LanguageTool
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: [writing, productivity, automation, education]
 official_url: "https://languagetool.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # LanguageTool
 
 LanguageTool ist ein KI-gestütztes Tool zur Rechtschreib-, Grammatik- und Stilprüfung, das sich für verschiedene Sprachen eignet. Es unterstützt Nutzer dabei, Texte klarer, fehlerfreier und professioneller zu gestalten. Das Tool ist besonders nützlich für Autoren, Studenten, Lehrer und alle, die regelmäßig Texte verfassen oder korrigieren.
@@ -27,20 +28,6 @@ LanguageTool ist besonders nützlich für Lernende, Lehrende und Wissensarbeitst
 
 LanguageTool gewinnt vor allem dann, wenn der Einsatz bewusst eng gestartet wird: ein klarer Zweck, ein überschaubarer Daten- oder Aufgabenraum und ein Review, das nicht erst nach Problemen entsteht.
 
-## Redaktionelle Einschätzung
-
-LanguageTool sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-LanguageTool sollte zuerst in einer echten Lerneinheit mit Ziel, Aufgabe, Feedback, Wiederholung und kurzer Auswertung zeigen, ob es trägt. Erst wenn Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für LanguageTool:** Vor dem Rollout sollten Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für LanguageTool:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei LanguageTool:** Kritisch wird es, wenn Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/languagetool-editorial.webp" alt="Illustration zu LanguageTool: Dokumentkarten laufen durch Grammatik-, Stil- und Mehrsprachigkeitspruefung" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Rechtschreibprüfung** in mehreren Sprachen  
@@ -52,10 +39,6 @@ LanguageTool sollte zuerst in einer echten Lerneinheit mit Ziel, Aufgabe, Feedba
 - **Automatische Erkennung von Fehlerarten** und Vorschläge zur Korrektur  
 - **Plagiatsprüfung** (je nach Plan und Verfügbarkeit)  
 - **Team- und Kollaborationsfunktionen** für gemeinsame Textbearbeitung
-
-- **Praxislauf mit LanguageTool:** Das Tool sollte mit einer echten Lerneinheit mit Ziel, Aufgabe, Feedback, Wiederholung und kurzer Auswertung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in LanguageTool:** Das Team braucht eine einfache Methode, um Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks nach dem Einsatz zu prüfen.
-- **Übergabe mit LanguageTool:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

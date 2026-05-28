@@ -1,13 +1,14 @@
 ---
 slug: swiftkey
 title: SwiftKey
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [keyboard, mobile, productivity]
 official_url: "https://www.microsoft.com/en-us/swiftkey"
 popularity: 12
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # SwiftKey
 
 SwiftKey ist eine intelligente Tastatur für mobile Geräte, bekannt für Wortvorhersage, Autokorrektur, Mehrsprachigkeit und personalisierte Eingabe. Sie spart kleine Sekunden, die sich bei viel mobiler Kommunikation erstaunlich summieren.

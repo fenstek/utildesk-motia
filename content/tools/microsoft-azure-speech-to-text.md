@@ -6,8 +6,9 @@ price_model: "Je nach Plan"
 tags: [audio, transcription, productivity, automation]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Speech to Text
 
 Microsoft Azure Speech to Text ist ein cloudbasierter Dienst, der gesprochene Sprache in Text umwandelt. Er eignet sich für verschiedenste Anwendungen, von der automatischen Transkription von Meetings über die Integration in Sprachassistenten bis hin zur Verbesserung von Barrierefreiheit und Produktivität. Die Technologie nutzt fortschrittliche KI-Modelle, um Sprache in Echtzeit oder nachträglich präzise zu erkennen und zu transkribieren.

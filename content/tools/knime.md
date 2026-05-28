@@ -1,13 +1,14 @@
 ---
 slug: knime
 title: KNIME
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [data-science, analytics, etl]
 official_url: "https://www.knime.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # KNIME
 
 KNIME ist eine leistungsstarke Open-Source-Plattform für Datenanalyse, Reporting und Integration. Sie ermöglicht es Anwendern, komplexe Datenprozesse visuell zu gestalten, ohne tiefgehende Programmierkenntnisse zu benötigen. Mit KNIME können Nutzer Daten aus verschiedenen Quellen extrahieren, transformieren und laden (ETL), sowie anspruchsvolle Analysen und Machine-Learning-Modelle erstellen.

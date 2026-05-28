@@ -1,15 +1,16 @@
 ---
 slug: whisper
 title: Whisper
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "writing"]
 official_url: "https://openai.com/research/whisper"
 affiliate_url: "https://openai.com/research/whisper"
+tier: "C"
+generated_at: "2026-05-18"
 created_at: 2026-02-07
 popularity: 5
 ---
-
 # Whisper
 
 Whisper ist ein fortschrittliches KI-gestütztes Tool zur automatischen Spracherkennung (ASR), das von OpenAI entwickelt wurde. Es ermöglicht die Umwandlung von gesprochener Sprache in Text und unterstützt dabei zahlreiche Sprachen und Dialekte. Whisper eignet sich sowohl für Entwickler als auch für Unternehmen und Einzelpersonen, die zuverlässige Transkriptionen benötigen. Durch seine offene Architektur und die Möglichkeit, lokal oder in der Cloud zu arbeiten, bietet Whisper flexible Einsatzmöglichkeiten – von der einfachen Spracherkennung bis hin zu komplexen Anwendungen im Bereich der Sprachverarbeitung.
@@ -25,8 +26,6 @@ Whisper richtet sich an eine breite Zielgruppe:
 - **Privatanwender**, die ihre eigenen Audioaufnahmen unkompliziert transkribieren möchten.
 
 Die flexible Lizenzierung und die Möglichkeit, Whisper lokal zu betreiben, machen das Tool auch für datenschutzbewusste Nutzer interessant.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/whisper-editorial.webp" alt="Illustration zu Whisper: Tonband, Mikrofon und Sprachwellen werden zu Notizen verdichtet" loading="lazy" decoding="async" />

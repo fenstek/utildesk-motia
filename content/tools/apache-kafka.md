@@ -1,13 +1,14 @@
 ---
 slug: apache-kafka
 title: Apache Kafka
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [data, streaming, open-source, developer-tools]
 official_url: "https://kafka.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Kafka
 
 Apache Kafka ist eine leistungsstarke Open-Source-Plattform für verteiltes Streaming von Daten in Echtzeit. Sie ermöglicht es Unternehmen, große Mengen an Datenströmen zuverlässig zu erfassen, zu verarbeiten und zu analysieren. Kafka wird häufig für Anwendungsfälle wie Event-Streaming, Datenintegration und das Entwickeln moderner datengetriebener Anwendungen eingesetzt.

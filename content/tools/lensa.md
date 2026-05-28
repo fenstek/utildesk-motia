@@ -1,15 +1,16 @@
 ---
 slug: lensa
 title: Lensa
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://lensa.app/'
 affiliate_url: 'https://lensa.app/'
+tier: "C"
+generated_at: "2026-05-12"
 created_at: "2026-02-08"
 popularity: 0
 ---
-
 # Lensa
 
 Lensa ist eine KI-gestützte Bildbearbeitungs-App, die sich vor allem auf die Verbesserung von Porträtfotos spezialisiert hat. Mit Hilfe von künstlicher Intelligenz ermöglicht Lensa Nutzern, schnell und einfach professionelle Selfies und Porträts zu optimieren, indem es Hautunreinheiten entfernt, den Hintergrund anpasst und verschiedene Effekte hinzufügt. Die Anwendung ist sowohl für Anfänger als auch für erfahrene Nutzer geeignet, die ihre Fotos mit minimalem Aufwand verbessern möchten.
@@ -66,7 +67,6 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - Regelmäßige Updates und Erweiterungen der Funktionen
 
 - Stärker im Alltag, wenn Lensa für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Lensa ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 

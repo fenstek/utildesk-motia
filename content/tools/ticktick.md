@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [tasks, calendar, productivity, planning]
 official_url: "https://ticktick.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-25"
 ---
-
 # TickTick
 
 TickTick ist eine vielseitige Produktivitäts-App, die Aufgabenmanagement, Kalenderintegration und Zeitplanung in einer benutzerfreundlichen Oberfläche kombiniert. Mit einer klaren Struktur unterstützt TickTick dabei, den Alltag besser zu organisieren und die Produktivität zu steigern – sowohl im privaten als auch im beruflichen Umfeld.

@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [education, authoring, content, elearning]
 official_url: "https://www.articulate.com/360/storyline/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Articulate Storyline
 
 Articulate Storyline ist eine leistungsstarke Software zur Erstellung von interaktiven E-Learning-Inhalten. Mit benutzerfreundlichen Werkzeugen können Trainer, Pädagogen und Unternehmen professionelle Schulungsmaterialien entwickeln, die auf verschiedenen Geräten und Plattformen funktionieren. Die Software unterstützt vielfältige Medienformate und ermöglicht es, Lerninhalte ansprechend und didaktisch sinnvoll zu gestalten.

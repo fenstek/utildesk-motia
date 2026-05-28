@@ -6,8 +6,9 @@ price_model: "Abonnement"
 tags: [design, image]
 official_url: "https://www.adobe.com/products/xd.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Adobe XD
 
 Adobe XD ist eine leistungsstarke Design- und Prototyping-Software, die speziell für die Entwicklung von Benutzeroberflächen und User Experiences (UI/UX) entwickelt wurde. Mit einer intuitiven Oberfläche und umfangreichen Funktionen ermöglicht Adobe XD Designern und Teams, interaktive Prototypen zu erstellen, die nahtlos mit anderen Adobe-Tools zusammenarbeiten. Die Plattform unterstützt kollaboratives Arbeiten, was sie zu einem beliebten Werkzeug in der Designbranche macht.

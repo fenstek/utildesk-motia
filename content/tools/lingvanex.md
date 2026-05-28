@@ -1,16 +1,17 @@
 ---
 slug: lingvanex
 title: Lingvanex
-category: Schreiben & Content
+category: "AI Coding"
 price_model: Freemium
 tags: ["translation", "speech", "writing", "api", "language"]
 official_url: "https://lingvanex.com/"
 affiliate_url: "https://lingvanex.com/"
+tier: "C"
+generated_at: "2026-05-20"
 created_at: 2026-02-15
 popularity: 0
 description: Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, API- und Unternehmensszenarien.
 ---
-
 # Lingvanex
 
 Lingvanex ist eine Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, Apps und API-Szenarien.
@@ -22,7 +23,6 @@ Interessant ist Lingvanex vor allem dort, wo Übersetzung nicht nur im Browser s
 Lingvanex passt zu Teams, die Übersetzung nicht nur gelegentlich im Browser nutzen, sondern in Prozesse, Apps oder Systeme einbetten wollen. Relevant sind Unternehmen mit mehrsprachigem Support, Dokumentation, internen Wissensdatenbanken oder Datenschutzanforderungen.
 
 Für einzelne schnelle Übersetzungen reichen oft DeepL, Google Translate oder Browserfunktionen. Lingvanex wird interessanter, wenn Sprachpaare, API, Offline-Nutzung, Kontrolle und Integration wichtiger sind als maximale Bequemlichkeit.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/lingvanex-editorial.webp" alt="Illustration zu Lingvanex: Dokumente, Sprachwellen und App-Kacheln verbinden sich in einem ?bersetzungsnetz" loading="lazy" decoding="async" />

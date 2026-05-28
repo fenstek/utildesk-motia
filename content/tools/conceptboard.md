@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://conceptboard.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Conceptboard
 
 Conceptboard ist ein digitales Whiteboard-Tool, das speziell für die Zusammenarbeit in Teams entwickelt wurde. Es ermöglicht die visuelle Kommunikation, das gemeinsame Brainstorming und die Organisation von Projekten in Echtzeit – unabhängig vom Standort der Teammitglieder. Durch seine vielseitigen Funktionen unterstützt Conceptboard die Produktivität und erleichtert komplexe Arbeitsprozesse mit einer intuitiven Benutzeroberfläche.

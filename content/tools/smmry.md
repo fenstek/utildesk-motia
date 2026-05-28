@@ -1,13 +1,14 @@
 ---
 slug: smmry
 title: SMMRY
-category: AI
+category: "AI Writing"
 price_model: "Je nach Plan"
 tags: [automation, writing, content]
 official_url: "https://smmry.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # SMMRY
 
 SMMRY ist ein KI-gestütztes Tool zur automatischen Textzusammenfassung. Es hilft dabei, lange Texte schnell und präzise auf das Wesentliche zu reduzieren, was Zeit spart und die Informationsaufnahme erleichtert. Besonders nützlich ist SMMRY für alle, die regelmäßig große Mengen an Texten lesen oder Inhalte erstellen müssen.

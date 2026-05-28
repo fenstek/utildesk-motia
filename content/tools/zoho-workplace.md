@@ -1,13 +1,14 @@
 ---
 slug: zoho-workplace
 title: Zoho Workplace
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Je nach Plan
 tags: [productivity, office-suite, collaboration]
 official_url: "https://www.zoho.com/de/workplace/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # Zoho Workplace
 
 Zoho Workplace ist eine umfassende Office-Suite, die speziell für produktive Zusammenarbeit und effizientes Arbeiten in Unternehmen entwickelt wurde. Die Plattform kombiniert verschiedene Anwendungen wie E-Mail, Dokumentenbearbeitung, Präsentationen und Teamkommunikation in einer einheitlichen Umgebung. Dank integrierter KI-Funktionen unterstützt Zoho Workplace Teams dabei, Arbeitsabläufe zu optimieren und produktiver zu sein.

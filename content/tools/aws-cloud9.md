@@ -1,13 +1,14 @@
 ---
 slug: aws-cloud9
 title: AWS Cloud9
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [coding, cloud, developer]
 official_url: "https://aws.amazon.com/cloud9/"
 popularity: 65
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # AWS Cloud9
 
 AWS Cloud9 ist eine cloudbasierte Entwicklungsumgebung im AWS-Umfeld. Die Idee: Code, Terminal, Laufzeit und AWS-Ressourcen liegen näher zusammen, sodass Entwickler direkt im Browser arbeiten und Cloud-nahe Projekte bearbeiten können.

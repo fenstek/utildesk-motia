@@ -1,13 +1,14 @@
 ---
 slug: d-id
 title: D-ID
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [video, automation, marketing, design, content]
 official_url: "https://www.d-id.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # D-ID
 
 D-ID ist eine innovative KI-basierte Plattform, die sich auf die Erstellung von realistischen, animierten Videos aus Fotos und Texten spezialisiert hat. Mit fortschrittlicher Deep-Learning-Technologie ermöglicht D-ID die automatische Generierung von Gesichtsanimationen für Marketing, Schulungen, Designprojekte und Content-Erstellung. Die Plattform bietet eine einfache Möglichkeit, visuelle Inhalte zu automatisieren und so Zeit und Ressourcen zu sparen.

@@ -6,8 +6,9 @@ price_model: Free
 tags: [office, documents, presentation, productivity]
 official_url: "https://www.apple.com/apps/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Apple iWork
 
 Apple iWork ist eine kostenlose Produktivitätssoftware-Suite von Apple, die aus den drei Hauptanwendungen Pages, Numbers und Keynote besteht. Diese Programme ermöglichen das Erstellen und Bearbeiten von Dokumenten, Tabellen und Präsentationen und sind speziell für macOS- und iOS-Nutzer optimiert. iWork überzeugt durch eine benutzerfreundliche Oberfläche, nahtlose Integration in das Apple-Ökosystem und vielfältige Vorlagen für professionelle Ergebnisse.

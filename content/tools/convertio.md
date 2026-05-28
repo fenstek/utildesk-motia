@@ -1,13 +1,15 @@
 ---
 slug: convertio
 title: Convertio
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [file-conversion, documents, utilities]
 official_url: "https://convertio.co/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-11"
+mentionedIn: ["pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
-
 # Convertio
 
 Convertio ist ein vielseitiges Online-Tool zur Datei- und Dokumentkonvertierung, das auf Künstlicher Intelligenz basiert. Es ermöglicht Nutzern, Dateien schnell und einfach in verschiedene Formate umzuwandeln, ohne dass eine Installation erforderlich ist. Das Tool unterstützt zahlreiche Dateitypen, darunter Bilder, Dokumente, Audio- und Videodateien, und eignet sich besonders für Anwender, die flexible und unkomplizierte Lösungen für Dateikonvertierungen suchen.

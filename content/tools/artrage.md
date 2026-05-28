@@ -6,8 +6,9 @@ price_model: Kostenpflichtig, Einmalzahlung
 tags: [design,painting,illustration,desktop]
 official_url: "https://www.artrage.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # ArtRage
 
 ArtRage ist eine digitale Mal- und Zeichenanwendung mit starkem Fokus auf natürlich wirkende Medien wie Öl, Aquarell, Bleistift und Leinwandtexturen. Statt nur Pixel zu verschieben, versucht das Tool, das Gefühl traditioneller Materialien digital abzubilden.

@@ -1,13 +1,14 @@
 ---
 slug: zest-ai
 title: Zest AI
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: [data, analytics, automation]
 official_url: "https://www.zest.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zest AI
 
 Zest AI ist eine innovative KI-Plattform, die darauf spezialisiert ist, Datenanalysen und Automatisierungslösungen für Unternehmen bereitzustellen. Mit fortschrittlichen Algorithmen unterstützt Zest AI dabei, große Datenmengen effizient auszuwerten und fundierte Entscheidungen zu treffen. Die Plattform eignet sich besonders für Organisationen, die ihre Geschäftsprozesse durch künstliche Intelligenz optimieren möchten, ohne dabei auf komplizierte Programmierung angewiesen zu sein.

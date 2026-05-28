@@ -1,14 +1,15 @@
 ---
 slug: capcut
 title: CapCut
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/nl-nl/"
 popularity: 60
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # CapCut
 
 CapCut ist eine vielseitige Video-Editing-App, die sowohl für Anfänger als auch für Fortgeschrittene geeignet ist. Mit intuitiven Werkzeugen und einer breiten Palette an Funktionen ermöglicht CapCut die Erstellung hochwertiger Videos direkt auf dem Smartphone oder Tablet. Die App bietet zahlreiche Effekte, Filter und AI-gestützte Tools, die den Bearbeitungsprozess vereinfachen und kreativ gestalten. CapCut ist besonders beliebt für Social-Media-Videos und kurze Clips, die schnell und professionell bearbeitet werden sollen.
@@ -63,7 +64,6 @@ CapCut richtet sich an Nutzer, die unkompliziert und effizient Videos bearbeiten
 - Begrenzte Desktop-Version, primär mobil optimiert.
 - Datenschutzbedenken bei Cloud-Funktionen je nach Region.
 - Werbung und In-App-Käufe können stören.
-
 
 ## Was im Alltag wirklich zählt
 

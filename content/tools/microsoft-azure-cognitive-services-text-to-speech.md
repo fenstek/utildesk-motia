@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-cognitive-services-text-to-speech
 title: Microsoft Azure Cognitive Services - Text to Speech
-category: Audio
+category: "Audio & Video"
 price_model: "Nutzungsbasiert"
 tags: [ai,audio,api]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Microsoft Azure Cognitive Services - Text to Speech
 
 Microsoft Azure Cognitive Services - Text to Speech ist ein leistungsstarker Cloud-basierter Dienst, der die Umwandlung von geschriebenem Text in natürlich klingende Sprache ermöglicht. Mit vielfältigen Stimmen, Sprachen und Anpassungsoptionen eignet sich dieser Dienst für Anwendungen in Bereichen wie Barrierefreiheit, Kundenservice, E-Learning und mehr. Die Integration erfolgt über eine API, was flexible Einsatzmöglichkeiten in verschiedenen Softwarelösungen bietet.

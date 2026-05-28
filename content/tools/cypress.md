@@ -1,13 +1,14 @@
 ---
 slug: cypress
 title: Cypress
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.cypress.io/"
 popularity: 54
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Cypress
 
 Cypress ist ein Test-Framework für moderne Webanwendungen. Der wichtigste Unterschied zu vielen älteren Browser-Test-Setups: Tests laufen nah an der echten Anwendung, lassen sich visuell debuggen und sind deshalb für Entwickler deutlich greifbarer als ein reiner CI-Report.

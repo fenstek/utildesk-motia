@@ -1,13 +1,14 @@
 ---
 slug: prometheus
 title: Prometheus
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://prometheus.io/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
-
 # Prometheus
 
 Prometheus ist ein leistungsstarkes KI-Tool, das darauf ausgelegt ist, Arbeitsabläufe zu automatisieren und als intelligenter Assistent zu fungieren. Es unterstützt Nutzer dabei, repetitive Aufgaben zu vereinfachen, Prozesse zu optimieren und die Produktivität in verschiedenen Bereichen zu steigern. Mit seinen vielseitigen Funktionen eignet sich Prometheus sowohl für Einzelpersonen als auch für Teams, die ihre Arbeitsweisen effizienter gestalten möchten.
@@ -28,20 +29,6 @@ Prometheus ist besonders nützlich für Entwicklungs-, QA-, Plattform- und Produ
 
 Bei Prometheus sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Prometheus lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Ein belastbarer Pilot für Prometheus beginnt mit einem realen Entwicklungsablauf von Setup über Testdaten und Review bis zur Abnahme. Danach geht es nicht um Bauchgefühl, sondern darum, ob Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Prometheus:** Vor dem Rollout sollten Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Prometheus:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Prometheus:** Kritisch wird es, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen; dann hilft auch eine gute Oberfläche nur begrenzt.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/prometheus-editorial.webp" alt="Illustration zu Prometheus: Metriken laufen durch Zeitreihen, Alerts und Service-Health-Pfade" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Intelligente Automatisierung:** Automatisierung von Routineaufgaben ohne Programmierkenntnisse.
@@ -52,10 +39,6 @@ Ein belastbarer Pilot für Prometheus beginnt mit einem realen Entwicklungsablau
 - **Echtzeit-Analyse:** Monitoring und Analyse von Workflows zur Optimierung.
 - **Benachrichtigungen und Alerts:** Automatische Warnungen bei wichtigen Ereignissen oder Fehlern.
 - **Mehrsprachige Unterstützung:** Einsatz in verschiedenen Sprachumgebungen möglich.
-
-- **Praxislauf mit Prometheus:** Das Tool sollte mit einem realen Entwicklungsablauf von Setup über Testdaten und Review bis zur Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Prometheus:** Das Team braucht eine einfache Methode, um Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Prometheus:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 
@@ -78,7 +61,6 @@ Ein belastbarer Pilot für Prometheus beginnt mit einem realen Entwicklungsablau
 - Für sehr spezialisierte Anforderungen sind eventuell weitere Anpassungen notwendig.
 
 - Prometheus kann Reibung nur verschieben, wenn Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
-- Prometheus spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit dauerhaft nebenbei laufen sollen.
 
 ## Preise & Kosten
 

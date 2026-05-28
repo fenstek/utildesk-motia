@@ -1,13 +1,14 @@
 ---
 slug: help-scout
 title: Help Scout
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, shared-inbox, helpdesk]
 official_url: "https://www.helpscout.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Help Scout
 
 Help Scout ist eine cloudbasierte Kundenservice-Software, die speziell für kleine bis mittelgroße Unternehmen entwickelt wurde. Sie vereint eine gemeinsame Inbox, Automatisierungen und KI-gestützte Funktionen, um den Kundenservice effizienter und persönlicher zu gestalten. Mit Help Scout können Teams Anfragen zentral verwalten und den Supportprozess optimieren, ohne dass Kunden das Gefühl haben, mit einem automatisierten System zu kommunizieren.

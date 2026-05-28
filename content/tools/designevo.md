@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [design, logo, branding, marketing]
 official_url: "https://www.designevo.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # DesignEvo
 
 DesignEvo ist ein benutzerfreundliches Online-Tool zur Erstellung von Logos, das sowohl Anfängern als auch Profis eine schnelle und einfache Möglichkeit bietet, individuelle Logos zu gestalten. Mit einer umfangreichen Sammlung von Vorlagen, Symbolen und Schriftarten ermöglicht DesignEvo die Entwicklung professioneller Markenidentitäten ohne tiefgehende Designkenntnisse. Das Tool eignet sich besonders für kleine Unternehmen, Start-ups, Freelancer und Marketing-Profis, die ihr Branding unkompliziert selbst in die Hand nehmen möchten.

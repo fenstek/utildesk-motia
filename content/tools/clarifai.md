@@ -1,15 +1,16 @@
 ---
 slug: clarifai
 title: Clarifai
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: ["video"]
 official_url: 'http://www.clarifai.com/'
 affiliate_url: 'http://www.clarifai.com/'
+tier: "C"
+generated_at: "2026-05-15"
 created_at: "2026-02-08"
 popularity: 0
 ---
-
 # Clarifai
 
 Clarifai ist eine leistungsstarke KI-Plattform, die sich auf Bild- und Videoerkennung spezialisiert hat. Mithilfe modernster künstlicher Intelligenz und maschinellem Lernen ermöglicht Clarifai Unternehmen und Entwicklern, visuelle Inhalte automatisch zu analysieren, zu kategorisieren und zu verstehen. Die Plattform unterstützt verschiedenste Anwendungsbereiche von der automatischen Bildbeschriftung bis hin zur Erkennung komplexer visueller Muster.

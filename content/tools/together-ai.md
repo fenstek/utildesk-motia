@@ -1,11 +1,13 @@
 ---
 slug: together-ai
 title: Together AI
-category: AI Infrastructure
+category: "AI Coding"
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://www.together.ai"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-25"
 ---
 # Together AI
 

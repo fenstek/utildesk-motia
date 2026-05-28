@@ -1,14 +1,15 @@
 ---
 slug: pipedream
 title: Pipedream
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: ["automation"]
 official_url: "https://pipedream.com/"
 created_at: 2026-02-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Pipedream
 
 Pipedream ist eine leistungsstarke Integrations- und Automatisierungsplattform, die es ermöglicht, Workflows mit Hilfe von Künstlicher Intelligenz und anderen Technologien schnell und flexibel zu erstellen. Die Plattform richtet sich vor allem an Entwickler und Unternehmen, die komplexe Datenflüsse und Automatisierungen ohne großen Aufwand realisieren möchten. Mit Pipedream können verschiedene Dienste, APIs und KI-Modelle miteinander verbunden werden, um automatisierte Prozesse zu gestalten.

@@ -1,14 +1,15 @@
 ---
 slug: novelai
 title: NovelAI
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing"]
 official_url: 'https://novelai.net/'
 created_at: "2026-02-12"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # NovelAI
 
 NovelAI ist eine KI-gestützte Schreibplattform, die speziell darauf ausgelegt ist, kreative Texte wie Geschichten, Romane oder Rollenspiel-Inhalte zu generieren und zu unterstützen. Mit Hilfe fortschrittlicher Sprachmodelle bietet NovelAI Nutzern eine intuitive Möglichkeit, Ideen auszubauen, Schreibblockaden zu überwinden und Inspiration für literarische Projekte zu finden. Die Plattform kombiniert künstliche Intelligenz mit benutzerfreundlichen Tools und erlaubt eine flexible Anpassung an individuelle Schreibstile.

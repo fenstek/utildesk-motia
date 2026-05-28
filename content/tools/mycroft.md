@@ -1,13 +1,14 @@
 ---
 slug: mycroft
 title: Mycroft
-category: AI
+category: "AI Chatbots"
 price_model: Open Source
 tags: [assistant, voice, open-source]
 official_url: "https://community.openconversational.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Mycroft
 
 Mycroft ist ein Open-Source-Sprachassistent, der darauf ausgelegt ist, Nutzern eine flexible und anpassbare Alternative zu proprietären Sprachassistenten zu bieten. Mit seiner Sprachsteuerung und vielseitigen Funktionen unterstützt Mycroft bei alltäglichen Aufgaben, der Informationsbeschaffung und der Automatisierung von Smart-Home-Geräten. Durch die Offenheit des Codes können Entwickler und Technikbegeisterte Mycroft nach ihren Bedürfnissen erweitern und anpassen.

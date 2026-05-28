@@ -1,13 +1,14 @@
 ---
 slug: crushon
 title: CrushOn
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://crushon.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # CrushOn
 
 CrushOn ist eine KI-gestützte Chatbot-Plattform, die als digitaler Begleiter fungiert. Die Anwendung ist darauf ausgelegt, persönliche Gespräche zu ermöglichen, emotionale Unterstützung zu bieten und als virtueller Freund zu agieren. Durch den Einsatz moderner KI-Technologien schafft CrushOn eine interaktive und individuelle Nutzererfahrung, die weit über einfache Textantworten hinausgeht.

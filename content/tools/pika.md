@@ -1,18 +1,18 @@
 ---
 slug: pika
 title: Pika
-category: Video
+category: "Audio & Video"
 price_model: "Freemium"
 tags:
   - ai
   - video
 official_url: 'https://pika.art/'
 affiliate_url: 'https://pika.art/'
+tier: "C"
+generated_at: "2026-05-16"
 created_at: "2026-02-08"
 popularity: 0
 ---
-
-
 # Pika
 
 Pika ist ein innovatives Video-Tool, das auf künstlicher Intelligenz basiert und Nutzern hilft, Videoinhalte effizienter zu erstellen und zu bearbeiten. Mit einer benutzerfreundlichen Oberfläche und automatisierten Funktionen eignet sich Pika besonders für Content-Ersteller, Marketing-Teams und Unternehmen, die ihre Videoproduktion optimieren möchten.

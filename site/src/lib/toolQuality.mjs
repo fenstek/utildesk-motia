@@ -8,6 +8,7 @@ export const TEMPLATE_PHRASES = [
   "kleinen Vorher-nachher-Vergleich",
   "Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz",
   "spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit",
+  "guter Prüfpunkt für die erste Retrospektive",
 ];
 
 const EDITORIAL_HEADING_PATTERNS = [
@@ -180,6 +181,8 @@ export function stripTemplateBoilerplate(content) {
     const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     next = next.replace(new RegExp(`^.*${escaped}.*$`, "gmi"), "");
   }
+
+  next = next.replace(/^.*\bPrüfpunkt für die erste Retrospektive\b.*$/gmi, "");
 
   return next.replace(/\n{3,}/g, "\n\n").trim();
 }

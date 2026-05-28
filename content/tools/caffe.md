@@ -1,13 +1,14 @@
 ---
 slug: caffe
 title: Caffe
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [machine-learning, developer-tools, open-source]
 official_url: "https://caffe.berkeleyvision.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Caffe
 
 Caffe ist ein bekanntes Open-Source-Framework für maschinelles Lernen, das sich besonders für die Entwicklung und das Training von tiefen neuronalen Netzen eignet. Ursprünglich an der Universität Berkeley entwickelt, bietet Caffe eine effiziente und flexible Plattform, die sowohl von Forschern als auch Entwicklern genutzt wird, um komplexe KI-Modelle zu erstellen und zu implementieren. Das Framework zeichnet sich durch seine Geschwindigkeit und Benutzerfreundlichkeit aus und unterstützt zahlreiche Anwendungen im Bereich der Bild- und Videoverarbeitung.

@@ -1,13 +1,14 @@
 ---
 slug: eclipse-che
 title: Eclipse Che
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [cloud-ide, developer-tools, kubernetes]
 official_url: "https://eclipse.dev/che/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Eclipse Che
 
 Eclipse Che ist eine cloudbasierte integrierte Entwicklungsumgebung (IDE), die speziell für die Zusammenarbeit von Entwicklerteams in Kubernetes-Umgebungen entwickelt wurde. Mit seiner Container-basierten Architektur ermöglicht Eclipse Che das Erstellen, Teilen und Verwalten von Entwicklungsumgebungen direkt im Browser, ohne lokale Installation. Dadurch eignet sich das Tool besonders gut für moderne Cloud-native Entwicklungsprojekte und DevOps-Workflows.

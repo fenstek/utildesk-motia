@@ -1,15 +1,16 @@
 ---
 slug: pinecone
 title: Pinecone
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["automation"]
 official_url: 'https://www.pinecone.io/'
 affiliate_url: 'https://www.pinecone.io/'
+tier: "C"
+generated_at: "2026-05-13"
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # Pinecone
 
 Pinecone ist eine skalierbare Vektor-Datenbank, die speziell für Anwendungen im Bereich Künstliche Intelligenz entwickelt wurde. Sie ermöglicht es, große Mengen an Vektordaten effizient zu speichern, zu durchsuchen und zu verwalten. Pinecone wird häufig für Suchmaschinen, Empfehlungssysteme und andere AI-getriebene Anwendungen genutzt, die schnelle und präzise Ähnlichkeitssuchen benötigen.

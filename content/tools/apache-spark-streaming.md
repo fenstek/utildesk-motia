@@ -1,13 +1,14 @@
 ---
 slug: apache-spark-streaming
 title: Apache Spark Streaming
-category: AI
+category: "AI Agents"
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://spark.apache.org/docs/latest/streaming-programming-guide.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Apache Spark Streaming
 
 Apache Spark Streaming ist eine leistungsstarke Open-Source-Plattform zur Echtzeit-Datenverarbeitung, die auf dem Apache Spark Framework basiert. Sie ermöglicht die Verarbeitung und Analyse von kontinuierlichen Datenströmen aus verschiedenen Quellen in nahezu Echtzeit. Dank seiner Skalierbarkeit und Integration mit anderen Big-Data-Technologien ist Spark Streaming besonders für Anwendungen im Bereich künstliche Intelligenz, Automatisierung und Workflow-Optimierung geeignet.

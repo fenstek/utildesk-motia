@@ -1,13 +1,14 @@
 ---
 slug: wevideo
 title: WeVideo
-category: Video
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [video, workflow]
 official_url: "https://www.wevideo.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # WeVideo
 
 WeVideo ist eine cloudbasierte Videobearbeitungsplattform, die es Nutzern ermöglicht, Videos einfach und flexibel online zu erstellen und zu bearbeiten. Die Plattform bietet eine benutzerfreundliche Oberfläche, die sowohl für Anfänger als auch für erfahrene Videoersteller geeignet ist. Dank der Cloud-Technologie können Projekte jederzeit und von überall aus bearbeitet und geteilt werden.

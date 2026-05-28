@@ -1,13 +1,14 @@
 ---
 slug: onlyoffice
 title: OnlyOffice
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://onlyoffice.com/"
 popularity: 88
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # OnlyOffice
 
 OnlyOffice ist eine vielseitige Plattform, die kollaborative Office-Tools mit Automatisierungs- und KI-Funktionen kombiniert. Sie ermöglicht die effiziente Erstellung, Bearbeitung und Verwaltung von Dokumenten, Tabellen und Präsentationen in Echtzeit. OnlyOffice richtet sich an Unternehmen und Teams, die ihre Produktivität durch intelligente Automatisierung und nahtlose Zusammenarbeit steigern möchten.

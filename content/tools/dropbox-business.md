@@ -1,13 +1,14 @@
 ---
 slug: dropbox-business
 title: Dropbox Business
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [file-sharing, collaboration, storage]
 official_url: "https://www.dropbox.com/business"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dropbox Business
 
 Dropbox Business ist eine cloudbasierte Plattform, die speziell für Unternehmen entwickelt wurde, um Dateiablage, Zusammenarbeit und Datensicherung effizient zu gestalten. Mit flexiblen Speicheroptionen und leistungsstarken Tools ermöglicht Dropbox Business Teams, Dateien sicher zu teilen, gemeinsam an Dokumenten zu arbeiten und Projekte nahtlos zu koordinieren.

@@ -1,14 +1,15 @@
 ---
 slug: aws-emr
 title: AWS EMR (Elastic MapReduce)
-category: AI
+category: "AI Agents"
 price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://aws.amazon.com/emr/"
 disabled: true
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # AWS EMR (Elastic MapReduce)
 
 AWS EMR (Elastic MapReduce) ist ein Cloud-basierter Service von Amazon Web Services, der es ermöglicht, große Datenmengen effizient zu verarbeiten und zu analysieren. Mit EMR können Unternehmen Big Data-Workloads in skalierbaren Hadoop-, Spark- und anderen Framework-Umgebungen ausführen, ohne sich um die zugrundeliegende Infrastruktur kümmern zu müssen. Die Plattform unterstützt automatisierte Workflows und erleichtert die Integration von Machine Learning und KI-Anwendungen.

@@ -1,13 +1,14 @@
 ---
 slug: google-assistant
 title: Google Assistant
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot]
 official_url: "https://assistant.google.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Google Assistant
 
 Google Assistant ist ein intelligenter digitaler Assistent von Google, der mithilfe von künstlicher Intelligenz und natürlicher Sprachverarbeitung Nutzern hilft, Aufgaben zu erledigen, Informationen abzurufen und Geräte zu steuern. Er ist auf vielen Geräten wie Smartphones, Smart Speakern, Smart Displays und weiteren kompatiblen Geräten verfügbar und unterstützt die Interaktion per Sprache oder Text.
@@ -19,20 +20,6 @@ Google Assistant richtet sich an Privatpersonen, die ihren Alltag durch Sprachst
 Google Assistant ist besonders nützlich für Support-, Sales-, Kommunikations- und Service-Teams, die viele Kontakte nachvollziehbar steuern müssen. Der Nutzen sollte an einem realen Prozess gemessen werden, in dem Erreichbarkeit, Antwortqualität, Gesprächsübergaben und saubere Nachverfolgung nicht nur schneller, sondern auch besser erklärbar werden.
 
 Vor einer breiteren Einführung von Google Assistant lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
-
-## Redaktionelle Einschätzung
-
-Google Assistant lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Ein belastbarer Pilot für Google Assistant beginnt mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung. Danach geht es nicht um Bauchgefühl, sondern darum, ob Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Google Assistant:** Vor dem Rollout sollten Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Google Assistant:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei Google Assistant:** Ohne klare Regeln wird der Nutzen schwach, sobald Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/google-assistant-editorial.webp" alt="Illustration zu Google Assistant: Sprachassistent koordiniert Alltag, Erinnerungen und Smart-Home-Signale" loading="lazy" decoding="async" />
-</figure>
 
 ## Hauptfunktionen
 
@@ -46,10 +33,6 @@ Ein belastbarer Pilot für Google Assistant beginnt mit einem echten Kontaktfall
 - Integration mit Drittanbieter-Apps und Services  
 - Personalisierte Empfehlungen basierend auf Nutzungsverhalten  
 - Unterstützung für mehrere Sprachen und Sprachprofile
-
-- **Praxislauf mit Google Assistant:** Das Tool sollte mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Google Assistant:** Das Team braucht eine einfache Methode, um Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Google Assistant:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

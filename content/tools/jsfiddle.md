@@ -1,13 +1,14 @@
 ---
 slug: jsfiddle
 title: JSFiddle
-category: Developer
+category: "Entwickler-Tools"
 price_model: "Freemium"
 tags: [coding, web, developer]
 official_url: "https://jsfiddle.net/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # JSFiddle
 
 JSFiddle ist eine webbasierte Entwicklungsumgebung, die speziell für Entwickler und Webdesigner entwickelt wurde, um HTML-, CSS- und JavaScript-Code schnell zu schreiben, zu testen und zu teilen. Ohne lokale Installation ermöglicht JSFiddle das Experimentieren mit Webtechnologien direkt im Browser und eignet sich besonders für Prototyping, Debugging und kollaboratives Arbeiten.

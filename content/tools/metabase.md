@@ -1,13 +1,14 @@
 ---
 slug: metabase
 title: Metabase
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [analytics, data, dashboards, open-source]
 official_url: "https://www.metabase.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Metabase
 
 Metabase ist eine Open-Source-Business-Intelligence-Plattform, die es Unternehmen ermöglicht, Daten einfach zu analysieren und in interaktiven Dashboards darzustellen. Die Software richtet sich an Nutzer ohne tiefgehende Programmierkenntnisse und bietet eine intuitive Benutzeroberfläche, mit der Datenabfragen schnell erstellt und visualisiert werden können. Als vielseitiges Tool unterstützt Metabase verschiedene Datenquellen und eignet sich besonders für Teams, die datengetriebene Entscheidungen treffen möchten.

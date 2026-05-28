@@ -1,13 +1,14 @@
 ---
 slug: codecademy
 title: Codecademy
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [education, developer-tools, coding, learning]
 official_url: "https://www.codecademy.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
 ---
-
 # Codecademy
 
 Codecademy ist eine interaktive Online-Plattform, die das Erlernen von Programmiersprachen und Entwicklerfähigkeiten erleichtert. Durch praxisnahe Übungen und strukturierte Kurse ermöglicht sie Nutzern, ihre Coding-Kompetenzen Schritt für Schritt auszubauen – ideal für Anfänger ebenso wie für Fortgeschrittene.
@@ -28,20 +29,6 @@ Codecademy ist besonders nützlich für Entwicklungs-, QA-, Plattform- und Produ
 
 Bei Codecademy sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Bei Codecademy zählt weniger der Demo-Eindruck als der Betrieb im Alltag: Wer pflegt die Eingaben, wer bewertet das Ergebnis, und wo bleibt die fachliche Kontrolle?
-
-Codecademy sollte zuerst in einem realen Entwicklungsablauf von Setup über Testdaten und Review bis zur Abnahme zeigen, ob es trägt. Erst wenn Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Codecademy:** Vor dem Rollout sollten Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Codecademy:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Codecademy:** Ohne klare Regeln wird der Nutzen schwach, sobald Standards, Testdaten, Zuständigkeiten und technische Grenzen nur nebenbei entstehen.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/codecademy-editorial.webp" alt="Illustration zu Codecademy: Lernende baut aus Code-Bloecken einen Webapp-Lernpfad" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Interaktive Programmierübungen:** Sofortiges Feedback direkt im Browser ohne lokale Installation
@@ -52,10 +39,6 @@ Codecademy sollte zuerst in einem realen Entwicklungsablauf von Setup über Test
 - **Progress-Tracking:** Übersichtliche Darstellung des Lernfortschritts
 - **Mobile App:** Lernen auch unterwegs möglich
 - **Integration von Zertifikaten:** Nach Abschluss bestimmter Kurse können Zertifikate erworben werden
-
-- **Praxislauf mit Codecademy:** Das Tool sollte mit einem realen Entwicklungsablauf von Setup über Testdaten und Review bis zur Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Codecademy:** Das Team braucht eine einfache Methode, um Fehlerquote, Review-Aufwand, Geschwindigkeit, Wartbarkeit und Reproduzierbarkeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Codecademy:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

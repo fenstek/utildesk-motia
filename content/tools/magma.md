@@ -1,12 +1,14 @@
 ---
 slug: magma
 title: Magma
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [design, image, productivity]
 official_url: "https://magma.com/"
 popularity: 0
 description: "Magma ist ein Design- und Kreativwerkzeug für kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Magma
 

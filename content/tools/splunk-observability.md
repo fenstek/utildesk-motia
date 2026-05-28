@@ -1,13 +1,14 @@
 ---
 slug: splunk-observability
 title: Splunk Observability
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement, Nutzungsbasiert
 tags: [monitoring, analytics, data, developer-tools]
 official_url: "https://www.splunk.com/en_us/products/observability-cloud.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Splunk Observability
 
 Splunk Observability ist eine umfassende Plattform zur Überwachung und Analyse von IT-Infrastrukturen, Anwendungen und Cloud-Umgebungen. Sie bietet Entwicklern und IT-Teams leistungsstarke Tools, um die Performance von Systemen in Echtzeit zu überwachen, Fehler schnell zu identifizieren und datenbasierte Entscheidungen zu treffen. Durch die Integration von Metriken, Traces und Logs ermöglicht Splunk Observability eine ganzheitliche Sicht auf komplexe Softwarelandschaften.

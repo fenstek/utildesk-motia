@@ -1,13 +1,14 @@
 ---
 slug: samza
 title: Samza
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [data,streaming,open-source,developer-tools]
 official_url: "https://samza.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Samza
 
 Apache Samza ist ein Open-Source-Framework zur Verarbeitung von Datenströmen in Echtzeit. Es ermöglicht Entwicklern, robuste, skalierbare und fehlertolerante Stream-Processing-Anwendungen zu erstellen, die große Mengen an kontinuierlich eintreffenden Daten verarbeiten können. Samza wurde ursprünglich von LinkedIn entwickelt und ist heute ein Teil der Apache Software Foundation. Es ist besonders geeignet für Szenarien, in denen Daten in Echtzeit analysiert, transformiert oder aggregiert werden müssen.
@@ -20,7 +21,6 @@ Samza richtet sich vor allem an Entwickler, Data Engineers und Unternehmen, die 
 - Entwickler, die skalierbare Stream-Processing-Anwendungen mit hoher Fehlertoleranz bauen wollen.
 - Teams, die auf Open-Source-Lösungen setzen und eine enge Integration mit Apache Kafka und anderen Messaging-Systemen benötigen.
 - Unternehmen, die große Datenmengen in Echtzeit verarbeiten, z.B. für Monitoring, Betrugserkennung oder personalisierte Empfehlungen.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/samza-editorial.webp" alt="Illustration zu Samza: Ereignistropfen fliessen durch Verarbeitungsmuehlen, Abzweige und Speicherbecken" loading="lazy" decoding="async" />

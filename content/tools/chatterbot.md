@@ -1,11 +1,13 @@
 ---
 slug: chatterbot
 title: ChatterBot
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: [chatbot, coding, developer-tools, api]
 official_url: "https://github.com/gunthercox/ChatterBot"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # ChatterBot
 

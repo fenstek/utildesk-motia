@@ -1,13 +1,14 @@
 ---
 slug: apache-cassandra
 title: Apache Cassandra
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://cassandra.apache.org/_/index.html"
 popularity: 67
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Apache Cassandra
 
 Apache Cassandra ist eine hoch skalierbare, verteilte NoSQL-Datenbank, die für das Management großer Datenmengen über viele Server hinweg entwickelt wurde. Sie bietet hohe Verfügbarkeit ohne Single Point of Failure und ist insbesondere für Anwendungen geeignet, die eine schnelle und zuverlässige Datenverarbeitung bei gleichzeitig großer Datenmenge benötigen. Als Open-Source-Projekt wird Cassandra weltweit von Unternehmen verschiedener Größen genutzt.

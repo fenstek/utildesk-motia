@@ -1,13 +1,14 @@
 ---
 slug: squarespace
 title: Squarespace
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [website-builder, cms, design]
 official_url: "https://www.squarespace.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Squarespace
 
 Squarespace ist eine All-in-One-Plattform zur Erstellung und Verwaltung von Websites. Mit einem Fokus auf modernes, ansprechendes Design und benutzerfreundliche Funktionen ermöglicht Squarespace sowohl Einsteigern als auch Profis, professionelle Websites ohne Programmierkenntnisse zu erstellen. Die Plattform bietet integrierte Tools für Content Management, E-Commerce, Blogging und Marketing, unterstützt durch KI-gestützte Designvorschläge und Automatisierungen, die den Erstellungsprozess erleichtern.

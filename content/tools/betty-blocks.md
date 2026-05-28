@@ -6,6 +6,8 @@ price_model: Je nach Plan
 tags: [no-code, automation, developer]
 official_url: "https://www.bettyblocks.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Betty Blocks
 

@@ -1,13 +1,14 @@
 ---
 slug: react-native
 title: React Native
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [mobile-development,framework,developer-tools]
 official_url: "https://reactnative.dev/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # React Native
 
 React Native ist ein Open-Source-Framework, das von Facebook entwickelt wurde und es ermöglicht, mobile Apps für iOS und Android mit JavaScript und React zu erstellen. Es kombiniert die Vorteile nativer Entwicklung mit der Flexibilität von Webtechnologien und erlaubt Entwicklern, plattformübergreifende Anwendungen mit einer gemeinsamen Codebasis zu bauen.

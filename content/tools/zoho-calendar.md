@@ -1,13 +1,14 @@
 ---
 slug: zoho-calendar
 title: Zoho Calendar
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://www.zoho.com/de/calendar/"
 popularity: 2
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Zoho Calendar
 
 Zoho Calendar ist ein vielseitiges Online-Kalendertool, das Nutzern hilft, Termine effizient zu planen und zu verwalten. Es integriert sich nahtlos in die Zoho-Produktpalette und bietet Funktionen zur Terminplanung, Freigabe von Kalendern und Zusammenarbeit im Team. Die intuitive Benutzeroberfläche erleichtert die Organisation von persönlichen und beruflichen Zeitplänen, wodurch die Produktivität gesteigert wird.

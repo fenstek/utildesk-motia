@@ -1,12 +1,14 @@
 ---
 slug: inciteful
 title: Inciteful
-category: AI
+category: "AI Research"
 price_model: "Je nach Plan"
 tags: [research, citation-analysis, literature-review]
 official_url: "https://incitefulmed.com/academic/"
 popularity: 0
 description: "Inciteful ist ein Recherche- und Analysewerkzeug für Literaturnetzwerke und Zitationsbeziehungen für akademische Recherche sichtbar machen."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Inciteful
 

@@ -1,13 +1,14 @@
 ---
 slug: presto
 title: Presto
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [sql, query-engine, big-data]
 official_url: "https://prestodb.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Presto
 
 Presto ist eine leistungsstarke, verteilte SQL-Abfrage-Engine, die speziell für schnelle Abfragen großer Datenmengen in verteilten Systemen entwickelt wurde. Ursprünglich von Facebook entwickelt, ermöglicht Presto die Analyse von Big Data über verschiedene Datenquellen hinweg, ohne dass die Daten zuerst verschoben oder in ein zentrales Repository geladen werden müssen. Dies macht Presto zu einem unverzichtbaren Werkzeug für Unternehmen, die flexible und schnelle Datenanalysen in Echtzeit benötigen.

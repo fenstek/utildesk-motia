@@ -6,8 +6,9 @@ price_model: Free
 tags: [spreadsheet, office, productivity, collaboration]
 official_url: "https://support.apple.com/numbers"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Apple Numbers
 
 Apple Numbers ist eine kostenlose Tabellenkalkulationssoftware, die Teil der iWork-Suite von Apple ist. Sie bietet eine benutzerfreundliche Oberfläche und eignet sich besonders für Anwender, die auf macOS, iOS oder iPadOS produktiv arbeiten möchten. Mit Numbers lassen sich Tabellen, Diagramme und Datenvisualisierungen einfach erstellen und bearbeiten – ideal für einfache bis mittlere Anforderungen im Bereich der Tabellenkalkulation.

@@ -1,13 +1,14 @@
 ---
 slug: avid-media-composer
 title: Avid Media Composer
-category: Video
+category: "Audio & Video"
 price_model: Abonnement
 tags: [video, editing, production, post-production]
 official_url: "https://www.avid.com/media-composer"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Avid Media Composer
 
 Avid Media Composer ist eine professionelle Videoschnittsoftware, die seit Jahrzehnten in der Film- und Fernsehbranche etabliert ist. Sie bietet leistungsstarke Werkzeuge für den Schnitt, die Farbkorrektur und die Postproduktion und wird von vielen Studios und unabhängigen Produzenten weltweit verwendet. Mit einem Fokus auf komplexe Projekte und kollaborative Workflows ist Avid Media Composer eine zentrale Lösung für professionelle Videobearbeitung.

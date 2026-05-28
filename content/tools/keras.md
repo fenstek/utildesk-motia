@@ -1,13 +1,14 @@
 ---
 slug: keras
 title: Keras
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: [ai, data, developer-tools, automation]
 official_url: "https://keras.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Keras
 
 Keras ist eine leistungsstarke, benutzerfreundliche Open-Source-Bibliothek für Deep Learning, die in Python geschrieben ist. Sie ermöglicht Entwicklern und Forschern, komplexe neuronale Netzwerke schnell und effizient zu erstellen, zu trainieren und zu testen. Keras unterstützt verschiedene Backend-Engines wie TensorFlow, Theano und Microsoft Cognitive Toolkit (CNTK) und eignet sich besonders für den Einsatz in der künstlichen Intelligenz (KI) und Datenanalyse.

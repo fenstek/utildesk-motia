@@ -1,13 +1,14 @@
 ---
 slug: zeplin
 title: Zeplin
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://zeplin.io/"
 popularity: 2
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Zeplin
 
 Zeplin ist ein kollaboratives Design-Tool, das speziell für Designer und Entwickler entwickelt wurde, um Designprojekte effizienter umzusetzen. Es verbindet Design-Software mit der Entwicklungsumgebung, indem es Design-Spezifikationen, Assets und Styleguides automatisch generiert und bereitstellt. Dadurch werden Missverständnisse zwischen Design- und Entwicklungsteams reduziert und der Entwicklungsprozess beschleunigt.

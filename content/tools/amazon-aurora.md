@@ -1,13 +1,14 @@
 ---
 slug: amazon-aurora
 title: Amazon Aurora
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, aws]
 official_url: "https://aws.amazon.com/rds/aurora/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Amazon Aurora
 
 Amazon Aurora ist eine relationale Datenbank-Engine, die von Amazon Web Services (AWS) entwickelt wurde und vollständig mit MySQL und PostgreSQL kompatibel ist. Sie kombiniert die Leistung und Verfügbarkeit von kommerziellen Datenbanken mit der Einfachheit und Kosteneffizienz von Open-Source-Datenbanken. Aurora bietet eine hochperformante, skalierbare und sichere Cloud-Datenbanklösung, die sich ideal für Entwickler und Unternehmen eignet, die zuverlässige Datenbankdienste benötigen.

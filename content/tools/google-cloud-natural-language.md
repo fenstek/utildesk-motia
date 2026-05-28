@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-natural-language
 title: Google Cloud Natural Language
-category: AI
+category: "AI Coding"
 price_model: "Nutzungsbasiert"
 tags: ["ai", "nlp", "api"]
 official_url: "https://cloud.google.com/natural-language"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Cloud Natural Language
 
 Google Cloud Natural Language ist ein leistungsstarker KI-basierter Dienst zur Analyse und Verarbeitung natürlicher Sprache. Er ermöglicht es Unternehmen und Entwicklern, Textinhalte automatisch zu verstehen, zu klassifizieren und daraus wertvolle Erkenntnisse zu gewinnen. Die API unterstützt verschiedene Sprachen und bietet Funktionen wie Sentiment-Analyse, Entitätserkennung, Syntaxanalyse und mehr. So lassen sich Texte schnell auswerten, was in Bereichen wie Kundenservice, Marktforschung oder Content-Management hilfreich ist.

@@ -1,13 +1,14 @@
 ---
 slug: sap-sales-cloud
 title: SAP Sales Cloud
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [crm, sales, enterprise, automation]
 official_url: "https://www.sap.com/products/crm/sales-cloud.html"
 popularity: 17
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # SAP Sales Cloud
 
 SAP Sales Cloud ist eine umfassende CRM- und Vertriebssoftware, die Unternehmen dabei unterstützt, ihre Vertriebsprozesse zu optimieren und Kundenbeziehungen effektiv zu verwalten. Die Plattform integriert Automatisierung, Datenanalyse und Kollaboration, um Vertriebsteams eine bessere Übersicht und Steuerung über Leads, Opportunities und Kundeninteraktionen zu ermöglichen. Mit Fokus auf Enterprise-Kunden bietet SAP Sales Cloud skalierbare Lösungen für komplexe Geschäftsanforderungen.
@@ -15,7 +16,6 @@ SAP Sales Cloud ist eine umfassende CRM- und Vertriebssoftware, die Unternehmen 
 ## Für wen ist SAP Sales Cloud geeignet?
 
 SAP Sales Cloud richtet sich vor allem an mittelständische bis große Unternehmen, die ihre Vertriebsorganisation digitalisieren und automatisieren möchten. Besonders geeignet ist die Lösung für Firmen mit komplexen Vertriebsprozessen, die mehrere Vertriebskanäle bedienen oder international tätig sind. Auch Unternehmen, die eine enge Integration mit anderen SAP-Produkten oder umfangreiche Analysefunktionen wünschen, profitieren von dieser Plattform. Kleine Unternehmen oder Start-ups könnten die Lösung als zu umfangreich oder kostenintensiv empfinden.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sap-sales-cloud-editorial.webp" alt="Illustration zu SAP Sales Cloud: eine Enterprise-Vertriebspipeline verbindet Accounts, Forecasts und Handoffs" loading="lazy" decoding="async" />
@@ -50,7 +50,6 @@ SAP Sales Cloud richtet sich vor allem an mittelständische bis große Unternehm
 - Benutzeroberfläche kann für neue Nutzer zunächst überwältigend sein.
 - Abhängigkeit von SAP-Systemen kann die Flexibilität einschränken.
 - Je nach Plan sind nicht alle Funktionen enthalten.
-
 
 ## Was im Alltag wirklich zählt
 

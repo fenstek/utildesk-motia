@@ -6,8 +6,9 @@ price_model: Free
 tags: [browser,privacy,web,ai]
 official_url: "https://brave.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Brave
 
 Brave ist ein moderner Webbrowser, der besonderen Wert auf Datenschutz, Geschwindigkeit und Sicherheit legt. Er blockiert standardmäßig Tracker und Werbung, was die Ladezeiten von Webseiten deutlich verkürzt und gleichzeitig die Privatsphäre der Nutzer schützt. Darüber hinaus integriert Brave innovative Funktionen wie eine optionale Belohnungsfunktion für das Ansehen von datenschutzfreundlicher Werbung und unterstützt moderne Webtechnologien inklusive KI-Tools.

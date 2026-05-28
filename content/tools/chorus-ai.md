@@ -1,13 +1,14 @@
 ---
 slug: chorus-ai
 title: Chorus.ai
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://chorus-ai.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Chorus.ai
 
 Chorus.ai ist eine KI-gestützte Plattform, die Unternehmen dabei unterstützt, Verkaufsgespräche und Meetings automatisch zu analysieren und auszuwerten. Durch die Nutzung von Sprach- und Textanalysen optimiert Chorus.ai Arbeitsabläufe, steigert die Effizienz von Vertriebsteams und hilft, wertvolle Erkenntnisse aus Kundengesprächen zu gewinnen. Die Software bietet automatisierte Protokollierung, Coaching-Tools und Workflow-Integration, um den Verkaufsprozess datenbasiert zu verbessern.

@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [meetings, video, communication, productivity]
 official_url: "https://whereby.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-06"
 ---
-
 # Whereby
 
 Whereby ist eine benutzerfreundliche Videokonferenzplattform, die speziell für einfache und schnelle Online-Meetings entwickelt wurde. Ohne komplexe Software-Installationen oder Anmeldung können Teilnehmer direkt über ihren Browser an Meetings teilnehmen. Mit Fokus auf Flexibilität und intuitive Bedienung unterstützt Whereby Teams und Einzelpersonen bei der effektiven Kommunikation und Zusammenarbeit – ideal für Remote-Arbeit, Kundenmeetings oder schnelle Abstimmungen.

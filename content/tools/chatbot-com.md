@@ -1,18 +1,18 @@
 ---
 slug: chatbot-com
 title: Chatbot.com
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags:
   - ai
   - chatbot
 official_url: 'https://www.chatbot.com'
 affiliate_url: 'https://www.chatbot.com'
+tier: "C"
+generated_at: "2026-05-11"
 created_at: "2026-02-03"
 popularity: 0
 ---
-
-
 # Chatbot.com
 
 Chatbot.com ist eine benutzerfreundliche Plattform zur Erstellung und Verwaltung von Chatbots, die Unternehmen dabei unterstützt, Kundeninteraktionen zu automatisieren und zu verbessern. Mit einer Vielzahl von Funktionen und flexiblen Anpassungsmöglichkeiten eignet sich das Tool für unterschiedliche Branchen und Anwendungsfälle, von einfachem Kundenservice bis hin zu komplexeren Verkaufs- und Supportprozessen.

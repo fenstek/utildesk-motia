@@ -6,8 +6,9 @@ price_model: Open Source
 tags: [presentation, productivity, office, open-source]
 official_url: "https://www.libreoffice.org/#screenshots"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # LibreOffice Impress
 
 LibreOffice Impress ist ein leistungsstarkes, kostenloses Präsentationsprogramm, das Teil der LibreOffice Suite ist. Es ermöglicht das Erstellen von ansprechenden Präsentationen mit vielfältigen Gestaltungsmöglichkeiten, Animationen und Effekten. Als Open-Source-Software bietet es eine kostenfreie Alternative zu kommerziellen Präsentationsprogrammen und ist kompatibel mit verschiedensten Dateiformaten, darunter Microsoft PowerPoint.

@@ -1,13 +1,14 @@
 ---
 slug: mimic
 title: Mimic
-category: AI
+category: "AI Audio"
 price_model: Je nach Plan
 tags: [audio, voice]
 official_url: "https://www.mimic.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Mimic
 
 Mimic ist eine fortschrittliche KI-basierte Sprachsynthese-Software, die natürliche und realistische Stimmen erzeugt. Sie eignet sich ideal für Anwendungen, die hochwertige Sprachausgabe erfordern, wie z. B. Hörbücher, virtuelle Assistenten oder Audioinhalte. Durch die Kombination von maschinellem Lernen und modernster Audioverarbeitung ermöglicht Mimic eine flexible und anpassbare Sprachgenerierung mit vielfältigen Stimmen und Sprachen.

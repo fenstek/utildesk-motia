@@ -1,13 +1,14 @@
 ---
 slug: google-labs
 title: Google Labs
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [ai,data-science,creative]
 official_url: "https://labs.google/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Labs
 
 Google Labs ist eine innovative Plattform von Google, die experimentelle KI-Tools und Projekte bereitstellt. Sie dient als Testfeld für neue Technologien im Bereich Künstliche Intelligenz, Datenwissenschaft und kreative Anwendungen. Nutzer erhalten die Möglichkeit, neuartige Funktionen auszuprobieren, bevor sie in offiziellen Produkten integriert werden. Google Labs kombiniert modernste Forschung mit benutzerfreundlichen Interfaces und richtet sich an eine breite Zielgruppe.

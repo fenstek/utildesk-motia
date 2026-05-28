@@ -1,14 +1,15 @@
 ---
 slug: tara-ai
 title: Tara AI
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [product-management, developer-tools, planning, ai]
 official_url: "https://tara.ai/"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Tara AI
 
 Tara AI positioniert sich zwischen Produkt-Roadmap, Sprint-Planung und Entwicklerkoordination. Das Tool ist interessant für Teams, die nicht noch ein loses Aufgabenboard suchen, sondern Planungssignale aus Roadmaps, Backlog, Kapazität und Delivery-Status dichter zusammenführen wollen. Der KI-Anteil ist dabei vor allem dann nützlich, wenn schon verlässliche Projekt- und Engineering-Daten vorhanden sind.
@@ -48,7 +49,6 @@ Tara AI passt zu Produktmanagerinnen, Engineering-Leads und Gründerteams, die r
 - Einige erweiterte Funktionen sind möglicherweise nur in höheren Preismodellen verfügbar.
 - Eingewöhnungszeit für Nutzer ohne Erfahrung mit KI-gestützten Planungstools.
 - Je nach Plan können Integrationen und Funktionen variieren.
-
 
 ## Was im Alltag wirklich zählt
 

@@ -1,13 +1,14 @@
 ---
 slug: boomerang-for-gmail
 title: Boomerang for Gmail
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [email-productivity, follow-ups, gmail]
 official_url: "https://www.boomeranggmail.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Boomerang for Gmail
 
 Boomerang for Gmail ist ein leistungsstarkes Tool, das speziell entwickelt wurde, um die E-Mail-Kommunikation zu optimieren und die Produktivität im Umgang mit Gmail zu steigern. Es ermöglicht Nutzern, E-Mails zu planen, Erinnerungen für Follow-ups einzurichten und die Posteingangskontrolle durch intelligente Funktionen zu verbessern. Mit Hilfe von KI-basierten Features unterstützt Boomerang dabei, den Überblick über wichtige Nachrichten zu behalten und die Kommunikation effizienter zu gestalten.

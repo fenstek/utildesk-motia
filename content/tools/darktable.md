@@ -6,8 +6,9 @@ price_model: Open Source
 tags: [photo, editing, raw, open-source]
 official_url: "https://www.darktable.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Darktable
 
 Darktable ist eine leistungsstarke Open-Source-Software für die Fotoentwicklung und Bildbearbeitung, die sich insbesondere auf die Verarbeitung von RAW-Daten spezialisiert hat. Sie bietet Fotografen und Designern eine umfassende Plattform, um Bilder professionell zu optimieren, ohne dabei auf teure Lizenzgebühren angewiesen zu sein. Mit einer Vielzahl an Werkzeugen und einem nicht-destruktiven Workflow ermöglicht Darktable eine flexible und effiziente Bearbeitung digitaler Fotos.

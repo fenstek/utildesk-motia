@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [crm, project-management, automation, ai]
 official_url: "https://www.honeybook.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Honeybook
 
 Honeybook ist eine umfassende CRM- und Projektmanagement-Plattform, die speziell für kleine Unternehmen, Freelancer und Kreativschaffende entwickelt wurde. Mit einer Kombination aus Kundenverwaltung, Projektplanung und Automatisierung erleichtert Honeybook den Arbeitsalltag und optimiert Geschäftsprozesse. Die Plattform bietet zudem KI-gestützte Funktionen zur Effizienzsteigerung und ermöglicht eine zentrale Verwaltung von Angeboten, Rechnungen und Kommunikation.

@@ -1,13 +1,14 @@
 ---
 slug: sonix
 title: Sonix
-category: AI
+category: "AI Audio"
 price_model: "Freemium"
 tags: ["transcription", "audio"]
 official_url: "https://sonix.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sonix
 
 Sonix ist ein Transkriptions- und Untertiteltool für Audio- und Videodateien. Es hilft, Interviews, Meetings, Podcasts, Videos oder Forschungsaufnahmen schneller in durchsuchbaren Text zu verwandeln.

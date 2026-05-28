@@ -1,13 +1,14 @@
 ---
 slug: ranorex-studio
 title: Ranorex Studio
-category: Audio
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [test-automation, ui-testing, developer-tools]
 official_url: "https://www.ranorex.com/features/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Ranorex Studio
 
 Ranorex Studio ist eine umfassende Testautomatisierungssoftware, die sich besonders auf UI-Testing spezialisiert hat. Mit einer benutzerfreundlichen Oberfläche und leistungsstarken Funktionen unterstützt das Tool Entwickler und Tester dabei, automatisierte Tests für verschiedenste Anwendungen zu erstellen und auszuführen. Es eignet sich sowohl für Desktop-, Web- als auch mobile Anwendungen und bietet eine breite Palette an Integrationen und Anpassungsmöglichkeiten.

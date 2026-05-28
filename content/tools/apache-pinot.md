@@ -1,13 +1,14 @@
 ---
 slug: apache-pinot
 title: Apache Pinot
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://pinot.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Pinot
 
 Apache Pinot ist eine verteilte, Open-Source-Analysedatenbank, die speziell für Echtzeit-Analysen großer Datenmengen entwickelt wurde. Sie ermöglicht es Entwicklern, komplexe Abfragen mit niedriger Latenz auf Streaming- und Batch-Daten auszuführen. Pinot wird häufig in datenintensiven Anwendungen eingesetzt, bei denen schnelle Einblicke und hohe Skalierbarkeit entscheidend sind.

@@ -1,11 +1,13 @@
 ---
 slug: fellow-app
 title: Fellow.app
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [meetings, productivity, collaboration]
 official_url: "https://fellow.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Fellow.app
 

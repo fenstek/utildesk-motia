@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-api-management
 title: Microsoft Azure API Management
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://azure.microsoft.com/en-us/products/api-management"
 popularity: 90
+tier: "D"
+generated_at: "2026-05-28"
 ---
-
 # Microsoft Azure API Management
 
 Microsoft Azure API Management ist eine umfassende Cloud-Lösung zur Verwaltung, Sicherung und Skalierung von APIs. Die Plattform ermöglicht Entwicklern und Unternehmen, APIs effizient bereitzustellen, zu überwachen und zu schützen – alles über eine zentrale Oberfläche in der Microsoft Azure Cloud. Mit flexiblen Anpassungsmöglichkeiten unterstützt Azure API Management die Integration verschiedenster Backend-Dienste und fördert die Zusammenarbeit zwischen API-Anbietern und Entwicklern.

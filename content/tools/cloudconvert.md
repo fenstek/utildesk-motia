@@ -1,13 +1,15 @@
 ---
 slug: cloudconvert
 title: CloudConvert
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [file-conversion, documents, utilities]
 official_url: "https://cloudconvert.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-15"
+mentionedIn: ["pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
-
 # CloudConvert
 
 CloudConvert ist ein vielseitiges Online-Tool zur Datei- und Dokumentenkonvertierung. Es unterstützt eine breite Palette an Formaten, darunter Dokumente, Bilder, Videos, Audiodateien und mehr. Die Plattform nutzt moderne Technologien, um Konvertierungen schnell und zuverlässig durchzuführen, ohne dass eine lokale Softwareinstallation erforderlich ist. Ideal für Anwender, die regelmäßig Dateien in verschiedene Formate umwandeln müssen, bietet CloudConvert eine benutzerfreundliche Oberfläche kombiniert mit erweiterten Funktionen.

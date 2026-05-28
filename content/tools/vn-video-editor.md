@@ -1,11 +1,13 @@
 ---
 slug: vn-video-editor
 title: VN Video Editor
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [video-editing,mobile,creative-tools]
 official_url: "https://vlognow.me/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-26"
 ---
 # VN Video Editor
 

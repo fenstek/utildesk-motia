@@ -6,8 +6,9 @@ price_model: Nutzungsbasiert
 tags: [automation, workflow, no-code]
 official_url: "https://appian.com/products/platform/overview"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Appian
 
 Appian ist eine führende Low-Code-Plattform zur Automatisierung von Geschäftsprozessen und Workflows. Sie ermöglicht es Unternehmen, schnell und effizient Anwendungen zu erstellen, die manuelle Aufgaben automatisieren und digitale Transformation vorantreiben. Mit einem Fokus auf No-Code- und Low-Code-Entwicklung unterstützt Appian Fachanwender und Entwickler gleichermaßen dabei, komplexe Prozesse ohne tiefgehende Programmierkenntnisse abzubilden.

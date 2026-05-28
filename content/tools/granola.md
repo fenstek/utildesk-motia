@@ -6,6 +6,8 @@ price_model: "Je nach Plan"
 tags: [ai, meeting, notes, assistant]
 official_url: "https://www.granola.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # Granola
 

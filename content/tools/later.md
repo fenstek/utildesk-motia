@@ -1,11 +1,13 @@
 ---
 slug: later
 title: Later
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [automation, marketing]
 official_url: "https://later.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Later
 

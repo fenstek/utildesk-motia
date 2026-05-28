@@ -1,13 +1,14 @@
 ---
 slug: twist
 title: Twist
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://twist.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Twist
 
 Twist ist ein KI-gestütztes Tool, das entwickelt wurde, um Arbeitsabläufe zu optimieren und die Kommunikation in Teams zu verbessern. Es kombiniert Funktionen eines intelligenten Assistenten mit Automatisierungsmöglichkeiten, um repetitive Aufgaben zu vereinfachen und den Workflow effizienter zu gestalten. Durch die Integration moderner KI-Technologien ermöglicht Twist eine strukturierte und klarere Zusammenarbeit, die besonders in dynamischen Arbeitsumgebungen von Vorteil ist.

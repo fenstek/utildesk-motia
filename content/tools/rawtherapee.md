@@ -6,8 +6,9 @@ price_model: Open Source
 tags: [photo, editing, raw, open-source]
 official_url: "https://rawtherapee.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # RawTherapee
 
 RawTherapee ist eine leistungsstarke Open-Source-Software zur Bearbeitung von RAW-Bildern. Sie richtet sich an Fotografen und Bildbearbeiter, die umfangreiche Werkzeuge zur Optimierung und Entwicklung von Rohdaten aus Digitalkameras suchen. Mit einer Vielzahl an Funktionen bietet RawTherapee die Möglichkeit, Bilder detailreich und präzise zu bearbeiten – von der Belichtungskorrektur bis zur Farboptimierung. Die Software ist plattformübergreifend verfügbar und unterstützt zahlreiche Kameramodelle.

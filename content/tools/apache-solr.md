@@ -1,13 +1,14 @@
 ---
 slug: apache-solr
 title: Apache Solr
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [search, data, open-source, developer-tools]
 official_url: "https://solr.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Apache Solr
 
 Apache Solr ist eine Suchplattform auf Basis von Lucene, entwickelt für Volltextsuche, Facetten, Filter, Relevanzsteuerung und skalierbare Suchanwendungen. Sie ist besonders dort relevant, wo Suche ein zentrales Produkt- oder Datenfeature ist.

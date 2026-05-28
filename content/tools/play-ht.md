@@ -1,13 +1,14 @@
 ---
 slug: play-ht
 title: Play.ht
-category: Audio
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [audio, api, content, developer-tools]
 official_url: "https://play.ht/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Play.ht
 
 Play.ht ist eine fortschrittliche Text-zu-Sprache-Plattform, die es ermöglicht, schriftliche Inhalte in natürliche, realistische Audioaufnahmen umzuwandeln. Die Lösung richtet sich an Entwickler, Content-Ersteller und Unternehmen, die hochwertige Sprachsynthese für Podcasts, Hörbücher, E-Learning und andere Anwendungen benötigen. Mit einer breiten Auswahl an Stimmen und Sprachen sowie einer benutzerfreundlichen API bietet Play.ht flexible Möglichkeiten zur Integration von Audioinhalten.

@@ -1,13 +1,14 @@
 ---
 slug: simplybook-me
 title: SimplyBook.me
-category: AI
+category: "AI Coding"
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [booking,scheduling,saas]
 official_url: "https://simplybook.me/en/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # SimplyBook.me
 
 SimplyBook.me ist eine vielseitige Online-Buchungsplattform, die Unternehmen jeder Größe dabei unterstützt, Termine einfach und effizient zu verwalten. Die Software bietet eine breite Palette an Funktionen, die den Buchungsprozess automatisieren und die Kundenkommunikation verbessern. Besonders für Dienstleister, die auf Terminvereinbarungen angewiesen sind, bietet SimplyBook.me eine benutzerfreundliche Lösung, die sich individuell anpassen lässt.

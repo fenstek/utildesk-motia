@@ -1,13 +1,14 @@
 ---
 slug: pixero-ai
 title: Pixero AI
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [advertising, marketing-automation, ai-agents]
 official_url: "https://pixero.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Pixero AI
 
 Pixero AI ist eine innovative KI-basierte Plattform, die speziell für die Automatisierung und Optimierung von Werbe- und Marketingkampagnen entwickelt wurde. Mit Hilfe intelligenter Agenten unterstützt Pixero AI Unternehmen dabei, zielgerichtete Marketingstrategien effizient umzusetzen und so den ROI zu steigern. Die Plattform kombiniert fortschrittliche KI-Technologien mit benutzerfreundlichen Tools, um Marketingprozesse zu vereinfachen und zu beschleunigen.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, education]
 official_url: "https://brainly.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Brainly
 
 Brainly ist eine Online-Lernplattform, die Schülern und Studenten weltweit hilft, Hausaufgaben zu lösen und Wissen auszutauschen. Die Plattform kombiniert Community-basiertes Lernen mit künstlicher Intelligenz, um schnelle und verlässliche Antworten auf schulische Fragen zu bieten. Brainly unterstützt dabei vor allem bei Fächern wie Mathematik, Naturwissenschaften, Sprachen und Sozialwissenschaften und fördert kollaboratives Lernen durch eine aktive Nutzerbasis.

@@ -6,10 +6,11 @@ price_model: Abonnement
 tags: ["design", "vector", "creative", "illustration", "automation"]
 official_url: "https://www.adobe.com/products/illustrator.html"
 affiliate_url: "https://www.adobe.com/products/illustrator.html"
+tier: "C"
+generated_at: "2026-05-28"
 popularity: 77
 description: Professionelles Vektorwerkzeug für Logos, Icons, Illustrationen, Layoutgrafiken und skalierbare Markenassets.
 ---
-
 # Adobe Illustrator
 
 Adobe Illustrator ist der Standard für vektorbasierte Grafikarbeit: Logos, Icons, Illustrationen, Infografiken, Packaging, Typografie und Markenassets, die in jeder Größe sauber bleiben müssen.
@@ -29,8 +30,6 @@ Für schnelle Social-Media-Layouts ist Canva oft effizienter, für UI-Design ist
 - **Packaging und Print:** Druckfähige Grafiken, Layoutbestandteile und Produktionsdaten vorbereiten.
 - **SVG- und Asset-Export:** Grafiken für Websites, Apps und Designsysteme in kontrollierten Formaten ausgeben.
 - **Creative-Cloud-Workflows:** Assets mit Photoshop, InDesign und anderen Adobe-Werkzeugen kombinieren.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-illustrator-editorial.webp" alt="Illustration zu Adobe Illustrator: präzise Vektorformen und Kurven auf einem technischen Zeichenblatt" loading="lazy" decoding="async" />

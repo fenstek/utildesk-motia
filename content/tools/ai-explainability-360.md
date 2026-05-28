@@ -1,13 +1,14 @@
 ---
 slug: ai-explainability-360
 title: AI Explainability 360
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [ml, explainability, ai]
 official_url: "https://github.com/Trusted-AI/AIX360"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AI Explainability 360
 
 AI Explainability 360 ist ein Open-Source-Toolkit, das entwickelt wurde, um die Erklärbarkeit von Machine-Learning-Modellen zu verbessern. Es bietet eine Vielzahl von Algorithmen und Methoden, mit denen Entwickler, Data Scientists und Forscher die Vorhersagen und Entscheidungen von KI-Systemen verständlicher und transparenter machen können. Das Toolkit unterstützt verschiedene Modelle und Anwendungsfälle, von einfachen Klassifikatoren bis hin zu komplexen neuronalen Netzen.

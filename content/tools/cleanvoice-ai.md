@@ -1,13 +1,14 @@
 ---
 slug: cleanvoice-ai
 title: Cleanvoice AI
-category: Audio
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [ai, audio, editing, automation]
 official_url: "https://cleanvoice.ai/"
 popularity: 58
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Cleanvoice AI
 
 Cleanvoice AI ist ein intelligentes Audio-Tool, das speziell entwickelt wurde, um die Nachbearbeitung von Audioaufnahmen zu automatisieren und zu vereinfachen. Es nutzt künstliche Intelligenz, um Störgeräusche, Füllwörter und andere unerwünschte Elemente in Audioaufnahmen automatisch zu erkennen und zu entfernen. So hilft Cleanvoice AI dabei, professionelle Audiodateien schneller und effizienter zu erstellen, ohne dass umfangreiche manuelle Bearbeitung nötig ist.

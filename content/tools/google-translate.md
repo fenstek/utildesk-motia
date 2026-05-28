@@ -1,15 +1,16 @@
 ---
 slug: google-translate
 title: Google Translate
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://translate.google.com"
 created_at: 2026-02-11
 updated_at: 2026-05-21
 popularity: 46
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Google Translate
 
 Google Translate ist ein weit verbreitetes Online-Übersetzungstool, das mithilfe von Künstlicher Intelligenz (KI) Texte, Webseiten und Dokumente in über 100 Sprachen übersetzen kann. Es bietet sowohl eine einfache Benutzeroberfläche als auch leistungsstarke Funktionen, die den Zugang zu fremdsprachigen Inhalten erleichtern und die Kommunikation über Sprachbarrieren hinweg ermöglichen. Als freemium-Service stellt Google Translate eine Basisversion kostenfrei zur Verfügung, ergänzt durch optionale Funktionen und Integrationen.
@@ -31,7 +32,6 @@ Google Translate eignet sich für eine breite Nutzergruppe, darunter:
 - Entwickler und Content-Ersteller, die Übersetzungsfunktionen in ihre eigenen Anwendungen integrieren wollen.
 
 Die einfache Handhabung macht Google Translate besonders attraktiv für Nutzer ohne spezielle technische Vorkenntnisse, während die API und erweiterte Funktionen auch professionelle Anforderungen abdecken.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/google-translate-editorial.webp" alt="Illustration zu Google Translate: abstrakte Sprachkarten und Reisekarten verbinden sich zu einem ?bersetzungsfluss" loading="lazy" decoding="async" />

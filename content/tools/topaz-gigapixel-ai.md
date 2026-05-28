@@ -1,13 +1,14 @@
 ---
 slug: topaz-gigapixel-ai
 title: Topaz Gigapixel AI
-category: AI
+category: "AI Image"
 price_model: Kostenpflichtig
 tags: [image, photo, upscaling, editing]
 official_url: "https://www.topazlabs.com/topaz-gigapixel"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Topaz Gigapixel AI
 
 Topaz Gigapixel AI ist eine spezialisierte Software zur Bildvergrößerung und -verbesserung, die künstliche Intelligenz nutzt, um Fotos ohne Qualitätsverlust hochzuskalieren. Mit fortschrittlichen Algorithmen analysiert das Programm Bilddetails und rekonstruiert fehlende Informationen, um gestochen scharfe, hochauflösende Bilder zu erzeugen. Diese Lösung eignet sich besonders für Fotografen, Designer und alle, die qualitativ hochwertige Bildvergrößerungen benötigen.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [chat, communication, open-source, collaboration]
 official_url: "https://www.rocket.chat/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Rocket.Chat
 
 Rocket.Chat ist eine vielseitige Open-Source-Kommunikationsplattform, die Teams und Organisationen dabei unterstützt, effektiv zusammenzuarbeiten. Als Chat- und Kollaborationstool bietet Rocket.Chat eine sichere Umgebung für Nachrichten, Dateiübertragungen und Videoanrufe. Die Plattform ist besonders durch ihre Anpassungsfähigkeit und vielfältigen Integrationsmöglichkeiten bekannt. Mit einem Freemium-Preismodell können Nutzer sowohl eine kostenlose Grundversion als auch erweiterte Funktionen in kostenpflichtigen Plänen nutzen.
@@ -15,7 +16,6 @@ Rocket.Chat ist eine vielseitige Open-Source-Kommunikationsplattform, die Teams 
 ## Für wen ist Rocket.Chat geeignet?
 
 Rocket.Chat richtet sich an kleine, mittlere und große Unternehmen, die eine flexible und sichere Kommunikationslösung suchen. Besonders geeignet ist die Plattform für Organisationen, die Wert auf Datenschutz legen und eine Open-Source-Alternative zu proprietären Chat-Lösungen bevorzugen. Auch Entwicklerteams, Bildungseinrichtungen und Non-Profit-Organisationen profitieren von der Anpassbarkeit und den vielfältigen Integrationsoptionen. Durch die Möglichkeit, Rocket.Chat selbst zu hosten, eignet sich die Plattform für Nutzer mit speziellen Compliance-Anforderungen.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/rocket-chat-editorial.webp" alt="Illustration zu Rocket.Chat: Nachrichtenzettel reisen durch Werkstattraeume, Moderationstor und Werkzeugablage" loading="lazy" decoding="async" />

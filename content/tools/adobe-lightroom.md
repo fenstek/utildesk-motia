@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop-lightroom.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Adobe Lightroom
 
 Adobe Lightroom ist eine leistungsstarke Software zur Bildbearbeitung und -verwaltung, die sich besonders an Fotografen und Kreative richtet. Mit einer intuitiven Benutzeroberfläche und umfangreichen Funktionen ermöglicht Lightroom die schnelle und präzise Bearbeitung von Fotos sowie die Organisation großer Bildbestände. Die Integration moderner KI-Technologien unterstützt dabei, den Workflow zu optimieren und kreative Effekte einfach umzusetzen.

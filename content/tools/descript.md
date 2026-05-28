@@ -1,16 +1,17 @@
 ---
 slug: descript
 title: Descript
-category: AI
+category: "AI Coding"
 price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.descript.com/"
 created_at: 2026-02-13
 updated_at: 2026-05-21
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-21"
+mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
-
-
 # Descript
 
 Descript ist eine innovative AI-gestützte Softwareplattform, die speziell für die Bearbeitung von Audio- und Videoinhalten entwickelt wurde. Mit einer Kombination aus fortschrittlicher Transkription, Text-basiertem Editing und Multimediaschnitt erleichtert Descript die Produktion von Podcasts, Videos und anderen digitalen Medien erheblich. Die intuitive Bedienung und die automatisierten Funktionen machen es zu einem beliebten Werkzeug für Content-Ersteller, Marketer und Kreative aller Erfahrungsstufen.

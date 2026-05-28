@@ -1,11 +1,13 @@
 ---
 slug: apache-spark
 title: Apache Spark
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [big-data,data-engineering,distributed-computing]
 official_url: "https://spark.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Apache Spark
 

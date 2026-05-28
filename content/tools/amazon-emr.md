@@ -1,13 +1,14 @@
 ---
 slug: amazon-emr
 title: Amazon EMR
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://aws.amazon.com/emr/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon EMR
 
 Amazon EMR (Elastic MapReduce) ist ein skalierbarer Cloud-Service von Amazon Web Services, der es Entwicklern und Datenexperten ermöglicht, große Datenmengen effizient zu verarbeiten und zu analysieren. Durch die Kombination bekannter Open-Source-Frameworks wie Apache Hadoop, Spark und Presto unterstützt Amazon EMR die schnelle Durchführung von Big-Data-Workloads in der Cloud. Der Dienst automatisiert das Setup, den Betrieb und das Skalieren von Clustern, um die Datenverarbeitung zu vereinfachen und zu beschleunigen.

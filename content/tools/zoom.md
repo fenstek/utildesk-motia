@@ -1,14 +1,15 @@
 ---
 slug: zoom
 title: Zoom
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.zoom.com/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # Zoom
 
 Zoom ist eine weitverbreitete Kommunikationsplattform, die vor allem für Videokonferenzen, Online-Meetings und Webinare genutzt wird. Durch die Integration von KI-gestützten Funktionen unterstützt Zoom Nutzer dabei, ihre Arbeitsabläufe zu automatisieren und effizienter zu gestalten. Die Plattform ist besonders geeignet für Unternehmen und Teams, die auf eine zuverlässige und skalierbare Lösung für virtuelle Zusammenarbeit setzen.
@@ -27,20 +28,6 @@ Zoom ist besonders nützlich für Support-, Sales-, Kommunikations- und Service-
 
 Bei Zoom sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Zoom lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Als Prüfstück für Zoom eignet sich einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung. Wenn Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Zoom:** Vor dem Rollout sollten Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Zoom:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Zoom:** Kritisch wird es, wenn Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind; dann hilft auch eine gute Oberfläche nur begrenzt.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/zoom-editorial.webp" alt="Illustration zu Zoom: verteilte Meetingfenster leuchten wie Räume in einer gemeinsamen Nachtlandschaft" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Videokonferenzen in HD-Qualität** mit bis zu mehreren hundert Teilnehmern, je nach Plan
@@ -53,10 +40,6 @@ Als Prüfstück für Zoom eignet sich einem echten Kontaktfall mit Eingang, Prio
 - **Webinar-Funktionalitäten** für Veranstaltungen mit großen Teilnehmerzahlen
 - **Sicherheitsfunktionen** wie End-to-End-Verschlüsselung und Meeting-Passwörter
 - **Mobile Apps und plattformübergreifende Unterstützung** für flexibles Arbeiten
-
-- **Praxislauf mit Zoom:** Das Tool sollte mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Zoom:** Das Team braucht eine einfache Methode, um Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Zoom:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

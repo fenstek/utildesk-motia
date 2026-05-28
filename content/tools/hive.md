@@ -1,13 +1,14 @@
 ---
 slug: hive
 title: Hive
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [project-management, collaboration, workflow]
 official_url: "https://hive.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Hive
 
 Hive ist eine Projektmanagement- und Kollaborationsplattform für Aufgaben, Projekte, Ansichten, Automatisierungen und Teamkommunikation. Es will Arbeit nicht in einem einzigen Board einsperren, sondern verschiedene Sichtweisen auf dieselben Aufgaben ermöglichen.

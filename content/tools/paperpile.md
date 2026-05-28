@@ -1,13 +1,14 @@
 ---
 slug: paperpile
 title: Paperpile
-category: Schreiben & Content
+category: "AI Research"
 price_model: Abonnement
 tags: [research, writing, productivity]
 official_url: "https://paperpile.com/"
 popularity: 87
+tier: "D"
+generated_at: "2026-05-28"
 ---
-
 # Paperpile
 
 Paperpile ist ein Literaturverwaltungs- und Zitationswerkzeug für wissenschaftliches Arbeiten, das besonders stark mit Google Docs, Browser-Recherche und cloudbasierter Quellenorganisation zusammenspielt. Es hilft, PDFs, Metadaten, Zitate und Literaturverzeichnisse an einem Ort zu sammeln, damit Schreiben, Lesen und Zitieren nicht in verstreuten Dateien, Tabs und manuellen Listen enden.

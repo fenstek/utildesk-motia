@@ -1,12 +1,14 @@
 ---
 slug: dedoose
 title: Dedoose
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.dedoose.com/"
 popularity: 0
 description: "Dedoose unterstützt qualitative und Mixed-Methods-Forschung mit Codierung, Analyse, Teamarbeit und Datenvisualisierung."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Dedoose
 

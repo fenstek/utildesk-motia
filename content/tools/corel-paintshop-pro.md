@@ -6,8 +6,9 @@ price_model: One-time purchase
 tags: [photo, editing, design, desktop]
 official_url: "https://www.paintshoppro.com/en/products/paintshop-pro/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Corel PaintShop Pro
 
 Corel PaintShop Pro ist eine leistungsstarke Desktop-Software für Foto- und Grafikbearbeitung, die sich besonders an Hobbyfotografen und kreative Designer richtet. Mit einer Vielzahl an Werkzeugen für Bildbearbeitung, Retusche und Gestaltung bietet das Programm eine umfassende Lösung für Nutzer, die professionelle Ergebnisse ohne Abo-Modell erzielen möchten. Durch die Einmalzahlung bleibt der Nutzer flexibel und profitiert von regelmäßigen Updates.

@@ -1,11 +1,13 @@
 ---
 slug: deep-art-effects
 title: Deep Art Effects
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [image-editing, art, creative-tools]
 official_url: "https://www.deeparteffects.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Deep Art Effects
 

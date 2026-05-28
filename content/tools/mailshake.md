@@ -1,13 +1,14 @@
 ---
 slug: mailshake
 title: Mailshake
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [sales,email-marketing,outreach,automation]
 official_url: "https://mailshake.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Mailshake
 
 Mailshake ist ein leistungsstarkes Tool für E-Mail-Marketing und Vertriebsautomation, das Unternehmen dabei unterstützt, ihre Outreach-Kampagnen effizienter zu gestalten. Mit Mailshake lassen sich personalisierte E-Mail-Sequenzen erstellen, automatisieren und nachverfolgen, um die Kontaktaufnahme mit potenziellen Kunden zu optimieren und den Vertriebserfolg zu steigern.

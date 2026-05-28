@@ -1,16 +1,17 @@
 ---
 slug: zapier
 title: Zapier
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [ai, devtools, automation]
 official_url: "http://zapier.com"
 created_at: 2026-02-13
 updated_at: 2026-05-21
 popularity: 3
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
-
-
 # Zapier
 
 Zapier ist eine leistungsstarke Automatisierungsplattform, die es Nutzern ermöglicht, verschiedene Webanwendungen ohne Programmierkenntnisse miteinander zu verbinden. Durch die Automatisierung wiederkehrender Aufgaben spart Zapier Zeit und steigert die Produktivität im Arbeitsalltag. Insbesondere im Bereich Künstliche Intelligenz (KI) und DevTools unterstützt Zapier Unternehmen und Einzelpersonen dabei, Prozesse effizienter zu gestalten.

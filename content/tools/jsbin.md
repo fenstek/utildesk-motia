@@ -1,11 +1,13 @@
 ---
 slug: jsbin
 title: JSBin
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [developer-tools, web, open-source]
 official_url: "https://jsbin.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # JSBin
 

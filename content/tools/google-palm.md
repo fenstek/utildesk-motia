@@ -1,13 +1,14 @@
 ---
 slug: google-palm
 title: Google PaLM
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [automation, productivity, developer-tools]
 official_url: "https://blog.google/innovation-and-ai/products/google-palm-2-ai-large-language-model/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google PaLM
 
 Google PaLM (Pathways Language Model) ist ein fortschrittliches KI-Sprachmodell, das von Google entwickelt wurde. Es nutzt neueste Deep-Learning-Technologien, um natürliche Sprache zu verstehen und zu generieren. PaLM eignet sich für vielfältige Anwendungen in den Bereichen Automatisierung, Produktivitätssteigerung und Entwickler-Tools. Durch seine Skalierbarkeit und Flexibilität unterstützt es Unternehmen und Entwickler dabei, komplexe Sprachaufgaben effizient zu bewältigen.

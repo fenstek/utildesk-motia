@@ -1,13 +1,14 @@
 ---
 slug: bitwig-studio
 title: Bitwig Studio
-category: Audio
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [music-production,daw,audio]
 official_url: "https://www.bitwig.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Bitwig Studio
 
 Bitwig Studio ist eine moderne Digital Audio Workstation (DAW), die sich durch Flexibilität und umfangreiche kreative Möglichkeiten auszeichnet. Entwickelt für Musiker, Produzenten und Sounddesigner, bietet Bitwig Studio eine modulare Umgebung für die Musikproduktion, die sowohl Einsteigern als auch Profis zahlreiche Werkzeuge zur Verfügung stellt. Mit einer intuitiven Benutzeroberfläche und innovativen Features unterstützt Bitwig Studio die Umsetzung von Ideen in allen Musikstilen.

@@ -6,8 +6,9 @@ price_model: Free
 tags: [chat, communication, community, productivity]
 official_url: "https://telegram.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # Telegram
 
 Telegram ist eine cloud-basierte Instant-Messaging-App, die sich durch hohe Geschwindigkeit, Sicherheit und vielseitige Funktionen auszeichnet. Sie ermöglicht es Nutzern, Nachrichten, Medien und Dateien schnell und unkompliziert zu senden sowie Gruppen und Kanäle für den Austausch innerhalb von Communities zu erstellen. Telegram ist kostenlos verfügbar und auf verschiedenen Plattformen wie Smartphones, Tablets und Desktop-Computern einsetzbar.

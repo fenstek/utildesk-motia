@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-cognitive-search
 title: Microsoft Azure Cognitive Search
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [search, ai, cloud, developer-tools]
 official_url: "https://azure.microsoft.com/en-us/products/ai-services/ai-search/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Cognitive Search
 
 Microsoft Azure Cognitive Search ist ein cloudbasierter Suchdienst, der Entwicklern leistungsstarke Suchfunktionen mit integrierter künstlicher Intelligenz (KI) bietet. Er ermöglicht es, strukturierte und unstrukturierte Daten einfach zu durchsuchen und relevante Ergebnisse schnell bereitzustellen. Durch die Kombination von Suchtechnologien mit KI-gestützten Features lassen sich maßgeschneiderte Sucherlebnisse für Web-, Mobile- und Unternehmensanwendungen entwickeln.

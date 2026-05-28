@@ -1,16 +1,17 @@
 ---
 slug: synthesia
 title: Synthesia
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "video", "marketing"]
 official_url: "https://www.synthesia.io"
 affiliate_url: "https://www.synthesia.io"
+tier: "C"
+generated_at: "2026-05-21"
 created_at: 2026-02-07
 updated_at: 2026-05-21
 popularity: 0
 ---
-
 # Synthesia
 
 Synthesia ist eine KI-gestützte Videoproduktionsplattform, die es ermöglicht, Videos mit virtuellen Avataren und automatisierter Sprachsynthese zu erstellen. Ohne Vorkenntnisse in Videobearbeitung können Nutzer professionelle Präsentationen, Schulungsvideos oder Marketinginhalte schnell und einfach generieren. Die Plattform nutzt moderne KI-Technologien, um Texte in realistisch wirkende Videos umzuwandeln.
@@ -29,8 +30,6 @@ Synthesia richtet sich an Unternehmen, Marketingteams, Bildungseinrichtungen und
 - HR- und Schulungsabteilungen, die Lerninhalte effizient vermitteln möchten  
 - Content Creator, die ohne großen Aufwand qualitativ hochwertige Videos produzieren möchten  
 - Kleine und mittlere Unternehmen, die ihre Online-Präsenz mit Videos ausbauen wollen  
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/synthesia-editorial.webp" alt="Illustration zu Synthesia: Videostudio mit abstrakten Präsentationsszenen und Produktionsablauf" loading="lazy" decoding="async" />

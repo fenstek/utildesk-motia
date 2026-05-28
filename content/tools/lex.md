@@ -1,13 +1,14 @@
 ---
 slug: lex
 title: Lex
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [ai, writing, productivity, creative]
 official_url: "https://lex.page/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Lex
 
 Lex ist ein innovatives KI-Tool, das speziell für das Schreiben und die kreative Textproduktion entwickelt wurde. Es unterstützt Nutzer dabei, produktiver zu arbeiten, indem es Schreibprozesse automatisiert und kreative Ideen generiert. Durch seine intuitive Bedienung eignet sich Lex sowohl für Einzelanwender als auch für Teams, die ihre Content-Erstellung effizienter gestalten möchten.

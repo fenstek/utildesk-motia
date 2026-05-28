@@ -1,13 +1,14 @@
 ---
 slug: solvea
 title: Solvea
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [customer-service, scheduling, conversational-ai]
 official_url: "https://solvea.cx/"
 popularity: 15
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Solvea
 
 Solvea ist eine fortschrittliche KI-basierte Plattform, die speziell für die Automatisierung von Kundenservice und Terminplanung entwickelt wurde. Mit ihrem Fokus auf konversationelle KI ermöglicht Solvea Unternehmen, den Kundenkontakt effizienter zu gestalten und gleichzeitig die Kundenzufriedenheit zu erhöhen. Die Lösung unterstützt dabei, wiederkehrende Anfragen automatisiert zu beantworten und Termine flexibel zu koordinieren.

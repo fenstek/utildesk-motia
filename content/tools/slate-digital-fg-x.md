@@ -1,13 +1,14 @@
 ---
 slug: slate-digital-fg-x
 title: Slate Digital FG-X
-category: Audio
+category: "Audio & Video"
 price_model: Abonnement
 tags: [audio, mastering, limiter, music]
 official_url: "https://slatedigital.com/fg-x-2-mastering-plugin/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Slate Digital FG-X
 
 Slate Digital FG-X ist ein professionelles Mastering-Tool, das speziell für die Musikproduktion entwickelt wurde. Es kombiniert leistungsstarke Limiter- und Kompressor-Algorithmen, um die Lautstärke eines Tracks zu maximieren, ohne die Klangqualität zu beeinträchtigen. FG-X ist bekannt für seine Fähigkeit, den Sound transparent zu gestalten und gleichzeitig den Mix dynamisch und lebendig zu halten.
@@ -20,20 +21,6 @@ Slate Digital FG-X ist besonders nützlich für Audio-, Podcast-, Video- und Ler
 
 Slate Digital FG-X gewinnt vor allem dann, wenn der Einsatz bewusst eng gestartet wird: ein klarer Zweck, ein überschaubarer Daten- oder Aufgabenraum und ein Review, das nicht erst nach Problemen entsteht.
 
-## Redaktionelle Einschätzung
-
-Slate Digital FG-X lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Ein belastbarer Pilot für Slate Digital FG-X beginnt mit einer echten Aufnahme mit Rohmaterial, Bearbeitung, Export, Hörprobe und Abnahme. Danach geht es nicht um Bauchgefühl, sondern darum, ob Verständlichkeit, Produktionszeit, Nachbearbeitungsaufwand, Lautheit und Konsistenz im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Slate Digital FG-X:** Vor dem Rollout sollten Verständlichkeit, Produktionszeit, Nachbearbeitungsaufwand, Lautheit und Konsistenz mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Slate Digital FG-X:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Slate Digital FG-X:** Ohne klare Regeln wird der Nutzen schwach, sobald Ausgangsmaterial, Rechte, Zielplattformen, Lautheitsziele und Qualitätsmaßstäbe nicht festgelegt sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/slate-digital-fg-x-editorial.webp" alt="Illustration zu Slate Digital FG-X: Mastering-Halle mit Pegelboegen und Klangdruck" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Intelligenter Limiter:** Maximiert die Lautstärke, ohne Verzerrungen oder unerwünschte Artefakte zu erzeugen.  
@@ -43,10 +30,6 @@ Ein belastbarer Pilot für Slate Digital FG-X beginnt mit einer echten Aufnahme 
 - **Anpassbare Presets:** Bietet eine Vielzahl von Voreinstellungen für unterschiedliche Musikstile und Ausgangssituationen.  
 - **Visuelle Metering-Tools:** Zeigt Lautheitspegel, Dynamikumfang und Limiter-Aktivität in Echtzeit an.  
 - **Integrierte Lautheitskontrolle:** Ermöglicht die Einhaltung von Broadcast- und Streaming-Standards.
-
-- **Praxislauf mit Slate Digital FG-X:** Das Tool sollte mit einer echten Aufnahme mit Rohmaterial, Bearbeitung, Export, Hörprobe und Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Slate Digital FG-X:** Das Team braucht eine einfache Methode, um Verständlichkeit, Produktionszeit, Nachbearbeitungsaufwand, Lautheit und Konsistenz nach dem Einsatz zu prüfen.
-- **Übergabe mit Slate Digital FG-X:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

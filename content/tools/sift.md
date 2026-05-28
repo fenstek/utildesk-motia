@@ -1,14 +1,15 @@
 ---
 slug: sift
 title: Sift
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["writing", "data"]
 official_url: 'https://sift.com/'
 created_at: "2026-02-08"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sift
 
 Sift ist ein KI-gestütztes Tool, das darauf ausgelegt ist, Daten intelligent zu filtern, zu analysieren und relevante Informationen schnell zugänglich zu machen. Mit seiner benutzerfreundlichen Oberfläche und leistungsstarken Algorithmen unterstützt Sift Anwender dabei, große Datenmengen effizient zu durchforsten und wertvolle Erkenntnisse zu gewinnen – sei es für Forschung, Business Intelligence oder Content-Management.

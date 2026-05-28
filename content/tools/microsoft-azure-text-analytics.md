@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-text-analytics
 title: Microsoft Azure Text Analytics
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [ai, nlp, api]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Text Analytics
 
 Microsoft Azure Text Analytics ist ein Cloud-basierter Dienst, der fortschrittliche KI-gestützte Textverarbeitungsfunktionen bietet. Er ermöglicht Unternehmen, unstrukturierte Textdaten effizient zu analysieren und daraus wertvolle Erkenntnisse zu gewinnen. Mit leistungsfähigen Natural Language Processing (NLP)-Algorithmen unterstützt das Tool die automatische Erkennung von Stimmungen, Schlüsselbegriffen, Sprache und Entitäten in Texten.

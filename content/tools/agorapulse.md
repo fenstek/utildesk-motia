@@ -1,13 +1,14 @@
 ---
 slug: agorapulse
 title: Agorapulse
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: ["social-media", "marketing", "automation", "analytics"]
 official_url: "https://www.agorapulse.com/"
 popularity: 74
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Agorapulse
 
 Agorapulse ist ein vielseitiges Social-Media-Management-Tool, das Unternehmen und Agenturen dabei unterstützt, ihre Social-Media-Kanäle effizient zu verwalten. Mit Funktionen zur Planung, Überwachung, Analyse und Interaktion bietet Agorapulse eine zentrale Plattform, die den Arbeitsalltag im Social-Media-Management erleichtert. Besonders durch seine benutzerfreundliche Oberfläche und Automatisierungsoptionen ist es eine beliebte Wahl für Teams, die ihre Online-Präsenz optimieren möchten.

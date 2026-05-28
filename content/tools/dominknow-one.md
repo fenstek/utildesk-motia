@@ -1,13 +1,14 @@
 ---
 slug: dominknow-one
 title: DominKnow | ONE
-category: AI
+category: "AI Writing"
 price_model: Abonnement
 tags: [education, authoring, content, collaboration]
 official_url: "https://dominknow.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # DominKnow | ONE
 
 DominKnow | ONE ist eine leistungsstarke Authoring- und Kollaborationsplattform, die speziell für die Erstellung von Bildungsinhalten entwickelt wurde. Mit einer Kombination aus intuitiven Tools und KI-gestützten Funktionen unterstützt DominKnow | ONE Teams dabei, interaktive, ansprechende und multimediale Lernmaterialien effizient zu produzieren und zu verwalten. Die Plattform eignet sich besonders für Unternehmen, Bildungseinrichtungen und Content-Entwickler, die Wert auf Zusammenarbeit und flexible Content-Erstellung legen.

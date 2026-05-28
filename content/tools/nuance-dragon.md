@@ -1,13 +1,14 @@
 ---
 slug: nuance-dragon
 title: Nuance Dragon
-category: AI
+category: "AI Audio"
 price_model: Kostenpflichtig, Abonnement
 tags: [voice, transcription, productivity]
 official_url: "https://dragon.nuance.com/en-us/dragon"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Nuance Dragon
 
 Nuance Dragon ist eine leistungsstarke Spracherkennungssoftware, die es ermöglicht, gesprochene Sprache in Text umzuwandeln. Die Software wird vor allem für Diktate, Transkriptionen und zur Steigerung der Produktivität in verschiedenen Berufsfeldern eingesetzt. Mit hoher Erkennungsgenauigkeit und vielfältigen Anpassungsmöglichkeiten unterstützt Nuance Dragon Anwender dabei, ihre Arbeitsabläufe durch Spracheingabe zu optimieren.

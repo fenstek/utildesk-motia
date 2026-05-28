@@ -1,13 +1,14 @@
 ---
 slug: gotowebinar
 title: GoToWebinar
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [webinar, meetings, marketing, communication]
 official_url: "https://www.goto.com/webinar"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # GoToWebinar
 
 GoToWebinar ist eine professionelle Webinar-Plattform, die speziell für Marketing- und Kommunikationszwecke entwickelt wurde. Mit dieser Lösung lassen sich Online-Seminare, Schulungen und Meetings einfach planen, durchführen und auswerten. Die Plattform bietet vielfältige Funktionen, die auf die Bedürfnisse von Unternehmen zugeschnitten sind, die ihre Zielgruppen digital erreichen und aktiv einbinden möchten.

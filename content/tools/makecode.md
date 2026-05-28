@@ -1,13 +1,14 @@
 ---
 slug: makecode
 title: MakeCode
-category: Developer
+category: "Entwickler-Tools"
 price_model: Free
 tags: [education, coding, block-coding, developer-tools]
 official_url: "https://www.microsoft.com/en-us/makecode"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # MakeCode
 
 MakeCode ist eine kostenlose Programmierplattform, die speziell entwickelt wurde, um das Erlernen von Programmieren für Anfänger und Fortgeschrittene gleichermaßen zugänglich zu machen. Mit einer intuitiven blockbasierten Schnittstelle und der Möglichkeit, auch in JavaScript zu programmieren, bietet MakeCode eine flexible Umgebung für Bildung, Hobby und erste Entwicklerprojekte.

@@ -6,8 +6,9 @@ price_model: Free
 tags: [notes,productivity,workspace,collaboration]
 official_url: "https://workspace.google.com/products/keep/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Google Keep
 
 Google Keep ist ein kostenloses Notiz- und Organisationstool von Google, das Nutzern hilft, Ideen, Listen und Erinnerungen schnell und unkompliziert festzuhalten. Die Anwendung ist sowohl als Webversion als auch als mobile App verfügbar und ermöglicht es, Notizen in verschiedenen Formaten wie Text, Bildern oder Sprachnotizen zu erstellen. Dank der Integration in das Google-Ökosystem ist Google Keep besonders für Nutzer geeignet, die bereits andere Google-Dienste verwenden.

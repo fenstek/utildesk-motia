@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [mobile, communication, productivity]
 official_url: "https://facemojikeyboard.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Facemoji
 
 Facemoji ist eine mobile Tastatur-App, die darauf ausgelegt ist, die Kommunikation auf Smartphones durch personalisierte Emojis, GIFs und Sticker zu verbessern. Sie kombiniert kreative Ausdrucksmöglichkeiten mit praktischen Funktionen, um die Produktivität beim Schreiben zu steigern und die Kommunikation lebendiger zu gestalten.

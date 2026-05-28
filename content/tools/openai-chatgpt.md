@@ -1,14 +1,15 @@
 ---
 slug: openai-chatgpt
 title: OpenAI ChatGPT
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [assistant, chatbot, writing, productivity, coding]
 official_url: "https://chatgpt.com/overview"
 popularity: 0
 disabled: true
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # OpenAI ChatGPT
 
 OpenAI ChatGPT ist ein fortschrittlicher KI-basierter Sprachassistent, der auf der GPT-Architektur basiert. Er ermöglicht natürliche und flüssige Unterhaltungen, unterstützt beim Schreiben von Texten, beim Programmieren und verbessert die Produktivität durch intelligente Automatisierung von Aufgaben. Dank seiner vielseitigen Einsatzmöglichkeiten findet ChatGPT in vielen Bereichen Anwendung – von der Kundenbetreuung bis hin zur kreativen Texterstellung.
@@ -53,7 +54,6 @@ Die Flexibilität von ChatGPT macht es sowohl für Einsteiger als auch für prof
 - Kostenpflichtige Versionen können für intensive Nutzer teuer werden.
 - Manchmal entstehen ungenaue oder unvollständige Informationen.
 - Abhängigkeit von Internetverbindung und Serververfügbarkeit.
-
 
 ## Was im Alltag wirklich zählt
 

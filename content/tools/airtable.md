@@ -1,14 +1,16 @@
 ---
 slug: airtable
 title: Airtable
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["data", "automation"]
 official_url: "https://airtable.com"
 popularity: 73
 updated_at: 2026-05-21
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
-
 # Airtable
 
 Airtable ist eine flexible Cloud-basierte Plattform, die Elemente von Tabellenkalkulationen mit Datenbankfunktionen kombiniert. Sie ermöglicht es Teams und Einzelpersonen, Daten strukturiert zu verwalten, zu organisieren und zu automatisieren. Dank seiner benutzerfreundlichen Oberfläche und leistungsstarken Integrationen unterstützt Airtable zahlreiche Anwendungsfälle von Projektmanagement bis hin zu Content-Planung. Mit AI-gestützten Features lässt sich die Arbeit noch effizienter gestalten.

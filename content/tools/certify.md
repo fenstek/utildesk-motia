@@ -1,13 +1,14 @@
 ---
 slug: certify
 title: Certify
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.emburse.com/products/certify-is-professional"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Certify
 
 Certify ist ein KI-gestütztes Tool, das entwickelt wurde, um Arbeitsabläufe zu automatisieren und als intelligenter Assistent in verschiedenen Branchen zu fungieren. Es unterstützt Unternehmen dabei, repetitive Aufgaben zu minimieren, die Effizienz zu steigern und Prozesse zu optimieren. Durch die Integration von Automatisierungsfunktionen und Workflow-Management erleichtert Certify die Organisation und Durchführung komplexer Aufgaben.

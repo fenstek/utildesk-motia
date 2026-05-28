@@ -1,12 +1,15 @@
 ---
 slug: uipath
 title: UiPath
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: ["automation", "workflow", "data"]
 official_url: "https://www.uipath.com/"
 popularity: 9
 description: UiPath ist eine Enterprise-Plattform für Robotic Process Automation, Prozessautomatisierung und KI-gestützte Business-Workflows.
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # UiPath
 

@@ -6,10 +6,11 @@ price_model: Je nach Plan
 tags: ["api", "analytics", "nlp", "text", "developer"]
 official_url: "https://www.meaningcloud.com/"
 affiliate_url: "https://www.meaningcloud.com/"
+tier: "C"
+generated_at: "2026-05-17"
 popularity: 0
 description: Textanalyse-API für Sentiment, Themen, Klassifikation, Extraktion und semantische Verarbeitung.
 ---
-
 # MeaningCloud
 
 MeaningCloud ist eine Textanalyse-Plattform mit APIs für Sentiment, Themen, Klassifikation, Extraktion und semantische Verarbeitung.
@@ -21,7 +22,6 @@ Das Tool ist interessant, wenn Text nicht nur gelesen, sondern systematisch ausg
 MeaningCloud passt zu Teams, die größere Mengen Text in strukturierte Signale verwandeln wollen: Customer-Experience, Support, Marktforschung, Medienanalyse, Compliance oder Produktfeedback. Besonders relevant ist es, wenn Sentiment, Themen, Kategorien oder Entitäten regelmäßig ausgewertet werden sollen.
 
 Für einzelne Texte oder gelegentliche Analyse ist ein leichtes KI-Tool oft schneller. MeaningCloud lohnt sich eher, wenn Textanalyse wiederholbar, integrierbar und messbar werden soll.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/meaningcloud-editorial.webp" alt="Illustration zu MeaningCloud: semantische Wolken, Entit?ten und Klassifikationspfade ?ber einem Arbeitstisch" loading="lazy" decoding="async" />

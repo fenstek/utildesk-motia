@@ -1,13 +1,14 @@
 ---
 slug: dovetail
 title: Dovetail
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://dovetail.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dovetail
 
 Dovetail ist ein KI-gestütztes Tool, das speziell für die Analyse und Organisation von qualitativen Daten entwickelt wurde. Es hilft Teams, Erkenntnisse aus Interviews, Umfragen und anderen Datenquellen effizient zu extrahieren, zu kategorisieren und zu visualisieren. Dabei unterstützt Dovetail den gesamten Workflow von der Datenerfassung bis zur Berichterstellung und erleichtert so die Zusammenarbeit und Entscheidungsfindung.

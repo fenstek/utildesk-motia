@@ -1,13 +1,14 @@
 ---
 slug: crowdstrike-falcon
 title: CrowdStrike Falcon
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.crowdstrike.com/en-us/platform/"
 popularity: 54
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # CrowdStrike Falcon
 
 CrowdStrike Falcon ist eine führende Endpoint-Sicherheitsplattform, die moderne Technologien wie künstliche Intelligenz (KI) und Cloud-Computing nutzt, um Unternehmen vor Cyberbedrohungen zu schützen. Die Lösung bietet umfassenden Schutz gegen Malware, Ransomware und andere Angriffe, indem sie Bedrohungen in Echtzeit erkennt und darauf reagiert. CrowdStrike Falcon ist besonders für Unternehmen geeignet, die ein robustes, skalierbares und intelligentes Sicherheitssystem benötigen.

@@ -1,13 +1,14 @@
 ---
 slug: elucidat
 title: Elucidat
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.elucidat.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Elucidat
 
 Elucidat ist eine cloudbasierte Plattform zur Erstellung von E-Learning-Inhalten, die durch KI-gestützte Automatisierung und benutzerfreundliche Workflows besticht. Sie ermöglicht es Unternehmen und Bildungseinrichtungen, schnell und effektiv interaktive Online-Kurse zu entwickeln, ohne dass tiefgehende Programmierkenntnisse erforderlich sind. Die Plattform unterstützt die Zusammenarbeit im Team und sorgt für konsistente, ansprechende Lerninhalte, die auf verschiedenen Geräten funktionieren.

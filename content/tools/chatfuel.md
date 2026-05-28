@@ -1,13 +1,14 @@
 ---
 slug: chatfuel
 title: Chatfuel
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [assistant,workflow]
 official_url: "https://chatfuel.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Chatfuel
 
 Chatfuel ist eine leistungsstarke Plattform zur Erstellung von Chatbots, die vor allem für Facebook Messenger entwickelt wurde. Sie ermöglicht es Unternehmen und Einzelpersonen, ohne umfangreiche Programmierkenntnisse automatisierte Kommunikationsabläufe zu gestalten. Mit seinem Fokus auf künstliche Intelligenz und Workflow-Automatisierung unterstützt Chatfuel die Verbesserung des Kundenservice, die Lead-Generierung und die Interaktion mit Nutzern auf effiziente Weise.

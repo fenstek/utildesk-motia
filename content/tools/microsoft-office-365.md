@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [office,documents,productivity,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Microsoft Office 365
 
 Microsoft Office 365 ist eine cloudbasierte Suite von Produktivitätsanwendungen, die speziell entwickelt wurde, um die Zusammenarbeit und Effizienz in Unternehmen, Bildungseinrichtungen und im privaten Bereich zu verbessern. Mit Tools wie Word, Excel, PowerPoint, Outlook und Teams ermöglicht Office 365 die Erstellung, Verwaltung und gemeinsame Nutzung von Dokumenten sowie die Kommunikation über verschiedene Geräte hinweg.

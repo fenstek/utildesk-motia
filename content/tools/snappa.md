@@ -1,13 +1,14 @@
 ---
 slug: snappa
 title: Snappa
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: ["design", "image", "social-media"]
 official_url: "https://snappa.com/"
 popularity: 85
+tier: "D"
+generated_at: "2026-05-28"
 ---
-
 # Snappa
 
 Snappa ist ein webbasiertes Design-Tool für schnelle Marketinggrafiken, Social-Media-Posts, Blogbilder, Anzeigenvarianten und einfache Kampagnenvisuals. Der wichtigste Nutzen liegt nicht darin, komplexe Designarbeit zu ersetzen, sondern wiederkehrende visuelle Aufgaben ohne langes Briefing, ohne lokale Software und ohne professionelles Layout-Team sauber zu erledigen. Wer regelmäßig Beitragsbilder, Banner oder einfache Promografiken braucht, bekommt mit Snappa eine pragmatische Produktionsumgebung.

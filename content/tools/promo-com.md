@@ -1,13 +1,14 @@
 ---
 slug: promo-com
 title: Promo.com
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [video-marketing, video-editing, creator-tools]
 official_url: "https://promo.com/"
 popularity: 22
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Promo.com
 
 Promo.com ist eine cloudbasierte Plattform, die es Nutzern ermöglicht, professionelle Marketingvideos schnell und einfach zu erstellen. Die Software kombiniert benutzerfreundliche Video-Editing-Tools mit einer umfangreichen Bibliothek an Vorlagen, Stock-Videos und Musik. Dank integrierter KI-Elemente unterstützt Promo.com besonders Unternehmen und Content Creator dabei, ansprechende visuelle Inhalte für Social Media, Werbung und andere Marketingkanäle zu produzieren.

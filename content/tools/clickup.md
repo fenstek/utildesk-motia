@@ -1,14 +1,15 @@
 ---
 slug: clickup
 title: ClickUp
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://clickup.com/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # ClickUp
 
 ClickUp ist eine vielseitige Plattform für Projektmanagement und Produktivität, die durch KI-gestützte Funktionen unterstützt wird. Sie kombiniert Aufgabenmanagement, Dokumentation, Zeiterfassung und Automatisierungen in einer einzigen Anwendung, um Teams und Einzelpersonen bei der Organisation und effizienten Umsetzung ihrer Projekte zu helfen. Durch die Integration von Künstlicher Intelligenz bietet ClickUp intelligente Assistenten und Automatisierungen, die Routineaufgaben erleichtern und die Zusammenarbeit verbessern.

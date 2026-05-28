@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [education, language, learning, mobile]
 official_url: "https://www.rosettastone.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Rosetta Stone
 
 Rosetta Stone ist eine etablierte Sprachlernsoftware, die Nutzern weltweit dabei hilft, neue Sprachen auf effektive und intuitive Weise zu erlernen. Mit einem Schwerpunkt auf Immersionsmethoden und interaktiven Übungen bietet Rosetta Stone eine umfassende Plattform, die sowohl für Anfänger als auch für Fortgeschrittene geeignet ist. Die Anwendung ist auf verschiedenen Geräten verfügbar, darunter Desktop und mobile Apps, was flexibles Lernen ermöglicht.
@@ -23,7 +24,6 @@ Rosetta Stone richtet sich an eine breite Zielgruppe. Besonders geeignet ist die
 - Sprachbegeisterte, die ihre Kenntnisse durch regelmäßiges Training vertiefen möchten.
 
 Durch die Anpassung an verschiedene Lernniveaus und den Fokus auf alltagsnahe Kommunikation eignet sich Rosetta Stone sowohl für Anfänger als auch für Fortgeschrittene.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/rosetta-stone-editorial.webp" alt="Illustration zu Rosetta Stone: Sprachuebungen werden als Steinplaettchen, Bildkarten und Klangpfade aufgebaut" loading="lazy" decoding="async" />

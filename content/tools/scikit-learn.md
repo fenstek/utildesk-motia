@@ -1,13 +1,14 @@
 ---
 slug: scikit-learn
 title: Scikit-learn
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: [data, analytics, coding, developer-tools]
 official_url: "https://scikit-learn.org"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Scikit-learn
 
 Scikit-learn ist eine weit verbreitete Open-Source-Bibliothek für maschinelles Lernen in Python. Sie bietet eine Vielzahl von Algorithmen und Werkzeugen zur Datenanalyse, Modellierung und Vorhersage. Dank ihrer Einfachheit und Flexibilität ist sie besonders bei Entwicklern, Data Scientists und Forschern beliebt, die effiziente Lösungen für Machine-Learning-Probleme suchen.
@@ -15,7 +16,6 @@ Scikit-learn ist eine weit verbreitete Open-Source-Bibliothek für maschinelles 
 ## Für wen ist Scikit-learn geeignet?
 
 Scikit-learn richtet sich an Programmierer, Data Scientists und Analysten, die maschinelles Lernen in ihre Projekte integrieren möchten. Besonders geeignet ist die Bibliothek für Nutzer, die bereits mit Python arbeiten und eine umfassende, aber zugleich leicht verständliche Sammlung von Algorithmen benötigen. Auch Einsteiger im Bereich Machine Learning profitieren von der klaren API und der umfangreichen Dokumentation. Für Unternehmen, die Prototypen entwickeln oder datengetriebene Modelle implementieren wollen, ist Scikit-learn ebenfalls eine praktische Wahl.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scikit-learn-editorial.webp" alt="Illustration zu Scikit-learn: Beispielkugeln laufen durch Modellspielplaetze, Cluster-Schalen und Validierungsskalen" loading="lazy" decoding="async" />

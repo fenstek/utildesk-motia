@@ -1,12 +1,14 @@
 ---
 slug: ink-by-inkle
 title: Ink by Inkle
-category: AI
+category: "AI Agents"
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://www.inklestudios.com/ink/"
 popularity: 0
 description: "Ink by Inkle ist eine Skriptsprache und Toolchain für interaktive Geschichten, Dialoge und narrative Spiele."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Ink by Inkle
 

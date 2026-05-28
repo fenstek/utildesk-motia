@@ -1,13 +1,14 @@
 ---
 slug: wipo-patentscope
 title: WIPO PATENTSCOPE
-category: Developer
+category: "Entwickler-Tools"
 price_model: Kostenlos
 tags: [patents, research, search, data]
 official_url: "https://patentscope.wipo.int/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # WIPO PATENTSCOPE
 
 WIPO PATENTSCOPE ist eine umfassende Suchplattform der Weltorganisation für geistiges Eigentum (WIPO), die Zugriff auf Millionen von Patenten und Patentdokumenten weltweit bietet. Das Tool ermöglicht es Entwicklern, Forschern und Unternehmen, detaillierte Patentinformationen zu recherchieren, um Innovationen zu fördern und technische Entwicklungen zu verfolgen. Mit einer benutzerfreundlichen Oberfläche und leistungsstarken Suchfunktionen unterstützt PATENTSCOPE bei der Analyse von Patentdaten aus verschiedenen Ländern und Regionen.

@@ -1,13 +1,14 @@
 ---
 slug: onsen-ui
 title: Onsen UI
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [developer-tools,mobile,ui,open-source]
 official_url: "https://onsen.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Onsen UI
 
 Onsen UI ist ein Open-Source-Framework zur Entwicklung von mobilen Anwendungen mit nativer Benutzeroberfläche. Es ermöglicht Entwicklern, plattformübergreifende Apps mit HTML5, CSS und JavaScript zu erstellen, die auf iOS und Android gleichermaßen gut funktionieren. Durch die Integration mit beliebten Frameworks wie Angular, React und Vue vereinfacht Onsen UI den Entwicklungsprozess und bietet eine Vielzahl an UI-Komponenten, die speziell für mobile Geräte optimiert sind.

@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-video-intelligence
 title: Google Cloud Video Intelligence
-category: Video
+category: "Audio & Video"
 price_model: Nutzungsbasiert
 tags: [video,workflow]
 official_url: "https://cloud.google.com/video-intelligence"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Cloud Video Intelligence
 
 Google Cloud Video Intelligence ist ein leistungsstarker Cloud-Dienst zur automatischen Analyse und Erkennung von Inhalten in Videodateien. Mit Hilfe von maschinellem Lernen identifiziert das Tool Objekte, Szenen, Aktivitäten und sogar gesprochene Inhalte in Videos. Es unterstützt Unternehmen dabei, Video-Workflows zu optimieren, Inhalte zu kategorisieren und relevante Informationen schnell zu extrahieren.

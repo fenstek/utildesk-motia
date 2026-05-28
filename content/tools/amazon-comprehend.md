@@ -1,13 +1,14 @@
 ---
 slug: amazon-comprehend
 title: Amazon Comprehend
-category: AI
+category: "AI Infrastructure"
 price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, productivity]
 official_url: "https://aws.amazon.com/comprehend/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Amazon Comprehend
 
 Amazon Comprehend ist ein leistungsstarker, cloudbasierter Dienst von Amazon Web Services (AWS), der natürliche Sprachverarbeitung (Natural Language Processing, NLP) nutzt, um Texte automatisch zu analysieren und zu verstehen. Mit Hilfe von maschinellem Lernen erkennt Amazon Comprehend Schlüsselwörter, Entitäten, Stimmungen und Zusammenhänge in unstrukturierten Textdaten. So unterstützt es Unternehmen dabei, wertvolle Erkenntnisse aus großen Mengen an Textinformationen zu gewinnen und Prozesse zu automatisieren.

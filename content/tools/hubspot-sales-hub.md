@@ -1,14 +1,15 @@
 ---
 slug: hubspot-sales-hub
 title: HubSpot Sales Hub
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Freemium
 tags: [crm, sales, automation, marketing]
 official_url: "https://www.hubspot.com/products/sales"
 popularity: 41
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # HubSpot Sales Hub
 
 HubSpot Sales Hub ist eine umfassende Vertriebsplattform, die Unternehmen dabei unterstützt, ihre Verkaufsprozesse zu optimieren und die Kundenbeziehungen effizienter zu gestalten. Das Tool bietet eine Kombination aus CRM-Funktionalitäten, Automatisierung und Analyse, die speziell auf die Bedürfnisse von Vertriebsteams ausgerichtet sind. Mit einer Freemium-Preisstruktur ermöglicht HubSpot Sales Hub sowohl kleinen als auch großen Unternehmen den Einstieg in ein modernes Sales-Management.
@@ -22,7 +23,6 @@ Wichtig ist, Automatisierung nicht mit Beziehungspflege zu verwechseln. Gute Reg
 ## Für wen ist HubSpot Sales Hub geeignet?
 
 HubSpot Sales Hub richtet sich vor allem an kleine und mittlere Unternehmen, die ihre Vertriebsaktivitäten digitalisieren und automatisieren möchten. Vertriebsmitarbeiter, Teamleiter und Marketingverantwortliche profitieren gleichermaßen von den Funktionen, die den Verkaufsprozess transparenter und effizienter machen. Das Tool ist ideal für Teams, die ein integriertes CRM suchen, das mit Marketing- und Service-Tools verbunden werden kann. Auch Start-ups und Unternehmen, die gerade erst mit einem strukturierten Sales-Management beginnen, finden hier eine flexible Lösung.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/hubspot-sales-hub-editorial.webp" alt="Illustration zu HubSpot Sales Hub: Kontaktkarten und Pipeline-Elemente ordnen einen Vertriebsprozess" loading="lazy" decoding="async" />
@@ -57,7 +57,6 @@ HubSpot Sales Hub richtet sich vor allem an kleine und mittlere Unternehmen, die
 - Einige Integrationen und Features erfordern zusätzliche Kosten.
 - Anpassungsmöglichkeiten sind je nach Plan begrenzt.
 - Supportleistungen variieren je nach gewähltem Preismodell.
-
 
 ## Was im Alltag wirklich zählt
 

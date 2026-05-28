@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [photo,editing,raw,design]
 official_url: "https://www.captureone.com/en"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Capture One
 
 Capture One ist eine professionelle Bildbearbeitungssoftware, die sich insbesondere auf die Bearbeitung von RAW-Fotos spezialisiert hat. Mit leistungsstarken Werkzeugen für Farbkorrektur, Bildorganisation und präzise Retusche ist Capture One eine bevorzugte Wahl für Fotografen und Designer, die Wert auf höchste Bildqualität und effiziente Workflows legen.

@@ -1,13 +1,14 @@
 ---
 slug: jetbrains-gateway
 title: JetBrains Gateway
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [remote-development, ide, developer-tools]
 official_url: "https://www.jetbrains.com/help/idea/jetbrains-gateway.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # JetBrains Gateway
 
 JetBrains Gateway ist ein innovatives Tool, das Entwicklern ermöglicht, remote auf leistungsstarke Entwicklungsumgebungen zuzugreifen. Es bietet eine nahtlose Verbindung zu entfernten Servern oder Cloud-Umgebungen, um JetBrains-IDE-Funktionalitäten ohne lokale Installation bereitzustellen. So können Entwickler effizient an Projekten arbeiten, unabhängig von ihrem Standort oder der Leistungsfähigkeit ihres lokalen Rechners.

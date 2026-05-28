@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [developer,coding,automation]
 official_url: "https://www.sourcery.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sourcery
 
 Sourcery ist ein Entwickler-Tool, das speziell darauf ausgelegt ist, den Programmierprozess durch automatisierte Code-Verbesserungen zu optimieren. Es analysiert bestehenden Code und schlägt Verbesserungen vor, die Lesbarkeit, Effizienz und Wartbarkeit erhöhen. Durch den Einsatz von Künstlicher Intelligenz hilft Sourcery dabei, den Entwicklungsworkflow zu beschleunigen und Fehlerquellen zu minimieren.

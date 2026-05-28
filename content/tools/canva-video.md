@@ -6,8 +6,9 @@ price_model: "Freemium"
 tags: [ai, video, design]
 official_url: "https://www.canva.com/video-editor/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Canva Video
 
 Canva Video ist ein benutzerfreundliches Online-Tool zur Erstellung und Bearbeitung von Videos, das besonders durch seine intuitive Bedienung und vielseitigen Designmöglichkeiten überzeugt. Es richtet sich an Nutzer, die schnell und ohne tiefgehende technische Kenntnisse ansprechende Videos für Social Media, Präsentationen oder Marketingzwecke erstellen möchten. Dank integrierter KI-Funktionen unterstützt Canva Video sowohl Anfänger als auch erfahrene Designer bei der Umsetzung kreativer Videoprojekte.

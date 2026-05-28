@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai,browser,web]
 official_url: "https://www.microsoft.com/en-us/edge?cs=3783549923&form=MA13FJ"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Edge
 
 Microsoft Edge ist ein moderner Webbrowser von Microsoft, der auf Chromium basiert und durch seine Integration von KI-Funktionen sowie vielfältige Produktivitätswerkzeuge überzeugt. Er bietet eine schnelle, sichere und flexible Surferfahrung, die sich sowohl für den privaten als auch den beruflichen Einsatz eignet.

@@ -1,11 +1,13 @@
 ---
 slug: youcam-makeup
 title: YouCam Makeup
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [beauty, photo-editing, mobile]
 official_url: "https://www.perfectcorp.com/consumer/apps/youcam-makeup"
 popularity: 82
+tier: "D"
+generated_at: "2026-05-28"
 ---
 # YouCam Makeup
 
@@ -22,8 +24,6 @@ Die App passt zu privaten Nutzern, Beauty-Creators, Social-Media-Teams und Marke
 - Content-Ideen für Beauty-, Fashion- oder Lifestyle-Formate vorbereiten.
 - Vorher-nachher-Varianten für Looks vergleichen.
 - AR-nahe Produkt- oder Stilvorschauen ausprobieren.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/youcam-makeup-editorial.webp" alt="Illustration zu YouCam Makeup: virtuelle Make-up-Farben und Spiegelansichten für Beauty-Tests" loading="lazy" decoding="async" />

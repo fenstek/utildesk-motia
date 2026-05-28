@@ -1,13 +1,14 @@
 ---
 slug: toonme
 title: ToonMe
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [image, photo, cartoonizer, mobile]
 official_url: "https://app.toonme.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # ToonMe
 
 ToonMe ist eine innovative mobile Anwendung, die es ermöglicht, Fotos mithilfe künstlicher Intelligenz in Cartoon- oder Comic-Stil-Bilder zu verwandeln. Die App nutzt fortschrittliche Algorithmen, um Porträts automatisch zu erkennen und sie in verschiedene künstlerische Stile umzuwandeln. ToonMe erfreut sich großer Beliebtheit bei Nutzern, die kreative und individuelle Profilbilder oder Kunstwerke aus ihren Fotos erstellen möchten.

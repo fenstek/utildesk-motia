@@ -1,14 +1,15 @@
 ---
 slug: h2o-automl
 title: H2O AutoML
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [automl,machine-learning,data,automation]
 official_url: "https://h2o.ai/platform/h2o-automl/"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # H2O AutoML
 
 H2O AutoML automatisiert zentrale Schritte beim Training tabellarischer Machine-Learning-Modelle: Algorithmenauswahl, Hyperparameter-Suche, Vergleich von Modellkandidaten und Ensembles. Der Open-Source-Ansatz macht das Tool besonders interessant für Teams, die reproduzierbare Baselines und schnelle Modellvergleiche wollen, ohne sofort eine kommerzielle AutoML-Plattform einzuführen.
@@ -49,7 +50,6 @@ H2O AutoML richtet sich an Data Scientists, Analystinnen und ML-Teams, die für 
 - Eingeschränkte Anpassungsmöglichkeiten im Vergleich zu komplett manuell erstellten Modellen
 - Ressourcenintensiv bei sehr großen Datensätzen oder komplexen Modellen
 - Fehlende dedizierte Support-Services, da Open Source
-
 
 ## Was im Alltag wirklich zählt
 

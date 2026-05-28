@@ -1,18 +1,18 @@
 ---
 slug: suno-ai
 title: Suno AI
-category: Audio
+category: "Audio & Video"
 price_model: "Freemium"
 tags:
   - ai
   - audio
 official_url: 'https://suno.com'
 affiliate_url: 'https://suno.com'
+tier: "C"
+generated_at: "2026-05-18"
 created_at: "2026-02-08"
 popularity: 0
 ---
-
-
 # Suno AI
 
 Suno AI ist ein innovatives Audio-Tool, das künstliche Intelligenz nutzt, um die Erstellung und Bearbeitung von Audioinhalten zu vereinfachen und zu verbessern. Mit einem Fokus auf intuitive Bedienung und vielseitige Funktionen eignet sich Suno AI sowohl für Einsteiger als auch für professionelle Anwender, die ihre Audio-Projekte effizienter gestalten möchten.
