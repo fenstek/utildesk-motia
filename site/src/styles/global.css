@@ -4199,6 +4199,11 @@ html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
 
 html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
   letter-spacing: normal;
+  text-align: left;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side-right {
+  text-align: right;
 }
 
 html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
