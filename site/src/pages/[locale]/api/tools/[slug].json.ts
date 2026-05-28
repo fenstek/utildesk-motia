@@ -6,6 +6,7 @@ import {
 import { getWordCountFromMarkdown } from "../../../../lib/machineReadable";
 import { listActiveToolEntries } from "../../../../lib/toolEntries.mjs";
 import { SITE_URL } from "../../../../lib/siteMeta";
+import { classifyToolEntry, isCuratedTier, stripTemplateBoilerplate } from "../../../../lib/toolQuality.mjs";
 
 export const prerender = true;
 
@@ -20,7 +21,10 @@ export async function getStaticPaths() {
 export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof listActiveToolEntries>>[number] } }) {
   const { entry } = props;
   const meta = getEnglishToolMeta(entry);
-  const markdown = buildEnglishToolMarkdown(entry);
+  const quality = classifyToolEntry(entry);
+  const markdown = isCuratedTier(quality.tier)
+    ? buildEnglishToolMarkdown(entry)
+    : stripTemplateBoilerplate(buildEnglishToolMarkdown(entry));
 
   return new Response(JSON.stringify({
     version: 1,
@@ -37,6 +41,8 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
       description: meta.description,
       officialUrl: meta.officialUrl || null,
       affiliateUrl: meta.affiliateUrl || null,
+      tier: quality.tier,
+      editorialStatus: isCuratedTier(quality.tier) ? "curated" : "automatic",
       wordCount: getWordCountFromMarkdown(markdown),
       contentMarkdown: markdown,
     },

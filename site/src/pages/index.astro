@@ -261,7 +261,7 @@ const featuredToolsSchema = {
 
 const homePageSchema = buildCollectionPageSchema({
   name: "Utildesk KI-Tools Verzeichnis 2026",
-  description: "Kuratiertes KI-Tools Verzeichnis 2026 für AI-Tools, Automatisierung, Produktivität und Ratgeber.",
+  description: "25 redaktionelle Ratgeber plus indizierte AI-Tools aus öffentlichen Quellen.",
   url: `${SITE_URL}/`,
   about: ["KI-Tools Verzeichnis 2026", "AI-Tools", "Automatisierung", "Produktivität", "Ratgeber"],
   mainEntity: featuredToolsSchema,
@@ -277,7 +277,7 @@ const homepageSchemas = [
 
 <BaseLayout
   title="KI-Tools verstehen, vergleichen und sicher einsetzen - Utildesk"
-  description="Praxisnahe Ratgeber, kuratierte Tool-Vergleiche und klare Empfehlungen für KI-Tools, Automatisierung und sichere Workflows."
+  description="25 redaktionelle Ratgeber und ein indizierter Tool-Katalog aus öffentlichen Quellen für KI-Tools, Automatisierung und sichere Workflows."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/" />
@@ -308,7 +308,7 @@ const homepageSchemas = [
         </h1>
         <p class="terminal-copy">
           <span class="terminal-comment"># </span>
-          Praxisnahe Ratgeber, kuratierte Tool-Vergleiche und klare Empfehlungen für echte Workflows:
+          25 redaktionelle Ratgeber plus {enabledTools.length} indizierte Tools mit öffentlichen Quellen:
           von AI-Coding und Datenschutz bis Automatisierung, Recherche und Produktivität.
         </p>
         <div class="terminal-hero-actions" aria-label="Schnelle Einstiege">

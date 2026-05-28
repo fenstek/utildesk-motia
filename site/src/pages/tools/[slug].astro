@@ -6,10 +6,16 @@ import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favico
 import { CATEGORIES } from "../../lib/categories";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
 import toolAddedAtManifest from "../../data/tool-added-at.json";
+import contentLastmodManifest from "../../data/content-lastmod.json";
 import {
   createToolAddedAtRankMap,
   getToolSearchIndexDecision,
 } from "../../lib/searchIndexPolicy.mjs";
+import {
+  classifyToolEntry,
+  isCuratedTier,
+  stripTemplateBoilerplate,
+} from "../../lib/toolQuality.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
 import {
@@ -37,10 +43,14 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { entry } = Astro.props;
 const { data, content } = entry;
+const contentLastmod = contentLastmodManifest as Record<string, string>;
 const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
 const searchIndexDecision = getToolSearchIndexDecision(entry, {
   addedAtRank: toolAddedAtRankMap.get(entry.slug) ?? 0,
 });
+const toolQuality = classifyToolEntry(entry);
+const isCuratedTool = isCuratedTier(toolQuality.tier);
+const renderedContent = isCuratedTool ? content : stripTemplateBoilerplate(content);
 
 const official_url = data.official_url ? String(data.official_url) : "";
 const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
@@ -159,7 +169,7 @@ const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category
 // Render Markdown to HTML
 
 // Remove the Alternativen/Alternatives section from the main markdown content so it won't appear in the article text
-const contentWithoutAlternatives = content.replace(
+const contentWithoutAlternatives = renderedContent.replace(
   /(?:^|\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\n]*\n[\s\S]*?(?=\n#{1,3}\s|\s*$)/i,
   ""
 ).trim();
@@ -255,7 +265,7 @@ const parseAltItem = (item: string) => {
 };
 
 // ── Extract raw list items from the "Alternatives" section ─────────────────
-const altSection = content.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
+const altSection = renderedContent.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
 const rawAltItems: string[] = altSection
   ? (altSection[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((l) => l.replace(/^[-*]\s+/, "").trim())
   : [];
@@ -324,23 +334,45 @@ const schemaDescription = data.description
     ? String(data.summary)
     : data.excerpt
       ? String(data.excerpt)
-      : getExcerpt(content) || `${title} - Informationen, Features und Anwendungsfälle`;
+      : getExcerpt(renderedContent) || `${title} - Informationen, Features und Anwendungsfälle`;
 
 const metaDescription = schemaDescription.length > 160
   ? `${schemaDescription.slice(0, 157).trimEnd()}...`
   : schemaDescription;
-const featureList = extractFeatureList(content);
-const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(content));
+const featureList = extractFeatureList(renderedContent);
+const faqSchema = isCuratedTool
+  ? buildFaqPageSchema(extractFaqPairsFromMarkdown(renderedContent))
+  : null;
 const schemaCategory = mapToolCategoryToSchemaCategory(category, tags);
 const schemaOffer = buildOfferFromPriceModel(price_model);
 const canonicalUrl = `${SITE_URL}/tools/${slug}/`;
-const checkedDateSource = data.updated_at || data.updatedAt || data.created_at || data.createdAt || data.date;
+const lastmodKey = `content/tools/${slug}.md`;
+const checkedDateSource =
+  data.lastReviewed ||
+  data.last_reviewed ||
+  data.lastReviewedAt ||
+  data.last_reviewed_at ||
+  (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
 const checkedDate = checkedDateSource
   ? new Intl.DateTimeFormat("de-DE", {
       day: "2-digit",
       month: "long",
       year: "numeric",
     }).format(new Date(String(checkedDateSource)))
+  : "";
+const generatedAtSource =
+  contentLastmod[lastmodKey] ||
+  data.generatedAt ||
+  data.generated_at ||
+  data.created_at ||
+  data.createdAt ||
+  data.date;
+const generatedAt = generatedAtSource
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(String(generatedAtSource)))
   : "";
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Startseite", url: `${SITE_URL}/` },
@@ -380,7 +412,7 @@ const softwareApplicationSchema = {
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/api/tools/${slug}.json`} title={`${title} (JSON)`} />
     <link rel="alternate" type="text/markdown" href={`/markdown/tools/${slug}.md`} title={`${title} (Markdown)`} />
-    <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} />
+    {isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} /> : null}
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
@@ -419,11 +451,18 @@ const softwareApplicationSchema = {
       </div>
     )}
 
-    <p class="editorial-note">
-      Kuratiert von <strong>Utildesk Redaktion</strong>
-      {checkedDate ? <span> · zuletzt geprüft: {checkedDate}</span> : null}
-      <span> · <a href="/methodologie/">Methodologie</a></span>
-    </p>
+    {isCuratedTool ? (
+      <p class="editorial-note">
+        Kuratiert von <strong>Utildesk Redaktion</strong>
+        {checkedDate ? <span> · zuletzt geprüft: {checkedDate}</span> : null}
+        <span> · <a href="/methodologie/">Methodologie</a></span>
+      </p>
+    ) : (
+      <p class="editorial-note">
+        Eintrag automatisch erstellt aus öffentlichen Quellen{generatedAt ? <span> · Stand: {generatedAt}</span> : null}
+        <span> · <a href="/methodologie/">Methodologie</a></span>
+      </p>
+    )}
   </div>
 
   <!-- Article Content -->
@@ -455,6 +494,12 @@ const softwareApplicationSchema = {
       <span class="tool-float-logo">
         <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
       </span>
+    ) : null}
+    {!isCuratedTool ? (
+      <blockquote class="tool-disclosure">
+        Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.
+        Für eine kuratierte Einordnung siehe unsere <a href="/ratgeber/">Ratgeber</a>.
+      </blockquote>
     ) : null}
 
     {/* Keep the rendered markdown body intact so all template sections remain visible. */}
@@ -631,6 +676,22 @@ const softwareApplicationSchema = {
   }
 
   .editorial-note a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 98, 89, 0.28);
+    text-underline-offset: 2px;
+  }
+
+  .tool-disclosure {
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.2rem;
+    border-left: 3px solid var(--primary);
+    background: var(--surface-container-low);
+    color: var(--secondary);
+    line-height: 1.65;
+  }
+
+  .tool-disclosure a {
     color: var(--primary);
     text-decoration: underline;
     text-decoration-color: rgba(23, 98, 89, 0.28);
