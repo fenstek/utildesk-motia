@@ -70,6 +70,9 @@ for (const file of toolFiles) {
   const relativePath = `content/tools/${file}`;
   const raw = fs.readFileSync(path.join(toolsDir, file), "utf8");
   const data = parseSimpleFrontmatter(raw);
+  if (data.disabled === true || String(data.disabled || "").toLowerCase() === "true") {
+    continue;
+  }
   const { body } = splitMarkdownDocument(raw);
   const slug = String(data.slug || file.replace(/\.md$/, ""));
 
