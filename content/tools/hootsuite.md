@@ -1,13 +1,14 @@
 ---
 slug: hootsuite
 title: Hootsuite
-category: AI
+category: "AI Agents"
 price_model: "Abonnement"
 tags: [social-media, marketing, analytics, workflow, automation]
 official_url: "https://www.hootsuite.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Hootsuite
 
 Hootsuite ist eine umfassende Plattform für das Management von Social-Media-Kanälen, die Unternehmen und Einzelpersonen dabei unterstützt, ihre Online-Präsenz effizient zu verwalten. Mit Funktionen, die von Planung und Veröffentlichung über Analyse bis hin zur Automatisierung reichen, erleichtert Hootsuite das Social-Media-Marketing und die Workflow-Optimierung.

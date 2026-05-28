@@ -1,12 +1,14 @@
 ---
 slug: quest
 title: Quest
-category: AI
+category: "AI Coding"
 price_model: "Open Source"
 tags: [developer-tools,gaming,open-source,writing]
 official_url: "https://github.com/textadventures/quest"
 popularity: 0
 description: "Quest ist ein Schreib- und Content-Tool für Open-Source-Tool für Textadventures, interaktive Fiction und spielbare Geschichten."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # Quest
 

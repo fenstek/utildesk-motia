@@ -6,10 +6,11 @@ price_model: Abonnement
 tags: ["audio", "voice", "video", "transcription", "editing"]
 official_url: "https://www.descript.com/regenerate"
 affiliate_url: "https://www.descript.com/regenerate"
+tier: "C"
+generated_at: "2026-05-26"
 popularity: 52
 description: Descript-Sprachfunktion für Voice-Cloning, Sprachkorrektur und textbasiertes Audio-Editing.
 ---
-
 # Descript Overdub
 
 Descript Overdub steht für Descripts Ansatz, Sprache wie Text zu bearbeiten. Der aktuelle Fokus liegt rund um KI-Stimme, Regenerate-Funktionen, Transkription und textbasiertes Audio- und Video-Editing.

@@ -1,13 +1,14 @@
 ---
 slug: t-racks-von-ik-multimedia
 title: T-RackS von IK Multimedia
-category: Audio
+category: "Audio & Video"
 price_model: One-time purchase
 tags: [audio, mastering, mixing, music]
 official_url: "https://www.ikmultimedia.com/products/tr6/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # T-RackS von IK Multimedia
 
 T-RackS von IK Multimedia ist eine Suite für Mixing und Mastering mit Modulen für EQ, Kompression, Limiting, Saturation, Metering und analoge Klangfarben. Es richtet sich an Musiker, Produzenten und Engineers, die fertige Audio-Produktionen lauter, ausgewogener und kontrollierter bekommen wollen.

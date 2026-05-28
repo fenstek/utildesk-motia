@@ -1,13 +1,14 @@
 ---
 slug: jitsi-meet
 title: Jitsi Meet
-category: AI
+category: "AI Coding"
 price_model: Open Source, Kostenlos
 tags: [communication, video, meetings, open-source]
 official_url: "https://jitsi.org/jitsi-meet/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Jitsi Meet
 
 Jitsi Meet ist eine Open-Source-Videokonferenzplattform, die es ermöglicht, schnell und einfach Online-Meetings abzuhalten – ganz ohne Registrierung oder Installation. Die Anwendung bietet eine sichere und flexible Lösung für Einzelpersonen, Teams und Organisationen, die auf der Suche nach einer unkomplizierten Kommunikationsmöglichkeit sind. Mit Fokus auf Datenschutz und Benutzerfreundlichkeit ist Jitsi Meet eine beliebte Alternative zu kommerziellen Videokonferenzdiensten.

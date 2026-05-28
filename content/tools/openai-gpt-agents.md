@@ -1,13 +1,15 @@
 ---
 slug: openai-gpt-agents
 title: OpenAI GPT Agents
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, workflow]
 official_url: "https://platform.openai.com/docs/agents"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-16"
+mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen"]
 ---
-
 # OpenAI GPT Agents
 
 OpenAI GPT Agents sind fortschrittliche KI-basierte Werkzeuge, die darauf ausgelegt sind, komplexe Aufgaben durch automatisierte Workflows und intelligente Assistenz zu optimieren. Sie nutzen die Leistungsfähigkeit der GPT-Modelle, um natürliche Sprache zu verstehen und darauf zu reagieren, was eine Vielzahl von Anwendungen in Bereichen wie Kundenservice, Content-Erstellung und Prozessautomatisierung ermöglicht.

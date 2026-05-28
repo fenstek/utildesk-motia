@@ -6,8 +6,9 @@ price_model: One-time purchase
 tags: [photo, editing, design, desktop]
 official_url: "https://www.adobe.com/products/photoshop-elements.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Adobe Photoshop Elements
 
 Adobe Photoshop Elements ist eine benutzerfreundliche Bildbearbeitungssoftware, die speziell für Hobbyfotografen und kreative Anwender entwickelt wurde. Sie bietet eine breite Palette an Werkzeugen zur einfachen Fotoverwaltung, Bearbeitung und Gestaltung, ohne die Komplexität der professionellen Photoshop-Version. Mit seiner intuitiven Oberfläche ermöglicht es Anwendern, beeindruckende Bilder und kreative Projekte auf dem Desktop zu erstellen.

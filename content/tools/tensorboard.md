@@ -1,13 +1,14 @@
 ---
 slug: tensorboard
 title: TensorBoard
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [ml, visualization, developer-tools]
 official_url: "https://www.tensorflow.org/tensorboard?hl=fr"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # TensorBoard
 
 TensorBoard ist ein leistungsstarkes Open-Source-Tool zur Visualisierung von Machine-Learning-Modellen und deren Trainingsprozessen. Es ermöglicht Entwicklern, komplexe Modelle besser zu verstehen, Trainingsfortschritte zu überwachen und wichtige Metriken übersichtlich darzustellen. TensorBoard wurde ursprünglich von Google entwickelt und ist eng mit TensorFlow integriert, kann jedoch auch mit anderen Frameworks verwendet werden.

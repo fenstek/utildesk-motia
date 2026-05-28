@@ -1,12 +1,14 @@
 ---
 slug: google-tasks
 title: Google Tasks
-category: AI
+category: "AI Agents"
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://workspace.google.com/products/tasks/"
 popularity: 0
 description: "Google Tasks ist eine einfache Aufgabenliste im Google-Ökosystem für persönliche To-dos, Gmail-Bezug und Kalendernähe."
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Google Tasks
 

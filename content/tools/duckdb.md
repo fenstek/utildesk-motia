@@ -1,13 +1,14 @@
 ---
 slug: duckdb
 title: DuckDB
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [database, analytics, open-source, developer-tools]
 official_url: "https://duckdb.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # DuckDB
 
 DuckDB ist eine leichtgewichtige, eingebettete relationale Datenbank, die speziell für analytische Workloads entwickelt wurde. Sie ermöglicht schnelle SQL-Abfragen direkt in lokalen Anwendungen oder Skripten, ohne einen separaten Datenbankserver betreiben zu müssen. Als Open-Source-Projekt bietet DuckDB Entwicklern eine flexible und performante Lösung zur Datenanalyse, die sich nahtlos in viele Programmiersprachen und Entwicklungsumgebungen integrieren lässt.

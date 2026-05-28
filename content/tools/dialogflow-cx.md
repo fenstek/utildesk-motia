@@ -1,13 +1,14 @@
 ---
 slug: dialogflow-cx
 title: Dialogflow CX
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [chatbot, automation]
 official_url: "https://cloud.google.com/dialogflow/cx"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dialogflow CX
 
 Dialogflow CX ist eine fortschrittliche Plattform von Google zur Erstellung und Verwaltung von konversationellen KI-Chatbots und virtuellen Assistenten. Sie ermöglicht es Unternehmen, komplexe Dialoge mit natürlicher Sprache zu gestalten und automatisierte Kundeninteraktionen effizient zu steuern. Die Plattform unterstützt dabei die Entwicklung von mehrstufigen Dialogen mit grafischer Benutzeroberfläche und bietet umfangreiche Integrationsmöglichkeiten.

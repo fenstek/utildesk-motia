@@ -1,13 +1,14 @@
 ---
 slug: ourdream-ai
 title: Ourdream.ai
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://ourdream.ai/"
 popularity: 26
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Ourdream.ai
 
 Ourdream.ai ist eine vielseitige KI-gestützte Plattform, die als intelligenter Chatbot und digitaler Assistent konzipiert wurde. Sie unterstützt Nutzer dabei, Aufgaben zu automatisieren, Informationen schnell zu finden und produktiver zu arbeiten. Mit einer benutzerfreundlichen Oberfläche und flexiblen Einsatzmöglichkeiten eignet sich Ourdream.ai sowohl für Privatpersonen als auch für Unternehmen.

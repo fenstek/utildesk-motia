@@ -1,12 +1,14 @@
 ---
 slug: hadoop-mapreduce
 title: Hadoop MapReduce
-category: AI
+category: "AI Coding"
 price_model: "Open Source"
 tags: [big-data, stream-processing, developer-tools]
 official_url: "https://hadoop.apache.org/"
 popularity: 0
 description: "Hadoop MapReduce ist ein Daten- und Automatisierungswerkzeug für klassisches verteiltes Batch-Processing für große Datenmengen im Hadoop-Ökosystem."
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Hadoop MapReduce
 

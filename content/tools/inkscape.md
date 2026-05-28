@@ -1,12 +1,14 @@
 ---
 slug: inkscape
 title: Inkscape
-category: AI
+category: "AI Image"
 price_model: Open Source
 tags: [ai,design,vector,creative,open-source]
 official_url: "https://inkscape.org/"
 popularity: 40
 description: Inkscape ist ein Design- und Kreativwerkzeug für Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen.
+tier: "C"
+generated_at: "2026-05-27"
 ---
 # Inkscape
 
@@ -19,8 +21,6 @@ Bei Inkscape sollte man klein anfangen: ein wiederkehrender Vorgang, ein klares 
 Inkscape muss in einem echten Beispiel zeigen, ob Open-Source-Vektorgrafik für Logos, Icons, Diagramme und skalierbare Illustrationen damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Für Designer, Maker, Bildung, Open-Source-Projekte und Teams mit einfachen Vektoranforderungen ist Inkscape dann sinnvoll, wenn es einen Schritt im Ablauf stabilisiert: weniger Suchen, weniger manuelle Wiederholung, weniger unklare Übergaben.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/inkscape-editorial.webp" alt="Illustration zu Inkscape: offene Vektorkurven entstehen in einer strukturierten Linolschnitt-Werkstatt" loading="lazy" decoding="async" />

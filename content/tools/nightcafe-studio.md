@@ -1,13 +1,14 @@
 ---
 slug: nightcafe-studio
 title: NightCafe Studio
-category: Audio
+category: "Audio & Video"
 price_model: "Freemium"
 tags: [ai,audio]
 official_url: "https://creator.nightcafe.studio/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # NightCafe Studio
 
 NightCafe Studio ist eine innovative Plattform, die sich auf die Erstellung von KI-generierten Audioinhalten spezialisiert hat. Mit fortschrittlichen Algorithmen ermöglicht das Tool Nutzern, einzigartige Klanglandschaften, Musikstücke oder Soundeffekte zu erzeugen – und das auf einfache und intuitive Weise. Besonders für Kreative, Musiker und Entwickler, die neue Wege in der Audioproduktion suchen, bietet NightCafe Studio spannende Möglichkeiten.

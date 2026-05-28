@@ -1,13 +1,14 @@
 ---
 slug: hugging-face-transformers
 title: Hugging Face Transformers
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [coding, developer-tools, api, education]
 official_url: "https://huggingface.co/docs/transformers/index"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Hugging Face Transformers
 
 Hugging Face Transformers ist eine umfangreiche Open-Source-Bibliothek, die moderne vortrainierte Modelle für natürliche Sprachverarbeitung (NLP) und andere KI-Anwendungen bereitstellt. Sie ermöglicht Entwicklern und Forschern den einfachen Zugriff auf leistungsstarke Transformer-Modelle wie BERT, GPT, RoBERTa und viele mehr. Die Bibliothek unterstützt verschiedene Programmiersprachen, ist gut dokumentiert und wird kontinuierlich weiterentwickelt.

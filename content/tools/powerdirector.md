@@ -1,13 +1,14 @@
 ---
 slug: powerdirector
 title: PowerDirector
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [video, editing, content, desktop]
 official_url: "https://www.cyberlink.com/products/powerdirector-video-editing-software/overview_en_US.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # PowerDirector
 
 PowerDirector ist eine leistungsstarke Videobearbeitungssoftware, die sich durch eine benutzerfreundliche Oberfläche und vielfältige Funktionen auszeichnet. Mit integrierten KI-Tools ermöglicht sie sowohl Anfängern als auch Profis, kreative und professionelle Videos auf Desktop-Systemen zu erstellen. Die Software bietet umfangreiche Bearbeitungsmöglichkeiten, Effekte und Vorlagen, die die Produktion von hochwertigem Content erleichtern.

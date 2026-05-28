@@ -1,13 +1,14 @@
 ---
 slug: trello-mit-butler
 title: Trello mit Butler
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: ["automation"]
 official_url: "https://trello.com/butler"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Trello mit Butler
 
 Trello ist ein bekanntes Tool für Projektmanagement und Aufgabenorganisation. Mit Butler, einem integrierten Automatisierungs-Tool, erweitert Trello seine Funktionalität durch KI-gestützte Automatisierungen. Butler ermöglicht es, wiederkehrende Aufgaben und Prozesse innerhalb von Trello-Boards zu automatisieren, was die Effizienz und Produktivität steigert. Dieses Feature ist besonders nützlich für Teams und Einzelpersonen, die ihre Arbeitsabläufe optimieren möchten, ohne externe Automatisierungslösungen zu nutzen.
@@ -21,8 +22,6 @@ Trello mit Butler richtet sich an Nutzer, die ihre Projektmanagementprozesse ver
 - Einzelpersonen, die ihre persönliche Organisation verbessern wollen
 - Unternehmen, die Trello bereits nutzen und Automatisierungen integrieren möchten
 - Nutzer, die eine einfache, integrierte Lösung ohne komplexe Programmierung suchen
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/trello-mit-butler-editorial.webp" alt="Illustration zu trello-mit-butler: Ein Butler verwandelt ein Board in geordnetes Handeln" loading="lazy" decoding="async" />
@@ -52,7 +51,6 @@ Trello mit Butler richtet sich an Nutzer, die ihre Projektmanagementprozesse ver
 - Manche Funktionen erfordern ein kostenpflichtiges Trello-Abo oder Butler-Upgrade
 - Für sehr umfangreiche oder individuelle Automatisierungen eventuell nicht ausreichend
 - Abhängigkeit von Trello als Plattform
-
 
 ## Was im Alltag wirklich zählt
 

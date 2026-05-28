@@ -1,11 +1,13 @@
 ---
 slug: paint-net
 title: Paint.NET
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [image-editing, design, graphics]
 official_url: "https://www.getpaint.net/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # Paint.NET
 

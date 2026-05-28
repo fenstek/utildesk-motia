@@ -1,13 +1,14 @@
 ---
 slug: mattermost
 title: Mattermost
-category: AI
+category: "AI Agents"
 price_model: Freemium, Abonnement, Individuelles Angebot
 tags: [assistant,automation,workflow]
 official_url: "https://mattermost.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Mattermost
 
 Mattermost ist eine Open-Source-Plattform für Teamkommunikation und Zusammenarbeit, die sich durch ihre Anpassungsfähigkeit und Automatisierungsmöglichkeiten auszeichnet. Besonders im Bereich der Künstlichen Intelligenz (KI) bietet Mattermost Funktionen, die Teams unterstützen, ihre Workflows effizienter zu gestalten und repetitive Aufgaben zu automatisieren. Die Plattform kombiniert Chat, Workflow-Automatisierung und AI-gestützte Assistenz in einer sicheren Umgebung, die sich sowohl für kleine Teams als auch für große Unternehmen eignet.
@@ -26,20 +27,6 @@ Mattermost ist besonders nützlich für Support-, Sales-, Kommunikations- und Se
 
 Mattermost gewinnt vor allem dann, wenn der Einsatz bewusst eng gestartet wird: ein klarer Zweck, ein überschaubarer Daten- oder Aufgabenraum und ein Review, das nicht erst nach Problemen entsteht.
 
-## Redaktionelle Einschätzung
-
-Mattermost sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Ein belastbarer Pilot für Mattermost beginnt mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung. Danach geht es nicht um Bauchgefühl, sondern darum, ob Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Mattermost:** Vor dem Rollout sollten Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Mattermost:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Mattermost:** Ohne klare Regeln wird der Nutzen schwach, sobald Kanäle, Zuständigkeiten, Eskalationen und Datenschutzregeln nicht gemeinsam geklärt sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/mattermost-editorial.webp" alt="Illustration zu Mattermost: Teamkanaele, Serverbereiche und Benachrichtigungen laufen in einer sicheren Zusammenarbeit zusammen" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Team-Chat und Messaging:** Echtzeitkommunikation mit Kanälen, Direktnachrichten und Threads.
@@ -52,10 +39,6 @@ Ein belastbarer Pilot für Mattermost beginnt mit einem echten Kontaktfall mit E
 - **Mobile und Desktop-Apps:** Plattformübergreifende Nutzung auf verschiedenen Geräten.
 - **Benutzerdefinierte Bots:** Entwicklung und Einsatz von Bots zur Automatisierung und Unterstützung.
 - **Skalierbarkeit:** Geeignet für kleine Teams bis hin zu großen Unternehmen.
-
-- **Praxislauf mit Mattermost:** Das Tool sollte mit einem echten Kontaktfall mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Mattermost:** Das Team braucht eine einfache Methode, um Antwortzeit, Übergabequalität, Kundenzufriedenheit, Dokumentation und Nacharbeit nach dem Einsatz zu prüfen.
-- **Übergabe mit Mattermost:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

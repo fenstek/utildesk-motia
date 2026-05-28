@@ -1,12 +1,14 @@
 ---
 slug: talon
 title: Talon
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [ai, assistant, productivity, automation, workflow]
 official_url: "https://talonvoice.com/"
 popularity: 10
 description: Talon ist ein Voice-Control- und Automatisierungstool für hands-free Computing, Programmieren und produktive Workflows.
+tier: "C"
+generated_at: "2026-05-28"
 ---
 # Talon
 
@@ -19,8 +21,6 @@ Talon passt zu Power-Usern, Entwicklern und Menschen, die aus ergonomischen oder
 Talon ist geeignet für Power-User, Entwickler und Menschen, die aus ergonomischen, gesundheitlichen oder Produktivitätsgründen hands-free arbeiten möchten. Es geht nicht nur um Diktat, sondern um präzise Steuerung von Editor, Terminal, Browser und Desktop über Sprache, Geräusche, Skripte oder Eye Tracking.
 
 Der beste Fit entsteht bei Nutzern, die bereit sind, ihre Arbeitsweise aktiv zu konfigurieren. Talon ist weniger bequem als typische Sprachassistenten, aber deutlich mächtiger, wenn eigene Befehle und app-spezifische Workflows aufgebaut werden.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/talon-editorial.webp" alt="Illustration zu Talon: Sprachwellen lenken einen Cursor über einen ruhigen Arbeitsplatz" loading="lazy" decoding="async" />

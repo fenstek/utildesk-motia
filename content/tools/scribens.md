@@ -1,11 +1,13 @@
 ---
 slug: scribens
 title: Scribens
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [writing, grammar, productivity, editing]
 official_url: "https://www.scribens.com/"
 popularity: 16
+tier: "C"
+generated_at: "2026-05-27"
 ---
 # Scribens
 
@@ -18,7 +20,6 @@ Vor der Einführung sollte die Frage beantwortet sein, welche Regeln übernommen
 Scribens ist eine gute Option für Organisationen, in denen Grammatik- und Stilprüfung für französische und mehrsprachige Texte regelmäßig Zeit kostet. Der Einstieg lohnt sich besonders für Redaktionen, Lernende und Teams mit wiederkehrenden Textkorrekturen. Ein klarer Verantwortlicher sollte den Prozess begleiten.
 
 Nicht ideal ist das Tool, wenn der Achtungspunkt schwer kontrollierbar bleibt: Stilentscheidungen nicht vollständig ersetzt und Fachkontext übersehen kann. Dann sollte zuerst der Ablauf vereinfacht werden, bevor zusätzliche Software eingeführt wird.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scribens-editorial.webp" alt="Illustration zu Scribens: ein Korrekturtisch mit rotem Stift und stilistischen Markierungen" loading="lazy" decoding="async" />

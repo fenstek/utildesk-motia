@@ -1,13 +1,14 @@
 ---
 slug: tdr-limiter-6-ge
 title: TDR Limiter 6 GE
-category: Audio
+category: "Audio & Video"
 price_model: One-time purchase
 tags: [audio,music,mastering,plugins]
 official_url: "https://www.tokyodawn.net/tdr-limiter6-ge/TDR/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # TDR Limiter 6 GE
 
 Der TDR Limiter 6 GE ist ein professionelles Audio-Plugin, das speziell für das Mastering und die Lautstärkekontrolle entwickelt wurde. Es bietet eine präzise und flexible Dynamikbearbeitung mit mehreren Limiter-Typen und umfangreichen Einstellungsmöglichkeiten. Das Tool ist bekannt für seine hohe Klangqualität und Benutzerfreundlichkeit, was es zu einer beliebten Wahl für Toningenieure und Musikproduzenten macht.

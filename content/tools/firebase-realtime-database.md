@@ -1,13 +1,14 @@
 ---
 slug: firebase-realtime-database
 title: Firebase Realtime Database
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [database, realtime, cloud, developer-tools]
 official_url: "https://firebase.google.com/products/realtime-database"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Firebase Realtime Database
 
 Firebase Realtime Database ist eine cloudbasierte NoSQL-Datenbank, die speziell für Entwickler entwickelt wurde, die Echtzeit-Datenübertragung und Synchronisation in ihren Anwendungen benötigen. Sie ermöglicht das Speichern und Abrufen von Daten in Echtzeit, wodurch Apps dynamisch und reaktionsschnell bleiben. Die Daten werden als JSON gespeichert und automatisch auf allen verbundenen Clients synchronisiert, was besonders für kollaborative Anwendungen, Chat-Apps oder Live-Dashboards von Vorteil ist.

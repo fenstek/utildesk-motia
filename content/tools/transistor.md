@@ -1,12 +1,14 @@
 ---
 slug: transistor
 title: Transistor
-category: AI
+category: "AI Agents"
 price_model: "Abonnement"
 tags: [assistant, automation, workflow]
 official_url: "https://transistor.com/"
 popularity: 0
 description: "Transistor ist ein Audio- und Musikwerkzeug für Podcast-Hosting, Distribution und Analyse für Shows, die regelmäßig erscheinen sollen."
+tier: "C"
+generated_at: "2026-05-25"
 ---
 # Transistor
 

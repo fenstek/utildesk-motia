@@ -1,13 +1,14 @@
 ---
 slug: python
 title: Python
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [programming-language, developer-tools, open-source, coding]
 official_url: "https://www.python.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Python
 
 Python ist eine vielseitige, interpretierte Programmiersprache, die sich durch ihre einfache Syntax und hohe Lesbarkeit auszeichnet. Als Open-Source-Projekt wird Python weltweit von Entwicklern für eine Vielzahl von Anwendungsgebieten genutzt – von Webentwicklung über Datenanalyse bis hin zu künstlicher Intelligenz und wissenschaftlichem Rechnen. Seine umfangreiche Standardbibliothek und eine große Community machen Python zu einem der beliebtesten Werkzeuge für Programmierer aller Erfahrungsstufen.

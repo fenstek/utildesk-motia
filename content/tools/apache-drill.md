@@ -1,11 +1,13 @@
 ---
 slug: apache-drill
 title: Apache Drill
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [data, analytics, developer-tools, open-source]
 official_url: "https://drill.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Apache Drill
 

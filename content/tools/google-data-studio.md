@@ -1,14 +1,15 @@
 ---
 slug: google-data-studio
 title: Google Data Studio
-category: Audio
+category: "Audio & Video"
 price_model: Kostenlos
 tags: ["data", "analytics", "productivity"]
 official_url: "https://lookerstudio.google.com/overview"
 popularity: 0
 disabled: true
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Google Data Studio
 
 Google Data Studio ist ein kostenloses Tool von Google zur Erstellung interaktiver Berichte und Dashboards. Es ermöglicht die einfache Visualisierung und Analyse von Daten aus verschiedenen Quellen, um fundierte Entscheidungen zu treffen. Obwohl primär zur Datenvisualisierung genutzt, kann es auch im Bereich Audio-Analytics eingesetzt werden, etwa zur Auswertung von Nutzerstatistiken oder Streaming-Daten.
@@ -43,7 +44,6 @@ Google Data Studio richtet sich an Datenanalysten, Marketingfachleute, Content-M
 - Einarbeitungszeit für Nutzer ohne Erfahrung in Datenvisualisierung
 - Abhängigkeit von der Internetverbindung, da Cloud-basiert
 - Keine dedizierten Audio-Analysefunktionen, Anpassung durch eigene Datenquellen notwendig
-
 
 ## Was im Alltag wirklich zählt
 

@@ -1,15 +1,16 @@
 ---
 slug: lumiere
 title: Lumiere
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: ["video"]
 official_url: 'http://lumiere.obs.coe.int/'
 affiliate_url: 'http://lumiere.obs.coe.int/'
+tier: "C"
+generated_at: "2026-05-12"
 created_at: "2026-02-11"
 popularity: 0
 ---
-
 # Lumiere
 
 Lumiere ist ein innovatives KI-Tool, das entwickelt wurde, um verschiedene kreative und produktive Prozesse durch künstliche Intelligenz zu unterstützen. Es bietet eine intuitive Benutzeroberfläche und eine breite Palette an Funktionen, die sowohl für Einsteiger als auch für erfahrene Nutzer geeignet sind. Mit einem Freemium-Preismodell ermöglicht Lumiere den Einstieg ohne finanzielle Hürden, während erweiterte Features in kostenpflichtigen Plänen verfügbar sind.
@@ -68,7 +69,6 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - Unterstützt mehrere Sprachen und Medienformate
 
 - Stärker im Alltag, wenn Lumiere für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Lumiere ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 

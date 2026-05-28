@@ -1,13 +1,14 @@
 ---
 slug: kive
 title: Kive
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://kive.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Kive
 
 Kive ist ein kreatives Organisations- und Recherchewerkzeug für visuelle Assets, Referenzen und Moodboards. Für Agenturen, Designer, Filmemacher oder Brand-Teams kann es helfen, Inspiration nicht in verstreuten Ordnern, Chats und Downloads zu verlieren.

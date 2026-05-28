@@ -1,13 +1,14 @@
 ---
 slug: planoly
 title: Planoly
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [marketing, social-media, planning, analytics]
 official_url: "https://www.planoly.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Planoly
 
 Planoly ist ein leistungsstarkes Tool zur Planung, Verwaltung und Analyse von Social-Media-Inhalten, das vor allem für Instagram und Pinterest konzipiert wurde. Es unterstützt Nutzer dabei, Beiträge und Stories effektiv zu planen, den Feed visuell zu gestalten und den Erfolg ihrer Kampagnen mit detaillierten Analysen nachzuverfolgen. Durch die Kombination von Nutzerfreundlichkeit und vielfältigen Funktionen ist Planoly eine beliebte Lösung für Marketingexperten, Influencer und Unternehmen, die ihre Social-Media-Präsenz optimieren möchten.

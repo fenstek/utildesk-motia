@@ -1,13 +1,14 @@
 ---
 slug: microsoft-defender-for-endpoint
 title: Microsoft Defender for Endpoint
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security,enterprise,automation,analytics,developer-tools]
 official_url: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint"
 popularity: 33
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Microsoft Defender for Endpoint
 
 Microsoft Defender for Endpoint ist eine umfassende Enterprise-Sicherheitsplattform, die speziell für den Schutz von Endgeräten in Unternehmensnetzwerken entwickelt wurde. Die Lösung kombiniert automatisierte Bedrohungserkennung, Analysefunktionen und Reaktionsmechanismen, um Sicherheitsvorfälle frühzeitig zu erkennen und effektiv zu bekämpfen. Durch die Integration in die Microsoft-Umgebung bietet das Tool Entwicklern und IT-Teams eine leistungsstarke Möglichkeit, Sicherheitsprozesse zu automatisieren und die Angriffsfläche zu reduzieren.

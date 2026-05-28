@@ -1,13 +1,14 @@
 ---
 slug: callrail
 title: CallRail
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, communication, analytics, marketing]
 official_url: "https://www.callrail.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # CallRail
 
 CallRail ist eine leistungsstarke Softwarelösung, die Unternehmen dabei unterstützt, ihre Kundenkommunikation und Marketinganalysen zu optimieren. Mit Fokus auf Anruftracking und Kundeninteraktion bietet CallRail umfassende Werkzeuge zur Analyse von Marketingkampagnen und zur Verbesserung des Kundenservices durch intelligente Anrufanalysen und Berichte.

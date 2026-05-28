@@ -1,13 +1,14 @@
 ---
 slug: ibm-watson-visual-recognition
 title: IBM Watson Visual Recognition
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://www.ibm.com/solutions"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # IBM Watson Visual Recognition
 
 IBM Watson Visual Recognition ist ein leistungsstarker KI-basierter Dienst zur Analyse und Klassifizierung von Bildern. Er nutzt moderne Deep-Learning-Modelle, um visuelle Inhalte automatisch zu erkennen und zu kategorisieren. Die Technologie eignet sich für verschiedenste Branchen, von Einzelhandel über Fertigung bis hin zu Medien und Sicherheit. Mit einer benutzerfreundlichen API ermöglicht IBM Watson Visual Recognition Entwicklern, visuelle Intelligenz einfach in ihre Anwendungen zu integrieren.

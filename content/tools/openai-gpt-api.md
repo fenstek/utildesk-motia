@@ -1,13 +1,14 @@
 ---
 slug: openai-gpt-api
 title: OpenAI GPT API
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [api, developer-tools, automation, productivity, data]
 official_url: "https://openai.com/api/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # OpenAI GPT API
 
 Die OpenAI GPT API ermöglicht Entwicklern den Zugriff auf leistungsstarke KI-Modelle zur Verarbeitung natürlicher Sprache. Mit dieser Schnittstelle lassen sich vielfältige Anwendungen realisieren – von automatischer Textgenerierung über Chatbots bis hin zu datenbasierten Analysen. Die API bietet flexible Integration in eigene Systeme und unterstützt so die Automatisierung und Produktivitätssteigerung in vielen Branchen.

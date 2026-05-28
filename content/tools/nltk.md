@@ -1,11 +1,13 @@
 ---
 slug: nltk
 title: NLTK (Natural Language Toolkit)
-category: AI
+category: "AI Image"
 price_model: Open Source
 tags: [nlp, python, library]
 official_url: "https://www.nltk.org/index"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # NLTK (Natural Language Toolkit)
 

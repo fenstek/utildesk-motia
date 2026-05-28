@@ -1,13 +1,14 @@
 ---
 slug: amazon-kinesis-data-analytics
 title: Amazon Kinesis Data Analytics
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
 popularity: 70
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Amazon Kinesis Data Analytics
 
 Amazon Kinesis Data Analytics ist ein cloudbasierter Dienst von Amazon Web Services (AWS), der es ermöglicht, Echtzeit-Datenströme zu analysieren und daraus wertvolle Erkenntnisse zu gewinnen. Mit Kinesis Data Analytics können Unternehmen kontinuierlich große Mengen an Streaming-Daten verarbeiten, ohne sich um die zugrundeliegende Infrastruktur kümmern zu müssen. Der Dienst unterstützt SQL-basierte Abfragen und Integration mit anderen AWS-Diensten, um Daten in Echtzeit zu transformieren und zu visualisieren.

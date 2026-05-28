@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [customer-support, chatbot, communication, ai]
 official_url: "https://crisp.chat/en/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Crisp
 
 Crisp ist eine vielseitige Kommunikationsplattform, die speziell für Kundenservice und Support entwickelt wurde. Mit einer Kombination aus Live-Chat, Chatbot-Technologie und KI-gestützten Funktionen ermöglicht Crisp Unternehmen, ihre Kundenkommunikation effizienter und persönlicher zu gestalten. Durch das Freemium-Preismodell eignet sich das Tool für kleine bis mittlere Unternehmen, die einen professionellen Support-Kanal aufbauen möchten, ohne sofort hohe Kosten zu verursachen.

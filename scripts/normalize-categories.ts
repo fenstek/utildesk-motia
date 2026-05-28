@@ -27,36 +27,56 @@ const canonicalMap = new Map([
 
 const aiCategoryRules = [
   {
+    category: "AI Infrastructure",
+    keywords: [
+      "analytics",
+      "bigquery",
+      "clickhouse",
+      "cloud",
+      "data",
+      "database",
+      "databricks",
+      "datenbank",
+      "embedding",
+      "infrastructure",
+      "lakehouse",
+      "mlops",
+      "model",
+      "pinecone",
+      "platform",
+      "query",
+      "sql",
+      "vector",
+      "warehouse",
+    ],
+  },
+  {
     category: "AI Chatbots",
-    tags: ["chatbot", "assistant", "assistenz", "llm", "gpt", "chat", "conversation"],
+    keywords: ["chatbot", "assistant", "assistenz", "llm", "gpt", "chat", "conversation"],
   },
   {
     category: "AI Coding",
-    tags: ["coding", "code", "developer", "dev", "github", "programming", "api", "sdk", "ide"],
+    keywords: ["coding", "code", "developer", "dev", "github", "programming", "api", "sdk", "ide"],
   },
   {
     category: "AI Writing",
-    tags: ["writing", "content", "copywriting", "text", "blog", "article", "editor"],
+    keywords: ["writing", "content", "copywriting", "text", "blog", "article", "editor"],
   },
   {
     category: "AI Image",
-    tags: ["image", "bild", "photo", "design", "art", "visual", "grafik"],
+    keywords: ["image", "bild", "photo", "design", "art", "visual", "grafik"],
   },
   {
     category: "AI Audio",
-    tags: ["audio", "voice", "speech", "tts", "transcription", "podcast", "sound", "music"],
+    keywords: ["audio", "voice", "speech", "tts", "transcription", "podcast", "sound", "music"],
   },
   {
     category: "AI Research",
-    tags: ["research", "search", "recherche", "science", "paper", "citation", "literature"],
+    keywords: ["research", "search", "recherche", "science", "paper", "citation", "literature"],
   },
   {
     category: "AI Agents",
-    tags: ["agent", "agents", "autonomous", "automation", "workflow", "orchestration"],
-  },
-  {
-    category: "AI Infrastructure",
-    tags: ["infrastructure", "mlops", "model", "database", "data", "cloud", "vector", "embedding"],
+    keywords: ["agent", "agents", "autonomous", "automation", "workflow", "orchestration"],
   },
 ];
 
@@ -67,12 +87,20 @@ const normalizeTag = (value: unknown) =>
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "");
 
-const inferAiCategory = (tags: unknown[]) => {
+const inferAiCategory = ({ slug, title, tags, body }: { slug: string; title: string; tags: unknown[]; body: string }) => {
   const normalizedTags = tags.map(normalizeTag);
-  const match = aiCategoryRules.find((rule) =>
-    rule.tags.some((tag) => normalizedTags.some((candidate) => candidate.includes(tag))),
-  );
-  return match?.category ?? "AI Infrastructure";
+  const normalizedText = normalizeTag(`${slug} ${title} ${body.slice(0, 2500)}`);
+  const scores = aiCategoryRules.map((rule) => {
+    let score = 0;
+    for (const keyword of rule.keywords) {
+      if (normalizedTags.some((candidate) => candidate.includes(keyword))) score += 2;
+      if (normalizedText.includes(keyword)) score += 1;
+    }
+    return { category: rule.category, score };
+  });
+
+  scores.sort((a, b) => b.score - a.score);
+  return scores[0]?.score > 0 ? scores[0].category : "AI Infrastructure";
 };
 
 const replaceFrontmatterCategory = (raw: string, category: string) => {
@@ -96,10 +124,16 @@ for (const file of files) {
   const filePath = path.join(toolsDir, file);
   const raw = fs.readFileSync(filePath, "utf8");
   const data = parseSimpleFrontmatter(raw);
+  const body = raw.replace(/^---\n[\s\S]*?\n---\n?/, "");
   const slug = String(data.slug || file.replace(/\.md$/, ""));
+  const title = String(data.title || slug);
   const current = String(data.category || "").trim();
   const tags = Array.isArray(data.tags) ? data.tags : [];
-  const canonical = canonicalMap.get(current) ?? (current === "AI" ? inferAiCategory(tags) : current);
+  const mapped = canonicalMap.get(current) ?? current;
+  const canonical =
+    mapped === "AI" || mapped.startsWith("AI ")
+      ? inferAiCategory({ slug, title, tags, body })
+      : mapped;
 
   categoryCounts.set(canonical || "(missing)", (categoryCounts.get(canonical || "(missing)") ?? 0) + 1);
 

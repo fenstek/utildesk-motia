@@ -6,10 +6,11 @@ price_model: Open Source
 tags: ["developer", "ml", "explainability", "ai", "analytics"]
 official_url: "https://interpret.ml/"
 affiliate_url: "https://interpret.ml/"
+tier: "C"
+generated_at: "2026-05-17"
 popularity: 0
 description: Open-Source-Paket für interpretierbares Machine Learning, Erklärungen und Modell-Diagnostik.
 ---
-
 # InterpretML
 
 InterpretML ist ein Open-Source-Werkzeug für interpretierbares Machine Learning. Es hilft, Modelle, Vorhersagen und Feature-Einflüsse nachvollziehbarer zu machen.
@@ -21,7 +22,6 @@ Das Tool ist besonders relevant, wenn ein Modell nicht nur funktionieren, sonder
 InterpretML passt zu Data Scientists, ML Engineers, Risk-Teams und Organisationen, die Modelle erklären und prüfen müssen. Besonders relevant ist es, wenn Vorhersagen nicht nur gut funktionieren, sondern gegenüber Fachbereich, Audit, Compliance oder Kunden nachvollziehbar sein sollen.
 
 Weniger passend ist InterpretML für reine Dashboard-Nutzer oder Teams ohne eigenen Modellierungsprozess. Es setzt voraus, dass Daten, Modell, Metriken und Fragestellung verstanden werden.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/interpretml-editorial.webp" alt="Illustration zu InterpretML: ein transparentes Modell zeigt Feature-Hebel und erkl?rbare Vorhersagen" loading="lazy" decoding="async" />

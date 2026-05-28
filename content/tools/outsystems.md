@@ -1,13 +1,14 @@
 ---
 slug: outsystems
 title: OutSystems
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [no-code, workflow, automation, developer-tools]
 official_url: "https://www.outsystems.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # OutSystems
 
 OutSystems ist eine leistungsstarke Low-Code-Plattform, die es Unternehmen ermöglicht, schnell und effizient maßgeschneiderte Anwendungen zu entwickeln. Durch die Kombination von visueller Entwicklung mit Automatisierung und künstlicher Intelligenz unterstützt OutSystems Entwickler und Nicht-Entwickler gleichermaßen bei der Digitalisierung und Optimierung von Geschäftsprozessen.

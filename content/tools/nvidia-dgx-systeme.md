@@ -1,13 +1,14 @@
 ---
 slug: nvidia-dgx-systeme
 title: NVIDIA DGX Systeme
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [data, analytics, developer-tools, chatbot, writing, content, automation, coding, customer-support]
 official_url: "https://www.nvidia.com/en-us/data-center/dgx-platform/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # NVIDIA DGX Systeme
 
 NVIDIA DGX Systeme sind speziell entwickelte KI-Hardwarelösungen, die Unternehmen und Forschungseinrichtungen leistungsstarke Infrastruktur für künstliche Intelligenz und Deep Learning bereitstellen. Diese Systeme kombinieren Hochleistungs-GPUs, optimierte Software und umfassende Tools, um komplexe KI-Modelle effizient zu trainieren und zu betreiben. Sie sind darauf ausgelegt, die Entwicklung von KI-Anwendungen in Bereichen wie Datenanalyse, Automatisierung, Kundenservice und mehr zu beschleunigen.

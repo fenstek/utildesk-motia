@@ -1,13 +1,14 @@
 ---
 slug: lokalise
 title: Lokalise
-category: AI
+category: "AI Agents"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://lokalise.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Lokalise
 
 Lokalise ist eine cloudbasierte Plattform zur Übersetzungs- und Lokalisierungsverwaltung, die speziell für Teams entwickelt wurde, die Software, Apps und Webseiten in mehreren Sprachen bereitstellen. Durch Automatisierungstools und KI-gestützte Funktionen ermöglicht Lokalise eine effiziente Zusammenarbeit zwischen Entwicklern, Übersetzern und Projektmanagern. Die Plattform unterstützt zahlreiche Dateiformate und Integrationen, um den Lokalisierungsprozess zu vereinfachen und zu beschleunigen.

@@ -1,11 +1,13 @@
 ---
 slug: aws-kinesis
 title: AWS Kinesis
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data, streaming, cloud, analytics]
 official_url: "https://aws.amazon.com/kinesis/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-10"
 ---
 # AWS Kinesis
 

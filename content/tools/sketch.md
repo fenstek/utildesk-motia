@@ -6,6 +6,8 @@ price_model: Je nach Plan
 tags: [image, design]
 official_url: "https://www.sketch.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
 # Sketch
 

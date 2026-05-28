@@ -1,13 +1,14 @@
 ---
 slug: semantic-scholar
 title: Semantic Scholar
-category: AI
+category: "AI Infrastructure"
 price_model: "Kostenlos"
 tags: [education, data, analytics, productivity]
 official_url: "https://www.semanticscholar.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Semantic Scholar
 
 Semantic Scholar ist eine KI-gestützte Suchmaschine für wissenschaftliche Publikationen, die Forschern, Studierenden und Fachleuten hilft, relevante und hochwertige Forschungsergebnisse effizient zu finden. Durch den Einsatz fortschrittlicher Algorithmen und natürlicher Sprachverarbeitung bietet Semantic Scholar eine präzise und kontextbezogene Suche in Millionen von wissenschaftlichen Artikeln aus verschiedenen Disziplinen.

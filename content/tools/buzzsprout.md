@@ -1,13 +1,14 @@
 ---
 slug: buzzsprout
 title: Buzzsprout
-category: AI
+category: "AI Audio"
 price_model: Freemium
 tags: [audio]
 official_url: "https://www.buzzsprout.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Buzzsprout
 
 Buzzsprout ist eine benutzerfreundliche Podcast-Hosting-Plattform, die es ermöglicht, Podcasts einfach zu veröffentlichen, zu verwalten und zu verbreiten. Mit einer klaren Oberfläche und automatisierten Tools unterstützt Buzzsprout Podcaster dabei, ihre Inhalte schnell online zu bringen und auf verschiedenen Plattformen verfügbar zu machen. Die Plattform eignet sich sowohl für Einsteiger als auch für erfahrene Podcaster, die Wert auf einfache Bedienbarkeit und zuverlässiges Hosting legen.

@@ -1,13 +1,14 @@
 ---
 slug: orbit-intelligence
 title: Orbit Intelligence
-category: AI
+category: "AI Research"
 price_model: Abonnement
 tags: [research, patents, analytics, enterprise]
 official_url: "https://www.questel.com/patent/ip-intelligence-software/orbit-intelligence/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Orbit Intelligence
 
 Orbit Intelligence ist eine leistungsstarke KI-gestützte Plattform, die speziell für die Recherche und Analyse von Patenten entwickelt wurde. Unternehmen und Forschungsteams können damit umfangreiche Patentdatenbanken durchsuchen, um innovative Technologien zu entdecken, Wettbewerbsanalysen durchzuführen und fundierte strategische Entscheidungen zu treffen. Die Plattform kombiniert modernste KI-Algorithmen mit umfassenden Datenquellen, um präzise und relevante Ergebnisse zu liefern.

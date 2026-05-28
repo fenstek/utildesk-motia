@@ -1,13 +1,14 @@
 ---
 slug: apache-druid
 title: Apache Druid
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://druid.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Druid
 
 Apache Druid ist eine leistungsstarke, Open-Source-Analysedatenbank, die speziell für die Echtzeit-Analyse großer Datenmengen entwickelt wurde. Sie kombiniert schnelle Ingestion, niedrige Latenz bei Abfragen und hohe Skalierbarkeit, um Unternehmen und Entwicklern zu ermöglichen, komplexe Datenanalysen in Echtzeit durchzuführen. Druid wird häufig in Bereichen wie Business Intelligence, Monitoring, und Ad-Hoc-Analyse eingesetzt.

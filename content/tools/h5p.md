@@ -1,13 +1,14 @@
 ---
 slug: h5p
 title: H5P
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://h5p.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # H5P
 
 H5P ist eine Open-Source-Plattform zur Erstellung, Bearbeitung und Veröffentlichung interaktiver Lerninhalte. Mit H5P können Entwickler, Lehrende und Content-Ersteller multimediale und interaktive Inhalte wie Quizze, Präsentationen, Videos mit Fragen und vieles mehr einfach und flexibel erstellen. Die intuitive Benutzeroberfläche und die Vielzahl an vorgefertigten Inhaltstypen machen H5P zu einer beliebten Wahl für Bildungs- und Trainingsumgebungen.

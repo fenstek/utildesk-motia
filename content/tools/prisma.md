@@ -1,12 +1,14 @@
 ---
 slug: prisma
 title: Prisma
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://prisma-ai.com/"
 popularity: 0
 description: Prisma ist ein Design- und Kreativwerkzeug für KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten.
+tier: "C"
+generated_at: "2026-05-15"
 ---
 # Prisma
 
@@ -19,7 +21,6 @@ Ein sinnvoller Test beginnt bei Prisma nicht mit einer Feature-Liste, sondern mi
 Prisma muss in einem echten Beispiel zeigen, ob KI-nahe Bildbearbeitung und visuelle Effekte für schnelle, auffällige Bildvarianten damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
 
 Besonders passend ist Prisma für Creator, Social-Media-Teams und Nutzer, die Bilder schnell stilisieren möchten. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/prisma-editorial.webp" alt="Illustration zu Prisma: ein Foto bricht durch ein Prisma in unterschiedliche Kunststile auf" loading="lazy" decoding="async" />

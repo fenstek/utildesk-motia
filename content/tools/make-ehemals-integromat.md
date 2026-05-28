@@ -1,14 +1,16 @@
 ---
 slug: make-ehemals-integromat
 title: Make (ehemals Integromat)
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
 popularity: 35
 updated_at: 2026-05-21
+tier: "A"
+lastReviewed: "2026-05-27"
+mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
-
 # Make (ehemals Integromat)
 
 Make, früher bekannt als Integromat, ist eine leistungsstarke Automatisierungsplattform, die es ermöglicht, verschiedene Anwendungen und Dienste miteinander zu verbinden und komplexe Workflows zu erstellen. Mit einem visuellen Editor können Nutzer ohne Programmierkenntnisse Prozesse automatisieren, Daten synchronisieren und repetitive Aufgaben vereinfachen. Make bietet dabei vielfältige Integrationen und unterstützt sowohl einfache als auch komplexe Automatisierungsszenarien.

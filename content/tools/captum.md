@@ -1,13 +1,14 @@
 ---
 slug: captum
 title: Captum
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [developer-tools,machine-learning]
 official_url: "https://captum.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Captum
 
 Captum ist ein Open-Source-Tool für Entwickler und Forscher im Bereich Künstliche Intelligenz, das sich auf die Erklärbarkeit und Interpretierbarkeit von Machine-Learning-Modellen spezialisiert hat. Es bietet eine umfangreiche Bibliothek von Methoden zur Analyse der Modellentscheidungen, insbesondere für neuronale Netze, und unterstützt dabei, komplexe Modelle besser zu verstehen und vertrauenswürdiger zu machen.

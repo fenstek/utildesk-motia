@@ -1,13 +1,14 @@
 ---
 slug: corel-painter
 title: Corel Painter
-category: AI
+category: "AI Image"
 price_model: Abonnement, Einmalzahlung
 tags: [design,painting,illustration,desktop]
 official_url: "https://www.painterartist.com/en/product/painter/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Corel Painter
 
 Corel Painter ist eine professionelle digitale Mal- und Illustrationssoftware, die speziell für Künstler und Designer entwickelt wurde, die realistische Malwerkzeuge und kreative Freiheit suchen. Mit einer breiten Palette an Pinseloptionen und KI-gestützten Funktionen ermöglicht Corel Painter ein natürliches und intuitives Malerlebnis auf dem Desktop. Die Software richtet sich an alle, die digitale Kunstwerke mit hoher Detailtreue und künstlerischem Anspruch erstellen möchten.

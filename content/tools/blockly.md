@@ -1,13 +1,14 @@
 ---
 slug: blockly
 title: Blockly
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [coding, education, javascript, open-source]
 official_url: "https://developers.google.com/blockly?hl=zh-cn"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Blockly
 
 Blockly ist eine browserbasierte Open-Source-Bibliothek, die es ermöglicht, grafische Programmierumgebungen zu erstellen. Durch das visuelle Zusammenfügen von Codeblöcken können Nutzer ohne tiefgehende Programmierkenntnisse funktionalen Code generieren. Blockly unterstützt verschiedene Programmiersprachen, darunter JavaScript, Python und weitere, und wird häufig im Bildungsbereich sowie bei der Entwicklung von Prototypen eingesetzt.

@@ -1,13 +1,14 @@
 ---
 slug: axis-camera-station
 title: Axis Camera Station
-category: Video
+category: "Audio & Video"
 price_model: Abonnement
 tags: [video, security, vms, hardware]
 official_url: "https://www.axis.com/en-us/products/axis-camera-station-5"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Axis Camera Station
 
 Axis Camera Station ist eine umfassende Video-Management-Software (VMS), die speziell für kleine und mittlere Unternehmen entwickelt wurde, um Videoüberwachungssysteme effizient zu steuern. Die Software unterstützt die Verwaltung von Axis-Netzwerk-Kameras und -Encoder und bietet eine benutzerfreundliche Oberfläche für Live-Ansicht, Aufzeichnung und Wiedergabe von Videomaterial. Axis Camera Station erleichtert die zentrale Überwachung und trägt zur Verbesserung der Sicherheit bei.

@@ -1,13 +1,14 @@
 ---
 slug: logic-pro
 title: Logic Pro
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: [assistant, automation]
 official_url: "https://logic-users-group.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Logic Pro
 
 Logic Pro ist eine fortschrittliche KI-gestützte Plattform, die speziell entwickelt wurde, um Arbeitsprozesse durch intelligente Automatisierung und Assistenz zu optimieren. Sie unterstützt Anwender dabei, komplexe Aufgaben effizienter zu bewältigen, indem sie repetitive Tätigkeiten automatisiert und kontextbezogene Hilfestellungen bietet. Die Kombination aus leistungsfähigen Algorithmen und benutzerfreundlicher Oberfläche macht Logic Pro zu einem vielseitigen Werkzeug in verschiedenen Branchen.

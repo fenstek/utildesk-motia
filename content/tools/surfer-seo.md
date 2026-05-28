@@ -1,13 +1,14 @@
 ---
 slug: surfer-seo
 title: Surfer SEO
-category: AI
+category: "AI Writing"
 price_model: "Abonnement"
 tags: [seo, marketing, content, analytics]
 official_url: "https://surferseo.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Surfer SEO
 
 Surfer SEO ist ein KI-gestütztes Tool zur Optimierung von Webseiteninhalten für Suchmaschinen. Es hilft Nutzern, datenbasierte Entscheidungen bei der Content-Erstellung und -Optimierung zu treffen, indem es umfangreiche Analysen von Rankingfaktoren und Wettbewerbern liefert. Surfer SEO unterstützt Marketing- und SEO-Experten dabei, die Sichtbarkeit ihrer Webseiten zu erhöhen und gezielt besseren Content zu produzieren.

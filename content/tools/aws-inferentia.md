@@ -1,13 +1,14 @@
 ---
 slug: aws-inferentia
 title: AWS Inferentia
-category: AI
+category: "AI Infrastructure"
 price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://aws.amazon.com/ai/machine-learning/inferentia/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # AWS Inferentia
 
 AWS Inferentia ist ein speziell entwickelter Chip von Amazon Web Services, der auf die Beschleunigung von Machine-Learning-Inferenzaufgaben ausgelegt ist. Er bietet eine leistungsfähige und kosteneffiziente Lösung für Unternehmen, die KI-Modelle in Echtzeit ausführen möchten. Durch die Integration in die AWS-Cloud ermöglicht Inferentia die einfache Skalierung und Optimierung von KI-Anwendungen.

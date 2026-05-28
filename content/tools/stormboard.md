@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [whiteboard, collaboration, productivity]
 official_url: "https://stormboard.com/home"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Stormboard
 
 Stormboard ist ein digitales Whiteboard-Tool, das speziell für die Zusammenarbeit in Teams entwickelt wurde. Es ermöglicht die einfache Visualisierung von Ideen, Brainstorming-Sessions und Projektmanagement in einer interaktiven Online-Umgebung. Mit Funktionen zur Echtzeit-Kollaboration unterstützt Stormboard Teams dabei, produktiver und organisierter zu arbeiten, unabhängig davon, ob sie im Büro oder remote zusammenarbeiten.

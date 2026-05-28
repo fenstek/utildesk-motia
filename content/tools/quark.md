@@ -1,13 +1,14 @@
 ---
 slug: quark
 title: Quark
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, search]
 official_url: "https://www.quark.cn/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Quark
 
 Quark ist ein innovativer KI-gestützter Assistent, der speziell darauf ausgelegt ist, die Suche und Informationsbeschaffung effizienter und intuitiver zu gestalten. Die Plattform kombiniert moderne künstliche Intelligenz mit einer benutzerfreundlichen Oberfläche, um Nutzern dabei zu helfen, schnell relevante Antworten zu finden und komplexe Aufgaben zu vereinfachen. Quark eignet sich sowohl für den privaten als auch für den beruflichen Einsatz und bietet eine Vielzahl von Funktionen, die über eine einfache Suchmaschine hinausgehen.

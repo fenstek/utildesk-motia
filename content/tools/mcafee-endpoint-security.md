@@ -1,13 +1,14 @@
 ---
 slug: mcafee-endpoint-security
 title: Trellix Endpoint Security
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security, endpoint, enterprise, device-management]
 official_url: "https://www.trellix.com/products/endpoint-security/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Trellix Endpoint Security
 
 Trellix Endpoint Security ist eine umfassende Sicherheitslösung, die speziell für Unternehmen entwickelt wurde, um Endgeräte vor modernen Bedrohungen zu schützen. Die Software kombiniert verschiedene Sicherheitsmechanismen, darunter Malware-Schutz, Firewall, und Geräteverwaltung, und bietet dabei eine zentrale Steuerung für IT-Administratoren. Durch die Integration von fortschrittlicher Erkennungstechnologie und kontinuierlicher Überwachung unterstützt Trellix Unternehmen dabei, Sicherheitsrisiken zu minimieren und Compliance-Anforderungen zu erfüllen.

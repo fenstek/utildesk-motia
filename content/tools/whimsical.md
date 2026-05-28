@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [whiteboard, diagrams, collaboration, productivity]
 official_url: "https://whimsical.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Whimsical
 
 Whimsical ist ein vielseitiges Online-Tool, das vor allem für die Erstellung von Diagrammen, Flowcharts, Wireframes und kollaborativen Whiteboards genutzt wird. Es hilft Teams und Einzelpersonen, Ideen visuell zu strukturieren und gemeinsam an Projekten zu arbeiten. Durch eine intuitive Benutzeroberfläche und vielfältige Funktionen unterstützt Whimsical die Produktivität in verschiedenen Arbeitsbereichen.

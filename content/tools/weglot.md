@@ -1,13 +1,14 @@
 ---
 slug: weglot
 title: Weglot
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [translation, localization, seo, marketing]
 official_url: "https://www.weglot.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Weglot
 
 Weglot ist ein leistungsstarkes Tool zur mehrsprachigen Website-Übersetzung und -Lokalisierung. Es ermöglicht Unternehmen, ihre Online-Präsenz schnell und effizient in mehreren Sprachen anzubieten, ohne dabei umfangreiche technische Kenntnisse zu benötigen. Dank der automatischen Übersetzung kombiniert mit manuellen Anpassungsmöglichkeiten unterstützt Weglot sowohl kleine als auch große Unternehmen dabei, ihre Zielgruppen international zu erreichen und die Sichtbarkeit in Suchmaschinen zu verbessern.

@@ -1,13 +1,14 @@
 ---
 slug: aws-lambda
 title: AWS Lambda
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://aws.amazon.com/lambda/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # AWS Lambda
 
 AWS Lambda ist ein serverloser Computing-Dienst von Amazon Web Services (AWS), der es Entwicklern ermöglicht, Code auszuführen, ohne sich um die zugrundeliegende Infrastruktur kümmern zu müssen. Mit Lambda können Funktionen in verschiedenen Programmiersprachen bereitgestellt und automatisch skaliert werden, basierend auf dem tatsächlichen Bedarf. Dadurch eignet sich der Dienst hervorragend für ereignisgesteuerte Anwendungen, API-Backends, Datenverarbeitung und vieles mehr.

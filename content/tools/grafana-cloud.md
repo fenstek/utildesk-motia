@@ -1,13 +1,14 @@
 ---
 slug: grafana-cloud
 title: Grafana Cloud
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [monitoring, analytics, cloud, developer-tools]
 official_url: "https://grafana.com/products/cloud/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Grafana Cloud
 
 Grafana Cloud ist eine umfassende Cloud-basierte Plattform für Monitoring, Analyse und Visualisierung von Metriken, Logs und Traces. Sie bietet Entwicklern und Teams leistungsstarke Tools zur Überwachung ihrer Anwendungen und Infrastruktur in Echtzeit. Mit einer intuitiven Benutzeroberfläche und vielseitigen Integrationen unterstützt Grafana Cloud dabei, komplexe Daten übersichtlich darzustellen und Probleme frühzeitig zu erkennen.

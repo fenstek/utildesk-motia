@@ -1,12 +1,14 @@
 ---
 slug: milestone-systems
 title: Milestone Systems
-category: Video
+category: "Audio & Video"
 price_model: "Abonnement"
 tags: [video, security, management, analytics]
 official_url: "https://www.milestonesys.com/"
 popularity: 0
 description: "Milestone Systems ist ein Business- und Operations-Plattform für Video-Management und Sicherheitsinfrastruktur für professionelle Überwachungs- und Standortsysteme."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Milestone Systems
 

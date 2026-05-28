@@ -1,13 +1,14 @@
 ---
 slug: zoho-people
 title: Zoho People
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [hr, hcm, people-ops]
 official_url: "https://www.zoho.com/de/people/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zoho People
 
 Zoho People ist eine umfassende cloudbasierte HR-Softwarelösung, die Unternehmen dabei unterstützt, ihre Personalverwaltung und People Operations effizient zu gestalten. Die Plattform kombiniert Automatisierung, Self-Service-Funktionen und KI-gestützte Tools, um HR-Prozesse wie Zeiterfassung, Urlaubsverwaltung, Leistungsmanagement und Mitarbeiterdatenverwaltung zu optimieren. Zoho People richtet sich an Unternehmen unterschiedlicher Größe und Branchen, die ihre Human-Capital-Management-Aufgaben digitalisieren und vereinfachen möchten.

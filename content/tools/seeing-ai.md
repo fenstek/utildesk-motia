@@ -1,13 +1,14 @@
 ---
 slug: seeing-ai
 title: Seeing AI
-category: AI
+category: "AI Chatbots"
 price_model: Kostenlos
 tags: [accessibility, vision, mobile, assistant]
 official_url: "https://www.seeingai.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Seeing AI
 
 Seeing AI ist eine innovative mobile Anwendung, die speziell für Menschen mit Sehbehinderungen entwickelt wurde. Die App nutzt künstliche Intelligenz, um die Umgebung in Echtzeit zu analysieren und Informationen über Personen, Texte, Objekte und Szenen akustisch zu vermitteln. So unterstützt Seeing AI Nutzer dabei, ihren Alltag selbstständiger und sicherer zu gestalten.
@@ -20,20 +21,6 @@ Seeing AI ist besonders nützlich für Teams, die KI-Funktionen nicht als Experi
 
 Vor einer breiteren Einführung von Seeing AI lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Seeing AI sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Ein belastbarer Pilot für Seeing AI beginnt mit einer wiederkehrenden Aufgabe mit Eingabe, erwarteter Ausgabe, Review-Regeln und Fehlerkriterien. Danach geht es nicht um Bauchgefühl, sondern darum, ob Zeitgewinn, Fehlerquote, Nachbearbeitung, Erklärbarkeit und Akzeptanz im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Seeing AI:** Vor dem Rollout sollten Zeitgewinn, Fehlerquote, Nachbearbeitung, Erklärbarkeit und Akzeptanz mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Seeing AI:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei Seeing AI:** Kritisch wird es, wenn Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind; dann hilft auch eine gute Oberfläche nur begrenzt.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/seeing-ai-editorial.webp" alt="Illustration zu Seeing AI: taktile Stadtspur mit Lichtsignalen fuer Orientierung" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Texterkennung (OCR):** Erfasst gedruckte oder handgeschriebene Texte und liest sie laut vor.
@@ -45,10 +32,6 @@ Ein belastbarer Pilot für Seeing AI beginnt mit einer wiederkehrenden Aufgabe m
 - **Handschrifterkennung:** Liest handgeschriebene Notizen vor.
 - **Kunst- und Bildbeschreibung:** Analysiert Bilder und Kunstwerke und gibt eine akustische Beschreibung.
 - **Mobiler Assistent:** Einfache Bedienung auf Smartphones mit Touch-Gesten und Sprachsteuerung.
-
-- **Praxislauf mit Seeing AI:** Das Tool sollte mit einer wiederkehrenden Aufgabe mit Eingabe, erwarteter Ausgabe, Review-Regeln und Fehlerkriterien getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Seeing AI:** Das Team braucht eine einfache Methode, um Zeitgewinn, Fehlerquote, Nachbearbeitung, Erklärbarkeit und Akzeptanz nach dem Einsatz zu prüfen.
-- **Übergabe mit Seeing AI:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

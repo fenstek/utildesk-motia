@@ -1,13 +1,14 @@
 ---
 slug: rev-com
 title: Rev.com
-category: AI
+category: "AI Agents"
 price_model: Nutzungsbasiert
 tags: [assistant, automation, workflow]
 official_url: "https://www.rev.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Rev.com
 
 Rev.com ist eine leistungsstarke Plattform, die sich auf die Umwandlung von Audio- und Videoinhalten in Text spezialisiert hat. Mit Hilfe von automatisierter Spracherkennung und menschlicher Transkriptionsunterstützung ermöglicht Rev.com eine schnelle und präzise Erstellung von Transkripten, Untertiteln und Übersetzungen. Die Kombination aus KI-Technologie und professionellen Transkriptionsexperten macht Rev.com zu einem wertvollen Werkzeug für Unternehmen und Einzelpersonen, die ihre Medieninhalte effizient verarbeiten möchten.

@@ -1,11 +1,13 @@
 ---
 slug: audo
 title: Audo
-category: AI
+category: "AI Audio"
 price_model: "Freemium"
 tags: ["audio"]
 official_url: 'https://www.audo.ai/'
 affiliate_url: 'https://www.audo.ai/'
+tier: "C"
+generated_at: "2026-05-10"
 created_at: "2026-02-07"
 popularity: 0
 description: "Audo ist ein Audio-Tool für Sprachverbesserung, Rauschreduzierung und verständlichere Aufnahmen in Content-Workflows."

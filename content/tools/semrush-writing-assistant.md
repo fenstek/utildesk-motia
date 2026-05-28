@@ -1,13 +1,14 @@
 ---
 slug: semrush-writing-assistant
 title: SEMrush Writing Assistant
-category: SEO
+category: "Marketing & Vertrieb"
 price_model: "Abonnement"
 tags: [seo, writing, content]
 official_url: "https://www.semrush.com/swa/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # SEMrush Writing Assistant
 
 SEMrush Writing Assistant ist ein praktisches Tool für Content-Ersteller und SEO-Experten, das dabei hilft, Texte suchmaschinenoptimiert und leserfreundlich zu gestalten. Es unterstützt beim Verfassen von Inhalten, indem es Echtzeit-Analysen liefert, Verbesserungsvorschläge macht und die Einhaltung von SEO-Richtlinien fördert. So können Texte nicht nur qualitativ hochwertig, sondern auch besser für Suchmaschinen positioniert werden.

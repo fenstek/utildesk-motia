@@ -1,13 +1,14 @@
 ---
 slug: jupyterlab
 title: JupyterLab
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [notebooks, collaboration, developer-tools]
 official_url: "https://jupyter.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # JupyterLab
 
 JupyterLab ist eine webbasierte interaktive Entwicklungsumgebung, die speziell für Data Science, maschinelles Lernen und wissenschaftliches Rechnen entwickelt wurde. Als Nachfolger des klassischen Jupyter Notebooks bietet JupyterLab eine flexible und erweiterbare Oberfläche, die es Nutzern ermöglicht, Notebooks, Code, Daten und Dokumente in einem einzigen Arbeitsbereich zu organisieren und zu bearbeiten. Es unterstützt zahlreiche Programmiersprachen und fördert die Zusammenarbeit zwischen Entwicklern und Forschern.

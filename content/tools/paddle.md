@@ -1,11 +1,13 @@
 ---
 slug: paddle
 title: Paddle
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.paddle.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # Paddle
 

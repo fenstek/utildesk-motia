@@ -1,13 +1,14 @@
 ---
 slug: readable
 title: Readable
-category: AI
+category: "AI Writing"
 price_model: Abonnement
 tags: [readability, writing, content]
 official_url: "https://readable.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Readable
 
 Readable ist ein KI-gestütztes Tool zur Analyse und Verbesserung der Lesbarkeit von Texten. Es hilft Autoren, Content-Ersteller und Unternehmen dabei, ihre Texte klarer, verständlicher und ansprechender zu gestalten. Mit verschiedenen Metriken zur Lesbarkeitsbewertung und praktischen Vorschlägen zur Textoptimierung unterstützt Readable die Erstellung von Inhalten, die besser beim Publikum ankommen.

@@ -1,13 +1,14 @@
 ---
 slug: taguette
 title: Taguette
-category: Schreiben & Content
+category: "AI Research"
 price_model: Open Source
 tags: [research, data, writing]
 official_url: "https://www.taguette.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Taguette
 
 Taguette ist ein Open-Source-Tool für qualitative Datenanalyse, vor allem für das Markieren und Codieren von Textmaterial. Es hilft, Interviews, Notizen oder Dokumente systematischer auszuwerten, ohne sofort in eine schwere Forschungssoftware einzusteigen.

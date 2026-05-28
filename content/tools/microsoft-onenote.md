@@ -1,13 +1,14 @@
 ---
 slug: microsoft-onenote
 title: Microsoft OneNote
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [notes, productivity, office-suite]
 official_url: "https://onenote.cloud.microsoft/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft OneNote
 
 Microsoft OneNote ist eine digitale Notizbuch-App, die es Nutzern ermöglicht, Informationen schnell und flexibel zu erfassen, zu organisieren und zu teilen. Als Teil der Microsoft Office-Suite unterstützt OneNote sowohl handschriftliche als auch getippte Notizen, bietet vielfältige Multimedia-Integration und eignet sich ideal für persönliche, schulische und berufliche Zwecke.

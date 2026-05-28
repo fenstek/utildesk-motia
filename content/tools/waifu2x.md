@@ -1,11 +1,13 @@
 ---
 slug: waifu2x
 title: Waifu2x
-category: AI
+category: "AI Image"
 price_model: Open Source
 tags: [image, upscaling, photo, open-source]
 official_url: "https://www.waifu2x.net/index.html"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-28"
 ---
 # Waifu2x
 

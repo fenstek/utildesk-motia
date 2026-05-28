@@ -1,13 +1,14 @@
 ---
 slug: zamzar-ai
 title: Zamzar AI
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [automation, productivity, video, audio, design]
 official_url: "https://www.zamzar.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # Zamzar AI
 
 Zamzar ist vor allem als Online-Dateikonverter bekannt und wird in AI-Kontexten oft dort relevant, wo Dateiformate schnell für weitere Verarbeitung vorbereitet werden müssen. Der Nutzen ist pragmatisch: Eine Datei liegt im falschen Format vor, und der Workflow soll nicht an Softwareinstallation scheitern.

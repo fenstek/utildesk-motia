@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-vision-ai
 title: Google Cloud Vision AI
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: ["automation"]
 official_url: "https://cloud.google.com/vision"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Cloud Vision AI
 
 Google Cloud Vision AI ist ein leistungsstarker Dienst von Google, der es ermöglicht, Bilder automatisch zu analysieren und zu interpretieren. Mithilfe modernster KI- und Machine-Learning-Technologien können Objekte, Texte, Gesichter, Logos und vieles mehr in Bildern erkannt und kategorisiert werden. Die API bietet Entwicklern vielseitige Möglichkeiten, visuelle Daten in ihre Anwendungen zu integrieren, um Prozesse zu automatisieren oder neue Funktionen zu schaffen.

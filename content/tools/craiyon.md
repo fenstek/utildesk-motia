@@ -1,14 +1,15 @@
 ---
 slug: craiyon
 title: Craiyon
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: ["writing", "design"]
 official_url: "https://www.craiyon.com/"
 created_at: 2026-02-15
 popularity: 0
+tier: "D"
+generated_at: "2026-05-11"
 ---
-
 # Craiyon
 
 Craiyon ist ein KI-basierter Bildgenerator, der es ermöglicht, aus einfachen Texteingaben einzigartige Bilder zu erstellen. Die Anwendung nutzt künstliche Intelligenz, um kreative und oft überraschende visuelle Ergebnisse zu erzeugen. Craiyon ist besonders bekannt für seine Zugänglichkeit und die Möglichkeit, kostenlos erste Bilder zu generieren, was es zu einem beliebten Tool für kreative Experimente macht.
@@ -21,20 +22,6 @@ Craiyon ist besonders nützlich für Design-, Content-, Produkt- und Kreativteam
 
 Bei Craiyon sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Craiyon lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Ein belastbarer Pilot für Craiyon beginnt mit einem konkreten Asset mit Briefing, Versionen, Feedbackrunde, Export und finaler Abnahme. Danach geht es nicht um Bauchgefühl, sondern darum, ob Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz im echten Ablauf sichtbar besser werden.
-
-- **Prüfpunkt für Craiyon:** Vor dem Rollout sollten Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Craiyon:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Craiyon:** Der Einsatz kippt in Zusatzarbeit, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/craiyon-editorial.webp" alt="Illustration zu Craiyon: Kreative waehlt aus spielerischen KI-Bildvarianten" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - Text-zu-Bild-Generierung: Erstellung von Bildern basierend auf kurzen oder ausführlichen Texteingaben.
@@ -44,10 +31,6 @@ Ein belastbarer Pilot für Craiyon beginnt mit einem konkreten Asset mit Briefin
 - Online-Zugriff: Keine Installation erforderlich, nutzbar über Webbrowser.
 - Einfache Bedienoberfläche: Intuitive Nutzerführung ohne komplexe Einstellungen.
 - Speicherung und Teilen: Möglichkeit, generierte Bilder herunterzuladen und zu teilen.
-
-- **Praxislauf mit Craiyon:** Das Tool sollte mit einem konkreten Asset mit Briefing, Versionen, Feedbackrunde, Export und finaler Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Craiyon:** Das Team braucht eine einfache Methode, um Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz nach dem Einsatz zu prüfen.
-- **Übergabe mit Craiyon:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

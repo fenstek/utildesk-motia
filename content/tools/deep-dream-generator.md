@@ -1,12 +1,14 @@
 ---
 slug: deep-dream-generator
 title: Deep Dream Generator
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [design, image, video, automation, productivity]
 official_url: "https://deepdreamgenerator.com/"
 popularity: 0
 description: "Deep Dream Generator ist ein Design- und Kreativwerkzeug für KI-Bildexperimente, stilisierte Motive und kreative Bildvarianten mit surrealem Charakter."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Deep Dream Generator
 

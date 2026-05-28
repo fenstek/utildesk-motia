@@ -6,8 +6,9 @@ price_model: "Je nach Plan"
 tags: [ai, assistant, automation, workflow]
 official_url: "https://www.lindy.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Lindy
 
 Lindy ist ein innovativer AI-Agent, der entwickelt wurde, um Arbeitsabläufe zu automatisieren und die Produktivität durch intelligente Assistenzsysteme zu steigern. Mit Fokus auf Automatisierung und Integration verschiedener Anwendungen unterstützt Lindy Nutzer dabei, repetitive Aufgaben effizienter zu gestalten und komplexe Prozesse zu vereinfachen.
@@ -27,20 +28,6 @@ Lindy ist besonders nützlich für Teams, die KI-Funktionen nicht als Experiment
 
 Vor einer breiteren Einführung von Lindy lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Lindy sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Lindy sollte zuerst in einer wiederkehrenden Aufgabe mit Eingabe, erwarteter Ausgabe, Review-Regeln und Fehlerkriterien zeigen, ob es trägt. Erst wenn Zeitgewinn, Fehlerquote, Nachbearbeitung, Erklärbarkeit und Akzeptanz dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Lindy:** Vor dem Rollout sollten Zeitgewinn, Fehlerquote, Nachbearbeitung, Erklärbarkeit und Akzeptanz mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Lindy:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Lindy:** Ohne klare Regeln wird der Nutzen schwach, sobald Prompts, Datenrechte, Grenzen und Prüfpflichten nicht sauber dokumentiert sind.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/lindy-editorial.webp" alt="Illustration zu Lindy: KI-Agent plant Aufgaben, verbindet Apps und fuehrt Workflows durch Pruefgates" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Automatisierte Workflow-Steuerung:** Lindy kann verschiedene Anwendungen und Dienste miteinander verknüpfen und so wiederkehrende Aufgaben automatisch ausführen.
@@ -50,10 +37,6 @@ Lindy sollte zuerst in einer wiederkehrenden Aufgabe mit Eingabe, erwarteter Aus
 - **Benutzerdefinierte Skripte:** Ermöglicht das Erstellen eigener Automatisierungen ohne Programmierkenntnisse.
 - **Mehrsprachige Unterstützung:** Kommuniziert in mehreren Sprachen für den internationalen Einsatz.
 - **Sicherheits- und Datenschutzfunktionen:** Gewährleistet den Schutz sensibler Daten gemäß gängiger Standards.
-
-- **Praxislauf mit Lindy:** Das Tool sollte mit einer wiederkehrenden Aufgabe mit Eingabe, erwarteter Ausgabe, Review-Regeln und Fehlerkriterien getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Lindy:** Das Team braucht eine einfache Methode, um Zeitgewinn, Fehlerquote, Nachbearbeitung, Erklärbarkeit und Akzeptanz nach dem Einsatz zu prüfen.
-- **Übergabe mit Lindy:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

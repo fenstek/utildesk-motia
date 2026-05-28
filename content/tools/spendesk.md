@@ -1,13 +1,14 @@
 ---
 slug: spendesk
 title: Spendesk
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.spendesk.com/"
 popularity: 14
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Spendesk
 
 Spendesk ist eine moderne Lösung für das Ausgabenmanagement, die Unternehmen dabei unterstützt, ihre Finanzprozesse zu automatisieren und zu optimieren. Mit einer Kombination aus digitalen Tools und intelligenten Workflows ermöglicht Spendesk eine transparente und effiziente Verwaltung von Geschäftsausgaben, Karten und Rechnungen. Die Plattform richtet sich an Unternehmen, die ihre Finanzabteilung entlasten und gleichzeitig die Kontrolle über Ausgaben behalten möchten.

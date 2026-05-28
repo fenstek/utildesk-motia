@@ -1,12 +1,14 @@
 ---
 slug: adept
 title: Adept
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: ["automation", "workflow"]
 official_url: "https://www.adept.ai/"
 popularity: 0
 description: Adept steht für KI-Agenten, die Software bedienen, Arbeitsabläufe automatisieren und komplexe Aufgaben über mehrere Schritte koordinieren sollen.
+tier: "C"
+generated_at: "2026-05-15"
 ---
 # Adept
 

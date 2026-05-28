@@ -1,13 +1,14 @@
 ---
 slug: lumen5
 title: Lumen5
-category: AI
+category: "AI Agents"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://lumen5.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Lumen5
 
 Lumen5 ist eine KI-gestützte Videoproduktionsplattform, die vor allem darauf ausgelegt ist, aus Textinhalten automatisch ansprechende Videos zu erstellen. Mit einer benutzerfreundlichen Oberfläche und intelligenten Automatisierungsfunktionen ermöglicht Lumen5 sowohl Einsteigern als auch Profis, schnell visuelle Inhalte für Social Media, Marketing oder interne Kommunikation zu produzieren. Die Plattform kombiniert Textverarbeitung, Bild- und Videobibliotheken sowie KI-gestützte Gestaltungsvorschläge, um den Videoproduktionsprozess erheblich zu vereinfachen.

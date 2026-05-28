@@ -1,11 +1,13 @@
 ---
 slug: concur-travel
 title: Concur Travel
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [travel-management, expense-management, saas]
 official_url: "https://www.concur.com/?&cookie_preferences=gdpr"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Concur Travel
 

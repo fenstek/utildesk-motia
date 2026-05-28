@@ -6,8 +6,9 @@ price_model: Nutzungsbasiert
 tags: [education, language, learning, marketplace]
 official_url: "https://www.italki.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # italki
 
 italki ist eine Online-Plattform, die Sprachlernende mit qualifizierten Lehrern aus der ganzen Welt verbindet. Über italki können Nutzer individuell gestaltete Sprachunterrichtsstunden buchen, die auf ihre Bedürfnisse und Ziele zugeschnitten sind. Die Plattform fungiert als Marktplatz für Sprachlehrer verschiedener Sprachen und ermöglicht flexibles, ortsunabhängiges Lernen per Videochat.

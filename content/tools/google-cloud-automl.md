@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-automl
 title: Google Cloud AutoML
-category: AI
+category: "AI Infrastructure"
 price_model: "Nutzungsbasiert"
 tags: [automation, workflow]
 official_url: "https://ai.google/build/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google Cloud AutoML
 
 Google Cloud AutoML ist eine Suite von maschinellen Lernwerkzeugen, die es Unternehmen ermöglicht, benutzerdefinierte KI-Modelle zu erstellen und zu trainieren, ohne tiefgehende Expertise im Bereich Machine Learning zu benötigen. Die Plattform automatisiert viele komplexe Schritte im Trainingsprozess und unterstützt verschiedene Anwendungsbereiche wie Bild-, Text- und Tabellendatenanalyse.

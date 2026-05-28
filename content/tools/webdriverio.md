@@ -1,13 +1,14 @@
 ---
 slug: webdriverio
 title: WebdriverIO
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://webdriver.io/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # WebdriverIO
 
 WebdriverIO ist ein leistungsstarkes Open-Source-Testautomatisierungs-Framework für Webanwendungen. Es ermöglicht Entwicklern und Testern, Browser- und Mobile-Tests einfach und effizient zu schreiben und auszuführen. Mit seiner flexiblen Architektur unterstützt WebdriverIO verschiedene Test-Runner, Protokolle und Integrationen, was es zu einem vielseitigen Werkzeug für die Automatisierung von End-to-End-Tests macht.

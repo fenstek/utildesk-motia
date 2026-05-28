@@ -1,13 +1,14 @@
 ---
 slug: bamboohr
 title: BambooHR
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [hr, hcm, payroll]
 official_url: "https://www.bamboohr.com/"
 popularity: 63
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # BambooHR
 
 BambooHR ist eine cloudbasierte Human-Capital-Management (HCM) Lösung, die speziell für kleine und mittelständische Unternehmen entwickelt wurde. Die Software bietet umfassende Funktionen für Personalmanagement, von der Mitarbeiterverwaltung über die Zeiterfassung bis hin zur Gehaltsabrechnung. Mit einer benutzerfreundlichen Oberfläche und intelligenten Automatisierungen unterstützt BambooHR HR-Teams dabei, administrative Aufgaben effizienter zu gestalten und sich auf strategische Personalentwicklung zu konzentrieren.

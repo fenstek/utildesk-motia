@@ -1,15 +1,16 @@
 ---
 slug: leonardo-ai
 title: Leonardo AI
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: ["design"]
 official_url: 'https://leonardo.ai'
 affiliate_url: 'https://leonardo.ai'
+tier: "D"
+generated_at: "2026-05-12"
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # Leonardo AI
 
 Leonardo AI ist eine innovative Plattform im Bereich der künstlichen Intelligenz, die sich auf die Erstellung und Bearbeitung von Bildern mittels KI-Technologien spezialisiert hat. Mit einer benutzerfreundlichen Oberfläche und vielseitigen Funktionen ermöglicht Leonardo AI sowohl Anfängern als auch Profis die einfache Generierung hochwertiger visueller Inhalte. Das Tool eignet sich insbesondere für kreative Projekte, Designarbeiten und visuelle Kommunikation, wobei es durch seine freemium-Preisgestaltung eine flexible Nutzung erlaubt.
@@ -30,20 +31,6 @@ Leonardo AI ist besonders nützlich für Design-, Content-, Produkt- und Kreativ
 
 Vor einer breiteren Einführung von Leonardo AI lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Leonardo AI lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Als Prüfstück für Leonardo AI eignet sich einem konkreten Asset mit Briefing, Versionen, Feedbackrunde, Export und finaler Abnahme. Wenn Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Leonardo AI:** Vor dem Rollout sollten Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Leonardo AI:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei Leonardo AI:** Kritisch wird es, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/leonardo-ai-editorial.webp" alt="Illustration zu Leonardo AI: generative Designkarten werden zu abstrakten Assets und Stilvarianten" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **KI-basierte Bildgenerierung:** Erstellung von Bildern aus Textbeschreibungen (Text-to-Image)
@@ -53,10 +40,6 @@ Als Prüfstück für Leonardo AI eignet sich einem konkreten Asset mit Briefing,
 - **Exportoptionen:** Verschiedene Formate für den Download und die Weiterverwendung der Bilder
 - **Integration:** Möglichkeit zur Einbindung in andere Anwendungen je nach Plan und Anbieter
 - **Skalierbarkeit:** Anpassung der Nutzung je nach Bedarf, vom Hobbyanwender bis zum professionellen Einsatz
-
-- **Praxislauf mit Leonardo AI:** Das Tool sollte mit einem konkreten Asset mit Briefing, Versionen, Feedbackrunde, Export und finaler Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Leonardo AI:** Das Team braucht eine einfache Methode, um Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz nach dem Einsatz zu prüfen.
-- **Übergabe mit Leonardo AI:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 
@@ -77,7 +60,6 @@ Als Prüfstück für Leonardo AI eignet sich einem konkreten Asset mit Briefing,
 - Datenschutz und Urheberrechtsfragen sollten individuell geprüft werden
 
 - Leonardo AI braucht vor dem Rollout Klärung, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; sonst entstehen Nebenprozesse.
-- Leonardo AI spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit dauerhaft nebenbei laufen sollen.
 
 ## Preise & Kosten
 

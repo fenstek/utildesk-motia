@@ -1,13 +1,14 @@
 ---
 slug: amazon-alexa
 title: Amazon Alexa
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [assistant, voice, smart-home]
 official_url: "https://developer.amazon.com/en/alexa"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Amazon Alexa
 
 Amazon Alexa ist ein sprachgesteuerter virtueller Assistent, der zahlreiche Aufgaben im Alltag erleichtert. Durch die Integration in Smart-Home-Geräte, die Steuerung von Musik, das Beantworten von Fragen und vieles mehr bietet Alexa eine vielseitige Unterstützung für Nutzerinnen und Nutzer. Die Technologie basiert auf künstlicher Intelligenz und ermöglicht eine intuitive Bedienung per Sprache.

@@ -1,13 +1,14 @@
 ---
 slug: jupyterhub
 title: JupyterHub
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [notebooks, collaboration, developer-tools]
 official_url: "https://jupyter.org/hub"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # JupyterHub
 
 JupyterHub ist eine Open-Source-Plattform, die es mehreren Nutzern ermöglicht, gemeinsam Jupyter-Notebooks in einer zentralisierten Umgebung zu verwenden. Diese Lösung richtet sich vor allem an Bildungseinrichtungen, Forschungsteams und Unternehmen, die kollaboratives Arbeiten mit interaktiven Notebooks vereinfachen möchten. Durch die zentrale Verwaltung von Benutzerkonten und Rechenressourcen bietet JupyterHub flexible und skalierbare Möglichkeiten, um Data-Science-Projekte und KI-Entwicklungen effizient durchzuführen.
@@ -78,7 +79,6 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - Nicht alle Funktionen sind „out of the box“ verfügbar, teilweise Konfiguration nötig
 - Benutzerfreundlichkeit kann je nach Setup variieren
 
-- Erhöht eher die Komplexität, wenn vor dem Start Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen und Entscheidungen nur nebenbei getroffen werden. Bei JupyterHub ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Wenn Review und Pflege ausfallen, verliert JupyterHub gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

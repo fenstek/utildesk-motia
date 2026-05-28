@@ -1,16 +1,18 @@
 ---
 slug: microsoft-copilot
 title: Microsoft Copilot
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://copilot.microsoft.com/"
 affiliate_url: "https://copilot.microsoft.com/"
+tier: "A"
+lastReviewed: "2026-05-21"
+mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast"]
 created_at: 2026-02-02
 updated_at: 2026-05-21
 popularity: 0
 ---
-
 # Microsoft Copilot
 
 Microsoft Copilot ist ein KI-gestütztes Tool, das in Microsoft 365 integriert ist und Nutzern dabei hilft, produktiver zu arbeiten. Es unterstützt bei der Erstellung von Texten, der Datenanalyse, der Automatisierung von Aufgaben und vielem mehr, indem es natürliche Sprache versteht und darauf reagiert. Copilot nutzt fortschrittliche KI-Modelle, um komplexe Aufgaben zu vereinfachen und Arbeitsprozesse effizienter zu gestalten.

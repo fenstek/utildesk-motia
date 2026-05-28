@@ -1,13 +1,14 @@
 ---
 slug: axis-communications
 title: Axis Communications
-category: Video
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [video, security, hardware, analytics]
 official_url: "https://www.axis.com/de-de"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Axis Communications
 
 Axis Communications ist ein weltweit führender Anbieter von Netzwerk-Videolösungen, der sich auf IP-basierte Sicherheits- und Überwachungssysteme spezialisiert hat. Das Unternehmen bietet eine breite Palette an hochwertigen Videoüberwachungskameras, Netzwerkhardware und intelligenten Analytiklösungen, die sowohl in kleinen als auch in großen Installationen eingesetzt werden können. Axis Communications steht für Innovation, Zuverlässigkeit und flexible Lösungen, die den Anforderungen moderner Sicherheitskonzepte gerecht werden.

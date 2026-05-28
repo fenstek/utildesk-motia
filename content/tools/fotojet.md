@@ -1,13 +1,14 @@
 ---
 slug: fotojet
 title: FotoJet
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [design, image, automation, productivity]
 official_url: "https://www.fotojet.com/"
 popularity: 99
+tier: "D"
+generated_at: "2026-05-09"
 ---
-
 # FotoJet
 
 FotoJet ist ein webbasiertes Design- und Bildwerkzeug für Nutzer:innen, die schnell Grafiken, Collagen, einfache Fotobearbeitungen und Marketingvisuals erstellen wollen. Es richtet sich weniger an professionelle Designer:innen mit komplexen Layoutsystemen, sondern an Menschen, die regelmäßig brauchbare visuelle Ergebnisse brauchen: Social-Posts, Banner, Einladungen, Blogbilder, kleine Kampagnenmotive oder private Fotoprojekte.

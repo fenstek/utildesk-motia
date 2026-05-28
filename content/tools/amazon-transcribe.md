@@ -1,13 +1,14 @@
 ---
 slug: amazon-transcribe
 title: Amazon Transcribe
-category: AI
+category: "AI Audio"
 price_model: Nutzungsbasiert
 tags: [audio, transcription, automation, productivity]
 official_url: "https://aws.amazon.com/transcribe/"
 popularity: 69
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Amazon Transcribe
 
 Amazon Transcribe ist ein cloudbasierter automatischer Spracherkennungsdienst (ASR) von Amazon Web Services (AWS), der Audioinhalte in Text umwandelt. Der Dienst unterstützt verschiedene Sprachen und Dialekte und wird vor allem zur Transkription von Meetings, Interviews, Kundengesprächen oder Medieninhalten eingesetzt. Durch die Integration in bestehende Anwendungen und Workflows ermöglicht Amazon Transcribe eine effiziente und skalierbare Automatisierung der Transkriptionsprozesse.

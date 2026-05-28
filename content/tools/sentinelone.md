@@ -1,13 +1,14 @@
 ---
 slug: sentinelone
 title: SentinelOne
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.sentinelone.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # SentinelOne
 
 SentinelOne ist eine moderne Endpoint-Sicherheitsplattform, die mithilfe von Künstlicher Intelligenz (KI) und automatisierten Reaktionen Unternehmen dabei unterstützt, Cyberbedrohungen frühzeitig zu erkennen und zu bekämpfen. Die Lösung bietet umfassenden Schutz für Endgeräte in Unternehmensnetzwerken und kombiniert präventive Maßnahmen mit Echtzeit-Erkennung und automatisierter Schadensbegrenzung.

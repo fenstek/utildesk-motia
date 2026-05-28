@@ -1,13 +1,14 @@
 ---
 slug: h2o-ai-driverless-ai
 title: H2O.ai Driverless AI
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [automl, mlops, analytics]
 official_url: "https://h2o.ai/platform/ai-cloud/make/h2o-driverless-ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # H2O.ai Driverless AI
 
 H2O.ai Driverless AI ist eine fortschrittliche Plattform für automatisiertes maschinelles Lernen (AutoML), die Unternehmen dabei unterstützt, komplexe Datenmodelle schnell und effizient zu erstellen. Die Software automatisiert viele Schritte des Data-Science-Prozesses, von der Datenvorbereitung bis zur Modellinterpretation, und ermöglicht so auch Nutzern ohne tiefgehende Programmierkenntnisse, leistungsstarke KI-Modelle zu entwickeln.

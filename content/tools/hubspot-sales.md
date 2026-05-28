@@ -1,11 +1,13 @@
 ---
 slug: hubspot-sales
 title: HubSpot Sales
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [crm, sales, automation]
 official_url: "https://www.hubspot.com/products/sales"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # HubSpot Sales
 

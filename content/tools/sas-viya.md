@@ -1,13 +1,14 @@
 ---
 slug: sas-viya
 title: SAS Viya
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [analytics,data-science,enterprise-ai]
 official_url: "https://www.sas.com/en_us/software/viya.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # SAS Viya
 
 SAS Viya ist eine moderne, cloudbasierte Analytics-Plattform, die Unternehmen dabei unterstützt, datengetriebene Entscheidungen zu treffen und komplexe KI-Modelle zu entwickeln. Die Plattform bietet eine skalierbare Umgebung für Datenwissenschaft, maschinelles Lernen und erweiterte Analysen und richtet sich insbesondere an Unternehmen, die robuste, unternehmensweite KI-Lösungen implementieren möchten.
@@ -20,7 +21,6 @@ SAS Viya ist ideal für Unternehmen und Organisationen, die ihre Datenanalyse- u
 - IT-Teams, die skalierbare und sichere Analytics-Lösungen verwalten möchten  
 - Unternehmen mit hohen Anforderungen an Datenintegration und -verarbeitung  
 - Branchen wie Finanzdienstleistungen, Gesundheitswesen, Einzelhandel und Fertigung, die komplexe Datenanalysen und prädiktive Modelle einsetzen
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sas-viya-editorial.webp" alt="Illustration zu SAS Viya: Daten wachsen in einem Gewaechshaus von Vorbereitung ueber Modelltraining bis Deployment" loading="lazy" decoding="async" />

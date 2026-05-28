@@ -6,6 +6,8 @@ price_model: Abonnement
 tags: [education, language, reading, learning]
 official_url: "https://www.lingq.com/en/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # LingQ
 

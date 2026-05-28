@@ -1,14 +1,15 @@
 ---
 slug: clipchamp
 title: Clipchamp
-category: AI
+category: "AI Coding"
 price_model: Freemium
 tags: ["video", "content"]
 official_url: "https://clipchamp.com/en/"
 created_at: 2026-02-15
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Clipchamp
 
 Clipchamp ist eine benutzerfreundliche Online-Videobearbeitungsplattform, die sich durch ihre KI-gestützten Funktionen und vielseitigen Bearbeitungsmöglichkeiten auszeichnet. Die Software richtet sich sowohl an Anfänger als auch an professionelle Anwender, die Videos schnell und effizient erstellen oder bearbeiten möchten – ohne komplexe Programme installieren zu müssen. Mit einem Freemium-Preismodell bietet Clipchamp eine solide Grundausstattung kostenlos an, während erweiterte Features in kostenpflichtigen Plänen verfügbar sind.

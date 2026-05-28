@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [contact-center, customer-support, communication, ai]
 official_url: "https://www.five9.com/de-de"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Five9
 
 Five9 ist eine cloudbasierte Contact-Center-Plattform, die Unternehmen dabei unterstützt, ihre Kundenkommunikation effizienter und intelligenter zu gestalten. Mit integrierten KI-Funktionen und vielfältigen Automatisierungsmöglichkeiten optimiert Five9 Kundenservice, Vertrieb und interne Kommunikation. Die Lösung eignet sich besonders für Unternehmen, die skalierbare und flexible Contact-Center-Lösungen suchen, um Kundenzufriedenheit und Produktivität zu steigern.

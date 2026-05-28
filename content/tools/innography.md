@@ -1,12 +1,14 @@
 ---
 slug: innography
 title: Innography
-category: Developer
+category: "Entwickler-Tools"
 price_model: "Abonnement"
 tags: [patents,research,analytics,enterprise]
 official_url: "https://clarivate.com/intellectual-property/derwent/patent-analytics/"
 popularity: 0
 description: "Innography ist ein Recherche- und Analysewerkzeug für Patent- und Innovationsanalyse für IP-Teams, Wettbewerbsbeobachtung und Technologielandschaften."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Innography
 

@@ -1,13 +1,14 @@
 ---
 slug: freshdesk
 title: Freshdesk
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, helpdesk, ticketing]
 official_url: "https://www.freshworks.com/freshdesk/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Freshdesk
 
 Freshdesk ist eine cloudbasierte Kundenservice-Software, die Unternehmen dabei unterstützt, den Support effizient zu organisieren und zu automatisieren. Mit einer Kombination aus Helpdesk-Funktionen und KI-gestützten Tools ermöglicht Freshdesk die Verwaltung von Kundenanfragen über verschiedene Kanäle hinweg – von E-Mail und Telefon bis hin zu sozialen Medien und Live-Chat. Die Plattform ist darauf ausgelegt, die Produktivität von Support-Teams zu steigern und die Kundenzufriedenheit zu verbessern.

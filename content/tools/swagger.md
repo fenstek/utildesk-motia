@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [api, developer-tools, documentation]
 official_url: "https://swagger.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Swagger (OpenAPI)
 
 Swagger (OpenAPI) ist ein weit verbreitetes Framework zur Entwicklung, Dokumentation und zum Testen von RESTful APIs. Es bietet Entwicklern eine standardisierte Methode, um APIs zu beschreiben, zu visualisieren und zu validieren. Mit Swagger können Teams die API-Spezifikationen in einem maschinenlesbaren Format erstellen, was die Zusammenarbeit und Integration vereinfacht.

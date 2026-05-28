@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [design, video, image]
 official_url: "https://www.adobe.com/products/premiere-rush.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Adobe Premiere Rush
 
 Adobe Premiere Rush ist eine benutzerfreundliche Videobearbeitungssoftware, die speziell für Content-Ersteller entwickelt wurde, die schnell und einfach hochwertige Videos produzieren möchten. Die Anwendung kombiniert grundlegende Videobearbeitungsfunktionen mit einer intuitiven Oberfläche und ist sowohl für Desktop- als auch für mobile Geräte verfügbar. Mit Premiere Rush können Nutzer Videos aufnehmen, bearbeiten und direkt auf verschiedenen Plattformen teilen.

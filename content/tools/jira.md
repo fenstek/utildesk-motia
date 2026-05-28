@@ -1,13 +1,14 @@
 ---
 slug: jira
 title: Jira
-category: AI
+category: "AI Coding"
 price_model: Abonnement, Je nach Plan
 tags: [project-management, issue-tracking, developer-tools]
 official_url: "https://www.atlassian.com/software/jira"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Jira
 
 Jira ist für viele Software- und Produktteams das Rückgrat der Arbeitsorganisation: Anforderungen, Bugs, Sprints, Releases und Verantwortlichkeiten werden an einem Ort sichtbar. Die Stärke liegt nicht darin, Arbeit schöner aussehen zu lassen, sondern Komplexität verhandelbar zu machen.

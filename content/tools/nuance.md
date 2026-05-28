@@ -1,13 +1,15 @@
 ---
 slug: nuance
 title: Nuance
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "http://www.nuance.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-16"
+mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
-
 # Nuance
 
 Nuance ist eine führende KI-basierte Softwarelösung, die sich auf Spracherkennung, natürliche Sprachverarbeitung und Automatisierung spezialisiert hat. Die Technologie wird vor allem im Gesundheitswesen, im Kundenservice und in der Unternehmenskommunikation eingesetzt, um Arbeitsabläufe zu optimieren und die Produktivität zu steigern. Mit einer Kombination aus fortschrittlicher KI und benutzerfreundlichen Tools unterstützt Nuance Unternehmen dabei, Informationen effizienter zu erfassen, zu verarbeiten und zu nutzen.

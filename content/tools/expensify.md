@@ -1,13 +1,14 @@
 ---
 slug: expensify
 title: Expensify
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.expensify.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Expensify
 
 Expensify ist eine innovative Softwarelösung, die Unternehmen und Einzelpersonen dabei unterstützt, ihre Spesenabrechnung und Ausgabenverwaltung zu automatisieren. Durch den Einsatz von Künstlicher Intelligenz erleichtert Expensify den Prozess der Belegerfassung, Spesenerfassung und Berichterstellung – und sorgt so für mehr Effizienz im Finanzmanagement. Die Plattform eignet sich besonders für vielreisende Mitarbeiter, kleine bis mittelständische Unternehmen sowie Teams, die ihre Finanzprozesse digitalisieren möchten.

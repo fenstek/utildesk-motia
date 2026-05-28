@@ -1,13 +1,14 @@
 ---
 slug: runpod
 title: RunPod
-category: Cloud
+category: "AI Infrastructure"
 price_model: 
 tags: ["automation", "workflow", "data"]
 official_url: "https://www.runpod.io"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # RunPod
 
 RunPod ist eine Cloud-basierte Plattform, die flexible und skalierbare GPU-Computing-Ressourcen für Entwickler, Forscher und Unternehmen bereitstellt. Sie ermöglicht es Nutzern, KI-Modelle zu trainieren, Datenanalysen durchzuführen und rechenintensive Aufgaben in der Cloud auszuführen, ohne eigene Hardware anschaffen zu müssen. Die Plattform zeichnet sich durch eine benutzerfreundliche Oberfläche und verschiedene Anpassungsmöglichkeiten aus.
@@ -35,7 +36,6 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - **Worauf achten:** Bei RunPod sollten Datenqualität, Laufzeit, Wartbarkeit und Akzeptanz der Auswertung nicht nur gefühlt besser wirken, sondern anhand konkreter Vorher-nachher-Belege verglichen werden.
 - **Guter Startpunkt:** Ein Team sollte RunPod zuerst in einem kleinen, realen Ablauf testen, bei dem Eingang, Ergebnis und Review vorher beschrieben sind.
 - **Häufiger Stolperstein:** RunPod enttäuscht, wenn Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/runpod-editorial.webp" alt="Illustration zu RunPod: Kleine Compute-Pods oeffnen sich als Werkstaetten fuer verschiedene KI-Aufgaben" loading="lazy" decoding="async" />

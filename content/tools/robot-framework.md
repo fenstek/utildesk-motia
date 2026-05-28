@@ -1,11 +1,13 @@
 ---
 slug: robot-framework
 title: Robot Framework
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [test-automation, qa, developer-tools]
 official_url: "https://robotframework.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # Robot Framework
 
@@ -26,7 +28,6 @@ Robot Framework gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als
 - **Sinnvoller Fokus:** keywordgetriebene Testautomatisierung und Acceptance Tests.
 - **Gute Voraussetzung:** für QA-Teams, die Regressionstests und Business-Akzeptanz abbilden.
 - **Aufpassen bei:** bei schlecht gepflegten Keywords schnell schwer wartbar wird.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/robot-framework-editorial.webp" alt="Illustration zu Robot Framework: Ein Testfall rollt durch Pruefstationen, Geraete-Rahmen und Freigabeglocke" loading="lazy" decoding="async" />

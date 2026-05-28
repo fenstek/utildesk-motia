@@ -1,13 +1,14 @@
 ---
 slug: gitpod
 title: Gitpod
-category: AI
+category: "AI Coding"
 price_model: Freemium
 tags: [automation, coding]
 official_url: "https://www.gitpod.io"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Gitpod
 
 Gitpod ist eine cloudbasierte Entwicklungsumgebung, die speziell darauf ausgelegt ist, den Programmierprozess durch Automatisierung und On-Demand-Dev-Umgebungen zu beschleunigen. Mit Gitpod können Entwickler direkt aus dem Browser heraus starten, ohne lokale Setups oder komplexe Konfigurationen vornehmen zu müssen. Die Plattform integriert sich nahtlos mit Git-Repositories und bietet eine automatisierte, vorkonfigurierte Entwicklungsumgebung für jede Codebasis.

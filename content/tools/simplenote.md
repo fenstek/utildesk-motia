@@ -6,8 +6,9 @@ price_model: Free
 tags: [notes, writing, productivity, open-source]
 official_url: "https://simplenote.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Simplenote
 
 Simplenote ist eine schlanke, leichtgewichtige Notiz-App, die sich auf das Wesentliche konzentriert: das schnelle Erfassen und Verwalten von Notizen. Entwickelt als Open-Source-Tool, bietet Simplenote eine einfache Benutzeroberfläche ohne unnötigen Schnickschnack. Die App synchronisiert alle Notizen über verschiedene Geräte hinweg und unterstützt Markdown-Formatierung, wodurch sie sowohl für private als auch berufliche Zwecke gut geeignet ist.

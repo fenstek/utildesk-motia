@@ -6,10 +6,11 @@ price_model: Freemium
 tags: ["education", "data", "analytics", "python", "developer-tools"]
 official_url: "https://jovian.com/"
 affiliate_url: "https://jovian.com/"
+tier: "C"
+generated_at: "2026-05-17"
 popularity: 0
 description: Praxisorientierte Lernplattform für Python, Datenanalyse, Machine Learning und Jupyter-Workflows.
 ---
-
 # Jovian
 
 Jovian ist eine Lernplattform für Menschen, die Datenanalyse, Python, Machine Learning und praktische Notebook-Workflows nicht nur theoretisch verstehen, sondern aktiv ausprobieren wollen.

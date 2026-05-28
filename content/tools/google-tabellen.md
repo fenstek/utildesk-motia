@@ -1,13 +1,14 @@
 ---
 slug: google-tabellen
 title: Google Tabellen
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["spreadsheet", "data", "productivity"]
 official_url: "https://workspace.google.com/products/sheets/"
 popularity: 92
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Google Tabellen
 
 Google Tabellen ist ein webbasiertes Tabellenkalkulationstool von Google, das zur Google Workspace Suite gehört. Es ermöglicht Nutzern, Daten zu organisieren, zu analysieren und gemeinsam in Echtzeit zu bearbeiten. Dank der Integration von KI-Funktionen wird die Arbeit mit Daten effizienter und intuitiver. Google Tabellen ist plattformübergreifend verfügbar und eignet sich sowohl für einfache als auch komplexe Aufgaben im Bereich Datenmanagement.

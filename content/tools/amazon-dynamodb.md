@@ -1,13 +1,14 @@
 ---
 slug: amazon-dynamodb
 title: Amazon DynamoDB
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [database,cloud,data,developer-tools]
 official_url: "https://aws.amazon.com/dynamodb/"
 popularity: 70
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Amazon DynamoDB
 
 Amazon DynamoDB ist ein vollständig verwalteter NoSQL-Datenbankservice von Amazon Web Services (AWS), der für schnelle und vorhersehbare Leistung bei beliebiger Skalierung konzipiert wurde. Er ermöglicht Entwicklern, Anwendungen mit geringer Latenz und hoher Verfügbarkeit zu erstellen, ohne sich um die zugrunde liegende Infrastruktur kümmern zu müssen.
@@ -51,7 +52,6 @@ Amazon DynamoDB eignet sich besonders für Entwickler und Unternehmen, die skali
 - Eingeschränkte Abfragesprache im Vergleich zu SQL-basierten Systemen.
 - Abhängigkeit von AWS-Infrastruktur und deren Verfügbarkeit.
 - Limitierungen bei komplexen Joins und relationalen Datenmodellen.
-
 
 ## Was im Alltag wirklich zählt
 

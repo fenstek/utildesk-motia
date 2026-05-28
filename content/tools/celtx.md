@@ -1,11 +1,13 @@
 ---
 slug: celtx
 title: Celtx
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [scriptwriting, pre-production, video]
 official_url: "https://www.celtx.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Celtx
 

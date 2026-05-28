@@ -1,13 +1,14 @@
 ---
 slug: runai
 title: RunAI
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [ai, assistant, automation, workflow]
 official_url: "https://runai.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # RunAI
 
 RunAI ist eine innovative Plattform, die speziell entwickelt wurde, um KI-gestützte Arbeitsabläufe zu automatisieren und zu optimieren. Mit einem Fokus auf die Integration von KI-Assistenten in verschiedene Unternehmensprozesse ermöglicht RunAI eine effizientere Nutzung von Ressourcen und eine verbesserte Zusammenarbeit im Team. Die Plattform unterstützt Unternehmen dabei, repetitive Aufgaben zu automatisieren und komplexe Workflows mit künstlicher Intelligenz zu steuern.
@@ -22,7 +23,6 @@ RunAI richtet sich vor allem an Unternehmen und Teams, die ihre Arbeitsprozesse 
 - Entwickler und Forscher, die flexible und skalierbare KI-Infrastrukturen benötigen
 
 Die Plattform ist sowohl für kleine bis mittelständische Unternehmen als auch für größere Konzerne geeignet, abhängig von den individuellen Anforderungen und dem gewählten Plan.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/runai-editorial.webp" alt="Illustration zu RunAI: Workload-Wagen werden in einem Mini-Rechenzentrum zu GPU-Spuren geleitet" loading="lazy" decoding="async" />

@@ -1,13 +1,14 @@
 ---
 slug: soundraw
 title: Soundraw
-category: Audio
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://soundraw.io/"
 popularity: 14
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Soundraw
 
 Soundraw ist ein KI-gestütztes Musikkompositions-Tool, das speziell entwickelt wurde, um die Erstellung von individuellen Musikstücken zu vereinfachen und zu beschleunigen. Mit Soundraw können Nutzer schnell und unkompliziert Musik generieren, die sich flexibel an verschiedene Projekte anpasst, sei es für Videos, Podcasts oder andere kreative Formate.

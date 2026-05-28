@@ -1,13 +1,14 @@
 ---
 slug: lm-studio
 title: LM Studio
-category: AI
+category: "AI Coding"
 price_model: Free
 tags: [llm, developer-tools, local-ai, desktop]
 official_url: "https://lmstudio.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # LM Studio
 
 LM Studio ist eine vielseitige Desktop-Anwendung, die Entwicklern ermöglicht, große Sprachmodelle (Large Language Models, LLM) lokal auf ihrem Rechner auszuführen und zu verwalten. Die Software richtet sich an Nutzer, die ihre KI-Anwendungen unabhängig von Cloud-Diensten betreiben möchten und Wert auf Datenschutz, Kontrolle und Geschwindigkeit legen. LM Studio bietet eine benutzerfreundliche Oberfläche und unterstützt verschiedene vortrainierte Modelle, die direkt auf dem eigenen System laufen.

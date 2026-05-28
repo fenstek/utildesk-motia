@@ -1,13 +1,14 @@
 ---
 slug: h2o-ai
 title: H2O.ai
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [data, analytics, automation]
 official_url: "https://h2o.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # H2O.ai
 
 H2O.ai ist eine führende Plattform im Bereich Künstliche Intelligenz und maschinelles Lernen, die Unternehmen dabei unterstützt, Daten in wertvolle Erkenntnisse umzuwandeln. Mit einer Kombination aus benutzerfreundlichen Tools und leistungsstarken Algorithmen ermöglicht H2O.ai sowohl Experten als auch Einsteigern die Automatisierung von Datenanalysen und die Erstellung präziser Vorhersagemodelle. Die Plattform ist besonders bekannt für ihre Skalierbarkeit und Flexibilität in unterschiedlichen Branchen.

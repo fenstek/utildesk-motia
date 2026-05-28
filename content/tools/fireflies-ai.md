@@ -1,13 +1,14 @@
 ---
 slug: fireflies-ai
 title: Fireflies.ai
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [meetings, transcription, notes]
 official_url: "https://fireflies.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Fireflies.ai
 
 Fireflies.ai ist ein KI-gestütztes Tool zur automatischen Transkription und Protokollierung von Meetings. Es unterstützt Teams dabei, Gespräche effizient festzuhalten, Notizen zu erstellen und wichtige Informationen schnell wiederzufinden. Durch die Integration mit verschiedenen Meeting-Plattformen und die automatische Analyse von Gesprächsinhalten erleichtert Fireflies.ai die Nachbereitung und verbessert die Zusammenarbeit.

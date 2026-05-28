@@ -1,12 +1,14 @@
 ---
 slug: localize
 title: Localize
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: [ai, translation, workflow]
 official_url: "https://localize.io/"
 popularity: 0
 description: "Localize ist ein Business- und Operations-Plattform für Website- und App-Lokalisierung für Teams, die Übersetzungen kontinuierlich ausrollen müssen."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Localize
 

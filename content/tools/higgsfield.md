@@ -1,12 +1,14 @@
 ---
 slug: higgsfield
 title: Higgsfield
-category: Video
+category: "Audio & Video"
 price_model: "Freemium"
 tags: [ai, video, creative]
 official_url: "https://higgsfield.ai/"
 popularity: 0
 description: "Higgsfield ist ein Video- und Produktionswerkzeug für KI-Video-Generierung und kreative Motion-Experimente für Social- und Kampagnenideen."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Higgsfield
 

@@ -1,15 +1,16 @@
 ---
 slug: narrato
 title: Narrato
-category: Schreiben & Content
+category: "AI Writing"
 price_model: Freemium
 tags: ["content", "writing", "marketing", "workflow", "ai"]
 official_url: "https://narrato.io/"
 affiliate_url: "https://narrato.io/"
+tier: "C"
+generated_at: "2026-05-28"
 popularity: 29
 description: Content-Workflow-Plattform für Planung, KI-Schreiben, Redaktion und Marketingproduktion.
 ---
-
 # Narrato
 
 Narrato ist eine Content-Workflow-Plattform für Planung, KI-gestütztes Schreiben, Redaktion, Aufgabensteuerung und Marketingproduktion.
@@ -21,7 +22,6 @@ Wichtig: Der Anbieter hat angekündigt, Narrato zum 15. Juni 2026 einzustellen. 
 Narrato ist vor allem für bestehende Nutzer relevant, die Content-Projekte, Briefings, KI-Texte und redaktionelle Abläufe aus dem System sichern oder migrieren müssen. Für neue Teams ist die angekündigte Einstellung ein starkes Warnsignal.
 
 Wer aktuell ein Content-Workflow-Tool auswählt, sollte Narrato eher als Vergleichspunkt nutzen: Welche Funktionen brauche ich wirklich, wie exportiere ich Inhalte, und welche Alternative ist langfristig stabiler?
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/narrato-editorial.webp" alt="Illustration zu Narrato: ein Redaktionstisch organisiert Entw?rfe, Planung und Freigaben" loading="lazy" decoding="async" />

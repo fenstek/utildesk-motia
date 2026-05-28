@@ -1,12 +1,14 @@
 ---
 slug: lightworks
 title: Lightworks
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [video-editing, post-production, filmmaking]
 official_url: "https://lwks.com/#features_section"
 popularity: 0
 description: "Lightworks ist ein Video- und Produktionswerkzeug für Videoschnitt und Postproduktion für Filmemacher, Cutter und ambitionierte Creator."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Lightworks
 

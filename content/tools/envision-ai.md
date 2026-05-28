@@ -1,11 +1,13 @@
 ---
 slug: envision-ai
 title: Envision AI
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [video,machine-learning]
 official_url: "https://www.envision.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Envision AI
 

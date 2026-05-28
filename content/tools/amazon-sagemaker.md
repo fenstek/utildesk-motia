@@ -1,14 +1,15 @@
 ---
 slug: amazon-sagemaker
 title: Amazon SageMaker
-category: AI
+category: "AI Chatbots"
 price_model: Nutzungsbasiert
 tags: [assistant, automation]
 official_url: "https://aws.amazon.com/sagemaker/"
 disabled: true
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Amazon SageMaker
 
 Amazon SageMaker ist eine umfassende Cloud-basierte Plattform von Amazon Web Services (AWS), die Entwicklern und Datenwissenschaftlern ermöglicht, Machine-Learning-Modelle schnell zu erstellen, zu trainieren und bereitzustellen. Die Plattform vereinfacht komplexe Prozesse des maschinellen Lernens durch integrierte Tools und Automatisierung, sodass Unternehmen ihre KI-Projekte effizienter und skalierbarer umsetzen können.

@@ -1,14 +1,15 @@
 ---
 slug: right-inbox
 title: Right Inbox
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [email-productivity, automation, scheduling]
 official_url: "https://www.rightinbox.com/"
 popularity: 0
 disabled: true
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Right Inbox
 
 Right Inbox ist ein leistungsstarkes E-Mail-Produktivitätstool, das speziell für Nutzer von Gmail entwickelt wurde. Es erweitert den Funktionsumfang des E-Mail-Dienstes um wichtige Features wie automatisches Nachfassen, E-Mail-Planung und Vorlagen, die den Arbeitsalltag deutlich erleichtern und effizienter gestalten. Durch die Integration von Automatisierung und intelligenten Funktionen hilft Right Inbox dabei, den Posteingang besser zu organisieren und zeitkritische Nachrichten nicht zu verpassen.
@@ -47,7 +48,6 @@ Right Inbox richtet sich an Berufstätige, Selbstständige und Teams, die viel m
 - Einige erweiterte Features sind nur in kostenpflichtigen Plänen verfügbar
 - Datenschutz und Sicherheit können je nach Nutzung kritisch sein, da E-Mail-Inhalte verarbeitet werden
 - Nicht Open Source, daher keine Anpassungsmöglichkeiten durch Nutzer
-
 
 ## Was im Alltag wirklich zählt
 

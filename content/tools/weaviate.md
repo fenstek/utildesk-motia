@@ -1,13 +1,14 @@
 ---
 slug: weaviate
 title: Weaviate
-category: AI Infrastructure
+category: "AI Coding"
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://weaviate.io"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Weaviate
 
 Weaviate ist eine Open-Source-Vector-Datenbank, die speziell für die Verwaltung und Suche von unstrukturierten Daten mithilfe von Künstlicher Intelligenz entwickelt wurde. Sie ermöglicht es Unternehmen, komplexe Daten in Form von Vektoren zu speichern und darauf basierende semantische Suchanfragen durchzuführen. Weaviate kombiniert moderne KI-Technologien mit einer skalierbaren Infrastruktur, um schnelle und präzise Suchergebnisse zu liefern.

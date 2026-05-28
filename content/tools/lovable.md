@@ -1,13 +1,14 @@
 ---
 slug: lovable
 title: Lovable
-category: Developer
+category: "Entwickler-Tools"
 price_model: 
 tags: [ai, coding, app-builder]
 official_url: "https://lovable.dev/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Lovable
 
 Lovable ist ein modernes Entwickler-Tool, das sich auf die Unterstützung bei der App-Entwicklung mithilfe von Künstlicher Intelligenz konzentriert. Es bietet Entwicklern eine effiziente Plattform zur schnellen Erstellung und Anpassung von Anwendungen, indem es intelligente Automatisierungen und Code-Generierung integriert. Lovable eignet sich besonders für Entwicklerteams, die ihre Arbeitsprozesse optimieren und die Entwicklungszeit verkürzen möchten.

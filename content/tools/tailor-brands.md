@@ -1,13 +1,14 @@
 ---
 slug: tailor-brands
 title: Tailor Brands
-category: AI
+category: "AI Image"
 price_model: Abonnement, Je nach Plan
 tags: [design, branding, logo, marketing]
 official_url: "https://www.tailorbrands.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Tailor Brands
 
 Tailor Brands ist eine KI-gestützte Plattform, die Unternehmen und Einzelpersonen dabei unterstützt, professionelle Logos, Markenidentitäten und Marketingmaterialien schnell und einfach zu erstellen. Durch den Einsatz von künstlicher Intelligenz werden Designprozesse automatisiert, wodurch auch Nutzer ohne Designkenntnisse ansprechende Ergebnisse erzielen können. Tailor Brands bietet eine breite Palette von Tools, die von Logo-Design über Branding bis hin zu Social-Media-Marketing reichen.

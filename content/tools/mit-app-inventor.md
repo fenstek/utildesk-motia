@@ -1,13 +1,14 @@
 ---
 slug: mit-app-inventor
 title: MIT App Inventor
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [developer-tools,education,mobile,open-source]
 official_url: "https://appinventor.mit.edu/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # MIT App Inventor
 
 MIT App Inventor ist eine offene Plattform zur Entwicklung von mobilen Apps, die vor allem für Einsteiger und Bildungszwecke konzipiert wurde. Mit einer visuellen Blockprogrammierung ermöglicht es Nutzern, ohne tiefgehende Programmierkenntnisse eigene Android-Anwendungen zu erstellen. Die intuitive Benutzeroberfläche und die starke Community machen es zu einem beliebten Tool im Bereich der App-Entwicklung für Anfänger und Lehrkräfte.

@@ -1,13 +1,14 @@
 ---
 slug: automation-anywhere
 title: Automation Anywhere
-category: AI
+category: "AI Agents"
 price_model: "Je nach Plan"
 tags: [ai, automation, rpa, productivity, enterprise]
 official_url: "https://www.automationanywhere.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Automation Anywhere
 
 Automation Anywhere ist eine führende Plattform im Bereich Robotic Process Automation (RPA), die Unternehmen dabei unterstützt, repetitive und zeitaufwändige Aufgaben durch den Einsatz von intelligenten Software-Robotern zu automatisieren. Die Lösung kombiniert Künstliche Intelligenz (KI) mit Automatisierungstechnologien, um Geschäftsprozesse effizienter, schneller und fehlerfrei zu gestalten. Damit steigert Automation Anywhere die Produktivität und ermöglicht es Unternehmen, sich auf strategischere Aufgaben zu konzentrieren.

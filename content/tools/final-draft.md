@@ -1,13 +1,14 @@
 ---
 slug: final-draft
 title: Final Draft
-category: AI
+category: "AI Writing"
 price_model: Kostenpflichtig
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.finaldraft.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Final Draft
 
 Final Draft ist eine professionelle Drehbuchsoftware, die speziell für Drehbuchautoren, Regisseure und Produzenten entwickelt wurde. Sie unterstützt kreative Prozesse durch eine intuitive Benutzeroberfläche und zahlreiche Funktionen, die das Schreiben von Film- und Fernsehskripten erleichtern. Die Software ist seit vielen Jahren ein Branchenstandard und bietet Werkzeuge, die den gesamten Schreibprozess von der Idee bis zum fertigen Drehbuch begleiten.

@@ -1,13 +1,14 @@
 ---
 slug: adalo
 title: Adalo
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [no-code, design, automation, productivity]
 official_url: "https://www.adalo.com/"
 popularity: 79
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Adalo
 
 Adalo ist eine No-Code-Plattform, die es Nutzern ermöglicht, ohne Programmierkenntnisse individuelle mobile und Web-Apps zu erstellen. Mit einem Fokus auf Design, Automatisierung und Produktivität bietet Adalo eine intuitive Oberfläche, die vor allem für kleine Unternehmen, Start-ups und Entwickler ohne technischen Hintergrund attraktiv ist. Die Plattform unterstützt die schnelle Umsetzung von App-Ideen durch visuelles Drag-and-Drop und integrierte Funktionen zur Automatisierung von Workflows.

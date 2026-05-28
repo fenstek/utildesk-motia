@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [translation, writing, language-learning]
 official_url: "https://context.reverso.net/translation/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Reverso Context
 
 Reverso Context ist ein vielseitiges Online-Tool, das speziell für Übersetzungen und das Erlernen von Sprachen entwickelt wurde. Es bietet kontextbezogene Übersetzungen, die auf echten Textbeispielen basieren, und unterstützt Anwender dabei, Sprachbarrieren zu überwinden. Mit Funktionen, die sowohl für professionelle Übersetzer als auch für Lernende geeignet sind, erleichtert Reverso Context das Verstehen und Verfassen von Texten in verschiedenen Sprachen.
@@ -23,7 +24,6 @@ Reverso Context richtet sich an ein breites Spektrum von Nutzern:
 - **Alltagsnutzer**, die gelegentlich Übersetzungen für E-Mails, Webseiten oder Dokumente benötigen.
 
 Das Tool ist besonders hilfreich für alle, die nicht nur einfache Wort-für-Wort-Übersetzungen wollen, sondern einen tieferen Einblick in den Sprachgebrauch und die Nuancen verschiedener Ausdrücke suchen.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/reverso-context-editorial.webp" alt="Illustration zu Reverso Context: Eine Formulierung wechselt zwischen Leseszenen und erhaelt Bedeutung aus dem Umfeld" loading="lazy" decoding="async" />

@@ -1,13 +1,14 @@
 ---
 slug: flexclip
 title: FlexClip
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [video, design, marketing, content, automation]
 official_url: "https://www.flexclip.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # FlexClip
 
 FlexClip ist ein benutzerfreundliches Online-Tool zur Erstellung und Bearbeitung von Videos. Es richtet sich an Nutzer, die schnell und ohne tiefgehende technische Kenntnisse ansprechende Videos für Marketing, Social Media, Präsentationen oder persönliche Projekte erstellen möchten. Mit einer Vielzahl an Vorlagen, intuitiven Bearbeitungsfunktionen und automatisierten Features unterstützt FlexClip die effiziente Gestaltung von Videoinhalten.

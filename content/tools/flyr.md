@@ -1,13 +1,14 @@
 ---
 slug: flyr
 title: Flyr
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [ai, travel, revenue-management, analytics]
 official_url: "https://flyr.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Flyr
 
 Flyr ist eine innovative KI-gestützte Plattform, die speziell für die Reisebranche entwickelt wurde, um das Revenue Management und die Analyse von Reisedaten zu optimieren. Durch den Einsatz moderner künstlicher Intelligenz hilft Flyr Unternehmen dabei, Preise dynamisch anzupassen, Prognosen zu verbessern und somit Umsätze zu steigern. Die Lösung richtet sich vor allem an Unternehmen, die ihre Ertragsstrategien mit datenbasierten Erkenntnissen effizienter gestalten möchten.

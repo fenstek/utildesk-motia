@@ -1,13 +1,14 @@
 ---
 slug: ibm-watson-assistant
 title: IBM Watson Assistant
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://www.ibm.com/products/watsonx-orchestrate"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # IBM Watson Assistant
 
 IBM Watson Assistant ist eine fortschrittliche KI-basierte Plattform zur Erstellung von Chatbots und virtuellen Assistenten. Sie ermöglicht Unternehmen, intuitive und kontextsensitive Dialogsysteme zu entwickeln, die Kundenanfragen automatisiert und effizient bearbeiten. Mit Watson Assistant lassen sich komplexe Interaktionen gestalten, die über einfache Antworten hinausgehen und durch maschinelles Lernen kontinuierlich verbessert werden.

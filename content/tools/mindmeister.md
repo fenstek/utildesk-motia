@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [mind-mapping, collaboration, planning, productivity]
 official_url: "https://www.mindmeister.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # MindMeister
 
 MindMeister ist ein vielseitiges Online-Tool zur Erstellung von Mindmaps, das Teams und Einzelpersonen dabei unterstützt, Gedanken zu strukturieren, Projekte zu planen und effektiv zusammenzuarbeiten. Mit einer intuitiven Benutzeroberfläche und zahlreichen Funktionen eignet sich MindMeister besonders für kreative Prozesse, Brainstorming-Sessions und die Visualisierung komplexer Ideen.

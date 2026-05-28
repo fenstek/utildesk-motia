@@ -1,13 +1,14 @@
 ---
 slug: looker
 title: Looker
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: ["analytics", "data", "automation"]
 official_url: "https://cloud.google.com/looker"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Looker
 
 Looker ist eine moderne Business-Intelligence- und Datenanalyseplattform, die Unternehmen dabei unterstützt, Daten aus verschiedenen Quellen zusammenzuführen, zu analysieren und visuell aufzubereiten. Mit Schwerpunkt auf datengetriebene Entscheidungen bietet Looker leistungsstarke Tools zur Datenvisualisierung und -exploration, die sich besonders für Unternehmen mit umfangreichen Datenbeständen eignen.

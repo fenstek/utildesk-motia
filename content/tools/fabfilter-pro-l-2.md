@@ -1,13 +1,14 @@
 ---
 slug: fabfilter-pro-l-2
 title: FabFilter Pro-L 2
-category: Audio
+category: "Audio & Video"
 price_model: One-time purchase
 tags: [audio, mastering, limiter, music]
 official_url: "https://www.fabfilter.com/products/pro-l-2-limiter-plug-in"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # FabFilter Pro-L 2
 
 FabFilter Pro-L 2 ist ein professioneller Limiter, der speziell für das Mastering und die finale Lautstärkeanpassung von Audiospuren entwickelt wurde. Mit modernster Audiotechnologie bietet er präzise Kontrolle über das Signal, um maximale Lautstärke ohne unerwünschte Verzerrungen zu erreichen. Die intuitive Benutzeroberfläche und vielfältigen Einstellungsmöglichkeiten machen ihn zu einem beliebten Werkzeug unter Musikproduzenten, Toningenieuren und Mastering-Spezialisten.

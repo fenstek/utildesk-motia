@@ -1,13 +1,14 @@
 ---
 slug: renderforest
 title: Renderforest
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [video, workflow]
 official_url: "https://www.renderforest.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Renderforest
 
 Renderforest ist eine vielseitige Online-Plattform, die es Nutzern ermöglicht, professionelle Videos, Animationen, Logos und Webseiten mit Hilfe von Vorlagen und KI-gestützten Tools zu erstellen. Besonders beliebt ist Renderforest für die schnelle Produktion von Marketingvideos, Erklärvideos und visuellen Inhalten, die ohne tiefgehende Design- oder Videobearbeitungskenntnisse erstellt werden können. Die Plattform unterstützt sowohl Einzelpersonen als auch Unternehmen bei der effizienten Gestaltung von Medieninhalten im Workflow.

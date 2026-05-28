@@ -1,12 +1,14 @@
 ---
 slug: pons-w-rterbuch
 title: PONS Wörterbuch
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: [translation,language,reference,productivity]
 official_url: "https://de.pons.com/%C3%BCbersetzung"
 popularity: 0
 description: "PONS Wörterbuch ist ein Recherche- und Analysewerkzeug für Wörterbuch, Übersetzungshilfe und Sprachreferenz für alltägliche und schulische Sprachfragen."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # PONS Wörterbuch
 

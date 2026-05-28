@@ -1,13 +1,14 @@
 ---
 slug: khan-academy
 title: Khan Academy
-category: AI
+category: "AI Infrastructure"
 price_model: Kostenlos
 tags: [education, elearning, learning]
 official_url: "https://www.khanacademy.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Khan Academy
 
 Khan Academy ist eine führende Online-Lernplattform, die kostenlos Bildungsinhalte für Schüler, Studenten und lebenslang Lernende bereitstellt. Mit einem umfangreichen Angebot an interaktiven Übungen, Videos und personalisierten Lernplänen unterstützt Khan Academy Nutzer dabei, ihr Wissen in verschiedenen Fächern zu vertiefen. Die Plattform ist besonders bekannt für ihre klare Didaktik und die breite Abdeckung von Themen, von Mathematik über Naturwissenschaften bis hin zu Wirtschaft und Kunstgeschichte.

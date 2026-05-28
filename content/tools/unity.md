@@ -1,13 +1,14 @@
 ---
 slug: unity
 title: Unity
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [game-engine, developer-tools, 3d, design]
 official_url: "https://unity.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-26"
 ---
-
 # Unity
 
 Unity ist eine weitverbreitete, leistungsstarke Game-Engine und Entwicklungsplattform, die vor allem für die Erstellung von 2D- und 3D-Spielen sowie interaktiven Anwendungen genutzt wird. Mit einer breiten Palette von Tools und einer aktiven Community unterstützt Unity Entwickler dabei, Projekte für verschiedene Plattformen wie PC, Mobilgeräte, Konsolen und VR/AR umzusetzen. Die flexible Preisstruktur ermöglicht es sowohl Einsteigern als auch professionellen Studios, die Software zu nutzen.

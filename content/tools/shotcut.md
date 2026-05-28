@@ -1,12 +1,14 @@
 ---
 slug: shotcut
 title: Shotcut
-category: AI
+category: "AI Coding"
 price_model: Kostenlos
 tags: [video-editing, open-source, post-production]
 official_url: "https://shotcut.org/"
 popularity: 0
 description: "Shotcut ist ein kostenloser Open-Source-Videoeditor für Schnitt, Formate, Filter und einfache Postproduktion."
+tier: "C"
+generated_at: "2026-05-17"
 ---
 # Shotcut
 

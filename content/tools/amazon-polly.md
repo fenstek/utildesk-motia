@@ -1,13 +1,14 @@
 ---
 slug: amazon-polly
 title: Amazon Polly
-category: AI
+category: "AI Audio"
 price_model: "Nutzungsbasiert"
 tags: [audio, automation, api, productivity, customer-support]
 official_url: "https://aws.amazon.com/polly/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Amazon Polly
 
 Amazon Polly ist ein cloudbasierter Dienst von Amazon Web Services (AWS), der Text in natürlich klingende Sprache umwandelt. Mit fortschrittlicher künstlicher Intelligenz erzeugt Polly realistische Sprachausgaben aus Texten, die in zahlreichen Anwendungen wie Kundenservice, E-Learning, Hörbüchern oder Automatisierungslösungen eingesetzt werden können. Die API ermöglicht eine einfache Integration in verschiedene Systeme und unterstützt viele Sprachen und Stimmen.

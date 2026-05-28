@@ -1,13 +1,14 @@
 ---
 slug: gong-io
 title: Gong.io
-category: AI
+category: "AI Chatbots"
 price_model: Abonnement
 tags: [sales,conversation-intelligence,analytics,ai]
 official_url: "https://www.gong.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Gong.io
 
 Gong.io ist eine KI-gestützte Plattform für Gesprächsanalysen, die Unternehmen dabei unterstützt, Verkaufs- und Kundenservicegespräche zu verbessern. Durch die automatische Aufzeichnung und Auswertung von Telefonaten, Videokonferenzen und E-Mails liefert Gong.io wertvolle Einblicke in die Kommunikation mit Kunden. So können Vertriebsteams datenbasierte Entscheidungen treffen, Verkaufsgespräche optimieren und den Umsatz steigern.

@@ -1,13 +1,14 @@
 ---
 slug: amazon-translate
 title: Amazon Translate
-category: AI
+category: "AI Coding"
 price_model: "Nutzungsbasiert"
 tags: [ai, translation, api]
 official_url: "https://aws.amazon.com/translate/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon Translate
 
 Amazon Translate ist ein cloudbasierter maschineller Übersetzungsdienst von Amazon Web Services (AWS). Er ermöglicht die schnelle und präzise Übersetzung von Texten zwischen zahlreichen Sprachen mithilfe fortschrittlicher KI-Modelle. Die einfache Integration über eine API macht Amazon Translate zu einer praktischen Lösung für Unternehmen, die mehrsprachige Inhalte bereitstellen oder internationale Kommunikation automatisieren möchten.

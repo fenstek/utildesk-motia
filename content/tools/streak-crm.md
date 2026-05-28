@@ -1,13 +1,14 @@
 ---
 slug: streak-crm
 title: Streak CRM
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [crm, workflow]
 official_url: "https://www.streak.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Streak CRM
 
 Streak CRM ist eine innovative Customer-Relationship-Management-Lösung, die direkt in Gmail integriert ist. Sie ermöglicht es Nutzern, ihre Kundenkontakte, Verkaufsprozesse und Projekte effizient zu verwalten, ohne die gewohnte E-Mail-Umgebung zu verlassen. Durch die Verbindung von CRM und E-Mail vereinfacht Streak die Organisation von Workflows und steigert die Produktivität.

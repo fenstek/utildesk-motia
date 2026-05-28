@@ -1,13 +1,14 @@
 ---
 slug: opennmt
 title: OpenNMT
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [translation, nmt, open-source]
 official_url: "https://opennmt.net/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # OpenNMT
 
 OpenNMT ist eine leistungsstarke Open-Source-Plattform für neuronale maschinelle Übersetzung (NMT). Entwickelt, um flexible und effiziente Übersetzungslösungen zu bieten, ermöglicht OpenNMT Unternehmen, Forschern und Entwicklern, maßgeschneiderte Übersetzungsmodelle zu trainieren und einzusetzen. Die Plattform unterstützt verschiedene Programmiersprachen und Frameworks und wird weltweit in vielfältigen Anwendungen eingesetzt.

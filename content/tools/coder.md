@@ -1,13 +1,14 @@
 ---
 slug: coder
 title: Coder
-category: Developer
+category: "Entwickler-Tools"
 price_model: Je nach Plan
 tags: [coding,workflow]
 official_url: "https://coder.com/"
 popularity: 56
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Coder
 
 Coder ist ein Tool, das speziell für Entwickler entwickelt wurde, um den Programmier-Workflow zu optimieren und die Produktivität zu steigern. Es bietet eine flexible und anpassbare Umgebung, die es ermöglicht, Coding-Aufgaben effizienter zu bewältigen, indem es verschiedene Entwicklungsprozesse integriert und automatisiert.

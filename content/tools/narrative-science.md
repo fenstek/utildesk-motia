@@ -1,11 +1,13 @@
 ---
 slug: narrative-science
 title: Narrative Science
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["ai", "assistant", "automation"]
 official_url: 'http://narrativescience.com'
 affiliate_url: 'http://narrativescience.com'
+tier: "C"
+generated_at: "2026-05-12"
 created_at: "2026-02-07"
 popularity: 0
 ---

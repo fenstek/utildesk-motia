@@ -1,13 +1,14 @@
 ---
 slug: owo
 title: Owo
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://github.com/OpEnchanter/owo-assistant"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Owo
 
 Owo ist ein vielseitiges KI-Tool, das darauf ausgelegt ist, Arbeitsabläufe durch intelligente Automatisierung und assistierende Funktionen zu optimieren. Es bietet Nutzern eine Kombination aus Effizienzsteigerung und Benutzerfreundlichkeit, indem es repetitive Aufgaben automatisiert und als digitaler Assistent im Alltag oder Berufsleben unterstützt. Mit einem Freemium-Preismodell ermöglicht Owo den Einstieg ohne große Investitionen und bietet gleichzeitig erweiterte Funktionen für zahlende Nutzer.

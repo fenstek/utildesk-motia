@@ -1,13 +1,14 @@
 ---
 slug: scopus
 title: Scopus
-category: Video
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [research,bibliometrics,publications]
 official_url: "https://www.elsevier.com/products/scopus"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Scopus
 
 Scopus ist eine umfangreiche, multidisziplinäre Datenbank für wissenschaftliche Literatur, die Forschern, Akademikern und Institutionen hilft, relevante Publikationen und bibliometrische Daten zu finden. Die Plattform bietet umfassende Such- und Analysefunktionen, um wissenschaftliche Trends zu erkennen, Forschungsleistungen zu bewerten und Literatur effizient zu durchsuchen. Scopus unterstützt dabei, den Überblick über Veröffentlichungen, Zitationen und Autoren zu behalten – ein unverzichtbares Tool für alle, die im akademischen Umfeld arbeiten.
@@ -15,7 +16,6 @@ Scopus ist eine umfangreiche, multidisziplinäre Datenbank für wissenschaftlich
 ## Für wen ist Scopus geeignet?
 
 Scopus richtet sich vor allem an Wissenschaftler, Forscher, Bibliothekare und akademische Institutionen, die Zugang zu einer breiten Sammlung wissenschaftlicher Artikel und Konferenzbeiträge benötigen. Ebenso profitieren Forschungsmanager und Bibliometriker von den Analysefunktionen, um Forschungsleistungen zu bewerten und Förderentscheidungen zu unterstützen. Auch Unternehmen mit Forschungsabteilungen nutzen Scopus, um wissenschaftliche Entwicklungen und Wettbewerber zu verfolgen.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/scopus-editorial.webp" alt="Illustration zu Scopus: Forschungskarten aus Archivschubladen werden zu einer Wissenskarte verbunden" loading="lazy" decoding="async" />

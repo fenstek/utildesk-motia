@@ -1,13 +1,14 @@
 ---
 slug: qlik-sense
 title: Qlik Sense
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [data, analytics, automation, productivity]
 official_url: "https://www.qlik.com/us/products/qlik-sense"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Qlik Sense
 
 Qlik Sense ist eine moderne Datenanalyse- und Business-Intelligence-Plattform, die Unternehmen dabei unterstützt, komplexe Datenmengen zu visualisieren und datenbasierte Entscheidungen zu treffen. Mit einer Kombination aus intuitiver Benutzeroberfläche, leistungsstarken Analysefunktionen und automatisierten Prozessen ermöglicht Qlik Sense eine flexible und skalierbare Datenanalyse, die sich an die Bedürfnisse verschiedener Branchen und Unternehmensgrößen anpasst.

@@ -1,13 +1,14 @@
 ---
 slug: vn
 title: VN
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.vlognow.me/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # VN
 
 VN ist eine moderne Video-Editing-Anwendung, die sowohl für Anfänger als auch für erfahrene Nutzer geeignet ist. Mit einem klaren Fokus auf Benutzerfreundlichkeit und leistungsstarken Funktionen ermöglicht VN die Erstellung hochwertiger Videos für verschiedene Zwecke – von Social Media bis hin zu professionellen Projekten. Die App bietet eine Kombination aus intuitiver Bedienung und flexiblen Tools, die das Schneiden, Bearbeiten und Teilen von Videos erleichtern.

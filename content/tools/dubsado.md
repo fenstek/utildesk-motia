@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [crm, project-management, automation, productivity]
 official_url: "https://www.dubsado.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Dubsado
 
 Dubsado ist eine umfassende Business-Management-Software, die speziell für kleine Unternehmen, Freelancer und Kreative entwickelt wurde. Sie vereint CRM-Funktionen, Projektmanagement und Automatisierung in einer einzigen Plattform, um Arbeitsabläufe zu optimieren und die Produktivität zu steigern. Mit Dubsado lassen sich Kundenbeziehungen effektiv verwalten, Angebote und Verträge einfach erstellen sowie Rechnungen automatisiert versenden.

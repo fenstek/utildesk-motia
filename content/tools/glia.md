@@ -1,13 +1,14 @@
 ---
 slug: glia
 title: Glia
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.glia.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Glia
 
 Glia ist eine KI-basierte Plattform, die Unternehmen dabei unterstützt, digitale Kundenerlebnisse zu verbessern. Mit Fokus auf automatisierte Kommunikation und intelligente Assistenzlösungen bietet Glia Tools, die den Kundenservice effizienter gestalten und Interaktionen personalisieren. Die Plattform kombiniert Chatbots, Video- und Co-Browsing-Funktionen, um Kunden in Echtzeit zu unterstützen und die Conversion-Rate zu steigern.

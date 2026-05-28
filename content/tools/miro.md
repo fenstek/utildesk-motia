@@ -1,14 +1,15 @@
 ---
 slug: miro
 title: Miro
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [assistant, automation, productivity, design]
 official_url: "https://miro.com/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Miro
 
 Miro ist eine vielseitige Online-Whiteboard-Plattform, die Teams dabei unterstützt, kollaborativ zu arbeiten, Ideen zu visualisieren und Projekte effizient zu planen. Mit einer Vielzahl von Werkzeugen und Integrationen eignet sich Miro besonders für Designprozesse, Brainstorming-Sessions und die Automatisierung von Arbeitsabläufen. Die Kombination aus AI-gestützten Funktionen und intuitiver Benutzeroberfläche macht Miro zu einem wichtigen Tool für Produktivität und kreative Zusammenarbeit.
@@ -30,8 +31,6 @@ Miro richtet sich an Teams und Einzelpersonen in verschiedenen Branchen, die Wer
 - Unternehmen, die Prozesse automatisieren und die Produktivität steigern möchten
 
 Die Plattform ist sowohl für kleine Teams als auch für große Organisationen skalierbar und bietet Funktionen, die sich an unterschiedliche Anforderungen anpassen.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/miro-editorial.webp" alt="Illustration zu Miro: Workshop-Board mit farbigen Notizen, Diagrammen und Teamabstimmung" loading="lazy" decoding="async" />
@@ -67,7 +66,6 @@ Die Plattform ist sowohl für kleine Teams als auch für große Organisationen s
 - Für Neueinsteiger kann die Vielzahl an Funktionen zunächst überwältigend sein
 - Offline-Funktionalität ist eingeschränkt im Vergleich zur Online-Nutzung
 - Performance kann bei sehr großen Boards oder vielen Nutzern beeinträchtigt sein
-
 
 ## Was im Alltag wirklich zählt
 

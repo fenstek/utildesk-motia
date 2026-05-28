@@ -1,13 +1,14 @@
 ---
 slug: amazon-codewhisperer
 title: Amazon CodeWhisperer
-category: Developer
+category: "Entwickler-Tools"
 price_model: Je nach Plan
 tags: [coding, developer-tools, automation, productivity]
 official_url: "https://aws.amazon.com/q/developer/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon CodeWhisperer
 
 Amazon CodeWhisperer ist ein KI-gestütztes Tool zur Codegenerierung, das Entwicklern hilft, schneller und effizienter zu programmieren. Es bietet intelligente Vorschläge für Code-Snippets, Funktionen und ganze Codeblöcke direkt in der Entwicklungsumgebung. So unterstützt es die Automatisierung wiederkehrender Aufgaben und steigert die Produktivität bei der Softwareentwicklung.
@@ -15,8 +16,6 @@ Amazon CodeWhisperer ist ein KI-gestütztes Tool zur Codegenerierung, das Entwic
 ## Für wen ist Amazon CodeWhisperer geeignet?
 
 Amazon CodeWhisperer richtet sich an Softwareentwickler aller Erfahrungsstufen, die ihre Programmierarbeit beschleunigen möchten. Besonders nützlich ist es für Entwickler, die häufig ähnliche Codeabschnitte schreiben oder komplexe Algorithmen implementieren müssen. Auch Teams, die konsistenten und qualitativ hochwertigen Code sicherstellen wollen, profitieren von den automatisierten Vorschlägen. Das Tool unterstützt mehrere Programmiersprachen und ist damit vielseitig einsetzbar.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/amazon-codewhisperer-editorial.webp" alt="Illustration zu Amazon CodeWhisperer: Codevorschläge leuchten in einer sicheren Entwicklerwerkstatt" loading="lazy" decoding="async" />
@@ -50,7 +49,6 @@ Amazon CodeWhisperer richtet sich an Softwareentwickler aller Erfahrungsstufen, 
 - Datenschutzbedenken bei sensiblen oder proprietären Codebasen.
 - Je nach Plan können Kosten anfallen.
 - Lernkurve bei der optimalen Nutzung der Funktionen.
-
 
 ## Was im Alltag wirklich zählt
 

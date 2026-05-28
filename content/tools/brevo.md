@@ -1,13 +1,14 @@
 ---
 slug: brevo
 title: Brevo
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Freemium
 tags: [email, marketing, crm, automation]
 official_url: "https://www.brevo.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Brevo
 
 Brevo ist eine vielseitige Marketingplattform, die speziell auf E-Mail-Marketing, CRM und Automatisierung ausgerichtet ist. Mit einem breiten Funktionsumfang unterstützt Brevo Unternehmen dabei, ihre Kundenbeziehungen zu stärken, Marketingkampagnen effektiv zu gestalten und Abläufe zu automatisieren – und das in einem benutzerfreundlichen Umfeld. Die Plattform bietet ein Freemium-Preismodell, wodurch Einsteiger die Grundfunktionen kostenlos nutzen können, während fortgeschrittene Nutzer von erweiterten Features profitieren.

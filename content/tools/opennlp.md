@@ -1,13 +1,14 @@
 ---
 slug: opennlp
 title: OpenNLP
-category: AI
+category: "AI Chatbots"
 price_model: Open Source
 tags: [nlp, java, library]
 official_url: "https://opennlp.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # OpenNLP
 
 OpenNLP ist eine leistungsfähige Open-Source-Bibliothek für die Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) in Java. Sie bietet Entwicklern eine Vielzahl von Tools und Algorithmen, die es ermöglichen, Textdaten zu analysieren, zu verstehen und zu verarbeiten. OpenNLP unterstützt typischerweise Aufgaben wie Tokenisierung, Satzsegmentierung, Part-of-Speech-Tagging, Named Entity Recognition und Parsing. Aufgrund ihrer Flexibilität und der aktiven Community ist OpenNLP besonders bei Entwicklern und Forschern beliebt, die NLP-Anwendungen in Java implementieren möchten.

@@ -1,13 +1,14 @@
 ---
 slug: dynatrace
 title: Dynatrace
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Nutzungsbasiert, Individuelles Angebot
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.dynatrace.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dynatrace
 
 Dynatrace ist eine umfassende Plattform für Application Performance Monitoring (APM), die auf künstlicher Intelligenz basiert. Sie bietet Unternehmen die Möglichkeit, ihre IT-Infrastruktur, Anwendungen und Cloud-Umgebungen in Echtzeit zu überwachen und zu analysieren. Dabei unterstützt Dynatrace die schnelle Fehlererkennung, Ursachenanalyse und Optimierung der Systemleistung durch automatisierte Prozesse und intelligente Analysen.

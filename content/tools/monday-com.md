@@ -1,14 +1,15 @@
 ---
 slug: monday-com
 title: Monday.com
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: ["productivity", "workflow", "automation"]
 official_url: "https://monday.com/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Monday.com
 
 Monday.com ist eine vielseitige Work-OS-Plattform, die Teams dabei unterstützt, ihre Projekte, Aufgaben und Arbeitsabläufe effizient zu organisieren und zu automatisieren. Mit integrierten KI-Funktionen ermöglicht Monday.com eine verbesserte Zusammenarbeit und optimierte Prozesse, die sich flexibel an unterschiedliche Arbeitsanforderungen anpassen lassen.

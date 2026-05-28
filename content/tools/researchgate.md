@@ -1,13 +1,14 @@
 ---
 slug: researchgate
 title: ResearchGate
-category: AI
+category: "AI Research"
 price_model: Freemium
 tags: [research,publications,academic-networking]
 official_url: "https://www.researchgate.net/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # ResearchGate
 
 ResearchGate ist eine spezialisierte Online-Plattform, die Forschenden weltweit ermöglicht, wissenschaftliche Publikationen zu teilen, sich zu vernetzen und gemeinsam an Projekten zu arbeiten. Die Plattform vereinfacht den Zugang zu aktuellen Forschungsergebnissen und fördert den Austausch innerhalb der akademischen Gemeinschaft. Durch eine Kombination aus sozialen Netzwerkelementen und umfangreichen Forschungsdatenbanken unterstützt ResearchGate die Sichtbarkeit und Zusammenarbeit von Wissenschaftlern.

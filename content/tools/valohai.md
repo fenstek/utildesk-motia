@@ -1,13 +1,14 @@
 ---
 slug: valohai
 title: Valohai
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [mlops,machine-learning,cloud,developer-tools]
 official_url: "https://valohai.com/"
 popularity: 7
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Valohai
 
 Valohai ist eine MLOps-Plattform, die speziell entwickelt wurde, um den gesamten Lebenszyklus von Machine-Learning-Projekten zu automatisieren und zu verwalten. Die Plattform unterstützt Data Scientists und Entwickler dabei, Modelle effizient zu trainieren, zu versionieren und zu skalieren – sowohl in der Cloud als auch On-Premises. Mit Valohai können Unternehmen ihre KI-Projekte schneller und zuverlässiger umsetzen, indem sie wiederholbare Workflows und eine zentrale Verwaltung von Experimenten gewährleisten.

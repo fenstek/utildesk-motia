@@ -1,13 +1,14 @@
 ---
 slug: vivavideo
 title: VivaVideo
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [video-editing, mobile, creator]
 official_url: "https://www.vivavideo.tv/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # VivaVideo
 
 VivaVideo ist eine beliebte mobile Video-Editing-App, die speziell für Nutzer entwickelt wurde, die schnell und einfach Videos auf ihrem Smartphone erstellen und bearbeiten möchten. Mit einer benutzerfreundlichen Oberfläche und einer Vielzahl von Funktionen ermöglicht VivaVideo sowohl Anfängern als auch fortgeschrittenen Erstellern, kreative und professionelle Videos zu produzieren. Die App bietet eine breite Palette an Bearbeitungswerkzeugen, Effekten und Vorlagen, die das Erstellen von Videos für soziale Medien, Präsentationen oder persönliche Projekte erleichtern.

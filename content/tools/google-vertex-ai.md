@@ -1,13 +1,14 @@
 ---
 slug: google-vertex-ai
 title: Google Vertex AI
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [ai, developer-tools, cloud, mlops]
 official_url: "https://cloud.google.com/products/gemini-enterprise-agent-platform"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Google Vertex AI
 
 Google Vertex AI ist eine umfassende Plattform für maschinelles Lernen und künstliche Intelligenz, die von Google Cloud angeboten wird. Sie ermöglicht Entwicklern und Unternehmen, ML-Modelle schnell zu erstellen, zu trainieren und in der Produktion zu betreiben – alles zentralisiert und skalierbar. Vertex AI vereinfacht komplexe Abläufe im Bereich MLOps und unterstützt sowohl Anfänger als auch erfahrene Data Scientists mit leistungsfähigen Tools.

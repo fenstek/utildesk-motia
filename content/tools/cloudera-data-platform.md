@@ -1,11 +1,13 @@
 ---
 slug: cloudera-data-platform
 title: Cloudera Data Platform
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [data, analytics, cloud, enterprise]
 official_url: "https://www.cloudera.com/products/cloudera-data-platform.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Cloudera Data Platform
 

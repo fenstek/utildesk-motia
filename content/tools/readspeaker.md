@@ -1,14 +1,15 @@
 ---
 slug: "readspeaker"
 title: "ReadSpeaker"
-category: "AI"
+category: "AI Audio"
 price_model: "Freemium"
 tags: ["audio", "transcription"]
 official_url: "https://www.readspeaker.com/"
 created_at: "2026-02-15"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # ReadSpeaker
 
 ReadSpeaker ist eine innovative Text-to-Speech-Lösung, die es ermöglicht, digitale Inhalte in natürlich klingende Sprache umzuwandeln. Die Technologie unterstützt Unternehmen, Bildungseinrichtungen und Entwickler dabei, barrierefreie und interaktive Anwendungen zu gestalten. ReadSpeaker bietet eine Vielzahl von Stimmen und Sprachen, um die Zugänglichkeit und Nutzererfahrung zu verbessern.

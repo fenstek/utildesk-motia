@@ -1,13 +1,14 @@
 ---
 slug: nats
 title: NATS
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [messaging, developer-tools, open-source, cloud]
 official_url: "https://nats.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # NATS
 
 NATS ist ein leichtgewichtiges, hochperformantes Messaging-System, das speziell für die Anforderungen moderner Cloud-nativer Anwendungen entwickelt wurde. Als Open-Source-Projekt unterstützt es eine Vielzahl von Kommunikationsmustern und bietet Entwicklern eine zuverlässige und skalierbare Grundlage für verteilte Systeme und Microservices-Architekturen.

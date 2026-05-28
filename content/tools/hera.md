@@ -6,10 +6,12 @@ price_model: Je nach Plan
 tags: ["video", "ai", "motion-design", "launch-video", "marketing"]
 official_url: "https://hera.video/"
 affiliate_url: "https://hera.video/"
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]
 created_at: 2026-05-12
 popularity: 91
 ---
-
 # Hera
 
 Hera positioniert sich als KI-Motion-Designer für kurze Marketing-, Produkt- und Launch-Videos. Der Fokus liegt nicht auf klassischem Schnitt wie in Premiere Pro, sondern auf der schnellen Erzeugung animierter Motion-Graphics-Clips aus Ideen, visuellen Vorgaben, Dateien oder Prompts. Damit adressiert Hera vor allem Teams, die häufig kurze Produktmomente, Teaser, Launch-Videos oder visuelle Varianten brauchen.

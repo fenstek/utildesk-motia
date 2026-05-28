@@ -1,11 +1,13 @@
 ---
 slug: vsco
 title: VSCO
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [photo-editing, photography, creative-tools]
 official_url: "https://www.vsco.co/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-26"
 ---
 # VSCO
 

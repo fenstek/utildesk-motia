@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-speech-service
 title: Microsoft Azure Speech Service
-category: AI
+category: "AI Audio"
 price_model: "Nutzungsbasiert"
 tags: [audio, workflow, automation, transcription]
 official_url: "https://azure.microsoft.com/en-us/products/ai-services/ai-speech"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Speech Service
 
 Microsoft Azure Speech Service ist eine leistungsstarke Cloud-basierte Lösung zur Sprachverarbeitung. Sie ermöglicht die automatische Umwandlung von Sprache in Text (Transkription), die Sprachsynthese (Text-to-Speech) sowie Sprachübersetzung und Sprachverständnis. Dank moderner KI-Modelle unterstützt der Dienst vielfältige Anwendungsfälle in Bereichen wie Kundenservice, Medien, Bildung und Automatisierung von Arbeitsabläufen.

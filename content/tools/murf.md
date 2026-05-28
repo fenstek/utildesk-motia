@@ -1,13 +1,15 @@
 ---
 slug: murf
 title: Murf
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "audio"]
 official_url: 'https://murf.ai/'
 created_at: "2026-02-13"
 popularity: 0
 description: "Murf ist ein Audio- und Musikwerkzeug für KI-Stimmen, Voiceover und Sprachproduktion für Videos, Kurse und Marketingmaterial."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Murf
 

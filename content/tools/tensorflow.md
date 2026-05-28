@@ -1,14 +1,15 @@
 ---
 slug: "tensorflow"
 title: "TensorFlow"
-category: "AI"
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["data", "automation"]
 official_url: "https://tensorflow.org"
 created_at: "2026-02-11"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # TensorFlow
 
 TensorFlow ist ein Open-Source-Framework für maschinelles Lernen und künstliche Intelligenz, entwickelt von Google. Es ermöglicht Entwicklern, komplexe neuronale Netze zu erstellen, zu trainieren und in Produktionsumgebungen einzusetzen. TensorFlow unterstützt eine Vielzahl von Plattformen und Programmiersprachen und wird weltweit in Forschung, Industrie und Bildung eingesetzt.
@@ -16,8 +17,6 @@ TensorFlow ist ein Open-Source-Framework für maschinelles Lernen und künstlich
 ## Für wen ist TensorFlow geeignet?
 
 TensorFlow richtet sich an Data Scientists, KI-Forscher, Softwareentwickler und Unternehmen, die Anwendungen mit maschinellem Lernen entwickeln möchten. Es eignet sich sowohl für Einsteiger, die erste Modelle erstellen wollen, als auch für erfahrene Profis, die skalierbare und leistungsfähige KI-Systeme benötigen. Durch den modularen Aufbau und die breite Community ist TensorFlow flexibel einsetzbar – von Prototypen bis hin zu produktiven Lösungen.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/tensorflow-editorial.webp" alt="Illustration zu TensorFlow: geometrische Tensorblöcke verbinden sich zu einem Lernmodell" loading="lazy" decoding="async" />
@@ -52,7 +51,6 @@ TensorFlow richtet sich an Data Scientists, KI-Forscher, Softwareentwickler und 
 - Komplexität kann für einfache Projekte überdimensioniert sein  
 - Manchmal unübersichtliche API aufgrund der Vielzahl an Funktionen  
 - Performance kann je nach Hardware variieren und erfordert Optimierung  
-
 
 ## Was im Alltag wirklich zählt
 

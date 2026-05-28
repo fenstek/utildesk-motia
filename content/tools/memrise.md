@@ -1,13 +1,14 @@
 ---
 slug: memrise
 title: Memrise
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.memrise.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Memrise
 
 Memrise ist eine innovative Lernplattform, die durch den Einsatz von Künstlicher Intelligenz (KI) das Sprachenlernen effizienter und unterhaltsamer gestaltet. Die Kombination aus interaktiven Übungen, Gedächtnistechniken und KI-gestützter Personalisierung hilft Nutzern, neue Sprachen schneller und nachhaltiger zu erlernen. Memrise richtet sich sowohl an Anfänger als auch an fortgeschrittene Lernende und bietet verschiedene Lerninhalte, die individuell an den Fortschritt angepasst werden.

@@ -1,15 +1,16 @@
 ---
 slug: phrasee
 title: Phrasee
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "marketing"]
 official_url: 'http://www.phraseexpress.com/'
 affiliate_url: 'http://www.phraseexpress.com/'
+tier: "C"
+generated_at: "2026-05-16"
 created_at: "2026-02-03"
 popularity: 0
 ---
-
 # Phrasee
 
 Phrasee ist ein KI-gestütztes Tool, das sich auf die Optimierung und Automatisierung von Marketingtexten spezialisiert hat. Es nutzt natürliche Sprachverarbeitung (Natural Language Processing, NLP), um ansprechende und wirkungsvolle Texte für E-Mail-Marketing, Social Media, Push-Benachrichtigungen und mehr zu erstellen. Durch den Einsatz von Künstlicher Intelligenz hilft Phrasee Unternehmen dabei, die Kundenansprache zu verbessern und die Conversion-Raten zu steigern.

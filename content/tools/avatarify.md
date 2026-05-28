@@ -1,11 +1,13 @@
 ---
 slug: avatarify
 title: Avatarify
-category: AI
+category: "AI Coding"
 price_model:
 tags: [image, video, developer-tools]
 official_url: "https://github.com/alievk/avatarify-python"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Avatarify
 

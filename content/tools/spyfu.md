@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [seo, marketing, analytics]
 official_url: "https://www.spyfu.com/"
 popularity: 13
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # SpyFu
 
 SpyFu ist ein Wettbewerbsanalyse-Tool für SEO und PPC. Es zeigt, für welche Keywords Wettbewerber sichtbar sind, welche Anzeigen sie schalten könnten und wo Chancen für organische oder bezahlte Suche liegen.

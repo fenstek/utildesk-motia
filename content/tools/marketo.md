@@ -1,13 +1,14 @@
 ---
 slug: marketo
 title: Marketo
-category: Marketing
+category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
 official_url: "https://business.adobe.com/products/marketo.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Marketo
 
 Marketo ist eine umfassende Marketing-Automatisierungsplattform, die Unternehmen dabei unterstützt, personalisierte Kampagnen zu erstellen, Leads zu generieren und Kundenbeziehungen effektiv zu pflegen. Die Software vereint Funktionen für E-Mail-Marketing, Lead-Management, CRM-Integration und detaillierte Analysen, um Marketingteams eine datengetriebene Entscheidungsfindung zu ermöglichen.

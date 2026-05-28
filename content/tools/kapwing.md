@@ -1,13 +1,14 @@
 ---
 slug: kapwing
 title: Kapwing
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [video, content, design, marketing]
 official_url: "https://www.kapwing.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Kapwing
 
 Kapwing ist eine webbasierte Plattform für die Erstellung und Bearbeitung von Videos und multimedialen Inhalten, die durch KI-gestützte Funktionen unterstützt wird. Das Tool richtet sich an Kreative, Marketer und Content-Ersteller, die schnell und unkompliziert visuelle Inhalte produzieren möchten – ganz ohne komplexe Software. Kapwing kombiniert einfache Bedienbarkeit mit vielseitigen Design- und Bearbeitungsmöglichkeiten, die sowohl für Anfänger als auch für erfahrene Nutzer geeignet sind.

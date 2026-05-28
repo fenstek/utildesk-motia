@@ -1,12 +1,14 @@
 ---
 slug: garageband
 title: GarageBand
-category: AI
+category: "AI Audio"
 price_model: Freemium
 tags: [assistant, automation]
 official_url: "https://www.apple.com/mac/garageband/?cid=oas-us-domains-garageband.com"
 popularity: 0
 description: "GarageBand ist Apples kostenloses Musikproduktionswerkzeug für Aufnahmen, virtuelle Instrumente, Loops und einfache Songs."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # GarageBand
 

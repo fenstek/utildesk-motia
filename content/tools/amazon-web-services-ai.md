@@ -1,13 +1,14 @@
 ---
 slug: amazon-web-services-ai
 title: Amazon Web Services (AWS) AI
-category: AI
+category: "AI Coding"
 price_model: "Nutzungsbasiert"
 tags: [api, developer-tools, automation, data]
 official_url: "https://aws.amazon.com/ai/services/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon Web Services (AWS) AI
 
 Amazon Web Services (AWS) AI bietet eine umfangreiche Palette an künstlicher Intelligenz und Machine-Learning-Services, die es Unternehmen und Entwicklern ermöglichen, intelligente Anwendungen zu erstellen, zu trainieren und zu implementieren. AWS AI kombiniert leistungsstarke APIs, Automatisierungstools und Datenverarbeitung, um verschiedenste Anwendungsfälle abzudecken – von Bilderkennung über Sprachverarbeitung bis hin zu Vorhersagemodellen.

@@ -1,13 +1,14 @@
 ---
 slug: fountain
 title: Fountain
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [recruiting, hr, automation, ai]
 official_url: "https://www.fountain.com/"
 popularity: 49
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Fountain
 
 Fountain ist eine innovative KI-gestützte Plattform, die den Recruiting-Prozess automatisiert und optimiert. Mit Fokus auf Effizienzsteigerung und Zeitersparnis unterstützt Fountain Unternehmen dabei, qualifizierte Kandidaten schneller zu identifizieren und einzustellen. Die Anwendung kombiniert moderne Automatisierungstechnologien mit intelligenten HR-Funktionen, um den gesamten Bewerbermanagementprozess zu vereinfachen.

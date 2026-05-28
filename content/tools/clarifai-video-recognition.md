@@ -1,13 +1,14 @@
 ---
 slug: clarifai-video-recognition
 title: Clarifai Video Recognition
-category: Video
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [video, workflow]
 official_url: "https://www.clarifai.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Clarifai Video Recognition
 
 Clarifai Video Recognition ist eine leistungsstarke KI-basierte Lösung zur automatischen Analyse und Erkennung von Inhalten in Videomaterial. Die Plattform nutzt modernste Deep-Learning-Modelle, um Objekte, Szenen, Aktionen und weitere relevante Elemente in Videos präzise zu identifizieren. Dadurch lassen sich Video-Workflows deutlich effizienter gestalten, sei es für Medienunternehmen, Sicherheitsdienste oder Marketingabteilungen.

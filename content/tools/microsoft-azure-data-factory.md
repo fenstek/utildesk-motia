@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-data-factory
 title: Microsoft Azure Data Factory
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, integration, automation, cloud]
 official_url: "https://azure.microsoft.com/en-us/products/data-factory/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Data Factory
 
 Microsoft Azure Data Factory ist ein Cloud-basierter Dienst zur Orchestrierung und Automatisierung von Datenintegrationsprozessen. Er ermöglicht es Unternehmen, Daten aus verschiedensten Quellen zu sammeln, zu transformieren und in Zielsysteme zu laden. Durch seine Skalierbarkeit und Integration in das Azure-Ökosystem unterstützt Azure Data Factory moderne Datenpipelines und ETL-Prozesse (Extract, Transform, Load) in der Cloud.

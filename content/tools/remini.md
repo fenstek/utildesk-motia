@@ -6,6 +6,8 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://remini.ai/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
 # Remini
 

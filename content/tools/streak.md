@@ -1,13 +1,14 @@
 ---
 slug: streak
 title: Streak
-category: AI
+category: "AI Writing"
 price_model: Je nach Plan
 tags: [crm,email-productivity,sales]
 official_url: "https://www.streak.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Streak
 
 Streak bringt CRM-Funktionen direkt in Gmail. Das ist besonders praktisch für Teams, die Kontakte, Deals oder Bewerbungen sowieso aus dem Postfach heraus bearbeiten und keine separate, schwere CRM-Oberfläche pflegen wollen.

@@ -1,11 +1,14 @@
 ---
 slug: xero
 title: Xero
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: [productivity, automation, data, crm]
 official_url: "https://www.xero.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-10"
+mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Xero
 

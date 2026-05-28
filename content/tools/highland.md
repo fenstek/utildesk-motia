@@ -1,11 +1,13 @@
 ---
 slug: highland
 title: Highland
-category: AI
+category: "AI Agents"
 price_model:
 tags: [assistant, automation, workflow]
 official_url: "https://johnaugust.com/apps/highland"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Highland
 

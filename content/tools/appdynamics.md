@@ -1,13 +1,14 @@
 ---
 slug: appdynamics
 title: AppDynamics
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement, Individuelles Angebot
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.splunk.com/en_us/appdynamics-joins-splunk.html?301=appdynamics"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AppDynamics
 
 AppDynamics ist eine umfassende Plattform für Application Performance Monitoring (APM) und Observability, die Unternehmen dabei unterstützt, die Leistung ihrer Anwendungen in Echtzeit zu überwachen und zu analysieren. Durch den Einsatz von Künstlicher Intelligenz (KI) und fortschrittlichen Analytik-Tools bietet AppDynamics tiefgehende Einblicke in komplexe IT-Umgebungen, um Probleme schnell zu erkennen und zu beheben. Die Lösung ist speziell für große Unternehmen und Organisationen konzipiert, die eine zuverlässige Überwachung und Optimierung ihrer digitalen Services benötigen.

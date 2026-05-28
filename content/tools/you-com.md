@@ -1,15 +1,17 @@
 ---
 slug: you-com
 title: You.com
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot"]
 official_url: 'https://you.com/'
 affiliate_url: 'https://you.com/'
+tier: "A"
+lastReviewed: "2026-05-13"
+mentionedIn: ["perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # You.com
 
 You.com ist eine innovative KI-gestützte Suchmaschine, die darauf abzielt, das Internetsurfen persönlicher, effizienter und datenschutzfreundlicher zu gestalten. Mit einem Fokus auf Künstliche Intelligenz kombiniert You.com traditionelle Suchergebnisse mit AI-generierten Antworten, um Nutzern eine maßgeschneiderte und vielseitige Erfahrung zu bieten. Die Plattform bietet eine freemium-Preisstruktur, die sowohl kostenlose als auch erweiterte Funktionen umfasst.

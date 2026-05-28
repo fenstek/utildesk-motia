@@ -1,13 +1,14 @@
 ---
 slug: apigee
 title: Apigee (Google Cloud)
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://cloud.google.com/apigee"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Apigee (Google Cloud)
 
 Apigee ist eine umfassende API-Management-Plattform von Google Cloud, die Entwicklern und Unternehmen dabei hilft, APIs zu erstellen, zu sichern, zu überwachen und zu skalieren. Mit Fokus auf Cloud-Integration bietet Apigee leistungsstarke Werkzeuge für die Verwaltung des gesamten API-Lebenszyklus und unterstützt so moderne Anwendungen und digitale Transformationen.

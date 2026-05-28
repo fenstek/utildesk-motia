@@ -1,13 +1,14 @@
 ---
 slug: xamarin
 title: Xamarin
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [mobile-development, framework, developer-tools]
 official_url: "https://dotnet.microsoft.com/en-us/apps/xamarin"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Xamarin
 
 Xamarin ist ein leistungsstarkes Framework zur plattformübergreifenden mobilen Entwicklung, das es Entwicklern ermöglicht, native Apps für iOS, Android und Windows mit einer gemeinsamen C#-Codebasis zu erstellen. Es integriert sich nahtlos in die Microsoft-Entwicklungsumgebung und unterstützt die Nutzung von .NET-Bibliotheken, was die Entwicklung effizienter und flexibler macht.

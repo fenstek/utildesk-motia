@@ -1,11 +1,13 @@
 ---
 slug: mendeley
 title: Mendeley
-category: AI
+category: "AI Research"
 price_model: Freemium
 tags: [reference-manager, citations, research]
 official_url: "https://www.mendeley.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Mendeley
 

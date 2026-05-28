@@ -1,13 +1,14 @@
 ---
 slug: google-scholar
 title: Google Scholar
-category: AI
+category: "AI Research"
 price_model: Kostenlos
 tags: [research, academic-search, citations]
 official_url: "https://scholar.google.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
-
 # Google Scholar
 
 Google Scholar ist eine frei zugängliche Suchmaschine, die speziell für die Recherche wissenschaftlicher Literatur entwickelt wurde. Sie ermöglicht den Zugriff auf eine breite Palette akademischer Quellen wie Artikel, Dissertationen, Bücher, Konferenzbeiträge und Gerichtsurteile. Google Scholar unterstützt Forschende dabei, relevante Literatur schnell zu finden, Zitationen nachzuverfolgen und den Überblick über den aktuellen Stand der Forschung zu behalten.
@@ -20,20 +21,6 @@ Google Scholar ist besonders nützlich für Data-, Analytics-, Research- und Eng
 
 Bei Google Scholar sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Google Scholar sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Google Scholar sollte zuerst in einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung, Owner und Abnahme zeigen, ob es trägt. Erst wenn Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Google Scholar:** Vor dem Rollout sollten Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Google Scholar:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei Google Scholar:** Ohne klare Regeln wird der Nutzen schwach, sobald Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/google-scholar-editorial.webp" alt="Illustration zu Google Scholar: Zitationsbibliothek verbindet Studienkarten und Forschungsfragen" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Umfassende Suche**: Zugriff auf eine große Anzahl wissenschaftlicher Publikationen aus verschiedenen Quellen.
@@ -43,10 +30,6 @@ Google Scholar sollte zuerst in einem begrenzten Datensatz mit klarer Quelle, de
 - **Verknüpfung zu Volltexten**: Direkter Zugriff auf Volltexte, sofern sie frei verfügbar sind oder über institutionelle Zugänge.
 - **Profilverwaltung**: Erstellung eines Autorenprofils zur Präsentation der eigenen Publikationen und Zitationen.
 - **Erweiterte Suchoptionen**: Filterung nach Zeitraum, Autor, Publikationstyp und mehr.
-
-- **Praxislauf mit Google Scholar:** Das Tool sollte mit einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung, Owner und Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Google Scholar:** Das Team braucht eine einfache Methode, um Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung nach dem Einsatz zu prüfen.
-- **Übergabe mit Google Scholar:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 
@@ -71,7 +54,6 @@ Google Scholar sollte zuerst in einem begrenzten Datensatz mit klarer Quelle, de
 - Keine umfassende Unterstützung für Literaturverwaltung im Vergleich zu dedizierten Tools.
 
 - Google Scholar kann Reibung nur verschieben, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
-- Google Scholar spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit dauerhaft nebenbei laufen sollen.
 
 ## Preise & Kosten
 

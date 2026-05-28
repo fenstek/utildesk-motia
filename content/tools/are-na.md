@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [research, curation, collaboration, productivity]
 official_url: "https://www.are.na/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Are.na
 
 Are.na ist eine innovative Plattform zur Sammlung, Organisation und gemeinsamen Nutzung von Inhalten aus dem Internet und eigenen Quellen. Sie unterstützt Nutzer dabei, komplexe Themen visuell und strukturiert zu erforschen und zu kuratieren, was besonders für kreative, akademische und professionelle Projekte hilfreich ist. Mit einem Fokus auf kollaboratives Arbeiten bietet Are.na Werkzeuge, die Informationsflüsse übersichtlich und produktiv gestalten.

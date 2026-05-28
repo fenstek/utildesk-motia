@@ -1,11 +1,13 @@
 ---
 slug: sphinx
 title: Sphinx
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot", "data"]
 official_url: "https://www.sphinx-doc.org/en/master"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Sphinx
 

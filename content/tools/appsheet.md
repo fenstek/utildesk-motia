@@ -1,13 +1,14 @@
 ---
 slug: appsheet
 title: AppSheet
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [no-code, app-development, workflow]
 official_url: "https://about.appsheet.com/home/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AppSheet
 
 AppSheet ist eine innovative No-Code-Plattform, die es Nutzern ermöglicht, ohne Programmierkenntnisse individuelle mobile und Web-Apps zu erstellen. Die Plattform nutzt KI-gestützte Funktionen, um die App-Entwicklung zu vereinfachen und automatisierte Workflows zu integrieren. So können Unternehmen und Einzelpersonen Prozesse digitalisieren und effizienter gestalten.

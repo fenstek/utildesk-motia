@@ -1,11 +1,13 @@
 ---
 slug: sourcegraph
 title: Sourcegraph
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [code-search, developer-tools, code-intelligence]
 official_url: "https://sourcegraph.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
 # Sourcegraph
 

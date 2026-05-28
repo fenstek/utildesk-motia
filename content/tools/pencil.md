@@ -1,15 +1,16 @@
 ---
 slug: pencil
 title: Pencil
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "design", "marketing"]
 official_url: 'https://www.pencil2d.org'
 affiliate_url: 'https://www.pencil2d.org'
+tier: "C"
+generated_at: "2026-05-13"
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # Pencil
 
 Pencil, hier als Pencil2D zu verstehen, ist ein einfaches Open-Source-Werkzeug für handgezeichnete 2D-Animation. Es richtet sich an Menschen, die klassische Frame-by-Frame-Animation digital ausprobieren oder kleine Projekte ohne schwere Produktionssuite umsetzen wollen.

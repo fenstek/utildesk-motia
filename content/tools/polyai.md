@@ -1,13 +1,14 @@
 ---
 slug: polyai
 title: PolyAI
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, assistant, automation]
 official_url: "https://poly.ai/en"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # PolyAI
 
 PolyAI ist eine fortschrittliche KI-basierte Plattform, die darauf spezialisiert ist, automatisierte Sprachassistenten für Unternehmen bereitzustellen. Mit dem Fokus auf natürliche Sprachverarbeitung und kontextbezogene Interaktion unterstützt PolyAI Unternehmen dabei, Kundenservice und Kommunikation effizienter und skalierbarer zu gestalten. Die Plattform bietet eine Kombination aus leistungsfähigen KI-Modellen und benutzerfreundlichen Tools, um individuelle Automatisierungslösungen zu entwickeln.

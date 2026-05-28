@@ -1,13 +1,14 @@
 ---
 slug: plot
 title: Plot
-category: AI
+category: "AI Agents"
 price_model: "Je nach Plan"
 tags: [social-media, marketing, automation, productivity]
 official_url: "https://www.plot.so/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Plot
 
 Plot ist ein Tool für Social-Media- und Marketingplanung, das Teams dabei helfen soll, Inhalte, Kampagnen und Veröffentlichungsrhythmen strukturierter zu steuern. Der eigentliche Nutzen liegt nicht im blossen Posten, sondern in der Verbindung von Planung, Zusammenarbeit und Auswertung.

@@ -1,13 +1,14 @@
 ---
 slug: intel-habana-labs-gaudi
 title: Intel Habana Labs Gaudi
-category: AI
+category: "AI Agents"
 price_model: 
 tags: [assistant, automation, workflow]
 official_url: "https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Intel Habana Labs Gaudi
 
 Intel Habana Labs Gaudi ist eine spezialisierte KI-Beschleunigerplattform, die für das Training und die Ausführung von Deep-Learning-Modellen entwickelt wurde. Die Hardware zielt darauf ab, die Leistung und Effizienz von KI-Workloads zu optimieren, insbesondere im Bereich des maschinellen Lernens und der künstlichen Intelligenz. Sie bietet eine Alternative zu herkömmlichen GPUs und ist für Unternehmen interessant, die große KI-Modelle mit hoher Rechenleistung und niedrigen Betriebskosten betreiben möchten.

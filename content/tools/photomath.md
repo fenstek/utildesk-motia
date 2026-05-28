@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, education]
 official_url: "https://photomath.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-13"
 ---
-
 # Photomath
 
 Photomath ist eine innovative Lern-App, die Mathematikaufgaben mithilfe von Künstlicher Intelligenz erkennt und Schritt-für-Schritt-Lösungen anbietet. Die Anwendung richtet sich an Schüler, Studenten und alle, die mathematische Probleme verstehen und lösen möchten. Mit der Möglichkeit, Aufgaben einfach mit der Kamera zu scannen oder manuell einzugeben, erleichtert Photomath das Lernen und Verstehen von mathematischen Konzepten.
@@ -28,20 +29,6 @@ Photomath ist besonders nützlich für Lernende, Lehrende und Wissensarbeitsteam
 
 Bei Photomath sollte der erste Schritt kein Showroom-Test sein, sondern ein echter Arbeitsfall. Erst dann sieht das Team, ob Verantwortung, Review und Ergebnisqualität wirklich zusammenpassen.
 
-## Redaktionelle Einschätzung
-
-Photomath lohnt sich nur, wenn es einen vorhandenen Ablauf sichtbar verbessert. Entscheidend sind nicht die meisten Features, sondern weniger Reibung, klare Verantwortung und ein Ergebnis, das andere im Team prüfen können.
-
-Als Prüfstück für Photomath eignet sich einer echten Lerneinheit mit Ziel, Aufgabe, Feedback, Wiederholung und kurzer Auswertung. Wenn Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Photomath:** Vor dem Rollout sollten Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Photomath:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Photomath:** Ohne klare Regeln wird der Nutzen schwach, sobald Lernziel, Niveau, Feedbackregeln und Datenschutz für Lernende unklar bleiben.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/photomath-editorial.webp" alt="Illustration zu Photomath: Matheaufgaben werden in Lernschritte und visuelle Loesungspfade zerlegt" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Automatische Texterkennung (OCR):** Scannt mathematische Ausdrücke mit der Kamera und erkennt sie präzise  
@@ -53,10 +40,6 @@ Als Prüfstück für Photomath eignet sich einer echten Lerneinheit mit Ziel, Au
 - **Offline-Modus:** Einige Funktionen sind auch ohne Internetverbindung nutzbar  
 - **Freemium-Modell:** Grundfunktionen sind kostenlos, erweiterte Erklärungen und Features im kostenpflichtigen Premium  
 - **Interaktive Lernhilfen:** Zusätzliche Erklärvideos und Übungen (Premium)
-
-- **Praxislauf mit Photomath:** Das Tool sollte mit einer echten Lerneinheit mit Ziel, Aufgabe, Feedback, Wiederholung und kurzer Auswertung getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Photomath:** Das Team braucht eine einfache Methode, um Verständnis, Wiederholbarkeit, Zeitaufwand, Motivation und Qualität des Feedbacks nach dem Einsatz zu prüfen.
-- **Übergabe mit Photomath:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

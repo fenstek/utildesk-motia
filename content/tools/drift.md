@@ -1,13 +1,14 @@
 ---
 slug: drift
 title: Drift
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.salesloft.com/platform/drift"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Drift
 
 Drift ist eine innovative KI-basierte Plattform, die sich auf Conversational Marketing und Sales Automation spezialisiert hat. Mit Hilfe von Chatbots und automatisierten Assistenten ermöglicht Drift Unternehmen, ihre Kundenkommunikation zu optimieren und den Verkaufsprozess zu beschleunigen. Die Software unterstützt dabei, potenzielle Kunden in Echtzeit zu identifizieren, zu qualifizieren und zu betreuen – alles über eine benutzerfreundliche Oberfläche.

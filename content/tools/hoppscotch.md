@@ -1,13 +1,14 @@
 ---
 slug: hoppscotch
 title: Hoppscotch
-category: AI
+category: "AI Coding"
 price_model: "Open Source"
 tags: ["developer-tools", "api"]
 official_url: "https://hoppscotch.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Hoppscotch
 
 Hoppscotch ist ein modernes, webbasiertes API-Test- und Entwicklungswerkzeug, das Entwicklern hilft, REST-, GraphQL-, WebSocket- und andere API-Anfragen schnell zu erstellen, zu senden und zu testen. Es zeichnet sich durch eine benutzerfreundliche Oberfläche, hohe Geschwindigkeit und Flexibilität aus und bietet eine praktische Alternative zu traditionellen API-Clients. Als Open-Source-Projekt richtet sich Hoppscotch vor allem an Entwickler, die eine einfache, schnelle und effiziente Lösung für die API-Entwicklung suchen.

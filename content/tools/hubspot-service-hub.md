@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [customer-support, crm, automation, ai]
 official_url: "https://www.hubspot.com/products/service"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Hubspot Service Hub
 
 Hubspot Service Hub ist eine umfassende Kundenservice- und Support-Lösung, die Unternehmen dabei unterstützt, ihre Kundenbeziehungen effizient zu verwalten und zu verbessern. Mit intelligenten Automatisierungsfunktionen, CRM-Integration und KI-gestützten Tools bietet die Plattform eine zentrale Anlaufstelle für Kundenkommunikation und Supportprozesse. Das Freemium-Modell ermöglicht den Einstieg ohne Kosten, wobei erweiterte Funktionen in kostenpflichtigen Plänen zur Verfügung stehen.

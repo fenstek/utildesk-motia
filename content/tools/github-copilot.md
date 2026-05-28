@@ -1,17 +1,18 @@
 ---
 slug: github-copilot
 title: GitHub Copilot
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: 
 official_url: "https://github.com/features/copilot/"
 affiliate_url: "https://github.com/features/copilot/"
+tier: "A"
+lastReviewed: "2026-05-27"
+mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-02-02
 updated_at: 2026-05-21
 popularity: 47
 ---
-
-
 # GitHub Copilot
 
 GitHub Copilot ist ein KI-basierter Code-Assistent, der Entwicklern hilft, schneller und effizienter zu programmieren. Durch die Integration in gängige Code-Editoren wie Visual Studio Code bietet Copilot kontextabhängige Code-Vervollständigungen und Vorschläge, die auf Millionen von Open-Source-Codebeispielen basieren. Dieses Tool unterstützt zahlreiche Programmiersprachen und Frameworks und eignet sich ideal, um Routineaufgaben zu automatisieren, neue Funktionen zu implementieren oder komplexe Algorithmen zu entwickeln.

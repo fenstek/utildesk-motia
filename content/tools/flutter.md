@@ -1,13 +1,14 @@
 ---
 slug: flutter
 title: Flutter (Google)
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [app-development, framework, developer-tools]
 official_url: "https://flutter.dev/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Flutter (Google)
 
 Flutter ist ein von Google entwickeltes Open-Source-UI-Framework zur plattformübergreifenden App-Entwicklung. Es ermöglicht Entwicklern, native Anwendungen für Android, iOS, Web und Desktop aus einer einzigen Codebasis zu erstellen. Mit seinem reaktiven Programmiermodell und einer umfangreichen Sammlung vorgefertigter Widgets beschleunigt Flutter den Entwicklungsprozess und sorgt für ansprechende, performante Benutzeroberflächen.

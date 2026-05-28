@@ -1,13 +1,14 @@
 ---
 slug: algolia
 title: Algolia
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [search, api, developer-tools, commerce]
 official_url: "https://www.algolia.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Algolia
 
 Algolia ist eine leistungsstarke Such- und Discovery-API, die speziell für Entwickler entwickelt wurde, um schnelle und relevante Sucherlebnisse in Webseiten und Anwendungen zu integrieren. Mit Fokus auf Geschwindigkeit, Anpassbarkeit und Skalierbarkeit ermöglicht Algolia die Implementierung von Suchfunktionen, die sowohl für E-Commerce-Plattformen als auch für andere digitale Produkte optimiert sind.

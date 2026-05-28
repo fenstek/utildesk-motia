@@ -1,13 +1,14 @@
 ---
 slug: microsoft-azure-face-api
 title: Microsoft Azure Face API
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [ai,api,computer-vision,cloud]
 official_url: "https://learn.microsoft.com/en-us/azure/ai-services/face/overview-identity"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Microsoft Azure Face API
 
 Microsoft Azure Face API ist ein leistungsstarker Cloud-basierter Dienst zur Gesichtserkennung und -analyse. Er ermöglicht Entwicklern, Anwendungen mit Funktionen wie Gesichtserkennung, Gesichtsanalyse und Identitätsverifizierung auszustatten. Die API nutzt fortschrittliche KI- und Computer-Vision-Technologien, um Gesichter in Bildern zu erkennen, zu vergleichen und zu analysieren – ideal für Sicherheitslösungen, Benutzererkennung oder personalisierte Benutzererfahrungen.

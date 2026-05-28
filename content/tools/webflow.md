@@ -1,11 +1,13 @@
 ---
 slug: webflow
 title: Webflow
-category: AI
+category: "AI Coding"
 price_model: "Abonnement"
 tags: [design, no-code, marketing, automation, productivity]
 official_url: "https://webflow.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-10"
 ---
 # Webflow
 

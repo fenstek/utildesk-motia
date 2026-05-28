@@ -1,13 +1,14 @@
 ---
 slug: databricks
 title: Databricks
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: [data, workflow]
 official_url: "https://www.databricks.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Databricks
 
 Databricks ist eine cloudbasierte Plattform, die speziell für die Verarbeitung großer Datenmengen und die Entwicklung von KI-Anwendungen entwickelt wurde. Sie kombiniert Data Engineering, Data Science und Machine Learning in einem integrierten Workflow, um datengetriebene Projekte effizienter zu gestalten. Dank ihrer Skalierbarkeit und der Unterstützung verschiedener Programmiersprachen ermöglicht Databricks Unternehmen, komplexe Analysen und Automatisierungen in einer kollaborativen Umgebung durchzuführen.

@@ -1,13 +1,14 @@
 ---
 slug: botsify
 title: Botsify
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot]
 official_url: "https://botsify.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Botsify
 
 Botsify ist eine AI-basierte Chatbot-Plattform, die es Unternehmen ermöglicht, automatisierte Konversationslösungen für Websites, Messenger und andere Kanäle zu erstellen. Mit einem Fokus auf einfache Bedienung und vielseitige Integrationen unterstützt Botsify die Automatisierung von Kundenservice, Lead-Generierung und Nutzerinteraktion. Die Plattform bietet sowohl eine kostenlose Grundversion als auch kostenpflichtige Premium-Pläne, die erweiterte Funktionen und mehr Anpassungsmöglichkeiten bereitstellen.

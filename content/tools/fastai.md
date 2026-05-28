@@ -1,13 +1,14 @@
 ---
 slug: fastai
 title: Fastai
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [machine-learning, education, open-source]
 official_url: "https://www.fast.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Fastai
 
 Fastai ist eine leistungsstarke Open-Source-Bibliothek für maschinelles Lernen, die auf Python basiert und den Einstieg in Deep Learning sowie andere Machine-Learning-Methoden erheblich erleichtert. Entwickelt mit dem Ziel, komplexe Modelle zugänglicher und schneller trainierbar zu machen, bietet Fastai eine intuitive API, die sowohl Anfängern als auch erfahrenen Entwicklern hilft, effizient KI-Anwendungen zu erstellen. Die Bibliothek baut auf PyTorch auf und kombiniert fortschrittliche Techniken mit praxisorientierten Tutorials und Kursen, die das Lernen und Anwenden von KI-Technologien fördern.

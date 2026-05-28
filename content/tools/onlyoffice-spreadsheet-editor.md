@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [spreadsheet, office, collaboration, productivity]
 official_url: "https://www.onlyoffice.com/sheets"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # OnlyOffice Spreadsheet Editor
 
 OnlyOffice Spreadsheet Editor ist eine leistungsstarke und benutzerfreundliche Anwendung zur Erstellung und Bearbeitung von Tabellenkalkulationen. Als Teil der OnlyOffice Office-Suite unterstützt das Tool nahtlose Zusammenarbeit und eignet sich sowohl für Einzelanwender als auch für Teams, die ihre Produktivität steigern möchten. Mit einer modernen Oberfläche und umfangreichen Funktionen bietet der Editor eine solide Alternative zu anderen Office-Lösungen.

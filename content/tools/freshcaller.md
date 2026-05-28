@@ -7,6 +7,8 @@ tags: [customer-support, phone, communication, productivity]
 official_url: "https://www.freshworks.com/freshcaller-cloud-pbx/"
 popularity: 0
 description: "Freshcaller ist ein Support- und Kommunikationswerkzeug für Cloud-Telefonie und Callcenter-Funktionen für Support- und Vertriebsteams."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Freshcaller
 

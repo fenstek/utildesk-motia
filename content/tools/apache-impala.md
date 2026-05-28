@@ -1,13 +1,14 @@
 ---
 slug: apache-impala
 title: Apache Impala
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://impala.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Impala
 
 Apache Impala ist eine Open-Source-SQL-Abfrageengine, die speziell für die Verarbeitung großer Datenmengen in Echtzeit entwickelt wurde. Sie ermöglicht schnelle und interaktive Analysen von Daten, die in Hadoop Distributed File System (HDFS) oder Apache HBase gespeichert sind. Impala verbindet die Skalierbarkeit von Big Data mit der Leistungsfähigkeit von traditionellen MPP-Datenbanken und bietet somit eine effektive Lösung für datengetriebene Anwendungen und Business Intelligence.

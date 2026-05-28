@@ -1,13 +1,14 @@
 ---
 slug: dimensions
 title: Dimensions
-category: AI
+category: "AI Research"
 price_model: Je nach Plan
 tags: [research, publications, analytics]
 official_url: "https://www.dimensions.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Dimensions
 
 Dimensions ist eine leistungsstarke Plattform für die wissenschaftliche Forschung und Analyse, die den Zugang zu umfangreichen Datenbanken mit Forschungsartikeln, Publikationen und Zitierungen ermöglicht. Die Anwendung unterstützt Forscher, Institutionen und Unternehmen dabei, relevante wissenschaftliche Informationen effizient zu finden, zu analysieren und zu nutzen. Dabei verbindet Dimensions traditionelle bibliometrische Daten mit modernen Analysewerkzeugen und bietet so einen umfassenden Überblick über Forschungsaktivitäten weltweit.

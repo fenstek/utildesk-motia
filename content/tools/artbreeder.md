@@ -8,11 +8,11 @@ tags:
   - design
 official_url: 'https://artbreeder.com'
 affiliate_url: 'https://artbreeder.com'
+tier: "C"
+generated_at: "2026-05-10"
 created_at: "2026-02-03"
 popularity: 0
 ---
-
-
 # Artbreeder
 
 Artbreeder ist eine innovative Online-Plattform, die künstliche Intelligenz nutzt, um kreative Bildkompositionen zu erzeugen und zu verändern. Nutzer können durch das Kombinieren und Anpassen von Bildern einzigartige Kunstwerke schaffen, ohne tiefgehende Designkenntnisse zu benötigen. Die Bedienung erfolgt intuitiv über Regler und Schiebefelder, die verschiedene Bildmerkmale steuern. Artbreeder eignet sich besonders für Designer, Künstler und alle, die visuelle Inhalte mit KI-Unterstützung entwickeln möchten.

@@ -1,14 +1,15 @@
 ---
 slug: power-bi
 title: Power BI
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [analytics, workflow]
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
 popularity: 23
 updated_at: 2026-05-21
+tier: "D"
+generated_at: "2026-05-28"
 ---
-
 # Power BI
 
 Power BI ist Microsofts Business-Intelligence-Plattform für Datenmodelle, Berichte, Dashboards und datengetriebene Entscheidungsprozesse. Das Tool hilft Unternehmen, Daten aus Excel, Datenbanken, Cloud-Diensten, CRM-Systemen, ERP-Quellen und Web-APIs zusammenzuführen und daraus auswertbare Berichte zu bauen. Der eigentliche Nutzen entsteht aber nicht durch ein einzelnes schönes Dashboard, sondern durch verlässliche Kennzahlen, klare Datenverantwortung und Berichte, denen Fachbereiche wirklich vertrauen.

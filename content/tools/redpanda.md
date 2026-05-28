@@ -1,11 +1,13 @@
 ---
 slug: redpanda
 title: Redpanda
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [data, streaming, cloud, developer-tools]
 official_url: "https://www.redpanda.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # Redpanda
 

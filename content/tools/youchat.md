@@ -1,13 +1,14 @@
 ---
 slug: youchat
 title: YouChat
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://web.youchat.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # YouChat
 
 YouChat ist ein KI-basierter Chatbot, der entwickelt wurde, um Nutzern bei der Informationssuche, dem Verfassen von Texten und der Kommunikation zu helfen. Mit natürlicher Sprachverarbeitung ermöglicht YouChat schnelle und präzise Antworten auf vielfältige Fragen und unterstützt sowohl den privaten als auch den beruflichen Alltag. Das Tool ist über eine intuitive Benutzeroberfläche zugänglich und bietet eine Kombination aus kostenloser Basisnutzung und erweiterten Funktionen im Premium-Modell.

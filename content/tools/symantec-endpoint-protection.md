@@ -1,13 +1,14 @@
 ---
 slug: symantec-endpoint-protection
 title: Symantec Endpoint Protection
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security, endpoint, enterprise, device-management]
 official_url: "https://www.broadcom.com/products/cybersecurity/endpoint"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Symantec Endpoint Protection
 
 Symantec Endpoint Protection ist eine umfassende Sicherheitslösung, die speziell für Unternehmen entwickelt wurde, um Endgeräte effektiv vor verschiedenen Bedrohungen zu schützen. Die Software kombiniert Antivirus, Firewall, Intrusion Prevention und weitere Sicherheitsfunktionen in einer einheitlichen Plattform. Dies ermöglicht eine zentrale Verwaltung und verbessert die Sicherheit im Unternehmensnetzwerk.

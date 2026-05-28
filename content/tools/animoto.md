@@ -1,13 +1,14 @@
 ---
 slug: animoto
 title: Animoto
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: ["ai", "video", "design", "creative", "automation"]
 official_url: "https://animoto.com/"
 popularity: 68
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Animoto
 
 Animoto ist ein cloudbasierter Video-Editor, der es Nutzern ermöglicht, schnell und einfach professionelle Videos zu erstellen. Mithilfe von vorgefertigten Vorlagen, automatischer Videobearbeitung und KI-gestützten Funktionen verwandelt Animoto Fotos, Videoclips und Musik in ansprechende Videoinhalte. Besonders beliebt ist das Tool bei Marketingexperten, Social-Media-Managern und kleinen Unternehmen, die ohne großen technischen Aufwand visuell überzeugende Videos produzieren möchten.

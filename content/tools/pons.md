@@ -1,13 +1,14 @@
 ---
 slug: pons
 title: Pons
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: [translation, education, automation, assistant]
 official_url: "https://en.pons.com/translate"
 popularity: 23
+tier: "D"
+generated_at: "2026-05-27"
 ---
-
 # Pons
 
 Pons ist ein Sprach- und Übersetzungswerkzeug, das Wörterbuch, Beispielsätze, automatische Übersetzung und Lernhilfen miteinander verbindet. Der praktische Nutzen liegt nicht nur im schnellen Übersetzen einzelner Wörter, sondern im Prüfen von Bedeutung, Kontext, Register und typischer Verwendung. Gerade bei Fremdsprachen reicht die erste maschinelle Übersetzung oft nicht aus; Pons hilft, genauer nachzusehen.

@@ -1,12 +1,14 @@
 ---
 slug: zencastr
 title: Zencastr
-category: AI
+category: "AI Audio"
 price_model: "Abonnement"
 tags: [audio, video, transcription, productivity, automation]
 official_url: "https://zencastr.com/"
 popularity: 0
 description: "Zencastr ist ein Audio- und Musikwerkzeug für Remote-Podcast-Aufnahme, Audio-/Video-Capture und Produktionsworkflow für Gespräche."
+tier: "C"
+generated_at: "2026-05-03"
 ---
 # Zencastr
 

@@ -1,14 +1,16 @@
 ---
 slug: "mistral"
 title: "Mistral"
-category: "AI"
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["data", "automation"]
 official_url: "https://mistral.ai/"
 created_at: "2026-02-11"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-16"
+mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
 ---
-
 # Mistral
 
 Mistral ist eine innovative KI-Plattform, die fortschrittliche Modelle für verschiedene Anwendungen im Bereich künstliche Intelligenz bereitstellt. Mit einem Fokus auf Flexibilität und Leistungsfähigkeit richtet sich Mistral an Entwickler, Unternehmen und Forscher, die KI-Lösungen individuell anpassen und effizient einsetzen möchten. Das Tool bietet eine Kombination aus Open-Source-Technologien und kommerziellen Features im Freemium-Modell, wodurch Nutzer je nach Bedarf skalieren können.

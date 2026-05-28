@@ -1,13 +1,14 @@
 ---
 slug: fireworks-ai
 title: Fireworks AI
-category: AI Infrastructure
+category: "AI Coding"
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://fireworks.ai"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Fireworks AI
 
 Fireworks AI ist eine moderne Plattform im Bereich der KI-Infrastruktur, die Unternehmen und Entwicklern leistungsstarke Werkzeuge für die Entwicklung, das Training und die Bereitstellung von KI-Modellen bietet. Die Plattform unterstützt vielfältige Anwendungsfälle, von der Forschung bis hin zur Produktintegration, und legt dabei Wert auf Skalierbarkeit, Benutzerfreundlichkeit und Effizienz.

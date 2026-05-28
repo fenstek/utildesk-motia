@@ -1,12 +1,14 @@
 ---
 slug: microsoft-to-do
 title: Microsoft To Do
-category: AI
+category: "AI Agents"
 price_model: "Kostenlos"
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app"
 popularity: 0
 description: "Microsoft To Do ist ein Business- und Operations-Plattform für einfache Aufgabenverwaltung für persönliche To-dos, Microsoft-365-Kontext und kleine Listen."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Microsoft To Do
 

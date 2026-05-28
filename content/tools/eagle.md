@@ -6,8 +6,9 @@ price_model: One-time purchase
 tags: [design, asset-management, productivity, organization]
 official_url: "https://en.eagle.cool/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Eagle
 
 Eagle ist ein leistungsstarkes Tool zur Verwaltung und Organisation von Design-Assets. Es richtet sich vor allem an Designer, Kreativteams und alle, die eine effiziente Lösung zur Sammlung, Katalogisierung und schnellen Wiederauffindbarkeit von digitalen Medien suchen. Mit einer benutzerfreundlichen Oberfläche und vielseitigen Funktionen unterstützt Eagle dabei, den Workflow zu optimieren und die Produktivität zu steigern.

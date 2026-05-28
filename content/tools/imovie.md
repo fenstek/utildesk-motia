@@ -1,12 +1,14 @@
 ---
 slug: imovie
 title: iMovie
-category: AI
+category: "AI Coding"
 price_model: Kostenlos
 tags: [video-editing, apple, consumer-video]
 official_url: "https://support.apple.com/imovie"
 popularity: 0
 description: "iMovie ist Apples kostenloser Videoeditor für einfache Schnitte, Trailer, Familienvideos und schnelle Content-Projekte."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # iMovie
 

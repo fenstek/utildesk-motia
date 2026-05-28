@@ -1,12 +1,14 @@
 ---
 slug: zabbix
 title: Zabbix
-category: AI
+category: "AI Agents"
 price_model: "Open Source"
 tags: [analytics, workflow]
 official_url: "https://www.zabbix.com/"
 popularity: 0
 description: "Zabbix ist ein Entwickler- und Infrastrukturwerkzeug für Open-Source-Monitoring für Infrastruktur, Server, Netzwerke, Anwendungen und Betriebsalarme."
+tier: "C"
+generated_at: "2026-05-03"
 ---
 # Zabbix
 

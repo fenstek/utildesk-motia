@@ -1,13 +1,14 @@
 ---
 slug: fantastical
 title: Fantastical
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [calendar, scheduling, productivity]
 official_url: "https://flexibits.com/fantastical"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Fantastical
 
 Fantastical ist eine leistungsstarke Kalender- und Terminplanungssoftware, die sich durch eine intuitive Benutzeroberfläche und intelligente Funktionen auszeichnet. Die App unterstützt Nutzer dabei, Termine schnell zu erfassen, zu verwalten und zu synchronisieren – sowohl im beruflichen als auch im privaten Alltag. Dank KI-gestützter Features erleichtert Fantastical die Organisation und steigert die Produktivität.

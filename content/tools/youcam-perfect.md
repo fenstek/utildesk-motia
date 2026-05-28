@@ -1,11 +1,13 @@
 ---
 slug: youcam-perfect
 title: YouCam Perfect
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [photo, image, editing, mobile]
 official_url: "https://www.perfectcorp.com/consumer/apps/ycp"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-03"
 ---
 # YouCam Perfect
 

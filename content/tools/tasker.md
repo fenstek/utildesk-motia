@@ -1,13 +1,14 @@
 ---
 slug: tasker
 title: Tasker (Android)
-category: AI
+category: "AI Agents"
 price_model: Kostenpflichtig
 tags: [automation, android, productivity]
 official_url: "https://tasker.joaoapps.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Tasker (Android)
 
 Tasker ist eine leistungsstarke Automatisierungs-App für Android-Geräte, die es Nutzern ermöglicht, vielfältige Aufgaben und Abläufe auf ihrem Smartphone oder Tablet zu automatisieren. Durch die Kombination von Bedingungen, Aktionen und Ereignissen können Nutzer individuelle Workflows erstellen, die den Alltag erleichtern und die Produktivität steigern. Tasker ist besonders beliebt bei Anwendern, die ihr Android-Gerät flexibel an ihre Bedürfnisse anpassen möchten.

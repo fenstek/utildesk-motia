@@ -1,13 +1,14 @@
 ---
 slug: apache-hadoop
 title: Apache Hadoop (selbst gehostet)
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://hadoop.apache.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Hadoop (selbst gehostet)
 
 Apache Hadoop ist ein Open-Source-Framework zur verteilten Speicherung und Verarbeitung großer Datenmengen. Es ermöglicht Unternehmen und Entwicklern, Daten in Clustern aus handelsüblichen Servern zu speichern und mit hoher Skalierbarkeit zu analysieren. Die selbst gehostete Variante bietet volle Kontrolle über Infrastruktur und Daten, was besonders für Unternehmen mit hohen Datenschutzanforderungen oder speziellen Anpassungsbedürfnissen attraktiv ist.

@@ -1,15 +1,15 @@
 ---
 slug: "speechly"
 title: "Speechly"
-category: "AI"
+category: "AI Audio"
 price_model: "Freemium"
 tags: [ai,audio]
 official_url: "https://speechly.ai/home"
 created_at: "2026-02-15"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
-
 # Speechly
 
 Speechly ist eine innovative KI-basierte Sprachverarbeitungslösung, die Entwicklern ermöglicht, Sprachbefehle und Sprachinteraktionen in ihre Anwendungen zu integrieren. Mit Fokus auf Echtzeit-Spracherkennung und natürlicher Sprachverarbeitung bietet Speechly eine flexible Plattform für die Erstellung interaktiver, sprachgesteuerter Benutzererlebnisse. Das Tool richtet sich vor allem an Unternehmen und Entwickler, die ihre Anwendungen durch Sprachsteuerung erweitern möchten, ohne dabei auf externe, oft unflexible Sprachassistenten angewiesen zu sein.

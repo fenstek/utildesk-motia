@@ -1,13 +1,15 @@
 ---
 slug: aider
 title: Aider
-category: Developer
+category: "Entwickler-Tools"
 price_model: Je nach Plan
 tags: [ai, coding, cli, developer]
 official_url: "https://aider.chat/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-10"
+mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
-
 # Aider
 
 Aider ist ein innovatives Tool, das speziell für Entwickler entwickelt wurde, um den Programmierprozess durch den Einsatz von Künstlicher Intelligenz (KI) zu optimieren. Es kombiniert eine leistungsfähige Kommandozeilen-Schnittstelle (CLI) mit intelligenten Funktionen, die das Schreiben, Verstehen und Verbessern von Code erleichtern. Aider unterstützt Entwickler dabei, produktiver zu arbeiten und komplexe Aufgaben schneller zu bewältigen.

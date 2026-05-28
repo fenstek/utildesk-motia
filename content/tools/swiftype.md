@@ -1,13 +1,14 @@
 ---
 slug: swiftype
 title: Swiftype
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [search, site-search, api, developer-tools]
 official_url: "https://swiftype.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Swiftype
 
 Swiftype ist eine leistungsstarke Suchlösung, die speziell für Entwickler und Unternehmen entwickelt wurde, um benutzerdefinierte Suchfunktionen einfach in Webseiten und Anwendungen zu integrieren. Mit einer flexiblen API, anpassbaren Suchergebnissen und umfangreichen Analyse-Tools bietet Swiftype eine skalierbare Plattform, die sich an verschiedenste Anforderungen anpasst. Die Plattform erleichtert die Implementierung einer schnellen, relevanten und intuitiven Suche, die die Nutzererfahrung deutlich verbessert.

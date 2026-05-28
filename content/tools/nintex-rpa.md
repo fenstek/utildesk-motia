@@ -1,13 +1,14 @@
 ---
 slug: nintex-rpa
 title: Nintex RPA
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [automation, rpa, workflow, enterprise]
 official_url: "https://www.nintex.com/platforms/cloud-automation/rpa/"
 popularity: 27
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Nintex RPA
 
 Nintex RPA ist eine leistungsstarke Automatisierungslösung, die Unternehmen dabei unterstützt, repetitive und zeitaufwändige Aufgaben durch Robotic Process Automation (RPA) effizient zu gestalten. Die Software ermöglicht die Automatisierung von Geschäftsprozessen und Workflows, um Produktivität zu erhöhen und Fehlerquellen zu minimieren. Mit einer intuitiven Benutzeroberfläche und umfangreichen Integrationsmöglichkeiten ist Nintex RPA eine attraktive Wahl für Unternehmen, die ihre digitale Transformation vorantreiben möchten.

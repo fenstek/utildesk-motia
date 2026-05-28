@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [photo, editing, ai, desktop]
 official_url: "https://skylum.com/luminar"
 popularity: 36
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Luminar Neo
 
 Luminar Neo ist eine moderne Fotobearbeitungssoftware, die besonders durch ihre KI-gestützten Funktionen auffällt. Sie richtet sich an Kreative, die ihre Fotos schnell und professionell verbessern möchten, ohne dabei auf komplexe Bearbeitungsprozesse angewiesen zu sein. Die Software bietet eine intuitive Benutzeroberfläche und leistungsstarke Tools, die sowohl für Einsteiger als auch für erfahrene Fotografen geeignet sind.

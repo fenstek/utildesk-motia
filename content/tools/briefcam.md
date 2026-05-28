@@ -1,13 +1,14 @@
 ---
 slug: briefcam
 title: BriefCam
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [video, analytics, security, ai]
 official_url: "https://www.milestonesys.com/products/software/briefcam/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # BriefCam
 
 BriefCam ist eine innovative Videoanalyseplattform, die Künstliche Intelligenz (KI) nutzt, um große Mengen an Videomaterial schnell und effizient auszuwerten. Die Software ermöglicht es, relevante Ereignisse in aufgezeichneten Videos zu identifizieren, zu filtern und zusammenzufassen. So können Sicherheits- und Überwachungsaufgaben deutlich effektiver durchgeführt werden. BriefCam findet Anwendung in verschiedenen Branchen, von der öffentlichen Sicherheit über den Einzelhandel bis hin zum Verkehrswesen.

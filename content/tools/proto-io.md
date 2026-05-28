@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [prototyping, design, collaboration, no-code]
 official_url: "https://proto.io/"
 popularity: 22
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Proto.io
 
 Proto.io ist eine umfassende Design- und Prototyping-Plattform, die es Teams ermöglicht, interaktive Prototypen ohne Programmierkenntnisse zu erstellen. Mit einem Fokus auf Zusammenarbeit und schnelle Iteration unterstützt Proto.io Designer und Produktteams dabei, ihre Ideen visuell darzustellen und frühzeitig Feedback einzuholen. Die Plattform eignet sich besonders für die Entwicklung von mobilen Apps und Webanwendungen.

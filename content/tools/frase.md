@@ -1,15 +1,16 @@
 ---
 slug: frase
 title: Frase
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags: ["writing", "marketing"]
 official_url: 'https://www.frase.io/'
 affiliate_url: 'https://www.frase.io/'
+tier: "C"
+generated_at: "2026-05-12"
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # Frase
 
 Frase ist ein KI-gestütztes Tool, das speziell für Content-Ersteller, Marketing-Teams und SEO-Experten entwickelt wurde. Es hilft dabei, Inhalte schneller und datenbasiert zu erstellen, indem es relevante Themen recherchiert, Content-Briefings generiert und die Suchmaschinenoptimierung unterstützt. Dank seiner Kombination aus KI-Technologie und SEO-Analyse vereinfacht Frase den Prozess der Content-Planung und -Optimierung.

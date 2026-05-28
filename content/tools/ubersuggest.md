@@ -1,13 +1,14 @@
 ---
 slug: ubersuggest
 title: Ubersuggest
-category: AI
+category: "AI Research"
 price_model: Je nach Plan
 tags: [seo, keyword-research, marketing]
 official_url: "https://neilpatel.com/ubersuggest/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Ubersuggest
 
 Ubersuggest ist ein vielseitiges SEO-Tool, das vor allem für Keyword-Recherche, Wettbewerbsanalyse und Content-Optimierung genutzt wird. Es unterstützt Marketer, Website-Betreiber und SEO-Experten dabei, ihre Online-Sichtbarkeit zu erhöhen und gezielte Marketingstrategien zu entwickeln. Die Integration von KI-Elementen erleichtert datengetriebene Entscheidungen und bietet Einblicke in Suchtrends und Ranking-Chancen.

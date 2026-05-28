@@ -1,11 +1,13 @@
 ---
 slug: jan-ai
 title: Jan
-category: AI
+category: "AI Infrastructure"
 price_model: 
 tags: ["automation", "data", "analytics"]
 official_url: "https://jan.ai"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # Jan
 

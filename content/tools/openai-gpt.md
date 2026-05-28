@@ -1,15 +1,15 @@
 ---
 slug: openai-gpt
 title: OpenAI GPT
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai,llm]
 official_url: "https://openai.com/index/hello-gpt-4o"
 created_at: 2026-02-13
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
-
 # OpenAI GPT
 
 OpenAI GPT ist ein fortschrittliches KI-Sprachmodell, das natürliche Sprache versteht und generiert. Es wird für vielfältige Anwendungen eingesetzt, von der Textgenerierung über die Automatisierung von Kundenservice bis hin zur Unterstützung bei kreativen und analytischen Aufgaben. Das Modell basiert auf modernster Technologie im Bereich der großen Sprachmodelle (LLM) und bietet Nutzern die Möglichkeit, komplexe Textprozesse effizient zu bewältigen.

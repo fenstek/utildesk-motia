@@ -1,13 +1,14 @@
 ---
 slug: airbyte
 title: Airbyte
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Airbyte
 
 Airbyte ist eine Open-Source-Plattform für Datenintegration, die es Entwicklern und Unternehmen ermöglicht, Daten aus verschiedenen Quellen zu extrahieren, zu transformieren und in Zielsysteme zu laden (ETL). Die Software unterstützt eine breite Palette von Datenquellen und Zielen und zeichnet sich durch hohe Anpassbarkeit und einfache Erweiterbarkeit aus. Airbyte bietet sowohl eine kostenlose Open-Source-Version als auch kostenpflichtige Pläne mit erweiterten Funktionen an.

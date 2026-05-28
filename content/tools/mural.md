@@ -1,13 +1,14 @@
 ---
 slug: mural
 title: MURAL
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [whiteboard, collaboration, brainstorming]
 official_url: "https://www.mural.co/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # MURAL
 
 MURAL ist ein digitales Whiteboard für Workshops, Ideation, Mapping und kollaborative Planung. Es ersetzt nicht die Moderation, aber es schafft einen gemeinsamen Raum, in dem verteilte Teams sichtbar zusammen denken können.

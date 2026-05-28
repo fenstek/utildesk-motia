@@ -1,13 +1,14 @@
 ---
 slug: inshot
 title: InShot
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [video-editing, mobile, creator-tools]
 official_url: "https://inshot.com/"
 popularity: 39
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # InShot
 
 InShot ist ein mobiler Video- und Fotoeditor für schnelle Social-Media-Produktion. Das Tool ist weniger für schwere Postproduktion gedacht, sondern für den Moment, in dem ein Clip heute noch sauber geschnitten, beschriftet und veröffentlicht werden soll.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, education]
 official_url: "https://www.gauthmath.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Gauth
 
 Gauth ist ein innovatives Tool, das Künstliche Intelligenz nutzt, um Bildungs- und Produktivitätsprozesse zu verbessern. Es bietet eine Vielzahl von Funktionen, die sowohl Schülern, Studierenden als auch Lehrkräften dabei helfen, Lerninhalte effizienter zu erfassen und zu verarbeiten. Durch die Kombination aus AI-Technologien und benutzerfreundlichem Design unterstützt Gauth die individuelle Lernentwicklung und erleichtert die Organisation von Wissen.

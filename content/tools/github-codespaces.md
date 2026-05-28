@@ -1,13 +1,14 @@
 ---
 slug: github-codespaces
 title: GitHub Codespaces
-category: Developer
+category: "Entwickler-Tools"
 price_model: "Nutzungsbasiert"
 tags: [coding, developer-tools, automation, productivity]
 official_url: "https://github.com/features/codespaces"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # GitHub Codespaces
 
 GitHub Codespaces ist eine cloudbasierte Entwicklungsumgebung, die es Entwicklern ermöglicht, direkt im Browser oder über Visual Studio Code zu programmieren, ohne lokale Setups vornehmen zu müssen. Die Plattform bietet eine vollständig konfigurierte Umgebung, die auf GitHub-Repositories basiert und sich flexibel an verschiedene Projekte und Anforderungen anpasst. Dadurch wird die Entwicklungszeit verkürzt und die Produktivität gesteigert.

@@ -1,15 +1,16 @@
 ---
 slug: heygen
 title: HeyGen
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: ["audio", "video", "marketing"]
 official_url: 'https://www.heygen.com/'
 affiliate_url: 'https://www.heygen.com/'
+tier: "C"
+generated_at: "2026-05-12"
 created_at: "2026-02-07"
 popularity: 0
 ---
-
 # HeyGen
 
 HeyGen macht KI-Avatare, Video-Lokalisierung und synthetische Präsentationen deutlich zugänglicher. Statt jedes Erklärvideo neu zu drehen, können Teams Skripte, Avatare, Stimmen und Sprachen kombinieren und so Varianten für Marketing, Schulung oder Support produzieren.

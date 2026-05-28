@@ -1,13 +1,14 @@
 ---
 slug: podcastle
 title: Podcastle
-category: AI
+category: "AI Audio"
 price_model: "Je nach Plan"
 tags: [audio, transcription, content, video]
 official_url: "https://async.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Podcastle
 
 Podcastle ist eine KI-gestützte Plattform, die sich auf die Erstellung, Aufnahme und Bearbeitung von Audio- und Videoinhalten spezialisiert hat. Mit Fokus auf Podcasts bietet das Tool eine Kombination aus automatischer Transkription, Audioverbesserung und Content-Erstellung, die sowohl Einsteigern als auch Profis eine effiziente Produktion ermöglicht. Die Integration von KI-Technologien erleichtert den gesamten Workflow von der Aufnahme bis zur Veröffentlichung.

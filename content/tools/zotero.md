@@ -1,12 +1,14 @@
 ---
 slug: zotero
 title: Zotero
-category: AI
+category: "AI Agents"
 price_model: "Freemium"
 tags: [assistant, automation]
 official_url: "https://www.zotero.org/"
 popularity: 0
 description: "Zotero ist ein kostenloser Referenzmanager für Literaturverwaltung, Web-Clipping, Zitate und Forschungsbibliotheken."
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Zotero
 
@@ -19,8 +21,6 @@ Gut für Studierende, Forschende, Journalisten und Wissensarbeiter, die Quellen 
 Zotero eignet sich für Studierende, Forschende, Autorinnen und Wissensarbeiter, die Quellen, PDFs, Notizen und Zitate zuverlässig organisieren möchten. Besonders stark ist es für Web-Recherche, Literaturverwaltung, Gruppenbibliotheken und den Übergang vom Sammeln zum Schreiben.
 
 Zotero ist kein Recherche-Orakel und keine automatische Qualitätsprüfung. Es hilft, gefundene Literatur sauber zu verwalten; Relevanz, Quellenkritik und Argumentation bleiben wissenschaftliche Arbeit.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/zotero-editorial.webp" alt="Illustration zu Zotero: Forschungsnotizen, Bücher und Karteikarten werden zu einem Zitationsnetz sortiert" loading="lazy" decoding="async" />

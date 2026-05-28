@@ -1,13 +1,14 @@
 ---
 slug: smartsheet
 title: Smartsheet
-category: AI
+category: "AI Infrastructure"
 price_model: "Abonnement"
 tags: [data, workflow]
 official_url: "https://www.smartsheet.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Smartsheet
 
 Smartsheet ist eine cloudbasierte Plattform, die kollaboratives Arbeiten, Projektmanagement und Automatisierung von Geschäftsprozessen unterstützt. Mit Fokus auf Datenverwaltung und Workflow-Optimierung kombiniert Smartsheet Tabellenkalkulationen mit modernen Tools, um Teams bei der Organisation, Planung und Nachverfolgung ihrer Aufgaben zu helfen. Die Integration von KI-gestützten Funktionen erleichtert das Automatisieren wiederkehrender Aufgaben und verbessert die Übersichtlichkeit komplexer Projekte.

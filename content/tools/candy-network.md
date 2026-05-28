@@ -1,13 +1,14 @@
 ---
 slug: candy-network
 title: Candy Network
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://candy.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Candy Network
 
 Candy Network ist ein KI-basierter Chatbot, der als digitaler Begleiter fungiert und Nutzern hilft, Gespräche zu führen, Unterstützung zu erhalten und soziale Interaktionen zu simulieren. Die Plattform kombiniert fortschrittliche KI-Technologien, um eine natürliche und empathische Kommunikation zu ermöglichen. Candy Network eignet sich besonders für Menschen, die einen virtuellen Gesprächspartner suchen, sei es zur Unterhaltung, emotionalen Unterstützung oder zum Austausch von Gedanken.

@@ -6,8 +6,9 @@ price_model: Nutzungsbasiert
 tags: [translation, api, developers]
 official_url: "https://www.deepl.com/en/products/api"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # DeepL API
 
 DeepL API ist eine leistungsstarke Schnittstelle zur maschinellen Übersetzung, die es Entwicklern ermöglicht, DeepLs präzise Übersetzungsdienste direkt in ihre Anwendungen, Webseiten oder Workflows zu integrieren. Die API unterstützt zahlreiche Sprachen und bietet eine schnelle, zuverlässige und qualitativ hochwertige Übersetzungslösung, die insbesondere für Unternehmen und Entwickler interessant ist, die mehrsprachige Inhalte effizient verwalten möchten.

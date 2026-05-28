@@ -6,8 +6,9 @@ price_model: "Je nach Plan"
 tags: [design, ux, prototyping]
 official_url: "https://www.axure.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Axure RP
 
 Axure RP ist eine leistungsstarke Software für UX-Designer und Produktteams, die interaktive Prototypen und Wireframes erstellen möchten. Mit Axure RP lassen sich komplexe Benutzeroberflächen ohne Programmierkenntnisse modellieren und testen. Die Plattform unterstützt kollaboratives Arbeiten, sodass Teams gemeinsam an Projekten arbeiten und Feedback einholen können. Axure RP ist besonders geeignet für die Entwicklung von Prototypen mit dynamischen Inhalten, variablen Zuständen und interaktiven Funktionen.

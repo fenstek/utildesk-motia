@@ -1,13 +1,14 @@
 ---
 slug: google-bigtable
 title: Google Bigtable
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [database, cloud, developer-tools, analytics]
 official_url: "https://cloud.google.com/bigtable"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Google Bigtable
 
 Google Bigtable ist eine leistungsstarke, verteilte NoSQL-Datenbank, die speziell für große Datenmengen und hohe Skalierbarkeit entwickelt wurde. Als Teil der Google Cloud Platform bietet Bigtable eine schnelle und zuverlässige Lösung für Entwickler, die große Mengen strukturierter Daten speichern und analysieren möchten. Es eignet sich besonders für Anwendungen, die eine niedrige Latenz und hohe Verfügbarkeit erfordern, wie etwa IoT, Echtzeit-Analysen oder Finanzdienstleistungen.

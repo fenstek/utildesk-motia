@@ -1,12 +1,15 @@
 ---
 slug: selenium
 title: Selenium
-category: AI
+category: "AI Coding"
 price_model: "Open Source"
 tags: [test-automation, webdriver, developer-tools]
 official_url: "https://www.selenium.dev/"
 popularity: 0
 description: "Selenium ist ein Entwickler- und Infrastrukturwerkzeug für Browserautomatisierung und End-to-End-Tests für Webanwendungen."
+tier: "A"
+lastReviewed: "2026-05-17"
+mentionedIn: ["browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird"]
 ---
 # Selenium
 

@@ -1,14 +1,15 @@
 ---
 title: "Customers.ai (ehemals MobileMonkey)"
 slug: "mobilemonkey"
-category: "AI"
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: ["chatbot"]
 official_url: "https://customers.ai/"
 created_at: "2026-02-13"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Customers.ai (ehemals MobileMonkey)
 
 Customers.ai, früher bekannt als MobileMonkey, ist eine KI-gestützte Plattform für Marketing-Automatisierung und Kundenkommunikation über mehrere Kanäle hinweg. Die Plattform ermöglicht es Unternehmen, Chatbots für Facebook Messenger, Instagram, SMS und Webchat zu erstellen und zu verwalten, um Leads zu generieren, Kunden zu betreuen und Verkäufe zu steigern. Mit der Umbenennung zu Customers.ai wurde der Fokus auf KI-basierte Kundeninteraktionen und personalisierte Gesprächsführung verstärkt.

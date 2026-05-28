@@ -7,6 +7,8 @@ tags: [ai, design, image]
 official_url: "https://www.pixa.com/"
 popularity: 0
 description: "Pixelcut ist ein Design- und Kreativwerkzeug für KI-Bildbearbeitung für Produktfotos, Freisteller, Hintergründe und schnelle Shop-Visuals."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # Pixelcut
 

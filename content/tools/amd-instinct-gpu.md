@@ -1,13 +1,14 @@
 ---
 slug: amd-instinct-gpu
 title: AMD Instinct GPU
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant,automation,workflow]
 official_url: "https://www.amd.com/en/products/accelerators/instinct.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # AMD Instinct GPU
 
 Die AMD Instinct GPU ist eine Hochleistungs-Grafikprozessorlösung, die speziell für den Einsatz in Bereichen wie künstlicher Intelligenz (KI), maschinellem Lernen und High-Performance-Computing (HPC) entwickelt wurde. Sie bietet eine hohe Rechenleistung und Energieeffizienz, um komplexe Workloads und datenintensive Anwendungen zu bewältigen. Durch ihre Architektur eignet sie sich besonders gut für die Beschleunigung von KI-Trainingsprozessen und Automatisierungs-Workflows.

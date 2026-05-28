@@ -1,13 +1,14 @@
 ---
 slug: brainscape
 title: Brainscape
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.brainscape.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Brainscape
 
 Brainscape ist eine innovative Lernplattform, die auf einem wissenschaftlich fundierten Ansatz basiert, um das Lernen durch Wiederholungen und personalisierte Lernkarten zu optimieren. Mithilfe von Künstlicher Intelligenz unterstützt Brainscape Nutzer dabei, Wissen effizienter zu speichern und ihren Lernprozess individuell anzupassen. Das Tool eignet sich besonders für Schüler, Studenten und Berufstätige, die ihre Lernzeit effektiver gestalten möchten.

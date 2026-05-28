@@ -1,13 +1,14 @@
 ---
 slug: tripactions
 title: TripActions
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [travel-management, expense-management, saas]
 official_url: "https://navan.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # TripActions
 
 TripActions ist eine umfassende SaaS-Plattform, die Unternehmen bei der Verwaltung von Geschäftsreisen und Reisekosten mithilfe von Künstlicher Intelligenz unterstützt. Die Lösung bietet automatisierte Buchungen, Echtzeit-Reporting und integriertes Ausgabenmanagement, um den gesamten Reiseprozess effizienter und transparenter zu gestalten. Mit Fokus auf Benutzerfreundlichkeit und Flexibilität richtet sich TripActions an Unternehmen verschiedenster Größenordnungen, die ihre Reiserichtlinien optimieren und Kosten kontrollieren möchten.

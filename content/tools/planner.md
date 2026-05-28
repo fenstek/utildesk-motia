@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [project-management,tasks,planning,collaboration]
 official_url: "https://www.microsoft.com/en-us/microsoft-365/planner/microsoft-planner"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Planner
 
 Planner ist ein vielseitiges Tool zur Unterstützung der Projektplanung, Aufgabenverwaltung und Teamzusammenarbeit. Es bietet eine intuitive Oberfläche, die es Teams ermöglicht, Projekte effizient zu strukturieren, Aufgaben zuzuweisen und Fortschritte in Echtzeit zu verfolgen. Dank des Freemium-Preismodells können Nutzer die Grundfunktionen kostenlos nutzen und bei Bedarf auf erweiterte Features zugreifen.

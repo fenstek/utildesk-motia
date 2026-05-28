@@ -1,13 +1,14 @@
 ---
 slug: code-org
 title: Code.org
-category: Developer
+category: "Entwickler-Tools"
 price_model: Free
 tags: [education,coding,children,developer-tools]
 official_url: "https://code.org/en-US"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Code.org
 
 Code.org ist eine kostenlose Online-Plattform, die sich auf die Vermittlung von Programmierkenntnissen spezialisiert hat. Sie richtet sich besonders an Kinder und Jugendliche, bietet aber auch Ressourcen für Lehrkräfte und Entwickler. Mit interaktiven Kursen, spielerischen Übungen und leicht verständlichen Tutorials macht Code.org das Erlernen von Programmierung zugänglich und unterhaltsam.

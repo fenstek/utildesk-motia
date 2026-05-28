@@ -6,8 +6,9 @@ price_model: Free
 tags: [design, ui, prototyping, collaboration]
 official_url: "https://icons8.com/lunacy"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Lunacy
 
 Lunacy ist ein kostenloses Design-Tool, das sich ideal für UI-Designer, Entwickler und Teams eignet, die kollaborativ an Benutzeroberflächen und Prototypen arbeiten möchten. Es bietet eine native Windows-Anwendung mit einer Vielzahl an Funktionen, die gängige Design-Workflows unterstützen und gleichzeitig Kompatibilität mit Sketch-Dateien ermöglichen.

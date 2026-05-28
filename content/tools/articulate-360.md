@@ -1,13 +1,14 @@
 ---
 slug: articulate-360
 title: Articulate 360
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [education, authoring, content, design]
 official_url: "https://www.articulate.com/360/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Articulate 360
 
 Articulate 360 ist eine umfassende Software-Suite zur Erstellung von E-Learning-Inhalten und interaktiven Schulungsmaterialien. Die Plattform richtet sich an Unternehmen, Bildungseinrichtungen und Trainer, die hochwertige, ansprechende Lerninhalte schnell und effizient gestalten möchten. Mit modernen Design-Tools, Vorlagen und KI-gestützten Funktionen unterstützt Articulate 360 die Produktion von Kursen, die auf verschiedenen Geräten optimal dargestellt werden.

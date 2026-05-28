@@ -1,13 +1,14 @@
 ---
 slug: bubble
 title: Bubble
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://bubble.io/"
 popularity: 61
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Bubble
 
 Bubble ist eine innovative Plattform, die es Nutzern ermöglicht, ohne Programmierkenntnisse komplexe Webanwendungen zu erstellen. Mit Hilfe von visuellen Drag-and-Drop-Tools und integrierten AI-Funktionen richtet sich Bubble vor allem an Startups, Unternehmer und Entwickler, die schnell und effizient digitale Produkte realisieren möchten.

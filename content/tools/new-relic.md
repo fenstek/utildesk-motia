@@ -1,13 +1,14 @@
 ---
 slug: new-relic
 title: New Relic
-category: AI
+category: "AI Coding"
 price_model: Abonnement, Je nach Plan
 tags: [monitoring, analytics, observability, developer-tools]
 official_url: "https://newrelic.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # New Relic
 
 New Relic ist eine umfassende Observability-Plattform, die Unternehmen dabei unterstützt, ihre Softwareanwendungen, Infrastruktur und digitale Erlebnisse in Echtzeit zu überwachen und zu optimieren. Mit einem breiten Spektrum an Tools für Monitoring, Analyse und Fehlerdiagnose ermöglicht New Relic Entwicklern und IT-Teams, Probleme schnell zu erkennen und die Leistung ihrer Systeme kontinuierlich zu verbessern.

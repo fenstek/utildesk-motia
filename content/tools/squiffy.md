@@ -1,11 +1,13 @@
 ---
 slug: squiffy
 title: Squiffy
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [design,workflow]
 official_url: "https://squiffy.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Squiffy
 

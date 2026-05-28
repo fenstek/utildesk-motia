@@ -1,14 +1,15 @@
 ---
 slug: microsoft-teams
 title: Microsoft Teams
-category: AI
+category: "AI Agents"
 price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-teams"
 popularity: 31
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Microsoft Teams
 
 Microsoft Teams ist eine umfassende Kollaborationsplattform, die Kommunikation, Zusammenarbeit und Automatisierung in einem Tool vereint. Besonders im Bereich der KI-gestützten Assistenz und Workflow-Optimierung bietet Teams vielfältige Möglichkeiten, um Arbeitsprozesse effizienter zu gestalten. Die Integration von Chat, Videokonferenzen, Dateiablage und automatisierten Workflows macht es zu einem zentralen Werkzeug für Unternehmen aller Größen.

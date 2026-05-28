@@ -1,13 +1,14 @@
 ---
 slug: dell-boomi
 title: Dell Boomi
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [integration, automation, data, api]
 official_url: "https://boomi.com/"
 popularity: 53
+tier: "D"
+generated_at: "2026-05-27"
 ---
-
 # Dell Boomi
 
 Dell Boomi ist eine cloudbasierte Integrationsplattform, die Unternehmen dabei unterstützt, verschiedene Anwendungen, Datenquellen und Systeme nahtlos zu verbinden. Mit Fokus auf Automatisierung und API-Management erleichtert Boomi die Erstellung, Verwaltung und Überwachung von Integrationsprozessen – ohne tiefgehende Programmierkenntnisse. Die Plattform ist besonders geeignet für Unternehmen, die schnelle, skalierbare und flexible Integrationslösungen benötigen.

@@ -1,12 +1,14 @@
 ---
 slug: avigilon
 title: Avigilon
-category: Video
+category: "Audio & Video"
 price_model: Abonnement, Individuelles Angebot
 tags: [video, security, analytics, ai]
 official_url: "https://www.avigilon.com/"
 popularity: 0
 description: "Avigilon bietet Videoüberwachung, Sicherheitskameras und Analysefunktionen für physische Sicherheitsumgebungen."
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Avigilon
 

@@ -6,8 +6,10 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.remove.bg/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-13"
+mentionedIn: ["ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat"]
 ---
-
 # Remove.bg
 
 remove.bg ist ein spezialisiertes Tool zum automatischen Entfernen von Bildhintergründen. Es ist besonders praktisch, wenn Produktbilder, Portraits oder Social-Media-Visuals schnell freigestellt werden müssen, ohne manuell Masken zu zeichnen.

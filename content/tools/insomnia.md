@@ -7,6 +7,8 @@ tags: [api, developer, testing]
 official_url: "https://insomnia.rest/"
 popularity: 0
 description: "Insomnia ist ein API-Client für REST, GraphQL und gRPC, mit dem Entwickler Requests testen, dokumentieren und debuggen."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # Insomnia
 

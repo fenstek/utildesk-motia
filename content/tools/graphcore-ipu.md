@@ -1,13 +1,14 @@
 ---
 slug: graphcore-ipu
 title: Graphcore IPU
-category: AI
+category: "AI Infrastructure"
 price_model: "Je nach Plan"
 tags: ["data", "analytics", "developer-tools", "chatbot"]
 official_url: "https://www.graphcore.ai/products/ipu"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Graphcore IPU
 
 Der Graphcore IPU (Intelligence Processing Unit) ist eine spezialisierte Hardwareplattform, die für die Beschleunigung von KI- und Machine-Learning-Anwendungen entwickelt wurde. Im Gegensatz zu herkömmlichen Prozessoren ist die IPU darauf ausgelegt, komplexe neuronale Netzwerke effizienter und schneller zu verarbeiten, was insbesondere bei datenintensiven und rechenaufwändigen KI-Modellen Vorteile bietet.

@@ -1,11 +1,13 @@
 ---
 slug: mit-scratch
 title: MIT Scratch
-category: AI
+category: "AI Coding"
 price_model: Kostenlos
 tags: [coding, education, creative-learning]
 official_url: "https://scratch.mit.edu/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # MIT Scratch
 

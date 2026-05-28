@@ -1,13 +1,15 @@
 ---
 slug: speechmatics
 title: Speechmatics
-category: AI
+category: "AI Audio"
 price_model: Freemium
 tags: [ai,audio]
 official_url: "https://www.speechmatics.com/"
 created_at: 2026-02-14
 popularity: 0
 description: Speechmatics bietet automatische Spracherkennung und Transkription für Audio, Video, Meetings und mehrsprachige Workflows.
+tier: "C"
+generated_at: "2026-05-17"
 ---
 # Speechmatics
 
@@ -20,8 +22,6 @@ Gut geeignet für Medien, Forschung, Support, Compliance, Call-Analyse und Produ
 Speechmatics eignet sich für Teams, die Audio und Video nicht nur transkribieren, sondern systematisch weiterverarbeiten wollen: Medienhäuser, Podcast-Teams, Forschung, Customer Support, Compliance, Call-Analyse und Produktteams mit Sprachdaten. Besonders relevant ist es, wenn viele Dateien, mehrere Sprachen oder technische Integrationen beteiligt sind.
 
 Für einzelne kurze Aufnahmen reicht oft ein einfaches Transkriptionswerkzeug. Speechmatics wird stärker, wenn Transkripte in Archive, Untertitel, Analysepipelines oder eigene Produkte fließen. Bei juristisch, medizinisch oder öffentlich relevanten Inhalten bleibt Nachkorrektur unverzichtbar.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/speechmatics-editorial.webp" alt="Illustration zu Speechmatics: mehrsprachige Sprachwellen werden zu geordneten Transkriptseiten" loading="lazy" decoding="async" />

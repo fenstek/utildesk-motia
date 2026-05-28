@@ -6,10 +6,11 @@ price_model: Freemium
 tags: ["ai", "design"]
 official_url: "https://firefly.adobe.com/?media=featured"
 affiliate_url: "https://firefly.adobe.com/?media=featured"
+tier: "C"
+generated_at: "2026-05-28"
 created_at: 2026-02-02
 popularity: 98
 ---
-
 # Adobe Firefly
 
 Adobe Firefly ist ein innovatives Design-Tool von Adobe, das auf künstlicher Intelligenz basiert und kreative Prozesse unterstützt. Es ermöglicht die schnelle Erstellung von beeindruckenden Grafiken, Illustrationen und visuellen Effekten durch einfache Texteingaben oder Anpassungen. Firefly richtet sich an Designer, Kreative und Marketingprofis, die ihre Projekte effizienter und kreativer gestalten möchten.

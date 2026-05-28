@@ -1,13 +1,14 @@
 ---
 slug: open-webui
 title: Open WebUI
-category: AI
+category: "AI Chatbots"
 price_model: 
 tags: ["assistant", "chatbot"]
 official_url: "https://openwebui.com"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Open WebUI
 
 Open WebUI ist eine webbasierte Benutzeroberfläche, die speziell für die Interaktion mit KI-Modellen entwickelt wurde. Sie ermöglicht es Anwendern, KI-Anwendungen einfach und intuitiv über den Browser zu steuern, ohne tiefgehende technische Kenntnisse zu benötigen. Dabei unterstützt Open WebUI verschiedene KI-Modelle und bietet eine flexible Plattform zur Integration und Nutzung von künstlicher Intelligenz.

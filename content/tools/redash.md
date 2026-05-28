@@ -1,13 +1,14 @@
 ---
 slug: redash
 title: Redash
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [analytics, dashboards, data, open-source]
 official_url: "https://redash.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Redash
 
 Redash ist eine Open-Source-Plattform zur Datenvisualisierung und Analyse, die Entwicklern und Datenexperten hilft, aus verschiedenen Datenquellen schnell aussagekräftige Dashboards und Berichte zu erstellen. Mit seiner benutzerfreundlichen Oberfläche unterstützt Redash die Zusammenarbeit im Team und erleichtert die Datenabfrage durch SQL-Editoren und zahlreiche Integrationen. Besonders beliebt ist Redash bei Unternehmen und Teams, die flexible, anpassbare Lösungen für Datenanalysen suchen, ohne dabei auf proprietäre Software angewiesen zu sein.

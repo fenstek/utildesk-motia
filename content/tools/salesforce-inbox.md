@@ -1,13 +1,14 @@
 ---
 slug: salesforce-inbox
 title: Salesforce Inbox
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [crm,email-productivity,sales]
 official_url: "https://www.salesforce.com/ap/solutions/mobile/app-suite/inbox/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Salesforce Inbox
 
 Salesforce Inbox ist ein intelligentes Tool, das E-Mail-Kommunikation und Customer-Relationship-Management (CRM) nahtlos miteinander verbindet. Es unterstützt Vertriebs- und Serviceteams dabei, ihre Produktivität zu steigern, indem es E-Mails direkt mit Salesforce-Daten anreichert und automatisierte Workflows ermöglicht. So können Nutzer schneller auf Kundenanfragen reagieren, Termine planen und relevante Informationen ohne Medienbruch verwalten.
@@ -15,7 +16,6 @@ Salesforce Inbox ist ein intelligentes Tool, das E-Mail-Kommunikation und Custom
 ## Für wen ist Salesforce Inbox geeignet?
 
 Salesforce Inbox richtet sich vor allem an Vertriebsmitarbeiter, Kundenbetreuer und Teams, die Salesforce als CRM-Plattform nutzen und ihre E-Mail-Kommunikation effizienter gestalten möchten. Besonders geeignet ist das Tool für Unternehmen, die viel Kundenkontakt per E-Mail haben und dabei den Überblick über Verkaufschancen, Termine und Follow-ups behalten wollen. Auch für Teams, die ihre Arbeitsabläufe durch Automatisierung und KI-gestützte Empfehlungen optimieren möchten, ist Salesforce Inbox eine gute Wahl.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/salesforce-inbox-editorial.webp" alt="Illustration zu Salesforce Inbox: Umschlaege, Kontaktkarten und Terminsignale liegen fuer den naechsten Vertriebsnachgang bereit" loading="lazy" decoding="async" />

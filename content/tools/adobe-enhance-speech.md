@@ -1,13 +1,14 @@
 ---
 slug: adobe-enhance-speech
 title: Adobe Enhance Speech
-category: Audio
+category: "Audio & Video"
 price_model: Freemium
 tags: [ai, audio]
 official_url: "https://podcast.adobe.com/enhance"
 popularity: 100
+tier: "D"
+generated_at: "2026-05-10"
 ---
-
 # Adobe Enhance Speech
 
 Adobe Enhance Speech ist ein KI-Werkzeug zur automatischen Verbesserung von Sprachaufnahmen. Es reduziert typische Aufnahmeprobleme wie Raumhall, Hintergrundgeräusche, dumpfe Stimme oder unruhige Sprachpräsenz und soll aus einfachen Aufnahmen schneller klares, podcastnahes Sprachmaterial machen. Besonders interessant ist das Tool, wenn Audio nicht in einem Studio entsteht, sondern mit Laptop, Headset, Smartphone oder USB-Mikrofon unter wechselnden Bedingungen.

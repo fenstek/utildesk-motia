@@ -1,14 +1,15 @@
 ---
 slug: azure-devops
 title: Azure DevOps
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [developer-tools, project-management, collaboration, devops]
 official_url: "https://azure.microsoft.com/en-us/products/devops"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Azure DevOps
 
 Azure DevOps bündelt Planung, Repositories, Pipelines, Testmanagement und Artefakte in einer Microsoft-nahen DevOps-Plattform. Der eigentliche Wert liegt nicht darin, dass alles “auch noch” vorhanden ist, sondern dass Backlog, Codeänderung, Build, Test und Release nachvollziehbar miteinander verbunden werden können. Für Teams mit vielen Übergaben zwischen Produkt, Entwicklung und Betrieb ist genau diese Nachvollziehbarkeit der Hebel.
@@ -54,7 +55,6 @@ Azure DevOps richtet sich an Entwicklungsteams, Plattformteams und Organisatione
 - Einige erweiterte Funktionen sind nur in kostenpflichtigen Plänen verfügbar.
 - Benutzeroberfläche kann für manche Nutzer unübersichtlich wirken.
 - Abhängigkeit von Microsoft-Umgebung kann für heterogene IT-Landschaften eine Herausforderung sein.
-
 
 ## Was im Alltag wirklich zählt
 

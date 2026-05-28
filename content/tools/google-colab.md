@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [developer,coding,data]
 official_url: "https://colab.research.google.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Google Colab
 
 Google Colab ist eine webbasierte Entwicklungsumgebung, die es Nutzern ermöglicht, Python-Code direkt im Browser zu schreiben und auszuführen. Besonders beliebt ist das Tool bei Data Scientists, Machine Learning Entwicklern und Programmierern, die schnell und unkompliziert Projekte umsetzen möchten, ohne lokale Setups installieren zu müssen. Mit der Integration von Google Drive und der Möglichkeit, GPUs und TPUs zu nutzen, bietet Colab eine flexible Plattform für vielfältige Anwendungsfälle im Bereich Datenanalyse und KI.

@@ -1,13 +1,14 @@
 ---
 slug: aira
 title: Aira
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [accessibility,remote-interpreting,video-communication]
 official_url: "https://aira.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Aira
 
 Aira ist eine innovative KI-gestützte Plattform, die Menschen mit Sehbehinderungen unterstützt, indem sie ihnen durch Remote-Interpreting und Video-Kommunikation in Echtzeit hilft. Mithilfe von geschulten Agenten und moderner Technologie bietet Aira eine barrierefreie Erfahrung, die den Alltag erleichtert und die Selbstständigkeit fördert.

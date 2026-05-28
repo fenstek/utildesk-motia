@@ -1,11 +1,13 @@
 ---
 slug: rightinbox
 title: RightInbox
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: [email-productivity, follow-ups, gmail]
 official_url: "https://www.rightinbox.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # RightInbox
 
@@ -26,7 +28,6 @@ RightInbox überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden si
 - **Starker Einsatz:** für kleine Teams, Sales, Recruiting und persönliche Nachfassroutinen.
 - **Vorher klären:** welche Follow-ups wirklich wertvoll sind und welche nur Lärm erzeugen.
 - **Nicht unterschätzen:** bei zu vielen Erinnerungen die Inbox nur anders voll macht.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/rightinbox-editorial.webp" alt="Illustration zu RightInbox: E-Mail-Umschlaege werden mit Erinnerung, Termin und Nachverfolgung in Ablagefaecher geleitet" loading="lazy" decoding="async" />

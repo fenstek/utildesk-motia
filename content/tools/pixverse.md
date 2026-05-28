@@ -1,12 +1,14 @@
 ---
 slug: pixverse
 title: PixVerse
-category: Video
+category: "Audio & Video"
 price_model: "Freemium"
 tags: [ai, video, creative]
 official_url: "https://pixverse.ai/de/"
 popularity: 0
 description: "PixVerse ist ein Video- und Produktionswerkzeug für KI-Video-Generierung aus Prompts, Bildern oder Ideen für kurze kreative Clips."
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # PixVerse
 

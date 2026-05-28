@@ -7,8 +7,9 @@ tags: [education, authoring, design, content]
 official_url: "https://www.adobe.com/products/captivate.html"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Adobe Captivate
 
 Adobe Captivate ist ein professionelles Autorentool für E-Learning-Teams, die Kurse, Software-Simulationen, Quizstrecken und responsive Trainingsmodule nicht nur aufnehmen, sondern systematisch veröffentlichen müssen. Der Reiz liegt weniger im einzelnen Effekt als im Produktionsrahmen: Lernziel, Interaktion, LMS-Export, Review und spätere Aktualisierung bleiben in einem Werkzeug gebündelt.
@@ -51,7 +52,6 @@ Adobe Captivate richtet sich an Instructional Designer, Learning-&-Development-T
 - Steile Lernkurve für Einsteiger ohne Vorkenntnisse  
 - Abonnementmodell erfordert laufende Zahlungen  
 - Teilweise komplexe Benutzeroberfläche mit vielen Funktionen  
-
 
 ## Was im Alltag wirklich zählt
 

@@ -1,13 +1,14 @@
 ---
 slug: verkada
 title: Verkada
-category: Video
+category: "Audio & Video"
 price_model: Abonnement
 tags: [video, security, hardware, analytics]
 official_url: "https://www.verkada.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-26"
 ---
-
 # Verkada
 
 Verkada ist eine moderne Videoüberwachungslösung, die Cloud-basierte Sicherheitstechnologie mit intelligenter Hardware verbindet. Das System bietet Unternehmen eine einfache Möglichkeit, Sicherheitskameras zu verwalten, Videodaten zu analysieren und den Überblick über mehrere Standorte in Echtzeit zu behalten. Verkada kombiniert Videoüberwachung mit erweiterten Analysefunktionen und ermöglicht so eine bessere Kontrolle und schnellere Reaktion bei Sicherheitsvorfällen.

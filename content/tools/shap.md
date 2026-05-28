@@ -1,13 +1,14 @@
 ---
 slug: shap
 title: SHAP (SHapley Additive exPlanations)
-category: AI
+category: "AI Infrastructure"
 price_model: "Open Source"
 tags: ["data", "analytics", "education", "developer-tools", "chatbot"]
 official_url: "https://github.com/shap/shap"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # SHAP (SHapley Additive exPlanations)
 
 SHAP ist ein leistungsstarkes Open-Source-Tool zur Erklärung von Vorhersagen komplexer Machine-Learning-Modelle. Es basiert auf den Shapley-Werten aus der Spieltheorie und ermöglicht es, den Einfluss einzelner Merkmale auf die Modellvorhersagen transparent zu machen. SHAP wird häufig in den Bereichen Datenanalyse, KI-Entwicklung und Bildung eingesetzt, um Modelle verständlicher und nachvollziehbarer zu gestalten.

@@ -1,13 +1,14 @@
 ---
 slug: magix-video-pro-x
 title: Magix Video Pro X
-category: Video
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [video-editing, post-production, desktop]
 official_url: "https://www.magix.com/us/video-editor/video-pro-x/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Magix Video Pro X
 
 MAGIX Video Pro X ist eine Videobearbeitungssoftware für ambitionierte Creator, Semi-Profis und kleinere Produktionen. Sie bietet Schnitt, Effekte, Farbkorrektur, Audiofunktionen und Exportwerkzeuge in einem klassischen Desktop-Workflow.

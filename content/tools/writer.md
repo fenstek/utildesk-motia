@@ -1,18 +1,18 @@
 ---
 slug: writer
 title: Writer
-category: AI
+category: "AI Writing"
 price_model: "Freemium"
 tags:
   - ai
   - writing
 official_url: 'https://writer.com'
 affiliate_url: 'https://writer.com'
+tier: "C"
+generated_at: "2026-05-13"
 created_at: "2026-02-11"
 popularity: 0
 ---
-
-
 # Writer
 
 Writer ist ein KI-gestütztes Schreibwerkzeug, das darauf ausgelegt ist, Texte effizienter, konsistenter und qualitativ hochwertiger zu erstellen. Es unterstützt Nutzer dabei, Inhalte schneller zu verfassen, Fehler zu minimieren und den Schreibstil zu verbessern. Mit einer Kombination aus automatischer Texterstellung, Korrekturhilfen und Anpassungsoptionen eignet sich Writer für verschiedene Anwendungsbereiche im professionellen und privaten Umfeld.

@@ -1,13 +1,14 @@
 ---
 slug: appium
 title: Appium
-category: AI
+category: "AI Coding"
 price_model: Open Source
 tags: [mobile-testing,test-automation,developer-tools]
 official_url: "https://appium.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Appium
 
 Appium ist ein Open-Source-Framework für automatisierte Tests mobiler Apps. Es erlaubt, native, hybride und mobile Web-Apps über plattformübergreifende Tests anzusteuern, ohne für iOS und Android komplett getrennte Testwelten zu bauen.

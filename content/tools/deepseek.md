@@ -1,13 +1,15 @@
 ---
 slug: deepseek
 title: DeepSeek
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, chatbot]
 official_url: "https://www.deepseek.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-15"
+mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
 ---
-
 # DeepSeek
 
 DeepSeek ist ein fortschrittliches KI-Tool, das speziell entwickelt wurde, um als intelligenter Assistent und Chatbot zu fungieren. Es unterstützt Nutzer dabei, Informationen schnell zu finden, komplexe Anfragen zu beantworten und interaktive Dialoge zu führen. DeepSeek nutzt moderne Algorithmen der künstlichen Intelligenz, um natürliche Sprache zu verstehen und kontextbezogene Antworten zu liefern.

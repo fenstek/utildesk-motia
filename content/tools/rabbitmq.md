@@ -1,13 +1,14 @@
 ---
 slug: rabbitmq
 title: RabbitMQ
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [messaging, developer-tools, automation, open-source]
 official_url: "https://www.rabbitmq.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # RabbitMQ
 
 RabbitMQ ist ein leistungsfähiger Open-Source-Nachrichtenbroker, der für die zuverlässige Übertragung von Nachrichten zwischen Anwendungen und Systemen verwendet wird. Es unterstützt verschiedene Messaging-Protokolle und ist besonders in verteilten Systemen und Microservice-Architekturen beliebt. RabbitMQ ermöglicht die Entkopplung von Komponenten, verbessert die Skalierbarkeit und sorgt für eine stabile Kommunikation in komplexen IT-Umgebungen.

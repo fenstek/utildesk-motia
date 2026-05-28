@@ -1,13 +1,14 @@
 ---
 slug: zmoji
 title: Zmoji
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.zmoji.me/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # Zmoji
 
 Zmoji ist ein innovatives KI-Tool, das speziell entwickelt wurde, um Arbeitsabläufe zu automatisieren und als digitaler Assistent in verschiedenen Bereichen zu unterstützen. Es kombiniert intelligente Automatisierung mit benutzerfreundlichen Funktionen, um die Produktivität zu steigern und repetitive Aufgaben effizienter zu gestalten.

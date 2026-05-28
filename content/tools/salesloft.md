@@ -1,11 +1,13 @@
 ---
 slug: salesloft
 title: SalesLoft
-category: AI
+category: "AI Coding"
 price_model: Abonnement
 tags: [sales, automation, crm, communication]
 official_url: "https://www.salesloft.com/platform-overview"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
 # SalesLoft
 
@@ -26,7 +28,6 @@ SalesLoft gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Proze
 - **Sinnvoller Fokus:** Sales-Engagement, Cadences und Gesprächsvorbereitung.
 - **Gute Voraussetzung:** wenn Vertriebsteams wiederkehrende Outreach-Abläufe sauber messen wollen.
 - **Aufpassen bei:** bei zu aggressiven Sequenzen schnell wie Massenvertrieb wirkt.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/salesloft-editorial.webp" alt="Illustration zu SalesLoft: Outreach-Tokens folgen einer Route von Erstkontakt zu Gespraech, Termin und Antwortsignal" loading="lazy" decoding="async" />

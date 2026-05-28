@@ -7,6 +7,8 @@ tags: [writing, productivity]
 official_url: "https://www.slickwrite.com/"
 popularity: 0
 description: Slick Write prüft englische Texte auf Stil, Lesbarkeit, Grammatikmuster und unnötige Komplexität.
+tier: "C"
+generated_at: "2026-05-17"
 ---
 # Slick Write
 
@@ -19,7 +21,6 @@ Gut für Autorinnen, Studierende, Blogger und Teams, die englische Texte vor Ver
 Slick Write eignet sich für Autorinnen, Studierende, Blogger, Lehrende und Teams, die englische Texte bewusster überarbeiten möchten. Es ist kein Tool, das den Text für einen schreibt, sondern eine Prüfschicht für Stil, Lesbarkeit, Satzmuster und sprachliche Überladung.
 
 Besonders passend ist Slick Write, wenn bereits ein Entwurf existiert und man typische Schwächen sichtbar machen will: zu lange Sätze, Wiederholungen, Füllwörter, passive Konstruktionen oder unruhigen Stil. Für deutsche Texte, Fachlektorat oder inhaltliche Prüfung ist es nur begrenzt geeignet.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/slick-write-editorial.webp" alt="Illustration zu Slick Write: ein Stilscanner pr?ft ein Manuskript mit farbigen Diagnosebahnen" loading="lazy" decoding="async" />

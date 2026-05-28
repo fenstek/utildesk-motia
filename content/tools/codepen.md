@@ -1,13 +1,14 @@
 ---
 slug: codepen
 title: CodePen
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [developer-tools, web, design]
 official_url: "https://codepen.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # CodePen
 
 CodePen ist eine webbasierte Entwicklungsumgebung, die sich speziell an Webentwickler und Designer richtet. Sie ermöglicht das Erstellen, Testen und Teilen von HTML-, CSS- und JavaScript-Code-Snippets direkt im Browser. Mit einer benutzerfreundlichen Oberfläche und einer großen Community ist CodePen ideal, um Prototypen zu erstellen, neue Techniken auszuprobieren oder Inspiration zu finden.

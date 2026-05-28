@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.faceapp.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # FaceApp
 
 FaceApp ist eine innovative Design-Anwendung, die mithilfe von künstlicher Intelligenz (KI) Fotobearbeitung neu definiert. Mit einer Vielzahl von Filtern und Bearbeitungswerkzeugen ermöglicht FaceApp es Nutzern, Porträtfotos realistisch zu verändern und kreative Effekte zu erzielen. Die App erfreut sich großer Beliebtheit für die einfache Anwendung und die beeindruckenden Ergebnisse bei der Bearbeitung von Gesichtern.

@@ -1,13 +1,14 @@
 ---
 slug: nvivo
 title: NVivo
-category: AI
+category: "AI Infrastructure"
 price_model: "Abonnement"
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://lumivero.com/products/nvivo/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # NVivo
 
 NVivo ist eine leistungsstarke Software zur qualitativen Datenanalyse, die Forschern, Analysten und Bildungseinrichtungen hilft, große Mengen unstrukturierter Daten effizient zu organisieren, zu analysieren und zu visualisieren. Mit fortschrittlichen Automatisierungs- und KI-basierten Funktionen unterstützt NVivo bei der Auswertung von Texten, Interviews, Umfragen, Audio- und Videodateien sowie sozialen Medien. Die Software erleichtert somit die Gewinnung tiefgehender Erkenntnisse aus komplexen Datenquellen.

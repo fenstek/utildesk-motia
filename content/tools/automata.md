@@ -1,11 +1,13 @@
 ---
 slug: automata
 title: Automata
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [automation, developer-tools]
 official_url: "https://www.automata.tech/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Automata
 

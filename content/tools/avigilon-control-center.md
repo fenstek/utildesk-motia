@@ -1,13 +1,14 @@
 ---
 slug: avigilon-control-center
 title: Avigilon Control Center
-category: Video
+category: "Audio & Video"
 price_model: Abonnement
 tags: [video,security,vms,analytics]
 official_url: "https://www.avigilon.com/fs/documents/ba4afb9b-7de1-459f-878c-793a494855a9.pdf"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Avigilon Control Center
 
 Avigilon Control Center (ACC) ist eine leistungsstarke Videoverwaltungssoftware (VMS), die speziell für Sicherheitslösungen entwickelt wurde. Mit fortschrittlichen Analysefunktionen, intuitiver Bedienung und flexibler Skalierbarkeit bietet ACC eine umfassende Plattform zur Überwachung und Verwaltung von Videoüberwachungssystemen in verschiedensten Umgebungen.

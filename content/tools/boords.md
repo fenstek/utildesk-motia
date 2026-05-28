@@ -1,12 +1,14 @@
 ---
 slug: boords
 title: Boords
-category: AI
+category: "AI Image"
 price_model: "Freemium"
 tags: [video, design, automation]
 official_url: "https://boords.com/"
 popularity: 0
 description: "Boords ist ein Video- und Produktionswerkzeug für Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen."
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Boords
 

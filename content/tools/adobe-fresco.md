@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [design, illustration, painting, mobile]
 official_url: "https://www.adobe.com/products/fresco.html"
 popularity: 78
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Adobe Fresco
 
 Adobe Fresco ist eine innovative Zeichen- und Mal-App, die speziell für digitale Künstler, Designer und Illustratoren entwickelt wurde. Sie kombiniert Vektor- und Rasterpinsel in einer intuitiven Oberfläche und ermöglicht es, auf mobilen Geräten sowie auf Desktop-Computern kreativ zu arbeiten. Mit Adobe Fresco lassen sich sowohl realistische Maltechniken als auch moderne digitale Illustrationen umsetzen – ideal für alle, die flexibel und unterwegs gestalten möchten.

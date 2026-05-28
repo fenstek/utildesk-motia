@@ -1,13 +1,14 @@
 ---
 slug: speech-to-text
 title: Speech-to-Text
-category: AI
+category: "AI Audio"
 price_model: "Freemium"
 tags: [audio, transcription, productivity]
 official_url: "https://cloud.google.com/speech-to-text"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Speech-to-Text
 
 Speech-to-Text ist eine Technologie, die gesprochene Sprache automatisch in schriftlichen Text umwandelt. Diese KI-basierte Lösung erleichtert die Transkription von Audioinhalten und verbessert die Produktivität in verschiedenen Anwendungsbereichen. Ob für Notizen, Interviews, Meetings oder Untertitel – Speech-to-Text-Tools bieten eine schnelle und effiziente Methode, um gesprochene Informationen digital zu erfassen.

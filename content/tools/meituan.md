@@ -1,13 +1,14 @@
 ---
 slug: meituan
 title: Meituan
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [mobile, productivity]
 official_url: "https://www.meituan.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Meituan
 
 Meituan ist eine vielseitige AI-gestützte Plattform, die insbesondere im Bereich mobiler Anwendungen und Produktivitätssteigerung ansetzt. Die Lösung kombiniert intelligente Funktionen, um Nutzern das Management von Aufgaben, Bestellungen und Dienstleistungen zu vereinfachen. Meituan bietet durch seinen Freemium-Ansatz eine breite Zugänglichkeit, wobei erweiterte Features je nach gewähltem Plan verfügbar sind.

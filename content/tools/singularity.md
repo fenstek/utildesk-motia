@@ -1,13 +1,14 @@
 ---
 slug: singularity
 title: Singularity
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, assistant, automation, productivity, data]
 official_url: "https://www.singularity.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Singularity
 
 Singularity ist ein vielseitiges KI-Tool, das darauf ausgelegt ist, Arbeitsprozesse zu automatisieren, die Produktivität zu steigern und datenbasierte Entscheidungen zu unterstützen. Mit einer Kombination aus intelligenten Assistenzfunktionen und Automatisierungsmöglichkeiten richtet sich Singularity an Nutzer, die Effizienz in ihrem beruflichen oder privaten Alltag suchen. Das Tool bietet eine freemium-Preisstruktur, wodurch grundlegende Funktionen kostenlos genutzt werden können, während erweiterte Features gegen Bezahlung freigeschaltet werden.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://wink.cn/not-supported"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-06"
 ---
-
 # Wink
 
 Wink ist ein Design-Tool, das auf künstlicher Intelligenz basiert und die Erstellung von Bildern und Grafiken vereinfacht. Es richtet sich an Designer, Kreative und alle, die visuelle Inhalte schnell und effizient erstellen möchten. Mit einer Mischung aus intuitiver Bedienung und leistungsfähigen KI-Funktionen ermöglicht Wink eine flexible Gestaltung von Designs, ohne dass umfangreiche Vorkenntnisse erforderlich sind.

@@ -1,13 +1,14 @@
 ---
 slug: google-cloud-dataproc
 title: Google Cloud Dataproc
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://cloud.google.com/products/managed-service-for-apache-spark"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Cloud Dataproc
 
 Google Cloud Dataproc ist ein verwalteter Cloud-Service zur schnellen und einfachen Verarbeitung großer Datenmengen. Er ermöglicht die Ausführung von Open-Source-Tools wie Apache Hadoop, Apache Spark und Apache Hive in der Google Cloud Platform (GCP). Mit Dataproc können Unternehmen Datenanalyse- und Machine-Learning-Workloads skalieren, ohne sich um die Verwaltung der zugrundeliegenden Infrastruktur kümmern zu müssen.

@@ -1,14 +1,15 @@
 ---
 slug: stability-ai
 title: Stability AI
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: ["image", "design"]
 official_url: "https://www.stability.ai"
 created_at: 2026-02-15
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Stability AI
 
 Stability AI ist ein führendes Unternehmen im Bereich künstlicher Intelligenz, das sich auf die Entwicklung innovativer KI-Modelle und -Tools spezialisiert hat. Bekannt geworden durch seine leistungsstarken Open-Source-Modelle, bietet Stability AI vielseitige Lösungen für Anwendungen in Bildgenerierung, Textverarbeitung und mehr. Die Plattform unterstützt sowohl Entwickler als auch Unternehmen dabei, KI-Technologien effektiv einzusetzen und kreative Projekte zu realisieren.

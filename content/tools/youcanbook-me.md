@@ -1,11 +1,13 @@
 ---
 slug: youcanbook-me
 title: YouCanBook.me
-category: AI
+category: "AI Image"
 price_model: Je nach Plan
 tags: [scheduling,appointments,booking]
 official_url: "https://youcanbook.me/"
 popularity: 3
+tier: "C"
+generated_at: "2026-05-27"
 ---
 # YouCanBook.me
 

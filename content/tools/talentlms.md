@@ -1,13 +1,14 @@
 ---
 slug: talentlms
 title: TalentLMS
-category: AI
+category: "AI Agents"
 price_model: Abonnement, Je nach Plan
 tags: [assistant,automation,workflow]
 official_url: "https://www.talentlms.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # TalentLMS
 
 TalentLMS ist eine cloudbasierte Lernmanagement-Plattform (LMS), die Unternehmen und Bildungseinrichtungen dabei unterstützt, Schulungen und Lerninhalte effizient zu verwalten und zu verteilen. Mit Fokus auf Automatisierung und Workflow-Optimierung bietet TalentLMS eine benutzerfreundliche Oberfläche für die Erstellung, Durchführung und Auswertung von Online-Kursen. Die Plattform eignet sich besonders für die digitale Weiterbildung, Onboarding-Prozesse und die Förderung von Mitarbeiterschulungen.

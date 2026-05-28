@@ -1,14 +1,15 @@
 ---
 slug: microsoft-translator
 title: Microsoft Translator
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [translation, productivity, automation]
 official_url: "https://translator.microsoft.com/"
 popularity: 31
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Microsoft Translator
 
 Microsoft Translator ist ein KI-gestütztes Übersetzungstool, das schnelle und präzise Übersetzungen in zahlreiche Sprachen bietet. Es unterstützt sowohl Text- als auch Sprachübersetzungen und eignet sich für den Einsatz in Unternehmen, Bildungseinrichtungen und im privaten Bereich. Durch die Integration in verschiedene Microsoft-Produkte und APIs ermöglicht es eine nahtlose Übersetzungserfahrung zur Steigerung von Produktivität und Automatisierung.
@@ -28,7 +29,6 @@ Microsoft Translator richtet sich an ein breites Spektrum von Nutzern:
 - **Entwickler**: Zur Einbindung von Übersetzungsfunktionen in eigene Anwendungen via API.
 - **Privatnutzer**: Für Reisen, persönliche Kommunikation und das Verstehen fremdsprachiger Inhalte.
 - **Teams und Remote-Arbeiter**: Für Echtzeit-Übersetzungen in Meetings und Chats zur besseren Zusammenarbeit.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/microsoft-translator-editorial.webp" alt="Illustration zu Microsoft Translator: farbige Sprachwellen verbinden ein mehrsprachiges Meeting" loading="lazy" decoding="async" />
@@ -65,7 +65,6 @@ Microsoft Translator richtet sich an ein breites Spektrum von Nutzern:
 - Offline-Funktionalität ist eingeschränkt und nicht für alle Plattformen verfügbar.
 - Datenschutz- und Sicherheitsbedenken bei sensiblen Daten müssen beachtet werden.
 - Benutzeroberfläche kann für Einsteiger komplex wirken.
-
 
 ## Was im Alltag wirklich zählt
 

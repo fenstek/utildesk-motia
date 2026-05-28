@@ -1,13 +1,14 @@
 ---
 slug: grain
 title: Grain
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://grain.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Grain
 
 Grain ist ein KI-gestütztes Tool, das sich auf die Automatisierung von Arbeitsabläufen und die Unterstützung bei der Organisation von Meetings und Gesprächen spezialisiert hat. Es ermöglicht die einfache Erfassung, Analyse und Weiterverarbeitung von Gesprächsinhalten, um die Zusammenarbeit im Team zu verbessern und Prozesse effizienter zu gestalten.

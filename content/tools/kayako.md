@@ -1,13 +1,14 @@
 ---
 slug: kayako
 title: Kayako
-category: AI
+category: "AI Infrastructure"
 price_model: Abonnement
 tags: [helpdesk, customer-support, saas]
 official_url: "https://kayako.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Kayako
 
 Kayako ist eine cloudbasierte Helpdesk- und Kundenservice-Plattform, die Unternehmen dabei unterstützt, ihre Kundenkommunikation zentral zu verwalten. Mit einem Fokus auf einfache Bedienbarkeit und nahtlose Integration bietet Kayako Tools für Support-Teams, um Anfragen effizient zu bearbeiten und Kundenzufriedenheit zu steigern. Durch Automatisierungen und KI-gestützte Funktionen optimiert Kayako den Workflow im Kundenservice.

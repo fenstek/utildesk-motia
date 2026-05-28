@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.photoroom.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # PhotoRoom
 
 PhotoRoom ist eine innovative Design-Anwendung, die sich auf die automatische Bildbearbeitung und das Freistellen von Objekten spezialisiert hat. Mithilfe von KI-Technologie ermöglicht PhotoRoom sowohl Anfängern als auch professionellen Designern, Bilder schnell und einfach zu optimieren, Hintergründe zu entfernen und ansprechende Produktfotos oder Social-Media-Grafiken zu erstellen. Das Tool bietet eine intuitive Benutzeroberfläche und vielfältige Vorlagen, die den Designprozess erheblich erleichtern.

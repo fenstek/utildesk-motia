@@ -1,13 +1,14 @@
 ---
 slug: hubspot-marketing-hub
 title: HubSpot Marketing Hub
-category: AI
+category: "AI Agents"
 price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
 official_url: "https://www.hubspot.com/products/marketing"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # HubSpot Marketing Hub
 
 HubSpot Marketing Hub ist eine umfassende Marketingplattform, die Unternehmen dabei unterstützt, ihre Marketingstrategien zu automatisieren, Leads zu generieren und Kundenbeziehungen effektiv zu pflegen. Die Lösung integriert Marketing-Automatisierung, CRM und Analysen in einem Tool und bietet damit eine zentrale Anlaufstelle für Marketingteams aller Größenordnungen.

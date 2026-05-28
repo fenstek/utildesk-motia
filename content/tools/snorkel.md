@@ -1,13 +1,14 @@
 ---
 slug: snorkel
 title: Snorkel
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [ai, automation, analytics, open-source]
 official_url: "https://snorkel.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Snorkel
 
 Snorkel ist eine Open-Source-Plattform zur automatisierten Datenkennzeichnung und Datenvorbereitung für maschinelles Lernen. Sie ermöglicht es Unternehmen und Forschern, große Mengen unstrukturierter Daten effizient mit weniger manuellem Aufwand zu annotieren. Durch die Kombination von programmatischen Labeling-Methoden und Machine-Learning-Techniken unterstützt Snorkel die schnelle Entwicklung von Trainingsdatensätzen für KI-Modelle.
@@ -66,7 +67,6 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - Die Qualität der Labels hängt stark von der korrekten Definition der Labeling-Funktionen ab.
 - Freemium-Modell kann bei größeren Projekten oder erweiterten Features an Grenzen stoßen.
 
-- Erhöht eher die Komplexität, wenn vor dem Start Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind und Entscheidungen nur nebenbei getroffen werden. Bei Snorkel ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Wenn Review und Pflege ausfallen, verliert Snorkel gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

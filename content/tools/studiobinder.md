@@ -1,13 +1,14 @@
 ---
 slug: studiobinder
 title: StudioBinder
-category: Audio
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [video, audio, productivity, workflow]
 official_url: "https://www.studiobinder.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # StudioBinder
 
 StudioBinder ist eine umfassende Produktionssoftware, die sich vor allem an Film- und Videoproduzenten richtet. Mit einem starken Fokus auf die Organisation und Planung von Projekten unterstützt StudioBinder Teams dabei, ihre Abläufe zu optimieren und die Zusammenarbeit zu erleichtern. Obwohl der Schwerpunkt auf Video liegt, bietet StudioBinder auch Funktionen, die für Audio-Produktionen relevant sind. Die Plattform kombiniert Tools zur Drehplanerstellung, Aufgabenverwaltung und Kommunikation in einer benutzerfreundlichen Oberfläche.

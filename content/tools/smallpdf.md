@@ -1,11 +1,14 @@
 ---
 slug: smallpdf
 title: Smallpdf
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [pdf, documents, productivity]
 official_url: "https://smallpdf.com/"
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-17"
+mentionedIn: ["pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # Smallpdf
 

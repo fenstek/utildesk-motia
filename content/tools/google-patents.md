@@ -1,13 +1,14 @@
 ---
 slug: google-patents
 title: Google Patents
-category: AI
+category: "AI Research"
 price_model: Kostenlos
 tags: [research,patents,search,innovation]
 official_url: "https://patents.google.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google Patents
 
 Google Patents ist eine leistungsstarke Suchmaschine, die es ermöglicht, Patente und Patentliteratur aus der ganzen Welt zu durchsuchen. Mit umfangreichen Datenbanken und fortschrittlichen Suchfunktionen unterstützt Google Patents Erfinder, Forscher und Unternehmen dabei, Innovationen zu verfolgen, Wettbewerbsanalysen durchzuführen und den Stand der Technik zu verstehen. Die Plattform bietet eine intuitive Benutzeroberfläche und ist kostenlos zugänglich.

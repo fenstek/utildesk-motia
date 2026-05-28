@@ -1,13 +1,14 @@
 ---
 slug: wave-video
 title: Wave.video
-category: Video
+category: "Audio & Video"
 price_model: Freemium
 tags: [video, marketing, editing, streaming]
 official_url: "https://wave.video/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-28"
 ---
-
 # Wave.video
 
 Wave.video ist eine vielseitige Online-Plattform zur Erstellung und Bearbeitung von Videos, die speziell für Marketing, Social Media und Streaming konzipiert wurde. Mit einer benutzerfreundlichen Oberfläche ermöglicht sie sowohl Anfängern als auch Profis, ansprechende Videoinhalte schnell zu produzieren und zu teilen. Das Tool kombiniert Videoerstellung, -bearbeitung und Hosting in einem und bietet zahlreiche Vorlagen, Effekte und Anpassungsmöglichkeiten.
@@ -23,16 +24,6 @@ Wave.video ist besonders nützlich für Design-, Content-, Produkt- und Kreativt
 
 Vor einer breiteren Einführung von Wave.video lohnt sich ein kleiner Realitätscheck: ein konkreter Ablauf, eine verantwortliche Person, klare Prüfpunkte und ein sichtbares Ergebnis nach zwei Wochen.
 
-## Redaktionelle Einschätzung
-
-Wave.video sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
-
-Wave.video sollte zuerst in einem konkreten Asset mit Briefing, Versionen, Feedbackrunde, Export und finaler Abnahme zeigen, ob es trägt. Erst wenn Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz dort stabiler wirken, lohnt sich ein größerer Rollout.
-
-- **Prüfpunkt für Wave.video:** Vor dem Rollout sollten Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Wave.video:** Das Team sollte vorab festlegen, was nach dem Pilot als Verbesserung zählt und welche offenen Punkte nicht akzeptabel sind.
-- **Risiko bei Wave.video:** Der Einsatz kippt in Zusatzarbeit, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben.
-
 ## Hauptfunktionen
 
 - **Videoerstellung mit Vorlagen:** Zugriff auf eine umfangreiche Bibliothek mit vorgefertigten Video-Templates für verschiedene Branchen und Zwecke.
@@ -45,10 +36,6 @@ Wave.video sollte zuerst in einem konkreten Asset mit Briefing, Versionen, Feedb
 - **Untertitelung und Textanimation:** Unterstützung von automatischen Untertiteln und animierten Texten für mehr Aufmerksamkeit.
 - **Team-Kollaboration:** Gemeinsames Arbeiten an Projekten mit mehreren Nutzern.
 - **Analyse-Tools:** Einblicke in die Performance der erstellten Videos auf verschiedenen Plattformen.
-
-- **Praxislauf mit Wave.video:** Das Tool sollte mit einem konkreten Asset mit Briefing, Versionen, Feedbackrunde, Export und finaler Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Wave.video:** Das Team braucht eine einfache Methode, um Bearbeitungszeit, visuelle Qualität, Freigabeschleifen, Wiederverwendbarkeit und Konsistenz nach dem Einsatz zu prüfen.
-- **Übergabe mit Wave.video:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 
@@ -73,7 +60,6 @@ Wave.video sollte zuerst in einem konkreten Asset mit Briefing, Versionen, Feedb
 - Exportoptionen und Videoqualität variieren je nach Abonnement.
 
 - Wave.video braucht vor dem Rollout Klärung, wenn Briefing, Rechte, Markenregeln, Dateiformate und Review-Schritte unscharf bleiben; sonst entstehen Nebenprozesse.
-- Wave.video spart wenig, wenn Einrichtung, Kontrolle und Nacharbeit dauerhaft nebenbei laufen sollen.
 
 ## Preise & Kosten
 

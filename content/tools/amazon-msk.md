@@ -1,13 +1,14 @@
 ---
 slug: amazon-msk
 title: Amazon MSK
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, streaming, kafka, cloud]
 official_url: "https://aws.amazon.com/msk/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Amazon MSK
 
 Amazon MSK (Managed Streaming for Apache Kafka) ist ein vollständig verwalteter Service von Amazon Web Services, der es Entwicklern ermöglicht, Apache Kafka-Cluster in der Cloud bereitzustellen, zu betreiben und zu skalieren. Mit Amazon MSK können Unternehmen Streaming-Datenpipelines und Echtzeitanwendungen einfach umsetzen, ohne sich um die komplexe Verwaltung der Kafka-Infrastruktur kümmern zu müssen.

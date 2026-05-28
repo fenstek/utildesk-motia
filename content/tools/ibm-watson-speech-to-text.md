@@ -6,8 +6,9 @@ price_model: "Nutzungsbasiert"
 tags: [audio, transcription, productivity, automation]
 official_url: "https://www.ibm.com/products/speech-to-text"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # IBM Watson Speech to Text
 
 IBM Watson Speech to Text ist ein leistungsfähiger Cloud-basierter Dienst zur automatischen Spracherkennung (ASR), der Audioinhalte in geschriebenen Text umwandelt. Die Technologie unterstützt verschiedene Sprachen und Dialekte und wird häufig in Bereichen wie Kundenservice, Medienproduktion und Automatisierung eingesetzt. Mit flexiblen Einsatzmöglichkeiten und Anpassungsoptionen bietet IBM Watson Speech to Text eine effiziente Lösung zur Transkription und Analyse von Audioinhalten.

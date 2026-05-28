@@ -1,13 +1,14 @@
 ---
 slug: rev
 title: Rev
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://www.rev.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Rev
 
 Rev ist ein vielseitiges KI-gestütztes Tool, das sich auf die Transkription, Untertitelung und Übersetzung von Audio- und Videoinhalten spezialisiert hat. Es kombiniert automatisierte Technologien mit menschlicher Überprüfung, um eine hohe Genauigkeit und Zuverlässigkeit zu gewährleisten. Dank seines freemium Preismodells bietet Rev sowohl für Einsteiger als auch für professionelle Anwender flexible Nutzungsmöglichkeiten.

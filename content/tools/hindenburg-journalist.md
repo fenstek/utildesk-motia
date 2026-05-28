@@ -1,13 +1,14 @@
 ---
 slug: hindenburg-journalist
 title: Hindenburg Journalist
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [audio, productivity, automation, workflow]
 official_url: "https://hindenburg.com/"
 popularity: 42
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Hindenburg Journalist
 
 Hindenburg Journalist ist eine spezialisierte Audio-Editing-Software, die vor allem für Journalisten, Podcaster und Radioprofis entwickelt wurde. Die Software legt besonderen Wert auf einfache Bedienbarkeit, automatisierte Funktionen und eine optimierte Arbeitsumgebung, die den Produktionsprozess von Audioinhalten beschleunigt und vereinfacht. Durch intelligente Tools unterstützt Hindenburg Journalist den Workflow von der Aufnahme bis zur Veröffentlichung.

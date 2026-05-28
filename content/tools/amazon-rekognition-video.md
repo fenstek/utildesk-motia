@@ -1,13 +1,14 @@
 ---
 slug: amazon-rekognition-video
 title: Amazon Rekognition Video
-category: Video
+category: "Audio & Video"
 price_model: Nutzungsbasiert
 tags: [video,workflow]
 official_url: "https://aws.amazon.com/rekognition/video-features/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Amazon Rekognition Video
 
 Amazon Rekognition Video ist ein cloudbasierter Dienst von Amazon Web Services (AWS), der die automatische Analyse und Erkennung von Objekten, Aktivitäten, Gesichtern und Inhalten in Videodateien ermöglicht. Durch den Einsatz von Machine Learning unterstützt es Unternehmen dabei, Videoinhalte effizient zu durchsuchen, zu analysieren und zu verwalten, ohne dafür eigene KI-Modelle entwickeln zu müssen.

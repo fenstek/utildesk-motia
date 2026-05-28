@@ -1,15 +1,16 @@
 ---
 slug: genei
 title: Genei
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://www.genei.io"
 affiliate_url: "https://www.genei.io"
+tier: "D"
+generated_at: "2026-05-28"
 created_at: 2026-02-11
 popularity: 93
 ---
-
 # Genei
 
 Genei ist ein KI-gestütztes Recherche- und Zusammenfassungswerkzeug für Nutzer:innen, die lange Texte schneller erfassen, strukturieren und in Notizen überführen müssen. Statt eine Quelle nur oberflächlich zu kürzen, soll Genei dabei helfen, zentrale Aussagen, Begriffe und Abschnitte sichtbar zu machen. Der Nutzen entsteht vor allem dann, wenn viele Dokumente gelesen werden müssen und eine erste Ordnung nötig ist, bevor die eigentliche Bewertung beginnt.

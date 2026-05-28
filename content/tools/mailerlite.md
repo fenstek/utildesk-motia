@@ -1,11 +1,13 @@
 ---
 slug: mailerlite
 title: MailerLite
-category: AI
+category: "AI Agents"
 price_model: Freemium
 tags: [email-marketing, automation, newsletter, marketing]
 official_url: "https://www.mailerlite.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # MailerLite
 

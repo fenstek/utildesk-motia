@@ -8,6 +8,9 @@ official_url: "https://docparser.com/"
 description: Docparser extrahiert strukturierte Daten aus wiederkehrenden PDFs und Dokumenten, wenn Layouts stabil genug sind, um Regeln, Zonen oder Parser-Logik zuverlässig anzuwenden.
 created_at: 2026-05-10
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-14"
+mentionedIn: ["pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # Docparser
 

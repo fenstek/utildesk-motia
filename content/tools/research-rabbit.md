@@ -1,12 +1,14 @@
 ---
 slug: research-rabbit
 title: Research Rabbit
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [productivity, data, analytics, education]
 official_url: "https://www.researchrabbit.ai/"
 popularity: 99
 description: Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen zu erkunden.
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Research Rabbit
 

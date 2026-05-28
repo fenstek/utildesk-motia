@@ -1,13 +1,14 @@
 ---
 slug: systran-translate-api
 title: SYSTRAN Translate API
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [translation, api, developer-tools]
 official_url: "https://www.systransoft.com/translation-products/translate-api/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # SYSTRAN Translate API
 
 SYSTRAN Translate API ist eine leistungsstarke Übersetzungs-API, die es Entwicklern ermöglicht, mehrsprachige Anwendungen mit automatischer Textübersetzung auszustatten. Die API unterstützt zahlreiche Sprachen und bietet flexible Integrationsmöglichkeiten für verschiedene Plattformen und Anwendungsfälle. Mit Fokus auf Qualität und Geschwindigkeit eignet sich die SYSTRAN Translate API besonders für Unternehmen und Entwickler, die zuverlässige Übersetzungen in ihre Produkte oder Services einbinden möchten.

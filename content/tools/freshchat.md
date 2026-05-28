@@ -1,13 +1,14 @@
 ---
 slug: freshchat
 title: Freshchat
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, workflow]
 official_url: "https://www.freshworks.com/live-chat-software/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Freshchat
 
 Freshchat ist eine moderne Messaging-Software, die Unternehmen dabei unterstützt, mit Kunden über verschiedene Kanäle in Echtzeit zu kommunizieren. Durch den Einsatz von KI-gestützten Chatbots und automatisierten Workflows verbessert Freshchat die Kundenbetreuung, steigert die Effizienz und ermöglicht personalisierte Interaktionen. Die Plattform eignet sich besonders für den Einsatz im Kundenservice, Vertrieb und Marketing.

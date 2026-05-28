@@ -6,8 +6,9 @@ price_model: "Je nach Plan"
 tags: [spreadsheet,productivity,collaboration]
 official_url: "https://www.zoho.com/de/sheet/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Zoho Sheet
 
 Zoho Sheet ist ein webbasiertes Tabellenkalkulationsprogramm, das Teil der Zoho Office Suite ist. Es ermöglicht Nutzern, Tabellen online zu erstellen, zu bearbeiten und gemeinsam in Echtzeit daran zu arbeiten. Mit vielfältigen Funktionen zur Datenanalyse, Automatisierung und Zusammenarbeit unterstützt Zoho Sheet Teams und Einzelpersonen dabei, produktiver und effizienter zu arbeiten – egal ob im Büro, Homeoffice oder unterwegs.

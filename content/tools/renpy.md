@@ -1,13 +1,14 @@
 ---
 slug: renpy
 title: Renpy
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: [game-engine, writing, open-source, developer-tools]
 official_url: "https://www.renpy.org/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
 ---
-
 # Renpy
 
 Renpy ist eine Open-Source-Engine zur Entwicklung von Visual Novels und interaktiven Geschichten. Die Software richtet sich an Entwickler und Autoren, die ohne umfangreiche Programmierkenntnisse narrative Spiele erstellen möchten. Renpy kombiniert eine einfache Skriptsprache mit leistungsfähigen Funktionen, um komplexe Handlungsstränge und ansprechende Benutzeroberflächen umzusetzen.

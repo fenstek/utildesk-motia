@@ -1,12 +1,14 @@
 ---
 slug: vosviewer
 title: VOSviewer
-category: AI
+category: "AI Research"
 price_model: Kostenlos
 tags: [bibliometrics, research, visualization]
 official_url: "https://www.vosviewer.com/"
 popularity: 0
 description: "VOSviewer visualisiert bibliometrische Netzwerke, Zitationen, Co-Autorschaften und Forschungslandschaften."
+tier: "C"
+generated_at: "2026-05-26"
 ---
 # VOSviewer
 

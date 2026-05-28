@@ -1,7 +1,7 @@
 ---
 slug: figma
 title: Figma
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: [ai, design]
 official_url: "https://figma.com"
@@ -9,6 +9,8 @@ created_at: 2026-02-12
 updated_at: 2026-05-21
 popularity: 94
 description: Figma ist eine kollaborative Designplattform für UI-Design, Prototyping, Designsysteme und Produktteams.
+tier: "C"
+generated_at: "2026-05-28"
 ---
 # Figma
 

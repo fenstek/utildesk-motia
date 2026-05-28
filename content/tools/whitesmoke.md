@@ -1,13 +1,14 @@
 ---
 slug: whitesmoke
 title: WhiteSmoke
-category: AI
+category: "AI Writing"
 price_model: Je nach Plan
 tags: [grammar-checking, writing, translation]
 official_url: "https://www.whitesmoke.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-09"
 ---
-
 # WhiteSmoke
 
 WhiteSmoke ist ein Schreib- und Grammatikwerkzeug für Korrektur, Stilhinweise und Übersetzungsnahe Funktionen. Es zielt darauf, Texte sprachlich sauberer zu machen und typische Fehler in Grammatik, Rechtschreibung oder Ausdruck zu reduzieren.

@@ -1,13 +1,14 @@
 ---
 slug: ispeech
 title: iSpeech
-category: AI
+category: "AI Audio"
 price_model: Je nach Plan
 tags: [audio, workflow, automation]
 official_url: "https://www.ispeech.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # iSpeech
 
 iSpeech ist eine KI-basierte Sprachverarbeitungsplattform, die sich auf Text-zu-Sprache (TTS) und Sprach-zu-Text (STT) Technologien spezialisiert hat. Sie ermöglicht die Automatisierung von Audio-Workflows und die Integration natürlicher Sprachfunktionen in verschiedene Anwendungen. Mit iSpeech können Unternehmen und Entwickler hochwertige Sprachlösungen implementieren, um Kommunikation und Interaktion zu verbessern.

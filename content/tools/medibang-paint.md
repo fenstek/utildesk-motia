@@ -7,8 +7,9 @@ tags: [design,painting,illustration,manga]
 official_url: "https://medibangpaint.com/en/medibangpaint/"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # MediBang Paint
 
 MediBang Paint ist ein leicht zugängliches Zeichen- und Comic-Tool mit starkem Fokus auf Manga, Illustration und plattformübergreifendes Arbeiten. Es verbindet klassische digitale Malwerkzeuge, Panel-Layouts, Screentones und Cloud-Synchronisation in einer vergleichsweise niedrigschwelligen Umgebung. Spannend ist es vor allem für Kreative, die nicht sofort in teure Profi-Software einsteigen möchten.
@@ -47,7 +48,6 @@ MediBang Paint richtet sich an Hobbyzeichner, Manga-Künstlerinnen, Illustratore
 - Performance kann auf älteren Geräten eingeschränkt sein
 - Benutzeroberfläche wirkt teilweise überladen für absolute Anfänger
 - Begrenzte professionelle Funktionen im Vergleich zu spezialisierten Programmen
-
 
 ## Was im Alltag wirklich zählt
 

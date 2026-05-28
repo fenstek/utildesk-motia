@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [seo, content, analytics]
 official_url: "https://ahrefs.com/content-explorer"
 popularity: 74
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Ahrefs Content Explorer
 
 Ahrefs Content Explorer ist ein leistungsstarkes Tool zur Analyse von Webinhalten und SEO-Performance. Es ermöglicht Nutzern, relevante Inhalte zu entdecken, die in ihrer Branche gut performen, und unterstützt bei der Entwicklung von effektiven Content-Strategien. Mit umfangreichen Filteroptionen und Daten zu Backlinks, Social Shares und organischem Traffic liefert es wertvolle Einblicke für Content-Marketing und Suchmaschinenoptimierung.

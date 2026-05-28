@@ -1,12 +1,14 @@
 ---
 slug: wrike
 title: Wrike
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [project-management, work-management, collaboration]
 official_url: "https://www.wrike.com/vbd/"
 popularity: 0
 description: "Wrike ist eine Work-Management-Plattform für Projekte, Aufgaben, Ressourcenplanung und teamübergreifende Zusammenarbeit."
+tier: "D"
+generated_at: "2026-05-03"
 ---
 # Wrike
 

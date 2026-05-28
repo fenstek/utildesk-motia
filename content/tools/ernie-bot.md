@@ -1,13 +1,14 @@
 ---
 slug: ernie-bot
 title: Ernie Bot
-category: AI
+category: "AI Chatbots"
 price_model: Je nach Plan
 tags: [ai, chatbot]
 official_url: "https://ernie.baidu.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Ernie Bot
 
 Ernie Bot ist ein fortschrittlicher KI-gestützter Chatbot, der auf modernsten Technologien basiert und für eine Vielzahl von Anwendungen konzipiert wurde. Er unterstützt Unternehmen und Anwender dabei, automatisierte Dialoge zu führen, Informationen effizient bereitzustellen und komplexe Aufgaben durch natürliche Sprachverarbeitung zu vereinfachen. Ernie Bot zeichnet sich durch seine Anpassungsfähigkeit und seine Fähigkeit aus, kontextbezogene Antworten zu liefern, was ihn zu einem wertvollen Werkzeug in verschiedenen Branchen macht.

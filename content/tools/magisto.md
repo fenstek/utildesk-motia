@@ -1,13 +1,14 @@
 ---
 slug: magisto
 title: Magisto
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: ["ai", "video", "automation", "creative"]
 official_url: "https://www.magisto.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Magisto
 
 Magisto ist eine KI-gestützte Videobearbeitungsplattform, die es Nutzern ermöglicht, mit minimalem Aufwand professionelle Videos zu erstellen. Durch den Einsatz künstlicher Intelligenz automatisiert Magisto viele Schritte der Videoproduktion, wie Schnitt, Effekte und Musikuntermalung. Dies macht es besonders attraktiv für Anwender, die schnell und unkompliziert ansprechende Videos für Marketing, Social Media oder private Zwecke erstellen möchten.

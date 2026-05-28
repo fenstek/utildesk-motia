@@ -1,13 +1,14 @@
 ---
 slug: sisense
 title: Sisense
-category: AI
+category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, automation]
 official_url: "https://www.sisense.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Sisense
 
 Sisense ist eine leistungsstarke Business-Intelligence-Plattform, die durch den Einsatz von Künstlicher Intelligenz (KI) und Automatisierung Unternehmen dabei unterstützt, komplexe Daten in aussagekräftige, interaktive Dashboards und Berichte umzuwandeln. Die Plattform ermöglicht es Nutzern, datengetriebene Entscheidungen zu treffen, indem sie Daten aus verschiedenen Quellen zusammenführt, analysiert und visualisiert – und das ohne umfangreiche technische Vorkenntnisse.

@@ -1,13 +1,14 @@
 ---
 slug: splice
 title: Splice
-category: AI
+category: "AI Writing"
 price_model: "Je nach Plan"
 tags: [audio, video, content, design, productivity]
 official_url: "https://splice.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Splice
 
 Splice ist eine vielseitige Plattform, die sich auf die Unterstützung von Kreativen bei der Produktion von Audio- und Videoinhalten spezialisiert hat. Mit einer Kombination aus KI-gestützten Tools und einer umfangreichen Bibliothek an Sounds, Samples und Vorlagen ermöglicht Splice Nutzern, ihre Projekte effizienter und kreativer zu gestalten. Die Plattform richtet sich vor allem an Musiker, Videoproduzenten und Content-Ersteller, die ihre Produktivität steigern möchten.

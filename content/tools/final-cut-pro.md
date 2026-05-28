@@ -1,11 +1,13 @@
 ---
 slug: final-cut-pro
 title: Final Cut Pro
-category: AI
+category: "AI Coding"
 price_model: Einmalzahlung
 tags: [video-editing, post-production, apple]
 official_url: "https://www.apple.com/final-cut-pro/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-12"
 ---
 # Final Cut Pro
 

@@ -1,13 +1,14 @@
 ---
 slug: cockroachdb
 title: CockroachDB
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [database, cloud, data, developer-tools]
 official_url: "https://www.cockroachlabs.com/"
 popularity: 57
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # CockroachDB
 
 CockroachDB ist eine verteilte SQL-Datenbank, die für hohe Verfügbarkeit, Skalierbarkeit und einfache Verwaltung in Cloud-Umgebungen entwickelt wurde. Sie verbindet die Vorteile von relationalen Datenbanken mit der Flexibilität moderner Cloud-Technologien und eignet sich besonders für Entwickler, die robuste, fehlertolerante Anwendungen bauen wollen. CockroachDB ist als Freemium-Modell verfügbar, was den Einstieg erleichtert.

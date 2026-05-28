@@ -1,13 +1,14 @@
 ---
 slug: freshbooks
 title: FreshBooks
-category: AI
+category: "AI Image"
 price_model: Abonnement
 tags: ["accounting", "finance"]
 official_url: "https://www.freshbooks.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # FreshBooks
 
 FreshBooks ist eine cloudbasierte Buchhaltungs- und Rechnungssoftware, die speziell für kleine Unternehmen, Freelancer und Selbstständige entwickelt wurde. Die Anwendung nutzt KI-gestützte Funktionen, um Buchhaltungsprozesse zu automatisieren, die Rechnungsstellung zu vereinfachen und die Finanzverwaltung effizienter zu gestalten. Mit einer benutzerfreundlichen Oberfläche und umfangreichen Tools unterstützt FreshBooks Anwender dabei, Zeit zu sparen und den Überblick über ihre Finanzen zu behalten.

@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [notes,productivity,documents,organization]
 official_url: "https://www.zoho.com/de/notebook/?sredirect=true"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-16"
 ---
-
 # Zoho Notebook
 
 Zoho Notebook ist eine vielseitige Notizen-App, die Nutzern hilft, Gedanken, Ideen und wichtige Informationen übersichtlich zu organisieren. Die Anwendung bietet eine intuitive Oberfläche und vielfältige Funktionen, um Notizen in verschiedenen Formaten zu erstellen, zu verwalten und zu synchronisieren. Zoho Notebook eignet sich für alle, die eine flexible und kostenlose Lösung für ihre persönliche oder berufliche Organisation suchen.

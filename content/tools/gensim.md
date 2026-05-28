@@ -1,13 +1,14 @@
 ---
 slug: gensim
 title: Gensim
-category: AI
+category: "AI Infrastructure"
 price_model: Open Source
 tags: [nlp, topic-modeling, python]
 official_url: "https://radimrehurek.com/gensim/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Gensim
 
 Gensim ist eine leistungsstarke Open-Source-Bibliothek für die Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) in Python. Sie spezialisiert sich auf das effiziente Modellieren von Themen und die Analyse großer Textsammlungen. Gensim bietet skalierbare Algorithmen für Topic Modeling, Dokumentenähnlichkeit und Vektorraumdarstellungen, die in Forschung und Industrie weit verbreitet sind.

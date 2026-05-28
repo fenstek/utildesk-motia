@@ -1,14 +1,15 @@
 ---
 slug: adobe-express
 title: Adobe Express
-category: AI
+category: "AI Image"
 price_model: Freemium
 tags: ["design"]
 official_url: "https://www.adobe.com/express/"
 created_at: 2026-02-12
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Adobe Express
 
 Adobe Express ist ein vielseitiges Online-Tool zur schnellen und einfachen Erstellung von Grafiken, Social-Media-Posts, Flyern und anderen visuellen Inhalten. Mit Hilfe von KI-gestützten Funktionen und zahlreichen Vorlagen ermöglicht Adobe Express Anwendern ohne tiefgehende Designkenntnisse professionelle Ergebnisse. Die intuitive Benutzeroberfläche richtet sich dabei sowohl an Einzelpersonen als auch an kleine Unternehmen, die ihre Online-Präsenz verbessern möchten.
@@ -23,8 +24,6 @@ Adobe Express eignet sich ideal für Nutzer, die unkompliziert und schnell visue
 - Hobby-Designer und Kreative, die ohne großen Aufwand professionelle Vorlagen nutzen möchten
 
 Das Tool ist sowohl für Einsteiger als auch für Nutzer mit Grundkenntnissen im Grafikdesign geeignet. Je nach Anforderungen kann die kostenfreie Version ausreichen, während Premium-Funktionen für umfangreichere Projekte verfügbar sind.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adobe-express-editorial.webp" alt="Illustration zu Adobe Express: schnelle Kampagnenkarten, Bildzuschnitte und Farbflächen auf einem Kreativtisch" loading="lazy" decoding="async" />
@@ -58,7 +57,6 @@ Das Tool ist sowohl für Einsteiger als auch für Nutzer mit Grundkenntnissen im
 - Weniger flexibel als professionelle Desktop-Designsoftware
 - Internetverbindung für Nutzung erforderlich
 - Exportformate und -optionen begrenzt in der Gratis-Version
-
 
 ## Was im Alltag wirklich zählt
 

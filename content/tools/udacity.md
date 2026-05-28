@@ -1,13 +1,14 @@
 ---
 slug: udacity
 title: Udacity
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [education, courses, data, developer-tools]
 official_url: "https://www.udacity.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Udacity
 
 Udacity ist eine Online-Lernplattform, die sich auf technologische und berufliche Weiterbildung spezialisiert hat. Mit einem starken Fokus auf Entwickler, Data Science und IT bietet Udacity praxisorientierte Kurse und Nanodegree-Programme, die darauf abzielen, die Fähigkeiten der Lernenden direkt auf den Arbeitsmarkt anzupassen. Die Plattform kombiniert theoretisches Wissen mit praktischen Projekten, um ein tiefgehendes Verständnis und anwendbare Kompetenzen zu vermitteln.

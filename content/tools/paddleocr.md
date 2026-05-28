@@ -1,13 +1,16 @@
 ---
 slug: paddleocr
 title: PaddleOCR
-category: Developer
+category: "Entwickler-Tools"
 price_model: Open Source
 tags: 
 official_url: "https://github.com/PaddlePaddle/PaddleOCR"
 description: PaddleOCR ist ein Open-Source-OCR-Toolkit für Entwickler, die Erkennung, Layoutanalyse und eigene Dokumentenpipelines stärker selbst kontrollieren möchten.
 created_at: 2026-05-10
 popularity: 0
+tier: "A"
+lastReviewed: "2026-05-14"
+mentionedIn: ["open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # PaddleOCR
 

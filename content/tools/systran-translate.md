@@ -1,13 +1,14 @@
 ---
 slug: systran-translate
 title: SYSTRAN Translate
-category: AI
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [translation, localization, enterprise]
 official_url: "https://www.systransoft.com/translate/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # SYSTRAN Translate
 
 SYSTRAN Translate ist eine leistungsstarke KI-gestützte Übersetzungssoftware, die sich auf professionelle und unternehmensgerechte Sprachübersetzungen spezialisiert hat. Mit fortschrittlichen neuronalen Netzwerken und umfangreichen Sprachdaten ermöglicht SYSTRAN eine schnelle, präzise und kontextbewusste Übersetzung von Texten in zahlreiche Sprachen. Die Lösung unterstützt sowohl Einzelanwender als auch Großunternehmen bei der Lokalisierung von Inhalten, der Kommunikation über Sprachbarrieren hinweg und der Automatisierung von Übersetzungsprozessen.

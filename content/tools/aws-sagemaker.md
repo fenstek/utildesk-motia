@@ -1,14 +1,15 @@
 ---
 slug: aws-sagemaker
 title: AWS SageMaker
-category: AI
+category: "AI Infrastructure"
 price_model: "Nutzungsbasiert"
 tags: [data, analytics, automation, developer-tools]
 official_url: "https://aws.amazon.com/sagemaker/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # AWS SageMaker
 
 AWS SageMaker ist eine umfassende Cloud-Plattform von Amazon Web Services, die Entwicklern und Datenwissenschaftlern ermöglicht, Machine-Learning-Modelle schnell zu erstellen, zu trainieren und bereitzustellen. Die Plattform unterstützt den gesamten ML-Workflow – von der Datenvorbereitung über das Modelltraining bis hin zur Skalierung und Überwachung von Modellen in der Produktion. AWS SageMaker integriert verschiedene Tools und Frameworks, um die Entwicklung von KI-Anwendungen zu erleichtern und zu automatisieren.

@@ -1,13 +1,14 @@
 ---
 slug: postman
 title: Postman
-category: AI
+category: "AI Coding"
 price_model: "Freemium"
 tags: [api, workflow, automation, developer-tools]
 official_url: "https://www.postman.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-10"
 ---
-
 # Postman
 
 Postman ist eine Plattform für API-Entwicklung, Tests, Dokumentation und Zusammenarbeit. Aus dem einfachen REST-Client ist ein umfangreiches Werkzeug geworden, mit dem Teams Schnittstellen entwerfen, prüfen, teilen und automatisiert absichern können.
@@ -31,8 +32,6 @@ Geeignet ist Postman für Backend-Entwickler, QA, Produktteams, API-Plattformen,
 Im Alltag wird Postman schnell zum gemeinsamen API-Gedächtnis. Das funktioniert nur, wenn Collections gepflegt werden und nicht jede Person ihre private Kopie der Wahrheit anlegt.
 
 Gute Teams schreiben kleine Tests direkt an wichtige Requests: Statuscode, Pflichtfelder, Fehlermeldungen. Das ist keine vollständige QA, aber ein erstaunlich wirksames Fruehwarnsystem.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/postman-editorial.webp" alt="Illustration zu Postman: API-Anfragen fließen durch ein sauberes Testlabor mit verbundenen Leitungen" loading="lazy" decoding="async" />

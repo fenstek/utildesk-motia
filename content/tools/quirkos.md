@@ -1,13 +1,14 @@
 ---
 slug: quirkos
 title: Quirkos
-category: AI
+category: "AI Image"
 price_model: "Je nach Plan"
 tags: [design, workflow]
 official_url: "https://www.quirkos.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # Quirkos
 
 Quirkos ist ein innovatives Tool, das vor allem im Bereich der qualitativen Datenanalyse und Visualisierung durch den Einsatz von KI-Technologien unterstützt. Es hilft Nutzern, komplexe Informationen übersichtlich darzustellen und erleichtert so den Workflow bei Design- und Analyseprozessen. Quirkos bietet eine intuitive Benutzeroberfläche, die auch für Einsteiger zugänglich ist, ohne dabei auf fortgeschrittene Funktionen für erfahrene Anwender zu verzichten.

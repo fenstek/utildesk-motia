@@ -1,12 +1,14 @@
 ---
 slug: spicychat
 title: Spicychat
-category: AI
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, chatbot, assistant]
 official_url: "https://spicychat.ai/"
 popularity: 0
 description: "Spicychat ist ein KI-Assistent für KI-Chat- und Charakterinteraktionen für Rollenspiel, Unterhaltung und persönliche Dialoge."
+tier: "C"
+generated_at: "2026-05-18"
 ---
 # Spicychat
 

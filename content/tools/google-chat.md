@@ -6,8 +6,9 @@ price_model: Freemium
 tags: [chat,communication,collaboration,productivity]
 official_url: "https://workspace.google.com/products/chat/"
 popularity: 47
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Google Chat
 
 Google Chat ist ein modernes Kommunikationstool, das speziell für die effiziente Zusammenarbeit in Teams entwickelt wurde. Es ermöglicht Echtzeit-Chats, Gruppenunterhaltungen und die Integration in die Google Workspace, wodurch Arbeitsprozesse nahtlos unterstützt werden. Mit Google Chat können Nutzer sowohl direkt als auch in Gruppen kommunizieren, Dateien teilen und gemeinsame Projekte koordinieren.

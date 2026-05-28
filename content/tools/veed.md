@@ -1,13 +1,14 @@
 ---
 slug: veed
 title: Veed
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://www.veed.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Veed
 
 Veed ist ein innovatives Online-Tool zur Videobearbeitung, das durch den Einsatz von Künstlicher Intelligenz (KI) eine einfache und schnelle Erstellung sowie Bearbeitung von Videos ermöglicht. Die Plattform richtet sich sowohl an Anfänger als auch an professionelle Nutzer, die ohne umfangreiche Vorkenntnisse ansprechende Videos produzieren möchten. Veed bietet eine Vielzahl an Funktionen, die von automatischer Untertitelung bis hin zu Effekten und Textintegration reichen, und erleichtert somit den gesamten Workflow der Videoproduktion.

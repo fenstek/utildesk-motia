@@ -1,12 +1,14 @@
 ---
 slug: liveperson
 title: LivePerson
-category: AI
+category: "AI Chatbots"
 price_model: Individuelles Angebot
 tags: [assistant, automation]
 official_url: "https://www.liveperson.com/"
 popularity: 0
 description: "LivePerson ist eine Conversational-AI- und Messaging-Plattform für Kundenservice, Vertrieb und automatisierte Dialoge."
+tier: "C"
+generated_at: "2026-05-12"
 ---
 # LivePerson
 

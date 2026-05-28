@@ -1,13 +1,14 @@
 ---
 slug: mljar
 title: MLJAR
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [automl,machine-learning,data,developer-tools]
 official_url: "https://mljar.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # MLJAR
 
 MLJAR ist eine benutzerfreundliche AutoML-Plattform, die es ermöglicht, maschinelles Lernen ohne tiefgehende Programmierkenntnisse zu nutzen. Die Plattform automatisiert den gesamten Workflow von der Datenvorbereitung über Modelltraining bis hin zur Modellbewertung und -bereitstellung. MLJAR richtet sich an Datenwissenschaftler, Entwickler und Unternehmen, die effizient und zeitsparend leistungsfähige Machine-Learning-Modelle erstellen möchten.
@@ -77,7 +78,6 @@ Ein sinnvoller Test beginnt mit einem begrenzten Datensatz mit klarer Quelle, de
 - Die Performance kann je nach Datensatz und Problemstellung variieren.
 - Erweiterte Funktionen sind oft nur in kostenpflichtigen Plänen verfügbar.
 
-- Erhöht eher die Komplexität, wenn vor dem Start Datenquellen, Begriffe und Verantwortlichkeiten nicht geklärt sind und Entscheidungen nur nebenbei getroffen werden. Bei MLJAR ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Wenn Review und Pflege ausfallen, verliert MLJAR gerade in Teamprozessen schnell an Verlässlichkeit.
 
 ## Preise & Kosten

@@ -1,14 +1,15 @@
 ---
 title: Domo
 slug: domo
-category: AI
+category: "AI Infrastructure"
 price_model: "Freemium"
 tags: ["design", "automation", "data"]
 official_url: 'https://www.domo.com/'
 created_at: "2026-02-13"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Domo
 
 Domo ist eine cloudbasierte Plattform für Datenanalyse und Business Intelligence, die Künstliche Intelligenz (KI) nutzt, um Unternehmen dabei zu unterstützen, datengetriebene Entscheidungen zu treffen. Mit einer Kombination aus Datenintegration, Visualisierung und KI-gestützten Analysen ermöglicht Domo die einfache Zusammenführung verschiedenster Datenquellen und liefert wertvolle Insights in Echtzeit.

@@ -6,10 +6,11 @@ price_model: Open Source
 tags: ["developer", "nlp", "topic-modeling", "machine-learning", "text"]
 official_url: "https://mallet.cs.umass.edu/download.php"
 affiliate_url: "https://mallet.cs.umass.edu/download.php"
+tier: "C"
+generated_at: "2026-05-20"
 popularity: 0
 description: Java-basiertes Open-Source-Toolkit für NLP, Topic Modeling, Klassifikation und Textanalyse.
 ---
-
 # MALLET
 
 MALLET ist ein klassisches Open-Source-Toolkit für Machine Learning auf Textdaten, besonders bekannt für Topic Modeling, Klassifikation und Sequenzanalyse.
@@ -21,7 +22,6 @@ Es ist kein modernes SaaS-Dashboard, sondern ein technisches Werkzeug für Forsc
 MALLET passt zu Forschenden, Digital-Humanities-Teams, NLP-Praktikern und Studierenden, die Textklassifikation oder Topic Modeling kontrolliert durchführen wollen. Besonders relevant ist es, wenn lokale, reproduzierbare Experimente wichtiger sind als eine moderne Oberfläche.
 
 Für schnelle No-Code-Analysen oder generative KI-Workflows ist MALLET nicht die bequemste Wahl. Es richtet sich an Menschen, die mit Korpora, Parametern und Auswertung bewusst arbeiten möchten.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/mallet-editorial.webp" alt="Illustration zu MALLET: Papiercluster auf einem Forschungstisch zeigen Topic Modeling" loading="lazy" decoding="async" />

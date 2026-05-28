@@ -1,14 +1,15 @@
 ---
 slug: tableau
 title: Tableau
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [ai, analytics, data-visualization, enterprise, productivity]
 official_url: "https://www.tableau.com/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # Tableau
 
 Tableau ist eine führende Plattform für Datenvisualisierung und Analyse, die Unternehmen dabei unterstützt, komplexe Daten verständlich und interaktiv darzustellen. Mit einer Kombination aus leistungsstarken Analysewerkzeugen und intuitiver Benutzeroberfläche ermöglicht Tableau schnelle Einblicke und datenbasierte Entscheidungen. Die Software eignet sich sowohl für einzelne Anwender als auch für große Unternehmen und unterstützt verschiedenste Datenquellen.
@@ -27,20 +28,6 @@ Tableau ist besonders nützlich für Data-, Analytics-, Research- und Engineerin
 
 Tableau gewinnt vor allem dann, wenn der Einsatz bewusst eng gestartet wird: ein klarer Zweck, ein überschaubarer Daten- oder Aufgabenraum und ein Review, das nicht erst nach Problemen entsteht.
 
-## Redaktionelle Einschätzung
-
-Bei Tableau zählt weniger der Demo-Eindruck als der Betrieb im Alltag: Wer pflegt die Eingaben, wer bewertet das Ergebnis, und wo bleibt die fachliche Kontrolle?
-
-Als Prüfstück für Tableau eignet sich einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung, Owner und Abnahme. Wenn Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Tableau:** Vor dem Rollout sollten Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Tableau:** Besser ist ein kleiner Produktivfall mit Owner, Abnahmekriterium und Nachbesprechung als ein langer Vergleich ohne echte Nutzung.
-- **Risiko bei Tableau:** Der Einsatz kippt in Zusatzarbeit, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/tableau-editorial.webp" alt="Illustration zu Tableau: Geschäftsdiagramme werden als gläserne Datenskulptur sichtbar" loading="lazy" decoding="async" />
-</figure>
-
 ## Hauptfunktionen
 
 - **Datenvisualisierung:** Erstellung interaktiver Dashboards und Berichte mit Drag-and-Drop-Funktionalität.
@@ -52,10 +39,6 @@ Als Prüfstück für Tableau eignet sich einem begrenzten Datensatz mit klarer Q
 - **Sicherheit:** Rollenbasierte Zugriffskontrolle und Datenverschlüsselung für Unternehmensanforderungen.
 - **Automatisierung:** Planung und Versand von Berichten sowie automatisierte Datenaktualisierungen.
 - **Anpassbarkeit:** Erweiterung durch eigene Skripte, APIs und Integrationen.
-
-- **Praxislauf mit Tableau:** Das Tool sollte mit einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung, Owner und Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Tableau:** Das Team braucht eine einfache Methode, um Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung nach dem Einsatz zu prüfen.
-- **Übergabe mit Tableau:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

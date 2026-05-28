@@ -6,8 +6,9 @@ price_model: "Freemium"
 tags: [ai,produktivitat,writing]
 official_url: "https://textcortex.net/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # TextCortex
 
 TextCortex ist ein KI-gestütztes Schreibtool, das Nutzern hilft, Texte effizienter zu erstellen und zu optimieren. Es unterstützt bei der Generierung von Inhalten für verschiedene Anwendungsbereiche wie Marketing, Blogging oder E-Mails. Mit intelligenten Algorithmen erleichtert TextCortex den Schreibprozess und spart Zeit, indem es kreative Vorschläge und Textvariationen liefert.

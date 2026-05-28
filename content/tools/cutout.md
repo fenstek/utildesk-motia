@@ -6,6 +6,8 @@ price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.cutout.pro/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
 # Cutout
 

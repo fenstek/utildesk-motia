@@ -6,10 +6,12 @@ price_model: Nach Demo-Volumen
 tags: ["video", "sales", "ai", "demos", "b2b-saas"]
 official_url: "https://www.naoma.ai/"
 affiliate_url: "https://www.naoma.ai/"
+tier: "A"
+lastReviewed: "2026-05-28"
+mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]
 created_at: 2026-05-12
 popularity: 89
 ---
-
 # Naoma AI
 
 Naoma AI positioniert sich als KI-Video-Sales-Agent für B2B-SaaS-Teams. Die Idee ist klar: Besucher sollen ein Produkt sofort erleben können, ohne auf einen Sales-Termin zu warten. Naoma soll personalisierte Produktdemos auf der Website starten, Fragen aufnehmen, Leads qualifizieren und den nächsten Schritt in Richtung CRM, Kalender, Sales-Team oder Checkout übergeben.

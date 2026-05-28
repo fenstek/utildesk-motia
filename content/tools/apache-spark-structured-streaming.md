@@ -1,13 +1,14 @@
 ---
 slug: apache-spark-structured-streaming
 title: Apache Spark Structured Streaming
-category: AI
+category: "AI Agents"
 price_model: Open Source
 tags: [assistant, automation, workflow]
 official_url: "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 ---
-
 # Apache Spark Structured Streaming
 
 Apache Spark Structured Streaming ist eine leistungsstarke Open-Source-Engine zur Verarbeitung von Echtzeit-Datenströmen. Es ermöglicht die kontinuierliche Verarbeitung großer Datenmengen mit einer SQL-ähnlichen API, die sich nahtlos in die bestehende Spark-Umgebung integriert. Structured Streaming bietet Entwicklern und Dateningenieuren die Möglichkeit, Streaming-Anwendungen einfach zu erstellen, die zuverlässig, skalierbar und fehlertolerant sind.

@@ -1,13 +1,14 @@
 ---
 slug: grok
 title: Grok
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, llm]
 official_url: "https://grok.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-12"
 ---
-
 # Grok
 
 Grok ist ein KI-gestütztes Tool, das auf großen Sprachmodellen (LLM) basiert und Nutzern hilft, komplexe Informationen schnell zu verstehen und zu verarbeiten. Es bietet eine intuitive Benutzeroberfläche, die den Zugriff auf intelligente Textanalysen, Zusammenfassungen und generative Funktionen erleichtert. Grok eignet sich besonders für Anwender, die mithilfe von Künstlicher Intelligenz effizienter arbeiten oder kreative Prozesse unterstützen möchten.
@@ -65,7 +66,6 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Regelmäßige Updates und Verbesserungen des Systems.
 
 - Stärker im Alltag, wenn Grok für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
-- Kann Wissen verteilen, wenn KI-Unterstützung, Wissensarbeit, Qualitätssicherung und kontrollierte Automatisierung bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Grok ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 
 ### Nachteile
 - Erweiterte Funktionen sind meist nur im kostenpflichtigen Plan verfügbar.
@@ -73,7 +73,6 @@ Ein sinnvoller Test beginnt mit einer wiederkehrenden Aufgabe mit Eingaben, erwa
 - Ergebnisse können je nach Komplexität der Anfrage variieren.
 - Datenschutz und Datensicherheit sollten geprüft werden, je nach Anwendungsfall.
 
-- Braucht klare Leitplanken, denn ohne sie fallen Probleme dort auf, wo Prompts, Datenfreigaben, Prüfpflichten und Grenzen nicht dokumentiert werden. Bei Grok ist genau das ein guter Prüfpunkt für die erste Retrospektive.
 - Der Nutzen von Grok hängt stark davon ab, ob Review, Datenpflege und Verantwortlichkeiten im Team tatsächlich gelebt werden.
 
 ## Preise & Kosten

@@ -1,14 +1,15 @@
 ---
 slug: hugging-face
 title: Hugging Face
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://huggingface.co/"
 popularity: 0
 updated_at: 2026-05-21
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Hugging Face
 
 Hugging Face ist eine führende Plattform im Bereich Künstliche Intelligenz (KI), die vor allem für ihre leistungsstarken NLP-Modelle (Natural Language Processing) und ihre offene Community bekannt ist. Sie bietet Werkzeuge und APIs, mit denen Entwickler und Unternehmen KI-Modelle leicht integrieren, trainieren und einsetzen können – von Chatbots über Textanalyse bis hin zu automatisierter Übersetzung und mehr.

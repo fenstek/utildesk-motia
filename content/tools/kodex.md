@@ -1,13 +1,14 @@
 ---
 slug: kodex
 title: Kodex
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [code-editor, ios, developer-tools, productivity]
 official_url: "https://www.kodex.app/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Kodex
 
 Kodex ist ein leistungsstarker Code-Editor für iOS, der speziell für Entwickler entwickelt wurde, die auch unterwegs produktiv bleiben möchten. Mit einer benutzerfreundlichen Oberfläche und vielseitigen Funktionen ermöglicht Kodex das Schreiben, Bearbeiten und Verwalten von Quellcode direkt auf iPhone und iPad. Dank seines Freemium-Modells bietet es eine solide Basisversion mit der Option, erweiterte Features freizuschalten.

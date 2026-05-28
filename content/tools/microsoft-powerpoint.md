@@ -1,13 +1,14 @@
 ---
 slug: microsoft-powerpoint
 title: Microsoft PowerPoint
-category: AI
+category: "AI Image"
 price_model: Abonnement, Je nach Plan
 tags: [presentations, productivity, microsoft-365]
 official_url: "https://www.microsoft.com/de-de/microsoft-365/powerpoint"
 popularity: 32
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # Microsoft PowerPoint
 
 Microsoft PowerPoint ist eine der weltweit bekanntesten Softwarelösungen zur Erstellung von Präsentationen. Es bietet umfangreiche Werkzeuge, um ansprechende, professionelle Slideshows zu gestalten – von einfachen Folien bis hin zu komplexen Multimedia-Präsentationen. Dank der Integration in Microsoft 365 lassen sich Präsentationen einfach speichern, teilen und gemeinsam bearbeiten. PowerPoint unterstützt zudem KI-gestützte Funktionen, die den Erstellungsprozess erleichtern und die Produktivität steigern.

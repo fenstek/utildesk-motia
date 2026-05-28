@@ -1,13 +1,14 @@
 ---
 slug: observable
 title: Observable
-category: AI
+category: "AI Infrastructure"
 price_model: Freemium
 tags: [data-visualization, notebooks, analytics]
 official_url: "https://observablehq.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # Observable
 
 Observable ist eine innovative Plattform für interaktive Datenvisualisierung und Analyse, die speziell für Datenwissenschaftler, Analysten und Entwickler entwickelt wurde. Mit einem Fokus auf kollaborative Notebooks ermöglicht Observable das Erstellen, Teilen und Erkunden von dynamischen Visualisierungen direkt im Browser. Die Plattform kombiniert moderne Webtechnologien mit leistungsstarken Analysewerkzeugen, um komplexe Daten verständlich und ansprechend darzustellen.

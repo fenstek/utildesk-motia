@@ -1,13 +1,14 @@
 ---
 slug: skater
 title: Skater
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [sports, coaching, analytics, ai]
 official_url: "https://www.skaterai.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
 ---
-
 # Skater
 
 Skater ist ein innovatives KI-gestütztes Tool, das speziell für den Bereich Sport, Coaching und Leistungsanalyse entwickelt wurde. Es unterstützt Trainer, Athleten und Analysten dabei, Trainingsprozesse zu optimieren, Bewegungsabläufe zu analysieren und individuelle Leistungsdaten zu erfassen. Durch den Einsatz modernster künstlicher Intelligenz ermöglicht Skater präzise Einblicke in sportliche Aktivitäten und fördert so eine effektivere Trainingsplanung.

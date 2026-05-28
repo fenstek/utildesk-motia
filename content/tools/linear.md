@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [project-management, developer-tools, planning, productivity]
 official_url: "https://linear.app/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 ---
-
 # Linear
 
 Linear ist ein modernes Projektmanagement-Tool, das speziell für Entwicklerteams und produktivitätsorientierte Unternehmen entwickelt wurde. Es unterstützt Teams dabei, Aufgaben effizient zu planen, zu verfolgen und schnell umzusetzen. Mit einem klaren Fokus auf Geschwindigkeit, einfache Bedienbarkeit und nahtlose Integration in Entwickler-Workflows hilft Linear, den Überblick über Projekte zu behalten und die Zusammenarbeit zu optimieren.

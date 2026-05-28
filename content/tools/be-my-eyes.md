@@ -1,13 +1,14 @@
 ---
 slug: be-my-eyes
 title: Be My Eyes
-category: AI
+category: "AI Agents"
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://be-my-eyes.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Be My Eyes
 
 Be My Eyes ist eine innovative App, die Menschen mit Sehbehinderungen durch den Einsatz von künstlicher Intelligenz und einer globalen Gemeinschaft von Freiwilligen unterstützt. Die Anwendung ermöglicht es blinden und sehbehinderten Nutzern, visuelle Hilfe in Echtzeit zu erhalten, indem sie per Videoanruf mit sehenden Helfern verbunden werden. So wird der Alltag erleichtert und Barrieren im täglichen Leben reduziert.

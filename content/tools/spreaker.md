@@ -1,13 +1,14 @@
 ---
 slug: spreaker
 title: Spreaker
-category: AI
+category: "AI Audio"
 price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.spreaker.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-18"
 ---
-
 # Spreaker
 
 Spreaker ist eine vielseitige Plattform für Podcast-Erstellung und -Veröffentlichung, die sowohl Anfängern als auch professionellen Podcastern zahlreiche Tools zur Verfügung stellt. Mit integrierten Funktionen für Aufnahme, Bearbeitung und Verbreitung von Audioinhalten unterstützt Spreaker bei der Produktion hochwertiger Podcasts. Die Plattform kombiniert einfache Bedienbarkeit mit fortschrittlichen Features und nutzt dabei teilweise KI-Technologien zur Optimierung von Audioqualität und Workflow.

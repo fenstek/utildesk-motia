@@ -1,12 +1,14 @@
 ---
 slug: sockeye
 title: Sockeye
-category: AI
+category: "AI Writing"
 price_model: Je nach Plan
 tags: [translation, nmt, deep-learning]
 official_url: "https://awslabs.github.io/sockeye/"
 popularity: 0
 description: Sockeye ist ein Open-Source-Toolkit für neuronale maschinelle Übersetzung, besonders für Forschung und technische NMT-Experimente.
+tier: "C"
+generated_at: "2026-05-17"
 ---
 # Sockeye
 
@@ -19,7 +21,6 @@ Passend ist Sockeye für Forschung, NLP-Teams und Entwickler mit eigener Überse
 Sockeye eignet sich für NLP-Forschende, Machine-Translation-Teams und Entwickler, die neuronale Übersetzung technisch nachvollziehen, trainieren oder evaluieren wollen. Es ist kein Tool für Nutzer, die einfach schnell einen Text übersetzen möchten, sondern ein Framework für Experimente und eigene Übersetzungspipelines.
 
 Der Einsatz lohnt sich, wenn Trainingsdaten, Evaluationsmetriken und Infrastruktur vorhanden sind. Wer keine Parallelkorpora, kein ML-Know-how und keinen Bedarf an eigener Modellkontrolle hat, fährt mit fertigen Übersetzungsdiensten deutlich besser.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/sockeye-editorial.webp" alt="Illustration zu Sockeye: Sprachstr?me laufen durch ein neuronales ?bersetzungsmodell" loading="lazy" decoding="async" />

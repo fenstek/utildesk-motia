@@ -6,10 +6,11 @@ price_model: Freemium
 tags: ["ai", "productivity", "writing"]
 official_url: "https://www.copy.ai"
 affiliate_url: "https://www.copy.ai"
+tier: "C"
+generated_at: "2026-05-15"
 created_at: 2026-02-08
 popularity: 0
 ---
-
 # Copy.ai
 
 Copy.ai ist ein KI-gestütztes Tool zur Textgenerierung, das speziell entwickelt wurde, um kreative und produktive Schreibprozesse zu unterstützen. Mit Hilfe von künstlicher Intelligenz können Nutzer schnell und einfach Texte aller Art erstellen – von Marketingtexten über Blogbeiträge bis hin zu Social-Media-Inhalten. Das Tool richtet sich an Einzelpersonen und Teams, die ihre Schreibarbeit effizienter gestalten möchten.

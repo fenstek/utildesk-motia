@@ -1,13 +1,14 @@
 ---
 slug: descript-studio-sound
 title: Descript Studio Sound
-category: Audio
+category: "Audio & Video"
 price_model: "Je nach Plan"
 tags: [ai, audio, editing]
 official_url: "https://www.descript.com/studio-sound"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-09"
 ---
-
 # Descript Studio Sound
 
 Descript Studio Sound ist eine KI-Funktion zur Verbesserung von Sprachaufnahmen innerhalb des Descript-Workflows. Sie soll Stimmen klarer, präsententer und professioneller klingen lassen, indem sie Störgeräusche, Raumhall, dumpfe Mikrofonqualität und unruhige Pegel automatisch bearbeitet. Der praktische Nutzen liegt vor allem darin, problematische Alltagsaufnahmen schneller verwendbar zu machen, ohne dass jede Spur manuell mit Audio-Plugins nachbearbeitet werden muss.

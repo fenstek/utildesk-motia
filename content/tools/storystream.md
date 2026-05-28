@@ -1,14 +1,15 @@
 ---
 slug: storystream
 title: StoryStream
-category: AI
+category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "design", "marketing"]
 official_url: "https://storystream.ai/"
 created_at: 2026-02-12
 popularity: 13
+tier: "C"
+generated_at: "2026-05-28"
 ---
-
 # StoryStream
 
 StoryStream ist eine innovative KI-gestützte Plattform zur Erstellung und Verwaltung von Content-Marketing-Kampagnen. Sie hilft Unternehmen dabei, ansprechende Geschichten zu entwickeln, die ihre Zielgruppen effektiv erreichen und binden. Durch den Einsatz von künstlicher Intelligenz unterstützt StoryStream bei der Automatisierung von Content-Generierung und -Verteilung, was Marketingteams Zeit spart und die Effizienz steigert.

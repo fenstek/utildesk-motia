@@ -1,13 +1,14 @@
 ---
 slug: doubao
 title: Doubao
-category: AI
+category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, assistant, chatbot]
 official_url: "https://www.doubao.com/chat/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Doubao
 
 Doubao ist ein KI-gestützter Chatbot und Assistent, der entwickelt wurde, um die Interaktion zwischen Mensch und Maschine zu vereinfachen. Mit seiner freemium Preisstruktur bietet Doubao sowohl Einsteigern als auch professionellen Anwendern eine flexible Lösung für vielfältige Anwendungsbereiche im Bereich Künstliche Intelligenz.

@@ -1,13 +1,14 @@
 ---
 slug: fade-in
 title: Fade In
-category: AI
+category: "AI Writing"
 price_model: Kostenpflichtig
 tags: [screenwriting, writing, creative-tools]
 official_url: "https://www.fadeinpro.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Fade In
 
 Fade In ist eine professionelle Screenwriting-Software, die speziell für Drehbuchautoren entwickelt wurde. Sie bietet eine moderne, intuitive Benutzeroberfläche und zahlreiche Funktionen, die den Schreibprozess von Filmen, Serien, Theaterstücken und anderen Skripten erleichtern. Die Software unterstützt Autoren dabei, ihre kreativen Ideen effizient zu strukturieren, zu formatieren und zu verwalten.

@@ -1,13 +1,14 @@
 ---
 slug: viktor-for-media-buyers
 title: Viktor for Media Buyers
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [advertising, workflow-automation, slack]
 official_url: "https://getviktor.com/for/media-buying"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-26"
 ---
-
 # Viktor for Media Buyers
 
 Viktor for Media Buyers ist auf Werbekampagnen, Performance-Signale und Slack-nahe Arbeitsabläufe ausgerichtet. Für Media-Buying-Teams kann das hilfreich sein, wenn Kampagnen nicht nur in Ads-Managern liegen, sondern im Team schnell besprochen und angepasst werden müssen.

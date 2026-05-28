@@ -1,14 +1,15 @@
 ---
 slug: teradata-vantage
 title: Teradata Vantage
-category: Developer
+category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [data, analytics, cloud, enterprise]
 official_url: "https://www.teradata.com/platform"
 created_at: 2026-05-14
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # Teradata Vantage
 
 Teradata Vantage ist eine Enterprise-Datenplattform für Organisationen, die große analytische Workloads nicht auf mehrere lose Systeme verteilen wollen. Im Mittelpunkt stehen skalierbare SQL-Analysen, Data-Warehouse-Workloads, Governance und die Verbindung von Cloud-, Hybrid- und On-Premise-Umgebungen. Der Nutzen entsteht vor allem dort, wo Datenvolumen, Compliance und Performance gemeinsam betrachtet werden müssen.
@@ -54,7 +55,6 @@ Teradata Vantage richtet sich an größere Unternehmen, Datenplattform-Teams und
 - Komplexität der Plattform kann eine längere Einarbeitungszeit erfordern.
 - Abhängigkeit vom Anbieter bei Cloud-Implementierungen.
 - Lizenzmodell basiert auf Abonnement, was laufende Kosten verursacht.
-
 
 ## Was im Alltag wirklich zählt
 

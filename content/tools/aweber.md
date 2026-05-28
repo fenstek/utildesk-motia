@@ -1,12 +1,14 @@
 ---
 slug: aweber
 title: Aweber
-category: AI
+category: "AI Agents"
 price_model: "Abonnement"
 tags: [email-marketing, newsletters, automation]
 official_url: "https://www.aweber.com/"
 popularity: 0
 description: "Aweber ist ein Business- und Operations-Plattform für E-Mail-Marketing, Newsletter-Automatisierung und einfache Kampagnenpflege für kleine Unternehmen."
+tier: "C"
+generated_at: "2026-05-10"
 ---
 # Aweber
 

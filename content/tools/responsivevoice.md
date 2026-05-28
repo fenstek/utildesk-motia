@@ -1,13 +1,14 @@
 ---
 slug: responsivevoice
 title: ResponsiveVoice
-category: AI
+category: "AI Audio"
 price_model: "Je nach Plan"
 tags: [audio, workflow]
 official_url: "https://responsivevoice.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-13"
 ---
-
 # ResponsiveVoice
 
 ResponsiveVoice ist eine KI-basierte Text-zu-Sprache-Lösung, die eine einfache Integration von Sprachausgabe in Webseiten und Anwendungen ermöglicht. Die Technologie unterstützt zahlreiche Sprachen und Stimmen, wodurch Nutzer ihre Inhalte barrierefrei und interaktiv gestalten können. ResponsiveVoice eignet sich besonders für Entwickler, Content-Ersteller und Unternehmen, die ihre digitalen Produkte mit natürlicher Sprachausgabe erweitern möchten.

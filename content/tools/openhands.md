@@ -1,12 +1,14 @@
 ---
 slug: openhands
 title: OpenHands
-category: AI Agents
+category: "AI Coding"
 price_model: Je nach Plan
 tags: [ai, coding, automation, developer]
 official_url: "https://openhands.dev/"
 popularity: 87
 description: OpenHands ist ein Open-Source-orientierter KI-Coding-Agent für Softwareaufgaben, Repositories und automatisierte Entwicklungsschritte.
+tier: "C"
+generated_at: "2026-05-28"
 ---
 # OpenHands
 
@@ -19,8 +21,6 @@ Interessant ist OpenHands für Entwicklerteams, die Agentenläufe kontrolliert t
 OpenHands ist für Entwicklerteams geeignet, die Coding-Agenten nicht nur ausprobieren, sondern kontrolliert in Repository-Arbeit einordnen wollen. Interessant ist das Tool vor allem für Teams mit klaren Tickets, Testumgebungen und dem Wunsch, agentische Entwicklung transparenter oder selbst kontrollierbarer zu betreiben.
 
 Der Einsatz passt weniger zu völlig offenen Produktfragen. OpenHands braucht abgegrenzte Aufgaben, nachvollziehbare Ziele und ein Review-Gate. Besonders sinnvoll ist es für Experimente mit Bugfixes, Tests, Refactorings oder Recherche im Codebestand, solange kein Agent direkt unkontrolliert produktiven Code zusammenführt.
-
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/openhands-editorial.webp" alt="Illustration zu OpenHands: kleine Coding-Agenten reichen Aufgaben durch eine überwachte Werkstatt" loading="lazy" decoding="async" />

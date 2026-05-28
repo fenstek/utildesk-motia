@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [contact-center, customer-support, communication, ai]
 official_url: "https://www.talkdesk.com/"
 popularity: 0
+tier: "D"
+generated_at: "2026-05-21"
 ---
-
 # Talkdesk
 
 Talkdesk ist eine cloudbasierte Contact-Center-Software, die Unternehmen dabei unterstützt, den Kundenservice und die Kommunikation effizient zu gestalten. Mit modernen KI-Funktionen und einer benutzerfreundlichen Oberfläche bietet Talkdesk Lösungen für unterschiedliche Unternehmensgrößen und Branchen, um die Kundenzufriedenheit zu steigern und interne Prozesse zu optimieren.

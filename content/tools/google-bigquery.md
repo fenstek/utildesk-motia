@@ -1,13 +1,14 @@
 ---
 slug: google-bigquery
 title: Google BigQuery
-category: AI
+category: "AI Infrastructure"
 price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, google-cloud]
 official_url: "https://cloud.google.com/bigquery"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # Google BigQuery
 
 Google BigQuery ist ein leistungsstarkes, serverloses Data-Warehouse von Google Cloud, das speziell für große Datenmengen und schnelle Analysen entwickelt wurde. Es ermöglicht Unternehmen, komplexe SQL-Abfragen in Sekundenschnelle auszuführen, ohne sich um die Infrastruktur kümmern zu müssen. BigQuery eignet sich hervorragend für datengetriebene Unternehmen, die schnell Erkenntnisse aus umfangreichen Datensätzen gewinnen möchten.

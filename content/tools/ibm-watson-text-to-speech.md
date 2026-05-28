@@ -6,8 +6,9 @@ price_model: Je nach Plan
 tags: [audio, productivity, automation, customer-support]
 official_url: "https://www.ibm.com/products/text-to-speech"
 popularity: 41
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # IBM Watson Text to Speech
 
 IBM Watson Text to Speech ist ein leistungsstarker Cloud-basierter Dienst, der geschriebenen Text in natürlich klingende Sprache umwandelt. Mit modernster KI-Technologie ermöglicht das Tool die Erstellung von Audioinhalten in verschiedenen Sprachen und Stimmen. Es unterstützt Unternehmen dabei, interaktive und barrierefreie Anwendungen zu entwickeln, die die Nutzererfahrung verbessern und Arbeitsabläufe automatisieren.

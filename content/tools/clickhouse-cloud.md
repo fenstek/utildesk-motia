@@ -1,13 +1,14 @@
 ---
 slug: clickhouse-cloud
 title: ClickHouse Cloud
-category: AI
+category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://clickhouse.com/cloud"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # ClickHouse Cloud
 
 ClickHouse Cloud ist eine skalierbare, cloudbasierte Datenplattform, die auf der hochleistungsfähigen Open-Source-Datenbank ClickHouse basiert. Sie ermöglicht es Unternehmen und Entwicklern, große Mengen an Daten in Echtzeit zu analysieren und zu verarbeiten, ohne sich um die Infrastruktur kümmern zu müssen. Als Managed Service bietet ClickHouse Cloud eine einfache Möglichkeit, schnelle und effiziente Analysen in der Cloud durchzuführen und dabei von der Flexibilität und Skalierbarkeit moderner Cloud-Architekturen zu profitieren.

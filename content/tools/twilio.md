@@ -1,11 +1,13 @@
 ---
 slug: twilio
 title: Twilio
-category: Developer
+category: "Entwickler-Tools"
 price_model: Nutzungsbasiert, Je nach Plan
 tags: [api, communication, developer-tools, automation]
 official_url: "https://www.twilio.com/en-us"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
 # Twilio
 

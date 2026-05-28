@@ -1,13 +1,14 @@
 ---
 slug: codesandbox
 title: CodeSandbox
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: [developer-tools, coding, automation, productivity, no-code]
 official_url: "https://codesandbox.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # CodeSandbox
 
 CodeSandbox ist eine webbasierte Entwicklungsumgebung, die speziell für die schnelle und einfache Erstellung von Webanwendungen konzipiert wurde. Sie ermöglicht es Entwicklern, Projekte direkt im Browser zu starten, zu bearbeiten und zu teilen, ohne eine lokale Entwicklungsumgebung einrichten zu müssen. Mit einem Fokus auf moderne JavaScript-Frameworks und einer starken Integration von Automatisierungs- und Kollaborationstools unterstützt CodeSandbox sowohl Anfänger als auch professionelle Entwickler.

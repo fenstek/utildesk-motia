@@ -1,13 +1,14 @@
 ---
 slug: contentstudio
 title: ContentStudio
-category: Audio
+category: "Audio & Video"
 price_model: Je nach Plan
 tags: [social-media,content-marketing,scheduling]
 official_url: "https://contentstudio.io/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
 # ContentStudio
 
 ContentStudio ist eine umfassende Plattform für Social-Media-Management und Content-Marketing, die besonders für die Planung, Erstellung und Veröffentlichung von Inhalten geeignet ist. Mit einer Vielzahl von Funktionen unterstützt das Tool vor allem Teams und Einzelpersonen dabei, ihre Online-Präsenz effizient zu verwalten und zu optimieren. Es bietet Werkzeuge für die Content-Kuration, das Scheduling und die Analyse, um die Performance von Beiträgen kontinuierlich zu verbessern.

@@ -6,8 +6,9 @@ price_model: Open Source
 tags: [developer-tools,gaming,open-source,writing]
 official_url: "https://www.tads.org/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-21"
 ---
-
 # TADS (Text Adventure Development System)
 
 TADS ist ein leistungsstarkes Open-Source-Entwicklungssystem, das speziell für die Erstellung von Textabenteuern und interaktiven Geschichten entwickelt wurde. Es bietet eine umfassende Programmiersprache und eine integrierte Entwicklungsumgebung, die Autoren und Entwicklern ermöglicht, komplexe narrative Spiele mit umfangreichen Spielwelten und Interaktionen zu gestalten. TADS unterstützt sowohl Anfänger als auch erfahrene Entwickler und fördert kreatives Schreiben kombiniert mit technischer Flexibilität.

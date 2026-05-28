@@ -1,13 +1,14 @@
 ---
 slug: nintex
 title: Nintex
-category: AI
+category: "AI Agents"
 price_model: Je nach Plan
 tags: [workflow-automation, process-management, enterprise]
 official_url: "https://www.nintex.com/"
 popularity: 28
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Nintex
 
 Nintex ist eine Plattform für Prozessautomatisierung, Workflows, Formulare und digitale Abläufe. Sie richtet sich an Organisationen, die wiederkehrende Business-Prozesse aus E-Mail, Tabellen und manuellen Freigaben herauslösen wollen.

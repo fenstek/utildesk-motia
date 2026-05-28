@@ -7,6 +7,8 @@ tags: [ai, research, notes]
 official_url: "https://notebooklm.google/"
 popularity: 27
 description: NotebookLM ist ein Recherche- und Notizassistent, der Antworten aus hochgeladenen Quellen und Dokumentensammlungen ableitet.
+tier: "C"
+generated_at: "2026-05-28"
 ---
 # NotebookLM
 
@@ -19,7 +21,6 @@ Gut geeignet für Recherche, Lernen, Briefings, redaktionelle Vorbereitung und i
 NotebookLM ist geeignet für Menschen, die mit einem klar abgegrenzten Quellenbestand arbeiten: Studierende, Forschende, Redaktionen, Analysten, Produktteams und alle, die aus Dokumenten, Transkripten, Links oder Notizen ein verständliches Briefing bauen müssen. Anders als ein offener Chatbot soll NotebookLM nicht frei über alles antworten, sondern auf dem Material im Notebook aufbauen.
 
 Besonders hilfreich ist es, wenn man mehrere Quellen vergleichen, Kernaussagen extrahieren, Lernmaterial vorbereiten oder aus Dokumenten Fragen ableiten möchte. Weniger passend ist NotebookLM, wenn aktuelle Websuche im Vordergrund steht oder wenn Quellen noch gar nicht gesammelt wurden.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/notebooklm-editorial.webp" alt="Illustration zu NotebookLM: Quellen und Notizen sammeln sich in einem leuchtenden Wissenskern" loading="lazy" decoding="async" />

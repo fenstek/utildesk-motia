@@ -6,8 +6,9 @@ price_model: Abonnement
 tags: [phone,communication,customer-support,business]
 official_url: "https://www.mightycall.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-16"
 ---
-
 # MightyCall
 
 MightyCall ist eine cloudbasierte Telefonielösung, die speziell für kleine und mittlere Unternehmen entwickelt wurde. Das Tool unterstützt Unternehmen dabei, ihre Kommunikation effizienter zu gestalten und den Kundenservice zu verbessern. Mit Funktionen wie virtuellen Telefonnummern, Anrufweiterleitung und Voicemail-Management bietet MightyCall eine flexible und einfach zu bedienende Plattform zur Optimierung der geschäftlichen Telefonie.

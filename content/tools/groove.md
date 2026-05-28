@@ -1,13 +1,14 @@
 ---
 slug: groove
 title: Groove
-category: AI
+category: "AI Writing"
 price_model: Abonnement
 tags: [helpdesk, support, productivity]
 official_url: "https://www.groovehq.com/"
 popularity: 44
+tier: "C"
+generated_at: "2026-05-27"
 ---
-
 # Groove
 
 Groove ist eine KI-gestützte Helpdesk-Software, die Unternehmen dabei unterstützt, ihren Kundenservice effizienter und produktiver zu gestalten. Mit automatisierten Workflows, intelligenten Antwortvorschlägen und einer benutzerfreundlichen Oberfläche vereinfacht Groove die Bearbeitung von Supportanfragen und verbessert die Kundenzufriedenheit.

@@ -1,15 +1,15 @@
 ---
 slug: "botpress"
 title: "Botpress"
-category: "AI"
+category: "AI Chatbots"
 price_model: "Freemium"
 tags: [ai, chatbot]
 official_url: "https://botpress.ai"
 created_at: "2026-02-12"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-15"
 ---
-
-
 # Botpress
 
 Botpress ist eine leistungsstarke Open-Source-Plattform zur Entwicklung von Chatbots und Conversational AI-Anwendungen. Sie bietet Entwicklern und Unternehmen die Möglichkeit, intelligente, anpassbare und skalierbare Chatbots zu erstellen, die in verschiedenen Kanälen eingesetzt werden können. Mit einer benutzerfreundlichen Oberfläche und umfangreichen Integrationsmöglichkeiten eignet sich Botpress sowohl für technische Anwender als auch für Unternehmen, die ihre Kundenkommunikation automatisieren möchten.

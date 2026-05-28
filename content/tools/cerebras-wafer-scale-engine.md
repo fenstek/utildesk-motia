@@ -1,13 +1,14 @@
 ---
 slug: cerebras-wafer-scale-engine
 title: Cerebras Wafer-Scale Engine
-category: AI
+category: "AI Infrastructure"
 price_model: Individuelles Angebot
 tags: [hardware, ml, infrastructure]
 official_url: "https://www.cerebras.ai/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-11"
 ---
-
 # Cerebras Wafer-Scale Engine
 
 Der Cerebras Wafer-Scale Engine (WSE) ist ein revolutionärer KI-Beschleuniger, der speziell für anspruchsvolle Machine-Learning- und Deep-Learning-Anwendungen entwickelt wurde. Im Gegensatz zu herkömmlichen Prozessoren nutzt der WSE eine einzigartige Architektur, die einen ganzen Wafer als einzelne Einheit verwendet. Dies ermöglicht eine enorme Rechenleistung und Speicherbandbreite, die für komplexe KI-Modelle und große Datenmengen optimiert ist.

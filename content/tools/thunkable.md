@@ -1,13 +1,14 @@
 ---
 slug: thunkable
 title: Thunkable
-category: AI
+category: "AI Coding"
 price_model: "Je nach Plan"
 tags: [no-code, automation, productivity, design, education]
 official_url: "https://thunkable.com/"
 popularity: 0
+tier: "C"
+generated_at: "2026-05-25"
 ---
-
 # Thunkable
 
 Thunkable ist eine No-Code-Plattform, die es Nutzern ermöglicht, mobile Apps ohne Programmierkenntnisse zu erstellen. Mit einer intuitiven Drag-and-Drop-Oberfläche können Anwender sowohl einfache als auch komplexe Anwendungen für iOS und Android entwickeln. Besonders im Bereich Automatisierung, Produktivität und Bildung bietet Thunkable zahlreiche Funktionen, die den Entwicklungsprozess vereinfachen und beschleunigen.

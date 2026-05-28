@@ -6,6 +6,8 @@ price_model: "Freemium"
 tags: ["ai", "productivity"]
 official_url: "https://www.jasper.ai/"
 affiliate_url: "https://www.jasper.ai/"
+tier: "C"
+generated_at: "2026-05-12"
 created_at: 2026-02-07
 popularity: 0
 description: "Jasper ist ein Schreib- und Content-Tool für KI-Content-Plattform für Marketingtexte, Kampagnenvarianten und skalierbare Markenkommunikation."

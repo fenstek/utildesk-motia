@@ -1,16 +1,17 @@
 ---
 slug: replit
 title: Replit
-category: Developer
+category: "Entwickler-Tools"
 price_model: Freemium
 tags: 
 official_url: "https://repl.it"
 affiliate_url: "https://repl.it"
+tier: "C"
+generated_at: "2026-05-27"
 created_at: 2026-02-07
 updated_at: 2026-05-21
 popularity: 19
 ---
-
 # Replit
 
 Replit ist eine webbasierte Entwicklungsplattform, die es Programmierern ermöglicht, Code direkt im Browser zu schreiben, auszuführen und zu teilen. Die Plattform unterstützt zahlreiche Programmiersprachen und bietet kollaborative Funktionen sowie KI-gestützte Tools, um den Entwicklungsprozess zu erleichtern. Mit einem Freemium-Modell richtet sich Replit sowohl an Anfänger als auch an erfahrene Entwickler, die schnelle Prototypen erstellen oder gemeinsam an Projekten arbeiten möchten.
@@ -30,7 +31,6 @@ Replit eignet sich ideal für:
 - **Teams und Bildungseinrichtungen**, die kollaboratives Programmieren fördern wollen.
 - **Entwickler, die KI-gestützte Hilfsmittel** zur Code-Generierung und Fehlerbehebung nutzen möchten.
 - Personen, die plattformunabhängig und ohne lokale Installation programmieren möchten.
-
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/replit-editorial.webp" alt="Illustration zu Replit: eine Cloud-Werkstatt zeigt kollaboratives Coding ohne Code-Text" loading="lazy" decoding="async" />
