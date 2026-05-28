@@ -145,13 +145,6 @@ const displayTags = (tags ?? [])
 // On tie, prefer category whose first matching tag appears earlier in tags
 const normalizedTags = tags.map(t => String(t).toLowerCase());
 const providerCtaLabel = visible_provider_url || (affiliate_url ? "Zum Anbieter" : "Zur Website");
-const providerHost = (() => {
-  try {
-    return visible_provider_url ? new URL(visible_provider_url).hostname.replace(/^www\./, "") : "";
-  } catch {
-    return visible_provider_url.replace(/^https?:\/\//, "").replace(/^www\./, "").split("/")[0];
-  }
-})();
 
 const categoryResults = CATEGORIES.map(cat => {
   const matches = normalizedTags.filter(tag => cat.matchTags.includes(tag));
@@ -175,33 +168,8 @@ const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category
 
 // Render Markdown to HTML
 
-const firstEditorialImageMatch = renderedContent.match(/<img\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/i);
-const getImgAttribute = (imgHtml: string, attribute: string) => {
-  const match = imgHtml.match(new RegExp(`${attribute}=["']([^"']*)["']`, "i"));
-  return match ? match[1] : "";
-};
-const editorialImage = firstEditorialImageMatch
-  ? {
-      src: firstEditorialImageMatch[1],
-      alt: getImgAttribute(firstEditorialImageMatch[0], "alt") || `Illustration zu ${title}`,
-    }
-  : null;
-const removeFirstEditorialImage = (input: string) => {
-  if (!firstEditorialImageMatch) return input;
-  const escapedImg = escapeRegExp(firstEditorialImageMatch[0]);
-  const figurePattern = new RegExp(`<figure[^>]*>\\s*${escapedImg}\\s*(?:<figcaption[\\s\\S]*?<\\/figcaption>\\s*)?<\\/figure>`, "i");
-  const paragraphPattern = new RegExp(`<p>\\s*${escapedImg}\\s*<\\/p>`, "i");
-  return input
-    .replace(figurePattern, "")
-    .replace(paragraphPattern, "")
-    .replace(firstEditorialImageMatch[0], "")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
-};
-const renderedContentWithoutFirstImage = removeFirstEditorialImage(renderedContent);
-
 // Remove the Alternativen/Alternatives section from the main markdown content so it won't appear in the article text
-const contentWithoutAlternatives = renderedContentWithoutFirstImage.replace(
+const contentWithoutAlternatives = renderedContent.replace(
   /(?:^|\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\n]*\n[\s\S]*?(?=\n#{1,3}\s|\s*$)/i,
   ""
 ).trim();
@@ -456,72 +424,46 @@ const softwareApplicationSchema = {
 
   <!-- Tool Header -->
   <div class="tool-detail-header">
-    <div class="tool-akte-main">
-      <p class="tool-akte-kicker">-&gt; Tool-Akte Nr. {String((toolAddedAtRankMap.get(entry.slug) ?? 42) || 42).padStart(4, "0")} · {category || "KI-Werkzeug"}</p>
-      <h1 class="tool-detail-title">{title}<span aria-hidden="true">.</span></h1>
-      <p class="tool-akte-oneliner">{metaDescription}</p>
+    <h1 class="tool-detail-title">{title}</h1>
 
-      <!-- Badges -->
-      {(category || price_model || tags.length > 0) && (
-        <div class="tool-detail-badges">
-          {category && primaryCategory ? (
-            <a class="badge badge-category" href={`/category/${primaryCategory.slug}/`}>{category}</a>
-          ) : category ? (
-            <span class="badge badge-category">{category}</span>
-          ) : null}
-          {price_model && (
-            <span class="badge badge-price">{price_model}</span>
-          )}
-          {displayTags.slice(0, 5).map((tag) => (
-            <a class="badge badge-tag" href={tagHref(tag)}>#{tag}</a>
-          ))}
-        </div>
-      )}
-
-      <div class="tool-akte-actions">
-        {target_provider_url && (
-          <a class="tool-akte-provider" href={target_provider_url} target="_blank" rel="noopener noreferrer">
-            -&gt; Zum Anbieter · {providerHost || title}
-          </a>
-        )}
-        <a class="tool-akte-compare" href="/tools/">&lt;-&gt; Mit Tools vergleichen</a>
-      </div>
-    </div>
-
-    <aside class="tool-facts-card">
-      <span class="tool-facts-label">Faktenblatt</span>
-      <div class="tool-facts-brand">
-        {logoUrl ? (
-          <span class="tool-facts-logo">
-            <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-          </span>
+    <!-- Badges -->
+    {(category || price_model || tags.length > 0) && (
+      <div class="tool-detail-badges">
+        {category && primaryCategory ? (
+          <a class="badge badge-category" href={`/category/${primaryCategory.slug}/`}>{category}</a>
+        ) : category ? (
+          <span class="badge badge-category">{category}</span>
         ) : null}
-        <div>
-          <strong>{title}</strong>
-          {providerHost ? <small>{providerHost}</small> : null}
-        </div>
+        {price_model && (
+          <span class="badge badge-price">{price_model}</span>
+        )}
+        {displayTags.map((tag) => (
+          <a class="badge badge-tag" href={tagHref(tag)}>{tag}</a>
+        ))}
       </div>
-      <dl>
-        <div><dt>Kategorie</dt><dd>{primaryCategory?.title || category || "KI-Werkzeug"}</dd></div>
-        <div><dt>Preis</dt><dd>{price_model || "n/a"}</dd></div>
-        <div><dt>Status</dt><dd>{isCuratedTool ? "redaktionell" : "Indexeintrag"}</dd></div>
-        <div><dt>Bezahlte Platzierung</dt><dd class="is-red">nein</dd></div>
-      </dl>
+    )}
+
+    <!-- Primary Category Link -->
+    {primaryCategory && (
+      <div class="tool-category-link">
+        <span class="category-label">Kategorie:</span>
+        <a href={`/category/${primaryCategory.slug}/`} class="category-link-anchor">{primaryCategory.title}</a>
+      </div>
+    )}
+
+    {isCuratedTool ? (
       <p class="editorial-note">
-        {isCuratedTool ? "Kuratiert von Utildesk Redaktion" : "Automatisch aus oeffentlichen Quellen erstellt"}
-        {checkedDate ? <span> · geprueft: {checkedDate}</span> : generatedAt ? <span> · Stand: {generatedAt}</span> : null}
+        Kuratiert von <strong>Utildesk Redaktion</strong>
+        {checkedDate ? <span> · zuletzt geprüft: {checkedDate}</span> : null}
         <span> · <a href="/methodologie/">Methodologie</a></span>
       </p>
-    </aside>
+    ) : (
+      <p class="editorial-note">
+        Eintrag automatisch erstellt aus öffentlichen Quellen{generatedAt ? <span> · Stand: {generatedAt}</span> : null}
+        <span> · <a href="/methodologie/">Methodologie</a></span>
+      </p>
+    )}
   </div>
-
-  {editorialImage ? (
-    <figure class="tool-akte-illustration">
-      <p class="tool-akte-illustration-kicker">-&gt; Schlussbild</p>
-      <img src={editorialImage.src} alt={editorialImage.alt} loading="eager" decoding="async" />
-      <figcaption><span>Abbildung 1</span> {title} als Werkzeug, nicht als Orakel - Editorial-Illustration zur Tool-Akte.</figcaption>
-    </figure>
-  ) : null}
 
   <!-- Article Content -->
   <article class="card article">
