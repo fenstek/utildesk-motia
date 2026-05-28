@@ -1,3 +1,5 @@
+import { classifyToolEntry } from "./toolQuality.mjs";
+
 export const ROBOTS_INDEX_FOLLOW =
   "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
 
@@ -205,6 +207,19 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
   const popularity = asNumber(data.popularity);
   const addedAtRank = asNumber(options.addedAtRank);
   const hasAffiliate = Boolean(String(data.affiliate_url || "").trim());
+  const quality = classifyToolEntry(entry);
+  const tierDNoindex =
+    quality.tier === "D" && (quality.bodyLen < 4000 || (!hasAffiliate && popularity <= 0));
+
+  if (tierDNoindex) {
+    return {
+      indexable: false,
+      robots: ROBOTS_NOINDEX_FOLLOW,
+      googlebotRobots: null,
+      reason: "tier_d_thin_or_unmonetized",
+    };
+  }
+
   const hasEditorialBody = hasSubstantialEditorialBody(entry?.content);
 
   const indexable =

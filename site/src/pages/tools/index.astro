@@ -43,7 +43,7 @@ const toolsItemListSchema = {
 };
 const toolsCollectionSchema = buildCollectionPageSchema({
   name: "Utildesk Tools",
-  description: "Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.",
+  description: "Indizierter Tool-Katalog aus öffentlichen Quellen mit redaktionellen Ratgebern als Kontext.",
   url: `${SITE_URL}/tools/`,
   about: ["AI-Tools", "Produktivität", "Automatisierung"],
   mainEntity: toolsItemListSchema,
@@ -56,7 +56,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
 
 <BaseLayout
   title="Tools — Utildesk"
-  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools"
+  description="Indizierter Tool-Katalog aus öffentlichen Quellen mit redaktionellen Ratgebern als Kontext"
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/tools/" />
@@ -69,7 +69,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   <section class="hero" style="padding: 60px 0 40px;">
     <h1 class="hero-title">Tools</h1>
     <p class="hero-subtitle">
-      Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.
+      Indizierter Tool-Katalog aus öffentlichen Quellen.
       Durchsuche alle Tools oder filtere nach Tags.
     </p>
   </section>

@@ -50,7 +50,7 @@ const itemListSchema = {
 };
 const collectionSchema = buildCollectionPageSchema({
   name: "Utildesk AI Tools",
-  description: "Curated directory of AI tools, productivity apps and automation software.",
+  description: "Indexed AI tool catalog from public sources with editorial guides as context.",
   url: `${SITE_URL}/en/tools/`,
   about: ["AI tools", "Productivity", "Automation"],
   mainEntity: itemListSchema,
@@ -65,7 +65,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 <BaseLayout
   locale="en"
   title="AI Tools - Utildesk"
-  description="Curated directory of AI tools, productivity apps and automation software."
+  description="Indexed AI tool catalog from public sources with editorial guides as context."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/en/tools/" />
@@ -77,7 +77,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   <section class="hero" style="padding: 60px 0 40px;">
     <h1 class="hero-title">AI Tools</h1>
     <p class="hero-subtitle">
-      Curated directory of useful AI and productivity tools.
+      Indexed AI tool catalog from public sources.
       Search all tools or filter by tags.
     </p>
   </section>

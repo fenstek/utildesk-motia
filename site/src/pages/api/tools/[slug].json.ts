@@ -5,6 +5,7 @@ import {
   getWordCountFromMarkdown,
 } from "../../../lib/machineReadable";
 import { toAbsoluteUrl } from "../../../lib/siteMeta";
+import { classifyToolEntry, isCuratedTier, stripTemplateBoilerplate } from "../../../lib/toolQuality.mjs";
 
 export const prerender = true;
 
@@ -19,6 +20,10 @@ export async function getStaticPaths() {
 export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof listActiveToolEntries>>[number] } }) {
   const { entry } = props;
   const item = buildToolCatalogItem(entry);
+  const quality = classifyToolEntry(entry);
+  const contentMarkdown = isCuratedTier(quality.tier)
+    ? entry.content
+    : stripTemplateBoilerplate(entry.content);
 
   const payload = {
     version: 1,
@@ -27,9 +32,11 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
     markdownUrl: toAbsoluteUrl(`/markdown/tools/${entry.slug}.md`),
     data: {
       ...item,
-      featureList: extractFeatureList(entry.content),
-      wordCount: getWordCountFromMarkdown(entry.content),
-      contentMarkdown: entry.content,
+      tier: quality.tier,
+      editorialStatus: isCuratedTier(quality.tier) ? "curated" : "automatic",
+      featureList: extractFeatureList(contentMarkdown),
+      wordCount: getWordCountFromMarkdown(contentMarkdown),
+      contentMarkdown,
     },
   };
 

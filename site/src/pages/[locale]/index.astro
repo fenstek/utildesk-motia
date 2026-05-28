@@ -221,7 +221,7 @@ const homepageSchemas = [
   buildWebSiteSchema({ description: SITE_DESCRIPTION_EN, inLanguage: SITE_LANGUAGE_EN }),
   buildCollectionPageSchema({
     name: "Utildesk AI Tools Directory 2026",
-    description: "Curated AI tools directory 2026 with automation, productivity tools and practical guides in English.",
+    description: "Editorial AI guides plus indexed tools from public sources in English.",
     url: `${SITE_URL}/en/`,
     about: ["AI tools directory 2026", "AI tools", "Automation", "Productivity", "Guides"],
     mainEntity: featuredToolsSchema,
@@ -234,7 +234,7 @@ const homepageSchemas = [
 <BaseLayout
   locale="en"
   title="Understand, compare and use AI tools safely - Utildesk"
-  description="Practical guides, curated tool comparisons and clear recommendations for AI tools, automation and safer workflows."
+  description="Editorial AI guides and an indexed tool catalog from public sources for automation and safer workflows."
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/en/" />
@@ -265,7 +265,7 @@ const homepageSchemas = [
         </h1>
         <p class="terminal-copy">
           <span class="terminal-comment"># </span>
-          Practical guides, curated tool comparisons and clear recommendations for real workflows:
+          Editorial guides plus {enabledTools.length} indexed tools from public sources:
           from AI coding and privacy to automation, research and productivity.
         </p>
         <div class="terminal-hero-actions" aria-label="Quick entry points">

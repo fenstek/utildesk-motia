@@ -5,6 +5,7 @@ import { marked } from "marked";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
 import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
 import { CATEGORIES } from "../../../lib/categories";
+import contentLastmodManifest from "../../../data/content-lastmod.json";
 import {
   buildEnglishToolFeatureList,
   buildEnglishToolMarkdown,
@@ -17,6 +18,11 @@ import {
   createToolAddedAtRankMap,
   getToolSearchIndexDecision,
 } from "../../../lib/searchIndexPolicy.mjs";
+import {
+  classifyToolEntry,
+  isCuratedTier,
+  stripTemplateBoilerplate,
+} from "../../../lib/toolQuality.mjs";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { tagHref } from "../../../lib/tagRoutes";
@@ -42,10 +48,13 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { slug } = entry;
+const contentLastmod = contentLastmodManifest as Record<string, string>;
 const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
 const searchIndexDecision = getToolSearchIndexDecision(entry, {
   addedAtRank: toolAddedAtRankMap.get(slug) ?? 0,
 });
+const toolQuality = classifyToolEntry(entry);
+const isCuratedTool = isCuratedTier(toolQuality.tier);
 const meta = getEnglishToolMeta(entry);
 const providerUrl = meta.targetUrl || "";
 const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
@@ -54,7 +63,9 @@ const faviconCandidates = getFaviconCandidates(providerUrl, 128);
 const faviconLogo = faviconCandidates[0] ?? null;
 const logoUrl = brandLogo || localLogo || faviconLogo;
 const logoFallbacks = logoUrl === faviconLogo ? [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(meta.title)] : [];
-const englishMarkdown = buildEnglishToolMarkdown(entry);
+const englishMarkdown = isCuratedTool
+  ? buildEnglishToolMarkdown(entry)
+  : stripTemplateBoilerplate(buildEnglishToolMarkdown(entry));
 const englishMarkdownWithoutAlternatives = englishMarkdown.replace(
   /(?:^|\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\n]*\n[\s\S]*?(?=\n#{1,3}\s|\s*$)/i,
   "",
@@ -62,7 +73,9 @@ const englishMarkdownWithoutAlternatives = englishMarkdown.replace(
 let articleHtml = String(marked.parse(englishMarkdownWithoutAlternatives));
 articleHtml = articleHtml.replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
 const featureList = buildEnglishToolFeatureList(entry);
-const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(englishMarkdown));
+const faqSchema = isCuratedTool
+  ? buildFaqPageSchema(extractFaqPairsFromMarkdown(englishMarkdown))
+  : null;
 const norm = (value: unknown) => String(value ?? "").trim().toLowerCase();
 const categoryNorm = norm(meta.category);
 const seenTags = new Set<string>();
@@ -144,13 +157,33 @@ const alternatives = rawAltItems.reduce<typeof allDisplayTools>((acc, item) => {
 }, []);
 const alternativesTop = alternatives.slice(0, 3);
 const canonicalUrl = `${SITE_URL}/en/tools/${slug}/`;
-const checkedDateSource = entry.data.updated_at || entry.data.updatedAt || entry.data.created_at || entry.data.createdAt || entry.data.date;
+const lastmodKey = `content/tools/${slug}.md`;
+const checkedDateSource =
+  entry.data.lastReviewed ||
+  entry.data.last_reviewed ||
+  entry.data.lastReviewedAt ||
+  entry.data.last_reviewed_at ||
+  (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
 const checkedDate = checkedDateSource
   ? new Intl.DateTimeFormat("en", {
       day: "2-digit",
       month: "long",
       year: "numeric",
     }).format(new Date(String(checkedDateSource)))
+  : "";
+const generatedAtSource =
+  contentLastmod[lastmodKey] ||
+  entry.data.generatedAt ||
+  entry.data.generated_at ||
+  entry.data.created_at ||
+  entry.data.createdAt ||
+  entry.data.date;
+const generatedAt = generatedAtSource
+  ? new Intl.DateTimeFormat("en", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(String(generatedAtSource)))
   : "";
 const offer = buildOfferFromPriceModel(entry.data.price_model ? String(entry.data.price_model) : null);
 if (offer && meta.priceModel) {
@@ -197,7 +230,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />
     <link rel="alternate" type="text/markdown" href={`/en/markdown/tools/${slug}.md`} title={`${meta.title} (Markdown)`} />
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    {isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(schema)} /> : null}
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
@@ -225,11 +258,18 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       </div>
     )}
 
-    <p class="editorial-note">
-      Curated by <strong>Utildesk Editorial</strong>
-      {checkedDate ? <span> · last checked: {checkedDate}</span> : null}
-      <span> · <a href="/en/methodology/">Methodology</a></span>
-    </p>
+    {isCuratedTool ? (
+      <p class="editorial-note">
+        Curated by <strong>Utildesk Editorial</strong>
+        {checkedDate ? <span> · last checked: {checkedDate}</span> : null}
+        <span> · <a href="/en/methodology/">Methodology</a></span>
+      </p>
+    ) : (
+      <p class="editorial-note">
+        Entry automatically created from public sources{generatedAt ? <span> · as of: {generatedAt}</span> : null}
+        <span> · <a href="/en/methodology/">Methodology</a></span>
+      </p>
+    )}
   </div>
 
   <article class="card article">
@@ -252,6 +292,12 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         <span class="tool-float-logo">
           <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
         </span>
+      ) : null}
+      {!isCuratedTool ? (
+        <blockquote class="tool-disclosure">
+          This entry was generated automatically from public provider information and has not been editorially reviewed.
+          For curated context, see our <a href="/en/ratgeber/">guides</a>.
+        </blockquote>
       ) : null}
       <div set:html={articleHtml}></div>
     </div>
@@ -336,6 +382,22 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   }
 
   .editorial-note a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 98, 89, 0.28);
+    text-underline-offset: 2px;
+  }
+
+  .tool-disclosure {
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.2rem;
+    border-left: 3px solid var(--primary);
+    background: var(--surface-container-low);
+    color: var(--secondary);
+    line-height: 1.65;
+  }
+
+  .tool-disclosure a {
     color: var(--primary);
     text-decoration: underline;
     text-decoration-color: rgba(23, 98, 89, 0.28);

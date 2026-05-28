@@ -83,14 +83,14 @@ const decisionNavGuides = locale === "en" ? "Guides" : "Ratgeber";
 const decisionNavMethod = locale === "en" ? "Methodology" : "Methodologie";
 const decisionOldVersion = locale === "en" ? "Old version" : "Alte Version";
 const decisionDeck = locale === "en"
-  ? "An editorial decision desk for AI tools"
-  : "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge";
+  ? "Editorial guides plus indexed AI tools from public sources"
+  : "Redaktionelle Ratgeber plus indizierte KI-Tools aus öffentlichen Quellen";
 const decisionEdited = locale === "en" ? "Edited in Germany" : "Redigiert in Deutschland";
 const decisionBrand = locale === "en" ? "utildesk · decision desk" : "utildesk · entscheidungsblatt";
 const decisionBrandSub = locale === "en" ? "decision desk" : "entscheidungsblatt";
 const decisionFooterLines = locale === "en"
-  ? ["No paid slots. No ranking theater.", "Editorial notes first, tools second."]
-  : ["Keine bezahlten Slots. Kein Ranking-Theater.", "Erst redaktionelle Einordnung, dann Tools."];
+  ? ["No paid slots. No ranking theater.", "Editorial guides + indexed tools from public sources."]
+  : ["Keine bezahlten Slots. Kein Ranking-Theater.", "Redaktionelle Ratgeber + indizierte Tools mit öffentlichen Quellen."];
 const decisionFooterCopyright = `Copyright © ${currentYear} Utildesk`;
 const decisionFooterPrivacy = locale === "en" ? "Privacy" : "Datenschutz";
 const decisionMastheadTitle = (() => {
@@ -158,7 +158,7 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
     : buildCollectionMetaTitle("AI-Tools", "Apps und Produktivitätstools entdecken");
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
-      ? "Browse a curated directory of AI tools by use case, category, pricing model and workflow fit."
+      ? "Browse indexed AI tools by use case, category, pricing model and workflow fit."
       : "Durchsuche das Utildesk-Verzeichnis nach Funktionen, Kategorien und Einsatzbereichen für produktive KI-Workflows.",
   ]);
 } else if (/^(?:\/en)?\/tools\/tag\/[^/]+\/$/.test(pathname)) {
@@ -170,7 +170,7 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
     resolvedDescription || `Tools mit dem Tag ${tagLabel} im Utildesk-Verzeichnis.`,
     [
       locale === "en"
-        ? "Compare matching AI tools, categories and practical use cases in one curated directory."
+        ? "Compare matching AI tools, categories and practical use cases in one indexed directory."
         : "Vergleiche passende Tools, Kategorien und typische Einsatzbereiche auf einen Blick.",
     ],
   );
@@ -241,8 +241,8 @@ if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.
     : "KI-Tools verstehen, vergleichen und sicher einsetzen | Utildesk";
   resolvedDescription = enrichMetaDescription(resolvedDescription, [
     locale === "en"
-      ? "Start with practical AI guides, curated comparisons and compact tool entries for safer workflows."
-      : "Starte mit praxisnahen KI-Ratgebern, kuratierten Vergleichen und kompakten Tool-Einträgen für sichere Workflows.",
+      ? "Start with practical AI guides and compact indexed tool entries from public sources."
+      : "Starte mit praxisnahen KI-Ratgebern und kompakten Tool-Einträgen aus öffentlichen Quellen.",
   ]);
 } else {
   resolvedDescription = enrichMetaDescription(resolvedDescription, [

@@ -1,9 +1,9 @@
 export const SITE_URL = "https://tools.utildesk.de";
 export const SITE_NAME = "Utildesk";
 export const SITE_DESCRIPTION =
-  "Kuratiertes KI-Tools Verzeichnis 2026 fuer AI-Tools, Automatisierung, Produktivitaet und redaktionelle Ratgeber.";
+  "Redaktionelle KI-Ratgeber plus indizierte AI-Tools aus oeffentlichen Quellen.";
 export const SITE_DESCRIPTION_EN =
-  "Curated AI tools directory 2026 for automation, productivity and editorial guides.";
+  "Editorial AI guides plus indexed AI tools from public sources.";
 export const SITE_LANGUAGE = "de-DE";
 export const SITE_LANGUAGE_EN = "en";
 export const ORGANIZATION_LOGO_PATH = "/logo-grid.svg";
