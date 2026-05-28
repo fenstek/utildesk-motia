@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [vector-graphics, design, editing]
 official_url: "https://vectr.com/"
-popularity: 6
+popularity: 7
 description: Vectr ist ein Design- und Kreativwerkzeug für einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken.
 ---
 # Vectr

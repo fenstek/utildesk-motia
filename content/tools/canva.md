@@ -8,7 +8,7 @@ official_url: "https://www.canva.com/"
 affiliate_url: "https://www.canva.com/"
 created_at: 2026-02-07
 updated_at: 2026-05-21
-popularity: 61
+popularity: 60
 description: Canva ist eine Designplattform für Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup.
 ---
 # Canva

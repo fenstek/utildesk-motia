@@ -7,7 +7,7 @@ tags: ["video", "sales", "ai", "demos", "b2b-saas"]
 official_url: "https://www.naoma.ai/"
 affiliate_url: "https://www.naoma.ai/"
 created_at: 2026-05-12
-popularity: 91
+popularity: 89
 ---
 
 # Naoma AI

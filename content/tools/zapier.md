@@ -7,7 +7,7 @@ tags: [ai, devtools, automation]
 official_url: "http://zapier.com"
 created_at: 2026-02-13
 updated_at: 2026-05-21
-popularity: 2
+popularity: 3
 ---
 
 

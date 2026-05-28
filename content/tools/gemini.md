@@ -8,7 +8,7 @@ official_url: "https://gemini.google.com/"
 affiliate_url: "https://gemini.google.com/"
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 95
+popularity: 94
 description: Gemini ist ein KI-Assistent für Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Google-Workflows.
 ---
 # Gemini

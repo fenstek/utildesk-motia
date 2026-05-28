@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: ["ai", "video", "design", "creative", "automation"]
 official_url: "https://animoto.com/"
-popularity: 69
+popularity: 68
 ---
 
 # Animoto
