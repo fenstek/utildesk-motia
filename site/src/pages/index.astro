@@ -53,6 +53,15 @@ const normalizeImagePath = (path: string | null) => {
   return `/${path}`;
 };
 
+const getProviderHost = (url: string | null) => {
+  if (!url) return null;
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+};
+
 const resolveCategoryIcon = (category: string | null, tags: string[]) => {
   const normalizedCategory = category ? category.toLowerCase() : "";
   const normalizedTags = tags.map((tag) => tag.toLowerCase());
@@ -112,6 +121,7 @@ const tools = await Promise.all(
       excerpt,
       homeCardImage,
       homeCardLogo,
+      providerHost: getProviderHost(providerUrl),
       homeCardLogoFallbacks,
       fallbackIcon: resolveCategoryIcon(category, tags),
     };

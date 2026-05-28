@@ -6,6 +6,8 @@ interface ToolItem {
   price_model?: string | null;
   excerpt?: string | null;
   tags?: string[];
+  providerHost?: string | null;
+  homeCardLogo?: string | null;
 }
 
 interface ArticleItem {
@@ -94,7 +96,17 @@ const copy = isEn
       factThree: "Prefer boring logs over impressive demos.",
       antiTitle: "What we would not recommend this week.",
       taskTitle: "Start by task, not by vendor.",
-      indexTitle: "Back matter: compact tool index.",
+      indexTitle: "Tool index \u2014 8 of",
+      indexAppendix: "\u21b3 Appendix",
+      fullIndex: "\u21b3 full index \u00b7 /api/tools.json",
+      tableNo: "\u2116",
+      tableTool: "Tool \u00b7 assessment",
+      tableVerdict: "Verdict",
+      tableTags: "Tags",
+      tableCategory: "Category",
+      tablePrice: "Price",
+      tableOpen: "Open",
+      topTagsLabel: "Top tags ->",
       footer: "No paid slots. No ranking theater. Editorial notes first, tools second.",
       footerLines: ["No paid slots. No ranking theater.", "Editorial notes first, tools second."],
       footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
@@ -136,7 +148,17 @@ const copy = isEn
       factThree: "Lieber langweilige Logs als beeindruckende Demos.",
       antiTitle: "Was wir diese Woche nicht empfehlen würden.",
       taskTitle: "Nach Aufgabe starten, nicht nach Anbieter.",
-      indexTitle: "Hintere Seiten: kompakter Tool-Index.",
+      indexTitle: "Tool-Index \u2014 8 von",
+      indexAppendix: "\u21b3 Anhang",
+      fullIndex: "\u21b3 vollst\u00e4ndiger Index \u00b7 /api/tools.json",
+      tableNo: "\u2116",
+      tableTool: "Tool \u00b7 Einordnung",
+      tableVerdict: "Verdikt",
+      tableTags: "Tags",
+      tableCategory: "Kategorie",
+      tablePrice: "Preis",
+      tableOpen: "Open",
+      topTagsLabel: "Top.Tags ->",
       footer: "Keine bezahlten Slots. Kein Ranking-Theater. Erst redaktionelle Einordnung, dann Tools.",
       footerLines: ["Keine bezahlten Slots. Kein Ranking-Theater.", "Erst redaktionelle Einordnung, dann Tools."],
       footerCopyright: `Copyright © ${copyrightYear} Utildesk`,
@@ -148,6 +170,43 @@ const copy = isEn
 const primaryGuide = guides[0];
 const guideCards = guides.slice(0, 3);
 const toolRows = tools.slice(0, 12);
+const indexRows = tools.slice(0, 8);
+
+const normalizeTagSlug = (tag: string) =>
+  tag
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const shortCategory = (category?: string | null) => {
+  if (!category) return "AI";
+  const value = String(category);
+  const normalized = value.toLowerCase();
+  if (normalized.includes("entwickler")) return isEn ? "Developer" : "Entwickler";
+  if (normalized.includes("automatis")) return "Automation";
+  if (normalized.includes("schreiben")) return isEn ? "Writing" : "Schreiben";
+  if (normalized.includes("design")) return "Design";
+  if (normalized.includes("chatbot")) return "AI";
+  if (normalized.includes("audio")) return "Audio";
+  if (normalized.includes("produkt")) return isEn ? "Productivity" : "Produktivitaet";
+  if (normalized.includes("marketing")) return "Marketing";
+  return value;
+};
+
+const indexVerdictFor = (tool: ToolItem, index: number) => {
+  const haystack = `${tool.title} ${(tool.tags || []).join(" ")} ${tool.excerpt || ""}`.toLowerCase();
+  if (haystack.includes("detector") || haystack.includes("autogpt") || haystack.includes("agent")) {
+    return index % 2 === 0
+      ? { kind: "caution", icon: "\u25d0", label: isEn ? "With caveat" : "Mit Vorbehalt" }
+      : { kind: "overrated", icon: "\u2298", label: isEn ? "Overrated" : "\u00dcberbewertet" };
+  }
+  if (haystack.includes("privacy") || haystack.includes("research") || haystack.includes("search") || haystack.includes("perplexity")) {
+    return { kind: "caution", icon: "\u25d0", label: isEn ? "With caveat" : "Mit Vorbehalt" };
+  }
+  return { kind: "recommend", icon: "\u2713", label: isEn ? "Recommend" : "Empfehlen" };
+};
 const fallbackTasks = isEn
   ? [
       { title: "Compare privacy risk", desc: "Check hosting, retention and auditability before sensitive prompts.", href: `${prefix}/ratgeber/` },
@@ -322,32 +381,62 @@ const categoryRows = categories.slice(0, 8);
         </div>
       </section>
 
-      <section class="ds-index">
-        <div class="ds-index-head">
-          <p class="ds-kicker">↳ Tool-Index</p>
-          <h2>{copy.indexTitle}</h2>
-        </div>
-        <div class="ds-index-grid">
-          <div class="ds-tool-table">
-            {toolRows.map((tool, index) => (
-              <a href={`${prefix}/tools/${tool.slug}/`}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{tool.title}</strong>
-                <em>{tool.category || "AI"}</em>
-                <small>{tool.price_model || "n/a"}</small>
-              </a>
-            ))}
+      <section class="ds-index ds-index-appendix">
+        <div class="ds-index-head ds-index-head-spread">
+          <div>
+            <p class="ds-kicker">{copy.indexAppendix}</p>
+            <h2>{copy.indexTitle} {toolsCount}</h2>
           </div>
-          <aside>
-            <h3>Tags</h3>
-            <div class="ds-tags">
-              {tagRows.map(([tag, count]) => <a href={`${prefix}/tools/tag/${tag.toLowerCase().replaceAll(" ", "-")}/`}>#{tag}<span>{count}</span></a>)}
-            </div>
-            <h3>{isEn ? "Categories" : "Kategorien"}</h3>
-            <div class="ds-cats">
-              {categoryRows.map((cat) => <a href={`${prefix}/category/${cat.slug}/`}><span>{isEn ? cat.titleEn : cat.title}</span><strong>{cat.count}</strong></a>)}
-            </div>
-          </aside>
+          <a class="ds-index-api" href="/api/tools.json">{copy.fullIndex}</a>
+        </div>
+
+        <div class="ds-index-table" role="table" aria-label={copy.navTools}>
+          <div class="ds-index-table-head" role="row">
+            <span>{copy.tableNo}</span>
+            <span>{"\u00b7"}</span>
+            <span>{copy.tableTool}</span>
+            <span>{copy.tableVerdict}</span>
+            <span>{copy.tableTags}</span>
+            <span>{copy.tableCategory}</span>
+            <span>{copy.tablePrice}</span>
+            <span>{copy.tableOpen}</span>
+          </div>
+          {indexRows.map((tool, index) => {
+            const verdict = indexVerdictFor(tool, index);
+            const tagsForRow = (tool.tags || []).slice(0, 3);
+            return (
+              <a class="ds-index-row" href={`${prefix}/tools/${tool.slug}/`} role="row">
+                <span class="ds-index-no">{String(index + 1).padStart(2, "0")}</span>
+                <span class="ds-index-tool">
+                  <span class="ds-index-logo" aria-hidden="true">
+                    {tool.homeCardLogo ? <img src={tool.homeCardLogo} alt="" loading="lazy" /> : <span>{tool.title.slice(0, 1)}</span>}
+                  </span>
+                  <span>
+                    <strong>{tool.title}</strong>
+                    {tool.providerHost && <small>{tool.providerHost}</small>}
+                    <em>{tool.excerpt || (isEn ? "Compact entry in the Utildesk index." : "Kompakter Eintrag im Utildesk-Verzeichnis.")}</em>
+                  </span>
+                </span>
+                <span class={`ds-index-verdict ds-index-verdict-${verdict.kind}`}>
+                  <b>{verdict.icon}</b>
+                  <span>{verdict.label}</span>
+                </span>
+                <span class="ds-index-tags">
+                  {tagsForRow.map((tag) => <span>#{tag}</span>)}
+                </span>
+                <span class="ds-index-category">{shortCategory(tool.category)}</span>
+                <span class="ds-index-price">{tool.price_model || "n/a"}</span>
+                <span class="ds-index-open" aria-hidden="true">{"\u2197"}</span>
+              </a>
+            );
+          })}
+        </div>
+
+        <div class="ds-index-top-tags" aria-label={isEn ? "Top tags" : "Top-Tags"}>
+          <span>{copy.topTagsLabel}</span>
+          {tagRows.map(([tag, count]) => (
+            <a href={`${prefix}/tools/tag/${normalizeTagSlug(tag)}/`}>#{tag}<small>{count}</small></a>
+          ))}
         </div>
       </section>
 
