@@ -4195,6 +4195,36 @@ html[data-design="decision"]:not(:has(.ds-template)) .site-header {
 
 html[data-design="decision"]:not(:has(.ds-template)) .site-header .container {
   border-bottom: 1px solid #d8d4c5;
+  grid-template-columns: minmax(0, 1.2fr) auto minmax(0, 0.7fr);
+  font: 11px/1.35 "JetBrains Mono", monospace;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand {
+  width: 204px;
+  flex: 0 0 204px;
+  gap: 0.5ch;
+  font: 700 11px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand-dot,
+html[data-design="decision"]:not(:has(.ds-template)) .brand-sub {
+  color: #0c0c0a;
+  font-weight: 700;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .brand-sub,
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-meta {
+  font: 11px/1.35 "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .hdr-top {
+  justify-content: flex-start;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .nav-actions #theme-toggle.theme-toggle {
+  display: none !important;
 }
 
 html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
