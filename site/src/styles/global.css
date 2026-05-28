@@ -4277,6 +4277,28 @@ html[data-design="decision"]:not(:has(.ds-template)) .footer-links a:focus-visib
   color: #e0261d;
 }
 
+/* Interior header now reuses the homepage ds-nav structure verbatim. */
+.interior-decision-nav {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .site-header > .container {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav {
+  display: grid;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-nav-links a:first-child {
+  border-bottom-color: transparent;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-nav-links a[aria-current="page"] {
+  border-bottom-color: #c5251c;
+  padding-bottom: 2px;
+}
+
 /* Claude handoff appendix: full-width homepage tool index, no category sidebar. */
 .ds-index-appendix {
   padding: 42px 56px 52px;
