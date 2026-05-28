@@ -12,6 +12,9 @@ popularity: 0
 
 Wave.video ist eine vielseitige Online-Plattform zur Erstellung und Bearbeitung von Videos, die speziell für Marketing, Social Media und Streaming konzipiert wurde. Mit einer benutzerfreundlichen Oberfläche ermöglicht sie sowohl Anfängern als auch Profis, ansprechende Videoinhalte schnell zu produzieren und zu teilen. Das Tool kombiniert Videoerstellung, -bearbeitung und Hosting in einem und bietet zahlreiche Vorlagen, Effekte und Anpassungsmöglichkeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/wave-video-editorial.webp" alt="Illustration zu Wave.video: Storyboards, Formate und Streaming-Elemente werden zu Marketingvideos zusammengesetzt" loading="lazy" decoding="async" />
+</figure>
 ## Für wen ist Wave.video geeignet?
 
 Wave.video richtet sich an Einzelpersonen, kleine bis mittelgroße Unternehmen, Marketing-Teams und Content-Ersteller, die professionelle Videos für Werbung, Social Media, Webinare oder Livestreams benötigen. Besonders geeignet ist es für Nutzer, die keine tiefgehenden Kenntnisse in Videobearbeitung besitzen, aber dennoch ansprechende Clips erstellen möchten. Auch Social-Media-Manager und Influencer profitieren von den Vorlagen und der einfachen Integration in verschiedene Plattformen.

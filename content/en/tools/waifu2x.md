@@ -17,6 +17,9 @@ translation: full
 
 Waifu2x is an open-source tool that uses artificial intelligence to upscale images while reducing noise at the same time. Originally developed to enhance anime images, it is now also used for photos and other graphics. The tool uses neural networks to reconstruct details and improve image quality without heavy artifacts.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/waifu2x-editorial.webp" alt="Illustration for Waifu2x: small noisy graphics are enlarged into clean artwork" loading="lazy" decoding="async" />
+</figure>
 ## Who is Waifu2x for?
 
 Waifu2x is aimed at users who need high-quality image enlargement without relying on expensive software. It is especially suitable for:

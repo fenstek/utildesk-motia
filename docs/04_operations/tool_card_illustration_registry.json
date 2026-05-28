@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-05-27",
   "purpose": "Persistent registry of tool cards that already received editorial mid-article illustrations. Check this file before adding future tool-card artwork so the same page is not illustrated twice.",
   "selection_rule": "Exclude every slug listed in batches[].slugs unless the user explicitly asks to replace or revise an existing illustration.",
   "batches": [
@@ -2531,14 +2531,13 @@
       "image_format": "webp",
       "image_width_px": 1260,
       "placement": "mid-article image-only figure before the main functions/features section",
-      "note": "Third sequential story batch: expanded the narrative range beyond dashboards and tables, with a replacement final ubersuggest image chosen instead of the original version.",
+      "note": "Third sequential story batch: expanded the narrative range beyond dashboards and tables, with a replacement final ubersuggest image chosen instead of the original version. A 2026-05-27 audit removed two duplicate registry entries from this batch; unique backfill entries are recorded separately.",
       "slugs": [
         "textadventures-co-uk",
         "textai",
         "textblob",
         "textcortex",
         "textrazor",
-        "theia",
         "thunkable",
         "ticktick",
         "tidio",
@@ -2553,7 +2552,6 @@
         "transistor",
         "travelperk",
         "trelby",
-        "trello-mit-butler",
         "tresorit",
         "tripactions",
         "turboscribe",
@@ -2570,7 +2568,6 @@
         "content/images/tools/textblob-editorial.webp",
         "content/images/tools/textcortex-editorial.webp",
         "content/images/tools/textrazor-editorial.webp",
-        "content/images/tools/theia-editorial.webp",
         "content/images/tools/thunkable-editorial.webp",
         "content/images/tools/ticktick-editorial.webp",
         "content/images/tools/tidio-editorial.webp",
@@ -2585,7 +2582,6 @@
         "content/images/tools/transistor-editorial.webp",
         "content/images/tools/travelperk-editorial.webp",
         "content/images/tools/trelby-editorial.webp",
-        "content/images/tools/trello-mit-butler-editorial.webp",
         "content/images/tools/tresorit-editorial.webp",
         "content/images/tools/tripactions-editorial.webp",
         "content/images/tools/turboscribe-editorial.webp",
@@ -2607,12 +2603,11 @@
       "image_format": "webp",
       "image_width_px": 1260,
       "placement": "mid-article image-only figure before the main functions/features section",
-      "note": "Fourth story batch after ubersuggest, expanding into learning, video, remote development, business communications, and research scenes.",
+      "note": "Fourth story batch after ubersuggest, expanding into learning, video, remote development, business communications, and research scenes. A 2026-05-27 audit removed two duplicate registry entries from this batch; unique backfill entries are recorded separately.",
       "slugs": [
         "udacity",
         "udemy",
         "udio",
-        "uipath",
         "ukg-pro",
         "unity",
         "v0",
@@ -2623,7 +2618,6 @@
         "veed-io",
         "vercel-ai",
         "verkada",
-        "veryfi",
         "viktor-for-media-buyers",
         "visier",
         "visme",
@@ -2644,7 +2638,6 @@
         "content/images/tools/udacity-editorial.webp",
         "content/images/tools/udemy-editorial.webp",
         "content/images/tools/udio-editorial.webp",
-        "content/images/tools/uipath-editorial.webp",
         "content/images/tools/ukg-pro-editorial.webp",
         "content/images/tools/unity-editorial.webp",
         "content/images/tools/v0-editorial.webp",
@@ -2655,7 +2648,6 @@
         "content/images/tools/veed-io-editorial.webp",
         "content/images/tools/vercel-ai-editorial.webp",
         "content/images/tools/verkada-editorial.webp",
-        "content/images/tools/veryfi-editorial.webp",
         "content/images/tools/viktor-for-media-buyers-editorial.webp",
         "content/images/tools/visier-editorial.webp",
         "content/images/tools/visme-editorial.webp",
@@ -2671,6 +2663,30 @@
         "content/images/tools/vosviewer-editorial.webp",
         "content/images/tools/vs-code-dev-containers-editorial.webp",
         "content/images/tools/vsco-editorial.webp"
+      ]
+    },
+    {
+      "id": "2026-05-27-duplicate-backfill-4-story-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1260,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "note": "Backfills four unique tool-card illustrations after removing duplicate registry entries from the two latest story batches.",
+      "slugs": [
+        "vyrill",
+        "waifu2x",
+        "wave",
+        "wave-video"
+      ],
+      "images": [
+        "content/images/tools/vyrill-editorial.webp",
+        "content/images/tools/waifu2x-editorial.webp",
+        "content/images/tools/wave-editorial.webp",
+        "content/images/tools/wave-video-editorial.webp"
       ]
     }
   ]

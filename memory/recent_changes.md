@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-21_
+_Last updated: 2026-05-27_
+
+## 2026-05-27 - Tool illustration duplicate backfill
+
+- Audited the latest story illustration batches and found four duplicate registry entries from earlier illustrated cards: `theia`, `trello-mit-butler`, `uipath`, and `veryfi`.
+- Removed those duplicate registry entries and added four unique 1260x800 WebP story illustrations for the next edited-tail cards: `vyrill`, `waifu2x`, `wave`, and `wave-video`.
+- Inserted localized image-only `tool-editorial-figure` blocks in German and English and recorded the backfill in `docs/04_operations/tool_card_illustration_registry.json`.
 
 ## 2026-05-21 - Popular tool-card recency refresh
 
