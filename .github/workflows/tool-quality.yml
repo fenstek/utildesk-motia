@@ -1,0 +1,54 @@
+name: Tool quality guard
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - autobot
+
+jobs:
+  tool-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Editorial template check
+        run: npm run check:editorial
+
+      - name: English tool translation check
+        run: npm run check:tools:en
+
+      - name: Tool quality guard
+        run: npm run check:tool-quality
+
+      - name: Category normalization dry run
+        run: |
+          node --no-warnings scripts/normalize-categories.ts > /tmp/normalize-categories.json
+          node -e '
+            const fs = require("node:fs");
+            const result = JSON.parse(fs.readFileSync("/tmp/normalize-categories.json", "utf8"));
+            if (result.changed !== 0) {
+              console.error(JSON.stringify(result, null, 2));
+              process.exit(1);
+            }
+            if (result.uniqueCategoriesAfter > 14) {
+              console.error(JSON.stringify(result, null, 2));
+              process.exit(1);
+            }
+            console.log(JSON.stringify({
+              changed: result.changed,
+              totalTools: result.totalTools,
+              uniqueCategoriesAfter: result.uniqueCategoriesAfter
+            }, null, 2));
+          '
