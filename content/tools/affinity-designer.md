@@ -6,9 +6,9 @@ price_model: Freemium
 tags: [ai, design]
 official_url: "https://affinity.serif.com/de/designer/"
 created_at: 2026-02-12
-popularity: 75
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 74
+tier: C
+generated_at: 2026-05-28
 ---
 # Affinity Designer
 

@@ -1,13 +1,13 @@
 ---
 slug: groq
 title: Groq
-category: "AI Coding"
+category: AI Coding
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://groq.com"
-popularity: 44
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 43
+tier: C
+generated_at: 2026-05-27
 ---
 # Groq
 

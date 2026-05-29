@@ -1,13 +1,13 @@
 ---
 slug: grafana
 title: Grafana
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Freemium
 tags: [monitoring, observability, dashboards]
 official_url: "https://grafana.com/"
-popularity: 92
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 90
+tier: C
+generated_at: 2026-05-28
 ---
 # Grafana
 

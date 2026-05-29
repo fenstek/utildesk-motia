@@ -1,15 +1,15 @@
 ---
 slug: genei
 title: Genei
-category: "AI Writing"
+category: AI Writing
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://www.genei.io"
 affiliate_url: "https://www.genei.io"
-tier: "D"
-generated_at: "2026-05-28"
+tier: D
+generated_at: 2026-05-28
 created_at: 2026-02-11
-popularity: 93
+popularity: 91
 ---
 # Genei
 

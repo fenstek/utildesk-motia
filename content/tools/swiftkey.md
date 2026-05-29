@@ -1,13 +1,13 @@
 ---
 slug: swiftkey
 title: SwiftKey
-category: "AI Image"
+category: AI Image
 price_model: Freemium
 tags: [keyboard, mobile, productivity]
 official_url: "https://www.microsoft.com/en-us/swiftkey"
-popularity: 12
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 11
+tier: C
+generated_at: 2026-05-27
 ---
 # SwiftKey
 

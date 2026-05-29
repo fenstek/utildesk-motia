@@ -1,13 +1,13 @@
 ---
 slug: udemy
 title: Udemy
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Je nach Plan
 tags: [education, courses, learning, skills]
 official_url: "https://www.udemy.com/"
-popularity: 9
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 8
+tier: C
+generated_at: 2026-05-27
 ---
 # Udemy
 

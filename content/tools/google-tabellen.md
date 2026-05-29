@@ -1,13 +1,13 @@
 ---
 slug: google-tabellen
 title: Google Tabellen
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Freemium
 tags: ["spreadsheet", "data", "productivity"]
 official_url: "https://workspace.google.com/products/sheets/"
-popularity: 92
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 91
+tier: C
+generated_at: 2026-05-28
 ---
 # Google Tabellen
 

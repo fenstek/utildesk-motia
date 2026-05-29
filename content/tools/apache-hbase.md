@@ -1,13 +1,13 @@
 ---
 slug: apache-hbase
 title: Apache HBase
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://hbase.apache.org/"
-popularity: 67
-tier: "C"
-generated_at: "2026-05-26"
+popularity: 66
+tier: C
+generated_at: 2026-05-26
 ---
 # Apache HBase
 

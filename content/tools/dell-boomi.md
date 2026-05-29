@@ -1,13 +1,13 @@
 ---
 slug: dell-boomi
 title: Dell Boomi
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Abonnement
 tags: [integration, automation, data, api]
 official_url: "https://boomi.com/"
-popularity: 53
-tier: "D"
-generated_at: "2026-05-27"
+popularity: 51
+tier: D
+generated_at: 2026-05-27
 ---
 # Dell Boomi
 

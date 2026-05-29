@@ -1,13 +1,13 @@
 ---
 slug: sap-sales-cloud
 title: SAP Sales Cloud
-category: "Marketing & Vertrieb"
+category: Marketing & Vertrieb
 price_model: Abonnement
 tags: [crm, sales, enterprise, automation]
 official_url: "https://www.sap.com/products/crm/sales-cloud.html"
-popularity: 17
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 16
+tier: C
+generated_at: 2026-05-28
 ---
 # SAP Sales Cloud
 

@@ -1,13 +1,13 @@
 ---
 slug: acapela-group
 title: Acapela Group
-category: "AI Audio"
+category: AI Audio
 price_model: Je nach Plan
 tags: [text-to-speech, voice, audio]
 official_url: "https://www.acapela-group.com/"
-popularity: 80
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 79
+tier: C
+generated_at: 2026-05-28
 ---
 # Acapela Group
 

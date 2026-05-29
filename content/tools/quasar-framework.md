@@ -1,13 +1,13 @@
 ---
 slug: quasar-framework
 title: Quasar Framework
-category: "AI Coding"
+category: AI Coding
 price_model: Open Source
 tags: [developer-tools, web, mobile, open-source]
 official_url: "https://quasar.dev/"
-popularity: 21
-tier: "D"
-generated_at: "2026-05-27"
+popularity: 20
+tier: D
+generated_at: 2026-05-27
 ---
 # Quasar Framework
 

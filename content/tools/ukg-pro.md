@@ -1,13 +1,13 @@
 ---
 slug: ukg-pro
 title: UKG Pro (Ultimate Kronos Group)
-category: "AI Image"
+category: AI Image
 price_model: Je nach Plan
 tags: [hcm, hr, payroll]
 official_url: "https://www.ukg.com/solutions/hcm/ukg-pro"
-popularity: 8
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 7
+tier: C
+generated_at: 2026-05-27
 ---
 # UKG Pro (Ultimate Kronos Group)
 

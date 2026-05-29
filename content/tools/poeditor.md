@@ -1,13 +1,13 @@
 ---
 slug: poeditor
 title: POEditor
-category: "AI Coding"
+category: AI Coding
 price_model: Je nach Plan
 tags: [localization, translation-management, developers]
 official_url: "https://poeditor.com/"
-popularity: 24
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 23
+tier: C
+generated_at: 2026-05-27
 ---
 # POEditor
 

@@ -6,10 +6,10 @@ price_model: Freemium
 tags: 
 official_url: "https://openai.com/dall-e"
 affiliate_url: "https://openai.com/dall-e"
-tier: "D"
-generated_at: "2026-05-28"
+tier: D
+generated_at: 2026-05-28
 created_at: 2026-02-03
-popularity: 96
+popularity: 94
 ---
 # DALL·E
 

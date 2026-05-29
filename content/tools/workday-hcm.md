@@ -1,13 +1,13 @@
 ---
 slug: workday-hcm
 title: Workday HCM
-category: "AI Coding"
+category: AI Coding
 price_model: 
 tags: [hcm, hr, enterprise-software]
 official_url: "https://www.workday.com/en-us/products/human-capital-management/overview.html"
-popularity: 83
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 82
+tier: C
+generated_at: 2026-05-28
 ---
 # Workday HCM
 

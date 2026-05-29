@@ -1,15 +1,15 @@
 ---
 slug: stable-diffusion
 title: Stable Diffusion
-category: "AI Image"
+category: AI Image
 price_model: Freemium
 tags: ["ai", "image"]
 official_url: "https://stability.ai/stable-diffusion"
 affiliate_url: "https://stability.ai/stable-diffusion"
-tier: "C"
-generated_at: "2026-05-18"
+tier: C
+generated_at: 2026-05-18
 created_at: 2026-02-02
-popularity: 0
+popularity: 12
 ---
 # Stable Diffusion
 

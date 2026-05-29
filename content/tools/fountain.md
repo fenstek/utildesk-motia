@@ -1,13 +1,13 @@
 ---
 slug: fountain
 title: Fountain
-category: "AI Image"
+category: AI Image
 price_model: Abonnement
 tags: [recruiting, hr, automation, ai]
 official_url: "https://www.fountain.com/"
-popularity: 49
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 48
+tier: C
+generated_at: 2026-05-27
 ---
 # Fountain
 

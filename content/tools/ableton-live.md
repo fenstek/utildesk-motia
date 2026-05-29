@@ -1,13 +1,13 @@
 ---
 slug: ableton-live
 title: Ableton Live
-category: "Audio & Video"
+category: Audio & Video
 price_model: Je nach Plan
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 80
+tier: C
+generated_at: 2026-05-11
 ---
 # Ableton Live
 

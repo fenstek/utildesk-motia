@@ -1,13 +1,13 @@
 ---
 slug: microsoft-azure-api-management
 title: Microsoft Azure API Management
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://azure.microsoft.com/en-us/products/api-management"
-popularity: 90
-tier: "D"
-generated_at: "2026-05-28"
+popularity: 89
+tier: D
+generated_at: 2026-05-28
 ---
 # Microsoft Azure API Management
 

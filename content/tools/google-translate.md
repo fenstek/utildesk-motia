@@ -1,15 +1,15 @@
 ---
 slug: google-translate
 title: Google Translate
-category: "AI Writing"
+category: AI Writing
 price_model: Freemium
 tags: ["writing"]
 official_url: "https://translate.google.com"
 created_at: 2026-02-11
 updated_at: 2026-05-21
-popularity: 46
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 45
+tier: C
+generated_at: 2026-05-27
 ---
 # Google Translate
 

@@ -1,14 +1,14 @@
 ---
 slug: talon
 title: Talon
-category: "AI Agents"
+category: AI Agents
 price_model: Freemium
 tags: [ai, assistant, productivity, automation, workflow]
 official_url: "https://talonvoice.com/"
-popularity: 10
+popularity: 9
 description: Talon ist ein Voice-Control- und Automatisierungstool für hands-free Computing, Programmieren und produktive Workflows.
-tier: "C"
-generated_at: "2026-05-28"
+tier: C
+generated_at: 2026-05-28
 ---
 # Talon
 

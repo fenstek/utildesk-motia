@@ -5,9 +5,9 @@ category: Design
 price_model: Free
 tags: [design, logo, branding, marketing]
 official_url: "https://www.shopify.com/tools/logo-maker"
-popularity: 43
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 42
+tier: C
+generated_at: 2026-05-27
 ---
 # Hatchful by Shopify
 

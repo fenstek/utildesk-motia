@@ -1,13 +1,13 @@
 ---
 slug: nintex
 title: Nintex
-category: "AI Agents"
+category: AI Agents
 price_model: Je nach Plan
 tags: [workflow-automation, process-management, enterprise]
 official_url: "https://www.nintex.com/"
-popularity: 28
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 27
+tier: C
+generated_at: 2026-05-27
 ---
 # Nintex
 

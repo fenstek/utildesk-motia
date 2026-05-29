@@ -1,13 +1,13 @@
 ---
 slug: workato
 title: Workato
-category: "AI Agents"
+category: AI Agents
 price_model: 
 tags: ["automation", "workflow", "no-code", "productivity"]
 official_url: "https://www.workato.com/"
-popularity: 84
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 83
+tier: C
+generated_at: 2026-05-28
 ---
 # Workato
 
