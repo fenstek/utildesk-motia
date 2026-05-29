@@ -587,6 +587,25 @@ const softwareApplicationSchema = {
         <span> · <a href="/methodologie/">Methodologie</a></span>
       </p>
     )}
+
+    {oneliner && (
+      <section class="akte-tldr" aria-label="TL;DR">
+        <div class="akte-tldr-aside">
+          <span class="akte-tldr-kicker">In 60 Sek.</span>
+          <span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span>
+        </div>
+        <div class="akte-tldr-body">
+          <p>{oneliner}</p>
+          {category && (
+            <p class="akte-tldr-meta">
+              Kategorie: <strong>{category}</strong>
+              {price_model ? <span> · Preis: <strong>{price_model}</strong></span> : null}
+              {providerDomain ? <span> · {providerDomain}</span> : null}
+            </p>
+          )}
+        </div>
+      </section>
+    )}
   </div>
 
   <!-- Article Content -->
@@ -662,6 +681,19 @@ const softwareApplicationSchema = {
       </div>
     </section>
   )}
+
+  <div class="tool-akte">
+    <aside class="akte-colophon" aria-label="Colophon">
+      <span><span class="akte-colophon-key">Akte</span>{vendorName ? ` ${vendorName}` : ` ${title}`}</span>
+      <span><span class="akte-colophon-key">Status</span> {isCuratedTool ? "kuratiert" : "automatisch"}</span>
+      {lastCheckedShort && (
+        <span><span class="akte-colophon-key">Letzte Prüfung</span> {lastCheckedShort}</span>
+      )}
+      <span><span class="akte-colophon-key">Daten</span> <a href={`/api/tools/${slug}.json`}>/api/tools/{slug}.json</a></span>
+      <span><span class="akte-colophon-key">Lizenz</span> CC BY-NC 4.0</span>
+      <span class="akte-colophon-paid">0 bezahlte Platzierungen</span>
+    </aside>
+  </div>
 </BaseLayout>
 
 <style>

@@ -133,71 +133,95 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
-  <nav class="breadcrumb">
-    <a href="/">Startseite</a>
-    <span>/</span>
-    <a href="/ratgeber/">Ratgeber</a>
-    <span>/</span>
-    <span>{title}</span>
-  </nav>
+  <div class="tool-akte sheet-wrap">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <a href="/ratgeber/">Ratgeber</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">{title}</span>
+    </nav>
 
-  <header class="article-head">
-    <p class="article-eyebrow">{data.eyebrow || "Ratgeber"}</p>
-    <h1>{title}</h1>
-    <p class="article-byline">
-      Von <strong>Utildesk Redaktion</strong> · redaktionell geprüft · <a href="/methodologie/">Methodologie</a>
-    </p>
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">
+        ↳ Entscheidung № {String(Math.abs(slug.length * 7 + 41) % 999 + 1).padStart(3, "0")} · {data.eyebrow || data.category || "AI Tool Review"}
+      </div>
+      <h1 class="sheet-head-h1">
+        {title}<span class="akte-mast-dot">.</span>
+      </h1>
+      {data.excerpt && (
+        <p class="sheet-head-dek">{data.excerpt}</p>
+      )}
 
-    <div class="article-pills">
-      {published && addRenderedPill(published) ? <span class="pill">{published}</span> : null}
-      {data.readTime && addRenderedPill(`${data.readTime} Min. Lesen`) ? <span class="pill">{data.readTime} Min. Lesen</span> : null}
-      {data.category && !categoryIsRedundant && addRenderedPill(data.category) ? <span class="pill pill--accent">{data.category}</span> : null}
-      {data.relatedTools?.map((tool: {href: string, title: string}) => {
-        if (!addRenderedPill(tool.title)) {
-          return null;
-        }
-        return <a href={tool.href} class="pill pill--tool">{tool.title}</a>;
-      })}
-      {data.tags?.map((tag: string) => {
-        const tagKey = normalizeMetaLabel(tag);
-        if (!tagKey || relatedToolSet.has(tagKey) || !addRenderedPill(tag)) {
-          return null;
-        }
-        return <a href={tagHref(tag)} class="pill pill--tool">{tag}</a>;
-      })}
-    </div>
-  </header>
+      <div class="sheet-head-meta">
+        <span class="sheet-head-byline">Von <strong>Utildesk Redaktion</strong></span>
+        {published && <span>· {published}</span>}
+        {data.readTime && <span>· {data.readTime} Min. Lesen</span>}
+        <span>· <a href="/methodologie/">Methodologie</a></span>
+      </div>
 
-  {data.coverImage ? (
-    <figure class="article-cover">
-      <button
-        type="button"
-        class="article-cover-trigger js-lightbox-image"
-        data-lightbox-src={data.coverImage}
-        data-lightbox-alt={data.eyebrow || "Illustration"}
-        aria-label={`Illustration vergrößern: ${title}`}
-      >
-        <img src={data.coverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
-      </button>
-    </figure>
-  ) : null}
+      {(data.category || data.relatedTools?.length || data.tags?.length) && (
+        <div class="akte-chips sheet-chips">
+          {data.category && !categoryIsRedundant && addRenderedPill(data.category) ? (
+            <span class="akte-chip akte-chip-category">{data.category}</span>
+          ) : null}
+          {data.relatedTools?.map((tool: {href: string, title: string}) => {
+            if (!addRenderedPill(tool.title)) return null;
+            return <a href={tool.href} class="akte-chip akte-chip-tag">{tool.title}</a>;
+          })}
+          {data.tags?.map((tag: string) => {
+            const tagKey = normalizeMetaLabel(tag);
+            if (!tagKey || relatedToolSet.has(tagKey) || !addRenderedPill(tag)) return null;
+            return <a href={tagHref(tag)} class="akte-chip akte-chip-tag">#{tag}</a>;
+          })}
+        </div>
+      )}
+    </header>
 
-  <div class="article-body">
-    <article class="ratgeber-prose" set:html={articleHtml}></article>
-
-    {data.sidebarPoints?.length ? (
-      <aside class="article-summary">
-        <p class="summary-label">{data.sidebarTitle || "Kurzfazit"}</p>
-        <ul class="summary-list">
-          {data.sidebarPoints.map((point) => <li>{point}</li>)}
-        </ul>
-      </aside>
+    {data.coverImage ? (
+      <figure class="sheet-cover">
+        <button
+          type="button"
+          class="article-cover-trigger js-lightbox-image sheet-cover-btn"
+          data-lightbox-src={data.coverImage}
+          data-lightbox-alt={data.eyebrow || "Illustration"}
+          aria-label={`Illustration vergrößern: ${title}`}
+        >
+          <img src={data.coverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
+        </button>
+        <figcaption>
+          <span class="sheet-cover-tag">Abbildung 1</span>
+          {data.eyebrow || data.category || "Editorial-Illustration"} — Akte zu {title}.
+        </figcaption>
+      </figure>
     ) : null}
-  </div>
 
-  <footer class="article-footer">
-    <a href="/ratgeber/" class="footer-back">← Alle Ratgeber</a>
-  </footer>
+    <div class="sheet-body">
+      <article class="ratgeber-prose akte-article-body sheet-prose" set:html={articleHtml}></article>
+
+      {data.sidebarPoints?.length ? (
+        <aside class="sheet-summary" aria-label={data.sidebarTitle || "Kurzfazit"}>
+          <div class="sheet-summary-tab">{data.sidebarTitle || "Kurzfazit"}</div>
+          <ul>
+            {data.sidebarPoints.map((point) => <li>{point}</li>)}
+          </ul>
+        </aside>
+      ) : null}
+    </div>
+
+    <footer class="sheet-foot">
+      <div class="sheet-foot-left">
+        <div class="sheet-foot-kicker">Diese Entscheidung</div>
+        <p class="sheet-foot-line">
+          Wir überprüfen Ratgeber regelmäßig. {published ? `Letzte Veröffentlichung ${published}.` : ""}
+        </p>
+      </div>
+      <div class="sheet-foot-actions">
+        <a class="akte-action akte-action-primary" href="/ratgeber/">↩ Zum Ratgeber-Archiv</a>
+        <a class="akte-action akte-action-ghost" href="/tools/">⇄ Tool-Index</a>
+      </div>
+    </footer>
+  </div>
 
   <!-- Lightbox for inline images -->
   <dialog id="img-lightbox" class="lightbox">
