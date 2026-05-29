@@ -6416,3 +6416,51 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
     align-items: flex-start;
   }
 }
+
+
+/* Final polish: active nav must follow aria-current, interior paper must stay continuous, tool dossiers stay readable in decision mode. */
+html[data-design="decision"] .ds-nav-links a:first-child {
+  border-bottom-color: transparent;
+}
+
+html[data-design="decision"] .ds-nav-links a[aria-current="page"] {
+  border-bottom: 2px solid var(--vermillion);
+  padding-bottom: 2px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) main.container {
+  display: flow-root;
+  padding-top: 28px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .breadcrumb,
+html[data-design="decision"]:not(:has(.ds-template)) .akte-crumb {
+  margin-top: 0;
+}
+
+:root[data-design="decision"] .tool-akte {
+  --akte-vermillion: #c5251c;
+  --akte-parchment: #e8e3d2;
+  --akte-ink: #0c0c0a;
+  --akte-ink-soft: #3a3a35;
+  --akte-ink-mid: #6a6a62;
+  --akte-rule: #d8d4c5;
+  --akte-rule-hi: #b6b1a0;
+  --akte-paper: #f6f4ee;
+  --akte-paper-alt: #eeece4;
+}
+
+html[data-design="decision"] .akte-faktenblatt {
+  background: var(--akte-parchment);
+  color: var(--akte-ink-soft);
+}
+
+html[data-design="decision"] .akte-faktenblatt-vendor-name,
+html[data-design="decision"] .akte-faktenblatt-row .akte-faktenblatt-val {
+  color: var(--akte-ink);
+}
+
+html[data-design="decision"] .akte-mast-h1 .akte-mast-dot,
+html[data-design="decision"] .inv-head-h1 .akte-mast-dot {
+  margin-left: 0.025em;
+}
