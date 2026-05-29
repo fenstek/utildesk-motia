@@ -59,6 +59,7 @@ const isEn = locale === "en";
 const prefix = isEn ? "/en" : "";
 const issueNo = "049";
 const today = "27.05.2026";
+const issueDateLine = isEn ? "Wednesday \u00b7 27 May 2026" : "Mittwoch \u00b7 27. Mai 2026";
 const copyrightYear = 2026;
 const totalGuides = typeof guidesCount === "number" ? guidesCount : guides.length;
 const copy = isEn
@@ -70,7 +71,7 @@ const copy = isEn
       navGuides: "Guides",
       navTools: "Tool index",
       navMethod: "Methodology",
-      masthead: "Decision Desk",
+      masthead: "KI-Blatt",
       mastSub: "An editorial decision desk for AI tools",
       issueLine: "Issue",
       edited: "Edited in Germany",
@@ -125,7 +126,7 @@ const copy = isEn
       navGuides: "Ratgeber",
       navTools: "Tool-Index",
       navMethod: "Methodologie",
-      masthead: "Entscheidungsblatt",
+      masthead: "KI-Blatt",
       mastSub: "Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge",
       issueLine: "Ausgabe",
       edited: "Redigiert in Deutschland",
@@ -241,6 +242,22 @@ const categoryRows = categories.slice(0, 8);
 <section class="ds-template ds-template-flat" aria-label={copy.masthead}>
   <div class="ds-stage">
     <div class="ds-frame">
+      <div class="ds-masthead-ki">
+        <div class="ds-masthead-ki-side">
+          {copy.issueLine} {issueNo}<br />
+          {issueDateLine}<br />
+          {copy.edited}
+        </div>
+        <div class="ds-masthead-ki-main">
+          <span>{copy.masthead}<em>.</em></span>
+          <p>{copy.mastSub}</p>
+        </div>
+        <div class="ds-masthead-ki-side ds-masthead-ki-side-right">
+          {totalGuides || guides.length || 25} {isEn ? "decisions" : "Entscheidungen"} {"\u00b7"} {toolsCount} {isEn ? "tools indexed" : "Tools indiziert"}<br />
+          0 {isEn ? "paid placements" : "bezahlte Platzierungen"}
+        </div>
+      </div>
+
       <section class="ds-front">
         <article class="ds-front-main">
           <p class="ds-kicker">{copy.kicker}</p>
