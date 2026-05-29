@@ -238,60 +238,9 @@ const tagRows = tags.slice(0, 12);
 const categoryRows = categories.slice(0, 8);
 ---
 
-<section class="ds-template" aria-label={copy.masthead}>
-  <div class="ds-tabbar">
-    <a class="active" href={`${prefix}/`} aria-label={isEn ? "Go to home" : "Zur Startseite"}>{copy.tabIssue}</a>
-  </div>
-
+<section class="ds-template ds-template-flat" aria-label={copy.masthead}>
   <div class="ds-stage">
     <div class="ds-frame">
-      <nav class="ds-nav" aria-label={isEn ? "Decision navigation" : "Entscheidungsnavigation"}>
-        <div class="ds-nav-left">
-          <strong>{copy.brand}</strong>
-          <span>v4.3.0-decisions</span>
-          <span><i></i>live · {today}</span>
-        </div>
-        <div class="ds-nav-links">
-          <a href={`${prefix}/`}>{copy.navDecisions}</a>
-          <a href={`${prefix}/ratgeber/`}>{copy.navGuides}</a>
-          <a href={`${prefix}/tools/`}>{copy.navTools}</a>
-          <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
-        </div>
-        <div class="ds-nav-right">
-          <a href={isEn ? "/" : "/en/"}>{isEn ? "DE" : "EN"}</a>
-          <a href={`${prefix}/llms.txt`}>⌘ K</a>
-          <button
-            type="button"
-            class="ds-design-switch"
-            data-design-toggle
-            data-design-labels={JSON.stringify({
-              decision: isEn ? "Old version" : "Alte Version",
-              classic: isEn ? "Decision desk" : "Entscheidungsblatt",
-              toDecision: isEn ? "Switch to decision desk design" : "Zum Entscheidungsblatt-Design wechseln",
-              toClassic: isEn ? "Switch to old design" : "Zur alten Version wechseln",
-            })}
-          >
-            <span data-design-label>{isEn ? "Old version" : "Alte Version"}</span>
-          </button>
-        </div>
-      </nav>
-
-      <header class="ds-masthead">
-        <div class="ds-mast-side">
-          {copy.issueLine} {issueNo}<br />
-          Mittwoch · 27. Mai 2026<br />
-          {copy.edited}
-        </div>
-        <div class="ds-mast-main">
-          <h1>{copy.masthead}<span>.</span></h1>
-          <p>{copy.mastSub}</p>
-        </div>
-        <div class="ds-mast-side ds-mast-side-right">
-          {copy.rightStats}<br />
-          {copy.noAds}
-        </div>
-      </header>
-
       <section class="ds-front">
         <article class="ds-front-main">
           <p class="ds-kicker">{copy.kicker}</p>
@@ -446,24 +395,6 @@ const categoryRows = categories.slice(0, 8);
         </div>
       </section>
 
-      <footer class="ds-footer">
-        <div class="ds-footer-brand">
-          <a class="ds-footer-home" href={`${prefix}/`} aria-label={isEn ? "Utildesk home" : "Utildesk Startseite"}>utildesk</a>
-          <span class="ds-footer-note">
-            {copy.footerLines.map((line) => <span>{line}</span>)}
-          </span>
-          <span>{copy.footerCopyright}</span>
-        </div>
-        <nav class="ds-footer-links" aria-label={isEn ? "Footer navigation" : "Footer-Navigation"}>
-          <a href={`${prefix}/tools/`}>{copy.navTools}</a>
-          <a href={`${prefix}/ratgeber/`}>{copy.navGuides}</a>
-          <a href={`${prefix}/category/`}>{isEn ? "Categories" : "Kategorien"}</a>
-          <a href={isEn ? "/en/methodology/" : "/methodologie/"}>{copy.navMethod}</a>
-          <a href={isEn ? "/en/privacy/" : "/datenschutz/"} rel="nofollow">{copy.footerPrivacy}</a>
-          <a href={isEn ? "/en/imprint/" : "/impressum/"} rel="nofollow">{copy.footerImprint}</a>
-          <a href={`${prefix}/feed.xml`}>{copy.footerFeed}</a>
-        </nav>
-      </footer>
     </div>
   </div>
 </section>

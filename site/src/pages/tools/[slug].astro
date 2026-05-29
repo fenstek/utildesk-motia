@@ -126,6 +126,28 @@ const title = String(data.title ?? slug);
 const category = data.category ? String(data.category) : null;
 const price_model = normalizePriceModel(data.price_model);
 const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+const description = data.description ? String(data.description) : "";
+const oneliner = description || (data.summary ? String(data.summary) : "");
+const vendorName = data.vendor ? String(data.vendor) : title;
+const extractDomain = (url: string) => {
+  if (!url) return "";
+  try { return new URL(url).hostname.replace(/^www\./, ""); }
+  catch { return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, ""); }
+};
+const providerDomain = extractDomain(visible_provider_url || target_provider_url);
+const monogramLetter = (vendorName || title || slug || "·")
+  .replace(/[^A-Za-zÄÖÜäöü]/g, "")
+  .charAt(0)
+  .toUpperCase() || "·";
+const mentionedInCount = Array.isArray(data.mentionedIn) ? data.mentionedIn.length : 0;
+const formatGermanDate = (value: unknown) => {
+  if (!value) return "";
+  try {
+    return new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(String(value)));
+  } catch { return ""; }
+};
+const lastCheckedShort = formatGermanDate(data.lastReviewed || data.last_reviewed || data.lastReviewedAt || data.last_reviewed_at);
+const inIndexSinceShort = formatGermanDate(data.created_at || data.createdAt || data.date);
 const norm = (s) => String(s ?? "").trim().toLowerCase();
 const categoryNorm = norm(category);
 const seen = new Set();
@@ -417,39 +439,141 @@ const softwareApplicationSchema = {
     {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb">
-    <a href="/tools/">← Zurück zu allen Tools</a>
-  </nav>
+  <div class="tool-akte">
+    <!-- Breadcrumb -->
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/tools/">← Tool-Index</a>
+      {primaryCategory && (
+        <Fragment>
+          <span class="akte-crumb-sep">/</span>
+          <a href={`/category/${primaryCategory.slug}/`}>{primaryCategory.title}</a>
+        </Fragment>
+      )}
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">{title}</span>
+    </nav>
 
-  <!-- Tool Header -->
-  <div class="tool-detail-header">
-    <h1 class="tool-detail-title">{title}</h1>
+    <!-- Editorial Masthead -->
+    <header class="akte-mast">
+      <div class="akte-mast-body">
+        <div class="akte-mast-kicker">
+          ↳ Tool-Akte{category ? ` · ${category}` : ""}
+        </div>
 
-    <!-- Badges -->
-    {(category || price_model || tags.length > 0) && (
-      <div class="tool-detail-badges">
-        {category && primaryCategory ? (
-          <a class="badge badge-category" href={`/category/${primaryCategory.slug}/`}>{category}</a>
-        ) : category ? (
-          <span class="badge badge-category">{category}</span>
-        ) : null}
-        {price_model && (
-          <span class="badge badge-price">{price_model}</span>
+        <h1 class="akte-mast-h1">{title}<span class="akte-mast-dot">.</span></h1>
+
+        {oneliner && (
+          <p class="akte-mast-oneliner">{oneliner}</p>
         )}
-        {displayTags.map((tag) => (
-          <a class="badge badge-tag" href={tagHref(tag)}>{tag}</a>
-        ))}
-      </div>
-    )}
 
-    <!-- Primary Category Link -->
-    {primaryCategory && (
-      <div class="tool-category-link">
-        <span class="category-label">Kategorie:</span>
-        <a href={`/category/${primaryCategory.slug}/`} class="category-link-anchor">{primaryCategory.title}</a>
+        {(category || price_model || displayTags.length > 0) && (
+          <div class="akte-chips">
+            {category && primaryCategory ? (
+              <a class="akte-chip akte-chip-category" href={`/category/${primaryCategory.slug}/`}>{category}</a>
+            ) : category ? (
+              <span class="akte-chip akte-chip-category">{category}</span>
+            ) : null}
+            {price_model && (
+              <span class="akte-chip akte-chip-price">{price_model}</span>
+            )}
+            {displayTags.map((tag) => (
+              <a class="akte-chip akte-chip-tag" href={tagHref(tag)}>#{tag}</a>
+            ))}
+          </div>
+        )}
+
+        {(target_provider_url || providerDomain) && (
+          <div class="akte-actions">
+            {target_provider_url && (
+              <a
+                class="akte-action akte-action-primary"
+                href={target_provider_url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ↗ Zum Anbieter{providerDomain ? ` · ${providerDomain}` : ""}
+              </a>
+            )}
+            <a class="akte-action akte-action-ghost" href="/tools/">
+              ⇄ Zurück zum Index
+            </a>
+          </div>
+        )}
       </div>
-    )}
+
+      <!-- Faktenblatt sidebar -->
+      <aside class="akte-faktenblatt" aria-label="Faktenblatt">
+        <div class="akte-faktenblatt-tab">Faktenblatt</div>
+
+        <div class="akte-faktenblatt-head">
+          <span class="akte-monogram" aria-hidden="true">
+            {logoUrl ? (
+              <img
+                src={logoUrl}
+                alt=""
+                loading="lazy"
+                data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined}
+              />
+            ) : (
+              monogramLetter
+            )}
+          </span>
+          <div class="akte-faktenblatt-vendor">
+            <div class="akte-faktenblatt-vendor-name">{vendorName}</div>
+            {providerDomain && (
+              <div class="akte-faktenblatt-vendor-domain">{providerDomain}</div>
+            )}
+          </div>
+        </div>
+
+        {(category || price_model) && (
+          <Fragment>
+            {category && (
+              <div class="akte-faktenblatt-row">
+                <span class="akte-faktenblatt-key">Kategorie</span>
+                <span class="akte-faktenblatt-val">{category}</span>
+              </div>
+            )}
+            {price_model && (
+              <div class="akte-faktenblatt-row">
+                <span class="akte-faktenblatt-key">Preismodell</span>
+                <span class="akte-faktenblatt-val">{price_model}</span>
+              </div>
+            )}
+            <div class="akte-faktenblatt-row is-paid">
+              <span class="akte-faktenblatt-key">Bezahlte Platzierung</span>
+              <span class="akte-faktenblatt-val">nein</span>
+            </div>
+          </Fragment>
+        )}
+
+        {(lastCheckedShort || inIndexSinceShort || mentionedInCount > 0) && (
+          <Fragment>
+            <hr class="akte-faktenblatt-divider" />
+            <div class="akte-faktenblatt-foot">
+              {lastCheckedShort && (
+                <div>
+                  <span class="akte-faktenblatt-key">Zuletzt geprüft</span>
+                  <span>{lastCheckedShort}</span>
+                </div>
+              )}
+              {inIndexSinceShort && (
+                <div>
+                  <span class="akte-faktenblatt-key">Im Index seit</span>
+                  <span>{inIndexSinceShort}</span>
+                </div>
+              )}
+              {mentionedInCount > 0 && (
+                <div>
+                  <span class="akte-faktenblatt-key">Verwendet in</span>
+                  <span>{mentionedInCount} Ratgebern</span>
+                </div>
+              )}
+            </div>
+          </Fragment>
+        )}
+      </aside>
+    </header>
 
     {isCuratedTool ? (
       <p class="editorial-note">
@@ -463,38 +587,30 @@ const softwareApplicationSchema = {
         <span> · <a href="/methodologie/">Methodologie</a></span>
       </p>
     )}
+
+    {oneliner && (
+      <section class="akte-tldr" aria-label="TL;DR">
+        <div class="akte-tldr-aside">
+          <span class="akte-tldr-kicker">In 60 Sek.</span>
+          <span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span>
+        </div>
+        <div class="akte-tldr-body">
+          <p>{oneliner}</p>
+          {category && (
+            <p class="akte-tldr-meta">
+              Kategorie: <strong>{category}</strong>
+              {price_model ? <span> · Preis: <strong>{price_model}</strong></span> : null}
+              {providerDomain ? <span> · {providerDomain}</span> : null}
+            </p>
+          )}
+        </div>
+      </section>
+    )}
   </div>
 
   <!-- Article Content -->
-  <article class="card article">
-  <div class="article-body">
-    {target_provider_url && (
-      <div class="tool-primary-link">
-        {logoUrl ? (
-          <a class="tool-primary-link-logo" href={target_provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-            <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-          </a>
-        ) : null}
-        <div class="tool-primary-link-text">
-          <span class="tool-primary-link-kicker">Direktlink</span>
-          <a
-            class="tool-primary-link-anchor"
-            href={target_provider_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            title={providerCtaLabel}
-          >
-            {providerCtaLabel}
-          </a>
-          <p class="tool-primary-link-note">Offizielle Website</p>
-        </div>
-      </div>
-    )}
-    {!target_provider_url && logoUrl ? (
-      <span class="tool-float-logo">
-        <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-      </span>
-    ) : null}
+  <article class="card article akte-article">
+  <div class="article-body akte-article-body">
     {!isCuratedTool ? (
       <blockquote class="tool-disclosure">
         Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.
@@ -507,225 +623,96 @@ const softwareApplicationSchema = {
   </div>
 </article>
 
-  <!-- Alternatives — rendered after article, using exact /tools card markup -->
+  <!-- Verwandte Akten / Alternatives — editorial dossier card grid -->
   {alternativesTop.length > 0 && (
-    <section>
-      <h2 class="alternatives-title">Alternativen</h2>
-      <div class="alt-grid">
-        {alternativesTop.map((tool) => (
-          <a
-            href={`/tools/${tool.slug}/`}
-            class="card tool-card"
-          >
-            <div class="tool-header">
-              <div class="tool-image">
-                {tool.iconUrl ? (
-                  <span class="tool-card-logo">
-                    <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
-                  </span>
-                ) : tool.fallbackIcon === "ai" ? (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                ) : tool.fallbackIcon === "automation" ? (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                ) : tool.fallbackIcon === "design" ? (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                ) : (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                )}
+    <section class="akte-alts tool-akte" aria-label="Verwandte Akten">
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">↳ Verwandte Akten</div>
+          <h2 class="akte-alts-title">
+            Vergleichbare Werkzeuge<span class="akte-mast-dot">.</span>
+          </h2>
+        </div>
+        <a class="akte-alts-all" href="/tools/">↳ alle Akten</a>
+      </div>
+      <div class="akte-alts-grid">
+        {alternativesTop.map((tool, i) => {
+          const altMonogram = (tool.title || "·")
+            .replace(/[^A-Za-zÄÖÜäöü]/g, "")
+            .charAt(0)
+            .toUpperCase() || "·";
+          return (
+            <a
+              href={`/tools/${tool.slug}/`}
+              class="akte-alt-card"
+            >
+              <div class="akte-alt-card-head">
+                <span class="akte-alt-card-kicker">
+                  Alternative {String(i + 1).padStart(2, "0")}
+                </span>
+                <span class="akte-alt-card-mono" aria-hidden="true">
+                  {tool.iconUrl ? (
+                    <img
+                      src={tool.iconUrl}
+                      alt=""
+                      loading="lazy"
+                      data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined}
+                    />
+                  ) : (
+                    altMonogram
+                  )}
+                </span>
               </div>
-              <div class="tool-info">
-                <h3 class="tool-title">{tool.title}</h3>
-                <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
+              <div class="akte-alt-card-name">
+                {tool.title}<span class="akte-mast-dot">.</span>
               </div>
-            </div>
-            <div class="tool-badges">
-              {tool.category && (
-                <span class="badge badge-category">{tool.category}</span>
-              )}
-              {tool.price_model && (
-                <span class="badge badge-price">{tool.price_model}</span>
-              )}
-            </div>
-          </a>
-        ))}
+              <p class="akte-alt-card-tone">
+                {tool.excerpt || "Kurzbeschreibung folgt."}
+              </p>
+              <div class="akte-alt-card-foot">
+                <span class="akte-alt-card-meta">
+                  {[tool.category, tool.price_model].filter(Boolean).join(" · ")}
+                </span>
+                <span class="akte-alt-card-open">Akte öffnen ↗</span>
+              </div>
+            </a>
+          );
+        })}
       </div>
     </section>
   )}
+
+  <div class="tool-akte">
+    <aside class="akte-colophon" aria-label="Colophon">
+      <span><span class="akte-colophon-key">Akte</span>{vendorName ? ` ${vendorName}` : ` ${title}`}</span>
+      <span><span class="akte-colophon-key">Status</span> {isCuratedTool ? "kuratiert" : "automatisch"}</span>
+      {lastCheckedShort && (
+        <span><span class="akte-colophon-key">Letzte Prüfung</span> {lastCheckedShort}</span>
+      )}
+      <span><span class="akte-colophon-key">Daten</span> <a href={`/api/tools/${slug}.json`}>/api/tools/{slug}.json</a></span>
+      <span><span class="akte-colophon-key">Lizenz</span> CC BY-NC 4.0</span>
+      <span class="akte-colophon-paid">0 bezahlte Platzierungen</span>
+    </aside>
+  </div>
 </BaseLayout>
 
 <style>
-  .tool-primary-link {
-    margin: 0 0 1.75rem;
-    padding: 1.1rem 1.25rem;
-    border-radius: 0;
-    border: 1px solid var(--line);
-    background: var(--bg-3);
-    display: flex;
-    align-items: center;
-    gap: 1.1rem;
-  }
-
-  .tool-primary-link-logo {
-    flex-shrink: 0;
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    overflow: hidden;
-    background: var(--surface-container-low);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0,0,0,0.07);
-    text-decoration: none;
-  }
-
-  .tool-primary-link-logo img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    display: block;
-  }
-
-  .tool-primary-link-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  .tool-primary-link-kicker {
-    display: block;
-    font-size: 0.78rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--secondary);
-  }
-
-  .tool-primary-link-anchor {
-    color: var(--accent);
-    font-size: 1.08rem;
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 1.2;
-  }
-
-  .tool-primary-link-anchor:hover {
-    text-decoration: none;
-    opacity: 0.8;
-  }
-
-  .tool-primary-link-note {
-    margin: 0;
-    font-size: 0.94rem;
-    color: var(--secondary);
-    line-height: 1.3;
-  }
-
-  .inline-provider-link {
-    margin: 1.5rem 0;
-  }
-
-  .inline-provider-link p {
-    margin: 0;
-  }
-
-  .inline-provider-link-sub {
-    margin-top: 0.35rem;
-    color: var(--secondary);
-    font-size: 0.95rem;
-  }
-
-  .tool-category-link {
-    margin-top: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
+  /* editorial-note used under the masthead — kept here so it inherits
+     the Astro-scoped data attribute and does not need a global rule. */
   .editorial-note {
     margin: 14px 0 0;
-    color: var(--secondary);
-    font-size: 0.96rem;
+    font-family: var(--mono);
+    color: var(--fg-3);
+    font-size: 0.78rem;
     line-height: 1.6;
+    letter-spacing: 0.04em;
   }
 
   .editorial-note a {
-    color: var(--primary);
-    text-decoration: underline;
-    text-decoration-color: rgba(23, 98, 89, 0.28);
-    text-underline-offset: 2px;
-  }
-
-  .tool-disclosure {
-    margin: 0 0 1.5rem;
-    padding: 1rem 1.2rem;
-    border-left: 3px solid var(--primary);
-    background: var(--surface-container-low);
-    color: var(--secondary);
-    line-height: 1.65;
-  }
-
-  .tool-disclosure a {
-    color: var(--primary);
-    text-decoration: underline;
-    text-decoration-color: rgba(23, 98, 89, 0.28);
-    text-underline-offset: 2px;
-  }
-
-  .category-label {
-    color: var(--secondary);
-    margin-right: 8px;
-  }
-
-  .category-link-anchor {
     color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
-  .category-link-anchor:hover {
-    text-decoration: none;
-  }
-
-  .alt-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  @media (min-width: 700px) {
-    .alt-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .alt-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
+  /* .akte-alts-* live in global.css under the .tool-akte scope. */
 </style>

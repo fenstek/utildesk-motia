@@ -24,3 +24,6 @@ output/
 
 # audit scripts output (temporary)
 **/audit_missing_categories.*
+
+# Claude Code local preview config
+.claude/launch.json

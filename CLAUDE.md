@@ -1,5 +1,12 @@
 # CLAUDE.md
 
+## Current design handoff (2026-05-29)
+
+For the Claude Code redesign task, read `handoff/claude-code-design/README.md` first.
+Restore tag: `restore/pre-claude-code-design-20260529-baca47ac`.
+Work branch: `codex/claude-design-handoff-20260529`.
+Use the token-saving rules in `handoff/claude-code-design/TOKEN_SAVING.md`; do not bulk-read generated content, images, outputs, or dependencies.
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview

@@ -65,58 +65,96 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(toolsBreadcrumbSchema)} />
   </Fragment>
 
-  <!-- Hero -->
-  <section class="hero" style="padding: 60px 0 40px;">
-    <h1 class="hero-title">Tools</h1>
-    <p class="hero-subtitle">
-      Indizierter Tool-Katalog aus öffentlichen Quellen.
-      Durchsuche alle Tools oder filtere nach Tags.
-    </p>
-  </section>
+  <div class="tool-akte inv-wrap">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Inventar — alle Akten</span>
+    </nav>
 
-  <!-- Tag Filter Row -->
-  {visibleTags.length > 0 && (
-    <div class="tag-filter-row" id="tag-filter-row">
-      <label class="tag-filter-label">Beliebte Tags:</label>
-      <div class="tag-filter-list" id="tag-filter-list">
-        {visibleTags.map((tag) => (
-          <a
-            href={tagHref(tag)}
-            class="tag-filter-item"
-            data-tag={tag}
-          >
-            {tag}
-          </a>
-        ))}
-        <a href="/tools/" class="clear-filter-btn" id="clear-filter-btn" style="display: none;">
-          Filter löschen
-        </a>
+    <header class="inv-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">↳ Inventar · Tool-Index · Ausgabe № 049</div>
+        <h1 class="inv-head-h1">
+          {enabledTools.length.toLocaleString("de-DE")} Akten<span class="akte-mast-dot">.</span>
+        </h1>
+        <p class="inv-head-deck">
+          Jede Akte einzeln gelesen, in eine Kategorie einsortiert, mit Tags versehen.
+          Keine bezahlten Platzierungen. Sortierung ändert die Reihenfolge — nie die Empfehlung.
+        </p>
       </div>
-    </div>
-  )}
+      <div class="inv-head-stats" role="group" aria-label="Inventar Kennzahlen">
+        <div class="inv-stat">
+          <strong>{enabledTools.length.toLocaleString("de-DE")}</strong>
+          <span>Akten gesamt</span>
+        </div>
+        <div class="inv-stat">
+          <strong>{visibleTags.length}</strong>
+          <span>Top-Tags</span>
+        </div>
+        <div class="inv-stat">
+          <strong>{recentRatgeber.length}</strong>
+          <span>Frische Ratgeber</span>
+        </div>
+        <div class="inv-stat inv-stat-paid">
+          <strong>0</strong>
+          <span>Bezahlte Plätze</span>
+        </div>
+      </div>
+    </header>
 
-  <!-- Search -->
-  <div class="search-wrapper">
-    <input
-      type="search"
-      id="search-input"
-      class="search-input"
-      placeholder="Tools suchen…"
-      autocomplete="off"
-    />
-    <select id="sort-select" class="search-input" aria-label="Sortierung">
-      <option value="az">A–Z</option>
-      <option value="new" selected>Neu hinzugefügt</option>
-      <option value="pop">Beliebt</option>
-    </select>
+    <div class="inv-controls">
+      <div class="inv-controls-search">
+        <input
+          type="search"
+          id="search-input"
+          class="inv-search-input"
+          placeholder="Tools suchen…"
+          autocomplete="off"
+        />
+        <select id="sort-select" class="inv-search-input inv-sort-select" aria-label="Sortierung">
+          <option value="az">A–Z</option>
+          <option value="new" selected>Neu hinzugefügt</option>
+          <option value="pop">Beliebt</option>
+        </select>
+      </div>
+      {visibleTags.length > 0 && (
+        <div class="inv-tags-strip" id="tag-filter-row">
+          <span class="inv-tags-label">Top-Tags →</span>
+          <div class="inv-tags-list" id="tag-filter-list">
+            {visibleTags.map((tag) => (
+              <a
+                href={tagHref(tag)}
+                class="inv-tag-chip"
+                data-tag={tag}
+              >
+                #{tag}
+              </a>
+            ))}
+            <a href="/tools/" class="inv-tag-clear" id="clear-filter-btn" style="display: none;">
+              ✕ Filter löschen
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
+
+    <div class="inv-table-head" aria-hidden="true">
+      <span class="inv-th-no">№</span>
+      <span class="inv-th-tool">Tool · Einordnung</span>
+      <span class="inv-th-cat">Kategorie</span>
+      <span class="inv-th-price">Preis</span>
+      <span class="inv-th-open">↗</span>
+    </div>
   </div>
 
+  <div class="tool-akte inv-list-wrap">
   <!-- Tools Grid -->
-  <div class="tools-grid" id="tools-grid">
-    {enabledTools.map((tool) => (
+  <div class="tools-grid inv-register" id="tools-grid">
+    {enabledTools.map((tool, idx) => (
       <a
         href={`/tools/${tool.slug}/`}
-        class="card tool-card"
+        class="card tool-card inv-row"
         data-title={tool.title.toLowerCase()}
         data-slug={tool.slug.toLowerCase()}
         data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
@@ -124,6 +162,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         data-added-order={tool.addedAtOrderMs}
         data-popularity={tool.popularity}
       >
+        <span class="inv-row-no">{String(idx + 1).padStart(3, "0")}</span>
         <div class="tool-header">
           <div class="tool-image">
             {tool.iconUrl ? (
@@ -173,45 +212,56 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
           </div>
         </div>
-        <div class="tool-badges">
+        <div class="tool-badges inv-row-meta">
           {tool.category && (
-            <span class="badge badge-category">{tool.category}</span>
+            <span class="badge badge-category inv-row-cat">{tool.category}</span>
           )}
           {tool.price_model && (
-            <span class="badge badge-price">{tool.price_model}</span>
+            <span class="badge badge-price inv-row-price">{tool.price_model}</span>
           )}
         </div>
+        <span class="inv-row-open" aria-hidden="true">↗</span>
       </a>
     ))}
   </div>
 
   <!-- No results message (hidden by default) -->
-  <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
-    <p style="color: var(--text-muted); font-size: 1.125rem;">
-      Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.
-    </p>
+  <div id="no-results" class="inv-empty" style="display: none;">
+    <p>Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.</p>
   </div>
-  <div style="text-align: center; margin-top: 36px; padding-bottom: 48px;">
-    <button type="button" id="load-more-btn" class="hero-cta">Mehr anzeigen</button>
-    <div
-      id="hidden-count-info"
-      style="display: none; margin-top: 10px; text-align: center; font-size: 0.9rem; color: var(--text-muted);"
-    >
+
+  <div class="inv-loadmore">
+    <button type="button" id="load-more-btn" class="akte-action akte-action-ghost">Mehr anzeigen ↓</button>
+    <div id="hidden-count-info" class="inv-hidden-count" style="display: none;">
       Noch 0 Tools verborgen
     </div>
   </div>
+  </div>
 
   {recentRatgeber.length > 0 && (
-    <section class="tools-guides">
-      <div class="tools-guides-head">
-        <h2>Passende Guides</h2>
-        <a href="/ratgeber/" class="tools-guides-more">Zum Ratgeber</a>
+    <section class="tool-akte tools-guides akte-alts" aria-label="Passende Guides">
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">↳ Passende Ratgeber</div>
+          <h2 class="akte-alts-title">
+            Aus der Redaktion<span class="akte-mast-dot">.</span>
+          </h2>
+        </div>
+        <a class="akte-alts-all" href="/ratgeber/">↳ alle Ratgeber</a>
       </div>
-      <div class="tools-guides-list">
-        {recentRatgeber.map((article) => (
-          <a href={`/ratgeber/${article.slug}/`} class="tools-guides-article">
-            <strong>{article.data.title}</strong>
-            <span>{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</span>
+      <div class="akte-alts-grid">
+        {recentRatgeber.map((article, idx) => (
+          <a href={`/ratgeber/${article.slug}/`} class="akte-alt-card">
+            <div class="akte-alt-card-head">
+              <span class="akte-alt-card-kicker">Ratgeber {String(idx + 1).padStart(2, "0")}</span>
+              <span class="akte-alt-card-mono" aria-hidden="true">§</span>
+            </div>
+            <div class="akte-alt-card-name">{article.data.title}<span class="akte-mast-dot">.</span></div>
+            <p class="akte-alt-card-tone">{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</p>
+            <div class="akte-alt-card-foot">
+              <span class="akte-alt-card-meta">{article.data.eyebrow || article.data.category || "Guide"}</span>
+              <span class="akte-alt-card-open">Lesen ↗</span>
+            </div>
           </a>
         ))}
       </div>

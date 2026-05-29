@@ -55,11 +55,29 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <section class="ratgeber-hero">
-    <p class="rg-eyebrow">Ratgeber</p>
-    <h1>Vergleiche &amp; Leitfäden<br/>zu den wichtigsten KI-Tools</h1>
-    <p class="rg-sub">Redaktionelle Einordnungen, Vergleiche und Arbeitsmodelle für Teams, die mit KI nicht nur experimentieren, sondern produktiv arbeiten wollen.</p>
-  </section>
+  <div class="tool-akte rg-wrap">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Ratgeber-Archiv</span>
+    </nav>
+    <header class="inv-head rg-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">↳ Entscheidungsblatt · Ausgabe № 049 · Ratgeber</div>
+        <h1 class="inv-head-h1">{articles.length} Entscheidungen<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          Redaktionelle Einordnungen, Vergleiche und Arbeitsmodelle für Teams,
+          die mit KI nicht nur experimentieren, sondern produktiv arbeiten wollen.
+        </p>
+      </div>
+      <div class="inv-head-stats" role="group" aria-label="Ratgeber Kennzahlen">
+        <div class="inv-stat"><strong>{articles.length}</strong><span>Ratgeber gesamt</span></div>
+        <div class="inv-stat"><strong>{articles.filter(a => a.data.coverImage).length}</strong><span>Mit Illustration</span></div>
+        <div class="inv-stat"><strong>{Math.round(articles.reduce((s, a) => s + (Number(a.data.readTime) || 0), 0) / Math.max(articles.length, 1))}</strong><span>⌀ Min. Lesen</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>0</strong><span>Bezahlte Plätze</span></div>
+      </div>
+    </header>
+  </div>
 
   <section class="rg-list">
     {articles.length === 0 ? (
