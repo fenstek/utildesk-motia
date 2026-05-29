@@ -1,4 +1,5 @@
 ---
+// editorial tool-akte rendering
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { marked } from "marked";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
@@ -349,6 +350,166 @@ const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
 }, []);
 const alternativesTop = alternatives.slice(0, 3);
 
+// ── Editorial dossier: parse the German markdown body into Akte sections ────
+const mdToHtml = (md: string) => String(marked.parse(String(md ?? "").trim()));
+const stripInlineMd = (t: unknown) =>
+  String(t ?? "")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+
+// Pull out an editorial illustration (rendered as Schlussbild), then drop figures.
+const figMatch =
+  contentWithoutAlternatives.match(
+    /<figure[^>]*tool-editorial-figure[^>]*>[\s\S]*?<img[^>]*src="([^"]+)"[^>]*?(?:alt="([^"]*)")?[^>]*>[\s\S]*?<\/figure>/i,
+  ) || [];
+const schlussbildSrc = figMatch[1] || "";
+const schlussbildAlt = figMatch[2] || `Editorial-Illustration zu ${title}`;
+
+const mdBase = contentWithoutAlternatives
+  .replace(/<figure[\s\S]*?<\/figure>/gi, "")
+  .replace(/^#\s+.+$/m, "")
+  .trim();
+
+const firstH2Idx = mdBase.search(/(^|\n)##\s+/);
+const introMd = (firstH2Idx === -1 ? mdBase : mdBase.slice(0, firstH2Idx)).trim();
+const afterIntro = firstH2Idx === -1 ? "" : mdBase.slice(firstH2Idx).replace(/^\n+/, "");
+const rawSecs = (afterIntro ? afterIntro.split(/\n(?=##\s+)/) : [])
+  .map((ch) => {
+    const m = ch.match(/^##\s+([^\n]+)\n?([\s\S]*)$/);
+    return m ? { title: m[1].trim(), body: m[2].trim() } : null;
+  })
+  .filter((x): x is { title: string; body: string } => Boolean(x));
+
+const splitBullets = (body: string) =>
+  (body.match(/^[ \t]*[-*]\s+.+(?:\n(?![ \t]*[-*]\s|#).+)*/gm) ?? [])
+    .map((b) => b.replace(/^[ \t]*[-*]\s+/, "").replace(/\s*\n\s*/g, " ").trim())
+    .filter(Boolean);
+
+const leadOf = (body: string) =>
+  stripInlineMd(body.split(/\n[ \t]*[-*]\s+/)[0]?.split(/\n\s*\n/)[0] ?? "");
+
+const parsePair = (item: string): [string, string] => {
+  let m = item.match(/^\*\*\s*(.+?)\s*\*\*\s*[:–—-]*\s*([\s\S]*)$/);
+  if (m) return [stripInlineMd(m[1]).replace(/[:–—-]\s*$/, "").trim(), stripInlineMd(m[2])];
+  m = item.match(/^(.{2,60}?)\s*[:–—]\s+([\s\S]+)$/);
+  if (m) return [stripInlineMd(m[1]), stripInlineMd(m[2])];
+  return [stripInlineMd(item), ""];
+};
+
+const classifySection = (titleRaw: string) => {
+  const t = titleRaw.toLowerCase();
+  if (/(vorteile?[\s\S]*nachteile?|nachteile?[\s\S]*vorteile?|pro[\s\S]*kontra|soll[\s\S]*haben)/.test(t)) return "proscons";
+  if (/(für wen|geeignet|zielgruppe|passt zu)/.test(t)) return "fit";
+  if (/(einsatz|szenarien|anwendung|use ?case|praxis|beispiele|workflow)/.test(t)) return "cases";
+  if (/(funktion|features|leistung)/.test(t)) return "features";
+  if (/(faq|häufige fragen|^fragen)/.test(t)) return "faq";
+  if (/(einschätzung|fazit|verdikt|bewertung|empfehlung|urteil)/.test(t)) return "closing";
+  if (/(datenschutz|privacy|sicherheit|daten)/.test(t)) return "privacy";
+  if (/(preis|kosten|pricing|tarif)/.test(t)) return "pricing";
+  return "body";
+};
+
+const KICKERS: Record<string, string> = {
+  intro: "Position im Markt",
+  body: "Hintergrund",
+  fit: "Zielprofile · Eignung",
+  cases: "Aus der Redaktionspraxis",
+  features: "Funktionsumfang",
+  proscons: "Bilanz · Soll & Haben",
+  privacy: "Datenschutz · Regeln",
+  pricing: "Preise · Kosten",
+  closing: "Redaktionelle Einschätzung",
+  faq: "Häufige Fragen",
+};
+
+type AkteSection = Record<string, any> & { type: string; num: string; title: string; kicker: string };
+const sections: AkteSection[] = [];
+let secCounter = 0;
+const nextNum = () => `§ ${String(++secCounter).padStart(2, "0")}`;
+const pushBody = (title: string, kicker: string, body: string) =>
+  sections.push({ type: "body", num: nextNum(), title, kicker, html: mdToHtml(body) });
+
+if (introMd) {
+  sections.push({
+    type: "intro",
+    num: nextNum(),
+    title: "Was es ist",
+    kicker: KICKERS.intro,
+    html: mdToHtml(introMd),
+  });
+}
+
+for (const sec of rawSecs) {
+  const type = classifySection(sec.title);
+  if (type === "proscons") {
+    const prosBlock = (sec.body.match(/###\s*Vorteile[\s\S]*?(?=\n###|$)/i) || [""])[0];
+    const consBlock = (sec.body.match(/###\s*Nachteile[\s\S]*?(?=\n###|$)/i) || [""])[0];
+    const pros = splitBullets(prosBlock).map(stripInlineMd);
+    const cons = splitBullets(consBlock).map(stripInlineMd);
+    if (!pros.length && !cons.length) { pushBody(sec.title, KICKERS.body, sec.body); continue; }
+    sections.push({ type: "proscons", num: nextNum(), title: sec.title, kicker: KICKERS.proscons, pros, cons });
+  } else if (type === "fit") {
+    const bullets = splitBullets(sec.body);
+    const lead = leadOf(sec.body);
+    const items = bullets.map((b) => {
+      const m = b.match(/^(.{2,52}?)[,–—:]\s+([\s\S]+)$/);
+      return m ? { who: stripInlineMd(m[1]), note: stripInlineMd(m[2]), ok: true } : { who: stripInlineMd(b), note: "", ok: true };
+    });
+    const neg = sec.body.match(/(weniger\s+(?:passend|geeignet|gut)[\s\S]*?)(?:\n\s*\n|$)/i);
+    if (neg) {
+      const note = stripInlineMd(neg[1].replace(/^weniger\s+(?:passend|geeignet|gut)\s*(?:ist[^,.:]*)?[,.:]?\s*/i, ""));
+      if (note) items.push({ who: "Weniger geeignet", note, ok: false });
+    }
+    if (!items.length) { pushBody(sec.title, KICKERS.body, sec.body); continue; }
+    sections.push({ type: "fit", num: nextNum(), title: sec.title, kicker: KICKERS.fit, lead, items });
+  } else if (type === "cases" || type === "features") {
+    const pairs = splitBullets(sec.body).map(parsePair).filter((p) => p[0]);
+    const lead = leadOf(sec.body);
+    if (pairs.length < 2) { pushBody(sec.title, KICKERS[type] ?? KICKERS.body, sec.body); continue; }
+    sections.push({ type, num: nextNum(), title: sec.title, kicker: KICKERS[type], lead, pairs });
+  } else if (type === "faq") {
+    const items: { q: string; a: string }[] = [];
+    const re = /\*\*\s*(.+?)\s*\*\*\s*\n+([\s\S]*?)(?=\n\s*\*\*|\n##|$)/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(sec.body))) {
+      const q = stripInlineMd(m[1]);
+      const a = stripInlineMd(m[2]);
+      if (q && a) items.push({ q, a });
+    }
+    if (!items.length) { pushBody(sec.title, KICKERS.body, sec.body); continue; }
+    sections.push({ type: "faq", num: nextNum(), title: sec.title, kicker: KICKERS.faq, items });
+  } else if (type === "closing") {
+    const quote = stripInlineMd(sec.body.split(/\n\s*\n/)[0] || sec.body);
+    if (!quote) continue;
+    sections.push({ type: "closing", num: nextNum(), title: sec.title, kicker: KICKERS.closing, quote });
+  } else {
+    pushBody(sec.title, KICKERS[type] ?? KICKERS.body, sec.body);
+  }
+}
+
+const closingIdx = sections.findIndex((s) => s.type === "closing");
+const prosForTldr: string[] = (sections.find((s) => s.type === "proscons")?.pros ?? []).slice(0, 3);
+const useEditorial = isCuratedTool && introMd.length > 40 && sections.length >= 3;
+
+// Verdict stamp (only rendered when the frontmatter carries an explicit verdict).
+const VERDICTS: Record<string, { glyph: string; color: string; label: string }> = {
+  EMPFEHLEN: { glyph: "✔", color: "var(--akte-green)", label: "Empfehlen" },
+  BEDINGT: { glyph: "◐", color: "var(--akte-amber)", label: "Bedingt" },
+  NICHT: { glyph: "✕", color: "var(--akte-vermillion)", label: "Nicht empfohlen" },
+  UEBERBEWERTET: { glyph: "⊘", color: "var(--akte-purple)", label: "Überbewertet" },
+  ABWARTEN: { glyph: "◷", color: "#5a6068", label: "Abwarten" },
+};
+const verdictKey = String(data.verdict ?? "").toUpperCase().replace(/[ÜÜ]/g, "UE").trim();
+const verdict = VERDICTS[verdictKey] ?? null;
+const verdictHead = data.verdict_head ? String(data.verdict_head) : "";
+const verdictNuance = data.verdict_nuance ? String(data.verdict_nuance) : "";
+const trustVal = Number(data.trust);
+const trust = Number.isFinite(trustVal) ? Math.max(0, Math.min(5, Math.round(trustVal))) : null;
+
 // ── Schema.org JSON-LD ─────────────────────────────────────────────────────
 const schemaDescription = data.description
   ? String(data.description)
@@ -588,6 +749,31 @@ const softwareApplicationSchema = {
       </p>
     )}
 
+    {verdict && (
+      <section class="akte-verdict-wrap" aria-labelledby="verdict-h">
+        <div class="akte-verdict">
+          <div class="akte-verdict-tab">Verdikt der Redaktion</div>
+          <div class="akte-verdict-glyph" style={`color:${verdict.color}`} aria-hidden="true">{verdict.glyph}</div>
+          <div class="akte-verdict-mid">
+            <div class="akte-verdict-label" style={`color:${verdict.color}`}>{verdict.label}</div>
+            <h2 id="verdict-h" class="akte-verdict-head">{verdictHead || verdict.label}</h2>
+            {verdictNuance && <p class="akte-verdict-nuance">{verdictNuance}</p>}
+          </div>
+          {trust !== null && (
+            <div class="akte-verdict-trust" role="img" aria-label={`Vertrauen: ${trust} von 5`}>
+              <div class="akte-verdict-trust-title">VERTRAUEN</div>
+              <div class="akte-trust-bars" aria-hidden="true">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <span class={`akte-trust-bar ${i <= trust ? "is-on" : ""}`}></span>
+                ))}
+              </div>
+              <div>{trust} / 5 · {trust >= 4 ? "hoch" : trust >= 2 ? "mittel" : "niedrig"}</div>
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
     {oneliner && (
       <section class="akte-tldr" aria-label="TL;DR">
         <div class="akte-tldr-aside">
@@ -596,6 +782,11 @@ const softwareApplicationSchema = {
         </div>
         <div class="akte-tldr-body">
           <p>{oneliner}</p>
+          {prosForTldr.length > 0 && (
+            <ul class="akte-tldr-list">
+              {prosForTldr.map((item) => <li>{item}</li>)}
+            </ul>
+          )}
           {category && (
             <p class="akte-tldr-meta">
               Kategorie: <strong>{category}</strong>
@@ -609,19 +800,159 @@ const softwareApplicationSchema = {
   </div>
 
   <!-- Article Content -->
-  <article class="card article akte-article">
-  <div class="article-body akte-article-body">
-    {!isCuratedTool ? (
-      <blockquote class="tool-disclosure">
-        Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.
-        Für eine kuratierte Einordnung siehe unsere <a href="/ratgeber/">Ratgeber</a>.
-      </blockquote>
-    ) : null}
+  {useEditorial ? (
+    <article class="tool-akte akte-doc" aria-label={`Tool-Akte ${title}`}>
+      {sections.map((sec, i) => (
+        <Fragment>
+          {i === closingIdx && schlussbildSrc && (
+            <figure class="akte-schlussbild">
+              <div class="akte-schlussbild-head">
+                <div>
+                  <div class="akte-schlussbild-kicker">↳ Schlussbild</div>
+                  <div class="akte-schlussbild-title">Eine Pause, bevor die Redaktion spricht.</div>
+                </div>
+                <div class="akte-schlussbild-meta">Bild · Redaktion · 2026</div>
+              </div>
+              <div class="akte-schlussbild-slot">
+                <img src={schlussbildSrc} alt={schlussbildAlt} loading="lazy" decoding="async" />
+              </div>
+              <figcaption class="akte-schlussbild-cap">
+                <span class="akte-schlussbild-cap-text">
+                  <span class="akte-schlussbild-cap-fig">Abbildung 1</span>{schlussbildAlt}
+                </span>
+                <span class="akte-schlussbild-cap-meta">{title} · Editorial</span>
+              </figcaption>
+            </figure>
+          )}
 
-    {/* Keep the rendered markdown body intact so all template sections remain visible. */}
-    <div set:html={articleHtml}></div>
-  </div>
-</article>
+          <section class={`akte-sec akte-sec-${sec.type}`}>
+            <div class="akte-sec-marg">
+              <div class="akte-sec-num" aria-hidden="true">{sec.num}</div>
+              <div class="akte-sec-kicker">{sec.kicker}</div>
+            </div>
+            <div class="akte-sec-body">
+              <h2 class="akte-sec-title">{sec.title}</h2>
+
+              {(sec.type === "intro" || sec.type === "body") && (
+                <div
+                  class={`akte-prose ${sec.type === "intro" ? "akte-prose-drop" : ""}`}
+                  set:html={sec.html}
+                ></div>
+              )}
+
+              {sec.type === "fit" && (
+                <Fragment>
+                  {sec.lead && <p class="akte-sec-lead">{sec.lead}</p>}
+                  <div class="akte-fit">
+                    {sec.items.map((it: any) => (
+                      <div class="akte-fit-row">
+                        <span class={`akte-fit-mark ${it.ok ? "is-ok" : "is-no"}`} aria-hidden="true">{it.ok ? "✔" : "✕"}</span>
+                        <span class="akte-fit-who">{it.who}</span>
+                        <span class="akte-fit-note">{it.note}</span>
+                      </div>
+                    ))}
+                  </div>
+                </Fragment>
+              )}
+
+              {sec.type === "cases" && (
+                <Fragment>
+                  {sec.lead && <p class="akte-sec-lead">{sec.lead}</p>}
+                  <div class="akte-cases">
+                    {sec.pairs.map((p: [string, string], idx: number) => (
+                      <div class="akte-case">
+                        <div class="akte-case-head">
+                          <span class="akte-case-num">{String(idx + 1).padStart(2, "0")}</span>
+                          <span class="akte-case-title">{p[0]}</span>
+                        </div>
+                        {p[1] && <p class="akte-case-blurb">{p[1]}</p>}
+                      </div>
+                    ))}
+                  </div>
+                </Fragment>
+              )}
+
+              {sec.type === "features" && (
+                <Fragment>
+                  {sec.lead && <p class="akte-sec-lead">{sec.lead}</p>}
+                  <div class="akte-feat">
+                    <div class="akte-feat-head"><span>Funktion</span><span>Was es bedeutet</span></div>
+                    {sec.pairs.map((p: [string, string]) => (
+                      <div class="akte-feat-row">
+                        <span class="akte-feat-name">{p[0]}</span>
+                        <span class="akte-feat-mean">{p[1]}</span>
+                      </div>
+                    ))}
+                  </div>
+                </Fragment>
+              )}
+
+              {sec.type === "proscons" && (
+                <div class="akte-bilanz">
+                  <div class="akte-bilanz-col akte-bilanz-pro">
+                    <div class="akte-bilanz-head">✔ Haben — was funktioniert</div>
+                    <ul aria-label="Was funktioniert">{sec.pros.map((x: string) => <li>{x}</li>)}</ul>
+                  </div>
+                  <div class="akte-bilanz-col akte-bilanz-con">
+                    <div class="akte-bilanz-head">✕ Soll — was Sie wissen müssen</div>
+                    <ul aria-label="Was Sie wissen müssen">{sec.cons.map((x: string) => <li>{x}</li>)}</ul>
+                  </div>
+                </div>
+              )}
+
+              {sec.type === "closing" && (
+                <blockquote class="akte-closing">
+                  <p>„{sec.quote}“</p>
+                  <div class="akte-closing-attr">— Die Redaktion{lastCheckedShort ? ` · letzte Prüfung ${lastCheckedShort}` : ""}</div>
+                </blockquote>
+              )}
+
+              {sec.type === "faq" && (
+                <div class="akte-faq">
+                  {sec.items.map((it: any, idx: number) => (
+                    <div class="akte-faq-row">
+                      <span class="akte-faq-num">F.{String(idx + 1).padStart(2, "0")}</span>
+                      <div class="akte-faq-qa">
+                        <h3 class="akte-faq-q">{it.q}</h3>
+                        <p class="akte-faq-a">{it.a}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </section>
+        </Fragment>
+      ))}
+
+      {closingIdx === -1 && schlussbildSrc && (
+        <figure class="akte-schlussbild">
+          <div class="akte-schlussbild-head">
+            <div>
+              <div class="akte-schlussbild-kicker">↳ Schlussbild</div>
+              <div class="akte-schlussbild-title">Eine Pause, bevor die Redaktion spricht.</div>
+            </div>
+            <div class="akte-schlussbild-meta">Bild · Redaktion · 2026</div>
+          </div>
+          <div class="akte-schlussbild-slot">
+            <img src={schlussbildSrc} alt={schlussbildAlt} loading="lazy" decoding="async" />
+          </div>
+        </figure>
+      )}
+    </article>
+  ) : (
+    <article class="card article akte-article">
+      <div class="article-body akte-article-body">
+        {!isCuratedTool ? (
+          <blockquote class="tool-disclosure">
+            Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.
+            Für eine kuratierte Einordnung siehe unsere <a href="/ratgeber/">Ratgeber</a>.
+          </blockquote>
+        ) : null}
+        <div set:html={articleHtml}></div>
+      </div>
+    </article>
+  )}
 
   <!-- Verwandte Akten / Alternatives — editorial dossier card grid -->
   {alternativesTop.length > 0 && (

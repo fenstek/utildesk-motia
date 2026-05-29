@@ -1,11 +1,27 @@
 # CLAUDE.md
 
-## Current design handoff (2026-05-29)
+## Current design handoff (2026-05-29) — MERGED TO MASTER
 
-For the Claude Code redesign task, read `handoff/claude-code-design/README.md` first.
-Restore tag: `restore/pre-claude-code-design-20260529-baca47ac`.
-Work branch: `codex/claude-design-handoff-20260529`.
-Use the token-saving rules in `handoff/claude-code-design/TOKEN_SAVING.md`; do not bulk-read generated content, images, outputs, or dependencies.
+**Status:** 5 design commits merged to `master` via PR #202 (SHA `079e869d`). Cloudflare Pages is deploying.
+
+Restore tag (pre-experiment safe state): `restore/pre-claude-code-design-20260529-baca47ac`.
+Merged branch: `codex/claude-design-handoff-20260529`.
+
+### What was implemented (Cowork session)
+- Tool-akte (dossier): editorial masthead, Faktenblatt aside, article typography, Alternativen card grid
+- Full editorial reskin: tool index, ratgeber index, ratgeber article routes
+- Collapsed stacked headers into single KI-Blatt nav+masthead
+
+### What remains for Codex to continue
+Read `handoff/claude-code-design/README.md` and `handoff/claude-code-design/VISUAL_TARGETS.md` for full context.
+Use token-saving rules in `handoff/claude-code-design/TOKEN_SAVING.md`.
+
+Remaining routes (from VISUAL_TARGETS.md):
+- Legal/methodology pages: `/methodologie/`, `/impressum/`, `/datenschutz/`
+- Locale equivalents under `site/src/pages/[locale]/...` if not already aligned
+- Visual QA: compare live routes against `handoff/claude-code-design/reference/claude_guide_v5_FINAL.pdf`
+
+**Do not touch** the content pipeline, secrets, cron scripts, Google Sheet automation, or deploy config.
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
