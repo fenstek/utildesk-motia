@@ -6,11 +6,11 @@ price_model: Abonnement
 tags: ["ai", "design", "image", "creative", "visual"]
 official_url: "https://www.midjourney.com/"
 affiliate_url: "https://www.midjourney.com/"
-tier: "C"
-generated_at: "2026-05-28"
+tier: C
+generated_at: 2026-05-28
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 89
+popularity: 97
 description: KI-Bildgenerator für hochwertige Konzeptbilder, Illustrationen, Stimmungen und visuelle Experimente.
 ---
 # Midjourney

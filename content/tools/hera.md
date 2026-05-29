@@ -6,11 +6,11 @@ price_model: Je nach Plan
 tags: ["video", "ai", "motion-design", "launch-video", "marketing"]
 official_url: "https://hera.video/"
 affiliate_url: "https://hera.video/"
-tier: "A"
-lastReviewed: "2026-05-28"
+tier: A
+lastReviewed: 2026-05-28
 mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]
 created_at: 2026-05-12
-popularity: 91
+popularity: 90
 ---
 # Hera
 

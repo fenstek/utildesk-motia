@@ -1,13 +1,13 @@
 ---
 slug: groove
 title: Groove
-category: "AI Writing"
+category: AI Writing
 price_model: Abonnement
 tags: [helpdesk, support, productivity]
 official_url: "https://www.groovehq.com/"
-popularity: 44
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 43
+tier: C
+generated_at: 2026-05-27
 ---
 # Groove
 

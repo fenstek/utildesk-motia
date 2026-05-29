@@ -1,13 +1,13 @@
 ---
 slug: papago
 title: Papago
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: 
 tags: [assistant, automation]
 official_url: "https://papago.naver.com/"
-popularity: 25
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 24
+tier: C
+generated_at: 2026-05-27
 ---
 # Papago
 

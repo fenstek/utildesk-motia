@@ -1,13 +1,13 @@
 ---
 slug: mailbird
 title: Mailbird
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Je nach Plan
 tags: [email-productivity,communication,inbox]
 official_url: "https://www.getmailbird.com/"
-popularity: 36
-tier: "D"
-generated_at: "2026-05-28"
+popularity: 35
+tier: D
+generated_at: 2026-05-28
 ---
 # Mailbird
 

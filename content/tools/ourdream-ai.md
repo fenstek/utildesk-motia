@@ -1,13 +1,13 @@
 ---
 slug: ourdream-ai
 title: Ourdream.ai
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://ourdream.ai/"
-popularity: 26
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 25
+tier: C
+generated_at: 2026-05-28
 ---
 # Ourdream.ai
 

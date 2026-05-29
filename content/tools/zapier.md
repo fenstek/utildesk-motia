@@ -1,15 +1,15 @@
 ---
 slug: zapier
 title: Zapier
-category: "AI Agents"
+category: AI Agents
 price_model: Freemium
 tags: [ai, devtools, automation]
 official_url: "http://zapier.com"
 created_at: 2026-02-13
 updated_at: 2026-05-21
-popularity: 3
-tier: "A"
-lastReviewed: "2026-05-28"
+popularity: 81
+tier: A
+lastReviewed: 2026-05-28
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Zapier

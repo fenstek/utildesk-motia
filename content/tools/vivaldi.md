@@ -5,9 +5,9 @@ category: Produktivität
 price_model: Free
 tags: [browser, web, privacy, productivity]
 official_url: "https://vivaldi.com/"
-popularity: 6
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 5
+tier: C
+generated_at: 2026-05-28
 ---
 # Vivaldi
 

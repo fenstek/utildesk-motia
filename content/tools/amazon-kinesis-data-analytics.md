@@ -1,13 +1,13 @@
 ---
 slug: amazon-kinesis-data-analytics
 title: Amazon Kinesis Data Analytics
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
-popularity: 70
-tier: "C"
-generated_at: "2026-05-26"
+popularity: 69
+tier: C
+generated_at: 2026-05-26
 ---
 # Amazon Kinesis Data Analytics
 

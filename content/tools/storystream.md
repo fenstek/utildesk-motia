@@ -1,14 +1,14 @@
 ---
 slug: storystream
 title: StoryStream
-category: "AI Writing"
+category: AI Writing
 price_model: Freemium
 tags: ["writing", "design", "marketing"]
 official_url: "https://storystream.ai/"
 created_at: 2026-02-12
-popularity: 13
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 12
+tier: C
+generated_at: 2026-05-28
 ---
 # StoryStream
 

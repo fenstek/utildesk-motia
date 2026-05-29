@@ -5,9 +5,9 @@ category: Produktivität
 price_model: Abonnement
 tags: [education,language,learning,mobile]
 official_url: "https://www.babbel.com/"
-popularity: 64
-tier: "D"
-generated_at: "2026-05-27"
+popularity: 63
+tier: D
+generated_at: 2026-05-27
 ---
 # Babbel
 

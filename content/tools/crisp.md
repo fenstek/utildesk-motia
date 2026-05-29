@@ -5,9 +5,9 @@ category: Produktivität
 price_model: Freemium
 tags: [customer-support, chatbot, communication, ai]
 official_url: "https://crisp.chat/en/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 54
+tier: D
+generated_at: 2026-05-18
 ---
 # Crisp
 

@@ -1,13 +1,13 @@
 ---
 slug: mongodb
 title: MongoDB
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Freemium
 tags: [database,data,cloud,developer-tools]
 official_url: "https://www.mongodb.com/"
-popularity: 29
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 28
+tier: C
+generated_at: 2026-05-27
 ---
 # MongoDB
 

@@ -1,13 +1,13 @@
 ---
 slug: onlyoffice
 title: OnlyOffice
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://onlyoffice.com/"
-popularity: 88
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 87
+tier: C
+generated_at: 2026-05-28
 ---
 # OnlyOffice
 

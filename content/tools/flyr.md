@@ -1,13 +1,13 @@
 ---
 slug: flyr
 title: Flyr
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Abonnement
 tags: [ai, travel, revenue-management, analytics]
 official_url: "https://flyr.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 48
+tier: D
+generated_at: 2026-05-18
 ---
 # Flyr
 

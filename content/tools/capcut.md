@@ -1,14 +1,14 @@
 ---
 slug: capcut
 title: CapCut
-category: "Audio & Video"
+category: Audio & Video
 price_model: Freemium
 tags: [ai, video, editing]
 official_url: "https://www.capcut.com/nl-nl/"
-popularity: 60
+popularity: 59
 updated_at: 2026-05-21
-tier: "C"
-generated_at: "2026-05-27"
+tier: C
+generated_at: 2026-05-27
 ---
 # CapCut
 

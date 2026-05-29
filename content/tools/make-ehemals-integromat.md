@@ -1,14 +1,14 @@
 ---
 slug: make-ehemals-integromat
 title: Make (ehemals Integromat)
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
-popularity: 35
+popularity: 34
 updated_at: 2026-05-21
-tier: "A"
-lastReviewed: "2026-05-27"
+tier: A
+lastReviewed: 2026-05-27
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Make (ehemals Integromat)

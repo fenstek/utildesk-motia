@@ -1,13 +1,13 @@
 ---
 slug: davinci-resolve
 title: DaVinci Resolve
-category: "AI Coding"
+category: AI Coding
 price_model: Freemium
 tags: [video-editing,color-grading,post-production]
 official_url: "https://www.blackmagicdesign.com/products/davinciresolve"
-popularity: 95
-tier: "D"
-generated_at: "2026-05-28"
+popularity: 94
+tier: D
+generated_at: 2026-05-28
 ---
 # DaVinci Resolve
 

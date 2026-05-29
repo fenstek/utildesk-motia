@@ -1,13 +1,13 @@
 ---
 slug: microsoft-defender-for-endpoint
 title: Microsoft Defender for Endpoint
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Abonnement
 tags: [security,enterprise,automation,analytics,developer-tools]
 official_url: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint"
-popularity: 33
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 32
+tier: C
+generated_at: 2026-05-28
 ---
 # Microsoft Defender for Endpoint
 

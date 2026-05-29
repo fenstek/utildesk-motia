@@ -1,14 +1,14 @@
 ---
 slug: tabnine
 title: Tabnine
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Freemium
 tags: [ai, developer]
 official_url: "https://www.tabnine.com/"
 created_at: 2026-02-14
-popularity: 11
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 10
+tier: C
+generated_at: 2026-05-28
 ---
 # Tabnine
 

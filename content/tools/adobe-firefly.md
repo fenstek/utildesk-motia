@@ -6,10 +6,10 @@ price_model: Freemium
 tags: ["ai", "design"]
 official_url: "https://firefly.adobe.com/?media=featured"
 affiliate_url: "https://firefly.adobe.com/?media=featured"
-tier: "C"
-generated_at: "2026-05-28"
+tier: C
+generated_at: 2026-05-28
 created_at: 2026-02-02
-popularity: 98
+popularity: 95
 ---
 # Adobe Firefly
 

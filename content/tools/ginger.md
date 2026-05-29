@@ -1,13 +1,13 @@
 ---
 slug: ginger
 title: Ginger
-category: "AI Writing"
+category: AI Writing
 price_model: Je nach Plan
 tags: [writing, productivity, automation, assistant]
 official_url: "https://www.gingersoftware.com/"
-popularity: 48
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 47
+tier: C
+generated_at: 2026-05-27
 ---
 # Ginger
 

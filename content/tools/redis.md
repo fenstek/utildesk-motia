@@ -1,13 +1,13 @@
 ---
 slug: redis
 title: Redis
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Open Source
 tags: [database, cache, open-source, cloud]
 official_url: "https://redis.io/"
-popularity: 20
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 19
+tier: C
+generated_at: 2026-05-28
 ---
 # Redis
 

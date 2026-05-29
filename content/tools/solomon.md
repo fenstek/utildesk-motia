@@ -1,13 +1,13 @@
 ---
 slug: solomon
 title: Solomon
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: Je nach Plan
 tags: [education, assistant, productivity, ai]
 official_url: "https://usesolomon.ai/"
-popularity: 16
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 15
+tier: C
+generated_at: 2026-05-28
 ---
 # Solomon
 

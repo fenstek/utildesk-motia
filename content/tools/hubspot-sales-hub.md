@@ -1,14 +1,14 @@
 ---
 slug: hubspot-sales-hub
 title: HubSpot Sales Hub
-category: "Marketing & Vertrieb"
+category: Marketing & Vertrieb
 price_model: Freemium
 tags: [crm, sales, automation, marketing]
 official_url: "https://www.hubspot.com/products/sales"
-popularity: 41
+popularity: 40
 updated_at: 2026-05-21
-tier: "C"
-generated_at: "2026-05-27"
+tier: C
+generated_at: 2026-05-27
 ---
 # HubSpot Sales Hub
 

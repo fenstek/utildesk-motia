@@ -1,13 +1,13 @@
 ---
 slug: cypress
 title: Cypress
-category: "AI Agents"
+category: AI Agents
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.cypress.io/"
-popularity: 54
-tier: "C"
-generated_at: "2026-05-26"
+popularity: 53
+tier: C
+generated_at: 2026-05-26
 ---
 # Cypress
 

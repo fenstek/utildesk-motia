@@ -1,13 +1,13 @@
 ---
 slug: adalo
 title: Adalo
-category: "AI Coding"
+category: AI Coding
 price_model: Abonnement
 tags: [no-code, design, automation, productivity]
 official_url: "https://www.adalo.com/"
-popularity: 79
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 78
+tier: C
+generated_at: 2026-05-28
 ---
 # Adalo
 

@@ -1,13 +1,13 @@
 ---
 slug: microsoft-powerpoint
 title: Microsoft PowerPoint
-category: "AI Image"
+category: AI Image
 price_model: Abonnement, Je nach Plan
 tags: [presentations, productivity, microsoft-365]
 official_url: "https://www.microsoft.com/de-de/microsoft-365/powerpoint"
-popularity: 32
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 31
+tier: C
+generated_at: 2026-05-28
 ---
 # Microsoft PowerPoint
 

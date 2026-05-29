@@ -1,14 +1,14 @@
 ---
 slug: landr
 title: LANDR
-category: "AI Agents"
+category: AI Agents
 price_model: Einmalzahlung
 tags: [audio, productivity, automation, workflow]
 official_url: "https://www.landr.com/"
-popularity: 37
+popularity: 36
 description: LANDR ist ein Audio- und Musikwerkzeug für Mastering, Musikdistribution und Audio-Workflows für unabhängige Musiker und Creator.
-tier: "C"
-generated_at: "2026-05-27"
+tier: C
+generated_at: 2026-05-27
 ---
 # LANDR
 

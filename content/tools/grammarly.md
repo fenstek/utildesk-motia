@@ -6,11 +6,11 @@ price_model: Freemium
 tags: 
 official_url: "https://www.grammarly.com/"
 affiliate_url: "https://www.grammarly.com/"
-tier: "C"
-generated_at: "2026-05-27"
+tier: C
+generated_at: 2026-05-27
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 45
+popularity: 44
 ---
 # Grammarly
 
