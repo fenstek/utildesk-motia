@@ -59,7 +59,7 @@ const isEn = locale === "en";
 const prefix = isEn ? "/en" : "";
 const issueNo = "049";
 const today = "27.05.2026";
-const issueDateLine = isEn ? "Wednesday ? 27 May 2026" : "Mittwoch ? 27. Mai 2026";
+const issueDateLine = isEn ? "Wednesday \u00b7 27 May 2026" : "Mittwoch \u00b7 27. Mai 2026";
 const copyrightYear = 2026;
 const totalGuides = typeof guidesCount === "number" ? guidesCount : guides.length;
 const copy = isEn
@@ -253,7 +253,7 @@ const categoryRows = categories.slice(0, 8);
           <p>{copy.mastSub}</p>
         </div>
         <div class="ds-masthead-ki-side ds-masthead-ki-side-right">
-          {totalGuides || guides.length || 25} {isEn ? "decisions" : "Entscheidungen"} ? {toolsCount} {isEn ? "tools indexed" : "Tools indiziert"}<br />
+          {totalGuides || guides.length || 25} {isEn ? "decisions" : "Entscheidungen"} {"\u00b7"} {toolsCount} {isEn ? "tools indexed" : "Tools indiziert"}<br />
           0 {isEn ? "paid placements" : "bezahlte Platzierungen"}
         </div>
       </div>
