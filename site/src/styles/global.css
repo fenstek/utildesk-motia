@@ -2468,8 +2468,9 @@ html[data-design="decision"]:has(.ds-template) body {
   font-family: "Bricolage Grotesque", system-ui, sans-serif;
 }
 
-html[data-design="decision"]:has(.ds-template) .site-header,
-html[data-design="decision"]:has(.ds-template) .site-footer,
+/* On the home (.ds-template present) we still want the global header
+   (ki-blatt nav + masthead) — DSHome no longer renders its own nav.
+   We only hide the now-stale legacy-home block. */
 html[data-design="decision"]:has(.ds-template) .legacy-home {
   display: none;
 }

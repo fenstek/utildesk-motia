@@ -378,11 +378,9 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
 
   <body>
     <a href="#main-content" class="skip-link">{ui.skipLink}</a>
-    <a class="decision-global-badge" href={homeHref} aria-label={locale === "en" ? "Go to home" : "Zur Startseite"}>{decisionIssueLabel}</a>
 
-    <header class="site-header">
-
-      <nav class="ds-nav interior-decision-nav" aria-label={locale === "en" ? "Decision navigation" : "Entscheidungsnavigation"}>
+    <header class="site-header ki-blatt-header">
+      <nav class="ds-nav" aria-label={locale === "en" ? "Decision navigation" : "Entscheidungsnavigation"}>
         <div class="ds-nav-left">
           <strong>{decisionBrand}</strong>
           <span>v4.3.0-decisions</span>
@@ -399,118 +397,36 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
           <a href={llmsHref}>⌘ K</a>
           <button
             type="button"
-            class="ds-design-switch"
-            data-design-toggle
-            data-design-labels={designLabels}
-            aria-pressed="true"
-            title={locale === "en" ? "Switch site design" : "Site-Design wechseln"}
+            class="theme-toggle ds-theme-switch"
+            id="theme-toggle"
+            aria-label={ui.themeToggleLabel}
+            aria-pressed="false"
+            title={ui.themeToggleLabel}
+            data-theme-labels={themeLabels}
           >
-            <span data-design-label>{decisionOldVersion}</span>
+            <span data-theme-label>{ui.themeLight}</span>
           </button>
         </div>
       </nav>
 
-      <div class="container">
-
-        <div class="hdr-row hdr-top">
-
-          <a href={homeHref} class="brand">
-
-            <span class="brand-mark-text">utildesk</span>
-
-            <span class="brand-dot">·</span>
-
-            <span class="brand-sub">{decisionBrandSub}</span>
-
-          </a>
-
-          <div class="hdr-meta" aria-label={ui.systemStatus}>
-
-            <span>v4.3.0-decisions</span>
-
-            <span class="dot">·</span>
-
-            <span><span class="live-dot"></span>live</span>
-
-            <span class="dot">·</span>
-
-            <span>27.05.2026</span>
-
+      {isDecisionHome && (
+        <div class="decision-masthead" aria-hidden="true">
+          <div class="decision-masthead-side">
+            {decisionIssueLine}<br />
+            Mittwoch · 27. Mai 2026<br />
+            {decisionEdited}
           </div>
-
+          <div class="decision-masthead-main">
+            <span>KI-Blatt<em>.</em></span>
+            <p>{decisionDeck}</p>
+          </div>
+          <div class="decision-masthead-side decision-masthead-side-right">
+            25 {locale === "en" ? "decisions" : "Entscheidungen"} · 1171 {locale === "en" ? "tools indexed" : "Tools indiziert"}<br />
+            0 {locale === "en" ? "paid placements" : "bezahlte Platzierungen"}
+          </div>
         </div>
-
-        <nav class="nav hdr-row hdr-bottom" aria-label={ui.navLabel}>
-
-          <div class="nav-links">
-
-            <a href={homeHref} aria-current={isDecisionHome ? "page" : undefined}>{decisionNavHome}</a>
-
-            <a href={ratgeberHref} aria-current={isRatgeberSection ? "page" : undefined}>{decisionNavGuides}</a>
-
-            <a href={toolsHref} aria-current={isToolsSection ? "page" : undefined}>{decisionNavTools}</a>
-
-            <a href={methodologyHref} aria-current={isMethodologySection ? "page" : undefined}>{decisionNavMethod}</a>
-
-          </div>
-
-          <div class="nav-actions">
-
-            <a class="btn-ghost" href={languageSwitchTarget} hreflang={locale === "en" ? "de" : "en"} aria-label={ui.languageLabel}>{locale === "en" ? "DE" : "EN"}</a>
-
-            <a class="btn-ghost" href={llmsHref}>⌘ K</a>
-
-            <button type="button" class="theme-toggle btn-ghost" id="theme-toggle" aria-label={ui.themeToggleLabel} aria-pressed="false" title={ui.themeToggleLabel} data-theme-labels={themeLabels}>
-
-              <span data-theme-label>{ui.themeLight}</span>
-
-            </button>
-
-            <button type="button" class="design-toggle btn-ghost" id="design-toggle" aria-pressed="true" title={locale === "en" ? "Switch site design" : "Site-Design wechseln"} data-design-toggle data-design-labels={designLabels}>
-
-              <span data-design-label>{decisionOldVersion}</span>
-
-            </button>
-
-          </div>
-
-        </nav>
-
-        <div class="hdr-status">
-
-          <span>{ui.dbStatus}</span>
-
-          <span class="dot">/</span>
-
-          <span>{ui.indexNowStatus}</span>
-
-          <span class="dot">/</span>
-
-          <span>{ui.aiReadableStatus}</span>
-
-        </div>
-
-      </div>
-
+      )}
     </header>
-
-    <div class="decision-masthead" aria-hidden="true">
-
-      <div class="decision-masthead-side">
-        {decisionIssueLine}<br />
-        Mittwoch · 27. Mai 2026<br />
-        {decisionEdited}
-      </div>
-      <div class="decision-masthead-main">
-        <span>{decisionMastheadTitleText}<em>.</em></span>
-        <p>{decisionDeck}</p>
-      </div>
-      <div class="decision-masthead-side decision-masthead-side-right">
-        25 {locale === "en" ? "decisions" : "Entscheidungen"} · 1171 {locale === "en" ? "tools indexed" : "Tools indiziert"}<br />
-        0 {locale === "en" ? "paid placements" : "bezahlte Platzierungen"}
-      </div>
-
-    </div>
 
 
 

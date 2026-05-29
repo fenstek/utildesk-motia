@@ -1,0 +1,3833 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Utildesk — KI-Blatt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("05fe3ea4-ba96-4605-9bbe-71d9d0e0792c") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("79dab3e8-0c7c-489f-b4a8-be7d433f690c") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("21b96188-c71d-4d44-9d65-7c8963aeed6b") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("980cf1bd-4b64-41ec-bcce-da0e908d6968") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("64a62013-3a84-4054-99c4-ff53c5a8c68e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("6eae3054-d1fd-4643-a324-023c55a05df2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("05fe3ea4-ba96-4605-9bbe-71d9d0e0792c") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("79dab3e8-0c7c-489f-b4a8-be7d433f690c") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("21b96188-c71d-4d44-9d65-7c8963aeed6b") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("980cf1bd-4b64-41ec-bcce-da0e908d6968") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("64a62013-3a84-4054-99c4-ff53c5a8c68e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("6eae3054-d1fd-4643-a324-023c55a05df2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("05fe3ea4-ba96-4605-9bbe-71d9d0e0792c") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("79dab3e8-0c7c-489f-b4a8-be7d433f690c") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("21b96188-c71d-4d44-9d65-7c8963aeed6b") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("980cf1bd-4b64-41ec-bcce-da0e908d6968") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("64a62013-3a84-4054-99c4-ff53c5a8c68e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("6eae3054-d1fd-4643-a324-023c55a05df2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("05fe3ea4-ba96-4605-9bbe-71d9d0e0792c") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("79dab3e8-0c7c-489f-b4a8-be7d433f690c") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("21b96188-c71d-4d44-9d65-7c8963aeed6b") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("980cf1bd-4b64-41ec-bcce-da0e908d6968") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("64a62013-3a84-4054-99c4-ff53c5a8c68e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("6eae3054-d1fd-4643-a324-023c55a05df2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b0bbea9a-40c5-44bb-967f-bd80463d66fd") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("86bfd55c-351a-4495-974a-eb88625ddfb3") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("5fd6d9ea-d1c7-4d17-81fb-7ebff2d3b236") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("014f7122-6357-499b-9651-7073235e2585") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("0a3c260c-d7f9-471e-9d55-0a780ab3e318") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c7bf298a-37b5-47e3-a571-0fa6d13e2c8e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b0bbea9a-40c5-44bb-967f-bd80463d66fd") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("86bfd55c-351a-4495-974a-eb88625ddfb3") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("5fd6d9ea-d1c7-4d17-81fb-7ebff2d3b236") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("014f7122-6357-499b-9651-7073235e2585") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("0a3c260c-d7f9-471e-9d55-0a780ab3e318") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c7bf298a-37b5-47e3-a571-0fa6d13e2c8e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("b0bbea9a-40c5-44bb-967f-bd80463d66fd") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("86bfd55c-351a-4495-974a-eb88625ddfb3") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("5fd6d9ea-d1c7-4d17-81fb-7ebff2d3b236") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("014f7122-6357-499b-9651-7073235e2585") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("0a3c260c-d7f9-471e-9d55-0a780ab3e318") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("c7bf298a-37b5-47e3-a571-0fa6d13e2c8e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("2ffe84e6-30ca-4ffb-9893-a5119c6d65ba") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1ad8e1fc-4ff0-4d18-a1aa-350746bad906") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c3dc5cf4-77f2-48d6-a9a9-8c7a50176828") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e3f8ab3f-55f5-47f5-a928-b1f47f756e69") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("57cfe60e-7ba7-46f8-807e-0c66a745ed5b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("17ae7bc1-fcc0-44c0-a4d7-57a7234c9df1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("2ffe84e6-30ca-4ffb-9893-a5119c6d65ba") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("1ad8e1fc-4ff0-4d18-a1aa-350746bad906") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c3dc5cf4-77f2-48d6-a9a9-8c7a50176828") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e3f8ab3f-55f5-47f5-a928-b1f47f756e69") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("57cfe60e-7ba7-46f8-807e-0c66a745ed5b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("17ae7bc1-fcc0-44c0-a4d7-57a7234c9df1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("2ffe84e6-30ca-4ffb-9893-a5119c6d65ba") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1ad8e1fc-4ff0-4d18-a1aa-350746bad906") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c3dc5cf4-77f2-48d6-a9a9-8c7a50176828") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("e3f8ab3f-55f5-47f5-a928-b1f47f756e69") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("57cfe60e-7ba7-46f8-807e-0c66a745ed5b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("17ae7bc1-fcc0-44c0-a4d7-57a7234c9df1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("2ffe84e6-30ca-4ffb-9893-a5119c6d65ba") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("1ad8e1fc-4ff0-4d18-a1aa-350746bad906") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("c3dc5cf4-77f2-48d6-a9a9-8c7a50176828") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("e3f8ab3f-55f5-47f5-a928-b1f47f756e69") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("57cfe60e-7ba7-46f8-807e-0c66a745ed5b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("17ae7bc1-fcc0-44c0-a4d7-57a7234c9df1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  html, body { margin:0; padding:0; background:#1a1a18; }
+  body { font-family: 'Bricolage Grotesque', system-ui, sans-serif; min-height:100vh; }
+  .tabbar {
+    position:fixed; top:14px; left:50%; transform:translateX(-50%);
+    background:rgba(12,12,10,0.92); color:#f6f4ee; padding:6px;
+    border-radius:999px; display:flex; gap:4px; z-index:1000;
+    backdrop-filter:blur(8px); font-family:'JetBrains Mono', monospace;
+    box-shadow:0 4px 24px rgba(0,0,0,0.3);
+  }
+  .tabbar button {
+    background:transparent; color:#f6f4ee; border:none; padding:8px 16px;
+    border-radius:999px; font-family:inherit; font-size:12px; letter-spacing:0.08em;
+    text-transform:uppercase; cursor:pointer; font-weight:500;
+  }
+  .tabbar button.active { background:#c5251c; color:#fff; }
+  .stage { display:flex; justify-content:center; padding:64px 24px 80px; }
+  .frame {
+    width:1440px; max-width:100%; box-shadow:0 24px 80px rgba(0,0,0,0.45);
+    background:#f6f4ee;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+
+
+<script src="9d674e7f-f2b2-48c6-8866-78b4ae9f7bea" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="78f6d76a-99d3-4921-bd4b-3b950b71162b" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="d406a674-a8b2-4895-9ef0-530a2a1a6b9f" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="f29389b2-cfcb-489f-803b-aefc8dbda179"></script>
+
+<script type="text/babel" data-presets="react">
+// Shared data — KI-Blatt edition
+// Each guide is reframed as a "Entscheidung" (decision) with a verdict.
+
+const STATS = {
+  tools: 1171, categories: 8, guides: 25, ads: 0,
+  version: 'v4.3.0-decisions',
+  updated: '27.05.2026',
+  edition: 'Nr. 049'
+};
+
+// Verdict types — the editorial position
+const VERDICT = {
+  EMPFEHLEN:    { label: 'Empfehlen',     short: 'emp',  glyph: '✔', color: '#0f6a3b', tone: 'Wir empfehlen.' },
+  BEDINGT:      { label: 'Mit Vorbehalt', short: 'bvb',  glyph: '◐', color: '#a86200', tone: 'Mit Vorbehalt.' },
+  NICHT:        { label: 'Nicht empfehlen', short: 'ne',  glyph: '✕', color: '#c5251c', tone: 'Wir raten ab.' },
+  UEBERBEWERTET:{ label: 'Überbewertet',  short: 'ueb',  glyph: '⊘', color: '#7a3df0', tone: 'Überbewertet.' },
+  ABWARTEN:     { label: 'Abwarten',      short: 'abw',  glyph: '◷', color: '#5a6068', tone: 'Noch nicht.' },
+};
+
+// Decisions — the front-page material
+const DECISIONS = [
+  {
+    id: 'd_049',
+    no: '049',
+    section: 'AI-Code Review',
+    headline: 'Soll mein Team Cursor, Copilot oder Claude Code einführen?',
+    dek: 'Drei sehr unterschiedliche Versprechen — und nur eines davon passt zu Teams, die Code ernst nehmen.',
+    verdict: VERDICT.BEDINGT,
+    verdictHead: 'Claude Code für Senior-Teams. Copilot als sicherer Standard. Cursor erst nach Pilot.',
+    read: 12,
+    date: '24.05.2026',
+    tested: '20.05.–24.05.2026',
+    by: 'Redaktion · S. Werner',
+    tools: ['Claude Code', 'GitHub Copilot', 'Cursor'],
+    tags: ['agents', 'review', 'team-size'],
+    excerpt: 'Wir haben drei Teams je eine Woche lang mit Cursor, Copilot und Claude Code arbeiten lassen. Was als Geschwindigkeitstest begann, endete als Diskussion über Verantwortung: Wer reviewt, was ein Agent committet?',
+    counter: ['Cursor blind ausrollen', 'Copilot als "macht ja eh nichts"-Default lassen'],
+  },
+  {
+    id: 'd_048',
+    no: '048',
+    section: 'Datenschutz',
+    headline: 'Sind „KI-Tools ohne Anmeldung" wirklich datenschutzfreundlich?',
+    dek: 'No-Login spart Zeit. Es spart aber selten Daten.',
+    verdict: VERDICT.NICHT,
+    verdictHead: 'Nein. „Ohne Anmeldung" ist kein Datenschutzversprechen.',
+    read: 7,
+    date: '22.05.2026',
+    tested: '15.05.–22.05.2026',
+    by: 'Redaktion · A. Lehmann',
+    tools: ['Perplexity', 'DuckDuckGo AI', 'You.com'],
+    tags: ['privacy', 'no-login', 'enterprise'],
+    excerpt: 'Wir haben sieben populäre „No-Login"-KI-Tools auf Tracking, Datenweitergabe und EU-Hosting geprüft. Ergebnis: Fünf von sieben senden trotz fehlender Anmeldung Telemetrie an Dritte.',
+    counter: ['Tools ohne Anmeldung für interne Dokumente', 'Browser-Plugins ohne IT-Freigabe'],
+  },
+  {
+    id: 'd_047',
+    no: '047',
+    section: 'Agent Security',
+    headline: 'Brauchen wir MCP — und welche Guardrails sofort?',
+    dek: 'MCP verbindet Agenten mit Tools. Ohne Audit-Trail wird daraus Schatten-IT.',
+    verdict: VERDICT.EMPFEHLEN,
+    verdictHead: 'Ja — aber nur mit Least Privilege, signierten Manifests und Logging.',
+    read: 9,
+    date: '20.05.2026',
+    tested: '10.05.–18.05.2026',
+    by: 'Redaktion · S. Werner',
+    tools: ['Anthropic MCP', 'Open MCP Registry', 'Mintlify Guardrails'],
+    tags: ['mcp', 'security', 'governance'],
+    excerpt: 'MCP ist 2026 das, was OAuth 2010 war: nützlich, weit verbreitet, gefährlich, wenn Teams es ohne Konzept ausrollen. Wir zeigen die fünf Guardrails, die nicht warten können.',
+    counter: ['Agenten ohne Tool-Whitelist', 'MCP-Server ohne Audit-Logging'],
+  },
+];
+
+// Anti-recommendations — the radical column
+const ANTI = [
+  {
+    name: 'AutoGPT-Style „Autonomous Agents"',
+    why: 'Demos beeindrucken, Produktion bricht zusammen. Reasoning-Loops kosten mehr als ein Junior-Praktikant.',
+    tag: 'überbewertet',
+  },
+  {
+    name: 'KI-Detector-Tools',
+    why: 'False-Positive-Raten von 20 %+ in unabhängigen Tests. Kein Tool, das wir guten Gewissens empfehlen.',
+    tag: 'nicht empfehlen',
+  },
+  {
+    name: '„AI-First" SaaS-Resterampe',
+    why: 'GPT-4-Wrapper mit Abopreis. Wir entfernen pro Woche 5–10 davon aus dem Index.',
+    tag: 'aus dem index',
+  },
+];
+
+// Task-driven entry points (the "Nach Aufgabe starten" reframe)
+const TASKS = [
+  { icon: '⌘',  task: 'Code mit KI schreiben',        decision: 'd_049', tools: ['Copilot','Cursor','Claude Code'] },
+  { icon: '⚿',  task: 'Sichere KI-Tools einführen',   decision: 'd_048', tools: ['ChatGPT Team','DeepL Pro','Custom']},
+  { icon: '⇄',  task: 'Workflows automatisieren',     decision: null,    tools: ['Zapier','n8n','Make'] },
+  { icon: '⌕',  task: 'Recherche & Quellen prüfen',   decision: null,    tools: ['Perplexity','Consensus','Elicit'] },
+  { icon: '✎',  task: 'Texte mit KI redigieren',      decision: null,    tools: ['Claude','DeepL Write','Lex'] },
+  { icon: '◫',  task: 'Bilder & Mockups generieren',  decision: null,    tools: ['Midjourney','Ideogram','Recraft'] },
+];
+
+const CATEGORIES = [
+  { slug: 'automatisierung',    name: 'Automatisierung',       count: 356 },
+  { slug: 'produktivitaet',     name: 'Produktivität',         count: 349 },
+  { slug: 'entwickler-tools',   name: 'Entwickler-Tools',      count: 287 },
+  { slug: 'ai-chatbots',        name: 'Chatbots & Assistenten',count: 220 },
+  { slug: 'audio-video',        name: 'Audio & Video',         count: 180 },
+  { slug: 'design-kreativ',     name: 'Design & Kreativität',  count: 160 },
+  { slug: 'marketing-vertrieb', name: 'Marketing & Vertrieb',  count: 111 },
+  { slug: 'schreiben-content',  name: 'Schreiben & Content',   count: 109 },
+];
+
+const TAGS = [
+  ['automation', 304], ['ai', 201], ['developer-tools', 186], ['productivity', 168],
+  ['assistant', 143],  ['data', 135], ['analytics', 134],     ['workflow', 128],
+  ['design', 120],     ['audio', 96], ['video', 88],          ['chatbot', 79],
+];
+
+// Tools with verdict labels
+const TOOLS = [
+  { idx:'01', name:'Claude Code',    domain:'claude.com',      cat:'Entwickler', price:'Abo',      verdict:VERDICT.EMPFEHLEN,
+    blurb:'CLI-Agent für umfangreiche Code-Aufgaben. Stärkste Kontext-Disziplin im Test.', tags:['agents','code','review'] },
+  { idx:'02', name:'GitHub Copilot', domain:'github.com',      cat:'Entwickler', price:'10$/mo',   verdict:VERDICT.EMPFEHLEN,
+    blurb:'Sicherer Standard für gemischte Teams. Klare IDE-Integration, geringes Risiko.', tags:['ide','autocomplete','code'] },
+  { idx:'03', name:'Cursor',         domain:'cursor.com',      cat:'Entwickler', price:'20$/mo',   verdict:VERDICT.BEDINGT,
+    blurb:'Sehr schnell. Fragwürdig ohne Review-Disziplin — nur mit Pilot einführen.', tags:['ide','agents','code'] },
+  { idx:'04', name:'ChatGPT',        domain:'chatgpt.com',     cat:'AI',         price:'Freemium', verdict:VERDICT.EMPFEHLEN,
+    blurb:'Solider Allzweck-Assistent. Für sensible Daten: Team/Enterprise mit DPA.', tags:['chatbot','llm','assistant'] },
+  { idx:'05', name:'Perplexity',     domain:'perplexity.ai',   cat:'AI',         price:'Freemium', verdict:VERDICT.BEDINGT,
+    blurb:'Recherche mit Quellen. Gut — solange Quellen geprüft werden, nicht zitiert.', tags:['research','search','ai'] },
+  { idx:'06', name:'AutoGPT',        domain:'autogpt.net',     cat:'Entwickler', price:'OSS',      verdict:VERDICT.UEBERBEWERTET,
+    blurb:'Beeindruckende Demos, schwache Produktionsreife. Reasoning-Kosten unverhältnismäßig.', tags:['agents','llm'] },
+  { idx:'07', name:'KI-Detector X',  domain:'example.com',     cat:'Schreiben',  price:'Abo',      verdict:VERDICT.NICHT,
+    blurb:'False-Positive-Rate über 20 % in unseren Stichproben. Keine Empfehlung.', tags:['detection','writing'] },
+  { idx:'08', name:'n8n',            domain:'n8n.io',          cat:'Automatisierung', price:'OSS / Cloud', verdict:VERDICT.EMPFEHLEN,
+    blurb:'Self-hostbar, gut dokumentiert, EU-tauglich. Erste Wahl bei sensiblen Daten.', tags:['automation','open-source'] },
+];
+
+window.STATS = STATS;
+window.VERDICT = VERDICT;
+window.DECISIONS = DECISIONS;
+window.ANTI = ANTI;
+window.TASKS = TASKS;
+window.CATEGORIES = CATEGORIES;
+window.TAGS = TAGS;
+window.TOOLS = TOOLS;
+
+
+// ─────────────────────────────────────────────────────────────────────────
+// HOME — KI-Blatt / Decision Desk
+// Position: Utildesk is an editorial decision desk for AI tools.
+// Tools sit in the back-matter. Verdicts sit on the cover.
+// ─────────────────────────────────────────────────────────────────────────
+
+const dsPalette = {
+  paper:     '#f6f4ee',
+  paperAlt:  '#eceae2',
+  ink:       '#0c0c0a',
+  inkSoft:   '#3a3a35',
+  inkMid:    '#6a6a62',
+  inkDim:    '#9a988e',
+  rule:      '#d8d4c5',
+  ruleHi:    '#b6b1a0',
+  vermillion:'#c5251c',  // verdict / no
+  green:     '#0f6a3b',  // verdict / yes
+  amber:     '#a86200',  // verdict / conditional
+  purple:    '#7a3df0',  // verdict / overrated
+  ocean:     '#0042b8',  // links
+  parchment: '#e8e3d2',
+};
+
+const dsS = {
+  serif:    { fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif", fontWeight:400 },
+  serifBold:{ fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif", fontWeight:700, letterSpacing:'-0.01em' },
+  display:  { fontFamily: "'Bricolage Grotesque', system-ui, sans-serif", fontWeight:700, letterSpacing:'-0.035em' },
+  sans:     { fontFamily: "'Bricolage Grotesque', system-ui, sans-serif", fontWeight:400 },
+  mono:     { fontFamily: "'JetBrains Mono', monospace", fontWeight:400 },
+  page:     {
+    width:1440, minHeight:2200, background:dsPalette.paper, color:dsPalette.ink,
+    fontFamily: "'Bricolage Grotesque', system-ui, sans-serif",
+    position:'relative', overflow:'hidden',
+  },
+  inner:    { padding: '0 56px' },
+};
+
+// ─────────────────────────────────────────────────────────────────────────
+function DSHome() {
+  return (
+    <div style={dsS.page}>
+      <DSNav />
+      <DSMasthead />
+      <DSFrontDecision />
+      <DSDecisionStack />
+      <DSPrompt />
+      <DSAntiRecs />
+      <DSTaskGrid />
+      <DSToolIndex />
+      <DSFooter />
+    </div>
+  );
+}
+
+// ─── Nav strip ───────────────────────────────────────────────────────────
+function DSNav() {
+  return (
+    <div style={{
+      display:'flex', alignItems:'center', justifyContent:'space-between',
+      padding:'14px 56px', borderBottom:`1px solid ${dsPalette.rule}`,
+      ...dsS.mono, fontSize:11, color:dsPalette.inkMid, letterSpacing:'0.04em',
+    }}>
+      <div style={{display:'flex', gap:18, alignItems:'center'}}>
+        <span style={{color:dsPalette.ink, fontWeight:700}}>utildesk · ki-blatt</span>
+        <span>{window.STATS.version}</span>
+        <span style={{display:'inline-flex', alignItems:'center', gap:6}}>
+          <span style={{width:6, height:6, borderRadius:99, background:dsPalette.vermillion}}/>
+          live · {window.STATS.updated}
+        </span>
+      </div>
+      <div style={{display:'flex', gap:28, ...dsS.sans, fontSize:13, color:dsPalette.ink, fontWeight:500}}>
+        <span style={{borderBottom:`2px solid ${dsPalette.vermillion}`, paddingBottom:2}}>Entscheidungen</span>
+        <span>Ratgeber</span>
+        <span>Tool-Index</span>
+        <span>Methodologie</span>
+        <span>Archiv</span>
+      </div>
+      <div style={{display:'flex', gap:14, alignItems:'center'}}>
+        <span>DE · EN</span>
+        <span style={{padding:'4px 10px', border:`1px solid ${dsPalette.ruleHi}`, borderRadius:3}}>⌘ K · entscheiden</span>
+      </div>
+    </div>
+  );
+}
+
+// ─── Masthead — newspaper title block ────────────────────────────────────
+function DSMasthead() {
+  return (
+    <div style={{
+      ...dsS.inner, padding:'28px 56px 24px',
+      borderBottom:`3px double ${dsPalette.ink}`,
+      display:'grid', gridTemplateColumns:'auto 1fr auto', alignItems:'flex-end', gap:32
+    }}>
+      <div style={{...dsS.mono, fontSize:11, color:dsPalette.inkSoft, lineHeight:1.7}}>
+        Ausgabe {window.STATS.edition}<br/>
+        Mittwoch · 27. Mai 2026<br/>
+        Redigiert in Berlin
+      </div>
+      <div style={{textAlign:'center'}}>
+        <div style={{
+          fontFamily: "'Source Serif 4', Georgia, serif",
+          fontWeight: 900, fontStyle:'italic',
+          fontSize:84, lineHeight:1.0, letterSpacing:'-0.04em',
+          paddingBottom:4,
+        }}>
+          KI-Blatt<span style={{color:dsPalette.vermillion}}>.</span>
+        </div>
+        <div style={{
+          ...dsS.mono, fontSize:11, color:dsPalette.inkSoft, marginTop:14,
+          letterSpacing:'0.32em', textTransform:'uppercase'
+        }}>
+          Ein redaktioneller Entscheidungs-Desk für KI-Werkzeuge
+        </div>
+      </div>
+      <div style={{...dsS.mono, fontSize:11, color:dsPalette.inkSoft, lineHeight:1.7, textAlign:'right'}}>
+        25 Entscheidungen · 1171 Tools indiziert<br/>
+        0 bezahlte Platzierungen<br/>
+        ISSN — wir arbeiten dran
+      </div>
+    </div>
+  );
+}
+
+// ─── Front decision — the "above the fold" verdict story ─────────────────
+function DSFrontDecision() {
+  const d = window.DECISIONS[0];
+  return (
+    <div style={{
+      ...dsS.inner, padding:'40px 56px 48px',
+      borderBottom:`1px solid ${dsPalette.rule}`,
+      display:'grid', gridTemplateColumns:'1.45fr 1fr', gap:56
+    }}>
+      <div>
+        <div style={{...dsS.mono, fontSize:11, color:dsPalette.vermillion, letterSpacing:'0.18em', textTransform:'uppercase'}}>
+          Entscheidung № {d.no} · {d.section}
+        </div>
+        <h1 style={{
+          ...dsS.serifBold, fontSize:84, lineHeight:0.98, margin:'18px 0 18px',
+          letterSpacing:'-0.025em', maxWidth:880, textWrap:'pretty'
+        }}>
+          {d.headline}
+        </h1>
+        <div style={{...dsS.serif, fontStyle:'italic', fontSize:26, lineHeight:1.35, color:dsPalette.inkSoft, maxWidth:760}}>
+          {d.dek}
+        </div>
+
+        {/* Verdict card */}
+        <div style={{
+          marginTop:32, padding:'24px 28px', background:dsPalette.parchment,
+          border:`2px solid ${dsPalette.ink}`, borderRadius:0,
+          position:'relative'
+        }}>
+          <div style={{
+            position:'absolute', top:-14, left:24, padding:'4px 10px',
+            background:dsPalette.paper, ...dsS.mono, fontSize:11, letterSpacing:'0.16em', textTransform:'uppercase',
+            color:dsPalette.ink, border:`1px solid ${dsPalette.ink}`, fontWeight:600
+          }}>
+            Verdikt der Redaktion
+          </div>
+          <div style={{display:'flex', alignItems:'flex-start', gap:18}}>
+            <div style={{
+              ...dsS.display, fontSize:60, lineHeight:1, color:d.verdict.color,
+              minWidth:60, textAlign:'center'
+            }}>
+              {d.verdict.glyph}
+            </div>
+            <div>
+              <div style={{...dsS.mono, fontSize:11, color:d.verdict.color, letterSpacing:'0.12em', textTransform:'uppercase', fontWeight:600}}>
+                {d.verdict.label}
+              </div>
+              <div style={{...dsS.serifBold, fontSize:28, lineHeight:1.2, marginTop:4, letterSpacing:'-0.01em'}}>
+                {d.verdictHead}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{display:'flex', gap:24, marginTop:24, ...dsS.mono, fontSize:11, color:dsPalette.inkMid, alignItems:'center', flexWrap:'wrap'}}>
+          <span>{d.read} min Lesezeit</span>
+          <span style={{color:dsPalette.rule}}>|</span>
+          <span>Getestet {d.tested}</span>
+          <span style={{color:dsPalette.rule}}>|</span>
+          <span>{d.by}</span>
+          <span style={{color:dsPalette.rule}}>|</span>
+          {d.tags.map(t => <span key={t}>#{t}</span>)}
+        </div>
+
+        <div style={{display:'flex', gap:12, marginTop:28}}>
+          <span style={{
+            padding:'14px 24px', background:dsPalette.ink, color:dsPalette.paper,
+            ...dsS.mono, fontSize:13, fontWeight:600, letterSpacing:'0.04em'
+          }}>
+            ↳ Entscheidung lesen
+          </span>
+          <span style={{
+            padding:'14px 24px', border:`1px solid ${dsPalette.ink}`, color:dsPalette.ink,
+            ...dsS.mono, fontSize:13, fontWeight:600, letterSpacing:'0.04em'
+          }}>
+            ⇄ Vergleich öffnen
+          </span>
+        </div>
+      </div>
+
+      {/* Right: methodology + tools tested */}
+      <div style={{paddingTop:18}}>
+        {/* Comparison strip */}
+        <div style={{...dsS.mono, fontSize:11, color:dsPalette.vermillion, letterSpacing:'0.16em', textTransform:'uppercase', marginBottom:14}}>
+          Im Test
+        </div>
+        <div style={{border:`1px solid ${dsPalette.ink}`, background:dsPalette.paperAlt}}>
+          {[
+            { name:'Claude Code',    verdict:'EMPFEHLEN', detail:'beste Kontext-Disziplin', score:'9.1'},
+            { name:'GitHub Copilot', verdict:'EMPFEHLEN', detail:'sicherer Standard',       score:'8.4'},
+            { name:'Cursor',         verdict:'BEDINGT',   detail:'nur mit Review-Pilot',    score:'7.0'},
+          ].map((row, i) => {
+            const v = window.VERDICT[row.verdict];
+            return (
+              <div key={row.name} style={{
+                display:'grid', gridTemplateColumns:'24px 1fr 56px',
+                padding:'14px 18px', borderTop: i ? `1px solid ${dsPalette.ruleHi}` : 'none',
+                alignItems:'center', gap:14
+              }}>
+                <div style={{...dsS.display, fontSize:22, color:v.color, textAlign:'center'}}>{v.glyph}</div>
+                <div>
+                  <div style={{...dsS.serifBold, fontSize:20, lineHeight:1.1, letterSpacing:'-0.005em'}}>
+                    {row.name}
+                  </div>
+                  <div style={{...dsS.mono, fontSize:11, color:dsPalette.inkMid, marginTop:3}}>
+                    {row.detail}
+                  </div>
+                </div>
+                <div style={{...dsS.display, fontSize:30, lineHeight:1, color:dsPalette.ink, textAlign:'right'}}>
+                  {row.score}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Counter-recommendations */}
+        <div style={{marginTop:28, padding:'18px 22px', background:dsPalette.paper, border:`1px dashed ${dsPalette.vermillion}`}}>
+          <div style={{...dsS.mono, fontSize:11, color:dsPalette.vermillion, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:600}}>
+            Was wir <em>nicht</em> empfehlen
+          </div>
+          <ul style={{...dsS.serif, fontSize:17, lineHeight:1.5, color:dsPalette.inkSoft, margin:'10px 0 0', padding:'0 0 0 20px'}}>
+            {d.counter.map(c => <li key={c} style={{marginBottom:4}}>{c}</li>)}
+          </ul>
+        </div>
+
+        {/* Excerpt */}
+        <div style={{marginTop:28, ...dsS.serif, fontSize:18, lineHeight:1.55, color:dsPalette.ink, columnCount:1}}>
+          <span style={{
+            ...dsS.serifBold, float:'left', fontSize:64, lineHeight:0.85, paddingRight:10, paddingTop:4, color:dsPalette.vermillion
+          }}>W</span>
+          {d.excerpt.slice(1)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Decision stack — recent verdicts as front-page columns ──────────────
+function DSDecisionStack() {
+  const more = window.DECISIONS.slice(1);
+  return (
+    <div style={{...dsS.inner, padding:'40px 56px 0'}}>
+      <DSSectionHead kicker="In dieser Ausgabe" title="Weitere Entscheidungen" right="↳ Archiv · 25 Stück" />
+      <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:48, marginTop:32, paddingTop:24, borderTop:`1px solid ${dsPalette.ink}`}}>
+        {more.map((d, i) => (
+          <article key={d.id} style={{
+            paddingRight: i === 0 ? 36 : 0,
+            borderRight: i === 0 ? `1px solid ${dsPalette.rule}` : 'none'
+          }}>
+            <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-between', gap:14}}>
+              <span style={{...dsS.mono, fontSize:11, color:dsPalette.vermillion, letterSpacing:'0.16em', textTransform:'uppercase'}}>
+                № {d.no} · {d.section}
+              </span>
+              <span style={{...dsS.mono, fontSize:11, color:dsPalette.inkMid}}>{d.read} min</span>
+            </div>
+            <h3 style={{...dsS.serifBold, fontSize:38, lineHeight:1.05, margin:'14px 0 12px', letterSpacing:'-0.018em'}}>
+              {d.headline}
+            </h3>
+            <div style={{...dsS.serif, fontStyle:'italic', fontSize:18, color:dsPalette.inkSoft, lineHeight:1.4}}>
+              {d.dek}
+            </div>
+
+            {/* mini verdict */}
+            <div style={{
+              marginTop:18, display:'flex', alignItems:'center', gap:14,
+              padding:'12px 16px', background:dsPalette.parchment, border:`1px solid ${dsPalette.ruleHi}`
+            }}>
+              <span style={{...dsS.display, fontSize:30, lineHeight:1, color:d.verdict.color}}>{d.verdict.glyph}</span>
+              <div>
+                <div style={{...dsS.mono, fontSize:10, color:d.verdict.color, letterSpacing:'0.12em', textTransform:'uppercase', fontWeight:600}}>
+                  {d.verdict.label}
+                </div>
+                <div style={{...dsS.serifBold, fontSize:17, lineHeight:1.2, marginTop:2}}>
+                  {d.verdictHead}
+                </div>
+              </div>
+            </div>
+
+            <p style={{...dsS.serif, fontSize:17, lineHeight:1.55, color:dsPalette.inkSoft, margin:'18px 0 0'}}>
+              {d.excerpt}
+            </p>
+            <div style={{...dsS.mono, fontSize:11, marginTop:14, color:dsPalette.inkMid, display:'flex', gap:14, flexWrap:'wrap'}}>
+              <span>Getestet {d.tested}</span>
+              {d.tags.map(t => <span key={t}>#{t}</span>)}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Prompt — the big input ──────────────────────────────────────────────
+function DSPrompt() {
+  return (
+    <div style={{...dsS.inner, padding:'72px 56px 56px'}}>
+      <div style={{
+        background:dsPalette.ink, color:dsPalette.paper, padding:'56px 56px 48px',
+        position:'relative', overflow:'hidden'
+      }}>
+        {/* corner brackets */}
+        {[{t:14,l:14},{t:14,r:14},{b:14,l:14},{b:14,r:14}].map((p, i) => (
+          <div key={i} style={{
+            position:'absolute', ...p, width:24, height:24,
+            borderTop: p.t !== undefined ? `1px solid ${dsPalette.paper}` : 'none',
+            borderBottom: p.b !== undefined ? `1px solid ${dsPalette.paper}` : 'none',
+            borderLeft: p.l !== undefined ? `1px solid ${dsPalette.paper}` : 'none',
+            borderRight: p.r !== undefined ? `1px solid ${dsPalette.paper}` : 'none',
+            opacity:0.4
+          }}/>
+        ))}
+        <div style={{...dsS.mono, fontSize:11, color:'#bcb9aa', letterSpacing:'0.18em', textTransform:'uppercase'}}>
+          ↳ Entscheidungs-Prompt · ⌘ K
+        </div>
+        <div style={{...dsS.serifBold, fontSize:72, lineHeight:0.98, margin:'18px 0 28px', letterSpacing:'-0.025em', maxWidth:1140}}>
+          Welche Entscheidung treffen Sie heute?
+        </div>
+
+        <div style={{
+          background:dsPalette.paper, color:dsPalette.ink, padding:'20px 24px',
+          display:'flex', alignItems:'center', gap:16
+        }}>
+          <span style={{...dsS.mono, fontSize:18, color:dsPalette.vermillion}}>?</span>
+          <span style={{...dsS.serif, fontSize:22, color:dsPalette.inkMid, flex:1}}>
+            „Soll ich Copilot oder Cursor einführen?"
+            <span style={{borderLeft:`2px solid ${dsPalette.ink}`, marginLeft:6, animation:'ds-blink 1s steps(1) infinite', display:'inline-block', height:22, verticalAlign:'middle'}}/>
+          </span>
+          <span style={{
+            padding:'10px 18px', background:dsPalette.ink, color:dsPalette.paper,
+            ...dsS.mono, fontSize:12, fontWeight:600, letterSpacing:'0.06em'
+          }}>
+            ↵ ENTSCHEIDEN
+          </span>
+        </div>
+
+        <div style={{display:'flex', flexWrap:'wrap', gap:10, marginTop:18}}>
+          {[
+            'Cursor vs. Copilot vs. Claude Code?',
+            'Ist Perplexity datenschutzkonform?',
+            'Welcher Bildgenerator für Marketing?',
+            'Self-hosted Alternative zu Zapier?',
+            'KI-Schreibassistent für Recht?',
+          ].map(q => (
+            <span key={q} style={{
+              ...dsS.serif, fontStyle:'italic', fontSize:15,
+              padding:'8px 14px', border:`1px solid ${dsPalette.inkSoft}`,
+              color:'#dcd9ca'
+            }}>{q}</span>
+          ))}
+        </div>
+
+        <div style={{...dsS.mono, fontSize:11, marginTop:24, color:'#9b988a', letterSpacing:'0.06em'}}>
+          operatoren · <span style={{color:dsPalette.paper}}>tool:</span>cursor &nbsp;
+          <span style={{color:dsPalette.paper}}>vs:</span>copilot &nbsp;
+          <span style={{color:dsPalette.paper}}>preis:</span>free &nbsp;
+          <span style={{color:dsPalette.paper}}>hosting:</span>eu
+        </div>
+      </div>
+      <style>{`@keyframes ds-blink { 50% { opacity: 0 } }`}</style>
+    </div>
+  );
+}
+
+// ─── Anti-recommendations column ─────────────────────────────────────────
+function DSAntiRecs() {
+  return (
+    <div style={{...dsS.inner, padding:'24px 56px 56px'}}>
+      <DSSectionHead kicker="Gegenseite" title="Was wir diese Woche zurückweisen" right="↳ Anti-Empfehlungen · alle 47" tone="vermillion" />
+      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:0, marginTop:24, border:`2px solid ${dsPalette.ink}`}}>
+        {window.ANTI.map((a, i) => (
+          <div key={a.name} style={{
+            padding:'28px 28px 32px',
+            borderRight: i < 2 ? `1px solid ${dsPalette.ink}` : 'none',
+            background: i === 1 ? dsPalette.paperAlt : dsPalette.paper,
+            position:'relative'
+          }}>
+            <div style={{
+              ...dsS.display, fontSize:88, lineHeight:0.85, color:dsPalette.vermillion, letterSpacing:'-0.04em'
+            }}>
+              ✕
+            </div>
+            <div style={{...dsS.mono, fontSize:10, color:dsPalette.vermillion, letterSpacing:'0.16em', textTransform:'uppercase', marginTop:14, fontWeight:600}}>
+              {a.tag}
+            </div>
+            <h3 style={{...dsS.serifBold, fontSize:28, lineHeight:1.1, margin:'8px 0 12px', letterSpacing:'-0.015em'}}>
+              {a.name}
+            </h3>
+            <p style={{...dsS.serif, fontSize:17, lineHeight:1.5, color:dsPalette.inkSoft, margin:0}}>
+              {a.why}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Task grid — "Nach Aufgabe starten" reframed ─────────────────────────
+function DSTaskGrid() {
+  return (
+    <div style={{...dsS.inner, padding:'24px 56px 56px'}}>
+      <DSSectionHead kicker="Einstieg nach Aufgabe" title="Sechs typische Entscheidungen." right="↳ Kategorien · 8" />
+      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, marginTop:24, background:dsPalette.rule, border:`1px solid ${dsPalette.ink}`}}>
+        {window.TASKS.map((t, i) => (
+          <div key={t.task} style={{
+            background:dsPalette.paper, padding:'26px 24px 22px', minHeight:170,
+            display:'flex', flexDirection:'column', justifyContent:'space-between'
+          }}>
+            <div style={{display:'flex', alignItems:'flex-start', gap:14}}>
+              <div style={{
+                ...dsS.display, fontSize:48, lineHeight:0.9, color:dsPalette.vermillion, minWidth:48, textAlign:'center'
+              }}>
+                {t.icon}
+              </div>
+              <div>
+                <div style={{...dsS.mono, fontSize:10, color:dsPalette.inkMid, letterSpacing:'0.14em', textTransform:'uppercase'}}>
+                  Aufgabe {String(i+1).padStart(2,'0')}
+                </div>
+                <h3 style={{...dsS.serifBold, fontSize:24, lineHeight:1.1, margin:'4px 0 0', letterSpacing:'-0.012em'}}>
+                  {t.task}
+                </h3>
+              </div>
+            </div>
+            <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', marginTop:16}}>
+              <div style={{display:'flex', gap:6, flexWrap:'wrap'}}>
+                {t.tools.map(tl => (
+                  <span key={tl} style={{
+                    ...dsS.mono, fontSize:11, padding:'3px 8px',
+                    background:dsPalette.parchment, color:dsPalette.ink, borderRadius:2
+                  }}>{tl}</span>
+                ))}
+              </div>
+              <span style={{...dsS.mono, fontSize:12, color:dsPalette.ocean, fontWeight:600}}>↗</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Tool index — back-matter ledger ─────────────────────────────────────
+function DSToolIndex() {
+  return (
+    <div style={{...dsS.inner, padding:'24px 56px 56px'}}>
+      <DSSectionHead kicker="Anhang" title="Tool-Index — 8 von 1171" right="↳ vollständiger Index · /api/tools.json" />
+      <div style={{
+        marginTop:24,
+        display:'grid', gridTemplateColumns:'40px 28px 1.6fr 110px 1fr 92px 110px 56px',
+        padding:'12px 0', borderTop:`2px solid ${dsPalette.ink}`, borderBottom:`1px solid ${dsPalette.ink}`,
+        ...dsS.mono, fontSize:10, color:dsPalette.inkMid, letterSpacing:'0.14em', textTransform:'uppercase'
+      }}>
+        <span>№</span><span>·</span><span>Tool · Einordnung</span><span>Verdikt</span>
+        <span>Tags</span><span>Kategorie</span><span>Preis</span><span style={{textAlign:'right'}}>Open</span>
+      </div>
+
+      {window.TOOLS.map((t) => (
+        <div key={t.name} style={{
+          display:'grid', gridTemplateColumns:'40px 28px 1.6fr 110px 1fr 92px 110px 56px',
+          padding:'16px 0', borderBottom:`1px solid ${dsPalette.rule}`,
+          alignItems:'center'
+        }}>
+          <span style={{...dsS.mono, fontSize:11, color:dsPalette.inkMid}}>{t.idx}</span>
+          <Monogram name={t.name} size={22} />
+          <div style={{paddingRight:20}}>
+            <div style={{display:'flex', alignItems:'baseline', gap:10}}>
+              <span style={{...dsS.serifBold, fontSize:20, letterSpacing:'-0.008em'}}>{t.name}</span>
+              <span style={{...dsS.mono, fontSize:10, color:dsPalette.inkMid}}>{t.domain}</span>
+            </div>
+            <div style={{...dsS.serif, fontSize:15, lineHeight:1.45, color:dsPalette.inkSoft, marginTop:3, maxWidth:520}}>
+              {t.blurb}
+            </div>
+          </div>
+          <div style={{display:'flex', alignItems:'center', gap:8}}>
+            <span style={{...dsS.display, fontSize:20, color:t.verdict.color, lineHeight:1}}>{t.verdict.glyph}</span>
+            <span style={{...dsS.mono, fontSize:11, color:t.verdict.color, letterSpacing:'0.06em', fontWeight:600}}>
+              {t.verdict.label}
+            </span>
+          </div>
+          <div style={{display:'flex', flexWrap:'wrap', gap:6}}>
+            {t.tags.map(tag => (
+              <span key={tag} style={{
+                ...dsS.mono, fontSize:10, padding:'2px 7px', border:`1px solid ${dsPalette.ruleHi}`,
+                color:dsPalette.inkSoft, borderRadius:99
+              }}>#{tag}</span>
+            ))}
+          </div>
+          <span style={{...dsS.mono, fontSize:11, color:dsPalette.ink}}>{t.cat}</span>
+          <span style={{...dsS.mono, fontSize:11, color:dsPalette.inkSoft}}>{t.price}</span>
+          <span style={{...dsS.mono, fontSize:14, textAlign:'right', color:dsPalette.ocean, fontWeight:600}}>↗</span>
+        </div>
+      ))}
+
+      {/* Tags shelf */}
+      <div style={{marginTop:32, display:'flex', flexWrap:'wrap', gap:8, alignItems:'baseline'}}>
+        <span style={{...dsS.mono, fontSize:11, color:dsPalette.inkMid, letterSpacing:'0.14em', textTransform:'uppercase', marginRight:8}}>
+          top.tags →
+        </span>
+        {window.TAGS.map(([t, n]) => (
+          <span key={t} style={{
+            ...dsS.mono, fontSize:12, padding:'5px 10px',
+            border:`1px solid ${dsPalette.ruleHi}`, borderRadius:99,
+            color:dsPalette.inkSoft
+          }}>
+            #{t} <span style={{color:dsPalette.inkDim, fontSize:10, marginLeft:4}}>{n}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Section head helper ────────────────────────────────────────────────
+function DSSectionHead({ kicker, title, right, tone }) {
+  const c = tone === 'vermillion' ? dsPalette.vermillion : dsPalette.ink;
+  return (
+    <div style={{display:'flex', alignItems:'flex-end', justifyContent:'space-between', gap:24, borderBottom:`1px solid ${dsPalette.ink}`, paddingBottom:12}}>
+      <div>
+        <div style={{...dsS.mono, fontSize:11, color:dsPalette.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+          ↳ {kicker}
+        </div>
+        <h2 style={{...dsS.serifBold, fontSize:44, lineHeight:1.0, margin:'10px 0 0', letterSpacing:'-0.022em', color:c}}>
+          {title}
+        </h2>
+      </div>
+      {right && <div style={{...dsS.mono, fontSize:12, color:dsPalette.ink, whiteSpace:'nowrap'}}>{right}</div>}
+    </div>
+  );
+}
+
+// ─── Footer ─────────────────────────────────────────────────────────────
+function DSFooter() {
+  return (
+    <div style={{
+      ...dsS.inner, padding:'56px 56px 56px', background:dsPalette.ink, color:dsPalette.paper,
+      borderTop:`3px double ${dsPalette.ink}`,
+    }}>
+      <div style={{display:'grid', gridTemplateColumns:'1.4fr 1fr 1fr 1fr', gap:36}}>
+        <div>
+          <div style={{fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic', fontSize:42, lineHeight:1.0, letterSpacing:'-0.03em'}}>
+            KI-Blatt<span style={{color:dsPalette.vermillion}}>.</span>
+          </div>
+          <p style={{...dsS.serif, fontSize:16, lineHeight:1.55, color:'#c7c4b6', marginTop:18, maxWidth:380}}>
+            Wir lesen, testen und bewerten KI-Werkzeuge — und treffen für Sie die Entscheidung.
+            Keine bezahlten Platzierungen. Keine Affiliate-Töpfe.
+          </p>
+        </div>
+        {[
+          ['Entscheidungen', ['Aktuelle Ausgabe','Archiv · 25','Methodologie','Anti-Empfehlungen']],
+          ['Index',          ['Alle 1171 Tools','Kategorien','Tags','API · /tools.json']],
+          ['Redaktion',      ['Impressum','Datenschutz','llms.txt','Newsletter']],
+        ].map(([h, items]) => (
+          <div key={h}>
+            <div style={{...dsS.mono, fontSize:10, color:'#7e7c70', letterSpacing:'0.16em', textTransform:'uppercase', marginBottom:12}}>{h}</div>
+            <div style={{display:'flex', flexDirection:'column', gap:8}}>
+              {items.map(x => (
+                <span key={x} style={{...dsS.serif, fontSize:17, color:dsPalette.paper}}>{x}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div style={{marginTop:40, paddingTop:20, borderTop:'1px solid #2a2925', ...dsS.mono, fontSize:11, color:'#7e7c70', display:'flex', justifyContent:'space-between'}}>
+        <span>© 2026 Utildesk — KI-Blatt · Ausgabe {window.STATS.edition} · build {window.STATS.updated}</span>
+        <span>ISSN — wir arbeiten dran · CC BY-NC 4.0</span>
+      </div>
+    </div>
+  );
+}
+
+window.DSHome = DSHome;
+window.dsPalette = dsPalette;
+window.dsS = dsS;
+
+function Monogram({ name, size }) {
+  const ch = (name || '?').replace(/[^A-Za-zÄÖÜäöü0-9]/g,'').charAt(0).toUpperCase() || '·';
+  return (
+    <span style={{
+      width:size, height:size, display:'inline-flex', alignItems:'center', justifyContent:'center',
+      background:'#0c0c0a', color:'#f6f4ee',
+      fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+      fontSize: Math.round(size * 0.58), lineHeight:1, letterSpacing:'-0.02em',
+      borderRadius:4, flexShrink:0, boxSizing:'border-box'
+    }}>{ch}</span>
+  );
+}
+window.Monogram = Monogram;
+
+
+// Decision Sheet — detail page mock for one Entscheidung
+// This is where the radical idea proves itself: it's not a blog post,
+// it's a structured editorial document with a verdict at the top.
+
+function DSSheet() {
+  const d = window.DECISIONS[0];
+  const p = window.dsPalette;
+  const s = window.dsS;
+
+  return (
+    <div style={s.page}>
+      <DSNav />
+      <SheetHeader d={d} />
+      <SheetVerdict d={d} />
+      <SheetBody d={d} />
+      <SheetEvidence />
+      <SheetCounter d={d} />
+      <SheetMethodology />
+      <SheetRelated />
+      <DSFooter />
+    </div>
+  );
+}
+
+// ─── Top bar ─────────────────────────────────────────────────────────────
+function SheetNav() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      display:'flex', alignItems:'center', justifyContent:'space-between',
+      padding:'14px 56px', borderBottom:`1px solid ${p.rule}`,
+      ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.04em',
+    }}>
+      <div style={{display:'flex', gap:18, alignItems:'center'}}>
+        <span style={{color:p.ink, fontWeight:700}}>utildesk · ki-blatt</span>
+        <span style={{color:p.ink}}>↩ zurück zur Ausgabe</span>
+      </div>
+      <div style={{display:'flex', gap:14, alignItems:'center'}}>
+        <span>teilen</span>
+        <span>drucken</span>
+        <span>als pdf</span>
+        <span style={{padding:'4px 10px', border:`1px solid ${p.ruleHi}`, borderRadius:3}}>⌘ K</span>
+      </div>
+    </div>
+  );
+}
+
+// ─── Header: kicker + question + meta ────────────────────────────────────
+function SheetHeader({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'56px 56px 32px'}}>
+      <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:600}}>
+        Entscheidung № {d.no} · {d.section} · Ausgabe {window.STATS.edition}
+      </div>
+      <h1 style={{
+        ...s.serifBold, fontSize:96, lineHeight:0.96, letterSpacing:'-0.03em',
+        margin:'24px 0 24px', maxWidth:1320, textWrap:'pretty'
+      }}>
+        {d.headline}
+      </h1>
+      <div style={{...s.serif, fontStyle:'italic', fontSize:30, lineHeight:1.35, color:p.inkSoft, maxWidth:1000}}>
+        {d.dek}
+      </div>
+
+      <div style={{
+        marginTop:36, paddingTop:18, borderTop:`1px solid ${p.ink}`, borderBottom:`1px solid ${p.rule}`, paddingBottom:18,
+        display:'grid', gridTemplateColumns:'repeat(5, 1fr)', gap:24,
+        ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.04em'
+      }}>
+        {[
+          ['Veröffentlicht', d.date],
+          ['Getestet',       d.tested],
+          ['Lesezeit',       `${d.read} Minuten`],
+          ['Redigiert von',  d.by],
+          ['Wird überprüft', '01.06.2026'],
+        ].map(([k,v]) => (
+          <div key={k}>
+            <div style={{color:p.inkDim, textTransform:'uppercase', letterSpacing:'0.14em', marginBottom:6}}>{k}</div>
+            <div style={{color:p.ink, fontSize:13}}>{v}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Verdict box ─────────────────────────────────────────────────────────
+function SheetVerdict({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'24px 56px 32px'}}>
+      <div style={{
+        background:p.parchment, border:`2px solid ${p.ink}`, padding:'32px 36px',
+        position:'relative', display:'grid', gridTemplateColumns:'100px 1fr 280px', gap:32, alignItems:'center'
+      }}>
+        <div style={{
+          position:'absolute', top:-14, left:24, padding:'5px 14px',
+          background:p.paper, ...s.mono, fontSize:12, letterSpacing:'0.18em', textTransform:'uppercase',
+          color:p.ink, border:`2px solid ${p.ink}`, fontWeight:700
+        }}>
+          Verdikt der Redaktion
+        </div>
+        <div style={{...s.display, fontSize:108, lineHeight:0.9, color:d.verdict.color, textAlign:'center', letterSpacing:'-0.05em'}}>
+          {d.verdict.glyph}
+        </div>
+        <div>
+          <div style={{...s.mono, fontSize:12, color:d.verdict.color, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:700}}>
+            {d.verdict.label}
+          </div>
+          <div style={{...s.serifBold, fontSize:42, lineHeight:1.1, marginTop:8, letterSpacing:'-0.018em', maxWidth:780}}>
+            {d.verdictHead}
+          </div>
+        </div>
+        <div style={{
+          padding:'16px 18px', background:p.paper, border:`1px solid ${p.ruleHi}`,
+          ...s.mono, fontSize:11, color:p.inkSoft, lineHeight:1.7
+        }}>
+          <div style={{color:p.vermillion, letterSpacing:'0.14em', fontWeight:600, marginBottom:8}}>VERTRAUEN</div>
+          <div style={{display:'flex', gap:3}}>
+            {[1,2,3,4,5].map(i => (
+              <div key={i} style={{
+                width:24, height:12, background: i <= 4 ? p.ink : 'transparent',
+                border: `1px solid ${p.ink}`
+              }}/>
+            ))}
+          </div>
+          <div style={{marginTop:10, color:p.ink}}>4 von 5 · hoch</div>
+          <div style={{marginTop:4, color:p.inkMid}}>3 Teams · 5 Tage · 14 Aufgaben</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Body: long-form text with drop cap and pull quote ───────────────────
+function SheetBody({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  const paras = [
+    'Wir haben drei Teams aus dem eigenen Umfeld gebeten, je fünf Tage lang ausschließlich mit einem der drei Werkzeuge zu arbeiten: ein Senior-Team an einer Refactoring-Aufgabe mit Claude Code, ein gemischtes Produktteam mit Copilot in VS Code, und ein Startup-Duo, das mit Cursor ein neues Modul gebaut hat.',
+    'Das eigentliche Ergebnis liegt nicht in der Geschwindigkeit — alle drei Werkzeuge sind erheblich schneller als kein Werkzeug. Das Ergebnis liegt in der Frage, wer den Code nach dem Commit noch versteht. Und genau hier teilen sich die drei Pfade.',
+  ];
+  return (
+    <div style={{...s.inner, padding:'24px 56px 24px'}}>
+      <div style={{display:'grid', gridTemplateColumns:'1fr 360px', gap:56}}>
+        <div style={{columnCount:2, columnGap:32, columnRule:`1px solid ${p.rule}`}}>
+          <p style={{...s.serif, fontSize:19, lineHeight:1.55, color:p.ink, margin:0, breakInside:'avoid'}}>
+            <span style={{
+              ...s.serifBold, float:'left', fontSize:88, lineHeight:0.85, paddingRight:10,
+              paddingTop:4, color:p.vermillion
+            }}>{paras[0][0]}</span>
+            {paras[0].slice(1)}
+          </p>
+          <p style={{...s.serif, fontSize:19, lineHeight:1.55, color:p.ink, margin:'18px 0 0'}}>
+            {paras[1]}
+          </p>
+          <blockquote style={{
+            ...s.serif, fontStyle:'italic', fontSize:26, lineHeight:1.3, color:p.ink,
+            margin:'28px 0 28px', padding:'18px 0', borderTop:`2px solid ${p.vermillion}`, borderBottom:`2px solid ${p.vermillion}`,
+            breakInside:'avoid'
+          }}>
+            „Wer reviewt, was ein Agent committet? Wir mussten erst klären, wer für KI-Code haftet — bevor wir entscheiden konnten, welches Tool wir einführen."
+            <div style={{...s.mono, fontStyle:'normal', fontSize:11, marginTop:14, color:p.inkMid, letterSpacing:'0.08em'}}>
+              — Engineering Lead, mittelgroßes Berliner SaaS-Team
+            </div>
+          </blockquote>
+          <p style={{...s.serif, fontSize:19, lineHeight:1.55, color:p.ink, margin:0}}>
+            Claude Code überzeugt durch Kontext-Disziplin: es liest viel, schreibt wenig, fragt nach.
+            Copilot bleibt im Cockpit der Entwicklerin — das schützt vor Überraschungen, aber lässt Potenzial liegen.
+            Cursor ist die schnellste Maschine und gleichzeitig die gefährlichste; ohne Review-Pflicht beim Merge produziert es Schulden, die in zwei Quartalen sichtbar werden.
+          </p>
+        </div>
+
+        {/* Sidebar: at-a-glance */}
+        <div style={{borderLeft:`1px solid ${p.rule}`, paddingLeft:28}}>
+          <div style={{...s.mono, fontSize:10, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+            Auf einen Blick
+          </div>
+          <h3 style={{...s.serifBold, fontSize:20, lineHeight:1.2, margin:'10px 0 14px'}}>
+            Wenn Sie nur 30 Sekunden haben.
+          </h3>
+          <ul style={{...s.serif, fontSize:16, lineHeight:1.5, color:p.inkSoft, padding:'0 0 0 18px', margin:0}}>
+            <li style={{marginBottom:8}}>Claude Code für <strong style={{color:p.ink}}>Senior-Teams</strong> mit Review-Reife.</li>
+            <li style={{marginBottom:8}}>Copilot als <strong style={{color:p.ink}}>sicherer Standard</strong> für gemischte Teams.</li>
+            <li style={{marginBottom:8}}>Cursor erst nach <strong style={{color:p.ink}}>Pilot von 2 Wochen</strong> und klarem Review-Mandat.</li>
+            <li>Egal welches Tool: <strong style={{color:p.ink}}>kein Merge ohne Mensch</strong>.</li>
+          </ul>
+
+          <div style={{height:1, background:p.rule, margin:'24px 0'}}/>
+
+          <div style={{...s.mono, fontSize:10, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+            Preisrahmen
+          </div>
+          <div style={{...s.mono, fontSize:14, marginTop:12, lineHeight:1.9, color:p.inkSoft}}>
+            <div style={{display:'flex', justifyContent:'space-between'}}><span>Claude Code</span><span style={{color:p.ink}}>20–60 $/seat</span></div>
+            <div style={{display:'flex', justifyContent:'space-between'}}><span>GitHub Copilot</span><span style={{color:p.ink}}>10–19 $/seat</span></div>
+            <div style={{display:'flex', justifyContent:'space-between'}}><span>Cursor</span><span style={{color:p.ink}}>20–40 $/seat</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Evidence table — proper comparison matrix ──────────────────────────
+function SheetEvidence() {
+  const p = window.dsPalette, s = window.dsS;
+  const tools = [
+    { name:'Claude Code',    verdict:'EMPFEHLEN', emoji:'A' },
+    { name:'GitHub Copilot', verdict:'EMPFEHLEN', emoji:'B' },
+    { name:'Cursor',         verdict:'BEDINGT',   emoji:'C' },
+  ];
+  const rows = [
+    ['Kontext-Disziplin',      ['Liest viel, fragt nach','Begrenzt, Datei-fokussiert','Aggressiv, ohne Rückfrage']],
+    ['Review-Druck',           ['Eingebaut','Optional','Schwach']],
+    ['Geschwindigkeit (relativ)', ['1.0×','1.4×','2.1×']],
+    ['Datenschutz / Hosting',  ['DPA · EU optional','DPA · EU optional','DPA · keine EU']],
+    ['Kosten / Seat',          ['$$','$','$$']],
+    ['Lernkurve',              ['mittel','niedrig','mittel']],
+    ['Risiko bei Junior-Teams',['niedrig','niedrig','hoch']],
+    ['Bestes für',             ['Refactor & Reviews','Mixed-Skill Teams','Greenfield-Sprints']],
+  ];
+  return (
+    <div style={{...s.inner, padding:'48px 56px 32px'}}>
+      <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+        ↳ Beweismaterial
+      </div>
+      <h2 style={{...s.serifBold, fontSize:48, lineHeight:1.0, margin:'10px 0 24px', letterSpacing:'-0.025em'}}>
+        Die Tabelle, die wir gefüllt haben.
+      </h2>
+      <div style={{border:`2px solid ${p.ink}`}}>
+        {/* Header */}
+        <div style={{
+          display:'grid', gridTemplateColumns:'1.1fr repeat(3, 1fr)',
+          background:p.ink, color:p.paper
+        }}>
+          <div style={{padding:'18px 22px', ...s.mono, fontSize:11, letterSpacing:'0.14em', textTransform:'uppercase', color:'#bbb8aa'}}>
+            Kriterium
+          </div>
+          {tools.map((t, i) => {
+            const v = window.VERDICT[t.verdict];
+            return (
+              <div key={t.name} style={{
+                padding:'18px 22px', borderLeft:`1px solid #2a2925`,
+                background: i === 0 ? '#1a1916' : 'transparent'
+              }}>
+                <div style={{display:'flex', alignItems:'center', gap:10}}>
+                  <span style={{...s.display, fontSize:24, color:v.color, lineHeight:1}}>{v.glyph}</span>
+                  <span style={{...s.serifBold, fontSize:22, color:p.paper, letterSpacing:'-0.01em'}}>{t.name}</span>
+                </div>
+                <div style={{...s.mono, fontSize:10, color:v.color, marginTop:4, letterSpacing:'0.14em', fontWeight:600}}>
+                  {v.label.toUpperCase()}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        {/* Rows */}
+        {rows.map(([k, vals], i) => (
+          <div key={k} style={{
+            display:'grid', gridTemplateColumns:'1.1fr repeat(3, 1fr)',
+            background: i % 2 === 0 ? p.paper : p.paperAlt,
+            borderTop: i ? `1px solid ${p.rule}` : 'none'
+          }}>
+            <div style={{padding:'14px 22px', ...s.mono, fontSize:11, color:p.inkSoft, letterSpacing:'0.06em', textTransform:'uppercase'}}>
+              {k}
+            </div>
+            {vals.map((v, j) => (
+              <div key={j} style={{
+                padding:'14px 22px', borderLeft:`1px solid ${p.rule}`,
+                ...s.serif, fontSize:17, color:p.ink, lineHeight:1.4,
+                background: j === 0 ? 'rgba(232, 227, 210, 0.5)' : 'transparent'
+              }}>
+                {v}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Counter-recs block ─────────────────────────────────────────────────
+function SheetCounter({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'40px 56px 24px'}}>
+      <div style={{
+        display:'grid', gridTemplateColumns:'1fr 1fr', gap:0,
+        border:`2px solid ${p.vermillion}`
+      }}>
+        <div style={{padding:'32px 36px', background:p.paper}}>
+          <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+            ✕ Was wir <em>nicht</em> empfehlen
+          </div>
+          <h3 style={{...s.serifBold, fontSize:32, lineHeight:1.1, margin:'12px 0 18px', letterSpacing:'-0.02em'}}>
+            Die schnellen Antworten, die nicht funktionieren.
+          </h3>
+          <ul style={{...s.serif, fontSize:18, lineHeight:1.55, color:p.ink, padding:'0 0 0 22px', margin:0}}>
+            {d.counter.map(c => (
+              <li key={c} style={{marginBottom:10}}><strong style={{color:p.vermillion}}>×</strong>&nbsp; {c}</li>
+            ))}
+            <li style={{marginBottom:10}}><strong style={{color:p.vermillion}}>×</strong>&nbsp; Autonome Coding-Agenten ohne Mensch im Review</li>
+            <li><strong style={{color:p.vermillion}}>×</strong>&nbsp; „Wir lassen die Junioren das prüfen"-Politik</li>
+          </ul>
+        </div>
+        <div style={{padding:'32px 36px', background:p.paperAlt, borderLeft:`2px solid ${p.vermillion}`}}>
+          <div style={{...s.mono, fontSize:11, color:p.green, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+            ✔ Was stattdessen
+          </div>
+          <h3 style={{...s.serifBold, fontSize:32, lineHeight:1.1, margin:'12px 0 18px', letterSpacing:'-0.02em'}}>
+            Die langsameren Antworten, die halten.
+          </h3>
+          <ul style={{...s.serif, fontSize:18, lineHeight:1.55, color:p.ink, padding:'0 0 0 22px', margin:0}}>
+            <li style={{marginBottom:10}}><strong style={{color:p.green}}>✔</strong>&nbsp; Zwei-Wochen-Pilot mit zwei Teams, gleiches Backlog</li>
+            <li style={{marginBottom:10}}><strong style={{color:p.green}}>✔</strong>&nbsp; Review-Regel: Diff &lt; 200 Zeilen, immer Mensch</li>
+            <li style={{marginBottom:10}}><strong style={{color:p.green}}>✔</strong>&nbsp; Architektur-Regeln in CI verankern, nicht im Prompt</li>
+            <li><strong style={{color:p.green}}>✔</strong>&nbsp; Quartalsweise Wirksamkeitsmessung — nicht „Bauchgefühl"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Methodology ────────────────────────────────────────────────────────
+function SheetMethodology() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'40px 56px 32px'}}>
+      <div style={{display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:48}}>
+        <div>
+          <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+            ↳ Methodologie
+          </div>
+          <h2 style={{...s.serifBold, fontSize:44, lineHeight:1.0, margin:'10px 0 18px', letterSpacing:'-0.025em'}}>
+            Wie wir zu dieser Empfehlung kommen.
+          </h2>
+          <p style={{...s.serif, fontSize:18, lineHeight:1.55, color:p.inkSoft, margin:0, maxWidth:680}}>
+            Drei Teams, fünf Tage, 14 vordefinierte Aufgaben pro Tool. Jede Aufgabe wurde mit Zeit,
+            Fehlerquote, Review-Aufwand und subjektivem Vertrauen bewertet. Keiner der getesteten Anbieter
+            wusste, dass wir testen. Keine Werbeverträge. Keine Affiliate-Links. Der vollständige Datensatz
+            liegt unter <span style={{color:p.ocean, textDecoration:'underline'}}>/data/decisions/049.csv</span>.
+          </p>
+        </div>
+        <div style={{
+          padding:'20px 22px', background:p.parchment, border:`1px solid ${p.ruleHi}`
+        }}>
+          <div style={{...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:600}}>
+            Testaufbau · Faktenblatt
+          </div>
+          <div style={{...s.mono, fontSize:13, marginTop:14, lineHeight:1.85, color:p.ink}}>
+            <div style={{display:'flex', justifyContent:'space-between', borderBottom:`1px dotted ${p.ruleHi}`}}>
+              <span style={{color:p.inkMid}}>Teilnehmende Teams</span><span>3</span>
+            </div>
+            <div style={{display:'flex', justifyContent:'space-between', borderBottom:`1px dotted ${p.ruleHi}`}}>
+              <span style={{color:p.inkMid}}>Testdauer</span><span>5 Tage</span>
+            </div>
+            <div style={{display:'flex', justifyContent:'space-between', borderBottom:`1px dotted ${p.ruleHi}`}}>
+              <span style={{color:p.inkMid}}>Aufgaben pro Tool</span><span>14</span>
+            </div>
+            <div style={{display:'flex', justifyContent:'space-between', borderBottom:`1px dotted ${p.ruleHi}`}}>
+              <span style={{color:p.inkMid}}>Reviewer pro Diff</span><span>2 Menschen</span>
+            </div>
+            <div style={{display:'flex', justifyContent:'space-between', borderBottom:`1px dotted ${p.ruleHi}`}}>
+              <span style={{color:p.inkMid}}>Bezahlte Platzierung</span><span style={{color:p.vermillion, fontWeight:600}}>nein</span>
+            </div>
+            <div style={{display:'flex', justifyContent:'space-between'}}>
+              <span style={{color:p.inkMid}}>Datensatz öffentlich</span><span style={{color:p.green, fontWeight:600}}>ja · CSV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Related decisions ──────────────────────────────────────────────────
+function SheetRelated() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'40px 56px 24px'}}>
+      <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:600}}>
+        ↳ Weiterlesen
+      </div>
+      <h2 style={{...s.serifBold, fontSize:36, lineHeight:1.05, margin:'10px 0 24px', letterSpacing:'-0.022em'}}>
+        Anschliessende Entscheidungen.
+      </h2>
+      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, background:p.rule, border:`1px solid ${p.ink}`}}>
+        {window.DECISIONS.map((d, i) => (
+          <div key={d.id} style={{background:p.paper, padding:'24px 24px 22px', minHeight:200, display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
+            <div>
+              <div style={{display:'flex', justifyContent:'space-between'}}>
+                <span style={{...s.mono, fontSize:10, color:p.vermillion, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:600}}>
+                  № {d.no} · {d.section}
+                </span>
+                <span style={{...s.display, fontSize:22, color:d.verdict.color, lineHeight:1}}>{d.verdict.glyph}</span>
+              </div>
+              <h3 style={{...s.serifBold, fontSize:22, lineHeight:1.15, margin:'12px 0 8px', letterSpacing:'-0.012em'}}>
+                {d.headline}
+              </h3>
+              <p style={{...s.serif, fontSize:15, lineHeight:1.45, color:p.inkSoft, margin:0}}>
+                {d.dek}
+              </p>
+            </div>
+            <div style={{...s.mono, fontSize:11, color:p.inkMid, marginTop:14}}>{d.read} min · {d.date}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Footer block (small) ───────────────────────────────────────────────
+function SheetFooterBlock({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'40px 56px 56px', background:p.ink, color:p.paper, marginTop:32}}>
+      <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', gap:48, flexWrap:'wrap'}}>
+        <div>
+          <div style={{...s.mono, fontSize:10, color:'#7e7c70', letterSpacing:'0.16em', textTransform:'uppercase'}}>Diese Entscheidung</div>
+          <div style={{...s.serifBold, fontSize:32, marginTop:6, letterSpacing:'-0.02em', maxWidth:680}}>
+            Entscheidung № {d.no} ist gültig bis 01.06.2026. Wir überprüfen monatlich.
+          </div>
+        </div>
+        <div style={{display:'flex', gap:10}}>
+          <span style={{padding:'12px 22px', background:p.paper, color:p.ink, ...s.mono, fontSize:12, fontWeight:600, letterSpacing:'0.06em'}}>↩ ZURÜCK ZUR AUSGABE</span>
+          <span style={{padding:'12px 22px', border:`1px solid ${p.paper}`, color:p.paper, ...s.mono, fontSize:12, fontWeight:600, letterSpacing:'0.06em'}}>↦ NEWSLETTER</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+window.DSSheet = DSSheet;
+
+// ─────────────────────────────────────────────────────────────────────────
+// TOOL-AKTE — editorial dossier for a single tool (ChatGPT example)
+// Replaces only the article body. Header/Footer stay as on live site.
+// ─────────────────────────────────────────────────────────────────────────
+
+const TOOL_AKTE_DATA = {
+  akteNo: '0042',
+  name: 'ChatGPT',
+  vendor: 'OpenAI',
+  domain: 'chatgpt.com',
+  category: 'Chatbots & Assistenten',
+  price: 'Freemium · 0 / 20 / 30+ $ pro Sitz',
+  tags: ['chatbot', 'llm', 'assistant', 'general-purpose'],
+  verdict: 'EMPFEHLEN',
+  verdictHead: 'Empfehlen — als Arbeitsfläche, nicht als Faktenquelle.',
+  verdictNuance: 'Sicherer Standard für gemischte Teams. Nicht für Recht, Medizin, Finanzen ohne menschliche Prüfung.',
+  oneliner: 'Universelle KI-Arbeitsfläche von OpenAI für Schreiben, Recherche, Code, Analyse und tägliche Wissensarbeit.',
+  lastChecked: '21.05.2026',
+  inIndexSince: '03.12.2022',
+  decisionsUsedIn: 4,
+  trust: 4,
+  meta: {
+    'Hersteller':      'OpenAI · San Francisco',
+    'Hosting':         'USA · EU optional (Team/Enterprise)',
+    'DPA verfügbar':   'Ja (Team / Enterprise / API)',
+    'Eigenes Modell':  'Ja · GPT-Familie',
+    'Open Source':     'Nein',
+    'Self-hostable':   'Nein',
+    'API verfügbar':   'Ja',
+    'Bezahlte Platzierung': 'nein',
+  },
+  paragraphs: [
+    { num: '§ 01', title: 'Was es ist',
+      kicker: 'Position im Markt',
+      figure: {
+        id: 'akte-fig-1',
+        ratio: '16/9',
+        side: 'left',
+        width: 300,
+        caption: 'ChatGPT als Arbeitsfläche, nicht als Orakel — eine Redaktions-Illustration zur Funktionsweise.',
+        credit: 'Abb. 1 · Redaktion',
+      },
+      body: [
+        'ChatGPT ist der KI-Assistent von OpenAI für Menschen, die schnell von einer Frage zu einem brauchbaren Entwurf kommen wollen. Das Tool schreibt, erklärt, strukturiert, übersetzt, analysiert Dateien, hilft beim Programmieren und arbeitet je nach Plan auch mit Websuche, Bildern, Sprache, Canvas und agentischen Funktionen.',
+        'Der entscheidende Nutzen liegt nicht darin, dass ChatGPT immer sofort die perfekte Antwort liefert. Stark wird es, wenn Nutzerinnen und Nutzer es als Arbeitsfläche verwenden: erst Ideen sammeln, dann nachschärfen, Quellen prüfen, Text kürzen, Code testen und Entscheidungen bewusst treffen.',
+        'Genau diese Haltung trennt produktiven Einsatz von blindem Vertrauen. Wer ChatGPT als Gesprächspartner für Entwürfe begreift und jede Ausgabe als Vorschlag, nicht als Ergebnis liest, gewinnt Tempo, ohne Verantwortung abzugeben — und merkt schnell, wo die Grenzen des Modells verlaufen.',
+      ],
+    },
+    { num: '§ 02', title: 'Für wen geeignet',
+      kicker: 'Zielprofile · Eignung',
+      fit: [
+        { who:'Wissensarbeit',  ok:true,  note:'Texte, Briefings, Zusammenfassungen schneller vorbereiten.' },
+        { who:'Entwickler',     ok:true,  note:'Code erklären, refaktorieren, testen, Snippets entwerfen.' },
+        { who:'Marketing & Sales', ok:true,  note:'Varianten, FAQs, Kampagnenideen, interne Vorlagen.' },
+        { who:'Lehre & Lernen', ok:true,  note:'Komplexes in Lernschritte zerlegen, abfragen, üben.' },
+        { who:'Produkt- & Gründerteams', ok:true,  note:'Anforderungen, Roadmaps, Nutzerfeedback strukturieren.' },
+        { who:'Recht & Medizin & Finanzen (alleinige Quelle)', ok:false, note:'Vorbereitung möglich. Entscheidung niemals ohne menschliche Prüfung.' },
+        { who:'Vertrauliche Kundendaten ohne DPA', ok:false, note:'Nur in Team/Enterprise-Rahmen mit klarer Datenrichtlinie.' },
+      ],
+    },
+    { num: '§ 03', title: 'Typische Einsatzszenarien',
+      kicker: 'Sechs Fälle aus der Redaktionspraxis',
+      cases: [
+        ['Schreiben & Überarbeiten', 'Rohtext → klare E-Mails, Landingpages, Briefings.'],
+        ['Recherche vorbereiten',    'Suchfragen, Hypothesen, Vergleichskriterien strukturieren.'],
+        ['Code & Automatisierung',   'Skripte entwerfen, Fehler erklären, Tests formulieren.'],
+        ['Datenarbeit',              'Tabellen auswerten, Muster finden, Diagramme ableiten.'],
+        ['Lernen',                   'Stoff zusammenfassen, Abfragen erstellen, Lernpläne bauen.'],
+        ['Kreative Arbeit',          'Namen, Claims, Storylines, Positionierungen variieren.'],
+      ],
+    },
+    { num: '§ 04', title: 'Funktionsumfang',
+      kicker: 'Was in der Oberfläche steckt',
+      features: [
+        ['Dialog-Assistenz',     'Iteratives Verfeinern in natürlicher Sprache.'],
+        ['Textarbeit',           'Schreiben, kürzen, übersetzen, gliedern, Tonalität.'],
+        ['Coding',               'Beispiele, Debugging, technische Erklärungen.'],
+        ['Datei- & Datenanalyse','Upload, Zusammenfassung, Auswertung — planabhängig.'],
+        ['Web & Quellen',        'Aktuelle Informationen je nach Funktion.'],
+        ['Bild & Sprache',       'Bilder besprechen, Sprache als Eingabe.'],
+        ['Canvas & Projekte',    'Längere Texte und Code iterativ bearbeiten.'],
+        ['API & Integrationen',  'Eigene Workflows über OpenAI API.'],
+      ],
+    },
+  ],
+  pros: [
+    'Sehr breites Einsatzspektrum — von Alltag bis professioneller Wissensarbeit.',
+    'Niedrige Einstiegshürde, iterativ verbesserbar ohne technisches Vorwissen.',
+    'Stark für Entwürfe, Strukturierung, Varianten und Erklärungen.',
+    'Eine Oberfläche für Text, Code, Analyse, Bildverständnis, Lernprozesse.',
+    'Produkt, Modelle und Integrationen werden kontinuierlich weiterentwickelt.',
+  ],
+  cons: [
+    'Antworten klingen plausibel — und können trotzdem falsch oder unvollständig sein.',
+    'Gute Ergebnisse hängen stark von Kontext, Fragestellung und Nachprüfung ab.',
+    'Sensible Daten gehören nicht ungeprüft in Prompts.',
+    'Kosten, Limits und Funktionen unterscheiden sich erheblich nach Plan.',
+    'Für komplexe Fachentscheidungen bleibt menschliche Verantwortung Pflicht.',
+  ],
+  privacy: [
+    ['Keine Passwörter, API-Keys, internen Verträge in Prompts.',                'Pflicht'],
+    ['Workspace-, Business- oder Enterprise-Rahmen für vertrauliche Daten.',     'empfohlen'],
+    ['Admin-Kontrolle, Berechtigungen und Review-Prozesse vor Breitenrollout.',  'empfohlen'],
+    ['Memory / Verlauf in sensiblen Workspaces gezielt deaktivieren.',           'optional'],
+  ],
+  closing: 'ChatGPT ist kein einzelnes Spezialwerkzeug, sondern eine universelle Arbeitsfläche. Genau das ist Stärke und Risiko zugleich: Wer es mit Kontext, klaren Prüfregeln und konkreten Aufgaben nutzt, bekommt sehr viel Hebel. Wer Antworten ungeprüft übernimmt, baut Fehler nur schneller ein.',
+  faqs: [
+    ['Ist ChatGPT kostenlos nutzbar?',
+     'Ja, es gibt eine kostenlose Nutzung. Für höhere Limits, bestimmte Modelle, Teamfunktionen oder zusätzliche Werkzeuge können kostenpflichtige Pläne nötig sein.'],
+    ['Kann ChatGPT aktuelle Informationen liefern?',
+     'Je nach Funktion über Websuche. Wichtige Fakten sollten immer geprüft werden — die Oberfläche ersetzt keine Quelle.'],
+    ['Kann ich es für Code verwenden?',
+     'Ja, gut zum Erklären, Entwerfen, Debuggen und Testen. Produktiver Code sollte geprüft, ausgeführt und versioniert werden.'],
+    ['Ist ChatGPT für Unternehmen geeignet?',
+     'Ja — wenn Datenrichtlinien, Rollen, Admin-Einstellungen und Review-Prozesse sauber geklärt sind.'],
+    ['Was sollte ich nicht eingeben?',
+     'Keine Passwörter, API-Schlüssel, vertraulichen Kundendaten oder internen Geheimnisse ohne freigegebenen Rahmen.'],
+    ['Wie bekomme ich bessere Antworten?',
+     'Mit Ziel, Kontext, Beispiel, gewünschtem Format und klaren Grenzen. Gute Prompts beschreiben auch den Maßstab für ein gutes Ergebnis.'],
+    ['Worin unterscheidet es sich von Claude oder Gemini?',
+     'ChatGPT ist als Allzweck-Assistent positioniert. Claude wirkt oft stark bei langen Texten und Analyse. Gemini ist eng mit Google-Diensten verbunden.'],
+  ],
+  alternatives: [
+    { name:'Claude',     verdict:'EMPFEHLEN', tone:'Stärker bei langen Dokumenten & Analyse.',  cat:'AI',    price:'Freemium' },
+    { name:'Gemini',     verdict:'BEDINGT',   tone:'Eng mit Google-Diensten — bei Workspace-Stack stark.', cat:'AI', price:'Freemium' },
+    { name:'Perplexity', verdict:'BEDINGT',   tone:'Recherche mit Quellen — Quellen weiter prüfen.',  cat:'AI', price:'Freemium' },
+  ],
+};
+
+function DSToolAkte() {
+  const p = window.dsPalette, s = window.dsS;
+  const d = TOOL_AKTE_DATA;
+  const v = window.VERDICT[d.verdict];
+
+  return (
+    <div style={s.page}>
+      <DSNav />
+      <AkteCrumb name={d.name} />
+      <AkteMasthead d={d} v={v} />
+      <AkteVerdict d={d} v={v} />
+      <AkteTLDR d={d} />
+      {d.paragraphs.map(par => (
+        <AkteParagraph key={par.num} par={par} />
+      ))}
+      <AkteProsCons d={d} />
+      <AktePrivacy d={d} />
+      <AkteClosing d={d} />
+      <AkteFAQ d={d} />
+      <AkteAlternatives d={d} />
+      <AkteColophon d={d} />
+      <DSFooter />
+    </div>
+  );
+}
+
+// ─── A faux nav so the demo reads like a full page (header NOT redesigned) ──
+function AktePageNav() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      display:'flex', alignItems:'center', justifyContent:'space-between',
+      padding:'14px 56px', borderBottom:`1px solid ${p.rule}`,
+      ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.04em', background:p.paper
+    }}>
+      <div style={{display:'flex', gap:18, alignItems:'center'}}>
+        <span style={{color:p.ink, fontWeight:700}}>utildesk · ki-blatt</span>
+        <span>v4.3.0-decisions</span>
+        <span style={{display:'inline-flex', alignItems:'center', gap:6}}>
+          <span style={{width:6, height:6, borderRadius:99, background:p.vermillion}}/>
+          live · 27.05.2026
+        </span>
+      </div>
+      <div style={{display:'flex', gap:28, ...s.sans, fontSize:13, color:p.ink, fontWeight:500}}>
+        <span>Entscheidungen</span><span>Ratgeber</span>
+        <span style={{borderBottom:`2px solid ${p.vermillion}`, paddingBottom:2}}>Tool-Index</span>
+        <span>Methodologie</span><span>Archiv</span>
+      </div>
+      <div style={{display:'flex', gap:14, alignItems:'center'}}>
+        <span>DE · EN</span>
+        <span style={{padding:'4px 10px', border:`1px solid ${p.ruleHi}`, borderRadius:3}}>⌘ K</span>
+      </div>
+    </div>
+  );
+}
+
+function AkteCrumb({ name }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'18px 56px 0', ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+      <span style={{color:p.ocean}}>← Tool-Index</span>
+      <span style={{margin:'0 10px', color:p.ruleHi}}>/</span>
+      <span>Chatbots &amp; Assistenten</span>
+      <span style={{margin:'0 10px', color:p.ruleHi}}>/</span>
+      <span style={{color:p.ink, fontWeight:600}}>{name}</span>
+    </div>
+  );
+}
+
+// ─── Editorial opener illustration — option A ───────────────────────────
+function AkteOpener({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'22px 56px 0'}}>
+      <div style={{position:'relative'}}>
+        <div dangerouslySetInnerHTML={{__html:
+          `<image-slot id="akte-opener-chatgpt"
+              placeholder="Editorial-Illustration ablegen · 3:1 empfohlen"
+              shape="rect"
+              style="display:block;width:100%;aspect-ratio:3/1;background:${p.parchment};border:1px solid ${p.ink};"></image-slot>`
+        }}/>
+        <div style={{
+          display:'flex', justifyContent:'space-between', alignItems:'flex-start',
+          paddingTop:10, borderTop:`1px solid ${p.rule}`, marginTop:10, gap:24
+        }}>
+          <div style={{...s.serif, fontStyle:'italic', fontSize:14, lineHeight:1.45, color:p.inkSoft, maxWidth:780}}>
+            <span style={{...s.mono, fontStyle:'normal', fontSize:10, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700, marginRight:10}}>
+              Abbildung 1
+            </span>
+            ChatGPT — universelle KI-Arbeitsfläche von OpenAI. Editorial-Illustration zur Akte № {d.akteNo}.
+          </div>
+          <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.08em', whiteSpace:'nowrap', paddingTop:2}}>
+            Bild · Redaktion · 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Masthead: H1 + Faktenblatt sidebar ─────────────────────────────────
+function AkteMasthead({ d, v }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'28px 56px 36px',
+      display:'grid', gridTemplateColumns:'1.55fr 1fr', gap:56,
+      borderBottom:`1px solid ${p.rule}`,
+    }}>
+      <div>
+        <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:600}}>
+          ↳ Tool-Akte №&nbsp;{d.akteNo}  ·  {d.category}
+        </div>
+        <h1 style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:128, lineHeight:0.95, letterSpacing:'-0.04em',
+          margin:'18px 0 16px', color:p.ink
+        }}>
+          {d.name}<span style={{color:p.vermillion, fontStyle:'normal'}}>.</span>
+        </h1>
+        <div style={{...s.serif, fontStyle:'italic', fontSize:24, lineHeight:1.35, color:p.inkSoft, maxWidth:640}}>
+          {d.oneliner}
+        </div>
+
+        <div style={{display:'flex', gap:8, marginTop:24, flexWrap:'wrap'}}>
+          <span style={{...s.mono, fontSize:11, padding:'5px 10px', background:p.ink, color:p.paper, letterSpacing:'0.1em', textTransform:'uppercase'}}>
+            {d.category}
+          </span>
+          <span style={{...s.mono, fontSize:11, padding:'5px 10px', border:`1px solid ${p.ink}`, color:p.ink, letterSpacing:'0.1em', textTransform:'uppercase'}}>
+            {d.price}
+          </span>
+          {d.tags.map(t => (
+            <span key={t} style={{...s.mono, fontSize:11, padding:'5px 10px', border:`1px solid ${p.ruleHi}`, color:p.inkSoft, borderRadius:99}}>
+              #{t}
+            </span>
+          ))}
+        </div>
+
+        <div style={{display:'flex', gap:12, marginTop:28}}>
+          <a style={{
+            padding:'14px 22px', background:p.ink, color:p.paper, textDecoration:'none',
+            ...s.mono, fontSize:13, fontWeight:600, letterSpacing:'0.06em'
+          }}>↗ ZUM ANBIETER · {d.domain}</a>
+          <a style={{
+            padding:'14px 22px', border:`1px solid ${p.ink}`, color:p.ink, textDecoration:'none',
+            ...s.mono, fontSize:13, fontWeight:600, letterSpacing:'0.06em'
+          }}>⇄ MIT 2 TOOLS VERGLEICHEN</a>
+        </div>
+      </div>
+
+      {/* Faktenblatt */}
+      <aside style={{
+        background:p.parchment, border:`1px solid ${p.ink}`, padding:'22px 24px 18px',
+        alignSelf:'start', position:'relative'
+      }}>
+        <div style={{
+          position:'absolute', top:-12, left:18, padding:'3px 10px',
+          background:p.paper, ...s.mono, fontSize:11, letterSpacing:'0.18em', textTransform:'uppercase',
+          color:p.ink, border:`1px solid ${p.ink}`, fontWeight:700
+        }}>
+          Faktenblatt
+        </div>
+
+        <div style={{display:'flex', alignItems:'center', gap:14, marginTop:6}}>
+          <Monogram name={d.vendor} size={48} />
+          <div>
+            <div style={{...s.serifBold, fontSize:20}}>{d.vendor}</div>
+            <div style={{...s.mono, fontSize:11, color:p.inkMid}}>{d.domain}</div>
+          </div>
+        </div>
+
+        <div style={{...s.mono, fontSize:12, lineHeight:1.9, marginTop:18, color:p.inkSoft}}>
+          {Object.entries(d.meta).map(([k, val], i) => (
+            <div key={k} style={{
+              display:'flex', justifyContent:'space-between', gap:10,
+              borderBottom:`1px dotted ${p.ruleHi}`, padding:'2px 0'
+            }}>
+              <span style={{color:p.inkMid}}>{k}</span>
+              <span style={{
+                color: k === 'Bezahlte Platzierung' ? p.vermillion : p.ink,
+                fontWeight: k === 'Bezahlte Platzierung' ? 600 : 400,
+                textAlign:'right'
+              }}>{val}</span>
+            </div>
+          ))}
+        </div>
+
+        <div style={{height:1, background:p.ruleHi, margin:'16px 0'}}/>
+
+        <div style={{...s.mono, fontSize:11, lineHeight:1.8, color:p.inkSoft}}>
+          <div style={{display:'flex', justifyContent:'space-between'}}>
+            <span style={{color:p.inkMid}}>Zuletzt geprüft</span>
+            <span style={{color:p.ink}}>{d.lastChecked}</span>
+          </div>
+          <div style={{display:'flex', justifyContent:'space-between'}}>
+            <span style={{color:p.inkMid}}>Im Index seit</span>
+            <span style={{color:p.ink}}>{d.inIndexSince}</span>
+          </div>
+          <div style={{display:'flex', justifyContent:'space-between'}}>
+            <span style={{color:p.inkMid}}>Verwendet in</span>
+            <span style={{color:p.ink}}>{d.decisionsUsedIn} Entscheidungen</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  );
+}
+
+// ─── Verdict — full-width stamp block ────────────────────────────────────
+function AkteVerdict({ d, v }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'36px 56px 16px'}}>
+      <div style={{
+        background:p.parchment, border:`2px solid ${p.ink}`, padding:'28px 34px',
+        position:'relative', display:'grid', gridTemplateColumns:'92px 1fr 240px', gap:28, alignItems:'center'
+      }}>
+        <div style={{
+          position:'absolute', top:-14, left:24, padding:'4px 12px',
+          background:p.paper, ...s.mono, fontSize:11, letterSpacing:'0.2em', textTransform:'uppercase',
+          color:p.ink, border:`2px solid ${p.ink}`, fontWeight:700
+        }}>
+          Verdikt der Redaktion
+        </div>
+        <div style={{
+          ...s.display, fontSize:88, lineHeight:0.9, color:v.color, textAlign:'center', letterSpacing:'-0.04em'
+        }}>{v.glyph}</div>
+        <div>
+          <div style={{...s.mono, fontSize:11, color:v.color, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700}}>
+            {v.label}
+          </div>
+          <div style={{...s.serifBold, fontSize:34, lineHeight:1.1, marginTop:6, letterSpacing:'-0.018em'}}>
+            {d.verdictHead}
+          </div>
+          <div style={{...s.serif, fontStyle:'italic', fontSize:17, color:p.inkSoft, marginTop:10}}>
+            {d.verdictNuance}
+          </div>
+        </div>
+        <div style={{
+          padding:'14px 16px', background:p.paper, border:`1px solid ${p.ruleHi}`,
+          ...s.mono, fontSize:11, color:p.inkSoft, lineHeight:1.7
+        }}>
+          <div style={{color:p.vermillion, letterSpacing:'0.14em', fontWeight:700, marginBottom:8}}>VERTRAUEN</div>
+          <div style={{display:'flex', gap:3}}>
+            {[1,2,3,4,5].map(i => (
+              <div key={i} style={{
+                width:22, height:11,
+                background: i <= d.trust ? p.ink : 'transparent',
+                border:`1px solid ${p.ink}`
+              }}/>
+            ))}
+          </div>
+          <div style={{marginTop:10, color:p.ink}}>{d.trust} / 5 · hoch</div>
+          <div style={{marginTop:2, color:p.inkMid}}>Akte seit 1.245 Tagen</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── TLDR strip — "in 60 sekunden" ──────────────────────────────────────
+function AkteTLDR({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'24px 56px 8px'}}>
+      <div style={{
+        background:p.ink, color:p.paper, padding:'28px 34px',
+        display:'grid', gridTemplateColumns:'170px 1fr', gap:32, alignItems:'flex-start'
+      }}>
+        <div>
+          <div style={{...s.mono, fontSize:10, color:'#a9a698', letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:600}}>
+            In 60 Sek.
+          </div>
+          <div style={{...s.serifBold, fontStyle:'italic', fontSize:42, lineHeight:1.0, marginTop:6, letterSpacing:'-0.02em'}}>
+            TL;DR.
+          </div>
+        </div>
+        <ul style={{...s.serif, fontSize:18, lineHeight:1.55, color:p.paper, margin:0, padding:'4px 0 0 20px'}}>
+          <li style={{marginBottom:6}}>Universalassistent für Schreiben, Code, Analyse, Recherche, Sprache und Bild.</li>
+          <li style={{marginBottom:6}}>Stark als <em>Arbeitsfläche</em> — schwach als alleinige Faktenquelle.</li>
+          <li style={{marginBottom:6}}>Für Unternehmen: Team/Enterprise-Plan mit DPA und klaren Datenregeln.</li>
+          <li>Verwende es iterativ. Prüfe, bevor du übernimmst.</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+// ─── § Paragraph ────────────────────────────────────────────────────────
+function AkteParagraph({ par }) {
+  const p = window.dsPalette, s = window.dsS;
+  const [zoom, setZoom] = React.useState(null);
+
+  const openZoom = (e) => {
+    const slot = e.currentTarget.querySelector('image-slot');
+    if (!slot || !slot.hasAttribute('data-filled')) return; // empty → let slot open file browser
+    const img = slot.shadowRoot && slot.shadowRoot.querySelector('img[part="image"]');
+    const url = img && img.getAttribute('src');
+    if (url) { e.preventDefault(); e.stopPropagation(); setZoom(url); }
+  };
+
+  return (
+    <div style={{
+      ...s.inner, padding:'40px 56px 0',
+      display:'grid', gridTemplateColumns:'120px 1fr', gap:32,
+      borderTop:`1px solid ${p.rule}`, marginTop:32, paddingTop:36
+    }}>
+      <div>
+        <div style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:48, lineHeight:1, color:p.vermillion, letterSpacing:'-0.03em'
+        }}>
+          {par.num}
+        </div>
+        <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', marginTop:8, maxWidth:110}}>
+          {par.kicker}
+        </div>
+      </div>
+      <div style={{paddingTop:4}}>
+        <h2 style={{...s.serifBold, fontSize:46, lineHeight:1.05, margin:'0 0 18px', letterSpacing:'-0.024em'}}>
+          {par.title}
+        </h2>
+
+        {par.figure && (
+          <figure style={{
+            float: par.figure.side === 'left' ? 'left' : 'right',
+            width: par.figure.width || 340,
+            margin: par.figure.side === 'left'
+              ? '8px 32px 16px 0'
+              : '8px 0 16px 32px',
+            padding: 0,
+          }}>
+            <div
+              onClick={openZoom}
+              style={{position:'relative', cursor:'zoom-in'}}
+            >
+              <div dangerouslySetInnerHTML={{__html:
+                `<image-slot id="${par.figure.id}"
+                    placeholder="Illustration ablegen · ${par.figure.ratio}"
+                    shape="rect"
+                    style="display:block;width:100%;height:auto;aspect-ratio:${par.figure.ratio};background:${p.parchment};border:1px solid ${p.ink};"></image-slot>`
+              }}/>
+              {/* zoom affordance */}
+              <span style={{
+                position:'absolute', right:8, bottom:8, ...s.mono, fontSize:9.5,
+                letterSpacing:'0.08em', textTransform:'uppercase', fontWeight:700,
+                color:p.paper, background:'rgba(12,12,10,0.78)', padding:'4px 8px',
+                pointerEvents:'none', display:'inline-flex', alignItems:'center', gap:5
+              }}>
+                ⤢ Vergrössern
+              </span>
+            </div>
+            <figcaption style={{
+              ...s.serif, fontStyle:'italic', fontSize:13, lineHeight:1.4, color:p.inkSoft,
+              paddingTop:8, marginTop:8, borderTop:`1px solid ${p.rule}`
+            }}>
+              <span style={{
+                ...s.mono, fontStyle:'normal', fontSize:9.5, color:p.vermillion,
+                letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:700,
+                display:'block', marginBottom:4
+              }}>
+                {par.figure.credit}
+              </span>
+              {par.figure.caption}
+            </figcaption>
+          </figure>
+        )}
+
+        {zoom && (
+          <div
+            onClick={() => setZoom(null)}
+            style={{
+              position:'fixed', inset:0, zIndex:9999,
+              background:'rgba(12,12,10,0.88)',
+              display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',
+              padding:'48px 56px', cursor:'zoom-out'
+            }}
+          >
+            <div style={{
+              ...s.mono, fontSize:11, color:p.paper, letterSpacing:'0.18em', textTransform:'uppercase',
+              fontWeight:700, marginBottom:16, display:'flex', gap:18, alignItems:'center'
+            }}>
+              <span style={{color:'#ff6a4d'}}>{par.figure.credit}</span>
+              <span style={{opacity:0.5}}>— Klicken zum Schliessen ✕</span>
+            </div>
+            <img
+              src={zoom}
+              alt=""
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                maxWidth:'min(1100px, 90%)', maxHeight:'76vh', objectFit:'contain',
+                border:`1px solid ${p.paper}`, background:p.parchment, cursor:'default',
+                boxShadow:'0 30px 80px rgba(0,0,0,0.5)'
+              }}
+            />
+            <div style={{
+              ...s.serif, fontStyle:'italic', fontSize:16, lineHeight:1.4, color:'#e6e3d8',
+              marginTop:18, maxWidth:760, textAlign:'center'
+            }}>
+              {par.figure.caption}
+            </div>
+          </div>
+        )}
+
+        {par.body && par.body.map((t, i) => (
+          <p key={i} style={{
+            ...s.serif, fontSize:19, lineHeight:1.6, color:p.ink, margin:'0 0 14px'
+          }}>
+            {i === 0 && (
+              <span style={{
+                ...s.serifBold, float:'left', fontSize:78, lineHeight:0.85, paddingRight:10, paddingTop:6, color:p.vermillion
+              }}>{t[0]}</span>
+            )}
+            {i === 0 ? t.slice(1) : t}
+          </p>
+        ))}
+
+        {par.fit && (
+          <div style={{marginTop:6, border:`1px solid ${p.ink}`}}>
+            {par.fit.map((f, i) => (
+              <div key={i} style={{
+                display:'grid', gridTemplateColumns:'42px 1fr 1.4fr',
+                borderTop: i ? `1px solid ${p.rule}` : 'none',
+                background: i % 2 ? p.paperAlt : p.paper,
+                alignItems:'center'
+              }}>
+                <div style={{
+                  textAlign:'center', padding:'14px 0',
+                  ...s.display, fontSize:24, color: f.ok ? p.green : p.vermillion
+                }}>
+                  {f.ok ? '✔' : '✕'}
+                </div>
+                <div style={{padding:'14px 18px', ...s.serifBold, fontSize:18, borderLeft:`1px solid ${p.ruleHi}`}}>
+                  {f.who}
+                </div>
+                <div style={{padding:'14px 18px', ...s.serif, fontSize:16, color:p.inkSoft, borderLeft:`1px solid ${p.ruleHi}`}}>
+                  {f.note}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {par.cases && (
+          <div style={{
+            marginTop:6, display:'grid', gridTemplateColumns:'1fr 1fr', gap:1,
+            background:p.rule, border:`1px solid ${p.ink}`
+          }}>
+            {par.cases.map(([k, v], i) => (
+              <div key={k} style={{background:p.paper, padding:'18px 22px'}}>
+                <div style={{display:'flex', alignItems:'baseline', gap:12}}>
+                  <span style={{...s.mono, fontSize:11, color:p.vermillion, fontWeight:700}}>
+                    {String(i+1).padStart(2,'0')}
+                  </span>
+                  <span style={{...s.serifBold, fontSize:21, letterSpacing:'-0.008em'}}>{k}</span>
+                </div>
+                <div style={{...s.serif, fontSize:16, color:p.inkSoft, marginTop:6, lineHeight:1.45}}>
+                  {v}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {par.features && (
+          <div style={{marginTop:6}}>
+            <div style={{
+              display:'grid', gridTemplateColumns:'180px 1fr',
+              ...s.mono, fontSize:10, letterSpacing:'0.16em', textTransform:'uppercase',
+              color:p.inkMid, padding:'10px 0', borderBottom:`2px solid ${p.ink}`
+            }}>
+              <span>Funktion</span><span>Was es bedeutet</span>
+            </div>
+            {par.features.map(([k, v], i) => (
+              <div key={k} style={{
+                display:'grid', gridTemplateColumns:'180px 1fr',
+                padding:'14px 0', borderBottom:`1px solid ${p.rule}`, alignItems:'baseline'
+              }}>
+                <span style={{...s.serifBold, fontSize:18}}>{k}</span>
+                <span style={{...s.serif, fontSize:17, color:p.inkSoft, lineHeight:1.5}}>{v}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Pros / Cons — ledger ───────────────────────────────────────────────
+function AkteProsCons({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'40px 56px 0',
+      display:'grid', gridTemplateColumns:'120px 1fr', gap:32,
+      borderTop:`1px solid ${p.rule}`, marginTop:32, paddingTop:36
+    }}>
+      <div>
+        <div style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:48, lineHeight:1, color:p.vermillion, letterSpacing:'-0.03em'
+        }}>§ 05</div>
+        <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', marginTop:8}}>
+          Bilanz · Soll & Haben
+        </div>
+      </div>
+      <div>
+        <h2 style={{...s.serifBold, fontSize:46, lineHeight:1.05, margin:'0 0 22px', letterSpacing:'-0.024em'}}>
+          Vorteile & Nachteile
+        </h2>
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:0, border:`2px solid ${p.ink}`}}>
+          <div style={{padding:'22px 26px', background:p.paper, borderRight:`1px solid ${p.ink}`}}>
+            <div style={{...s.mono, fontSize:11, color:p.green, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700}}>
+              ✔ Haben — was funktioniert
+            </div>
+            <ul style={{...s.serif, fontSize:17, lineHeight:1.55, color:p.ink, padding:'14px 0 0 22px', margin:0}}>
+              {d.pros.map(t => (
+                <li key={t} style={{marginBottom:10}}>{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div style={{padding:'22px 26px', background:p.paperAlt}}>
+            <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700}}>
+              ✕ Soll — was Sie wissen müssen
+            </div>
+            <ul style={{...s.serif, fontSize:17, lineHeight:1.55, color:p.ink, padding:'14px 0 0 22px', margin:0}}>
+              {d.cons.map(t => (
+                <li key={t} style={{marginBottom:10}}>{t}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Privacy block — table of rules ─────────────────────────────────────
+function AktePrivacy({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  const toneFor = (t) => t === 'Pflicht' ? p.vermillion : t === 'empfohlen' ? p.amber : p.green;
+  return (
+    <div style={{
+      ...s.inner, padding:'40px 56px 0',
+      display:'grid', gridTemplateColumns:'120px 1fr', gap:32,
+      borderTop:`1px solid ${p.rule}`, marginTop:32, paddingTop:36
+    }}>
+      <div>
+        <div style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:48, lineHeight:1, color:p.vermillion, letterSpacing:'-0.03em'
+        }}>§ 06</div>
+        <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', marginTop:8}}>
+          Datenschutz · Regeln
+        </div>
+      </div>
+      <div>
+        <h2 style={{...s.serifBold, fontSize:46, lineHeight:1.05, margin:'0 0 14px', letterSpacing:'-0.024em'}}>
+          Datenschutz &amp; Daten-Hygiene
+        </h2>
+        <p style={{...s.serif, fontStyle:'italic', fontSize:19, color:p.inkSoft, margin:'0 0 18px', maxWidth:780}}>
+          Bei vertraulichen Informationen ist Vorsicht nötig — die Oberfläche ersetzt keine Datenfreigabe.
+        </p>
+        <div style={{border:`2px solid ${p.ink}`}}>
+          {d.privacy.map(([rule, tone], i) => (
+            <div key={i} style={{
+              display:'grid', gridTemplateColumns:'1fr 140px',
+              borderTop: i ? `1px solid ${p.rule}` : 'none',
+              background: i % 2 ? p.paperAlt : p.paper, alignItems:'center'
+            }}>
+              <div style={{padding:'14px 22px', ...s.serif, fontSize:17, color:p.ink}}>
+                {rule}
+              </div>
+              <div style={{
+                padding:'14px 22px', borderLeft:`1px solid ${p.ruleHi}`,
+                ...s.mono, fontSize:11, fontWeight:700, color:toneFor(tone),
+                letterSpacing:'0.14em', textTransform:'uppercase', textAlign:'center'
+              }}>
+                {tone}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Closing editorial verdict ─────────────────────────────────────────
+function AkteClosing({ d }) {
+  return AkteClosingOriginal({ d });
+}
+function AkteSchlussbild({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'48px 56px 0',
+      borderTop:`1px solid ${p.rule}`, marginTop:32, paddingTop:36
+    }}>
+      <div style={{
+        display:'flex', alignItems:'flex-end', justifyContent:'space-between',
+        marginBottom:14, gap:24
+      }}>
+        <div>
+          <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:700}}>
+            ↳ Schlussbild
+          </div>
+          <div style={{
+            fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+            fontSize:28, lineHeight:1.0, letterSpacing:'-0.022em', color:p.ink, marginTop:8
+          }}>
+            Eine Pause, bevor die Redaktion spricht.
+          </div>
+        </div>
+        <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.08em', whiteSpace:'nowrap', paddingBottom:4}}>
+          Bild · Redaktion · 2026
+        </div>
+      </div>
+
+      <div style={{position:'relative'}}>
+        <div dangerouslySetInnerHTML={{__html:
+          `<image-slot id="akte-schlussbild-${d.akteNo}"
+              placeholder="Editorial-Illustration ablegen · 4:3 empfohlen"
+              shape="rect"
+              style="display:block;width:100%;height:auto;aspect-ratio:4/3;background:${p.parchment};border:1px solid ${p.ink};"></image-slot>`
+        }}/>
+      </div>
+
+      <div style={{display:'flex', justifyContent:'center', marginTop:14}}>
+        <div style={{
+          width:'100%', display:'grid', gridTemplateColumns:'1fr auto', gap:16,
+          paddingTop:10, borderTop:`1px solid ${p.rule}`, alignItems:'baseline'
+        }}>
+          <div style={{...s.serif, fontStyle:'italic', fontSize:14, lineHeight:1.5, color:p.inkSoft}}>
+            <span style={{...s.mono, fontStyle:'normal', fontSize:10, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700, marginRight:10}}>
+              Abbildung 1
+            </span>
+            ChatGPT als Werkzeug, nicht als Orakel — Editorial-Illustration zur Akte Nº {d.akteNo}.
+          </div>
+          <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.08em', whiteSpace:'nowrap'}}>
+            S. 06 · § 06/07
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AkteClosingOriginal({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'48px 56px 0',
+      display:'grid', gridTemplateColumns:'120px 1fr', gap:32,
+      borderTop:`1px solid ${p.rule}`, marginTop:32, paddingTop:36
+    }}>
+      <div>
+        <div style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:48, lineHeight:1, color:p.vermillion, letterSpacing:'-0.03em'
+        }}>§ 07</div>
+        <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', marginTop:8}}>
+          Redaktionelle Einschätzung
+        </div>
+      </div>
+      <div>
+        <h2 style={{...s.serifBold, fontSize:46, lineHeight:1.05, margin:'0 0 22px', letterSpacing:'-0.024em'}}>
+          Schlussbemerkung.
+        </h2>
+        <blockquote style={{
+          margin:0, padding:'26px 32px', background:p.parchment,
+          borderLeft:`6px solid ${p.vermillion}`, borderTop:`1px solid ${p.ruleHi}`, borderRight:`1px solid ${p.ruleHi}`, borderBottom:`1px solid ${p.ruleHi}`,
+        }}>
+          <div style={{
+            ...s.serif, fontStyle:'italic', fontSize:26, lineHeight:1.4, color:p.ink, letterSpacing:'-0.005em'
+          }}>
+            „{d.closing}"
+          </div>
+          <div style={{...s.mono, fontSize:11, marginTop:18, color:p.inkMid, letterSpacing:'0.1em', textTransform:'uppercase'}}>
+            — Die Redaktion · letzte Prüfung {d.lastChecked}
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  );
+}
+
+// ─── FAQ — Q/A spread ───────────────────────────────────────────────────
+function AkteFAQ({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'40px 56px 0',
+      display:'grid', gridTemplateColumns:'120px 1fr', gap:32,
+      borderTop:`1px solid ${p.rule}`, marginTop:32, paddingTop:36
+    }}>
+      <div>
+        <div style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:48, lineHeight:1, color:p.vermillion, letterSpacing:'-0.03em'
+        }}>§ 08</div>
+        <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', marginTop:8}}>
+          Häufige Fragen
+        </div>
+      </div>
+      <div>
+        <h2 style={{...s.serifBold, fontSize:46, lineHeight:1.05, margin:'0 0 22px', letterSpacing:'-0.024em'}}>
+          Fragen aus dem Posteingang.
+        </h2>
+        <div style={{borderTop:`2px solid ${p.ink}`}}>
+          {d.faqs.map(([q, a], i) => (
+            <div key={i} style={{
+              display:'grid', gridTemplateColumns:'48px 1fr',
+              borderBottom:`1px solid ${p.rule}`, padding:'20px 0', alignItems:'flex-start'
+            }}>
+              <div style={{
+                ...s.mono, fontSize:11, color:p.vermillion, fontWeight:700, letterSpacing:'0.12em', paddingTop:4
+              }}>
+                F.{String(i+1).padStart(2,'0')}
+              </div>
+              <div>
+                <h3 style={{
+                  ...s.serifBold, fontSize:22, lineHeight:1.3, margin:'0 0 8px', letterSpacing:'-0.01em'
+                }}>
+                  {q}
+                </h3>
+                <p style={{
+                  ...s.serif, fontSize:17, lineHeight:1.55, color:p.inkSoft, margin:0, maxWidth:820
+                }}>
+                  {a}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Alternativen — three decision cards ────────────────────────────────
+function AkteAlternatives({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'48px 56px 0',
+      borderTop:`3px double ${p.ink}`, marginTop:48, paddingTop:36
+    }}>
+      <div style={{
+        display:'flex', alignItems:'flex-end', justifyContent:'space-between',
+        borderBottom:`1px solid ${p.ink}`, paddingBottom:12, marginBottom:24
+      }}>
+        <div>
+          <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:600}}>
+            ↳ Verwandte Akten
+          </div>
+          <h2 style={{...s.serifBold, fontSize:42, lineHeight:1.0, margin:'10px 0 0', letterSpacing:'-0.024em'}}>
+            Vergleichbare Werkzeuge.
+          </h2>
+        </div>
+        <div style={{...s.mono, fontSize:12, color:p.ink}}>↳ alle 1.171 Akten</div>
+      </div>
+      <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, background:p.rule, border:`1px solid ${p.ink}`}}>
+        {d.alternatives.map((a, i) => {
+          const v = window.VERDICT[a.verdict];
+          return (
+            <div key={a.name} style={{background:p.paper, padding:'22px 24px 20px', minHeight:200, display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
+              <div>
+                <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline'}}>
+                  <span style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.14em', textTransform:'uppercase'}}>
+                    Alternative {String(i+1).padStart(2,'0')}
+                  </span>
+                  <span style={{...s.display, fontSize:24, color:v.color, lineHeight:1}}>{v.glyph}</span>
+                </div>
+                <div style={{
+                  fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+                  fontSize:42, lineHeight:1, marginTop:12, letterSpacing:'-0.025em'
+                }}>
+                  {a.name}<span style={{color:p.vermillion, fontStyle:'normal'}}>.</span>
+                </div>
+                <p style={{...s.serif, fontSize:17, lineHeight:1.45, color:p.inkSoft, margin:'10px 0 0'}}>
+                  {a.tone}
+                </p>
+              </div>
+              <div style={{display:'flex', justifyContent:'space-between', alignItems:'baseline', marginTop:16, ...s.mono, fontSize:11, color:p.inkMid}}>
+                <span>{a.cat} · {a.price}</span>
+                <span style={{color:p.ocean, fontWeight:600}}>Akte öffnen ↗</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─── Colophon strip ─────────────────────────────────────────────────────
+function AkteColophon({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'40px 56px 24px'}}>
+      <div style={{
+        display:'flex', justifyContent:'space-between', alignItems:'center',
+        padding:'18px 22px', border:`1px dashed ${p.ruleHi}`,
+        ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.04em', flexWrap:'wrap', gap:14
+      }}>
+        <span><span style={{color:p.inkDim}}>Akte</span> {d.akteNo}</span>
+        <span><span style={{color:p.inkDim}}>Status</span> aktiv</span>
+        <span><span style={{color:p.inkDim}}>Letzte Prüfung</span> {d.lastChecked}</span>
+        <span><span style={{color:p.inkDim}}>Nächste Prüfung</span> 21.06.2026</span>
+        <span><span style={{color:p.inkDim}}>Daten</span> /api/tools/chatgpt.json</span>
+        <span><span style={{color:p.inkDim}}>Lizenz</span> CC BY-NC 4.0</span>
+        <span style={{color:p.vermillion, fontWeight:700}}>0 bezahlte Platzierungen</span>
+      </div>
+    </div>
+  );
+}
+
+window.DSToolAkte = DSToolAkte;
+
+// ─────────────────────────────────────────────────────────────────────────
+// INVENTAR — the catalog. Editorial register, not a SaaS grid.
+// Layout: A–Z jump, filter rail, two view modes (Register / Setzkasten),
+// vermillion verdict glyphs as marginalia.
+// ─────────────────────────────────────────────────────────────────────────
+
+// generate a populated pool of believable tools
+const INV_POOL = (() => {
+  const verdicts = ['EMPFEHLEN','EMPFEHLEN','EMPFEHLEN','BEDINGT','BEDINGT','NICHT','UEBERBEWERTET','ABWARTEN'];
+  const cats = [
+    'Automatisierung','Produktivität','Entwickler','Chatbots','Audio & Video','Design','Marketing','Schreiben'
+  ];
+  const prices = ['Freemium','Abo','OSS','OSS / Cloud','Pay-as-you-go','19 $/mo','29 $/mo'];
+  const raw = [
+    ['Claude',          'claude.ai',      'Assistent für lange Dokumente, Analyse und sorgfältiges Schreiben.', ['llm','assistant','writing']],
+    ['ChatGPT',         'chatgpt.com',    'Universelle Arbeitsfläche für Schreiben, Code, Recherche und Lernen.', ['llm','chatbot','assistant']],
+    ['Cursor',          'cursor.com',     'IDE mit aggressivem KI-Agent — nur mit Review-Disziplin einsetzen.', ['ide','agents','code']],
+    ['Claude Code',     'claude.com',     'CLI-Agent mit starker Kontext-Disziplin für ernsthafte Code-Aufgaben.', ['cli','agents','code']],
+    ['GitHub Copilot',  'github.com',     'Sicherer Standard für gemischte Entwicklerteams.', ['ide','autocomplete','code']],
+    ['Perplexity',      'perplexity.ai',  'Antwort-Suchmaschine mit Quellen — Quellen weiter prüfen.', ['research','search','llm']],
+    ['Midjourney',      'midjourney.com', 'Bildgenerator mit eigenständiger ästhetischer Handschrift.', ['image','art','design']],
+    ['Ideogram',        'ideogram.ai',    'Bildgenerator mit besonders sauberer Typografie-Wiedergabe.', ['image','typography','design']],
+    ['Recraft',         'recraft.ai',     'Vektor- und Designorientierte Bildgenerierung mit Stilkontrolle.', ['image','design','vector']],
+    ['Wispr Flow',      'wisprflow.ai',   'Diktierwerkzeug für schnelles Schreiben in beliebigen Apps.', ['audio','dictation','voice']],
+    ['Adobe Enhance',   'podcast.adobe.com','Hebt Sprachaufnahmen automatisch — entfernt Hall und Rauschen.', ['audio','cleanup']],
+    ['Descript',        'descript.com',   'Audio- und Videoschnitt über Transkripttext statt Wellenform.', ['audio','video','editing']],
+    ['ElevenLabs',      'elevenlabs.io',  'Hochwertige Sprachsynthese und Voice-Cloning — DSGVO mit Vorsicht.', ['audio','tts','voice']],
+    ['n8n',             'n8n.io',         'Self-hostbare Automatisierung — erste Wahl bei sensiblen Daten.', ['automation','workflows','self-hosted']],
+    ['Zapier',          'zapier.com',     'Verbindet Web-Apps ohne Programmierung — breite Integrationen.', ['automation','workflows','no-code']],
+    ['Make',            'make.com',       'Visuelle Automatisierung mit komplexerer Logik als Zapier.', ['automation','workflows','no-code']],
+    ['Notion AI',       'notion.so',      'KI direkt in Dokumenten und Wikis — gut, solange im Notion-Stack.', ['writing','workspace','assistant']],
+    ['Linear',          'linear.app',     'Aufgabenverwaltung mit dezenter KI-Anreicherung — solide Wahl.', ['project','workspace']],
+    ['Granola',         'granola.ai',     'Meeting-Notizen mit Kontext aus Ihrer eigenen Agenda.', ['meetings','notes','assistant']],
+    ['Fireflies',       'fireflies.ai',   'Meeting-Mitschriften mit Aktionsfeldern — Datenschutz prüfen.', ['meetings','notes','transcription']],
+    ['Lex',             'lex.page',       'Schreibumgebung mit KI-Unterstützung für längere Texte.', ['writing','editor']],
+    ['DeepL Write',     'deepl.com',      'Stil- und Grammatikhilfe für Deutsch und Englisch.', ['writing','grammar','language']],
+    ['Consensus',       'consensus.app',  'KI-Suche durch wissenschaftliche Literatur mit Evidenzhinweisen.', ['research','science']],
+    ['Elicit',          'elicit.com',     'Recherche-Assistent für Paper-Auswertung und Hypothesenbildung.', ['research','science']],
+    ['Litmaps',         'litmaps.com',    'Zitierungsnetzwerke als visuelle Karte — gut zur Orientierung.', ['research','data','visualization']],
+    ['Research Rabbit', 'researchrabbit.ai','Erkundung wissenschaftlicher Themen über Paper-Netzwerke.', ['research','data']],
+    ['Bolt.new',        'bolt.new',       'Browser-IDE für schnelle Web-Prototypen — Produktion nur mit Review.', ['ide','prototyping','code']],
+    ['v0',              'v0.dev',         'UI-Generator für React/Tailwind — gut zum Start, schwach im Fein-Schliff.', ['ide','ui','code']],
+    ['Replit Agent',    'replit.com',     'Komplette App-Generierung in der Cloud-IDE — variable Qualität.', ['ide','agents','code']],
+    ['Tana',            'tana.inc',       'Strukturierter Knowledge-Workspace mit KI-Funktionen.', ['workspace','knowledge']],
+    ['Obsidian + AI',   'obsidian.md',    'Lokales Notiztool mit KI-Plugins — datenschutzfreundlich.', ['workspace','knowledge','self-hosted']],
+    ['Heygen',          'heygen.com',     'KI-Avatare für Video — funktioniert, ist aber leicht erkennbar.', ['video','avatar']],
+    ['Synthesia',       'synthesia.io',   'KI-Avatare für Schulungs- und Erklärvideos.', ['video','avatar','training']],
+    ['Runway',          'runwayml.com',   'KI-Video-Generation und -Bearbeitung für kreative Workflows.', ['video','generation','editing']],
+    ['Suno',            'suno.com',       'Musikgenerierung — beeindruckend, rechtlich unklar bei Veröffentlichung.', ['music','generation']],
+    ['Cal.com',         'cal.com',        'Open-Source-Terminplanung mit Workflow-Automatisierung.', ['scheduling','open-source']],
+    ['Fathom',          'fathom.video',   'Meeting-Notizen für Zoom & Google Meet — kostenlose Basisstufe.', ['meetings','transcription']],
+    ['Lovable',         'lovable.dev',    'App-Generierung mit KI — gut für Erstwurf, weniger für Architektur.', ['ide','prototyping']],
+    ['Krea',            'krea.ai',        'Echtzeit-Bildgenerierung mit Stil-Referenzen.', ['image','realtime','design']],
+    ['Figma AI',        'figma.com',      'KI-Funktionen direkt in Figma — nahtlos, aber nicht magisch.', ['design','workspace']],
+    ['Tldraw',          'tldraw.com',     'Whiteboard mit „Make Real" — Skizzen zu Code-Prototypen.', ['design','prototyping']],
+    ['Beautiful.ai',    'beautiful.ai',   'Folien-Generator mit Layout-Vorschlägen.', ['slides','design']],
+    ['Tome',            'tome.app',       'KI-Folien und narrative Präsentationen.', ['slides','design']],
+  ];
+  return raw.map((row, i) => ({
+    idx: String(i+1).padStart(3,'0'),
+    name: row[0], domain: row[1], blurb: row[2], tags: row[3],
+    verdict: verdicts[i % verdicts.length],
+    cat: cats[i % cats.length],
+    price: prices[i % prices.length],
+    addedDays: (i * 3) % 60,
+  }));
+})();
+
+function DSInventar() {
+  const p = window.dsPalette, s = window.dsS;
+  const [view, setView] = React.useState('register'); // 'register' | 'setzkasten'
+  const [sort, setSort] = React.useState('new');      // 'new' | 'az' | 'verdict' | 'category'
+
+  const tools = React.useMemo(() => {
+    const list = [...INV_POOL];
+    if (sort === 'az')        list.sort((a,b) => a.name.localeCompare(b.name));
+    if (sort === 'verdict')   list.sort((a,b) => a.verdict.localeCompare(b.verdict));
+    if (sort === 'category')  list.sort((a,b) => a.cat.localeCompare(b.cat));
+    if (sort === 'new')       list.sort((a,b) => a.addedDays - b.addedDays);
+    return list;
+  }, [sort]);
+
+  return (
+    <div style={s.page}>
+      <DSNav />
+      <InvCrumb />
+      <InvHeader />
+      <InvControls view={view} setView={setView} sort={sort} setSort={setSort} />
+      <InvJumpStrip />
+      <div style={{...s.inner, padding:'16px 56px 0', display:'grid', gridTemplateColumns:'220px 1fr', gap:32, alignItems:'flex-start'}}>
+        <InvFilterRail />
+        {view === 'register'
+          ? <InvRegister tools={tools} />
+          : <InvSetzkasten tools={tools} />}
+      </div>
+      <InvPagination />
+      <InvColophon />
+      <DSFooter />
+    </div>
+  );
+}
+
+function InvCrumb() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'18px 56px 0', ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+      <span style={{color:p.ocean}}>← Übersicht</span>
+      <span style={{margin:'0 10px', color:p.ruleHi}}>/</span>
+      <span style={{color:p.ink, fontWeight:600}}>Inventar — alle Akten</span>
+    </div>
+  );
+}
+
+function InvHeader() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'24px 56px 30px',
+      borderBottom:`1px solid ${p.rule}`,
+      display:'grid', gridTemplateColumns:'1.55fr 1fr', gap:56, alignItems:'flex-end'
+    }}>
+      <div>
+        <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:600}}>
+          ↳ Inventar · Tool-Index · Ausgabe 049
+        </div>
+        <h1 style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:108, lineHeight:0.97, letterSpacing:'-0.04em',
+          margin:'18px 0 8px', color:p.ink
+        }}>
+          1.171 Akten<span style={{color:p.vermillion, fontStyle:'normal'}}>.</span>
+        </h1>
+        <div style={{...s.serif, fontStyle:'italic', fontSize:22, lineHeight:1.35, color:p.inkSoft, maxWidth:680}}>
+          Jede Akte einzeln gelesen, mit einem Verdikt versehen und in eine Kategorie einsortiert.
+          Keine bezahlten Platzierungen. Sortierung ändert die Reihenfolge — nie die Empfehlung.
+        </div>
+      </div>
+      <div style={{
+        display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:1, background:p.rule, border:`1px solid ${p.ink}`,
+      }}>
+        {[
+          ['1.171','Akten gesamt',     'EMPFEHLEN'],
+          ['621',  'Empfohlen',        'EMPFEHLEN'],
+          ['83',   'Nicht empfohlen',  'NICHT'],
+          ['0',    'Bezahlte Plätze',  'NICHT'],
+        ].map(([n,l,v], i) => (
+          <div key={l} style={{background:p.paper, padding:'14px 14px'}}>
+            <div style={{
+              fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+              fontSize:38, lineHeight:1, letterSpacing:'-0.02em',
+              color: i === 3 ? p.vermillion : p.ink
+            }}>{n}</div>
+            <div style={{...s.mono, fontSize:10, color:p.inkMid, marginTop:6, letterSpacing:'0.06em'}}>{l}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function InvControls({ view, setView, sort, setSort }) {
+  const p = window.dsPalette, s = window.dsS;
+  const ctlBtn = (active) => ({
+    ...s.mono, fontSize:11, padding:'7px 12px',
+    background: active ? p.ink : 'transparent',
+    color: active ? p.paper : p.ink,
+    border:`1px solid ${p.ink}`,
+    letterSpacing:'0.1em', textTransform:'uppercase', fontWeight:600,
+    cursor:'pointer'
+  });
+  return (
+    <div style={{
+      ...s.inner, padding:'18px 56px 0',
+      display:'flex', alignItems:'center', justifyContent:'space-between', gap:18, flexWrap:'wrap'
+    }}>
+      <div style={{display:'flex', alignItems:'center', gap:14}}>
+        <span style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase'}}>
+          Anzeige
+        </span>
+        <div style={{display:'flex', border:`1px solid ${p.ink}`}}>
+          <span onClick={() => setView('register')} style={ctlBtn(view==='register')}>≣ Register</span>
+          <span onClick={() => setView('setzkasten')} style={ctlBtn(view==='setzkasten')}>▦ Setzkasten</span>
+        </div>
+      </div>
+
+      <div style={{display:'flex', alignItems:'center', gap:14, flexWrap:'wrap'}}>
+        <span style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase'}}>
+          Sortierung
+        </span>
+        {[
+          ['new','Zuletzt geprüft'],
+          ['az','A — Z'],
+          ['verdict','Nach Verdikt'],
+          ['category','Nach Kategorie'],
+        ].map(([k,l]) => (
+          <span key={k} onClick={() => setSort(k)} style={{
+            ...s.mono, fontSize:11, padding:'6px 10px',
+            color: sort === k ? p.ink : p.inkMid,
+            borderBottom: sort === k ? `2px solid ${p.vermillion}` : '2px solid transparent',
+            fontWeight: sort === k ? 700 : 400,
+            letterSpacing:'0.04em', cursor:'pointer'
+          }}>
+            {l}
+          </span>
+        ))}
+      </div>
+
+      <div style={{display:'flex', alignItems:'center', gap:8}}>
+        <span style={{...s.mono, fontSize:11, color:p.inkMid}}>Anzeige · 42 von 1.171</span>
+        <span style={{...s.mono, fontSize:11, color:p.ocean, fontWeight:600, padding:'6px 10px', border:`1px solid ${p.ruleHi}`}}>
+          ⇣ als CSV
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function InvJumpStrip() {
+  const p = window.dsPalette, s = window.dsS;
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ#'.split('');
+  // mark a few as "has entries"
+  const active = new Set('ACDEFGHIKLMNPRSTVZ'.split(''));
+  return (
+    <div style={{
+      ...s.inner, padding:'18px 56px 14px', marginTop:14,
+      borderTop:`2px solid ${p.ink}`, borderBottom:`1px solid ${p.ink}`,
+      display:'flex', alignItems:'center', gap:0, justifyContent:'space-between'
+    }}>
+      <span style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.2em', textTransform:'uppercase', minWidth:140}}>
+        Sprungmarken
+      </span>
+      <div style={{display:'flex', gap:0, flex:1, justifyContent:'space-between', marginLeft:14}}>
+        {letters.map(l => (
+          <span key={l} style={{
+            fontFamily:"'Source Serif 4', Georgia, serif",
+            fontWeight: active.has(l) ? 700 : 400,
+            fontStyle: 'italic',
+            fontSize: 22,
+            color: active.has(l) ? p.ink : p.ruleHi,
+            cursor: active.has(l) ? 'pointer' : 'default',
+            letterSpacing:'-0.02em'
+          }}>
+            {l}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function InvFilterRail() {
+  const p = window.dsPalette, s = window.dsS;
+  const groups = [
+    { head:'Verdikt', items:[
+      { k:'EMPFEHLEN',     n:621, on:true },
+      { k:'BEDINGT',       n:284, on:false },
+      { k:'UEBERBEWERTET', n:124, on:false },
+      { k:'NICHT',         n: 83, on:false },
+      { k:'ABWARTEN',      n: 59, on:false },
+    ]},
+    { head:'Kategorie', items:[
+      { k:'Automatisierung',  n:356, on:false },
+      { k:'Produktivität',    n:349, on:false },
+      { k:'Entwickler',       n:287, on:false },
+      { k:'Chatbots',         n:220, on:false },
+      { k:'Audio & Video',    n:180, on:false },
+      { k:'Design',           n:160, on:false },
+      { k:'Marketing',        n:111, on:false },
+      { k:'Schreiben',        n:109, on:false },
+    ]},
+    { head:'Preismodell', items:[
+      { k:'Freemium',    n:642, on:false },
+      { k:'Abo',         n:312, on:false },
+      { k:'OSS',         n:128, on:false },
+      { k:'Pay-as-you-go',n:89, on:false },
+    ]},
+    { head:'Hosting', items:[
+      { k:'EU verfügbar', n:298, on:false },
+      { k:'Self-hostbar', n:128, on:false },
+      { k:'DPA verfügbar',n:381, on:false },
+    ]},
+  ];
+  return (
+    <aside style={{
+      position:'sticky', top:14, alignSelf:'start',
+      borderRight:`1px solid ${p.rule}`, paddingRight:24, paddingTop:14
+    }}>
+      <div style={{...s.mono, fontSize:10, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:700, marginBottom:8}}>
+        ↳ Filter
+      </div>
+      <div style={{...s.serifBold, fontSize:22, lineHeight:1.0, letterSpacing:'-0.015em', marginBottom:18}}>
+        Auswahl<br/>einschränken.
+      </div>
+
+      {groups.map(g => (
+        <div key={g.head} style={{marginBottom:22}}>
+          <div style={{
+            ...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase',
+            padding:'8px 0 6px', borderBottom:`1px solid ${p.ink}`
+          }}>
+            {g.head}
+          </div>
+          <div style={{padding:'8px 0 0'}}>
+            {g.items.map(it => {
+              const v = window.VERDICT[it.k];
+              return (
+                <div key={it.k} style={{
+                  display:'flex', alignItems:'center', justifyContent:'space-between',
+                  padding:'5px 0', ...s.mono, fontSize:12,
+                  color: it.on ? p.ink : p.inkSoft
+                }}>
+                  <span style={{display:'flex', alignItems:'center', gap:8}}>
+                    <span style={{
+                      width:11, height:11, border:`1.5px solid ${p.ink}`,
+                      background: it.on ? p.ink : 'transparent',
+                      display:'inline-block'
+                    }}/>
+                    {v && <span style={{color:v.color, fontSize:13}}>{v.glyph}</span>}
+                    <span style={{...s.serif, fontSize:14, color: it.on ? p.ink : p.inkSoft, fontWeight: it.on ? 600 : 400}}>
+                      {v ? v.label : it.k}
+                    </span>
+                  </span>
+                  <span style={{color:p.inkDim, fontSize:11}}>{it.n}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+
+      <div style={{
+        marginTop:14, padding:'10px 12px', background:p.parchment, border:`1px dashed ${p.ruleHi}`,
+        ...s.mono, fontSize:11, color:p.inkSoft, lineHeight:1.6
+      }}>
+        Aktuell aktiv:<br/>
+        <span style={{color:p.ink, fontWeight:600}}>Verdikt: Empfehlen</span>
+        <br/><span style={{color:p.ocean, fontWeight:600, marginTop:4, display:'inline-block'}}>↺ alle zurücksetzen</span>
+      </div>
+    </aside>
+  );
+}
+
+// ─── REGISTER VIEW — editorial 3-column list ────────────────────────────
+function InvRegister({ tools }) {
+  const p = window.dsPalette, s = window.dsS;
+  // group into columns of ~14, simple split
+  const cols = [[],[],[]];
+  tools.forEach((t,i) => cols[i % 3].push(t));
+
+  return (
+    <div style={{paddingTop:14}}>
+      <div style={{
+        display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:0, background:p.rule,
+        border:`1px solid ${p.ink}`, borderBottom:`2px solid ${p.ink}`
+      }}>
+        {cols.map((col, ci) => (
+          <div key={ci} style={{background:p.paper}}>
+            {col.map((t, i) => (
+              <InvEntry key={t.name} t={t} last={i === col.length-1} />
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Editorial monogram tile — ink-on-paper, not a colourful favicon ────
+function InvMonogram({ name, size }) {
+  const ch = (name || '?').replace(/[^A-Za-zÄÖÜäöü0-9]/g,'').charAt(0).toUpperCase() || '·';
+  return (
+    <span style={{
+      width:size, height:size, display:'inline-flex', alignItems:'center', justifyContent:'center',
+      background:'#0c0c0a', color:'#f6f4ee',
+      fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+      fontSize: Math.round(size * 0.56), lineHeight:1, letterSpacing:'-0.02em',
+      flexShrink:0, boxSizing:'border-box', marginTop:1
+    }}>{ch}</span>
+  );
+}
+
+function InvEntry({ t, last }) {
+  const p = window.dsPalette, s = window.dsS;
+  const v = window.VERDICT[t.verdict];
+  return (
+    <div style={{
+      display:'grid', gridTemplateColumns:'44px 1fr 22px',
+      padding:'14px 14px 14px 12px',
+      borderBottom: last ? 'none' : `1px solid ${p.rule}`,
+      alignItems:'flex-start', gap:10
+    }}>
+      <div style={{
+        fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+        fontSize:24, lineHeight:1, color:p.inkDim, letterSpacing:'-0.02em',
+        paddingTop:2
+      }}>
+        {t.idx}
+      </div>
+      <div style={{minWidth:0}}>
+        <div style={{display:'flex', alignItems:'baseline', gap:8, flexWrap:'wrap'}}>
+          <span style={{
+            ...s.serifBold, fontSize:20, lineHeight:1.1, letterSpacing:'-0.008em'
+          }}>{t.name}<span style={{color:p.vermillion, fontWeight:900}}>.</span></span>
+          <span style={{...s.mono, fontSize:10, color:p.inkMid}}>{t.domain}</span>
+        </div>
+        <div style={{...s.serif, fontSize:14, lineHeight:1.4, color:p.inkSoft, marginTop:3}}>
+          {t.blurb}
+        </div>
+        <div style={{
+          display:'flex', alignItems:'center', gap:8, marginTop:8,
+          ...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.06em', flexWrap:'wrap'
+        }}>
+          <span style={{color:v.color, fontWeight:700, letterSpacing:'0.14em', textTransform:'uppercase'}}>
+            {v.label}
+          </span>
+          <span style={{color:p.ruleHi}}>·</span>
+          <span>{t.cat}</span>
+          <span style={{color:p.ruleHi}}>·</span>
+          <span>{t.price}</span>
+          {t.tags.slice(0,2).map(tg => (
+            <span key={tg} style={{color:p.inkSoft}}>#{tg}</span>
+          ))}
+        </div>
+      </div>
+      <div style={{
+        ...s.display, fontSize:22, lineHeight:1, color:v.color, textAlign:'center', paddingTop:2
+      }}>
+        {v.glyph}
+      </div>
+    </div>
+  );
+}
+
+// ─── SETZKASTEN VIEW — compact verdict tiles ────────────────────────────
+function InvSetzkasten({ tools }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{paddingTop:14}}>
+      <div style={{
+        display:'grid', gridTemplateColumns:'repeat(6, 1fr)', gap:0, background:p.rule,
+        border:`1px solid ${p.ink}`, borderBottom:`2px solid ${p.ink}`
+      }}>
+        {tools.map(t => {
+          const v = window.VERDICT[t.verdict];
+          return (
+            <div key={t.name} style={{
+              background:p.paper, padding:'12px 12px 10px', minHeight:120,
+              position:'relative', display:'flex', flexDirection:'column', justifyContent:'space-between'
+            }}>
+              <div>
+                <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start'}}>
+                  <span style={{
+                    fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+                    fontSize:14, color:p.inkDim, letterSpacing:'-0.02em'
+                  }}>{t.idx}</span>
+                  <span style={{...s.display, fontSize:18, lineHeight:1, color:v.color}}>{v.glyph}</span>
+                </div>
+                <div style={{
+                  ...s.serifBold, fontSize:17, lineHeight:1.1, letterSpacing:'-0.008em', marginTop:6
+                }}>
+                  {t.name}<span style={{color:p.vermillion, fontWeight:900}}>.</span>
+                </div>
+              </div>
+              <div style={{
+                ...s.mono, fontSize:9, color:p.inkMid, letterSpacing:'0.08em',
+                borderTop:`1px dotted ${p.ruleHi}`, paddingTop:6
+              }}>
+                {t.cat.split(' ')[0].toLowerCase()} · {t.price.split(' ')[0].toLowerCase()}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function InvPagination() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'28px 56px 8px', marginTop:14,
+      display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:16
+    }}>
+      <div style={{...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+        Seite 1 von 28 · 42 von 1.171
+      </div>
+      <div style={{display:'flex', gap:4, ...s.mono, fontSize:12}}>
+        {['1','2','3','4','5','…','28'].map((n, i) => (
+          <span key={i} style={{
+            padding:'7px 12px', minWidth:28, textAlign:'center',
+            border:`1px solid ${n === '1' ? p.ink : p.ruleHi}`,
+            background: n === '1' ? p.ink : 'transparent',
+            color: n === '1' ? p.paper : p.ink, fontWeight: n === '1' ? 700 : 400,
+            cursor:'pointer'
+          }}>{n}</span>
+        ))}
+        <span style={{
+          padding:'7px 14px', border:`1px solid ${p.ink}`,
+          background:p.paper, color:p.ink, fontWeight:600, marginLeft:6
+        }}>Nächste →</span>
+      </div>
+    </div>
+  );
+}
+
+function InvColophon() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'24px 56px 40px'}}>
+      <div style={{
+        display:'flex', justifyContent:'space-between', alignItems:'center',
+        padding:'18px 22px', border:`1px dashed ${p.ruleHi}`,
+        ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.04em', flexWrap:'wrap', gap:14
+      }}>
+        <span><span style={{color:p.inkDim}}>Inventar</span> 1.171</span>
+        <span><span style={{color:p.inkDim}}>Letzter Eintrag</span> 27.05.2026</span>
+        <span><span style={{color:p.inkDim}}>Daten</span> /api/tools.json</span>
+        <span><span style={{color:p.inkDim}}>RSS</span> /feed/index.xml</span>
+        <span><span style={{color:p.inkDim}}>Lizenz</span> CC BY-NC 4.0</span>
+        <span style={{color:p.vermillion, fontWeight:700}}>0 bezahlte Platzierungen</span>
+      </div>
+    </div>
+  );
+}
+
+window.DSInventar = DSInventar;
+
+// ─────────────────────────────────────────────────────────────────────────
+// RATGEBER-ARCHIV — editorial archive of all 25 Entscheidungen
+// Differs from Inventar: this lists ARTICLES, not tools.
+// Reads like NYR-of-Books backlist, not a card grid.
+// ─────────────────────────────────────────────────────────────────────────
+
+const RATGEBER_DATA = (() => {
+  const sections = ['AI-Code Review','Datenschutz','Agent Security','Schreiben & Content','Audio · Transkription','Automatisierung','Recherche & Quellen','Bildgenerierung','Editor-Toolchain','Compliance & DSGVO'];
+  const verdicts = ['EMPFEHLEN','EMPFEHLEN','BEDINGT','BEDINGT','NICHT','UEBERBEWERTET','ABWARTEN','EMPFEHLEN'];
+  const headlines = [
+    ['Soll mein Team Cursor, Copilot oder Claude Code einführen?',
+     'Drei sehr unterschiedliche Versprechen — und nur eines passt zu Teams, die Code ernst nehmen.',
+     'Wir haben drei Teams je eine Woche lang mit den drei Werkzeugen arbeiten lassen.'],
+    ['Sind „KI-Tools ohne Anmeldung" wirklich datenschutzfreundlich?',
+     'No-Login spart Zeit. Es spart aber selten Daten.',
+     'Sieben populäre Tools auf Tracking, Datenweitergabe und EU-Hosting geprüft — fünf senden Telemetrie.'],
+    ['Brauchen wir MCP — und welche Guardrails sofort?',
+     'MCP verbindet Agenten mit Tools. Ohne Audit-Trail wird daraus Schatten-IT.',
+     'Die fünf Guardrails, die nicht warten können — Least Privilege, signierte Manifests, Logging, Whitelist, Review.'],
+    ['Wann lohnt ein KI-Schreibassistent wirklich?',
+     'Nicht beim ersten Entwurf. Bei der dritten Überarbeitung.',
+     'Wir haben drei Wochen lang gemessen, wo der Hebel kommt — und wo er nur Zeit kostet.'],
+    ['Welcher Transkriptionsdienst für vertrauliche Gespräche?',
+     'Genauigkeit ist nicht alles. Daten-Standort schon.',
+     'Acht Anbieter im Vergleich, sortiert nach Hosting, Verschlüsselung und Mitarbeiterzugriff.'],
+    ['Self-hosted Automation: lohnt n8n statt Zapier?',
+     'Für kleine Teams selten. Für vertrauliche Workflows fast immer.',
+     'Wir zeigen, wo die Grenze zwischen Convenience und Kontrolle wirklich verläuft.'],
+    ['Sind KI-Recherchewerkzeuge wissenschaftstauglich?',
+     'Als Einstieg ja. Als Quelle nie.',
+     'Consensus, Elicit, Research Rabbit, Litmaps — wo sie helfen und wo sie täuschen.'],
+    ['Lohnt sich ein eigener LLM-Server für mittelgrosse Teams?',
+     'In den meisten Fällen nicht. In zwei Fällen schon.',
+     'Wir rechnen die TCO über zwei Jahre durch und zeigen, ab wann Self-Hosting sich rechnet.'],
+    ['Welcher Bildgenerator ist heute der richtige für Marketing?',
+     'Es kommt nicht auf das Modell an. Es kommt auf den Prompt-Stack.',
+     'Midjourney, Ideogram, Recraft, Krea — und warum die Auswahl meist eine Stil-Entscheidung ist.'],
+    ['Wer haftet, wenn ein KI-Agent einen Fehler committet?',
+     'Nicht der Anbieter. Auch nicht die KI.',
+     'Eine Bestandsaufnahme der aktuellen Rechtslage in DACH — und warum Review-Prozesse Pflicht werden.'],
+    ['Sollten wir KI-Detector-Tools im Bewerbungsprozess einsetzen?',
+     'Nein. Die Fehlerquoten machen sie unbrauchbar.',
+     'False-Positives in 20–30 % der Fälle — und was Personalabteilungen stattdessen tun können.'],
+    ['Welche Meeting-Notes-Tools sind DSGVO-tauglich?',
+     'Nicht die populärsten. Nicht die billigsten.',
+     'Wir haben acht Anbieter geprüft — auf Hosting, DPA, Mitschriftenzugriff und Löschfristen.'],
+    ['Lohnt sich Notion AI für Wissensteams?',
+     'Wenn Sie ohnehin Notion nutzen — ja. Sonst kaum.',
+     'Wo Notion AI über reine Spielerei hinausgeht — und wo es Spielerei bleibt.'],
+    ['Sind Coding-Agenten 2026 produktionsreif?',
+     'Für klar abgegrenzte Aufgaben: ja. Für komplexe Architekturen: noch nicht.',
+     'Wir vergleichen Codex CLI, Claude Code, Gemini CLI und Replit Agent in echten Backlog-Aufgaben.'],
+    ['Werden Personal-Assistant-Agenten dieses Jahr wirklich nützlich?',
+     'Für wenige. Aber für die ist der Hebel echt.',
+     'Wir testen vier autonome Assistenten zwei Wochen lang — Ergebnis und Grenzen.'],
+    ['Was tun, wenn KI-generierter Code geleakte Lizenzen enthält?',
+     'Erkennen. Dokumentieren. Ersetzen.',
+     'Eine Praxisanleitung für Teams, die KI-Code in Produktion haben — bevor der Audit kommt.'],
+  ];
+  const today = new Date('2026-05-27');
+  return headlines.map((h, i) => {
+    const days = i * 5 + (i % 3) * 2;
+    const date = new Date(today.getTime() - days * 86400000);
+    const ymd = date.toISOString().slice(0,10).split('-').reverse().join('.');
+    return {
+      no: String(49 - i).padStart(3, '0'),
+      section: sections[i % sections.length],
+      headline: h[0],
+      dek: h[1],
+      excerpt: h[2],
+      verdict: verdicts[i % verdicts.length],
+      date: ymd,
+      year: date.getFullYear(),
+      month: date.getMonth() + 1,
+      read: 7 + (i % 8),
+      tags: ['agents','review','privacy','workflow','code','research','design','llm','data'].slice(i % 4, (i % 4) + 3),
+      by: ['S. Werner','A. Lehmann','M. Becker','T. Roth'][i % 4],
+    };
+  });
+})();
+
+function DSRatgeber() {
+  const p = window.dsPalette, s = window.dsS;
+  const [year, setYear] = React.useState('alle');
+  const [section, setSection] = React.useState('alle');
+
+  const filtered = RATGEBER_DATA.filter(r =>
+    (year === 'alle' || r.year === year) &&
+    (section === 'alle' || r.section === section)
+  );
+
+  const sectionsList = [...new Set(RATGEBER_DATA.map(r => r.section))];
+
+  return (
+    <div style={s.page}>
+      <DSNav />
+      <RatgeberCrumb />
+      <RatgeberHeader total={RATGEBER_DATA.length} />
+      <RatgeberCounters />
+      <RatgeberFilters
+        year={year} setYear={setYear}
+        section={section} setSection={setSection}
+        sections={sectionsList}
+      />
+      <RatgeberFeatured d={RATGEBER_DATA[0]} />
+      <RatgeberArchive items={filtered.slice(1)} />
+      <RatgeberPagination />
+      <DSFooter />
+    </div>
+  );
+}
+
+function RatgeberCrumb() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{...s.inner, padding:'18px 56px 0', ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+      <span style={{color:p.ocean}}>← Übersicht</span>
+      <span style={{margin:'0 10px', color:p.ruleHi}}>/</span>
+      <span style={{color:p.ink, fontWeight:600}}>Ratgeber · Archiv</span>
+    </div>
+  );
+}
+
+function RatgeberHeader({ total }) {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'24px 56px 30px',
+      borderBottom:`1px solid ${p.rule}`,
+      display:'grid', gridTemplateColumns:'1.6fr 1fr', gap:56, alignItems:'flex-end'
+    }}>
+      <div>
+        <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:600}}>
+          ↳ Ratgeber-Archiv · seit Januar 2023
+        </div>
+        <h1 style={{
+          fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+          fontSize:108, lineHeight:0.97, letterSpacing:'-0.04em',
+          margin:'18px 0 8px', color:p.ink
+        }}>
+          {total} Entscheidungen<span style={{color:p.vermillion, fontStyle:'normal'}}>.</span>
+        </h1>
+        <div style={{...s.serif, fontStyle:'italic', fontSize:22, lineHeight:1.35, color:p.inkSoft, maxWidth:680}}>
+          Jede Entscheidung wird in einer Testwoche getroffen, redigiert, datiert und monatlich überprüft.
+          Anti-Empfehlungen sind hier sichtbar gemacht — sie sind nicht die Ausnahme, sie sind die Position.
+        </div>
+      </div>
+
+      <div style={{...s.serif, fontSize:18, lineHeight:1.6, color:p.inkSoft, fontStyle:'italic', borderLeft:`3px solid ${p.vermillion}`, padding:'4px 0 4px 22px'}}>
+        „Ein Verzeichnis ist eine Haltung, kein Algorithmus."
+        <div style={{...s.mono, fontStyle:'normal', fontSize:11, color:p.inkMid, marginTop:8, letterSpacing:'0.1em'}}>
+          — aus dem Editor's Note, Ausgabe 047
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RatgeberCounters() {
+  const p = window.dsPalette, s = window.dsS;
+  const counts = {
+    EMPFEHLEN: RATGEBER_DATA.filter(r => r.verdict === 'EMPFEHLEN').length,
+    BEDINGT:   RATGEBER_DATA.filter(r => r.verdict === 'BEDINGT').length,
+    NICHT:     RATGEBER_DATA.filter(r => r.verdict === 'NICHT').length,
+    UEBERBEWERTET: RATGEBER_DATA.filter(r => r.verdict === 'UEBERBEWERTET').length,
+    ABWARTEN:  RATGEBER_DATA.filter(r => r.verdict === 'ABWARTEN').length,
+  };
+  return (
+    <div style={{
+      ...s.inner, padding:'16px 56px 0',
+    }}>
+      <div style={{
+        display:'grid', gridTemplateColumns:'repeat(5, 1fr)', gap:1, background:p.rule, border:`1px solid ${p.ink}`
+      }}>
+        {Object.entries(counts).map(([k, n]) => {
+          const v = window.VERDICT[k];
+          return (
+            <div key={k} style={{background:p.paper, padding:'16px 18px'}}>
+              <div style={{display:'flex', alignItems:'center', gap:10}}>
+                <span style={{...s.display, fontSize:22, color:v.color, lineHeight:1}}>{v.glyph}</span>
+                <span style={{...s.mono, fontSize:10, color:v.color, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:700}}>
+                  {v.label}
+                </span>
+              </div>
+              <div style={{
+                fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+                fontSize:42, lineHeight:1, letterSpacing:'-0.02em', marginTop:10, color:p.ink
+              }}>
+                {n}
+              </div>
+              <div style={{...s.mono, fontSize:10, color:p.inkMid, marginTop:4, letterSpacing:'0.06em'}}>
+                Entscheidungen
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function RatgeberFilters({ year, setYear, section, setSection, sections }) {
+  const p = window.dsPalette, s = window.dsS;
+  const years = [
+    { k:'alle', n:25 },
+    { k:2026,  n:13 },
+    { k:2025,  n: 9 },
+    { k:2024,  n: 3 },
+  ];
+  return (
+    <div style={{...s.inner, padding:'20px 56px 0', marginTop:8}}>
+      <div style={{
+        borderTop:`2px solid ${p.ink}`, borderBottom:`1px solid ${p.ink}`,
+        padding:'14px 0', display:'grid', gridTemplateColumns:'auto 1fr auto', gap:24, alignItems:'center'
+      }}>
+        <div style={{display:'flex', alignItems:'center', gap:14}}>
+          <span style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:600}}>
+            Jahr
+          </span>
+          {years.map(y => (
+            <span key={y.k} onClick={() => setYear(y.k)} style={{
+              ...s.mono, fontSize:13,
+              color: year === y.k ? p.ink : p.inkMid,
+              fontWeight: year === y.k ? 700 : 400,
+              borderBottom: year === y.k ? `2px solid ${p.vermillion}` : '2px solid transparent',
+              padding:'4px 2px', cursor:'pointer',
+              letterSpacing:'0.04em'
+            }}>
+              {y.k} <span style={{color:p.inkDim, fontSize:11, fontWeight:400}}>· {y.n}</span>
+            </span>
+          ))}
+        </div>
+
+        <div style={{display:'flex', alignItems:'center', gap:8, flexWrap:'wrap', justifyContent:'flex-end'}}>
+          <span style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:600, marginRight:6}}>
+            Rubrik
+          </span>
+          <span onClick={() => setSection('alle')} style={{
+            ...s.mono, fontSize:11, padding:'5px 10px',
+            border: section === 'alle' ? `1px solid ${p.ink}` : `1px solid ${p.ruleHi}`,
+            background: section === 'alle' ? p.ink : 'transparent',
+            color: section === 'alle' ? p.paper : p.inkSoft,
+            cursor:'pointer', letterSpacing:'0.06em'
+          }}>
+            alle
+          </span>
+          {sections.map(sec => (
+            <span key={sec} onClick={() => setSection(sec)} style={{
+              ...s.mono, fontSize:11, padding:'5px 10px',
+              border: section === sec ? `1px solid ${p.ink}` : `1px solid ${p.ruleHi}`,
+              background: section === sec ? p.ink : 'transparent',
+              color: section === sec ? p.paper : p.inkSoft,
+              cursor:'pointer', letterSpacing:'0.04em'
+            }}>
+              {sec}
+            </span>
+          ))}
+        </div>
+
+        <div style={{...s.mono, fontSize:11, color:p.ocean, fontWeight:600, padding:'5px 10px', border:`1px solid ${p.ruleHi}`, cursor:'pointer'}}>
+          ↓ RSS
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RatgeberFeatured({ d }) {
+  const p = window.dsPalette, s = window.dsS;
+  const v = window.VERDICT[d.verdict];
+  return (
+    <div style={{...s.inner, padding:'32px 56px 0'}}>
+      <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:700, marginBottom:14}}>
+        ↳ Soeben erschienen · Ausgabe 049
+      </div>
+      <div style={{
+        display:'grid', gridTemplateColumns:'1.45fr 1fr', gap:0,
+        border:`2px solid ${p.ink}`, background:p.parchment
+      }}>
+        <div style={{padding:'36px 38px'}}>
+          <div style={{display:'flex', alignItems:'baseline', gap:14, marginBottom:14}}>
+            <span style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700}}>
+              № {d.no} · {d.section}
+            </span>
+            <span style={{...s.mono, fontSize:11, color:p.inkMid}}>{d.read} min · {d.date}</span>
+          </div>
+          <h2 style={{
+            ...s.serifBold, fontSize:52, lineHeight:1.0, margin:'0 0 14px', letterSpacing:'-0.025em', maxWidth:680
+          }}>
+            {d.headline}
+          </h2>
+          <div style={{...s.serif, fontStyle:'italic', fontSize:22, lineHeight:1.35, color:p.inkSoft, maxWidth:640, marginBottom:18}}>
+            {d.dek}
+          </div>
+          <p style={{...s.serif, fontSize:17, lineHeight:1.55, color:p.ink, margin:0, maxWidth:680}}>
+            {d.excerpt}
+          </p>
+          <div style={{
+            display:'flex', alignItems:'center', justifyContent:'space-between', marginTop:28,
+            paddingTop:18, borderTop:`1px solid ${p.ruleHi}`
+          }}>
+            <div style={{...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+              {d.by} · zuletzt geprüft 21.05.2026
+            </div>
+            <span style={{
+              padding:'10px 18px', background:p.ink, color:p.paper,
+              ...s.mono, fontSize:12, fontWeight:600, letterSpacing:'0.06em'
+            }}>
+              ↳ Entscheidung lesen
+            </span>
+          </div>
+        </div>
+
+        <div style={{
+          background:p.paper, borderLeft:`2px solid ${p.ink}`,
+          padding:'36px 32px', display:'flex', flexDirection:'column', justifyContent:'space-between'
+        }}>
+          <div>
+            <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.18em', textTransform:'uppercase', fontWeight:700}}>
+              Verdikt
+            </div>
+            <div style={{display:'flex', alignItems:'center', gap:18, marginTop:16}}>
+              <span style={{...s.display, fontSize:72, color:v.color, lineHeight:1}}>{v.glyph}</span>
+              <div>
+                <div style={{...s.mono, fontSize:11, color:v.color, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:700}}>
+                  {v.label}
+                </div>
+                <div style={{...s.serifBold, fontSize:24, lineHeight:1.15, marginTop:6, letterSpacing:'-0.012em'}}>
+                  Claude Code für Senior-Teams. Copilot als Standard.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{marginTop:24}}>
+            <div style={{...s.mono, fontSize:10, color:p.inkMid, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:600, marginBottom:8}}>
+              Im Test
+            </div>
+            <div style={{...s.mono, fontSize:12, color:p.ink, lineHeight:1.8}}>
+              <div>Claude Code · 9.1</div>
+              <div>GitHub Copilot · 8.4</div>
+              <div>Cursor · 7.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RatgeberArchive({ items }) {
+  const p = window.dsPalette, s = window.dsS;
+  // group items by year+month
+  const groups = {};
+  items.forEach(it => {
+    const k = `${it.year} · ${['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'][it.month-1]}`;
+    if (!groups[k]) groups[k] = [];
+    groups[k].push(it);
+  });
+  return (
+    <div style={{...s.inner, padding:'40px 56px 0'}}>
+      <div style={{...s.mono, fontSize:11, color:p.vermillion, letterSpacing:'0.2em', textTransform:'uppercase', fontWeight:700, marginBottom:12}}>
+        ↳ Archiv · ältere Entscheidungen
+      </div>
+      <h2 style={{
+        ...s.serifBold, fontSize:42, lineHeight:1.0, margin:'0 0 22px', letterSpacing:'-0.025em'
+      }}>
+        Was vorher entschieden wurde.
+      </h2>
+
+      {Object.entries(groups).map(([groupKey, list]) => (
+        <div key={groupKey} style={{marginBottom:36}}>
+          <div style={{
+            display:'flex', alignItems:'center', justifyContent:'space-between',
+            padding:'10px 0', borderTop:`2px solid ${p.ink}`, borderBottom:`1px solid ${p.ink}`,
+            marginBottom:0
+          }}>
+            <div style={{
+              fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+              fontSize:28, letterSpacing:'-0.02em', color:p.ink
+            }}>
+              {groupKey}<span style={{color:p.vermillion, fontStyle:'normal'}}>.</span>
+            </div>
+            <div style={{...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+              {list.length} Entscheidung{list.length === 1 ? '' : 'en'}
+            </div>
+          </div>
+
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:0, background:p.rule, borderBottom:`1px solid ${p.ink}`, borderLeft:`1px solid ${p.ink}`, borderRight:`1px solid ${p.ink}`}}>
+            {list.map((it, i) => (
+              <RatgeberEntry key={it.no} d={it} alt={i % 2 === 1} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function RatgeberEntry({ d, alt }) {
+  const p = window.dsPalette, s = window.dsS;
+  const v = window.VERDICT[d.verdict];
+  return (
+    <article style={{
+      background: alt ? p.paperAlt : p.paper,
+      padding:'24px 28px 22px', display:'grid', gridTemplateColumns:'1fr 80px', gap:18, alignItems:'flex-start'
+    }}>
+      <div>
+        <div style={{display:'flex', alignItems:'baseline', gap:12}}>
+          <span style={{
+            fontFamily:"'Source Serif 4', Georgia, serif", fontWeight:900, fontStyle:'italic',
+            fontSize:22, color:p.inkDim, letterSpacing:'-0.02em'
+          }}>
+            № {d.no}
+          </span>
+          <span style={{...s.mono, fontSize:10, color:p.vermillion, letterSpacing:'0.16em', textTransform:'uppercase', fontWeight:700}}>
+            {d.section}
+          </span>
+        </div>
+        <h3 style={{
+          ...s.serifBold, fontSize:26, lineHeight:1.15, margin:'10px 0 8px', letterSpacing:'-0.015em'
+        }}>
+          {d.headline}
+        </h3>
+        <div style={{...s.serif, fontStyle:'italic', fontSize:17, lineHeight:1.4, color:p.inkSoft, margin:'0 0 12px'}}>
+          {d.dek}
+        </div>
+        <p style={{...s.serif, fontSize:15, lineHeight:1.5, color:p.ink, margin:0}}>
+          {d.excerpt}
+        </p>
+        <div style={{
+          display:'flex', alignItems:'center', gap:12, marginTop:14, ...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.04em', flexWrap:'wrap'
+        }}>
+          <span>{d.date}</span>
+          <span style={{color:p.ruleHi}}>·</span>
+          <span>{d.read} min</span>
+          <span style={{color:p.ruleHi}}>·</span>
+          <span>{d.by}</span>
+          {d.tags.map(t => (
+            <span key={t} style={{color:p.inkSoft}}>#{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* Verdict marginalia */}
+      <div style={{textAlign:'center', borderLeft:`1px solid ${p.ruleHi}`, paddingLeft:16, paddingTop:4}}>
+        <div style={{...s.display, fontSize:52, color:v.color, lineHeight:0.95}}>{v.glyph}</div>
+        <div style={{...s.mono, fontSize:9, color:v.color, letterSpacing:'0.12em', textTransform:'uppercase', fontWeight:700, marginTop:4}}>
+          {v.label}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function RatgeberPagination() {
+  const p = window.dsPalette, s = window.dsS;
+  return (
+    <div style={{
+      ...s.inner, padding:'24px 56px 8px', marginTop:24,
+      display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:16
+    }}>
+      <div style={{...s.mono, fontSize:11, color:p.inkMid, letterSpacing:'0.06em'}}>
+        Seite 1 von 2 · 16 von 25 angezeigt
+      </div>
+      <div style={{display:'flex', gap:4, ...s.mono, fontSize:12}}>
+        {['1','2'].map((n, i) => (
+          <span key={i} style={{
+            padding:'7px 14px', minWidth:32, textAlign:'center',
+            border:`1px solid ${n === '1' ? p.ink : p.ruleHi}`,
+            background: n === '1' ? p.ink : 'transparent',
+            color: n === '1' ? p.paper : p.ink, fontWeight: n === '1' ? 700 : 400, cursor:'pointer'
+          }}>{n}</span>
+        ))}
+        <span style={{
+          padding:'7px 14px', border:`1px solid ${p.ink}`,
+          background:p.paper, color:p.ink, fontWeight:600, marginLeft:6
+        }}>Nächste →</span>
+      </div>
+    </div>
+  );
+}
+
+window.DSRatgeber = DSRatgeber;
+
+
+function App() {
+  const [view, setView] = React.useState(() => {
+    const h = location.hash.replace('#','');
+    return ['sheet','akte','inv','rat'].includes(h) ? h : 'home';
+  });
+  React.useEffect(() => { location.hash = view; }, [view]);
+
+  return (
+    <React.Fragment>
+      <div className="tabbar">
+        <button className={view==='home'  ? 'active' : ''} onClick={() => setView('home')}>↳ Ausgabe</button>
+        <button className={view==='sheet' ? 'active' : ''} onClick={() => setView('sheet')}>↳ Entscheidung</button>
+        <button className={view==='akte'  ? 'active' : ''} onClick={() => setView('akte')}>↳ Tool-Akte</button>
+        <button className={view==='inv'   ? 'active' : ''} onClick={() => setView('inv')}>↳ Inventar</button>
+        <button className={view==='rat'   ? 'active' : ''} onClick={() => setView('rat')}>↳ Ratgeber-Archiv</button>
+      </div>
+      <div className="stage">
+        <div className="frame">
+          {view === 'home' ? <DSHome />
+            : view === 'sheet' ? <DSSheet />
+            : view === 'akte' ? <DSToolAkte />
+            : view === 'inv' ? <DSInventar />
+            : <DSRatgeber />}
+        </div>
+      </div>
+    </React.Fragment>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+
+</body></html>
