@@ -6358,3 +6358,265 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
     align-items: flex-start;
   }
 }
+
+/* =====================================================
+   TOOL-AKTE — editorial body sections (§-grid, fit, cases,
+   features, Bilanz, Privacy, Closing, FAQ, Verdikt, Schlussbild)
+   Parsed from the German markdown body. SPEC § 4.3–4.10.
+   ===================================================== */
+
+.tool-akte {
+  --akte-green: #0f6a3b;
+  --akte-amber: #a86200;
+  --akte-purple: #7a3df0;
+  --akte-ocean: #0042b8;
+  --akte-ink-dim: #9a988e;
+}
+:root[data-theme="dark"] .tool-akte {
+  --akte-green: #4cae7a;
+  --akte-amber: #d29a3a;
+  --akte-purple: #b69bff;
+  --akte-ocean: #7aa6ff;
+}
+
+.akte-doc { display: block; margin-top: 4px; }
+
+/* TL;DR bullet list */
+.akte-tldr-list {
+  list-style: disc;
+  margin: 4px 0 10px;
+  padding: 0 0 0 20px;
+}
+.akte-tldr-list li {
+  font-family: var(--akte-serif);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--akte-paper);
+  margin-bottom: 6px;
+}
+.akte-tldr-list li:last-child { margin-bottom: 0; }
+
+/* §-section: marginalia + body */
+.akte-sec {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 32px;
+  border-top: 1px solid var(--akte-rule);
+  margin-top: 32px;
+  padding-top: 36px;
+}
+.akte-sec-num {
+  font-family: var(--akte-serif);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--akte-vermillion);
+}
+.akte-sec-kicker {
+  font-family: var(--akte-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--akte-ink-mid);
+  margin-top: 8px;
+  max-width: 110px;
+  line-height: 1.5;
+}
+.akte-sec-body { min-width: 0; }
+.akte-sec-title {
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -0.024em;
+  color: var(--akte-ink);
+  margin: 0 0 18px;
+}
+.akte-sec-lead {
+  font-family: var(--akte-serif);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--akte-ink-soft);
+  max-width: 780px;
+  margin: 0 0 18px;
+}
+
+/* prose body */
+.akte-prose { font-family: var(--akte-serif); color: var(--akte-ink); max-width: 840px; }
+.akte-prose p { font-size: 19px; line-height: 1.6; margin: 0 0 14px; }
+.akte-prose p:last-child { margin-bottom: 0; }
+.akte-prose ul, .akte-prose ol { margin: 0 0 14px; padding-left: 22px; }
+.akte-prose li { font-size: 18px; line-height: 1.55; margin-bottom: 6px; }
+.akte-prose h3 { font-family: var(--akte-serif); font-size: 22px; font-weight: 700; letter-spacing: -0.01em; margin: 20px 0 8px; color: var(--akte-ink); }
+.akte-prose strong, .akte-prose b { font-weight: 700; color: var(--akte-ink); }
+.akte-prose em, .akte-prose i { font-style: italic; }
+.akte-prose a { color: var(--akte-ocean); text-decoration: underline; text-underline-offset: 2px; }
+.akte-prose code { font-family: var(--akte-mono); font-size: 0.85em; background: var(--akte-paper-alt); padding: 1px 5px; }
+.akte-prose-drop > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 0.82;
+  padding-right: 10px;
+  padding-top: 6px;
+  color: var(--akte-vermillion);
+}
+
+/* §02 — fit table */
+.akte-fit { border: 1px solid var(--akte-ink); }
+.akte-fit-row { display: grid; grid-template-columns: 42px 1fr 1.4fr; }
+.akte-fit-row + .akte-fit-row { border-top: 1px solid var(--akte-rule); }
+.akte-fit-row:nth-child(even) { background: var(--akte-paper-alt); }
+.akte-fit-mark {
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--akte-serif); font-size: 22px; padding: 14px 0;
+}
+.akte-fit-mark.is-ok { color: var(--akte-green); }
+.akte-fit-mark.is-no { color: var(--akte-vermillion); }
+.akte-fit-who {
+  padding: 14px 18px; font-family: var(--akte-serif); font-weight: 700;
+  font-size: 18px; color: var(--akte-ink); border-left: 1px solid var(--akte-rule-hi);
+}
+.akte-fit-note {
+  padding: 14px 18px; font-family: var(--akte-serif); font-size: 16px;
+  color: var(--akte-ink-soft); line-height: 1.45; border-left: 1px solid var(--akte-rule-hi);
+}
+
+/* §03 — cases grid */
+.akte-cases {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: var(--akte-rule); border: 1px solid var(--akte-ink);
+}
+.akte-case { background: var(--akte-paper); padding: 18px 22px; }
+.akte-case-head { display: flex; gap: 10px; align-items: baseline; }
+.akte-case-num { font-family: var(--akte-mono); font-size: 11px; font-weight: 700; color: var(--akte-vermillion); }
+.akte-case-title { font-family: var(--akte-serif); font-weight: 700; font-size: 21px; line-height: 1.2; color: var(--akte-ink); }
+.akte-case-blurb { font-family: var(--akte-serif); font-size: 16px; color: var(--akte-ink-soft); line-height: 1.45; margin: 6px 0 0; }
+
+/* §04 — features table */
+.akte-feat-head {
+  display: grid; grid-template-columns: 180px 1fr; gap: 16px;
+  border-bottom: 2px solid var(--akte-ink); padding: 10px 0;
+  font-family: var(--akte-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.16em; color: var(--akte-ink-mid);
+}
+.akte-feat-row {
+  display: grid; grid-template-columns: 180px 1fr; gap: 16px;
+  border-bottom: 1px solid var(--akte-rule); padding: 14px 0;
+}
+.akte-feat-name { font-family: var(--akte-serif); font-weight: 700; font-size: 18px; color: var(--akte-ink); }
+.akte-feat-mean { font-family: var(--akte-serif); font-size: 17px; color: var(--akte-ink-soft); line-height: 1.5; }
+
+/* §05 — Bilanz (pros & cons) */
+.akte-bilanz { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--akte-ink); }
+.akte-bilanz-col { padding: 22px 26px; }
+.akte-bilanz-pro { background: var(--akte-paper); border-right: 1px solid var(--akte-ink); }
+.akte-bilanz-con { background: var(--akte-paper-alt); }
+.akte-bilanz-head {
+  font-family: var(--akte-mono); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+}
+.akte-bilanz-pro .akte-bilanz-head { color: var(--akte-green); }
+.akte-bilanz-con .akte-bilanz-head { color: var(--akte-vermillion); }
+.akte-bilanz-col ul { list-style: none; margin: 14px 0 0; padding: 0; }
+.akte-bilanz-col li {
+  font-family: var(--akte-serif); font-size: 17px; line-height: 1.55;
+  margin-bottom: 10px; padding-left: 22px; position: relative; color: var(--akte-ink);
+}
+.akte-bilanz-col li:last-child { margin-bottom: 0; }
+.akte-bilanz-pro li::before { content: "✔"; position: absolute; left: 0; color: var(--akte-green); }
+.akte-bilanz-con li::before { content: "✕"; position: absolute; left: 0; color: var(--akte-vermillion); }
+
+/* §07 — Closing blockquote */
+.akte-closing {
+  margin: 0; padding: 26px 32px; background: var(--akte-parchment);
+  border-left: 6px solid var(--akte-vermillion);
+  border-top: 1px solid var(--akte-rule-hi);
+  border-right: 1px solid var(--akte-rule-hi);
+  border-bottom: 1px solid var(--akte-rule-hi);
+}
+.akte-closing p {
+  font-family: var(--akte-serif); font-style: italic; font-size: 26px;
+  line-height: 1.4; letter-spacing: -0.005em; color: var(--akte-ink); margin: 0;
+}
+.akte-closing-attr {
+  font-family: var(--akte-mono); font-size: 11px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--akte-ink-mid); margin-top: 18px;
+}
+
+/* §08 — FAQ */
+.akte-faq { border-top: 2px solid var(--akte-ink); }
+.akte-faq-row {
+  display: grid; grid-template-columns: 48px 1fr;
+  border-bottom: 1px solid var(--akte-rule); padding: 20px 0; align-items: flex-start;
+}
+.akte-faq-num { font-family: var(--akte-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: var(--akte-vermillion); padding-top: 4px; }
+.akte-faq-q { font-family: var(--akte-serif); font-weight: 700; font-size: 22px; line-height: 1.3; letter-spacing: -0.01em; color: var(--akte-ink); margin: 0 0 8px; }
+.akte-faq-a { font-family: var(--akte-serif); font-size: 17px; line-height: 1.55; color: var(--akte-ink-soft); max-width: 820px; margin: 0; }
+
+/* Verdikt stamp */
+.akte-verdict-wrap { padding-top: 40px; }
+.akte-verdict {
+  position: relative; background: var(--akte-parchment); border: 2px solid var(--akte-ink);
+  padding: 28px 34px; display: grid; grid-template-columns: 92px 1fr 240px;
+  gap: 28px; align-items: center;
+}
+.akte-verdict-tab {
+  position: absolute; top: -14px; left: 18px; padding: 3px 10px;
+  background: var(--akte-paper); border: 2px solid var(--akte-ink);
+  font-family: var(--akte-mono); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--akte-ink);
+}
+.akte-verdict-glyph { font-family: var(--akte-mono); font-size: 88px; line-height: 0.9; text-align: center; letter-spacing: -0.04em; }
+.akte-verdict-label { font-family: var(--akte-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.akte-verdict-head { font-family: var(--akte-serif); font-weight: 700; font-size: 34px; line-height: 1.1; letter-spacing: -0.018em; color: var(--akte-ink); margin: 6px 0 0; }
+.akte-verdict-nuance { font-family: var(--akte-serif); font-style: italic; font-size: 17px; color: var(--akte-ink-soft); margin-top: 10px; }
+.akte-verdict-trust { padding: 14px 16px; background: var(--akte-paper); border: 1px solid var(--akte-rule-hi); font-family: var(--akte-mono); font-size: 11px; line-height: 1.7; }
+.akte-verdict-trust-title { color: var(--akte-vermillion); font-weight: 700; letter-spacing: 0.14em; margin-bottom: 8px; }
+.akte-trust-bars { display: flex; gap: 3px; margin-bottom: 6px; }
+.akte-trust-bar { width: 22px; height: 11px; border: 1px solid var(--akte-ink); }
+.akte-trust-bar.is-on { background: var(--akte-ink); }
+
+/* Schlussbild */
+.akte-schlussbild { border-top: 1px solid var(--akte-rule); margin-top: 32px; padding-top: 36px; }
+.akte-schlussbild-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 14px; }
+.akte-schlussbild-kicker { font-family: var(--akte-mono); font-size: 11px; font-weight: 700; color: var(--akte-vermillion); text-transform: uppercase; letter-spacing: 0.1em; }
+.akte-schlussbild-title { font-family: var(--akte-serif); font-style: italic; font-weight: 900; font-size: 28px; line-height: 1; letter-spacing: -0.022em; color: var(--akte-ink); margin-top: 8px; }
+.akte-schlussbild-meta { font-family: var(--akte-mono); font-size: 10px; color: var(--akte-ink-mid); letter-spacing: 0.08em; white-space: nowrap; padding-bottom: 4px; }
+.akte-schlussbild-slot { width: 100%; aspect-ratio: 4 / 3; background: var(--akte-parchment); border: 1px solid var(--akte-ink); overflow: hidden; }
+.akte-schlussbild-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.akte-schlussbild-cap { display: grid; grid-template-columns: 1fr auto; align-items: baseline; margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--akte-rule); gap: 16px; }
+.akte-schlussbild-cap-text { font-family: var(--akte-serif); font-style: italic; font-size: 14px; line-height: 1.5; color: var(--akte-ink-soft); }
+.akte-schlussbild-cap-fig { font-family: var(--akte-mono); font-size: 10px; color: var(--akte-vermillion); text-transform: uppercase; margin-right: 10px; font-style: normal; }
+.akte-schlussbild-cap-meta { font-family: var(--akte-mono); font-size: 10px; color: var(--akte-ink-mid); white-space: nowrap; }
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .akte-verdict { grid-template-columns: 72px 1fr; }
+  .akte-verdict-trust { grid-column: 1 / -1; margin-top: 4px; }
+  .akte-verdict-glyph { font-size: 64px; }
+}
+@media (max-width: 767px) {
+  .akte-sec { grid-template-columns: 1fr; gap: 14px; margin-top: 28px; padding-top: 28px; }
+  .akte-sec-marg { display: flex; align-items: baseline; gap: 12px; }
+  .akte-sec-num { font-size: 38px; }
+  .akte-sec-kicker { max-width: none; margin-top: 0; }
+  .akte-cases, .akte-bilanz { grid-template-columns: 1fr; }
+  .akte-bilanz-pro { border-right: none; border-bottom: 1px solid var(--akte-ink); }
+  .akte-feat-head { display: none; }
+  .akte-feat-row { grid-template-columns: 1fr; gap: 4px; }
+  .akte-fit-row { grid-template-columns: 32px 1fr; }
+  .akte-fit-mark { grid-row: 1 / span 2; align-items: flex-start; padding-top: 14px; }
+  .akte-fit-who { border-left: none; padding: 14px 16px 0; }
+  .akte-fit-note { border-left: none; padding: 4px 16px 14px; }
+  .akte-verdict { grid-template-columns: 1fr; gap: 16px; }
+  .akte-verdict-glyph { text-align: left; }
+  .akte-faq-row { grid-template-columns: 38px 1fr; }
+  .akte-closing p { font-size: 20px; }
+  .akte-prose-drop > p:first-of-type::first-letter { font-size: 60px; }
+  .akte-schlussbild-cap { grid-template-columns: 1fr; gap: 6px; }
+}
