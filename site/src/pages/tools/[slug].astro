@@ -590,35 +590,8 @@ const softwareApplicationSchema = {
   </div>
 
   <!-- Article Content -->
-  <article class="card article">
-  <div class="article-body">
-    {target_provider_url && (
-      <div class="tool-primary-link">
-        {logoUrl ? (
-          <a class="tool-primary-link-logo" href={target_provider_url} target="_blank" rel="noopener noreferrer" title="Zum Anbieter">
-            <img src={logoUrl} alt={`${title} logo`} loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-          </a>
-        ) : null}
-        <div class="tool-primary-link-text">
-          <span class="tool-primary-link-kicker">Direktlink</span>
-          <a
-            class="tool-primary-link-anchor"
-            href={target_provider_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            title={providerCtaLabel}
-          >
-            {providerCtaLabel}
-          </a>
-          <p class="tool-primary-link-note">Offizielle Website</p>
-        </div>
-      </div>
-    )}
-    {!target_provider_url && logoUrl ? (
-      <span class="tool-float-logo">
-        <img src={logoUrl} alt="" loading="lazy" data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined} />
-      </span>
-    ) : null}
+  <article class="card article akte-article">
+  <div class="article-body akte-article-body">
     {!isCuratedTool ? (
       <blockquote class="tool-disclosure">
         Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.
@@ -706,141 +679,30 @@ const softwareApplicationSchema = {
 </BaseLayout>
 
 <style>
-  .tool-primary-link {
-    margin: 0 0 1.75rem;
-    padding: 1.1rem 1.25rem;
-    border-radius: 0;
-    border: 1px solid var(--line);
-    background: var(--bg-3);
-    display: flex;
-    align-items: center;
-    gap: 1.1rem;
-  }
-
-  .tool-primary-link-logo {
-    flex-shrink: 0;
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    overflow: hidden;
-    background: var(--surface-container-low);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0,0,0,0.07);
-    text-decoration: none;
-  }
-
-  .tool-primary-link-logo img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    display: block;
-  }
-
-  .tool-primary-link-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  .tool-primary-link-kicker {
-    display: block;
-    font-size: 0.78rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--secondary);
-  }
-
-  .tool-primary-link-anchor {
-    color: var(--accent);
-    font-size: 1.08rem;
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 1.2;
-  }
-
-  .tool-primary-link-anchor:hover {
-    text-decoration: none;
-    opacity: 0.8;
-  }
-
-  .tool-primary-link-note {
-    margin: 0;
-    font-size: 0.94rem;
-    color: var(--secondary);
-    line-height: 1.3;
-  }
-
-  .inline-provider-link {
-    margin: 1.5rem 0;
-  }
-
-  .inline-provider-link p {
-    margin: 0;
-  }
-
-  .inline-provider-link-sub {
-    margin-top: 0.35rem;
-    color: var(--secondary);
-    font-size: 0.95rem;
-  }
-
-  .tool-category-link {
-    margin-top: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
+  /* editorial-note used under the masthead — kept here so it inherits
+     the Astro-scoped data attribute and does not need a global rule. */
   .editorial-note {
     margin: 14px 0 0;
-    color: var(--secondary);
-    font-size: 0.96rem;
+    font-family: var(--mono);
+    color: var(--fg-3);
+    font-size: 0.78rem;
     line-height: 1.6;
+    letter-spacing: 0.04em;
   }
 
   .editorial-note a {
-    color: var(--primary);
-    text-decoration: underline;
-    text-decoration-color: rgba(23, 98, 89, 0.28);
-    text-underline-offset: 2px;
-  }
-
-  .tool-disclosure {
-    margin: 0 0 1.5rem;
-    padding: 1rem 1.2rem;
-    border-left: 3px solid var(--primary);
-    background: var(--surface-container-low);
-    color: var(--secondary);
-    line-height: 1.65;
-  }
-
-  .tool-disclosure a {
-    color: var(--primary);
-    text-decoration: underline;
-    text-decoration-color: rgba(23, 98, 89, 0.28);
-    text-underline-offset: 2px;
-  }
-
-  .category-label {
-    color: var(--secondary);
-    margin-right: 8px;
-  }
-
-  .category-link-anchor {
     color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
-  .category-link-anchor:hover {
-    text-decoration: none;
-  }
-
+  /* Alternativen grid (3-column on desktop, see SPEC § 4.11). */
   .alt-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
   }
   @media (min-width: 700px) {
     .alt-grid {
