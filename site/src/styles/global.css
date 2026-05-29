@@ -4777,3 +4777,354 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
     grid-row: 1;
   }
 }
+
+/* =====================================================
+   TOOL-AKTE — editorial dossier masthead + Faktenblatt
+   Scoped under .tool-akte so the rest of the site is untouched.
+   Spec: handoff/claude-code-design/SPEC_TOOL_AKTE.md
+   ===================================================== */
+
+.tool-akte {
+  --akte-serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --akte-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --akte-vermillion: #c5251c;
+  --akte-parchment: #e8e3d2;
+  --akte-ink: var(--fg);
+  --akte-ink-soft: var(--fg-2);
+  --akte-ink-mid: var(--fg-3);
+  --akte-rule: var(--line);
+  --akte-rule-hi: var(--line-2);
+  --akte-paper: var(--bg);
+  --akte-paper-alt: var(--bg-3);
+}
+
+:root[data-theme="dark"] .tool-akte {
+  --akte-vermillion: #e5675e;
+  --akte-parchment: #1f211a;
+}
+
+.akte-crumb {
+  margin: 18px 0 0;
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--akte-ink-mid);
+  line-height: 1.6;
+}
+
+.akte-crumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.akte-crumb a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.akte-crumb .akte-crumb-sep {
+  margin: 0 10px;
+  color: var(--akte-rule-hi);
+}
+
+.akte-crumb .akte-crumb-current {
+  color: var(--akte-ink);
+  font-weight: 600;
+}
+
+.akte-mast {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 56px;
+  padding: 28px 0 36px;
+  border-bottom: 1px solid var(--akte-rule);
+  align-items: start;
+}
+
+.akte-mast-body {
+  min-width: 0;
+}
+
+.akte-mast-kicker {
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--akte-vermillion);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.akte-mast-h1 {
+  font-family: var(--akte-serif);
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(56px, 9vw, 128px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  margin: 18px 0 16px;
+  color: var(--akte-ink);
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.akte-mast-h1 .akte-mast-dot {
+  color: var(--akte-vermillion);
+  font-style: normal;
+}
+
+.akte-mast-oneliner {
+  font-family: var(--akte-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.35;
+  color: var(--akte-ink-soft);
+  max-width: 640px;
+  margin: 0;
+}
+
+.akte-chips {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.akte-chip {
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  padding: 5px 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.akte-chip-category {
+  background: var(--akte-ink);
+  color: var(--akte-paper);
+}
+
+.akte-chip-price {
+  background: transparent;
+  color: var(--akte-ink);
+  border: 1px solid var(--akte-ink);
+}
+
+.akte-chip-tag {
+  background: transparent;
+  color: var(--akte-ink-soft);
+  border: 1px solid var(--akte-rule-hi);
+  border-radius: 99px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.akte-chip-tag:hover {
+  color: var(--akte-ink);
+  border-color: var(--akte-ink);
+}
+
+.akte-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.akte-action {
+  padding: 14px 22px;
+  font-family: var(--akte-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--akte-ink);
+  white-space: nowrap;
+  transition: background var(--transition), color var(--transition);
+}
+
+.akte-action-primary {
+  background: var(--akte-ink);
+  color: var(--akte-paper);
+}
+
+.akte-action-primary:hover {
+  background: #1a1a16;
+}
+
+.akte-action-ghost {
+  background: transparent;
+  color: var(--akte-ink);
+}
+
+.akte-action-ghost:hover {
+  background: var(--akte-ink);
+  color: var(--akte-paper);
+}
+
+.akte-action:focus-visible {
+  outline: 2px solid var(--akte-vermillion);
+  outline-offset: 2px;
+}
+
+.akte-faktenblatt {
+  position: relative;
+  background: var(--akte-parchment);
+  border: 1px solid var(--akte-ink);
+  padding: 22px 24px 18px;
+  align-self: start;
+  font-family: var(--akte-mono);
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--akte-ink-soft);
+}
+
+.akte-faktenblatt-tab {
+  position: absolute;
+  top: -12px;
+  left: 18px;
+  padding: 3px 10px;
+  background: var(--akte-paper);
+  border: 1px solid var(--akte-ink);
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--akte-ink);
+}
+
+.akte-faktenblatt-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.akte-monogram {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--akte-ink);
+  color: var(--akte-paper);
+  font-family: var(--akte-serif);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.akte-monogram img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--akte-paper);
+}
+
+.akte-faktenblatt-vendor {
+  min-width: 0;
+}
+
+.akte-faktenblatt-vendor-name {
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--akte-ink);
+  letter-spacing: -0.01em;
+}
+
+.akte-faktenblatt-vendor-domain {
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  color: var(--akte-ink-mid);
+  margin-top: 2px;
+  word-break: break-all;
+}
+
+.akte-faktenblatt-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dotted var(--akte-rule-hi);
+  padding: 2px 0;
+}
+
+.akte-faktenblatt-row .akte-faktenblatt-key {
+  color: var(--akte-ink-mid);
+}
+
+.akte-faktenblatt-row .akte-faktenblatt-val {
+  color: var(--akte-ink);
+  text-align: right;
+}
+
+.akte-faktenblatt-row.is-paid .akte-faktenblatt-val {
+  color: var(--akte-vermillion);
+  font-weight: 600;
+}
+
+.akte-faktenblatt-divider {
+  height: 1px;
+  background: var(--akte-rule-hi);
+  margin: 16px 0;
+  border: 0;
+}
+
+.akte-faktenblatt-foot {
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--akte-ink-soft);
+}
+
+.akte-faktenblatt-foot > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.akte-faktenblatt-foot .akte-faktenblatt-key {
+  color: var(--akte-ink-mid);
+}
+
+@media (max-width: 1023px) {
+  .akte-mast {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .akte-mast {
+    padding: 18px 0 24px;
+    gap: 24px;
+  }
+
+  .akte-mast-h1 {
+    margin: 12px 0 12px;
+  }
+
+  .akte-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .akte-action {
+    text-align: center;
+  }
+}
+
