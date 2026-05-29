@@ -2686,6 +2686,68 @@ html[data-design="decision"]:has(.ds-template) main.container {
   text-transform: uppercase;
 }
 
+.ds-masthead-ki {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: flex-end;
+  gap: 32px;
+  padding: 28px 56px 24px;
+  border-bottom: 3px double var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.ds-masthead-ki-main {
+  text-align: center;
+}
+
+.ds-masthead-ki-main span {
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(3.5rem, 6vw, 5.25rem);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.ds-masthead-ki-main span em {
+  font-style: inherit;
+  color: var(--vermillion);
+}
+
+.ds-masthead-ki-main p {
+  margin: 10px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.ds-masthead-ki-side-right {
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .ds-masthead-ki {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px 20px 18px;
+  }
+
+  .ds-masthead-ki-side,
+  .ds-masthead-ki-side-right {
+    display: none;
+  }
+
+  .ds-masthead-ki-main span {
+    font-size: 3rem;
+  }
+}
+
 .ds-front {
   display: grid;
   grid-template-columns: 1.45fr 1fr;
@@ -3365,10 +3427,6 @@ html[data-design="decision"] .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-html[data-design="decision"]:has(.ds-template) .decision-masthead {
-  display: none;
 }
 
 @media (max-width: 720px) {

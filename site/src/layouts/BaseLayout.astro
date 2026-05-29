@@ -409,7 +409,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         </div>
       </nav>
 
-      {isDecisionHome && (
+      {!isDecisionHome && (
         <div class="decision-masthead" aria-hidden="true">
           <div class="decision-masthead-side">
             {decisionIssueLine}<br />
@@ -417,7 +417,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             {decisionEdited}
           </div>
           <div class="decision-masthead-main">
-            <span>KI-Blatt<em>.</em></span>
+            <span>{decisionMastheadTitleText}<em>.</em></span>
             <p>{decisionDeck}</p>
           </div>
           <div class="decision-masthead-side decision-masthead-side-right">
