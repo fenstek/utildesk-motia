@@ -604,75 +604,61 @@ const softwareApplicationSchema = {
   </div>
 </article>
 
-  <!-- Alternatives — rendered after article, using exact /tools card markup -->
+  <!-- Verwandte Akten / Alternatives — editorial dossier card grid -->
   {alternativesTop.length > 0 && (
-    <section>
-      <h2 class="alternatives-title">Alternativen</h2>
-      <div class="alt-grid">
-        {alternativesTop.map((tool) => (
-          <a
-            href={`/tools/${tool.slug}/`}
-            class="card tool-card"
-          >
-            <div class="tool-header">
-              <div class="tool-image">
-                {tool.iconUrl ? (
-                  <span class="tool-card-logo">
-                    <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
-                  </span>
-                ) : tool.fallbackIcon === "ai" ? (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                ) : tool.fallbackIcon === "automation" ? (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                ) : tool.fallbackIcon === "design" ? (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                ) : (
-                  <span class="tool-card-logo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                      <path
-                        d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
-                )}
+    <section class="akte-alts tool-akte" aria-label="Verwandte Akten">
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">↳ Verwandte Akten</div>
+          <h2 class="akte-alts-title">
+            Vergleichbare Werkzeuge<span class="akte-mast-dot">.</span>
+          </h2>
+        </div>
+        <a class="akte-alts-all" href="/tools/">↳ alle Akten</a>
+      </div>
+      <div class="akte-alts-grid">
+        {alternativesTop.map((tool, i) => {
+          const altMonogram = (tool.title || "·")
+            .replace(/[^A-Za-zÄÖÜäöü]/g, "")
+            .charAt(0)
+            .toUpperCase() || "·";
+          return (
+            <a
+              href={`/tools/${tool.slug}/`}
+              class="akte-alt-card"
+            >
+              <div class="akte-alt-card-head">
+                <span class="akte-alt-card-kicker">
+                  Alternative {String(i + 1).padStart(2, "0")}
+                </span>
+                <span class="akte-alt-card-mono" aria-hidden="true">
+                  {tool.iconUrl ? (
+                    <img
+                      src={tool.iconUrl}
+                      alt=""
+                      loading="lazy"
+                      data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined}
+                    />
+                  ) : (
+                    altMonogram
+                  )}
+                </span>
               </div>
-              <div class="tool-info">
-                <h3 class="tool-title">{tool.title}</h3>
-                <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
+              <div class="akte-alt-card-name">
+                {tool.title}<span class="akte-mast-dot">.</span>
               </div>
-            </div>
-            <div class="tool-badges">
-              {tool.category && (
-                <span class="badge badge-category">{tool.category}</span>
-              )}
-              {tool.price_model && (
-                <span class="badge badge-price">{tool.price_model}</span>
-              )}
-            </div>
-          </a>
-        ))}
+              <p class="akte-alt-card-tone">
+                {tool.excerpt || "Kurzbeschreibung folgt."}
+              </p>
+              <div class="akte-alt-card-foot">
+                <span class="akte-alt-card-meta">
+                  {[tool.category, tool.price_model].filter(Boolean).join(" · ")}
+                </span>
+                <span class="akte-alt-card-open">Akte öffnen ↗</span>
+              </div>
+            </a>
+          );
+        })}
       </div>
     </section>
   )}
@@ -696,22 +682,5 @@ const softwareApplicationSchema = {
     text-underline-offset: 2px;
   }
 
-  /* Alternativen grid (3-column on desktop, see SPEC § 4.11). */
-  .alt-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-  }
-  @media (min-width: 700px) {
-    .alt-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .alt-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
+  /* .akte-alts-* live in global.css under the .tool-akte scope. */
 </style>

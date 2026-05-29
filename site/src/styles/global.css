@@ -5400,3 +5400,200 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
   }
 }
 
+/* ---------- Verwandte Akten (Alternativen) — SPEC § 4.11 ---------- */
+
+.akte-alts {
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 3px double var(--akte-ink);
+}
+
+.akte-alts-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--akte-ink);
+  flex-wrap: wrap;
+}
+
+.akte-alts-head-left {
+  min-width: 0;
+}
+
+.akte-alts-kicker {
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--akte-vermillion);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.akte-alts-title {
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1;
+  letter-spacing: -0.024em;
+  color: var(--akte-ink);
+  margin: 10px 0 0;
+}
+
+.akte-alts-all {
+  font-family: var(--akte-mono);
+  font-size: 12px;
+  color: var(--akte-ink);
+  text-decoration: none;
+  white-space: nowrap;
+  padding-bottom: 2px;
+}
+
+.akte-alts-all:hover {
+  color: var(--akte-vermillion);
+}
+
+.akte-alts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--akte-rule);
+  border: 1px solid var(--akte-ink);
+}
+
+@media (min-width: 700px) {
+  .akte-alts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .akte-alts-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.akte-alt-card {
+  background: var(--akte-paper);
+  padding: 22px 24px 20px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--akte-ink);
+  transition: background var(--transition);
+}
+
+.akte-alt-card:hover {
+  background: var(--akte-paper-alt);
+}
+
+.akte-alt-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.akte-alt-card-kicker {
+  font-family: var(--akte-mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--akte-ink-mid);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.akte-alt-card-mono {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--akte-ink);
+  color: var(--akte-paper);
+  font-family: var(--akte-serif);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.akte-alt-card-mono img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--akte-paper);
+}
+
+.akte-alt-card-name {
+  font-family: var(--akte-serif);
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(30px, 3.2vw, 40px);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  margin-top: 14px;
+  color: var(--akte-ink);
+  word-break: break-word;
+}
+
+.akte-alt-card-tone {
+  font-family: var(--akte-serif);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--akte-ink-soft);
+  margin: 10px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.akte-alt-card-foot {
+  margin-top: auto;
+  padding-top: 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: var(--akte-mono);
+  font-size: 11px;
+  color: var(--akte-ink-mid);
+}
+
+.akte-alt-card-meta {
+  letter-spacing: 0.02em;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.akte-alt-card-open {
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.akte-alt-card:hover .akte-alt-card-open {
+  color: var(--akte-vermillion);
+}
+
+@media (max-width: 767px) {
+  .akte-alts {
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+
+  .akte-alt-card {
+    min-height: 160px;
+    padding: 18px 18px 16px;
+  }
+}
+
