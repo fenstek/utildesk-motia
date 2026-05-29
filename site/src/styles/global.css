@@ -5128,3 +5128,275 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
   }
 }
 
+/* ---------- Akte article body — editorial typography ---------- */
+
+.akte-article {
+  margin-top: 32px;
+  padding: 36px 0 0;
+  border-top: 1px solid var(--akte-rule);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.akte-article-body {
+  font-family: var(--akte-serif);
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--akte-ink);
+  max-width: 840px;
+}
+
+.akte-article-body p {
+  font-family: var(--akte-serif);
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--akte-ink);
+  margin: 0 0 14px;
+}
+
+.akte-article-body p:first-of-type::first-letter {
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 0.85;
+  float: left;
+  padding: 6px 10px 0 0;
+  color: var(--akte-vermillion);
+}
+
+.akte-article-body h2 {
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -0.024em;
+  color: var(--akte-ink);
+  margin: 40px 0 18px;
+  padding-top: 36px;
+  border-top: 1px solid var(--akte-rule);
+}
+
+.akte-article-body h2::before {
+  content: "§ ";
+  color: var(--akte-vermillion);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.akte-article-body h2:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.akte-article-body h3 {
+  font-family: var(--akte-serif);
+  font-weight: 700;
+  font-size: clamp(22px, 2.2vw, 26px);
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+  color: var(--akte-ink);
+  margin: 28px 0 12px;
+}
+
+.akte-article-body h4 {
+  font-family: var(--akte-mono);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--akte-ink-mid);
+  margin: 22px 0 8px;
+}
+
+.akte-article-body ul,
+.akte-article-body ol {
+  font-family: var(--akte-serif);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--akte-ink);
+  padding-left: 22px;
+  margin: 4px 0 18px;
+}
+
+.akte-article-body li {
+  margin-bottom: 8px;
+}
+
+.akte-article-body li > p {
+  margin: 0 0 6px;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.akte-article-body strong,
+.akte-article-body b {
+  font-weight: 700;
+  color: var(--akte-ink);
+}
+
+.akte-article-body em,
+.akte-article-body i {
+  font-style: italic;
+}
+
+.akte-article-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(0,0,0,0.18);
+  transition: text-decoration-color var(--transition), color var(--transition);
+}
+
+.akte-article-body a:hover {
+  text-decoration-color: var(--accent);
+}
+
+.akte-article-body blockquote {
+  margin: 22px 0;
+  padding: 22px 28px;
+  background: var(--akte-parchment);
+  border-left: 6px solid var(--akte-vermillion);
+  font-family: var(--akte-serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--akte-ink);
+}
+
+.akte-article-body blockquote p {
+  margin: 0 0 10px;
+  font-style: italic;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.akte-article-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.akte-article-body hr {
+  border: 0;
+  border-top: 1px solid var(--akte-rule);
+  margin: 32px 0;
+}
+
+.akte-article-body code {
+  font-family: var(--akte-mono);
+  font-size: 0.92em;
+  background: var(--akte-paper-alt);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.akte-article-body pre {
+  font-family: var(--akte-mono);
+  font-size: 13px;
+  line-height: 1.55;
+  background: var(--akte-paper-alt);
+  border: 1px solid var(--akte-rule);
+  padding: 16px 18px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.akte-article-body pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.akte-article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--akte-serif);
+  font-size: 16px;
+  margin: 22px 0;
+  border: 1px solid var(--akte-ink);
+}
+
+.akte-article-body th,
+.akte-article-body td {
+  padding: 12px 16px;
+  text-align: left;
+  border-top: 1px solid var(--akte-rule);
+  vertical-align: top;
+}
+
+.akte-article-body th {
+  font-family: var(--akte-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--akte-ink-mid);
+  background: var(--akte-paper-alt);
+  border-top: 0;
+  border-bottom: 2px solid var(--akte-ink);
+}
+
+.akte-article-body img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--akte-rule);
+  margin: 18px 0;
+}
+
+/* Provider link injected by ensureInlineProviderLink — styled as an editorial pull */
+.akte-article-body .inline-provider-link {
+  margin: 22px 0;
+  padding: 16px 20px;
+  background: var(--akte-parchment);
+  border: 1px solid var(--akte-ink);
+  font-family: var(--akte-serif);
+  font-size: 17px;
+}
+
+.akte-article-body .inline-provider-link p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.akte-article-body .inline-provider-link-emoji {
+  margin-right: 4px;
+}
+
+.akte-article-body .tool-disclosure {
+  margin: 0 0 22px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--akte-vermillion);
+  background: var(--akte-parchment);
+  font-family: var(--akte-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--akte-ink-soft);
+}
+
+@media (max-width: 767px) {
+  .akte-article {
+    padding-top: 28px;
+    margin-top: 24px;
+  }
+
+  .akte-article-body {
+    font-size: 17px;
+  }
+
+  .akte-article-body p {
+    font-size: 17px;
+  }
+
+  .akte-article-body p:first-of-type::first-letter {
+    font-size: 56px;
+    padding: 4px 8px 0 0;
+  }
+
+  .akte-article-body blockquote {
+    padding: 18px 20px;
+    font-size: 18px;
+  }
+}
+
