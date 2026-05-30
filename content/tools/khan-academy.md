@@ -1,6 +1,11 @@
 ---
 slug: khan-academy
 title: Khan Academy
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Kostenlos
 tags: [education, elearning, learning]
@@ -31,11 +36,11 @@ Die Plattform ist ideal für alle, die eine flexible, kostenlose und qualitativ 
 - **Übergaben im Team:** Khan Academy kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Khan Academy weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Khan Academy beginnt die Prüfung beim Lernziel: Welche Aufgabe soll klarer werden, welches Feedback bekommen Lernende, und wer pflegt die Inhalte? Wir würden eine konkrete Übung mit Zielgruppe und Testdurchlauf bewerten.
 
-Praktisch ist Khan Academy vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Khan Academy passt, wenn Lernpfade wiederholbar und Materialien nachvollziehbar bleiben. Für einmalige oder stark individuelle Schulungen braucht es weiterhin fachliche Begleitung.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/khan-academy-editorial.webp" alt="Illustration zu Khan Academy: Lernkarten, Uebungen und Fortschrittspfad strukturieren selbststaendiges Lernen" loading="lazy" decoding="async" />
@@ -71,59 +76,3 @@ Praktisch ist Khan Academy vor allem, wenn es vorhandene Abläufe entlastet, sta
 - Die Qualität der Übersetzungen kann je nach Sprache variieren.
 - Keine direkte Zertifizierung oder anerkannte Abschlüsse.
 - Abhängigkeit von Internetzugang für die meisten Funktionen (außer Offline-Downloads).
-
-## Workflow-Fit
-
-Khan Academy passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Khan Academy nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Khan Academy landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Khan Academy außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Khan Academy.
-
-## Redaktionelle Einschätzung
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Khan Academy wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Khan Academy ist grundsätzlich **kostenlos** nutzbar. Alle Hauptfunktionen und Lerninhalte stehen ohne Gebühren zur Verfügung. Es gibt keine Premium-Version oder kostenpflichtige Zusatzangebote. Die Finanzierung erfolgt überwiegend durch Spenden und Fördermittel.
-
-## Alternativen zu Khan Academy
-
-- **Coursera:** Online-Kurse von Universitäten mit Zertifikaten, meist kostenpflichtig oder im Abonnement.
-- **edX:** Plattform für akademische Online-Kurse mit kostenfreien und kostenpflichtigen Angeboten.
-- **Duolingo:** Speziell für Sprachlernende, bietet gamifizierte Übungen kostenlos an.
-- **Udemy:** Breite Auswahl an Kursen zu vielen Themen, meist kostenpflichtig.
-- **Codecademy:** Fokus auf Programmieren und IT, mit kostenfreien und Premium-Inhalten.
-
-## FAQ
-
-**1. Ist Khan Academy wirklich kostenlos?**  
-Ja, alle Lerninhalte und Funktionen sind kostenfrei zugänglich, ohne versteckte Kosten.
-
-**2. Welche Fächer werden bei Khan Academy abgedeckt?**  
-Die Plattform bietet Inhalte zu Mathematik, Naturwissenschaften, Wirtschaft, Geschichte, Kunst und mehr.
-
-**3. Brauche ich einen Account, um Khan Academy zu nutzen?**  
-Ein Account ist empfehlenswert, um Lernfortschritte zu speichern und personalisierte Empfehlungen zu erhalten, ist aber nicht zwingend erforderlich.
-
-**4. Gibt es eine mobile App für Khan Academy?**  
-Ja, Khan Academy bietet Apps für iOS und Android für flexibles Lernen unterwegs.
-
-**5. Kann ich Khan Academy auch offline nutzen?**  
-Ja, bestimmte Inhalte können heruntergeladen und offline genutzt werden, abhängig von der Plattform.
-
-**6. Unterstützt Khan Academy Lehrkräfte?**  
-Ja, Lehrkräfte können Lernfortschritte überwachen und individuelle Lernpläne für Schüler erstellen.
-
-**7. Sind die Inhalte für alle Altersgruppen geeignet?**  
-Die Inhalte sind vor allem für Schüler und Studenten ausgelegt, eignen sich aber auch für Erwachsene und lebenslang Lernende.
-
-**8. Gibt es interaktive Elemente auf der Plattform?**  
-Ja, es gibt Übungen, Quizze und adaptive Lernpfade, die das Lernen aktiv unterstützen.
-
----

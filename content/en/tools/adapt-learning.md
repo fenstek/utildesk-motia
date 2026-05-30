@@ -1,6 +1,11 @@
 ---
 slug: adapt-learning
 title: Adapt Learning
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Open Source
 tags:
@@ -102,26 +107,26 @@ Adapt Learning is an open-source platform and can be used for free. There are no
 
 ## FAQ
 
-**1. Is Adapt Learning suitable for beginners?**  
+**1. Is Adapt Learning suitable for beginners?**
 Adapt Learning is primarily aimed at users with a technical background or developers who are willing to learn the platform. For absolute beginners, the learning curve can be steep.
 
-**2. What technical requirements are there?**  
+**2. What technical requirements are there?**
 A web server that supports Node.js is required to run it. Basic knowledge of web development is helpful for installation and customization.
 
-**3. Can I integrate Adapt Learning into my existing LMS?**  
+**3. Can I integrate Adapt Learning into my existing LMS?**
 Yes, Adapt Learning supports common standards such as SCORM and xAPI, which enable integration with many learning management systems.
 
-**4. What about support?**  
+**4. What about support?**
 As this is an open-source solution, community support is primarily available. Professional service providers optionally offer paid support.
 
-**5. Are there ready-made templates or themes?**  
+**5. Are there ready-made templates or themes?**
 There are some free templates created by the community, but the selection is limited compared to commercial products.
 
-**6. Can I make my content multilingual?**  
+**6. Can I make my content multilingual?**
 Yes, Adapt Learning supports multilingual content and makes it possible to create courses in different languages.
 
-**7. Which media formats are supported?**  
+**7. Which media formats are supported?**
 The tool supports embedding videos, audio, images, text, and interactive elements in common formats.
 
-**8. Is Adapt Learning suitable for companies?**  
+**8. Is Adapt Learning suitable for companies?**
 Yes, especially for companies with internal development resources that need customized and flexible learning solutions.

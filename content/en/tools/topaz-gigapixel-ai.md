@@ -1,6 +1,11 @@
 ---
 slug: topaz-gigapixel-ai
 title: Topaz Gigapixel AI
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Paid
 tags:
@@ -98,26 +103,26 @@ Topaz Gigapixel AI is typically offered as a paid one-time purchase or as part o
 
 ## FAQ
 
-**1. What is Topaz Gigapixel AI?**  
+**1. What is Topaz Gigapixel AI?**
 Topaz Gigapixel AI is software for AI-powered image enlargement and enhancement that reconstructs details and preserves image quality.
 
-**2. How much can I enlarge an image with Topaz Gigapixel AI?**  
+**2. How much can I enlarge an image with Topaz Gigapixel AI?**
 The software allows enlargements of up to 600% of the original size, depending on the settings and the source image.
 
-**3. Do I need special hardware to use it?**  
+**3. Do I need special hardware to use it?**
 For optimal performance, a powerful graphics card is recommended, but the software also runs on moderate systems.
 
-**4. Is there a free trial version?**  
+**4. Is there a free trial version?**
 Depending on the provider, Topaz Labs often offers a time-limited trial version so you can test the software before buying.
 
-**5. Can I use Topaz Gigapixel AI in Photoshop?**  
+**5. Can I use Topaz Gigapixel AI in Photoshop?**
 Yes, the software can be integrated as a plugin in Photoshop to perform upscaling directly in the image editor.
 
-**6. Which file formats are supported?**  
+**6. Which file formats are supported?**
 Topaz Gigapixel AI supports common image formats such as JPEG, PNG, TIFF, BMP, and others.
 
-**7. Is the tool only suitable for photographers?**  
+**7. Is the tool only suitable for photographers?**
 No, it is suitable for anyone who needs high-quality image enlargements, such as designers, print shops, or content creators.
 
-**8. How does Topaz Gigapixel AI differ from conventional upscaling methods?**  
+**8. How does Topaz Gigapixel AI differ from conventional upscaling methods?**
 The AI technology analyzes and reconstructs image details, which means image quality is preserved significantly better during enlargement than with classic methods.

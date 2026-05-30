@@ -1,6 +1,11 @@
 ---
 slug: convertkit
 title: ConvertKit
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -94,28 +99,28 @@ When comparing options, ConvertKit should not only be measured against very simi
 
 ## FAQ
 
-**1. Is ConvertKit free to use?**  
+**1. Is ConvertKit free to use?**
 Yes, ConvertKit offers a free basic version with limited features, ideal for getting started and for smaller lists.
 
-**2. What automation features does ConvertKit offer?**  
+**2. What automation features does ConvertKit offer?**
 ConvertKit allows creating automated workflows that automatically segment and target subscribers based on their behavior and tags.
 
-**3. Can I connect ConvertKit with my website?**  
+**3. Can I connect ConvertKit with my website?**
 Yes, ConvertKit can be connected to many platforms through integrations with WordPress, Shopify, and Zapier.
 
-**4. How does the tagging system work?**  
+**4. How does the tagging system work?**
 Tags help group subscribers by interests or actions to send personalized emails.
 
-**5. Is there a mobile app for ConvertKit?**  
+**5. Is there a mobile app for ConvertKit?**
 ConvertKit does not have a standalone mobile app, but it is accessible through mobile browsers.
 
-**6. What payment options are available?**  
+**6. What payment options are available?**
 Payments are typically made monthly or annually via credit card or other common payment methods.
 
-**7. Can I easily import subscribers?**  
+**7. Can I easily import subscribers?**
 Yes, ConvertKit supports importing subscribers from CSV files and other formats.
 
-**8. How secure are my data with ConvertKit?**  
+**8. How secure are my data with ConvertKit?**
 ConvertKit prioritizes data protection and uses industry-standard security measures for data encryption and protection.
 
 ---

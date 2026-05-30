@@ -1,6 +1,11 @@
 ---
 slug: italki
 title: italki
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Usage-based
 tags:
@@ -16,6 +21,11 @@ translation: full
 
 italki is an online platform that connects language learners with qualified teachers from all over the world. Through italki, users can book individually tailored language lessons designed to meet their specific needs and goals. The platform operates as a marketplace for language teachers of various languages and allows for flexible, location-independent learning via video chat.
 
+## Editorial assessment
+
+With italki, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+
+We would test italki in one small, real scenario first: one real weekly routine with meetings, reminders, handovers and a short review. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
 ## Who is italki suitable for?
 
 italki is aimed at anyone who wants to learn a new language or improve their existing language skills—regardless of their level. italki is especially suitable for:
@@ -76,26 +86,26 @@ There are no monthly subscriptions or hidden fees. Payment is made directly thro
 
 ## FAQ
 
-**1. Do I need prior knowledge to use italki?**  
+**1. Do I need prior knowledge to use italki?**
 No, italki is suitable for all language levels—from absolute beginners to advanced learners.
 
-**2. How do I find the right teacher?**  
+**2. How do I find the right teacher?**
 You can filter by language, price, availability, and ratings to find a teacher that fits your learning goals.
 
-**3. How do I pay for lessons?**  
+**3. How do I pay for lessons?**
 Payment is made in advance through the platform via credit card, PayPal, or other payment methods, depending on the provider.
 
-**4. Can I get a free trial lesson?**  
+**4. Can I get a free trial lesson?**
 Many teachers offer trial lessons at reduced prices, but free lessons are rare.
 
-**5. Is there a minimum contract period?**  
+**5. Is there a minimum contract period?**
 No, italki has no minimum commitments—you only book the lessons you need.
 
-**6. How does the lesson work technically?**  
+**6. How does the lesson work technically?**
 Lessons take place via italki's platform using video chat. A stable internet connection is important.
 
-**7. Can I cancel or reschedule lessons?**  
+**7. Can I cancel or reschedule lessons?**
 Yes, cancellation and rescheduling policies depend on the individual teacher and are available before booking.
 
-**8. Is there an italki app?**  
+**8. Is there an italki app?**
 Yes, italki offers a mobile app for iOS and Android, enabling learning on the go.

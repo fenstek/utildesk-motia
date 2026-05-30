@@ -1,6 +1,11 @@
 ---
 slug: botpress
 title: Botpress
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -113,26 +118,26 @@ The exact prices and conditions depend on the chosen plan and individual require
 
 ## FAQ
 
-**1. Is Botpress really free to use?**  
+**1. Is Botpress really free to use?**
 Yes, the Community Edition of Botpress is open-source and free to use. For enhanced features and support, there are paid Enterprise plans.
 
-**2. Which programming languages are used for Botpress?**  
+**2. Which programming languages are used for Botpress?**
 Botpress primarily uses JavaScript and Node.js, allowing for flexible customization and extension.
 
-**3. Can I host Botpress myself?**  
+**3. Can I host Botpress myself?**
 Yes, Botpress can be hosted both on-premises and in the cloud, depending on requirements and resources.
 
-**4. Does Botpress support multiple languages?**  
+**4. Does Botpress support multiple languages?**
 Yes, Botpress supports multiple languages and enables the creation of multilingual chatbots.
 
-**5. How difficult is it for non-programmers to use?**  
+**5. How difficult is it for non-programmers to use?**
 The visual flow-builder simplifies creating chatbot dialogues, although some technical knowledge is helpful for more complex customizations.
 
-**6. What integrations are possible?**  
+**6. What integrations are possible?**
 Botpress supports integrations with popular messengers, APIs, and databases. Additional integrations can be achieved through plugins or custom development.
 
-**7. Is there support from Botpress?**  
+**7. Is there support from Botpress?**
 Support is included in the Enterprise Edition. The Community Edition has an active community and comprehensive documentation.
 
-**8. How secure is the use of Botpress?**  
+**8. How secure is the use of Botpress?**
 Security depends on hosting and configuration. On-premises deployment provides full control over data and security measures.

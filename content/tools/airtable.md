@@ -1,6 +1,11 @@
 ---
 slug: airtable
 title: Airtable
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Automatisierung"
 price_model: Freemium
 tags: ["data", "automation"]
@@ -97,28 +102,28 @@ Alternativen zu Airtable sollten nach dem konkreten Arbeitsproblem ausgewählt w
 
 ## FAQ
 
-**1. Ist Airtable für Einsteiger geeignet?**  
+**1. Ist Airtable für Einsteiger geeignet?**
 Ja, Airtable bietet eine benutzerfreundliche Oberfläche und viele Vorlagen, die den Einstieg erleichtern. Für komplexe Funktionen kann jedoch eine Einarbeitung nötig sein.
 
-**2. Welche AI-Funktionen bietet Airtable?**  
+**2. Welche AI-Funktionen bietet Airtable?**
 Je nach Plan können AI-gestützte Features wie automatische Datenanalyse, Texterstellung oder intelligente Automatisierungen verfügbar sein. Details variieren je nach Anbieter.
 
-**3. Kann ich Airtable offline nutzen?**  
+**3. Kann ich Airtable offline nutzen?**
 Die Offline-Unterstützung ist begrenzt. Für eine optimale Nutzung ist eine Internetverbindung empfehlenswert.
 
-**4. Wie sicher sind meine Daten in Airtable?**  
+**4. Wie sicher sind meine Daten in Airtable?**
 Airtable nutzt gängige Sicherheitsstandards und Verschlüsselung für gespeicherte und übertragene Daten. Für spezifische Sicherheitsanforderungen empfiehlt sich die Prüfung der Datenschutzbestimmungen.
 
-**5. Gibt es eine mobile App?**  
+**5. Gibt es eine mobile App?**
 Ja, Airtable bietet Apps für iOS und Android, die den Zugriff und die Bearbeitung von Daten unterwegs ermöglichen.
 
-**6. Kann ich Airtable in andere Tools integrieren?**  
+**6. Kann ich Airtable in andere Tools integrieren?**
 Ja, Airtable unterstützt zahlreiche Integrationen über native Verknüpfungen und Plattformen wie Zapier oder Integromat.
 
-**7. Wie sieht das Preismodell aus?**  
+**7. Wie sieht das Preismodell aus?**
 Airtable bietet ein Freemium-Modell mit kostenlosen Grundfunktionen und mehrere kostenpflichtige Pläne mit erweiterten Features und mehr Speicher.
 
-**8. Eignet sich Airtable für große Unternehmen?**  
+**8. Eignet sich Airtable für große Unternehmen?**
 Ja, Airtable wird auch von größeren Teams genutzt, allerdings sollte die Skalierbarkeit je nach Anforderungen geprüft werden.
 
 **9. Wie sollte ein Team Airtable testen?**

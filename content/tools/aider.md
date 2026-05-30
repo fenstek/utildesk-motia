@@ -1,6 +1,11 @@
 ---
 slug: aider
 title: Aider
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Je nach Plan
 tags: [ai, coding, cli, developer]
@@ -89,28 +94,28 @@ Alternativen zu Aider sollten nach dem konkreten Arbeitsproblem ausgewählt werd
 
 ## FAQ
 
-**1. Was ist Aider genau?**  
+**1. Was ist Aider genau?**
 Aider ist ein KI-gestütztes Tool für Entwickler, das über die Kommandozeile Code generiert, analysiert und optimiert.
 
-**2. Welche Programmiersprachen werden unterstützt?**  
+**2. Welche Programmiersprachen werden unterstützt?**
 Aider unterstützt je nach Implementierung mehrere gängige Programmiersprachen, darunter Python, JavaScript, Java, und mehr.
 
-**3. Benötige ich spezielle Vorkenntnisse, um Aider zu nutzen?**  
+**3. Benötige ich spezielle Vorkenntnisse, um Aider zu nutzen?**
 Grundlegende Kenntnisse im Umgang mit der Kommandozeile sind hilfreich, um Aider effektiv einzusetzen.
 
-**4. Gibt es eine kostenlose Version von Aider?**  
+**4. Gibt es eine kostenlose Version von Aider?**
 Viele Anbieter bieten kostenlose Einstiegsversionen mit eingeschränktem Funktionsumfang an, ideal zum Testen.
 
-**5. Wie verbessert Aider die Codequalität?**  
+**5. Wie verbessert Aider die Codequalität?**
 Durch automatische Analyse und Vorschläge zur Fehlerbehebung trägt Aider zur besseren Wartbarkeit und Qualität des Codes bei.
 
-**6. Kann Aider in bestehende Workflows integriert werden?**  
+**6. Kann Aider in bestehende Workflows integriert werden?**
 Ja, dank der CLI-Integration lässt sich Aider gut in vorhandene Entwicklungsprozesse einbinden.
 
-**7. Ist Aider für Teams geeignet?**  
+**7. Ist Aider für Teams geeignet?**
 Ja, Aider unterstützt kollaborative Funktionen und erleichtert die Zusammenarbeit an Codeprojekten.
 
-**8. Wo finde ich weitere Informationen und Support?**  
+**8. Wo finde ich weitere Informationen und Support?**
 Weitere Details und Hilfestellungen finden sich in der Regel auf der Webseite des jeweiligen Anbieters.
 
 **9. Wie sollte ein Team Aider testen?**

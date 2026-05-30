@@ -1,8 +1,13 @@
 ---
 slug: allennlp
 title: AllenNLP
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Coding
-price_model: 
+price_model:
 tags: [coding, developer-tools, data, analytics, education]
 official_url: "https://allenai.github.io/allennlp-website/"
 popularity: 69

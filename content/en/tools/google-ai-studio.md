@@ -1,6 +1,11 @@
 ---
 slug: google-ai-studio
 title: Google AI Studio
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Freemium
 tags:
@@ -87,4 +92,3 @@ Google AI Studio should have a narrow job in the workflow: input, quality check,
 ## Editorial Assessment
 
 Editorial view: Google AI Studio is worth testing when the use case is specific and success can be measured. A broad search for automation is too vague. Good for exploration, but production use needs versioning, tests and clear model limits. That boundary should be discussed before a wider rollout, not after the workflow is already dependent on it.
-

@@ -1,6 +1,11 @@
 ---
 slug: google-what-if-tool
 title: Google What-If Tool
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: "Kostenlos"
 tags: ["data", "analytics", "developer-tools", "education", "chatbot"]
@@ -46,7 +51,7 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - Darstellung von Gegenbeispielen und Einflussfaktoren auf Vorhersagen
 - Export von Analyseergebnissen für Berichte und weitere Auswertungen
 
-- **Praxis-Workflow:** Google What-If Tool sollte anhand eines echten Servicefalls mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Google What-If Tool sollte der erste Test mit eine kleine Änderung in einem echten Projekt mit Review, Testlauf und Rollback-Pfad laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Im Betrieb braucht Google What-If Tool klare Notizen dazu, wie Antwortzeit, Übergabequalität und Kundenzufriedenheit bewertet und bei Problemen nachgebessert werden.
 - **Team-Übergabe:** Nützlich wird Google What-If Tool besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -90,28 +95,28 @@ Beim Vergleich lohnt es sich, Google What-If Tool nicht nur gegen sehr ähnliche
 
 ## FAQ
 
-**1. Brauche ich Programmierkenntnisse, um das Google What-If Tool zu nutzen?**  
+**1. Brauche ich Programmierkenntnisse, um das Google What-If Tool zu nutzen?**
 Grundsätzlich ist das Tool so gestaltet, dass es auch ohne tiefgehende Programmierkenntnisse bedient werden kann, besonders in der webbasierten Version. Für erweiterte Funktionen und Integration in eigene Projekte sind jedoch Grundkenntnisse in Python und TensorFlow hilfreich.
 
-**2. Mit welchen ML-Modellen ist das Tool kompatibel?**  
+**2. Mit welchen ML-Modellen ist das Tool kompatibel?**
 Das Tool unterstützt vor allem TensorFlow-Modelle und Modelle, die in kompatiblen Formaten vorliegen. Die genaue Kompatibilität hängt vom jeweiligen Anwendungsfall ab.
 
-**3. Kann ich das Tool lokal oder nur online verwenden?**  
+**3. Kann ich das Tool lokal oder nur online verwenden?**
 Das Google What-If Tool lässt sich sowohl online über TensorBoard als auch lokal in Jupyter Notebooks verwenden.
 
-**4. Welche Datenformate werden unterstützt?**  
+**4. Welche Datenformate werden unterstützt?**
 Das Tool arbeitet in der Regel mit tabellarischen Daten, wobei verschiedene Formate importiert werden können, solange sie in das Tool eingebunden werden können.
 
-**5. Ist das Tool für kommerzielle Zwecke geeignet?**  
+**5. Ist das Tool für kommerzielle Zwecke geeignet?**
 Ja, das Tool kann kostenlos für kommerzielle und nicht-kommerzielle Projekte genutzt werden.
 
-**6. Wie hilft das Tool bei der Fairness-Analyse?**  
+**6. Wie hilft das Tool bei der Fairness-Analyse?**
 Es ermöglicht die Segmentierung von Daten nach bestimmten Merkmalen, um Vorhersageunterschiede zwischen Gruppen sichtbar zu machen und potenzielle Verzerrungen zu erkennen.
 
-**7. Gibt es eine Möglichkeit, die Ergebnisse zu exportieren?**  
+**7. Gibt es eine Möglichkeit, die Ergebnisse zu exportieren?**
 Ja, Analyseergebnisse können exportiert und für Berichte oder weitere Analysen genutzt werden.
 
-**8. Welche Unterstützung gibt es für Anfänger?**  
+**8. Welche Unterstützung gibt es für Anfänger?**
 Google stellt Dokumentationen und Tutorials bereit, die den Einstieg erleichtern und die Funktionalitäten des Tools erklären.
 
 **9. Wie testet man Google What-If Tool sinnvoll im Team?**

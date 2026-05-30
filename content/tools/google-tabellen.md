@@ -1,6 +1,11 @@
 ---
 slug: google-tabellen
 title: Google Tabellen
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Infrastructure
 price_model: Freemium
 tags: ["spreadsheet", "data", "productivity"]
@@ -86,26 +91,26 @@ Google Tabellen ist in der Basisversion kostenlos nutzbar. Für Unternehmen und 
 
 ## FAQ
 
-**1. Ist Google Tabellen kostenlos?**  
+**1. Ist Google Tabellen kostenlos?**
 Ja, Google Tabellen ist in der Basisversion kostenlos nutzbar. Für erweiterte Funktionen stehen kostenpflichtige Google Workspace-Pläne zur Verfügung.
 
-**2. Kann ich Google Tabellen offline verwenden?**  
+**2. Kann ich Google Tabellen offline verwenden?**
 Ja, Google Tabellen bietet einen Offline-Modus, mit dem Sie Tabellen auch ohne Internetverbindung bearbeiten können. Die Änderungen werden synchronisiert, sobald Sie wieder online sind.
 
-**3. Wie sicher sind meine Daten in Google Tabellen?**  
+**3. Wie sicher sind meine Daten in Google Tabellen?**
 Google verwendet umfangreiche Sicherheitsmaßnahmen zum Schutz der Daten. Dennoch sollten sensible Informationen mit Vorsicht in der Cloud gespeichert werden.
 
-**4. Kann ich Google Tabellen mit anderen Programmen verbinden?**  
+**4. Kann ich Google Tabellen mit anderen Programmen verbinden?**
 Ja, Google Tabellen lässt sich mit vielen Google-Diensten und Drittanbieter-Tools integrieren. Zudem können Add-ons und Skripte die Funktionalität erweitern.
 
-**5. Wie viele Nutzer können gleichzeitig an einer Tabelle arbeiten?**  
+**5. Wie viele Nutzer können gleichzeitig an einer Tabelle arbeiten?**
 Mehrere Nutzer können gleichzeitig in Echtzeit an einer Tabelle arbeiten. Die genaue Anzahl hängt von der Komplexität der Tabelle und der Internetverbindung ab.
 
-**6. Welche Dateiformate unterstützt Google Tabellen?**  
+**6. Welche Dateiformate unterstützt Google Tabellen?**
 Google Tabellen unterstützt den Import und Export von Formaten wie XLSX, CSV, ODS, PDF und mehr.
 
-**7. Gibt es mobile Apps für Google Tabellen?**  
+**7. Gibt es mobile Apps für Google Tabellen?**
 Ja, Google Tabellen ist als App für Android und iOS verfügbar und ermöglicht die Bearbeitung unterwegs.
 
-**8. Kann ich Formeln und Funktionen in Google Tabellen verwenden?**  
+**8. Kann ich Formeln und Funktionen in Google Tabellen verwenden?**
 Ja, Google Tabellen bietet eine breite Palette an Formeln und Funktionen, die auch durch KI-gestützte Vorschläge ergänzt werden.

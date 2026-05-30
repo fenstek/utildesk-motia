@@ -1,5 +1,10 @@
 ---
 title: Customers.ai (formerly MobileMonkey)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 slug: mobilemonkey
 category: AI
 price_model: Freemium

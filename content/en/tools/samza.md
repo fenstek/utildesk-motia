@@ -1,6 +1,11 @@
 ---
 slug: samza
 title: Samza
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -104,28 +109,28 @@ Samza is an open-source project and is available free of charge. There are no di
 
 ## FAQ
 
-**1. What is Apache Samza?**  
+**1. What is Apache Samza?**
 Apache Samza is an open-source framework for real-time data stream processing, especially suited for scalable and fault-tolerant applications.
 
-**2. Which programming languages does Samza support?**  
+**2. Which programming languages does Samza support?**
 Samza primarily supports Java and Scala as programming languages for developing streaming applications.
 
-**3. Is Samza free to use?**  
+**3. Is Samza free to use?**
 Yes, Samza is open source and can be used free of charge. However, costs may arise from infrastructure and operations.
 
-**4. How does Samza differ from Apache Flink?**  
+**4. How does Samza differ from Apache Flink?**
 Both are stream-processing frameworks, but Flink offers more extensive features for batch and stream processing, while Samza focuses more strongly on Kafka integration and YARN clusters.
 
-**5. What infrastructure do you need for Samza?**  
+**5. What infrastructure do you need for Samza?**
 Samza is typically run in distributed environments, often in combination with Apache Kafka and Apache Hadoop YARN for resource management.
 
-**6. Can Samza perform stateful processing?**  
+**6. Can Samza perform stateful processing?**
 Yes, Samza supports stateful processing with local state management and checkpointing.
 
-**7. How does Samza scale as data volume grows?**  
+**7. How does Samza scale as data volume grows?**
 Samza adapts to increasing data volumes through automatic resource scaling and stream partitioning.
 
-**8. Is commercial support available for Samza?**  
+**8. Is commercial support available for Samza?**
 Yes, various providers offer commercial support and consulting for Samza, usually as part of custom quotes.
 
 ---

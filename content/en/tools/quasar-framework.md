@@ -1,6 +1,11 @@
 ---
 slug: quasar-framework
 title: Quasar Framework
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -98,28 +103,28 @@ A comparison for Quasar Framework should go beyond feature lists. The key questi
 
 ## FAQ
 
-**1. Is Quasar Framework really free?**  
+**1. Is Quasar Framework really free?**
 Yes, Quasar is an open-source framework and can be used free of charge.
 
-**2. Which programming language is used for development with Quasar?**  
+**2. Which programming language is used for development with Quasar?**
 Quasar is based on Vue.js, which is written in JavaScript. Knowledge of JavaScript and Vue is therefore helpful.
 
-**3. Can I create native mobile apps with Quasar?**  
+**3. Can I create native mobile apps with Quasar?**
 Yes, Quasar supports the development of mobile apps for iOS and Android, including through Cordova or Capacitor.
 
-**4. Is Quasar suitable for beginners?**  
+**4. Is Quasar suitable for beginners?**
 Basic knowledge of web development and Vue.js is recommended, but the extensive documentation makes it easier to get started.
 
-**5. Which platforms does Quasar support?**  
+**5. Which platforms does Quasar support?**
 Web, iOS, Android, and desktop (via Electron).
 
-**6. Is there a large community or support?**  
+**6. Is there a large community or support?**
 Yes, Quasar has an active community, forums, and extensive documentation.
 
-**7. How does theming work in Quasar?**  
+**7. How does theming work in Quasar?**
 Quasar offers flexible theming through CSS variables and SCSS, making it easy to adjust colors and styles.
 
-**8. How does Quasar update with new Vue versions?**  
+**8. How does Quasar update with new Vue versions?**
 The framework is maintained and updated regularly to stay compatible with Vue.js updates.
 
 **9. How should a team test Quasar Framework?**

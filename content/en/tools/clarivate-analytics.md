@@ -1,6 +1,11 @@
 ---
 slug: "clarivate-analytics"
 title: "Clarivate Analytics (Web of Science)"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Developer"
 tags: [research, search, analytics, data]
 description: "Clarivate Analytics, including Web of Science, helps researchers and organisations search publications, track citations and analyse research impact."

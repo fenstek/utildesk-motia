@@ -1,6 +1,11 @@
 ---
 slug: nuance-dragon
 title: Nuance Dragon
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Paid, Subscription'
 tags:
@@ -101,26 +106,26 @@ Nuance Dragon is offered in different versions that vary in features and price. 
 
 ## FAQ
 
-**1. How accurate is Nuance Dragon's speech recognition?**  
+**1. How accurate is Nuance Dragon's speech recognition?**
 Accuracy is usually above 90% depending on the environment and customization, but it can be improved further through individual training.
 
-**2. Which languages does Nuance Dragon support?**  
+**2. Which languages does Nuance Dragon support?**
 Supported languages vary by version and plan. English, German, French, and other widely used languages are mainly available.
 
-**3. Can I use Nuance Dragon offline?**  
+**3. Can I use Nuance Dragon offline?**
 Yes, some versions allow local processing without an internet connection, which increases privacy and security.
 
-**4. Is Nuance Dragon suitable for private or professional use?**  
+**4. Is Nuance Dragon suitable for private or professional use?**
 Both. There are versions for private users as well as specially adapted editions for professional users such as doctors or lawyers.
 
-**5. How does the software training work?**  
+**5. How does the software training work?**
 The software learns through the user's corrections and adjustments to improve recognition accuracy for an individual voice.
 
-**6. What system requirements does Nuance Dragon have?**  
+**6. What system requirements does Nuance Dragon have?**
 The requirements depend on the version, but usually include current Windows or Mac operating systems and sufficient storage space.
 
-**7. Is there a free trial version?**  
+**7. Is there a free trial version?**
 Depending on the provider, free trial versions or demo versions may be available so you can test the features before buying.
 
-**8. How secure is my data when using Nuance Dragon?**  
+**8. How secure is my data when using Nuance Dragon?**
 With locally installed versions, your data remains on your device. Cloud-based variants are subject to the privacy policies of the respective provider.

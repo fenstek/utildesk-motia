@@ -1,6 +1,11 @@
 ---
 slug: corel-paintshop-pro
 title: Corel PaintShop Pro
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: One-time purchase
 tags:
@@ -91,13 +96,13 @@ When comparing options, Corel PaintShop Pro should not only be measured against 
 
 ## FAQ
 
-**Is PaintShop Pro a Photoshop replacement?**  
+**Is PaintShop Pro a Photoshop replacement?**
 For many hobby and small-business tasks, yes. For complex professional workflows, Photoshop may still be stronger.
 
-**Does it require a subscription?**  
+**Does it require a subscription?**
 No. PaintShop Pro is known for its one-time purchase model.
 
-**Is it available on macOS?**  
+**Is it available on macOS?**
 PaintShop Pro is primarily a Windows application.
 
 **9. How should a team test Corel PaintShop Pro?**

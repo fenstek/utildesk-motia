@@ -1,6 +1,11 @@
 ---
 slug: lens-org
 title: Lens.org
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -99,28 +104,28 @@ Alternatives to Lens.org should be chosen by the concrete work problem. In some 
 
 ## FAQ
 
-**1. Is Lens.org free to use?**  
+**1. Is Lens.org free to use?**
 Yes, Lens.org offers a free basic version with many features. Paid plans are available for more advanced use.
 
-**2. What data sources does Lens.org cover?**  
+**2. What data sources does Lens.org cover?**
 Lens.org includes patents worldwide as well as scholarly publications from various databases.
 
-**3. Can I export patents?**  
+**3. Can I export patents?**
 Yes, the platform allows data to be exported in various formats for further analysis.
 
-**4. Is there an API for integration into my own systems?**  
+**4. Is there an API for integration into my own systems?**
 Lens.org provides an API, and its scope and availability may vary depending on the plan.
 
-**5. How current is the patent data?**  
+**5. How current is the patent data?**
 The data is updated regularly to ensure the most current information base possible.
 
-**6. Can I manage teams in Lens.org?**  
+**6. Can I manage teams in Lens.org?**
 Yes, Lens.org supports team features, although these are limited in the basic version.
 
-**7. How does AI-supported analysis work?**  
+**7. How does AI-supported analysis work?**
 The platform uses AI to automatically detect trends, patterns, and innovation gaps in patent data.
 
-**8. Which languages are supported?**  
+**8. Which languages are supported?**
 The platform is mainly available in English, and some features may be multilingual.
 
 **9. How should a team test Lens.org?**

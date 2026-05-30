@@ -1,6 +1,11 @@
 ---
 slug: code-org
 title: Code.org
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Free
 tags:
@@ -16,6 +21,11 @@ translation: full
 
 Code.org is a free online platform specializing in teaching programming skills. It is especially geared towards children and teenagers but also provides resources for teachers and developers. Through interactive courses, playful exercises, and easy-to-understand tutorials, Code.org makes learning programming accessible and entertaining.
 
+## Editorial assessment
+
+With Code.org, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+
+We would test Code.org in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
 ## Who is Code.org suitable for?
 
 Code.org is ideal for beginners of all ages, especially children and teenagers taking their first steps in programming. Schools and teachers can use the platform to design and support computer science lessons. Parents wanting to introduce coding to their children will also find valuable materials here. Experienced developers will find fewer advanced contents but can use Code.org to explain concepts simply or assist younger learners.
@@ -63,26 +73,26 @@ Code.org is entirely **free** to use. There are no paid add-ons or subscriptions
 
 ## FAQ
 
-**1. Is Code.org really free?**  
+**1. Is Code.org really free?**
 Yes, all courses and materials on Code.org are accessible for free.
 
-**2. What age groups is Code.org suitable for?**  
+**2. What age groups is Code.org suitable for?**
 The platform primarily targets children and teenagers from about 4 years old up to secondary school but can also be used by adults.
 
-**3. Do you need prior knowledge to use Code.org?**  
+**3. Do you need prior knowledge to use Code.org?**
 No, Code.org is designed specifically for beginners and requires no previous programming knowledge.
 
-**4. Which programming languages are taught?**  
+**4. Which programming languages are taught?**
 Code.org offers block-based programming and introduces text languages like JavaScript and Python.
 
-**5. Can Code.org be used in classrooms?**  
+**5. Can Code.org be used in classrooms?**
 Yes, Code.org provides extensive resources for teachers and supports computer science education in schools.
 
-**6. Is software installation required?**  
+**6. Is software installation required?**
 No, all courses run directly in the browser without additional installation.
 
-**7. Is there a community or support?**  
+**7. Is there a community or support?**
 Yes, there are forums and help pages enabling user interaction and support.
 
-**8. Is Code.org suitable for advanced programmers?**  
+**8. Is Code.org suitable for advanced programmers?**
 The platform is primarily aimed at beginners; advanced users should consider supplementary tools.

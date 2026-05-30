@@ -1,6 +1,11 @@
 ---
 slug: microsoft-copilot
 title: Microsoft Copilot
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Writing"
 price_model: Freemium
 tags: ["writing"]
@@ -109,26 +114,26 @@ Microsoft Copilot ist aktuell als Freemium-Modell verfügbar. Die Grundfunktione
 - **Zoho Zia:** KI-Assistent für Zoho-Apps mit Fokus auf Automatisierung und Datenanalyse
 ## FAQ
 
-**1. Benötige ich ein spezielles Microsoft 365 Abo, um Microsoft Copilot zu nutzen?**  
+**1. Benötige ich ein spezielles Microsoft 365 Abo, um Microsoft Copilot zu nutzen?**
 Die Verfügbarkeit von Microsoft Copilot hängt vom jeweiligen Microsoft 365 Plan ab. Einige Funktionen sind nur in bestimmten Business- oder Enterprise-Plänen enthalten.
 
-**2. Wie sicher sind meine Daten bei der Nutzung von Microsoft Copilot?**  
+**2. Wie sicher sind meine Daten bei der Nutzung von Microsoft Copilot?**
 Microsoft setzt hohe Sicherheitsstandards ein. Dennoch sollten sensible Daten mit Bedacht verwendet werden, da die KI cloudbasiert arbeitet.
 
-**3. Kann ich Microsoft Copilot auch offline nutzen?**  
+**3. Kann ich Microsoft Copilot auch offline nutzen?**
 Nein, die KI-Funktionen von Copilot erfordern eine Internetverbindung, da sie auf cloudbasierte Modelle zugreifen.
 
-**4. Unterstützt Microsoft Copilot auch andere Sprachen als Deutsch?**  
+**4. Unterstützt Microsoft Copilot auch andere Sprachen als Deutsch?**
 Ja, Copilot unterstützt mehrere Sprachen, allerdings variiert die Funktionalität je nach Sprache und Region.
 
-**5. Wie genau sind die von Microsoft Copilot generierten Inhalte?**  
+**5. Wie genau sind die von Microsoft Copilot generierten Inhalte?**
 Die KI liefert hilfreiche Vorschläge, die jedoch von Nutzern überprüft und gegebenenfalls angepasst werden sollten, um Fehler zu vermeiden.
 
-**6. Kann Microsoft Copilot in individuellen Anwendungen integriert werden?**  
+**6. Kann Microsoft Copilot in individuellen Anwendungen integriert werden?**
 Derzeit ist Copilot vor allem in Microsoft 365 Anwendungen integriert, die Integration in andere Systeme ist je nach Microsoft-Angebot möglich.
 
-**7. Gibt es eine Testversion für Microsoft Copilot?**  
+**7. Gibt es eine Testversion für Microsoft Copilot?**
 Je nach Microsoft 365 Plan können Nutzer bestimmte Funktionen von Copilot kostenlos testen oder nutzen.
 
-**8. Wie unterscheidet sich Microsoft Copilot von anderen KI-Tools?**  
+**8. Wie unterscheidet sich Microsoft Copilot von anderen KI-Tools?**
 Copilot ist speziell auf die Integration und Optimierung der Microsoft 365 Suite ausgelegt und bietet so eine nahtlose Nutzererfahrung innerhalb dieser Umgebung.

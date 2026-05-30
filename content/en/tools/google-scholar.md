@@ -1,6 +1,11 @@
 ---
 slug: google-scholar
 title: Google Scholar
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -95,28 +100,28 @@ A useful comparison for Google Scholar starts with the goal. Only then does it b
 
 ## FAQ
 
-**1. Is Google Scholar really free?**  
+**1. Is Google Scholar really free?**
 Yes, using Google Scholar is free. However, access to some full texts may require a separate license or subscription.
 
-**2. How current are the search results in Google Scholar?**  
+**2. How current are the search results in Google Scholar?**
 Timeliness varies by source. Google Scholar updates its data regularly, but there may be delays in indexing new publications.
 
-**3. Can I organize my literature management with Google Scholar?**  
+**3. Can I organize my literature management with Google Scholar?**
 Google Scholar offers basic functions for saving articles and exporting citations, but it is not a complete reference management program.
 
-**4. How reliable are citation counts in Google Scholar?**  
+**4. How reliable are citation counts in Google Scholar?**
 Citation counts provide a good overview, but automatic indexing can also include incorrect or duplicate citations.
 
-**5. Is there a way to set up notifications for new research findings?**  
+**5. Is there a way to set up notifications for new research findings?**
 Yes, Google Scholar allows you to set up alerts that notify you by email about new publications for specific search terms or authors.
 
-**6. Can I use Google Scholar without a Google account?**  
+**6. Can I use Google Scholar without a Google account?**
 Yes, searching is possible without signing in. A Google account is required for advanced features such as alerts or profile management.
 
-**7. How do I find free full texts through Google Scholar?**  
+**7. How do I find free full texts through Google Scholar?**
 Google Scholar often shows links to freely available versions of articles, for example in institutional repositories or on preprint servers.
 
-**8. Which languages does Google Scholar support?**  
+**8. Which languages does Google Scholar support?**
 The search engine supports publications in many languages and allows searching for international scholarly sources.
 
 **9. How should a team test Google Scholar?**

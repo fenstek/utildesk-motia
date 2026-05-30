@@ -1,6 +1,11 @@
 ---
 slug: nats
 title: NATS
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Open Source
 tags: [messaging, developer-tools, open-source, cloud]
@@ -80,28 +85,28 @@ NATS überzeugt durch Einfachheit und Geschwindigkeit, verlangt aber Disziplin i
 
 ## FAQ
 
-**Was ist NATS genau?**  
+**Was ist NATS genau?**
 NATS ist ein Open-Source-Messaging-System, das auf hohe Leistung, Skalierbarkeit und einfache Bedienung ausgelegt ist. Es ermöglicht die Kommunikation zwischen verteilten Anwendungen über verschiedene Messaging-Modelle.
 
-**Ist NATS kostenlos?**  
+**Ist NATS kostenlos?**
 Ja, NATS ist Open Source und kann kostenlos genutzt werden. Kosten können nur durch die Infrastruktur oder optionale kommerzielle Services entstehen.
 
-**Welche Programmiersprachen werden unterstützt?**  
+**Welche Programmiersprachen werden unterstützt?**
 NATS bietet Client-Bibliotheken für viele Sprachen, darunter Go, Java, Python, C#, JavaScript und weitere.
 
-**Wie skaliert NATS?**  
+**Wie skaliert NATS?**
 Durch Clustering und Replikation kann NATS horizontal skaliert werden, um hohe Verfügbarkeit und Lastverteilung zu gewährleisten.
 
-**Kann NATS in Cloud-Umgebungen eingesetzt werden?**  
+**Kann NATS in Cloud-Umgebungen eingesetzt werden?**
 Ja, NATS ist speziell für Cloud-native Anwendungen entwickelt und lässt sich gut in Container- und Kubernetes-Umgebungen integrieren.
 
-**Gibt es eine Benutzeroberfläche für NATS?**  
+**Gibt es eine Benutzeroberfläche für NATS?**
 NATS selbst liefert keine GUI mit, aber es existieren externe Tools und Dashboards für Monitoring und Verwaltung.
 
-**Was ist JetStream bei NATS?**  
+**Was ist JetStream bei NATS?**
 JetStream ist eine Erweiterung für persistentes Messaging und Event-Streaming mit Funktionen wie Message-Storage, Replay und At-Least-Once-Delivery.
 
-**Wie sicher ist die Kommunikation mit NATS?**  
+**Wie sicher ist die Kommunikation mit NATS?**
 NATS unterstützt TLS-Verschlüsselung sowie Authentifizierungs- und Autorisierungsmechanismen, um sichere Verbindungen zu gewährleisten.
 
 ---

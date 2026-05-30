@@ -1,6 +1,11 @@
 ---
 slug: descript
 title: Descript
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: Freemium
 tags: [ai, video]
@@ -65,58 +70,3 @@ Descript eignet sich ideal für Podcaster, Videoproduzenten, Content Creators un
 ## Was im Alltag wirklich zählt
 
 Descript wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt textbasierte Audio- und Videobearbeitung für Creator, Podcasts und Schulungsinhalte in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit Rohaufnahmen, Sprecherkorrekturen, Overdub-Grenzen und Exportwegen, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Sehr stark für redaktionelle Medienarbeit, aber finale Qualität braucht weiterhin Hörprüfung und Schnittgefühl.
-
-## Workflow-Fit
-
-Für Teams sollte Descript nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn textbasierte Audio- und Videobearbeitung für Creator, Podcasts und Schulungsinhalte häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit Rohaufnahmen, Sprecherkorrekturen, Overdub-Grenzen und Exportwegen. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
-
-## Redaktionelle Einschätzung
-
-Unsere Einschätzung: Descript ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Sehr stark für redaktionelle Medienarbeit, aber finale Qualität braucht weiterhin Hörprüfung und Schnittgefühl. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
-
-## Preise & Kosten
-
-Descript bietet ein Freemium-Modell an, das eine kostenlose Basisversion mit eingeschränkten Funktionen umfasst. Für den Einstieg ist diese Version gut geeignet, um grundlegende Audio- und Videobearbeitung durchzuführen und die automatische Transkription zu testen.
-
-Die kostenpflichtigen Pläne unterscheiden sich je nach Funktionsumfang und Nutzungsvolumen und bieten unter anderem:
-
-- Erhöhte Transkriptionsminuten pro Monat
-- Zugang zu Overdub und erweiterten KI-Funktionen
-- Kollaborations- und Teamfeatures
-- Höhere Exportqualität und zusätzliche Dateiformate
-
-Die genauen Preise variieren je nach Anbieter und gewähltem Plan. Für aktuelle Informationen empfiehlt es sich, die offizielle Webseite zu besuchen.
-
-## Alternativen zu Descript
-
-- [Adobe Premiere Pro](/tools/adobe-premiere-pro/): Professionelle Videobearbeitung mit umfangreichen Funktionen, jedoch ohne automatische Transkription.
-- [Otter.ai](/tools/otter-ai/): Spezialisierte Transkriptionssoftware mit kollaborativen Funktionen, weniger Fokus auf Videoschnitt.
-- [Camtasia](/tools/camtasia/): Screen-Recording und Videobearbeitung, gut für Tutorials, jedoch ohne KI-gestützte Transkription.
-- [Kapwing](/tools/kapwing/): Online-Videobearbeitung mit Untertitel-Generator, einfacher Workflow, aber weniger fortgeschrittene KI-Funktionen.
-- [Audacity](/tools/audacity/): Kostenlose Audioaufnahme und -bearbeitung, keine integrierte Transkription oder Video-Features.
-
-## FAQ
-
-**1. Wie genau ist die automatische Transkription von Descript?**  
-Die Genauigkeit hängt von der Audioqualität, der Sprache und dem Akzent ab. In guten Bedingungen liefert Descript meist sehr präzise Ergebnisse, die jedoch oft noch manuell nachbearbeitet werden sollten.
-
-**2. Ist Descript auch für Anfänger geeignet?**  
-Ja, die Benutzeroberfläche ist intuitiv gestaltet und ermöglicht auch Einsteigern einen schnellen Einstieg in die Audio- und Videobearbeitung.
-
-**3. Welche Sprachen werden von Descript unterstützt?**  
-Descript unterstützt mehrere Sprachen für die Transkription, die genaue Auswahl kann je nach Plan variieren.
-
-**4. Kann ich Descript im Team nutzen?**  
-Ja, Descript bietet Funktionen für die Zusammenarbeit in Echtzeit, sodass mehrere Nutzer gleichzeitig an Projekten arbeiten können.
-
-**5. Wie funktioniert die Overdub-Funktion?**  
-Overdub nutzt KI, um Stimmen zu synthetisieren. Damit lassen sich Audioinhalte nachträglich ändern oder ergänzen, ohne neu aufnehmen zu müssen.
-
-**6. Gibt es eine kostenlose Version von Descript?**  
-Ja, der Freemium-Plan bietet grundlegende Funktionen kostenfrei an, ideal zum Testen und für kleine Projekte.
-
-**7. Welche Exportformate unterstützt Descript?**  
-Descript unterstützt unter anderem MP4 für Videos sowie MP3 und WAV für Audioexport. Auch Textdateien können exportiert werden.
-
-**8. Benötige ich eine Internetverbindung, um Descript zu nutzen?**  
-Ja, Descript ist hauptsächlich webbasiert und benötigt eine stabile Internetverbindung für die meisten Funktionen.

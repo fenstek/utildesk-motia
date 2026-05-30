@@ -1,6 +1,11 @@
 ---
 slug: amazon-polly
 title: Amazon Polly
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Audio"
 price_model: "Nutzungsbasiert"
 tags: [audio, automation, api, productivity, customer-support]
@@ -90,26 +95,26 @@ Eine genaue Preisliste findet man auf der offiziellen AWS-Webseite, da die Koste
 
 ## FAQ
 
-**1. Welche Sprachen und Stimmen unterstützt Amazon Polly?**  
+**1. Welche Sprachen und Stimmen unterstützt Amazon Polly?**
 Amazon Polly unterstützt zahlreiche Sprachen und Dialekte, darunter Englisch (verschiedene Varianten), Deutsch, Spanisch, Französisch, Italienisch, Japanisch und viele weitere. Die Auswahl an Stimmen umfasst männliche und weibliche Varianten sowie neuronale Stimmen für besonders natürliche Ausgabe.
 
-**2. Wie funktioniert die Abrechnung bei Amazon Polly?**  
+**2. Wie funktioniert die Abrechnung bei Amazon Polly?**
 Die Abrechnung erfolgt basierend auf der Anzahl der Zeichen, die in Sprache umgewandelt werden. Standardstimmen sind günstiger als neuronale Stimmen. Es gibt ein kostenloses Kontingent für neue AWS-Kunden. Weitere Kosten können für Speicherung und Datenübertragung entstehen.
 
-**3. Kann Amazon Polly in eigene Anwendungen integriert werden?**  
+**3. Kann Amazon Polly in eigene Anwendungen integriert werden?**
 Ja, Amazon Polly bietet eine RESTful API, mit der Entwickler die Text-to-Speech-Funktion einfach in Web-, Mobil- oder Desktop-Anwendungen integrieren können.
 
-**4. Ist die Sprachausgabe in Echtzeit möglich?**  
+**4. Ist die Sprachausgabe in Echtzeit möglich?**
 Ja, Amazon Polly unterstützt Streaming, sodass die Sprache nahezu in Echtzeit ausgegeben werden kann, was besonders für interaktive Anwendungen wichtig ist.
 
-**5. Wie kann ich die Aussprache anpassen?**  
+**5. Wie kann ich die Aussprache anpassen?**
 Mit SSML (Speech Synthesis Markup Language) können Nutzer die Aussprache, Betonung, Pausen und Lautstärke individuell steuern, um die Sprachausgabe an die eigenen Bedürfnisse anzupassen.
 
-**6. Ist Amazon Polly für barrierefreie Anwendungen geeignet?**  
+**6. Ist Amazon Polly für barrierefreie Anwendungen geeignet?**
 Ja, Polly wird häufig eingesetzt, um digitale Inhalte für Menschen mit Sehbehinderungen zugänglicher zu machen, beispielsweise durch Vorlesen von Texten oder automatisierte Ansagen.
 
-**7. Welche Sicherheits- und Datenschutzmaßnahmen gibt es?**  
+**7. Welche Sicherheits- und Datenschutzmaßnahmen gibt es?**
 Amazon Polly nutzt die Sicherheitsstandards von AWS. Die Datenübertragung ist verschlüsselt, und Nutzer können bestimmen, wie lange Audiodaten gespeichert werden. Für sensible Daten sollten die jeweiligen Compliance-Anforderungen geprüft werden.
 
-**8. Gibt es eine kostenlose Testmöglichkeit?**  
+**8. Gibt es eine kostenlose Testmöglichkeit?**
 Ja, neue AWS-Kunden erhalten im Rahmen des Free Tier ein kostenloses Kontingent an Zeichen, die sie mit Amazon Polly umwandeln können, um den Dienst zu testen.

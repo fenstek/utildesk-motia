@@ -1,6 +1,11 @@
 ---
 slug: apple-numbers
 title: Apple Numbers
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Free
 tags: [spreadsheet, office, productivity, collaboration]
@@ -97,26 +102,26 @@ Apple Numbers ist kostenlos erhältlich und kann ohne zusätzliche Kosten auf al
 
 ## FAQ
 
-**1. Ist Apple Numbers mit Microsoft Excel kompatibel?**  
+**1. Ist Apple Numbers mit Microsoft Excel kompatibel?**
 Ja, Numbers unterstützt den Import und Export von Excel-Dateien (.xlsx), allerdings können komplexe Excel-Formeln oder Makros nicht immer vollständig übernommen werden.
 
-**2. Kann ich Apple Numbers auf Windows oder Android nutzen?**  
+**2. Kann ich Apple Numbers auf Windows oder Android nutzen?**
 Numbers ist primär für Apple-Geräte konzipiert. Über die iCloud-Webseite können Nutzer auch auf Windows oder anderen Systemen auf Numbers-Dokumente zugreifen und diese bearbeiten, jedoch mit eingeschränktem Funktionsumfang.
 
-**3. Welche Cloud-Lösung nutzt Apple Numbers für die Speicherung und Zusammenarbeit?**  
+**3. Welche Cloud-Lösung nutzt Apple Numbers für die Speicherung und Zusammenarbeit?**
 Apple Numbers verwendet iCloud, um Dokumente zu speichern und eine Echtzeit-Kollaboration zwischen mehreren Nutzern zu ermöglichen.
 
-**4. Gibt es eine mobile Version von Apple Numbers?**  
+**4. Gibt es eine mobile Version von Apple Numbers?**
 Ja, Apple Numbers ist als App für iPhone und iPad verfügbar und synchronisiert Daten über iCloud mit der macOS-Version.
 
-**5. Ist Apple Numbers für professionelle Datenanalysen geeignet?**  
+**5. Ist Apple Numbers für professionelle Datenanalysen geeignet?**
 Numbers eignet sich eher für einfache bis mittlere Tabellenkalkulationen. Für komplexe Datenanalysen und umfangreiche Funktionen sind spezialisierte Programme wie Microsoft Excel besser geeignet.
 
-**6. Können mehrere Nutzer gleichzeitig an einem Numbers-Dokument arbeiten?**  
+**6. Können mehrere Nutzer gleichzeitig an einem Numbers-Dokument arbeiten?**
 Ja, Numbers unterstützt die gemeinsame Bearbeitung in Echtzeit über iCloud, vorausgesetzt alle Nutzer verfügen über eine Apple-ID.
 
-**7. Muss ich für Apple Numbers ein Apple-Gerät besitzen?**  
+**7. Muss ich für Apple Numbers ein Apple-Gerät besitzen?**
 Um die volle Funktionalität zu nutzen, ist ein Apple-Gerät empfehlenswert. Über iCloud.com ist der Zugriff auch über andere Geräte möglich, jedoch mit eingeschränktem Funktionsumfang.
 
-**8. Welche Dateiformate unterstützt Apple Numbers?**  
+**8. Welche Dateiformate unterstützt Apple Numbers?**
 Numbers unterstützt neben dem eigenen Format auch den Import und Export von Excel-Dateien (.xlsx), CSV-Dateien und PDF-Export.

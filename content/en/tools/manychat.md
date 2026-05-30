@@ -1,6 +1,11 @@
 ---
 slug: manychat
 title: ManyChat
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -101,26 +106,26 @@ ManyChat offers a freemium model, with core features available at no cost. For a
 
 ## FAQ
 
-**1. Is ManyChat suitable for beginners?**  
+**1. Is ManyChat suitable for beginners?**
 Yes, ManyChat offers a user-friendly interface and many templates that make it easy to get started.
 
-**2. Which platforms does ManyChat work on?**  
+**2. Which platforms does ManyChat work on?**
 Primarily on Facebook Messenger, Instagram Direct, and SMS, with some extensions for additional channels.
 
-**3. Is there a free version of ManyChat?**  
+**3. Is there a free version of ManyChat?**
 Yes, ManyChat offers a free basic version with limited features and user counts.
 
-**4. How secure is using ManyChat in terms of data protection?**  
+**4. How secure is using ManyChat in terms of data protection?**
 ManyChat offers features to support compliance with data protection regulations, but responsibility for GDPR compliance lies with the user.
 
-**5. Can live chat with human agents be integrated?**  
+**5. Can live chat with human agents be integrated?**
 Yes, ManyChat enables seamless handoff of conversations to human staff.
 
-**6. Which programming languages are required to use it?**  
+**6. Which programming languages are required to use it?**
 No programming knowledge is required to create basic chatbots.
 
-**7. How can ManyChat be integrated with e-commerce platforms?**  
+**7. How can ManyChat be integrated with e-commerce platforms?**
 Many shop systems can be connected to ManyChat via plugins or APIs to automate orders and support.
 
-**8. Is support and training material available?**  
+**8. Is support and training material available?**
 ManyChat provides extensive documentation, tutorials, and community support.

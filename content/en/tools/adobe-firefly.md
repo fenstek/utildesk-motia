@@ -1,6 +1,11 @@
-﻿---
+---
 slug: adobe-firefly
 title: Adobe Firefly
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Freemium
 tags:
@@ -63,7 +68,8 @@ The tool offers a user-friendly interface that is accessible to both beginners a
 ## Pricing & Costs
 
 Adobe Firefly offers a freemium model. The basic functions are free to use, ideal for initial projects and tests. For expanded features, higher usage quotas, and professional use cases, various paid plans are available, which can vary depending on the provider and package. Details on prices and subscriptions can be found on the official Adobe website.
-n  <a href="https://firefly.adobe.com/?media=featured">Click here to visit the provider</a>
+
+n  <a href="https://firefly.adobe.com/?media=featured">Click here to visit the provider</a>
 
 ## Alternatives to Adobe Firefly
 

@@ -1,6 +1,11 @@
 ---
 slug: youtrack
 title: YouTrack
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -92,28 +97,28 @@ YouTrack is usually offered as a subscription. Pricing is based on the number of
 
 ## FAQ
 
-**1. Is YouTrack free to use?**  
+**1. Is YouTrack free to use?**
 YouTrack offers a free version with limited functionality, ideal for small teams or for trying it out. Paid subscriptions are required for advanced features and larger teams.
 
-**2. Which agile methods does YouTrack support?**  
+**2. Which agile methods does YouTrack support?**
 YouTrack supports Scrum, Kanban, and other agile frameworks through customizable boards, sprint planning, and flexible workflows.
 
-**3. Can YouTrack be integrated with other tools?**  
+**3. Can YouTrack be integrated with other tools?**
 Yes, YouTrack can be integrated with various developer tools such as GitHub, GitLab, Jenkins, and more to enable a seamless workflow.
 
-**4. Are there mobile apps for YouTrack?**  
+**4. Are there mobile apps for YouTrack?**
 Yes, YouTrack offers mobile apps for iOS and Android so users can access projects and tasks while on the go.
 
-**5. How secure is data in YouTrack?**  
+**5. How secure is data in YouTrack?**
 Security depends on the hosting model. In cloud solutions, providers usually ensure high security standards, while in self-hosted versions the responsibility lies with the user.
 
-**6. Can custom workflows be adapted in YouTrack?**  
+**6. Can custom workflows be adapted in YouTrack?**
 Yes, the workflows are fully customizable so teams can map and automate their processes individually.
 
-**7. Which languages are supported?**  
+**7. Which languages are supported?**
 YouTrack is available in several languages, including German, English, and others, to support international teams.
 
-**8. How does time tracking work in YouTrack?**  
+**8. How does time tracking work in YouTrack?**
 Users can record working time directly in issues, which can then be used for reports and analysis.
 
 ---

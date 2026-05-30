@@ -1,6 +1,11 @@
 ---
 slug: podcastle
 title: Podcastle
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Audio"
 price_model: "Je nach Plan"
 tags: [audio, transcription, content, video]
@@ -77,26 +82,26 @@ Podcastle nimmt vielen nicht-technischen Nutzern die Angst vor Audioproduktion. 
 
 ## FAQ
 
-**1. Kann ich Podcastle kostenlos testen?**  
+**1. Kann ich Podcastle kostenlos testen?**
 Ja, Podcastle bietet in der Regel eine kostenlose Version oder Testphase mit eingeschränkten Funktionen an, um die Plattform kennenzulernen.
 
-**2. Welche Sprachen unterstützt die automatische Transkription?**  
+**2. Welche Sprachen unterstützt die automatische Transkription?**
 Die unterstützten Sprachen variieren, umfassen aber meist die wichtigsten Weltsprachen. Genauere Informationen finden sich auf der Website des Anbieters.
 
-**3. Brauche ich für Podcastle spezielle Hardware?**  
+**3. Brauche ich für Podcastle spezielle Hardware?**
 Nein, Podcastle ist browserbasiert und benötigt nur ein Mikrofon und eine stabile Internetverbindung.
 
-**4. Kann ich mit Podcastle auch Videopodcasts erstellen?**  
+**4. Kann ich mit Podcastle auch Videopodcasts erstellen?**
 Ja, Podcastle unterstützt die Aufnahme und Bearbeitung von Video-Podcasts inklusive synchronisierter Untertitel.
 
-**5. Wie sicher sind meine Daten bei Podcastle?**  
+**5. Wie sicher sind meine Daten bei Podcastle?**
 Podcastle legt Wert auf Datenschutz und verwendet gängige Sicherheitsstandards. Details zur Datensicherheit sind in den Nutzungsbedingungen beschrieben.
 
-**6. Gibt es eine Möglichkeit, Gäste für Interviews einzuladen?**  
+**6. Gibt es eine Möglichkeit, Gäste für Interviews einzuladen?**
 Ja, Podcastle ermöglicht das Einladen von Gästen über einfache Links ohne zusätzliche Softwareinstallation.
 
-**7. Wie genau sind die Transkriptionen?**  
+**7. Wie genau sind die Transkriptionen?**
 Die Genauigkeit hängt von der Audioqualität und Sprache ab, ist aber durch KI-Optimierungen in der Regel hoch.
 
-**8. Kann ich meine Projekte mit anderen teilen oder gemeinsam bearbeiten?**  
+**8. Kann ich meine Projekte mit anderen teilen oder gemeinsam bearbeiten?**
 Ja, Podcastle bietet Kollaborationsfunktionen, die das gemeinsame Arbeiten an Projekten erleichtern.

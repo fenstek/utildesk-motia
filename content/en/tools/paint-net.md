@@ -1,6 +1,11 @@
 ---
 slug: paint-net
 title: Paint.NET
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -66,26 +71,26 @@ Paint.NET is generally available for free. There is an official version in the M
 
 ## FAQ
 
-**1. Is Paint.NET free?**  
+**1. Is Paint.NET free?**
 Yes, Paint.NET can be downloaded and used for free from the official website. There is also a paid version in the Microsoft Store to support the developers.
 
-**2. Which operating systems does Paint.NET run on?**  
+**2. Which operating systems does Paint.NET run on?**
 Paint.NET is available exclusively for Windows. There are no official versions for macOS or Linux.
 
-**3. Can Paint.NET edit layers?**  
+**3. Can Paint.NET edit layers?**
 Yes, Paint.NET supports working with multiple layers, which makes image editing more flexible.
 
-**4. Is there a mobile version of Paint.NET?**  
+**4. Is there a mobile version of Paint.NET?**
 No, Paint.NET is currently available only as a desktop application for Windows.
 
-**5. Can I extend Paint.NET with plugins?**  
+**5. Can I extend Paint.NET with plugins?**
 Yes, there is a wide selection of plugins that provide additional effects and features.
 
-**6. Which image formats are supported?**  
+**6. Which image formats are supported?**
 Paint.NET supports common formats such as PNG, JPEG, BMP, GIF, and TIFF.
 
-**7. Is Paint.NET suitable for professional image editing?**  
+**7. Is Paint.NET suitable for professional image editing?**
 Paint.NET is primarily suited for simple and intermediate image editing. For very complex or professional work, specialized programs such as Adobe Photoshop are better suited.
 
-**8. How often is Paint.NET updated?**  
+**8. How often is Paint.NET updated?**
 The software receives regular updates that add new features and fix bugs.

@@ -1,6 +1,11 @@
 ---
 slug: n8n
 title: n8n
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Automatisierung
 price_model: Freemium
 tags: ["automation", "workflow", "integration", "developer", "api"]
@@ -33,7 +38,7 @@ Für reine Klick-Automatisierung ohne technisches Verständnis kann Zapier oder 
 
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/n8n-editorial.webp" alt="Illustration zu n8n: Node-Bl?cke und Kabel verbinden Automatisierungen auf einer Werkbank" loading="lazy" decoding="async" />
+  <img src="/images/tools/n8n-editorial.webp" alt="Illustration zu n8n: Node-Blöcke und Kabel verbinden Automatisierungen auf einer Werkbank" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

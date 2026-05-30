@@ -1,6 +1,11 @@
 ---
 slug: when2meet
 title: When2meet
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: null
 tags:
@@ -99,28 +104,28 @@ A useful comparison for When2meet starts with the goal. Only then does it become
 
 ## FAQ
 
-**How does When2meet work?**  
+**How does When2meet work?**
 You create a poll with possible dates and times and share the link with participants. Everyone enters their availability, and the tool shows when all or most people are available.
 
-**Do I need to register to use it?**  
+**Do I need to register to use it?**
 No, registration is not required. That makes it especially quick and easy to use.
 
-**Can I use When2meet on my smartphone?**  
+**Can I use When2meet on my smartphone?**
 Yes, the website is mobile optimized and can be used easily on smartphones and tablets.
 
-**Is there a way to sync appointments with calendars?**  
+**Is there a way to sync appointments with calendars?**
 When2meet does not offer direct calendar integration. For advanced features, other tools are better suited.
 
-**Is When2meet free?**  
+**Is When2meet free?**
 Yes, the tool is completely free to use, without limits on the number of participants or polls.
 
-**How secure is my data with When2meet?**  
+**How secure is my data with When2meet?**
 Since no registration is required, only the times you enter are stored. More detailed privacy information can be found on the provider's website.
 
-**Can I plan multiple appointments at the same time?**  
+**Can I plan multiple appointments at the same time?**
 You can only create one time period with different options for each poll. For additional appointments, separate polls must be created.
 
-**How many participants can take part in a poll?**  
+**How many participants can take part in a poll?**
 There is no officially defined limit, but When2meet is more suitable for small to medium-sized groups.
 
 **9. How should a team test When2meet?**

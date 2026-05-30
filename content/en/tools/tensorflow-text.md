@@ -1,6 +1,11 @@
 ---
 slug: tensorflow-text
 title: TensorFlow Text
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Open Source
 tags:
@@ -65,28 +70,28 @@ TensorFlow Text is freely available as open-source software. There are no licens
 
 ## FAQ
 
-**1. Is TensorFlow Text suitable for beginners?**  
+**1. Is TensorFlow Text suitable for beginners?**
 TensorFlow Text requires basic knowledge of TensorFlow and machine learning. Beginners may find it helpful to start with general tutorials on TensorFlow and NLP.
 
-**2. Which programming language is used?**  
+**2. Which programming language is used?**
 The library is implemented in Python and provides APIs that can be integrated directly into Python projects.
 
-**3. Does TensorFlow Text support multilingual texts?**  
+**3. Does TensorFlow Text support multilingual texts?**
 Yes, TensorFlow Text is flexible and supports various languages and writing systems, depending on the tokenization and preprocessing used.
 
-**4. Can TensorFlow Text be used in commercial projects?**  
+**4. Can TensorFlow Text be used in commercial projects?**
 Yes, as open-source software, TensorFlow Text has no commercial license restrictions and can be used freely.
 
-**5. How does TensorFlow Text differ from other NLP libraries?**  
+**5. How does TensorFlow Text differ from other NLP libraries?**
 TensorFlow Text is specifically designed for integration with the TensorFlow ecosystem, offering advantages for developing end-to-end ML pipelines, while other libraries may be more standalone and focused on different use cases.
 
-**6. Is there an active community or support?**  
+**6. Is there an active community or support?**
 Yes, TensorFlow Text is maintained by Google and has an active developer community that regularly provides updates and support.
 
-**7. Are pre-built NLP models included?**  
+**7. Are pre-built NLP models included?**
 TensorFlow Text mainly focuses on text processing and preparation. For pre-built models, it is recommended to use it in combination with other TensorFlow components or external model libraries.
 
-**8. How do I install TensorFlow Text?**  
+**8. How do I install TensorFlow Text?**
 TensorFlow Text can be easily installed via package managers like pip, for example with `pip install tensorflow-text`.
 
 ---

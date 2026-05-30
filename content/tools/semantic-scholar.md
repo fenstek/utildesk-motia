@@ -1,6 +1,11 @@
 ---
 slug: semantic-scholar
 title: Semantic Scholar
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: "Kostenlos"
 tags: [education, data, analytics, productivity]
@@ -32,11 +37,11 @@ Dank der benutzerfreundlichen Oberfläche und der leistungsfähigen Suchfunktion
 - **Übergaben im Team:** Semantic Scholar kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Semantic Scholar weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Semantic Scholar ist Quellenarbeit der Kern. Wir würden mit einer engen Recherchefrage starten, Treffer gegen Kontrollquellen prüfen und festhalten, warum Quellen aufgenommen oder verworfen wurden.
 
-Praktisch ist Semantic Scholar vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Semantic Scholar lohnt sich, wenn Fundstellen, Notizen und Zweifel später noch nachvollziehbar bleiben. Ohne diese Sorgfalt wird Recherche nur schneller, aber nicht belastbarer.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/semantic-scholar-editorial.webp" alt="Illustration zu Semantic Scholar: Forschungs-Planetarium mit Quellenbahnen" loading="lazy" decoding="async" />
@@ -70,59 +75,3 @@ Praktisch ist Semantic Scholar vor allem, wenn es vorhandene Abläufe entlastet,
 - Funktionen für erweiterte Analysen sind begrenzt im Vergleich zu spezialisierten kostenpflichtigen Tools.
 - Keine integrierte Möglichkeit zum direkten Export von Literaturangaben in alle gängigen Referenzmanager (abhängig vom Nutzer).
 - Für Nutzer ohne Englischkenntnisse kann die primär englischsprachige Datenbank eine Hürde darstellen.
-
-## Workflow-Fit
-
-Semantic Scholar passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Semantic Scholar nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Semantic Scholar landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Semantic Scholar außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Semantic Scholar.
-
-## Redaktionelle Einschätzung
-
-Semantic Scholar ist vor allem ein Infrastrukturbaustein: nützlich, wenn Betrieb, Datenflüsse und Verantwortlichkeiten klar beschrieben sind. Der praktische Wert zeigt sich in stabileren Abläufen, nicht in einer einzelnen Demo.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Semantic Scholar wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Semantic Scholar ist grundsätzlich kostenlos nutzbar. Es gibt kein kostenpflichtiges Abonnement oder Premium-Modell. Einige Funktionen oder Volltexte können jedoch nur über separate Zugänge von Verlagen oder Institutionen verfügbar sein, was außerhalb der Kontrolle von Semantic Scholar liegt.
-
-## Alternativen zu Semantic Scholar
-
-- **Google Scholar:** Weit verbreitete Suchmaschine für wissenschaftliche Literatur mit breitem Angebot, aber weniger KI-gestützter Analyse.
-- **ResearchGate:** Plattform für Forscher zum Austausch von Publikationen und Netzwerkaufbau, mit Schwerpunkt auf sozialer Interaktion.
-- **Microsoft Academic:** KI-basierte Suchmaschine von Microsoft (Hinweis: wurde eingestellt, aber ähnliche Funktionen finden sich in anderen Microsoft-Angeboten).
-- **PubMed:** Speziell für biomedizinische Literatur, mit umfassenden Datenbanken und spezialisierten Suchfunktionen.
-- **Dimensions:** Plattform mit umfangreichen Forschungsdaten, Analyse- und Visualisierungstools, teilweise kostenpflichtig.
-
-## FAQ
-
-**1. Ist Semantic Scholar kostenlos?**  
-Ja, Semantic Scholar kann kostenfrei genutzt werden, ohne dass eine Registrierung erforderlich ist.
-
-**2. Welche Sprachen werden unterstützt?**  
-Die Plattform ist hauptsächlich auf Englisch ausgelegt, bietet aber Zugriff auf Literatur aus verschiedenen Ländern und Disziplinen.
-
-**3. Kann ich meine Suchergebnisse exportieren?**  
-Exportmöglichkeiten sind eingeschränkt, meist können Zitationsinformationen als BibTeX oder EndNote exportiert werden, abhängig vom jeweiligen Artikel.
-
-**4. Wie aktuell sind die Daten?**  
-Die Datenbank wird regelmäßig aktualisiert, um neue wissenschaftliche Publikationen einzubeziehen.
-
-**5. Bietet Semantic Scholar auch Volltexte an?**  
-Viele Artikel sind direkt verlinkt, aber der Volltextzugang hängt von der Verfügbarkeit und Lizenzierung ab.
-
-**6. Gibt es mobile Apps für Semantic Scholar?**  
-Aktuell gibt es keine offiziellen mobilen Apps, die Webseite ist jedoch mobilfreundlich gestaltet.
-
-**7. Wie unterscheidet sich Semantic Scholar von Google Scholar?**  
-Semantic Scholar nutzt KI, um Suchergebnisse besser zu verstehen und zu filtern, während Google Scholar eher eine einfache Volltextsuche bietet.
-
-**8. Kann ich Benachrichtigungen für neue Artikel erhalten?**  
-Das Erstellen von Benutzerkonten ermöglicht das Speichern von Suchanfragen und das Verfolgen neuer Veröffentlichungen zu bestimmten Themen.

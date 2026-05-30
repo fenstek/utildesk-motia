@@ -1,6 +1,11 @@
 ---
 slug: libreoffice-calc
 title: LibreOffice Calc
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Open Source
 tags: [spreadsheet,office,open-source,productivity]
@@ -90,26 +95,26 @@ LibreOffice Calc ist komplett Open Source und somit kostenlos nutzbar. Es fallen
 
 ## FAQ
 
-**1. Ist LibreOffice Calc mit Microsoft Excel-Dateien kompatibel?**  
+**1. Ist LibreOffice Calc mit Microsoft Excel-Dateien kompatibel?**
 Ja, LibreOffice Calc kann Excel-Dateien (.xls und .xlsx) öffnen, bearbeiten und speichern. Die Kompatibilität ist in den meisten Fällen sehr gut, allerdings können bei komplexen Makros oder speziellen Excel-Funktionen Einschränkungen auftreten.
 
-**2. Benötige ich eine Internetverbindung, um LibreOffice Calc zu nutzen?**  
+**2. Benötige ich eine Internetverbindung, um LibreOffice Calc zu nutzen?**
 Nein, LibreOffice Calc ist eine Desktop-Anwendung und funktioniert vollständig offline. Eine Internetverbindung ist nur für Updates oder die Installation von Erweiterungen erforderlich.
 
-**3. Kann ich mit LibreOffice Calc Makros verwenden?**  
+**3. Kann ich mit LibreOffice Calc Makros verwenden?**
 Ja, Calc unterstützt Makros, die in verschiedenen Programmiersprachen wie LibreOffice Basic geschrieben werden können. Die Makro-Umgebung ist flexibel, aber die Kompatibilität mit Excel-Makros ist nicht immer gewährleistet.
 
-**4. Auf welchen Betriebssystemen läuft LibreOffice Calc?**  
+**4. Auf welchen Betriebssystemen läuft LibreOffice Calc?**
 LibreOffice Calc ist plattformübergreifend verfügbar und läuft unter Windows, macOS und Linux.
 
-**5. Gibt es professionelle Support-Angebote für LibreOffice Calc?**  
+**5. Gibt es professionelle Support-Angebote für LibreOffice Calc?**
 LibreOffice selbst wird hauptsächlich von der Community unterstützt. Es gibt jedoch verschiedene Dienstleister, die kostenpflichtigen Support, Schulungen und Beratung anbieten.
 
-**6. Wie sicher ist LibreOffice Calc im Umgang mit sensiblen Daten?**  
+**6. Wie sicher ist LibreOffice Calc im Umgang mit sensiblen Daten?**
 Da Calc lokal auf dem Rechner läuft und keine Cloud-Anbindung erfordert, behalten Nutzer die volle Kontrolle über ihre Daten. Die Open-Source-Natur ermöglicht zudem Transparenz und Prüfung des Quellcodes.
 
-**7. Kann ich LibreOffice Calc auch für die Zusammenarbeit mit anderen nutzen?**  
+**7. Kann ich LibreOffice Calc auch für die Zusammenarbeit mit anderen nutzen?**
 Calc unterstützt Funktionen wie Kommentare und Änderungsverfolgung. Für Echtzeit-Zusammenarbeit sind jedoch webbasierte Lösungen wie Google Sheets besser geeignet.
 
-**8. Wie oft wird LibreOffice Calc aktualisiert?**  
+**8. Wie oft wird LibreOffice Calc aktualisiert?**
 LibreOffice veröffentlicht regelmäßig Updates und neue Versionen, die Fehler beheben und neue Funktionen hinzufügen. Die genaue Häufigkeit variiert je nach Entwicklungsschwerpunkt.

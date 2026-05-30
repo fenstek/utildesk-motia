@@ -1,6 +1,11 @@
 ---
 slug: intellicode
 title: IntelliCode (Microsoft)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Plan-based
 tags:
@@ -103,26 +108,26 @@ IntelliCode is included for free in many Visual Studio versions and in Visual St
 
 ## FAQ
 
-**1. Is IntelliCode free?**  
+**1. Is IntelliCode free?**
 IntelliCode is included for free in many Visual Studio and Visual Studio Code versions. However, some advanced features may be tied to paid plans.
 
-**2. Which programming languages does IntelliCode support?**  
+**2. Which programming languages does IntelliCode support?**
 Supported languages include C#, Python, JavaScript, TypeScript, Java, and other popular languages.
 
-**3. How does the AI behind IntelliCode work?**  
+**3. How does the AI behind IntelliCode work?**
 IntelliCode uses machine learning based on millions of lines of open-source code as well as project-specific data to generate context-aware suggestions.
 
-**4. Can IntelliCode be used in teams?**  
+**4. Can IntelliCode be used in teams?**
 Yes, teams can train their own models to adapt recommendations to shared code.
 
-**5. Is special setup required?**  
+**5. Is special setup required?**
 The basic functionality is available immediately after installation. Additional configuration is required for team models.
 
-**6. Does IntelliCode work offline too?**  
+**6. Does IntelliCode work offline too?**
 Basic functions can be used offline, but some AI-powered features require an internet connection.
 
-**7. How does IntelliCode differ from other AI code assistants?**  
+**7. How does IntelliCode differ from other AI code assistants?**
 IntelliCode is deeply integrated into Microsoft's development environments and offers team- and project-specific models in addition to general suggestions.
 
-**8. How can I install IntelliCode?**  
+**8. How can I install IntelliCode?**
 IntelliCode is available as an extension for Visual Studio and Visual Studio Code and can be installed through the respective marketplaces.

@@ -1,6 +1,11 @@
 ---
 slug: temi
 title: Temi
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Audio & Video"
 price_model: Nutzungsbasiert
 tags: [transcription,audio,productivity]
@@ -96,26 +101,26 @@ Temi arbeitet mit einem nutzungsbasierten Preismodell. Die Kosten richten sich n
 
 ## FAQ
 
-**Wie genau ist die Transkription von Temi?**  
+**Wie genau ist die Transkription von Temi?**
 Die Genauigkeit hängt stark von der Audioqualität, der Klarheit der Sprache und Akzenten ab. In der Regel sind die Transkripte gut verständlich, dennoch sind manuelle Korrekturen oft notwendig.
 
-**Welche Sprachen unterstützt Temi?**  
+**Welche Sprachen unterstützt Temi?**
 Temi ist hauptsächlich auf Englisch optimiert. Die Verfügbarkeit weiterer Sprachen kann je nach Plan oder Anbieter variieren.
 
-**Wie funktioniert das Preismodell?**  
+**Wie funktioniert das Preismodell?**
 Temi nutzt ein nutzungsbasiertes Modell, bei dem pro Minute transkribierten Materials abgerechnet wird. Preise und Konditionen sollten beim Anbieter geprüft werden.
 
-**Kann ich Temi auf mobilen Geräten nutzen?**  
+**Kann ich Temi auf mobilen Geräten nutzen?**
 Ja, Temi ist über Webbrowser auf mobilen Geräten zugänglich, was flexible Nutzung ermöglicht.
 
-**Gibt es eine kostenlose Testversion?**  
+**Gibt es eine kostenlose Testversion?**
 Je nach Anbieter gibt es häufig eine kurze kostenlose Testphase oder ein kleines kostenloses Minutenkontingent zur Probe.
 
-**Wie sicher sind meine Daten bei Temi?**  
+**Wie sicher sind meine Daten bei Temi?**
 Datenschutzrichtlinien und Sicherheitsmaßnahmen können je nach Anbieter unterschiedlich sein. Es empfiehlt sich, die jeweiligen Bedingungen vor Nutzung zu prüfen.
 
-**Kann ich die Transkripte exportieren?**  
+**Kann ich die Transkripte exportieren?**
 Ja, Temi bietet verschiedene Exportformate wie TXT, PDF oder DOCX für die weitere Nutzung der Transkripte an.
 
-**Wie schnell erhalte ich mein Transkript?**  
+**Wie schnell erhalte ich mein Transkript?**
 Die Verarbeitung erfolgt meist innerhalb weniger Minuten, abhängig von der Länge und Qualität der Datei.

@@ -1,6 +1,11 @@
 ---
 slug: hubspot-crm
 title: HubSpot CRM
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -101,28 +106,28 @@ Alternatives to HubSpot CRM should be chosen by the concrete work problem. In so
 
 ## FAQ
 
-**1. Is HubSpot CRM really free?**  
+**1. Is HubSpot CRM really free?**
 Yes, HubSpot CRM offers a free basic version that provides many features for small teams. Paid plans are available for advanced features.
 
-**2. Which automation features are included?**  
+**2. Which automation features are included?**
 Automated workflows for tasks, email campaigns, and lead management are part of the platform. Scope and complexity depend on the selected plan.
 
-**3. Can HubSpot CRM be integrated with other tools?**  
+**3. Can HubSpot CRM be integrated with other tools?**
 Yes, HubSpot supports numerous integrations, including email services, marketing platforms, and other business apps.
 
-**4. Is there a mobile app for HubSpot CRM?**  
+**4. Is there a mobile app for HubSpot CRM?**
 Yes, HubSpot provides apps for iOS and Android that allow access to CRM data on the go.
 
-**5. How does HubSpot CRM scale as a company grows?**  
+**5. How does HubSpot CRM scale as a company grows?**
 The platform is scalable and offers different plans that can be adapted to the needs of small to large businesses.
 
-**6. Which languages are supported?**  
+**6. Which languages are supported?**
 HubSpot CRM is available in several languages, including German.
 
-**7. How secure is customer data with HubSpot?**  
+**7. How secure is customer data with HubSpot?**
 HubSpot places great emphasis on data protection and security and meets industry-standard requirements and certifications.
 
-**8. Are there training or support options for users?**  
+**8. Are there training or support options for users?**
 Depending on the plan, different support options and training materials are available, including an extensive knowledge base.
 
 **9. How should a team test HubSpot CRM?**

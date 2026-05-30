@@ -1,6 +1,11 @@
 ---
 slug: avaya-onecloud
 title: Avaya Experience Platform
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Abonnement
 tags: [contact-center, communication, customer-support, ai]
@@ -46,7 +51,7 @@ Ein sinnvoller Test beginnt mit einem echten Servicefall mit Eingang, Priorisier
 - **Cloud-basierte Architektur:** Skalierbarkeit und Verfügbarkeit ohne lokale Infrastruktur.
 - **Sicherheitsfunktionen:** Datenschutzkonforme Kommunikation und Zugriffskontrollen.
 
-- **Praxis-Workflow:** Avaya Experience Platform sollte anhand eines echten Servicefalls mit Eingang, Priorisierung, Antwort, Eskalation und Nachbereitung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Avaya Experience Platform sollte der erste Test mit einen begrenzten Arbeitsfall mit realistischen Daten, klarer Verantwortung und sichtbarem Ergebnis laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Stark wird Avaya Experience Platform erst, wenn Antwortzeit, Übergabequalität und Kundenzufriedenheit nicht im Bauchgefühl bleiben, sondern prüfbar im Prozess auftauchen.
 - **Team-Übergabe:** Nützlich wird Avaya Experience Platform besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 

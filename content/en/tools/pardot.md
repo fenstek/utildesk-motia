@@ -1,6 +1,11 @@
 ---
 slug: pardot
 title: Pardot (Salesforce)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -98,26 +103,26 @@ Pardot is usually offered as a subscription. The exact pricing structure varies 
 
 ## FAQ
 
-**1. Is Pardot only suitable for Salesforce users?**  
+**1. Is Pardot only suitable for Salesforce users?**
 Pardot is especially designed for integration with Salesforce CRM, but it can also be connected to other systems via APIs. However, its full functionality usually comes into its own when used together with Salesforce.
 
-**2. What type of company benefits most from Pardot?**  
+**2. What type of company benefits most from Pardot?**
 Above all, B2B companies with complex sales processes and a need for automated lead management benefit from Pardot.
 
-**3. Is there a free trial?**  
+**3. Is there a free trial?**
 Depending on the provider and plan, a trial version or demo may be available. It is best to ask the provider directly.
 
-**4. How complex is Pardot implementation?**  
+**4. How complex is Pardot implementation?**
 Implementation can vary depending on company size and requirements. For the best results, support from experienced Salesforce partners is often recommended.
 
-**5. Which marketing channels does Pardot support?**  
+**5. Which marketing channels does Pardot support?**
 Pardot supports email, landing pages, forms, as well as integration with social media and other digital channels through third parties.
 
-**6. Can Pardot also be used for B2C marketing?**  
+**6. Can Pardot also be used for B2C marketing?**
 Although Pardot is primarily designed for B2B, some features can also be used for B2C. However, there are more specialized solutions for B2C.
 
-**7. How does lead scoring work in Pardot?**  
+**7. How does lead scoring work in Pardot?**
 Lead scoring evaluates the engagement and interactions of leads with content and campaigns to assess lead quality for sales.
 
-**8. Which languages and regions are supported?**  
+**8. Which languages and regions are supported?**
 Pardot can be used internationally and supports multiple languages, depending on configuration and Salesforce settings.

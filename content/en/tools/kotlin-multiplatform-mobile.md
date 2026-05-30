@@ -1,6 +1,11 @@
 ---
 slug: kotlin-multiplatform-mobile
 title: Kotlin Multiplatform Mobile (KMM)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -88,28 +93,28 @@ Kotlin Multiplatform Mobile is an open-source framework and can be used for free
 
 ## FAQ
 
-**1. What is Kotlin Multiplatform Mobile (KMM)?**  
+**1. What is Kotlin Multiplatform Mobile (KMM)?**
 KMM is a framework for cross-platform development that allows developers to create shared codebases for Android and iOS, especially for business logic and other core functions.
 
-**2. Is KMM free to use?**  
+**2. Is KMM free to use?**
 Yes, KMM is open source and can be used free of charge. Development environments such as Android Studio are also free.
 
-**3. Do I have to develop the user interface separately for each platform when using KMM?**  
+**3. Do I have to develop the user interface separately for each platform when using KMM?**
 Yes, the UI is developed natively for Android and iOS to ensure the best performance and user experience.
 
-**4. Which programming language is used for KMM?**  
+**4. Which programming language is used for KMM?**
 The shared codebase is written in Kotlin, while platform-specific parts may also use Swift (iOS) and Kotlin/Java (Android).
 
-**5. How does KMM differ from other cross-platform frameworks?**  
+**5. How does KMM differ from other cross-platform frameworks?**
 KMM focuses on sharing business logic and core functions while keeping the UI native. Other frameworks such as Flutter or React Native also abstract the UI.
 
-**6. What advantages does KMM offer for companies?**  
+**6. What advantages does KMM offer for companies?**
 By sharing code, development time and maintenance costs can be reduced without compromising the native quality of the apps.
 
-**7. Is KMM suitable for beginners?**  
+**7. Is KMM suitable for beginners?**
 Basic knowledge of Kotlin and platform-specific development is helpful. For beginners, getting started can be challenging, but the documentation and community support the learning process.
 
-**8. Can I integrate KMM into existing projects?**  
+**8. Can I integrate KMM into existing projects?**
 Yes, KMM is modular and can be integrated into existing Android and iOS projects to gradually use shared code.
 
 ---

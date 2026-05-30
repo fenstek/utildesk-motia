@@ -1,6 +1,11 @@
 ---
 slug: choicescript
 title: ChoiceScript
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -98,26 +103,26 @@ ChoiceScript is generally free to use. Depending on the provider or platform, ad
 
 ## FAQ
 
-**How much programming knowledge do I need for ChoiceScript?**  
+**How much programming knowledge do I need for ChoiceScript?**
 ChoiceScript is designed so that even users without programming knowledge can create interactive stories. Basic understanding of logical thinking and simple scripts is helpful.
 
-**Can I create games for smartphones with ChoiceScript?**  
+**Can I create games for smartphones with ChoiceScript?**
 Yes, ChoiceScript games can be exported as web applications that can be played on mobile devices. Direct native apps are usually possible through additional steps.
 
-**Is ChoiceScript really free?**  
+**Is ChoiceScript really free?**
 The basic version of ChoiceScript is free to use. Some platforms or additional services may be chargeable.
 
-**How complex can the stories in ChoiceScript be?**  
+**How complex can the stories in ChoiceScript be?**
 ChoiceScript supports branching storylines and complex variables, making very extensive and interactive stories possible.
 
-**Is there a community or support for ChoiceScript?**  
+**Is there a community or support for ChoiceScript?**
 Yes, there is an active community, forums, and extensive online documentation that support its use.
 
-**Can I commercially distribute ChoiceScript games?**  
+**Can I commercially distribute ChoiceScript games?**
 Yes, the created games can be commercially used and distributed, depending on the licensing conditions of the used resources.
 
-**How do I export a game from ChoiceScript?**  
+**How do I export a game from ChoiceScript?**
 Games can be exported as web applications that run in browsers. Additional tools or adaptations are usually required for other platforms.
 
-**What alternatives are there to ChoiceScript?**  
+**What alternatives are there to ChoiceScript?**
 Alternatives include Twine, Ink, Ren’Py, Inform 7, or Squiffy, which have different focuses on creating interactive stories.

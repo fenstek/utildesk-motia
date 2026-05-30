@@ -1,6 +1,11 @@
 ---
 slug: opennmt
 title: OpenNMT
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Open Source
 tags: [translation, nmt, open-source]
@@ -54,7 +59,7 @@ Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassun
 - **Anpassbarkeit:** Möglichkeit, Modelle durch Transfer Learning an spezifische Domänen anzupassen.
 - **Dokumentation und Tutorials:** Umfangreiche Ressourcen für den Einstieg und die Weiterentwicklung.
 
-- **Praxis-Workflow:** OpenNMT sollte anhand eines echten Textauftrags mit Briefing, Rohfassung, Review, Überarbeitung und Veröffentlichung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für OpenNMT sollte der erste Test mit einen kurzen Text mit Briefing, Glossar, Faktencheck und finaler menschlicher Abnahme laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Im Betrieb braucht OpenNMT klare Notizen dazu, wie Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität bewertet und bei Problemen nachgebessert werden.
 - **Team-Übergabe:** Nützlich wird OpenNMT besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -101,28 +106,28 @@ Beim Vergleich lohnt es sich, OpenNMT nicht nur gegen sehr ähnliche Produkte zu
 
 ## FAQ
 
-**1. Was ist OpenNMT genau?**  
+**1. Was ist OpenNMT genau?**
 OpenNMT ist eine Open-Source-Plattform für neuronale maschinelle Übersetzung, die es ermöglicht, eigene Übersetzungsmodelle zu trainieren und einzusetzen.
 
-**2. Benötige ich Programmierkenntnisse, um OpenNMT zu nutzen?**  
+**2. Benötige ich Programmierkenntnisse, um OpenNMT zu nutzen?**
 Ja, grundlegende Kenntnisse in Programmierung und maschinellem Lernen sind hilfreich, da OpenNMT hauptsächlich als Entwickler-Toolkit konzipiert ist.
 
-**3. Kann ich OpenNMT kostenlos verwenden?**  
+**3. Kann ich OpenNMT kostenlos verwenden?**
 Ja, OpenNMT ist kostenlos und quelloffen. Es fallen jedoch gegebenenfalls Kosten für Hardware und Betrieb an.
 
-**4. Welche Sprachen unterstützt OpenNMT?**  
+**4. Welche Sprachen unterstützt OpenNMT?**
 OpenNMT unterstützt prinzipiell alle Sprachen, für die Trainingsdaten verfügbar sind. Die Qualität hängt von der Datenbasis ab.
 
-**5. Gibt es kommerziellen Support für OpenNMT?**  
+**5. Gibt es kommerziellen Support für OpenNMT?**
 Offiziell wird OpenNMT von der Community unterstützt. Einige Unternehmen bieten jedoch professionelle Dienstleistungen rund um OpenNMT an.
 
-**6. Wie unterscheidet sich OpenNMT von Cloud-Übersetzungsdiensten?**  
+**6. Wie unterscheidet sich OpenNMT von Cloud-Übersetzungsdiensten?**
 OpenNMT läuft lokal oder auf eigenen Servern, was mehr Kontrolle und Datenschutz ermöglicht, während Cloud-Dienste meist einfacher zu nutzen sind, aber Daten in der Cloud verarbeiten.
 
-**7. Kann ich OpenNMT für Echtzeitübersetzungen verwenden?**  
+**7. Kann ich OpenNMT für Echtzeitübersetzungen verwenden?**
 Ja, OpenNMT bietet optimierte Inferenzfunktionen, die Echtzeitübersetzungen ermöglichen, sofern die Hardware entsprechend leistungsfähig ist.
 
-**8. Wie kann ich OpenNMT in meine Anwendungen integrieren?**  
+**8. Wie kann ich OpenNMT in meine Anwendungen integrieren?**
 OpenNMT stellt APIs und Schnittstellen bereit, die eine Integration in verschiedene Softwarelösungen erlauben. Die Dokumentation bietet hierzu ausführliche Anleitungen.
 
 **9. Wie testet man OpenNMT sinnvoll im Team?**

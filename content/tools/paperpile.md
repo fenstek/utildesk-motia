@@ -1,6 +1,11 @@
 ---
 slug: paperpile
 title: Paperpile
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Research
 price_model: Abonnement
 tags: [research, writing, productivity]
@@ -14,6 +19,12 @@ generated_at: 2026-05-28
 Paperpile ist ein Literaturverwaltungs- und Zitationswerkzeug für wissenschaftliches Arbeiten, das besonders stark mit Google Docs, Browser-Recherche und cloudbasierter Quellenorganisation zusammenspielt. Es hilft, PDFs, Metadaten, Zitate und Literaturverzeichnisse an einem Ort zu sammeln, damit Schreiben, Lesen und Zitieren nicht in verstreuten Dateien, Tabs und manuellen Listen enden.
 
 Der praktische Nutzen entsteht vor allem in Schreibprozessen mit vielen Quellen: Seminararbeiten, Thesis-Projekte, Forschungsartikel, Berichte, akademische Teams oder wissensintensive Analysen. Paperpile ist kein Rechercheassistent, der die Qualität einer Studie bewertet. Es ist die Infrastruktur, damit gefundene Quellen sauber gespeichert, wiedergefunden, zitiert und mit anderen geteilt werden können.
+
+## Redaktionelle Einordnung
+
+Bei Paperpile entscheidet die Nachvollziehbarkeit: Quellen, Notizen, Codes, Suchwege oder Auswertungsschritte müssen später noch erklärbar sein. Wir würden mit einem kleinen echten Forschungs- oder Analysefall starten.
+
+Paperpile lohnt sich, wenn es Material ordnet und Entscheidungen sichtbar macht. Es ersetzt aber keine fachliche Bewertung und keine saubere Methode.
 
 ## Für wen ist Paperpile geeignet?
 

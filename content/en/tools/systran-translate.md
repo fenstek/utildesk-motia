@@ -1,6 +1,11 @@
 ---
 slug: systran-translate
 title: SYSTRAN Translate
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -115,26 +120,26 @@ For exact pricing, it is recommended to contact the official website or sales te
 
 ## FAQ
 
-**1. Which languages does SYSTRAN Translate support?**  
+**1. Which languages does SYSTRAN Translate support?**
 SYSTRAN supports more than 50 languages and language combinations, including all major world languages as well as some specialized technical languages.
 
-**2. Can SYSTRAN Translate be integrated into existing applications?**  
+**2. Can SYSTRAN Translate be integrated into existing applications?**
 Yes, SYSTRAN offers APIs that allow translation functions to be integrated into your own software, websites, or apps.
 
-**3. How secure is the translated data?**  
+**3. How secure is the translated data?**
 SYSTRAN places great importance on data privacy and offers encryption as well as local server options to protect sensitive information.
 
-**4. Is there a free version of SYSTRAN Translate?**  
+**4. Is there a free version of SYSTRAN Translate?**
 There is no permanently free full version, but there are often trial periods or limited free offers to try it out.
 
-**5. Is SYSTRAN Translate suitable for professional translators?**  
+**5. Is SYSTRAN Translate suitable for professional translators?**
 Yes, the tool offers features such as terminology management and subject-area customization that support professional translators.
 
-**6. How accurate are the translations?**  
+**6. How accurate are the translations?**
 The neural models deliver very precise and context-aware translations in many language pairs, although quality can vary depending on the language and text type.
 
-**7. Are documents translated as well?**  
+**7. Are documents translated as well?**
 Yes, SYSTRAN supports the translation of common document formats such as DOCX, PPTX, and PDF.
 
-**8. How does the pricing work?**  
+**8. How does the pricing work?**
 Prices are usually based on subscription models or API usage and vary depending on scope and features. Individual consultation is recommended.

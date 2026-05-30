@@ -1,6 +1,11 @@
 ---
 slug: vivaldi
 title: Vivaldi
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Free
 tags: [browser, web, privacy, productivity]
@@ -88,26 +93,26 @@ Vivaldi ist kostenlos nutzbar. Es gibt keine kostenpflichtigen Versionen oder Ab
 
 ## FAQ
 
-**1. Ist Vivaldi wirklich kostenlos?**  
+**1. Ist Vivaldi wirklich kostenlos?**
 Ja, Vivaldi kann kostenlos heruntergeladen und genutzt werden, ohne dass Funktionen kostenpflichtig freigeschaltet werden müssen.
 
-**2. Wie sicher ist Vivaldi in Bezug auf Datenschutz?**  
+**2. Wie sicher ist Vivaldi in Bezug auf Datenschutz?**
 Vivaldi bietet integrierte Tracker- und Werbeblocker und speichert keine Nutzerdaten auf eigenen Servern, was die Privatsphäre stärkt.
 
-**3. Kann ich meine Lesezeichen und Passwörter synchronisieren?**  
+**3. Kann ich meine Lesezeichen und Passwörter synchronisieren?**
 Ja, Vivaldi bietet eine Synchronisationsfunktion für Lesezeichen, Passwörter, Notizen und weitere Einstellungen über mehrere Geräte hinweg.
 
-**4. Welche Betriebssysteme werden unterstützt?**  
+**4. Welche Betriebssysteme werden unterstützt?**
 Vivaldi ist für Windows, macOS, Linux sowie für Android-Geräte verfügbar.
 
-**5. Wie unterscheidet sich Vivaldi von anderen Browsern?**  
+**5. Wie unterscheidet sich Vivaldi von anderen Browsern?**
 Der Fokus von Vivaldi liegt auf hoher Anpassbarkeit und integrierten Produktivitätswerkzeugen, die viele Nutzer bei anderen Browsern nur durch Erweiterungen erhalten.
 
-**6. Gibt es eine mobile Version von Vivaldi?**  
+**6. Gibt es eine mobile Version von Vivaldi?**
 Ja, Vivaldi ist auch als mobile App für Android verfügbar.
 
-**7. Kann ich eigene Suchmaschinen hinzufügen?**  
+**7. Kann ich eigene Suchmaschinen hinzufügen?**
 Ja, Nutzer können eigene Suchmaschinen konfigurieren und schnell zwischen ihnen wechseln.
 
-**8. Unterstützt Vivaldi Erweiterungen?**  
+**8. Unterstützt Vivaldi Erweiterungen?**
 Vivaldi basiert auf Chromium und unterstützt daher die meisten Chrome-Erweiterungen.

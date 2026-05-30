@@ -1,6 +1,11 @@
 ---
 slug: ai-dungeon
 title: AI Dungeon
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -117,26 +122,26 @@ The exact prices and terms should be checked on the official website, as they ma
 - **Inklewriter:** A tool for creating interactive stories with a user-friendly interface, but without AI support.
 ## FAQ
 
-**1. What exactly is AI Dungeon?**  
+**1. What exactly is AI Dungeon?**
 AI Dungeon is an interactive text adventure that uses artificial intelligence to generate stories in real time and adapt them to players’ input.
 
-**2. Do I need programming knowledge to use AI Dungeon?**  
+**2. Do I need programming knowledge to use AI Dungeon?**
 No, the tool is designed to be user-friendly and does not require technical knowledge.
 
-**3. Is AI Dungeon free?**  
+**3. Is AI Dungeon free?**
 There is a free basic version with limited features. Advanced features are usually available through paid subscriptions.
 
-**4. Which devices are supported?**  
+**4. Which devices are supported?**
 AI Dungeon is web-based and can be used on PCs, tablets, and smartphones. There are also mobile apps for iOS and Android.
 
-**5. How does the AI work in AI Dungeon?**  
+**5. How does the AI work in AI Dungeon?**
 The AI is based on advanced language models that analyze input and generate suitable text passages to continue the story.
 
-**6. Can I save and share my own stories?**  
+**6. Can I save and share my own stories?**
 Yes, saved adventures can be loaded at any time and shared with the community.
 
-**7. Are there any usage restrictions?**  
+**7. Are there any usage restrictions?**
 Depending on the plan, there are usage limits and access restrictions. Terms of use also apply to content.
 
-**8. How secure is my data?**  
+**8. How secure is my data?**
 Data security depends on the provider. It is recommended to review the privacy policy before use.

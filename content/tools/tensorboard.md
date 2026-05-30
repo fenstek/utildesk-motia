@@ -1,6 +1,11 @@
 ---
 slug: tensorboard
 title: TensorBoard
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: Open Source
 tags: [ml, visualization, developer-tools]
@@ -78,26 +83,26 @@ TensorBoard ist kein glamouroeses Dashboard, sondern ein Arbeitsmikroskop für M
 
 ## FAQ
 
-**1. Ist TensorBoard nur mit TensorFlow kompatibel?**  
+**1. Ist TensorBoard nur mit TensorFlow kompatibel?**
 TensorBoard ist ursprünglich für TensorFlow entwickelt, kann aber mit Plugins und Anpassungen auch für andere Frameworks genutzt werden.
 
-**2. Wie installiere ich TensorBoard?**  
+**2. Wie installiere ich TensorBoard?**
 TensorBoard lässt sich einfach über Python-Paketmanager wie pip installieren (`pip install tensorboard`).
 
-**3. Kann ich TensorBoard lokal und in der Cloud verwenden?**  
+**3. Kann ich TensorBoard lokal und in der Cloud verwenden?**
 Ja, TensorBoard kann sowohl lokal auf dem eigenen Rechner als auch auf Cloud-Servern betrieben werden.
 
-**4. Welche Daten kann ich mit TensorBoard visualisieren?**  
+**4. Welche Daten kann ich mit TensorBoard visualisieren?**
 TensorBoard unterstützt Trainingsmetriken, Modellgraphen, Histogramme, Embeddings und weitere ML-relevante Daten.
 
-**5. Brauche ich Programmierkenntnisse, um TensorBoard zu nutzen?**  
+**5. Brauche ich Programmierkenntnisse, um TensorBoard zu nutzen?**
 Grundkenntnisse in Python und Machine Learning sind hilfreich, um TensorBoard effektiv einzusetzen.
 
-**6. Gibt es eine Möglichkeit, TensorBoard in bestehende ML-Pipelines zu integrieren?**  
+**6. Gibt es eine Möglichkeit, TensorBoard in bestehende ML-Pipelines zu integrieren?**
 Ja, TensorBoard lässt sich über APIs und Plugins gut in automatisierte Trainings- und Deployment-Prozesse einbinden.
 
-**7. Unterstützt TensorBoard die Visualisierung von verteiltem Training?**  
+**7. Unterstützt TensorBoard die Visualisierung von verteiltem Training?**
 Ja, TensorBoard kann Metriken aus verteilten Trainingsprozessen zusammenführen und darstellen.
 
-**8. Wie speichere ich die Visualisierungen aus TensorBoard?**  
+**8. Wie speichere ich die Visualisierungen aus TensorBoard?**
 Visualisierungen können als Bilder exportiert oder direkt im Browser betrachtet und geteilt werden.

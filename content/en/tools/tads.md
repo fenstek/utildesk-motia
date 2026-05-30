@@ -1,6 +1,11 @@
 ---
 slug: tads
 title: TADS (Text Adventure Development System)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Open Source
 tags:
@@ -96,26 +101,26 @@ TADS is open source and therefore free to use. There are no hidden costs or subs
 
 ## FAQ
 
-**1. Do I need programming knowledge to use TADS?**  
+**1. Do I need programming knowledge to use TADS?**
 Basic programming knowledge is helpful, since TADS uses its own programming language. However, beginners can learn with the help of tutorials and community support.
 
-**2. On which platforms can I play games created with TADS?**  
+**2. On which platforms can I play games created with TADS?**
 TADS games are platform-independent and can run on Windows, macOS, and Linux.
 
-**3. Is TADS only for text adventures?**  
+**3. Is TADS only for text adventures?**
 Yes, the system is specifically designed for text-based games and interactive stories and does not support graphical game content.
 
-**4. Can I download and use TADS for free?**  
+**4. Can I download and use TADS for free?**
 Yes, TADS is open source and available free of charge.
 
-**5. Is there an active community or support?**  
+**5. Is there an active community or support?**
 Yes, there is a committed community, forums, and extensive documentation to help with questions and problems.
 
-**6. How complex can games made with TADS be?**  
+**6. How complex can games made with TADS be?**
 TADS allows the development of very complex games with extensive worlds, branching storylines, and detailed interactions.
 
-**7. Can I use TADS for commercial projects?**  
+**7. Can I use TADS for commercial projects?**
 Yes, the open-source license also permits commercial use, although the license terms should be reviewed.
 
-**8. Are there alternatives if I am looking for a simpler solution?**  
+**8. Are there alternatives if I am looking for a simpler solution?**
 Tools like Twine or Quest are more accessible and are well suited for beginners without programming knowledge.

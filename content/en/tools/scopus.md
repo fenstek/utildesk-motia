@@ -1,6 +1,11 @@
 ---
 slug: scopus
 title: Scopus
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Video
 price_model: Plan-based
 tags:
@@ -98,26 +103,26 @@ Scopus pricing depends heavily on the specific licensing model and provider. Ins
 
 ## FAQ
 
-**1. What is the main purpose of Scopus?**  
+**1. What is the main purpose of Scopus?**
 Scopus is used for comprehensive research into scholarly literature and for analyzing research performance using bibliometric data.
 
-**2. How up to date is the data in Scopus?**  
+**2. How up to date is the data in Scopus?**
 The database is updated regularly, with new publications usually added promptly to enable current research.
 
-**3. Do I need a subscription to use Scopus?**  
+**3. Do I need a subscription to use Scopus?**
 Yes, Scopus is generally paid and offered through institutional or individual subscriptions.
 
-**4. Which subject areas does Scopus cover?**  
+**4. Which subject areas does Scopus cover?**
 Scopus covers numerous disciplines, including natural sciences, engineering, medicine, social sciences, arts, and humanities.
 
-**5. Can I use Scopus for citation analysis?**  
+**5. Can I use Scopus for citation analysis?**
 Yes, Scopus offers extensive tools for analyzing citations, author profiles, and research impact.
 
-**6. Is there a way to receive notifications about new publications?**  
+**6. Is there a way to receive notifications about new publications?**
 Yes, users can set up alerts for specific search queries or authors to receive automatic updates.
 
-**7. How does Scopus differ from Google Scholar?**  
+**7. How does Scopus differ from Google Scholar?**
 Scopus is a curated, paid database with advanced analysis features, while Google Scholar is free but offers less controlled data quality.
 
-**8. Are videos also integrated into Scopus?**  
+**8. Are videos also integrated into Scopus?**
 Scopus primarily focuses on scholarly text, but in some cases it also offers multimedia content to support research.

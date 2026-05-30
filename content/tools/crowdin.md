@@ -1,6 +1,11 @@
 ---
 slug: crowdin
 title: Crowdin
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Agents"
 price_model: "Freemium"
 tags: [automation, translation, productivity]
@@ -77,26 +82,26 @@ Crowdin macht Übersetzung zu einem Produktprozess. Je früher Entwickler, Redak
 
 ## FAQ
 
-**1. Unterstützt Crowdin maschinelle Übersetzungen?**  
+**1. Unterstützt Crowdin maschinelle Übersetzungen?**
 Ja, Crowdin integriert verschiedene maschinelle Übersetzungsdienste, um den Übersetzungsprozess zu beschleunigen.
 
-**2. Kann Crowdin in bestehende Entwicklungsprozesse integriert werden?**  
+**2. Kann Crowdin in bestehende Entwicklungsprozesse integriert werden?**
 Ja, Crowdin bietet APIs und Plugins für viele gängige Tools wie GitHub, GitLab, Bitbucket, Jira und mehr.
 
-**3. Ist Crowdin auch für kleine Teams kostenlos nutzbar?**  
+**3. Ist Crowdin auch für kleine Teams kostenlos nutzbar?**
 Ja, das Freemium-Modell ermöglicht eine kostenfreie Nutzung mit begrenzten Funktionen und Übersetzungsvolumen.
 
-**4. Wie sicher sind die Daten auf Crowdin?**  
+**4. Wie sicher sind die Daten auf Crowdin?**
 Crowdin verwendet branchenübliche Sicherheitsstandards und Verschlüsselung, um die Daten seiner Nutzer zu schützen.
 
-**5. Gibt es eine mobile App für Crowdin?**  
+**5. Gibt es eine mobile App für Crowdin?**
 Ja, Crowdin bietet eine mobile App, mit der Nutzer auch unterwegs auf Übersetzungsprojekte zugreifen können.
 
-**6. Welche Dateiformate unterstützt Crowdin?**  
+**6. Welche Dateiformate unterstützt Crowdin?**
 Crowdin unterstützt eine Vielzahl von Formaten, darunter JSON, XML, YAML, PO, XLIFF, HTML, Markdown und viele weitere.
 
-**7. Wie funktioniert das Rollen- und Benutzermanagement?**  
+**7. Wie funktioniert das Rollen- und Benutzermanagement?**
 Crowdin ermöglicht die Vergabe differenzierter Rechte für Administratoren, Übersetzer, Reviewer und andere Rollen innerhalb eines Projekts.
 
-**8. Bietet Crowdin Support und Schulungen an?**  
+**8. Bietet Crowdin Support und Schulungen an?**
 Je nach Plan bietet Crowdin verschiedene Support-Level sowie Ressourcen und Schulungen zur optimalen Nutzung der Plattform.

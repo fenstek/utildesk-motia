@@ -1,11 +1,15 @@
 ---
 slug: "wipo-patentscope"
 title: "WIPO PATENTSCOPE"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Developer"
 tags: [patents, research, search, data]
 description: "WIPO PATENTSCOPE is a free patent search platform for exploring international patent applications, technical documents and prior art signals."
 ---
-
 # WIPO PATENTSCOPE
 
 WIPO PATENTSCOPE gives researchers, engineers and patent professionals access to a large international patent database. It is useful for checking prior art, following technical developments and understanding how inventions are filed across markets.

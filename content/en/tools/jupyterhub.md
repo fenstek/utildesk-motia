@@ -1,6 +1,11 @@
 ---
 slug: jupyterhub
 title: JupyterHub
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -103,28 +108,28 @@ When comparing options, JupyterHub should not only be measured against very simi
 
 ## FAQ
 
-**1. What is JupyterHub?**  
+**1. What is JupyterHub?**
 JupyterHub is a platform for the shared use and management of Jupyter notebooks in a multi-user environment.
 
-**2. Is JupyterHub free?**  
+**2. Is JupyterHub free?**
 Yes, JupyterHub is open source and can be used free of charge. Costs mainly arise from the infrastructure.
 
-**3. Which programming languages are supported?**  
+**3. Which programming languages are supported?**
 JupyterHub supports all programming languages for which Jupyter kernels exist, including Python, R, Julia, and many others.
 
-**4. How is JupyterHub installed?**  
+**4. How is JupyterHub installed?**
 JupyterHub can be installed on your own servers, in the cloud, or in container environments such as Kubernetes. Installation requires technical knowledge.
 
-**5. Can JupyterHub be integrated into companies?**  
+**5. Can JupyterHub be integrated into companies?**
 Yes, JupyterHub can be integrated into existing authentication systems and scales for enterprise use.
 
-**6. Is there a user interface for JupyterHub?**  
+**6. Is there a user interface for JupyterHub?**
 Yes, users access their notebooks and resources through a web-based interface.
 
-**7. How does collaboration work in JupyterHub?**  
+**7. How does collaboration work in JupyterHub?**
 Multiple users can access the platform and edit notebooks at the same time, while resources are managed centrally.
 
-**8. Is there support or commercial offering for JupyterHub?**  
+**8. Is there support or commercial offering for JupyterHub?**
 There are various providers that offer managed JupyterHub services with support and additional features for a fee.
 
 ---

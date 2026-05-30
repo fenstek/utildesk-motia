@@ -1,6 +1,11 @@
 ---
 slug: deepl
 title: DeepL
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: "Freemium"
 tags:
@@ -112,26 +117,26 @@ DeepL bietet ein Freemium-Modell an. Die kostenlose Version ermöglicht grundleg
 
 ## FAQ
 
-**1. Wie genau sind die Übersetzungen von DeepL?**  
+**1. Wie genau sind die Übersetzungen von DeepL?**
 Die Übersetzungen von DeepL gelten als eine der genauesten auf dem Markt, da sie auf fortschrittlichen neuronalen Netzwerken basieren. Dennoch ist bei sehr komplexen Texten eine manuelle Korrektur empfehlenswert.
 
-**2. Welche Sprachen unterstützt DeepL?**  
+**2. Welche Sprachen unterstützt DeepL?**
 DeepL unterstützt eine Vielzahl von Sprachen, darunter Deutsch, Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Polnisch, Russisch, Japanisch, Chinesisch und weitere. Die genaue Liste kann je nach Version variieren.
 
-**3. Kann ich ganze Dokumente übersetzen?**  
+**3. Kann ich ganze Dokumente übersetzen?**
 Ja, DeepL ermöglicht die Übersetzung ganzer Dokumente in verschiedenen Formaten wie DOCX, PPTX oder PDF direkt im Tool.
 
-**4. Gibt es eine mobile App von DeepL?**  
+**4. Gibt es eine mobile App von DeepL?**
 Ja, DeepL bietet Apps für mobile Geräte sowie Desktop-Anwendungen für Windows und Mac an.
 
-**5. Ist DeepL sicher für sensible Daten?**  
+**5. Ist DeepL sicher für sensible Daten?**
 DeepL legt Wert auf Datenschutz und verwendet Verschlüsselung. Dennoch sollte bei besonders sensiblen Informationen die Nutzung der Online-Version mit Vorsicht erfolgen.
 
-**6. Wie unterscheiden sich die kostenpflichtigen Pläne von der kostenlosen Version?**  
+**6. Wie unterscheiden sich die kostenpflichtigen Pläne von der kostenlosen Version?**
 Bezahlte Pläne bieten erweiterte Funktionen wie unbegrenzte Übersetzungen, größere Dokumentengrößen, API-Zugriff und erweiterte Glossarfunktionen.
 
-**7. Kann ich DeepL offline verwenden?**  
+**7. Kann ich DeepL offline verwenden?**
 Derzeit ist DeepL hauptsächlich als Online-Dienst verfügbar. Einige Apps bieten eingeschränkte Offline-Funktionen, die jedoch nicht den vollen Funktionsumfang abdecken.
 
-**8. Wie kann ich DeepL in meine Arbeitsprozesse integrieren?**  
+**8. Wie kann ich DeepL in meine Arbeitsprozesse integrieren?**
 DeepL bietet Browser-Plugins, Desktop-Apps und eine API, die in verschiedene Softwarelösungen integriert werden können, um Übersetzungen nahtlos in den Workflow einzubinden.

@@ -1,6 +1,11 @@
 ---
 slug: lokalise
 title: Lokalise
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: null
 tags:
@@ -115,26 +120,26 @@ Detailed and current pricing should be checked directly on the provider's websit
 
 ## FAQ
 
-**1. Is Lokalise suitable for small teams?**  
+**1. Is Lokalise suitable for small teams?**
 Yes, Lokalise also offers plans and features that are suitable for small teams and startups. However, the platform also scales for larger companies.
 
-**2. Which languages does Lokalise support?**  
+**2. Which languages does Lokalise support?**
 In principle, Lokalise supports all languages used in digital products. The number of supported languages is effectively unlimited.
 
-**3. Is there a free trial?**  
+**3. Is there a free trial?**
 Many providers such as Lokalise typically offer a free trial period or demo version so you can test the features before buying.
 
-**4. How does integration into existing workflows work?**  
+**4. How does integration into existing workflows work?**
 Lokalise offers APIs, CLI tools, and integrations with tools like GitHub, Slack, or Jira to fit seamlessly into existing development and translation processes.
 
-**5. Can Lokalise use machine translations?**  
+**5. Can Lokalise use machine translations?**
 Yes, the platform supports AI-powered translation suggestions and can be connected to various machine translation services.
 
-**6. How secure is data in Lokalise?**  
+**6. How secure is data in Lokalise?**
 As a cloud service, Lokalise relies on modern security standards and encryption. Details about data security should be checked individually.
 
-**7. Which file formats can be imported and exported?**  
+**7. Which file formats can be imported and exported?**
 Lokalise supports a broad range of formats such as JSON, XML, CSV, YAML, Android and iOS strings, and many more.
 
-**8. Is there an offline function?**  
+**8. Is there an offline function?**
 Lokalise is primarily cloud-based. Offline work is only possible to a limited extent, as the platform depends on an internet connection.

@@ -1,6 +1,11 @@
-﻿---
+---
 slug: followup-cc
 title: FollowUp.cc
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -92,7 +97,8 @@ Depending on the provider, there is often a Freemium model or a free trial that 
 **4. Can I use FollowUp.cc in a team?**
 Yes, the tool offers features for collaborative management of follow-ups, making it easier for teams to work together.
 
-**5. How secure are my data at FollowUp.cc?**  elnFollowUp.cc uses standard security measures. Companies should, however, check their own data protection guidelines and ensure that the use complies with them.
+**5. How secure are my data at FollowUp.cc?**
+elnFollowUp.cc uses standard security measures. Companies should, however, check their own data protection guidelines and ensure that the use complies with them.
 
 **6. Can I use FollowUp.cc on my mobile device?**
 Yes, there are mobile apps and browser extensions that enable access and management of follow-ups even on the go.

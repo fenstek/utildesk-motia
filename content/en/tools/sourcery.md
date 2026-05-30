@@ -1,6 +1,11 @@
 ---
 slug: sourcery
 title: Sourcery
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer Tools
 price_model: Plan-based
 tags:
@@ -94,28 +99,28 @@ When comparing options, Sourcery should not only be measured against very simila
 
 ## FAQ
 
-**1. Does Sourcery only support Python?**  
+**1. Does Sourcery only support Python?**
 Yes, Sourcery currently focuses on the Python programming language. Other languages are not currently supported.
 
-**2. How is Sourcery integrated into the development process?**  
+**2. How is Sourcery integrated into the development process?**
 Sourcery can be easily integrated into popular IDEs such as VS Code or JetBrains products and can also be connected to CI/CD pipelines.
 
-**3. Is Sourcery suitable for beginners?**  
+**3. Is Sourcery suitable for beginners?**
 Yes, Sourcery can help beginners write better code. However, the suggestions should always be reviewed and understood.
 
-**4. Is there a free version of Sourcery?**  
+**4. Is there a free version of Sourcery?**
 Yes, there is a free basic version that offers essential features. Advanced features are usually paid.
 
-**5. Can Sourcery's automatic improvement suggestions change the code?**  
+**5. Can Sourcery's automatic improvement suggestions change the code?**
 Sourcery suggests changes but does not apply them automatically. The developer decides which suggestions to implement.
 
-**6. How secure is the data when using Sourcery?**  
+**6. How secure is the data when using Sourcery?**
 Different privacy policies apply depending on the provider. It is recommended to review the applicable terms before use.
 
-**7. Can Sourcery be used in team projects?**  
+**7. Can Sourcery be used in team projects?**
 Yes, Sourcery supports team features and makes it easier to review and improve code collaboratively.
 
-**8. What advantages does Sourcery offer over manual code reviews?**  
+**8. What advantages does Sourcery offer over manual code reviews?**
 Sourcery automates many standard improvements, saves time, and helps identify common errors faster. However, it does not fully replace human reviews.
 
 **9. How should a team test Sourcery?**

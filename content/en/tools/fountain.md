@@ -1,6 +1,11 @@
 ---
 slug: fountain
 title: Fountain
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -91,28 +96,28 @@ Fountain offers a subscription model with different pricing tiers depending on t
 
 ## FAQ
 
-**1. What advantages does Fountain offer compared to traditional recruiting methods?**  
+**1. What advantages does Fountain offer compared to traditional recruiting methods?**
 Fountain automates many manual processes, saving time and increasing efficiency in candidate selection through AI-powered algorithms.
 
-**2. Is Fountain suitable for small businesses?**  
+**2. Is Fountain suitable for small businesses?**
 Yes, Fountain is scalable and offers different pricing models that are also suitable for small and medium-sized businesses.
 
-**3. Which integrations does Fountain support?**  
+**3. Which integrations does Fountain support?**
 Fountain can usually be integrated with common HR systems, job boards, and communication tools to optimize the workflow.
 
-**4. How secure is data in Fountain?**  
+**4. How secure is data in Fountain?**
 The provider places importance on data protection and compliance and meets common standards to ensure the security and confidentiality of applicant data.
 
-**5. Is there a mobile app for Fountain?**  
+**5. Is there a mobile app for Fountain?**
 Fountain is mobile optimized and allows application management on smartphones and tablets as well.
 
-**6. Can Fountain cover the entire recruiting process?**  
+**6. Can Fountain cover the entire recruiting process?**
 Yes, from posting the job ad to hiring, Fountain supports many steps with automation and AI.
 
-**7. How long does it take to implement Fountain?**  
+**7. How long does it take to implement Fountain?**
 Implementation time depends on the scope of use and existing systems, but thanks to cloud technology it is usually quick to set up.
 
-**8. Does Fountain offer support and training?**  
+**8. Does Fountain offer support and training?**
 In general, the provider offers support and training materials to make onboarding and usage easier.
 
 Beyond the list price, Fountain should be evaluated by the cost of adoption. Relevant factors include licensing model, storage, export options, templates, team approvals, and training. For team use, these indirect costs can matter more than the monthly or annual subscription itself.

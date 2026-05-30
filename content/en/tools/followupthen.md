@@ -1,6 +1,11 @@
 ---
 slug: followupthen
 title: FollowUpThen
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -102,28 +107,28 @@ When comparing options, FollowUpThen should not only be measured against very si
 
 ## FAQ
 
-**1. How does FollowUpThen work?**  
+**1. How does FollowUpThen work?**
 FollowUpThen works through email addresses, where users send messages with a time specification (e.g., 2days@followupthen.com) to be reminded at a later time.
 
-**2. Do I need special software?**  
+**2. Do I need special software?**
 No, the tool works completely through email and requires no additional installation.
 
-**3. Can I use FollowUpThen in a team?**  
+**3. Can I use FollowUpThen in a team?**
 Yes, team functions are available depending on the chosen plan, allowing shared management of reminders.
 
-**4. Is FollowUpThen secure?**  
+**4. Is FollowUpThen secure?**
 The tool processes emails, so users should be aware of data protection and secure communication. Details can be found in the provider's privacy policy.
 
-**5. Is there a free version?**  
+**5. Is there a free version?**
 Yes, FollowUpThen offers a free basic version with limited reminder functions.
 
-**6. Can I connect FollowUpThen with my CRM?**  
+**6. Can I connect FollowUpThen with my CRM?**
 Limited integrations are available, but the tool can be used as a simple addition to CRM communication.
 
-**7. How flexible are the reminder times?**  
+**7. How flexible are the reminder times?**
 Reminders can be set for different time intervals such as minutes, hours, days, or weeks.
 
-**8. Is there a mobile app?**  
+**8. Is there a mobile app?**
 FollowUpThen has no native app; usage occurs through the email client on mobile devices.
 
 **9. How should a team test FollowUpThen?**

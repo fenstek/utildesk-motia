@@ -1,8 +1,13 @@
 ---
 slug: appinventor
 title: AppInventor
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
-price_model: 
+price_model:
 tags: ["no-code", "education", "developer-tools", "automation"]
 official_url: "https://appinventor.mit.edu/"
 popularity: 0
@@ -28,15 +33,11 @@ Für kleinere Tests reicht oft ein klar abgegrenzter Prozess. AppInventor sollte
 
 Für die Entscheidung reicht keine Feature-Liste. Das Team sollte vorher festhalten, welche Aufgabe AppInventor entlastet, wer das Ergebnis abnimmt und wann der Test als gescheitert gilt.
 
-## Redaktionelle Einschätzung
+## Redaktionelle Einordnung
 
-AppInventor kann viel Wirkung entfalten, wenn es in einen sauberen Prozess eingebettet wird. Ohne klare Zuständigkeiten bleibt der Nutzen dagegen schnell diffus, selbst wenn die Oberfläche überzeugend aussieht.
+Bei AppInventor beginnt die Prüfung beim Lernziel: Welche Aufgabe soll klarer werden, welches Feedback bekommen Lernende, und wer pflegt die Inhalte? Wir würden eine konkrete Übung mit Zielgruppe und Testdurchlauf bewerten.
 
-Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test über Review bis zur CI-Ausführung. Erst danach sollte entschieden werden, ob AppInventor nur ein nettes Zusatzwerkzeug ist oder wirklich ein belastbarer Teil des Workflows werden kann.
-
-- **Worauf achten:** Das Team sollte bei AppInventor prüfen, ob Fehlerquote, Review-Aufwand, Geschwindigkeit und Nachvollziehbarkeit nach dem Test stabiler sind und nicht nur in der Demo überzeugen.
-- **Guter Startpunkt:** Besser ein enger Praxisfall mit sauberem Review als ein breiter Demo-Vergleich, der für AppInventor nur schöne Einzelfälle zeigt.
-- **Häufiger Stolperstein:** AppInventor enttäuscht, wenn Standards, Testdaten und Verantwortlichkeiten nur nebenbei entstehen.
+AppInventor passt, wenn Lernpfade wiederholbar und Materialien nachvollziehbar bleiben. Für einmalige oder stark individuelle Schulungen braucht es weiterhin fachliche Begleitung.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/appinventor-editorial.webp" alt="Illustration zu App Inventor: No-Code-App-Baukasten mit Puzzlemodulen und Smartphone-Prototyp" loading="lazy" decoding="async" />
@@ -55,7 +56,7 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - Möglichkeit, externe Erweiterungen (Extensions) einzubinden
 - Unterstützung von Datenbanken und Web-APIs für dynamische Inhalte
 
-- **Praxis-Workflow:** AppInventor sollte anhand eines realen Entwicklungsablaufs vom lokalen Test über Review bis zur CI-Ausführung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für AppInventor sollte der erste Test mit eine kleine Änderung in einem echten Projekt mit Review, Testlauf und Rollback-Pfad laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Für AppInventor zählt im Alltag, ob Fehlerquote, Review-Aufwand, Geschwindigkeit und Nachvollziehbarkeit so dokumentiert werden, dass eine zweite Person sie prüfen kann.
 - **Team-Übergabe:** Nützlich wird AppInventor besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -100,28 +101,28 @@ Beim Vergleich lohnt es sich, AppInventor nicht nur gegen sehr ähnliche Produkt
 
 ## FAQ
 
-**1. Brauche ich Programmierkenntnisse, um AppInventor zu nutzen?**  
+**1. Brauche ich Programmierkenntnisse, um AppInventor zu nutzen?**
 Nein, AppInventor ist für Nutzer ohne Programmierkenntnisse konzipiert und verwendet eine visuelle Block-Programmierung.
 
-**2. Kann ich mit AppInventor Apps für iOS erstellen?**  
+**2. Kann ich mit AppInventor Apps für iOS erstellen?**
 Die Hauptunterstützung liegt bei Android-Apps. iOS-Unterstützung ist eingeschränkt und nicht offiziell vollumfänglich verfügbar.
 
-**3. Ist AppInventor kostenlos?**  
+**3. Ist AppInventor kostenlos?**
 Ja, AppInventor ist eine kostenlose Open-Source-Plattform. Es können keine direkten Kosten für die Nutzung anfallen.
 
-**4. Wie kann ich meine App testen?**  
+**4. Wie kann ich meine App testen?**
 Apps können in Echtzeit auf einem verbundenen Android-Gerät oder über einen Emulator getestet werden.
 
-**5. Kann ich meine App im Google Play Store veröffentlichen?**  
+**5. Kann ich meine App im Google Play Store veröffentlichen?**
 Ja, die erstellten Apps können als APK exportiert und im Google Play Store veröffentlicht werden.
 
-**6. Welche Funktionen kann ich in meine Apps integrieren?**  
+**6. Welche Funktionen kann ich in meine Apps integrieren?**
 AppInventor unterstützt Sensoren, Kamera, GPS, Datenbanken, Web-APIs und weitere mobile Geräteeigenschaften.
 
-**7. Gibt es eine Community oder Support?**  
+**7. Gibt es eine Community oder Support?**
 Ja, es gibt eine aktive Community, Foren und viele Tutorials, die den Einstieg erleichtern.
 
-**8. Für welche Zielgruppen ist AppInventor besonders empfehlenswert?**  
+**8. Für welche Zielgruppen ist AppInventor besonders empfehlenswert?**
 Für Einsteiger, Schüler, Lehrer und alle, die schnell und einfach mobile Apps entwickeln möchten, ohne eine Programmiersprache zu lernen.
 
 **9. Wie testet man AppInventor sinnvoll im Team?**

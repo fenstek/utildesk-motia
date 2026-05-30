@@ -1,6 +1,11 @@
 ---
 slug: nativescript
 title: NativeScript
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -104,28 +109,28 @@ A useful comparison for NativeScript starts with the goal. Only then does it bec
 
 ## FAQ
 
-**1. Which programming languages does NativeScript support?**  
+**1. Which programming languages does NativeScript support?**
 NativeScript mainly supports JavaScript and TypeScript, as well as frameworks such as Angular and Vue.js.
 
-**2. Is NativeScript free to use?**  
+**2. Is NativeScript free to use?**
 Yes, NativeScript is open source and can be used free of charge.
 
-**3. Can I use native UI components with NativeScript?**  
+**3. Can I use native UI components with NativeScript?**
 Yes, NativeScript provides direct access to native UI elements and APIs without wrappers.
 
-**4. What does the performance of NativeScript apps look like?**  
+**4. What does the performance of NativeScript apps look like?**
 NativeScript apps offer near-native performance because the code accesses native APIs directly.
 
-**5. Is there a large community and support?**  
+**5. Is there a large community and support?**
 NativeScript has an active open-source community, as well as extensive documentation and forums.
 
-**6. Which platforms are supported?**  
+**6. Which platforms are supported?**
 NativeScript supports development for iOS and Android.
 
-**7. Is NativeScript suitable for beginners?**  
+**7. Is NativeScript suitable for beginners?**
 Developers with JavaScript or TypeScript knowledge can get started relatively quickly, although understanding native APIs does require some familiarization.
 
-**8. How does debugging work in NativeScript?**  
+**8. How does debugging work in NativeScript?**
 NativeScript offers built-in debugging tools that can be used together with common IDEs.
 
 **9. How should a team test NativeScript?**

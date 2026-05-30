@@ -1,6 +1,11 @@
 ---
 slug: mycroft
 title: Mycroft
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Chatbots"
 price_model: Open Source
 tags: [assistant, voice, open-source]
@@ -24,11 +29,11 @@ Mycroft richtet sich vor allem an technikaffine Nutzer, die Wert auf Datenschutz
 - **Übergaben im Team:** Mycroft kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Mycroft weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Mycroft ist nicht die freundliche erste Antwort entscheidend, sondern die Kontrolle über Wissen, Grenzen und Übergaben. Ein guter Pilot definiert wenige Dialogfälle, Eskalation an Menschen und verbotene Antwortbereiche.
 
-Praktisch ist Mycroft vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Mycroft kann entlasten, wenn Tonfall, Wissensbasis und Auswertung gepflegt werden. Ohne Review entstehen schnell plausible Antworten, die niemand sauber verantwortet.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/mycroft-editorial.webp" alt="Illustration zu Mycroft: redaktionelle Workflow-Szene zu Mycroft mit toolbezogenen Arbeitsobjekten" loading="lazy" decoding="async" />
@@ -64,57 +69,3 @@ Praktisch ist Mycroft vor allem, wenn es vorhandene Abläufe entlastet, statt ei
 - Abhängigkeit von Community-Support statt professionellem Kundendienst.
 - Sprachverständnis und Erkennungsgenauigkeit können je nach Setup variieren.
 - Nicht alle bekannten Dienste sind nativ integriert.
-
-## Workflow-Fit
-
-Mycroft passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Mycroft nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Mycroft landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Mycroft außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Mycroft.
-
-## Redaktionelle Einschätzung
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Mycroft wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Mycroft ist Open Source und grundsätzlich kostenlos nutzbar. Es fallen keine Lizenzgebühren an. Für spezielle Hardware-Varianten oder professionelle Supportangebote können je nach Anbieter Kosten entstehen. Nutzer können Mycroft auf eigener Hardware installieren, was zusätzliche Kosten für Geräte und Infrastruktur bedeuten kann. Es existieren keine Abonnement- oder Nutzungsbasierte Preisstrukturen seitens Mycroft selbst.
-
-## Alternativen zu Mycroft
-
-- **Amazon Alexa:** Kommerzieller Sprachassistent mit breiter Geräteunterstützung und umfangreichen Skills.
-- **Google Assistant:** Starker KI-basierter Assistent mit umfangreichen Integrationen und hoher Erkennungsgenauigkeit.
-- **Apple Siri:** Sprachassistent auf Apple-Geräten mit Fokus auf Integration im Apple-Ökosystem.
-- **Snips (ehemals):** Früher Open-Source-Sprachassistent mit Fokus auf lokale Verarbeitung (mittlerweile eingestellt, aber als Inspiration relevant).
-- **Jasper:** Open-Source-Sprachassistent, der sich an Entwickler und Hobbyisten richtet.
-
-## FAQ
-
-**1. Ist Mycroft wirklich kostenlos?**  
-Ja, Mycroft ist als Open-Source-Projekt kostenlos verfügbar. Nutzer können den Code herunterladen und auf eigener Hardware installieren, ohne Lizenzgebühren zu zahlen.
-
-**2. Welche Sprachen unterstützt Mycroft?**  
-Mycroft unterstützt mehrere Sprachen, wobei Englisch am besten abgedeckt ist. Die Unterstützung weiterer Sprachen hängt von der Community und individuellen Anpassungen ab.
-
-**3. Benötige ich spezielle Hardware, um Mycroft zu nutzen?**  
-Mycroft läuft auf verschiedenen Geräten, darunter Raspberry Pi, Desktop-PCs und kompatible Smart-Home-Geräte. Für optimale Leistung kann spezielle Hardware sinnvoll sein, ist aber nicht zwingend erforderlich.
-
-**4. Wie sicher sind meine Daten bei Mycroft?**  
-Da Mycroft Open Source ist und lokale Verarbeitung unterstützt, haben Nutzer die Kontrolle über ihre Daten. Es werden keine Daten automatisch an zentrale Server großer Unternehmen gesendet.
-
-**5. Kann ich Mycroft mit meinem Smart Home verbinden?**  
-Ja, Mycroft unterstützt die Integration mit vielen Smart-Home-Geräten und -Protokollen, allerdings variiert die Kompatibilität je nach verwendeten Geräten und Skills.
-
-**6. Gibt es einen offiziellen Support für Mycroft?**  
-Mycroft wird hauptsächlich durch eine Community unterstützt. Es gibt Foren, Dokumentationen und Entwicklerressourcen, aber keinen klassischen Kundendienst wie bei kommerziellen Anbietern.
-
-**7. Wie kann ich Mycroft erweitern oder anpassen?**  
-Mycroft bietet eine offene API und eine Entwicklungsumgebung, mit der Nutzer eigene Skills programmieren und bestehende Funktionen anpassen können.
-
-**8. Funktioniert Mycroft auch ohne Internetverbindung?**  
-Einige Basisfunktionen von Mycroft können offline genutzt werden, für viele Dienste ist jedoch eine Internetverbindung erforderlich. Der Umfang der Offline-Funktionalität hängt vom Setup ab.

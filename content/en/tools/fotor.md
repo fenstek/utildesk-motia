@@ -1,6 +1,11 @@
 ---
 slug: fotor
 title: Fotor
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -96,26 +101,26 @@ The exact pricing may vary depending on the provider and offer.
 
 ## FAQ
 
-**1. Is Fotor free to use?**  
+**1. Is Fotor free to use?**
 Yes, Fotor offers a free basic version with many features. For advanced features and higher quality, a paid subscription is required.
 
-**2. What AI-powered features does Fotor offer?**  
+**2. What AI-powered features does Fotor offer?**
 Fotor uses AI for automatic image enhancement, background removal, and text-to-image generation (depending on the plan).
 
-**3. Can I use Fotor without installation?**  
+**3. Can I use Fotor without installation?**
 Yes, Fotor is web-based and can be used directly in the browser. It also has mobile apps for iOS and Android.
 
-**4. What file formats does Fotor support for export?**  
+**4. What file formats does Fotor support for export?**
 Fotor supports common formats like JPG, PNG, and PDF, with varying availability depending on the plan.
 
-**5. Is Fotor suitable for professional designers?**  
+**5. Is Fotor suitable for professional designers?**
 Fotor is more suitable for beginners and users with simple to moderate requirements. For very complex projects, specialized professional software is recommended.
 
-**6. How secure are my data with Fotor?**  
+**6. How secure are my data with Fotor?**
 Fotor uses standard security measures to protect stored data. More detailed information can be found in the provider's terms of service.
 
-**7. Can I use Fotor for commercial purposes?**  
+**7. Can I use Fotor for commercial purposes?**
 Depending on the license and plan, commercial use is possible. It is recommended to review the respective usage terms.
 
-**8. Is it possible to edit multiple photos at once?**  
+**8. Is it possible to edit multiple photos at once?**
 Yes, batch editing is available, but it is typically only available in the paid versions of Fotor.

@@ -1,6 +1,11 @@
 ---
 slug: google-tabellen
 title: Google Sheets
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -89,26 +94,26 @@ Google Sheets is free to use in its basic version. For businesses and profession
 
 ## FAQ
 
-**1. Is Google Sheets free?**  
+**1. Is Google Sheets free?**
 Yes, Google Sheets is free to use in its basic version. Paid Google Workspace plans are available for advanced features.
 
-**2. Can I use Google Sheets offline?**  
+**2. Can I use Google Sheets offline?**
 Yes, Google Sheets offers an offline mode that lets you edit spreadsheets even without an internet connection. Changes are synchronized once you are back online.
 
-**3. How secure is my data in Google Sheets?**  
+**3. How secure is my data in Google Sheets?**
 Google uses extensive security measures to protect data. However, sensitive information should still be stored in the cloud with caution.
 
-**4. Can I connect Google Sheets with other programs?**  
+**4. Can I connect Google Sheets with other programs?**
 Yes, Google Sheets can be integrated with many Google services and third-party tools. Add-ons and scripts can also extend its functionality.
 
-**5. How many users can work on a spreadsheet at the same time?**  
+**5. How many users can work on a spreadsheet at the same time?**
 Multiple users can work on a spreadsheet in real time at the same time. The exact number depends on the complexity of the spreadsheet and the internet connection.
 
-**6. Which file formats does Google Sheets support?**  
+**6. Which file formats does Google Sheets support?**
 Google Sheets supports importing and exporting formats such as XLSX, CSV, ODS, PDF, and more.
 
-**7. Are there mobile apps for Google Sheets?**  
+**7. Are there mobile apps for Google Sheets?**
 Yes, Google Sheets is available as an app for Android and iOS and allows editing on the go.
 
-**8. Can I use formulas and functions in Google Sheets?**  
+**8. Can I use formulas and functions in Google Sheets?**
 Yes, Google Sheets offers a wide range of formulas and functions, which are also supplemented by AI-powered suggestions.

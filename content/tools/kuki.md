@@ -1,6 +1,11 @@
 ---
 slug: kuki
 title: Kuki
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Chatbots"
 price_model: Freemium
 tags: ["chatbot"]
@@ -103,26 +108,26 @@ Nutzer können die kostenlose Version ausprobieren und bei Bedarf auf ein kosten
 
 ## FAQ
 
-**1. Was ist Kuki?**  
+**1. Was ist Kuki?**
 Kuki ist ein KI-gestützter Chatbot, der natürliche und interaktive Gespräche ermöglicht.
 
-**2. Wie kann ich Kuki nutzen?**  
+**2. Wie kann ich Kuki nutzen?**
 Sie können Kuki über Webbrowser oder unterstützte Apps verwenden. Eine Anmeldung ist je nach Funktionsumfang erforderlich.
 
-**3. Welche Sprachen unterstützt Kuki?**  
+**3. Welche Sprachen unterstützt Kuki?**
 Kuki unterstützt hauptsächlich Englisch, bietet jedoch je nach Version auch weitere Sprachoptionen.
 
-**4. Ist Kuki kostenlos?**  
+**4. Ist Kuki kostenlos?**
 Grundfunktionen sind kostenfrei nutzbar. Für erweiterte Features gibt es Premium-Pläne.
 
-**5. Wie sicher sind meine Daten bei Kuki?**  
+**5. Wie sicher sind meine Daten bei Kuki?**
 Kuki implementiert gängige Datenschutzmaßnahmen, um persönliche Daten zu schützen.
 
-**6. Kann Kuki in bestehende Systeme integriert werden?**  
+**6. Kann Kuki in bestehende Systeme integriert werden?**
 Ja, Kuki bietet API-Schnittstellen für die Integration in verschiedene Anwendungen.
 
-**7. Für welche Anwendungsbereiche eignet sich Kuki?**  
+**7. Für welche Anwendungsbereiche eignet sich Kuki?**
 Kuki eignet sich für Kundenservice, Unterhaltung, Bildung und mehr.
 
-**8. Gibt es eine mobile App für Kuki?**  
+**8. Gibt es eine mobile App für Kuki?**
 Ja, Kuki ist auf mehreren Plattformen, einschließlich mobiler Geräte, verfügbar.

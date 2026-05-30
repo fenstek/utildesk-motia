@@ -1,6 +1,11 @@
 ---
 slug: waves-abbey-road-tg-mastering-chain
 title: Waves Abbey Road TG Mastering Chain
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Audio
 price_model: Subscription
 tags:
@@ -89,26 +94,26 @@ The Waves Abbey Road TG Mastering Chain is available by subscription. Exact cost
 
 ## FAQ
 
-**1. Is Waves Abbey Road TG Mastering Chain suitable for beginners?**  
+**1. Is Waves Abbey Road TG Mastering Chain suitable for beginners?**
 The plugin is primarily aimed at experienced users, but motivated beginners who are willing to familiarize themselves with its features can also use it.
 
-**2. Which DAWs are supported?**  
+**2. Which DAWs are supported?**
 The plugin is compatible with common DAWs such as Ableton Live, Logic Pro, Pro Tools, Cubase, FL Studio, and others.
 
-**3. Do I need special equipment to use the plugin?**  
+**3. Do I need special equipment to use the plugin?**
 No special hardware is required, although a powerful computer is recommended to ensure performance.
 
-**4. Can I use the plugin in real time?**  
+**4. Can I use the plugin in real time?**
 Yes, Waves Abbey Road TG Mastering Chain is optimized for real-time use and can be used for both mixing and mastering.
 
-**5. Is there a demo version?**  
+**5. Is there a demo version?**
 Waves often offers trial versions that let you test the plugin before buying. Availability depends on the current offer.
 
-**6. How does this plugin differ from other mastering tools?**  
+**6. How does this plugin differ from other mastering tools?**
 Its special feature is the emulation of the legendary Abbey Road EMI TG12410 console, which gives the sound its characteristic warmth and musicality.
 
-**7. What system requirements apply to the plugin?**  
+**7. What system requirements apply to the plugin?**
 Requirements vary depending on the DAW and operating system; in general, current Windows and macOS versions are supported.
 
-**8. Is the plugin updated regularly?**  
+**8. Is the plugin updated regularly?**
 Waves maintains its plugins regularly and releases updates that may include improvements and new features.

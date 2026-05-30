@@ -1,6 +1,11 @@
 ---
 slug: microsoft-powerpoint
 title: Microsoft PowerPoint
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Subscription, depending on plan'
 tags:
@@ -94,26 +99,26 @@ Exact prices vary by region, provider, and plan. For detailed information, it is
 
 ## FAQ
 
-**1. Is Microsoft PowerPoint free to use?**  
+**1. Is Microsoft PowerPoint free to use?**
 There is a free online version with limited features, but the full version is generally part of a paid Microsoft 365 subscription.
 
-**2. Which operating systems are supported?**  
+**2. Which operating systems are supported?**
 PowerPoint is available for Windows, macOS, iOS, and Android. The online version is platform-independent.
 
-**3. Are there AI features in PowerPoint?**  
+**3. Are there AI features in PowerPoint?**
 Yes, PowerPoint uses AI, for example for design suggestions (PowerPoint Designer) and the automatic formatting of slides.
 
-**4. Can I share PowerPoint presentations with others?**  
+**4. Can I share PowerPoint presentations with others?**
 Yes, presentations can be shared and co-edited via OneDrive or Microsoft Teams.
 
-**5. Which file formats does PowerPoint support?**  
+**5. Which file formats does PowerPoint support?**
 PowerPoint uses the PPTX format, but also supports import and export of PDF, video, and older PPT files.
 
-**6. How secure are my presentations in PowerPoint?**  
+**6. How secure are my presentations in PowerPoint?**
 With Microsoft 365, data is stored encrypted. Users should still follow their own security measures.
 
-**7. Can I use PowerPoint offline?**  
+**7. Can I use PowerPoint offline?**
 Yes, the desktop version can be used offline. However, an internet connection is required for cloud functions.
 
-**8. Are there training materials or tutorials for PowerPoint?**  
+**8. Are there training materials or tutorials for PowerPoint?**
 Yes, Microsoft offers extensive tutorials, and there are many online courses and communities for support.

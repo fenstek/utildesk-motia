@@ -1,6 +1,11 @@
 ---
 slug: wave-video
 title: Wave.video
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Video
 price_model: Freemium
 tags:
@@ -97,28 +102,28 @@ Alternatives to Wave.video should be chosen by the concrete work problem. In som
 
 ## FAQ
 
-**1. Is Wave.video suitable for beginners?**  
+**1. Is Wave.video suitable for beginners?**
 Yes, the platform is very user-friendly and offers many ready-made templates that make it easy to get started.
 
-**2. Which video formats does Wave.video support?**  
+**2. Which video formats does Wave.video support?**
 Wave.video supports common formats for export and streaming, which are automatically optimized for different platforms.
 
-**3. Can I create live streams with Wave.video?**  
+**3. Can I create live streams with Wave.video?**
 Yes, Wave.video offers live streaming features, although these may vary depending on the plan.
 
-**4. Is there a free version of Wave.video?**  
+**4. Is there a free version of Wave.video?**
 Yes, Wave.video offers a free basic version (Freemium) with limited features.
 
-**5. Can I use my own branding in the videos?**  
+**5. Can I use my own branding in the videos?**
 Branding options are available in the paid plans to customize logos, colors, and fonts.
 
-**6. How many videos can I create with the free version?**  
+**6. How many videos can I create with the free version?**
 The limit depends on the respective plan, but the free version has a restriction on the number and length of videos.
 
-**7. Are subtitles generated automatically?**  
+**7. Are subtitles generated automatically?**
 Wave.video supports automatic subtitles, which improves the accessibility of the videos.
 
-**8. Is team collaboration on projects possible?**  
+**8. Is team collaboration on projects possible?**
 Yes, the platform offers collaboration features that allow multiple users to work on videos together.
 
 **9. How should a team test Wave.video?**

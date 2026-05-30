@@ -1,6 +1,11 @@
 ---
 slug: adobe-xd
 title: Adobe XD
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Subscription
 tags:
@@ -107,32 +112,32 @@ Concrete prices may vary depending on the chosen plan and provider.
 
 ## FAQ
 
-**1. Is Adobe XD free to use?**  
+**1. Is Adobe XD free to use?**
 Yes, Adobe XD offers a free starter version with limited features and cloud storage.
 
-**2. On which operating systems does Adobe XD run?**  
+**2. On which operating systems does Adobe XD run?**
 Adobe XD is available on Windows and macOS.
 
-**3. Can I create interactive prototypes with Adobe XD?**  
+**3. Can I create interactive prototypes with Adobe XD?**
 Yes, creating and sharing interactive prototypes is one of the core features of Adobe XD.
 
-**4. Do I need an internet connection to use Adobe XD?**  
+**4. Do I need an internet connection to use Adobe XD?**
 For cloud-based work and collaboration, an internet connection is necessary, but basic design work can be done offline.
 
-**5. How good is the collaboration in teams with Adobe XD?**  
+**5. How good is the collaboration in teams with Adobe XD?**
 Adobe XD supports real-time collaboration and allows sharing designs with comment functionality, making team work easier.
 
-**6. Is there integration with other Adobe products?**  
+**6. Is there integration with other Adobe products?**
 Yes, Adobe XD integrates well with Photoshop, Illustrator, and other Adobe tools.
 
-**7. Are there plugins available for Adobe XD?**  
+**7. Are there plugins available for Adobe XD?**
 Yes, a wide range of plugins extend the functionality and adapt the tool to individual needs.
 
-**8. What is the learning curve like?**  
+**8. What is the learning curve like?**
 Adobe XD is relatively intuitive, but may require some learning time, especially for complex features and workflows.
 
-**9. Can I use Adobe XD offline?**  
+**9. Can I use Adobe XD offline?**
 Yes, Adobe XD can be used offline, allowing for design work without an internet connection.
 
-**10. How does Adobe XD handle feedback?**  
+**10. How does Adobe XD handle feedback?**
 Adobe XD allows for user feedback to be incorporated directly into the prototype.

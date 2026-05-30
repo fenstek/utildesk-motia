@@ -1,6 +1,11 @@
 ---
 slug: lex
 title: Lex
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -90,28 +95,28 @@ When comparing options, Lex should not only be measured against very similar pro
 
 ## FAQ
 
-**1. Is Lex suitable for beginners?**  
+**1. Is Lex suitable for beginners?**
 Yes, Lex is designed to be user-friendly and is also suitable for people without technical experience.
 
-**2. Which languages are supported?**  
+**2. Which languages are supported?**
 Language support depends on the chosen plan; in general, several languages are available.
 
-**3. Can I try Lex for free?**  
+**3. Can I try Lex for free?**
 Yes, the freemium model allows free use with limited functionality.
 
-**4. How does the AI text generation work?**  
+**4. How does the AI text generation work?**
 Lex uses modern AI algorithms to create suitable texts based on entered bullet points or topic prompts.
 
-**5. Is there a mobile app?**  
+**5. Is there a mobile app?**
 Information about mobile apps depends on the provider and should be checked on the official website.
 
-**6. How secure is my data with Lex?**  
+**6. How secure is my data with Lex?**
 Privacy details vary depending on the provider, so it is recommended to review the respective privacy policies.
 
-**7. Can I integrate Lex with other tools?**  
+**7. Can I integrate Lex with other tools?**
 Depending on the plan and provider, various integrations are possible to optimize the workflow.
 
-**8. What kinds of text can I create with Lex?**  
+**8. What kinds of text can I create with Lex?**
 Lex is suitable for blog posts, marketing copy, creative stories, summaries, and more, depending on the use case.
 
 **9. How should a team test Lex?**

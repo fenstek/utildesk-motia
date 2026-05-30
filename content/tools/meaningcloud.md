@@ -1,6 +1,11 @@
 ---
 slug: meaningcloud
 title: MeaningCloud
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["api", "analytics", "nlp", "text", "developer"]
@@ -28,7 +33,7 @@ MeaningCloud passt zu Teams, die größere Mengen Text in strukturierte Signale 
 Für einzelne Texte oder gelegentliche Analyse ist ein leichtes KI-Tool oft schneller. MeaningCloud lohnt sich eher, wenn Textanalyse wiederholbar, integrierbar und messbar werden soll.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/meaningcloud-editorial.webp" alt="Illustration zu MeaningCloud: semantische Wolken, Entit?ten und Klassifikationspfade ?ber einem Arbeitstisch" loading="lazy" decoding="async" />
+  <img src="/images/tools/meaningcloud-editorial.webp" alt="Illustration zu MeaningCloud: semantische Wolken, Entitäten und Klassifikationspfade Über einem Arbeitstisch" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

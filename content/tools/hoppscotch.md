@@ -1,6 +1,11 @@
 ---
 slug: hoppscotch
 title: Hoppscotch
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: "Open Source"
 tags: ["developer-tools", "api"]
@@ -54,7 +59,7 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - **Open Source:** Kostenlos nutzbar mit aktiver Community und regelmäßigen Updates.
 - **Browserbasiert:** Keine Installation erforderlich, plattformunabhängig.
 
-- **Praxis-Workflow:** Hoppscotch sollte anhand eines realen Entwicklungsablaufs vom lokalen Test über Review bis zur CI-Ausführung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Hoppscotch sollte der erste Test mit einen einzelnen Endpunkt mit Fehlerfällen, Rollenrechten, Logs und Rückbauplan laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Das Team sollte bei Hoppscotch festhalten, wie Fehlerquote, Review-Aufwand, Geschwindigkeit und Nachvollziehbarkeit gemessen, freigegeben und später nachvollzogen werden.
 - **Team-Übergabe:** Nützlich wird Hoppscotch besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -101,28 +106,28 @@ Beim Vergleich lohnt es sich, Hoppscotch nicht nur gegen sehr ähnliche Produkte
 
 ## FAQ
 
-**1. Ist Hoppscotch kostenlos?**  
+**1. Ist Hoppscotch kostenlos?**
 Ja, Hoppscotch ist ein Open-Source-Projekt und kann kostenlos genutzt werden.
 
-**2. Welche API-Typen unterstützt Hoppscotch?**  
+**2. Welche API-Typen unterstützt Hoppscotch?**
 Hoppscotch unterstützt REST, GraphQL, WebSocket, Server-Sent Events (SSE) und andere gängige API-Protokolle.
 
-**3. Benötige ich eine Installation?**  
+**3. Benötige ich eine Installation?**
 Nein, Hoppscotch ist browserbasiert und benötigt keine lokale Installation.
 
-**4. Kann ich Hoppscotch offline verwenden?**  
+**4. Kann ich Hoppscotch offline verwenden?**
 Da Hoppscotch hauptsächlich als Webanwendung konzipiert ist, ist die Offline-Nutzung eingeschränkt. Es gibt jedoch Möglichkeiten, die Anwendung lokal zu hosten.
 
-**5. Gibt es Teamfunktionen?**  
+**5. Gibt es Teamfunktionen?**
 Teamfunktionen sind je nach Hosting und eingesetzter Version unterschiedlich. Die Open-Source-Version bietet eingeschränkte Kollaborationsmöglichkeiten.
 
-**6. Wie speichere ich meine Anfragen?**  
+**6. Wie speichere ich meine Anfragen?**
 Anfragen können in Projekten und Sammlungen organisiert und gespeichert werden, um sie später wiederzuverwenden.
 
-**7. Unterstützt Hoppscotch den Import von Postman Collections?**  
+**7. Unterstützt Hoppscotch den Import von Postman Collections?**
 Ja, Hoppscotch unterstützt den Import und Export von Postman Collections, um den Wechsel zu erleichtern.
 
-**8. Wo finde ich Support und Dokumentation?**  
+**8. Wo finde ich Support und Dokumentation?**
 Support erfolgt hauptsächlich über die GitHub-Community, Foren und die offizielle Dokumentation auf der Hoppscotch-Website.
 
 **9. Wie testet man Hoppscotch sinnvoll im Team?**

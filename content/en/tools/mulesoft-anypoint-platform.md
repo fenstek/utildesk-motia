@@ -1,11 +1,15 @@
 ---
 slug: "mulesoft-anypoint-platform"
 title: "MuleSoft Anypoint Platform"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Developer"
 tags: [api, integration, automation, developer-tools]
 description: "MuleSoft Anypoint Platform helps teams design, manage and connect APIs, applications and data sources across enterprise systems."
 ---
-
 # MuleSoft Anypoint Platform
 
 MuleSoft Anypoint Platform is an enterprise integration platform for API design, lifecycle management and system connectivity. It helps IT and developer teams connect applications, data sources and services without treating every integration as a one-off project.

@@ -1,6 +1,11 @@
 ---
 slug: zendesk
 title: Zendesk
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -73,26 +78,26 @@ Zendesk is a scalable support system, but not a self-running one. Good implement
 
 ## FAQ
 
-**1. Which communication channels does Zendesk support?**  
+**1. Which communication channels does Zendesk support?**
 Zendesk supports email, live chat, phone, social media, and other channels to centrally manage customer inquiries.
 
-**2. Is Zendesk suitable for small businesses?**  
+**2. Is Zendesk suitable for small businesses?**
 Yes, Zendesk offers scalable plans that are also suitable for small teams, with the option to expand flexibly as they grow.
 
-**3. Which AI features are integrated into Zendesk?**  
+**3. Which AI features are integrated into Zendesk?**
 AI features include automatic ticket classification, prioritization, response suggestions, and chatbots for self-service.
 
-**4. How does Zendesk pricing work?**  
+**4. How does Zendesk pricing work?**
 Pricing is usually based on the number of agents and the selected feature set, with different plans for different company sizes.
 
-**5. Can Zendesk be integrated into existing systems?**  
+**5. Can Zendesk be integrated into existing systems?**
 Yes, Zendesk offers numerous integrations with CRM systems, e-commerce platforms, and other business applications.
 
-**6. Is there a mobile app for Zendesk?**  
+**6. Is there a mobile app for Zendesk?**
 Yes, Zendesk provides a mobile app that lets support staff access tickets and customer communication while on the go.
 
-**7. How secure are customer data in Zendesk?**  
+**7. How secure are customer data in Zendesk?**
 Zendesk meets industry-standard security and compliance requirements, but details depend on the specific contract and region.
 
-**8. Does Zendesk offer a trial version?**  
+**8. Does Zendesk offer a trial version?**
 Zendesk generally provides free trial periods so the platform can be evaluated before purchase.

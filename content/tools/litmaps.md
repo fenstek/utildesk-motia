@@ -1,6 +1,11 @@
 ---
 slug: litmaps
 title: Litmaps
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Research"
 price_model: Abonnement
 tags: [research, data, writing]
@@ -14,6 +19,12 @@ generated_at: "2026-05-18"
 Litmaps ist ein Recherchewerkzeug für wissenschaftliche Literatur, das Publikationen nicht nur als Trefferliste zeigt, sondern als Netzwerk aus Zitierungen, ähnlichen Arbeiten und thematischen Nachbarschaften. Der Nutzen liegt besonders in der frühen und mittleren Phase einer Recherche: Man startet mit einigen bekannten Studien, sieht verwandte Arbeiten, entdeckt fehlende Quellen und kann nachvollziehen, wie sich ein Themenfeld entwickelt.
 
 Stark ist Litmaps dort, wo klassische Suchmaschinen zu viele Einzeltreffer liefern und der Zusammenhang zwischen Papers wichtiger wird als die einzelne Ergebnisliste. Für Studierende, Forschende, Autor:innen und Analyst:innen kann das Tool helfen, ein Forschungsgebiet schneller zu kartieren. Es ersetzt aber keine wissenschaftliche Bewertung, keine systematische Suchstrategie und keine genaue Quellenprüfung.
+
+## Redaktionelle Einordnung
+
+Bei Litmaps entscheidet die Nachvollziehbarkeit: Quellen, Notizen, Codes, Suchwege oder Auswertungsschritte müssen später noch erklärbar sein. Wir würden mit einem kleinen echten Forschungs- oder Analysefall starten.
+
+Litmaps lohnt sich, wenn es Material ordnet und Entscheidungen sichtbar macht. Es ersetzt aber keine fachliche Bewertung und keine saubere Methode.
 
 ## Für wen ist Litmaps geeignet?
 

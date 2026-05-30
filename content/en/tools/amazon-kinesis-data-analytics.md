@@ -1,6 +1,11 @@
 ---
 slug: amazon-kinesis-data-analytics
 title: Amazon Kinesis Data Analytics
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Usage-based
 tags:
@@ -103,26 +108,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 ## FAQ
 
-**1. Was ist Amazon Kinesis Data Analytics genau?**  
+**1. Was ist Amazon Kinesis Data Analytics genau?**
 Amazon Kinesis Data Analytics ist ein AWS-Dienst zur Analyse von Streaming-Daten in Echtzeit, der SQL-basierte Abfragen unterstützt und keine eigene Infrastruktur erfordert.
 
-**2. Welche Datenquellen unterstützt Kinesis Data Analytics?**  
+**2. Welche Datenquellen unterstützt Kinesis Data Analytics?**
 Der Dienst arbeitet hauptsächlich mit Amazon Kinesis Data Streams und Kinesis Data Firehose, kann aber auch mit anderen AWS-Diensten kombiniert werden.
 
-**3. Wie wird die Abrechnung bei Kinesis Data Analytics durchgeführt?**  
+**3. Wie wird die Abrechnung bei Kinesis Data Analytics durchgeführt?**
 Die Abrechnung erfolgt nutzungsbasiert, basierend auf der Menge der verarbeiteten Daten und der Laufzeit der Analyseanwendungen.
 
-**4. Benötige ich spezielle Kenntnisse, um Kinesis Data Analytics zu nutzen?**  
+**4. Benötige ich spezielle Kenntnisse, um Kinesis Data Analytics zu nutzen?**
 Grundkenntnisse in SQL sind hilfreich, ebenso wie Erfahrung mit AWS-Diensten und Streaming-Datenkonzepten.
 
-**5. Kann ich Kinesis Data Analytics in bestehende BI-Tools integrieren?**  
+**5. Kann ich Kinesis Data Analytics in bestehende BI-Tools integrieren?**
 Ja, durch Integration mit AWS Lambda, S3 und anderen Diensten können die Ergebnisse in BI-Tools und Dashboards dargestellt werden.
 
-**6. Gibt es eine kostenlose Testversion?**  
+**6. Gibt es eine kostenlose Testversion?**
 AWS bietet eine kostenlose Nutzungsstufe mit begrenztem Umfang, die für erste Tests genutzt werden kann.
 
-**7. Ist Kinesis Data Analytics für kleine Unternehmen geeignet?**  
+**7. Ist Kinesis Data Analytics für kleine Unternehmen geeignet?**
 Der Dienst ist skalierbar und kann je nach Bedarf auch von kleinen Unternehmen genutzt werden, wobei die Kosten je nach Nutzung berücksichtigt werden sollten.
 
-**8. Wie sicher sind die Daten bei Amazon Kinesis Data Analytics?**  
+**8. Wie sicher sind die Daten bei Amazon Kinesis Data Analytics?**
 AWS stellt umfangreiche Sicherheitsfunktionen bereit, darunter Verschlüsselung und Zugriffsmanagement, um die Datenintegrität und Vertraulichkeit zu gewährleisten.

@@ -1,6 +1,11 @@
 ---
 slug: brainscape
 title: Brainscape
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -106,26 +111,26 @@ Brainscape offers a **Freemium** model. The basic version is free and allows acc
 
 ## FAQ
 
-**1. Is Brainscape free to use?**  
+**1. Is Brainscape free to use?**
 Yes, Brainscape offers a free basic version with limited access to functions and learning content.
 
-**2. On which devices can I use Brainscape?**  
+**2. On which devices can I use Brainscape?**
 Brainscape is available for web, iOS, and Android, allowing you to learn on desktop, smartphone, and tablet.
 
-**3. How does the AI-powered repetition work?**  
+**3. How does the AI-powered repetition work?**
 The system automatically adjusts the repetition intervals of the learning cards based on your individual learning pace and memory, maximizing learning effectiveness.
 
-**4. Can I create my own learning cards?**  
+**4. Can I create my own learning cards?**
 Yes, users can create, edit, and share their own cards.
 
-**5. Is there an offline function?**  
+**5. Is there an offline function?**
 Some functions are available offline, but the full range of functionality is usually only accessible with internet connection.
 
-**6. For which languages is Brainscape suitable?**  
+**6. For which languages is Brainscape suitable?**
 Brainscape supports a wide range of languages, primarily in the area of language learning, but is not limited to specific languages.
 
-**7. How secure are my data at Brainscape?**  
+**7. How secure are my data at Brainscape?**
 Brainscape uses industry-standard security measures to protect user data, with varying details depending on the plan.
 
-**8. Is there a trial period for premium features?**  
+**8. Is there a trial period for premium features?**
 Depending on the offer and plan, there may be free trial periods available, which can be checked on the website.

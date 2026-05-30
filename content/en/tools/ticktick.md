@@ -1,6 +1,11 @@
 ---
 slug: ticktick
 title: TickTick
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -69,26 +74,26 @@ TickTick offers a freemium pricing model. Basic functions are free to use, which
 
 ## FAQ
 
-**1. Is TickTick free to use?**  
+**1. Is TickTick free to use?**
 Yes, TickTick offers a free basic version with many features. Advanced features are included in the paid version.
 
-**2. On which platforms can I use TickTick?**  
+**2. On which platforms can I use TickTick?**
 TickTick is available for iOS, Android, Windows, macOS, and as a web app, allowing synchronization across different devices.
 
-**3. Can I use TickTick with a team?**  
+**3. Can I use TickTick with a team?**
 Yes, TickTick supports collaborative functions that allow sharing and editing task lists with others. These features are usually included in paid plans.
 
-**4. How secure is my data with TickTick?**  
+**4. How secure is my data with TickTick?**
 TickTick uses standard security measures for data transmission and storage. More detailed information on data privacy can be found in the provider's terms of use.
 
-**5. Is there offline functionality?**  
+**5. Is there offline functionality?**
 TickTick offers partial offline usage, but synchronization and some features require an Internet connection.
 
-**6. Can I connect TickTick with other calendars?**  
+**6. Can I connect TickTick with other calendars?**
 Yes, TickTick provides calendar integration, allowing you to include appointments from other calendar services (e.g., Google Calendar).
 
-**7. Does TickTick support reminders and recurring tasks?**  
+**7. Does TickTick support reminders and recurring tasks?**
 Yes, the app offers extensive options for custom reminders and flexible recurring tasks.
 
-**8. What payment methods are accepted for the subscription?**  
+**8. What payment methods are accepted for the subscription?**
 Payment methods may vary depending on platform and provider, commonly including credit card, PayPal, and app store payments.

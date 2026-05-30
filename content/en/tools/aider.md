@@ -1,6 +1,11 @@
 ---
 slug: aider
 title: Aider
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Plan-based
 tags:
@@ -100,28 +105,28 @@ Alternatives to Aider should be chosen by the concrete work problem. In some cas
 
 ## FAQ
 
-**1. What is Aider exactly?**  
+**1. What is Aider exactly?**
 Aider is a tool that uses AI to generate, analyze, and optimize code.
 
-**2. Which programming languages are supported?**  
+**2. Which programming languages are supported?**
 Aider supports various programming languages, including Python, JavaScript, Java, and more.
 
-**3. Do I need special knowledge to use Aider?**  
+**3. Do I need special knowledge to use Aider?**
 Basic knowledge of the command line is helpful to effectively use Aider.
 
-**4. Is there a free version of Aider?**  
+**4. Is there a free version of Aider?**
 Many providers offer free trial versions with limited functionality, ideal for testing.
 
-**5. How does Aider improve code quality?**  
+**5. How does Aider improve code quality?**
 Through automated analysis and suggestions for error correction, Aider improves code quality and reliability.
 
-**6. Can Aider be integrated into existing workflows?**  
+**6. Can Aider be integrated into existing workflows?**
 Yes, due to its CLI integration, Aider can be easily incorporated into existing development processes.
 
-**7. Is Aider suitable for teams?**  
+**7. Is Aider suitable for teams?**
 Yes, Aider supports collaborative features and facilitates teamwork on code projects.
 
-**8. Where can I find more information and support?**  
+**8. Where can I find more information and support?**
 Additional details and support can be found on the provider's website.
 
 **9. How should a team test Aider?**

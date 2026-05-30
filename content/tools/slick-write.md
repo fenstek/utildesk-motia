@@ -1,6 +1,11 @@
 ---
 slug: slick-write
 title: Slick Write
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Freemium
 tags: [writing, productivity]
@@ -23,7 +28,7 @@ Slick Write eignet sich für Autorinnen, Studierende, Blogger, Lehrende und Team
 Besonders passend ist Slick Write, wenn bereits ein Entwurf existiert und man typische Schwächen sichtbar machen will: zu lange Sätze, Wiederholungen, Füllwörter, passive Konstruktionen oder unruhigen Stil. Für deutsche Texte, Fachlektorat oder inhaltliche Prüfung ist es nur begrenzt geeignet.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/slick-write-editorial.webp" alt="Illustration zu Slick Write: ein Stilscanner pr?ft ein Manuskript mit farbigen Diagnosebahnen" loading="lazy" decoding="async" />
+  <img src="/images/tools/slick-write-editorial.webp" alt="Illustration zu Slick Write: ein Stilscanner prüft ein Manuskript mit farbigen Diagnosebahnen" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

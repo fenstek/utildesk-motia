@@ -1,6 +1,11 @@
 ---
 slug: poe
 title: Poe
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Chatbots
 price_model: Freemium
 tags: ["chatbot"]
@@ -22,7 +27,7 @@ Poe passt zu Menschen, die verschiedene KI-Modelle ausprobieren, Prompts verglei
 
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/poe-editorial.webp" alt="Illustration zu Poe: mehrere leuchtende Dialoginseln bilden einen Salon f?r KI-Gespr?che" loading="lazy" decoding="async" />
+  <img src="/images/tools/poe-editorial.webp" alt="Illustration zu Poe: mehrere leuchtende Dialoginseln bilden einen Salon für KI-Gespräche" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

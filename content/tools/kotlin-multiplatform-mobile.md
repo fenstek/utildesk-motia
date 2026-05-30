@@ -1,6 +1,11 @@
 ---
 slug: kotlin-multiplatform-mobile
 title: Kotlin Multiplatform Mobile (KMM)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: Open Source
 tags: [mobile-development, framework, developer-tools]
@@ -62,51 +67,3 @@ KMM richtet sich an mobile Entwickler und Teams, die plattformübergreifende App
 ## Was im Alltag wirklich zählt
 
 Kotlin Multiplatform Mobile (KMM) wirkt schnell nützlich, aber der Alltagstest ist konkreter: Passt geteilte Mobile-Logik für Android- und iOS-Teams mit Kotlin-Schwerpunkt in bestehende Daten, Rollen und Freigaben? Gute Evaluation heißt hier Praxistests mit einem echten Feature-Schnitt, nativen UI-Grenzen und Build-Prozess, nicht nur ein kurzer Blick auf Beispieloutputs. Besonders wichtig bleibt: Attraktiv für gemeinsame Kernlogik, aber nicht jede App gewinnt durch maximale Code-Teilung.
-
-## Workflow-Fit
-
-Für Teams sollte Kotlin Multiplatform Mobile (KMM) nicht als loses Zusatztool starten, sondern an einem wiederkehrenden Schritt im Prozess hängen. Wenn geteilte Mobile-Logik für Android- und iOS-Teams mit Kotlin-Schwerpunkt häufig vorkommt, macht ein kleiner Testlauf sichtbar, wie viel Kontrolle und Nacharbeit wirklich nötig ist. Entscheidend ist dabei Praxistests mit einem echten Feature-Schnitt, nativen UI-Grenzen und Build-Prozess. Das verhindert, dass ein guter Ersteindruck später zu operativem Ballast wird.
-
-## Redaktionelle Einschätzung
-
-Unsere Einschätzung: Kotlin Multiplatform Mobile (KMM) ist am stärksten, wenn Nutzen, Grenzen und Verantwortliche schon vor dem Test benannt sind. Die Entscheidung sollte Kosten, Qualität und Kontrollierbarkeit gemeinsam betrachten. Attraktiv für gemeinsame Kernlogik, aber nicht jede App gewinnt durch maximale Code-Teilung. Sonst wirkt das Tool größer, als der reale Prozessgewinn am Ende ist.
-
-## Preise & Kosten
-
-Kotlin Multiplatform Mobile ist ein Open-Source-Framework und kann kostenlos genutzt werden. Die Entwicklungswerkzeuge wie Android Studio sind ebenfalls kostenlos verfügbar. Zusatzkosten können durch die Nutzung kostenpflichtiger Plugins, Services oder durch den Aufwand für plattformspezifische Entwicklung entstehen.
-
-## Alternativen zu Kotlin Multiplatform Mobile (KMM)
-
-- **Flutter**: Ein von Google entwickeltes UI-Toolkit zur plattformübergreifenden Entwicklung mit einer eigenen Rendering-Engine und Dart als Programmiersprache.
-- **React Native**: Ein Framework von Facebook, das JavaScript und React nutzt, um native Apps für Android und iOS zu erstellen.
-- **Xamarin**: Microsofts plattformübergreifendes Framework, das C# und .NET zur Entwicklung nativer Apps verwendet.
-- **NativeScript**: Ermöglicht die Entwicklung nativer Apps mit JavaScript, TypeScript oder Angular.
-- **SwiftUI & Jetpack Compose (kombiniert)**: Separate native UI-Frameworks für iOS und Android, die eine moderne deklarative UI-Entwicklung ermöglichen, aber keine gemeinsame Codebasis bieten.
-
-## FAQ
-
-**1. Was ist Kotlin Multiplatform Mobile (KMM)?**  
-KMM ist ein Framework zur plattformübergreifenden Entwicklung, mit dem Entwickler gemeinsame Codebasen für Android und iOS erstellen können, insbesondere für Geschäftslogik und andere Kernfunktionen.
-
-**2. Ist KMM kostenlos nutzbar?**  
-Ja, KMM ist Open Source und kann kostenlos verwendet werden. Die Entwicklungsumgebungen wie Android Studio sind ebenfalls kostenlos.
-
-**3. Muss ich bei KMM die Benutzeroberfläche für jede Plattform separat entwickeln?**  
-Ja, die UI wird nativ für Android und iOS entwickelt, um die beste Performance und Benutzererfahrung zu gewährleisten.
-
-**4. Welche Programmiersprache wird für KMM verwendet?**  
-Die gemeinsame Codebasis wird in Kotlin geschrieben, wobei für plattformspezifische Teile auch Swift (iOS) und Kotlin/Java (Android) zum Einsatz kommen.
-
-**5. Wie unterscheidet sich KMM von anderen plattformübergreifenden Frameworks?**  
-KMM fokussiert sich auf das Teilen von Geschäftslogik und Kernfunktionen, während die UI nativ bleibt. Andere Frameworks wie Flutter oder React Native abstrahieren auch die UI.
-
-**6. Welche Vorteile bietet KMM für Unternehmen?**  
-Durch die gemeinsame Nutzung von Code können Entwicklungszeit und Wartungskosten reduziert werden, ohne die native Qualität der Apps zu beeinträchtigen.
-
-**7. Ist KMM für Anfänger geeignet?**  
-Grundkenntnisse in Kotlin und plattformspezifischer Entwicklung sind hilfreich. Für Anfänger kann der Einstieg herausfordernd sein, aber die Dokumentation und Community unterstützen den Lernprozess.
-
-**8. Kann ich KMM in bestehende Projekte integrieren?**  
-Ja, KMM ist modular aufgebaut und lässt sich in bestehende Android- und iOS-Projekte integrieren, um schrittweise gemeinsamen Code zu nutzen.
-
----

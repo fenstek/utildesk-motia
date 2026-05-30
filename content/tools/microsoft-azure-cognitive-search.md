@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-cognitive-search
 title: Microsoft Azure Cognitive Search
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [search, ai, cloud, developer-tools]
@@ -103,26 +108,26 @@ Microsoft stellt in der Regel eine kostenlose Stufe (Free Tier) mit begrenzten R
 
 ## FAQ
 
-**1. Welche Programmiersprachen werden von Azure Cognitive Search unterstützt?**  
+**1. Welche Programmiersprachen werden von Azure Cognitive Search unterstützt?**
 Azure Cognitive Search bietet SDKs für .NET, Java, Python und REST-APIs, die eine Integration in viele weitere Sprachen ermöglichen.
 
-**2. Kann ich Azure Cognitive Search mit eigenen Datenquellen verbinden?**  
+**2. Kann ich Azure Cognitive Search mit eigenen Datenquellen verbinden?**
 Ja, der Dienst unterstützt viele Datenquellen wie Azure Blob Storage, Azure SQL-Datenbanken, Cosmos DB und weitere.
 
-**3. Wie wird die Datensicherheit gewährleistet?**  
+**3. Wie wird die Datensicherheit gewährleistet?**
 Azure Cognitive Search nutzt Verschlüsselung, rollenbasierte Zugriffskontrolle und andere Azure-Sicherheitsstandards, um Daten zu schützen.
 
-**4. Ist eine kostenlose Nutzung möglich?**  
+**4. Ist eine kostenlose Nutzung möglich?**
 Microsoft bietet eine kostenlose Stufe mit begrenzten Ressourcen an, ideal für Tests und kleine Projekte.
 
-**5. Wie skaliert Azure Cognitive Search bei wachsendem Datenvolumen?**  
+**5. Wie skaliert Azure Cognitive Search bei wachsendem Datenvolumen?**
 Der Dienst erlaubt eine flexible Skalierung durch Hinzufügen von Suchdiensteinheiten, um Leistung und Kapazität zu erhöhen.
 
-**6. Welche KI-Funktionen sind integriert?**  
+**6. Welche KI-Funktionen sind integriert?**
 Zu den KI-Funktionen gehören unter anderem Textextraktion, Sentiment-Analyse, Bilderkennung und Übersetzungen, die über Cognitive Skills genutzt werden können.
 
-**7. Wie schnell werden Änderungen an den Daten im Suchindex reflektiert?**  
+**7. Wie schnell werden Änderungen an den Daten im Suchindex reflektiert?**
 Azure Cognitive Search unterstützt nahezu Echtzeit-Indexierung, sodass Änderungen schnell in den Suchergebnissen sichtbar sind.
 
-**8. Gibt es Einschränkungen bei der Anzahl der Suchanfragen?**  
+**8. Gibt es Einschränkungen bei der Anzahl der Suchanfragen?**
 Die Anzahl der Suchanfragen hängt vom gewählten Plan und den verfügbaren Ressourcen ab; bei Überschreitung können zusätzliche Kosten entstehen.

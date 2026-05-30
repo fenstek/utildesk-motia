@@ -1,6 +1,11 @@
 ---
 slug: right-inbox
 title: Right Inbox
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Agents"
 price_model: Freemium
 tags: [email-productivity, automation, scheduling]
@@ -49,11 +54,11 @@ Right Inbox richtet sich an Berufstätige, Selbstständige und Teams, die viel m
 - Datenschutz und Sicherheit können je nach Nutzung kritisch sein, da E-Mail-Inhalte verarbeitet werden
 - Nicht Open Source, daher keine Anpassungsmöglichkeiten durch Nutzer
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Bei Right Inbox zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Automatisierung lohnt sich nur, wenn Auslöser, Fehlerfälle und Verantwortliche klar sind. Sonst wird aus Arbeitserleichterung ein schwer sichtbares Risiko. Da diese Karte als Legacy-Eintrag markiert ist, sollte vor einer Auswahl geprüft werden, ob die aktive Katalogkarte oder eine modernere Mail-Automation besser passt.
+Bei Right Inbox zeigt sich der Wert an einem wiederkehrenden Ablauf: Werden Aufgaben, Übergaben und Entscheidungen klarer? Ein sinnvoller Pilot misst Rückfragen, Doppelarbeit und Nachvollziehbarkeit nach einigen echten Durchläufen.
 
-Für Right Inbox sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+Right Inbox ist nützlich, wenn es bestehende Arbeit ordnet. Es bleibt schwach, wenn ein unklarer Prozess nur digitalisiert wird und niemand Regeln oder Verantwortung festlegt.
 
 ## Workflow-Fit
 
@@ -77,26 +82,26 @@ Right Inbox bietet ein Freemium-Modell an. Die Basisfunktionen können kostenlos
 
 ## FAQ
 
-**1. Ist Right Inbox mit allen Gmail-Versionen kompatibel?**  
+**1. Ist Right Inbox mit allen Gmail-Versionen kompatibel?**
 Right Inbox funktioniert mit den meisten Gmail-Versionen, insbesondere mit der Webversion und den mobilen Apps, die Gmail unterstützen. Für Google Workspace-Konten ist es ebenfalls nutzbar.
 
-**2. Kann ich Right Inbox auch ohne Gmail nutzen?**  
+**2. Kann ich Right Inbox auch ohne Gmail nutzen?**
 Nein, Right Inbox ist speziell für Gmail konzipiert und unterstützt keine anderen E-Mail-Clients.
 
-**3. Welche Funktionen sind in der kostenlosen Version enthalten?**  
+**3. Welche Funktionen sind in der kostenlosen Version enthalten?**
 Die kostenlose Version bietet grundlegende E-Mail-Planung und eine begrenzte Anzahl von Follow-ups. Für erweiterte Funktionen wie unbegrenztes Tracking und Teamfunktionen ist ein Upgrade erforderlich.
 
-**4. Wie sicher ist die Nutzung von Right Inbox?**  
+**4. Wie sicher ist die Nutzung von Right Inbox?**
 Der Anbieter verwendet standardmäßige Sicherheitsmaßnahmen, um Daten zu schützen. Dennoch sollten Nutzer sensible Informationen mit Bedacht behandeln, da E-Mail-Inhalte verarbeitet werden.
 
-**5. Kann ich mehrere Follow-ups automatisieren?**  
+**5. Kann ich mehrere Follow-ups automatisieren?**
 Ja, Right Inbox erlaubt die Einrichtung mehrerer automatischer Follow-ups in definierten Intervallen, abhängig vom gewählten Plan.
 
-**6. Gibt es eine mobile App für Right Inbox?**  
+**6. Gibt es eine mobile App für Right Inbox?**
 Es gibt keine eigenständige App, aber die Funktionen sind über die Gmail-App auf mobilen Geräten verfügbar.
 
-**7. Wie funktioniert das E-Mail-Tracking?**  
+**7. Wie funktioniert das E-Mail-Tracking?**
 Das Tool sendet unsichtbare Tracking-Pixel mit der E-Mail, um zu erkennen, wann eine Nachricht geöffnet oder ein Link angeklickt wird.
 
-**8. Kann ich Right Inbox im Team verwenden?**  
+**8. Kann ich Right Inbox im Team verwenden?**
 Ja, es gibt Teamfunktionen, die das Teilen von Vorlagen und Erinnerungen ermöglichen, allerdings meist nur in den kostenpflichtigen Plänen.

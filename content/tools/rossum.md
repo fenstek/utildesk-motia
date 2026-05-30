@@ -1,9 +1,14 @@
 ---
 slug: rossum
 title: Rossum
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Automatisierung
 price_model: Individuelles Angebot
-tags: 
+tags:
 official_url: "https://rossum.ai/"
 description: Rossum ist eine Document-AI-Plattform für Unternehmen, die wiederkehrende Geschäftsdokumente wie Rechnungen, Bestellungen oder Lieferscheine strukturiert auslesen und prüfen wollen.
 created_at: 2026-05-10
@@ -75,11 +80,11 @@ Bei Rossum sollten Fachabteilungen besonders auf transparente Fehlerlisten, nach
 - Datenschutz, AVV/DPA, Datenstandort und Löschung müssen vor Produktivbetrieb geprüft werden.
 
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Bei Rossum zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Der Nutzen entsteht erst, wenn wiederkehrende Dokumenttypen sauber modelliert sind und Ausnahmen nicht im Postfach liegen bleiben.
+Bei Rossum sollte der Test an einem echten Arbeitsfall hängen: Eingabe, Ergebnis, Verantwortung und Folgekosten müssen sichtbar werden.
 
-Für Rossum sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
+Rossum ist sinnvoll, wenn es Arbeit klarer, schneller oder überprüfbarer macht. Wenn Zweck und Zuständigkeit offen bleiben, entsteht eher ein weiterer Account als ein besserer Prozess.
 
 ## Workflow-Fit
 
@@ -105,14 +110,14 @@ Als Alternative zu Rossum kommen je nach Problemklasse andere Ansätze infrage: 
 
 ## FAQ
 
-**Ist Rossum ein reines OCR-Tool?**  
+**Ist Rossum ein reines OCR-Tool?**
 Nicht nur. Der praktische Nutzen entsteht meist erst, wenn OCR mit Feldextraktion, Validierung und Export kombiniert wird.
 
-**Kann Rossum Rechnungen automatisch auslesen?**  
+**Kann Rossum Rechnungen automatisch auslesen?**
 Für Rechnungsprozesse ist Rossum relevant, aber die Qualität hängt von Scanqualität, Layout, Sprache, Pflichtfeldern und Nachprüfung ab. Vor einem Rollout sollte ein Testset mit echten deutschen Rechnungen geprüft werden.
 
-**Braucht man Entwickler?**  
+**Braucht man Entwickler?**
 Bei Rossum hängt das vom Zielbild ab: einfache Tests sind schneller möglich, ein stabiler Produktivprozess braucht aber Verantwortliche für Integration, Datenqualität, Monitoring und Fehlerbehandlung.
 
-**Worauf sollte man beim Datenschutz achten?**  
+**Worauf sollte man beim Datenschutz achten?**
 Vor dem Einsatz von Rossum sollten AVV/DPA, Datenstandort, Aufbewahrungsfristen, Subprozessoren, Löschoptionen und eine mögliche Nutzung von Kundendaten für Training geprüft werden.

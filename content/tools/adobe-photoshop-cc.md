@@ -1,6 +1,11 @@
 ---
 slug: adobe-photoshop-cc
 title: Adobe Photoshop
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Abonnement
 tags: [photo, editing, design, ai]
@@ -87,26 +92,26 @@ Adobe Photoshop ist im Abonnement erhältlich. Die Preise variieren je nach Anbi
 
 ## FAQ
 
-**1. Ist Adobe Photoshop für Anfänger geeignet?**  
+**1. Ist Adobe Photoshop für Anfänger geeignet?**
 Photoshop bietet viele professionelle Funktionen, die für Einsteiger zunächst komplex erscheinen können. Es gibt jedoch zahlreiche Tutorials und Lernressourcen, die den Einstieg erleichtern.
 
-**2. Welche Systemanforderungen hat Adobe Photoshop?**  
+**2. Welche Systemanforderungen hat Adobe Photoshop?**
 Die genauen Anforderungen variieren je nach Version. Generell wird ein moderner PC oder Mac mit ausreichend RAM und Grafikkarte empfohlen, um flüssig arbeiten zu können.
 
-**3. Kann ich Photoshop ohne Internet nutzen?**  
+**3. Kann ich Photoshop ohne Internet nutzen?**
 Photoshop benötigt für die Aktivierung und gelegentliche Lizenzprüfung eine Internetverbindung. Die Bearbeitung selbst ist offline möglich.
 
-**4. Gibt es eine kostenlose Testversion?**  
+**4. Gibt es eine kostenlose Testversion?**
 Adobe bietet in der Regel eine zeitlich begrenzte Testversion an, mit der man die Software vor einem Abonnement testen kann.
 
-**5. Welche Vorteile bietet das Abonnement-Modell?**  
+**5. Welche Vorteile bietet das Abonnement-Modell?**
 Das Abonnement-Modell stellt sicher, dass Nutzer immer die neueste Version und Updates erhalten sowie Zugriff auf Cloud-Dienste und weitere Adobe-Anwendungen.
 
-**6. Unterstützt Photoshop die Bearbeitung von RAW-Dateien?**  
+**6. Unterstützt Photoshop die Bearbeitung von RAW-Dateien?**
 Ja, Photoshop unterstützt die Bearbeitung von RAW-Dateien über Adobe Camera Raw, was professionelle Fotobearbeitung ermöglicht.
 
-**7. Wie funktioniert die Integration mit anderen Adobe-Programmen?**  
+**7. Wie funktioniert die Integration mit anderen Adobe-Programmen?**
 Photoshop ist Teil der Adobe Creative Cloud und ermöglicht einen nahtlosen Austausch von Dateien und Projekten mit Programmen wie Illustrator, Lightroom oder Premiere Pro.
 
-**8. Gibt es spezielle Funktionen für KI-gestützte Bildbearbeitung?**  
+**8. Gibt es spezielle Funktionen für KI-gestützte Bildbearbeitung?**
 Ja, Photoshop integriert zunehmend KI-Tools, die beispielsweise das Freistellen von Objekten oder das automatische Verbessern von Bildern erleichtern.

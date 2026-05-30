@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-event-hubs
 title: Microsoft Azure Event Hubs
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, messaging, cloud, analytics]
@@ -91,26 +96,26 @@ Die genauen Preise variieren je nach Region und Nutzungsintensität. Microsoft b
 
 ## FAQ
 
-**1. Was ist der Hauptzweck von Microsoft Azure Event Hubs?**  
+**1. Was ist der Hauptzweck von Microsoft Azure Event Hubs?**
 Event Hubs dient zur Erfassung, Speicherung und Verarbeitung großer Mengen von Ereignisdaten in Echtzeit, um Streaming-Analytics und andere Anwendungsfälle zu ermöglichen.
 
-**2. Wie skaliert Event Hubs bei steigendem Datenvolumen?**  
+**2. Wie skaliert Event Hubs bei steigendem Datenvolumen?**
 Event Hubs kann durch Erhöhung der Durchsatz-Einheiten und Partitionen skaliert werden, um mehr Ereignisse parallel zu verarbeiten.
 
-**3. Welche Sicherheitsmaßnahmen bietet Event Hubs?**  
+**3. Welche Sicherheitsmaßnahmen bietet Event Hubs?**
 Der Dienst unterstützt Verschlüsselung ruhender und übertragener Daten, rollenbasierte Zugriffskontrolle sowie Netzwerkisolierung durch virtuelle Netzwerke.
 
-**4. Kann Event Hubs mit anderen Azure-Diensten integriert werden?**  
+**4. Kann Event Hubs mit anderen Azure-Diensten integriert werden?**
 Ja, Event Hubs lässt sich nahtlos mit Azure Stream Analytics, Azure Functions, Azure Data Lake und weiteren Diensten kombinieren.
 
-**5. Gibt es eine kostenlose Testversion oder einen Freemium-Plan?**  
+**5. Gibt es eine kostenlose Testversion oder einen Freemium-Plan?**
 Je nach Plan bietet Microsoft Azure Event Hubs begrenzte kostenlose Nutzungsmöglichkeiten, die zum Testen genutzt werden können.
 
-**6. Welche Protokolle unterstützt Event Hubs?**  
+**6. Welche Protokolle unterstützt Event Hubs?**
 Event Hubs unterstützt hauptsächlich AMQP (Advanced Message Queuing Protocol) und HTTPS.
 
-**7. Wie lange werden Ereignisdaten in Event Hubs gespeichert?**  
+**7. Wie lange werden Ereignisdaten in Event Hubs gespeichert?**
 Die Standardaufbewahrungsdauer beträgt je nach Konfiguration einige Tage; diese kann jedoch angepasst werden.
 
-**8. Ist Event Hubs auch für kleine Projekte geeignet?**  
+**8. Ist Event Hubs auch für kleine Projekte geeignet?**
 Event Hubs ist vor allem für große Datenmengen konzipiert, kann jedoch je nach Bedarf auch für kleinere Anwendungen genutzt werden.

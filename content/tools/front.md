@@ -1,8 +1,13 @@
 ---
 slug: front
 title: Front
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
-price_model: 
+price_model:
 tags: [customer-support, shared-inbox, communication]
 official_url: "https://front.com/"
 popularity: 0
@@ -24,11 +29,11 @@ Front eignet sich ideal für Unternehmen und Teams, die ihren Kundenservice und 
 - **Übergaben im Team:** Front kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Front weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Front sollte der Test an einem echten Arbeitsfall hängen: Eingabe, Ergebnis, Verantwortung und Folgekosten müssen sichtbar werden.
 
-Praktisch ist Front vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Front ist sinnvoll, wenn es Arbeit klarer, schneller oder überprüfbarer macht. Wenn Zweck und Zuständigkeit offen bleiben, entsteht eher ein weiterer Account als ein besserer Prozess.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/front-editorial.webp" alt="Illustration zu Front: Frontoffice-Postraum mit Team-Ablagen und Handoff-Bändern" loading="lazy" decoding="async" />
@@ -63,65 +68,3 @@ Praktisch ist Front vor allem, wenn es vorhandene Abläufe entlastet, statt eine
 - Einige Integrationen oder erweiterte Features sind nur in höheren Tarifen verfügbar.
 - Anpassungen und Automatisierungen erfordern Einarbeitungszeit.
 - Offline-Funktionalitäten sind eingeschränkt.
-
-## Workflow-Fit
-
-Front passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Front nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Front landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Front außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Front.
-
-## Redaktionelle Einschätzung
-
-Front braucht einen klaren Platz im Kunden- oder Teamprozess. Erst wenn Felder, Zuständigkeiten, Eskalation und Auswertung stimmen, wird aus dem Tool mehr als ein weiterer Account.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Front wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Die Preisgestaltung von Front variiert je nach gewähltem Plan und Teamgröße. In der Regel gibt es mehrere Tarifoptionen, die sich in Funktionen und Benutzeranzahl unterscheiden. Häufig sind folgende Modelle verfügbar:
-
-- **Starter**: Grundfunktionen für kleine Teams, meist mit Limitierungen bei Automatisierungen und Integrationen.
-- **Pro**: Erweiterte Features wie mehr Automatisierungen, Integrationen und Analysewerkzeuge.
-- **Enterprise**: Individuelle Lösungen mit umfassendem Support, Sicherheit und Anpassungsmöglichkeiten.
-
-Die genaue Preisstruktur ist auf der offiziellen Webseite des Anbieters einsehbar und kann je nach Region und Vertragslaufzeit variieren.
-
-## Alternativen zu Front
-
-- **Zendesk**: Bekanntes Kundenservice-Tool mit umfangreichen Support- und Ticketfunktionen.
-- **Help Scout**: Einfach zu bedienende Shared Inbox mit Fokus auf Kundenkommunikation.
-- **Intercom**: Plattform für Kundenkommunikation mit Chat, Automatisierung und CRM-Funktionalitäten.
-- **Freshdesk**: Umfassende Helpdesk-Lösung mit Multi-Channel-Support.
-- **Gmelius**: Tool zur gemeinsamen Verwaltung von Gmail-Postfächern mit Automatisierungen.
-
-## FAQ
-
-**1. Kann Front mit anderen Tools integriert werden?**  
-Ja, Front bietet zahlreiche Integrationen mit CRM-Systemen, Helpdesk-Software, Kalendern und weiteren Anwendungen, um Arbeitsprozesse zu vereinfachen.
-
-**2. Unterstützt Front auch mobile Geräte?**  
-Ja, Front stellt Apps für iOS und Android zur Verfügung, sodass Nutzer auch unterwegs auf alle Funktionen zugreifen können.
-
-**3. Ist Front für kleine Teams geeignet?**  
-Ja, Front bietet Tarife, die speziell auf kleine Teams zugeschnitten sind, wobei die Funktionen je nach Plan variieren.
-
-**4. Gibt es Automatisierungsfunktionen in Front?**  
-Ja, Front nutzt AI-gestützte Automatisierungen, um Nachrichten automatisch zuzuweisen, zu priorisieren und zu bearbeiten.
-
-**5. Wie sicher sind die Daten bei Front?**  
-Front verwendet Verschlüsselung und Berechtigungskontrollen, um die Sicherheit und den Schutz der Kundendaten zu gewährleisten.
-
-**6. Kann man Front vor dem Kauf testen?**  
-Je nach Anbieter und Plan gibt es oft kostenlose Testphasen oder Demo-Versionen, um die Plattform vor einer Entscheidung kennenzulernen.
-
-**7. Welche Kommunikationskanäle unterstützt Front?**  
-Front bündelt E-Mail, SMS, Chat und soziale Medien in einer gemeinsamen Inbox für eine zentrale Verwaltung.
-
-**8. Wie funktioniert die Zusammenarbeit im Team mit Front?**  
-Teammitglieder können Nachrichten intern kommentieren, Aufgaben zuweisen und gemeinsam an Antworten arbeiten, um die Effizienz zu steigern.

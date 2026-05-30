@@ -1,6 +1,11 @@
 ---
 slug: promo-com
 title: Promo.com
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -109,26 +114,26 @@ Prices vary depending on the billing term (monthly or yearly) and the scope of u
 
 ## FAQ
 
-**1. Do I need prior video editing experience to use Promo.com?**  
+**1. Do I need prior video editing experience to use Promo.com?**
 No, Promo.com is specifically designed for users without professional experience and offers an intuitive interface with templates and AI support.
 
-**2. Can I use my own videos and images in Promo.com?**  
+**2. Can I use my own videos and images in Promo.com?**
 Yes, users can upload their own media and integrate it into their projects.
 
-**3. Is Promo.com suitable for social media marketing?**  
+**3. Is Promo.com suitable for social media marketing?**
 Yes, Promo.com offers export options and templates specifically tailored to different social media platforms.
 
-**4. Is there a mobile app for Promo.com?**  
+**4. Is there a mobile app for Promo.com?**
 Yes, Promo.com provides a mobile app that makes video creation possible on the go.
 
-**5. How does pricing work with Promo.com?**  
+**5. How does pricing work with Promo.com?**
 Promo.com uses a subscription model with multiple pricing tiers that offer different features and media access depending on the plan.
 
-**6. Can I use Promo.com as a team?**  
+**6. Can I use Promo.com as a team?**
 Yes, the platform supports team collaboration so multiple users can work on projects together.
 
-**7. Which languages does Promo.com support?**  
+**7. Which languages does Promo.com support?**
 Promo.com offers a multilingual interface that makes it easier to use in international teams.
 
-**8. Is there a way to analyze video performance?**  
+**8. Is there a way to analyze video performance?**
 Depending on the selected plan, analytics and tracking tools are available to measure the impact of the videos created.

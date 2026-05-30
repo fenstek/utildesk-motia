@@ -1,6 +1,11 @@
 ---
 slug: studysmarter
 title: StudySmarter
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Freemium
 tags: [education,learning,productivity,ai]
@@ -77,26 +82,26 @@ StudySmarter kann Lernrhythmus und Struktur verbessern. Es wird aber erst wirkli
 
 ## FAQ
 
-**1. Ist StudySmarter wirklich kostenlos?**  
+**1. Ist StudySmarter wirklich kostenlos?**
 Ja, die Plattform bietet eine kostenlose Basisversion mit vielen Funktionen. Für erweiterte Features ist ein kostenpflichtiges Abonnement verfügbar.
 
-**2. Kann ich StudySmarter offline nutzen?**  
+**2. Kann ich StudySmarter offline nutzen?**
 Einige Inhalte lassen sich herunterladen und offline verwenden, die volle Funktionalität ist jedoch online verfügbar.
 
-**3. Welche Geräte werden unterstützt?**  
+**3. Welche Geräte werden unterstützt?**
 StudySmarter ist als Webversion sowie als App für iOS und Android verfügbar.
 
-**4. Wie hilft die KI beim Lernen?**  
+**4. Wie hilft die KI beim Lernen?**
 Die KI analysiert den Lernfortschritt und erstellt individuelle Lernpläne, um das Lernen effizienter zu gestalten.
 
-**5. Kann ich eigene Lernmaterialien erstellen?**  
+**5. Kann ich eigene Lernmaterialien erstellen?**
 Ja, Nutzer können eigene Karteikarten, Zusammenfassungen und Prüfungsfragen erstellen und teilen.
 
-**6. Ist StudySmarter auch für Lehrer geeignet?**  
+**6. Ist StudySmarter auch für Lehrer geeignet?**
 Ja, Lehrkräfte können Materialien erstellen, Klassen verwalten und den Lernfortschritt ihrer Schüler verfolgen.
 
-**7. Gibt es eine Möglichkeit, mit anderen Lernenden zusammenzuarbeiten?**  
+**7. Gibt es eine Möglichkeit, mit anderen Lernenden zusammenzuarbeiten?**
 Ja, die Plattform bietet Community-Funktionen und Gruppen, um gemeinsam zu lernen.
 
-**8. Wie sicher sind meine Daten bei StudySmarter?**  
+**8. Wie sicher sind meine Daten bei StudySmarter?**
 StudySmarter legt Wert auf Datenschutz und verwendet gängige Sicherheitsstandards, Details finden sich in den Datenschutzrichtlinien des Anbieters.

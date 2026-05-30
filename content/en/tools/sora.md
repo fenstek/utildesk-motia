@@ -1,6 +1,11 @@
 ---
 slug: sora
 title: Sora
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Video
 price_model: null
 tags:
@@ -105,28 +110,28 @@ When comparing options, Sora should not only be measured against very similar pr
 
 ## FAQ
 
-**1. What are the system requirements for Sora?**  
+**1. What are the system requirements for Sora?**
 The requirements depend on the provider; in most cases, current Windows or macOS versions with sufficient RAM are recommended.
 
-**2. Is there a free trial?**  
+**2. Is there a free trial?**
 Many Sora providers offer a free trial or a basic plan with limited features.
 
-**3. Can I edit and export videos in 4K?**  
+**3. Can I edit and export videos in 4K?**
 Depending on the plan and software version, editing and export in 4K are possible.
 
-**4. Does Sora support teamwork and cloud storage?**  
+**4. Does Sora support teamwork and cloud storage?**
 Yes, some plans include collaboration and cloud integration features.
 
-**5. Which export formats are supported?**  
+**5. Which export formats are supported?**
 Typically, common formats such as MP4, MOV, AVI, and others are supported.
 
-**6. Is Sora suitable for beginners?**  
+**6. Is Sora suitable for beginners?**
 Yes, the user interface is designed so that beginners can get up to speed quickly.
 
-**7. Are there mobile versions or apps?**  
+**7. Are there mobile versions or apps?**
 That depends on the provider; some offer companion mobile apps for video editing.
 
-**8. How secure is my data when using Sora?**  
+**8. How secure is my data when using Sora?**
 Privacy and security depend on the respective provider and its policies. It is recommended to review these before use.
 
 **9. How should a team test Sora?**

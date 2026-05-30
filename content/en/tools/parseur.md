@@ -1,6 +1,11 @@
 ---
 slug: parseur
 title: Parseur
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Automation
 price_model: Subscription
 tags:
@@ -106,14 +111,14 @@ Depending on the problem, alternatives to Parseur may come from different tool c
 
 ## FAQ
 
-**Is Parseur only an OCR tool?**  
+**Is Parseur only an OCR tool?**
 Not only. The real value usually comes from combining OCR with field extraction, validation, and export.
 
-**Can Parseur read invoices automatically?**  
+**Can Parseur read invoices automatically?**
 Parseur is relevant for invoice workflows, but quality depends on scan quality, layout, language, required fields, and review rules. Test with real German invoices before rollout.
 
-**Do you need developers?**  
+**Do you need developers?**
 For Parseur, it depends on the target workflow: simple tests are easier, but stable production use needs ownership for integration, data quality, monitoring, and error handling.
 
-**What should teams check for privacy?**  
+**What should teams check for privacy?**
 Before using Parseur, teams should review the DPA, data location, retention, subprocessors, deletion options, and any use of customer data for training.

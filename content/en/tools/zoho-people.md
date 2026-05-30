@@ -1,6 +1,11 @@
 ---
 slug: zoho-people
 title: Zoho People
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -97,26 +102,26 @@ Zoho People is offered on a subscription model. Costs vary depending on the plan
 
 ## FAQ
 
-**1. Is Zoho People suitable for small businesses?**  
+**1. Is Zoho People suitable for small businesses?**
 Yes, the platform is scalable and offers suitable features and pricing plans for small and medium-sized businesses as well.
 
-**2. Which integrations does Zoho People support?**  
+**2. Which integrations does Zoho People support?**
 Zoho People can be integrated with other Zoho applications as well as various third-party tools, including payroll systems and ERP platforms.
 
-**3. Is there a mobile app for Zoho People?**  
+**3. Is there a mobile app for Zoho People?**
 Yes, Zoho People offers a mobile app for iOS and Android, allowing employees and HR teams to access important functions on the go.
 
-**4. How secure is data in Zoho People?**  
+**4. How secure is data in Zoho People?**
 Zoho relies on modern security standards, including data encryption and compliance with data protection regulations, to ensure the security of employee data.
 
-**5. Can Zoho People be tested before purchase?**  
+**5. Can Zoho People be tested before purchase?**
 Depending on the plan, Zoho offers free trial periods so the software can be evaluated in advance.
 
-**6. Which languages are supported?**  
+**6. Which languages are supported?**
 The user interface is available in multiple languages, although the availability of support and documentation may vary by language.
 
-**7. How flexible is workflow customization?**  
+**7. How flexible is workflow customization?**
 Zoho People allows approval processes and workflows to be customized, but more complex adjustments require technical know-how.
 
-**8. Which pricing models are available?**  
+**8. Which pricing models are available?**
 Zoho People is primarily offered on a subscription model, with different pricing tiers depending on the range of features and number of users.

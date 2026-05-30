@@ -1,6 +1,11 @@
 ---
 slug: onlyoffice
 title: OnlyOffice
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -79,26 +84,26 @@ OnlyOffice is a serious alternative when control and format proximity matter mor
 
 ## FAQ
 
-**1. Is OnlyOffice free to use?**  
+**1. Is OnlyOffice free to use?**
 OnlyOffice offers a free basic version with limited features. Paid plans are available for advanced features and more users.
 
-**2. Can OnlyOffice be installed locally?**  
+**2. Can OnlyOffice be installed locally?**
 Yes, OnlyOffice supports both cloud-based use and local installation to ensure full data control.
 
-**3. Which file formats does OnlyOffice support?**  
+**3. Which file formats does OnlyOffice support?**
 The platform supports common formats such as DOCX, XLSX, PPTX, as well as additional office and open-source formats.
 
-**4. Does OnlyOffice offer mobile apps?**  
+**4. Does OnlyOffice offer mobile apps?**
 Yes, OnlyOffice provides mobile apps for iOS and Android so documents can also be edited on the go.
 
-**5. Which automation features are integrated?**  
+**5. Which automation features are integrated?**
 OnlyOffice includes AI-based assistants and the ability to automate workflows using scripts.
 
-**6. How secure is my data with OnlyOffice?**  
+**6. How secure is my data with OnlyOffice?**
 Depending on how you use it (cloud or local), OnlyOffice offers various security mechanisms and privacy options.
 
-**7. Is OnlyOffice suitable for large companies?**  
+**7. Is OnlyOffice suitable for large companies?**
 OnlyOffice is suitable for teams of any size, and larger companies can benefit from custom licensing models and support.
 
-**8. How can I integrate OnlyOffice with other tools?**  
+**8. How can I integrate OnlyOffice with other tools?**
 OnlyOffice supports integrations through APIs and plugins with various cloud and business applications.

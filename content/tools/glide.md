@@ -1,6 +1,11 @@
 ---
 slug: glide
 title: Glide
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [no-code, automation, productivity, data, analytics]

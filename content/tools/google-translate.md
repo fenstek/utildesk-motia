@@ -1,6 +1,11 @@
 ---
 slug: google-translate
 title: Google Translate
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Writing
 price_model: Freemium
 tags: ["writing"]
@@ -34,7 +39,7 @@ Google Translate eignet sich für eine breite Nutzergruppe, darunter:
 Die einfache Handhabung macht Google Translate besonders attraktiv für Nutzer ohne spezielle technische Vorkenntnisse, während die API und erweiterte Funktionen auch professionelle Anforderungen abdecken.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/google-translate-editorial.webp" alt="Illustration zu Google Translate: abstrakte Sprachkarten und Reisekarten verbinden sich zu einem ?bersetzungsfluss" loading="lazy" decoding="async" />
+  <img src="/images/tools/google-translate-editorial.webp" alt="Illustration zu Google Translate: abstrakte Sprachkarten und Reisekarten verbinden sich zu einem Übersetzungsfluss" loading="lazy" decoding="async" />
 </figure>
 
 ## Hauptfunktionen
@@ -98,26 +103,26 @@ Google Translate ist grundsätzlich als Freemium-Dienst verfügbar:
 
 ## FAQ
 
-**1. Ist Google Translate kostenlos?**  
+**1. Ist Google Translate kostenlos?**
 Ja, die Basisversion von Google Translate ist für Endnutzer kostenlos verfügbar. Für die Nutzung der API fallen je nach Umfang kostenpflichtige Gebühren an.
 
-**2. Wie genau sind die Übersetzungen von Google Translate?**  
+**2. Wie genau sind die Übersetzungen von Google Translate?**
 Die Qualität variiert je nach Sprache und Textart. Für einfache und allgemeine Texte sind die Übersetzungen meist gut verständlich, bei komplexen Fachtexten kann es zu Ungenauigkeiten kommen.
 
-**3. Kann ich Google Translate offline nutzen?**  
+**3. Kann ich Google Translate offline nutzen?**
 Ja, in der mobilen App können Sprachpakete heruntergeladen werden, um Übersetzungen ohne Internetverbindung durchzuführen.
 
-**4. Welche Sprachen unterstützt Google Translate?**  
+**4. Welche Sprachen unterstützt Google Translate?**
 Über 100 Sprachen werden unterstützt, darunter viele gängige und auch weniger verbreitete Sprachen.
 
-**5. Wie funktioniert die Spracherkennung bei Google Translate?**  
+**5. Wie funktioniert die Spracherkennung bei Google Translate?**
 Die App erkennt automatisch die gesprochene Sprache und übersetzt sie in die gewünschte Zielsprache in Echtzeit.
 
-**6. Kann ich ganze Dokumente übersetzen?**  
+**6. Kann ich ganze Dokumente übersetzen?**
 Ja, Google Translate unterstützt die Übersetzung von Dokumenten in verschiedenen Formaten direkt über die Webseite.
 
-**7. Ist meine Privatsphäre bei der Nutzung von Google Translate geschützt?**  
+**7. Ist meine Privatsphäre bei der Nutzung von Google Translate geschützt?**
 Google speichert und verarbeitet die eingegebenen Daten auf seinen Servern, was bei sensiblen Informationen zu Datenschutzbedenken führen kann.
 
-**8. Gibt es eine API für Entwickler?**  
+**8. Gibt es eine API für Entwickler?**
 Ja, Google bietet eine Cloud Translation API an, mit der Übersetzungsfunktionen in eigene Anwendungen integriert werden können.

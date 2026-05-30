@@ -1,6 +1,11 @@
 ---
 slug: online-convert
 title: Online-Convert
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: null
 tags:
@@ -93,28 +98,28 @@ A useful comparison for Online-Convert starts with the goal. Only then does it b
 
 ## FAQ
 
-**1. Which file formats does Online-Convert support?**  
+**1. Which file formats does Online-Convert support?**
 Online-Convert supports a wide range of formats in the areas of documents, images, audio, video, and e-books. The exact list may vary depending on the service and plan.
 
-**2. Do I need to register to use Online-Convert?**  
+**2. Do I need to register to use Online-Convert?**
 Many basic features are available without registration. For advanced features or larger files, sign-up may be required.
 
-**3. How secure are my files during conversion?**  
+**3. How secure are my files during conversion?**
 Security depends on the provider. Reputable services usually delete uploaded files automatically after a short time. It is recommended to review the privacy policy.
 
-**4. Can I convert multiple files at the same time?**  
+**4. Can I convert multiple files at the same time?**
 Yes, Online-Convert usually offers batch conversion, allowing multiple files to be processed at the same time.
 
-**5. Is there a size limit for uploaded files?**  
+**5. Is there a size limit for uploaded files?**
 Free versions usually have a limit on the maximum file size. Paid plans often allow larger files.
 
-**6. Can I import files from cloud services?**  
+**6. Can I import files from cloud services?**
 Many online converters support importing files from common cloud services such as Google Drive or Dropbox.
 
-**7. Are my files saved after conversion?**  
+**7. Are my files saved after conversion?**
 The converted files are available for download. Whether and for how long they are stored depends on the provider.
 
-**8. Is there a way to use the tool offline?**  
+**8. Is there a way to use the tool offline?**
 Online-Convert is designed as a web service and requires an internet connection. For offline use, local programs are required.
 
 **9. How should a team test Online-Convert?**

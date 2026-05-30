@@ -1,6 +1,11 @@
 ---
 slug: amazon-redshift
 title: Amazon Redshift
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Usage-based
 tags:
@@ -114,26 +119,26 @@ Exact prices vary by region and selected plan. AWS also offers a free trial with
 
 ## FAQ
 
-**1. Is Amazon Redshift suitable for small businesses?**  
+**1. Is Amazon Redshift suitable for small businesses?**
 Yes, Amazon Redshift can also be used for smaller data volumes, although it is especially worthwhile for medium to large data volumes.
 
-**2. What security features does Amazon Redshift offer?**  
+**2. What security features does Amazon Redshift offer?**
 Redshift supports encryption for data at rest and in transit, IAM access control, Virtual Private Cloud (VPC), and audit logging.
 
-**3. How quickly can Amazon Redshift scale?**  
+**3. How quickly can Amazon Redshift scale?**
 Scaling is dynamic and can be adjusted within minutes depending on the cluster configuration.
 
-**4. Can I connect Amazon Redshift with other BI tools?**  
+**4. Can I connect Amazon Redshift with other BI tools?**
 Yes, Redshift is compatible with common BI tools such as Tableau, Looker, Power BI, and many more.
 
-**5. Which data formats does Amazon Redshift support?**  
+**5. Which data formats does Amazon Redshift support?**
 Redshift supports relational data in columnar format and can load data from S3 in formats such as CSV, JSON, Parquet, and ORC.
 
-**6. How does data backup work in Amazon Redshift?**  
+**6. How does data backup work in Amazon Redshift?**
 Automatic snapshots back up data regularly, and point-in-time recovery is available.
 
-**7. Is there a free trial?**  
+**7. Is there a free trial?**
 AWS offers a free trial for Amazon Redshift with limited storage and compute capacity.
 
-**8. How does Amazon Redshift differ from a classic data warehouse?**  
+**8. How does Amazon Redshift differ from a classic data warehouse?**
 Redshift is cloud-based, fully managed, and enables flexible scaling, whereas classic data warehouses are often on-premise and less flexible.

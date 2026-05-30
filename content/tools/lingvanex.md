@@ -1,6 +1,11 @@
 ---
 slug: lingvanex
 title: Lingvanex
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: Freemium
 tags: ["translation", "speech", "writing", "api", "language"]
@@ -25,7 +30,7 @@ Lingvanex passt zu Teams, die Übersetzung nicht nur gelegentlich im Browser nut
 Für einzelne schnelle Übersetzungen reichen oft DeepL, Google Translate oder Browserfunktionen. Lingvanex wird interessanter, wenn Sprachpaare, API, Offline-Nutzung, Kontrolle und Integration wichtiger sind als maximale Bequemlichkeit.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/lingvanex-editorial.webp" alt="Illustration zu Lingvanex: Dokumente, Sprachwellen und App-Kacheln verbinden sich in einem ?bersetzungsnetz" loading="lazy" decoding="async" />
+  <img src="/images/tools/lingvanex-editorial.webp" alt="Illustration zu Lingvanex: Dokumente, Sprachwellen und App-Kacheln verbinden sich in einem Übersetzungsnetz" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

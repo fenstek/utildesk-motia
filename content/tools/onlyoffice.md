@@ -1,6 +1,11 @@
 ---
 slug: onlyoffice
 title: OnlyOffice
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Chatbots
 price_model: Je nach Plan
 tags: [assistant, automation]
@@ -77,26 +82,26 @@ OnlyOffice ist eine ernsthafte Alternative, wenn Kontrolle und Formatnähe wicht
 
 ## FAQ
 
-**1. Ist OnlyOffice kostenlos nutzbar?**  
+**1. Ist OnlyOffice kostenlos nutzbar?**
 OnlyOffice bietet eine kostenlose Basisversion mit eingeschränkten Funktionen an. Für erweiterte Features und mehr Nutzer sind kostenpflichtige Pläne verfügbar.
 
-**2. Kann OnlyOffice lokal installiert werden?**  
+**2. Kann OnlyOffice lokal installiert werden?**
 Ja, OnlyOffice ermöglicht sowohl Cloud-basierte Nutzung als auch lokale Installation, um volle Datenkontrolle zu gewährleisten.
 
-**3. Welche Dateiformate unterstützt OnlyOffice?**  
+**3. Welche Dateiformate unterstützt OnlyOffice?**
 Die Plattform unterstützt gängige Formate wie DOCX, XLSX, PPTX sowie weitere Office- und Open-Source-Formate.
 
-**4. Bietet OnlyOffice mobile Apps an?**  
+**4. Bietet OnlyOffice mobile Apps an?**
 Ja, OnlyOffice stellt mobile Anwendungen für iOS und Android bereit, um Dokumente auch unterwegs zu bearbeiten.
 
-**5. Welche Automatisierungsfunktionen sind integriert?**  
+**5. Welche Automatisierungsfunktionen sind integriert?**
 OnlyOffice enthält KI-basierte Assistenten und die Möglichkeit, Workflows mittels Skripten zu automatisieren.
 
-**6. Wie sicher sind meine Daten bei OnlyOffice?**  
+**6. Wie sicher sind meine Daten bei OnlyOffice?**
 Je nach Nutzung (Cloud oder lokal) bietet OnlyOffice verschiedene Sicherheitsmechanismen und Datenschutzoptionen.
 
-**7. Ist OnlyOffice für große Unternehmen geeignet?**  
+**7. Ist OnlyOffice für große Unternehmen geeignet?**
 OnlyOffice eignet sich für Teams jeder Größe, wobei größere Unternehmen von individuellen Lizenzmodellen und Support profitieren können.
 
-**8. Wie kann ich OnlyOffice in andere Tools integrieren?**  
+**8. Wie kann ich OnlyOffice in andere Tools integrieren?**
 OnlyOffice unterstützt Integrationen über APIs und Plugins mit verschiedenen Cloud- und Business-Anwendungen.

@@ -1,6 +1,11 @@
 ---
 slug: espacenet
 title: Espacenet
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -108,28 +113,28 @@ Espacenet is a **free** offer of the European Patent Office and can be used with
 
 ## FAQ
 
-**1. Is Espacenet really free to use?**  
+**1. Is Espacenet really free to use?**
 Yes, Espacenet is a free service of the European Patent Office and requires no fees or subscriptions.
 
-**2. Do I need to register to use Espacenet?**  
+**2. Do I need to register to use Espacenet?**
 No, registration is not mandatory. A free user account can be created for extended functions.
 
-**3. Which patent offices are included in Espacenet?**  
+**3. Which patent offices are included in Espacenet?**
 Espacenet includes patents from numerous countries and regions, including European, US-American, Japanese, and many other national patent offices.
 
-**4. Can I download patent documents?**  
+**4. Can I download patent documents?**
 Yes, many patent documents are available as PDFs for download, including descriptions and drawings.
 
-**5. How up-to-date are the data in Espacenet?**  
+**5. How up-to-date are the data in Espacenet?**
 The update of the data depends on the patent office and is updated regularly to ensure the most up-to-date data.
 
-**6. Is Espacenet suitable for filing patents?**  
+**6. Is Espacenet suitable for filing patents?**
 Espacenet is primarily for research and analysis, not for patent filing. For patent filing, please contact the relevant patent office.
 
-**7. Does Espacenet support patent family searches?**  
+**7. Does Espacenet support patent family searches?**
 Yes, Espacenet provides an overview of patent families, which combines patents from different countries.
 
-**8. Is there a mobile app for Espacenet?**  
+**8. Is there a mobile app for Espacenet?**
 There is no official mobile app available, but the platform is accessible via mobile browsers.
 
 ---

@@ -1,6 +1,11 @@
 ---
 slug: tidio
 title: Tidio
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -65,26 +70,26 @@ Tidio offers a freemium model, where basic features can be used for free. The pa
 
 ## FAQ
 
-**1. Is Tidio easy to install?**  
+**1. Is Tidio easy to install?**
 Yes, Tidio can be integrated into many websites and shop systems without hassle, often with just a few clicks.
 
-**2. What AI features does Tidio offer?**  
+**2. What AI features does Tidio offer?**
 Tidio uses AI to recognize customer inquiries and automatically deliver suitable responses through chatbots.
 
-**3. Can I test Tidio for free?**  
+**3. Can I test Tidio for free?**
 Yes, there is a free basic version with limited features, ideal for getting started.
 
-**4. Does Tidio support multiple languages?**  
+**4. Does Tidio support multiple languages?**
 Yes, the platform enables communication in different languages, which is important for international customers.
 
-**5. Is there a mobile app for Tidio?**  
+**5. Is there a mobile app for Tidio?**
 Yes, Tidio offers mobile apps for iOS and Android to manage chats on the go.
 
-**6. How secure is customer data with Tidio?**  
+**6. How secure is customer data with Tidio?**
 Tidio relies on common security standards; details depend on the respective plan and provider.
 
-**7. Can I integrate Tidio into my CRM?**  
+**7. Can I integrate Tidio into my CRM?**
 Depending on the plan and provider, integrations with various CRM systems are possible.
 
-**8. How many users can use Tidio at the same time?**  
+**8. How many users can use Tidio at the same time?**
 The number of users depends on the chosen plan; free plans usually have limitations.

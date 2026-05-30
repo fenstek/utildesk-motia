@@ -1,6 +1,11 @@
 ---
 slug: systran-translation-api
 title: SYSTRAN Translation API
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -101,28 +106,28 @@ A useful comparison for SYSTRAN Translation API starts with the goal. Only then 
 
 ## FAQ
 
-**1. Which languages does the SYSTRAN Translation API support?**  
+**1. Which languages does the SYSTRAN Translation API support?**
 SYSTRAN supports a wide range of language pairs, which may vary depending on the plan and product variant. The exact list is available on the provider's website.
 
-**2. Can I adapt the translations to my industry?**  
+**2. Can I adapt the translations to my industry?**
 Yes, the API offers customization options through custom glossaries and industry-specific models.
 
-**3. How is API usage billed?**  
+**3. How is API usage billed?**
 Billing is usually usage-based or via subscription plans, depending on the selected tariff.
 
-**4. Is the SYSTRAN Translation API GDPR-compliant?**  
+**4. Is the SYSTRAN Translation API GDPR-compliant?**
 SYSTRAN places great importance on data protection and offers security features to support GDPR compliance.
 
-**5. Is there a free trial?**  
+**5. Is there a free trial?**
 Depending on the plan, a free trial or freemium offering may be available so you can test the API before purchasing.
 
-**6. What types of content can be translated?**  
+**6. What types of content can be translated?**
 The API supports translation of texts, documents, and websites in various formats.
 
-**7. How fast is the translation?**  
+**7. How fast is the translation?**
 The API provides real-time translations with low latency, depending on the request and the volume.
 
-**8. Do I need technical know-how to use the API?**  
+**8. Do I need technical know-how to use the API?**
 Basic programming knowledge is required to integrate and customize the API in applications.
 
 **9. How should a team test SYSTRAN Translation API?**

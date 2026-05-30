@@ -1,6 +1,11 @@
 ---
 slug: lensa
 title: Lensa
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -97,28 +102,28 @@ When comparing options, Lensa should not only be measured against very similar p
 
 ## FAQ
 
-**1. Is Lensa free to use?**  
+**1. Is Lensa free to use?**
 Yes, Lensa offers a free basic version with limited features. Full use requires a premium subscription.
 
-**2. On which platforms is Lensa available?**  
+**2. On which platforms is Lensa available?**
 Lensa is available as an app for iOS and Android.
 
-**3. Are my photos processed in the cloud?**  
+**3. Are my photos processed in the cloud?**
 Yes, image editing is usually carried out on the provider's servers, which can raise privacy concerns. Users should review the privacy policy.
 
-**4. Can Lensa edit image types other than portraits?**  
+**4. Can Lensa edit image types other than portraits?**
 Lensa is mainly specialized in portrait photos. Editing other image types is possible, but it is not the app's main focus.
 
-**5. How good are the results of the AI-powered editing?**  
+**5. How good are the results of the AI-powered editing?**
 The quality depends on the original quality of the photo. In many cases, Lensa produces convincing improvements, but perfect results are not guaranteed.
 
-**6. Is there a way to edit multiple photos at once?**  
+**6. Is there a way to edit multiple photos at once?**
 Depending on the plan, Lensa offers batch processing that allows multiple images to be edited in one step.
 
-**7. What privacy measures does Lensa have?**  
+**7. What privacy measures does Lensa have?**
 The app should follow common security standards; details can be found in the provider's privacy policy.
 
-**8. Can I use Lensa without an internet connection?**  
+**8. Can I use Lensa without an internet connection?**
 Since processing usually happens on the server side, an internet connection is generally required.
 
 **9. How should a team test Lensa?**

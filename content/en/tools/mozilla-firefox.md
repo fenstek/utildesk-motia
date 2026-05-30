@@ -1,6 +1,11 @@
 ---
 slug: mozilla-firefox
 title: Mozilla Firefox
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Free
 tags:
@@ -90,26 +95,26 @@ Mozilla Firefox is completely free to use. There are no hidden costs or paid upg
 
 ## FAQ
 
-**1. Is Mozilla Firefox really free?**  
+**1. Is Mozilla Firefox really free?**
 Yes, Firefox is a free, open-source web browser with no paid features.
 
-**2. How does Firefox protect my privacy?**  
+**2. How does Firefox protect my privacy?**
 Firefox blocks trackers by default and offers features like private mode and container tabs to protect your data.
 
-**3. Can I use Firefox on multiple devices?**  
+**3. Can I use Firefox on multiple devices?**
 Yes, Firefox Sync allows you to securely share bookmarks, passwords, and tabs across devices.
 
-**4. Does Firefox support extensions/add-ons?**  
+**4. Does Firefox support extensions/add-ons?**
 Yes, Firefox has a wide range of add-ons to customize the browser.
 
-**5. What developer tools does Firefox include?**  
+**5. What developer tools does Firefox include?**
 Firefox includes tools such as an inspector, console, debugger, and network monitor for web developers.
 
-**6. How often is Firefox updated?**  
+**6. How often is Firefox updated?**
 Mozilla regularly releases updates that introduce new features and fix security vulnerabilities.
 
-**7. Are there any limitations when using Firefox?**  
+**7. Are there any limitations when using Firefox?**
 Firefox is generally free to use, but some websites may be optimized for other browsers.
 
-**8. How secure is Firefox compared to other browsers?**  
+**8. How secure is Firefox compared to other browsers?**
 Firefox is widely regarded as very secure, especially due to its privacy features and rapid responses to security issues.

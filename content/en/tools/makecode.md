@@ -1,6 +1,11 @@
 ---
 slug: makecode
 title: MakeCode
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Free
 tags:
@@ -16,6 +21,11 @@ translation: full
 
 MakeCode is a free programming platform designed to make learning to program accessible for beginners and advanced users alike. With an intuitive block-based interface and the option to program in JavaScript, MakeCode offers a flexible environment for education, hobbies, and initial developer projects.
 
+## Editorial assessment
+
+With MakeCode, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+
+We would test MakeCode in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
 ## Who is MakeCode suitable for?
 
 MakeCode is primarily aimed at learners, educators, and developers who want to quickly and easily build programming skills. It is especially popular in education because it allows students to gain their first experiences through visual programming. At the same time, the platform is suitable for anyone interested in hardware programming with microcontrollers such as the micro:bit or Adafruit Circuit Playground Express.
@@ -61,26 +71,26 @@ MakeCode is entirely **free** to use. There are no paid plans or restrictions af
 
 ## FAQ
 
-**1. Is MakeCode really free?**  
+**1. Is MakeCode really free?**
 Yes, MakeCode is completely free to use with no payment required for core features.
 
-**2. Do I need special hardware to use MakeCode?**  
+**2. Do I need special hardware to use MakeCode?**
 MakeCode can be used in a browser and includes a simulator for testing programs without hardware. For hardware projects, compatible microcontrollers like the micro:bit are recommended.
 
-**3. Can I program in a text-based language with MakeCode?**  
+**3. Can I program in a text-based language with MakeCode?**
 Yes, besides block programming, MakeCode also supports JavaScript, facilitating the transition to text-based coding.
 
-**4. Is there an app or do I have to work in the browser?**  
+**4. Is there an app or do I have to work in the browser?**
 MakeCode is mainly a web application usable in modern browsers. Offline apps are available for certain devices but not for all platforms.
 
-**5. Which hardware is supported by MakeCode?**  
+**5. Which hardware is supported by MakeCode?**
 MakeCode supports, among others, the micro:bit, Adafruit Circuit Playground Express, and Minecraft Education Edition.
 
-**6. Can I save and share my projects?**  
+**6. Can I save and share my projects?**
 Yes, projects can be saved online, exported, and shared via links.
 
-**7. Is MakeCode suitable for use in schools?**  
+**7. Is MakeCode suitable for use in schools?**
 Yes, MakeCode is frequently used in education and offers learning materials and features tailored for schools.
 
-**8. Is there support or a community for MakeCode?**  
+**8. Is there support or a community for MakeCode?**
 MakeCode has an active community, official documentation, and forums to assist with questions and issues.

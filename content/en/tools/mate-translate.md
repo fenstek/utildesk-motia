@@ -1,6 +1,11 @@
 ---
 slug: mate-translate
 title: Mate Translate
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -108,28 +113,28 @@ Alternatives to Mate Translate should be chosen by the concrete work problem. In
 
 ## FAQ
 
-**1. Which languages does Mate Translate support?**  
+**1. Which languages does Mate Translate support?**
 Mate Translate supports over 100 languages, including the most common world languages as well as many regional dialects.
 
-**2. Can Mate Translate be used offline?**  
+**2. Can Mate Translate be used offline?**
 Some features are available offline, but AI-powered translation usually requires an internet connection.
 
-**3. Is Mate Translate suitable for professional use?**  
+**3. Is Mate Translate suitable for professional use?**
 Mate Translate is well suited for everyday use and smaller professional tasks, but it does not always replace human translators for complex texts.
 
-**4. Is there a free version of Mate Translate?**  
+**4. Is there a free version of Mate Translate?**
 Yes, there is a free basic version with limited features. For the full feature set, a paid subscription is usually required.
 
-**5. How does synchronization between devices work?**  
+**5. How does synchronization between devices work?**
 Mate Translate synchronizes settings and translations through a user account, making data available on different devices.
 
-**6. Which platforms are supported?**  
+**6. Which platforms are supported?**
 Mate Translate is available as a browser extension, a desktop app, and a mobile app for various operating systems.
 
-**7. Is there integration with other software?**  
+**7. Is there integration with other software?**
 The tool can be integrated into many common work environments to improve workflow.
 
-**8. How secure is the translated data?**  
+**8. How secure is the translated data?**
 Mate Translate typically uses encryption and privacy measures, though details may vary depending on the provider.
 
 **9. How should a team test Mate Translate?**

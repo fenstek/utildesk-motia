@@ -1,6 +1,11 @@
 ---
 slug: medibang-paint
 title: MediBang Paint
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Freemium
 tags: [design,painting,illustration,manga]
@@ -77,26 +82,26 @@ MediBang Paint ist grundsätzlich kostenlos nutzbar (Freemium). Die Basisversion
 
 ## FAQ
 
-**1. Ist MediBang Paint wirklich kostenlos?**  
+**1. Ist MediBang Paint wirklich kostenlos?**
 Ja, die Basisversion von MediBang Paint ist kostenlos nutzbar. Es gibt jedoch optionale kostenpflichtige Upgrades, die zusätzliche Funktionen bieten.
 
-**2. Auf welchen Geräten kann ich MediBang Paint verwenden?**  
+**2. Auf welchen Geräten kann ich MediBang Paint verwenden?**
 MediBang Paint ist verfügbar für Windows, macOS, Android und iOS, wodurch es auf PCs, Laptops, Tablets und Smartphones genutzt werden kann.
 
-**3. Brauche ich eine Internetverbindung, um MediBang Paint zu nutzen?**  
+**3. Brauche ich eine Internetverbindung, um MediBang Paint zu nutzen?**
 Die Software kann offline verwendet werden. Für Cloud-Funktionen und Synchronisation ist jedoch eine Internetverbindung erforderlich.
 
-**4. Kann ich meine MediBang Paint-Projekte mit anderen Programmen öffnen?**  
+**4. Kann ich meine MediBang Paint-Projekte mit anderen Programmen öffnen?**
 MediBang Paint unterstützt den Import und Export von PSD-Dateien, sodass Projekte auch in Programmen wie Adobe Photoshop weiterbearbeitet werden können.
 
-**5. Gibt es eine Möglichkeit, meine Zeichnungen online zu teilen?**  
+**5. Gibt es eine Möglichkeit, meine Zeichnungen online zu teilen?**
 Ja, MediBang Paint bietet Community-Funktionen, mit denen Nutzer ihre Werke hochladen und mit anderen Künstlern teilen können.
 
-**6. Wie schwer ist der Einstieg in MediBang Paint?**  
+**6. Wie schwer ist der Einstieg in MediBang Paint?**
 Die Benutzeroberfläche ist einsteigerfreundlich gestaltet und es gibt zahlreiche Tutorials, die den Einstieg erleichtern.
 
-**7. Welche besonderen Funktionen bietet MediBang Paint für Manga-Zeichner?**  
+**7. Welche besonderen Funktionen bietet MediBang Paint für Manga-Zeichner?**
 Speziell für Manga gibt es Rasterfolien, Panel-Layouts, Perspektivlinien und eine große Auswahl an Manga-Pinseln und Effekten.
 
-**8. Kann ich MediBang Paint für kommerzielle Projekte nutzen?**  
+**8. Kann ich MediBang Paint für kommerzielle Projekte nutzen?**
 Ja, die Nutzung für kommerzielle Zwecke ist möglich, es empfiehlt sich jedoch, die Lizenzbedingungen des jeweiligen Plans zu prüfen.

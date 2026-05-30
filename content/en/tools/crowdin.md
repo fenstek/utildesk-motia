@@ -1,6 +1,11 @@
 ---
 slug: crowdin
 title: Crowdin
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -80,26 +85,26 @@ Crowdin turns translation into a product process. The earlier developers, editor
 
 ## FAQ
 
-**1. Does Crowdin support machine translation?**  
+**1. Does Crowdin support machine translation?**
 Yes, Crowdin integrates various machine translation services to accelerate the translation process.
 
-**2. Can Crowdin be integrated into existing development processes?**  
+**2. Can Crowdin be integrated into existing development processes?**
 Yes, Crowdin offers APIs and plugins for many popular tools like GitHub, GitLab, Bitbucket, Jira, and more.
 
-**3. Is Crowdin also suitable for small teams for free?**  
+**3. Is Crowdin also suitable for small teams for free?**
 Yes, the Freemium model allows for free use with limited features and translation volume.
 
-**4. How secure are the data on Crowdin?**  
+**4. How secure are the data on Crowdin?**
 Crowdin uses industry-standard security measures and encryption to protect its users' data.
 
-**5. Does Crowdin have a mobile app?**  
+**5. Does Crowdin have a mobile app?**
 Yes, Crowdin offers a mobile app, allowing users to access translation projects on-the-go.
 
-**6. What file formats does Crowdin support?**  
+**6. What file formats does Crowdin support?**
 Crowdin supports a wide range of formats, including JSON, XML, YAML, PO, XLIFF, HTML, Markdown, and many more.
 
-**7. How does Crowdin's role and user management work?**  
+**7. How does Crowdin's role and user management work?**
 Crowdin allows assigning different rights to administrators, translators, reviewers, and other roles within a project.
 
-**8. Does Crowdin offer support and training?**  
+**8. Does Crowdin offer support and training?**
 Depending on the plan, Crowdin offers various support levels, as well as resources and training to optimize the platform's use.

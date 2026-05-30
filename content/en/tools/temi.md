@@ -1,6 +1,11 @@
 ---
 slug: temi
 title: Temi
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Audio
 price_model: Usage-based
 tags:
@@ -98,26 +103,26 @@ Temi operates on a usage-based pricing model. Costs depend on the length of the 
 
 ## FAQ
 
-**How accurate is Temi's transcription?**  
+**How accurate is Temi's transcription?**
 Accuracy heavily depends on audio quality, clarity of speech, and accents. Transcripts are generally understandable but often require manual corrections.
 
-**Which languages does Temi support?**  
+**Which languages does Temi support?**
 Temi is mainly optimized for English. Availability of other languages varies by plan or provider.
 
-**How does the pricing model work?**  
+**How does the pricing model work?**
 Temi uses a usage-based model charging per minute of transcribed material. Prices and terms should be confirmed with the provider.
 
-**Can I use Temi on mobile devices?**  
+**Can I use Temi on mobile devices?**
 Yes, Temi is accessible through web browsers on mobile devices, allowing flexible usage on the go.
 
-**Is there a free trial version?**  
+**Is there a free trial version?**
 Depending on the provider, a short free trial or a small free minutes quota is often available.
 
-**How secure is my data with Temi?**  
+**How secure is my data with Temi?**
 Privacy policies and security measures differ by provider. It is recommended to review relevant terms before use.
 
-**Can I export the transcripts?**  
+**Can I export the transcripts?**
 Yes, Temi offers various export formats such as TXT, PDF, or DOCX for further use of transcripts.
 
-**How fast do I receive my transcript?**  
+**How fast do I receive my transcript?**
 Processing usually takes just a few minutes, depending on the file's length and quality.

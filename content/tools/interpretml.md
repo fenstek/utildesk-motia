@@ -1,6 +1,11 @@
 ---
 slug: interpretml
 title: InterpretML
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Entwickler-Tools
 price_model: Open Source
 tags: ["developer", "ml", "explainability", "ai", "analytics"]
@@ -24,7 +29,7 @@ InterpretML passt zu Data Scientists, ML Engineers, Risk-Teams und Organisatione
 Weniger passend ist InterpretML für reine Dashboard-Nutzer oder Teams ohne eigenen Modellierungsprozess. Es setzt voraus, dass Daten, Modell, Metriken und Fragestellung verstanden werden.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/interpretml-editorial.webp" alt="Illustration zu InterpretML: ein transparentes Modell zeigt Feature-Hebel und erkl?rbare Vorhersagen" loading="lazy" decoding="async" />
+  <img src="/images/tools/interpretml-editorial.webp" alt="Illustration zu InterpretML: ein transparentes Modell zeigt Feature-Hebel und erklärbare Vorhersagen" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

@@ -1,6 +1,11 @@
 ---
 slug: azure-ai-document-intelligence
 title: Azure AI Document Intelligence
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Usage-based
 tags:
@@ -109,14 +114,14 @@ Depending on the problem, alternatives to Azure AI Document Intelligence may com
 
 ## FAQ
 
-**Is Azure AI Document Intelligence only an OCR tool?**  
+**Is Azure AI Document Intelligence only an OCR tool?**
 Not only. The real value usually comes from combining OCR with field extraction, validation, and export.
 
-**Can Azure AI Document Intelligence read invoices automatically?**  
+**Can Azure AI Document Intelligence read invoices automatically?**
 Azure AI Document Intelligence is relevant for invoice workflows, but quality depends on scan quality, layout, language, required fields, and review rules. Test with real German invoices before rollout.
 
-**Do you need developers?**  
+**Do you need developers?**
 For Azure AI Document Intelligence, it depends on the target workflow: simple tests are easier, but stable production use needs ownership for integration, data quality, monitoring, and error handling.
 
-**What should teams check for privacy?**  
+**What should teams check for privacy?**
 Before using Azure AI Document Intelligence, teams should review the DPA, data location, retention, subprocessors, deletion options, and any use of customer data for training.

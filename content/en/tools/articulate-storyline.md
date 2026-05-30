@@ -1,6 +1,11 @@
 ---
 slug: articulate-storyline
 title: Articulate Storyline
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Subscription
 tags:
@@ -94,12 +99,11 @@ Articulate Storyline is typically available as part of an Articulate 360 subscri
 
 ## FAQ
 
-**Is Storyline only for corporate training?**  
+**Is Storyline only for corporate training?**
 No. It is common in corporate learning, but it also works for education, agencies, and software training.
 
-**Can Storyline publish to an LMS?**  
+**Can Storyline publish to an LMS?**
 Yes. It supports common e-learning delivery formats used by learning management systems.
 
-**Is coding required?**  
+**Is coding required?**
 No. Most course logic is built with visual triggers and interactions.
-

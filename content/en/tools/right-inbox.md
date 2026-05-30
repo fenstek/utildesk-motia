@@ -1,6 +1,11 @@
 ---
 slug: right-inbox
 title: Right Inbox
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -81,26 +86,26 @@ Right Inbox offers a freemium model. The basic features can be used for free, bu
 
 ## FAQ
 
-**1. Is Right Inbox compatible with all Gmail versions?**  
+**1. Is Right Inbox compatible with all Gmail versions?**
 Right Inbox works with most Gmail versions, especially the web version and mobile apps that support Gmail. It can also be used with Google Workspace accounts.
 
-**2. Can I use Right Inbox without Gmail?**  
+**2. Can I use Right Inbox without Gmail?**
 No, Right Inbox is designed specifically for Gmail and does not support other email clients.
 
-**3. Which features are included in the free version?**  
+**3. Which features are included in the free version?**
 The free version offers basic email scheduling and a limited number of follow-ups. An upgrade is required for advanced features such as unlimited tracking and team features.
 
-**4. How secure is using Right Inbox?**  
+**4. How secure is using Right Inbox?**
 The provider uses standard security measures to protect data. However, users should handle sensitive information carefully, since email content is processed.
 
-**5. Can I automate multiple follow-ups?**  
+**5. Can I automate multiple follow-ups?**
 Yes, Right Inbox allows you to set up multiple automatic follow-ups at defined intervals, depending on the plan you choose.
 
-**6. Is there a mobile app for Right Inbox?**  
+**6. Is there a mobile app for Right Inbox?**
 There is no standalone app, but the features are available through the Gmail app on mobile devices.
 
-**7. How does email tracking work?**  
+**7. How does email tracking work?**
 The tool sends invisible tracking pixels with the email to detect when a message is opened or a link is clicked.
 
-**8. Can I use Right Inbox in a team?**  
+**8. Can I use Right Inbox in a team?**
 Yes, there are team features that allow sharing templates and reminders, although usually only in the paid plans.

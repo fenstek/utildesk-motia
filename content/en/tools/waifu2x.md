@@ -1,6 +1,11 @@
 ---
 slug: waifu2x
 title: Waifu2x
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -69,26 +74,26 @@ Waifu2x is open source and therefore generally free to use. Some third-party pro
 
 ## FAQ
 
-**1. What exactly is Waifu2x?**  
+**1. What exactly is Waifu2x?**
 Waifu2x is an AI-based tool for image enlargement and noise reduction that was originally developed for anime images.
 
-**2. Is Waifu2x free?**  
+**2. Is Waifu2x free?**
 Yes, the open-source version of Waifu2x is free to use. Web-based services built on Waifu2x may have different pricing models.
 
-**3. Which image formats are supported?**  
+**3. Which image formats are supported?**
 Typically JPG, PNG, and BMP; depending on the version and implementation, additional formats may also be supported.
 
-**4. How well does Waifu2x work on photos compared with anime images?**  
+**4. How well does Waifu2x work on photos compared with anime images?**
 Waifu2x works especially well with illustrations and anime images. For photos, quality depends on the image content, since the model was originally trained on drawings.
 
-**5. Do I need technical knowledge to use it?**  
+**5. Do I need technical knowledge to use it?**
 The web versions are easy to use. Local installations require basic knowledge of command-line use or software setup.
 
-**6. Can I process multiple images at once?**  
+**6. Can I process multiple images at once?**
 Some versions offer batch processing, but this depends on the implementation.
 
-**7. Is there a desktop version?**  
+**7. Is there a desktop version?**
 Yes, there are various desktop clients and scripts that can run Waifu2x locally.
 
-**8. How long does image processing take?**  
+**8. How long does image processing take?**
 The time varies depending on image size, hardware, and software version. Web services may be faster; local versions depend on the hardware.

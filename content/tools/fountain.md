@@ -1,6 +1,11 @@
 ---
 slug: fountain
 title: Fountain
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Image
 price_model: Abonnement
 tags: [recruiting, hr, automation, ai]
@@ -46,7 +51,7 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Compliance-Unterstützung:** Einhaltung von Datenschutz- und Arbeitsrechtvorgaben.
 - **Integration mit HR-Systemen:** Anbindung an bestehende HR-Software und Tools.
 
-- **Praxis-Workflow:** Fountain sollte anhand eines konkreten Assets oder Mockup mit Briefing, Versionen, Feedbackrunde und finaler Übergabe getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Fountain sollte der erste Test mit ein konkretes Asset mit Briefing, Brand-Regeln, Variantenvergleich und finaler Übergabe laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Stark wird Fountain erst, wenn Bearbeitungszeit, visuelle Qualität, Freigabeschleifen und Wiederverwendbarkeit nicht im Bauchgefühl bleiben, sondern prüfbar im Prozess auftauchen.
 - **Team-Übergabe:** Nützlich wird Fountain besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -92,28 +97,28 @@ Beim Vergleich lohnt es sich, Fountain nicht nur gegen sehr ähnliche Produkte z
 
 ## FAQ
 
-**1. Welche Vorteile bietet Fountain im Vergleich zu herkömmlichen Recruiting-Methoden?**  
+**1. Welche Vorteile bietet Fountain im Vergleich zu herkömmlichen Recruiting-Methoden?**
 Fountain automatisiert viele manuelle Prozesse, spart dadurch Zeit und erhöht die Effizienz bei der Kandidatenauswahl durch KI-gestützte Algorithmen.
 
-**2. Ist Fountain für kleine Unternehmen geeignet?**  
+**2. Ist Fountain für kleine Unternehmen geeignet?**
 Ja, Fountain ist skalierbar und bietet verschiedene Preismodelle, die sich auch für kleine und mittelständische Unternehmen eignen.
 
-**3. Welche Integrationen unterstützt Fountain?**  
+**3. Welche Integrationen unterstützt Fountain?**
 Fountain kann in der Regel mit gängigen HR-Systemen, Jobportalen und Kommunikations-Tools integriert werden, um den Workflow zu optimieren.
 
-**4. Wie sicher sind die Daten bei Fountain?**  
+**4. Wie sicher sind die Daten bei Fountain?**
 Der Anbieter legt Wert auf Datenschutz und Compliance und erfüllt gängige Standards, um die Sicherheit und Vertraulichkeit der Bewerberdaten zu gewährleisten.
 
-**5. Gibt es eine mobile App für Fountain?**  
+**5. Gibt es eine mobile App für Fountain?**
 Fountain ist mobil optimiert und ermöglicht die Verwaltung von Bewerbungen auch über Smartphones und Tablets.
 
-**6. Kann Fountain den gesamten Recruiting-Prozess abdecken?**  
+**6. Kann Fountain den gesamten Recruiting-Prozess abdecken?**
 Ja, von der Veröffentlichung der Stellenanzeige bis zur Einstellung unterstützt Fountain viele Schritte mit Automatisierung und KI.
 
-**7. Wie lange dauert die Implementierung von Fountain?**  
+**7. Wie lange dauert die Implementierung von Fountain?**
 Die Implementierungsdauer hängt vom Umfang der Nutzung und bestehenden Systemen ab, ist aber durch Cloud-Technologie meist schnell realisierbar.
 
-**8. Bietet Fountain Support und Schulungen an?**  
+**8. Bietet Fountain Support und Schulungen an?**
 In der Regel stellt der Anbieter Support und Schulungsmaterialien bereit, um die Einführung und Nutzung zu erleichtern.
 
 **9. Wie testet man Fountain sinnvoll im Team?**

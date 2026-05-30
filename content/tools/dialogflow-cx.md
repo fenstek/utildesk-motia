@@ -1,6 +1,11 @@
 ---
 slug: dialogflow-cx
 title: Dialogflow CX
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [chatbot, automation]
@@ -105,26 +110,26 @@ Für genaue Preisangaben empfiehlt es sich, die offizielle Google Cloud Pricing-
 
 ## FAQ
 
-**1. Was ist der Unterschied zwischen Dialogflow CX und Dialogflow ES?**  
+**1. Was ist der Unterschied zwischen Dialogflow CX und Dialogflow ES?**
 Dialogflow CX ist die erweiterte Version mit Fokus auf komplexe und mehrstufige Dialoge, während Dialogflow ES für einfache und standardisierte Chatbots gedacht ist.
 
-**2. Welche Sprachen unterstützt Dialogflow CX?**  
+**2. Welche Sprachen unterstützt Dialogflow CX?**
 Dialogflow CX unterstützt zahlreiche Sprachen und Dialekte, die je nach Version und Region variieren können.
 
-**3. Benötige ich Programmierkenntnisse, um Dialogflow CX zu nutzen?**  
+**3. Benötige ich Programmierkenntnisse, um Dialogflow CX zu nutzen?**
 Grundlegende Kenntnisse sind hilfreich, insbesondere für Integrationen und Anpassungen, aber die grafische Oberfläche erleichtert die Erstellung von Dialogen auch ohne tiefgehende Programmierung.
 
-**4. Kann Dialogflow CX in bestehende Systeme integriert werden?**  
+**4. Kann Dialogflow CX in bestehende Systeme integriert werden?**
 Ja, Dialogflow CX bietet vielfältige Integrationsmöglichkeiten, z. B. über APIs, Webhooks und Google Cloud Services.
 
-**5. Wie skaliert Dialogflow CX bei hohem Nutzeraufkommen?**  
+**5. Wie skaliert Dialogflow CX bei hohem Nutzeraufkommen?**
 Die Plattform ist cloudbasiert und skaliert automatisch je nach Traffic und Anzahl der Nutzeranfragen.
 
-**6. Gibt es eine kostenlose Testversion?**  
+**6. Gibt es eine kostenlose Testversion?**
 Google bietet häufig kostenlose Kontingente oder Testphasen an, Details sind auf der offiziellen Website zu finden.
 
-**7. Wie sicher sind die Daten in Dialogflow CX?**  
+**7. Wie sicher sind die Daten in Dialogflow CX?**
 Dialogflow CX nutzt die Sicherheitsstandards und Compliance-Modelle der Google Cloud, einschließlich Verschlüsselung und Datenschutzrichtlinien.
 
-**8. Welche Branchen profitieren besonders von Dialogflow CX?**  
+**8. Welche Branchen profitieren besonders von Dialogflow CX?**
 Insbesondere Telekommunikation, Finanzdienstleistungen, E-Commerce, Gesundheitswesen und andere Branchen mit hohem Bedarf an automatisiertem Kundenkontakt.

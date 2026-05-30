@@ -1,6 +1,11 @@
 ---
 slug: amazon-opensearch
 title: Amazon OpenSearch
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Usage-based
 tags:
@@ -93,12 +98,11 @@ Amazon OpenSearch is usage-based. Costs usually include instance hours, storage,
 
 ## FAQ
 
-**Is Amazon OpenSearch the same as Elasticsearch?**  
+**Is Amazon OpenSearch the same as Elasticsearch?**
 No. OpenSearch is a fork of Elasticsearch, but many concepts and APIs are similar.
 
-**Is it only for logs?**  
+**Is it only for logs?**
 No. Logs are common, but the service is also used for application search, security analytics, and dashboards.
 
-**Does AWS manage everything?**  
+**Does AWS manage everything?**
 AWS manages infrastructure, but teams still need to design indexes, retention, security, and query patterns.
-

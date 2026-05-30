@@ -1,6 +1,11 @@
 ---
 slug: shap
 title: SHAP (SHapley Additive exPlanations)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -97,26 +102,26 @@ SHAP is freely available as an open-source project under the MIT License. There 
 
 ## FAQ
 
-**1. What are Shapley values?**  
+**1. What are Shapley values?**
 Shapley values come from game theory and fairly distribute the payoff of a coalition game among the individual players. In SHAP, they are used to quantify the contribution of each feature to a model prediction.
 
-**2. Does SHAP support all machine-learning models?**  
+**2. Does SHAP support all machine-learning models?**
 SHAP is model-agnostic and supports many common models. For some models there are optimized algorithms, while for others the calculation can be more complex.
 
-**3. How difficult is it to use SHAP?**  
+**3. How difficult is it to use SHAP?**
 Basic use requires knowledge of Python and machine learning. For large datasets or complex models, computation can be time-consuming.
 
-**4. Can SHAP also be used for deep learning models?**  
+**4. Can SHAP also be used for deep learning models?**
 Yes, SHAP also supports neural networks, especially through integration with frameworks such as TensorFlow or PyTorch.
 
-**5. Is SHAP suitable for commercial use?**  
+**5. Is SHAP suitable for commercial use?**
 Yes, since SHAP is licensed under the MIT License, it can also be used freely in commercial projects.
 
-**6. What visualization options does SHAP offer?**  
+**6. What visualization options does SHAP offer?**
 SHAP offers various plots such as summary plots, dependence plots, force plots, and more, which make it easier to interpret feature contributions.
 
-**7. Is there a graphical user interface for SHAP?**  
+**7. Is there a graphical user interface for SHAP?**
 SHAP is mainly used as a Python library. GUI-based tools usually require third-party solutions or custom implementations.
 
-**8. Where can I find documentation and examples?**  
+**8. Where can I find documentation and examples?**
 The official SHAP documentation and example notebooks are available on GitHub and on the project site. There are also tutorials to help you get started.

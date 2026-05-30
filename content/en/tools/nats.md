@@ -1,6 +1,11 @@
 ---
 slug: nats
 title: NATS
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Open Source
 tags:
@@ -76,12 +81,11 @@ NATS is compelling because it is simple and fast, but it still requires discipli
 
 ## FAQ
 
-**Is NATS a Kafka replacement?**  
+**Is NATS a Kafka replacement?**
 Sometimes, but not always. NATS is often simpler and lighter, while Kafka is stronger for large-scale event log and replay workloads.
 
-**Does NATS support persistence?**  
+**Does NATS support persistence?**
 Yes. JetStream adds persistence, replay, and stream processing features.
 
-**Is NATS only for microservices?**  
+**Is NATS only for microservices?**
 No. It can also be used for IoT, edge, command systems, and real-time messaging.
-

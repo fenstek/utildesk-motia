@@ -1,6 +1,11 @@
 ---
 slug: genetec-clearance
 title: Genetec Clearance
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Video
 price_model: Subscription
 tags:
@@ -92,26 +97,26 @@ Genetec Clearance is offered on a subscription basis. Prices vary depending on t
 
 ## FAQ
 
-**1. What video formats does Genetec Clearance support?**  
+**1. What video formats does Genetec Clearance support?**
 The platform supports various common video formats to ensure flexible use and integration. Supported formats may vary by version.
 
-**2. Is Genetec Clearance GDPR compliant?**  
+**2. Is Genetec Clearance GDPR compliant?**
 Genetec places great emphasis on data protection and compliance. The platform includes features to support adherence to data privacy regulations; however, compliance also depends on customer use and configuration.
 
-**3. Can I use Genetec Clearance on mobile devices?**  
+**3. Can I use Genetec Clearance on mobile devices?**
 Yes, Genetec Clearance provides mobile apps and web access, allowing users to access and manage evidence on the go.
 
-**4. How secure is my data in Genetec Clearance?**  
+**4. How secure is my data in Genetec Clearance?**
 The platform employs modern encryption methods and strict access controls to protect data from unauthorized access.
 
-**5. Is there a trial or demo available?**  
+**5. Is there a trial or demo available?**
 Depending on the provider, it is often possible to request a demo or trial before purchasing. Details should be obtained directly from the provider.
 
-**6. Can Genetec Clearance integrate with other security systems?**  
+**6. Can Genetec Clearance integrate with other security systems?**
 Yes, the platform supports integrations with various video surveillance and investigation software solutions.
 
-**7. How are user permissions managed?**  
+**7. How are user permissions managed?**
 Genetec Clearance offers granular permission management to individually control access to evidence.
 
-**8. What storage options are available?**  
+**8. What storage options are available?**
 Storage is cloud-based, with capacity and location varying depending on the plan and provider.

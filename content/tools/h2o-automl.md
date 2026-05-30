@@ -1,6 +1,11 @@
 ---
 slug: h2o-automl
 title: H2O AutoML
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Open Source
 tags: [automl,machine-learning,data,automation]
@@ -79,26 +84,26 @@ H2O AutoML ist Open Source und somit kostenlos nutzbar. Es fallen keine Lizenzge
 
 ## FAQ
 
-**1. Was ist H2O AutoML?**  
+**1. Was ist H2O AutoML?**
 H2O AutoML ist eine Open-Source-Plattform, die den Prozess der Erstellung und Optimierung von Machine-Learning-Modellen automatisiert.
 
-**2. Benötige ich Programmierkenntnisse, um H2O AutoML zu nutzen?**  
+**2. Benötige ich Programmierkenntnisse, um H2O AutoML zu nutzen?**
 Grundlegende Kenntnisse in Python oder R sind hilfreich, um die Plattform effektiv zu bedienen, es gibt jedoch auch eine Web-Oberfläche für einfacheren Einstieg.
 
-**3. Welche Arten von Machine-Learning-Problemen kann H2O AutoML lösen?**  
+**3. Welche Arten von Machine-Learning-Problemen kann H2O AutoML lösen?**
 Die Plattform unterstützt Klassifikation, Regression und Zeitreihenanalysen.
 
-**4. Ist H2O AutoML kostenlos?**  
+**4. Ist H2O AutoML kostenlos?**
 Ja, H2O AutoML ist Open Source und kann kostenlos genutzt werden. Es können jedoch Kosten für Hardware oder Cloud-Ressourcen anfallen.
 
-**5. Wie skaliert H2O AutoML bei großen Datensätzen?**  
+**5. Wie skaliert H2O AutoML bei großen Datensätzen?**
 H2O AutoML ist für parallele Verarbeitung ausgelegt und kann große Datenmengen effizient verarbeiten, benötigt dafür jedoch ausreichend Rechenressourcen.
 
-**6. Kann ich H2O AutoML in bestehende Workflows integrieren?**  
+**6. Kann ich H2O AutoML in bestehende Workflows integrieren?**
 Ja, es bietet APIs für Python, R und eine Web-UI, die sich gut in bestehende Datenpipelines integrieren lassen.
 
-**7. Gibt es Support oder Community-Hilfe?**  
+**7. Gibt es Support oder Community-Hilfe?**
 Als Open-Source-Projekt gibt es eine aktive Community und umfangreiche Dokumentation, jedoch keinen offiziellen Support wie bei kommerziellen Produkten.
 
-**8. Wie unterscheidet sich H2O AutoML von anderen AutoML-Tools?**  
+**8. Wie unterscheidet sich H2O AutoML von anderen AutoML-Tools?**
 H2O AutoML kombiniert eine breite Algorithmenvielfalt mit Open-Source-Freiheit und ist besonders flexibel und skalierbar im Vergleich zu manchen proprietären Lösungen.

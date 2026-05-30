@@ -1,6 +1,11 @@
 ---
 slug: research-ai
 title: Research AI
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Research"
 price_model: Freemium
 tags: [research-assistant, ai-search, academic-research]
@@ -35,11 +40,11 @@ Dank der intuitiven Bedienung und den umfangreichen Such- und Analysefunktionen 
 - **Übergaben im Team:** Research AI kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Research AI weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Research AI ist Quellenarbeit der Kern. Wir würden mit einer engen Recherchefrage starten, Treffer gegen Kontrollquellen prüfen und festhalten, warum Quellen aufgenommen oder verworfen wurden.
 
-Praktisch ist Research AI vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Research AI lohnt sich, wenn Fundstellen, Notizen und Zweifel später noch nachvollziehbar bleiben. Ohne diese Sorgfalt wird Recherche nur schneller, aber nicht belastbarer.
 
 ## Hauptfunktionen
 
@@ -70,65 +75,3 @@ Praktisch ist Research AI vor allem, wenn es vorhandene Abläufe entlastet, stat
 - Für sehr spezielle Fachgebiete sind nicht immer alle relevanten Quellen enthalten.
 - Abhängigkeit von Internetverbindung und Serververfügbarkeit.
 - Lernkurve bei der optimalen Nutzung aller Features.
-
-## Workflow-Fit
-
-Research AI passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Research AI nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Research AI landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Research AI außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Research AI.
-
-## Redaktionelle Einschätzung
-
-Research AI unterstützt Recherche vor allem dann, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Es beschleunigt Orientierung, ersetzt aber keine fachliche Bewertung.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Research AI wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Research AI bietet ein Freemium-Modell an: 
-
-- **Kostenlose Basisversion:** Zugriff auf grundlegende Such- und Zusammenfassungsfunktionen mit begrenztem Suchvolumen.
-- **Premium-Pläne:** Erweiterter Zugriff auf erweiterte Funktionen wie tiefere Analysen, unbegrenztes Suchvolumen, erweiterte Filter und Prioritätssupport. Preise variieren je nach Anbieter und gewähltem Plan.
-- **Institutionelle Lizenzen:** Für Universitäten oder Forschungseinrichtungen sind oft angepasste Konditionen erhältlich.
-
-Detaillierte Preisinformationen sind auf der jeweiligen Anbieter-Website zu finden.
-
-## Alternativen zu Research AI
-
-- **Semantic Scholar:** Kostenfreie akademische Suchmaschine mit KI-Unterstützung für Forschungsliteratur.
-- **Google Scholar:** Weit verbreitete Suchplattform für wissenschaftliche Publikationen mit umfangreichem Index.
-- **Zotero:** Open-Source-Tool zur Literaturverwaltung und Rechercheunterstützung.
-- **Mendeley:** Kombination aus Literaturverwaltung und sozialer Plattform für Forscher.
-- **Connected Papers:** Visualisierung von Forschungsnetzwerken zur Entdeckung relevanter Studien.
-
-## FAQ
-
-**1. Ist Research AI für alle Fachbereiche geeignet?**  
-Je nach Datenbasis und Anbieter kann die Abdeckung variieren. Allgemein eignet sich Research AI für viele wissenschaftliche Disziplinen, für sehr spezielle Bereiche kann die Verfügbarkeit von Quellen eingeschränkt sein.
-
-**2. Brauche ich technische Vorkenntnisse, um Research AI zu nutzen?**  
-Das Tool ist benutzerfreundlich gestaltet und erfordert keine tiefgehenden technischen Kenntnisse. Eine Einarbeitungszeit kann jedoch helfen, alle Funktionen effizient zu nutzen.
-
-**3. Wie sicher sind meine Daten bei Research AI?**  
-Datenschutz und Sicherheit hängen vom jeweiligen Anbieter ab. Viele Anbieter setzen auf verschlüsselte Verbindungen und Datenschutzrichtlinien, die den gängigen Standards entsprechen.
-
-**4. Kann ich Research AI offline nutzen?**  
-In der Regel ist eine Internetverbindung erforderlich, da die Recherche auf Online-Datenbanken und Cloud-Services basiert.
-
-**5. Gibt es eine mobile App für Research AI?**  
-Verfügbarkeit mobiler Anwendungen hängt vom Anbieter ab. Manche bieten Apps oder mobile-optimierte Webseiten an.
-
-**6. Wie funktioniert die Plagiatsprüfung im Tool?**  
-Die Plagiatsprüfung vergleicht eingereichte Texte mit einer großen Datenbank bestehender Publikationen, um Übereinstimmungen zu erkennen und somit unbeabsichtigtes Plagiat zu vermeiden.
-
-**7. Kann ich Research AI mit anderen Schreibprogrammen verbinden?**  
-Viele Anbieter bieten Integrationen oder Exportfunktionen für gängige Textverarbeitungsprogramme wie Microsoft Word oder Google Docs.
-
-**8. Wie unterscheidet sich die kostenlose Version von der Premium-Version?**  
-Die kostenlose Version bietet grundlegende Funktionen mit begrenztem Umfang, während die Premium-Version erweiterte Features, unbegrenzte Nutzung und besseren Support umfasst.

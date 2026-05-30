@@ -1,6 +1,11 @@
 ---
 slug: lex
 title: Lex
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Writing"
 price_model: Freemium
 tags: [ai, writing, productivity, creative]
@@ -44,7 +49,7 @@ Ein sinnvoller Test beginnt mit einem echten Textauftrag mit Briefing, Rohfassun
 - **Integration in Arbeitsprozesse:** Möglichkeit zur Anbindung an andere Tools und Plattformen für eine nahtlose Nutzung.
 - **Freemium-Zugang:** Grundlegende Funktionen sind kostenlos nutzbar, erweiterte Features stehen in kostenpflichtigen Plänen zur Verfügung.
 
-- **Praxis-Workflow:** Lex sollte anhand eines echten Textauftrags mit Briefing, Rohfassung, Review, Überarbeitung und Veröffentlichung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Lex sollte der erste Test mit einen kurzen Text mit Briefing, Glossar, Faktencheck und finaler menschlicher Abnahme laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Im Betrieb braucht Lex klare Notizen dazu, wie Klarheit, Faktenprüfung, Tonalität, Bearbeitungszeit und Freigabequalität bewertet und bei Problemen nachgebessert werden.
 - **Team-Übergabe:** Nützlich wird Lex besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -87,28 +92,28 @@ Beim Vergleich lohnt es sich, Lex nicht nur gegen sehr ähnliche Produkte zu ste
 
 ## FAQ
 
-**1. Ist Lex für Anfänger geeignet?**  
+**1. Ist Lex für Anfänger geeignet?**
 Ja, Lex ist benutzerfreundlich gestaltet und eignet sich auch für Personen ohne technische Vorkenntnisse.
 
-**2. Welche Sprachen werden unterstützt?**  
+**2. Welche Sprachen werden unterstützt?**
 Die Sprachunterstützung hängt vom gewählten Plan ab, in der Regel sind mehrere Sprachen verfügbar.
 
-**3. Kann ich Lex kostenlos testen?**  
+**3. Kann ich Lex kostenlos testen?**
 Ja, das Freemium-Modell ermöglicht eine kostenfreie Nutzung mit eingeschränktem Funktionsumfang.
 
-**4. Wie funktioniert die KI-Textgenerierung?**  
+**4. Wie funktioniert die KI-Textgenerierung?**
 Lex nutzt moderne KI-Algorithmen, die auf eingegebene Stichpunkte oder Themenvorgaben passende Texte erstellen.
 
-**5. Gibt es eine mobile App?**  
+**5. Gibt es eine mobile App?**
 Informationen zu mobilen Anwendungen sind abhängig vom Anbieter und sollten auf der offiziellen Webseite überprüft werden.
 
-**6. Wie sicher sind meine Daten bei Lex?**  
+**6. Wie sicher sind meine Daten bei Lex?**
 Details zum Datenschutz variieren je nach Anbieter, es wird empfohlen, die jeweiligen Datenschutzrichtlinien zu prüfen.
 
-**7. Kann ich Lex in andere Tools integrieren?**  
+**7. Kann ich Lex in andere Tools integrieren?**
 Je nach Plan und Anbieter sind verschiedene Integrationen möglich, um den Workflow zu optimieren.
 
-**8. Welche Arten von Texten kann ich mit Lex erstellen?**  
+**8. Welche Arten von Texten kann ich mit Lex erstellen?**
 Lex eignet sich für Blogbeiträge, Marketingtexte, kreative Geschichten, Zusammenfassungen und mehr, je nach Nutzungsszenario.
 
 **9. Wie testet man Lex sinnvoll im Team?**

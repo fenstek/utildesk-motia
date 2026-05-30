@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-computer-vision
 title: Microsoft Azure Computer Vision
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -77,26 +82,26 @@ Microsoft Azure Computer Vision offers a freemium pricing model, with a limited 
 
 ## FAQ
 
-**1. Do I need programming knowledge to use Microsoft Azure Computer Vision?**  
+**1. Do I need programming knowledge to use Microsoft Azure Computer Vision?**
 Basic knowledge of working with APIs is recommended, as the service is primarily accessed via REST interfaces. For less technical users, ready-made solutions and integrations are available in some cases.
 
-**2. What types of images and formats are supported?**  
+**2. What types of images and formats are supported?**
 Microsoft Azure Computer Vision supports common image formats such as JPEG, PNG, BMP, and GIF. PDF documents can also be processed for text recognition.
 
-**3. How secure is my data when using the service?**  
+**3. How secure is my data when using the service?**
 Microsoft relies on high security standards and compliance with data protection policies. Nevertheless, sensitive data should be reviewed and protected accordingly before use.
 
-**4. Are there limits on free usage?**  
+**4. Are there limits on free usage?**
 Yes, the freemium model includes a limited number of free API calls per month. A paid plan is required for larger volumes.
 
-**5. Can Microsoft Azure Computer Vision also analyze videos?**  
+**5. Can Microsoft Azure Computer Vision also analyze videos?**
 Yes, there are video analysis features, but these are usually only included in higher or specialized plans.
 
-**6. In which languages does text recognition work?**  
+**6. In which languages does text recognition work?**
 OCR supports many languages, including German, English, French, Spanish, and others. The exact list may vary depending on the version.
 
-**7. How quickly are images analyzed?**  
+**7. How quickly are images analyzed?**
 Processing is usually nearly real-time, depending on network connectivity and data volume.
 
-**8. Can I train or customize the model myself?**  
+**8. Can I train or customize the model myself?**
 In addition to the standard features, Microsoft also offers ways to train your own models with Custom Vision, although this is a separate offering.

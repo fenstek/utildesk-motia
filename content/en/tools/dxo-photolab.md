@@ -1,6 +1,11 @@
 ---
 slug: dxo-photolab
 title: DxO PhotoLab
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: One-time purchase
 tags:
@@ -95,28 +100,28 @@ A comparison for DxO PhotoLab should go beyond feature lists. The key question i
 
 ## FAQ
 
-**1. Does DxO PhotoLab support all RAW formats?**  
+**1. Does DxO PhotoLab support all RAW formats?**
 The software supports a wide range of RAW formats from common camera manufacturers; the exact list depends on the respective update and camera.
 
-**2. Is an internet connection required to use it?**  
+**2. Is an internet connection required to use it?**
 An internet connection is required for installation and occasional license verification, but daily use works offline.
 
-**3. Is there a trial version of DxO PhotoLab?**  
+**3. Is there a trial version of DxO PhotoLab?**
 Yes, DxO usually offers a limited-time trial version so you can test the features before buying.
 
-**4. Which operating systems are supported?**  
+**4. Which operating systems are supported?**
 DxO PhotoLab is available for Windows and macOS; there is currently no version for Linux or mobile devices.
 
-**5. Can I combine DxO PhotoLab with other programs?**  
+**5. Can I combine DxO PhotoLab with other programs?**
 Yes, the software integrates well into existing workflows and supports exchange with programs like Photoshop or Lightroom.
 
-**6. What is the difference between the Essentials and Elite versions?**  
+**6. What is the difference between the Essentials and Elite versions?**
 The Elite version includes additional features such as DeepPRIME noise reduction and advanced local adjustments, while Essentials contains the basic editing tools.
 
-**7. Is there a way to learn the software?**  
+**7. Is there a way to learn the software?**
 DxO provides tutorials and extensive online documentation to make getting started easier.
 
-**8. How safe are my original images during editing?**  
+**8. How safe are my original images during editing?**
 DxO PhotoLab works non-destructively, so the original files remain unchanged and all edits are saved as separate instructions.
 
 **9. How should a team test DxO PhotoLab?**

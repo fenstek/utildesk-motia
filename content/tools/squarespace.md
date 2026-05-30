@@ -1,6 +1,11 @@
 ---
 slug: squarespace
 title: Squarespace
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Image"
 price_model: Je nach Plan
 tags: [website-builder, cms, design]
@@ -24,11 +29,11 @@ Squarespace eignet sich ideal für kleine und mittelständische Unternehmen, Kre
 - **Übergaben im Team:** Squarespace kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Squarespace weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Squarespace sollte ein Test mit echtem Rohmaterial beginnen: Briefing, Rechte, Qualität, Varianten und finale Abnahme. Einzelne Demo-Beispiele sagen wenig über den Produktionsalltag.
 
-Praktisch ist Squarespace vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Squarespace ist stark, wenn Medienarbeit schneller wird und trotzdem Freigabe, Lizenzen und Nachbearbeitung klar bleiben. Offen gelassene Rechte oder Exportregeln werden später teuer.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/squarespace-editorial.webp" alt="Illustration zu Squarespace: Kuestendorf baut einen kreativen Schaufensterraum" loading="lazy" decoding="async" />
@@ -66,66 +71,3 @@ Praktisch ist Squarespace vor allem, wenn es vorhandene Abläufe entlastet, stat
 - Weniger Flexibilität bei komplexen oder sehr individuellen Webprojekten
 - Export der Website-Daten kann eingeschränkt sein
 - Einige erweiterte Funktionen nur in teureren Plänen verfügbar
-
-## Workflow-Fit
-
-Squarespace passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Squarespace nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Squarespace landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Squarespace außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Squarespace.
-
-## Redaktionelle Einschätzung
-
-Squarespace ist dann sinnvoll, wenn Einsatzfall, Eingaben und Kontrolle klar beschrieben sind. Der praktische Nutzen zeigt sich im echten Ablauf, nicht in einer kurzen Demo.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Squarespace wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Die Preise bei Squarespace variieren je nach gewähltem Tarif und Leistungsumfang. Typischerweise gibt es mehrere Pläne, die monatlich oder jährlich abgerechnet werden:
-
-- **Persönlich:** Grundlegende Website-Funktionen, ideal für einfache Projekte.
-- **Business:** Zusätzliche Marketing- und E-Commerce-Features.
-- **Basic Commerce:** Vollumfänglicher Online-Shop mit erweiterten Verkaufstools.
-- **Advanced Commerce:** Erweiterte Shop-Funktionen wie Abonnements und erweiterte Versandoptionen.
-
-Die genauen Preise und enthaltenen Funktionen hängen vom gewählten Plan ab und können je nach Region variieren. Häufig gibt es Rabatte bei jährlicher Zahlung.
-
-## Alternativen zu Squarespace
-
-- **Wix:** Flexibler Website-Builder mit großer Designvielfalt und App-Markt.
-- **WordPress.com:** CMS mit vielen Plugins und hoher Anpassbarkeit, erfordert mehr technisches Wissen.
-- **Shopify:** Speziell für E-Commerce optimierte Plattform mit umfangreichen Verkaufstools.
-- **Weebly:** Einfacher Website-Builder mit integriertem Shop, ideal für Einsteiger.
-- **Webflow:** Designorientierte Plattform mit mehr Freiheit bei der Gestaltung und Interaktion.
-
-## FAQ
-
-**1. Benötige ich Programmierkenntnisse, um Squarespace zu nutzen?**  
-Nein, Squarespace ist speziell für Nutzer ohne Programmierkenntnisse entwickelt worden. Die intuitive Drag-and-Drop-Oberfläche ermöglicht einfache Anpassungen.
-
-**2. Kann ich einen Online-Shop mit Squarespace erstellen?**  
-Ja, Squarespace bietet integrierte E-Commerce-Funktionen, die Produktpräsentation, Zahlungsabwicklung und Bestellmanagement umfassen.
-
-**3. Ist Squarespace für SEO geeignet?**  
-Squarespace stellt grundlegende SEO-Tools bereit, um die Sichtbarkeit in Suchmaschinen zu verbessern, z. B. anpassbare Meta-Tags und automatische Sitemap-Erstellung.
-
-**4. Kann ich meine bestehende Domain mit Squarespace verwenden?**  
-Ja, Sie können entweder eine neue Domain über Squarespace registrieren oder eine vorhandene Domain verbinden.
-
-**5. Gibt es eine kostenlose Testphase?**  
-Squarespace bietet in der Regel eine kostenlose Testphase an, die je nach Aktion und Region variieren kann.
-
-**6. Wie sicher sind die Websites bei Squarespace?**  
-Squarespace kümmert sich um Hosting und Sicherheit, inklusive SSL-Zertifikaten und regelmäßigen Updates.
-
-**7. Kann ich meine Website später auf eine andere Plattform umziehen?**  
-Der Export der Website-Daten ist eingeschränkt, daher ist ein Plattformwechsel mit etwas Aufwand verbunden.
-
-**8. Welche Zahlungsmethoden werden im Online-Shop unterstützt?**  
-Squarespace unterstützt verschiedene gängige Zahlungsmethoden, darunter Kreditkarten, PayPal und je nach Region weitere Optionen.

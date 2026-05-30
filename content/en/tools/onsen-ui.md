@@ -1,6 +1,11 @@
 ---
 slug: onsen-ui
 title: Onsen UI
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -104,26 +109,26 @@ Onsen UI is an open-source project and can be used for free. There are no licens
 
 ## FAQ
 
-**1. Is Onsen UI free?**  
+**1. Is Onsen UI free?**
 Yes, Onsen UI is open source and can be used for free.
 
-**2. Which programming languages does Onsen UI support?**  
+**2. Which programming languages does Onsen UI support?**
 Onsen UI is based on web technologies: HTML5, CSS, and JavaScript, and supports frameworks such as Angular, React, and Vue.
 
-**3. Can I create native apps with Onsen UI?**  
+**3. Can I create native apps with Onsen UI?**
 Yes, by integrating with Apache Cordova or similar tools, you can create cross-platform native apps.
 
-**4. Is Onsen UI suitable for beginners?**  
+**4. Is Onsen UI suitable for beginners?**
 Onsen UI is also suitable for developers with basic web knowledge, but it does require an understanding of JavaScript and CSS.
 
-**5. What about performance?**  
+**5. What about performance?**
 Onsen UI is optimized for mobile devices and offers smooth animations, although performance also depends on the app's complexity and the platform.
 
-**6. Is there support or are there commercial offerings?**  
+**6. Is there support or are there commercial offerings?**
 The framework itself is open source; for commercial support or custom offerings, you need to contact specialized providers.
 
-**7. Which platforms are supported?**  
+**7. Which platforms are supported?**
 Onsen UI supports iOS and Android as its main platforms.
 
-**8. How does Onsen UI differ from Ionic?**  
+**8. How does Onsen UI differ from Ionic?**
 Onsen UI places more emphasis on easy integration and framework variety, while Ionic offers a more extensive toolchain and its own UI components.

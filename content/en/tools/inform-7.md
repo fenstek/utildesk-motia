@@ -1,6 +1,11 @@
 ---
 slug: inform-7
 title: Inform 7
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Free, Open Source'
 tags:
@@ -62,26 +67,26 @@ Inform 7 is available free of charge as an open-source project. There are no lic
 
 ## FAQ
 
-**1. Is Inform 7 suitable for beginners?**  
+**1. Is Inform 7 suitable for beginners?**
 Yes, especially for users without programming knowledge, since the language is designed to be very natural and readable.
 
-**2. On which operating systems does Inform 7 run?**  
+**2. On which operating systems does Inform 7 run?**
 Inform 7 is mainly available for Windows and macOS; there are also versions that work on Linux.
 
-**3. Can I create graphical games with Inform 7?**  
+**3. Can I create graphical games with Inform 7?**
 Inform 7 is specialized in text-based interactive fiction and does not support extensive graphics.
 
-**4. How complex can stories be with Inform 7?**  
+**4. How complex can stories be with Inform 7?**
 The software supports very complex logic and state management, making it possible to create extensive and branching stories.
 
-**5. Is there a community or support for Inform 7?**  
+**5. Is there a community or support for Inform 7?**
 Yes, there is an active community, forums, and extensive documentation to help with problems.
 
-**6. Can Inform 7 also be used for commercial projects?**  
+**6. Can Inform 7 also be used for commercial projects?**
 Yes, since it is open source and free, it can be used for commercial purposes without restrictions.
 
-**7. What programming knowledge is needed for Inform 7?**  
+**7. What programming knowledge is needed for Inform 7?**
 None or only very basic knowledge, since the syntax is based on natural language.
 
-**8. How can I publish my games?**  
+**8. How can I publish my games?**
 Inform 7 offers export functions to publish games as standalone files or web apps.

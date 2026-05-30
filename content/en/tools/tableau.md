@@ -1,6 +1,11 @@
 ---
 slug: tableau
 title: Tableau
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -106,28 +111,28 @@ Alternatives to Tableau should be chosen by the concrete work problem. In some c
 
 ## FAQ
 
-**1. Is Tableau suitable for beginners?**  
+**1. Is Tableau suitable for beginners?**
 Yes, Tableau offers a user-friendly interface that can be used without programming knowledge. Many advanced features are also available for experienced users.
 
-**2. Which data sources can Tableau connect to?**  
+**2. Which data sources can Tableau connect to?**
 Tableau supports a wide range of data sources, including relational databases, cloud services, Excel spreadsheets, big data platforms, and many more.
 
-**3. Is there a free version of Tableau?**  
+**3. Is there a free version of Tableau?**
 Yes, Tableau offers a free version with limited features that is well suited for getting started and for smaller projects.
 
-**4. How secure is data in Tableau?**  
+**4. How secure is data in Tableau?**
 Tableau implements extensive security measures such as role-based access rights and data encryption to protect enterprise data.
 
-**5. Can Tableau be used on mobile?**  
+**5. Can Tableau be used on mobile?**
 Yes, Tableau offers mobile apps for iOS and Android that let users access dashboards and reports on the go.
 
-**6. Which languages does Tableau support?**  
+**6. Which languages does Tableau support?**
 Tableau is available in several languages, including German, English, French, Spanish, and others.
 
-**7. How does collaboration work in Tableau?**  
+**7. How does collaboration work in Tableau?**
 Users can share dashboards, co-edit them, and add comments to make teamwork easier.
 
-**8. Do you need programming knowledge for Tableau?**  
+**8. Do you need programming knowledge for Tableau?**
 Not necessarily, but for more complex analyses and customizations, knowledge of SQL or scripting languages can be helpful.
 
 **9. How should a team test Tableau?**

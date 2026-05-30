@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-data-factory
 title: Microsoft Azure Data Factory
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, integration, automation, cloud]
@@ -35,32 +40,32 @@ Besonders wichtig sind Wiederanlauf, Teilfehler und Kostenkontrolle. Eine Pipeli
 
 ## Hauptfunktionen
 
-- Visuelle Erstellung und Verwaltung von Datenpipelines ohne umfangreiche Programmierung  
-- Unterstützung zahlreicher Datenquellen, sowohl On-Premises als auch Cloud-basiert  
-- Automatisierte Datenverschiebung und -transformation mit integrierten Aktivitäten und Mapping Data Flows  
-- Überwachung und Fehlerbehandlung von Pipelines über ein zentrales Dashboard  
-- Integration mit anderen Azure-Diensten wie Azure Synapse Analytics, Azure Databricks und Power BI  
-- Skalierbarkeit durch serverlose Architektur und bedarfsgerechte Ressourcenbereitstellung  
-- Unterstützung von Batch- und Streaming-Datenverarbeitung  
-- Möglichkeit zur Nutzung von benutzerdefinierten Aktivitäten und Skripten für komplexe Anwendungsfälle  
-- Sicherheit und Compliance durch rollenbasierte Zugriffssteuerung und Verschlüsselung  
+- Visuelle Erstellung und Verwaltung von Datenpipelines ohne umfangreiche Programmierung
+- Unterstützung zahlreicher Datenquellen, sowohl On-Premises als auch Cloud-basiert
+- Automatisierte Datenverschiebung und -transformation mit integrierten Aktivitäten und Mapping Data Flows
+- Überwachung und Fehlerbehandlung von Pipelines über ein zentrales Dashboard
+- Integration mit anderen Azure-Diensten wie Azure Synapse Analytics, Azure Databricks und Power BI
+- Skalierbarkeit durch serverlose Architektur und bedarfsgerechte Ressourcenbereitstellung
+- Unterstützung von Batch- und Streaming-Datenverarbeitung
+- Möglichkeit zur Nutzung von benutzerdefinierten Aktivitäten und Skripten für komplexe Anwendungsfälle
+- Sicherheit und Compliance durch rollenbasierte Zugriffssteuerung und Verschlüsselung
 
 ## Vorteile und Nachteile
 
 ### Vorteile
 
-- Umfassende Integration in das Azure-Ökosystem erleichtert die Nutzung weiterer Cloud-Dienste  
-- Nutzerfreundliche Oberfläche mit Drag-and-Drop-Funktionalität für schnelle Pipeline-Erstellung  
-- Hohe Flexibilität durch Unterstützung zahlreicher Datenformate und -quellen  
-- Automatische Skalierung reduziert Verwaltungsaufwand und Kosten  
-- Echtzeitüberwachung und detaillierte Protokollierung verbessern die Fehlerdiagnose  
-- Nutzungsbasiertes Preismodell ermöglicht Kostenkontrolle entsprechend dem tatsächlichen Verbrauch  
+- Umfassende Integration in das Azure-Ökosystem erleichtert die Nutzung weiterer Cloud-Dienste
+- Nutzerfreundliche Oberfläche mit Drag-and-Drop-Funktionalität für schnelle Pipeline-Erstellung
+- Hohe Flexibilität durch Unterstützung zahlreicher Datenformate und -quellen
+- Automatische Skalierung reduziert Verwaltungsaufwand und Kosten
+- Echtzeitüberwachung und detaillierte Protokollierung verbessern die Fehlerdiagnose
+- Nutzungsbasiertes Preismodell ermöglicht Kostenkontrolle entsprechend dem tatsächlichen Verbrauch
 
 ### Nachteile
 
-- Für Einsteiger kann die Vielzahl an Funktionen und Konfigurationsmöglichkeiten zunächst komplex wirken  
-- Abhängigkeit von der Azure-Cloud kann für Unternehmen mit Multi-Cloud-Strategien einschränkend sein  
-- Bei sehr großen Datenmengen können Kosten schnell steigen, wenn Pipelines nicht optimiert sind  
+- Für Einsteiger kann die Vielzahl an Funktionen und Konfigurationsmöglichkeiten zunächst komplex wirken
+- Abhängigkeit von der Azure-Cloud kann für Unternehmen mit Multi-Cloud-Strategien einschränkend sein
+- Bei sehr großen Datenmengen können Kosten schnell steigen, wenn Pipelines nicht optimiert sind
 - Einige erweiterte Funktionen erfordern Kenntnisse in Azure und Datenverarbeitungstechnologien
 
 ## Workflow-Fit
@@ -79,43 +84,43 @@ Azure Data Factory ist stark, wenn Datenintegration als Betriebsaufgabe verstand
 
 Microsoft Azure Data Factory verwendet ein nutzungsbasiertes Preismodell. Die Kosten setzen sich hauptsächlich aus den folgenden Komponenten zusammen:
 
-- Anzahl der durchgeführten Pipeline-Aktivitäten  
-- Datenvolumen, das verschoben und verarbeitet wird  
-- Dauer und Rechenressourcen für Data Flows  
-- Anzahl der Trigger und deren Ausführung  
+- Anzahl der durchgeführten Pipeline-Aktivitäten
+- Datenvolumen, das verschoben und verarbeitet wird
+- Dauer und Rechenressourcen für Data Flows
+- Anzahl der Trigger und deren Ausführung
 
 Die genauen Preise variieren je nach Region und Nutzung. Es besteht keine Grundgebühr, sodass Kosten nur bei tatsächlicher Nutzung anfallen. Für kleinere Projekte oder Tests bietet Azure teilweise kostenlose Kontingente an. Für detaillierte Preisinformationen empfiehlt es sich, die offizielle Azure-Preisseite zu konsultieren.
 
 ## Alternativen zu Microsoft Azure Data Factory
 
-- **AWS Glue**: Cloud-basierter ETL-Dienst von Amazon Web Services mit ähnlicher Funktionalität zur Datenintegration und -transformation.  
-- **Google Cloud Dataflow**: Dienst zur Echtzeit- und Batch-Datenverarbeitung auf der Google Cloud Platform.  
-- **Talend**: Plattform für Datenintegration mit Open-Source-Optionen und umfangreichen Konnektoren.  
-- **Apache NiFi**: Open-Source-Tool zur Automatisierung von Datenflüssen mit Fokus auf Echtzeitdaten.  
-- **Informatica PowerCenter**: Etablierte Lösung für komplexe ETL- und Datenintegrationsprozesse, oft im Enterprise-Umfeld eingesetzt.  
+- **AWS Glue**: Cloud-basierter ETL-Dienst von Amazon Web Services mit ähnlicher Funktionalität zur Datenintegration und -transformation.
+- **Google Cloud Dataflow**: Dienst zur Echtzeit- und Batch-Datenverarbeitung auf der Google Cloud Platform.
+- **Talend**: Plattform für Datenintegration mit Open-Source-Optionen und umfangreichen Konnektoren.
+- **Apache NiFi**: Open-Source-Tool zur Automatisierung von Datenflüssen mit Fokus auf Echtzeitdaten.
+- **Informatica PowerCenter**: Etablierte Lösung für komplexe ETL- und Datenintegrationsprozesse, oft im Enterprise-Umfeld eingesetzt.
 
 ## FAQ
 
-**1. Ist Microsoft Azure Data Factory für kleine Unternehmen geeignet?**  
+**1. Ist Microsoft Azure Data Factory für kleine Unternehmen geeignet?**
 Ja, dank des nutzungsbasierten Preismodells können auch kleine Unternehmen und Projekte mit geringem Datenvolumen kosteneffizient arbeiten.
 
-**2. Welche Datenquellen unterstützt Azure Data Factory?**  
+**2. Welche Datenquellen unterstützt Azure Data Factory?**
 Azure Data Factory unterstützt eine breite Palette an Datenquellen, darunter relationale Datenbanken, NoSQL-Datenbanken, Dateisysteme, Cloud-Speicher und SaaS-Anwendungen.
 
-**3. Braucht man Programmierkenntnisse, um Azure Data Factory zu nutzen?**  
+**3. Braucht man Programmierkenntnisse, um Azure Data Factory zu nutzen?**
 Grundlegende Pipelines lassen sich mit der visuellen Oberfläche ohne Programmierung erstellen. Für komplexe Szenarien sind Kenntnisse in SQL, JSON oder Skriptsprachen hilfreich.
 
-**4. Wie funktioniert die Sicherheit bei Azure Data Factory?**  
+**4. Wie funktioniert die Sicherheit bei Azure Data Factory?**
 Azure Data Factory nutzt rollenbasierte Zugriffskontrollen, Verschlüsselung der Daten während der Übertragung und im Ruhezustand sowie Compliance-Standards von Microsoft Azure.
 
-**5. Kann Azure Data Factory Echtzeitdaten verarbeiten?**  
+**5. Kann Azure Data Factory Echtzeitdaten verarbeiten?**
 Ja, neben Batch-Verarbeitung unterstützt Azure Data Factory auch Streaming-Datenintegration über entsprechende Konnektoren und Trigger.
 
-**6. Gibt es eine kostenlose Testversion?**  
+**6. Gibt es eine kostenlose Testversion?**
 Microsoft bietet häufig kostenlose Kontingente oder Testzeiträume an, die je nach Region und Angebot variieren können.
 
-**7. Wie integriert sich Azure Data Factory in andere Azure-Dienste?**  
+**7. Wie integriert sich Azure Data Factory in andere Azure-Dienste?**
 Azure Data Factory ist eng mit Diensten wie Azure Synapse Analytics, Azure Databricks und Power BI verzahnt und ermöglicht so eine nahtlose End-to-End-Datenverarbeitung.
 
-**8. Wo finde ich weitere Informationen und Dokumentationen?**  
+**8. Wo finde ich weitere Informationen und Dokumentationen?**
 Offizielle Dokumentationen und Tutorials sind auf der Microsoft Azure-Website verfügbar.

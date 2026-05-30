@@ -1,6 +1,11 @@
 ---
 slug: semrush-writing-assistant
 title: SEMrush Writing Assistant
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: SEO
 price_model: Subscription
 tags:
@@ -99,26 +104,26 @@ SEMrush Writing Assistant pricing is usually tied to SEMrush subscriptions. Ther
 
 ## FAQ
 
-**1. Do I need a SEMrush account to use the Writing Assistant?**  
+**1. Do I need a SEMrush account to use the Writing Assistant?**
 Yes, the Writing Assistant is part of the SEMrush platform and generally requires a SEMrush account. Feature availability depends on the subscription.
 
-**2. Can I use the Writing Assistant in Google Docs?**  
+**2. Can I use the Writing Assistant in Google Docs?**
 Yes, there is an extension for Google Docs that enables direct integration of the tool.
 
-**3. How does the Writing Assistant help with SEO optimization?**  
+**3. How does the Writing Assistant help with SEO optimization?**
 It analyzes text in real time for keyword usage, readability, and other SEO criteria, and provides concrete improvement suggestions.
 
-**4. Is there a free version?**  
+**4. Is there a free version?**
 SEMrush occasionally offers trial versions or limited free access, but the full version is usually paid.
 
-**5. Does the Writing Assistant support multiple languages?**  
+**5. Does the Writing Assistant support multiple languages?**
 The tool primarily supports English, but other languages may also be possible depending on the plan. Details should be checked with the provider.
 
-**6. How accurate is the plagiarism check?**  
+**6. How accurate is the plagiarism check?**
 The plagiarism check detects many duplicates, but it is not as comprehensive as specialized plagiarism software.
 
-**7. Can the tool also be used for social media text?**  
+**7. Can the tool also be used for social media text?**
 In principle, yes, especially when SEO aspects and readability are also important for social media content.
 
-**8. What technical requirements are there?**  
+**8. What technical requirements are there?**
 The tool is web-based and only requires a current browser and, if needed, the installation of add-ons for Google Docs or WordPress.

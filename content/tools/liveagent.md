@@ -1,6 +1,11 @@
 ---
 slug: liveagent
 title: LiveAgent
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, communication, crm]
@@ -73,26 +78,26 @@ LiveAgent kann Ordnung in wachsenden Kundendialog bringen. Der Nutzen hängt jed
 
 ## FAQ
 
-**1. Unterstützt LiveAgent KI-Funktionen?**  
+**1. Unterstützt LiveAgent KI-Funktionen?**
 Ja, LiveAgent integriert KI-gestützte Chatbots und Automatisierungen, die die Bearbeitung von Kundenanfragen erleichtern.
 
-**2. Welche Kommunikationskanäle können mit LiveAgent verwaltet werden?**  
+**2. Welche Kommunikationskanäle können mit LiveAgent verwaltet werden?**
 E-Mail, Live-Chat, Telefon, soziale Medien und weitere Kanäle lassen sich zentral in LiveAgent verwalten.
 
-**3. Gibt es eine kostenlose Version von LiveAgent?**  
+**3. Gibt es eine kostenlose Version von LiveAgent?**
 LiveAgent bietet eine kostenlose Testphase an, jedoch ist das dauerhafte Nutzen der Software kostenpflichtig im Abonnement-Modell.
 
-**4. Ist LiveAgent für mobile Geräte verfügbar?**  
+**4. Ist LiveAgent für mobile Geräte verfügbar?**
 Ja, LiveAgent stellt mobile Apps für iOS und Android zur Verfügung.
 
-**5. Wie sicher sind die Daten in LiveAgent?**  
+**5. Wie sicher sind die Daten in LiveAgent?**
 LiveAgent erfüllt branchenübliche Sicherheitsstandards, um Kundendaten zu schützen. Details dazu sind beim Anbieter erhältlich.
 
-**6. Kann LiveAgent in bestehende CRM-Systeme integriert werden?**  
+**6. Kann LiveAgent in bestehende CRM-Systeme integriert werden?**
 Ja, LiveAgent unterstützt die Integration mit verschiedenen CRM-Systemen, um Kundendaten zentral zu verwalten.
 
-**7. Wie flexibel sind die Preispläne von LiveAgent?**  
+**7. Wie flexibel sind die Preispläne von LiveAgent?**
 Die Preise variieren je nach Plan und Nutzerzahl. Es gibt unterschiedliche Abonnements, um den Bedürfnissen verschiedener Unternehmen gerecht zu werden.
 
-**8. Wie schnell ist der Support von LiveAgent?**  
+**8. Wie schnell ist der Support von LiveAgent?**
 LiveAgent bietet Support über verschiedene Kanäle an; die Reaktionszeiten hängen vom gewählten Service-Level ab.

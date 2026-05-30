@@ -1,6 +1,11 @@
 ---
 slug: google-patents
 title: Google Patents
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -110,26 +115,26 @@ Google Patents is a **free** tool and does not require payment or a subscription
 
 ## FAQ
 
-**1. Is Google Patents really free?**  
+**1. Is Google Patents really free?**
 Yes, Google Patents is completely free to use and provides access to millions of patent documents without fees.
 
-**2. Which patent databases does Google Patents search?**  
+**2. Which patent databases does Google Patents search?**
 The platform searches, among others, US patents, European patents, international patents (PCT), and other national databases.
 
-**3. Do I need to register to use Google Patents?**  
+**3. Do I need to register to use Google Patents?**
 No, registration is not required. You can use the search function directly and anonymously.
 
-**4. Can I download patents as PDF files?**  
+**4. Can I download patents as PDF files?**
 Yes, PDF downloads are available for most patent documents.
 
-**5. How up to date is the data in Google Patents?**  
+**5. How up to date is the data in Google Patents?**
 The data is updated regularly, although timeliness may vary depending on the national patent office.
 
-**6. Is Google Patents suitable for professional patent analyses?**  
+**6. Is Google Patents suitable for professional patent analyses?**
 Google Patents is very suitable for initial research and getting an overview. For detailed analyses and portfolio management, specialized paid tools are often better.
 
-**7. Is there a mobile app for Google Patents?**  
+**7. Is there a mobile app for Google Patents?**
 There is no standalone app, but the website is mobile-optimized and can be used in a browser on smartphones.
 
-**8. Can I save or export my search results?**  
+**8. Can I save or export my search results?**
 Direct saving options are limited, but patent documents can be downloaded and used for your own research. For more extensive export functions, external tools are required.

@@ -1,6 +1,11 @@
 ---
 slug: wordreference
 title: WordReference
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Freemium
 tags: [translation, language, reference, productivity]
@@ -72,28 +77,28 @@ WordReference ist ein Recherchewerkzeug für Sprache. Sein Wert liegt in der ged
 
 ## FAQ
 
-**1. Ist WordReference kostenlos?**  
+**1. Ist WordReference kostenlos?**
 Die Grundfunktionen von WordReference können kostenlos genutzt werden. Einige zusätzliche Funktionen oder werbefreie Nutzung sind kostenpflichtig und hängen vom Anbieter und Plan ab.
 
-**2. Welche Sprachen unterstützt WordReference?**  
+**2. Welche Sprachen unterstützt WordReference?**
 WordReference bietet Wörterbücher für viele Sprachpaare, darunter Englisch, Deutsch, Französisch, Spanisch, Italienisch, Russisch und weitere. Die Verfügbarkeit variiert je nach Sprachkombination.
 
-**3. Gibt es eine mobile App?**  
+**3. Gibt es eine mobile App?**
 Ja, WordReference stellt mobile Apps für verschiedene Plattformen bereit, die viele Funktionen auch unterwegs zugänglich machen. Die Funktionalität kann je nach Betriebssystem variieren.
 
-**4. Kann ich WordReference offline nutzen?**  
+**4. Kann ich WordReference offline nutzen?**
 Die Hauptfunktionen von WordReference sind online verfügbar. Einige mobile Apps bieten eingeschränkte Offline-Funktionen, abhängig von der Plattform und Version.
 
-**5. Wie zuverlässig sind die Übersetzungen?**  
+**5. Wie zuverlässig sind die Übersetzungen?**
 WordReference basiert auf umfangreichen Wörterbüchern und einer aktiven Community, was die Qualität der Übersetzungen erhöht. Dennoch sollten komplexe oder kontextsensitive Texte mit Vorsicht behandelt und gegebenenfalls zusätzlich geprüft werden.
 
-**6. Gibt es eine Möglichkeit, mit Muttersprachlern zu kommunizieren?**  
+**6. Gibt es eine Möglichkeit, mit Muttersprachlern zu kommunizieren?**
 Ja, WordReference bietet Foren, in denen Nutzer Fragen stellen und sich mit Muttersprachlern und anderen Sprachlernenden austauschen können.
 
-**7. Welche Vorteile bietet WordReference gegenüber reinen Übersetzungs-Apps?**  
+**7. Welche Vorteile bietet WordReference gegenüber reinen Übersetzungs-Apps?**
 WordReference kombiniert Wörterbuchinhalte, Konjugationen, Aussprachehilfen und eine aktive Community, was eine tiefere und präzisere Sprachreferenz ermöglicht als reine Übersetzungsdienste.
 
-**8. Wie kann ich WordReference in meinen Arbeitsalltag integrieren?**  
+**8. Wie kann ich WordReference in meinen Arbeitsalltag integrieren?**
 WordReference eignet sich gut als schnelle Nachschlagequelle beim Schreiben, Übersetzen oder Lernen. Die Integration erfolgt meist über Browser oder mobile Apps, ohne dass zusätzliche Software installiert werden muss.
 
 ---

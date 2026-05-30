@@ -1,6 +1,11 @@
 ---
 slug: onlyoffice-spreadsheet-editor
 title: OnlyOffice Spreadsheet Editor
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -107,26 +112,26 @@ For detailed information, it is recommended to visit the official website or pro
 
 ## FAQ
 
-**1. Is OnlyOffice Spreadsheet Editor free?**  
+**1. Is OnlyOffice Spreadsheet Editor free?**
 The tool offers a free basic version under a Freemium model. Advanced features are available in paid plans.
 
-**2. Can I open Microsoft Excel files with OnlyOffice Spreadsheet Editor?**  
+**2. Can I open Microsoft Excel files with OnlyOffice Spreadsheet Editor?**
 Yes, OnlyOffice supports common formats like XLSX, allowing easy opening and editing of Excel files.
 
-**3. Is an internet connection required to use the tool?**  
+**3. Is an internet connection required to use the tool?**
 OnlyOffice can be used both online and offline. Cloud features require internet access.
 
-**4. How does collaboration with multiple users work?**  
+**4. How does collaboration with multiple users work?**
 Multiple users can simultaneously work on the same spreadsheet and see changes in real time, facilitating teamwork.
 
-**5. What security features does OnlyOffice Spreadsheet Editor offer?**  
+**5. What security features does OnlyOffice Spreadsheet Editor offer?**
 The tool supports password protection, data encryption, and access rights, depending on the plan and deployment.
 
-**6. Are there mobile apps for OnlyOffice Spreadsheet Editor?**  
+**6. Are there mobile apps for OnlyOffice Spreadsheet Editor?**
 OnlyOffice offers mobile apps for various platforms, enabling spreadsheet editing and viewing on the go.
 
-**7. Which operating systems are supported?**  
+**7. Which operating systems are supported?**
 OnlyOffice is available for Windows, macOS, Linux, and as a web application.
 
-**8. Can I integrate OnlyOffice into my existing cloud environment?**  
+**8. Can I integrate OnlyOffice into my existing cloud environment?**
 Yes, OnlyOffice supports integration with different cloud services and platforms, depending on the chosen plan.

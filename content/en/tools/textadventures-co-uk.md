@@ -1,6 +1,11 @@
 ---
 slug: textadventures-co-uk
 title: TextAdventures.co.uk
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -110,26 +115,26 @@ Exact pricing may vary and should be checked on the official website.
 
 ## FAQ
 
-**1. Do I need programming knowledge to use TextAdventures.co.uk?**  
+**1. Do I need programming knowledge to use TextAdventures.co.uk?**
 No, the tool is specifically designed so that users without programming knowledge can also create interactive stories.
 
-**2. Can I save my created stories offline?**  
+**2. Can I save my created stories offline?**
 Depending on the plan, export functions are available that allow stories to be saved or backed up locally.
 
-**3. Is TextAdventures.co.uk suitable for commercial projects?**  
+**3. Is TextAdventures.co.uk suitable for commercial projects?**
 This depends on the license terms and the selected plans. It is recommended to check the terms of use on the website.
 
-**4. Can I share my stories with others?**  
+**4. Can I share my stories with others?**
 Yes, the platform makes it possible to publish and share games directly in the browser.
 
-**5. Is there a mobile app for TextAdventures.co.uk?**  
+**5. Is there a mobile app for TextAdventures.co.uk?**
 Currently there is no native app; use is through the web browser.
 
-**6. Which languages does TextAdventures.co.uk support?**  
+**6. Which languages does TextAdventures.co.uk support?**
 The platform is mainly available in English, but it can process stories in different languages.
 
-**7. How complex can the interactive stories be?**  
+**7. How complex can the interactive stories be?**
 The tool supports branching and multiple endings, but it is less suitable for very complex games with extensive logic.
 
-**8. Is there a community or support?**  
+**8. Is there a community or support?**
 Yes, there is an active user community as well as support pages and tutorials on the official website.

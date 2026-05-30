@@ -1,6 +1,11 @@
 ---
 slug: sockeye
 title: Sockeye
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Writing"
 price_model: Je nach Plan
 tags: [translation, nmt, deep-learning]
@@ -23,7 +28,7 @@ Sockeye eignet sich für NLP-Forschende, Machine-Translation-Teams und Entwickle
 Der Einsatz lohnt sich, wenn Trainingsdaten, Evaluationsmetriken und Infrastruktur vorhanden sind. Wer keine Parallelkorpora, kein ML-Know-how und keinen Bedarf an eigener Modellkontrolle hat, fährt mit fertigen Übersetzungsdiensten deutlich besser.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/sockeye-editorial.webp" alt="Illustration zu Sockeye: Sprachstr?me laufen durch ein neuronales ?bersetzungsmodell" loading="lazy" decoding="async" />
+  <img src="/images/tools/sockeye-editorial.webp" alt="Illustration zu Sockeye: Sprachströme laufen durch ein neuronales Übersetzungsmodell" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

@@ -1,6 +1,11 @@
 ---
 slug: hoppscotch
 title: Hoppscotch
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -103,28 +108,28 @@ When comparing options, Hoppscotch should not only be measured against very simi
 
 ## FAQ
 
-**1. Is Hoppscotch free?**  
+**1. Is Hoppscotch free?**
 Yes, Hoppscotch is an open-source project and can be used for free.
 
-**2. Which API types does Hoppscotch support?**  
+**2. Which API types does Hoppscotch support?**
 Hoppscotch supports REST, GraphQL, WebSocket, Server-Sent Events (SSE), and other common API protocols.
 
-**3. Do I need to install anything?**  
+**3. Do I need to install anything?**
 No, Hoppscotch is browser-based and does not require local installation.
 
-**4. Can I use Hoppscotch offline?**  
+**4. Can I use Hoppscotch offline?**
 Since Hoppscotch is primarily designed as a web application, offline use is limited. However, there are ways to host the application locally.
 
-**5. Are there team features?**  
+**5. Are there team features?**
 Team features vary depending on the hosting and the version used. The open-source version offers limited collaboration options.
 
-**6. How do I save my requests?**  
+**6. How do I save my requests?**
 Requests can be organized and saved in projects and collections for later reuse.
 
-**7. Does Hoppscotch support importing Postman Collections?**  
+**7. Does Hoppscotch support importing Postman Collections?**
 Yes, Hoppscotch supports importing and exporting Postman Collections to make switching easier.
 
-**8. Where can I find support and documentation?**  
+**8. Where can I find support and documentation?**
 Support is mainly provided through the GitHub community, forums, and the official documentation on the Hoppscotch website.
 
 **9. How should a team test Hoppscotch?**

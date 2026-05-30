@@ -1,6 +1,11 @@
 ---
 slug: katalon
 title: Katalon
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -102,28 +107,28 @@ Alternatives to Katalon should be chosen by the concrete work problem. In some c
 
 ## FAQ
 
-**1. Is Katalon suitable for beginners?**  
+**1. Is Katalon suitable for beginners?**
 Yes, Katalon offers an intuitive user interface and recorder features that make it easier to get started even without programming knowledge.
 
-**2. Which platforms does Katalon support?**  
+**2. Which platforms does Katalon support?**
 Katalon supports web, API, mobile, and desktop applications, making it broadly applicable.
 
-**3. Is there a free version of Katalon?**  
+**3. Is there a free version of Katalon?**
 Yes, Katalon offers a freemium version with limited features that is sufficient for many use cases.
 
-**4. How does Katalon integrate into CI/CD pipelines?**  
+**4. How does Katalon integrate into CI/CD pipelines?**
 Katalon can be integrated into common CI/CD tools such as Jenkins, Azure DevOps, and GitLab to incorporate automated tests into the development process.
 
-**5. Which programming languages are supported?**  
+**5. Which programming languages are supported?**
 Test scripts can mainly be created in Groovy and Java, with some other languages also supported to a certain extent.
 
-**6. How does the AI support help with testing?**  
+**6. How does the AI support help with testing?**
 The AI features help with automatic recognition of UI elements, test maintenance, and error analysis, which reduces testing effort.
 
-**7. Is support and training available?**  
+**7. Is support and training available?**
 Katalon offers extensive documentation, community forums, and, depending on the plan, professional support and training materials.
 
-**8. Can Katalon be used locally and in the cloud?**  
+**8. Can Katalon be used locally and in the cloud?**
 Yes, Katalon offers both on-premise installations and cloud-based solutions to meet different requirements.
 
 **9. How should a team test Katalon?**
