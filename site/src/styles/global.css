@@ -7581,3 +7581,93 @@ html[data-design="decision"] .inv-loadmore {
   html[data-design="decision"] .inv-filter-rail { display: none !important; }
   html[data-design="decision"] .inv-register { grid-template-columns: 1fr !important; }
 }
+
+
+/* KI-Blatt Tool-Akte v2: force every tool record into the same dossier geometry. */
+html[data-design="decision"] .akte-mast {
+  align-items: start !important;
+  grid-template-columns: minmax(0, 1.55fr) minmax(460px, 1fr) !important;
+  gap: 56px !important;
+}
+
+html[data-design="decision"] .akte-mast-body {
+  min-height: 402px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+html[data-design="decision"] .akte-mast-kicker {
+  margin-bottom: 16px !important;
+}
+
+html[data-design="decision"] .akte-mast-h1 {
+  margin: 8px 0 18px !important;
+  max-width: 760px !important;
+  min-height: 118px !important;
+}
+
+html[data-design="decision"] .akte-mast-oneliner {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  min-height: 66px !important;
+  margin-bottom: 22px !important;
+  max-width: 760px !important;
+}
+
+html[data-design="decision"] .akte-chips {
+  margin-top: 0 !important;
+  margin-bottom: 28px !important;
+}
+
+html[data-design="decision"] .akte-actions {
+  margin-top: auto !important;
+}
+
+html[data-design="decision"] .akte-faktenblatt {
+  min-height: 392px !important;
+  padding: 28px 24px 20px !important;
+}
+
+html[data-design="decision"] .akte-faktenblatt-head {
+  min-height: 54px !important;
+  margin-bottom: 18px !important;
+}
+
+html[data-design="decision"] .akte-monogram {
+  flex: 0 0 48px !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+html[data-design="decision"] .akte-faktenblatt-row {
+  min-height: 27px !important;
+  align-items: center !important;
+  font-size: 12px !important;
+}
+
+html[data-design="decision"] .akte-faktenblatt-divider {
+  margin: 15px 0 !important;
+}
+
+html[data-design="decision"] .akte-faktenblatt-foot {
+  min-height: 72px !important;
+}
+
+html[data-design="decision"] .akte-verdict-card {
+  margin-top: 36px !important;
+}
+
+@media (max-width: 1023px) {
+  html[data-design="decision"] .akte-mast {
+    grid-template-columns: 1fr !important;
+  }
+  html[data-design="decision"] .akte-mast-body,
+  html[data-design="decision"] .akte-mast-h1,
+  html[data-design="decision"] .akte-mast-oneliner,
+  html[data-design="decision"] .akte-faktenblatt {
+    min-height: 0 !important;
+  }
+}
