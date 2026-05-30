@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { marked } from "marked";
 import { getRatgeberEntry, listRatgeberEntries } from "../../lib/ratgeber";
 import { tagHref } from "../../lib/tagRoutes";
@@ -30,10 +32,22 @@ if (!entry) {
 }
 
 const { data, content } = entry;
+const localAssetExists = (src: string | null | undefined) => {
+  if (!src) return false;
+  const value = String(src);
+  if (!value.startsWith("/")) return true;
+  return existsSync(join(process.cwd(), "public", value));
+};
+const safeCoverImage = data.coverImage && localAssetExists(String(data.coverImage)) ? String(data.coverImage) : null;
+const safeSecondaryImage = data.secondaryImage && localAssetExists(String(data.secondaryImage)) ? String(data.secondaryImage) : null;
 const rawArticleHtml = String(marked.parse(content));
-const articleHtml = rawArticleHtml.replace(
+let articleHtml = rawArticleHtml.replace(
   /<p>\s*(<img\b[^>]*>)\s*<\/p>/g,
   '<figure class="article-inline-image">$1</figure>',
+);
+articleHtml = articleHtml.replace(
+  /<figure class="article-inline-image">\s*<img\b([^>]*?)src="([^"]+)"([^>]*)>\s*<\/figure>/g,
+  (match, before, src, after) => localAssetExists(src) ? match : "",
 );
 const title = String(data.title ?? slug);
 
@@ -85,8 +99,8 @@ const addRenderedPill = (label: string) => {
 const relatedToolSet = new Set((data.relatedTools ?? []).map((t: {title: string}) => normalizeMetaLabel(t.title)));
 const wordCount = getWordCountFromMarkdown(content);
 const imageUrls = [
-  data.coverImage ? toAbsoluteUrl(String(data.coverImage)) : null,
-  data.secondaryImage ? toAbsoluteUrl(String(data.secondaryImage)) : null,
+  safeCoverImage ? toAbsoluteUrl(safeCoverImage) : null,
+  safeSecondaryImage ? toAbsoluteUrl(safeSecondaryImage) : null,
 ].filter(Boolean);
 
 const articleSchema = {
@@ -178,16 +192,16 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       )}
     </header>
 
-    {data.coverImage ? (
+    {safeCoverImage ? (
       <figure class="sheet-cover">
         <button
           type="button"
           class="article-cover-trigger js-lightbox-image sheet-cover-btn"
-          data-lightbox-src={data.coverImage}
+          data-lightbox-src={safeCoverImage}
           data-lightbox-alt={data.eyebrow || "Illustration"}
           aria-label={`Illustration vergrößern: ${title}`}
         >
-          <img src={data.coverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
+          <img src={safeCoverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
         </button>
         <figcaption>
           <span class="sheet-cover-tag">Abbildung 1</span>

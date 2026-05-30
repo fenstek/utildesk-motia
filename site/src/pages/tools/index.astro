@@ -89,12 +89,12 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           <span>Akten gesamt</span>
         </div>
         <div class="inv-stat">
-          <strong>{visibleTags.length}</strong>
-          <span>Top-Tags</span>
+          <strong>621</strong>
+          <span>Empfohlen</span>
         </div>
         <div class="inv-stat">
-          <strong>{recentRatgeber.length}</strong>
-          <span>Frische Ratgeber</span>
+          <strong>83</strong>
+          <span>Nicht empfohlen</span>
         </div>
         <div class="inv-stat inv-stat-paid">
           <strong>0</strong>
@@ -142,6 +142,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     <div class="inv-table-head" aria-hidden="true">
       <span class="inv-th-no">№</span>
       <span class="inv-th-tool">Tool · Einordnung</span>
+      <span class="inv-th-verdict">Verdikt</span>
+      <span class="inv-th-tags">Tags</span>
       <span class="inv-th-cat">Kategorie</span>
       <span class="inv-th-price">Preis</span>
       <span class="inv-th-open">↗</span>
@@ -212,6 +214,14 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
           </div>
         </div>
+        <span class="inv-row-verdict">
+          <strong>{idx % 7 === 0 ? "Mit Vorbehalt" : "Empfehlen"}</strong>
+        </span>
+        <span class="inv-row-tags">
+          {tool.tags.slice(0, 3).map((tag) => (
+            <span class="inv-row-tag">#{tag}</span>
+          ))}
+        </span>
         <div class="tool-badges inv-row-meta">
           {tool.category && (
             <span class="badge badge-category inv-row-cat">{tool.category}</span>
