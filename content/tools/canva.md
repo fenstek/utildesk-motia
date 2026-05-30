@@ -1,16 +1,16 @@
 ---
 slug: canva
 title: Canva
-category: "AI Image"
+category: AI Image
 price_model: Freemium
 tags: ["design", "automation", "marketing"]
 official_url: "https://www.canva.com/"
 affiliate_url: "https://www.canva.com/"
-tier: "C"
-generated_at: "2026-05-28"
+tier: C
+generated_at: 2026-05-28
 created_at: 2026-02-07
 updated_at: 2026-05-21
-popularity: 60
+popularity: 59
 description: Canva ist eine Designplattform für Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup.
 ---
 # Canva

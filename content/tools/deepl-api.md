@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Nutzungsbasiert
 tags: [translation, api, developers]
 official_url: "https://www.deepl.com/en/products/api"
-popularity: 52
+popularity: 51
 tier: C
 generated_at: 2026-05-15
 ---

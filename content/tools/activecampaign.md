@@ -1,13 +1,13 @@
 ---
 slug: activecampaign
 title: ActiveCampaign
-category: "AI Agents"
+category: AI Agents
 price_model: Abonnement
 tags: [marketing, workflow]
 official_url: "https://www.activecampaign.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-10"
+popularity: 77
+tier: D
+generated_at: 2026-05-10
 ---
 # ActiveCampaign
 

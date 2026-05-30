@@ -1,14 +1,14 @@
 ---
 slug: airtable
 title: Airtable
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Freemium
 tags: ["data", "automation"]
 official_url: "https://airtable.com"
-popularity: 73
+popularity: 71
 updated_at: 2026-05-21
-tier: "A"
-lastReviewed: "2026-05-28"
+tier: A
+lastReviewed: 2026-05-28
 mentionedIn: ["ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Airtable

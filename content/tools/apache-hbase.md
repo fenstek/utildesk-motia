@@ -5,7 +5,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://hbase.apache.org/"
-popularity: 66
+popularity: 65
 tier: C
 generated_at: 2026-05-26
 ---

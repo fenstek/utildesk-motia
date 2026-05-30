@@ -1,14 +1,14 @@
 ---
 slug: microsoft-teams
 title: Microsoft Teams
-category: "AI Agents"
+category: AI Agents
 price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-teams"
-popularity: 31
+popularity: 87
 updated_at: 2026-05-21
-tier: "C"
-generated_at: "2026-05-28"
+tier: C
+generated_at: 2026-05-28
 ---
 # Microsoft Teams
 

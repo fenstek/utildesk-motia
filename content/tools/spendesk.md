@@ -1,13 +1,13 @@
 ---
 slug: spendesk
 title: Spendesk
-category: "AI Image"
+category: AI Image
 price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.spendesk.com/"
-popularity: 14
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 13
+tier: C
+generated_at: 2026-05-28
 ---
 # Spendesk
 

@@ -1,13 +1,13 @@
 ---
 slug: acast
 title: Acast
-category: "AI Audio"
+category: AI Audio
 price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.acast.com/en"
-popularity: 79
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 78
+tier: C
+generated_at: 2026-05-28
 ---
 # Acast
 

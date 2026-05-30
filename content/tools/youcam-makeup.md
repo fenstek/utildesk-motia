@@ -1,13 +1,13 @@
 ---
 slug: youcam-makeup
 title: YouCam Makeup
-category: "AI Image"
+category: AI Image
 price_model: Freemium
 tags: [beauty, photo-editing, mobile]
 official_url: "https://www.perfectcorp.com/consumer/apps/youcam-makeup"
-popularity: 82
-tier: "D"
-generated_at: "2026-05-28"
+popularity: 80
+tier: D
+generated_at: 2026-05-28
 ---
 # YouCam Makeup
 

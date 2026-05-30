@@ -1,13 +1,13 @@
 ---
 slug: talend-data-fabric
 title: Talend Data Fabric
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Abonnement, Je nach Plan
 tags: [data, integration, automation, analytics]
 official_url: "https://www.qlik.com/us/products/talend-data-fabric"
-popularity: 10
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 0
+tier: C
+generated_at: 2026-05-27
 ---
 # Talend Data Fabric
 

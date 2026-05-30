@@ -5,7 +5,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
-popularity: 34
+popularity: 33
 updated_at: 2026-05-21
 tier: A
 lastReviewed: 2026-05-27

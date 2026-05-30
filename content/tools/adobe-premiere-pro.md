@@ -8,7 +8,7 @@ official_url: "https://www.adobe.com/products/premiere.html"
 affiliate_url: "https://www.adobe.com/products/premiere.html"
 tier: C
 generated_at: 2026-05-28
-popularity: 75
+popularity: 74
 description: Professioneller Video-Editor für Schnitt, Farbkorrektur, Audio, Untertitel und Postproduktion.
 ---
 # Adobe Premiere Pro

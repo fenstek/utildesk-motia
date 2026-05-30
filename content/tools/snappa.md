@@ -1,13 +1,13 @@
 ---
 slug: snappa
 title: Snappa
-category: "AI Image"
+category: AI Image
 price_model: Freemium
 tags: ["design", "image", "social-media"]
 official_url: "https://snappa.com/"
-popularity: 85
-tier: "D"
-generated_at: "2026-05-28"
+popularity: 83
+tier: D
+generated_at: 2026-05-28
 ---
 # Snappa
 

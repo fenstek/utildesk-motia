@@ -1,13 +1,13 @@
 ---
 slug: continue
 title: Continue
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: 
 tags: [ai, coding, developer, assistant]
 official_url: "https://www.continue.dev/"
-popularity: 55
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 54
+tier: C
+generated_at: 2026-05-28
 ---
 # Continue
 

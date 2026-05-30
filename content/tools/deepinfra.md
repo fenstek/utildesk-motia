@@ -1,13 +1,13 @@
 ---
 slug: deepinfra
 title: DeepInfra
-category: "AI Coding"
+category: AI Coding
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://deepinfra.com"
-popularity: 53
-tier: "D"
-generated_at: "2026-05-26"
+popularity: 51
+tier: D
+generated_at: 2026-05-26
 ---
 # DeepInfra
 

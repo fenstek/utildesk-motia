@@ -1,13 +1,13 @@
 ---
 slug: apache-cassandra
 title: Apache Cassandra
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Open Source
 tags: [database, data, open-source, developer-tools]
 official_url: "https://cassandra.apache.org/_/index.html"
-popularity: 67
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 66
+tier: C
+generated_at: 2026-05-27
 ---
 # Apache Cassandra
 
