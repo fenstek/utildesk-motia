@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T20:25:52.788Z",
+  "generatedAt": "2026-05-30T20:31:02.018Z",
   "totalTools": 1167,
   "tierCounts": {
     "D": 240,
@@ -455,7 +455,7 @@
         "beste-ocr-apis-rechnungen-deutschland-2026",
         "ki-tools-eu-datenverarbeitung-kleine-unternehmen"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "ableton-live",
@@ -1463,7 +1463,7 @@
         "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
         "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "any-do",
@@ -2396,7 +2396,7 @@
         "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
         "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "axis-camera-station",
@@ -3582,7 +3582,7 @@
         "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "cleanvoice-ai",
@@ -7118,7 +7118,7 @@
       "mentionedIn": [
         "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "hermes-agent",
@@ -10130,7 +10130,7 @@
         "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
         "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "mistral",
@@ -10465,7 +10465,7 @@
       "mentionedIn": [
         "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "narrative-science",
@@ -11423,7 +11423,7 @@
         "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
         "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "phantombuster",
@@ -11846,7 +11846,7 @@
       "mentionedIn": [
         "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "poeditor",
@@ -15696,7 +15696,7 @@
       "mentionedIn": [
         "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "waifu2x",
@@ -16470,7 +16470,7 @@
         "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "zencastr",
