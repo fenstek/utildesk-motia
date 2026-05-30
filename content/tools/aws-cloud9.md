@@ -1,13 +1,13 @@
 ---
 slug: aws-cloud9
 title: AWS Cloud9
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [coding, cloud, developer]
 official_url: "https://aws.amazon.com/cloud9/"
-popularity: 65
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 63
+tier: C
+generated_at: 2026-05-28
 ---
 # AWS Cloud9
 

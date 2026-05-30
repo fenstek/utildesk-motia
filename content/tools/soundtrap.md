@@ -5,7 +5,7 @@ category: Audio & Video
 price_model: Abonnement
 tags: [audio, productivity]
 official_url: "https://www.soundtrap.com/home/"
-popularity: 84
+popularity: 82
 description: Soundtrap ist ein Audio- und Musikwerkzeug für browserbasierte Musikproduktion und Audio-Kollaboration für Songs, Podcasts und Unterricht.
 tier: C
 generated_at: 2026-05-28

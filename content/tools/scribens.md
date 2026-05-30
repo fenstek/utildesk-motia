@@ -1,13 +1,13 @@
 ---
 slug: scribens
 title: Scribens
-category: "AI Writing"
+category: AI Writing
 price_model: Freemium
 tags: [writing, grammar, productivity, editing]
 official_url: "https://www.scribens.com/"
-popularity: 16
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 15
+tier: C
+generated_at: 2026-05-27
 ---
 # Scribens
 

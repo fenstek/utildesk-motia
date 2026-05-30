@@ -1,13 +1,13 @@
 ---
 slug: janitor-ai
 title: Janitor AI
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://janitorai.com/"
-popularity: 38
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 36
+tier: C
+generated_at: 2026-05-27
 ---
 # Janitor AI
 

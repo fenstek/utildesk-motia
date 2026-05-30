@@ -1,13 +1,13 @@
 ---
 slug: reaper
 title: Reaper
-category: "AI Chatbots"
+category: AI Chatbots
 price_model: 
 tags: [assistant, automation]
 official_url: "https://ghostsecurity.com/"
-popularity: 20
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 19
+tier: C
+generated_at: 2026-05-27
 ---
 # Reaper
 

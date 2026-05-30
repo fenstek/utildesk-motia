@@ -10,7 +10,7 @@ tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]
 created_at: 2026-05-12
-popularity: 90
+popularity: 89
 ---
 # Hera
 

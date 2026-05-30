@@ -1,13 +1,13 @@
 ---
 slug: crowdstrike-falcon
 title: CrowdStrike Falcon
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.crowdstrike.com/en-us/platform/"
-popularity: 54
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 53
+tier: C
+generated_at: 2026-05-28
 ---
 # CrowdStrike Falcon
 

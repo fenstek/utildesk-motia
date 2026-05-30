@@ -5,7 +5,7 @@ category: Produktivität
 price_model: Freemium
 tags: [communication,community,chat,voice]
 official_url: "https://discord.com/"
-popularity: 50
+popularity: 49
 tier: C
 generated_at: 2026-05-26
 ---

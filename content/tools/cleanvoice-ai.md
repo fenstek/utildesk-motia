@@ -1,13 +1,13 @@
 ---
 slug: cleanvoice-ai
 title: Cleanvoice AI
-category: "Audio & Video"
+category: Audio & Video
 price_model: Je nach Plan
 tags: [ai, audio, editing, automation]
 official_url: "https://cleanvoice.ai/"
-popularity: 58
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 57
+tier: C
+generated_at: 2026-05-28
 ---
 # Cleanvoice AI
 

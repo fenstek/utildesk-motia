@@ -5,7 +5,7 @@ category: AI Coding
 price_model: 
 tags: [hcm, hr, enterprise-software]
 official_url: "https://www.workday.com/en-us/products/human-capital-management/overview.html"
-popularity: 82
+popularity: 81
 tier: C
 generated_at: 2026-05-28
 ---

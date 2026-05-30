@@ -1,13 +1,13 @@
 ---
 slug: auphonic
 title: Auphonic
-category: "AI Audio"
+category: AI Audio
 price_model: Je nach Plan
 tags: [audio, automation, productivity, transcription, video]
 official_url: "https://auphonic.com/"
-popularity: 65
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 64
+tier: C
+generated_at: 2026-05-28
 ---
 # Auphonic
 

@@ -1,14 +1,14 @@
 ---
 slug: bolt-new
 title: Bolt.new
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["coding", "developer-tools"]
 official_url: "https://bolt.new"
-popularity: 62
+popularity: 61
 description: Bolt.new ist ein browserbasiertes KI-Entwicklungstool für schnelle Web-Prototypen, App-Ideen und iterative Code-Experimente.
-tier: "C"
-generated_at: "2026-05-28"
+tier: C
+generated_at: 2026-05-28
 ---
 # Bolt.new
 

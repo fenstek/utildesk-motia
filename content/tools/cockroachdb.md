@@ -1,13 +1,13 @@
 ---
 slug: cockroachdb
 title: CockroachDB
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Freemium
 tags: [database, cloud, data, developer-tools]
 official_url: "https://www.cockroachlabs.com/"
-popularity: 57
-tier: "C"
-generated_at: "2026-05-26"
+popularity: 55
+tier: C
+generated_at: 2026-05-26
 ---
 # CockroachDB
 

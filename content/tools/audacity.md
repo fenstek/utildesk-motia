@@ -1,14 +1,14 @@
 ---
 slug: audacity
 title: Audacity
-category: "AI Audio"
+category: AI Audio
 price_model: Freemium
 tags: ["ai", "assistant", "automation"]
 official_url: "https://www.audacityteam.org/"
 created_at: 2026-02-12
-popularity: 66
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 65
+tier: C
+generated_at: 2026-05-27
 ---
 # Audacity
 

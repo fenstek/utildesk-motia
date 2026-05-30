@@ -1,14 +1,14 @@
 ---
 slug: devin
 title: Devin
-category: "AI Coding"
+category: AI Coding
 price_model: Je nach Plan
 tags: [ai, coding, automation, developer]
 official_url: "https://devin.ai/"
-popularity: 51
+popularity: 50
 description: Devin ist ein KI-Software-Agent für Entwicklungsaufgaben, Codeänderungen, Debugging und längere Engineering-Läufe.
-tier: "C"
-generated_at: "2026-05-26"
+tier: C
+generated_at: 2026-05-26
 ---
 # Devin
 
