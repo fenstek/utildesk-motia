@@ -4,12 +4,12 @@ title: Klippa
 category: Automatisierung
 price_model: Je nach Plan
 tags: 
-official_url: "https://www.klippa.com/en/ocr-api/"
+official_url: "https://www.klippa.com/en/ocr/"
 description: Klippa bietet OCR- und Dokumentenverarbeitung für Rechnungen, Belege und weitere Geschäftsdokumente, häufig mit Fokus auf API-Integration und Finanzprozesse.
 created_at: 2026-05-10
 popularity: 37
 tier: A
-lastReviewed: 2026-05-27
+lastReviewed: "2026-05-30"
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 ---
 # Klippa

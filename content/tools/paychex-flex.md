@@ -4,10 +4,11 @@ title: Paychex Flex
 category: "AI Image"
 price_model: Je nach Plan
 tags: [payroll, hr, hcm]
-official_url: "https://www.paychex.com/payroll/paychex-flex"
+official_url: "https://www.paychex.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-13"
+lastReviewed: "2026-05-30"
 ---
 # Paychex Flex
 

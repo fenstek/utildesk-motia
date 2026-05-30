@@ -4,10 +4,11 @@ title: Squiffy
 category: "AI Image"
 price_model: Je nach Plan
 tags: [design,workflow]
-official_url: "https://squiffy.com/"
+official_url: "https://squiffystory.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-18"
+lastReviewed: "2026-05-30"
 ---
 # Squiffy
 
