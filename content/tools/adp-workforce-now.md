@@ -1,13 +1,13 @@
 ---
 slug: adp-workforce-now
 title: ADP Workforce Now
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: 
 tags: [payroll, hr, hcm]
 official_url: "https://www.adp.com/what-we-offer/products/adp-workforce-now.aspx"
-popularity: 75
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 74
+tier: C
+generated_at: 2026-05-28
 ---
 # ADP Workforce Now
 

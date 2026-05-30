@@ -1,13 +1,13 @@
 ---
 slug: alitu
 title: Alitu
-category: "AI Audio"
+category: AI Audio
 price_model: Abonnement
 tags: [podcasting, audio, editing]
 official_url: "https://alitu.com/"
-popularity: 71
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 70
+tier: C
+generated_at: 2026-05-28
 ---
 # Alitu
 

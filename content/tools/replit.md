@@ -1,16 +1,16 @@
 ---
 slug: replit
 title: Replit
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Freemium
 tags: 
 official_url: "https://repl.it"
 affiliate_url: "https://repl.it"
-tier: "C"
-generated_at: "2026-05-27"
+tier: C
+generated_at: 2026-05-27
 created_at: 2026-02-07
 updated_at: 2026-05-21
-popularity: 19
+popularity: 18
 ---
 # Replit
 

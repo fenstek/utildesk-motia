@@ -1,15 +1,15 @@
 ---
 slug: mistral-ocr
 title: Mistral OCR
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: 
 official_url: "https://docs.mistral.ai/capabilities/document_ai/basic_ocr/"
 description: Mistral OCR ist eine Dokument-KI-Funktion für Entwickler, die OCR-Ergebnisse in LLM- und Agenten-Workflows weiterverarbeiten möchten.
 created_at: 2026-05-10
-popularity: 30
-tier: "A"
-lastReviewed: "2026-05-27"
+popularity: 29
+tier: A
+lastReviewed: 2026-05-27
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # Mistral OCR

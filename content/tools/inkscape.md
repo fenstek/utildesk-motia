@@ -5,7 +5,7 @@ category: Design
 price_model: Open Source
 tags: [ai,design,vector,creative,open-source]
 official_url: "https://inkscape.org/"
-popularity: 39
+popularity: 38
 description: Inkscape ist ein Open-Source-Editor für Vektorgrafiken, Logos, Icons, Diagramme und skalierbare Illustrationen.
 tier: C
 generated_at: 2026-05-27

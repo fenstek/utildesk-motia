@@ -5,7 +5,7 @@ category: "Audio & Video"
 price_model: Einmalzahlung
 tags: [audio, productivity, automation, workflow]
 official_url: "https://www.landr.com/"
-popularity: 36
+popularity: 35
 description: LANDR bündelt Mastering, Musikdistribution und Audio-Workflows für unabhängige Musiker und Creator.
 tier: C
 generated_at: 2026-05-27

@@ -1,13 +1,13 @@
 ---
 slug: coder
 title: Coder
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [coding,workflow]
 official_url: "https://coder.com/"
-popularity: 56
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 55
+tier: C
+generated_at: 2026-05-28
 ---
 # Coder
 

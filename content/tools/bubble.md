@@ -1,13 +1,13 @@
 ---
 slug: bubble
 title: Bubble
-category: "AI Infrastructure"
+category: AI Infrastructure
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://bubble.io/"
-popularity: 61
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 59
+tier: C
+generated_at: 2026-05-27
 ---
 # Bubble
 
