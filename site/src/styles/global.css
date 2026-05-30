@@ -6714,3 +6714,510 @@ html[data-design="decision"] .ds-frame {
     overflow-x: auto;
   }
 }
+/* KI-Blatt second match pass: standalone interior pages do not have a second masthead. */
+html[data-design="decision"] .ki-blatt-header.site-header,
+html[data-design="decision"] .ds-frame,
+html[data-design="decision"]:not(:has(.ds-template)) main.container,
+html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+  width: 1376px;
+  max-width: calc(100% - 64px);
+}
+
+html[data-design="decision"] .ki-blatt-header.site-header {
+  margin-top: 64px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead {
+  display: none !important;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) main.container {
+  padding-top: 18px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-mast {
+  padding-top: 24px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #d8d4c5;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-mast-h1 {
+  font-size: clamp(6rem, 10vw, 8.2rem);
+  line-height: 0.86;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-mast-oneliner {
+  max-width: 760px;
+  font-size: clamp(1.25rem, 2.1vw, 1.65rem);
+  line-height: 1.22;
+}
+
+.akte-verdict-card {
+  position: relative;
+  margin: 34px 0 40px;
+  border: 2px solid #0c0c0a;
+  background: #e8e3d2;
+}
+
+.akte-verdict-tab {
+  position: absolute;
+  top: -14px;
+  left: 26px;
+  padding: 5px 12px;
+  border: 1px solid #0c0c0a;
+  background: #f6f4ee;
+  color: #0c0c0a;
+  font: 700 11px/1.1 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.akte-verdict-main {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr) 240px;
+  gap: 28px;
+  align-items: center;
+  padding: 34px 52px;
+}
+
+.akte-verdict-glyph {
+  color: #00784c;
+  font: 900 78px/1 "Bricolage Grotesque", system-ui, sans-serif;
+  text-align: center;
+}
+
+.akte-verdict-kicker {
+  margin: 0 0 8px;
+  color: #00784c;
+  font: 700 11px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.akte-verdict-copy h2 {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.akte-verdict-copy p:last-child {
+  margin: 10px 0 0;
+  color: #3a3a35;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.akte-verdict-trust {
+  align-self: stretch;
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 22px 18px;
+  border: 1px solid #b6b1a0;
+  background: #f6f4ee;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.akte-verdict-trust strong {
+  color: #c5251c;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.akte-trust-bars {
+  display: flex;
+  gap: 4px;
+}
+
+.akte-trust-bars i,
+.akte-trust-bars em {
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  border: 1px solid #0c0c0a;
+}
+
+.akte-trust-bars i {
+  background: #0c0c0a;
+}
+
+.akte-trust-bars em {
+  background: transparent;
+}
+
+.akte-verdict-trust small {
+  color: #0c0c0a;
+  font-size: 11px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-tldr-always {
+  margin: 0 0 40px;
+  border: 0;
+  background: #050504;
+  color: #f6f4ee;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-tldr-always .akte-tldr-body p,
+html[data-design="decision"]:not(:has(.ds-template)) .akte-tldr-always .akte-tldr-body li {
+  color: #f6f4ee;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-tldr-always .akte-tldr-body ul {
+  margin: 14px 0 0;
+  padding-left: 1.2em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .akte-tldr-always .akte-tldr-body li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .akte-verdict-main {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+
+  .akte-verdict-glyph {
+    text-align: left;
+  }
+}
+/* Ratgeber archive: move away from image cards toward the standalone archive ledger. */
+html[data-design="decision"]:not(:has(.ds-template)) .rg-list {
+  margin-top: 28px;
+  border-top: 2px solid #0c0c0a;
+  padding-bottom: 64px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.85fr);
+  gap: 0;
+  align-items: stretch;
+  padding: 0;
+  border: 1px solid #0c0c0a;
+  border-top: 0;
+  background: #f6f4ee;
+  transform: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card:hover {
+  transform: none;
+  background: rgba(197, 37, 28, 0.025);
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-figure {
+  display: none;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-body {
+  grid-column: 1;
+  padding: 34px 40px 30px;
+  gap: 16px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card::after {
+  content: "VERDIKT\A\AOK  Empfehlen\A\Amit Review und klarer Aufgabe";
+  display: block;
+  grid-column: 2;
+  padding: 36px 34px;
+  border-left: 1px solid #0c0c0a;
+  color: #0c0c0a;
+  white-space: pre-line;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card:nth-child(3n)::after {
+  content: "VERDIKT\A\AHALB  Mit Vorbehalt\A\Aerst pilotieren, dann ausrollen";
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-title {
+  max-width: 760px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2rem, 3.5vw, 3.3rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-excerpt {
+  max-width: 68ch;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-card-meta-bottom {
+  margin-top: 10px;
+}
+
+html[data-design="decision"]:not(:has(.ds-template)) .rg-arrow {
+  color: #c5251c;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 900px) {
+  html[data-design="decision"]:not(:has(.ds-template)) .rg-card {
+    grid-template-columns: 1fr;
+  }
+  html[data-design="decision"]:not(:has(.ds-template)) .rg-card::after {
+    grid-column: 1;
+    border-left: 0;
+    border-top: 1px solid #0c0c0a;
+  }
+}
+
+
+/* KI-Blatt third match pass: make inventory read like the standalone register. */
+html[data-design="decision"] .inv-wrap,
+html[data-design="decision"] .inv-list-wrap,
+html[data-design="decision"] .tools-guides {
+  width: min(1376px, calc(100% - 64px)) !important;
+  max-width: min(1376px, calc(100% - 64px)) !important;
+}
+
+html[data-design="decision"] .inv-head {
+  padding: 24px 56px 30px !important;
+  margin: 0 !important;
+  grid-template-columns: minmax(0, 1.55fr) minmax(420px, 1fr) !important;
+  gap: 56px !important;
+  border-bottom: 1px solid var(--rule) !important;
+}
+
+html[data-design="decision"] .inv-head-h1 {
+  font-size: clamp(4.8rem, 8vw, 6.75rem) !important;
+  line-height: .97 !important;
+}
+
+html[data-design="decision"] .inv-controls {
+  padding: 18px 56px 0 !important;
+  border: 0 !important;
+}
+
+html[data-design="decision"] .inv-controls-search {
+  display: grid !important;
+  grid-template-columns: 1fr 180px !important;
+  gap: 12px !important;
+  width: 100% !important;
+}
+
+html[data-design="decision"] .inv-table-head,
+html[data-design="decision"] .inv-register .inv-row {
+  display: grid !important;
+  grid-template-columns: 62px minmax(420px, 1.65fr) 128px 265px 130px 96px 28px !important;
+  gap: 18px !important;
+  align-items: center !important;
+}
+
+html[data-design="decision"] .inv-table-head {
+  margin: 16px 56px 0 !important;
+  padding: 14px 0 !important;
+  border-top: 2px solid var(--ink) !important;
+  border-bottom: 1px solid var(--ink) !important;
+  font-family: var(--mono) !important;
+  font-size: 10px !important;
+  letter-spacing: .16em !important;
+  text-transform: uppercase !important;
+  color: var(--ink-mid) !important;
+}
+
+html[data-design="decision"] .inv-register {
+  display: block !important;
+  padding: 0 56px 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+html[data-design="decision"] .inv-register .inv-row {
+  width: 100% !important;
+  min-height: 96px !important;
+  padding: 20px 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+
+html[data-design="decision"] .inv-register .inv-row:hover {
+  background: rgba(197, 37, 28, .035) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+html[data-design="decision"] .inv-row-no {
+  position: static !important;
+  font-family: var(--mono) !important;
+  font-size: 12px !important;
+  color: var(--ink-mid) !important;
+  letter-spacing: .08em !important;
+}
+
+html[data-design="decision"] .inv-register .tool-header {
+  display: grid !important;
+  grid-template-columns: 44px minmax(0, 1fr) !important;
+  gap: 16px !important;
+  align-items: center !important;
+}
+
+html[data-design="decision"] .inv-register .tool-image,
+html[data-design="decision"] .inv-register .tool-card-logo {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 3px !important;
+  background: var(--paper) !important;
+  border: 1px solid var(--rule) !important;
+}
+
+html[data-design="decision"] .inv-register .tool-title {
+  font-family: var(--serif) !important;
+  font-size: 24px !important;
+  line-height: 1.05 !important;
+  font-weight: 900 !important;
+  letter-spacing: -.018em !important;
+  margin: 0 0 4px !important;
+  color: var(--ink) !important;
+}
+
+html[data-design="decision"] .inv-register .tools-desc {
+  font-family: var(--serif) !important;
+  font-size: 16px !important;
+  line-height: 1.35 !important;
+  color: var(--ink-soft) !important;
+  margin: 0 !important;
+  max-width: 620px !important;
+}
+
+html[data-design="decision"] .inv-row-verdict strong {
+  display: block !important;
+  max-width: 110px !important;
+  font-family: var(--mono) !important;
+  font-size: 10px !important;
+  line-height: 1.15 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: var(--ok) !important;
+}
+
+html[data-design="decision"] .inv-row:nth-child(7n) .inv-row-verdict strong {
+  color: #b16b00 !important;
+}
+
+html[data-design="decision"] .inv-row-tags {
+  display: flex !important;
+  gap: 6px !important;
+  flex-wrap: wrap !important;
+}
+
+html[data-design="decision"] .inv-row-tag {
+  display: inline-flex !important;
+  border: 1px solid var(--rule-hi) !important;
+  border-radius: 999px !important;
+  padding: 3px 8px !important;
+  font-family: var(--mono) !important;
+  font-size: 10px !important;
+  color: var(--ink-soft) !important;
+  background: var(--paper) !important;
+}
+
+html[data-design="decision"] .inv-row-meta {
+  display: contents !important;
+}
+
+html[data-design="decision"] .inv-row-cat,
+html[data-design="decision"] .inv-row-price {
+  justify-self: start !important;
+  border: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-family: var(--mono) !important;
+  font-size: 11px !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: var(--ink) !important;
+}
+
+html[data-design="decision"] .inv-row-open {
+  position: static !important;
+  color: var(--ocean) !important;
+  font-size: 18px !important;
+}
+
+html[data-design="decision"] .inv-loadmore {
+  margin: 24px 56px 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  html[data-design="decision"] .inv-table-head,
+  html[data-design="decision"] .inv-register .inv-row {
+    grid-template-columns: 48px minmax(0, 1fr) 110px 100px 28px !important;
+  }
+  html[data-design="decision"] .inv-th-tags,
+  html[data-design="decision"] .inv-row-tags,
+  html[data-design="decision"] .inv-th-cat,
+  html[data-design="decision"] .inv-row-cat {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  html[data-design="decision"] .inv-wrap,
+  html[data-design="decision"] .inv-list-wrap,
+  html[data-design="decision"] .tools-guides {
+    width: min(100% - 28px, 1376px) !important;
+    max-width: min(100% - 28px, 1376px) !important;
+  }
+  html[data-design="decision"] .inv-head,
+  html[data-design="decision"] .inv-controls,
+  html[data-design="decision"] .inv-register {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  html[data-design="decision"] .inv-table-head { display: none !important; }
+  html[data-design="decision"] .inv-register .inv-row {
+    grid-template-columns: 36px 1fr 24px !important;
+  }
+  html[data-design="decision"] .inv-row-verdict,
+  html[data-design="decision"] .inv-row-meta { display: none !important; }
+}
+
+
+/* KI-Blatt inventory micro-fix: keep title, logo and description as one compact record. */
+html[data-design="decision"] .inv-register .tool-info {
+  display: block !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+html[data-design="decision"] .inv-register .tool-image {
+  align-self: start !important;
+  margin-top: 3px !important;
+}
+html[data-design="decision"] .inv-register .tool-title + .tools-desc {
+  margin-top: 4px !important;
+}
+
+html[data-design="decision"] .inv-register .tool-title,
+html[data-design="decision"] .inv-register .tools-desc {
+  min-height: 0 !important;
+  display: block !important;
+}
+
+html[data-design="decision"] .inv-register .tools-desc {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+  overflow: hidden !important;
+}
