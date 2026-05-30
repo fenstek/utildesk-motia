@@ -575,6 +575,38 @@ const softwareApplicationSchema = {
       </aside>
     </header>
 
+    <section class="akte-verdict-card" aria-label="Verdikt der Redaktion">
+      <span class="akte-verdict-tab">Verdikt der Redaktion</span>
+      <div class="akte-verdict-main">
+        <span class="akte-verdict-glyph">{"\u2713"}</span>
+        <div class="akte-verdict-copy">
+          <p class="akte-verdict-kicker">{isCuratedTool ? "Empfehlen" : "Mit Vorbehalt"}</p>
+          <h2>{isCuratedTool ? "Empfehlen \u2014 als Werkzeug, nicht als Autopilot." : "Mit Vorbehalt \u2014 erst pr\u00fcfen, dann produktiv nutzen."}</h2>
+          <p>{isCuratedTool ? "Sicherer Start mit klarer Aufgabe, menschlicher Pr\u00fcfung und nachvollziehbaren Datenfl\u00fcssen." : "Dieser Eintrag basiert auf \u00f6ffentlichen Quellen und braucht vor dem Einsatz eine eigene Pr\u00fcfung."}</p>
+        </div>
+        <aside class="akte-verdict-trust">
+          <strong>Vertrauen</strong>
+          <span class="akte-trust-bars"><i></i><i></i><i></i><i></i><em></em></span>
+          <small>{isCuratedTool ? "4 / 5 \u00b7 hoch" : "2 / 5 \u00b7 pr\u00fcfen"}</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="akte-tldr akte-tldr-always" aria-label="TL;DR">
+      <div class="akte-tldr-aside">
+        <span class="akte-tldr-kicker">In 60 Sek.</span>
+        <span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span>
+      </div>
+      <div class="akte-tldr-body">
+        <p>{oneliner || schemaDescription}</p>
+        <ul>
+          <li>{category ? `${title} sitzt in der Kategorie ${category}.` : `${title} ist als KI-Werkzeug im Index einsortiert.`}</li>
+          <li>{price_model ? `Preismodell: ${price_model}.` : "Preismodell vor dem Einsatz beim Anbieter pr\u00fcfen."}</li>
+          <li>Keine bezahlte Platzierung im Utildesk-Index.</li>
+        </ul>
+      </div>
+    </section>
+
     {isCuratedTool ? (
       <p class="editorial-note">
         Kuratiert von <strong>Utildesk Redaktion</strong>
@@ -588,24 +620,6 @@ const softwareApplicationSchema = {
       </p>
     )}
 
-    {oneliner && (
-      <section class="akte-tldr" aria-label="TL;DR">
-        <div class="akte-tldr-aside">
-          <span class="akte-tldr-kicker">In 60 Sek.</span>
-          <span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span>
-        </div>
-        <div class="akte-tldr-body">
-          <p>{oneliner}</p>
-          {category && (
-            <p class="akte-tldr-meta">
-              Kategorie: <strong>{category}</strong>
-              {price_model ? <span> · Preis: <strong>{price_model}</strong></span> : null}
-              {providerDomain ? <span> · {providerDomain}</span> : null}
-            </p>
-          )}
-        </div>
-      </section>
-    )}
   </div>
 
   <!-- Article Content -->
