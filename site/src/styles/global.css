@@ -5214,7 +5214,7 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
   margin: 0 0 14px;
 }
 
-.akte-article-body p:first-of-type::first-letter {
+.akte-article-body > div > p:first-of-type::first-letter {
   font-family: var(--akte-serif);
   font-weight: 700;
   font-size: 78px;
@@ -5448,7 +5448,7 @@ html[data-design="decision"]:not(:has(.ds-template)) .interior-decision-nav .ds-
     font-size: 17px;
   }
 
-  .akte-article-body p:first-of-type::first-letter {
+  .akte-article-body > div > p:first-of-type::first-letter {
     font-size: 56px;
     padding: 4px 8px 0 0;
   }
@@ -7670,4 +7670,15 @@ html[data-design="decision"] .akte-verdict-card {
   html[data-design="decision"] .akte-faktenblatt {
     min-height: 0 !important;
   }
+}
+
+
+/* Bugfix: decorative drop-cap must never apply inside lists or nested paragraphs. */
+html[data-design="decision"] .akte-article-body li p::first-letter,
+html[data-design="decision"] .akte-article-body blockquote p::first-letter,
+html[data-design="decision"] .akte-article-body .inline-provider-link p::first-letter {
+  float: none !important;
+  padding: 0 !important;
+  font: inherit !important;
+  color: inherit !important;
 }
