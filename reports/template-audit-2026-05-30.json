@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T20:20:46.170Z",
+  "generatedAt": "2026-05-30T20:25:52.788Z",
   "totalTools": 1167,
   "tierCounts": {
     "D": 240,
@@ -912,7 +912,7 @@
         "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "aira",
@@ -969,7 +969,7 @@
         "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "aiseo",
@@ -1495,7 +1495,7 @@
       "mentionedIn": [
         "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "anything-llm",
@@ -3697,7 +3697,7 @@
       "mentionedIn": [
         "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "cloudera-data-platform",
@@ -3892,7 +3892,7 @@
       "mentionedIn": [
         "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "contentbot",
@@ -4142,7 +4142,7 @@
         "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "crisp",
@@ -4251,7 +4251,7 @@
         "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "cutout",
@@ -4581,7 +4581,7 @@
       "mentionedIn": [
         "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "deepmind",
@@ -4626,7 +4626,7 @@
       "mentionedIn": [
         "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "dell-boomi",
@@ -6019,7 +6019,7 @@
         "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
         "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "genei",
@@ -6155,7 +6155,7 @@
         "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "gitpod",
@@ -6286,7 +6286,7 @@
       "mentionedIn": [
         "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "google-assistant",
@@ -6800,7 +6800,7 @@
       "mentionedIn": [
         "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "gotomeeting",
@@ -6984,7 +6984,7 @@
       "mentionedIn": [
         "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "h2o-ai-driverless-ai",
@@ -8451,7 +8451,7 @@
         "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "languagetool",
@@ -9149,7 +9149,7 @@
         "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "makecode",
@@ -9777,7 +9777,7 @@
       "mentionedIn": [
         "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "microsoft-defender-for-endpoint",
@@ -9923,7 +9923,7 @@
         "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "microsoft-powerpoint",
@@ -10147,7 +10147,7 @@
       "mentionedIn": [
         "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "mit-app-inventor",
@@ -10717,7 +10717,7 @@
       "mentionedIn": [
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "nvidia-a100-tensor-core-gpu",
@@ -10953,7 +10953,7 @@
       "mentionedIn": [
         "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "openai-codex",
@@ -10972,7 +10972,7 @@
         "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
         "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "openai-gpt-agents",
@@ -11047,7 +11047,7 @@
       "mentionedIn": [
         "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "opencv",
@@ -11172,7 +11172,7 @@
       "mentionedIn": [
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "ourdream-ai",
@@ -13246,7 +13246,7 @@
       "mentionedIn": [
         "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "semantic-scholar",
@@ -14829,7 +14829,7 @@
         "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
         "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "testcafe",
@@ -15296,7 +15296,7 @@
     },
     {
       "slug": "udio",
-      "bodyLen": 7712,
+      "bodyLen": 7697,
       "editorialBlocks": [
         "Was im Alltag wirklich zählt",
         "Workflow-Fit",
@@ -15509,7 +15509,7 @@
     },
     {
       "slug": "visme",
-      "bodyLen": 7328,
+      "bodyLen": 7323,
       "editorialBlocks": [
         "Redaktionelle Einschätzung"
       ],
@@ -15739,7 +15739,7 @@
         "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "wavepad",
@@ -15981,7 +15981,7 @@
       "mentionedIn": [
         "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"
       ],
-      "lastGitReviewed": "2026-05-29"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "wit-ai",
@@ -16268,7 +16268,7 @@
         "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "xgboost",
@@ -16336,7 +16336,7 @@
       "mentionedIn": [
         "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "youcam-makeup",
@@ -16597,7 +16597,7 @@
         "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
         "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"
       ],
-      "lastGitReviewed": "2026-05-28"
+      "lastGitReviewed": "2026-05-30"
     },
     {
       "slug": "zoho-calendar",
