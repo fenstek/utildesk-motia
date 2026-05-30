@@ -4,10 +4,11 @@ title: Microsoft Azure Bot Service
 category: "AI Chatbots"
 price_model: "Nutzungsbasiert"
 tags: [chatbot, api, automation]
-official_url: "https://azure.microsoft.com/en-us/services/bot-services/"
+official_url: "https://azure.microsoft.com/en-us/products/ai-services/ai-bot-service/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
+lastReviewed: "2026-05-30"
 ---
 # Microsoft Azure Bot Service
 

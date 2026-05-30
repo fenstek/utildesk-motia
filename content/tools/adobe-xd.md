@@ -8,6 +8,10 @@ official_url: "https://www.adobe.com/products/xd.html"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-14"
+disabled: true
+disabled_reason: "discontinued_or_unavailable_publicly"
+lastReviewed: "2026-05-30"
+search_index: false
 ---
 # Adobe XD
 

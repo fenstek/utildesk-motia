@@ -10,6 +10,10 @@ tier: "C"
 generated_at: "2026-05-17"
 popularity: 0
 description: Textanalyse-API für Sentiment, Themen, Klassifikation, Extraktion und semantische Verarbeitung.
+disabled: true
+disabled_reason: "domain_not_resolving_after_reddit_acquisition"
+lastReviewed: "2026-05-30"
+search_index: false
 ---
 # MeaningCloud
 
