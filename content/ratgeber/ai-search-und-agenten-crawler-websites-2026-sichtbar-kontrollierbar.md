@@ -30,6 +30,10 @@ relatedTools:
     href: "/tools/langchain/"
   - title: "Claude"
     href: "/tools/claude/"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 AI Search verändert gerade eine der Grundannahmen des Webs. Früher optimierte man Seiten vor allem für Menschen, Browser und klassische Suchmaschinen. Heute kommen zusätzlich KI-Systeme dazu, die Inhalte lesen, zusammenfassen, bewerten und in eigene Antworten oder Arbeitsabläufe einbauen.
 

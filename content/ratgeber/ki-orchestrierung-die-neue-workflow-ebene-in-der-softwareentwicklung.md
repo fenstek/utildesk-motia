@@ -30,6 +30,10 @@ relatedTools:
     href: "/tools/langchain/"
   - title: "CrewAI"
     href: "/tools/crew-ai/"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte. Sobald Teams mehr als einen Coding-Assistenten einsetzen, tauchen dieselben Fragen auf: Welche Spezifikation gilt gerade? Welche Teilaufgabe liegt noch bei welchem Agenten? Was ist schon geprüft, und was ist nur schnell erzeugter Output? Genau aus diesem organisatorischen Druck entsteht gerade eine neue Schicht im Stack: KI-Orchestrierung.
 

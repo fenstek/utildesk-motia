@@ -1,6 +1,11 @@
 ---
 slug: vonage-business-communications
 title: Vonage Business Communications
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-06
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-06-editorial-next-100-tool-cards"
 category: Produktivität
 price_model: Abonnement
 tags: [phone, communication, meetings, customer-support]

@@ -1,6 +1,11 @@
 ---
 slug: deep-art-effects
 title: Deep Art Effects
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-deep-art-effects"
 category: AI
 price_model: Freemium
 tags: [image-editing, art, creative-tools]

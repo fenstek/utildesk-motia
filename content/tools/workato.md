@@ -1,6 +1,11 @@
 ---
 slug: workato
 title: Workato
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-current-50"
 category: AI
 price_model: 
 tags: ["automation", "workflow", "no-code", "productivity"]

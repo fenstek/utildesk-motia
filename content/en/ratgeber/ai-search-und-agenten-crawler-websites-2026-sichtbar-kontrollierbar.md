@@ -30,6 +30,10 @@ relatedTools:
     href: "/en/tools/langchain/"
   - title: "Claude"
     href: "/en/tools/claude/"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 AI Search is changing one of the basic assumptions of the web. In the past, websites were optimized mostly for people, browsers, and classic search engines. Now a new layer has arrived: AI systems that read content, summarize it, evaluate it, and reuse it inside answers or workflows.
 

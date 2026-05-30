@@ -1,6 +1,11 @@
 ---
 slug: civitai
 title: Civitai
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-06
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-06-editorial-next-100-tool-cards"
 category: Design
 price_model: Freemium
 tags:

@@ -1,6 +1,11 @@
 ---
 slug: beautiful-ai
 title: Beautiful.ai
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-editorial-70-tool-cards"
 category: AI
 price_model: Freemium
 tags: [presentations, design, ai]
