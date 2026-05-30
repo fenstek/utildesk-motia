@@ -7405,7 +7405,8 @@ html[data-design="decision"] .inv-filter-group h3 {
   color: var(--ink-mid) !important;
 }
 
-html[data-design="decision"] .inv-filter-group p {
+html[data-design="decision"] .inv-filter-group p,
+html[data-design="decision"] .inv-filter-option {
   display: grid !important;
   grid-template-columns: 14px 1fr auto !important;
   align-items: baseline !important;
@@ -7415,6 +7416,26 @@ html[data-design="decision"] .inv-filter-group p {
   font-size: 16px !important;
   line-height: 1.2 !important;
   color: var(--ink) !important;
+}
+
+html[data-design="decision"] .inv-filter-option {
+  width: 100% !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+
+html[data-design="decision"] .inv-filter-option:hover span:nth-child(2),
+html[data-design="decision"] .inv-filter-option:focus-visible span:nth-child(2) {
+  color: var(--vermillion) !important;
+}
+
+html[data-design="decision"] .inv-filter-option:focus-visible {
+  outline: 2px solid var(--vermillion) !important;
+  outline-offset: 3px !important;
 }
 
 html[data-design="decision"] .inv-filter-group em {
@@ -7430,7 +7451,10 @@ html[data-design="decision"] .inv-filter-box {
   border: 1px solid var(--ink) !important;
   display: inline-block !important;
 }
-html[data-design="decision"] .inv-filter-box-fill { background: var(--ink) !important; }
+html[data-design="decision"] .inv-filter-box-fill,
+html[data-design="decision"] .inv-filter-option.is-active .inv-filter-box {
+  background: var(--ink) !important;
+}
 
 html[data-design="decision"] .inv-register {
   display: grid !important;
@@ -7517,9 +7541,19 @@ html[data-design="decision"] .inv-row-verdict strong::before {
   line-height: .8 !important;
   color: var(--ok) !important;
 }
-html[data-design="decision"] .inv-row:nth-child(7n) .inv-row-verdict strong::before {
+html[data-design="decision"] .inv-row-verdict-caution .inv-row-verdict strong::before {
   content: "\25D0" !important;
   color: #b16b00 !important;
+}
+
+html[data-design="decision"] .inv-row-verdict-overrated .inv-row-verdict strong::before {
+  content: "\2298" !important;
+  color: #7f54ff !important;
+}
+
+html[data-design="decision"] .inv-row-verdict-reject .inv-row-verdict strong::before {
+  content: "\00D7" !important;
+  color: var(--vermillion) !important;
 }
 
 html[data-design="decision"] .inv-row-tags {
