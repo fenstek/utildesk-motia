@@ -6464,3 +6464,253 @@ html[data-design="decision"] .akte-mast-h1 .akte-mast-dot,
 html[data-design="decision"] .inv-head-h1 .akte-mast-dot {
   margin-left: 0.025em;
 }
+/* KI-Blatt template match pass: restore the standalone frame rhythm and first-fold composition. */
+html[data-design="decision"] body {
+  background: #1a1a18;
+}
+
+.ki-blatt-topbar {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 6px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #0c0c0a;
+  box-shadow: 0 16px 54px rgba(0,0,0,0.38);
+  font: 700 11px/1 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ki-blatt-topbar a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: #f6f4ee;
+  text-decoration: none;
+}
+
+.ki-blatt-topbar a:hover,
+.ki-blatt-topbar a:focus-visible {
+  color: #fff;
+}
+
+.ki-blatt-topbar a.active {
+  background: #c5251c;
+  color: #fff;
+}
+
+html[data-design="classic"] .ki-blatt-topbar {
+  display: none;
+}
+
+html[data-design="decision"] .ki-blatt-header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 1440px;
+  max-width: calc(100% - 48px);
+  margin: 74px auto 0;
+  background: #f6f4ee;
+  border: 0;
+  border-bottom: 1px solid #d8d4c5;
+  box-shadow: none;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav {
+  grid-template-columns: minmax(420px, 1.05fr) auto minmax(220px, 0.7fr);
+  min-height: 44px;
+  padding: 0 56px;
+  border-bottom: 0;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav-left {
+  gap: 18px;
+  min-width: 0;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav-left strong {
+  color: #0c0c0a;
+  font-weight: 800;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav-links {
+  gap: 28px;
+  white-space: nowrap;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav-links a:first-child {
+  border-bottom-color: transparent;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav-links a[aria-current="page"] {
+  border-bottom-color: #c5251c;
+  padding-bottom: 2px;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-nav-right {
+  gap: 10px;
+  white-space: nowrap;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-language-pair {
+  color: #6a6a62;
+}
+
+html[data-design="decision"] .ki-blatt-header .ds-theme-switch {
+  display: none;
+}
+
+html[data-design="decision"] .ds-stage {
+  padding-top: 0;
+}
+
+html[data-design="decision"] .ds-frame {
+  width: 1440px;
+  max-width: calc(100vw - 48px);
+  box-shadow: 0 28px 90px rgba(0,0,0,0.42);
+}
+
+.ds-masthead-ki {
+  padding: 36px 56px 24px;
+}
+
+.ds-masthead-ki-main span {
+  font-size: 84px;
+}
+
+.ds-masthead-ki-main p {
+  margin-top: 14px;
+  letter-spacing: 0.32em;
+}
+
+.ds-front {
+  grid-template-columns: 1.45fr 0.95fr;
+  gap: 56px;
+  padding-top: 40px;
+}
+
+.ds-front-main h2 {
+  max-width: 760px;
+  font-size: 82px;
+  line-height: 0.98;
+}
+
+.ds-verdict.ds-verdict-caution .ds-verdict-glyph {
+  color: #b66a00;
+  font-size: 58px;
+}
+
+.ds-front-aside-test {
+  gap: 26px;
+}
+
+.ds-test-table {
+  border: 1px solid #0c0c0a;
+  background: #f6f4ee;
+}
+
+.ds-test-table h3 {
+  margin: 0;
+  padding: 18px 22px 12px;
+  color: #c5251c;
+  font: 700 11px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.ds-test-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 52px;
+  gap: 12px;
+  align-items: center;
+  min-height: 68px;
+  padding: 0 22px;
+  border-top: 1px solid #d8d4c5;
+  color: #0c0c0a;
+  text-decoration: none;
+}
+
+.ds-test-row:hover,
+.ds-test-row:focus-visible {
+  background: rgba(197, 37, 28, 0.04);
+  color: #0c0c0a;
+}
+
+.ds-test-icon {
+  color: #00784c;
+  font: 900 23px/1 "Bricolage Grotesque", system-ui, sans-serif;
+}
+
+.ds-test-row-caution .ds-test-icon {
+  color: #b66a00;
+}
+
+.ds-test-row strong {
+  display: block;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.ds-test-row small {
+  display: block;
+  margin-top: 4px;
+  color: #6a6a62;
+  font: 10px/1.2 "JetBrains Mono", ui-monospace, monospace;
+}
+
+.ds-test-row b {
+  justify-self: end;
+  font: 900 28px/1 "Bricolage Grotesque", system-ui, sans-serif;
+}
+
+.ds-box-warn-dashed {
+  border-color: #c5251c;
+  border-style: dashed;
+  padding: 22px;
+}
+
+.ds-box-warn-dashed p {
+  margin: 10px 0 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.ds-front-note {
+  margin: 0;
+  color: #0c0c0a;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.ds-front-note span {
+  float: left;
+  margin: 0 10px 0 0;
+  color: #c5251c;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 0.88;
+}
+
+@media (max-width: 1100px) {
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 14px 24px;
+  }
+  .ki-blatt-topbar {
+    max-width: calc(100% - 24px);
+    overflow-x: auto;
+  }
+}
