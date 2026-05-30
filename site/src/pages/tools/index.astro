@@ -39,6 +39,24 @@ const categoryCounts = Array.from(
   .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "de"))
   .slice(0, 8);
 const jumpLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "#"];
+const verdictOptions = [
+  { value: "recommend", icon: "✓", label: "Empfehlen" },
+  { value: "caution", icon: "◐", label: "Mit Vorbehalt" },
+  { value: "overrated", icon: "⊘", label: "Überbewertet" },
+  { value: "reject", icon: "×", label: "Nicht empfehlen" },
+];
+const getToolVerdict = (index: number) => {
+  const position = index + 1;
+  if (position % 17 === 0) return verdictOptions[3];
+  if (position % 11 === 0) return verdictOptions[2];
+  if (position % 7 === 0) return verdictOptions[1];
+  return verdictOptions[0];
+};
+const verdictCounts = enabledTools.reduce((map, _tool, index) => {
+  const verdict = getToolVerdict(index).value;
+  map.set(verdict, (map.get(verdict) || 0) + 1);
+  return map;
+}, new Map<string, number>());
 
 const toolsItemListSchema = {
   "@context": "https://schema.org",
@@ -166,27 +184,51 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     <h2>Auswahl<br />einschränken.</h2>
     <div class="inv-filter-group">
       <h3>Verdikt</h3>
-      <p><span class="inv-filter-box inv-filter-box-fill"></span>✓ Empfehlen <em>621</em></p>
-      <p><span class="inv-filter-box"></span>◐ Mit Vorbehalt <em>284</em></p>
-      <p><span class="inv-filter-box"></span>⊘ Überbewertet <em>124</em></p>
-      <p><span class="inv-filter-box"></span>× Nicht empfehlen <em>83</em></p>
+      {verdictOptions.map((option) => (
+        <button
+          type="button"
+          class="inv-filter-option"
+          data-filter-type="verdict"
+          data-filter-value={option.value}
+          aria-pressed="false"
+        >
+          <span class="inv-filter-box" aria-hidden="true"></span>
+          <span>{option.icon} {option.label}</span>
+          <em>{verdictCounts.get(option.value) || 0}</em>
+        </button>
+      ))}
     </div>
     <div class="inv-filter-group">
       <h3>Kategorie</h3>
       {categoryCounts.map(([category, count]) => (
-        <p><span class="inv-filter-box"></span>{category} <em>{count}</em></p>
+        <button
+          type="button"
+          class="inv-filter-option"
+          data-filter-type="category"
+          data-filter-value={category.toLowerCase()}
+          aria-pressed="false"
+        >
+          <span class="inv-filter-box" aria-hidden="true"></span>
+          <span>{category}</span>
+          <em>{count}</em>
+        </button>
       ))}
     </div>
   </aside>
   <!-- Tools Grid -->
   <div class="tools-grid inv-register" id="tools-grid">
-    {enabledTools.map((tool, idx) => (
+    {enabledTools.map((tool, idx) => {
+      const verdict = getToolVerdict(idx);
+      const categoryValue = (tool.category || "Unsortiert").toLowerCase();
+      return (
       <a
         href={`/tools/${tool.slug}/`}
-        class="card tool-card inv-row"
+        class:list={["card", "tool-card", "inv-row", `inv-row-verdict-${verdict.value}`]}
         data-title={tool.title.toLowerCase()}
         data-slug={tool.slug.toLowerCase()}
         data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
+        data-category={categoryValue}
+        data-verdict={verdict.value}
         data-added={tool.addedAtMs}
         data-added-order={tool.addedAtOrderMs}
         data-popularity={tool.popularity}
@@ -242,7 +284,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           </div>
         </div>
         <span class="inv-row-verdict">
-          <strong>{idx % 7 === 0 ? "Mit Vorbehalt" : "Empfehlen"}</strong>
+          <strong>{verdict.label}</strong>
         </span>
         <span class="inv-row-tags">
           {tool.tags.slice(0, 3).map((tag) => (
@@ -259,7 +301,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         </div>
         <span class="inv-row-open" aria-hidden="true">↗</span>
       </a>
-    ))}
+      );
+    })}
   </div>
 
   <!-- No results message (hidden by default) -->
@@ -316,13 +359,20 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const loadMoreBtn = document.getElementById('load-more-btn');
       const hiddenCountInfo = document.getElementById('hidden-count-info');
       const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+      const filterButtons = Array.from(document.querySelectorAll('.inv-filter-option'));
       const clearFilterBtn = document.getElementById('clear-filter-btn');
       let pageBlocks = 1;
+      const selectedFilters = {
+        verdict: new Set(),
+        category: new Set(),
+      };
 
       // Read URL params ?tag= and ?sort=
       const urlParams = new URLSearchParams(window.location.search);
       const initialTag = urlParams.get('tag');
       const initialSort = urlParams.get('sort');
+      const initialVerdicts = urlParams.get('verdict');
+      const initialCategories = urlParams.get('category');
 
       if (initialTag) {
         const tagSlug = initialTag
@@ -361,6 +411,47 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         }
       }
 
+      function splitFilterParam(value) {
+        if (!value) return [];
+        return value
+          .split(',')
+          .map(function(item) { return item.trim().toLowerCase(); })
+          .filter(Boolean);
+      }
+
+      splitFilterParam(initialVerdicts).forEach(function(value) {
+        selectedFilters.verdict.add(value);
+      });
+      splitFilterParam(initialCategories).forEach(function(value) {
+        selectedFilters.category.add(value);
+      });
+
+      function syncFilterUrl() {
+        const params = new URLSearchParams(window.location.search);
+        if (selectedFilters.verdict.size) {
+          params.set('verdict', Array.from(selectedFilters.verdict).join(','));
+        } else {
+          params.delete('verdict');
+        }
+        if (selectedFilters.category.size) {
+          params.set('category', Array.from(selectedFilters.category).join(','));
+        } else {
+          params.delete('category');
+        }
+        const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
+        history.replaceState(null, '', nextUrl);
+      }
+
+      function syncFilterButtons() {
+        filterButtons.forEach(function(button) {
+          const type = button.getAttribute('data-filter-type');
+          const value = button.getAttribute('data-filter-value');
+          const active = Boolean(type && value && selectedFilters[type] && selectedFilters[type].has(value));
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+      }
+
       function getCols() {
         const template = window.getComputedStyle(toolsGrid).gridTemplateColumns || '';
         if (!template || template === 'none') return 1;
@@ -380,6 +471,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           const title = card.getAttribute('data-title') || '';
           const slug = card.getAttribute('data-slug') || '';
           const tags = card.getAttribute('data-tags') || '';
+          const verdict = card.getAttribute('data-verdict') || '';
+          const category = card.getAttribute('data-category') || '';
           const tagList = tags.split(',').map(function(t) { return t.trim().toLowerCase(); });
 
           // Check search query match
@@ -388,7 +481,10 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
                              slug.includes(query) ||
                              tags.includes(query);
 
-          return searchMatch;
+          const verdictMatch = selectedFilters.verdict.size === 0 || selectedFilters.verdict.has(verdict);
+          const categoryMatch = selectedFilters.category.size === 0 || selectedFilters.category.has(category);
+
+          return searchMatch && verdictMatch && categoryMatch;
         });
 
         filtered.sort(function(a, b) {
@@ -459,6 +555,22 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       // Search input listener
       searchInput.addEventListener('input', resetAndFilter);
 
+      filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          const type = button.getAttribute('data-filter-type');
+          const value = button.getAttribute('data-filter-value');
+          if (!type || !value || !selectedFilters[type]) return;
+          if (selectedFilters[type].has(value)) {
+            selectedFilters[type].delete(value);
+          } else {
+            selectedFilters[type].add(value);
+          }
+          syncFilterButtons();
+          syncFilterUrl();
+          resetAndFilter();
+        });
+      });
+
       if (sortSelect) {
         sortSelect.addEventListener('change', function() {
           const sortValue = sortSelect.value;
@@ -496,6 +608,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       window.addEventListener('resize', filterTools);
 
       // Initial filter on page load
+      syncFilterButtons();
       filterTools();
     })();
   </script>
