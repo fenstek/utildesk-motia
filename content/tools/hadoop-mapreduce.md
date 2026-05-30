@@ -78,7 +78,7 @@ Im Katalog ist Hadoop MapReduce mit dem Preismodell **Open Source** geführt. F�
 
 ## Redaktionelle Einschätzung
 
-Hadoop MapReduce ist dann eine gute Wahl, wenn klassisches verteiltes Batch-Processing für große Datenmengen im Hadoop-Ökosystem tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Hadoop MapReduce gehört in einen reproduzierbaren Entwicklungsablauf mit Tests, Versionierung und klaren Grenzen. Der Nutzen zeigt sich daran, ob Änderungen leichter prüfbar werden und nicht nur schneller entstehen.
 
 ## FAQ
 

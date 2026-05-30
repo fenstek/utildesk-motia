@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Events wirklich entscheidu
 
 Kibana eignet sich vor allem dann, wenn SRE-, Security- und Produktteams dieselben Datenbilder nutzen. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Events wirklich entscheidungsrelevant sind und wer Dashboards pflegt.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: ohne saubere Index-Modelle schnell zu überladenen Dashboards führt. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn der Pilot zeigt, dass fehlende Index-Modelle nur überladene Dashboards erzeugen. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
 
 ## Redaktionelle Einschätzung
 
@@ -59,7 +59,7 @@ Kibana überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - Flexible Benutzerverwaltung und Sicherheitsoptionen.
 - Vielfältige Automatisierungs- und Alerting-Funktionen.
 - Skalierbar für kleine bis sehr große Datenmengen.
-- Besonders wertvoll: wenn SRE-, Security- und Produktteams dieselben Datenbilder nutzen.
+- Stärkerer Nutzen: SRE-, Security- und Produktteams können auf dieselben Datenbilder schauen.
 
 ### Nachteile
 
@@ -68,7 +68,7 @@ Kibana überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - Performance kann bei sehr großen Datenmengen ohne entsprechende Infrastruktur beeinträchtigt werden.
 - Benutzeroberfläche und Bedienkonzept erfordern Einarbeitungszeit.
 - Abhängigkeit von Elasticsearch als Backend.
-- Achtungspunkt: ohne saubere Index-Modelle schnell zu überladenen Dashboards führt.
+- Grenze: Ohne saubere Index-Modelle entstehen schnell überladene Dashboards.
 
 ## Preise & Kosten
 

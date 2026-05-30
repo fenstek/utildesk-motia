@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Felder, Sequenzen und Deal
 
 HubSpot Sales eignet sich für Teams, die HubSpot bereits als Vertriebszentrale nutzen. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Felder, Sequenzen und Deal-Phasen wirklich gepflegt werden.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: ohne Datenhygiene schnell zu einem zweiten Postfach mit CRM-Etikett wird. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist HubSpot Sales, wenn diese Grenze schon im Pilot sichtbar wird: ohne Datenhygiene schnell zu einem zweiten Postfach mit CRM-Etikett wird. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
 
 ## Redaktionelle Einschätzung
 
@@ -56,14 +56,14 @@ HubSpot Sales überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden
 - Starke CRM-Funktionalität integriert in die Vertriebsplattform.
 - Skalierbar und flexibel anpassbar an unterschiedliche Unternehmensgrößen.
 - KI-gestützte Features zur Unterstützung von Vertriebsentscheidungen.
-- Besonders wertvoll: für Teams, die HubSpot bereits als Vertriebszentrale nutzen.
+- Stark für Teams, die HubSpot bereits als Vertriebszentrale nutzen und Deals konsequent pflegen.
 
 ### Nachteile
 - Kosten können je nach Funktionsumfang und Nutzerzahl schnell steigen.
 - Einige erweiterte Funktionen sind nur in höheren Preismodellen verfügbar.
 - Lernkurve bei der Nutzung aller Features für Neueinsteiger.
 - Integration mit externen Tools kann teilweise komplex sein.
-- Achtungspunkt: ohne Datenhygiene schnell zu einem zweiten Postfach mit CRM-Etikett wird.
+- Ohne Datenhygiene, Zuständigkeit und regelmäßige Auswertung wird HubSpot Sales schnell zu zusätzlicher Pflegearbeit.
 
 ## Preise & Kosten
 

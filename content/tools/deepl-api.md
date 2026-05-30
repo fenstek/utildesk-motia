@@ -79,7 +79,7 @@ Für Teams in Europa ist bei DeepL API außerdem relevant, ob Verträge zur Auft
 
 ## Redaktionelle Einschätzung
 
-DeepL API wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+DeepL API überzeugt erst im Test mit echten Textsorten, Glossaren und Freigaben. Entscheidend ist, ob Terminologie, Datenschutz und Nachbearbeitung zum vorhandenen Sprachprozess passen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob DeepL API wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

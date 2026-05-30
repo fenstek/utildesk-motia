@@ -106,5 +106,3 @@ Aufgrund der Kosten und Komplexität ist der WSE eher für große Unternehmen un
 
 **8. Wo kann man den Cerebras Wafer-Scale Engine kaufen oder testen?**  
 Der Vertrieb erfolgt meist über individuelle Angebote und ausgewählte Partner. Interessenten sollten direkt mit Cerebras oder autorisierten Händlern Kontakt aufnehmen, um mehr Informationen zu erhalten.
-
----

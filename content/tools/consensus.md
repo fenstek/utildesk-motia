@@ -1,9 +1,9 @@
 ---
 slug: consensus
 title: Consensus
-category: AI Image
+category: AI Research
 price_model: Freemium
-tags: ["design"]
+tags: ["ai", "research", "science"]
 official_url: "https://consensus.app/"
 created_at: 2026-02-14
 popularity: 95
@@ -14,9 +14,9 @@ mentionedIn: ["perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-s
 ---
 # Consensus
 
-Consensus ist kein Zauberknopf, sondern ein Werkzeug mit einem ziemlich klaren Platz: KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten. Wenn man es so betrachtet, wird schnell sichtbar, wo es Arbeit wirklich verkürzt und wo nur neue Oberfläche entsteht.
+Consensus ist ein Recherchewerkzeug für wissenschaftliche Evidenz. Es hilft dabei, Studienhinweise schneller zu finden und erste Antworten auf Forschungsfragen zu strukturieren. Der Nutzen liegt nicht darin, eine fertige wissenschaftliche Bewertung zu ersetzen, sondern schneller zu sehen, welche Quellen relevant sein könnten und wo noch Prüfung fehlt.
 
-Consensus sollte dort getestet werden, wo heute Reibung entsteht: Übergaben, Varianten, Korrekturen, Suche oder Produktion. Wenn diese Stellen sauberer werden, passt das Werkzeug in den Ablauf.
+Am stärksten ist Consensus, wenn eine konkrete Frage, ein Fachgebiet und ein klarer Prüfprozess vorliegen. Dann wird das Tool zur Vorstufe für Literaturarbeit statt zur Abkürzung um die Originalquellen herum.
 
 ## Der praktische Kern
 
@@ -52,7 +52,7 @@ Zusätzlich ist bei Consensus der Kontext wichtig: Manche Teams nutzen solche We
 
 ## Workflow-Fit
 
-Consensus passt am besten in Workflows, in denen KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+Consensus passt am besten in Workflows, in denen wissenschaftliche Fragen regelmäßig vorsortiert werden müssen. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
 
 Für Consensus arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
@@ -74,13 +74,13 @@ Im Katalog ist Consensus mit dem Preismodell **Freemium** geführt. Für eine be
 
 - [Elicit](/tools/elicit/): stärker, wenn Forschung und Analyse gefragt ist.
 - [Scholarcy](/tools/scholarcy/): passender, wenn der Schwerpunkt auf wissenschaftliche Texte zusammenfassen, Kernaussagen extrahieren und Papers schneller vorsortieren liegt.
-- [Research Rabbit](/tools/research-rabbit/): guter Vergleich für Teams, die Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen z brauchen.
+- [Research Rabbit](/tools/research-rabbit/): guter Vergleich für Teams, die wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen erkunden.
 - [Perplexity](/tools/perplexity/): prüfen, wenn schnelle Recherche mit Quellenhinweisen und Web-Kontext wichtiger ist.
-- [NotebookLM](/tools/notebooklm/): naheliegend, falls Recherche- und Notizassistent, der Antworten aus hochgeladenen Quellen und Dokumentensammlungen ableitet im Vordergrund steht.
+- [NotebookLM](/tools/notebooklm/): naheliegend, wenn Antworten aus eigenen hochgeladenen Quellen und Dokumentensammlungen im Vordergrund stehen.
 
 ## Redaktionelle Einschätzung
 
-Consensus ist dann eine gute Wahl, wenn KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Consensus passt, wenn KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten regelmäßig Teil des Arbeitsalltags ist und nicht nur einmalig ausprobiert wird. Quellen, Auswahlkriterien und fachliche Freigabe sollten dabei sichtbar bleiben.
 
 ## FAQ
 
@@ -90,12 +90,12 @@ Consensus ist für Einsteiger geeignet, wenn Ergebnisse nicht ungeprüft als Bel
 
 **Wann lohnt sich Consensus besonders?**
 
-Consensus lohnt sich besonders, wenn KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Consensus lohnt sich besonders, wenn wissenschaftliche Evidenz regelmäßig recherchiert und bisher manuell, verstreut oder schwer nachvollziehbar vorsortiert wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Vor dem Einsatz prüfen: Datenquelle, Aktualität, Export, Reproduzierbarkeit, Rechte und fachliche Freigabe. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Consensus sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Vor dem Einsatz prüfen: Welche Fragen beantwortbar sind, wie transparent die Quellenbasis ist, ob Aussagen mit Originalstudien abgeglichen werden und wer die Evidenz fachlich bewertet.
 
 **Was ist der häufigste Fehler?**
 
-Der häufigste Fehler ist, Recherchekomfort mit wissenschaftlicher Belastbarkeit zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Consensus sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Der häufigste Fehler ist, eine kurze Evidenzantwort wie ein fertiges Urteil zu lesen. Consensus kann Recherche beschleunigen, ersetzt aber keine Bewertung von Studiendesign, Kontext und Gegenbelegen.

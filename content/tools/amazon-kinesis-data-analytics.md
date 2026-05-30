@@ -83,7 +83,7 @@ Für Teams in Europa ist bei Amazon Kinesis Data Analytics außerdem relevant, o
 
 ## Redaktionelle Einschätzung
 
-Amazon Kinesis Data Analytics wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Amazon Kinesis Data Analytics sollte mit realen Last-, Daten- und Betriebsbedingungen getestet werden. Erst Kosten, Fehlerszenarien und Übergaben zeigen, ob das Tool wirklich in die Architektur passt.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Amazon Kinesis Data Analytics wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

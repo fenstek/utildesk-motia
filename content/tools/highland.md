@@ -56,14 +56,14 @@ Highland gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozes
 - Unterstützt sowohl Einzelpersonen als auch Teams
 - Ermöglicht Integration in bestehende Systeme und Tools
 - Benutzerfreundliche Oberfläche, auch für Nicht-Techniker geeignet
-- Besonders wertvoll: für Autorinnen, Autoren und kleine Kreativteams mit Fokus auf Text.
+- Nützlich, wenn Szenen, Dialoge und Fassungen ohne Layout-Reibung strukturiert werden sollen.
 
 ### Nachteile
 - Je nach Anbieter/Plan können bestimmte Funktionen eingeschränkt sein
 - Einarbeitung in komplexere Automatisierungen kann Zeit erfordern
 - Abhängigkeit von der Stabilität der integrierten Systeme und Plattformen
 - Datenschutz und Datensicherheit sollten individuell geprüft werden
-- Achtungspunkt: für komplexe Produktionsplanung nicht den gesamten Studio-Workflow ersetzt.
+- Für komplexe Produktionsplanung ersetzt Highland keinen vollständigen Studio-Workflow.
 
 ## Preise & Kosten
 

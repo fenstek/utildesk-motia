@@ -87,7 +87,7 @@ Für Teams in Europa ist bei Amazon Redshift außerdem relevant, ob Verträge zu
 
 ## Redaktionelle Einschätzung
 
-Amazon Redshift wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Amazon Redshift gehört in einen klar abgegrenzten Daten- oder Plattformprozess. Vor dem Rollout sollten Eingangsdaten, Verantwortliche, Monitoring und Folgesysteme feststehen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Amazon Redshift wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

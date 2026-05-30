@@ -77,7 +77,7 @@ Für Teams in Europa ist bei AI Explainability 360 außerdem relevant, ob Vertr�
 
 ## Redaktionelle Einschätzung
 
-AI Explainability 360 wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+AI Explainability 360 ist vor allem eine Betriebsentscheidung. Sinnvoll wird der Einsatz, wenn Datenflüsse, Rechte, Observability und Exit-Wege vorab beschrieben sind.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob AI Explainability 360 wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

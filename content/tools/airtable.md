@@ -1,7 +1,7 @@
 ---
 slug: airtable
 title: Airtable
-category: "AI Infrastructure"
+category: "Automatisierung"
 price_model: Freemium
 tags: ["data", "automation"]
 official_url: "https://airtable.com"
@@ -31,13 +31,9 @@ Vor einer breiteren Einführung von Airtable lohnt sich ein kleiner Realitätsch
 
 ## Redaktionelle Einschätzung
 
-Airtable sollte an der Prozessqualität gemessen werden. Ein guter Einsatz macht Übergaben eindeutiger, Entscheidungen nachvollziehbarer und Fehler früher sichtbar.
+Airtable ist stark, wenn ein Team mehr braucht als eine Tabelle, aber noch kein schweres Fachsystem einführen will. Die kritische Frage lautet nicht, wie schnell eine Base gebaut ist, sondern ob Datenmodell, Rollen, Automationen und Freigaben nach einigen Wochen noch verständlich bleiben.
 
-Als Prüfstück für Airtable eignet sich einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung, Owner und Abnahme. Wenn Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung danach nicht plausibel besser werden, ist der Nutzen noch nicht sauber belegt.
-
-- **Prüfpunkt für Airtable:** Vor dem Rollout sollten Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung mit einem kleinen Vorher-nachher-Vergleich belegt werden.
-- **Guter Start für Airtable:** Eine begrenzte Teststrecke mit realen Eingaben zeigt schneller, ob das Werkzeug entlastet oder nur neue Pflege erzeugt.
-- **Risiko bei Airtable:** Kritisch wird es, wenn Datenquellen, Begriffe, Zugriffe und Verantwortlichkeiten unklar bleiben; dann hilft auch eine gute Oberfläche nur begrenzt.
+Als Prüfstück eignet sich ein realer Prozess mit begrenztem Datensatz, klarer Quelle, verantwortlicher Person und Abnahme. Wenn Datenqualität, Bearbeitungszeit und Nachvollziehbarkeit danach nicht sichtbar besser werden, ist Airtable wahrscheinlich nur eine schönere Oberfläche für denselben Pflegeaufwand.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/airtable-editorial.webp" alt="Illustration zu Airtable: Tabellenfelder und Datenansichten als gepflegter Datengarten" loading="lazy" decoding="async" />
@@ -53,10 +49,6 @@ Als Prüfstück für Airtable eignet sich einem begrenzten Datensatz mit klarer 
 - **Integration mit Drittanbietern:** Nahtlose Verknüpfungen mit Tools wie Slack, Google Drive, Zapier und vielen weiteren.
 - **Mobile und Desktop-Apps:** Zugriff und Bearbeitung von Daten jederzeit und überall.
 - **Vorlagenbibliothek:** Zahlreiche vorgefertigte Templates für verschiedene Branchen und Anwendungsfälle.
-
-- **Praxislauf mit Airtable:** Das Tool sollte mit einem begrenzten Datensatz mit klarer Quelle, definierter Fragestellung, Owner und Abnahme getestet werden, damit Stärken und Grenzen nicht nur theoretisch sichtbar sind.
-- **Qualitätssicherung in Airtable:** Das Team braucht eine einfache Methode, um Datenqualität, Laufzeit, Wartbarkeit, Ergebnisstabilität und Akzeptanz der Auswertung nach dem Einsatz zu prüfen.
-- **Übergabe mit Airtable:** Ergebnisse, offene Punkte und Entscheidungen sollten so dokumentiert werden, dass andere Rollen später weiterarbeiten können.
 
 ## Vorteile und Nachteile
 

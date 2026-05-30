@@ -78,7 +78,7 @@ Im Katalog ist Boords mit dem Preismodell **Freemium** geführt. Für eine belas
 
 ## Redaktionelle Einschätzung
 
-Boords ist dann eine gute Wahl, wenn Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Boords passt, wenn Storyboard- und Preproduction-Workflows für Videos, Animationen und Kundenvorstellungen regelmäßig Teil des Arbeitsalltags ist und nicht nur einmalig ausprobiert wird. Ein guter Pilot arbeitet mit realem Material, sichtbaren Grenzen und einer Person, die das Ergebnis fachlich abnimmt.
 
 ## FAQ
 

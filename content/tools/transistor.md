@@ -77,7 +77,7 @@ Im Katalog ist Transistor mit dem Preismodell **Abonnement** geführt. Für eine
 
 ## Redaktionelle Einschätzung
 
-Transistor ist dann eine gute Wahl, wenn Podcast-Hosting, Distribution und Analyse für Shows, die regelmäßig erscheinen sollen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Transistor passt zu Podcasts, die regelmäßig erscheinen und mehr brauchen als einen Datei-Upload: Showverwaltung, Distribution, Analytics und einfache Teamabläufe. Vor dem Wechsel sollten Feed, Episodenstruktur, Tracking und Rechte an bestehenden Inhalten geprüft werden.
 
 ## FAQ
 

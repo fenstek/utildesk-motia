@@ -99,5 +99,3 @@ Captum selbst bietet keine eigene GUI, lässt sich aber mit Visualisierungstools
 
 **8. Wie aktuell ist Captum?**  
 Captum wird aktiv weiterentwickelt und gepflegt, wodurch es regelmäßig neue Funktionen und Verbesserungen erhält.
-
----

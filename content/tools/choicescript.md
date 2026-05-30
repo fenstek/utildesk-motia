@@ -77,7 +77,7 @@ Für Teams in Europa ist bei ChoiceScript außerdem relevant, ob Verträge zur A
 
 ## Redaktionelle Einschätzung
 
-ChoiceScript wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+ChoiceScript sollte an einem echten Textprozess geprüft werden: Briefing, Varianten, Faktencheck, Freigabe und Veröffentlichung. Ohne diese Schritte bleibt Geschwindigkeit nur ein Teil der Bewertung.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob ChoiceScript wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

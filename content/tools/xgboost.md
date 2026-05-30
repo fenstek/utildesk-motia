@@ -74,7 +74,7 @@ Im Katalog ist XGBoost mit dem Preismodell **Open Source** geführt. Für eine b
 
 ## Redaktionelle Einschätzung
 
-XGBoost ist dann eine gute Wahl, wenn Machine-Learning-Bibliothek für Gradient Boosting, tabellarische Daten und robuste Vorhersagemodelle tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+XGBoost ist stark bei tabellarischen Daten, wenn Feature Engineering, Validierung und Modellvergleich sauber gemacht werden. Der relevante Test ist ein echtes Dataset mit Baseline, Metrik und Fehleranalyse; ohne diese Disziplin wirkt das Modell schnell besser, als es im Betrieb ist.
 
 ## FAQ
 

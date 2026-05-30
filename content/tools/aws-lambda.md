@@ -92,5 +92,3 @@ AWS bietet Tools wie die Lambda-Konsole und AWS SAM CLI, um Funktionen lokal und
 
 **8. Welche Sicherheitsfunktionen bietet AWS Lambda?**  
 Lambda nutzt IAM-Rollen zur Zugriffskontrolle, unterstützt Verschlüsselung und kann in private VPCs integriert werden.
-
----

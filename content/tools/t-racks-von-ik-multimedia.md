@@ -21,7 +21,7 @@ Mastering-Tools wirken schnell wie Zauberkaesten, aber sie ersetzen kein Hören.
 
 ## Für wen ist T-RackS von IK Multimedia geeignet?
 
-Geeignet ist T-RackS für Homestudios, Produzenten, Mixing Engineers, Podcaster mit hoeherem Klanganspruch und Musiker, die ihre Releases selbst vorbereiten. Für sehr kritische kommerzielle Releases bleibt ein erfahrener Mastering Engineer oft die bessere Investition.
+Geeignet ist T-RackS für Homestudios, Produzenten, Mixing Engineers, Podcaster mit höherem Klanganspruch und Musiker, die ihre Releases selbst vorbereiten. Für sehr kritische kommerzielle Releases bleibt ein erfahrener Mastering Engineer oft die bessere Investition.
 
 ## Typische Einsatzszenarien
 

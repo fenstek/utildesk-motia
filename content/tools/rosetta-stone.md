@@ -84,7 +84,7 @@ Für Teams in Europa ist bei Rosetta Stone außerdem relevant, ob Verträge zur 
 
 ## Redaktionelle Einschätzung
 
-Rosetta Stone wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Rosetta Stone ist sinnvoll, wenn es einen konkreten wiederkehrenden Arbeitsschritt ordnet. Entscheidend ist, ob Aufgaben, Zuständigkeiten und Ergebnisse danach leichter nachvollziehbar sind.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Rosetta Stone wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

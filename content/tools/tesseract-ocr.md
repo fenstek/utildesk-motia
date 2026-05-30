@@ -40,25 +40,25 @@ Bei Tesseract OCR sollte der Pilot mit echten Dokumenten starten. Entscheidend s
 
 ## Hauptfunktionen
 
-- OCR beziehungsweise Dokumentenerkennung für digitale und gescannte Unterlagen.
-- Extraktion wiederkehrender Felder wie Rechnungsnummer, Datum, Betrag, Lieferant oder Tabellenpositionen.
-- Übergabe der Ergebnisse per API, Export, Webhook oder Workflow-Schritt.
-- Möglichkeiten zur Validierung, Nachprüfung oder Weiterverarbeitung abhängig vom gewählten Setup.
-- Einbindung in Automatisierungsketten, etwa mit n8n, Make, Zapier, Power Automate oder eigenen Services.
+- Lokale Texterkennung für digitale und gescannte Unterlagen.
+- Sprachauswahl und Trainingsdaten für viele OCR-Szenarien.
+- Ausgabe als Rohtext, durchsuchbare Textschicht oder Basis für eigene Extraktionslogik.
+- Kombinierbar mit Vorverarbeitung wie Entzerren, Zuschneiden, Binarisierung oder OCRmyPDF.
+- Einbindung in eigene Skripte, Batch-Jobs, Dokumentenpipelines oder interne Services.
 
 ## Workflow in der Praxis
 
 Ein belastbarer Tesseract OCR-Workflow beginnt beim Eingang der Datei und endet erst, wenn geprüfte Daten exportiert sind. Dazwischen liegen Vorverarbeitung, OCR, Feldextraktion, Plausibilitätsprüfung und Ausnahmebehandlung. Bei Rechnungen sollten Lieferant, Rechnungsdatum, Steuerbetrag, Gesamtbetrag, Währung und Zahlungsziel nicht blind übernommen, sondern mit klaren Regeln validiert werden.
 
-Bei Tesseract OCR sollten Entwickler früh prüfen, wie stabil API, Antwortschema, Fehlercodes, Rate Limits und Batch-Verarbeitung sind. Logging, Wiederholbarkeit und nachvollziehbare Fehlerzustände sind wichtig, damit fehlgeschlagene Dokumente nicht still verloren gehen.
+Bei Tesseract OCR sollten Entwickler früh prüfen, wie stabil Vorverarbeitung, Sprachdaten, Laufzeit, Dateiformate und Batch-Verarbeitung sind. Logging, Wiederholbarkeit und nachvollziehbare Fehlerzustände sind wichtig, damit fehlgeschlagene Dokumente nicht still verloren gehen.
 
 ## Worauf vor der Auswahl achten?
 
 - Unterstützt das Werkzeug die relevanten Dokumenttypen und Sprachen im eigenen Material?
-- Gibt es eine klare Exportform: JSON, CSV, Webhook, API oder direkte Integration?
+- Gibt es eine klare Exportform: Rohtext, durchsuchbares PDF, eigene JSON-Struktur oder Übergabe an ein Folgesystem?
 - Wie werden niedrige Confidence-Werte, Dubletten und unvollständige Felder behandelt?
-- Welche Datenschutzdokumente, Datenstandorte, Aufbewahrungsfristen und Löschoptionen gibt es?
-- Wie kalkulierbar sind Kosten bei vielen Seiten, Anhängen oder API-Aufrufen?
+- Welche Anforderungen gelten für lokale Speicherung, Zugriff, Löschung und Protokollierung?
+- Wie kalkulierbar sind Laufzeit und Infrastrukturkosten bei vielen Seiten, Anhängen oder großen Batch-Jobs?
 
 ## Vorteile und Grenzen
 
@@ -91,7 +91,7 @@ Tesseract OCR passt gut zu technischen Teams, die Extraktion, Validierung und Na
 
 ## Preise & Kosten
 
-Preismodell: **Open Source**. Für Tesseract OCR zählt im Vergleich nicht nur der Einstiegspreis. Relevant sind Seitenvolumen, Dokumenttypen, API-Aufrufe, Nutzerplätze, Review-Funktionen, Speicherfristen sowie Aufwand für Einrichtung, Betrieb und Support.
+Preismodell: **Open Source**. Für Tesseract OCR zählt im Vergleich nicht nur der Lizenzpreis. Relevant sind Seitenvolumen, Dokumenttypen, Vorverarbeitung, Infrastruktur, Nachkorrektur, Monitoring sowie Aufwand für Einrichtung, Betrieb und Support.
 
 ## Alternativen im Utildesk-Kontext
 
@@ -114,4 +114,4 @@ Für Rechnungsprozesse ist Tesseract OCR relevant, aber die Qualität hängt von
 Bei Tesseract OCR hängt das vom Zielbild ab: einfache Tests sind schneller möglich, ein stabiler Produktivprozess braucht aber Verantwortliche für Integration, Datenqualität, Monitoring und Fehlerbehandlung.
 
 **Worauf sollte man beim Datenschutz achten?**  
-Vor dem Einsatz von Tesseract OCR sollten AVV/DPA, Datenstandort, Aufbewahrungsfristen, Subprozessoren, Löschoptionen und eine mögliche Nutzung von Kundendaten für Training geprüft werden.
+Bei lokaler Nutzung liegen die wichtigsten Fragen bei Speicherort, Zugriffsrechten, Protokollen, Löschfristen und Weitergabe an Folgesysteme. Sobald Cloud-Speicher oder externe Dienste ergänzt werden, müssen deren Datenschutzbedingungen separat geprüft werden.

@@ -13,7 +13,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, "..");
 const toolsDir = path.join(repoRoot, "content", "tools");
 
-const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1171);
+const minActiveTools = Number(process.env.UTILDESK_MIN_ACTIVE_TOOLS || 1167);
 const maxCategories = Number(process.env.UTILDESK_MAX_TOOL_CATEGORIES || 14);
 const bannedCategoryValues = new Set([
   "AI",

@@ -68,9 +68,7 @@ Für Teams in Europa ist bei Waves Abbey Road TG Mastering Chain außerdem relev
 
 ## Redaktionelle Einschätzung
 
-Waves Abbey Road TG Mastering Chain wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Waves Abbey Road TG Mastering Chain wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Waves Abbey Road TG Mastering Chain ist eher ein klangprägendes Mastering-Werkzeug als eine neutrale Reparaturhilfe. Sinnvoll ist ein Vergleich mit eigenen Mixen, Referenztracks und Pegelzielen; erst dann zeigt sich, ob der Abbey-Road-Charakter zum Material passt.
 
 ## Preise & Kosten
 

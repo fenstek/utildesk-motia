@@ -1,14 +1,13 @@
 ---
 slug: wordreference
 title: WordReference
-category: "AI Infrastructure"
+category: Produktivität
 price_model: Freemium
 tags: [translation, language, reference, productivity]
 official_url: "https://www2.wordreference.com/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-09"
-lastReviewed: "2026-05-30"
 ---
 # WordReference
 

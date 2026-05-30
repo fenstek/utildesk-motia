@@ -78,7 +78,7 @@ Im Katalog ist Lightworks mit dem Preismodell **Je nach Plan** geführt. Für ei
 
 ## Redaktionelle Einschätzung
 
-Lightworks ist dann eine gute Wahl, wenn Videoschnitt und Postproduktion für Filmemacher, Cutter und ambitionierte Creator tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Lightworks passt, wenn Videoschnitt und Postproduktion regelmäßig anfallen und der Fokus auf sauberem Schnitt, Ton, Exportprofilen und nachvollziehbaren Freigaben liegt. Ein Testprojekt sollte echtes Ausgangsmaterial nutzen, nicht nur Beispielclips.
 
 ## FAQ
 

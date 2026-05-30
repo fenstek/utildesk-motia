@@ -77,7 +77,7 @@ Im Katalog ist Vectr mit dem Preismodell **Freemium** geführt. Für eine belast
 
 ## Redaktionelle Einschätzung
 
-Vectr ist dann eine gute Wahl, wenn einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Vectr ist sinnvoll, wenn einfache Vektorgrafiken, Icons, Mockups oder schnelle Webgrafiken ohne schwere Design-Suite entstehen sollen. Für professionelle Brand-Systeme, Druckdaten oder komplexe Illustrationen bleiben spezialisierte Tools die bessere Wahl.
 
 ## FAQ
 

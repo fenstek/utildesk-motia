@@ -79,9 +79,7 @@ Für Teams in Europa ist bei TapTapSee außerdem relevant, ob Verträge zur Auft
 
 ## Redaktionelle Einschätzung
 
-TapTapSee wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob TapTapSee wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+TapTapSee sollte als Alltagshilfe für konkrete Erkennungssituationen verstanden werden, nicht als Ersatz für Orientierung, Assistenz oder Barrierefreiheitskonzept. Sinnvoll ist ein Test mit realen Motiven aus dem eigenen Umfeld: Verpackungen, Kleidung, Haushaltsgegenstände und wechselnde Lichtverhältnisse zeigen, wo die App hilft und wo menschliche Prüfung nötig bleibt.
 
 ## Preise & Kosten
 

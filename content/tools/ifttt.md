@@ -58,7 +58,7 @@ Bei IFTTT würde ich früh zwischen Demo-Eindruck und Betriebsrealität untersch
 - Verfügbar als Webanwendung und mobile App.
 - Kostenlose Basisversion mit umfangreichen Funktionen.
 - Regelmäßige Updates und Erweiterungen des Dienstes.
-- Besonders wertvoll: für einfache Benachrichtigungen, Smart-Home- und Produktivitätsroutinen.
+- Stärkerer Nutzen: einfache Benachrichtigungen, Smart-Home-Schritte und persönliche Routinen lassen sich ohne großes Setup verbinden.
 
 ### Nachteile
 
@@ -67,7 +67,7 @@ Bei IFTTT würde ich früh zwischen Demo-Eindruck und Betriebsrealität untersch
 - Abhängigkeit von Drittanbietern und deren API-Verfügbarkeit.
 - Gelegentliche Verzögerungen bei der Ausführung von Automatisierungen.
 - Datenschutzbedenken bei der Vernetzung vieler Dienste.
-- Achtungspunkt: bei geschäftskritischen Abläufen zu wenig Kontrolle und Observability bietet.
+- Grenze: Für geschäftskritische Abläufe bietet IFTTT oft zu wenig Kontrolle, Logging und Fehleranalyse.
 
 ## Preise & Kosten
 

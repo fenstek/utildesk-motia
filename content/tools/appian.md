@@ -82,7 +82,7 @@ Für Teams in Europa ist bei Appian außerdem relevant, ob Verträge zur Auftrag
 
 ## Redaktionelle Einschätzung
 
-Appian wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Appian braucht einen klaren Prozessanker: Auslöser, Verantwortliche, Fehlerweg und Zielsystem sollten vor dem ersten größeren Rollout feststehen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Appian wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

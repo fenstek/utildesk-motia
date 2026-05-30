@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Dokumente aktuell sind und
 
 AnythingLLM eignet sich für Teams, die RAG-Workflows ohne reines SaaS-Modell testen wollen. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Dokumente aktuell sind und wer Antworten fachlich validiert.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: bei ungeprüften Datenquellen überzeugende, aber falsche Antworten liefern kann. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn im Pilot auffällt, dass ungeprüfte Datenquellen überzeugende, aber falsche Antworten erzeugen. Dann sollte der Ablauf zuerst enger gefasst werden.
 
 ## Redaktionelle Einschätzung
 
@@ -55,7 +55,7 @@ AnythingLLM überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden s
 - Leistungsstarkes Modell mit guter Qualität bei Textgenerierung
 - API-basierte Integration erleichtert die Einbindung in bestehende Systeme
 - Geeignet für viele Branchen und Anwendungsbereiche
-- Besonders wertvoll: für Teams, die RAG-Workflows ohne reines SaaS-Modell testen wollen.
+- Nützlich bei: für Teams, die RAG-Workflows ohne reines SaaS-Modell testen wollen.
 
 ### Nachteile
 
@@ -63,7 +63,7 @@ AnythingLLM überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden s
 - Für Einsteiger ist eine Einarbeitung in die technische Nutzung erforderlich
 - Je nach Plan können Limitierungen bei der Anzahl der Anfragen bestehen
 - Datenschutz und Sicherheit sind abhängig vom jeweiligen Anbieter
-- Achtungspunkt: bei ungeprüften Datenquellen überzeugende, aber falsche Antworten liefern kann.
+- Risiko: Bei ungeprüften Datenquellen überzeugende, aber falsche Antworten liefern kann.
 
 ## Preise & Kosten
 

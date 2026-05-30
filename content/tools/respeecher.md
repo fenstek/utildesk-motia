@@ -57,7 +57,7 @@ Bei Respeecher würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - Einfache Bedienung dank intuitiver Benutzeroberfläche
 - Flexible Preisgestaltung mit kostenlosem Einstieg
 - API für Entwickler und Unternehmen verfügbar
-- Besonders wertvoll: für professionelle Produktionen mit sauberem Rechte- und Review-Prozess.
+- Gut geeignet: für professionelle Produktionen mit sauberem Rechte- und Review-Prozess.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Bei Respeecher würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - Qualität hängt von der Menge und Qualität der Trainingsdaten ab
 - Rechtliche und ethische Fragen im Umgang mit Stimmklonen müssen beachtet werden
 - Internetverbindung für Cloudnutzung erforderlich
-- Achtungspunkt: rechtlich und ethisch nur mit klaren Einwilligungen tragfähig ist.
+- Vorher klären: rechtlich und ethisch nur mit klaren Einwilligungen tragfähig ist.
 
 ## Preise & Kosten
 

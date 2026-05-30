@@ -80,7 +80,7 @@ Für Teams in Europa ist bei Final Draft außerdem relevant, ob Verträge zur Au
 
 ## Redaktionelle Einschätzung
 
-Final Draft wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Final Draft sollte an einem konkreten Arbeitsfall geprüft werden, inklusive Eingaben, Verantwortung, Ergebnisqualität und laufender Pflege. So wird sichtbar, ob das Tool wirklich in den Alltag passt.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Final Draft wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

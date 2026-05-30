@@ -80,8 +80,6 @@ Für Teams in Europa ist bei IBM Watson Video Analytics außerdem relevant, ob V
 
 ## Redaktionelle Einschätzung
 
-IBM Watson Video Analytics wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob IBM Watson Video Analytics wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 
 ## Preise & Kosten

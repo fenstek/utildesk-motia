@@ -1,24 +1,24 @@
 ---
 slug: krita
 title: Krita
-category: AI Image
+category: Design
 price_model: Open Source
 tags: [digital-painting, illustration, creative-tools]
 official_url: "https://krita.org/en/download/krita-desktop"
 popularity: 36
-description: Krita ist ein Design- und Kreativwerkzeug für Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
+description: Krita ist eine Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
 tier: C
 generated_at: 2026-05-27
 ---
 # Krita
 
-In der Praxis entscheidet bei Krita nicht die Featureliste allein. Entscheidend ist, ob das Tool eine kleine, aber nervige Lücke im Workflow schließt: Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
+Krita ist eine freie Mal- und Illustrationssoftware mit Fokus auf Pinsel, Ebenen, digitale Skizzen, Concept Art und Comics. Wer eine offene Alternative für Zeichen- und Painting-Workflows sucht, sollte Krita eher mit Malprogrammen als mit klassischen Layout-Tools vergleichen.
 
 Krita wirkt am überzeugendsten, wenn man es mit einer nüchternen Checkliste prüft: Was spart Zeit, was braucht Kontrolle, und welche Aufgabe wäre ohne das Tool deutlich mühsamer?
 
 ## Der praktische Kern
 
-Krita muss in einem echten Beispiel zeigen, ob Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen damit klarer, schneller oder verlässlicher wird. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das fachlich geprüft und später nachvollzogen werden kann.
+Krita muss in einem echten Beispiel zeigen, ob Skizzen, Illustrationen oder Comicseiten damit klarer, schneller oder verlässlicher entstehen. Entscheidend ist nicht die Demo, sondern ein Ergebnis, das später noch sauber nachbearbeitet werden kann.
 
 Besonders passend ist Krita für Illustratoren, Lernende, freie Künstler und Teams mit Open-Source-Anspruch. Der Nutzen entsteht vor allem dann, wenn das Werkzeug eine klar benannte Aufgabe übernimmt und nicht nur als weiteres Fenster neben dem eigentlichen Prozess läuft.
 
@@ -50,7 +50,7 @@ Zusätzlich ist bei Krita der Kontext wichtig: Manche Teams nutzen solche Werkze
 
 ## Workflow-Fit
 
-Krita passt am besten in Workflows, in denen Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen nicht nur einmalig ausprobiert, sondern wiederholbar erledigt werden soll. Vor dem Einsatz sollte klar sein, welche Eingaben gebraucht werden, wer Ergebnisse prüft und wo die Ausgabe weiterverwendet wird.
+Krita passt am besten in Workflows, in denen Zeichnung, Painting und visuelle Entwicklung wiederkehrend gebraucht werden. Vor dem Einsatz sollte klar sein, ob Pinselgefühl, Dateiformate, Tablet-Unterstützung und Exportqualität zum eigenen Prozess passen.
 
 Für Krita arbeitet ein sinnvoller Pilot mit echtem Material und einem kleinen, messbaren Ziel. Wenn dadurch Übergaben, Qualität oder Geschwindigkeit klar besser werden, lohnt sich die feste Einbindung; wenn nicht, bleibt das Tool eher ein Experiment.
 
@@ -76,9 +76,9 @@ Im Katalog ist Krita mit dem Preismodell **Open Source** geführt. Für eine bel
 - [Clip Studio Paint](/tools/clip-studio-paint/): prüfen, wenn ein anderer Schwerpunkt als bei Krita relevant ist.
 - [Corel Painter](/tools/corel-painter/): naheliegend, falls ein anderer Schwerpunkt als bei Krita im Vordergrund steht.
 
-## Redaktionelle Einschätzung
+## Einordnung im Katalog
 
-Krita ist dann eine gute Wahl, wenn Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Krita ist eine gute Wahl für digitale Malerei, Comics und freie Illustrationsworkflows. Für Layout, Vektorgrafik, Team-Kommentare oder markennahe Kampagnenproduktion sind andere Werkzeuge oft näher am Alltag.
 
 ## FAQ
 
@@ -88,12 +88,12 @@ Krita ist für Einsteiger gut nutzbar, wenn Gestaltung und Rechte bewusst geprü
 
 **Wann lohnt sich Krita besonders?**
 
-Krita lohnt sich besonders, wenn Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen regelmäßig anfällt und bisher manuell, verstreut oder schwer nachvollziehbar erledigt wird. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
+Krita lohnt sich besonders, wenn digitale Skizzen, Illustrationen oder Comic-Arbeit regelmäßig anfallen und offene Software wichtig ist. Bei einmaligen Aufgaben ist ein leichteres Werkzeug oft schneller.
 
 **Was sollte man vor dem Einsatz prüfen?**
 
-Vor dem Einsatz prüfen: Asset-Rechte, Auflösung, Farbprofil, Export, Markenfit und Nachbearbeitung. Außerdem sollte klar sein, wer Ergebnisse fachlich freigibt. Für Krita sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Vor dem Einsatz prüfen: Tablet-Unterstützung, Pinselgefühl, Ebenenstruktur, Dateigröße, Exportformate und ob der Stil nach mehreren Korrekturrunden stabil bleibt.
 
 **Was ist der häufigste Fehler?**
 
-Der häufigste Fehler ist, einen schnellen Effekt mit belastbarer Gestaltung zu verwechseln. Ein begrenzter Test mit Abbruchkriterium verhindert, dass aus einem Tooltest unbemerkt ein schlechter Prozess wird. Für Krita sollte dieser Punkt am konkreten Einsatzfall geprüft werden.
+Der häufigste Fehler ist, Krita als schnellen Effektfilter zu nutzen. Der eigentliche Nutzen liegt in kontrollierter Zeichen- und Painting-Arbeit mit nachvollziehbaren Ebenen.

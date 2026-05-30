@@ -56,7 +56,7 @@ Celtx gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozesskl
 - Unterstützt kollaboratives Arbeiten und Teamkoordination.
 - Automatisierte Formatierung erleichtert professionelles Schreiben.
 - Cloudbasierte Speicherung ermöglicht flexiblen Zugriff.
-- Besonders wertvoll: für Film-, Video- und Medienprojekte mit mehreren Beteiligten.
+- Nützlich bei: für Film-, Video- und Medienprojekte mit mehreren Beteiligten.
 
 ### Nachteile
 
@@ -64,7 +64,7 @@ Celtx gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozesskl
 - Einige erweiterte Funktionen sind nur in höheren Abonnementstufen verfügbar.
 - Die Lernkurve für alle Funktionen kann anfangs etwas steil sein.
 - Offline-Arbeiten sind eingeschränkt, da die Plattform hauptsächlich cloudbasiert ist.
-- Achtungspunkt: für reine Schreibarbeit größer wirkt als ein schlanker Texteditor.
+- Risiko: Für reine Schreibarbeit wirkt das Tool oft größer als ein schlanker Texteditor.
 
 ## Preise & Kosten
 

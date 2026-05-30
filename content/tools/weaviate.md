@@ -72,9 +72,7 @@ Für Teams in Europa ist bei Weaviate außerdem relevant, ob Verträge zur Auftr
 
 ## Redaktionelle Einschätzung
 
-Weaviate wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Weaviate wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Weaviate sollte mit echten Such- und Retrievalfragen getestet werden: Welche Dokumente müssen gefunden werden, welche Metadaten steuern die Filter, und wie werden schlechte Treffer erkannt? Stark wird die Datenbank erst, wenn Embeddings, Schema, Aktualisierung und Evaluation zusammenpassen.
 
 ## Preise & Kosten
 

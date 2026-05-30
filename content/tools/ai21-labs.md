@@ -80,7 +80,7 @@ Für Teams in Europa ist bei AI21 Labs außerdem relevant, ob Verträge zur Auft
 
 ## Redaktionelle Einschätzung
 
-AI21 Labs wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+AI21 Labs sollte an einem echten Textprozess geprüft werden: Briefing, Varianten, Faktencheck, Freigabe und Veröffentlichung. Ohne diese Schritte bleibt Geschwindigkeit nur ein Teil der Bewertung.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob AI21 Labs wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

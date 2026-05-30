@@ -55,14 +55,14 @@ Bei Redpanda würde ich früh zwischen Demo-Eindruck und Betriebsrealität unter
 - Einfache Installation und Betrieb ohne komplexe Abhängigkeiten
 - Hohe Skalierbarkeit und Performance auch unter hoher Last
 - Cloud-native Features erleichtern den Einsatz in modernen Umgebungen
-- Besonders wertvoll: für Plattformteams, die Streaming ernsthaft betreiben, aber ZooKeeper-Komplexität meiden wollen.
+- Gut geeignet: für Plattformteams, die Streaming ernsthaft betreiben, aber ZooKeeper-Komplexität meiden wollen.
 
 ### Nachteile
 - Je nach Anwendungsfall und Infrastruktur kann die Einarbeitung in das System Zeit erfordern
 - Einige erweiterte Kafka-Funktionen könnten fehlen oder anders umgesetzt sein
 - Die Preisgestaltung ist je nach Anbieter und Plan unterschiedlich und kann für kleine Teams kostenintensiv sein
 - Community und Ökosystem sind im Vergleich zu Apache Kafka noch im Wachstum
-- Achtungspunkt: trotz einfacherem Betrieb weiterhin klares Schema- und Consumer-Design verlangt.
+- Vorher klären: trotz einfacherem Betrieb weiterhin klares Schema- und Consumer-Design verlangt.
 
 ## Preise & Kosten
 

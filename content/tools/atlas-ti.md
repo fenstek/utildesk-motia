@@ -78,7 +78,7 @@ Im Katalog ist Atlas.ti mit dem Preismodell **Je nach Plan** geführt. Für eine
 
 ## Redaktionelle Einschätzung
 
-Atlas.ti ist dann eine gute Wahl, wenn qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Atlas.ti passt, wenn qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten regelmäßig Teil des Arbeitsalltags ist und nicht nur einmalig ausprobiert wird. Entscheidend sind echte Eingaben, klare Freigabe und ein Ergebnis, das später nachvollzogen oder weiterverarbeitet werden kann.
 
 ## FAQ
 

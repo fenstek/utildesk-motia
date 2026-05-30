@@ -17,22 +17,22 @@ Tabnine ist besonders interessant, wenn Code-Vervollständigung und KI-Unterstü
 Der kritische Punkt liegt im Betrieb: die Frage, welche Repositories, Lizenzen und Datenschutzregeln in der IDE gelten. Genau daran entscheidet sich, ob das Tool entlastet oder nur eine zusätzliche Oberfläche einführt.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/tabnine-editorial.webp" alt="Illustration zu tabnine: Code-Hinweise auf dem naechtlichen Dach" loading="lazy" decoding="async" />
+  <img src="/images/tools/tabnine-editorial.webp" alt="Illustration zu Tabnine: Code-Hinweise in einer Entwicklungsumgebung" loading="lazy" decoding="async" />
 </figure>
 
 ## Für wen ist Tabnine geeignet?
 
-Am stärksten passt Tabnine zu Anwendern, die einen wiederholbaren Ablauf brauchen, um wiederkehrende Code-Muster schneller zu schreiben und Kontextwechsel zu reduzieren. Besonders hilfreich ist das Tool in diesem Kontext: für Teams mit klaren Coding-Standards und bestehender Testkultur.
+Am stärksten passt Tabnine zu Entwicklerteams, die wiederkehrende Code-Muster schneller schreiben und Kontextwechsel reduzieren wollen. Besonders hilfreich ist das Tool, wenn Coding-Standards, Tests und Review-Prozesse bereits existieren.
 
-Zurückhaltend wäre ich, solange die Frage offen ist, welche Repositories, Lizenzen und Datenschutzregeln in der IDE gelten. Dann wird das Tool leicht an Symptomen getestet, obwohl die eigentliche Prozessfrage ungeklärt bleibt.
+Zurückhaltend wäre ich, solange offen ist, welche Repositories, Lizenzen und Datenschutzregeln in der IDE gelten. Dann wird das Tool leicht an Symptomen getestet, obwohl die eigentliche Prozessfrage ungeklärt bleibt.
 
 ## Redaktionelle Einschätzung
 
 Bei Tabnine würde ich früh zwischen Demo-Eindruck und Betriebsrealität unterscheiden. Viele Tools wirken in der ersten Stunde stark; entscheidend ist aber, ob sie nach zwei Wochen noch weniger Rückfragen, weniger Nacharbeit oder mehr Transparenz erzeugen.
 
-- **Guter Pilot:** wiederkehrende Code-Muster schneller zu schreiben und Kontextwechsel zu reduzieren.
+- **Guter Pilot:** wiederkehrende Code-Muster schneller schreiben und Kontextwechsel reduzieren.
 - **Qualitätsfrage:** welche Repositories, Lizenzen und Datenschutzregeln in der IDE gelten.
-- **Risiko:** ohne Review und Tests falsche Annahmen sehr überzeugend formuliert.
+- **Risiko:** ohne Review und Tests können falsche Vorschläge sehr überzeugend wirken.
 
 ## Hauptfunktionen
 
@@ -45,8 +45,8 @@ Bei Tabnine würde ich früh zwischen Demo-Eindruck und Betriebsrealität unters
 - Unterstützung bei der Dokumentation durch automatische Code-Kommentare
 - Schnelle Integration und einfache Bedienung ohne aufwändige Einrichtung
 
-- **Praxischeck:** welche Repositories, Lizenzen und Datenschutzregeln in der IDE gelten.
-- **Einführung im Team:** wiederkehrende Code-Muster schneller zu schreiben und Kontextwechsel zu reduzieren.
+- **Praxischeck:** Welche Repositories, Lizenzen und Datenschutzregeln gelten in der IDE?
+- **Einführung im Team:** Ziel ist nicht mehr Code um jeden Preis, sondern weniger Routinearbeit bei gleichbleibender Review-Qualität.
 
 ## Vorteile und Nachteile
 
@@ -58,7 +58,7 @@ Bei Tabnine würde ich früh zwischen Demo-Eindruck und Betriebsrealität unters
 - Datenschutzoptionen durch lokale Modelle
 - Freemium-Modell erlaubt Einstieg ohne Kosten
 - Verbesserte Teamarbeit durch gemeinsame Modelle und Einstellungen
-- Besonders wertvoll: für Teams mit klaren Coding-Standards und bestehender Testkultur.
+- Passt zu Teams mit klaren Coding-Standards und bestehender Testkultur.
 
 ### Nachteile
 
@@ -66,7 +66,7 @@ Bei Tabnine würde ich früh zwischen Demo-Eindruck und Betriebsrealität unters
 - KI-Vorschläge können je nach Codebasis variieren und sind nicht immer perfekt
 - Potenzielle Abhängigkeit von der Autovervollständigung kann das eigene Verständnis beeinträchtigen
 - Für sehr spezifische oder exotische Programmiersprachen weniger Unterstützung
-- Achtungspunkt: ohne Review und Tests falsche Annahmen sehr überzeugend formuliert.
+- Ohne Review und Tests können falsche Annahmen überzeugend formuliert werden.
 
 ## Preise & Kosten
 

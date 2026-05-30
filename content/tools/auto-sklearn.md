@@ -97,7 +97,6 @@ Ja, Auto-sklearn ist Open Source und kostenlos nutzbar.
 **8. Kann Auto-sklearn in bestehende Projekte integriert werden?**  
 Ja, dank der engen Anbindung an scikit-learn kann Auto-sklearn problemlos in bestehende Python-Projekte eingebunden werden.
 
----
 
 *Hinweis: Affiliate-Links sind nicht vorhanden.*
 

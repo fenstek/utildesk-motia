@@ -88,5 +88,3 @@ Die Abrechnung erfolgt nutzungsbasiert, also nach Anzahl der Funktionsaufrufe, A
 
 **8. Kann ich Azure Functions in bestehende Anwendungen integrieren?**  
 Ja, Azure Functions lässt sich einfach mit anderen Azure-Diensten und externen Systemen verbinden, um bestehende Anwendungen zu erweitern.
-
----

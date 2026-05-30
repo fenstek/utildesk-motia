@@ -84,7 +84,7 @@ Detox ist eher ein Werkzeug für Teams mit Test- und CI-Erfahrung. Einsteiger so
 
 **Wann lohnt sich Detox besonders?**
 
-Detox lohnt sich, wenn App-Releases regelmäßig Regressionen in Kernflows riskieren. Besonders wertvoll ist es für Login, Bezahlung, Onboarding, Berechtigungen und andere Pfade, die man nicht manuell jedes Mal vollständig prüfen will.
+Detox lohnt sich, wenn App-Releases regelmäßig Regressionen in Kernflows riskieren. Der beste Start sind wenige kritische Pfade wie Login, Bezahlung, Onboarding oder Berechtigungen, die bei jedem Release reproduzierbar geprüft werden müssen.
 
 **Worauf sollte man vor dem Einsatz achten?**
 

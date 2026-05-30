@@ -88,5 +88,3 @@ Scratch ist eine eigenständige Lernplattform mit eigener Benutzeroberfläche, w
 
 **8. Kann Blockly für professionelle Softwareentwicklung eingesetzt werden?**  
 Blockly eignet sich vor allem für Lern- und Prototyping-Zwecke; für komplexe Anwendungen sind traditionelle Programmiermethoden oft besser geeignet.
-
----

@@ -29,7 +29,7 @@ Geeignet ist Talend Data Fabric für Data-Engineering-Teams, BI-Abteilungen, gr�
 
 ## Was im Alltag wirklich zählt
 
-Im Alltag entscheidet nicht die laengste Featureliste, sondern ob Datenfehler früh sichtbar werden und ob die Pipeline nach drei Monaten noch verständlich ist. Talend kann dabei helfen, aber nur, wenn Datenmodelle, Namenskonventionen und Verantwortlichkeiten sauber gepflegt werden.
+Im Alltag entscheidet nicht die längste Featureliste, sondern ob Datenfehler früh sichtbar werden und ob die Pipeline nach drei Monaten noch verständlich ist. Talend kann dabei helfen, aber nur, wenn Datenmodelle, Namenskonventionen und Verantwortlichkeiten sauber gepflegt werden.
 
 Eine gute Einführung beginnt klein: ein wichtiger Datenfluss, klare Qualitätskriterien, Monitoring und ein sauberer Rollback-Plan. Danach lässt sich die Plattform organisch erweitern, statt sofort die ganze Datenlandschaft umzubauen.
 

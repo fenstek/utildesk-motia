@@ -81,9 +81,7 @@ Für Teams in Europa ist bei Wysa außerdem relevant, ob Verträge zur Auftragsv
 
 ## Redaktionelle Einschätzung
 
-Wysa wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Wysa wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Wysa sollte als niedrigschwellige Unterstützung verstanden werden, nicht als Ersatz für Therapie, Krisenhilfe oder medizinische Abklärung. Wichtig sind klare Grenzen, Datenschutz und Hinweise, wann menschliche Unterstützung notwendig ist.
 
 ## Preise & Kosten
 

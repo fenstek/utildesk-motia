@@ -57,7 +57,7 @@ Bei IBM Watson Studio würde ich früh zwischen Demo-Eindruck und Betriebsrealit
 - Kollaborationsfunktionen für Teams.
 - Integration in IBM-Ökosystem und Cloud.
 - Skalierbar und flexibel einsetzbar.
-- Besonders wertvoll: für Enterprise-Teams mit Governance-, Deployment- und Audit-Anforderungen.
+- Stärkerer Nutzen: Enterprise-Teams können Governance, Deployment und Audit-Anforderungen enger zusammenführen.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Bei IBM Watson Studio würde ich früh zwischen Demo-Eindruck und Betriebsrealit
 - Kosten variieren stark je nach Nutzung und Plan.
 - Einarbeitungszeit für umfangreiche Funktionen notwendig.
 - Fokus liegt primär auf IBM-Cloud, weniger auf Multi-Cloud-Umgebungen.
-- Achtungspunkt: für kleine Experimente schwergewichtiger wirkt als Notebook-only-Setups.
+- Grenze: Für kleine Experimente wirkt Watson Studio oft schwergewichtiger als ein Notebook-only-Setup.
 
 ## Preise & Kosten
 

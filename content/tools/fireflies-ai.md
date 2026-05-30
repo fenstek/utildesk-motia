@@ -1,7 +1,7 @@
 ---
 slug: fireflies-ai
 title: Fireflies.ai
-category: "AI Image"
+category: "AI Audio"
 price_model: Freemium
 tags: [meetings, transcription, notes]
 official_url: "https://fireflies.ai/"

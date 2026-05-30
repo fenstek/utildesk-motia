@@ -79,7 +79,7 @@ Im Katalog ist Selenium mit dem Preismodell **Open Source** geführt. Für eine 
 
 ## Redaktionelle Einschätzung
 
-Selenium ist dann eine gute Wahl, wenn Browserautomatisierung und End-to-End-Tests für Webanwendungen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Selenium ist vor allem dann sinnvoll, wenn browserautomatisierung und End-to-End-Tests für Webanwendungen regelmäßig und mit klaren Prüfschritten erledigt wird. Entscheidend ist, ob das Ergebnis im echten Arbeitsfall nachvollziehbar bleibt.
 
 ## FAQ
 

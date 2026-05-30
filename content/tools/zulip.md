@@ -82,9 +82,7 @@ Für Teams in Europa ist bei Zulip außerdem relevant, ob Verträge zur Auftrags
 
 ## Redaktionelle Einschätzung
 
-Zulip wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Zulip wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Zulip lohnt sich, wenn Teams Diskussionen nach Themen nachvollziehbar halten müssen und Slack-artige Dauerkanäle zu unübersichtlich werden. Der Test sollte an einem echten Projektkanal laufen: Streams, Topics, Benachrichtigungen und Suchbarkeit entscheiden, ob die Kommunikation ruhiger wird oder nur anders verteilt ist.
 
 ## Preise & Kosten
 

@@ -77,7 +77,7 @@ Im Katalog ist Innography mit dem Preismodell **Abonnement** geführt. Für eine
 
 ## Redaktionelle Einschätzung
 
-Innography ist dann eine gute Wahl, wenn Patent- und Innovationsanalyse für IP-Teams, Wettbewerbsbeobachtung und Technologielandschaften tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Innography passt, wenn IP-Teams Patentlandschaften, Wettbewerber und Technologiefelder regelmäßig auswerten. Der praktische Test sollte mit einem echten Suchprofil arbeiten, damit Datenabdeckung, Export und Bewertungslogik sichtbar werden.
 
 ## FAQ
 

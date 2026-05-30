@@ -56,14 +56,14 @@ Bei Apache Spark würde ich früh zwischen Demo-Eindruck und Betriebsrealität u
 - Große und aktive Community mit umfangreicher Dokumentation
 - Unterstützung für verschiedene Programmiersprachen und Tools
 - Skalierbar und flexibel für unterschiedliche Datenquellen und -formate
-- Besonders wertvoll: für Data-Plattformen mit großen Datenvolumen und klaren Pipelines.
+- Nützlich bei: für Data-Plattformen mit großen Datenvolumen und klaren Pipelines.
 
 ### Nachteile
 - Relativ steile Lernkurve für Einsteiger ohne Erfahrung in verteilten Systemen
 - Ressourcenintensiv, insbesondere bei Speicher- und Clusteranforderungen
 - Komplexität bei der Einrichtung und Verwaltung großer Cluster
 - Fehlende benutzerfreundliche Oberfläche für Nicht-Programmierer (hauptsächlich über APIs bedienbar)
-- Achtungspunkt: bei kleinen Datenmengen mehr Cluster-Aufwand als Nutzen erzeugt.
+- Risiko: Bei kleinen Datenmengen mehr Cluster-Aufwand als Nutzen erzeugt.
 
 ## Preise & Kosten
 

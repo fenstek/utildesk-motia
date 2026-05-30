@@ -79,7 +79,7 @@ Für Teams in Europa ist bei Amazon Rekognition Video außerdem relevant, ob Ver
 
 ## Redaktionelle Einschätzung
 
-Amazon Rekognition Video wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Amazon Rekognition Video lohnt sich, wenn Aufnahme, Bearbeitung, Qualitätskontrolle und Veröffentlichung als zusammenhängender Ablauf gedacht werden. Ein Test mit echtem Material ist dafür aussagekräftiger als Beispielinhalte.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Amazon Rekognition Video wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

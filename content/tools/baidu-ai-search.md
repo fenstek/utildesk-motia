@@ -83,7 +83,7 @@ Für Teams in Europa ist bei Baidu AI Search außerdem relevant, ob Verträge zu
 
 ## Redaktionelle Einschätzung
 
-Baidu AI Search wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Baidu AI Search braucht klare Grenzen: Welche Fragen darf es beantworten, welche Quellen gelten, und wann endet die Automatisierung? Genau daran sollte der erste Pilot gemessen werden.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Baidu AI Search wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

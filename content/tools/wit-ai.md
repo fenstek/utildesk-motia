@@ -82,9 +82,7 @@ Für Teams in Europa ist bei Wit.ai außerdem relevant, ob Verträge zur Auftrag
 
 ## Redaktionelle Einschätzung
 
-Wit.ai wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Wit.ai wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Wit.ai ist vor allem für einfache Sprach- und Intent-Erkennung interessant. Entscheidend ist ein Test mit echten Nutzeräußerungen, Synonymen, Fehlformulierungen und Fallbacks; nur so wird sichtbar, ob das Modell im Dialogbetrieb stabil genug ist.
 
 ## Preise & Kosten
 

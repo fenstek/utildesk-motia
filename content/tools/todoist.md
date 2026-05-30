@@ -58,7 +58,7 @@ Bei Todoist würde ich früh zwischen Demo-Eindruck und Betriebsrealität unters
 - Plattformübergreifende Verfügbarkeit.
 - Starke Integration mit externen Tools und Services.
 - KI-Features unterstützen effiziente Planung und Priorisierung.
-- Besonders wertvoll: für Einzelpersonen, kleine Teams und klare operative Routinen.
+- Passt gut zu Einzelpersonen, kleinen Teams und klaren operativen Routinen.
 
 ### Nachteile
 
@@ -66,7 +66,7 @@ Bei Todoist würde ich früh zwischen Demo-Eindruck und Betriebsrealität unters
 - Für sehr komplexe Projektmanagement-Anforderungen ggf. weniger geeignet als spezialisierte Tools.
 - Lernkurve bei der Nutzung aller Möglichkeiten und Integrationen.
 - Datenschutzbedenken je nach Nutzung und Speicherort der Daten.
-- Achtungspunkt: bei fehlender Priorisierung nur eine längere Liste guter Vorsätze wird.
+- Bei fehlender Priorisierung wird Todoist schnell nur eine längere Liste guter Vorsätze.
 
 ## Preise & Kosten
 

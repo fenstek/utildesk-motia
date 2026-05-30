@@ -57,7 +57,7 @@ Robot Framework gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als
 - Flexibel und vielseitig einsetzbar in verschiedenen Automatisierungsbereichen.
 - Unterstützt zahlreiche externe Bibliotheken und Tools.
 - Umfangreiche Dokumentation und gute Integrationsmöglichkeiten.
-- Besonders wertvoll: für QA-Teams, die Regressionstests und Business-Akzeptanz abbilden.
+- Gut geeignet: für QA-Teams, die Regressionstests und Business-Akzeptanz abbilden.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Robot Framework gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als
 - Die Einrichtung und Konfiguration kann für Anfänger anfangs herausfordernd sein.
 - Manche Bibliotheken oder Erweiterungen sind nicht immer auf dem neuesten Stand.
 - Fehlende offizielle GUI für die Testentwicklung (meist über Editoren oder IDEs).
-- Achtungspunkt: bei schlecht gepflegten Keywords schnell schwer wartbar wird.
+- Vorher klären: bei schlecht gepflegten Keywords schnell schwer wartbar wird.
 
 ## Preise & Kosten
 

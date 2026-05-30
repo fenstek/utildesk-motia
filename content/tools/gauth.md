@@ -74,7 +74,7 @@ Für Teams in Europa ist bei Gauth außerdem relevant, ob Verträge zur Auftrags
 
 ## Redaktionelle Einschätzung
 
-Gauth wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Gauth ist nur dann sinnvoll, wenn Lernziel, Materialpflege, Rollen und Auswertung zusammenpassen. Ein kurzer Kurs- oder Modul-Pilot zeigt meist schnell, ob Aufwand und Lernergebnis stimmen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Gauth wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

@@ -78,7 +78,7 @@ Für Teams in Europa ist bei Blue Prism außerdem relevant, ob Verträge zur Auf
 
 ## Redaktionelle Einschätzung
 
-Blue Prism wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Blue Prism sollte an einem wiederholbaren Ablauf getestet werden, nicht an einer losen Idee. Wichtig ist, ob Automatisierung Arbeit reduziert oder nur neue Kontrolle erzeugt.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Blue Prism wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

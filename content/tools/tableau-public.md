@@ -56,7 +56,7 @@ Bei Tableau Public würde ich früh zwischen Demo-Eindruck und Betriebsrealität
 - Große Community und viele Tutorials verfügbar.
 - Unterstützt viele Datenformate und -quellen.
 - Ermöglicht das Teilen und Einbetten von Visualisierungen im Web.
-- Besonders wertvoll: für Datenjournalismus, Lehre, Community-Projekte und offene Reports.
+- Gut geeignet für Datenjournalismus, Lehre, Community-Projekte und offene Reports.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Bei Tableau Public würde ich früh zwischen Demo-Eindruck und Betriebsrealität
 - Keine lokale Speicherung der Projekte möglich.
 - Begrenzte Möglichkeiten bei der Datenvorbereitung und -bereinigung.
 - Kein direkter Support, da es sich um eine kostenlose Version handelt.
-- Achtungspunkt: für vertrauliche Daten nicht geeignet ist und Veröffentlichungsdisziplin verlangt.
+- Für vertrauliche Daten ist Tableau Public nicht geeignet; Veröffentlichungen brauchen Disziplin.
 
 ## Preise & Kosten
 

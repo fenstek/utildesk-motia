@@ -86,7 +86,7 @@ Für Teams in Europa ist bei Eclipse Che außerdem relevant, ob Verträge zur Au
 
 ## Redaktionelle Einschätzung
 
-Eclipse Che wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Eclipse Che gehört in einen reproduzierbaren Entwicklungsablauf mit Tests, Versionierung und klaren Grenzen. Der Nutzen zeigt sich daran, ob Änderungen leichter prüfbar werden und nicht nur schneller entstehen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Eclipse Che wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

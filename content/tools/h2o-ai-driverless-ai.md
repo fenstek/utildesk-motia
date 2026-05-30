@@ -76,7 +76,7 @@ Für Teams in Europa ist bei H2O.ai Driverless AI außerdem relevant, ob Verträ
 
 ## Redaktionelle Einschätzung
 
-H2O.ai Driverless AI wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+H2O.ai Driverless AI sollte mit einem begrenzten Datenfall geprüft werden: Quelle, Laufzeit, Kosten, Ergebnisqualität und Übergabe an Fachteams müssen nachvollziehbar bleiben.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob H2O.ai Driverless AI wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

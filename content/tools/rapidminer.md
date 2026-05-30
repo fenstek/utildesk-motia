@@ -55,14 +55,14 @@ Bei RapidMiner würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - Flexibilität durch API-Integration und Erweiterungsmöglichkeiten.
 - Unterstützt den gesamten Analytics-Lifecycle von der Datenvorbereitung bis zum Deployment.
 - Geeignet für Einsteiger und Experten gleichermaßen.
-- Besonders wertvoll: für Analytics-Teams, die Low-Code und klassische Data Science verbinden.
+- Gut geeignet: für Analytics-Teams, die Low-Code und klassische Data Science verbinden.
 
 ### Nachteile
 - Kosten können je nach Nutzeranzahl und Funktionsumfang steigen.
 - Für sehr große Datenmengen kann die Performance je nach Infrastruktur variieren.
 - Einige fortgeschrittene Funktionen erfordern Einarbeitung und Erfahrung.
 - Cloud-Optionen und On-Premises-Installationen sind je nach Plan unterschiedlich verfügbar.
-- Achtungspunkt: ohne methodisches Verständnis keine belastbaren Modelle garantiert.
+- Vorher klären: ohne methodisches Verständnis keine belastbaren Modelle garantiert.
 
 ## Preise & Kosten
 

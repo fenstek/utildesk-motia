@@ -80,9 +80,7 @@ Für Teams in Europa ist bei Typesense außerdem relevant, ob Verträge zur Auft
 
 ## Redaktionelle Einschätzung
 
-Typesense wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Typesense wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Typesense sollte mit echten Suchanfragen, Tippfehlern, Facetten und Ranking-Erwartungen getestet werden. Gute Ergebnisse hängen stark davon ab, wie Schema, Synonyme, Filter und Aktualisierungspfad zur eigenen Anwendung passen.
 
 ## Preise & Kosten
 

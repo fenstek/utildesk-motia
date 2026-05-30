@@ -76,7 +76,7 @@ Für Teams in Europa ist bei Amazon EMR außerdem relevant, ob Verträge zur Auf
 
 ## Redaktionelle Einschätzung
 
-Amazon EMR wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Amazon EMR sollte an einem echten Repository-, Pipeline- oder Betriebsfall geprüft werden. Wichtig sind nachvollziehbare Eingaben, sichtbare Fehlerzustände und ein Review, der zum vorhandenen technischen Stack passt.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Amazon EMR wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

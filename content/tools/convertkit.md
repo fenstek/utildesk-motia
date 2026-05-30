@@ -115,7 +115,6 @@ Ja, ConvertKit unterstützt den Import von Abonnenten über CSV-Dateien und ande
 **8. Wie sicher sind meine Daten bei ConvertKit?**  
 ConvertKit legt großen Wert auf Datenschutz und verwendet branchenübliche Sicherheitsstandards zur Datenverschlüsselung und -schutz.
 
----
 
 **9. Wie testet man ConvertKit sinnvoll im Team?**
 Für den Einstieg reicht ein enger Pilot mit echter Aufgabe, klarer Abnahme und kurzer Retrospektive: Was wurde mit ConvertKit besser, was blieb Handarbeit?

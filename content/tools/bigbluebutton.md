@@ -59,7 +59,7 @@ BigBlueButton gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als P
 - Keine Abhängigkeit von kommerziellen Anbietern
 - Aktive Community und regelmäßige Weiterentwicklung
 - Datenschutzfreundlich durch eigene Hosting-Optionen
-- Besonders wertvoll: für Schulen, Hochschulen und Organisationen mit Self-Hosting-Wunsch.
+- Gut geeignet: für Schulen, Hochschulen und Organisationen mit Self-Hosting-Wunsch.
 
 ### Nachteile
 
@@ -68,7 +68,7 @@ BigBlueButton gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als P
 - Benutzeroberfläche ist funktional, aber weniger modern als manche kommerzielle Alternativen
 - Support erfolgt überwiegend durch Community und Dokumentation, kein offizieller Kundendienst
 - Für sehr große Teilnehmerzahlen kann Skalierung herausfordernd sein
-- Achtungspunkt: bei schwacher Serveradministration schnell an Audio- und Skalierungsgrenzen stößt.
+- Grenze: Bei schwacher Serveradministration entstehen schnell Audio- und Skalierungsprobleme.
 
 ## Preise & Kosten
 

@@ -86,7 +86,7 @@ Für Teams in Europa ist bei Espacenet außerdem relevant, ob Verträge zur Auft
 
 ## Redaktionelle Einschätzung
 
-Espacenet wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Espacenet sollte mit einer echten Recherchefrage geprüft werden: Quellenlage, Nachvollziehbarkeit, Export und fachliche Kontrolle entscheiden über den praktischen Wert.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Espacenet wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

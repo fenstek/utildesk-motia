@@ -72,9 +72,7 @@ Für Teams in Europa ist bei Xamarin außerdem relevant, ob Verträge zur Auftra
 
 ## Redaktionelle Einschätzung
 
-Xamarin wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Xamarin wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Xamarin sollte heute vor allem im Kontext bestehender .NET-Mobile-Projekte bewertet werden. Für neue Apps zählt die Migrations- und Zukunftsfrage mindestens so stark wie die aktuelle Codebasis; ein kurzer Prototyp reicht dafür nicht.
 
 ## Preise & Kosten
 

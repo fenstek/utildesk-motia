@@ -77,9 +77,7 @@ Für Teams in Europa ist bei WIPO PATENTSCOPE außerdem relevant, ob Verträge z
 
 ## Redaktionelle Einschätzung
 
-WIPO PATENTSCOPE wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob WIPO PATENTSCOPE wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+WIPO PATENTSCOPE ist vor allem ein Recherchewerkzeug für Patentfragen. Nützlich wird es, wenn Suchbegriffe, Klassen, Länder und Dokumentation der Recherche sauber festgehalten werden. Für belastbare Entscheidungen ersetzt die Suche keine fachliche oder juristische Prüfung, sie liefert aber einen strukturierten Einstieg.
 
 ## Preise & Kosten
 
