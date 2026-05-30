@@ -1,6 +1,11 @@
 ---
 slug: "avigilon"
 title: "Avigilon"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-legacy-history-import"
 category: "Video"
 tags: [video, security, analytics, ai]
 description: "Avigilon provides video surveillance, security cameras, and analytics for physical security environments."

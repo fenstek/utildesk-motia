@@ -1,6 +1,11 @@
 ---
 slug: lingvanex
 title: Lingvanex
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-03
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-03-popular-41"
 category: "Writing & Content"
 price_model: "Freemium"
 tags: ["translation", "speech", "writing", "api", "language"]

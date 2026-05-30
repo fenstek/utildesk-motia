@@ -28,6 +28,10 @@ relatedTools:
     href: /tools/gemini/
   - title: Perplexity
     href: /tools/perplexity/
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 
 Künstliche Intelligenz ist längst kein Nischenthema mehr. Wer heute schreibt, recherchiert, programmiert oder komplexe Informationen verdichtet, landet schnell bei einem der großen Sprachmodelle. Für Utildesk sind dabei vor allem [ChatGPT](/tools/chatgpt/), [Claude](/tools/claude/) und [Gemini](/tools/gemini/) spannend: drei Assistenten, die auf den ersten Blick ähnlich wirken, im Alltag aber sehr unterschiedliche Stärken zeigen. Wenn du tiefer in die Übersicht einsteigen willst, ist auch die Kategorie [AI-Chatbots & Assistenten](/category/ai-chatbots/) ein guter Startpunkt.

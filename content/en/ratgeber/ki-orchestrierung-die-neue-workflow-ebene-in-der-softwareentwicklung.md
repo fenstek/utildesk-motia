@@ -30,6 +30,10 @@ relatedTools:
     href: /en/tools/langchain/
   - title: CrewAI
     href: /en/tools/crew-ai/
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 
 The bottleneck in AI-assisted software development is changing. A single prompt is no longer the main constraint. Once teams use more than one coding assistant, the hard questions become operational: Which specification is current? Which agent owns which task? Which changes have been verified, and which are only generated output?

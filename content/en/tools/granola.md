@@ -1,6 +1,11 @@
 ---
 slug: granola
 title: Granola
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-03
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-03-next-50"
 category: Productivity
 price_model: Plan-based
 tags:

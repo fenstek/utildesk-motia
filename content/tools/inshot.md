@@ -1,6 +1,11 @@
 ---
 slug: inshot
 title: InShot
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-batch-50"
 category: AI
 price_model: Je nach Plan
 tags: [video-editing, mobile, creator-tools]

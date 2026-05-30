@@ -1,6 +1,11 @@
 ---
 slug: adobe-premiere-pro
 title: Adobe Premiere Pro
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-03
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-03-popular-41"
 category: Audio & Video
 price_model: Abonnement
 tags: ["video", "editing", "creative", "content", "audio"]

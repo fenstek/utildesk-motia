@@ -1,6 +1,11 @@
 ---
 slug: google-cloud-pub-sub
 title: Google Cloud Pub/Sub
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-06
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-06-editorial-100-tool-cards"
 category: AI
 price_model: Nutzungsbasiert
 tags: [data,messaging,cloud,developer-tools]

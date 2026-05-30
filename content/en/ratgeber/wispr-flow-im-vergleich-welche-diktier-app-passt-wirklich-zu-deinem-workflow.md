@@ -19,18 +19,20 @@ sidebarPoints:
   - "AI dictation is no longer only about transcription. The strongest tools clean up spoken thoughts and turn them into usable writing."
   - "Wispr Flow is the broadest starting point, while Superwhisper, Aqua Voice, Otter.ai and Descript fit more specialized workflows."
 relatedTools:
-  - title: "Claude"
-    href: "/en/tools/claude/"
-  - title: "GitHub Copilot"
-    href: "/en/tools/github-copilot/"
-  - title: "Cursor"
-    href: "/en/tools/cursor/"
-  - title: "Aider"
-    href: "/en/tools/aider/"
-  - title: "LangChain"
-    href: "/en/tools/langchain/"
-  - title: "CrewAI"
-    href: "/en/tools/crew-ai/"
+  - title: "Wispr Flow"
+    href: "/en/tools/wispr-flow/"
+  - title: "Otter.ai"
+    href: "/en/tools/otter-ai/"
+  - title: "Fireflies.ai"
+    href: "/en/tools/fireflies-ai/"
+  - title: "Descript"
+    href: "/en/tools/descript/"
+  - title: "ChatGPT"
+    href: "/en/tools/chatgpt/"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 
 Typing is no longer the only default interface for knowledge work. A new generation of AI dictation tools promises to turn rough spoken thoughts into emails, notes, code comments, briefs and polished documents. The useful question is not whether voice input works at all. The better question is which tool fits the way you actually work.
@@ -43,12 +45,11 @@ That sounds simple, but the differences between dictation tools become obvious i
 
 If you want to compare this topic beyond a single product, these tools and frameworks are useful starting points:
 
-- [Claude](/en/tools/claude/) is relevant when voice input becomes part of longer writing, reasoning or coding sessions.
-- [GitHub Copilot](/en/tools/github-copilot/) is a useful reference point for productivity inside the editor.
-- [Cursor](/en/tools/cursor/) helps compare more agentic development workflows with their own context.
-- [Aider](/en/tools/aider/) is worth looking at if you prefer Git-based coding sessions in the terminal.
-- [LangChain](/en/tools/langchain/) helps explain the orchestration layer behind agent workflows.
-- [CrewAI](/en/tools/crew-ai/) is relevant when multi-agent collaboration, guardrails and observability matter.
+- [Wispr Flow](/en/tools/wispr-flow/) - when dictation should become part of everyday writing and work routines.
+- [Otter.ai](/en/tools/otter-ai/) - for meeting transcripts, summaries and follow-up documentation.
+- [Fireflies.ai](/en/tools/fireflies-ai/) - when conversations should be recorded, searchable and reusable.
+- [Descript](/en/tools/descript/) - for teams that combine transcription with audio and video editing.
+- [ChatGPT](/en/tools/chatgpt/) - when rough dictated notes need structure, shortening or rewriting.
 
 ## [Wispr Flow](/en/tools/wispr-flow/) as the broad everyday option
 

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: espresso
 title: Espresso
 category: AI
@@ -11,6 +11,11 @@ tags:
   - cloud
 official_url: 'https://espresso.ai/'
 popularity: 0
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-legacy-history-import"
 source_language: de
 translation: full
 ---

@@ -1,6 +1,11 @@
 ---
 slug: captum
 title: Captum
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-04
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-04-editorial-70-tool-cards"
 category: AI
 price_model: Open Source
 tags: [developer-tools,machine-learning]

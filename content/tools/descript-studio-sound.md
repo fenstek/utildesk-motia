@@ -1,6 +1,11 @@
 ---
 slug: descript-studio-sound
 title: Descript Studio Sound
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-08
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-08-bing-gsc-signal-polish"
 category: Audio
 price_model: "Je nach Plan"
 tags: [ai, audio, editing]

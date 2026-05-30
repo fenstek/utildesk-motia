@@ -30,6 +30,10 @@ relatedTools:
     href: /en/tools/langchain/
   - title: CrewAI
     href: /en/tools/crew-ai/
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 
 The era of simple autocomplete in software development is approaching its end. We are moving from assisting chatbots to autonomous agents that can complete complex tasks across a codebase. The promise is no longer just better snippets. It is the automation of larger development cycles, from investigation to implementation to pull request.

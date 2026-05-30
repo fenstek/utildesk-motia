@@ -1,6 +1,11 @@
 ---
 slug: lingq
 title: LingQ
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-03
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-03-next-50"
 category: Produktivität
 price_model: Abonnement
 tags: [education, language, reading, learning]

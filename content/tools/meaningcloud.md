@@ -1,6 +1,11 @@
 ---
 slug: meaningcloud
 title: MeaningCloud
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-03
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-03-popular-41"
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: ["api", "analytics", "nlp", "text", "developer"]

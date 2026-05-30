@@ -1,6 +1,11 @@
 ---
 slug: bigbluebutton
 title: BigBlueButton
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-05
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-05-editorial-70-tool-cards"
 category: Produktivität
 price_model: Open Source
 tags: [meetings, video, education, open-source]

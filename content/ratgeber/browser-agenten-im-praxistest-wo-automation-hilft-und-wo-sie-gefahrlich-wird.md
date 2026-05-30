@@ -30,6 +30,10 @@ relatedTools:
     href: "/tools/aider/"
   - title: "LangChain"
     href: "/tools/langchain/"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 Browser-Agenten wirken auf den ersten Blick wie die logische nächste Stufe nach Chatbots: Sie lesen Webseiten, klicken Buttons, füllen Formulare aus und können aus verstreuten Informationen einen fertigen Arbeitsschritt machen. Genau deshalb sind sie spannend. Und genau deshalb sind sie riskant.
 

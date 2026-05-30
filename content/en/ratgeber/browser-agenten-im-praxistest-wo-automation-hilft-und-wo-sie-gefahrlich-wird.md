@@ -30,6 +30,10 @@ relatedTools:
     href: "/tools/aider/"
   - title: "LangChain"
     href: "/tools/langchain/"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
 ---
 At first glance, browser agents look like the logical next step after chatbots: they read web pages, click buttons, fill out forms, and can turn scattered information into a finished task. That is exactly what makes them exciting. And exactly what makes them risky.
 
