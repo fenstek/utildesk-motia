@@ -1,6 +1,11 @@
 ---
 slug: metabase
 title: Metabase
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Open Source
 tags:
@@ -64,28 +69,38 @@ Metabase is open source in its base version and can therefore be used free of ch
 
 ## FAQ
 
-**1. Is Metabase really free?**  
+**1. Is Metabase really free?**
 Yes, the open-source version of Metabase can be downloaded for free and self-hosted. Additional features or hosted services incur costs.
 
-**2. Which data sources does Metabase support?**  
+**2. Which data sources does Metabase support?**
 Metabase supports a wide range of SQL databases such as MySQL, PostgreSQL, and SQL Server, as well as some NoSQL and cloud services.
 
-**3. Do I need programming knowledge to use Metabase?**  
+**3. Do I need programming knowledge to use Metabase?**
 No, Metabase is designed so that users without programming knowledge can create queries and build dashboards.
 
-**4. Can I use Metabase in the cloud?**  
+**4. Can I use Metabase in the cloud?**
 Yes, in addition to self-installation there is also a hosted cloud version that is available through a subscription.
 
-**5. How secure is my data with Metabase?**  
+**5. How secure is my data with Metabase?**
 With self-hosting, security is in your own hands. The cloud versions offer industry-standard security measures; details vary by provider.
 
-**6. Is there a mobile app for Metabase?**  
+**6. Is there a mobile app for Metabase?**
 Metabase does not offer its own mobile app, but dashboards can be accessed through mobile browsers.
 
-**7. How does support work for Metabase?**  
+**7. How does support work for Metabase?**
 For the open-source version, community support is available. Paid plans often include professional support.
 
-**8. Can I customize Metabase to suit my individual needs?**  
+**8. Can I customize Metabase to suit my individual needs?**
 Yes, thanks to its open-source nature, Metabase is highly customizable and can be extended with plugins and add-ons.
 
 ---
+
+## Editorial assessment
+
+Metabase should not be judged by its feature list alone. The useful question is whether it improves a real workflow for analytics, reporting or data-driven decisions without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Metabase actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Metabase on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how data quality, assumptions, exports, auditability and domain review will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Metabase can look more useful in a demo than it becomes in production.

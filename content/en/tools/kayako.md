@@ -1,6 +1,11 @@
 ---
 slug: kayako
 title: Kayako
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Subscription
 tags:
@@ -19,6 +24,16 @@ Kayako is a cloud-based helpdesk and customer service platform that helps compan
 ## Who is Kayako suitable for?
 
 Kayako is aimed primarily at small to medium-sized businesses looking for a scalable solution for customer service. The tool is especially suitable for companies that want to bring multiple communication channels together on one platform, including email, live chat, social media, and phone. Support teams that value collaborative workflows and want to improve service quality through automation can also benefit from Kayako. Because of its SaaS structure, the solution is flexible and can be adapted to different requirements depending on the plan.
+
+## Editorial assessment
+
+Kayako should not be judged by its feature list alone. The useful question is whether it improves a real workflow for AI-assisted research, automation or support work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Kayako actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Kayako on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how data sources, prompt rules, review, privacy and ownership will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Kayako can look more useful in a demo than it becomes in production.
 
 ## Key Features
 
@@ -62,26 +77,26 @@ Kayako offers a subscription-based pricing model with various plans that differ 
 
 ## FAQ
 
-**1. Is Kayako suitable for small businesses?**  
+**1. Is Kayako suitable for small businesses?**
 Yes, Kayako offers plans specifically tailored to small and medium-sized businesses and allows for easy scaling.
 
-**2. Which communication channels does Kayako support?**  
+**2. Which communication channels does Kayako support?**
 Kayako supports email, live chat, social media, phone, and other channels to ensure centralized management of customer requests.
 
-**3. Is there a free version of Kayako?**  
+**3. Is there a free version of Kayako?**
 Kayako generally does not offer a permanently free version, but it often provides a free trial to test the features.
 
-**4. Can Kayako be integrated with other tools?**  
+**4. Can Kayako be integrated with other tools?**
 Yes, Kayako can be connected with various CRM systems, e-commerce platforms, and other SaaS solutions.
 
-**5. How does automation work in Kayako?**  
+**5. How does automation work in Kayako?**
 Automations are based on rules and triggers that automatically handle repetitive tasks such as ticket assignment or prioritization.
 
-**6. Are there mobile apps for Kayako?**  
+**6. Are there mobile apps for Kayako?**
 Yes, Kayako provides mobile applications that allow support agents to respond to requests while on the go.
 
-**7. How transparent is the pricing?**  
+**7. How transparent is the pricing?**
 Prices vary depending on the plan and number of users; detailed information is usually available on the provider's website or upon request.
 
-**8. Can Kayako also be used for international teams?**  
+**8. Can Kayako also be used for international teams?**
 Yes, the platform supports multiple languages and is suitable for use in international support teams.

@@ -1,6 +1,11 @@
 ---
 slug: h5p
 title: H5P
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: Developer
 price_model: Open Source
 tags:
@@ -59,12 +64,21 @@ H5P is open source. Depending on the setup, costs may come from hosting, LMS int
 
 ## FAQ
 
-**Is H5P free?**  
+**Is H5P free?**
 The core technology is open source. Some hosted or commercial services may require payment.
 
-**Can H5P be used in Moodle?**  
+**Can H5P be used in Moodle?**
 Yes. H5P is commonly used in Moodle and other learning platforms.
 
-**Is H5P only for quizzes?**  
+**Is H5P only for quizzes?**
 No. Quizzes are common, but H5P supports many interactive content types.
 
+## Editorial assessment
+
+H5P should not be judged by its feature list alone. The useful question is whether it improves a real workflow for development, testing, infrastructure or technical handover without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether H5P actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test H5P on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how repository rules, review, tests, permissions and rollback will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, H5P can look more useful in a demo than it becomes in production.

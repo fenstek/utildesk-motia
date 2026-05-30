@@ -1,6 +1,11 @@
 ---
 slug: amazon-codewhisperer
 title: Amazon CodeWhisperer
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: Developer
 price_model: Plan-based
 tags:
@@ -17,15 +22,24 @@ translation: full
 
 Amazon CodeWhisperer is a KI-based tool for code generation that helps developers write faster and more efficiently. It provides intelligent suggestions for code snippets, functions, and entire code blocks directly in the development environment. This supports the automation of recurring tasks and increases productivity in software development.
 
-## For Who is Amazon CodeWhisperer Suitable?
+## Who is Amazon CodeWhisperer for?
 
 Amazon CodeWhisperer is suitable for software developers of all skill levels who want to speed up their programming work. It is particularly useful for developers who frequently write similar code snippets or implement complex algorithms. Teams that want to ensure consistent and high-quality code also benefit from the automated suggestions. The tool supports multiple programming languages and is therefore versatile and adaptable.
-
 
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/amazon-codewhisperer-editorial.webp" alt="Illustration for Amazon CodeWhisperer: code suggestions glowing inside a safe developer workshop" loading="lazy" decoding="async" />
 </figure>
+
+## Editorial assessment
+
+Amazon CodeWhisperer should not be judged by its feature list alone. The useful question is whether it improves a real workflow for development, testing, infrastructure or technical handover without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Amazon CodeWhisperer actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Amazon CodeWhisperer on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how repository rules, review, tests, permissions and rollback will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Amazon CodeWhisperer can look more useful in a demo than it becomes in production.
 
 ## Key Features
 
@@ -70,26 +84,26 @@ The pricing of Amazon CodeWhisperer varies depending on usage and the chosen pla
 
 ## FAQ
 
-**1. Which programming languages does Amazon CodeWhisperer support?**  
+**1. Which programming languages does Amazon CodeWhisperer support?**
 Amazon CodeWhisperer supports multiple popular languages such as Python, Java, JavaScript, and others. The exact list may vary depending on the version.
 
-**2. Does the tool work offline?**  
+**2. Does the tool work offline?**
 Amazon CodeWhisperer is primarily cloud-based, so an internet connection is required for most functions.
 
-**3. Can I use Amazon CodeWhisperer in any IDE?**  
+**3. Can I use Amazon CodeWhisperer in any IDE?**
 The tool is optimized for certain development environments, including Visual Studio Code and AWS Cloud9. Other IDEs may also be supported, depending on the integration.
 
-**4. How secure is using Amazon CodeWhisperer with sensitive data?**  
+**4. How secure is using Amazon CodeWhisperer with sensitive data?**
 Amazon prioritizes data protection, but users should be cautious when transmitting sensitive or proprietary codebases.
 
-**5. Is there a free trial version?**  
+**5. Is there a free trial version?**
 In general, Amazon CodeWhisperer offers a free stage or trial phase to ease the entry, with details to be checked with the provider, as prices and conditions can change.
 
-**6. How does Amazon CodeWhisperer differ from GitHub Copilot?**  
+**6. How does Amazon CodeWhisperer differ from GitHub Copilot?**
 Both tools use KI for code generation, differ in integration, supported languages, and specific features.
 
-**7. Can Amazon CodeWhisperer learn my own coding style?**  
+**7. Can Amazon CodeWhisperer learn my own coding style?**
 The tool tailors suggestions to the current context, a full adaptation to individual coding styles may be limited.
 
-**8. How is Amazon CodeWhisperer integrated into existing projects?**  
+**8. How is Amazon CodeWhisperer integrated into existing projects?**
 Through plugins or extensions for supported IDEs, the tool can be easily integrated into the development workflow.

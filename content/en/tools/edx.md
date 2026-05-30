@@ -1,6 +1,11 @@
 ---
 slug: edx
 title: edX
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Freemium
 tags:
@@ -17,9 +22,19 @@ translation: full
 
 edX is a leading online learning platform that offers high-quality courses from renowned universities and institutions worldwide. It enables learners to acquire new skills, enhance their career prospects, or simply expand their knowledge – all from the comfort of their own homes. The platform offers a wide range of topics, including numerous courses in the field of Artificial Intelligence (AI).
 
-## For whom is edX suitable?
+## Who is edX for?
 
 edX is designed for a broad audience: students, working professionals, career changers, and anyone looking to upskill or reskill. The platform is particularly well-suited for individuals who want to learn flexibly and independently, without being tied to a specific schedule. Many companies are also using edX to train their employees.
+
+## Editorial assessment
+
+edX should not be judged by its feature list alone. The useful question is whether it improves a real workflow for AI-assisted research, automation or support work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether edX actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test edX on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how data sources, prompt rules, review, privacy and ownership will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, edX can look more useful in a demo than it becomes in production.
 
 ## Key Features
 

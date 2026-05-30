@@ -1,6 +1,11 @@
 ---
 slug: rstudio
 title: RStudio
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: Audio
 price_model: Freemium
 tags:
@@ -19,6 +24,16 @@ RStudio is an integrated development environment (IDE) for the R programming lan
 ## Who is RStudio suitable for?
 
 RStudio is aimed at data scientists, statisticians, developers, and analysts who work with the R programming language. It is especially well suited for users who want to carry out extensive data analyses, statistical modeling, or visualizations. In the audio field, it is particularly useful for those who want to evaluate audio data quantitatively or work with machine learning in the context of audio experiments. Developers who want to build data-driven applications or prototypes in R will also find a powerful environment here.
+
+## Editorial assessment
+
+RStudio should not be judged by its feature list alone. The useful question is whether it improves a real workflow for audio production, transcription, editing or sound work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether RStudio actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test RStudio on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how source material, export formats, rights, quality checks and handover will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, RStudio can look more useful in a demo than it becomes in production.
 
 ## Key Features
 
@@ -65,26 +80,26 @@ RStudio offers a freemium pricing model. The basic version is free and includes 
 
 ## FAQ
 
-**1. Is RStudio free to use?**  
+**1. Is RStudio free to use?**
 Yes, the basic version of RStudio is available for free and offers many features for individual users.
 
-**2. Which operating systems are supported?**  
+**2. Which operating systems are supported?**
 RStudio runs on Windows, macOS, and Linux.
 
-**3. Do I need prior knowledge of R to use RStudio?**  
+**3. Do I need prior knowledge of R to use RStudio?**
 Basic knowledge of R is helpful, since RStudio is an IDE for R.
 
-**4. Can I use RStudio to analyze audio data?**  
+**4. Can I use RStudio to analyze audio data?**
 Yes, with the appropriate R packages, audio data can be analyzed and visualized, with RStudio serving as the development environment.
 
-**5. Is there a server version of RStudio?**  
+**5. Is there a server version of RStudio?**
 Yes, RStudio Server allows access to RStudio through a web browser.
 
-**6. What alternatives are there to RStudio?**  
+**6. What alternatives are there to RStudio?**
 Alternatives include Jupyter Notebook, Visual Studio Code with R extensions, or RKWard.
 
-**7. What does the pricing model look like?**  
+**7. What does the pricing model look like?**
 RStudio offers a freemium model with a free basic version and paid subscriptions for advanced features.
 
-**8. Does RStudio support version control?**  
+**8. Does RStudio support version control?**
 Yes, Git and other version control systems are integrated and can be used directly in the IDE.

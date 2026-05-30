@@ -1,6 +1,11 @@
 ---
 slug: photopea
 title: Photopea
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Freemium
 tags:
@@ -72,26 +77,36 @@ Photopea offers a freemium model. The basic functions are available for free, wi
 
 ## FAQ
 
-**1. Is Photopea really free?**  
+**1. Is Photopea really free?**
 Yes, Photopea can be used for free in the browser, although with ads. There are also paid subscriptions for additional features and ad-free use.
 
-**2. Do I need to install anything?**  
+**2. Do I need to install anything?**
 No, Photopea runs entirely in the browser and does not require installation.
 
-**3. Which file formats are supported?**  
+**3. Which file formats are supported?**
 Photopea supports many formats, including PSD, JPG, PNG, GIF, SVG, PDF, XCF, and others.
 
-**4. Can I edit Photoshop files (PSD) with Photopea?**  
+**4. Can I edit Photoshop files (PSD) with Photopea?**
 Yes, Photopea can open, edit, and save PSD files, making it a good alternative for Photoshop users.
 
-**5. Is Photopea suitable for professional designers?**  
+**5. Is Photopea suitable for professional designers?**
 Yes, especially for designers looking for a flexible, platform-independent solution. For very complex projects, however, desktop software may be more advantageous.
 
-**6. How secure is my data when using it?**  
+**6. How secure is my data when using it?**
 Data is processed locally in the browser, but it can also be saved online. It is recommended to store sensitive data locally only.
 
-**7. Is there an offline version of Photopea?**  
+**7. Is there an offline version of Photopea?**
 No, Photopea works exclusively online in the browser.
 
-**8. How can I use Photopea without ads?**  
+**8. How can I use Photopea without ads?**
 By subscribing to a paid plan, you can remove the ads and unlock additional features.
+
+## Editorial assessment
+
+Photopea should not be judged by its feature list alone. The useful question is whether it improves a real workflow for design, image editing or creative production without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Photopea actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Photopea on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how briefs, variants, brand rules, rights and final handover will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Photopea can look more useful in a demo than it becomes in production.

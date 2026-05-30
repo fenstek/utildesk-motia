@@ -1,6 +1,11 @@
 ---
 slug: nuance-dragon
 title: Nuance Dragon
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: 'Paid, Subscription'
 tags:
@@ -32,6 +37,16 @@ Nuance Dragon is suitable for professionals who regularly write texts and want t
 - Offline use available to meet privacy requirements
 - Ability to create custom macros and commands for automation
 - Compatibility with mobile devices and cloud services (depending on the plan)
+
+## Editorial assessment
+
+Nuance Dragon should not be judged by its feature list alone. The useful question is whether it improves a real workflow for audio production, transcription, editing or sound work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Nuance Dragon actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Nuance Dragon on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how source material, export formats, rights, quality checks and handover will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Nuance Dragon can look more useful in a demo than it becomes in production.
 
 ## Advantages and Disadvantages
 
@@ -66,26 +81,26 @@ Nuance Dragon is offered in different versions that vary in features and price. 
 
 ## FAQ
 
-**1. How accurate is Nuance Dragon's speech recognition?**  
+**1. How accurate is Nuance Dragon's speech recognition?**
 Accuracy is usually above 90% depending on the environment and customization, but it can be improved further through individual training.
 
-**2. Which languages does Nuance Dragon support?**  
+**2. Which languages does Nuance Dragon support?**
 Supported languages vary by version and plan. English, German, French, and other widely used languages are mainly available.
 
-**3. Can I use Nuance Dragon offline?**  
+**3. Can I use Nuance Dragon offline?**
 Yes, some versions allow local processing without an internet connection, which increases privacy and security.
 
-**4. Is Nuance Dragon suitable for private or professional use?**  
+**4. Is Nuance Dragon suitable for private or professional use?**
 Both. There are versions for private users as well as specially adapted editions for professional users such as doctors or lawyers.
 
-**5. How does the software training work?**  
+**5. How does the software training work?**
 The software learns through the user's corrections and adjustments to improve recognition accuracy for an individual voice.
 
-**6. What system requirements does Nuance Dragon have?**  
+**6. What system requirements does Nuance Dragon have?**
 The requirements depend on the version, but usually include current Windows or Mac operating systems and sufficient storage space.
 
-**7. Is there a free trial version?**  
+**7. Is there a free trial version?**
 Depending on the provider, free trial versions or demo versions may be available so you can test the features before buying.
 
-**8. How secure is my data when using Nuance Dragon?**  
+**8. How secure is my data when using Nuance Dragon?**
 With locally installed versions, your data remains on your device. Cloud-based variants are subject to the privacy policies of the respective provider.

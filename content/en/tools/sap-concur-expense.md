@@ -1,6 +1,11 @@
 ---
 slug: sap-concur-expense
 title: SAP Concur Expense
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Subscription
 tags:
@@ -60,26 +65,36 @@ SAP Concur Expense is usually offered as a subscription. Exact costs depend on t
 
 ## FAQ
 
-**1. How does receipt capture work in SAP Concur Expense?**  
+**1. How does receipt capture work in SAP Concur Expense?**
 Receipts can be photographed with a smartphone app, forwarded by email, or uploaded directly in the web portal. The integrated OCR technology automatically extracts relevant data such as date, amount, and merchant.
 
-**2. Is SAP Concur Expense suitable for small businesses?**  
+**2. Is SAP Concur Expense suitable for small businesses?**
 The tool is primarily designed for medium-sized and large companies. Small businesses can also benefit depending on their needs, but they should weigh the costs and feature set.
 
-**3. What integrations does SAP Concur Expense offer?**  
+**3. What integrations does SAP Concur Expense offer?**
 SAP Concur Expense can connect with many ERP, accounting, and travel management systems, including SAP ERP, Oracle, NetSuite, and others.
 
-**4. Can I use SAP Concur Expense on mobile?**  
+**4. Can I use SAP Concur Expense on mobile?**
 Yes, there is a mobile app for iOS and Android that lets users capture receipts, submit expenses, and manage approvals while on the move.
 
-**5. How secure is the data in SAP Concur Expense?**  
+**5. How secure is the data in SAP Concur Expense?**
 As a cloud solution, SAP Concur meets high security standards, including encryption, access controls, and compliance with data protection policies.
 
-**6. Is there a trial period or free version?**  
+**6. Is there a trial period or free version?**
 Depending on the provider and plan, trial periods may be available. A permanently free version is not available.
 
-**7. How flexible are the approval processes?**  
+**7. How flexible are the approval processes?**
 Approval workflows can be tailored to the company structure, including multi-step approvals and escalation rules.
 
-**8. Does SAP Concur Expense support international expenses?**  
+**8. Does SAP Concur Expense support international expenses?**
 Yes, the tool supports multiple currencies and automatically accounts for exchange rates during expense reporting.
+
+## Editorial assessment
+
+SAP Concur Expense should not be judged by its feature list alone. The useful question is whether it improves a real workflow for automation, integrations or recurring process steps without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether SAP Concur Expense actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test SAP Concur Expense on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how triggers, failure paths, owners, logs and manual approvals will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, SAP Concur Expense can look more useful in a demo than it becomes in production.
