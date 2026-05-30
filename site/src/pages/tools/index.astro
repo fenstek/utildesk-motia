@@ -29,6 +29,17 @@ const sortedTags = Array.from(tagFrequency.entries())
   .map(([tag]) => tag);
 const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 24);
 const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
+const categoryCounts = Array.from(
+  enabledTools.reduce((map, tool) => {
+    const category = tool.category || "Unsortiert";
+    map.set(category, (map.get(category) || 0) + 1);
+    return map;
+  }, new Map<string, number>()),
+)
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "de"))
+  .slice(0, 8);
+const jumpLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "#"];
+
 const toolsItemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -103,40 +114,39 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       </div>
     </header>
 
-    <div class="inv-controls">
-      <div class="inv-controls-search">
-        <input
-          type="search"
-          id="search-input"
-          class="inv-search-input"
-          placeholder="Tools suchen…"
-          autocomplete="off"
-        />
-        <select id="sort-select" class="inv-search-input inv-sort-select" aria-label="Sortierung">
-          <option value="az">A–Z</option>
-          <option value="new" selected>Neu hinzugefügt</option>
-          <option value="pop">Beliebt</option>
-        </select>
+    <div class="inv-controls inv-modebar">
+      <input
+        type="search"
+        id="search-input"
+        class="inv-search-input inv-search-hidden"
+        placeholder="Tools suchen…"
+        autocomplete="off"
+      />
+      <div class="inv-mode-left">
+        <span class="inv-mode-label">Anzeige</span>
+        <span class="inv-mode-button inv-mode-button-active">▦ Register</span>
+        <span class="inv-mode-button">▪ Setzkasten</span>
       </div>
-      {visibleTags.length > 0 && (
-        <div class="inv-tags-strip" id="tag-filter-row">
-          <span class="inv-tags-label">Top-Tags →</span>
-          <div class="inv-tags-list" id="tag-filter-list">
-            {visibleTags.map((tag) => (
-              <a
-                href={tagHref(tag)}
-                class="inv-tag-chip"
-                data-tag={tag}
-              >
-                #{tag}
-              </a>
-            ))}
-            <a href="/tools/" class="inv-tag-clear" id="clear-filter-btn" style="display: none;">
-              ✕ Filter löschen
-            </a>
-          </div>
-        </div>
-      )}
+      <div class="inv-sort-tabs">
+        <span class="inv-mode-label">Sortierung</span>
+        <select id="sort-select" class="inv-sort-select" aria-label="Sortierung">
+          <option value="new" selected>Zuletzt geprüft</option>
+          <option value="az">A – Z</option>
+          <option value="pop">Nach Verdikt</option>
+        </select>
+        <span class="inv-sort-ghost">Nach Kategorie</span>
+      </div>
+      <div class="inv-mode-right">
+        <span>Anzeige · 42 von {enabledTools.length.toLocaleString("de-DE")}</span>
+        <a href="/api/tools.json">⇩ als CSV</a>
+      </div>
+    </div>
+
+    <div class="inv-jumpbar" aria-label="Sprungmarken">
+      <span class="inv-jump-label">Sprungmarken</span>
+      {jumpLetters.map((letter) => (
+        <a href={`/tools/?sort=az#${letter.toLowerCase()}`} class="inv-jump-letter">{letter}</a>
+      ))}
     </div>
 
     <div class="inv-table-head" aria-hidden="true">
@@ -151,6 +161,23 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   </div>
 
   <div class="tool-akte inv-list-wrap">
+  <aside class="inv-filter-rail" aria-label="Filter">
+    <div class="inv-filter-kicker">↳ Filter</div>
+    <h2>Auswahl<br />einschränken.</h2>
+    <div class="inv-filter-group">
+      <h3>Verdikt</h3>
+      <p><span class="inv-filter-box inv-filter-box-fill"></span>✓ Empfehlen <em>621</em></p>
+      <p><span class="inv-filter-box"></span>◐ Mit Vorbehalt <em>284</em></p>
+      <p><span class="inv-filter-box"></span>⊘ Überbewertet <em>124</em></p>
+      <p><span class="inv-filter-box"></span>× Nicht empfehlen <em>83</em></p>
+    </div>
+    <div class="inv-filter-group">
+      <h3>Kategorie</h3>
+      {categoryCounts.map(([category, count]) => (
+        <p><span class="inv-filter-box"></span>{category} <em>{count}</em></p>
+      ))}
+    </div>
+  </aside>
   <!-- Tools Grid -->
   <div class="tools-grid inv-register" id="tools-grid">
     {enabledTools.map((tool, idx) => (
