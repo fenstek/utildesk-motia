@@ -1,6 +1,11 @@
 ---
 slug: be-my-eyes
 title: Be My Eyes
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Free
 tags:
@@ -29,6 +34,16 @@ Be My Eyes is primarily designed for people with visual impairments or blindness
 - **Integration with Companies:** The possibility for companies to offer professional support through trained staff.
 - **Automated Assistance:** AI-powered functions are being developed to answer simple questions automatically.
 - **Data Protection and Security:** High standards for protecting user privacy.
+
+## Editorial assessment
+
+Be My Eyes should not be judged by its feature list alone. The useful question is whether it improves a real workflow for automation, integrations or recurring process steps without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Be My Eyes actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Be My Eyes on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how triggers, failure paths, owners, logs and manual approvals will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Be My Eyes can look more useful in a demo than it becomes in production.
 
 ## Advantages and Disadvantages
 
@@ -62,26 +77,26 @@ Be My Eyes is free for visually impaired users and volunteers. For companies and
 
 ## FAQ
 
-**1. How does Be My Eyes work?**  
+**1. How does Be My Eyes work?**
 The app connects visually impaired users via video calls with volunteers who provide visual support. The volunteer sees the user's camera view and can assist with questions.
 
-**2. Is Be My Eyes really free?**  
+**2. Is Be My Eyes really free?**
 Yes, the basic functions are free for users and volunteers. Companies may incur costs depending on usage.
 
-**3. Which languages are supported?**  
+**3. Which languages are supported?**
 Be My Eyes is available in many languages, including English, Spanish, French, and others.
 
-**4. Do I need special equipment?**  
+**4. Do I need special equipment?**
 A smartphone with a camera and internet connection is sufficient. The app is available for both iOS and Android devices.
 
-**5. How secure are my data?**  
+**5. How secure are my data?**
 Be My Eyes prioritizes data protection. Video calls are used only for support purposes and not stored.
 
-**6. Can I also become a volunteer?**  
+**6. Can I also become a volunteer?**
 Yes, anyone can register as a volunteer and help visually impaired people.
 
-**7. Are there automated functions without volunteers?**  
+**7. Are there automated functions without volunteers?**
 Partially, AI-powered functions are being developed to answer simple questions automatically, but the main support comes from volunteers.
 
-**8. What happens if there are no volunteers available?**  
+**8. What happens if there are no volunteers available?**
 In rare cases, there may be waiting times. The app strives to maintain a large volunteer community to ensure availability.

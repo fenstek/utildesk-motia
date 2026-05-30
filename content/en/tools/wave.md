@@ -1,6 +1,11 @@
 ---
 slug: wave
 title: Wave
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Freemium
 tags:
@@ -18,6 +23,16 @@ Wave is cloud-based accounting and finance software designed specifically for sm
 ## Who is Wave for?
 
 Wave is aimed primarily at small business owners, startups, freelancers, and self-employed professionals who are looking for an affordable, easy-to-use solution for accounting and invoicing. The software is ideal for users who do not have extensive accounting experience but still need professional financial tools. It is also suitable for businesses that want to digitize and automate their financial processes without investing in expensive software.
+
+## Editorial assessment
+
+Wave should not be judged by its feature list alone. The useful question is whether it improves a real workflow for AI-assisted research, automation or support work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Wave actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Wave on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how data sources, prompt rules, review, privacy and ownership will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Wave can look more useful in a demo than it becomes in production.
 
 ## Key Features
 
@@ -64,26 +79,26 @@ Wave offers a free basic plan that includes accounting, invoicing, and basic fin
 
 ## FAQ
 
-**1. Is Wave really free?**  
+**1. Is Wave really free?**
 Yes, Wave's basic plan is free and offers core accounting and invoicing features. Fees may apply for add-on services such as payment processing or payroll.
 
-**2. Which payment methods does Wave support?**  
+**2. Which payment methods does Wave support?**
 Wave supports credit card payments and ACH bank transfers, among others, depending on the region and payment provider.
 
-**3. Can I use Wave on my smartphone?**  
+**3. Can I use Wave on my smartphone?**
 Yes, Wave offers a mobile app that lets you manage your finances on the go.
 
-**4. Is Wave suitable for international businesses?**  
+**4. Is Wave suitable for international businesses?**
 Wave supports multiple currencies and tax types, but availability and features may vary by country.
 
-**5. How secure is my data with Wave?**  
+**5. How secure is my data with Wave?**
 Wave uses modern security standards and encryption to protect your data. Because it is a cloud solution, an internet connection is required.
 
-**6. Can I integrate Wave with other tools?**  
+**6. Can I integrate Wave with other tools?**
 Yes, Wave offers integrations with various apps and payment providers to streamline workflows.
 
-**7. Is there a trial period for paid features?**  
+**7. Is there a trial period for paid features?**
 Depending on the service, trial periods or free trial versions may be available. Details can be found on the official website.
 
-**8. How does automatic expense categorization work?**  
+**8. How does automatic expense categorization work?**
 Wave uses AI to automatically analyze transactions and assign them to suitable categories, making accounting easier.

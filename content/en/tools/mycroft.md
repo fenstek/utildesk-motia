@@ -1,6 +1,11 @@
 ---
 slug: mycroft
 title: Mycroft
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Open Source
 tags:
@@ -65,26 +70,36 @@ Mycroft is open source and can generally be used free of charge. There are no li
 
 ## FAQ
 
-**1. Is Mycroft really free?**  
+**1. Is Mycroft really free?**
 Yes, Mycroft is available as a free open-source project. Users can download the code and install it on their own hardware without paying license fees.
 
-**2. Which languages does Mycroft support?**  
+**2. Which languages does Mycroft support?**
 Mycroft supports several languages, with English covered best. Support for additional languages depends on the community and individual customization.
 
-**3. Do I need special hardware to use Mycroft?**  
+**3. Do I need special hardware to use Mycroft?**
 Mycroft runs on various devices, including Raspberry Pi, desktop PCs, and compatible smart home devices. Special hardware may make sense for optimal performance, but it is not strictly required.
 
-**4. How secure is my data with Mycroft?**  
+**4. How secure is my data with Mycroft?**
 Because Mycroft is open source and supports local processing, users keep control over their data. No data is automatically sent to central servers run by large companies.
 
-**5. Can I connect Mycroft to my smart home?**  
+**5. Can I connect Mycroft to my smart home?**
 Yes, Mycroft supports integration with many smart home devices and protocols, although compatibility varies depending on the devices and skills used.
 
-**6. Is there official support for Mycroft?**  
+**6. Is there official support for Mycroft?**
 Mycroft is mainly supported by the community. There are forums, documentation, and developer resources, but no traditional customer service like you would get from commercial providers.
 
-**7. How can I extend or customize Mycroft?**  
+**7. How can I extend or customize Mycroft?**
 Mycroft offers an open API and development environment that lets users program their own skills and adapt existing functions.
 
-**8. Does Mycroft work without an internet connection?**  
+**8. Does Mycroft work without an internet connection?**
 Some basic functions of Mycroft can be used offline, but many services require an internet connection. The extent of offline functionality depends on the setup.
+
+## Editorial assessment
+
+Mycroft should not be judged by its feature list alone. The useful question is whether it improves a real workflow for audio production, transcription, editing or sound work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Mycroft actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Mycroft on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how source material, export formats, rights, quality checks and handover will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Mycroft can look more useful in a demo than it becomes in production.

@@ -1,13 +1,17 @@
 ---
 slug: be-my-eyes
 title: Be My Eyes
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: AI
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://be-my-eyes.com/"
 popularity: 0
 ---
-
 # Be My Eyes
 
 Be My Eyes ist eine innovative App, die Menschen mit Sehbehinderungen durch den Einsatz von künstlicher Intelligenz und einer globalen Gemeinschaft von Freiwilligen unterstützt. Die Anwendung ermöglicht es blinden und sehbehinderten Nutzern, visuelle Hilfe in Echtzeit zu erhalten, indem sie per Videoanruf mit sehenden Helfern verbunden werden. So wird der Alltag erleichtert und Barrieren im täglichen Leben reduziert.
@@ -15,6 +19,17 @@ Be My Eyes ist eine innovative App, die Menschen mit Sehbehinderungen durch den 
 ## Für wen ist Be My Eyes geeignet?
 
 Be My Eyes richtet sich primär an Menschen mit Sehbehinderungen oder Blindheit, die Unterstützung im Alltag benötigen. Die App ist ideal für Nutzer, die gelegentlich visuelle Hilfe benötigen, etwa beim Lesen von Etiketten, Erkennen von Farben oder beim Navigieren in unbekannten Umgebungen. Ebenso profitieren Freiwillige, die ihre Zeit sinnvoll einsetzen und anderen helfen möchten, von der Plattform. Organisationen, die Menschen mit Sehbehinderungen unterstützen, können Be My Eyes ebenfalls in ihre Angebote integrieren.
+
+
+## Redaktionelle Einschätzung
+
+Be My Eyes sollte nicht nur nach Funktionsliste bewertet werden. Entscheidend ist, ob das Werkzeug in einem echten Ablauf für Automatisierung, Integrationen oder wiederkehrende Prozessschritte verlässlich Entlastung bringt, ohne neue Abstimmungs- oder Kontrolllücken zu erzeugen.
+
+Ein sinnvoller Test beginnt deshalb klein: ein realer Anwendungsfall, eine verantwortliche Person, klare Eingangsdaten und ein überprüfbares Ergebnis nach ein bis zwei Wochen. Erst dann zeigt sich, ob Be My Eyes den Prozess wirklich verbessert oder nur eine weitere Oberfläche in den Alltag bringt.
+
+- **Guter Start:** Be My Eyes zunächst an einem begrenzten Workflow testen, nicht sofort als allgemeine Standardlösung ausrollen.
+- **Prüfpunkt:** Vor dem Rollout klären, wie Trigger, Fehlerpfade, Owner, Logs und manuelle Freigaben dokumentiert und geprüft werden.
+- **Grenze:** Wenn Zuständigkeiten, Datenpflege oder Review fehlen, wirkt Be My Eyes schnell leistungsfähiger, als es im Betrieb tatsächlich ist.
 
 ## Hauptfunktionen
 
@@ -58,26 +73,26 @@ Be My Eyes ist für blinde und sehbehinderte Nutzer sowie Freiwillige kostenlos 
 
 ## FAQ
 
-**1. Wie funktioniert Be My Eyes?**  
+**1. Wie funktioniert Be My Eyes?**
 Die App verbindet sehbehinderte Nutzer per Videoanruf mit freiwilligen Helfern, die visuelle Unterstützung leisten. Der Helfer sieht die Kameraansicht des Nutzers und kann so bei Fragen helfen.
 
-**2. Ist Be My Eyes wirklich kostenlos?**  
+**2. Ist Be My Eyes wirklich kostenlos?**
 Ja, die Grundfunktionen sind für Nutzer und Freiwillige kostenlos. Für Unternehmen können je nach Nutzung Kosten entstehen.
 
-**3. Welche Sprachen werden unterstützt?**  
+**3. Welche Sprachen werden unterstützt?**
 Be My Eyes ist in vielen Sprachen verfügbar, darunter Deutsch, Englisch, Spanisch, Französisch und weitere.
 
-**4. Benötige ich eine spezielle Ausrüstung?**  
+**4. Benötige ich eine spezielle Ausrüstung?**
 Ein Smartphone mit Kamera und Internetverbindung ist ausreichend. Die App ist sowohl für iOS als auch Android verfügbar.
 
-**5. Wie sicher sind meine Daten?**  
+**5. Wie sicher sind meine Daten?**
 Be My Eyes legt großen Wert auf Datenschutz. Videoanrufe werden nur zum Zweck der Unterstützung genutzt und nicht gespeichert.
 
-**6. Kann ich auch als Helfer mitmachen?**  
+**6. Kann ich auch als Helfer mitmachen?**
 Ja, jeder kann sich als Freiwilliger registrieren und sehbehinderten Menschen helfen.
 
-**7. Gibt es automatische Funktionen ohne Helfer?**  
+**7. Gibt es automatische Funktionen ohne Helfer?**
 Teilweise werden KI-Funktionen ergänzt, die einfache Fragen automatisiert beantworten, doch die Hauptunterstützung erfolgt durch Freiwillige.
 
-**8. Was passiert, wenn keine Freiwilligen verfügbar sind?**  
+**8. Was passiert, wenn keine Freiwilligen verfügbar sind?**
 In seltenen Fällen kann es zu Wartezeiten kommen. Die App bemüht sich, eine möglichst große Helfergemeinschaft zu erhalten, um Verfügbarkeit zu gewährleisten.

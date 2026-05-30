@@ -1,6 +1,11 @@
 ---
 slug: discord
 title: Discord
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-30
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-30-editorial-remaining-tool-cards"
 category: Productivity
 price_model: Freemium
 tags:
@@ -36,6 +41,16 @@ Thanks to its scalability, Discord is suitable for both small groups and large c
 - **Push notifications**: Real-time updates on desktop and mobile devices.
 - **Search function and history**: Clear archiving and quick retrieval of messages.
 - **Community management tools**: Moderation features, polls, and announcements for organizing large groups.
+
+## Editorial assessment
+
+Discord should not be judged by its feature list alone. The useful question is whether it improves a real workflow for audio production, transcription, editing or sound work without creating new coordination or control gaps.
+
+A good evaluation starts small: one real use case, one responsible owner, clear input data and a result that can be reviewed after one or two weeks. Only then does it become clear whether Discord actually improves the process or simply adds another interface to daily work.
+
+- **Good starting point:** Test Discord on a limited workflow before turning it into a general default.
+- **Review point:** Before rollout, define how source material, export formats, rights, quality checks and handover will be documented and checked.
+- **Main limit:** Without ownership, data hygiene or review, Discord can look more useful in a demo than it becomes in production.
 
 ## Pros and Cons
 
