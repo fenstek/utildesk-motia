@@ -8,6 +8,10 @@ official_url: "https://play.ht/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
+disabled: true
+disabled_reason: "official_domain_not_resolving"
+lastReviewed: "2026-05-30"
+search_index: false
 ---
 # Play.ht
 

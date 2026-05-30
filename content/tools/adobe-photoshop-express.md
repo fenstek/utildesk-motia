@@ -4,10 +4,11 @@ title: Adobe Photoshop Express
 category: Design
 price_model: Freemium
 tags: [design, image]
-official_url: "https://www.adobe.com/express/feature/photo/editor"
+official_url: "https://www.adobe.com/products/photoshop-express.html"
 popularity: 76
 tier: C
 generated_at: 2026-05-27
+lastReviewed: "2026-05-30"
 ---
 # Adobe Photoshop Express
 

@@ -4,10 +4,10 @@ title: OpenAI GPT Agents
 category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [assistant, workflow]
-official_url: "https://platform.openai.com/docs/agents"
+official_url: "https://platform.openai.com/docs/guides/agents"
 popularity: 0
 tier: "A"
-lastReviewed: "2026-05-16"
+lastReviewed: "2026-05-30"
 mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen"]
 ---
 # OpenAI GPT Agents

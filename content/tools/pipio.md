@@ -8,6 +8,10 @@ official_url: "https://www.pipio.ai/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
+disabled: true
+disabled_reason: "official_site_returns_404"
+lastReviewed: "2026-05-30"
+search_index: false
 ---
 # Pipio
 
