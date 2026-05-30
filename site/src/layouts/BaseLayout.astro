@@ -86,8 +86,8 @@ const decisionDeck = locale === "en"
   ? "Editorial guides plus indexed AI tools from public sources"
   : "Redaktionelle Ratgeber plus indizierte KI-Tools aus öffentlichen Quellen";
 const decisionEdited = locale === "en" ? "Edited in Germany" : "Redigiert in Deutschland";
-const decisionBrand = locale === "en" ? "utildesk · decision desk" : "utildesk · entscheidungsblatt";
-const decisionBrandSub = locale === "en" ? "decision desk" : "entscheidungsblatt";
+const decisionBrand = "utildesk \u00b7 ki-blatt";
+const decisionBrandSub = "ki-blatt";
 const decisionFooterLines = locale === "en"
   ? ["No paid slots. No ranking theater.", "Editorial guides + indexed tools from public sources."]
   : ["Keine bezahlten Slots. Kein Ranking-Theater.", "Redaktionelle Ratgeber + indizierte Tools mit öffentlichen Quellen."];
@@ -123,6 +123,10 @@ const isDecisionHome = normalizedPathname === "/" || normalizedPathname === "/en
 const isRatgeberSection = /^(?:\/en)?\/ratgeber(?:\/|$)/.test(normalizedPathname);
 const isToolsSection = /^(?:\/en)?\/tools(?:\/|$)/.test(normalizedPathname);
 const isMethodologySection = normalizedPathname === "/methodologie/" || normalizedPathname === "/en/methodology/";
+const isToolDetail = /^(?:\/en)?\/tools\/[^/]+\/$/.test(normalizedPathname) && !/^(?:\/en)?\/tools\/tag\//.test(normalizedPathname);
+const isToolInventory = normalizedPathname === "/tools/" || normalizedPathname === "/en/tools/" || /^(?:\/en)?\/tools\/tag\/[^/]+\/$/.test(normalizedPathname);
+const isRatgeberIndex = normalizedPathname === "/ratgeber/" || normalizedPathname === "/en/ratgeber/";
+const isRatgeberDetail = /^(?:\/en)?\/ratgeber\/[^/]+\/$/.test(normalizedPathname);
 const DEFAULT_SOCIAL_IMAGE = "/social/utildesk-og.jpg";
 const socialImageSource = propImage || DEFAULT_SOCIAL_IMAGE;
 const socialImageUrl = /^(?:https?:)?\/\//i.test(socialImageSource)
@@ -379,6 +383,14 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
   <body>
     <a href="#main-content" class="skip-link">{ui.skipLink}</a>
 
+    <nav class="ki-blatt-topbar" aria-label={locale === "en" ? "Issue shortcuts" : "Ausgabe-Schnellnavigation"}>
+      <a class={isDecisionHome ? "active" : undefined} href={homeHref}>&#x21B3; {locale === "en" ? "Issue" : "Ausgabe"}</a>
+      <a class={isRatgeberDetail ? "active" : undefined} href={ratgeberHref}>&#x21B3; {locale === "en" ? "Decision" : "Entscheidung"}</a>
+      <a class={isToolDetail ? "active" : undefined} href={toolsHref}>&#x21B3; Tool-Akte</a>
+      <a class={isToolInventory ? "active" : undefined} href={toolsHref}>&#x21B3; {locale === "en" ? "Inventory" : "Inventar"}</a>
+      <a class={isRatgeberIndex ? "active" : undefined} href={ratgeberHref}>&#x21B3; {locale === "en" ? "Guide archive" : "Ratgeber-Archiv"}</a>
+    </nav>
+
     <header class="site-header ki-blatt-header">
       <nav class="ds-nav" aria-label={locale === "en" ? "Decision navigation" : "Entscheidungsnavigation"}>
         <div class="ds-nav-left">
@@ -391,6 +403,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
           <a href={ratgeberHref} aria-current={isRatgeberSection ? "page" : undefined}>{decisionNavGuides}</a>
           <a href={toolsHref} aria-current={isToolsSection ? "page" : undefined}>{decisionNavTools}</a>
           <a href={methodologyHref} aria-current={isMethodologySection ? "page" : undefined}>{decisionNavMethod}</a>
+          <a href={ratgeberHref}>{locale === "en" ? "Archive" : "Archiv"}</a>
         </div>
         <div class="ds-nav-right">
           <a href={languageSwitchTarget} hreflang={locale === "en" ? "de" : "en"} aria-label={ui.languageLabel}>{locale === "en" ? "DE" : "EN"}</a>
