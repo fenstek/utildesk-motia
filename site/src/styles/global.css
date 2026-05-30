@@ -6488,7 +6488,8 @@ html[data-design="decision"] body {
   white-space: nowrap;
 }
 
-.ki-blatt-topbar a {
+.ki-blatt-topbar a,
+.ki-blatt-topbar span {
   display: inline-flex;
   align-items: center;
   min-height: 28px;
@@ -6503,7 +6504,8 @@ html[data-design="decision"] body {
   color: #fff;
 }
 
-.ki-blatt-topbar a.active {
+.ki-blatt-topbar a.active,
+.ki-blatt-topbar span.active {
   background: #c5251c;
   color: #fff;
 }
