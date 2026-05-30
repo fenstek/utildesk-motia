@@ -78,9 +78,7 @@ Für Teams in Europa ist bei Valohai außerdem relevant, ob Verträge zur Auftra
 
 ## Redaktionelle Einschätzung
 
-Valohai wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Valohai wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Valohai passt, wenn ML-Experimente, Pipelines und Rechenumgebungen reproduzierbar betrieben werden müssen. Ein sinnvoller Pilot nutzt echte Trainingsjobs, Artefakte, Metriken und Rollen, damit klar wird, ob Experimenttracking und Infrastrukturkontrolle besser werden.
 
 ## Preise & Kosten
 

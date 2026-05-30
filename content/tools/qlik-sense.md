@@ -79,7 +79,7 @@ Für Teams in Europa ist bei Qlik Sense außerdem relevant, ob Verträge zur Auf
 
 ## Redaktionelle Einschätzung
 
-Qlik Sense wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Qlik Sense ist vor allem ein Infrastrukturbaustein: nützlich, wenn Betrieb, Datenflüsse und Verantwortlichkeiten klar beschrieben sind. Der praktische Wert zeigt sich in stabileren Abläufen, nicht in einer einzelnen Demo.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Qlik Sense wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

@@ -83,7 +83,7 @@ Für Teams in Europa ist bei FaceQ außerdem relevant, ob Verträge zur Auftrags
 
 ## Redaktionelle Einschätzung
 
-FaceQ wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+FaceQ sollte mit echten Gesprächsverläufen, Abbruchfällen und Übergaben getestet werden. Gute Automatisierung erkennt man daran, dass Nutzer schneller zum richtigen Ergebnis oder zu einem Menschen kommen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob FaceQ wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

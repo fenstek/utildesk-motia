@@ -68,7 +68,21 @@ const aiCategoryRules = [
   },
   {
     category: "AI Audio",
-    keywords: ["audio", "voice", "speech", "tts", "transcription", "podcast", "sound", "music"],
+    keywords: [
+      "audio",
+      "mikrofon",
+      "music",
+      "podcast",
+      "sound",
+      "speech",
+      "spracherkennung",
+      "transcription",
+      "transkription",
+      "tts",
+      "untertitel",
+      "voice",
+      "whisper",
+    ],
   },
   {
     category: "AI Research",

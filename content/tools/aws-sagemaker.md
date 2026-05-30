@@ -90,7 +90,7 @@ Für Teams in Europa ist bei AWS SageMaker außerdem relevant, ob Verträge zur 
 
 ## Redaktionelle Einschätzung
 
-AWS SageMaker wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+AWS SageMaker sollte mit realen Last-, Daten- und Betriebsbedingungen getestet werden. Erst Kosten, Fehlerszenarien und Übergaben zeigen, ob das Tool wirklich in die Architektur passt.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob AWS SageMaker wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

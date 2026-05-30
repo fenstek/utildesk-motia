@@ -133,7 +133,6 @@ Standardmäßig werden Präsentationen über iCloud synchronisiert und gespeiche
 **8. Brauche ich eine Internetverbindung, um Keynote zu nutzen?**  
 Für die lokale Nutzung ist keine Internetverbindung erforderlich, jedoch ist sie für die Cloud-Synchronisation und Kollaboration notwendig.
 
----
 
 **9. Wie testet man Apple Keynote sinnvoll im Team?**
 Am sinnvollsten ist ein kleiner Praxisfall: Ziel, Verantwortliche und Erfolgskriterien vor dem Test festlegen, danach Aufwand, Qualität und offene Reibung bei Apple Keynote ehrlich auswerten.

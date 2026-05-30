@@ -110,5 +110,3 @@ Ja, der Dienst ist speziell für unstrukturierte Textdaten wie E-Mails, Social M
 
 **8. Wie kann ich Amazon Comprehend in meine Anwendungen integrieren?**  
 Amazon Comprehend bietet REST-APIs und SDKs für verschiedene Programmiersprachen, die eine einfache Integration in individuelle Softwarelösungen ermöglichen.
-
----

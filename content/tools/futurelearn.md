@@ -79,7 +79,7 @@ Für Teams in Europa ist bei FutureLearn außerdem relevant, ob Verträge zur Au
 
 ## Redaktionelle Einschätzung
 
-FutureLearn wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+FutureLearn ist nur dann sinnvoll, wenn Lernziel, Materialpflege, Rollen und Auswertung zusammenpassen. Ein kurzer Kurs- oder Modul-Pilot zeigt meist schnell, ob Aufwand und Lernergebnis stimmen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob FutureLearn wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

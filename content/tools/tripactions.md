@@ -78,9 +78,7 @@ Für Teams in Europa ist bei TripActions außerdem relevant, ob Verträge zur Au
 
 ## Redaktionelle Einschätzung
 
-TripActions wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob TripActions wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+TripActions sollte an echten Reise- und Spesenprozessen bewertet werden: Buchung, Richtlinien, Genehmigung, Änderungen unterwegs und Reporting. Der Nutzen hängt davon ab, ob Reisende weniger improvisieren müssen und Finance trotzdem Kontrolle behält.
 
 ## Preise & Kosten
 

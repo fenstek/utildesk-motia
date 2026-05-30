@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Gerätefunktionen wirklich
 
 Cordova eignet sich für einfache Business-Apps, Prototypen und Teams mit Web-Schwerpunkt. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Gerätefunktionen wirklich gebraucht werden und ob Plugins gepflegt sind.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: bei anspruchsvoller nativer UX oder Performance an Grenzen stößt. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn im Pilot klar wird, dass anspruchsvolle native UX oder Performance-Anforderungen zu viel Zusatzarbeit erzeugen. Dann sollte der Ablauf zuerst enger gefasst werden.
 
 ## Redaktionelle Einschätzung
 
@@ -59,7 +59,7 @@ Cordova überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind,
 - Zugriff auf native Features ohne native Programmierkenntnisse
 - Flexibel durch Plugins und Web-Technologien
 - Unterstützt moderne Webstandards
-- Besonders wertvoll: für einfache Business-Apps, Prototypen und Teams mit Web-Schwerpunkt.
+- Gut geeignet: für einfache Business-Apps, Prototypen und Teams mit Web-Schwerpunkt.
 
 ### Nachteile
 
@@ -68,7 +68,7 @@ Cordova überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind,
 - Abhängigkeit von Plugins, die nicht immer aktuell oder vollständig sind
 - UI kann weniger „natürlich“ wirken als bei nativen Apps
 - Debugging komplexer Fehler kann zeitaufwändig sein
-- Achtungspunkt: bei anspruchsvoller nativer UX oder Performance an Grenzen stößt.
+- Grenze: Bei anspruchsvoller nativer UX oder Performance stößt das Tool schnell an Grenzen.
 
 ## Preise & Kosten
 

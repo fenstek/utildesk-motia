@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Follow-ups wirklich wertvo
 
 RightInbox eignet sich für kleine Teams, Sales, Recruiting und persönliche Nachfassroutinen. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Follow-ups wirklich wertvoll sind und welche nur Lärm erzeugen.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: bei zu vielen Erinnerungen die Inbox nur anders voll macht. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn schon im Pilot zu viele Erinnerungen entstehen und die Inbox nur anders voll wird. In solchen Fällen ist ein schlankerer Follow-up-Prozess oft sinnvoller als mehr Automatisierung.
 
 ## Redaktionelle Einschätzung
 
@@ -55,7 +55,7 @@ RightInbox überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden si
 - Hilft, die E-Mail-Kommunikation besser zu organisieren und zu verfolgen
 - Flexible Nutzungsmöglichkeiten durch verschiedene Funktionen im Tool
 - Unterstützt die Produktivität im Arbeitsalltag deutlich
-- Besonders wertvoll: für kleine Teams, Sales, Recruiting und persönliche Nachfassroutinen.
+- Gut geeignet: für kleine Teams, Sales, Recruiting und persönliche Nachfassroutinen.
 
 ### Nachteile
 
@@ -63,7 +63,7 @@ RightInbox überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden si
 - Einige erweiterte Features sind nur in kostenpflichtigen Plänen enthalten
 - Abhängigkeit von einer stabilen Internetverbindung und Gmail-Dienstverfügbarkeit
 - Datenschutzbedenken können je nach Unternehmensrichtlinie eine Rolle spielen
-- Achtungspunkt: bei zu vielen Erinnerungen die Inbox nur anders voll macht.
+- Vorher klären: bei zu vielen Erinnerungen die Inbox nur anders voll macht.
 
 ## Preise & Kosten
 

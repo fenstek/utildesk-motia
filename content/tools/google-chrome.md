@@ -8,7 +8,6 @@ official_url: "https://www.google.com/chrome/"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-15"
-lastReviewed: "2026-05-30"
 ---
 # Google Chrome
 

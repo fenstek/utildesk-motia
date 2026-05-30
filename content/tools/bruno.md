@@ -87,5 +87,3 @@ Die Entwicklung erfolgt über eine aktive Community, die regelmäßig Updates un
 
 **8. Kann ich Bruno an meine Bedürfnisse anpassen?**  
 Ja, durch den offenen Quellcode ist Bruno sehr flexibel und kann individuell erweitert werden.
-
----

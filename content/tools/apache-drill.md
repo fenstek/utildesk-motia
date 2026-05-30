@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Quellen angebunden werden 
 
 Apache Drill eignet sich für technische Analysten, die Datenquellen schnell prüfen müssen. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Quellen angebunden werden und wie Berechtigungen durchgesetzt werden.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: bei produktivem Reporting ohne Governance schwer kontrollierbar wird. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn im Pilot klar wird, dass produktives Reporting ohne Governance schnell schwer kontrollierbar wird. Dann sollte der Ablauf zuerst enger gefasst werden.
 
 ## Redaktionelle Einschätzung
 
@@ -56,14 +56,14 @@ Apache Drill überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden 
 - Leistungsfähige SQL-Unterstützung für komplexe Abfragen.
 - Skalierbar und geeignet für große Datenmengen.
 - Integration mit gängigen BI-Tools dank JDBC/ODBC.
-- Besonders wertvoll: für technische Analysten, die Datenquellen schnell prüfen müssen.
+- Gut geeignet: für technische Analysten, die Datenquellen schnell prüfen müssen.
 
 ### Nachteile
 - Einarbeitungszeit erforderlich, insbesondere bei komplexen Datenquellen.
 - Performance kann je nach Datenquelle und Infrastruktur variieren.
 - Fehlende umfassende kommerzielle Support-Optionen, da Community-getrieben.
 - Nicht immer optimal für hochtransaktionale Systeme oder sehr kleine Datenmengen.
-- Achtungspunkt: bei produktivem Reporting ohne Governance schwer kontrollierbar wird.
+- Grenze: Produktives Reporting ohne Governance wird schnell schwer kontrollierbar.
 
 ## Preise & Kosten
 

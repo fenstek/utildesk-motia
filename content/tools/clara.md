@@ -80,7 +80,7 @@ Clara wird mit einem freien Einstieg beworben. Ob und welche Premiumfunktionen v
 - [Gemini](/tools/gemini/): für Nutzer im Google-Ökosystem.
 - [Duolingo](/tools/duolingo/): wenn strukturiertes Sprachenlernen im Vordergrund steht.
 
-## Redaktionelle Einschätzung
+## Einordnung für die Auswahl
 
 Clara ist interessant, wenn Lernen durch Erklären, Nachfragen und Wiederholen besser funktioniert als durch reine Kurslisten. Der Wert hängt stark von Lernziel und Quellenqualität ab; als alleinige Wissensquelle ist es schwach, als strukturierter Begleiter für Verständnislücken kann es hilfreich sein.
 

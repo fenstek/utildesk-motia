@@ -72,9 +72,7 @@ Für Teams in Europa ist bei Zoho Creator außerdem relevant, ob Verträge zur A
 
 ## Redaktionelle Einschätzung
 
-Zoho Creator wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Zoho Creator wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Zoho Creator ist interessant, wenn ein klar begrenzter interner Prozess nicht mehr gut in Tabellen, Formularen oder E-Mail-Abstimmungen funktioniert. Vor dem Ausbau sollten Datenmodell, Rollen, Freigaben und Wartung geklärt sein, sonst wird aus Low-Code schnell ein schwer durchschaubares Inselsystem.
 
 ## Preise & Kosten
 

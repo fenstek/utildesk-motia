@@ -78,7 +78,7 @@ Im Katalog ist Kimi mit dem Preismodell **Freemium** geführt. Für eine belastb
 
 ## Redaktionelle Einschätzung
 
-Kimi ist dann eine gute Wahl, wenn KI-Assistent mit starkem Fokus auf lange Kontexte, Recherche und dokumentnahe Aufgaben tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Kimi passt, wenn lange Kontexte, Recherchefragen und dokumentnahe Aufgaben regelmäßig geprüft werden müssen. Ein guter Test nutzt echte Quellen und bewertet, ob Antworten belegbar, vollständig und nacharbeitbar bleiben.
 
 ## FAQ
 

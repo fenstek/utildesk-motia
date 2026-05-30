@@ -57,7 +57,7 @@ Fellow.app gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Proz
 - Unterstützt sowohl kleine Teams als auch größere Organisationen.
 - Vielfältige Integrationen mit anderen Tools und Kalendern.
 - Freemium-Modell ermöglicht Einstieg ohne Kosten.
-- Besonders wertvoll: für Führungskräfte, Projektteams und regelmäßige 1:1-Formate.
+- Nützlich, wenn Meetings mit Agenda, Entscheidung und Folgeaufgabe zusammengehalten werden sollen.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Fellow.app gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Proz
 - Für sehr komplexe Projektmanagement-Anforderungen möglicherweise nicht ausreichend.
 - Abhängigkeit von Internetverbindung für die Nutzung der Cloud-basierten Lösung.
 - Eingeschränkte Anpassungsmöglichkeiten in der kostenlosen Version.
-- Achtungspunkt: bei fehlender Meeting-Disziplin noch ein weiteres Notizsystem wird.
+- Ohne Meeting-Disziplin wird Fellow.app schnell zu einem weiteren Notizsystem.
 
 ## Preise & Kosten
 

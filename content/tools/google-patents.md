@@ -88,7 +88,7 @@ Für Teams in Europa ist bei Google Patents außerdem relevant, ob Verträge zur
 
 ## Redaktionelle Einschätzung
 
-Google Patents wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Google Patents sollte mit einer echten Recherchefrage geprüft werden: Quellenlage, Nachvollziehbarkeit, Export und fachliche Kontrolle entscheiden über den praktischen Wert.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Google Patents wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

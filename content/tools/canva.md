@@ -79,7 +79,7 @@ Im Katalog ist Canva mit dem Preismodell **Freemium** geführt. Für die Entsche
 - [Gimp](/tools/gimp/): kostenlose Option für Pixelbearbeitung und Retusche, aber weniger vorlagenorientiert.
 - Vista Create: ähnlich niedrigschwellige Plattform für Social- und Marketingdesigns mit anderem Vorlagenangebot.
 
-## Redaktionelle Einschätzung
+## Einordnung für die Auswahl
 
 Canva ist stark, weil es Gestaltung für Nicht-Designer operationalisiert. Genau deshalb sollte man es nicht mit einem vollwertigen Designsystem verwechseln: Für Kampagnen, Vorlagen und schnelle Varianten ist es hervorragend, für komplexe Marken- und Produktgestaltung braucht es klare Grenzen.
 

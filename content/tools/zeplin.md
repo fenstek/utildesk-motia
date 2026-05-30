@@ -73,9 +73,7 @@ Für Teams in Europa ist bei Zeplin außerdem relevant, ob Verträge zur Auftrag
 
 ## Redaktionelle Einschätzung
 
-Zeplin wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Zeplin wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Zeplin lohnt sich, wenn Designübergaben zwischen Produkt, Design und Entwicklung klarer werden sollen. Der Test sollte echte Screens, Komponenten, Tokens und Kommentare enthalten; erst dann zeigt sich, ob weniger Rückfragen entstehen.
 
 ## Preise & Kosten
 

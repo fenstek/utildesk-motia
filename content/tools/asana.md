@@ -93,7 +93,7 @@ Für Teams in Europa ist bei Asana außerdem relevant, ob Verträge zur Auftrags
 
 ## Redaktionelle Einschätzung
 
-Asana wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Asana lohnt sich vor allem, wenn Briefing, Rechte, Varianten und finale Abnahme zusammen gedacht werden. Ein Test mit echtem Marken- oder Kampagnenmaterial zeigt, ob der kreative Ablauf entlastet wird.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Asana wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

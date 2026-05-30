@@ -78,7 +78,7 @@ Im Katalog ist Magma mit dem Preismodell **Freemium** geführt. Für eine belast
 
 ## Redaktionelle Einschätzung
 
-Magma ist dann eine gute Wahl, wenn kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Magma passt, wenn mehrere Personen regelmäßig auf derselben digitalen Leinwand zeichnen, skizzieren oder visuelle Entscheidungen vorbereiten. Wichtig ist ein Test mit echtem Material, weil Pinselgefühl, Rechte und Exportqualität im Alltag stärker zählen als die Demo.
 
 ## FAQ
 

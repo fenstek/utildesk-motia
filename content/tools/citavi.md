@@ -74,11 +74,11 @@ Im Katalog ist Citavi mit dem Preismodell **Freemium** geführt. Für eine belas
 - [EndNote](/tools/endnote/): passender, wenn der Schwerpunkt auf lange wissenschaftliche Schreibprojekte, Literaturdatenbanken, Zitationsstile und Team-Bibliotheken liegt.
 - [JabRef](/tools/jabref/): guter Vergleich für Teams, die Open-Source-Referenzmanager für BibTeX, LaTeX-nahe Workflows und wissenschaftliches Schreiben brauchen.
 - [Mendeley](/tools/mendeley/): prüfen, wenn ein anderer Schwerpunkt als bei Citavi relevant ist.
-- [Research Rabbit](/tools/research-rabbit/): naheliegend, falls Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen z im Vordergrund steht.
+- [Research Rabbit](/tools/research-rabbit/): naheliegend, wenn Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen wichtiger sind.
 
 ## Redaktionelle Einschätzung
 
-Citavi ist dann eine gute Wahl, wenn Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Citavi passt, wenn Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus regelmäßig Teil des Arbeitsalltags ist und nicht nur einmalig ausprobiert wird. Quellen, Auswahlkriterien und fachliche Freigabe sollten dabei sichtbar bleiben.
 
 ## FAQ
 

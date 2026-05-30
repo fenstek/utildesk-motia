@@ -36,7 +36,7 @@ Swiftype richtet sich vor allem an Entwickler, Agenturen und Unternehmen, die ei
 
 Swiftype ist im Alltag vor allem ein Werkzeug für Suchqualität. Die Einrichtung ist nur der Anfang; gute Treffer entstehen durch gepflegte Inhalte, Synonyme, Ausschlüsse und regelmäßige Auswertung der Suchanfragen.
 
-Besonders wertvoll ist der Blick auf Null-Treffer und häufige Suchbegriffe. Sie zeigen, welche Inhalte fehlen, falsch benannt sind oder auf der Website zu tief versteckt liegen.
+Der wichtigste Blick geht auf Null-Treffer und häufige Suchbegriffe. Sie zeigen, welche Inhalte fehlen, falsch benannt sind oder auf der Website zu tief versteckt liegen.
 
 ## Hauptfunktionen
 

@@ -16,7 +16,7 @@ Wordtune ist ein KI-gestütztes Schreibwerkzeug, das Nutzern hilft, ihre Texte k
 
 ## Für wen ist Wordtune geeignet?
 
-Wordtune richtet sich an eine breite Zielgruppe, darunter Studierende, Berufstätige, Content-Ersteller, Marketingexperten und alle, die regelmäßig Texte verfassen. Besonders wertvoll ist das Tool für Personen, die ihre Schreibfähigkeiten verbessern möchten oder für die Englisch nicht die Muttersprache ist. Auch Teams, die konsistente und professionelle Kommunikationsstandards einhalten wollen, profitieren von den Funktionen von Wordtune.
+Wordtune richtet sich an Studierende, Berufstätige, Content-Ersteller, Marketingteams und alle, die regelmäßig Texte überarbeiten. Praktisch ist das Tool vor allem für Nutzer, die Formulierungen schärfen, englische Texte glätten oder mehrere Varianten einer Aussage vergleichen möchten.
 
 ## Typische Einsatzszenarien
 
@@ -73,9 +73,7 @@ Für Teams in Europa ist bei Wordtune außerdem relevant, ob Verträge zur Auftr
 
 ## Redaktionelle Einschätzung
 
-Wordtune wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Wordtune wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Wordtune ist am nützlichsten beim Überarbeiten vorhandener Texte, nicht beim blinden Erzeugen fertiger Inhalte. Gute Einsatzfälle sind E-Mails, kurze Marketingtexte, Bewerbungen oder englische Formulierungen, bei denen Ton und Klarheit gezielt verbessert werden sollen.
 
 ## Preise & Kosten
 

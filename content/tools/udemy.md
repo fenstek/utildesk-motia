@@ -76,9 +76,7 @@ Für Teams in Europa ist bei Udemy außerdem relevant, ob Verträge zur Auftrags
 
 ## Redaktionelle Einschätzung
 
-Udemy wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Udemy wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Udemy ist dann sinnvoll, wenn Lernziele und Auswahlkriterien vor dem Kauf feststehen. Teams sollten nicht nach der längsten Kursliste entscheiden, sondern nach Aktualität, Dozentenqualität, Übungsanteil und der Frage, ob Lernzeit im Arbeitsalltag wirklich eingeplant ist.
 
 ## Preise & Kosten
 

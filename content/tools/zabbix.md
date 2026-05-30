@@ -74,7 +74,7 @@ Im Katalog ist Zabbix mit dem Preismodell **Open Source** geführt. Für eine be
 
 ## Redaktionelle Einschätzung
 
-Zabbix ist dann eine gute Wahl, wenn Open-Source-Monitoring für Infrastruktur, Server, Netzwerke, Anwendungen und Betriebsalarme tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Zabbix passt, wenn Infrastruktur, Server, Netzwerke und Anwendungen zentral überwacht werden sollen und das Team bereit ist, Schwellenwerte, Eskalationen und Wartungsfenster sauber zu pflegen. Ein Pilot sollte echte Alarme enthalten, nicht nur grüne Beispiel-Dashboards.
 
 ## FAQ
 

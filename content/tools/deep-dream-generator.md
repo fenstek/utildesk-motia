@@ -78,7 +78,7 @@ Im Katalog ist Deep Dream Generator mit dem Preismodell **Je nach Plan** geführ
 
 ## Redaktionelle Einschätzung
 
-Deep Dream Generator ist dann eine gute Wahl, wenn KI-Bildexperimente, stilisierte Motive und kreative Bildvarianten mit surrealem Charakter tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Deep Dream Generator muss sich an realem Material beweisen: Aufnahmequalität, Schnittaufwand, Export, Rechte und Freigabe entscheiden stärker als ein schneller Beispielclip.
 
 ## FAQ
 

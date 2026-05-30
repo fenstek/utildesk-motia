@@ -77,7 +77,7 @@ Für Teams in Europa ist bei Apache Spark SQL außerdem relevant, ob Verträge z
 
 ## Redaktionelle Einschätzung
 
-Apache Spark SQL wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Apache Spark SQL sollte mit realen Last-, Daten- und Betriebsbedingungen getestet werden. Erst Kosten, Fehlerszenarien und Übergaben zeigen, ob das Tool wirklich in die Architektur passt.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Apache Spark SQL wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

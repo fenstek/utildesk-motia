@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, welche Repositories indexiert wer
 
 Sourcegraph eignet sich für Engineering-Organisationen mit vielen Repos, Sprachen und Services. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Repositories indexiert werden und wie Suchergebnisse in Reviews münden.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: ohne Rechte- und Indexkonzept sensible Codebereiche zu breit sichtbar machen kann. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn schon im Pilot unklar bleibt, welche Repositories indexiert werden dürfen und wer welchen Code sehen soll. Ohne Rechte- und Indexkonzept kann Sourcegraph sensible Bereiche zu breit sichtbar machen.
 
 ## Redaktionelle Einschätzung
 
@@ -55,13 +55,13 @@ Sourcegraph überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden s
 - Verbessert die Codequalität durch umfassende Code-Intelligenz.
 - Fördert die Zusammenarbeit im Team dank Integration in Entwicklungs-Workflows.
 - Skalierbar für kleine Teams bis hin zu großen Unternehmen.
-- Besonders wertvoll: für Engineering-Organisationen mit vielen Repos, Sprachen und Services.
+- Gut geeignet: für Engineering-Organisationen mit vielen Repos, Sprachen und Services.
 
 ### Nachteile
 - Die Einrichtung und Integration kann initial komplex sein, besonders in großen Umgebungen.
 - Je nach Plan können bestimmte Funktionen eingeschränkt oder kostenpflichtig sein.
 - Für kleine Projekte oder Einzelentwickler*innen kann der Funktionsumfang überdimensioniert wirken.
-- Achtungspunkt: ohne Rechte- und Indexkonzept sensible Codebereiche zu breit sichtbar machen kann.
+- Vorher klären: ohne Rechte- und Indexkonzept sensible Codebereiche zu breit sichtbar machen kann.
 
 ## Preise & Kosten
 

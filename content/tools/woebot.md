@@ -81,9 +81,7 @@ Für Teams in Europa ist bei Woebot außerdem relevant, ob Verträge zur Auftrag
 
 ## Redaktionelle Einschätzung
 
-Woebot wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Woebot wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Woebot sollte als digitale Unterstützung mit klaren Grenzen betrachtet werden. Besonders wichtig sind Krisenhinweise, Datenschutz, fachliche Verantwortlichkeit und die Frage, wann Nutzer an menschliche Hilfe weitergeleitet werden.
 
 ## Preise & Kosten
 

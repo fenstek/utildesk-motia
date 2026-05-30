@@ -57,7 +57,7 @@ Mendeley gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozes
 - Cloud-basierte Synchronisation ermöglicht Zugriff von überall.
 - Kostenlose Grundversion mit vielen Funktionen.
 - Förderung von wissenschaftlicher Zusammenarbeit durch Gruppenfunktionen.
-- Besonders wertvoll: für Studierende, Forschende und Teams mit gemeinsamen Bibliotheken.
+- Stärkerer Nutzen: Studierende, Forschende und Teams können gemeinsame Bibliotheken leichter pflegen.
 
 ### Nachteile
 
@@ -66,7 +66,7 @@ Mendeley gewinnt, wenn die Einführung nicht als Toolwechsel, sondern als Prozes
 - Benutzeroberfläche kann auf manchen Systemen etwas träge wirken.
 - Manche erweiterte Funktionen sind nur in kostenpflichtigen Plänen verfügbar.
 - Datenschutzbedenken bei Cloud-Speicherung sensibler Daten je nach Nutzeranforderungen.
-- Achtungspunkt: bei unsauber importierten Metadaten später Zitationsfehler verursacht.
+- Grenze: Unsauber importierte Metadaten verursachen später Zitationsfehler.
 
 ## Preise & Kosten
 

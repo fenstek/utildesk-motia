@@ -74,11 +74,11 @@ Im Katalog ist Apache NiFi mit dem Preismodell **Open Source** geführt. Für ei
 - [Apache Airflow](/tools/apache-airflow/): passender, wenn ein anderer Schwerpunkt als bei Apache NiFi im Vordergrund steht.
 - [n8n](/tools/n8n/): guter Vergleich für Teams, die API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows brauchen.
 - [Talend Data Fabric](/tools/talend-data-fabric/): prüfen, wenn ein anderer Schwerpunkt als bei Apache NiFi relevant ist.
-- Airbyte: naheliegend, falls offene ELT-Connectoren und eigene Betriebsoptionen wichtiger sind im Vordergrund steht.
+- Airbyte: naheliegend, wenn offene ELT-Connectoren und eigene Betriebsoptionen wichtiger sind.
 
 ## Redaktionelle Einschätzung
 
-Apache NiFi ist dann eine gute Wahl, wenn visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Apache NiFi passt, wenn visuelle Datenfluss-Automatisierung für Ingestion, Routing, Transformation und Systemintegration regelmäßig Teil des Arbeitsalltags ist und nicht nur einmalig ausprobiert wird. Ein guter Pilot arbeitet mit realem Material, sichtbaren Grenzen und einer Person, die das Ergebnis fachlich abnimmt.
 
 ## FAQ
 

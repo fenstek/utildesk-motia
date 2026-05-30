@@ -12,7 +12,7 @@ generated_at: "2026-05-25"
 ---
 # Trelby
 
-Trelby ist kein Zauberknopf, sondern ein Werkzeug mit einem ziemlich klaren Platz: Open-Source-Drehbuchsoftware für Formatierung, Szenenarbeit und klassische Screenplay-Struktur. Wenn man es so betrachtet, wird schnell sichtbar, wo es Arbeit wirklich verkürzt und wo nur neue Oberfläche entsteht.
+Trelby ist ein schlankes Open-Source-Werkzeug für Drehbuchformatierung, Szenenarbeit und klassische Screenplay-Struktur. Es hilft vor allem dort, wo Autorinnen und Autoren nicht ständig über Einzüge, Dialogblöcke und Seitenformat nachdenken wollen.
 
 Bei Trelby lohnt sich ein Blick auf den Alltag nach der ersten Woche. Wenn das Tool dann noch genutzt wird, weil es Arbeit einfacher macht, ist das ein besseres Zeichen als ein starker Ersteindruck.
 
@@ -77,7 +77,7 @@ Im Katalog ist Trelby mit dem Preismodell **Open Source** geführt. Für eine be
 
 ## Redaktionelle Einschätzung
 
-Trelby ist dann eine gute Wahl, wenn Open-Source-Drehbuchsoftware für Formatierung, Szenenarbeit und klassische Screenplay-Struktur tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Trelby passt, wenn einfache Drehbucharbeit wichtiger ist als Cloud-Kollaboration, Produktionsplanung oder moderne Review-Workflows. Wer mit mehreren Beteiligten, Kommentaren und Versionierung arbeitet, sollte früh prüfen, ob ein aktuelleres Drehbuchtool besser trägt.
 
 ## FAQ
 

@@ -13,7 +13,7 @@ generated_at: "2026-05-13"
 
 QDA Miner passt in Workflows, in denen qualitative Datenanalyse für Interviews, Umfragen und Textkorpora nicht nebenbei, sondern regelmäßig vorkommt. Die Stärke liegt darin, Codes, Kategorien und Fundstellen systematisch nachvollziehbar zu machen, ohne dass jeder Schritt manuell neu sortiert werden muss.
 
-Für einen fairen Test reichen Demo-Daten selten aus. Besser ist ein echter Mini-Workflow mit diesem Einsatzbereich: für Forschungsteams, Evaluationen und Mixed-Methods-Projekte. Danach sieht man auch den Achtungspunkt im Kleinen: bei unklarer Codierlogik eher Ordnung simuliert als Erkenntnisse liefert.
+Für einen fairen Test reichen Demo-Daten selten aus. Besser ist ein kleines, echtes Codierprojekt mit mehreren Textstellen, Abstimmung im Team und einer kurzen Auswertung. Gerade dabei zeigt sich, ob QDA Miner Erkenntnisse strukturiert oder nur sauber aussehende Kategorien erzeugt.
 
 ## Für wen ist QDA Miner geeignet?
 
@@ -55,13 +55,13 @@ Der beste Praxistest für QDA Miner ist klein, aber echt. Ein Team sollte einen 
 - Unterstützt verschiedene Datenformate und multimediale Inhalte
 - Gut geeignet für akademische und professionelle Anwendungen
 - Möglichkeit zur Zusammenarbeit im Team
-- Besonders wertvoll: für Forschungsteams, Evaluationen und Mixed-Methods-Projekte.
+- Gut geeignet: für Forschungsteams, Evaluationen und Mixed-Methods-Projekte.
 
 ### Nachteile
 - Lizenzkosten können je nach Version und Nutzerzahl variieren
 - Einarbeitungszeit erforderlich, insbesondere für Anfänger in der qualitativen Analyse
 - Einige erweiterte Funktionen sind möglicherweise nur in höheren Lizenzstufen verfügbar
-- Achtungspunkt: bei unklarer Codierlogik eher Ordnung simuliert als Erkenntnisse liefert.
+- Vorher klären: bei unklarer Codierlogik eher Ordnung simuliert als Erkenntnisse liefert.
 
 ## Preise & Kosten
 

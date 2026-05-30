@@ -86,7 +86,7 @@ Für Teams in Europa ist bei Ernie Bot außerdem relevant, ob Verträge zur Auft
 
 ## Redaktionelle Einschätzung
 
-Ernie Bot wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Ernie Bot sollte mit echten Gesprächsverläufen, Abbruchfällen und Übergaben getestet werden. Gute Automatisierung erkennt man daran, dass Nutzer schneller zum richtigen Ergebnis oder zu einem Menschen kommen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Ernie Bot wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

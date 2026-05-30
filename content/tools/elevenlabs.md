@@ -77,7 +77,7 @@ ElevenLabs ist stark, wenn Stimmen schnell, flexibel und in hoher Qualität erze
 
 ## Workflow-Fit
 
-- Gut für Voiceover, E-Learning, Prototypen, Hörbuecher, Lokalisierung und barrierearme Audiofassungen.
+- Gut für Voiceover, E-Learning, Prototypen, Hörbücher, Lokalisierung und barrierearme Audiofassungen.
 - Kritisch bei realen Personenstimmen, sensiblen Botschaften oder Inhalten, bei denen Authentizität und Zustimmung zentral sind.
 
 ## Redaktionelle Einschätzung

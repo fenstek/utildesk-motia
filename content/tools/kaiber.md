@@ -78,7 +78,7 @@ Im Katalog ist Kaiber mit dem Preismodell **Freemium** geführt. Für eine belas
 
 ## Redaktionelle Einschätzung
 
-Kaiber ist dann eine gute Wahl, wenn KI-Video und kreative Motion-Ästhetik für Musik, Social Clips und visuelle Experimente tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Kaiber passt, wenn KI-Video, Motion-Ästhetik und visuelle Experimente regelmäßig Teil von Musik-, Social- oder Kampagnenformaten sind. Entscheidend ist, ob Bildrechte, Story, Ton und Export im echten Produktionsablauf funktionieren.
 
 ## FAQ
 

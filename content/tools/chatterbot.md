@@ -56,7 +56,7 @@ Bei ChatterBot würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - Unterstützt maschinelles Lernen für bessere Konversationsergebnisse.
 - Geeignet für Prototypen und produktive Anwendungen.
 - Umfassende Dokumentation und aktive Community.
-- Besonders wertvoll: für Lernprojekte, interne Demos und kleine FAQ-Prototypen.
+- Nützlich bei: für Lernprojekte, interne Demos und kleine FAQ-Prototypen.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Bei ChatterBot würde ich früh zwischen Demo-Eindruck und Betriebsrealität unt
 - Erfordert Programmierkenntnisse, insbesondere in Python.
 - Für sehr komplexe oder stark spezialisierte Chatbots sind zusätzliche Anpassungen notwendig.
 - Keine integrierte Hosting-Lösung, daher eigener Server oder Cloud erforderlich.
-- Achtungspunkt: für moderne produktive Assistenten ohne Zusatzarchitektur oft zu begrenzt ist.
+- Risiko: Für moderne produktive Assistenten ist zusätzliche Architektur nötig.
 
 ## Preise & Kosten
 

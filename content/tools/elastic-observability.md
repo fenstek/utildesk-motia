@@ -79,7 +79,7 @@ Für Teams in Europa ist bei Elastic Observability außerdem relevant, ob Vertr�
 
 ## Redaktionelle Einschätzung
 
-Elastic Observability wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Elastic Observability sollte an echten Betriebsdaten bewertet werden: Alarmqualität, Ursachenanalyse, Zuständigkeiten und Kosten zeigen schneller als jede Demo, ob das Tool den Betrieb wirklich ruhiger macht.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Elastic Observability wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

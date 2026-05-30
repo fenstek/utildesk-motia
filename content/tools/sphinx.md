@@ -56,14 +56,14 @@ Bei Sphinx würde ich früh zwischen Demo-Eindruck und Betriebsrealität untersc
 - Unterstützt verschiedene Formate und Sprachen, was Flexibilität bietet
 - Fördert die Zusammenarbeit im Team durch gemeinsame Bearbeitungsfunktionen
 - Freemium-Modell erlaubt risikofreien Einstieg und Nutzung grundlegender Features
-- Besonders wertvoll: für Python-Projekte, APIs und technische Handbücher mit Releasebezug.
+- Gut geeignet: für Python-Projekte, APIs und technische Handbücher mit Releasebezug.
 
 ### Nachteile
 - Einige erweiterte Funktionen sind nur in kostenpflichtigen Plänen verfügbar
 - Einarbeitungszeit kann für Einsteiger in Dokumentations-Tools erforderlich sein
 - Die Komplexität der Software kann für einfache Anwendungsfälle überdimensioniert sein
 - Abhängig von der jeweiligen Infrastruktur können Integrationen variieren
-- Achtungspunkt: bei ungepflegten Docstrings nur formale Dokumentation ohne Nutzen erzeugt.
+- Vorher klären: bei ungepflegten Docstrings nur formale Dokumentation ohne Nutzen erzeugt.
 
 ## Preise & Kosten
 

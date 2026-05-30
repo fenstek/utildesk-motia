@@ -80,7 +80,7 @@ Illustrator wird über Adobe-Abos angeboten, einzeln oder als Teil der Creative 
 - [Figma](/tools/figma/): wenn UI, Kollaboration und Designsysteme wichtiger sind.
 - [Canva](/tools/canva/): für schnelle Marketinggrafiken und Templates.
 
-## Redaktionelle Einschätzung
+## Einordnung für die Auswahl
 
 Illustrator bleibt eine sehr gute Wahl, wenn grafische Präzision wichtiger ist als Geschwindigkeit. Wer Markenzeichen, Icons, Packaging oder SVG-Assets professionell kontrollieren muss, bekommt hier Tiefe; wer nur schnell eine Social-Grafik baut, ist mit einem leichteren Template-Tool oft besser bedient.
 

@@ -87,7 +87,7 @@ Für Teams in Europa ist bei Google Cloud Translation API außerdem relevant, ob
 
 ## Redaktionelle Einschätzung
 
-Google Cloud Translation API wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Google Cloud Translation API überzeugt erst im Test mit echten Textsorten, Glossaren und Freigaben. Entscheidend ist, ob Terminologie, Datenschutz und Nachbearbeitung zum vorhandenen Sprachprozess passen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Google Cloud Translation API wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

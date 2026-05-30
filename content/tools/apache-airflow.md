@@ -13,7 +13,7 @@ generated_at: "2026-05-10"
 
 Apache Airflow passt in Workflows, in denen Workflow-Orchestrierung für Datenpipelines als Code nicht nebenbei, sondern regelmäßig vorkommt. Die Stärke liegt darin, DAGs, Abhängigkeiten und Wiederholungen sichtbar und steuerbar zu machen, ohne dass jeder Schritt manuell neu sortiert werden muss.
 
-Für einen fairen Test reichen Demo-Daten selten aus. Besser ist ein echter Mini-Workflow mit diesem Einsatzbereich: für Data-Engineering-Teams mit vielen geplanten Jobs und klaren Zuständigkeiten. Danach sieht man auch den Achtungspunkt im Kleinen: für kleine Einzelskripte zu viel Betriebsaufwand erzeugen kann.
+Für einen fairen Test reichen Demo-Daten selten aus. Besser ist ein echter Mini-Workflow mit diesem Einsatzbereich: für Data-Engineering-Teams mit vielen geplanten Jobs und klaren Zuständigkeiten. Danach wird die wichtigste Grenze früh sichtbar: Für kleine Einzelskripte kann der Betriebsaufwand zu hoch sein.
 
 ## Für wen ist Apache Airflow geeignet?
 
@@ -56,7 +56,7 @@ Der beste Praxistest für Apache Airflow ist klein, aber echt. Ein Team sollte e
 - Skalierbar für kleine bis sehr große Datenpipelines.
 - Integriertes Web-Interface für einfache Verwaltung.
 - Unterstützt zahlreiche Integrationen und Operatoren.
-- Besonders wertvoll: für Data-Engineering-Teams mit vielen geplanten Jobs und klaren Zuständigkeiten.
+- Sinnvoll für: für Data-Engineering-Teams mit vielen geplanten Jobs und klaren Zuständigkeiten.
 
 ### Nachteile
 - Einarbeitung erfordert Programmierkenntnisse und Verständnis von DAG-Konzepten.
@@ -64,7 +64,7 @@ Der beste Praxistest für Apache Airflow ist klein, aber echt. Ein Team sollte e
 - Für einfache Automatisierungen kann die Einrichtung zu aufwendig sein.
 - Ressourcenintensiv bei sehr umfangreichen oder häufigen Workflows.
 - Dokumentation teilweise technisch und anspruchsvoll.
-- Achtungspunkt: für kleine Einzelskripte zu viel Betriebsaufwand erzeugen kann.
+- Nicht ideal: Für kleine Einzelskripte kann der Betriebsaufwand zu hoch sein.
 
 ## Preise & Kosten
 

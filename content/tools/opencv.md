@@ -20,7 +20,7 @@ Für die Bewertung zählt vor allem die Frage, welche Genauigkeit, Laufzeit und 
 
 OpenCV eignet sich für Entwicklerteams mit eigenen CV-Modellen, Kameradaten oder Edge-Projekten. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, welche Genauigkeit, Laufzeit und Hardwareumgebung realistisch sind.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: ohne ML- und Bildverarbeitungswissen schwer zugänglich bleibt. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn schon der Pilot zeigt, dass ML- und Bildverarbeitungswissen im Team fehlen. Dann ist eine fertige Vision-API oder ein engerer Prototyp oft sinnvoller als direkt eine eigene OpenCV-Pipeline.
 
 ## Redaktionelle Einschätzung
 
@@ -58,7 +58,7 @@ OpenCV überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - Unterstützt verschiedene Programmiersprachen
 - Flexibel einsetzbar für einfache bis komplexe Projekte
 - Regelmäßige Updates und Erweiterungen
-- Besonders wertvoll: für Entwicklerteams mit eigenen CV-Modellen, Kameradaten oder Edge-Projekten.
+- Gut geeignet: für Entwicklerteams mit eigenen CV-Modellen, Kameradaten oder Edge-Projekten.
 
 ### Nachteile
 
@@ -66,7 +66,7 @@ OpenCV überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden sind, 
 - Für sehr spezialisierte oder hochkomplexe Anwendungen sind teilweise zusätzliche Tools notwendig
 - Dokumentation kann an manchen Stellen unübersichtlich sein
 - Performance-Optimierungen erfordern oft tiefere technische Kenntnisse
-- Achtungspunkt: ohne ML- und Bildverarbeitungswissen schwer zugänglich bleibt.
+- Vorher klären: ohne ML- und Bildverarbeitungswissen schwer zugänglich bleibt.
 
 ## Preise & Kosten
 

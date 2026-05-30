@@ -76,7 +76,7 @@ Für Teams in Europa ist bei ResearchGate außerdem relevant, ob Verträge zur A
 
 ## Redaktionelle Einschätzung
 
-ResearchGate wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+ResearchGate unterstützt Recherche vor allem dann, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Es beschleunigt Orientierung, ersetzt aber keine fachliche Bewertung.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob ResearchGate wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

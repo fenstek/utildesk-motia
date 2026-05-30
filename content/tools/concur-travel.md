@@ -57,7 +57,7 @@ Bei Concur Travel würde ich früh zwischen Demo-Eindruck und Betriebsrealität 
 - Unterstützung bei der Einhaltung von Reiserichtlinien.
 - Umfangreiche Reporting- und Analysefunktionen.
 - Skalierbar für Unternehmen unterschiedlicher Größe.
-- Besonders wertvoll: für Unternehmen mit vielen Reisen, Genehmigungen und Kostenstellen.
+- Sinnvoll für: für Unternehmen mit vielen Reisen, Genehmigungen und Kostenstellen.
 
 ### Nachteile
 
@@ -65,7 +65,7 @@ Bei Concur Travel würde ich früh zwischen Demo-Eindruck und Betriebsrealität 
 - Komplexität der Plattform kann eine Einarbeitungszeit erfordern.
 - Anpassungen und Integrationen können zusätzlichen Aufwand bedeuten.
 - Nicht alle Funktionen sind in jedem Land oder Plan verfügbar.
-- Achtungspunkt: bei schlecht gepflegten Policies eher blockiert als entlastet.
+- Nicht ideal: Schlecht gepflegte Policies blockieren eher, als dass sie entlasten.
 
 ## Preise & Kosten
 

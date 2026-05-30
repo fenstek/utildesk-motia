@@ -87,7 +87,7 @@ Für Teams in Europa ist bei Photopea außerdem relevant, ob Verträge zur Auftr
 
 ## Redaktionelle Einschätzung
 
-Photopea wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Photopea ist dann sinnvoll, wenn Einsatzfall, Eingaben und Kontrolle klar beschrieben sind. Der praktische Nutzen zeigt sich im echten Ablauf, nicht in einer kurzen Demo.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Photopea wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

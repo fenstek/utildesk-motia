@@ -83,9 +83,7 @@ Für Teams in Europa ist bei Tableau Prep außerdem relevant, ob Verträge zur A
 
 ## Redaktionelle Einschätzung
 
-Tableau Prep wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Tableau Prep wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+Tableau Prep lohnt sich vor allem, wenn wiederkehrende Datenbereinigung in Tableau-nahe Reportingprozesse eingebettet ist. Der Test sollte mit echten, unordentlichen Quelldaten laufen: Dubletten, Spaltenbrüche, fehlende Werte und spätere Übergabe an Dashboards zeigen schneller als eine Demo, ob Prep den Reportingalltag wirklich stabilisiert.
 
 ## Preise & Kosten
 

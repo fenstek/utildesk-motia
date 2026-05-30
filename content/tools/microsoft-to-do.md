@@ -78,7 +78,7 @@ Im Katalog ist Microsoft To Do mit dem Preismodell **Kostenlos** geführt. Für 
 
 ## Redaktionelle Einschätzung
 
-Microsoft To Do ist dann eine gute Wahl, wenn einfache Aufgabenverwaltung für persönliche To-dos, Microsoft-365-Kontext und kleine Listen tatsächlich wiederkehrend gebraucht wird. Für die Katalogbewertung zählt nicht die Demo, sondern ein echter Arbeitsfall mit klarer Freigabe, sichtbaren Grenzen und einem Ergebnis, das sich später nachvollziehen lässt.
+Microsoft To Do passt, wenn persönliche Aufgaben, kleine Listen und Microsoft-365-Kontext zusammengehalten werden sollen. Für komplexe Teamsteuerung ist meist Planner, Loop, Jira oder ein anderes Projektwerkzeug näher am Bedarf.
 
 ## FAQ
 

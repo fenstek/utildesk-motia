@@ -79,7 +79,7 @@ Für Teams in Europa ist bei Apache Druid außerdem relevant, ob Verträge zur A
 
 ## Redaktionelle Einschätzung
 
-Apache Druid wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Apache Druid gehört in einen klar abgegrenzten Daten- oder Plattformprozess. Vor dem Rollout sollten Eingangsdaten, Verantwortliche, Monitoring und Folgesysteme feststehen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Apache Druid wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

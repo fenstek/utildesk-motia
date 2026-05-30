@@ -82,7 +82,7 @@ Für Teams in Europa ist bei Fujitsu A64FX außerdem relevant, ob Verträge zur 
 
 ## Redaktionelle Einschätzung
 
-Fujitsu A64FX wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Fujitsu A64FX sollte mit einem begrenzten Datenfall geprüft werden: Quelle, Laufzeit, Kosten, Ergebnisqualität und Übergabe an Fachteams müssen nachvollziehbar bleiben.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Fujitsu A64FX wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

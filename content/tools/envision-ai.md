@@ -23,7 +23,7 @@ Zurückhaltend wäre ich, solange die Frage offen ist, wie Datenschutz, Offline-
 
 ## Redaktionelle Einschätzung
 
-Bei Envision AI würde ich früh zwischen Demo-Eindruck und Betriebsrealität unterscheiden. Viele Tools wirken in der ersten Stunde stark; entscheidend ist aber, ob sie nach zwei Wochen noch weniger Rückfragen, weniger Nacharbeit oder mehr Transparenz erzeugen.
+Bei Envision AI sollte der Test nah am Alltag stattfinden: Text lesen, Objekt erkennen, Umgebung beschreiben, mit schlechten Lichtverhältnissen umgehen. Entscheidend ist nicht der eindrucksvollste Moment, sondern ob die Assistenz verlässlich genug ist, um Nutzerinnen und Nutzer in wiederkehrenden Situationen zu unterstützen.
 
 - **Guter Pilot:** Alltagsumgebungen, Texte und Gegenstände akustisch zugänglicher zu machen.
 - **Qualitätsfrage:** wie Datenschutz, Offline-Situationen und Fehlinterpretationen gehandhabt werden.
@@ -50,19 +50,16 @@ Bei Envision AI würde ich früh zwischen Demo-Eindruck und Betriebsrealität un
 ## Vorteile und Nachteile
 
 ### Vorteile
-- Effiziente Automatisierung komplexer Videoanalysen
-- Zeitersparnis durch schnelle Verarbeitung großer Videomengen
-- Skalierbarkeit je nach Bedarf und Einsatzgebiet
-- Flexibilität durch anpassbare Machine-Learning-Modelle
-- Integration in bestehende IT-Infrastrukturen möglich
-- Besonders wertvoll: für sehbehinderte Nutzerinnen und Nutzer sowie Assistenzszenarien.
+- Kann visuelle Informationen schneller zugänglich machen.
+- Hilft besonders bei wiederkehrenden Assistenzsituationen, etwa beim Lesen, Erkennen oder Beschreiben.
+- Kann mehr Selbstständigkeit schaffen, wenn Umgebung und Erwartung realistisch bleiben.
+- Integration in bestehende IT-Infrastrukturen kann je nach Setup möglich sein.
 
 ### Nachteile
-- Kosten können je nach Plan und Nutzung variieren
-- Einarbeitungszeit für komplexere Anpassungen möglich
-- Abhängigkeit von der Datenqualität für optimale Ergebnisse
-- Für einige Nutzer kann technisches Know-how erforderlich sein
-- Achtungspunkt: nicht jede Situation zuverlässig erkennt und keine menschliche Einschätzung ersetzt.
+- Kosten können je nach Plan und Nutzung variieren.
+- Ergebnisse hängen stark von Umgebung, Licht, Kamera und Sprache ab.
+- Fehlinterpretationen sind möglich; in sicherheitskritischen Situationen braucht es menschliche Einschätzung.
+- Datenschutz und Offline-Nutzung sollten vor produktivem Einsatz geklärt werden.
 
 ## Preise & Kosten
 

@@ -86,7 +86,7 @@ Für Teams in Europa ist bei CodePen außerdem relevant, ob Verträge zur Auftra
 
 ## Redaktionelle Einschätzung
 
-CodePen wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+CodePen braucht einen konkreten technischen Ablauf statt eines losen Tooltests. Entscheidend ist, ob Code, Daten, Logs oder Artefakte am Ende prüfbar weitergegeben werden können.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob CodePen wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

@@ -84,9 +84,7 @@ Für Teams in Europa ist bei TextAdventures.co.uk außerdem relevant, ob Verträ
 
 ## Redaktionelle Einschätzung
 
-TextAdventures.co.uk wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob TextAdventures.co.uk wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
+TextAdventures.co.uk ist vor allem für browserbasierte Textspiele und Interactive-Fiction-Projekte interessant. Ein guter Test nutzt eine kleine spielbare Szene mit Parserlogik, Verzweigungen und Veröffentlichungspfad, nicht nur ein leeres Projekt.
 
 ## Preise & Kosten
 

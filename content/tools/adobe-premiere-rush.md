@@ -76,7 +76,7 @@ Für Teams in Europa ist bei Adobe Premiere Rush außerdem relevant, ob Verträg
 
 ## Redaktionelle Einschätzung
 
-Adobe Premiere Rush wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Adobe Premiere Rush lohnt sich vor allem, wenn Briefing, Rechte, Varianten und finale Abnahme zusammen gedacht werden. Ein Test mit echtem Marken- oder Kampagnenmaterial zeigt, ob der kreative Ablauf entlastet wird.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Adobe Premiere Rush wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

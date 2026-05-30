@@ -73,7 +73,7 @@ WhiteSmoke wird je nach Version und Lizenzmodell angeboten. Vor einem Kauf lohnt
 
 - Grammarly: sehr verbreitet für englische Grammatik und Stil.
 - LanguageTool: stark für Deutsch und mehrere Sprachen.
-- ProWritingAid: gut für laengere englische Texte und Stilanalysen.
+- ProWritingAid: gut für längere englische Texte und Stilanalysen.
 - DeepL Write: hilfreich für flüssige Formulierungen.
 - Microsoft Editor: praktisch im Microsoft-Umfeld.
 

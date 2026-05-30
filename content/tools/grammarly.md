@@ -27,7 +27,7 @@ Der Nutzen hängt vom Kommunikationsstandard ab. Teams sollten definieren, welch
 Grammarly richtet sich an alle, die ihre schriftliche Kommunikation verbessern möchten. Besonders nützlich ist es für Studierende, Berufstätige, Autoren, Blogger und alle, die regelmäßig Texte verfassen. Auch Nicht-Muttersprachler profitieren von den Korrekturhilfen, um Fehler zu vermeiden und den Schreibstil zu optimieren. Darüber hinaus unterstützt Grammarly Teams bei der einheitlichen und professionellen Textgestaltung.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/grammarly-editorial.webp" alt="Illustration zu Grammarly: ein Schreibplatz mit gr?ner Korrekturschleife und ruhiger Textpr?fung" loading="lazy" decoding="async" />
+  <img src="/images/tools/grammarly-editorial.webp" alt="Illustration zu Grammarly: ein Schreibplatz mit grüner Korrekturschleife und ruhiger Textprüfung" loading="lazy" decoding="async" />
 </figure>
 
 ## Hauptfunktionen
@@ -62,7 +62,7 @@ Grammarly richtet sich an alle, die ihre schriftliche Kommunikation verbessern m
 
 ## Was im Alltag wirklich zählt
 
-Bei Grammarly zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Ablauf bekommt. Im Alltag zählt weniger die einzelne Korrektur als ein verlässlicher Schreibprozess: Ton, Terminologie, Freigabe und Datenschutz müssen zusammenpassen.
+Bei Grammarly zählt weniger die längste Featureliste als die Frage, ob das Tool einen klaren Platz im vorhandenen Schreibprozess bekommt. Wichtiger als die einzelne Korrektur sind Ton, Terminologie, Freigabe und Datenschutz.
 
 Für Grammarly sollte der Test mit echtem Material beginnen: Wer liefert die Eingaben, wer prüft das Ergebnis und wohin wird es anschließend übergeben?
 

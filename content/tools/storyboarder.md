@@ -19,7 +19,7 @@ Für die Bewertung zählt vor allem die Frage, ob Storyboards wirklich Entscheid
 
 Storyboarder eignet sich für Previsualisierung, YouTube-Formate und kleine Produktionsteams. Wer nur eine schnelle Einzelaktion sucht, sollte den Aufwand klein halten und zuerst die Frage prüfen, ob Storyboards wirklich Entscheidungen beschleunigen oder nur zusätzlich gepflegt werden.
 
-Weniger passend ist das Tool, wenn dieser Achtungspunkt schon im Pilot sichtbar wird: ohne klare Shot-Liste schnell bei hübschen Einzelbildern stehen bleibt. In solchen Fällen ist ein schlankerer Prozess oft sinnvoller als eine große Plattformentscheidung.
+Weniger passend ist das Tool, wenn schon im Pilot keine klare Shot-Liste entsteht. Dann bleibt Storyboarder leicht bei hübschen Einzelbildern stehen, statt Entscheidungen zu Timing, Kamera und Ablauf zu beschleunigen.
 
 ## Redaktionelle Einschätzung
 
@@ -55,13 +55,13 @@ Storyboarder überzeugt nicht dadurch, dass möglichst viele Optionen vorhanden 
 - Unterstützt kollaboratives Arbeiten und verbessert Teamkommunikation
 - Flexibler Export und Integration in bestehende Workflows
 - Ideal für verschiedene Branchen wie Film, Animation und Werbung
-- Besonders wertvoll: für Previsualisierung, YouTube-Formate und kleine Produktionsteams.
+- Gut geeignet: für Previsualisierung, YouTube-Formate und kleine Produktionsteams.
 
 ### Nachteile
 - Einige erweiterte Funktionen können je nach Plan eingeschränkt sein
 - Für sehr komplexe Animationsprojekte eventuell nicht ausreichend spezialisiert
 - Abhängigkeit von Internetverbindung bei Cloud-basierten Features
-- Achtungspunkt: ohne klare Shot-Liste schnell bei hübschen Einzelbildern stehen bleibt.
+- Vorher klären: ohne klare Shot-Liste schnell bei hübschen Einzelbildern stehen bleibt.
 
 ## Preise & Kosten
 

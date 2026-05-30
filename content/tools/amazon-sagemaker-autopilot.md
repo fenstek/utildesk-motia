@@ -76,7 +76,7 @@ Für Teams in Europa ist bei Amazon SageMaker Autopilot außerdem relevant, ob V
 
 ## Redaktionelle Einschätzung
 
-Amazon SageMaker Autopilot wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Amazon SageMaker Autopilot gehört in einen klar abgegrenzten Daten- oder Plattformprozess. Vor dem Rollout sollten Eingangsdaten, Verantwortliche, Monitoring und Folgesysteme feststehen.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Amazon SageMaker Autopilot wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 

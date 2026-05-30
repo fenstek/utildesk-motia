@@ -88,6 +88,5 @@ Bedrock bietet eine einheitliche Schnittstelle zu mehreren Modellen und nimmt En
 **8. Gibt es eine kostenlose Testphase?**  
 Details zu kostenlosen Testphasen variieren und sollten direkt bei AWS geprüft werden.
 
----
 
 Dieser Überblick soll Ihnen helfen, die Möglichkeiten von AWS Bedrock besser zu verstehen und abzuwägen, ob der Service für Ihre KI-Projekte geeignet ist.

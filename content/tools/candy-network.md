@@ -85,7 +85,7 @@ Für Teams in Europa ist bei Candy Network außerdem relevant, ob Verträge zur 
 
 ## Redaktionelle Einschätzung
 
-Candy Network wirkt am stärksten, wenn es nicht als magische Abkürzung, sondern als Baustein in einem sauber beschriebenen Arbeitsablauf genutzt wird. Der eigentliche Gewinn entsteht durch weniger Reibung, klarere Übergaben und bessere Wiederholbarkeit.
+Candy Network sollte mit echten Nutzerfragen und klaren Eskalationsregeln getestet werden. Entscheidend ist, ob Antworten verlässlich bleiben und offene Fälle sauber an Menschen übergeben werden.
 
 Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Candy Network wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
 
