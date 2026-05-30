@@ -52,6 +52,15 @@ const getToolVerdict = (index: number) => {
   if (position % 7 === 0) return verdictOptions[1];
   return verdictOptions[0];
 };
+const getToolLetter = (title: string) => {
+  const first = title
+    .trim()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .charAt(0)
+    .toUpperCase();
+  return /^[A-Z]$/.test(first) ? first : "#";
+};
 const verdictCounts = enabledTools.reduce((map, _tool, index) => {
   const verdict = getToolVerdict(index).value;
   map.set(verdict, (map.get(verdict) || 0) + 1);
@@ -133,37 +142,44 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     </header>
 
     <div class="inv-controls inv-modebar">
-      <input
-        type="search"
-        id="search-input"
-        class="inv-search-input inv-search-hidden"
-        placeholder="Tools suchen…"
-        autocomplete="off"
-      />
-      <div class="inv-mode-left">
+      <div class="inv-search-panel">
+        <label class="inv-mode-label" for="search-input">Suche</label>
+        <input
+          type="search"
+          id="search-input"
+          class="inv-search-input"
+          placeholder="Tool, Tag oder Kategorie suchen…"
+          autocomplete="off"
+        />
+      </div>
+      <div class="inv-mode-left" aria-label="Anzeige">
         <span class="inv-mode-label">Anzeige</span>
-        <span class="inv-mode-button inv-mode-button-active">▦ Register</span>
-        <span class="inv-mode-button">▪ Setzkasten</span>
+        <button type="button" class="inv-mode-button inv-mode-button-active" data-view-mode="register" aria-pressed="true">▦ Register</button>
+        <button type="button" class="inv-mode-button" data-view-mode="setzkasten" aria-pressed="false">▪ Setzkasten</button>
       </div>
       <div class="inv-sort-tabs">
-        <span class="inv-mode-label">Sortierung</span>
+        <label class="inv-mode-label" for="sort-select">Sortierung</label>
         <select id="sort-select" class="inv-sort-select" aria-label="Sortierung">
           <option value="new" selected>Zuletzt geprüft</option>
           <option value="az">A – Z</option>
           <option value="pop">Nach Verdikt</option>
         </select>
-        <span class="inv-sort-ghost">Nach Kategorie</span>
       </div>
       <div class="inv-mode-right">
-        <span>Anzeige · 42 von {enabledTools.length.toLocaleString("de-DE")}</span>
-        <a href="/api/tools.json">⇩ als CSV</a>
+        <span id="tools-result-count">Anzeige · 0 von {enabledTools.length.toLocaleString("de-DE")}</span>
+        <a href="/api/tools.json">⇩ JSON</a>
       </div>
     </div>
 
     <div class="inv-jumpbar" aria-label="Sprungmarken">
       <span class="inv-jump-label">Sprungmarken</span>
       {jumpLetters.map((letter) => (
-        <a href={`/tools/?sort=az#${letter.toLowerCase()}`} class="inv-jump-letter">{letter}</a>
+        <a
+          href={`/tools/?sort=az#${letter.toLowerCase()}`}
+          class="inv-jump-letter"
+          data-jump-letter={letter}
+          aria-label={`Zu Tools mit Anfangsbuchstabe ${letter} springen`}
+        >{letter}</a>
       ))}
     </div>
 
@@ -229,6 +245,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
         data-category={categoryValue}
         data-verdict={verdict.value}
+        data-letter={getToolLetter(tool.title)}
         data-added={tool.addedAtMs}
         data-added-order={tool.addedAtOrderMs}
         data-popularity={tool.popularity}
@@ -360,8 +377,13 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const hiddenCountInfo = document.getElementById('hidden-count-info');
       const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
       const filterButtons = Array.from(document.querySelectorAll('.inv-filter-option'));
+      const viewButtons = Array.from(document.querySelectorAll('[data-view-mode]'));
+      const jumpLinks = Array.from(document.querySelectorAll('.inv-jump-letter'));
+      const resultCount = document.getElementById('tools-result-count');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
       let pageBlocks = 1;
+      let pendingJumpLetter = window.location.hash ? window.location.hash.slice(1).toUpperCase() : '';
+      let activeView = 'register';
       const selectedFilters = {
         verdict: new Set(),
         category: new Set(),
@@ -371,6 +393,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const urlParams = new URLSearchParams(window.location.search);
       const initialTag = urlParams.get('tag');
       const initialSort = urlParams.get('sort');
+      const initialView = urlParams.get('view');
       const initialVerdicts = urlParams.get('verdict');
       const initialCategories = urlParams.get('category');
 
@@ -408,6 +431,43 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             ? '/tools/?' + normalizedParams.toString()
             : '/tools/';
           history.replaceState(null, '', nextUrl);
+        }
+      }
+
+      function getStoredView() {
+        if (initialView === 'setzkasten' || initialView === 'register') return initialView;
+        try {
+          const storedView = localStorage.getItem('utildesk-tools-view');
+          if (storedView === 'setzkasten' || storedView === 'register') return storedView;
+        } catch (e) {
+          // ignore localStorage access errors
+        }
+        return 'register';
+      }
+
+      function applyViewMode(viewMode, updateUrl) {
+        activeView = viewMode === 'setzkasten' ? 'setzkasten' : 'register';
+        toolsGrid.classList.toggle('inv-view-setzkasten', activeView === 'setzkasten');
+        toolsGrid.classList.toggle('inv-view-register', activeView === 'register');
+        viewButtons.forEach(function(button) {
+          const active = button.getAttribute('data-view-mode') === activeView;
+          button.classList.toggle('inv-mode-button-active', active);
+          button.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        try {
+          localStorage.setItem('utildesk-tools-view', activeView);
+        } catch (e) {
+          // ignore localStorage access errors
+        }
+        if (updateUrl) {
+          const params = new URLSearchParams(window.location.search);
+          if (activeView === 'setzkasten') {
+            params.set('view', activeView);
+          } else {
+            params.delete('view');
+          }
+          const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
+          history.replaceState(null, '', nextUrl + window.location.hash);
         }
       }
 
@@ -479,6 +539,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           const searchMatch = !query ||
                              title.includes(query) ||
                              slug.includes(query) ||
+                             category.includes(query) ||
                              tags.includes(query);
 
           const verdictMatch = selectedFilters.verdict.size === 0 || selectedFilters.verdict.has(verdict);
@@ -508,7 +569,18 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           return aTitle.localeCompare(bTitle, 'de');
         });
 
-        const limit = getStep() * pageBlocks;
+        let limit = getStep() * pageBlocks;
+        let jumpTarget = null;
+        if (pendingJumpLetter) {
+          jumpTarget = filtered.find(function(card) {
+            return (card.getAttribute('data-letter') || '') === pendingJumpLetter;
+          });
+          if (jumpTarget) {
+            const targetIndex = filtered.indexOf(jumpTarget);
+            limit = Math.max(limit, targetIndex + 1);
+            pageBlocks = Math.ceil(limit / getStep());
+          }
+        }
         const visibleCards = filtered.slice(0, limit);
 
         toolsGrid.innerHTML = '';
@@ -545,6 +617,26 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             hiddenCountInfo.style.display = 'none';
           }
         }
+
+        if (resultCount) {
+          resultCount.textContent = 'Anzeige · ' + currentVisible + ' von ' + totalFiltered + ' Treffern';
+        }
+
+        jumpLinks.forEach(function(link) {
+          const letter = link.getAttribute('data-jump-letter') || '';
+          const available = filtered.some(function(card) { return (card.getAttribute('data-letter') || '') === letter; });
+          link.classList.toggle('is-disabled', !available);
+          link.classList.toggle('is-active', Boolean(pendingJumpLetter && pendingJumpLetter === letter && available));
+          link.setAttribute('aria-disabled', available ? 'false' : 'true');
+        });
+
+        if (jumpTarget) {
+          const targetToScroll = jumpTarget;
+          requestAnimationFrame(function() {
+            targetToScroll.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        }
+        pendingJumpLetter = '';
       }
 
       function resetAndFilter() {
@@ -567,6 +659,31 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           }
           syncFilterButtons();
           syncFilterUrl();
+          resetAndFilter();
+        });
+      });
+
+      viewButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          applyViewMode(button.getAttribute('data-view-mode'), true);
+          filterTools();
+        });
+      });
+
+      jumpLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          const letter = link.getAttribute('data-jump-letter') || '';
+          if (!letter || link.getAttribute('aria-disabled') === 'true') return;
+          pendingJumpLetter = letter;
+          if (sortSelect) {
+            sortSelect.value = 'az';
+            try { localStorage.setItem(sortStorageKey, 'az'); } catch (e) {}
+          }
+          const params = new URLSearchParams(window.location.search);
+          params.set('sort', 'az');
+          const nextUrl = '/tools/?' + params.toString() + '#' + letter.toLowerCase();
+          history.pushState(null, '', nextUrl);
           resetAndFilter();
         });
       });
@@ -608,6 +725,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       window.addEventListener('resize', filterTools);
 
       // Initial filter on page load
+      applyViewMode(getStoredView(), false);
       syncFilterButtons();
       filterTools();
     })();
