@@ -78,15 +78,15 @@ const copy = isEn
       rightStats: `${totalGuides || guides.length || 25} decisions · ${toolsCount} tools indexed`,
       noAds: "0 paid placements",
       kicker: `Decision № ${issueNo} · AI tool review`,
-      headline: "Should my team adopt AI tools without losing control?",
-      dek: "We read the tools before you adopt them: practical verdicts, risks and next steps instead of another endless directory.",
+      headline: "Should my team introduce Cursor, Copilot or Claude Code?",
+      dek: "Three very different promises \u2014 and only one fits teams that take code seriously.",
       verdictLabel: "Editorial verdict",
-      verdict: "Recommend with safeguards.",
-      verdictText: "Start with narrow workflows, clear review rules and tools your team can still understand after the first week.",
-      toolsLabel: "Tools in this decision",
+      verdict: "Claude Code for senior teams. Copilot as the safer default. Cursor only after a pilot.",
+      verdictText: "The bottleneck is no longer writing code. It is understanding, reviewing and owning what the tool changed.",
+      toolsLabel: "In the test",
       avoidLabel: "Do not start with",
-      avoidOne: "autonomous agents without audit trails",
-      avoidTwo: "no-login tools for internal documents",
+      avoidOne: "rolling out Cursor blindly",
+      avoidTwo: "leaving Copilot as the \"it does nothing\" default",
       read: "Read the current decision",
       minutes: "min read",
       evidence: "Evidence file",
@@ -133,15 +133,15 @@ const copy = isEn
       rightStats: `${totalGuides || guides.length || 25} Entscheidungen · ${toolsCount} Tools indiziert`,
       noAds: "0 bezahlte Platzierungen",
       kicker: `Entscheidung № ${issueNo} · AI-Tool Review`,
-      headline: "Soll mein Team KI-Tools kontrolliert einführen?",
-      dek: "Wir lesen die Tools, bevor du sie einführst: klare Urteile, Risiken und nächste Schritte statt noch einer endlosen Linkliste.",
+      headline: "Soll mein Team Cursor, Copilot oder Claude Code einf\u00fchren?",
+      dek: "Drei sehr unterschiedliche Versprechen \u2014 und nur eines davon passt zu Teams, die Code ernst nehmen.",
       verdictLabel: "Verdikt der Redaktion",
-      verdict: "Empfehlen — mit Guardrails.",
-      verdictText: "Starte mit engen Workflows, klaren Review-Regeln und Werkzeugen, die dein Team nach der ersten Woche noch versteht.",
-      toolsLabel: "Tools in dieser Entscheidung",
+      verdict: "Claude Code f\u00fcr Senior-Teams. Copilot als sicherer Standard. Cursor erst nach Pilot.",
+      verdictText: "Der Engpass liegt nicht mehr im Schreiben von Code, sondern im Verstehen, Pr\u00fcfen und Verantworten der \u00c4nderungen.",
+      toolsLabel: "Im Test",
       avoidLabel: "Nicht damit starten",
-      avoidOne: "autonome Agenten ohne Audit-Trail",
-      avoidTwo: "No-Login-Tools für interne Dokumente",
+      avoidOne: "Cursor blind ausrollen",
+      avoidTwo: "Copilot als macht-ja-eh-nichts-Default lassen",
       read: "Aktuelle Entscheidung lesen",
       minutes: "min Lesezeit",
       evidence: "Beweismaterial",
@@ -178,6 +178,21 @@ const primaryGuide = guides[0];
 const guideCards = guides.slice(0, 3);
 const toolRows = tools.slice(0, 12);
 const indexRows = tools.slice(0, 8);
+const toolHrefBySlug = (slug: string) => `${prefix}/tools/${slug}/`;
+const testRows = isEn
+  ? [
+      { title: "Claude Code", slug: "claude", note: "best context discipline", score: "9.1", icon: "\u2713", kind: "recommend" },
+      { title: "GitHub Copilot", slug: "github-copilot", note: "safer standard", score: "8.4", icon: "\u2713", kind: "recommend" },
+      { title: "Cursor", slug: "cursor", note: "only with review pilot", score: "7.0", icon: "\u25d0", kind: "caution" },
+    ]
+  : [
+      { title: "Claude Code", slug: "claude", note: "beste Kontext-Disziplin", score: "9.1", icon: "\u2713", kind: "recommend" },
+      { title: "GitHub Copilot", slug: "github-copilot", note: "sicherer Standard", score: "8.4", icon: "\u2713", kind: "recommend" },
+      { title: "Cursor", slug: "cursor", note: "nur mit Review-Pilot", score: "7.0", icon: "\u25d0", kind: "caution" },
+    ];
+const frontNote = isEn
+  ? "We had three teams work with Cursor, Copilot and Claude Code for a week. What began as a speed test ended as a discussion about responsibility: who reviews what an agent commits?"
+  : "Wir haben drei Teams je eine Woche lang mit Cursor, Copilot und Claude Code arbeiten lassen. Was als Geschwindigkeitstest begann, endete als Diskussion \u00fcber Verantwortung: Wer reviewt, was ein Agent committet?";
 
 const normalizeTagSlug = (tag: string) =>
   tag
@@ -264,9 +279,9 @@ const categoryRows = categories.slice(0, 8);
           <h2>{copy.headline}</h2>
           <p class="ds-dek">{copy.dek}</p>
 
-          <div class="ds-verdict">
+          <div class="ds-verdict ds-verdict-caution">
             <span class="ds-verdict-label">{copy.verdictLabel}</span>
-            <span class="ds-verdict-glyph">✔</span>
+            <span class="ds-verdict-glyph">◐</span>
             <div>
               <strong>{copy.verdict}</strong>
               <p>{copy.verdictText}</p>
@@ -279,27 +294,23 @@ const categoryRows = categories.slice(0, 8);
           </div>
         </article>
 
-        <aside class="ds-front-aside">
-          <div class="ds-box">
+        <aside class="ds-front-aside ds-front-aside-test">
+          <div class="ds-test-table">
             <h3>{copy.toolsLabel}</h3>
-            {toolRows.slice(0, 3).map((tool, index) => (
-              <a href={`${prefix}/tools/${tool.slug}/`}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{tool.title}</strong>
+            {testRows.map((tool) => (
+              <a class={`ds-test-row ds-test-row-${tool.kind}`} href={toolHrefBySlug(tool.slug)}>
+                <span class="ds-test-icon">{tool.icon}</span>
+                <strong>{tool.title}<small>{tool.note}</small></strong>
+                <b>{tool.score}</b>
               </a>
             ))}
           </div>
-          <div class="ds-box ds-box-warn">
+          <div class="ds-box ds-box-warn ds-box-warn-dashed">
             <h3>{copy.avoidLabel}</h3>
-            <p>× {copy.avoidOne}</p>
-            <p>× {copy.avoidTwo}</p>
+            <p>• {copy.avoidOne}</p>
+            <p>• {copy.avoidTwo}</p>
           </div>
-          <div class="ds-box ds-box-facts">
-            <h3>{copy.factsLabel}</h3>
-            <p>01 · {copy.factOne}</p>
-            <p>02 · {copy.factTwo}</p>
-            <p>03 · {copy.factThree}</p>
-          </div>
+          <p class="ds-front-note"><span>{isEn ? "W" : "W"}</span>{frontNote.slice(1)}</p>
         </aside>
       </section>
 
