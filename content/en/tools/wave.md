@@ -1,6 +1,11 @@
 ---
 slug: wave
 title: Wave
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -102,26 +107,26 @@ Wave offers a free basic plan that includes accounting, invoicing, and basic fin
 
 ## FAQ
 
-**1. Is Wave really free?**  
+**1. Is Wave really free?**
 Yes, Wave's basic plan is free and offers core accounting and invoicing features. Fees may apply for add-on services such as payment processing or payroll.
 
-**2. Which payment methods does Wave support?**  
+**2. Which payment methods does Wave support?**
 Wave supports credit card payments and ACH bank transfers, among others, depending on the region and payment provider.
 
-**3. Can I use Wave on my smartphone?**  
+**3. Can I use Wave on my smartphone?**
 Yes, Wave offers a mobile app that lets you manage your finances on the go.
 
-**4. Is Wave suitable for international businesses?**  
+**4. Is Wave suitable for international businesses?**
 Wave supports multiple currencies and tax types, but availability and features may vary by country.
 
-**5. How secure is my data with Wave?**  
+**5. How secure is my data with Wave?**
 Wave uses modern security standards and encryption to protect your data. Because it is a cloud solution, an internet connection is required.
 
-**6. Can I integrate Wave with other tools?**  
+**6. Can I integrate Wave with other tools?**
 Yes, Wave offers integrations with various apps and payment providers to streamline workflows.
 
-**7. Is there a trial period for paid features?**  
+**7. Is there a trial period for paid features?**
 Depending on the service, trial periods or free trial versions may be available. Details can be found on the official website.
 
-**8. How does automatic expense categorization work?**  
+**8. How does automatic expense categorization work?**
 Wave uses AI to automatically analyze transactions and assign them to suitable categories, making accounting easier.

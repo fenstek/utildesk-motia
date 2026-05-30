@@ -1,6 +1,11 @@
 ---
 slug: quirkos
 title: Quirkos
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -101,26 +106,26 @@ Prices for Quirkos vary depending on the provider and selected plan. There are o
 
 ## FAQ
 
-**1. Is Quirkos suitable for beginners?**  
+**1. Is Quirkos suitable for beginners?**
 Yes, Quirkos offers an intuitive user interface that makes it easier for beginners to get started, although it can help to be familiar with the basic concepts of qualitative data analysis.
 
-**2. Which file formats does Quirkos support?**  
+**2. Which file formats does Quirkos support?**
 Quirkos supports common text formats for qualitative data, including transcripts, survey responses, and other text-based documents. The exact formats may vary by version.
 
-**3. Can Quirkos be used by teams?**  
+**3. Can Quirkos be used by teams?**
 Yes, the tool includes team collaboration features, including access controls and comments, to optimize workflows.
 
-**4. Is there a free trial version?**  
+**4. Is there a free trial version?**
 Depending on the provider and plan, a free trial period or demo may be available. It is recommended to ask Quirkos directly about current offers.
 
-**5. How does Quirkos support the design workflow?**  
+**5. How does Quirkos support the design workflow?**
 Quirkos makes it easier to integrate qualitative data into design processes through clear visualizations and the ability to share insights directly with the team.
 
-**6. Which AI features are included?**  
+**6. Which AI features are included?**
 The tool uses AI to automatically detect themes and patterns in text data, helping to speed up and simplify analysis.
 
-**7. How is data exported?**  
+**7. How is data exported?**
 Quirkos offers flexible export options in various formats that are well suited for reports, presentations, or further analysis.
 
-**8. Is Quirkos cloud-based or installable locally?**  
+**8. Is Quirkos cloud-based or installable locally?**
 Depending on the provider and plan, Quirkos may be offered as a desktop application or a cloud-based solution. The details should be checked with the respective provider.

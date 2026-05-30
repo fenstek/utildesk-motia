@@ -1,6 +1,11 @@
 ---
 slug: react-native
 title: React Native
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -103,28 +108,28 @@ React Native is an open-source project and therefore free to use. However, costs
 
 ## FAQ
 
-**1. Is React Native free?**  
+**1. Is React Native free?**
 Yes, React Native is an open-source framework and can be used free of charge.
 
-**2. Which programming language is used for React Native?**  
+**2. Which programming language is used for React Native?**
 React Native mainly uses JavaScript and JSX, based on the React framework.
 
-**3. Can I develop both iOS and Android apps with React Native?**  
+**3. Can I develop both iOS and Android apps with React Native?**
 Yes, React Native makes it possible to develop cross-platform apps for iOS and Android with a shared codebase.
 
-**4. Do I need native development knowledge to use React Native?**  
+**4. Do I need native development knowledge to use React Native?**
 Basic knowledge of native development is helpful, but not absolutely necessary. For complex features, native code may be required.
 
-**5. How does hot reloading work in React Native?**  
+**5. How does hot reloading work in React Native?**
 Hot reloading updates the code in the running app immediately without having to restart it, which speeds up development.
 
-**6. Is React Native suitable for large projects?**  
+**6. Is React Native suitable for large projects?**
 Yes, many large companies use React Native, although complexity can increase with project size.
 
-**7. What are the disadvantages of React Native compared to native development?**  
+**7. What are the disadvantages of React Native compared to native development?**
 Sometimes platform-specific adjustments are necessary, and very graphics-intensive apps can be limited in performance.
 
-**8. How large is the community behind React Native?**  
+**8. How large is the community behind React Native?**
 React Native has a very active and large community with numerous resources, libraries, and support options.
 
 ---

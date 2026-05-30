@@ -1,6 +1,11 @@
 ---
 slug: libreoffice-impress
 title: LibreOffice Impress
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Open Source
 tags:
@@ -80,26 +85,26 @@ Impress is solid for factual decks and independent work environments. For highly
 
 ## FAQ
 
-**1. Is LibreOffice Impress really free?**  
+**1. Is LibreOffice Impress really free?**
 Yes, Impress is part of the LibreOffice suite, which can be downloaded and used free of charge as open-source software.
 
-**2. Can I open and edit PowerPoint files with Impress?**  
+**2. Can I open and edit PowerPoint files with Impress?**
 Yes, Impress supports the .ppt and .pptx formats, although some formatting may be lost in complex presentations.
 
-**3. Which operating systems does LibreOffice Impress run on?**  
+**3. Which operating systems does LibreOffice Impress run on?**
 LibreOffice Impress is available for Windows, macOS, and various Linux distributions.
 
-**4. Do I need an internet connection to use Impress?**  
+**4. Do I need an internet connection to use Impress?**
 No, Impress is a desktop application and can be used fully offline.
 
-**5. Are there mobile versions of LibreOffice Impress?**  
+**5. Are there mobile versions of LibreOffice Impress?**
 There is currently no standalone mobile app, but presentations can be viewed on mobile devices using compatible viewers.
 
-**6. How can I share my presentation with others?**  
+**6. How can I share my presentation with others?**
 Presentations can be exported as a PowerPoint file, PDF, or in other formats and shared by email or cloud services.
 
-**7. Does LibreOffice Impress support animations and transitions?**  
+**7. Does LibreOffice Impress support animations and transitions?**
 Yes, it offers a wide range of animations and transition effects for creating lively presentations.
 
-**8. Is there a way to receive feedback directly in the presentation?**  
+**8. Is there a way to receive feedback directly in the presentation?**
 Impress supports commenting features that let users add notes, although real-time collaborative features are limited.

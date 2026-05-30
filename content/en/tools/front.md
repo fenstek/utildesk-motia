@@ -1,6 +1,11 @@
 ---
 slug: front
 title: Front
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: null
 tags:
@@ -104,26 +109,26 @@ The exact pricing structure can be found on the provider’s official website an
 
 ## FAQ
 
-**1. Can Front be integrated with other tools?**  
+**1. Can Front be integrated with other tools?**
 Yes, Front offers numerous integrations with CRM systems, helpdesk software, calendars, and other applications to simplify workflows.
 
-**2. Does Front support mobile devices?**  
+**2. Does Front support mobile devices?**
 Yes, Front provides apps for iOS and Android, allowing users to access all features while on the go.
 
-**3. Is Front suitable for small teams?**  
+**3. Is Front suitable for small teams?**
 Yes, Front offers plans specifically tailored to small teams, with features varying by plan.
 
-**4. Does Front include automation features?**  
+**4. Does Front include automation features?**
 Yes, Front uses AI-powered automations to automatically assign, prioritize, and handle messages.
 
-**5. How secure is data in Front?**  
+**5. How secure is data in Front?**
 Front uses encryption and permission controls to ensure the security and protection of customer data.
 
-**6. Can Front be tested before purchase?**  
+**6. Can Front be tested before purchase?**
 Depending on the provider and plan, there are often free trial periods or demo versions to get familiar with the platform before making a decision.
 
-**7. Which communication channels does Front support?**  
+**7. Which communication channels does Front support?**
 Front combines email, SMS, chat, and social media in a shared inbox for centralized management.
 
-**8. How does teamwork work with Front?**  
+**8. How does teamwork work with Front?**
 Team members can comment on messages internally, assign tasks, and work together on replies to increase efficiency.

@@ -1,6 +1,11 @@
 ---
 slug: apple-iwork
 title: Apple iWork
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Free
 tags: [office, documents, presentation, productivity]
@@ -45,7 +50,7 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 - **Kompatibilität**: Import und Export von Microsoft Office-Formaten (Word, Excel, PowerPoint) sowie PDF und anderen gängigen Dateitypen.
 - **Offline-Nutzung**: Bearbeitung von Dokumenten ohne Internetverbindung, Synchronisation erfolgt bei erneuter Verbindung.
 
-- **Praxis-Workflow:** Apple iWork sollte anhand eines konkreten Assets oder Mockup mit Briefing, Versionen, Feedbackrunde und finaler Übergabe getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Apple iWork sollte der erste Test mit einen begrenzten Arbeitsfall mit realistischen Daten, klarer Verantwortung und sichtbarem Ergebnis laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Das Team sollte bei Apple iWork festhalten, wie Bearbeitungszeit, visuelle Qualität, Freigabeschleifen und Wiederverwendbarkeit gemessen, freigegeben und später nachvollzogen werden.
 - **Team-Übergabe:** Nützlich wird Apple iWork besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -91,28 +96,28 @@ Beim Vergleich lohnt es sich, Apple iWork nicht nur gegen sehr ähnliche Produkt
 
 ## FAQ
 
-**1. Ist Apple iWork wirklich kostenlos?**  
+**1. Ist Apple iWork wirklich kostenlos?**
 Ja, Apple iWork ist für alle Nutzer von Apple-Geräten kostenlos verfügbar und erfordert keine zusätzlichen Zahlungen.
 
-**2. Kann ich iWork-Dokumente mit Microsoft Office öffnen?**  
+**2. Kann ich iWork-Dokumente mit Microsoft Office öffnen?**
 Ja, iWork unterstützt den Import und Export von gängigen Microsoft Office-Formaten, sodass Dokumente ausgetauscht werden können.
 
-**3. Gibt es eine Version von iWork für Windows oder Android?**  
+**3. Gibt es eine Version von iWork für Windows oder Android?**
 Direkt als native App ist iWork nur für macOS und iOS verfügbar. Über die iCloud-Webseite können Dokumente auch von anderen Plattformen aus bearbeitet werden, allerdings mit eingeschränkten Funktionen.
 
-**4. Wie funktioniert die Zusammenarbeit in iWork?**  
+**4. Wie funktioniert die Zusammenarbeit in iWork?**
 Über iCloud können Nutzer Dokumente freigeben und in Echtzeit gemeinsam bearbeiten, auch wenn andere Teilnehmer unterschiedliche Apple-Geräte verwenden.
 
-**5. Brauche ich eine Internetverbindung, um iWork zu nutzen?**  
+**5. Brauche ich eine Internetverbindung, um iWork zu nutzen?**
 Die Programme können offline verwendet werden. Für Synchronisation und Zusammenarbeit ist eine Internetverbindung notwendig.
 
-**6. Welche Geräte werden unterstützt?**  
+**6. Welche Geräte werden unterstützt?**
 iWork ist für Mac, iPhone und iPad optimiert. Die Web-Version funktioniert in gängigen Browsern, ist aber weniger leistungsfähig.
 
-**7. Kann ich iWork-Dokumente drucken oder exportieren?**  
+**7. Kann ich iWork-Dokumente drucken oder exportieren?**
 Ja, Dokumente können als PDF, Word, Excel, PowerPoint oder in anderen Formaten exportiert und gedruckt werden.
 
-**8. Gibt es Vorlagen in iWork?**  
+**8. Gibt es Vorlagen in iWork?**
 Ja, iWork bietet eine Vielzahl an professionellen Vorlagen für Texte, Tabellen und Präsentationen, die das Erstellen erleichtern.
 
 **9. Wie testet man Apple iWork sinnvoll im Team?**

@@ -1,6 +1,11 @@
 ---
 slug: systran-translate-api
 title: SYSTRAN Translate API
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: Je nach Plan
 tags: [translation, api, developer-tools]
@@ -87,26 +92,26 @@ Für genaue Preisdetails empfiehlt sich die direkte Kontaktaufnahme mit dem Anbi
 
 ## FAQ
 
-**1. Welche Sprachen unterstützt SYSTRAN Translate API?**  
+**1. Welche Sprachen unterstützt SYSTRAN Translate API?**
 SYSTRAN unterstützt eine Vielzahl von Sprachen, darunter die wichtigsten Weltsprachen sowie einige weniger verbreitete. Die genaue Liste kann je nach Plan variieren.
 
-**2. Wie wird die API in eigene Anwendungen integriert?**  
+**2. Wie wird die API in eigene Anwendungen integriert?**
 Die API ist REST-basiert und kann mit HTTP-Anfragen angesprochen werden. Es stehen SDKs und Beispielcodes für gängige Programmiersprachen zur Verfügung.
 
-**3. Gibt es eine kostenlose Testphase?**  
+**3. Gibt es eine kostenlose Testphase?**
 Je nach Anbieter bietet SYSTRAN meist eine Freemium-Version oder Testzugänge mit begrenztem Kontingent an, um die API vor dem Kauf zu testen.
 
-**4. Wie sicher sind die übersetzten Daten?**  
+**4. Wie sicher sind die übersetzten Daten?**
 SYSTRAN legt großen Wert auf Datenschutz und Sicherheit. Datenübertragungen sind verschlüsselt, und je nach Vertrag können zusätzliche Sicherheitsmaßnahmen vereinbart werden.
 
-**5. Kann die API an branchenspezifische Anforderungen angepasst werden?**  
+**5. Kann die API an branchenspezifische Anforderungen angepasst werden?**
 Ja, SYSTRAN bietet Optionen zur Anpassung von Übersetzungsmodellen, um fachspezifische Terminologien besser abzubilden.
 
-**6. Wie schnell erfolgt die Übersetzung?**  
+**6. Wie schnell erfolgt die Übersetzung?**
 Die API ist auf schnelle Antwortzeiten ausgelegt und eignet sich auch für Echtzeitanwendungen, wobei die Geschwindigkeit von der Textlänge und Serverauslastung abhängen kann.
 
-**7. Welche Dokumentformate werden unterstützt?**  
+**7. Welche Dokumentformate werden unterstützt?**
 Je nach Plan und technischer Umsetzung können verschiedene Formate wie TXT, XML, HTML oder Office-Dokumente übersetzt werden.
 
-**8. Gibt es Support und Dokumentation?**  
+**8. Gibt es Support und Dokumentation?**
 Ja, SYSTRAN stellt umfangreiche Dokumentationen, Beispielcodes und in der Regel auch Support-Optionen für Entwickler bereit.

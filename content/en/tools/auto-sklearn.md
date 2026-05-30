@@ -1,6 +1,11 @@
 ---
 slug: auto-sklearn
 title: Auto-sklearn
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -95,28 +100,28 @@ A useful comparison for Auto-sklearn starts with the goal. Only then does it bec
 
 ## FAQ
 
-**1. What is Auto-sklearn and for what is it used?**  
+**1. What is Auto-sklearn and for what is it used?**
 Auto-sklearn is an open-source tool for automating machine learning, primarily used for selecting and optimizing models for tabular data.
 
-**2. Which programming language is supported?**  
+**2. Which programming language is supported?**
 Auto-sklearn is implemented in Python and can be easily integrated into Python workflows.
 
-**3. Is Auto-sklearn suitable for beginners?**  
+**3. Is Auto-sklearn suitable for beginners?**
 Basic knowledge of Python and machine learning is helpful. For absolute beginners, the learning curve can be steep, but the comprehensive documentation supports the learning process.
 
-**4. What data formats is Auto-sklearn compatible with?**  
+**4. What data formats is Auto-sklearn compatible with?**
 The tool is primarily designed for tabular data, such as CSV files or DataFrames.
 
-**5. Does Auto-sklearn have a graphical user interface?**  
+**5. Does Auto-sklearn have a graphical user interface?**
 Auto-sklearn does not have a native GUI, but is controlled through Python scripts and APIs.
 
-**6. How long does the training process take with Auto-sklearn?**  
+**6. How long does the training process take with Auto-sklearn?**
 The training time depends on the size of the dataset and available computing resources. Meta-learning often leads to fast good results.
 
-**7. Is Auto-sklearn free?**  
+**7. Is Auto-sklearn free?**
 Yes, Auto-sklearn is open-source and free to use.
 
-**8. Can Auto-sklearn be integrated into existing projects?**  
+**8. Can Auto-sklearn be integrated into existing projects?**
 Yes, due to its integration with scikit-learn, Auto-sklearn can be easily integrated into existing Python projects.
 
 ---

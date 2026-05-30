@@ -1,6 +1,11 @@
 ---
 slug: freecodecamp
 title: freeCodeCamp
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: 'Free, Open Source'
 tags:
@@ -88,26 +93,26 @@ freeCodeCamp is not a shortcut, but a stable learning path. Learners who finish 
 
 ## FAQ
 
-**1. Is freeCodeCamp really free?**  
+**1. Is freeCodeCamp really free?**
 Yes, freeCodeCamp is completely free to use and open source. All courses and certificates are available without fees.
 
-**2. Do I need prior knowledge to start with freeCodeCamp?**  
+**2. Do I need prior knowledge to start with freeCodeCamp?**
 No, the platform is designed so that absolute beginners can learn step by step.
 
-**3. Which programming languages are taught by freeCodeCamp?**  
+**3. Which programming languages are taught by freeCodeCamp?**
 The focus is on HTML, CSS, JavaScript, React, Node.js, and other web technologies.
 
-**4. Is there a way to exchange ideas with other learners?**  
+**4. Is there a way to exchange ideas with other learners?**
 Yes, freeCodeCamp offers an active forum and a community where questions can be asked and experiences shared.
 
-**5. Do I receive a certificate after completing a course?**  
+**5. Do I receive a certificate after completing a course?**
 Yes, after successfully completing certain modules, you can receive official certificates.
 
-**6. Can I use freeCodeCamp on mobile devices?**  
+**6. Can I use freeCodeCamp on mobile devices?**
 The website is mobile-friendly, so you can learn with smartphones or tablets as well.
 
-**7. How up to date is the content?**  
+**7. How up to date is the content?**
 The courses are updated regularly to cover current web standards and technologies.
 
-**8. Do I need to install software to use freeCodeCamp?**  
+**8. Do I need to install software to use freeCodeCamp?**
 No, all exercises can be completed directly in the browser, so no installation is needed.

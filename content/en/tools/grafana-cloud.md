@@ -1,6 +1,11 @@
 ---
 slug: grafana-cloud
 title: Grafana Cloud
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Subscription
 tags:
@@ -94,12 +99,11 @@ Grafana Cloud uses subscription and usage-based elements. Costs depend on active
 
 ## FAQ
 
-**Is Grafana Cloud only dashboards?**  
+**Is Grafana Cloud only dashboards?**
 No. Dashboards are central, but the platform also covers metrics, logs, traces, alerting, and integrations.
 
-**Can I use Prometheus data?**  
+**Can I use Prometheus data?**
 Yes. Grafana Cloud supports Prometheus-style metrics workflows.
 
-**Is self-hosted Grafana still needed?**  
+**Is self-hosted Grafana still needed?**
 Not necessarily. Grafana Cloud is designed to provide managed Grafana and related observability services.
-

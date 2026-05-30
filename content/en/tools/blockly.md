@@ -1,6 +1,11 @@
 ---
 slug: blockly
 title: Blockly
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Open Source
 tags:
@@ -16,6 +21,11 @@ translation: full
 
 Blockly is a browser-based open-source library that allows users to create graphical programming environments. By visually connecting code blocks, users without deep programming knowledge can generate functional code. Blockly supports various programming languages including JavaScript, Python, and others, and is commonly used in educational settings as well as for prototyping.
 
+## Editorial assessment
+
+With Blockly, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+
+We would test Blockly in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
 ## Who is Blockly suitable for?
 
 Blockly is aimed at developers, educators, and learners who want to learn or teach programming in a simple and visual way. It is especially suitable for:
@@ -68,28 +78,28 @@ Blockly is completely open source and free of charge. There are no licensing fee
 
 ## FAQ
 
-**1. What is Blockly and what is it used for?**  
+**1. What is Blockly and what is it used for?**
 Blockly is an open-source library for creating visual programming environments. It is used to generate code by assembling blocks, making programming easier for beginners.
 
-**2. Which programming languages does Blockly support?**  
+**2. Which programming languages does Blockly support?**
 Blockly can generate code in several languages including JavaScript, Python, Dart, Lua, and PHP, depending on configuration.
 
-**3. Is Blockly free to use?**  
+**3. Is Blockly free to use?**
 Yes, Blockly is fully open source and can be used and customized for free.
 
-**4. Do I need programming knowledge to use Blockly?**  
+**4. Do I need programming knowledge to use Blockly?**
 Users utilizing Blockly as a learning tool do not need programming knowledge. Developers integrating Blockly into their projects should have basic knowledge of web technologies.
 
-**5. Can I integrate Blockly into my own website?**  
+**5. Can I integrate Blockly into my own website?**
 Yes, Blockly is designed as a JavaScript library and can be integrated into web applications.
 
-**6. Is there a community or support for Blockly?**  
+**6. Is there a community or support for Blockly?**
 Yes, Blockly has an active developer community, extensive documentation, and forums for support.
 
-**7. How does Blockly differ from Scratch?**  
+**7. How does Blockly differ from Scratch?**
 Scratch is a standalone learning platform with its own user interface, whereas Blockly is a library for embedding visual programming into other applications.
 
-**8. Can Blockly be used for professional software development?**  
+**8. Can Blockly be used for professional software development?**
 Blockly is mainly suitable for learning and prototyping; traditional programming methods are often better for complex applications.
 
 ---

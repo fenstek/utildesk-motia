@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-service-bus
 title: Microsoft Azure Service Bus
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, automation]
@@ -90,26 +95,26 @@ Microsoft Azure Service Bus verwendet ein nutzungsbasiertes Preismodell. Die Kos
 
 ## FAQ
 
-**1. Was ist Microsoft Azure Service Bus?**  
+**1. Was ist Microsoft Azure Service Bus?**
 Microsoft Azure Service Bus ist ein Cloud-basierter Messaging-Dienst, der es Anwendungen ermöglicht, Nachrichten asynchron auszutauschen, um verteilte Systeme zu verbinden.
 
-**2. Welche Kommunikationsmuster unterstützt Azure Service Bus?**  
+**2. Welche Kommunikationsmuster unterstützt Azure Service Bus?**
 Es unterstützt hauptsächlich Warteschlangen (Queues) für Point-to-Point-Kommunikation und Themen/Abonnements (Topics & Subscriptions) für Publish-Subscribe-Szenarien.
 
-**3. Wie wird die Sicherheit gewährleistet?**  
+**3. Wie wird die Sicherheit gewährleistet?**
 Azure Service Bus integriert sich mit Azure Active Directory und verwendet rollenbasierte Zugriffskontrolle (RBAC). Zudem werden Verschlüsselung und Netzwerkisolierung unterstützt.
 
-**4. Wie erfolgt die Abrechnung?**  
+**4. Wie erfolgt die Abrechnung?**
 Die Abrechnung erfolgt nutzungsbasiert, basierend auf der Anzahl der Nachrichten, Operationen und der gewählten Service-Ebene. Es gibt unterschiedliche Tarife und ein kostenloses Kontingent.
 
-**5. Kann Azure Service Bus auch lokal oder hybrid eingesetzt werden?**  
+**5. Kann Azure Service Bus auch lokal oder hybrid eingesetzt werden?**
 Ja, Azure Service Bus unterstützt hybride Szenarien, bei denen Cloud-Services mit On-Premises-Anwendungen verbunden werden.
 
-**6. Welche Protokolle werden unterstützt?**  
+**6. Welche Protokolle werden unterstützt?**
 Unter anderem AMQP 1.0, HTTPS und REST APIs, was eine breite Integration in verschiedene Anwendungen ermöglicht.
 
-**7. Ist Azure Service Bus für kleine Projekte geeignet?**  
+**7. Ist Azure Service Bus für kleine Projekte geeignet?**
 Ja, es gibt kostenlose Kontingente und flexible Skalierung, sodass auch kleine Projekte profitieren können.
 
-**8. Welche Alternativen gibt es?**  
+**8. Welche Alternativen gibt es?**
 Alternativen sind unter anderem Amazon SQS, RabbitMQ, Google Cloud Pub/Sub, Apache Kafka und IBM MQ, je nach Anforderungen und Infrastruktur.

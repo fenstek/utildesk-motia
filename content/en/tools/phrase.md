@@ -1,6 +1,11 @@
 ---
 slug: phrase
 title: Phrase
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -96,28 +101,28 @@ Alternatives to Phrase should be chosen by the concrete work problem. In some ca
 
 ## FAQ
 
-**1. What is the main advantage of Phrase?**  
+**1. What is the main advantage of Phrase?**
 Phrase simplifies and automates the translation process with AI-powered tools and enables efficient collaboration within teams.
 
-**2. Can I try Phrase for free?**  
+**2. Can I try Phrase for free?**
 Yes, Phrase offers a free basic version with limited features that is well suited for getting started.
 
-**3. Which languages does Phrase support?**  
+**3. Which languages does Phrase support?**
 Phrase supports a wide range of languages, depending on the machine translation systems used and the resources of the respective project.
 
-**4. Is Phrase suitable for small businesses?**  
+**4. Is Phrase suitable for small businesses?**
 Yes, especially thanks to the freemium model and the user-friendly interface, Phrase is also a good fit for small teams.
 
-**5. Which file formats can Phrase handle?**  
+**5. Which file formats can Phrase handle?**
 Phrase supports numerous formats such as JSON, XML, HTML, Markdown, and more, making flexible integration into different workflows possible.
 
-**6. How secure is data in Phrase?**  
+**6. How secure is data in Phrase?**
 Phrase uses common security standards for data encryption and protection; details depend on the respective contract and provider.
 
-**7. Can Phrase be integrated with other tools?**  
+**7. Can Phrase be integrated with other tools?**
 Yes, Phrase offers extensive API integrations for various development and content management systems.
 
-**8. How much does Phrase cost in the full version?**  
+**8. How much does Phrase cost in the full version?**
 Prices vary depending on the plan and usage scope; interested users can get exact information directly from the provider or on the website.
 
 **9. How should a team test Phrase?**

@@ -1,6 +1,11 @@
 ---
 slug: mit-scratch
 title: MIT Scratch
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -65,26 +70,26 @@ MIT Scratch is completely free to use. There are no fees for using the online pl
 
 ## FAQ
 
-**1. Do I need prior knowledge to use MIT Scratch?**  
+**1. Do I need prior knowledge to use MIT Scratch?**
 No, Scratch is specifically designed for beginners and children with no programming experience.
 
-**2. Is MIT Scratch really free?**  
+**2. Is MIT Scratch really free?**
 Yes, using the platform and all its features is completely free.
 
-**3. Can I edit my projects offline?**  
+**3. Can I edit my projects offline?**
 Yes, Scratch offers a desktop version that lets you create and edit projects without an internet connection.
 
-**4. What age group is Scratch best suited for?**  
+**4. What age group is Scratch best suited for?**
 Scratch is primarily aimed at children around the age of 8 and up, but it is also suitable for teenagers and beginners of all ages.
 
-**5. Is there a community for exchanging ideas with other users?**  
+**5. Is there a community for exchanging ideas with other users?**
 Yes, Scratch has a large online community where projects can be shared, commented on, and further developed.
 
-**6. Does Scratch support other programming languages too?**  
+**6. Does Scratch support other programming languages too?**
 Scratch itself is a visual language, but it supports extensions that can enable, for example, Python integration.
 
-**7. Can Scratch be used in schools?**  
+**7. Can Scratch be used in schools?**
 Yes, Scratch is used worldwide in many schools as an introduction to programming and offers educational materials for teachers.
 
-**8. Which devices can I use for Scratch?**  
+**8. Which devices can I use for Scratch?**
 Scratch works in the browser on desktop computers, laptops, and tablets, and there is an offline application for Windows and Mac.

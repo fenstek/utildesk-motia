@@ -1,6 +1,11 @@
 ---
 slug: liveagent
 title: LiveAgent
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -76,26 +81,26 @@ LiveAgent can bring order to growing customer conversations. Its value depends o
 
 ## FAQ
 
-**1. Does LiveAgent support AI features?**  
+**1. Does LiveAgent support AI features?**
 Yes, LiveAgent integrates AI-powered chatbots and automations that make it easier to process customer inquiries.
 
-**2. Which communication channels can be managed with LiveAgent?**  
+**2. Which communication channels can be managed with LiveAgent?**
 Email, live chat, phone, social media, and other channels can be managed centrally in LiveAgent.
 
-**3. Is there a free version of LiveAgent?**  
+**3. Is there a free version of LiveAgent?**
 LiveAgent offers a free trial period, but continued use of the software requires a paid subscription model.
 
-**4. Is LiveAgent available for mobile devices?**  
+**4. Is LiveAgent available for mobile devices?**
 Yes, LiveAgent provides mobile apps for iOS and Android.
 
-**5. How secure is data in LiveAgent?**  
+**5. How secure is data in LiveAgent?**
 LiveAgent meets industry-standard security practices to protect customer data. Details are available from the provider.
 
-**6. Can LiveAgent be integrated into existing CRM systems?**  
+**6. Can LiveAgent be integrated into existing CRM systems?**
 Yes, LiveAgent supports integration with various CRM systems to manage customer data centrally.
 
-**7. How flexible are LiveAgent's pricing plans?**  
+**7. How flexible are LiveAgent's pricing plans?**
 Prices vary depending on the plan and number of users. Different subscriptions are available to meet the needs of different companies.
 
-**8. How fast is LiveAgent support?**  
+**8. How fast is LiveAgent support?**
 LiveAgent offers support through various channels; response times depend on the selected service level.

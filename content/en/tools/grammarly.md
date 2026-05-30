@@ -1,6 +1,11 @@
 ---
 slug: grammarly
 title: Grammarly
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -99,26 +104,26 @@ Exact prices vary depending on subscription length (monthly, quarterly, yearly) 
 - [Slick Write](/tools/slick-write/): Free online tool for quick grammar and style analysis.
 ## FAQ
 
-**1. Is Grammarly only suitable for English texts?**  
+**1. Is Grammarly only suitable for English texts?**
 Grammarly is mainly specialized in English texts. For other languages, there is only limited support or alternative tools.
 
-**2. Do I need an internet connection to use Grammarly?**  
+**2. Do I need an internet connection to use Grammarly?**
 Yes, Grammarly analyzes texts online, so an internet connection is required.
 
-**3. How secure are my texts with Grammarly?**  
+**3. How secure are my texts with Grammarly?**
 Grammarly states that it handles data confidentially and uses security measures. Nevertheless, you should not enter sensitive or confidential information.
 
-**4. Can I use Grammarly in Microsoft Word?**  
+**4. Can I use Grammarly in Microsoft Word?**
 Yes, there is an add-in for Microsoft Word and Outlook that enables use directly in these programs.
 
-**5. What are the benefits of the Premium version?**  
+**5. What are the benefits of the Premium version?**
 The Premium version offers advanced corrections, plagiarism checks, individual style and tone suggestions, and detailed analyses.
 
-**6. Does Grammarly have a mobile app?**  
+**6. Does Grammarly have a mobile app?**
 Yes, Grammarly offers mobile keyboards for iOS and Android that support writing on smartphones and tablets.
 
-**7. How does the plagiarism check work?**  
+**7. How does the plagiarism check work?**
 The plagiarism check compares the entered text with billions of web pages and publications to identify matches.
 
-**8. Can Grammarly also help with creative writing?**  
+**8. Can Grammarly also help with creative writing?**
 Grammarly also supports creative writing, but it is recommended to review correction suggestions critically in order to preserve the individual style.

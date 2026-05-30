@@ -1,6 +1,11 @@
 ---
 slug: sendinblue
 title: Sendinblue
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Subscription, Freemium'
 tags:
@@ -42,14 +47,14 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 
 ## Key features
 
-- **Email marketing:** Create and send newsletters with a drag-and-drop editor and responsive templates  
-- **Marketing automation:** Automated workflows based on user actions, segmentation, and triggers  
-- **SMS campaigns:** Send SMS messages for customer retention and targeted marketing actions  
-- **Customer management (CRM):** Manage contacts, segmentation, and lead tracking  
-- **Transactional emails:** Automated sending of order confirmations, password resets, and more  
-- **AI-powered optimization:** Smart recommendations for send time and content optimization  
-- **Landing pages:** Create landing pages without programming knowledge  
-- **Reports and analytics:** Detailed analysis of campaign results and user behavior  
+- **Email marketing:** Create and send newsletters with a drag-and-drop editor and responsive templates
+- **Marketing automation:** Automated workflows based on user actions, segmentation, and triggers
+- **SMS campaigns:** Send SMS messages for customer retention and targeted marketing actions
+- **Customer management (CRM):** Manage contacts, segmentation, and lead tracking
+- **Transactional emails:** Automated sending of order confirmations, password resets, and more
+- **AI-powered optimization:** Smart recommendations for send time and content optimization
+- **Landing pages:** Create landing pages without programming knowledge
+- **Reports and analytics:** Detailed analysis of campaign results and user behavior
 - **Integrations:** Connect with many third-party tools such as Shopify, WordPress, Salesforce, and more
 
 - **Practical workflow:** Sendinblue should be tested against a real campaign with audience, content, delivery, measurement, and follow-up, not only against a polished demo.
@@ -59,20 +64,20 @@ A useful evaluation starts with a real campaign with audience, content, delivery
 ## Pros and cons
 
 ### Pros
-- Intuitive user interface, suitable even for beginners  
-- Extensive automation features with AI support  
-- Combines email, SMS, and CRM in one platform  
-- Flexible pricing with a free starter plan  
-- Good integration options with other systems  
+- Intuitive user interface, suitable even for beginners
+- Extensive automation features with AI support
+- Combines email, SMS, and CRM in one platform
+- Flexible pricing with a free starter plan
+- Good integration options with other systems
 - Scalable for growing needs
 
 - Stronger in daily work when Sendinblue is used for clearly bounded tasks rather than every possible side problem.
 - Helps most where the work around campaigns, leads, audiences, reporting, and reliable follow-up still depends on individual people, private routines, or improvised handoffs. With Sendinblue, this belongs in the practical test, not only in onboarding.
 
 ### Cons
-- Some advanced features are only available in higher pricing tiers  
-- SMS sending may incur additional costs depending on the country  
-- Email design options are not as extensive as those in specialized tools  
+- Some advanced features are only available in higher pricing tiers
+- SMS sending may incur additional costs depending on the country
+- Email design options are not as extensive as those in specialized tools
 - Support is sometimes only included in higher-tier plans
 
 - Becomes harder to run when Sendinblue enters the workflow while audiences, tracking, consent, and follow-up processes are not clearly defined and the team only discovers that gap later.
@@ -90,38 +95,38 @@ Beyond the list price, Sendinblue should be evaluated by the cost of adoption. R
 
 ## Alternatives to Sendinblue
 
-- **Mailchimp:** Well-known email marketing tool with extensive automation features and a free entry-level option  
-- **ActiveCampaign:** Strong marketing automation with a CRM focus and advanced workflow options  
-- **HubSpot Marketing Hub:** Comprehensive platform with marketing, CRM, and sales tools, suitable for growing businesses  
-- **GetResponse:** All-in-one marketing solution with email, landing pages, and webinar functionality  
+- **Mailchimp:** Well-known email marketing tool with extensive automation features and a free entry-level option
+- **ActiveCampaign:** Strong marketing automation with a CRM focus and advanced workflow options
+- **HubSpot Marketing Hub:** Comprehensive platform with marketing, CRM, and sales tools, suitable for growing businesses
+- **GetResponse:** All-in-one marketing solution with email, landing pages, and webinar functionality
 - **MailerLite:** Beginner-friendly with a focus on ease of use and affordable prices
 
 When comparing options, Sendinblue should not only be measured against very similar products. Depending on the goal, CRM, email, social, analytics, and sales-engagement tools may fit better if they are closer to the existing process or require less maintenance.
 
 ## FAQ
 
-**1. Is Sendinblue suitable for beginners?**  
+**1. Is Sendinblue suitable for beginners?**
 Yes, the platform is designed to be user-friendly and offers many templates as well as a drag-and-drop editor that makes it easy for beginners to use.
 
-**2. Which languages does Sendinblue support?**  
+**2. Which languages does Sendinblue support?**
 Sendinblue is multilingual and supports, among others, German, English, French, Spanish, and other languages.
 
-**3. Can I try Sendinblue for free?**  
+**3. Can I try Sendinblue for free?**
 Yes, there is a freemium model with limited email sending that can be used free of charge permanently.
 
-**4. What automation features does Sendinblue offer?**  
+**4. What automation features does Sendinblue offer?**
 Sendinblue makes it possible to create automated workflows, e.g. welcome emails, birthday greetings, or cart abandonment emails, often supported by AI optimizations.
 
-**5. Is Sendinblue GDPR-compliant?**  
+**5. Is Sendinblue GDPR-compliant?**
 Sendinblue places importance on data protection and offers features to support GDPR compliance, including data hosting in the EU and tools for consent management.
 
-**6. Can I send SMS campaigns with Sendinblue?**  
+**6. Can I send SMS campaigns with Sendinblue?**
 Yes, SMS marketing is part of the feature set, although costs and availability depend on the country.
 
-**7. Which integrations are possible?**  
+**7. Which integrations are possible?**
 Sendinblue can be connected with numerous platforms, including CMS, CRM systems, e-commerce shops, and other marketing tools.
 
-**8. Is there a mobile app for Sendinblue?**  
+**8. Is there a mobile app for Sendinblue?**
 Sendinblue offers mobile applications for iOS and Android that allow users to monitor and manage campaigns.
 
 **9. How should a team test Sendinblue?**

@@ -1,6 +1,11 @@
 ---
 slug: skater
 title: Skater
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Je nach Plan
 tags: [sports, coaching, analytics, ai]
@@ -73,26 +78,26 @@ Skater hilft, Modelle weniger mystisch wirken zu lassen. Es ersetzt aber weder D
 
 ## FAQ
 
-**1. Welche Sportarten unterstützt Skater?**  
+**1. Welche Sportarten unterstützt Skater?**
 Skater ist vielseitig einsetzbar und unterstützt je nach Anbieter eine breite Palette an Sportarten, insbesondere solche mit hohem Bewegungsanteil wie Eiskunstlauf, Eishockey, Fußball oder Leichtathletik.
 
-**2. Benötige ich spezielle Hardware, um Skater zu nutzen?**  
+**2. Benötige ich spezielle Hardware, um Skater zu nutzen?**
 Für die optimale Nutzung empfiehlt sich eine Kamera oder kompatible Wearables zur Datenerfassung. Einige Funktionen können jedoch auch mit Standard-Videos oder manuellen Eingaben genutzt werden.
 
-**3. Ist Skater für Anfänger geeignet?**  
+**3. Ist Skater für Anfänger geeignet?**
 Ja, das Tool bietet unterschiedliche Schwierigkeitsgrade und Benutzeroberflächen, die sowohl Einsteigern als auch Profis gerecht werden.
 
-**4. Wie sicher sind meine Daten bei Skater?**  
+**4. Wie sicher sind meine Daten bei Skater?**
 Datenschutz und Sicherheit hängen vom jeweiligen Anbieter ab. Seriöse Plattformen setzen moderne Sicherheitsstandards und Verschlüsselungen ein.
 
-**5. Kann ich Skater im Team verwenden?**  
+**5. Kann ich Skater im Team verwenden?**
 Viele Versionen bieten Funktionen für Teammanagement und gemeinsame Auswertung, ideal für Trainer und Mannschaften.
 
-**6. Gibt es eine kostenlose Testversion?**  
+**6. Gibt es eine kostenlose Testversion?**
 Das variiert je nach Anbieter. Einige bieten Freemium-Modelle oder zeitlich begrenzte Testphasen an.
 
-**7. Wie genau sind die Analysen von Skater?**  
+**7. Wie genau sind die Analysen von Skater?**
 Die Genauigkeit hängt von der Qualität der Eingabedaten und der verwendeten KI-Technologie ab. In der Regel liefern die Tools präzise und hilfreiche Auswertungen.
 
-**8. Welche technischen Voraussetzungen gibt es?**  
+**8. Welche technischen Voraussetzungen gibt es?**
 Je nach Lösung werden unterschiedliche Betriebssysteme und Geräte unterstützt. Details finden sich in den jeweiligen Anbieterinformationen.

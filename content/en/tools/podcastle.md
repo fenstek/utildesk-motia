@@ -1,6 +1,11 @@
 ---
 slug: podcastle
 title: Podcastle
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -81,26 +86,26 @@ Podcastle makes audio production less intimidating for non-technical users. Fina
 
 ## FAQ
 
-**1. Can I try Podcastle for free?**  
+**1. Can I try Podcastle for free?**
 Yes, Podcastle usually offers a free version or trial period with limited features so you can get to know the platform.
 
-**2. Which languages does the automatic transcription support?**  
+**2. Which languages does the automatic transcription support?**
 The supported languages vary, but usually include the world's major languages. More detailed information can be found on the provider's website.
 
-**3. Do I need special hardware for Podcastle?**  
+**3. Do I need special hardware for Podcastle?**
 No, Podcastle is browser-based and only requires a microphone and a stable internet connection.
 
-**4. Can I create video podcasts with Podcastle too?**  
+**4. Can I create video podcasts with Podcastle too?**
 Yes, Podcastle supports recording and editing video podcasts, including synchronized subtitles.
 
-**5. How secure is my data with Podcastle?**  
+**5. How secure is my data with Podcastle?**
 Podcastle places importance on data privacy and uses common security standards. Details about data security are described in the terms of use.
 
-**6. Is there a way to invite guests for interviews?**  
+**6. Is there a way to invite guests for interviews?**
 Yes, Podcastle makes it possible to invite guests through simple links without additional software installation.
 
-**7. How accurate are the transcriptions?**  
+**7. How accurate are the transcriptions?**
 Accuracy depends on audio quality and language, but it is usually high thanks to AI optimization.
 
-**8. Can I share my projects with others or collaborate on them?**  
+**8. Can I share my projects with others or collaborate on them?**
 Yes, Podcastle offers collaboration features that make it easier to work on projects together.

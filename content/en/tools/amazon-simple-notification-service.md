@@ -1,6 +1,11 @@
 ---
 slug: amazon-simple-notification-service
 title: Amazon Simple Notification Service (SNS)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Usage-based
 tags:
@@ -94,26 +99,26 @@ Detailed and up-to-date pricing is available on the AWS website.
 
 ## FAQ
 
-**1. How does Amazon SNS work in principle?**  
+**1. How does Amazon SNS work in principle?**
 Amazon SNS allows messages to be published to so-called topics, which subscribers can receive through various protocols. This makes it possible to send messages to many recipients at the same time.
 
-**2. Which protocols does Amazon SNS support?**  
+**2. Which protocols does Amazon SNS support?**
 Among others, email, SMS, HTTP/HTTPS, AWS Lambda, Amazon SQS, and mobile push notifications.
 
-**3. Is Amazon SNS free for small projects?**  
+**3. Is Amazon SNS free for small projects?**
 Yes, AWS offers a free tier that is sufficient for many small applications.
 
-**4. How secure are messages in Amazon SNS?**  
+**4. How secure are messages in Amazon SNS?**
 The service supports encryption at rest and in transit as well as access controls and authentication.
 
-**5. Can Amazon SNS work with other AWS services?**  
+**5. Can Amazon SNS work with other AWS services?**
 Yes, SNS integrates seamlessly with services such as AWS Lambda, SQS, CloudWatch, and more.
 
-**6. Are there any message length limitations?**  
+**6. Are there any message length limitations?**
 Yes, the maximum message length is limited depending on the protocol, for example 256 KB for HTTP/HTTPS messages.
 
-**7. How is billing handled for Amazon SNS?**  
+**7. How is billing handled for Amazon SNS?**
 Billing is usage-based and depends on the number of messages sent and their type.
 
-**8. Can I use Amazon SNS outside of AWS as well?**  
+**8. Can I use Amazon SNS outside of AWS as well?**
 SNS is an AWS service and requires an AWS account. Interfaces are available for external integration, but usage remains tied to the AWS cloud.

@@ -1,6 +1,11 @@
 ---
 slug: kore-ai
 title: Kore.ai
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -95,28 +100,28 @@ A comparison for Kore.ai should go beyond feature lists. The key question is whe
 
 ## FAQ
 
-**1. What is Kore.ai?**  
+**1. What is Kore.ai?**
 Kore.ai is a platform for developing AI-based chatbots and virtual assistants for businesses.
 
-**2. Which languages does Kore.ai support?**  
+**2. Which languages does Kore.ai support?**
 The platform supports multiple languages, depending on the specific implementation and the available NLP modules.
 
-**3. Can Kore.ai be integrated into existing systems?**  
+**3. Can Kore.ai be integrated into existing systems?**
 Yes, Kore.ai offers numerous integrations with CRM, ERP, and other enterprise systems.
 
-**4. Is Kore.ai suitable for small businesses?**  
+**4. Is Kore.ai suitable for small businesses?**
 Kore.ai is primarily designed for medium and large enterprises; simpler solutions may be more suitable for small businesses.
 
-**5. Is there a free trial?**  
+**5. Is there a free trial?**
 Depending on the provider and plan, a trial version or demo may be available; details can be obtained directly from the provider.
 
-**6. Which channels are supported?**  
+**6. Which channels are supported?**
 Kore.ai supports web, mobile, social media, messaging apps, and voice assistants.
 
-**7. How secure is the platform?**  
+**7. How secure is the platform?**
 Kore.ai places great emphasis on data security and compliance with common privacy standards.
 
-**8. What technical knowledge is required to use it?**  
+**8. What technical knowledge is required to use it?**
 The platform offers both visual tools for beginners and advanced features for experienced developers.
 
 **9. How should a team test Kore.ai?**

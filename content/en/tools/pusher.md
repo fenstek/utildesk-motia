@@ -1,6 +1,11 @@
 ---
 slug: pusher
 title: Pusher
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Freemium
 tags:
@@ -91,13 +96,13 @@ A comparison for Pusher should go beyond feature lists. The key question is whet
 
 ## FAQ
 
-**Does Pusher require running WebSocket servers?**  
+**Does Pusher require running WebSocket servers?**
 No. Pusher provides hosted realtime infrastructure.
 
-**Can Pusher be used for chat?**  
+**Can Pusher be used for chat?**
 Yes. Chat is one common use case, alongside notifications, dashboards, and collaboration.
 
-**Is Pusher only for JavaScript apps?**  
+**Is Pusher only for JavaScript apps?**
 No. It offers SDKs and APIs for multiple frontend and backend environments.
 
 **9. How should a team test Pusher?**

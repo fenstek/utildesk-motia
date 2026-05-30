@@ -1,6 +1,11 @@
 ---
 slug: sanebox
 title: SaneBox
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -66,26 +71,26 @@ SaneBox offers different subscription plans that vary in features and the number
 
 ## FAQ
 
-**How does SaneBox's automatic sorting work?**  
+**How does SaneBox's automatic sorting work?**
 SaneBox analyzes user behavior and recognizes patterns to sort emails into categories such as “Important” or “Later.” This happens without manual intervention.
 
-**Which email services are supported?**  
+**Which email services are supported?**
 SaneBox is compatible with most common providers such as Gmail, Outlook, Apple Mail, Yahoo, and other IMAP-capable services.
 
-**Is my privacy safe when using SaneBox?**  
+**Is my privacy safe when using SaneBox?**
 Yes. SaneBox does not have direct access to the content of your emails; it processes only metadata to perform sorting.
 
-**Is there a free version of SaneBox?**  
+**Is there a free version of SaneBox?**
 SaneBox generally offers a free trial period; after that, paid subscriptions are required.
 
-**Can I use SaneBox on mobile devices?**  
+**Can I use SaneBox on mobile devices?**
 SaneBox does not offer its own app, but it works through most mobile email clients connected to your account.
 
-**How can I unsubscribe from unwanted newsletters?**  
+**How can I unsubscribe from unwanted newsletters?**
 With the unsubscribe function, you can easily unsubscribe from newsletters directly through SaneBox.
 
-**How long does setup take?**  
+**How long does setup take?**
 Setup is simple and usually takes only a few minutes. SaneBox integrates seamlessly with existing email accounts.
 
-**Can I use SaneBox with multiple email accounts?**  
+**Can I use SaneBox with multiple email accounts?**
 Depending on the subscription plan, you can manage multiple accounts. Details vary by provider.

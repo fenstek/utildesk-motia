@@ -1,6 +1,11 @@
 ---
 slug: lingq
 title: LingQ
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Subscription
 tags:
@@ -70,26 +75,26 @@ LingQ offers a subscription model with different plans that vary in scope and fe
 
 ## FAQ
 
-**1. Which languages can I learn with LingQ?**  
+**1. Which languages can I learn with LingQ?**
 LingQ supports a wide range of languages, including English, Spanish, French, German, Chinese, Japanese, and many others. The selection varies by language.
 
-**2. Is LingQ suitable for beginners?**  
+**2. Is LingQ suitable for beginners?**
 Yes, LingQ offers materials for different levels, from complete beginners to advanced learners.
 
-**3. Can I use LingQ for free?**  
+**3. Can I use LingQ for free?**
 There is a free basic version with limited features. Full access requires a subscription.
 
-**4. How does vocabulary training work in LingQ?**  
+**4. How does vocabulary training work in LingQ?**
 Unfamiliar words are highlighted and can be added directly for learning. The system uses spaced repetition to manage review at the right intervals.
 
-**5. Is there a mobile app for LingQ?**  
+**5. Is there a mobile app for LingQ?**
 Yes, LingQ offers apps for iOS and Android that make learning on the go possible.
 
-**6. Can I upload my own texts for learning?**  
+**6. Can I upload my own texts for learning?**
 Yes, users can import their own texts and practice with LingQ.
 
-**7. How does LingQ support listening comprehension?**  
+**7. How does LingQ support listening comprehension?**
 Many texts include synchronized audio recordings, allowing you to read and listen at the same time.
 
-**8. Does LingQ also offer personal tutors?**  
+**8. Does LingQ also offer personal tutors?**
 LingQ offers optional integration with online tutors, usually for an additional fee and depending on the plan.

@@ -1,6 +1,11 @@
 ---
 slug: salesforce-inbox
 title: Salesforce Inbox
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -101,26 +106,26 @@ The cost of Salesforce Inbox depends on the selected Salesforce plan and the num
 
 ## FAQ
 
-**1. Is Salesforce Inbox compatible with all email providers?**  
+**1. Is Salesforce Inbox compatible with all email providers?**
 Salesforce Inbox mainly supports integration with Outlook and Gmail, since these are the most commonly used in businesses. Compatibility may vary depending on the version and platform.
 
-**2. Do I absolutely need Salesforce CRM to use Inbox?**  
+**2. Do I absolutely need Salesforce CRM to use Inbox?**
 Yes, Salesforce Inbox is specifically designed for use with Salesforce CRM and works only within this ecosystem.
 
-**3. How does Salesforce Inbox improve productivity?**  
+**3. How does Salesforce Inbox improve productivity?**
 By automating email logging, providing intelligent suggestions, and integrating seamlessly with CRM data, Inbox reduces manual work and helps keep track of customer interactions.
 
-**4. Is there a mobile version of Salesforce Inbox?**  
+**4. Is there a mobile version of Salesforce Inbox?**
 Yes, Salesforce Inbox is also available as a mobile app, allowing users to access emails, appointments, and CRM data while on the go.
 
-**5. How secure is data in Salesforce Inbox?**  
+**5. How secure is data in Salesforce Inbox?**
 Salesforce places great importance on security and data privacy. Data transmission and storage follow Salesforce standards and compliance guidelines.
 
-**6. Can I customize Salesforce Inbox to fit my company processes?**  
+**6. Can I customize Salesforce Inbox to fit my company processes?**
 Depending on the Salesforce plan and technical capabilities, customizations and automations are possible to integrate the tool optimally into existing processes.
 
-**7. Is there a trial version of Salesforce Inbox?**  
+**7. Is there a trial version of Salesforce Inbox?**
 Salesforce often offers trial or demo versions. It is recommended to ask the provider directly about current options.
 
-**8. What knowledge do I need to use Salesforce Inbox?**  
+**8. What knowledge do I need to use Salesforce Inbox?**
 Basic knowledge of Salesforce CRM and email clients is helpful. Training or support may be required for advanced features.

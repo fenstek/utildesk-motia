@@ -1,6 +1,11 @@
 ---
 slug: textrazor
 title: TextRazor
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Freemium
 tags:
@@ -107,26 +112,26 @@ TextRazor offers a **Freemium** pricing model. This means that a free basic vers
 
 ## FAQ
 
-**1. What exactly is TextRazor?**  
+**1. What exactly is TextRazor?**
 TextRazor is an API for analyzing and processing natural language that helps developers understand texts and automatically extract important information.
 
-**2. Which languages does TextRazor support?**  
+**2. Which languages does TextRazor support?**
 TextRazor supports multiple languages, with a focus on the major world languages. The exact list may vary depending on the version.
 
-**3. How does the pricing model work?**  
+**3. How does the pricing model work?**
 TextRazor uses a freemium model with a free basic version and paid plans for higher usage and more features.
 
-**4. Can I integrate TextRazor into my own application?**  
+**4. Can I integrate TextRazor into my own application?**
 Yes, TextRazor provides a RESTful API that can be easily integrated into different programming languages and platforms.
 
-**5. Is TextRazor suitable for beginners?**  
+**5. Is TextRazor suitable for beginners?**
 Basic programming knowledge is helpful for using the API effectively. For simple use cases, TextRazor is also accessible to beginners.
 
-**6. Is there a limit on free usage?**  
+**6. Is there a limit on free usage?**
 Yes, the free version is limited to a certain number of requests per month. Paid plans are required for higher requirements.
 
-**7. How accurate is the entity recognition?**  
+**7. How accurate is the entity recognition?**
 TextRazor offers precise entity recognition supported by machine learning and extensive databases. However, accuracy can vary depending on the type of text.
 
-**8. Can I add my own dictionaries or categories?**  
+**8. Can I add my own dictionaries or categories?**
 Yes, TextRazor allows the use of custom dictionaries to adapt the analysis to specific needs.

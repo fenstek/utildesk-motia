@@ -1,6 +1,11 @@
 ---
 slug: github-codespaces
 title: GitHub Codespaces
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Usage-based
 tags:
@@ -68,7 +73,8 @@ GitHub Codespaces richtet sich vor allem an Entwickler und Teams, die schnell un
 ## Preise & Kosten
 
 GitHub Codespaces wird in der Regel nutzungsabhängig abgerechnet. Die Kosten setzen sich häufig aus der Anzahl der genutzten Stunden der Entwicklungsumgebung sowie den verwendeten Ressourcen (CPU, RAM, Speicher) zusammen. Es gibt verschiedene Pläne, die sich an Einsteiger, professionelle Entwickler und Teams richten. Je nach Anbieter und Plan können Rabatte oder kostenlose Kontingente für bestimmte Nutzergruppen verfügbar sein.
-n
+
+n
 Für genaue Preisdetails empfiehlt es sich, die offizielle GitHub-Seite zu konsultieren, da Preise und Konditionen sich ändern können.
 
 ## Alternativen zu GitHub Codespaces
@@ -112,26 +118,26 @@ Our recommendation is to start with one concrete use case, write down success cr
 
 ## FAQ
 
-**1. Brauche ich ein GitHub-Konto, um GitHub Codespaces zu nutzen?**  
+**1. Brauche ich ein GitHub-Konto, um GitHub Codespaces zu nutzen?**
 Ja, ein GitHub-Konto ist erforderlich, da Codespaces eng mit GitHub-Repositories verknüpft sind.
 
-**2. Kann ich GitHub Codespaces kostenlos ausprobieren?**  
+**2. Kann ich GitHub Codespaces kostenlos ausprobieren?**
 Je nach Plan und GitHub-Angebot können kostenlose Kontingente oder Testzeiten zur Verfügung stehen, die Nutzung ist jedoch meist kostenpflichtig.
 
-**3. Welche Programmiersprachen werden unterstützt?**  
+**3. Welche Programmiersprachen werden unterstützt?**
 GitHub Codespaces unterstützt prinzipiell alle Sprachen, die in Containern konfiguriert werden können, darunter JavaScript, Python, Java, C#, Go und viele mehr.
 
-**4. Wie sicher sind meine Daten in GitHub Codespaces?**  
+**4. Wie sicher sind meine Daten in GitHub Codespaces?**
 Die Daten werden in der Cloud gespeichert und unterliegen den Sicherheitsstandards von GitHub. Dennoch sollten sensible Informationen entsprechend geschützt werden.
 
-**5. Kann ich GitHub Codespaces mit anderen IDEs nutzen?**  
+**5. Kann ich GitHub Codespaces mit anderen IDEs nutzen?**
 Primär ist die Nutzung über Visual Studio Code oder den Browser vorgesehen, Integration mit anderen IDEs ist derzeit begrenzt.
 
-**6. Wie lange bleibt eine Codespace-Umgebung aktiv?**  
+**6. Wie lange bleibt eine Codespace-Umgebung aktiv?**
 Die Dauer der Aktivität hängt vom Plan und den Einstellungen ab; inaktive Umgebungen werden meist nach einer gewissen Zeit automatisch beendet.
 
-**7. Kann ich Plugins und Erweiterungen in GitHub Codespaces installieren?**  
+**7. Kann ich Plugins und Erweiterungen in GitHub Codespaces installieren?**
 Ja, Visual Studio Code-Erweiterungen können in der Codespace-Umgebung installiert und genutzt werden.
 
-**8. Ist GitHub Codespaces für Teams geeignet?**  
+**8. Ist GitHub Codespaces für Teams geeignet?**
 Ja, es bietet Funktionen zur gemeinsamen Nutzung und Zusammenarbeit, die besonders für Teams hilfreich sind.

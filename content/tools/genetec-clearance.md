@@ -1,6 +1,11 @@
 ---
 slug: genetec-clearance
 title: Genetec Clearance
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Audio & Video"
 price_model: Abonnement
 tags: [evidence, video, security, collaboration]
@@ -89,26 +94,26 @@ Genetec Clearance wird im Abonnement-Modell angeboten. Die genauen Preise könne
 
 ## FAQ
 
-**1. Welche Videoformate unterstützt Genetec Clearance?**  
+**1. Welche Videoformate unterstützt Genetec Clearance?**
 Die Plattform unterstützt verschiedene gängige Videoformate, um eine flexible Nutzung und Integration zu gewährleisten. Die genauen unterstützten Formate können je nach Version variieren.
 
-**2. Ist Genetec Clearance DSGVO-konform?**  
+**2. Ist Genetec Clearance DSGVO-konform?**
 Genetec legt großen Wert auf Datenschutz und Compliance. Die Plattform bietet Funktionen zur Einhaltung von Datenschutzbestimmungen, wobei die konkrete Umsetzung auch von der Nutzung und Konfiguration durch den Kunden abhängt.
 
-**3. Kann ich Genetec Clearance mobil nutzen?**  
+**3. Kann ich Genetec Clearance mobil nutzen?**
 Ja, Genetec Clearance bietet mobile Apps und Webzugriff, sodass Nutzer auch unterwegs auf Beweismittel zugreifen und diese verwalten können.
 
-**4. Wie sicher sind meine Daten in Genetec Clearance?**  
+**4. Wie sicher sind meine Daten in Genetec Clearance?**
 Die Plattform verwendet moderne Verschlüsselungsmethoden und strenge Zugriffsrechte, um die Daten vor unbefugtem Zugriff zu schützen.
 
-**5. Gibt es eine Testphase oder Demo?**  
+**5. Gibt es eine Testphase oder Demo?**
 Je nach Anbieter besteht oft die Möglichkeit, eine Demo anzufordern oder das System vor einem Abschluss zu testen. Details sollten direkt beim Anbieter erfragt werden.
 
-**6. Kann ich Genetec Clearance mit anderen Sicherheitssystemen verbinden?**  
+**6. Kann ich Genetec Clearance mit anderen Sicherheitssystemen verbinden?**
 Ja, die Plattform unterstützt Integrationen mit verschiedenen Videoüberwachungs- und Ermittlungssoftwarelösungen.
 
-**7. Wie werden Benutzerrechte verwaltet?**  
+**7. Wie werden Benutzerrechte verwaltet?**
 Genetec Clearance bietet ein granular gestaltbares Berechtigungsmanagement, um den Zugriff auf Beweismittel individuell zu steuern.
 
-**8. Welche Speicheroptionen gibt es?**  
+**8. Welche Speicheroptionen gibt es?**
 Die Speicherung erfolgt cloudbasiert, wobei die Kapazität und der Speicherort je nach Plan und Anbieter variieren können.

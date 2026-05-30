@@ -1,6 +1,11 @@
 ---
 slug: lumiere
 title: Lumiere
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -107,28 +112,28 @@ When comparing options, Lumiere should not only be measured against very similar
 
 ## FAQ
 
-**1. Is Lumiere really free to use?**  
+**1. Is Lumiere really free to use?**
 Yes, Lumiere offers a free plan with basic features that is sufficient for many users.
 
-**2. Which languages does Lumiere support?**  
+**2. Which languages does Lumiere support?**
 The tool supports multiple languages, including German, English, and others, depending on the selected plan.
 
-**3. Can I use Lumiere without technical experience?**  
+**3. Can I use Lumiere without technical experience?**
 Yes, the interface is designed so that beginners can get up to speed quickly.
 
-**4. How secure is my data with Lumiere?**  
+**4. How secure is my data with Lumiere?**
 Lumiere follows common data protection standards and ensures the secure processing and storage of data.
 
-**5. Is there a mobile version of Lumiere?**  
+**5. Is there a mobile version of Lumiere?**
 Depending on the provider, there may be apps or mobile-optimized versions; this varies.
 
-**6. Can I integrate Lumiere into other applications?**  
+**6. Can I integrate Lumiere into other applications?**
 Yes, the tool offers interfaces for integration with various platforms and software.
 
-**7. How does the free plan differ from the paid one?**  
+**7. How does the free plan differ from the paid one?**
 The free plan has limited features and usage caps, while paid plans offer advanced features and support.
 
-**8. Is there a trial period for the paid plans?**  
+**8. Is there a trial period for the paid plans?**
 Depending on the provider, trial periods or money-back guarantees may be available so you can test the service risk-free.
 
 **9. How should a team test Lumiere?**

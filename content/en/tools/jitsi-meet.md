@@ -1,6 +1,11 @@
 ---
 slug: jitsi-meet
 title: Jitsi Meet
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Open Source, Free'
 tags:
@@ -107,28 +112,28 @@ Jitsi Meet is fundamentally free to use as an open-source project. There are no 
 
 ## FAQ
 
-**1. Do I need an account to use Jitsi Meet?**  
+**1. Do I need an account to use Jitsi Meet?**
 No, Jitsi Meet works without registration. Simply create a meeting link and share it.
 
-**2. Is Jitsi Meet secure?**  
+**2. Is Jitsi Meet secure?**
 Jitsi Meet offers end-to-end encryption depending on the server configuration and does not require the storage of personal data.
 
-**3. How many participants can join a meeting?**  
+**3. How many participants can join a meeting?**
 In theory, an unlimited number of participants is possible; in practice, the number depends on server performance.
 
-**4. Can I host Jitsi Meet on my own server?**  
+**4. Can I host Jitsi Meet on my own server?**
 Yes, the open-source code allows hosting on your own servers for greater control and privacy.
 
-**5. Are there mobile apps for Jitsi Meet?**  
+**5. Are there mobile apps for Jitsi Meet?**
 Yes, there are official apps for iOS and Android that offer the full feature set.
 
-**6. Can I record meetings?**  
+**6. Can I record meetings?**
 Yes, the platform supports local and cloud recordings, depending on the server setup.
 
-**7. Which browsers are supported?**  
+**7. Which browsers are supported?**
 Modern browsers such as Chrome, Firefox, Edge, and Safari are supported.
 
-**8. Is there a paid version of Jitsi Meet?**  
+**8. Is there a paid version of Jitsi Meet?**
 The project itself is free, but some providers offer paid hosting and support services.
 
 ---

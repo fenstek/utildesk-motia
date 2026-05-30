@@ -1,6 +1,11 @@
 ---
 slug: vivaldi
 title: Vivaldi
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Free
 tags:
@@ -91,26 +96,26 @@ Vivaldi is free to use. There are no paid versions or subscriptions. All feature
 
 ## FAQ
 
-**1. Is Vivaldi really free?**  
+**1. Is Vivaldi really free?**
 Yes, Vivaldi can be downloaded and used for free without paying for any features.
 
-**2. How secure is Vivaldi regarding privacy?**  
+**2. How secure is Vivaldi regarding privacy?**
 Vivaldi includes built-in tracker and ad blockers and does not store user data on its own servers, enhancing privacy.
 
-**3. Can I sync my bookmarks and passwords?**  
+**3. Can I sync my bookmarks and passwords?**
 Yes, Vivaldi offers synchronization for bookmarks, passwords, notes, and other settings across multiple devices.
 
-**4. Which operating systems are supported?**  
+**4. Which operating systems are supported?**
 Vivaldi is available for Windows, macOS, Linux, and Android devices.
 
-**5. How does Vivaldi differ from other browsers?**  
+**5. How does Vivaldi differ from other browsers?**
 Vivaldi focuses on high customizability and integrated productivity tools that many other browsers only provide via extensions.
 
-**6. Is there a mobile version of Vivaldi?**  
+**6. Is there a mobile version of Vivaldi?**
 Yes, Vivaldi is also available as a mobile app for Android.
 
-**7. Can I add my own search engines?**  
+**7. Can I add my own search engines?**
 Yes, users can configure custom search engines and easily switch between them.
 
-**8. Does Vivaldi support extensions?**  
+**8. Does Vivaldi support extensions?**
 Vivaldi is based on Chromium and thus supports most Chrome extensions.

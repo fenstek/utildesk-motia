@@ -1,6 +1,11 @@
 ---
 slug: jupyterhub
 title: JupyterHub
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
 price_model: Open Source
 tags: [notebooks, collaboration, developer-tools]
@@ -53,7 +58,7 @@ Ein sinnvoller Test beginnt mit einem realen Entwicklungsablauf vom lokalen Test
 - Unterstützung von Container-Technologien zur Isolierung von Nutzerumgebungen
 - Webbasierte Benutzeroberfläche für einfachen Zugriff ohne lokale Installation
 
-- **Praxis-Workflow:** JupyterHub sollte anhand eines realen Entwicklungsablaufs vom lokalen Test über Review bis zur CI-Ausführung getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für JupyterHub sollte der erste Test mit eine kleine Änderung in einem echten Projekt mit Review, Testlauf und Rollback-Pfad laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Für JupyterHub zählt im Alltag, ob Fehlerquote, Review-Aufwand, Geschwindigkeit und Nachvollziehbarkeit so dokumentiert werden, dass eine zweite Person sie prüfen kann.
 - **Team-Übergabe:** Nützlich wird JupyterHub besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
@@ -99,28 +104,28 @@ Beim Vergleich lohnt es sich, JupyterHub nicht nur gegen sehr ähnliche Produkte
 
 ## FAQ
 
-**1. Was ist JupyterHub?**  
+**1. Was ist JupyterHub?**
 JupyterHub ist eine Plattform für die gemeinsame Nutzung und Verwaltung von Jupyter-Notebooks in einer Mehrbenutzerumgebung.
 
-**2. Ist JupyterHub kostenlos?**  
+**2. Ist JupyterHub kostenlos?**
 Ja, JupyterHub ist Open Source und kann kostenlos genutzt werden. Kosten entstehen vor allem durch die Infrastruktur.
 
-**3. Welche Programmiersprachen werden unterstützt?**  
+**3. Welche Programmiersprachen werden unterstützt?**
 JupyterHub unterstützt alle Programmiersprachen, für die es Jupyter-Kernel gibt, darunter Python, R, Julia und viele weitere.
 
-**4. Wie wird JupyterHub installiert?**  
+**4. Wie wird JupyterHub installiert?**
 JupyterHub kann auf eigenen Servern, in der Cloud oder in Container-Umgebungen wie Kubernetes installiert werden. Die Installation erfordert technisches Wissen.
 
-**5. Kann JupyterHub in Unternehmen integriert werden?**  
+**5. Kann JupyterHub in Unternehmen integriert werden?**
 Ja, JupyterHub lässt sich in bestehende Authentifizierungssysteme integrieren und skaliert für den Unternehmenseinsatz.
 
-**6. Gibt es eine Benutzeroberfläche für JupyterHub?**  
+**6. Gibt es eine Benutzeroberfläche für JupyterHub?**
 Ja, Nutzer greifen über eine webbasierte Oberfläche auf ihre Notebooks und Ressourcen zu.
 
-**7. Wie funktioniert die Zusammenarbeit in JupyterHub?**  
+**7. Wie funktioniert die Zusammenarbeit in JupyterHub?**
 Mehrere Nutzer können gleichzeitig auf die Plattform zugreifen und Notebooks bearbeiten, wobei die Ressourcen zentral verwaltet werden.
 
-**8. Gibt es Support oder kommerzielle Angebote für JupyterHub?**  
+**8. Gibt es Support oder kommerzielle Angebote für JupyterHub?**
 Es gibt verschiedene Anbieter, die Managed JupyterHub-Services mit Support und zusätzlichen Funktionen gegen Gebühr anbieten.
 
 ---

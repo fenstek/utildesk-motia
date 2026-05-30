@@ -1,6 +1,11 @@
 ---
 slug: clipchamp
 title: Clipchamp
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -97,28 +102,28 @@ When comparing options, Clipchamp should not only be measured against very simil
 
 ## FAQ
 
-**1. Do I need technical experience to use Clipchamp?**  
+**1. Do I need technical experience to use Clipchamp?**
 No, Clipchamp is designed so that even beginners can create videos quickly without prior knowledge.
 
-**2. Which platforms are supported?**  
+**2. Which platforms are supported?**
 Clipchamp is web-based and works in modern browsers on Windows, Mac, and Linux. Mobile support is limited.
 
-**3. Is there a free version?**  
+**3. Is there a free version?**
 Yes, Clipchamp offers a free basic version with limited features and export options.
 
-**4. How does the AI support work?**  
+**4. How does the AI support work?**
 AI is used, among other things, for automatic subtitles, text recognition, and template creation to simplify video production.
 
-**5. Can I save my projects in the cloud?**  
+**5. Can I save my projects in the cloud?**
 Yes, Clipchamp stores projects in the cloud so you can access them from different devices.
 
-**6. Is there a way to work on videos as a team?**  
+**6. Is there a way to work on videos as a team?**
 Yes, the higher-tier plans include collaboration features and team access.
 
-**7. Which export formats are supported?**  
+**7. Which export formats are supported?**
 Depending on the plan, videos can be exported in different formats and resolutions, e.g. MP4 in HD or 4K.
 
-**8. Is an internet connection required to use it?**  
+**8. Is an internet connection required to use it?**
 Yes, since Clipchamp is web-based, you need a stable internet connection for editing and exporting.
 
 **9. How should a team test Clipchamp?**

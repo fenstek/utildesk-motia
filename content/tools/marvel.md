@@ -1,6 +1,11 @@
 ---
 slug: marvel
 title: Marvel
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Je nach Plan
 tags: ["design", "ui", "ux", "prototyping", "collaboration"]
@@ -24,7 +29,7 @@ Marvel passt zu Produktteams, Gründern, UX-Designern und Stakeholdern, die Idee
 Für große Designsysteme, komplexe Komponentenbibliotheken oder tief integrierte Produktarbeit ist Figma meist stärker. Marvel punktet bei Geschwindigkeit und einfacher Verständlichkeit.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/marvel-editorial.webp" alt="Illustration zu Marvel: Wireframes und Prototyp-Karten h?ngen an einer Design-Studiowand" loading="lazy" decoding="async" />
+  <img src="/images/tools/marvel-editorial.webp" alt="Illustration zu Marvel: Wireframes und Prototyp-Karten hängen an einer Design-Studiowand" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

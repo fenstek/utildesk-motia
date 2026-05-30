@@ -1,6 +1,11 @@
 ---
 slug: google-what-if-tool
 title: Google What-If Tool
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -96,28 +101,28 @@ When comparing options, Google What-If Tool should not only be measured against 
 
 ## FAQ
 
-**1. Do I need programming knowledge to use the Google What-If Tool?**  
+**1. Do I need programming knowledge to use the Google What-If Tool?**
 In principle, the tool is designed so that it can also be used without in-depth programming knowledge, especially in the web-based version. For advanced features and integration into your own projects, however, basic knowledge of Python and TensorFlow is helpful.
 
-**2. Which ML models is the tool compatible with?**  
+**2. Which ML models is the tool compatible with?**
 The tool primarily supports TensorFlow models and models available in compatible formats. Exact compatibility depends on the specific use case.
 
-**3. Can I use the tool locally or only online?**  
+**3. Can I use the tool locally or only online?**
 The Google What-If Tool can be used both online through TensorBoard and locally in Jupyter Notebooks.
 
-**4. Which data formats are supported?**  
+**4. Which data formats are supported?**
 The tool generally works with tabular data, and various formats can be imported as long as they can be integrated into the tool.
 
-**5. Is the tool suitable for commercial use?**  
+**5. Is the tool suitable for commercial use?**
 Yes, the tool can be used free of charge for commercial and non-commercial projects.
 
-**6. How does the tool help with fairness analysis?**  
+**6. How does the tool help with fairness analysis?**
 It enables segmentation of data by specific features to make prediction differences between groups visible and identify potential bias.
 
-**7. Is there a way to export the results?**  
+**7. Is there a way to export the results?**
 Yes, analysis results can be exported and used for reports or further analysis.
 
-**8. What support is available for beginners?**  
+**8. What support is available for beginners?**
 Google provides documentation and tutorials that make it easier to get started and explain the tool’s features.
 
 **9. How should a team test Google What-If Tool?**

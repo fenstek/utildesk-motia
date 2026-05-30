@@ -1,6 +1,11 @@
 ---
 slug: visual-studio-code-mit-remote-extensions
 title: Visual Studio Code with Remote Extensions
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Freemium
 tags:
@@ -95,28 +100,28 @@ When comparing options, Visual Studio Code mit Remote-Extensions should not only
 
 ## FAQ
 
-**1. How do Remote Extensions work in VS Code?**  
+**1. How do Remote Extensions work in VS Code?**
 They allow you to connect to remote systems via SSH, containers, or WSL so code can be edited and run directly there without manually transferring files.
 
-**2. Do I need special server or network access?**  
+**2. Do I need special server or network access?**
 Yes, to establish remote connections you need access to the target machine, usually via SSH or the relevant container/VM access.
 
-**3. Is using Remote Extensions secure?**  
+**3. Is using Remote Extensions secure?**
 Connections are encrypted, for example over SSH, which ensures secure data transfer. Still, established security best practices should be followed.
 
-**4. Do all VS Code extensions also work remotely?**  
+**4. Do all VS Code extensions also work remotely?**
 Most do, but some extensions that depend heavily on the system may have limited functionality.
 
-**5. Can I use Remote Extensions on Windows too?**  
+**5. Can I use Remote Extensions on Windows too?**
 Yes, VS Code and the Remote Extensions are cross-platform and work on Windows, macOS, and Linux.
 
-**6. How much performance does remote development require?**  
+**6. How much performance does remote development require?**
 The requirements depend on the remote system. VS Code itself is resource-efficient, and performance usually depends on the network connection.
 
-**7. Can I use multiple remote connections at the same time?**  
+**7. Can I use multiple remote connections at the same time?**
 Yes, VS Code supports multi-root workspaces, which make it possible to work on several projects or systems in parallel.
 
-**8. Is there a way to synchronize my remote development environment?**  
+**8. Is there a way to synchronize my remote development environment?**
 Yes, VS Code offers settings sync, which can also be applied to remote environments to keep extensions and settings consistent.
 
 **9. How should a team test Visual Studio Code mit Remote-Extensions?**

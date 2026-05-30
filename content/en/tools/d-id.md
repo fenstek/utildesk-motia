@@ -1,6 +1,11 @@
 ---
 slug: d-id
 title: D-ID
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -95,28 +100,28 @@ When comparing options, D-ID should not only be measured against very similar pr
 
 ## FAQ
 
-**1. How does D-ID work exactly?**  
+**1. How does D-ID work exactly?**
 D-ID uses Deep-Learning algorithms to create lifelike animations from static images and synchronize them with text content.
 
-**2. Do I need technical knowledge to use D-ID?**  
+**2. Do I need technical knowledge to use D-ID?**
 No, the platform is user-friendly and does not require any technical expertise.
 
-**3. Can I use D-ID for commercial purposes?**  
+**3. Can I use D-ID for commercial purposes?**
 Yes, D-ID offers licensing models that cover commercial use, depending on the chosen plan.
 
-**4. Which languages are supported?**  
+**4. Which languages are supported?**
 D-ID supports multiple languages for video creation, with the exact selection depending on the plan and platform version.
 
-**5. How secure are my data with D-ID?**  
+**5. How secure are my data with D-ID?**
 The provider prioritizes data protection and security, but individual data handling should be reviewed on a case-by-case basis.
 
-**6. Is there a free trial version?**  
+**6. Is there a free trial version?**
 Many providers offer a free trial period or limited free version to test the functions.
 
-**7. Can I integrate D-ID into my own applications?**  
+**7. Can I integrate D-ID into my own applications?**
 Yes, with API integration, it is possible to integrate D-ID into existing workflows or software solutions.
 
-**8. How high is the quality of the created videos?**  
+**8. How high is the quality of the created videos?**
 The videos are generally very high-quality and realistic, depending on the quality of the input images and the chosen plan.
 
 **9. How should a team test D-ID?**

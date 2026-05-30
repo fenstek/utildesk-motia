@@ -1,6 +1,11 @@
 ---
 slug: shotpro
 title: ShotPro
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: null
 tags:
@@ -95,26 +100,26 @@ ShotPro's pricing structure varies depending on the provider and the selected pl
 
 ## FAQ
 
-**1. Is ShotPro suitable for beginners?**  
+**1. Is ShotPro suitable for beginners?**
 Yes, ShotPro offers an intuitive user interface that makes it easy for beginners to get started. However, working with 3D tools may initially require some time to learn.
 
-**2. Which operating systems are supported?**  
+**2. Which operating systems are supported?**
 ShotPro is mainly available for desktop operating systems such as Windows and macOS. A mobile app is not currently offered.
 
-**3. Can ShotPro be used as a team?**  
+**3. Can ShotPro be used as a team?**
 Depending on the selected plan, ShotPro supports collaboration features that allow multiple users to work on projects.
 
-**4. Which export formats are available?**  
+**4. Which export formats are available?**
 ShotPro enables the export of storyboards and previsualizations in various formats suitable for presentations and further processing. Details depend on the respective plan.
 
-**5. Is there a free trial version?**  
+**5. Is there a free trial version?**
 Many providers offer a free trial period or a limited free version so users can try the software before purchasing.
 
-**6. How extensive is the asset library?**  
+**6. How extensive is the asset library?**
 ShotPro provides an extensive collection of characters, props, and environments that is continuously expanded.
 
-**7. Can ShotPro be integrated into other film production tools?**  
+**7. Can ShotPro be integrated into other film production tools?**
 Thanks to import and export functions, storyboards from ShotPro can be transferred to other programs, which makes integration into existing workflows easier.
 
-**8. What advantages does 3D visualization offer compared to classic storyboards?**  
+**8. What advantages does 3D visualization offer compared to classic storyboards?**
 3D visualization enables a realistic representation of camera angles and movements, making planning more precise and team communication more effective.

@@ -1,6 +1,11 @@
 ---
 slug: onlyoffice-spreadsheet-editor
 title: OnlyOffice Spreadsheet Editor
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Freemium
 tags: [spreadsheet, office, collaboration, productivity]
@@ -104,26 +109,26 @@ Für detaillierte Informationen empfiehlt sich ein Blick auf die offizielle Webs
 
 ## FAQ
 
-**1. Ist OnlyOffice Spreadsheet Editor kostenlos?**  
+**1. Ist OnlyOffice Spreadsheet Editor kostenlos?**
 Das Tool bietet eine kostenfreie Basisversion im Freemium-Modell. Erweiterte Funktionen sind in kostenpflichtigen Plänen verfügbar.
 
-**2. Kann ich mit OnlyOffice Spreadsheet Editor Dateien von Microsoft Excel öffnen?**  
+**2. Kann ich mit OnlyOffice Spreadsheet Editor Dateien von Microsoft Excel öffnen?**
 Ja, OnlyOffice unterstützt gängige Formate wie XLSX, sodass Excel-Dateien problemlos geöffnet und bearbeitet werden können.
 
-**3. Ist eine Internetverbindung notwendig, um das Tool zu nutzen?**  
+**3. Ist eine Internetverbindung notwendig, um das Tool zu nutzen?**
 OnlyOffice kann sowohl online als auch offline verwendet werden. Die Cloud-Funktionen erfordern eine Internetverbindung.
 
-**4. Wie funktioniert die Zusammenarbeit mit mehreren Nutzern?**  
+**4. Wie funktioniert die Zusammenarbeit mit mehreren Nutzern?**
 Mehrere Nutzer können gleichzeitig an derselben Tabelle arbeiten und Änderungen in Echtzeit sehen, was die Teamarbeit erleichtert.
 
-**5. Welche Sicherheitsfunktionen bietet OnlyOffice Spreadsheet Editor?**  
+**5. Welche Sicherheitsfunktionen bietet OnlyOffice Spreadsheet Editor?**
 Das Tool unterstützt Passwortschutz für Dokumente, Datenverschlüsselung und Zugriffsrechte, je nach Plan und Einsatzumgebung.
 
-**6. Gibt es mobile Apps für OnlyOffice Spreadsheet Editor?**  
+**6. Gibt es mobile Apps für OnlyOffice Spreadsheet Editor?**
 OnlyOffice bietet mobile Apps für verschiedene Plattformen, die das Bearbeiten und Anzeigen von Tabellen unterwegs ermöglichen.
 
-**7. Welche Betriebssysteme werden unterstützt?**  
+**7. Welche Betriebssysteme werden unterstützt?**
 OnlyOffice ist für Windows, macOS, Linux sowie als Web-Anwendung verfügbar.
 
-**8. Kann ich OnlyOffice in meine bestehende Cloud-Umgebung integrieren?**  
+**8. Kann ich OnlyOffice in meine bestehende Cloud-Umgebung integrieren?**
 Ja, OnlyOffice unterstützt die Integration mit verschiedenen Cloud-Diensten und Plattformen, abhängig vom verwendeten Plan.

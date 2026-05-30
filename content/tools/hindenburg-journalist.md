@@ -1,6 +1,11 @@
 ---
 slug: hindenburg-journalist
 title: Hindenburg Journalist
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Agents
 price_model: Je nach Plan
 tags: [audio, productivity, automation, workflow]
@@ -77,28 +82,28 @@ Hindenburg Journalist ist wertvoll, weil es Sprache ernst nimmt. Wer vor allem S
 
 ## FAQ
 
-**1. Ist Hindenburg Journalist für Anfänger geeignet?**  
+**1. Ist Hindenburg Journalist für Anfänger geeignet?**
 Ja, die Software ist benutzerfreundlich gestaltet und bietet viele automatisierte Funktionen, die den Einstieg erleichtern.
 
-**2. Welche Betriebssysteme werden unterstützt?**  
+**2. Welche Betriebssysteme werden unterstützt?**
 Hindenburg Journalist ist hauptsächlich für Windows und macOS verfügbar.
 
-**3. Gibt es eine kostenlose Testversion?**  
+**3. Gibt es eine kostenlose Testversion?**
 In der Regel bietet der Anbieter eine zeitlich begrenzte Testphase an, um die Funktionen kennenzulernen.
 
-**4. Kann ich Hindenburg Journalist für Podcasts und Radiosendungen verwenden?**  
+**4. Kann ich Hindenburg Journalist für Podcasts und Radiosendungen verwenden?**
 Ja, die Software ist speziell auf die Bedürfnisse von Journalisten und Podcastern zugeschnitten.
 
-**5. Werden Updates und Support angeboten?**  
+**5. Werden Updates und Support angeboten?**
 Je nach Lizenzmodell sind Updates und technischer Support enthalten.
 
-**6. Unterstützt die Software Mehrspuraufnahmen?**  
+**6. Unterstützt die Software Mehrspuraufnahmen?**
 Ja, Multitrack-Editing ist eine Kernfunktion von Hindenburg Journalist.
 
-**7. Wie werden Projekte gespeichert und gesichert?**  
+**7. Wie werden Projekte gespeichert und gesichert?**
 Projekte können lokal gespeichert und über Cloud-Integration gesichert werden.
 
-**8. Ist eine Zusammenarbeit im Team möglich?**  
+**8. Ist eine Zusammenarbeit im Team möglich?**
 Ja, durch Cloud-Funktionen können mehrere Nutzer an Projekten arbeiten.
 
 ---

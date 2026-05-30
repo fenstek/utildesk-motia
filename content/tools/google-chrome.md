@@ -1,6 +1,11 @@
 ---
 slug: google-chrome
 title: Google Chrome
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Free
 tags: [browser, web, productivity, developer-tools]
@@ -92,26 +97,26 @@ Google Chrome ist komplett **kostenlos** nutzbar. Es gibt keine versteckten Kost
 
 ## FAQ
 
-**1. Ist Google Chrome wirklich kostenlos?**  
+**1. Ist Google Chrome wirklich kostenlos?**
 Ja, Google Chrome ist ein kostenloser Webbrowser ohne kostenpflichtige Versionen. Alle Funktionen sind ohne Bezahlung nutzbar.
 
-**2. Welche Betriebssysteme unterstützt Google Chrome?**  
+**2. Welche Betriebssysteme unterstützt Google Chrome?**
 Chrome ist für Windows, macOS, Linux, Android und iOS verfügbar und bietet auf allen Plattformen eine ähnliche Nutzererfahrung.
 
-**3. Wie sicher ist Google Chrome?**  
+**3. Wie sicher ist Google Chrome?**
 Google Chrome bietet regelmäßige Sicherheitsupdates, Schutz vor Phishing und Malware sowie einen Sandboxing-Mechanismus, der potenzielle Bedrohungen isoliert. Dennoch sollten Nutzer vorsichtig bleiben und nur vertrauenswürdige Erweiterungen installieren.
 
-**4. Kann ich meine Passwörter in Chrome speichern?**  
+**4. Kann ich meine Passwörter in Chrome speichern?**
 Ja, Chrome bietet einen integrierten Passwortmanager, der Passwörter verschlüsselt speichert und über Google-Konto synchronisiert.
 
-**5. Wie kann ich Erweiterungen in Google Chrome installieren?**  
+**5. Wie kann ich Erweiterungen in Google Chrome installieren?**
 Erweiterungen können einfach über den Chrome Web Store gesucht und mit einem Klick installiert werden.
 
-**6. Was ist der Inkognito-Modus?**  
+**6. Was ist der Inkognito-Modus?**
 Der Inkognito-Modus erlaubt das Surfen ohne Speicherung des Browserverlaufs, von Cookies und temporären Daten auf dem Gerät. Er schützt aber nicht vor Tracking durch Websites oder den Internetanbieter.
 
-**7. Kann ich Google Chrome ohne Google-Konto nutzen?**  
+**7. Kann ich Google Chrome ohne Google-Konto nutzen?**
 Ja, die grundlegenden Funktionen sind auch ohne Google-Konto verfügbar. Für die Synchronisation von Daten ist jedoch ein Konto erforderlich.
 
-**8. Warum verbraucht Google Chrome so viel Arbeitsspeicher?**  
+**8. Warum verbraucht Google Chrome so viel Arbeitsspeicher?**
 Chrome trennt Tabs und Erweiterungen in separate Prozesse, was die Stabilität erhöht, aber auch zu höherem RAM-Verbrauch führen kann. Dies ermöglicht, dass ein Absturz eines Tabs nicht den gesamten Browser betrifft.

@@ -1,6 +1,11 @@
 ---
 slug: brave
 title: Brave
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Free
 tags:
@@ -91,26 +96,26 @@ Brave is completely **free** to use. There are no subscriptions, one-time fees, 
 
 ## FAQ
 
-**1. Is Brave really free?**  
+**1. Is Brave really free?**
 Yes, Brave can be downloaded and used completely free of charge. There are no costs for the basic features.
 
-**2. How does Brave protect my privacy?**  
+**2. How does Brave protect my privacy?**
 Brave blocks trackers and ads by default that could track user activity. Additionally, it offers a private mode with Tor support for enhanced anonymity.
 
-**3. Does Brave support extensions?**  
+**3. Does Brave support extensions?**
 Brave is based on Chromium and therefore supports most Chrome extensions. However, rare compatibility issues may occur.
 
-**4. What is the Brave rewards system?**  
+**4. What is the Brave rewards system?**
 The rewards system allows users to earn tokens by viewing privacy-respecting ads, which they can then allocate to websites or content creators. Participation is optional.
 
-**5. On which platforms is Brave available?**  
+**5. On which platforms is Brave available?**
 Brave is available on Windows, macOS, Linux, Android, and iOS and offers synchronization across devices.
 
-**6. How secure is Brave?**  
+**6. How secure is Brave?**
 Brave places a strong emphasis on security by blocking tracking and malware and provides regular updates. The source code is open for review, adding transparency.
 
-**7. Can I import my data from other browsers to Brave?**  
+**7. Can I import my data from other browsers to Brave?**
 Yes, Brave offers import functions for bookmarks, passwords, and settings from popular browsers like Chrome and Firefox.
 
-**8. Are there any downsides to using Brave?**  
+**8. Are there any downsides to using Brave?**
 Some websites may not work correctly because of Brave’s aggressive blockers. In such cases, adjustments or disabling certain features may be necessary.

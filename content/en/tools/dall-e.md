@@ -1,6 +1,11 @@
 ---
 slug: dall-e
 title: DALL·E
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Freemium
 tags:
@@ -64,26 +69,26 @@ DALL·E offers a Freemium model: users can generate a limited number of images f
 - [Artbreeder](/tools/artbreeder/): ** Allows collaborative creation and combining of images with AI assistance.
 ## FAQ
 
-**1. How does DALL·E work?**  
+**1. How does DALL·E work?**
 DALL·E uses neural networks to generate images from text descriptions. The AI was trained on large image and text datasets to recognize relationships and visually implement them.
 
-**2. Do I need technical knowledge?**  
+**2. Do I need technical knowledge?**
 No, DALL·E is user-friendly and does not require design or programming knowledge.
 
-**3. Can I use the generated images commercially?**  
+**3. Can I use the generated images commercially?**
 The usage licenses vary depending on the plan. It is essential to check the respective usage conditions, especially for commercial use.
 
-**4. Are there limitations on text descriptions?**  
+**4. Are there limitations on text descriptions?**
 Yes, certain content such as violence, pornography, or discriminatory content are generally blocked and will not be generated.
 
-**5. How many images can I generate for free?**  
+**5. How many images can I generate for free?**
 This depends on the current Freemium offer, which can vary depending on the provider and time.
 
-**6. Can I edit the generated images afterwards?**  
+**6. Can I edit the generated images afterwards?**
 Yes, DALL·E offers functions for variations and light editing of generated images.
 
-**7. What file formats are supported?**  
+**7. What file formats are supported?**
 Images are typically output in PNG or JPEG format, depending on the platform and settings.
 
-**8. How does DALL·E differ from other AI image generators?**  
+**8. How does DALL·E differ from other AI image generators?**
 DALL·E stands out by combining quality, variety of styles, and user-friendliness, with the performance varying depending on the application.

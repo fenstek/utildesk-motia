@@ -1,6 +1,11 @@
 ---
 slug: squiffy
 title: Squiffy
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Writing"
 price_model: Open Source
 tags: [writing,gaming,open-source,storytelling]
@@ -14,6 +19,12 @@ generated_at: "2026-05-18"
 Squiffy sollte man weniger über die reine Featureliste lesen als über den konkreten Arbeitsablauf: interaktive Textgeschichten und einfache Choice-Strukturen. Der praktische Wert entsteht dort, wo es darum geht, narrative Prototypen ohne schwere Game-Engine auszuprobieren, ohne jede Entscheidung wieder in Nebentools auszulagern.
 
 Für die Bewertung zählt vor allem die Frage, wie Verzweigungen dokumentiert und Sackgassen getestet werden. Wenn dieser Punkt ungeklärt bleibt, wirkt selbst ein starkes Tool schnell größer als der eigentliche Nutzen.
+
+## Redaktionelle Einordnung
+
+Bei Squiffy beginnt die redaktionelle Prüfung beim Lernziel: Welche Aufgabe soll klarer werden, welches Feedback bekommen Nutzerinnen und Nutzer, und wer pflegt die Inhalte? Ein sinnvoller Test nutzt eine echte Übung mit Zielgruppe, Durchlauf und Auswertung.
+
+Squiffy ist stark, wenn Materialien wiederholbar, nachvollziehbar und fachlich betreut bleiben. Ohne klare Pflege wird aus einem guten Lernwerkzeug schnell eine Sammlung einzelner Bausteine.
 
 ## Für wen ist Squiffy geeignet?
 

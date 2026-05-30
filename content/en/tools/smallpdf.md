@@ -1,6 +1,11 @@
 ---
 slug: smallpdf
 title: Smallpdf
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -21,33 +26,33 @@ Smallpdf is designed for anyone who works regularly with PDF documents, from stu
 
 ## Key features
 
-- PDF compression to reduce file size without loss of quality  
-- Merge multiple PDF files into one document  
-- Split PDFs into individual pages or sections  
-- Convert PDFs to Word, Excel, PowerPoint, JPG, and vice versa  
-- Add electronic signatures and sign documents  
-- OCR technology (Optical Character Recognition) for text recognition in scanned PDFs  
-- Protect PDFs with passwords and encryption  
-- Integration with cloud services such as Google Drive and Dropbox  
-- Offline use through the desktop app (available depending on plan)  
+- PDF compression to reduce file size without loss of quality
+- Merge multiple PDF files into one document
+- Split PDFs into individual pages or sections
+- Convert PDFs to Word, Excel, PowerPoint, JPG, and vice versa
+- Add electronic signatures and sign documents
+- OCR technology (Optical Character Recognition) for text recognition in scanned PDFs
+- Protect PDFs with passwords and encryption
+- Integration with cloud services such as Google Drive and Dropbox
+- Offline use through the desktop app (available depending on plan)
 - Automated workflows for recurring tasks (depending on plan)
 
 ## Pros and cons
 
 ### Pros
 
-- Intuitive and easy-to-understand user interface  
-- Wide range of PDF tools in one place  
-- Cross-platform use (web, desktop, mobile)  
-- Fast processing thanks to AI support  
-- Free basic access with a variety of features  
+- Intuitive and easy-to-understand user interface
+- Wide range of PDF tools in one place
+- Cross-platform use (web, desktop, mobile)
+- Fast processing thanks to AI support
+- Free basic access with a variety of features
 - Good integration with cloud storage and collaboration tools
 
 ### Cons
 
-- Some features are only available in paid subscriptions  
-- Limited number of free actions per day  
-- May not be sufficient for very complex PDF editing  
+- Some features are only available in paid subscriptions
+- Limited number of free actions per day
+- May not be sufficient for very complex PDF editing
 - Privacy and document storage on servers when used on the web (depending on the terms of use)
 
 <figure class="tool-editorial-figure">
@@ -56,18 +61,18 @@ Smallpdf is designed for anyone who works regularly with PDF documents, from stu
 
 ## Pricing & costs
 
-Smallpdf offers a freemium model:  
-- Free basic access with limited features and usage limits  
-- Pro subscription with additional features, unlimited use, and offline access  
-- Business and team plans with expanded administration and collaboration features  
+Smallpdf offers a freemium model:
+- Free basic access with limited features and usage limits
+- Pro subscription with additional features, unlimited use, and offline access
+- Business and team plans with expanded administration and collaboration features
 Exact prices vary depending on subscription length (monthly or yearly) and region.
 
 ## Alternatives to Smallpdf
 
-- Adobe Acrobat DC: Comprehensive PDF solution with many professional features  
-- PDFescape: Online PDF editor with a free basic plan  
-- Foxit PDF Editor: Powerful software for PDF editing and management  
-- Soda PDF: Flexible PDF platform with cloud and desktop options  
+- Adobe Acrobat DC: Comprehensive PDF solution with many professional features
+- PDFescape: Online PDF editor with a free basic plan
+- Foxit PDF Editor: Powerful software for PDF editing and management
+- Soda PDF: Flexible PDF platform with cloud and desktop options
 - Sejda PDF Editor: Online tool focused on ease of use and security
 
 ## Related Guides
@@ -76,26 +81,26 @@ Exact prices vary depending on subscription length (monthly or yearly) and regio
 
 ## FAQ
 
-**1. Is Smallpdf free to use?**  
+**1. Is Smallpdf free to use?**
 Yes, there is a free basic version with limited features and usage limits. For more extensive use, a paid subscription is required.
 
-**2. How secure are my documents in Smallpdf?**  
+**2. How secure are my documents in Smallpdf?**
 Smallpdf uses encryption technologies to protect data. Documents are automatically deleted from the servers after a short time. Nevertheless, you should review the privacy policy when working with sensitive information.
 
-**3. Can I use Smallpdf offline?**  
+**3. Can I use Smallpdf offline?**
 The desktop app enables offline editing, but it is usually included only in paid plans.
 
-**4. Does Smallpdf support OCR for scanned documents?**  
+**4. Does Smallpdf support OCR for scanned documents?**
 Yes, Smallpdf offers text recognition (OCR) that converts scanned PDFs into searchable and editable documents.
 
-**5. Which file formats does Smallpdf support?**  
+**5. Which file formats does Smallpdf support?**
 In addition to PDF, formats such as Word, Excel, PowerPoint, JPG, and others are supported, especially for conversions.
 
-**6. Is there a mobile app for Smallpdf?**  
+**6. Is there a mobile app for Smallpdf?**
 Yes, there are mobile apps for iOS and Android that offer many of the web features.
 
-**7. How many documents can I edit for free each day?**  
+**7. How many documents can I edit for free each day?**
 The number is limited and varies by feature. For unlimited use, an upgrade is required.
 
-**8. Can I integrate Smallpdf with my cloud storage?**  
+**8. Can I integrate Smallpdf with my cloud storage?**
 Yes, Smallpdf can be connected with services such as Google Drive and Dropbox to make access to documents easier.

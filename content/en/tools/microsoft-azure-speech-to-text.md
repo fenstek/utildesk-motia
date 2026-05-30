@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-speech-to-text
 title: Microsoft Azure Speech to Text
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Plan-based
 tags:
@@ -113,26 +118,26 @@ For exact pricing, it is best to consult the official Azure pricing page or cont
 
 ## FAQ
 
-**1. How accurate is the speech recognition of Microsoft Azure Speech to Text?**  
+**1. How accurate is the speech recognition of Microsoft Azure Speech to Text?**
 Accuracy is high and is continuously improved by AI models. However, it depends on audio quality, language, accent, and environment.
 
-**2. Which languages are supported?**  
+**2. Which languages are supported?**
 Microsoft Azure supports many languages and dialects. The exact list may vary by region and update.
 
-**3. Can I integrate the service into my own software?**  
+**3. Can I integrate the service into my own software?**
 Yes, Microsoft offers APIs and SDKs that make it easy to integrate into your own applications.
 
-**4. Is there a free trial?**  
+**4. Is there a free trial?**
 Microsoft usually offers a free allowance for new users that includes a limited number of transcription minutes.
 
-**5. How secure is my data?**  
+**5. How secure is my data?**
 Data is processed in the Azure cloud, which meets high security and privacy standards, including compliance with various industry standards.
 
-**6. Can the service distinguish between multiple speakers?**  
+**6. Can the service distinguish between multiple speakers?**
 Yes, with the Speaker Diarization feature, different speakers within a recording can be detected and marked.
 
-**7. Which audio formats are supported?**  
+**7. Which audio formats are supported?**
 Various common audio formats are supported, including WAV, MP3, and others, depending on the service.
 
-**8. How does model customization work?**  
+**8. How does model customization work?**
 Users can train the model with industry-specific vocabulary and terms to improve recognition accuracy.

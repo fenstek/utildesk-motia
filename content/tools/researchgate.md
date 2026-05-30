@@ -1,6 +1,11 @@
 ---
 slug: researchgate
 title: ResearchGate
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Research"
 price_model: Freemium
 tags: [research,publications,academic-networking]
@@ -28,11 +33,11 @@ ResearchGate richtet sich vor allem an Wissenschaftler, Forscher, Doktoranden un
 - **Übergaben im Team:** ResearchGate kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei ResearchGate weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei ResearchGate ist Quellenarbeit der Kern. Wir würden mit einer engen Recherchefrage starten, Treffer gegen Kontrollquellen prüfen und festhalten, warum Quellen aufgenommen oder verworfen wurden.
 
-Praktisch ist ResearchGate vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+ResearchGate lohnt sich, wenn Fundstellen, Notizen und Zweifel später noch nachvollziehbar bleiben. Ohne diese Sorgfalt wird Recherche nur schneller, aber nicht belastbarer.
 
 ## Hauptfunktionen
 
@@ -61,59 +66,3 @@ Praktisch ist ResearchGate vor allem, wenn es vorhandene Abläufe entlastet, sta
 - Teilweise begrenzte Zugänglichkeit zu Volltexten, abhängig von Verlagsrechten.
 - Benutzeroberfläche kann für Neueinsteiger etwas komplex wirken.
 - Premium-Features sind kostenpflichtig, Details variieren je nach Plan.
-
-## Workflow-Fit
-
-ResearchGate passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn ResearchGate nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in ResearchGate landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei ResearchGate außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von ResearchGate.
-
-## Redaktionelle Einschätzung
-
-ResearchGate unterstützt Recherche vor allem dann, wenn Quellen, Auswahlkriterien und Gegenprüfung sichtbar bleiben. Es beschleunigt Orientierung, ersetzt aber keine fachliche Bewertung.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob ResearchGate wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-ResearchGate ist grundsätzlich kostenlos nutzbar, was die Kernfunktionen wie das Veröffentlichen von Arbeiten und das Netzwerken betrifft. Einige optionale Premium-Dienste oder institutionelle Services können kostenpflichtig sein, wobei die Preise je nach Anbieter und Umfang der Leistungen variieren. Details zu speziellen Angeboten sind direkt bei ResearchGate oder über Partner erhältlich.
-
-## Alternativen zu ResearchGate
-
-- **Academia.edu:** Ähnlich wie ResearchGate bietet diese Plattform Möglichkeiten zum Teilen von wissenschaftlichen Arbeiten und zum Networking.
-- **Mendeley:** Kombination aus Referenzmanager und sozialem Netzwerk für Forschende.
-- **Google Scholar Profiles:** Ermöglicht das Verwalten von Publikationen und das Verfolgen von Zitationen.
-- **ORCID:** Fokus auf die eindeutige Identifikation von Forschenden und die Vernetzung mit Publikationsdaten.
-- **Publons:** Plattform zur Verwaltung von Peer-Reviews und Publikationsprofilen.
-
-## FAQ
-
-**1. Ist ResearchGate wirklich kostenlos?**  
-Ja, die grundlegenden Funktionen sind kostenfrei nutzbar. Zusätzliche Premium-Services können kostenpflichtig sein.
-
-**2. Kann ich auf ResearchGate alle wissenschaftlichen Artikel kostenlos lesen?**  
-Nicht alle Artikel sind frei zugänglich, da viele Verlage Zugriffsrechte einschränken. Autoren können jedoch oft Preprints oder eigene Manuskripte hochladen.
-
-**3. Wie sicher sind meine Daten auf ResearchGate?**  
-ResearchGate setzt Datenschutzmaßnahmen um, jedoch sollten Nutzer sensibel mit der Veröffentlichung vertraulicher Informationen umgehen.
-
-**4. Kann ich ResearchGate als Student nutzen?**  
-Ja, auch Studierende profitieren von der Plattform durch Zugang zu Forschungsergebnissen und Vernetzungsmöglichkeiten.
-
-**5. Wie verbessert ResearchGate meine wissenschaftliche Sichtbarkeit?**  
-Durch das Teilen von Publikationen und den aktiven Austausch im Netzwerk erhöht sich die Reichweite der eigenen Forschung.
-
-**6. Gibt es eine mobile App für ResearchGate?**  
-Ja, ResearchGate bietet eine mobile App für iOS und Android zur einfachen Nutzung unterwegs.
-
-**7. Wie kann ich meine Publikationen auf ResearchGate hochladen?**  
-Nach der Anmeldung können Dokumente direkt im Profil hochgeladen und mit Metadaten versehen werden.
-
-**8. Unterstützt ResearchGate Forschungsprojekte?**  
-Ja, es gibt Funktionen zur Projektverwaltung und Kommunikation innerhalb von Forschungsteams.

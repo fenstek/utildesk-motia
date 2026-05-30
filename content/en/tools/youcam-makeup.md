@@ -1,6 +1,11 @@
 ---
 slug: youcam-makeup
 title: YouCam Makeup
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -74,26 +79,26 @@ YouCam Makeup offers a freemium model. The basic functions can be used for free,
 
 ## FAQ
 
-**1. Is YouCam Makeup free?**  
+**1. Is YouCam Makeup free?**
 The app offers a free basic version with core features. A paid subscription is required for advanced features.
 
-**2. Which devices does YouCam Makeup run on?**  
+**2. Which devices does YouCam Makeup run on?**
 YouCam Makeup is available for mobile devices with iOS and Android.
 
-**3. How accurate are the skin analysis features?**  
+**3. How accurate are the skin analysis features?**
 The skin analysis is based on AI technologies and provides a general assessment, but it does not replace dermatological advice.
 
-**4. Can I save and share my looks?**  
+**4. Can I save and share my looks?**
 Yes, the app allows you to save and share images and videos directly from the app.
 
-**5. Is personal data collected when using the app?**  
+**5. Is personal data collected when using the app?**
 As with many apps, data may be collected; users should review the privacy policy.
 
-**6. Is there advertising in the app?**  
+**6. Is there advertising in the app?**
 Ads may appear in the free version and are removed in the premium version.
 
-**7. Which languages does YouCam Makeup support?**  
+**7. Which languages does YouCam Makeup support?**
 The app is available in several languages, including German and English.
 
-**8. How often are new makeup looks added?**  
+**8. How often are new makeup looks added?**
 The development team regularly releases updates with new looks and features.

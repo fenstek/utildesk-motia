@@ -1,6 +1,11 @@
 ---
 slug: krisp
 title: Krisp
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Audio
 price_model: Freemium
 tags:
@@ -93,28 +98,28 @@ When comparing options, Krisp should not only be measured against very similar p
 
 ## FAQ
 
-**1. How does noise cancellation work in Krisp?**  
+**1. How does noise cancellation work in Krisp?**
 Krisp uses artificial intelligence to detect and filter background noise in real time without affecting the user's voice.
 
-**2. Is Krisp compatible with all communication programs?**  
+**2. Is Krisp compatible with all communication programs?**
 Krisp supports most common programs such as Zoom, Microsoft Teams, Skype, Google Meet, and others. It can be set up as a virtual audio source in the control panel.
 
-**3. How much does Krisp cost?**  
+**3. How much does Krisp cost?**
 There is a free version with limited usage and various paid subscriptions. Prices vary depending on the plan and provider.
 
-**4. Does Krisp require an internet connection?**  
+**4. Does Krisp require an internet connection?**
 Audio processing takes place locally on the device, so a constant internet connection is not required for noise cancellation.
 
-**5. Can Krisp also filter background noise from other participants?**  
+**5. Can Krisp also filter background noise from other participants?**
 Yes, Krisp offers bidirectional noise cancellation that reduces both your own and other participants' background noise.
 
-**6. On which platforms is Krisp available?**  
+**6. On which platforms is Krisp available?**
 Krisp is available for Windows, macOS, iOS, and as a Chrome extension.
 
-**7. How easy is Krisp to set up?**  
+**7. How easy is Krisp to set up?**
 Installation and setup are designed to be user-friendly and do not require any special technical knowledge.
 
-**8. Is there a free trial version?**  
+**8. Is there a free trial version?**
 Yes, the free version of Krisp lets you test the basic features with a limited number of minutes per week.
 
 ---

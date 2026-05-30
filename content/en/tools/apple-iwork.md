@@ -1,6 +1,11 @@
 ---
 slug: apple-iwork
 title: Apple iWork
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Free
 tags:
@@ -94,28 +99,28 @@ When comparing options, Apple iWork should not only be measured against very sim
 
 ## FAQ
 
-**1. Is Apple iWork really free?**  
+**1. Is Apple iWork really free?**
 Yes, Apple iWork is available free of charge for all Apple device users and does not require any additional payment.
 
-**2. Can I open iWork documents with Microsoft Office?**  
+**2. Can I open iWork documents with Microsoft Office?**
 Yes, iWork supports import and export of common Microsoft Office formats, so documents can be exchanged.
 
-**3. Is there a version of iWork for Windows or Android?**  
+**3. Is there a version of iWork for Windows or Android?**
 As a native app, iWork is available only for macOS and iOS. Through the iCloud website, documents can also be edited from other platforms, although with limited functionality.
 
-**4. How does collaboration work in iWork?**  
+**4. How does collaboration work in iWork?**
 Via iCloud, users can share documents and edit them together in real time, even if other participants use different Apple devices.
 
-**5. Do I need an internet connection to use iWork?**  
+**5. Do I need an internet connection to use iWork?**
 The programs can be used offline. An internet connection is required for synchronization and collaboration.
 
-**6. Which devices are supported?**  
+**6. Which devices are supported?**
 iWork is optimized for Mac, iPhone, and iPad. The web version works in common browsers but is less powerful.
 
-**7. Can I print or export iWork documents?**  
+**7. Can I print or export iWork documents?**
 Yes, documents can be exported and printed as PDF, Word, Excel, PowerPoint, or in other formats.
 
-**8. Are there templates in iWork?**  
+**8. Are there templates in iWork?**
 Yes, iWork offers a wide range of professional templates for text documents, spreadsheets, and presentations that make creating content easier.
 
 **9. How should a team test Apple iWork?**

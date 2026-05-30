@@ -1,6 +1,11 @@
 ---
 slug: zendesk
 title: Zendesk
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Infrastructure"
 price_model: Abonnement
 tags: [customer-support, helpdesk, ticketing]
@@ -70,26 +75,26 @@ Zendesk ist ein skalierbares Supportsystem, aber kein Selbstläufer. Gute Implem
 
 ## FAQ
 
-**1. Welche Kommunikationskanäle unterstützt Zendesk?**  
+**1. Welche Kommunikationskanäle unterstützt Zendesk?**
 Zendesk unterstützt E-Mail, Live-Chat, Telefon, Social Media und weitere Kanäle, um Kundenanfragen zentral zu verwalten.
 
-**2. Ist Zendesk für kleine Unternehmen geeignet?**  
+**2. Ist Zendesk für kleine Unternehmen geeignet?**
 Ja, Zendesk bietet skalierbare Pläne, die auch für kleine Teams geeignet sind, mit der Möglichkeit, bei Wachstum flexibel zu erweitern.
 
-**3. Welche KI-Funktionen sind in Zendesk integriert?**  
+**3. Welche KI-Funktionen sind in Zendesk integriert?**
 Zu den KI-Funktionen gehören automatische Ticketklassifizierung, Priorisierung, Antwortvorschläge und Chatbots für den Self-Service.
 
-**4. Wie funktioniert die Preisgestaltung bei Zendesk?**  
+**4. Wie funktioniert die Preisgestaltung bei Zendesk?**
 Die Preise basieren meist auf der Anzahl der Agenten und dem gewählten Funktionsumfang, mit unterschiedlichen Plänen für verschiedene Unternehmensgrößen.
 
-**5. Kann Zendesk in bestehende Systeme integriert werden?**  
+**5. Kann Zendesk in bestehende Systeme integriert werden?**
 Ja, Zendesk bietet zahlreiche Integrationen zu CRM-Systemen, E-Commerce-Plattformen und anderen Geschäftsanwendungen.
 
-**6. Gibt es eine mobile App für Zendesk?**  
+**6. Gibt es eine mobile App für Zendesk?**
 Ja, Zendesk stellt eine mobile App bereit, mit der Support-Mitarbeiter auch unterwegs Zugriff auf Tickets und Kundenkommunikation haben.
 
-**7. Wie sicher sind Kundendaten bei Zendesk?**  
+**7. Wie sicher sind Kundendaten bei Zendesk?**
 Zendesk erfüllt branchenübliche Sicherheitsstandards und Compliance-Anforderungen, Details hängen jedoch vom jeweiligen Vertrag und Region ab.
 
-**8. Bietet Zendesk eine Testversion an?**  
+**8. Bietet Zendesk eine Testversion an?**
 In der Regel stellt Zendesk kostenlose Testphasen zur Verfügung, um die Plattform vor dem Kauf zu evaluieren.

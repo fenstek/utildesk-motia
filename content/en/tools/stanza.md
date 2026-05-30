@@ -1,6 +1,11 @@
 ---
 slug: stanza
 title: Stanza
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -76,28 +81,28 @@ Stanza is open source and can be used for free. There are no license fees. Howev
 
 ## FAQ
 
-**1. Is Stanza suitable for production use?**  
+**1. Is Stanza suitable for production use?**
 Yes, Stanza is used in many research and industry projects and offers stable pretrained models.
 
-**2. Which programming languages are supported?**  
+**2. Which programming languages are supported?**
 Stanza is primarily developed for Python and does not offer official bindings for other languages.
 
-**3. Do I need an internet connection to use Stanza?**  
+**3. Do I need an internet connection to use Stanza?**
 After downloading the models, Stanza can be used offline.
 
-**4. How extensive is the language support?**  
+**4. How extensive is the language support?**
 Stanza supports over 70 languages, including many European, Asian, and other world languages.
 
-**5. Can I train my own models with Stanza?**  
+**5. Can I train my own models with Stanza?**
 Yes, Stanza allows you to train your own models, but this requires appropriate data and resources.
 
-**6. Is there a graphical user interface?**  
+**6. Is there a graphical user interface?**
 Stanza is a software library without a GUI. Additional tools are needed for visualizations.
 
-**7. How does Stanza differ from spaCy?**  
+**7. How does Stanza differ from spaCy?**
 Stanza offers broader language coverage and is based on Stanford models, while spaCy is often faster and more user-friendly.
 
-**8. Where can I find the documentation?**  
+**8. Where can I find the documentation?**
 The official documentation is available on the Stanford NLP website and on GitHub.
 
 ---

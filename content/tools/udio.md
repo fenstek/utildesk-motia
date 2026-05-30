@@ -1,9 +1,14 @@
 ---
 slug: udio
 title: Udio
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Audio & Video"
 price_model: Freemium
-tags: 
+tags:
 official_url: "https://www.udio.com"
 affiliate_url: "https://www.udio.com"
 tier: "C"
@@ -95,13 +100,13 @@ Udio bietet ein Freemium-Modell. Für höhere Nutzung, zusätzliche Funktionen o
 - [GarageBand](/tools/garageband/): Kostenloses Musik- und Audio-Tool für macOS und iOS mit guter Einsteigerfreundlichkeit.
 ## FAQ
 
-**1. Ist Udio für Anfänger geeignet?**  
+**1. Ist Udio für Anfänger geeignet?**
 Ja, für erste Musikideen ist der Einstieg niedrigschwellig. Für veröffentlichte Ergebnisse bleiben aber Auswahl, Rechteprüfung und Qualitätskontrolle wichtig.
 
 **2. Ist Udio ein Audioeditor?**
 Nein, der Schwerpunkt liegt auf KI-generierter Musik. Für Schnitt, Restauration, Podcast-Bearbeitung oder Mixing sind andere Werkzeuge besser geeignet.
 
-**3. Kann ich Udio offline nutzen?**  
+**3. Kann ich Udio offline nutzen?**
 Udio ist grundsätzlich cloudbasiert. Für die eigentliche Generierung, Verwaltung und Weiterentwicklung von Entwürfen sollte man mit einer Internetverbindung planen.
 
 **4. Darf ich Udio-Ergebnisse kommerziell nutzen?**
@@ -110,11 +115,11 @@ Das hängt von aktuellen Nutzungsbedingungen, Plan und Einsatz ab. Vor Veröffen
 **5. Wofür eignet sich Udio im Marketing?**
 Vor allem für Moodboards, frühe Kampagnenideen und musikalische Varianten. Finale Nutzung braucht zusätzlich Brand-, Rechts- und Qualitätsprüfung.
 
-**6. Wie unterscheiden sich die kostenpflichtigen Pläne?**  
+**6. Wie unterscheiden sich die kostenpflichtigen Pläne?**
 Kostenpflichtige Pläne bieten in der Regel mehr Speicherkapazität, erweiterte Funktionen und Prioritäts-Support. Details sind auf der offiziellen Webseite verfügbar.
 
 **7. Kann ich Ergebnisse weiterbearbeiten?**
 Je nach Exportmöglichkeit können Ergebnisse in anderen Audiowerkzeugen weiterverarbeitet werden. Für professionelle Produktion sollte dieser Schritt eingeplant werden.
 
-**8. Gibt es eine Möglichkeit, Udio kostenlos zu testen?**  
+**8. Gibt es eine Möglichkeit, Udio kostenlos zu testen?**
 Das Freemium-Modell erlaubt den kostenlosen Einstieg mit eingeschränkten Funktionen, um das Tool vor einem Upgrade auszuprobieren.

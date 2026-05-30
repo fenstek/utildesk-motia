@@ -1,6 +1,11 @@
 ---
 slug: airbrush
 title: AirBrush
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -99,26 +104,26 @@ AirBrush offers a freemium pricing model. The basic version is free and includes
 
 ## FAQ
 
-**1. Is AirBrush free to use?**  
+**1. Is AirBrush free to use?**
 Yes, AirBrush offers a free basic version with many features. Some enhanced features are, however, paid for.
 
-**2. On which devices can AirBrush be used?**  
+**2. On which devices can AirBrush be used?**
 The app is available for mobile devices, primarily for iOS and Android smartphones.
 
-**3. Do I need special knowledge to use AirBrush?**  
+**3. Do I need special knowledge to use AirBrush?**
 No, AirBrush is user-friendly and suitable for beginners without prior experience in image editing.
 
-**4. How secure are my photos when using AirBrush?**  
+**4. How secure are my photos when using AirBrush?**
 As with all apps, it is essential to read the privacy terms. Photos are typically processed locally, but cloud-based functions may transfer data.
 
-**5. Can I share edited photos directly?**  
+**5. Can I share edited photos directly?**
 Yes, the app allows for easy sharing of edited photos on social media.
 
-**6. Are updates for AirBrush regularly provided?**  
+**6. Are updates for AirBrush regularly provided?**
 Yes, the developers regularly release updates with new features and improvements.
 
-**7. Is there a desktop version of AirBrush?**  
+**7. Is there a desktop version of AirBrush?**
 AirBrush is currently focused on mobile platforms; a desktop version is not officially available.
 
-**8. What benefits does the premium subscription offer?**  
+**8. What benefits does the premium subscription offer?**
 The premium subscription unlocks additional filters, tools, and features, and removes ads for a better user experience.

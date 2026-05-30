@@ -1,6 +1,11 @@
 ---
 slug: boomerang-for-gmail
 title: Boomerang for Gmail
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -106,26 +111,26 @@ Boomerang for Gmail offers various pricing plans that vary depending on the func
 
 ## FAQ
 
-**1. Does Boomerang only work with Gmail?**  
+**1. Does Boomerang only work with Gmail?**
 Yes, Boomerang is specifically designed to work with Gmail and functions best within this email service.
 
-**2. Is there a free version of Boomerang?**  
+**2. Is there a free version of Boomerang?**
 Yes, Boomerang offers a free basic version with limited features, ideal for beginners.
 
-**3. How does Boomerang help with email organization?**  
+**3. How does Boomerang help with email organization?**
 Through features like Inbox Pause, follow-up reminders, and email planning, Boomerang helps to make the inbox more organized and structured.
 
-**4. Does Boomerang support mobile devices?**  
+**4. Does Boomerang support mobile devices?**
 Yes, there are mobile apps and extensions that enable use on-the-go.
 
-**5. What AI features are included?**  
+**5. What AI features are included?**
 Boomerang includes AI-powered writing suggestions to help improve email clarity and professionalism.
 
-**6. Can I automate follow-ups?**  
+**6. Can I automate follow-ups?**
 Yes, you can set up reminders for unanswered emails to avoid missing important messages.
 
-**7. How secure is using Boomerang?**  
+**7. How secure is using Boomerang?**
 Boomerang works with Google's security standards, but users should always pay attention to the protection of their data.
 
-**8. How do I install Boomerang?**  
+**8. How do I install Boomerang?**
 Installation occurs as a browser extension or through the official website, which enables a simple integration into Gmail.

@@ -1,6 +1,11 @@
 ---
 slug: auphonic
 title: Auphonic
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -108,28 +113,28 @@ When comparing options, Auphonic should not only be measured against very simila
 
 ## FAQ
 
-**How does the automatic audio editing work in Auphonic?**  
+**How does the automatic audio editing work in Auphonic?**
 Auphonic analyzes the audio file and adjusts volume, noise, and other parameters using algorithms to achieve professional sound quality.
 
-**Which languages are supported for transcription?**  
+**Which languages are supported for transcription?**
 The exact number of supported languages may vary depending on the version, but it includes many widely spoken languages worldwide.
 
-**Do I need an internet connection to use Auphonic?**  
+**Do I need an internet connection to use Auphonic?**
 Yes, as Auphonic is cloud-based, an active internet connection is required.
 
-**Can I integrate Auphonic into my workflow?**  
+**Can I integrate Auphonic into my workflow?**
 Yes, Auphonic offers an API and integrations with various platforms to automate the workflow.
 
-**Is there a free trial version?**  
+**Is there a free trial version?**
 Yes, Auphonic offers a free basic version with limited usage.
 
-**How accurate are the transcriptions?**  
+**How accurate are the transcriptions?**
 The accuracy depends on the audio quality and language. In quiet and clear recordings, the results are usually very good.
 
-**What file formats are supported?**  
+**What file formats are supported?**
 Auphonic supports common audio formats like WAV, MP3, AIFF, and video formats for audio optimization.
 
-**Can I process multiple files simultaneously?**  
+**Can I process multiple files simultaneously?**
 Yes, batch processing allows processing multiple files at the same time.
 
 **9. How should a team test Auphonic?**

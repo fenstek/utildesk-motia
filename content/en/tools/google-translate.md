@@ -1,6 +1,11 @@
 ---
 slug: google-translate
 title: Google Translate
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -100,26 +105,26 @@ Google Translate is generally available as a freemium service:
 
 ## FAQ
 
-**1. Is Google Translate free?**  
+**1. Is Google Translate free?**
 Yes, the basic version of Google Translate is available free of charge for end users. API usage incurs paid fees depending on the scope.
 
-**2. How accurate are Google Translate translations?**  
+**2. How accurate are Google Translate translations?**
 Quality varies depending on the language and type of text. For simple and general texts, translations are usually easy to understand, while complex technical texts may contain inaccuracies.
 
-**3. Can I use Google Translate offline?**  
+**3. Can I use Google Translate offline?**
 Yes, in the mobile app you can download language packs to perform translations without an internet connection.
 
-**4. Which languages does Google Translate support?**  
+**4. Which languages does Google Translate support?**
 More than 100 languages are supported, including many common and some less widely spoken languages.
 
-**5. How does speech recognition work in Google Translate?**  
+**5. How does speech recognition work in Google Translate?**
 The app automatically recognizes the spoken language and translates it into the desired target language in real time.
 
-**6. Can I translate entire documents?**  
+**6. Can I translate entire documents?**
 Yes, Google Translate supports document translation in various formats directly through the website.
 
-**7. Is my privacy protected when using Google Translate?**  
+**7. Is my privacy protected when using Google Translate?**
 Google stores and processes the entered data on its servers, which can raise privacy concerns for sensitive information.
 
-**8. Is there an API for developers?**  
+**8. Is there an API for developers?**
 Yes, Google offers a Cloud Translation API that can be used to integrate translation features into your own applications.

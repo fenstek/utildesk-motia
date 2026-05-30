@@ -1,6 +1,11 @@
 ---
 slug: kinemaster
 title: KineMaster
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -70,26 +75,26 @@ KineMaster offers a freemium pricing model. The basic version is free to use, bu
 
 ## FAQ
 
-**1. Is KineMaster free to use?**  
+**1. Is KineMaster free to use?**
 Yes, KineMaster offers a free basic version with limited features and a watermark. A paid subscription is required for full access.
 
-**2. Which devices can KineMaster be used on?**  
+**2. Which devices can KineMaster be used on?**
 KineMaster is available for both Android and iOS devices and is optimized for smartphones and tablets.
 
-**3. Does KineMaster support 4K video?**  
+**3. Does KineMaster support 4K video?**
 Yes, KineMaster supports 4K videos, although performance depends on the device.
 
-**4. Can you create green screen effects with KineMaster?**  
+**4. Can you create green screen effects with KineMaster?**
 Yes, the app includes a chroma key function that makes green screen effects possible.
 
-**5. How do you export finished videos from KineMaster?**  
+**5. How do you export finished videos from KineMaster?**
 Videos can be exported in different resolutions and formats and shared directly on social platforms.
 
-**6. Is there a desktop version of KineMaster?**  
+**6. Is there a desktop version of KineMaster?**
 KineMaster is primarily designed for mobile devices; a desktop version is not currently available.
 
-**7. What subscription plans are available?**  
+**7. What subscription plans are available?**
 KineMaster usually offers monthly and annual subscriptions, and prices may vary by region.
 
-**8. Can KineMaster be used offline?**  
+**8. Can KineMaster be used offline?**
 Many features are available offline, but some content and updates require an internet connection.

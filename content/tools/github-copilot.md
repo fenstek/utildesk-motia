@@ -1,9 +1,14 @@
 ---
 slug: github-copilot
 title: GitHub Copilot
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Entwickler-Tools
 price_model: Freemium
-tags: 
+tags:
 official_url: "https://github.com/features/copilot/"
 affiliate_url: "https://github.com/features/copilot/"
 tier: A
@@ -119,26 +124,26 @@ Die genauen Preise können je nach Region und Anbieter variieren. Weitere Detail
 - [Visual Studio IntelliCode](/tools/visual-studio-intellicode/): Microsofts KI-gestützte Codevervollständigung, integriert in Visual Studio.
 ## FAQ
 
-**1. Unterstützt GitHub Copilot alle Programmiersprachen?**  
+**1. Unterstützt GitHub Copilot alle Programmiersprachen?**
 Es unterstützt viele gängige Sprachen, darunter Python, JavaScript, TypeScript, Ruby, Go und C#, jedoch nicht alle existierenden Sprachen vollständig.
 
-**2. Funktioniert GitHub Copilot offline?**  
+**2. Funktioniert GitHub Copilot offline?**
 Copilot benötigt eine aktive Internetverbindung, da die KI-Modelle in der Cloud ausgeführt werden.
 
-**3. Wie sicher ist mein Code bei der Nutzung von Copilot?**  
+**3. Wie sicher ist mein Code bei der Nutzung von Copilot?**
 GitHub speichert und verarbeitet Code anonymisiert, dennoch sollten sensible oder proprietäre Codes mit Vorsicht behandelt werden.
 
-**4. Kann Copilot meinen Programmierstil lernen?**  
+**4. Kann Copilot meinen Programmierstil lernen?**
 Ja, Copilot passt seine Vorschläge teilweise an den Stil und Kontext des aktuellen Projekts an.
 
-**5. Gibt es eine kostenlose Testphase?**  
+**5. Gibt es eine kostenlose Testphase?**
 Ja, GitHub Copilot bietet eine kostenlose Nutzung mit eingeschränkten Funktionen an.
 
-**6. Wie installiere ich GitHub Copilot?**  
+**6. Wie installiere ich GitHub Copilot?**
 Die Installation erfolgt meist als Plugin oder Erweiterung in unterstützten Code-Editoren wie Visual Studio Code.
 
-**7. Ist GitHub Copilot für Teams geeignet?**  
+**7. Ist GitHub Copilot für Teams geeignet?**
 Ja, es gibt Pläne für Teams, die gemeinsame Nutzung und Verwaltung erleichtern.
 
-**8. Kann Copilot auch Dokumentation generieren?**  
+**8. Kann Copilot auch Dokumentation generieren?**
 Ja, das Tool hilft beim Erstellen von Kommentaren und Dokumentationsblöcken basierend auf dem Code.

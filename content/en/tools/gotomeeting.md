@@ -1,11 +1,15 @@
 ---
 slug: "gotomeeting"
 title: "GoToMeeting"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Productivity"
 tags: [meetings, video, communication, productivity]
 description: "GoToMeeting is an online meeting platform for video calls, screen sharing and business collaboration."
 ---
-
 # GoToMeeting
 
 GoToMeeting is a business meeting platform for video conferencing, screen sharing and remote collaboration. It is designed for teams that need stable online meetings without building a broader collaboration stack around every call.

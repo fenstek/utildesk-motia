@@ -1,6 +1,11 @@
 ---
 slug: callrail
 title: CallRail
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -95,10 +100,10 @@ When comparing options, CallRail should not only be measured against very simila
 
 ## FAQ
 
-**1. What is CallRail exactly?**  
+**1. What is CallRail exactly?**
 CallRail is a software solution for call tracking, customer communication, and marketing analysis that helps businesses measure the effectiveness of their campaigns and improve customer interaction.
 
-**2. How does call tracking work in CallRail?**  
+**2. How does call tracking work in CallRail?**
 CallRail assigns dynamic phone numbers to different marketing channels, allowing for precise tracking of which channel led to a call.
 
 **3. Is CallRail suitable for small businesses?

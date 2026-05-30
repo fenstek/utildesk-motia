@@ -1,6 +1,11 @@
 ---
 slug: libreoffice-impress
 title: LibreOffice Impress
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Open Source
 tags: [presentation, productivity, office, open-source]
@@ -77,26 +82,26 @@ Impress ist solide für sachliche Decks und unabhaengige Arbeitsumgebungen. Bei 
 
 ## FAQ
 
-**1. Ist LibreOffice Impress wirklich kostenlos?**  
+**1. Ist LibreOffice Impress wirklich kostenlos?**
 Ja, Impress ist Teil der LibreOffice Suite, die als Open-Source-Software kostenlos heruntergeladen und genutzt werden kann.
 
-**2. Kann ich PowerPoint-Dateien mit Impress öffnen und bearbeiten?**  
+**2. Kann ich PowerPoint-Dateien mit Impress öffnen und bearbeiten?**
 Ja, Impress unterstützt die Formate .ppt und .pptx, allerdings können bei komplexen Präsentationen manche Formatierungen verloren gehen.
 
-**3. Auf welchen Betriebssystemen läuft LibreOffice Impress?**  
+**3. Auf welchen Betriebssystemen läuft LibreOffice Impress?**
 LibreOffice Impress ist für Windows, macOS und verschiedene Linux-Distributionen verfügbar.
 
-**4. Brauche ich eine Internetverbindung, um Impress zu nutzen?**  
+**4. Brauche ich eine Internetverbindung, um Impress zu nutzen?**
 Nein, Impress ist eine Desktop-Anwendung und kann vollständig offline verwendet werden.
 
-**5. Gibt es mobile Versionen von LibreOffice Impress?**  
+**5. Gibt es mobile Versionen von LibreOffice Impress?**
 Aktuell gibt es keine eigenständige mobile App, aber auf mobilen Geräten können Präsentationen über kompatible Viewer betrachtet werden.
 
-**6. Wie kann ich meine Präsentation mit anderen teilen?**  
+**6. Wie kann ich meine Präsentation mit anderen teilen?**
 Präsentationen können als PowerPoint-Datei, PDF oder in anderen Formaten exportiert und per E-Mail oder Cloud-Dienste geteilt werden.
 
-**7. Unterstützt LibreOffice Impress Animationen und Übergänge?**  
+**7. Unterstützt LibreOffice Impress Animationen und Übergänge?**
 Ja, es bietet eine Vielzahl von Animationen und Übergangseffekten zur Gestaltung lebendiger Präsentationen.
 
-**8. Gibt es eine Möglichkeit, Feedback direkt in der Präsentation zu erhalten?**  
+**8. Gibt es eine Möglichkeit, Feedback direkt in der Präsentation zu erhalten?**
 Impress unterstützt Kommentarfunktionen, mit denen Nutzer Anmerkungen hinzufügen können, allerdings sind kollaborative Echtzeitfunktionen begrenzt.

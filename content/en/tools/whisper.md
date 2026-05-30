@@ -1,6 +1,11 @@
 ---
 slug: whisper
 title: Whisper
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -91,26 +96,26 @@ Because Whisper is available as open-source software, there are generally no lic
 
 ## FAQ
 
-**1. Is Whisper free to use?**  
+**1. Is Whisper free to use?**
 Whisper offers a freemium model. The base models can be used free of charge, while advanced features or commercial use may be subject to fees depending on the provider.
 
-**2. Which languages does Whisper support?**  
+**2. Which languages does Whisper support?**
 Whisper supports numerous languages, including German, English, Spanish, French, and many more. The exact list may vary depending on the version and model.
 
-**3. Can Whisper be run locally on your own computer?**  
+**3. Can Whisper be run locally on your own computer?**
 Yes, Whisper is open source and can be run locally, which offers privacy benefits and does not require an internet connection.
 
-**4. How accurate is transcription with Whisper?**  
+**4. How accurate is transcription with Whisper?**
 Accuracy is very high in many cases, especially with clear speech and good audio quality. However, background noise or strong dialects can affect accuracy.
 
-**5. Which audio formats are supported?**  
+**5. Which audio formats are supported?**
 Whisper can work with common audio and video formats, including WAV, MP3, MP4, and others. Compatibility depends on the specific implementation.
 
-**6. Do I need technical knowledge to use Whisper?**  
+**6. Do I need technical knowledge to use Whisper?**
 Using the open-source version is helped by basic knowledge of programming and command-line tools. Some providers also offer user-friendly interfaces.
 
-**7. How fast is Whisper?**  
+**7. How fast is Whisper?**
 Speed depends on the hardware used and the model. Local runs are often slower than specialized cloud services, but they offer more control.
 
-**8. Is there an API for Whisper?**  
+**8. Is there an API for Whisper?**
 Yes, various providers and communities offer APIs or SDKs to integrate Whisper into your own applications.

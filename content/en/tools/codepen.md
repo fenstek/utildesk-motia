@@ -1,6 +1,11 @@
 ---
 slug: codepen
 title: CodePen
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Freemium
 tags:
@@ -107,26 +112,26 @@ CodePen offers a freemium pricing model. The basic version is free and includes 
 
 ## FAQ
 
-**1. Do I need programming knowledge to use CodePen?**  
+**1. Do I need programming knowledge to use CodePen?**
 Basic knowledge of HTML, CSS, and JavaScript is helpful, but the platform is also suitable for learning and experimenting.
 
-**2. Can I use CodePen without signing up?**  
+**2. Can I use CodePen without signing up?**
 Yes, many features are available without registration. To save or make projects private, registration is required.
 
-**3. Are my projects automatically saved?**  
+**3. Are my projects automatically saved?**
 For logged-in users, pens are automatically saved. Without registration, changes are lost when the page is closed.
 
-**4. Is CodePen suitable for professional developers?**  
+**4. Is CodePen suitable for professional developers?**
 CodePen is ideal for prototypes and small projects. For complex applications, local development environments are often more suitable.
 
-**5. How secure are my data on CodePen?**  
+**5. How secure are my data on CodePen?**
 By default, pens are publicly visible. Private projects are only available in paid plans. Users should not share sensitive data publicly (depending on privacy settings).
 
-**6. Can I use CodePen offline?**  
+**6. Can I use CodePen offline?**
 CodePen is a web-based platform and requires an internet connection. Offline use is not intended.
 
-**7. Does CodePen support frameworks like React or Vue?**  
+**7. Does CodePen support frameworks like React or Vue?**
 Yes, CodePen supports integrating various frameworks and libraries via CDN.
 
-**8. Is there a mobile version of CodePen?**  
+**8. Is there a mobile version of CodePen?**
 There is no specific app, but the website is also accessible on mobile devices, albeit with limited functionality.

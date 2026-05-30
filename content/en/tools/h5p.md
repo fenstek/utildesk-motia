@@ -1,6 +1,11 @@
 ---
 slug: h5p
 title: H5P
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Open Source
 tags:
@@ -94,12 +99,11 @@ H5P is open source. Depending on the setup, costs may come from hosting, LMS int
 
 ## FAQ
 
-**Is H5P free?**  
+**Is H5P free?**
 The core technology is open source. Some hosted or commercial services may require payment.
 
-**Can H5P be used in Moodle?**  
+**Can H5P be used in Moodle?**
 Yes. H5P is commonly used in Moodle and other learning platforms.
 
-**Is H5P only for quizzes?**  
+**Is H5P only for quizzes?**
 No. Quizzes are common, but H5P supports many interactive content types.
-

@@ -1,6 +1,11 @@
 ---
 slug: freecodecamp
 title: freeCodeCamp
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Kostenlos, Open Source
 tags: [education, coding, developer-tools, open-source]
@@ -84,26 +89,26 @@ freeCodeCamp ist kein Abkürzungstrick, sondern ein stabiler Lernpfad. Wer konse
 
 ## FAQ
 
-**1. Ist freeCodeCamp wirklich kostenlos?**  
+**1. Ist freeCodeCamp wirklich kostenlos?**
 Ja, freeCodeCamp ist komplett kostenlos nutzbar und Open Source. Alle Kurse und Zertifikate sind ohne Gebühren verfügbar.
 
-**2. Benötige ich Vorkenntnisse, um mit freeCodeCamp zu starten?**  
+**2. Benötige ich Vorkenntnisse, um mit freeCodeCamp zu starten?**
 Nein, die Plattform ist so aufgebaut, dass auch absolute Anfänger Schritt für Schritt lernen können.
 
-**3. Welche Programmiersprachen werden bei freeCodeCamp gelehrt?**  
+**3. Welche Programmiersprachen werden bei freeCodeCamp gelehrt?**
 Schwerpunkte liegen auf HTML, CSS, JavaScript, React, Node.js und weiteren Webtechnologien.
 
-**4. Gibt es eine Möglichkeit, sich mit anderen Lernenden auszutauschen?**  
+**4. Gibt es eine Möglichkeit, sich mit anderen Lernenden auszutauschen?**
 Ja, freeCodeCamp bietet ein aktives Forum und eine Community, in der Fragen gestellt und Erfahrungen geteilt werden können.
 
-**5. Erhalte ich nach Abschluss eines Kurses ein Zertifikat?**  
+**5. Erhalte ich nach Abschluss eines Kurses ein Zertifikat?**
 Ja, nach erfolgreichem Abschluss bestimmter Module kann man offizielle Zertifikate erhalten.
 
-**6. Kann ich freeCodeCamp auch mobil nutzen?**  
+**6. Kann ich freeCodeCamp auch mobil nutzen?**
 Die Webseite ist mobilfreundlich, sodass man auch mit Smartphones oder Tablets lernen kann.
 
-**7. Wie aktuell sind die Inhalte?**  
+**7. Wie aktuell sind die Inhalte?**
 Die Kurse werden regelmäßig aktualisiert, um aktuelle Webstandards und Technologien abzudecken.
 
-**8. Muss ich Software installieren, um freeCodeCamp zu nutzen?**  
+**8. Muss ich Software installieren, um freeCodeCamp zu nutzen?**
 Nein, alle Übungen können direkt im Browser bearbeitet werden, eine Installation ist nicht nötig.

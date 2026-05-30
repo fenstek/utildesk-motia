@@ -1,6 +1,11 @@
 ---
 slug: affinity-designer
 title: Affinity Designer
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Freemium
 tags:
@@ -97,28 +102,28 @@ When comparing options, Affinity Designer should not only be measured against ve
 
 ## FAQ
 
-**1. Is Affinity Designer suitable for beginners?**  
+**1. Is Affinity Designer suitable for beginners?**
 Yes, the software offers an intuitive user interface and many tutorials, but it is also suitable for those new to vector software.
 
-**2. On which platforms can Affinity Designer be used?**  
+**2. On which platforms can Affinity Designer be used?**
 Affinity Designer is available for Windows, macOS, and iPad.
 
-**3. Do I need a subscription to use Affinity Designer?**  
+**3. Do I need a subscription to use Affinity Designer?**
 No, Affinity Designer can usually be purchased as a one-time fee, and there are also free trial versions available.
 
-**4. Can I open projects from Affinity Designer in other programs?**  
+**4. Can I open projects from Affinity Designer in other programs?**
 Yes, the software supports common file formats like SVG, PDF, EPS, and PSD, making it easy to exchange projects.
 
-**5. Is there a mobile version of Affinity Designer?**  
+**5. Is there a mobile version of Affinity Designer?**
 Yes, a full-featured version for iPad is available and offers similar functionality to the desktop version.
 
-**6. How often are updates for Affinity Designer released?**  
+**6. How often are updates for Affinity Designer released?**
 Affinity regularly updates the software, with new features and bug fixes added at regular intervals.
 
-**7. Can I use Affinity Designer without an internet connection?**  
+**7. Can I use Affinity Designer without an internet connection?**
 Yes, after installation, no continuous internet connection is required.
 
-**8. Is there a way to test Affinity Designer before purchasing?**  
+**8. Is there a way to test Affinity Designer before purchasing?**
 Yes, a free trial version is usually available to test the features before buying.
 
 **9. How should a team test Affinity Designer?**

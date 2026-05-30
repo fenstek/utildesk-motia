@@ -1,6 +1,11 @@
 ---
 slug: grafana
 title: Grafana
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Infrastructure
 price_model: Freemium
 tags: [monitoring, observability, dashboards]
@@ -20,7 +25,7 @@ Der eigentliche Wert eines Grafana-Dashboards liegt nicht in schönen Kurven, so
 Geeignet ist Grafana für DevOps, SRE, Plattformteams, Entwickler, Datenbank- und Infrastrukturverantwortliche. Auch Business-Teams können profitieren, wenn Zeitreihendaten und operative Kennzahlen nachvollziehbar visualisiert werden sollen.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/grafana-editorial.webp" alt="Illustration zu Grafana: Datenkonstellationen leuchten ?ber einem Observability-Kontrollraum" loading="lazy" decoding="async" />
+  <img src="/images/tools/grafana-editorial.webp" alt="Illustration zu Grafana: Datenkonstellationen leuchten Über einem Observability-Kontrollraum" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

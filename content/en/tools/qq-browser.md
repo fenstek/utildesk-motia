@@ -1,6 +1,11 @@
 ---
 slug: qq-browser
 title: QQ Browser
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -79,26 +84,26 @@ QQ Browser offers a freemium model. The basic version is available free of charg
 
 ## FAQ
 
-**1. Is QQ Browser safe for everyday use?**  
+**1. Is QQ Browser safe for everyday use?**
 QQ Browser offers various security features such as protection against phishing and malware that are sufficient for normal use. As with any browser, users should still be careful when visiting unfamiliar websites.
 
-**2. Which operating systems does QQ Browser support?**  
+**2. Which operating systems does QQ Browser support?**
 QQ Browser is primarily available for Windows and Android. Versions for other operating systems may vary depending on region and development.
 
-**3. How does the AI integration work in the browser?**  
+**3. How does the AI integration work in the browser?**
 The AI features help users with text translation, automatic summaries, and improved search queries directly in the browser window to speed up workflows.
 
-**4. Can I synchronize my data between different devices?**  
+**4. Can I synchronize my data between different devices?**
 Yes, QQ Browser offers cloud synchronization, which allows bookmarks, passwords, and settings to be synced across devices.
 
-**5. Is there a mobile version of QQ Browser?**  
+**5. Is there a mobile version of QQ Browser?**
 Yes, QQ Browser is also available as an app for mobile devices, mainly for Android. However, the features may vary slightly.
 
-**6. Is QQ Browser ad-free?**  
+**6. Is QQ Browser ad-free?**
 In the free version, advertisements or recommendations may appear occasionally. Premium versions generally offer an ad-free experience.
 
-**7. How can I install extensions in QQ Browser?**  
+**7. How can I install extensions in QQ Browser?**
 QQ Browser supports many common browser extensions, which can be installed through the corresponding add-on stores, similar to Chromium-based browsers.
 
-**8. Where can I find support or help if I have problems?**  
+**8. Where can I find support or help if I have problems?**
 Support is usually available through the official website, user forums, or the provider's customer service. Availability may vary by region.

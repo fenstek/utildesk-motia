@@ -1,6 +1,11 @@
 ---
 slug: wink
 title: Wink
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Freemium
 tags:
@@ -103,28 +108,28 @@ When comparing options, Wink should not only be measured against very similar pr
 
 ## FAQ
 
-**1. Is Wink suitable for beginners?**  
+**1. Is Wink suitable for beginners?**
 Yes, Wink is also well suited for beginners thanks to its intuitive interface and templates.
 
-**2. What kind of designs can I create with Wink?**  
+**2. What kind of designs can I create with Wink?**
 Wink is suitable for social media graphics, presentations, advertising materials, blog images, and more.
 
-**3. Do I need any special prior knowledge to use Wink?**  
+**3. Do I need any special prior knowledge to use Wink?**
 No, the tool is designed so that users without design experience can also achieve results quickly.
 
-**4. What features are included in the free plan?**  
+**4. What features are included in the free plan?**
 The free plan provides access to basic design tools and a limited number of exports.
 
-**5. Can I work with a team in Wink?**  
+**5. Can I work with a team in Wink?**
 Team features are included in the paid plans and enable collaboration and sharing.
 
-**6. How does the AI-powered image generation work?**  
+**6. How does the AI-powered image generation work?**
 Using text descriptions or templates, the AI automatically generates suitable images and designs.
 
-**7. Are there mobile apps for Wink?**  
+**7. Are there mobile apps for Wink?**
 The availability of mobile apps depends on the provider; often, a web version is optimized for mobile devices.
 
-**8. How secure is my data with Wink?**  
+**8. How secure is my data with Wink?**
 Wink typically uses cloud storage with standard security practices; details may vary depending on the provider.
 
 **9. How should a team test Wink?**

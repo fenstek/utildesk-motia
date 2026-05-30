@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-event-hubs
 title: Microsoft Azure Event Hubs
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Usage-based
 tags:
@@ -94,26 +99,26 @@ Exact prices vary by region and usage intensity. Microsoft also offers different
 
 ## FAQ
 
-**1. What is the main purpose of Microsoft Azure Event Hubs?**  
+**1. What is the main purpose of Microsoft Azure Event Hubs?**
 Event Hubs is used to capture, store, and process large amounts of event data in real time to enable streaming analytics and other use cases.
 
-**2. How does Event Hubs scale as data volume grows?**  
+**2. How does Event Hubs scale as data volume grows?**
 Event Hubs can scale by increasing throughput units and partitions to process more events in parallel.
 
-**3. What security measures does Event Hubs offer?**  
+**3. What security measures does Event Hubs offer?**
 The service supports encryption at rest and in transit, role-based access control, and network isolation through virtual networks.
 
-**4. Can Event Hubs be integrated with other Azure services?**  
+**4. Can Event Hubs be integrated with other Azure services?**
 Yes, Event Hubs can be seamlessly combined with Azure Stream Analytics, Azure Functions, Azure Data Lake, and other services.
 
-**5. Is there a free trial or freemium plan?**  
+**5. Is there a free trial or freemium plan?**
 Depending on the plan, Microsoft Azure Event Hubs offers limited free usage options that can be used for testing.
 
-**6. Which protocols does Event Hubs support?**  
+**6. Which protocols does Event Hubs support?**
 Event Hubs mainly supports AMQP (Advanced Message Queuing Protocol) and HTTPS.
 
-**7. How long is event data stored in Event Hubs?**  
+**7. How long is event data stored in Event Hubs?**
 The standard retention period is a few days depending on the configuration; however, it can be adjusted.
 
-**8. Is Event Hubs suitable for small projects as well?**  
+**8. Is Event Hubs suitable for small projects as well?**
 Event Hubs is primarily designed for large data volumes, but it can also be used for smaller applications depending on the need.

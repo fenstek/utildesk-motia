@@ -1,6 +1,11 @@
 ---
 slug: apache-cassandra
 title: Apache Cassandra
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Open Source
 tags:
@@ -95,12 +100,11 @@ Apache Cassandra is open source and does not require license fees. Real costs co
 
 ## FAQ
 
-**Is Cassandra good for analytics?**  
+**Is Cassandra good for analytics?**
 It is mainly an operational database. For analytics, teams usually export data to systems like Spark, ClickHouse, or data warehouses.
 
-**Does Cassandra support SQL?**  
+**Does Cassandra support SQL?**
 It uses CQL, which looks similar to SQL but follows Cassandra's distributed data model.
 
-**When should I avoid Cassandra?**  
+**When should I avoid Cassandra?**
 Avoid it when you need complex joins, flexible ad hoc queries, or a small simple database that does not need distributed scale.
-

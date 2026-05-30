@@ -1,6 +1,11 @@
 ---
 slug: brave
 title: Brave
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Free
 tags: [browser,privacy,web,ai]
@@ -88,26 +93,26 @@ Brave ist als Browser komplett **kostenlos** nutzbar. Es gibt keine Abonnements,
 
 ## FAQ
 
-**1. Ist Brave wirklich kostenlos?**  
+**1. Ist Brave wirklich kostenlos?**
 Ja, Brave kann komplett kostenlos heruntergeladen und genutzt werden. Es gibt keine Kosten für die Grundfunktionen.
 
-**2. Wie schützt Brave meine Privatsphäre?**  
+**2. Wie schützt Brave meine Privatsphäre?**
 Brave blockiert standardmäßig Tracker und Werbung, die Nutzeraktivitäten verfolgen könnten. Außerdem bietet der Browser einen privaten Modus mit Tor-Unterstützung für noch mehr Anonymität.
 
-**3. Unterstützt Brave Erweiterungen?**  
+**3. Unterstützt Brave Erweiterungen?**
 Brave basiert auf Chromium und unterstützt daher die meisten Chrome-Erweiterungen. Allerdings kann es in seltenen Fällen zu Kompatibilitätsproblemen kommen.
 
-**4. Was ist das Brave Belohnungssystem?**  
+**4. Was ist das Brave Belohnungssystem?**
 Das Belohnungssystem ermöglicht es Nutzern, durch das Ansehen von datenschutzfreundlicher Werbung Token zu verdienen, die sie an Webseiten oder Content-Ersteller weitergeben können. Die Nutzung ist optional.
 
-**5. Auf welchen Plattformen ist Brave verfügbar?**  
+**5. Auf welchen Plattformen ist Brave verfügbar?**
 Brave ist für Windows, macOS, Linux, Android und iOS verfügbar und bietet eine Synchronisationsfunktion zwischen Geräten.
 
-**6. Wie sieht es mit der Sicherheit bei Brave aus?**  
+**6. Wie sieht es mit der Sicherheit bei Brave aus?**
 Brave legt großen Wert auf Sicherheit, indem es Tracking und Malware blockiert und regelmäßige Updates bereitstellt. Der Quellcode ist offen einsehbar, was zusätzliche Transparenz schafft.
 
-**7. Kann ich meine Daten von anderen Browsern zu Brave importieren?**  
+**7. Kann ich meine Daten von anderen Browsern zu Brave importieren?**
 Ja, Brave bietet Importfunktionen für Lesezeichen, Passwörter und Einstellungen von gängigen Browsern wie Chrome oder Firefox.
 
-**8. Gibt es Nachteile beim Einsatz von Brave?**  
+**8. Gibt es Nachteile beim Einsatz von Brave?**
 Manche Webseiten funktionieren möglicherweise nicht einwandfrei, da Brave aggressive Blocker nutzt. In solchen Fällen sind Anpassungen oder das Deaktivieren bestimmter Funktionen erforderlich.

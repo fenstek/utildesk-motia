@@ -1,6 +1,11 @@
 ---
 slug: skater
 title: Skater
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -77,26 +82,26 @@ Skater helps make models feel less mysterious. It still does not replace data un
 
 ## FAQ
 
-**1. Which sports does Skater support?**  
+**1. Which sports does Skater support?**
 Skater is versatile and, depending on the provider, supports a wide range of sports, especially those with a high level of movement such as figure skating, ice hockey, soccer, or athletics.
 
-**2. Do I need special hardware to use Skater?**  
+**2. Do I need special hardware to use Skater?**
 For optimal use, a camera or compatible wearables are recommended for data collection. However, some features can also be used with standard videos or manual inputs.
 
-**3. Is Skater suitable for beginners?**  
+**3. Is Skater suitable for beginners?**
 Yes, the tool offers different difficulty levels and user interfaces that are suitable for both beginners and professionals.
 
-**4. How secure is my data with Skater?**  
+**4. How secure is my data with Skater?**
 Data protection and security depend on the respective provider. Reputable platforms use modern security standards and encryption.
 
-**5. Can I use Skater as a team?**  
+**5. Can I use Skater as a team?**
 Many versions offer team management and collaborative evaluation features, ideal for coaches and teams.
 
-**6. Is there a free trial version?**  
+**6. Is there a free trial version?**
 This varies by provider. Some offer freemium models or time-limited trial periods.
 
-**7. How accurate are Skater's analyses?**  
+**7. How accurate are Skater's analyses?**
 Accuracy depends on the quality of the input data and the AI technology used. In general, the tools provide precise and helpful evaluations.
 
-**8. What technical requirements are there?**  
+**8. What technical requirements are there?**
 Depending on the solution, different operating systems and devices are supported. Details can be found in the respective provider information.

@@ -1,6 +1,11 @@
 ---
 slug: anki
 title: Anki
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -106,28 +111,28 @@ Anki is strongest when it reduces friction in an existing workflow instead of cr
 
 ## FAQ
 
-**1. Is Anki suitable for beginners?**  
+**1. Is Anki suitable for beginners?**
 Yes, Anki can be used by beginners, but requires an adaptation to the interface and the principle of learning cards.
 
-**2. On which devices can I use Anki?**  
+**2. On which devices can I use Anki?**
 Anki is available for Windows, macOS, Linux, Android, and iOS. The synchronization allows learning on multiple devices.
 
-**3. Does Anki cost money?**  
+**3. Does Anki cost money?**
 The desktop version is free and open-source. The Android app is usually free, while the iOS app requires a one-time payment.
 
-**4. How does the Spaced Repetition System work?**  
+**4. How does the Spaced Repetition System work?**
 The system adjusts the repetition intervals automatically based on the individual learning progress to minimize forgetting.
 
-**5. Can I use pre-made learning sets?**  
+**5. Can I use pre-made learning sets?**
 Yes, there is a large community that provides free pre-made learning cards.
 
-**6. How do I create my own learning cards?**  
+**6. How do I create my own learning cards?**
 Anki offers an intuitive interface for creating cards with text, images, audio, and more.
 
-**7. Do I need the internet to use Anki?**  
+**7. Do I need the internet to use Anki?**
 The desktop and mobile apps can be used offline. For synchronization, an internet connection is required.
 
-**8. Is there support or help with problems?**  
+**8. Is there support or help with problems?**
 There are extensive online documentation, forums, and an active community that provides support.
 
 ---

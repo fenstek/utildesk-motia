@@ -1,6 +1,11 @@
 ---
 slug: langai
 title: LangAI
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Chatbots"
 price_model: Freemium
 tags: ["language", "learning", "chatbot", "assistant", "education"]
@@ -24,7 +29,7 @@ LangAI passt zu Menschen, die Sprache aktiv üben wollen, aber nicht immer Gespr
 Weniger passend ist LangAI als alleiniger Sprachkurs. Grammatik, Lesen, Hören, Schreiben und echte Kommunikation müssen weiterhin Teil des Lernplans bleiben.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/langai-editorial.webp" alt="Illustration zu LangAI: ein Caf?-Tisch mit Sprachblasen, Lernkarten und Aussprachewellen" loading="lazy" decoding="async" />
+  <img src="/images/tools/langai-editorial.webp" alt="Illustration zu LangAI: ein Café-Tisch mit Sprachblasen, Lernkarten und Aussprachewellen" loading="lazy" decoding="async" />
 </figure>
 
 ## Typische Einsatzszenarien

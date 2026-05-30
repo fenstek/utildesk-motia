@@ -1,6 +1,11 @@
 ---
 slug: frameforge
 title: FrameForge
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -96,26 +101,26 @@ The pricing of FrameForge varies depending on the provider and chosen plan. Ther
 
 ## FAQ
 
-**1. Is FrameForge suitable for beginners?**  
+**1. Is FrameForge suitable for beginners?**
 FrameForge offers many professional features, making it recommended to invest time in learning the software. For beginners, tutorials or training may be helpful.
 
-**2. Can I use FrameForge on Mac and Windows?**  
+**2. Can I use FrameForge on Mac and Windows?**
 Yes, the software is generally available for both operating systems; however, the specific system requirements should be checked with the provider.
 
-**3. Is there a free trial version?**  
+**3. Is there a free trial version?**
 Many providers offer a trial version to test the features before purchasing. Details can be found on the official website.
 
-**4. How does FrameForge support team collaboration?**  
+**4. How does FrameForge support team collaboration?**
 FrameForge offers features like joint project work, comment functionality, and versioning to facilitate team communication.
 
-**5. What export formats are supported?**  
+**5. What export formats are supported?**
 Storyboards can be exported as images, videos, or PDFs for various purposes.
 
-**6. Do I need special hardware for FrameForge?**  
+**6. Do I need special hardware for FrameForge?**
 For optimal use, a powerful computer with a modern graphics card is recommended to display 3D visualizations smoothly.
 
-**7. Can FrameForge be integrated with other film production tools?**  
+**7. Can FrameForge be integrated with other film production tools?**
 Depending on the plan and provider, there may be interfaces with other tools, such as importing screenplays or exporting for editing software.
 
-**8. How secure are my projects in FrameForge?**  
+**8. How secure are my projects in FrameForge?**
 The security of projects depends on the platform; cloud backups and encryption are often offered to protect projects.

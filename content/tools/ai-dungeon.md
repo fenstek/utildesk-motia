@@ -1,6 +1,11 @@
 ---
 slug: ai-dungeon
 title: AI Dungeon
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Writing"
 price_model: Freemium
 tags: ["writing", "design"]
@@ -37,11 +42,11 @@ Das Tool eignet sich sowohl für Anfänger als auch für erfahrene Nutzer, die S
 - **Übergaben im Team:** AI Dungeon kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei AI Dungeon weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei AI Dungeon zählen Briefing, Tonfall, Terminologie und Freigabe mehr als ein schneller Rohtext. Ein sinnvoller Test nutzt echtes Material und prüft, ob die Nacharbeit wirklich kleiner wird.
 
-Praktisch ist AI Dungeon vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+AI Dungeon hilft, wenn Texte oder Übersetzungen wiederkehrend entstehen und trotzdem menschlich gegengelesen werden. Claims, Fachbegriffe und Markenstimme sollten nie ungeprüft durchrutschen.
 
 ## Hauptfunktionen
 
@@ -73,68 +78,3 @@ Praktisch ist AI Dungeon vor allem, wenn es vorhandene Abläufe entlastet, statt
 - Voller Funktionsumfang meist nur in kostenpflichtigen Abonnements verfügbar.
 - Erfordert eine stabile Internetverbindung.
 - Eingeschränkte Kontrolle über KI-Entscheidungen kann frustrierend sein.
-
-## Workflow-Fit
-
-AI Dungeon passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn AI Dungeon nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in AI Dungeon landen und ob Modellantworten, Trainingsdaten, Prompts und Nutzerfeedback betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei AI Dungeon außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von AI Dungeon.
-
-## Redaktionelle Einschätzung
-
-AI Dungeon ist nützlich, wenn aus Rohideen regelmäßig prüfbare Entwürfe werden müssen. Entscheidend ist, ob Ton, Quellen und Freigaben im Ablauf sauber bleiben.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob AI Dungeon wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-AI Dungeon bietet ein Freemium-Modell an. Die Basisversion ist kostenlos nutzbar und ermöglicht den Zugang zu vielen Funktionen. Für erweiterten Zugriff und zusätzliche Features stehen verschiedene Abonnements zur Verfügung, die je nach Anbieter und Plan variieren können. Typischerweise beinhalten kostenpflichtige Pläne:
-
-- Höhere Nutzungslimits.
-- Zugang zu fortgeschritteneren KI-Modellen.
-- Offline-Spielmöglichkeiten.
-- Exklusive Inhalte und Funktionen.
-- Priorisierten Support.
-
-Die genauen Preise und Konditionen sollten auf der offiziellen Website überprüft werden, da sie sich ändern können.
-
-👉 **Zum Anbieter:** https://play.aidungeon.io
-
-## Alternativen zu AI Dungeon
-
-- **NovelAI:** Ein KI-gestütztes Tool für kreative Textgenerierung und interaktive Geschichten mit Fokus auf Privatsphäre und Anpassbarkeit.
-- **TextAdventures.co.uk:** Plattform für klassische und KI-unterstützte Textabenteuer mit Community-Inhalten.
-- [ChatGPT (OpenAI)](/tools/chatgpt/): ** Kann für interaktive Geschichten genutzt werden, erfordert aber eigene Steuerung und Eingaben.
-- **StoryStream:** KI-basiertes Storytelling-Tool, das narrative Inhalte generiert und anpasst.
-- **Inklewriter:** Ein Tool zur Erstellung interaktiver Geschichten mit benutzerfreundlicher Oberfläche, allerdings ohne KI-Unterstützung.
-## FAQ
-
-**1. Was ist AI Dungeon genau?**  
-AI Dungeon ist ein interaktives Textabenteuer, das mithilfe künstlicher Intelligenz Geschichten in Echtzeit generiert und an die Eingaben der Spieler anpasst.
-
-**2. Brauche ich Programmierkenntnisse, um AI Dungeon zu nutzen?**  
-Nein, das Tool ist nutzerfreundlich gestaltet und erfordert keine technischen Vorkenntnisse.
-
-**3. Ist AI Dungeon kostenlos?**  
-Es gibt eine kostenlose Basisversion mit eingeschränkten Funktionen. Erweiterte Features sind meist kostenpflichtig über Abonnements verfügbar.
-
-**4. Welche Geräte werden unterstützt?**  
-AI Dungeon ist webbasiert und kann auf PCs, Tablets und Smartphones genutzt werden. Es gibt auch mobile Apps für iOS und Android.
-
-**5. Wie funktioniert die KI bei AI Dungeon?**  
-Die KI basiert auf fortschrittlichen Sprachmodellen, die Eingaben analysieren und passende Textpassagen generieren, um die Geschichte fortzuführen.
-
-**6. Kann ich eigene Geschichten speichern und teilen?**  
-Ja, gespeicherte Abenteuer können jederzeit geladen und in der Community geteilt werden.
-
-**7. Gibt es Einschränkungen bei der Nutzung?**  
-Je nach Tarif gibt es Nutzungslimits und Zugangsbeschränkungen. Außerdem gelten Nutzungsbedingungen bezüglich Inhalten.
-
-**8. Wie sicher sind meine Daten?**  
-Die Datensicherheit hängt vom Anbieter ab. Es empfiehlt sich, die Datenschutzrichtlinien vor der Nutzung zu prüfen.

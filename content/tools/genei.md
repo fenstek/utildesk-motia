@@ -1,6 +1,11 @@
 ---
 slug: genei
 title: Genei
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI Writing
 price_model: Freemium
 tags: ["writing"]
@@ -16,6 +21,12 @@ popularity: 90
 Genei ist ein KI-gestütztes Recherche- und Zusammenfassungswerkzeug für Nutzer:innen, die lange Texte schneller erfassen, strukturieren und in Notizen überführen müssen. Statt eine Quelle nur oberflächlich zu kürzen, soll Genei dabei helfen, zentrale Aussagen, Begriffe und Abschnitte sichtbar zu machen. Der Nutzen entsteht vor allem dann, wenn viele Dokumente gelesen werden müssen und eine erste Ordnung nötig ist, bevor die eigentliche Bewertung beginnt.
 
 Im Alltag ist Genei weniger ein Schreibautomat als ein Lesebeschleuniger. Studierende, Forschende, Journalist:innen, Analyst:innen und Content-Teams können mit solchen Werkzeugen schneller entscheiden, welche Texte wirklich relevant sind, welche Argumente geprüft werden müssen und wo Lücken bleiben. Die Zusammenfassung darf aber nie die Originalquelle ersetzen, wenn Zitate, Methoden oder genaue Schlussfolgerungen wichtig sind.
+
+## Redaktionelle Einordnung
+
+Bei Genei entscheidet die Nachvollziehbarkeit: Quellen, Notizen, Codes, Suchwege oder Auswertungsschritte müssen später noch erklärbar sein. Wir würden mit einem kleinen echten Forschungs- oder Analysefall starten.
+
+Genei lohnt sich, wenn es Material ordnet und Entscheidungen sichtbar macht. Es ersetzt aber keine fachliche Bewertung und keine saubere Methode.
 
 ## Für wen ist Genei geeignet?
 

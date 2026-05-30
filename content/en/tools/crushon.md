@@ -1,6 +1,11 @@
 ---
 slug: crushon
 title: CrushOn
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -103,28 +108,28 @@ When comparing options, CrushOn should not only be measured against very similar
 
 ## FAQ
 
-**1. Is CrushOn really free to use?**  
+**1. Is CrushOn really free to use?**
 Yes, CrushOn offers a free basic version with limited features. Enhanced features are available for a fee.
 
-**2. How secure are my data with CrushOn?**  
+**2. How secure are my data with CrushOn?**
 The platform prioritizes data security and uses encryption technologies. More detailed information can be found in the data protection policies.
 
-**3. Can CrushOn replace professional advice?**  
+**3. Can CrushOn replace professional advice?**
 No, CrushOn is not a substitute for professional psychological or medical advice.
 
-**4. On which devices can I use CrushOn?**  
+**4. On which devices can I use CrushOn?**
 CrushOn is available on smartphones, tablets, and desktop computers, usually through web and apps.
 
-**5. Do I need an internet connection?**  
+**5. Do I need an internet connection?**
 Yes, an active internet connection is required for the use of CrushOn.
 
-**6. How can I personalize my interaction with CrushOn?**  
+**6. How can I personalize my interaction with CrushOn?**
 The platform offers settings to customize the chatbot's personality and topic preferences.
 
-**7. Are there any limitations on chat duration in the free plan?**  
+**7. Are there any limitations on chat duration in the free plan?**
 Depending on the tariff, chat lengths or message counts in the free plan may be limited.
 
-**8. How does CrushOn differ from other chatbots?**  
+**8. How does CrushOn differ from other chatbots?**
 CrushOn focuses particularly on emotional companion character and individual customization options.
 
 **9. How should a team test CrushOn?**

@@ -1,6 +1,11 @@
 ---
 slug: runway
 title: Runway
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -113,26 +118,26 @@ Runway offers a freemium model that allows free use with limited functionality. 
 - **Synthesia**: A platform for creating AI-generated videos with virtual presenters.
 ## FAQ
 
-**1. Do I need programming knowledge to use Runway?**  
+**1. Do I need programming knowledge to use Runway?**
 Runway is designed so that even users without programming knowledge can use the most important features. However, technical knowledge is helpful for advanced customization and API use.
 
-**2. What types of AI models can I use in Runway?**  
+**2. What types of AI models can I use in Runway?**
 Runway supports various pretrained models for image and video processing, style transfer, object recognition, and more. You can also train and integrate your own models.
 
-**3. Is Runway suitable for professional use?**  
+**3. Is Runway suitable for professional use?**
 Yes, Runway offers professional features and performance options designed for use in commercial projects.
 
-**4. How does collaboration work in Runway?**  
+**4. How does collaboration work in Runway?**
 Projects can be shared and edited together in the cloud, which simplifies teamwork and feedback processes.
 
-**5. What hardware requirements are there?**  
+**5. What hardware requirements are there?**
 Because Runway is cloud-based, you do not need especially powerful local devices. A stable internet connection is important, however.
 
-**6. Is there a mobile app for Runway?**  
+**6. Is there a mobile app for Runway?**
 At the moment, the focus is on the web platform. Information about mobile apps can be found on the official website.
 
-**7. How secure is my data with Runway?**  
+**7. How secure is my data with Runway?**
 Runway uses common security standards for cloud services. Details about data processing should be reviewed in the privacy policy.
 
-**8. Can I try Runway for free?**  
+**8. Can I try Runway for free?**
 Yes, the freemium model allows you to try many features for free before upgrading to a paid plan.

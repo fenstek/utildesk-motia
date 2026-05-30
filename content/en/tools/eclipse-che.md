@@ -1,6 +1,11 @@
 ---
 slug: eclipse-che
 title: Eclipse Che
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Plan-based
 tags:
@@ -107,26 +112,26 @@ Eclipse Che is available for free as an open-source project. The use in the clou
 
 ## FAQ
 
-**1. Is Eclipse Che free?**  
+**1. Is Eclipse Che free?**
 Eclipse Che itself is open-source and free to use. Costs may arise from using a hosted service or commercial offerings.
 
-**2. Do I need experience with Kubernetes to use Eclipse Che?**  
+**2. Do I need experience with Kubernetes to use Eclipse Che?**
 It is possible to use Eclipse Che without deep Kubernetes knowledge, especially when using a hosted service. For self-installation, Kubernetes knowledge is helpful.
 
-**3. Can I install Eclipse Che locally?**  
+**3. Can I install Eclipse Che locally?**
 Yes, Eclipse Che can be installed locally or on your own servers, especially in Kubernetes clusters.
 
-**4. Which programming languages does Eclipse Che support?**  
+**4. Which programming languages does Eclipse Che support?**
 Eclipse Che supports numerous programming languages, including Java, JavaScript, Python, Go, C++, and many more – depending on the installed plugins.
 
-**5. How does collaboration work in Eclipse Che?**  
+**5. How does collaboration work in Eclipse Che?**
 Teams can share workspaces and work simultaneously in the cloud-based IDE, enabling seamless collaboration.
 
-**6. What security features does Eclipse Che offer?**  
+**6. What security features does Eclipse Che offer?**
 Eclipse Che offers container isolation, role-based access control, and secure authentication mechanisms.
 
-**7. Is Eclipse Che suitable for individual developers?**  
+**7. Is Eclipse Che suitable for individual developers?**
 Yes, individual developers can benefit from the flexible, cloud-based workflow, especially when working remotely.
 
-**8. What infrastructure do I need for self-installation?**  
+**8. What infrastructure do I need for self-installation?**
 For self-installation, a Kubernetes cluster is recommended, as Eclipse Che is heavily based on containerized environments.

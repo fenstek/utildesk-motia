@@ -1,6 +1,11 @@
 ---
 slug: izotope-ozone
 title: iZotope Ozone
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Subscription, one-time payment, depending on the plan'
 tags:
@@ -104,28 +109,28 @@ A useful comparison for iZotope Ozone starts with the goal. Only then does it be
 
 ## FAQ
 
-**1. Do I need special hardware for iZotope Ozone?**  
+**1. Do I need special hardware for iZotope Ozone?**
 A modern computer is recommended to avoid delays in audio processing. Special hardware is not strictly required.
 
-**2. Can I use iZotope Ozone without prior experience?**  
+**2. Can I use iZotope Ozone without prior experience?**
 Yes, especially the Mastering Assistant and automatic features make it easier for beginners to get started.
 
-**3. Is iZotope Ozone compatible with all DAWs?**  
+**3. Is iZotope Ozone compatible with all DAWs?**
 Ozone supports common DAW formats such as VST, AU, and AAX, and is therefore compatible with most digital audio workstations.
 
-**4. Is there a free version or trial period?**  
+**4. Is there a free version or trial period?**
 Depending on the provider, there is often a free trial version with limited functionality or time-limited access.
 
-**5. How does Ozone differ from other mastering tools?**  
+**5. How does Ozone differ from other mastering tools?**
 Ozone combines AI-powered features with an extensive set of professional modules, making it especially flexible and powerful.
 
-**6. Can I use Ozone for all kinds of music genres?**  
+**6. Can I use Ozone for all kinds of music genres?**
 Yes, the versatile tools are suitable for all music styles and can be adapted flexibly.
 
-**7. Are updates provided regularly?**  
+**7. Are updates provided regularly?**
 iZotope regularly releases updates that include new features and improvements.
 
-**8. Does Ozone support multitrack mastering?**  
+**8. Does Ozone support multitrack mastering?**
 Ozone is primarily designed for mastering individual stereo tracks, but it offers options for batch processing multiple files.
 
 ---

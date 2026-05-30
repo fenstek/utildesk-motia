@@ -1,6 +1,11 @@
 ---
 slug: ionic-framework
 title: Ionic Framework
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -102,28 +107,28 @@ Alternatives to Ionic Framework should be chosen by the concrete work problem. I
 
 ## FAQ
 
-**1. Is Ionic Framework suitable for beginners?**  
+**1. Is Ionic Framework suitable for beginners?**
 Yes, especially if you already have experience with web technologies such as HTML, CSS, and JavaScript. There are many resources and tutorials that make it easier to get started.
 
-**2. Can I use native device features with Ionic Framework?**  
+**2. Can I use native device features with Ionic Framework?**
 Yes, through plugins and integration with Capacitor or Cordova, many native features such as camera, GPS, or push notifications can be used.
 
-**3. Which programming languages are used for Ionic?**  
+**3. Which programming languages are used for Ionic?**
 Primarily JavaScript or TypeScript in combination with frameworks such as Angular, React, or Vue.
 
-**4. Is Ionic Framework free?**  
+**4. Is Ionic Framework free?**
 The core features are open source and free to use. There are paid add-on services and support options.
 
-**5. How good is the performance of Ionic apps?**  
+**5. How good is the performance of Ionic apps?**
 For most applications, performance is sufficient. For very graphics-intensive or complex apps, native development may offer advantages.
 
-**6. Which platforms are supported?**  
+**6. Which platforms are supported?**
 Ionic enables development for iOS, Android, as well as web apps and Progressive Web Apps (PWA).
 
-**7. What about updates and the community?**  
+**7. What about updates and the community?**
 Ionic has an active developer community and is updated regularly, which ensures security and new features.
 
-**8. Can I publish Ionic apps in app stores?**  
+**8. Can I publish Ionic apps in app stores?**
 Yes, Ionic apps can be packaged like native apps and published in the respective app stores.
 
 **9. How should a team test Ionic Framework?**

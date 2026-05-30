@@ -1,6 +1,11 @@
 ---
 slug: adobe-firefly
 title: Adobe Firefly
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Freemium
 tags: ["ai", "design"]
@@ -82,26 +87,26 @@ Firefly ist kein Ersatz für Art Direction, sondern ein Beschleuniger für Entwu
 
 ## FAQ
 
-**1. Was ist Adobe Firefly?**  
+**1. Was ist Adobe Firefly?**
 Adobe Firefly ist ein KI-gestütztes Design-Tool von Adobe, das die Erstellung von Bildern und Grafiken durch einfache Texteingaben und automatische Anpassungen erleichtert.
 
-**2. Ist Adobe Firefly kostenlos?**  
+**2. Ist Adobe Firefly kostenlos?**
 Das Tool bietet ein Freemium-Modell mit kostenlosen Basisfunktionen. Für erweiterte Features sind kostenpflichtige Pläne verfügbar.
 
-**3. Benötige ich Adobe Creative Cloud, um Firefly zu nutzen?**  
+**3. Benötige ich Adobe Creative Cloud, um Firefly zu nutzen?**
 Firefly ist eng in das Adobe-Ökosystem integriert, eine Creative Cloud-Mitgliedschaft kann für bestimmte Funktionen erforderlich sein.
 
-**4. Für welche Anwendungsbereiche eignet sich Firefly?**  
+**4. Für welche Anwendungsbereiche eignet sich Firefly?**
 Firefly eignet sich für Grafikdesign, Marketing, Content-Erstellung, Illustration und viele kreative Projekte.
 
-**5. Wie funktioniert die KI-Bildgenerierung?**  
+**5. Wie funktioniert die KI-Bildgenerierung?**
 Durch Texteingaben erzeugt die KI passende Bilder, die anschließend bearbeitet oder angepasst werden können.
 
-**6. Kann ich die erstellten Bilder kommerziell nutzen?**  
+**6. Kann ich die erstellten Bilder kommerziell nutzen?**
 Die Nutzung der Bilder hängt von den Lizenzbedingungen ab, die Adobe für Firefly festlegt. Es ist ratsam, diese vor der kommerziellen Verwendung zu prüfen.
 
-**7. Gibt es eine Desktop-Version von Adobe Firefly?**  
+**7. Gibt es eine Desktop-Version von Adobe Firefly?**
 Derzeit ist Firefly hauptsächlich als Cloud-basierter Dienst verfügbar, der über Webbrowser und in Adobe-Anwendungen genutzt werden kann.
 
-**8. Welche Sprachen werden unterstützt?**  
+**8. Welche Sprachen werden unterstützt?**
 Adobe Firefly unterstützt mehrere Sprachen; für produktive Arbeit sollte geprüft werden, wie gut Prompts, UI und Teamprozesse zur eigenen Sprache passen.

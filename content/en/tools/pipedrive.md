@@ -1,6 +1,11 @@
 ---
 slug: pipedrive
 title: Pipedrive
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: 'Subscription, depending on plan'
 tags:
@@ -103,28 +108,28 @@ A comparison for Pipedrive should go beyond feature lists. The key question is w
 
 ## FAQ
 
-**1. Is Pipedrive suitable for small businesses?**  
+**1. Is Pipedrive suitable for small businesses?**
 Yes, Pipedrive is designed especially for small and medium-sized businesses and offers flexible plans that can be adapted to different team sizes.
 
-**2. Does Pipedrive have a free version?**  
+**2. Does Pipedrive have a free version?**
 Pipedrive does not offer a permanently free version, but it does provide a free trial so you can test the features before buying.
 
-**3. Which integrations does Pipedrive support?**  
+**3. Which integrations does Pipedrive support?**
 Pipedrive can connect with many tools, including email clients, calendars, marketing software, and other CRM or ERP systems.
 
-**4. How does Pipedrive support sales automation?**  
+**4. How does Pipedrive support sales automation?**
 With automated workflows, recurring tasks such as follow-ups, appointment scheduling, or lead qualification can be automated.
 
-**5. Can Pipedrive be used on mobile?**  
+**5. Can Pipedrive be used on mobile?**
 Yes, Pipedrive offers a mobile app for iOS and Android that provides access to all important features while on the go.
 
-**6. How secure is data in Pipedrive?**  
+**6. How secure is data in Pipedrive?**
 Pipedrive uses common security standards and encrypted connections to protect customer data.
 
-**7. Is Pipedrive suitable for international teams?**  
+**7. Is Pipedrive suitable for international teams?**
 Yes, Pipedrive supports multiple languages and currencies, which makes it easier to use in international sales organizations.
 
-**8. How is pricing structured at Pipedrive?**  
+**8. How is pricing structured at Pipedrive?**
 Prices are based on the selected subscription plan and the number of users, with several tiers offering increasing levels of functionality.
 
 **9. How should a team test Pipedrive?**

@@ -1,6 +1,11 @@
 ---
 slug: azure-stream-analytics
 title: Azure Stream Analytics
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Nutzungsbasiert
 tags: [data, analytics, streaming, cloud]
@@ -80,26 +85,26 @@ Azure Stream Analytics verwendet ein nutzungsbasiertes Preismodell. Die Kosten r
 
 ## FAQ
 
-**1. Was ist Azure Stream Analytics?**  
+**1. Was ist Azure Stream Analytics?**
 Azure Stream Analytics ist ein cloudbasierter Dienst zur Echtzeitverarbeitung und Analyse von Streaming-Daten, der vor allem für IoT und zeitkritische Anwendungen genutzt wird.
 
-**2. Wie erfolgt die Abrechnung bei Azure Stream Analytics?**  
+**2. Wie erfolgt die Abrechnung bei Azure Stream Analytics?**
 Die Abrechnung erfolgt nutzungsbasiert, basierend auf der Anzahl der Streaming Units (SUs) sowie dem verarbeiteten Datenvolumen.
 
-**3. Welche Datenquellen können mit Azure Stream Analytics verbunden werden?**  
+**3. Welche Datenquellen können mit Azure Stream Analytics verbunden werden?**
 Typische Datenquellen sind Azure Event Hubs, Azure IoT Hub, Azure Blob Storage sowie weitere Dienste, die Streaming-Daten bereitstellen.
 
-**4. Benötige ich spezielle Programmierkenntnisse, um Azure Stream Analytics zu nutzen?**  
+**4. Benötige ich spezielle Programmierkenntnisse, um Azure Stream Analytics zu nutzen?**
 Grundkenntnisse in SQL sind hilfreich, da das Tool eine SQL-ähnliche Abfragesprache verwendet, die relativ leicht zu erlernen ist.
 
-**5. Kann Azure Stream Analytics mit anderen Azure-Diensten kombiniert werden?**  
+**5. Kann Azure Stream Analytics mit anderen Azure-Diensten kombiniert werden?**
 Ja, es lässt sich nahtlos in viele Azure-Dienste wie Power BI, Azure Functions oder Azure SQL integrieren.
 
-**6. Ist Azure Stream Analytics für kleine Unternehmen geeignet?**  
+**6. Ist Azure Stream Analytics für kleine Unternehmen geeignet?**
 Ja, durch das nutzungsbasierte Preismodell können auch kleine Unternehmen den Dienst flexibel und kosteneffizient nutzen.
 
-**7. Wie skaliert Azure Stream Analytics bei steigenden Datenmengen?**  
+**7. Wie skaliert Azure Stream Analytics bei steigenden Datenmengen?**
 Der Dienst passt die Anzahl der Streaming Units automatisch an, um eine konstante Leistung sicherzustellen.
 
-**8. Gibt es eine kostenlose Testversion von Azure Stream Analytics?**  
+**8. Gibt es eine kostenlose Testversion von Azure Stream Analytics?**
 Microsoft bietet je nach Plan und Region oft kostenlose Kontingente oder Testzugänge an; genaue Details sollten beim Anbieter geprüft werden.

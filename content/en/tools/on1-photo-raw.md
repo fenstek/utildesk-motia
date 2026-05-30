@@ -1,6 +1,11 @@
 ---
 slug: on1-photo-raw
 title: ON1 Photo RAW
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Subscription
 tags:
@@ -94,28 +99,28 @@ When comparing options, ON1 Photo RAW should not only be measured against very s
 
 ## FAQ
 
-**1. Does ON1 Photo RAW support all common RAW formats?**  
+**1. Does ON1 Photo RAW support all common RAW formats?**
 Yes, the software supports a wide range of RAW formats from major camera manufacturers, and the list is updated regularly.
 
-**2. Can I use ON1 Photo RAW without an internet connection?**  
+**2. Can I use ON1 Photo RAW without an internet connection?**
 The main features are available offline, although an internet connection is required for activation and updates.
 
-**3. Is there a free trial version?**  
+**3. Is there a free trial version?**
 Depending on the provider, a time-limited trial version is often offered so you can test the features before subscribing.
 
-**4. Is ON1 Photo RAW suitable for beginners?**  
+**4. Is ON1 Photo RAW suitable for beginners?**
 Yes, the software offers a user-friendly interface and many automatic tools that make it easier for beginners to get started.
 
-**5. How does ON1 Photo RAW differ from Adobe Lightroom?**  
+**5. How does ON1 Photo RAW differ from Adobe Lightroom?**
 ON1 Photo RAW offers an integrated all-in-one solution focused on non-destructive editing and AI features, while Lightroom places more emphasis on cloud integration and the Adobe ecosystem.
 
-**6. Can I continue editing my images in other programs?**  
+**6. Can I continue editing my images in other programs?**
 Yes, ON1 Photo RAW supports export to common formats that can be used in other image editing programs.
 
-**7. What system requirements does ON1 Photo RAW have?**  
+**7. What system requirements does ON1 Photo RAW have?**
 Requirements vary by version; in general, current Windows or macOS systems with sufficient RAM and graphics capability are recommended.
 
-**8. Are updates included in the subscription?**  
+**8. Are updates included in the subscription?**
 Yes, updates and new features are generally included in the subscription and provided regularly.
 
 **9. How should a team test ON1 Photo RAW?**

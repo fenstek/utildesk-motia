@@ -1,6 +1,11 @@
 ---
 slug: adapt-learning
 title: Adapt Learning
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Open Source
 tags: [education, authoring, content, open-source]
@@ -28,11 +33,11 @@ Adapt Learning richtet sich in erster Linie an Entwickler, E-Learning-Designer u
 - **Übergaben im Team:** Adapt Learning kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Adapt Learning weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Adapt Learning zählen Briefing, Tonfall, Terminologie und Freigabe mehr als ein schneller Rohtext. Ein sinnvoller Test nutzt echtes Material und prüft, ob die Nacharbeit wirklich kleiner wird.
 
-Praktisch ist Adapt Learning vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Adapt Learning hilft, wenn Texte oder Übersetzungen wiederkehrend entstehen und trotzdem menschlich gegengelesen werden. Claims, Fachbegriffe und Markenstimme sollten nie ungeprüft durchrutschen.
 
 ## Hauptfunktionen
 
@@ -65,59 +70,3 @@ Praktisch ist Adapt Learning vor allem, wenn es vorhandene Abläufe entlastet, s
 - Einarbeitungszeit für Nutzer ohne Entwicklerhintergrund kann höher sein.
 - Hosting und Wartung liegen in der Verantwortung des Anwenders.
 - Eingeschränkte vorgefertigte Templates im Vergleich zu kommerziellen Lösungen.
-
-## Workflow-Fit
-
-Adapt Learning passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Adapt Learning nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Adapt Learning landen und ob Quellcode, Logs, Kundendaten und technische Metadaten betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Adapt Learning außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Adapt Learning.
-
-## Redaktionelle Einschätzung
-
-Adapt Learning passt nur dann gut, wenn Entwicklung, Betrieb und Übergabe klar geregelt sind. Ein sinnvoller Test zeigt, ob Ergebnisse reproduzierbar bleiben und andere Rollen später ohne Ratespiel weiterarbeiten können.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Adapt Learning wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Adapt Learning ist eine Open-Source-Plattform und kann kostenlos genutzt werden. Es fallen keine Lizenzgebühren an. Kosten können jedoch für Hosting, Anpassungen, Support oder Schulungen entstehen, je nach individuellem Bedarf und Anbieter. Einige Dienstleister bieten darüber hinaus kostenpflichtige Services oder Hosting-Pakete an.
-
-## Alternativen zu Adapt Learning
-
-- **Articulate Storyline:** Kommerzielles Authoring-Tool mit umfangreichen Funktionen für interaktive Lerninhalte.
-- **Adobe Captivate:** Professionelle Lösung für responsive E-Learning-Erstellung mit Fokus auf Multimedia.
-- **H5P:** Open-Source-Plattform zur Erstellung interaktiver HTML5-Inhalte, einfach zu integrieren.
-- **Lectora:** Authoring-Tool mit Fokus auf Compliance und mobile Lerninhalte.
-- **iSpring Suite:** Benutzerfreundliches Tool zur Umwandlung von PowerPoint in E-Learning-Kurse.
-
-## FAQ
-
-**1. Ist Adapt Learning für Anfänger geeignet?**  
-Adapt Learning richtet sich primär an Nutzer mit technischem Hintergrund oder Entwickler, die bereit sind, sich in die Plattform einzuarbeiten. Für absolute Anfänger kann die Lernkurve steil sein.
-
-**2. Welche technischen Voraussetzungen gibt es?**  
-Für den Betrieb wird ein Webserver benötigt, der Node.js unterstützt. Grundkenntnisse in Webentwicklung sind hilfreich für Installation und Anpassungen.
-
-**3. Kann ich Adapt Learning in mein bestehendes LMS integrieren?**  
-Ja, Adapt Learning unterstützt gängige Standards wie SCORM und xAPI, die eine Integration in viele Lernmanagementsysteme ermöglichen.
-
-**4. Wie sieht es mit dem Support aus?**  
-Da es sich um eine Open-Source-Lösung handelt, steht primär Community-Support zur Verfügung. Professionelle Dienstleister bieten optional kostenpflichtigen Support an.
-
-**5. Gibt es vorgefertigte Templates oder Themes?**  
-Es gibt einige kostenlose und von der Community erstellte Templates, jedoch ist die Auswahl begrenzt im Vergleich zu kommerziellen Produkten.
-
-**6. Kann ich meine Inhalte mehrsprachig gestalten?**  
-Ja, Adapt Learning unterstützt Mehrsprachigkeit und ermöglicht die Erstellung von Kursen in verschiedenen Sprachen.
-
-**7. Welche Medienformate werden unterstützt?**  
-Das Tool unterstützt die Einbindung von Videos, Audio, Bildern, Text und interaktiven Elementen in gängigen Formaten.
-
-**8. Ist Adapt Learning für Unternehmen geeignet?**  
-Ja, insbesondere für Unternehmen mit internen Entwicklerressourcen, die individuelle und flexible Lernlösungen benötigen.

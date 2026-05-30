@@ -1,6 +1,11 @@
 ---
 slug: doodle
 title: Doodle
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Freemium
 tags:
@@ -104,26 +109,26 @@ Doodle offers a freemium model. The basic version is free and includes the funda
 
 ## FAQ
 
-**How does the scheduling work at Doodle?**  
+**How does the scheduling work at Doodle?**
 Participants answer their availability in a survey, and Doodle automatically determines the best common time.
 
-**Is Doodle free to use?**  
+**Is Doodle free to use?**
 Yes, there is a free basic version. Premium features require a paid subscription.
 
-**Which calendars can be synchronized with Doodle?**  
+**Which calendars can be synchronized with Doodle?**
 Doodle supports Google Calendar, Microsoft Outlook, and Apple Calendar.
 
-**Can I use Doodle on my smartphone?**  
+**Can I use Doodle on my smartphone?**
 Yes, there are apps for iOS and Android, as well as a mobile web version.
 
-**How secure are my data at Doodle?**  
+**How secure are my data at Doodle?**
 Doodle processes data DSGVO-compliant and uses secure server locations, with details varying by region.
 
-**Can I use Doodle for international meetings?**  
+**Can I use Doodle for international meetings?**
 Yes, Doodle supports multiple languages and is suitable for international use.
 
-**What payment options are available for premium plans?**  
+**What payment options are available for premium plans?**
 Depending on the provider, various payment methods are available, such as credit card or PayPal.
 
-**Is it possible to integrate Doodle with other tools?**  
+**Is it possible to integrate Doodle with other tools?**
 Yes, Doodle offers integrations with video conference tools and calendar applications, as well as API access in some plans.

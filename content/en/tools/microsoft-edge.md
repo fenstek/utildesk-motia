@@ -1,6 +1,11 @@
 ---
 slug: microsoft-edge
 title: Microsoft Edge
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -104,26 +109,26 @@ Microsoft Edge is generally free to use (freemium model). The core features are 
 
 ## FAQ
 
-**1. Is Microsoft Edge free?**  
+**1. Is Microsoft Edge free?**
 Yes, Microsoft Edge is generally free to use. However, some advanced features may require payment, especially in connection with Microsoft 365.
 
-**2. Which operating systems are supported?**  
+**2. Which operating systems are supported?**
 Microsoft Edge is available for Windows, macOS, iOS, Android, and Linux.
 
-**3. Does Microsoft Edge support browser extensions?**  
+**3. Does Microsoft Edge support browser extensions?**
 Yes, Microsoft Edge supports many extensions from the Microsoft Store as well as from the Chrome Web Store.
 
-**4. How secure is Microsoft Edge?**  
+**4. How secure is Microsoft Edge?**
 Edge offers extensive security features such as tracking protection, phishing protection, and regular security updates to protect users from threats.
 
-**5. Which AI features are integrated in Microsoft Edge?**  
+**5. Which AI features are integrated in Microsoft Edge?**
 Microsoft Edge integrates AI-powered tools that can help, for example, with writing text, researching, or organizing content, depending on the version and region.
 
-**6. Can I synchronize my data across devices?**  
+**6. Can I synchronize my data across devices?**
 Yes, Microsoft Edge allows synchronization of passwords, favorites, browsing history, and settings across different devices.
 
-**7. How does Microsoft Edge differ from other Chromium browsers?**  
+**7. How does Microsoft Edge differ from other Chromium browsers?**
 In addition to its Chromium base, Edge offers better integration with Microsoft services as well as special productivity and security features.
 
-**8. Is there an offline mode for features?**  
+**8. Is there an offline mode for features?**
 Many Edge features are web-based, but some features such as saved favorites or PDF viewing also work offline.

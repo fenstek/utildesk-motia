@@ -1,6 +1,11 @@
 ---
 slug: capture-one
 title: Capture One
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Design
 price_model: Abonnement
 tags: [photo,editing,raw,design]
@@ -37,37 +42,37 @@ Ein sinnvoller Test beginnt mit einem konkreten Asset oder Mockup mit Briefing, 
 
 ## Hauptfunktionen
 
-- Professionelle RAW-Konvertierung mit hoher Farbtiefe und Detailtreue  
-- Umfangreiche Farbkorrektur und Farbanpassung auf Pixel-Ebene  
-- Intuitive Bildorganisation und Katalogisierung mit Schlagworten und Metadaten  
-- Unterstützung zahlreicher Kamera- und Objektivprofile für präzise Korrekturen  
-- Lokale Bearbeitungen mit Ebenen, Masken und Pinselwerkzeugen  
-- Schnelle Tethered-Shooting-Funktion für Studioaufnahmen mit direkter Bildübertragung  
-- Anpassbare Benutzeroberfläche für individuelle Arbeitsabläufe  
-- Exportfunktionen in verschiedenen Formaten und Auflösungen  
-- Erweiterte Retuschewerkzeuge für Hautkorrekturen und Staubentfernung  
+- Professionelle RAW-Konvertierung mit hoher Farbtiefe und Detailtreue
+- Umfangreiche Farbkorrektur und Farbanpassung auf Pixel-Ebene
+- Intuitive Bildorganisation und Katalogisierung mit Schlagworten und Metadaten
+- Unterstützung zahlreicher Kamera- und Objektivprofile für präzise Korrekturen
+- Lokale Bearbeitungen mit Ebenen, Masken und Pinselwerkzeugen
+- Schnelle Tethered-Shooting-Funktion für Studioaufnahmen mit direkter Bildübertragung
+- Anpassbare Benutzeroberfläche für individuelle Arbeitsabläufe
+- Exportfunktionen in verschiedenen Formaten und Auflösungen
+- Erweiterte Retuschewerkzeuge für Hautkorrekturen und Staubentfernung
 - Integration mit anderen Design- und Bildbearbeitungsprogrammen
 
-- **Praxis-Workflow:** Capture One sollte anhand eines konkreten Assets oder Mockup mit Briefing, Versionen, Feedbackrunde und finaler Übergabe getestet werden, nicht nur an einer Demo mit idealen Beispielen.
+- **Praxis-Workflow:** Für Capture One sollte der erste Test mit ein konkretes Asset mit Briefing, Brand-Regeln, Variantenvergleich und finaler Übergabe laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
 - **Qualitätssicherung:** Das Team sollte bei Capture One festhalten, wie Bearbeitungszeit, visuelle Qualität, Freigabeschleifen und Wiederverwendbarkeit gemessen, freigegeben und später nachvollzogen werden.
 - **Team-Übergabe:** Nützlich wird Capture One besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
 
 ## Vorteile und Nachteile
 
 ### Vorteile
-- Sehr hohe Bildqualität bei der RAW-Entwicklung  
-- Umfangreiche und präzise Farbmanagement-Tools  
-- Professionelle Funktionen für Studiofotografie inklusive Tethered Shooting  
-- Effiziente Organisation großer Bildmengen  
+- Sehr hohe Bildqualität bei der RAW-Entwicklung
+- Umfangreiche und präzise Farbmanagement-Tools
+- Professionelle Funktionen für Studiofotografie inklusive Tethered Shooting
+- Effiziente Organisation großer Bildmengen
 - Regelmäßige Updates und Verbesserungen
 
 - Stärker im Alltag, wenn Capture One für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
 - Kann Wissen verteilen, wenn visuelle Produktion, Feedback, Varianten und Übergabe an andere Rollen bislang stark von einzelnen Expertinnen, Experten oder handgebauten Übergaben abhängen. Bei Capture One sollte dieser Punkt ausdrücklich in die Abnahme wandern.
 
 ### Nachteile
-- Relativ hohe Einstiegshürde für Anfänger ohne Vorkenntnisse  
-- Abonnement-Modell kann für Gelegenheitsnutzer kostenintensiv sein  
-- Hardwareanforderungen sind vergleichsweise hoch  
+- Relativ hohe Einstiegshürde für Anfänger ohne Vorkenntnisse
+- Abonnement-Modell kann für Gelegenheitsnutzer kostenintensiv sein
+- Hardwareanforderungen sind vergleichsweise hoch
 - Einige Funktionen sind nur in den teureren Varianten verfügbar
 
 - Braucht klare Leitplanken, denn ohne sie fallen Probleme dort auf, wo Briefing, Rechte, Markenregeln und Exportformate unscharf bleiben.
@@ -81,38 +86,38 @@ Neben dem Listenpreis sollte bei Capture One auch der Einführungsaufwand berüc
 
 ## Alternativen zu Capture One
 
-- **Adobe Lightroom** – Weit verbreitete RAW-Bearbeitungssoftware mit Cloud-Synchronisation und umfangreichen Verwaltungsfunktionen.  
-- **DxO PhotoLab** – Software mit automatischen Korrekturen und innovativen Algorithmen für Bildoptimierung.  
-- **ON1 Photo RAW** – Kombiniert RAW-Bearbeitung mit Ebenen und Effekten, geeignet für kreative Bildbearbeitung.  
-- **Darktable** – Open-Source-RAW-Entwickler mit umfangreichen Funktionen, ideal für Nutzer, die kostenlose Alternativen bevorzugen.  
+- **Adobe Lightroom** – Weit verbreitete RAW-Bearbeitungssoftware mit Cloud-Synchronisation und umfangreichen Verwaltungsfunktionen.
+- **DxO PhotoLab** – Software mit automatischen Korrekturen und innovativen Algorithmen für Bildoptimierung.
+- **ON1 Photo RAW** – Kombiniert RAW-Bearbeitung mit Ebenen und Effekten, geeignet für kreative Bildbearbeitung.
+- **Darktable** – Open-Source-RAW-Entwickler mit umfangreichen Funktionen, ideal für Nutzer, die kostenlose Alternativen bevorzugen.
 - **Luminar AI** – Fokus auf KI-gestützte Bildverbesserungen für schnelle Ergebnisse ohne komplexe Einstellungen.
 
 Beim Vergleich lohnt es sich, Capture One nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch Design-, Bild-, Video- und Prototyping-Tools die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 
 ## FAQ
 
-**1. Unterstützt Capture One alle Kameramodelle?**  
+**1. Unterstützt Capture One alle Kameramodelle?**
 Capture One bietet Unterstützung für eine breite Palette von Kameras, insbesondere gängige Modelle der großen Hersteller. Die Kompatibilität variiert jedoch je nach Version und kann je nach Kamera unterschiedlich sein.
 
-**2. Gibt es eine kostenlose Testversion?**  
+**2. Gibt es eine kostenlose Testversion?**
 In der Regel stellt Capture One eine zeitlich begrenzte Testversion zur Verfügung, die es ermöglicht, die Software vor dem Kauf ausgiebig zu testen.
 
-**3. Wie unterscheidet sich Capture One von Adobe Lightroom?**  
+**3. Wie unterscheidet sich Capture One von Adobe Lightroom?**
 Capture One legt den Fokus auf professionelle RAW-Bearbeitung und präzise Farbsteuerung, während Lightroom neben der Bearbeitung auch umfangreiche Verwaltungs- und Cloud-Funktionen bietet.
 
-**4. Kann man Capture One ohne Internetverbindung nutzen?**  
+**4. Kann man Capture One ohne Internetverbindung nutzen?**
 Ja, Capture One kann lokal auf dem Computer verwendet werden. Für die Aktivierung und Updates wird jedoch eine Internetverbindung benötigt.
 
-**5. Ist Capture One für Einsteiger geeignet?**  
+**5. Ist Capture One für Einsteiger geeignet?**
 Capture One ist eher für erfahrene Anwender konzipiert, die komplexe Bearbeitungen durchführen möchten. Anfänger könnten die Software als herausfordernd empfinden.
 
-**6. Welche Betriebssysteme werden unterstützt?**  
+**6. Welche Betriebssysteme werden unterstützt?**
 Capture One ist für Windows und macOS verfügbar, die genauen Systemanforderungen hängen von der jeweiligen Version ab.
 
-**7. Gibt es spezielle Versionen für bestimmte Kameras?**  
+**7. Gibt es spezielle Versionen für bestimmte Kameras?**
 Ja, Capture One bietet Editionen, die speziell für einzelne Kamerahersteller optimiert sind, was für Nutzer bestimmter Marken interessant sein kann.
 
-**8. Wie oft werden Updates veröffentlicht?**  
+**8. Wie oft werden Updates veröffentlicht?**
 Updates erscheinen regelmäßig und bringen neue Funktionen, Fehlerbehebungen sowie Unterstützung für neue Kameramodelle.
 
 **9. Wie testet man Capture One sinnvoll im Team?**

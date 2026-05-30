@@ -1,6 +1,11 @@
 ---
 slug: semantic-scholar
 title: Semantic Scholar
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Free
 tags:
@@ -107,26 +112,26 @@ Semantic Scholar is generally free to use. There is no paid subscription or prem
 
 ## FAQ
 
-**1. Is Semantic Scholar free?**  
+**1. Is Semantic Scholar free?**
 Yes, Semantic Scholar can be used free of charge without registration.
 
-**2. Which languages are supported?**  
+**2. Which languages are supported?**
 The platform is mainly designed for English, but it provides access to literature from different countries and disciplines.
 
-**3. Can I export my search results?**  
+**3. Can I export my search results?**
 Export options are limited; citation information can usually be exported as BibTeX or EndNote, depending on the article.
 
-**4. How up to date is the data?**  
+**4. How up to date is the data?**
 The database is updated regularly to include new scientific publications.
 
-**5. Does Semantic Scholar offer full texts?**  
+**5. Does Semantic Scholar offer full texts?**
 Many articles are linked directly, but full-text access depends on availability and licensing.
 
-**6. Are there mobile apps for Semantic Scholar?**  
+**6. Are there mobile apps for Semantic Scholar?**
 There are currently no official mobile apps, but the website is mobile-friendly.
 
-**7. How does Semantic Scholar differ from Google Scholar?**  
+**7. How does Semantic Scholar differ from Google Scholar?**
 Semantic Scholar uses AI to better understand and filter search results, while Google Scholar is more of a straightforward full-text search.
 
-**8. Can I receive notifications for new articles?**  
+**8. Can I receive notifications for new articles?**
 Creating user accounts makes it possible to save searches and track new publications on specific topics.

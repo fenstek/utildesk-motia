@@ -1,6 +1,11 @@
 ---
 slug: mcafee-endpoint-security
 title: Trellix Endpoint Security
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Entwickler-Tools"
 price_model: Abonnement
 tags: [security, endpoint, enterprise, device-management]
@@ -91,26 +96,26 @@ Trellix Endpoint Security wird in der Regel im Abonnement-Modell angeboten. Die 
 
 ## FAQ
 
-**1. Was ist Trellix Endpoint Security?**  
+**1. Was ist Trellix Endpoint Security?**
 Trellix Endpoint Security ist eine Sicherheitslösung, die Endgeräte in Unternehmen vor Malware, Angriffen und anderen Bedrohungen schützt und zentral verwaltet.
 
-**2. Für welche Unternehmen ist Trellix Endpoint Security geeignet?**  
+**2. Für welche Unternehmen ist Trellix Endpoint Security geeignet?**
 Die Lösung ist besonders für mittelständische und große Unternehmen mit hohen Sicherheitsanforderungen und komplexen IT-Umgebungen geeignet.
 
-**3. Wie erfolgt die Preisgestaltung?**  
+**3. Wie erfolgt die Preisgestaltung?**
 Trellix Endpoint Security wird im Abonnement-Modell angeboten. Die Kosten variieren je nach Anzahl der Endgeräte und gewähltem Funktionsumfang.
 
-**4. Welche Betriebssysteme werden unterstützt?**  
+**4. Welche Betriebssysteme werden unterstützt?**
 Je nach Version und Anbieter werden gängige Betriebssysteme wie Windows, macOS und teilweise Linux unterstützt. Genauere Informationen sollten beim Anbieter eingeholt werden.
 
-**5. Gibt es eine kostenlose Testversion?**  
+**5. Gibt es eine kostenlose Testversion?**
 Manche Anbieter stellen eine Testphase oder Demoversion zur Verfügung, um die Lösung vor dem Kauf zu evaluieren.
 
-**6. Wie wird die Lösung verwaltet?**  
+**6. Wie wird die Lösung verwaltet?**
 Die Verwaltung erfolgt meist über eine zentrale Konsole, die lokal oder cloudbasiert bereitgestellt wird.
 
-**7. Welche Arten von Bedrohungen werden erkannt?**  
+**7. Welche Arten von Bedrohungen werden erkannt?**
 Die Software erkennt unter anderem Viren, Ransomware, Spyware, Phishing-Angriffe und andere Schadsoftware.
 
-**8. Ist technisches Know-how für die Nutzung erforderlich?**  
+**8. Ist technisches Know-how für die Nutzung erforderlich?**
 Für die Einrichtung und Verwaltung ist in der Regel IT-Fachwissen notwendig, insbesondere bei größeren Umgebungen mit komplexen Anforderungen.

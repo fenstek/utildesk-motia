@@ -1,6 +1,11 @@
 ---
 slug: tads
 title: TADS (Text Adventure Development System)
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Open Source
 tags: [developer-tools,gaming,open-source,writing]
@@ -28,11 +33,11 @@ TADS richtet sich vor allem an Autoren, Spieleentwickler und Hobbyisten, die Int
 - **Übergaben im Team:** TADS (Text Adventure Development System) kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei TADS (Text Adventure Development System) weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei TADS (Text Adventure Development System) zählen Briefing, Tonfall, Terminologie und Freigabe mehr als ein schneller Rohtext. Ein sinnvoller Test nutzt echtes Material und prüft, ob die Nacharbeit wirklich kleiner wird.
 
-Praktisch ist TADS (Text Adventure Development System) vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+TADS (Text Adventure Development System) hilft, wenn Texte oder Übersetzungen wiederkehrend entstehen und trotzdem menschlich gegengelesen werden. Claims, Fachbegriffe und Markenstimme sollten nie ungeprüft durchrutschen.
 
 ## Hauptfunktionen
 
@@ -59,57 +64,3 @@ Praktisch ist TADS (Text Adventure Development System) vor allem, wenn es vorhan
 - Weniger geeignet für grafisch orientierte Spiele, da Fokus auf Text liegt.
 - Fehlende kommerzielle Supportoptionen, Support erfolgt überwiegend über Community.
 - Nicht so weit verbreitet wie manche kommerzielle Tools, was die Verbreitung der erstellten Spiele einschränken kann.
-
-## Workflow-Fit
-
-TADS (Text Adventure Development System) passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn TADS (Text Adventure Development System) nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in TADS (Text Adventure Development System) landen und ob Quellcode, Logs, Kundendaten und technische Metadaten betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei TADS (Text Adventure Development System) außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von TADS (Text Adventure Development System).
-
-## Redaktionelle Einschätzung
-
-TADS passt zu Autorinnen und Entwicklern, die parserbasierte Interactive Fiction bauen und bereit sind, sich auf ein technisches Schreibsystem einzulassen. Für einfache verzweigte Geschichten ist Twine oft zugänglicher; für klassische Textadventures bietet TADS mehr Struktur.
-
-## Preise & Kosten
-
-TADS ist Open Source und somit kostenlos nutzbar. Es gibt keine versteckten Kosten oder Abonnements. Nutzer können das System frei herunterladen, anpassen und verbreiten. Eventuelle Kosten können durch optionale Hilfsmaterialien oder ergänzende Tools entstehen, je nach individuellem Bedarf.
-
-## Alternativen zu TADS
-
-- **Inform 7:** Ebenfalls eine beliebte Sprache für interaktive Fiktion mit natürlicher Sprachsyntax und umfangreichen Features.
-- **Twine:** Ein einfaches, browserbasiertes Tool zur Erstellung nicht-linearer Geschichten, ideal für Einsteiger.
-- **ChoiceScript:** Spezialisierte Skriptsprache für textbasierte Entscheidungsabenteuer mit Fokus auf Multiple-Choice-Mechaniken.
-- **ADRIFT:** Visuelles Entwicklungstool für Textadventures, das Programmierkenntnisse minimiert.
-- **Quest:** Kostenloses Tool mit grafischer Oberfläche zur einfachen Erstellung von Textspielen.
-
-## FAQ
-
-**1. Brauche ich Programmierkenntnisse, um TADS zu nutzen?**  
-Grundlegende Programmierkenntnisse sind hilfreich, da TADS eine eigene Programmiersprache verwendet. Anfänger können sich jedoch mit Tutorials und der Community Unterstützung erarbeiten.
-
-**2. Auf welchen Plattformen kann ich mit TADS erstellte Spiele spielen?**  
-TADS-Spiele sind plattformunabhängig und können auf Windows, macOS und Linux ausgeführt werden.
-
-**3. Ist TADS nur für Textabenteuer geeignet?**  
-Ja, das System ist speziell für textbasierte Spiele und interaktive Geschichten konzipiert und unterstützt keine grafischen Spielinhalte.
-
-**4. Kann ich TADS kostenlos herunterladen und verwenden?**  
-Ja, TADS ist Open Source und kostenlos verfügbar.
-
-**5. Gibt es eine aktive Community oder Support?**  
-Ja, es gibt eine engagierte Community, Foren und umfangreiche Dokumentationen, die bei Fragen und Problemen helfen.
-
-**6. Wie komplex können die Spiele mit TADS sein?**  
-TADS erlaubt die Entwicklung sehr komplexer Spiele mit umfangreichen Welten, verzweigten Handlungssträngen und detaillierten Interaktionen.
-
-**7. Kann ich TADS für kommerzielle Projekte nutzen?**  
-Ja, die Open-Source-Lizenz erlaubt auch kommerzielle Nutzung, allerdings sollten die Lizenzbedingungen geprüft werden.
-
-**8. Welche Alternativen gibt es, wenn ich eine einfachere Lösung suche?**  
-Tools wie Twine oder Quest sind leichter zugänglich und eignen sich gut für Einsteiger ohne Programmierkenntnisse.

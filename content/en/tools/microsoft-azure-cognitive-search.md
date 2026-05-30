@@ -1,6 +1,11 @@
 ---
 slug: microsoft-azure-cognitive-search
 title: Microsoft Azure Cognitive Search
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Developer
 price_model: Usage-based
 tags:
@@ -106,26 +111,26 @@ Microsoft generally offers a free tier with limited resources to facilitate gett
 
 ## FAQ
 
-**1. Which programming languages does Azure Cognitive Search support?**  
+**1. Which programming languages does Azure Cognitive Search support?**
 Azure Cognitive Search offers SDKs for .NET, Java, Python, and REST APIs, enabling integration in many other languages.
 
-**2. Can I connect Azure Cognitive Search to my own data sources?**  
+**2. Can I connect Azure Cognitive Search to my own data sources?**
 Yes, the service supports many data sources such as Azure Blob Storage, Azure SQL databases, Cosmos DB, and more.
 
-**3. How is data security ensured?**  
+**3. How is data security ensured?**
 Azure Cognitive Search employs encryption, role-based access control, and other Azure security standards to protect data.
 
-**4. Is free usage possible?**  
+**4. Is free usage possible?**
 Microsoft provides a free tier with limited resources, ideal for testing and small projects.
 
-**5. How does Azure Cognitive Search scale with growing data volumes?**  
+**5. How does Azure Cognitive Search scale with growing data volumes?**
 The service allows flexible scaling by adding Search Units to enhance performance and capacity.
 
-**6. Which AI features are integrated?**  
+**6. Which AI features are integrated?**
 AI features include text extraction, sentiment analysis, image recognition, and translations available through Cognitive Skills.
 
-**7. How quickly are data changes reflected in the search index?**  
+**7. How quickly are data changes reflected in the search index?**
 Azure Cognitive Search supports near real-time indexing, so changes appear quickly in search results.
 
-**8. Are there limits on the number of search queries?**  
+**8. Are there limits on the number of search queries?**
 The number of queries depends on the selected plan and available resources; exceeding them may incur additional costs.

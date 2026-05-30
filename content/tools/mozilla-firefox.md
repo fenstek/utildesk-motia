@@ -1,6 +1,11 @@
 ---
 slug: mozilla-firefox
 title: Mozilla Firefox
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Produktivität
 price_model: Free
 tags: [browser, web, privacy, developer-tools]
@@ -87,26 +92,26 @@ Mozilla Firefox ist vollständig kostenlos nutzbar. Es gibt keine versteckten Ko
 
 ## FAQ
 
-**1. Ist Mozilla Firefox wirklich kostenlos?**  
+**1. Ist Mozilla Firefox wirklich kostenlos?**
 Ja, Firefox ist ein kostenloser Webbrowser und Open Source, ohne kostenpflichtige Funktionen.
 
-**2. Wie schützt Firefox meine Privatsphäre?**  
+**2. Wie schützt Firefox meine Privatsphäre?**
 Firefox blockiert standardmäßig Tracker und bietet Funktionen wie den privaten Modus und Container-Tabs, die Ihre Daten schützen.
 
-**3. Kann ich Firefox auf mehreren Geräten nutzen?**  
+**3. Kann ich Firefox auf mehreren Geräten nutzen?**
 Ja, über die Firefox-Synchronisation können Lesezeichen, Passwörter und Tabs sicher zwischen verschiedenen Geräten geteilt werden.
 
-**4. Unterstützt Firefox Erweiterungen/Add-ons?**  
+**4. Unterstützt Firefox Erweiterungen/Add-ons?**
 Ja, Firefox bietet eine große Auswahl an Add-ons, mit denen Sie den Browser individuell anpassen können.
 
-**5. Welche Entwickler-Tools sind in Firefox enthalten?**  
+**5. Welche Entwickler-Tools sind in Firefox enthalten?**
 Firefox enthält unter anderem einen Inspektor, eine Konsole, einen Debugger und einen Netzwerkmonitor für Webentwickler.
 
-**6. Wie oft wird Firefox aktualisiert?**  
+**6. Wie oft wird Firefox aktualisiert?**
 Mozilla veröffentlicht regelmäßig Updates, die neue Funktionen bringen und Sicherheitslücken schließen.
 
-**7. Gibt es Einschränkungen bei der Nutzung von Firefox?**  
+**7. Gibt es Einschränkungen bei der Nutzung von Firefox?**
 Grundsätzlich ist Firefox frei nutzbar, allerdings können einige Webseiten für andere Browser optimiert sein.
 
-**8. Wie sicher ist Firefox im Vergleich zu anderen Browsern?**  
+**8. Wie sicher ist Firefox im Vergleich zu anderen Browsern?**
 Firefox gilt als sehr sicher, insbesondere dank seiner Datenschutzfunktionen und der schnellen Reaktion auf Sicherheitslücken.

@@ -1,6 +1,11 @@
 ---
 slug: invoca
 title: Invoca
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Marketing
 price_model: 'Subscription, depending on plan'
 tags:
@@ -93,28 +98,28 @@ Alternatives to Invoca should be chosen by the concrete work problem. In some ca
 
 ## FAQ
 
-**1. What exactly is Invoca?**  
+**1. What exactly is Invoca?**
 Invoca is a platform for analyzing and optimizing phone-based customer interactions using artificial intelligence and marketing analytics.
 
-**2. How does Invoca help with marketing?**  
+**2. How does Invoca help with marketing?**
 The platform links incoming calls to marketing campaigns so companies can better understand which measures are successful and prioritize leads.
 
-**3. Which companies is Invoca suitable for?**  
+**3. Which companies is Invoca suitable for?**
 Primarily companies with a high volume of phone traffic in marketing and customer service, such as those in insurance, financial services, or retail.
 
-**4. How is pricing structured?**  
+**4. How is pricing structured?**
 Invoca uses a subscription-based model with custom quotes that vary depending on company size and feature scope.
 
-**5. Can Invoca be integrated with other tools?**  
+**5. Can Invoca be integrated with other tools?**
 Yes, Invoca offers integrations with CRM systems such as Salesforce and marketing platforms such as Google Ads.
 
-**6. Is there a free trial?**  
+**6. Is there a free trial?**
 Information about trial periods is not publicly available and should be requested directly from the provider.
 
-**7. How secure is data with Invoca?**  
+**7. How secure is data with Invoca?**
 Invoca places importance on data security and privacy; details on compliance and certifications can be found on the provider's website.
 
-**8. Does Invoca also support other communication channels?**  
+**8. Does Invoca also support other communication channels?**
 The focus is on analyzing phone conversations; other channels are partially supported depending on the plan and integration.
 
 **9. How should a team test Invoca?**

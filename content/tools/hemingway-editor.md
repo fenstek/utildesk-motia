@@ -1,6 +1,11 @@
 ---
 slug: hemingway-editor
 title: Hemingway Editor
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Writing"
 price_model: Freemium
 tags: [writing, productivity, automation]
@@ -78,26 +83,26 @@ Hemingway Editor ist ein scharfes, aber enges Werkzeug. Es zeigt Reibung im Text
 
 ## FAQ
 
-**1. Ist Hemingway Editor kostenlos?**  
+**1. Ist Hemingway Editor kostenlos?**
 Die Web-Version ist kostenlos nutzbar, die Desktop-Version mit erweiterten Funktionen ist kostenpflichtig.
 
-**2. Unterstützt Hemingway Editor mehrere Sprachen?**  
+**2. Unterstützt Hemingway Editor mehrere Sprachen?**
 Der Fokus liegt hauptsächlich auf englischen Texten, deutsche Texte werden nur eingeschränkt unterstützt.
 
-**3. Kann ich Hemingway Editor offline nutzen?**  
+**3. Kann ich Hemingway Editor offline nutzen?**
 Ja, mit der kostenpflichtigen Desktop-Version ist eine Offline-Nutzung möglich.
 
-**4. In welche Formate kann ich meine Texte exportieren?**  
+**4. In welche Formate kann ich meine Texte exportieren?**
 Exportmöglichkeiten umfassen unter anderem HTML und Word, abhängig von der Version.
 
-**5. Verbessert Hemingway Editor auch die Grammatik?**  
+**5. Verbessert Hemingway Editor auch die Grammatik?**
 Das Tool konzentriert sich vor allem auf Stil und Lesbarkeit, eine umfassende Grammatikprüfung ist nicht enthalten.
 
-**6. Gibt es eine Integration in andere Programme?**  
+**6. Gibt es eine Integration in andere Programme?**
 Direkte Integrationen sind nicht verfügbar; Texte müssen manuell importiert und exportiert werden.
 
-**7. Wie hilft Hemingway Editor bei der Produktivität?**  
+**7. Wie hilft Hemingway Editor bei der Produktivität?**
 Durch schnelle Analyse und klare Hinweise können Texte effizienter überarbeitet werden.
 
-**8. Für welche Textarten eignet sich Hemingway Editor besonders?**  
+**8. Für welche Textarten eignet sich Hemingway Editor besonders?**
 Ideal für Blogbeiträge, journalistische Texte, akademische Arbeiten und alle Inhalte, die klar und verständlich sein sollen.

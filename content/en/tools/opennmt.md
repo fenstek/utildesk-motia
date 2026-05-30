@@ -1,6 +1,11 @@
 ---
 slug: opennmt
 title: OpenNMT
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Open Source
 tags:
@@ -103,28 +108,28 @@ When comparing options, OpenNMT should not only be measured against very similar
 
 ## FAQ
 
-**1. What exactly is OpenNMT?**  
+**1. What exactly is OpenNMT?**
 OpenNMT is an open-source platform for neural machine translation that makes it possible to train and deploy your own translation models.
 
-**2. Do I need programming knowledge to use OpenNMT?**  
+**2. Do I need programming knowledge to use OpenNMT?**
 Yes, basic knowledge of programming and machine learning is helpful, since OpenNMT is mainly designed as a developer toolkit.
 
-**3. Can I use OpenNMT for free?**  
+**3. Can I use OpenNMT for free?**
 Yes, OpenNMT is free and open source. However, there may be costs for hardware and operation.
 
-**4. Which languages does OpenNMT support?**  
+**4. Which languages does OpenNMT support?**
 In principle, OpenNMT supports all languages for which training data is available. Quality depends on the data basis.
 
-**5. Is there commercial support for OpenNMT?**  
+**5. Is there commercial support for OpenNMT?**
 Officially, OpenNMT is supported by the community. However, some companies offer professional services around OpenNMT.
 
-**6. How does OpenNMT differ from cloud translation services?**  
+**6. How does OpenNMT differ from cloud translation services?**
 OpenNMT runs locally or on your own servers, which allows for more control and data privacy, while cloud services are usually easier to use but process data in the cloud.
 
-**7. Can I use OpenNMT for real-time translations?**  
+**7. Can I use OpenNMT for real-time translations?**
 Yes, OpenNMT offers optimized inference features that enable real-time translations, provided the hardware is sufficiently powerful.
 
-**8. How can I integrate OpenNMT into my applications?**  
+**8. How can I integrate OpenNMT into my applications?**
 OpenNMT provides APIs and interfaces that allow integration into various software solutions. The documentation includes detailed instructions for this.
 
 **9. How should a team test OpenNMT?**

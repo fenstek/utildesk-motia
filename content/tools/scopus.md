@@ -1,6 +1,11 @@
 ---
 slug: scopus
 title: Scopus
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Audio & Video"
 price_model: Je nach Plan
 tags: [research,bibliometrics,publications]
@@ -28,11 +33,11 @@ Scopus richtet sich vor allem an Wissenschaftler, Forscher, Bibliothekare und ak
 - **Übergaben im Team:** Scopus kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
 - **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
 
-## Was im Alltag wirklich zählt
+## Redaktionelle Einordnung
 
-Im Alltag zählt bei Scopus weniger, ob jede Randfunktion vorhanden ist, sondern ob ein Team schnell versteht, wo Arbeit beginnt, wer prüft und wie Ergebnisse weitergegeben werden. Ein gutes Setup definiert deshalb vorab Rollen, Namenskonventionen und die wichtigsten Übergabepunkte.
+Bei Scopus ist Quellenarbeit der Kern. Wir würden mit einer engen Recherchefrage starten, Treffer gegen Kontrollquellen prüfen und festhalten, warum Quellen aufgenommen oder verworfen wurden.
 
-Praktisch ist Scopus vor allem, wenn es vorhandene Abläufe entlastet, statt eine zweite Parallelstruktur aufzubauen. Vor der Einführung lohnt sich ein kleiner Pilot mit echten Beispielen: Welche Aufgabe wird schneller, welche Entscheidung wird klarer, und welche manuelle Kontrolle bleibt bewusst erhalten?
+Scopus lohnt sich, wenn Fundstellen, Notizen und Zweifel später noch nachvollziehbar bleiben. Ohne diese Sorgfalt wird Recherche nur schneller, aber nicht belastbarer.
 
 ## Hauptfunktionen
 
@@ -61,59 +66,3 @@ Praktisch ist Scopus vor allem, wenn es vorhandene Abläufe entlastet, statt ein
 - Die Komplexität der Funktionen kann für Einsteiger zunächst überwältigend sein
 - Nicht alle wissenschaftlichen Publikationen sind enthalten, da die Auswahlkriterien variieren
 - Video-Integration ist weniger im Vordergrund und nicht in allen Bereichen umfangreich
-
-## Workflow-Fit
-
-Scopus passt am besten in einen Workflow mit klarer Eingabe, nachvollziehbarer Bearbeitung und definiertem Abschluss. Für kleine Teams reicht oft ein schlanker Prozess mit wenigen Standards; größere Organisationen sollten zusätzlich Rechte, Freigaben und Schnittstellen festlegen.
-
-Wenn Scopus nur als weiterer Account ohne Zuständigkeit eingeführt wird, verpufft der Nutzen schnell. Besser ist ein fester Platz im bestehenden Stack: Was kommt hinein, was wird im Tool entschieden, und wohin geht das Ergebnis anschließend?
-
-## Datenschutz & Daten
-
-Vor dem Einsatz sollte geklärt werden, welche Daten in Scopus landen und ob Mediendateien, Markenmaterial, Rohdaten und Kundeninhalte betroffen sind. Je sensibler die Inhalte, desto wichtiger sind Rollenrechte, Aufbewahrungsfristen, Exportmöglichkeiten und eine dokumentierte Entscheidung, welche Informationen bewusst draußen bleiben.
-
-Für Teams in Europa ist bei Scopus außerdem relevant, ob Verträge zur Auftragsverarbeitung, Standortangaben und Löschprozesse ausreichend transparent sind. Diese Prüfung ersetzt keine Rechtsberatung, verhindert aber typische Blindflüge bei der Einführung von Scopus.
-
-## Redaktionelle Einschätzung
-
-Scopus ist am nützlichsten, wenn Aufnahme, Rechte, Export und Review schon vor der Produktion geklärt sind. Dann spart das Tool vor allem Produktionszeit, ohne den notwendigen Hör- oder Sichtcheck zu ersetzen.
-
-Unsere Empfehlung: mit einem konkreten Anwendungsfall starten, Erfolgskriterien notieren und nach zwei bis vier Wochen prüfen, ob Scopus wirklich Zeit spart oder nur neue Pflegearbeit erzeugt. So bleibt die Entscheidung nüchtern, auch wenn die Featureliste lang ist.
-
-## Preise & Kosten
-
-Die Preisgestaltung von Scopus hängt stark vom jeweiligen Lizenzmodell und Anbieter ab. Institutionen wie Universitäten oder Forschungseinrichtungen schließen meist Jahresabonnements ab, deren Kosten von der Größe der Einrichtung und dem Umfang des Zugriffs abhängen. Einzelzugänge sind seltener und oft teurer. Es gibt keine standardisierten Preise, daher empfiehlt es sich, direkt beim Anbieter oder über autorisierte Reseller Informationen einzuholen.
-
-## Alternativen zu Scopus
-
-- **Web of Science** – Ähnlich umfangreiche wissenschaftliche Datenbank mit Schwerpunkt auf Zitationsanalysen.
-- **Google Scholar** – Kostenloses Suchtool für wissenschaftliche Literatur mit breiter, aber weniger kuratierter Abdeckung.
-- **Dimensions** – Plattform für Forschungsergebnisse und bibliometrische Daten mit zusätzlichen Förder- und Patentinformationen.
-- **PubMed** – Speziell für medizinische und biowissenschaftliche Literatur, kostenlos zugänglich.
-- **Microsoft Academic** – (Eingestellt, aber früher eine Alternative mit KI-gestützter Literaturrecherche)
-
-## FAQ
-
-**1. Was ist der Hauptzweck von Scopus?**  
-Scopus dient der umfassenden Recherche wissenschaftlicher Literatur und der Analyse von Forschungsleistungen anhand bibliometrischer Daten.
-
-**2. Wie aktuell sind die Daten in Scopus?**  
-Die Datenbank wird regelmäßig aktualisiert, wobei neue Publikationen meist zeitnah eingepflegt werden, um eine aktuelle Recherche zu ermöglichen.
-
-**3. Benötige ich ein Abonnement, um Scopus nutzen zu können?**  
-Ja, Scopus ist in der Regel kostenpflichtig und wird über institutionelle oder individuelle Abonnements angeboten.
-
-**4. Welche Fachgebiete deckt Scopus ab?**  
-Scopus umfasst zahlreiche Disziplinen, darunter Naturwissenschaften, Technik, Medizin, Sozialwissenschaften, Kunst und Geisteswissenschaften.
-
-**5. Kann ich Scopus für Zitationsanalysen verwenden?**  
-Ja, Scopus bietet umfangreiche Tools zur Analyse von Zitationen, Autorenprofilen und Forschungsimpact.
-
-**6. Gibt es eine Möglichkeit, Benachrichtigungen bei neuen Veröffentlichungen zu erhalten?**  
-Ja, Nutzer können Alerts für bestimmte Suchanfragen oder Autoren einrichten, um automatisch informiert zu werden.
-
-**7. Wie unterscheidet sich Scopus von Google Scholar?**  
-Scopus ist eine kuratierte, kostenpflichtige Datenbank mit erweiterten Analysefunktionen, während Google Scholar kostenlos ist, aber weniger kontrollierte Datenqualität bietet.
-
-**8. Werden auch Videos in Scopus integriert?**  
-Scopus fokussiert sich primär auf wissenschaftliche Texte, bietet aber in einigen Fällen auch multimediale Inhalte zur Unterstützung der Forschung an.

@@ -1,6 +1,11 @@
 ---
 slug: amazon-sagemaker-autopilot
 title: Amazon SageMaker Autopilot
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Usage-based
 tags:
@@ -97,26 +102,26 @@ Amazon SageMaker Autopilot uses a usage-based pricing model. Costs are mainly ma
 
 ## FAQ
 
-**1. Do I need programming knowledge to use Amazon SageMaker Autopilot?**  
+**1. Do I need programming knowledge to use Amazon SageMaker Autopilot?**
 Basic knowledge of AWS and working with data is helpful, but deep programming knowledge is not required to use Autopilot.
 
-**2. Which data types are supported?**  
+**2. Which data types are supported?**
 Autopilot is mainly designed for tabular data with numerical and categorical features. Unstructured data such as images or text is not directly supported.
 
-**3. How long does it take to train a model?**  
+**3. How long does it take to train a model?**
 Training time depends on the amount of data, the complexity of the problem, and the resources selected. AWS automatically scales resources to optimize training time.
 
-**4. Can I customize the models that are created?**  
+**4. Can I customize the models that are created?**
 Autopilot offers limited options for manual customization because the focus is on automation. For more advanced customization, other SageMaker components are better suited.
 
-**5. How secure is my data when using Autopilot?**  
+**5. How secure is my data when using Autopilot?**
 Because Autopilot is based on the AWS cloud, users benefit from AWS's extensive security and compliance standards.
 
-**6. Is there a free trial?**  
+**6. Is there a free trial?**
 AWS offers a free tier with limited usage, which may also include Autopilot. Details depend on the current AWS offering.
 
-**7. How do I integrate Autopilot into existing applications?**  
+**7. How do I integrate Autopilot into existing applications?**
 Models can be integrated into applications via AWS SDKs or APIs and used in real time or in batch mode.
 
-**8. Which languages and frameworks are supported?**  
+**8. Which languages and frameworks are supported?**
 Autopilot is platform-independent because it is controlled through AWS services. For more advanced usage, AWS SDKs can be used in various programming languages.

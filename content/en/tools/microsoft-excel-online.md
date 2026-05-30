@@ -1,6 +1,11 @@
 ---
 slug: microsoft-excel-online
 title: Microsoft Excel Online
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Freemium
 tags:
@@ -112,26 +117,26 @@ More exact pricing details can vary depending on the provider and plan.
 
 ## FAQ
 
-**1. Do I need a Microsoft account to use Excel Online?**  
+**1. Do I need a Microsoft account to use Excel Online?**
 Yes, using Microsoft Excel Online requires a free Microsoft account.
 
-**2. Can I use Excel Online without an internet connection?**  
+**2. Can I use Excel Online without an internet connection?**
 Excel Online requires an active internet connection because it is web-based.
 
-**3. Which functions are missing compared with the desktop version?**  
+**3. Which functions are missing compared with the desktop version?**
 Some advanced analysis and macro functions are not available or are limited in Excel Online.
 
-**4. How secure is my data in Excel Online?**  
+**4. How secure is my data in Excel Online?**
 Data is stored in Microsoft data centers and protected by encryption and security measures; details depend on the subscription you choose.
 
-**5. Can I use Excel Online on my smartphone or tablet?**  
+**5. Can I use Excel Online on my smartphone or tablet?**
 Yes, Excel Online is accessible through the browser or the Microsoft Excel app on mobile devices.
 
-**6. Is collaboration with multiple people at the same time possible?**  
+**6. Is collaboration with multiple people at the same time possible?**
 Yes, multiple users can work on the same file simultaneously in real time and see changes.
 
-**7. How much storage space do I get?**  
+**7. How much storage space do I get?**
 Storage depends on the OneDrive account and the Microsoft 365 plan you choose.
 
-**8. Can I also download files from Excel Online as Excel files?**  
+**8. Can I also download files from Excel Online as Excel files?**
 Yes, files can be downloaded in XLSX format and opened locally.

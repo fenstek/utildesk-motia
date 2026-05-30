@@ -1,6 +1,11 @@
 ---
 slug: dominknow-one
 title: DominKnow | ONE
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: AI
 price_model: Subscription
 tags:
@@ -82,26 +87,26 @@ DominKnow | ONE is generally sold as a subscription. Pricing depends on the sele
 
 ## FAQ
 
-**1. Is DominKnow | ONE suitable for beginners?**  
+**1. Is DominKnow | ONE suitable for beginners?**
 It can be used by non-developers, but the platform is broad. New users should expect onboarding time for templates, review flows and publishing settings.
 
-**2. What kinds of content can teams create?**  
+**2. What kinds of content can teams create?**
 Teams can create interactive courses, assessments, multimedia lessons, reusable learning objects and responsive training modules.
 
-**3. Can multiple people work on the same project?**  
+**3. Can multiple people work on the same project?**
 Yes. Collaboration, review and versioning are central reasons to choose the platform.
 
-**4. Does DominKnow | ONE work with learning-management systems?**  
+**4. Does DominKnow | ONE work with learning-management systems?**
 Yes. It supports common publishing standards such as SCORM and xAPI for LMS delivery and tracking.
 
-**5. Is it good for localization?**  
+**5. Is it good for localization?**
 It can support multilingual course work, but teams should test translation, review and update workflows with real course material.
 
-**6. Does the platform include AI features?**  
+**6. Does the platform include AI features?**
 The product may include AI-assisted authoring or productivity features depending on the current plan and release. Teams should evaluate those features with their own content standards.
 
-**7. Is DominKnow | ONE overkill for simple training?**  
+**7. Is DominKnow | ONE overkill for simple training?**
 Often, yes. For a single short course or informal tutorial, a simpler authoring tool may be faster.
 
-**8. What should be tested before rollout?**  
+**8. What should be tested before rollout?**
 Test course structure, roles, review process, LMS export, localization, template governance and the effort required to maintain reusable content.

@@ -1,6 +1,11 @@
 ---
 slug: whereby
 title: Whereby
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: Productivity
 price_model: Subscription
 tags:
@@ -101,28 +106,28 @@ When comparing options, Whereby should not only be measured against very similar
 
 ## FAQ
 
-**1. Do I need an app to use Whereby?**  
+**1. Do I need an app to use Whereby?**
 No, Whereby runs entirely in the browser, so no app installation is required.
 
-**2. How many participants can join a meeting?**  
+**2. How many participants can join a meeting?**
 The maximum number of participants depends on the selected plan; the free plan allows up to 4 participants.
 
-**3. Can I record meetings?**  
+**3. Can I record meetings?**
 Recordings are only available in certain paid plans.
 
-**4. Is Whereby secure and privacy-compliant?**  
+**4. Is Whereby secure and privacy-compliant?**
 Whereby places great importance on privacy and stores data on European servers.
 
-**5. Which devices are supported?**  
+**5. Which devices are supported?**
 Whereby works on desktop PCs, laptops, tablets, and smartphones through the web browser.
 
-**6. Can I brand my company in the meeting room?**  
+**6. Can I brand my company in the meeting room?**
 Branding options are included in the Premium and Business plans.
 
-**7. Is there a free version of Whereby?**  
+**7. Is there a free version of Whereby?**
 Yes, there is a free basic plan with limited features.
 
-**8. How do I invite participants to a meeting?**  
+**8. How do I invite participants to a meeting?**
 You can simply share the meeting link by email or chat; participant sign-up is not mandatory.
 
 **9. How should a team test Whereby?**
