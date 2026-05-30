@@ -361,6 +361,7 @@ const schemaDescription = data.description
 const metaDescription = schemaDescription.length > 160
   ? `${schemaDescription.slice(0, 157).trimEnd()}...`
   : schemaDescription;
+const mastheadOneliner = (oneliner || schemaDescription || getExcerpt(renderedContent)).trim();
 const featureList = extractFeatureList(renderedContent);
 const faqSchema = isCuratedTool
   ? buildFaqPageSchema(extractFaqPairsFromMarkdown(renderedContent))
@@ -443,12 +444,17 @@ const softwareApplicationSchema = {
     <!-- Breadcrumb -->
     <nav class="akte-crumb" aria-label="Breadcrumb">
       <a href="/tools/">← Tool-Index</a>
-      {primaryCategory && (
+      {primaryCategory ? (
         <Fragment>
           <span class="akte-crumb-sep">/</span>
           <a href={`/category/${primaryCategory.slug}/`}>{primaryCategory.title}</a>
         </Fragment>
-      )}
+      ) : category ? (
+        <Fragment>
+          <span class="akte-crumb-sep">/</span>
+          <span>{category}</span>
+        </Fragment>
+      ) : null}
       <span class="akte-crumb-sep">/</span>
       <span class="akte-crumb-current">{title}</span>
     </nav>
@@ -462,8 +468,8 @@ const softwareApplicationSchema = {
 
         <h1 class="akte-mast-h1">{title}<span class="akte-mast-dot">.</span></h1>
 
-        {oneliner && (
-          <p class="akte-mast-oneliner">{oneliner}</p>
+        {mastheadOneliner && (
+          <p class="akte-mast-oneliner">{mastheadOneliner}</p>
         )}
 
         {(category || price_model || displayTags.length > 0) && (
@@ -526,52 +532,54 @@ const softwareApplicationSchema = {
           </div>
         </div>
 
-        {(category || price_model) && (
-          <Fragment>
-            {category && (
-              <div class="akte-faktenblatt-row">
-                <span class="akte-faktenblatt-key">Kategorie</span>
-                <span class="akte-faktenblatt-val">{category}</span>
-              </div>
-            )}
-            {price_model && (
-              <div class="akte-faktenblatt-row">
-                <span class="akte-faktenblatt-key">Preismodell</span>
-                <span class="akte-faktenblatt-val">{price_model}</span>
-              </div>
-            )}
-            <div class="akte-faktenblatt-row is-paid">
-              <span class="akte-faktenblatt-key">Bezahlte Platzierung</span>
-              <span class="akte-faktenblatt-val">nein</span>
-            </div>
-          </Fragment>
-        )}
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Kategorie</span>
+          <span class="akte-faktenblatt-val">{category || "—"}</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Preismodell</span>
+          <span class="akte-faktenblatt-val">{price_model || "—"}</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Hosting</span>
+          <span class="akte-faktenblatt-val">Web · Anbieter</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">DPA verfügbar</span>
+          <span class="akte-faktenblatt-val">prüfen</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Open Source</span>
+          <span class="akte-faktenblatt-val">Nein</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Self-hostable</span>
+          <span class="akte-faktenblatt-val">Nein</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">API verfügbar</span>
+          <span class="akte-faktenblatt-val">prüfen</span>
+        </div>
+        <div class="akte-faktenblatt-row is-paid">
+          <span class="akte-faktenblatt-key">Bezahlte Platzierung</span>
+          <span class="akte-faktenblatt-val">nein</span>
+        </div>
 
-        {(lastCheckedShort || inIndexSinceShort || mentionedInCount > 0) && (
-          <Fragment>
-            <hr class="akte-faktenblatt-divider" />
-            <div class="akte-faktenblatt-foot">
-              {lastCheckedShort && (
-                <div>
-                  <span class="akte-faktenblatt-key">Zuletzt geprüft</span>
-                  <span>{lastCheckedShort}</span>
-                </div>
-              )}
-              {inIndexSinceShort && (
-                <div>
-                  <span class="akte-faktenblatt-key">Im Index seit</span>
-                  <span>{inIndexSinceShort}</span>
-                </div>
-              )}
-              {mentionedInCount > 0 && (
-                <div>
-                  <span class="akte-faktenblatt-key">Verwendet in</span>
-                  <span>{mentionedInCount} Ratgebern</span>
-                </div>
-              )}
-            </div>
-          </Fragment>
-        )}
+        <hr class="akte-faktenblatt-divider" />
+        <div class="akte-faktenblatt-foot">
+          <div>
+            <span class="akte-faktenblatt-key">Zuletzt geprüft</span>
+            <span>{lastCheckedShort || "—"}</span>
+          </div>
+          <div>
+            <span class="akte-faktenblatt-key">Im Index seit</span>
+            <span>{inIndexSinceShort || "—"}</span>
+          </div>
+          <div>
+            <span class="akte-faktenblatt-key">Verwendet in</span>
+            <span>{mentionedInCount > 0 ? `${mentionedInCount} Ratgebern` : "—"}</span>
+          </div>
+        </div>
       </aside>
     </header>
 
@@ -598,7 +606,7 @@ const softwareApplicationSchema = {
         <span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span>
       </div>
       <div class="akte-tldr-body">
-        <p>{oneliner || schemaDescription}</p>
+        <p>{mastheadOneliner || schemaDescription}</p>
         <ul>
           <li>{category ? `${title} sitzt in der Kategorie ${category}.` : `${title} ist als KI-Werkzeug im Index einsortiert.`}</li>
           <li>{price_model ? `Preismodell: ${price_model}.` : "Preismodell vor dem Einsatz beim Anbieter pr\u00fcfen."}</li>
