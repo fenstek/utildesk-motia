@@ -1,13 +1,13 @@
 ---
 slug: nintex-rpa
 title: Nintex RPA
-category: "AI Agents"
+category: AI Agents
 price_model: Abonnement
 tags: [automation, rpa, workflow, enterprise]
 official_url: "https://www.nintex.com/platforms/cloud-automation/rpa/"
-popularity: 27
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 26
+tier: C
+generated_at: 2026-05-27
 ---
 # Nintex RPA
 

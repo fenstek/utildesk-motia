@@ -1,13 +1,13 @@
 ---
 slug: amazon-dynamodb
 title: Amazon DynamoDB
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [database,cloud,data,developer-tools]
 official_url: "https://aws.amazon.com/dynamodb/"
-popularity: 70
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 69
+tier: C
+generated_at: 2026-05-27
 ---
 # Amazon DynamoDB
 

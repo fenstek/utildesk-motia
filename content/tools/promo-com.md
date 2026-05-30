@@ -1,13 +1,13 @@
 ---
 slug: promo-com
 title: Promo.com
-category: "AI Coding"
+category: AI Coding
 price_model: Abonnement
 tags: [video-marketing, video-editing, creator-tools]
 official_url: "https://promo.com/"
-popularity: 22
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 21
+tier: C
+generated_at: 2026-05-27
 ---
 # Promo.com
 

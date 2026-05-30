@@ -1,14 +1,14 @@
 ---
 slug: endnote
 title: EndNote
-category: "AI Research"
+category: AI Research
 price_model: Einmalzahlung
 tags: [reference-manager,citations,research]
 official_url: "https://endnote.com/de/?"
-popularity: 50
+popularity: 48
 description: EndNote ist ein Referenzmanager für lange wissenschaftliche Schreibprojekte, Literaturdatenbanken, Zitationsstile und Team-Bibliotheken.
-tier: "C"
-generated_at: "2026-05-26"
+tier: C
+generated_at: 2026-05-26
 ---
 # EndNote
 

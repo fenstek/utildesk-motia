@@ -5,7 +5,7 @@ category: Design
 price_model: Open Source
 tags: [digital-painting, illustration, creative-tools]
 official_url: "https://krita.org/en/download/krita-desktop"
-popularity: 36
+popularity: 35
 description: Krita ist eine Open-Source-Malsoftware für Illustration, Concept Art, Comics und digitale Skizzen.
 tier: C
 generated_at: 2026-05-27
