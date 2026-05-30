@@ -171,14 +171,14 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       </div>
     </div>
 
-    <div class="inv-jumpbar" aria-label="Sprungmarken">
-      <span class="inv-jump-label">Sprungmarken</span>
+    <div class="inv-jumpbar" aria-label="Nach Anfangsbuchstaben filtern">
+      <span class="inv-jump-label">Buchstabenfilter</span>
       {jumpLetters.map((letter) => (
         <a
-          href={`/tools/?sort=az#${letter.toLowerCase()}`}
+          href={`/tools/?sort=az&letter=${letter === "#" ? "num" : letter.toLowerCase()}`}
           class="inv-jump-letter"
           data-jump-letter={letter}
-          aria-label={`Zu Tools mit Anfangsbuchstabe ${letter} springen`}
+          aria-label={`Nur Tools mit Anfangsbuchstabe ${letter} anzeigen`}
         >{letter}</a>
       ))}
     </div>
@@ -382,7 +382,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const resultCount = document.getElementById('tools-result-count');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
       let pageBlocks = 1;
-      let pendingJumpLetter = window.location.hash ? window.location.hash.slice(1).toUpperCase() : '';
+      let activeLetter = '';
       let activeView = 'register';
       const selectedFilters = {
         verdict: new Set(),
@@ -394,6 +394,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const initialTag = urlParams.get('tag');
       const initialSort = urlParams.get('sort');
       const initialView = urlParams.get('view');
+      const initialLetter = urlParams.get('letter');
       const initialVerdicts = urlParams.get('verdict');
       const initialCategories = urlParams.get('category');
 
@@ -467,8 +468,17 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
             params.delete('view');
           }
           const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-          history.replaceState(null, '', nextUrl + window.location.hash);
+          history.replaceState(null, '', nextUrl);
         }
+      }
+
+      function normalizeLetterParam(value) {
+        if (!value) return '';
+        const raw = String(value).trim();
+        if (raw === '#') return '#';
+        if (raw.toLowerCase() === 'num') return '#';
+        const letter = raw.charAt(0).toUpperCase();
+        return /^[A-Z]$/.test(letter) ? letter : '';
       }
 
       function splitFilterParam(value) {
@@ -485,6 +495,12 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       splitFilterParam(initialCategories).forEach(function(value) {
         selectedFilters.category.add(value);
       });
+      activeLetter = normalizeLetterParam(initialLetter || (window.location.hash ? window.location.hash.slice(1) : ''));
+      if (window.location.hash && activeLetter && !initialLetter) {
+        const params = new URLSearchParams(window.location.search);
+        params.set('letter', activeLetter === '#' ? 'num' : activeLetter.toLowerCase());
+        history.replaceState(null, '', '/tools/?' + params.toString());
+      }
 
       function syncFilterUrl() {
         const params = new URLSearchParams(window.location.search);
@@ -497,6 +513,11 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           params.set('category', Array.from(selectedFilters.category).join(','));
         } else {
           params.delete('category');
+        }
+        if (activeLetter) {
+          params.set('letter', activeLetter === '#' ? 'num' : activeLetter.toLowerCase());
+        } else {
+          params.delete('letter');
         }
         const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
         history.replaceState(null, '', nextUrl);
@@ -527,7 +548,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       function filterTools() {
         const query = searchInput.value.toLowerCase().trim();
         const sortMode = sortSelect ? sortSelect.value : 'az';
-        const filtered = cards.filter(function(card) {
+        const baseFiltered = cards.filter(function(card) {
           const title = card.getAttribute('data-title') || '';
           const slug = card.getAttribute('data-slug') || '';
           const tags = card.getAttribute('data-tags') || '';
@@ -547,6 +568,14 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
 
           return searchMatch && verdictMatch && categoryMatch;
         });
+
+        const availableLetters = new Set(baseFiltered.map(function(card) {
+          return card.getAttribute('data-letter') || '';
+        }));
+
+        let filtered = activeLetter
+          ? baseFiltered.filter(function(card) { return (card.getAttribute('data-letter') || '') === activeLetter; })
+          : baseFiltered.slice();
 
         filtered.sort(function(a, b) {
           const aTitle = (a.getAttribute('data-title') || '').toLowerCase();
@@ -569,18 +598,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           return aTitle.localeCompare(bTitle, 'de');
         });
 
-        let limit = getStep() * pageBlocks;
-        let jumpTarget = null;
-        if (pendingJumpLetter) {
-          jumpTarget = filtered.find(function(card) {
-            return (card.getAttribute('data-letter') || '') === pendingJumpLetter;
-          });
-          if (jumpTarget) {
-            const targetIndex = filtered.indexOf(jumpTarget);
-            limit = Math.max(limit, targetIndex + 1);
-            pageBlocks = Math.ceil(limit / getStep());
-          }
-        }
+        const limit = getStep() * pageBlocks;
         const visibleCards = filtered.slice(0, limit);
 
         toolsGrid.innerHTML = '';
@@ -624,19 +642,12 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
 
         jumpLinks.forEach(function(link) {
           const letter = link.getAttribute('data-jump-letter') || '';
-          const available = filtered.some(function(card) { return (card.getAttribute('data-letter') || '') === letter; });
+          const available = availableLetters.has(letter) || activeLetter === letter;
           link.classList.toggle('is-disabled', !available);
-          link.classList.toggle('is-active', Boolean(pendingJumpLetter && pendingJumpLetter === letter && available));
+          link.classList.toggle('is-active', Boolean(activeLetter && activeLetter === letter && available));
           link.setAttribute('aria-disabled', available ? 'false' : 'true');
+          link.setAttribute('aria-pressed', Boolean(activeLetter && activeLetter === letter && available) ? 'true' : 'false');
         });
-
-        if (jumpTarget) {
-          const targetToScroll = jumpTarget;
-          requestAnimationFrame(function() {
-            targetToScroll.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          });
-        }
-        pendingJumpLetter = '';
       }
 
       function resetAndFilter() {
@@ -675,14 +686,19 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           event.preventDefault();
           const letter = link.getAttribute('data-jump-letter') || '';
           if (!letter || link.getAttribute('aria-disabled') === 'true') return;
-          pendingJumpLetter = letter;
+          activeLetter = activeLetter === letter ? '' : letter;
           if (sortSelect) {
             sortSelect.value = 'az';
             try { localStorage.setItem(sortStorageKey, 'az'); } catch (e) {}
           }
           const params = new URLSearchParams(window.location.search);
           params.set('sort', 'az');
-          const nextUrl = '/tools/?' + params.toString() + '#' + letter.toLowerCase();
+          if (activeLetter) {
+            params.set('letter', activeLetter === '#' ? 'num' : activeLetter.toLowerCase());
+          } else {
+            params.delete('letter');
+          }
+          const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
           history.pushState(null, '', nextUrl);
           resetAndFilter();
         });
