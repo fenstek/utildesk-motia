@@ -7684,3 +7684,117 @@ html[data-design="decision"] .akte-article-body .inline-provider-link p::first-l
   font: inherit !important;
   color: inherit !important;
 }
+
+/* KI-Blatt footer normalization: homepage and interior pages use one exact footer. */
+html[data-design="decision"] .site-footer {
+  background: transparent !important;
+  border-top: 0 !important;
+}
+
+html[data-design="decision"] .site-footer .container {
+  width: 1376px !important;
+  max-width: calc(100% - 64px) !important;
+  margin: 0 auto 56px !important;
+  padding: 40px 56px 56px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) max-content !important;
+  align-items: flex-start !important;
+  gap: 48px !important;
+  background: #0c0c0a !important;
+  color: #f6f4ee !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  box-shadow: none !important;
+  font: 12px/1.45 "JetBrains Mono", monospace !important;
+}
+
+html[data-design="decision"] .footer-content {
+  display: contents !important;
+}
+
+html[data-design="decision"] .footer-brand {
+  display: grid !important;
+  gap: 14px !important;
+  max-width: none !important;
+  color: #f6f4ee !important;
+  font: inherit !important;
+  font-weight: 400 !important;
+}
+
+html[data-design="decision"] .footer-home {
+  width: fit-content !important;
+  color: #f6f4ee !important;
+  font: inherit !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+html[data-design="decision"] .footer-home:hover,
+html[data-design="decision"] .footer-home:focus-visible,
+html[data-design="decision"] .footer-links a:hover,
+html[data-design="decision"] .footer-links a:focus-visible {
+  color: #e0261d !important;
+}
+
+html[data-design="decision"] .footer-note {
+  display: grid !important;
+  gap: 4px !important;
+  color: #b6b1a0 !important;
+  font: inherit !important;
+}
+
+html[data-design="decision"] .footer-note span {
+  display: block !important;
+  white-space: nowrap !important;
+}
+
+html[data-design="decision"] .footer-copyright {
+  color: #b6b1a0 !important;
+  font: inherit !important;
+}
+
+html[data-design="decision"] .footer-copy {
+  display: none !important;
+}
+
+html[data-design="decision"] .footer-links {
+  display: grid !important;
+  grid-template-columns: repeat(7, max-content) !important;
+  justify-content: flex-end !important;
+  align-items: start !important;
+  gap: 14px 22px !important;
+  text-align: right !important;
+  font: inherit !important;
+}
+
+html[data-design="decision"] .footer-links a {
+  color: #f6f4ee !important;
+  font: inherit !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 1280px) {
+  html[data-design="decision"] .footer-links {
+    grid-auto-flow: column !important;
+    grid-template-columns: repeat(2, max-content) !important;
+    grid-template-rows: repeat(4, auto) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  html[data-design="decision"] .site-footer .container {
+    max-width: calc(100% - 20px) !important;
+    grid-template-columns: 1fr !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  html[data-design="decision"] .footer-note span {
+    white-space: normal !important;
+  }
+
+  html[data-design="decision"] .footer-links {
+    justify-content: start !important;
+    text-align: left !important;
+  }
+}
