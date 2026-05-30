@@ -4,10 +4,11 @@ title: Dialogflow CX
 category: "AI Chatbots"
 price_model: "Je nach Plan"
 tags: [chatbot, automation]
-official_url: "https://cloud.google.com/dialogflow/cx"
+official_url: "https://docs.cloud.google.com/dialogflow/cx/docs"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-15"
+lastReviewed: "2026-05-30"
 ---
 # Dialogflow CX
 

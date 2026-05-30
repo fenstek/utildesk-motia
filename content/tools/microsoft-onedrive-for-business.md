@@ -4,10 +4,11 @@ title: Microsoft OneDrive for Business
 category: "AI Agents"
 price_model: Abonnement
 tags: [assistant, automation, workflow]
-official_url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/business/online-cloud-storage"
+official_url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-16"
+lastReviewed: "2026-05-30"
 ---
 # Microsoft OneDrive for Business
 

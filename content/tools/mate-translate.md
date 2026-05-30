@@ -4,10 +4,11 @@ title: Mate Translate
 category: "AI Agents"
 price_model: "Je nach Plan"
 tags: [translation, workflow]
-official_url: "https://www.matetranslate.com/"
+official_url: "https://matetranslate.net/"
 popularity: 0
 tier: "D"
 generated_at: "2026-05-12"
+lastReviewed: "2026-05-30"
 ---
 # Mate Translate
 

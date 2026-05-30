@@ -4,10 +4,11 @@ title: Marketo
 category: "Marketing & Vertrieb"
 price_model: Abonnement
 tags: [marketing, automation, crm, analytics]
-official_url: "https://business.adobe.com/products/marketo.html"
+official_url: "https://business.adobe.com/products/marketo/adobe-marketo.html"
 popularity: 0
 tier: "C"
 generated_at: "2026-05-15"
+lastReviewed: "2026-05-30"
 ---
 # Marketo
 
