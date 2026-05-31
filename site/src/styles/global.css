@@ -6732,6 +6732,25 @@ html[data-design="decision"]:has(.ds-template) .ds-frame {
   max-width: calc(100vw - 64px);
 }
 
+/* Homepage hard width lock: the sticky paper header and the first paper sheet
+   must be measured from the same viewport formula.  Earlier rules mixed
+   header width, stage padding and frame max-width, which could make the
+   hero sheet visually wider than the navigation at some zoom/view sizes. */
+html[data-design="decision"]:has(.ds-template) {
+  --ki-sheet-width: min(1376px, calc(100vw - 64px));
+}
+
+html[data-design="decision"]:has(.ds-template) .ki-blatt-header.site-header,
+html[data-design="decision"]:has(.ds-template) .ds-frame {
+  width: var(--ki-sheet-width) !important;
+  max-width: var(--ki-sheet-width) !important;
+}
+
+html[data-design="decision"]:has(.ds-template) .ds-stage {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 html[data-design="decision"] .ki-blatt-header.site-header {
   margin-top: 64px;
 }
