@@ -1,7 +1,7 @@
 ---
 slug: "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo"
 title: "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix"
-date: 2026-05-19
+date: 2026-05-31
 category: "Analysis"
 eyebrow: "AI Analysis"
 excerpt: "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."

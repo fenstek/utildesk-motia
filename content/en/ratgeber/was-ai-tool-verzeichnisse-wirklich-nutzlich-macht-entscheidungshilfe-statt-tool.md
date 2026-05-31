@@ -1,7 +1,7 @@
 ---
 slug: "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool"
 title: "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists"
-date: 2026-05-19
+date: 2026-05-31
 category: "Analysis"
 eyebrow: "AI Analysis"
 excerpt: "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."

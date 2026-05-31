@@ -1,7 +1,7 @@
 ---
 slug: "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool"
 title: "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste"
-date: 2026-05-19
+date: 2026-05-31
 category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
