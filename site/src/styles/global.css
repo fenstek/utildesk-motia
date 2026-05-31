@@ -6725,6 +6725,13 @@ html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
   max-width: calc(100% - 64px);
 }
 
+/* Homepage frame parity: .ds-frame lives inside .ds-stage, so percentage max-width
+   was calculated after stage padding and made the paper narrower than the header
+   on medium desktop viewports. Keep it tied to the viewport like the header. */
+html[data-design="decision"]:has(.ds-template) .ds-frame {
+  max-width: calc(100vw - 64px);
+}
+
 html[data-design="decision"] .ki-blatt-header.site-header {
   margin-top: 64px;
 }
