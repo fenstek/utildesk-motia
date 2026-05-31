@@ -1,18 +1,20 @@
 ---
 slug: soundraw
 title: Soundraw
+
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
 editorial_reviewed_at: 2026-05-31
 editorial_status: "manual_polished"
 editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "Audio & Video"
+
 price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://soundraw.io/"
-popularity: 14
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 13
+tier: C
+generated_at: 2026-05-27
 ---
 # Soundraw
 
