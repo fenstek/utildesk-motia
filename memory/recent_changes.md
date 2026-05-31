@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-05-27_
 
+
+## 2026-05-31 - Rising AI tools batch
+
+- Added 20 rising AI tool cards from the Sheet seed into DE/EN content: Cline, Kilo Code, OpenCode, Qodo, Google Antigravity, ChatGPT Atlas, Perplexity Comet, Browserbase, Stagehand, Skyvern, BrowserOS, LangGraph, Pydantic AI, Mastra, Mem0, Composio, Base44, YouWare, Napkin AI, and Krea AI.
+- Replaced rejected SVG-like placeholders with 20 story-forward ChatGPT/imagegen WebP illustrations in `content/images/tools/*-editorial.webp`.
+- Expanded the new cards with full manual editorial structure and registered the image batch in `docs/04_operations/tool_card_illustration_registry.json`.
+- Validation passed: editorial template guard, tool quality guard, English translation guard, newest-sort check, full Astro build, and dist image/page verification.
 ## 2026-05-27 - Tool illustration duplicate backfill
 
 - Audited the latest story illustration batches and found four duplicate registry entries from earlier illustrated cards: `theia`, `trello-mit-butler`, `uipath`, and `veryfi`.
