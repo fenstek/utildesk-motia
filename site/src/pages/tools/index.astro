@@ -3,7 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { tagHref } from "../../lib/tagRoutes";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import { compareToolsByNewest } from "../../lib/toolAddedAt";
-import { listDisplayTools } from "../../lib/toolDisplay";
+import { listDisplayTools, type DisplayTool } from "../../lib/toolDisplay";
+import { getToolEditorialVerdict } from "../../lib/toolVerdict";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
@@ -52,6 +53,8 @@ const getToolVerdict = (index: number) => {
   if (position % 7 === 0) return verdictOptions[1];
   return verdictOptions[0];
 };
+const getDisplayToolVerdict = (tool: DisplayTool, index: number) =>
+  tool.editorialVerdict ? getToolEditorialVerdict(tool.editorialVerdict, "de") : getToolVerdict(index);
 const getToolLetter = (title: string) => {
   const first = title
     .trim()
@@ -62,10 +65,12 @@ const getToolLetter = (title: string) => {
   return /^[A-Z]$/.test(first) ? first : "#";
 };
 const verdictCounts = enabledTools.reduce((map, _tool, index) => {
-  const verdict = getToolVerdict(index).value;
+  const verdict = getDisplayToolVerdict(_tool, index).value;
   map.set(verdict, (map.get(verdict) || 0) + 1);
   return map;
 }, new Map<string, number>());
+const recommendedCount = verdictCounts.get("recommend") || 0;
+const rejectedCount = verdictCounts.get("reject") || 0;
 
 const toolsItemListSchema = {
   "@context": "https://schema.org",
@@ -127,11 +132,11 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           <span>Akten gesamt</span>
         </div>
         <div class="inv-stat">
-          <strong>621</strong>
+          <strong>{recommendedCount.toLocaleString("de-DE")}</strong>
           <span>Empfohlen</span>
         </div>
         <div class="inv-stat">
-          <strong>83</strong>
+          <strong>{rejectedCount.toLocaleString("de-DE")}</strong>
           <span>Nicht empfohlen</span>
         </div>
         <div class="inv-stat inv-stat-paid">
@@ -234,7 +239,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   <!-- Tools Grid -->
   <div class="tools-grid inv-register inv-view-register" id="tools-grid">
     {enabledTools.map((tool, idx) => {
-      const verdict = getToolVerdict(idx);
+      const verdict = getDisplayToolVerdict(tool, idx);
       const categoryValue = (tool.category || "Unsortiert").toLowerCase();
       return (
       <a

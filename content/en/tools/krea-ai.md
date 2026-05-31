@@ -6,6 +6,7 @@ editorial_reviewed_by: "Utildesk manual editorial pass"
 editorial_reviewed_at: 2026-05-31
 editorial_status: "manual_polished"
 editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_verdict: "recommend"
 category: "Design"
 price_model: "Freemium"
 tags: [image, video, design, generative-ai]
@@ -13,7 +14,7 @@ official_url: "https://www.krea.ai/"
 popularity: 0
 source_language: de
 translation: full
-tier: D
+tier: B
 generated_at: 2026-05-31
 ---
 # Krea AI

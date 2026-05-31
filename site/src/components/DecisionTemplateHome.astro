@@ -1,4 +1,6 @@
 ---
+import { getToolEditorialVerdict, type ToolEditorialVerdictValue } from "../lib/toolVerdict";
+
 interface ToolItem {
   slug: string;
   title: string;
@@ -8,6 +10,7 @@ interface ToolItem {
   tags?: string[];
   providerHost?: string | null;
   homeCardLogo?: string | null;
+  editorialVerdict?: ToolEditorialVerdictValue | null;
 }
 
 interface ArticleItem {
@@ -218,6 +221,7 @@ const shortCategory = (category?: string | null) => {
 };
 
 const indexVerdictFor = (tool: ToolItem, index: number) => {
+  if (tool.editorialVerdict) return getToolEditorialVerdict(tool.editorialVerdict, locale);
   const haystack = `${tool.title} ${(tool.tags || []).join(" ")} ${tool.excerpt || ""}`.toLowerCase();
   if (haystack.includes("detector") || haystack.includes("autogpt") || haystack.includes("agent")) {
     return index % 2 === 0

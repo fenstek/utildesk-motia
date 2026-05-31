@@ -18,6 +18,7 @@ import {
 } from "../../lib/toolQuality.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
+import { getToolEditorialVerdict } from "../../lib/toolVerdict";
 import {
   buildBreadcrumbSchema,
   buildPublisherOrganization,
@@ -50,6 +51,11 @@ const searchIndexDecision = getToolSearchIndexDecision(entry, {
 });
 const toolQuality = classifyToolEntry(entry);
 const isCuratedTool = isCuratedTier(toolQuality.tier);
+const editorialVerdict = getToolEditorialVerdict(
+  data.editorial_verdict,
+  "de",
+  isCuratedTool ? "recommend" : "caution",
+);
 const renderedContent = isCuratedTool ? content : stripTemplateBoilerplate(content);
 
 const official_url = data.official_url ? String(data.official_url) : "";
@@ -586,16 +592,16 @@ const softwareApplicationSchema = {
     <section class="akte-verdict-card" aria-label="Verdikt der Redaktion">
       <span class="akte-verdict-tab">Verdikt der Redaktion</span>
       <div class="akte-verdict-main">
-        <span class="akte-verdict-glyph">{"\u2713"}</span>
+        <span class="akte-verdict-glyph">{editorialVerdict.icon}</span>
         <div class="akte-verdict-copy">
-          <p class="akte-verdict-kicker">{isCuratedTool ? "Empfehlen" : "Mit Vorbehalt"}</p>
-          <h2>{isCuratedTool ? "Empfehlen \u2014 als Werkzeug, nicht als Autopilot." : "Mit Vorbehalt \u2014 erst pr\u00fcfen, dann produktiv nutzen."}</h2>
-          <p>{isCuratedTool ? "Sicherer Start mit klarer Aufgabe, menschlicher Pr\u00fcfung und nachvollziehbaren Datenfl\u00fcssen." : "Dieser Eintrag basiert auf \u00f6ffentlichen Quellen und braucht vor dem Einsatz eine eigene Pr\u00fcfung."}</p>
+          <p class="akte-verdict-kicker">{editorialVerdict.detailKicker}</p>
+          <h2>{editorialVerdict.detailHeadline}</h2>
+          <p>{editorialVerdict.detailText}</p>
         </div>
         <aside class="akte-verdict-trust">
           <strong>Vertrauen</strong>
           <span class="akte-trust-bars"><i></i><i></i><i></i><i></i><em></em></span>
-          <small>{isCuratedTool ? "4 / 5 \u00b7 hoch" : "2 / 5 \u00b7 pr\u00fcfen"}</small>
+          <small>{editorialVerdict.trustLabel}</small>
         </aside>
       </div>
     </section>

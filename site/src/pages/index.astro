@@ -11,6 +11,7 @@ import { normalizePriceModel } from "../lib/priceModel";
 import { tagHref } from "../lib/tagRoutes";
 import { CATEGORIES } from "../lib/categories";
 import { listRatgeberEntries } from "../lib/ratgeber";
+import { normalizeToolEditorialVerdict } from "../lib/toolVerdict";
 import {
   buildCollectionPageSchema,
   buildOrganizationSchema,
@@ -123,6 +124,7 @@ const tools = await Promise.all(
       homeCardLogo,
       providerHost: getProviderHost(providerUrl),
       homeCardLogoFallbacks,
+      editorialVerdict: data.editorial_verdict ? normalizeToolEditorialVerdict(data.editorial_verdict) : null,
       fallbackIcon: resolveCategoryIcon(category, tags),
     };
   })

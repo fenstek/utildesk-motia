@@ -6,12 +6,13 @@ editorial_reviewed_by: "Utildesk manual editorial pass"
 editorial_reviewed_at: 2026-05-31
 editorial_status: "manual_polished"
 editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_verdict: "caution"
 category: "Automatisierung"
 price_model: "Freemium"
 tags: [browser, automation, agents, data]
 official_url: "https://www.skyvern.com/"
 popularity: 0
-tier: D
+tier: B
 generated_at: 2026-05-31
 ---
 # Skyvern

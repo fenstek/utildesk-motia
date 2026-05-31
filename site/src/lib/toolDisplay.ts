@@ -4,6 +4,7 @@ import { normalizePriceModel } from "./priceModel";
 import { resolveLocalLogo } from "./resolveLogoPath";
 import { getToolAddedAtInfo } from "./toolAddedAt";
 import { listActiveToolEntries } from "./toolEntries.mjs";
+import { normalizeToolEditorialVerdict, type ToolEditorialVerdictValue } from "./toolVerdict";
 
 type Locale = "de" | "en";
 
@@ -22,6 +23,7 @@ export type DisplayTool = {
   addedAtMs: number;
   addedAtOrderMs: number;
   popularity: number;
+  editorialVerdict: ToolEditorialVerdictValue | null;
   fallbackIcon: "ai" | "automation" | "design" | "generic";
 };
 
@@ -113,6 +115,9 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
     addedAtMs: addedAtInfo.addedAtMs,
     addedAtOrderMs: addedAtInfo.addedAtOrderMs,
     popularity,
+    editorialVerdict: entry.data.editorial_verdict
+      ? normalizeToolEditorialVerdict(entry.data.editorial_verdict)
+      : null,
     fallbackIcon: resolveToolFallbackIcon(category, tags),
   };
 };

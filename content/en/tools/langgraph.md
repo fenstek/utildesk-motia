@@ -6,6 +6,7 @@ editorial_reviewed_by: "Utildesk manual editorial pass"
 editorial_reviewed_at: 2026-05-31
 editorial_status: "manual_polished"
 editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_verdict: "recommend"
 category: "Developer Tools"
 price_model: "Open Source"
 tags: [ai-agents, orchestration, developer-tools, framework]
@@ -13,7 +14,7 @@ official_url: "https://www.langchain.com/langgraph"
 popularity: 0
 source_language: de
 translation: full
-tier: D
+tier: B
 generated_at: 2026-05-31
 ---
 # LangGraph
