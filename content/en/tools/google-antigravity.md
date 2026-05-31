@@ -6,6 +6,7 @@ editorial_reviewed_by: "Utildesk manual editorial pass"
 editorial_reviewed_at: 2026-05-31
 editorial_status: "manual_polished"
 editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_verdict: "caution"
 category: "Developer Tools"
 price_model: "Freemium"
 tags: [ai, coding, ide, agents]
@@ -13,7 +14,7 @@ official_url: "https://antigravity.google/"
 popularity: 0
 source_language: de
 translation: full
-tier: D
+tier: B
 generated_at: 2026-05-31
 ---
 # Google Antigravity
