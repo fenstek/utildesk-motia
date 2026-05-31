@@ -7903,6 +7903,119 @@ html[data-design="decision"] .inv-jump-letter.is-disabled {
   cursor: not-allowed !important;
 }
 
+html[data-design="decision"] .inv-register.inv-view-register {
+  grid-template-columns: 1fr !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+  min-height: 118px !important;
+  grid-template-columns:
+    64px
+    minmax(280px, 1.55fr)
+    minmax(92px, .38fr)
+    minmax(190px, .72fr)
+    minmax(190px, .62fr)
+    28px !important;
+  grid-template-rows: auto !important;
+  column-gap: 18px !important;
+  row-gap: 0 !important;
+  align-items: center !important;
+  padding: 18px 20px !important;
+  border-right: 0 !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-no {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  font-size: 18px !important;
+  align-self: center !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .tool-header {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  display: grid !important;
+  grid-template-columns: 34px minmax(0, 1fr) !important;
+  gap: 12px !important;
+  align-items: center !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .tool-image {
+  display: flex !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .tool-card-logo {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .tool-title {
+  font-size: clamp(24px, 1.7vw, 34px) !important;
+  line-height: .98 !important;
+  margin: 0 0 6px !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .tools-desc {
+  -webkit-line-clamp: 2 !important;
+  font-size: clamp(15px, .98vw, 18px) !important;
+  line-height: 1.22 !important;
+  max-width: 70ch !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict {
+  grid-column: 3 !important;
+  grid-row: 1 !important;
+  justify-self: start !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict strong {
+  font-size: 12px !important;
+  font-family: var(--mono) !important;
+  line-height: 1.05 !important;
+  color: var(--ink) !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict strong::before {
+  display: inline-block !important;
+  margin-right: 7px !important;
+  vertical-align: -.18em !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags {
+  grid-column: 4 !important;
+  grid-row: 1 !important;
+  align-self: center !important;
+  max-height: 48px !important;
+  overflow: hidden !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-tag {
+  border: 1px solid var(--rule) !important;
+  padding: 4px 7px !important;
+  line-height: 1 !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+  grid-column: 5 !important;
+  grid-row: 1 !important;
+  justify-content: flex-start !important;
+  align-self: center !important;
+  flex-wrap: wrap !important;
+}
+
+html[data-design="decision"] .inv-register.inv-view-register .inv-row-open {
+  grid-column: 6 !important;
+  grid-row: 1 !important;
+  display: block !important;
+  justify-self: end !important;
+  color: var(--blue) !important;
+}
+
 html[data-design="decision"] .inv-register.inv-view-setzkasten {
   grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
 }
@@ -8011,6 +8124,31 @@ html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-tag {
   html[data-design="decision"] .inv-register.inv-view-setzkasten {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+    grid-template-columns: 54px minmax(0, 1fr) 88px !important;
+    grid-template-rows: auto auto auto !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .tool-header {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    grid-column: 2 / 4 !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags {
+    grid-row: 2 !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    grid-row: 3 !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-open {
+    display: none !important;
+  }
 }
 
 @media (max-width: 860px) {
@@ -8026,5 +8164,18 @@ html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-tag {
   }
   html[data-design="decision"] .inv-register.inv-view-setzkasten {
     grid-template-columns: 1fr !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+    grid-template-columns: 44px minmax(0, 1fr) !important;
+    padding: 16px 14px !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .tool-header,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    grid-column: 2 !important;
+  }
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
   }
 }

@@ -154,8 +154,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       </div>
       <div class="inv-mode-left" aria-label="Anzeige">
         <span class="inv-mode-label">Anzeige</span>
-        <button type="button" class="inv-mode-button inv-mode-button-active" data-view-mode="register" aria-pressed="true">▦ Register</button>
-        <button type="button" class="inv-mode-button" data-view-mode="setzkasten" aria-pressed="false">▪ Setzkasten</button>
+        <button type="button" class="inv-mode-button inv-mode-button-active" data-view-mode="list" aria-pressed="true">Liste</button>
+        <button type="button" class="inv-mode-button" data-view-mode="tiles" aria-pressed="false">Kacheln</button>
       </div>
       <div class="inv-sort-tabs">
         <label class="inv-mode-label" for="sort-select">Sortierung</label>
@@ -232,7 +232,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     </div>
   </aside>
   <!-- Tools Grid -->
-  <div class="tools-grid inv-register" id="tools-grid">
+  <div class="tools-grid inv-register inv-view-register" id="tools-grid">
     {enabledTools.map((tool, idx) => {
       const verdict = getToolVerdict(idx);
       const categoryValue = (tool.category || "Unsortiert").toLowerCase();
@@ -383,7 +383,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const clearFilterBtn = document.getElementById('clear-filter-btn');
       let pageBlocks = 1;
       let activeLetter = '';
-      let activeView = 'register';
+      let activeView = 'list';
       const selectedFilters = {
         verdict: new Set(),
         category: new Set(),
@@ -436,20 +436,22 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       }
 
       function getStoredView() {
-        if (initialView === 'setzkasten' || initialView === 'register') return initialView;
+        if (initialView === 'tiles' || initialView === 'setzkasten') return 'tiles';
+        if (initialView === 'list' || initialView === 'register') return 'list';
         try {
           const storedView = localStorage.getItem('utildesk-tools-view');
-          if (storedView === 'setzkasten' || storedView === 'register') return storedView;
+          if (storedView === 'tiles' || storedView === 'setzkasten') return 'tiles';
+          if (storedView === 'list' || storedView === 'register') return 'list';
         } catch (e) {
           // ignore localStorage access errors
         }
-        return 'register';
+        return 'list';
       }
 
       function applyViewMode(viewMode, updateUrl) {
-        activeView = viewMode === 'setzkasten' ? 'setzkasten' : 'register';
-        toolsGrid.classList.toggle('inv-view-setzkasten', activeView === 'setzkasten');
-        toolsGrid.classList.toggle('inv-view-register', activeView === 'register');
+        activeView = viewMode === 'tiles' || viewMode === 'setzkasten' ? 'tiles' : 'list';
+        toolsGrid.classList.toggle('inv-view-setzkasten', activeView === 'tiles');
+        toolsGrid.classList.toggle('inv-view-register', activeView === 'list');
         viewButtons.forEach(function(button) {
           const active = button.getAttribute('data-view-mode') === activeView;
           button.classList.toggle('inv-mode-button-active', active);
@@ -462,8 +464,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         }
         if (updateUrl) {
           const params = new URLSearchParams(window.location.search);
-          if (activeView === 'setzkasten') {
-            params.set('view', activeView);
+          if (activeView === 'tiles') {
+            params.set('view', 'tiles');
           } else {
             params.delete('view');
           }
