@@ -1,18 +1,20 @@
 ---
 slug: simplybook-me
 title: SimplyBook.me
+
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
 editorial_reviewed_at: 2026-05-31
 editorial_status: "manual_polished"
 editorial_batch: "2026-05-31-complete-tool-card-polish"
 category: "AI Coding"
+
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [booking,scheduling,saas]
 official_url: "https://simplybook.me/en/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 15
+tier: C
+generated_at: 2026-05-17
 ---
 # SimplyBook.me
 

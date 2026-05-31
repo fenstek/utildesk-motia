@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://azure.microsoft.com/en-us/products/api-management"
-popularity: 87
+popularity: 88
 tier: D
 generated_at: 2026-05-28
 ---

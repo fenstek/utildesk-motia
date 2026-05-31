@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.crowdstrike.com/en-us/platform/"
-popularity: 53
+popularity: 52
 tier: C
 generated_at: 2026-05-28
 ---
