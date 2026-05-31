@@ -1,10 +1,9 @@
----
+﻿---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { listRatgeberEntries } from "../../../lib/ratgeber";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
-  SITE_LANGUAGE_EN,
   SITE_URL,
 } from "../../../lib/siteMeta";
 
@@ -19,7 +18,6 @@ const normalizeMetaLabel = (value: string) =>
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/^ai[-\s]+/, "")
     .replace(/^ki[-\s]+/, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
@@ -37,13 +35,12 @@ const itemListSchema = {
     url: `https://tools.utildesk.de/en/ratgeber/${article.slug}/`,
   })),
 };
-const collectionSchema = buildCollectionPageSchema({
-  name: "AI Guides",
-  description: "Practical AI guides, tool comparisons and workflow briefings.",
+const ratgeberCollectionSchema = buildCollectionPageSchema({
+  name: "Utildesk Guides",
+  description: "Editorial AI guides, comparisons and workflow briefings for productive teams.",
   url: `${SITE_URL}/en/ratgeber/`,
   about: ["AI guides", "AI workflows", "Tool comparisons"],
   mainEntity: itemListSchema,
-  inLanguage: SITE_LANGUAGE_EN,
 });
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Directory", url: `${SITE_URL}/en/` },
@@ -58,16 +55,34 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/en/ratgeber/" />
-    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(ratgeberCollectionSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <section class="ratgeber-hero">
-    <p class="rg-eyebrow">Guides</p>
-    <h1>Comparisons and workflow briefings<br/>for practical AI work</h1>
-    <p class="rg-sub">Editorial context for teams that want to use AI productively, not just experiment with isolated prompts.</p>
-  </section>
+  <div class="tool-akte rg-wrap">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/">← Directory</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Guide archive</span>
+    </nav>
+    <header class="inv-head rg-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">↳ Decision desk · Issue № 049 · Guides</div>
+        <h1 class="inv-head-h1">{articles.length} Guides<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          Editorial assessments, comparisons and workflow models for teams
+          that want to use AI productively, not just experiment with isolated prompts.
+        </p>
+      </div>
+      <div class="inv-head-stats" role="group" aria-label="Guide metrics">
+        <div class="inv-stat"><strong>{articles.length}</strong><span>Guides total</span></div>
+        <div class="inv-stat"><strong>{articles.filter(a => a.data.coverImage).length}</strong><span>With illustration</span></div>
+        <div class="inv-stat"><strong>{Math.round(articles.reduce((s, a) => s + (Number(a.data.readTime) || 0), 0) / Math.max(articles.length, 1))}</strong><span>avg min read</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>0</strong><span>Paid slots</span></div>
+      </div>
+    </header>
+  </div>
 
   <section class="rg-list">
     {articles.length === 0 ? (
@@ -76,6 +91,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       const published = article.data.date
         ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(article.data.date))
         : "";
+
       return (
         <a href={`/en/ratgeber/${article.slug}/`} class="rg-card">
           {article.data.coverImage ? (
@@ -323,3 +339,4 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     }
   }
 </style>
+

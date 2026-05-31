@@ -1,5 +1,7 @@
----
+﻿---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { marked } from "marked";
 import { getRatgeberEntry, listRatgeberEntries } from "../../../lib/ratgeber";
 import { tagHref } from "../../../lib/tagRoutes";
@@ -7,6 +9,7 @@ import { getWordCountFromMarkdown } from "../../../lib/machineReadable";
 import {
   buildBreadcrumbSchema,
   buildPublisherOrganization,
+  SITE_LANGUAGE_EN,
   SITE_URL,
   toAbsoluteUrl,
 } from "../../../lib/siteMeta";
@@ -29,16 +32,40 @@ if (!entry) {
 }
 
 const { data, content } = entry;
+const localAssetExists = (src: string | null | undefined) => {
+  if (!src) return false;
+  const value = String(src);
+  if (!value.startsWith("/")) return true;
+  return existsSync(join(process.cwd(), "public", value));
+};
+const safeCoverImage = data.coverImage && localAssetExists(String(data.coverImage)) ? String(data.coverImage) : null;
+const safeSecondaryImage = data.secondaryImage && localAssetExists(String(data.secondaryImage)) ? String(data.secondaryImage) : null;
 const rawArticleHtml = String(marked.parse(content));
-const articleHtml = rawArticleHtml.replace(
+let articleHtml = rawArticleHtml.replace(
   /<p>\s*(<img\b[^>]*>)\s*<\/p>/g,
   '<figure class="article-inline-image">$1</figure>',
 );
+articleHtml = articleHtml.replace(
+  /<figure class="article-inline-image">\s*<img\b([^>]*?)src="([^"]+)"([^>]*)>\s*<\/figure>/g,
+  (match, before, src, after) => localAssetExists(src) ? match : "",
+);
 const title = String(data.title ?? slug);
+
+// Build lookup: tag name (lowercase) â†’ tool href, for deduplication
+const toolHrefMap = new Map<string, string>();
+for (const t of (data.relatedTools ?? [])) {
+  toolHrefMap.set(String(t.title).toLowerCase(), String(t.href));
+}
+// Tags without a matching relatedTool are rendered as normal tag pills
+const tagSet = new Set((data.tags ?? []).map((t: string) => String(t).toLowerCase()));
 const description = String(data.excerpt ?? title);
 const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(content));
 const published = data.date
-  ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.date))
+  ? new Intl.DateTimeFormat("en", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(data.date))
   : "";
 
 const normalizeMetaLabel = (value: string) =>
@@ -46,7 +73,6 @@ const normalizeMetaLabel = (value: string) =>
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/^ai[-\s]+/, "")
     .replace(/^ki[-\s]+/, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
@@ -70,12 +96,13 @@ const addRenderedPill = (label: string) => {
   return true;
 };
 
-const relatedToolSet = new Set((data.relatedTools ?? []).map((tool: {title: string}) => normalizeMetaLabel(tool.title)));
+const relatedToolSet = new Set((data.relatedTools ?? []).map((t: {title: string}) => normalizeMetaLabel(t.title)));
+const wordCount = getWordCountFromMarkdown(content);
 const imageUrls = [
-  data.coverImage ? toAbsoluteUrl(String(data.coverImage)) : null,
-  data.secondaryImage ? toAbsoluteUrl(String(data.secondaryImage)) : null,
+  safeCoverImage ? toAbsoluteUrl(safeCoverImage) : null,
+  safeSecondaryImage ? toAbsoluteUrl(safeSecondaryImage) : null,
 ].filter(Boolean);
-const canonicalUrl = `${SITE_URL}/en/ratgeber/${slug}/`;
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -84,15 +111,17 @@ const articleSchema = {
   datePublished: data.date,
   dateModified: data.date,
   image: imageUrls.length ? imageUrls : undefined,
-  mainEntityOfPage: canonicalUrl,
-  inLanguage: "en",
+  mainEntityOfPage: `${SITE_URL}/en/ratgeber/${slug}/`,
+  inLanguage: SITE_LANGUAGE_EN,
   articleSection: data.category ? String(data.category) : undefined,
   keywords: Array.isArray(data.tags) ? data.tags.map(String).join(", ") : undefined,
-  wordCount: getWordCountFromMarkdown(content) || undefined,
+  wordCount: wordCount || undefined,
   isAccessibleForFree: true,
   author: buildPublisherOrganization(),
   publisher: buildPublisherOrganization(),
-  about: Array.isArray(data.tags) ? data.tags.map((tag: string) => ({ "@type": "Thing", name: tag })) : undefined,
+  about: Array.isArray(data.tags)
+    ? data.tags.map((tag: string) => ({ "@type": "Thing", name: tag }))
+    : undefined,
   mentions: Array.isArray(data.relatedTools)
     ? data.relatedTools.map((tool: { title: string; href: string }) => ({
         "@type": "SoftwareApplication",
@@ -104,13 +133,13 @@ const articleSchema = {
 const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Directory", url: `${SITE_URL}/en/` },
   { name: "Guides", url: `${SITE_URL}/en/ratgeber/` },
-  { name: title, url: canonicalUrl },
+  { name: title, url: `${SITE_URL}/en/ratgeber/${slug}/` },
 ]);
 ---
 
 <BaseLayout locale="en" title={`${title} - Guide - Utildesk`} description={description}>
   <Fragment slot="head">
-    <link rel="canonical" href={canonicalUrl} />
+    <link rel="canonical" href={`https://tools.utildesk.de/en/ratgeber/${slug}/`} />
     <link rel="alternate" type="application/json" href={`/en/api/ratgeber/${slug}.json`} title={`${title} (JSON)`} />
     <link rel="alternate" type="text/markdown" href={`/en/markdown/ratgeber/${slug}.md`} title={`${title} (Markdown)`} />
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
@@ -118,64 +147,99 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
   </Fragment>
 
-  <nav class="breadcrumb">
-    <a href="/en/">Directory</a>
-    <span>/</span>
-    <a href="/en/ratgeber/">Guides</a>
-    <span>/</span>
-    <span>{title}</span>
-  </nav>
+  <div class="tool-akte sheet-wrap">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/">← Directory</a>
+      <span class="akte-crumb-sep">/</span>
+      <a href="/en/ratgeber/">Guides</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">{title}</span>
+    </nav>
 
-  <header class="article-head">
-    <p class="article-eyebrow">{data.eyebrow || "Guide"}</p>
-    <h1>{title}</h1>
-    <p class="article-byline">
-      By <strong>Utildesk Editorial</strong> · editorially reviewed · <a href="/en/methodology/">Methodology</a>
-    </p>
-    <div class="article-pills">
-      {published && addRenderedPill(published) ? <span class="pill">{published}</span> : null}
-      {data.readTime && addRenderedPill(`${data.readTime} min read`) ? <span class="pill">{data.readTime} min read</span> : null}
-      {data.category && !categoryIsRedundant && addRenderedPill(data.category) ? <span class="pill pill--accent">{data.category}</span> : null}
-      {data.relatedTools?.map((tool: {href: string, title: string}) => {
-        if (!addRenderedPill(tool.title)) {
-          return null;
-        }
-        return <a href={tool.href} class="pill pill--tool">{tool.title}</a>;
-      })}
-      {data.tags?.map((tag: string) => {
-        const tagKey = normalizeMetaLabel(tag);
-        if (!tagKey || relatedToolSet.has(tagKey) || !addRenderedPill(tag)) {
-          return null;
-        }
-        return <a href={tagHref(tag, "en")} class="pill pill--tool">{tag}</a>;
-      })}
-    </div>
-  </header>
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">
+        ↳ Decision № {String(Math.abs(slug.length * 7 + 41) % 999 + 1).padStart(3, "0")} · {data.eyebrow || data.category || "AI Tool Review"}
+      </div>
+      <h1 class="sheet-head-h1">
+        {title}<span class="akte-mast-dot">.</span>
+      </h1>
+      {data.excerpt && (
+        <p class="sheet-head-dek">{data.excerpt}</p>
+      )}
 
-  {data.coverImage ? (
-    <figure class="article-cover">
-      <button type="button" class="article-cover-trigger js-lightbox-image" data-lightbox-src={data.coverImage} data-lightbox-alt={data.eyebrow || "Illustration"} aria-label={`Open illustration: ${title}`}>
-        <img src={data.coverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
-      </button>
-    </figure>
-  ) : null}
+      <div class="sheet-head-meta">
+        <span class="sheet-head-byline">By <strong>Utildesk Editorial</strong></span>
+        {published && <span>· {published}</span>}
+        {data.readTime && <span>· {data.readTime} min read</span>}
+        <span>· <a href="/en/methodology/">Methodology</a></span>
+      </div>
 
-  <div class="article-body">
-    <article class="ratgeber-prose" set:html={articleHtml}></article>
-    {data.sidebarPoints?.length ? (
-      <aside class="article-summary">
-        <p class="summary-label">{data.sidebarTitle || "Key takeaways"}</p>
-        <ul class="summary-list">{data.sidebarPoints.map((point) => <li>{point}</li>)}</ul>
-      </aside>
+      {(data.category || data.relatedTools?.length || data.tags?.length) && (
+        <div class="akte-chips sheet-chips">
+          {data.category && !categoryIsRedundant && addRenderedPill(data.category) ? (
+            <span class="akte-chip akte-chip-category">{data.category}</span>
+          ) : null}
+          {data.relatedTools?.map((tool: {href: string, title: string}) => {
+            if (!addRenderedPill(tool.title)) return null;
+            return <a href={tool.href} class="akte-chip akte-chip-tag">{tool.title}</a>;
+          })}
+          {data.tags?.map((tag: string) => {
+            const tagKey = normalizeMetaLabel(tag);
+            if (!tagKey || relatedToolSet.has(tagKey) || !addRenderedPill(tag)) return null;
+            return <a href={tagHref(tag, "en")} class="akte-chip akte-chip-tag">#{tag}</a>;
+          })}
+        </div>
+      )}
+    </header>
+
+    {safeCoverImage ? (
+      <figure class="sheet-cover">
+        <button
+          type="button"
+          class="article-cover-trigger js-lightbox-image sheet-cover-btn"
+          data-lightbox-src={safeCoverImage}
+          data-lightbox-alt={data.eyebrow || "Illustration"}
+          aria-label={`Open illustration: ${title}`}
+        >
+          <img src={safeCoverImage} alt={data.eyebrow || "Illustration"} loading="eager" decoding="async" />
+        </button>
+        <figcaption>
+          <span class="sheet-cover-tag">Figure 1</span>
+          {data.eyebrow || data.category || "Editorial illustration"} — guide file for {title}.
+        </figcaption>
+      </figure>
     ) : null}
+
+    <div class="sheet-body">
+      <article class="ratgeber-prose akte-article-body sheet-prose" set:html={articleHtml}></article>
+
+      {data.sidebarPoints?.length ? (
+        <aside class="sheet-summary" aria-label={data.sidebarTitle || "Key takeaways"}>
+          <div class="sheet-summary-tab">{data.sidebarTitle || "Key takeaways"}</div>
+          <ul>
+            {data.sidebarPoints.map((point) => <li>{point}</li>)}
+          </ul>
+        </aside>
+      ) : null}
+    </div>
+
+    <footer class="sheet-foot">
+      <div class="sheet-foot-left">
+        <div class="sheet-foot-kicker">This decision</div>
+        <p class="sheet-foot-line">
+          We review guides regularly. {published ? `Last publication ${published}.` : ""}
+        </p>
+      </div>
+      <div class="sheet-foot-actions">
+        <a class="akte-action akte-action-primary" href="/en/ratgeber/">↩ Guide archive</a>
+        <a class="akte-action akte-action-ghost" href="/en/tools/">⇄ Tool Index</a>
+      </div>
+    </footer>
   </div>
 
-  <footer class="article-footer">
-    <a href="/en/ratgeber/" class="footer-back">← All guides</a>
-  </footer>
-
+  <!-- Lightbox for inline images -->
   <dialog id="img-lightbox" class="lightbox">
-    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-close" aria-label="Close">✕</button>
     <img id="lightbox-img" src="" alt="" />
   </dialog>
 </BaseLayout>
@@ -190,10 +254,14 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       lbImg.alt = alt;
       lightbox.showModal();
     };
-    document.querySelectorAll('.article-cover-trigger, .ratgeber-prose img').forEach((node) => {
+
+    const bindLightboxTarget = (node: Element) => {
       const target = node as HTMLElement;
+      if (target.dataset.lightboxBound === 'true') return;
+
       let src = '';
       let alt = '';
+
       if (node instanceof HTMLImageElement) {
         src = node.currentSrc || node.src;
         alt = node.alt;
@@ -202,45 +270,109 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         src = target.dataset.lightboxSrc || '';
         alt = target.dataset.lightboxAlt || '';
       }
-      if (src) target.addEventListener('click', () => openLightbox(src, alt));
+
+      if (!src) return;
+
+      target.dataset.lightboxBound = 'true';
+      target.addEventListener('click', () => openLightbox(src, alt));
+    };
+
+    document.querySelectorAll('.article-cover-trigger, .ratgeber-prose img').forEach((node) => {
+      bindLightboxTarget(node);
     });
-    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.close(); });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.close();
+    });
     document.querySelector('.lightbox-close')?.addEventListener('click', () => lightbox.close());
     lbImg.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('close', () => {
+      lbImg.src = '';
+      lbImg.alt = '';
+    });
   }
 </script>
 
 <style>
-  .breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: var(--space-5) 0 24px; color: var(--secondary); font-size: 0.94rem; opacity: 0.95; }
-  .article-head { max-width: 100%; padding-bottom: 32px; border-bottom: 1px solid rgba(190, 201, 197, 0.25); }
-  .article-eyebrow { margin: 0 0 12px; font-size: 0.73rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--primary); }
-  .article-head h1 { margin: 0; font-size: clamp(1.6rem, 2.8vw, 2.4rem); line-height: 1.2; letter-spacing: -0.025em; font-weight: 800; max-width: min(62ch, 100%); }
-  .article-byline { margin: 18px 0 0; color: var(--secondary); font-size: 0.96rem; line-height: 1.6; }
-  .article-byline a { color: var(--primary); text-decoration: underline; text-decoration-color: rgba(23, 98, 89, 0.28); text-underline-offset: 2px; }
-  .article-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-  .pill { display: inline-flex; align-items: center; padding: 5px 12px; border-radius: var(--radius-full); background: var(--surface-container-low); color: var(--on-surface-variant); font-size: 0.84rem; font-weight: 600; border: 1px solid rgba(190, 201, 197, 0.3); }
-  .pill--accent, .pill--tool { background: rgba(23, 98, 89, 0.08); color: var(--primary); border-color: rgba(23, 98, 89, 0.15); text-decoration: none; }
-  .article-cover { margin: 28px 0 0; border-radius: clamp(24px, 2.4vw, 32px); overflow: visible; border: none; background: transparent; box-shadow: none; }
-  .article-cover-trigger { display: block; width: 100%; padding: 0; border: none; margin: 0; background: transparent; cursor: zoom-in; text-align: left; border-radius: inherit; overflow: hidden; }
-  .article-cover img { display: block; width: 100%; height: auto; object-fit: contain; max-height: min(88vh, 1020px); transition: filter var(--transition), opacity var(--transition); }
-  .article-body { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: var(--space-6); align-items: start; margin-top: 40px; }
-  .ratgeber-prose { font-size: 1rem; line-height: 1.8; color: var(--on-surface); }
-  :global(.ratgeber-prose h2) { margin: 2.4rem 0 0.9rem; font-size: clamp(1.3rem, 2.2vw, 1.75rem); line-height: 1.15; letter-spacing: -0.02em; padding-top: 1.4rem; border-top: 1px solid rgba(190, 201, 197, 0.3); }
-  :global(.ratgeber-prose p), :global(.ratgeber-prose li) { color: var(--on-surface); line-height: 1.78; }
-  :global(.ratgeber-prose img) { border-radius: var(--radius-md); border: 1px solid rgba(190, 201, 197, 0.28); background: var(--surface-container-low); padding: 6px; width: 100%; object-fit: contain; cursor: zoom-in; }
-  .article-summary { position: sticky; top: 88px; background: var(--surface-container-low); border: 1px solid rgba(190, 201, 197, 0.28); border-radius: var(--radius-lg); padding: 22px 20px; }
-  .summary-label { margin: 0 0 12px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--primary); }
-  .summary-list { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 10px; }
-  .article-footer { margin-top: var(--space-7); padding-top: var(--space-5); border-top: 1px solid rgba(190, 201, 197, 0.25); padding-bottom: var(--space-8); }
-  .footer-back { font-size: 0.96rem; font-weight: 700; color: var(--secondary); text-decoration: none; }
-  .lightbox { border: none; background: transparent; padding: 24px; width: 100vw; max-width: 100vw; height: 100vh; max-height: 100vh; box-sizing: border-box; overflow: hidden; }
-  dialog.lightbox[open] { display: grid; place-items: center; }
-  .lightbox::backdrop { background: rgba(18, 20, 16, 0.92); backdrop-filter: blur(6px); }
-  .lightbox img { max-width: min(95vw, 1500px); max-height: 90vh; width: auto; height: auto; object-fit: contain; border-radius: 12px; box-shadow: 0 0 80px rgba(0,0,0,.5); cursor: zoom-out; }
-  .lightbox-close { position: absolute; top: 16px; right: 20px; width: 44px; height: 44px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); color: #fff; font-size: 1.1rem; border-radius: 50%; cursor: pointer; }
-  :root[data-theme="dark"] .article-cover img, :root[data-theme="dark"] .ratgeber-prose :global(img) { filter: none; opacity: 1; }
+  /* Breadcrumb */
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin: var(--space-5) 0 24px;
+    color: var(--secondary);
+    font-size: 0.94rem;
+    opacity: 0.95;
+  }
   .breadcrumb a { color: var(--secondary); }
   .breadcrumb a:hover { color: var(--primary); opacity: 1; }
+
+  /* Article header */
+  .article-head {
+    max-width: 100%;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(190, 201, 197, 0.25);
+  }
+
+  .article-eyebrow {
+    margin: 0 0 12px;
+    font-size: 0.73rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--primary);
+  }
+
+  .article-head h1 {
+    margin: 0;
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    font-weight: 800;
+    max-width: min(62ch, 100%);
+  }
+
+  .article-byline {
+    margin: 18px 0 0;
+    color: var(--secondary);
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
+  .article-byline a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(23, 98, 89, 0.28);
+    text-underline-offset: 2px;
+  }
+
+  /* Pills row (meta + tags merged) */
+  .article-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: var(--radius-full);
+    background: var(--surface-container-low);
+    color: var(--on-surface-variant);
+    font-size: 0.84rem;
+    font-weight: 600;
+    border: 1px solid rgba(190, 201, 197, 0.3);
+  }
+
+  .pill--accent {
+    background: rgba(23, 98, 89, 0.08);
+    color: var(--primary);
+    border-color: rgba(23, 98, 89, 0.15);
+  }
+
   .pill--link {
     text-decoration: none;
     transition: background var(--transition), color var(--transition);
@@ -249,40 +381,106 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     background: var(--surface-container-high);
     color: var(--primary);
   }
+
   .pill--tool {
+    text-decoration: none;
+    color: var(--primary);
+    background: rgba(23, 98, 89, 0.07);
+    border-color: rgba(23, 98, 89, 0.2);
     transition: background var(--transition), color var(--transition);
   }
   .pill--tool:hover {
     background: rgba(23, 98, 89, 0.14);
   }
+
+  /* Cover image ? clean, no card */
+  .article-cover {
+    margin: 28px 0 0;
+    border-radius: clamp(24px, 2.4vw, 32px);
+    overflow: visible;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  .article-cover-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin: 0;
+    background: transparent;
+    cursor: zoom-in;
+    text-align: left;
+    border-radius: inherit;
+    overflow: hidden;
+  }
   .article-cover-trigger:focus-visible {
     outline: 3px solid rgba(23, 98, 89, 0.32);
     outline-offset: -3px;
   }
+  .article-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: min(88vh, 1020px);
+    transition: filter var(--transition), opacity var(--transition);
+  }
+
+  /* Article body: prose + aside sidebar */
+  .article-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: var(--space-6);
+    align-items: start;
+    margin-top: 40px;
+  }
+
+  /* Prose ? clean, no card */
+  .ratgeber-prose {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--on-surface);
+  }
+
   :global(.ratgeber-prose > p:first-of-type) {
     font-size: 1.08rem;
     color: var(--on-surface-variant);
     line-height: 1.78;
   }
+
+  :global(.ratgeber-prose h2) {
+    margin: 2.4rem 0 0.9rem;
+    font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(190, 201, 197, 0.3);
+  }
+
   :global(.ratgeber-prose h3) {
     margin: 1.6rem 0 0.6rem;
     font-size: 1.1rem;
     font-weight: 700;
   }
+
   :global(.ratgeber-prose p) {
     margin: 0 0 1rem;
     color: var(--on-surface);
   }
+
   :global(.ratgeber-prose ul),
   :global(.ratgeber-prose ol) {
     margin: 0 0 1rem 1.4rem;
     padding: 0;
   }
+
   :global(.ratgeber-prose li) {
     margin-bottom: 0.4rem;
     color: var(--on-surface);
     line-height: 1.7;
   }
+
   :global(.ratgeber-prose table) {
     width: 100%;
     border-collapse: collapse;
@@ -292,6 +490,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     overflow: hidden;
     border: 1px solid rgba(190, 201, 197, 0.3);
   }
+
   :global(.ratgeber-prose th) {
     background: var(--surface-container-low);
     font-weight: 700;
@@ -302,40 +501,56 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     text-transform: uppercase;
     letter-spacing: 0.04em;
   }
+
   :global(.ratgeber-prose td) {
     padding: 9px 14px;
     border-bottom: 1px solid rgba(190, 201, 197, 0.15);
     vertical-align: top;
   }
+
   :global(.ratgeber-prose tr:last-child td) {
     border-bottom: none;
   }
+
   :global(.ratgeber-prose .article-inline-image) {
     margin: clamp(2rem, 4vw, 2.8rem) 0 clamp(2.3rem, 4vw, 3.1rem);
   }
+
   :global(.ratgeber-prose ul + .article-inline-image),
   :global(.ratgeber-prose ol + .article-inline-image) {
     margin-top: clamp(2.8rem, 5vw, 3.6rem);
   }
+
   :global(.ratgeber-prose h2 + .article-inline-image) {
     margin-top: 1.6rem;
   }
+
   :global(.ratgeber-prose .article-inline-image + h2) {
     margin-top: clamp(2.8rem, 5vw, 3.4rem);
   }
+
   :global(.ratgeber-prose img) {
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(190, 201, 197, 0.28);
+    background: var(--surface-container-low);
+    padding: 6px;
+    width: 100%;
+    object-fit: contain;
     transition: filter var(--transition), opacity var(--transition), border-color var(--transition), background var(--transition);
   }
+
   :global(.ratgeber-prose .article-inline-image img) {
     display: block;
     margin: 0;
   }
+
   :global(.ratgeber-prose a) {
     color: var(--primary);
     text-decoration: underline;
     text-decoration-color: rgba(23, 98, 89, 0.28);
     text-underline-offset: 2px;
   }
+
   :global(.ratgeber-prose blockquote) {
     border-left: 3px solid var(--primary);
     margin: 1.5rem 0;
@@ -343,24 +558,111 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     color: var(--text-muted);
     font-style: italic;
   }
+
+  /* Sidebar summary */
+  .article-summary {
+    position: sticky;
+    top: 88px;
+    background: var(--surface-container-low);
+    border: 1px solid rgba(190, 201, 197, 0.28);
+    border-radius: var(--radius-lg);
+    padding: 22px 20px;
+  }
+
+  .summary-label {
+    margin: 0 0 12px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--primary);
+  }
+
+  .summary-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .summary-list li {
     color: var(--secondary);
     font-size: 0.96rem;
     line-height: 1.68;
   }
+
+  /* Footer */
   .article-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: var(--space-4);
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid rgba(190, 201, 197, 0.25);
+    padding-bottom: var(--space-8);
   }
+
   .footer-back {
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: var(--secondary);
     opacity: 0.9;
     transition: opacity var(--transition), color var(--transition);
+    text-decoration: none;
   }
   .footer-back:hover { opacity: 1; color: var(--primary); }
+
+  /* Lightbox */
+  .lightbox {
+    border: none;
+    background: transparent;
+    padding: 24px;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  /* [open] wins over UA display:none */
+  dialog.lightbox[open] {
+    display: grid;
+    place-items: center;
+  }
+  .lightbox::backdrop {
+    background: rgba(18, 20, 16, 0.92);
+    backdrop-filter: blur(6px);
+  }
+  .lightbox img {
+    max-width: min(95vw, 1500px);
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    cursor: zoom-out;
+    /* override prose img styles */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
   .lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,26 +671,50 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   .lightbox-close:hover {
     background: rgba(255, 255, 255, 0.22);
   }
+
+  /* Dark mode */
   :root[data-theme="dark"] .article-summary {
     background: var(--surface-container);
     border-color: rgba(139, 152, 145, 0.2);
   }
+
   :root[data-theme="dark"] .ratgeber-prose :global(h2) {
     border-top-color: rgba(139, 152, 145, 0.2);
   }
+
+  :root[data-theme="dark"] .article-cover img,
+  :root[data-theme="dark"] .ratgeber-prose :global(img) {
+    filter: none;
+    opacity: 1;
+  }
+
   :root[data-theme="dark"] .article-cover-trigger:hover img,
   :root[data-theme="dark"] .ratgeber-prose :global(img:hover) {
     filter: none;
     opacity: 1;
   }
+
   :root[data-theme="dark"] .ratgeber-prose :global(img) {
     background: var(--surface-container);
     border-color: rgba(139, 152, 145, 0.24);
   }
+
+  /* Responsive */
   @media (max-width: 900px) {
-    .article-body { grid-template-columns: 1fr; }
-    .article-summary { position: static; order: -1; }
-    .article-cover-trigger { padding: 0; }
-    .article-cover img { max-height: none; }
+    .article-body {
+      grid-template-columns: 1fr;
+    }
+    .article-summary {
+      position: static;
+      order: -1;
+    }
+    .article-cover-trigger {
+      padding: 0;
+    }
+
+    .article-cover img {
+      max-height: none;
+    }
   }
 </style>
+

@@ -126,7 +126,28 @@ const visibleTags = Array.from(tagFrequency.entries())
 
   <div class="tools-grid" id="tools-grid">
     {filteredTools.map((tool) => (
-      <ToolCard tool={tool} href={`/en/tools/${tool.slug}/`} fallbackText="Short description coming soon." />
+
+      <a href={`/en/tools/${tool.slug}/`} class="card tool-card">
+        <div class="tool-header">
+          <div class="tool-image">
+                {tool.iconUrl ? (
+              <span class="tool-card-logo">
+                <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
+              </span>
+                ) : (
+              <span class="tool-card-logo" aria-hidden="true">?</span>
+                )}
+          </div>
+          <div class="tool-info">
+            <h3 class="tool-title">{tool.title}</h3>
+            <p class="tools-desc">{tool.excerpt || "Short description coming soon."}</p>
+          </div>
+        </div>
+        <div class="tool-badges">
+              {tool.category && <span class="badge badge-category">{tool.category}</span>}
+              {tool.price_model && <span class="badge badge-price">{tool.price_model}</span>}
+        </div>
+      </a>
     ))}
   </div>
 </BaseLayout>
