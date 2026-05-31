@@ -1,7 +1,7 @@
 ---
 slug: "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo"
 title: "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst"
-date: 2026-05-19
+date: 2026-05-31
 category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
