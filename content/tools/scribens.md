@@ -5,7 +5,7 @@ category: AI Writing
 price_model: Freemium
 tags: [writing, grammar, productivity, editing]
 official_url: "https://www.scribens.com/"
-popularity: 15
+popularity: 16
 tier: C
 generated_at: 2026-05-27
 ---

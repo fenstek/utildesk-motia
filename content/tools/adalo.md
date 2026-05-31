@@ -5,7 +5,7 @@ category: AI Coding
 price_model: Abonnement
 tags: [no-code, design, automation, productivity]
 official_url: "https://www.adalo.com/"
-popularity: 77
+popularity: 76
 tier: C
 generated_at: 2026-05-28
 ---

@@ -5,7 +5,7 @@ category: AI Image
 price_model: Abonnement
 tags: [productivity, office-suite, collaboration]
 official_url: "https://www.microsoft.com/de-de/microsoft-365"
-popularity: 31
+popularity: 32
 tier: C
 generated_at: 2026-05-27
 ---
