@@ -2,10 +2,33 @@ name: Tool quality guard
 
 on:
   pull_request:
+    paths:
+      - ".github/workflows/tool-quality.yml"
+      - "content/tools/**"
+      - "content/en/tools/**"
+      - "scripts/check_editorial_templates.mjs"
+      - "scripts/check_english_tool_translations.mjs"
+      - "scripts/check_tool_quality_guard.mjs"
+      - "scripts/normalize-categories.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "site/package.json"
+      - "site/package-lock.json"
   push:
     branches:
       - master
-      - autobot
+    paths:
+      - ".github/workflows/tool-quality.yml"
+      - "content/tools/**"
+      - "content/en/tools/**"
+      - "scripts/check_editorial_templates.mjs"
+      - "scripts/check_english_tool_translations.mjs"
+      - "scripts/check_tool_quality_guard.mjs"
+      - "scripts/normalize-categories.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "site/package.json"
+      - "site/package-lock.json"
 
 jobs:
   tool-quality:
@@ -13,6 +36,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,7 +57,31 @@ jobs:
       - name: Tool quality guard
         run: npm run check:tool-quality
 
+      - name: Detect category normalization inputs
+        id: category-inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            base="${{ github.event.pull_request.base.sha }}"
+            head="${{ github.event.pull_request.head.sha }}"
+          else
+            base="${{ github.event.before }}"
+            head="${{ github.sha }}"
+            if [[ -z "$base" || "$base" == "0000000000000000000000000000000000000000" ]]; then
+              base="$(git rev-list --max-parents=0 "$head")"
+            fi
+          fi
+
+          if git diff --quiet "$base" "$head" -- content/tools scripts/normalize-categories.ts; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Category normalization dry run
+        if: steps.category-inputs.outputs.changed == 'true'
         run: |
           node --no-warnings scripts/normalize-categories.ts > /tmp/normalize-categories.json
           node -e '
