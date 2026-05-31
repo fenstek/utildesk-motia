@@ -10,7 +10,7 @@ tier: A
 lastReviewed: 2026-05-27
 mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
 created_at: 2026-02-07
-popularity: 23
+popularity: 24
 ---
 # Poe
 

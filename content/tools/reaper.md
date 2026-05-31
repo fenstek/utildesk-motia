@@ -5,7 +5,7 @@ category: AI Chatbots
 price_model: 
 tags: [assistant, automation]
 official_url: "https://ghostsecurity.com/"
-popularity: 19
+popularity: 20
 tier: C
 generated_at: 2026-05-27
 ---

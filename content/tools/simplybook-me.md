@@ -1,13 +1,13 @@
 ---
 slug: simplybook-me
 title: SimplyBook.me
-category: "AI Coding"
+category: AI Coding
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [booking,scheduling,saas]
 official_url: "https://simplybook.me/en/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 15
+tier: C
+generated_at: 2026-05-17
 ---
 # SimplyBook.me
 

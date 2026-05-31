@@ -5,7 +5,7 @@ category: AI Agents
 price_model: Abonnement
 tags: ["social-media", "marketing", "automation", "analytics"]
 official_url: "https://www.agorapulse.com/"
-popularity: 73
+popularity: 72
 tier: C
 generated_at: 2026-05-28
 ---

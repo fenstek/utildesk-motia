@@ -5,7 +5,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [database,cloud,data,developer-tools]
 official_url: "https://aws.amazon.com/dynamodb/"
-popularity: 69
+popularity: 68
 tier: C
 generated_at: 2026-05-27
 ---

@@ -1,13 +1,13 @@
 ---
 slug: soundraw
 title: Soundraw
-category: "Audio & Video"
+category: Audio & Video
 price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://soundraw.io/"
-popularity: 14
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 13
+tier: C
+generated_at: 2026-05-27
 ---
 # Soundraw
 
