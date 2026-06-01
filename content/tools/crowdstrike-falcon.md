@@ -2,15 +2,15 @@
 slug: crowdstrike-falcon
 title: CrowdStrike Falcon
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Entwickler-Tools
 price_model: Abonnement
 tags: [security, endpoint, enterprise, ai]
 official_url: "https://www.crowdstrike.com/en-us/platform/"
-popularity: 52
+popularity: 53
 tier: C
 generated_at: 2026-05-28
 ---

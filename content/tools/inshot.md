@@ -2,15 +2,15 @@
 slug: inshot
 title: InShot
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Coding
 price_model: Je nach Plan
 tags: [video-editing, mobile, creator-tools]
 official_url: "https://inshot.com/"
-popularity: 37
+popularity: 38
 tier: C
 generated_at: 2026-05-27
 ---

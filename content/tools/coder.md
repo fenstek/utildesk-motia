@@ -2,15 +2,15 @@
 slug: coder
 title: Coder
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [coding,workflow]
 official_url: "https://coder.com/"
-popularity: 55
+popularity: 56
 tier: C
 generated_at: 2026-05-28
 ---

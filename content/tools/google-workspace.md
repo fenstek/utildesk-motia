@@ -2,15 +2,15 @@
 slug: google-workspace
 title: Google Workspace
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Abonnement
 tags: [productivity,collaboration,workspace]
 official_url: "https://workspace.google.com/"
-popularity: 43
+popularity: 44
 tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]
