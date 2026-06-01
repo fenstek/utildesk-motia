@@ -6,6 +6,8 @@ category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
 readTime: 10
+coverImage: /images/ratgeber/was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool-cover-story-v1.webp
+secondaryImage: /images/ratgeber/was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool-workflow-story-v1.webp
 tags:
   - "AI Tools"
   - "Tool-Verzeichnis"
@@ -63,6 +65,8 @@ Leser wollen wissen, ob ein Tool in einem echten Workflow getestet wurde und wer
 Ein hilfreicher Ratgeber beantwortet deshalb immer drei Fragen: Wer bewertet hier? Wie wurde getestet? Warum ist dieses Tool für den konkreten Anwendungsfall relevant? Wenn diese Ebene fehlt, bleibt nur eine Suchmaschine im Kleinformat, und genau davon gibt es bereits genug.
 
 Wirklich nützliche Verzeichnisse können eine build-in-public Case Study als Vorbild nehmen. Sie zeigen transparent, welche Tools sie selbst einsetzen, warum sie Alternativen verworfen haben und welche Preis-, Datenschutz- oder Integrationsnotizen für professionelle Teams ausschlaggebend sind. Das wirkt weniger glatt als eine Hochglanzliste, aber es ist viel glaubwürdiger.
+
+![Redaktionsteam verwandelt eine chaotische Tool-Liste in eine nachvollziehbare Entscheidungsmatrix](/images/ratgeber/was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool-workflow-story-v1.webp)
 
 ## Die Bewertungsmatrix: nicht alles gleich gewichten
 

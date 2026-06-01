@@ -115,17 +115,7 @@ const templateTools = Array.from(
   new Map([...latestTools, ...enabledTools].map((tool) => [tool.slug, tool])).values()
 ).slice(0, 12);
 const allRatgeber = await listRatgeberEntries("en");
-const editorialRatgeberSlugs = [
-  "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
-  "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
-  "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
-  "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
-];
-const ratgeberBySlug = new Map(allRatgeber.map((article) => [article.slug, article]));
-const editorialRatgeber = [
-  ...editorialRatgeberSlugs.map((slug) => ratgeberBySlug.get(slug)).filter(Boolean),
-  ...allRatgeber.filter((article) => !editorialRatgeberSlugs.includes(article.slug)),
-].slice(0, 4);
+const editorialRatgeber = allRatgeber.slice(0, 6);
 const taskIntents = [
   {
     title: "Write code with AI",
