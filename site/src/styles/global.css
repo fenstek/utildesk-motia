@@ -8205,3 +8205,543 @@ html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-tag {
     grid-row: 2 !important;
   }
 }
+
+/* Mobile decision layout hardening: keep all decision pages inside the viewport. */
+@media (max-width: 760px) {
+  html[data-design="decision"],
+  html[data-design="decision"] body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  html[data-design="decision"] .ki-blatt-topbar {
+    left: 10px !important;
+    right: 10px !important;
+    top: 10px !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: none !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    border-radius: 18px !important;
+    scrollbar-width: none;
+  }
+
+  html[data-design="decision"] .ki-blatt-topbar::-webkit-scrollbar,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links::-webkit-scrollbar,
+  html[data-design="decision"] .inv-alpha::-webkit-scrollbar {
+    display: none;
+  }
+
+  html[data-design="decision"] .ki-blatt-topbar a,
+  html[data-design="decision"] .ki-blatt-topbar span {
+    flex: 0 0 auto !important;
+    min-height: 30px !important;
+    padding: 0 14px !important;
+    font-size: 10px !important;
+    letter-spacing: .14em !important;
+    max-width: 150px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-topbar > *:nth-child(n+3) {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header.site-header,
+  html[data-design="decision"]:not(:has(.ds-template)) .site-header {
+    width: auto !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 58px auto 0 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px 14px !important;
+    min-height: 0 !important;
+    padding: 12px 14px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left {
+    order: 1 !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    gap: 6px 12px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left strong,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span:last-child {
+    text-align: right !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links {
+    order: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    gap: 20px !important;
+    overflow: visible !important;
+    flex-wrap: wrap !important;
+    padding: 0 0 2px !important;
+    scrollbar-width: none;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links a {
+    flex: 0 0 auto !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right {
+    order: 3 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  html[data-design="decision"] .ds-stage {
+    padding: 0 10px 32px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ds-frame {
+    width: auto !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) .ds-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki,
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead {
+    width: auto !important;
+    max-width: 100% !important;
+    padding: 24px 18px 20px !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main span,
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main span {
+    font-size: clamp(3rem, 17vw, 4.25rem) !important;
+    line-height: .9 !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main p,
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-main p {
+    max-width: 28ch !important;
+    margin-inline: auto !important;
+    letter-spacing: .24em !important;
+    line-height: 1.55 !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .decision-masthead-side {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ds-front {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 28px 20px 34px !important;
+  }
+
+  html[data-design="decision"] .ds-front-main h2,
+  html[data-design="decision"]:not(:has(.ds-template)) .hero-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .page-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .methodology-page h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .legal h1,
+  html[data-design="decision"] .inv-head-h1,
+  html[data-design="decision"] .sheet-head-h1,
+  html[data-design="decision"] .akte-mast-h1 {
+    max-width: 100% !important;
+    font-size: clamp(2.6rem, 14vw, 4.15rem) !important;
+    line-height: 1 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    hyphens: auto !important;
+  }
+
+  html[data-design="decision"] .ds-front-main h2 {
+    font-size: clamp(2.2rem, 9.5vw, 2.65rem) !important;
+    max-width: 300px !important;
+  }
+
+  html[data-design="decision"] .ds-dek {
+    max-width: 300px !important;
+    font-size: 1.1rem !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .ds-verdict strong,
+  html[data-design="decision"] .ds-verdict h3 {
+    font-size: 1.08rem !important;
+    line-height: 1.08 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .ds-verdict {
+    display: grid !important;
+    grid-template-columns: 42px 1fr !important;
+    padding: 22px 18px !important;
+  }
+
+  html[data-design="decision"] .ds-verdict-glyph {
+    min-width: 0 !important;
+    font-size: 42px !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions {
+    flex-wrap: wrap !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions a {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .ds-stack,
+  html[data-design="decision"] .ds-evidence,
+  html[data-design="decision"] .ds-anti,
+  html[data-design="decision"] .ds-tasks,
+  html[data-design="decision"] .ds-index {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  html[data-design="decision"] .ds-stack,
+  html[data-design="decision"] .ds-tasks > div,
+  html[data-design="decision"] .ds-anti > div,
+  html[data-design="decision"] .ds-evidence,
+  html[data-design="decision"] .ds-index-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  html[data-design="decision"] .ds-evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  html[data-design="decision"] .ds-index-head-spread {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .ds-index-row {
+    grid-template-columns: 34px minmax(0, 1fr) 24px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tool strong,
+  html[data-design="decision"] .ds-index-tool em {
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) main.container,
+  html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+    width: auto !important;
+    max-width: calc(100% - 20px) !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) main.container {
+    padding: 22px 20px 32px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .inv-head {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 18px 0 24px !important;
+  }
+
+  html[data-design="decision"] .inv-head-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  html[data-design="decision"] .inv-stat {
+    min-width: 0 !important;
+    padding: 12px !important;
+  }
+
+  html[data-design="decision"] .inv-stat strong {
+    font-size: clamp(2.4rem, 13vw, 3.5rem) !important;
+  }
+
+  html[data-design="decision"] .inv-controls,
+  html[data-design="decision"] .inv-modebar,
+  html[data-design="decision"] .inv-alpha {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .inv-modebar,
+  html[data-design="decision"] .inv-jumpbar,
+  html[data-design="decision"] .inv-list-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  html[data-design="decision"] .inv-modebar {
+    grid-template-columns: 1fr !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  html[data-design="decision"] .inv-search-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .inv-search-input {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+  }
+
+  html[data-design="decision"] .inv-mode-left,
+  html[data-design="decision"] .inv-sort-tabs,
+  html[data-design="decision"] .inv-mode-right {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+  }
+
+  html[data-design="decision"] .inv-sort-select {
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .inv-mode-right a {
+    flex: 0 0 auto !important;
+  }
+
+  html[data-design="decision"] .inv-alpha {
+    overflow-x: auto !important;
+    scrollbar-width: none;
+  }
+
+  html[data-design="decision"] .inv-jumpbar {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    scrollbar-width: none;
+  }
+
+  html[data-design="decision"] .inv-table-head {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .inv-list-wrap {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  html[data-design="decision"] .inv-filter-rail {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .inv-register {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+    grid-template-columns: 34px minmax(0, 1fr) !important;
+    grid-template-rows: auto auto auto auto !important;
+    min-height: 0 !important;
+    padding: 16px 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-no {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    font-size: 13px !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .tool-header {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    grid-column: 2 !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict {
+    grid-row: 2 !important;
+    justify-self: start !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags {
+    grid-row: 3 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    grid-row: 4 !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-open {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten {
+    grid-template-columns: 1fr !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row {
+    min-height: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    grid-template-rows: auto auto auto auto !important;
+    padding: 18px !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .tool-header {
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .inv-register .tool-title {
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .sheet-head,
+  html[data-design="decision"] .sheet-body,
+  html[data-design="decision"] .sheet-cover,
+  html[data-design="decision"] .akte-mast,
+  html[data-design="decision"] .akte-article,
+  html[data-design="decision"] .akte-alts {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .sheet-cover-btn img {
+    max-height: none !important;
+  }
+
+  html[data-design="decision"] .sheet-body {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  html[data-design="decision"] .sheet-summary {
+    position: static !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt {
+    min-height: 0 !important;
+    padding: 22px 18px 18px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-row,
+  html[data-design="decision"] .akte-faktenblatt-foot > div {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 3px !important;
+    align-items: start !important;
+    min-height: 0 !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-row .akte-faktenblatt-val {
+    min-width: 0 !important;
+    text-align: left !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .sheet-head-h1 {
+    font-size: clamp(1.9rem, 7.9vw, 2.35rem) !important;
+    line-height: .98 !important;
+    max-width: 300px !important;
+  }
+
+  html[data-design="decision"] .sheet-head,
+  html[data-design="decision"] .sheet-head-kicker,
+  html[data-design="decision"] .breadcrumbs {
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .akte-actions,
+  html[data-design="decision"] .akte-action,
+  html[data-design="decision"] .sheet-foot-actions,
+  html[data-design="decision"] .sheet-foot-actions .akte-action {
+    width: 100% !important;
+  }
+
+  html[data-design="decision"] .akte-action {
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-detail-badges,
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-badges,
+  html[data-design="decision"] .chips {
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-detail-badges .badge,
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-card .badge,
+  html[data-design="decision"] .chip {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .article-body,
+  html[data-design="decision"] .akte-article-body,
+  html[data-design="decision"] .sheet-prose {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .akte-article-body p,
+  html[data-design="decision"] .akte-article-body li,
+  html[data-design="decision"]:not(:has(.ds-template)) .article p,
+  html[data-design="decision"]:not(:has(.ds-template)) .article li {
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .site-footer .container {
+    width: auto !important;
+    max-width: calc(100% - 20px) !important;
+    margin-bottom: 24px !important;
+    padding: 28px 20px 34px !important;
+  }
+
+  html[data-design="decision"] .footer-links {
+    grid-auto-flow: row !important;
+    grid-template-columns: repeat(2, minmax(0, max-content)) !important;
+    grid-template-rows: none !important;
+    justify-content: start !important;
+    text-align: left !important;
+    gap: 12px 22px !important;
+  }
+}
