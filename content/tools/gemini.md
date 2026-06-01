@@ -2,10 +2,10 @@
 slug: gemini
 title: Gemini
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Writing
 price_model: Freemium
 tags: ["writing"]
@@ -16,7 +16,7 @@ lastReviewed: 2026-05-28
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 91
+popularity: 92
 description: Gemini ist Googles KI-Assistent für Schreiben, Recherche, Ideenarbeit und produktnahe Workspace-Workflows.
 ---
 # Gemini

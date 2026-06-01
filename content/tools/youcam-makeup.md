@@ -2,15 +2,15 @@
 slug: youcam-makeup
 title: YouCam Makeup
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Image
 price_model: Freemium
 tags: [beauty, photo-editing, mobile]
 official_url: "https://www.perfectcorp.com/consumer/apps/youcam-makeup"
-popularity: 80
+popularity: 81
 tier: D
 generated_at: 2026-05-28
 ---

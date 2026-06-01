@@ -2,15 +2,15 @@
 slug: deepl-api
 title: DeepL API
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Nutzungsbasiert
 tags: [translation, api, developers]
 official_url: "https://www.deepl.com/en/products/api"
-popularity: 51
+popularity: 52
 tier: C
 generated_at: 2026-05-15
 ---

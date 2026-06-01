@@ -2,15 +2,15 @@
 slug: elicit
 title: Elicit
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Infrastructure
 price_model: Je nach Plan
 tags: [data, analytics, education, productivity, automation]
 official_url: "https://elicit.com/"
-popularity: 92
+popularity: 49
 description: Elicit unterstützt Literaturrecherche, Paper-Sichtung und strukturierte Evidenzarbeit für Forschung und Analyse.
 tier: C
 generated_at: 2026-05-28

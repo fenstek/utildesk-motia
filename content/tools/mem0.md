@@ -2,16 +2,16 @@
 slug: mem0
 title: Mem0
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
-editorial_verdict: "recommend"
-category: "Entwickler-Tools"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-rising-ai-tools-expanded
+editorial_verdict: recommend
+category: Entwickler-Tools
+price_model: Freemium
 tags: [ai-agents, memory, developer-tools, api]
 official_url: "https://mem0.ai/"
-popularity: 0
+popularity: 32
 tier: B
 generated_at: 2026-05-31
 ---

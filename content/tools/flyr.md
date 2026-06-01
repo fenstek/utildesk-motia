@@ -2,15 +2,15 @@
 slug: flyr
 title: Flyr
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Infrastructure
 price_model: Abonnement
 tags: [ai, travel, revenue-management, analytics]
 official_url: "https://flyr.com/"
-popularity: 47
+popularity: 48
 tier: D
 generated_at: 2026-05-18
 ---

@@ -2,15 +2,15 @@
 slug: soundtrap
 title: Soundtrap
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Audio & Video
 price_model: Abonnement
 tags: [audio, productivity]
 official_url: "https://www.soundtrap.com/home/"
-popularity: 82
+popularity: 83
 description: Soundtrap ist ein browserbasiertes Audio- und Musikwerkzeug für Songs, Podcasts, Unterricht und kollaborative Aufnahmeprojekte.
 tier: C
 generated_at: 2026-05-28

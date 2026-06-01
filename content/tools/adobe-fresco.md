@@ -2,15 +2,15 @@
 slug: adobe-fresco
 title: Adobe Fresco
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Design
 price_model: Freemium
 tags: [design, illustration, painting, mobile]
 official_url: "https://www.adobe.com/products/fresco.html"
-popularity: 75
+popularity: 76
 tier: C
 generated_at: 2026-05-28
 ---

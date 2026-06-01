@@ -2,15 +2,15 @@
 slug: ableton-live
 title: Ableton Live
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Audio & Video
 price_model: Je nach Plan
 tags: [audio,music,editing]
 official_url: "https://www.ableton.com/en/live/"
-popularity: 79
+popularity: 80
 tier: C
 generated_at: 2026-05-11
 ---
