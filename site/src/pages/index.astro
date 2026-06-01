@@ -166,17 +166,7 @@ const templateTools = Array.from(
   new Map([...latestTools, ...restTools].map((tool) => [tool.slug, tool])).values()
 ).slice(0, 12);
 const allRatgeber = await listRatgeberEntries();
-const editorialRatgeberSlugs = [
-  "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
-  "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
-  "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
-  "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
-];
-const ratgeberBySlug = new Map(allRatgeber.map((article) => [article.slug, article]));
-const editorialRatgeber = [
-  ...editorialRatgeberSlugs.map((slug) => ratgeberBySlug.get(slug)).filter(Boolean),
-  ...allRatgeber.filter((article) => !editorialRatgeberSlugs.includes(article.slug)),
-].slice(0, 4);
+const editorialRatgeber = allRatgeber.slice(0, 6);
 const taskIntents = [
   {
     title: "Code mit KI schreiben",
@@ -263,7 +253,7 @@ const featuredToolsSchema = {
 
 const homePageSchema = buildCollectionPageSchema({
   name: "Utildesk KI-Tools Verzeichnis 2026",
-  description: "25 redaktionelle Ratgeber plus indizierte AI-Tools aus öffentlichen Quellen.",
+  description: `${allRatgeber.length} redaktionelle Ratgeber plus indizierte AI-Tools aus öffentlichen Quellen.`,
   url: `${SITE_URL}/`,
   about: ["KI-Tools Verzeichnis 2026", "AI-Tools", "Automatisierung", "Produktivität", "Ratgeber"],
   mainEntity: featuredToolsSchema,
@@ -279,7 +269,7 @@ const homepageSchemas = [
 
 <BaseLayout
   title="KI-Tools verstehen, vergleichen und sicher einsetzen - Utildesk"
-  description="25 redaktionelle Ratgeber und ein indizierter Tool-Katalog aus öffentlichen Quellen für KI-Tools, Automatisierung und sichere Workflows."
+  description={`${allRatgeber.length} redaktionelle Ratgeber und ein indizierter Tool-Katalog aus öffentlichen Quellen für KI-Tools, Automatisierung und sichere Workflows.`}
 >
   <Fragment slot="head">
     <link rel="canonical" href="https://tools.utildesk.de/" />
@@ -310,7 +300,7 @@ const homepageSchemas = [
         </h1>
         <p class="terminal-copy">
           <span class="terminal-comment"># </span>
-          25 redaktionelle Ratgeber plus {enabledTools.length} indizierte Tools mit öffentlichen Quellen:
+          {allRatgeber.length} redaktionelle Ratgeber plus {enabledTools.length} indizierte Tools mit öffentlichen Quellen:
           von AI-Coding und Datenschutz bis Automatisierung, Recherche und Produktivität.
         </p>
         <div class="terminal-hero-actions" aria-label="Schnelle Einstiege">
