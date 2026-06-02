@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [productivity,collaboration,workspace]
 official_url: "https://workspace.google.com/"
-popularity: 44
+popularity: 43
 tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen"]

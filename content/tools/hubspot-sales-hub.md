@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Freemium
 tags: [crm, sales, automation, marketing]
 official_url: "https://www.hubspot.com/products/sales"
-popularity: 40
+popularity: 39
 updated_at: 2026-05-21
 tier: C
 generated_at: 2026-05-27
