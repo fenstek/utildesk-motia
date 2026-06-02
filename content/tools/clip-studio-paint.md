@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Abonnement, Einmalzahlung
 tags: [design, painting, illustration, animation]
 official_url: "https://www.clipstudio.net/en/"
-popularity: 57
+popularity: 56
 tier: D
 generated_at: 2026-05-28
 ---
