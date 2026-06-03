@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Je nach Plan
 tags: [audio]
 official_url: "https://www.acast.com/en"
-popularity: 79
+popularity: 80
 tier: C
 generated_at: 2026-05-28
 ---

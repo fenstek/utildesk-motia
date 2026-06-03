@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [translation, productivity, automation]
 official_url: "https://translator.microsoft.com/"
-popularity: 29
+popularity: 30
 updated_at: 2026-05-21
 tier: C
 generated_at: 2026-05-27

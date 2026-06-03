@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Abonnement
 tags: [podcasting, audio, editing]
 official_url: "https://alitu.com/"
-popularity: 69
+popularity: 71
 tier: C
 generated_at: 2026-05-28
 ---

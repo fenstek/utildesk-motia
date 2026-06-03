@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: [monitoring, observability, dashboards]
 official_url: "https://grafana.com/"
-popularity: 90
+popularity: 91
 tier: C
 generated_at: 2026-05-28
 ---

@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [video-editing, mobile, creator-tools]
 official_url: "https://inshot.com/"
-popularity: 37
+popularity: 38
 tier: C
 generated_at: 2026-05-27
 ---

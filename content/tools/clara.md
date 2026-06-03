@@ -2,10 +2,10 @@
 slug: clara
 title: Clara
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Chatbots
 price_model: Freemium
 tags: ["ai", "assistant", "learning", "chatbot", "education"]
@@ -14,7 +14,7 @@ affiliate_url: "https://www.clara-ai.org/"
 tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-07
-popularity: 58
+popularity: 59
 description: KI-Lernassistent für erklärende Dialoge, Wiederholung, Lernstruktur und niedrigschwellige Wissensarbeit.
 ---
 # Clara

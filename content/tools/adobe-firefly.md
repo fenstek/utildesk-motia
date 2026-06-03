@@ -2,10 +2,10 @@
 slug: adobe-firefly
 title: Adobe Firefly
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Design
 price_model: Freemium
 tags: ["ai", "design"]
@@ -14,7 +14,7 @@ affiliate_url: "https://firefly.adobe.com/?media=featured"
 tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-02
-popularity: 95
+popularity: 77
 ---
 # Adobe Firefly
 

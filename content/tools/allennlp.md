@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: [coding, developer-tools, data, analytics, education]
 official_url: "https://allenai.github.io/allennlp-website/"
-popularity: 69
+popularity: 70
 tier: D
 generated_at: 2026-05-28
 ---
