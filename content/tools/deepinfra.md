@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://deepinfra.com"
-popularity: 51
+popularity: 53
 tier: D
 generated_at: 2026-05-26
 ---

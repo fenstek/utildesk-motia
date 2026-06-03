@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [analytics, workflow]
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
-popularity: 21
+popularity: 22
 updated_at: 2026-05-21
 tier: D
 generated_at: 2026-05-28

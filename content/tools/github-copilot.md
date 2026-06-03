@@ -2,13 +2,13 @@
 slug: github-copilot
 title: GitHub Copilot
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Entwickler-Tools
 price_model: Freemium
-tags:
+tags: 
 official_url: "https://github.com/features/copilot/"
 affiliate_url: "https://github.com/features/copilot/"
 tier: A
@@ -16,7 +16,7 @@ lastReviewed: 2026-05-27
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 45
+popularity: 46
 ---
 # GitHub Copilot
 

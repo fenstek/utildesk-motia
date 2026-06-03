@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [hr, hcm, payroll]
 official_url: "https://www.bamboohr.com/"
-popularity: 61
+popularity: 62
 tier: C
 generated_at: 2026-05-27
 ---
