@@ -52,7 +52,7 @@ Last checked: 2026-06-03
   - live `https://tools.utildesk.de/sitemap.xml` returns `102` URLs;
   - live `https://tools.utildesk.de/sitemap-bing.xml` returns `102` URLs;
   - live `https://tools.utildesk.de/sitemap-focus.xml` returns `102` URLs;
-  - `https://tools.utildesk.de/sitemap.xml` was submitted to GSC and final API readback returned `lastSubmitted = 2026-06-04T11:09:03Z`, `lastDownloaded = 2026-06-04T11:03:43Z`, `submitted = 102`, `warnings = 0`, `errors = 0`.
+  - `https://tools.utildesk.de/sitemap.xml` was submitted to GSC and final API readback returned `lastSubmitted = 2026-06-04T11:13:09Z`, `lastDownloaded = 2026-06-04T11:09:03Z`, `submitted = 102`, `warnings = 0`, `errors = 0`.
 - URL Inspection sample showed no robots/canonical/fetch blockers:
   - already crawled core pages: `INDEXING_ALLOWED`, robots `ALLOWED`, fetch
     `SUCCESSFUL`, self-canonical
