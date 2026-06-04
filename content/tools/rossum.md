@@ -2,17 +2,17 @@
 slug: rossum
 title: Rossum
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Automatisierung
 price_model: Individuelles Angebot
-tags:
+tags: 
 official_url: "https://rossum.ai/"
 description: Rossum ist eine Document-AI-Plattform für Unternehmen, die wiederkehrende Geschäftsdokumente wie Rechnungen, Bestellungen oder Lieferscheine strukturiert auslesen und prüfen wollen.
 created_at: 2026-05-10
-popularity: 18
+popularity: 19
 tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "ki-tools-eu-datenverarbeitung-kleine-unternehmen", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]

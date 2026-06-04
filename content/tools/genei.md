@@ -14,7 +14,7 @@ affiliate_url: "https://www.genei.io"
 tier: D
 generated_at: 2026-05-28
 created_at: 2026-02-11
-popularity: 93
+popularity: 92
 ---
 # Genei
 
