@@ -13,7 +13,7 @@ official_url: "https://marian-nmt.github.io/"
 affiliate_url: "https://marian-nmt.github.io/"
 tier: C
 generated_at: 2026-05-27
-popularity: 32
+popularity: 33
 description: Open-Source-Framework für neuronale maschinelle Übersetzung und technische NMT-Workflows.
 ---
 # Marian NMT
