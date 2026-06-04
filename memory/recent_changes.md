@@ -504,3 +504,15 @@ _Last updated: 2026-05-27_
 - Bing Webmaster cleanup was performed immediately: removed registered `sitemap-bing.xml` and `sitemap.xml`, then resubmitted only `https://tools.utildesk.de/sitemap-focus.xml`; readback showed one feed, `UrlCount=102`, `Status=Pending` right after submission.
 - Google Search Console compact sitemap was resubmitted for `sc-domain:tools.utildesk.de`; API returned `lastSubmitted=2026-06-03T21:10:12Z`, `warnings=0`, `errors=0`, while `lastDownloaded` remained the old 2026-05-21 value until Google recrawls it.
 - IndexNow was submitted for all 102 live `sitemap-focus.xml` canonical URLs; both `https://api.indexnow.org/indexnow` and `https://www.bing.com/indexnow` returned HTTP 200.
+
+## 2026-06-04 - Compact sitemap production deploy
+
+- Committed the compact sitemap code as `1421f310` (`seo: compact search sitemaps`) and pushed it to `origin/master`.
+- Cloudflare Git build for `1421f310` started, but a direct Cloudflare Pages deploy was used from verified local `site/dist` to avoid waiting on the long-running build. Direct deployment URL: `https://1ae7e7bf.utildesk-motia.pages.dev`.
+- Live custom-domain verification passed immediately after deploy:
+  - `https://tools.utildesk.de/sitemap.xml` -> `102` URLs;
+  - `https://tools.utildesk.de/sitemap-bing.xml` -> `102` URLs;
+  - `https://tools.utildesk.de/sitemap-focus.xml` -> `102` URLs;
+  - `robots.txt` still advertises only `https://tools.utildesk.de/sitemap.xml`.
+- Google Search Console main sitemap submit succeeded for `https://tools.utildesk.de/sitemap.xml`; API readback showed `lastSubmitted=2026-06-04T11:03:42Z`, `warnings=0`, `errors=0`. The `submitted` count for the main sitemap still showed the old value until Google redownloads it.
+- Bing Webmaster `sitemap-focus.xml` was resubmitted after deploy; immediate feed readback showed `UrlCount=102`, `Status=Pending`.

@@ -48,6 +48,12 @@ Last checked: 2026-06-03
   - `https://tools.utildesk.de/sitemap-focus.xml` submitted successfully.
   - API readback: `lastSubmitted = 2026-06-03T21:10:12Z`, `warnings = 0`, `errors = 0`.
   - `lastDownloaded` still showed `2026-05-21T07:44:33Z` immediately after submission; wait for Google recrawl before judging impact.
+- 2026-06-04 production compact sitemap deploy:
+  - live `https://tools.utildesk.de/sitemap.xml` returns `102` URLs;
+  - live `https://tools.utildesk.de/sitemap-bing.xml` returns `102` URLs;
+  - live `https://tools.utildesk.de/sitemap-focus.xml` returns `102` URLs;
+  - `https://tools.utildesk.de/sitemap.xml` was submitted to GSC and returned `lastSubmitted = 2026-06-04T11:03:42Z`, `warnings = 0`, `errors = 0`.
+  - GSC may keep showing the old submitted count for `sitemap.xml` until Google redownloads the file.
 - URL Inspection sample showed no robots/canonical/fetch blockers:
   - already crawled core pages: `INDEXING_ALLOWED`, robots `ALLOWED`, fetch
     `SUCCESSFUL`, self-canonical
