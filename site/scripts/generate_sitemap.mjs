@@ -5,9 +5,9 @@
  * Reads BUILT pages from dist/ (not source .md files)
  * This ensures 1:1 match between sitemap and published pages
  *
- * sitemap.xml is intentionally conservative for Google.
- * sitemap-bing.xml keeps the broader tool surface available for Bing without
- * advertising that broader feed in robots.txt.
+ * sitemap.xml is intentionally compact for Google: articles plus strong tools.
+ * sitemap-bing.xml mirrors the compact focus sitemap so Bing does not receive
+ * a broad long-tail feed with mixed noindex signals.
  */
 
 import { execFileSync } from 'node:child_process';
@@ -209,7 +209,6 @@ async function readToolIndexPolicySlugs() {
 
   const addedAtRankMap = createToolAddedAtRankMap(addedAtManifest);
   const googleIndexableSlugs = new Set();
-  const bingIndexableSlugs = new Set();
   const decisionCounts = new Map();
 
   try {
@@ -239,9 +238,6 @@ async function readToolIndexPolicySlugs() {
       if (decision.indexable) {
         googleIndexableSlugs.add(slug);
       }
-      if (decision.reason !== 'frontmatter_noindex') {
-        bingIndexableSlugs.add(slug);
-      }
     }
   } catch (error) {
     throw new Error(`Failed to read tool indexing policy from content/tools/. Error: ${error.message}`);
@@ -249,7 +245,6 @@ async function readToolIndexPolicySlugs() {
 
   return {
     googleIndexableSlugs,
-    bingIndexableSlugs,
     decisionCounts: Object.fromEntries([...decisionCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
   };
 }
@@ -794,12 +789,17 @@ async function generateSitemaps() {
   const sharedInputs = await collectSharedSitemapInputs();
   const googleTools = await readBuiltTools(toolIndexPolicy.googleIndexableSlugs);
   const googleEnTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.googleIndexableSlugs);
-  const bingTools = await readBuiltTools(toolIndexPolicy.bingIndexableSlugs);
-  const bingEnTools = await readBuiltLocalizedTools(DIST_EN_TOOLS_DIR, toolIndexPolicy.bingIndexableSlugs);
 
-  const googleUrls = buildUrlList(sharedInputs, googleTools, googleEnTools);
-  const bingUrls = buildUrlList(sharedInputs, bingTools, bingEnTools);
   const focusUrls = buildFocusedUrlList(sharedInputs, googleTools, googleEnTools);
+  const googleUrls = focusUrls;
+  const bingUrls = focusUrls;
+  const focusSummary = {
+    count: focusUrls.length,
+    tools: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/tools\/[^/]+\/$/.test(url.loc)).length,
+    enTools: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/en\/tools\/[^/]+\/$/.test(url.loc)).length,
+    ratgeber: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/ratgeber\/[^/]+\/$/.test(url.loc)).length,
+    enRatgeber: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/en\/ratgeber\/[^/]+\/$/.test(url.loc)).length,
+  };
 
   await writeSitemapFile(GOOGLE_OUTPUT_FILE, googleUrls);
   await writeSitemapFile(BING_OUTPUT_FILE, bingUrls);
@@ -809,30 +809,26 @@ async function generateSitemaps() {
     google: {
       urls: googleUrls,
       count: googleUrls.length,
-      tools: googleTools.length,
-      categories: sharedInputs.categories.length,
-      ratgeber: sharedInputs.ratgeber.length,
-      enTools: googleEnTools.length,
-      enCategories: sharedInputs.enCategories.length,
-      enRatgeber: sharedInputs.enRatgeber.length,
+      tools: focusSummary.tools,
+      categories: 0,
+      ratgeber: focusSummary.ratgeber,
+      enTools: focusSummary.enTools,
+      enCategories: 0,
+      enRatgeber: focusSummary.enRatgeber,
     },
     bing: {
       urls: bingUrls,
       count: bingUrls.length,
-      tools: bingTools.length,
-      categories: sharedInputs.categories.length,
-      ratgeber: sharedInputs.ratgeber.length,
-      enTools: bingEnTools.length,
-      enCategories: sharedInputs.enCategories.length,
-      enRatgeber: sharedInputs.enRatgeber.length,
+      tools: focusSummary.tools,
+      categories: 0,
+      ratgeber: focusSummary.ratgeber,
+      enTools: focusSummary.enTools,
+      enCategories: 0,
+      enRatgeber: focusSummary.enRatgeber,
     },
     focus: {
       urls: focusUrls,
-      count: focusUrls.length,
-      tools: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/tools\/[^/]+\/$/.test(url.loc)).length,
-      enTools: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/en\/tools\/[^/]+\/$/.test(url.loc)).length,
-      ratgeber: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/ratgeber\/[^/]+\/$/.test(url.loc)).length,
-      enRatgeber: focusUrls.filter((url) => /^https:\/\/tools\.utildesk\.de\/en\/ratgeber\/[^/]+\/$/.test(url.loc)).length,
+      ...focusSummary,
     },
     toolIndexDecisionCounts: toolIndexPolicy.decisionCounts,
   };

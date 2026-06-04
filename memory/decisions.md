@@ -93,13 +93,13 @@
 
 ## 2026-05-06
 
-- Keep separate sitemap contracts for Google and Bing:
+- Keep the search sitemap contract compact during indexing recovery:
   - Google Search Console and `robots.txt` use only `https://tools.utildesk.de/sitemap.xml`.
-  - Bing uses the broad feed `https://tools.utildesk.de/sitemap-bing.xml`, submitted explicitly through Bing Webmaster API/UI when needed.
-- Do not advertise `sitemap-bing.xml` in `robots.txt`; this avoids shaking Bing when a fix is Google-only.
+  - Bing should receive the same compact focus surface through `https://tools.utildesk.de/sitemap-focus.xml`; do not submit a broad long-tail sitemap.
+- Do not advertise `sitemap-bing.xml` or `sitemap-focus.xml` in `robots.txt`; `robots.txt` keeps the canonical `sitemap.xml` line only.
 - Long-tail tool pages excluded from Google's staged sitemap must keep generic `robots: index,follow` and receive only a Google-specific `googlebot: noindex,follow`.
 - Never replace the Google-specific staging with global `noindex` unless the page is intentionally disabled or explicitly marked noindex in frontmatter.
-- Treat `site/scripts/generate_sitemap.mjs`, `site/src/lib/searchIndexPolicy.mjs`, and `site/src/layouts/BaseLayout.astro` as the coupled source of truth for this split; changing one without the others risks breaking search behavior.
+- Treat `site/scripts/generate_sitemap.mjs`, `site/src/lib/searchIndexPolicy.mjs`, and `site/src/layouts/BaseLayout.astro` as the coupled source of truth for sitemap and robots behavior; changing one without the others risks breaking search behavior.
 - Ratgeber candidates about exactly one tool are forbidden for publication review, even when the text score is 100. `tool_spotlight`, `tool_review`, `product_spotlight`, `product_review`, and titles like `Tool: Was das Tool im Alltag wirklich taugt` must be rejected before Cloudflare upload.
 - Ratgeber visual quality is also a hard gate: `visual_quality.pass = false`, generic workflow fallback, placeholder/empty/raw/unrelated/cloned/debug visuals must not reach the admin review list.
 - Ratgeber final artwork must not come from the local HTML/PNG fallback renderer. Final candidate uploads require an approved visual source marker such as `chatgpt_manual`, `chatgpt_web`, or `manual_approved_artwork` with `approvedForReview: true`; untagged PNG pairs and identical cover/workflow hashes are rejected.
@@ -154,6 +154,6 @@
 
 ## 2026-05-21 - Compact search-recovery sitemap
 
-- `https://tools.utildesk.de/sitemap-focus.xml` is the compact thematic sitemap for direct Search Console/Bing submission experiments during search recovery.
-- Do not advertise `sitemap-focus.xml` in `robots.txt`; keep `robots.txt` pointing only at `https://tools.utildesk.de/sitemap.xml`, and keep broad Bing discovery on explicitly submitted `sitemap-bing.xml`.
+- `https://tools.utildesk.de/sitemap-focus.xml` is the compact thematic sitemap for direct Bing submission during search recovery.
+- Keep `robots.txt` pointing only at `https://tools.utildesk.de/sitemap.xml`. The generated `sitemap.xml`, `sitemap-bing.xml`, and `sitemap-focus.xml` should all stay compact: Ratgeber depth plus the strongest curated tool cards.
 - Build the focus sitemap only from pages that are already Google-indexable: Ratgeber depth, core hubs, methodology pages, and a small curated set of AI/automation/productivity tool cards. Do not use it to sneak Googlebot-noindex long-tail pages into GSC.
