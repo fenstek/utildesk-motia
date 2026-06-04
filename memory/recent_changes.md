@@ -494,3 +494,13 @@ _Last updated: 2026-05-27_
 - Removed the old inline `Plus Jakarta Sans` headings from German and English tool-detail alternative sections and replaced them with the shared `.alternatives-title` style.
 - Fixed the 404 page to use the current `--display` and `--mono` font tokens instead of the stale `--font-mono` variable.
 - Removed the unused legacy public stylesheet `site/public/styles/global.css`, which still described the old Inter/Plus Jakarta design system and was no longer imported by the Astro app.
+
+## 2026-06-03 - Compact sitemap strategy for Google and Bing
+
+- Live SEO check found no robots/fetch/canonical block on key pages, but Bing Webmaster still had broad `sitemap-bing.xml` registered alongside focused feeds.
+- Policy audit found the broad Bing sitemap could include many long-tail URLs whose live pages returned global `noindex`, creating a mixed signal for Bing.
+- Search strategy was changed away from broad sitemap submission: `sitemap.xml`, `sitemap-bing.xml`, and `sitemap-focus.xml` now all use the compact focus set: Ratgeber depth, core hubs/methodology, and the strongest curated tool cards.
+- `scripts/bing_webmaster_api.py` now defaults feed submission to `https://tools.utildesk.de/sitemap-focus.xml`, and the postproduction pipeline submits only the focus sitemap to Bing.
+- Bing Webmaster cleanup was performed immediately: removed registered `sitemap-bing.xml` and `sitemap.xml`, then resubmitted only `https://tools.utildesk.de/sitemap-focus.xml`; readback showed one feed, `UrlCount=102`, `Status=Pending` right after submission.
+- Google Search Console compact sitemap was resubmitted for `sc-domain:tools.utildesk.de`; API returned `lastSubmitted=2026-06-03T21:10:12Z`, `warnings=0`, `errors=0`, while `lastDownloaded` remained the old 2026-05-21 value until Google recrawls it.
+- IndexNow was submitted for all 102 live `sitemap-focus.xml` canonical URLs; both `https://api.indexnow.org/indexnow` and `https://www.bing.com/indexnow` returned HTTP 200.

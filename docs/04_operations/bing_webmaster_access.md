@@ -16,7 +16,7 @@ Expected keys:
 BING_WEBMASTER_API_KEY=
 BING_WEBMASTER_SITE_URL=https://tools.utildesk.de
 BING_WEBMASTER_API_BASE=https://ssl.bing.com/webmaster/api.svc/json
-BING_WEBMASTER_SMOKE_FEED_URL=https://tools.utildesk.de/sitemap-bing.xml
+BING_WEBMASTER_SMOKE_FEED_URL=https://tools.utildesk.de/sitemap-focus.xml
 ```
 
 ## Safe Workflow
@@ -56,14 +56,14 @@ python scripts/bing_webmaster_api.py call --method GetUserSites
 - list verified sites and active sitemap/feed registrations
 - summarize recent crawl health from Bing's own crawl stats
 - inspect submission quota
-- resubmit the Bing-specific sitemap/feed
+- resubmit the compact focus sitemap/feed
 - submit important URLs directly, one by one or in a batch
 
 ## Operational Split
 
 - Google Search Console should use `https://tools.utildesk.de/sitemap.xml`.
-- Bing Webmaster Tools should use `https://tools.utildesk.de/sitemap-bing.xml`.
-- `robots.txt` intentionally advertises only the conservative Google sitemap. Submit the Bing feed through the API/UI when you explicitly want to refresh Bing.
+- Bing Webmaster Tools should use the compact focus feed `https://tools.utildesk.de/sitemap-focus.xml`.
+- Do not submit a broad long-tail sitemap to Bing during search recovery. `robots.txt` intentionally advertises only `https://tools.utildesk.de/sitemap.xml`; submit the focus feed through the API/UI when you explicitly want to refresh Bing.
 
 ## Current Audit Notes
 

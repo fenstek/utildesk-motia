@@ -133,7 +133,7 @@ function printHelp() {
 `  --wait-live                  Check/wait that canonical URLs are live before submission\n` +
 `  --no-indexnow                Do not call scripts/indexnow_submit.py\n` +
 `  --no-bing                    Do not call scripts/bing_webmaster_api.py submit-batch\n` +
-`  --submit-bing-feeds          Also submit sitemap.xml and sitemap-bing.xml to Bing\n` +
+`  --submit-bing-feeds          Also submit the compact focus sitemap to Bing\n` +
 `  --no-umami                  Skip Umami snapshot\n` +
 `  --resubmit-window-hours <n>  Skip URLs submitted recently (default: ${DEFAULT_RESUBMIT_WINDOW_HOURS})\n` +
 `  --max-submit-urls <n>        Cap external URL submissions per run (default: ${DEFAULT_MAX_SUBMIT_URLS})\n` +
@@ -474,8 +474,7 @@ function submitBingFeeds(opts) {
   const bingEnvFile = opts.bingEnvFile || process.env.BING_ENV_FILE || path.join(ROOT_DIR, "secrets", "bing-webmaster.env");
   if (!hasBingSettings(bingEnvFile)) return { skipped: true, reason: "missing Bing env" };
   const feeds = [
-    urlForPath(opts.siteUrl, "/sitemap.xml"),
-    urlForPath(opts.siteUrl, "/sitemap-bing.xml"),
+    urlForPath(opts.siteUrl, "/sitemap-focus.xml"),
   ];
   const results = [];
   for (const feed of feeds) {
