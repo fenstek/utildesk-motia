@@ -52,8 +52,7 @@ Last checked: 2026-06-03
   - live `https://tools.utildesk.de/sitemap.xml` returns `102` URLs;
   - live `https://tools.utildesk.de/sitemap-bing.xml` returns `102` URLs;
   - live `https://tools.utildesk.de/sitemap-focus.xml` returns `102` URLs;
-  - `https://tools.utildesk.de/sitemap.xml` was submitted to GSC and returned `lastSubmitted = 2026-06-04T11:03:42Z`, `warnings = 0`, `errors = 0`.
-  - GSC may keep showing the old submitted count for `sitemap.xml` until Google redownloads the file.
+  - `https://tools.utildesk.de/sitemap.xml` was submitted to GSC and final API readback returned `lastSubmitted = 2026-06-04T11:09:03Z`, `lastDownloaded = 2026-06-04T11:03:43Z`, `submitted = 102`, `warnings = 0`, `errors = 0`.
 - URL Inspection sample showed no robots/canonical/fetch blockers:
   - already crawled core pages: `INDEXING_ALLOWED`, robots `ALLOWED`, fetch
     `SUCCESSFUL`, self-canonical
@@ -77,6 +76,9 @@ Last checked: 2026-06-03
   - removed registered `sitemap.xml`;
   - resubmitted only `https://tools.utildesk.de/sitemap-focus.xml`;
   - immediate readback showed one feed, `UrlCount = 102`, `Status = Pending`.
+- 2026-06-04 post-deploy Bing resubmission:
+  - resubmitted `https://tools.utildesk.de/sitemap-focus.xml`;
+  - follow-up readback showed `UrlCount = 102`, `Status = Success`.
 - 2026-06-03 IndexNow:
   - submitted all `102` live focus sitemap URLs;
   - `https://api.indexnow.org/indexnow` returned HTTP `200`;

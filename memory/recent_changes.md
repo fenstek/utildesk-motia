@@ -514,5 +514,5 @@ _Last updated: 2026-05-27_
   - `https://tools.utildesk.de/sitemap-bing.xml` -> `102` URLs;
   - `https://tools.utildesk.de/sitemap-focus.xml` -> `102` URLs;
   - `robots.txt` still advertises only `https://tools.utildesk.de/sitemap.xml`.
-- Google Search Console main sitemap submit succeeded for `https://tools.utildesk.de/sitemap.xml`; API readback showed `lastSubmitted=2026-06-04T11:03:42Z`, `warnings=0`, `errors=0`. The `submitted` count for the main sitemap still showed the old value until Google redownloads it.
-- Bing Webmaster `sitemap-focus.xml` was resubmitted after deploy; immediate feed readback showed `UrlCount=102`, `Status=Pending`.
+- Google Search Console main sitemap submit succeeded for `https://tools.utildesk.de/sitemap.xml`; final API readback after deploy showed `lastSubmitted=2026-06-04T11:09:03Z`, `lastDownloaded=2026-06-04T11:03:43Z`, `submitted=102`, `warnings=0`, `errors=0`.
+- Bing Webmaster `sitemap-focus.xml` was resubmitted after deploy; follow-up feed readback showed `UrlCount=102`, `Status=Success`.
