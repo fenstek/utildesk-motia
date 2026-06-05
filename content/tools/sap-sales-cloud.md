@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Abonnement
 tags: [crm, sales, enterprise, automation]
 official_url: "https://www.sap.com/products/crm/sales-cloud.html"
-popularity: 17
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 ---

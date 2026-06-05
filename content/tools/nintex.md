@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [workflow-automation, process-management, enterprise]
 official_url: "https://www.nintex.com/"
-popularity: 27
+popularity: 26
 tier: C
 generated_at: 2026-05-27
 ---
