@@ -2,15 +2,15 @@
 slug: vectr
 title: Vectr
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Image
 price_model: Freemium
 tags: [vector-graphics, design, editing]
 official_url: "https://vectr.com/"
-popularity: 6
+popularity: 7
 description: Vectr ist ein Design- und Kreativwerkzeug für einfacher Vektorgrafik-Editor für Logos, Icons, Mockups und schnelle Webgrafiken.
 tier: C
 generated_at: 2026-05-28

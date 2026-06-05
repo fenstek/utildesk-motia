@@ -2,15 +2,15 @@
 slug: redis
 title: Redis
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Entwickler-Tools
 price_model: Open Source
 tags: [database, cache, open-source, cloud]
 official_url: "https://redis.io/"
-popularity: 19
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 ---

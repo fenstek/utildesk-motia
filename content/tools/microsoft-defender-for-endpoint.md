@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Abonnement
 tags: [security,enterprise,automation,analytics,developer-tools]
 official_url: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint"
-popularity: 31
+popularity: 30
 tier: C
 generated_at: 2026-05-28
 ---

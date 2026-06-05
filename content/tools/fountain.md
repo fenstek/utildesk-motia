@@ -10,7 +10,7 @@ category: AI Image
 price_model: Abonnement
 tags: [recruiting, hr, automation, ai]
 official_url: "https://www.fountain.com/"
-popularity: 48
+popularity: 0
 tier: C
 generated_at: 2026-05-27
 ---

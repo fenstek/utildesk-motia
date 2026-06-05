@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.cypress.io/"
-popularity: 54
+popularity: 0
 tier: C
 generated_at: 2026-05-26
 ---

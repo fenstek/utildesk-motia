@@ -13,7 +13,7 @@ official_url: "https://www.coreldraw.com/"
 affiliate_url: "https://www.coreldraw.com/"
 tier: C
 generated_at: 2026-05-28
-popularity: 55
+popularity: 54
 description: Vektor- und Layoutsuite für Illustration, Logoarbeit, Druckgrafik, Beschilderung und technische Designs.
 ---
 # CorelDRAW
