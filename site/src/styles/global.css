@@ -7007,6 +7007,7 @@ html[data-design="decision"]:not(:has(.ds-template)) .rg-arrow {
 
 /* KI-Blatt third match pass: make inventory read like the standalone register. */
 html[data-design="decision"] .inv-wrap,
+html[data-design="decision"] .rg-wrap,
 html[data-design="decision"] .inv-list-wrap,
 html[data-design="decision"] .tools-guides {
   width: min(1376px, calc(100% - 64px)) !important;
@@ -7200,7 +7201,13 @@ html[data-design="decision"] .inv-loadmore {
 }
 
 @media (max-width: 760px) {
+  html[data-design="decision"]:not(:has(.ds-template)) main.container,
+  html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+    width: min(100%, calc(100% - 20px)) !important;
+    max-width: min(100%, calc(100% - 20px)) !important;
+  }
   html[data-design="decision"] .inv-wrap,
+  html[data-design="decision"] .rg-wrap,
   html[data-design="decision"] .inv-list-wrap,
   html[data-design="decision"] .tools-guides {
     width: min(100% - 28px, 1376px) !important;
@@ -7211,6 +7218,14 @@ html[data-design="decision"] .inv-loadmore {
   html[data-design="decision"] .inv-register {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+  html[data-design="decision"] .inv-head {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  html[data-design="decision"] .inv-head-h1 {
+    font-size: clamp(2.85rem, 13vw, 3.4rem) !important;
+    line-height: 0.98 !important;
   }
   html[data-design="decision"] .inv-table-head { display: none !important; }
   html[data-design="decision"] .inv-register .inv-row {
