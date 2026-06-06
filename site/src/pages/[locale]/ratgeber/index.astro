@@ -63,11 +63,29 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <section class="ratgeber-hero">
-    <p class="rg-eyebrow">Guides</p>
-    <h1>Comparisons and workflow briefings<br/>for practical AI work</h1>
-    <p class="rg-sub">Editorial context for teams that want to use AI productively, not just experiment with isolated prompts.</p>
-  </section>
+  <div class="tool-akte rg-wrap">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/">&#x2190; Directory</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Guide archive</span>
+    </nav>
+    <header class="inv-head rg-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">&#x21B3; Decision sheet · Issue No. 049 · Guides</div>
+        <h1 class="inv-head-h1">{articles.length} Decisions<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          Editorial context, comparisons and workflow models for teams
+          that want to use AI productively, not just experiment with isolated prompts.
+        </p>
+      </div>
+      <div class="inv-head-stats" role="group" aria-label="Guide statistics">
+        <div class="inv-stat"><strong>{articles.length}</strong><span>Guides total</span></div>
+        <div class="inv-stat"><strong>{articles.filter(a => a.data.coverImage).length}</strong><span>With illustration</span></div>
+        <div class="inv-stat"><strong>{Math.round(articles.reduce((s, a) => s + (Number(a.data.readTime) || 0), 0) / Math.max(articles.length, 1))}</strong><span>Avg. min read</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>0</strong><span>Paid slots</span></div>
+      </div>
+    </header>
+  </div>
 
   <section class="rg-list">
     {articles.length === 0 ? (
