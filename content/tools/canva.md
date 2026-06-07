@@ -2,10 +2,10 @@
 slug: canva
 title: Canva
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Image
 price_model: Freemium
 tags: ["design", "automation", "marketing"]
@@ -15,7 +15,7 @@ tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-07
 updated_at: 2026-05-21
-popularity: 59
+popularity: 60
 description: Canva ist eine Designplattform für Marketing, Social Media, Präsentationen und schnelle visuelle Inhalte ohne klassisches Grafikdesign-Setup.
 ---
 # Canva

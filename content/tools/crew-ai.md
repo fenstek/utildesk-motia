@@ -2,17 +2,17 @@
 slug: crew-ai
 title: CrewAI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Agents
-price_model:
+price_model: 
 tags: ["automation"]
 official_url: "https://www.crewai.com/"
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-15"
+popularity: 54
+tier: A
+lastReviewed: 2026-05-15
 mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen", "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
 # CrewAI

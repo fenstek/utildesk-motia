@@ -2,15 +2,15 @@
 slug: papago
 title: Papago
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Chatbots
-price_model:
+price_model: 
 tags: [assistant, automation]
 official_url: "https://papago.naver.com/"
-popularity: 24
+popularity: 23
 tier: C
 generated_at: 2026-05-27
 ---

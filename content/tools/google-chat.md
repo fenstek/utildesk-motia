@@ -2,15 +2,15 @@
 slug: google-chat
 title: Google Chat
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Freemium
 tags: [chat,communication,collaboration,productivity]
 official_url: "https://workspace.google.com/products/chat/"
-popularity: 45
+popularity: 44
 tier: C
 generated_at: 2026-05-27
 ---

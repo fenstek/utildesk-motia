@@ -2,16 +2,16 @@
 slug: consensus
 title: Consensus
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Research
 price_model: Freemium
 tags: ["ai", "research", "science"]
 official_url: "https://consensus.app/"
 created_at: 2026-02-14
-popularity: 94
+popularity: 55
 description: Consensus ist ein Recherche- und Analysewerkzeug für KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten.
 tier: A
 lastReviewed: 2026-05-28

@@ -2,17 +2,17 @@
 slug: abbyy-vantage
 title: ABBYY Vantage
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Automatisierung
 price_model: Individuelles Angebot
-tags:
+tags: 
 official_url: "https://www.abbyy.com/vantage/"
 description: ABBYY Vantage ist eine Enterprise-Plattform für intelligente Dokumentenverarbeitung, bei der OCR, Klassifikation, Extraktion und menschliche Prüfung zusammenspielen.
 created_at: 2026-05-10
-popularity: 80
+popularity: 82
 tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "ki-tools-eu-datenverarbeitung-kleine-unternehmen"]
