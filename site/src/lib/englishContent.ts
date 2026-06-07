@@ -94,7 +94,7 @@ type EnglishToolTranslation = {
 const EN_TOOLS_DIR = fromContent("en", "tools");
 const englishToolTranslationCache = new Map<string, EnglishToolTranslation | null>();
 
-const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null => {
+export const getEnglishToolTranslation = (slug: string): EnglishToolTranslation | null => {
   if (englishToolTranslationCache.has(slug)) {
     return englishToolTranslationCache.get(slug) ?? null;
   }

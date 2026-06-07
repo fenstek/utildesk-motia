@@ -11,6 +11,7 @@ import {
   buildEnglishToolMarkdown,
   categoryTitleEn,
   getEnglishToolMeta,
+  getEnglishToolTranslation,
   hasEnglishToolTranslation,
 } from "../../../lib/englishContent";
 import toolAddedAtManifest from "../../../data/tool-added-at.json";
@@ -62,6 +63,8 @@ const editorialVerdict = getToolEditorialVerdict(
   isCuratedTool ? "recommend" : "caution",
 );
 const meta = getEnglishToolMeta(entry);
+const englishTranslation = getEnglishToolTranslation(slug);
+const englishFactData = englishTranslation?.data ?? {};
 const providerUrl = meta.targetUrl || "";
 const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
 const localLogo = resolveLocalLogo(slug);
@@ -118,6 +121,16 @@ const extractDomain = (url: string) => {
 };
 const providerDomain = extractDomain(providerUrl);
 const vendorName = entry.data.vendor ? String(entry.data.vendor) : meta.title;
+const factValue = (value: unknown, fallback: string) => {
+  if (typeof value === "boolean") return value ? "Yes" : "No";
+  if (value === null || value === undefined || String(value).trim() === "") return fallback;
+  return String(value);
+};
+const factHosting = factValue(englishFactData.hosting ?? entry.data.hosting, "Web \u00b7 provider");
+const factDpa = factValue(englishFactData.dpa_available ?? englishFactData.dpa ?? entry.data.dpa_available ?? entry.data.dpa, "check");
+const factOpenSource = factValue(englishFactData.open_source ?? englishFactData.openSource ?? entry.data.open_source ?? entry.data.openSource, "No");
+const factSelfHostable = factValue(englishFactData.self_hostable ?? englishFactData.selfHostable ?? entry.data.self_hostable ?? entry.data.selfHostable, "No");
+const factApiAvailable = factValue(englishFactData.api_available ?? englishFactData.apiAvailable ?? entry.data.api_available ?? entry.data.apiAvailable, "check");
 const monogramLetter = (vendorName || meta.title || slug || "·")
   .replace(/[^A-Za-z]/g, "")
   .charAt(0)
@@ -317,11 +330,11 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </div>
         <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Category</span><span class="akte-faktenblatt-val">{meta.category || "—"}</span></div>
         <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Pricing</span><span class="akte-faktenblatt-val">{meta.priceModel || "—"}</span></div>
-        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Hosting</span><span class="akte-faktenblatt-val">Web · provider</span></div>
-        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">DPA available</span><span class="akte-faktenblatt-val">check</span></div>
-        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Open source</span><span class="akte-faktenblatt-val">No</span></div>
-        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Self-hostable</span><span class="akte-faktenblatt-val">No</span></div>
-        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">API available</span><span class="akte-faktenblatt-val">check</span></div>
+        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Hosting</span><span class="akte-faktenblatt-val">{factHosting}</span></div>
+        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">DPA available</span><span class="akte-faktenblatt-val">{factDpa}</span></div>
+        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Open source</span><span class="akte-faktenblatt-val">{factOpenSource}</span></div>
+        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">Self-hostable</span><span class="akte-faktenblatt-val">{factSelfHostable}</span></div>
+        <div class="akte-faktenblatt-row"><span class="akte-faktenblatt-key">API available</span><span class="akte-faktenblatt-val">{factApiAvailable}</span></div>
         <div class="akte-faktenblatt-row is-paid"><span class="akte-faktenblatt-key">Paid placement</span><span class="akte-faktenblatt-val">no</span></div>
         <hr class="akte-faktenblatt-divider" />
         <div class="akte-faktenblatt-foot">
