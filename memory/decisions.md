@@ -157,3 +157,10 @@
 - `https://tools.utildesk.de/sitemap-focus.xml` is the compact thematic sitemap for direct Bing submission during search recovery.
 - Keep `robots.txt` pointing only at `https://tools.utildesk.de/sitemap.xml`. The generated `sitemap.xml`, `sitemap-bing.xml`, and `sitemap-focus.xml` should all stay compact: Ratgeber depth plus the strongest curated tool cards.
 - Build the focus sitemap only from pages that are already Google-indexable: Ratgeber depth, core hubs, methodology pages, and a small curated set of AI/automation/productivity tool cards. Do not use it to sneak Googlebot-noindex long-tail pages into GSC.
+
+## 2026-06-07 - NotebookLM account guardrail
+
+- All NotebookLM work for the Utildesk/Ratgeber pipeline must use only the Google account `vasjakotov11@gmail.com`, because this is the user's paid NotebookLM account.
+- Do not create notebooks, upload sources, run NotebookLM article jobs, or refresh NotebookLM browser storage under any other Google account.
+- If NotebookLM auth is expired, ambiguous, or points to a different account, stop before running the article pipeline and refresh/login explicitly as `vasjakotov11@gmail.com`.
+- For the physical GUI OptiPlex path, NotebookLM operations run on `jgdus@jgdus-OptiPlex-3000` (`jgdus@100.98.97.98`) in `/home/jgdus/projects/agent-newsman` with `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`; do not confuse this with the headless `opcl@ubuntu-opcl` path `/opt/openclaw/workspace/agent-newsman`.

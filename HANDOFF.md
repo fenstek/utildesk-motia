@@ -1,5 +1,28 @@
 # Handoff
 
+## 2026-06-07 NotebookLM on jgdus-OptiPlex-3000
+
+- The physical OptiPlex GUI contour is `jgdus@jgdus-OptiPlex-3000`, reachable over Tailscale as `jgdus@100.98.97.98`.
+- Its article pipeline checkout is `/home/jgdus/projects/agent-newsman`, not `/opt/openclaw/workspace/agent-newsman`.
+- NotebookLM auth for this contour uses `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm` and must be logged in as `vasjakotov11@gmail.com`.
+- Correct interactive login command on the physical OptiPlex:
+  - `cd /home/jgdus/projects/agent-newsman && NOTEBOOKLM_HOME=$HOME/.notebooklm ./.venv/bin/notebooklm login`
+- Correct auth check from Codex/SSH:
+  - `ssh jgdus@100.98.97.98 "cd /home/jgdus/projects/agent-newsman && NOTEBOOKLM_HOME=/home/jgdus/.notebooklm ./.venv/bin/python scripts/notebooklm_auth_status.py"`
+- Correct article runner command after auth is ready:
+  - `ssh jgdus@100.98.97.98 "cd /home/jgdus/projects/agent-newsman && NOTEBOOKLM_HOME=/home/jgdus/.notebooklm ./.venv/bin/python article_execution/article_runner.py --limit 1"`
+- Do not assume that an already-open NotebookLM tab updates `storage_state.json`; the CLI login must be completed and confirmed with Enter so the runner can use `/home/jgdus/.notebooklm/storage_state.json`.
+- On 2026-06-07, the pending comparison job was copied to the physical OptiPlex queue:
+  - `/home/jgdus/projects/agent-newsman/data/article_jobs/queue/pending/20260607-open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewa-comparison.json`
+- The same job created a NotebookLM notebook and completed a NotebookLM report, but did not pass the standard article runner into `review_ready`:
+  - notebook id: `374d4940-e3d2-4fef-9a02-3963ca01cfca`;
+  - notebook title: `Open-source AI agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline (comparison)`;
+  - initial report artifact id: `8f1b9f85-f06c-4bcd-98ca-a323d009164b`;
+  - initial downloaded report: `/home/jgdus/projects/agent-newsman/artifacts/article_jobs/20260607-open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewa-comparison/notebooklm-report.md`;
+  - expanded report artifact id: `06e7155f-53ad-4f73-b43d-e243c4a5cf16`;
+  - expanded downloaded report: `/home/jgdus/projects/agent-newsman/artifacts/article_jobs/20260607-open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewa-comparison/notebooklm-report-expanded.md` (`1932` words);
+  - marker: `/home/jgdus/projects/agent-newsman/artifacts/article_jobs/20260607-open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewa-comparison/notebooklm_report_ready.json`.
+- The separate headless `opcl@ubuntu-opcl` contour still uses `/opt/openclaw/workspace/agent-newsman` and `/home/opcl/.notebooklm`; do not mix auth files or paths between these contours.
 
 
 ## 2026-05-15 Umami v3.1.0 operations handoff

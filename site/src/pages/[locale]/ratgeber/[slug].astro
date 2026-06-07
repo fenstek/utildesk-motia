@@ -36,7 +36,12 @@ const localAssetExists = (src: string | null | undefined) => {
   if (!src) return false;
   const value = String(src);
   if (!value.startsWith("/")) return true;
-  return existsSync(join(process.cwd(), "public", value));
+  const relativeAsset = value.replace(/^\//, "");
+  return [
+    join(process.cwd(), "public", relativeAsset),
+    join(process.cwd(), "content", relativeAsset),
+    join(process.cwd(), "..", "content", relativeAsset),
+  ].some((candidate) => existsSync(candidate));
 };
 const safeCoverImage = data.coverImage && localAssetExists(String(data.coverImage)) ? String(data.coverImage) : null;
 const safeSecondaryImage = data.secondaryImage && localAssetExists(String(data.secondaryImage)) ? String(data.secondaryImage) : null;
