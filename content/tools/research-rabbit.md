@@ -2,15 +2,15 @@
 slug: research-rabbit
 title: Research Rabbit
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Infrastructure
 price_model: Je nach Plan
 tags: [productivity, data, analytics, education]
 official_url: "https://www.researchrabbit.ai/"
-popularity: 97
+popularity: 98
 description: Research Rabbit hilft, wissenschaftliche Literatur über Paper-Netzwerke, Autorenbeziehungen und thematische Sammlungen zu erkunden.
 tier: C
 generated_at: 2026-05-18

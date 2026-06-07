@@ -2,17 +2,17 @@
 slug: zapier
 title: Zapier
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Agents
 price_model: Freemium
 tags: [ai, devtools, automation]
 official_url: "http://zapier.com"
 created_at: 2026-02-13
 updated_at: 2026-05-21
-popularity: 96
+popularity: 97
 tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]

@@ -2,15 +2,15 @@
 slug: endnote
 title: EndNote
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Research
 price_model: Einmalzahlung
 tags: [reference-manager,citations,research]
 official_url: "https://endnote.com/de/?"
-popularity: 49
+popularity: 0
 description: EndNote ist ein Referenzmanager für lange wissenschaftliche Schreibprojekte, Literaturdatenbanken, Zitationsstile und Team-Bibliotheken.
 tier: C
 generated_at: 2026-05-26

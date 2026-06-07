@@ -2,15 +2,15 @@
 slug: filmora
 title: Filmora
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Audio & Video
 price_model: Je nach Plan
 tags: [video, editing, audio]
 official_url: "https://filmora.wondershare.com/"
-popularity: 48
+popularity: 47
 description: Filmora ist ein Video- und Produktionswerkzeug für zugänglicher Videoschnitt für Creator, Tutorials, Social Clips und einfache Produktionen.
 tier: C
 generated_at: 2026-05-27

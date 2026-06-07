@@ -2,20 +2,20 @@
 slug: grammarly
 title: Grammarly
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Freemium
-tags:
+tags: 
 official_url: "https://www.grammarly.com/"
 affiliate_url: "https://www.grammarly.com/"
 tier: C
 generated_at: 2026-05-27
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 43
+popularity: 41
 ---
 # Grammarly
 

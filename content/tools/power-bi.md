@@ -2,15 +2,15 @@
 slug: power-bi
 title: Power BI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: AI Infrastructure
 price_model: Je nach Plan
 tags: [analytics, workflow]
 official_url: "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
-popularity: 22
+popularity: 21
 updated_at: 2026-05-21
 tier: D
 generated_at: 2026-05-28
