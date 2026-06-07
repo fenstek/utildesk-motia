@@ -1,5 +1,5 @@
 ---
-import ToolCard from "../../../../components/ToolCard.astro";
+import InventoryToolRow from "../../../../components/InventoryToolRow.astro";
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import { ROBOTS_NOINDEX_FOLLOW } from "../../../../lib/searchIndexPolicy.mjs";
 import { humanizeTagLabel } from "../../../../lib/seoText";
@@ -27,7 +27,6 @@ export async function getStaticPaths() {
   }));
 }
 
-const { slug } = Astro.params;
 const selectedTag = String(Astro.props.tag || "");
 
 if (!selectedTag) {
@@ -42,6 +41,23 @@ const filteredTools = enabledTools
   .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "en"));
 const tagSlug = slugifyTag(selectedTag);
 const description = `Filtered selection of AI tools tagged ${selectedTagLabel}.`;
+
+const tagFrequency = new Map<string, number>();
+enabledTools.forEach((tool) => {
+  tool.tags.forEach((tag) => {
+    const normalized = tag.trim().toLowerCase();
+    if (!normalized) return;
+    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
+  });
+});
+const visibleTags = Array.from(tagFrequency.entries())
+  .sort((a, b) => {
+    if (b[1] !== a[1]) return b[1] - a[1];
+    return a[0].localeCompare(b[0], "en");
+  })
+  .map(([tag]) => tag)
+  .filter((tag) => (tagFrequency.get(tag) || 0) >= 2)
+  .slice(0, 32);
 
 const itemListSchema = {
   "@context": "https://schema.org",
@@ -68,23 +84,6 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Tools", url: `${SITE_URL}/en/tools/` },
   { name: `Tag: ${selectedTagLabel}`, url: `${SITE_URL}${tagHref(selectedTag, "en")}` },
 ]);
-
-const tagFrequency = new Map<string, number>();
-enabledTools.forEach((tool) => {
-  tool.tags.forEach((tag) => {
-    const normalized = tag.trim().toLowerCase();
-    if (!normalized) return;
-    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
-  });
-});
-const visibleTags = Array.from(tagFrequency.entries())
-  .sort((a, b) => {
-    if (b[1] !== a[1]) return b[1] - a[1];
-    return a[0].localeCompare(b[0], "en");
-  })
-  .map(([tag]) => tag)
-  .filter((tag) => (tagFrequency.get(tag) || 0) >= 2)
-  .slice(0, 32);
 ---
 
 <BaseLayout
@@ -100,33 +99,72 @@ const visibleTags = Array.from(tagFrequency.entries())
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <section class="hero" style="padding: 60px 0 40px;">
-    <h1 class="hero-title">Tag: {selectedTagLabel}</h1>
-    <p class="hero-subtitle">
-      Filtered selection of tools tagged {selectedTagLabel}.
-    </p>
-  </section>
+  <div class="tool-akte inv-wrap tag-archive">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/tools/">Back to tool index</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Tag: {selectedTagLabel}</span>
+    </nav>
+
+    <header class="inv-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">Tag file / Filtered inventory</div>
+        <h1 class="inv-head-h1">#{selectedTagLabel}<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          This view shows tools whose metadata carries the selected tag.
+          It is a working filter, not a separate ranking.
+        </p>
+      </div>
+      <div class="inv-head-stats" role="group" aria-label="Tag metrics">
+        <div class="inv-stat"><strong>{filteredTools.length}</strong><span>Matches</span></div>
+        <div class="inv-stat"><strong>{visibleTags.length}</strong><span>Other tags</span></div>
+        <div class="inv-stat"><strong>{enabledTools.length.toLocaleString("en-US")}</strong><span>Total tools</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>0</strong><span>Paid slots</span></div>
+      </div>
+    </header>
+  </div>
 
   {visibleTags.length > 0 && (
-    <div class="tag-filter-row">
-      <label class="tag-filter-label">More tags:</label>
-      <div class="tag-filter-list">
+    <section class="tool-akte tag-related akte-alts" aria-label="More tags">
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">Tag navigation</div>
+          <h2 class="akte-alts-title">Nearby filters<span class="akte-mast-dot">.</span></h2>
+        </div>
+        <a class="akte-alts-all" href="/en/tools/">All tools</a>
+      </div>
+      <div class="akte-chips tag-chip-ledger">
         {visibleTags.map((tag) => (
           <a
             href={tagHref(tag, "en")}
-            class:list={["tag-filter-item", tag.toLowerCase() === selectedTagLower && "active"]}
+            class:list={["akte-chip", "akte-chip-tag", tag.toLowerCase() === selectedTagLower && "is-active"]}
           >
-            {tag}
+            #{humanizeTagLabel(tag)}
           </a>
         ))}
-        <a href="/en/tools/" class="clear-filter-btn">All tools</a>
       </div>
-    </div>
+    </section>
   )}
 
-  <div class="tools-grid" id="tools-grid">
-    {filteredTools.map((tool) => (
-      <ToolCard tool={tool} href={`/en/tools/${tool.slug}/`} fallbackText="Short description coming soon." />
-    ))}
+  <div class="tool-akte inv-list-wrap tag-tools-wrap">
+    <aside class="inv-filter-rail" aria-label="Tag status">
+      <div class="inv-filter-kicker">Selection</div>
+      <h2>Tag<br />filtered.</h2>
+      <div class="inv-filter-group">
+        <h3>Active tag</h3>
+        <p><span class="inv-filter-box inv-filter-box-fill" aria-hidden="true"></span><span>#{selectedTagLabel}</span><em>{filteredTools.length}</em></p>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span>Paid slots</span><em>0</em></p>
+      </div>
+      <div class="inv-filter-group">
+        <h3>Navigation</h3>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span><a href="/en/tools/">All tools</a></span><em>↗</em></p>
+      </div>
+    </aside>
+
+    <div class="tools-grid inv-register inv-view-register" id="tools-grid">
+      {filteredTools.map((tool, index) => (
+        <InventoryToolRow tool={tool} href={`/en/tools/${tool.slug}/`} index={index} locale="en" />
+      ))}
+    </div>
   </div>
 </BaseLayout>

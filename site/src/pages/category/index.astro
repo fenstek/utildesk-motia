@@ -1,39 +1,23 @@
-﻿---
+---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../lib/categories";
-import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
-import matter from "gray-matter";
-import { fromContent } from "../../lib/contentRoot.mjs";
+import { listDisplayTools } from "../../lib/toolDisplay";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
   SITE_URL,
 } from "../../lib/siteMeta";
 
-// Count tools per category
-const toolsDir = fromContent("tools");
-const files = (await readdir(toolsDir)).filter((f) => f.endsWith(".md") && !f.startsWith("_"));
-
-const toolsData = await Promise.all(
-  files.map(async (file) => {
-    const raw = await readFile(join(toolsDir, file), "utf-8");
-    const { data } = matter(raw);
-    const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
-    if (disabled) return null;
-    const tags = Array.isArray(data.tags) ? data.tags.map(String).map((t) => t.toLowerCase()) : [];
-    return { tags };
-  })
-);
-
-const enabledTools = toolsData.filter(Boolean);
-
-const categoriesWithCount = CATEGORIES.map((cat) => {
-  const count = enabledTools.filter((tool) =>
-    tool.tags.some((tag) => cat.matchTags.includes(tag))
+const tools = await listDisplayTools("de");
+const categoriesWithCount = CATEGORIES.map((category) => {
+  const count = tools.filter((tool) =>
+    tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag))
   ).length;
-  return { ...cat, count };
+  return { ...category, count };
 });
+const populatedCount = categoriesWithCount.filter((category) => category.count > 0).length;
+const largestCategory = [...categoriesWithCount].sort((a, b) => b.count - a.count)[0];
+
 const categoryItemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -60,7 +44,7 @@ const categoryBreadcrumbSchema = buildBreadcrumbSchema([
 ---
 
 <BaseLayout
-  title="Kategorien — Utildesk"
+  title="Kategorien - Utildesk"
   description="Entdecke AI-Tools nach Kategorien organisiert."
 >
   <Fragment slot="head">
@@ -70,135 +54,54 @@ const categoryBreadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(categoryBreadcrumbSchema)} />
   </Fragment>
 
-  <section class="category-index">
-    <div class="category-shell">
-      <h1 class="page-title">Tool-Kategorien</h1>
-      <p class="page-intro">
-        Finde AI-Tools nach Kategorien sortiert. Jede Kategorie gruppiert Tools mit ähnlichen Funktionen.
-      </p>
+  <div class="tool-akte inv-wrap category-archive">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Kategorien</span>
+    </nav>
 
-      <div class="category-grid">
-        {categoriesWithCount.map((cat) => (
-          <a href={`/category/${cat.slug}/`} class="card tool-card category-card">
-            <div class="category-card-top">
-              <span class="badge badge-category category-chip">Kategorie</span>
-              <span class="category-count">{cat.count} {cat.count === 1 ? "Tool" : "Tools"}</span>
-            </div>
-            <div class="category-card-body">
-              <h2 class="category-title">{cat.title}</h2>
-              <p class="category-description">{cat.description}</p>
-            </div>
-          </a>
-        ))}
+    <header class="inv-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">↳ Inventar · Kategorien · Ausgabe № 049</div>
+        <h1 class="inv-head-h1">Kategorien<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          Der schnellste Einstieg ist nicht die Tool-Liste, sondern die Aufgabe:
+          Schreiben, Automatisieren, Entwickeln, Vermarkten oder Medien produzieren.
+        </p>
       </div>
+      <div class="inv-head-stats" role="group" aria-label="Kategorie-Kennzahlen">
+        <div class="inv-stat"><strong>{categoriesWithCount.length}</strong><span>Kategorien</span></div>
+        <div class="inv-stat"><strong>{tools.length.toLocaleString("de-DE")}</strong><span>Tools indiziert</span></div>
+        <div class="inv-stat"><strong>{populatedCount}</strong><span>Gefüllt</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>{largestCategory?.count ?? 0}</strong><span>Größte Kategorie</span></div>
+      </div>
+    </header>
+  </div>
+
+  <section class="tool-akte category-ledger akte-alts" aria-label="Tool-Kategorien">
+    <div class="akte-alts-head">
+      <div class="akte-alts-head-left">
+        <div class="akte-alts-kicker">↳ Kategorie-Akten</div>
+        <h2 class="akte-alts-title">Nach Arbeitsabsicht sortiert<span class="akte-mast-dot">.</span></h2>
+      </div>
+      <a class="akte-alts-all" href="/tools/">Alle Tools</a>
+    </div>
+    <div class="akte-alts-grid">
+      {categoriesWithCount.map((category, index) => (
+        <a href={`/category/${category.slug}/`} class="akte-alt-card category-akte-card">
+          <div class="akte-alt-card-head">
+            <span class="akte-alt-card-kicker">Kategorie {String(index + 1).padStart(2, "0")}</span>
+            <span class="akte-alt-card-mono" aria-hidden="true">{category.count}</span>
+          </div>
+          <div class="akte-alt-card-name">{category.title}<span class="akte-mast-dot">.</span></div>
+          <p class="akte-alt-card-tone">{category.description}</p>
+          <div class="akte-alt-card-foot">
+            <span class="akte-alt-card-meta">{category.count} {category.count === 1 ? "Tool" : "Tools"}</span>
+            <span class="akte-alt-card-open">Öffnen</span>
+          </div>
+        </a>
+      ))}
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .category-index {
-    padding: 32px 0 64px;
-  }
-
-  .category-shell {
-    background: var(--surface-container-low);
-    border: 1px solid rgba(190, 201, 197, 0.2);
-    border-radius: var(--radius-lg);
-    padding: 28px;
-    box-shadow: var(--shadow-card);
-  }
-
-  .page-title {
-    font-size: clamp(1.9rem, 4vw, 2.8rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    margin: 0 0 14px;
-    color: var(--on-surface);
-  }
-
-  .page-intro {
-    font-size: 1.02rem;
-    line-height: 1.7;
-    color: var(--text-muted);
-    margin: 0 0 32px;
-    max-width: 680px;
-  }
-
-  .category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: var(--space-5);
-  }
-
-  .category-card {
-    min-height: 200px;
-    gap: var(--space-4);
-    justify-content: space-between;
-  }
-
-  .category-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-3);
-    flex-wrap: wrap;
-  }
-
-  .category-chip {
-    background: var(--surface-container-high);
-  }
-
-  .category-count {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 11px;
-    border-radius: var(--radius-full);
-    font-size: 0.77rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary);
-    background: rgba(23, 98, 89, 0.08);
-    border: 1px solid rgba(23, 98, 89, 0.14);
-  }
-
-  .category-card-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .category-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--on-surface);
-    margin: 0;
-    letter-spacing: -0.02em;
-  }
-
-  .category-description {
-    font-size: 0.94rem;
-    line-height: 1.6;
-    color: var(--text-muted);
-    margin: 0;
-  }
-
-  :root[data-theme="dark"] .category-shell {
-    background: var(--surface-container);
-    border-color: rgba(139, 152, 145, 0.18);
-  }
-
-  @media (max-width: 720px) {
-    .category-index {
-      padding: 16px 0 48px;
-    }
-
-    .category-shell {
-      padding: 20px;
-    }
-
-    .category-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
