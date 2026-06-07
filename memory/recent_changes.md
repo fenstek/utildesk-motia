@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-07_
 
+## 2026-06-07 - Homepage latest-guide movement
+
+- Fixed the decision-layout homepage so the visible hero now uses the newest Ratgeber entries instead of only the pinned editorial guide list.
+- The homepage still keeps pinned/curated guide cards, but the primary announcement now moves when a fresh article is published.
+- Verified the built German and English homepages surface the new open-source AI agents comparison as `Neu im Ratgeber` / `New guide`.
+
 ## 2026-06-07 - Dynamic live date in site header
 
 - Fixed the decision-layout header date so it is no longer hardcoded to `27.05.2026`.

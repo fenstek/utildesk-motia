@@ -45,6 +45,7 @@ const {
   guidesCount,
   categories = [],
   guides = [],
+  latestGuides = [],
   tools = [],
   tasks = [],
   tags = [],
@@ -54,6 +55,7 @@ const {
   guidesCount?: number;
   categories: CategoryItem[];
   guides: ArticleItem[];
+  latestGuides?: ArticleItem[];
   tools: ToolItem[];
   tasks: TaskItem[];
   tags: [string, number][];
@@ -87,6 +89,8 @@ const copy = isEn
       verdict: "Claude Code for senior teams. Copilot as the safer default. Cursor only after a pilot.",
       verdictText: "The bottleneck is no longer writing code. It is understanding, reviewing and owning what the tool changed.",
       toolsLabel: "In the test",
+      latestLabel: "New guide",
+      latestDeck: "Fresh editorial context with practical examples and related tools from the Utildesk catalog.",
       avoidLabel: "Do not start with",
       avoidOne: "rolling out Cursor blindly",
       avoidTwo: "leaving Copilot as the \"it does nothing\" default",
@@ -142,6 +146,8 @@ const copy = isEn
       verdict: "Claude Code f\u00fcr Senior-Teams. Copilot als sicherer Standard. Cursor erst nach Pilot.",
       verdictText: "Der Engpass liegt nicht mehr im Schreiben von Code, sondern im Verstehen, Pr\u00fcfen und Verantworten der \u00c4nderungen.",
       toolsLabel: "Im Test",
+      latestLabel: "Neu im Ratgeber",
+      latestDeck: "Frische redaktionelle Einordnung mit Praxisbezug und Tool-Verweisen aus dem Utildesk-Katalog.",
       avoidLabel: "Nicht damit starten",
       avoidOne: "Cursor blind ausrollen",
       avoidTwo: "Copilot als macht-ja-eh-nichts-Default lassen",
@@ -177,8 +183,9 @@ const copy = isEn
       footerFeed: "Feed",
     };
 
-const primaryGuide = guides[0];
-const guideCards = guides.slice(0, 3);
+const latestGuideItems = latestGuides.length > 0 ? latestGuides : guides;
+const primaryGuide = latestGuideItems[0] ?? guides[0];
+const guideCards = latestGuideItems.slice(0, 3);
 const toolRows = tools.slice(0, 12);
 const indexRows = tools.slice(0, 8);
 const toolHrefBySlug = (slug: string) => `${prefix}/tools/${slug}/`;
@@ -279,16 +286,16 @@ const categoryRows = categories.slice(0, 8);
 
       <section class="ds-front">
         <article class="ds-front-main">
-          <p class="ds-kicker">{copy.kicker}</p>
-          <h2>{copy.headline}</h2>
-          <p class="ds-dek">{copy.dek}</p>
+          <p class="ds-kicker">{primaryGuide ? copy.latestLabel : copy.kicker}</p>
+          <h2>{primaryGuide?.data.title || copy.headline}</h2>
+          <p class="ds-dek">{primaryGuide?.data.excerpt || copy.dek}</p>
 
-          <div class="ds-verdict ds-verdict-caution">
-            <span class="ds-verdict-label">{copy.verdictLabel}</span>
-            <span class="ds-verdict-glyph">◐</span>
+          <div class="ds-verdict ds-verdict-recommend">
+            <span class="ds-verdict-label">{primaryGuide?.data.eyebrow || primaryGuide?.data.category || copy.verdictLabel}</span>
+            <span class="ds-verdict-glyph">✓</span>
             <div>
-              <strong>{copy.verdict}</strong>
-              <p>{copy.verdictText}</p>
+              <strong>{primaryGuide ? copy.latestLabel : copy.verdict}</strong>
+              <p>{primaryGuide ? copy.latestDeck : copy.verdictText}</p>
             </div>
           </div>
 
