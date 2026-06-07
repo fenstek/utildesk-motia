@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getDecisionIssueNumber } from "../../lib/contentIssue";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import {
   buildBreadcrumbSchema,
@@ -8,6 +9,7 @@ import {
 } from "../../lib/siteMeta";
 
 const articles = await listRatgeberEntries();
+const issueNo = getDecisionIssueNumber();
 
 const normalizeMetaLabel = (value: string) =>
   String(value || "")
@@ -63,7 +65,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </nav>
     <header class="inv-head rg-head">
       <div class="inv-head-body">
-        <div class="inv-head-kicker">↳ Entscheidungsblatt · Ausgabe № 049 · Ratgeber</div>
+        <div class="inv-head-kicker">↳ Entscheidungsblatt · Ausgabe № {issueNo} · Ratgeber</div>
         <h1 class="inv-head-h1">{articles.length} Entscheidungen<span class="akte-mast-dot">.</span></h1>
         <p class="inv-head-deck">
           Redaktionelle Einordnungen, Vergleiche und Arbeitsmodelle für Teams,

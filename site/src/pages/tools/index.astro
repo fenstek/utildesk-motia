@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getDecisionIssueNumber } from "../../lib/contentIssue";
 import { tagHref } from "../../lib/tagRoutes";
 import { listRatgeberEntries } from "../../lib/ratgeber";
 import { compareToolsByNewest } from "../../lib/toolAddedAt";
@@ -12,6 +13,7 @@ import {
 } from "../../lib/siteMeta";
 
 const enabledTools = [...(await listDisplayTools("de"))].sort(compareToolsByNewest("de"));
+const issueNo = getDecisionIssueNumber();
 
 // Build tag frequency map and keep only the most useful tags
 const tagFrequency = new Map<string, number>();
@@ -117,7 +119,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
 
     <header class="inv-head">
       <div class="inv-head-body">
-        <div class="inv-head-kicker">↳ Inventar · Tool-Index · Ausgabe № 049</div>
+        <div class="inv-head-kicker">↳ Inventar · Tool-Index · Ausgabe № {issueNo}</div>
         <h1 class="inv-head-h1">
           {enabledTools.length.toLocaleString("de-DE")} Akten<span class="akte-mast-dot">.</span>
         </h1>

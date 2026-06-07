@@ -24,6 +24,7 @@ import {
   UI,
 } from "../lib/i18n";
 import { getLatestContentDateLabels } from "../lib/contentFreshness";
+import { getDecisionIssueCount, getDecisionIssueLabel, getDecisionIssueNavLabel } from "../lib/contentIssue";
 import "../styles/global.css";
 
 interface Props {
@@ -77,8 +78,10 @@ const ratgeberApiHref = locale === "en" ? "/en/api/ratgeber.json" : "/api/ratgeb
 const currentYear = new Date().getFullYear();
 const normalizedPathname = normalizePath(pathname);
 const latestContentDate = getLatestContentDateLabels(locale);
-const decisionIssueLabel = locale === "en" ? "↳ Issue № 049" : "↳ Ausgabe № 049";
-const decisionIssueLine = locale === "en" ? "Issue 049" : "Ausgabe 049";
+const decisionIssueCount = getDecisionIssueCount();
+const decisionIssueNavLabel = getDecisionIssueNavLabel(locale);
+const decisionIssueLine = getDecisionIssueLabel(locale);
+const decisionIssueCountLabel = decisionIssueCount.toLocaleString(locale === "en" ? "en-US" : "de-DE");
 const decisionNavHome = locale === "en" ? "Decisions" : "Entscheidungen";
 const decisionNavTools = locale === "en" ? "Tool Index" : "Tool-Index";
 const decisionNavGuides = locale === "en" ? "Guides" : "Ratgeber";
@@ -386,7 +389,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <a href="#main-content" class="skip-link">{ui.skipLink}</a>
 
     <nav class="ki-blatt-topbar" aria-label={locale === "en" ? "Edition context" : "Ausgabe-Kontext"}>
-      <a class={isDecisionHome ? "active" : undefined} href={homeHref}>&#x21B3; {locale === "en" ? "Issue 049" : "Ausgabe 049"}</a>
+      <a class={isDecisionHome ? "active" : undefined} href={homeHref}>&#x21B3; {decisionIssueNavLabel}</a>
       {isToolDetail ? (
         <span class="active" aria-current="page">&#x21B3; {locale === "en" ? "Current tool file" : "Diese Tool-Akte"}</span>
       ) : (
@@ -442,7 +445,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
             <p>{decisionDeck}</p>
           </div>
           <div class="decision-masthead-side decision-masthead-side-right">
-            25 {locale === "en" ? "decisions" : "Entscheidungen"} · 1171 {locale === "en" ? "tools indexed" : "Tools indiziert"}<br />
+            {decisionIssueCountLabel} {locale === "en" ? "decisions" : "Entscheidungen"} · 1171 {locale === "en" ? "tools indexed" : "Tools indiziert"}<br />
             0 {locale === "en" ? "paid placements" : "bezahlte Platzierungen"}
           </div>
         </div>

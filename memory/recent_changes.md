@@ -1,6 +1,11 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-07_
 
+## 2026-06-07 - Dynamic decision issue number
+
+- Replaced the hardcoded decision issue number `049` with a build-time value derived from the number of published German Ratgeber articles.
+- The shared decision layout, homepage issue masthead, recent guide cards, and DE/EN archive headers now move together as new Ratgeber articles are published.
+
 ## 2026-06-07 - Homepage latest-guide movement
 
 - Fixed the decision-layout homepage so the visible hero now uses the newest Ratgeber entries instead of only the pinned editorial guide list.
