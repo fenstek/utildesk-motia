@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Abonnement
 tags: [video-marketing, video-editing, creator-tools]
 official_url: "https://promo.com/"
-popularity: 21
+popularity: 20
 tier: C
 generated_at: 2026-05-27
 ---

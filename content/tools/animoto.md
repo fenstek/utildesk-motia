@@ -10,7 +10,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: ["ai", "video", "design", "creative", "automation"]
 official_url: "https://animoto.com/"
-popularity: 68
+popularity: 69
 tier: C
 generated_at: 2026-05-28
 ---

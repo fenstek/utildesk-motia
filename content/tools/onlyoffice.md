@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://onlyoffice.com/"
-popularity: 87
+popularity: 88
 tier: C
 generated_at: 2026-05-28
 ---

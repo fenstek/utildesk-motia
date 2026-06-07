@@ -2,16 +2,16 @@
 slug: browserbase
 title: Browserbase
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
-editorial_verdict: "recommend"
-category: "Automatisierung"
-price_model: "Nutzungsbasiert"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-rising-ai-tools-expanded
+editorial_verdict: recommend
+category: Automatisierung
+price_model: Nutzungsbasiert
 tags: [browser, agents, automation, developer-tools]
 official_url: "https://www.browserbase.com/"
-popularity: 0
+popularity: 61
 tier: B
 generated_at: 2026-05-31
 ---
