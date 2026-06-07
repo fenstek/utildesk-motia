@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../lib/categories";
+import { getDecisionIssueNumber } from "../../lib/contentIssue";
 import { listDisplayTools } from "../../lib/toolDisplay";
 import {
   buildBreadcrumbSchema,
@@ -9,6 +10,7 @@ import {
 } from "../../lib/siteMeta";
 
 const tools = await listDisplayTools("de");
+const issueNo = getDecisionIssueNumber();
 const categoriesWithCount = CATEGORIES.map((category) => {
   const count = tools.filter((tool) =>
     tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag))
@@ -63,7 +65,7 @@ const categoryBreadcrumbSchema = buildBreadcrumbSchema([
 
     <header class="inv-head">
       <div class="inv-head-body">
-        <div class="inv-head-kicker">↳ Inventar · Kategorien · Ausgabe № 049</div>
+        <div class="inv-head-kicker">↳ Inventar · Kategorien · Ausgabe № {issueNo}</div>
         <h1 class="inv-head-h1">Kategorien<span class="akte-mast-dot">.</span></h1>
         <p class="inv-head-deck">
           Der schnellste Einstieg ist nicht die Tool-Liste, sondern die Aufgabe:

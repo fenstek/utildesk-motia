@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getDecisionIssueNumber } from "../../../lib/contentIssue";
 import { listRatgeberEntries } from "../../../lib/ratgeber";
 import {
   buildBreadcrumbSchema,
@@ -13,6 +14,7 @@ export function getStaticPaths() {
 }
 
 const articles = await listRatgeberEntries("en");
+const issueNo = getDecisionIssueNumber();
 
 const normalizeMetaLabel = (value: string) =>
   String(value || "")
@@ -71,7 +73,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </nav>
     <header class="inv-head rg-head">
       <div class="inv-head-body">
-        <div class="inv-head-kicker">&#x21B3; Decision sheet · Issue No. 049 · Guides</div>
+        <div class="inv-head-kicker">&#x21B3; Decision sheet · Issue No. {issueNo} · Guides</div>
         <h1 class="inv-head-h1">{articles.length} Decisions<span class="akte-mast-dot">.</span></h1>
         <p class="inv-head-deck">
           Editorial context, comparisons and workflow models for teams

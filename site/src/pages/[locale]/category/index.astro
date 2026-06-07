@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../../lib/categories";
+import { getDecisionIssueNumber } from "../../../lib/contentIssue";
 import { categoryDescriptionEn, categoryTitleEn } from "../../../lib/englishContent";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import {
@@ -15,6 +16,7 @@ export function getStaticPaths() {
 }
 
 const tools = await listDisplayTools("en");
+const issueNo = getDecisionIssueNumber();
 const categories = CATEGORIES.map((category) => {
   const count = tools.filter((tool) =>
     tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag))
@@ -72,7 +74,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 
     <header class="inv-head">
       <div class="inv-head-body">
-        <div class="inv-head-kicker">Inventory / Categories / Issue No. 049</div>
+        <div class="inv-head-kicker">Inventory / Categories / Issue No. {issueNo}</div>
         <h1 class="inv-head-h1">Categories<span class="akte-mast-dot">.</span></h1>
         <p class="inv-head-deck">
           Start with the job to be done, not the vendor pitch:
