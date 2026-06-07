@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-05-27_
+_Last updated: 2026-06-07_
 
+## 2026-06-07 - Open-source AI agents comparison Ratgeber
+
+- Manually edited and published a new bilingual Ratgeber comparison: `open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline`.
+- The article compares Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI, and LangGraph by workflow role rather than by generic ranking.
+- Generated two story-forward imagegen WebP illustrations for the release and saved only final compressed WebP assets under `content/images/ratgeber/`.
+- The release was prepared from a clean worktree based on fresh `origin/master` and merged the latest `origin/autobot` popularity sync before content changes, so the manual Ratgeber publish does not discard autopopularity updates.
+- NotebookLM source work for this article happened on the physical OptiPlex contour `jgdus@100.98.97.98` with `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm` and must remain tied to the paid Google account `vasjakotov11@gmail.com`.
 
 ## 2026-05-31 - Rising AI tools batch
 
