@@ -7227,6 +7227,22 @@ html[data-design="decision"] .inv-loadmore {
     font-size: clamp(2.85rem, 13vw, 3.4rem) !important;
     line-height: 0.98 !important;
   }
+  html[data-design="decision"] .inv-jumpbar {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  html[data-design="decision"] .inv-jump-label,
+  html[data-design="decision"] .inv-jump-letter {
+    flex: 0 0 auto !important;
+  }
   html[data-design="decision"] .inv-table-head { display: none !important; }
   html[data-design="decision"] .inv-register .inv-row {
     grid-template-columns: 36px 1fr 24px !important;
