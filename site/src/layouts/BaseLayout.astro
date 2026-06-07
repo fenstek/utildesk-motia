@@ -23,6 +23,7 @@ import {
   toAbsoluteLocalizedUrl,
   UI,
 } from "../lib/i18n";
+import { getLatestContentDateLabels } from "../lib/contentFreshness";
 import "../styles/global.css";
 
 interface Props {
@@ -75,6 +76,7 @@ const toolsApiHref = locale === "en" ? "/en/api/tools.json" : "/api/tools.json";
 const ratgeberApiHref = locale === "en" ? "/en/api/ratgeber.json" : "/api/ratgeber.json";
 const currentYear = new Date().getFullYear();
 const normalizedPathname = normalizePath(pathname);
+const latestContentDate = getLatestContentDateLabels(locale);
 const decisionIssueLabel = locale === "en" ? "↳ Issue № 049" : "↳ Ausgabe № 049";
 const decisionIssueLine = locale === "en" ? "Issue 049" : "Ausgabe 049";
 const decisionNavHome = locale === "en" ? "Decisions" : "Entscheidungen";
@@ -403,7 +405,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         <div class="ds-nav-left">
           <strong>{decisionBrand}</strong>
           <span>v4.3.0-decisions</span>
-          <span><i></i>live · 27.05.2026</span>
+          <span><i></i>live · {latestContentDate.compact}</span>
         </div>
         <div class="ds-nav-links">
           <a href={homeHref} aria-current={isDecisionHome ? "page" : undefined}>{decisionNavHome}</a>
@@ -432,7 +434,7 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         <div class="decision-masthead" aria-hidden="true">
           <div class="decision-masthead-side">
             {decisionIssueLine}<br />
-            Mittwoch · 27. Mai 2026<br />
+            {latestContentDate.long}<br />
             {decisionEdited}
           </div>
           <div class="decision-masthead-main">
