@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-07_
 
+## 2026-06-07 - Dynamic live date in site header
+
+- Fixed the decision-layout header date so it is no longer hardcoded to `27.05.2026`.
+- Added `site/src/lib/contentFreshness.ts`, which derives the public `live` date from the newest value in `site/src/data/content-lastmod.json`.
+- Updated the shared layout and the decision-style homepage masthead to use the same freshness labels, so the header now moves with the latest published content after builds.
+- Local production build verified the generated HTML shows `live · 07.06.2026` and the localized long date on German and English pages.
+
 ## 2026-06-07 - Open-source AI agents comparison Ratgeber
 
 - Manually edited and published a new bilingual Ratgeber comparison: `open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline`.

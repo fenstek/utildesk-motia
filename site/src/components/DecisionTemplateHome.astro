@@ -1,5 +1,6 @@
 ---
 import { getToolEditorialVerdict, type ToolEditorialVerdictValue } from "../lib/toolVerdict";
+import { getLatestContentDateLabels } from "../lib/contentFreshness";
 
 interface ToolItem {
   slug: string;
@@ -61,8 +62,7 @@ const {
 const isEn = locale === "en";
 const prefix = isEn ? "/en" : "";
 const issueNo = "049";
-const today = "27.05.2026";
-const issueDateLine = isEn ? "Wednesday \u00b7 27 May 2026" : "Mittwoch \u00b7 27. Mai 2026";
+const issueDateLine = getLatestContentDateLabels(locale).long;
 const copyrightYear = 2026;
 const totalGuides = typeof guidesCount === "number" ? guidesCount : guides.length;
 const copy = isEn
