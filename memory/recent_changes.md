@@ -1,5 +1,10 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-07_
+_Last updated: 2026-06-08_
+
+## 2026-06-08 - Hero headline scale correction
+
+- Reduced oversized decision-layout hero headline scales on the homepage and Ratgeber article pages while keeping the editorial newspaper typography.
+- Added final responsive CSS overrides so desktop and mobile headings stay readable without taking over the entire first viewport.
 
 ## 2026-06-07 - Dynamic decision issue number
 
