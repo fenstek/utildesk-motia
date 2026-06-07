@@ -14,7 +14,7 @@ affiliate_url: "https://stability.ai/stable-diffusion"
 tier: C
 generated_at: 2026-05-18
 created_at: 2026-02-02
-popularity: 13
+popularity: 12
 ---
 # Stable Diffusion
 
