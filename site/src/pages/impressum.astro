@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Impressum – Utildesk"
+  title="Impressum - Utildesk"
   description="Impressum für Utildesk."
   robots="noindex,nofollow,noarchive,nosnippet"
 >
@@ -12,23 +12,45 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
   </Fragment>
 
-  <section class="legal">
-    <h1>Impressum</h1>
-    <p>Angaben gemäß §5 TMG und §18 MStV</p>      <h2>Betreiber</h2>
-      <p>
-        <span id="impressum-name" data-b1="Uy4gU2" data-b2="tvcnlr" data-b3="b3Y="></span>
-      </p>
+  <article class="tool-akte sheet-wrap legal-sheet legal-sheet-plain imprint-sheet">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Impressum</span>
+    </nav>
 
-      <h2>Anschrift</h2>
-      <p>
-        <span id="impressum-address" data-b1="QWRlcnNzdHJhw59lIDY4LC" data-b2="A0MDIxNSBEw7xzc2VsZG9y" data-b3="ZiwgRGV1dHNjaGxhbmQ="></span>
-      </p>
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">↳ rechtliches · anbieterkennzeichnung</div>
+      <h1 class="sheet-head-h1">Impressum<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">Angaben gemäß §5 TMG und §18 MStV.</p>
+      <div class="sheet-head-meta">
+        <span><strong>Bereich:</strong> Utildesk</span>
+        <span>·</span>
+        <span>Kontaktangaben sind gegen einfaches Scraping geschützt.</span>
+      </div>
+    </header>
 
-      <h2>E-Mail</h2>
-      <p>
-        <span id="impressum-email" data-b1="b3V0Y29tZV93YX" data-b2="NoZWQ4MjhAc2ltc" data-b3="GxlbG9naW4uY29t"></span>
-      </p>
-  </section>
+    <section class="akte-article legal-article">
+      <div class="akte-article-body legal-prose">
+        <div>
+          <h2>Betreiber</h2>
+          <p>
+            <span id="impressum-name" data-b1="Uy4gU2" data-b2="tvcnlr" data-b3="b3Y="></span>
+          </p>
+
+          <h2>Anschrift</h2>
+          <p>
+            <span id="impressum-address" data-b1="QWRlcnNzdHJhw59lIDY4LC" data-b2="A0MDIxNSBEw7xzc2VsZG9y" data-b3="ZiwgRGV1dHNjaGxhbmQ="></span>
+          </p>
+
+          <h2>E-Mail</h2>
+          <p>
+            <span id="impressum-email" data-b1="b3V0Y29tZV93YX" data-b2="NoZWQ4MjhAc2ltc" data-b3="GxlbG9naW4uY29t"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
 
   <script>
     const decode = (el) => {
@@ -38,7 +60,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       const b3 = el.dataset.b3 || "";
       const b64 = `${b1}${b2}${b3}`;
 
-      // UTF-8 safe decode (fixes ÃŸ/Ã¼ artifacts)
       try {
         const bin = atob(b64);
         const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
@@ -48,13 +69,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       }
     };
 
-  const nameEl = document.getElementById("impressum-name");
-  if (nameEl) nameEl.textContent = decode(nameEl);
+    const nameEl = document.getElementById("impressum-name");
+    if (nameEl) nameEl.textContent = decode(nameEl);
 
-  const addressEl = document.getElementById("impressum-address");
-  if (addressEl) addressEl.textContent = decode(addressEl);
+    const addressEl = document.getElementById("impressum-address");
+    if (addressEl) addressEl.textContent = decode(addressEl);
 
-  const emailEl = document.getElementById("impressum-email");
-  if (emailEl) emailEl.textContent = decode(emailEl);
-</script>
+    const emailEl = document.getElementById("impressum-email");
+    if (emailEl) emailEl.textContent = decode(emailEl);
+  </script>
 </BaseLayout>

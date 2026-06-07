@@ -17,23 +17,45 @@ export function getStaticPaths() {
     <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
   </Fragment>
 
-  <section class="legal">
-    <h1>Imprint</h1>
-    <p>This English page mirrors the German provider information for international readers.</p>
+  <article class="tool-akte sheet-wrap legal-sheet legal-sheet-plain imprint-sheet">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/">Back to directory</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Imprint</span>
+    </nav>
 
-    <h2>Provider</h2>
-    <p>
-      For the legally binding provider details, please use the German
-      <a href="/impressum/">Impressum</a>.
-    </p>
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">legal / provider information</div>
+      <h1 class="sheet-head-h1">Imprint<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">
+        This English page mirrors the German provider information for international readers.
+      </p>
+      <div class="sheet-head-meta">
+        <span><strong>Primary text:</strong> German Impressum</span>
+        <span>·</span>
+        <span>Editorial and contact context</span>
+      </div>
+    </header>
 
-    <h2>Editorial responsibility</h2>
-    <p>
-      Utildesk is an independent tools directory. All trademarks, logos and brand names are the
-      property of their respective owners.
-    </p>
+    <section class="akte-article legal-article">
+      <div class="akte-article-body legal-prose">
+        <div>
+          <h2>Provider</h2>
+          <p>
+            For the legally binding provider details, please use the German
+            <a href="/impressum/">Impressum</a>.
+          </p>
 
-    <h2>Contact</h2>
-    <p>Please use the contact details listed in the German imprint.</p>
-  </section>
+          <h2>Editorial responsibility</h2>
+          <p>
+            Utildesk is an independent tools directory. All trademarks, logos and brand names are the
+            property of their respective owners.
+          </p>
+
+          <h2>Contact</h2>
+          <p>Please use the contact details listed in the German imprint.</p>
+        </div>
+      </div>
+    </section>
+  </article>
 </BaseLayout>

@@ -8236,3 +8236,287 @@ html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row-tag {
     grid-row: 2 !important;
   }
 }
+
+/* Migration pass: category, tag, methodology and legal pages now reuse the dossier system. */
+html[data-design="decision"] .category-ledger,
+html[data-design="decision"] .tag-related,
+html[data-design="decision"] .category-detail,
+html[data-design="decision"] .legal-sheet {
+  width: min(1376px, calc(100% - 64px)) !important;
+  max-width: min(1376px, calc(100% - 64px)) !important;
+}
+
+html[data-design="decision"] .category-ledger,
+html[data-design="decision"] .tag-related {
+  margin: 24px 0 56px !important;
+  padding: 32px 56px 0 !important;
+}
+
+html[data-design="decision"] .category-detail .akte-crumb,
+html[data-design="decision"] .legal-sheet .akte-crumb {
+  padding: 0 56px !important;
+}
+
+html[data-design="decision"] .category-detail .sheet-head,
+html[data-design="decision"] .legal-sheet .sheet-head {
+  padding: 24px 56px 36px !important;
+}
+
+html[data-design="decision"] .category-detail .akte-article,
+html[data-design="decision"] .legal-sheet .akte-article {
+  padding: 36px 56px 0 !important;
+}
+
+html[data-design="decision"] .legal-sheet .sheet-head-h1,
+html[data-design="decision"] .category-detail .sheet-head-h1 {
+  overflow-wrap: anywhere !important;
+}
+
+html[data-design="decision"] .legal-sheet .legal-prose {
+  max-width: 880px !important;
+}
+
+html[data-design="decision"] .legal-sheet-plain .akte-article-body > div > p:first-of-type::first-letter {
+  float: none !important;
+  padding: 0 !important;
+  color: inherit !important;
+  font: inherit !important;
+}
+
+html[data-design="decision"] .legal-sheet code {
+  overflow-wrap: anywhere !important;
+}
+
+html[data-design="decision"] .tag-chip-ledger {
+  margin: 0 !important;
+}
+
+html[data-design="decision"] .tag-chip-ledger .akte-chip-tag.is-active {
+  border-color: var(--vermillion) !important;
+  color: var(--vermillion) !important;
+}
+
+html[data-design="decision"] .category-tools-wrap .inv-filter-group a,
+html[data-design="decision"] .tag-tools-wrap .inv-filter-group a {
+  color: var(--ink) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+html[data-design="decision"] .inv-register .inv-row-monogram {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--serif) !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  color: var(--ink) !important;
+}
+
+html[data-design="decision"] .category-note {
+  margin: 28px 56px 0 !important;
+}
+
+/* Mobile overflow hardening: long German labels stay inside the paper instead of widening the viewport. */
+html[data-design="decision"],
+html[data-design="decision"] body {
+  max-width: 100% !important;
+  overflow-x: clip !important;
+}
+
+@supports not (overflow-x: clip) {
+  html[data-design="decision"],
+  html[data-design="decision"] body {
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ki-blatt-topbar {
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: none !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .ki-blatt-topbar a,
+  .ki-blatt-topbar span {
+    flex: 0 0 auto !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header.site-header {
+    max-width: calc(100% - 20px) !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left {
+    flex-wrap: wrap !important;
+    gap: 8px 12px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span {
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding-bottom: 4px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a {
+    flex: 0 0 auto !important;
+  }
+}
+
+@media (max-width: 760px) {
+  html[data-design="decision"] .ki-blatt-header.site-header,
+  html[data-design="decision"]:not(:has(.ds-template)) main.container,
+  html[data-design="decision"] .site-footer .container {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) {
+    --ki-sheet-width: calc(100vw - 20px) !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) .ds-frame {
+    width: var(--ki-sheet-width) !important;
+    max-width: var(--ki-sheet-width) !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) .ds-stage {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .ki-blatt-topbar {
+    font-size: 10px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  .ki-blatt-topbar a,
+  .ki-blatt-topbar span {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links {
+    gap: 13px !important;
+    font-size: 12px !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .ds-front,
+  .ds-evidence,
+  .ds-index {
+    min-width: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .ds-front {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+
+  .ds-front-main,
+  .ds-front-aside,
+  .ds-evidence > *,
+  .ds-index-grid {
+    min-width: 0 !important;
+  }
+
+  .ds-front-main h2,
+  .ds-evidence h2,
+  .ds-anti h2,
+  .ds-tasks h2,
+  .ds-index h2 {
+    overflow-wrap: anywhere !important;
+  }
+
+  .ds-front-main h2 {
+    font-size: clamp(42px, 13vw, 58px) !important;
+  }
+
+  .ds-dek {
+    font-size: 20px !important;
+  }
+
+  .ds-evidence {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .ds-evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .ds-evidence-grid span,
+  .ds-evidence-grid p {
+    min-width: 0 !important;
+    padding: 14px !important;
+  }
+
+  .ds-evidence-grid span {
+    font-size: 32px !important;
+  }
+
+  html[data-design="decision"] .category-ledger,
+  html[data-design="decision"] .tag-related,
+  html[data-design="decision"] .category-detail,
+  html[data-design="decision"] .legal-sheet {
+    width: min(100% - 28px, 1376px) !important;
+    max-width: min(100% - 28px, 1376px) !important;
+  }
+
+  html[data-design="decision"] .category-ledger,
+  html[data-design="decision"] .tag-related,
+  html[data-design="decision"] .category-detail .sheet-head,
+  html[data-design="decision"] .legal-sheet .sheet-head,
+  html[data-design="decision"] .category-detail .akte-article,
+  html[data-design="decision"] .legal-sheet .akte-article,
+  html[data-design="decision"] .category-detail .akte-crumb,
+  html[data-design="decision"] .legal-sheet .akte-crumb {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  html[data-design="decision"] .category-note {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  html[data-design="decision"] .sheet-foot {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}

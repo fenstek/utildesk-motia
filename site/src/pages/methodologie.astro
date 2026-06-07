@@ -28,133 +28,78 @@ const schema = {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </Fragment>
 
-  <section class="legal methodology-page">
-    <p class="eyebrow">[ editorial_policy ]</p>
-    <h1>Methodologie</h1>
-    <p class="lead">
-      Utildesk ist ein unabhaengiges Verzeichnis fuer AI-Tools und produktive Workflows. Wir ordnen Tools so ein,
-      dass Leser schnell verstehen, wofuer ein Werkzeug taugt, welche Alternativen existieren und wann ein genauerer
-      Blick sinnvoll ist.
-    </p>
+  <article class="tool-akte sheet-wrap legal-sheet methodology-sheet">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Methodologie</span>
+    </nav>
 
-    <div class="methodology-grid">
-      <article class="methodology-card">
-        <h2>Wie Tools aufgenommen werden</h2>
-        <p>
-          Neue Eintraege entstehen aus oeffentlichen Quellen wie Anbieter-Websites, Dokumentation, Pricing-Seiten,
-          Produktankündigungen und redaktionellen Recherchen. Bevor ein Tool sichtbar wird, pruefen wir Name, Kategorie,
-          Preis-Signal, Tags, Anbieter-Link und offensichtliche Dubletten.
-        </p>
-      </article>
-
-      <article class="methodology-card">
-        <h2>Wie Ratgeber entstehen</h2>
-        <p>
-          Ratgeber werden aus mehreren Quellen und Vergleichspunkten aufgebaut. Die Artikel sollen Kontext liefern,
-          konkrete Tools verlinken und keine reinen Werbetexte sein. Kandidaten gehen vor der Publikation durch eine
-          Review-Ansicht im finalen Seitendesign.
-        </p>
-      </article>
-
-      <article class="methodology-card">
-        <h2>Affiliate-Transparenz</h2>
-        <p>
-          Wenn ein Tool einen Referral-Link hat, kann Utildesk bei einer Anmeldung eine Provision erhalten. Solche Links
-          ersetzen nicht die redaktionelle Einordnung: bezahlte Slots, gekaufte Rankings oder Sponsored-Listen gehoeren
-          nicht zum Konzept.
-        </p>
-      </article>
-
-      <article class="methodology-card">
-        <h2>Index-Qualitaet</h2>
-        <p>
-          Nicht jede generierte Detailseite muss sofort in den Suchindex. Prioritaet haben kuratierte Tools,
-          starke Ratgeber, Kategorien und Seiten mit eigenstaendigem Nutzwert. Duplikate, sehr duenne Eintraege und
-          reine Long-tail-Varianten werden reduziert oder von der Indexierung ausgenommen.
-        </p>
-      </article>
-    </div>
-
-    <section class="methodology-note">
-      <h2>Fehler melden</h2>
-      <p>
-        Wenn ein Eintrag veraltet, falsch kategorisiert oder unklar beschrieben ist, nutze die Kontaktadresse im
-        <a href="/impressum/">Impressum</a>. Hinweise zu falschen Preisen, kaputten Links und fehlenden Alternativen
-        helfen direkt bei der naechsten redaktionellen Runde.
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">↳ editorial policy · prüfregeln</div>
+      <h1 class="sheet-head-h1">Methodologie<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">
+        Utildesk ist ein unabhängiges Verzeichnis für AI-Tools und produktive Workflows.
+        Wir ordnen Tools so ein, dass Leser schneller verstehen, wofür ein Werkzeug taugt,
+        welche Alternativen existieren und wann ein genauerer Blick sinnvoll ist.
       </p>
+      <div class="sheet-head-meta">
+        <span><strong>Keine</strong> bezahlten Rankings</span>
+        <span>·</span>
+        <span>Öffentliche Quellen, redaktionelle Kontrolle</span>
+      </div>
+    </header>
+
+    <section class="akte-article legal-article">
+      <div class="akte-article-body legal-prose">
+        <div>
+          <h2>Wie Tools aufgenommen werden</h2>
+          <p>
+            Neue Einträge entstehen aus öffentlichen Quellen wie Anbieter-Websites, Dokumentation,
+            Pricing-Seiten, Produktankündigungen und redaktionellen Recherchen. Bevor ein Tool sichtbar
+            wird, prüfen wir Name, Kategorie, Preis-Signal, Tags, Anbieter-Link und offensichtliche Dubletten.
+          </p>
+
+          <h2>Wie Ratgeber entstehen</h2>
+          <p>
+            Ratgeber werden aus mehreren Quellen und Vergleichspunkten aufgebaut. Die Artikel sollen Kontext
+            liefern, konkrete Tools verlinken und keine reinen Werbetexte sein. Kandidaten gehen vor der
+            Publikation durch eine Review-Ansicht im finalen Seitendesign.
+          </p>
+
+          <h2>Affiliate-Transparenz</h2>
+          <p>
+            Wenn ein Tool einen Referral-Link hat, kann Utildesk bei einer Anmeldung eine Provision erhalten.
+            Solche Links ersetzen nicht die redaktionelle Einordnung: bezahlte Slots, gekaufte Rankings oder
+            Sponsored-Listen gehören nicht zum Konzept.
+          </p>
+
+          <h2>Index-Qualität</h2>
+          <p>
+            Nicht jede generierte Detailseite muss sofort in den Suchindex. Priorität haben kuratierte Tools,
+            starke Ratgeber, Kategorien und Seiten mit eigenständigem Nutzwert. Duplikate, sehr dünne Einträge
+            und reine Long-tail-Varianten werden reduziert oder von der Indexierung ausgenommen.
+          </p>
+
+          <h2>Fehler melden</h2>
+          <p>
+            Wenn ein Eintrag veraltet, falsch kategorisiert oder unklar beschrieben ist, nutze die Kontaktadresse
+            im <a href="/impressum/">Impressum</a>. Hinweise zu falschen Preisen, kaputten Links und fehlenden
+            Alternativen helfen direkt bei der nächsten redaktionellen Runde.
+          </p>
+        </div>
+      </div>
     </section>
-  </section>
+
+    <footer class="sheet-foot">
+      <div>
+        <div class="sheet-foot-kicker">Praktische Konsequenz</div>
+        <p class="sheet-foot-line">Utildesk bewertet Nutzwert und Kontext, nicht Lautstärke im Markt.</p>
+      </div>
+      <div class="sheet-foot-actions">
+        <a class="akte-action akte-action-primary" href="/tools/">Tool-Index</a>
+        <a class="akte-action akte-action-ghost" href="/ratgeber/">Ratgeber</a>
+      </div>
+    </footer>
+  </article>
 </BaseLayout>
-
-<style>
-  .methodology-page {
-    max-width: 1040px;
-    padding: var(--space-7) 0 var(--space-8);
-  }
-
-  .eyebrow {
-    margin: 0 0 14px;
-    color: var(--primary);
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: clamp(2.4rem, 7vw, 5.2rem);
-    line-height: 0.95;
-    letter-spacing: -0.06em;
-  }
-
-  .lead {
-    max-width: 760px;
-    margin: 28px 0 0;
-    color: var(--secondary);
-    font-size: clamp(1.05rem, 2vw, 1.35rem);
-    line-height: 1.65;
-  }
-
-  .methodology-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-    margin-top: var(--space-6);
-  }
-
-  .methodology-card,
-  .methodology-note {
-    border: 1px solid rgba(190, 201, 197, 0.32);
-    background: var(--surface-container-low);
-    border-radius: var(--radius-lg);
-    padding: clamp(22px, 3vw, 30px);
-  }
-
-  .methodology-card h2,
-  .methodology-note h2 {
-    margin: 0 0 12px;
-    font-size: 1.2rem;
-  }
-
-  .methodology-card p,
-  .methodology-note p {
-    margin: 0;
-    color: var(--secondary);
-    line-height: 1.75;
-  }
-
-  .methodology-note {
-    margin-top: 18px;
-  }
-
-  .methodology-note a {
-    color: var(--primary);
-  }
-
-  @media (max-width: 760px) {
-    .methodology-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
