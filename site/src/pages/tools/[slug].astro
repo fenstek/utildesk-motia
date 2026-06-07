@@ -131,6 +131,16 @@ const logoFallbacks = logoUrl === faviconLogo ? [...faviconFallbacks, fallbackAv
 const title = String(data.title ?? slug);
 const category = data.category ? String(data.category) : null;
 const price_model = normalizePriceModel(data.price_model);
+const factValue = (value: unknown, fallback: string) => {
+  if (typeof value === "boolean") return value ? "Ja" : "Nein";
+  if (value === null || value === undefined || String(value).trim() === "") return fallback;
+  return String(value);
+};
+const factHosting = factValue(data.hosting, "Web \u00b7 Anbieter");
+const factDpa = factValue(data.dpa_available ?? data.dpa, "pr\u00fcfen");
+const factOpenSource = factValue(data.open_source ?? data.openSource, "Nein");
+const factSelfHostable = factValue(data.self_hostable ?? data.selfHostable, "Nein");
+const factApiAvailable = factValue(data.api_available ?? data.apiAvailable, "pr\u00fcfen");
 const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
 const description = data.description ? String(data.description) : "";
 const oneliner = description || (data.summary ? String(data.summary) : "");
@@ -548,23 +558,23 @@ const softwareApplicationSchema = {
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Hosting</span>
-          <span class="akte-faktenblatt-val">Web · Anbieter</span>
+          <span class="akte-faktenblatt-val">{factHosting}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">DPA verfügbar</span>
-          <span class="akte-faktenblatt-val">prüfen</span>
+          <span class="akte-faktenblatt-val">{factDpa}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Open Source</span>
-          <span class="akte-faktenblatt-val">Nein</span>
+          <span class="akte-faktenblatt-val">{factOpenSource}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">Self-hostable</span>
-          <span class="akte-faktenblatt-val">Nein</span>
+          <span class="akte-faktenblatt-val">{factSelfHostable}</span>
         </div>
         <div class="akte-faktenblatt-row">
           <span class="akte-faktenblatt-key">API verfügbar</span>
-          <span class="akte-faktenblatt-val">prüfen</span>
+          <span class="akte-faktenblatt-val">{factApiAvailable}</span>
         </div>
         <div class="akte-faktenblatt-row is-paid">
           <span class="akte-faktenblatt-key">Bezahlte Platzierung</span>
