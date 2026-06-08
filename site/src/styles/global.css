@@ -10766,3 +10766,29 @@ html[data-design="decision"] .sheet-head-h1 {
     min-height: 36px !important;
   }
 }
+
+/* Mobile hero balance: the newspaper masthead is one centered unit on phones,
+   not a left-column headline with an empty right half. */
+@media (max-width: 760px) {
+  html[data-design="decision"] .ds-masthead-ki {
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main {
+    width: min(100%, 25rem) !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main span,
+  html[data-design="decision"] .ds-masthead-ki-main p {
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main p {
+    width: 100% !important;
+    max-width: 24rem !important;
+    margin: 10px auto 0 !important;
+    text-wrap: balance !important;
+  }
+}

@@ -576,3 +576,8 @@ _Last updated: 2026-06-08_
 - Added a final mobile-only decision-layout CSS layer so the compact language and `llms/feed` utility buttons render as true centered flex pills on phones instead of block-level text inside circular controls.
 - Re-centered the mobile global footer and restored side padding so brand, editorial note, legal links, and feed link no longer hug the left viewport edge.
 - Verification covered local dev and built `site/dist` at 390px on DE/EN homepage, tool index, Ratgeber index, ChatGPT tool detail, and privacy pages; header/footer metrics showed centered controls, centered footer links, no horizontal overflow, and no console errors.
+
+## 2026-06-08 - Mobile homepage masthead balance
+
+- Centered the homepage decision masthead on phones and widened the masthead subtitle to the available mobile width so it no longer reads like a narrow left-column label with an empty right half.
+- Local mobile QA covered the homepage at 375px, 390px, and 430px; the masthead title/subtitle stayed centered, used the available width, and produced no horizontal overflow or console errors.
