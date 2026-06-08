@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-08_
 
+## 2026-06-08 - Inventory mobile list repair
+
+- Repaired the decision-layout `/tools/` mobile inventory view so it no longer compresses the desktop register into a narrow left strip after `Mehr anzeigen`.
+- Mobile inventory rows now render as full-width app-style cards, with the letter jumpbar as a horizontal chip strip and price/verdict metadata kept horizontal instead of vertical/clipped.
+- Local QA covered German and English `/tools/` at 390px and 430px, including the load-more interaction and scroll-width checks.
+
 ## 2026-06-08 - Pocket Decision Desk mobile layer
 
 - Added a dedicated mobile app-style CSS layer for the decision/KI-Blatt design under the `Pocket Decision Desk` concept.
