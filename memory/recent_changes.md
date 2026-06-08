@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-08_
 
+## 2026-06-08 - Pocket Decision Desk mobile layer
+
+- Added a dedicated mobile app-style CSS layer for the decision/KI-Blatt design under the `Pocket Decision Desk` concept.
+- The mobile layer keeps desktop newspaper composition unchanged, but turns phone views into card-based sections with touch-sized sticky navigation, safer heading scales, and one primary vertical scroll.
+- Hardened mobile overflow for homepage, tool index, tool/article detail pages, and markdown tables; wide nav/tag/table areas now scroll inside their own containers instead of widening the page.
+- Local QA covered `/`, `/en/`, `/tools/`, and the latest Ratgeber article at 390px and 430px viewports, plus a desktop 1280px smoke check.
+
 ## 2026-06-08 - Dynamic homepage decision test block
 
 - Replaced the homepage decision test table's hardcoded first-article fallback with article-driven data from `decisionTools`, `decisionAvoid`, and `decisionNote`.

@@ -8556,3 +8556,923 @@ html[data-design="decision"] .sheet-head-h1 {
     font-size: clamp(30px, 8.4vw, 40px) !important;
   }
 }
+
+/* Pocket Decision Desk: a mobile-first app layer for the KI-Blatt design.
+   Desktop keeps the editorial newspaper rhythm; phones get cards, safer scroll
+   boundaries, and touch-sized navigation. */
+@media (max-width: 760px) {
+  html[data-design="decision"],
+  html[data-design="decision"] body {
+    width: 100% !important;
+    min-width: 0 !important;
+    background: #ebe6d7 !important;
+    overflow-x: hidden !important;
+  }
+
+  html[data-design="decision"] body {
+    color: #0c0c0a !important;
+    font-size: 17px !important;
+  }
+
+  html[data-design="decision"] *,
+  html[data-design="decision"] *::before,
+  html[data-design="decision"] *::after {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  html[data-design="decision"] img,
+  html[data-design="decision"] svg,
+  html[data-design="decision"] video,
+  html[data-design="decision"] iframe {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  .ki-blatt-topbar {
+    top: max(8px, env(safe-area-inset-top)) !important;
+    left: 10px !important;
+    right: 10px !important;
+    z-index: 1300 !important;
+    width: auto !important;
+    padding: 5px !important;
+    border: 1px solid rgba(246, 244, 238, 0.14) !important;
+    border-radius: 22px !important;
+    background: rgba(12, 12, 10, 0.94) !important;
+    box-shadow: 0 18px 40px rgba(12, 12, 10, 0.28) !important;
+    backdrop-filter: blur(16px) !important;
+    scrollbar-width: none !important;
+  }
+
+  .ki-blatt-topbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ki-blatt-topbar a,
+  .ki-blatt-topbar span {
+    min-height: 34px !important;
+    padding: 0 13px !important;
+    border-radius: 17px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header.site-header {
+    position: sticky !important;
+    top: 56px !important;
+    z-index: 1200 !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 62px auto 0 !important;
+    overflow: hidden !important;
+    border: 1px solid #b6b1a0 !important;
+    border-radius: 24px !important;
+    background: rgba(246, 244, 238, 0.94) !important;
+    box-shadow: 0 14px 34px rgba(49, 48, 41, 0.12) !important;
+    backdrop-filter: blur(16px) !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    min-height: 0 !important;
+    gap: 9px !important;
+    padding: 13px 13px 12px !important;
+    overflow: visible !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left strong {
+    flex: 0 0 auto !important;
+    font-size: 13px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right,
+  html[data-design="decision"] .nav-links,
+  html[data-design="decision"] .nav-actions {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    width: calc(100vw - 48px) !important;
+    max-width: calc(100vw - 48px) !important;
+    margin: 0 !important;
+    padding: 0 0 3px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links::-webkit-scrollbar,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right::-webkit-scrollbar,
+  html[data-design="decision"] .nav-links::-webkit-scrollbar,
+  html[data-design="decision"] .nav-actions::-webkit-scrollbar {
+    display: none;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right button,
+  html[data-design="decision"] .nav-links a,
+  html[data-design="decision"] .nav-actions a,
+  html[data-design="decision"] .nav-actions button {
+    flex: 0 0 auto !important;
+    min-height: 36px !important;
+    padding: 10px 13px !important;
+    border: 1px solid #b6b1a0 !important;
+    border-radius: 999px !important;
+    background: #fffdf6 !important;
+    color: #0c0c0a !important;
+    font: 700 11px/1 "JetBrains Mono", ui-monospace, monospace !important;
+    letter-spacing: 0.01em !important;
+    text-decoration: none !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links a[aria-current="page"],
+  html[data-design="decision"] .nav-links a[aria-current="page"] {
+    border-color: #2f6b1f !important;
+    background: #2f6b1f !important;
+    color: #fffdf6 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-language-pair {
+    display: none !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) {
+    --ki-sheet-width: 100vw !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) main.container,
+  html[data-design="decision"]:not(:has(.ds-template)) main.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) main.container {
+    padding-top: 14px !important;
+  }
+
+  html[data-design="decision"] .ds-stage {
+    display: block !important;
+    width: 100% !important;
+    padding: 12px 10px 42px !important;
+  }
+
+  html[data-design="decision"] .ds-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    border: 1px solid #c8c1ad !important;
+    border-radius: 28px !important;
+    background:
+      linear-gradient(180deg, rgba(246, 244, 238, 0.98), rgba(238, 234, 220, 0.98)),
+      #f6f4ee !important;
+    box-shadow: 0 18px 42px rgba(49, 48, 41, 0.13) !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki {
+    display: block !important;
+    padding: 22px 18px 16px !important;
+    border-bottom: 1px solid #d8d4c5 !important;
+    text-align: left !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-side,
+  html[data-design="decision"] .ds-masthead-ki-side-right {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main {
+    text-align: left !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main span {
+    font-size: clamp(36px, 14vw, 54px) !important;
+    letter-spacing: -0.045em !important;
+    line-height: 0.94 !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main p {
+    max-width: 30ch !important;
+    margin-top: 10px !important;
+    color: #3a3a35 !important;
+    font-size: 10px !important;
+    letter-spacing: 0.12em !important;
+    line-height: 1.35 !important;
+  }
+
+  html[data-design="decision"] .ds-front {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 18px !important;
+    border-bottom: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-front-main,
+  html[data-design="decision"] .ds-front-aside {
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-front-main {
+    display: grid !important;
+    gap: 14px !important;
+  }
+
+  html[data-design="decision"] .ds-kicker,
+  html[data-design="decision"] .sheet-head-kicker,
+  html[data-design="decision"] .akte-crumb,
+  html[data-design="decision"] .breadcrumb {
+    font-size: 10px !important;
+    letter-spacing: 0.13em !important;
+  }
+
+  html[data-design="decision"] .ds-front-main h2 {
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(30px, 9.2vw, 38px) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -0.026em !important;
+    overflow-wrap: anywhere !important;
+    hyphens: auto !important;
+  }
+
+  html[data-design="decision"] .ds-dek {
+    max-width: 100% !important;
+    font-size: 18px !important;
+    line-height: 1.48 !important;
+  }
+
+  html[data-design="decision"] .ds-verdict {
+    display: grid !important;
+    grid-template-columns: 40px minmax(0, 1fr) !important;
+    gap: 12px !important;
+    margin-top: 10px !important;
+    padding: 20px 16px 16px !important;
+    border-width: 1px !important;
+    border-radius: 22px !important;
+    background: #fffdf6 !important;
+    box-shadow: inset 4px 0 0 #2f6b1f !important;
+  }
+
+  html[data-design="decision"] .ds-verdict-label {
+    top: -11px !important;
+    left: 14px !important;
+    border-radius: 999px !important;
+    background: #f6f4ee !important;
+    font-size: 9px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  html[data-design="decision"] .ds-verdict-glyph {
+    min-width: 0 !important;
+    font-size: 34px !important;
+  }
+
+  html[data-design="decision"] .ds-verdict strong {
+    font-size: 21px !important;
+    line-height: 1.12 !important;
+  }
+
+  html[data-design="decision"] .ds-verdict p {
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    gap: 10px !important;
+    margin-top: 2px !important;
+    align-items: center !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions a {
+    min-height: 46px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 999px !important;
+    padding: 0 16px !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions span {
+    white-space: nowrap !important;
+    font-size: 10px !important;
+  }
+
+  html[data-design="decision"] .ds-test-table,
+  html[data-design="decision"] .ds-box,
+  html[data-design="decision"] .ds-front-note,
+  html[data-design="decision"] .sheet-summary,
+  html[data-design="decision"] .tool-detail-header,
+  html[data-design="decision"] .article,
+  html[data-design="decision"] .akte-article,
+  html[data-design="decision"] .category-detail,
+  html[data-design="decision"] .legal-sheet {
+    border-width: 1px !important;
+    border-radius: 24px !important;
+    background: #fffdf6 !important;
+    box-shadow: 0 10px 26px rgba(49, 48, 41, 0.08) !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ds-test-table h3,
+  html[data-design="decision"] .ds-box h3 {
+    padding: 16px 16px 8px !important;
+    font-size: 10px !important;
+  }
+
+  html[data-design="decision"] .ds-test-row {
+    grid-template-columns: 34px minmax(0, 1fr) auto !important;
+    gap: 11px !important;
+    min-height: 74px !important;
+    padding: 13px 16px !important;
+  }
+
+  html[data-design="decision"] .ds-test-icon {
+    display: grid !important;
+    place-items: center !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 12px !important;
+    background: rgba(47, 107, 31, 0.1) !important;
+    font-size: 20px !important;
+  }
+
+  html[data-design="decision"] .ds-test-row-caution .ds-test-icon {
+    background: rgba(182, 106, 0, 0.12) !important;
+  }
+
+  html[data-design="decision"] .ds-test-row strong {
+    min-width: 0 !important;
+    font-size: 20px !important;
+    line-height: 1.05 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .ds-test-row small {
+    margin-top: 5px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.02em !important;
+    text-transform: none !important;
+  }
+
+  html[data-design="decision"] .ds-test-row b {
+    font-size: 22px !important;
+  }
+
+  html[data-design="decision"] .ds-box-warn-dashed {
+    padding: 16px !important;
+    border-style: solid !important;
+    box-shadow: inset 4px 0 0 #c5251c, 0 10px 26px rgba(49, 48, 41, 0.08) !important;
+  }
+
+  html[data-design="decision"] .ds-box-warn-dashed p {
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+  }
+
+  html[data-design="decision"] .ds-front-note {
+    margin: 0 !important;
+    padding: 18px !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
+
+  html[data-design="decision"] .ds-front-note span {
+    float: none !important;
+    display: inline !important;
+    margin: 0 2px 0 0 !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  html[data-design="decision"] .ds-stack,
+  html[data-design="decision"] .ds-evidence,
+  html[data-design="decision"] .ds-anti,
+  html[data-design="decision"] .ds-tasks,
+  html[data-design="decision"] .ds-index,
+  html[data-design="decision"] .ds-index-appendix {
+    padding: 20px 18px !important;
+    border-bottom: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-stack {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    background: transparent !important;
+  }
+
+  html[data-design="decision"] .ds-stack article,
+  html[data-design="decision"] .ds-tasks a,
+  html[data-design="decision"] .ds-anti article,
+  html[data-design="decision"] .ds-evidence-grid span,
+  html[data-design="decision"] .ds-evidence-grid p,
+  html[data-design="decision"] .ds-index-row {
+    border: 1px solid #d8d4c5 !important;
+    border-radius: 22px !important;
+    background: #fffdf6 !important;
+  }
+
+  html[data-design="decision"] .ds-stack article {
+    min-height: 0 !important;
+    padding: 18px !important;
+  }
+
+  html[data-design="decision"] .ds-stack h3,
+  html[data-design="decision"] .ds-evidence h2,
+  html[data-design="decision"] .ds-anti h2,
+  html[data-design="decision"] .ds-tasks h2,
+  html[data-design="decision"] .ds-index h2,
+  html[data-design="decision"] .ds-index-head-spread h2 {
+    font-size: clamp(27px, 8vw, 34px) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.025em !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .ds-stack p,
+  html[data-design="decision"] .ds-anti p,
+  html[data-design="decision"] .ds-tasks a em {
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+  }
+
+  html[data-design="decision"] .ds-evidence {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  html[data-design="decision"] .ds-evidence-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    border: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-evidence-grid span,
+  html[data-design="decision"] .ds-evidence-grid p {
+    grid-row: auto !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    border: 1px solid #d8d4c5 !important;
+  }
+
+  html[data-design="decision"] .ds-evidence-grid span {
+    border-bottom: 0 !important;
+    border-radius: 22px 22px 0 0 !important;
+    font-size: 31px !important;
+    line-height: 1 !important;
+  }
+
+  html[data-design="decision"] .ds-evidence-grid p {
+    margin-top: -10px !important;
+    border-top: 0 !important;
+    border-radius: 0 0 22px 22px !important;
+    font-size: 10px !important;
+  }
+
+  html[data-design="decision"] .ds-anti > div,
+  html[data-design="decision"] .ds-tasks > div {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    margin-top: 16px !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  html[data-design="decision"] .ds-anti article,
+  html[data-design="decision"] .ds-tasks a {
+    min-height: 0 !important;
+    padding: 18px !important;
+    border-left: 1px solid #d8d4c5 !important;
+  }
+
+  html[data-design="decision"] .ds-anti article {
+    box-shadow: inset 4px 0 0 #c5251c !important;
+  }
+
+  html[data-design="decision"] .ds-anti strong,
+  html[data-design="decision"] .ds-tasks a strong {
+    font-size: 22px !important;
+    line-height: 1.08 !important;
+  }
+
+  html[data-design="decision"] .ds-index-head-spread {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding-bottom: 14px !important;
+  }
+
+  html[data-design="decision"] .ds-index-api {
+    display: inline-flex !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    min-height: 38px !important;
+    align-items: center !important;
+    border: 1px solid #b6b1a0 !important;
+    border-radius: 999px !important;
+    padding: 0 12px !important;
+    background: #fffdf6 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .ds-index-table {
+    display: grid !important;
+    gap: 10px !important;
+    border-top: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-index-table-head {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ds-index-row {
+    display: grid !important;
+    grid-template-columns: 34px minmax(0, 1fr) 28px !important;
+    min-height: 0 !important;
+    gap: 10px !important;
+    padding: 14px !important;
+  }
+
+  html[data-design="decision"] .ds-index-no {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    align-self: start !important;
+  }
+
+  html[data-design="decision"] .ds-index-tool {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    grid-template-columns: 26px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tool strong {
+    display: block !important;
+    margin-right: 0 !important;
+    font-size: 22px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tool em {
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.28 !important;
+  }
+
+  html[data-design="decision"] .ds-index-open {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    align-self: start !important;
+    justify-self: end !important;
+  }
+
+  html[data-design="decision"] .ds-index-verdict,
+  html[data-design="decision"] .ds-index-tags,
+  html[data-design="decision"] .ds-index-category,
+  html[data-design="decision"] .ds-index-price {
+    grid-column: 2 / 4 !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-index-verdict {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    margin-top: 8px !important;
+  }
+
+  html[data-design="decision"] .ds-index-tags {
+    margin-top: 6px !important;
+  }
+
+  html[data-design="decision"] .ds-index-category,
+  html[data-design="decision"] .ds-index-price {
+    font-size: 10px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  html[data-design="decision"] .ds-index-top-tags {
+    gap: 8px !important;
+    margin-top: 18px !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    padding-bottom: 4px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  html[data-design="decision"] .ds-index-top-tags::-webkit-scrollbar {
+    display: none;
+  }
+
+  html[data-design="decision"] .ds-index-top-tags > span,
+  html[data-design="decision"] .ds-index-top-tags a {
+    flex: 0 0 auto !important;
+  }
+
+  html[data-design="decision"] .inv-wrap,
+  html[data-design="decision"] .rg-wrap,
+  html[data-design="decision"] .inv-list-wrap,
+  html[data-design="decision"] .tools-guides,
+  html[data-design="decision"] .category-ledger,
+  html[data-design="decision"] .tag-related,
+  html[data-design="decision"] .category-detail,
+  html[data-design="decision"] .legal-sheet,
+  html[data-design="decision"]:not(:has(.ds-template)) .site-footer .container {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  html[data-design="decision"] .inv-head,
+  html[data-design="decision"] .inv-controls,
+  html[data-design="decision"] .inv-modebar,
+  html[data-design="decision"] .inv-register,
+  html[data-design="decision"] .inv-loadmore,
+  html[data-design="decision"] .rg-wrap,
+  html[data-design="decision"] .category-ledger,
+  html[data-design="decision"] .tag-related,
+  html[data-design="decision"] .category-detail .sheet-head,
+  html[data-design="decision"] .legal-sheet .sheet-head,
+  html[data-design="decision"] .category-detail .akte-article,
+  html[data-design="decision"] .legal-sheet .akte-article,
+  html[data-design="decision"] .category-detail .akte-crumb,
+  html[data-design="decision"] .legal-sheet .akte-crumb {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  html[data-design="decision"] .inv-head {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding-top: 20px !important;
+  }
+
+  html[data-design="decision"] .inv-head-h1,
+  html[data-design="decision"] .sheet-head-h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-detail-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .hero-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .page-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .ratgeber-hero h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .methodology-page h1,
+  html[data-design="decision"]:not(:has(.ds-template)) .legal h1 {
+    font-size: clamp(30px, 9vw, 40px) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.028em !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    hyphens: auto !important;
+  }
+
+  html[data-design="decision"] .inv-controls-search {
+    grid-template-columns: 1fr !important;
+  }
+
+  html[data-design="decision"] .inv-modebar {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    border-radius: 22px !important;
+    background: #fffdf6 !important;
+    border: 1px solid #d8d4c5 !important;
+    margin: 12px 16px !important;
+  }
+
+  html[data-design="decision"] .inv-mode-left,
+  html[data-design="decision"] .inv-sort-tabs,
+  html[data-design="decision"] .inv-mode-right {
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    padding-bottom: 3px !important;
+    scrollbar-width: none !important;
+  }
+
+  html[data-design="decision"] .inv-mode-left::-webkit-scrollbar,
+  html[data-design="decision"] .inv-sort-tabs::-webkit-scrollbar,
+  html[data-design="decision"] .inv-mode-right::-webkit-scrollbar {
+    display: none;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row,
+  html[data-design="decision"] .inv-register .inv-row {
+    grid-template-columns: 34px minmax(0, 1fr) !important;
+    gap: 10px !important;
+    min-height: 0 !important;
+    padding: 16px 0 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .tool-header,
+  html[data-design="decision"] .inv-register .tool-header,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    grid-column: 2 !important;
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict {
+    grid-column: 2 !important;
+    grid-row: auto !important;
+  }
+
+  html[data-design="decision"] .inv-register .tool-title {
+    font-size: 22px !important;
+  }
+
+  html[data-design="decision"] .inv-register .tools-desc {
+    font-size: 15px !important;
+    line-height: 1.32 !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .breadcrumb,
+  html[data-design="decision"]:not(:has(.ds-template)) .akte-crumb,
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-detail-header,
+  html[data-design="decision"]:not(:has(.ds-template)) .article,
+  html[data-design="decision"]:not(:has(.ds-template)) .alternatives-title,
+  html[data-design="decision"]:not(:has(.ds-template)) .alt-grid {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-detail-header {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    margin: 12px auto 18px !important;
+    padding: 20px 16px !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-category-link,
+  html[data-design="decision"]:not(:has(.ds-template)) .editorial-note {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    padding: 12px 0 0 !important;
+    border-left: 0 !important;
+    border-top: 1px solid #d8d4c5 !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .article {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .article-body,
+  html[data-design="decision"] .akte-article-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 24px 16px 30px !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .article p,
+  html[data-design="decision"]:not(:has(.ds-template)) .article li,
+  html[data-design="decision"] .akte-article-body p,
+  html[data-design="decision"] .akte-article-body li {
+    font-size: 18px !important;
+    line-height: 1.62 !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .article h2,
+  html[data-design="decision"] .akte-article-body h2 {
+    font-size: clamp(28px, 8.2vw, 36px) !important;
+    line-height: 1.06 !important;
+    letter-spacing: -0.028em !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) .article h3,
+  html[data-design="decision"] .akte-article-body h3 {
+    font-size: clamp(23px, 6.8vw, 28px) !important;
+    line-height: 1.08 !important;
+  }
+
+  html[data-design="decision"] .akte-article-body table,
+  html[data-design="decision"] .ratgeber-prose table {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    border-radius: 18px !important;
+    scrollbar-width: thin !important;
+  }
+
+  html[data-design="decision"] .akte-article-body thead,
+  html[data-design="decision"] .akte-article-body tbody,
+  html[data-design="decision"] .akte-article-body tr,
+  html[data-design="decision"] .ratgeber-prose thead,
+  html[data-design="decision"] .ratgeber-prose tbody,
+  html[data-design="decision"] .ratgeber-prose tr {
+    min-width: 620px !important;
+  }
+
+  html[data-design="decision"] .akte-article-body th,
+  html[data-design="decision"] .akte-article-body td,
+  html[data-design="decision"] .ratgeber-prose th,
+  html[data-design="decision"] .ratgeber-prose td {
+    min-width: 150px !important;
+  }
+
+  html[data-design="decision"] .tool-primary-link {
+    display: grid !important;
+    grid-template-columns: 54px minmax(0, 1fr) !important;
+    gap: 12px !important;
+    padding: 16px !important;
+    border-radius: 22px !important;
+  }
+
+  html[data-design="decision"] .tool-primary-link-logo {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  html[data-design="decision"] .sheet-head {
+    padding: 20px 0 24px !important;
+  }
+
+  html[data-design="decision"] .sheet-head-dek {
+    font-size: 18px !important;
+    line-height: 1.48 !important;
+  }
+
+  html[data-design="decision"] .sheet-body {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    margin-top: 24px !important;
+    padding-top: 22px !important;
+  }
+
+  html[data-design="decision"] .sheet-cover {
+    margin-top: 22px !important;
+  }
+
+  html[data-design="decision"] .sheet-cover-btn {
+    border-radius: 22px !important;
+  }
+
+  html[data-design="decision"] .sheet-summary {
+    position: static !important;
+    padding: 22px 18px 18px !important;
+  }
+
+  html[data-design="decision"] .site-footer .container {
+    border-radius: 26px 26px 0 0 !important;
+    padding-top: 28px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  html[data-design="decision"] .ds-stage {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  html[data-design="decision"] .ds-front,
+  html[data-design="decision"] .ds-stack,
+  html[data-design="decision"] .ds-evidence,
+  html[data-design="decision"] .ds-anti,
+  html[data-design="decision"] .ds-tasks,
+  html[data-design="decision"] .ds-index,
+  html[data-design="decision"] .ds-index-appendix {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions {
+    grid-template-columns: 1fr !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions span {
+    justify-self: start !important;
+  }
+
+  html[data-design="decision"] .ds-evidence-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  html[data-design="decision"] .ds-index-row {
+    grid-template-columns: 28px minmax(0, 1fr) 24px !important;
+    padding: 13px !important;
+  }
+}
