@@ -570,3 +570,9 @@ _Last updated: 2026-06-08_
 - Added a late decision-layout mobile hardening layer covering the homepage, inventory, tool detail, Ratgeber archive/articles, category/tag archives, methodology, imprint, and privacy pages.
 - Mobile navigation now uses the black edition bar as the primary app-style nav, while the regular header is slimmed down to brand/liveness/language/theme utility controls to avoid the previous stacked desktop header on phones.
 - Local QA covered DE/EN homepage, tools, tool detail, Ratgeber, category/tag, methodology, and legal routes at 390px, including load-more interaction and scroll-width checks.
+
+## 2026-06-08 - Mobile header and footer alignment polish
+
+- Added a final mobile-only decision-layout CSS layer so the compact language and `llms/feed` utility buttons render as true centered flex pills on phones instead of block-level text inside circular controls.
+- Re-centered the mobile global footer and restored side padding so brand, editorial note, legal links, and feed link no longer hug the left viewport edge.
+- Verification covered local dev and built `site/dist` at 390px on DE/EN homepage, tool index, Ratgeber index, ChatGPT tool detail, and privacy pages; header/footer metrics showed centered controls, centered footer links, no horizontal overflow, and no console errors.
