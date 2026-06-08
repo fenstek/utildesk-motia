@@ -564,3 +564,9 @@ _Last updated: 2026-06-08_
   - `robots.txt` still advertises only `https://tools.utildesk.de/sitemap.xml`.
 - Google Search Console main sitemap submit succeeded for `https://tools.utildesk.de/sitemap.xml`; final API readback after deploy showed `lastSubmitted=2026-06-04T11:13:09Z`, `lastDownloaded=2026-06-04T11:09:03Z`, `submitted=102`, `warnings=0`, `errors=0`.
 - Bing Webmaster `sitemap-focus.xml` was resubmitted after deploy; follow-up feed readback showed `UrlCount=102`, `Status=Success`.
+
+## 2026-06-08 - Whole-site mobile hardening pass
+
+- Added a late decision-layout mobile hardening layer covering the homepage, inventory, tool detail, Ratgeber archive/articles, category/tag archives, methodology, imprint, and privacy pages.
+- Mobile navigation now uses the black edition bar as the primary app-style nav, while the regular header is slimmed down to brand/liveness/language/theme utility controls to avoid the previous stacked desktop header on phones.
+- Local QA covered DE/EN homepage, tools, tool detail, Ratgeber, category/tag, methodology, and legal routes at 390px, including load-more interaction and scroll-width checks.
