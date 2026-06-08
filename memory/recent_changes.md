@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-08_
+_Last updated: 2026-06-09_
+
+## 2026-06-09 - NotebookLM topic seeds on OptiPlex
+
+- Created six fresh Ratgeber research notebooks in NotebookLM on the physical OptiPlex contour `jgdus@100.98.97.98`, using `/home/jgdus/projects/agent-newsman` and `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`, not the `opcl` contour.
+- Seeded the requested topics: AI browsers/WebMCP, coding agents as work agents, agentic commerce with Shopware, local/on-device AI agents, AI video after Sora, and persistent AI memory across sessions/projects/models.
+- All source packs and web/PDF sources were added successfully; all six German NotebookLM briefing reports completed. Run artifacts live under `/home/jgdus/projects/agent-newsman/artifacts/notebooklm_topic_seeds_20260609/`.
 
 ## 2026-06-08 - Inventory mobile list repair
 

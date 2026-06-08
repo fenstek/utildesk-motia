@@ -24,6 +24,17 @@
   - marker: `/home/jgdus/projects/agent-newsman/artifacts/article_jobs/20260607-open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewa-comparison/notebooklm_report_ready.json`.
 - The separate headless `opcl@ubuntu-opcl` contour still uses `/opt/openclaw/workspace/agent-newsman` and `/home/opcl/.notebooklm`; do not mix auth files or paths between these contours.
 
+## 2026-06-09 NotebookLM topic seeds on OptiPlex
+
+- Six fresh Ratgeber research notebooks were created on the physical OptiPlex contour, not on `opcl`, using `jgdus@100.98.97.98`, `/home/jgdus/projects/agent-newsman`, and `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`.
+- Source packs and run logs are under `/home/jgdus/projects/agent-newsman/artifacts/notebooklm_topic_seeds_20260609/`; all source adds returned `0` and all generated NotebookLM report artifacts were `completed`.
+- Created notebooks:
+  - `7183cbce-7256-41e1-8498-823a26d11cec` - `KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase`
+  - `92f842a5-8b6c-4f53-b96d-a3beffa5a44f` - `Vom Coding-Agent zum Arbeitsagenten: Codex, Claude Code und Antigravity`
+  - `5ff9935f-62ce-4de9-bc11-5243bd050984` - `Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart`
+  - `9fc09658-de2c-4c56-bfb9-df96e7a80304` - `Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano`
+  - `25d1c2c6-2917-4c62-ac46-c5c0af3aaa68` - `KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly`
+  - `8f0b7588-7559-4972-baf0-93bef0fe6633` - `Persistente KI-Memory 2026: Kontext zwischen Sessions, Projekten und Modellen`
 
 ## 2026-05-15 Umami v3.1.0 operations handoff
 
