@@ -33,6 +33,26 @@ relatedTools:
     href: "/tools/langgraph/"
   - title: "AutoGen"
     href: "/tools/autogen/"
+decisionTools:
+  - title: "Hermes Agent"
+    href: "/tools/hermes-agent/"
+    note: "personal agent with memory"
+    score: "9.0"
+    kind: "recommend"
+  - title: "OpenClaw"
+    href: "/tools/openclaw/"
+    note: "chat-channel gateway"
+    score: "8.7"
+    kind: "recommend"
+  - title: "LangGraph"
+    href: "/tools/langgraph/"
+    note: "controlled agent graphs"
+    score: "8.5"
+    kind: "recommend"
+decisionAvoid:
+  - "choosing agents by demo ranking alone"
+  - "mixing frameworks and finished assistants into one bucket"
+decisionNote: "We group Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph by workflow role: personal agent, chat gateway, coding agent, platform or framework."
 ---
 Open-source AI agents are no longer one coherent tool category in 2026. The same label covers personal assistants with memory, chat gateways for mobile access, IDE-native coding agents, development platforms and frameworks for custom multi-agent systems. That is why generic rankings get misleading quickly: [Hermes Agent](/tools/hermes-agent/) does not compete directly with [LangGraph](/tools/langgraph/), and [OpenClaw](/tools/openclaw/) answers a different question than [OpenHands](/tools/openhands/).
 

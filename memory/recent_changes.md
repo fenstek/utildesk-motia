@@ -1,6 +1,11 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-08_
 
+## 2026-06-08 - Dynamic homepage decision test block
+
+- Replaced the homepage decision test table's hardcoded first-article fallback with article-driven data from `decisionTools`, `decisionAvoid`, and `decisionNote`.
+- Added current DE/EN open-source agents comparison frontmatter for the homepage `Im Test` / `In the test` block so it now follows the latest Ratgeber topic.
+
 ## 2026-06-08 - Hero headline scale correction
 
 - Reduced oversized decision-layout hero headline scales on the homepage and Ratgeber article pages while keeping the editorial newspaper typography.

@@ -15,6 +15,16 @@ interface ToolItem {
   editorialVerdict?: ToolEditorialVerdictValue | null;
 }
 
+interface DecisionToolItem {
+  title: string;
+  slug?: string;
+  href?: string;
+  note?: string;
+  score?: string | number;
+  icon?: string;
+  kind?: "recommend" | "caution" | "overrated";
+}
+
 interface ArticleItem {
   slug: string;
   data: {
@@ -23,6 +33,11 @@ interface ArticleItem {
     eyebrow?: string;
     category?: string;
     readTime?: number;
+    decisionTools?: DecisionToolItem[];
+    decisionAvoid?: string[];
+    decisionNote?: string;
+    relatedTools?: { title: string; href?: string; slug?: string; note?: string }[];
+    sidebarPoints?: string[];
   };
 }
 
@@ -191,7 +206,7 @@ const guideCards = latestGuideItems.slice(0, 3);
 const toolRows = tools.slice(0, 12);
 const indexRows = tools.slice(0, 8);
 const toolHrefBySlug = (slug: string) => `${prefix}/tools/${slug}/`;
-const testRows = isEn
+const fallbackTestRows = isEn
   ? [
       { title: "Claude Code", slug: "claude", note: "best context discipline", score: "9.1", icon: "\u2713", kind: "recommend" },
       { title: "GitHub Copilot", slug: "github-copilot", note: "safer standard", score: "8.4", icon: "\u2713", kind: "recommend" },
@@ -202,9 +217,59 @@ const testRows = isEn
       { title: "GitHub Copilot", slug: "github-copilot", note: "sicherer Standard", score: "8.4", icon: "\u2713", kind: "recommend" },
       { title: "Cursor", slug: "cursor", note: "nur mit Review-Pilot", score: "7.0", icon: "\u25d0", kind: "caution" },
     ];
-const frontNote = isEn
+const fallbackFrontNote = isEn
   ? "We had three teams work with Cursor, Copilot and Claude Code for a week. What began as a speed test ended as a discussion about responsibility: who reviews what an agent commits?"
   : "Wir haben drei Teams je eine Woche lang mit Cursor, Copilot und Claude Code arbeiten lassen. Was als Geschwindigkeitstest begann, endete als Diskussion \u00fcber Verantwortung: Wer reviewt, was ein Agent committet?";
+
+const slugFromHref = (href?: string) => {
+  if (!href) return null;
+  const match = href.match(/\/tools\/([^/]+)\/?$/);
+  return match?.[1] ?? null;
+};
+
+const localizeToolHref = (href?: string, slug?: string | null) => {
+  if (!href) return slug ? toolHrefBySlug(slug) : `${prefix}/tools/`;
+  if (isEn && href.startsWith("/tools/")) return `/en${href}`;
+  if (!isEn && href.startsWith("/en/tools/")) return href.replace(/^\/en/, "");
+  return href;
+};
+
+const normalizeDecisionTools = (items: DecisionToolItem[] = []) =>
+  items.slice(0, 3).map((item, index) => {
+    const slug = item.slug ?? slugFromHref(item.href);
+    return {
+      title: item.title,
+      href: localizeToolHref(item.href, slug),
+      note: item.note ?? (isEn ? "related tool in this decision" : "Tool aus dieser Entscheidung"),
+      score: item.score ? String(item.score) : ["9.0", "8.4", "7.8"][index],
+      icon: item.icon ?? (index < 2 ? "\u2713" : "\u25d0"),
+      kind: item.kind ?? (index < 2 ? "recommend" : "caution"),
+    };
+  });
+
+const articleDecisionTools = primaryGuide
+  ? normalizeDecisionTools(
+      primaryGuide.data.decisionTools?.length
+        ? primaryGuide.data.decisionTools
+        : (primaryGuide.data.relatedTools || []).map((tool) => ({
+            title: tool.title,
+            href: tool.href,
+            slug: tool.slug,
+            note: tool.note,
+          }))
+    )
+  : [];
+const testRows = articleDecisionTools.length > 0
+  ? articleDecisionTools
+  : fallbackTestRows.map((tool) => ({ ...tool, href: toolHrefBySlug(tool.slug) }));
+const avoidRows = primaryGuide?.data.decisionAvoid?.length
+  ? primaryGuide.data.decisionAvoid.slice(0, 2)
+  : primaryGuide?.data.sidebarPoints?.length
+    ? primaryGuide.data.sidebarPoints.slice(0, 2)
+    : [copy.avoidOne, copy.avoidTwo];
+const frontNote = primaryGuide?.data.decisionNote || primaryGuide?.data.excerpt || fallbackFrontNote;
+copy.avoidOne = avoidRows[0] ?? copy.avoidOne;
+copy.avoidTwo = avoidRows[1] ?? copy.avoidTwo;
 
 const normalizeTagSlug = (tag: string) =>
   tag
@@ -311,7 +376,7 @@ const categoryRows = categories.slice(0, 8);
           <div class="ds-test-table">
             <h3>{copy.toolsLabel}</h3>
             {testRows.map((tool) => (
-              <a class={`ds-test-row ds-test-row-${tool.kind}`} href={toolHrefBySlug(tool.slug)}>
+              <a class={`ds-test-row ds-test-row-${tool.kind}`} href={tool.href}>
                 <span class="ds-test-icon">{tool.icon}</span>
                 <strong>{tool.title}<small>{tool.note}</small></strong>
                 <b>{tool.score}</b>
