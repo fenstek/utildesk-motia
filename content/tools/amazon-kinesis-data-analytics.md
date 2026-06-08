@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [data, analytics]
 official_url: "https://aws.amazon.com/managed-service-apache-flink/"
-popularity: 69
+popularity: 70
 tier: C
 generated_at: 2026-05-26
 ---

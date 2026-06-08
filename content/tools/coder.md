@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [coding,workflow]
 official_url: "https://coder.com/"
-popularity: 56
+popularity: 57
 tier: C
 generated_at: 2026-05-28
 ---
