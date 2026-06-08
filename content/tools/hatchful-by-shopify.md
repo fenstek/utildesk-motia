@@ -10,7 +10,7 @@ category: Design
 price_model: Free
 tags: [design, logo, branding, marketing]
 official_url: "https://www.shopify.com/tools/logo-maker"
-popularity: 40
+popularity: 41
 tier: C
 generated_at: 2026-05-27
 ---

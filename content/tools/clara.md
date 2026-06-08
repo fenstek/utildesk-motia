@@ -14,7 +14,7 @@ affiliate_url: "https://www.clara-ai.org/"
 tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-07
-popularity: 58
+popularity: 59
 description: KI-Lernassistent für erklärende Dialoge, Wiederholung, Lernstruktur und niedrigschwellige Wissensarbeit.
 ---
 # Clara

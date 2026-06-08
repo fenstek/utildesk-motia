@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Freemium
 tags: [video-editing,color-grading,post-production]
 official_url: "https://www.blackmagicdesign.com/products/davinciresolve"
-popularity: 95
+popularity: 96
 tier: D
 generated_at: 2026-05-28
 ---
