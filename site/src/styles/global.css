@@ -10680,3 +10680,89 @@ html[data-design="decision"] .sheet-head-h1 {
     min-height: 36px !important;
   }
 }
+
+/* Mobile polish: keep utility labels inside their pills and stop the footer
+   from hugging the viewport edge on phones. */
+@media (max-width: 760px) {
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right {
+    align-items: center !important;
+    justify-content: flex-end !important;
+    padding: 0 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    border: 1px solid #b6b1a0 !important;
+    background: #f8f6ef !important;
+    color: #0c0c0a !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right .ds-theme-switch::after {
+    content: "" !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right .ds-theme-switch {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .site-footer .container {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 0 auto 24px !important;
+    padding: 28px 18px calc(34px + env(safe-area-inset-bottom)) !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 24px !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .footer-brand {
+    width: min(100%, 32rem) !important;
+    justify-items: center !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .footer-note {
+    justify-items: center !important;
+  }
+
+  html[data-design="decision"] .footer-note span,
+  html[data-design="decision"] .footer-copyright {
+    max-width: 30rem !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .footer-links {
+    width: min(100%, 32rem) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px 14px !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .footer-links a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 430px) {
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right button {
+    height: 36px !important;
+    min-height: 36px !important;
+  }
+}
