@@ -9805,3 +9805,878 @@ html[data-design="decision"] .sheet-head-h1 {
     background: #fffdf6 !important;
   }
 }
+
+/* Whole-site mobile hardening: phones use a reading-app/catalog rhythm rather
+   than a squeezed desktop newspaper register. */
+@media (max-width: 760px) {
+  html[data-design="decision"] {
+    --mobile-page-gutter: 10px;
+    --mobile-card-radius: 24px;
+    --mobile-rule: #d8d4c5;
+    overflow-x: hidden !important;
+  }
+
+  html[data-design="decision"] body {
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html[data-design="decision"] main,
+  html[data-design="decision"] section,
+  html[data-design="decision"] article,
+  html[data-design="decision"] aside,
+  html[data-design="decision"] header,
+  html[data-design="decision"] footer,
+  html[data-design="decision"] nav,
+  html[data-design="decision"] div {
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-topbar {
+    left: var(--mobile-page-gutter) !important;
+    right: var(--mobile-page-gutter) !important;
+    top: max(8px, env(safe-area-inset-top)) !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: none !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-topbar a,
+  html[data-design="decision"] .ki-blatt-topbar span {
+    flex: 0 0 auto !important;
+    min-height: 32px !important;
+    padding: 0 12px !important;
+    font-size: 10px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header.site-header {
+    position: relative !important;
+    top: auto !important;
+    z-index: 20 !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 58px auto 12px !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    gap: 8px !important;
+    padding: 11px 12px 10px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left {
+    min-height: 20px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left strong {
+    font-size: 12px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span {
+    font-size: 10px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right,
+  html[data-design="decision"] .nav-links,
+  html[data-design="decision"] .nav-actions {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right button,
+  html[data-design="decision"] .nav-links a,
+  html[data-design="decision"] .nav-actions a,
+  html[data-design="decision"] .nav-actions button {
+    min-height: 34px !important;
+    padding: 9px 12px !important;
+    font-size: 10px !important;
+  }
+
+  html[data-design="decision"] .decision-global-badge {
+    display: none !important;
+  }
+
+  html[data-design="decision"]:has(.ds-template) main.container,
+  html[data-design="decision"]:not(:has(.ds-template)) main.container,
+  html[data-design="decision"] .site-footer .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  html[data-design="decision"]:not(:has(.ds-template)) main.container {
+    padding-top: 0 !important;
+  }
+
+  html[data-design="decision"] .ds-stage {
+    padding: 0 10px 32px !important;
+  }
+
+  html[data-design="decision"] .ds-frame {
+    border-radius: 24px !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki {
+    padding: 16px 16px 12px !important;
+  }
+
+  html[data-design="decision"] .ds-masthead-ki-main span {
+    font-size: clamp(30px, 11vw, 42px) !important;
+    line-height: 0.98 !important;
+  }
+
+  html[data-design="decision"] .ds-front {
+    gap: 16px !important;
+    padding: 16px !important;
+  }
+
+  html[data-design="decision"] .ds-front-main h2 {
+    font-size: clamp(28px, 8.8vw, 36px) !important;
+    line-height: 1.07 !important;
+    letter-spacing: -0.024em !important;
+  }
+
+  html[data-design="decision"] .ds-dek {
+    max-width: 36ch !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
+
+  html[data-design="decision"] .ds-verdict {
+    margin-top: 4px !important;
+    padding: 13px !important;
+    border-radius: 20px !important;
+  }
+
+  html[data-design="decision"] .ds-verdict-glyph,
+  html[data-design="decision"] .ds-verdict.ds-verdict-caution .ds-verdict-glyph,
+  html[data-design="decision"] .ds-verdict.ds-verdict-recommend .ds-verdict-glyph {
+    min-width: 34px !important;
+    font-size: 34px !important;
+  }
+
+  html[data-design="decision"] .ds-verdict strong {
+    font-size: 18px !important;
+  }
+
+  html[data-design="decision"] .ds-verdict p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 9px !important;
+    margin-top: 4px !important;
+  }
+
+  html[data-design="decision"] .ds-front-actions a {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  html[data-design="decision"] .ds-front-aside-test {
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .ds-test-table {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .ds-test-table h3 {
+    padding: 13px 14px 9px !important;
+  }
+
+  html[data-design="decision"] .ds-test-row {
+    grid-template-columns: 24px minmax(0, 1fr) auto !important;
+    min-height: 56px !important;
+    gap: 9px !important;
+    padding: 10px 14px !important;
+  }
+
+  html[data-design="decision"] .ds-test-row strong {
+    font-size: 18px !important;
+  }
+
+  html[data-design="decision"] .ds-test-row small {
+    font-size: 9px !important;
+  }
+
+  html[data-design="decision"] .ds-test-row b {
+    font-size: 21px !important;
+  }
+
+  html[data-design="decision"] .ds-box-warn-dashed {
+    padding: 14px !important;
+    border-radius: 18px !important;
+  }
+
+  html[data-design="decision"] .ds-box-warn-dashed p,
+  html[data-design="decision"] .ds-front-note {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+  }
+
+  html[data-design="decision"] .ds-front-note span {
+    font-size: 38px !important;
+  }
+
+  html[data-design="decision"] .ds-stack,
+  html[data-design="decision"] .ds-evidence,
+  html[data-design="decision"] .ds-anti,
+  html[data-design="decision"] .ds-tasks,
+  html[data-design="decision"] .ds-index,
+  html[data-design="decision"] .ds-index-appendix {
+    padding: 18px 16px !important;
+  }
+
+  html[data-design="decision"] .ds-stack article,
+  html[data-design="decision"] .ds-anti article,
+  html[data-design="decision"] .ds-tasks a,
+  html[data-design="decision"] .ds-index-row,
+  html[data-design="decision"] .akte-alt-card,
+  html[data-design="decision"] .rg-card {
+    border-radius: var(--mobile-card-radius) !important;
+    background: #fffdf6 !important;
+    box-shadow: 0 10px 24px rgba(49, 48, 41, 0.07) !important;
+  }
+
+  html[data-design="decision"] .ds-index-top-tags,
+  html[data-design="decision"] .akte-chips,
+  html[data-design="decision"] .tag-chip-ledger {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  html[data-design="decision"] .ds-index-top-tags::-webkit-scrollbar,
+  html[data-design="decision"] .akte-chips::-webkit-scrollbar,
+  html[data-design="decision"] .tag-chip-ledger::-webkit-scrollbar {
+    display: none;
+  }
+
+  html[data-design="decision"] .akte-chip {
+    max-width: 100% !important;
+    min-height: 32px !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+  }
+
+  html[data-design="decision"] .tool-akte,
+  html[data-design="decision"] .inv-wrap,
+  html[data-design="decision"] .rg-wrap,
+  html[data-design="decision"] .inv-list-wrap,
+  html[data-design="decision"] .tools-guides,
+  html[data-design="decision"] .category-ledger,
+  html[data-design="decision"] .tag-related,
+  html[data-design="decision"] .category-detail,
+  html[data-design="decision"] .legal-sheet,
+  html[data-design="decision"]:not(:has(.ds-template)) .breadcrumb,
+  html[data-design="decision"]:not(:has(.ds-template)) .akte-crumb,
+  html[data-design="decision"]:not(:has(.ds-template)) .tool-detail-header,
+  html[data-design="decision"]:not(:has(.ds-template)) .article,
+  html[data-design="decision"] .akte-verdict-card,
+  html[data-design="decision"] .akte-tldr,
+  html[data-design="decision"] .akte-alts,
+  html[data-design="decision"] .sheet-foot {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  html[data-design="decision"] .akte-crumb,
+  html[data-design="decision"] .breadcrumb {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 8px 2px 6px !important;
+    white-space: nowrap !important;
+    scrollbar-width: none !important;
+  }
+
+  html[data-design="decision"] .akte-crumb::-webkit-scrollbar,
+  html[data-design="decision"] .breadcrumb::-webkit-scrollbar {
+    display: none;
+  }
+
+  html[data-design="decision"] .akte-crumb > *,
+  html[data-design="decision"] .breadcrumb > * {
+    flex: 0 0 auto !important;
+  }
+
+  html[data-design="decision"] .akte-mast {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 8px auto 14px !important;
+    padding: 18px !important;
+    border: 1px solid var(--mobile-rule) !important;
+    border-radius: 26px !important;
+    background: #fffdf6 !important;
+  }
+
+  html[data-design="decision"] .akte-mast-body {
+    display: grid !important;
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .akte-mast-kicker {
+    font-size: 10px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  html[data-design="decision"] .akte-mast-h1 {
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(34px, 10.5vw, 46px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.03em !important;
+    overflow-wrap: anywhere !important;
+    hyphens: auto !important;
+  }
+
+  html[data-design="decision"] .akte-mast-oneliner {
+    max-width: 36ch !important;
+    font-size: 17px !important;
+    line-height: 1.48 !important;
+  }
+
+  html[data-design="decision"] .akte-actions,
+  html[data-design="decision"] .sheet-foot-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 9px !important;
+  }
+
+  html[data-design="decision"] .akte-action {
+    justify-content: center !important;
+    width: 100% !important;
+    min-height: 46px !important;
+    padding: 12px 14px !important;
+    border-radius: 16px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 16px !important;
+    border-radius: 22px !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-tab {
+    position: static !important;
+    display: inline-flex !important;
+    margin: 0 0 12px !important;
+    transform: none !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-head {
+    grid-template-columns: 52px minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-row,
+  html[data-design="decision"] .akte-faktenblatt-foot > div {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
+    gap: 10px !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-row .akte-faktenblatt-key,
+  html[data-design="decision"] .akte-faktenblatt-foot .akte-faktenblatt-key {
+    white-space: normal !important;
+  }
+
+  html[data-design="decision"] .akte-faktenblatt-row .akte-faktenblatt-val,
+  html[data-design="decision"] .akte-faktenblatt-vendor-name,
+  html[data-design="decision"] .akte-faktenblatt-vendor-domain {
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .akte-verdict-card,
+  html[data-design="decision"] .akte-tldr,
+  html[data-design="decision"] .akte-article,
+  html[data-design="decision"] .akte-alts,
+  html[data-design="decision"] .legal-sheet,
+  html[data-design="decision"] .sheet-cover,
+  html[data-design="decision"] .sheet-body,
+  html[data-design="decision"] .sheet-foot {
+    border-radius: 26px !important;
+  }
+
+  html[data-design="decision"] .akte-verdict-card,
+  html[data-design="decision"] .akte-tldr {
+    padding: 16px !important;
+  }
+
+  html[data-design="decision"] .akte-verdict-main,
+  html[data-design="decision"] .akte-tldr {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  html[data-design="decision"] .akte-verdict-glyph {
+    width: 54px !important;
+    height: 54px !important;
+    font-size: 34px !important;
+  }
+
+  html[data-design="decision"] .akte-verdict-copy h2,
+  html[data-design="decision"] .akte-tldr-title {
+    font-size: clamp(25px, 7.6vw, 33px) !important;
+    line-height: 1.08 !important;
+  }
+
+  html[data-design="decision"] .akte-verdict-trust {
+    width: 100% !important;
+    padding: 12px !important;
+    border-radius: 18px !important;
+  }
+
+  html[data-design="decision"] .akte-tldr-aside,
+  html[data-design="decision"] .akte-tldr-body {
+    min-width: 0 !important;
+  }
+
+  html[data-design="decision"] .akte-article,
+  html[data-design="decision"]:not(:has(.ds-template)) .article {
+    border-radius: 26px !important;
+    overflow: hidden !important;
+    background: #fffdf6 !important;
+  }
+
+  html[data-design="decision"] .akte-article-body,
+  html[data-design="decision"]:not(:has(.ds-template)) .article-body,
+  html[data-design="decision"] .ratgeber-prose,
+  html[data-design="decision"] .sheet-prose {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 22px 18px 28px !important;
+  }
+
+  html[data-design="decision"] .akte-article-body p,
+  html[data-design="decision"] .akte-article-body li,
+  html[data-design="decision"] .ratgeber-prose p,
+  html[data-design="decision"] .ratgeber-prose li,
+  html[data-design="decision"]:not(:has(.ds-template)) .article p,
+  html[data-design="decision"]:not(:has(.ds-template)) .article li {
+    font-size: 18px !important;
+    line-height: 1.64 !important;
+  }
+
+  html[data-design="decision"] .akte-article-body h2,
+  html[data-design="decision"] .ratgeber-prose h2,
+  html[data-design="decision"]:not(:has(.ds-template)) .article h2 {
+    margin-top: 34px !important;
+    font-size: clamp(27px, 8vw, 35px) !important;
+    line-height: 1.08 !important;
+  }
+
+  html[data-design="decision"] .akte-article-body h3,
+  html[data-design="decision"] .ratgeber-prose h3,
+  html[data-design="decision"]:not(:has(.ds-template)) .article h3 {
+    font-size: clamp(22px, 6.4vw, 28px) !important;
+    line-height: 1.12 !important;
+  }
+
+  html[data-design="decision"] .tool-editorial-figure,
+  html[data-design="decision"] .article-figure,
+  html[data-design="decision"] .ratgeber-prose figure {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-design="decision"] .akte-alts {
+    padding: 16px !important;
+    background: #fffdf6 !important;
+    border: 1px solid var(--mobile-rule) !important;
+  }
+
+  html[data-design="decision"] .akte-alts-head {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  html[data-design="decision"] .akte-alts-title {
+    font-size: clamp(26px, 8vw, 34px) !important;
+    line-height: 1.08 !important;
+  }
+
+  html[data-design="decision"] .akte-alts-all {
+    width: fit-content !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .akte-alts-grid,
+  html[data-design="decision"] .category-ledger .akte-alts-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .akte-alt-card {
+    min-height: 0 !important;
+    padding: 16px !important;
+  }
+
+  html[data-design="decision"] .akte-alt-card-name {
+    font-size: clamp(24px, 7.2vw, 31px) !important;
+    line-height: 1.08 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] .rg-wrap {
+    padding: 0 !important;
+  }
+
+  html[data-design="decision"] .ratgeber-hero,
+  html[data-design="decision"] .inv-head,
+  html[data-design="decision"] .sheet-head {
+    padding: 18px !important;
+    border-radius: 26px !important;
+    background: #fffdf6 !important;
+    border: 1px solid var(--mobile-rule) !important;
+  }
+
+  html[data-design="decision"] .ratgeber-hero h1,
+  html[data-design="decision"] .inv-head-h1,
+  html[data-design="decision"] .sheet-head-h1 {
+    font-size: clamp(31px, 9vw, 42px) !important;
+    line-height: 1.06 !important;
+  }
+
+  html[data-design="decision"] .rg-list {
+    display: grid !important;
+    gap: 12px !important;
+    padding: 14px 0 36px !important;
+    border-top: 0 !important;
+  }
+
+  html[data-design="decision"] .rg-card {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding: 14px !important;
+    border: 1px solid var(--mobile-rule) !important;
+  }
+
+  html[data-design="decision"] .rg-card-figure {
+    padding: 0 !important;
+  }
+
+  html[data-design="decision"] .rg-media-stage {
+    min-height: 0 !important;
+    aspect-ratio: 16 / 9 !important;
+    padding: 10px !important;
+    border-radius: 20px !important;
+  }
+
+  html[data-design="decision"] .rg-card-body {
+    gap: 10px !important;
+    padding: 0 !important;
+  }
+
+  html[data-design="decision"] .rg-card-title {
+    font-size: clamp(24px, 7.3vw, 32px) !important;
+    line-height: 1.1 !important;
+  }
+
+  html[data-design="decision"] .rg-card-excerpt {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  html[data-design="decision"] .rg-card-meta-bottom {
+    gap: 8px !important;
+  }
+
+  html[data-design="decision"] .rg-arrow {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  html[data-design="decision"] .inv-head {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 0 auto 12px !important;
+  }
+
+  html[data-design="decision"] .inv-head-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  html[data-design="decision"] .inv-stat {
+    min-width: 0 !important;
+    padding: 12px !important;
+    border-radius: 18px !important;
+  }
+
+  html[data-design="decision"] .inv-modebar {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 10px auto !important;
+    padding: 14px !important;
+  }
+
+  html[data-design="decision"] .inv-search-panel {
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .inv-search-input {
+    height: 48px !important;
+    font-size: 15px !important;
+    border-radius: 16px !important;
+  }
+
+  html[data-design="decision"] .inv-sort-tabs,
+  html[data-design="decision"] .inv-mode-left,
+  html[data-design="decision"] .inv-mode-right {
+    width: 100% !important;
+  }
+
+  html[data-design="decision"] .inv-sort-select,
+  html[data-design="decision"] .inv-sort-ghost,
+  html[data-design="decision"] .inv-mode-button {
+    min-height: 38px !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .inv-list-wrap {
+    margin-top: 10px !important;
+  }
+
+  html[data-design="decision"] .inv-register,
+  html[data-design="decision"] .inv-register.inv-view-register,
+  html[data-design="decision"] .inv-register.inv-view-setzkasten {
+    gap: 12px !important;
+  }
+
+  html[data-design="decision"] .inv-register .inv-row,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row,
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .inv-row {
+    border-radius: 22px !important;
+    padding: 14px !important;
+  }
+
+  html[data-design="decision"] .inv-register .tool-title,
+  html[data-design="decision"] .inv-register.inv-view-register .tool-title,
+  html[data-design="decision"] .inv-register.inv-view-setzkasten .tool-title {
+    font-size: 21px !important;
+  }
+
+  html[data-design="decision"] .sheet-cover {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 12px auto !important;
+  }
+
+  html[data-design="decision"] .sheet-cover figcaption {
+    padding: 10px 2px 0 !important;
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+
+  html[data-design="decision"] .sheet-body {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    margin: 12px auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  html[data-design="decision"] .sheet-summary {
+    position: static !important;
+    width: 100% !important;
+    padding: 18px !important;
+    border-radius: 24px !important;
+  }
+
+  html[data-design="decision"] .sheet-foot {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    padding: 18px !important;
+    border: 1px solid var(--mobile-rule) !important;
+    background: #fffdf6 !important;
+  }
+
+  html[data-design="decision"] .legal-sheet .sheet-head,
+  html[data-design="decision"] .category-detail .sheet-head,
+  html[data-design="decision"] .legal-sheet .akte-article,
+  html[data-design="decision"] .category-detail .akte-article {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  html[data-design="decision"] pre,
+  html[data-design="decision"] code {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  html[data-design="decision"] pre {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+@media (max-width: 430px) {
+  html[data-design="decision"] .akte-mast-h1 {
+    font-size: clamp(32px, 10vw, 42px) !important;
+  }
+
+  html[data-design="decision"] .akte-article-body,
+  html[data-design="decision"]:not(:has(.ds-template)) .article-body,
+  html[data-design="decision"] .ratgeber-prose,
+  html[data-design="decision"] .sheet-prose {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  html[data-design="decision"] .inv-head-stats {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* Mobile header slimming: the black edition bar is the phone navigation; the
+   regular header only keeps brand, liveness and utility actions. */
+@media (max-width: 760px) {
+  html[data-design="decision"] .ki-blatt-header.site-header {
+    margin-top: 54px !important;
+    margin-bottom: 10px !important;
+    border-radius: 20px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 10px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left {
+    display: flex !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    gap: 7px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left strong {
+    flex: 0 0 auto !important;
+    font-size: 16px !important;
+    letter-spacing: 0 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span:first-of-type {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span:last-of-type {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: 12px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left i {
+    width: 7px !important;
+    height: 7px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-links {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right {
+    display: flex !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: auto !important;
+    max-width: none !important;
+    gap: 6px !important;
+    overflow: visible !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right button {
+    width: 42px !important;
+    min-width: 42px !important;
+    min-height: 38px !important;
+    padding: 0 !important;
+    border-radius: 999px !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+    letter-spacing: 0 !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right .ds-theme-switch span {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right .ds-theme-switch::before {
+    content: "*";
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 430px) {
+  html[data-design="decision"] .ki-blatt-header .ds-nav {
+    padding: 9px !important;
+    gap: 6px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left strong {
+    font-size: 15px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-left span:last-of-type {
+    max-width: 86px !important;
+  }
+
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right a,
+  html[data-design="decision"] .ki-blatt-header .ds-nav-right button {
+    width: 38px !important;
+    min-width: 38px !important;
+    min-height: 36px !important;
+  }
+}
