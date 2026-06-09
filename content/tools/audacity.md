@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["ai", "assistant", "automation"]
 official_url: "https://www.audacityteam.org/"
 created_at: 2026-02-12
-popularity: 67
+popularity: 68
 tier: C
 generated_at: 2026-05-27
 ---
