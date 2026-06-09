@@ -2,17 +2,17 @@
 slug: zoho-office-suite
 title: Zoho Office Suite
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Freemium
 tags: [office,documents,productivity,collaboration]
 official_url: "https://www.zoho.com/de/officeplatform/?sredirect=true"
-popularity: 1
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 0
+tier: C
+generated_at: 2026-05-13
 ---
 # Zoho Office Suite
 

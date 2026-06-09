@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Kostenlos
 tags: [video, streaming, audio]
 official_url: "https://obsproject.com/"
-popularity: 90
+popularity: 0
 description: OBS Studio ist ein kostenloses Open-Source-Werkzeug für Livestreaming, Bildschirmaufnahme, Szenensteuerung und einfache Video-Produktion.
 tier: C
 generated_at: 2026-05-28

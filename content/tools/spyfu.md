@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Je nach Plan
 tags: [seo, marketing, analytics]
 official_url: "https://www.spyfu.com/"
-popularity: 13
+popularity: 15
 tier: C
 generated_at: 2026-05-27
 ---

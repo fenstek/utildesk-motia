@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [database,data,cloud,developer-tools]
 official_url: "https://www.mongodb.com/"
-popularity: 27
+popularity: 0
 tier: C
 generated_at: 2026-05-27
 ---

@@ -2,17 +2,17 @@
 slug: zoho-calendar
 title: Zoho Calendar
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://www.zoho.com/de/calendar/"
-popularity: 2
-tier: "C"
-generated_at: "2026-05-28"
+popularity: 1
+tier: C
+generated_at: 2026-05-28
 ---
 # Zoho Calendar
 

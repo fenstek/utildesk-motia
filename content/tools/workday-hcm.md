@@ -10,7 +10,7 @@ category: Produktivität
 price_model: 
 tags: [hcm, hr, enterprise-software]
 official_url: "https://www.workday.com/en-us/products/human-capital-management/overview.html"
-popularity: 84
+popularity: 3
 tier: C
 generated_at: 2026-05-28
 ---

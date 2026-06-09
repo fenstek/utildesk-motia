@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [database, cloud, data, developer-tools]
 official_url: "https://www.cockroachlabs.com/"
-popularity: 57
+popularity: 0
 tier: C
 generated_at: 2026-05-26
 ---
