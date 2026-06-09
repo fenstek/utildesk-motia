@@ -100,7 +100,14 @@ Preismodell: **Nutzungsbasiert**. Für Google Document AI zählt im Vergleich ni
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu Google Document AI kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+Google Document AI ist stark, wenn Google Cloud und strukturierte Prozessoren bereits Teil des Datenstapels sind. Fuer andere Rahmenbedingungen lohnen diese Vergleiche:
+
+- [AWS Textract](/tools/aws-textract/): naheliegend fuer AWS-zentrierte Dokument- und Event-Flows.
+- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): passend fuer Microsoft-Cloud, Azure-Governance und Office-nahe Prozesse.
+- [ABBYY Vantage](/tools/abbyy-vantage/): Enterprise-Alternative mit mehr Fachreview und Prozesssteuerung.
+- [Rossum](/tools/rossum/): stark bei operativer Rechnungs- und Dokumentenverarbeitung mit Review-Queue.
+- [Mindee](/tools/mindee/): API-orientierte Alternative fuer klar definierte Dokumenttypen.
+- [OCRmyPDF](/tools/ocrmypdf/): lokale Open-Source-Option fuer PDF-OCR ohne Cloud-Verarbeitung.
 
 ## Passende Ratgeber
 

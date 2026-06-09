@@ -100,7 +100,14 @@ Preismodell: **Nutzungsbasiert**. Für Mistral OCR zählt im Vergleich nicht nur
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu Mistral OCR kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+Mistral OCR sollte vor allem gegen Loesungen verglichen werden, die entweder mehr Dokumentprozess oder mehr lokalen Betrieb bieten:
+
+- [AWS Textract](/tools/aws-textract/): Cloud-Service fuer strukturierte Extraktion in AWS-Umgebungen.
+- [Google Document AI](/tools/google-document-ai/): Google-Cloud-Alternative mit Prozessoren und Workflows fuer Dokumenttypen.
+- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): Microsoft-nahe Option fuer Formulare und Dokumentintelligenz.
+- [OCRmyPDF](/tools/ocrmypdf/): lokale PDF-OCR-Pipeline fuer Teams, die Dateien nicht in eine Cloud geben wollen.
+- [PaddleOCR](/tools/paddleocr/): Open-Source-OCR-Toolkit fuer technische Teams mit eigener Pipeline.
+- [Tesseract OCR](/tools/tesseract-ocr/): klassischer Open-Source-Baustein fuer kontrollierbare OCR-Setups.
 
 ## Passende Ratgeber
 

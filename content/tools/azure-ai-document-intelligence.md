@@ -100,7 +100,14 @@ Preismodell: **Nutzungsbasiert**. Für Azure AI Document Intelligence zählt im 
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu Azure AI Document Intelligence kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+Azure AI Document Intelligence ist naheliegend fuer Microsoft-nahe Teams. Wenn Cloud, Review-Prozess oder Lokalbetrieb anders aussehen, passen diese Vergleiche:
+
+- [AWS Textract](/tools/aws-textract/): bessere Wahl, wenn Dokumente, Events und Folgesysteme ohnehin in AWS liegen.
+- [Google Document AI](/tools/google-document-ai/): Alternative fuer Google-Cloud-Prozessoren und strukturierte Dokumentworkflows.
+- [ABBYY Vantage](/tools/abbyy-vantage/): Enterprise-IDP mit staerkerem Fokus auf Fachreview, Ausnahmen und Validierung.
+- [Rossum](/tools/rossum/): gut fuer wiederholbare Backoffice-Dokumente und Rechnungsverarbeitung.
+- [Nanonets](/tools/nanonets/): pragmatische Option fuer trainierbare Extraktion und operative Workflows.
+- [OCRmyPDF](/tools/ocrmypdf/): lokale Open-Source-Pipeline, wenn keine Cloud-Verarbeitung gewuenscht ist.
 
 ## Passende Ratgeber
 

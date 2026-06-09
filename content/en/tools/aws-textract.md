@@ -103,7 +103,14 @@ Pricing model: **Usage-based**. For AWS Textract, the real comparison should inc
 
 ## Alternatives in the Utildesk Context
 
-Depending on the problem, alternatives to AWS Textract may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
+AWS Textract is strongest when the rest of the stack already lives in AWS. For other situations, these internal comparisons are more useful:
+
+- [Google Document AI](/tools/google-document-ai/): an alternative for teams already using Google Cloud data, workflows, and processors.
+- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): a Microsoft-aligned option with Azure governance and form-recognition workflows.
+- [ABBYY Vantage](/tools/abbyy-vantage/): enterprise IDP with a stronger focus on business process control and review.
+- [Rossum](/tools/rossum/): specialized in repeatable document extraction, especially invoices and operational back-office flows.
+- [Mindee](/tools/mindee/): a more API-oriented approach for clearly bounded extraction cases.
+- [OCRmyPDF](/tools/ocrmypdf/): a local open-source alternative for PDF OCR without cloud upload.
 
 ## Related Guides
 

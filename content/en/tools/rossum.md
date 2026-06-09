@@ -103,7 +103,14 @@ Pricing model: **Custom quote**. For Rossum, the real comparison should include 
 
 ## Alternatives in the Utildesk Context
 
-Depending on the problem, alternatives to Rossum may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
+Rossum should be compared with alternatives that either share its IDP ambition or are deliberately lighter:
+
+- [ABBYY Vantage](/tools/abbyy-vantage/): enterprise IDP with broader document automation and governance.
+- [Nanonets](/tools/nanonets/): more pragmatic for trainable extraction and operational workflows.
+- [Mindee](/tools/mindee/): a more API-oriented approach for defined document types.
+- [Veryfi](/tools/veryfi/): interesting for receipts, invoices, and financial documents.
+- [Google Document AI](/tools/google-document-ai/): cloud alternative for Google-centered document processes.
+- [Docparser](/tools/docparser/): lighter when rule-based extraction is enough.
 
 ## Related Guides
 

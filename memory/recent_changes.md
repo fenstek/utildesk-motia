@@ -1,5 +1,14 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-09_
+_Last updated: 2026-06-10_
+
+## 2026-06-10 - Inventory list repair, alternatives links and Sheet cleanup
+
+- Repaired the desktop `/tools/` inventory register so wide rows no longer clip the right-side category/price columns; local browser QA covered 1365px, 1180px, and 390px with no horizontal overflow.
+- Added manual DE/EN internal alternatives to 17 tool cards across scheduling, workflow/queue, OCR/document AI, speech, screen capture, and code-search clusters.
+- Marked the same 17 Google Sheet source rows with `alternatives_added=2026-06-10:manual_internal_links` so the source of truth records the manual linking pass.
+- Cleaned 12 unpublished Sheet candidates from `NEW`/`NEEDS_REVIEW` into `NEEDS_REVIEW`, `DUPLICATE`, or `BLACKLIST` for wrong URLs, comparison phrases, duplicate products, concepts, or broad social-network noise.
+- Verified the paused publishing pipeline state: autopublish, Sheet generation, alternatives seed, and NEEDS_REVIEW rebuild are intentionally paused since 2026-05-18; audits and Umami popularity sync remain active.
+- Re-ran the `NEW` dry-run quality gate after cleanup; all 77 remaining `NEW` candidates passed without duplicate or false-tool moves.
 
 ## 2026-06-09 - Agentic commerce Ratgeber publication
 

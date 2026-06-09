@@ -9840,6 +9840,70 @@ html[data-design="decision"] .rg-head .inv-head-deck {
   }
 }
 
+/* Inventory desktop repair: keep the register rows inside the content column.
+   The right-side metadata used to inherit a too-wide six-column grid and got
+   clipped by the row overflow when the browser was zoomed or the viewport sat
+   just below the full newspaper width. */
+@media (min-width: 861px) {
+  html[data-design="decision"] .inv-list-wrap {
+    grid-template-columns: minmax(180px, 220px) minmax(0, 1fr) !important;
+    overflow: visible !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+    overflow: visible !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .tool-header,
+  html[data-design="decision"] .inv-register.inv-view-register .tool-info,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-verdict,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-tags {
+    overflow: visible !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-meta {
+    row-gap: 5px !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-open {
+    display: none !important;
+  }
+
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-cat,
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row-price {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    line-height: 1.25 !important;
+  }
+}
+
+@media (min-width: 1181px) {
+  html[data-design="decision"] .inv-register.inv-view-register .inv-row {
+    grid-template-columns:
+      56px
+      minmax(230px, 1.55fr)
+      minmax(92px, .38fr)
+      minmax(150px, .72fr)
+      minmax(120px, .48fr) !important;
+    column-gap: clamp(10px, 1vw, 16px) !important;
+  }
+}
+
 /* Whole-site mobile hardening: phones use a reading-app/catalog rhythm rather
    than a squeezed desktop newspaper register. */
 @media (max-width: 760px) {

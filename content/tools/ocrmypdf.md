@@ -100,7 +100,14 @@ Preismodell: **Open Source**. Für OCRmyPDF zählt im Vergleich nicht nur der Ei
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu OCRmyPDF kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+OCRmyPDF ist eine gute lokale Pipeline, aber nicht fuer jeden Dokumentprozess die beste Oberflaeche. Diese Alternativen setzen andere Schwerpunkte:
+
+- [Tesseract OCR](/tools/tesseract-ocr/): der klassische OCR-Baustein, wenn Teams die Pipeline selbst bauen wollen.
+- [PaddleOCR](/tools/paddleocr/): Open-Source-Toolkit fuer komplexere OCR- und Layout-Szenarien.
+- [Mistral OCR](/tools/mistral-ocr/): API-naehere Alternative fuer moderne OCR-Flows und strukturierte Extraktion.
+- [AWS Textract](/tools/aws-textract/): Cloud-Weg fuer AWS-zentrierte Dokumentverarbeitung.
+- [Google Document AI](/tools/google-document-ai/): Cloud-Alternative fuer Google-Prozessoren und Dokumentworkflows.
+- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): Microsoft-nahe Cloud-Option mit Formular- und Tabellenextraktion.
 
 ## Passende Ratgeber
 

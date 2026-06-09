@@ -78,11 +78,11 @@ For budget planning, Sourcegraph should not be judged only by list price. More i
 
 ## Alternatives to Sourcegraph
 
-- **GitHub Code Search:** Integrated code search directly in GitHub with basic search and navigation functions.
-- **Kite:** AI-based code completion and analysis, primarily tailored to individual developers.
-- **OpenGrok:** Open-source code search and indexing tool, used mainly for large codebases.
-- **Codota:** AI-assisted code completion and analysis for various IDEs.
-- **Krugle:** A developer search engine that enables extensive code research.
+- [GitHub Copilot](/tools/github-copilot/): stronger for AI-assisted code suggestions directly in the editor.
+- [Cursor](/tools/cursor/): useful when code context, chat, and editing should live in one IDE.
+- [Tabnine](/tools/tabnine/): more focused on code completion and team or enterprise control.
+- [Continue](/tools/continue/): open-source route for custom LLM-assisted coding workflows in IDEs.
+- [OpenAI Codex](/tools/openai-codex/): more relevant when agentic coding tasks matter more than pure code search.
 
 When choosing alternatives, it is worth comparing them against the specific bottleneck. If code search, navigation, and context across large repositories are the focus, different criteria matter than in a general tool comparison: data control, learning curve, integrations, and the quality of results in your own material.
 

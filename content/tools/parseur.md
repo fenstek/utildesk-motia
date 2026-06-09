@@ -100,7 +100,14 @@ Preismodell: **Abonnement**. Für Parseur zählt im Vergleich nicht nur der Eins
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu Parseur kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+Parseur passt gut fuer wiederkehrende Eingangsformate. Wenn Volumen, Review oder API-Tiefe wichtiger werden, sollten diese Alternativen danebenliegen:
+
+- [Docparser](/tools/docparser/): sehr naher Vergleich fuer regelbasierte Dokument- und PDF-Extraktion.
+- [Nanonets](/tools/nanonets/): staerker fuer trainierbare Modelle und operative Extraktionsworkflows.
+- [Rossum](/tools/rossum/): Enterprise-IDP mit mehr Fachreview und Ausnahmebehandlung.
+- [Mindee](/tools/mindee/): API-orientierter Ansatz fuer klar umrissene Dokumenttypen.
+- [ABBYY Vantage](/tools/abbyy-vantage/): groessere Plattform fuer Dokumentautomatisierung mit Governance.
+- [AWS Textract](/tools/aws-textract/): Cloud-Service, wenn die Extraktion direkt in AWS-Prozesse laufen soll.
 
 ## Passende Ratgeber
 

@@ -91,11 +91,11 @@ Neben dem Listenpreis sollte bei Speechify auch der Einführungsaufwand berücks
 
 ## Alternativen zu Speechify
 
-- **NaturalReader:** Bietet ebenfalls Text-zu-Sprache-Funktionen mit vielfältigen Stimmen und einem kostenlosen Einstieg.
-- **Read Aloud:** Browser-Erweiterung, die Webseiten und Dokumente vorliest, ideal für den schnellen Zugriff.
-- **Voice Dream Reader:** Mobile App mit umfangreichen Vorleseoptionen, besonders beliebt bei iOS-Nutzern.
-- **Kurzweil 3000:** Speziell für Menschen mit Lernschwierigkeiten entwickelt, mit erweiterten Lernhilfen.
-- **Balabolka:** Kostenlose Windows-Software mit vielen Anpassungsmöglichkeiten für Text-zu-Sprache.
+- [ElevenLabs](/tools/elevenlabs/): stärker für hochwertige Stimmen, Voice-Cloning-nahe Workflows und Creator-Audio.
+- [Google Cloud Text-to-Speech](/tools/google-cloud-text-to-speech/): Cloud-Alternative für skalierbare Sprachsynthese und Entwickler-Workflows.
+- [Murf](/tools/murf/): gut für Marketing-, E-Learning- und Voiceover-Workflows mit Teamfreigabe.
+- [Amazon Polly](/tools/amazon-polly/): API-nahe Cloud-Alternative für skalierbare TTS-Anwendungen.
+- [Microsoft Azure Speech Service](/tools/microsoft-azure-speech-service/): sinnvoll, wenn Azure, Speech APIs und Unternehmensintegration wichtig sind.
 
 Beim Vergleich lohnt es sich, Speechify nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch Audio-, Voice-, Podcast- und Video-Produktionswerkzeuge die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
 
