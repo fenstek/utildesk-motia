@@ -12,7 +12,7 @@ tags: ["writing"]
 official_url: "https://translate.google.com"
 created_at: 2026-02-11
 updated_at: 2026-05-21
-popularity: 44
+popularity: 0
 tier: C
 generated_at: 2026-05-27
 ---

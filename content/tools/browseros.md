@@ -2,16 +2,16 @@
 slug: browseros
 title: BrowserOS
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
-editorial_verdict: "caution"
-category: "Produktivität"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-rising-ai-tools-expanded
+editorial_verdict: caution
+category: Produktivität
+price_model: Open Source
 tags: [browser, ai-agents, automation, privacy]
 official_url: "https://www.browseros.ai/"
-popularity: 0
+popularity: 61
 tier: B
 generated_at: 2026-05-31
 ---
