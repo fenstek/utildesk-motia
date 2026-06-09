@@ -8541,9 +8541,38 @@ html[data-design="decision"] .sheet-head-h1 {
   letter-spacing: -0.028em !important;
 }
 
+html[data-design="decision"] .rg-head .inv-head-h1 {
+  max-width: none !important;
+  font-size: clamp(42px, 4.6vw, 58px) !important;
+  line-height: 1.03 !important;
+  letter-spacing: -0.026em !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+}
+
+html[data-design="decision"] .rg-head .inv-head-deck {
+  max-width: 760px !important;
+}
+
 @media (max-width: 1100px) {
   html[data-design="decision"] .ds-front-main h2 {
     font-size: clamp(36px, 7.4vw, 50px) !important;
+  }
+
+  html[data-design="decision"] .rg-head {
+    grid-template-columns: 1fr !important;
+    align-items: start !important;
+    gap: 24px !important;
+  }
+
+  html[data-design="decision"] .rg-head .inv-head-h1 {
+    font-size: clamp(38px, 5.4vw, 52px) !important;
+  }
+
+  html[data-design="decision"] .rg-head .inv-head-stats {
+    max-width: 760px !important;
   }
 }
 
@@ -8554,6 +8583,11 @@ html[data-design="decision"] .sheet-head-h1 {
 
   html[data-design="decision"] .sheet-head-h1 {
     font-size: clamp(30px, 8.4vw, 40px) !important;
+  }
+
+  html[data-design="decision"] .rg-head .inv-head-h1 {
+    font-size: clamp(28px, 7.6vw, 34px) !important;
+    line-height: 1.08 !important;
   }
 }
 
