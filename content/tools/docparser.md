@@ -100,7 +100,14 @@ Preismodell: **Abonnement**. Für Docparser zählt im Vergleich nicht nur der Ei
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu Docparser kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+Docparser ist vor allem dann interessant, wenn Regeln und wiederkehrende Layouts reichen. Fuer andere Dokumentfluesse sind diese Vergleiche sinnvoll:
+
+- [Parseur](/tools/parseur/): aehnlicher No-Code-Parser, oft fuer E-Mail- und Dokumenteingang verglichen.
+- [Nanonets](/tools/nanonets/): staerker, wenn Modelle trainiert und operative Extraktionsprozesse aufgebaut werden sollen.
+- [Rossum](/tools/rossum/): mehr Enterprise-IDP, Review-Queue und Fachprozess-Fokus.
+- [Mindee](/tools/mindee/): API-naehere Alternative fuer klar definierte Dokumenttypen.
+- [ABBYY Vantage](/tools/abbyy-vantage/): groessere Plattform fuer kontrollierte Dokumentautomatisierung.
+- [Google Document AI](/tools/google-document-ai/): Cloud-Alternative fuer strukturierte Extraktion in Google-Workflows.
 
 ## Passende Ratgeber
 

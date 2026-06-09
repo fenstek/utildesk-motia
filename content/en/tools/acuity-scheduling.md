@@ -92,11 +92,11 @@ A fair cost check for Acuity Scheduling should include number of users, storage,
 
 ## Alternatives to Acuity Scheduling
 
-- **Calendly:** Another popular tool for automated scheduling with a focus on ease of use and integrations.
-- **Setmore:** Offers scheduling, plus features for staff management and customer communication.
-- **SimplyBook.me:** Comprehensive booking solution with many customization options and marketing tools.
-- **Bookafy:** Flexible scheduling with a focus on automation and payment integration.
-- **10to8:** Scheduling software with strong customer communication and reduction of no-shows.
+- [Calendly](/tools/calendly/): leaner for scheduling links, simple calendar rules, and quick coordination with external contacts.
+- [Setmore](/tools/setmore/): offers scheduling plus staff management and customer communication features.
+- [SimplyBook.me](/tools/simplybook-me/): broader booking solution with many customization options and marketing tools.
+- [Bookafy](/tools/bookafy/): flexible scheduling with a focus on automation and payment integration.
+- [10to8](/tools/10to8/): useful when customer communication, reminders, and no-show reduction matter more.
 
 Alternatives to Acuity Scheduling should be chosen by the concrete work problem. In some cases, productivity, calendar, project, documentation, and collaboration tools are better because they create fewer detours in the existing workflow.
 

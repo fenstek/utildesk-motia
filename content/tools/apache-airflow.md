@@ -79,11 +79,11 @@ Für die Budgetplanung sollte Apache Airflow nicht nur nach Listenpreis bewertet
 
 ## Alternativen zu Apache Airflow
 
-- **Luigi:** Open-Source-Workflow-Management-Tool von Spotify, spezialisiert auf Batch-Workflows.
-- **Prefect:** Modernes Workflow-Orchestrierungstool mit Fokus auf einfache Bedienung und Cloud-Integration.
-- **Dagster:** Open-Source-Plattform für Datenpipelines mit starker Betonung auf Testing und Modularität.
-- **Kubernetes CronJobs:** Für einfache zeitgesteuerte Aufgaben direkt im Kubernetes-Cluster.
-- **Argo Workflows:** Kubernetes-native Workflow-Engine, geeignet für containerisierte Anwendungen.
+- [Apache NiFi](/tools/apache-nifi/): stärker für visuelle Datenflüsse, Routing und Integrationen ohne reinen DAG-Code.
+- [n8n](/tools/n8n/): einfacher für API-Workflows, Automatisierung und fachteamnahe Prozesse.
+- [Pipedream](/tools/pipedream/): gut für entwicklernahe Event- und API-Automation mit wenig Infrastruktur.
+- [Make ehemals Integromat](/tools/make-ehemals-integromat/): visuelle Automatisierung für SaaS-Prozesse statt Python-DAGs.
+- [Apache Spark](/tools/apache-spark/): relevanter, wenn Batch- und Datenverarbeitung selbst im Mittelpunkt stehen.
 
 Bei der Auswahl der Alternativen lohnt sich ein Vergleich entlang des konkreten Engpasses. Wenn Workflow-Orchestrierung für Datenpipelines als Code im Mittelpunkt stehen, zählen andere Kriterien als bei einem allgemeinen Toolvergleich: Datenkontrolle, Lernkurve, Integrationen und die Qualität der Ergebnisse im eigenen Material.
 

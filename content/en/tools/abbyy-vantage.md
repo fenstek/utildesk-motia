@@ -103,7 +103,14 @@ Pricing model: **Custom quote**. For ABBYY Vantage, the real comparison should i
 
 ## Alternatives in the Utildesk Context
 
-Depending on the problem, alternatives to ABBYY Vantage may come from different tool classes: OCR APIs such as Mindee, Klippa, or Veryfi, cloud services such as AWS Textract, Google Document AI, or Azure AI Document Intelligence, enterprise IDP such as ABBYY Vantage and Rossum, no-code parsers such as Docparser or Parseur, and local open-source pipelines with Tesseract OCR, OCRmyPDF, or PaddleOCR.
+ABBYY Vantage should be compared with alternatives that cover a similar document workflow but use a different operating model:
+
+- [AWS Textract](/tools/aws-textract/): cloud OCR with strong AWS integration and usage-based billing.
+- [Google Document AI](/tools/google-document-ai/): a good fit for Google Cloud workflows, processors, and structured document extraction.
+- [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/): the obvious comparison when Microsoft Cloud, Azure governance, and form-recognition workflows are already in place.
+- [Rossum](/tools/rossum/): more focused on invoices, review queues, and business-facing IDP processes.
+- [Docparser](/tools/docparser/): lighter for rule-based extraction from recurring document layouts.
+- [OCRmyPDF](/tools/ocrmypdf/): an open-source route for local PDF OCR when control matters more than a finished enterprise UI.
 
 ## Related Guides
 

@@ -100,7 +100,14 @@ Preismodell: **Je nach Plan**. Für Nanonets zählt im Vergleich nicht nur der E
 
 ## Alternativen im Utildesk-Kontext
 
-Als Alternative zu Nanonets kommen je nach Problemklasse andere Ansätze infrage: OCR-APIs wie Mindee, Klippa oder Veryfi, Cloud-Dienste wie AWS Textract, Google Document AI oder Azure AI Document Intelligence, Enterprise-IDP wie ABBYY Vantage und Rossum, No-Code-Parser wie Docparser oder Parseur sowie lokale Open-Source-Pipelines mit Tesseract OCR, OCRmyPDF oder PaddleOCR.
+Nanonets liegt zwischen API-naher Extraktion und operativer Dokumentautomatisierung. Fuer die Auswahl sind diese Vergleiche am hilfreichsten:
+
+- [Rossum](/tools/rossum/): staerkerer Enterprise-IDP-Fokus mit Review-Queue und Fachprozess.
+- [Mindee](/tools/mindee/): API-naeher, wenn klar definierte Dokumenttypen im Mittelpunkt stehen.
+- [Veryfi](/tools/veryfi/): spezialisiert auf Belege, Rechnungen und Finanzdokumente.
+- [ABBYY Vantage](/tools/abbyy-vantage/): groessere Plattform fuer Governance und kontrollierte Dokumentautomatisierung.
+- [Google Document AI](/tools/google-document-ai/): Cloud-Alternative fuer Google-zentrierte Workflows.
+- [Docparser](/tools/docparser/): schlanker, wenn regelbasierte Extraktion aus festen Layouts reicht.
 
 ## Passende Ratgeber
 

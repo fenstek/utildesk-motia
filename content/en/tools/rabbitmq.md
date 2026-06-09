@@ -68,11 +68,11 @@ RabbitMQ is open source and can be used free of charge. For companies that deplo
 
 ## Alternatives to RabbitMQ
 
-- **Apache Kafka** – A distributed streaming platform, especially suited for high throughput and event streaming.
-- **ActiveMQ** – Another open-source message broker with a focus on JMS and enterprise applications.
-- **Redis Streams** – Messaging functionality within the Redis in-memory data store, suitable for simple scenarios.
-- **Amazon SQS** – AWS's cloud-based messaging service with high scalability and easy integration.
-- **NATS** – A lightweight, cloud-native messaging system focused on performance and simplicity.
+- [Apache Kafka](/tools/apache-kafka/): better for event streaming, log-based processing, and high throughput.
+- [NATS](/tools/nats/): lighter broker for cloud-native systems, low latency, and simple topologies.
+- [Redpanda](/tools/redpanda/): Kafka-compatible streaming alternative with an emphasis on simpler operations.
+- [Confluent Platform](/tools/confluent-platform/): enterprise Kafka ecosystem with governance, connectors, and managed options.
+- [Redis](/tools/redis/): useful when simple streams, cache, and data-structure features should stay close together.
 
 ## What really matters in daily use
 

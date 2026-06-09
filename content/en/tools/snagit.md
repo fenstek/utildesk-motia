@@ -62,11 +62,11 @@ Snagit's pricing structure varies depending on the provider and license type. Ty
 
 ## Alternatives to Snagit
 
-- **Greenshot**: Open-source screenshot tool with basic editing features, ideal for simple use cases.
-- **ShareX**: Free tool for screen capture and automation with extensive export options.
-- **Lightshot**: Simple and fast tool for creating and sharing screenshots, especially suitable for quick notes.
-- **Camtasia**: Professional screen recording and video editing tool aimed at users with more advanced requirements.
-- **PicPick**: All-in-one tool for screenshots, image editing, and color picking, suitable for beginners and professionals alike.
+- [Camtasia](/tools/camtasia/): better when screen recordings should become real training or product videos.
+- [OBS Studio](/tools/obs-studio/): open-source option for recording, streaming, and more complex scenes.
+- [Loom](/tools/loom/): stronger for quick screen videos, async communication, and team feedback.
+- [Clipchamp](/tools/clipchamp/): simpler for lightweight video editing and Microsoft-adjacent workflows.
+- [Descript](/tools/descript/): interesting when screen or audio content should be edited through text.
 
 ## What really matters in daily use
 
