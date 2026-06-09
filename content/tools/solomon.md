@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: [education, assistant, productivity, ai]
 official_url: "https://usesolomon.ai/"
-popularity: 15
+popularity: 18
 tier: C
 generated_at: 2026-05-28
 ---

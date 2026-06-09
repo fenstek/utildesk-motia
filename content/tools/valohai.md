@@ -2,17 +2,17 @@
 slug: valohai
 title: Valohai
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Je nach Plan
 tags: [mlops,machine-learning,cloud,developer-tools]
 official_url: "https://valohai.com/"
-popularity: 7
-tier: "C"
-generated_at: "2026-05-27"
+popularity: 8
+tier: C
+generated_at: 2026-05-27
 ---
 # Valohai
 
