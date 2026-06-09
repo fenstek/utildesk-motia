@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-09_
 
+## 2026-06-09 - Persistent AI memory Ratgeber publication
+
+- Manually edited and fact-checked NotebookLM article draft artifact `6636ea6e-cae3-4064-8258-19e947415999` into a bilingual Ratgeber release: `persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen`.
+- Published the German and English articles with internal links to ChatGPT, Claude, Gemini, NotebookLM, Mem0, LangGraph, Hermes Agent, OpenClaw, and the open-source AI agents comparison guide.
+- Removed unsupported NotebookLM draft numbers/claims and kept the factual framing tied to official OpenAI, Anthropic, Google, LangGraph, Mem0, Letta, Zep, Microsoft Research, and arXiv sources.
+- Generated two final story-forward imagegen illustrations and saved only compressed WebP assets under `content/images/ratgeber/`.
+- Validation covered `npm run check:editorial`, `npm run check:tools:en`, full `npm --prefix site run build`, dist page checks, and sitemap membership for both DE/EN article URLs.
+
 ## 2026-06-09 - NotebookLM topic seeds on OptiPlex
 
 - Created six fresh Ratgeber research notebooks in NotebookLM on the physical OptiPlex contour `jgdus@100.98.97.98`, using `/home/jgdus/projects/agent-newsman` and `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`, not the `opcl` contour.
