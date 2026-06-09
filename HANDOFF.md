@@ -35,6 +35,14 @@
   - `9fc09658-de2c-4c56-bfb9-df96e7a80304` - `Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano`
   - `25d1c2c6-2917-4c62-ac46-c5c0af3aaa68` - `KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly`
   - `8f0b7588-7559-4972-baf0-93bef0fe6633` - `Persistente KI-Memory 2026: Kontext zwischen Sessions, Projekten und Modellen`
+- On the same day, full NotebookLM article drafts were generated in the same notebooks. Each notebook now has a completed `Artikelentwurf:` report artifact plus the earlier `Research-Briefing:`.
+- Article draft artifacts:
+  - `79d70969-3cb8-46fe-9bc8-e8a0b7878322` - `Artikelentwurf: KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase`
+  - `59e4a74a-d7c6-4f5b-a1fa-793a77bfc9b9` - `Artikelentwurf: Vom Coding-Agent zum Arbeitsagenten: Codex, Claude Code und Antigravity`
+  - `e7b82b8b-7e08-45bc-9718-0d1bcee615c8` - `Artikelentwurf: Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart`
+  - `47d6acd1-f3e5-4e44-ad3a-2c91144ded73` - `Artikelentwurf: Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano`
+  - `30b166cc-5fa1-4ac4-a51c-56505dd9f745` - `Artikelentwurf: KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly`
+  - `6636ea6e-cae3-4064-8258-19e947415999` - `Artikelentwurf: Persistente KI-Memory 2026: Kontext zwischen Sessions, Projekten und Modellen`
 
 ## 2026-05-15 Umami v3.1.0 operations handoff
 
