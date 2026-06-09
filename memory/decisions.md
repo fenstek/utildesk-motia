@@ -164,3 +164,10 @@
 - Do not create notebooks, upload sources, run NotebookLM article jobs, or refresh NotebookLM browser storage under any other Google account.
 - If NotebookLM auth is expired, ambiguous, or points to a different account, stop before running the article pipeline and refresh/login explicitly as `vasjakotov11@gmail.com`.
 - For the physical GUI OptiPlex path, NotebookLM operations run on `jgdus@jgdus-OptiPlex-3000` (`jgdus@100.98.97.98`) in `/home/jgdus/projects/agent-newsman` with `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`; do not confuse this with the headless `opcl@ubuntu-opcl` path `/opt/openclaw/workspace/agent-newsman`.
+
+## 2026-06-09 - NotebookLM-first Ratgeber editing rule
+
+- When the user names a specific NotebookLM article artifact for a Ratgeber publication, that artifact is the editorial starting point.
+- Do not replace the NotebookLM draft with a self-written article and then "merge in" the draft later. The correct order is: retrieve the NotebookLM draft, human-edit it, fact-check it against primary/current sources, add internal links, create or approve final WebP illustrations, then publish.
+- If the NotebookLM draft is temporarily inaccessible because SSH/Tailscale/NotebookLM auth is blocked, stop the publication/import step and surface the access blocker. Independent research may be used only as fact-check notes, not as a substitute article.
+- If any provisional self-written markdown was created before the NotebookLM draft was retrieved, delete it before continuing so the final diff remains NotebookLM-first.
