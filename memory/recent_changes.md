@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-09_
 
+## 2026-06-09 - Agentic commerce Ratgeber publication
+
+- Retrieved NotebookLM article draft artifact `e7b82b8b-7e08-45bc-9718-0d1bcee615c8` from the physical OptiPlex contour after Tailscale SSH re-authorization and used it as the editorial starting point.
+- Manually edited and fact-checked the draft into a bilingual Ratgeber release: `agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart`.
+- Removed or softened unsupported NotebookLM draft claims around unverified model/version names, regional rollout specifics, and overly broad autonomous-checkout assertions.
+- Kept the factual framing tied to OpenAI/Stripe ACP, UCP, Google AP2, and Shopware Agentic Commerce/Agentic Product Feed/PayPal StoreSync/Copilot Data Assist sources.
+- Generated two business-oriented, non-fairytale imagegen illustrations and saved only compressed WebP assets under `content/images/ratgeber/`.
+
 ## 2026-06-09 - Persistent AI memory Ratgeber publication
 
 - Manually edited and fact-checked NotebookLM article draft artifact `6636ea6e-cae3-4064-8258-19e947415999` into a bilingual Ratgeber release: `persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen`.
