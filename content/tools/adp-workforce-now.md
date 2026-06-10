@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: 
 tags: [payroll, hr, hcm]
 official_url: "https://www.adp.com/what-we-offer/products/adp-workforce-now.aspx"
-popularity: 78
+popularity: 80
 tier: C
 generated_at: 2026-05-28
 ---

@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [mlops,machine-learning,cloud,developer-tools]
 official_url: "https://valohai.com/"
-popularity: 8
+popularity: 7
 tier: C
 generated_at: 2026-05-27
 ---

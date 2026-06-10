@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["chatbot", "writing"]
 official_url: "https://www.anthropic.com/"
 created_at: 2026-02-12
-popularity: 69
+popularity: 0
 tier: A
 lastReviewed: 2026-05-27
 mentionedIn: ["browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis"]

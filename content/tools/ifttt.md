@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["design"]
 official_url: "https://ifttt.com"
 created_at: 2026-02-13
-popularity: 41
+popularity: 46
 tier: C
 generated_at: 2026-05-27
 ---

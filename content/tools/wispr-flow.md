@@ -2,10 +2,10 @@
 slug: wispr-flow
 title: Wispr Flow
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Audio & Video
 price_model: Freemium
 tags: [ai, audio, voice, dictation, speech, productivity, writing]
@@ -16,7 +16,7 @@ tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-04-25
-popularity: 4
+popularity: 0
 ---
 # Wispr Flow
 

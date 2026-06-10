@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Abonnement
 tags: [scheduling,appointments,booking]
 official_url: "https://acuityscheduling.com/"
-popularity: 83
+popularity: 85
 tier: D
 generated_at: 2026-05-10
 ---

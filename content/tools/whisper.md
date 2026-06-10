@@ -14,7 +14,7 @@ affiliate_url: "https://openai.com/research/whisper"
 tier: C
 generated_at: 2026-05-18
 created_at: 2026-02-07
-popularity: 5
+popularity: 0
 ---
 # Whisper
 

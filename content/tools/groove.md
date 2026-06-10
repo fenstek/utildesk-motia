@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Abonnement
 tags: [helpdesk, support, productivity]
 official_url: "https://www.groovehq.com/"
-popularity: 44
+popularity: 48
 tier: C
 generated_at: 2026-05-27
 ---

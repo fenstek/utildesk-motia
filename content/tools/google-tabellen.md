@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: ["spreadsheet", "data", "productivity"]
 official_url: "https://workspace.google.com/products/sheets/"
-popularity: 46
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 ---
