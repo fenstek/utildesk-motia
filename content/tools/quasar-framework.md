@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [developer-tools, web, mobile, open-source]
 official_url: "https://quasar.dev/"
-popularity: 23
+popularity: 25
 tier: D
 generated_at: 2026-05-27
 ---

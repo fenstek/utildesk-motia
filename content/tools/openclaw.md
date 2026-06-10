@@ -10,7 +10,7 @@ category: AI Agents
 price_model: 
 tags: ["automation"]
 official_url: "https://openclaw.ai/"
-popularity: 26
+popularity: 0
 tier: A
 lastReviewed: 2026-05-27
 mentionedIn: ["multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein"]
