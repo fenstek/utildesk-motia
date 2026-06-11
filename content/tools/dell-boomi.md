@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Abonnement
 tags: [integration, automation, data, api]
 official_url: "https://boomi.com/"
-popularity: 56
+popularity: 58
 tier: D
 generated_at: 2026-05-27
 ---

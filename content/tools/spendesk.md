@@ -10,7 +10,7 @@ category: AI Image
 price_model: Abonnement
 tags: [expense-management, finance, productivity, business]
 official_url: "https://www.spendesk.com/"
-popularity: 16
+popularity: 18
 tier: C
 generated_at: 2026-05-28
 ---

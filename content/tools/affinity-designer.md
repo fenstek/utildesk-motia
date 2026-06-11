@@ -11,7 +11,7 @@ price_model: Freemium
 tags: [ai, design]
 official_url: "https://www.affinity.studio/de_de/graphic-design-software"
 created_at: 2026-02-12
-popularity: 79
+popularity: 77
 tier: C
 generated_at: 2026-05-28
 ---

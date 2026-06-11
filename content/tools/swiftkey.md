@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [keyboard, mobile, productivity]
 official_url: "https://www.microsoft.com/en-us/swiftkey"
-popularity: 13
+popularity: 15
 tier: C
 generated_at: 2026-05-27
 ---

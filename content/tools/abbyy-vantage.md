@@ -12,7 +12,7 @@ tags:
 official_url: "https://www.abbyy.com/vantage/"
 description: ABBYY Vantage ist eine Enterprise-Plattform für intelligente Dokumentenverarbeitung, bei der OCR, Klassifikation, Extraktion und menschliche Prüfung zusammenspielen.
 created_at: 2026-05-10
-popularity: 87
+popularity: 86
 tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "ki-tools-eu-datenverarbeitung-kleine-unternehmen"]

@@ -10,7 +10,7 @@ category: AI Image
 price_model: Abonnement, Je nach Plan
 tags: [presentations, productivity, microsoft-365]
 official_url: "https://www.microsoft.com/de-de/microsoft-365/powerpoint"
-popularity: 36
+popularity: 38
 tier: C
 generated_at: 2026-05-28
 ---

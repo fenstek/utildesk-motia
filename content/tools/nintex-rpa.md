@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [automation, rpa, workflow, enterprise]
 official_url: "https://www.nintex.com/platforms/cloud-automation/rpa/"
-popularity: 30
+popularity: 33
 tier: C
 generated_at: 2026-05-27
 ---
