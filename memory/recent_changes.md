@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-11_
 
+## 2026-06-11 - Corrective body-level tool-card editorial pass
+
+- Corrected the selection logic after the second hype refresh: formal `editorial_reviewed` metadata is no longer sufficient to prove a card has real manual prose, because older completion passes left some bodies thin or template-like.
+- Rewrote 20 weak DE/EN tool cards selected by rendered-body evidence, not by the registry alone: `10to8`, `acapela-group`, `microsoft-azure-api-management`, `activecampaign`, `acuity-scheduling`, `adp-workforce-now`, `agorapulse`, `ahrefs-content-explorer`, `alitu`, `animoto`, `crisp`, `crowdstrike-falcon`, `deepl-api`, `dell-boomi`, `flyr`, `google-chat`, `microsoft-defender-for-endpoint`, `quasar-framework`, `workato`, and `zeplin`.
+- Each selected card now has full human DE/EN sections for audience fit, typical use cases, daily workflow judgement, workflow fit, privacy/data notes, costs, internal alternatives, editorial assessment, and FAQ.
+- Registered the corrective batch as `2026-06-11-unedited-tool-card-human-pass-1`; future "unedited" selections should use body-level checks and explicitly skip recency-refresh/hype-polish batches.
+
 ## 2026-06-11 - Second hype tool-card polish wave
 
 - Selected the next 20 strategically hot cards after the browser-agent/framework wave: Lovable, Bolt.new, Manus, Devin, OpenHands, v0, CrewAI, OpenAI Codex, Google AI Studio, Gumloop, Sora, Kling AI, Suno AI, Adobe Firefly, Replicate, DeepSeek, Grok, Mistral, Jan, and LM Studio.
