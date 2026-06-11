@@ -1,11 +1,12 @@
 ---
 slug: klippa
 title: Klippa
+updated_at: 2026-06-12
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-12
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Automatisierung
 price_model: Je nach Plan
 tags: 
@@ -120,3 +121,21 @@ Bei Klippa hängt das vom Zielbild ab: einfache Tests sind schneller möglich, e
 
 **Worauf sollte man beim Datenschutz achten?**
 Vor dem Einsatz von Klippa sollten AVV/DPA, Datenstandort, Aufbewahrungsfristen, Subprozessoren, Löschoptionen und eine mögliche Nutzung von Kundendaten für Training geprüft werden.
+
+## Ratgeber-Cluster-Update Juni 2026
+
+Klippa gehoert im OCR-Cluster zu den Werkzeugen fuer Belege, Rechnungen und strukturierte Dokumentdaten statt zu allgemeinen PDF-Tools.
+
+Der sinnvolle Test ist ein realer Belegfluss: Eingang, Klassifikation, Felder, Validierung, Export in Buchhaltung oder ERP und Fehlerpruefung.
+
+### Wann Klippa gut passt
+
+Klippa ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt ist und nicht nur ein Tool-Name gesucht wird. Fuer unsere Ratgeber-Cluster zaehlt deshalb: Welche Aufgabe wird vorbereitet, welche Daten werden verarbeitet, wer prueft das Ergebnis und welche Alternative ist im selben Arbeitskontext realistischer?
+
+### Grenzen und Pruefpunkte
+
+Bei Klippa zaehlen nicht nur Trefferquoten. Teams muessen Klaerfaelle, Datenschutz, EU-Verarbeitung, Integrationen und manuelle Pruefschritte bewerten.
+
+### Interne Vergleichspunkte
+
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [Rossum](/tools/rossum/), [Veryfi](/tools/veryfi/), [Mindee](/tools/mindee/), [Azure AI Document Intelligence](/tools/azure-ai-document-intelligence/). Diese Links helfen, Klippa nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.

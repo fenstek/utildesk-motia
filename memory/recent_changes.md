@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-11_
+_Last updated: 2026-06-12_
+
+## 2026-06-12 - Ratgeber-linked tool-card gap pass and public GitHub mentions
+
+- Audited all Ratgeber/internal-cluster `/tools/` references at body level instead of trusting legacy `editorial_reviewed` metadata alone; the pass found 81 unique internally linked tool slugs, 38 weak cards, and 2 external source-link false positives that were not Utildesk tool pages.
+- Manually strengthened the 38 weak DE/EN tool cards with cluster-specific editorial sections, workflow fit, risk checks, internal alternatives, FAQ coverage where missing, refreshed lastmod metadata, and batch marker `2026-06-12-ratgeber-linked-tool-gap-pass`.
+- Updated the editorial registry and `site/src/data/content-lastmod.json`; validation passed with `npm run check:editorial`, `node scripts/check_english_tool_translations.mjs`, `npm run check:tool-quality`, and `npm --prefix site run build`.
+- Added relevant Utildesk mentions/backlinks only to public GitHub repositories where the context fit: `fenstek/opcl` -> OpenClaw card and open-source agents comparison, `fenstek/obsidian-llm-wiki-local` -> persistent AI memory guide, and `fenstek/claude-code-starter` -> coding agents guide plus Claude/Codex cards.
 
 ## 2026-06-11 - KI-Browser NotebookLM Ratgeber publication
 

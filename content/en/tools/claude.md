@@ -2,10 +2,10 @@
 slug: claude
 title: Claude
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -15,7 +15,7 @@ tags:
 official_url: "https://claude.ai/"
 affiliate_url: "https://claude.ai/"
 created_at: 2026-02-08T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: 2026-06-12
 popularity: 76
 source_language: de
 translation: full
@@ -99,3 +99,21 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+## Editorial cluster update June 2026
+
+Claude is a reference tool across the agent and coding clusters for long context, careful analysis and productive writing or development work.
+
+The practical comparison should not only measure model quality. The better question is whether Claude works for a team with project context, review boundaries, privacy rules and clear handoffs.
+
+### When Claude fits well
+
+Claude is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+For code, contracts and customer data, Claude remains an assistant, not an approval system. Good use separates drafting, analysis, review and the final decision.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Gemini](/en/tools/gemini/), [Perplexity](/en/tools/perplexity/), [OpenAI Codex](/en/tools/openai-codex/). These links keep Claude connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

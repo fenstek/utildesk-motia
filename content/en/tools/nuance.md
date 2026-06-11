@@ -1,11 +1,12 @@
 ---
 slug: nuance
 title: Nuance
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -139,3 +140,21 @@ Healthcare, customer service, legal, and financial services in particular use Nu
 
 **8. How is billing handled?**
 Billing is monthly or annually depending on the selected plan, and in some cases also through individual contracts with the provider.
+
+## Editorial cluster update June 2026
+
+Nuance represents professional dictation, speech recognition and vertical workflows in the speech cluster, especially in healthcare, legal and service contexts.
+
+The card matters because modern voice tools are not only young and AI-native. In regulated sectors, domain vocabulary, workflow integration and traceability often matter more than slick UX.
+
+### When Nuance fits well
+
+Nuance is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Before migrating away from Nuance, teams should test whether domain vocabulary, privacy, local requirements and correction workflows are truly covered.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Otter.ai](/en/tools/otter-ai/), [Whisper](/en/tools/whisper/), [Speechmatics](/en/tools/speechmatics/), [Microsoft Azure Speech to Text](/en/tools/microsoft-azure-speech-to-text/). These links keep Nuance connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

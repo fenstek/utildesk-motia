@@ -1,11 +1,12 @@
 ---
 slug: notebooklm
 title: NotebookLM
+updated_at: 2026-06-12
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-12
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Produktivität
 price_model: Freemium
 tags: [ai, research, notes]
@@ -92,3 +93,21 @@ NotebookLM lohnt sich, wenn man wiederholt mit denselben Quellen arbeitet: Semin
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Quellenqualität, Datenschutz, Freigabe interner Dokumente, Zitatprüfung und Exportwege. NotebookLM kann Material erklären, aber nicht garantieren, dass die ausgewählten Quellen vollständig oder objektiv sind.
+
+## Ratgeber-Cluster-Update Juni 2026
+
+NotebookLM ist im Memory- und Recherche-Cluster ein Werkzeug fuer quellengebundene Arbeit mit Dokumenten, Briefings und laengeren Themenraeumen.
+
+Der beste Einsatz ist nicht der schnelle Chat, sondern ein kuratierter Quellenraum: Dokumente sammeln, Fragen pruefen, Briefings erzeugen und danach menschlich redigieren.
+
+### Wann NotebookLM gut passt
+
+NotebookLM ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt ist und nicht nur ein Tool-Name gesucht wird. Fuer unsere Ratgeber-Cluster zaehlt deshalb: Welche Aufgabe wird vorbereitet, welche Daten werden verarbeitet, wer prueft das Ergebnis und welche Alternative ist im selben Arbeitskontext realistischer?
+
+### Grenzen und Pruefpunkte
+
+NotebookLM ersetzt keine Redaktion. Quellen koennen fehlen, Ausgaben koennen zu glatt klingen, und sensible Dokumente brauchen vor dem Upload klare Regeln.
+
+### Interne Vergleichspunkte
+
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [ChatGPT](/tools/chatgpt/), [Claude](/tools/claude/), [Gemini](/tools/gemini/), [Google Workspace](/tools/google-workspace/). Diese Links helfen, NotebookLM nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.

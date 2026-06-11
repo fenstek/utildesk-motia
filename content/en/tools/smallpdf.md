@@ -1,11 +1,12 @@
 ---
 slug: smallpdf
 title: Smallpdf
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -104,3 +105,21 @@ The number is limited and varies by feature. For unlimited use, an upgrade is re
 
 **8. Can I integrate Smallpdf with my cloud storage?**
 Yes, Smallpdf can be connected with services such as Google Drive and Dropbox to make access to documents easier.
+
+## Editorial cluster update June 2026
+
+Smallpdf is the convenient PDF utility kit for compression, conversion, merging and simple PDF editing.
+
+Smallpdf fits one-off tasks and non-critical documents. OCR, invoice data and high-volume processes need specialized tools or workflows.
+
+### When Smallpdf fits well
+
+Smallpdf is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Convenience must not hide privacy questions. Internal contracts, applications and customer documents should enter browser PDF tools only under clear rules.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [CloudConvert](/en/tools/cloudconvert/), [AnyConv](/en/tools/anyconv/), [Convertio](/en/tools/convertio/), [OCRmyPDF](/en/tools/ocrmypdf/). These links keep Smallpdf connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

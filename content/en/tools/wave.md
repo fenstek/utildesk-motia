@@ -1,11 +1,12 @@
 ---
 slug: wave
 title: Wave
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -130,3 +131,21 @@ Depending on the service, trial periods or free trial versions may be available.
 
 **8. How does automatic expense categorization work?**
 Wave uses AI to automatically analyze transactions and assign them to suitable categories, making accounting easier.
+
+## Editorial cluster update June 2026
+
+Wave is a lightweight accounting and invoicing option for small teams, freelancers and very simple finance workflows.
+
+Wave fits when cost needs to stay low and the process is not deeply embedded in European tax, ERP or approval logic.
+
+### When Wave fits well
+
+Wave is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Growing companies need integrations, tax logic, permissions and exportability. Wave should then be compared early against Xero, Zoho Books or FreshBooks.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Xero](/en/tools/xero/), [Zoho Books](/en/tools/zoho-books/), [FreshBooks](/en/tools/freshbooks/), [Sage Business Cloud Accounting](/en/tools/sage-business-cloud-accounting/). These links keep Wave connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

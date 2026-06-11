@@ -2,10 +2,10 @@
 slug: n8n
 title: n8n
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: "Automation"
 price_model: "Freemium"
 tags: ["automation", "workflow", "integration", "developer", "api"]
@@ -15,7 +15,7 @@ popularity: 35
 source_language: de
 translation: full
 description: "Workflow automation for API-oriented integrations, self-hostable automation, and AI-agent workflows."
-updated_at: 2026-05-21
+updated_at: 2026-06-12
 ---
 
 # n8n
@@ -112,3 +112,21 @@ If control and technical depth matter, often yes. For simple automations, Zapier
 **Can n8n build AI workflows?**
 
 Yes, n8n is often used for LLM and agent-like workflows.
+
+## Editorial cluster update June 2026
+
+n8n is the flexible, developer-friendly workflow builder in the automation cluster for APIs, triggers, data flows and increasingly AI steps.
+
+n8n fits teams that want to understand, version and sometimes self-host processes. It is stronger than a simple no-code zap, but also demands more operational discipline.
+
+### When n8n fits well
+
+n8n is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Credentials, retries, AI-node costs and ownership are the critical points. Without monitoring, workflows quickly become invisible dependencies.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Make (formerly Integromat)](/en/tools/make-ehemals-integromat/), [Zapier](/en/tools/zapier/), [Microsoft Power Automate](/en/tools/microsoft-power-automate/), [UiPath](/en/tools/uipath/). These links keep n8n connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

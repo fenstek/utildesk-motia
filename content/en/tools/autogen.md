@@ -1,11 +1,12 @@
 ---
 slug: autogen
 title: AutoGen
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI Agents
 price_model: null
 tags:
@@ -133,3 +134,21 @@ For AutoGen, use one real, bounded use case. Define the goal, owner, data basis,
 
 **10. When is AutoGen a poor fit?**
 AutoGen is a poor fit when prompts, data rights, boundaries, and review duties are not documented clearly, or when nobody has time for setup, review, and ongoing maintenance. In that case the work simply moves to another place.
+
+## Editorial cluster update June 2026
+
+AutoGen is the Microsoft-adjacent framework path in the open-source agent cluster: useful for multi-agent experiments, role design and controlled handoffs.
+
+The useful question is not simply whether agents can automate tasks. Teams need to see whether roles, tools, memory, cost and human approval can be modeled in a way that remains maintainable later.
+
+### When AutoGen fits well
+
+AutoGen is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+AutoGen belongs in small test environments first. Without observability, stop rules and strict tool permissions, multi-agent quickly becomes multi-failure.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [CrewAI](/en/tools/crew-ai/), [LangGraph](/en/tools/langgraph/), [OpenHands](/en/tools/openhands/), [OpenClaw](/en/tools/openclaw/). These links keep AutoGen connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

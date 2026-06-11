@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11",
+  "last_updated": "2026-06-12",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -1604,6 +1604,57 @@
         "quasar-framework",
         "workato",
         "zeplin"
+      ]
+    },
+    {
+      "id": "2026-06-12-ratgeber-linked-tool-gap-pass",
+      "date": "2026-06-12",
+      "count": 38,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "body-level audit of tools linked from Ratgeber articles and topical clusters",
+      "notes": "Expanded weak Ratgeber-linked cards with DE/EN cluster updates, internal comparison links, FAQ coverage where missing, refreshed editorial metadata, and content-lastmod freshness.",
+      "slugs": [
+        "anthropic",
+        "anyconv",
+        "autogen",
+        "claude",
+        "cloudconvert",
+        "convertio",
+        "crew-ai",
+        "deepseek",
+        "descript",
+        "google-ai",
+        "google-search-console",
+        "google-workspace",
+        "klippa",
+        "microsoft-power-automate",
+        "mindee",
+        "mistral",
+        "n8n",
+        "notebooklm",
+        "nuance",
+        "openai-api",
+        "openai-codex",
+        "openai-gpt-agents",
+        "openclaw",
+        "openhands",
+        "otter-ai",
+        "paddleocr",
+        "perplexity",
+        "poe",
+        "pytorch",
+        "remove-bg",
+        "smallpdf",
+        "tesseract-ocr",
+        "uipath",
+        "veryfi",
+        "wave",
+        "xero",
+        "you-com",
+        "zoho-expense"
       ]
     }
   ]

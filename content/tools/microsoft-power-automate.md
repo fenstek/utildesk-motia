@@ -1,11 +1,12 @@
 ---
 slug: microsoft-power-automate
 title: Microsoft Power Automate
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: "AI Agents"
 price_model: "Freemium"
 tags: ["automation"]
@@ -76,3 +77,35 @@ Microsoft Power Automate lohnt sich, wenn Integrationen betrieben und nicht nur 
 - Einige Funktionen nur in kostenpflichtigen Plänen enthalten
 - Abhängigkeit vom Microsoft-Ökosystem kann Einschränkungen mit sich bringen
 - Performance und Ausführungsgeschwindigkeit hängen von der Komplexität der Workflows ab
+
+## Ratgeber-Cluster-Update Juni 2026
+
+Microsoft Power Automate ist im Automatisierungs-Cluster die naheliegende Wahl fuer Teams, die bereits tief in Microsoft 365, SharePoint, Teams oder Dynamics arbeiten.
+
+Der Wert liegt in kontrollierten Unternehmens-Workflows, nicht in wilden Einmal-Automationen. Gute Faelle verbinden Freigaben, Dokumente, Listen, E-Mail und Protokolle.
+
+### Wann Microsoft Power Automate gut passt
+
+Microsoft Power Automate ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt ist und nicht nur ein Tool-Name gesucht wird. Fuer unsere Ratgeber-Cluster zaehlt deshalb: Welche Aufgabe wird vorbereitet, welche Daten werden verarbeitet, wer prueft das Ergebnis und welche Alternative ist im selben Arbeitskontext realistischer?
+
+### Grenzen und Pruefpunkte
+
+Power Automate kann Schattenprozesse erzeugen, wenn Besitzer, Berechtigungen und Fehlerwege fehlen. Vor breitem Einsatz braucht es Namensregeln, Monitoring und Admin-Sichtbarkeit.
+
+### Interne Vergleichspunkte
+
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [n8n](/tools/n8n/), [Zapier](/tools/zapier/), [Make (ehemals Integromat)](/tools/make-ehemals-integromat/), [UiPath](/tools/uipath/). Diese Links helfen, Microsoft Power Automate nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
+
+## FAQ
+
+**Wofuer sollte man Microsoft Power Automate zuerst testen?**
+
+Teste Microsoft Power Automate zuerst mit einem kleinen, echten Arbeitsablauf aus dem passenden Ratgeber-Cluster. So wird sichtbar, ob das Werkzeug Verantwortung, Datenfluss und Ergebnisqualitaet verbessert oder nur eine weitere Oberflaeche einfuehrt.
+
+**Welche Alternative sollte parallel geprueft werden?**
+
+Bei Microsoft Power Automate sollte die Gegenprobe mindestens [n8n](/tools/n8n/) oder [Zapier](/tools/zapier/) einschliessen. Entscheidend ist ein Vergleich am selben Dokument, Prompt, Prozess oder Datensatz, damit nicht Funktionslisten, sondern echte Arbeitsqualitaet den Ausschlag geben.
+
+**Was ist der wichtigste Risiko-Check?**
+
+Bei Microsoft Power Automate ist der wichtigste Check, ob Daten, Rechte, Kosten und menschliche Freigaben zum konkreten Einsatz passen. Erst wenn diese Punkte fuer den betroffenen Workflow geklaert sind, wird aus einem guten Test ein belastbarer Produktionskandidat.
