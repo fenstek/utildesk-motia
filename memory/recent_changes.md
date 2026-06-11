@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-11_
 
+## 2026-06-11 - KI-Browser NotebookLM Ratgeber publication
+
+- Retrieved NotebookLM article draft artifact `79d70969-3cb8-46fe-9bc8-e8a0b7878322` from the physical OptiPlex contour `jgdus@100.98.97.98` and used it as the editorial starting point.
+- Manually edited and fact-checked the draft into a bilingual Ratgeber release: `ki-browser-2026-atlas-comet-webmcp-und-browserbase`.
+- Softened unsupported NotebookLM claims around SOP bypass, password-field extraction, fixed percentage gains, and vendor-specific exploit certainty; kept the article grounded in official OpenAI, Perplexity, Chrome/WebMCP, Browserbase/Stagehand, Trail of Bits, UW, and CSA sources.
+- Generated two business-oriented imagegen illustrations and saved only compressed WebP assets under `content/images/ratgeber/`.
+
 ## 2026-06-11 - Corrective body-level tool-card editorial pass
 
 - Corrected the selection logic after the second hype refresh: formal `editorial_reviewed` metadata is no longer sufficient to prove a card has real manual prose, because older completion passes left some bodies thin or template-like.
