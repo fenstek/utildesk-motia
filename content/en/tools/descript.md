@@ -2,10 +2,10 @@
 slug: descript
 title: Descript
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -13,7 +13,7 @@ tags:
   - video
 official_url: 'https://www.descript.com/'
 created_at: 2026-02-13T00:00:00.000Z
-updated_at: 2026-05-21
+updated_at: 2026-06-12
 popularity: 0
 source_language: de
 translation: full
@@ -126,3 +126,21 @@ Descript supports MP4 for videos, MP3 and WAV for audio export, and text files c
 
 **8. Do I need an internet connection to use Descript?**
 Yes, Descript is web-based and requires a stable internet connection for most features.
+
+## Editorial cluster update June 2026
+
+Descript represents the voice and media cluster where transcription, editing and text-based audio or video production meet.
+
+The useful use case is not vague AI video work, but a concrete editorial process: recording, transcript, edit, correction, approval and export.
+
+### When Descript fits well
+
+Descript is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Teams should decide whether raw recordings, voices and customer conversations may enter the platform. Overdub, transcription and collaboration need explicit permissions.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Otter.ai](/en/tools/otter-ai/), [Sonix](/en/tools/sonix/), [ElevenLabs](/en/tools/elevenlabs/), [Adobe Podcast](/en/tools/adobe-podcast/). These links keep Descript connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

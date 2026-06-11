@@ -1,11 +1,12 @@
 ---
 slug: otter-ai
 title: Otter.ai
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Audio
 price_model: Freemium
 tags:
@@ -146,3 +147,21 @@ Yes, Otter.ai offers a free basic version with limited features and monthly tran
 
 **8. How can I export my transcripts?**
 Transcripts can be exported in various formats such as TXT, PDF, or SRT for reuse in other applications.
+
+## Editorial cluster update June 2026
+
+Otter.ai is a meeting assistant in the speech cluster for transcripts, summaries and searchable conversation notes.
+
+The useful use case is a clear meeting process: who may record, who receives the summary, what is edited afterwards and how long notes are retained.
+
+### When Otter.ai fits well
+
+Otter.ai is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+For internal, legal or customer conversations, Otter.ai needs consent, retention rules and a separation between raw transcript and approved notes.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Descript](/en/tools/descript/), [Sonix](/en/tools/sonix/), [Fireflies.ai](/en/tools/fireflies-ai/), [Nuance](/en/tools/nuance/). These links keep Otter.ai connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

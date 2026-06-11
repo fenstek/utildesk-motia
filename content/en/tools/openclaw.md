@@ -1,11 +1,12 @@
 ---
 slug: openclaw
 title: OpenClaw
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI Agents
 price_model: null
 tags:
@@ -131,3 +132,21 @@ This depends on the provider and planned use, but stable internet connections an
 
 **8. How does OpenClaw scale as demand increases?**
 OpenClaw is designed to scale with growing requirements, either through additional agents or expanded resources.
+
+## Editorial cluster update June 2026
+
+OpenClaw is the local-first path in the open-source agent cluster for a personal assistant that connects channels, devices and skills.
+
+The card should make clear that OpenClaw is less a chatbot and more an operating environment: gateway, messaging channels, local devices, skills and routing.
+
+### When OpenClaw fits well
+
+OpenClaw is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+The strength and the risk are close together. Connecting many channels requires pairing rules, local security boundaries and a clear view of inbound messages as untrusted input.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Hermes Agent](/en/tools/hermes-agent/), [OpenHands](/en/tools/openhands/), [AutoGen](/en/tools/autogen/), [CrewAI](/en/tools/crew-ai/). These links keep OpenClaw connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

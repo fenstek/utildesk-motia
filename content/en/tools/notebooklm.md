@@ -1,11 +1,12 @@
 ---
 slug: notebooklm
 title: NotebookLM
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Productivity
 price_model: Freemium
 tags:
@@ -90,3 +91,21 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+## Editorial cluster update June 2026
+
+NotebookLM belongs in the memory and research cluster as a source-grounded tool for documents, briefings and longer topic spaces.
+
+The best use is not fast chat, but a curated source space: collect documents, test questions, generate briefings and then edit the result manually.
+
+### When NotebookLM fits well
+
+NotebookLM is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+NotebookLM does not replace editorial review. Sources can be missing, outputs can sound too polished, and sensitive documents need clear rules before upload.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Claude](/en/tools/claude/), [Gemini](/en/tools/gemini/), [Google Workspace](/en/tools/google-workspace/). These links keep NotebookLM connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

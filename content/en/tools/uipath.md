@@ -1,11 +1,12 @@
 ---
 slug: uipath
 title: UiPath
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: "Plan-based"
 tags:
@@ -95,3 +96,21 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+## Editorial cluster update June 2026
+
+UiPath is the enterprise RPA layer for processes that need to bridge legacy interfaces, documents and system boundaries.
+
+UiPath fits when automation is not just an API workflow, but must orchestrate screens, documents, approvals and exceptions.
+
+### When UiPath fits well
+
+UiPath is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+RPA can stabilize legacy systems or cement bad processes. Rollout should include an honest check of simplification, error cost and maintainability.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Automation Anywhere](/en/tools/automation-anywhere/), [Microsoft Power Automate](/en/tools/microsoft-power-automate/), [n8n](/en/tools/n8n/), [Blue Prism](/en/tools/blue-prism/). These links keep UiPath connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

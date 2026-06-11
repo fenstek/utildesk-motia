@@ -2,10 +2,10 @@
 slug: n8n
 title: n8n
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Automatisierung
 price_model: Freemium
 tags: ["automation", "workflow", "integration", "developer", "api"]
@@ -16,7 +16,7 @@ lastReviewed: "2026-05-21"
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "ki-tools-eu-datenverarbeitung-kleine-unternehmen", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
 popularity: 0
 description: Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows.
-updated_at: 2026-05-21
+updated_at: 2026-06-12
 ---
 # n8n
 
@@ -117,3 +117,21 @@ Für einfache Workflows nicht zwingend, für robuste Automatisierung aber sehr h
 **Was ist beim Betrieb wichtig?**
 
 Secrets, Backups, Monitoring, Versionskontrolle und klare Verantwortliche. Automatisierung ohne Betriebskonzept wird schnell riskant.
+
+## Ratgeber-Cluster-Update Juni 2026
+
+n8n ist im Automatisierungs-Cluster der flexible, entwicklernahe Workflow-Baukasten fuer APIs, Trigger, Datenfluesse und zunehmend KI-Schritte.
+
+n8n passt, wenn ein Team Prozesse verstehen, versionieren und notfalls selbst hosten will. Es ist staerker als ein einfacher No-Code-Zap, verlangt aber auch mehr Prozessdisziplin.
+
+### Wann n8n gut passt
+
+n8n ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt ist und nicht nur ein Tool-Name gesucht wird. Fuer unsere Ratgeber-Cluster zaehlt deshalb: Welche Aufgabe wird vorbereitet, welche Daten werden verarbeitet, wer prueft das Ergebnis und welche Alternative ist im selben Arbeitskontext realistischer?
+
+### Grenzen und Pruefpunkte
+
+Kritisch sind Zugangsdaten, Fehlerwiederholungen, Kosten von KI-Knoten und Verantwortlichkeit. Ohne Monitoring werden aus Workflows schnell unsichtbare Abhaengigkeiten.
+
+### Interne Vergleichspunkte
+
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [Make (ehemals Integromat)](/tools/make-ehemals-integromat/), [Zapier](/tools/zapier/), [Microsoft Power Automate](/tools/microsoft-power-automate/), [UiPath](/tools/uipath/). Diese Links helfen, n8n nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.

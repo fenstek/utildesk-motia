@@ -1,11 +1,12 @@
 ---
 slug: klippa
 title: Klippa
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Automation
 price_model: Plan-based
 tags:
@@ -123,3 +124,21 @@ For Klippa, it depends on the target workflow: simple tests are easier, but stab
 
 **What should teams check for privacy?**
 Before using Klippa, teams should review the DPA, data location, retention, subprocessors, deletion options, and any use of customer data for training.
+
+## Editorial cluster update June 2026
+
+Klippa belongs in the OCR cluster for receipts, invoices and structured document data rather than generic PDF handling.
+
+The useful test is a real document flow: intake, classification, fields, validation, export to accounting or ERP and error review.
+
+### When Klippa fits well
+
+Klippa is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+With Klippa, accuracy is not the only metric. Teams need to evaluate exception handling, privacy, EU processing, integrations and manual review steps.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Rossum](/en/tools/rossum/), [Veryfi](/en/tools/veryfi/), [Mindee](/en/tools/mindee/), [Azure AI Document Intelligence](/en/tools/azure-ai-document-intelligence/). These links keep Klippa connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

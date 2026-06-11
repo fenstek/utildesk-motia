@@ -2,10 +2,10 @@
 slug: openhands
 title: OpenHands
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI Agents
 price_model: Plan-based
 tags:
@@ -17,7 +17,7 @@ official_url: 'https://openhands.dev/'
 popularity: 26
 translation: full
 description: "OpenHands is an open-source-oriented AI coding agent for software tasks, repositories, and automated development steps."
-updated_at: 2026-06-11
+updated_at: 2026-06-12
 ---
 # OpenHands
 
@@ -100,3 +100,21 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+## Editorial cluster update June 2026
+
+OpenHands represents open software agents in the coding-agent cluster: agents intended to work on development tasks in a controlled environment.
+
+The useful comparison is not whether OpenHands can produce a striking demo, but whether setup, sandbox, task definition, tests and review work for the team.
+
+### When OpenHands fits well
+
+OpenHands is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+OpenHands should not receive an uncontrolled production environment. Good pilots use isolated repos, small issues, clear logs and human merge decisions.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [OpenClaw](/en/tools/openclaw/), [OpenAI Codex](/en/tools/openai-codex/), [Cline](/en/tools/cline/), [GitHub Copilot](/en/tools/github-copilot/). These links keep OpenHands connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

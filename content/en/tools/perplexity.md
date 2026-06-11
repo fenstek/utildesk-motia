@@ -2,10 +2,10 @@
 slug: perplexity
 title: Perplexity
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -13,7 +13,7 @@ tags:
 official_url: 'https://www.perplexity.ai'
 affiliate_url: 'https://www.perplexity.ai'
 created_at: '2026-02-02'
-updated_at: 2026-05-21
+updated_at: 2026-06-12
 popularity: 0
 translation: full
 description: "Perplexity is an AI search and answer engine for fast research with source references and web context."
@@ -96,3 +96,21 @@ When the recurring value is greater than setup, cost, and review effort. For one
 **What should be checked before adoption?**
 
 Data access, export options, team permissions, pricing model, and whether outputs need review before publishing.
+
+## Editorial cluster update June 2026
+
+Perplexity is the central comparison point in the AI search cluster for answer search with sources, research mode and increasingly agentic surfaces.
+
+The card helps readers understand search as more than a link list. Perplexity is strong for quick source screening, but it is not automatically a robust research method.
+
+### When Perplexity fits well
+
+Perplexity is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Sources must be checked, citations read and conclusions evaluated separately. For buying, legal or health questions, an answer box is not enough.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Gemini](/en/tools/gemini/), [You.com](/en/tools/you-com/), [Poe](/en/tools/poe/). These links keep Perplexity connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

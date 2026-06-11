@@ -3,9 +3,9 @@ slug: openhands
 title: OpenHands
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-06-11
+editorial_reviewed_at: 2026-06-12
 editorial_status: manual_polished
-editorial_batch: 2026-06-11-hype-tools-human-polish-2
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI Coding
 price_model: Je nach Plan
 tags: [ai, coding, automation, developer]
@@ -14,7 +14,7 @@ popularity: 89
 description: OpenHands ist ein Open-Source-orientierter KI-Coding-Agent für Softwareaufgaben, Repositories und automatisierte Entwicklungsschritte.
 tier: C
 generated_at: 2026-05-28
-updated_at: 2026-06-11
+updated_at: 2026-06-12
 ---
 # OpenHands
 
@@ -100,3 +100,21 @@ OpenHands lohnt sich, wenn wiederkehrende Coding-Aufgaben klar beschrieben, test
 **Worauf sollte man vor dem Einsatz achten?**
 
 Wichtig sind Sandbox, Rechte, Secrets, Modellzugriff, Tests, Logging und Review. Ein Agenten-Patch sollte nie ohne menschliche Prüfung und CI in produktive Branches gelangen.
+
+## Ratgeber-Cluster-Update Juni 2026
+
+OpenHands steht im Coding-Agenten-Cluster fuer offene Software-Agenten, die Entwicklungsaufgaben in einer kontrollierten Umgebung bearbeiten sollen.
+
+Der sinnvolle Vergleich fragt nicht, ob OpenHands spektakulaer demoen kann, sondern ob Setup, Sandbox, Aufgabenbeschreibung, Tests und Review im Team tragfaehig sind.
+
+### Wann OpenHands gut passt
+
+OpenHands ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt ist und nicht nur ein Tool-Name gesucht wird. Fuer unsere Ratgeber-Cluster zaehlt deshalb: Welche Aufgabe wird vorbereitet, welche Daten werden verarbeitet, wer prueft das Ergebnis und welche Alternative ist im selben Arbeitskontext realistischer?
+
+### Grenzen und Pruefpunkte
+
+OpenHands sollte keine unkontrollierte Produktionsumgebung bekommen. Gute Piloten nutzen isolierte Repos, kleine Issues, klare Logs und menschliche Merge-Entscheidungen.
+
+### Interne Vergleichspunkte
+
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [OpenClaw](/tools/openclaw/), [OpenAI Codex](/tools/openai-codex/), [Cline](/tools/cline/), [GitHub Copilot](/tools/github-copilot/). Diese Links helfen, OpenHands nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.

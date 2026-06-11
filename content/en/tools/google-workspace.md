@@ -1,11 +1,12 @@
 ---
 slug: google-workspace
 title: Google Workspace
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: Productivity
 price_model: Subscription
 tags:
@@ -132,3 +133,21 @@ Multiple users can work on documents, spreadsheets, or presentations at the same
 
 **8. What happens if I cancel the plan?**
 The data is usually retained, but depending on the contract and term it may be deleted after a certain period. It is recommended to create a backup before canceling.
+
+## Editorial cluster update June 2026
+
+Google Workspace is the productivity cluster environment where AI, documents, mail, calendar and team permissions meet.
+
+The card should not merely list Gmail and Docs. The important question is whether a team can work with Drive structure, roles, sharing and Gemini features in a controlled way.
+
+### When Google Workspace fits well
+
+Google Workspace is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+Messy permissions do not become safer because AI is added. Rollout needs rules for shared drives, external links, sensitive documents and retention.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [Microsoft 365](/en/tools/microsoft-365/), [Nextcloud](/en/tools/nextcloud/), [Zoho Workplace](/en/tools/zoho-workplace/), [OnlyOffice](/en/tools/onlyoffice/). These links keep Google Workspace connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

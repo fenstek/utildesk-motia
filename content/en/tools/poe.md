@@ -1,11 +1,12 @@
 ---
 slug: poe
 title: Poe
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: AI
 price_model: Freemium
 tags:
@@ -103,3 +104,21 @@ Depending on the plan and license terms, Poe can also be used for business appli
 
 **8. Is there a way to test new AI models?**
 Poe regularly updates its offering and integrates new models that users can try.
+
+## Editorial cluster update June 2026
+
+Poe is the marketplace-style option in the assistant cluster: many models and bots in one interface, often better for exploration than governance.
+
+Poe fits users who want to compare models, test bot ideas or quickly see different answer styles. For production team work, admin control and data rules become decisive.
+
+### When Poe fits well
+
+Poe is most useful when the workflow is already named and the team is not only looking for a tool name. For the Utildesk guide clusters, the practical questions are: which task is being prepared, which data is processed, who reviews the result and which alternative is more realistic in the same work context?
+
+### Limits and review points
+
+The risk is opacity: many bots mean many quality and data paths. Outputs need more source checking than in a tightly controlled setup.
+
+### Internal comparison points
+
+Useful comparison points in the Utildesk catalogue are [ChatGPT](/en/tools/chatgpt/), [Claude](/en/tools/claude/), [Perplexity](/en/tools/perplexity/), [You.com](/en/tools/you-com/). These links keep Poe connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.

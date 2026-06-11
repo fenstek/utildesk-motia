@@ -1,11 +1,12 @@
 ---
 slug: smallpdf
 title: Smallpdf
+updated_at: 2026-06-12
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-12
+editorial_status: manual_polished
+editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
 category: "AI Infrastructure"
 price_model: Freemium
 tags: [pdf, documents, productivity]
@@ -99,3 +100,21 @@ Besonders lohnt sich Smallpdf, wenn der beschriebene Workflow regelmäßig vorko
 **Worauf sollte man vor dem Einsatz achten?**
 
 Vor dem Einsatz von Smallpdf sollten Datenzugriff, Rechte, Kosten, Exportmöglichkeiten und ein menschlicher Qualitätscheck geklärt sein.
+
+## Ratgeber-Cluster-Update Juni 2026
+
+Smallpdf ist im PDF-Cluster die bequeme Werkzeugkiste fuer Komprimieren, Konvertieren, Zusammenfuehren und einfache PDF-Bearbeitung.
+
+Gut passt Smallpdf fuer Einzelaufgaben und nichtkritische Dokumente. Fuer OCR, Rechnungsdaten oder Massenprozesse braucht es spezialisierte Tools oder Workflows.
+
+### Wann Smallpdf gut passt
+
+Smallpdf ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt ist und nicht nur ein Tool-Name gesucht wird. Fuer unsere Ratgeber-Cluster zaehlt deshalb: Welche Aufgabe wird vorbereitet, welche Daten werden verarbeitet, wer prueft das Ergebnis und welche Alternative ist im selben Arbeitskontext realistischer?
+
+### Grenzen und Pruefpunkte
+
+Der Komfort darf Datenschutz nicht verdecken. Interne Verträge, Bewerbungen und Kundendokumente sollten nur nach klarer Freigabe in Browser-PDF-Tools verarbeitet werden.
+
+### Interne Vergleichspunkte
+
+Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [CloudConvert](/tools/cloudconvert/), [AnyConv](/tools/anyconv/), [Convertio](/tools/convertio/), [OCRmyPDF](/tools/ocrmypdf/). Diese Links helfen, Smallpdf nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
