@@ -3,9 +3,9 @@ slug: manus
 title: Manus
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-06-11-hype-tools-human-polish-2
 category: AI Agents
 price_model: Je nach Plan
 tags: [ai, agent, automation, research]
@@ -14,12 +14,20 @@ popularity: 43
 description: Manus steht für agentische KI-Workflows, bei denen Aufgaben über mehrere Schritte geplant, ausgeführt und zusammengeführt werden.
 tier: C
 generated_at: 2026-05-27
+updated_at: 2026-06-11
 ---
 # Manus
 
 Manus gehört zur neuen Generation von KI-Agenten, die nicht nur antworten, sondern Aufgaben selbstständig strukturieren und bearbeiten sollen. Für Unternehmen ist entscheidend, ob solche Läufe kontrollierbar, prüfbar und wiederholbar werden.
 
 Relevant für Teams, die Recherche, Automatisierung, Planung und operative Agentenarbeit testen wollen.
+
+
+## Redaktionelles Update Juni 2026
+
+Manus steht für den Hype um allgemeine KI-Agenten, die nicht nur antworten, sondern Aufgabenketten selbständig abarbeiten sollen. Das ist spannend für Recherche, kleine Operations-Aufgaben und strukturierte Vorarbeiten, aber der Nutzen hängt stark davon ab, wie präzise Ziel, Grenzen und Freigaben gesetzt werden.
+
+Für Teams ist Manus am sichersten, wenn es zunächst mit beobachtbaren Aufgaben läuft: keine Zahlungen, keine sensiblen Kundendaten, keine unumkehrbaren Aktionen. Gute Agentenarbeit bedeutet 2026 weniger Magie als saubere Kontrollpunkte, nachvollziehbare Zwischenergebnisse und eine klare Trennung zwischen Vorschlag und Ausführung.
 
 ## Für wen ist Manus geeignet?
 

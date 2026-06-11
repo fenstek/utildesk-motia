@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-11_
 
+## 2026-06-11 - Second hype tool-card polish wave
+
+- Selected the next 20 strategically hot cards after the browser-agent/framework wave: Lovable, Bolt.new, Manus, Devin, OpenHands, v0, CrewAI, OpenAI Codex, Google AI Studio, Gumloop, Sora, Kling AI, Suno AI, Adobe Firefly, Replicate, DeepSeek, Grok, Mistral, Jan, and LM Studio.
+- Added fresh DE/EN "June 2026 editorial update" sections focused on vibe-coding, app builders, coding agents, agent orchestration, generative media, model platforms, and local AI workflows.
+- Updated localized review metadata, refreshed `site/src/data/content-lastmod.json`, and registered the batch as `2026-06-11-hype-tools-human-polish-2`.
+
 ## 2026-06-11 - Hype tool-card human polish
 
 - Selected the 20 active illustrated-but-not-text-registry hype tool cards left after the 2026-05-31 rising AI tools batch: BrowserOS, Browserbase, Mem0, Base44, ChatGPT Atlas, Cline, Composio, Google Antigravity, Kilo Code, Krea AI, LangGraph, Mastra, Napkin AI, OpenCode, Perplexity Comet, Pydantic AI, Qodo, Skyvern, Stagehand, and YouWare.
