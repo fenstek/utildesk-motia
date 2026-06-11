@@ -1572,6 +1572,39 @@
         "jan-ai",
         "lm-studio"
       ]
+    },
+    {
+      "id": "2026-06-11-unedited-tool-card-human-pass-1",
+      "date": "2026-06-11",
+      "count": 20,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "corrective body-level audit of active cards whose formal metadata said manual_polished but whose rendered bodies still lacked full human editorial structure",
+      "notes": "User correction after the previous hype refresh: this pass intentionally selected weak body-level cards, not already polished hype tools. Rewrote DE and EN bodies with audience fit, use cases, daily workflow judgement, privacy/data notes, alternatives, editorial assessment and FAQ.",
+      "slugs": [
+        "10to8",
+        "acapela-group",
+        "microsoft-azure-api-management",
+        "activecampaign",
+        "acuity-scheduling",
+        "adp-workforce-now",
+        "agorapulse",
+        "ahrefs-content-explorer",
+        "alitu",
+        "animoto",
+        "crisp",
+        "crowdstrike-falcon",
+        "deepl-api",
+        "dell-boomi",
+        "flyr",
+        "google-chat",
+        "microsoft-defender-for-endpoint",
+        "quasar-framework",
+        "workato",
+        "zeplin"
+      ]
     }
   ]
 }
