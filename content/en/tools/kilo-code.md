@@ -3,9 +3,9 @@ slug: kilo-code
 title: Kilo Code
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "caution"
 category: "Developer Tools"
 price_model: "Freemium"
@@ -15,6 +15,7 @@ popularity: 0
 source_language: de
 translation: full
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # Kilo Code
@@ -30,6 +31,12 @@ Kilo Code positions itself as a flexible coding agent for teams that do not want
 Our editorial question for Kilo Code is simple: does work become easier to understand, check and hand over — or does the tool merely add another impressive surface that later needs maintenance? For Utildesk, the important signal is not the loudest product promise, but whether Kilo Code makes boundaries, ownership and output quality visible in daily work.
 
 Kilo Code belongs in a test that defines the task, the allowed data and the review standard before the first serious run. Without that discipline, even a good multi-model coding agent becomes another unmanaged process.
+
+## Editorial update June 2026
+
+Kilo Code is interesting because in 2026 many teams are not looking for just one coding agent; they want control over models, costs and working modes. BYOK and model choice are useful, but they do not replace rules for branches, tests, secrets and acceptable diffs.
+
+We would evaluate Kilo Code where developers deliberately switch between quick local edits, review support and larger agent runs. The value appears when the workflow becomes cheaper and more transparent. If everyone mixes models and modes arbitrarily, review load increases instead.
 
 ## Who is Kilo Code for?
 

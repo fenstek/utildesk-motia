@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-11",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -1505,6 +1505,39 @@
         "yarn-spinner",
         "zendesk-suite",
         "zoho-notebook"
+      ]
+    },
+    {
+      "id": "2026-06-11-hype-tools-human-polish",
+      "date": "2026-06-11",
+      "count": 20,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "manual selection from active illustrated-but-unregistered hype tools after local popularity and current AI trend check",
+      "notes": "Human editorial polish for rising browser-agent, coding-agent, agent-framework, memory/context, automation and AI-builder cards. Added DE/EN June 2026 editorial update sections, refreshed review metadata, and closed the registry gap left by the 2026-05-31 rising tools illustration/editorial batch.",
+      "slugs": [
+        "browseros",
+        "browserbase",
+        "mem0",
+        "base44",
+        "chatgpt-atlas",
+        "cline",
+        "composio",
+        "google-antigravity",
+        "kilo-code",
+        "krea-ai",
+        "langgraph",
+        "mastra",
+        "napkin-ai",
+        "opencode",
+        "perplexity-comet",
+        "pydantic-ai",
+        "qodo",
+        "skyvern",
+        "stagehand",
+        "youware"
       ]
     }
   ]

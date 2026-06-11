@@ -3,9 +3,9 @@ slug: cline
 title: Cline
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "caution"
 category: "Entwickler-Tools"
 price_model: "Freemium"
@@ -13,6 +13,7 @@ tags: [ai, coding, developer-tools, agents]
 official_url: "https://cline.bot/"
 popularity: 0
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # Cline
@@ -28,6 +29,12 @@ Cline bringt agentisches Arbeiten direkt in den Editor: Dateien lesen, Änderung
 Unsere redaktionelle Frage bei Cline lautet: Wird Arbeit verständlicher, überprüfbarer und besser übergebbar — oder entsteht nur eine weitere Oberfläche, die kurzfristig beeindruckt und langfristig Pflege braucht? Für unsere Bewertung zählt deshalb nicht die lauteste Produktankündigung, sondern ob Cline im Arbeitsalltag Grenzen, Zuständigkeit und Ergebnisqualität sichtbar macht.
 
 Cline gehört in einen Test, der vorab definiert, welche Aufgabe gelöst wird, welche Daten erlaubt sind und wann ein Ergebnis als ausreichend geprüft gilt. Ohne diese Disziplin bleibt selbst ein gutes Werkzeug dieser Art ein weiterer offener Prozess.
+
+## Redaktionelles Update Juni 2026
+
+Cline ist in der Coding-Agent-Welle deshalb relevant, weil es nah am Repository arbeitet und nicht nur Chat-Antworten neben den Code legt. Das ist wertvoll, wenn Änderungen klein, nachvollziehbar und testbar bleiben. Es ist gefährlich, wenn Teams den Agenten als Ersatz für Architekturverständnis, Reviews oder CI betrachten.
+
+Unser Kurztest für Cline wäre ein echter Bugfix auf einem separaten Branch: Plan prüfen, Patch lesen, Tests laufen lassen, Diff klein halten. Wenn Cline dabei Kontext spart und Review-Fragen reduziert, ist es ein Produktivitätsgewinn. Wenn der Agent große, schwer erklärbare Diffs produziert, muss der Einsatz enger geführt werden.
 
 ## Für wen ist Cline geeignet?
 

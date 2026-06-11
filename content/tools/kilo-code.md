@@ -3,9 +3,9 @@ slug: kilo-code
 title: Kilo Code
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "caution"
 category: "Entwickler-Tools"
 price_model: "Freemium"
@@ -13,6 +13,7 @@ tags: [ai, coding, developer-tools, agents]
 official_url: "https://kilo.ai/"
 popularity: 0
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # Kilo Code
@@ -28,6 +29,12 @@ Kilo Code positioniert sich als flexibler Coding-Agent für Teams, die Modelle, 
 Unsere redaktionelle Frage bei Kilo Code lautet: Wird Arbeit verständlicher, überprüfbarer und besser übergebbar — oder entsteht nur eine weitere Oberfläche, die kurzfristig beeindruckt und langfristig Pflege braucht? Für unsere Bewertung zählt deshalb nicht die lauteste Produktankündigung, sondern ob Kilo Code im Arbeitsalltag Grenzen, Zuständigkeit und Ergebnisqualität sichtbar macht.
 
 Kilo Code gehört in einen Test, der vorab definiert, welche Aufgabe gelöst wird, welche Daten erlaubt sind und wann ein Ergebnis als ausreichend geprüft gilt. Ohne diese Disziplin bleibt selbst ein gutes Werkzeug dieser Art ein weiterer offener Prozess.
+
+## Redaktionelles Update Juni 2026
+
+Kilo Code ist interessant, weil viele Teams 2026 nicht nur "einen" Coding-Agenten suchen, sondern Kontrolle über Modelle, Kosten und Arbeitsmodi. BYOK und Modellwahl sind praktisch, ersetzen aber keine Regeln für Branches, Tests, Secrets und akzeptable Diffs.
+
+Wir würden Kilo Code dort prüfen, wo Entwickler bewusst zwischen schnellen lokalen Änderungen, Review-Unterstützung und größeren Agentenläufen wechseln wollen. Der Nutzen entsteht, wenn der Workflow günstiger und transparenter wird. Wenn jeder beliebig Modelle und Modi mischt, steigt dagegen die Review-Last.
 
 ## Für wen ist Kilo Code geeignet?
 
