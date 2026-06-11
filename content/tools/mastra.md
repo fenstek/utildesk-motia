@@ -3,9 +3,9 @@ slug: mastra
 title: Mastra
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "recommend"
 category: "Entwickler-Tools"
 price_model: "Open Source"
@@ -13,6 +13,7 @@ tags: [ai-agents, typescript, developer-tools, framework]
 official_url: "https://mastra.ai/"
 popularity: 0
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # Mastra
@@ -28,6 +29,12 @@ Mastra richtet sich an TypeScript-Teams, die Agenten, Workflows, Tool-Aufrufe un
 Unsere redaktionelle Frage bei Mastra lautet: Wird Arbeit verständlicher, überprüfbarer und besser übergebbar — oder entsteht nur eine weitere Oberfläche, die kurzfristig beeindruckt und langfristig Pflege braucht? Für unsere Bewertung zählt deshalb nicht die lauteste Produktankündigung, sondern ob Mastra im Arbeitsalltag Grenzen, Zuständigkeit und Ergebnisqualität sichtbar macht.
 
 Mastra gehört in einen Test, der vorab definiert, welche Aufgabe gelöst wird, welche Daten erlaubt sind und wann ein Ergebnis als ausreichend geprüft gilt. Ohne diese Disziplin bleibt selbst ein gutes Werkzeug dieser Art ein weiterer offener Prozess.
+
+## Redaktionelles Update Juni 2026
+
+Mastra ist für Teams spannend, die Agenten im TypeScript-Ökosystem produktnah bauen wollen. Die Frage ist nicht, ob ein Framework schnell einen Agenten startet, sondern ob Observability, Evaluierung, Tool-Anbindung und Deployment in den vorhandenen Stack passen.
+
+Ein guter Mastra-Test ist ein kleiner, aber echter Workflow mit Logs, Tests und einer klaren Fehlerstrategie. Wenn Entwickler danach schneller von Prototyp zu wartbarem Agenten kommen, spricht das für Mastra. Wenn nur Framework-Abhängigkeit dazukommt, ohne Betrieb und Bewertung zu verbessern, bleibt der Vorteil unklar.
 
 ## Für wen ist Mastra geeignet?
 

@@ -3,9 +3,9 @@ slug: perplexity-comet
 title: Perplexity Comet
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "recommend"
 category: "Productivity"
 price_model: "Freemium"
@@ -15,6 +15,7 @@ popularity: 0
 source_language: de
 translation: full
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # Perplexity Comet
@@ -30,6 +31,12 @@ Perplexity Comet connects browser work with the idea of bringing questions, sour
 Our editorial question for Perplexity Comet is simple: does work become easier to understand, check and hand over — or does the tool merely add another impressive surface that later needs maintenance? For Utildesk, the important signal is not the loudest product promise, but whether Perplexity Comet makes boundaries, ownership and output quality visible in daily work.
 
 Perplexity Comet belongs in a test that defines the task, the allowed data and the review standard before the first serious run. Without that discipline, even a good AI browser for research becomes another unmanaged process.
+
+## Editorial update June 2026
+
+Perplexity Comet represents the move from a search box to a research-capable browser. The value is not that every answer is automatically correct, but that research, source comparison and context switching can happen faster in one workspace.
+
+We would test Comet for topic clarification, source triage and recurring information work. For decisions involving money, law, medicine, customer data or publication, source checking remains mandatory. Comet is a research accelerator, not a replacement for editorial responsibility.
 
 ## Who is Perplexity Comet for?
 

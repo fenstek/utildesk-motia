@@ -3,9 +3,9 @@ slug: perplexity-comet
 title: Perplexity Comet
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "recommend"
 category: "Produktivität"
 price_model: "Freemium"
@@ -13,6 +13,7 @@ tags: [ai, browser, search, assistant]
 official_url: "https://www.perplexity.ai/comet"
 popularity: 0
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # Perplexity Comet
@@ -28,6 +29,12 @@ Perplexity Comet verbindet Browserarbeit mit der Idee, Fragen, Quellen und Folge
 Unsere redaktionelle Frage bei Perplexity Comet lautet: Wird Arbeit verständlicher, überprüfbarer und besser übergebbar — oder entsteht nur eine weitere Oberfläche, die kurzfristig beeindruckt und langfristig Pflege braucht? Für unsere Bewertung zählt deshalb nicht die lauteste Produktankündigung, sondern ob Perplexity Comet im Arbeitsalltag Grenzen, Zuständigkeit und Ergebnisqualität sichtbar macht.
 
 Perplexity Comet gehört in einen Test, der vorab definiert, welche Aufgabe gelöst wird, welche Daten erlaubt sind und wann ein Ergebnis als ausreichend geprüft gilt. Ohne diese Disziplin bleibt selbst ein gutes Werkzeug dieser Art ein weiterer offener Prozess.
+
+## Redaktionelles Update Juni 2026
+
+Perplexity Comet steht für den Trend vom Suchfeld zum recherchefähigen Browser. Der Nutzen liegt nicht darin, dass jede Antwort automatisch stimmt, sondern dass Recherche, Quellenvergleich und Kontextwechsel schneller in einem Arbeitsraum passieren können.
+
+Wir würden Comet für Themenklärung, Quellen-Triage und wiederkehrende Informationsarbeit testen. Bei Entscheidungen mit Geld, Recht, Medizin, Kundendaten oder Veröffentlichungen bleibt Quellenprüfung Pflicht. Comet ist ein Beschleuniger für Recherche, kein Ersatz für redaktionelle Verantwortung.
 
 ## Für wen ist Perplexity Comet geeignet?
 

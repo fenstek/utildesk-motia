@@ -3,9 +3,9 @@ slug: opencode
 title: OpenCode
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-rising-ai-tools-expanded"
+editorial_batch: 2026-06-11-hype-tools-human-polish
 editorial_verdict: "caution"
 category: "Entwickler-Tools"
 price_model: "Open Source"
@@ -13,6 +13,7 @@ tags: [ai, coding, developer-tools, cli]
 official_url: "https://opencode.ai/"
 popularity: 0
 tier: B
+updated_at: 2026-06-11
 generated_at: 2026-05-31
 ---
 # OpenCode
@@ -28,6 +29,12 @@ OpenCode spricht Entwickler an, die Agentenarbeit lieber nah an Shell, Repositor
 Unsere redaktionelle Frage bei OpenCode lautet: Wird Arbeit verständlicher, überprüfbarer und besser übergebbar — oder entsteht nur eine weitere Oberfläche, die kurzfristig beeindruckt und langfristig Pflege braucht? Für unsere Bewertung zählt deshalb nicht die lauteste Produktankündigung, sondern ob OpenCode im Arbeitsalltag Grenzen, Zuständigkeit und Ergebnisqualität sichtbar macht.
 
 OpenCode gehört in einen Test, der vorab definiert, welche Aufgabe gelöst wird, welche Daten erlaubt sind und wann ein Ergebnis als ausreichend geprüft gilt. Ohne diese Disziplin bleibt selbst ein gutes Werkzeug dieser Art ein weiterer offener Prozess.
+
+## Redaktionelles Update Juni 2026
+
+OpenCode gehört zu den Tools, die den Coding-Agenten aus der geschlossenen IDE wieder stärker in das Terminal holen. Das passt zu Teams, die reproduzierbare Skripte, klare Shell-Workflows und Provider-Flexibilität mögen. Es passt weniger gut zu Teams, die ohne Review-Gewohnheit große Agentenläufe starten.
+
+Unser Test wäre bewusst klein: ein Refactoring, ein Testfix oder eine Dokumentationsänderung mit vollständigem Diff. OpenCode ist stark, wenn Entwickler jeden Schritt nachvollziehen und abbrechen können. Es wird riskant, wenn lange Läufe unbemerkt Dateien, Abhängigkeiten oder Konfigurationen verändern.
 
 ## Für wen ist OpenCode geeignet?
 

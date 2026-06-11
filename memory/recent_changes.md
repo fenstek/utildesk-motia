@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-10_
+_Last updated: 2026-06-11_
+
+## 2026-06-11 - Hype tool-card human polish
+
+- Selected the 20 active illustrated-but-not-text-registry hype tool cards left after the 2026-05-31 rising AI tools batch: BrowserOS, Browserbase, Mem0, Base44, ChatGPT Atlas, Cline, Composio, Google Antigravity, Kilo Code, Krea AI, LangGraph, Mastra, Napkin AI, OpenCode, Perplexity Comet, Pydantic AI, Qodo, Skyvern, Stagehand, and YouWare.
+- Added a fresh DE/EN "June 2026 editorial update" section to each card with practical positioning, rollout criteria, governance risks, and workflow-specific judgement instead of generic generated copy.
+- Refreshed review metadata on the 40 localized tool files and registered the batch in `docs/04_operations/tool_card_editorial_registry.json` as `2026-06-11-hype-tools-human-polish`.
 
 ## 2026-06-10 - Inventory list repair, alternatives links and Sheet cleanup
 
