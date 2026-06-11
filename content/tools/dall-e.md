@@ -14,7 +14,7 @@ affiliate_url: "https://openai.com/dall-e"
 tier: D
 generated_at: 2026-05-28
 created_at: 2026-02-03
-popularity: 59
+popularity: 62
 ---
 # DALL·E
 

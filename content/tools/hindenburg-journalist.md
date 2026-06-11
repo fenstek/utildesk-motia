@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [audio, productivity, automation, workflow]
 official_url: "https://hindenburg.com/"
-popularity: 47
+popularity: 0
 tier: C
 generated_at: 2026-05-27
 ---

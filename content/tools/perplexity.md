@@ -16,7 +16,7 @@ lastReviewed: 2026-05-28
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar", "chatgpt-claude-gemini", "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat", "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter"]
 created_at: 2026-02-02
 updated_at: 2026-05-21
-popularity: 27
+popularity: 30
 description: Perplexity ist eine KI-Such- und Antwortmaschine für schnelle Recherche mit Quellenhinweisen und Web-Kontext.
 ---
 # Perplexity

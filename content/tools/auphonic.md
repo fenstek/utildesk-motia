@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Je nach Plan
 tags: [audio, automation, productivity, transcription, video]
 official_url: "https://auphonic.com/"
-popularity: 72
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 ---

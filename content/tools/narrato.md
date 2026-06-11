@@ -13,7 +13,7 @@ official_url: "https://narrato.io/"
 affiliate_url: "https://narrato.io/"
 tier: C
 generated_at: 2026-05-28
-popularity: 32
+popularity: 35
 description: Content-Workflow-Plattform für Planung, KI-Schreiben, Redaktion und Marketingproduktion.
 ---
 # Narrato

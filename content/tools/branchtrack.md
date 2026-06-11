@@ -10,7 +10,7 @@ category: AI Image
 price_model: Abonnement
 tags: [sales, training, simulations]
 official_url: "https://www.branchtrack.com/"
-popularity: 67
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 ---
