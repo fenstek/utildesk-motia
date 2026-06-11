@@ -1539,6 +1539,39 @@
         "stagehand",
         "youware"
       ]
+    },
+    {
+      "id": "2026-06-11-hype-tools-human-polish-2",
+      "date": "2026-06-11",
+      "count": 20,
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "source": "manual selection from next hype layer after browser-agent and coding-agent rising batch; current trend check focused on app builders, coding agents, agent frameworks, generative media, model platforms and local AI",
+      "notes": "Added fresh DE/EN June 2026 editorial update sections with practical rollout judgement, governance risks, production boundaries, and workflow fit. This is a recency/human-polish layer and does not repeat the previous 20-card browser-agent/framework batch.",
+      "slugs": [
+        "lovable",
+        "bolt-new",
+        "manus",
+        "devin",
+        "openhands",
+        "v0",
+        "crew-ai",
+        "openai-codex",
+        "google-ai-studio",
+        "gumloop",
+        "sora",
+        "kling-ai",
+        "suno-ai",
+        "adobe-firefly",
+        "replicate",
+        "deepseek",
+        "grok",
+        "mistral",
+        "jan-ai",
+        "lm-studio"
+      ]
     }
   ]
 }

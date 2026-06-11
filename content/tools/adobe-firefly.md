@@ -3,9 +3,9 @@ slug: adobe-firefly
 title: Adobe Firefly
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-06-11-hype-tools-human-polish-2
 category: Design
 price_model: Freemium
 tags: ["ai", "design"]
@@ -15,10 +15,18 @@ tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-02
 popularity: 81
+updated_at: 2026-06-11
 ---
 # Adobe Firefly
 
 Adobe Firefly ist Adobes KI-Werkzeug für generative Bild- und Designarbeit. Es eignet sich vor allem, wenn Bildideen, Varianten, Hintergründe oder visuelle Richtungen schnell entstehen und anschließend in einem Adobe-Workflow weiterbearbeitet werden sollen.
+
+
+## Redaktionelles Update Juni 2026
+
+Adobe Firefly ist 2026 vor allem für Teams spannend, die generative Bild- und Designfunktionen in bestehende Kreativprozesse einbauen wollen. Der Vorteil liegt weniger in maximaler Wildheit als in Nähe zu Adobe-Workflows, Markenmaterial, Freigaben und wiederholbarer Produktion.
+
+Für Unternehmen zählt Firefly dort, wo Kreative Kontrolle behalten müssen: Kampagnenvarianten, Bildverlängerungen, Layoutideen und schnelle Visualisierung. Trotzdem braucht jedes Ergebnis einen menschlichen Blick auf Markenfit, Rechte, Realitätstreue und mögliche Artefakte.
 
 ## Für wen ist Adobe Firefly geeignet?
 
