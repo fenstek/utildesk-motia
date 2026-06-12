@@ -8,6 +8,7 @@ _Last updated: 2026-06-12_
 - GSC API showed an obsolete `https://tools.utildesk.de/sitemap-focus.xml` submission still registered from 2026-06-03 even though the Google contract is only `sitemap.xml`; removed `sitemap-focus.xml` from GSC and resubmitted only `https://tools.utildesk.de/sitemap.xml`.
 - Final GSC sitemap list after cleanup contained only `https://tools.utildesk.de/sitemap.xml`, `submitted=110`, `warnings=0`, `errors=0`; `robots.txt` still advertises only the main sitemap.
 - Current diagnosis: the email is most likely a delayed/stale Search Console notification from earlier broad/focus sitemap history or historical submitted URLs, not a present live sitemap pollution issue.
+- Follow-up safe patch aligned `tier_d_thin_or_unmonetized` tool pages with the split-search contract: generic `robots` now stays `index,follow`, while Google staging is expressed only through `googlebot: noindex,follow`. Explicit frontmatter noindex remains global noindex.
 
 ## 2026-06-12 - Ratgeber-linked tool-card gap pass and public GitHub mentions
 
