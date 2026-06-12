@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [beauty, photo-editing, mobile]
 official_url: "https://www.perfectcorp.com/consumer/apps/youcam-makeup"
-popularity: 3
+popularity: 4
 tier: D
 generated_at: 2026-05-28
 ---

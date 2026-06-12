@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://bubble.io/"
-popularity: 66
+popularity: 72
 tier: C
 generated_at: 2026-05-27
 ---

@@ -2,7 +2,7 @@
 slug: ahrefs-content-explorer
 title: Ahrefs Content Explorer
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Je nach Plan
 tags: [seo, content, analytics]
 official_url: "https://ahrefs.com/content-explorer"
-popularity: 74
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-06-11

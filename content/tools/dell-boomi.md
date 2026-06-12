@@ -2,7 +2,7 @@
 slug: dell-boomi
 title: Dell Boomi
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Abonnement
 tags: [integration, automation, data, api]
 official_url: "https://boomi.com/"
-popularity: 58
+popularity: 63
 tier: D
 generated_at: 2026-05-27
 updated_at: 2026-06-11

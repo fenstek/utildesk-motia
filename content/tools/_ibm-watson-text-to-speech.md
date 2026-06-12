@@ -5,7 +5,7 @@ category: Produktivität
 price_model: 
 tags: []
 official_url: "https://www.ibm.com/products/text-to-speech"
-popularity: 49
+popularity: 57
 ---
 
 # IBM Watson Text to Speech
