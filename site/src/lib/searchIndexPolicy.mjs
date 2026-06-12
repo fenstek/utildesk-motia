@@ -221,10 +221,11 @@ export const getToolSearchIndexDecision = (entry, options = {}) => {
   }
 
   if (tierDNoindex) {
+    // Keep non-Google crawlers indexable; Google staging is expressed only via googlebot.
     return {
       indexable: false,
-      robots: ROBOTS_NOINDEX_FOLLOW,
-      googlebotRobots: null,
+      robots: ROBOTS_INDEX_FOLLOW,
+      googlebotRobots: ROBOTS_NOINDEX_FOLLOW,
       reason: "tier_d_thin_or_unmonetized",
     };
   }
