@@ -2,7 +2,7 @@
 slug: deepl-api
 title: DeepL API
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Nutzungsbasiert
 tags: [translation, api, developers]
 official_url: "https://www.deepl.com/en/products/api"
-popularity: 60
+popularity: 65
 tier: C
 generated_at: 2026-05-15
 updated_at: 2026-06-11

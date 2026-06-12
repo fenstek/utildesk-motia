@@ -2,7 +2,7 @@
 slug: microsoft-azure-api-management
 title: Microsoft Azure API Management
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [api, developer-tools, cloud, management]
 official_url: "https://azure.microsoft.com/en-us/products/api-management"
-popularity: 93
+popularity: 95
 tier: D
 generated_at: 2026-05-28
 updated_at: 2026-06-11

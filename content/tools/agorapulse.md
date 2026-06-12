@@ -2,7 +2,7 @@
 slug: agorapulse
 title: Agorapulse
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: ["social-media", "marketing", "automation", "analytics"]
 official_url: "https://www.agorapulse.com/"
-popularity: 76
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-06-11

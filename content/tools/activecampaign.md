@@ -2,7 +2,7 @@
 slug: activecampaign
 title: ActiveCampaign
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [marketing, workflow]
 official_url: "https://www.activecampaign.com/"
-popularity: 84
+popularity: 88
 tier: D
 generated_at: 2026-05-10
 updated_at: 2026-06-11

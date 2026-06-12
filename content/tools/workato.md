@@ -2,7 +2,7 @@
 slug: workato
 title: Workato
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual corrective editorial pass"
+editorial_reviewed_by: Utildesk manual corrective editorial pass
 editorial_reviewed_at: 2026-06-11
 editorial_status: manual_polished
 editorial_batch: 2026-06-11-unedited-tool-card-human-pass-1
@@ -10,7 +10,7 @@ category: AI Agents
 price_model: 
 tags: ["automation", "workflow", "no-code", "productivity"]
 official_url: "https://www.workato.com/"
-popularity: 5
+popularity: 6
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-06-11
