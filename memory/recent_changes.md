@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-12_
 
+## 2026-06-12 - GSC sitemap noindex alert triage
+
+- Investigated the Google Search Console email `WNC-20237597` about a new `Excluded by noindex tag` reason for pages in a sitemap.
+- Live production check found the current `https://tools.utildesk.de/sitemap.xml` clean: 110 URLs, all HTTP 200, no `X-Robots-Tag: noindex`, no `robots noindex`, and no `googlebot noindex` on the submitted URLs.
+- GSC API showed an obsolete `https://tools.utildesk.de/sitemap-focus.xml` submission still registered from 2026-06-03 even though the Google contract is only `sitemap.xml`; removed `sitemap-focus.xml` from GSC and resubmitted only `https://tools.utildesk.de/sitemap.xml`.
+- Final GSC sitemap list after cleanup contained only `https://tools.utildesk.de/sitemap.xml`, `submitted=110`, `warnings=0`, `errors=0`; `robots.txt` still advertises only the main sitemap.
+- Current diagnosis: the email is most likely a delayed/stale Search Console notification from earlier broad/focus sitemap history or historical submitted URLs, not a present live sitemap pollution issue.
+
 ## 2026-06-12 - Ratgeber-linked tool-card gap pass and public GitHub mentions
 
 - Audited all Ratgeber/internal-cluster `/tools/` references at body level instead of trusting legacy `editorial_reviewed` metadata alone; the pass found 81 unique internally linked tool slugs, 38 weak cards, and 2 external source-link false positives that were not Utildesk tool pages.
