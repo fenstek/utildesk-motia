@@ -14,7 +14,7 @@ affiliate_url: "https://firefly.adobe.com/?media=featured"
 tier: C
 generated_at: 2026-05-28
 created_at: 2026-02-02
-popularity: 84
+popularity: 81
 updated_at: 2026-06-11
 ---
 # Adobe Firefly

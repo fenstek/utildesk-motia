@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Kostenpflichtig
 tags: ["automation"]
 official_url: "https://syllable.ai/"
-popularity: 16
+popularity: 17
 description: Syllable ist ein Support- und Kommunikationswerkzeug für KI-gestützte Automatisierung von telefonischen Service- und Terminprozessen.
 tier: C
 generated_at: 2026-05-28
