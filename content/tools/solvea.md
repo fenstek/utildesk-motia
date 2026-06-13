@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: [customer-service, scheduling, conversational-ai]
 official_url: "https://solvea.cx/"
-popularity: 25
+popularity: 28
 tier: C
 generated_at: 2026-05-27
 ---

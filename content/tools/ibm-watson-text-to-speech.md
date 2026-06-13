@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Je nach Plan
 tags: [audio, productivity, automation, customer-support]
 official_url: "https://www.ibm.com/products/text-to-speech"
-popularity: 57
+popularity: 54
 tier: C
 generated_at: 2026-05-27
 ---

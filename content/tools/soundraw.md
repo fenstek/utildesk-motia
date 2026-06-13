@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Je nach Plan
 tags: [audio, workflow]
 official_url: "https://soundraw.io/"
-popularity: 24
+popularity: 27
 tier: C
 generated_at: 2026-05-27
 ---
