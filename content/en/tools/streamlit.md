@@ -36,6 +36,10 @@ It fits data science, analytics, and ML teams building internal tools without st
 
 The daily advantage is that Python teams can stay in Python. The tradeoffs are caching, permissions, runtime behavior, and deciding whether the app is exploratory or a durable decision workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streamlit-editorial.webp" alt="Illustration for Streamlit: Python data analysis becomes a clear internal dashboard with charts and decision filters" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Python-first app API with widgets, charts, and layouts.

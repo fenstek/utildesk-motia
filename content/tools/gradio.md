@@ -35,6 +35,10 @@ Gradio passt zu ML-Entwicklern, Research-Teams und technischen Produktleuten, di
 
 Die Stärke ist die direkte Modellinteraktion. Wer Gradio seriös nutzt, dokumentiert Beispielinputs, Grenzfälle und Fehlverhalten, statt nur eine hübsche Demo zu zeigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gradio-editorial.webp" alt="Illustration zu Gradio: ein Modelltest wird als interaktive Eingabe-Ausgabe-Demo mit Text-, Bild- und Audio-Signalen sichtbar" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Python-Komponenten für Eingaben, Ausgaben und einfache Layouts.

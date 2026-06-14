@@ -35,6 +35,10 @@ Geeignet ist Streamlit für Data-Science-, Analytics- und ML-Teams, die interne 
 
 Im Alltag zählt, dass Python-Teams in ihrer Sprache bleiben können. Wichtig sind aber Daten-Caching, Berechtigungen, klare Laufzeiten und die Frage, ob eine App nur Analysewerkzeug oder ein dauerhaftes Betriebssystem für Entscheidungen werden soll.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streamlit-editorial.webp" alt="Illustration zu Streamlit: Python-Datenanalyse verwandelt sich in ein klares internes Dashboard mit Diagrammen und Entscheidungsfiltern" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Python-first App-API mit Widgets, Charts und Layouts.
