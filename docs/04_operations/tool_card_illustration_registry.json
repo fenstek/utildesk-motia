@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-14",
   "purpose": "Persistent registry of tool cards that already received editorial mid-article illustrations. Check this file before adding future tool-card artwork so the same page is not illustrated twice.",
   "selection_rule": "Exclude every slug listed in batches[].slugs unless the user explicitly asks to replace or revise an existing illustration.",
   "batches": [
@@ -2820,6 +2820,43 @@
         "content/images/tools/nvidia-rtx-6000-ada-generation-editorial.webp",
         "content/images/tools/ibm-api-connect-editorial.webp",
         "content/images/tools/tibco-cloud-integration-editorial.webp"
+      ]
+    },
+    {
+      "id": "2026-06-14-optiplex-gemini-web-sheet-new-hype-10-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1280,
+      "image_height_px": 720,
+      "placement": "mid-article image-only figure after the opening editorial paragraph",
+      "visual_direction": "real raster Gemini web artwork on physical OptiPlex paid vasjakotov11@gmail.com profile; varied business/editorial styles; cropped to remove Gemini sparkle; no SVG, logos, UI screenshots, or readable text",
+      "slugs": [
+        "cohere-api",
+        "google-lens",
+        "faiss",
+        "trino",
+        "gitlab",
+        "circleci",
+        "socket-io",
+        "aws-appsync",
+        "salesforce-einstein",
+        "opentoonz"
+      ],
+      "images": [
+        "content/images/tools/cohere-api-editorial.webp",
+        "content/images/tools/google-lens-editorial.webp",
+        "content/images/tools/faiss-editorial.webp",
+        "content/images/tools/trino-editorial.webp",
+        "content/images/tools/gitlab-editorial.webp",
+        "content/images/tools/circleci-editorial.webp",
+        "content/images/tools/socket-io-editorial.webp",
+        "content/images/tools/aws-appsync-editorial.webp",
+        "content/images/tools/salesforce-einstein-editorial.webp",
+        "content/images/tools/opentoonz-editorial.webp"
       ]
     }
   ]

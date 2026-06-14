@@ -1718,6 +1718,26 @@
         "tibco-cloud-integration",
         "trint"
       ]
+    },
+    {
+      "id": "2026-06-14-sheet-new-hype-10-human-publish",
+      "note": "Selected 10 high-signal Google Sheet NEW candidates after the previous 20-card batch. Old publish_one_slug path was blocked by invalid OpenAI API key, so cards were created manually with full DE/EN editorial structure, internal alternatives, explicit manual metadata, and Gemini web illustrations.",
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "slugs": [
+        "cohere-api",
+        "google-lens",
+        "faiss",
+        "trino",
+        "gitlab",
+        "circleci",
+        "socket-io",
+        "aws-appsync",
+        "salesforce-einstein",
+        "opentoonz"
+      ]
     }
   ]
 }
