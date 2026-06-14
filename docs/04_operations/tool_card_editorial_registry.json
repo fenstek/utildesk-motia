@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12",
+  "last_updated": "2026-06-14",
   "purpose": "Persistent registry of manually expanded tool cards. Use this file before selecting another editorial batch so the same tool is not rewritten repeatedly.",
   "selection_rule": "Exclude every slug listed in any batch before choosing new editorial candidates.",
   "batches": [
@@ -1655,6 +1655,37 @@
         "xero",
         "you-com",
         "zoho-expense"
+      ]
+    },
+    {
+      "id": "2026-06-14-sheet-new-hype-20-publish",
+      "source": "Google Sheet NEW manual hype selection",
+      "note": "Published 20 selected NEW Sheet candidates with full DE/EN editorial structure after the legacy OpenAI API publisher failed on an expired key.",
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "slugs": [
+        "anthropic-api",
+        "apify",
+        "callminer-eureka",
+        "d3-js",
+        "figjam",
+        "gradio",
+        "hugging-face-spaces",
+        "ibm-api-connect",
+        "jax",
+        "jupyter-notebook",
+        "litellm",
+        "nvidia-rtx-6000-ada-generation",
+        "obsidian",
+        "roam-research",
+        "salesforce-lightning",
+        "servicenow",
+        "streamlabs",
+        "streamlit",
+        "tibco-cloud-integration",
+        "trint"
       ]
     }
   ]
