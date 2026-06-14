@@ -676,8 +676,9 @@ _Last updated: 2026-06-12_
 - Replaced the first-pass formulaic copy with tool-specific positioning, more concrete audience/use-case notes, sharper workflow caveats, privacy/cost considerations, stronger internal alternatives, and five-item FAQ blocks.
 - Added editorial registry batch `2026-06-14-sheet-new-hype-20-human-polish`; future manual-card selections should continue skipping these slugs unless explicitly revisiting them.
 
-## 2026-06-14 - OptiPlex Gemini illustrations for first three Sheet NEW tools
+## 2026-06-14 - OptiPlex Gemini web illustrations for first three Sheet NEW tools
 
 - Added Gemini-authored editorial illustrations for `hugging-face-spaces`, `streamlit`, and `gradio`, covering both DE/EN tool pages with shared WebP assets.
-- OpenClaw `image_generate` on `jgdus-OptiPlex-3000` was checked first; Google Gemini image API, OpenRouter, and Hermes/FAL Nano Banana routes had no usable image credentials, so the final artwork was generated as SVG by Gemini CLI on OptiPlex and rendered to WebP with `ffmpeg`.
-- Updated `docs/04_operations/tool_card_illustration_registry.json` batch `2026-06-14-optiplex-gemini-cli-first-3-sheet-new-illustrations`; future illustration batches should skip these slugs.
+- OpenClaw `image_generate` and Gemini CLI image paths on `jgdus-OptiPlex-3000` were checked first, but no usable Gemini image API credentials were available.
+- Final artwork was generated as real raster images in Gemini web on OptiPlex under the paid `vasjakotov11@gmail.com` profile, exported from browser blobs, cropped to remove the Gemini UI sparkle, converted to WebP, and visually checked for varied styles.
+- Updated `docs/04_operations/tool_card_illustration_registry.json` batch `2026-06-14-optiplex-gemini-web-first-3-sheet-new-illustrations`; future illustration batches should skip these slugs.
