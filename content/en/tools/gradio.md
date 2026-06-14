@@ -36,6 +36,10 @@ It fits ML engineers, research teams, and technical product people who need to m
 
 The strength is direct model interaction. Serious use means documenting sample inputs, edge cases, and failure modes rather than only showing the polished demo path.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gradio-editorial.webp" alt="Illustration for Gradio: a model test becomes an interactive input-output demo with text, image, and audio signals" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Python components for inputs, outputs, and simple layouts.

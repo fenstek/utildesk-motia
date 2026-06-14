@@ -36,6 +36,10 @@ It fits teams publishing model demos, internal evaluations, research companions,
 
 The daily value is the short loop: change code, open the demo, gather feedback. Teams should still decide early which datasets may be visible, who owns maintenance, and when a Space has outgrown the demo stage.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-spaces-editorial.webp" alt="Illustration for Hugging Face Spaces: researchers share an AI demo as a glowing workbench between model cards, datasets, and feedback traces" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Hosting for small interactive AI and data apps.

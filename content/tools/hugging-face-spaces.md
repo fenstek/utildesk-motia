@@ -35,6 +35,10 @@ Sinnvoll ist Spaces für Teams, die Modelle öffentlich zeigen, intern testen od
 
 Der eigentliche Nutzen liegt in der kurzen Feedbackschleife: Code ändern, Demo öffnen, Rückmeldung sammeln. Teams sollten aber früh festlegen, welche Datasets sichtbar sein dürfen, wer Builds pflegt und wann aus einem Space ein eigenes Produktmodul werden muss.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hugging-face-spaces-editorial.webp" alt="Illustration zu Hugging Face Spaces: Forschende teilen eine KI-Demo als leuchtende Werkbank zwischen Modellkarten, Datensätzen und Feedback-Spuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Hosting für kleine interaktive KI- und Daten-Apps.
