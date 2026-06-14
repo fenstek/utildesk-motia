@@ -662,3 +662,10 @@ _Last updated: 2026-06-12_
 
 - Centered the homepage decision masthead on phones and widened the masthead subtitle to the available mobile width so it no longer reads like a narrow left-column label with an empty right half.
 - Local mobile QA covered the homepage at 375px, 390px, and 430px; the masthead title/subtitle stayed centered, used the available width, and produced no horizontal overflow or console errors.
+
+## 2026-06-14 - Sheet NEW hype tool publication batch
+
+- Selected 20 high-signal `NEW` candidates from the Google Sheet source of truth and published full DE/EN editorial cards: `hugging-face-spaces`, `streamlit`, `gradio`, `litellm`, `anthropic-api`, `obsidian`, `roam-research`, `figjam`, `servicenow`, `apify`, `jax`, `d3-js`, `jupyter-notebook`, `trint`, `streamlabs`, `salesforce-lightning`, `callminer-eureka`, `nvidia-rtx-6000-ada-generation`, `ibm-api-connect`, `tibco-cloud-integration`.
+- The legacy `scripts/publish_one_slug.mjs` path was attempted first on the production checkout, but the stored OpenAI API key returned 401; the touched Sheet row was reset from `IN_PROGRESS` back to `NEW`, then the batch was completed locally with manual full-card content.
+- Updated `docs/04_operations/tool_card_editorial_registry.json` batch `2026-06-14-sheet-new-hype-20-publish`; generation intentionally kept the compact sitemap policy, so long-tail cards remain governed by the existing search-index rules instead of broad sitemap expansion.
+- Verification before commit: English translations, `check:editorial`, `check:tool-quality`, internal alternative-link scan, manifest regeneration, and full `npm --prefix site run build`.
