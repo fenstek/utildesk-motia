@@ -1687,6 +1687,37 @@
         "tibco-cloud-integration",
         "trint"
       ]
+    },
+    {
+      "id": "2026-06-14-sheet-new-hype-20-human-polish",
+      "source": "second-pass human editorial polish after Sheet NEW publication batch",
+      "note": "Expanded the 20 freshly published Sheet NEW tool cards with less templated DE/EN copy, stronger workflow caveats, custom FAQ, and tighter internal alternatives.",
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "slugs": [
+        "anthropic-api",
+        "apify",
+        "callminer-eureka",
+        "d3-js",
+        "figjam",
+        "gradio",
+        "hugging-face-spaces",
+        "ibm-api-connect",
+        "jax",
+        "jupyter-notebook",
+        "litellm",
+        "nvidia-rtx-6000-ada-generation",
+        "obsidian",
+        "roam-research",
+        "salesforce-lightning",
+        "servicenow",
+        "streamlabs",
+        "streamlit",
+        "tibco-cloud-integration",
+        "trint"
+      ]
     }
   ]
 }

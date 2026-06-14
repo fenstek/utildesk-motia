@@ -669,3 +669,9 @@ _Last updated: 2026-06-12_
 - The legacy `scripts/publish_one_slug.mjs` path was attempted first on the production checkout, but the stored OpenAI API key returned 401; the touched Sheet row was reset from `IN_PROGRESS` back to `NEW`, then the batch was completed locally with manual full-card content.
 - Updated `docs/04_operations/tool_card_editorial_registry.json` batch `2026-06-14-sheet-new-hype-20-publish`; generation intentionally kept the compact sitemap policy, so long-tail cards remain governed by the existing search-index rules instead of broad sitemap expansion.
 - Verification before commit: English translations, `check:editorial`, `check:tool-quality`, internal alternative-link scan, manifest regeneration, and full `npm --prefix site run build`.
+
+## 2026-06-14 - Sheet NEW hype 20 human editorial second pass
+
+- Reworked the same 20 freshly published Sheet NEW tool cards with a broader manual editorial pass in German and English.
+- Replaced the first-pass formulaic copy with tool-specific positioning, more concrete audience/use-case notes, sharper workflow caveats, privacy/cost considerations, stronger internal alternatives, and five-item FAQ blocks.
+- Added editorial registry batch `2026-06-14-sheet-new-hype-20-human-polish`; future manual-card selections should continue skipping these slugs unless explicitly revisiting them.
