@@ -35,6 +35,10 @@ Roam passt zu Forschenden, Autorinnen, Produktstrategen und Solo-Wissensarbeiter
 
 Roam belohnt regelmäßige Nutzung. Wer jeden Tag kurze Notizen, Referenzen und Fragen einträgt, bekommt mit der Zeit Zusammenhänge zurück; wer nur gelegentlich Dokumente ablegt, wird den Preis und die Eigenlogik schwerer rechtfertigen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/roam-research-editorial.webp" alt="Illustration zu Roam Research: eine gezeichnete Stadt aus Ideen, Br?cken und vernetzten Forschungspfaden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Blockbasierte Notizen mit Referenzen und Backlinks.

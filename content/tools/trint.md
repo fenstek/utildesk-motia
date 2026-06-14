@@ -35,6 +35,10 @@ Geeignet ist Trint für Journalisten, Podcaster, Videoteams, Marktforschung und 
 
 Der Mehrwert liegt nicht nur in automatischer Transkription, sondern im anschließenden Redigieren: Sprecher, Zitate, Zeitmarken und Freigaben müssen sauber werden, bevor Material veröffentlicht wird.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/trint-editorial.webp" alt="Illustration zu Trint: gesprochene Interviews verwandeln sich in geordnete Transkriptb?nder" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Automatische Transkription für Audio und Video.

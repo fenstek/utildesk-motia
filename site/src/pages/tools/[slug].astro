@@ -13,7 +13,7 @@ import {
 } from "../../lib/searchIndexPolicy.mjs";
 import {
   classifyToolEntry,
-  isCuratedTier,
+  isCuratedToolEntry,
   stripTemplateBoilerplate,
 } from "../../lib/toolQuality.mjs";
 import { normalizePriceModel } from "../../lib/priceModel";
@@ -50,7 +50,7 @@ const searchIndexDecision = getToolSearchIndexDecision(entry, {
   addedAtRank: toolAddedAtRankMap.get(entry.slug) ?? 0,
 });
 const toolQuality = classifyToolEntry(entry);
-const isCuratedTool = isCuratedTier(toolQuality.tier);
+const isCuratedTool = isCuratedToolEntry(entry, toolQuality);
 const editorialVerdict = getToolEditorialVerdict(
   data.editorial_verdict,
   "de",
@@ -381,6 +381,8 @@ const checkedDateSource =
   data.last_reviewed ||
   data.lastReviewedAt ||
   data.last_reviewed_at ||
+  data.editorial_reviewed_at ||
+  data.editorialReviewedAt ||
   (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
 const checkedDate = checkedDateSource
   ? new Intl.DateTimeFormat("de-DE", {

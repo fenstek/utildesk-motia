@@ -35,6 +35,10 @@ Geeignet ist TIBCO für Integrations-, Enterprise-Architecture- und Plattformtea
 
 Integrationsarbeit scheitert selten am ersten Connector, sondern an Datenmodellen, Fehlerbehandlung, Ownership und Monitoring. TIBCO lohnt sich, wenn diese Betriebsfragen ernst genommen werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tibco-cloud-integration-editorial.webp" alt="Illustration zu TIBCO Cloud Integration: Unternehmenssysteme werden durch Kan?le, Br?cken und Ereignisstr?me verbunden" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Cloudbasierte Integrations- und iPaaS-Funktionen.

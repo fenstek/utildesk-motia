@@ -36,6 +36,10 @@ It fits researchers, writers, product strategists, and solo knowledge workers wh
 
 Roam rewards regular use. Daily notes, references, and questions compound over time; occasional document storage is unlikely to justify the price or workflow shift.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/roam-research-editorial.webp" alt="Illustration for Roam Research: an illustrated city of ideas, bridges, and connected research paths" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Block-based notes with references and backlinks.

@@ -35,6 +35,10 @@ Obsidian passt zu Forschenden, Schreibenden, Entwicklern, Wissensarbeitern und T
 
 Im Alltag überzeugt Obsidian, wenn Notizen nicht im Posteingang sterben. Links, Templates und gute Ordnerregeln helfen; zu viele Plugins und Graph-Spielerei können den Fokus aber genauso schnell zerstören.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/obsidian-editorial.webp" alt="Illustration zu Obsidian: ein Wissensgarten aus verkn?pften Notizen, Regalen und kleinen Ged?chtnisr?umen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Lokale Markdown-Dateien als Basis.

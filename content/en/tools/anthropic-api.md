@@ -36,6 +36,10 @@ It fits engineering teams embedding Claude into apps, internal assistants, revie
 
 In production, model choice, prompt versioning, cost, rate limits, and evaluation against real examples matter. Claude can be strong, but the API still needs testing against failures, hallucinations, and sensitive inputs.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anthropic-api-editorial.webp" alt="Illustration for Anthropic API: a protected model core sits behind glass guardrails and review gates" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - API access to Claude models for text, analysis, and agent workflows.

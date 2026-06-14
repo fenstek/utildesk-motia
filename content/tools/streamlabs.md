@@ -35,6 +35,10 @@ Passend ist Streamlabs für Streamer, Creator, kleine Medienmarken und Teams mit
 
 Im Alltag zählt Stabilität mehr als Effektfeuerwerk. Szenen, Audiopegel, Alerts und Aufnahmequalität sollten vor jeder Sendung getestet werden, sonst wird das Tool zur Fehlerquelle im Live-Moment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streamlabs-editorial.webp" alt="Illustration zu Streamlabs: ein Creator-Studio b?ndelt Licht, Kameraformen und Publikumsenergie" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Streaming- und Recording-Software mit Creator-Fokus.

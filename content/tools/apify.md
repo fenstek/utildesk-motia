@@ -35,6 +35,10 @@ Geeignet ist Apify für Data-, Growth-, Research- und Engineering-Teams mit wied
 
 Der Alltag besteht aus mehr als “Daten holen”. Selektoren brechen, Websites ändern sich, Rate Limits greifen und Nutzungsbedingungen müssen beachtet werden. Apify hilft beim Betrieb, ersetzt aber keine Datenverantwortung.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apify-editorial.webp" alt="Illustration zu Apify: kleine Datensammler bringen strukturierte Pakete aus einer abstrakten Web-Stadt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Cloud-Plattform für Scraping, Crawling und Browser-Automation.

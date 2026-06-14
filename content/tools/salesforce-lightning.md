@@ -35,6 +35,10 @@ Geeignet ist Lightning für Salesforce-Teams, Admins, Entwickler und Unternehmen
 
 Im Alltag entscheidet die Qualität des Salesforce-Datenmodells. Lightning kann sehr produktiv sein, wenn Felder, Rollen, Flows und Komponenten auf reale Arbeit abgestimmt sind; sonst wird es nur ein hübscheres CRM-Labyrinth.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/salesforce-lightning-editorial.webp" alt="Illustration zu Salesforce Lightning: Kundenmomente flie?en durch schnelle Workflow-Schienen in einen gemeinsamen Hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Komponentenbasierte UI- und App-Plattform für Salesforce.

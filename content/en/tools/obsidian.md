@@ -36,6 +36,10 @@ It fits researchers, writers, developers, and knowledge workers with documentati
 
 Obsidian works when notes do not die in an inbox. Links, templates, and simple folder rules help; too many plugins and graph tinkering can easily become a distraction.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/obsidian-editorial.webp" alt="Illustration for Obsidian: a knowledge garden made of linked notes, shelves, and small memory rooms" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Local Markdown files as the foundation.

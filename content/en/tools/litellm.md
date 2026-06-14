@@ -36,6 +36,10 @@ It is relevant for engineering, platform, and AI operations teams that need one 
 
 The daily value depends on discipline around the proxy: logging, cost limits, model names, error rates, and who can approve new models. Without that, LiteLLM becomes just another service nobody owns.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/litellm-editorial.webp" alt="Illustration for LiteLLM: a transparent routing model connects several model paths inside a controlled workbench" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Unified API layer for many LLM providers.

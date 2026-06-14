@@ -36,6 +36,10 @@ It is relevant for 3D, CAD, VFX, research, AI, and engineering teams with workst
 
 The daily question is not only raw GPU power. Drivers, cooling, power, memory needs, software certification, and utilization decide whether the investment makes sense.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-rtx-6000-ada-generation-editorial.webp" alt="Illustration for NVIDIA RTX 6000 Ada Generation: a powerful workstation core feeds simulations and AI render tiles" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Professional NVIDIA workstation GPU from the Ada generation.

@@ -36,6 +36,10 @@ It fits integration, enterprise architecture, and platform teams with complex sy
 
 Integration work rarely fails at the first connector; it fails around data models, error handling, ownership, and monitoring. TIBCO is worthwhile when those operating questions are taken seriously.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/tibco-cloud-integration-editorial.webp" alt="Illustration for TIBCO Cloud Integration: enterprise systems are connected by canals, bridges, and event streams" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Cloud-based integration and iPaaS capabilities.

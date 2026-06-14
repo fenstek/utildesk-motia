@@ -2769,6 +2769,58 @@
         "content/images/tools/streamlit-editorial.webp",
         "content/images/tools/gradio-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-06-14-optiplex-gemini-web-remaining-17-sheet-new-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1280,
+      "image_height_px": 720,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "model": "Gemini web on OptiPlex, account vasjakotov11@gmail.com (raster image generation)",
+      "note": "Completes the remaining 17 illustrations for the 2026-06-14 Sheet NEW hype tool batch after the first three Gemini web images. Generated in separate Gemini web chats on jgdus-OptiPlex-3000, exported from browser blobs, strictly cropped to remove Gemini UI sparkle, converted to WebP, and visually checked for varied story-forward styles.",
+      "slugs": [
+        "litellm",
+        "anthropic-api",
+        "obsidian",
+        "roam-research",
+        "figjam",
+        "servicenow",
+        "apify",
+        "jax",
+        "d3-js",
+        "jupyter-notebook",
+        "trint",
+        "streamlabs",
+        "salesforce-lightning",
+        "callminer-eureka",
+        "nvidia-rtx-6000-ada-generation",
+        "ibm-api-connect",
+        "tibco-cloud-integration"
+      ],
+      "images": [
+        "content/images/tools/litellm-editorial.webp",
+        "content/images/tools/anthropic-api-editorial.webp",
+        "content/images/tools/obsidian-editorial.webp",
+        "content/images/tools/roam-research-editorial.webp",
+        "content/images/tools/figjam-editorial.webp",
+        "content/images/tools/servicenow-editorial.webp",
+        "content/images/tools/apify-editorial.webp",
+        "content/images/tools/jax-editorial.webp",
+        "content/images/tools/d3-js-editorial.webp",
+        "content/images/tools/jupyter-notebook-editorial.webp",
+        "content/images/tools/trint-editorial.webp",
+        "content/images/tools/streamlabs-editorial.webp",
+        "content/images/tools/salesforce-lightning-editorial.webp",
+        "content/images/tools/callminer-eureka-editorial.webp",
+        "content/images/tools/nvidia-rtx-6000-ada-generation-editorial.webp",
+        "content/images/tools/ibm-api-connect-editorial.webp",
+        "content/images/tools/tibco-cloud-integration-editorial.webp"
+      ]
     }
   ]
 }

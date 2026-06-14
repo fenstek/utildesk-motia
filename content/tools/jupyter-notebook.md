@@ -35,6 +35,10 @@ Geeignet ist Jupyter für Data Science, Forschung, Lehre, schnelle Analysen und 
 
 Im Alltag ist Jupyter produktiv, wenn Notebooks nicht als endgültiger Codefriedhof enden. Zellreihenfolge, Datenstände, Umgebungen und versteckte Seiteneffekte müssen kontrolliert werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jupyter-notebook-editorial.webp" alt="Illustration zu Jupyter Notebook: Experimente, Erkl?rungen und abstrakte Diagrammformen f?llen einen Forschungstisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Code, Markdown, Visualisierungen und Ausgaben in einem Dokument.

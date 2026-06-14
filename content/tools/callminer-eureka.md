@@ -35,6 +35,10 @@ Geeignet ist CallMiner für größere Service-, Sales- und Compliance-Organisati
 
 Der Nutzen hängt stark von sauberen Kategorien, Stichprobenlogik und Maßnahmen ab. Analytics ohne Follow-up verbessert keinen Service; die Erkenntnisse müssen in Coaching, Prozessänderungen und Produktfeedback fließen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/callminer-eureka-editorial.webp" alt="Illustration zu CallMiner Eureka: Gespr?chssignale werden auf einem Analysebrett zu Coaching- und Risikospuren" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Speech- und Textanalyse für Kundeninteraktionen.

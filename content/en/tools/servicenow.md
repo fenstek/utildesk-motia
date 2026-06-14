@@ -36,6 +36,10 @@ It fits larger organizations with strong process and governance requirements. Fo
 
 Implementation matters more than the brand. ServiceNow needs process ownership, data models, roles, and change discipline; otherwise it becomes an expensive digital desk for old bureaucracy.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/servicenow-editorial.webp" alt="Illustration for ServiceNow: service processes move through control rooms, handoffs, and repair stations" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Workflow and service management platform for enterprises.

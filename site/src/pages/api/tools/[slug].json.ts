@@ -5,7 +5,7 @@ import {
   getWordCountFromMarkdown,
 } from "../../../lib/machineReadable";
 import { toAbsoluteUrl } from "../../../lib/siteMeta";
-import { classifyToolEntry, isCuratedTier, stripTemplateBoilerplate } from "../../../lib/toolQuality.mjs";
+import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../../../lib/toolQuality.mjs";
 
 export const prerender = true;
 
@@ -21,7 +21,8 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
   const { entry } = props;
   const item = buildToolCatalogItem(entry);
   const quality = classifyToolEntry(entry);
-  const contentMarkdown = isCuratedTier(quality.tier)
+  const isCurated = isCuratedToolEntry(entry, quality);
+  const contentMarkdown = isCurated
     ? entry.content
     : stripTemplateBoilerplate(entry.content);
 
@@ -33,7 +34,7 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
     data: {
       ...item,
       tier: quality.tier,
-      editorialStatus: isCuratedTier(quality.tier) ? "curated" : "automatic",
+      editorialStatus: isCurated ? "curated" : "automatic",
       featureList: extractFeatureList(contentMarkdown),
       wordCount: getWordCountFromMarkdown(contentMarkdown),
       contentMarkdown,

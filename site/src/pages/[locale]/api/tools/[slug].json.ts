@@ -6,7 +6,7 @@ import {
 import { getWordCountFromMarkdown } from "../../../../lib/machineReadable";
 import { listActiveToolEntries } from "../../../../lib/toolEntries.mjs";
 import { SITE_URL } from "../../../../lib/siteMeta";
-import { classifyToolEntry, isCuratedTier, stripTemplateBoilerplate } from "../../../../lib/toolQuality.mjs";
+import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../../../../lib/toolQuality.mjs";
 
 export const prerender = true;
 
@@ -22,7 +22,8 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
   const { entry } = props;
   const meta = getEnglishToolMeta(entry);
   const quality = classifyToolEntry(entry);
-  const markdown = isCuratedTier(quality.tier)
+  const isCurated = isCuratedToolEntry(entry, quality);
+  const markdown = isCurated
     ? buildEnglishToolMarkdown(entry)
     : stripTemplateBoilerplate(buildEnglishToolMarkdown(entry));
 
@@ -42,7 +43,7 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
       officialUrl: meta.officialUrl || null,
       affiliateUrl: meta.affiliateUrl || null,
       tier: quality.tier,
-      editorialStatus: isCuratedTier(quality.tier) ? "curated" : "automatic",
+      editorialStatus: isCurated ? "curated" : "automatic",
       wordCount: getWordCountFromMarkdown(markdown),
       contentMarkdown: markdown,
     },

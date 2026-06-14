@@ -5,7 +5,7 @@ import {
   hasEnglishToolTranslation,
 } from "../../../../lib/englishContent";
 import { listActiveToolEntries } from "../../../../lib/toolEntries.mjs";
-import { classifyToolEntry, isCuratedTier, stripTemplateBoilerplate } from "../../../../lib/toolQuality.mjs";
+import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../../../../lib/toolQuality.mjs";
 
 export const prerender = true;
 
@@ -21,7 +21,8 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
   const { entry } = props;
   const meta = getEnglishToolMeta(entry);
   const quality = classifyToolEntry(entry);
-  const contentMarkdown = isCuratedTier(quality.tier)
+  const isCurated = isCuratedToolEntry(entry, quality);
+  const contentMarkdown = isCurated
     ? buildEnglishToolMarkdown(entry)
     : [
         "> This entry was generated automatically from public provider information and has not been editorially reviewed.",
@@ -41,7 +42,7 @@ export async function GET({ props }: { props: { entry: Awaited<ReturnType<typeof
       officialUrl: meta.officialUrl || undefined,
       affiliateUrl: meta.affiliateUrl || undefined,
       tier: quality.tier,
-      editorialStatus: isCuratedTier(quality.tier) ? "curated" : "automatic",
+      editorialStatus: isCurated ? "curated" : "automatic",
     }),
     contentMarkdown,
   ].join("\n");

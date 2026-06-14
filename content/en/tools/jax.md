@@ -36,6 +36,10 @@ It fits ML research, scientific computing, and advanced engineering teams with P
 
 JAX rewards functional thinking, clean data structures, and understanding compilation. Teams that only need standard model training may not need the extra mental model.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jax-editorial.webp" alt="Illustration for JAX: glowing gradients and array lattices are tuned inside a research lab" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - NumPy-like API with automatic differentiation.

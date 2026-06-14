@@ -169,6 +169,31 @@ export function isCuratedTier(tier) {
   return tier === "A" || tier === "B";
 }
 
+export function hasManualEditorialReview(entryOrData = {}) {
+  const data = entryOrData?.data ?? entryOrData ?? {};
+  const status = String(data.editorial_status ?? data.editorialStatus ?? "")
+    .trim()
+    .toLowerCase();
+  const reviewedFlag = String(data.editorial_reviewed ?? data.editorialReviewed ?? "")
+    .trim()
+    .toLowerCase();
+  const reviewedAt = String(data.editorial_reviewed_at ?? data.editorialReviewedAt ?? "").trim();
+
+  return (
+    data.editorial_reviewed === true ||
+    data.editorialReviewed === true ||
+    reviewedFlag === "true" ||
+    status === "manual_polished" ||
+    status === "curated" ||
+    status.startsWith("manual") ||
+    Boolean(reviewedAt)
+  );
+}
+
+export function isCuratedToolEntry(entry, quality = null) {
+  return hasManualEditorialReview(entry) || isCuratedTier((quality ?? classifyToolEntry(entry)).tier);
+}
+
 export function stripTemplateBoilerplate(content) {
   let next = String(content ?? "");
 

@@ -36,6 +36,10 @@ It fits frontend developers, data journalists, visual analytics teams, and produ
 
 D3 offers enormous control, but requires design and engineering discipline. Axes, responsiveness, accessibility, performance, and data preparation are part of the work.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/d3-js-editorial.webp" alt="Illustration for D3.js: raw data becomes visible as threads, light forms, and spatial patterns" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Data binding for DOM, SVG, and Canvas-oriented workflows.

@@ -35,6 +35,10 @@ Passend ist ServiceNow für größere Organisationen mit klaren Prozess- und Gov
 
 Im Alltag entscheidet die Implementierung mehr als die Plattformmarke. ServiceNow braucht saubere Prozessverantwortung, Datenmodelle, Rollen und Änderungsdisziplin; sonst entsteht ein sehr teurer digitaler Schreibtisch für alte Bürokratie.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/servicenow-editorial.webp" alt="Illustration zu ServiceNow: Serviceprozesse laufen durch Leitst?nde, ?bergaben und Reparaturstationen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Workflow- und Service-Management-Plattform für Unternehmen.
