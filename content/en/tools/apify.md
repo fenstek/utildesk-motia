@@ -36,6 +36,10 @@ It fits data, growth, research, and engineering teams with recurring web data ta
 
 Daily work is more than “get the data.” Selectors break, websites change, rate limits apply, and terms must be respected. Apify helps with operations, but it does not remove data responsibility.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apify-editorial.webp" alt="Illustration for Apify: small data collectors bring structured parcels from an abstract web city" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Cloud platform for scraping, crawling, and browser automation.

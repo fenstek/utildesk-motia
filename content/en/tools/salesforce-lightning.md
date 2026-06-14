@@ -36,6 +36,10 @@ It fits Salesforce teams, admins, developers, and companies modeling sales, serv
 
 Daily success depends on the Salesforce data model. Lightning is productive when fields, roles, flows, and components reflect real work; otherwise it becomes a prettier CRM maze.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/salesforce-lightning-editorial.webp" alt="Illustration for Salesforce Lightning: customer moments flow through fast workflow tracks into a shared hub" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Component-based UI and app platform for Salesforce.

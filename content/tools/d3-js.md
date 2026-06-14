@@ -35,6 +35,10 @@ D3 passt zu Frontend-Entwicklern, Datenjournalisten, Visual-Analytics-Teams und 
 
 D3 gibt enorme Kontrolle, verlangt aber Design- und Engineering-Disziplin. Achsen, Responsiveness, Accessibility, Performance und Datenaufbereitung sind Teil der Arbeit, nicht Nebensache.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/d3-js-editorial.webp" alt="Illustration zu D3.js: Rohdaten werden als F?den, Lichtformen und r?umliche Muster sichtbar" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Datenbindung an DOM, SVG und Canvas-nahe Workflows.

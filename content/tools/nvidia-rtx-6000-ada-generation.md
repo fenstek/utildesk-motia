@@ -35,6 +35,10 @@ Relevant ist die Karte für 3D-, CAD-, VFX-, Forschung-, KI- und Engineering-Tea
 
 Im Alltag zählt nicht nur die rohe GPU. Treiber, Kühlung, Strom, Speicherbedarf, Softwarezertifizierung und Auslastung entscheiden, ob die Investition sinnvoll ist.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/nvidia-rtx-6000-ada-generation-editorial.webp" alt="Illustration zu NVIDIA RTX 6000 Ada Generation: ein leistungsstarker Workstation-Kern speist Simulationen und KI-Renderkacheln" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Professionelle NVIDIA-Workstation-GPU der Ada-Generation.

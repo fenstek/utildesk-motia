@@ -36,6 +36,10 @@ It fits larger IT and platform teams with many APIs, legacy systems, compliance 
 
 Daily value depends on API product discipline: owners, versions, SLAs, documentation, and deprecation rules. A management platform helps, but it does not create good APIs by itself.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-api-connect-editorial.webp" alt="Illustration for IBM API Connect: API routes pass through locks, policy cranes, and monitoring lighthouses" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - API design, gateway, portal, and analytics in one platform.

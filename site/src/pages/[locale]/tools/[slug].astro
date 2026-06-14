@@ -19,7 +19,7 @@ import {
 } from "../../../lib/searchIndexPolicy.mjs";
 import {
   classifyToolEntry,
-  isCuratedTier,
+  isCuratedToolEntry,
   stripTemplateBoilerplate,
 } from "../../../lib/toolQuality.mjs";
 import { listDisplayTools } from "../../../lib/toolDisplay";
@@ -54,7 +54,7 @@ const searchIndexDecision = getToolSearchIndexDecision(entry, {
   addedAtRank: toolAddedAtRankMap.get(slug) ?? 0,
 });
 const toolQuality = classifyToolEntry(entry);
-const isCuratedTool = isCuratedTier(toolQuality.tier);
+const isCuratedTool = isCuratedToolEntry(entry, toolQuality);
 const meta = getEnglishToolMeta(entry);
 const providerUrl = meta.targetUrl || "";
 const editorialVerdict = getToolEditorialVerdict(
@@ -184,6 +184,8 @@ const checkedDateSource =
   entry.data.last_reviewed ||
   entry.data.lastReviewedAt ||
   entry.data.last_reviewed_at ||
+  entry.data.editorial_reviewed_at ||
+  entry.data.editorialReviewedAt ||
   (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
 const checkedDate = checkedDateSource
   ? new Intl.DateTimeFormat("en", {

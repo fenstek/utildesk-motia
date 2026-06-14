@@ -35,6 +35,10 @@ Geeignet ist FigJam für Produktteams, Designer, Researcher, Facilitatoren und v
 
 FigJam funktioniert gut, wenn ein Board nicht zur endlosen Klebezettelhalde wird. Nach jedem Workshop braucht es Entscheidung, Besitzer und Übergabe in Tickets, Spezifikation oder Design-Datei.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/figjam-editorial.webp" alt="Illustration zu FigJam: ein Team ordnet farbige Formen an einer kollaborativen Workshop-Wand" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Kollaboratives Online-Whiteboard mit Figma-Nähe.

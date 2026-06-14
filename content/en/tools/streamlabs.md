@@ -36,6 +36,10 @@ It fits streamers, creators, small media brands, and teams with recurring live c
 
 In daily use, stability matters more than visual fireworks. Scenes, audio levels, alerts, and recording quality should be tested before every stream.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/streamlabs-editorial.webp" alt="Illustration for Streamlabs: a creator studio gathers lights, camera forms, and audience energy" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Streaming and recording software with creator focus.

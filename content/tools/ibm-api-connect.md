@@ -35,6 +35,10 @@ Geeignet ist IBM API Connect für größere IT- und Plattformteams mit vielen AP
 
 Im Alltag zählt API-Produktdisziplin: klare Besitzer, Versionen, SLAs, Dokumentation und Deprecation-Regeln. Eine Management-Plattform hilft, ersetzt aber nicht die Verantwortung für gute Schnittstellen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/ibm-api-connect-editorial.webp" alt="Illustration zu IBM API Connect: API-Routen passieren Schleusen, Policy-Kr?ne und Monitoring-Leuchtt?rme" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - API-Design, Gateway, Portal und Analytics in einer Plattform.

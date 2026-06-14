@@ -36,6 +36,10 @@ It fits journalists, podcasters, video teams, market researchers, and corporate 
 
 The value is not just automatic transcription but the editing step: speakers, quotes, timestamps, and approvals need to be clean before publication.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/trint-editorial.webp" alt="Illustration for Trint: spoken interviews turn into organized transcript ribbons" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Automatic transcription for audio and video.

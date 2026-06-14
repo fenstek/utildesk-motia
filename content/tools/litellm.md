@@ -35,6 +35,10 @@ Relevant ist LiteLLM für Entwicklerteams, Plattform-Teams und AI-Operations, di
 
 Im Alltag entscheidet nicht nur die Provider-Abstraktion, sondern die Disziplin rundherum: Logging, Kostenlimits, Modellnamen, Fehlerraten und wer neue Modelle freigibt. Ohne diese Regeln wird LiteLLM schnell zum weiteren Proxy, den niemand sauber betreibt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/litellm-editorial.webp" alt="Illustration zu LiteLLM: ein transparentes Routing-Modell verbindet mehrere Modellpfade in einer kontrollierten Werkbank" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - Vereinheitlichte API-Schicht für viele LLM-Anbieter.

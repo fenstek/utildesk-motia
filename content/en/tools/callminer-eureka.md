@@ -36,6 +36,10 @@ It fits larger service, sales, and compliance organizations with high conversati
 
 Value depends on categories, sampling logic, and action. Analytics without follow-up does not improve service; insights need to feed coaching, process changes, and product feedback.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/callminer-eureka-editorial.webp" alt="Illustration for CallMiner Eureka: conversation signals become coaching and risk paths on an analysis board" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Speech and text analytics for customer interactions.

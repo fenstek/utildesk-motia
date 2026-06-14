@@ -36,6 +36,10 @@ It fits data science, research, teaching, quick analysis, and reproducible exper
 
 Jupyter is productive when notebooks do not become final code graveyards. Cell order, data versions, environments, and hidden side effects need control.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jupyter-notebook-editorial.webp" alt="Illustration for Jupyter Notebook: experiments, explanations, and abstract plot forms fill a research worktable" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Code, Markdown, visualization, and output in one document.

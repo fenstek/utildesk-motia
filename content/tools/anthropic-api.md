@@ -35,6 +35,10 @@ Geeignet ist die API für Entwicklerteams, die Claude in Apps, interne Assistent
 
 Im Betrieb zählen Modellwahl, Prompt-Versionierung, Kosten, Rate Limits und Evaluierung gegen echte Beispiele. Claude kann sehr stark sein, aber auch diese API braucht Tests gegen Fehlverhalten, Halluzinationen und sensible Eingaben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/anthropic-api-editorial.webp" alt="Illustration zu Anthropic API: ein gesch?tzter Modellkern steht hinter Glasleitplanken und Review-Schleusen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - API-Zugriff auf Claude-Modelle für Text-, Analyse- und Agentenfälle.

@@ -1,6 +1,6 @@
 import { buildMarkdownFrontmatter, buildToolCatalogItem, extractFeatureList } from "../../../lib/machineReadable";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
-import { classifyToolEntry, isCuratedTier, stripTemplateBoilerplate } from "../../../lib/toolQuality.mjs";
+import { classifyToolEntry, isCuratedToolEntry, stripTemplateBoilerplate } from "../../../lib/toolQuality.mjs";
 
 export const prerender = true;
 
@@ -16,7 +16,8 @@ export async function GET({ props }: { props: { entry: any } }) {
   const entry = props.entry;
   const summary = buildToolCatalogItem(entry);
   const quality = classifyToolEntry(entry);
-  const contentMarkdown = isCuratedTier(quality.tier)
+  const isCurated = isCuratedToolEntry(entry, quality);
+  const contentMarkdown = isCurated
     ? String(entry.content ?? "").trim()
     : [
         "> Dieser Eintrag wurde automatisch aus öffentlichen Anbieterinformationen erstellt und nicht redaktionell geprüft.",
@@ -36,7 +37,7 @@ export async function GET({ props }: { props: { entry: any } }) {
       officialUrl: summary.officialUrl,
       affiliateUrl: summary.affiliateUrl,
       tier: quality.tier,
-      editorialStatus: isCuratedTier(quality.tier) ? "curated" : "automatic",
+      editorialStatus: isCurated ? "curated" : "automatic",
       tags: summary.tags,
       description: summary.description,
       featureList,

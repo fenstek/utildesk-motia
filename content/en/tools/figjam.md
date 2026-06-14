@@ -36,6 +36,10 @@ It fits product teams, designers, researchers, facilitators, and distributed tea
 
 FigJam works when a board does not become an endless sticky-note landfill. Every workshop needs a closing step: decisions, owners, and transfer into tickets, specs, or design files.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/figjam-editorial.webp" alt="Illustration for FigJam: a team organizes colorful shapes on a collaborative workshop wall" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 - Collaborative online whiteboard close to Figma.

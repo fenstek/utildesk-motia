@@ -35,6 +35,10 @@ Passend ist JAX für ML-Forschung, wissenschaftliches Rechnen und fortgeschritte
 
 JAX belohnt funktionales Denken, saubere Datenstrukturen und Verständnis für Kompilierung. Wer nur schnell ein Standardmodell trainieren will, wird die zusätzliche Denkweise nicht immer brauchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/jax-editorial.webp" alt="Illustration zu JAX: leuchtende Gradienten und Array-Gitter werden in einem Forschungslabor justiert" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 - NumPy-nahe API mit automatischer Differenzierung.
