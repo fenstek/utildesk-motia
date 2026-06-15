@@ -91,9 +91,17 @@ OpenClaw ist besonders dann sinnvoll, wenn der konkrete Workflow schon benannt i
 
 Staerke und Risiko liegen nah beieinander. Wer viele Kanaele verbindet, braucht Pairing-Regeln, lokale Sicherheitsgrenzen und ein Verstaendnis dafuer, welche Nachrichten als untrusted Input gelten.
 
-### Interne Vergleichspunkte
+## Alternativen zu OpenClaw
 
-Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [Hermes Agent](/tools/hermes-agent/), [OpenHands](/tools/openhands/), [AutoGen](/tools/autogen/), [CrewAI](/tools/crew-ai/). Diese Links helfen, OpenClaw nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
+- [Hermes Agent](/tools/hermes-agent/): wenn ein offener Entwickler- und Rechercheassistent mit klarer Agentenrolle gesucht wird.
+- [OpenHands](/tools/openhands/): wenn der Schwerpunkt stärker auf Softwareentwicklung, Code-Änderungen und Repository-Arbeit liegt.
+- [Cline](/tools/cline/): wenn ein Agent direkt im IDE-Workflow arbeiten und menschliche Freigaben eng begleiten soll.
+- [AutoGen](/tools/autogen/): wenn Multi-Agent-Experimente, Rollen und Konversationsmuster im Vordergrund stehen.
+- [LangGraph](/tools/langgraph/): wenn Agenten-Workflows als kontrollierbare Graphen mit Zuständen und Übergaben modelliert werden sollen.
+- [LangChain](/tools/langchain/): wenn der breitere LLM-App-Stack mit Tools, Chains und Integrationen wichtiger ist.
+- [CrewAI](/tools/crew-ai/): wenn Aufgaben als Team aus spezialisierten Agenten geplant und orchestriert werden sollen.
+
+Diese Alternativen helfen, OpenClaw nicht isoliert zu bewerten. Die Kernfrage lautet: Soll ein persönlicher, lokaler Agent Kanäle und Geräte verbinden, oder braucht das Team eher einen Coding-Agenten, ein Multi-Agent-Framework oder eine RAG-/Workflow-Bibliothek?
 
 ## FAQ
 
