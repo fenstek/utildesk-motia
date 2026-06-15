@@ -2,16 +2,16 @@
 slug: base44
 title: Base44
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-06-11-hype-tools-human-polish
-editorial_verdict: "recommend"
-category: "Produktivität"
-price_model: "Freemium"
+editorial_verdict: recommend
+category: Produktivität
+price_model: Freemium
 tags: [ai-app-builder, no-code, vibe-coding, saas]
 official_url: "https://base44.com/"
-popularity: 0
+popularity: 77
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31

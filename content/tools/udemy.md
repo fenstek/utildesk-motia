@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [education, courses, learning, skills]
 official_url: "https://www.udemy.com/"
-popularity: 15
+popularity: 13
 tier: C
 generated_at: 2026-05-27
 ---
