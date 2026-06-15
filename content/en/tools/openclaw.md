@@ -101,11 +101,15 @@ OpenClaw's pricing depends on the respective provider and the chosen plan. There
 
 ## Alternatives to OpenClaw
 
-- **AgentGPT**: A platform for creating and managing AI agents with a focus on ease of use.
-- **AutoGPT**: An open-source solution that provides AI agents for automated tasks in various scenarios.
-- **Hugging Face Agents**: An AI agent framework with a broad ecosystem and community support.
-- **ReAct**: AI agents based on reasoning and action mechanisms, suitable for interactive applications.
-- **LangChain Agents**: A framework for developing AI agents with a focus on language-based workflows.
+- [Hermes Agent](/en/tools/hermes-agent/): when the team wants an open developer and research assistant with a clearer agent role.
+- [OpenHands](/en/tools/openhands/): when the focus is software development, code changes, and repository work.
+- [Cline](/en/tools/cline/): when the agent should work directly inside the IDE workflow with close human approval.
+- [AutoGen](/en/tools/autogen/): when multi-agent experiments, roles, and conversation patterns matter most.
+- [LangGraph](/en/tools/langgraph/): when agent workflows should be modeled as controllable graphs with state and handoffs.
+- [LangChain](/en/tools/langchain/): when the broader LLM application stack with tools, chains, and integrations is more important.
+- [CrewAI](/en/tools/crew-ai/): when tasks should be planned and orchestrated as a team of specialized agents.
+
+These alternatives keep OpenClaw in the right comparison set. The practical question is whether the team needs a personal local agent connecting channels and devices, or rather a coding agent, a multi-agent framework, or a RAG/workflow library.
 
 ## FAQ
 
@@ -146,7 +150,3 @@ OpenClaw is most useful when the workflow is already named and the team is not o
 ### Limits and review points
 
 The strength and the risk are close together. Connecting many channels requires pairing rules, local security boundaries and a clear view of inbound messages as untrusted input.
-
-### Internal comparison points
-
-Useful comparison points in the Utildesk catalogue are [Hermes Agent](/en/tools/hermes-agent/), [OpenHands](/en/tools/openhands/), [AutoGen](/en/tools/autogen/), [CrewAI](/en/tools/crew-ai/). These links keep OpenClaw connected to its real cluster of alternatives, risks and workflow roles instead of treating it as a standalone listing.
