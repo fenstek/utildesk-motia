@@ -1,568 +1,163 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getDecisionIssueNumber } from "../../lib/contentIssue";
-import { tagHref } from "../../lib/tagRoutes";
-import { listRatgeberEntries } from "../../lib/ratgeber";
-import { compareToolsByNewest } from "../../lib/toolAddedAt";
-import { listDisplayTools, type DisplayTool } from "../../lib/toolDisplay";
-import { getToolEditorialVerdict } from "../../lib/toolVerdict";
-import {
-  buildBreadcrumbSchema,
-  buildCollectionPageSchema,
-  SITE_URL,
-} from "../../lib/siteMeta";
+import { readdir, readFile } from "node:fs/promises";
+import { join } from "node:path";
+import matter from "gray-matter";
 
-const enabledTools = [...(await listDisplayTools("de"))].sort(compareToolsByNewest("de"));
-const issueNo = getDecisionIssueNumber();
+const toolsDir = join(process.cwd(), "content", "tools");
+const files = (await readdir(toolsDir))
+  .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
-// Build tag frequency map and keep only the most useful tags
-const tagFrequency = new Map<string, number>();
-enabledTools.forEach((tool) => {
-  tool.tags.forEach((tag) => {
-    const normalized = tag.trim().toLowerCase();
-    if (!normalized) return;
-    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
-  });
-});
-const sortedTags = Array.from(tagFrequency.entries())
-  .sort((a, b) => {
-    if (b[1] !== a[1]) return b[1] - a[1];
-    return a[0].localeCompare(b[0], "de");
+const tools = await Promise.all(
+  files.map(async (file) => {
+    const full = join(toolsDir, file);
+    const raw = await readFile(full, "utf-8");
+    const { data } = matter(raw);
+    const slug = String(data.slug ?? file.replace(/\.md$/, ""));
+    const title = String(data.title ?? slug);
+    const category = data.category ? String(data.category) : null;
+    const price_model = data.price_model ? String(data.price_model) : null;
+    const image = data.image ? String(data.image) : null;
+    const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
+    return { slug, title, category, price_model, image, tags };
   })
-  .map(([tag]) => tag);
-const visibleTags = sortedTags.filter((tag) => (tagFrequency.get(tag) || 0) >= 2).slice(0, 24);
-const recentRatgeber = (await listRatgeberEntries()).slice(0, 3);
-const categoryCounts = Array.from(
-  enabledTools.reduce((map, tool) => {
-    const category = tool.category || "Unsortiert";
-    map.set(category, (map.get(category) || 0) + 1);
-    return map;
-  }, new Map<string, number>()),
-)
-  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "de"))
-  .slice(0, 8);
-const jumpLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "#"];
-const verdictOptions = [
-  { value: "recommend", icon: "✓", label: "Empfehlen" },
-  { value: "caution", icon: "◐", label: "Mit Vorbehalt" },
-  { value: "overrated", icon: "⊘", label: "Überbewertet" },
-  { value: "reject", icon: "×", label: "Nicht empfehlen" },
-];
-const getToolVerdict = (index: number) => {
-  const position = index + 1;
-  if (position % 17 === 0) return verdictOptions[3];
-  if (position % 11 === 0) return verdictOptions[2];
-  if (position % 7 === 0) return verdictOptions[1];
-  return verdictOptions[0];
-};
-const getDisplayToolVerdict = (tool: DisplayTool, index: number) =>
-  tool.editorialVerdict ? getToolEditorialVerdict(tool.editorialVerdict, "de") : getToolVerdict(index);
-const getToolLetter = (title: string) => {
-  const first = title
-    .trim()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .charAt(0)
-    .toUpperCase();
-  return /^[A-Z]$/.test(first) ? first : "#";
-};
-const verdictCounts = enabledTools.reduce((map, _tool, index) => {
-  const verdict = getDisplayToolVerdict(_tool, index).value;
-  map.set(verdict, (map.get(verdict) || 0) + 1);
-  return map;
-}, new Map<string, number>());
-const recommendedCount = verdictCounts.get("recommend") || 0;
-const rejectedCount = verdictCounts.get("reject") || 0;
+);
 
-const toolsItemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Utildesk Tools",
-  numberOfItems: enabledTools.length,
-  itemListElement: enabledTools.slice(0, 200).map((tool, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: tool.title,
-    url: `${SITE_URL}/tools/${tool.slug}/`,
-  })),
-};
-const toolsCollectionSchema = buildCollectionPageSchema({
-  name: "Utildesk Tools",
-  description: "Indizierter Tool-Katalog aus öffentlichen Quellen mit redaktionellen Ratgebern als Kontext.",
-  url: `${SITE_URL}/tools/`,
-  about: ["AI-Tools", "Produktivität", "Automatisierung"],
-  mainEntity: toolsItemListSchema,
+tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+
+// Build unique tag list
+const allTags = new Set<string>();
+tools.forEach((tool) => {
+  tool.tags.forEach((tag) => allTags.add(tag));
 });
-const toolsBreadcrumbSchema = buildBreadcrumbSchema([
-  { name: "Startseite", url: `${SITE_URL}/` },
-  { name: "Tools", url: `${SITE_URL}/tools/` },
-]);
+const sortedTags = Array.from(allTags).sort((a, b) => a.localeCompare(b, "de"));
 ---
 
 <BaseLayout
   title="Tools — Utildesk"
-  description="Indizierter Tool-Katalog aus öffentlichen Quellen mit redaktionellen Ratgebern als Kontext"
+  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools"
 >
-  <Fragment slot="head">
-    <link rel="canonical" href="https://tools.utildesk.de/tools/" />
-    <script type="application/ld+json" set:html={JSON.stringify(toolsCollectionSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(toolsItemListSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(toolsBreadcrumbSchema)} />
-  </Fragment>
+  <!-- Hero -->
+  <section class="hero" style="padding: 60px 0 40px;">
+    <h1 class="hero-title">Tools</h1>
+    <p class="hero-subtitle">
+      Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools.
+      Durchsuche alle Tools oder filtere nach Tags.
+    </p>
+  </section>
 
-  <div class="tool-akte inv-wrap">
-    <nav class="akte-crumb" aria-label="Breadcrumb">
-      <a href="/">← Startseite</a>
-      <span class="akte-crumb-sep">/</span>
-      <span class="akte-crumb-current">Inventar — alle Akten</span>
-    </nav>
-
-    <header class="inv-head">
-      <div class="inv-head-body">
-        <div class="inv-head-kicker">↳ Inventar · Tool-Index · Ausgabe № {issueNo}</div>
-        <h1 class="inv-head-h1">
-          {enabledTools.length.toLocaleString("de-DE")} Akten<span class="akte-mast-dot">.</span>
-        </h1>
-        <p class="inv-head-deck">
-          Jede Akte einzeln gelesen, in eine Kategorie einsortiert, mit Tags versehen.
-          Keine bezahlten Platzierungen. Sortierung ändert die Reihenfolge — nie die Empfehlung.
-        </p>
-      </div>
-      <div class="inv-head-stats" role="group" aria-label="Inventar Kennzahlen">
-        <div class="inv-stat">
-          <strong>{enabledTools.length.toLocaleString("de-DE")}</strong>
-          <span>Akten gesamt</span>
-        </div>
-        <div class="inv-stat">
-          <strong>{recommendedCount.toLocaleString("de-DE")}</strong>
-          <span>Empfohlen</span>
-        </div>
-        <div class="inv-stat">
-          <strong>{rejectedCount.toLocaleString("de-DE")}</strong>
-          <span>Nicht empfohlen</span>
-        </div>
-        <div class="inv-stat inv-stat-paid">
-          <strong>0</strong>
-          <span>Bezahlte Plätze</span>
-        </div>
-      </div>
-    </header>
-
-    <div class="inv-controls inv-modebar">
-      <div class="inv-search-panel">
-        <label class="inv-mode-label" for="search-input">Suche</label>
-        <input
-          type="search"
-          id="search-input"
-          class="inv-search-input"
-          placeholder="Tool, Tag oder Kategorie suchen…"
-          autocomplete="off"
-        />
-      </div>
-      <div class="inv-mode-left" aria-label="Anzeige">
-        <span class="inv-mode-label">Anzeige</span>
-        <button type="button" class="inv-mode-button inv-mode-button-active" data-view-mode="list" aria-pressed="true">Liste</button>
-        <button type="button" class="inv-mode-button" data-view-mode="tiles" aria-pressed="false">Kacheln</button>
-      </div>
-      <div class="inv-sort-tabs">
-        <label class="inv-mode-label" for="sort-select">Sortierung</label>
-        <select id="sort-select" class="inv-sort-select" aria-label="Sortierung">
-          <option value="new" selected>Zuletzt geprüft</option>
-          <option value="az">A – Z</option>
-          <option value="pop">Nach Verdikt</option>
-        </select>
-      </div>
-      <div class="inv-mode-right">
-        <span id="tools-result-count">Anzeige · 0 von {enabledTools.length.toLocaleString("de-DE")}</span>
-        <a href="/api/tools.json">⇩ JSON</a>
+  <!-- Tag Filter Row -->
+  {sortedTags.length > 0 && (
+    <div class="tag-filter-row" id="tag-filter-row">
+      <label class="tag-filter-label">Nach Tags filtern:</label>
+      <div class="tag-filter-list" id="tag-filter-list">
+        {sortedTags.map((tag) => (
+          <a
+            href={`/tools/?tag=${encodeURIComponent(tag)}`}
+            class="tag-filter-item"
+            data-tag={tag}
+          >
+            {tag}
+          </a>
+        ))}
+        <a href="/tools/" class="clear-filter-btn" id="clear-filter-btn" style="display: none;">
+          Filter löschen
+        </a>
       </div>
     </div>
+  )}
 
-    <div class="inv-jumpbar" aria-label="Nach Anfangsbuchstaben filtern">
-      <span class="inv-jump-label">Buchstabenfilter</span>
-      {jumpLetters.map((letter) => (
-        <a
-          href={`/tools/?sort=az&letter=${letter === "#" ? "num" : letter.toLowerCase()}`}
-          class="inv-jump-letter"
-          data-jump-letter={letter}
-          aria-label={`Nur Tools mit Anfangsbuchstabe ${letter} anzeigen`}
-        >{letter}</a>
-      ))}
-    </div>
-
-    <div class="inv-table-head" aria-hidden="true">
-      <span class="inv-th-no">№</span>
-      <span class="inv-th-tool">Tool · Einordnung</span>
-      <span class="inv-th-verdict">Verdikt</span>
-      <span class="inv-th-tags">Tags</span>
-      <span class="inv-th-cat">Kategorie</span>
-      <span class="inv-th-price">Preis</span>
-      <span class="inv-th-open">↗</span>
-    </div>
+  <!-- Search -->
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="search-input"
+      class="search-input"
+      placeholder="Tools durchsuchen (z.B. ChatGPT, AI, automation)..."
+      autocomplete="off"
+    />
   </div>
 
-  <div class="tool-akte inv-list-wrap">
-  <aside class="inv-filter-rail" aria-label="Filter">
-    <div class="inv-filter-kicker">↳ Filter</div>
-    <h2>Auswahl<br />einschränken.</h2>
-    <div class="inv-filter-group">
-      <h3>Verdikt</h3>
-      {verdictOptions.map((option) => (
-        <button
-          type="button"
-          class="inv-filter-option"
-          data-filter-type="verdict"
-          data-filter-value={option.value}
-          aria-pressed="false"
-        >
-          <span class="inv-filter-box" aria-hidden="true"></span>
-          <span>{option.icon} {option.label}</span>
-          <em>{verdictCounts.get(option.value) || 0}</em>
-        </button>
-      ))}
-    </div>
-    <div class="inv-filter-group">
-      <h3>Kategorie</h3>
-      {categoryCounts.map(([category, count]) => (
-        <button
-          type="button"
-          class="inv-filter-option"
-          data-filter-type="category"
-          data-filter-value={category.toLowerCase()}
-          aria-pressed="false"
-        >
-          <span class="inv-filter-box" aria-hidden="true"></span>
-          <span>{category}</span>
-          <em>{count}</em>
-        </button>
-      ))}
-    </div>
-  </aside>
   <!-- Tools Grid -->
-  <div class="tools-grid inv-register inv-view-register" id="tools-grid">
-    {enabledTools.map((tool, idx) => {
-      const verdict = getDisplayToolVerdict(tool, idx);
-      const categoryValue = (tool.category || "Unsortiert").toLowerCase();
-      return (
+  <div class="tools-grid" id="tools-grid">
+    {tools.map((tool) => (
       <a
         href={`/tools/${tool.slug}/`}
-        class:list={["card", "tool-card", "inv-row", `inv-row-verdict-${verdict.value}`]}
-        data-title={tool.title.toLowerCase()}
-        data-slug={tool.slug.toLowerCase()}
-        data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
-        data-category={categoryValue}
-        data-verdict={verdict.value}
-        data-letter={getToolLetter(tool.title)}
-        data-added={tool.addedAtMs}
-        data-added-order={tool.addedAtOrderMs}
-        data-popularity={tool.popularity}
+        class="card tool-card"
+        data-search-title={tool.title.toLowerCase()}
+        data-search-slug={tool.slug.toLowerCase()}
+        data-search-category={tool.category?.toLowerCase() || ""}
+        data-tags={tool.tags.join(",")}
       >
-        <span class="inv-row-no">{String(idx + 1).padStart(3, "0")}</span>
         <div class="tool-header">
           <div class="tool-image">
-            {tool.iconUrl ? (
-              <span class="tool-card-logo">
-                <img src={tool.iconUrl} alt={tool.title} loading="lazy" data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined} />
-              </span>
-            ) : tool.fallbackIcon === "ai" ? (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M9 3a1 1 0 0 1 1 1v1.1a6.002 6.002 0 0 1 4 0V4a1 1 0 1 1 2 0v2.1a6.002 6.002 0 0 1 3 5.2V13a1 1 0 0 1-1 1h-1.1a6.002 6.002 0 0 1-5.2 3V19a1 1 0 1 1-2 0v-2.1a6.002 6.002 0 0 1-5.2-3H4a1 1 0 0 1-1-1v-1.7a6.002 6.002 0 0 1 3-5.2V4a1 1 0 0 1 2 0v1.1a6.01 6.01 0 0 1 1-.1Zm3 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            ) : tool.fallbackIcon === "automation" ? (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M7 4a3 3 0 0 1 3 3v1h4V7a3 3 0 1 1 6 0v3a3 3 0 0 1-3 3h-1v2h1a3 3 0 1 1-3 3v-1h-4v1a3 3 0 1 1-6 0v-3a3 3 0 0 1 3-3h1v-2H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3v4H7a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-1h8v1a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1h-3v-4h3a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v1H8V7a1 1 0 0 0-1-1Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            ) : tool.fallbackIcon === "design" ? (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M6 3a3 3 0 0 0-3 3v9a6 6 0 0 0 12 0V6a3 3 0 0 0-3-3H6Zm0 2h6a1 1 0 0 1 1 1v9a4 4 0 1 1-8 0V6a1 1 0 0 1 1-1Zm12 2a3 3 0 0 1 3 3v5a6 6 0 0 1-6 6h-1.5a7.97 7.97 0 0 0 2.5-6V7h2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            ) : (
-              <span class="tool-card-logo" aria-hidden="true">
-                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-                  <path
-                    d="M5 5h14a2 2 0 0 1 2 2v3H3V7a2 2 0 0 1 2-2Zm-2 7h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm4 2v3h2v-3H7Zm4 0v3h6v-3h-6Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-            )}
+            {tool.image ? (
+              <img src={tool.image} alt={tool.title} />
+            ) : null}
           </div>
           <div class="tool-info">
             <h3 class="tool-title">{tool.title}</h3>
-            <p class="tools-desc">{tool.excerpt || "Kurzbeschreibung folgt."}</p>
+            <p class="tool-meta">{tool.slug}</p>
           </div>
         </div>
-        <span class="inv-row-verdict">
-          <strong>{verdict.label}</strong>
-        </span>
-        <span class="inv-row-tags">
-          {tool.tags.slice(0, 3).map((tag) => (
-            <span class="inv-row-tag">#{tag}</span>
-          ))}
-        </span>
-        <div class="tool-badges inv-row-meta">
+        <div class="tool-badges">
           {tool.category && (
-            <span class="badge badge-category inv-row-cat">{tool.category}</span>
+            <span class="badge badge-category">{tool.category}</span>
           )}
           {tool.price_model && (
-            <span class="badge badge-price inv-row-price">{tool.price_model}</span>
+            <span class="badge badge-price">{tool.price_model}</span>
           )}
         </div>
-        <span class="inv-row-open" aria-hidden="true">↗</span>
       </a>
-      );
-    })}
+    ))}
   </div>
 
   <!-- No results message (hidden by default) -->
-  <div id="no-results" class="inv-empty" style="display: none;">
-    <p>Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.</p>
+  <div id="no-results" style="display: none; text-align: center; padding: 60px 0;">
+    <p style="color: var(--text-muted); font-size: 1.125rem;">
+      Keine Tools gefunden. Versuche einen anderen Suchbegriff oder filtere nach einem anderen Tag.
+    </p>
   </div>
-
-  <div class="inv-loadmore">
-    <button type="button" id="load-more-btn" class="akte-action akte-action-ghost">Mehr anzeigen ↓</button>
-    <div id="hidden-count-info" class="inv-hidden-count" style="display: none;">
-      Noch 0 Tools verborgen
-    </div>
-  </div>
-  </div>
-
-  {recentRatgeber.length > 0 && (
-    <section class="tool-akte tools-guides akte-alts" aria-label="Passende Guides">
-      <div class="akte-alts-head">
-        <div class="akte-alts-head-left">
-          <div class="akte-alts-kicker">↳ Passende Ratgeber</div>
-          <h2 class="akte-alts-title">
-            Aus der Redaktion<span class="akte-mast-dot">.</span>
-          </h2>
-        </div>
-        <a class="akte-alts-all" href="/ratgeber/">↳ alle Ratgeber</a>
-      </div>
-      <div class="akte-alts-grid">
-        {recentRatgeber.map((article, idx) => (
-          <a href={`/ratgeber/${article.slug}/`} class="akte-alt-card">
-            <div class="akte-alt-card-head">
-              <span class="akte-alt-card-kicker">Ratgeber {String(idx + 1).padStart(2, "0")}</span>
-              <span class="akte-alt-card-mono" aria-hidden="true">§</span>
-            </div>
-            <div class="akte-alt-card-name">{article.data.title}<span class="akte-mast-dot">.</span></div>
-            <p class="akte-alt-card-tone">{article.data.excerpt || "Redaktionelle Einordnung und Tool-Bezüge aus dem Utildesk-Ratgeber."}</p>
-            <div class="akte-alt-card-foot">
-              <span class="akte-alt-card-meta">{article.data.eyebrow || article.data.category || "Guide"}</span>
-              <span class="akte-alt-card-open">Lesen ↗</span>
-            </div>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
 
   <!-- Client-side search + tag filter script (inline, no build tools) -->
   <script is:inline>
     (function() {
-      const sortStorageKey = 'utildesk-tools-sort';
       const searchInput = document.getElementById('search-input');
-      const sortSelect = document.getElementById('sort-select');
       const toolsGrid = document.getElementById('tools-grid');
       const noResults = document.getElementById('no-results');
-      const loadMoreBtn = document.getElementById('load-more-btn');
-      const hiddenCountInfo = document.getElementById('hidden-count-info');
-      const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
-      const filterButtons = Array.from(document.querySelectorAll('.inv-filter-option'));
-      const viewButtons = Array.from(document.querySelectorAll('[data-view-mode]'));
-      const jumpLinks = Array.from(document.querySelectorAll('.inv-jump-letter'));
-      const resultCount = document.getElementById('tools-result-count');
+      const cards = toolsGrid.querySelectorAll('.tool-card');
+      const tagFilterItems = document.querySelectorAll('.tag-filter-item');
       const clearFilterBtn = document.getElementById('clear-filter-btn');
-      let pageBlocks = 1;
-      let activeLetter = '';
-      let activeView = 'list';
-      const selectedFilters = {
-        verdict: new Set(),
-        category: new Set(),
-      };
 
-      // Read URL params ?tag= and ?sort=
+      let activeTag = null;
+
+      // Read URL param ?tag=
       const urlParams = new URLSearchParams(window.location.search);
       const initialTag = urlParams.get('tag');
-      const initialSort = urlParams.get('sort');
-      const initialView = urlParams.get('view');
-      const initialLetter = urlParams.get('letter');
-      const initialVerdicts = urlParams.get('verdict');
-      const initialCategories = urlParams.get('category');
 
       if (initialTag) {
-        const tagSlug = initialTag
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/^-+|-+$/g, '');
-        window.location.replace('/tools/tag/' + tagSlug + '/');
-        return;
-      }
-
-      // Restore sort preference from URL first, then localStorage.
-      if (sortSelect) {
-        const validSorts = ['az', 'new', 'pop'];
-        const defaultSort = 'new';
-        let restoredSort = defaultSort;
-        if (initialSort && validSorts.indexOf(initialSort) !== -1) {
-          restoredSort = initialSort;
-        } else {
-          try {
-            const storedSort = localStorage.getItem(sortStorageKey);
-            if (storedSort && validSorts.indexOf(storedSort) !== -1) {
-              restoredSort = storedSort;
-            }
-          } catch (e) {
-            // ignore localStorage access errors
+        activeTag = initialTag.toLowerCase();
+        // Highlight active tag
+        tagFilterItems.forEach(function(item) {
+          if (item.getAttribute('data-tag').toLowerCase() === activeTag) {
+            item.classList.add('active');
           }
-        }
-        sortSelect.value = restoredSort;
-        const normalizedParams = new URLSearchParams(window.location.search);
-        if (normalizedParams.get('sort') !== restoredSort) {
-          normalizedParams.set('sort', restoredSort);
-          const nextUrl = normalizedParams.toString()
-            ? '/tools/?' + normalizedParams.toString()
-            : '/tools/';
-          history.replaceState(null, '', nextUrl);
-        }
-      }
-
-      function getStoredView() {
-        if (initialView === 'tiles' || initialView === 'setzkasten') return 'tiles';
-        if (initialView === 'list' || initialView === 'register') return 'list';
-        try {
-          const storedView = localStorage.getItem('utildesk-tools-view');
-          if (storedView === 'tiles' || storedView === 'setzkasten') return 'tiles';
-          if (storedView === 'list' || storedView === 'register') return 'list';
-        } catch (e) {
-          // ignore localStorage access errors
-        }
-        return 'list';
-      }
-
-      function applyViewMode(viewMode, updateUrl) {
-        activeView = viewMode === 'tiles' || viewMode === 'setzkasten' ? 'tiles' : 'list';
-        toolsGrid.classList.toggle('inv-view-setzkasten', activeView === 'tiles');
-        toolsGrid.classList.toggle('inv-view-register', activeView === 'list');
-        viewButtons.forEach(function(button) {
-          const active = button.getAttribute('data-view-mode') === activeView;
-          button.classList.toggle('inv-mode-button-active', active);
-          button.setAttribute('aria-pressed', active ? 'true' : 'false');
         });
-        try {
-          localStorage.setItem('utildesk-tools-view', activeView);
-        } catch (e) {
-          // ignore localStorage access errors
-        }
-        if (updateUrl) {
-          const params = new URLSearchParams(window.location.search);
-          if (activeView === 'tiles') {
-            params.set('view', 'tiles');
-          } else {
-            params.delete('view');
-          }
-          const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-          history.replaceState(null, '', nextUrl);
+        if (clearFilterBtn) {
+          clearFilterBtn.style.display = 'inline-flex';
         }
       }
 
-      function normalizeLetterParam(value) {
-        if (!value) return '';
-        const raw = String(value).trim();
-        if (raw === '#') return '#';
-        if (raw.toLowerCase() === 'num') return '#';
-        const letter = raw.charAt(0).toUpperCase();
-        return /^[A-Z]$/.test(letter) ? letter : '';
-      }
-
-      function splitFilterParam(value) {
-        if (!value) return [];
-        return value
-          .split(',')
-          .map(function(item) { return item.trim().toLowerCase(); })
-          .filter(Boolean);
-      }
-
-      splitFilterParam(initialVerdicts).forEach(function(value) {
-        selectedFilters.verdict.add(value);
-      });
-      splitFilterParam(initialCategories).forEach(function(value) {
-        selectedFilters.category.add(value);
-      });
-      activeLetter = normalizeLetterParam(initialLetter || (window.location.hash ? window.location.hash.slice(1) : ''));
-      if (window.location.hash && activeLetter && !initialLetter) {
-        const params = new URLSearchParams(window.location.search);
-        params.set('letter', activeLetter === '#' ? 'num' : activeLetter.toLowerCase());
-        history.replaceState(null, '', '/tools/?' + params.toString());
-      }
-
-      function syncFilterUrl() {
-        const params = new URLSearchParams(window.location.search);
-        if (selectedFilters.verdict.size) {
-          params.set('verdict', Array.from(selectedFilters.verdict).join(','));
-        } else {
-          params.delete('verdict');
-        }
-        if (selectedFilters.category.size) {
-          params.set('category', Array.from(selectedFilters.category).join(','));
-        } else {
-          params.delete('category');
-        }
-        if (activeLetter) {
-          params.set('letter', activeLetter === '#' ? 'num' : activeLetter.toLowerCase());
-        } else {
-          params.delete('letter');
-        }
-        const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-        history.replaceState(null, '', nextUrl);
-      }
-
-      function syncFilterButtons() {
-        filterButtons.forEach(function(button) {
-          const type = button.getAttribute('data-filter-type');
-          const value = button.getAttribute('data-filter-value');
-          const active = Boolean(type && value && selectedFilters[type] && selectedFilters[type].has(value));
-          button.classList.toggle('is-active', active);
-          button.setAttribute('aria-pressed', active ? 'true' : 'false');
-        });
-      }
-
-      function getCols() {
-        const template = window.getComputedStyle(toolsGrid).gridTemplateColumns || '';
-        if (!template || template === 'none') return 1;
-        const cols = template.split(' ').filter(function(part) { return part.trim().length > 0; }).length;
-        return cols > 0 ? cols : 1;
-      }
-
-      function getStep() {
-        return getCols() * 6;
-      }
-
-      // Filter + sort + pagination
+      // Filter function
       function filterTools() {
         const query = searchInput.value.toLowerCase().trim();
-        const sortMode = sortSelect ? sortSelect.value : 'az';
-        const baseFiltered = cards.filter(function(card) {
-          const title = card.getAttribute('data-title') || '';
-          const slug = card.getAttribute('data-slug') || '';
+        let visibleCount = 0;
+
+        cards.forEach(function(card) {
+          const title = card.getAttribute('data-search-title') || '';
+          const slug = card.getAttribute('data-search-slug') || '';
+          const category = card.getAttribute('data-search-category') || '';
           const tags = card.getAttribute('data-tags') || '';
-          const verdict = card.getAttribute('data-verdict') || '';
-          const category = card.getAttribute('data-category') || '';
           const tagList = tags.split(',').map(function(t) { return t.trim().toLowerCase(); });
 
           // Check search query match
@@ -570,291 +165,76 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
                              title.includes(query) ||
                              slug.includes(query) ||
                              category.includes(query) ||
-                             tags.includes(query);
+                             tags.toLowerCase().includes(query);
 
-          const verdictMatch = selectedFilters.verdict.size === 0 || selectedFilters.verdict.has(verdict);
-          const categoryMatch = selectedFilters.category.size === 0 || selectedFilters.category.has(category);
+          // Check tag filter match
+          const tagMatch = !activeTag || tagList.includes(activeTag);
 
-          return searchMatch && verdictMatch && categoryMatch;
-        });
-
-        const availableLetters = new Set(baseFiltered.map(function(card) {
-          return card.getAttribute('data-letter') || '';
-        }));
-
-        let filtered = activeLetter
-          ? baseFiltered.filter(function(card) { return (card.getAttribute('data-letter') || '') === activeLetter; })
-          : baseFiltered.slice();
-
-        filtered.sort(function(a, b) {
-          const aTitle = (a.getAttribute('data-title') || '').toLowerCase();
-          const bTitle = (b.getAttribute('data-title') || '').toLowerCase();
-          if (sortMode === 'new') {
-            const aAdded = Number(a.getAttribute('data-added') || '0');
-            const bAdded = Number(b.getAttribute('data-added') || '0');
-            if (bAdded !== aAdded) return bAdded - aAdded;
-            const aOrder = Number(a.getAttribute('data-added-order') || '0');
-            const bOrder = Number(b.getAttribute('data-added-order') || '0');
-            if (bOrder !== aOrder) return bOrder - aOrder;
-            return aTitle.localeCompare(bTitle, 'de');
+          if (searchMatch && tagMatch) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
           }
-          if (sortMode === 'pop') {
-            const aPopular = Number(a.getAttribute('data-popularity') || '0');
-            const bPopular = Number(b.getAttribute('data-popularity') || '0');
-            if (bPopular !== aPopular) return bPopular - aPopular;
-            return aTitle.localeCompare(bTitle, 'de');
-          }
-          return aTitle.localeCompare(bTitle, 'de');
         });
-
-        const limit = getStep() * pageBlocks;
-        const visibleCards = filtered.slice(0, limit);
-
-        toolsGrid.innerHTML = '';
-        visibleCards.forEach(function(card) {
-          toolsGrid.appendChild(card);
-        });
-
-        const totalFiltered = filtered.length;
-        const currentVisible = visibleCards.length;
-        const hidden = totalFiltered - currentVisible;
 
         // Show/hide no results message
-        if (totalFiltered === 0) {
+        if (visibleCount === 0) {
           toolsGrid.style.display = 'none';
           noResults.style.display = 'block';
         } else {
           toolsGrid.style.display = 'grid';
           noResults.style.display = 'none';
         }
-
-        if (loadMoreBtn) {
-          if (totalFiltered > limit) {
-            loadMoreBtn.style.display = 'inline-flex';
-          } else {
-            loadMoreBtn.style.display = 'none';
-          }
-        }
-
-        if (hiddenCountInfo) {
-          if (hidden > 0) {
-            hiddenCountInfo.textContent = 'Noch ' + hidden + ' Tools verborgen';
-            hiddenCountInfo.style.display = 'block';
-          } else {
-            hiddenCountInfo.style.display = 'none';
-          }
-        }
-
-        if (resultCount) {
-          resultCount.textContent = 'Anzeige · ' + currentVisible + ' von ' + totalFiltered + ' Treffern';
-        }
-
-        jumpLinks.forEach(function(link) {
-          const letter = link.getAttribute('data-jump-letter') || '';
-          const available = availableLetters.has(letter) || activeLetter === letter;
-          link.classList.toggle('is-disabled', !available);
-          link.classList.toggle('is-active', Boolean(activeLetter && activeLetter === letter && available));
-          link.setAttribute('aria-disabled', available ? 'false' : 'true');
-          link.setAttribute('aria-pressed', Boolean(activeLetter && activeLetter === letter && available) ? 'true' : 'false');
-        });
-      }
-
-      function resetAndFilter() {
-        pageBlocks = 1;
-        filterTools();
       }
 
       // Search input listener
-      searchInput.addEventListener('input', resetAndFilter);
+      searchInput.addEventListener('input', filterTools);
 
-      filterButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          const type = button.getAttribute('data-filter-type');
-          const value = button.getAttribute('data-filter-value');
-          if (!type || !value || !selectedFilters[type]) return;
-          if (selectedFilters[type].has(value)) {
-            selectedFilters[type].delete(value);
+      // Tag filter click listener
+      tagFilterItems.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          const tag = item.getAttribute('data-tag').toLowerCase();
+
+          // Toggle active tag
+          if (activeTag === tag) {
+            activeTag = null;
+            tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
+            if (clearFilterBtn) {
+              clearFilterBtn.style.display = 'none';
+            }
+            // Update URL
+            history.pushState(null, '', '/tools/');
           } else {
-            selectedFilters[type].add(value);
+            activeTag = tag;
+            tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
+            item.classList.add('active');
+            if (clearFilterBtn) {
+              clearFilterBtn.style.display = 'inline-flex';
+            }
+            // Update URL
+            history.pushState(null, '', '/tools/?tag=' + encodeURIComponent(tag));
           }
-          syncFilterButtons();
-          syncFilterUrl();
-          resetAndFilter();
-        });
-      });
 
-      viewButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          applyViewMode(button.getAttribute('data-view-mode'), true);
           filterTools();
         });
       });
 
-      jumpLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-          event.preventDefault();
-          const letter = link.getAttribute('data-jump-letter') || '';
-          if (!letter || link.getAttribute('aria-disabled') === 'true') return;
-          activeLetter = activeLetter === letter ? '' : letter;
-          if (sortSelect) {
-            sortSelect.value = 'az';
-            try { localStorage.setItem(sortStorageKey, 'az'); } catch (e) {}
-          }
-          const params = new URLSearchParams(window.location.search);
-          params.set('sort', 'az');
-          if (activeLetter) {
-            params.set('letter', activeLetter === '#' ? 'num' : activeLetter.toLowerCase());
-          } else {
-            params.delete('letter');
-          }
-          const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-          history.pushState(null, '', nextUrl);
-          resetAndFilter();
-        });
-      });
-
-      if (sortSelect) {
-        sortSelect.addEventListener('change', function() {
-          const sortValue = sortSelect.value;
-          try {
-            if (sortValue && ['az', 'new', 'pop'].indexOf(sortValue) !== -1) {
-              localStorage.setItem(sortStorageKey, sortValue);
-            } else {
-              localStorage.removeItem(sortStorageKey);
-            }
-          } catch (e) {
-            // ignore localStorage access errors
-          }
-          const params = new URLSearchParams(window.location.search);
-          params.set('sort', sortValue);
-          const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
-          history.pushState(null, '', nextUrl);
-          resetAndFilter();
-        });
-      }
-
+      // Clear filter button listener
       if (clearFilterBtn) {
         clearFilterBtn.addEventListener('click', function(e) {
           e.preventDefault();
-          window.location.href = '/tools/';
-        });
-      }
-
-      if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', function() {
-          pageBlocks += 1;
+          activeTag = null;
+          tagFilterItems.forEach(function(i) { i.classList.remove('active'); });
+          clearFilterBtn.style.display = 'none';
+          history.pushState(null, '', '/tools/');
           filterTools();
         });
       }
 
-      window.addEventListener('resize', filterTools);
-
       // Initial filter on page load
-      applyViewMode(getStoredView(), false);
-      syncFilterButtons();
       filterTools();
     })();
   </script>
 </BaseLayout>
-
-<style>
-  .tools-guides {
-    margin: 24px 0 56px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(23, 98, 89, 0.12);
-  }
-
-  .tools-guides-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
-
-  .tools-guides-head h2 {
-    margin: 0;
-    font-size: 1.18rem;
-    font-weight: 800;
-    color: var(--on-surface);
-  }
-
-  .tools-guides-more {
-    font-size: 0.92rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--primary);
-  }
-
-  .tools-guides-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .tools-guides-article {
-    display: grid;
-    gap: 6px;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: inherit;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.82);
-    border: 1px solid rgba(23, 98, 89, 0.10);
-    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
-  }
-
-  .tools-guides-article:hover {
-    transform: translateY(-2px);
-    border-color: rgba(23, 98, 89, 0.18);
-    box-shadow: 0 12px 28px rgba(18, 28, 24, 0.06);
-  }
-
-  .tools-guides-article strong {
-    font-size: 0.96rem;
-    line-height: 1.35;
-    color: var(--primary);
-  }
-
-  .tools-guides-article span {
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: var(--secondary);
-  }
-
-  :global([data-theme="dark"]) .tools-guides {
-    border-top-color: rgba(142, 216, 201, 0.16);
-  }
-
-  :global([data-theme="dark"]) .tools-guides-head h2 {
-    color: rgba(246, 252, 249, 0.96);
-  }
-
-  :global([data-theme="dark"]) .tools-guides-more {
-    color: #8ed8c9;
-  }
-
-  :global([data-theme="dark"]) .tools-guides-article {
-    background: rgba(22, 41, 36, 0.88);
-    border-color: rgba(142, 216, 201, 0.18);
-  }
-
-  :global([data-theme="dark"]) .tools-guides-article:hover {
-    border-color: rgba(142, 216, 201, 0.34);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
-  }
-
-  :global([data-theme="dark"]) .tools-guides-article strong {
-    color: #b8f3e7;
-  }
-
-  :global([data-theme="dark"]) .tools-guides-article span {
-    color: rgba(226, 238, 233, 0.72);
-  }
-
-  @media (max-width: 920px) {
-    .tools-guides-list {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

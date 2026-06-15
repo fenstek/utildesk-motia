@@ -3,7 +3,7 @@ title: "{{TOOL_NAME}}"
 slug: "{{SLUG}}"
 category: "{{CATEGORY}}"
 tags: [{{TAGS}}]
-price_model: ""
+price_model: "{{PRICE_MODEL}}"
 ---
 
 # {{TOOL_NAME}}
@@ -30,8 +30,8 @@ price_model: ""
 
 {{PRICING}}
 
-{{#if OFFICIAL_URL}}
-👉 **Zum Anbieter:** {{OFFICIAL_URL}}
+{{#if AFFILIATE_URL}}
+👉 **Zum Anbieter:** {{AFFILIATE_URL}}
 {{/if}}
 
 ## Alternativen zu {{TOOL_NAME}}
