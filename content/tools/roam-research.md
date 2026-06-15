@@ -1,20 +1,20 @@
 ---
-slug: "roam-research"
-title: "Roam Research"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: roam-research
+title: Roam Research
+category: Produktivität
+price_model: Abonnement
 tags: ["notes", "knowledge-management", "writing", "productivity"]
 official_url: "https://roamresearch.com/"
-affiliate_url: ""
-created_at: "2026-06-14"
-updated_at: "2026-06-14"
+affiliate_url: 
+created_at: 2026-06-14
+updated_at: 2026-06-14
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
-tier: "D"
-popularity: 0
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-14
+editorial_status: manual_polished
+editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+tier: D
+popularity: 34
 ---
 # Roam Research
 

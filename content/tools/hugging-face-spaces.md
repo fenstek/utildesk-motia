@@ -1,20 +1,20 @@
 ---
-slug: "hugging-face-spaces"
-title: "Hugging Face Spaces"
-category: "AI Infrastructure"
-price_model: "Freemium"
+slug: hugging-face-spaces
+title: Hugging Face Spaces
+category: AI Infrastructure
+price_model: Freemium
 tags: ["ai", "hosting", "developer-tools", "apps"]
 official_url: "https://huggingface.co/spaces"
-affiliate_url: ""
-created_at: "2026-06-14"
-updated_at: "2026-06-14"
+affiliate_url: 
+created_at: 2026-06-14
+updated_at: 2026-06-14
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
-tier: "D"
-popularity: 0
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-14
+editorial_status: manual_polished
+editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+tier: D
+popularity: 57
 ---
 # Hugging Face Spaces
 

@@ -1,20 +1,20 @@
 ---
-slug: "jupyter-notebook"
-title: "Jupyter Notebook"
-category: "Entwickler-Tools"
-price_model: "Open Source"
+slug: jupyter-notebook
+title: Jupyter Notebook
+category: Entwickler-Tools
+price_model: Open Source
 tags: ["notebooks", "data-science", "developer-tools", "open-source"]
 official_url: "https://jupyter-notebook.readthedocs.io/en/latest/"
-affiliate_url: ""
-created_at: "2026-06-14"
-updated_at: "2026-06-14"
+affiliate_url: 
+created_at: 2026-06-14
+updated_at: 2026-06-14
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
-tier: "D"
-popularity: 0
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-14
+editorial_status: manual_polished
+editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+tier: D
+popularity: 52
 ---
 # Jupyter Notebook
 

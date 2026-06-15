@@ -1,20 +1,20 @@
 ---
-slug: "salesforce-lightning"
-title: "Salesforce Lightning"
-category: "Automatisierung"
-price_model: "Abonnement"
+slug: salesforce-lightning
+title: Salesforce Lightning
+category: Automatisierung
+price_model: Abonnement
 tags: ["crm", "platform", "developer-tools", "automation"]
 official_url: "https://www.salesforce.com/products/platform/overview/"
-affiliate_url: ""
-created_at: "2026-06-14"
-updated_at: "2026-06-14"
+affiliate_url: 
+created_at: 2026-06-14
+updated_at: 2026-06-14
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-14"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-14-sheet-new-hype-20-human-polish"
-tier: "D"
-popularity: 0
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-14
+editorial_status: manual_polished
+editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
+tier: D
+popularity: 33
 ---
 # Salesforce Lightning
 
