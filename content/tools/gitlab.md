@@ -5,7 +5,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: ["devops", "git", "ci-cd", "developer-tools"]
 official_url: "https://about.gitlab.com/"
-affiliate_url: 
+affiliate_url:
 created_at: 2026-06-14
 updated_at: 2026-06-14
 editorial_reviewed: true
