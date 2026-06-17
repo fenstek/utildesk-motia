@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [customer-support, chatbot, communication, ai]
 official_url: "https://crisp.chat/en/"
-popularity: 70
+popularity: 69
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-06-11
