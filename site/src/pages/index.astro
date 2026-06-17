@@ -1,47 +1,148 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import DecisionTemplateHome from "../components/DecisionTemplateHome.astro";
 import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import matter from "gray-matter";
+import { resolveLocalLogo } from "../lib/resolveLogoPath";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../lib/favicon";
+import { fromContent } from "../lib/contentRoot.mjs";
+import { normalizePriceModel } from "../lib/priceModel";
+import { tagHref } from "../lib/tagRoutes";
+import { CATEGORIES } from "../lib/categories";
+import { listRatgeberEntries } from "../lib/ratgeber";
+import { normalizeToolEditorialVerdict } from "../lib/toolVerdict";
+import {
+  buildCollectionPageSchema,
+  buildOrganizationSchema,
+  buildWebSiteSchema,
+  SITE_URL,
+} from "../lib/siteMeta";
 
-// Load tools and build tag frequency map
-const toolsDir = join(process.cwd(), "content", "tools");
+const toolsDir = fromContent("tools");
 const files = (await readdir(toolsDir))
-  .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+  .filter((file) => file.endsWith(".md") && !file.startsWith("_"));
+
+const stripMarkdown = (text: string) =>
+  text
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
+    .replace(/[`*_>#]/g, "")
+    .replace(/(^|\s)-\s+/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const getExcerpt = (content: string) => {
+  const paragraphs = content.split(/\n\s*\n/);
+  for (const paragraph of paragraphs) {
+    if (paragraph.trim().startsWith("#")) continue;
+    const cleaned = stripMarkdown(paragraph);
+    if (cleaned) return cleaned;
+  }
+  return "";
+};
+
+const getImageFromContent = (content: string) => {
+  const match = content.match(/!\[[^\]]*]\(([^)]+)\)/);
+  return match?.[1]?.trim() || null;
+};
+
+const normalizeImagePath = (path: string | null) => {
+  if (!path) return null;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  if (path.startsWith("/")) return path;
+  return `/${path}`;
+};
+
+const getProviderHost = (url: string | null) => {
+  if (!url) return null;
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+};
+
+const resolveCategoryIcon = (category: string | null, tags: string[]) => {
+  const normalizedCategory = category ? category.toLowerCase() : "";
+  const normalizedTags = tags.map((tag) => tag.toLowerCase());
+  const combined = [normalizedCategory, ...normalizedTags].join(" ");
+
+  if (combined.includes("design") || combined.includes("ui") || combined.includes("ux")) return "design";
+  if (combined.includes("automation") || combined.includes("workflow")) return "automation";
+  if (combined.includes("ai") || combined.includes("ml") || combined.includes("machine")) return "ai";
+  return "generic";
+};
 
 const tools = await Promise.all(
   files.map(async (file) => {
     const full = join(toolsDir, file);
     const raw = await readFile(full, "utf-8");
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
+    const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
+    if (disabled) return null;
+
     const slug = String(data.slug ?? file.replace(/\.md$/, ""));
     const title = String(data.title ?? slug);
     const category = data.category ? String(data.category) : null;
-    const price_model = data.price_model ? String(data.price_model) : null;
+    const price_model = normalizePriceModel(data.price_model);
+    const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : null;
+    const official_url = data.official_url ? String(data.official_url) : null;
     const image = data.image ? String(data.image) : null;
+    const homeImage = data.homeImage ? String(data.homeImage) : null;
+    const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
+    const icon = data.icon ? String(data.icon) : null;
     const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-    return { slug, title, category, price_model, image, tags };
+    const description = data.description
+      ? String(data.description)
+      : data.summary
+        ? String(data.summary)
+        : data.excerpt
+          ? String(data.excerpt)
+          : "";
+    const excerpt = description || getExcerpt(content);
+    const contentImage = getImageFromContent(content);
+    const localLogoPath = resolveLocalLogo(slug);
+    const providerUrl = affiliate_url || official_url;
+    const faviconCandidates = getFaviconCandidates(providerUrl, 128);
+    const faviconLogo = faviconCandidates[0] ?? null;
+    const homeCardLogo = normalizeImagePath(brandLogo) ?? localLogoPath ?? faviconLogo;
+    const homeCardLogoFallbacks = normalizeImagePath(brandLogo) || localLogoPath || !faviconLogo
+      ? []
+      : [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(title)];
+    const homeCardImage = normalizeImagePath(homeImage ?? image ?? icon ?? contentImage);
+
+    return {
+      slug,
+      title,
+      category,
+      price_model,
+      popularity: data.popularity ? Number(data.popularity) : 0,
+      tags,
+      excerpt,
+      homeCardImage,
+      homeCardLogo,
+      providerHost: getProviderHost(providerUrl),
+      homeCardLogoFallbacks,
+      editorialVerdict: data.editorial_verdict ? normalizeToolEditorialVerdict(data.editorial_verdict) : null,
+      fallbackIcon: resolveCategoryIcon(category, tags),
+    };
   })
 );
 
-tools.sort((a, b) => a.title.localeCompare(b.title, "de"));
+const enabledTools = tools.filter(Boolean);
+enabledTools.sort((a, b) => a.title.localeCompare(b.title, "de"));
 
-// Build tag frequency map
 const tagFrequency = new Map<string, number>();
-tools.forEach((tool) => {
+enabledTools.forEach((tool) => {
   tool.tags.forEach((tag) => {
     tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
   });
 });
 
-// Sort tags by frequency and name
 const sortedTags = Array.from(tagFrequency.entries())
-  .sort((a, b) => {
-    if (b[1] !== a[1]) return b[1] - a[1]; // Sort by frequency descending
-    return a[0].localeCompare(b[0], "de"); // Then by name
-  });
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "de"));
 
-// Assign frequency classes (high/medium/low)
 const getFrequencyClass = (count: number, max: number) => {
   const ratio = count / max;
   if (ratio >= 0.6) return "tag-freq-high";
@@ -49,93 +150,444 @@ const getFrequencyClass = (count: number, max: number) => {
   return "tag-freq-low";
 };
 
+const visibleTags = sortedTags.filter(([, count]) => count >= 3).slice(0, 24);
 const maxFrequency = sortedTags.length > 0 ? sortedTags[0][1] : 1;
+const topTags = visibleTags.slice(0, 18);
 
-const latestTools = tools.slice(0, 6);
+const pinnedSlugs = ["wispr-flow", "chatgpt", "claude", "midjourney", "perplexity", "zapier"];
+const enabledBySlug = new Map(enabledTools.map((tool) => [tool.slug, tool]));
+const pinnedTools = pinnedSlugs.map((slug) => enabledBySlug.get(slug)).filter(Boolean);
+const pinnedSlugSet = new Set(pinnedSlugs);
+const restTools = enabledTools
+  .filter((tool) => !pinnedSlugSet.has(tool.slug))
+  .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
+const latestTools = [...pinnedTools, ...restTools].slice(0, 6);
+const templateTools = Array.from(
+  new Map([...latestTools, ...restTools].map((tool) => [tool.slug, tool])).values()
+).slice(0, 12);
+const allRatgeber = await listRatgeberEntries();
+const editorialRatgeberSlugs = [
+  "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+  "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+  "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+  "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+];
+const ratgeberBySlug = new Map(allRatgeber.map((article) => [article.slug, article]));
+const editorialRatgeber = [
+  ...editorialRatgeberSlugs.map((slug) => ratgeberBySlug.get(slug)).filter(Boolean),
+  ...allRatgeber.filter((article) => !editorialRatgeberSlugs.includes(article.slug)),
+].slice(0, 4);
+const taskIntents = [
+  {
+    title: "Code mit KI schreiben",
+    desc: "Agenten, Reviews und Grenzen von AI-Code verstehen, bevor ein Pull Request produktiv wird.",
+    href: "/ratgeber/ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen/",
+    links: [
+      { label: "Codex", href: "/tools/openai-codex/" },
+      { label: "Copilot", href: "/tools/github-copilot/" },
+    ],
+  },
+  {
+    title: "Sichere KI-Tools nutzen",
+    desc: "Datenschutz, No-Login-Tools und Team-Regeln pragmatisch einordnen.",
+    href: "/ratgeber/ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat/",
+    links: [
+      { label: "ChatGPT", href: "/tools/chatgpt/" },
+      { label: "DeepL", href: "/tools/deepl/" },
+    ],
+  },
+  {
+    title: "Workflows automatisieren",
+    desc: "Von Rechnungen und PDFs bis zu stabilen Automationen: Tools nach Aufgabe auswählen.",
+    href: "/ratgeber/beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast/",
+    links: [
+      { label: "Zapier", href: "/tools/zapier/" },
+      { label: "n8n", href: "/tools/n8n/" },
+    ],
+  },
+  {
+    title: "Recherche und Quellen prüfen",
+    desc: "Recherche-Tools, AI Search und Agenten-Crawler nicht als magische Antwortmaschine behandeln.",
+    href: "/ratgeber/perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter/",
+    links: [
+      { label: "Perplexity", href: "/tools/perplexity/" },
+      { label: "You.com", href: "/tools/you-com/" },
+    ],
+  },
+];
+const recentRatgeber = allRatgeber.slice(0, 3);
+
+const normalizedToolTerms = (tool) =>
+  [tool.category, ...tool.tags]
+    .filter(Boolean)
+    .map((value) => String(value).toLowerCase());
+
+const categoryStats = CATEGORIES.map((category) => {
+  const count = enabledTools.filter((tool) => {
+    const terms = normalizedToolTerms(tool);
+    return category.matchTags.some((match) =>
+      terms.some((term) => term.includes(match.toLowerCase()))
+    );
+  }).length;
+  return { ...category, count };
+}).sort((a, b) => b.count - a.count || a.title.localeCompare(b.title, "de"));
+
+const railCategories = categoryStats.slice(0, 9);
+const feedRows = [
+  ...recentRatgeber.map((article, index) => ({
+    stamp: `guide_${String(index + 1).padStart(2, "0")}`,
+    title: article.data.title,
+    href: `/ratgeber/${article.slug}/`,
+  })),
+  ...latestTools.slice(0, 5).map((tool, index) => ({
+    stamp: `tool_${String(index + 1).padStart(2, "0")}`,
+    title: `${tool.title} im Verzeichnis aktualisiert`,
+    href: `/tools/${tool.slug}/`,
+  })),
+].slice(0, 5);
+const primaryDetailTool = latestTools[0];
+
+const featuredToolsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Featured Tools",
+  itemListOrder: "https://schema.org/ItemListOrderDescending",
+  numberOfItems: latestTools.length,
+  itemListElement: latestTools.map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+  })),
+};
+
+const homePageSchema = buildCollectionPageSchema({
+  name: "Utildesk KI-Tools Verzeichnis 2026",
+  description: "25 redaktionelle Ratgeber plus indizierte AI-Tools aus öffentlichen Quellen.",
+  url: `${SITE_URL}/`,
+  about: ["KI-Tools Verzeichnis 2026", "AI-Tools", "Automatisierung", "Produktivität", "Ratgeber"],
+  mainEntity: featuredToolsSchema,
+});
+
+const homepageSchemas = [
+  buildOrganizationSchema(),
+  buildWebSiteSchema(),
+  homePageSchema,
+  featuredToolsSchema,
+];
 ---
 
 <BaseLayout
-  title="Utildesk — Tools & Guides für AI und Produktivität"
-  description="Kuratiertes Verzeichnis nützlicher AI- und Produktivitätstools."
+  title="KI-Tools verstehen, vergleichen und sicher einsetzen - Utildesk"
+  description="25 redaktionelle Ratgeber und ein indizierter Tool-Katalog aus öffentlichen Quellen für KI-Tools, Automatisierung und sichere Workflows."
 >
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1 class="hero-title">Utildesk</h1>
-    <p class="hero-subtitle">
-      Tools & Guides für AI, Automatisierung und Produktivität.
-      Kuratiertes Verzeichnis mit allem, was du für effizientes Arbeiten brauchst.
-    </p>
-    <a href="/tools/" class="hero-cta">
-      Alle Tools durchsuchen →
-    </a>
-  </section>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/" />
+    {homepageSchemas.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
+  </Fragment>
 
-  <!-- Tag Cloud Section -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Nach Themen durchsuchen</h2>
-      <p class="section-subtitle">
-        Finde Tools nach Tags und Kategorien
-      </p>
-    </div>
+  <DecisionTemplateHome
+    locale="de"
+    toolsCount={enabledTools.length}
+    guidesCount={allRatgeber.length}
+    categories={categoryStats}
+    guides={editorialRatgeber}
+    latestGuides={recentRatgeber}
+    tools={templateTools}
+    tasks={taskIntents}
+    tags={topTags}
+  />
 
-    {sortedTags.length > 0 ? (
-      <div class="tag-cloud">
-        {sortedTags.map(([tag, count]) => (
-          <a
-            href={`/tools/?tag=${encodeURIComponent(tag)}`}
-            class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
-          >
-            {tag}
-          </a>
-        ))}
+  <div class="legacy-home" hidden>
+  <section class="terminal-hero">
+    <div class="terminal-hero-grid">
+      <div class="terminal-hero-main">
+        <div class="terminal-kicker">[ ratgeber_first ]</div>
+        <h1 class="terminal-title">
+          KI-Tools verstehen,<br />
+          <span class="terminal-accent">vergleichen und sicher einsetzen.</span>
+        </h1>
+        <p class="terminal-copy">
+          <span class="terminal-comment"># </span>
+          25 redaktionelle Ratgeber plus {enabledTools.length} indizierte Tools mit öffentlichen Quellen:
+          von AI-Coding und Datenschutz bis Automatisierung, Recherche und Produktivität.
+        </p>
+        <div class="terminal-hero-actions" aria-label="Schnelle Einstiege">
+          <a class="btn-primary" href="/ratgeber/">Ratgeber lesen</a>
+          <a class="btn-ghost" href="/tools/">Tools vergleichen</a>
+        </div>
+        <div class="terminal-stats" aria-label="Utildesk Kennzahlen">
+          <div class="terminal-stat">
+            <strong>{enabledTools.length}</strong>
+            <span>tools im katalog</span>
+          </div>
+          <div class="terminal-stat">
+            <strong>{CATEGORIES.length}</strong>
+            <span>kategorien</span>
+          </div>
+          <div class="terminal-stat">
+            <strong>{allRatgeber.length}</strong>
+            <span>ratgeber</span>
+          </div>
+          <div class="terminal-stat">
+            <strong>0</strong>
+            <span>ads</span>
+          </div>
+        </div>
       </div>
-    ) : (
-      <p style="text-align: center; color: var(--text-muted);">
-        Keine Tags gefunden.
-      </p>
-    )}
+    </div>
   </section>
 
-  <!-- Latest Tools Section -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Neueste Tools</h2>
-      <p class="section-subtitle">
-        Eine Auswahl aus unserem Verzeichnis
-      </p>
+  <section class="home-guides" aria-labelledby="home-guides-title">
+    <div class="home-section-head">
+      <div>
+        <p class="terminal-kicker">[ editorial_picks ]</p>
+        <h2 id="home-guides-title">Empfohlene Ratgeber</h2>
+        <p>Redaktionelle Einstiege, die Tool-Auswahl mit Praxis, Risiken und konkreten Workflows verbinden.</p>
+      </div>
+      <a class="btn-ghost" href="/ratgeber/">Alle Ratgeber öffnen</a>
     </div>
+    <div class="home-guide-grid">
+      {editorialRatgeber.map((article, index) => (
+        <article class="home-guide-card">
+          {article.data.coverImage ? (
+            <a class="home-guide-image" href={`/ratgeber/${article.slug}/`} aria-label={article.data.title}>
+              <img src={article.data.coverImage} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+            </a>
+          ) : null}
+          <div class="home-guide-body">
+            <div class="home-guide-meta">
+              <span>{article.data.eyebrow || article.data.category || "Guide"}</span>
+              {article.data.readTime ? <span>{article.data.readTime} min</span> : null}
+            </div>
+            <h3><a href={`/ratgeber/${article.slug}/`}>{article.data.title}</a></h3>
+            <p>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
 
-    <div class="tools-grid">
-      {latestTools.map((tool) => (
-        <a href={`/tools/${tool.slug}/`} class="card tool-card">
-          <div class="tool-header">
-            <div class="tool-image">
-              {tool.image ? (
-                <img src={tool.image} alt={tool.title} />
-              ) : null}
-            </div>
-            <div class="tool-info">
-              <h3 class="tool-title">{tool.title}</h3>
-              <p class="tool-meta">{tool.slug}</p>
-            </div>
+  <section class="home-intents" aria-labelledby="home-intents-title">
+    <div class="home-section-head">
+      <div>
+        <p class="terminal-kicker">[ nach_aufgabe_starten ]</p>
+        <h2 id="home-intents-title">Nach Aufgabe starten</h2>
+        <p>Wenn du nicht den Tool-Namen suchst, sondern ein Problem lösen willst: Starte hier.</p>
+      </div>
+      <a class="btn-ghost" href="/category/">Kategorien ansehen</a>
+    </div>
+    <div class="home-intent-grid">
+      {taskIntents.map((intent) => (
+        <article class="home-intent-card">
+          <a class="home-intent-main" href={intent.href}>
+            <span class="home-intent-marker">-&gt;</span>
+            <strong>{intent.title}</strong>
+            <span>{intent.desc}</span>
+          </a>
+          <div class="home-intent-links">
+            {intent.links.map((link) => <a href={link.href}>{link.label}</a>)}
           </div>
-          <div class="tool-badges">
-            {tool.category && (
-              <span class="badge badge-category">{tool.category}</span>
-            )}
-            {tool.price_model && (
-              <span class="badge badge-price">{tool.price_model}</span>
-            )}
-          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <nav class="terminal-catbar" aria-label="Kategorien">
+    <span class="terminal-catbar-label">kategorien:</span>
+    <div class="terminal-catbar-list">
+      <a class="terminal-pill is-active" href="/tools/">
+        <span>*</span>
+        <span>alle</span>
+        <span>{enabledTools.length}</span>
+      </a>
+      {categoryStats.slice(0, 7).map((category) => (
+        <a class="terminal-pill" href={`/category/${category.slug}/`}>
+          <span>#</span>
+          <span>{category.title}</span>
+          <span>{category.count}</span>
         </a>
       ))}
     </div>
+  </nav>
 
-    <div style="text-align: center; margin-top: 48px;">
-      <a href="/tools/" class="hero-cta">
-        Alle {tools.length} Tools durchsuchen →
-      </a>
+  <section class="terminal-main" aria-label="Utildesk Verzeichnis">
+    <aside class="terminal-rail" aria-label="Filterübersicht">
+      <div class="terminal-rail-block">
+        <h2 class="terminal-rail-title">filter.set</h2>
+        {railCategories.map((category) => (
+          <a class="terminal-rail-link" href={`/category/${category.slug}/`}>
+            <span>{category.title}</span>
+            <span>{category.count}</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="terminal-rail-block">
+        <h2 class="terminal-rail-title">top.tags</h2>
+        {topTags.slice(0, 8).map(([tag, count]) => (
+          <a class="terminal-rail-link" href={tagHref(tag)}>
+            <span>{tag}</span>
+            <span>{count}</span>
+          </a>
+        ))}
+      </div>
+
+      <p class="terminal-rail-note">
+        Quellen: lokale Tool-Dateien, redaktionelle Ratgeber und maschinenlesbare Kataloge.
+        Keine bezahlten Slots.
+      </p>
+    </aside>
+
+    <section class="terminal-results" aria-label="Kompakte Tool-Auswahl">
+      <div class="terminal-results-head">
+        <h2 class="terminal-results-title">tools.kurzliste</h2>
+        <span class="terminal-results-meta">{latestTools.length} von {enabledTools.length} Werkzeugen</span>
+        <span class="terminal-results-meta">kurzliste nach redaktion + nachfrage</span>
+      </div>
+      <div class="terminal-table-head" aria-hidden="true">
+        <span>idx</span>
+        <span>sig</span>
+        <span>tool</span>
+        <span>kategorie</span>
+        <span>preis</span>
+        <span>open</span>
+      </div>
+      <div>
+        {latestTools.map((tool, index) => (
+          <article class="terminal-row">
+            <span class="terminal-index">{String(index + 1).padStart(2, "0")}</span>
+            {tool.homeCardLogo ? (
+              <span class="terminal-glyph">
+                <img
+                  src={tool.homeCardLogo}
+                  alt=""
+                  loading="eager"
+                  data-fallback-srcs={tool.homeCardLogoFallbacks.length ? JSON.stringify(tool.homeCardLogoFallbacks) : undefined}
+                />
+              </span>
+            ) : (
+              <span class="terminal-glyph" aria-hidden="true">{tool.title.slice(0, 1).toUpperCase()}</span>
+            )}
+            <div>
+              <h3 class="terminal-row-title">
+                <a href={`/tools/${tool.slug}/`}>{tool.title}</a>
+              </h3>
+              <p class="terminal-row-desc">{tool.excerpt || "Kompakter Eintrag im Utildesk-Verzeichnis."}</p>
+              <div class="terminal-row-tags">
+                {tool.tags.slice(0, 3).map((tag) => (
+                  <a href={tagHref(tag)}>#{tag}</a>
+                ))}
+              </div>
+            </div>
+            <span class="terminal-row-category">{tool.category || tool.fallbackIcon}</span>
+            <span class="terminal-row-price">{tool.price_model || "n/a"}</span>
+            <span class="terminal-row-action">
+              <a class="terminal-open" href={`/tools/${tool.slug}/`} aria-label={`${tool.title} oeffnen`}>-&gt;</a>
+            </span>
+          </article>
+        ))}
+      </div>
+      <div class="terminal-results-foot">
+        <span>next: <a href="/tools/">alle tools öffnen</a></span>
+        <span>/</span>
+        <span>machine: <a href="/api/tools.json">/api/tools.json</a></span>
+      </div>
+    </section>
+
+    <aside class="terminal-detail" aria-label="Ratgeber und Detailansicht">
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">detail.preview</h2>
+        {primaryDetailTool && (
+          <>
+            <h3>{primaryDetailTool.title}</h3>
+            <p>{primaryDetailTool.excerpt || "Ausgewaehlter Tool-Eintrag."}</p>
+            <a class="btn-primary" href={`/tools/${primaryDetailTool.slug}/`}>eintrag ansehen</a>
+          </>
+        )}
+      </div>
+
+      <div class="terminal-detail-card terminal-detail-card--query">
+        <h2 class="terminal-detail-title">query_interface</h2>
+        <div class="terminal-query terminal-query--side">
+          <span class="terminal-prompt">$</span>
+          <a href="/tools/">finde: transkription, agenten, automation, bilder, code</a>
+          <span class="terminal-caret">_</span>
+        </div>
+        <div class="terminal-hints terminal-hints--side">
+          <span>tipp:</span>
+          <code>kategorie:code</code>
+          <code>tag:research</code>
+          <code>preis:free</code>
+        </div>
+      </div>
+
+      <div class="terminal-detail-card terminal-detail-card--feed" aria-label="Aktuelle Eintraege">
+        <h2 class="terminal-detail-title">five.feeds</h2>
+        <ul class="terminal-feed-list terminal-feed-list--side">
+          {feedRows.map((row) => (
+            <li class="terminal-feed-row terminal-feed-row--side">
+              <span class="terminal-feed-time">{row.stamp}</span>
+              <a class="terminal-feed-msg" href={row.href}>{row.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="terminal-detail-card">
+        <h2 class="terminal-detail-title">ratgeber.latest</h2>
+        {recentRatgeber.map((article) => (
+          <a class="terminal-rail-link" href={`/ratgeber/${article.slug}/`}>
+            <span>{article.data.title}</span>
+            <span>guide</span>
+          </a>
+        ))}
+      </div>
+
+      <pre class="terminal-ascii" aria-hidden="true">{`utildesk://catalog
+  tools       ${enabledTools.length}
+  categories  ${CATEGORIES.length}
+  guides      ${allRatgeber.length}
+  ads         0`}</pre>
+    </aside>
+  </section>
+
+  <section class="terminal-bottom" aria-label="Themen und maschinenlesbare Einstiege">
+    <div class="terminal-bottom-grid">
+      <div class="terminal-panel">
+        <div class="terminal-panel-head">
+          <h2>tags.index</h2>
+          <a href="/tools/">alle tools</a>
+        </div>
+        <div class="tag-cloud home-tags-cloud">
+          {topTags.map(([tag, count]) => (
+            <a
+              href={tagHref(tag)}
+              class={`tag-cloud-item ${getFrequencyClass(count, maxFrequency)}`}
+            >
+              #{tag}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="terminal-panel">
+        <div class="terminal-panel-head">
+          <h2>guides.index</h2>
+          <a href="/ratgeber/">zum ratgeber</a>
+        </div>
+        <div class="terminal-mini-list">
+          {recentRatgeber.map((article) => (
+            <a class="terminal-mini-item" href={`/ratgeber/${article.slug}/`}>
+              <strong>{article.data.title}</strong>
+              <span>{article.data.excerpt || "Redaktionelle Einordnung und Praxisbezug zu relevanten KI-Tools."}</span>
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
+  </div>
 </BaseLayout>

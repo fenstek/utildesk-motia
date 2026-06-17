@@ -1,0 +1,133 @@
+---
+slug: sendinblue
+title: Sendinblue
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: 2026-05-31
+editorial_status: "manual_polished"
+editorial_batch: "2026-05-31-complete-tool-card-polish"
+category: "AI Agents"
+price_model: Abonnement, Freemium
+tags: [assistant, automation, workflow]
+official_url: "https://www.brevo.com/"
+popularity: 0
+tier: "C"
+generated_at: "2026-05-17"
+---
+# Sendinblue
+
+Sendinblue ist eine umfassende Plattform für Marketing-Automatisierung und Kommunikation, die sich besonders auf E-Mail-Marketing, SMS-Kampagnen und Kundenmanagement konzentriert. Mithilfe von AI-gestützten Tools unterstützt Sendinblue Unternehmen dabei, ihre Marketingprozesse zu optimieren, personalisierte Nachrichten zu erstellen und Workflows effizient zu automatisieren. Die Lösung eignet sich für kleine bis mittelgroße Unternehmen, die ihre Kundenkommunikation verbessern und automatisieren möchten, ohne dabei auf komplexe IT-Infrastruktur angewiesen zu sein.
+
+## Für wen ist Sendinblue geeignet?
+
+Sendinblue richtet sich an Unternehmen, Agenturen und Selbstständige, die ihre Marketing- und Kommunikationsprozesse automatisieren wollen. Besonders geeignet ist die Plattform für:
+
+- Kleine und mittelständische Unternehmen (KMU), die kosteneffiziente Marketinglösungen suchen
+- Marketing-Teams, die personalisierte Kampagnen erstellen und automatisieren möchten
+- E-Commerce-Unternehmen, die Newsletter, Transaktionsmails und SMS versenden
+- Nutzer, die eine All-in-One-Plattform für E-Mail-Marketing, CRM und Automatisierung bevorzugen
+- Anwender, die einfache Workflows mit AI-Unterstützung gestalten möchten
+
+Besonders interessant wird Sendinblue, wenn mehrere Rollen beteiligt sind. Dann zählt nicht nur die Bedienung, sondern ob Übergaben, Reviews und Entscheidungen rund um Kampagnen, Leads, Zielgruppen, Reporting und verlässliche Nachverfolgung nachvollziehbar bleiben.
+
+Vor dem Rollout sollte Sendinblue eine kleine Probe bestehen: Wer entscheidet am Ende, wer prüft nach, und welche Veränderung wäre im Alltag wirklich sichtbar?
+
+## Redaktionelle Einschätzung
+
+Der praktische Wert von Sendinblue zeigt sich weniger in einer Demo als in wiederholbarer Nutzung. Ein Team sollte prüfen, ob Reichweite, Conversion, Leadqualität, Aufwand und Attribution nach einigen echten Durchläufen tatsächlich stabiler werden.
+
+Ein sinnvoller Test beginnt mit einer realen Kampagne mit Zielgruppe, Inhalt, Ausspielung, Messung und Nachbereitung. Erst danach sollte entschieden werden, ob Sendinblue nur ein nettes Zusatzwerkzeug ist oder wirklich ein belastbarer Teil des Workflows werden kann.
+
+- **Worauf achten:** Für Sendinblue zählen Reichweite, Conversion, Leadqualität, Aufwand und Attribution erst dann als Fortschritt, wenn sie im Test nachvollziehbar dokumentiert werden.
+- **Guter Startpunkt:** Sinnvoll ist ein Pilot mit wenigen Beteiligten, echten Beispielen und einer kurzen Auswertung, bevor Sendinblue breiter ausgerollt wird.
+- **Häufiger Stolperstein:** Sendinblue enttäuscht, wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/sendinblue-editorial.webp" alt="Illustration zu Sendinblue: Mail-Kanal mit Segment-Schleusen und Versandbooten" loading="lazy" decoding="async" />
+</figure>
+
+## Hauptfunktionen
+
+- **E-Mail-Marketing:** Erstellung und Versand von Newslettern mit Drag-and-Drop-Editor und responsiven Templates
+- **Marketing-Automatisierung:** Automatisierte Workflows basierend auf Nutzeraktionen, Segmentierung und Triggern
+- **SMS-Kampagnen:** Versand von SMS zur Kundenbindung und für gezielte Marketingaktionen
+- **Kundenmanagement (CRM):** Verwaltung von Kontakten, Segmentierung und Lead-Tracking
+- **Transaktionsmails:** Automatisierter Versand von Bestellbestätigungen, Passwort-Resets u.v.m.
+- **AI-gestützte Optimierung:** Intelligente Empfehlungen zur Versandzeit und Inhaltsoptimierung
+- **Landing Pages:** Erstellung von Zielseiten ohne Programmierkenntnisse
+- **Berichte und Analysen:** Detaillierte Auswertung von Kampagnenergebnissen und Nutzerverhalten
+- **Integrationen:** Anbindung an viele Drittanbieter-Tools wie Shopify, WordPress, Salesforce u.a.
+
+- **Praxis-Workflow:** Für Sendinblue sollte der erste Test mit eine kleine Support- oder Wissensaufgabe mit echten Grenzfällen und Übergabe an Menschen laufen; wichtig ist, ob Aufwand, Qualität und Übergabe danach besser erklärbar sind.
+- **Qualitätssicherung:** Im Betrieb braucht Sendinblue klare Notizen dazu, wie Reichweite, Conversion, Leadqualität, Aufwand und Attribution bewertet und bei Problemen nachgebessert werden.
+- **Team-Übergabe:** Nützlich wird Sendinblue besonders dann, wenn Ergebnisse, Entscheidungen und offene Punkte für andere Rollen verständlich bleiben.
+
+## Vorteile und Nachteile
+
+### Vorteile
+- Intuitive Benutzeroberfläche, auch für Einsteiger geeignet
+- Umfangreiche Automatisierungsfunktionen mit AI-Unterstützung
+- Kombination aus E-Mail, SMS und CRM in einer Plattform
+- Flexible Preisgestaltung mit kostenlosem Einstiegspaket
+- Gute Integrationsmöglichkeiten mit anderen Systemen
+- Skalierbar für wachsende Anforderungen
+
+- Stärker im Alltag, wenn Sendinblue für klar abgegrenzte Aufgaben genutzt wird und nicht als Sammelbecken für jedes Randproblem.
+- Hilft Teams besonders dort, wo Kampagnen, Leads, Zielgruppen, Reporting und verlässliche Nachverfolgung heute noch an einzelnen Personen, privaten Routinen oder improvisierten Zwischenlösungen hängen. Für Sendinblue gehört das in den Praxistest, nicht nur in die Einführung.
+
+### Nachteile
+- Einige erweiterte Funktionen nur in höheren Preismodellen verfügbar
+- SMS-Versand kann je nach Land zusätzliche Kosten verursachen
+- Designmöglichkeiten bei E-Mails sind nicht so umfangreich wie bei spezialisierten Tools
+- Support teilweise nur in höheren Tarifen enthalten
+
+- Wird schnell zäh, wenn Sendinblue eingeführt wird, obwohl Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind und das Team diese Lücke erst im Betrieb bemerkt.
+- Entscheidend ist nicht nur die Einrichtung, sondern ob das Team Sendinblue regelmäßig prüft, aufräumt und an reale Arbeitsregeln bindet.
+
+## Preise & Kosten
+
+Sendinblue bietet ein Freemium-Modell mit eingeschränkten Funktionen und einem monatlichen Versandlimit. Die kostenpflichtigen Abonnements sind je nach Plan gestaffelt und umfassen unter anderem höhere Versandkontingente, erweiterte Automatisierungen und zusätzliche Features wie A/B-Tests und Prioritätssupport. Es gibt keine Einmalzahlung; die Abrechnung erfolgt monatlich oder jährlich. Für größere Unternehmen oder spezielle Anforderungen sind individuelle Angebote möglich.
+
+Neben dem Listenpreis sollte bei Sendinblue auch der Einführungsaufwand berücksichtigt werden. Relevant sind Kontaktvolumen, Automationen, Reporting, Integrationen und Datenpflege. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
+
+## Alternativen zu Sendinblue
+
+- **Mailchimp:** Bekanntes E-Mail-Marketing-Tool mit umfangreichen Automatisierungsfunktionen und kostenloser Einstiegsmöglichkeit
+- **ActiveCampaign:** Starke Marketing-Automatisierung mit CRM-Fokus und ausgefeilten Workflow-Optionen
+- **HubSpot Marketing Hub:** Umfassende Plattform mit Marketing, CRM und Sales-Tools, geeignet für wachsende Unternehmen
+- **GetResponse:** All-in-One-Marketinglösung mit E-Mail, Landing Pages und Webinar-Funktionalität
+- **MailerLite:** Einsteigerfreundlich mit Fokus auf einfache Bedienung und günstige Preise
+
+Beim Vergleich lohnt es sich, Sendinblue nicht nur gegen sehr ähnliche Produkte zu stellen. Je nach Ziel können auch CRM-, E-Mail-, Social-, Analytics- und Sales-Engagement-Tools die bessere Lösung sein, wenn sie näher am bestehenden Prozess liegen oder weniger Pflegeaufwand verursachen.
+
+## FAQ
+
+**1. Ist Sendinblue für Anfänger geeignet?**
+Ja, die Plattform ist benutzerfreundlich gestaltet und bietet viele Vorlagen sowie einen Drag-and-Drop-Editor, der auch Einsteigern die Nutzung erleichtert.
+
+**2. Welche Sprachen werden von Sendinblue unterstützt?**
+Sendinblue ist mehrsprachig und unterstützt unter anderem Deutsch, Englisch, Französisch, Spanisch und weitere Sprachen.
+
+**3. Kann ich Sendinblue kostenlos testen?**
+Ja, es gibt ein Freemium-Modell mit begrenztem E-Mail-Versand, das dauerhaft kostenlos nutzbar ist.
+
+**4. Welche Automatisierungsfunktionen bietet Sendinblue?**
+Sendinblue ermöglicht das Erstellen von automatisierten Workflows, z. B. Willkommens-E-Mails, Geburtstagsgrüße oder Warenkorbabbruch-Mails, häufig unterstützt durch AI-Optimierungen.
+
+**5. Ist Sendinblue DSGVO-konform?**
+Sendinblue legt Wert auf Datenschutz und bietet Funktionen zur Einhaltung der DSGVO, darunter Datenhosting in der EU und Tools zur Einwilligungsverwaltung.
+
+**6. Kann ich SMS-Kampagnen mit Sendinblue versenden?**
+Ja, SMS-Marketing ist Teil des Funktionsumfangs, allerdings sind die Kosten und Verfügbarkeit abhängig vom Land.
+
+**7. Welche Integrationen sind möglich?**
+Sendinblue lässt sich mit zahlreichen Plattformen verbinden, darunter CMS, CRM-Systeme, E-Commerce-Shops und weitere Marketing-Tools.
+
+**8. Gibt es eine mobile App für Sendinblue?**
+Sendinblue bietet mobile Anwendungen für iOS und Android, mit denen Nutzer Kampagnen überwachen und verwalten können.
+
+**9. Wie testet man Sendinblue sinnvoll im Team?**
+Für den Einstieg reicht ein enger Pilot mit echter Aufgabe, klarer Abnahme und kurzer Retrospektive: Was wurde mit Sendinblue besser, was blieb Handarbeit?
+
+**10. Wann passt Sendinblue eher nicht?**
+Wenn Zielgruppen, Tracking, Einwilligungen und Follow-up-Prozesse nicht sauber definiert sind oder wenn niemand Zeit für Einrichtung, Prüfung und Pflege einplant. Dann wird Sendinblue eher zur zusätzlichen Station im Prozess als zur echten Entlastung.

@@ -1,0 +1,135 @@
+---
+import InventoryToolRow from "../../components/InventoryToolRow.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CATEGORIES } from "../../lib/categories";
+import { listDisplayTools } from "../../lib/toolDisplay";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../lib/siteMeta";
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+const { slug } = Astro.params;
+const category = Astro.props.category ?? CATEGORIES.find((cat) => cat.slug === slug);
+
+if (!category) {
+  return Astro.redirect("/404");
+}
+
+const tools = [...(await listDisplayTools("de"))]
+  .filter((tool) => tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag)))
+  .sort((a, b) => a.title.localeCompare(b.title, "de"));
+const toolCount = tools.length;
+const seoIntroParagraphs = category.seo?.intro
+  ? category.seo.intro.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean)
+  : [];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: category.title,
+  url: `${SITE_URL}/category/${slug}/`,
+  numberOfItems: toolCount,
+  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+  })),
+};
+const categoryPageSchema = buildCollectionPageSchema({
+  name: category.title,
+  description: category.description,
+  url: `${SITE_URL}/category/${slug}/`,
+  about: [category.title, "AI-Tools", "Kategorie"],
+  mainEntity: itemListSchema,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Kategorien", url: `${SITE_URL}/category/` },
+  { name: category.title, url: `${SITE_URL}/category/${slug}/` },
+]);
+---
+
+<BaseLayout
+  title={`${category.title} - Utildesk`}
+  description={category.description}
+>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de/category/${slug}/`} />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryPageSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <article class="tool-akte sheet-wrap category-detail">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/category/">← alle Kategorien</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">{category.title}</span>
+    </nav>
+
+    <header class="sheet-head">
+      <div class="sheet-head-kicker">↳ Kategorie-Akte · Tool-Auswahl</div>
+      <h1 class="sheet-head-h1">{category.title}<span class="akte-mast-dot">.</span></h1>
+      <p class="sheet-head-dek">{category.description}</p>
+      <div class="sheet-head-meta">
+        <span><strong>{toolCount}</strong> {toolCount === 1 ? "Tool" : "Tools"}</span>
+        <span>·</span>
+        <span>Quelle: Utildesk-Inventar</span>
+      </div>
+    </header>
+
+    {category.seo && (
+      <section class="akte-article category-context">
+        <div class="akte-article-body">
+          <div>
+            {seoIntroParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+            {category.seo.sections.map((section) => (
+              <>
+                <h2>{section.title}</h2>
+                <p>{section.text}</p>
+              </>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    {toolCount < 5 && (
+      <div class="akte-colophon category-note">
+        <span><span class="akte-colophon-key">Status:</span> Diese Kategorie wird gerade gefüllt.</span>
+      </div>
+    )}
+  </article>
+
+  <div class="tool-akte inv-list-wrap category-tools-wrap">
+    <aside class="inv-filter-rail" aria-label="Kategorie-Status">
+      <div class="inv-filter-kicker">↳ Auswahl</div>
+      <h2>Passende<br />Akten.</h2>
+      <div class="inv-filter-group">
+        <h3>Kategorie</h3>
+        <p><span class="inv-filter-box inv-filter-box-fill" aria-hidden="true"></span><span>{category.title}</span><em>{toolCount}</em></p>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span>Bezahlte Plätze</span><em>0</em></p>
+      </div>
+      <div class="inv-filter-group">
+        <h3>Navigation</h3>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span><a href="/tools/">Alle Tools</a></span><em>↗</em></p>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span><a href="/category/">Alle Kategorien</a></span><em>↗</em></p>
+      </div>
+    </aside>
+
+    <div class="tools-grid inv-register inv-view-register" id="tools-grid">
+      {tools.map((tool, index) => (
+        <InventoryToolRow tool={tool} href={`/tools/${tool.slug}/`} index={index} locale="de" />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

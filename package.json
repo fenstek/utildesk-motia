@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check:editorial": "node scripts/check_editorial_templates.mjs",
+    "check:tool-quality": "node scripts/check_tool_quality_guard.mjs",
+    "audit:templates": "node scripts/audit-templates.mjs",
+    "apply:tool-quality": "node scripts/apply-tool-quality-frontmatter.mjs",
+    "normalize:categories": "node --no-warnings scripts/normalize-categories.ts",
+    "translate:tools:en": "node scripts/translate_tools_to_english_codex.mjs",
+    "check:tools:en": "node scripts/check_english_tool_translations.mjs",
+    "postproduction": "node scripts/postproduction_pipeline.mjs",
+    "audit:vendor": "node scripts/audit_vendor_tool_cards.mjs"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +21,7 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "googleapis": "^170.1.0",
-    "openai": "^6.16.0"
+    "openai": "^6.16.0",
+    "simple-icons": "^12.0.0"
   }
 }

@@ -1,0 +1,563 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { marked } from "marked";
+import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
+import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
+import { CATEGORIES } from "../../../lib/categories";
+import contentLastmodManifest from "../../../data/content-lastmod.json";
+import {
+  buildEnglishToolFeatureList,
+  buildEnglishToolMarkdown,
+  categoryTitleEn,
+  getEnglishToolMeta,
+  hasEnglishToolTranslation,
+} from "../../../lib/englishContent";
+import toolAddedAtManifest from "../../../data/tool-added-at.json";
+import {
+  createToolAddedAtRankMap,
+  getToolSearchIndexDecision,
+} from "../../../lib/searchIndexPolicy.mjs";
+import {
+  classifyToolEntry,
+  isCuratedToolEntry,
+  stripTemplateBoilerplate,
+} from "../../../lib/toolQuality.mjs";
+import { listDisplayTools } from "../../../lib/toolDisplay";
+import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import { tagHref } from "../../../lib/tagRoutes";
+import { getToolEditorialVerdict } from "../../../lib/toolVerdict";
+import {
+  buildBreadcrumbSchema,
+  buildPublisherOrganization,
+  SITE_URL,
+  toAbsoluteUrl,
+} from "../../../lib/siteMeta";
+import {
+  buildOfferFromPriceModel,
+  mapToolCategoryToSchemaCategory,
+} from "../../../lib/machineReadable";
+import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../../lib/schema";
+
+export async function getStaticPaths() {
+  const entries = await listActiveToolEntries();
+  return entries.filter((entry) => hasEnglishToolTranslation(entry.slug)).map((entry) => ({
+    params: { locale: "en", slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { slug } = entry;
+const contentLastmod = contentLastmodManifest as Record<string, string>;
+const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
+const searchIndexDecision = getToolSearchIndexDecision(entry, {
+  addedAtRank: toolAddedAtRankMap.get(slug) ?? 0,
+});
+const toolQuality = classifyToolEntry(entry);
+const isCuratedTool = isCuratedToolEntry(entry, toolQuality);
+const meta = getEnglishToolMeta(entry);
+const providerUrl = meta.targetUrl || "";
+const editorialVerdict = getToolEditorialVerdict(
+  entry.data.editorial_verdict,
+  "en",
+  isCuratedTool ? "recommend" : "caution",
+);
+const vendorName = entry.data.vendor ? String(entry.data.vendor) : meta.title;
+const extractDomain = (url: string) => {
+  if (!url) return "";
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+  }
+};
+const providerDomain = extractDomain(meta.officialUrl || providerUrl);
+const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
+const localLogo = resolveLocalLogo(slug);
+const faviconCandidates = getFaviconCandidates(providerUrl, 128);
+const faviconLogo = faviconCandidates[0] ?? null;
+const logoUrl = brandLogo || localLogo || faviconLogo;
+const logoFallbacks = logoUrl === faviconLogo ? [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(meta.title)] : [];
+const englishMarkdown = isCuratedTool
+  ? buildEnglishToolMarkdown(entry)
+  : stripTemplateBoilerplate(buildEnglishToolMarkdown(entry));
+const englishMarkdownWithoutAlternatives = englishMarkdown.replace(
+  /(?:^|\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\n]*\n[\s\S]*?(?=\n#{1,3}\s|\s*$)/i,
+  "",
+).trim();
+let articleHtml = String(marked.parse(englishMarkdownWithoutAlternatives));
+articleHtml = articleHtml.replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
+const featureList = buildEnglishToolFeatureList(entry);
+const faqSchema = isCuratedTool
+  ? buildFaqPageSchema(extractFaqPairsFromMarkdown(englishMarkdown))
+  : null;
+const norm = (value: unknown) => String(value ?? "").trim().toLowerCase();
+const categoryNorm = norm(meta.category);
+const seenTags = new Set<string>();
+const displayTags = meta.tags
+  .map(String)
+  .filter((tag) => {
+    const normalized = norm(tag);
+    if (!normalized) return false;
+    if (normalized === "ai") return false;
+    if (categoryNorm && normalized === categoryNorm) return false;
+    if (seenTags.has(normalized)) return false;
+    seenTags.add(normalized);
+    return true;
+  });
+
+const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [];
+const categoryResults = CATEGORIES.map((category) => {
+  const matches = rawTags.filter((tag) => category.matchTags.includes(tag));
+  const matchCount = matches.length;
+  const firstMatchPos = matchCount > 0 ? rawTags.findIndex((tag) => category.matchTags.includes(tag)) : Infinity;
+  return { category, matchCount, firstMatchPos };
+}).filter((result) => result.matchCount > 0);
+categoryResults.sort((a, b) => {
+  if (b.matchCount !== a.matchCount) return b.matchCount - a.matchCount;
+  return a.firstMatchPos - b.firstMatchPos;
+});
+const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category : undefined;
+const providerCtaLabel = providerUrl ? `Open ${meta.title}` : "Open provider";
+const mastheadOneliner = meta.description;
+const monogramLetter = (vendorName || meta.title || slug || "#")
+  .replace(/[^A-Za-z]/g, "")
+  .charAt(0)
+  .toUpperCase() || "#";
+const mentionedInCount = Array.isArray(entry.data.mentionedIn) ? entry.data.mentionedIn.length : 0;
+
+const normalizeAltName = (value: string) =>
+  String(value ?? "")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/[`*_]/g, "")
+    .replace(/[:\uFF1A]\s*$/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+const normalizeAltNameFuzzy = (value: string) =>
+  normalizeAltName(value)
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\b(ai|tool|app|platform)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+const parseAltItem = (item: string) => {
+  const internalLink = item.match(/^\[([^\]]+)\]\(\/(?:en\/)?tools\/([^/)\s]+)\/?\)\s*(?::\s*(.*))?$/);
+  if (internalLink) return { name: internalLink[1], slug: internalLink[2] };
+
+  const linked = item.match(/^\[([^\]]+)\]\(([^)]+)\)\s*(?::\s*(.*))?$/);
+  if (linked) return { name: linked[1], slug: "" };
+
+  const boldColonInside = item.match(/^\*\*([^*]+?)\s*:\s*\*\*\s*(.+)$/);
+  if (boldColonInside) return { name: boldColonInside[1], slug: "" };
+
+  const bold = item.match(/^\s*\*\*([^*]+)\*\*\s*(?::|\u2013|\u2014|-)?/i);
+  if (bold) return { name: bold[1], slug: "" };
+
+  const plainWithSeparator = item.match(/^\s*([^:\u2013\u2014-][^:\u2013\u2014-]{1,80})\s*(?::|\u2013|\u2014|-)\s*(.+)?$/);
+  if (plainWithSeparator) return { name: plainWithSeparator[1], slug: "" };
+
+  return null;
+};
+const altSection = englishMarkdown.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
+const rawAltItems: string[] = altSection
+  ? (altSection[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((line) => line.replace(/^[-*]\s+/, "").trim())
+  : [];
+const allDisplayTools = await listDisplayTools("en");
+const enabledBySlug = new Map(allDisplayTools.map((tool) => [tool.slug, tool]));
+const enabledByNormTitle = new Map(allDisplayTools.map((tool) => [normalizeAltName(tool.title), tool]));
+const enabledByNormTitleFuzzy = new Map(allDisplayTools.map((tool) => [normalizeAltNameFuzzy(tool.title), tool]));
+const alternatives = rawAltItems.reduce<typeof allDisplayTools>((acc, item) => {
+  const parsed = parseAltItem(item);
+  if (!parsed) return acc;
+  const tool = parsed.slug
+    ? enabledBySlug.get(parsed.slug)
+    : enabledByNormTitle.get(normalizeAltName(parsed.name)) ?? enabledByNormTitleFuzzy.get(normalizeAltNameFuzzy(parsed.name));
+  if (!tool || tool.slug === slug || acc.some((current) => current.slug === tool.slug)) return acc;
+  acc.push(tool);
+  return acc;
+}, []);
+const alternativesTop = alternatives.slice(0, 3);
+const canonicalUrl = `${SITE_URL}/en/tools/${slug}/`;
+const lastmodKey = `content/tools/${slug}.md`;
+const checkedDateSource =
+  entry.data.lastReviewed ||
+  entry.data.last_reviewed ||
+  entry.data.lastReviewedAt ||
+  entry.data.last_reviewed_at ||
+  entry.data.editorial_reviewed_at ||
+  entry.data.editorialReviewedAt ||
+  (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
+const checkedDate = checkedDateSource
+  ? new Intl.DateTimeFormat("en", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(String(checkedDateSource)))
+  : "";
+const generatedAtSource =
+  contentLastmod[lastmodKey] ||
+  entry.data.generatedAt ||
+  entry.data.generated_at ||
+  entry.data.created_at ||
+  entry.data.createdAt ||
+  entry.data.date;
+const generatedAt = generatedAtSource
+  ? new Intl.DateTimeFormat("en", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(String(generatedAtSource)))
+  : "";
+const formatShortDate = (value: unknown) => {
+  if (!value) return "";
+  try {
+    return new Intl.DateTimeFormat("en", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    }).format(new Date(String(value)));
+  } catch {
+    return "";
+  }
+};
+const lastCheckedShort = formatShortDate(checkedDateSource);
+const inIndexSinceShort = formatShortDate(entry.data.created_at || entry.data.createdAt || entry.data.date);
+const offer = buildOfferFromPriceModel(entry.data.price_model ? String(entry.data.price_model) : null);
+if (offer && meta.priceModel) {
+  offer.category = meta.priceModel;
+  if ("priceSpecification" in offer && offer.priceSpecification) {
+    offer.priceSpecification.description = meta.priceModel;
+  }
+}
+const schema = {
+  "@context": "https://schema.org",
+  "@type": ["SoftwareApplication", "WebApplication"],
+  name: meta.title,
+  description: meta.description,
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  operatingSystem: "Web",
+  applicationCategory: mapToolCategoryToSchemaCategory(meta.category, meta.tags),
+  applicationSubCategory: meta.category || undefined,
+  inLanguage: "en",
+  keywords: meta.tags.length ? meta.tags.join(", ") : undefined,
+  featureList: featureList.length ? featureList : undefined,
+  isAccessibleForFree: ["Free", "Freemium", "Open Source"].includes(meta.priceModel),
+  publisher: buildPublisherOrganization(),
+  image: logoUrl ? toAbsoluteUrl(logoUrl) : undefined,
+  offers: offer,
+  about: meta.tags.length ? meta.tags.map((tag) => ({ "@type": "Thing", name: tag })) : undefined,
+  ...(meta.officialUrl && { sameAs: meta.officialUrl }),
+};
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Directory", url: `${SITE_URL}/en/` },
+  { name: "Tools", url: `${SITE_URL}/en/tools/` },
+  { name: meta.title, url: canonicalUrl },
+]);
+---
+
+<BaseLayout
+  locale="en"
+  title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`}
+  description={meta.metaDescription}
+  robots={searchIndexDecision.robots}
+  googlebotRobots={searchIndexDecision.googlebotRobots}
+>
+  <Fragment slot="head">
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={`/en/markdown/tools/${slug}.md`} title={`${meta.title} (Markdown)`} />
+    {isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(schema)} /> : null}
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
+  </Fragment>
+
+  <div class="tool-akte">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/en/tools/">Back to Tool Index</a>
+      {primaryCategory ? (
+        <Fragment>
+          <span class="akte-crumb-sep">/</span>
+          <a href={`/en/category/${primaryCategory.slug}/`}>{categoryTitleEn(primaryCategory.slug, primaryCategory.title)}</a>
+        </Fragment>
+      ) : meta.category ? (
+        <Fragment>
+          <span class="akte-crumb-sep">/</span>
+          <span>{meta.category}</span>
+        </Fragment>
+      ) : null}
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">{meta.title}</span>
+    </nav>
+
+    <header class="akte-mast">
+      <div class="akte-mast-body">
+        <div class="akte-mast-kicker">
+          Tool File{meta.category ? ` / ${meta.category}` : ""}
+        </div>
+
+        <h1 class="akte-mast-h1">{meta.title}<span class="akte-mast-dot">.</span></h1>
+
+        {mastheadOneliner && (
+          <p class="akte-mast-oneliner">{mastheadOneliner}</p>
+        )}
+
+        {(meta.category || meta.priceModel || displayTags.length > 0) && (
+          <div class="akte-chips">
+            {meta.category && primaryCategory ? (
+              <a class="akte-chip akte-chip-category" href={`/en/category/${primaryCategory.slug}/`}>{meta.category}</a>
+            ) : meta.category ? (
+              <span class="akte-chip akte-chip-category">{meta.category}</span>
+            ) : null}
+            {meta.priceModel && (
+              <span class="akte-chip akte-chip-price">{meta.priceModel}</span>
+            )}
+            {displayTags.map((tag) => (
+              <a class="akte-chip akte-chip-tag" href={tagHref(tag, "en")}>#{tag}</a>
+            ))}
+          </div>
+        )}
+
+        {(providerUrl || providerDomain) && (
+          <div class="akte-actions">
+            {providerUrl && (
+              <a
+                class="akte-action akte-action-primary"
+                href={providerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={providerCtaLabel}
+              >
+                Open provider{providerDomain ? ` / ${providerDomain}` : ""}
+              </a>
+            )}
+            <a class="akte-action akte-action-ghost" href="/en/tools/">
+              Back to index
+            </a>
+          </div>
+        )}
+      </div>
+
+      <aside class="akte-faktenblatt" aria-label="Fact sheet">
+        <div class="akte-faktenblatt-tab">Fact sheet</div>
+
+        <div class="akte-faktenblatt-head">
+          <span class="akte-monogram" aria-hidden="true">
+            {logoUrl ? (
+              <img
+                src={logoUrl}
+                alt=""
+                loading="lazy"
+                data-fallback-srcs={logoFallbacks.length ? JSON.stringify(logoFallbacks) : undefined}
+              />
+            ) : (
+              monogramLetter
+            )}
+          </span>
+          <div class="akte-faktenblatt-vendor">
+            <div class="akte-faktenblatt-vendor-name">{vendorName}</div>
+            {providerDomain && (
+              <div class="akte-faktenblatt-vendor-domain">{providerDomain}</div>
+            )}
+          </div>
+        </div>
+
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Category</span>
+          <span class="akte-faktenblatt-val">{meta.category || "-"}</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Pricing model</span>
+          <span class="akte-faktenblatt-val">{meta.priceModel || "-"}</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Hosting</span>
+          <span class="akte-faktenblatt-val">Web / provider</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">DPA available</span>
+          <span class="akte-faktenblatt-val">check</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Open source</span>
+          <span class="akte-faktenblatt-val">No</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">Self-hostable</span>
+          <span class="akte-faktenblatt-val">No</span>
+        </div>
+        <div class="akte-faktenblatt-row">
+          <span class="akte-faktenblatt-key">API available</span>
+          <span class="akte-faktenblatt-val">check</span>
+        </div>
+        <div class="akte-faktenblatt-row is-paid">
+          <span class="akte-faktenblatt-key">Paid placement</span>
+          <span class="akte-faktenblatt-val">no</span>
+        </div>
+
+        <hr class="akte-faktenblatt-divider" />
+        <div class="akte-faktenblatt-foot">
+          <div>
+            <span class="akte-faktenblatt-key">Last reviewed</span>
+            <span>{lastCheckedShort || "-"}</span>
+          </div>
+          <div>
+            <span class="akte-faktenblatt-key">In index since</span>
+            <span>{inIndexSinceShort || "-"}</span>
+          </div>
+          <div>
+            <span class="akte-faktenblatt-key">Used in</span>
+            <span>{mentionedInCount > 0 ? `${mentionedInCount} guides` : "-"}</span>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <section class="akte-verdict-card" aria-label="Editorial verdict">
+      <span class="akte-verdict-tab">Editorial verdict</span>
+      <div class="akte-verdict-main">
+        <span class="akte-verdict-glyph">{editorialVerdict.icon}</span>
+        <div class="akte-verdict-copy">
+          <p class="akte-verdict-kicker">{editorialVerdict.detailKicker}</p>
+          <h2>{editorialVerdict.detailHeadline}</h2>
+          <p>{editorialVerdict.detailText}</p>
+        </div>
+        <aside class="akte-verdict-trust">
+          <strong>Trust</strong>
+          <span class="akte-trust-bars"><i></i><i></i><i></i><i></i><em></em></span>
+          <small>{editorialVerdict.trustLabel}</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="akte-tldr akte-tldr-always" aria-label="TL;DR">
+      <div class="akte-tldr-aside">
+        <span class="akte-tldr-kicker">In 60 sec.</span>
+        <span class="akte-tldr-title">TL;DR<span class="akte-mast-dot">.</span></span>
+      </div>
+      <div class="akte-tldr-body">
+        <p>{mastheadOneliner}</p>
+        <ul>
+          <li>{meta.category ? `${meta.title} is filed under ${meta.category}.` : `${meta.title} is listed as an AI tool in the index.`}</li>
+          <li>{meta.priceModel ? `Pricing model: ${meta.priceModel}.` : "Check pricing with the provider before using it in production."}</li>
+          <li>No paid placement in the Utildesk index.</li>
+        </ul>
+      </div>
+    </section>
+
+    {isCuratedTool ? (
+      <p class="editorial-note">
+        Curated by <strong>Utildesk Editorial</strong>
+        {checkedDate ? <span> / last checked: {checkedDate}</span> : null}
+        <span> / <a href="/en/methodology/">Methodology</a></span>
+      </p>
+    ) : (
+      <p class="editorial-note">
+        Entry automatically created from public sources{generatedAt ? <span> / as of: {generatedAt}</span> : null}
+        <span> / <a href="/en/methodology/">Methodology</a></span>
+      </p>
+    )}
+  </div>
+
+  <article class="card article akte-article">
+    <div class="article-body akte-article-body">
+      {!isCuratedTool ? (
+        <blockquote class="tool-disclosure">
+          This entry was generated automatically from public provider information and has not been editorially reviewed.
+          For curated context, see our <a href="/en/ratgeber/">guides</a>.
+        </blockquote>
+      ) : null}
+
+      <div set:html={articleHtml}></div>
+    </div>
+  </article>
+
+  {alternativesTop.length > 0 && (
+    <section class="akte-alts tool-akte" aria-label="Related files">
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">Related files</div>
+          <h2 class="akte-alts-title">
+            Comparable tools<span class="akte-mast-dot">.</span>
+          </h2>
+        </div>
+        <a class="akte-alts-all" href="/en/tools/">All files</a>
+      </div>
+      <div class="akte-alts-grid">
+        {alternativesTop.map((tool, i) => {
+          const altMonogram = (tool.title || "#")
+            .replace(/[^A-Za-z]/g, "")
+            .charAt(0)
+            .toUpperCase() || "#";
+          const altPriceModel = tool.priceModel || tool.price_model;
+          return (
+            <a
+              href={`/en/tools/${tool.slug}/`}
+              class="akte-alt-card"
+            >
+              <div class="akte-alt-card-head">
+                <span class="akte-alt-card-kicker">
+                  Alternative {String(i + 1).padStart(2, "0")}
+                </span>
+                <span class="akte-alt-card-mono" aria-hidden="true">
+                  {tool.iconUrl ? (
+                    <img
+                      src={tool.iconUrl}
+                      alt=""
+                      loading="lazy"
+                      data-fallback-srcs={tool.iconFallbacks.length ? JSON.stringify(tool.iconFallbacks) : undefined}
+                    />
+                  ) : (
+                    altMonogram
+                  )}
+                </span>
+              </div>
+              <div class="akte-alt-card-name">
+                {tool.title}<span class="akte-mast-dot">.</span>
+              </div>
+              <p class="akte-alt-card-tone">
+                {tool.excerpt || "Short description coming soon."}
+              </p>
+              <div class="akte-alt-card-foot">
+                <span class="akte-alt-card-meta">
+                  {[tool.category, altPriceModel].filter(Boolean).join(" / ")}
+                </span>
+                <span class="akte-alt-card-open">Open file</span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  <div class="tool-akte">
+    <aside class="akte-colophon" aria-label="Colophon">
+      <span><span class="akte-colophon-key">File</span> {vendorName || meta.title}</span>
+      <span><span class="akte-colophon-key">Status</span> {isCuratedTool ? "curated" : "automatic"}</span>
+      {lastCheckedShort && (
+        <span><span class="akte-colophon-key">Last review</span> {lastCheckedShort}</span>
+      )}
+      <span><span class="akte-colophon-key">Data</span> <a href={`/en/api/tools/${slug}.json`}>/en/api/tools/{slug}.json</a></span>
+      <span><span class="akte-colophon-key">License</span> CC BY-NC 4.0</span>
+      <span class="akte-colophon-paid">0 paid placements</span>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .editorial-note {
+    margin: 14px 0 0;
+    font-family: var(--mono);
+    color: var(--fg-3);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+  }
+
+  .editorial-note a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import process from "node:process";
 import { google } from "googleapis";
+import { normalizePriceModel } from "./lib/price_model_policy.mjs";
 
 /**
  * НАСТРОЙКА — МЕНЯЕШЬ ТОЛЬКО 2 СТРОКИ НИЖЕ
@@ -22,10 +23,14 @@ const EXPECTED_COLUMNS = [
   "category",
   "tags",
   "price_model",
+  "official_url",
   "affiliate_url",
   "status",
   "notes",
 ];
+const HARD_REJECT_SLUGS = new Set([
+  "this-person-does-not-exist",
+]);
 
 function ensureFilled(value, name) {
   if (!value || value.includes("PASTE_")) {
@@ -115,15 +120,21 @@ async function main() {
   for (let i = 0; i < rows.length; i++) {
     const row = rows[i];
     const status = String(row[index.status] || "").trim().toUpperCase();
+    const slug = String(row[index.slug] || "").trim().toLowerCase();
 
     if (status === "NEW") {
+      if (HARD_REJECT_SLUGS.has(slug)) {
+        console.error(`[hard-reject] skip NEW row ${i + 2}: slug=${slug}`);
+        continue;
+      }
       const result = {
         row_number: i + 2,
         topic: String(row[index.topic] || "").trim(),
         slug: String(row[index.slug] || "").trim(),
         category: String(row[index.category] || "").trim(),
         tags: String(row[index.tags] || "").trim(),
-        price_model: String(row[index.price_model] || "").trim(),
+        price_model: normalizePriceModel(String(row[index.price_model] || "").trim()),
+        official_url: String(row[index.official_url] || "").trim(),
         affiliate_url: String(row[index.affiliate_url] || "").trim(),
         status: String(row[index.status] || "").trim(),
         notes: String(row[index.notes] || "").trim(),
@@ -145,4 +156,3 @@ main().catch((err) => {
   console.error("ERROR:", err.message);
   process.exit(1);
 });
-

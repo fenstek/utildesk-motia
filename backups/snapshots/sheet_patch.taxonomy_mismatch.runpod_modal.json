@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "generated_at": "2026-03-04T14:49:47.934Z",
+    "source_snapshot": "backups/snapshots/sheet_snapshot.latest.json",
+    "notes": "runpod/modal Cloud taxonomy mismatch resolved via deterministic repo-content fallback; allowlist + matcher-compatible tags only"
+  },
+  "changes": [
+    {
+      "row_id": 214,
+      "slug": "runpod",
+      "column": "tags",
+      "old_value": "developer-tools",
+      "new_value": "automation,workflow,data",
+      "reason": "reconcile_tags_to_category_taxonomy:Cloud:content_profile_fallback",
+      "confidence": "high"
+    },
+    {
+      "row_id": 215,
+      "slug": "modal",
+      "column": "tags",
+      "old_value": "developer-tools",
+      "new_value": "automation,data,api",
+      "reason": "reconcile_tags_to_category_taxonomy:Cloud:content_profile_fallback",
+      "confidence": "high"
+    }
+  ]
+}
