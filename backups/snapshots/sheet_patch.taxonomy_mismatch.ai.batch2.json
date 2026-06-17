@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "generated_at": "2026-03-04T07:39:52.458Z",
+    "source_snapshot": "backups/snapshots/sheet_snapshot.latest.json",
+    "notes": "category=AI; dry_run=0; unresolved=none"
+  },
+  "changes": [
+    {
+      "row_id": 57,
+      "slug": "fotor",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 58,
+      "slug": "clarifai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "video",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 60,
+      "slug": "looka",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 61,
+      "slug": "genei",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 63,
+      "slug": "eleutherai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 64,
+      "slug": "deepmind",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 67,
+      "slug": "narrative",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 68,
+      "slug": "wordsmith",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 70,
+      "slug": "pimeyes",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design,marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 72,
+      "slug": "lumiere",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "video",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 74,
+      "slug": "mistral",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 75,
+      "slug": "google-translate",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 76,
+      "slug": "tensorflow",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 77,
+      "slug": "pytorch",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 78,
+      "slug": "chai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 81,
+      "slug": "novelai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 83,
+      "slug": "storystream",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,design,marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 85,
+      "slug": "deepart-io",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 92,
+      "slug": "sonix",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "transcription,audio",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 93,
+      "slug": "adobe-express",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 95,
+      "slug": "piktochart",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design,marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 96,
+      "slug": "snappa",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design,image,social-media",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 98,
+      "slug": "rasa",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,developer-tools,api",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 102,
+      "slug": "domo",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design,automation,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 103,
+      "slug": "anthropic",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    }
+  ]
+}

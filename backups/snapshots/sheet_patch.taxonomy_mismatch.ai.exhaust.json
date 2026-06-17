@@ -1,0 +1,558 @@
+{
+  "meta": {
+    "generated_at": "2026-03-04T07:45:43.357Z",
+    "source_snapshot": "backups/snapshots/sheet_snapshot.latest.json",
+    "notes": "category=AI; dry_run=0; unresolved=none"
+  },
+  "changes": [
+    {
+      "row_id": 105,
+      "slug": "murf",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,audio",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 107,
+      "slug": "tidio",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 108,
+      "slug": "mobilemonkey",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 111,
+      "slug": "microsoft-azure-openai-service",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "assistant,chatbot,education",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 114,
+      "slug": "ifttt",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 115,
+      "slug": "microsoft-power-automate",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 117,
+      "slug": "trello-mit-butler",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 118,
+      "slug": "google-cloud-vision-ai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 119,
+      "slug": "amazon-rekognition",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "video,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 120,
+      "slug": "microsoft-azure-computer-vision",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "education,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 121,
+      "slug": "ibm-watson-visual-recognition",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 122,
+      "slug": "opencv",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,video",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 124,
+      "slug": "microsoft-azure-cognitive-services",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "education,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 128,
+      "slug": "consensus",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 134,
+      "slug": "wordtune",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 136,
+      "slug": "linguee",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 137,
+      "slug": "pipedream",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 140,
+      "slug": "intercom",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 141,
+      "slug": "sift",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 142,
+      "slug": "ibm-watson",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 145,
+      "slug": "lingvanex",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 146,
+      "slug": "craiyon",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 147,
+      "slug": "qlik",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 148,
+      "slug": "anyword",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,content,marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 153,
+      "slug": "fliki",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "video,audio,content",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 154,
+      "slug": "c3-ai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,analytics,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 155,
+      "slug": "ink",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "writing,content,seo",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 156,
+      "slug": "stability-ai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "image,design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 157,
+      "slug": "let-s-enhance",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "image,design",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 158,
+      "slug": "clipchamp",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "video,content",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 159,
+      "slug": "aive",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "video,content,marketing",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 160,
+      "slug": "readspeaker",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "audio,transcription",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 162,
+      "slug": "adept",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation,workflow",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 164,
+      "slug": "airtable",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 167,
+      "slug": "kai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 168,
+      "slug": "phantombuster",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 169,
+      "slug": "cohere",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 170,
+      "slug": "rev",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 171,
+      "slug": "syllable",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 173,
+      "slug": "paddle",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 177,
+      "slug": "dovetail",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 178,
+      "slug": "bubble",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 180,
+      "slug": "meya",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 182,
+      "slug": "nuance",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 183,
+      "slug": "kaiber",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 184,
+      "slug": "veed",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 187,
+      "slug": "kive",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 188,
+      "slug": "glia",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 189,
+      "slug": "zeplin",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 190,
+      "slug": "google-ai",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 191,
+      "slug": "sphinx",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 196,
+      "slug": "prisma",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 220,
+      "slug": "sas",
+      "column": "tags",
+      "old_value": "ai",
+      "new_value": "chatbot,data",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 286,
+      "slug": "looker",
+      "column": "tags",
+      "old_value": "ai,analytics,enterprise,data,visualization",
+      "new_value": "analytics,data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 380,
+      "slug": "qda-miner",
+      "column": "tags",
+      "old_value": "research,analytics,data",
+      "new_value": "analytics,data,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 430,
+      "slug": "connected-papers",
+      "column": "tags",
+      "old_value": "research,analytics,discovery",
+      "new_value": "analytics,automation",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 478,
+      "slug": "nvidia-dgx-systeme",
+      "column": "tags",
+      "old_value": "data,analytics,developer-tools",
+      "new_value": "data,analytics,developer-tools,chatbot,writing,content,automation,coding,customer-support",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 480,
+      "slug": "graphcore-ipu",
+      "column": "tags",
+      "old_value": "data, analytics, developer-tools",
+      "new_value": "data,analytics,developer-tools,chatbot",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 512,
+      "slug": "lime",
+      "column": "tags",
+      "old_value": "data, analytics, education, developer-tools",
+      "new_value": "data,analytics,education,developer-tools,chatbot,coding,api",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 513,
+      "slug": "shap",
+      "column": "tags",
+      "old_value": "data, analytics, education, developer-tools",
+      "new_value": "data,analytics,education,developer-tools,chatbot,content,coding",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    },
+    {
+      "row_id": 514,
+      "slug": "google-what-if-tool",
+      "column": "tags",
+      "old_value": "data, analytics, developer-tools, education",
+      "new_value": "data,analytics,developer-tools,education,chatbot,writing,content,automation,coding",
+      "reason": "reconcile_tags_to_category_taxonomy:AI",
+      "confidence": "high"
+    }
+  ]
+}

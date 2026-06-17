@@ -1,0 +1,167 @@
+---
+import InventoryToolRow from "../../../components/InventoryToolRow.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { ROBOTS_NOINDEX_FOLLOW } from "../../../lib/searchIndexPolicy.mjs";
+import { humanizeTagLabel } from "../../../lib/seoText";
+import { listDisplayTools } from "../../../lib/toolDisplay";
+import { slugifyTag, tagHref } from "../../../lib/tagRoutes";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../../lib/siteMeta";
+
+export async function getStaticPaths() {
+  const tools = await listDisplayTools("de");
+  const tags = new Map<string, string>();
+  tools.forEach((tool) => {
+    tool.tags.forEach((tag) => {
+      const tagSlug = slugifyTag(tag);
+      if (tagSlug && !tags.has(tagSlug)) tags.set(tagSlug, tag);
+    });
+  });
+  return Array.from(tags.entries()).map(([slug, tag]) => ({
+    params: { slug },
+    props: { tag },
+  }));
+}
+
+const selectedTag = String(Astro.props.tag || "");
+
+if (!selectedTag) {
+  return Astro.redirect("/404");
+}
+
+const enabledTools = await listDisplayTools("de");
+const selectedTagLower = selectedTag.toLowerCase();
+const selectedTagLabel = humanizeTagLabel(selectedTag);
+const filteredTools = enabledTools
+  .filter((tool) => tool.tags.some((tag) => tag.toLowerCase() === selectedTagLower))
+  .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.title.localeCompare(b.title, "de"));
+const tagSlug = slugifyTag(selectedTag);
+const description = `Gefilterte Auswahl von Tools mit dem Tag ${selectedTagLabel}.`;
+
+const tagFrequency = new Map<string, number>();
+enabledTools.forEach((tool) => {
+  tool.tags.forEach((tag) => {
+    const normalized = tag.trim().toLowerCase();
+    if (!normalized) return;
+    tagFrequency.set(tag, (tagFrequency.get(tag) || 0) + 1);
+  });
+});
+const visibleTags = Array.from(tagFrequency.entries())
+  .sort((a, b) => {
+    if (b[1] !== a[1]) return b[1] - a[1];
+    return a[0].localeCompare(b[0], "de");
+  })
+  .map(([tag]) => tag)
+  .filter((tag) => (tagFrequency.get(tag) || 0) >= 2)
+  .slice(0, 32);
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `Tools mit Tag ${selectedTagLabel}`,
+  numberOfItems: filteredTools.length,
+  itemListElement: filteredTools.slice(0, 200).map((tool, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: tool.title,
+    url: `${SITE_URL}/tools/${tool.slug}/`,
+  })),
+};
+const tagPageSchema = buildCollectionPageSchema({
+  name: `Tag: ${selectedTagLabel}`,
+  description,
+  url: `${SITE_URL}${tagHref(selectedTag)}`,
+  about: [selectedTagLabel, "AI-Tools", "Tags"],
+  mainEntity: itemListSchema,
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Tools", url: `${SITE_URL}/tools/` },
+  { name: `Tag: ${selectedTagLabel}`, url: `${SITE_URL}${tagHref(selectedTag)}` },
+]);
+---
+
+<BaseLayout
+  title={`${selectedTagLabel} - Utildesk Tools`}
+  description={`Tools mit dem Tag ${selectedTagLabel} im Utildesk-Verzeichnis`}
+  robots={ROBOTS_NOINDEX_FOLLOW}
+>
+  <Fragment slot="head">
+    <link rel="canonical" href={`https://tools.utildesk.de${tagHref(selectedTag)}`} />
+    <script type="application/ld+json" set:html={JSON.stringify(tagPageSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <div class="tool-akte inv-wrap tag-archive">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/tools/">← Tool-Index</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Tag: {selectedTagLabel}</span>
+    </nav>
+
+    <header class="inv-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">↳ Tag-Akte · Gefiltertes Inventar</div>
+        <h1 class="inv-head-h1">#{selectedTagLabel}<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          Diese Ansicht zeigt nur Tools, deren Metadaten den Tag tragen.
+          Sie ist ein Arbeitsfilter, kein eigenes Ranking.
+        </p>
+      </div>
+      <div class="inv-head-stats" role="group" aria-label="Tag-Kennzahlen">
+        <div class="inv-stat"><strong>{filteredTools.length}</strong><span>Treffer</span></div>
+        <div class="inv-stat"><strong>{visibleTags.length}</strong><span>Weitere Tags</span></div>
+        <div class="inv-stat"><strong>{enabledTools.length.toLocaleString("de-DE")}</strong><span>Tools gesamt</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>0</strong><span>Bezahlte Plätze</span></div>
+      </div>
+    </header>
+  </div>
+
+  {visibleTags.length > 0 && (
+    <section class="tool-akte tag-related akte-alts" aria-label="Weitere Tags">
+      <div class="akte-alts-head">
+        <div class="akte-alts-head-left">
+          <div class="akte-alts-kicker">↳ Tag-Navigation</div>
+          <h2 class="akte-alts-title">Benachbarte Filter<span class="akte-mast-dot">.</span></h2>
+        </div>
+        <a class="akte-alts-all" href="/tools/">Alle Tools</a>
+      </div>
+      <div class="akte-chips tag-chip-ledger">
+        {visibleTags.map((tag) => (
+          <a
+            href={tagHref(tag)}
+            class:list={["akte-chip", "akte-chip-tag", tag.toLowerCase() === selectedTagLower && "is-active"]}
+          >
+            #{humanizeTagLabel(tag)}
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <div class="tool-akte inv-list-wrap tag-tools-wrap">
+    <aside class="inv-filter-rail" aria-label="Tag-Status">
+      <div class="inv-filter-kicker">↳ Auswahl</div>
+      <h2>Tag<br />gefiltert.</h2>
+      <div class="inv-filter-group">
+        <h3>Aktiver Tag</h3>
+        <p><span class="inv-filter-box inv-filter-box-fill" aria-hidden="true"></span><span>#{selectedTagLabel}</span><em>{filteredTools.length}</em></p>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span>Bezahlte Plätze</span><em>0</em></p>
+      </div>
+      <div class="inv-filter-group">
+        <h3>Navigation</h3>
+        <p><span class="inv-filter-box" aria-hidden="true"></span><span><a href="/tools/">Alle Tools</a></span><em>↗</em></p>
+      </div>
+    </aside>
+
+    <div class="tools-grid inv-register inv-view-register" id="tools-grid">
+      {filteredTools.map((tool, index) => (
+        <InventoryToolRow tool={tool} href={`/tools/${tool.slug}/`} index={index} locale="de" />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

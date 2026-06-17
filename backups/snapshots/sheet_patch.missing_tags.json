@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "generated_at": "2026-03-04T07:15:07.833Z",
+    "source_snapshot": "backups/snapshots/sheet_snapshot.latest.json",
+    "notes": "missing_tags unresolved: 201:groq:no_category_mapping:AI Infrastructure | 202:openrouter:no_category_mapping:AI Infrastructure | 203:together-ai:no_category_mapping:AI Infrastructure | 204:replicate:no_category_mapping:AI Infrastructure | 205:deepinfra:no_category_mapping:AI Infrastructure | 206:fireworks-ai:no_category_mapping:AI Infrastructure | 207:weaviate:no_category_mapping:AI Infrastructure | 208:qdrant:no_category_mapping:AI Infrastructure | 211:anything-llm:no_category_mapping:AI | 212:open-webui:no_category_mapping:AI | 213:jan-ai:no_category_mapping:AI | 214:runpod:no_category_mapping:Cloud | 215:modal:no_category_mapping:Cloud | 221:openai-gpt-modelle:no_category_mapping:AI | 222:uipath:no_category_mapping:AI | 231:monday-com:no_category_mapping:AI | 232:google-tabellen:no_category_mapping:AI | 248:wavepad:no_category_mapping:AI | 484:rephrase-ai:no_category_mapping:AI"
+  },
+  "changes": [
+    {
+      "row_id": 199,
+      "slug": "n8n",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "automation,workflow",
+      "reason": "backfill_missing_tags_from_category:Automatisierung",
+      "confidence": "high"
+    },
+    {
+      "row_id": 200,
+      "slug": "sora",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "video",
+      "reason": "backfill_missing_tags_from_category:Video",
+      "confidence": "high"
+    },
+    {
+      "row_id": 209,
+      "slug": "crew-ai",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "automation",
+      "reason": "backfill_missing_tags_from_category:AI Agents",
+      "confidence": "high"
+    },
+    {
+      "row_id": 210,
+      "slug": "autogen",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "automation",
+      "reason": "backfill_missing_tags_from_category:AI Agents",
+      "confidence": "high"
+    },
+    {
+      "row_id": 216,
+      "slug": "vercel-ai",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "coding,developer-tools",
+      "reason": "backfill_missing_tags_from_category:Developer",
+      "confidence": "high"
+    },
+    {
+      "row_id": 217,
+      "slug": "bolt-new",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "coding,developer-tools",
+      "reason": "backfill_missing_tags_from_category:Developer",
+      "confidence": "high"
+    },
+    {
+      "row_id": 218,
+      "slug": "assemblyai",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "audio",
+      "reason": "backfill_missing_tags_from_category:Audio",
+      "confidence": "high"
+    },
+    {
+      "row_id": 219,
+      "slug": "openclaw",
+      "column": "tags",
+      "old_value": "",
+      "new_value": "automation",
+      "reason": "backfill_missing_tags_from_category:AI Agents",
+      "confidence": "high"
+    }
+  ]
+}

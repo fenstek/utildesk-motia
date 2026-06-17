@@ -1,0 +1,158 @@
+name: Tool quality guard
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/tool-quality.yml"
+      - "content/tools/**"
+      - "content/en/tools/**"
+      - "scripts/check_editorial_templates.mjs"
+      - "scripts/check_english_tool_translations.mjs"
+      - "scripts/check_tool_quality_guard.mjs"
+      - "scripts/normalize-categories.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "site/package.json"
+      - "site/package-lock.json"
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/tool-quality.yml"
+      - "content/tools/**"
+      - "content/en/tools/**"
+      - "scripts/check_editorial_templates.mjs"
+      - "scripts/check_english_tool_translations.mjs"
+      - "scripts/check_tool_quality_guard.mjs"
+      - "scripts/normalize-categories.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "site/package.json"
+      - "site/package-lock.json"
+
+jobs:
+  tool-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Editorial template check
+        run: npm run check:editorial
+
+      - name: English tool translation check
+        run: npm run check:tools:en
+
+      - name: Tool quality guard
+        run: npm run check:tool-quality
+
+      - name: Detect category normalization inputs
+        id: category-inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            base="${{ github.event.pull_request.base.sha }}"
+            head="${{ github.event.pull_request.head.sha }}"
+          else
+            base="${{ github.event.before }}"
+            head="${{ github.sha }}"
+            if [[ -z "$base" || "$base" == "0000000000000000000000000000000000000000" ]]; then
+              base="$(git rev-list --max-parents=0 "$head")"
+            fi
+          fi
+
+          if ! git diff --quiet "$base" "$head" -- scripts/normalize-categories.ts; then
+            echo "mode=global" >> "$GITHUB_OUTPUT"
+            echo "category_files_json=[]" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          BASE_SHA="$base" HEAD_SHA="$head" node <<'NODE'
+          const { execFileSync } = require("node:child_process");
+          const fs = require("node:fs");
+
+          const base = process.env.BASE_SHA;
+          const head = process.env.HEAD_SHA;
+
+          const git = (args) => execFileSync("git", args, { encoding: "utf8" });
+          const show = (rev, file) => {
+            try {
+              return git(["show", `${rev}:${file}`]);
+            } catch {
+              return "";
+            }
+          };
+          const categoryOf = (raw) => {
+            const match = raw.match(/^category:\s*(.*)$/m);
+            if (!match) return "";
+            const value = match[1].trim();
+            if (
+              (value.startsWith('"') && value.endsWith('"')) ||
+              (value.startsWith("'") && value.endsWith("'"))
+            ) {
+              return value.slice(1, -1).trim();
+            }
+            return value;
+          };
+
+          const files = git(["diff", "--name-only", base, head, "--", "content/tools"])
+            .split(/\r?\n/)
+            .filter((file) => file.endsWith(".md"));
+          const categoryFiles = files.filter((file) => categoryOf(show(base, file)) !== categoryOf(show(head, file)));
+
+          fs.appendFileSync(
+            process.env.GITHUB_OUTPUT,
+            `mode=${categoryFiles.length ? "changed-files" : "skip"}\n` +
+              `category_files_json=${JSON.stringify(categoryFiles)}\n`,
+          );
+          NODE
+
+      - name: Category normalization dry run
+        if: steps.category-inputs.outputs.mode != 'skip'
+        env:
+          CATEGORY_NORMALIZATION_MODE: ${{ steps.category-inputs.outputs.mode }}
+          CATEGORY_FILES_JSON: ${{ steps.category-inputs.outputs.category_files_json }}
+        run: |
+          node --no-warnings scripts/normalize-categories.ts > /tmp/normalize-categories.json
+          node -e '
+            const fs = require("node:fs");
+            const result = JSON.parse(fs.readFileSync("/tmp/normalize-categories.json", "utf8"));
+            const mode = process.env.CATEGORY_NORMALIZATION_MODE;
+            const categoryFiles = JSON.parse(process.env.CATEGORY_FILES_JSON || "[]");
+            const relevantChanges =
+              mode === "global"
+                ? result.changes
+                : result.changes.filter((change) => categoryFiles.includes(change.file));
+            if (relevantChanges.length !== 0) {
+              console.error(JSON.stringify({ ...result, changes: relevantChanges }, null, 2));
+              process.exit(1);
+            }
+            if (mode === "global" && result.changed !== 0) {
+              console.error(JSON.stringify(result, null, 2));
+              process.exit(1);
+            }
+            if (result.uniqueCategoriesAfter > 14) {
+              console.error(JSON.stringify(result, null, 2));
+              process.exit(1);
+            }
+            console.log(JSON.stringify({
+              changed: result.changed,
+              relevantChanged: relevantChanges.length,
+              mode,
+              totalTools: result.totalTools,
+              uniqueCategoriesAfter: result.uniqueCategoriesAfter
+            }, null, 2));
+          '

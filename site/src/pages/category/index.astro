@@ -1,0 +1,109 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CATEGORIES } from "../../lib/categories";
+import { getDecisionIssueNumber } from "../../lib/contentIssue";
+import { listDisplayTools } from "../../lib/toolDisplay";
+import {
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  SITE_URL,
+} from "../../lib/siteMeta";
+
+const tools = await listDisplayTools("de");
+const issueNo = getDecisionIssueNumber();
+const categoriesWithCount = CATEGORIES.map((category) => {
+  const count = tools.filter((tool) =>
+    tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag))
+  ).length;
+  return { ...category, count };
+});
+const populatedCount = categoriesWithCount.filter((category) => category.count > 0).length;
+const largestCategory = [...categoriesWithCount].sort((a, b) => b.count - a.count)[0];
+
+const categoryItemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Utildesk Kategorien",
+  numberOfItems: categoriesWithCount.length,
+  itemListElement: categoriesWithCount.map((category, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: category.title,
+    url: `${SITE_URL}/category/${category.slug}/`,
+  })),
+};
+const categoryCollectionSchema = buildCollectionPageSchema({
+  name: "Tool-Kategorien",
+  description: "Entdecke AI-Tools nach Kategorien organisiert.",
+  url: `${SITE_URL}/category/`,
+  about: ["AI-Tools", "Kategorien", "Produktivität"],
+  mainEntity: categoryItemListSchema,
+});
+const categoryBreadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Startseite", url: `${SITE_URL}/` },
+  { name: "Kategorien", url: `${SITE_URL}/category/` },
+]);
+---
+
+<BaseLayout
+  title="Kategorien - Utildesk"
+  description="Entdecke AI-Tools nach Kategorien organisiert."
+>
+  <Fragment slot="head">
+    <link rel="canonical" href="https://tools.utildesk.de/category/" />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryCollectionSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryItemListSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(categoryBreadcrumbSchema)} />
+  </Fragment>
+
+  <div class="tool-akte inv-wrap category-archive">
+    <nav class="akte-crumb" aria-label="Breadcrumb">
+      <a href="/">← Startseite</a>
+      <span class="akte-crumb-sep">/</span>
+      <span class="akte-crumb-current">Kategorien</span>
+    </nav>
+
+    <header class="inv-head">
+      <div class="inv-head-body">
+        <div class="inv-head-kicker">↳ Inventar · Kategorien · Ausgabe № {issueNo}</div>
+        <h1 class="inv-head-h1">Kategorien<span class="akte-mast-dot">.</span></h1>
+        <p class="inv-head-deck">
+          Der schnellste Einstieg ist nicht die Tool-Liste, sondern die Aufgabe:
+          Schreiben, Automatisieren, Entwickeln, Vermarkten oder Medien produzieren.
+        </p>
+      </div>
+      <div class="inv-head-stats" role="group" aria-label="Kategorie-Kennzahlen">
+        <div class="inv-stat"><strong>{categoriesWithCount.length}</strong><span>Kategorien</span></div>
+        <div class="inv-stat"><strong>{tools.length.toLocaleString("de-DE")}</strong><span>Tools indiziert</span></div>
+        <div class="inv-stat"><strong>{populatedCount}</strong><span>Gefüllt</span></div>
+        <div class="inv-stat inv-stat-paid"><strong>{largestCategory?.count ?? 0}</strong><span>Größte Kategorie</span></div>
+      </div>
+    </header>
+  </div>
+
+  <section class="tool-akte category-ledger akte-alts" aria-label="Tool-Kategorien">
+    <div class="akte-alts-head">
+      <div class="akte-alts-head-left">
+        <div class="akte-alts-kicker">↳ Kategorie-Akten</div>
+        <h2 class="akte-alts-title">Nach Arbeitsabsicht sortiert<span class="akte-mast-dot">.</span></h2>
+      </div>
+      <a class="akte-alts-all" href="/tools/">Alle Tools</a>
+    </div>
+    <div class="akte-alts-grid">
+      {categoriesWithCount.map((category, index) => (
+        <a href={`/category/${category.slug}/`} class="akte-alt-card category-akte-card">
+          <div class="akte-alt-card-head">
+            <span class="akte-alt-card-kicker">Kategorie {String(index + 1).padStart(2, "0")}</span>
+            <span class="akte-alt-card-mono" aria-hidden="true">{category.count}</span>
+          </div>
+          <div class="akte-alt-card-name">{category.title}<span class="akte-mast-dot">.</span></div>
+          <p class="akte-alt-card-tone">{category.description}</p>
+          <div class="akte-alt-card-foot">
+            <span class="akte-alt-card-meta">{category.count} {category.count === 1 ? "Tool" : "Tools"}</span>
+            <span class="akte-alt-card-open">Öffnen</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

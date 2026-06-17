@@ -1,6 +1,9 @@
 .env
+.publish_paused
 secrets/
 node_modules/
+__pycache__/
+*.pyc
 content/images/tools/*.png
 # backups & logs
 *.bak.*
@@ -8,3 +11,19 @@ content/images/tools/*.png
 
 # local app folder (will be handled separately)
 motia-app/
+
+# local archives (do not commit)
+_archive/
+tmp/
+
+# local reports (generated)
+reports/
+output/
+.wrangler/
+.playwright-cli/
+
+# audit scripts output (temporary)
+**/audit_missing_categories.*
+
+# Claude Code local preview config
+.claude/launch.json
