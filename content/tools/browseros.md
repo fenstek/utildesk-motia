@@ -11,7 +11,7 @@ category: Produktivität
 price_model: Open Source
 tags: [browser, ai-agents, automation, privacy]
 official_url: "https://www.browseros.ai/"
-popularity: 95
+popularity: 92
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31

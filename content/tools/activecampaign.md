@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [marketing, workflow]
 official_url: "https://www.activecampaign.com/"
-popularity: 89
+popularity: 86
 tier: D
 generated_at: 2026-05-10
 updated_at: 2026-06-11

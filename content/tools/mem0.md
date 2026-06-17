@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [ai-agents, memory, developer-tools, api]
 official_url: "https://mem0.ai/"
-popularity: 49
+popularity: 45
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31
