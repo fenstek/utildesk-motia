@@ -10,7 +10,7 @@ category: AI Agents
 price_model: 
 tags: ["automation", "workflow", "no-code", "productivity"]
 official_url: "https://www.workato.com/"
-popularity: 4
+popularity: 5
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-06-11
