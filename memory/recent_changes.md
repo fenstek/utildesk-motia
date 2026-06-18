@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-12_
 
+## 2026-06-18 - Produktivitäts-Agenten NotebookLM Ratgeber publication
+
+- Took the OptiPlex NotebookLM/article pipeline draft `Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen` as the editorial starting point and rewrote it into a broader bilingual Ratgeber article.
+- Expanded the draft with practical real-life scenarios for agencies, sales triage, support escalation, recruiting coordination, and management reporting.
+- Fact-checked and grounded the article around Lindy, Zapier Agents, n8n AI Agent, Gumloop, Microsoft Copilot Studio, CrewAI, and LangGraph primary sources.
+- Generated two final story-forward business illustrations through Gemini web on the physical OptiPlex under the required paid `vasjakotov11@gmail.com` profile, cropped Gemini UI artifacts, and saved only compressed WebP assets under `content/images/ratgeber/`.
+
 ## 2026-06-15 - Local Google Sheets service-account secret mirrored
 
 - Copied the production Google service-account JSON from `utildesk:/opt/utildesk-motia/secrets/google-service-account.json` into the local git-ignored project secret `secrets/google-service-account.json`.
