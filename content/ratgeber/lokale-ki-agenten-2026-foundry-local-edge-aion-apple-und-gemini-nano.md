@@ -7,7 +7,7 @@ eyebrow: "Lokale KI-Agenten"
 excerpt: "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
 readTime: 10
 coverImage: /images/ratgeber/lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano-cover-gemini-v1.webp
-secondaryImage: /images/ratgeber/lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano-workflow-gemini-v1.webp
+secondaryImage: /images/ratgeber/lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano-workflow-gemini-v2.webp
 tags:
   - "AI Agents"
   - "On-device AI"
@@ -102,7 +102,7 @@ Gerade hier muss man aber sauber formulieren: Edge Aion ist kein Freifahrtschein
 
 Die richtige erste Anwendung ist deshalb nicht “lass den Agenten im Hauptprofil alles klicken”. Die richtige erste Anwendung ist ein begrenzter Browser-Task mit Testprofil, klaren Domains und sichtbaren Freigaben. Lokale Verarbeitung reduziert Datenabfluss, aber sie löst Prompt-Injection, Rechte und Session-Grenzen nicht automatisch.
 
-![Ein lokaler KI-Agent verarbeitet vertrauliche Aufgaben auf Laptop, Smartphone und Edge-Gerät, während nur freigegebene Ergebnisse in die Cloud gehen](/images/ratgeber/lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano-workflow-gemini-v1.webp)
+![Ein lokaler KI-Agent verarbeitet vertrauliche Aufgaben auf Laptop, Smartphone und Edge-Gerät, während nur freigegebene Ergebnisse in die Cloud gehen](/images/ratgeber/lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano-workflow-gemini-v2.webp)
 
 ## Apple Foundation Models: App-Intelligenz ohne Backend-Zwang
 
