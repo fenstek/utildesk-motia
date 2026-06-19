@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-19_
 
+## 2026-06-19 - Lokale KI-Agenten NotebookLM Ratgeber publication
+
+- Retrieved the OptiPlex NotebookLM article draft artifact `47d6acd1-f3e5-4e44-ad3a-2c91144ded73` from the physical `jgdus@100.98.97.98` contour and used it as the editorial starting point.
+- Rewrote the draft into a practical bilingual Ratgeber article around Foundry Local, Microsoft Edge Aion/Web APIs, Apple Foundation Models, Gemini Nano/AICore, LM Studio, and Ollama.
+- Removed or softened unsupported NotebookLM claims around speculative Android product names, future devices, overbroad sovereignty language, and exact Apple model internals unless grounded in primary sources.
+- Added practical rollout guidance, local-vs-cloud decision boundaries, governance risks, and internal links to relevant Utildesk tool cards.
+
 ## 2026-06-19 - OptiPlex NotebookLM source refresh
 
 - Checked the physical OptiPlex NotebookLM contour `jgdus@100.98.97.98` with `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`; auth was ready and tied to the paid `vasjakotov11@gmail.com` profile.
