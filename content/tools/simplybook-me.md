@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [booking,scheduling,saas]
 official_url: "https://simplybook.me/en/"
-popularity: 28
+popularity: 25
 tier: C
 generated_at: 2026-05-17
 ---
