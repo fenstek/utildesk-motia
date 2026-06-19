@@ -13,7 +13,7 @@ official_url: "https://marvelapp.com/"
 affiliate_url: "https://marvelapp.com/"
 tier: D
 generated_at: 2026-05-28
-popularity: 46
+popularity: 43
 description: Design- und Prototyping-Plattform für Wireframes, klickbare Prototypen, Tests und Handoff.
 ---
 # Marvel

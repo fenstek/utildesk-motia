@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Je nach Plan
 tags: [hcm, hr, payroll]
 official_url: "https://www.ukg.com/products/ukg-pro"
-popularity: 11
+popularity: 12
 tier: C
 generated_at: 2026-05-27
 ---

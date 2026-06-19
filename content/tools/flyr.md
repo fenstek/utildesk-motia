@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Abonnement
 tags: [ai, travel, revenue-management, analytics]
 official_url: "https://flyr.com/"
-popularity: 59
+popularity: 57
 tier: D
 generated_at: 2026-05-18
 updated_at: 2026-06-11
