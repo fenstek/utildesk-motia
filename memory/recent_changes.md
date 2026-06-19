@@ -1,5 +1,13 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-12_
+_Last updated: 2026-06-19_
+
+## 2026-06-19 - OptiPlex NotebookLM source refresh
+
+- Checked the physical OptiPlex NotebookLM contour `jgdus@100.98.97.98` with `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`; auth was ready and tied to the paid `vasjakotov11@gmail.com` profile.
+- Added fresh official/primary sources to existing notebooks, not new notebooks: Agent Observability/Debugging, KI-Video 2026, Lokale KI-Agenten, and Vom Coding-Agent zum Arbeitsagenten.
+- Final NotebookLM source counts were: Agent Observability `25`, KI-Video `18`, Lokale KI-Agenten `19`, Coding-Agent zum Arbeitsagenten `21`; all listed sources reported `ready`.
+- The completed NotebookLM article draft candidates still available for future manual publication include `59e4a74a-d7c6-4f5b-a1fa-793a77bfc9b9` (Coding-Agent -> Arbeitsagent), `47d6acd1-f3e5-4e44-ad3a-2c91144ded73` (Lokale KI-Agenten), and `30b166cc-5fa1-4ac4-a51c-56505dd9f745` (KI-Video 2026). `Agent Observability` remains a failed/working cluster and needs a fresh generation pass before manual publication.
+- Operation log on OptiPlex: `/home/jgdus/projects/agent-newsman/artifacts/notebooklm_source_refresh_20260619/source_add_results.json`.
 
 ## 2026-06-18 - Produktivitäts-Agenten NotebookLM Ratgeber publication
 
