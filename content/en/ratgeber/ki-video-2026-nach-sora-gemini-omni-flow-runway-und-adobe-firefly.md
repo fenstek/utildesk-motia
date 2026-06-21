@@ -7,7 +7,7 @@ eyebrow: "AI Video"
 excerpt: "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
 readTime: 10
 coverImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-cover-business-v1.webp
-secondaryImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-workflow-business-v1.webp
+secondaryImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-provenance-risograph-v2.webp
 tags:
   - "AI Video"
   - "Content Production"
@@ -82,8 +82,6 @@ For post-production, ad variants or social campaigns with a clear visual languag
 
 That is especially attractive for marketing, design and content teams. If a clip will anyway pass through Photoshop, Premiere or other Adobe tools, Firefly is often the lower-friction choice. Adobe is also opening Firefly to more models, including [Kling AI](/en/tools/kling-ai/), which turns Firefly into more of a controlled model hub than a single generator.
 
-![A business video studio workflow with producer, editor and marketing team aligning references, timeline and approvals.](/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-cover-business-v1.webp)
-
 ### A short comparison
 
 | Platform | Best at | What to watch |
@@ -103,7 +101,7 @@ A second case is social repurposing. A webinar, keynote or product call has to b
 
 A third case is training and enablement. Teams need short explainer videos, localized and clearly owned. AI video becomes useful when it shortens the path between brief, edit, translation and approval instead of creating new rework.
 
-![A governance room for AI video: approval, brand review and risk checking happen before publication.](/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-workflow-business-v1.webp)
+![A graphic AI video process with reference material, editing track and approval review in risograph style.](/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-provenance-risograph-v2.webp)
 
 ## Rights, approvals and the actual decision
 
