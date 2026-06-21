@@ -7,7 +7,7 @@ eyebrow: "KI-Video"
 excerpt: "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
 readTime: 10
 coverImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-cover-business-v1.webp
-secondaryImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-workflow-business-v1.webp
+secondaryImage: /images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-provenance-risograph-v2.webp
 tags:
   - "AI Video"
   - "Content Production"
@@ -82,8 +82,6 @@ Für Postproduktion, Werbevarianten oder Social-Kampagnen mit klarer visueller S
 
 Besonders für Marketing-, Design- und Content-Teams ist das attraktiv. Wenn ein Clip später ohnehin durch Photoshop, Premiere oder andere Adobe-Werkzeuge läuft, ist Firefly oft die stressärmere Wahl. Adobe öffnet sich außerdem für weitere Modelle im Firefly-Umfeld, darunter [Kling AI](/tools/kling-ai/), was Firefly eher zu einem kontrollierten Modell-Hub als zu einem Einzelgenerator macht.
 
-![Ein Business-Studio mit KI-Video-Workflow: Producer, Editor und Marketing-Team ordnen Referenzen, Schnittfenster und Freigaben.](/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-cover-business-v1.webp)
-
 ### Ein kurzer Vergleich
 
 | Plattform | Starke Seite | Was man im Blick behalten sollte |
@@ -103,7 +101,7 @@ Ein zweiter Fall ist Social Repurposing. Aus einem Webinar, einer Keynote oder e
 
 Ein dritter Fall ist Training und Enablement. Teams brauchen kurze Erklärvideos, lokalisiert und mit klarer Zuständigkeit. Genau dort wird Video-KI nützlich, wenn sie die Arbeit zwischen Briefing, Schnitt, Übersetzung und Freigabe verkürzt, statt neue Nacharbeit zu erzeugen.
 
-![Ein Governance-Raum für KI-Video: Freigabe, Markenprüfung und Risikocheck sitzen vor der Veröffentlichung.](/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-workflow-business-v1.webp)
+![Ein grafischer KI-Video-Prozess mit Referenzmaterial, Schnittspur und Freigabeprüfung im Risograph-Stil.](/images/ratgeber/ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly-provenance-risograph-v2.webp)
 
 ## Rechte, Freigaben und die Entscheidung
 
