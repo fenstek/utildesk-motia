@@ -1,6 +1,14 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-19_
 
+## 2026-06-22 - Utildesk MCP operations helper
+
+- Added a local stdio MCP server at `scripts/mcp/utildesk-mcp.mjs` plus `npm run mcp:utildesk`.
+- The MCP exposes compact wrappers for repeated Utildesk operations: standard memory loading, git preflight, Ratgeber image/asset checks, validation builds, live URL checks, compact sitemap contract checks, Cloudflare Pages deploy, and IndexNow submission.
+- Dangerous operations require explicit confirmation inputs (`deploy utildesk` and `submit indexnow`) and the Cloudflare deploy wrapper loads the git-ignored root `.env` without returning secret values.
+- Added the connection/runbook at `docs/04_operations/utildesk_mcp.md`.
+- Smoke-tested MCP `listTools`, `git_preflight`, `ratgeber_article_check`, `live_check_urls`, and `sitemap_contract_check` through the official MCP SDK client.
+
 ## 2026-06-19 - Lokale KI-Agenten NotebookLM Ratgeber publication
 
 - Retrieved the OptiPlex NotebookLM article draft artifact `47d6acd1-f3e5-4e44-ad3a-2c91144ded73` from the physical `jgdus@100.98.97.98` contour and used it as the editorial starting point.
