@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Free
 tags: [browser, web, privacy, productivity]
 official_url: "https://vivaldi.com/"
-popularity: 8
+popularity: 7
 tier: C
 generated_at: 2026-05-28
 ---
