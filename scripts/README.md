@@ -11,6 +11,17 @@ Rebuilds official_url for rows with specified status (typically NEEDS_REVIEW). U
 ### sheet_ai_autogen_9_strict_v2.mjs
 Main autopilot: processes NEW rows, generates content, creates markdown files.
 
+### generate_tool_md.mjs
+German tool-card generator used by targeted publish scripts. It now uses the local Codex CLI OAuth/subscription path by default, matching the translation workflow, and only uses the OpenAI API as an explicit or available fallback.
+
+Environment:
+- `TOOL_MD_BACKEND=auto|codex|openai`; `auto` tries Codex first and falls back to the OpenAI API only if Codex fails and `OPENAI_API_KEY` is available.
+- `CODEX_TOOL_MD_MODEL` optional; if omitted, the generator uses `CODEX_MODEL` or `gpt-5.4-mini`.
+- `OPENAI_MODEL_TEXT` optional; used only by the OpenAI API backend.
+- `CONTENT_DIR` optional; defaults to `content/tools`.
+- `TEMPLATE_PATH` optional; defaults to `content/tools/_TEMPLATE.md`.
+- `CODEX_CLI_PATH` is optional; on Windows the script auto-resolves the installed Codex CLI JS entrypoint.
+
 ### translate_tools_to_english_codex.mjs
 Primary English localization backfill for `content/tools/*.md`. Uses the local Codex CLI OAuth session (`codex exec`) by default and can fall back to the OpenAI API when `OPENAI_API_KEY` is available.
 
