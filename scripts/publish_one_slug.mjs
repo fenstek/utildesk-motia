@@ -22,7 +22,16 @@ function die(msg) {
 }
 
 function runInherit(cmd, args) {
-  const r = spawnSync(cmd, args, { stdio: "inherit" });
+  const command = process.platform === "win32" && /\.cmd$/i.test(cmd)
+    ? (process.env.ComSpec || "cmd.exe")
+    : cmd;
+  const commandArgs = process.platform === "win32" && /\.cmd$/i.test(cmd)
+    ? ["/d", "/s", "/c", cmd, ...args]
+    : args;
+  const r = spawnSync(command, commandArgs, { stdio: "inherit" });
+  if (r.error) {
+    die(`${cmd} ${args.join(" ")}: ${r.error.message}`);
+  }
   if (r.status !== 0) {
     die(`${cmd} ${args.join(" ")}`);
   }
@@ -224,7 +233,7 @@ async function main() {
     runInherit("node", ["scripts/generate_tool_md.mjs", tmpPath]);
     runInherit("node", ["scripts/finalize_md.mjs", tmpPath]);
     runInherit("node", ["scripts/check_duplicates.mjs"]);
-    runInherit(npmCommand(), ["run", "translate:tools:en", "--", "--slug", slug]);
+    runInherit(npmCommand(), ["run", "translate:tools:en", "--", "--slug", slug, "--force"]);
     runInherit("node", ["scripts/generate_tool_added_manifest.mjs"]);
     runInherit("node", ["scripts/check_english_tool_translations.mjs"]);
 

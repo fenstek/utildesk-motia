@@ -27,7 +27,7 @@ const readCreatedAtMs = (file) => {
     const raw = readFileSync(join(toolsDir, file), "utf8");
     const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
     if (!match) return 0;
-    const createdAtMatch = match[1].match(/^created_at:\s*["']?([^"'\r\n]+)["']?\s*$/m);
+    const createdAtMatch = match[1].match(/^(?:created_at|generated_at):\s*["']?([^"'\r\n]+)["']?\s*$/m);
     if (!createdAtMatch) return 0;
     const timestamp = new Date(createdAtMatch[1]).getTime();
     return Number.isFinite(timestamp) && timestamp > 0 ? timestamp : 0;

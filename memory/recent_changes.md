@@ -1,6 +1,21 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-06-19_
 
+## 2026-06-24 - Sheet hype candidates added from live trend scan
+
+- Added 12 new hype/tool candidates directly to the Google Sheet source of truth, rows `1996-2007`, all with status `NEW` after duplicate checks and live `200` official URL checks.
+- Added slugs: `claude-tag`, `google-jules`, `microsoft-agent-framework`, `browser-use`, `openart-director`, `adobe-creative-agent`, `databox-mcp`, `latitude`, `cotypist`, `mina-meeting-assistant`, `bluerails-discovery`, and `propane`.
+- Notes mark priority A/B/C provenance; `adobe-creative-agent` is explicitly noted as an agentic Adobe/Firefly-adjacent capability rather than a duplicate of `adobe-firefly`, and C candidates carry `verify_editorially_before_publish=true`.
+- The first append landed shifted into `G:V`; rows `1996-2007` were immediately corrected to `A:P` and the extra `Q:V` tail cleared. Verified the final block through the Google Sheets connector.
+
+## 2026-06-24 - Sheet hype candidates published through subscription-backed scripts
+
+- Switched `scripts/generate_tool_md.mjs` from mandatory `OPENAI_API_KEY` to the local Codex CLI OAuth/subscription backend by default, matching the English translation workflow. The OpenAI API remains only an explicit/fallback backend when a key is present.
+- Hardened `scripts/publish_one_slug.mjs` on Windows: `npm.cmd` runs through `cmd.exe` without the Node `shell: true` warning, and per-slug English translation is forced on retries so stale EN files are not kept after a regenerated DE card.
+- Published full DE/EN cards for Sheet rows `1996-2007` and marked all 12 as `DONE`: `claude-tag`, `google-jules`, `microsoft-agent-framework`, `browser-use`, `openart-director`, `adobe-creative-agent`, `databox-mcp`, `latitude`, `cotypist`, `mina-meeting-assistant`, `bluerails-discovery`, and `propane`.
+- Synced category corrections back to the Sheet for `microsoft-agent-framework`, `browser-use`, and `adobe-creative-agent`; generated `tool-added-at` dates via `generated_at` fallback for uncommitted new cards.
+- Validation passed: `check:editorial`, `check_english_tool_translations`, `check:tool-quality`, and `npm --prefix site run build` with compact sitemap output still at 116 URLs.
+
 ## 2026-06-22 - Utildesk MCP operations helper
 
 - Added a local stdio MCP server at `scripts/mcp/utildesk-mcp.mjs` plus `npm run mcp:utildesk`.
