@@ -2,10 +2,11 @@
 slug: wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax
 title: "How Agentic Developer Workflows Are Becoming Production-Ready"
 date: 2026-04-19
+updated: 2026-06-25
 category: Workflow
 eyebrow: AI Workflow
 excerpt: The age of simple autocomplete in software development is coming to an end.
-readTime: 7
+readTime: 9
 coverImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-cover.webp
 secondaryImage: /images/ratgeber/wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax-workflow.png
 tags:
@@ -17,6 +18,7 @@ sidebarTitle: Key takeaways
 sidebarPoints:
   - The shift is from autocomplete to agents that can read files, edit code and run commands.
   - Production readiness depends on state, verification, human review and clear guardrails.
+  - Updated on 25 June 2026 with context discipline, AGENTS.md/CLAUDE.md, hooks and the move from coding agents to work agents.
 relatedTools:
   - title: Claude
     href: /en/tools/claude/
@@ -26,6 +28,8 @@ relatedTools:
     href: /en/tools/cursor/
   - title: Aider
     href: /en/tools/aider/
+  - title: OpenAI Codex
+    href: /en/tools/openai-codex/
   - title: LangChain
     href: /en/tools/langchain/
   - title: CrewAI
@@ -36,6 +40,8 @@ The era of simple autocomplete in software development is approaching its end. W
 
 That shift is powerful, but it only becomes useful when teams add structure around it.
 
+**Update, 25 June 2026:** This guide now adds the missing operating layer: project instructions, tool permissions, hooks, memory and review artifacts. The important question is no longer only which model writes better code. It is whether the surrounding workflow turns an agent into a reliable work unit.
+
 ## Relevant tools on Utildesk
 
 If you want to compare the trend through real tools and frameworks, these entries are a good starting point:
@@ -44,6 +50,7 @@ If you want to compare the trend through real tools and frameworks, these entrie
 - [GitHub Copilot](/en/tools/github-copilot/) for the productive assistant layer inside the editor,
 - [Cursor](/en/tools/cursor/) for an IDE that is built around AI-assisted work,
 - [Aider](/en/tools/aider/) for Git-oriented coding sessions in the terminal,
+- [OpenAI Codex](/en/tools/openai-codex/) for repository-specific agent instructions and isolated task environments,
 - [LangChain](/en/tools/langchain/) for orchestration and agent framework concepts,
 - [CrewAI](/en/tools/crew-ai/) for collaborative multi-agent flows.
 
@@ -57,17 +64,35 @@ Agents can fix bugs, build features, generate tests and handle repetitive mainte
 
 For teams, this changes the workload. People can spend more time on architecture and intent while agents handle implementation slices, lint fixes or documentation drafts. But the more autonomy you allow, the more important the control layer becomes.
 
+## From coding agent to work agent
+
+The interesting shift is not only that agents write code. It is that the same operating pattern starts to move into knowledge work. A good coding agent understands a goal, uses tools, checks intermediate results, explains failures and leaves behind an artifact that can be reviewed. Product managers, operations teams and internal analysts need the same chain.
+
+That transfer only works when the task is structured like a good engineering ticket. An agent can turn support cases into a bug brief, CRM notes into a prioritized list or research sources into a decision memo. But it should not "just help". It should work inside clear inputs, approved tools, write permissions and acceptance criteria.
+
+This is why coding practices suddenly matter outside engineering: small work packages instead of giant prompts, visible intermediate state instead of black-box answers, review before writing into production systems, and a strict difference between suggestion, execution and approval.
+
 ## Architecture and state
 
 Long-running agentic tasks need durable state. If an agent is interrupted, the workflow should be able to resume without losing context. If a human needs to intervene, the current plan, assumptions and files touched must be visible.
 
 This is why stateful orchestration matters. A production-ready agent workflow should know what it is doing, why it is doing it and how to recover when something fails. It should also support human-in-the-loop checkpoints: moments where a developer can inspect, approve, redirect or stop the run.
 
+## Context discipline: instructions are infrastructure
+
+In production teams, context becomes infrastructure. Files such as `AGENTS.md`, `CLAUDE.md` or repository-specific rules are not prompt toys. They are a contract between the team and the agent: which commands are allowed, which tests matter, which architecture rules are non-negotiable, where sensitive data lives and when the human must be asked.
+
+Hierarchy matters. Global rules should stay short. Project rules should describe setup, tests and code style. Local rules should cover repository-specific exceptions. The clearer those layers are, the less a human has to restate in every session. But memory can also rot: outdated assumptions, bloated rule files and conflicting guidance make agents less reliable, not smarter.
+
+For companies, the practical rule is simple: version and review agent instructions like production configuration. If an agent is allowed to work in a repository, its operating manual belongs in the same review culture as CI, build scripts and security checks.
+
 ## Verification before merge
 
 The biggest risk is not that an agent produces invalid syntax. The bigger risk is plausible code that violates the real requirement. An agent can write tests that confirm its own misunderstanding. It can make a local change that breaks an integration somewhere else.
 
 That is why verification becomes the safety anchor. Teams need a living specification, clear acceptance criteria and automated checks that prove the implementation against the intended behavior. Human review remains essential, but it should not be the first and only line of defense.
+
+Text instructions are not enough. Hard hooks, permissioned tool lists and CI gates must be able to block risky actions before an agent performs them. A useful pre-tool check can prevent an agent from reading production secrets, calling external APIs or committing directly to a main branch without approval. This is not bureaucracy. It is the line between a useful work agent and a confident risk machine.
 
 ## What production-ready means
 
@@ -78,3 +103,12 @@ The strongest systems will not simply generate more code. They will make the wor
 ## Bottom line
 
 Agentic developer workflows are becoming real because the surrounding infrastructure is maturing. The winners will be teams that treat agents like operational collaborators: useful, fast and powerful, but always connected to specifications, state and verification.
+
+The practical starting point is small: one repository, one agent, one task type and one review log for a week. Do not only record whether code was produced. Record where the agent asked good questions, where it assumed too much, which tests were missing and which instructions had to be tightened. That log becomes the team's real agent capability.
+
+## Sources
+
+1. [Claude Code overview](https://code.claude.com/docs/en/overview)
+2. [OpenAI Codex: Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
+3. [Claude Code Hooks reference](https://code.claude.com/docs/en/hooks)
+4. [Anthropic: Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)

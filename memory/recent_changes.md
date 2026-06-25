@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-19_
+_Last updated: 2026-06-25_
+
+## 2026-06-25 - Coding-Agent NotebookLM duplicate merged into existing Ratgeber
+
+- Ran duplicate review for the OptiPlex NotebookLM artifact `59e4a74a-d7c6-4f5b-a1fa-793a77bfc9b9` (`Vom Coding-Agent zum Arbeitsagenten: Codex, Claude Code und Antigravity`) and decided not to publish it as a standalone Ratgeber because it overlapped strongly with the existing developer-workflow cluster.
+- Merged the non-duplicate editorial substance into the existing DE/EN article `wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax`: context discipline, `AGENTS.md`/`CLAUDE.md`, hooks, permissioned tool use, and the transfer from coding-agent practices into broader knowledge work.
+- Added visible `updated: 2026-06-25` metadata support to Ratgeber rendering so updated articles can expose `dateModified` and show an "updated" label without changing the original publication date.
+- Marked the NotebookLM candidate on the physical OptiPlex contour as published-through-merge via `published_marker.json` and `data/article_jobs/published_signatures.json`; it should no longer be offered as a fresh standalone publication candidate.
 
 ## 2026-06-24 - Sheet hype candidates added from live trend scan
 

@@ -60,6 +60,9 @@ const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(content));
 const published = data.date
   ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.date))
   : "";
+const updated = data.updated
+  ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.updated))
+  : "";
 
 const normalizeMetaLabel = (value: string) =>
   String(value || "")
@@ -102,7 +105,7 @@ const articleSchema = {
   headline: title,
   description,
   datePublished: data.date,
-  dateModified: data.date,
+  dateModified: data.updated ?? data.date,
   image: imageUrls.length ? imageUrls : undefined,
   mainEntityOfPage: canonicalUrl,
   inLanguage: SITE_LANGUAGE_EN,
@@ -161,6 +164,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <div class="sheet-head-meta">
         <span class="sheet-head-byline">By <strong>Utildesk Editorial</strong></span>
         {published && <span>· {published}</span>}
+        {updated && updated !== published && <span>· updated {updated}</span>}
         {data.readTime && <span>· {data.readTime} min read</span>}
         <span>· <a href="/en/methodology/">Methodology</a></span>
       </div>
@@ -218,7 +222,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <div class="sheet-foot-left">
         <div class="sheet-foot-kicker">This decision</div>
         <p class="sheet-foot-line">
-          We review guides regularly. {published ? `Last published ${published}.` : ""}
+          We review guides regularly. {updated ? `Last updated ${updated}.` : published ? `Last published ${published}.` : ""}
         </p>
       </div>
       <div class="sheet-foot-actions">
