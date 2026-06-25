@@ -13,6 +13,12 @@ official_url: 'https://getmina.ai/'
 tier: D
 generated_at: '2026-06-24'
 description: 'A meeting-focused productivity tool that helps with preparation, follow-up, and turning discussions into clear next steps.'
+updated_at: '2026-06-24'
+editorial_reviewed: true
+editorial_reviewed_by: 'Utildesk manual editorial pass'
+editorial_reviewed_at: '2026-06-24'
+editorial_status: 'manual_polished'
+editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
 translation: full
 ---
 # Mina Meeting Assistant
@@ -89,6 +95,12 @@ Depending on your goals, it may be worth looking at other meeting and workflow t
 - **Google Workspace with add-on tools**: Useful if you want to stay as close as possible to your existing work stack and do not want to introduce a new core platform.
 
 The comparison should not be based only on feature lists. What matters is whether the tool acts more like a note-taker, a meeting coach, or a workflow layer. Mina sounds like the last category.
+
+## June 2026 Editorial Update
+
+Mina Meeting Assistant should not be judged only as a note-taking bot. The category becomes interesting when meetings reliably turn into follow-up work: tasks, reminders, handoffs, CRM notes, project updates, or decision points. That is the difference between "we have a transcript" and "the meeting actually moved work forward."
+
+Before adoption, teams need clear rules. Meeting data is often sensitive: customer information, internal strategy, HR topics, or confidential roadmaps. A sensible pilot starts with voluntary, non-critical meetings, clear participant information, and a review of storage, access rights, and deletion periods.
 
 ## Editorial Assessment
 

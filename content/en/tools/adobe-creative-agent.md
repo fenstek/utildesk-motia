@@ -14,6 +14,12 @@ official_url: 'https://news.adobe.com/news/2026/06/adobe-unveils-major-expansion
 tier: D
 generated_at: '2026-06-24'
 description: 'An orchestration layer for creative work across the Adobe ecosystem, designed to turn natural-language requests into multi-step production tasks in Firefly and Creative Cloud apps.'
+updated_at: '2026-06-24'
+editorial_reviewed: true
+editorial_reviewed_by: 'Utildesk manual editorial pass'
+editorial_reviewed_at: '2026-06-24'
+editorial_status: 'manual_polished'
+editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
 translation: full
 ---
 # Adobe Creative Agent
@@ -122,7 +128,13 @@ The official announcement page does not name fixed prices. Realistically, it sho
 **Is it available everywhere already?**  
 No. Adobe describes a mix of available, Public Beta, Private Beta, and waitlist status. For your own use, you should check the current plan and feature status.
 
-## Editorial assessment
+## June 2026 Editorial Update
+
+Adobe Creative Agent is relevant because Adobe is increasingly framing AI as workflow orchestration rather than isolated buttons. For creative teams, that can be useful: preparing drafts, generating variants, sorting material, creating first cuts, or initiating asset work across several Creative Cloud tools.
+
+The critical issue is control. In brand, agency, and enterprise environments, an agent must not silently bypass style rules, image rights, or approval workflows. The strongest fit is speeding up repeatable production steps while concept, final selection, legal review, and brand judgment remain human responsibilities.
+
+## Editorial Assessment
 
 Adobe Creative Agent is interesting because it addresses a real production problem: creative work is rarely a single action, but rather many small, recurring steps across multiple tools. That is exactly where Adobe is aiming. Instead of only offering image or text generation, the company is trying to connect the full creative workflow.
 

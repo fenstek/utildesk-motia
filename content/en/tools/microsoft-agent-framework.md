@@ -14,6 +14,12 @@ official_url: 'https://learn.microsoft.com/en-us/agent-framework/overview/'
 tier: D
 generated_at: '2026-06-24'
 description: 'A developer framework for building agentic applications and multi-step workflows with state, tools, MCP servers, checkpoints, and .NET/Python support.'
+updated_at: '2026-06-24'
+editorial_reviewed: true
+editorial_reviewed_by: 'Utildesk manual editorial pass'
+editorial_reviewed_at: '2026-06-24'
+editorial_status: 'manual_polished'
+editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
 translation: full
 ---
 # Microsoft Agent Framework
@@ -122,6 +128,12 @@ Especially with third-party systems, costs and responsibilities should be consid
 - **Azure AI Foundry-adjacent integration:** If the project is already strongly aligned with Microsoft Cloud and related model services, a tighter platform fit may be organizationally easier.
 
 The choice mainly depends on whether the focus is on open agents, controlled workflows, Microsoft proximity, or possible portability.
+
+## June 2026 Editorial Update
+
+Microsoft Agent Framework is strategically interesting because Microsoft treats agents less like demos and more like regular software architecture. Sessions, tools, MCP, checkpoints, human-in-the-loop steps, and workflows are part of the design model. That makes it especially relevant for teams already invested in .NET, Python, Azure, or Microsoft Foundry.
+
+The most important practical filter is this: not every automation needs an agent. If a process is deterministic, rule-based, and easy to test, ordinary application code is often more robust. The framework becomes worthwhile when language, tool use, context, and controlled intermediate steps belong together and the team still needs approvals and traceability.
 
 ## Editorial Assessment
 
