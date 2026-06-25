@@ -187,6 +187,16 @@ async function readRatgeberSourceLastmod(slug, locale, fallbackPath) {
   const relativePath = locale === 'en'
     ? `content/en/ratgeber/${slug}.md`
     : `content/ratgeber/${slug}.md`;
+  try {
+    const raw = await readFile(join(REPO_ROOT, relativePath), 'utf8');
+    const parsed = matter(raw);
+    const updated = parsed.data?.updated;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(updated || ''))) {
+      return String(updated);
+    }
+  } catch {
+    // Fall back to the generated manifest, git, or built file mtime below.
+  }
   return readSourceLastmod(relativePath, fallbackPath);
 }
 

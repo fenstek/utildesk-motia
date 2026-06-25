@@ -15,6 +15,7 @@ export interface RatgeberEntryData {
   slug?: string;
   title?: string;
   date?: string;
+  updated?: string;
   excerpt?: string;
   readTime?: number;
   category?: string;

@@ -72,6 +72,13 @@ const published = data.date
       year: "numeric",
     }).format(new Date(data.date))
   : "";
+const updated = data.updated
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(data.updated))
+  : "";
 
 const normalizeMetaLabel = (value: string) =>
   String(value || "")
@@ -114,7 +121,7 @@ const articleSchema = {
   headline: title,
   description,
   datePublished: data.date,
-  dateModified: data.date,
+  dateModified: data.updated ?? data.date,
   image: imageUrls.length ? imageUrls : undefined,
   mainEntityOfPage: `${SITE_URL}/ratgeber/${slug}/`,
   inLanguage: SITE_LANGUAGE,
@@ -175,6 +182,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <div class="sheet-head-meta">
         <span class="sheet-head-byline">Von <strong>Utildesk Redaktion</strong></span>
         {published && <span>· {published}</span>}
+        {updated && updated !== published && <span>· aktualisiert {updated}</span>}
         {data.readTime && <span>· {data.readTime} Min. Lesen</span>}
         <span>· <a href="/methodologie/">Methodologie</a></span>
       </div>
@@ -232,7 +240,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <div class="sheet-foot-left">
         <div class="sheet-foot-kicker">Diese Entscheidung</div>
         <p class="sheet-foot-line">
-          Wir überprüfen Ratgeber regelmäßig. {published ? `Letzte Veröffentlichung ${published}.` : ""}
+          Wir überprüfen Ratgeber regelmäßig. {updated ? `Zuletzt aktualisiert ${updated}.` : published ? `Letzte Veröffentlichung ${published}.` : ""}
         </p>
       </div>
       <div class="sheet-foot-actions">

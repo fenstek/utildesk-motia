@@ -103,6 +103,26 @@ async function listMarkdownFiles(relativeDir) {
   return files;
 }
 
+async function readRatgeberUpdatedDate(relativePath) {
+  const normalizedPath = normalizeRepoPath(relativePath);
+  const isRatgeber =
+    normalizedPath.startsWith('content/ratgeber/') ||
+    normalizedPath.startsWith('content/en/ratgeber/');
+  if (!isRatgeber) return null;
+
+  try {
+    const raw = await readFile(join(REPO_ROOT, normalizedPath), 'utf8');
+    const frontmatter = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    const updated = frontmatter?.[1]?.match(/^updated:\s*["']?(\d{4}-\d{2}-\d{2})["']?\s*$/m)?.[1];
+    if (updated) {
+      return updated;
+    }
+  } catch {
+    // Keep the existing git/manifest/mtime fallback for malformed or missing files.
+  }
+  return null;
+}
+
 async function main() {
   const existingManifest = await readExistingManifest();
   const gitLastmodByPath = readGitLastmodMap();
@@ -115,7 +135,10 @@ async function main() {
 
   const nextManifest = {};
   for (const relativePath of files.sort((a, b) => a.localeCompare(b))) {
-    let lastmod = (ignoreGitLastmod ? null : gitLastmodByPath.get(relativePath)) || existingManifest[relativePath];
+    let lastmod =
+      (await readRatgeberUpdatedDate(relativePath)) ||
+      (ignoreGitLastmod ? null : gitLastmodByPath.get(relativePath)) ||
+      existingManifest[relativePath];
     if (!/^\d{4}-\d{2}-\d{2}$/.test(String(lastmod || ''))) {
       try {
         lastmod = formatDate((await stat(join(REPO_ROOT, relativePath))).mtime);
