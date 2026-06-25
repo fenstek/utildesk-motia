@@ -1,12 +1,13 @@
 ---
-slug: "latitude"
-title: "Latitude"
-category: "AI Infrastructure"
-price_model: "Freemium"
+slug: latitude
+title: Latitude
+category: AI Infrastructure
+price_model: Freemium
 tags: [ai-agents, observability, evaluation, llmops, developer-tools]
 official_url: "https://latitude.so/"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Latitude
 

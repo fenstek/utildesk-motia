@@ -1,12 +1,13 @@
 ---
-slug: "microsoft-agent-framework"
-title: "Microsoft Agent Framework"
-category: "Entwickler-Tools"
-price_model: "Open Source"
+slug: microsoft-agent-framework
+title: Microsoft Agent Framework
+category: Entwickler-Tools
+price_model: Open Source
 tags: [ai, agents, framework, dotnet, python, developer-tools]
 official_url: "https://learn.microsoft.com/en-us/agent-framework/overview/"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Microsoft Agent Framework
 

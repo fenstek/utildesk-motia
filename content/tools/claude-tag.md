@@ -1,12 +1,13 @@
 ---
-slug: "claude-tag"
-title: "Claude Tag"
-category: "AI Agents"
-price_model: "Abonnement"
+slug: claude-tag
+title: Claude Tag
+category: AI Agents
+price_model: Abonnement
 tags: [ai, assistant, slack, workplace, agents, collaboration]
 official_url: "https://www.anthropic.com/news/introducing-claude-tag"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Claude Tag
 

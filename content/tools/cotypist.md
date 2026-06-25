@@ -1,12 +1,13 @@
 ---
-slug: "cotypist"
-title: "Cotypist"
-category: "Produktivität"
-price_model: "Je nach Plan"
+slug: cotypist
+title: Cotypist
+category: Produktivität
+price_model: Je nach Plan
 tags: [local-ai, autocomplete, macos, writing, productivity]
 official_url: "https://cotypist.app/"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Cotypist
 

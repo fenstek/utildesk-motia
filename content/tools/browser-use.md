@@ -1,12 +1,13 @@
 ---
-slug: "browser-use"
-title: "Browser Use"
-category: "Entwickler-Tools"
-price_model: "Open Source"
+slug: browser-use
+title: Browser Use
+category: Entwickler-Tools
+price_model: Open Source
 tags: [browser-automation, ai-agents, open-source, python, developer-tools]
 official_url: "https://github.com/browser-use/browser-use"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Browser Use
 

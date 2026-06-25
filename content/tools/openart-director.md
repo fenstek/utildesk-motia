@@ -1,12 +1,13 @@
 ---
-slug: "openart-director"
-title: "OpenArt Director"
-category: "Audio & Video"
-price_model: "Freemium"
+slug: openart-director
+title: OpenArt Director
+category: Audio & Video
+price_model: Freemium
 tags: ["ai-video", "creative-tools", "director", "storytelling", "video-generation"]
 official_url: "https://openart.ai/whats-new"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # OpenArt Director
 

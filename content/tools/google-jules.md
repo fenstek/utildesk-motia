@@ -1,12 +1,13 @@
 ---
-slug: "google-jules"
-title: "Google Jules"
-category: "Entwickler-Tools"
-price_model: "Free"
+slug: google-jules
+title: Google Jules
+category: Entwickler-Tools
+price_model: Free
 tags: [ai, coding-agent, developer-tools, automation, google]
 official_url: "https://jules.google/"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Google Jules
 
