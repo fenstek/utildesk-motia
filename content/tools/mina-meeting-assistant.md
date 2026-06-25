@@ -1,12 +1,13 @@
 ---
-slug: "mina-meeting-assistant"
-title: "Mina Meeting Assistant"
-category: "Produktivität"
-price_model: "Abonnement"
+slug: mina-meeting-assistant
+title: Mina Meeting Assistant
+category: Produktivität
+price_model: Abonnement
 tags: [meetings, ai-agent, assistant, calendar, workflow]
 official_url: "https://getmina.ai/"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Mina Meeting Assistant
 

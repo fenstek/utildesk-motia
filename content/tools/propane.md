@@ -1,12 +1,13 @@
 ---
-slug: "propane"
-title: "Propane"
-category: "Produktivität"
-price_model: "Je nach Plan"
+slug: propane
+title: Propane
+category: Produktivität
+price_model: Je nach Plan
 tags: [customer-context, product-management, agents, crm, analytics]
 official_url: "https://www.usepropane.ai/platform"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Propane
 

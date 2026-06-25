@@ -1,12 +1,13 @@
 ---
-slug: "databox-mcp"
-title: "Databox MCP"
-category: "AI Infrastructure"
-price_model: "Je nach Plan"
+slug: databox-mcp
+title: Databox MCP
+category: AI Infrastructure
+price_model: Je nach Plan
 tags: [mcp, analytics, bi, agents, data, developer-tools]
 official_url: "https://databox.com/mcp"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Databox MCP
 

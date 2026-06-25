@@ -1,12 +1,13 @@
 ---
-slug: "bluerails-discovery"
-title: "Bluerails Discovery"
-category: "Marketing & Vertrieb"
-price_model: "Je nach Plan"
+slug: bluerails-discovery
+title: Bluerails Discovery
+category: Marketing & Vertrieb
+price_model: Je nach Plan
 tags: [agentic-commerce, ai-search, commerce, agents, visibility]
 official_url: "https://discovery.bluerails.com/"
-tier: "D"
-generated_at: "2026-06-24"
+tier: D
+generated_at: 2026-06-24
+popularity: 0
 ---
 # Bluerails Discovery
 
