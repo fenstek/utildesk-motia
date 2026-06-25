@@ -8,6 +8,12 @@ official_url: "https://news.adobe.com/news/2026/06/adobe-unveils-major-expansion
 tier: D
 generated_at: 2026-06-24
 popularity: 0
+updated_at: "2026-06-24"
+editorial_reviewed: true
+editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_at: "2026-06-24"
+editorial_status: "manual_polished"
+editorial_batch: "2026-06-24-sheet-hype-12-human-polish"
 ---
 # Adobe Creative Agent
 
@@ -115,7 +121,13 @@ Auf der offiziellen Ankündigungsseite werden keine festen Preise genannt. Reali
 **Ist das schon überall verfügbar?**  
 Nein. Adobe nennt eine Mischung aus verfügbar, Public Beta, Private Beta und Warteliste. Für die eigene Nutzung sollte der aktuelle Plan- und Feature-Status geprüft werden.
 
-## Editoriale Einschätzung
+## Redaktionelle Aktualisierung Juni 2026
+
+Adobe Creative Agent ist relevant, weil Adobe seine KI-Funktionen zunehmend als Arbeitsablauf und nicht nur als Einzelbutton denkt. Für Kreativteams kann das wertvoll sein: Entwürfe vorbereiten, Varianten erzeugen, Material sortieren, erste Schnitte bauen oder Assets über mehrere Creative-Cloud-Werkzeuge hinweg anstoßen.
+
+Der kritische Punkt ist Kontrolle. Gerade in Marken-, Agentur- und Enterprise-Umgebungen darf ein Agent nicht unbemerkt Stilregeln, Bildrechte oder Freigabeprozesse umgehen. Sinnvoll ist der Einsatz dort, wo wiederkehrende Produktionsschritte beschleunigt werden, während Konzept, finale Auswahl, rechtliche Prüfung und Markenentscheidung beim Menschen bleiben.
+
+## Redaktionelle Einschätzung
 
 Adobe Creative Agent ist interessant, weil es ein echtes Produktionsproblem adressiert: kreative Arbeit besteht selten aus einer einzigen Aktion, sondern aus vielen kleinen, wiederkehrenden Schritten über mehrere Werkzeuge hinweg. Genau dort setzt Adobe an. Statt nur Bild- oder Textgenerierung anzubieten, versucht das Unternehmen, den gesamten kreativen Ablauf zu verbinden.
 

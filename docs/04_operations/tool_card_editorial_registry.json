@@ -1738,6 +1738,29 @@
         "salesforce-einstein",
         "opentoonz"
       ]
+    },
+    {
+      "id": "2026-06-24-sheet-hype-12-human-polish",
+      "source": "manual corrective editorial pass after subscription-backed Sheet hype publication",
+      "note": "Converted the 12 newly published hype candidates from generated full cards into manually reviewed DE/EN cards with explicit editorial metadata, stronger current-positioning sections, rollout caveats, and localized editorial assessment headings.",
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "slugs": [
+        "adobe-creative-agent",
+        "bluerails-discovery",
+        "browser-use",
+        "claude-tag",
+        "cotypist",
+        "databox-mcp",
+        "google-jules",
+        "latitude",
+        "microsoft-agent-framework",
+        "mina-meeting-assistant",
+        "openart-director",
+        "propane"
+      ]
     }
   ]
 }

@@ -14,6 +14,12 @@ official_url: 'https://www.anthropic.com/news/introducing-claude-tag'
 tier: D
 generated_at: '2026-06-24'
 description: 'A Slack-based team assistant from Anthropic that lets teams delegate tasks in channel, work asynchronously, and keep the full project context visible where decisions and follow-ups already happen.'
+updated_at: '2026-06-24'
+editorial_reviewed: true
+editorial_reviewed_by: 'Utildesk manual editorial pass'
+editorial_reviewed_at: '2026-06-24'
+editorial_status: 'manual_polished'
+editorial_batch: '2026-06-24-sheet-hype-12-human-polish'
 translation: full
 ---
 # Claude Tag
@@ -116,6 +122,12 @@ If you want a similar outcome but have different requirements, consider these al
 - `Claude Code` or other Claude-adjacent work tools: more appropriate when the main need is in technical environments or code-centered tasks
 
 The difference from Claude Tag is less about model quality than about the working style. Claude Tag is primarily a multi-person Slack agent. If you do not have strong Slack channel operations, you usually need a more general team or knowledge tool.
+
+## June 2026 Editorial Update
+
+Claude Tag matters because Anthropic is moving Claude from a private assistant into a visible team-channel workflow. The practical value is not another chat surface; it is the ability to keep tasks, follow-ups, and context inside the Slack channel where decisions already happen.
+
+Teams should still start small. A sensible pilot uses two or three clearly bounded channels, such as support triage, product research, or engineering backlog follow-up. Permissions, logging, allowed tool access, and escalation rules should be defined before rollout. Without that operating model, a useful channel agent can quickly become a vague automation surface.
 
 ## Editorial Assessment
 
