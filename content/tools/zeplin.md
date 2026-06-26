@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://zeplin.io/"
-popularity: 2
+popularity: 0
 tier: C
 generated_at: 2026-05-27
 updated_at: 2026-06-11

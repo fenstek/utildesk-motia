@@ -11,7 +11,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: ["automation", "workflow", "data"]
 official_url: "https://www.uipath.com/"
-popularity: 13
+popularity: 0
 description: UiPath ist eine Enterprise-Plattform für Robotic Process Automation, Prozessautomatisierung und KI-gestützte Business-Workflows.
 tier: A
 lastReviewed: 2026-05-28
