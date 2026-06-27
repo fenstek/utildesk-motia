@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: [calendar, scheduling, productivity]
 official_url: "https://www.zoho.com/de/calendar/"
-popularity: 1
+popularity: 0
 tier: C
 generated_at: 2026-05-28
 ---

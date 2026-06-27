@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Je nach Plan
 tags: [text-to-speech, voice, audio]
 official_url: "https://www.acapela-group.com/"
-popularity: 82
+popularity: 81
 tier: C
 generated_at: 2026-05-28
 updated_at: 2026-06-11
