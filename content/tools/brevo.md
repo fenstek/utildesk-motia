@@ -2,17 +2,17 @@
 slug: brevo
 title: Brevo
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Marketing & Vertrieb"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Marketing & Vertrieb
 price_model: Freemium
 tags: [email, marketing, crm, automation]
 official_url: "https://www.brevo.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-17"
+popularity: 71
+tier: D
+generated_at: 2026-05-17
 ---
 # Brevo
 

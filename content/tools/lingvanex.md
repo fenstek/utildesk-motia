@@ -2,19 +2,19 @@
 slug: lingvanex
 title: Lingvanex
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
 price_model: Freemium
 tags: ["translation", "speech", "writing", "api", "language"]
 official_url: "https://lingvanex.com/"
 affiliate_url: "https://lingvanex.com/"
-tier: "C"
-generated_at: "2026-05-20"
+tier: C
+generated_at: 2026-05-20
 created_at: 2026-02-15
-popularity: 0
+popularity: 40
 description: Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, API- und Unternehmensszenarien.
 ---
 # Lingvanex

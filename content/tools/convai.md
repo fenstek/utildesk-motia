@@ -2,17 +2,17 @@
 slug: convai
 title: Convai
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Chatbots
+price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://convai.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-11"
+popularity: 61
+tier: D
+generated_at: 2026-05-11
 ---
 # Convai
 

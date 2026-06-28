@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://www.make.com/"
-popularity: 0
+popularity: 36
 updated_at: 2026-05-21
 tier: A
 lastReviewed: 2026-05-27
