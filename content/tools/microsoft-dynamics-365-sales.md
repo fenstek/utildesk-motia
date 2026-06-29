@@ -2,17 +2,17 @@
 slug: microsoft-dynamics-365-sales
 title: Microsoft Dynamics 365 Sales
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.microsoft.com/en-us/dynamics-365/products/sales"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
+popularity: 35
+tier: C
+generated_at: 2026-05-16
 ---
 # Microsoft Dynamics 365 Sales
 

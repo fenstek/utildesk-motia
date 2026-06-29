@@ -2,18 +2,18 @@
 slug: scholarcy
 title: Scholarcy
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Agents"
-price_model: "Abonnement"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Agents
+price_model: Abonnement
 tags: [assistant, automation, education, productivity]
 official_url: "https://www.scholarcy.com/"
-popularity: 0
-description: "Scholarcy fasst wissenschaftliche Texte zusammen, extrahiert Kernaussagen und hilft, Papers vor der Detaillektüre schneller zu sortieren."
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 22
+description: Scholarcy fasst wissenschaftliche Texte zusammen, extrahiert Kernaussagen und hilft, Papers vor der Detaillektüre schneller zu sortieren.
+tier: C
+generated_at: 2026-05-13
 ---
 # Scholarcy
 
