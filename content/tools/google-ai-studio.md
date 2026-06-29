@@ -2,17 +2,17 @@
 slug: google-ai-studio
 title: Google AI Studio
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-06-11-hype-tools-human-polish-2
-category: "Entwickler-Tools"
+category: Entwickler-Tools
 price_model: Freemium
 tags: [ai,developer,api]
 official_url: "https://aistudio.google.com/welcome"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 60
+tier: C
+generated_at: 2026-05-12
 updated_at: 2026-06-11
 ---
 # Google AI Studio

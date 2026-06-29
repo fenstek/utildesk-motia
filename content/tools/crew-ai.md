@@ -10,7 +10,7 @@ category: AI Agents
 price_model: 
 tags: ["automation"]
 official_url: "https://www.crewai.com/"
-popularity: 59
+popularity: 68
 tier: A
 lastReviewed: 2026-05-15
 mentionedIn: ["agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen", "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build", "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis", "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis", "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung", "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein", "pandaprobe-was-das-tool-im-alltag-wirklich-taugt", "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax", "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]

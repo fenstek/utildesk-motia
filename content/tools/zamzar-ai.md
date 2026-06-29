@@ -2,17 +2,17 @@
 slug: zamzar-ai
 title: Zamzar AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
 price_model: Je nach Plan
 tags: [automation, productivity, video, audio, design]
 official_url: "https://www.zamzar.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-09"
+popularity: 1
+tier: C
+generated_at: 2026-05-09
 ---
 # Zamzar AI
 
