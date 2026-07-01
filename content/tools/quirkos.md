@@ -10,7 +10,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [design, workflow]
 official_url: "https://www.quirkos.com/"
-popularity: 28
+popularity: 29
 tier: C
 generated_at: 2026-05-13
 ---
