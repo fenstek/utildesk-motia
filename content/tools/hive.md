@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [project-management, collaboration, workflow]
 official_url: "https://hive.com/"
-popularity: 55
+popularity: 54
 tier: C
 generated_at: 2026-05-12
 ---
