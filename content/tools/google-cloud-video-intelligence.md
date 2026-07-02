@@ -2,17 +2,17 @@
 slug: google-cloud-video-intelligence
 title: Google Cloud Video Intelligence
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Audio & Video"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Audio & Video
 price_model: Nutzungsbasiert
 tags: [video,workflow]
 official_url: "https://cloud.google.com/video-intelligence"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 62
+tier: C
+generated_at: 2026-05-15
 ---
 # Google Cloud Video Intelligence
 

@@ -7,13 +7,13 @@ editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-12
 editorial_status: manual_polished
 editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: "AI Chatbots"
-price_model: "Freemium"
+category: AI Chatbots
+price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "http://www.nuance.com/"
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-16"
+popularity: 39
+tier: A
+lastReviewed: 2026-05-16
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
 # Nuance

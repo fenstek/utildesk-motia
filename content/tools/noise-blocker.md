@@ -2,17 +2,17 @@
 slug: noise-blocker
 title: Noise Blocker
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Audio"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Audio
 price_model: Je nach Plan
 tags: [audio, noise-cancellation, communication, productivity]
 official_url: "https://closedlooplabs.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-13"
+popularity: 42
+tier: D
+generated_at: 2026-05-13
 ---
 # Noise Blocker
 

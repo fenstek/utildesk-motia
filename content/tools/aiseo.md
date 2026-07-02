@@ -2,18 +2,18 @@
 slug: aiseo
 title: AISEO
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Writing"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Writing
 price_model: Freemium
 tags: ["ai", "writing", "analytics", "productivity", "creative"]
 official_url: "https://aiseo.ai/"
-popularity: 0
-description: "AISEO ist ein KI-Schreib- und SEO-Tool für Content-Entwürfe, Optimierung, Paraphrasen und suchorientierte Texte."
-tier: "C"
-generated_at: "2026-05-10"
+popularity: 92
+description: AISEO ist ein KI-Schreib- und SEO-Tool für Content-Entwürfe, Optimierung, Paraphrasen und suchorientierte Texte.
+tier: C
+generated_at: 2026-05-10
 ---
 # AISEO
 

@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [automation, productivity, video, audio, design]
 official_url: "https://www.zamzar.com/"
-popularity: 1
+popularity: 2
 tier: C
 generated_at: 2026-05-09
 ---

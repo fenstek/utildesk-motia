@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [translation, education, automation, assistant]
 official_url: "https://en.pons.com/translate"
-popularity: 0
+popularity: 33
 tier: D
 generated_at: 2026-05-27
 ---

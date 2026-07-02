@@ -2,17 +2,17 @@
 slug: lever
 title: Lever
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.lever.co/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-17"
+popularity: 48
+tier: D
+generated_at: 2026-05-17
 ---
 # Lever
 

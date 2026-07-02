@@ -16,7 +16,7 @@ tier: A
 lastReviewed: 2026-05-28
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 created_at: 2026-04-25
-popularity: 3
+popularity: 4
 ---
 # Wispr Flow
 
