@@ -6,13 +6,13 @@ editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-12
 editorial_status: manual_polished
 editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: "AI Coding"
-price_model: "Freemium"
+category: AI Coding
+price_model: Freemium
 tags: [ai, devtools, coding, workflow]
 official_url: "https://openai.com/codex"
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-16"
+popularity: 36
+tier: A
+lastReviewed: 2026-05-16
 mentionedIn: ["coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow", "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen", "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen"]
 updated_at: 2026-06-12
 ---

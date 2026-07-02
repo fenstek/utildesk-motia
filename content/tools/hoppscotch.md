@@ -2,17 +2,17 @@
 slug: hoppscotch
 title: Hoppscotch
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
+price_model: Open Source
 tags: ["developer-tools", "api"]
 official_url: "https://hoppscotch.io/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 57
+tier: C
+generated_at: 2026-05-12
 ---
 # Hoppscotch
 

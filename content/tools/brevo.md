@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Freemium
 tags: [email, marketing, crm, automation]
 official_url: "https://www.brevo.com/"
-popularity: 82
+popularity: 84
 tier: D
 generated_at: 2026-05-17
 ---

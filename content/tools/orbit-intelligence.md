@@ -2,17 +2,17 @@
 slug: orbit-intelligence
 title: Orbit Intelligence
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
 price_model: Abonnement
 tags: [research, patents, analytics, enterprise]
 official_url: "https://www.questel.com/patent/ip-intelligence-software/orbit-intelligence/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 34
+tier: C
+generated_at: 2026-05-13
 ---
 # Orbit Intelligence
 

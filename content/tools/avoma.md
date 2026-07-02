@@ -2,17 +2,17 @@
 slug: avoma
 title: Avoma
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Audio"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Audio
 price_model: Abonnement
 tags: [meetings, sales, transcription]
 official_url: "https://www.avoma.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
+popularity: 88
+tier: C
+generated_at: 2026-05-10
 ---
 # Avoma
 

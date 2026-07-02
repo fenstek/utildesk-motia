@@ -2,17 +2,17 @@
 slug: genspark
 title: Genspark
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
 price_model: Freemium
 tags: [ai, assistant, research]
 official_url: "https://www.genspark.ai/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+popularity: 65
+tier: D
+generated_at: 2026-05-12
 ---
 # Genspark
 

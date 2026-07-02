@@ -2,17 +2,17 @@
 slug: ibm-watson-video-analytics
 title: IBM Watson Video Analytics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Audio & Video"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Audio & Video
 price_model: Je nach Plan
 tags: [video, analytics]
 official_url: "https://www.ibm.com/products/watsonx"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 54
+tier: C
+generated_at: 2026-05-15
 ---
 # IBM Watson Video Analytics
 
