@@ -765,3 +765,12 @@ _Last updated: 2026-06-25_
 - OpenClaw `image_generate` and Gemini CLI image paths on `jgdus-OptiPlex-3000` were checked first, but no usable Gemini image API credentials were available.
 - Final artwork was generated as real raster images in Gemini web on OptiPlex under the paid `vasjakotov11@gmail.com` profile, exported from browser blobs, cropped to remove the Gemini UI sparkle, converted to WebP, and visually checked for varied styles.
 - Updated `docs/04_operations/tool_card_illustration_registry.json` batch `2026-06-14-optiplex-gemini-web-first-3-sheet-new-illustrations`; future illustration batches should skip these slugs.
+
+## 2026-07-03 - OptiPlex newsman candidate recovery
+
+- Root cause for missing new Ratgeber candidates was split between stale/mostly published topic inputs and a NotebookLM contour mismatch on the physical OptiPlex.
+- On `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman`, `auth/optiplex_runtime.env` was corrected so paid/article NotebookLM work uses the active paid browser profile at `/home/jgdus/.notebooklm` instead of the old `.utildesk-notebooklm-paid` path. A timestamped backup was left next to the env file.
+- The `Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen` job still returned an empty NotebookLM answer with the full runner prompt. `article_execution/article_runner.py` on OptiPlex was patched with a compact fallback prompt used only after an empty first `ask`; a timestamped remote backup was left before the patch.
+- After the fallback patch, the Agent Observability job completed successfully as `review_ready`: `artifacts/article_jobs/20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711/`, with `article_quality.score=93`, `word_count=1030`, `section_count=5`, and queue status `done`.
+- Added `scripts/sheet_seed_from_newsman_daily_candidates.mjs` in the main repo as a guarded bridge from OptiPlex `data/tool_candidates/daily_candidates.jsonl` to the Google Sheet source of truth. It deduplicates against Sheet and repo slugs, validates official URLs, can optionally resolve missing URLs through the existing DDG resolver, and defaults to writing only `NEEDS_REVIEW`.
+- The 2026-07-02 newsman tool-candidate batch was filtered. Only one candidate was written to Sheet: `Tabstack`, row `1772`, slug `tabstack`, status `NEEDS_REVIEW`, official URL `https://tabstack.ai/`. Broader auto-writing was intentionally not performed because most Product Hunt items lacked stable official URLs or were ambiguous.
