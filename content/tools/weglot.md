@@ -2,17 +2,17 @@
 slug: weglot
 title: Weglot
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Marketing & Vertrieb"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Marketing & Vertrieb
 price_model: Abonnement
 tags: [translation, localization, seo, marketing]
 official_url: "https://www.weglot.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 7
+tier: D
+generated_at: 2026-05-18
 ---
 # Weglot
 

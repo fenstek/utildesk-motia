@@ -2,17 +2,17 @@
 slug: splice
 title: Splice
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Writing"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Writing
+price_model: Je nach Plan
 tags: [audio, video, content, design, productivity]
 official_url: "https://splice.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-18"
+popularity: 21
+tier: C
+generated_at: 2026-05-18
 ---
 # Splice
 

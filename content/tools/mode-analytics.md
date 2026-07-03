@@ -2,17 +2,17 @@
 slug: mode-analytics
 title: Mode Analytics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [analytics, data, collaboration, productivity]
 official_url: "https://mode.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
+popularity: 42
+tier: C
+generated_at: 2026-05-16
 ---
 # Mode Analytics
 

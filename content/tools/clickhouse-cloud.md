@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [data, analytics, cloud, developer-tools]
 official_url: "https://clickhouse.com/cloud"
-popularity: 76
+popularity: 78
 tier: C
 generated_at: 2026-05-15
 ---

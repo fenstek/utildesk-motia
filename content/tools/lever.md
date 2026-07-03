@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [recruiting, hr, applicant-tracking, automation]
 official_url: "https://www.lever.co/"
-popularity: 48
+popularity: 51
 tier: D
 generated_at: 2026-05-17
 ---

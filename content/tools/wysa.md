@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [mental-health, chatbot, health-tech]
 official_url: "https://www.wysa.com/"
-popularity: 3
+popularity: 5
 tier: C
 generated_at: 2026-05-13
 ---

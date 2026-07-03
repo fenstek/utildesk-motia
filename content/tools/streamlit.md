@@ -14,7 +14,7 @@ editorial_reviewed_at: 2026-06-14
 editorial_status: manual_polished
 editorial_batch: 2026-06-14-sheet-new-hype-20-human-polish
 tier: D
-popularity: 14
+popularity: 17
 ---
 # Streamlit
 

@@ -2,17 +2,17 @@
 slug: vonage-business-communications
 title: Vonage Business Communications
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Abonnement
 tags: [phone, communication, meetings, customer-support]
 official_url: "https://www.vonage.com/unified-communications/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-26"
+popularity: 8
+tier: D
+generated_at: 2026-05-26
 ---
 # Vonage Business Communications
 

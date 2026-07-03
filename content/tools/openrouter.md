@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: ["developer-tools", "api"]
 official_url: "https://openrouter.ai"
-popularity: 35
+popularity: 37
 tier: D
 generated_at: 2026-05-13
 ---

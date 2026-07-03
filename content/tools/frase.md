@@ -2,19 +2,19 @@
 slug: frase
 title: Frase
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Writing"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Writing
+price_model: Freemium
 tags: ["writing", "marketing"]
-official_url: 'https://www.frase.io/'
-affiliate_url: 'https://www.frase.io/'
-tier: "C"
-generated_at: "2026-05-12"
-created_at: "2026-02-07"
-popularity: 0
+official_url: "https://www.frase.io/"
+affiliate_url: "https://www.frase.io/"
+tier: C
+generated_at: 2026-05-12
+created_at: 2026-02-07
+popularity: 66
 ---
 # Frase
 

@@ -2,18 +2,18 @@
 slug: sift
 title: Sift
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
+price_model: Freemium
 tags: ["writing", "data"]
-official_url: 'https://sift.com/'
-created_at: "2026-02-08"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+official_url: "https://sift.com/"
+created_at: 2026-02-08
+popularity: 23
+tier: C
+generated_at: 2026-05-17
 ---
 # Sift
 

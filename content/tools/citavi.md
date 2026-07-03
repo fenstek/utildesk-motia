@@ -2,18 +2,18 @@
 slug: citavi
 title: Citavi
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
+price_model: Freemium
 tags: [reference-management, academic-research, writing]
 official_url: "https://lumivero.com/products/citavi/"
-popularity: 0
-description: "Citavi ist ein Recherche- und Analysewerkzeug für Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus."
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 79
+description: Citavi ist ein Recherche- und Analysewerkzeug für Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus.
+tier: C
+generated_at: 2026-05-11
 ---
 # Citavi
 

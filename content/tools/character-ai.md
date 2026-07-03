@@ -2,19 +2,19 @@
 slug: character-ai
 title: Character AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Chatbots
+price_model: Freemium
 tags: ["chatbot"]
-official_url: 'https://character.ai/'
-affiliate_url: 'https://character.ai/'
-tier: "D"
-generated_at: "2026-05-11"
-created_at: "2026-02-03"
-popularity: 0
+official_url: "https://character.ai/"
+affiliate_url: "https://character.ai/"
+tier: D
+generated_at: 2026-05-11
+created_at: 2026-02-03
+popularity: 81
 ---
 # Character AI
 
