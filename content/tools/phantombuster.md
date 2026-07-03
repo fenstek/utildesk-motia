@@ -2,19 +2,19 @@
 slug: phantombuster
 title: PhantomBuster
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Agents"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Agents
 price_model: Freemium
 tags: ["automation"]
 official_url: "https://phantombuster.com"
 created_at: 2026-02-18
-popularity: 0
-description: "PhantomBuster automatisiert Web- und Social-Media-Aktionen, Datenextraktion und Lead-Workflows über vorgefertigte Cloud-Automationen."
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 36
+description: PhantomBuster automatisiert Web- und Social-Media-Aktionen, Datenextraktion und Lead-Workflows über vorgefertigte Cloud-Automationen.
+tier: C
+generated_at: 2026-05-13
 ---
 # PhantomBuster
 

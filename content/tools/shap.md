@@ -2,17 +2,17 @@
 slug: shap
 title: SHAP (SHapley Additive exPlanations)
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
-price_model: "Open Source"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
+price_model: Open Source
 tags: ["data", "analytics", "education", "developer-tools", "chatbot"]
 official_url: "https://github.com/shap/shap"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 24
+tier: C
+generated_at: 2026-05-17
 ---
 # SHAP (SHapley Additive exPlanations)
 

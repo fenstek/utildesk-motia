@@ -11,10 +11,10 @@ price_model: Freemium
 tags: ["automation", "workflow", "integration", "developer", "api"]
 official_url: "https://n8n.io"
 affiliate_url: "https://n8n.io"
-tier: "A"
-lastReviewed: "2026-05-21"
+tier: A
+lastReviewed: 2026-05-21
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "ki-tools-eu-datenverarbeitung-kleine-unternehmen", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
-popularity: 0
+popularity: 41
 description: Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows.
 updated_at: 2026-06-12
 ---

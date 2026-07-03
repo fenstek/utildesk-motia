@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Je nach Plan
 tags: [audio, noise-cancellation, communication, productivity]
 official_url: "https://closedlooplabs.com/"
-popularity: 42
+popularity: 40
 tier: D
 generated_at: 2026-05-13
 ---

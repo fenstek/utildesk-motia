@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [assistant, automation, education, productivity]
 official_url: "https://www.scholarcy.com/"
-popularity: 26
+popularity: 27
 description: Scholarcy fasst wissenschaftliche Texte zusammen, extrahiert Kernaussagen und hilft, Papers vor der Detaillektüre schneller zu sortieren.
 tier: C
 generated_at: 2026-05-13

@@ -2,17 +2,17 @@
 slug: loom
 title: Loom
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Audio & Video"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Audio & Video
 price_model: Freemium
 tags: [video, screen-recording, communication, productivity]
 official_url: "https://www.loom.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-16"
+popularity: 48
+tier: D
+generated_at: 2026-05-16
 ---
 # Loom
 

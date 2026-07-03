@@ -7,13 +7,13 @@ tags: [ai, creative-cloud, firefly, design, agents, adobe]
 official_url: "https://news.adobe.com/news/2026/06/adobe-unveils-major-expansion"
 tier: D
 generated_at: 2026-06-24
-popularity: 0
-updated_at: "2026-06-24"
+popularity: 95
+updated_at: 2026-06-24
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: "2026-06-24"
-editorial_status: "manual_polished"
-editorial_batch: "2026-06-24-sheet-hype-12-human-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-06-24
+editorial_status: manual_polished
+editorial_batch: 2026-06-24-sheet-hype-12-human-polish
 ---
 # Adobe Creative Agent
 

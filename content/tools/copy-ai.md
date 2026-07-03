@@ -2,19 +2,19 @@
 slug: copy-ai
 title: Copy.ai
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Freemium
 tags: ["ai", "productivity", "writing"]
 official_url: "https://www.copy.ai"
 affiliate_url: "https://www.copy.ai"
-tier: "C"
-generated_at: "2026-05-15"
+tier: C
+generated_at: 2026-05-15
 created_at: 2026-02-08
-popularity: 0
+popularity: 75
 ---
 # Copy.ai
 

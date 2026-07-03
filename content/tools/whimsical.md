@@ -2,17 +2,17 @@
 slug: whimsical
 title: Whimsical
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Freemium
 tags: [whiteboard, diagrams, collaboration, productivity]
 official_url: "https://whimsical.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-16"
+popularity: 6
+tier: D
+generated_at: 2026-05-16
 ---
 # Whimsical
 

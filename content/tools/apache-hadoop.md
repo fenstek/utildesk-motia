@@ -2,17 +2,17 @@
 slug: apache-hadoop
 title: Apache Hadoop (selbst gehostet)
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://hadoop.apache.org/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 91
+tier: C
+generated_at: 2026-05-14
 ---
 # Apache Hadoop (selbst gehostet)
 

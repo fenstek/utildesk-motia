@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Je nach Plan
 tags: [video, analytics]
 official_url: "https://www.ibm.com/products/watsonx"
-popularity: 54
+popularity: 55
 tier: C
 generated_at: 2026-05-15
 ---

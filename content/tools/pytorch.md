@@ -1,20 +1,20 @@
 ---
-slug: "pytorch"
-title: "PyTorch"
+slug: pytorch
+title: PyTorch
 updated_at: 2026-06-12
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-12
 editorial_status: manual_polished
 editorial_batch: 2026-06-12-ratgeber-linked-tool-gap-pass
-category: "AI Infrastructure"
-price_model: "Freemium"
+category: AI Infrastructure
+price_model: Freemium
 tags: ["data", "automation"]
 official_url: "https://pytorch.org"
-created_at: "2026-02-11"
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-13"
+created_at: 2026-02-11
+popularity: 32
+tier: A
+lastReviewed: 2026-05-13
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]
 ---
 # PyTorch

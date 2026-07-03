@@ -2,17 +2,17 @@
 slug: libreoffice-calc
 title: LibreOffice Calc
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Open Source
 tags: [spreadsheet,office,open-source,productivity]
 official_url: "https://www.libreoffice.org/#screenshots"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
+popularity: 50
+tier: C
+generated_at: 2026-05-16
 ---
 # LibreOffice Calc
 
