@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: ["chatbot", "data", "ai", "assistant", "automation"]
 official_url: "https://www.datarobot.com/"
-popularity: 72
+popularity: 73
 tier: D
 generated_at: 2026-05-11
 ---

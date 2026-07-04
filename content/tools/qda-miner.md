@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: ["analytics", "data", "automation"]
 official_url: "https://provalisresearch.com/products/qualitative-data-analysis-software/"
-popularity: 32
+popularity: 31
 tier: C
 generated_at: 2026-05-13
 ---

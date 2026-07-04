@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [mobile, productivity]
 official_url: "https://www.meituan.com/"
-popularity: 46
+popularity: 45
 tier: C
 generated_at: 2026-05-12
 ---

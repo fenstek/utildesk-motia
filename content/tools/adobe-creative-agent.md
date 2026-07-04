@@ -7,7 +7,7 @@ tags: [ai, creative-cloud, firefly, design, agents, adobe]
 official_url: "https://news.adobe.com/news/2026/06/adobe-unveils-major-expansion"
 tier: D
 generated_at: 2026-06-24
-popularity: 95
+popularity: 96
 updated_at: 2026-06-24
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass

@@ -14,7 +14,7 @@ affiliate_url: "https://character.ai/"
 tier: D
 generated_at: 2026-05-11
 created_at: 2026-02-03
-popularity: 81
+popularity: 82
 ---
 # Character AI
 

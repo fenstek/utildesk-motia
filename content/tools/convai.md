@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://convai.com/"
-popularity: 76
+popularity: 77
 tier: D
 generated_at: 2026-05-11
 ---
