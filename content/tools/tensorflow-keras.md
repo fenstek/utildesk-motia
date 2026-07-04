@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [machine-learning,developer-tools,open-source,education]
 official_url: "https://www.tensorflow.org/?hl=pt-br"
-popularity: 13
+popularity: 12
 tier: D
 generated_at: 2026-05-21
 ---

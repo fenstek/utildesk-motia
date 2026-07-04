@@ -2,17 +2,17 @@
 slug: skater
 title: Skater
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Je nach Plan
 tags: [sports, coaching, analytics, ai]
 official_url: "https://www.skaterai.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 23
+tier: C
+generated_at: 2026-05-17
 ---
 # Skater
 

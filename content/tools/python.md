@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [programming-language, developer-tools, open-source, coding]
 official_url: "https://www.python.org/"
-popularity: 33
+popularity: 32
 tier: D
 generated_at: 2026-05-18
 ---

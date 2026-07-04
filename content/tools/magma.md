@@ -2,18 +2,18 @@
 slug: magma
 title: Magma
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Image"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Image
+price_model: Freemium
 tags: [design, image, productivity]
 official_url: "https://magma.com/"
-popularity: 0
-description: "Magma ist ein Design- und Kreativwerkzeug für kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand."
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 48
+description: Magma ist ein Design- und Kreativwerkzeug für kollaboratives digitales Zeichnen und visuelles Arbeiten auf einer gemeinsamen Leinwand.
+tier: C
+generated_at: 2026-05-12
 ---
 # Magma
 

@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium, Abonnement, Je nach Plan
 tags: [analytics, data, collaboration, productivity]
 official_url: "https://mode.com/"
-popularity: 42
+popularity: 41
 tier: C
 generated_at: 2026-05-16
 ---

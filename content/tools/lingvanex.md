@@ -14,7 +14,7 @@ affiliate_url: "https://lingvanex.com/"
 tier: C
 generated_at: 2026-05-20
 created_at: 2026-02-15
-popularity: 49
+popularity: 50
 description: Übersetzungs- und Sprachplattform für Text, Sprache, Dateien, API- und Unternehmensszenarien.
 ---
 # Lingvanex

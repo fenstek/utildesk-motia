@@ -11,7 +11,7 @@ price_model: Nutzungsbasiert
 tags: [data, analytics, streaming, cloud]
 official_url: "https://azure.microsoft.com/en-us/products/stream-analytics/"
 created_at: 2026-05-14
-popularity: 86
+popularity: 87
 tier: C
 generated_at: 2026-05-15
 ---
