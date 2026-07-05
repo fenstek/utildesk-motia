@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: [ai, analytics, data-visualization, enterprise, productivity]
 official_url: "https://www.tableau.com/"
-popularity: 15
+popularity: 14
 updated_at: 2026-05-21
 tier: D
 generated_at: 2026-05-21

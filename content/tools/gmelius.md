@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [productivity, automation, workflow, crm]
 official_url: "https://gmelius.com/"
-popularity: 63
+popularity: 61
 tier: C
 generated_at: 2026-05-15
 ---

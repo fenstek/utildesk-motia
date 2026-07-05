@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["automation"]
 official_url: "https://phantombuster.com"
 created_at: 2026-02-18
-popularity: 35
+popularity: 34
 description: PhantomBuster automatisiert Web- und Social-Media-Aktionen, Datenextraktion und Lead-Workflows über vorgefertigte Cloud-Automationen.
 tier: C
 generated_at: 2026-05-13

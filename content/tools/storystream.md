@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["writing", "design", "marketing"]
 official_url: "https://storystream.ai/"
 created_at: 2026-02-12
-popularity: 17
+popularity: 16
 tier: C
 generated_at: 2026-05-28
 ---

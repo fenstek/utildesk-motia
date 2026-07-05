@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Abonnement
 tags: [education, authoring, content, collaboration]
 official_url: "https://dominknow.com/"
-popularity: 71
+popularity: 70
 tier: C
 generated_at: 2026-05-11
 ---

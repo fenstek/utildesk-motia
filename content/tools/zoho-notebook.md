@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [notes,productivity,documents,organization]
 official_url: "https://www.zoho.com/de/notebook/?sredirect=true"
-popularity: 1
+popularity: 2
 tier: D
 generated_at: 2026-05-16
 ---

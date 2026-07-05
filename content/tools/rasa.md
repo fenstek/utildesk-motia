@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Freemium
 tags: ["chatbot", "developer-tools", "api"]
 official_url: "https://rasa.com/docs"
-popularity: 29
+popularity: 28
 tier: C
 generated_at: 2026-05-13
 ---

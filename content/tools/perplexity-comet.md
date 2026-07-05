@@ -2,16 +2,16 @@
 slug: perplexity-comet
 title: Perplexity Comet
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-06-11-hype-tools-human-polish
-editorial_verdict: "recommend"
-category: "Produktivität"
-price_model: "Freemium"
+editorial_verdict: recommend
+category: Produktivität
+price_model: Freemium
 tags: [ai, browser, search, assistant]
 official_url: "https://www.perplexity.ai/comet"
-popularity: 0
+popularity: 34
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31

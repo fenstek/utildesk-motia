@@ -10,7 +10,7 @@ category: AI Research
 price_model: Freemium
 tags: [ai, assistant, research]
 official_url: "https://www.genspark.ai/"
-popularity: 66
+popularity: 64
 tier: D
 generated_at: 2026-05-12
 ---
