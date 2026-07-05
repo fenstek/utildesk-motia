@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://mailchimp.com/de/"
-popularity: 47
+popularity: 46
 tier: C
 generated_at: 2026-05-15
 ---

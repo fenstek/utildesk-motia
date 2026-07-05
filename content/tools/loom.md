@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [video, screen-recording, communication, productivity]
 official_url: "https://www.loom.com/"
-popularity: 48
+popularity: 47
 tier: D
 generated_at: 2026-05-16
 ---

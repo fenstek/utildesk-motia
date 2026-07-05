@@ -10,7 +10,7 @@ category: AI Audio
 price_model: 
 tags: ["audio", "transcription"]
 official_url: "https://www.nch.com.au/wavepad/"
-popularity: 7
+popularity: 8
 tier: D
 generated_at: 2026-05-03
 ---

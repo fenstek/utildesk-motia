@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [video, editing, mobile, content]
 official_url: "https://www.vllo.io/"
-popularity: 8
+popularity: 9
 tier: C
 generated_at: 2026-05-26
 ---

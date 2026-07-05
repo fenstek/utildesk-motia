@@ -10,7 +10,7 @@ category: Design
 price_model: Freemium
 tags: [ai, video, design]
 official_url: "https://www.canva.com/video-editor/"
-popularity: 83
+popularity: 81
 tier: C
 generated_at: 2026-05-11
 ---

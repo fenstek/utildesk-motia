@@ -10,7 +10,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [calendar, scheduling, productivity]
 official_url: "https://flexibits.com/fantastical"
-popularity: 68
+popularity: 67
 tier: C
 generated_at: 2026-05-12
 ---

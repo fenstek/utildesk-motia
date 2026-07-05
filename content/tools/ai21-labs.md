@@ -2,17 +2,17 @@
 slug: ai21-labs
 title: AI21 Labs
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Writing"
-price_model:
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Writing
+price_model: 
 tags: ["ai", "writing", "creative", "productivity"]
 official_url: "https://www.ai21.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 93
+tier: C
+generated_at: 2026-05-14
 ---
 # AI21 Labs
 

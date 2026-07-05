@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: [assistant, automation]
 official_url: "https://stackblitz.com/"
-popularity: 18
+popularity: 17
 tier: D
 generated_at: 2026-05-18
 ---

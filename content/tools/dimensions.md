@@ -10,7 +10,7 @@ category: AI Research
 price_model: Je nach Plan
 tags: [research, publications, analytics]
 official_url: "https://www.dimensions.ai/"
-popularity: 72
+popularity: 70
 tier: C
 generated_at: 2026-05-15
 ---

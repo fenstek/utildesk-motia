@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [phone,communication,customer-support,business]
 official_url: "https://www.mightycall.com/"
-popularity: 43
+popularity: 42
 tier: C
 generated_at: 2026-05-16
 ---
