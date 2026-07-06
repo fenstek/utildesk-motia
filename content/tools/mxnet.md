@@ -2,17 +2,17 @@
 slug: mxnet
 title: MXNet
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
 price_model: Open Source
 tags: [machine-learning, developer-tools, open-source]
 official_url: "https://mxnet.apache.org/versions/1.9.1/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+popularity: 28
+tier: D
+generated_at: 2026-05-12
 ---
 # MXNet
 

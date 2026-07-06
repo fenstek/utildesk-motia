@@ -14,7 +14,7 @@ affiliate_url: "https://www.frase.io/"
 tier: C
 generated_at: 2026-05-12
 created_at: 2026-02-07
-popularity: 64
+popularity: 56
 ---
 # Frase
 

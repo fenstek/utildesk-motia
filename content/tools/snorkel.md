@@ -2,17 +2,17 @@
 slug: snorkel
 title: Snorkel
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Freemium
 tags: [ai, automation, analytics, open-source]
 official_url: "https://snorkel.ai/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 2
+tier: C
+generated_at: 2026-05-17
 ---
 # Snorkel
 

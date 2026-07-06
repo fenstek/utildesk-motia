@@ -2,17 +2,17 @@
 slug: beautycam
 title: BeautyCam
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Design
 price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.meitu.com/en/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 79
+tier: C
+generated_at: 2026-05-15
 ---
 # BeautyCam
 

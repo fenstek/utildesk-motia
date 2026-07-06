@@ -2,17 +2,17 @@
 slug: bibdesk
 title: BibDesk
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
 price_model: Open Source
 tags: [research, open-source, productivity]
 official_url: "https://bibdesk.sourceforge.io/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 78
+tier: C
+generated_at: 2026-05-11
 ---
 # BibDesk
 

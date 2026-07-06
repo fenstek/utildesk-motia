@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.scholarcy.com/"
-popularity: 25
+popularity: 7
 ---
 
 # Scholarcy

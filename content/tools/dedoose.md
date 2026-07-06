@@ -2,18 +2,18 @@
 slug: dedoose
 title: Dedoose
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Je nach Plan
 tags: [automation, data, analytics, productivity, education]
 official_url: "https://www.dedoose.com/"
-popularity: 0
-description: "Dedoose unterstützt qualitative und Mixed-Methods-Forschung mit Codierung, Analyse, Teamarbeit und Datenvisualisierung."
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 64
+description: Dedoose unterstützt qualitative und Mixed-Methods-Forschung mit Codierung, Analyse, Teamarbeit und Datenvisualisierung.
+tier: C
+generated_at: 2026-05-11
 ---
 # Dedoose
 

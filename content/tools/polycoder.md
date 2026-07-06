@@ -2,17 +2,17 @@
 slug: polycoder
 title: PolyCoder
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
+price_model: Je nach Plan
 tags: [coding, developer-tools, education]
 official_url: "https://github.com/VHellendoorn/Code-LMs"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 16
+tier: C
+generated_at: 2026-05-17
 ---
 # PolyCoder
 

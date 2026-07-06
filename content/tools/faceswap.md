@@ -2,17 +2,17 @@
 slug: faceswap
 title: FaceSwap
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Chatbots"
-price_model:
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Chatbots
+price_model: 
 tags: [assistant, automation]
 official_url: "https://faceswap.dev/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 59
+tier: C
+generated_at: 2026-05-15
 ---
 # FaceSwap
 

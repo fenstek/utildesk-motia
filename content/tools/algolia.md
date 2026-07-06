@@ -2,17 +2,17 @@
 slug: algolia
 title: Algolia
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [search, api, developer-tools, commerce]
 official_url: "https://www.algolia.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 89
+tier: C
+generated_at: 2026-05-14
 ---
 # Algolia
 

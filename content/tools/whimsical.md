@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [whiteboard, diagrams, collaboration, productivity]
 official_url: "https://whimsical.com/"
-popularity: 6
+popularity: 0
 tier: D
 generated_at: 2026-05-16
 ---

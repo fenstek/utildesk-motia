@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["writing", "data"]
 official_url: "https://sift.com/"
 created_at: 2026-02-08
-popularity: 22
+popularity: 5
 tier: C
 generated_at: 2026-05-17
 ---

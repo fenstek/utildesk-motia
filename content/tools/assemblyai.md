@@ -2,17 +2,17 @@
 slug: assemblyai
 title: AssemblyAI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Audio & Video"
-price_model:
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Audio & Video
+price_model: 
 tags: ["audio"]
 official_url: "https://www.assemblyai.com"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-14"
+popularity: 85
+tier: C
+generated_at: 2026-05-14
 ---
 # AssemblyAI
 

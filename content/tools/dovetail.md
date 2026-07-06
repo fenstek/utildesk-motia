@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://dovetail.com/"
-popularity: 68
+popularity: 61
 tier: C
 generated_at: 2026-05-15
 ---

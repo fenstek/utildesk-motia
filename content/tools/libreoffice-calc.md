@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Open Source
 tags: [spreadsheet,office,open-source,productivity]
 official_url: "https://www.libreoffice.org/#screenshots"
-popularity: 49
+popularity: 39
 tier: C
 generated_at: 2026-05-16
 ---

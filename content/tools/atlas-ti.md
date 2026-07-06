@@ -2,18 +2,18 @@
 slug: atlas-ti
 title: Atlas.ti
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
+price_model: Je nach Plan
 tags: [data, analytics, productivity, automation, education]
 official_url: "https://atlasti.com/"
-popularity: 0
-description: "Atlas.ti ist ein Recherche- und Analysewerkzeug für qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten."
-tier: "C"
-generated_at: "2026-05-10"
+popularity: 85
+description: Atlas.ti ist ein Recherche- und Analysewerkzeug für qualitative Datenanalyse, Codierung und Auswertung von Interviews, Texten und Forschungsdaten.
+tier: C
+generated_at: 2026-05-10
 ---
 # Atlas.ti
 

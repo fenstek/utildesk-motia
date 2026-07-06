@@ -2,17 +2,17 @@
 slug: aws-bedrock
 title: AWS Bedrock
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
 price_model: Nutzungsbasiert
 tags: [ai, developer-tools, cloud, api]
 official_url: "https://aws.amazon.com/bedrock/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-17"
+popularity: 82
+tier: D
+generated_at: 2026-05-17
 ---
 # AWS Bedrock
 

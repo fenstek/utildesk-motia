@@ -2,19 +2,19 @@
 slug: ocrmypdf
 title: OCRmyPDF
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Open Source
-tags:
+tags: 
 official_url: "https://ocrmypdf.readthedocs.io/en/stable/"
 description: OCRmyPDF ergänzt gescannte PDFs um eine durchsuchbare Textebene und eignet sich besonders als sauberer Vorverarbeitungsschritt in lokalen Dokumentenpipelines.
 created_at: 2026-05-10
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-14"
+popularity: 24
+tier: A
+lastReviewed: 2026-05-14
 mentionedIn: ["open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # OCRmyPDF

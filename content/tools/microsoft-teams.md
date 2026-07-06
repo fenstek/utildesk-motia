@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium, Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.microsoft.com/en-us/microsoft-teams"
-popularity: 43
+popularity: 31
 updated_at: 2026-05-21
 tier: C
 generated_at: 2026-05-28

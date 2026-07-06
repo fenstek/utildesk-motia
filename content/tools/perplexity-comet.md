@@ -11,7 +11,7 @@ category: Produktivität
 price_model: Freemium
 tags: [ai, browser, search, assistant]
 official_url: "https://www.perplexity.ai/comet"
-popularity: 34
+popularity: 20
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31

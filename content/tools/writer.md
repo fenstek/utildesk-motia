@@ -14,7 +14,7 @@ affiliate_url: "https://writer.com"
 tier: C
 generated_at: 2026-05-13
 created_at: 2026-02-11
-popularity: 5
+popularity: 0
 ---
 # Writer
 

@@ -2,19 +2,19 @@
 slug: speechmatics
 title: Speechmatics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Audio"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Audio
 price_model: Freemium
 tags: [ai,audio]
 official_url: "https://www.speechmatics.com/"
 created_at: 2026-02-14
-popularity: 0
+popularity: 1
 description: Speechmatics bietet automatische Spracherkennung und Transkription für Audio, Video, Meetings und mehrsprachige Workflows.
-tier: "C"
-generated_at: "2026-05-17"
+tier: C
+generated_at: 2026-05-17
 ---
 # Speechmatics
 

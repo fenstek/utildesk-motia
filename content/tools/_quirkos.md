@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [design, workflow]
 official_url: "https://www.quirkos.com/"
-popularity: 28
+popularity: 12
 ---
 
 # Quirkos

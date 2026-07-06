@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://www.picmonkey.com/"
-popularity: 33
+popularity: 19
 tier: C
 generated_at: 2026-05-16
 ---

@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://www.zamzar.com/"
-popularity: 3
+popularity: 0
 ---
 
 # Zamzar AI

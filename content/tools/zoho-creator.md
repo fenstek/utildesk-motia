@@ -10,7 +10,7 @@ category: Automatisierung
 price_model: Abonnement
 tags: [no-code, automation, developer]
 official_url: "https://www.zoho.com/de/creator/"
-popularity: 2
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---

@@ -2,17 +2,17 @@
 slug: rally
 title: Rally
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Image"
-price_model:
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Image
+price_model: 
 tags: [agile, project-management, enterprise]
 official_url: "https://www.broadcom.com/products/software/value-stream-management/rally"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-13"
+popularity: 12
+tier: C
+generated_at: 2026-05-13
 ---
 # Rally
 
