@@ -2,10 +2,10 @@
 slug: amazon-comprehend
 title: Amazon Comprehend
 category: AI
-price_model: "Nutzungsbasiert"
+price_model: Nutzungsbasiert
 tags: []
 official_url: "https://aws.amazon.com/comprehend/"
-popularity: 0
+popularity: 89
 ---
 
 # Amazon Comprehend

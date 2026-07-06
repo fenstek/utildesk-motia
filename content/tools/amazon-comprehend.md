@@ -2,17 +2,17 @@
 slug: amazon-comprehend
 title: Amazon Comprehend
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
-price_model: "Nutzungsbasiert"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
+price_model: Nutzungsbasiert
 tags: [data, analytics, automation, productivity]
 official_url: "https://aws.amazon.com/comprehend/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
+popularity: 89
+tier: C
+generated_at: 2026-05-10
 ---
 # Amazon Comprehend
 

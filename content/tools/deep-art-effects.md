@@ -2,17 +2,17 @@
 slug: deep-art-effects
 title: Deep Art Effects
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Image"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Image
 price_model: Freemium
 tags: [image-editing, art, creative-tools]
 official_url: "https://www.deeparteffects.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 64
+tier: C
+generated_at: 2026-05-11
 ---
 # Deep Art Effects
 

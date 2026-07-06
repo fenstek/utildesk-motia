@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Abonnement, Individuelles Angebot, Je nach Plan
 tags: [analytics, observability, security, enterprise]
 official_url: "https://www.splunk.com/"
-popularity: 18
+popularity: 0
 tier: C
 generated_at: 2026-05-18
 ---

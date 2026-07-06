@@ -11,7 +11,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "http://www.nuance.com/"
-popularity: 39
+popularity: 25
 tier: A
 lastReviewed: 2026-05-16
 mentionedIn: ["wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow"]

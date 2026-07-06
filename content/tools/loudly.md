@@ -2,18 +2,18 @@
 slug: loudly
 title: Loudly
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Audio"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Audio
+price_model: Je nach Plan
 tags: [music-generation, audio, ai-music]
 official_url: "https://www.loudly.com/"
-popularity: 0
-description: "Loudly ist ein Audio- und Musikwerkzeug für KI-Musik, Soundtracks und lizenzierbare Audio-Varianten für Content-Produktion."
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 37
+description: Loudly ist ein Audio- und Musikwerkzeug für KI-Musik, Soundtracks und lizenzierbare Audio-Varianten für Content-Produktion.
+tier: C
+generated_at: 2026-05-12
 ---
 # Loudly
 

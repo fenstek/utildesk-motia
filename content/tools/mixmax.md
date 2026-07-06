@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Abonnement
 tags: [assistant, automation, workflow]
 official_url: "https://www.mixmax.com/"
-popularity: 41
+popularity: 29
 tier: C
 generated_at: 2026-05-28
 ---

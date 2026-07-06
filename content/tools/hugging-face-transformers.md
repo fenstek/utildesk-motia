@@ -2,17 +2,17 @@
 slug: hugging-face-transformers
 title: Hugging Face Transformers
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
 price_model: Je nach Plan
 tags: [coding, developer-tools, api, education]
 official_url: "https://huggingface.co/docs/transformers/index"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-12"
+popularity: 45
+tier: C
+generated_at: 2026-05-12
 ---
 # Hugging Face Transformers
 

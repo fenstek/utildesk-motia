@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Je nach Plan
 tags: [writing, productivity, automation, assistant]
 official_url: "https://www.gingersoftware.com/"
-popularity: 63
+popularity: 54
 tier: C
 generated_at: 2026-05-27
 ---

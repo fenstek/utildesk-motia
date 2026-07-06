@@ -10,7 +10,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [design, automation, productivity, no-code, marketing]
 official_url: "https://www.framer.com/"
-popularity: 65
+popularity: 56
 tier: C
 generated_at: 2026-05-12
 ---

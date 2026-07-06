@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [developer-tools, web, design]
 official_url: "https://codepen.io/"
-popularity: 76
+popularity: 69
 tier: C
 generated_at: 2026-05-15
 ---

@@ -2,16 +2,16 @@
 slug: google-antigravity
 title: Google Antigravity
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-06-11-hype-tools-human-polish
-editorial_verdict: "caution"
-category: "Entwickler-Tools"
-price_model: "Freemium"
+editorial_verdict: caution
+category: Entwickler-Tools
+price_model: Freemium
 tags: [ai, coding, ide, agents]
 official_url: "https://antigravity.google/"
-popularity: 0
+popularity: 53
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31

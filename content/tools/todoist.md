@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Freemium
 tags: [task-management,productivity,planning]
 official_url: "https://www.todoist.com/"
-popularity: 10
+popularity: 0
 tier: C
 generated_at: 2026-05-25
 ---

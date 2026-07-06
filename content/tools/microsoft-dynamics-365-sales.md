@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Abonnement
 tags: [crm, sales, productivity]
 official_url: "https://www.microsoft.com/en-us/dynamics-365/products/sales"
-popularity: 44
+popularity: 32
 tier: C
 generated_at: 2026-05-16
 ---

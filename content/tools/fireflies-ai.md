@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Freemium
 tags: [meetings, transcription, notes]
 official_url: "https://fireflies.ai/"
-popularity: 66
+popularity: 58
 tier: C
 generated_at: 2026-05-12
 ---

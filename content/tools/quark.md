@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, search]
 official_url: "https://www.quark.cn/"
-popularity: 29
+popularity: 13
 tier: C
 generated_at: 2026-05-13
 ---

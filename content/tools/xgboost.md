@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [machine-learning,developer-tools,open-source,analytics]
 official_url: "https://xgboost.ai/"
-popularity: 4
+popularity: 0
 description: XGBoost ist ein Entwickler- und Infrastrukturwerkzeug für Machine-Learning-Bibliothek für Gradient Boosting, tabellarische Daten und robuste Vorhersagemodelle.
 tier: C
 generated_at: 2026-05-03

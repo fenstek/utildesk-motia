@@ -2,17 +2,17 @@
 slug: google-cloud-functions
 title: Google Cloud Functions
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://cloud.google.com/functions"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-18"
+popularity: 51
+tier: D
+generated_at: 2026-05-18
 ---
 # Google Cloud Functions
 

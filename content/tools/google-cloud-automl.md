@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [automation, workflow]
 official_url: "https://ai.google/build/"
-popularity: 60
+popularity: 52
 tier: C
 generated_at: 2026-05-12
 ---

@@ -2,17 +2,17 @@
 slug: peppertype-ai
 title: Peppertype.ai
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Writing"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Writing
 price_model: Je nach Plan
 tags: [writing, content, marketing, automation, productivity]
 official_url: "https://www.pepper.inc/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-13"
+popularity: 20
+tier: D
+generated_at: 2026-05-13
 ---
 # Peppertype.ai
 

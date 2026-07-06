@@ -2,17 +2,17 @@
 slug: avatarify
 title: Avatarify
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
-price_model:
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
+price_model: 
 tags: [image, video, developer-tools]
 official_url: "https://github.com/alievk/avatarify-python"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
+popularity: 84
+tier: C
+generated_at: 2026-05-10
 ---
 # Avatarify
 

@@ -10,7 +10,7 @@ category: AI Writing
 price_model: 
 tags: ["ai", "writing", "creative", "productivity"]
 official_url: "https://www.ai21.com/"
-popularity: 93
+popularity: 91
 tier: C
 generated_at: 2026-05-14
 ---

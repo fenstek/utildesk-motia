@@ -2,17 +2,17 @@
 slug: sora
 title: Sora
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-06-11-hype-tools-human-polish-2
-category: "Audio & Video"
-price_model:
+category: Audio & Video
+price_model: 
 tags: ["video"]
 official_url: "https://openai.com/sora"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-17"
+popularity: 1
+tier: C
+generated_at: 2026-05-17
 updated_at: 2026-06-11
 ---
 # Sora

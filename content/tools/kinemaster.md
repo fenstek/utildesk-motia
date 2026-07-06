@@ -2,17 +2,17 @@
 slug: kinemaster
 title: KineMaster
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
 price_model: Freemium
 tags: [video-editing,mobile,creative-tools]
 official_url: "https://www.kinemaster.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+popularity: 40
+tier: D
+generated_at: 2026-05-12
 ---
 # KineMaster
 

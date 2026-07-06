@@ -2,17 +2,17 @@
 slug: microsoft-azure-notification-hubs
 title: Microsoft Azure Notification Hubs
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, mobile]
 official_url: "https://azure.microsoft.com/en-us/products/notification-hubs"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-16"
+popularity: 33
+tier: C
+generated_at: 2026-05-16
 ---
 # Microsoft Azure Notification Hubs
 

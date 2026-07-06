@@ -2,17 +2,17 @@
 slug: bigbluebutton
 title: BigBlueButton
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
 category: Produktivität
 price_model: Open Source
 tags: [meetings, video, education, open-source]
 official_url: "https://bigbluebutton.org/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 78
+tier: C
+generated_at: 2026-05-11
 ---
 # BigBlueButton
 

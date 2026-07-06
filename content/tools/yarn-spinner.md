@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [writing, game-development, open-source, developer-tools]
 official_url: "https://yarnspinner.dev/"
-popularity: 4
+popularity: 0
 tier: D
 generated_at: 2026-05-17
 ---
