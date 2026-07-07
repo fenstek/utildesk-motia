@@ -10,7 +10,7 @@ category: AI Image
 price_model: 
 tags: [agile, project-management, enterprise]
 official_url: "https://www.broadcom.com/products/software/value-stream-management/rally"
-popularity: 12
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---

@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [productivity, automation, marketing]
 official_url: "https://www.mailbutler.io/"
-popularity: 36
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 ---

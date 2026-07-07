@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://poly.ai/en"
-popularity: 17
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 ---

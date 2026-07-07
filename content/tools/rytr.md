@@ -14,7 +14,7 @@ affiliate_url: "https://rytr.me/"
 tier: C
 generated_at: 2026-05-27
 created_at: 2026-02-07
-popularity: 9
+popularity: 0
 description: Rytr ist ein KI-Schreibtool für kurze Marketingtexte, Ideenvarianten, Produktbeschreibungen und einfache Content-Entwürfe.
 ---
 # Rytr

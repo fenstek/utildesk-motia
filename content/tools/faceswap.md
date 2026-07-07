@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: 
 tags: [assistant, automation]
 official_url: "https://faceswap.dev/"
-popularity: 59
+popularity: 22
 tier: C
 generated_at: 2026-05-15
 ---

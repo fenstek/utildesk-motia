@@ -2,20 +2,20 @@
 slug: deepmind
 title: DeepMind
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
+price_model: Freemium
 tags: ["data", "automation"]
-official_url: 'https://deepmind.google/'
-affiliate_url: 'https://deepmind.google/'
-tier: "A"
-lastReviewed: "2026-05-11"
+official_url: "https://deepmind.google/"
+affiliate_url: "https://deepmind.google/"
+tier: A
+lastReviewed: 2026-05-11
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar"]
-created_at: "2026-02-11"
-popularity: 0
+created_at: 2026-02-11
+popularity: 30
 ---
 # DeepMind
 

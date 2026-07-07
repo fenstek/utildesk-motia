@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [ai,developer,api]
 official_url: "https://aistudio.google.com/welcome"
-popularity: 53
+popularity: 9
 tier: C
 generated_at: 2026-05-12
 updated_at: 2026-06-11

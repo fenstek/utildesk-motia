@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Je nach Plan
 tags: [coding, developer-tools, education]
 official_url: "https://github.com/VHellendoorn/Code-LMs"
-popularity: 16
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 ---

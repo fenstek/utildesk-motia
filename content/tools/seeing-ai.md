@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Kostenlos
 tags: [accessibility, vision, mobile, assistant]
 official_url: "https://www.seeingai.com/"
-popularity: 7
+popularity: 0
 tier: D
 generated_at: 2026-05-17
 ---

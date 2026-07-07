@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [crm, workflow]
 official_url: "https://www.hubspot.com/products/crm"
-popularity: 46
+popularity: 0
 updated_at: 2026-05-21
 tier: D
 generated_at: 2026-05-21

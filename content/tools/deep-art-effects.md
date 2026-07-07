@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [image-editing, art, creative-tools]
 official_url: "https://www.deeparteffects.com/"
-popularity: 64
+popularity: 32
 tier: C
 generated_at: 2026-05-11
 ---

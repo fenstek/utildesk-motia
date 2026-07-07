@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [data, analytics, developer-tools]
 official_url: "https://posit.co/download/rstudio-desktop"
-popularity: 9
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---

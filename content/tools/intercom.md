@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["marketing"]
 official_url: "https://www.intercom.com/"
 created_at: 2026-02-14
-popularity: 43
+popularity: 0
 description: Intercom verbindet Kundenchat, Support-Automatisierung, Help Center und Conversational AI für SaaS- und Online-Businesses.
 tier: C
 generated_at: 2026-05-12

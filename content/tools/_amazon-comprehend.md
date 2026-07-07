@@ -5,7 +5,7 @@ category: AI
 price_model: Nutzungsbasiert
 tags: []
 official_url: "https://aws.amazon.com/comprehend/"
-popularity: 89
+popularity: 73
 ---
 
 # Amazon Comprehend

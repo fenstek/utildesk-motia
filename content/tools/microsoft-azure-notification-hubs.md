@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [messaging, cloud, developer-tools, mobile]
 official_url: "https://azure.microsoft.com/en-us/products/notification-hubs"
-popularity: 33
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 ---

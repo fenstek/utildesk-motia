@@ -10,7 +10,7 @@ category: Design
 price_model: Einmalzahlung
 tags: [design, painting, illustration, desktop]
 official_url: "https://www.escapemotions.com/products/rebelle/about"
-popularity: 11
+popularity: 0
 description: Rebelle ist eine digitale Malsoftware mit Fokus auf natürliche Aquarell-, Öl- und Zeichenmedien.
 tier: C
 generated_at: 2026-05-13

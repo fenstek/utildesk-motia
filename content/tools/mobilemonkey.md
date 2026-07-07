@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["chatbot"]
 official_url: "https://customers.ai/"
 created_at: 2026-02-13
-popularity: 29
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 ---

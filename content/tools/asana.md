@@ -10,7 +10,7 @@ category: AI Image
 price_model: Je nach Plan
 tags: [project-management, work-management, collaboration]
 official_url: "https://asana.com/"
-popularity: 86
+popularity: 67
 updated_at: 2026-05-21
 tier: C
 generated_at: 2026-05-21

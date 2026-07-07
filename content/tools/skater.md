@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [sports, coaching, analytics, ai]
 official_url: "https://www.skaterai.com/"
-popularity: 4
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 ---

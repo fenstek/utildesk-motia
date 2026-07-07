@@ -2,19 +2,19 @@
 slug: google-document-ai
 title: Google Document AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Nutzungsbasiert
-tags:
+tags: 
 official_url: "https://cloud.google.com/document-ai"
 description: Google Document AI bündelt OCR, spezialisierte Dokumentprozessoren und strukturierte Extraktion für Teams, die Dokumentdaten in Google-Cloud-Workflows verarbeiten.
 created_at: 2026-05-10
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-14"
+popularity: 5
+tier: A
+lastReviewed: 2026-05-14
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "ki-tools-eu-datenverarbeitung-kleine-unternehmen", "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
 ---
 # Google Document AI

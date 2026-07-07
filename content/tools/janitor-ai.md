@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot, assistant]
 official_url: "https://janitorai.com/"
-popularity: 43
+popularity: 0
 tier: C
 generated_at: 2026-05-27
 ---

@@ -2,19 +2,19 @@
 slug: clarifai
 title: Clarifai
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
+price_model: Freemium
 tags: ["video"]
-official_url: 'http://www.clarifai.com/'
-affiliate_url: 'http://www.clarifai.com/'
-tier: "C"
-generated_at: "2026-05-15"
-created_at: "2026-02-08"
-popularity: 0
+official_url: "http://www.clarifai.com/"
+affiliate_url: "http://www.clarifai.com/"
+tier: C
+generated_at: 2026-05-15
+created_at: 2026-02-08
+popularity: 43
 ---
 # Clarifai
 

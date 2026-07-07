@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://magma.com/"
-popularity: 36
+popularity: 88
 ---
 
 # Magma

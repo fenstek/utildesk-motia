@@ -2,17 +2,17 @@
 slug: dialogflow-cx
 title: Dialogflow CX
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Chatbots"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Chatbots
+price_model: Je nach Plan
 tags: [chatbot, automation]
 official_url: "https://docs.cloud.google.com/dialogflow/cx/docs"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 29
+tier: C
+generated_at: 2026-05-15
 ---
 # Dialogflow CX
 

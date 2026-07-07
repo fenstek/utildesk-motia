@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: ["chatbot", "data"]
 official_url: "https://cohere.com/"
-popularity: 69
+popularity: 38
 tier: D
 generated_at: 2026-05-11
 ---

@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Abonnement
 tags: [seo, analytics, marketing, keyword-research]
 official_url: "https://www.sistrix.com/"
-popularity: 5
+popularity: 0
 tier: D
 generated_at: 2026-05-18
 ---

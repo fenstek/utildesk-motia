@@ -2,17 +2,17 @@
 slug: gumloop
 title: Gumloop
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-06-11
-editorial_status: "manual_polished"
+editorial_status: manual_polished
 editorial_batch: 2026-06-11-hype-tools-human-polish-2
 category: Automatisierung
-price_model: "Je nach Plan"
+price_model: Je nach Plan
 tags: [ai, automation, workflow, no-code]
 official_url: "https://www.gumloop.com/"
-popularity: 0
-tier: "A"
-lastReviewed: "2026-05-12"
+popularity: 3
+tier: A
+lastReviewed: 2026-05-12
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast"]
 updated_at: 2026-06-11
 ---

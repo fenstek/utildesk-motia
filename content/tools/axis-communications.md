@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Je nach Plan
 tags: [video, security, hardware, analytics]
 official_url: "https://www.axis.com/de-de"
-popularity: 81
+popularity: 61
 tier: C
 generated_at: 2026-05-10
 ---

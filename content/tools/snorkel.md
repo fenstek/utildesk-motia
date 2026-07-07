@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Freemium
 tags: [ai, automation, analytics, open-source]
 official_url: "https://snorkel.ai/"
-popularity: 2
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 ---

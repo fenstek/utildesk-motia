@@ -2,10 +2,10 @@
 slug: deep-dream-generator
 title: Deep Dream Generator
 category: AI
-price_model: "Freemium"
+price_model: Freemium
 tags: []
 official_url: "https://deepdreamgenerator.com/"
-popularity: 0
+popularity: 31
 ---
 
 # Deep Dream Generator

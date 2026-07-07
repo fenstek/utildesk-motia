@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Je nach Plan
 tags: [writing, content, marketing, automation, productivity]
 official_url: "https://www.pepper.inc/"
-popularity: 20
+popularity: 0
 tier: D
 generated_at: 2026-05-13
 ---

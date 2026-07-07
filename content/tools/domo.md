@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["design", "automation", "data"]
 official_url: "https://www.domo.com/"
 created_at: 2026-02-13
-popularity: 62
+popularity: 27
 tier: C
 generated_at: 2026-05-11
 ---

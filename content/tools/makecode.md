@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Free
 tags: [education, coding, block-coding, developer-tools]
 official_url: "https://www.microsoft.com/en-us/makecode"
-popularity: 34
+popularity: 0
 tier: D
 generated_at: 2026-05-18
 ---

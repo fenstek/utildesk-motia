@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [image, workflow]
 official_url: "https://www.photopea.com/"
-popularity: 19
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 ---

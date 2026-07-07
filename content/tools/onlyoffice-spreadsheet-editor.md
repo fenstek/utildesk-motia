@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [spreadsheet, office, collaboration, productivity]
 official_url: "https://www.onlyoffice.com/sheets"
-popularity: 23
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 ---

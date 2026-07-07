@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Nutzungsbasiert
 tags: [serverless, cloud, developer-tools, api]
 official_url: "https://cloud.google.com/functions"
-popularity: 51
+popularity: 7
 tier: D
 generated_at: 2026-05-18
 ---

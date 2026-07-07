@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: ["data", "analytics", "productivity", "automation"]
 official_url: "https://www.sap.com/products/data-cloud/cloud-analytics.html"
-popularity: 8
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---
