@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.framer.com/"
-popularity: 56
+popularity: 16
 ---
 
 # Framer

@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [education, courses, career, learning]
 official_url: "https://www.coursera.org/"
-popularity: 67
+popularity: 36
 tier: C
 generated_at: 2026-05-15
 ---

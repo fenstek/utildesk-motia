@@ -13,7 +13,7 @@ official_url: "https://mallet.cs.umass.edu/download.php"
 affiliate_url: "https://mallet.cs.umass.edu/download.php"
 tier: C
 generated_at: 2026-05-20
-popularity: 34
+popularity: 0
 description: Java-basiertes Open-Source-Toolkit für NLP, Topic Modeling, Klassifikation und Textanalyse.
 ---
 # MALLET

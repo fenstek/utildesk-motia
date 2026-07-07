@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Je nach Plan
 tags: [analytics, enterprise, data]
 official_url: "https://www.ibm.com/products/cognos-analytics"
-popularity: 44
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

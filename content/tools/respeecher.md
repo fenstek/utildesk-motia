@@ -11,7 +11,7 @@ price_model: Freemium
 tags: [ai,audio]
 official_url: "https://www.respeecher.com/"
 created_at: 2026-02-14
-popularity: 10
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---

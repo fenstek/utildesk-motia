@@ -11,7 +11,7 @@ price_model: Freemium
 tags: [ai, produktivitat, writing]
 official_url: "https://www.inklestudios.com/inklewriter/"
 created_at: 2026-02-12
-popularity: 43
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

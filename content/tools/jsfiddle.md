@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [coding, web, developer]
 official_url: "https://jsfiddle.net/"
-popularity: 42
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

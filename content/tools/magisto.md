@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: ["ai", "video", "automation", "creative"]
 official_url: "https://www.magisto.com/"
-popularity: 37
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

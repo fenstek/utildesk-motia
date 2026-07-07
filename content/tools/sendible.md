@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Je nach Plan
 tags: [social-media,marketing,scheduling]
 official_url: "https://www.sendible.com/"
-popularity: 6
+popularity: 0
 tier: D
 generated_at: 2026-05-17
 ---

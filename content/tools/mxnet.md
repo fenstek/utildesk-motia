@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [machine-learning, developer-tools, open-source]
 official_url: "https://mxnet.apache.org/versions/1.9.1/"
-popularity: 28
+popularity: 0
 tier: D
 generated_at: 2026-05-12
 ---

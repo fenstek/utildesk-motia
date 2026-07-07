@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://playwright.dev/"
-popularity: 17
+popularity: 0
 tier: D
 generated_at: 2026-05-17
 ---

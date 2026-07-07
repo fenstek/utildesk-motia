@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot]
 official_url: "https://assistant.google.com/"
-popularity: 52
+popularity: 8
 tier: D
 generated_at: 2026-05-12
 ---

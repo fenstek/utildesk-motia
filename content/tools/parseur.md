@@ -12,7 +12,7 @@ tags:
 official_url: "https://parseur.com/"
 description: Parseur ist ein Parser für E-Mails, PDFs und Anhänge, der Dokumentdaten in Tabellen, Webhooks oder Automatisierungstools übergeben kann.
 created_at: 2026-05-10
-popularity: 21
+popularity: 0
 tier: A
 lastReviewed: 2026-05-14
 mentionedIn: ["pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]

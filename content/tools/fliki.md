@@ -1,19 +1,19 @@
 ---
-slug: "fliki"
-title: "Fliki"
+slug: fliki
+title: Fliki
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Audio"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Audio
+price_model: Freemium
 tags: ["video", "audio", "content"]
 official_url: "https://fliki.ai/"
-created_at: "2026-02-15"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+created_at: 2026-02-15
+popularity: 18
+tier: D
+generated_at: 2026-05-12
 ---
 # Fliki
 

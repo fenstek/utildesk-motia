@@ -12,7 +12,7 @@ tags:
 official_url: "https://ocrmypdf.readthedocs.io/en/stable/"
 description: OCRmyPDF ergänzt gescannte PDFs um eine durchsuchbare Textebene und eignet sich besonders als sauberer Vorverarbeitungsschritt in lokalen Dokumentenpipelines.
 created_at: 2026-05-10
-popularity: 24
+popularity: 0
 tier: A
 lastReviewed: 2026-05-14
 mentionedIn: ["open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]

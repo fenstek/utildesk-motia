@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: ["data", "analytics", "education", "developer-tools", "chatbot"]
 official_url: "https://github.com/shap/shap"
-popularity: 6
+popularity: 0
 tier: C
 generated_at: 2026-05-17
 ---

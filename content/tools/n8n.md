@@ -14,7 +14,7 @@ affiliate_url: "https://n8n.io"
 tier: A
 lastReviewed: 2026-05-21
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast", "ki-tools-eu-datenverarbeitung-kleine-unternehmen", "make-vs-n8n-vs-zapier-rechnungsautomatisierung", "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows"]
-popularity: 27
+popularity: 0
 description: Workflow-Automation für API-nahe Integrationen, selbst hostbare Automatisierung und KI-Agenten-Workflows.
 updated_at: 2026-06-12
 ---

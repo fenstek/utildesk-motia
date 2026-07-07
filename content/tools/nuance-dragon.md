@@ -10,7 +10,7 @@ category: AI Audio
 price_model: Kostenpflichtig, Abonnement
 tags: [voice, transcription, productivity]
 official_url: "https://dragon.nuance.com/en-us/dragon"
-popularity: 25
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 ---

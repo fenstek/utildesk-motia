@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Free
 tags: [browser, web, privacy, developer-tools]
 official_url: "https://www.firefox.com/en-US/"
-popularity: 28
+popularity: 0
 tier: C
 generated_at: 2026-05-16
 ---

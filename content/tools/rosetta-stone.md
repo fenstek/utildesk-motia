@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [education, language, learning, mobile]
 official_url: "https://www.rosettastone.com/"
-popularity: 10
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---

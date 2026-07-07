@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Je nach Plan
 tags: [assistant, automation, workflow]
 official_url: "https://www.box.com/"
-popularity: 77
+popularity: 53
 tier: C
 generated_at: 2026-05-11
 ---

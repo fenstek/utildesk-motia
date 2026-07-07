@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Abonnement
 tags: [customer-support, shared-inbox, helpdesk]
 official_url: "https://www.helpscout.com/"
-popularity: 48
+popularity: 2
 tier: C
 generated_at: 2026-05-15
 ---

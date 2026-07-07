@@ -10,7 +10,7 @@ category: AI Research
 price_model: Open Source
 tags: [research, open-source, productivity]
 official_url: "https://bibdesk.sourceforge.io/"
-popularity: 78
+popularity: 56
 tier: C
 generated_at: 2026-05-11
 ---

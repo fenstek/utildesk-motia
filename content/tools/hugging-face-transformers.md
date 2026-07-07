@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [coding, developer-tools, api, education]
 official_url: "https://huggingface.co/docs/transformers/index"
-popularity: 45
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 ---

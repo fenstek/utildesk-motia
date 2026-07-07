@@ -11,7 +11,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [ai, coding, ide, agents]
 official_url: "https://antigravity.google/"
-popularity: 53
+popularity: 9
 tier: B
 updated_at: 2026-06-11
 generated_at: 2026-05-31

@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: ["developer-tools", "api"]
 official_url: "https://hoppscotch.io/"
-popularity: 47
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 ---

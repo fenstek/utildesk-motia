@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [ai, browser, web]
 official_url: "https://browser.qq.com/"
-popularity: 14
+popularity: 0
 tier: C
 generated_at: 2026-05-13
 ---

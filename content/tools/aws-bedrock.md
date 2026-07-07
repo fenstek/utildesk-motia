@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Nutzungsbasiert
 tags: [ai, developer-tools, cloud, api]
 official_url: "https://aws.amazon.com/bedrock/"
-popularity: 82
+popularity: 61
 tier: D
 generated_at: 2026-05-17
 ---

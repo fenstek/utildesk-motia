@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: 
 tags: ["audio"]
 official_url: "https://www.assemblyai.com"
-popularity: 85
+popularity: 66
 tier: C
 generated_at: 2026-05-14
 ---
