@@ -1,5 +1,13 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-25_
+_Last updated: 2026-07-09_
+
+## 2026-07-09 - Agent Observability NotebookLM source enrichment
+
+- Refreshed the physical OptiPlex NotebookLM notebook `2b35c79f-088f-46b6-808b-47a2eaf642c5` (`Agent Observability & Debugging: Traces, Telemetry und Failure Analysis`) under `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`.
+- Added 11 practical/current observability sources around LangSmith, Arize Phoenix, OpenAI Agents SDK tracing, OpenTelemetry GenAI semantic conventions, MLflow, Temporal, and Braintrust; final NotebookLM source count is `25`, all ready.
+- Generated a German supplemental rework briefing, not a publication draft replacement: artifact `b7463874-4eff-4178-bcdb-f7b6c24cff2f` (`Rework-Briefing: Agent Observability & Debugging`).
+- Downloaded the briefing to OptiPlex at `artifacts/article_jobs/20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711/source-rework-briefing-20260709.md`.
+- Keep this candidate in the NotebookLM-first manual editorial queue; next publication attempt should use the original NotebookLM article plus this source-update briefing for factual/tooling depth, not generate a standalone replacement.
 
 ## 2026-06-25 - Coding-Agent NotebookLM duplicate merged into existing Ratgeber
 
@@ -765,3 +773,57 @@ _Last updated: 2026-06-25_
 - OpenClaw `image_generate` and Gemini CLI image paths on `jgdus-OptiPlex-3000` were checked first, but no usable Gemini image API credentials were available.
 - Final artwork was generated as real raster images in Gemini web on OptiPlex under the paid `vasjakotov11@gmail.com` profile, exported from browser blobs, cropped to remove the Gemini UI sparkle, converted to WebP, and visually checked for varied styles.
 - Updated `docs/04_operations/tool_card_illustration_registry.json` batch `2026-06-14-optiplex-gemini-web-first-3-sheet-new-illustrations`; future illustration batches should skip these slugs.
+
+## 2026-07-03 - OptiPlex newsman candidate recovery
+
+- Root cause for missing new Ratgeber candidates was split between stale/mostly published topic inputs and a NotebookLM contour mismatch on the physical OptiPlex.
+- On `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman`, `auth/optiplex_runtime.env` was corrected so paid/article NotebookLM work uses the active paid browser profile at `/home/jgdus/.notebooklm` instead of the old `.utildesk-notebooklm-paid` path. A timestamped backup was left next to the env file.
+- The `Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen` job still returned an empty NotebookLM answer with the full runner prompt. `article_execution/article_runner.py` on OptiPlex was patched with a compact fallback prompt used only after an empty first `ask`; a timestamped remote backup was left before the patch.
+- After the fallback patch, the Agent Observability job completed successfully as `review_ready`: `artifacts/article_jobs/20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711/`, with `article_quality.score=93`, `word_count=1030`, `section_count=5`, and queue status `done`.
+- Added `scripts/sheet_seed_from_newsman_daily_candidates.mjs` in the main repo as a guarded bridge from OptiPlex `data/tool_candidates/daily_candidates.jsonl` to the Google Sheet source of truth. It deduplicates against Sheet and repo slugs, validates official URLs, can optionally resolve missing URLs through the existing DDG resolver, and defaults to writing only `NEEDS_REVIEW`.
+- The 2026-07-02 newsman tool-candidate batch was filtered. Only one candidate was written to Sheet: `Tabstack`, row `1772`, slug `tabstack`, status `NEEDS_REVIEW`, official URL `https://tabstack.ai/`. Broader auto-writing was intentionally not performed because most Product Hunt items lacked stable official URLs or were ambiguous.
+
+## 2026-07-08 - opcl newsman hot-topic fishing and Telegram digest repair
+
+- Confirmed that the daily `newsman`/Telegram digest runner lives on `opcl` at `/opt/openclaw/workspace/agent-newsman`; the physical OptiPlex remains the paid NotebookLM/Gemini-browser article contour.
+- `opcl` cron was still active and sent Telegram on 2026-07-07, but the digest had degraded to deterministic fallback because LLM providers were unavailable.
+- Repaired the OpenAI OAuth path in `intel/intel_agent.py` so the runner accepts the stored OpenClaw `provider=openai` OAuth profile in addition to the older `openai-codex` provider id; dry-run verified `digest generation success mode=llm+human_editor provider=openai-codex model=gpt-5.5`.
+- Repaired the Gemini fallback dependency path by installing `@mariozechner/pi-ai@0.73.1` locally under `opcl:/opt/openclaw/workspace/agent-newsman/intel` and updating `intel/gemini_digest_call.js` to use local `node_modules` plus dynamic ESM import. Gemini still needs a dedicated `google-gemini-cli` OAuth profile before it can be used by `agent-newsman`.
+- Retargeted `opcl` hot-topic fishing: removed Habr/AI News noise from the Ratgeber harvester, added English AI feeds (`TechCrunch AI`, `The Verge AI`, `InfoQ AI ML`), expanded scoring around AI agents, memory/context, Office documents, agentic commerce, and agentic traffic, and added four incubating Ratgeber clusters.
+- The new clusters are intentionally not queued yet because the stricter readiness gate requires at least three source families. Current incubating clusters: `agentic_document_office`, `shared_ai_workspaces_memory`, `always_on_research_agents`, and `agentic_traffic_visibility`.
+
+## 2026-07-08 - Search recovery live audit and compact sitemap resubmission
+
+- Added `docs/04_operations/search_recovery_action_plan_2026-07-08.md` from the Gemini Pro SEO strategy discussion: no domain change, no broad sitemap, focus on 100-ish perfect URLs and deep Ratgeber clusters.
+- Ran a live focus sitemap audit against production. `robots.txt` advertises only `https://tools.utildesk.de/sitemap.xml`; `sitemap.xml`, `sitemap-focus.xml`, and `sitemap-bing.xml` each returned 116 URLs; all 116 unique focus URLs passed status/canonical/robots/X-Robots checks with zero live issues.
+- Verified source-of-truth alignment: `site/scripts/generate_sitemap.mjs`, `site/src/lib/searchIndexPolicy.mjs`, `site/src/layouts/BaseLayout.astro`, and `site/public/robots.txt` still support the compact sitemap plus Googlebot-specific staging contract.
+- Queried GSC through the `utildesk` service account. Google has freshly downloaded `https://tools.utildesk.de/sitemap.xml` with `submitted=116`, `warnings=0`, `errors=0`, but still reports `indexed=0`; representative core pages are `Crawled - currently not indexed`, while newer Ratgeber pages are still `URL is unknown to Google`.
+- Resubmitted the official Google sitemap through GSC API and submitted all 116 focus URLs through IndexNow to the global endpoint and Bing endpoint; both IndexNow endpoints returned HTTP 200.
+- Cleaned Bing Webmaster feeds: explicitly submitted `https://tools.utildesk.de/sitemap-focus.xml`, removed the stray `sitemap-bing.xml` feed entry that showed old broad metadata, and confirmed final Bing feed readback has one `Success` feed with `UrlCount=116`.
+- Wrote the detailed status report to `docs/04_operations/search_recovery_live_audit_2026-07-08.md`. Current interpretation: the active problem is Google trust/discovery/reprocessing lag, not a live noindex/canonical/sitemap technical block.
+
+## 2026-07-08 - OptiPlex Newsman source inbox
+
+- Added a small source inbox on the physical OptiPlex at `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman/scripts/source_inbox.py`.
+- The inbox stores manual/Perplexity/Reddit URL signals in `data/source_inbox/source_inbox.jsonl`, canonicalizes and deduplicates URLs, limits Reddit to selected AI/dev subreddits, and exports harvester-compatible JSONL to `data/source_inbox/source_inbox_candidates.jsonl`.
+- Habr was deliberately removed from automatic fetch after live checks showed its `/en/rss/...` feeds returning Russian `/ru/` material. Keep Habr manual-only for concrete international AI/dev links, not as a broad automated source.
+- Usage docs live on OptiPlex at `docs/source_inbox.md`; the existing opcl newsman/harvester can consume the exported file through `scripts/ratgeber_topic_harvester.py --candidates data/source_inbox/source_inbox_candidates.jsonl`.
+- Added OptiPlex wrapper `scripts/run_source_inbox_fetch.sh`, which runs guarded Reddit source fetches, refreshes the candidates JSONL, and writes `logs/source_inbox_fetch_*.log`.
+- Live verification filled the practical inbox with 8 `Reddit LocalLLaMA` signals and 8 exported candidate rows. Other configured Reddit feeds currently return HTTP 429 from the OptiPlex IP, so the wrapper uses delays and should be run gently rather than spammed.
+- Expanded the OptiPlex source inbox fetcher with additional fishing sources: Hacker News AI/LLM via `hnrss.org`, arXiv `cs.AI`/`cs.CL`, Hugging Face Blog, Lobsters AI, Simon Willison, Latent Space, and a small GitHub Trending Daily parser for AI/open-source repositories.
+- Added noise gates so Reddit megathread/moderator/support/usage-limit posts and generic non-AI web-feed items are kept out of the harvester export. Live verification after the expansion produced 62 raw inbox rows and 56 valid exported candidate rows.
+
+## 2026-07-08 - NotebookLM seed for multi-model coding workflows
+
+- Created a paid-profile NotebookLM research notebook on the physical OptiPlex for `Multi-Model Coding Workflows: Wenn Codex, Gemini und Claude sich gegenseitig prüfen`.
+- Notebook id: `7dcc942f-d5f8-46ec-af8c-fc3eaa923f4e`; it uses `/home/jgdus/.notebooklm` and contains 11 ready sources, including Addy Osmani's 2026 coding workflow article, VS Code multi-agent development, MindStudio multi-model workflow, HN Mysti, several Reddit workflow discussions, DeployHQ/Tessl CLI comparisons, and an internal non-personal Utildesk workflow note.
+- Generated completed NotebookLM artifacts: research briefing `3aa9bdfb-722b-4194-b04a-c1644b492ed7` and article draft `2f61f811-69c6-4e16-9a35-ad084c4c65b5` (`Codex fragt Gemini: Warum Multi-Model-Reviews beim Coding nützlich werden`).
+- Downloaded the artifacts to OptiPlex at `artifacts/notebooklm_topic_seeds_20260708/multi-model-coding-workflows/research-briefing.md` and `article-draft.md`.
+- Registered the topic in `data/article_jobs/notebooklm_research_topics.json` with `notebooklm_home=/home/jgdus/.notebooklm`; a dry-run of `scripts/notebooklm_research_to_article_jobs.py --min-sources 8` confirms it can create a pending workflow-article job with 10 URL sources, but no pending job was created yet.
+
+## 2026-07-09 - Ratgeber Agent Observability publication
+
+- Published the NotebookLM-first Ratgeber candidate `Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen` in DE/EN with a full manual editorial pass.
+- The article uses the OptiPlex NotebookLM job `20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711` plus the refreshed source briefing `source-rework-briefing-20260709.md`.
+- Replaced the old generic visual direction with two distinct Gemini Web raster illustrations generated on the physical OptiPlex paid `vasjakotov11@gmail.com` browser profile, cropped to remove the Gemini watermark, and exported as WebP.
+- The text grounds the topic in OpenAI Agents SDK tracing, LangSmith, Phoenix/OpenInference, OpenTelemetry GenAI, MLflow, Braintrust/Temporal, Microsoft AgentRx, trust-boundary labeling, PII/ZDR caveats, and practical 30-day rollout guidance.
