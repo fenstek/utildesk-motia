@@ -797,6 +797,8 @@ _Last updated: 2026-06-25_
 ## 2026-07-08 - OptiPlex Newsman source inbox
 
 - Added a small source inbox on the physical OptiPlex at `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman/scripts/source_inbox.py`.
-- The inbox stores manual/Perplexity/Reddit/Habr EN URL signals in `data/source_inbox/source_inbox.jsonl`, canonicalizes and deduplicates URLs, rejects Cyrillic/local-Russian Habr noise, limits Reddit to selected AI/dev subreddits, and exports harvester-compatible JSONL to `data/source_inbox/source_inbox_candidates.jsonl`.
+- The inbox stores manual/Perplexity/Reddit URL signals in `data/source_inbox/source_inbox.jsonl`, canonicalizes and deduplicates URLs, limits Reddit to selected AI/dev subreddits, and exports harvester-compatible JSONL to `data/source_inbox/source_inbox_candidates.jsonl`.
+- Habr was deliberately removed from automatic fetch after live checks showed its `/en/rss/...` feeds returning Russian `/ru/` material. Keep Habr manual-only for concrete international AI/dev links, not as a broad automated source.
 - Usage docs live on OptiPlex at `docs/source_inbox.md`; the existing opcl newsman/harvester can consume the exported file through `scripts/ratgeber_topic_harvester.py --candidates data/source_inbox/source_inbox_candidates.jsonl`.
-- Verification used temporary inbox files only: Perplexity and allowed Reddit passed, Habr EN international AI/dev passed, local/vendor Habr noise was rejected, and the export produced valid `source_item_title`/`source_item_url`/`short_description_en_if_available` rows.
+- Added OptiPlex wrapper `scripts/run_source_inbox_fetch.sh`, which runs guarded Reddit source fetches, refreshes the candidates JSONL, and writes `logs/source_inbox_fetch_*.log`.
+- Live verification filled the practical inbox with 8 `Reddit LocalLLaMA` signals and 8 exported candidate rows. Other configured Reddit feeds currently return HTTP 429 from the OptiPlex IP, so the wrapper uses delays and should be run gently rather than spammed.
