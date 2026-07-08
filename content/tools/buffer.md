@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [social-media, automation, marketing, productivity]
 official_url: "https://buffer.com/"
-popularity: 51
+popularity: 37
 tier: C
 generated_at: 2026-05-11
 ---

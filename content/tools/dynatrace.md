@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Abonnement, Nutzungsbasiert, Individuelles Angebot
 tags: [monitoring, analytics, observability, enterprise]
 official_url: "https://www.dynatrace.com/"
-popularity: 24
+popularity: 8
 tier: C
 generated_at: 2026-05-15
 ---

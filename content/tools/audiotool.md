@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [music-production,audio,browser-based]
 official_url: "https://www.audiotool.com/"
-popularity: 65
+popularity: 56
 tier: C
 generated_at: 2026-05-14
 ---

@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Nutzungsbasiert
 tags: [video,workflow]
 official_url: "https://cloud.google.com/video-intelligence"
-popularity: 6
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

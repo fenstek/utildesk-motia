@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Open Source
 tags: [app-development, framework, developer-tools]
 official_url: "https://flutter.dev/"
-popularity: 17
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

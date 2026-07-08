@@ -2,17 +2,17 @@
 slug: apache-airflow
 title: Apache Airflow
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Open Source
 tags: [automation, workflow, data, open-source]
 official_url: "https://airflow.apache.org/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-10"
+popularity: 62
+tier: C
+generated_at: 2026-05-10
 ---
 # Apache Airflow
 

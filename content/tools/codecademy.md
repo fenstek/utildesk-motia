@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Freemium
 tags: [education, developer-tools, coding, learning]
 official_url: "https://www.codecademy.com/"
-popularity: 40
+popularity: 27
 tier: D
 generated_at: 2026-05-11
 ---

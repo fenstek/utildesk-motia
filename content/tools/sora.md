@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: 
 tags: ["video"]
 official_url: "https://openai.com/sora"
-popularity: 0
+popularity: 79
 tier: C
 generated_at: 2026-05-17
 updated_at: 2026-06-11

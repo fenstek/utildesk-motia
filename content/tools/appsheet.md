@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [no-code, app-development, workflow]
 official_url: "https://about.appsheet.com/home/"
-popularity: 67
+popularity: 59
 tier: C
 generated_at: 2026-05-14
 ---

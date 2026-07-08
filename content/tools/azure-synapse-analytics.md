@@ -2,17 +2,17 @@
 slug: azure-synapse-analytics
 title: Azure Synapse Analytics
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Infrastructure"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [analytics, data-warehouse, azure]
 official_url: "https://azure.microsoft.com/en-us/products/synapse-analytics/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-18"
+popularity: 51
+tier: C
+generated_at: 2026-05-18
 ---
 # Azure Synapse Analytics
 

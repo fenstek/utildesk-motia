@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: []
 official_url: "https://atlasti.com/"
-popularity: 65
+popularity: 57
 ---
 
 # Atlas.ti

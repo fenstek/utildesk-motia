@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [design, image, automation, productivity]
 official_url: "https://www.befunky.com/"
-popularity: 56
+popularity: 46
 tier: D
 generated_at: 2026-05-11
 ---

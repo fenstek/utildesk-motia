@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [ai, presentation, productivity]
 official_url: "https://gamma.app/"
-popularity: 14
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 ---

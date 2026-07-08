@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: 
 tags: [customer-support, shared-inbox, communication]
 official_url: "https://front.com/"
-popularity: 14
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

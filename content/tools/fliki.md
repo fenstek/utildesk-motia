@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["video", "audio", "content"]
 official_url: "https://fliki.ai/"
 created_at: 2026-02-15
-popularity: 18
+popularity: 0
 tier: D
 generated_at: 2026-05-12
 ---

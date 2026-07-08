@@ -10,7 +10,7 @@ category: Design
 price_model: Abonnement
 tags: [photo, editing, design, ai]
 official_url: "https://www.adobe.com/products/photoshop-lightroom.html"
-popularity: 79
+popularity: 73
 tier: C
 generated_at: 2026-05-15
 ---

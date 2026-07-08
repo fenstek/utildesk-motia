@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [assistant, voice, smart-home]
 official_url: "https://developer.amazon.com/en/alexa"
-popularity: 74
+popularity: 67
 tier: C
 generated_at: 2026-05-10
 ---

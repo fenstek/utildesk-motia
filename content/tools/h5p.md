@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://h5p.org/"
-popularity: 2
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

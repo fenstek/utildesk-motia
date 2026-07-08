@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://druid.apache.org/"
-popularity: 69
+popularity: 61
 tier: C
 generated_at: 2026-05-14
 ---

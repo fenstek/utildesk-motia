@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [education, language, learning, mobile]
 official_url: "https://www.busuu.com/"
-popularity: 50
+popularity: 37
 tier: C
 generated_at: 2026-05-11
 ---

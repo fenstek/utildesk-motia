@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Abonnement, Je nach Plan
 tags: [data, workflow]
 official_url: "https://www.datadoghq.com/"
-popularity: 34
+popularity: 19
 tier: C
 generated_at: 2026-05-15
 ---

@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [notes,productivity,documents,organization]
 official_url: "https://evernote.com/"
-popularity: 23
+popularity: 6
 tier: C
 generated_at: 2026-05-16
 ---

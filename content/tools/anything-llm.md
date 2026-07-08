@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: 
 tags: ["assistant", "chatbot", "api"]
 official_url: "https://anythingllm.com"
-popularity: 70
+popularity: 62
 tier: C
 generated_at: 2026-05-10
 ---
