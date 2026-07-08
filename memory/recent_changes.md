@@ -1,5 +1,13 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-06-25_
+_Last updated: 2026-07-09_
+
+## 2026-07-09 - Agent Observability NotebookLM source enrichment
+
+- Refreshed the physical OptiPlex NotebookLM notebook `2b35c79f-088f-46b6-808b-47a2eaf642c5` (`Agent Observability & Debugging: Traces, Telemetry und Failure Analysis`) under `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`.
+- Added 11 practical/current observability sources around LangSmith, Arize Phoenix, OpenAI Agents SDK tracing, OpenTelemetry GenAI semantic conventions, MLflow, Temporal, and Braintrust; final NotebookLM source count is `25`, all ready.
+- Generated a German supplemental rework briefing, not a publication draft replacement: artifact `b7463874-4eff-4178-bcdb-f7b6c24cff2f` (`Rework-Briefing: Agent Observability & Debugging`).
+- Downloaded the briefing to OptiPlex at `artifacts/article_jobs/20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711/source-rework-briefing-20260709.md`.
+- Keep this candidate in the NotebookLM-first manual editorial queue; next publication attempt should use the original NotebookLM article plus this source-update briefing for factual/tooling depth, not generate a standalone replacement.
 
 ## 2026-06-25 - Coding-Agent NotebookLM duplicate merged into existing Ratgeber
 
