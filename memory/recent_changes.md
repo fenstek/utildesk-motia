@@ -820,3 +820,10 @@ _Last updated: 2026-07-09_
 - Generated completed NotebookLM artifacts: research briefing `3aa9bdfb-722b-4194-b04a-c1644b492ed7` and article draft `2f61f811-69c6-4e16-9a35-ad084c4c65b5` (`Codex fragt Gemini: Warum Multi-Model-Reviews beim Coding nützlich werden`).
 - Downloaded the artifacts to OptiPlex at `artifacts/notebooklm_topic_seeds_20260708/multi-model-coding-workflows/research-briefing.md` and `article-draft.md`.
 - Registered the topic in `data/article_jobs/notebooklm_research_topics.json` with `notebooklm_home=/home/jgdus/.notebooklm`; a dry-run of `scripts/notebooklm_research_to_article_jobs.py --min-sources 8` confirms it can create a pending workflow-article job with 10 URL sources, but no pending job was created yet.
+
+## 2026-07-09 - Ratgeber Agent Observability publication
+
+- Published the NotebookLM-first Ratgeber candidate `Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen` in DE/EN with a full manual editorial pass.
+- The article uses the OptiPlex NotebookLM job `20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711` plus the refreshed source briefing `source-rework-briefing-20260709.md`.
+- Replaced the old generic visual direction with two distinct Gemini Web raster illustrations generated on the physical OptiPlex paid `vasjakotov11@gmail.com` browser profile, cropped to remove the Gemini watermark, and exported as WebP.
+- The text grounds the topic in OpenAI Agents SDK tracing, LangSmith, Phoenix/OpenInference, OpenTelemetry GenAI, MLflow, Braintrust/Temporal, Microsoft AgentRx, trust-boundary labeling, PII/ZDR caveats, and practical 30-day rollout guidance.
