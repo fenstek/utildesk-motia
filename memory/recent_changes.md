@@ -793,3 +793,10 @@ _Last updated: 2026-06-25_
 - Resubmitted the official Google sitemap through GSC API and submitted all 116 focus URLs through IndexNow to the global endpoint and Bing endpoint; both IndexNow endpoints returned HTTP 200.
 - Cleaned Bing Webmaster feeds: explicitly submitted `https://tools.utildesk.de/sitemap-focus.xml`, removed the stray `sitemap-bing.xml` feed entry that showed old broad metadata, and confirmed final Bing feed readback has one `Success` feed with `UrlCount=116`.
 - Wrote the detailed status report to `docs/04_operations/search_recovery_live_audit_2026-07-08.md`. Current interpretation: the active problem is Google trust/discovery/reprocessing lag, not a live noindex/canonical/sitemap technical block.
+
+## 2026-07-08 - OptiPlex Newsman source inbox
+
+- Added a small source inbox on the physical OptiPlex at `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman/scripts/source_inbox.py`.
+- The inbox stores manual/Perplexity/Reddit/Habr EN URL signals in `data/source_inbox/source_inbox.jsonl`, canonicalizes and deduplicates URLs, rejects Cyrillic/local-Russian Habr noise, limits Reddit to selected AI/dev subreddits, and exports harvester-compatible JSONL to `data/source_inbox/source_inbox_candidates.jsonl`.
+- Usage docs live on OptiPlex at `docs/source_inbox.md`; the existing opcl newsman/harvester can consume the exported file through `scripts/ratgeber_topic_harvester.py --candidates data/source_inbox/source_inbox_candidates.jsonl`.
+- Verification used temporary inbox files only: Perplexity and allowed Reddit passed, Habr EN international AI/dev passed, local/vendor Habr noise was rejected, and the export produced valid `source_item_title`/`source_item_url`/`short_description_en_if_available` rows.
