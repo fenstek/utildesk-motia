@@ -10,7 +10,7 @@ category: AI Image
 price_model: Abonnement
 tags: [booking, scheduling, saas]
 official_url: "https://bookafy.com/"
-popularity: 54
+popularity: 41
 tier: C
 generated_at: 2026-05-11
 ---

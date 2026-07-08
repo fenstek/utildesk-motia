@@ -10,7 +10,7 @@ category: Automatisierung
 price_model: Je nach Plan
 tags: [ai, automation, workflow, no-code]
 official_url: "https://www.gumloop.com/"
-popularity: 3
+popularity: 0
 tier: A
 lastReviewed: 2026-05-12
 mentionedIn: ["beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast"]

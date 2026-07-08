@@ -10,7 +10,7 @@ category: Marketing & Vertrieb
 price_model: Abonnement
 tags: [translation, localization, seo, marketing]
 official_url: "https://www.weglot.com/"
-popularity: 83
+popularity: 77
 tier: D
 generated_at: 2026-05-18
 ---

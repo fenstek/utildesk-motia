@@ -10,7 +10,7 @@ category: AI Agents
 price_model: 
 tags: [assistant, automation]
 official_url: "https://www.steinberg.net/cubase/"
-popularity: 36
+popularity: 21
 tier: C
 generated_at: 2026-05-11
 ---

@@ -2,17 +2,17 @@
 slug: deepgram
 title: Deepgram
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Coding"
-price_model: "Je nach Plan"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Coding
+price_model: Je nach Plan
 tags: [audio, transcription, api, developer-tools]
 official_url: "https://deepgram.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 16
+tier: C
+generated_at: 2026-05-15
 ---
 # Deepgram
 

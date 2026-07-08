@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [data-warehouse, analytics, aws]
 official_url: "https://aws.amazon.com/redshift/"
-popularity: 72
+popularity: 65
 tier: C
 generated_at: 2026-05-14
 ---

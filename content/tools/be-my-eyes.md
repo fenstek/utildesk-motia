@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Kostenlos
 tags: [assistant, automation, workflow]
 official_url: "https://be-my-eyes.com/"
-popularity: 94
+popularity: 93
 tier: C
 generated_at: 2026-05-15
 ---

@@ -10,7 +10,7 @@ category: Design
 price_model: Freemium
 tags: [ai,design,image]
 official_url: "https://www.beautyplus.com/"
-popularity: 57
+popularity: 47
 tier: C
 generated_at: 2026-05-11
 ---

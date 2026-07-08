@@ -2,17 +2,17 @@
 slug: crushon
 title: CrushOn
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Chatbots"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://crushon.ai/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-11"
+popularity: 22
+tier: C
+generated_at: 2026-05-11
 ---
 # CrushOn
 

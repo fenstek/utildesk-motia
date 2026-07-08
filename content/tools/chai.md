@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["chatbot"]
 official_url: "https://www.chai-research.com/"
 created_at: 2026-02-12
-popularity: 47
+popularity: 34
 tier: D
 generated_at: 2026-05-11
 ---

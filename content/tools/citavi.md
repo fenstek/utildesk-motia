@@ -10,7 +10,7 @@ category: AI Research
 price_model: Freemium
 tags: [reference-management, academic-research, writing]
 official_url: "https://lumivero.com/products/citavi/"
-popularity: 44
+popularity: 31
 description: Citavi ist ein Recherche- und Analysewerkzeug für Literaturverwaltung, Wissensorganisation und wissenschaftliches Schreiben mit stärkerem Struktur-Fokus.
 tier: C
 generated_at: 2026-05-11

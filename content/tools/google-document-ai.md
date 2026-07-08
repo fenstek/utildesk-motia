@@ -12,7 +12,7 @@ tags:
 official_url: "https://cloud.google.com/document-ai"
 description: Google Document AI bündelt OCR, spezialisierte Dokumentprozessoren und strukturierte Extraktion für Teams, die Dokumentdaten in Google-Cloud-Workflows verarbeiten.
 created_at: 2026-05-10
-popularity: 5
+popularity: 0
 tier: A
 lastReviewed: 2026-05-14
 mentionedIn: ["beste-ocr-apis-rechnungen-deutschland-2026", "ki-tools-eu-datenverarbeitung-kleine-unternehmen", "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr", "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich"]
