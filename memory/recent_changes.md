@@ -804,3 +804,11 @@ _Last updated: 2026-06-25_
 - Live verification filled the practical inbox with 8 `Reddit LocalLLaMA` signals and 8 exported candidate rows. Other configured Reddit feeds currently return HTTP 429 from the OptiPlex IP, so the wrapper uses delays and should be run gently rather than spammed.
 - Expanded the OptiPlex source inbox fetcher with additional fishing sources: Hacker News AI/LLM via `hnrss.org`, arXiv `cs.AI`/`cs.CL`, Hugging Face Blog, Lobsters AI, Simon Willison, Latent Space, and a small GitHub Trending Daily parser for AI/open-source repositories.
 - Added noise gates so Reddit megathread/moderator/support/usage-limit posts and generic non-AI web-feed items are kept out of the harvester export. Live verification after the expansion produced 62 raw inbox rows and 56 valid exported candidate rows.
+
+## 2026-07-08 - NotebookLM seed for multi-model coding workflows
+
+- Created a paid-profile NotebookLM research notebook on the physical OptiPlex for `Multi-Model Coding Workflows: Wenn Codex, Gemini und Claude sich gegenseitig prüfen`.
+- Notebook id: `7dcc942f-d5f8-46ec-af8c-fc3eaa923f4e`; it uses `/home/jgdus/.notebooklm` and contains 11 ready sources, including Addy Osmani's 2026 coding workflow article, VS Code multi-agent development, MindStudio multi-model workflow, HN Mysti, several Reddit workflow discussions, DeployHQ/Tessl CLI comparisons, and an internal non-personal Utildesk workflow note.
+- Generated completed NotebookLM artifacts: research briefing `3aa9bdfb-722b-4194-b04a-c1644b492ed7` and article draft `2f61f811-69c6-4e16-9a35-ad084c4c65b5` (`Codex fragt Gemini: Warum Multi-Model-Reviews beim Coding nützlich werden`).
+- Downloaded the artifacts to OptiPlex at `artifacts/notebooklm_topic_seeds_20260708/multi-model-coding-workflows/research-briefing.md` and `article-draft.md`.
+- Registered the topic in `data/article_jobs/notebooklm_research_topics.json` with `notebooklm_home=/home/jgdus/.notebooklm`; a dry-run of `scripts/notebooklm_research_to_article_jobs.py --min-sources 8` confirms it can create a pending workflow-article job with 10 URL sources, but no pending job was created yet.
