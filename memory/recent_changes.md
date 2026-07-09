@@ -1,5 +1,12 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-07-09_
+_Last updated: 2026-07-10_
+
+## 2026-07-10 - Multi-model coding workflows Ratgeber publication
+
+- Took the physical OptiPlex NotebookLM draft `20260708-multi-model-coding-workflows-wenn-codex-gemini-und-claude-sich-gegenseit-workflow_article-28c6dad5` as the source, then manually rewrote and fact-checked it into the DE/EN Ratgeber article `multi-model-coding-workflows-codex-gemini-claude-code-review`.
+- Removed unsupported adoption, cost-saving and model-personality claims from the draft. The published article instead grounds the workflow in explicit roles, small diffs, cold review, test evidence, isolated Git worktrees, restricted permissions and human merge ownership.
+- Added internal links to OpenAI Codex, Claude, Gemini, GitHub Copilot and Cursor, plus related Ratgeber clusters on coding agents, AI code review, developer workflows and agent observability.
+- Generated two visibly distinct final raster illustrations directly with OpenAI image generation: an editorial screenprint-and-gouache cover and a documentary-style review-workbench scene. Both were inspected, converted to compressed `1536x1024` WebP, and stripped of embedded metadata before being placed under `content/images/ratgeber/`.
 
 ## 2026-07-09 - Agent Observability NotebookLM source enrichment
 
