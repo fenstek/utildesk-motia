@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: ["ai", "writing", "analytics", "productivity", "creative"]
 official_url: "https://aiseo.ai/"
-popularity: 69
+popularity: 0
 description: AISEO ist ein KI-Schreib- und SEO-Tool für Content-Entwürfe, Optimierung, Paraphrasen und suchorientierte Texte.
 tier: C
 generated_at: 2026-05-10

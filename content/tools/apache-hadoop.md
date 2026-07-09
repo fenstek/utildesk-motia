@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Open Source
 tags: [data, analytics, open-source, developer-tools]
 official_url: "https://hadoop.apache.org/"
-popularity: 96
+popularity: 78
 tier: C
 generated_at: 2026-05-14
 ---

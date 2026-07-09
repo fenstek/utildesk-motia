@@ -15,7 +15,7 @@ tier: A
 lastReviewed: 2026-05-11
 mentionedIn: ["ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar"]
 created_at: 2026-02-11
-popularity: 15
+popularity: 0
 ---
 # DeepMind
 

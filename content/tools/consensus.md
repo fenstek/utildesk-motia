@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["ai", "research", "science"]
 official_url: "https://consensus.app/"
 created_at: 2026-02-14
-popularity: 25
+popularity: 0
 description: Consensus ist ein Recherche- und Analysewerkzeug für KI-gestützte Suche nach wissenschaftlicher Evidenz und schnellen Studienantworten.
 tier: A
 lastReviewed: 2026-05-28

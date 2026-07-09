@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Je nach Plan
 tags: [ai, chatbot]
 official_url: "https://ernie.baidu.com/"
-popularity: 7
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

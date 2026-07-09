@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [database, analytics, open-source, developer-tools]
 official_url: "https://duckdb.org/"
-popularity: 9
+popularity: 0
 tier: D
 generated_at: 2026-05-16
 ---

@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Freemium
 tags: [video-editing,mobile,creative-tools]
 official_url: "https://www.kinemaster.com/"
-popularity: 87
+popularity: 51
 tier: D
 generated_at: 2026-05-12
 ---

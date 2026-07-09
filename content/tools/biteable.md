@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: [video,marketing,ai-video]
 official_url: "https://biteable.com/"
-popularity: 43
+popularity: 0
 tier: D
 generated_at: 2026-05-11
 ---

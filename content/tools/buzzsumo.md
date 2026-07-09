@@ -10,7 +10,7 @@ category: AI Research
 price_model: Je nach Plan
 tags: [content-marketing, seo, research]
 official_url: "https://buzzsumo.com/"
-popularity: 36
+popularity: 0
 tier: C
 generated_at: 2026-05-11
 ---

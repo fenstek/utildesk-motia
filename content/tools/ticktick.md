@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Freemium
 tags: [tasks, calendar, productivity, planning]
 official_url: "https://ticktick.com/"
-popularity: 0
+popularity: 12
 tier: D
 generated_at: 2026-05-25
 ---

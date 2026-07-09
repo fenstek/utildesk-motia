@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [assistant, automation]
 official_url: "https://clickup.com/"
-popularity: 28
+popularity: 0
 updated_at: 2026-05-21
 tier: C
 generated_at: 2026-05-21
