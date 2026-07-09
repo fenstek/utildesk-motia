@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [data, analytics, automation, productivity]
 official_url: "https://aws.amazon.com/comprehend/"
-popularity: 66
+popularity: 0
 tier: C
 generated_at: 2026-05-10
 ---

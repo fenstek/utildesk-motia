@@ -5,7 +5,7 @@ category: AI
 price_model: Freemium
 tags: [ai, assistant, automation]
 official_url: "https://buffer.com/"
-popularity: 37
+popularity: 0
 ---
 
 # Buffer

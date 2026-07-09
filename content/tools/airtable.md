@@ -10,7 +10,7 @@ category: Automatisierung
 price_model: Freemium
 tags: ["data", "automation"]
 official_url: "https://airtable.com"
-popularity: 69
+popularity: 0
 updated_at: 2026-05-21
 tier: A
 lastReviewed: 2026-05-28

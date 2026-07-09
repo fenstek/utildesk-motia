@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Abonnement
 tags: [video, security, hardware, analytics]
 official_url: "https://www.dahuasecurity.com/"
-popularity: 20
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [automation, workflow, data, open-source]
 official_url: "https://airflow.apache.org/"
-popularity: 62
+popularity: 0
 tier: C
 generated_at: 2026-05-10
 ---

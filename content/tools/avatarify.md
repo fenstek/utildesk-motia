@@ -10,7 +10,7 @@ category: AI Coding
 price_model: 
 tags: [image, video, developer-tools]
 official_url: "https://github.com/alievk/avatarify-python"
-popularity: 56
+popularity: 0
 tier: C
 generated_at: 2026-05-10
 ---

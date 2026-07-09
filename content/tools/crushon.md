@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://crushon.ai/"
-popularity: 22
+popularity: 0
 tier: C
 generated_at: 2026-05-11
 ---

@@ -10,7 +10,7 @@ category: AI Agents
 price_model: Freemium
 tags: [assistant, automation, workflow]
 official_url: "https://www.brainscape.com/"
-popularity: 39
+popularity: 0
 tier: C
 generated_at: 2026-05-15
 ---

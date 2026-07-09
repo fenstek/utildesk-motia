@@ -2,17 +2,17 @@
 slug: google-patents
 title: Google Patents
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Research"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Research
 price_model: Kostenlos
 tags: [research,patents,search,innovation]
 official_url: "https://patents.google.com/"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-15"
+popularity: 55
+tier: C
+generated_at: 2026-05-15
 ---
 # Google Patents
 

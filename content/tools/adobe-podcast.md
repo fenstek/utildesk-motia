@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [audio,podcast,transcription,ai]
 official_url: "https://podcast.adobe.com/"
-popularity: 73
+popularity: 0
 tier: D
 generated_at: 2026-05-16
 ---

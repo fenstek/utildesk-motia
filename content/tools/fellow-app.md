@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: Freemium
 tags: [meetings, productivity, collaboration]
 official_url: "https://fellow.ai/"
-popularity: 3
+popularity: 0
 tier: C
 generated_at: 2026-05-12
 ---

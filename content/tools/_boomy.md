@@ -5,7 +5,7 @@ category: AI
 price_model: Je nach Plan
 tags: [assistant, automation]
 official_url: "https://boomy.com/"
-popularity: 41
+popularity: 0
 ---
 
 # Boomy

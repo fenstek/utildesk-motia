@@ -10,7 +10,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [contact-center, communication, customer-support, ai]
 official_url: "https://www.avaya.com/en/products/infinity-platform/"
-popularity: 55
+popularity: 0
 tier: C
 generated_at: 2026-05-10
 ---

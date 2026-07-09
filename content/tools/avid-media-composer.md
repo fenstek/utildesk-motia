@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Abonnement
 tags: [video, editing, production, post-production]
 official_url: "https://www.avid.com/media-composer"
-popularity: 54
+popularity: 0
 tier: D
 generated_at: 2026-05-17
 ---

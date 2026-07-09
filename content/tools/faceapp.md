@@ -10,7 +10,7 @@ category: Design
 price_model: Freemium
 tags: [ai, design, image]
 official_url: "https://www.faceapp.com/"
-popularity: 6
+popularity: 0
 tier: C
 generated_at: 2026-05-11
 ---

@@ -10,7 +10,7 @@ category: AI Infrastructure
 price_model: Nutzungsbasiert
 tags: [analytics, data-warehouse, azure]
 official_url: "https://azure.microsoft.com/en-us/products/synapse-analytics/"
-popularity: 51
+popularity: 0
 tier: C
 generated_at: 2026-05-18
 ---
