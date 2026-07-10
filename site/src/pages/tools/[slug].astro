@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContentJump from "../../components/ContentJump.astro";
 import { marked } from "marked";
+import { addContentHeadingIds, extractFirstEditorialFigure, wrapFaqSection } from "../../lib/contentNavigation";
 import { resolveLocalLogo } from "../../lib/resolveLogoPath";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
@@ -205,11 +207,16 @@ let html = marked.parse(contentWithoutAlternatives);
 
 // Remove first H1 from markdown to avoid duplicate title
 html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
-const articleHtml = ensureInlineProviderLink(
+let articleHtml = ensureInlineProviderLink(
   linkFirstParagraphMention(String(html), title, target_provider_url),
   visible_provider_url,
   target_provider_url
 );
+const extractedEditorialFigure = extractFirstEditorialFigure(articleHtml);
+const headingNavigation = addContentHeadingIds(extractedEditorialFigure.html);
+articleHtml = wrapFaqSection(headingNavigation.html, "FAQ aufklappen");
+const editorialFigureHtml = extractedEditorialFigure.figureHtml;
+const articleHeadings = headingNavigation.headings;
 
 // ── Alternatives helpers ───────────────────────────────────────────────────
 const stripMd = (text: string) =>
@@ -591,6 +598,10 @@ const softwareApplicationSchema = {
       </aside>
     </header>
 
+    {editorialFigureHtml ? (
+      <div class="akte-feature-visual" set:html={editorialFigureHtml}></div>
+    ) : null}
+
     <section class="akte-verdict-card" aria-label="Verdikt der Redaktion">
       <span class="akte-verdict-tab">Verdikt der Redaktion</span>
       <div class="akte-verdict-main">
@@ -622,6 +633,8 @@ const softwareApplicationSchema = {
         </ul>
       </div>
     </section>
+
+    <ContentJump headings={articleHeadings} locale="de" />
 
     {isCuratedTool ? (
       <p class="editorial-note">

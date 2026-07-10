@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { getEnglishToolMeta, hasEnglishToolTranslation } from "./englishContent";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "./favicon";
 import { normalizePriceModel } from "./priceModel";
@@ -16,6 +18,7 @@ export type DisplayTool = {
   price_model: string | null;
   iconUrl: string | null;
   iconFallbacks: string[];
+  editorialImage: string | null;
   tags: string[];
   rawTags: string[];
   excerpt: string;
@@ -63,6 +66,15 @@ export const resolveToolFallbackIcon = (category: string | null, tags: string[])
   return "generic";
 };
 
+const resolveEditorialImage = (slug: string) => {
+  const fileName = `${slug}-editorial.webp`;
+  const candidates = [
+    join(process.cwd(), "content", "images", "tools", fileName),
+    join(process.cwd(), "..", "content", "images", "tools", fileName),
+  ];
+  return candidates.some((candidate) => existsSync(candidate)) ? `/images/tools/${fileName}` : null;
+};
+
 export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promise<DisplayTool> => {
   const slug = String(entry.slug ?? entry.data.slug ?? "");
   const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map(String) : [];
@@ -108,6 +120,7 @@ export const buildDisplayTool = async (entry: any, locale: Locale = "de"): Promi
     price_model: priceModel,
     iconUrl,
     iconFallbacks,
+    editorialImage: resolveEditorialImage(slug),
     tags,
     rawTags,
     excerpt: description,

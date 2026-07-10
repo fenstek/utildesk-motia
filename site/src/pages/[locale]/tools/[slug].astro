@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ContentJump from "../../../components/ContentJump.astro";
 import { marked } from "marked";
+import { addContentHeadingIds, extractFirstEditorialFigure, wrapFaqSection } from "../../../lib/contentNavigation";
 import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
 import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
 import { CATEGORIES } from "../../../lib/categories";
@@ -87,6 +89,11 @@ const englishMarkdownWithoutAlternatives = englishMarkdown.replace(
 ).trim();
 let articleHtml = String(marked.parse(englishMarkdownWithoutAlternatives));
 articleHtml = articleHtml.replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
+const extractedEditorialFigure = extractFirstEditorialFigure(articleHtml);
+const headingNavigation = addContentHeadingIds(extractedEditorialFigure.html);
+articleHtml = wrapFaqSection(headingNavigation.html, "Open frequently asked questions");
+const editorialFigureHtml = extractedEditorialFigure.figureHtml;
+const articleHeadings = headingNavigation.headings;
 const featureList = buildEnglishToolFeatureList(entry);
 const faqSchema = isCuratedTool
   ? buildFaqPageSchema(extractFaqPairsFromMarkdown(englishMarkdown))
@@ -413,6 +420,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       </aside>
     </header>
 
+    {editorialFigureHtml ? (
+      <div class="akte-feature-visual" set:html={editorialFigureHtml}></div>
+    ) : null}
+
     <section class="akte-verdict-card" aria-label="Editorial verdict">
       <span class="akte-verdict-tab">Editorial verdict</span>
       <div class="akte-verdict-main">
@@ -444,6 +455,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </ul>
       </div>
     </section>
+
+    <ContentJump headings={articleHeadings} locale="en" />
 
     {isCuratedTool ? (
       <p class="editorial-note">

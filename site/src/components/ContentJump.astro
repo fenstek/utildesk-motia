@@ -1,0 +1,29 @@
+---
+import type { ContentHeading } from "../lib/contentNavigation";
+
+interface Props {
+  headings: ContentHeading[];
+  locale?: "de" | "en";
+}
+
+const { headings, locale = "de" } = Astro.props;
+const title = locale === "en" ? "On this page" : "Auf dieser Seite";
+const hint = locale === "en" ? "Jump directly to a section" : "Direkt zu einem Abschnitt springen";
+---
+
+{headings.length >= 2 ? (
+  <details class="content-jump" open>
+    <summary>
+      <span>{title}</span>
+      <small>{hint}</small>
+    </summary>
+    <nav aria-label={title}>
+      {headings.map((heading, index) => (
+        <a href={`#${heading.id}`}>
+          <span>{String(index + 1).padStart(2, "0")}</span>
+          {heading.label}
+        </a>
+      ))}
+    </nav>
+  </details>
+) : null}

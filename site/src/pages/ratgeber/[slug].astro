@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContentJump from "../../components/ContentJump.astro";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { marked } from "marked";
@@ -14,6 +15,7 @@ import {
   toAbsoluteUrl,
 } from "../../lib/siteMeta";
 import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../lib/schema";
+import { addContentHeadingIds, wrapFaqSection } from "../../lib/contentNavigation";
 
 export async function getStaticPaths() {
   const entries = await listRatgeberEntries();
@@ -54,6 +56,9 @@ articleHtml = articleHtml.replace(
   /<figure class="article-inline-image">\s*<img\b([^>]*?)src="([^"]+)"([^>]*)>\s*<\/figure>/g,
   (match, before, src, after) => localAssetExists(src) ? match : "",
 );
+const headingNavigation = addContentHeadingIds(articleHtml);
+articleHtml = wrapFaqSection(headingNavigation.html, "FAQ aufklappen");
+const articleHeadings = headingNavigation.headings;
 const title = String(data.title ?? slug);
 
 // Build lookup: tag name (lowercase) → tool href, for deduplication
@@ -222,6 +227,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </figcaption>
       </figure>
     ) : null}
+
+    <ContentJump headings={articleHeadings} locale="de" />
 
     <div class="sheet-body">
       <article class="ratgeber-prose akte-article-body sheet-prose" set:html={articleHtml}></article>
