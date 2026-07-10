@@ -53,6 +53,10 @@ Das passt zu Teams, die bereits mit kontinuierlicher Verbesserung arbeiten. Wer 
 
 Besonders relevant ist dabei die offene Anbindung an bestehende Telemetrie. Laut Anbieter ist Latitude OpenTelemetry-kompatibel und kann entweder über das SDK oder über eine vorhandene OTEL-Pipeline befüllt werden. Das senkt die Einstiegshürde für Teams, die nicht noch ein proprietäres Tracing-System einführen wollen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/latitude-editorial.webp" alt="Illustration zu Latitude: Ein Kontrollteam rekonstruiert den falschen Weg eines Agenten und führt ihn auf eine sichere Route" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Latitude bündelt mehrere Funktionen, die zusammen ein LLMOps- und Observability-Set ergeben:

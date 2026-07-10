@@ -35,6 +35,10 @@ It is also interesting for teams with agent workflows. The official positioning 
 
 It is less suitable when only a single team has a small, local need, such as simple feedback collection without connections to CRM or analytics. In that case, the feature set can feel heavier than necessary.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/propane-editorial.webp" alt="Propane illustration: fragmented customer signals grow into a shared context tree inside a botanical archive" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 Propane describes its platform in three steps: **Collect, Collaborate, Commit**.

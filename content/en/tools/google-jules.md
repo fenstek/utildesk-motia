@@ -39,6 +39,10 @@ Google Jules is especially suitable for people who regularly work with GitHub, b
 
 Jules is less suitable when the task is highly exploratory, requires many follow-up questions, or demands deep product and domain knowledge. Even for strictly regulated, especially sensitive, or highly specialized codebases, it is worth carefully checking whether the agentic cloud approach fits your security model.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-jules-editorial.webp" alt="Google Jules illustration: an autonomous mechanic maintains and verifies software modules in a glass workshop" loading="lazy" decoding="async" />
+</figure>
+
 ## Main Features
 
 Jules is designed for an end-to-end GitHub-to-PR workflow. According to the provider, the process works roughly like this:

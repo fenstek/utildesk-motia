@@ -66,6 +66,10 @@ Browser Use is especially useful for tasks that happen regularly in practice, bu
 
 In these cases, the benefit is not just “control the browser,” but “automate the workflow in a usable form.” Browser Use targets that middle ground between RPA, scripting, and agents.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/browser-use-editorial.webp" alt="Browser Use illustration: an agent guides a courier through browser gates and multi-step web obstacles" loading="lazy" decoding="async" />
+</figure>
+
 ## Key Features
 
 Browser Use includes several building blocks relevant to agentic browser automation:

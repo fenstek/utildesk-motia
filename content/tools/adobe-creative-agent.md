@@ -36,6 +36,10 @@ Adobe Creative Agent eignet sich vor allem für Menschen und Teams, die regelmä
 
 Weniger passend ist die Lösung für Nutzer, die keine Adobe-Umgebung einsetzen und auch nicht vorhaben, dorthin zu wechseln. Der Wert entsteht vor allem dann, wenn bereits Creative Cloud, Firefly oder angeschlossene Workflows vorhanden sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-creative-agent-editorial.webp" alt="Illustration zu Adobe Creative Agent: Ein Kreativteam verbindet Fotografie, Stoffe und Papierkunst zu einer gemeinsamen Kampagne" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Adobe nennt mehrere konkrete Fähigkeiten, die den Creative Agent tragen.

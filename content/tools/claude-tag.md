@@ -35,6 +35,10 @@ Typische Nutzergruppen sind:
 
 Weniger passend ist Claude Tag für sehr kleine Ad-hoc-Aufgaben, die schneller direkt beantwortet als sauber im Teamkontext umgesetzt sind. Wer keinen ernsthaften Slack-Workflow hat, wird den Mehrwert kaum voll ausschöpfen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/claude-tag-editorial.webp" alt="Illustration zu Claude Tag: Ein Team verteilt sichtbare Aufgabenpakete über gemeinsame Kanäle an einen leuchtenden Arbeitsassistenten" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Claude Tag bringt im Kern eine Reihe von agentischen Funktionen in Slack zusammen:

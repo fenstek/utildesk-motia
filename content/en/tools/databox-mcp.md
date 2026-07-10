@@ -40,6 +40,10 @@ Databox MCP is primarily a fit for teams that already work with Databox or want 
 
 It is less suitable if there is no reliable data foundation yet. Databox MCP only becomes truly useful once metrics are cleanly defined and the data sources are already connected in a reasonably structured way.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/databox-mcp-editorial.webp" alt="Databox MCP illustration: data lines from several business areas converge at one shared observation point" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 Databox describes MCP as a way to make its data available in AI tools through natural language. Based on the official product page, these are the main capabilities:

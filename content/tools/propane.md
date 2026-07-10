@@ -29,6 +29,10 @@ Auch für Teams mit Agenten-Workflows ist das interessant. Die offizielle Positi
 
 Weniger passend ist die Plattform, wenn nur ein einzelnes Team einen kleinen, lokalen Bedarf hat, etwa einfache Feedbacksammlung ohne Querverbindungen zu CRM oder Analytics. Dann kann der Funktionsumfang schneller schwerer wirken als nötig.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/propane-editorial.webp" alt="Illustration zu Propane: Verstreute Kundensignale wachsen in einem botanischen Archiv zu einem gemeinsamen Kontextbaum" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Propane beschreibt seine Plattform in drei Schritten: **Collect, Collaborate, Commit**.

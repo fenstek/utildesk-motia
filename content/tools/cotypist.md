@@ -33,6 +33,10 @@ Cotypist eignet sich vor allem für Menschen, die auf dem Mac viele kurze bis mi
 
 Weniger passend ist Cotypist vermutlich für Teams, die eine vollständige Dokumentenplattform, Kollaborationsfunktionen, Freigabeworkflows oder ein zentrales Content-Management erwarten. Auch für Nutzerinnen und Nutzer, die ausschließlich in Browser-Tools arbeiten oder plattformübergreifende Windows-/Linux-Unterstützung benötigen, ist ein macOS-zentriertes Produkt eher nur dann sinnvoll, wenn der persönliche Schreibnutzen klar überwiegt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cotypist-editorial.webp" alt="Illustration zu Cotypist: In einem stillen Dachzimmer werden unvollständige Gedanken lokal zu Papier-Vögeln ergänzt" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Cotypist dürfte sich funktional um ein Set sehr praxisnaher Schreibhilfen drehen. Auf Basis der Positionierung sind insbesondere diese Funktionen relevant:

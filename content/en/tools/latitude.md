@@ -59,6 +59,10 @@ This suits teams that already work with continuous improvement. Anyone who wants
 
 The open connection to existing telemetry is particularly relevant here. According to the provider, Latitude is OpenTelemetry-compatible and can be populated either through the SDK or through an existing OTEL pipeline. That lowers the barrier to entry for teams that do not want to introduce yet another proprietary tracing system.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/latitude-editorial.webp" alt="Latitude illustration: an operations team reconstructs an agent's wrong path and guides it onto a safe route" loading="lazy" decoding="async" />
+</figure>
+
 ## Core features
 
 Latitude combines several capabilities that together form an LLMOps and observability stack:

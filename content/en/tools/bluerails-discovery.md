@@ -51,6 +51,10 @@ In day-to-day work, the value of Bluerails Discovery likely lies where marketing
 
 In practice, the exact fit depends on whether the tool is intended more as an analysis interface, an operational control layer, or an integration layer between systems. For larger teams, it is especially important whether Discovery can be cleanly embedded into existing processes, such as campaign planning, catalog maintenance, search optimization, merchandising, or reporting. If a tool only provides isolated insights here, the value remains limited. If, on the other hand, it feeds actionable guidance into an existing commerce organization, that creates a real productivity gain.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/bluerails-discovery-editorial.webp" alt="Bluerails Discovery illustration: travelers are routed toward suitable product journeys in an Art Deco commerce station" loading="lazy" decoding="async" />
+</figure>
+
 ## Core Features
 
 Based on the available information, it would not be serious to claim exactly which individual modules Bluerails Discovery includes in detail. However, the following functional areas are plausible and typical for this product class, and they should be checked on the product page and in a demo:

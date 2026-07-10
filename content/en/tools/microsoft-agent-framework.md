@@ -42,6 +42,10 @@ Typical audiences include:
 
 It is less suitable for very small tasks that can be cleanly expressed as a normal function or rule set. The official documentation makes this point itself clear: if the problem can be solved as a classic function, that is usually the better approach.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-agent-framework-editorial.webp" alt="Microsoft Agent Framework illustration: specialized teams build a modular bridge under one shared architecture" loading="lazy" decoding="async" />
+</figure>
+
 ## Core Features
 
 According to the documentation, Microsoft Agent Framework combines several layers that are important for production-oriented agents:

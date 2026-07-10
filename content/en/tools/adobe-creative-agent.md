@@ -43,6 +43,10 @@ Adobe Creative Agent is especially suited for people and teams that regularly wo
 
 It is a less natural fit for users who do not use an Adobe environment and do not plan to move into one. The value appears primarily when Creative Cloud, Firefly, or connected workflows are already in place.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/adobe-creative-agent-editorial.webp" alt="Adobe Creative Agent illustration: a creative team combines photography, textiles and paper art into one campaign" loading="lazy" decoding="async" />
+</figure>
+
 ## Core features
 
 Adobe highlights several concrete capabilities behind Creative Agent.

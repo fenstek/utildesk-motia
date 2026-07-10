@@ -37,6 +37,10 @@ The tool is particularly useful when meetings are not only documented, but also 
 
 Mina is probably less suitable for very small meeting volumes or for teams that already have a mature system for calendar, notes, task management, and meeting documentation. In that case, the added value has to be weighed carefully against the integration effort.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mina-meeting-assistant-editorial.webp" alt="Mina Meeting Assistant illustration: an active assistant turns a team conversation directly into visible next steps" loading="lazy" decoding="async" />
+</figure>
+
 ## Key features
 
 Mina Meeting Assistant is best understood as a combination of meeting assistance, calendar proximity, and workflow support. The exact depth of individual features should be checked in the current product offering, but the positioning suggests several typical areas of responsibility:
