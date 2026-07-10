@@ -10,7 +10,7 @@ category: AI Chatbots
 price_model: 
 tags: ["assistant", "chatbot"]
 official_url: "https://openwebui.com"
-popularity: 35
+popularity: 93
 tier: C
 generated_at: 2026-05-16
 ---

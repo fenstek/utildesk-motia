@@ -10,7 +10,7 @@ category: Audio & Video
 price_model: Freemium
 tags: [ai, video]
 official_url: "https://www.vivacut.com/"
-popularity: 10
+popularity: 8
 tier: C
 generated_at: 2026-05-26
 ---

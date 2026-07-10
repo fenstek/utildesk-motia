@@ -7,7 +7,7 @@ tags: [ai-agents, observability, evaluation, llmops, developer-tools]
 official_url: "https://latitude.so/"
 tier: D
 generated_at: 2026-06-24
-popularity: 46
+popularity: 43
 updated_at: 2026-06-24
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass

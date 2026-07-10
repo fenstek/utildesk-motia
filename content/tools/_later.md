@@ -2,10 +2,10 @@
 slug: later
 title: Later
 category: AI
-price_model: "Abonnement"
+price_model: Abonnement
 tags: [assistant, automation]
 official_url: "https://later.com/"
-popularity: 0
+popularity: 45
 ---
 
 # Later

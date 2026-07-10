@@ -11,7 +11,7 @@ category: Produktivität
 price_model: Freemium
 tags: [ai, research, notes]
 official_url: "https://notebooklm.google/"
-popularity: 40
+popularity: 38
 description: NotebookLM ist ein Recherche- und Notizassistent, der Antworten aus hochgeladenen Quellen und Dokumentensammlungen ableitet.
 tier: C
 generated_at: 2026-05-28

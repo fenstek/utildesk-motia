@@ -10,7 +10,7 @@ category: AI Image
 price_model: Freemium
 tags: [design, image, automation, productivity]
 official_url: "https://pixlr.com/"
-popularity: 0
+popularity: 29
 tier: C
 generated_at: 2026-05-16
 ---
