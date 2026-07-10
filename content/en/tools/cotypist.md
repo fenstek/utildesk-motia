@@ -39,6 +39,10 @@ Cotypist is especially suitable for people who produce many short to medium-leng
 
 Cotypist is probably less suitable for teams expecting a full document platform, collaboration features, approval workflows, or central content management. It is also only likely to make sense for users who work exclusively in browser tools or need cross-platform Windows/Linux support if the personal writing benefit clearly outweighs those limitations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cotypist-editorial.webp" alt="Cotypist illustration: in a quiet attic, unfinished thoughts are completed locally into paper birds" loading="lazy" decoding="async" />
+</figure>
+
 ## Main features
 
 Cotypist is likely to revolve functionally around a set of very practical writing aids. Based on its positioning, these features are especially relevant:

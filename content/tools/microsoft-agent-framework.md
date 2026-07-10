@@ -35,6 +35,10 @@ Typische Zielgruppen sind:
 
 Weniger geeignet ist das Framework für sehr kleine Aufgaben, die sich sauber als normale Funktion oder Regelwerk abbilden lassen. Die offizielle Dokumentation macht diesen Punkt selbst deutlich: Wenn sich das Problem als klassische Funktion lösen lässt, ist das meist der bessere Weg.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-agent-framework-editorial.webp" alt="Illustration zum Microsoft Agent Framework: Spezialisierte Teams bauen unter gemeinsamer Architektur eine modulare Brücke" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Microsoft Agent Framework bündelt laut Dokumentation mehrere Ebenen, die für produktionsnahe Agenten wichtig sind:

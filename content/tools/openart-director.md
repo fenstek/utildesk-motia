@@ -36,6 +36,10 @@ OpenArt Director eignet sich vor allem für Menschen, die visuelle Inhalte häuf
 
 Weniger passend ist das Tool dort, wo exakte technische Kontrolle über jede einzelne Framespur, Audio-Mischung oder präzise Schnittlogik im Vordergrund steht. Wer ein vollwertiges Postproduktions-Setup erwartet, wird mit einem spezialisierten NLE oder Motion-Tool besser fahren. OpenArt Director ist eher ein kreativer Beschleuniger als ein Ersatz für die komplette Videopipeline.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openart-director-editorial.webp" alt="Illustration zu OpenArt Director: Ein Regisseur verbindet Wüstenstraße, Café und Hafen zu einer zusammenhängenden Filmsequenz" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Die genaue Ausprägung hängt vom jeweiligen Ausbau auf der Plattform ab, aber der Werkzeugcharakter von OpenArt Director lässt sich praktisch so einordnen:

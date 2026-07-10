@@ -1,6 +1,13 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-10_
 
+## 2026-07-10 - Latest Sheet hype tool-card illustrations
+
+- Added one story-forward OpenAI-generated raster illustration to each of the 12 manually edited DE/EN Sheet hype cards from rows `1996-2007`: `claude-tag`, `google-jules`, `microsoft-agent-framework`, `browser-use`, `openart-director`, `adobe-creative-agent`, `databox-mcp`, `latitude`, `cotypist`, `mina-meeting-assistant`, `bluerails-discovery`, and `propane`.
+- Kept every scene visually distinct: risograph, gouache, architectural watercolor, neo-noir mixed media, analog film collage, paper-cut collage, claymation, Swiss linocut poster, colored pencil, documentary magical realism, Art Deco travel poster, and botanical engraving.
+- Normalized all assets to `1280x720` WebP and inserted the shared image in both language variants before the main functions/features section, with language-specific descriptive alt text.
+- Registered the batch in `docs/04_operations/tool_card_illustration_registry.json`; future illustration batches must skip these slugs.
+
 ## 2026-07-10 - Multi-model coding workflows Ratgeber publication
 
 - Took the physical OptiPlex NotebookLM draft `20260708-multi-model-coding-workflows-wenn-codex-gemini-und-claude-sich-gegenseit-workflow_article-28c6dad5` as the source, then manually rewrote and fact-checked it into the DE/EN Ratgeber article `multi-model-coding-workflows-codex-gemini-claude-code-review`.

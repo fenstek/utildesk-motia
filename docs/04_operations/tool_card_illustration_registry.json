@@ -2858,6 +2858,48 @@
         "content/images/tools/salesforce-einstein-editorial.webp",
         "content/images/tools/opentoonz-editorial.webp"
       ]
+    },
+    {
+      "id": "2026-07-10-latest-sheet-hype-12-openai-imagegen-illustrations",
+      "status": "implemented",
+      "languages": [
+        "de",
+        "en"
+      ],
+      "image_format": "webp",
+      "image_width_px": 1280,
+      "image_height_px": 720,
+      "placement": "mid-article image-only figure before the main functions/features section",
+      "model": "OpenAI built-in image generation",
+      "visual_direction": "Twelve distinct story-forward editorial scenes using risograph, gouache, architectural watercolor, neo-noir mixed media, analog film collage, paper-cut collage, claymation, Swiss linocut poster, colored pencil, documentary magical realism, Art Deco travel poster, and botanical engraving. No logos, readable text, UI screenshots, dashboards, or watermarks.",
+      "slugs": [
+        "claude-tag",
+        "google-jules",
+        "microsoft-agent-framework",
+        "browser-use",
+        "openart-director",
+        "adobe-creative-agent",
+        "databox-mcp",
+        "latitude",
+        "cotypist",
+        "mina-meeting-assistant",
+        "bluerails-discovery",
+        "propane"
+      ],
+      "images": [
+        "content/images/tools/claude-tag-editorial.webp",
+        "content/images/tools/google-jules-editorial.webp",
+        "content/images/tools/microsoft-agent-framework-editorial.webp",
+        "content/images/tools/browser-use-editorial.webp",
+        "content/images/tools/openart-director-editorial.webp",
+        "content/images/tools/adobe-creative-agent-editorial.webp",
+        "content/images/tools/databox-mcp-editorial.webp",
+        "content/images/tools/latitude-editorial.webp",
+        "content/images/tools/cotypist-editorial.webp",
+        "content/images/tools/mina-meeting-assistant-editorial.webp",
+        "content/images/tools/bluerails-discovery-editorial.webp",
+        "content/images/tools/propane-editorial.webp"
+      ]
     }
   ]
 }

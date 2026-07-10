@@ -33,6 +33,10 @@ Databox MCP passt vor allem zu Teams, die bereits mit Databox arbeiten oder eine
 
 Weniger passend ist es, wenn noch keine verlässliche Datenbasis existiert. Databox MCP entfaltet seinen Nutzen erst dann richtig, wenn Metriken sauber definiert sind und die Datenquellen bereits halbwegs strukturiert angebunden sind.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/databox-mcp-editorial.webp" alt="Illustration zu Databox MCP: Datenleitungen aus mehreren Geschäftsbereichen laufen in einem gemeinsamen Beobachtungspunkt zusammen" loading="lazy" decoding="async" />
+</figure>
+
 ## Hauptfunktionen
 
 Databox beschreibt MCP als Weg, die eigenen Daten in AI-Tools per natürlicher Sprache nutzbar zu machen. Aus der offiziellen Produktseite lassen sich vor allem diese Funktionen ableiten:

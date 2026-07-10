@@ -42,6 +42,10 @@ Typical user groups include:
 
 Claude Tag is less suitable for very small ad hoc tasks that are faster to answer directly than to implement cleanly in a team context. Anyone without a serious Slack workflow will hardly be able to fully realize the value.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/claude-tag-editorial.webp" alt="Claude Tag illustration: a team routes visible task parcels through shared channels to a luminous work assistant" loading="lazy" decoding="async" />
+</figure>
+
 ## Core Features
 
 At its core, Claude Tag combines a range of agentic functions inside Slack:
