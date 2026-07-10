@@ -841,3 +841,13 @@ _Last updated: 2026-07-10_
 - The article uses the OptiPlex NotebookLM job `20260703-agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-m-explainer-252b9711` plus the refreshed source briefing `source-rework-briefing-20260709.md`.
 - Replaced the old generic visual direction with two distinct Gemini Web raster illustrations generated on the physical OptiPlex paid `vasjakotov11@gmail.com` browser profile, cropped to remove the Gemini watermark, and exported as WebP.
 - The text grounds the topic in OpenAI Agents SDK tracing, LangSmith, Phoenix/OpenInference, OpenTelemetry GenAI, MLflow, Braintrust/Temporal, Microsoft AgentRx, trust-boundary labeling, PII/ZDR caveats, and practical 30-day rollout guidance.
+
+## 2026-07-10 - KI-Blatt safe design stabilization
+
+- Preserved the existing KI-Blatt newspaper identity and added a narrow `decision-refinements.css` layer instead of extending the historical override passes in `global.css`.
+- Removed the duplicate light-header navigation while keeping the black edition bar as the primary navigation. Replaced the misleading `⌘ K -> llms.txt` link with a real DE/EN command search dialog; `llms.txt` and JSON Feed remain explicitly available as machine links.
+- Normalized display typography: desktop Tool-Akte H1 now tops out at 88px instead of roughly 131px, inventory at 76px, and Ratgeber/article headings at 60px; mobile remains in the established 31-39px reading range.
+- Tool editorial illustrations are extracted from the Markdown body and shown immediately after the masthead, without duplication. Illustrated catalog cards also expose their artwork in tile view.
+- Added generated H2 anchors, compact DE/EN page navigation, and mobile-collapsed FAQ sections to tool dossiers and Ratgeber articles.
+- Increased initial tool results to 12 on phones, 16 on tablets, 18 in desktop list view, and 24 in desktop tile view. Ratgeber archive now progressively reveals 8 cards on phones or 12 on desktop while keeping all cards in the static HTML.
+- Final QA covered DE/EN tool index, tool detail, Ratgeber archive/article, homepage, command-search submission, load-more interactions, artwork placement, and 390px mobile geometry. No tested route had horizontal overflow; the full 3450-page Astro build and editorial/English checks passed.

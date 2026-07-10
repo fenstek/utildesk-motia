@@ -173,7 +173,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         </select>
       </div>
       <div class="inv-mode-right">
-        <span id="tools-result-count">Anzeige · 0 von {enabledTools.length.toLocaleString("de-DE")}</span>
+        <span id="tools-result-count">Index · {enabledTools.length.toLocaleString("de-DE")} Tools</span>
         <a href="/api/tools.json">⇩ JSON</a>
       </div>
     </div>
@@ -246,7 +246,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       return (
       <a
         href={`/tools/${tool.slug}/`}
-        class:list={["card", "tool-card", "inv-row", `inv-row-verdict-${verdict.value}`]}
+        class:list={["card", "tool-card", "inv-row", `inv-row-verdict-${verdict.value}`, { "has-editorial-art": Boolean(tool.editorialImage) }]}
         data-title={tool.title.toLowerCase()}
         data-slug={tool.slug.toLowerCase()}
         data-tags={tool.tags.map((tag) => tag.toLowerCase()).join(",")}
@@ -257,6 +257,11 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         data-added-order={tool.addedAtOrderMs}
         data-popularity={tool.popularity}
       >
+        {tool.editorialImage ? (
+          <span class="inv-row-art" aria-hidden="true">
+            <img src={tool.editorialImage} alt="" loading="lazy" decoding="async" />
+          </span>
+        ) : null}
         <span class="inv-row-no">{String(idx + 1).padStart(3, "0")}</span>
         <div class="tool-header">
           <div class="tool-image">
@@ -399,11 +404,16 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       // Read URL params ?tag= and ?sort=
       const urlParams = new URLSearchParams(window.location.search);
       const initialTag = urlParams.get('tag');
+      const initialQuery = urlParams.get('q');
       const initialSort = urlParams.get('sort');
       const initialView = urlParams.get('view');
       const initialLetter = urlParams.get('letter');
       const initialVerdicts = urlParams.get('verdict');
       const initialCategories = urlParams.get('category');
+
+      if (initialQuery && searchInput) {
+        searchInput.value = initialQuery;
+      }
 
       if (initialTag) {
         const tagSlug = initialTag
@@ -542,15 +552,10 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         });
       }
 
-      function getCols() {
-        const template = window.getComputedStyle(toolsGrid).gridTemplateColumns || '';
-        if (!template || template === 'none') return 1;
-        const cols = template.split(' ').filter(function(part) { return part.trim().length > 0; }).length;
-        return cols > 0 ? cols : 1;
-      }
-
       function getStep() {
-        return getCols() * 6;
+        if (window.matchMedia('(max-width: 760px)').matches) return 12;
+        if (window.matchMedia('(max-width: 1100px)').matches) return 16;
+        return activeView === 'tiles' ? 24 : 18;
       }
 
       // Filter + sort + pagination
@@ -631,6 +636,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         if (loadMoreBtn) {
           if (totalFiltered > limit) {
             loadMoreBtn.style.display = 'inline-flex';
+            loadMoreBtn.textContent = 'Weitere ' + Math.min(getStep(), hidden) + ' anzeigen ↓';
           } else {
             loadMoreBtn.style.display = 'none';
           }
@@ -664,8 +670,16 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
         filterTools();
       }
 
-      // Search input listener
-      searchInput.addEventListener('input', resetAndFilter);
+      // Keep command-palette searches shareable without reloading the index.
+      searchInput.addEventListener('input', function() {
+        const params = new URLSearchParams(window.location.search);
+        const query = searchInput.value.trim();
+        if (query) params.set('q', query);
+        else params.delete('q');
+        const nextUrl = params.toString() ? '/tools/?' + params.toString() : '/tools/';
+        history.replaceState(null, '', nextUrl);
+        resetAndFilter();
+      });
 
       filterButtons.forEach(function(button) {
         button.addEventListener('click', function() {

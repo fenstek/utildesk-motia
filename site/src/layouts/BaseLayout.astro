@@ -26,6 +26,7 @@ import {
 import { getLatestContentDateLabels } from "../lib/contentFreshness";
 import { getDecisionIssueCount, getDecisionIssueLabel, getDecisionIssueNavLabel } from "../lib/contentIssue";
 import "../styles/global.css";
+import "../styles/decision-refinements.css";
 
 interface Props {
 
@@ -86,6 +87,11 @@ const decisionNavHome = locale === "en" ? "Decisions" : "Entscheidungen";
 const decisionNavTools = locale === "en" ? "Tool Index" : "Tool-Index";
 const decisionNavGuides = locale === "en" ? "Guides" : "Ratgeber";
 const decisionNavMethod = locale === "en" ? "Methodology" : "Methodologie";
+const commandLabel = locale === "en" ? "Search" : "Suche";
+const commandTitle = locale === "en" ? "Find tools and guides" : "Tools und Ratgeber finden";
+const commandPlaceholder = locale === "en" ? "Tool, tag or category..." : "Tool, Tag oder Kategorie...";
+const commandSubmit = locale === "en" ? "Search index" : "Index durchsuchen";
+const commandQuickLinks = locale === "en" ? "Quick access" : "Direktzugriff";
 const decisionOldVersion = locale === "en" ? "Old version" : "Alte Version";
 const decisionDeck = locale === "en"
   ? "Editorial guides plus indexed AI tools from public sources"
@@ -389,21 +395,21 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     <a href="#main-content" class="skip-link">{ui.skipLink}</a>
 
     <nav class="ki-blatt-topbar" aria-label={locale === "en" ? "Edition context" : "Ausgabe-Kontext"}>
-      <a class={isDecisionHome ? "active" : undefined} href={homeHref}>&#x21B3; {decisionIssueNavLabel}</a>
+      <a class={isDecisionHome ? "active" : undefined} href={homeHref} data-mobile-label={locale === "en" ? "Issue" : "Ausgabe"}>&#x21B3; {decisionIssueNavLabel}</a>
       {isToolDetail ? (
-        <span class="active" aria-current="page">&#x21B3; {locale === "en" ? "Current tool file" : "Diese Tool-Akte"}</span>
+        <span class="active" aria-current="page" data-mobile-label={locale === "en" ? "Tool" : "Tool"}>&#x21B3; {locale === "en" ? "Current tool file" : "Diese Tool-Akte"}</span>
       ) : (
-        <a class={isToolInventory ? "active" : undefined} href={toolsHref}>&#x21B3; {locale === "en" ? "Inventory" : "Inventar"}</a>
+        <a class={isToolInventory ? "active" : undefined} href={toolsHref} data-mobile-label={locale === "en" ? "Tools" : "Tools"}>&#x21B3; {locale === "en" ? "Inventory" : "Inventar"}</a>
       )}
       {isRatgeberDetail ? (
-        <span class="active" aria-current="page">&#x21B3; {locale === "en" ? "Current decision" : "Diese Entscheidung"}</span>
+        <span class="active" aria-current="page" data-mobile-label={locale === "en" ? "Guide" : "Artikel"}>&#x21B3; {locale === "en" ? "Current decision" : "Diese Entscheidung"}</span>
       ) : (
-        <a class={isRatgeberIndex ? "active" : undefined} href={ratgeberHref}>&#x21B3; {locale === "en" ? "Guide archive" : "Ratgeber-Archiv"}</a>
+        <a class={isRatgeberIndex ? "active" : undefined} href={ratgeberHref} data-mobile-label={locale === "en" ? "Guides" : "Ratgeber"}>&#x21B3; {locale === "en" ? "Guide archive" : "Ratgeber-Archiv"}</a>
       )}
-      <a class={isMethodologySection ? "active" : undefined} href={methodologyHref}>&#x21B3; {locale === "en" ? "Rules" : "Methodik"}</a>
+      <a class={isMethodologySection ? "active" : undefined} href={methodologyHref} data-mobile-label={locale === "en" ? "Rules" : "Methodik"}>&#x21B3; {locale === "en" ? "Rules" : "Methodik"}</a>
     </nav>
 
-    <header class="site-header ki-blatt-header">
+    <header class="site-header ki-blatt-header" id="site-header">
       <nav class="ds-nav" aria-label={locale === "en" ? "Decision navigation" : "Entscheidungsnavigation"}>
         <div class="ds-nav-left">
           <strong>{decisionBrand}</strong>
@@ -418,7 +424,17 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         </div>
         <div class="ds-nav-right">
           <a href={languageSwitchTarget} hreflang={locale === "en" ? "de" : "en"} aria-label={ui.languageLabel}>{locale === "en" ? "DE" : "EN"}</a>
-          <a href={llmsHref}>⌘ K</a>
+          <button
+            type="button"
+            class="ds-command-button"
+            id="site-command-open"
+            data-command-open
+            aria-haspopup="dialog"
+            aria-controls="site-command"
+          >
+            <span>{commandLabel}</span>
+            <kbd>⌘ K</kbd>
+          </button>
           <button
             type="button"
             class="theme-toggle ds-theme-switch"
@@ -451,6 +467,31 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
         </div>
       )}
     </header>
+
+    <dialog class="site-command" id="site-command" aria-labelledby="site-command-title">
+      <div class="site-command-inner">
+        <div class="site-command-head">
+          <div>
+            <p class="site-command-kicker">{commandQuickLinks}</p>
+            <h2 id="site-command-title">{commandTitle}</h2>
+          </div>
+          <button type="button" class="site-command-close" data-command-close aria-label={locale === "en" ? "Close search" : "Suche schließen"}>×</button>
+        </div>
+        <form class="site-command-search" action={toolsHref} method="get" role="search">
+          <input type="search" name="q" placeholder={commandPlaceholder} autocomplete="off" data-command-input />
+          <button type="submit">{commandSubmit}</button>
+        </form>
+        <nav class="site-command-links" aria-label={commandQuickLinks}>
+          <a href={homeHref}>{decisionNavHome}</a>
+          <a href={toolsHref}>{decisionNavTools}</a>
+          <a href={ratgeberHref}>{decisionNavGuides}</a>
+          <a href={methodologyHref}>{decisionNavMethod}</a>
+        </nav>
+        <p class="site-command-note">
+          {locale === "en" ? "For machines:" : "Für Maschinen:"} <a href={llmsHref}>llms.txt</a> · <a href={feedJsonHref}>JSON Feed</a>
+        </p>
+      </div>
+    </dialog>
 
 
 
@@ -507,6 +548,41 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
     </footer>
 
 
+
+    <script is:inline>
+
+      (() => {
+        const dialog = document.getElementById("site-command");
+        if (!(dialog instanceof HTMLDialogElement)) return;
+
+        const input = dialog.querySelector("[data-command-input]");
+        const openDialog = () => {
+          if (!dialog.open) dialog.showModal();
+          window.setTimeout(() => input?.focus(), 20);
+        };
+
+        document.querySelectorAll("[data-command-open]").forEach((button) => {
+          button.addEventListener("click", openDialog);
+        });
+        dialog.querySelector("[data-command-close]")?.addEventListener("click", () => dialog.close());
+        dialog.addEventListener("click", (event) => {
+          if (event.target === dialog) dialog.close();
+        });
+        document.addEventListener("keydown", (event) => {
+          if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+            event.preventDefault();
+            openDialog();
+          }
+        });
+
+        if (window.matchMedia("(max-width: 760px)").matches) {
+          document.querySelectorAll(".content-jump[open], .content-secondary[open]").forEach((section) => {
+            section.removeAttribute("open");
+          });
+        }
+      })();
+
+    </script>
 
     <script is:inline>
 

@@ -92,12 +92,18 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   <section class="rg-list">
     {articles.length === 0 ? (
       <p class="rg-empty">Coming soon: the first guide article.</p>
-    ) : articles.map((article) => {
+    ) : articles.map((article, index) => {
       const published = article.data.date
         ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(article.data.date))
         : "";
       return (
-        <a href={`/en/ratgeber/${article.slug}/`} class="rg-card">
+        <a
+          href={`/en/ratgeber/${article.slug}/`}
+          class="rg-card"
+          data-guide-card
+          data-guide-index={index}
+          hidden={index >= 12}
+        >
           {article.data.coverImage ? (
             <div class="rg-card-figure">
               <div class="rg-media-stage">
@@ -122,7 +128,37 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       );
     })}
   </section>
+  {articles.length > 12 ? (
+    <div class="rg-loadmore">
+      <button type="button" data-guides-more>Show more guides</button>
+      <small data-guides-remaining></small>
+    </div>
+  ) : null}
 </BaseLayout>
+
+<script is:inline>
+  (() => {
+    const cards = Array.from(document.querySelectorAll('[data-guide-card]'));
+    const button = document.querySelector('[data-guides-more]');
+    const remaining = document.querySelector('[data-guides-remaining]');
+    if (!cards.length || !button) return;
+
+    const step = window.matchMedia('(max-width: 760px)').matches ? 8 : 12;
+    let visible = step;
+    const render = () => {
+      cards.forEach((card, index) => card.toggleAttribute('hidden', index >= visible));
+      const hiddenCount = Math.max(0, cards.length - visible);
+      button.style.display = hiddenCount ? 'inline-flex' : 'none';
+      button.textContent = hiddenCount ? 'Show ' + Math.min(step, hiddenCount) + ' more guides' : '';
+      if (remaining) remaining.textContent = hiddenCount ? hiddenCount + ' guides remain in the archive' : '';
+    };
+    button.addEventListener('click', () => {
+      visible += step;
+      render();
+    });
+    render();
+  })();
+</script>
 
 <style>
   .ratgeber-hero {
