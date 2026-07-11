@@ -10,7 +10,7 @@ category: AI Coding
 price_model: Je nach Plan
 tags: [audio, transcription, api, developer-tools]
 official_url: "https://deepgram.com/"
-popularity: 63
+popularity: 62
 tier: C
 generated_at: 2026-05-15
 ---

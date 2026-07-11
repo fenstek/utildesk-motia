@@ -11,7 +11,7 @@ price_model: Freemium
 tags: ["automation"]
 official_url: "https://pipedream.com/"
 created_at: 2026-02-14
-popularity: 31
+popularity: 30
 tier: C
 generated_at: 2026-05-16
 ---

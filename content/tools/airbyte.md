@@ -2,17 +2,17 @@
 slug: airbyte
 title: Airbyte
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: Entwickler-Tools
 price_model: Freemium
 tags: [data, integration, etl, open-source]
 official_url: "https://airbyte.com/"
-popularity: 0
-tier: "D"
-generated_at: "2026-05-16"
+popularity: 81
+tier: D
+generated_at: 2026-05-16
 ---
 # Airbyte
 
