@@ -5,7 +5,7 @@ category: AI
 price_model: 
 tags: [assistant, automation]
 official_url: "https://pixlr.com/"
-popularity: 29
+popularity: 28
 ---
 
 # Pixlr

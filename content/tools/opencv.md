@@ -2,18 +2,18 @@
 slug: opencv
 title: OpenCV
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
+editorial_reviewed_by: Utildesk manual editorial pass
 editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "AI Chatbots"
-price_model: "Freemium"
+editorial_status: manual_polished
+editorial_batch: 2026-05-31-complete-tool-card-polish
+category: AI Chatbots
+price_model: Freemium
 tags: ["chatbot", "video"]
-official_url: 'https://opencv.org/'
-created_at: "2026-02-13"
-popularity: 0
-tier: "C"
-generated_at: "2026-05-13"
+official_url: "https://opencv.org/"
+created_at: 2026-02-13
+popularity: 33
+tier: C
+generated_at: 2026-05-13
 ---
 # OpenCV
 

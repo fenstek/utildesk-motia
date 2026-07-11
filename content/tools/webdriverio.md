@@ -10,7 +10,7 @@ category: Entwickler-Tools
 price_model: Open Source
 tags: [testing, automation, developer-tools, browser]
 official_url: "https://webdriver.io/"
-popularity: 5
+popularity: 4
 tier: D
 generated_at: 2026-05-17
 ---
