@@ -5,6 +5,7 @@ import { listRatgeberEntries } from "../../../lib/ratgeber";
 import { compareToolsByNewest } from "../../../lib/toolAddedAt";
 import { listDisplayTools, type DisplayTool } from "../../../lib/toolDisplay";
 import { getToolEditorialVerdict } from "../../../lib/toolVerdict";
+import { selectSearchFocusTools } from "../../../lib/searchFocus.mjs";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
@@ -17,6 +18,7 @@ export function getStaticPaths() {
 }
 
 const enabledTools = [...(await listDisplayTools("en"))].sort(compareToolsByNewest("en"));
+const initialTools = selectSearchFocusTools(enabledTools, 36);
 const issueNo = getDecisionIssueNumber();
 const recentRatgeber = (await listRatgeberEntries("en")).slice(0, 3);
 
@@ -73,7 +75,7 @@ const itemListSchema = {
   "@type": "ItemList",
   name: "Utildesk AI Tools",
   numberOfItems: enabledTools.length,
-  itemListElement: enabledTools.slice(0, 200).map((tool, index) => ({
+  itemListElement: initialTools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.title,
@@ -236,8 +238,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       </div>
     </aside>
 
-    <div class="tools-grid inv-register inv-view-register" id="tools-grid">
-      {enabledTools.map((tool, idx) => {
+    <div class="tools-grid inv-register inv-view-register" id="tools-grid" data-inventory-api="/en/api/tools.json" data-inventory-locale="en">
+      {initialTools.map((tool, idx) => {
         const verdict = getDisplayToolVerdict(tool, idx);
         const categoryValue = (tool.category || "Unsorted").toLowerCase();
         const priceModel = tool.priceModel || tool.price_model;
@@ -340,6 +342,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </section>
   )}
 
+  <script src="../../../scripts/inventoryClient.ts"></script>
   <script is:inline>
     (function() {
       const routeBase = '/en/tools/';
@@ -351,7 +354,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       const noResults = document.getElementById('no-results');
       const loadMoreBtn = document.getElementById('load-more-btn');
       const hiddenCountInfo = document.getElementById('hidden-count-info');
-      const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+      let cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
       const filterButtons = Array.from(document.querySelectorAll('.inv-filter-option'));
       const viewButtons = Array.from(document.querySelectorAll('[data-view-mode]'));
       const jumpLinks = Array.from(document.querySelectorAll('.inv-jump-letter'));
@@ -614,6 +617,11 @@ const breadcrumbSchema = buildBreadcrumbSchema([
           link.setAttribute('aria-pressed', Boolean(activeLetter && activeLetter === letter && available) ? 'true' : 'false');
         });
       }
+
+      window.addEventListener('utildesk:inventory-ready', function() {
+        cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+        filterTools();
+      });
 
       function resetAndFilter() {
         pageBlocks = 1;

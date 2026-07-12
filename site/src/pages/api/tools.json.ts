@@ -1,12 +1,10 @@
-import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
-import { buildToolCatalogItem } from "../../lib/machineReadable";
+import { listDisplayTools } from "../../lib/toolDisplay";
 import { SITE_NAME, SITE_URL } from "../../lib/siteMeta";
 
 export const prerender = true;
 
 export async function GET() {
-  const entries = await listActiveToolEntries();
-  const items = entries.map((entry) => buildToolCatalogItem(entry));
+  const items = await listDisplayTools("de");
 
   const payload = {
     version: 1,

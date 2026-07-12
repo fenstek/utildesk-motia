@@ -1,0 +1,2700 @@
+{
+  "de": {
+    "langchain": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      },
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent Security und MCP-Governance: Welche Guardrails Unternehmen jetzt brauchen",
+        "excerpt": "MCP macht KI-Agenten anschlussfähig an Tools und Daten. Ohne Autorisierung, Audit-Trails und Least Privilege wird daraus schnell ein neues Schatten-IT-Risiko."
+      },
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
+        "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
+        "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlich wird",
+        "excerpt": "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search für KI-Agenten: Wie Tools Repository-Kontext token-effizient machen",
+        "excerpt": "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis",
+        "excerpt": "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
+        "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
+        "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: Was das Tool im Alltag wirklich taugt",
+        "excerpt": "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
+        "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste",
+        "excerpt": "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
+        "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "langgraph": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      },
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      }
+    ],
+    "openai-gpt-agents": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      },
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent Security und MCP-Governance: Welche Guardrails Unternehmen jetzt brauchen",
+        "excerpt": "MCP macht KI-Agenten anschlussfähig an Tools und Daten. Ohne Autorisierung, Audit-Trails und Least Privilege wird daraus schnell ein neues Schatten-IT-Risiko."
+      }
+    ],
+    "microsoft-agent-framework": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      }
+    ],
+    "pydantic-ai": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      }
+    ],
+    "crew-ai": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      },
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent Security und MCP-Governance: Welche Guardrails Unternehmen jetzt brauchen",
+        "excerpt": "MCP macht KI-Agenten anschlussfähig an Tools und Daten. Ohne Autorisierung, Audit-Trails und Least Privilege wird daraus schnell ein neues Schatten-IT-Risiko."
+      },
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
+        "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search für KI-Agenten: Wie Tools Repository-Kontext token-effizient machen",
+        "excerpt": "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis",
+        "excerpt": "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
+        "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
+        "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      },
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: Was das Tool im Alltag wirklich taugt",
+        "excerpt": "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste",
+        "excerpt": "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
+        "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "latitude": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent Observability und Debugging: Wie Teams KI-Agenten nachvollziehbar machen",
+        "excerpt": "KI-Agenten scheitern selten nur an einem HTTP-Fehler. Teams brauchen Traces, Tool-Kontext, Datenherkunft und klare Freigaben, um Agenten in Produktion wirklich zu verstehen."
+      }
+    ],
+    "openai-api": [
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent Security und MCP-Governance: Welche Guardrails Unternehmen jetzt brauchen",
+        "excerpt": "MCP macht KI-Agenten anschlussfähig an Tools und Daten. Ohne Autorisierung, Audit-Trails und Least Privilege wird daraus schnell ein neues Schatten-IT-Risiko."
+      },
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
+        "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
+      },
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano",
+        "excerpt": "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
+      }
+    ],
+    "chatgpt": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
+        "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
+        "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude und Gemini: Drei KI-Assistenten, drei sehr unterschiedliche Stärken",
+        "excerpt": "Ein praxisnaher Vergleich der drei größten KI-Assistenten für Schreiben, Recherche, Coding und Datenschutz."
+      },
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternativen: Welche KI-Assistenten je nach Aufgabe besser passen",
+        "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
+      },
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "KI-Tools ohne Anmeldung: bequem, aber selten wirklich privat",
+        "excerpt": "KI-Tools ohne Anmeldung sparen Zeit, sind aber kein Datenschutzsiegel. Wann No-Login sinnvoll ist — und wann Teams besser kontrollierte Tools nutzen."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      }
+    ],
+    "perplexity": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
+        "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
+        "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude und Gemini: Drei KI-Assistenten, drei sehr unterschiedliche Stärken",
+        "excerpt": "Ein praxisnaher Vergleich der drei größten KI-Assistenten für Schreiben, Recherche, Coding und Datenschutz."
+      },
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternativen: Welche KI-Assistenten je nach Aufgabe besser passen",
+        "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
+      },
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "KI-Tools ohne Anmeldung: bequem, aber selten wirklich privat",
+        "excerpt": "KI-Tools ohne Anmeldung sparen Zeit, sind aber kein Datenschutzsiegel. Wann No-Login sinnvoll ist — und wann Teams besser kontrollierte Tools nutzen."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
+        "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      }
+    ],
+    "gemini": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
+        "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
+        "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude und Gemini: Drei KI-Assistenten, drei sehr unterschiedliche Stärken",
+        "excerpt": "Ein praxisnaher Vergleich der drei größten KI-Assistenten für Schreiben, Recherche, Coding und Datenschutz."
+      },
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternativen: Welche KI-Assistenten je nach Aufgabe besser passen",
+        "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding-Agenten 2026: Codex CLI, Claude Code und Gemini CLI im Entwickler-Workflow",
+        "excerpt": "Codex CLI, Claude Code und Gemini CLI verschieben KI-Coding vom Autocomplete zur delegierten Aufgabe. Der Vergleich zeigt, wo welches Werkzeug in den Workflow passt."
+      },
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
+        "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
+      },
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano",
+        "excerpt": "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: Wie Codex, Gemini und Claude sich sinnvoll gegenpruefen",
+        "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
+        "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      }
+    ],
+    "microsoft-copilot": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic Commerce 2026: ChatGPT, Stripe, Shopware und Universal Cart",
+        "excerpt": "Agentic Commerce verlagert Shopping von Suchlisten in Assistenten, Feeds und Checkout-Protokolle. Was ChatGPT, Stripe, Shopware, UCP und AP2 für Händler praktisch bedeuten."
+      },
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Beste KI-Tools für Workflow-Automation: Welche Plattformen Teams wirklich entlasten",
+        "excerpt": "KI-Workflow-Automation entlastet Teams erst dann wirklich, wenn Tool-Auswahl, Datenkontrolle und menschliche Freigaben zusammenpassen."
+      },
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano",
+        "excerpt": "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      }
+    ],
+    "claude": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
+        "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
+        "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      },
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Beste KI-Tools für Workflow-Automation: Welche Plattformen Teams wirklich entlasten",
+        "excerpt": "KI-Workflow-Automation entlastet Teams erst dann wirklich, wenn Tool-Auswahl, Datenkontrolle und menschliche Freigaben zusammenpassen."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlich wird",
+        "excerpt": "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude und Gemini: Drei KI-Assistenten, drei sehr unterschiedliche Stärken",
+        "excerpt": "Ein praxisnaher Vergleich der drei größten KI-Assistenten für Schreiben, Recherche, Coding und Datenschutz."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search für KI-Agenten: Wie Tools Repository-Kontext token-effizient machen",
+        "excerpt": "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding-Agenten 2026: Codex CLI, Claude Code und Gemini CLI im Entwickler-Workflow",
+        "excerpt": "Codex CLI, Claude Code und Gemini CLI verschieben KI-Coding vom Autocomplete zur delegierten Aufgabe. Der Vergleich zeigt, wo welches Werkzeug in den Workflow passt."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis",
+        "excerpt": "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
+        "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "KI-Code ohne Kontrolle: Der neue Engpass liegt nicht im Schreiben, sondern im Verstehen",
+        "excerpt": "KI macht Code schneller, aber nicht automatisch verständlicher. Warum der neue Engpass in Reviews, Verifikation und menschlicher Verantwortlichkeit liegt."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
+        "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: Wie Codex, Gemini und Claude sich sinnvoll gegenpruefen",
+        "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: Was das Tool im Alltag wirklich taugt",
+        "excerpt": "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
+        "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe Coding nach dem Hype: Wie Teams AI-Code prüfen, testen und reviewen",
+        "excerpt": "Vibe Coding beschleunigt Prototypen, aber produktive Teams brauchen Verifikation: Tests, kleine Diffs, Architekturregeln und Reviews, die KI-Code ernst nehmen."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
+        "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste",
+        "excerpt": "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
+        "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "github-copilot": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
+        "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlich wird",
+        "excerpt": "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search für KI-Agenten: Wie Tools Repository-Kontext token-effizient machen",
+        "excerpt": "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding-Agenten 2026: Codex CLI, Claude Code und Gemini CLI im Entwickler-Workflow",
+        "excerpt": "Codex CLI, Claude Code und Gemini CLI verschieben KI-Coding vom Autocomplete zur delegierten Aufgabe. Der Vergleich zeigt, wo welches Werkzeug in den Workflow passt."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis",
+        "excerpt": "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
+        "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "KI-Code ohne Kontrolle: Der neue Engpass liegt nicht im Schreiben, sondern im Verstehen",
+        "excerpt": "KI macht Code schneller, aber nicht automatisch verständlicher. Warum der neue Engpass in Reviews, Verifikation und menschlicher Verantwortlichkeit liegt."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
+        "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: Wie Codex, Gemini und Claude sich sinnvoll gegenpruefen",
+        "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: Was das Tool im Alltag wirklich taugt",
+        "excerpt": "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
+        "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe Coding nach dem Hype: Wie Teams AI-Code prüfen, testen und reviewen",
+        "excerpt": "Vibe Coding beschleunigt Prototypen, aber produktive Teams brauchen Verifikation: Tests, kleine Diffs, Architekturregeln und Reviews, die KI-Code ernst nehmen."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
+        "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste",
+        "excerpt": "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
+        "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "cursor": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
+        "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlich wird",
+        "excerpt": "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search für KI-Agenten: Wie Tools Repository-Kontext token-effizient machen",
+        "excerpt": "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding-Agenten 2026: Codex CLI, Claude Code und Gemini CLI im Entwickler-Workflow",
+        "excerpt": "Codex CLI, Claude Code und Gemini CLI verschieben KI-Coding vom Autocomplete zur delegierten Aufgabe. Der Vergleich zeigt, wo welches Werkzeug in den Workflow passt."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis",
+        "excerpt": "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
+        "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "KI-Code ohne Kontrolle: Der neue Engpass liegt nicht im Schreiben, sondern im Verstehen",
+        "excerpt": "KI macht Code schneller, aber nicht automatisch verständlicher. Warum der neue Engpass in Reviews, Verifikation und menschlicher Verantwortlichkeit liegt."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
+        "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: Wie Codex, Gemini und Claude sich sinnvoll gegenpruefen",
+        "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: Was das Tool im Alltag wirklich taugt",
+        "excerpt": "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
+        "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe Coding nach dem Hype: Wie Teams AI-Code prüfen, testen und reviewen",
+        "excerpt": "Vibe Coding beschleunigt Prototypen, aber produktive Teams brauchen Verifikation: Tests, kleine Diffs, Architekturregeln und Reviews, die KI-Code ernst nehmen."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
+        "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste",
+        "excerpt": "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
+        "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "aider": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI-Launch und Distribution: Die neue Tool-Schicht für den Erfolg nach dem Build",
+        "excerpt": "Der Goldrausch bei der Entwicklung von KI-Anwendungen hat eine neue Phase erreicht."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlich wird",
+        "excerpt": "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search für KI-Agenten: Wie Tools Repository-Kontext token-effizient machen",
+        "excerpt": "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a – Open-source email gateway for AI agents: So gelingt der Einsatz in der Praxis",
+        "excerpt": "E2a macht E-Mail für KI-Agenten nutzbar: als geprüfter Eingang, signierter Webhook oder WebSocket-Kanal. Der Ratgeber zeigt, wo der Gateway hilft und welche Guardrails vor dem Produktiveinsatz nötig sind."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Ist deine Website bereit für KI-Agenten?: So gelingt der Einsatz in der Praxis",
+        "excerpt": "Während klassische SEO-Tools oft im Dunkeln tappen, wer oder was die eigenen Server-Kapazitäten beansprucht, ermöglicht Cloudflare AI Crawl Control heute eine präzise Identifikation und Steuerung von KI-Agenten wie ChatGPT oder Anthropic in Echtzeit."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "KI-Orchestrierung: Die neue Workflow-Ebene in der Softwareentwicklung",
+        "excerpt": "Nicht das einzelne Prompt ist inzwischen der Engpass, sondern die Koordination vieler paralleler KI-Schritte."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: Was das Tool im Alltag wirklich taugt",
+        "excerpt": "Die Geschwindigkeit, mit der KI-Agenten heute Code produzieren, hat ein strukturelles Problem erschaffen: Menschen kommen beim Review nicht mehr hinterher."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
+        "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "Was AI-Tool-Verzeichnisse wirklich nützlich macht: Entscheidungshilfe statt Tool-Liste",
+        "excerpt": "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow im Vergleich: Welche Diktier-App passt wirklich zu deinem Workflow?",
+        "excerpt": "Die Ära des mühsamen Tippens neigt sich dem Ende zu, während eine neue Generation von KI-gestützten Sprachwerkzeugen den Arbeitsalltag revolutioniert."
+      }
+    ],
+    "deepmind": [
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search und Agenten-Crawler: Wie Websites 2026 sichtbar und kontrollierbar bleiben",
+        "excerpt": "KI-Agenten lesen Websites anders als klassische Suchmaschinen. Wer sichtbar bleiben will, braucht klare Inhalte, maschinenlesbare Signale und bewusste Grenzen."
+      }
+    ],
+    "zapier": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Beste KI-Tools für Workflow-Automation: Welche Plattformen Teams wirklich entlasten",
+        "excerpt": "KI-Workflow-Automation entlastet Teams erst dann wirklich, wenn Tool-Auswahl, Datenkontrolle und menschliche Freigaben zusammenpassen."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier für Rechnungsautomatisierung",
+        "excerpt": "Für Rechnungsautomatisierung zählt nicht nur, welches Tool schneller klickbar ist, sondern wie gut Datenschutz, Fehlerpfade, API-Logik und Wartung zum Team passen."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "make-ehemals-integromat": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Beste KI-Tools für Workflow-Automation: Welche Plattformen Teams wirklich entlasten",
+        "excerpt": "KI-Workflow-Automation entlastet Teams erst dann wirklich, wenn Tool-Auswahl, Datenkontrolle und menschliche Freigaben zusammenpassen."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier für Rechnungsautomatisierung",
+        "excerpt": "Für Rechnungsautomatisierung zählt nicht nur, welches Tool schneller klickbar ist, sondern wie gut Datenschutz, Fehlerpfade, API-Logik und Wartung zum Team passen."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "n8n": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Beste KI-Tools für Workflow-Automation: Welche Plattformen Teams wirklich entlasten",
+        "excerpt": "KI-Workflow-Automation entlastet Teams erst dann wirklich, wenn Tool-Auswahl, Datenkontrolle und menschliche Freigaben zusammenpassen."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier für Rechnungsautomatisierung",
+        "excerpt": "Für Rechnungsautomatisierung zählt nicht nur, welches Tool schneller klickbar ist, sondern wie gut Datenschutz, Fehlerpfade, API-Logik und Wartung zum Team passen."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "gumloop": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Beste KI-Tools für Workflow-Automation: Welche Plattformen Teams wirklich entlasten",
+        "excerpt": "KI-Workflow-Automation entlastet Teams erst dann wirklich, wenn Tool-Auswahl, Datenkontrolle und menschliche Freigaben zusammenpassen."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      }
+    ],
+    "rossum": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "mindee": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      }
+    ],
+    "nanonets": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      }
+    ],
+    "klippa": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      }
+    ],
+    "veryfi": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      }
+    ],
+    "aws-textract": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "google-document-ai": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "azure-ai-document-intelligence": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "abbyy-vantage": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      }
+    ],
+    "mistral-ocr": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Beste OCR-APIs für Rechnungen in Deutschland 2026",
+        "excerpt": "Rechnungs-OCR funktioniert 2026 nur dann zuverlässig, wenn API, Validierung, Datenschutz und manuelle Ausnahmeprüfung zusammen geplant werden."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "anthropic": [
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser-Agenten im Praxistest: Wo Automation hilft und wo sie gefährlich wird",
+        "excerpt": "Browser-Agenten können Webarbeit beschleunigen, aber nur mit klaren Grenzen, Logs und menschlichen Freigaben werden sie produktionsnah brauchbar."
+      }
+    ],
+    "mistral": [
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternativen: Welche KI-Assistenten je nach Aufgabe besser passen",
+        "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
+      }
+    ],
+    "poe": [
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternativen: Welche KI-Assistenten je nach Aufgabe besser passen",
+        "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
+      }
+    ],
+    "copilot": [
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternativen: Welche KI-Assistenten je nach Aufgabe besser passen",
+        "excerpt": "Die Goldgräberstimmung am KI-Markt ist einem harten Verdrängungswettbewerb gewichen, in dem Nuancen über den produktiven Erfolg entscheiden."
+      }
+    ],
+    "openai-codex": [
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding-Agenten 2026: Codex CLI, Claude Code und Gemini CLI im Entwickler-Workflow",
+        "excerpt": "Codex CLI, Claude Code und Gemini CLI verschieben KI-Coding vom Autocomplete zur delegierten Aufgabe. Der Vergleich zeigt, wo welches Werkzeug in den Workflow passt."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "KI-Code ohne Kontrolle: Der neue Engpass liegt nicht im Schreiben, sondern im Verstehen",
+        "excerpt": "KI macht Code schneller, aber nicht automatisch verständlicher. Warum der neue Engpass in Reviews, Verifikation und menschlicher Verantwortlichkeit liegt."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: Wie Codex, Gemini und Claude sich sinnvoll gegenpruefen",
+        "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe Coding nach dem Hype: Wie Teams AI-Code prüfen, testen und reviewen",
+        "excerpt": "Vibe Coding beschleunigt Prototypen, aber produktive Teams brauchen Verifikation: Tests, kleine Diffs, Architekturregeln und Reviews, die KI-Code ernst nehmen."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "Wie agentische Developer-Workflows gerade produktionsreif werden: Einordnung, Praxis und Folgen",
+        "excerpt": "Die Ära des einfachen \"Autocomplete\" in der Softwareentwicklung nähert sich ihrem Ende."
+      }
+    ],
+    "chatgpt-atlas": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase",
+        "excerpt": "KI-Browser machen den Browser zur Arbeitsoberfläche für Agenten. Atlas, Comet, WebMCP und Browserbase zeigen, was Teams nutzen können und wo harte Sicherheitsgrenzen nötig sind."
+      }
+    ],
+    "perplexity-comet": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase",
+        "excerpt": "KI-Browser machen den Browser zur Arbeitsoberfläche für Agenten. Atlas, Comet, WebMCP und Browserbase zeigen, was Teams nutzen können und wo harte Sicherheitsgrenzen nötig sind."
+      }
+    ],
+    "browserbase": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase",
+        "excerpt": "KI-Browser machen den Browser zur Arbeitsoberfläche für Agenten. Atlas, Comet, WebMCP und Browserbase zeigen, was Teams nutzen können und wo harte Sicherheitsgrenzen nötig sind."
+      }
+    ],
+    "stagehand": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase",
+        "excerpt": "KI-Browser machen den Browser zur Arbeitsoberfläche für Agenten. Atlas, Comet, WebMCP und Browserbase zeigen, was Teams nutzen können und wo harte Sicherheitsgrenzen nötig sind."
+      }
+    ],
+    "skyvern": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase",
+        "excerpt": "KI-Browser machen den Browser zur Arbeitsoberfläche für Agenten. Atlas, Comet, WebMCP und Browserbase zeigen, was Teams nutzen können und wo harte Sicherheitsgrenzen nötig sind."
+      }
+    ],
+    "browseros": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "KI-Browser 2026: Atlas, Comet, WebMCP und Browserbase",
+        "excerpt": "KI-Browser machen den Browser zur Arbeitsoberfläche für Agenten. Atlas, Comet, WebMCP und Browserbase zeigen, was Teams nutzen können und wo harte Sicherheitsgrenzen nötig sind."
+      }
+    ],
+    "microsoft-power-automate": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier für Rechnungsautomatisierung",
+        "excerpt": "Für Rechnungsautomatisierung zählt nicht nur, welches Tool schneller klickbar ist, sondern wie gut Datenschutz, Fehlerpfade, API-Logik und Wartung zum Team passen."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "airtable": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "zoho-books": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "zoho-expense": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "xero": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "KI-Tools mit EU-Datenverarbeitung: Worauf kleine Unternehmen achten sollten",
+        "excerpt": "Wer Rechnungen, Verträge oder Kundendaten in KI-Tools lädt, sollte Datenfluss, AVV, Speicherfristen, Training und Löschung vor dem Pilot klären."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "deepl": [
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "KI-Tools ohne Anmeldung: bequem, aber selten wirklich privat",
+        "excerpt": "KI-Tools ohne Anmeldung sparen Zeit, sind aber kein Datenschutzsiegel. Wann No-Login sinnvoll ist — und wann Teams besser kontrollierte Tools nutzen."
+      }
+    ],
+    "remove-bg": [
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "KI-Tools ohne Anmeldung: bequem, aber selten wirklich privat",
+        "excerpt": "KI-Tools ohne Anmeldung sparen Zeit, sind aber kein Datenschutzsiegel. Wann No-Login sinnvoll ist — und wann Teams besser kontrollierte Tools nutzen."
+      }
+    ],
+    "runway": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
+        "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
+      }
+    ],
+    "adobe-firefly": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
+        "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
+      }
+    ],
+    "sora": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
+        "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
+      }
+    ],
+    "kling-ai": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "KI-Video 2026 nach Sora: Gemini Omni, Flow, Runway und Adobe Firefly",
+        "excerpt": "KI-Video 2026 ist weniger Clip-Zauber als Workflow-Management: Gemini Omni, Flow, Runway und Adobe Firefly zeigen, wie Teams Ideen, Bearbeitung und Freigaben neu organisieren."
+      }
+    ],
+    "microsoft-edge": [
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano",
+        "excerpt": "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
+      }
+    ],
+    "lm-studio": [
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano",
+        "excerpt": "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
+      }
+    ],
+    "google-ai-studio": [
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Lokale KI-Agenten 2026: Foundry Local, Edge Aion, Apple und Gemini Nano",
+        "excerpt": "Lokale KI-Agenten versprechen Datenschutz, weniger Latenz und niedrigere Tokenkosten. Der Ratgeber ordnet Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama und LM Studio praktisch ein."
+      }
+    ],
+    "uipath": [
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier für Rechnungsautomatisierung",
+        "excerpt": "Für Rechnungsautomatisierung zählt nicht nur, welches Tool schneller klickbar ist, sondern wie gut Datenschutz, Fehlerpfade, API-Logik und Wartung zum Team passen."
+      }
+    ],
+    "vyrill": [
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      }
+    ],
+    "naoma-ai": [
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      }
+    ],
+    "hera": [
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodale Agenten: Warum Bild, Video und Code jetzt in einem Workflow landen: Einordnung, Praxis und Folgen",
+        "excerpt": "Multimodale Agenten verbinden Bild, Video und Code zu einem gemeinsamen Arbeitsfluss. Der Beitrag ordnet ein, wo das praktisch hilft und welche Guardrails Teams brauchen."
+      }
+    ],
+    "hermes-agent": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      }
+    ],
+    "openclaw": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      }
+    ],
+    "cline": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      }
+    ],
+    "openhands": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      }
+    ],
+    "autogen": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      }
+    ],
+    "tesseract-ocr": [
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "ocrmypdf": [
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "paddleocr": [
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-Source OCR für PDFs: Wann Tesseract, OCRmyPDF und PaddleOCR reichen",
+        "excerpt": "Open-Source OCR reicht für viele lokale PDF-Pipelines, wenn Textschicht, Qualitätssicherung und Validierung realistisch geplant werden."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "smallpdf": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "cloudconvert": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "convertio": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "anyconv": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "docparser": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "parseur": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "PDF-Daten extrahieren mit KI: Tools, APIs und Kosten im Vergleich",
+        "excerpt": "PDF-Extraktion wird erst planbar, wenn klar ist, ob Text, Tabellen, Formularfelder oder geprüfte JSON-Daten gebraucht werden."
+      }
+    ],
+    "you-com": [
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
+        "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      }
+    ],
+    "notebooklm": [
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      }
+    ],
+    "mem0": [
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
+        "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      }
+    ],
+    "lindy": [
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      }
+    ],
+    "manus": [
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
+        "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      }
+    ],
+    "wave": [
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
+        "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "google-search-console": [
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Warum Google neue Tool-Kataloge ignoriert: Was ein technischer SEO-Check nicht löst",
+        "excerpt": "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
+      }
+    ]
+  },
+  "en": {
+    "langchain": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      },
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent security and MCP governance: guardrails companies need now",
+        "excerpt": "MCP connects AI agents to real tools and data. Without authorization, audit trails and least privilege it can become a new shadow-IT risk."
+      },
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
+        "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
+        "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser Agents in Practice: Where Automation Helps and Where It Becomes Dangerous",
+        "excerpt": "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search for AI Agents: How Tools Make Repository Context Token-Efficient",
+        "excerpt": "AI-powered developer tools have changed how teams write, analyze, and maintain software."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a: How to Use an Open-Source Email Gateway for AI Agents in Practice",
+        "excerpt": "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
+        "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "AI Orchestration: The New Workflow Layer in Software Development",
+        "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: What the Tool Is Actually Good for in Day-to-Day Use",
+        "excerpt": "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
+        "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists",
+        "excerpt": "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
+        "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "langgraph": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      },
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      }
+    ],
+    "openai-gpt-agents": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      },
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent security and MCP governance: guardrails companies need now",
+        "excerpt": "MCP connects AI agents to real tools and data. Without authorization, audit trails and least privilege it can become a new shadow-IT risk."
+      }
+    ],
+    "microsoft-agent-framework": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      }
+    ],
+    "pydantic-ai": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      }
+    ],
+    "crew-ai": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      },
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent security and MCP governance: guardrails companies need now",
+        "excerpt": "MCP connects AI agents to real tools and data. Without authorization, audit trails and least privilege it can become a new shadow-IT risk."
+      },
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
+        "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search for AI Agents: How Tools Make Repository Context Token-Efficient",
+        "excerpt": "AI-powered developer tools have changed how teams write, analyze, and maintain software."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a: How to Use an Open-Source Email Gateway for AI Agents in Practice",
+        "excerpt": "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
+        "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "AI Orchestration: The New Workflow Layer in Software Development",
+        "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      },
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: What the Tool Is Actually Good for in Day-to-Day Use",
+        "excerpt": "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists",
+        "excerpt": "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
+        "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "latitude": [
+      {
+        "slug": "agent-observability-und-debugging-wie-teams-ki-agenten-nachvollziehbar-machen",
+        "title": "Agent observability and debugging: how teams make AI agents traceable",
+        "excerpt": "AI agents rarely fail only through an HTTP error. Teams need traces, tool context, source provenance and approval records to understand agents in production."
+      }
+    ],
+    "openai-api": [
+      {
+        "slug": "agent-security-und-mcp-governance-welche-guardrails-unternehmen-jetzt-brauchen",
+        "title": "Agent security and MCP governance: guardrails companies need now",
+        "excerpt": "MCP connects AI agents to real tools and data. Without authorization, audit trails and least privilege it can become a new shadow-IT risk."
+      },
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
+        "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
+      },
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Local AI agents 2026: Foundry Local, Edge Aion, Apple and Gemini Nano",
+        "excerpt": "Local AI agents promise privacy, lower latency and lower token costs. This guide explains Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama and LM Studio in practical terms."
+      }
+    ],
+    "chatgpt": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
+        "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
+        "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude and Gemini: Three AI Assistants, Three Very Different Strengths",
+        "excerpt": "A practical comparison of the three major AI assistants for writing, research, coding and privacy-sensitive work."
+      },
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternatives: Which AI Assistants Are Better for Which Tasks",
+        "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
+      },
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "AI Tools Without Signup: Convenient, But Rarely Truly Private",
+        "excerpt": "AI tools without signup remove friction, but they are not a privacy seal. When no-login tools are useful — and when teams need controlled workflows."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      }
+    ],
+    "perplexity": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
+        "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
+        "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude and Gemini: Three AI Assistants, Three Very Different Strengths",
+        "excerpt": "A practical comparison of the three major AI assistants for writing, research, coding and privacy-sensitive work."
+      },
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternatives: Which AI Assistants Are Better for Which Tasks",
+        "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
+      },
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "AI Tools Without Signup: Convenient, But Rarely Truly Private",
+        "excerpt": "AI tools without signup remove friction, but they are not a privacy seal. When no-login tools are useful — and when teams need controlled workflows."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
+        "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      }
+    ],
+    "gemini": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
+        "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
+        "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude and Gemini: Three AI Assistants, Three Very Different Strengths",
+        "excerpt": "A practical comparison of the three major AI assistants for writing, research, coding and privacy-sensitive work."
+      },
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternatives: Which AI Assistants Are Better for Which Tasks",
+        "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow",
+        "excerpt": "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
+      },
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
+        "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
+      },
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Local AI agents 2026: Foundry Local, Edge Aion, Apple and Gemini Nano",
+        "excerpt": "Local AI agents promise privacy, lower latency and lower token costs. This guide explains Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama and LM Studio in practical terms."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: How Codex, Gemini and Claude Can Review Each Other Well",
+        "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
+        "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      }
+    ],
+    "microsoft-copilot": [
+      {
+        "slug": "agentic-commerce-2026-chatgpt-stripe-shopware-und-universal-cart",
+        "title": "Agentic commerce 2026: ChatGPT, Stripe, Shopware and Universal Cart",
+        "excerpt": "Agentic commerce moves shopping from search lists into assistants, feeds and checkout protocols. What ChatGPT, Stripe, Shopware, UCP and AP2 mean for merchants."
+      },
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Best AI Tools for Workflow Automation: Which Platforms Actually Help Teams",
+        "excerpt": "AI workflow automation only helps teams when tool choice, data control and human approvals fit the real process."
+      },
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Local AI agents 2026: Foundry Local, Edge Aion, Apple and Gemini Nano",
+        "excerpt": "Local AI agents promise privacy, lower latency and lower token costs. This guide explains Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama and LM Studio in practical terms."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      }
+    ],
+    "claude": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
+        "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
+      },
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
+        "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      },
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Best AI Tools for Workflow Automation: Which Platforms Actually Help Teams",
+        "excerpt": "AI workflow automation only helps teams when tool choice, data control and human approvals fit the real process."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser Agents in Practice: Where Automation Helps and Where It Becomes Dangerous",
+        "excerpt": "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
+      },
+      {
+        "slug": "chatgpt-claude-gemini",
+        "title": "ChatGPT, Claude and Gemini: Three AI Assistants, Three Very Different Strengths",
+        "excerpt": "A practical comparison of the three major AI assistants for writing, research, coding and privacy-sensitive work."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search for AI Agents: How Tools Make Repository Context Token-Efficient",
+        "excerpt": "AI-powered developer tools have changed how teams write, analyze, and maintain software."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow",
+        "excerpt": "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a: How to Use an Open-Source Email Gateway for AI Agents in Practice",
+        "excerpt": "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
+        "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "AI Code Without Control: The New Bottleneck Is Not Writing, But Understanding",
+        "excerpt": "AI can make code appear in minutes. The harder question is whether a team understands it well enough to own it, test it, and merge it."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "AI Orchestration: The New Workflow Layer in Software Development",
+        "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: How Codex, Gemini and Claude Can Review Each Other Well",
+        "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: What the Tool Is Actually Good for in Day-to-Day Use",
+        "excerpt": "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
+        "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe coding after the hype: how teams test and review AI code",
+        "excerpt": "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
+        "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists",
+        "excerpt": "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
+        "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "github-copilot": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
+        "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser Agents in Practice: Where Automation Helps and Where It Becomes Dangerous",
+        "excerpt": "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search for AI Agents: How Tools Make Repository Context Token-Efficient",
+        "excerpt": "AI-powered developer tools have changed how teams write, analyze, and maintain software."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow",
+        "excerpt": "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a: How to Use an Open-Source Email Gateway for AI Agents in Practice",
+        "excerpt": "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
+        "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "AI Code Without Control: The New Bottleneck Is Not Writing, But Understanding",
+        "excerpt": "AI can make code appear in minutes. The harder question is whether a team understands it well enough to own it, test it, and merge it."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "AI Orchestration: The New Workflow Layer in Software Development",
+        "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: How Codex, Gemini and Claude Can Review Each Other Well",
+        "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: What the Tool Is Actually Good for in Day-to-Day Use",
+        "excerpt": "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
+        "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe coding after the hype: how teams test and review AI code",
+        "excerpt": "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
+        "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists",
+        "excerpt": "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
+        "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "cursor": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
+        "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser Agents in Practice: Where Automation Helps and Where It Becomes Dangerous",
+        "excerpt": "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search for AI Agents: How Tools Make Repository Context Token-Efficient",
+        "excerpt": "AI-powered developer tools have changed how teams write, analyze, and maintain software."
+      },
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow",
+        "excerpt": "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a: How to Use an Open-Source Email Gateway for AI Agents in Practice",
+        "excerpt": "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
+        "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "AI Code Without Control: The New Bottleneck Is Not Writing, But Understanding",
+        "excerpt": "AI can make code appear in minutes. The harder question is whether a team understands it well enough to own it, test it, and merge it."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "AI Orchestration: The New Workflow Layer in Software Development",
+        "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: How Codex, Gemini and Claude Can Review Each Other Well",
+        "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: What the Tool Is Actually Good for in Day-to-Day Use",
+        "excerpt": "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
+      },
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
+        "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe coding after the hype: how teams test and review AI code",
+        "excerpt": "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
+        "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists",
+        "excerpt": "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
+        "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "aider": [
+      {
+        "slug": "ai-launch-und-distribution-die-neue-tool-schicht-fur-den-erfolg-nach-dem-build",
+        "title": "AI Launch and Distribution: The New Tool Layer for Success After the Build",
+        "excerpt": "AI products no longer win through the build alone. A new launch and distribution layer is deciding which tools actually reach users."
+      },
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser Agents in Practice: Where Automation Helps and Where It Becomes Dangerous",
+        "excerpt": "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
+      },
+      {
+        "slug": "code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen",
+        "title": "Code Search for AI Agents: How Tools Make Repository Context Token-Efficient",
+        "excerpt": "AI-powered developer tools have changed how teams write, analyze, and maintain software."
+      },
+      {
+        "slug": "e2a-open-source-email-gateway-for-ai-agents-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "E2a: How to Use an Open-Source Email Gateway for AI Agents in Practice",
+        "excerpt": "E2a makes email usable for AI agents: as a verified inbox, signed webhook, or WebSocket channel. This guide explains where the gateway helps and which guardrails matter before production use."
+      },
+      {
+        "slug": "ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis",
+        "title": "Is Your Website Ready for AI Agents? How to Make It Work in Practice",
+        "excerpt": "Classic SEO tools often cannot tell who is consuming server resources. AI crawl control makes crawler identity and behavior visible."
+      },
+      {
+        "slug": "ki-orchestrierung-die-neue-workflow-ebene-in-der-softwareentwicklung",
+        "title": "AI Orchestration: The New Workflow Layer in Software Development",
+        "excerpt": "The bottleneck is no longer the individual prompt. It is the coordination of many parallel AI steps."
+      },
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      },
+      {
+        "slug": "pandaprobe-was-das-tool-im-alltag-wirklich-taugt",
+        "title": "PandaProbe: What the Tool Is Actually Good for in Day-to-Day Use",
+        "excerpt": "The speed at which AI agents generate code today has created a structural problem: humans can no longer keep up with reviews."
+      },
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
+        "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      },
+      {
+        "slug": "was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool",
+        "title": "What Makes AI Tool Directories Actually Useful: Decision Support Instead of Tool Lists",
+        "excerpt": "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      },
+      {
+        "slug": "wispr-flow-im-vergleich-welche-diktier-app-passt-wirklich-zu-deinem-workflow",
+        "title": "Wispr Flow Compared: Which Dictation App Really Fits Your Workflow?",
+        "excerpt": "AI dictation is moving from simple transcription to workflow software: the best tool is the one that turns speech into usable text without taking control away from you."
+      }
+    ],
+    "deepmind": [
+      {
+        "slug": "ai-search-und-agenten-crawler-websites-2026-sichtbar-kontrollierbar",
+        "title": "AI Search and Agent Crawlers: How Websites Stay Visible and Controllable in 2026",
+        "excerpt": "AI agents read websites differently from classic search engines. Staying visible now means clear content, machine-readable signals, and deliberate boundaries."
+      }
+    ],
+    "zapier": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Best AI Tools for Workflow Automation: Which Platforms Actually Help Teams",
+        "excerpt": "AI workflow automation only helps teams when tool choice, data control and human approvals fit the real process."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier for Invoice Automation",
+        "excerpt": "For invoice automation, the choice depends on privacy, error paths, API flexibility and maintenance, not only setup speed."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "make-ehemals-integromat": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Best AI Tools for Workflow Automation: Which Platforms Actually Help Teams",
+        "excerpt": "AI workflow automation only helps teams when tool choice, data control and human approvals fit the real process."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier for Invoice Automation",
+        "excerpt": "For invoice automation, the choice depends on privacy, error paths, API flexibility and maintenance, not only setup speed."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "n8n": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Best AI Tools for Workflow Automation: Which Platforms Actually Help Teams",
+        "excerpt": "AI workflow automation only helps teams when tool choice, data control and human approvals fit the real process."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier for Invoice Automation",
+        "excerpt": "For invoice automation, the choice depends on privacy, error paths, API flexibility and maintenance, not only setup speed."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "gumloop": [
+      {
+        "slug": "beste-ki-tools-fur-workflow-automation-welche-plattformen-teams-wirklich-entlast",
+        "title": "Best AI Tools for Workflow Automation: Which Platforms Actually Help Teams",
+        "excerpt": "AI workflow automation only helps teams when tool choice, data control and human approvals fit the real process."
+      },
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      }
+    ],
+    "rossum": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "mindee": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      }
+    ],
+    "nanonets": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      }
+    ],
+    "klippa": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      }
+    ],
+    "veryfi": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      }
+    ],
+    "aws-textract": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "google-document-ai": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "azure-ai-document-intelligence": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "abbyy-vantage": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      },
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      }
+    ],
+    "mistral-ocr": [
+      {
+        "slug": "beste-ocr-apis-rechnungen-deutschland-2026",
+        "title": "Best OCR APIs for Invoices in Germany 2026",
+        "excerpt": "Invoice OCR is reliable only when API choice, validation, privacy and manual exception handling are planned as one workflow."
+      },
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "anthropic": [
+      {
+        "slug": "browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird",
+        "title": "Browser Agents in Practice: Where Automation Helps and Where It Becomes Dangerous",
+        "excerpt": "Browser agents can speed up web work, but only with clear boundaries, logs, and human approvals do they become usable in production-like settings."
+      }
+    ],
+    "mistral": [
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternatives: Which AI Assistants Are Better for Which Tasks",
+        "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
+      }
+    ],
+    "poe": [
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternatives: Which AI Assistants Are Better for Which Tasks",
+        "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
+      }
+    ],
+    "copilot": [
+      {
+        "slug": "claude-alternativen-welche-ki-assistenten-je-nach-aufgabe-besser-passen",
+        "title": "Claude Alternatives: Which AI Assistants Are Better for Which Tasks",
+        "excerpt": "The gold-rush mood in the AI market has given way to a hard-fought battle for attention, where small differences decide who actually gets productive work done."
+      }
+    ],
+    "openai-codex": [
+      {
+        "slug": "coding-agenten-2026-codex-claude-code-und-gemini-cli-im-entwickler-workflow",
+        "title": "Coding agents 2026: Codex CLI, Claude Code and Gemini CLI in the developer workflow",
+        "excerpt": "Codex CLI, Claude Code and Gemini CLI move AI coding from autocomplete to delegated work. This comparison shows where each tool fits."
+      },
+      {
+        "slug": "ki-code-ohne-kontrolle-der-neue-engpass-liegt-nicht-im-schreiben-sondern-im-verstehen",
+        "title": "AI Code Without Control: The New Bottleneck Is Not Writing, But Understanding",
+        "excerpt": "AI can make code appear in minutes. The harder question is whether a team understands it well enough to own it, test it, and merge it."
+      },
+      {
+        "slug": "multi-model-coding-workflows-codex-gemini-claude-code-review",
+        "title": "Multi-Model Coding: How Codex, Gemini and Claude Can Review Each Other Well",
+        "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
+      },
+      {
+        "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
+        "title": "Vibe coding after the hype: how teams test and review AI code",
+        "excerpt": "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
+      },
+      {
+        "slug": "wie-agentische-developer-workflows-gerade-produktionsreif-werden-einordnung-prax",
+        "title": "How Agentic Developer Workflows Are Becoming Production-Ready",
+        "excerpt": "The age of simple autocomplete in software development is coming to an end."
+      }
+    ],
+    "chatgpt-atlas": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "AI browsers 2026: Atlas, Comet, WebMCP and Browserbase",
+        "excerpt": "AI browsers turn the browser into an execution surface for agents. Atlas, Comet, WebMCP and Browserbase show what teams can use and where hard security boundaries are needed."
+      }
+    ],
+    "perplexity-comet": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "AI browsers 2026: Atlas, Comet, WebMCP and Browserbase",
+        "excerpt": "AI browsers turn the browser into an execution surface for agents. Atlas, Comet, WebMCP and Browserbase show what teams can use and where hard security boundaries are needed."
+      }
+    ],
+    "browserbase": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "AI browsers 2026: Atlas, Comet, WebMCP and Browserbase",
+        "excerpt": "AI browsers turn the browser into an execution surface for agents. Atlas, Comet, WebMCP and Browserbase show what teams can use and where hard security boundaries are needed."
+      }
+    ],
+    "stagehand": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "AI browsers 2026: Atlas, Comet, WebMCP and Browserbase",
+        "excerpt": "AI browsers turn the browser into an execution surface for agents. Atlas, Comet, WebMCP and Browserbase show what teams can use and where hard security boundaries are needed."
+      }
+    ],
+    "skyvern": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "AI browsers 2026: Atlas, Comet, WebMCP and Browserbase",
+        "excerpt": "AI browsers turn the browser into an execution surface for agents. Atlas, Comet, WebMCP and Browserbase show what teams can use and where hard security boundaries are needed."
+      }
+    ],
+    "browseros": [
+      {
+        "slug": "ki-browser-2026-atlas-comet-webmcp-und-browserbase",
+        "title": "AI browsers 2026: Atlas, Comet, WebMCP and Browserbase",
+        "excerpt": "AI browsers turn the browser into an execution surface for agents. Atlas, Comet, WebMCP and Browserbase show what teams can use and where hard security boundaries are needed."
+      }
+    ],
+    "microsoft-power-automate": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier for Invoice Automation",
+        "excerpt": "For invoice automation, the choice depends on privacy, error paths, API flexibility and maintenance, not only setup speed."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "airtable": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "zoho-books": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "zoho-expense": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "xero": [
+      {
+        "slug": "ki-tools-eu-datenverarbeitung-kleine-unternehmen",
+        "title": "AI Tools with EU Data Processing: What Small Businesses Should Check",
+        "excerpt": "Before uploading invoices, contracts or customer data into AI tools, map data flow, DPA, retention, training and deletion."
+      },
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "deepl": [
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "AI Tools Without Signup: Convenient, But Rarely Truly Private",
+        "excerpt": "AI tools without signup remove friction, but they are not a privacy seal. When no-login tools are useful — and when teams need controlled workflows."
+      }
+    ],
+    "remove-bg": [
+      {
+        "slug": "ki-tools-ohne-anmeldung-bequem-aber-selten-wirklich-privat",
+        "title": "AI Tools Without Signup: Convenient, But Rarely Truly Private",
+        "excerpt": "AI tools without signup remove friction, but they are not a privacy seal. When no-login tools are useful — and when teams need controlled workflows."
+      }
+    ],
+    "runway": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
+        "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
+      }
+    ],
+    "adobe-firefly": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
+        "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
+      }
+    ],
+    "sora": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
+        "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
+      }
+    ],
+    "kling-ai": [
+      {
+        "slug": "ki-video-2026-nach-sora-gemini-omni-flow-runway-und-adobe-firefly",
+        "title": "AI Video 2026 After Sora: Gemini Omni, Flow, Runway and Adobe Firefly",
+        "excerpt": "AI video in 2026 is less about flashy clips than about repeatable production workflows: Gemini Omni, Flow, Runway and Adobe Firefly show how teams organize ideas, editing and approvals."
+      }
+    ],
+    "microsoft-edge": [
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Local AI agents 2026: Foundry Local, Edge Aion, Apple and Gemini Nano",
+        "excerpt": "Local AI agents promise privacy, lower latency and lower token costs. This guide explains Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama and LM Studio in practical terms."
+      }
+    ],
+    "lm-studio": [
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Local AI agents 2026: Foundry Local, Edge Aion, Apple and Gemini Nano",
+        "excerpt": "Local AI agents promise privacy, lower latency and lower token costs. This guide explains Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama and LM Studio in practical terms."
+      }
+    ],
+    "google-ai-studio": [
+      {
+        "slug": "lokale-ki-agenten-2026-foundry-local-edge-aion-apple-und-gemini-nano",
+        "title": "Local AI agents 2026: Foundry Local, Edge Aion, Apple and Gemini Nano",
+        "excerpt": "Local AI agents promise privacy, lower latency and lower token costs. This guide explains Foundry Local, Edge Aion, Apple Foundation Models, Gemini Nano, Ollama and LM Studio in practical terms."
+      }
+    ],
+    "uipath": [
+      {
+        "slug": "make-vs-n8n-vs-zapier-rechnungsautomatisierung",
+        "title": "Make vs n8n vs Zapier for Invoice Automation",
+        "excerpt": "For invoice automation, the choice depends on privacy, error paths, API flexibility and maintenance, not only setup speed."
+      }
+    ],
+    "vyrill": [
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      }
+    ],
+    "naoma-ai": [
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      }
+    ],
+    "hera": [
+      {
+        "slug": "multimodale-agenten-warum-bild-video-und-code-jetzt-in-einem-workflow-landen-ein",
+        "title": "Multimodal Agents: Why Image, Video, and Code Are Now Coming Together in One Workflow — Context, Practice, and Implications",
+        "excerpt": "Multimodal agents connect image, video, and code into a shared working flow. This article explains where that is useful in practice and which guardrails teams need."
+      }
+    ],
+    "hermes-agent": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      },
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      }
+    ],
+    "openclaw": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      }
+    ],
+    "cline": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      }
+    ],
+    "openhands": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      }
+    ],
+    "autogen": [
+      {
+        "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
+        "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
+        "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      }
+    ],
+    "tesseract-ocr": [
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "ocrmypdf": [
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "paddleocr": [
+      {
+        "slug": "open-source-ocr-pdfs-tesseract-ocrmypdf-paddleocr",
+        "title": "Open-source OCR for PDFs: When Tesseract, OCRmyPDF and PaddleOCR Are Enough",
+        "excerpt": "Open-source OCR is enough for many local PDF pipelines when text layers, quality checks and validation are planned realistically."
+      },
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "smallpdf": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "cloudconvert": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "convertio": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "anyconv": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "docparser": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "parseur": [
+      {
+        "slug": "pdf-daten-extrahieren-ki-tools-apis-kosten-vergleich",
+        "title": "Extract PDF Data with AI: Tools, APIs and Cost Comparison",
+        "excerpt": "PDF extraction becomes predictable only when the target is clear: text, tables, fields or validated JSON data."
+      }
+    ],
+    "you-com": [
+      {
+        "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
+        "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
+        "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      }
+    ],
+    "notebooklm": [
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      }
+    ],
+    "mem0": [
+      {
+        "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
+        "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
+        "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      }
+    ],
+    "lindy": [
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      }
+    ],
+    "manus": [
+      {
+        "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
+        "title": "Productivity agents in daily work: where they really save time",
+        "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      }
+    ],
+    "wave": [
+      {
+        "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
+        "title": "Read Invoices Automatically from Emails: Tools and Workflows",
+        "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "google-search-console": [
+      {
+        "slug": "warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo",
+        "title": "Why Google Ignores New Tool Directories: What a Technical SEO Check Cannot Fix",
+        "excerpt": "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
+      }
+    ]
+  }
+}

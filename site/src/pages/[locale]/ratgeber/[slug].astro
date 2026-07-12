@@ -5,6 +5,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { marked } from "marked";
 import { getRatgeberEntry, listRatgeberEntries } from "../../../lib/ratgeber";
+import { getRelatedGuides } from "../../../lib/guideRelations";
 import { tagHref } from "../../../lib/tagRoutes";
 import { getWordCountFromMarkdown } from "../../../lib/machineReadable";
 import {
@@ -21,12 +22,12 @@ export async function getStaticPaths() {
   const entries = await listRatgeberEntries("en");
   return entries.map((entry) => ({
     params: { locale: "en", slug: entry.slug },
-    props: { entry },
+    props: { entry, relatedGuides: getRelatedGuides(entry, entries) },
   }));
 }
 
 const { slug } = Astro.params;
-const { entry: resolvedEntry } = Astro.props;
+const { entry: resolvedEntry, relatedGuides = [] } = Astro.props;
 const entry = resolvedEntry ?? (await getRatgeberEntry(slug, "en"));
 
 if (!entry) {
@@ -136,7 +137,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 ---
 
-<BaseLayout locale="en" title={`${title} - Guide - Utildesk`} description={description}>
+<BaseLayout locale="en" title={`${title} | Utildesk`} description={description}>
   <Fragment slot="head">
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" type="application/json" href={`/en/api/ratgeber/${slug}.json`} title={`${title} (JSON)`} />
@@ -224,6 +225,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </aside>
       ) : null}
     </div>
+
+    {relatedGuides.length > 0 && (
+      <section class="akte-alts related-guides" aria-label="More from this topic cluster">
+        <div class="akte-alts-head"><div class="akte-alts-head-left"><div class="akte-alts-kicker">More from this topic cluster</div><h2 class="akte-alts-title">Related decisions<span class="akte-mast-dot">.</span></h2></div><a class="akte-alts-all" href="/en/ratgeber/">All guides</a></div>
+        <div class="akte-alts-grid">{relatedGuides.map((guide, index) => <a class="akte-alt-card" href={`/en/ratgeber/${guide.slug}/`}><div class="akte-alt-card-head"><span class="akte-alt-card-kicker">Guide {String(index + 1).padStart(2, "0")}</span></div><div class="akte-alt-card-name">{guide.data.title}<span class="akte-mast-dot">.</span></div><p class="akte-alt-card-tone">{guide.data.excerpt}</p></a>)}</div>
+      </section>
+    )}
 
     <footer class="sheet-foot">
       <div class="sheet-foot-left">

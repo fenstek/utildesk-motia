@@ -6,6 +6,7 @@ import { listRatgeberEntries } from "../../lib/ratgeber";
 import { compareToolsByNewest } from "../../lib/toolAddedAt";
 import { listDisplayTools, type DisplayTool } from "../../lib/toolDisplay";
 import { getToolEditorialVerdict } from "../../lib/toolVerdict";
+import { selectSearchFocusTools } from "../../lib/searchFocus.mjs";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
@@ -13,6 +14,7 @@ import {
 } from "../../lib/siteMeta";
 
 const enabledTools = [...(await listDisplayTools("de"))].sort(compareToolsByNewest("de"));
+const initialTools = selectSearchFocusTools(enabledTools, 36);
 const issueNo = getDecisionIssueNumber();
 
 // Build tag frequency map and keep only the most useful tags
@@ -79,7 +81,7 @@ const toolsItemListSchema = {
   "@type": "ItemList",
   name: "Utildesk Tools",
   numberOfItems: enabledTools.length,
-  itemListElement: enabledTools.slice(0, 200).map((tool, index) => ({
+  itemListElement: initialTools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.title,
@@ -239,8 +241,8 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
     </div>
   </aside>
   <!-- Tools Grid -->
-  <div class="tools-grid inv-register inv-view-register" id="tools-grid">
-    {enabledTools.map((tool, idx) => {
+  <div class="tools-grid inv-register inv-view-register" id="tools-grid" data-inventory-api="/api/tools.json" data-inventory-locale="de">
+    {initialTools.map((tool, idx) => {
       const verdict = getDisplayToolVerdict(tool, idx);
       const categoryValue = (tool.category || "Unsortiert").toLowerCase();
       return (
@@ -378,6 +380,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
   )}
 
   <!-- Client-side search + tag filter script (inline, no build tools) -->
+  <script src="../../scripts/inventoryClient.ts"></script>
   <script is:inline>
     (function() {
       const sortStorageKey = 'utildesk-tools-sort';
@@ -387,7 +390,7 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
       const noResults = document.getElementById('no-results');
       const loadMoreBtn = document.getElementById('load-more-btn');
       const hiddenCountInfo = document.getElementById('hidden-count-info');
-      const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+      let cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
       const filterButtons = Array.from(document.querySelectorAll('.inv-filter-option'));
       const viewButtons = Array.from(document.querySelectorAll('[data-view-mode]'));
       const jumpLinks = Array.from(document.querySelectorAll('.inv-jump-letter'));
@@ -664,6 +667,11 @@ const toolsBreadcrumbSchema = buildBreadcrumbSchema([
           link.setAttribute('aria-pressed', Boolean(activeLetter && activeLetter === letter && available) ? 'true' : 'false');
         });
       }
+
+      window.addEventListener('utildesk:inventory-ready', function() {
+        cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+        filterTools();
+      });
 
       function resetAndFilter() {
         pageBlocks = 1;

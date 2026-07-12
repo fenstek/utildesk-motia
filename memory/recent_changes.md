@@ -1,6 +1,16 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-12_
 
+## 2026-07-12 - Seven-point search recovery patch
+
+- Tool inventory initial HTML is now 36 prioritized cards; full DE/EN inventory loads from the existing noindex JSON endpoints only after user interaction.
+- Category pages render 24 prioritized cards and route deeper discovery through the tool inventory.
+- Shared compact focus list moved to `site/src/lib/searchFocus.mjs`; generated Google/Bing/focus sitemaps contain 112 identical URLs and remain intentionally narrow.
+- Added deterministic Ratgeber sibling links and a generated reverse-link manifest from `relatedTools` to tool cards.
+- Added shorter Ratgeber titles, corrected EN ChatGPT/Gemini descriptions, and an Umami `engaged-human` event requiring 10 seconds plus scroll/internal click.
+- Added a public GitHub README and `docs/public/ai-agent-evaluation-checklist.md` as a linkable resource without personal data.
+- Full build passed on 3,450 pages; `/tools/` dropped from about 3.78 MB to 164 KB and `/en/tools/` to 136 KB.
+
 ## 2026-07-12 - Fresh Google/Bing search recovery audit
 
 - Re-audited all 120 compact sitemap URLs live: the three sitemap sets are identical and no focus URL has an HTTP, canonical, robots, Googlebot, title, or content-type conflict.

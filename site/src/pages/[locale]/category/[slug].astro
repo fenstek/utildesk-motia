@@ -4,6 +4,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../../lib/categories";
 import { categoryDescriptionEn, categoryTitleEn } from "../../../lib/englishContent";
 import { listDisplayTools } from "../../../lib/toolDisplay";
+import { selectSearchFocusTools } from "../../../lib/searchFocus.mjs";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
@@ -31,6 +32,7 @@ const tools = [...(await listDisplayTools("en"))]
   .filter((tool) => tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag)))
   .sort((a, b) => a.title.localeCompare(b.title, "en"));
 const toolCount = tools.length;
+const visibleTools = selectSearchFocusTools(tools, 24);
 const seoSections = [
   {
     title: `How to compare ${title} tools`,
@@ -48,7 +50,7 @@ const itemListSchema = {
   name: title,
   url: `${SITE_URL}/en/category/${category.slug}/`,
   numberOfItems: toolCount,
-  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+  itemListElement: visibleTools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.title,
@@ -139,9 +141,17 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </aside>
 
     <div class="tools-grid inv-register inv-view-register" id="tools-grid">
-      {tools.map((tool, index) => (
+      {visibleTools.map((tool, index) => (
         <InventoryToolRow tool={tool} href={`/en/tools/${tool.slug}/`} index={index} locale="en" />
       ))}
     </div>
   </div>
+  {toolCount > visibleTools.length && (
+    <div class="tool-akte inv-loadmore category-loadmore">
+      <a class="akte-action akte-action-ghost" href={`/en/tools/?category=${encodeURIComponent(title.toLowerCase())}`}>
+        Show all {toolCount} tools in the inventory
+      </a>
+      <div class="inv-hidden-count">Starting with {visibleTools.length} editorially prioritised files</div>
+    </div>
+  )}
 </BaseLayout>

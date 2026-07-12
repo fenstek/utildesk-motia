@@ -19,7 +19,7 @@ updated_at: 2026-05-21
 popularity: 0
 source_language: de
 translation: full
-description: "OpenAI's AI assistant for writing, research, coding, data analysis, images, and everyday knowledge work."
+description: "OpenAI's general-purpose AI workspace for research, writing, coding, file analysis, images and repeatable knowledge-work workflows."
 ---
 
 # ChatGPT
