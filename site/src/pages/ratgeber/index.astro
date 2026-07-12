@@ -57,6 +57,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
+  <div class="rg-archive">
   <div class="tool-akte rg-wrap">
     <nav class="akte-crumb" aria-label="Breadcrumb">
       <a href="/">← Startseite</a>
@@ -81,6 +82,14 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </header>
   </div>
 
+  <header class="rg-section-head">
+    <div>
+      <span>Chronologisch kuratiert</span>
+      <h2>Neueste Analysen</h2>
+    </div>
+    <p>Entscheidungen, Vergleiche und praxiserprobte Arbeitsmodelle, zuletzt veröffentlicht zuerst.</p>
+  </header>
+
   <section class="rg-list">
     {articles.length === 0 ? (
       <p class="rg-empty">Bald hier: der erste Ratgeber-Artikel.</p>
@@ -92,19 +101,28 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       return (
         <a
           href={`/ratgeber/${article.slug}/`}
-          class="rg-card"
+          class:list={["rg-card", index === 0 && "rg-card--featured"]}
           data-guide-card
           data-guide-index={index}
-          hidden={index >= 12}
+          hidden={index >= 10}
         >
           {article.data.coverImage ? (
             <div class="rg-card-figure">
               <div class="rg-media-stage">
-                <img src={article.data.coverImage} alt={article.data.title} loading="lazy" />
+                <img
+                  src={article.data.coverImage}
+                  alt={article.data.title}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchpriority={index === 0 ? "high" : "auto"}
+                />
               </div>
             </div>
           ) : null}
           <div class="rg-card-body">
+            <div class="rg-card-issue">
+              <span>{index === 0 ? "Neueste Entscheidung" : "Ratgeber"}</span>
+              <strong>{String(index + 1).padStart(2, "0")}</strong>
+            </div>
             <div class="rg-card-meta-top">
               {article.data.eyebrow ? <span class="rg-chip rg-chip--accent">{article.data.eyebrow}</span> : null}
               {article.data.category && normalizeMetaLabel(article.data.category) !== normalizeMetaLabel(String(article.data.eyebrow ?? "")) ? <span class="rg-chip">{article.data.category}</span> : null}
@@ -121,12 +139,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       );
     })}
   </section>
-  {articles.length > 12 ? (
+  {articles.length > 10 ? (
     <div class="rg-loadmore">
       <button type="button" data-guides-more>Weitere Ratgeber anzeigen</button>
       <small data-guides-remaining></small>
     </div>
   ) : null}
+  </div>
 </BaseLayout>
 
 <script is:inline>
@@ -136,8 +155,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     const remaining = document.querySelector('[data-guides-remaining]');
     if (!cards.length || !button) return;
 
-    const step = window.matchMedia('(max-width: 760px)').matches ? 8 : 12;
-    let visible = step;
+    const compact = window.matchMedia('(max-width: 760px)').matches;
+    const initial = compact ? 7 : 10;
+    const step = compact ? 6 : 9;
+    let visible = initial;
     const render = () => {
       cards.forEach((card, index) => card.toggleAttribute('hidden', index >= visible));
       const hiddenCount = Math.max(0, cards.length - visible);

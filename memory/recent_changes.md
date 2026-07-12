@@ -908,3 +908,10 @@ _Last updated: 2026-07-12_
 - The sidecar now combines the article summary, collapsible H2 navigation, optional editorial verdict, and publication dossier; on mobile it moves before the prose and remains a coherent article-overview card.
 - Standardized cover and inline illustration presentation, removed the loose full-width strip treatment, tightened typography and vertical rhythm, and preserved the six related-guide slots on every article.
 - The full 3452-page Astro build passed. Visual QA covered 1920px, 1440px, and 390px layouts, German and English routes, articles with and without an editorial note, inline illustrations, TOC interaction, console output, and horizontal overflow.
+
+## 2026-07-12 - Compact Ratgeber archive storefront
+
+- Rebuilt the shared DE/EN Ratgeber archive as an editorial storefront: one balanced lead story followed by a three-column grid instead of oversized full-width ledger rows with synthetic verdicts.
+- Standardized every archive image to a clean 16:9 crop, added chronological issue labels, tightened excerpts and metadata, and reduced the first desktop batch to one feature plus three complete rows.
+- Mobile now uses seven compact single-column cards initially, with six more per reveal; the previous first card was about 723px high, while the new card system is about 568px with no horizontal overflow.
+- Added an isolated `ratgeber-archive.css` layer so archive-specific geometry does not affect article reading pages, the tool catalog, or other decision-template surfaces.

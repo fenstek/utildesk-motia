@@ -1,0 +1,506 @@
+/* Ratgeber archive: a compact editorial storefront with one lead story and a
+   disciplined card grid. Kept separate from the article reading system. */
+html[data-design="decision"] .rg-archive {
+  --rg-ink: #12120f;
+  --rg-paper: #f8f6ef;
+  --rg-paper-strong: #fffdf7;
+  --rg-rule: #c9c2b1;
+  --rg-muted: #686359;
+  --rg-red: #c5251c;
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 0 0 72px;
+}
+
+html[data-design="decision"] .rg-archive .rg-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+html[data-design="decision"] .rg-archive .akte-crumb {
+  width: 100%;
+  margin: 0;
+  padding: 18px 0 14px;
+  border-bottom: 1px solid var(--rg-rule);
+}
+
+html[data-design="decision"] .rg-archive .rg-head {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 34px 0 36px !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(420px, .75fr) !important;
+  gap: 54px !important;
+  align-items: end !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--rg-rule) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-design="decision"] .rg-archive .inv-head-body {
+  max-width: 720px;
+}
+
+html[data-design="decision"] .rg-archive .inv-head-kicker {
+  margin-bottom: 15px;
+  color: var(--rg-red);
+}
+
+html[data-design="decision"] .rg-archive .rg-head .inv-head-h1 {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(48px, 5vw, 70px) !important;
+  line-height: .94 !important;
+  letter-spacing: -.045em;
+}
+
+html[data-design="decision"] .rg-archive .inv-head-deck {
+  max-width: 58ch;
+  margin-top: 16px;
+  font-size: clamp(18px, 1.4vw, 22px);
+  line-height: 1.42;
+}
+
+html[data-design="decision"] .rg-archive .inv-head-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  align-self: end;
+  border: 1px solid var(--rg-ink) !important;
+  background: var(--rg-paper-strong) !important;
+}
+
+html[data-design="decision"] .rg-archive .inv-stat {
+  min-width: 0 !important;
+  min-height: 96px !important;
+  padding: 16px 14px 13px !important;
+  border: 0 !important;
+  border-right: 1px solid var(--rg-rule) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-design="decision"] .rg-archive .inv-stat:last-child {
+  border-right: 0 !important;
+}
+
+html[data-design="decision"] .rg-archive .inv-stat strong {
+  font-size: clamp(28px, 2.3vw, 38px) !important;
+  line-height: .9 !important;
+}
+
+html[data-design="decision"] .rg-archive .inv-stat span {
+  margin-top: 10px !important;
+  font-size: 10px !important;
+  line-height: 1.35 !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 38px 0 18px;
+}
+
+html[data-design="decision"] .rg-archive .rg-section-head span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--rg-red);
+  font: 800 10px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .rg-archive .rg-section-head h2 {
+  margin: 0;
+  color: var(--rg-ink);
+  font: italic 800 clamp(34px, 3.4vw, 52px)/.98 "Source Serif 4", Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+html[data-design="decision"] .rg-archive .rg-section-head p {
+  max-width: 48ch;
+  margin: 0 0 3px;
+  color: var(--rg-muted);
+  font: 500 14px/1.5 "JetBrains Mono", ui-monospace, monospace;
+}
+
+html[data-design="decision"] .rg-archive .rg-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 0 28px !important;
+  border: 0 !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100%;
+  gap: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 1px solid var(--rg-rule) !important;
+  border-radius: 4px !important;
+  background: var(--rg-paper) !important;
+  color: var(--rg-ink) !important;
+  box-shadow: 0 9px 22px rgba(28, 26, 20, .055);
+  transform: none !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card[hidden] {
+  display: none !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card::after {
+  content: none !important;
+  display: none !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card:hover {
+  border-color: var(--rg-ink) !important;
+  box-shadow: 0 16px 32px rgba(28, 26, 20, .09);
+  transform: translateY(-3px) !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card--featured {
+  grid-column: 1 / -1;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.28fr) minmax(410px, .82fr) !important;
+  min-height: 420px;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-figure {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-media-stage {
+  width: 100%;
+  min-height: 0 !important;
+  aspect-ratio: 16 / 9;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 0 !important;
+  border-bottom: 1px solid var(--rg-rule) !important;
+  border-radius: 0 !important;
+  background: #e6e1d5 !important;
+  box-shadow: none !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-media-stage img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  transition: transform 500ms cubic-bezier(.2, .7, .2, 1);
+}
+
+html[data-design="decision"] .rg-archive .rg-card:hover .rg-media-stage img {
+  transform: scale(1.025);
+}
+
+html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-figure {
+  grid-column: 1;
+  grid-row: 1;
+  height: 100%;
+  border-right: 1px solid var(--rg-rule) !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card--featured .rg-media-stage {
+  height: 100%;
+  aspect-ratio: auto;
+  border-bottom: 0 !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-body {
+  display: flex !important;
+  flex: 1;
+  flex-direction: column;
+  gap: 13px !important;
+  min-width: 0;
+  min-height: 300px;
+  padding: 20px 22px 18px !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-body {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 0;
+  padding: 27px 30px 24px !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-issue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--rg-rule);
+  color: var(--rg-red);
+  font: 800 9px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-issue strong {
+  color: var(--rg-ink);
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-meta-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+html[data-design="decision"] .rg-archive .rg-chip {
+  padding: 4px 8px !important;
+  border: 1px solid #d5cebd !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #555147 !important;
+  font: 700 9px/1.2 "JetBrains Mono", ui-monospace, monospace !important;
+  letter-spacing: .03em !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-chip--accent {
+  border-color: rgba(197, 37, 28, .28) !important;
+  background: rgba(197, 37, 28, .045) !important;
+  color: var(--rg-red) !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-title {
+  display: -webkit-box;
+  max-width: none !important;
+  margin: 0 !important;
+  overflow: hidden;
+  color: var(--rg-ink) !important;
+  font: italic 800 clamp(25px, 2vw, 31px)/1.04 "Source Serif 4", Georgia, serif !important;
+  letter-spacing: -.025em !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-title {
+  font-size: clamp(34px, 2.5vw, 42px) !important;
+  line-height: .99 !important;
+  -webkit-line-clamp: 5;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-excerpt {
+  display: -webkit-box;
+  max-width: none !important;
+  margin: 0 !important;
+  overflow: hidden;
+  color: var(--rg-muted) !important;
+  font: 400 16px/1.48 "Source Serif 4", Georgia, serif !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-excerpt {
+  font-size: 17px !important;
+  -webkit-line-clamp: 4;
+}
+
+html[data-design="decision"] .rg-archive .rg-card-meta-bottom {
+  display: grid !important;
+  grid-template-columns: auto auto 1fr;
+  gap: 8px 12px !important;
+  align-items: center;
+  margin-top: auto !important;
+  padding-top: 13px;
+  border-top: 1px solid var(--rg-rule);
+}
+
+html[data-design="decision"] .rg-archive .rg-meta {
+  color: var(--rg-muted) !important;
+  font: 500 9px/1.3 "JetBrains Mono", ui-monospace, monospace !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-arrow {
+  justify-self: end;
+  width: auto !important;
+  margin: 0 !important;
+  color: var(--rg-red) !important;
+  font: 800 9px/1.2 "JetBrains Mono", ui-monospace, monospace !important;
+  letter-spacing: .1em !important;
+  opacity: 1 !important;
+}
+
+html[data-design="decision"] .rg-archive .rg-arrow::after {
+  content: "  ->";
+}
+
+html[data-design="decision"] .rg-archive .rg-loadmore {
+  padding: 8px 0 0;
+}
+
+html[data-design="decision"] .rg-archive .rg-loadmore button {
+  min-width: min(360px, 100%);
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(197, 37, 28, .12);
+}
+
+@media (max-width: 980px) {
+  html[data-design="decision"] .rg-archive .rg-head {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+
+  html[data-design="decision"] .rg-archive .inv-head-stats {
+    width: 100%;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card--featured {
+    grid-template-columns: minmax(0, 1.25fr) minmax(310px, .75fr) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  html[data-design="decision"] .rg-archive {
+    width: calc(100% - 20px);
+    padding-bottom: 42px;
+  }
+
+  html[data-design="decision"] .rg-archive .akte-crumb {
+    padding: 12px 2px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-head {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 18px 18px !important;
+    gap: 20px !important;
+    border: 1px solid var(--rg-rule) !important;
+    border-radius: 22px !important;
+    background: var(--rg-paper-strong) !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-head .inv-head-h1 {
+    max-width: 100%;
+    font-size: clamp(34px, 9.2vw, 38px) !important;
+    white-space: normal !important;
+  }
+
+  html[data-design="decision"] .rg-archive .inv-head-deck {
+    margin-top: 12px;
+    font-size: 17px;
+    line-height: 1.38;
+  }
+
+  html[data-design="decision"] .rg-archive .inv-head-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  html[data-design="decision"] .rg-archive .inv-stat {
+    min-height: 82px !important;
+    padding: 13px 12px 11px !important;
+    border-right: 1px solid var(--rg-rule) !important;
+    border-bottom: 1px solid var(--rg-rule) !important;
+  }
+
+  html[data-design="decision"] .rg-archive .inv-stat:nth-child(2n) {
+    border-right: 0 !important;
+  }
+
+  html[data-design="decision"] .rg-archive .inv-stat:nth-last-child(-n + 2) {
+    border-bottom: 0 !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-section-head {
+    display: block;
+    padding: 30px 2px 14px;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-section-head h2 {
+    font-size: 38px;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-section-head p {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-list {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    padding-bottom: 20px !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card,
+  html[data-design="decision"] .rg-archive .rg-card--featured {
+    display: flex !important;
+    grid-column: auto;
+    min-height: 0;
+    border-radius: 18px !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-figure {
+    height: auto;
+    border-right: 0 !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card--featured .rg-media-stage {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-bottom: 1px solid var(--rg-rule) !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card-body,
+  html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-body {
+    min-height: 0;
+    padding: 17px 18px 16px !important;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card-title,
+  html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-title {
+    font-size: clamp(27px, 8.6vw, 34px) !important;
+    line-height: 1.02 !important;
+    -webkit-line-clamp: 4;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card-excerpt,
+  html[data-design="decision"] .rg-archive .rg-card--featured .rg-card-excerpt {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+    -webkit-line-clamp: 3;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card-meta-bottom {
+    grid-template-columns: 1fr auto;
+  }
+
+  html[data-design="decision"] .rg-archive .rg-card-meta-bottom .rg-meta:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-design="decision"] .rg-archive .rg-card,
+  html[data-design="decision"] .rg-archive .rg-media-stage img {
+    transition: none !important;
+  }
+}
