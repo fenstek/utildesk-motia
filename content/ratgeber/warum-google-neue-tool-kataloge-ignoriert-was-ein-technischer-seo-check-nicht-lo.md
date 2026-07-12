@@ -6,6 +6,8 @@ category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Stellen Sie sich vor, Sie bauen eine digitale Bibliothek, investieren Monate in die Architektur, fegen jeden Gang und sortieren jedes Buch millimetergenau."
 readTime: 10
+coverImage: /images/ratgeber/warum-google-tool-kataloge-ignoriert-cover-editorial-v1.webp
+secondaryImage: /images/ratgeber/warum-google-tool-kataloge-ignoriert-selection-editorial-v1.webp
 tags:
   - "SEO"
   - "Google"
@@ -82,6 +84,8 @@ Hilfreiche Signale sind zum Beispiel:
 6. ein sichtbares Aktualisierungsdatum.
 
 Noch wichtiger ist die Frage nach der redaktionellen Perspektive. Warum bewertet gerade diese Seite genau diese Tools? Geht es um kleine Teams, Entwickler, Agenturen, Datenschutz, Automatisierung, Produktivität? Ohne Fokus bleibt der Katalog eine generische Oberfläche.
+
+![Eine Redaktion trennt austauschbare Katalogseiten von einem belastbaren Dossier mit Quellen, Urteil und erkennbarem Nutzwert](/images/ratgeber/warum-google-tool-kataloge-ignoriert-selection-editorial-v1.webp)
 
 ## Strukturierte Daten sind keine Wunderwaffe
 

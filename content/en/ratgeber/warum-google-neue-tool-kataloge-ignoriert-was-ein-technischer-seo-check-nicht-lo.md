@@ -6,6 +6,8 @@ category: "Analysis"
 eyebrow: "AI Analysis"
 excerpt: "A new tool directory can be crawlable, technically clean, and still not feel worth indexing. The missing layer is editorial selection quality."
 readTime: 10
+coverImage: /images/ratgeber/warum-google-tool-kataloge-ignoriert-cover-editorial-v1.webp
+secondaryImage: /images/ratgeber/warum-google-tool-kataloge-ignoriert-selection-editorial-v1.webp
 tags:
   - "SEO"
   - "Google"
@@ -82,6 +84,8 @@ Useful signals include:
 6. a visible last-reviewed date.
 
 The editorial point of view matters just as much. Why is this site evaluating these tools? Is it for small teams, developers, agencies, privacy-sensitive buyers, automation work, or productivity workflows? Without focus, the directory remains generic.
+
+![An editorial team separates interchangeable catalog pages from a sourced dossier with a clear judgment and practical value](/images/ratgeber/warum-google-tool-kataloge-ignoriert-selection-editorial-v1.webp)
 
 ## Structured data is not a magic weapon
 

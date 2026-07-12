@@ -6,6 +6,8 @@ category: "Einordnung"
 eyebrow: "KI-Einordnung"
 excerpt: "Die Goldgräberstimmung rund um generative KI hat eine Flut an \"AI Directories\" ausgelöst."
 readTime: 10
+coverImage: /images/ratgeber/ai-tool-verzeichnisse-entscheidungshilfe-cover-editorial-v1.webp
+secondaryImage: /images/ratgeber/ai-tool-verzeichnisse-entscheidungskompass-editorial-v1.webp
 tags:
   - "AI Tools"
   - "Tool-Verzeichnis"
@@ -81,6 +83,8 @@ AI-Tools ändern sich schnell. Preise, Limits, Modellzugänge, Datenschutzbeding
 Praktisch heißt das: Jeder wichtige Eintrag braucht ein "zuletzt geprüft"-Datum, eine klare Änderungsnotiz und eine Priorität für erneute Prüfung. Tools mit hoher geschäftlicher Relevanz oder hoher Änderungsfrequenz sollten häufiger überprüft werden als experimentelle Randnotizen.
 
 Noch wichtiger ist der Umgang mit veralteten Einträgen. Nützlichkeit entsteht nicht nur durch Hinzufügen, sondern auch durch Entfernen, Zusammenlegen und Herabstufen. Wenn ein Tool eingestellt wurde, seine Kernfunktion verloren hat oder nur noch als Affiliate-Hülle existiert, muss das sichtbar werden. Ein ehrliches Archiv kann wertvoller sein als eine scheinbar endlose aktuelle Liste.
+
+![Ein erfahrener Kurator führt ein Team aus dem Lärm austauschbarer Tool-Listen zu einer begründeten, praktisch nutzbaren Entscheidung](/images/ratgeber/ai-tool-verzeichnisse-entscheidungskompass-editorial-v1.webp)
 
 ## Usability-Heuristiken als Filter für die Auswahl
 

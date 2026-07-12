@@ -6,6 +6,8 @@ category: "Analysis"
 eyebrow: "AI Analysis"
 excerpt: "The AI tool directory boom has produced plenty of lists. Useful directories win when they help readers make a decision."
 readTime: 10
+coverImage: /images/ratgeber/ai-tool-verzeichnisse-entscheidungshilfe-cover-editorial-v1.webp
+secondaryImage: /images/ratgeber/ai-tool-verzeichnisse-entscheidungskompass-editorial-v1.webp
 tags:
   - "AI Tools"
   - "Tool Directories"
@@ -81,6 +83,8 @@ AI tools change quickly. Prices, limits, model access, privacy terms, and integr
 In practice, every important entry needs a last-reviewed date, a short change note, and a priority for the next review. Tools with high business relevance or high volatility should be checked more often than experimental edge cases.
 
 Even more important is the handling of outdated entries. Usefulness comes not only from adding tools, but also from removing, merging, and downgrading them. If a tool has been discontinued, lost its core feature, or become an affiliate shell, that should be visible. An honest archive can be more useful than an endless-looking current list.
+
+![An experienced curator guides a team away from the noise of interchangeable tool lists and toward a reasoned, useful decision](/images/ratgeber/ai-tool-verzeichnisse-entscheidungskompass-editorial-v1.webp)
 
 ## Usability heuristics as a filter for selection
 

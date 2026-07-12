@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-07-10_
+_Last updated: 2026-07-11_
+
+## 2026-07-11 - Remaining Ratgeber illustration backfill
+
+- Audited all 37 DE Ratgeber articles and their EN siblings for both `coverImage` and `secondaryImage`; the only incomplete pairs were `code-search-fur-ki-agenten-wie-tools-repository-kontext-token-effizient-machen`, `warum-google-neue-tool-kataloge-ignoriert-was-ein-technischer-seo-check-nicht-lo`, and `was-ai-tool-verzeichnisse-wirklich-nutzlich-macht-entscheidungshilfe-statt-tool`.
+- Generated six distinct story-forward raster illustrations directly with OpenAI image generation, without Gemini: one cover and one in-article scene per topic, with deliberately different photographic, architectural, map, collage, and screen-print treatments.
+- Converted the approved originals to compressed `1536x1024` WebP, shared each pair across DE/EN, added localized alt text, and verified that no Ratgeber article remains without either required image field.
 
 ## 2026-07-10 - Latest Sheet hype tool-card illustrations
 
