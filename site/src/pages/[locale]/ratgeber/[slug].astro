@@ -69,6 +69,7 @@ const published = data.date
 const updated = data.updated
   ? new Intl.DateTimeFormat("en", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(data.updated))
   : "";
+const decisionNumber = String(Math.abs(slug.length * 7 + 41) % 999 + 1).padStart(3, "0");
 
 const normalizeMetaLabel = (value: string) =>
   String(value || "")
@@ -156,9 +157,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <span class="akte-crumb-current">{title}</span>
     </nav>
 
+    <div class:list={["sheet-lead", safeCoverImage ? "sheet-lead-with-cover" : "sheet-lead-without-cover"]}>
     <header class="sheet-head">
       <div class="sheet-head-kicker">
-        &#x21B3; Decision No. {String(Math.abs(slug.length * 7 + 41) % 999 + 1).padStart(3, "0")} · {data.eyebrow || data.category || "AI Guide"}
+        &#x21B3; Decision No. {decisionNumber} · {data.eyebrow || data.category || "AI Guide"}
       </div>
       <h1 class="sheet-head-h1">
         {title}<span class="akte-mast-dot">.</span>
@@ -210,20 +212,41 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </figcaption>
       </figure>
     ) : null}
-
-    <ContentJump headings={articleHeadings} locale="en" />
+    </div>
 
     <div class="sheet-body">
-      <article class="ratgeber-prose akte-article-body sheet-prose" set:html={articleHtml}></article>
+      <aside class="sheet-sidecar" aria-label="Article overview">
+        {data.sidebarPoints?.length ? (
+          <section class="sheet-summary" aria-label={data.sidebarTitle || "Key takeaways"}>
+            <div class="sheet-summary-tab">{data.sidebarTitle || "Key takeaways"}</div>
+            <ul>
+              {data.sidebarPoints.map((point) => <li>{point}</li>)}
+            </ul>
+          </section>
+        ) : null}
 
-      {data.sidebarPoints?.length ? (
-        <aside class="sheet-summary" aria-label={data.sidebarTitle || "Key takeaways"}>
-          <div class="sheet-summary-tab">{data.sidebarTitle || "Key takeaways"}</div>
-          <ul>
-            {data.sidebarPoints.map((point) => <li>{point}</li>)}
-          </ul>
-        </aside>
-      ) : null}
+        <ContentJump headings={articleHeadings} locale="en" />
+
+        {data.decisionNote ? (
+          <section class="sheet-editorial-note" aria-label="Editorial view">
+            <span>Editorial view</span>
+            <p>{data.decisionNote}</p>
+          </section>
+        ) : null}
+
+        <section class="sheet-dossier" aria-label="Article details">
+          <div class="sheet-dossier-kicker">Dossier</div>
+          <dl>
+            <div><dt>Issue</dt><dd>No. {decisionNumber}</dd></div>
+            {published ? <div><dt>Published</dt><dd>{published}</dd></div> : null}
+            {updated && updated !== published ? <div><dt>Updated</dt><dd>{updated}</dd></div> : null}
+            {data.readTime ? <div><dt>Read time</dt><dd>{data.readTime} min</dd></div> : null}
+            {data.category ? <div><dt>Section</dt><dd>{data.category}</dd></div> : null}
+          </dl>
+        </section>
+      </aside>
+
+      <article class="ratgeber-prose akte-article-body sheet-prose" set:html={articleHtml}></article>
     </div>
 
     {relatedGuides.length > 0 && (

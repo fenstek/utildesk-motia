@@ -901,3 +901,10 @@ _Last updated: 2026-07-12_
 - Raised the shared Ratgeber relation limit from four to six so the desktop three-column recommendation grid always renders two complete rows instead of leaving two empty cells.
 - The change applies centrally to all 38 German and 38 English Ratgeber pages while preserving the existing topic, category, freshness, deduplication, and self-exclusion ranking.
 - Full Astro build passed. Automated dist QA confirmed exactly six related-guide cards and zero self-links on all 76 localized article pages; a Playwright desktop screenshot confirmed the complete 3x2 layout visually.
+
+## 2026-07-12 - Compact professional Ratgeber reading system
+
+- Rebuilt the shared DE/EN article templates into a compact editorial layout with a two-column hero, consistently framed cover artwork, a constrained reading column, and a useful sticky sidecar instead of an underfilled right rail.
+- The sidecar now combines the article summary, collapsible H2 navigation, optional editorial verdict, and publication dossier; on mobile it moves before the prose and remains a coherent article-overview card.
+- Standardized cover and inline illustration presentation, removed the loose full-width strip treatment, tightened typography and vertical rhythm, and preserved the six related-guide slots on every article.
+- The full 3452-page Astro build passed. Visual QA covered 1920px, 1440px, and 390px layouts, German and English routes, articles with and without an editorial note, inline illustrations, TOC interaction, console output, and horizontal overflow.

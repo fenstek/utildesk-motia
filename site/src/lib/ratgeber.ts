@@ -25,6 +25,7 @@ export interface RatgeberEntryData {
   tags?: string[];
   sidebarTitle?: string;
   sidebarPoints?: string[];
+  decisionNote?: string;
   relatedTools?: RatgeberRelatedTool[];
 }
 
