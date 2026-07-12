@@ -352,8 +352,13 @@ html[data-design="decision"] .rg-archive .rg-loadmore {
 }
 
 html[data-design="decision"] .rg-archive .rg-loadmore button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: min(360px, 100%);
+  padding: 0 24px;
   border-radius: 999px;
+  text-align: center;
   box-shadow: 0 8px 20px rgba(197, 37, 28, .12);
 }
 

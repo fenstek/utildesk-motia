@@ -915,3 +915,4 @@ _Last updated: 2026-07-12_
 - Standardized every archive image to a clean 16:9 crop, added chronological issue labels, tightened excerpts and metadata, and reduced the first desktop batch to one feature plus three complete rows.
 - Mobile now uses seven compact single-column cards initially, with six more per reveal; the previous first card was about 723px high, while the new card system is about 568px with no horizontal overflow.
 - Added an isolated `ratgeber-archive.css` layer so archive-specific geometry does not affect article reading pages, the tool catalog, or other decision-template surfaces.
+- Centered the archive load-more label explicitly in both axes so inherited button layout cannot pin the text to the upper-left edge.
