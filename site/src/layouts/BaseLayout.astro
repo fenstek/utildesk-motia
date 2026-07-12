@@ -388,6 +388,57 @@ const shouldLoadUmami = import.meta.env.PROD && UMAMI_WEBSITE_ID;
       <script defer src={UMAMI_SRC} data-website-id={UMAMI_WEBSITE_ID}></script>
 
     )}
+    {shouldLoadUmami && (
+      <script is:inline>
+        (() => {
+          let tenSecondsPassed = false;
+          let meaningfulAction = "";
+          let sent = false;
+
+          const pageType = location.pathname.includes("/ratgeber/")
+            ? "guide"
+            : location.pathname.includes("/tools/")
+              ? "tool"
+              : "hub";
+          const sendWhenReady = () => {
+            if (sent || !tenSecondsPassed || !meaningfulAction || !window.umami?.track) return;
+            sent = true;
+            window.umami.track("engaged-human", {
+              action: meaningfulAction,
+              pageType,
+              language: document.documentElement.lang || "de",
+            });
+          };
+          const noteAction = (action) => {
+            meaningfulAction ||= action;
+            sendWhenReady();
+          };
+
+          window.setTimeout(() => {
+            tenSecondsPassed = true;
+            sendWhenReady();
+          }, 10000);
+
+          let scrollTicking = false;
+          window.addEventListener("scroll", () => {
+            if (sent || scrollTicking) return;
+            scrollTicking = true;
+            window.requestAnimationFrame(() => {
+              const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+              if (window.scrollY >= 400 || window.scrollY / scrollable >= 0.25) noteAction("scroll");
+              scrollTicking = false;
+            });
+          }, { passive: true });
+
+          document.addEventListener("click", (event) => {
+            const link = event.target?.closest?.("a[href]");
+            if (!link) return;
+            const href = link.getAttribute("href") || "";
+            if (href.startsWith("/") || href.startsWith(location.origin)) noteAction("internal-click");
+          }, { passive: true });
+        })();
+      </script>
+    )}
 
   </head>
 

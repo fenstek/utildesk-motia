@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-07-12 Compact inventory crawl surface
+
+- Keep the complete tool inventory available through `/api/tools.json` and `/en/api/tools.json`, but do not server-render all long-tail cards into `/tools/` HTML.
+- Initial tool inventory HTML is limited to 36 editorially prioritized cards. Search, filters, letter navigation, sorting and load-more may fetch the full noindex JSON inventory after real user interaction.
+- Category pages expose at most 24 direct tool cards and link into the filtered inventory for the remainder.
+- `site/src/lib/searchFocus.mjs` is the shared source for compact focus ordering and sitemap candidates. Do not broaden this list reflexively.
+- Ratgeber-to-tool links are authored once in article `relatedTools`; reverse tool-to-guide links are generated during prebuild into `site/src/data/guide-backlinks.json`.
+
 ## 2026-04-21
 
 ## 2026-04-22

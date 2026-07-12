@@ -1,5 +1,4 @@
-import { getEnglishToolMeta, hasEnglishToolTranslation } from "../../../lib/englishContent";
-import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
+import { listDisplayTools } from "../../../lib/toolDisplay";
 import { SITE_NAME, SITE_URL } from "../../../lib/siteMeta";
 
 export const prerender = true;
@@ -9,22 +8,7 @@ export function getStaticPaths() {
 }
 
 export async function GET() {
-  const entries = (await listActiveToolEntries()).filter((entry) => hasEnglishToolTranslation(entry.slug));
-  const items = entries.map((entry) => {
-    const meta = getEnglishToolMeta(entry);
-    return {
-      slug: entry.slug,
-      title: meta.title,
-      url: `${SITE_URL}/en/tools/${entry.slug}/`,
-      category: meta.category,
-      priceModel: meta.priceModel,
-      tags: meta.tags,
-      description: meta.description,
-      officialUrl: meta.officialUrl || null,
-      affiliateUrl: meta.affiliateUrl || null,
-      inLanguage: "en",
-    };
-  });
+  const items = await listDisplayTools("en");
 
   return new Response(JSON.stringify({
     version: 1,

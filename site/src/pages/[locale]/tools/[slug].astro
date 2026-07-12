@@ -28,6 +28,7 @@ import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { tagHref } from "../../../lib/tagRoutes";
 import { getToolEditorialVerdict } from "../../../lib/toolVerdict";
+import guideBacklinkManifest from "../../../data/guide-backlinks.json";
 import {
   buildBreadcrumbSchema,
   buildPublisherOrganization,
@@ -131,7 +132,8 @@ const monogramLetter = (vendorName || meta.title || slug || "#")
   .replace(/[^A-Za-z]/g, "")
   .charAt(0)
   .toUpperCase() || "#";
-const mentionedInCount = Array.isArray(entry.data.mentionedIn) ? entry.data.mentionedIn.length : 0;
+const guideBacklinks = guideBacklinkManifest.en[slug] || [];
+const mentionedInCount = new Set([...(Array.isArray(entry.data.mentionedIn) ? entry.data.mentionedIn : []), ...guideBacklinks.map((guide) => guide.slug)]).size;
 
 const normalizeAltName = (value: string) =>
   String(value ?? "")
@@ -484,6 +486,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <div set:html={articleHtml}></div>
     </div>
   </article>
+
+  {guideBacklinks.length > 0 && (
+    <section class="akte-alts tool-akte" aria-label="Guides featuring this tool">
+      <div class="akte-alts-head"><div class="akte-alts-head-left"><div class="akte-alts-kicker">Editorial context</div><h2 class="akte-alts-title">Guides about {meta.title}<span class="akte-mast-dot">.</span></h2></div><a class="akte-alts-all" href="/en/ratgeber/">All guides</a></div>
+      <div class="akte-alts-grid">{guideBacklinks.slice(0, 4).map((guide) => <a class="akte-alt-card" href={`/en/ratgeber/${guide.slug}/`}><div class="akte-alt-card-name">{guide.title}</div><p class="akte-alt-card-tone">{guide.excerpt}</p></a>)}</div>
+    </section>
+  )}
 
   {alternativesTop.length > 0 && (
     <section class="akte-alts tool-akte" aria-label="Related files">

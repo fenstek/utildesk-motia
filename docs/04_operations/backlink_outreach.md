@@ -2,6 +2,12 @@
 
 Last updated: 2026-05-02
 
+## Public linkable resource - 2026-07-12
+
+- Published a repository-level, CC BY 4.0 AI-agent evaluation checklist at `docs/public/ai-agent-evaluation-checklist.md`.
+- The public GitHub README links the checklist to focused Utildesk comparisons about open-source agents, persistent memory and AI-search visibility.
+- This is the preferred non-personal outreach destination for developer, AI-governance and privacy newsletters; use only `Utildesk` / `Utildesk Team`, never a personal name or address.
+
 ## Scope
 
 This file tracks safe outreach for `https://tools.utildesk.de/`.

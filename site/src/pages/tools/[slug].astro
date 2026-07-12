@@ -21,6 +21,7 @@ import {
 import { normalizePriceModel } from "../../lib/priceModel";
 import { tagHref } from "../../lib/tagRoutes";
 import { getToolEditorialVerdict } from "../../lib/toolVerdict";
+import guideBacklinkManifest from "../../data/guide-backlinks.json";
 import {
   buildBreadcrumbSchema,
   buildPublisherOrganization,
@@ -147,7 +148,8 @@ const monogramLetter = (vendorName || title || slug || "·")
   .replace(/[^A-Za-zÄÖÜäöü]/g, "")
   .charAt(0)
   .toUpperCase() || "·";
-const mentionedInCount = Array.isArray(data.mentionedIn) ? data.mentionedIn.length : 0;
+const guideBacklinks = guideBacklinkManifest.de[slug] || [];
+const mentionedInCount = new Set([...(Array.isArray(data.mentionedIn) ? data.mentionedIn : []), ...guideBacklinks.map((guide) => guide.slug)]).size;
 const formatGermanDate = (value: unknown) => {
   if (!value) return "";
   try {
@@ -665,6 +667,13 @@ const softwareApplicationSchema = {
     <div set:html={articleHtml}></div>
   </div>
 </article>
+
+  {guideBacklinks.length > 0 && (
+    <section class="akte-alts tool-akte" aria-label="Ratgeber mit diesem Tool">
+      <div class="akte-alts-head"><div class="akte-alts-head-left"><div class="akte-alts-kicker">Im redaktionellen Kontext</div><h2 class="akte-alts-title">Ratgeber zu {title}<span class="akte-mast-dot">.</span></h2></div><a class="akte-alts-all" href="/ratgeber/">Alle Ratgeber</a></div>
+      <div class="akte-alts-grid">{guideBacklinks.slice(0, 4).map((guide) => <a class="akte-alt-card" href={`/ratgeber/${guide.slug}/`}><div class="akte-alt-card-name">{guide.title}</div><p class="akte-alt-card-tone">{guide.excerpt}</p></a>)}</div>
+    </section>
+  )}
 
   <!-- Verwandte Akten / Alternatives — editorial dossier card grid -->
   {alternativesTop.length > 0 && (

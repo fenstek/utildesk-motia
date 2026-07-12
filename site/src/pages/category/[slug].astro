@@ -3,6 +3,7 @@ import InventoryToolRow from "../../components/InventoryToolRow.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { CATEGORIES } from "../../lib/categories";
 import { listDisplayTools } from "../../lib/toolDisplay";
+import { selectSearchFocusTools } from "../../lib/searchFocus.mjs";
 import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
@@ -27,6 +28,7 @@ const tools = [...(await listDisplayTools("de"))]
   .filter((tool) => tool.rawTags.map((tag) => tag.toLowerCase()).some((tag) => category.matchTags.includes(tag)))
   .sort((a, b) => a.title.localeCompare(b.title, "de"));
 const toolCount = tools.length;
+const visibleTools = selectSearchFocusTools(tools, 24);
 const seoIntroParagraphs = category.seo?.intro
   ? category.seo.intro.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean)
   : [];
@@ -37,7 +39,7 @@ const itemListSchema = {
   name: category.title,
   url: `${SITE_URL}/category/${slug}/`,
   numberOfItems: toolCount,
-  itemListElement: tools.slice(0, 200).map((tool, index) => ({
+  itemListElement: visibleTools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.title,
@@ -127,9 +129,17 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </aside>
 
     <div class="tools-grid inv-register inv-view-register" id="tools-grid">
-      {tools.map((tool, index) => (
+      {visibleTools.map((tool, index) => (
         <InventoryToolRow tool={tool} href={`/tools/${tool.slug}/`} index={index} locale="de" />
       ))}
     </div>
   </div>
+  {toolCount > visibleTools.length && (
+    <div class="tool-akte inv-loadmore category-loadmore">
+      <a class="akte-action akte-action-ghost" href={`/tools/?category=${encodeURIComponent(category.title.toLowerCase())}`}>
+        Alle {toolCount} Tools im Inventar anzeigen
+      </a>
+      <div class="inv-hidden-count">Zunachst {visibleTools.length} redaktionell priorisierte Akten</div>
+    </div>
+  )}
 </BaseLayout>

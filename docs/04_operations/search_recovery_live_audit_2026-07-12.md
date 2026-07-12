@@ -219,6 +219,18 @@ the full DE/EN editorial and factual review before entering the focus set.
 
 ## Actions completed during this audit
 
+### Recovery patch implemented later on 2026-07-12
+
+- `/tools/` and `/en/tools/` now server-render 36 prioritized files; the complete inventory is fetched from the noindex JSON API only after a user searches, filters, changes sorting, follows a letter filter, or requests more results.
+- Category pages expose 24 prioritized tool links and a route into the full filtered inventory instead of hundreds of direct links.
+- The shared focus list was tightened around three evidence-backed clusters and moved to `site/src/lib/searchFocus.mjs`; Google and Bing remain on the same compact sitemap contract.
+- Every Ratgeber page receives up to four related guides from a deterministic cluster/similarity pass.
+- Ratgeber `relatedTools` metadata generates a build-time reverse-link manifest, so relevant tool cards link back to their guides without repeated manual frontmatter.
+- Ratgeber titles use the shorter `<article title> | Utildesk` template; weak English ChatGPT and Gemini descriptions were rewritten.
+- Umami receives `engaged-human` only after ten seconds plus a meaningful scroll or internal click.
+- A public AI-agent evaluation checklist and repository README provide a non-personal, linkable GitHub resource.
+- Build result: 3,450 pages; compact sitemap: 112 URLs; `/tools/` HTML: 164,289 bytes; `/en/tools/` HTML: 136,241 bytes.
+
 - Full 120-URL live crawl passed with zero focus-surface conflicts.
 - Google sitemap was resubmitted and downloaded successfully with 120 URLs,
   zero warnings, and zero errors.

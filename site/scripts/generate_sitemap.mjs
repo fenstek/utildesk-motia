@@ -19,6 +19,7 @@ import {
   createToolAddedAtRankMap,
   getToolSearchIndexDecision,
 } from '../src/lib/searchIndexPolicy.mjs';
+import { FOCUS_TOOL_SLUGS } from '../src/lib/searchFocus.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -41,28 +42,6 @@ const BING_OUTPUT_FILE = join(DIST_DIR, 'sitemap-bing.xml');
 const FOCUS_OUTPUT_FILE = join(DIST_DIR, 'sitemap-focus.xml');
 const OUTPUT_FILE = GOOGLE_OUTPUT_FILE;
 const RESERVED_TOOL_SEGMENTS = new Set(['tag']);
-const FOCUS_TOOL_SLUGS = [
-  'chatgpt',
-  'claude',
-  'gemini',
-  'perplexity',
-  'microsoft-copilot',
-  'github-copilot',
-  'openai-api',
-  'langchain',
-  'cursor',
-  'tabnine',
-  'replit',
-  'n8n',
-  'zapier',
-  'make-ehemals-integromat',
-  'aws-sagemaker',
-  'figma',
-  'canva',
-  'miro',
-  'airtable',
-  'power-bi',
-];
 
 function escapeXml(str) {
   return String(str || '')

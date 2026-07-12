@@ -17,7 +17,7 @@ updated_at: 2026-05-21
 popularity: 0
 source_language: de
 translation: full
-description: "Gemini is a AI assistant for Google's AI assistant for writing, research, ideation, and Google-adjacent productivity workflows."
+description: "Google's multimodal AI assistant for research, writing and analysis, with practical connections to Workspace, Search, Android and everyday team workflows."
 ---
 # Gemini
 
