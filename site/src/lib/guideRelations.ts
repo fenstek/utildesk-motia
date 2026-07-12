@@ -12,7 +12,7 @@ const tokensFor = (entry: RatgeberEntry) =>
       .join(" ").toLowerCase().split(/[^a-z0-9]+/).filter((token) => token.length > 2),
   );
 
-export function getRelatedGuides(current: RatgeberEntry, entries: RatgeberEntry[], limit = 4) {
+export function getRelatedGuides(current: RatgeberEntry, entries: RatgeberEntry[], limit = 6) {
   const currentTokens = tokensFor(current);
   const currentCluster = CLUSTERS.findIndex((cluster) => cluster.some((token) => currentTokens.has(token)));
   return entries

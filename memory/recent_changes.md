@@ -895,3 +895,9 @@ _Last updated: 2026-07-12_
 - Added two deliberately different Gemini Web raster illustrations from the physical OptiPlex paid browser profile: a documentary team-workroom cover and a tactile isometric context-library scene. Both were cropped without visible Gemini watermark and exported as 1280x720 WebP.
 - Added four mentioned but not yet publish-ready tools to the Google Sheet source of truth as `NEEDS_REVIEW`, without creating catalog cards: `sim-ai` row 1773, `bitboard` row 1774, `wuphf` row 1775, and `scritty` row 1776.
 - Full editorial, English, tool-quality, link, and Astro build checks passed. The compact Google/Bing/focus sitemaps now contain 38 DE and 38 EN Ratgeber pages while retaining 15 staged tools per language.
+
+## 2026-07-12 - Fill all six related-guide slots
+
+- Raised the shared Ratgeber relation limit from four to six so the desktop three-column recommendation grid always renders two complete rows instead of leaving two empty cells.
+- The change applies centrally to all 38 German and 38 English Ratgeber pages while preserving the existing topic, category, freshness, deduplication, and self-exclusion ranking.
+- Full Astro build passed. Automated dist QA confirmed exactly six related-guide cards and zero self-links on all 76 localized article pages; a Playwright desktop screenshot confirmed the complete 3x2 layout visually.
