@@ -6,6 +6,8 @@ category: "Vergleich"
 eyebrow: "KI-Vergleich"
 excerpt: "KI-gestützte Entwicklerwerkzeuge haben die Art und Weise verändert, wie Teams Software schreiben, analysieren und warten."
 readTime: 9
+coverImage: /images/ratgeber/code-search-fur-ki-agenten-cover-editorial-v1.webp
+secondaryImage: /images/ratgeber/code-search-fur-ki-agenten-repository-map-editorial-v1.webp
 tags:
   - "Developer Tools"
   - "KI-Agenten"
@@ -77,6 +79,8 @@ Zerreißt man den Code nicht mehr mitten in einer Logikschleife, bleiben die inh
 Auch die semantische Suchmaschine **ogrep.be** setzt in ihrer Version 0.12.0 standardmäßig auf diese AST-bewusste Aufteilung und kombiniert sie extrem effizient mit lokalen SQLite-Datenbanken. Diese hybriden Suchstrategien vereinen blitzschnelle, lexikalische Suchen für exakte Variablennamen nahtlos mit dichten Vektor-Embeddings für semantische Ähnlichkeiten.
 
 Spezifische Ranking-Signale werten dabei die tatsächlichen Definitionen von Funktionen algorithmisch deutlich stärker als reine Erwähnungen, wodurch der Agent in Millisekunden exakt die relevantesten Code-Zeilen isolieren kann.
+
+![Ein Entwickler kartiert eine gewachsene Codebasis und markiert den kürzesten belastbaren Pfad zum relevanten Repository-Kontext](/images/ratgeber/code-search-fur-ki-agenten-repository-map-editorial-v1.webp)
 
 ## Graphen-Intelligenz für den architektonischen Durchblick
 

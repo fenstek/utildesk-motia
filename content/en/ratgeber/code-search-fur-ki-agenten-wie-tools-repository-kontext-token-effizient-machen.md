@@ -6,6 +6,8 @@ category: "Comparison"
 eyebrow: "AI Comparison"
 excerpt: "AI-powered developer tools have changed how teams write, analyze, and maintain software."
 readTime: 9
+coverImage: /images/ratgeber/code-search-fur-ki-agenten-cover-editorial-v1.webp
+secondaryImage: /images/ratgeber/code-search-fur-ki-agenten-repository-map-editorial-v1.webp
 tags:
   - "Developer Tools"
   - "AI Agents"
@@ -77,6 +79,8 @@ When code is no longer cut apart in the middle of a logic block, the relevant re
 The semantic search engine **ogrep.be** also uses AST-aware splitting by default in version 0.12.0 and combines it efficiently with local SQLite databases. These hybrid strategies join fast lexical search for exact variable names with dense vector embeddings for semantic similarity.
 
 Specific ranking signals give real function definitions much more weight than simple mentions, allowing an agent to isolate the most relevant lines of code within milliseconds.
+
+![An engineer maps a mature codebase and marks the shortest reliable route to the repository context that matters](/images/ratgeber/code-search-fur-ki-agenten-repository-map-editorial-v1.webp)
 
 ## Graph Intelligence for Architectural Context
 
