@@ -1,5 +1,14 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-07-11_
+_Last updated: 2026-07-12_
+
+## 2026-07-12 - Fresh Google/Bing search recovery audit
+
+- Re-audited all 120 compact sitemap URLs live: the three sitemap sets are identical and no focus URL has an HTTP, canonical, robots, Googlebot, title, or content-type conflict.
+- Fresh GSC API readback after resubmission shows `120 submitted`, `0 indexed`, no warnings/errors; known core pages remain crawled-not-indexed with old March-April crawl dates, while Ratgeber remains unknown to Google.
+- Bing continues healthy crawling but reported `InIndex` fell from `1909` on 2026-06-09 to `173` on 2026-07-10, with zero impressions in the latest 28-day traffic window and no inbound-link targets in the Bing backlink API.
+- Identified the main strategy conflict: `/tools/` is 3.78 MB and exposes 1229 direct tool links despite the compact sitemap, while category/tag surfaces keep the crawl graph broad across a 3450-page build.
+- Saved the evidence and prioritized crawl-focus, Ratgeber-cluster, focus-tool, authority, and measurement plan in `docs/04_operations/search_recovery_live_audit_2026-07-12.md`.
+- Resubmitted the current Google sitemap and Bing focus feed; submitted nine changed Ratgeber/home URLs through both IndexNow endpoints with HTTP 200 responses.
 
 ## 2026-07-11 - Remaining Ratgeber illustration backfill
 
