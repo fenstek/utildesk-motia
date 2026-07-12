@@ -313,3 +313,11 @@
 - The 2026-04-24 article `ist-deine-website-bereit-fur-ki-agenten-so-gelingt-der-einsatz-in-der-praxis` was cleaned of visible citation residue before redeploy.
 - `opcl` has an active `openclaw-ratgeber-publish-consumer` cron every 5 minutes, isolated under `/opt/openclaw/workspace/ratgeber-publisher`.
 - As of setup time, `opcl` can read GitHub but cannot push to `fenstek/utildesk-motia` over HTTPS without an added `GITHUB_TOKEN` or SSH/deploy key; the consumer performs `git push --dry-run` before changing a queue item to `publishing`, so missing credentials leave requests pending instead of touching production.
+
+## 2026-07-12 Current Ratgeber candidate-factory runtime
+
+- Runtime host: physical OptiPlex, `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman`.
+- NotebookLM profile: paid `vasjakotov11@gmail.com`, `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`, refreshed from the authenticated Chrome CDP session before every CLI stage.
+- Active stages: source inbox 07:15, daily discovery 08:00, hourly research bridge/orchestrator/runner/rewrite, local review server, six-hour private Cloudflare review sync, and publish/rework queue consumers.
+- `opcl` has no active `agent-newsman` cron after the migration. Historical `opcl` descriptions above are retained as history and must not be treated as current topology.
+- Latest end-to-end factory proof: Shared AI Workspaces candidate `20260712-shared-ai-workspaces-wie-teams-kontext-memory-und-agentenraeume--trend_piece-6b68f8e3`, NotebookLM notebook `445b5a3b-a946-45db-85a3-1b7064fece3b`, article QA 100, status `review_ready`.
