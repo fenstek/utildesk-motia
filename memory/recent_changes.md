@@ -916,3 +916,8 @@ _Last updated: 2026-07-12_
 - Mobile now uses seven compact single-column cards initially, with six more per reveal; the previous first card was about 723px high, while the new card system is about 568px with no horizontal overflow.
 - Added an isolated `ratgeber-archive.css` layer so archive-specific geometry does not affect article reading pages, the tool catalog, or other decision-template surfaces.
 - Centered the archive load-more label explicitly in both axes so inherited button layout cannot pin the text to the upper-left edge.
+
+## 2026-07-13 - KI-Video cover watermark crop
+
+- Replaced the shared DE/EN KI-Video 2026 cover with a clean 16:9 crop that removes the residual Gemini mark from the lower-right corner while preserving the photographic composition.
+- Kept the public asset URL unchanged and used the image-only sync path, so no tool-card or route rebuild was required.
