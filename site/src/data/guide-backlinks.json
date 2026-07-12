@@ -97,6 +97,11 @@
         "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
         "title": "Produktivitäts-Agenten im Alltag: Wo sie wirklich Zeit sparen",
         "excerpt": "Produktivitäts-Agenten sparen nicht automatisch Zeit. Der Überblick zeigt, wann Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph und Copilot wirklich helfen und wo Teams erst Grenzen bauen müssen."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
       }
     ],
     "openai-gpt-agents": [
@@ -251,6 +256,11 @@
         "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
         "title": "Persistente KI-Memory 2026: Wie KI Kontext zwischen Sessions, Projekten und Modellen behält",
         "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
       }
     ],
     "perplexity": [
@@ -441,6 +451,11 @@
         "excerpt": "Persistente KI-Memory entscheidet, welche Erinnerungen ein Assistent wirklich behalten darf. Der Überblick zeigt Plattform-Memory, Projektkontext, Agenten-State und externe Memory-Layer."
       },
       {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
+      },
+      {
         "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
         "title": "Vibe Coding nach dem Hype: Wie Teams AI-Code prüfen, testen und reviewen",
         "excerpt": "Vibe Coding beschleunigt Prototypen, aber produktive Teams brauchen Verifikation: Tests, kleine Diffs, Architekturregeln und Reviews, die KI-Code ernst nehmen."
@@ -526,6 +541,11 @@
         "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
         "title": "Perplexity Alternativen: Das Ende der Linkliste und der Aufstieg spezialisierter Antwort-Maschinen",
         "excerpt": "Wer heute nach Informationen sucht, will keine Linkliste mehr abarbeiten, sondern eine Antwort erhalten."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
       },
       {
         "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
@@ -972,6 +992,11 @@
         "excerpt": "Mehrere Coding-Agenten helfen nicht, weil sie magisch objektiv sind. Sie helfen, wenn Planung, Umsetzung, Review und Verantwortung sauber getrennt bleiben."
       },
       {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
+      },
+      {
         "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
         "title": "Vibe Coding nach dem Hype: Wie Teams AI-Code prüfen, testen und reviewen",
         "excerpt": "Vibe Coding beschleunigt Prototypen, aber produktive Teams brauchen Verifikation: Tests, kleine Diffs, Architekturregeln und Reviews, die KI-Code ernst nehmen."
@@ -1197,6 +1222,11 @@
         "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
         "title": "Open-source AI Agents im Vergleich: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph und Cline",
         "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI und LangGraph wirken ähnlich, lösen aber ganz unterschiedliche Agentenprobleme."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
       }
     ],
     "cline": [
@@ -1338,6 +1368,13 @@
         "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
         "title": "Rechnungen automatisch aus E-Mails auslesen: Tools und Workflows",
         "excerpt": "Ein guter E-Mail-zu-Rechnung-Workflow trennt Eingang, OCR, Prüfung und Buchhaltung, statt PDFs blind an ein Zielsystem weiterzuschieben."
+      }
+    ],
+    "google-workspace": [
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: Wie Teams Kontext und Agentenarbeit wirklich teilen",
+        "excerpt": "Shared AI Workspaces holen KI-Arbeit aus privaten Chats. Der Beitrag zeigt, wie Teams Kontext, Agenten-State, Freigaben und belastbare Ergebnisse gemeinsam organisieren."
       }
     ],
     "google-search-console": [
@@ -1446,6 +1483,11 @@
         "slug": "produktivitaets-agenten-im-alltag-wo-sie-wirklich-zeit-sparen",
         "title": "Productivity agents in daily work: where they really save time",
         "excerpt": "Productivity agents do not save time automatically. This guide shows when Lindy, Zapier Agents, n8n, Gumloop, CrewAI, LangGraph and Copilot actually help and where teams need boundaries first."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
       }
     ],
     "openai-gpt-agents": [
@@ -1600,6 +1642,11 @@
         "slug": "persistente-ki-memory-2026-kontext-zwischen-sessions-projekten-und-modellen",
         "title": "Persistent AI memory 2026: how AI keeps context across sessions, projects and models",
         "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
       }
     ],
     "perplexity": [
@@ -1790,6 +1837,11 @@
         "excerpt": "Persistent AI memory decides which context an assistant may keep. This guide separates platform memory, project context, agent state and external memory layers."
       },
       {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
+      },
+      {
         "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
         "title": "Vibe coding after the hype: how teams test and review AI code",
         "excerpt": "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
@@ -1875,6 +1927,11 @@
         "slug": "perplexity-alternativen-das-ende-der-linkliste-und-der-aufstieg-spezialisierter",
         "title": "Perplexity Alternatives: The End of the Link List and the Rise of Specialized Answer Engines",
         "excerpt": "Anyone searching for information today no longer wants to work through a list of links — they want an answer."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
       },
       {
         "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
@@ -2321,6 +2378,11 @@
         "excerpt": "More coding agents do not create automatic objectivity. They help when planning, implementation, review and accountability stay clearly separated."
       },
       {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
+      },
+      {
         "slug": "vibe-coding-nach-dem-hype-wie-teams-ai-code-pruefen-testen-und-reviewen",
         "title": "Vibe coding after the hype: how teams test and review AI code",
         "excerpt": "Vibe coding speeds up prototypes, but production teams need verification: tests, small diffs, architecture rules and serious reviews."
@@ -2546,6 +2608,11 @@
         "slug": "open-source-ai-agents-im-vergleich-hermes-agent-openclaw-openhands-autogen-crewai-langgraph-und-cline",
         "title": "Open-source AI agents compared: Hermes Agent, OpenClaw, OpenHands, AutoGen, CrewAI, LangGraph and Cline",
         "excerpt": "Hermes Agent, OpenClaw, Cline, OpenHands, AutoGen, CrewAI and LangGraph look similar from far away, but solve very different agent problems."
+      },
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
       }
     ],
     "cline": [
@@ -2687,6 +2754,13 @@
         "slug": "rechnungen-automatisch-aus-e-mails-auslesen-tools-workflows",
         "title": "Read Invoices Automatically from Emails: Tools and Workflows",
         "excerpt": "A good email-to-invoice workflow separates intake, OCR, review and accounting instead of forwarding PDFs blindly."
+      }
+    ],
+    "google-workspace": [
+      {
+        "slug": "shared-ai-workspaces-team-kontext-memory-agenten",
+        "title": "Shared AI Workspaces: How Teams Can Share Context and Agent Work",
+        "excerpt": "Shared AI workspaces move useful AI work out of private chats. This guide explains how teams can share context, agent state, approvals and durable outcomes without creating a memory landfill."
       }
     ],
     "google-search-console": [
