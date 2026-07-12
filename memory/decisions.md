@@ -179,3 +179,12 @@
 - Do not replace the NotebookLM draft with a self-written article and then "merge in" the draft later. The correct order is: retrieve the NotebookLM draft, human-edit it, fact-check it against primary/current sources, add internal links, create or approve final WebP illustrations, then publish.
 - If the NotebookLM draft is temporarily inaccessible because SSH/Tailscale/NotebookLM auth is blocked, stop the publication/import step and surface the access blocker. Independent research may be used only as fact-check notes, not as a substitute article.
 - If any provisional self-written markdown was created before the NotebookLM draft was retrieved, delete it before continuing so the final diff remains NotebookLM-first.
+
+## 2026-07-12 - OptiPlex is the only Ratgeber candidate-factory host
+
+- The complete automated Ratgeber candidate-preparation contour lives on the physical OptiPlex under `jgdus@100.98.97.98:/home/jgdus/projects/agent-newsman`. Do not restore Newsman harvesting, topic orchestration, NotebookLM generation, article rewrite, or review sync crons on `opcl`.
+- NotebookLM must continue to use only the paid `vasjakotov11@gmail.com` browser session through `NOTEBOOKLM_HOME=/home/jgdus/.notebooklm`. Refresh its CLI storage state from the authenticated OptiPlex Chrome CDP session before each NotebookLM stage; never copy the session to `opcl`.
+- Source fishing runs before daily discovery. The topic harvester must merge the normal daily candidate stream with `data/source_inbox/source_inbox_candidates.jsonl`; the inbox is not a disconnected manual archive.
+- The automated factory prepares research-backed review candidates only. Public publication still requires the established NotebookLM-first human editorial pass, current fact-checking, internal links, DE/EN copy, two approved distinct WebP illustrations, build verification, commit/push, and live deployment.
+- A single unavailable source must not block a candidate or rewrite forever. Record and skip URL-import timeouts when enough other grounding sources remain, and preserve the existing article whenever a generated rewrite scores worse.
+- Machine uploads to the private Ratgeber review backend must target the Pages domain `https://utildesk-motia.pages.dev/admin/ratgeber/api/upload`; do not use the public domain for this POST path.
