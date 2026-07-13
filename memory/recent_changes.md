@@ -1063,3 +1063,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN Dovetail card around its current customer-intelligence platform: connected signals, evidence-backed AI analysis, chat/search, governance, and traceability rather than generic qualitative-data claims.
 - Added a bounded rollout, source and counter-evidence rules, consent/retention boundaries, four verified internal alternatives, and FAQ answers. Strict audit no longer flags `dovetail`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Google Patents
+
+- Rebuilt the DE/EN card as a reproducible prior-art research guide, clearly separating the free search interface from legal status, FTO, filing, and patent-professional work.
+- Added a search protocol, official-register cross-checks, documented uncertainty, five verified internal patent-research alternatives, and FAQ answers. Strict audit no longer flags `google-patents`; root editorial, English, and whitespace validation pass.
