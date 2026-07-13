@@ -1053,3 +1053,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN Deepgram card around the current Voice AI platform: real-time and batch STT, TTS, audio intelligence, the Voice Agent API, and cloud/self-hosted deployment rather than the legacy transcription-only template.
 - Added a measured voice-agent pilot, latency and human-handoff controls, privacy and operating boundaries, current alternatives, and reviewable FAQ answers. Strict audit no longer flags `deepgram`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Be My Eyes
+
+- Rebuilt the DE/EN card as an accessibility guide: live volunteer assistance, Be My AI, Service Directory, desktop and smart-glasses context, with personal agency and privacy rather than generic automation language.
+- Added practical safe-use boundaries for sensitive or high-stakes situations, a company-accessibility checklist, verified internal alternatives, and FAQ answers. Strict audit no longer flags `be-my-eyes`; root editorial, English, and whitespace validation pass.
