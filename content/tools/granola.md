@@ -2,95 +2,81 @@
 slug: granola
 title: Granola
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Produktivität
-price_model: "Je nach Plan"
+editorial_batch: "2026-07-13-full-tool-card-editorial"
+category: Productivity
+price_model: "Plan-based"
 tags: [ai, meeting, notes, assistant]
 official_url: "https://www.granola.ai/"
+description: "KI-Notizbuch für Meetings: Granola verbindet eigene Stichpunkte mit Transkript und Kontext, ohne als Bot am Videoanruf teilzunehmen."
+updated_at: 2026-07-13
+lastReviewed: 2026-07-13
 popularity: 0
 tier: "D"
 generated_at: "2026-05-12"
 ---
 # Granola
 
-Granola ist ein KI-Meeting-Assistent, der Notizen, Gesprächsstruktur und Nachbereitung unterstützen soll. Besonders interessant ist der Ansatz, menschliche Notizen mit KI-Zusammenfassung zu verbinden, statt Meetings nur vollständig transkribieren zu lassen.
+Granola ist ein KI-Notizbuch für Meetings, das eigene Stichpunkte mit dem Gesprächskontext und einer Transkription zu einer strukturierten Nachbereitung verbindet. Es läuft auf Desktop oder iPhone, wird für ein Meeting manuell gestartet und nimmt über das Gerät-Audio auf, statt einen sichtbaren Meeting-Bot in Zoom, Google Meet oder Microsoft Teams zu platzieren. Das ist praktisch für persönliche Gesprächsnotizen, ersetzt aber weder die Zustimmung der Beteiligten noch die Prüfung von KI-generierten Aussagen.
 
-## Für wen ist Granola geeignet?
+## Für wen eignet sich Granola?
 
-Granola passt zu Wissensarbeitern, Produktteams, Führungskräften, Sales- und Projektrollen, die viele Meetings haben und bessere Nachbereitung brauchen. Für rechtlich sensible Gespräche oder stark regulierte Umgebungen muss die Aufzeichnung und Verarbeitung besonders geprüft werden.
+Granola passt zu Personen mit vielen Gesprächen, etwa in Produktarbeit, Beratung, Vertrieb, Recruiting oder Führung. Der besondere Nutzen entsteht, wenn während des Gesprächs kurze eigene Markierungen genügen sollen und danach Entscheidungen, offene Fragen oder ein Follow-up in eine lesbare Form gebracht werden. Wer ausschließlich ein zentral verwaltetes Sitzungsprotokoll mit strengen Aufbewahrungsregeln braucht, sollte Granola zuerst gegen die Governance-Anforderungen der eigenen Organisation prüfen.
 
-## Typische Einsatzszenarien
+## Wie der Notizprozess funktioniert
 
-- Meetingnotizen während des Gesprächs strukturieren.
-- Entscheidungen, offene Punkte und nächste Schritte nachbereiten.
-- Kundengespräche oder interne Abstimmungen leichter zusammenfassen.
-- Persönliche Notizen mit KI-gestützter Verdichtung kombinieren.
-- Wiederkehrende Meetingmuster und Follow-ups besser erfassen.
+Die App zeigt anstehende Termine aus Google Calendar oder Outlook an. Nach dem Öffnen einer Meeting-Notiz kann Granola Mikrofon- und Systemaudio verarbeiten; es tritt dem Anruf nicht als Teilnehmer bei und startet nicht automatisch. Während des Gesprächs können eigene Stichpunkte als Prioritätssignale dienen. Nach dem Termin werden Transkript und Notizen zu einer strukturierten Fassung angereichert. Persönliche Eingaben und KI-Ergänzungen bleiben dabei unterscheidbar, sodass die Quelle wichtiger Aussagen kontrolliert werden kann.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/granola-editorial.webp" alt="Illustration zu Granola: Meetingnotizbuch sammelt Sprachwellen, Entscheidungen und Aufgaben" loading="lazy" decoding="async" />
+  <img src="/images/tools/granola-editorial.webp" alt="Beleuchtetes Meeting-Notizbuch mit Sprachwellen, markierten Entscheidungen und offenen Aufgaben" loading="lazy" decoding="async" />
 </figure>
 
-## Hauptfunktionen
+## Praktischer Workflow
 
-- KI-gestützte Meetingnotizen und Zusammenfassungen.
-- Fokus auf persönliche Notizergänzung statt nur Transkriptablage.
-- Nachbereitung von Entscheidungen, Aufgaben und Gesprächspunkten.
-- Integration in Kalender- und Meeting-Routinen je nach Plattform.
+Für einen belastbaren Einsatz lohnt sich ein klarer Ablauf: Erstens Kalender verbinden und nur die relevanten Termine auswählen. Zweitens vor dem Gespräch Ziel, Teilnehmer und sensible Themen in eigenen Stichpunkten festhalten. Drittens Granola aktiv öffnen und die Beteiligten über die erweiterte Notizerstellung informieren. Viertens nach dem Termin die Zusammenfassung gegen die eigenen Notizen und kritische Passagen gegen das Transkript prüfen. Fünftens Entscheidungen und Aufgaben in das führende Projekt-, CRM- oder Ticketsystem übertragen, statt Granola zum alleinigen System of Record zu machen.
 
-## Vorteile und Grenzen
+## Notizen, Suche und Integrationen
 
-### Vorteile
+Notizen können in privaten oder geteilten Bereichen, Ordnern und Team-Spaces organisiert werden. Granola Chat kann die eigene Meeting-Historie durchsuchen und Fragen zu Gesprächen beantworten. Je nach Plan gibt es Verbindungen zu Slack, Notion, Zapier sowie zu CRM-Systemen wie Attio, HubSpot und Affinity; außerdem gibt es MCP-Zugriff und eine API für bestimmte Business- und Enterprise-Angebote. Diese Integrationen sind Übergaben, keine automatische Garantie für korrekte Tickets oder CRM-Daten: Feldmapping, Berechtigungen und Freigabe vor dem Versand gehören in den Workflow.
 
-- Sehr nützlich für Meeting-heavy Rollen.
-- Kann Nachbereitung deutlich beschleunigen.
-- Hilft, persönliche Notizen in brauchbare Zusammenfassungen zu verwandeln.
+## Qualitätskontrolle und Grenzen
 
-### Grenzen
+Bewertet werden sollte nicht die schönste Zusammenfassung, sondern die Trefferquote bei Entscheidungen, Verantwortlichen, Terminen und Unsicherheiten. Für einen Pilot genügen einige typische Meetings: zwei Personen vergleichen, ob dieselben Beschlüsse gefunden werden, wie oft Sprecher oder Fachbegriffe falsch erkannt werden und wie viel Nacharbeit pro Notiz anfällt. Schlechte Raumakustik, überlappende Stimmen, Dialekte und unklare Formulierungen können das Ergebnis verschlechtern. Hochrisiko-Inhalte wie Rechts-, Personal- oder medizinische Entscheidungen gehören nicht ungeprüft in eine automatische Zusammenfassung.
 
-- Audioqualität, Sprecherwechsel und Fachbegriffe beeinflussen Ergebnisse.
-- Aufzeichnung und Zustimmung müssen sauber geregelt sein.
-- KI-Zusammenfassungen können Prioritäten falsch gewichten.
+## Datenschutz und Governance
 
-## Workflow-Fit
+Granola speichert nach eigenen Sicherheitsangaben keine Meeting-Audioaufnahmen dauerhaft: Auf Desktop wird in Echtzeit transkribiert; auf iPhone kann Audio während der Verarbeitung vorübergehend zwischengespeichert werden. Gespeichert werden Transkript und die Notizen, die man selbst bereitstellt. Notizen sind standardmäßig privat und werden erst durch eine bewusste Freigabe sichtbar. Der Anbieter nennt SOC 2 Type II und eine verfügbare GDPR-Datenverarbeitungsvereinbarung. Drittanbieter wie OpenAI oder Anthropic dürfen die Daten laut Anbieter nicht zum Training ihrer Modelle verwenden; Nutzer können das anbieterinterne Training anonymisierter Daten in den Einstellungen abwählen, für Enterprise ist es standardmäßig deaktiviert. Das klärt nicht automatisch Einwilligung, arbeitsrechtliche Vorgaben, Aufbewahrung oder Datenklassifizierung im eigenen Unternehmen.
 
-Granola sollte mit Meeting-Regeln kombiniert werden: Zustimmung klären, eigene Kernnotizen machen, KI-Zusammenfassung direkt nach dem Termin prüfen und Aufgaben in das echte Projekt- oder CRM-System übertragen.
+## Preise und reale Kosten
 
-## Datenschutz & Daten
+Granola arbeitet mit einem Basic-Angebot sowie kostenpflichtigen Business- und Enterprise-Stufen. Der Preis ist deshalb nicht nur eine Sitzplatzfrage: relevant sind Historienzugriff, fortgeschrittene Modelle, Kalender- und CRM-Verbindungen, API- oder MCP-Nutzung, Teamverwaltung und die Zahl der Nutzer. Basic hat laut offizieller Dokumentation ein begrenztes Zeitfenster für die sichtbare Meeting-Historie; bezahlte Stufen erweitern diesen Zugriff. Vor dem Kauf sollte ein Team prüfen, welche Notizen langfristig auffindbar sein müssen, welche Exporte benötigt werden und ob zusätzlicher Prüfaufwand den Zeitgewinn aufzehrt. Maßgeblich bleiben die aktuelle Preisseite und die Bedingungen des konkreten Plans.
 
-Meetings enthalten Kundendaten, Strategie, Personalthemen und vertrauliche Entscheidungen. Vor Nutzung sind Einwilligung, Speicherort, Zugriff und Löschregeln zentral.
+## Alternativen
 
-## Preise & Kosten
-
-Im Katalog ist Granola mit dem Preismodell **Je nach Plan** geführt. Für eine echte Entscheidung sollten aktuelle Limits, Exportmöglichkeiten, Teamfunktionen, Datenschutzbedingungen und mögliche Zusatzkosten direkt beim Anbieter geprüft werden.
-
-**Zum Anbieter:** https://www.granola.ai/
-
-## Alternativen zu Granola
-
-- Otter.ai: stark bei Transkription und Meeting-Zusammenfassung.
-- Fireflies.ai: Meeting-Assistent mit Integrationen.
-- Fathom: schnelle Meetingnotizen und Clips.
-- Avoma: stärker für Sales- und Conversation-Intelligence.
-- Notion AI: gut, wenn Notizen im Notion-Workflow weiterleben.
+- [Otter.ai](/tools/otter-ai/): Sinnvoll, wenn Transkription, Sprechererkennung und ein stärker transkriptzentrierter Ablauf wichtiger sind als persönliche Rohnotizen.
+- [Fireflies.ai](/tools/fireflies-ai/): Passender für Teams, die Meeting-Erfassung und viele Automationen in bestehende Arbeitsabläufe verbinden möchten.
+- [Fathom](/tools/fathom/): Interessant für schnelle Zusammenfassungen und Follow-ups rund um Kundengespräche und Vertriebsarbeit.
 
 ## Redaktionelle Einschätzung
 
-Granola ist stark, wenn Meetings nicht nur dokumentiert, sondern wirklich nachbereitet werden sollen. Die Verantwortung für Entscheidungen bleibt trotzdem beim Menschen.
+Granola empfehle ich Teams und Einzelpersonen, die in vielen Meetings aufmerksam bleiben und trotzdem eine persönliche, prüfbare Nachbereitung benötigen. Wert entsteht, wenn eigene Markierungen, menschliche Kontrolle und die Übergabe in ein führendes Arbeitssystem verbindlich geregelt sind. Für zentralisierte Bot-Aufzeichnung, sehr tiefe Sales-Analytics oder streng vorgegebene Compliance-Workflows ist eine spezialisierte Alternative wahrscheinlich die bessere Wahl.
 
 ## FAQ
 
-**Ist Granola für Einsteiger geeignet?**
+**Muss Granola einem Zoom-, Meet- oder Teams-Meeting beitreten?**
 
-Für einen ersten Test ist Granola meist machbar. Vor produktiver Nutzung sollten Ziel, Datenlage, Kosten und Qualitätsprüfung aber klar feststehen.
+Nein. Die Desktop-App nutzt nach manuellem Start Mikrofon- und Computer-Audio und erscheint laut Anbieter nicht als Bot oder Teilnehmer im Meeting. Trotzdem sollte die Organisation die lokale Rechtslage und die Zustimmung der Gesprächsteilnehmer klären.
 
-**Wann lohnt sich Granola besonders?**
+**Startet Granola automatisch bei jedem Kalendertermin?**
 
-Besonders lohnt sich Granola, wenn der beschriebene Workflow regelmäßig vorkommt, die Ergebnisse messbar geprüft werden und das Tool eine reale Engstelle reduziert statt nur zusätzliche Komplexität einzuführen.
+Nein. Der Kalender liefert anstehende Termine und Kontext; die Transkription beginnt erst, wenn man eine Notiz für das Meeting aktiv öffnet beziehungsweise Granola startet.
 
-**Worauf sollte man vor dem Einsatz achten?**
+**Werden die Audioaufnahmen dauerhaft gespeichert?**
 
-Vor dem Einsatz von Granola sollten Datenzugriff, Rechte, Kosten, Exportmöglichkeiten und ein menschlicher Qualitätscheck geklärt sein.
+Nach den offiziellen Sicherheitsangaben speichert Granola Meeting-Audio nicht dauerhaft. Transkript und bereitgestellte Notizen bleiben jedoch Daten mit eigenem Schutz- und Löschbedarf.
+
+**Wann reicht der Basic-Plan nicht mehr aus?**
+
+Wenn ältere Notizen regelmäßig gebraucht werden oder Kalender-, CRM-, Team- und API-Übergaben zum Kernprozess gehören, müssen die Grenzen des Basic-Plans geprüft werden. Die aktuelle Planbeschreibung entscheidet über den konkreten Funktionsumfang.
