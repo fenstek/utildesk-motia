@@ -1761,6 +1761,21 @@
         "openart-director",
         "propane"
       ]
+    },
+    {
+      "id": "2026-07-13-tool-quality-campaign-01",
+      "source": "manual corrective editorial campaign based on content-structure audit",
+      "note": "Rewrote weak or template-contaminated DE/EN pairs from scratch. Each card now has a tool-specific workflow fit, limits, governance guidance, verified internal alternatives, and non-generic FAQ.",
+      "languages_checked": [
+        "de",
+        "en"
+      ],
+      "slugs": [
+        "airbyte",
+        "cohere",
+        "languagetool",
+        "zoho-writer"
+      ]
     }
   ]
 }

@@ -180,6 +180,22 @@ html[data-design="decision"] .rg-head .inv-head-h1 {
 
 .akte-feature-visual .tool-editorial-figure {
   margin: 0 !important;
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid #171713;
+  border-radius: 16px;
+  background: #e9e4d8;
+}
+
+/* Tool art was generated in several legacy ratios. Present it in one stable
+   editorial frame instead of letting a square asset make a whole page taller. */
+.akte-feature-visual .tool-editorial-figure > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .inv-row-art {
