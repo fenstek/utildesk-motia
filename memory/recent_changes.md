@@ -993,6 +993,11 @@ _Last updated: 2026-07-12_
 - Rewrote the DE/EN Sistrix card around defensible SEO work: visibility-index interpretation, first-party Search Console/analytics cross-checks, intent-led keyword clustering, validation of technical and link signals, and controlled reporting.
 - Strict audit no longer flags `sistrix`; root editorial, English, and whitespace validation pass.
 
+## 2026-07-13 - Tool-card quality campaign, Snowflake
+
+- Rewrote the DE/EN Snowflake card as a cloud-data-platform decision guide: separated storage/compute, virtual-warehouse cost controls, bounded data pilots, data ownership and sharing, and operational governance.
+- Strict audit no longer flags `snowflake`; root editorial, English, and whitespace validation pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
