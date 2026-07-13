@@ -2,97 +2,86 @@
 slug: granola
 title: Granola
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-13-full-tool-card-editorial"
 category: Productivity
-price_model: Plan-based
+price_model: "Plan-based"
 tags:
   - ai
   - meeting
   - notes
   - assistant
-official_url: 'https://www.granola.ai/'
+official_url: "https://www.granola.ai/"
+description: "AI meeting notepad that combines your rough notes with transcript and context, without joining the video call as a visible meeting bot."
+updated_at: 2026-07-13
+lastReviewed: 2026-07-13
 popularity: 0
-description: 'An AI meeting assistant that creates notes, highlights key points, and assigns tasks so teams can focus on what matters.'
+tier: "D"
+generated_at: "2026-05-12"
 translation: full
 ---
 # Granola
 
-Granola is an intelligent meeting assistant designed to make meetings more efficient. The software uses artificial intelligence to automatically create notes, highlight important points, and assign tasks. In this way, Granola helps teams save time and stay focused on what matters most.
+Granola is an AI meeting notepad that combines your rough notes with conversation context and a transcript to produce structured follow-up. It runs on desktop or iPhone, is started manually for a meeting, and captures device audio instead of placing a visible meeting bot in Zoom, Google Meet, or Microsoft Teams. That makes it useful for personal, reviewable meeting notes, but it does not remove the need to notify participants, obtain any required consent, or check AI-generated claims before acting on them.
 
-## Who is Granola suitable for?
+## Who is Granola for?
 
-Granola is aimed at professionals and managers, project teams, and organizations of all sizes that hold meetings regularly and value structured, traceable minutes. The tool is especially useful for teams working remotely or in hybrid setups that are looking for a digital solution to document and follow up on meeting outcomes. Granola can also be a great help for individuals who want to automate their meeting notes.
+Granola is aimed at people with dense schedules of conversations, including product, consulting, sales, recruiting, and leadership roles. Its distinctive fit is a workflow where short personal markers are enough during the call and decisions, open questions, and follow-up need to be shaped afterwards. Teams that primarily need a centrally governed meeting archive with strict retention rules should first compare Granola with their compliance and records requirements.
+
+## How the note-taking model works
+
+The app can show upcoming events from Google Calendar or Outlook. Once you open a meeting note, Granola can process microphone and system audio; it does not join the call as a participant and does not auto-start. During the conversation, your rough notes can point the AI towards what matters. After the meeting, Granola enhances those notes with transcript context. Personal input and AI additions remain distinguishable, which gives a reviewer a practical way to check where important statements came from.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/granola-editorial.webp" alt="Illustration for Granola: meeting notebook gathers speech waves, decisions and tasks" loading="lazy" decoding="async" />
+  <img src="/images/tools/granola-editorial.webp" alt="Lit meeting notebook with speech waves, marked decisions, and open tasks" loading="lazy" decoding="async" />
 </figure>
 
-## Key features
+## A practical workflow
 
-- **Automatic note creation:** AI-based transcription and summarization of meetings in real time.
-- **Task and scheduling management:** Assignment of to-dos directly from meeting notes.
-- **Integration with calendars and collaboration tools:** Connection to common platforms such as Google Calendar, Microsoft Teams, or Slack.
-- **Search function:** Quickly find information from past meetings.
-- **Multilingual support:** Capture and process meetings in different languages.
-- **Customizable meeting templates:** Templates for different types of meetings to improve structure.
-- **Data security:** Encryption and GDPR-compliant data storage.
-- **User-friendly dashboard:** Clear display of all meetings, notes, and tasks.
+Use a bounded process rather than treating the app as an automatic record system. First connect the calendar and select relevant meetings. Before the call, write the objective, participants, and sensitive topics in rough notes. Start Granola deliberately and explain the enhanced note-taking to participants. After the call, compare the result with your own notes and inspect critical claims against the transcript. Finally move decisions and tasks into the system of record for your project, CRM, or ticket queue. The last step prevents a polished note from becoming an unowned action list.
 
-## Pros and cons
+## Notes, search, and integrations
 
-### Pros
+Notes can be organized in private or shared areas, folders, and team spaces. Granola Chat can search meeting history and answer questions about conversations. Depending on the plan, integrations include Slack, Notion, Zapier, and CRM systems such as Attio, HubSpot, and Affinity; Granola also documents MCP access and an API for certain Business and Enterprise offerings. These connections move information but do not validate it. Field mapping, permission scope, destination review, and an approval step before creating tickets or CRM updates still belong in the operating procedure.
 
-- Saves time through automatic notes and summaries.
-- Improves traceability of decisions and tasks.
-- Supports collaboration in distributed teams.
-- Flexible for different meeting types and industries.
-- Integration with many familiar tools improves workflow convenience.
-- Privacy-focused features provide security.
+## Quality checks and limitations
 
-### Cons
+Evaluate more than how polished a summary looks. Measure whether decisions, owners, dates, and uncertainty are captured correctly. For a pilot, sample typical meetings and compare two reviewers on the same notes. Track speaker and terminology errors, the amount of correction work, and whether follow-up tasks are actually completed. Poor room acoustics, overlapping speakers, accents, and vague language can reduce quality. Legal, HR, medical, or other high-stakes decisions should never be accepted from an AI summary without human review.
 
-- Costs may apply depending on the scope of features.
-- Automatic transcription can vary depending on audio quality.
-- Some users may need time to learn the software.
-- Some advanced features may only be available in higher-tier pricing plans.
+## Privacy and governance
 
-## Pricing & costs
+Granola says it does not permanently store meeting audio: on desktop it transcribes in real time, while on iPhone audio may be cached temporarily during processing. The stored record consists of the transcript and notes you provide. Notes are private by default and become visible to others only when you choose to share them. The provider cites SOC 2 Type II and makes a GDPR data processing agreement available. According to its security information, third-party providers such as OpenAI and Anthropic are not allowed to train on customer data. Users can opt out of Granola's training on anonymized data in Settings, and this is off by default for Enterprise. These statements do not replace a decision about consent, employment law, retention, classification, or deletion in your own organization.
 
-Granola's pricing varies depending on the provider and the selected plan. There is often a free basic version with limited features as well as paid subscriptions that offer advanced features and more user access. Prices may be billed monthly or annually and depend on the feature set and the number of users.
+## Pricing and operating cost
 
-## Alternatives to Granola
+Granola offers a Basic tier alongside paid Business and Enterprise tiers. The decision is not only about seats: assess access to older history, advanced models, calendar and CRM connections, API or MCP use, team administration, and the number of people who need shared notes. Official documentation describes a limited history window on Basic, while paid tiers extend access. Before buying, calculate which meetings must remain searchable, which exports or downstream automations are required, and how much review time is still needed. The current pricing page and the terms for the selected plan remain the source of truth because limits can change.
 
-- **Otter.ai:** A widely used meeting transcription service with AI-powered summaries.
-- **Fireflies.ai:** An automatic meeting assistant focused on notes and task management.
-- **Fellow.app:** Collaborative meeting software with agenda management and minutes features.
-- **Avoma:** AI-powered meeting analysis and coaching features.
-- **Microsoft OneNote:** Not specifically for meetings, but flexible for note management and collaboration.
+## Alternatives
+
+- [Otter.ai](/en/tools/otter-ai/): Better suited when transcription, speaker recognition, and a transcript-first workflow matter more than personal rough notes.
+- [Fireflies.ai](/en/tools/fireflies-ai/): A stronger fit for teams that want meeting capture connected to many workflow automations.
+- [Fathom](/en/tools/fathom/): Worth comparing for fast summaries and follow-up around customer conversations and sales work.
+
+## Editorial Assessment
+
+Granola is a good recommendation for individuals and teams that want to stay present in meetings while retaining a personal, reviewable record afterwards. It creates value when rough notes, human verification, and handoff to a system of record are treated as one operating process. A specialized alternative is likely better for centralized bot recording, deep sales analytics, or tightly prescribed compliance workflows.
 
 ## FAQ
 
-**1. How does Granola's automatic note creation work?**
-Granola uses AI-based speech recognition to transcribe conversations in real time and summarize important content.
+**Does Granola need to join a Zoom, Meet, or Teams call?**
 
-**2. Can Granola be integrated with other tools?**
-Yes, Granola offers interfaces to common calendar and collaboration platforms such as Google Calendar, Microsoft Teams, or Slack.
+No. After you start it, the desktop app uses microphone and computer audio and, according to the provider, does not appear as a bot or participant. Your organization still needs to handle local law and participant consent.
 
-**3. Is Granola also suitable for small teams or individuals?**
-Yes, the software is scalable and can be used by both individuals and large teams.
+**Does Granola start automatically for every calendar event?**
 
-**4. How secure is the stored meeting data?**
-Granola places great emphasis on data privacy and uses encryption as well as GDPR-compliant storage solutions.
+No. The calendar supplies upcoming events and context. Transcription starts only after you actively open a note for the meeting or start Granola.
 
-**5. Is there a free trial version?**
-Depending on the provider, there is usually a free basic version or trial period to test the features.
+**Does Granola permanently store meeting recordings?**
 
-**6. In which languages can Granola process meetings?**
-The tool supports multiple languages, although availability may vary depending on the provider.
+Granola's security information says that it does not permanently store meeting audio. Transcripts and the notes you provide are still sensitive records that need their own access, retention, and deletion rules.
 
-**7. How accurate is the transcription?**
-Accuracy depends on audio quality and language, but thanks to modern AI technologies it is usually very good.
+**When is the Basic tier no longer enough?**
 
-**8. Which devices are supported?**
-Granola is generally available as a web app as well as a mobile app for iOS and Android.
+Review the paid tiers when older notes must remain accessible or calendar, CRM, team, and API handoffs become central to the workflow. The current plan description determines the exact limits and integrations.

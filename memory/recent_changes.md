@@ -1202,3 +1202,23 @@ _Last updated: 2026-07-13_
 - Rebuilt the DE/EN card around Cerebras as a specialised wafer-scale training and inference platform, separating WSE hardware, system software and delivery model instead of repeating generic accelerator claims.
 - Added a measurable pilot workflow, MLOps and recovery boundaries, data governance, realistic cost dimensions, five verified internal alternatives, and five practical FAQ answers in both languages.
 - Preserved the existing editorial illustration and updated only the paired card metadata and last-modified entries. The strict editorial guard no longer flags `cerebras-wafer-scale-engine`.
+
+## 2026-07-13 - Tool-card quality campaign, Granola
+
+- Rebuilt the DE/EN card around Granola's current AI notepad workflow: manually started device-audio capture, rough notes enhanced with transcript context, calendar context, search, sharing, integrations, and API/MCP boundaries.
+- Added consent and retention guardrails, transcript-quality checks, current plan-cost dimensions, three verified internal alternatives, and practical FAQs. Preserved the existing illustration; source-gate passed.
+
+## 2026-07-13 - Tool-card quality campaign, Pipedream
+
+- Rebuilt the DE/EN card around Pipedream's event-driven workflows, code steps, triggers, connected accounts, retries, logs, and the boundary between a fast integration prototype and a governed production workflow.
+- Added operational, privacy and cost guidance, verified internal alternatives, practical FAQs, and preserved the existing illustration; source-gate passed.
+
+## 2026-07-13 - Tool-card quality campaign, Pixlr
+
+- Rebuilt the DE/EN card around Pixlr's browser-based image editing workflow, format and export checks, AI-assisted operations, asset rights, and the limits of a lightweight editor for team production.
+- Added a bounded rollout, verified internal alternatives, practical FAQs, and preserved the existing illustration; source-gate passed.
+
+## 2026-07-13 - Tool-card quality campaign, RStudio
+
+- Rebuilt the DE/EN card around RStudio Projects, R, R Markdown, Quarto, package reproducibility, Git, local versus server operations, and analysis governance rather than generic data-tool claims.
+- Added privacy and operating boundaries, three verified internal alternatives, practical FAQs, and preserved the existing illustration; source-gate passed.
