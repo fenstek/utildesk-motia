@@ -1164,3 +1164,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt DE/EN around current Azure Functions choices: Flex Consumption, Premium and Dedicated hosting, bindings, reliable event handling, Managed Identity, Application Insights and Durable Functions orchestration.
 - Added verified internal alternatives and practical FAQs. Strict audit no longer flags `azure-functions`.
+
+## 2026-07-13 - Tool-card quality campaign, BeFunky
+
+- Replaced the short and template-driven DE/EN entries with a practical editorial guide to browser-based image editing, collages, templates, quality review, asset rights, exports and team operating boundaries.
+- Added a repeatable rollout method, cost checks, verified internal alternatives and practical FAQs. Strict audit no longer flags `befunky`.
