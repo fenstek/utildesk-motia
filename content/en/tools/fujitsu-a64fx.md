@@ -2,149 +2,99 @@
 slug: fujitsu-a64fx
 title: Fujitsu A64FX
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Custom quote
-tags:
-  - hardware
-  - hpc
-  - ai-accelerators
-  - enterprise
+editorial_batch: "2026-07-13-full-tool-card-editorial"
+category: AI Infrastructure
+price_model: Individuelles Angebot
 official_url: 'https://global.fujitsu/en-global/capabilities/computer-platform'
+description: 'An Arm-based HPC processor with SVE and integrated HBM2 for memory-intensive scientific computing and large-scale clusters.'
+updated_at: 2026-07-13
+lastReviewed: 2026-07-13
 popularity: 0
 source_language: de
 translation: full
 ---
 # Fujitsu A64FX
 
-The Fujitsu A64FX is a high-performance processor designed specifically for applications in High Performance Computing (HPC) and Artificial Intelligence (AI). It features a cutting-edge architecture based on ARM technology, offering exceptional performance in computationally intensive tasks such as scientific simulations, data analysis, and AI acceleration.
+The Fujitsu A64FX is a specialised Arm processor for high-performance computing. It combines many CPU cores, Scalable Vector Extension (SVE), and integrated HBM2 memory in one socket. That makes it relevant to scientific simulations, numerical models, and other data-intensive HPC programs, but it is not a general desktop processor, a ready-made cloud service, or an automatically faster replacement for every x86 or GPU application.
 
-## Who is Fujitsu A64FX suitable for?
+## What it is and who should consider it
 
-The Fujitsu A64FX is primarily targeted at enterprises, research institutions, and organizations that require high-performance hardware for demanding computational tasks. It is particularly suited for:
+The processor is aimed at data centres, research organisations, and teams planning their own HPC nodes or a cluster based on them. Fujitsu documents Armv8.2-A with SVE, 48 compute cores, and up to four additional assistant cores. Four HBM2 stacks provide 32 GiB of memory and very high bandwidth. This matters when a workload repeatedly moves large datasets, rather than only needing more arithmetic throughput.
 
-- HPC clusters and supercomputing environments
-- AI and machine learning applications with high computational requirements
-- Scientific simulations and big data analysis
-- Organizations looking to build and operate their own AI infrastructure
+For a team with a stable x86 or GPU pipeline, A64FX is therefore not a drop-in purchase. The decision starts with a porting and benchmarking project: source code, compiler, MPI/OpenMP stack, libraries, and containers all need to be validated on Arm and in the selected system environment.
 
-Due to its specialized architecture, the Fujitsu A64FX is not suitable for general desktop use.
+## Components that matter in practice
 
-## Typical Use Cases
+- **CPU and SVE:** Vectorisable loops can process multiple data points per instruction. The gain depends on the compiler, data layout, and algorithm, not simply on having SVE.
+- **HBM2:** Integrated high-bandwidth memory can reduce the distance to data for suitable workloads. The 32 GiB per processor is also a boundary: larger datasets need distribution across nodes, memory tiers, or I/O.
+- **Node and cluster communication:** MPI, process placement, and the interconnect design of the chosen system determine distributed performance. The processor does not provide a cluster strategy on its own.
+- **Arm software stack:** Compilers, math libraries, MPI, scheduler, and monitoring need to be versioned as one reproducible stack. Fujitsu documents Arm-specific compiler and HPC environments for this kind of operation.
 
-- **Focused rollout:** Fujitsu A64FX is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around hardware, hpc, ai accelerators.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Fujitsu A64FX can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+## A practical adoption workflow
 
-## What really matters in daily use
+Start with a representative job rather than a synthetic peak number: for example, a weather, fluid, materials, or molecular simulation at a real input size. Measure the current platform first. Then port a small, reproducible path to A64FX and record compiler flags, thread count, MPI ranks, memory use, runtime, and numerical differences.
 
-In day-to-day work, Fujitsu A64FX is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+A useful pilot has three stages. First, compile and validate a serial or small parallel case. Next, scale within one node. Finally, test multiple nodes. A rollout is justified only when result quality, runtime, energy or cluster cost, and maintenance effort look better together. A reproducible container or module setup prevents the result from depending on one developer's environment.
 
-Fujitsu A64FX is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+## Operations, integration, and maintenance
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/fujitsu-a64fx-editorial.webp" alt="Illustration for Fujitsu A64FX: high-performance processor in a scientific hardware lab" loading="lazy" decoding="async" />
-</figure>
+Production operation includes the scheduler, queues, node health, MPI topology, HBM utilisation, checkpoint and filesystem I/O, and controlled recovery. Long simulations should write checkpoints and resume after a node or filesystem failure where the application supports it. This can reduce the cost of a failed run more effectively than a better isolated microbenchmark.
 
-## Key Features
+The system form matters: A64FX is used in specialised HPC systems, not as an interchangeable CPU for any office server. Before procurement, clarify cooling, rack and power planning, spare-parts and support arrangements, compiler or software support, and library availability. For cloud use, verify the exact provider and instance availability; the processor name alone does not imply a general public-cloud offer.
 
-- 48-core ARM-based CPU with high parallel processing capabilities
-- Support for Scalable Vector Extension (SVE) for optimizing vector operations
-- High memory bandwidth through HBM2 memory integration
-- Energy-efficient architecture for HPC applications
-- Optimized for AI workloads and scientific computations
-- Compatible with popular HPC software libraries and frameworks
-- Integrated security features for enterprise use
+## Quality, porting, and decision metrics
 
-## Advantages and Disadvantages
+A fast run is successful only when the scientific result is identical within an agreed tolerance or any difference is explained. Define reference data, deterministic test cases, acceptance thresholds, and an owner for review. Check scaling as well: an application that wins on one node can lose at cluster scale because of MPI communication, I/O, or an unbalanced partition.
 
-### Advantages
+The useful signals are time to a completed result, memory-bandwidth behaviour in the real workload, parallel scaling, utilisation, energy and infrastructure cost, and the effort required for porting and operations. AI-related work such as vector, half-precision, or integer dot-product calculations may benefit, but that does not make A64FX equivalent to a GPU or a dedicated AI accelerator.
 
-- Exceptional performance in HPC and AI applications
-- High energy efficiency compared to traditional x86 processors
-- Advanced vector processing through SVE
-- Support for modern high-speed memory (HBM2)
-- Scalability for large clusters and supercomputers
+## Security, data, and governance
 
-### Disadvantages
+A64FX is hardware, not a SaaS service that automatically defines data processing, retention, or access. Those controls belong in the HPC environment: separate accounts and projects, scheduler permissions, network segmentation, trusted images and modules, patch and firmware processes, controlled or encrypted filesystems, and documented retention and deletion rules.
 
-- Limited compatibility with standard software not optimized for ARM architecture
-- High upfront costs, as the processor is primarily used in specialized systems
-- Complexity in integrating into existing IT infrastructures
-- Availability and support can vary depending on region and provider
+For research or customer data, settle classification, export restrictions, data-centre location, backups, and access logging before the first production job. Simulation results also need provenance: code version, compiler, input data, parameters, and checkpoint should be traceable. That supports scientific reproducibility as well as internal review and release decisions.
 
-## Workflow Fit
+## Pricing and total cost
 
-Fujitsu A64FX fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+There is no reliable single retail price for A64FX in this card's context. Costs typically arrive as a system or cluster quotation covering nodes and memory, networking and racks, cooling, installation, support, software environment, electricity, storage and backup, and porting of existing applications. Comparing only the processor price would be misleading.
 
-If Fujitsu A64FX becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
-
-## Privacy & Data
-
-Before adopting Fujitsu A64FX, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Fujitsu A64FX, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Fujitsu A64FX before the data path is understood.
+Ask for a quotation based on the actual node count and workload. Compare not only purchase price and delivery scope, but also cost per completed job, maintenance windows, recovery from failed runs, and developer time spent on Arm optimisation.
 
 ## Editorial Assessment
 
-Fujitsu A64FX is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+A64FX is recommended for HPC teams with a clear, parallelisable, memory-bandwidth-heavy workload, operational ownership, and the capacity to port software to Arm. It creates value when a representative end-to-end job completes measurably faster, more efficiently, or more economically and the stack can be operated reproducibly.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Fujitsu A64FX genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+For small teams without HPC operations, ordinary server software, or AI projects that primarily depend on CUDA and GPU tensor acceleration, a more focused CPU or accelerator alternative is often the better choice. Select A64FX using real end-to-end results, not marketing peak numbers.
 
-## Pricing & Costs
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/fujitsu-a64fx-editorial.webp" alt="HPC node with a densely packed processor and memory module in a scientific data centre" loading="lazy" decoding="async" />
+</figure>
 
-The cost of the Fujitsu A64FX processor is typically part of a custom quote tailored to the project's requirements and scope. Prices vary depending on system configuration, delivery scope, and service offerings. Enterprises should contact suppliers or Fujitsu partners to receive customized quotes.
+## Alternatives
 
-## Alternatives to Fujitsu A64FX
-
-- **NVIDIA A100 Tensor Core GPU**
-  A powerful GPU solution designed specifically for AI and HPC workloads.
-
-- **AMD EPYC Processors**
-  High-performance server processors with many cores, suitable for HPC and data centers.
-
-- **Intel Xeon Scalable Processors**
-  Widely used server processors with good performance for AI and HPC applications.
-
-- **Graphcore IPU (Intelligence Processing Unit)**
-  Processor designed specifically for AI workloads with a focus on parallelism.
-
-- **Google TPU (Tensor Processing Unit)**
-  Hardware accelerator for machine learning, available on Google Cloud.
+- [NVIDIA A100 Tensor Core GPU](/en/tools/nvidia-a100-tensor-core-gpu/): Better suited when training and inference with GPU-optimised frameworks and Tensor Cores is the main requirement.
+- [AMD Instinct GPU](/en/tools/amd-instinct-gpu/): A GPU family for teams evaluating high parallelism and an alternative accelerator ecosystem.
+- [Intel Habana Labs Gaudi](/en/tools/intel-habana-labs-gaudi/): More focused on dedicated deep-learning workloads than on general CPU-based HPC simulation.
+- [Graphcore IPU](/en/tools/graphcore-ipu/): A more specialised architecture for graph and AI workloads, with a different software and porting decision.
+- [NVIDIA Tensor Core GPUs](/en/tools/nvidia-tensor-core-gpus/): A broader GPU option when many established AI frameworks and model implementations should be available.
 
 ## FAQ
 
-**1. What makes the Fujitsu A64FX particularly unique compared to other processors?**
-The Fujitsu A64FX uses an ARM-based architecture with 48 cores and integrates HBM2 memory, making it particularly energy-efficient and powerful for HPC and AI applications.
+**When should I choose A64FX over a GPU?**
 
-**2. Can the Fujitsu A64FX be used in standard servers?
+Choose it when the workload is well expressed as CPU HPC code using MPI, OpenMP, and vectorisable numerical loops, and benefits from high memory bandwidth. For tensor-heavy or GPU-optimised deep learning, run a GPU comparison in the same pilot first.
 
-In general, the Fujitsu A64FX is used in specialized systems and not suitable for standard servers. Integration often requires adapted hardware and software.
+**Can existing x86 programs run unchanged?**
 
-**3. Which software is compatible with the Fujitsu A64FX?
+Not reliably. Portability depends on source code, binary dependencies, compiler, libraries, and the container base. Plan an Arm validation and check numerical results and performance, not only whether the build succeeds.
 
-The processor supports many HPC and AI frameworks that use the ARM architecture and SVE. However, specific applications may require adaptation of the software.
+**Is A64FX a ready-made cloud service?**
 
-**4. What is the pricing model for the Fujitsu A64FX?
+No. It is a processor used in specialised systems and selected HPC offerings. Availability, access, billing, and support must be checked with the specific system or cloud provider.
 
-Prices are typically created as custom quotes based on the project's requirements and scope.
+**How should a purchase be compared?**
 
-**5. Is the Fujitsu A64FX also available for cloud applications?
-
-Currently, the Fujitsu A64FX is primarily used in on-premise solutions and specialized HPC systems. Cloud offerings with this processor are rare and dependent on the provider.
-
-**6. What advantages does the Fujitsu A64FX offer for AI applications?
-
-Due to its high parallelism, fast memory access, and vector operations, the processor accelerates AI workloads with low energy consumption.
-
-**7. Are there any limitations to using the Fujitsu A64FX?
-
-The main limitations lie in software compatibility and hardware availability, as the market for ARM-based HPC processors is still growing.
-
-**8. Where can I purchase the Fujitsu A64FX?
-
-The Fujitsu A64FX is available through specialized suppliers and Fujitsu partners. For customized quotes, direct contact is recommended.
+Compare one complete, reproducible job: result quality, time to result, scaling, memory and I/O behaviour, energy or system cost, and porting effort. A peak-FLOPS figure alone is not sufficient.

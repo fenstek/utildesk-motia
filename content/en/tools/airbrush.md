@@ -2,128 +2,92 @@
 slug: airbrush
 title: AirBrush
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-13-airbrush-full-tool-card-editorial"
+category: AI Image
 price_model: Freemium
 tags:
   - photo-editing
   - mobile
   - beauty
-official_url: 'https://airbrush.com/'
+official_url: "https://airbrush.com/"
+description: "AirBrush is a portrait and image editor for web, desktop, and mobile, with retouching, background tools, and AI-assisted corrections."
+updated_at: 2026-07-13
+lastReviewed: 2026-07-13
 popularity: 0
+tier: "C"
+generated_at: "2026-05-14"
 source_language: de
 translation: full
 ---
 # AirBrush
 
-AirBrush is a mobile photo-editing app specifically designed for enhancing portrait photos. With AI-based tools, the app allows users to retouch blemishes, whiten teeth, shape faces, and perform various cosmetic adjustments - all easily and quickly directly on their smartphone. The intuitive user interface makes AirBrush appealing to both beginners and experienced users.
+AirBrush is a photo editor for portraits, product images, and quick social-media assets. Alongside mobile apps, it offers a web editor and AirBrush Studio for Windows and macOS. Its focus is retouching, face and body adjustments, background removal, image enhancement, and straightforward AI edits. That makes it accessible, but it is not automatically a replacement for color-managed post-production or human approval: edges, skin texture, facial features, and usage rights still need review before publication.
 
-## For Who is AirBrush Suitable?
+## Who is AirBrush for?
 
-AirBrush is primarily aimed at individuals who want to improve their selfies and portrait photos without relying on professional image editing software. The app is ideal for social media users, influencers, bloggers, and anyone who values a flawless appearance in photos. It is also suitable for users who want to retouch photos on-the-go without hassle and time constraints. Since the app is mobile, it is particularly beneficial for smartphone users who value ease of use.
+AirBrush fits creators, small e-commerce teams, photographers, and social teams that need to process individual images or portrait batches without a complex desktop workflow. For a headshot, it can make restrained corrections to skin, hair, and background; for a product catalog, Studio can remove backgrounds and standardize crops. Teams that need deep layers, color profiles, complex compositing, or governed asset management should treat AirBrush as one bounded step rather than the whole production system.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/airbrush-editorial.webp" alt="Illustration for AirBrush: beauty still life with color gels, brushes, and an abstract smartphone image" loading="lazy" decoding="async" />
+  <img src="/images/tools/airbrush-editorial.webp" alt="A smartphone and desktop screen show portrait retouching, color swatches, and a brush in a bright photo studio" loading="lazy" decoding="async" />
 </figure>
 
-## Typical Use Cases
+## What belongs in the daily toolkit?
 
-- **Focused rollout:** AirBrush is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around photo editing, mobile, beauty.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** AirBrush can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+The core set includes Portrait Retouch for skin, eyes, hair, face, and body, Liquify or Reshape, color and image enhancement, Magic Eraser, background removal, creative blur, and sky replacement. The online editor also exposes tools such as Magic Edit, Magic Expand, and video enhancement; Studio adds desktop presets and batch-oriented work. Generative features and their credits depend on the product surface and plan, so they should not be treated as part of every free edit.
 
-## What really matters in daily use
+## A practical editing workflow
 
-In day-to-day work, AirBrush is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+Define the source format, destination channel, and acceptable level of retouching first. Keep the original separate, work on a copy, and start with crop and broad corrections. Apply targeted skin or object edits afterwards; a portrait should retain believable texture. For a series, a preset or synchronized step can reduce repetition, but every image still needs a quick individual check. Export a web version for social channels and keep the untouched source apart from the approved version.
 
-AirBrush is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+## Batch, exports, and platforms
 
-## Key Features
+The browser is useful for quick edits without installation, mobile apps suit on-the-go work, and Studio targets Windows/macOS desktop and repeatable batch tasks. AirBrush lists upload and export limits by plan; its web product also uses credits when media is generated or exported. Before rollout, test source resolution, transparency, file format, compression, and real credit consumption with a small representative set. A naming convention and a defined storage location will usually matter more than another filter.
 
-- **Hautretouch:** Removes blemishes, smooths out skin, and reduces shine for an even-toned complexion.
-- **Teeth Whitening:** Brightens teeth naturally and ensures a radiant smile.
-- **Face Shaping:** Adjusts facial features like the chin, cheeks, and nose to achieve the perfect portrait.
-- **Make-up Effects:** Adds digital make-up effects like blush, lip gloss, and eye make-up.
-- **Background Blur:** Creates a bokeh effect to focus attention on the face.
-- **Realistic Filters:** Offers a variety of filters to give photos a professional look.
-- **Portrait Enhancement:** Automatic recognition and optimization of facial features.
-- **User-Friendly Interface:** Easy navigation and quick editing steps.
-- **Sharing Function:** Direct integration to share edited photos on social media.
+## Quality control and limits
 
-## Advantages and Disadvantages
+Review every result at full resolution and at its final display size. Check for halos around cutouts, altered fingers or jewelry, plastic-looking skin, distorted proportions, broken text, and shadows that no longer match a replacement background. With people photography, retouching should not silently change identity or body shape. Measure value through turnaround time, rework rate, and rejected outputs, not through the number of AI tools. Human approval remains necessary for sensitive or reputation-critical imagery.
 
-### Advantages
+## Privacy, rights, and operations
 
-- Intuitive and user-friendly interface, even for beginners.
-- Comprehensive and specifically designed retouching tools for portraits.
-- Fast editing directly on the mobile device.
-- Freemium model allows for free use with optional premium features.
-- Regular updates with new features and improvements.
-- Good integration for sharing on social media.
+Upload only material for which you have the required usage and, where relevant, consent rights. AirBrush's privacy policy distinguishes local use from cloud editing: for cloud editing, photos and EXIF data may be uploaded to servers for processing, and the policy also describes image metadata such as detected facial features. For customer, employee, or children's photos, decide in advance whether cloud processing is allowed, who has access, and when files are deleted. AirBrush's advertised offline-capable desktop processing should not be read as a guarantee that every feature or device works offline.
 
-### Disadvantages
+## Pricing and operating cost
 
-- Some features are only available in the premium version.
-- Editing results may vary depending on photo quality.
-- For professional-level image editing, the app's features are limited.
-- Data privacy and data usage should be considered when using AI apps.
-
-## Workflow Fit
-
-AirBrush fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
-
-If AirBrush becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
-
-## Privacy & Data
-
-Before adopting AirBrush, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating AirBrush, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing AirBrush before the data path is understood.
+AirBrush offers free access with feature limits and paid plans across web, mobile, and Studio. The online product provides subscriptions as well as credit packs; credits can be consumed when images or videos are saved, generated, or exported, depending on the feature. Studio plans can differ in AI credits, batch processing, exports, and device support. Check the exact plan, regional billing, credit expiry, and monthly image volume before deciding. For teams, add seat management, support, storage, and the cost of manual quality review.
 
 ## Editorial Assessment
 
-AirBrush is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+We recommend AirBrush to creators and small image teams that want to standardize portrait or product work quickly and are willing to keep a human final check. It creates the clearest value in a bounded process such as “remove background, inspect edges, export PNG” or “retouch a portrait batch, sync a preset, approve each image.” A specialist alternative is better when deep layers, color management, complex compositing, sensitive cloud data, or centralized asset governance are non-negotiable. Decide after a real test with time and rework measurements, not after a one-click demo.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether AirBrush genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+## Alternatives
 
-## Pricing & Costs
-
-AirBrush offers a freemium pricing model. The basic version is free and includes many fundamental features. For enhanced features, additional filters, and ad-free usage, various subscription plans are available, with pricing varying depending on the plan. Details on current costs can be found in the app or on the official website.
-
-## Alternatives to AirBrush
-
-- **Facetune:** Another popular mobile app for portrait retouching with comprehensive editing tools.
-- **Snapseed:** A free photo editing app from Google with versatile features, also suitable for portraits.
-- **VSCO:** A combination of photo editor and filter app, ideal for creative editing.
-- **Adobe Photoshop Express:** Mobile version of the well-known software, with numerous editing features.
-- **YouCam Perfect:** Focuses on beauty retouching and selfie optimization with AI support.
+- [Canva](/en/tools/canva/): Better for collaborative social and marketing layouts, templates, and brand assets than for detailed facial retouching.
+- [Pixlr](/en/tools/pixlr/): Better suited to browser-based layers, masks, and general image editing with occasional AI steps.
+- [Fotor](/en/tools/fotor/): A good fit for approachable photo enhancement, collages, and creative effects when beauty retouching is not the only goal.
+- [Adobe Photoshop Express](/en/tools/adobe-photoshop-express/): Useful for fast corrections in an Adobe-adjacent mobile workflow, but not a replacement for Photoshop desktop.
+- [Facetune](/en/tools/facetune/): A direct mobile alternative for selfie and portrait retouching when face and beauty adjustments are the main job.
 
 ## FAQ
 
-**1. Is AirBrush free to use?**
-Yes, AirBrush offers a free basic version with many features. Some enhanced features are, however, paid for.
+**Can I use AirBrush without installing software?**
 
-**2. On which devices can AirBrush be used?**
-The app is available for mobile devices, primarily for iOS and Android smartphones.
+Yes. AirBrush provides an online editor, alongside mobile apps and AirBrush Studio for Windows and macOS. The available tools, uploads, and exports still depend on the platform and selected plan.
 
-**3. Do I need special knowledge to use AirBrush?**
-No, AirBrush is user-friendly and suitable for beginners without prior experience in image editing.
+**Is AirBrush suitable for product photography?**
 
-**4. How secure are my photos when using AirBrush?**
-As with all apps, it is essential to read the privacy terms. Photos are typically processed locally, but cloud-based functions may transfer data.
+It can work for straightforward catalog and marketplace tasks such as background removal, image enhancement, or consistent cropping. Check edges, shadows, color fidelity, and the destination marketplace requirements before approving a batch.
 
-**5. Can I share edited photos directly?**
-Yes, the app allows for easy sharing of edited photos on social media.
+**Are my photos uploaded to the cloud?**
 
-**6. Are updates for AirBrush regularly provided?**
-Yes, the developers regularly release updates with new features and improvements.
+It depends on the feature. AirBrush describes cloud editing as processing where photos and EXIF data may be uploaded to servers. Review the current privacy policy and the specific data path before adding sensitive material.
 
-**7. Is there a desktop version of AirBrush?**
-AirBrush is currently focused on mobile platforms; a desktop version is not officially available.
+**How do AirBrush credits work?**
 
-**8. What benefits does the premium subscription offer?**
-The premium subscription unlocks additional filters, tools, and features, and removes ads for a better user experience.
+Web and AI features can consume credits when images or videos are generated or exported. Subscription credits and purchased credits have different validity rules, so estimate demand with representative files rather than looking only at the subscription fee.
+
+**When is AirBrush the wrong choice?**
+
+If layers, color management, complex compositing, controlled approvals, or a central asset library are essential, a specialist editor or DAM workflow is usually the better choice. AirBrush may still be useful as a fast retouching step inside that process.

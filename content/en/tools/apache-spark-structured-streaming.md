@@ -2,130 +2,126 @@
 slug: apache-spark-structured-streaming
 title: Apache Spark Structured Streaming
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-13-full-editorial-coverage"
+category: Developer Tools
 price_model: Open Source
-tags:
-  - assistant
-  - automation
-  - workflow
+tags: [data, streaming, batch, etl, open-source]
 official_url: 'https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html'
 popularity: 0
 source_language: de
 translation: full
+lastReviewed: 2026-07-13
+updated_at: 2026-07-13
+description: 'A practical guide to Spark Structured Streaming: DataFrames, micro-batches, watermarks, checkpoints, sinks, cost, and operational limits.'
 ---
 # Apache Spark Structured Streaming
 
-Apache Spark Structured Streaming is a high-performance open-source engine for processing real-time data streams. It enables continuous processing of large data volumes with a SQL-like API that seamlessly integrates into the existing Spark environment. Structured Streaming provides developers and data engineers with the ability to create streaming applications that are reliable, scalable, and fault-tolerant.
+Apache Spark Structured Streaming is Spark SQL's streaming layer. A team describes a computation with DataFrames or Datasets and starts it with `readStream` and `writeStream`; Spark then executes the plan incrementally instead of forcing separate programming models for batch and streaming. Scala, Java, Python, and R are supported. This makes it relevant for data-engineering teams that already use Spark and need to process events, tables, and historical data in one environment.
 
-## For Who is Apache Spark Structured Streaming Suitable For?
+The name should not be mistaken for a fully managed platform. Structured Streaming is a framework within the Spark ecosystem. Clusters, permissions, durable checkpoint storage, source and sink systems, monitoring, and on-call ownership remain responsibilities of the team or chosen provider.
 
-Apache Spark Structured Streaming is designed for data scientists, data engineers, and developers who require real-time data analysis and processing. It is particularly suitable for organizations that need to process large volumes of streaming data from various sources such as sensors, log files, social media, or IoT devices. It is also suitable for startups and large enterprises that seek a scalable and robust solution for automated data workflows and AI applications.
+## Who is Structured Streaming for?
+
+It fits teams that continuously process incoming data with Spark SQL transformations, aggregations, joins, or time windows. Examples include sensor and telemetry events, CDC feeds, log enrichment, rolling metrics, and prepared data handed to analytics or machine-learning pipelines.
+
+It is less suitable as the first building block for one small consumer or for workloads with extremely strict millisecond latency requirements. If the main need is message transport, an event platform comes first and a Spark compute engine may be unnecessary. If the workload is deeply stateful stream processing, Apache Flink deserves a serious comparison.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/apache-spark-structured-streaming-editorial.webp" alt="Illustration for Apache Spark Structured Streaming: data flow branches into a glowing river delta with checkpoints" loading="lazy" decoding="async" />
 </figure>
 
-## Typical Use Cases
+## How the model works
 
-- **Focused rollout:** Apache Spark Structured Streaming is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around assistant, automation, workflow.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Apache Spark Structured Streaming can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+By default, Structured Streaming processes new data in small micro-batches. The query still looks like a declarative DataFrame computation; triggers determine when Spark starts new work. Depending on the selected output mode, results and state are written to a sink. Continuous Processing offers lower latency, but it has different limitations and at-least-once guarantees, so it is not a universal production switch.
 
-## What really matters in daily use
+Event-time workloads depend on windows and watermarks. A watermark lets the engine account for late events up to an explicit threshold and clean up old state. This is a business decision: a short threshold can discard legitimate late events, while a long threshold retains more state and increases storage and recovery work.
 
-In day-to-day work, Apache Spark Structured Streaming is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+## Typical use cases
 
-Apache Spark Structured Streaming is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+- **Rolling aggregation:** Events from Kafka or files are grouped by time window and business key, then written as updated metrics.
+- **Event enrichment:** A stream is joined with reference data, normalised, validated, and written to an analytics format.
+- **CDC and log pipelines:** Changes or log lines are transformed and forwarded to a lake, warehouse, or Kafka topic.
+- **Available-now processing:** A bounded backlog is processed with streaming code in several micro-batches and the query then stops.
+- **Replay and recovery:** A replayable source, durable checkpoint, and idempotent sink can support safe restarts instead of blind duplicate writes.
 
-## Key Features
+## Key features
 
-- **Real-time Data Processing:** Continuous processing of streaming data with low latency.
-- **SQL-like API:** Simple querying and transformation of data streams with familiar SQL commands.
-- **Scalability:** Support for large data volumes through distributed processing on multiple nodes.
-- **Fault Tolerance:** Automatic recovery of states upon failures or errors.
-- **Integration with Spark Ecosystem:** Seamless collaboration with Spark SQL, MLlib, and GraphX.
-- **Support for Various Data Sources:** Compatible with Kafka, Kinesis, HDFS, and other sources.
-- **Window Functions:** Processing of time-based data windows for aggregated analysis.
-- **Stateful Processing:** Management of states over longer periods for complex applications.
-- **Easy Scaling:** Dynamic adjustment of resources based on data volume.
-- **Support for Batch and Streaming Data:** Unified API for both batch and streaming data processing.
+- **Unified API model:** DataFrames and Datasets connect batch and streaming code, although not every batch operation is supported in streaming queries.
+- **Sources and sinks:** Built-in integrations include files, Kafka, and test sources; files, Kafka, `foreach`, and debugging sinks are common output paths.
+- **Output modes:** Append, Update, and Complete describe whether new rows, changed rows, or the whole result table is written. Query shape determines which modes are valid.
+- **Stateful processing:** Aggregations, windows, joins, and custom state logic can retain state across triggers.
+- **Fault tolerance:** Offsets, state, and progress are recorded through checkpointing and write-ahead logs. The checkpoint needs durable storage with correct access controls.
+- **Operational visibility:** `StreamingQuery` and progress data expose input volume, rates, duration, state operators, and failure signals for dashboards and alerts.
 
-## Advantages and Disadvantages
+## Advantages and limitations
 
 ### Advantages
 
-- Open-source and free to use.
-- High scalability and performance with large data volumes.
-- Unified API for batch and streaming data processing.
-- Robust and fault-tolerant through integrated mechanisms.
-- Large community and extensive documentation.
-- Broad applicability in various industries and use cases.
+- A familiar Spark SQL model for teams already operating batch workloads.
+- One code path for many batch and streaming transformations reduces duplicated logic.
+- Event time, watermarks, windows, aggregations, and joins cover common analytical cases.
+- Open source with a broad Spark ecosystem; licensing is not the main cost driver.
+- Checkpoints and replayable sources can enable robust restarts when the sink also behaves correctly.
 
-### Disadvantages
+### Limitations
 
-- Complex setup and maintenance, especially in large clusters.
-- Requires in-depth knowledge of Spark architecture and streaming concepts.
-- Resource-intensive at very high data volumes.
-- Lack of native graphical user interface for simple management.
-- Performance can vary depending on infrastructure and data source.
+- Cluster operations, storage, upgrades, schema changes, and on-call work are not solved automatically.
+- Exactly-once is a property of the source, engine, and sink together, not a promise made by every connector.
+- `foreachBatch` is at-least-once by default; use its `batchId` for deduplication when stronger semantics are required.
+- Stateful queries can consume substantial memory and recovery time when watermarks or key cardinality are poorly chosen.
+- Debug and memory sinks are for testing, not durable, fault-tolerant production delivery.
 
-## Workflow Fit
+## A practical pilot
 
-Apache Spark Structured Streaming fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+Do not begin with an abstract benchmark. Take one bounded real path: source, schema, transformation, sink, and a measurable outcome. Record throughput, end-to-end latency, backlog, state size, late and duplicate events, and time to resume after an intentional restart.
 
-If Apache Spark Structured Streaming becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+Then test at least one schema change, a temporarily unavailable sink, and a replay. Decide in advance which duplicates are acceptable, who owns the checkpoint, and how a failed batch is retried. Only when those cases are observable is the pipeline more than a demo.
 
-## Privacy & Data
+## Privacy, security, and cost
 
-Before adopting Apache Spark Structured Streaming, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
+Spark processes data in infrastructure operated by you or by a provider. Clarify network paths, encryption, IAM roles, secret management, logs, checkpoint access, and retention. Checkpoints can contain sensitive state and offsets. For personal data, deletion and replay rules belong in the architecture, not only in a privacy notice.
 
-For European teams evaluating Apache Spark Structured Streaming, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Apache Spark Structured Streaming before the data path is understood.
+Apache Spark is open source, so Structured Streaming has no separate license fee. Budget instead for cluster and storage time, network, managed-service premiums, monitoring, support, data transfer, development, and on-call work. A small infrequent job may be cheaper than a permanently running stream; a permanent stream needs capacity and recovery measurements.
 
-## Editorial Assessment
+## Editorial assessment
 
-Apache Spark Structured Streaming is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+Structured Streaming is a strong choice when Spark is already the shared compute and governance framework and streaming is closely connected to batch, SQL, or data-lake work. Its strength is a consistent programming model, not a blanket promise about every latency target or delivery semantic.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Apache Spark Structured Streaming genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+We would start with a small replayable end-to-end job and measure operational boundaries before rollout. If the main need is Kafka-bound Java microservices, portable pipelines, or a stream-first stateful runtime, compare the alternatives below with the same test data rather than relying on a feature list.
 
-## Pricing & Costs
+## Alternatives
 
-Apache Spark Structured Streaming is part of the Apache Spark framework and is licensed under an open-source license, meaning no licensing fees apply. However, costs for infrastructure, cloud services, or support may arise depending on the used provider and plan.
-
-## Alternatives to Apache Spark Structured Streaming
-
-- **Apache Flink:** Focus on high-performance stream processing with low latency and event-time semantics.
-- **Kafka Streams:** Lightweight stream processing library directly integrated with Apache Kafka.
-- **Google Cloud Dataflow:** Fully managed service for batch and stream processing in the cloud.
-- **Azure Stream Analytics:** Cloud-based real-time analysis service with easy integration into the Microsoft ecosystem.
-- **AWS Kinesis Data Analytics:** Real-time streaming analysis service for AWS infrastructure.
+- [Apache Flink](/en/tools/apache-flink/): the closest comparison when continuous stream processing, event time, and state are the primary concerns.
+- [Apache Beam](/en/tools/apache-beam/): a portable pipeline model when the same code should be evaluated on runners such as Spark, Flink, or Dataflow.
+- [Kafka Streams](/en/tools/kafka-streams/): a lighter library for Java/Scala applications tightly coupled to Kafka topics and microservices.
+- [Apache Kafka](/en/tools/apache-kafka/): a better first choice when transport, partitioning, and the event log matter more than distributed transformation.
+- [Google Cloud Dataflow](/en/tools/google-cloud-dataflow/): a managed cloud approach for batch and streaming pipelines, especially in the Beam ecosystem.
 
 ## FAQ
 
-**1. What is the difference between Apache Spark Structured Streaming and traditional Spark Streaming?**
-Structured Streaming uses a declarative API with DataFrames and Datasets, while traditional Spark Streaming is based on DStreams. Structured Streaming offers a unified batch and stream processing and is easier to program.
+**Is Structured Streaming the same as the older Spark Streaming DStream API?**
 
-**2. Which programming languages are supported?**
-Apache Spark Structured Streaming primarily supports Scala, Java, Python, and R.
+No. Structured Streaming uses DataFrames/Datasets and Spark SQL as a declarative model; DStreams are the older API approach. Existing DStream code does not migrate automatically.
 
-**3. Can Structured Streaming be combined with other Big-Data-Tools?**
-Yes, it can be easily combined with tools like Apache Kafka, Hadoop, Hive, MLlib, and other components of the Spark ecosystem.
+**Which language should a team choose?**
 
-**4. How does Structured Streaming scale with increasing data volumes?**
-Through distributed processing on multiple cluster nodes, the performance can be horizontally scaled.
+Scala, Java, Python, and R are supported. Existing Spark skills, connector compatibility, testability, and operational knowledge matter more than assuming one language is always best.
 
-**5. What types of data sources are supported?**
-Kafka, Kinesis, HDFS, TCP sockets, file systems, and relational databases are supported.
+**Does a checkpoint alone guarantee exactly-once processing?**
 
-**6. Is Structured Streaming suitable for Machine Learning applications?**
-Yes, it can be used in combination with Spark MLlib for real-time machine learning workflows.
+No. The source must be replayable and the sink must handle retries correctly. With `foreachBatch`, for example, you need to deduplicate with `batchId` when exactly-once effects are required.
 
-**7. How is fault tolerance ensured in Structured Streaming?**
-Through checkpoints and write-ahead logs, the state can be recovered upon failures or errors.
+**How are late events handled?**
 
-**8. Is there a free trial or demo version available?**
-Since it is open-source, the source code is freely available and can be tested without costs.
+With event-time columns, windows, and `withWatermark`. The delay must match the business case; after the watermark passes, an event may be too late for a particular aggregation.
+
+**Can a running query be changed arbitrarily and restarted from the same checkpoint?**
+
+No. Changes to sources, stateful operations, or the state schema can be unsupported or semantically unclear. A change needs a tested migration or a new checkpoint plan.
+
+**When is Spark the wrong choice?**
+
+If the requirement is only message transport, Kafka is closer to the need. If a stream-first runtime with a strong state focus or very low latency is required, compare Flink and the target operating environment.

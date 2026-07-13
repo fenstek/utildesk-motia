@@ -2,127 +2,102 @@
 slug: ai-explainability-360
 title: AI Explainability 360
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-13-full-tool-card-editorial"
+category: "AI Infrastructure"
 price_model: Open Source
 tags:
   - ml
   - explainability
   - ai
-official_url: 'https://github.com/Trusted-AI/AIX360'
+official_url: "https://github.com/Trusted-AI/AIX360"
 popularity: 0
 source_language: de
 translation: full
+description: "AI Explainability 360 brings local and global model- and data-explanation methods into a Python toolkit. Its value depends on suitable test data, model access, and disciplined dependency management."
+updated_at: 2026-07-13
+lastReviewed: 2026-07-13
+tier: "C"
+generated_at: "2026-05-14"
 ---
 # AI Explainability 360
 
-AI Explainability 360 is an open-source toolkit designed to improve the explainability of machine learning models. It offers a range of algorithms and methods to make predictions and decisions of AI systems more understandable and transparent. The toolkit supports various models and applications, from simple classifiers to complex neural networks.
+AI Explainability 360 (AIX360) is a Python library for explaining data and machine-learning models. It brings together direct and post-hoc explanations, local explanations for individual predictions, global views of model behaviour, and methods for time series. It is not a finished compliance report and it cannot turn every neural network into a transparent rule system. AIX360 supplies components from which a data-science team can build a traceable explanation workflow.
 
-## For whom is AI Explainability 360 suitable?
+## Who is AIX360 for?
 
-AI Explainability 360 is primarily aimed at data scientists, machine learning engineers, and researchers who prioritize transparent and interpretable AI models. It is particularly useful for professionals in regulated industries such as finance, healthcare, or law, where explainability is legally required or ethically mandated. Developers who want to improve their models and build trust with stakeholders also benefit from the toolkit's features.
+AIX360 suits data scientists and ML engineers who need to compare several explanation approaches in a Python environment. A credit-risk team might investigate individual declines, a quality team might compare feature effects across many cases, and a forecasting team might inspect which parts of a time series affect a prediction. The package is not a ready-made interface for business users who do not work with Python and model outputs.
+
+Start with a concrete question: Why did this case receive this classification? Which features drive the model across the current population? What plausible change would produce a different decision? A precise question makes it much easier to select the right explainer.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/ai-explainability-360-editorial.webp" alt="Illustration for AI Explainability 360: glass model, attribution points, and scale make AI decisions inspectable" loading="lazy" decoding="async" />
+  <img src="/images/tools/ai-explainability-360-editorial.webp" alt="Illustration for AI Explainability 360: a transparent model, attribution points, and a scale make model decisions inspectable" loading="lazy" decoding="async" />
 </figure>
 
-## Typical Use Cases
+## What is in the toolkit?
 
-- **Focused rollout:** AI Explainability 360 is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ml, explainability, ai.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** AI Explainability 360 can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+The official repository presents AIX360 as a collection of algorithms and proxy metrics, not as one universal method. Depending on the data and model question, teams can use LIME and SHAP for local post-hoc explanations, contrastive explanations, ProtoDash, rule-based approaches, and directly interpretable models. Version 0.3.0 also adds time-series methods such as TSLIME, TSICE, and TSSaliency.
 
-## What really matters in daily use
+That breadth is useful, but it creates a real learning curve. A SHAP attribution does not answer the same question as a contrastive explanation or an interpretable rule. Before generating a chart, record whether the explanation is local or global, which data is perturbed, and whether the explainer accesses the model through predictions only or through gradients.
 
-In day-to-day work, AI Explainability 360 is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+## A practical workflow
 
-AI Explainability 360 is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+A credible pilot starts with a fixed test set containing ordinary cases, boundary cases, and deliberately difficult counterexamples. Build a model adapter with an explicit input and output contract. Select one method for the question, generate explanations for individual cases, and only then aggregate them into global patterns.
 
-## Key Features
+For a credit decision, local contrastive examples can show which feature combination would move a case to another class. For an image inspection model, a saliency or attribution view can reveal whether the model uses the object rather than a background artefact. For demand forecasting, structured time-series perturbations are more appropriate than changing unrelated columns independently. Store each explanation with the model revision, input data reference, parameters, and timestamp.
 
-- Collection of over 10 methods for model interpretation, including LIME, SHAP, Counterfactuals, and Feature Importance
-- Support for various model types: classification, regression, image, and text data
-- Visualization tools to better represent explanations and model behavior
-- Modular design allows for easy integration into existing ML pipelines
-- Extensible through custom explanations via open interfaces
-- Documentation and tutorials for rapid adoption and application
-- Compatibility with popular ML frameworks such as scikit-learn, TensorFlow, and PyTorch
-- Ability to generate explanations both globally (model level) and locally (individual predictions)
+## Evaluation and operating boundaries
 
-## Advantages and Disadvantages
+A plausible-looking chart is not proof that an explanation is faithful. Check whether controlled changes to important features actually change model behaviour and whether the explanation remains stable on small, domain-valid variations. AIX360 includes faithfulness and monotonicity metrics, but their result still needs to be interpreted in the context of the selected method and domain.
 
-### Advantages
+The library sits beside the model; it does not replace it. It does not provide a general model-monitoring system, a role and approval workflow, or an automatic regulatory decision. Production use still needs an artifact repository, reproducible environments, logging, review ownership, and a plan for new model and data versions.
 
-- Open-source and free to use, no licensing fees
-- Comprehensive collection of explanation methods from research and practice
-- Supports various data types and model types
-- Helps increase trust and transparency in AI systems
-- Good documentation and active community
-- Flexible and modular, easy to integrate into own projects
+## Integration and dependencies
 
-### Disadvantages
+AIX360 can fit into Python notebooks, tests, and existing ML pipelines. Optional installation groups allow teams to install dependencies for selected explainers. This matters because the repository itself warns that algorithms can require conflicting dependency versions and recommends an isolated environment. A pinned requirements or Conda setup, a small smoke test, and a saved example result should be part of the rollout.
 
-- Requires technical knowledge in the field of machine learning
-- Some methods can be computationally intensive for large models or large datasets
-- Not all explanation methods are suitable for every application
-- No commercial support guarantee, support is usually provided through community channels
+Test the adapter with missing values, categorical features, wrong data types, and an empty batch before approval. Also decide whether an explanation is computed synchronously during a user request or in a background job. Perturbation-heavy methods may be too slow for an interactive screen and should then run under controlled batch limits.
 
-## Workflow Fit
+## Privacy, licensing, and governance
 
-AI Explainability 360 fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+Explanations can expose sensitive features even when the model does not export raw training data. Personal, medical, or internal feature data should only be processed and retained in an approved environment. Logs and stored counterfactual examples need the same access and deletion policy as the original model inputs.
 
-If AI Explainability 360 becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
+Review the AIX360 repository license, the licenses of optional dependencies, and any additional terms attached to examples before release. An explanation shown to a decision subject also needs to be understandable and must not be presented as a causal proof without further analysis. An attribution describes model behaviour under assumptions; it does not automatically describe a cause in the world.
 
-## Privacy & Data
+## Cost and real operating effort
 
-Before adopting AI Explainability 360, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating AI Explainability 360, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing AI Explainability 360 before the data path is understood.
+AIX360 is open source and has no product usage fee. The real bill can still include CPU or GPU time for perturbations, storage for test data and explanation artifacts, CI runs, and maintenance of several Python dependencies. For occasional offline analysis, infrastructure is usually manageable. For an explanation on every user request, latency, caching, and batch design can matter more than the license.
 
 ## Editorial Assessment
 
-AI Explainability 360 is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+We recommend AIX360 to teams that need to investigate several explainability questions with their own models and can take responsibility for method selection. It is a good fit for research and diagnosis, comparison experiments, and a controlled explanation service with a fixed test set.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether AI Explainability 360 genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+We do not recommend AIX360 as a complete governance platform or as a quick business-user UI. If the requirement is only feature attribution for tabular models, SHAP is often the shorter route; for PyTorch-specific attribution, Captum may fit better. AIX360 earns its place when model adapters, validation, versioning, and domain review are treated as part of the deliverable.
 
-## Pricing & Costs
+## Alternatives
 
-AI Explainability 360 is an open-source project and is free to use. There are no licensing fees or subscription costs. Users can download the toolkit freely, modify it, and use it in their own projects.
-
-## Alternatives to AI Explainability 360
-
-- **LIME (Local Interpretable Model-agnostic Explanations)**: A widely used library for local explainability of models, also open-source.
-- **SHAP (SHapley Additive exPlanations)**: Offers a theoretically grounded method for assigning feature contributions, open-source.
-- **InterpretML**: A toolkit from Microsoft that combines various explanation methods and offers a user-friendly interface.
-- **Captum**: An interpretation toolkit specifically designed for PyTorch models, open-source.
-- **Alibi**: An open-source library focusing on explainability and anomaly detection, suitable for various ML models.
+- [SHAP](/en/tools/shap/): focused on feature attribution when local and global contributions are central to a tabular or model-aware workflow.
+- [LIME](/en/tools/lime/): lighter for local, model-agnostic explanations of individual predictions when a broad toolkit is unnecessary.
+- [InterpretML](/en/tools/interpretml/): a more consolidated interpretability environment with transparent models, explainers, and dashboard-oriented use.
+- [Captum](/en/tools/captum/): the natural alternative for attribution and interpretability directly within the PyTorch ecosystem.
+- [Hugging Face](/en/tools/hugging-face/): a better fit when model discovery, Model Cards, and open-model deployment matter more than a specialised explainability toolkit.
 
 ## FAQ
 
-**1. What is the main purpose of AI Explainability 360?**
-The main purpose is to make machine learning models more understandable by providing interpretable explanations of their decisions.
+**Do I need a specific ML framework for AIX360?**
 
-**2. Which programming language is used for AI Explainability 360?**
-The toolkit is primarily written in Python and can be easily integrated into Python-based ML environments.
+No, but the selected method determines its dependencies and the kind of model access it needs. Build an adapter and check the supported configuration for the chosen explainer instead of assuming universal compatibility.
 
-**3. Is AI Explainability 360 suitable for beginners?**
-Basic knowledge of machine learning is helpful. However, for beginners, there are extensive documentation and examples to facilitate the learning process.
+**Are AIX360 explanations automatically reliable?**
 
-**4. Can AI Explainability 360 be used with any ML model?**
-It supports many common model types and frameworks, but is not optimized for all models or algorithms.
+No. They are method- and model-dependent approximations. Test faithfulness, stability, and domain plausibility with known cases, and document what the visualisation does not establish.
 
-**5. How does AI Explainability 360 differ from other explanation tools?**
-It offers a broad collection of various methods in a single package and emphasizes modularity and extensibility.
+**Can AIX360 process sensitive production data?**
 
-**6. Is there commercial support for AI Explainability 360?**
-Since it is an open-source project, there is no official commercial support, but the community provides assistance with questions.
+A local Python installation can technically process such data. Whether it is allowed depends on the project's hosting, access controls, logs, deletion rules, licensing, and privacy requirements.
 
-**7. How can I install AI Explainability 360?**
-The toolkit can be easily installed using Python package managers like pip.
+**What is the lowest-risk way to start?**
 
-**8. What are the benefits of explaining AI models?**
-Explainability increases trust in AI systems, facilitates error analysis, and is important in many industries due to regulatory requirements.
+Choose one model, a small representative test set, and one decision question. Pin the environment, store the model revision and parameters, and compare explanations with domain-known counterexamples before showing them to users.
