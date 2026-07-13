@@ -1038,3 +1038,8 @@ _Last updated: 2026-07-12_
 
 - Kept the substantive existing DE/EN patent-research guidance, but converted its legacy editorial label into the audited form and refreshed the review metadata.
 - Replaced the isolated competitor list with six locale-correct internal comparisons: PatSnap, Derwent Innovation, Innography, Google Patents, Espacenet, and Lens.org. Strict audit no longer flags `orbit-intelligence`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Apache Hadoop
+
+- Rebuilt the DE/EN Hadoop card around its real distributed-computing role: HDFS, YARN, MapReduce, batch fit, self-hosted operational ownership, and the difference between a development setup and a production data platform.
+- Added a bounded pilot, failure testing, Apache's Kerberos production requirement, costs of running the platform, and locale-correct internal alternatives. Strict audit no longer flags `apache-hadoop`; root editorial, English, and whitespace validation pass.
