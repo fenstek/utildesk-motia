@@ -1088,3 +1088,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around the actual Cloud Vision API: OCR, image labels, logos and landmarks, SafeSearch, face detection without identification, and API-based integration rather than generic AI automation copy.
 - Added a bounded evaluation method, cost and data-governance checks, explicit product-selection limits, verified alternatives, and practical FAQ answers. Strict audit no longer flags `google-cloud-vision-ai`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Weglot
+
+- Rebuilt the DE/EN card around the current website-localisation workflow: content detection, machine translation and visual review, glossary rules, language-specific URLs, `hreflang`, and a controlled multilingual rollout.
+- Added practical SEO, cost, migration and editorial-risk boundaries, plus verified internal alternatives to DeepL, Lokalise, Crowdin, and Phrase. Strict audit no longer flags `weglot`; root editorial, English, and whitespace validation pass.
