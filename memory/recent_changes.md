@@ -1169,3 +1169,8 @@ _Last updated: 2026-07-12_
 
 - Replaced the short and template-driven DE/EN entries with a practical editorial guide to browser-based image editing, collages, templates, quality review, asset rights, exports and team operating boundaries.
 - Added a repeatable rollout method, cost checks, verified internal alternatives and practical FAQs. Strict audit no longer flags `befunky`.
+
+## 2026-07-13 - Tool-card quality campaign, BERT
+
+- Replaced the short/generic DE and EN entries with a fact-checked guide to BERT as an encoder for bounded NLP work: classification, entity recognition, semantic retrieval, evaluation splits, error analysis, reproducibility and monitoring.
+- Added model-selection boundaries, data and privacy ownership, verified internal alternatives and practical FAQs. Strict audit no longer flags `bert`.
