@@ -1083,3 +1083,8 @@ _Last updated: 2026-07-12_
 
 - The existing DE/EN guidance in these three cards was already broad, but all comparison sections were isolated vendor-name lists. Added verified locale-correct links for five relevant alternatives per card.
 - Corrected the English CapCut alternatives heading from a non-audited word order so its five existing links are actually recognised by the coverage audit. Strict audit no longer flags `beautiful-ai`, `capcut`, or `d-id`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Google Cloud Vision AI
+
+- Rebuilt the DE/EN card around the actual Cloud Vision API: OCR, image labels, logos and landmarks, SafeSearch, face detection without identification, and API-based integration rather than generic AI automation copy.
+- Added a bounded evaluation method, cost and data-governance checks, explicit product-selection limits, verified alternatives, and practical FAQ answers. Strict audit no longer flags `google-cloud-vision-ai`; root editorial, English, and whitespace validation pass.
