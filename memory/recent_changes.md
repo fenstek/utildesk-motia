@@ -1058,3 +1058,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card as an accessibility guide: live volunteer assistance, Be My AI, Service Directory, desktop and smart-glasses context, with personal agency and privacy rather than generic automation language.
 - Added practical safe-use boundaries for sensitive or high-stakes situations, a company-accessibility checklist, verified internal alternatives, and FAQ answers. Strict audit no longer flags `be-my-eyes`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Dovetail
+
+- Rebuilt the DE/EN Dovetail card around its current customer-intelligence platform: connected signals, evidence-backed AI analysis, chat/search, governance, and traceability rather than generic qualitative-data claims.
+- Added a bounded rollout, source and counter-evidence rules, consent/retention boundaries, four verified internal alternatives, and FAQ answers. Strict audit no longer flags `dovetail`; root editorial, English, and whitespace validation pass.
