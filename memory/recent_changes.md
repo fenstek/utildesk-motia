@@ -1098,3 +1098,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around the real speech-cleanup workflow: Enhance Speech, source-recording limits, artefact review, preserving originals, and the boundary between spoken-audio enhancement and a full DAW.
 - Added rights and cloud-processing checks, a repeatable listening review, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `adobe-podcast`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Amazon Aurora
+
+- Rebuilt the DE/EN card around actual Aurora operations: PostgreSQL/MySQL-compatible editions, provisioned versus serverless capacity, replicas, Multi-AZ, global recovery, migration tests, and recovery practice.
+- Added current I/O and capacity cost-model distinctions, governance boundaries, verified internal database alternatives, and practical FAQ answers. Strict audit no longer flags `amazon-aurora`; root editorial, English, and whitespace validation pass.
