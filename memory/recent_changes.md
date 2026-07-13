@@ -1008,6 +1008,11 @@ _Last updated: 2026-07-12_
 - Rewrote the DE/EN SmartRecruiters card around responsible applicant tracking: structured scorecards, bounded AI assistance, human decision ownership, candidate-data role boundaries, retention/integration review, and meaningful rollout metrics.
 - Strict audit no longer flags `smartrecruiters`; root editorial, English, and whitespace validation pass.
 
+## 2026-07-13 - Tool-card quality campaign, 8x8
+
+- Audit showed the existing DE/EN 8x8 editorial copy was already broad; its sole quality gap was zero internal alternatives. Replaced the unlinked vendor-name list with four locale-correct internal alternative links, keeping the substantive communication-platform guidance intact.
+- Strict audit no longer flags `8x8`; root editorial, English, and whitespace validation pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
