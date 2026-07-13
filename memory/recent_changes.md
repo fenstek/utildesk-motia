@@ -1078,3 +1078,8 @@ _Last updated: 2026-07-12_
 
 - The existing DE/EN Aider editorial guidance was already substantive. Its only strict-audit gap was an isolated legacy competitor list with no internal links.
 - Added five verified locale-correct comparisons to OpenAI Codex, GitHub Copilot, Cline, OpenHands, and Cursor. Strict audit no longer flags `aider`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Beautiful.ai, CapCut, and D-ID
+
+- The existing DE/EN guidance in these three cards was already broad, but all comparison sections were isolated vendor-name lists. Added verified locale-correct links for five relevant alternatives per card.
+- Corrected the English CapCut alternatives heading from a non-audited word order so its five existing links are actually recognised by the coverage audit. Strict audit no longer flags `beautiful-ai`, `capcut`, or `d-id`; root editorial, English, and whitespace validation pass.
