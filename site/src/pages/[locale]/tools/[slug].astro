@@ -65,6 +65,15 @@ const editorialVerdict = getToolEditorialVerdict(
   "en",
   isCuratedTool ? "recommend" : "caution",
 );
+const editorialVerdictHeadline = entry.data.editorial_verdict_headline
+  ? String(entry.data.editorial_verdict_headline)
+  : editorialVerdict.detailHeadline;
+const editorialVerdictText = entry.data.editorial_verdict_text
+  ? String(entry.data.editorial_verdict_text)
+  : editorialVerdict.detailText;
+const editorialTrustLabel = entry.data.editorial_trust_label
+  ? String(entry.data.editorial_trust_label)
+  : editorialVerdict.trustLabel;
 const vendorName = entry.data.vendor ? String(entry.data.vendor) : meta.title;
 const extractDomain = (url: string) => {
   if (!url) return "";
@@ -432,13 +441,13 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         <span class="akte-verdict-glyph">{editorialVerdict.icon}</span>
         <div class="akte-verdict-copy">
           <p class="akte-verdict-kicker">{editorialVerdict.detailKicker}</p>
-          <h2>{editorialVerdict.detailHeadline}</h2>
-          <p>{editorialVerdict.detailText}</p>
+          <h2>{editorialVerdictHeadline}</h2>
+          <p>{editorialVerdictText}</p>
         </div>
         <aside class="akte-verdict-trust">
           <strong>Trust</strong>
           <span class="akte-trust-bars"><i></i><i></i><i></i><i></i><em></em></span>
-          <small>{editorialVerdict.trustLabel}</small>
+          <small>{editorialTrustLabel}</small>
         </aside>
       </div>
     </section>
