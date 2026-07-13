@@ -1132,3 +1132,7 @@ _Last updated: 2026-07-12_
 
 - Replaced an old generic DE/EN template with a current, fact-checked editorial card: multi-provider model access, AWS operating boundaries, Knowledge Bases, Guardrails, evaluations, agents, API portability, real cost dimensions and a pilot workflow.
 - Added verified internal alternatives, operational security boundaries and practical FAQs. The strict editorial audit no longer flags `aws-bedrock`.
+## 2026-07-13 - Tool-card quality campaign, Amazon MSK
+
+- Replaced the empty German and generic English templates with a full DE/EN Kafka operating guide: Provisioned versus Serverless, Connect and Replicator, event contracts, partitioning, consumer idempotency, ownership, monitoring, security and real cost dimensions.
+- Added verified internal alternatives and practical FAQ answers. Strict audit no longer flags `amazon-msk`.
