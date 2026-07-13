@@ -1160,3 +1160,7 @@ _Last updated: 2026-07-12_
 
 - Rebuilt DE/EN around actual Babbel learning mechanics: short level-based lessons, spaced review, speech recognition, Babbel Speak, realistic practice and subscription/privacy boundaries.
 - Added internal alternatives and practical FAQs; strict audit no longer flags `babbel`.
+## 2026-07-13 - Tool-card quality campaign, Azure Functions
+
+- Rebuilt DE/EN around current Azure Functions choices: Flex Consumption, Premium and Dedicated hosting, bindings, reliable event handling, Managed Identity, Application Insights and Durable Functions orchestration.
+- Added verified internal alternatives and practical FAQs. Strict audit no longer flags `azure-functions`.
