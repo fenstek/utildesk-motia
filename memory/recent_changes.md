@@ -1113,3 +1113,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around Beam's actual role as a portable batch-and-streaming programming model, including SDKs, runners, event time, windows, state, timers, connectors, and the distinction between Beam code and execution backends.
 - Added runner-capability boundaries, a production spike protocol, data-quality and recovery operations, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `apache-beam`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Apigee
+
+- Rebuilt the DE/EN card around Apigee as API-management rather than a generic gateway: API proxies, policies, API hub, developer portals, analytics, hybrid runtime, and API-product governance.
+- Added a contract-first rollout, policy and secret controls, current cost dimensions, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `apigee`; root editorial, English, and whitespace validation pass.
