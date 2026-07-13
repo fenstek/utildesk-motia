@@ -3,66 +3,89 @@ slug: be-my-eyes
 title: Be My Eyes
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-07-13
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
-category: AI Agents
+editorial_batch: 2026-07-13-full-editorial-coverage
+category: Accessibility
 price_model: Kostenlos
-tags: [assistant, automation, workflow]
-official_url: "https://be-my-eyes.com/"
+tags: [accessibility, visual-assistance, ai, volunteer]
+official_url: "https://www.bemyeyes.com/"
 popularity: 73
 tier: C
-generated_at: 2026-05-15
+lastReviewed: 2026-07-13
 ---
 # Be My Eyes
 
-Be My Eyes ist eine innovative App, die Menschen mit Sehbehinderungen durch den Einsatz von künstlicher Intelligenz und einer globalen Gemeinschaft von Freiwilligen unterstützt. Die Anwendung ermöglicht es blinden und sehbehinderten Nutzern, visuelle Hilfe in Echtzeit zu erhalten, indem sie per Videoanruf mit sehenden Helfern verbunden werden. So wird der Alltag erleichtert und Barrieren im täglichen Leben reduziert.
+Be My Eyes ist eine Zugänglichkeitsplattform für blinde und sehbehinderte Menschen. Über die App kann eine Person per Live-Video freiwillige Helfer:innen, Unternehmen oder KI-gestützte Bildbeschreibung erreichen. Der praktische Kern bleibt dabei menschliche Selbstbestimmung: Die Kamera zeigt nur, was die nutzende Person bewusst teilt, und Hilfe wird für eine konkrete Situation angefragt, etwa beim Lesen eines Etiketts oder beim Einordnen eines Gegenstands.
 
-## Für wen ist Be My Eyes geeignet?
+Das Produkt ist mehr als eine einzelne Freiwilligen-Hotline. Die aktuelle Plattform umfasst Be My AI, einen Service Directory für Unternehmen, Desktop-Zugang und Angebote rund um Smart Glasses. Trotzdem ersetzt sie weder persönliche Assistenz noch eine fachliche Entscheidung bei Gesundheit, Recht, Geld oder akuter Gefahr.
 
-Be My Eyes richtet sich primär an Menschen mit Sehbehinderungen oder Blindheit, die Unterstützung im Alltag benötigen. Die App ist ideal für Nutzer, die gelegentlich visuelle Hilfe benötigen, etwa beim Lesen von Etiketten, Erkennen von Farben oder beim Navigieren in unbekannten Umgebungen. Ebenso profitieren Freiwillige, die ihre Zeit sinnvoll einsetzen und anderen helfen möchten, von der Plattform. Organisationen, die Menschen mit Sehbehinderungen unterstützen, können Be My Eyes ebenfalls in ihre Angebote integrieren.
+## Für wen eignet sich Be My Eyes?
 
-## Typische Einsatzszenarien
+- Blinde und sehbehinderte Menschen, die im Alltag kurze visuelle Einordnung wünschen.
+- Freiwillige, die auf eine konkrete Anfrage hin per Video unterstützen möchten.
+- Unternehmen, die ihre Kundenhilfe über geschulte Mitarbeitende zugänglich machen wollen.
+- Teams für digitale Barrierefreiheit, die verstehen möchten, wo ein menschlicher Kontakt besser ist als eine reine Bilderkennung.
 
-- **Gezielter Einstieg:** Be My Eyes eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um assistant, automation, workflow nicht mehr improvisieren wollen.
-- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Prompts, Modelle, Ausgaben und Freigaben sauber dokumentiert und nicht nur einmalig ausprobiert werden.
-- **Übergaben im Team:** Be My Eyes kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
-- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
+Be My Eyes ist kein klassisches Workflow- oder Automatisierungstool. Sein Wert entsteht aus Zugänglichkeit und einer respektvollen Interaktion, nicht aus der Anzahl automatisch abgearbeiteter Vorgänge.
 
-## Redaktionelle Einordnung
+## Wie die Hilfe funktioniert
 
-Bei Be My Eyes ist der Nutzen erst sichtbar, wenn ein echter Prozess durchläuft: Eingabe, Berechtigung, Fehlerfall, Log und Übergabe. Wir würden einen kleinen End-to-End-Test bauen und absichtlich Grenzfälle erzeugen.
+In der App kann die nutzende Person zwischen menschlicher und KI-gestützter Hilfe wählen. Bei einer Live-Anfrage wird die Kameraansicht für den Zweck der Unterstützung geteilt. Nach Angaben des Anbieters sehen Freiwillige nur den geteilten Kamerabereich und hören die Stimme; die Unterstützung ist für die Community kostenlos und international verfügbar.
 
-Be My Eyes lohnt sich, wenn Integrationen betrieben und nicht nur verbunden werden. Ohne Ownership für Limits, Änderungen und Monitoring wird daraus schnell eine stille Abhängigkeit.
+Be My AI kann eine Szene oder ein Bild beschreiben und Nachfragen beantworten. Das eignet sich gut für Orientierung und erste Einordnung. Bei mehrdeutigen, persönlichen oder folgenreichen Inhalten ist ein Mensch, eine offizielle Quelle oder eine qualifizierte Fachperson die bessere Gegenprüfung.
+
+## Redaktionelle Einschätzung
+
+Be My Eyes zeigt, wie KI sinnvoll in ein zugängliches Produkt eingebettet werden kann: nicht als Ersatz für die Person, sondern als zusätzliche Möglichkeit, Informationen selbständig zu erschließen. Die gute Nutzung beginnt mit Transparenz. Wer sieht das Bild? Was wird geteilt? Ist die Antwort plausibel genug für diese Entscheidung?
+
+Wir empfehlen, die App zuerst mit ungefährlichen, alltäglichen Situationen kennenzulernen. Keine sensiblen Dokumente, Zugangsdaten, Arzneimittelentscheidungen oder Finanztransaktionen über eine spontane Video- oder KI-Anfrage erledigen. Für Unternehmen gilt dasselbe: Der Service Directory kann Barrieren senken, braucht aber geschulte Mitarbeitende, klare Eskalationen und einen verständlichen Datenschutzprozess.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/be-my-eyes-editorial.webp" alt="Illustration zu Be My Eyes: Alltagsszene mit Kamera und taktilen Orientierungshilfen" loading="lazy" decoding="async" />
 </figure>
 
-## Hauptfunktionen
+## Sinnvolle Nutzung im Alltag
 
-- **Live-Videoanrufe:** Direkte Verbindung zwischen sehbehinderten Nutzern und sehenden Freiwilligen zur visuellen Unterstützung.
-- **Globale Gemeinschaft:** Freiwillige aus aller Welt stehen rund um die Uhr zur Verfügung.
-- **Barrierefreie Bedienung:** Benutzerfreundliche Oberfläche, die speziell für sehbehinderte Menschen entwickelt wurde.
-- **Mehrsprachige Unterstützung:** Verfügbar in zahlreichen Sprachen, um eine internationale Nutzung zu gewährleisten.
-- **Integration von Unternehmen:** Möglichkeit für Unternehmen, professionelle Unterstützung durch geschulte Mitarbeiter anzubieten.
-- **Automatisierte Hilfestellung:** Ergänzend zum Freiwilligen-Netzwerk werden zunehmend KI-gestützte Funktionen entwickelt, die einfache Fragen automatisiert beantworten können.
-- **Datenschutz und Sicherheit:** Hohe Standards zum Schutz der Privatsphäre der Nutzer.
+1. Mit einem unkritischen Objekt oder einer Verpackung beginnen.
+2. Vor dem Start entscheiden, ob KI-Beschreibung genügt oder ein Mensch hilfreicher ist.
+3. Persönliche Daten, Bildschirminhalte und Dokumente nicht unnötig in die Kamera halten.
+4. Bei unklarer Antwort eine zweite Quelle nutzen, statt sie als Tatsache zu behandeln.
+5. Für Unternehmen: Erreichbarkeit, Sprache und Eskalationsweg testen, bevor der Dienst beworben wird.
 
-## Vorteile und Nachteile
+## Stärken und Grenzen
 
-### Vorteile
-- Kostenlos nutzbar für Menschen mit Sehbehinderungen und Freiwillige.
-- Starke Gemeinschaft, die schnelle Hilfe ermöglicht.
-- Unterstützt die Selbstständigkeit und Unabhängigkeit der Nutzer.
-- Einfache und intuitive Bedienung.
-- International verfügbar und mehrsprachig.
-- Möglichkeit der Integration professioneller Hilfe.
-- Fördert soziale Verantwortung und Engagement.
+### Stärken
 
-### Nachteile
-- Abhängigkeit von der Verfügbarkeit von Freiwilligen.
-- Nicht alle Anfragen können automatisiert oder sofort beantwortet werden.
-- Erfordert eine stabile Internetverbindung für Videoanrufe.
-- Datenschutzbedenken bei der Übertragung von Video.
-- KI-gestützte Funktionen befinden sich noch in der Entwicklung und sind nicht vollständig ausgereift.
+- Verbindung von freiwilliger Echtzeit-Hilfe und KI-gestützter Bildbeschreibung.
+- Kostenfreie Nutzung für blinde und sehbehinderte Menschen sowie Freiwillige.
+- Internationale Plattform mit vielen Sprachen und Kanälen.
+- Zusätzliche Optionen über Desktop, Service Directory und Smart-Glasses-Integrationen.
+
+### Grenzen
+
+- Bild- und KI-Antworten können unvollständig oder falsch sein.
+- Video teilt reale Umgebung und verlangt bewussten Umgang mit Privatsphäre.
+- Nicht geeignet als alleinige Grundlage für Notfälle oder kritische Entscheidungen.
+- Verfügbarkeit und Detailtiefe menschlicher Hilfe können situationsabhängig sein.
+
+## Alternativen zu Be My Eyes
+
+- [Seeing AI](/tools/seeing-ai/): wenn eine KI-basierte Szenen- und Texterkennung direkt auf dem Mobilgerät gesucht wird.
+- [Envision AI](/tools/envision-ai/): wenn visuelle KI-Hilfe und Smart-Glasses-Szenarien verglichen werden sollen.
+- [Lookout](/tools/lookout/): wenn Android-nahe Bilderkennung und Alltagshilfe im Vordergrund stehen.
+- [Microsoft Copilot](/tools/microsoft-copilot/): wenn allgemeine Assistenz in einem breiteren Microsoft-Kontext geprüft wird.
+
+## FAQ
+
+**Ist Be My Eyes eine medizinische oder Notfallhilfe?**
+
+Nein. Die App kann beim visuellen Einordnen unterstützen, ersetzt aber weder Notruf noch medizinische, rechtliche oder finanzielle Beratung. Bei Gefahr oder kritischen Entscheidungen braucht es die zuständige Fachstelle.
+
+**Was ist der Unterschied zwischen Freiwilligenhilfe und Be My AI?**
+
+Freiwillige helfen in einem Live-Videoanruf als Menschen. Be My AI liefert KI-gestützte Beschreibungen und Antworten zu Bildern. Die passende Wahl hängt von Aufgabe, Privatsphäre und erforderlicher Sicherheit ab.
+
+**Was sollten Unternehmen vor einer Anbindung prüfen?**
+
+Geschulte Personen, erreichbare Eskalation, Datenschutzinformationen, die erlaubten Themen und echte Tests mit Nutzer:innen. Ein sichtbarer Button allein macht einen Service noch nicht zugänglich.
