@@ -63,6 +63,12 @@ Beautiful.ai offers a Freemium model: The basic functions are free to use, but w
 
 ## Alternatives to Beautiful.ai
 
+- [Canva](/en/tools/canva/): for templates, brand kits, and broader marketing layouts.
+- [Microsoft PowerPoint](/en/tools/microsoft-powerpoint/): when established Office workflows and maximum interchangeability matter.
+- [Google Slides](/en/tools/google-slides/): for browser-based collaboration in Google Workspace teams.
+- [Gamma](/en/tools/gamma/): when AI-supported narrative documents and presentations are the focus.
+- [Visme](/en/tools/visme/): for presentations and infographics with stronger visual data treatment.
+
 - **Canva**: A versatile design tool with extensive presentation templates and easy-to-use interface.
 - **Microsoft PowerPoint**: Classic presentation program with extensive features and wide adoption.
 - **Google Slides**: Free, cloud-based presentation tool with team collaboration.

@@ -90,6 +90,12 @@ Beyond the list price, D-ID should be evaluated by the cost of adoption. Relevan
 
 ## Alternatives to D-ID
 
+- [Synthesia](/en/tools/synthesia/): for enterprise videos with AI avatars and learning content.
+- [HeyGen](/en/tools/heygen/): for avatar, translation, and localised video workflows.
+- [Runway](/en/tools/runway/): when generative video production is needed rather than a talking-avatar focus.
+- [Pictory](/en/tools/pictory/): for text- and long-form-based video summaries.
+- [CapCut](/en/tools/capcut/): when a human-edited social format is the better solution.
+
 - **Synthesia**: AI-based video platform with a focus on personalized avatars and corporate videos.
 - **Rephrase.ai**: Automated video creation with realistic speaker animations.
 - **DeepBrain**: Platform for creating AI-powered video avatars for marketing and education.

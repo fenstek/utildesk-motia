@@ -90,6 +90,12 @@ CapCut bietet ein Freemium-Modell an. Die Grundversion ist kostenlos und enthäl
 
 ## Alternativen zu CapCut
 
+- [InShot](/tools/inshot/): für sehr schnelle mobile Schnitte und Format-Anpassungen.
+- [KineMaster](/tools/kinemaster/): für einen tieferen mobilen Timeline- und Ebenen-Workflow.
+- [Adobe Premiere Rush](/tools/adobe-premiere-rush/): für Adobe-nahe plattformübergreifende Kurzproduktion.
+- [Filmora](/tools/filmora/): für zugänglichen Consumer- und Creator-Schnitt mit Vorlagen.
+- [VN Video Editor](/tools/vn-video-editor/): für einen mobilen Editor mit stärkerer manueller Kontrolle.
+
 - **InShot:** Eine beliebte mobile App für Video- und Fotobearbeitung mit ähnlichem Funktionsumfang.
 - **KineMaster:** Professionelle Videobearbeitungs-App mit umfangreichen Tools und Multi-Layer-Support.
 - **Adobe Premiere Rush:** Plattformübergreifende Lösung von Adobe für einfache und schnelle Videobearbeitung.
