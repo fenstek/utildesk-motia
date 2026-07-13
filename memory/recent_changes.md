@@ -1191,3 +1191,8 @@ _Last updated: 2026-07-13_
 
 - Replaced the short/generic DE and EN entries with a fact-checked guide to BERT as an encoder for bounded NLP work: classification, entity recognition, semantic retrieval, evaluation splits, error analysis, reproducibility and monitoring.
 - Added model-selection boundaries, data and privacy ownership, verified internal alternatives and practical FAQs. Strict audit no longer flags `bert`.
+
+## 2026-07-13 - Full tool-card exemplar, Hugging Face
+
+- Rebuilt the DE/EN Hugging Face card as the canonical full editorial exemplar: current Hub, Model Cards, local libraries, Spaces, Inference Providers, dedicated Endpoints, evaluation, governance, security, cost boundaries and an explicit editorial verdict.
+- Added five verified internal alternatives and four practical FAQ answers in both languages. The reusable Codex skill `utildesk-tool-editorial` records this full-card workflow and requires strict audit, complete build, live rendering and linked-route checks before completion is claimed.
