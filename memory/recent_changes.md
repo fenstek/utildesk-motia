@@ -952,6 +952,12 @@ _Last updated: 2026-07-12_
 - `Copy.ai` now describes the current GTM workflow platform rather than an obsolete generic copywriter; `Open WebUI` distinguishes self-hosted/local use from connected cloud-model data paths; `Algolia` covers index modelling, relevance testing, event quality, and hybrid search rather than merely listing features.
 - Strict audit result after this batch: 224 clean cards (up from 220), 1,005 still requiring at least one content repair. Root `npm run check:editorial`, `npm run check:tools:en`, and `git diff --check` pass. Continue from the audit queue in small verified batches; do not blanket-toggle `editorial_reviewed`.
 
+## 2026-07-13 - Tool-card quality campaign, browser automation start
+
+- Replaced the near-empty legacy `Puppeteer` entry with a broad DE/EN editorial card. This also creates the previously missing English locale.
+- The rewritten card distinguishes Puppeteer from a generic test suite: Chrome/Firefox control through CDP or WebDriver BiDi, browser-download setup, stable locator/wait discipline, failure artifacts, CI secrets, and bounded automation are covered alongside internal alternatives.
+- Strict audit no longer flags `puppeteer`; root editorial and English checks pass. Continue this related cluster with Playwright and WebdriverIO, but keep each tool's actual trade-offs distinct.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
