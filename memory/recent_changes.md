@@ -7,6 +7,11 @@ _Last updated: 2026-07-13_
 - Added `scripts/check_built_tool_routes.mjs` to verify every active DE tool source has a matching `site/dist/tools/<slug>/index.html` after Astro renders.
 - Wired that guard into `site` postbuild, so a partial static artifact now fails before sitemap generation or deployment.
 
+## 2026-07-13 - Binder human editorial rewrite
+
+- Replaced the thin, template-like DE/EN Binder card with a fact-checked editorial explanation of reproducible repository launches, cold-start behaviour, ephemeral sessions, public-service limits, privacy boundaries, and when self-operated BinderHub or JupyterHub is the better fit.
+- Added a practical sharing check, four maintained internal alternatives, four FAQs, current review metadata, and retained the normalized editorial illustration.
+
 ## 2026-07-13 - Babbel rendered alternatives correction
 
 - Fixed the DE/EN alternatives syntax so the tool detail renderer recognizes and displays the internal cards for Duolingo, Busuu, Memrise, Rosetta Stone, and LingQ instead of removing the section without a replacement.
