@@ -1003,6 +1003,11 @@ _Last updated: 2026-07-12_
 - Rewrote the DE/EN Simplenote card around its intentional lightweight scope: tags and review habits, Markdown/version limits, small-team collaboration, sensitive-data boundaries, and a practical export test for portability.
 - Strict audit no longer flags `simplenote`; root editorial, English, and whitespace validation pass.
 
+## 2026-07-13 - Tool-card quality campaign, SmartRecruiters
+
+- Rewrote the DE/EN SmartRecruiters card around responsible applicant tracking: structured scorecards, bounded AI assistance, human decision ownership, candidate-data role boundaries, retention/integration review, and meaningful rollout metrics.
+- Strict audit no longer flags `smartrecruiters`; root editorial, English, and whitespace validation pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
