@@ -1068,3 +1068,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card as a reproducible prior-art research guide, clearly separating the free search interface from legal status, FTO, filing, and patent-professional work.
 - Added a search protocol, official-register cross-checks, documented uncertainty, five verified internal patent-research alternatives, and FAQ answers. Strict audit no longer flags `google-patents`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, KineMaster
+
+- Rebuilt the DE/EN KineMaster card around the current mobile NLE: multi-layer timeline, captions, AI voice and video helpers, chroma key, audio work, 4K/60 export, and the difference between mobile production and desktop finishing.
+- Added a repeatable production flow, AI/asset and rights checks, five verified internal video alternatives, and practical FAQ answers. Strict audit no longer flags `kinemaster`; root editorial, English, and whitespace validation pass.
