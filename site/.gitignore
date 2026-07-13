@@ -6,6 +6,7 @@ dist/
 # local runtime export and D1 publish payloads
 .runtime/
 runtime-src/generated/
+dist-runtime/
 
 # dependencies
 node_modules/

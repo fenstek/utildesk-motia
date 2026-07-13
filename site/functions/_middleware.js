@@ -21,6 +21,48 @@ const PUBLIC_EXACT_PATHS = new Set([
   "/en/imprint/",
 ]);
 
+// tools.utildesk.de uses an external DNS zone, so a Cloudflare Worker Route
+// cannot own a path directly. Pages proxies just this migrated content cluster
+// to the D1-backed renderer; every other public route stays on the static app.
+const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
+const isRuntimePath = (pathname) =>
+  pathname === "/ratgeber" ||
+  pathname.startsWith("/ratgeber/") ||
+  pathname === "/en/ratgeber" ||
+  pathname.startsWith("/en/ratgeber/") ||
+  pathname === "/sitemap.xml" ||
+  pathname === "/sitemap-focus.xml" ||
+  pathname === "/sitemap-bing.xml" ||
+  pathname.startsWith("/runtime-assets/");
+
+const proxyRuntime = async (context) => {
+  const url = new URL(context.request.url);
+  const upstream = new URL(`${url.pathname}${url.search}`, RUNTIME_ORIGIN);
+
+  try {
+    const response = await fetch(new Request(upstream, context.request));
+    // Keep a static fallback for a path which has not been imported into D1.
+    if (response.status === 404 && !url.pathname.startsWith("/runtime-assets/")) return context.next();
+    const headers = new Headers(response.headers);
+    headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
+    return new Response(response.body, { status: response.status, headers });
+  } catch {
+    // An upstream outage must preserve the existing Pages version instead of
+    // turning an editorial page into a hard error.
+    return context.next();
+  }
+};
+
+const runtimeIsEnabled = async (context) => {
+  try {
+    // Set this key to "off" for an instant Pages-side rollback. The missing
+    // key intentionally means enabled, so first rollout needs no KV mutation.
+    return (await context.env.RATGEBER_REVIEW?.get("content-runtime:ratgeber")) !== "off";
+  } catch {
+    return true;
+  }
+};
+
 const RETIRED_ASSET_PATHS = new Set([
   "/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-cover.png",
   "/images/ratgeber/browser-agenten-im-praxistest-wo-automation-hilft-und-wo-sie-gefahrlich-wird-workflow.png",
@@ -52,7 +94,7 @@ const isToolsIndex = (pathname) =>
   pathname === "/en/tools" ||
   pathname === "/en/tools/";
 
-export function onRequest(context) {
+export async function onRequest(context) {
   const { request } = context;
   if (request.method !== "GET" && request.method !== "HEAD") {
     return context.next();
@@ -67,6 +109,10 @@ export function onRequest(context) {
         "X-Robots-Tag": "noindex, nofollow",
       },
     });
+  }
+
+  if (isRuntimePath(url.pathname) && await runtimeIsEnabled(context)) {
+    return proxyRuntime(context);
   }
 
   if (!url.search || !isPublicHtmlPath(url.pathname)) {

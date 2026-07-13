@@ -1,0 +1,10 @@
+---
+export const prerender = false;
+
+import RuntimeRatgeberIndex from "../../components/RuntimeRatgeberIndex.astro";
+import { listRuntimeContentEntries } from "../../lib/runtimeContent";
+
+const entries = await listRuntimeContentEntries("ratgeber", "de");
+---
+
+<RuntimeRatgeberIndex locale="de" entries={entries} />

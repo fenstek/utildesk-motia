@@ -11,6 +11,7 @@
     "prebuild": "node ../scripts/check_editorial_templates.mjs && node ../scripts/check_english_tool_translations.mjs && node ../scripts/generate_tool_added_manifest.mjs && node ../scripts/generate_content_lastmod_manifest.mjs && node ../scripts/generate_guide_backlinks.mjs",
     "build": "astro build",
     "build:hybrid": "node scripts/generate_runtime_cache_version.mjs && astro build --config astro.hybrid.config.mjs",
+    "build:runtime": "node scripts/generate_runtime_cache_version.mjs && astro build --config astro.runtime.config.mjs",
     "postbuild": "node scripts/sync_public_images.mjs && node scripts/generate_published_ratgeber_manifest.mjs && node scripts/generate_sitemap.mjs",
     "preview": "astro preview",
     "export:runtime": "node scripts/export_runtime_content.mjs",

@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../src/layouts/BaseLayout.astro";
+import { buildBreadcrumbSchema, buildCollectionPageSchema, SITE_URL } from "../../src/lib/siteMeta";
+import type { RuntimeContentEntry, RuntimeLocale } from "../lib/runtimeContent";
+
+interface Props {
+  locale: RuntimeLocale;
+  entries: RuntimeContentEntry[];
+}
+
+const { locale, entries } = Astro.props;
+const isEnglish = locale === "en";
+const basePath = isEnglish ? "/en/ratgeber/" : "/ratgeber/";
+const title = isEnglish ? "AI guides for decisions that hold up in practice" : "KI-Ratgeber für Entscheidungen, die in der Praxis halten";
+const description = isEnglish
+  ? "Editorial guides, comparisons and practical frameworks for teams working with AI."
+  : "Redaktionelle Einordnungen, Vergleiche und Arbeitsmodelle für Teams, die mit KI produktiv arbeiten.";
+const issueNumber = String(entries.length).padStart(3, "0");
+const featured = entries.slice(0, 3);
+const archive = entries.slice(3);
+const value = (entry: RuntimeContentEntry, key: string, fallback = "") => typeof entry.metadata[key] === "string" ? entry.metadata[key] : fallback;
+const cover = (entry: RuntimeContentEntry) => value(entry, "coverImage");
+const category = (entry: RuntimeContentEntry) => value(entry, "category", isEnglish ? "Guide" : "Ratgeber");
+const dateFor = (entry: RuntimeContentEntry) => entry.sourceUpdatedAt || entry.sourcePublishedAt || value(entry, "date");
+const dateLabel = (entry: RuntimeContentEntry) => new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(new Date(dateFor(entry) || Date.now()));
+const collectionSchema = buildCollectionPageSchema({
+  name: title,
+  description,
+  url: `${SITE_URL}${basePath}`,
+  about: isEnglish ? ["AI adoption", "AI agents", "AI workflows"] : ["KI-Einsatz", "KI-Agenten", "KI-Workflows"],
+  inLanguage: isEnglish ? "en" : "de-DE",
+  mainEntity: { "@type": "ItemList", numberOfItems: entries.length },
+});
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Utildesk", url: SITE_URL },
+  { name: isEnglish ? "Guides" : "Ratgeber", url: `${SITE_URL}${basePath}` },
+]);
+---
+
+<BaseLayout
+  locale={locale}
+  title={`${isEnglish ? "AI Guides and Editorial Comparisons" : "KI-Ratgeber und redaktionelle Vergleiche"} | Utildesk`}
+  description={description}
+  alternatePaths={{ de: "/ratgeber/", en: "/en/ratgeber/" }}
+>
+  <Fragment slot="head">
+    <link rel="canonical" href={`${SITE_URL}${basePath}`} />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  </Fragment>
+
+  <main class="ratgeber-archive runtime-ratgeber-archive">
+    <header class="ratgeber-archive-hero">
+      <div>
+        <p class="ratgeber-archive-kicker">{isEnglish ? "Editorial desk" : "Redaktion"} · {isEnglish ? "issue" : "Ausgabe"} № {issueNumber}</p>
+        <h1>{isEnglish ? "Guidance for teams that want AI to work after the demo." : "Ratgeber für Teams, bei denen KI auch nach der Demo funktionieren muss."}</h1>
+        <p>{description}</p>
+      </div>
+      <dl class="ratgeber-archive-stats">
+        <div><dt>{entries.length}</dt><dd>{isEnglish ? "guides" : "Ratgeber"}</dd></div>
+        <div><dt>{entries.filter((entry) => Boolean(cover(entry))).length}</dt><dd>{isEnglish ? "with illustration" : "mit Illustration"}</dd></div>
+        <div><dt>{isEnglish ? "0" : "0"}</dt><dd>{isEnglish ? "paid placements" : "bezahlte Plätze"}</dd></div>
+      </dl>
+    </header>
+
+    <section class="ratgeber-feature-grid" aria-label={isEnglish ? "Latest guides" : "Neueste Ratgeber"}>
+      {featured.map((entry, index) => (
+        <a class:list={["ratgeber-feature-card", index === 0 && "ratgeber-feature-card--lead"]} href={`${basePath}${entry.slug}/`}>
+          {cover(entry) && <img src={cover(entry)} alt="" loading={index === 0 ? "eager" : "lazy"} />}
+          <div>
+            <p>{category(entry)} <span>·</span> {dateLabel(entry)}</p>
+            <h2>{entry.title}</h2>
+            <small>{entry.excerpt}</small>
+          </div>
+        </a>
+      ))}
+    </section>
+
+    <section class="ratgeber-archive-list" aria-labelledby="archive-title">
+      <div class="ratgeber-archive-list-head">
+        <p class="ratgeber-archive-kicker">{isEnglish ? "Archive" : "Archiv"}</p>
+        <h2 id="archive-title">{isEnglish ? "All editorial guides" : "Alle redaktionellen Ratgeber"}</h2>
+      </div>
+      <div class="ratgeber-archive-grid">
+        {archive.map((entry, index) => (
+          <a href={`${basePath}${entry.slug}/`} class="ratgeber-archive-card">
+            <span class="ratgeber-archive-card-number">{String(index + 4).padStart(2, "0")}</span>
+            <div>
+              <p>{category(entry)} <span>·</span> {dateLabel(entry)}</p>
+              <h3>{entry.title}</h3>
+              <small>{entry.excerpt}</small>
+            </div>
+            <span class="ratgeber-archive-card-arrow" aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
