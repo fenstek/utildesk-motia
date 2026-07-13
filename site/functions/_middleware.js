@@ -25,6 +25,7 @@ const PUBLIC_EXACT_PATHS = new Set([
 // cannot own a path directly. Pages proxies just this migrated content cluster
 // to the D1-backed renderer; every other public route stays on the static app.
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
+const RUNTIME_RATGEBER_STYLESHEET = "/runtime-ratgeber-detail.css?v=20260713-1";
 const isRuntimePath = (pathname) =>
   pathname === "/ratgeber" ||
   pathname.startsWith("/ratgeber/") ||
@@ -43,6 +44,31 @@ const proxyRuntime = async (context) => {
     const response = await fetch(new Request(upstream, context.request));
     // Keep a static fallback for a path which has not been imported into D1.
     if (response.status === 404 && !url.pathname.startsWith("/runtime-assets/")) return context.next();
+
+    // The runtime Worker and Pages are deployed independently. Keep the
+    // article presentation resilient when a newer Pages design ships before
+    // the Worker bundle can be redeployed.
+    if (
+      context.request.method === "GET" &&
+      response.ok &&
+      response.headers.get("content-type")?.includes("text/html")
+    ) {
+      const html = await response.text();
+      if (!html.includes(RUNTIME_RATGEBER_STYLESHEET)) {
+        const headers = new Headers(response.headers);
+        headers.delete("content-length");
+        headers.delete("content-encoding");
+        const styledHtml = html.replace(
+          "</head>",
+          `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
+        );
+        const styledResponse = new Response(styledHtml, { status: response.status, headers });
+        styledResponse.headers.set("X-Utildesk-Runtime-Styles", "pages-bridge-v1");
+        styledResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
+        return styledResponse;
+      }
+    }
+
     const headers = new Headers(response.headers);
     headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
     return new Response(response.body, { status: response.status, headers });
