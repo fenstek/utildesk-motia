@@ -1118,3 +1118,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around Apigee as API-management rather than a generic gateway: API proxies, policies, API hub, developer portals, analytics, hybrid runtime, and API-product governance.
 - Added a contract-first rollout, policy and secret controls, current cost dimensions, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `apigee`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Are.na
+
+- Rebuilt the DE/EN card around long-term research curation: blocks and channels, multiple contextual connections, private/closed/public permissions, collaboration, export, API, and the boundary from project management.
+- Added a repeatable research practice, source and rights checks, archive guidance, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `are-na`; root editorial, English, and whitespace validation pass.
