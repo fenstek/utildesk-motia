@@ -34,6 +34,52 @@ const stripDuplicatedRuntimeSecondaryImage = (html) => html.replace(
     return proseBeforeFigure.includes(`src="${imageSrc}"`) ? "" : figure;
   },
 );
+const GERMAN_MONTHS = {
+  januar: 0, februar: 1, märz: 2, april: 3, mai: 4, juni: 5,
+  juli: 6, august: 7, september: 8, oktober: 9, november: 10, dezember: 11,
+};
+const isRatgeberIndexPath = (pathname) =>
+  pathname === "/ratgeber" ||
+  pathname === "/ratgeber/" ||
+  pathname === "/en/ratgeber" ||
+  pathname === "/en/ratgeber/";
+const runtimeCardTimestamp = (card) => {
+  const label = card.match(/<span class="rg-meta">([^<]+)<\/span>/)?.[1]?.trim() ?? "";
+  const german = label.match(/^(\d{1,2})\.\s+([^\s]+)\s+(\d{4})$/);
+  if (german) {
+    const month = GERMAN_MONTHS[german[2].toLowerCase()];
+    if (month !== undefined) return Date.UTC(Number(german[3]), month, Number(german[1]));
+  }
+  const timestamp = Date.parse(label);
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+};
+const rebuildRuntimeGuideCard = (card, index, isEnglish) => {
+  const isFeatured = index === 0;
+  const issue = String(index + 1).padStart(2, "0");
+  let rebuilt = card
+    .replace(/class="rg-card(?:\s+rg-card--featured)?"/, `class="rg-card${isFeatured ? " rg-card--featured" : ""}"`)
+    .replace(/data-guide-index="\d+"(?:\s+hidden)?/, `data-guide-index="${index}"${index >= 10 ? " hidden" : ""}`)
+    .replace(/(<div class="rg-card-issue"><span>)[^<]*(<\/span>)/, `$1${isFeatured ? (isEnglish ? "Latest decision" : "Neueste Entscheidung") : (isEnglish ? "Guide" : "Ratgeber")}$2`)
+    .replace(/(<div class="rg-card-issue">[\s\S]*?<strong>)\d+(<\/strong>)/, `$1${issue}$2`);
+  if (isFeatured) {
+    rebuilt = rebuilt.replace('loading="lazy"', 'loading="eager"').replace('fetchpriority="auto"', 'fetchpriority="high"');
+  } else {
+    rebuilt = rebuilt.replace('loading="eager"', 'loading="lazy"').replace('fetchpriority="high"', 'fetchpriority="auto"');
+  }
+  return rebuilt;
+};
+const sortRuntimeRatgeberIndex = (html, isEnglish) => html.replace(
+  /(<section class="rg-list">)([\s\S]*?)(<\/section>)/,
+  (section, open, list, close) => {
+    const cards = [...list.matchAll(/<a href="\/(?:en\/)?ratgeber\/[^"/]+\/" class="rg-card(?:\s+rg-card--featured)?"[\s\S]*?<\/a>/g)]
+      .map((match, index) => ({ card: match[0], index, timestamp: runtimeCardTimestamp(match[0]) }));
+    if (cards.length < 2) return section;
+    const sorted = cards
+      .sort((left, right) => right.timestamp - left.timestamp || left.index - right.index)
+      .map(({ card }, index) => rebuildRuntimeGuideCard(card, index, isEnglish));
+    return `${open}${sorted.join("")}${close}`;
+  },
+);
 const isRuntimePath = (pathname) =>
   pathname === "/ratgeber" ||
   pathname.startsWith("/ratgeber/") ||
@@ -62,11 +108,15 @@ const proxyRuntime = async (context) => {
       response.headers.get("content-type")?.includes("text/html")
     ) {
       const html = await response.text();
-      if (!html.includes(RUNTIME_RATGEBER_STYLESHEET)) {
+      const orderedHtml = isRatgeberIndexPath(url.pathname)
+        ? sortRuntimeRatgeberIndex(html, url.pathname.startsWith("/en/"))
+        : html;
+      const cleanedHtml = stripDuplicatedRuntimeSecondaryImage(orderedHtml);
+      if (!cleanedHtml.includes(RUNTIME_RATGEBER_STYLESHEET)) {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        const styledHtml = stripDuplicatedRuntimeSecondaryImage(html).replace(
+        const styledHtml = cleanedHtml.replace(
           "</head>",
           `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
         );
@@ -74,6 +124,14 @@ const proxyRuntime = async (context) => {
         styledResponse.headers.set("X-Utildesk-Runtime-Styles", "pages-bridge-v1");
         styledResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
         return styledResponse;
+      }
+      if (cleanedHtml !== html) {
+        const headers = new Headers(response.headers);
+        headers.delete("content-length");
+        headers.delete("content-encoding");
+        const orderedResponse = new Response(cleanedHtml, { status: response.status, headers });
+        orderedResponse.headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
+        return orderedResponse;
       }
     }
 
