@@ -1,5 +1,4 @@
-import { readdirSync } from "node:fs";
-import { fromContent } from "./contentRoot.mjs";
+import contentLastmodManifest from "../data/content-lastmod.json";
 
 type IssueLocale = "de" | "en";
 
@@ -8,13 +7,11 @@ let cachedRatgeberCount: number | null = null;
 export const getDecisionIssueCount = () => {
   if (cachedRatgeberCount !== null) return cachedRatgeberCount;
 
-  try {
-    cachedRatgeberCount = readdirSync(fromContent("ratgeber"))
-      .filter((file) => file.endsWith(".md") && !file.startsWith("_"))
-      .length;
-  } catch {
-    cachedRatgeberCount = 1;
-  }
+  // The manifest is generated before the static build and is Worker-safe.
+  // It replaces the former runtime node:fs directory scan in the shared shell.
+  cachedRatgeberCount = Object.keys(contentLastmodManifest as Record<string, string>)
+    .filter((path) => /^content\/ratgeber\/[^_][^/]*\.md$/i.test(path))
+    .length || 1;
 
   return cachedRatgeberCount;
 };

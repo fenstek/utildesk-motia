@@ -3,6 +3,10 @@ dist/
 # generated types
 .astro/
 
+# local runtime export and D1 publish payloads
+.runtime/
+runtime-src/generated/
+
 # dependencies
 node_modules/
 

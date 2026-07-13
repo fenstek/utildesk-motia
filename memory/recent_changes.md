@@ -921,3 +921,11 @@ _Last updated: 2026-07-12_
 
 - Replaced the shared DE/EN KI-Video 2026 cover with a clean 16:9 crop that removes the residual Gemini mark from the lower-right corner while preserving the photographic composition.
 - Kept the public asset URL unchanged and used the image-only sync path, so no tool-card or route rebuild was required.
+
+## 2026-07-13 - Hybrid content runtime pilot
+
+- Created an independent Cloudflare Worker/D1 pilot for the future hybrid architecture. The current Cloudflare Pages production deployment, canonical routes, Google sitemap, Bing sitemap, robots policy and static build remain unchanged.
+- Added Markdown-to-D1 runtime export and targeted publisher scripts. The remote preview database contains all 38 German and 38 English Ratgeber entries, with content hashes and revisions so unchanged records are not rewritten.
+- The Worker is a deliberately `noindex` preview at `https://utildesk-hybrid-preview.s-skorykov.workers.dev/runtime-preview/de/ratgeber/shared-ai-workspaces-team-kontext-memory-agenten/`; it renders from D1, uses the production image URL, and has a tested five-minute Cloudflare Cache API layer.
+- Isolated the runtime Astro source tree under `site/runtime-src/`, so the Worker no longer bundles the legacy static tool/API/markdown route tree. Hybrid build is about 7 seconds and uploads only the runtime worker modules; existing full static builds remain supported.
+- Added `docs/04_operations/hybrid_content_runtime.md` with commands, cache contract and a reversible rollout order. The renderer cache version is generated from runtime source hashes during each hybrid build, so template deployments invalidate old cached HTML without rebuilding editorial content.
