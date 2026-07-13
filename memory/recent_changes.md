@@ -983,6 +983,11 @@ _Last updated: 2026-07-12_
 - Rebuilt the DE/EN PostgreSQL card around data-model decisions, constraints, realistic index work, migration and rollback risk, recovery testing, role separation, and managed-service boundaries.
 - Strict audit no longer flags `postgresql`; root editorial, English, and whitespace validation pass.
 
+## 2026-07-13 - Tool-card quality campaign, Prometheus
+
+- Corrected a substantive catalog error: the previous DE/EN Prometheus card falsely described the monitoring system as an AI workflow tool. The replacement covers time-series metrics, SLO signals, label cardinality, PromQL/recording rules, alert hygiene, retention, and protected metric endpoints.
+- Strict audit no longer flags `prometheus`; root editorial, English, and whitespace validation pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.

@@ -2,143 +2,62 @@
 slug: prometheus
 title: Prometheus
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
-tags:
-  - assistant
-  - automation
-  - workflow
-official_url: 'https://prometheus.io/'
-popularity: 0
-description: 'A powerful AI tool for automating workflows, streamlining repetitive tasks, and supporting decision-making for individuals and teams.'
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-07-13
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-tool-quality-campaign-04
+category: Developer
+price_model: Open Source
+tags: [monitoring, metrics, observability, developer-tools]
+official_url: "https://prometheus.io/"
+description: "Prometheus is an open-source metrics and monitoring system for time-series data, queries, and alerting."
 translation: full
 ---
 # Prometheus
 
-Prometheus is a powerful AI tool designed to automate workflows and act as an intelligent assistant. It helps users simplify repetitive tasks, optimize processes, and increase productivity across a variety of areas. With its versatile features, Prometheus is suitable for both individuals and teams looking to make their work more efficient.
+Prometheus is an open-source metrics and monitoring system, not an AI assistant or workflow automator. It collects timestamped measurements, stores them as time series, and supports querying and alerting. Common signals include request rate, error rate, latency, resource consumption, and queue depth.
 
-## Who is Prometheus suitable for?
+## Who is Prometheus for?
 
-Prometheus is aimed at professionals, businesses, and teams that want to improve their workflows through automation. The tool is especially suitable for:
+Prometheus suits teams operating services, containers, or infrastructure and wanting to turn technical signals into useful observability. It works particularly well with a pull-based exporter landscape and complements visualisation through [Grafana](/en/tools/grafana/). Log search and distributed traces require additional systems; metrics alone do not explain every incident.
 
-- Project managers who want to coordinate and automate complex tasks.
-- Marketing and sales teams that want to standardize repetitive processes.
-- Developers and IT specialists who want to optimize workflows with AI support.
-- Small and medium-sized businesses looking for efficiency gains through intelligent automation.
-- Individuals who want to better organize and automate their daily tasks.
+## Start with a few SLO signals
 
-Depending on the use case and requirements, Prometheus can be adapted flexibly.
+Begin from the user perspective: availability, error rate, and latency of one critical journey. A wall of CPU charts helps little if no one knows whether customers are affected. Define an owner, urgency, runbook, and concrete action for each alert.
 
-Prometheus is most useful for development, QA, platform, and product teams that want technical work to be handed off more reliably. The value should be judged in a real process where development, testing, debugging, deployment behavior, and traceable technical reviews become not only faster but also easier to explain.
+## Labels and cardinality
 
-The first step with Prometheus should not be a showroom test. A real work item shows much faster whether ownership, review, and output quality actually fit together.
+Labels make metrics filterable, but can make storage and query cost explode. IDs, email addresses, full URLs, or random request values do not belong as Prometheus labels. Use a few bounded dimensions such as service, endpoint class, or status family, and review new metrics.
 
-## Editorial assessment
+## Queries, recording rules, and alerting
 
-Prometheus should be measured by process quality. A good implementation makes handoffs clearer, decisions easier to trace, and errors visible earlier.
+PromQL supports flexible queries; frequent or expensive calculations can be prepared as recording rules. Alerts should represent symptoms and duration, not every short fluctuation. Alertmanager routing, deduplication, and inhibition keep one outage from creating twenty pages. Test rules using deliberately generated failure conditions.
 
-Prometheus should first prove itself in a real development flow from setup through test data and review to acceptance. A broader rollout only makes sense when defect rate, review effort, speed, maintainability, and reproducibility look more stable there.
+## Operations and retention
 
-- **Checkpoint for Prometheus:** Before rollout, defect rate, review effort, speed, maintainability, and reproducibility should be supported by a small before-and-after comparison.
-- **Good start for Prometheus:** A limited test path with real inputs shows faster whether the tool removes work or creates new maintenance.
-- **Risk with Prometheus:** Even a good interface helps only partly when standards, test data, ownership, and technical boundaries emerge only informally.
-
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/prometheus-editorial.webp" alt="Illustration for Prometheus: Metrics move through time series, alerts, and service health paths" loading="lazy" decoding="async" />
-</figure>
-
-## Key features
-
-- **Intelligent automation:** Automates routine tasks without programming knowledge.
-- **Workflow management:** Creates and manages complex workflows.
-- **AI-powered assistance:** Supports decision-making and task prioritization.
-- **Third-party integration:** Connects with various tools and platforms for seamless processes.
-- **Custom adjustments:** Options for individualized configuration of automations.
-- **Real-time analytics:** Monitoring and analysis of workflows for optimization.
-- **Notifications and alerts:** Automatic warnings for important events or errors.
-- **Multilingual support:** Can be used in different language environments.
-
-## Advantages and disadvantages
-
-### Advantages
-
-- Increases productivity by automating recurring tasks.
-- Flexible and adaptable to different industries and needs.
-- Supports team collaboration through transparent workflow management.
-- Reduces sources of error through standardized processes.
-- Can be integrated with many other tools.
-
-- Prometheus works best when the scope stays narrow enough for results to be reviewed and repeated reliably.
-- Prometheus can improve handoffs when development, testing, debugging, deployment behavior, and traceable technical reviews currently leave too much context in individual heads.
-
-### Disadvantages
-
-- Depending on the plan, costs may apply for advanced features.
-- Setting up complex workflows requires time to learn.
-- Not all features are available in the base version.
-- Additional adjustments may be necessary for highly specialized requirements.
-
-- Prometheus becomes harder to run when standards, test data, ownership, and technical boundaries emerge only informally and the team discovers those gaps only after rollout.
-- Prometheus is not a self-running fix; without an owner and review, the team quickly loses sight of quality and limits.
-
-## Pricing & costs
-
-Prometheus offers various pricing options that may vary depending on the provider and plan. In general, models such as the following exist:
-
-- **Freemium:** Free basic features with limited access.
-- **Subscription:** Monthly or annual payments for advanced features.
-- **Custom quote:** Tailored solutions are offered for businesses with specific requirements.
-
-The exact pricing depends on the selected feature set and number of users.
-
-For Prometheus, it is worth looking behind the sticker price: setup, CI resources, maintenance, integrations, documentation, and technical onboarding. These factors often decide ROI more than the entry price.
+Plan scrape interval, retention, storage, backups, and high availability around expected load. Prometheus is not an unlimited long-term archive; remote storage or compatible systems may be needed for larger scale or longer retention. Protect metrics endpoints because they can reveal internal names, capacity, or error detail.
 
 ## Alternatives to Prometheus
 
-- **Zapier:** Known for automating web applications and creating simple workflows.
-- **Integromat (Make):** Offers extensive automation features with visual workflow creation.
-- **Microsoft Power Automate:** Integration into the Microsoft ecosystem with a focus on business processes.
-- **IFTTT:** Beginner-friendly automation of simple tasks and devices.
-- **UiPath:** Robotic Process Automation (RPA) for complex business processes.
+- [Grafana](/en/tools/grafana/): a visualisation and alerting complement, not a replacement for the metric source.
+- [Datadog](/en/tools/datadog/): a hosted observability platform with a broader SaaS offering.
+- [New Relic](/en/tools/new-relic/): an alternative APM and observability platform.
+- [Elastic Stack](/en/tools/elastic-stack/): when logs and search are more central.
 
-A useful comparison for Prometheus starts with the goal. Only then does it become clear whether testing, developer-tooling, low-code, API, monitoring, and platform solutions are more robust, cheaper, or easier to operate in practice.
+## Editorial assessment
+
+Prometheus is an excellent standard for technical metrics when a team takes cardinality, alert hygiene, and operational ownership seriously. The best early result is not a pretty dashboard but an alert that fires rarely, reaches the right person, and speeds a clear diagnosis.
 
 ## FAQ
 
-**1. Is Prometheus suitable for beginners?**
-Prometheus offers an intuitive user interface, but setting up more complex workflows may require time to learn. For simple automations, it is also suitable for beginners.
+**Does Prometheus replace log management?**
 
-**2. Which integrations does Prometheus support?**
-Depending on the plan and provider, Prometheus supports numerous integrations with common tools and platforms, including CRM systems, communication apps, and cloud services.
+No. Metrics efficiently show trends and symptoms; detailed events and root causes usually live in logs or traces.
 
-**3. Is there a free version of Prometheus?**
-A freemium version is often available, allowing basic features to be used for free. Advanced features are usually paid.
+**Why are high-cardinality labels dangerous?**
 
-**4. How secure is data in Prometheus?**
-Prometheus places great value on data security and privacy. The exact security measures depend on the provider and should be reviewed before use.
+Every unique label combination creates a separate time series. Unbounded IDs or URLs can overwhelm storage and queries very quickly.
 
-**5. Can Prometheus be used by multiple users at the same time?**
-Yes, Prometheus generally supports multiple users and teams, with the number of users varying by plan.
+**What makes a good alert?**
 
-**6. What are the benefits of automation with Prometheus?**
-Automation saves time, reduces errors, and allows teams to focus on strategically more important tasks.
-
-**7. How flexible is Prometheus when customizing workflows?**
-Prometheus allows extensive workflow customization to cover individual requirements.
-
-**8. Is there support or training for Prometheus?**
-Many providers offer support and training materials to make it easier to use. Details vary depending on the provider.
-
-- **Practical run with Prometheus:** The tool should be tested against a real development flow from setup through test data and review to acceptance, so strengths and limits become visible outside a polished demo.
-- **Quality control in Prometheus:** The team needs a simple way to review defect rate, review effort, speed, maintainability, and reproducibility after use.
-- **Handoff with Prometheus:** Results, open questions, and decisions should be documented so other roles can continue the work later.
-
-**9. How should a team test Prometheus?**
-For Prometheus, use one real, bounded use case. Define the goal, owner, data basis, review steps, and success criteria first, then compare effort and output quality after the test.
-
-**10. When is Prometheus a poor fit?**
-Prometheus is a poor fit when standards, test data, ownership, and technical boundaries emerge only informally, or when nobody has time for setup, review, and ongoing maintenance. In that case the work simply moves to another place.
+It describes a relevant, sustained user or system impact, has an owner and a short runbook. Mere fluctuations belong on a dashboard.
