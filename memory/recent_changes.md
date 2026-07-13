@@ -1103,3 +1103,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around actual Aurora operations: PostgreSQL/MySQL-compatible editions, provisioned versus serverless capacity, replicas, Multi-AZ, global recovery, migration tests, and recovery practice.
 - Added current I/O and capacity cost-model distinctions, governance boundaries, verified internal database alternatives, and practical FAQ answers. Strict audit no longer flags `amazon-aurora`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Amazon Lex
+
+- Rebuilt the DE/EN card around Lex V2 as a controlled conversational interface: voice and text, intents and slots, Assisted NLU, Lambda actions, Amazon Connect, testing, and human handoff rather than a generic chatbot claim.
+- Added a bounded pilot protocol, security and transcript-governance limits, usage-cost distinctions, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `amazon-lex`; root editorial, English, and whitespace validation pass.
