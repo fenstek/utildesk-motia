@@ -945,6 +945,13 @@ _Last updated: 2026-07-12_
 - Added a shared desktop presentation frame for every extracted `.tool-editorial-figure`: `16:10`, centered `object-fit: cover`, clipped rounded border. This normalizes 112 legacy square or unusual source-image ratios without destructive bulk cropping or replacing source artwork.
 - First manual corrective DE/EN batch completed for `zoho-writer`, `airbyte`, `cohere`, and `languagetool`. The old German stubs and templated English passages were replaced with tool-specific workflow guidance, limits, governance notes, current official positioning, internal alternatives, and compact FAQs. Batch is recorded in `docs/04_operations/tool_card_editorial_registry.json` as `2026-07-13-tool-quality-campaign-01`.
 
+## 2026-07-13 - Tool-card quality campaign, second audited batch
+
+- Continued the campaign from the strict content audit rather than the historical illustration/editorial registry. The registry contains legacy status claims and must not be used as evidence that a card has received a broad human rewrite.
+- Fully rewrote DE/EN cards for `anyword`, `copy-ai`, `open-webui`, and `algolia` with current official-product positioning, concrete rollout scenarios, operational limitations, governance notes, four internal alternatives, and three substantive FAQs. Existing editorial illustrations were retained.
+- `Copy.ai` now describes the current GTM workflow platform rather than an obsolete generic copywriter; `Open WebUI` distinguishes self-hosted/local use from connected cloud-model data paths; `Algolia` covers index modelling, relevance testing, event quality, and hybrid search rather than merely listing features.
+- Strict audit result after this batch: 224 clean cards (up from 220), 1,005 still requiring at least one content repair. Root `npm run check:editorial`, `npm run check:tools:en`, and `git diff --check` pass. Continue from the audit queue in small verified batches; do not blanket-toggle `editorial_reviewed`.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
