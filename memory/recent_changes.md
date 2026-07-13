@@ -1136,3 +1136,7 @@ _Last updated: 2026-07-12_
 
 - Replaced the empty German and generic English templates with a full DE/EN Kafka operating guide: Provisioned versus Serverless, Connect and Replicator, event contracts, partitioning, consumer idempotency, ownership, monitoring, security and real cost dimensions.
 - Added verified internal alternatives and practical FAQ answers. Strict audit no longer flags `amazon-msk`.
+## 2026-07-13 - Tool-card quality campaign, Avatoon
+
+- Corrected a material factual error in the old card: Avatoon.net describes a human-artist commissioned-avatar service, not an AI avatar generator. Rewrote DE/EN around its actual order, review, file-delivery, briefing, privacy and licensing workflow.
+- Added internal alternatives and practical FAQs; strict audit no longer flags `avatoon`.
