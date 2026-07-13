@@ -26,6 +26,14 @@ const PUBLIC_EXACT_PATHS = new Set([
 // to the D1-backed renderer; every other public route stays on the static app.
 const RUNTIME_ORIGIN = "https://utildesk-content-runtime.s-skorykov.workers.dev";
 const RUNTIME_RATGEBER_STYLESHEET = "/runtime-ratgeber-detail.css?v=20260713-1";
+const stripDuplicatedRuntimeSecondaryImage = (html) => html.replace(
+  /<figure class="ratgeber-inline-image">\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*>\s*<\/figure>/g,
+  (figure, imageSrc, offset, fullHtml) => {
+    const proseStart = fullHtml.indexOf('<div class="ratgeber-prose"');
+    const proseBeforeFigure = proseStart === -1 ? "" : fullHtml.slice(proseStart, offset);
+    return proseBeforeFigure.includes(`src="${imageSrc}"`) ? "" : figure;
+  },
+);
 const isRuntimePath = (pathname) =>
   pathname === "/ratgeber" ||
   pathname.startsWith("/ratgeber/") ||
@@ -58,7 +66,7 @@ const proxyRuntime = async (context) => {
         const headers = new Headers(response.headers);
         headers.delete("content-length");
         headers.delete("content-encoding");
-        const styledHtml = html.replace(
+        const styledHtml = stripDuplicatedRuntimeSecondaryImage(html).replace(
           "</head>",
           `<link rel="stylesheet" href="${RUNTIME_RATGEBER_STYLESHEET}"></head>`,
         );
