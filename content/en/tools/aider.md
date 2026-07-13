@@ -95,6 +95,12 @@ A fair cost check for Aider should include setup, CI resources, maintenance, int
 
 ## Alternatives to Aider
 
+- [OpenAI Codex](/en/tools/openai-codex/): when agentic coding tasks should run through CLI and a cloud environment.
+- [GitHub Copilot](/en/tools/github-copilot/): when IDE integration and team standardisation are the priority.
+- [Cline](/en/tools/cline/): when an open coding agent with explicit tool approvals in the editor is wanted.
+- [OpenHands](/en/tools/openhands/): when repository work should be handled by a more autonomous software agent.
+- [Cursor](/en/tools/cursor/): when an AI-native editor fits the team better than a terminal-first workflow.
+
 - **GitHub Copilot** – A code-assistant powered by AI that can be integrated directly into development environments.
 - **Tabnine** – Offers AI-based auto-completion for various programming languages.
 - **Kite** – A code-editor powered by AI that provides suggestions and documentation in real-time.
