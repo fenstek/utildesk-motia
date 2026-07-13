@@ -973,6 +973,11 @@ _Last updated: 2026-07-12_
 - Replaced the generic DE/EN Pusher copy with a realtime-architecture editorial pass: authoritative-state design, private/presence channel authorisation, duplicate and delayed events, reconnect/fallback behaviour, load testing, payload minimisation, and usage-peak cost modelling.
 - Strict audit no longer flags `pusher`; root editorial and English checks pass.
 
+## 2026-07-13 - Tool-card quality campaign, Python
+
+- Rebuilt the DE/EN Python entry around productive use rather than a language encyclopaedia: bounded first services, isolated and locked environments, CI version checks, data/AI privacy, type hints and tests, idempotent jobs, and measured performance work.
+- Strict audit no longer flags `python`; root editorial, English, and whitespace validation pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
