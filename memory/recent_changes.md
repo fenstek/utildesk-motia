@@ -1048,3 +1048,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card from AssemblyAI's current voice-AI platform: recorded, synchronous and real-time STT, speech understanding, voice-agent APIs, and PII/content guardrails instead of generic transcription claims.
 - Added an audio-quality pilot, evidence and review boundaries for CRM/agent use, privacy controls, practical API-fit alternatives, and verified FAQ answers. Strict audit no longer flags `assemblyai`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Deepgram
+
+- Rebuilt the DE/EN Deepgram card around the current Voice AI platform: real-time and batch STT, TTS, audio intelligence, the Voice Agent API, and cloud/self-hosted deployment rather than the legacy transcription-only template.
+- Added a measured voice-agent pilot, latency and human-handoff controls, privacy and operating boundaries, current alternatives, and reviewable FAQ answers. Strict audit no longer flags `deepgram`; root editorial, English, and whitespace validation pass.
