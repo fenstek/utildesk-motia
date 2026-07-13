@@ -1013,6 +1013,11 @@ _Last updated: 2026-07-12_
 - Audit showed the existing DE/EN 8x8 editorial copy was already broad; its sole quality gap was zero internal alternatives. Replaced the unlinked vendor-name list with four locale-correct internal alternative links, keeping the substantive communication-platform guidance intact.
 - Strict audit no longer flags `8x8`; root editorial, English, and whitespace validation pass.
 
+## 2026-07-13 - Tool-card quality campaign, Aide
+
+- Rebuilt the DE/EN Aide card against the current first-party product description: governed customer-experience agents, one-intent-at-a-time testing, agent vs copilot boundaries, MCP/API context, action traces, human escalation, and support-data governance.
+- Strict audit no longer flags `aide`; root editorial, English, and whitespace validation pass. The existing `aide-editorial.webp` is thematically mismatched legacy art and remains a separate illustration-normalisation task, not a reason to misrepresent the text as unfinished.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.

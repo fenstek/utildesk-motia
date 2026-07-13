@@ -1,98 +1,68 @@
 ---
 slug: aide
-title: AIDE
+title: Aide
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
-editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_reviewed_by: Utildesk manual editorial pass
+editorial_reviewed_at: 2026-07-13
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-tool-quality-campaign-05
 category: AI
-price_model: Freemium
-tags:
-  - customer-support
-  - automation
-  - productivity
-  - workflow
-official_url: 'https://aide.app/'
-popularity: 0
+price_model: Usage-based
+tags: [customer-support, automation, productivity, workflow]
+official_url: "https://aide.app/"
+popularity: 83
 source_language: de
 translation: full
 ---
-# AIDE
+# Aide
 
-AIDE is an innovative AI-powered tool designed to support customer service, automation, and workflow optimization. With its user-friendly interface and various features, AIDE helps businesses boost productivity and automate repetitive tasks. The tool offers both basic functions in a free version and expanded features in paid plans, making it a flexible solution for different business sizes.
+Aide is an agentic AI platform for customer experience. Used on an existing helpdesk, it can do more than answer tickets: within pre-approved workflows it can retrieve information, route tickets, or trigger defined account and commerce actions. Governance is the key idea: every capability should be tested before going live and uncertain cases should escalate to people.
 
-## For whom is AIDE suitable?
+## Who is Aide for?
 
-AIDE is suitable for businesses and teams looking to improve customer service, automate internal processes, and optimize collaboration in workflows. It is particularly suitable for:
+Aide suits CX and support teams using Zendesk, Front, or Gorgias, especially with high volumes of repeatable enquiries. Ecommerce teams can use it where rules around order status, address changes, or returns are clear. Rare, domain-complex, or heavily regulated cases usually benefit more from well-trained human support than automation.
 
-- Customer service departments looking to process inquiries more quickly
-- Small and medium-sized enterprises that want to utilize automation solutions without significant IT investment
-- Teams looking to reduce repetitive tasks and gain more time for important tasks
-- Businesses seeking a scalable solution that grows with their growth
+## Start with one intent
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/aide-editorial.webp" alt="Illustration for AIDE: mobile app development at a neutral smartphone workbench" loading="lazy" decoding="async" />
-</figure>
+Do not begin by trying to automate all support. Take one clear intent, such as explaining an order status; define allowed data and actions, test historical cases, and inspect edge cases. Add the next intent only when error rate, escalation, and customer impact are understood.
 
-## Key Features
+## Agent, copilot, and workflow
 
-- **AI-powered customer communication:** Automated responses to frequently asked questions and support for more complex issues
-- **Workflow automation:** Integration with existing systems to automate routine tasks
-- **Productivity increase:** Tools for better organization and prioritization of tasks
-- **Customizable templates:** Create and customize response templates for different scenarios
-- **Multi-channel support:** Support for communication across multiple channels such as email, chat, and social media
-- **Analytics and reports:** Analysis of customer interactions to continuously improve the service
-- **Freemium model:** Free basic functions with the option to upgrade to more advanced features
+The customer-facing agent can resolve approved cases; the copilot supports human agents with classification, knowledge guidance, and response drafts. Workflows can connect tags, routing, and API actions to conditions. Measure these separately: a helpful copilot is not automatically a safe autonomous agent.
 
-## Benefits and Drawbacks
+## Knowledge, data, and integrations
 
-### Benefits
-- Easy integration with existing systems
-- Improved efficiency in customer service through automation
-- Flexible pricing due to the Freemium model
-- Multi-channel communication for comprehensive support
-- Customizable workflows and templates
+Aide can retrieve context through APIs or MCP and from helpdesk and knowledge sources. Data quality therefore directly determines action quality. Review fields, permissions, freshness, and fallback when a system is unavailable. An agent must not make irreversible changes from incomplete customer context.
 
-### Drawbacks
-- Expanded features are paid for
-- Depending on the plan, there may be limitations on the number of users or inquiries
-- Requires some time to fully utilize the features
+## Governance and auditability
 
-## Pricing & Costs
+Production use needs scenario tests, explicitly allowed tools, confidence boundaries, and human escalation. Action traces and ticket history help later review. Decide who may change rules, how errors are corrected, and how a faulty workflow can be paused immediately.
 
-AIDE offers a Freemium model, allowing basic functions to be used for free. Paid plans offer expanded features, higher capacities, and additional support. The exact prices and included features vary depending on the provider and subscription model.
+## Privacy and cost
 
-## Alternatives to AIDE
+Support history commonly contains personal, contract, and order data. Clarify processing, retention, roles, data region, DPA, and downstream sharing. Aide describes pricing as a platform fee plus resolved cases and implementation; verify current terms directly. Budget for review, knowledge upkeep, and test cases as well.
 
-- **Zendesk:** Comprehensive customer service platform with automation and AI features
-- **Freshdesk:** Cloud-based helpdesk solution with multi-channel support
-- **Intercom:** Customer communication tool with chatbots and workflow automation
-- **Drift:** Conversational marketing and sales with AI support
-- **Help Scout:** Simple helpdesk system focusing on personal customer support
+## Alternatives to Aide
+
+- [Zendesk](/en/tools/zendesk/): a broad ticketing ecosystem with its own automation and AI capabilities.
+- [Intercom](/en/tools/intercom/): customer messaging and AI support for SaaS teams.
+- [Gorgias](/en/tools/gorgias/): a helpdesk with ecommerce focus.
+- [Freshdesk](/en/tools/freshdesk/): a multi-channel support suite.
+
+## Editorial assessment
+
+Aide is interesting because it connects autonomy to governance rather than only generating response text. The claim still needs to be proven in a team's own data and support process. One well-documented intent with genuine human escalation is the right start; blanket bot automation is not.
 
 ## FAQ
 
-**1. Is AIDE really free to use?**
-Yes, AIDE offers a free basic version with limited functions that can be sufficient for many smaller teams.
+**Does Aide replace a support team?**
 
-**2. What automation features are included?**
-Depending on the plan, you can automate responses, workflow rules, and integrations with other tools to automate routine tasks.
+No. It can take approved repeatable cases and assist people with the rest. Difficult or uncertain cases need a traceable handoff.
 
-**3. Can AIDE be integrated with existing systems?**
-Yes, AIDE supports integrations with various CRM, email, and chat systems to seamlessly integrate the workflow.
+**How can a team prevent incorrect agent actions?**
 
-**4. For which business sizes is AIDE suitable?**
-The tool is scalable and suitable for both small businesses and larger teams with more complex requirements.
+Use narrow scenarios, pre-live tests, least-privilege tools, confidence boundaries, action traces, and an immediately available pause control.
 
-**5. How secure are my data at AIDE?**
-Most providers prioritize data security and privacy, but the exact details depend on the specific provider.
+**What integration is needed to start?**
 
-**6. Is there a mobile app for AIDE?**
-Information on the availability of mobile apps varies depending on the provider and should be checked before use.
-
-**7. How quickly can I set up AIDE?**
-Setup is relatively easy, but fully utilizing the features may take some time, depending on the complexity of the workflows.
-
-**8. Is technical support available?**
-Support options vary depending on the chosen plan; paid plans typically offer more extensive support.
+At least the existing helpdesk and one reviewed knowledge source. Add CRM, commerce, or other API access only after the first intent operates reliably.
