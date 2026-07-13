@@ -1140,3 +1140,7 @@ _Last updated: 2026-07-12_
 
 - Corrected a material factual error in the old card: Avatoon.net describes a human-artist commissioned-avatar service, not an AI avatar generator. Rewrote DE/EN around its actual order, review, file-delivery, briefing, privacy and licensing workflow.
 - Added internal alternatives and practical FAQs; strict audit no longer flags `avatoon`.
+## 2026-07-13 - Tool-card quality campaign, Avid Media Composer
+
+- Replaced generic DE/EN copy with a fact-checked post-production workflow: media organisation, proxy policy, ScriptSync/PhraseFind, shared bins and lock discipline, review exports and delivery ownership.
+- Added practical alternatives and FAQs. Strict audit no longer flags `avid-media-composer`.
