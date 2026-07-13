@@ -1156,3 +1156,7 @@ _Last updated: 2026-07-12_
 
 - Updated the stale product framing to AXIS Camera Station Pro and rebuilt DE/EN around local VMS operations, Smart Search, incident reports, redaction, access control, roles, retention and controlled exports.
 - Added verified internal alternatives and practical FAQs. Strict audit no longer flags `axis-camera-station`.
+## 2026-07-13 - Tool-card quality campaign, Babbel
+
+- Rebuilt DE/EN around actual Babbel learning mechanics: short level-based lessons, spaced review, speech recognition, Babbel Speak, realistic practice and subscription/privacy boundaries.
+- Added internal alternatives and practical FAQs; strict audit no longer flags `babbel`.
