@@ -958,6 +958,11 @@ _Last updated: 2026-07-12_
 - The rewritten card distinguishes Puppeteer from a generic test suite: Chrome/Firefox control through CDP or WebDriver BiDi, browser-download setup, stable locator/wait discipline, failure artifacts, CI secrets, and bounded automation are covered alongside internal alternatives.
 - Strict audit no longer flags `puppeteer`; root editorial and English checks pass. Continue this related cluster with Playwright and WebdriverIO, but keep each tool's actual trade-offs distinct.
 
+## 2026-07-13 - Tool-card quality campaign, Playwright
+
+- Rewrote the DE/EN `Playwright` card into a separate practical E2E-testing guide: cross-browser projects, context isolation, locator discipline, traces/videos/reports, controlled mocks and authentication state, CI browser versioning, and governance of flaky tests.
+- The strict audit no longer flags `playwright`; `npm run check:editorial`, `npm run check:tools:en`, and whitespace validation pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
