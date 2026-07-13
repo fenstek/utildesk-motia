@@ -1196,3 +1196,9 @@ _Last updated: 2026-07-13_
 
 - Rebuilt the DE/EN Hugging Face card as the canonical full editorial exemplar: current Hub, Model Cards, local libraries, Spaces, Inference Providers, dedicated Endpoints, evaluation, governance, security, cost boundaries and an explicit editorial verdict.
 - Added five verified internal alternatives and four practical FAQ answers in both languages. The reusable Codex skill `utildesk-tool-editorial` records this full-card workflow and requires strict audit, complete build, live rendering and linked-route checks before completion is claimed.
+
+## 2026-07-13 - Tool-card quality campaign, Cerebras Wafer-Scale Engine
+
+- Rebuilt the DE/EN card around Cerebras as a specialised wafer-scale training and inference platform, separating WSE hardware, system software and delivery model instead of repeating generic accelerator claims.
+- Added a measurable pilot workflow, MLOps and recovery boundaries, data governance, realistic cost dimensions, five verified internal alternatives, and five practical FAQ answers in both languages.
+- Preserved the existing editorial illustration and updated only the paired card metadata and last-modified entries. The strict editorial guard no longer flags `cerebras-wafer-scale-engine`.
