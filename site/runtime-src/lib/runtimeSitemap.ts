@@ -1,16 +1,11 @@
 import { SITE_URL } from "../../src/lib/siteMeta";
 import { listRuntimeContentEntries } from "./runtimeContent";
+import { STATIC_SITEMAP_ENTRIES } from "../generated/staticSitemapEntries";
 
-const STATIC_PAGES_ORIGIN = "https://utildesk-motia.pages.dev";
 const XML_HEADER = '<?xml version="1.0" encoding="UTF-8"?>\n';
 const escapeXml = (value: string) => value.replace(/[<>&'\"]/g, (character) => ({
   "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", "\"": "&quot;",
 })[character] ?? character);
-
-const sourcePathFor = (pathname: string) =>
-  pathname.endsWith("sitemap-focus.xml") ? "/sitemap-focus.xml"
-    : pathname.endsWith("sitemap-bing.xml") ? "/sitemap-bing.xml"
-      : "/sitemap.xml";
 
 const entriesFromStaticXml = (xml: string) => {
   const entries = new Map<string, string>();
@@ -27,11 +22,8 @@ const datePart = (value: string | null) => {
   return date && !Number.isNaN(date.valueOf()) ? date.toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10);
 };
 
-export async function createRuntimeSitemap(pathname: string) {
-  const source = await fetch(`${STATIC_PAGES_ORIGIN}${sourcePathFor(pathname)}`, {
-    cf: { cacheTtl: 300, cacheEverything: true },
-  });
-  const staticEntries = source.ok ? entriesFromStaticXml(await source.text()) : new Map<string, string>();
+export async function createRuntimeSitemap() {
+  const staticEntries = entriesFromStaticXml(STATIC_SITEMAP_ENTRIES.join("\n"));
   const [german, english] = await Promise.all([
     listRuntimeContentEntries("ratgeber", "de"),
     listRuntimeContentEntries("ratgeber", "en"),

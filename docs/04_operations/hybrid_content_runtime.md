@@ -22,7 +22,7 @@ The completed first production slice is Ratgeber in both locales plus the three 
 - `/sitemap.xml`, `/sitemap-focus.xml`, `/sitemap-bing.xml`
 - `/runtime-assets/*`
 
-All tool pages, the home page, APIs, feeds, robots.txt, Markdown endpoints and the normal Pages assets remain on the static deployment. The worker reads from `utildesk-content-runtime-production` and merges its Ratgeber entries with the static compact sitemap fetched from `utildesk-motia.pages.dev`. This preserves the search contract: robots.txt still advertises only `sitemap.xml`; sitemap-focus stays the explicit Bing/GSC freshness surface.
+All tool pages, the home page, APIs, feeds, robots.txt, Markdown endpoints and the normal Pages assets remain on the static deployment. The worker reads from `utildesk-content-runtime-production` and merges its Ratgeber entries with a generated snapshot of the compact static sitemap. The snapshot is created from `site/dist/sitemap.xml` whenever the static site changes, so it retains the staged tool URLs without relying on the separate `pages.dev` deployment source. This preserves the search contract: robots.txt still advertises only `sitemap.xml`; sitemap-focus stays the explicit Bing/GSC freshness surface.
 
 The Pages proxy is fail-open. A Worker/D1 upstream error or an imported-content 404 falls back to the existing static route. For an immediate manual rollback without a rebuild, write `off` to the existing Pages KV binding `RATGEBER_REVIEW` under `content-runtime:ratgeber`; delete the key or set any other value to re-enable the runtime.
 
