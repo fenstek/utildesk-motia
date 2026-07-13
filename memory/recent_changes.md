@@ -1152,3 +1152,7 @@ _Last updated: 2026-07-12_
 
 - Rebuilt DE/EN around current Lambda engineering: event-driven functions, stateless invocations, 15-minute boundary, idempotency, retries, dead letters, IAM isolation, VPC discipline and outcome-based cost control.
 - Added current MicroVM/Durable Functions context, internal alternatives and practical FAQs. Strict audit no longer flags `aws-lambda`.
+## 2026-07-13 - Tool-card quality campaign, AXIS Camera Station Pro
+
+- Updated the stale product framing to AXIS Camera Station Pro and rebuilt DE/EN around local VMS operations, Smart Search, incident reports, redaction, access control, roles, retention and controlled exports.
+- Added verified internal alternatives and practical FAQs. Strict audit no longer flags `axis-camera-station`.
