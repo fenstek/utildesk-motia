@@ -1,5 +1,11 @@
 # Recent Changes — utildesk-motia
-_Last updated: 2026-07-12_
+_Last updated: 2026-07-13_
+
+## 2026-07-13 - Babbel rendered alternatives correction
+
+- Fixed the DE/EN alternatives syntax so the tool detail renderer recognizes and displays the internal cards for Duolingo, Busuu, Memrise, Rosetta Stone, and LingQ instead of removing the section without a replacement.
+- Added optional per-card editorial verdict fields to both localized tool-detail templates and applied a Babbel-specific assessment, replacing generic template wording with concrete guidance.
+- Rebuilt the entire static output in a single isolated process after production served a partial artifact with valid source cards returning 404; the fresh output contains the affected tool pages for deployment verification.
 
 ## 2026-07-12 - Seven-point search recovery patch
 
