@@ -7,6 +7,541 @@ html[data-design="decision"] .sheet-lead {
   margin-left: auto;
 }
 
+/* The D1 renderer intentionally uses its own semantic markup. Keep its public
+   article pages in the same editorial system as static Ratgeber pages instead
+   of letting a runtime response fall back to BaseLayout's generic typography. */
+html[data-design="decision"] .runtime-ratgeber-detail {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 64px;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  color: #716d63;
+  font: 700 10px/1.3 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-breadcrumb a {
+  color: #315f16;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(360px, .96fr);
+  grid-template-areas:
+    "header cover"
+    "body body"
+    "related related";
+  gap: clamp(28px, 4vw, 52px);
+  align-items: center;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-header {
+  grid-area: header;
+  min-width: 0;
+  padding: clamp(8px, 1.3vw, 18px) 0;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  margin: 0 0 15px;
+  color: #c5251c;
+  font: 800 10px/1.35 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-header h1 {
+  max-width: 14ch;
+  margin: 0;
+  color: #171713;
+  font: 700 clamp(2.45rem, 4.25vw, 4.2rem)/.98 "Source Serif 4", Georgia, serif;
+  letter-spacing: -.045em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-lead {
+  max-width: 42rem;
+  margin: 20px 0 0;
+  color: #3b392f;
+  font: 500 clamp(1.08rem, 1.45vw, 1.28rem)/1.5 "Bricolage Grotesque", ui-sans-serif, sans-serif;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover {
+  grid-area: cover;
+  width: 100%;
+  margin: 0;
+  padding: 7px;
+  overflow: hidden;
+  border: 1px solid #171713;
+  border-radius: 3px;
+  background: #e5e0d4;
+  box-shadow: 10px 10px 0 #d7d1c1;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-grid {
+  grid-area: body;
+  display: grid;
+  grid-template-columns: minmax(0, 760px) minmax(260px, 320px);
+  grid-template-areas: "copy side";
+  justify-content: center;
+  align-items: start;
+  gap: clamp(34px, 4vw, 54px);
+  width: 100%;
+  margin: 4px 0 0;
+  padding-top: clamp(34px, 5vw, 58px);
+  border-top: 1px solid #bbb5a5;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-copy {
+  grid-area: copy;
+  min-width: 0;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 25px;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 5px 9px;
+  border: 1px solid #c8c1b0;
+  border-radius: 3px;
+  background: #fffdf6;
+  color: #315f16;
+  font: 700 10px/1 "JetBrains Mono", ui-monospace, monospace;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose {
+  color: #24231d;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.12rem, 1.3vw, 1.24rem);
+  line-height: 1.66;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose > p:first-of-type {
+  margin-top: 0;
+  color: #171713;
+  font-size: clamp(1.28rem, 1.6vw, 1.45rem);
+  line-height: 1.52;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose p,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose p {
+  margin: 0 0 1.08em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h2,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h3 {
+  color: #171713;
+  font-family: "Source Serif 4", Georgia, serif;
+  letter-spacing: -.03em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h2 {
+  margin: 2em 0 .55em;
+  padding-top: .84em;
+  border-top: 1px solid #d7d1c1;
+  font-size: clamp(2rem, 2.7vw, 2.65rem);
+  line-height: 1.04;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h3 {
+  margin: 1.55em 0 .42em;
+  font-size: clamp(1.42rem, 1.85vw, 1.78rem);
+  line-height: 1.12;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose a {
+  color: #315f16;
+  text-decoration: underline;
+  text-decoration-color: #9fb68f;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .13em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose ul,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose ol {
+  margin: 0 0 1.25em;
+  padding-left: 1.2em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose li {
+  margin: 0 0 .38em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose blockquote {
+  margin: 1.7em 0;
+  padding: .25em 0 .25em 1.05em;
+  border-left: 3px solid #c5251c;
+  color: #4c493e;
+  font-style: italic;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.55em 0 1.85em;
+  border: 1px solid #bbb5a5;
+  border-collapse: collapse;
+  background: #fffdf6;
+  font-family: "Bricolage Grotesque", ui-sans-serif, sans-serif;
+  font-size: .9rem;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose th,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose td {
+  min-width: 140px;
+  padding: 11px 13px;
+  border: 1px solid #d7d1c1;
+  text-align: left;
+  vertical-align: top;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose th {
+  color: #171713;
+  background: #eee9dc;
+  font: 800 10px/1.35 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image {
+  display: block;
+  width: 100%;
+  margin: 32px 0 38px;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image {
+  padding: 7px;
+  border: 1px solid #171713;
+  border-radius: 3px;
+  background: #e5e0d4;
+  box-shadow: 8px 8px 0 #d7d1c1;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img {
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  background: #f6f4ee;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar {
+  grid-area: side;
+  position: sticky;
+  top: 84px;
+  display: grid;
+  gap: 12px;
+  align-self: start;
+  max-height: calc(100vh - 104px);
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa493 transparent;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar > *,
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump {
+  margin: 0;
+  border: 1px solid #bbb5a5;
+  border-radius: 3px;
+  background: #fffdf6;
+  box-shadow: none;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump summary {
+  padding: 13px 15px;
+  color: #c5251c;
+  font: 800 10px/1.3 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump nav {
+  grid-template-columns: 1fr;
+  max-height: 310px;
+  overflow-y: auto;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump nav a {
+  grid-template-columns: 25px minmax(0, 1fr);
+  gap: 7px;
+  padding: 9px 13px;
+  border-right: 0;
+  font-size: 12px;
+  line-height: 1.28;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar-card {
+  padding: 16px 17px;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar-kicker {
+  margin: 0 0 11px;
+  padding: 0 0 9px;
+  border-bottom: 1px solid #d8d2c2;
+  color: #c5251c;
+  font: 800 10px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #292820;
+  font: 500 14px/1.5 "Bricolage Grotesque", ui-sans-serif, sans-serif;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar-card li {
+  margin: 0 0 7px;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-link-list a {
+  color: #315f16;
+  text-decoration: underline;
+  text-underline-offset: .12em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guides {
+  grid-area: related;
+  width: 100%;
+  margin: 0;
+  padding-top: 42px;
+  border-top: 1px solid #bbb5a5;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guides > h2 {
+  margin: 0 0 20px;
+  color: #171713;
+  font: 700 clamp(1.85rem, 2.6vw, 2.55rem)/1.03 "Source Serif 4", Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid #171713;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  min-height: 214px;
+  padding: 22px;
+  border-right: 1px solid #171713;
+  background: #fffdf6;
+  transition: background .16s ease, color .16s ease;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide:last-child {
+  border-right: 0;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide:hover {
+  background: #eee9dc;
+  color: #315f16;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide > span {
+  color: #c5251c;
+  font: 800 10px/1.2 "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide > strong {
+  color: #171713;
+  font: 700 1.38rem/1.04 "Source Serif 4", Georgia, serif;
+  letter-spacing: -.025em;
+}
+
+html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide > small {
+  color: #5d584d;
+  font: 500 13px/1.45 "Bricolage Grotesque", ui-sans-serif, sans-serif;
+}
+
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-header h1,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h2,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h3,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guides > h2,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide > strong {
+  color: var(--fg);
+}
+
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-lead,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar-card ul,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide > small {
+  color: var(--fg-2);
+}
+
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose img,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar > *,
+html[data-theme="dark"][data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide {
+  background: var(--bg-2);
+  border-color: var(--line-2);
+  box-shadow: none;
+}
+
+@media (max-width: 860px) {
+  html[data-design="decision"] .runtime-ratgeber-detail {
+    width: calc(100% - 20px);
+    padding: 18px 0 42px;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "header" "cover" "body" "related";
+    gap: 18px;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-header {
+    padding: 16px 16px 4px;
+    border: 1px solid #cbc5b4;
+    border-radius: 20px;
+    background: #fffdf6;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-header h1 {
+    max-width: none;
+    font-size: clamp(2.2rem, 9vw, 3.1rem);
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .runtime-ratgeber-cover {
+    padding: 5px;
+    box-shadow: none;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "side" "copy";
+    gap: 16px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump {
+    grid-column: 1 / -1;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-copy {
+    padding: 24px clamp(18px, 4vw, 30px) 30px;
+    border: 1px solid #cbc5b4;
+    border-radius: 20px;
+    background: #fffdf6;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guides {
+    padding-top: 28px;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guides-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide {
+    min-height: auto;
+    padding: 18px;
+    border-right: 0;
+    border-bottom: 1px solid #171713;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-related-guide:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-header {
+    padding: 17px 16px 7px;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-meta {
+    font-size: 9px;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-article-lead {
+    margin-top: 15px;
+    font-size: 1.04rem;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump {
+    grid-column: auto;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-copy {
+    padding: 22px 17px 28px;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose,
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose p,
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose li {
+    font-size: 1.08rem;
+    line-height: 1.62;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose > p:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-prose h2 {
+    font-size: clamp(1.75rem, 8vw, 2.2rem);
+  }
+}
+
 html[data-design="decision"] .sheet-wrap > .akte-crumb {
   display: flex;
   align-items: center;
