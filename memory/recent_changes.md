@@ -1028,3 +1028,8 @@ _Last updated: 2026-07-12_
 - Removed nested sidebar scrolling across Ratgeber detail pages. The table of contents and supporting cards are now fully expanded in a normal, non-sticky side column that scrolls with the document; the static fallback uses the same behavior.
 - The existing production runtime archive still emitted D1 entries in legacy insertion order. Pages middleware now sorts only the `/ratgeber/` and `/en/ratgeber/` card lists by their rendered publication dates, reassigns issue numbers and keeps the existing load-more contract. Live archives now show newest guides first in both locales while the local runtime query remains date-descending for the next Worker release.
 - Reframed all Ratgeber article heroes in both runtime and static fallback: compact full-width metadata/title/lead, followed by a wide 21:8 editorial cover on desktop. This removes the former cramped two-column hero and caps the heading at `3.45rem`; mobile retains a readable 16:10 cover, a `32px` heading, and no horizontal overflow.
+
+## 2026-07-13 - Tool-card quality campaign, OpenClaw
+
+- Rebuilt the DE/EN OpenClaw card from the current first-party product model: a self-hosted personal-agent runtime, chat channels, gateway, skills, model choice, recurring work, and local operational ownership. Removed the corrupted legacy German template text and unsupported generic feature claims.
+- Added a practical scoped rollout, permission and data-flow guardrails, current comparison links, and reviewable FAQ answers. Strict audit no longer flags `openclaw`; root editorial, English, and whitespace validation pass.
