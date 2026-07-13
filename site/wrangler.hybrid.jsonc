@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "utildesk-hybrid-preview",
+  "compatibility_date": "2026-07-13",
+  "d1_databases": [
+    {
+      "binding": "UTILDESK_CONTENT",
+      "database_name": "utildesk-content-runtime-preview",
+      "database_id": "a08821c8-aa9c-4820-9896-311f4d44a339",
+      "migrations_dir": "./runtime/migrations"
+    }
+  ]
+}

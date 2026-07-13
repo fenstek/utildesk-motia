@@ -1,0 +1,75 @@
+---
+import { marked } from "marked";
+import { getRuntimeContentEntry, type RuntimeLocale } from "../../../../lib/runtimeContent";
+
+export const prerender = false;
+
+const locale = Astro.params.locale === "de" || Astro.params.locale === "en" ? Astro.params.locale : null;
+const slug = Astro.params.slug ?? "";
+if (!locale || !slug) return Astro.redirect("/");
+
+const entry = await getRuntimeContentEntry("ratgeber", locale as RuntimeLocale, slug);
+if (!entry) return Astro.redirect("/");
+
+const isEnglish = locale === "en";
+const data = entry.metadata;
+const coverValue = typeof data.coverImage === "string" ? data.coverImage : "";
+const coverImage = coverValue.startsWith("/") ? `https://tools.utildesk.de${coverValue}` : coverValue;
+const renderedArticle = String(marked.parse(entry.markdown));
+const publishedValue = entry.sourcePublishedAt || (typeof data.date === "string" ? data.date : "");
+const formattedDate = publishedValue
+  ? new Intl.DateTimeFormat(isEnglish ? "en" : "de-DE", { day: "2-digit", month: "long", year: "numeric" }).format(new Date(publishedValue))
+  : "";
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="description" content={entry.excerpt} />
+    <title>{entry.title} | Utildesk runtime preview</title>
+  </head>
+  <body>
+    <main>
+      <div class="notice">{isEnglish ? "Runtime preview" : "Runtime-Vorschau"} · D1 revision {entry.revision} · noindex</div>
+      <nav><a href="https://tools.utildesk.de/ratgeber/">Utildesk Ratgeber</a> <span>/</span> {entry.title}</nav>
+      <article>
+        <header>
+          <p class="kicker">{String(data.eyebrow || data.category || "Utildesk")}</p>
+          <h1>{entry.title}</h1>
+          <p class="dek">{entry.excerpt}</p>
+          <p class="meta">Utildesk Redaktion{formattedDate ? ` · ${formattedDate}` : ""}</p>
+        </header>
+        {coverImage ? <img class="cover" src={coverImage} alt={entry.title} /> : null}
+        <section class="prose" set:html={renderedArticle}></section>
+      </article>
+    </main>
+  </body>
+</html>
+
+<style>
+  :root { color: #151814; background: #f7f5ef; font-family: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0 80px; }
+  .notice, nav, .kicker, .meta { font: 700 0.75rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .07em; text-transform: uppercase; }
+  .notice { border: 1px dashed #d52d22; color: #b6241b; padding: 10px 12px; margin-bottom: 22px; }
+  nav { color: #5f625b; margin-bottom: 34px; overflow-wrap: anywhere; }
+  nav a { color: #2d6517; } nav span { padding: 0 .45rem; }
+  article { border: 1px solid #252820; background: #fffefa; box-shadow: 10px 10px 0 #e5e0d2; }
+  header { padding: clamp(28px, 7vw, 68px); border-bottom: 1px solid #d8d3c5; }
+  .kicker { color: #b6241b; margin: 0 0 14px; }
+  h1 { font-size: clamp(2.1rem, 6vw, 4.8rem); line-height: .98; margin: 0; letter-spacing: -.05em; }
+  .dek { max-width: 46rem; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.55; margin: 28px 0 0; }
+  .meta { color: #676a61; margin: 24px 0 0; }
+  .cover { display: block; width: min(100%, 760px); max-height: 520px; object-fit: cover; margin: 38px auto 0; }
+  .prose { padding: clamp(28px, 7vw, 68px); font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.7; }
+  .prose :global(h2) { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.05; margin-top: 2.1em; }
+  .prose :global(h3) { font-size: 1.35em; margin-top: 1.8em; }
+  .prose :global(a) { color: #2d6517; text-decoration-thickness: 2px; }
+  .prose :global(img) { max-width: 100%; height: auto; }
+  .prose :global(blockquote) { border-left: 4px solid #d52d22; margin-left: 0; padding-left: 1.2rem; }
+  @media (max-width: 560px) { main { width: min(100% - 20px, 920px); padding-top: 10px; } article { box-shadow: 5px 5px 0 #e5e0d2; } }
+</style>
