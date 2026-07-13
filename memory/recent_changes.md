@@ -1093,3 +1093,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around the current website-localisation workflow: content detection, machine translation and visual review, glossary rules, language-specific URLs, `hreflang`, and a controlled multilingual rollout.
 - Added practical SEO, cost, migration and editorial-risk boundaries, plus verified internal alternatives to DeepL, Lokalise, Crowdin, and Phrase. Strict audit no longer flags `weglot`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Adobe Podcast
+
+- Rebuilt the DE/EN card around the real speech-cleanup workflow: Enhance Speech, source-recording limits, artefact review, preserving originals, and the boundary between spoken-audio enhancement and a full DAW.
+- Added rights and cloud-processing checks, a repeatable listening review, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `adobe-podcast`; root editorial, English, and whitespace validation pass.
