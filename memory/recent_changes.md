@@ -1144,3 +1144,7 @@ _Last updated: 2026-07-12_
 
 - Replaced generic DE/EN copy with a fact-checked post-production workflow: media organisation, proxy policy, ScriptSync/PhraseFind, shared bins and lock discipline, review exports and delivery ownership.
 - Added practical alternatives and FAQs. Strict audit no longer flags `avid-media-composer`.
+## 2026-07-13 - Tool-card quality campaign, Avigilon Control Center
+
+- Rebuilt DE/EN copy around the actual VMS and security-operations workflow: alarms, roles, event review, access-control integration, storage and evidence handling.
+- Added explicit privacy and biometric-search boundaries, real alternatives and practical FAQs. Strict audit no longer flags `avigilon-control-center`.
