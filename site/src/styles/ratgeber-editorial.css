@@ -264,16 +264,9 @@ html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-inline-image img
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar {
   grid-area: side;
-  position: sticky;
-  top: 84px;
   display: grid;
   gap: 12px;
   align-self: start;
-  max-height: calc(100vh - 104px);
-  overflow-y: auto;
-  padding-right: 4px;
-  scrollbar-width: thin;
-  scrollbar-color: #aaa493 transparent;
 }
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar > *,
@@ -295,8 +288,6 @@ html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump nav {
   grid-template-columns: 1fr;
-  max-height: 310px;
-  overflow-y: auto;
 }
 
 html[data-design="decision"] .runtime-ratgeber-detail .ratgeber-sidebar .content-jump nav a {
@@ -679,16 +670,9 @@ html[data-design="decision"] .sheet-body .sheet-prose {
 
 html[data-design="decision"] .sheet-sidecar {
   grid-area: side;
-  position: sticky;
-  top: 84px;
   display: grid;
   gap: 12px;
   align-self: start;
-  max-height: calc(100vh - 104px);
-  overflow-y: auto;
-  padding: 0 4px 2px 0;
-  scrollbar-width: thin;
-  scrollbar-color: #aaa493 transparent;
 }
 
 html[data-design="decision"] .sheet-sidecar .sheet-summary,
@@ -746,8 +730,6 @@ html[data-design="decision"] .sheet-sidecar .content-jump summary small {
 
 html[data-design="decision"] .sheet-sidecar .content-jump nav {
   grid-template-columns: 1fr;
-  max-height: 310px;
-  overflow-y: auto;
 }
 
 html[data-design="decision"] .sheet-sidecar .content-jump nav a {
