@@ -1,0 +1,13 @@
+---
+export const prerender = false;
+
+import RuntimeRatgeberDetail from "../../components/RuntimeRatgeberDetail.astro";
+import { getRuntimeContentEntry, listRuntimeContentEntries } from "../../lib/runtimeContent";
+
+const slug = Astro.params.slug ?? "";
+const entry = await getRuntimeContentEntry("ratgeber", "de", slug);
+if (!entry) return Astro.redirect("/404");
+const entries = await listRuntimeContentEntries("ratgeber", "de");
+---
+
+<RuntimeRatgeberDetail locale="de" entry={entry} entries={entries} />

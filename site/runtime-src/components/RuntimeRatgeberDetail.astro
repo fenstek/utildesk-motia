@@ -1,0 +1,151 @@
+---
+import { marked } from "marked";
+import BaseLayout from "../../src/layouts/BaseLayout.astro";
+import ContentJump from "../../src/components/ContentJump.astro";
+import { addContentHeadingIds, wrapFaqSection } from "../../src/lib/contentNavigation";
+import { buildBreadcrumbSchema, buildPublisherOrganization, SITE_URL, toAbsoluteUrl } from "../../src/lib/siteMeta";
+import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../src/lib/schema";
+import { tagHref } from "../../src/lib/tagRoutes";
+import type { RuntimeContentEntry, RuntimeLocale } from "../lib/runtimeContent";
+import { getRuntimeRelatedGuides, relatedTools, stringArray } from "../lib/ratgeberRuntime";
+
+interface Props {
+  locale: RuntimeLocale;
+  entry: RuntimeContentEntry;
+  entries: RuntimeContentEntry[];
+}
+
+const { locale, entry, entries } = Astro.props;
+const isEnglish = locale === "en";
+const data = entry.metadata;
+const value = (key: string, fallback = "") => typeof data[key] === "string" ? data[key] : fallback;
+const numberValue = (key: string, fallback = 8) => typeof data[key] === "number" ? data[key] : fallback;
+const slug = entry.slug;
+const title = entry.title;
+const excerpt = entry.excerpt || value("excerpt");
+const category = value("category", isEnglish ? "Guide" : "Ratgeber");
+const eyebrow = value("eyebrow", category);
+const coverImage = value("coverImage");
+const secondaryImage = value("secondaryImage");
+const tags = stringArray(data.tags);
+const sidebarPoints = stringArray(data.sidebarPoints);
+const relatedGuideEntries = getRuntimeRelatedGuides(entry, entries);
+const toolLinks = relatedTools(data.relatedTools);
+const canonicalPath = `${isEnglish ? "/en" : ""}/ratgeber/${slug}/`;
+const alternatePath = `${isEnglish ? "" : "/en"}/ratgeber/${slug}/`;
+const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+const publishedAt = entry.sourcePublishedAt || value("date") || new Date().toISOString();
+const updatedAt = entry.sourceUpdatedAt || publishedAt;
+const readTime = numberValue("readTime", 8);
+const rawHtml = await marked.parse(entry.markdown, { async: false });
+const { html: withHeadingIds, headings } = addContentHeadingIds(rawHtml);
+const articleHtml = wrapFaqSection(withHeadingIds, isEnglish ? "Frequently asked questions" : "Häufige Fragen");
+const faqSchema = buildFaqPageSchema(extractFaqPairsFromMarkdown(entry.markdown));
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description: excerpt,
+  url: canonicalUrl,
+  mainEntityOfPage: canonicalUrl,
+  inLanguage: isEnglish ? "en" : "de-DE",
+  datePublished: publishedAt,
+  dateModified: updatedAt,
+  ...(coverImage ? { image: toAbsoluteUrl(coverImage) } : {}),
+  author: { "@type": "Organization", name: "Utildesk" },
+  publisher: buildPublisherOrganization(),
+};
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Utildesk", url: SITE_URL },
+  { name: isEnglish ? "Guides" : "Ratgeber", url: `${SITE_URL}${isEnglish ? "/en" : ""}/ratgeber/` },
+  { name: title, url: canonicalUrl },
+]);
+const dateLabel = new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(new Date(updatedAt));
+const cleanImage = (image: string) => image && (/^https:\/\//.test(image) || image.startsWith("/"));
+---
+
+<BaseLayout
+  locale={locale}
+  title={`${title} | Utildesk`}
+  description={excerpt}
+  image={cleanImage(coverImage) ? coverImage : null}
+  alternatePaths={{ de: isEnglish ? alternatePath : canonicalPath, en: isEnglish ? canonicalPath : alternatePath }}
+>
+  <Fragment slot="head">
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="text/markdown" href={`${isEnglish ? "/en" : ""}/markdown/ratgeber/${slug}.md`} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>}
+  </Fragment>
+
+  <main class="ratgeber-detail-shell runtime-ratgeber-detail">
+    <nav class="ratgeber-breadcrumb" aria-label={isEnglish ? "Breadcrumb" : "Brotkrümel"}>
+      <a href={isEnglish ? "/en/ratgeber/" : "/ratgeber/"}>{isEnglish ? "Guides" : "Ratgeber"}</a>
+      <span aria-hidden="true">/</span>
+      <span>{category}</span>
+    </nav>
+
+    <article class="ratgeber-article">
+      <header class="ratgeber-article-header">
+        <div class="ratgeber-article-meta">
+          <span>{eyebrow}</span><span aria-hidden="true">·</span><time datetime={updatedAt}>{dateLabel}</time><span aria-hidden="true">·</span><span>{readTime} {isEnglish ? "min read" : "Min. Lesezeit"}</span>
+        </div>
+        <h1>{title}</h1>
+        <p class="ratgeber-article-lead">{excerpt}</p>
+      </header>
+
+      {cleanImage(coverImage) && (
+        <figure class="ratgeber-cover runtime-ratgeber-cover">
+          <img src={coverImage} alt={title} loading="eager" fetchpriority="high" />
+        </figure>
+      )}
+
+      <div class="ratgeber-article-grid">
+        <div class="ratgeber-copy">
+          <div class="ratgeber-tag-row">
+            {tags.map((tag) => <a href={tagHref(tag, locale)} class="ratgeber-tag">{tag}</a>)}
+          </div>
+          <div class="ratgeber-prose" set:html={articleHtml}></div>
+          {cleanImage(secondaryImage) && (
+            <figure class="ratgeber-inline-image">
+              <img src={secondaryImage} alt={isEnglish ? `Editorial illustration for ${title}` : `Redaktionelle Illustration zu ${title}`} loading="lazy" />
+            </figure>
+          )}
+        </div>
+
+        <aside class="ratgeber-sidebar" aria-label={isEnglish ? "Guide details" : "Ratgeberdetails"}>
+          <ContentJump headings={headings} label={isEnglish ? "On this page" : "Auf dieser Seite"} />
+          {sidebarPoints.length > 0 && (
+            <section class="ratgeber-sidebar-card">
+              <p class="ratgeber-sidebar-kicker">{isEnglish ? "In brief" : "Kurzfazit"}</p>
+              <ul>{sidebarPoints.map((point) => <li>{point}</li>)}</ul>
+            </section>
+          )}
+          {toolLinks.length > 0 && (
+            <section class="ratgeber-sidebar-card">
+              <p class="ratgeber-sidebar-kicker">{isEnglish ? "Tools mentioned" : "Erwähnte Tools"}</p>
+              <ul class="ratgeber-link-list">{toolLinks.map((tool) => <li><a href={tool.href}>{tool.title}</a></li>)}</ul>
+            </section>
+          )}
+        </aside>
+      </div>
+
+      {relatedGuideEntries.length > 0 && (
+        <section class="ratgeber-related-guides" aria-labelledby="related-guides-title">
+          <p class="ratgeber-sidebar-kicker">{isEnglish ? "Continue reading" : "Weiterlesen"}</p>
+          <h2 id="related-guides-title">{isEnglish ? "Related editorial guides" : "Passende redaktionelle Ratgeber"}</h2>
+          <div class="ratgeber-related-guides-grid">
+            {relatedGuideEntries.map((guide) => (
+              <a href={`${isEnglish ? "/en" : ""}/ratgeber/${guide.slug}/`} class="ratgeber-related-guide">
+                <span>{typeof guide.metadata.category === "string" ? guide.metadata.category : (isEnglish ? "Guide" : "Ratgeber")}</span>
+                <strong>{guide.title}</strong>
+                <small>{guide.excerpt}</small>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+    </article>
+  </main>
+</BaseLayout>

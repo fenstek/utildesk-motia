@@ -14,6 +14,7 @@ const locale = valueFor("--locale");
 const slug = valueFor("--slug");
 const publishAll = has("--all");
 const database = valueFor("--database") || "utildesk-content-runtime-preview";
+const configPath = valueFor("--config") || "wrangler.hybrid.jsonc";
 
 if (!kind || !locale || (publishAll === Boolean(slug))) {
   throw new Error(
@@ -50,7 +51,7 @@ if (!has("--remote")) {
 const wranglerEntrypoint = join(RUNTIME_PATHS.SITE_DIR, "node_modules", "wrangler", "bin", "wrangler.js");
 const child = spawn(
   process.execPath,
-  [wranglerEntrypoint, "d1", "execute", database, "--config", "wrangler.hybrid.jsonc", "--remote", "--file", sqlPath],
+  [wranglerEntrypoint, "d1", "execute", database, "--config", configPath, "--remote", "--file", sqlPath],
   { cwd: RUNTIME_PATHS.SITE_DIR, stdio: "inherit" },
 );
 

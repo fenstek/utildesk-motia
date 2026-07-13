@@ -1,0 +1,11 @@
+---
+export const prerender = false;
+
+import RuntimeRatgeberIndex from "../../../components/RuntimeRatgeberIndex.astro";
+import { listRuntimeContentEntries } from "../../../lib/runtimeContent";
+
+if (Astro.params.locale !== "en") return Astro.redirect("/404");
+const entries = await listRuntimeContentEntries("ratgeber", "en");
+---
+
+<RuntimeRatgeberIndex locale="en" entries={entries} />
