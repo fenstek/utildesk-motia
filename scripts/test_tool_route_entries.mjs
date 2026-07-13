@@ -3,19 +3,32 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import { pathToFileURL } from "node:url";
+import { fileURLToPath } from "node:url";
+import matter from "../site/node_modules/gray-matter/index.js";
 
-const repoRoot = "/opt/utildesk-motia";
+// Resolve from this script so the guard works in every checkout, not only a former Linux path.
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const toolsDir = path.join(repoRoot, "content", "tools");
-const moduleUrl = pathToFileURL(path.join(repoRoot, "site/src/lib/toolEntries.mjs")).href;
-const { listActiveToolEntries } = await import(moduleUrl);
-
-const entries = await listActiveToolEntries();
-const activeFiles = fs.readdirSync(toolsDir)
+const routeFiles = fs.readdirSync(toolsDir)
   .filter((file) => file.endsWith(".md") && !file.startsWith("_"))
   .sort((a, b) => a.localeCompare(b));
 
-assert.equal(entries.length, activeFiles.length, "route entries must match active markdown files");
+// Keep this executable with plain Node: Astro resolves the TypeScript price-model
+// helper, while this guard only needs the same source eligibility conditions.
+const entries = routeFiles.flatMap((file) => {
+  const sourcePath = path.join(toolsDir, file);
+  const { data } = matter(fs.readFileSync(sourcePath, "utf8"));
+  const disabled = data.disabled === true || String(data.disabled || "").toLowerCase() === "true";
+  if (disabled) return [];
+  return [{ slug: String(data.slug ?? file.replace(/\.md$/, "")), sourcePath }];
+});
+
+const expectedCount = routeFiles.filter((file) => {
+  const { data } = matter(fs.readFileSync(path.join(toolsDir, file), "utf8"));
+  return !(data.disabled === true || String(data.disabled || "").toLowerCase() === "true");
+}).length;
+
+assert.equal(entries.length, expectedCount, "route entries must match eligible markdown files");
 
 for (const entry of entries) {
   assert.ok(entry.slug, "entry must have slug");

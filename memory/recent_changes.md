@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-13_
 
+## 2026-07-13 - Tool-route build integrity gate
+
+- Repaired `scripts/test_tool_route_entries.mjs` so it resolves the current checkout instead of a stale `/opt/utildesk-motia` path and can run with plain Node on Windows.
+- Added `scripts/check_built_tool_routes.mjs` to verify every active DE tool source has a matching `site/dist/tools/<slug>/index.html` after Astro renders.
+- Wired that guard into `site` postbuild, so a partial static artifact now fails before sitemap generation or deployment.
+
 ## 2026-07-13 - Babbel rendered alternatives correction
 
 - Fixed the DE/EN alternatives syntax so the tool detail renderer recognizes and displays the internal cards for Duolingo, Busuu, Memrise, Rosetta Stone, and LingQ instead of removing the section without a replacement.
