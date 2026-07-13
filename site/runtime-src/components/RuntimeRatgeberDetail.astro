@@ -62,6 +62,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
 ]);
 const dateLabel = new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(new Date(updatedAt));
 const cleanImage = (image: string) => image && (/^https:\/\//.test(image) || image.startsWith("/"));
+// Newer article packages place the secondary illustration in the relevant
+// Markdown section. Do not append the same image once more after the prose.
+const secondaryAlreadyInMarkdown = cleanImage(secondaryImage) && entry.markdown.includes(secondaryImage);
 ---
 
 <BaseLayout
@@ -107,7 +110,7 @@ const cleanImage = (image: string) => image && (/^https:\/\//.test(image) || ima
             {tags.map((tag) => <a href={tagHref(tag, locale)} class="ratgeber-tag">{tag}</a>)}
           </div>
           <div class="ratgeber-prose" set:html={articleHtml}></div>
-          {cleanImage(secondaryImage) && (
+          {cleanImage(secondaryImage) && !secondaryAlreadyInMarkdown && (
             <figure class="ratgeber-inline-image">
               <img src={secondaryImage} alt={isEnglish ? `Editorial illustration for ${title}` : `Redaktionelle Illustration zu ${title}`} loading="lazy" />
             </figure>
