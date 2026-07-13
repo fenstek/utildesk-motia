@@ -1148,3 +1148,7 @@ _Last updated: 2026-07-12_
 
 - Rebuilt DE/EN copy around the actual VMS and security-operations workflow: alarms, roles, event review, access-control integration, storage and evidence handling.
 - Added explicit privacy and biometric-search boundaries, real alternatives and practical FAQs. Strict audit no longer flags `avigilon-control-center`.
+## 2026-07-13 - Tool-card quality campaign, AWS Lambda
+
+- Rebuilt DE/EN around current Lambda engineering: event-driven functions, stateless invocations, 15-minute boundary, idempotency, retries, dead letters, IAM isolation, VPC discipline and outcome-based cost control.
+- Added current MicroVM/Durable Functions context, internal alternatives and practical FAQs. Strict audit no longer flags `aws-lambda`.
