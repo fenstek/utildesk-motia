@@ -1,6 +1,46 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-13_
 
+## 2026-07-13 - Tool-card quality campaign, Seeing AI, StackBlitz and Tableau
+
+- Rebuilt the DE/EN cards around concrete use cases, operating boundaries, practical workflows, verified internal alternatives, and FAQs.
+- Preserved the existing editorial illustrations and changed no shared CSS, generators, or generated files. Weaviate remains pending because its source worktree did not contain the original illustration.
+
+## 2026-07-13 - Tool-card quality campaign, DominKnow, QQ Browser, Whisper and FaceSwap
+
+- Rebuilt the DE/EN cards around concrete workflows, product boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. These cards are part of the 100-card accumulation batch and are not deployed individually.
+
+## 2026-07-13 - Tool-card quality campaign, Proto.io, Fujitsu A64FX, Graphcore IPU and NVIDIA Tensor Core GPUs
+
+- Rebuilt the DE/EN cards around concrete workloads, boundaries, practical workflows, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. These cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, Axis Communications, SoapUI, Stanza and SaneBox
+
+- Rebuilt the DE/EN cards around concrete workflows, operating boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. The cards remain unpublished until the 100-card batch release.
+
+## 2026-07-13 - Tool-card quality campaign, Sketch, Pluralsight, Pictory and Tidio
+
+- Rebuilt the DE/EN cards around concrete workflows, operating boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. The cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, Peppertype.ai, MailerLite, VSCO and YouCam Makeup
+
+- Rebuilt the DE/EN cards around concrete workflows, operating boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. The cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, JSBin, LingQ, Webflow and DALL·E
+
+- Rebuilt the DE/EN cards around concrete workflows, operating boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. The cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, Chai, Biteable, BandLab and Appian
+
+- Rebuilt the DE/EN cards around concrete workflows, operating boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. The cards remain in the 100-card accumulation batch.
+
 ## 2026-07-13 - Tool-route build integrity gate
 
 - Repaired `scripts/test_tool_route_entries.mjs` so it resolves the current checkout instead of a stale `/opt/utildesk-motia` path and can run with plain Node on Windows.
@@ -1222,3 +1262,86 @@ _Last updated: 2026-07-13_
 
 - Rebuilt the DE/EN card around RStudio Projects, R, R Markdown, Quarto, package reproducibility, Git, local versus server operations, and analysis governance rather than generic data-tool claims.
 - Added privacy and operating boundaries, three verified internal alternatives, practical FAQs, and preserved the existing illustration; source-gate passed.
+
+## 2026-07-13 - Tool-card quality campaign, AppDynamics, Apache Spark Structured Streaming, Articulate Storyline and Articulate 360
+
+- Rebuilt the DE/EN cards around concrete workflows, operating boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Preserved each existing editorial illustration and changed no shared CSS, generators, or generated files. These four cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, Adapt Learning, Adobe Premiere Rush, Adot AI and AI Dungeon
+
+- Rebuilt the DE/EN cards around concrete workflows, current product boundaries, practical use cases, verified internal alternatives, and FAQs.
+- Adobe Premiere Rush explicitly records the product end-of-life status and support boundary. Existing editorial illustrations were preserved; no shared CSS, generators, or generated files were changed. These four cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, AI Explainability 360, AI21 Labs, Aira and Airbrush
+
+- Rebuilt the DE/EN cards around concrete workflows, current product boundaries, practical use cases, verified internal alternatives, and FAQs; preserved each existing editorial illustration.
+- Source-gate, editorial and EN checks passed. AI21 Labs and Aira could not run the local `verify` because the isolated worktrees lack `site/node_modules/sharp`; no workaround or generated files were introduced. These four cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, Alibaba Cloud AI, Amazon EMR, Amazon Kinesis Data Analytics and Amazon OpenSearch
+
+- Rebuilt the DE/EN cards around current product boundaries, concrete workflows, practical use cases, verified internal alternatives, cost/privacy limits, and FAQs; preserved each existing editorial illustration.
+- Editorial and EN checks passed. Alibaba Cloud AI and Kinesis also encountered the isolated-worktree `site/node_modules/sharp` limitation during `verify`; no workaround or generated files were introduced. These four cards remain in the 100-card accumulation batch.
+
+## 2026-07-13 - Tool-card quality campaign, Amazon Redshift, Rekognition Video, SageMaker Autopilot and Transcribe
+
+- Rebuilt the DE/EN cards around concrete AWS workflows, current service boundaries, security/privacy and cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks and remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-13 - Tool-card quality campaign, Amazon Translate, AWS AI, AMD Instinct GPU and AMD Instinct MI100
+
+- Rebuilt the DE/EN cards around concrete translation, managed-AI and accelerator workflows, current product boundaries, privacy/cost constraints, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- Source-gate and editorial checks passed. These four cards remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-13 - Tool-card quality campaign, Anki, Apache Cassandra, Apache Druid and Apache HBase
+
+- Rebuilt the DE/EN cards around concrete learning and data-platform workflows, current boundaries, privacy/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks. They remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-13 - Tool-card quality campaign, Apache Hive, Impala, Kafka and Pinot
+
+- Rebuilt the DE/EN cards around concrete data-platform workflows, current boundaries, operational and security considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks. They remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-13 - Tool-card quality campaign, Apache Pulsar, Spark SQL, AppSheet and Asana
+
+- Rebuilt the DE/EN cards around concrete messaging, SQL, no-code automation and work-management workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks. They remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-13 - Tool-card quality campaign, AudioTool, Automation Anywhere, AWS Inferentia and AWS SageMaker
+
+- Rebuilt the DE/EN cards around concrete audio, automation and AWS accelerator/ML workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks. They remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-13 - Tool-card quality campaign, Axure RP, Azure Synapse Analytics, Baidu AI Search and Balsamiq
+
+- Rebuilt the DE/EN cards around concrete design, analytics, search and wireframing workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks; Axure's isolated verify was content-green but lacked `site/node_modules/sharp`. These cards remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-14 - Tool-card quality campaign, BambooHR, BeautyCam, Bitmoji and Bitwig Studio
+
+- Rebuilt the DE/EN cards around concrete HR, photo-editing, avatar and music-production workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks. They remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-14 - Tool-card quality campaign, Blue Prism, Boomerang for Gmail, Botpress and Botsify
+
+- Rebuilt the DE/EN cards around concrete automation, email, chatbot-building and conversational-AI workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks; Blue Prism's isolated verify was content-green but lacked `site/node_modules/sharp`. These cards remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+
+## 2026-07-14 - Tool-card quality campaign, Brainly, Brainscape, BriefCam and Caffe
+
+- Rebuilt the DE/EN cards around concrete learning, visual-security, computer-vision and ML-framework workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- Editorial and EN checks passed. Brainscape, BriefCam and Caffe had the isolated-worktree `site/node_modules/sharp` limitation during verify; no workaround or generated files were introduced. These cards remain in the 100-card accumulation batch.
+
+## 2026-07-14 - Tool-card quality campaign, Calendly, Candy Network, Certify and Chatfuel
+
+- Rebuilt the DE/EN cards around concrete scheduling, companion-AI, expense-management and chatbot workflows, current product boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards passed their source-gate checks. These cards remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+## 2026-07-14 - Tool-card quality campaign, ChoiceScript, Cisco Webex, Clarifai Video Recognition and Clarifai
+
+- Rebuilt the DE/EN cards around concrete interactive-fiction, collaboration, video-recognition and AI-platform workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- All four cards remain in the 100-card accumulation batch; no shared CSS, generators, generated files, commit, push or deploy were performed.
+## 2026-07-14 - Tool-card quality campaign, Cleanvoice AI, Clearscope, ClickHouse Cloud and ClickUp
+
+- Rebuilt the DE/EN cards around concrete audio cleanup, SEO/content optimization, analytical database and project-management workflows, current boundaries, governance/cost considerations, verified internal alternatives, and FAQs; preserved the existing editorial illustrations.
+- These four cards complete the 100-card accumulation batch. No shared CSS, generators, or generated files were changed.

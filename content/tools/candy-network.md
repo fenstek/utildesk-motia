@@ -1,77 +1,89 @@
 ---
 slug: candy-network
-title: Candy Network
+title: Candy AI
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-14-full-tool-card-editorial"
 category: "AI Chatbots"
 price_model: Freemium
 tags: [ai, chatbot, companion]
 official_url: "https://candy.ai/"
+description: "Candy AI ist ein 18+-Chatdienst für virtuelle KI-Charaktere mit Text, Bildern, Voice Notes und optionalen Video-Funktionen."
 popularity: 0
 tier: "C"
 generated_at: "2026-05-15"
+updated_at: 2026-07-14
+lastReviewed: 2026-07-14
 ---
-# Candy Network
+# Candy AI
 
-Candy Network ist ein KI-basierter Chatbot, der als digitaler Begleiter fungiert und Nutzern hilft, Gespräche zu führen, Unterstützung zu erhalten und soziale Interaktionen zu simulieren. Die Plattform kombiniert fortschrittliche KI-Technologien, um eine natürliche und empathische Kommunikation zu ermöglichen. Candy Network eignet sich besonders für Menschen, die einen virtuellen Gesprächspartner suchen, sei es zur Unterhaltung, emotionalen Unterstützung oder zum Austausch von Gedanken.
+Candy AI ist ein 18+-Dienst für Gespräche mit virtuellen KI-Charakteren. Nutzer wählen einen vorhandenen Charakter oder erstellen einen eigenen, schreiben Nachrichten und können je nach aktivem Zugang zusätzliche Bilder, Voice Notes oder Videos anfordern. Der sinnvolle Einsatz liegt bei Unterhaltung, Rollenspiel und privatem Ausprobieren von Companion-KI, nicht bei Therapie, verlässlicher Beratung oder vertraulicher Teamarbeit.
 
-## Für wen ist Candy Network geeignet?
+## Was Candy AI konkret anbietet
 
-Candy Network richtet sich an Nutzer, die eine intelligente und zugängliche KI-Chatbot-Lösung als Begleiter suchen. Besonders geeignet ist das Tool für:
+Der Dienst kombiniert ein Charakterverzeichnis mit einem persönlichen Chat. Ein Charakter bringt eine vorgegebene Persönlichkeit und Vorgeschichte mit; beim eigenen Charakter werden Eigenschaften und Merkmale über die angebotenen Eingaben festgelegt. Die Unterhaltung läuft primär textbasiert. Candy AI beschreibt außerdem KI-generierte Bilder, Videos und Voice Notes als Bestandteile des Angebots, wobei Verfügbarkeit und Verbrauch vom jeweiligen Zugang abhängen.
 
-- Menschen, die sich nach sozialem Austausch sehnen oder emotionale Unterstützung benötigen.
-- Nutzer, die eine unterhaltsame und interaktive Chat-Erfahrung suchen.
-- Personen, die sich für KI-Technologie interessieren und diese im Alltag ausprobieren möchten.
-- Anwender, die einen digitalen Assistenten für Gespräche ohne komplexe Einrichtung wünschen.
+Wichtig ist die Einordnung: Die Figuren sind fiktionale Systeme, keine Menschen. Eine warme oder intime Antwort ist deshalb kein Beleg für Verständnis, Erinnerung oder Verbindlichkeit. Bei Krisen, medizinischen Fragen, finanziellen Entscheidungen oder Konflikten mit realen Personen gehört die Entscheidung zu einer menschlichen, qualifizierten Stelle.
 
-Je nach individuellen Bedürfnissen kann Candy Network sowohl als Freizeitbegleiter als auch als unterstützendes Tool bei Einsamkeit oder Stress genutzt werden.
+## Geeignete Szenarien
 
-## Typische Einsatzszenarien
+- **Charakter- und Rollenspiel:** Wer eine klar umrissene Figur für fiktionale Dialoge testen will, kann mit einem vorhandenen Charakter starten und Ton, Grenzen und Thema vorab festlegen.
+- **Kreatives Schreiben:** Dialoge lassen sich als Rohmaterial für eine Figur, eine Szene oder Varianten eines Gesprächs verwenden. Jede Passage muss vor einer Veröffentlichung auf Klischees, Rechte und unfreiwillige persönliche Bezüge geprüft werden.
+- **Privater Feierabendgebrauch:** Für Unterhaltung oder ein Gespräch ohne Anspruch auf Faktenrichtigkeit kann ein persönlicher Chat sinnvoll sein, solange keine sensiblen Daten eingegeben werden.
+- **Charakter-Prototyping:** Autorinnen und Autoren können unterschiedliche Persönlichkeitsbeschreibungen vergleichen. Das Ergebnis ist ein Ideenwerkzeug, kein belastbarer Test für Psychologie oder Zielgruppen.
 
-- **Gezielter Einstieg:** Candy Network eignet sich, wenn KI-, Produkt- und Fachteams einen wiederkehrenden Ablauf rund um ai, chatbot, companion nicht mehr improvisieren wollen.
-- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Prompts, Modelle, Ausgaben und Freigaben sauber dokumentiert und nicht nur einmalig ausprobiert werden.
-- **Übergaben im Team:** Candy Network kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
-- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
+## Praktischer Ablauf
 
-## Redaktionelle Einordnung
+Ein vernünftiger Einstieg beginnt mit einem unkritischen Beispiel: einen Charakter auswählen, eine kurze Szene definieren und nach zehn bis fünfzehn Nachrichten prüfen, ob Stil und Grenzen passen. Bei einem eigenen Charakter sollten nur die Eigenschaften eingetragen werden, die für die Szene nötig sind. Prompts mit echten Namen, Adressen, Passwörtern, Gesundheitsdaten oder privaten Fotos gehören nicht in den Dienst.
 
-Bei Candy Network ist nicht die freundliche erste Antwort entscheidend, sondern die Kontrolle über Wissen, Grenzen und Übergaben. Ein guter Pilot definiert wenige Dialogfälle, Eskalation an Menschen und verbotene Antwortbereiche.
+Danach lohnt ein kleiner Review: Sind Antworten widersprüchlich? Behauptet die Figur Dinge als Fakten? Kippt der Ton ungefragt in eine sexuelle oder emotionale Richtung? Bei auffälligen Ausgaben Gespräch beenden, Inhalte nicht weitergeben und gegebenenfalls die vorgesehene Melde- oder Support-Funktion nutzen. Ein Chatverlauf ist kein geprüftes Protokoll und sollte nicht als Quelle weitergereicht werden.
 
-Candy Network kann entlasten, wenn Tonfall, Wissensbasis und Auswertung gepflegt werden. Ohne Review entstehen schnell plausible Antworten, die niemand sauber verantwortet.
+## Medien, Konten und Kosten
+
+Textchats können durch Bilder, Voice Notes und Videos ergänzt werden. Die Zusatzmedien sind nicht automatisch ein unbegrenzter Bestandteil des Basiszugangs: Candy AI nennt Abonnements, Token und kostenpflichtige Inhalte als mögliche Zahlungsformen. Die konkrete Menge und der Preis stehen am Checkout; automatische Verlängerung und lokale Steuern müssen vor der Zahlung geprüft werden.
+
+Für einen fairen Vergleich zählt daher nicht nur der Einstiegspreis. Prüfe, welche Funktion du tatsächlich brauchst, wie schnell Tokens verbraucht werden, ob ein Jahreszugang sinnvoll ist und wie die Kündigung funktioniert. Ein Screenshot des Checkouts und eine Kalendererinnerung vor der Verlängerung sind bei wiederkehrenden Abos einfache, aber nützliche Kontrollen.
+
+## Datenschutz und Grenzen
+
+Candy AI weist in seinen Nutzungsbedingungen darauf hin, keine sensiblen persönlichen Informationen wie Finanzdaten, Adressen, Kontaktdaten oder Passwörter zu teilen. Die Bedingungen nennen außerdem Produktverbesserung, Analyse und die Entwicklung von KI- und Moderationstechnologien als mögliche Verarbeitungszwecke. Gespräche oder gemeldete Inhalte können im Rahmen von Sicherheit und Moderation geprüft werden.
+
+Das bedeutet praktisch: keine Kundendaten, internen Dokumente, unveröffentlichten Manuskripte mit Klarnamen oder Fotos anderer Personen ohne Einwilligung hochladen. Der Dienst ist für Erwachsene vorgesehen; die Alters- und Inhaltsregeln sind vor der Nutzung zu lesen. Wer ein europäisches Datenschutz- oder Compliance-Projekt plant, braucht vorab eine aktuelle Prüfung von Privacy Notice, Löschung, Datenverarbeitung und Zuständigkeiten, nicht nur den Hinweis auf verschlüsselte Übertragung.
+
+## Redaktionelle Einschätzung
+
+Candy AI empfehlen wir Erwachsenen, die einen stark auf virtuelle Charaktere und Rollenspiel ausgerichteten Companion-Dienst suchen und bewusst mit fiktionalen, nicht verlässlichen Antworten umgehen. Der Wert entsteht, wenn der Anwendungsfall Unterhaltung oder frühes Kreativ-Brainstorming ist, die Eingaben unkritisch bleiben und Medienverbrauch sowie Abo-Verlängerung kontrolliert werden.
+
+Für Therapie, Krisenhilfe, Kinder und Jugendliche, vertrauliche Arbeitsinhalte oder faktische Recherche ist Candy AI die falsche Wahl. Wer offene Community-Charaktere bevorzugt, sollte Character AI ansehen; wer einen stärker auf persönliche Begleitung ausgerichteten Dienst sucht, Replika. Für mentale Gesundheitsübungen sind Woebot oder Wysa die engere Kategorie, auch wenn sie keine menschliche Behandlung ersetzen.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/candy-network-editorial.webp" alt="Illustration zu Candy Network: farbige Sammlerobjekte und Fan-Karten als Pop-Art-Collage" loading="lazy" decoding="async" />
+  <img src="/images/tools/candy-network-editorial.webp" alt="Farbige Candy-AI-Charakterkarten und Sammlerobjekte in einer Pop-Art-Collage" loading="lazy" decoding="async" />
 </figure>
 
-## Hauptfunktionen
+## Alternativen
 
-- **Natürliche Sprachverarbeitung:** Candy Network nutzt moderne KI-Algorithmen, um menschenähnliche Gespräche zu ermöglichen.
-- **Personalisierung:** Der Chatbot passt sich im Laufe der Interaktionen an den Nutzer an und lernt dessen Vorlieben.
-- **Emotionale Intelligenz:** Erkennung und angemessene Reaktion auf emotionale Zustände des Nutzers.
-- **Multiplattform-Unterstützung:** Verfügbar auf verschiedenen Geräten und Betriebssystemen für flexible Nutzung.
-- **Freundliche und empathische Kommunikation:** Fördert positive und unterstützende Gespräche.
-- **Freemium-Modell:** Kostenlose Grundfunktionen mit optionalen Premium-Features für erweiterten Funktionsumfang.
-- **Sicherheit und Datenschutz:** Schutz der Nutzerdaten gemäß gängigen Standards.
-- **Regelmäßige Updates:** Kontinuierliche Verbesserung der KI und Funktionen durch Entwickler.
+- [Character AI](/tools/character-ai/): Größere Community- und Charakterorientierung für offene Rollenspiele; weniger passend, wenn der Schwerpunkt auf privaten Premium-Medien liegt.
+- [Replika](/tools/replika/): Stärker als persönlicher Begleiter mit Beziehungs- und Gewohnheitsfokus positioniert; passend für kontinuierliche Interaktion statt Charaktervielfalt.
+- [Chai](/tools/chai/): Viele community-erstellte Bots und schnelle Chats; eine Option für Entdeckung, wenn weniger kuratierte Erfahrungen akzeptabel sind.
+- [Woebot](/tools/woebot/): Strukturierte Gespräche mit Schwerpunkt auf mentalem Wohlbefinden; kein Ersatz für Therapie und kein erotischer Companion-Dienst.
+- [Wysa](/tools/wysa/): Übungen und unterstützende Dialoge rund um Wohlbefinden; besser, wenn ein klareres Selbsthilfe-Format statt Rollenspiel gesucht wird.
 
-## Vorteile und Nachteile
+## FAQ
 
-### Vorteile
+**Ist Candy AI für Minderjährige geeignet?**
 
-- Einfache und intuitive Bedienung ohne technische Vorkenntnisse.
-- Kostenloser Basiszugang ermöglicht risikofreies Ausprobieren.
-- Unterstützt emotionale Unterstützung und soziale Interaktion.
-- Anpassungsfähig an individuelle Gesprächsstile und Bedürfnisse.
-- Verfügbar auf mehreren Plattformen für hohe Flexibilität.
-- Ständige Weiterentwicklung und Verbesserung der KI.
+Nein. Candy AI richtet sich laut den offiziellen Regeln an Erwachsene beziehungsweise Personen, die am jeweiligen Ort volljährig sind. Alters- und Inhaltsvorgaben sollten vor der Registrierung geprüft werden.
 
-### Nachteile
+**Kann Candy AI echte Beratung oder Therapie ersetzen?**
 
-- Premium-Funktionen sind kostenpflichtig, was den vollen Funktionsumfang begrenzt.
-- Wie bei vielen KI-Chatbots können gelegentlich ungenaue oder unerwartete Antworten auftreten.
-- Keine menschliche Intuition, daher limitiert bei sehr komplexen oder sensiblen Themen.
-- Abhängigkeit von Internetverbindung für eine reibungslose Nutzung.
-- Datenschutzrichtlinien sollten vor Nutzung sorgfältig geprüft werden.
+Nein. Die Antworten werden von einem fiktionalen KI-Charakter erzeugt und können falsch oder unangemessen sein. Bei gesundheitlichen, rechtlichen oder akuten persönlichen Problemen sollte eine qualifizierte menschliche Stelle entscheiden.
+
+**Welche Daten sollte ich nicht eingeben?**
+
+Keine Passwörter, Finanzdaten, Adressen, Kontaktdaten, Gesundheitsinformationen, vertraulichen Arbeitsinhalte oder Bilder anderer Personen ohne Einwilligung. Für einen Test reichen erfundene Namen und unkritische Szenen.
+
+**Wie entstehen die Kosten?**
+
+Der Dienst arbeitet mit einem Freemium-Modell. Je nach Angebot kommen Abonnements, Tokens oder einzelne kostenpflichtige Medien hinzu. Vor dem Kauf sind Umfang, Token-Verbrauch, automatische Verlängerung und Kündigungsweg im Checkout beziehungsweise Konto zu kontrollieren.

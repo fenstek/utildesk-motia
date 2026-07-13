@@ -2,71 +2,106 @@
 slug: adapt-learning
 title: Adapt Learning
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: "Entwickler-Tools"
+editorial_batch: "2026-07-13-full-tool-card-editorial"
+category: Developer
 price_model: Open Source
 tags: [education, authoring, content, open-source]
 official_url: "https://www.adaptlearning.org/"
+description: "Open-Source-Werkzeuge für responsive HTML5-E-Learning: Authoring Tool für visuelle Kurserstellung und Framework für Entwickler, mit kontrollierbaren Erweiterungen und LMS-Auslieferung."
+updated_at: 2026-07-13
+lastReviewed: 2026-07-13
 popularity: 0
 tier: "C"
 generated_at: "2026-05-14"
 ---
 # Adapt Learning
 
-Adapt Learning ist eine Open-Source-Authoring-Tool-Plattform, die speziell für die Erstellung von responsiven E-Learning-Inhalten entwickelt wurde. Das Tool ermöglicht es Entwicklern und Bildungsexperten, interaktive und ansprechende Lernmodule zu gestalten, die auf verschiedenen Endgeräten optimal dargestellt werden. Adapt Learning ist besonders bekannt für seine Flexibilität und die Unterstützung von adaptivem Lernen, wodurch Inhalte je nach Nutzerverhalten angepasst werden können.
+Adapt Learning ist kein einzelner Kurseditor mit einer fertigen Cloud-Laufzeit, sondern ein Open-Source-Projekt mit zwei deutlich unterschiedlichen Arbeitswegen. Das Adapt Authoring Tool richtet sich an Content-Teams, die responsive HTML5-Kurse visuell zusammenstellen möchten. Das Adapt Framework ist der Entwickler-Baukasten darunter: Teams können Kurse, Themes und Komponenten per Code anpassen und anschließend für Webserver oder LMS bauen.
 
-## Für wen ist Adapt Learning geeignet?
+Das macht Adapt interessant für Organisationen, die eine eigene Lernoberfläche kontrollieren und nicht bei jeder Design- oder Interaktionsänderung auf einen proprietären Editor warten wollen. Der Preis dafür ist technische Verantwortung. Hosting, Versionen, Erweiterungen, Tests und die Entscheidung, welche Tracking-Standards tatsächlich eingesetzt werden, gehören in den eigenen Prozess.
 
-Adapt Learning richtet sich in erster Linie an Entwickler, E-Learning-Designer und Bildungseinrichtungen, die maßgeschneiderte, responsive Lerninhalte erstellen möchten. Aufgrund seines Open-Source-Charakters ist es besonders attraktiv für Organisationen, die volle Kontrolle über ihre Lernplattformen wünschen und bereit sind, technische Ressourcen für Anpassungen bereitzustellen. Auch Agenturen und Freiberufler im Bereich E-Learning profitieren von der Möglichkeit, komplexe und moderne Lernformate ohne Lizenzkosten zu entwickeln.
+## Für wen eignet sich Adapt Learning?
+
+Adapt passt zu E-Learning-Teams mit wiederkehrenden Kursen, eigener Web- oder LMS-Kompetenz und dem Wunsch nach einem responsiven Ergebnis aus einer gemeinsamen Kursquelle. Typische Nutzer sind Bildungsanbieter, interne Learning-&-Development-Teams, Agenturen und Entwickler, die ein zugängliches Frontend mit eigenen Themes oder Komponenten verbinden wollen.
+
+Für einen einzelnen kurzen Kurs ohne technische Betreuung ist ein kommerzieller Editor oft der schnellere Weg. Adapt ist besonders dann sinnvoll, wenn mehrere Kurse dieselbe Designlogik verwenden, die Organisation die Auslieferung selbst kontrollieren möchte oder ein Entwicklerteam vorhandene Komponenten erweitern kann.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/adapt-learning-editorial.webp" alt="Illustration zu Adapt Learning: Kursmodule, Quizkarten und Geraeterahmen werden zu Lernpfaden zusammengesetzt" loading="lazy" decoding="async" />
 </figure>
 
-## Typische Einsatzszenarien
+## Zwei Wege: Authoring Tool und Framework
 
-- **Gezielter Einstieg:** Adapt Learning eignet sich, wenn Entwicklungs-, Daten- und Plattformteams einen wiederkehrenden Ablauf rund um education, authoring, content nicht mehr improvisieren wollen.
-- **Betrieb statt Demo:** Nützlich wird das Tool vor allem dann, wenn Schnittstellen, Datenflüsse, Deployments und Betrieb sauber dokumentiert und nicht nur einmalig ausprobiert werden.
-- **Übergaben im Team:** Adapt Learning kann helfen, Verantwortlichkeiten klarer zu machen, damit Ergebnisse nicht in Chats, Tabellen oder Einzelaccounts versanden.
-- **Qualitätskontrolle:** Besonders sinnvoll ist ein kurzer Review-Schritt, bevor Resultate veröffentlicht, automatisiert weiterverarbeitet oder an Kunden übergeben werden.
+Das Authoring Tool bietet einen visuellen Ablauf: Kurs anlegen, Seiten und interaktive Komponenten konfigurieren, Vorschau prüfen und den Kurs exportieren. Es senkt die Einstiegshürde für Autorinnen und Autoren, bleibt aber ein technisch zu betreibendes System. Vor dem produktiven Einsatz sollten Rollen, Backups, Updates und der Exportpfad geklärt sein.
 
-## Redaktionelle Einordnung
+Das Framework ist der kontrollierbare Weg für Entwickler. Eine Kursquelle besteht aus Konfiguration, Inhalt, Themes und Plugins; der Build erzeugt ein HTML5-Kursverzeichnis. Damit lassen sich wiederverwendbare Komponenten und ein eigenes Erscheinungsbild pflegen. Gleichzeitig steigt der Aufwand für Git, Node.js, Build-Tooling, Abhängigkeiten und Regressionstests. Authoring Tool und Framework sollten deshalb nicht ohne Prüfung ihrer Framework- und Plugin-Versionen vermischt werden.
 
-Bei Adapt Learning zählen Briefing, Tonfall, Terminologie und Freigabe mehr als ein schneller Rohtext. Ein sinnvoller Test nutzt echtes Material und prüft, ob die Nacharbeit wirklich kleiner wird.
+## Praktische Einsatzszenarien
 
-Adapt Learning hilft, wenn Texte oder Übersetzungen wiederkehrend entstehen und trotzdem menschlich gegengelesen werden. Claims, Fachbegriffe und Markenstimme sollten nie ungeprüft durchrutschen.
+- **Onboarding:** Ein Team erstellt einen kurzen, responsiven Einführungskurs mit Text, Medien, Verständnisfragen und einer nachvollziehbaren Abschlusslogik. Die LMS-Integration wird mit dem echten Zielsystem getestet, nicht nur in einer lokalen Vorschau.
+- **Compliance-Schulung:** Inhalte werden modular aufgebaut, mit klaren Freigaben und einer festen Version ausgeliefert. Tracking und Bestehenslogik werden nur so weit aktiviert, wie das LMS sie zuverlässig verarbeitet.
+- **Produkt- oder Prozessschulung:** Ein Fachbereich liefert Inhalte, ein Autorenteam pflegt Komponenten und ein Entwicklerteam hält Theme und Erweiterungen stabil. So bleibt die Gestaltung konsistent, ohne dass jede Textänderung Codearbeit auslöst.
+- **Mehrsprachige Kurse:** Die Kursstruktur wird wiederverwendet, während Texte, Medien und Sprachvarianten getrennt geprüft werden. Übersetzung allein reicht nicht: Layout, RTL-Fähigkeit, Terminologie und Interaktionen brauchen einen eigenen Durchlauf.
 
-## Hauptfunktionen
+## Inhalt, Komponenten und Auslieferung
 
-- **Responsive Design:** Inhalte passen sich automatisch an verschiedene Bildschirmgrößen und Geräte an.
-- **Adaptives Lernen:** Inhalte können dynamisch an das Nutzerverhalten angepasst werden.
-- **Modulares System:** Lerninhalte werden in wiederverwendbaren Modulen (Blocks) organisiert.
-- **Open-Source-Plattform:** Vollständiger Zugriff auf den Quellcode zur individuellen Anpassung.
-- **Mehrsprachigkeit:** Unterstützung verschiedener Sprachen für internationale Lernprojekte.
-- **Integration von Multimedia:** Einbindung von Videos, Bildern, Texten und interaktiven Elementen.
-- **SCORM- und xAPI-Kompatibilität:** Standards für Lerninhalte, die mit gängigen LMS-Systemen kompatibel sind.
-- **Community-Support:** Aktive Entwickler-Community für Austausch und Erweiterungen.
-- **Cloud- oder Self-Hosting:** Flexible Bereitstellungsoptionen je nach Bedarf.
-- **Benutzerfreundliche Oberfläche:** Intuitive Bedienung für Content-Ersteller mit technischem Hintergrund.
+Adapt organisiert Lerninhalte modular. Je nach eingesetzten Core- oder Community-Komponenten können unter anderem Text, Medien, Akkordeons, Hotspots, Multiple-Choice-Fragen, Assessments, Feedback, Navigation und Bookmarking kombiniert werden. Nicht jede Erweiterung gehört automatisch zu jeder Framework-Version; eine Komponentenliste sollte deshalb vor dem Kursstart eingefroren und getestet werden.
 
-## Vorteile und Nachteile
+Die Ausgabe ist responsive HTML5 und kann auf einem Webserver laufen. Für die LMS-Auslieferung wird ein passender Tracking- beziehungsweise SCORM-Weg benötigt; xAPI ist eine Erweiterungsentscheidung und kein pauschales Versprechen jeder Installation. Vor dem Rollout gehören Abschlussstatus, Resume-Verhalten, Score, Offline-Verhalten und Browser-Matrix in einen Testplan.
 
-### Vorteile
+## Grenzen und Betriebsrisiken
 
-- Keine Lizenzkosten durch Open-Source-Modell.
-- Hohe Flexibilität und Anpassbarkeit an individuelle Anforderungen.
-- Unterstützung moderner E-Learning-Standards.
-- Starkes Community-Engagement und regelmäßige Updates.
-- Responsive und adaptive Lerninhalte verbessern Lernerfahrung.
-- Möglichkeit zur Integration in bestehende Lernmanagementsysteme.
+Die Open-Source-Lizenz spart keine Arbeitszeit für Betrieb. Ein Team muss Authoring-Tool-Instanz, Kursquellen, Assets, Secrets und Backups absichern. Bei Framework-Projekten kommen reproduzierbare Builds, Plugin-Kompatibilität und die Pflege von Node- und Build-Abhängigkeiten hinzu. Community-Erweiterungen können nützlich sein, brauchen aber eine eigene Prüfung auf Wartung, Barrierefreiheit und Lizenz.
 
-### Nachteile
+Auch responsive Darstellung ist kein automatischer Qualitätsnachweis. Lange Überschriften, Tabellen, Videos, Tastaturbedienung, Screenreader-Labels, Kontraste und mobile Interaktionen sollten auf echten Zielgeräten geprüft werden. Ein Kurs, der im Desktop-Browser gut aussieht, ist noch nicht automatisch eine zugängliche oder LMS-stabile Schulung.
 
-- Erfordert technisches Know-how für Installation und Anpassung.
-- Kein klassischer Kundensupport wie bei kommerziellen Tools.
-- Einarbeitungszeit für Nutzer ohne Entwicklerhintergrund kann höher sein.
-- Hosting und Wartung liegen in der Verantwortung des Anwenders.
-- Eingeschränkte vorgefertigte Templates im Vergleich zu kommerziellen Lösungen.
+## Datenschutz und Governance
+
+Vor dem Import in Adapt sollte feststehen, ob personenbezogene Lernstände, Prüfungsdaten, interne Dokumente oder nur öffentliche Inhalte verarbeitet werden. Bei einer selbst betriebenen Authoring-Tool-Instanz liegen Zugriffsschutz, Rollen, Backups, Löschkonzept und Serverhärtung beim Betreiber. Exportierte Kurse können außerdem Inhalte, Konfigurationen oder Tracking-Logik enthalten, die nicht unkontrolliert weitergegeben werden sollten.
+
+Für Unternehmen gehören ein benannter Kursverantwortlicher, Freigabe vor Veröffentlichung, Versionskennzeichnung und ein Rückfallplan in den Prozess. Datenschutzrechtliche und arbeitsrechtliche Anforderungen müssen für das konkrete LMS und den konkreten Hostingweg separat bewertet werden.
+
+## Preise und reale Kosten
+
+Adapt ist als Open-Source-Projekt ohne klassische Authoring-Lizenz nutzbar. Die Gesamtkosten entstehen trotzdem durch Hosting, Einrichtung, Theme- und Plugin-Entwicklung, Übersetzungen, LMS-Tests, Wartung, Support und redaktionelle Pflege. Bei wenigen Kursen kann die technische Einrichtung den vermeintlichen Preisvorteil aufzehren; bei vielen ähnlich aufgebauten Kursen kann die Wiederverwendung den Aufwand rechtfertigen.
+
+Für einen Pilot sollten Teams nicht nur die Installationszeit messen. Aussagekräftiger sind Zeit bis zur ersten freigegebenen Lektion, Nacharbeit pro Kurs, Aufwand für Updates und die Zahl der LMS-Fehler nach dem Export. Die konkrete Kostenrechnung hängt vom eigenen Betrieb und nicht nur von der Lizenz ab.
+
+## Redaktionelle Einschätzung
+
+Adapt Learning ist eine gute Wahl für Teams, die responsive E-Learning-Inhalte selbst kontrollieren, wiederverwendbare Bausteine pflegen und technische Verantwortung übernehmen wollen. Der stärkste Anwendungsfall ist ein kuratiertes Kurs-Ökosystem mit klarer Trennung zwischen Redaktion, Entwicklung und LMS-Betrieb.
+
+Ich würde mit einem realen Pilotkurs beginnen: eine kurze Schulung, ein echtes Zielgerät-Set, ein echter LMS-Test und eine dokumentierte Export- und Freigabekette. Wenn schon dieser Kurs nur mit vielen manuellen Sonderlösungen stabil wird, ist ein stärker betreuter kommerzieller Editor wahrscheinlich die vernünftigere Wahl.
+
+## Alternativen
+
+- [H5P](/tools/h5p/): Naheliegend für interaktive HTML5-Inhalte, wenn ein vorhandenes LMS oder CMS im Vordergrund steht und kein eigener Framework-Build gewünscht ist.
+- [Articulate Storyline](/tools/articulate-storyline/): Passender für tiefere Desktop-Autorierung, komplexe Szenarien und ein kommerziell betreutes Ökosystem.
+- [Adobe Captivate](/tools/adobe-captivate/): Interessant, wenn responsive Layouts, Software-Demos und Adobe-orientierte Produktionsabläufe zusammenkommen.
+- [Articulate Rise](/tools/articulate-rise/): Sinnvoll für schnelle, browserbasierte Kurse mit weniger technischer Betriebsarbeit und stärker vorgegebenem Design.
+- [iSpring Suite](/tools/ispring-suite/): Praktisch für Teams, die aus PowerPoint heraus Kurse erstellen und sie in bestehende LMS-Prozesse übergeben möchten.
+
+## FAQ
+
+**Ist Adapt Learning wirklich kostenlos?**
+
+Die Software ist Open Source und ohne klassische Authoring-Lizenz nutzbar. Kosten für Hosting, Entwicklung, Support, Übersetzung, LMS-Tests und laufende Wartung bleiben jedoch bestehen.
+
+**Brauche ich Programmierkenntnisse?**
+
+Für einfache Kurserstellung im Authoring Tool nicht zwingend. Für Installation, eigene Themes, Plugins, Framework-Builds und stabile Updates sind technische Kenntnisse oder ein verlässlicher Dienstleister sinnvoll.
+
+**Kann Adapt-Kurse jedes LMS abspielen?**
+
+Nicht automatisch. Der exportierte Kurs und das gewählte Tracking müssen zum LMS passen. SCORM-Konfiguration, Abschlussstatus, Resume, Scores und Browserverhalten sollten im echten Zielsystem geprüft werden.
+
+**Unterstützt Adapt adaptive Lernpfade?**
+
+Das Framework kann mit Erweiterungen und Kurslogik unterschiedliche Navigations- oder Feedbackpfade abbilden. Das ist nicht dasselbe wie eine automatisch personalisierte Lernplattform; die konkrete Adaptation muss entworfen, konfiguriert und getestet werden.
+
+**Ist Adapt für barrierefreie Kurse geeignet?**
+
+Das Framework bietet dafür relevante Grundlagen, aber Barrierefreiheit entsteht nicht allein durch die Plattform. Inhalte, Komponenten, Theme, Tastaturbedienung und Screenreader-Ausgabe müssen mit realen Tests und den Anforderungen des Projekts geprüft werden.

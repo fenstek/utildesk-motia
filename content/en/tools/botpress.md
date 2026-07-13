@@ -2,142 +2,90 @@
 slug: botpress
 title: Botpress
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
+editorial_batch: "2026-07-14-full-tool-card-editorial"
+category: AI Chatbots
 price_model: Freemium
 tags:
   - ai
   - chatbot
-official_url: 'https://botpress.ai'
+official_url: 'https://botpress.com'
 created_at: '2026-02-12'
+updated_at: 2026-07-14
+lastReviewed: 2026-07-14
+description: 'Botpress is a cloud platform for AI agents and chatbots, combining visual workflows, knowledge bases, tables, and integrations.'
 popularity: 0
 source_language: de
 translation: full
 ---
 # Botpress
 
-Botpress is a powerful open-source platform for developing chatbots and conversational AI applications. It allows developers and companies to create intelligent, adaptable, and scalable chatbots that can be used in various channels. With a user-friendly interface and extensive integration possibilities, Botpress is suitable for both technical users and companies looking to automate customer communication.
+Botpress is a cloud platform for building, testing, and operating AI agents and chatbots. Teams model dialogue logic in visual Workflows made of Nodes and Cards, give an agent controlled knowledge sources, and connect it to external services through Integrations. That makes sense for a support or self-service process with a defined human escalation path; it is not a substitute for maintained source data, human approvals, or a proper application backend.
 
 ## Who is Botpress for?
 
-Botpress is primarily aimed at developers, product teams, and companies seeking a flexible and adaptable solution for conversational AI. The platform is suitable for:
+Botpress is aimed mainly at product teams, developers, and domain owners who want to operate a chatbot as a traceable process rather than as a collection of prompts. A small team can use it to build an FAQ or intake pilot. A production setup still needs an owner for content, permissions, costs, incident handling, and review of uncertain answers.
 
-- Software developers who want to create and customize their own chatbots
-- Companies looking to automate customer service or internal processes with chatbots
-- Startups and small and medium-sized enterprises (SMEs) seeking a cost-effective and scalable chatbot solution
-- Educational institutions and researchers interested in experimenting with AI-powered dialogue systems
-- Teams that prefer an open-source platform to maintain full control over their chatbots
+The current platform is Botpress Cloud. Botpress states that v12 and other self-hosted versions are no longer available for new downloads, purchases, or deployments. If local installation, full network control, or on-premises processing is a hard requirement, evaluate a different architecture before investing in a Botpress build.
 
-## Typical Use Cases
+## How does a Botpress workflow work?
 
-- **Focused rollout:** Botpress is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ai, chatbot.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Botpress can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
+A Workflow breaks a conversation into reusable sections such as greeting, intent identification, data capture, and handoff. Nodes are the individual steps; Cards send messages, capture information, run logic, or transition to another Workflow. Standard Nodes execute their Cards in a controlled sequence. Autonomous Nodes let an LLM decide within the tools and instructions that the team has provided.
 
-## What really matters in daily use
+For example, a billing pilot could identify a request, capture a customer number and date range, call an approved service through an Integration, and show only the permitted result. If identity checks fail or the answer is uncertain, the Workflow should hand the case to a person. Test these transitions in the Emulator with real examples, incomplete inputs, and deliberately ambiguous wording before connecting production data.
 
-In day-to-day work, Botpress is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
+## How are knowledge and data handled?
 
-Botpress is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+Knowledge Bases can combine sources such as websites, documents, rich text, tables, and, depending on the setup, integrations. An Autonomous Node can search them; a Standard Node needs an explicit knowledge-search step and a separate message that presents the result. This is useful for product documentation, internal policies, and pricing or service tables, but retrieved text is not by itself a guarantee that the answer or decision is correct.
 
-<figure class="tool-editorial-figure">
-  <img src="/images/tools/botpress-editorial.webp" alt="Illustration for Botpress: chatbot workshop with connected conversation blocks" loading="lazy" decoding="async" />
-</figure>
+Tables provide structured storage inside the bot, for example for simple profiles, statuses, or cases that must persist across sessions. For personal or business-critical data, confirm that the storage, Integration access, and retention model are acceptable. Complex transactions, fine-grained authorization, and systems of record should generally remain in a dedicated backend.
 
-## Key Features
+## Integrations and day-to-day operations
 
-- **Visual Flow-Builder:** An intuitive drag-and-drop interface for creating dialogue flows without programming knowledge
-- **Multichannel Support:** Integration with messengers like Facebook Messenger, WhatsApp, Slack, Webchat, and more
-- **Natural Language Processing (NLP):** Recognition of intentions (intents) and entities for processing natural language
-- **Modular Architecture:** Extension of functionality through plugins and custom modules possible
-- **Open Source:** Source code available, with an active community and regular updates
-- **Multi-Language Support:** Chatbots that can address international target audiences
-- **Analytics and Monitoring:** Real-time statistics and reports for analyzing chatbot performance
-- **User Management:** Role-based access control for teams and administrators
-- **Easy Integration:** API access and webhooks for connecting to external systems and databases
-- **On-Premises or Cloud:** Flexible deployment options according to security requirements
+Integrations connect the bot to APIs, tools, and messaging channels. Before installing one, check its prerequisites, contributor or provider, scopes, and failure behaviour. A connector listed in the Hub is not automatically approved for sensitive production data. Keep secrets in the intended configuration and never place credentials in prompts or tables.
 
-## Advantages and Disadvantages
+Use a small evaluation set with common questions, edge cases, missing information, and requests that must be refused. After every content, model, or Integration change, inspect citations or retrieved sources, transitions, error paths, and spend. A person should be able to take over whenever identity, money, health, legal questions, or an unclear source is involved.
 
-### Advantages
+## Privacy, security, and cost boundaries
 
-- Open-source with comprehensive documentation and an active community
-- High flexibility through modular design and customization options
-- Supports multiple communication channels and languages
-- Visual flow-editor simplifies creating complex dialogues
-- Free basic version available (Freemium model)
-- Good possibilities for integrating with existing IT infrastructures
+Before the first real conversation, document which messages, files, table values, and telemetry may reach Botpress or connected model and service providers. Review Workspace roles, access, deletion, retention, export, and data-processing terms. European teams should also check the DPA, hosting information, and subprocessor list; this editorial assessment is not legal advice.
 
-### Disadvantages
-
-- Steep learning curve for non-technical users
-- Some advanced features are only available in paid plans
-- On-Premises hosting and maintenance require technical expertise
-- User interface and UX might be complex for some users
-- Not all integrations are out-of-the-box available, requiring custom development
-
-## Workflow Fit
-
-Botpress fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
-
-If Botpress becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
-
-## Privacy & Data
-
-Before adopting Botpress, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Botpress, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Botpress before the data path is understood.
+Botpress has a free entry point and paid plans. AI Spend for LLM usage is charged separately according to the model provider, and plan limits or add-ons can apply to bots, messages, table rows, and storage. Budget for more than the platform fee: model calls, Integration operations, monitoring, source maintenance, and human handoffs all affect the real cost.
 
 ## Editorial Assessment
 
-Botpress is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+Botpress is a reasonable choice for teams that want to pilot an AI-assisted conversation with visual flow control, a managed knowledge layer, and integrations in one cloud service. It earns its place when one defined process becomes measurably faster or more consistent and someone owns the quality of the answers.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Botpress genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+It is a poor fit when self-hosting, local processing, or an already-standardised support suite is non-negotiable. Our recommendation is to start with one narrow use case, record ten to twenty real conversations as an evaluation set, and expand only after reviewing error rate, escalations, data flow, and AI Spend.
 
-## Pricing & Costs
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/botpress-editorial.webp" alt="Illustration of a Botpress chatbot workshop with connected conversation blocks" loading="lazy" decoding="async" />
+</figure>
 
-Botpress offers a Freemium pricing model:
+## Alternatives
 
-- **Free Community Edition:** Fully functional, ideal for developers and small projects, open-source with no fees
-- **Enterprise Edition:** Additional features, support, and hosting options, pricing varies depending on the plan and individual requirements
-- **Cloud Hosting:** Hosting and support costs vary depending on the chosen plan
-
-The exact prices and conditions depend on the chosen plan and individual requirements. For detailed information, it is recommended to contact the provider.
-
-## Alternatives to Botpress
-
-- **Dialogflow:** A Google-based platform for conversational AI with strong NLP capabilities
-- **Rasa:** An open-source framework for context-based chatbots, particularly popular among developers
-- **Microsoft Bot Framework:** Comprehensive tools and services for creating intelligent bots
-- **ManyChat:** Focus on marketing and sales bots for social media, easy-to-use interface
-- **Tidio:** Combines live chat and chatbot functionality for small and medium-sized enterprises
+- [Dialogflow](/en/tools/dialogflow/): A better fit when Google Cloud services, intent-based conversations, and a tightly integrated Google platform matter more than Botpress' visual cloud workflow.
+- [Rasa](/en/tools/rasa/): Preferable for a developer team that needs open-source components and more control over runtime and data architecture.
+- [Microsoft Bot Framework](/en/tools/microsoft-bot-framework/): A natural option for organisations connecting bots closely to Azure, Microsoft 365, and established Microsoft development practices.
+- [ManyChat](/en/tools/manychat/): Better for marketing-led automation in social messaging channels with less need for a custom agent workflow.
+- [Tidio](/en/tools/tidio/): More practical for small support teams that want live chat plus straightforward automation rather than a freely modelled agent platform.
 
 ## FAQ
 
-**1. Is Botpress really free to use?**
-Yes, the Community Edition of Botpress is open-source and free to use. For enhanced features and support, there are paid Enterprise plans.
+**Is Botpress still an open-source or self-hosted platform?**
 
-**2. Which programming languages are used for Botpress?**
-Botpress primarily uses JavaScript and Node.js, allowing for flexible customization and extension.
+New projects should be planned around Botpress Cloud. The official documentation says that v12 and other self-hosted versions are no longer available for new downloads, purchases, or deployments.
 
-**3. Can I host Botpress myself?**
-Yes, Botpress can be hosted both on-premises and in the cloud, depending on requirements and resources.
+**Can a Botpress agent answer questions from company knowledge?**
 
-**4. Does Botpress support multiple languages?**
-Yes, Botpress supports multiple languages and enables the creation of multilingual chatbots.
+Yes. Knowledge Bases can use websites, documents, rich text, tables, and selected integrations as sources. Keep those sources current and scoped to the intended workflow, and use a human handoff when the source is missing or the answer is uncertain.
 
-**5. How difficult is it for non-programmers to use?**
-The visual flow-builder simplifies creating chatbot dialogues, although some technical knowledge is helpful for more complex customizations.
+**How much does Botpress cost?**
 
-**6. What integrations are possible?**
-Botpress supports integrations with popular messengers, APIs, and databases. Additional integrations can be achieved through plugins or custom development.
+There is a free entry point and paid plans. AI Spend for LLM calls is additional, while limits, add-ons, storage, and integrations can change the total. Test representative conversations with a spending cap before a broad rollout.
 
-**7. Is there support from Botpress?**
-Support is included in the Enterprise Edition. The Community Edition has an active community and comprehensive documentation.
+**Is Botpress suitable for sensitive data?**
 
-**8. How secure is the use of Botpress?**
-Security depends on hosting and configuration. On-premises deployment provides full control over data and security measures.
+Not by default. Review the data path, providers, retention, access, deletion, and human control points before processing personal or confidential information. If strict local processing is required, another architecture may be more appropriate.
