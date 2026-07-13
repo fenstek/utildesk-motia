@@ -1073,3 +1073,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN KineMaster card around the current mobile NLE: multi-layer timeline, captions, AI voice and video helpers, chroma key, audio work, 4K/60 export, and the difference between mobile production and desktop finishing.
 - Added a repeatable production flow, AI/asset and rights checks, five verified internal video alternatives, and practical FAQ answers. Strict audit no longer flags `kinemaster`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Aider
+
+- The existing DE/EN Aider editorial guidance was already substantive. Its only strict-audit gap was an isolated legacy competitor list with no internal links.
+- Added five verified locale-correct comparisons to OpenAI Codex, GitHub Copilot, Cline, OpenHands, and Cursor. Strict audit no longer flags `aider`; root editorial, English, and whitespace validation pass.

@@ -84,6 +84,12 @@ Bei Aider lohnt sich ein Blick auf die Betriebskosten hinter dem Preisschild: Ei
 
 ## Alternativen zu Aider
 
+- [OpenAI Codex](/tools/openai-codex/): wenn agentische Coding-Aufgaben über CLI und Cloud-Umgebung bearbeitet werden sollen.
+- [GitHub Copilot](/tools/github-copilot/): wenn der Schwerpunkt auf IDE-Integration und Team-Standardisierung liegt.
+- [Cline](/tools/cline/): wenn ein offener Coding-Agent mit expliziten Tool-Freigaben im Editor gesucht wird.
+- [OpenHands](/tools/openhands/): wenn Repository-Aufgaben von einem stärker autonomen Software-Agenten bearbeitet werden sollen.
+- [Cursor](/tools/cursor/): wenn ein AI-nativer Editor statt eines Terminal-first-Workflows besser zum Team passt.
+
 - **GitHub Copilot** – Ein KI-gestützter Code-Assistent, der direkt in Entwicklungsumgebungen integriert werden kann.
 - **Tabnine** – Bietet KI-basierte Autovervollständigung für verschiedene Programmiersprachen.
 - **Kite** – Ein KI-gestützter Code-Editor, der Vorschläge und Dokumentation in Echtzeit liefert.
