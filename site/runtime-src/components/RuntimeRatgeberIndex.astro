@@ -11,18 +11,30 @@ interface Props {
 const { locale, entries } = Astro.props;
 const isEnglish = locale === "en";
 const basePath = isEnglish ? "/en/ratgeber/" : "/ratgeber/";
-const title = isEnglish ? "AI guides for decisions that hold up in practice" : "KI-Ratgeber für Entscheidungen, die in der Praxis halten";
+const title = isEnglish ? "AI guides and editorial comparisons" : "KI-Ratgeber und redaktionelle Vergleiche";
 const description = isEnglish
   ? "Editorial guides, comparisons and practical frameworks for teams working with AI."
-  : "Redaktionelle Einordnungen, Vergleiche und Arbeitsmodelle für Teams, die mit KI produktiv arbeiten.";
+  : "Vergleiche, Leitfäden und Einordnungen zu den wichtigsten KI-Tools und Workflows.";
 const issueNumber = String(entries.length).padStart(3, "0");
-const featured = entries.slice(0, 3);
-const archive = entries.slice(3);
-const value = (entry: RuntimeContentEntry, key: string, fallback = "") => typeof entry.metadata[key] === "string" ? entry.metadata[key] : fallback;
-const cover = (entry: RuntimeContentEntry) => value(entry, "coverImage");
-const category = (entry: RuntimeContentEntry) => value(entry, "category", isEnglish ? "Guide" : "Ratgeber");
-const dateFor = (entry: RuntimeContentEntry) => entry.sourceUpdatedAt || entry.sourcePublishedAt || value(entry, "date");
-const dateLabel = (entry: RuntimeContentEntry) => new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", { dateStyle: "medium" }).format(new Date(dateFor(entry) || Date.now()));
+const value = (entry: RuntimeContentEntry, key: string, fallback = "") =>
+  typeof entry.metadata[key] === "string" ? entry.metadata[key] : fallback;
+const numberValue = (entry: RuntimeContentEntry, key: string, fallback = 0) =>
+  typeof entry.metadata[key] === "number" ? entry.metadata[key] : fallback;
+const normalizeMetaLabel = (label: string) =>
+  String(label || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/^ai[-\s]+/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+const dateLabel = (entry: RuntimeContentEntry) => {
+  const date = entry.sourcePublishedAt || entry.sourceUpdatedAt || value(entry, "date");
+  return date ? new Intl.DateTimeFormat(isEnglish ? "en-GB" : "de-DE", {
+    day: "2-digit", month: "long", year: "numeric",
+  }).format(new Date(date)) : "";
+};
+const averageReadTime = Math.round(entries.reduce((sum, entry) => sum + numberValue(entry, "readTime"), 0) / Math.max(entries.length, 1));
 const collectionSchema = buildCollectionPageSchema({
   name: title,
   description,
@@ -35,11 +47,14 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Utildesk", url: SITE_URL },
   { name: isEnglish ? "Guides" : "Ratgeber", url: `${SITE_URL}${basePath}` },
 ]);
+const labels = isEnglish
+  ? { home: "Home", archive: "Guide archive", kicker: "Decision desk", issue: "Issue", total: "Guides total", illustrated: "With illustration", reading: "Min. reading", paid: "Paid placements", chronological: "Chronologically curated", latest: "Latest analysis", deck: "Decisions, comparisons and practical working models, latest publication first.", featured: "Latest decision", guide: "Guide", more: "Show more guides", left: "posts left", article: "Read guide" }
+  : { home: "Startseite", archive: "Ratgeber-Archiv", kicker: "Entscheidungsblatt", issue: "Ausgabe", total: "Ratgeber gesamt", illustrated: "Mit Illustration", reading: "Min. Lesen", paid: "Bezahlte Plätze", chronological: "Chronologisch kuratiert", latest: "Neueste Analysen", deck: "Entscheidungen, Vergleiche und praxiserprobte Arbeitsmodelle, zuletzt veröffentlicht zuerst.", featured: "Neueste Entscheidung", guide: "Ratgeber", more: "Weitere Ratgeber anzeigen", left: "Beiträge im Archiv", article: "Zum Artikel" };
 ---
 
 <BaseLayout
   locale={locale}
-  title={`${isEnglish ? "AI Guides and Editorial Comparisons" : "KI-Ratgeber und redaktionelle Vergleiche"} | Utildesk`}
+  title={`${title} | Utildesk`}
   description={description}
   alternatePaths={{ de: "/ratgeber/", en: "/en/ratgeber/" }}
 >
@@ -49,51 +64,90 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   </Fragment>
 
-  <main class="ratgeber-archive runtime-ratgeber-archive">
-    <header class="ratgeber-archive-hero">
+  <div class="rg-archive">
+    <div class="tool-akte rg-wrap">
+      <nav class="akte-crumb" aria-label="Breadcrumb">
+        <a href={isEnglish ? "/en/" : "/"}>← {labels.home}</a>
+        <span class="akte-crumb-sep">/</span>
+        <span class="akte-crumb-current">{labels.archive}</span>
+      </nav>
+      <header class="inv-head rg-head">
+        <div class="inv-head-body">
+          <div class="inv-head-kicker">↳ {labels.kicker} · {labels.issue} № {issueNumber} · {labels.guide}</div>
+          <h1 class="inv-head-h1">{entries.length} {isEnglish ? "decisions" : "Entscheidungen"}<span class="akte-mast-dot">.</span></h1>
+          <p class="inv-head-deck">{description}</p>
+        </div>
+        <div class="inv-head-stats" role="group" aria-label={isEnglish ? "Guide statistics" : "Ratgeber Kennzahlen"}>
+          <div class="inv-stat"><strong>{entries.length}</strong><span>{labels.total}</span></div>
+          <div class="inv-stat"><strong>{entries.filter((entry) => Boolean(value(entry, "coverImage"))).length}</strong><span>{labels.illustrated}</span></div>
+          <div class="inv-stat"><strong>{averageReadTime}</strong><span>{labels.reading}</span></div>
+          <div class="inv-stat inv-stat-paid"><strong>0</strong><span>{labels.paid}</span></div>
+        </div>
+      </header>
+    </div>
+
+    <header class="rg-section-head">
       <div>
-        <p class="ratgeber-archive-kicker">{isEnglish ? "Editorial desk" : "Redaktion"} · {isEnglish ? "issue" : "Ausgabe"} № {issueNumber}</p>
-        <h1>{isEnglish ? "Guidance for teams that want AI to work after the demo." : "Ratgeber für Teams, bei denen KI auch nach der Demo funktionieren muss."}</h1>
-        <p>{description}</p>
+        <span>{labels.chronological}</span>
+        <h2>{labels.latest}</h2>
       </div>
-      <dl class="ratgeber-archive-stats">
-        <div><dt>{entries.length}</dt><dd>{isEnglish ? "guides" : "Ratgeber"}</dd></div>
-        <div><dt>{entries.filter((entry) => Boolean(cover(entry))).length}</dt><dd>{isEnglish ? "with illustration" : "mit Illustration"}</dd></div>
-        <div><dt>{isEnglish ? "0" : "0"}</dt><dd>{isEnglish ? "paid placements" : "bezahlte Plätze"}</dd></div>
-      </dl>
+      <p>{labels.deck}</p>
     </header>
 
-    <section class="ratgeber-feature-grid" aria-label={isEnglish ? "Latest guides" : "Neueste Ratgeber"}>
-      {featured.map((entry, index) => (
-        <a class:list={["ratgeber-feature-card", index === 0 && "ratgeber-feature-card--lead"]} href={`${basePath}${entry.slug}/`}>
-          {cover(entry) && <img src={cover(entry)} alt="" loading={index === 0 ? "eager" : "lazy"} />}
-          <div>
-            <p>{category(entry)} <span>·</span> {dateLabel(entry)}</p>
-            <h2>{entry.title}</h2>
-            <small>{entry.excerpt}</small>
-          </div>
-        </a>
-      ))}
-    </section>
-
-    <section class="ratgeber-archive-list" aria-labelledby="archive-title">
-      <div class="ratgeber-archive-list-head">
-        <p class="ratgeber-archive-kicker">{isEnglish ? "Archive" : "Archiv"}</p>
-        <h2 id="archive-title">{isEnglish ? "All editorial guides" : "Alle redaktionellen Ratgeber"}</h2>
-      </div>
-      <div class="ratgeber-archive-grid">
-        {archive.map((entry, index) => (
-          <a href={`${basePath}${entry.slug}/`} class="ratgeber-archive-card">
-            <span class="ratgeber-archive-card-number">{String(index + 4).padStart(2, "0")}</span>
-            <div>
-              <p>{category(entry)} <span>·</span> {dateLabel(entry)}</p>
-              <h3>{entry.title}</h3>
-              <small>{entry.excerpt}</small>
+    <section class="rg-list">
+      {entries.map((entry, index) => {
+        const eyebrow = value(entry, "eyebrow");
+        const category = value(entry, "category");
+        const coverImage = value(entry, "coverImage");
+        const readTime = numberValue(entry, "readTime");
+        const published = dateLabel(entry);
+        return (
+          <a href={`${basePath}${entry.slug}/`} class:list={["rg-card", index === 0 && "rg-card--featured"]} data-guide-card data-guide-index={index} hidden={index >= 10}>
+            {coverImage && (
+              <div class="rg-card-figure"><div class="rg-media-stage">
+                <img src={coverImage} alt={entry.title} loading={index === 0 ? "eager" : "lazy"} fetchpriority={index === 0 ? "high" : "auto"} />
+              </div></div>
+            )}
+            <div class="rg-card-body">
+              <div class="rg-card-issue"><span>{index === 0 ? labels.featured : labels.guide}</span><strong>{String(index + 1).padStart(2, "0")}</strong></div>
+              <div class="rg-card-meta-top">
+                {eyebrow && <span class="rg-chip rg-chip--accent">{eyebrow}</span>}
+                {category && normalizeMetaLabel(category) !== normalizeMetaLabel(eyebrow) && <span class="rg-chip">{category}</span>}
+              </div>
+              <h2 class="rg-card-title">{entry.title}</h2>
+              {entry.excerpt && <p class="rg-card-excerpt">{entry.excerpt}</p>}
+              <div class="rg-card-meta-bottom">
+                {published && <span class="rg-meta">{published}</span>}
+                {readTime > 0 && <span class="rg-meta">{readTime} {labels.reading}</span>}
+                <span class="rg-arrow">{labels.article}</span>
+              </div>
             </div>
-            <span class="ratgeber-archive-card-arrow" aria-hidden="true">↗</span>
           </a>
-        ))}
-      </div>
+        );
+      })}
     </section>
-  </main>
+    {entries.length > 10 && <div class="rg-loadmore"><button type="button" data-guides-more>{labels.more}</button><small data-guides-remaining></small></div>}
+  </div>
 </BaseLayout>
+
+<script is:inline define:vars={{ moreLabel: labels.more, leftLabel: labels.left }}>
+  (() => {
+    const cards = Array.from(document.querySelectorAll('[data-guide-card]'));
+    const button = document.querySelector('[data-guides-more]');
+    const remaining = document.querySelector('[data-guides-remaining]');
+    if (!cards.length || !button) return;
+    const compact = window.matchMedia('(max-width: 760px)').matches;
+    const initial = compact ? 7 : 10;
+    const step = compact ? 6 : 9;
+    let visible = initial;
+    const render = () => {
+      cards.forEach((card, index) => card.toggleAttribute('hidden', index >= visible));
+      const hiddenCount = Math.max(0, cards.length - visible);
+      button.style.display = hiddenCount ? 'inline-flex' : 'none';
+      button.textContent = hiddenCount ? `${moreLabel.replace(/ anzeigen$| guides$/i, '')} ${Math.min(step, hiddenCount)} ${moreLabel.includes('guides') ? 'guides' : 'Ratgeber anzeigen'}` : '';
+      if (remaining) remaining.textContent = hiddenCount ? `${hiddenCount} ${leftLabel}` : '';
+    };
+    button.addEventListener('click', () => { visible += step; render(); });
+    render();
+  })();
+</script>
