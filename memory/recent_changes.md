@@ -1123,3 +1123,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN card around long-term research curation: blocks and channels, multiple contextual connections, private/closed/public permissions, collaboration, export, API, and the boundary from project management.
 - Added a repeatable research practice, source and rights checks, archive guidance, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `are-na`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Auto-sklearn
+
+- Rebuilt the DE/EN card around the actual scikit-learn AutoML workflow: model and hyperparameter search, preprocessing, ensembles, resource limits, restricted search spaces, result inspection, and Dask parallelism.
+- Added leakage-safe evaluation, baseline and holdout requirements, reproducibility and production-monitoring boundaries, verified internal alternatives, and practical FAQ answers. Strict audit no longer flags `auto-sklearn`; root editorial, English, and whitespace validation pass.
