@@ -968,6 +968,11 @@ _Last updated: 2026-07-12_
 - Rewrote the DE/EN `WebdriverIO` card as a distinct WebDriver/Appium ecosystem guide, including runner and BDD choices, versioned configuration, Grid/cloud services, mobile-device coverage, report hygiene, parallelism, and least-privilege test accounts.
 - The strict audit no longer flags `webdriverio`; root editorial, English, and whitespace checks pass. The browser-automation mini-cluster now has genuinely differentiated entries for Puppeteer, Playwright, and WebdriverIO.
 
+## 2026-07-13 - Tool-card quality campaign, Pusher
+
+- Replaced the generic DE/EN Pusher copy with a realtime-architecture editorial pass: authoritative-state design, private/presence channel authorisation, duplicate and delayed events, reconnect/fallback behaviour, load testing, payload minimisation, and usage-peak cost modelling.
+- Strict audit no longer flags `pusher`; root editorial and English checks pass.
+
 ## 2026-07-13 - Ratgeber runtime presentation recovery
 
 - Diagnosed the production regression as a runtime-only styling gap: D1-rendered Ratgeber articles use `runtime-ratgeber-*` markup, while the static article template owns the established sheet classes and their CSS. Content, D1 reads, and canonical routing were healthy; only the article presentation had fallen back to generic BaseLayout typography.
