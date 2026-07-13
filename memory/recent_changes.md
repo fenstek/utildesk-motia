@@ -1033,3 +1033,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN OpenClaw card from the current first-party product model: a self-hosted personal-agent runtime, chat channels, gateway, skills, model choice, recurring work, and local operational ownership. Removed the corrupted legacy German template text and unsupported generic feature claims.
 - Added a practical scoped rollout, permission and data-flow guardrails, current comparison links, and reviewable FAQ answers. Strict audit no longer flags `openclaw`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, Orbit Intelligence
+
+- Kept the substantive existing DE/EN patent-research guidance, but converted its legacy editorial label into the audited form and refreshed the review metadata.
+- Replaced the isolated competitor list with six locale-correct internal comparisons: PatSnap, Derwent Innovation, Innography, Google Patents, Espacenet, and Lens.org. Strict audit no longer flags `orbit-intelligence`; root editorial, English, and whitespace validation pass.

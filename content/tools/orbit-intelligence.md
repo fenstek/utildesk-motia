@@ -3,9 +3,9 @@ slug: orbit-intelligence
 title: Orbit Intelligence
 editorial_reviewed: true
 editorial_reviewed_by: Utildesk manual editorial pass
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-07-13
 editorial_status: manual_polished
-editorial_batch: 2026-05-31-complete-tool-card-polish
+editorial_batch: 2026-07-13-full-editorial-coverage
 category: AI Research
 price_model: Abonnement
 tags: [research, patents, analytics, enterprise]
@@ -13,6 +13,7 @@ official_url: "https://www.questel.com/patent/ip-intelligence-software/orbit-int
 popularity: 90
 tier: C
 generated_at: 2026-05-13
+lastReviewed: 2026-07-13
 ---
 # Orbit Intelligence
 
@@ -26,7 +27,7 @@ Für kleinere Tests reicht oft ein klar abgegrenzter Prozess. Orbit Intelligence
 
 Darum sollte der erste Test mit Orbit Intelligence bewusst klein bleiben: ein Prozess, ein Owner, ein messbarer Vorher-nachher-Vergleich und eine ehrliche Nachbesprechung.
 
-## Redaktionelle Einordnung
+## Redaktionelle Einschätzung
 
 Bei Orbit Intelligence ist Quellenarbeit der Kern. Wir würden mit einer engen Recherchefrage starten, Treffer gegen Kontrollquellen prüfen und festhalten, warum Quellen aufgenommen oder verworfen wurden.
 
@@ -84,6 +85,13 @@ Orbit Intelligence wird in der Regel als Abonnement angeboten. Die genauen Preis
 Neben dem Listenpreis sollte bei Orbit Intelligence auch der Einführungsaufwand berücksichtigt werden. Relevant sind Infrastruktur, Betrieb, Monitoring, Schulung und die Pflege von Datenmodellen. Gerade bei Teamnutzung können diese indirekten Kosten wichtiger sein als der reine Monats- oder Jahrespreis.
 
 ## Alternativen zu Orbit Intelligence
+
+- [PatSnap](/tools/patsnap/): wenn Patent- und Innovationsanalyse im selben Enterprise-Kontext verglichen werden soll.
+- [Derwent Innovation](/tools/derwent-innovation/): wenn eine etablierte Recherche- und Analyseumgebung für Patentprofis gesucht wird.
+- [Innography](/tools/innography/): wenn der Schwerpunkt auf Patentlandschaft und Wettbewerbsbeobachtung liegt.
+- [Google Patents](/tools/google-patents/): wenn eine frei zugängliche Recherchebasis für den ersten Suchlauf genügt.
+- [Espacenet](/tools/espacenet/): wenn amtliche europäische Patentdaten und eine offene Rechercheoberfläche im Vordergrund stehen.
+- [Lens.org](/tools/lens-org/): wenn Patente mit wissenschaftlicher Literatur und offenen Analysewegen kombiniert werden sollen.
 
 - **PatSnap** – Eine KI-basierte Plattform für Patent- und Innovationsanalysen mit umfangreichen Funktionen und globaler Datenabdeckung.
 - **Innography** – Bietet umfassende Patentanalysen und Wettbewerbsbeobachtung mit Fokus auf strategische Einblicke.

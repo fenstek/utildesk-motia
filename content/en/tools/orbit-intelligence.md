@@ -3,9 +3,9 @@ slug: orbit-intelligence
 title: Orbit Intelligence
 editorial_reviewed: true
 editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_at: 2026-07-13
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
+editorial_batch: "2026-07-13-full-editorial-coverage"
 category: AI
 price_model: Subscription
 tags:
@@ -17,6 +17,7 @@ official_url: 'https://www.questel.com/patent/ip-intelligence-software/orbit-int
 popularity: 0
 description: 'AI-powered platform for patent research and analysis, designed for companies, research teams, and patent professionals.'
 translation: full
+lastReviewed: 2026-07-13
 ---
 # Orbit Intelligence
 
@@ -92,6 +93,13 @@ Orbit Intelligence is usually offered as a subscription. Exact prices depend on 
 Beyond the list price, Orbit Intelligence should be evaluated by the cost of adoption. Relevant factors include infrastructure, operations, monitoring, training, and maintenance of data models. For team use, these indirect costs can matter more than the monthly or annual subscription itself.
 
 ## Alternatives to Orbit Intelligence
+
+- [PatSnap](/en/tools/patsnap/): for comparing patent and innovation analysis in a similar enterprise context.
+- [Derwent Innovation](/en/tools/derwent-innovation/): when a mature research and analysis environment for patent professionals is needed.
+- [Innography](/en/tools/innography/): when patent landscape and competitive intelligence are the main focus.
+- [Google Patents](/en/tools/google-patents/): when a freely accessible research base is enough for the first search pass.
+- [Espacenet](/en/tools/espacenet/): when official European patent data and an open research interface matter most.
+- [Lens.org](/en/tools/lens-org/): when patents should be viewed alongside scientific literature and open analytical paths.
 
 - **PatSnap** – An AI-based platform for patent and innovation analysis with extensive features and global data coverage.
 - **Innography** – Offers comprehensive patent analysis and competitive intelligence with a focus on strategic insights.
