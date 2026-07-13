@@ -1043,3 +1043,8 @@ _Last updated: 2026-07-12_
 
 - Rebuilt the DE/EN Hadoop card around its real distributed-computing role: HDFS, YARN, MapReduce, batch fit, self-hosted operational ownership, and the difference between a development setup and a production data platform.
 - Added a bounded pilot, failure testing, Apache's Kerberos production requirement, costs of running the platform, and locale-correct internal alternatives. Strict audit no longer flags `apache-hadoop`; root editorial, English, and whitespace validation pass.
+
+## 2026-07-13 - Tool-card quality campaign, AssemblyAI
+
+- Rebuilt the DE/EN card from AssemblyAI's current voice-AI platform: recorded, synchronous and real-time STT, speech understanding, voice-agent APIs, and PII/content guardrails instead of generic transcription claims.
+- Added an audio-quality pilot, evidence and review boundaries for CRM/agent use, privacy controls, practical API-fit alternatives, and verified FAQ answers. Strict audit no longer flags `assemblyai`; root editorial, English, and whitespace validation pass.
