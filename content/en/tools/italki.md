@@ -21,6 +21,10 @@ translation: full
 
 italki is an online platform that connects language learners with qualified teachers from all over the world. Through italki, users can book individually tailored language lessons designed to meet their specific needs and goals. The platform operates as a marketplace for language teachers of various languages and allows for flexible, location-independent learning via video chat.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/italki-editorial.webp" alt="Language lesson with a teacher on video" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With italki, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

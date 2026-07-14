@@ -21,6 +21,10 @@ translation: full
 
 Lever is a comprehensive recruiting and applicant tracking software that supports companies in optimizing and automating their hiring process. With an emphasis on team collaboration and seamless integration of various HR processes, Lever offers a platform that covers the entire recruiting cycle from candidate sourcing to hiring.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lever-editorial.webp" alt="Candidate meetings across recruiting spaces" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Lever, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

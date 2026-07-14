@@ -21,6 +21,10 @@ translation: full
 
 MakeCode is a free programming platform designed to make learning to program accessible for beginners and advanced users alike. With an intuitive block-based interface and the option to program in JavaScript, MakeCode offers a flexible environment for education, hobbies, and initial developer projects.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/makecode-editorial.webp" alt="Children assembling an educational device" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With MakeCode, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

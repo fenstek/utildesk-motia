@@ -21,6 +21,10 @@ translation: full
 
 LoudMax is a free audio limiter designed specifically for mastering and volume adjustment of music and audio content. The plugin allows you to increase the volume of an audio signal significantly without audible distortion or quality loss. With its simple user interface and efficient processing, LoudMax is a popular choice among musicians, producers, and sound engineers looking for a quick and reliable solution for loudness optimization.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/loudmax-editorial.webp" alt="A sound wave held in a balanced range" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With LoudMax, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: source material, export quality, rights and post-production determine the real value. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

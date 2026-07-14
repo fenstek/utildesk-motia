@@ -18,6 +18,10 @@ generated_at: "2026-05-18"
 
 OpenFaaS ist eine Open-Source-Plattform, die es Entwicklern ermöglicht, serverlose Funktionen einfach zu erstellen, bereitzustellen und zu verwalten. Mit Fokus auf Containerisierung und Cloud-Integration bietet OpenFaaS eine flexible Umgebung, um Microservices und Funktionen unabhängig von der Infrastruktur zu betreiben. Die Plattform unterstützt verschiedene Programmiersprachen und kann sowohl lokal als auch in der Cloud genutzt werden.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openfaas-editorial.webp" alt="Modulare Fabrik für ereignisgesteuerte Funktionen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei OpenFaaS sollte die Bewertung am Entwicklungsprozess hängen: Setup, Review, Tests, Übergabe und Wartbarkeit müssen nachvollziehbarer werden. Wir würden das Tool an einem kleinen, realen Ticket prüfen und nicht nur an einer idealen Demo oder einem einzelnen Benchmark.

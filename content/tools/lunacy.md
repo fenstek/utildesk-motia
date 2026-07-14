@@ -18,6 +18,10 @@ generated_at: "2026-05-17"
 
 Lunacy ist ein kostenloses Design-Tool, das sich ideal für UI-Designer, Entwickler und Teams eignet, die kollaborativ an Benutzeroberflächen und Prototypen arbeiten möchten. Es bietet eine native Windows-Anwendung mit einer Vielzahl an Funktionen, die gängige Design-Workflows unterstützen und gleichzeitig Kompatibilität mit Sketch-Dateien ermöglichen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lunacy-editorial.webp" alt="Designstudio mit lebendigen Vektorformen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Lunacy zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

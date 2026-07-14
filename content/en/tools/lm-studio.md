@@ -29,6 +29,10 @@ LM Studio remains a practical entry point for local model testing: download mode
 
 In production, LM Studio does not replace proper infrastructure. Turning tests into real applications requires reproducible model versions, benchmarks, privacy rules, a deployment concept, and monitoring. LM Studio is strong as a lab; production use needs additional discipline.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lm-studio-editorial.webp" alt="A local lab with modular model components" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With LM Studio, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: inputs, roles, result review and follow-up costs are clear before rollout. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

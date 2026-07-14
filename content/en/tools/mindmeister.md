@@ -21,6 +21,10 @@ translation: full
 
 MindMeister is a versatile online tool for creating mind maps that assists teams and individuals in structuring thoughts, planning projects, and collaborating effectively. With an intuitive user interface and numerous features, MindMeister is particularly suitable for creative processes, brainstorming sessions, and visualizing complex ideas.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mindmeister-editorial.webp" alt="A branching botanical mind map" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With MindMeister, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

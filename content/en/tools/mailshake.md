@@ -21,6 +21,10 @@ translation: full
 
 Mailshake is a powerful tool for email marketing and sales automation that helps businesses make their outreach campaigns more efficient. With Mailshake, you can create, automate, and track personalized email sequences to optimize contacting potential customers and increase sales success.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailshake-editorial.webp" alt="A postal workshop for a personalized campaign" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Mailshake, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: data hygiene, consent, handovers and reporting decide whether the tool helps in daily work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
