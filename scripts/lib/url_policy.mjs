@@ -44,6 +44,8 @@ export const DENY_HOSTS = new Set([
   // Known parked/squatted destination observed via redirects
   'dot-tech.org', 'www.dot-tech.org',
   'dot-attorney.org', 'www.dot-attorney.org',
+  // Manually verified adult platforms, not acceptable catalog product URLs
+  'deepfake.com', 'deepnude.com',
 ]);
 
 // ─── Substring patterns that indicate non-product URLs ──────────────────────

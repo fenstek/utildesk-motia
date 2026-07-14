@@ -6,9 +6,11 @@ editorial_reviewed_by: "Utildesk Redaktion"
 editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
 editorial_batch: "2026-07-14-deepfake-full-tool-card-editorial"
+disabled: true
+disabled_reason: "generic_concept_and_wrong_adult_domain"
+search_index: false
 category: Audio & Video
 price_model: "Varies"
-official_url: "https://deepfake.com/"
 description: "Deepfake bezeichnet KI-basierte Medienmanipulation. Diese Einordnung erklärt sichere Anwendungsfälle, Rechte, Prüfungen und die Grenzen des aktuellen offiziellen Links."
 updated_at: 2026-07-14
 tags: [ai, video, safety]

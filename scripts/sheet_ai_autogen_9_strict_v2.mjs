@@ -79,6 +79,8 @@ const OFFICIAL_URL_DENY_HOST = new Set([
   'imdb.com',
   // travel / directories (often wrong for tool names)
   'tripadvisor.com','booking.com','expedia.com',
+  // manually verified adult platforms, not catalog products
+  'deepfake.com','deepnude.com',
 ]);
 
 const OFFICIAL_URL_DENY_SUBSTR = [
