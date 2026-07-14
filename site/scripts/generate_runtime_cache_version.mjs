@@ -6,24 +6,25 @@ import { fileURLToPath } from "node:url";
 const siteDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const runtimeDir = join(siteDir, "runtime-src");
 const outputPath = join(runtimeDir, "generated", "cacheVersion.ts");
+const sourceRoots = [runtimeDir, join(siteDir, "shared"), join(siteDir, "src")];
 
 async function walk(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = await Promise.all(
     entries.map(async (entry) => {
       const path = join(directory, entry.name);
-      if (entry.isDirectory() && entry.name === "generated") return [];
       if (entry.isDirectory()) return walk(path);
+      if (path === outputPath) return [];
       return [path];
     }),
   );
   return files.flat();
 }
 
-const sourceFiles = (await walk(runtimeDir)).sort();
+const sourceFiles = (await Promise.all(sourceRoots.map(walk))).flat().sort();
 const hash = createHash("sha256");
 for (const file of sourceFiles) {
-  hash.update(relative(runtimeDir, file));
+  hash.update(relative(siteDir, file));
   hash.update(await readFile(file));
 }
 

@@ -3,10 +3,12 @@ import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const parseArgs = (argv) => {
-  const result = { manifest: "", resolveBase: "", out: "" };
+  const result = { manifest: "", resolveBase: "", assetBase: "", linkBase: "", out: "" };
   for (let index = 0; index < argv.length; index += 1) {
     if (argv[index] === "--manifest") result.manifest = argv[++index];
     else if (argv[index] === "--resolve-base") result.resolveBase = argv[++index];
+    else if (argv[index] === "--asset-base") result.assetBase = argv[++index];
+    else if (argv[index] === "--link-base") result.linkBase = argv[++index];
     else if (argv[index] === "--out") result.out = argv[++index];
     else throw new Error(`Unknown argument: ${argv[index]}`);
   }
@@ -17,10 +19,13 @@ const parseArgs = (argv) => {
 const options = parseArgs(process.argv.slice(2));
 const manifest = JSON.parse(await readFile(resolve(options.manifest), "utf8"));
 const base = options.resolveBase.replace(/\/+$/, "");
+const assetBase = (options.assetBase || base).replace(/\/+$/, "");
+const linkBase = (options.linkBase || base).replace(/\/+$/, "");
 const resources = new Map();
 const add = (value, kind, owner) => {
   if (!value || value.startsWith("data:") || value.startsWith("#")) return;
-  const url = /^https?:\/\//i.test(value) ? value : new URL(value, `${base}/`).toString();
+  const selectedBase = kind === "image" ? assetBase : linkBase;
+  const url = /^https?:\/\//i.test(value) ? value : new URL(value, `${selectedBase}/`).toString();
   const current = resources.get(url) ?? { url, kinds: new Set(), owners: new Set() };
   current.kinds.add(kind);
   current.owners.add(owner);
@@ -60,7 +65,7 @@ const worker = async () => {
 await Promise.all(Array.from({ length: Math.min(8, queue.length || 1) }, worker));
 results.sort((left, right) => left.url.localeCompare(right.url));
 const failures = results.filter((result) => !result.ok);
-const report = { checkedAt: new Date().toISOString(), resolveBase: base, checked: results.length, failed: failures.length, failures, results };
+const report = { checkedAt: new Date().toISOString(), resolveBase: base, assetBase, linkBase, checked: results.length, failed: failures.length, failures, results };
 if (options.out) await writeFile(resolve(options.out), `${JSON.stringify(report, null, 2)}\n`);
 console.log(JSON.stringify({ checked: report.checked, failed: report.failed, failures: failures.slice(0, 20) }, null, 2));
 if (failures.length) process.exitCode = 1;

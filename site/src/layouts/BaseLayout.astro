@@ -147,6 +147,7 @@ const socialImageUrl = /^(?:https?:)?\/\//i.test(socialImageSource)
   : new URL(socialImageSource.startsWith("/") ? socialImageSource : `/${socialImageSource}`, SITE_URL).toString();
 const normalizedTitle = normalizeSeoText(title);
 const normalizedDescription = normalizeSeoText(description);
+const isRuntimeToolPreview = /^\/runtime-preview\/(?:de|en)\/tools\/[^/]+\/$/.test(pathname);
 const siteSuffixPattern = /\s+(?:—|–|-|\|)\s+Utildesk$/;
 const baseTitle = normalizeSeoText(normalizedTitle.replace(siteSuffixPattern, ""));
 const englishAiSubject = (label: string, fallback = "AI tools") => {
@@ -157,7 +158,7 @@ const englishAiSubject = (label: string, fallback = "AI tools") => {
 let resolvedTitle = normalizedTitle;
 let resolvedDescription = normalizedDescription;
 
-if (/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.test(pathname)) {
+if ((/^(?:\/en)?\/tools\/[^/]+\/$/.test(pathname) && !/^(?:\/en)?\/tools\/tag\//.test(pathname)) || isRuntimeToolPreview) {
   const toolName = (locale === "en"
     ? baseTitle.replace(/:\s*Features,\s*Pricing\s+and\s+Use\s+Cases$/i, "")
     : baseTitle) || humanizeTagLabel(contentSegments[1] ?? "Tool");

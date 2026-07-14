@@ -73,6 +73,34 @@ npm --prefix site run publish:runtime -- --kind ratgeber --locale en --slug <slu
 
 The D1 source hash/revision changes the edge cache key, so the updated article and archive are visible on the next request. The sitemap responses have a five-minute edge TTL and include the same D1 Ratgeber set.
 
+### Reproduce the complete local projection
+
+The full local gate uses D1 batch statements through a localhost-only fixture Worker. It deliberately does not generate or execute one monolithic SQL file: large Markdown payloads can exceed SQLite statement limits, while the parameterized batches exercise the same D1 API shape as the publisher.
+
+```bash
+state=/absolute/path/outside-the-repository/local-runtime
+rm -rf "$state"
+cd site
+node_modules/.bin/wrangler d1 migrations apply utildesk-content-runtime-production \
+  --local --config wrangler.runtime.production.jsonc --persist-to "$state"
+node_modules/.bin/wrangler dev scripts/fixtures/local_d1_import_worker.mjs \
+  --config wrangler.runtime.production.jsonc --persist-to "$state" \
+  --ip 127.0.0.1 --port 8792
+```
+
+In a second shell, import all active DE/EN tools and Ratgeber entries, then build and start the real runtime against the same local D1 state:
+
+```bash
+state=/absolute/path/outside-the-repository/local-runtime
+npm --prefix site run import:runtime-local -- --url http://127.0.0.1:8792
+npm --prefix site run build:runtime
+cd site
+node_modules/.bin/wrangler dev --config dist-runtime/server/wrangler.json \
+  --persist-to "$state" --ip 127.0.0.1 --port 8791
+```
+
+The importer refuses non-localhost URLs. Stop the fixture importer before using the runtime; it is a test-only entrypoint and is never part of the production bundle.
+
 Deploy only the isolated preview Worker:
 
 ```powershell
@@ -82,7 +110,7 @@ node_modules/.bin/wrangler.cmd deploy --config dist/server/wrangler.json
 
 ## Cache Contract
 
-The generated cache-version module hashes the runtime renderer sources at build time. A renderer change therefore receives a new cache key automatically; an editorial D1 publication does not require a Worker rebuild and appears on the next request under its new content-revision cache key.
+The generated cache-version module hashes `runtime-src/` plus the shared `shared/` and `src/` renderer dependencies at build time. A renderer, layout, component, data-manifest or style change therefore receives a new cache key automatically; an editorial D1 publication does not require a Worker rebuild and appears on the next request under its new content-revision cache key.
 
 The generated file lives in `site/runtime-src/generated/` and must remain untracked.
 
