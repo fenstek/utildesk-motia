@@ -80,7 +80,7 @@ const sortRuntimeRatgeberIndex = (html, isEnglish) => html.replace(
     return `${open}${sorted.join("")}${close}`;
   },
 );
-const isRuntimePath = (pathname) =>
+const isRatgeberRuntimePath = (pathname) =>
   pathname === "/ratgeber" ||
   pathname.startsWith("/ratgeber/") ||
   pathname === "/en/ratgeber" ||
@@ -90,20 +90,30 @@ const isRuntimePath = (pathname) =>
   pathname === "/sitemap-bing.xml" ||
   pathname.startsWith("/runtime-assets/");
 
-const proxyRuntime = async (context) => {
+export const toolDetailSlug = (pathname) => {
+  const match = pathname.match(/^\/(?:en\/)?tools\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/);
+  return match?.[1] ?? null;
+};
+
+const isToolAssetPath = (pathname) => pathname.startsWith("/tool-assets/");
+
+export const proxyRuntime = async (context, cluster = "ratgeber") => {
   const url = new URL(context.request.url);
   const upstream = new URL(`${url.pathname}${url.search}`, RUNTIME_ORIGIN);
 
   try {
     const response = await fetch(new Request(upstream, context.request));
     // Keep a static fallback for a path which has not been imported into D1.
-    if (response.status === 404 && !url.pathname.startsWith("/runtime-assets/")) return context.next();
+    if ((response.status === 404 && !url.pathname.startsWith("/runtime-assets/") && !isToolAssetPath(url.pathname)) || response.status >= 500) {
+      return context.next();
+    }
 
     // The runtime Worker and Pages are deployed independently. Keep the
     // article presentation resilient when a newer Pages design ships before
     // the Worker bundle can be redeployed.
     if (
       context.request.method === "GET" &&
+      cluster === "ratgeber" &&
       response.ok &&
       response.headers.get("content-type")?.includes("text/html")
     ) {
@@ -136,7 +146,7 @@ const proxyRuntime = async (context) => {
     }
 
     const headers = new Headers(response.headers);
-    headers.set("X-Utildesk-Content-Runtime", "ratgeber-v1");
+    headers.set("X-Utildesk-Content-Runtime", cluster === "tools" ? "tools-v1" : "ratgeber-v1");
     return new Response(response.body, { status: response.status, headers });
   } catch {
     // An upstream outage must preserve the existing Pages version instead of
@@ -152,6 +162,21 @@ const runtimeIsEnabled = async (context) => {
     return (await context.env.RATGEBER_REVIEW?.get("content-runtime:ratgeber")) !== "off";
   } catch {
     return true;
+  }
+};
+
+export const toolRuntimeIsEnabled = async (context, slug) => {
+  try {
+    const mode = (await context.env.RATGEBER_REVIEW?.get("content-runtime:tools")) ?? "off";
+    if (mode === "on") return true;
+    if (mode !== "allowlist") return false;
+    const raw = await context.env.RATGEBER_REVIEW?.get("content-runtime:tools:allowlist");
+    const parsed = JSON.parse(raw || "[]");
+    return Array.isArray(parsed) && parsed.includes(slug);
+  } catch {
+    // Tool runtime is opt-in. A KV read/parse failure must leave the static
+    // fallback in control and must never affect the Ratgeber switch.
+    return false;
   }
 };
 
@@ -222,8 +247,17 @@ export async function onRequest(context) {
     });
   }
 
-  if (isRuntimePath(url.pathname) && await runtimeIsEnabled(context)) {
-    return proxyRuntime(context);
+  if (isToolAssetPath(url.pathname)) {
+    return proxyRuntime(context, "tools");
+  }
+
+  if (isRatgeberRuntimePath(url.pathname) && await runtimeIsEnabled(context)) {
+    return proxyRuntime(context, "ratgeber");
+  }
+
+  const runtimeToolSlug = toolDetailSlug(url.pathname);
+  if (runtimeToolSlug && await toolRuntimeIsEnabled(context, runtimeToolSlug)) {
+    return proxyRuntime(context, "tools");
   }
 
   if (!url.search || !isPublicHtmlPath(url.pathname)) {
