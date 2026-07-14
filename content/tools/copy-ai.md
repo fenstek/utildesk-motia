@@ -14,7 +14,7 @@ affiliate_url: "https://www.copy.ai"
 tier: C
 generated_at: 2026-05-15
 created_at: 2026-02-08
-popularity: 97
+popularity: 98
 ---
 # Copy.ai
 

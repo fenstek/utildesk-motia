@@ -2,18 +2,18 @@
 slug: pixlr
 title: Pixlr
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-pixlr-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-pixlr-full-tool-card-editorial
 category: AI Image
 price_model: Freemium
 tags: [design, image, automation, productivity]
 official_url: "https://pixlr.com/"
-description: "Pixlr ist ein browserbasierter Editor und eine Suite für schnelle Bildbearbeitung, Design und ausgewählte KI-Generierung mit klaren Grenzen bei PSD-Kompatibilität und Kontrollen."
+description: Pixlr ist ein browserbasierter Editor und eine Suite für schnelle Bildbearbeitung, Design und ausgewählte KI-Generierung mit klaren Grenzen bei PSD-Kompatibilität und Kontrollen.
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 28
+popularity: 29
 tier: C
 generated_at: 2026-05-16
 ---
