@@ -88,14 +88,21 @@ if (grid) {
   };
   const loadInventory = () => {
     if (loading) return loading;
+    grid.dataset.inventoryState = "loading";
+    window.dispatchEvent(new CustomEvent("utildesk:inventory-loading"));
     loading = fetch(endpoint, { headers: { Accept: "application/json" } })
       .then((response) => { if (!response.ok) throw new Error(`Inventory ${response.status}`); return response.json(); })
       .then((payload) => {
         const existing = new Set(Array.from(grid.querySelectorAll<HTMLElement>(".tool-card")).map((card) => card.dataset.slug));
         (payload.items || []).forEach((item: InventoryItem, index: number) => { if (!existing.has(item.slug)) grid.append(buildCard(item, index)); });
+        grid.dataset.inventoryState = "ready";
         window.dispatchEvent(new CustomEvent("utildesk:inventory-ready"));
       })
-      .catch((error) => { console.warn("Utildesk inventory could not be expanded", error); });
+      .catch((error) => {
+        grid.dataset.inventoryState = "error";
+        window.dispatchEvent(new CustomEvent("utildesk:inventory-error"));
+        console.warn("Utildesk inventory could not be expanded", error);
+      });
     return loading;
   };
 

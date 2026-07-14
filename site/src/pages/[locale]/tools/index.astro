@@ -346,6 +346,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       <p>No tools found. Try another search term or a different filter.</p>
     </div>
 
+    <div id="search-loading" class="inv-empty" style="display: none;" role="status" aria-live="polite">
+      <p>Loading the complete index ...</p>
+    </div>
+
     <div class="inv-loadmore">
       <button type="button" id="load-more-btn" class="akte-action akte-action-ghost">Show more</button>
       <div id="hidden-count-info" class="inv-hidden-count" style="display: none;">
@@ -394,6 +398,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       const sortSelect = document.getElementById('sort-select');
       const toolsGrid = document.getElementById('tools-grid');
       const noResults = document.getElementById('no-results');
+      const searchLoading = document.getElementById('search-loading');
       const loadMoreBtn = document.getElementById('load-more-btn');
       const hiddenCountInfo = document.getElementById('hidden-count-info');
       let cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
@@ -422,6 +427,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       const initialLetter = urlParams.get('letter');
       const initialVerdicts = urlParams.get('verdict');
       const initialCategories = urlParams.get('category');
+
+      if (initialQuery && !toolsGrid.dataset.inventoryState) {
+        toolsGrid.dataset.inventoryState = 'loading';
+      }
 
       if (initialQuery && searchInput) {
         searchInput.value = initialQuery;
@@ -636,6 +645,22 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       function filterTools() {
         const query = normalizeSearch(searchInput.value);
         const sortMode = sortSelect ? sortSelect.value : 'az';
+        const inventoryLoading = Boolean(query) && toolsGrid.dataset.inventoryState === 'loading';
+        if (inventoryLoading) {
+          toolsGrid.setAttribute('aria-busy', 'true');
+          toolsGrid.style.setProperty('display', 'none', 'important');
+          noResults.style.display = 'none';
+          if (searchLoading) searchLoading.style.display = 'block';
+          if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+          if (hiddenCountInfo) hiddenCountInfo.style.display = 'none';
+          if (resultCount) resultCount.textContent = 'Loading the complete index ...';
+          filterGuides(query);
+          return;
+        }
+
+        toolsGrid.removeAttribute('aria-busy');
+        toolsGrid.style.removeProperty('display');
+        if (searchLoading) searchLoading.style.display = 'none';
         const baseFiltered = cards.filter(function(card) {
           const title = card.getAttribute('data-title') || '';
           const slug = card.getAttribute('data-slug') || '';
@@ -745,6 +770,9 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
         filterTools();
       });
+
+      window.addEventListener('utildesk:inventory-loading', filterTools);
+      window.addEventListener('utildesk:inventory-error', filterTools);
 
       function resetAndFilter() {
         pageBlocks = 1;
