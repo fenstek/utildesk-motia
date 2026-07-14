@@ -37,10 +37,11 @@ const DEFAULT_CONTROL_SLUGS = [
 ];
 
 const parseArgs = (argv) => {
-  const options = { baseUrl: DEFAULT_BASE_URL, outDir: null, slugsFile: null, screenshots: false, cdpUrl: null };
+  const options = { baseUrl: DEFAULT_BASE_URL, canonicalOrigin: null, outDir: null, slugsFile: null, screenshots: false, cdpUrl: null };
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
     if (arg === "--base-url") options.baseUrl = argv[++index];
+    else if (arg === "--canonical-origin") options.canonicalOrigin = argv[++index];
     else if (arg === "--out") options.outDir = argv[++index];
     else if (arg === "--slugs-file") options.slugsFile = argv[++index];
     else if (arg === "--screenshots") options.screenshots = true;
@@ -229,6 +230,7 @@ const screenshotViaCdp = async (cdpUrl, url, destination) => {
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   const baseUrl = normalizedBaseUrl(options.baseUrl);
+  const canonicalOrigin = normalizedBaseUrl(options.canonicalOrigin || options.baseUrl);
   const outDir = resolve(options.outDir);
   const htmlDir = join(outDir, "html");
   const screenshotDir = join(outDir, "screenshots-390x844");
@@ -289,10 +291,15 @@ async function main() {
     }
   }
 
-  const invalid = records.filter((record) => record.status !== 200 || record.html.canonical !== record.url || record.html.jsonLd.some((item) => !item.valid));
+  const invalid = records.filter((record) =>
+    record.status !== 200
+    || record.html.canonical !== `${canonicalOrigin}${record.path}`
+    || record.html.jsonLd.some((item) => !item.valid),
+  );
   const summary = {
     capturedAt: new Date().toISOString(),
     baseUrl,
+    canonicalOrigin,
     viewport: options.screenshots ? { width: 390, height: 844, deviceScaleFactor: 1 } : null,
     controlSlugs: slugs,
     activeCounts: { de: active.de.length, en: active.en.length },

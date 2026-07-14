@@ -1,45 +1,16 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ContentJump from "../../../components/ContentJump.astro";
-import { marked } from "marked";
-import { addContentHeadingIds, extractFirstEditorialFigure, wrapFaqSection } from "../../../lib/contentNavigation";
-import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../../lib/favicon";
-import { resolveLocalLogo } from "../../../lib/resolveLogoPath";
 import { CATEGORIES } from "../../../lib/categories";
 import contentLastmodManifest from "../../../data/content-lastmod.json";
-import {
-  buildEnglishToolFeatureList,
-  buildEnglishToolMarkdown,
-  categoryTitleEn,
-  getEnglishToolMeta,
-  hasEnglishToolTranslation,
-} from "../../../lib/englishContent";
+import guideBacklinkManifest from "../../../data/guide-backlinks.json";
 import toolAddedAtManifest from "../../../data/tool-added-at.json";
-import {
-  createToolAddedAtRankMap,
-  getToolSearchIndexDecision,
-} from "../../../lib/searchIndexPolicy.mjs";
-import {
-  classifyToolEntry,
-  isCuratedToolEntry,
-  stripTemplateBoilerplate,
-} from "../../../lib/toolQuality.mjs";
+import { buildEnglishToolFeatureList, buildEnglishToolMarkdown, categoryTitleEn, getEnglishToolMeta, hasEnglishToolTranslation } from "../../../lib/englishContent";
 import { listDisplayTools } from "../../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../../lib/toolEntries.mjs";
 import { tagHref } from "../../../lib/tagRoutes";
-import { getToolEditorialVerdict } from "../../../lib/toolVerdict";
-import guideBacklinkManifest from "../../../data/guide-backlinks.json";
-import {
-  buildBreadcrumbSchema,
-  buildPublisherOrganization,
-  SITE_URL,
-  toAbsoluteUrl,
-} from "../../../lib/siteMeta";
-import {
-  buildOfferFromPriceModel,
-  mapToolCategoryToSchemaCategory,
-} from "../../../lib/machineReadable";
-import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../../lib/schema";
+import { createToolAddedAtRankMap, getToolSearchIndexDecision } from "../../../lib/searchIndexPolicy.mjs";
+import { buildToolDetailViewModel } from "../../../../shared/toolDetailViewModel.mjs";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
@@ -51,243 +22,74 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { slug } = entry;
-const contentLastmod = contentLastmodManifest as Record<string, string>;
-const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
-const searchIndexDecision = getToolSearchIndexDecision(entry, {
-  addedAtRank: toolAddedAtRankMap.get(slug) ?? 0,
-});
-const toolQuality = classifyToolEntry(entry);
-const isCuratedTool = isCuratedToolEntry(entry, toolQuality);
 const meta = getEnglishToolMeta(entry);
-const providerUrl = meta.targetUrl || "";
-const editorialVerdict = getToolEditorialVerdict(
-  entry.data.editorial_verdict,
-  "en",
-  isCuratedTool ? "recommend" : "caution",
-);
-const editorialVerdictHeadline = entry.data.editorial_verdict_headline
-  ? String(entry.data.editorial_verdict_headline)
-  : editorialVerdict.detailHeadline;
-const editorialVerdictText = entry.data.editorial_verdict_text
-  ? String(entry.data.editorial_verdict_text)
-  : editorialVerdict.detailText;
-const editorialTrustLabel = entry.data.editorial_trust_label
-  ? String(entry.data.editorial_trust_label)
-  : editorialVerdict.trustLabel;
-const vendorName = entry.data.vendor ? String(entry.data.vendor) : meta.title;
-const extractDomain = (url: string) => {
-  if (!url) return "";
-  try {
-    return new URL(url).hostname.replace(/^www\./, "");
-  } catch {
-    return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
-  }
-};
-const providerDomain = extractDomain(meta.officialUrl || providerUrl);
-const brandLogo = entry.data.brandLogo ? String(entry.data.brandLogo) : null;
-const localLogo = resolveLocalLogo(slug);
-const faviconCandidates = getFaviconCandidates(providerUrl, 128);
-const faviconLogo = faviconCandidates[0] ?? null;
-const logoUrl = brandLogo || localLogo || faviconLogo;
-const logoFallbacks = logoUrl === faviconLogo ? [...faviconCandidates.slice(1), getAvatarFallbackDataUrl(meta.title)] : [];
-const englishMarkdown = isCuratedTool
-  ? buildEnglishToolMarkdown(entry)
-  : stripTemplateBoilerplate(buildEnglishToolMarkdown(entry));
-const englishMarkdownWithoutAlternatives = englishMarkdown.replace(
-  /(?:^|\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\n]*\n[\s\S]*?(?=\n#{1,3}\s|\s*$)/i,
-  "",
-).trim();
-let articleHtml = String(marked.parse(englishMarkdownWithoutAlternatives));
-articleHtml = articleHtml.replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
-const extractedEditorialFigure = extractFirstEditorialFigure(articleHtml);
-const headingNavigation = addContentHeadingIds(extractedEditorialFigure.html);
-articleHtml = wrapFaqSection(headingNavigation.html, "Open frequently asked questions");
-const editorialFigureHtml = extractedEditorialFigure.figureHtml;
-const articleHeadings = headingNavigation.headings;
+const englishMarkdown = buildEnglishToolMarkdown(entry);
 const featureList = buildEnglishToolFeatureList(entry);
-const faqSchema = isCuratedTool
-  ? buildFaqPageSchema(extractFaqPairsFromMarkdown(englishMarkdown))
-  : null;
-const norm = (value: unknown) => String(value ?? "").trim().toLowerCase();
-const categoryNorm = norm(meta.category);
-const seenTags = new Set<string>();
-const displayTags = meta.tags
-  .map(String)
-  .filter((tag) => {
-    const normalized = norm(tag);
-    if (!normalized) return false;
-    if (normalized === "ai") return false;
-    if (categoryNorm && normalized === categoryNorm) return false;
-    if (seenTags.has(normalized)) return false;
-    seenTags.add(normalized);
-    return true;
-  });
-
-const rawTags = Array.isArray(entry.data.tags) ? entry.data.tags.map((tag: unknown) => String(tag).toLowerCase()) : [];
-const categoryResults = CATEGORIES.map((category) => {
-  const matches = rawTags.filter((tag) => category.matchTags.includes(tag));
-  const matchCount = matches.length;
-  const firstMatchPos = matchCount > 0 ? rawTags.findIndex((tag) => category.matchTags.includes(tag)) : Infinity;
-  return { category, matchCount, firstMatchPos };
-}).filter((result) => result.matchCount > 0);
-categoryResults.sort((a, b) => {
-  if (b.matchCount !== a.matchCount) return b.matchCount - a.matchCount;
-  return a.firstMatchPos - b.firstMatchPos;
-});
-const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category : undefined;
-const providerCtaLabel = providerUrl ? `Open ${meta.title}` : "Open provider";
-const mastheadOneliner = meta.description;
-const monogramLetter = (vendorName || meta.title || slug || "#")
-  .replace(/[^A-Za-z]/g, "")
-  .charAt(0)
-  .toUpperCase() || "#";
-const guideBacklinks = guideBacklinkManifest.en[slug] || [];
-const mentionedInCount = new Set([...(Array.isArray(entry.data.mentionedIn) ? entry.data.mentionedIn : []), ...guideBacklinks.map((guide) => guide.slug)]).size;
-
-const normalizeAltName = (value: string) =>
-  String(value ?? "")
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
-    .replace(/[`*_]/g, "")
-    .replace(/[:\uFF1A]\s*$/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
-const normalizeAltNameFuzzy = (value: string) =>
-  normalizeAltName(value)
-    .replace(/\([^)]*\)/g, " ")
-    .replace(/\b(ai|tool|app|platform)\b/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-const parseAltItem = (item: string) => {
-  const internalLink = item.match(/^\[([^\]]+)\]\(\/(?:en\/)?tools\/([^/)\s]+)\/?\)\s*(?::\s*(.*))?$/);
-  if (internalLink) return { name: internalLink[1], slug: internalLink[2] };
-
-  const linked = item.match(/^\[([^\]]+)\]\(([^)]+)\)\s*(?::\s*(.*))?$/);
-  if (linked) return { name: linked[1], slug: "" };
-
-  const boldColonInside = item.match(/^\*\*([^*]+?)\s*:\s*\*\*\s*(.+)$/);
-  if (boldColonInside) return { name: boldColonInside[1], slug: "" };
-
-  const bold = item.match(/^\s*\*\*([^*]+)\*\*\s*(?::|\u2013|\u2014|-)?/i);
-  if (bold) return { name: bold[1], slug: "" };
-
-  const plainWithSeparator = item.match(/^\s*([^:\u2013\u2014-][^:\u2013\u2014-]{1,80})\s*(?::|\u2013|\u2014|-)\s*(.+)?$/);
-  if (plainWithSeparator) return { name: plainWithSeparator[1], slug: "" };
-
-  return null;
-};
-const altSection = englishMarkdown.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
-const rawAltItems: string[] = altSection
-  ? (altSection[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((line) => line.replace(/^[-*]\s+/, "").trim())
-  : [];
+const contentLastmod = contentLastmodManifest as Record<string, string>;
+const rankMap = createToolAddedAtRankMap(toolAddedAtManifest);
 const allDisplayTools = await listDisplayTools("en");
-const enabledBySlug = new Map(allDisplayTools.map((tool) => [tool.slug, tool]));
-const enabledByNormTitle = new Map(allDisplayTools.map((tool) => [normalizeAltName(tool.title), tool]));
-const enabledByNormTitleFuzzy = new Map(allDisplayTools.map((tool) => [normalizeAltNameFuzzy(tool.title), tool]));
-const alternatives = rawAltItems.reduce<typeof allDisplayTools>((acc, item) => {
-  const parsed = parseAltItem(item);
-  if (!parsed) return acc;
-  const tool = parsed.slug
-    ? enabledBySlug.get(parsed.slug)
-    : enabledByNormTitle.get(normalizeAltName(parsed.name)) ?? enabledByNormTitleFuzzy.get(normalizeAltNameFuzzy(parsed.name));
-  if (!tool || tool.slug === slug || acc.some((current) => current.slug === tool.slug)) return acc;
-  acc.push(tool);
-  return acc;
-}, []);
-const alternativesTop = alternatives.slice(0, 3);
-const canonicalUrl = `${SITE_URL}/en/tools/${slug}/`;
-const lastmodKey = `content/tools/${slug}.md`;
-const checkedDateSource =
-  entry.data.lastReviewed ||
-  entry.data.last_reviewed ||
-  entry.data.lastReviewedAt ||
-  entry.data.last_reviewed_at ||
-  entry.data.editorial_reviewed_at ||
-  entry.data.editorialReviewedAt ||
-  (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
-const checkedDate = checkedDateSource
-  ? new Intl.DateTimeFormat("en", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-    }).format(new Date(String(checkedDateSource)))
-  : "";
-const generatedAtSource =
-  contentLastmod[lastmodKey] ||
-  entry.data.generatedAt ||
-  entry.data.generated_at ||
-  entry.data.created_at ||
-  entry.data.createdAt ||
-  entry.data.date;
-const generatedAt = generatedAtSource
-  ? new Intl.DateTimeFormat("en", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-    }).format(new Date(String(generatedAtSource)))
-  : "";
-const formatShortDate = (value: unknown) => {
-  if (!value) return "";
-  try {
-    return new Intl.DateTimeFormat("en", {
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-    }).format(new Date(String(value)));
-  } catch {
-    return "";
-  }
-};
-const lastCheckedShort = formatShortDate(checkedDateSource);
-const inIndexSinceShort = formatShortDate(entry.data.created_at || entry.data.createdAt || entry.data.date);
-const offer = buildOfferFromPriceModel(entry.data.price_model ? String(entry.data.price_model) : null);
-if (offer && meta.priceModel) {
-  offer.category = meta.priceModel;
-  if ("priceSpecification" in offer && offer.priceSpecification) {
-    offer.priceSpecification.description = meta.priceModel;
-  }
-}
-const schema = {
-  "@context": "https://schema.org",
-  "@type": ["SoftwareApplication", "WebApplication"],
-  name: meta.title,
-  description: meta.description,
-  url: canonicalUrl,
-  mainEntityOfPage: canonicalUrl,
-  operatingSystem: "Web",
-  applicationCategory: mapToolCategoryToSchemaCategory(meta.category, meta.tags),
-  applicationSubCategory: meta.category || undefined,
-  inLanguage: "en",
-  keywords: meta.tags.length ? meta.tags.join(", ") : undefined,
-  featureList: featureList.length ? featureList : undefined,
-  isAccessibleForFree: ["Free", "Freemium", "Open Source"].includes(meta.priceModel),
-  publisher: buildPublisherOrganization(),
-  image: logoUrl ? toAbsoluteUrl(logoUrl) : undefined,
-  offers: offer,
-  about: meta.tags.length ? meta.tags.map((tag) => ({ "@type": "Thing", name: tag })) : undefined,
-  ...(meta.officialUrl && { sameAs: meta.officialUrl }),
-};
-const breadcrumbSchema = buildBreadcrumbSchema([
-  { name: "Directory", url: `${SITE_URL}/en/` },
-  { name: "Tools", url: `${SITE_URL}/en/tools/` },
-  { name: meta.title, url: canonicalUrl },
-]);
+const sharedView = buildToolDetailViewModel({
+  entry,
+  locale: "en",
+  localized: {
+    title: meta.title,
+    category: meta.category,
+    priceModel: meta.priceModel,
+    tags: meta.tags,
+    description: meta.description,
+    metaDescription: meta.metaDescription,
+    markdown: englishMarkdown,
+    officialUrl: meta.officialUrl,
+    affiliateUrl: meta.affiliateUrl,
+    targetUrl: meta.targetUrl,
+    featureList,
+  },
+  displayTools: allDisplayTools,
+  categories: CATEGORIES,
+  guideBacklinks: guideBacklinkManifest.en[slug] || [],
+  contentLastmod,
+  searchIndexDecision: getToolSearchIndexDecision(entry, { addedAtRank: rankMap.get(slug) ?? 0 }),
+});
+const {
+  providerUrl,
+  providerDomain,
+  providerCtaLabel,
+  vendorName,
+  logoUrl,
+  logoFallbacks,
+  monogramLetter,
+  displayTags,
+  primaryCategory,
+  isCuratedTool,
+  editorialVerdict,
+  editorialVerdictHeadline,
+  editorialVerdictText,
+  editorialTrustLabel,
+  guideBacklinks,
+  mentionedInCount,
+  checkedDate,
+  lastCheckedShort,
+  inIndexSinceShort,
+  generatedAt,
+  mastheadOneliner,
+  alternativesTop,
+} = sharedView;
 ---
 
 <BaseLayout
   locale="en"
   title={`${meta.title}: Features, Pricing and Use Cases | Utildesk`}
-  description={meta.metaDescription}
-  robots={searchIndexDecision.robots}
-  googlebotRobots={searchIndexDecision.googlebotRobots}
+  description={sharedView.metaDescription}
+  robots={sharedView.searchIndexDecision.robots}
+  googlebotRobots={sharedView.searchIndexDecision.googlebotRobots}
 >
   <Fragment slot="head">
-    <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" type="application/json" href={`/en/api/tools/${slug}.json`} title={`${meta.title} (JSON)`} />
-    <link rel="alternate" type="text/markdown" href={`/en/markdown/tools/${slug}.md`} title={`${meta.title} (Markdown)`} />
-    {isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(schema)} /> : null}
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-    {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
+    <link rel="canonical" href={sharedView.canonicalUrl} />
+    <link rel="alternate" type="application/json" href={sharedView.machinePaths.json} title={`${meta.title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={sharedView.machinePaths.markdown} title={`${meta.title} (Markdown)`} />
+    {sharedView.isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(sharedView.softwareApplicationSchema)} /> : null}
+    <script type="application/ld+json" set:html={JSON.stringify(sharedView.breadcrumbSchema)} />
+    {sharedView.faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(sharedView.faqSchema)} /> : null}
   </Fragment>
 
   <div class="tool-akte">
@@ -431,8 +233,8 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       </aside>
     </header>
 
-    {editorialFigureHtml ? (
-      <div class="akte-feature-visual" set:html={editorialFigureHtml}></div>
+    {sharedView.editorialFigureHtml ? (
+      <div class="akte-feature-visual" set:html={sharedView.editorialFigureHtml}></div>
     ) : null}
 
     <section class="akte-verdict-card" aria-label="Editorial verdict">
@@ -467,7 +269,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
       </div>
     </section>
 
-    <ContentJump headings={articleHeadings} locale="en" />
+    <ContentJump headings={sharedView.articleHeadings} locale="en" />
 
     {isCuratedTool ? (
       <p class="editorial-note">
@@ -492,7 +294,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         </blockquote>
       ) : null}
 
-      <div set:html={articleHtml}></div>
+      <div set:html={sharedView.articleHtml}></div>
     </div>
   </article>
 
@@ -503,7 +305,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
     </section>
   )}
 
-  {alternativesTop.length > 0 && (
+  {sharedView.alternativesTop.length > 0 && (
     <section class="akte-alts tool-akte" aria-label="Related files">
       <div class="akte-alts-head">
         <div class="akte-alts-head-left">
@@ -515,7 +317,7 @@ const breadcrumbSchema = buildBreadcrumbSchema([
         <a class="akte-alts-all" href="/en/tools/">All files</a>
       </div>
       <div class="akte-alts-grid">
-        {alternativesTop.map((tool, i) => {
+        {sharedView.alternativesTop.map((tool, i) => {
           const altMonogram = (tool.title || "#")
             .replace(/[^A-Za-z]/g, "")
             .charAt(0)

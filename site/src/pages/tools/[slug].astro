@@ -1,469 +1,82 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContentJump from "../../components/ContentJump.astro";
-import { marked } from "marked";
-import { addContentHeadingIds, extractFirstEditorialFigure, wrapFaqSection } from "../../lib/contentNavigation";
-import { resolveLocalLogo } from "../../lib/resolveLogoPath";
-import { getAvatarFallbackDataUrl, getFaviconCandidates } from "../../lib/favicon";
 import { CATEGORIES } from "../../lib/categories";
+import { listDisplayTools } from "../../lib/toolDisplay";
 import { listActiveToolEntries } from "../../lib/toolEntries.mjs";
+import { tagHref } from "../../lib/tagRoutes";
 import toolAddedAtManifest from "../../data/tool-added-at.json";
 import contentLastmodManifest from "../../data/content-lastmod.json";
-import {
-  createToolAddedAtRankMap,
-  getToolSearchIndexDecision,
-} from "../../lib/searchIndexPolicy.mjs";
-import {
-  classifyToolEntry,
-  isCuratedToolEntry,
-  stripTemplateBoilerplate,
-} from "../../lib/toolQuality.mjs";
-import { normalizePriceModel } from "../../lib/priceModel";
-import { tagHref } from "../../lib/tagRoutes";
-import { getToolEditorialVerdict } from "../../lib/toolVerdict";
 import guideBacklinkManifest from "../../data/guide-backlinks.json";
-import {
-  buildBreadcrumbSchema,
-  buildPublisherOrganization,
-  SITE_LANGUAGE,
-  SITE_URL,
-  toAbsoluteUrl,
-} from "../../lib/siteMeta";
-import {
-  buildOfferFromPriceModel,
-  extractFeatureList,
-  mapToolCategoryToSchemaCategory,
-} from "../../lib/machineReadable";
-import { buildFaqPageSchema, extractFaqPairsFromMarkdown } from "../../lib/schema";
+import { createToolAddedAtRankMap, getToolSearchIndexDecision } from "../../lib/searchIndexPolicy.mjs";
+import { buildToolDetailViewModel } from "../../../shared/toolDetailViewModel.mjs";
 
 export async function getStaticPaths() {
   const entries = await listActiveToolEntries();
-  return entries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
+  return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
 }
 
-const { slug } = Astro.params;
 const { entry } = Astro.props;
-const { data, content } = entry;
 const contentLastmod = contentLastmodManifest as Record<string, string>;
-const toolAddedAtRankMap = createToolAddedAtRankMap(toolAddedAtManifest);
-const searchIndexDecision = getToolSearchIndexDecision(entry, {
-  addedAtRank: toolAddedAtRankMap.get(entry.slug) ?? 0,
+const rankMap = createToolAddedAtRankMap(toolAddedAtManifest);
+const displayTools = await listDisplayTools("de");
+const currentDisplayTool = displayTools.find((tool) => tool.slug === entry.slug);
+const sharedView = buildToolDetailViewModel({
+  entry,
+  locale: "de",
+  localized: { priceModel: currentDisplayTool?.priceModel },
+  displayTools,
+  categories: CATEGORIES,
+  guideBacklinks: guideBacklinkManifest.de[entry.slug] || [],
+  contentLastmod,
+  searchIndexDecision: getToolSearchIndexDecision(entry, { addedAtRank: rankMap.get(entry.slug) ?? 0 }),
 });
-const toolQuality = classifyToolEntry(entry);
-const isCuratedTool = isCuratedToolEntry(entry, toolQuality);
-const editorialVerdict = getToolEditorialVerdict(
-  data.editorial_verdict,
-  "de",
-  isCuratedTool ? "recommend" : "caution",
-);
-const editorialVerdictHeadline = data.editorial_verdict_headline
-  ? String(data.editorial_verdict_headline)
-  : editorialVerdict.detailHeadline;
-const editorialVerdictText = data.editorial_verdict_text
-  ? String(data.editorial_verdict_text)
-  : editorialVerdict.detailText;
-const editorialTrustLabel = data.editorial_trust_label
-  ? String(data.editorial_trust_label)
-  : editorialVerdict.trustLabel;
-const renderedContent = isCuratedTool ? content : stripTemplateBoilerplate(content);
-
-const official_url = data.official_url ? String(data.official_url) : "";
-const affiliate_url = data.affiliate_url ? String(data.affiliate_url) : "";
-const brandLogo = data.brandLogo ? String(data.brandLogo) : null;
-const provider_url = affiliate_url || official_url || "";
-const visible_provider_url = official_url || provider_url || "";
-const target_provider_url = affiliate_url || official_url || "";
-const escapeRegExp = (value: string) => value.replace(/[.*+?^$|()\[\]{}]/g, "\\$&");
-const escapeHtml = (value: string) =>
-  String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/"/g, "&quot;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-const linkFirstParagraphMention = (input: string, term: string, url: string) => {
-  if (!url || term.trim().length < 4) return input;
-  const termRegex = new RegExp("(?<![\\w/>\"])" + escapeRegExp(term) + "(?![\\w/<\"])", "gi");
-  let firstDone = false;
-  return input.replace(/(<(?:p|li|h[2-6])\b[^>]*>)([\s\S]*?)(<\/(?:p|li|h[2-6])>)/gi, (_, open, inner, close) => {
-    if (/<a\b/i.test(inner) || /<code\b/i.test(inner) || /<pre\b/i.test(inner)) return _ ;
-    if (!termRegex.test(inner)) { termRegex.lastIndex = 0; return _; }
-    termRegex.lastIndex = 0;
-    const linked = inner.replace(termRegex, (match) => {
-      if (firstDone) return `<a href="${url}" rel="noopener noreferrer">${match}</a>`;
-      firstDone = true;
-      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${match}</a>`;
-    });
-    return open + linked + close;
-  });
-};
-const buildInlineProviderLinkHtml = (visibleUrl: string, targetUrl: string) => {
-  if (!visibleUrl || !targetUrl) return "";
-  const safeVisibleUrl = escapeHtml(visibleUrl);
-  const safeTargetUrl = escapeHtml(targetUrl);
-
-  return [
-    `<div class="inline-provider-link">`,
-    `<p><span class="inline-provider-link-emoji">👉</span> <strong>Zum Anbieter:</strong> <a href="${safeTargetUrl}" target="_blank" rel="noopener noreferrer">${safeVisibleUrl}</a></p>`,
-    `</div>`,
-  ].join("");
-};
-const ensureInlineProviderLink = (input: string, visibleUrl: string, targetUrl: string) => {
-  if (!visibleUrl || !targetUrl) return input;
-
-  const providerLinkHtml = buildInlineProviderLinkHtml(visibleUrl, targetUrl);
-  if (!providerLinkHtml) return input;
-
-  const cleanedInput = input
-    .replace(/<div[^>]*class="inline-provider-link"[^>]*>[\s\S]*?<\/div>/gi, "")
-    .replace(/<p[^>]*>(?:(?!<\/p>).)*?Zum Anbieter:(?:(?!<\/p>).)*?<\/p>/gis, "")
-    .replace(/<p[^>]*>(?:(?!<\/p>).)*?(?:Affiliate-Link:|Linkziel:)(?:(?!<\/p>).)*?<\/p>/gis, "")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
-
-  if (/<h2[^>]*>\s*FAQ\s*<\/h2>/i.test(cleanedInput)) {
-    return cleanedInput.replace(/<h2[^>]*>\s*FAQ\s*<\/h2>/i, `${providerLinkHtml}\n<h2>FAQ</h2>`);
-  }
-
-  return `${cleanedInput}\n${providerLinkHtml}`;
-};
-
-const localLogo = resolveLocalLogo(slug);
-const faviconCandidates = getFaviconCandidates(provider_url, 128);
-const faviconLogo = faviconCandidates[0] ?? null;
-const faviconFallbacks = faviconCandidates.slice(1);
-const fallbackAvatarUrl = getAvatarFallbackDataUrl(String(data.title ?? slug));
-
-const logoUrl = brandLogo || localLogo || faviconLogo;
-const logoFallbacks = logoUrl === faviconLogo ? [...faviconFallbacks, fallbackAvatarUrl] : [];
-
-
-const title = String(data.title ?? slug);
-const category = data.category ? String(data.category) : null;
-const price_model = normalizePriceModel(data.price_model);
-const tags = Array.isArray(data.tags) ? data.tags.map(String) : [];
-const description = data.description ? String(data.description) : "";
-const oneliner = description || (data.summary ? String(data.summary) : "");
-const vendorName = data.vendor ? String(data.vendor) : title;
-const extractDomain = (url: string) => {
-  if (!url) return "";
-  try { return new URL(url).hostname.replace(/^www\./, ""); }
-  catch { return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, ""); }
-};
-const providerDomain = extractDomain(visible_provider_url || target_provider_url);
-const monogramLetter = (vendorName || title || slug || "·")
-  .replace(/[^A-Za-zÄÖÜäöü]/g, "")
-  .charAt(0)
-  .toUpperCase() || "·";
-const guideBacklinks = guideBacklinkManifest.de[slug] || [];
-const mentionedInCount = new Set([...(Array.isArray(data.mentionedIn) ? data.mentionedIn : []), ...guideBacklinks.map((guide) => guide.slug)]).size;
-const formatGermanDate = (value: unknown) => {
-  if (!value) return "";
-  try {
-    return new Intl.DateTimeFormat("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(String(value)));
-  } catch { return ""; }
-};
-const lastCheckedShort = formatGermanDate(data.lastReviewed || data.last_reviewed || data.lastReviewedAt || data.last_reviewed_at);
-const inIndexSinceShort = formatGermanDate(data.created_at || data.createdAt || data.date);
-const norm = (s) => String(s ?? "").trim().toLowerCase();
-const categoryNorm = norm(category);
-const seen = new Set();
-const displayTags = (tags ?? [])
-  .map(String)
-  .filter((t) => {
-    const n = norm(t);
-    if (!n) return false;
-    if (n === "ai") return false; // Hide generic ai tag from UI
-    if (categoryNorm && n === categoryNorm) return false;
-    if (seen.has(n)) return false;
-    seen.add(n);
-    return true;
-  });
-
-// Find primary category by highest tag match count
-// On tie, prefer category whose first matching tag appears earlier in tags
-const normalizedTags = tags.map(t => String(t).toLowerCase());
-const providerCtaLabel = visible_provider_url || (affiliate_url ? "Zum Anbieter" : "Zur Website");
-
-const categoryResults = CATEGORIES.map(cat => {
-  const matches = normalizedTags.filter(tag => cat.matchTags.includes(tag));
-  const matchCount = matches.length;
-  const firstMatchPos = matchCount > 0
-    ? normalizedTags.findIndex(tag => cat.matchTags.includes(tag))
-    : Infinity;
-
-  return { category: cat, matchCount, firstMatchPos };
-}).filter(r => r.matchCount > 0);
-
-// Sort by: 1) highest match count, 2) earliest first match position
-categoryResults.sort((a, b) => {
-  if (b.matchCount !== a.matchCount) {
-    return b.matchCount - a.matchCount;
-  }
-  return a.firstMatchPos - b.firstMatchPos;
-});
-
-const primaryCategory = categoryResults.length > 0 ? categoryResults[0].category : undefined;
-
-// Render Markdown to HTML
-
-// Remove the Alternativen/Alternatives section from the main markdown content so it won't appear in the article text
-const contentWithoutAlternatives = renderedContent.replace(
-  /(?:^|\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\n]*\n[\s\S]*?(?=\n#{1,3}\s|\s*$)/i,
-  ""
-).trim();
-let html = marked.parse(contentWithoutAlternatives);
-
-// Remove first H1 from markdown to avoid duplicate title
-html = String(html).replace(/<h1[^>]*>[\s\S]*?<\/h1>\s*/i, "");
-let articleHtml = ensureInlineProviderLink(
-  linkFirstParagraphMention(String(html), title, target_provider_url),
-  visible_provider_url,
-  target_provider_url
-);
-const extractedEditorialFigure = extractFirstEditorialFigure(articleHtml);
-const headingNavigation = addContentHeadingIds(extractedEditorialFigure.html);
-articleHtml = wrapFaqSection(headingNavigation.html, "FAQ aufklappen");
-const editorialFigureHtml = extractedEditorialFigure.figureHtml;
-const articleHeadings = headingNavigation.headings;
-
-// ── Alternatives helpers ───────────────────────────────────────────────────
-const stripMd = (text: string) =>
-  text
-    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
-    .replace(/\[[^\]]*]\([^)]*\)/g, "$1")
-    .replace(/[`*_>#]/g, "")
-    .replace(/(^|\s)-\s+/g, "$1")
-    .replace(/\s+/g, " ")
-    .trim();
-
-const getExcerpt = (md: string) => {
-  for (const p of md.split(/\n\s*\n/)) {
-    if (p.trim().startsWith("#")) continue;
-    const cleaned = stripMd(p);
-    if (cleaned) return cleaned;
-  }
-  return "";
-};
-
-const iconType = (cat: string | null, tgs: string[]) => {
-  const c = [cat?.toLowerCase() ?? "", ...tgs.map((t) => t.toLowerCase())].join(" ");
-  if (c.includes("design") || c.includes("ui") || c.includes("ux")) return "design";
-  if (c.includes("automation") || c.includes("workflow")) return "automation";
-  if (c.includes("ai") || c.includes("ml") || c.includes("machine")) return "ai";
-  return "generic";
-};
-
-const normalizeAltName = (value: string) =>
-  String(value ?? "")
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
-    .replace(/[`*_]/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
-
-const normalizeAltNameFuzzy = (value: string) =>
-  normalizeAltName(value)
-    .replace(/\([^)]*\)/g, " ")
-    .replace(/\b(ai|tool|app|platform)\b/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-
-const parseAltItem = (item: string) => {
-  const internalLink = item.match(/^\[([^\]]+)\]\(\/tools\/([^/)\s]+)\/?\)\s*(?::\s*(.*))?$/);
-  if (internalLink) {
-    return { kind: "internal_link" as const, name: internalLink[1], slug: internalLink[2] };
-  }
-
-  const linked = item.match(/^\[([^\]]+)\]\(([^)]+)\)\s*(?::\s*(.*))?$/);
-  if (linked) {
-    return { kind: "linked" as const, name: linked[1] };
-  }
-
-  const boldColonInside = item.match(/^\*\*([^*]+?)\s*:\s*\*\*\s*(.+)$/);
-  if (boldColonInside) {
-    return { kind: "bold" as const, name: boldColonInside[1] };
-  }
-
-  const boldWithSeparator = item.match(/^\s*\*\*([^*]+)\*\*\s*(?::|–|—|-)\s*(.+)?$/i);
-  if (boldWithSeparator) {
-    return { kind: "bold" as const, name: boldWithSeparator[1] };
-  }
-
-  const bold = item.match(/^\*\*([^*]+?)\*\*\s*:\s*(.+)$/);
-  if (bold) {
-    return { kind: "bold" as const, name: bold[1] };
-  }
-
-  const plainWithSeparator = item.match(/^\s*([^:–—-][^:–—-]{1,80})\s*(?::|–|—|-)\s*(.+)?$/);
-  if (plainWithSeparator) {
-    return { kind: "plain" as const, name: plainWithSeparator[1] };
-  }
-
-  const plain = item.match(/^([^:]+?)\s*:\s*(.+)$/);
-  if (plain) {
-    return { kind: "plain" as const, name: plain[1] };
-  }
-
-  return null;
-};
-
-// ── Extract raw list items from the "Alternatives" section ─────────────────
-const altSection = renderedContent.match(/(?:^|\r?\n)#{1,3}\s+(Alternativen|Alternatives?)\b[^\r\n]*\r?\n([\s\S]*?)(?=\r?\n#{1,3}\s|\s*$)/i);
-const rawAltItems: string[] = altSection
-  ? (altSection[2].match(/^[-*]\s+(.+)$/gm) ?? []).map((l) => l.replace(/^[-*]\s+/, "").trim())
-  : [];
-
-// ── Load all tool metadata (for matching + rendering) ──────────────────────
-const allTools = (await listActiveToolEntries()).map(({ slug: s, data: d, content: c }) => {
-  const t = String(d.title ?? s);
-  const cat = d.category ? String(d.category) : null;
-  const pm = normalizePriceModel(d.price_model);
-  const bLogo = d.brandLogo ? String(d.brandLogo) : null;
-  const pUrl = d.affiliate_url ? String(d.affiliate_url) : d.official_url ? String(d.official_url) : null;
-  const tgs = Array.isArray(d.tags) ? d.tags.map(String) : [];
-  const disabled = d.disabled === true || String(d.disabled || "").toLowerCase() === "true";
-  const desc = d.description ? String(d.description)
-    : d.summary ? String(d.summary)
-    : d.excerpt ? String(d.excerpt)
-    : d.tagline ? String(d.tagline)
-    : "";
-  const localAltLogo = resolveLocalLogo(s);
-  const faviconAltCandidates = getFaviconCandidates(pUrl, 128);
-  const faviconAltLogo = faviconAltCandidates[0] ?? null;
-  return {
-    slug: s, title: t, category: cat, price_model: pm,
-    iconUrl: bLogo || localAltLogo || faviconAltLogo,
-    iconFallbacks: bLogo || localAltLogo || !faviconAltLogo ? [] : [...faviconAltCandidates.slice(1), getAvatarFallbackDataUrl(t)],
-    tags: tgs,
-    excerpt: desc || getExcerpt(c),
-    fallbackIcon: iconType(cat, tgs),
-    disabled,
-  };
-});
-
-const enabledTools = allTools.filter((t) => !t.disabled);
-const enabledBySlug = new Map(enabledTools.map((t) => [t.slug, t]));
-const enabledByNormTitle = new Map(enabledTools.map((t) => [normalizeAltName(t.title), t]));
-const enabledByNormTitleFuzzy = new Map(enabledTools.map((t) => [normalizeAltNameFuzzy(t.title), t]));
-
-// ── Match alternatives from multiple markdown formats, preserve input order ─
-const alternatives = rawAltItems.reduce<typeof enabledTools>((acc, item) => {
-  const parsed = parseAltItem(item);
-  if (!parsed) return acc;
-
-  let tool = null;
-  if (parsed.kind === "internal_link") {
-    tool = enabledBySlug.get(parsed.slug) ?? null;
-  } else {
-    tool = enabledByNormTitle.get(normalizeAltName(parsed.name)) ?? null;
-    if (!tool) {
-      tool = enabledByNormTitleFuzzy.get(normalizeAltNameFuzzy(parsed.name)) ?? null;
-    }
-  }
-
-  if (!tool) return acc;
-  if (tool.slug === slug) return acc;
-  if (acc.some((x) => x.slug === tool.slug)) return acc;
-
-  acc.push(tool);
-  return acc;
-}, []);
-const alternativesTop = alternatives.slice(0, 3);
-
-// ── Schema.org JSON-LD ─────────────────────────────────────────────────────
-const schemaDescription = data.description
-  ? String(data.description)
-  : data.summary
-    ? String(data.summary)
-    : data.excerpt
-      ? String(data.excerpt)
-      : getExcerpt(renderedContent) || `${title} - Informationen, Features und Anwendungsfälle`;
-
-const metaDescription = schemaDescription.length > 160
-  ? `${schemaDescription.slice(0, 157).trimEnd()}...`
-  : schemaDescription;
-const mastheadOneliner = (oneliner || schemaDescription || getExcerpt(renderedContent)).trim();
-const featureList = extractFeatureList(renderedContent);
-const faqSchema = isCuratedTool
-  ? buildFaqPageSchema(extractFaqPairsFromMarkdown(renderedContent))
-  : null;
-const schemaCategory = mapToolCategoryToSchemaCategory(category, tags);
-const schemaOffer = buildOfferFromPriceModel(price_model);
-const canonicalUrl = `${SITE_URL}/tools/${slug}/`;
-const lastmodKey = `content/tools/${slug}.md`;
-const checkedDateSource =
-  data.lastReviewed ||
-  data.last_reviewed ||
-  data.lastReviewedAt ||
-  data.last_reviewed_at ||
-  data.editorial_reviewed_at ||
-  data.editorialReviewedAt ||
-  (toolQuality.tier === "A" ? contentLastmod[lastmodKey] : "");
-const checkedDate = checkedDateSource
-  ? new Intl.DateTimeFormat("de-DE", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-    }).format(new Date(String(checkedDateSource)))
-  : "";
-const generatedAtSource =
-  contentLastmod[lastmodKey] ||
-  data.generatedAt ||
-  data.generated_at ||
-  data.created_at ||
-  data.createdAt ||
-  data.date;
-const generatedAt = generatedAtSource
-  ? new Intl.DateTimeFormat("de-DE", {
-      day: "2-digit",
-      month: "long",
-      year: "numeric",
-    }).format(new Date(String(generatedAtSource)))
-  : "";
-const breadcrumbSchema = buildBreadcrumbSchema([
-  { name: "Startseite", url: `${SITE_URL}/` },
-  { name: "Tools", url: `${SITE_URL}/tools/` },
-  { name: title, url: canonicalUrl },
-]);
-
-const softwareApplicationSchema = {
-  "@context": "https://schema.org",
-  "@type": ["SoftwareApplication", "WebApplication"],
-  "name": title,
-  "description": schemaDescription.slice(0, 500),
-  "url": canonicalUrl,
-  "mainEntityOfPage": canonicalUrl,
-  "operatingSystem": "Web",
-  "applicationCategory": schemaCategory,
-  "applicationSubCategory": category || undefined,
-  "inLanguage": SITE_LANGUAGE,
-  "keywords": tags.length ? tags.join(", ") : undefined,
-  "featureList": featureList.length ? featureList : undefined,
-  "isAccessibleForFree": ["Kostenlos", "Freemium", "Open Source"].includes(String(price_model ?? "")),
-  "publisher": buildPublisherOrganization(),
-  "image": logoUrl ? toAbsoluteUrl(logoUrl) : undefined,
-  "offers": schemaOffer,
-  "about": tags.length ? tags.map((tag) => ({ "@type": "Thing", "name": tag })) : undefined,
-  ...(official_url && official_url.startsWith("http") && { "sameAs": official_url })
-};
+const {
+  data,
+  slug,
+  title,
+  category,
+  tags,
+  displayTags,
+  primaryCategory,
+  target_provider_url,
+  providerDomain,
+  providerCtaLabel,
+  vendorName,
+  logoUrl,
+  logoFallbacks,
+  monogramLetter,
+  isCuratedTool,
+  editorialVerdict,
+  editorialVerdictHeadline,
+  editorialVerdictText,
+  editorialTrustLabel,
+  guideBacklinks,
+  mentionedInCount,
+  checkedDate,
+  lastCheckedShort,
+  inIndexSinceShort,
+  generatedAt,
+  mastheadOneliner,
+  alternativesTop,
+} = sharedView;
+const price_model = sharedView.priceModel;
+const schemaDescription = sharedView.description;
 ---
 
 <BaseLayout
   title={`${title} — Utildesk`}
-  description={metaDescription}
-  robots={searchIndexDecision.robots}
-  googlebotRobots={searchIndexDecision.googlebotRobots}
+  description={sharedView.metaDescription}
+  robots={sharedView.searchIndexDecision.robots}
+  googlebotRobots={sharedView.searchIndexDecision.googlebotRobots}
 >
   <Fragment slot="head">
-    <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" type="application/json" href={`/api/tools/${slug}.json`} title={`${title} (JSON)`} />
-    <link rel="alternate" type="text/markdown" href={`/markdown/tools/${slug}.md`} title={`${title} (Markdown)`} />
-    {isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(softwareApplicationSchema)} /> : null}
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-    {faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} /> : null}
+    <link rel="canonical" href={sharedView.canonicalUrl} />
+    <link rel="alternate" type="application/json" href={sharedView.machinePaths.json} title={`${title} (JSON)`} />
+    <link rel="alternate" type="text/markdown" href={sharedView.machinePaths.markdown} title={`${title} (Markdown)`} />
+    {sharedView.isCuratedTool ? <script type="application/ld+json" set:html={JSON.stringify(sharedView.softwareApplicationSchema)} /> : null}
+    <script type="application/ld+json" set:html={JSON.stringify(sharedView.breadcrumbSchema)} />
+    {sharedView.faqSchema ? <script type="application/ld+json" set:html={JSON.stringify(sharedView.faqSchema)} /> : null}
   </Fragment>
 
   <div class="tool-akte">
@@ -609,8 +222,8 @@ const softwareApplicationSchema = {
       </aside>
     </header>
 
-    {editorialFigureHtml ? (
-      <div class="akte-feature-visual" set:html={editorialFigureHtml}></div>
+    {sharedView.editorialFigureHtml ? (
+      <div class="akte-feature-visual" set:html={sharedView.editorialFigureHtml}></div>
     ) : null}
 
     <section class="akte-verdict-card" aria-label="Verdikt der Redaktion">
@@ -645,7 +258,7 @@ const softwareApplicationSchema = {
       </div>
     </section>
 
-    <ContentJump headings={articleHeadings} locale="de" />
+    <ContentJump headings={sharedView.articleHeadings} locale="de" />
 
     {isCuratedTool ? (
       <p class="editorial-note">
@@ -673,7 +286,7 @@ const softwareApplicationSchema = {
     ) : null}
 
     {/* Keep the rendered markdown body intact so all template sections remain visible. */}
-    <div set:html={articleHtml}></div>
+    <div set:html={sharedView.articleHtml}></div>
   </div>
 </article>
 
@@ -685,7 +298,7 @@ const softwareApplicationSchema = {
   )}
 
   <!-- Verwandte Akten / Alternatives — editorial dossier card grid -->
-  {alternativesTop.length > 0 && (
+  {sharedView.alternativesTop.length > 0 && (
     <section class="akte-alts tool-akte" aria-label="Verwandte Akten">
       <div class="akte-alts-head">
         <div class="akte-alts-head-left">
@@ -697,7 +310,7 @@ const softwareApplicationSchema = {
         <a class="akte-alts-all" href="/tools/">↳ alle Akten</a>
       </div>
       <div class="akte-alts-grid">
-        {alternativesTop.map((tool, i) => {
+        {sharedView.alternativesTop.map((tool, i) => {
           const altMonogram = (tool.title || "·")
             .replace(/[^A-Za-zÄÖÜäöü]/g, "")
             .charAt(0)
