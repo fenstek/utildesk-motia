@@ -6,6 +6,7 @@ _Last updated: 2026-07-14_
 - Fixed Cloudflare Pages middleware so safe `/tools/` and `/en/tools/` search and filter parameters survive canonical redirects while tracking noise is still removed.
 - Replaced the title-only catalogue match with normalized weighted DE/EN search across names, slugs, categories, tags, and editorial descriptions; matching Ratgeber articles now appear in the same result view.
 - Added the `check:search` regression contract and verified modal submission, relevance ordering, empty results, guide matches, and mobile layout with Playwright before release.
+- Added an explicit complete-index loading state so the small server-rendered preview can never masquerade as the final result set while `/api/tools.json` is still loading.
 
 ## 2026-07-14 - Dimensions full bilingual tool-card editorial pass
 
