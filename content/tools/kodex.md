@@ -18,6 +18,10 @@ generated_at: "2026-05-18"
 
 Kodex ist ein leistungsstarker Code-Editor für iOS, der speziell für Entwickler entwickelt wurde, die auch unterwegs produktiv bleiben möchten. Mit einer benutzerfreundlichen Oberfläche und vielseitigen Funktionen ermöglicht Kodex das Schreiben, Bearbeiten und Verwalten von Quellcode direkt auf iPhone und iPad. Dank seines Freemium-Modells bietet es eine solide Basisversion mit der Option, erweiterte Features freizuschalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/kodex-editorial.webp" alt="Ein Codefluss wird mit mechanischen Details geprüft" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Kodex zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

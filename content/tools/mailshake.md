@@ -18,6 +18,10 @@ generated_at: "2026-05-18"
 
 Mailshake ist ein leistungsstarkes Tool für E-Mail-Marketing und Vertriebsautomation, das Unternehmen dabei unterstützt, ihre Outreach-Kampagnen effizienter zu gestalten. Mit Mailshake lassen sich personalisierte E-Mail-Sequenzen erstellen, automatisieren und nachverfolgen, um die Kontaktaufnahme mit potenziellen Kunden zu optimieren und den Vertriebserfolg zu steigern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mailshake-editorial.webp" alt="Mailwerkstatt für eine personalisierte Kampagne" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Mailshake ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

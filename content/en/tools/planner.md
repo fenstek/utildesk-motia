@@ -21,6 +21,10 @@ translation: full
 
 Planner is a versatile tool designed to support project planning, task management, and team collaboration. It features an intuitive interface that enables teams to efficiently structure projects, assign tasks, and track progress in real time. With a freemium pricing model, users can utilize basic features for free and access advanced capabilities if needed.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/planner-editorial.webp" alt="A team board with movable stages" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Planner, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

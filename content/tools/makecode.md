@@ -18,6 +18,10 @@ generated_at: 2026-05-18
 
 MakeCode ist eine kostenlose Programmierplattform, die speziell entwickelt wurde, um das Erlernen von Programmieren für Anfänger und Fortgeschrittene gleichermaßen zugänglich zu machen. Mit einer intuitiven blockbasierten Schnittstelle und der Möglichkeit, auch in JavaScript zu programmieren, bietet MakeCode eine flexible Umgebung für Bildung, Hobby und erste Entwicklerprojekte.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/makecode-editorial.webp" alt="Kinder bauen ein Lern- und Programmiergerät" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei MakeCode zählt weniger die Demo-Lektion als die Frage, ob Lernziel, Feedback und Pflege der Inhalte zusammenpassen. Wir würden eine konkrete Übung mit Zielgruppe, Testdurchlauf und Auswertung prüfen, bevor das Tool in einen Kurs oder ein Onboarding wandert. Entscheidend ist, ob Lernende danach klarer handeln können.

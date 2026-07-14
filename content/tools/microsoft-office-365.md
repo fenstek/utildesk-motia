@@ -18,6 +18,10 @@ generated_at: "2026-05-17"
 
 Microsoft Office 365 ist eine cloudbasierte Suite von Produktivitätsanwendungen, die speziell entwickelt wurde, um die Zusammenarbeit und Effizienz in Unternehmen, Bildungseinrichtungen und im privaten Bereich zu verbessern. Mit Tools wie Word, Excel, PowerPoint, Outlook und Teams ermöglicht Office 365 die Erstellung, Verwaltung und gemeinsame Nutzung von Dokumenten sowie die Kommunikation über verschiedene Geräte hinweg.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-office-365-editorial.webp" alt="Gemeinsame Arbeit an Dokumenten und Tabellen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Microsoft Office 365 ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

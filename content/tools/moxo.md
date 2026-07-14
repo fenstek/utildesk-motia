@@ -18,6 +18,10 @@ generated_at: "2026-05-16"
 
 Moxo ist eine umfassende Plattform, die speziell für die Verbesserung von Workflow, Zusammenarbeit und Kundenservice entwickelt wurde. Sie kombiniert moderne Automatisierungsfunktionen mit intuitiven Kommunikationswerkzeugen, um Teams und Unternehmen dabei zu unterstützen, effizienter zu arbeiten und den Kundenkontakt zu optimieren. Mit einem klaren Fokus auf Produktivität und nahtlose Integration ist Moxo eine Lösung, die sich flexibel an unterschiedliche Geschäftsanforderungen anpassen lässt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/moxo-editorial.webp" alt="Dokumente und Freigaben werden im Workflow weitergereicht" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Moxo sollte die Entscheidung an einem echten Arbeitsfall hängen: Eingaben, Ergebnis, Verantwortung und Folgekosten müssen sichtbar sein. Wir würden klein starten, den Nutzen gegen den bisherigen Ablauf vergleichen und bewusst festhalten, welche Aufgaben weiterhin menschliche Prüfung brauchen.

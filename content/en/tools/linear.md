@@ -21,6 +21,10 @@ translation: full
 
 Linear is a modern project management tool tailored for developer teams and productivity-oriented businesses. It supports teams in efficiently planning, tracking, and quickly executing tasks. With a clear focus on speed, user-friendliness, and seamless integration into developer workflows, Linear helps maintain project oversight and optimize collaboration.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/linear-editorial.webp" alt="A paper issue flow from signal to release" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Linear, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

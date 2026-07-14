@@ -18,6 +18,10 @@ generated_at: "2026-05-16"
 
 MindMeister ist ein vielseitiges Online-Tool zur Erstellung von Mindmaps, das Teams und Einzelpersonen dabei unterstützt, Gedanken zu strukturieren, Projekte zu planen und effektiv zusammenzuarbeiten. Mit einer intuitiven Benutzeroberfläche und zahlreichen Funktionen eignet sich MindMeister besonders für kreative Prozesse, Brainstorming-Sessions und die Visualisierung komplexer Ideen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/mindmeister-editorial.webp" alt="Verzweigte botanische Mindmap" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei MindMeister ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

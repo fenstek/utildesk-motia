@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 Lever ist eine umfassende Recruiting- und Applicant-Tracking-Software, die Unternehmen dabei unterstützt, den Einstellungsprozess zu optimieren und zu automatisieren. Mit einem Fokus auf Zusammenarbeit im Team und nahtlose Integration verschiedener HR-Prozesse bietet Lever eine Plattform, die den gesamten Recruiting-Zyklus von der Bewerbersuche bis zur Einstellung abdeckt.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lever-editorial.webp" alt="Kandidatengespräche in den Stationen eines Recruitingprozesses" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Lever ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

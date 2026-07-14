@@ -21,6 +21,10 @@ translation: full
 
 OpenFaaS is an open-source platform that enables developers to easily create, deploy, and manage serverless functions. With a focus on containerization and cloud integration, OpenFaaS offers a flexible environment to run microservices and functions independently of infrastructure. The platform supports various programming languages and can be used both locally and in the cloud.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/openfaas-editorial.webp" alt="A modular factory of event-driven functions" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With OpenFaaS, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
