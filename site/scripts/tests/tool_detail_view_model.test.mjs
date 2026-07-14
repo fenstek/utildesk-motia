@@ -18,6 +18,8 @@ const entry = {
 
 Example supports a bounded test workflow.
 
+Compare [Inactive](/tools/inactive/) before rollout.
+
 ## Features
 
 - Runs a controlled workflow
@@ -53,6 +55,8 @@ test("buildToolDetailViewModel produces the shared DE delivery contract", () => 
   assert.equal(view.alternativesTop[0].slug, "other");
   assert.equal(view.articleHeadings.some((heading) => heading.label === "Features"), true);
   assert.match(view.articleHtml, /inline-provider-link/);
+  assert.equal(view.articleHtml.includes('/tools/inactive/'), false);
+  assert.match(view.articleHtml, /Compare Inactive before rollout/);
   assert.equal(view.articleHtml.includes("<h1"), false);
   assert.equal(view.editorialFigureHtml, "");
   assert.equal(view.faqSchema["@type"], "FAQPage");

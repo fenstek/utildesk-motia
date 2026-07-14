@@ -21,6 +21,8 @@
     "check:search": "node ../scripts/check_search_query_contract.mjs",
     "check:tool-public-state": "node scripts/check_tool_public_state.mjs",
     "capture:tool-runtime-baseline": "node scripts/capture_tool_runtime_baseline.mjs",
+    "check:tool-runtime-parity": "node scripts/check_tool_runtime_parity.mjs",
+    "audit:tool-runtime-resources": "node scripts/audit_tool_runtime_resources.mjs",
     "test:tool-runtime": "node --test scripts/tests/*.test.mjs",
     "fetch:logos": "node ../scripts/fetch_simpleicons_logos.mjs"
   },
