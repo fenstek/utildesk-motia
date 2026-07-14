@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 DuckDB is an embedded relational SQL database for analytical work. A script, notebook, or application can query CSV, Parquet, and JSON files as well as data frames without starting a separate database server. That makes DuckDB a practical fit for local exploration, ETL steps, tests, and reproducible data products. The important boundary is equally clear: a normal DuckDB file is not a general-purpose multi-user transaction server. The access model, file paths, and write concurrency must be settled before production use.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/duckdb-editorial.webp" alt="A data analyst works in a compact local data laboratory" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is DuckDB for?
 
 DuckDB suits data engineers, analysts, and developers who want to run SQL close to their data. A Python script can read a Parquet file, aggregate it, and write Parquet again; a notebook can query Pandas, Polars, or Arrow objects. A CLI-based validation or export job also benefits from keeping SQL, data, and runtime in one small process.

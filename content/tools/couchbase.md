@@ -20,6 +20,10 @@ generated_at: "2026-05-16"
 
 Couchbase ist eine verteilte NoSQL-Datenbankplattform für Anwendungen, deren Daten sich als JSON-Dokumente entwickeln und trotzdem schnell abfragen lassen müssen. In der Praxis geht es weniger um ein pauschales „schneller als SQL“ als um die Entscheidung, ob ein dokumentorientiertes Modell, Key-Value-Zugriff und horizontale Skalierung zum konkreten Workload passen. Capella ist die gemanagte Cloud-Variante; Couchbase Server kann selbst betrieben werden. Mobile- und Edge-Szenarien kommen über App Services und Sync Gateway hinzu.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/couchbase-editorial.webp" alt="Ein Team überwacht eine verteilte Datenplattform in einer mehrteiligen Werkstatt" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Couchbase geeignet?
 
 Couchbase passt zu Produkt- und Plattformteams, die katalogartige Inhalte, Profile, Sitzungen oder andere veränderliche Anwendungsdaten mit niedriger Latenz bereitstellen. Ein typischer Kandidat ist eine Anwendung, in der einzelne Dokumente häufig gelesen und als Ganzes aktualisiert werden, während die Struktur zwischen Dokumenttypen variieren darf. Auch ein Team mit Mobile- oder IoT-Clients kann Couchbase prüfen, wenn Offline-Nutzung und Synchronisation Teil des Produkts sind.

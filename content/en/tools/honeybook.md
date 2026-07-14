@@ -21,6 +21,10 @@ generated_at: "2026-05-17"
 
 HoneyBook is a clientflow platform for independent professionals and small service businesses. It can take a prospect from an inquiry through a form, appointment, proposal, contract, invoice, and payment in one shared process. That is useful when client information and next steps are currently scattered across email, calendars, documents, and payment tools. HoneyBook is not a full ERP, however, and it does not remove the need for sound bookkeeping, legal review, or a local privacy assessment.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/honeybook-editorial.webp" alt="Creative professionals plan a client project together in a warm studio" loading="lazy" decoding="async" />
+</figure>
+
 ## What HoneyBook covers in practice
 
 The central object is a client-facing Smart File. Depending on the workflow, it can combine service details, contracts, invoices, and payment pages before the file is shared. A client portal keeps approved files, messages, and payments together for that client. Lead Forms capture inquiries, while the Scheduler exposes available appointment slots. A freelancer can therefore see not only who made contact, but also which action is next.

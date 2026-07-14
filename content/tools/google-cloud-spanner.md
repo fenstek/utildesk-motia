@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Google Cloud Spanner ist eine verwaltete relationale Datenbank für transaktionale Anwendungen, die über Ausfallzonen oder Regionen verfügbar bleiben müssen. Sie verbindet SQL, ACID-Transaktionen und starke Konsistenz mit verteilter Replikation. Das ist kein einfacher Ersatz für jede PostgreSQL-Instanz: Datenmodell, Schlüssel, Latenz, Region, Recovery und Kosten müssen gemeinsam zur Anwendung passen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-spanner-editorial.webp" alt="Ingenieure koordinieren verteilte Datenknoten in einer nächtlichen Infrastruktur" loading="lazy" decoding="async" />
+</figure>
+
 ## Was ist Spanner und für wen?
 
 Spanner richtet sich an Plattform- und Produktteams, die eine relationale Datenbank mit regionaler, dual-regionaler oder multiregionaler Topologie betreiben wollen, ohne Datenbankserver selbst zu patchen. Globale Kontroll- und Kontodaten, transaktionale SaaS-Systeme und Anwendungen mit klaren Verfügbarkeits- oder Datenresidenzanforderungen sind plausible Kandidaten. Eine kleine regionale Anwendung ohne verteilte Anforderungen ist oft mit PostgreSQL einfacher und günstiger.

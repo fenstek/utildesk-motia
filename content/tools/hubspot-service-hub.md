@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 HubSpot Service Hub bündelt Kundenservice im HubSpot-CRM: Teams bearbeiten Tickets und Gespräche, geben Fälle weiter und dokumentieren den Kontaktverlauf an einem Ort. Der wichtige Vorbehalt: Die sichtbare Produktfamilie reicht von kostenlosen Basisfunktionen bis zu kostenpflichtigem Help Desk, Automatisierung, Wissensbasis, Kundenportal und KI. Ob der Dienst für ein reales Supportteam passt, entscheidet deshalb die benötigte Funktionstiefe und nicht die Demo.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-service-hub-editorial.webp" alt="Ein Serviceteam sortiert Kundenanfragen und verteilt sie an passende Fachleute" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Service Hub gedacht?
 
 Service Hub passt zu Unternehmen, die Support eng mit Kontakten, Firmen und Vertriebsinformationen verbinden wollen. Ein kleines Team kann mit kostenlosen Tools und einem gemeinsamen Eingang beginnen; wachsende Supportteams brauchen meist klare Ticketpipelines, Zuständigkeiten, SLAs und Auswertungen. Wer ausschließlich eine sehr schlanke Mailbox oder ein streng spezialisiertes Callcenter-System sucht, bezahlt dagegen schnell für CRM-Umfang, den es nicht nutzt.

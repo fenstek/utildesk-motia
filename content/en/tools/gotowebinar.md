@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 GoToWebinar is a hosted platform for scheduled online events: a team creates a registration page, invites attendees, runs a presentation with interaction, and reviews attendance and acquisition sources afterwards. That fits marketing webinars, customer education, and internal town halls, but it is neither a CRM nor a complete learning platform. The right decision therefore depends on whether a repeatable event process matters more than unrestricted conversation.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/gotowebinar-editorial.webp" alt="A production team supports a presenter during a professional webinar" loading="lazy" decoding="async" />
+</figure>
+
 ## What GoToWebinar does in the process
 
 Teams can plan one-off events, series, and on-demand experiences. Registration forms can collect information and quiz answers; templates, brand colours, logos, and images reduce the work for recurring formats. Decide in advance which fields are genuinely needed for attendance, consent, and follow-up. A longer form does not automatically produce better leads.

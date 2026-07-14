@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 HubSpot Service Hub brings customer support into HubSpot CRM: teams manage tickets and conversations, hand off cases, and retain contact context in one workspace. The important boundary is commercial as well as technical: the product family ranges from free basics to paid help desk, automation, knowledge-base, customer-portal, and AI capabilities. Fit is therefore determined by the workflow and plan requirements, not by a polished demo.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-service-hub-editorial.webp" alt="A service team sorts customer requests and routes them to the right specialists" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is Service Hub for?
 
 Service Hub is suited to organizations that want support work connected to contacts, companies, and sales context. A small team can begin with free tools and a shared entry point; a growing operation will usually need defined ticket pipelines, ownership, SLAs, routing, and reporting. A team that only needs a lightweight shared mailbox, or a specialist contact center with strict telephony controls, may pay for CRM breadth it does not use.

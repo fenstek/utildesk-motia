@@ -1,6 +1,12 @@
 # Recent Changes — utildesk-motia
 _Last updated: 2026-07-14_
 
+## 2026-07-14 - OptiPlex editorial-50 and illustration-36 release
+
+- Integrated five isolated OptiPlex editorial branches with 50 fully rewritten DE/EN tool cards under batch `2026-07-14-optiplex-editorial-50`; all cards retain verified alternatives, FAQs, official-source notes, and manual editorial metadata.
+- Added 20 independent Codex-subscription illustrations from the OptiPlex artwork branch and completed 16 further images required by the editorial release guard, for 36 new DE/EN card illustrations in total.
+- Preserved the run as recovery bundles under `C:\projects\private\utildesk-optiplex-runs\20260714-editorial50-images20` and recorded the combined release manifest in `docs/04_operations/illustration_batches/2026-07-14-editorial50-illustrations36.json`.
+
 ## 2026-07-14 - Removed unsafe generic Deepfake entry
 
 - Moved Sheet row 193 from `DONE` to `BLACKLIST` and cleared the guessed `deepfake.com` official URL after manual verification showed that the destination is an adult creator platform, not a concrete product tool.

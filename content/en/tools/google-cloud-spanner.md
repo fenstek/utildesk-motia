@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 Google Cloud Spanner is a managed relational database for transactional applications that must remain available across failure domains or regions. It combines SQL, ACID transactions, and strong consistency with distributed replication. That is not a simple replacement for every PostgreSQL instance: schema, keys, latency, placement, recovery, and cost have to fit the application together.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-spanner-editorial.webp" alt="Engineers coordinate distributed data nodes across a nighttime infrastructure" loading="lazy" decoding="async" />
+</figure>
+
 ## What Spanner is for
 
 Spanner is aimed at product and platform teams that want regional, dual-region, or multi-region database topologies without patching database servers themselves. Global control-plane data, transactional SaaS systems, and applications with explicit availability or data-location requirements are plausible candidates. A small regional application without distributed requirements is often simpler and cheaper on PostgreSQL.

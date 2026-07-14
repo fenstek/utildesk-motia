@@ -25,6 +25,10 @@ updated_at: 2026-07-14
 
 Google Vertex AI is the former name for Google's managed machine-learning and generative-AI platform. In 2026, core functions are being renamed under Gemini Enterprise Agent Platform: Vertex AI Studio becomes Agent Studio, Model Garden is presented within the new platform, and API and SDK paths are changing as well. This is not one Gemini product or a finished chatbot. It suits teams that want to operate models, data, evaluation, and inference in Google Cloud; a single text call may not justify that much cloud machinery.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-vertex-ai-editorial.webp" alt="A research team evaluates several AI models in a laboratory" loading="lazy" decoding="async" />
+</figure>
+
 ## What it brings together
 
 Depending on the project, the platform combines a model catalogue and managed model APIs, prompt and studio tooling, embeddings, retrieval, agent runtime, conventional training jobs, a model registry, and online or batch inference. Exact availability depends on model, region, and release stage. A Model Garden entry is therefore not a production approval: review licensing, input formats, quotas, lifecycle, and support before selecting a model.

@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Dubsado ist eine cloudbasierte Business-Management-Plattform für Freelancer, Agenturen und kleine Dienstleistungsunternehmen. Sie verbindet Lead-Erfassung, Formulare, Angebote, Verträge, Rechnungen, Zahlungen, Client-Portale und Terminbuchung in einem kundenorientierten Ablauf. Die wichtige Grenze: Dubsado ersetzt kein vollwertiges internes Projekt- oder Ressourcenmanagement. Sein Schwerpunkt liegt auf dem Weg vom ersten Kontakt bis zum Abschluss eines Kundenprojekts.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/dubsado-editorial.webp" alt="Ein Kreativteam organisiert Kundenprojekte, Unterlagen und Übergaben an einem Arbeitstisch" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Dubsado geeignet?
 
 Dubsado passt zu Unternehmen, die wiederkehrende Abläufe mit einzelnen Kunden standardisieren wollen: etwa Kennenlerngespräch, Angebot, Vertrag, Anzahlung, Termin, Lieferung und Abschluss. Besonders sinnvoll ist es, wenn dieselben Informationen mehrfach abgefragt werden und Kunden selbst Formulare ausfüllen, Termine buchen oder Rechnungen bezahlen sollen.

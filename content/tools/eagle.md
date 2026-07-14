@@ -20,6 +20,10 @@ updated_at: 2026-07-14
 
 Eagle ist eine Desktop-Anwendung, die Design- und Recherchematerial in einer durchsuchbaren Library sammelt. Bilder, Screenshots, Videos, Audiodateien, Fonts, Webseiten und andere Dateien lassen sich importieren, taggen, in Ordnern oder Smart Folders ordnen und direkt in der Bibliothek sichten. Der wichtige Rahmen: Eagle ist kein webbasiertes Team-DAM mit eigener Cloud, zentralen Freigabeprozessen oder automatischer Rechteprüfung. Es ist vor allem ein lokaler Arbeitsraum für Einzelpersonen und kleine Teams, die ihre Ablage bewusst betreiben.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/eagle-editorial.webp" alt="Zwei Kreative sichten und ordnen visuelle Referenzen in einem Archivraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Was Eagle im Arbeitsalltag leistet
 
 Der typische Anwendungsfall ist nicht die finale Bildbearbeitung, sondern das Auffinden und Wiederverwenden von Material. Eine Designerin sammelt beispielsweise Referenzen über die Browser-Erweiterung, legt sie in einer Library ab, ergänzt Quelle und Tags und baut daraus später ein Moodboard. Ein Video-Team kann Clips und Sounds vorsortieren, ein Marketing-Team Logos und Kampagnenvarianten mit Notizen versehen. Eagle kopiert importierte Inhalte in seine Library; deshalb muss der Speicherbedarf von Anfang an in die Planung.

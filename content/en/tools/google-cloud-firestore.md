@@ -26,6 +26,10 @@ updated_at: 2026-07-14
 
 Google Cloud Firestore is a managed, document-oriented NoSQL database for web, mobile, and server applications. It is a good fit for products that read, update, and synchronize documents with connected clients; it is not a relational model or a substitute for access and cost design. Firestore sits in both the Firebase and Google Cloud ecosystems, with Native mode supporting the usual document and realtime workflow.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-cloud-firestore-editorial.webp" alt="A mobile neighborhood service synchronizes information across several locations" loading="lazy" decoding="async" />
+</figure>
+
 ## What Firestore is for
 
 Product teams commonly use Firestore for user profiles, project and task records, chat or collaboration features, and mobile apps that may lose connectivity. Data is organized into collections and documents, which can contain nested values and subcollections. That flexibility helps a focused product area move quickly, but the data model must reflect the queries the product will need later. Highly relational domains, many joins, or ad-hoc SQL reporting are usually better starting points for a relational service.

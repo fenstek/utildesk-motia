@@ -22,6 +22,10 @@ updated_at: 2026-07-14
 
 Google Bigtable is a managed, sparse key-value store for workloads with very large row counts, high throughput, and low latency. Typical candidates include time series, device and telemetry data, events, and other datasets read through a known key or key range. Bigtable is not a relational database with joins: the data model, row keys, and expected reads must fit together before production.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/google-bigtable-editorial.webp" alt="A team plans large data series across an expansive technical table" loading="lazy" decoding="async" />
+</figure>
+
 ## What Bigtable is for
 
 Bigtable is aimed at platform, data, and application teams that need to store large volumes of individual key-value records in Google Cloud and process them through client libraries, APIs, or suitable analytics paths. Tables are sparse; data is organized into rows, column families, and versioned cells. A service that depends on joins, frequent multi-row transactional aggregates, or a small relational workload will usually need a different abstraction.

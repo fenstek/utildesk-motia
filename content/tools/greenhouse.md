@@ -20,6 +20,10 @@ generated_at: "2026-05-17"
 
 Greenhouse ist eine cloudbasierte Recruiting-Plattform, die Bewerbungen, Interviews, Entscheidungen und den Übergang ins Onboarding in einem gemeinsamen Prozess bündelt. Der eigentliche Wert liegt nicht in einer automatisch besseren Auswahl, sondern in nachvollziehbaren Zuständigkeiten: Wer prüft eine Bewerbung, nach welchen Kriterien wird interviewt, wann wird Feedback sichtbar und wer entscheidet? Für Teams mit regelmäßigem Hiring und mehreren Beteiligten ist das ein sinnvoller Rahmen; für gelegentliche Einzelbesetzungen kann die Einführung mehr Prozessarbeit als Nutzen erzeugen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/greenhouse-editorial.webp" alt="Bewerbende und Recruiting-Teams begegnen sich in einem offenen begrünten Auswahlraum" loading="lazy" decoding="async" />
+</figure>
+
 ## Für wen ist Greenhouse gedacht?
 
 Greenhouse richtet sich vor allem an Recruiting- und HR-Teams, die mehrere offene Stellen, Hiring Manager und Interviewer koordinieren. Die Plattform deckt nach Anbieterangaben den Weg von Sourcing und Bewerbung bis Interview, Angebot und Onboarding ab. Das macht sie besonders interessant für Organisationen, die einen einheitlichen Prozess über Abteilungen oder Regionen hinweg brauchen. Ein kleines Unternehmen mit wenigen Einstellungen pro Jahr sollte zuerst prüfen, ob ein schlankeres ATS denselben Kontrollbedarf mit weniger Administration abdeckt.
