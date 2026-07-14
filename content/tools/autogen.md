@@ -43,6 +43,10 @@ AutoGen gehoert zuerst in Testumgebungen mit kleinen Aufgaben. Ohne Observabilit
 
 Als naheliegende Vergleichspunkte im Utildesk-Katalog lohnen sich [CrewAI](/tools/crew-ai/), [LangGraph](/tools/langgraph/), [OpenHands](/tools/openhands/), [OpenClaw](/tools/openclaw/). Diese Links helfen, AutoGen nicht isoliert zu bewerten, sondern im passenden Cluster aus Alternativen, Risiken und Workflow-Rollen einzuordnen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/autogen-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von AutoGen" loading="lazy" decoding="async" />
+</figure>
+
 ## FAQ
 
 **Wofuer sollte man AutoGen zuerst testen?**

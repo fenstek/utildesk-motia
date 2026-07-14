@@ -18,6 +18,10 @@ generated_at: 2026-05-11
 
 DataRobot ist eine führende KI-Plattform, die Unternehmen dabei unterstützt, maschinelles Lernen und KI-Modelle effizient zu erstellen, zu implementieren und zu verwalten. Die Plattform automatisiert viele Schritte des Data-Science-Prozesses, sodass auch Nutzer ohne tiefgehende Programmierkenntnisse von den Vorteilen künstlicher Intelligenz profitieren können. DataRobot eignet sich besonders für datengetriebene Unternehmen, die schnelle und skalierbare KI-Lösungen suchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/datarobot-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von DataRobot" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei DataRobot ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

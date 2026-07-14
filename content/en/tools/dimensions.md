@@ -2,125 +2,99 @@
 slug: dimensions
 title: Dimensions
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Plan-based
+editorial_batch: "2026-07-14-full-tool-card-editorial"
+category: AI Research
+price_model: Je nach Plan
 tags:
   - research
   - publications
   - analytics
-official_url: 'https://www.dimensions.ai/'
+official_url: "https://www.dimensions.ai/"
+description: "Dimensions links publications, grants, patents and other research data for discovery, context analysis and repeatable bibliometric workflows."
 popularity: 0
+tier: C
 source_language: de
 translation: full
+generated_at: 2026-05-15
+updated_at: 2026-07-14
 ---
 # Dimensions
 
-Dimensions is a powerful platform for scientific research and analysis that provides access to extensive databases of research articles, publications, and citations. The application supports researchers, institutions, and companies in finding, analyzing, and utilizing relevant scientific information efficiently. It combines traditional bibliometric data with modern analysis tools, offering a comprehensive overview of global research activities.
+Dimensions is a linked research information platform for teams that need to examine literature together with grants, patents, datasets, clinical trials and policy documents. Its practical role is research discovery and context analysis; it is not a substitute for methodological appraisal of a study or for an institution’s research information system. The free version is intended for personal, non-commercial use, while Dimensions Analytics and its data products provide broader access under a product and licensing arrangement.
 
 ## Who is Dimensions for?
 
-Dimensions is primarily aimed at scientists, research institutions, libraries, and companies that require informed insights into scientific publications and research developments. Universities and funding organizations also benefit from evaluating research services and tracking trends in various fields. Analysts and decision-makers in science policy also benefit from valuable data to support strategic decisions.
+Dimensions fits researchers, universities, libraries, funders, publishers, corporate R&D and life-science teams. It is most relevant when the question goes beyond “find papers”: Which funders support a topic, which patents or trials connect to a publication, and how is a research landscape changing? A lightweight search service may be better for one-off source discovery. Recurring landscape analysis, research evaluation and funding monitoring need explicit criteria, reproducible searches and the right access level.
 
-## Typical Use Cases
+## What data and components are included?
 
-- **Focused rollout:** Dimensions is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around research, publications, analytics.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Dimensions can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
-
-## What really matters in daily use
-
-In day-to-day work, Dimensions is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
-
-Dimensions is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+Depending on access, Dimensions links publications and citations with datasets, grants, patents, clinical trials and policy documents. The platform provides full-text and title/abstract search, filters and analytical views; additional products cover workflows such as reviewer finding, landscape discovery and reporting. Metadata can be exported for analysis and reference workflows. Links between records add context, but they do not prove that items are equivalent or causally related: teams still need to check records, affiliations, citation meaning and source coverage.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/dimensions-editorial.webp" alt="Illustration for Dimensions: research archive with citation threads and a bibliometric compass" loading="lazy" decoding="async" />
+  <img src="/images/tools/dimensions-editorial.webp" alt="Research archive with connected citations and a bibliometric compass" loading="lazy" decoding="async" />
 </figure>
 
-## Key Features
+## A practical research workflow
 
-- Extensive database of millions of scientific publications, patents, clinical studies, and funding information
-- Intelligent search and filtering functions for targeted research of research content
-- Analysis and visualization tools for evaluating citations, authors, and institutions
-- Connection of research data with funding and impact metrics
-- API access to integrate data into own applications and workflows
-- Collaboration functions for teams to jointly utilize research results
-- Regular updates and expansions of the database to reflect current research findings
+1. Define the question, population, time range and document types before searching. A broad keyword is not a review protocol.
+2. Search full text or title/abstract, then apply discipline, organization, funder and date filters. Save the query logic.
+3. Open important records in context: citing and cited work, related grants, patents, clinical trials and datasets.
+4. Export only the metadata needed for the next step. Record the date, query, filters, licence and manual duplicate checks.
+5. Have a second person sample-check results against original publications and primary sources before producing rankings, funding decisions or public claims.
 
-## Advantages and Disadvantages
+## Integration and operations
 
-### Advantages
+The web application is enough for individual discovery. Institutional access can use options such as IP allowlisting, proxy access and single sign-on, according to the provider’s access model. For recurring pipelines, the Analytics API, CRIS API and, where contracted, Dimensions data on Google BigQuery can move data into existing systems. These are not automatically included with a free account. Production use therefore needs an API owner, secret management, quota and cost monitoring, an export convention and a plan for schema or version changes. The DSL release notes show that fields can evolve or be deprecated.
 
-- Comprehensive and diverse data sources in one platform
-- User-friendly interface with powerful search and analysis functions
-- Combination of bibliometric data with funding and impact information
-- Supports informed decisions in research and development
-- Flexible access models according to need and user group
+## Evaluation and quality control
 
-### Disadvantages
+Do not judge Dimensions by hit count. Build a test set of known publications, grants and organizations before rollout. Measure relevant-result precision, the share of records checked, time to a defensible answer and query reproducibility. Citation and attention indicators are signals of visibility, not direct measures of research quality. Systematic reviews, patent decisions and funding assessments require domain rules, primary sources and known coverage gaps to be documented separately.
 
-- Pricing structure can vary according to scope and user count, and is not always transparent
-- For beginners, the variety of functions can initially seem complex
-- Some advanced features are only available in higher-priced plans
-- Access to certain data areas can be limited, depending on the chosen plan
+## Security, privacy and governance
 
-## Workflow Fit
+Do not use the platform as a repository for confidential grant applications, unpublished manuscripts or personal research notes until the contract and data flow have been reviewed. The provider’s privacy policy describes account, usage and publicly available research information, security measures and retention, and notes US-based business and infrastructure components plus international transfers. Organizations should clarify SSO, roles, administrator access, export rights, DPA/contract terms and deletion procedures. API and data licences also determine whether outputs must remain internal and what attribution or redistribution is permitted.
 
-Dimensions fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
+## Pricing and total cost
 
-If Dimensions becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
-
-## Privacy & Data
-
-Before adopting Dimensions, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Dimensions, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Dimensions before the data path is understood.
+The free Dimensions access is for personal, non-commercial use and is narrower than Analytics in content, export, search and integrations. Dimensions Analytics, APIs, BigQuery data, modules and custom implementations are offered according to organizational needs; the provider directs commercial users to a demo or quote. Budget for more than seats: include SSO and IT operations, API engineering, BigQuery or export charges, data maintenance and subject-matter quality control. A useful quote request specifies document types, queries, user roles and how results may be reused.
 
 ## Editorial Assessment
 
-Dimensions is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+Dimensions is recommended for research and innovation teams that repeatedly need context beyond publications and are willing to document queries, metrics and source checks. Its value appears when linked research data improves a concrete decision, such as funding monitoring, landscape analysis or a traceable portfolio review. For occasional searching, a small personal literature project or an openly oriented API workflow, Semantic Scholar, Lens.org or Google Scholar may be a better first choice. Dimensions earns its place when the additional context and institutional workflow justify the licence and verification effort.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Dimensions genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+## Alternatives
 
-## Pricing & Costs
-
-The costs for Dimensions vary according to the provider, user count, and desired functionality. There are different licensing models, ranging from individual access to institutional licenses. Some basic functions can be used for free or in limited scope, while expanded analysis and API functions are usually chargeable. For detailed pricing information, it is recommended to contact the provider directly or request an individual quote.
-
-## Alternatives to Dimensions
-
-- **Scopus** - A comprehensive database for scientific literature and citation analysis with a focus on international journals
-- **Web of Science** - Offers comprehensive bibliometric data and analysis tools for research and publications
-- **PubMed** - Specialized for biomedical literature, with free access to many articles and studies
-- **Lens.org** - Free platform for patents and scientific research with extensive search and analysis functions
-- **Google Scholar** - Widely used search engine for scientific literature with easy access, but limited analysis functions
+- [Semantic Scholar](/en/tools/semantic-scholar/): A free, AI-supported literature search for fast paper discovery and citation context without the full Dimensions data graph.
+- [Lens.org](/en/tools/lens-org/): A good fit when scholarly publications and patents need to be searched together for intellectual-property research.
+- [Scopus](/en/tools/scopus/): A commercial bibliometric database for institutional evaluation, citation analysis and standardized reporting.
+- [Clarivate Analytics (Web of Science)](/en/tools/clarivate-analytics/): Relevant for organizations already using Web of Science for established analysis and evaluation workflows.
+- [Google Scholar](/en/tools/google-scholar/): A low-friction, broad literature search for individuals, with less controlled filtering and bibliometric workflow support.
 
 ## FAQ
 
-**1. What is Dimensions and what is it used for?**
-Dimensions is a platform for researching and analyzing scientific publications and research data. It is used to find, evaluate, and recognize research findings.
+**Is Dimensions free to use?**
 
-**2. Is Dimensions subscription-based?**
-Depending on the application and desired functionality, Dimensions can be subscription-based. There are different licensing models, some of which offer free basic functions.
+The free version is intended for personal, non-commercial use and focuses on publications, citations and connected context data. Institutional or commercial Analytics, API and data access follows different conditions.
 
-**3. What kind of data does Dimensions offer?**
-The platform contains data on scientific articles, patents, clinical studies, funding, and citations from various fields.
+**What is the difference between Dimensions Free and Dimensions Analytics?**
 
-**4. Can I use Dimensions as an individual?**
-Yes, there are options for individual users, but also for organizations and institutions. The exact conditions depend on the provider.
+Analytics expands the content, filters, exports, analytical views and institutional access options. Grants, patents, clinical trials, policy documents and API or BigQuery access depend on the product and contract.
 
-**5. How up-to-date are the data in Dimensions?**
-The database is regularly updated to reflect current research findings and funding information.
+**Can Dimensions replace Scopus or Web of Science?**
 
-**6. Does Dimensions have an API?**
-Yes, Dimensions offers an API that allows data to be integrated into own applications and automated analysis to be performed.
+Not automatically. Coverage, data models, metrics and licence terms differ. Run a controlled test with known records and compare the result with the evaluation standard used by your institution.
 
-**7. What advantages does Dimensions have compared to other research platforms?**
-Dimensions combines bibliometric data with funding information and impact metrics, allowing for a more comprehensive analysis of research findings.
+**Can I put Dimensions data into my own application?**
 
-**8. How can I get more information about the prices?**
-The prices vary according to user count and functionality. For detailed information, it is recommended to contact the provider directly.
+Only if the specific API or data agreement permits it. Check allowed use, rate limits, attribution, storage and redistribution before implementation; the free Metrics API access is explicitly tied to non-commercial conditions.
+
+**How reliable are citation and attention metrics?**
+
+They help analyze visibility and research connections, but do not by themselves measure quality, relevance or societal value. Combine them with subject-matter review and transparent criteria.
+
+**What should a team avoid entering without review?**
+
+Confidential applications, unpublished results and personal working notes should stay out until data flow, contract, roles and deletion are clear. Public metadata still comes with licence and usage rules.

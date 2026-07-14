@@ -19,6 +19,10 @@ generated_at: "2026-05-13"
 
 Phrase ist eine moderne KI-gestützte Plattform, die speziell für die Übersetzungs- und Lokalisierungsbranche entwickelt wurde. Sie ermöglicht es Unternehmen, ihre Inhalte effizient zu verwalten und in mehreren Sprachen zu veröffentlichen. Durch den Einsatz von KI-Technologien unterstützt Phrase eine schnellere, genauere und kosteneffektivere Übersetzung von Texten und erleichtert die Zusammenarbeit zwischen Entwicklern, Übersetzern und Projektmanagern.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/phrase-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Phrase" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Phrase liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

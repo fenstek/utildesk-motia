@@ -15,7 +15,7 @@ category: Produktivität
 price_model: Abonnement
 tags: [education, language, learning, mobile]
 official_url: "https://www.babbel.com/"
-popularity: 0
+popularity: 74
 tier: D
 generated_at: 2026-05-27
 ---
@@ -28,6 +28,10 @@ Babbel ist eine abonnementbasierte Sprachlernplattform mit kurzen, nach Niveau u
 Beim Einstieg fragt Babbel nach Sprache, Ziel und Niveau; ein Einstufungstest kann den Startpunkt eingrenzen. Lektionen dauern typischerweise zehn bis fünfzehn Minuten und führen durch thematische Einheiten mit Wiederholung. Spaced Repetition plant Rückblicke auf Wörter und Strukturen, statt alles einmal abzuhaken.
 
 Inhalte werden laut Anbieter von Linguistinnen, Linguisten und Didaktik-Teams erstellt. Das ist ein Vorteil gegenüber einer reinen Vokabelsammlung, garantiert aber keine passende Lösung für jede Zielgruppe oder Varietät.
+
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/babbel-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Babbel" loading="lazy" decoding="async" />
+</figure>
 
 ## Sprechen wirklich üben
 

@@ -19,6 +19,10 @@ generated_at: 2026-05-21
 
 HubSpot CRM ist eine vielseitige Plattform zur Verwaltung von Kundenbeziehungen, die speziell darauf ausgelegt ist, Vertriebs-, Marketing- und Kundenserviceprozesse zu optimieren. Mit einer benutzerfreundlichen Oberfläche und einer Vielzahl von Automatisierungsfunktionen unterstützt HubSpot Unternehmen dabei, ihre Workflows effizienter zu gestalten und Kundenbeziehungen nachhaltig zu stärken – vom ersten Kontakt bis zum Abschluss.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/hubspot-crm-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von HubSpot CRM" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei HubSpot CRM ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

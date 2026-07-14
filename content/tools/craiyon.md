@@ -19,6 +19,10 @@ generated_at: "2026-05-11"
 
 Craiyon ist ein KI-basierter Bildgenerator, der es ermöglicht, aus einfachen Texteingaben einzigartige Bilder zu erstellen. Die Anwendung nutzt künstliche Intelligenz, um kreative und oft überraschende visuelle Ergebnisse zu erzeugen. Craiyon ist besonders bekannt für seine Zugänglichkeit und die Möglichkeit, kostenlos erste Bilder zu generieren, was es zu einem beliebten Tool für kreative Experimente macht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/craiyon-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Craiyon" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Craiyon liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

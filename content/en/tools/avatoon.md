@@ -23,6 +23,10 @@ The workflow is straightforward: upload a photo, select an order and extras, rec
 
 The result can work well for a profile image, team page, speaker card or recurring social-media illustration. It is not a tool for a campaign that needs hundreds of variations this afternoon.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avatoon-editorial.webp" alt="Editorial illustration of Avatoon in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Who should choose it
 
 Avatoon suits small businesses and individuals who want a consistent, friendly illustrated identity instead of conventional headshots. A team page can look more coherent than a mixture of private phone photos when style, background and approval are agreed first.

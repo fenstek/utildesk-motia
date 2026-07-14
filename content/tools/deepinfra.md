@@ -18,6 +18,10 @@ generated_at: 2026-05-26
 
 DeepInfra ist eine Plattform für das Ausführen und Einbinden von KI-Modellen über Cloud-Infrastruktur und APIs. Interessant ist sie vor allem für Teams, die Modelle nicht selbst hosten wollen, aber trotzdem flexible Inferenz, verschiedene Modelloptionen und planbare technische Integration brauchen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/deepinfra-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von DeepInfra" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei DeepInfra entscheidet die Integrationsqualität: Datenflüsse, Berechtigungen, Fehlerfälle und Wartung müssen vor dem produktiven Einsatz sichtbar sein. Wir würden zuerst einen kleinen End-to-End-Prozess bauen, ihn absichtlich scheitern lassen und prüfen, ob Logs, Zuständigkeiten und Rückwege verständlich bleiben.

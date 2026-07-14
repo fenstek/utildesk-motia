@@ -18,6 +18,10 @@ generated_at: 2026-05-17
 
 Brevo ist eine vielseitige Marketingplattform, die speziell auf E-Mail-Marketing, CRM und Automatisierung ausgerichtet ist. Mit einem breiten Funktionsumfang unterstützt Brevo Unternehmen dabei, ihre Kundenbeziehungen zu stärken, Marketingkampagnen effektiv zu gestalten und Abläufe zu automatisieren – und das in einem benutzerfreundlichen Umfeld. Die Plattform bietet ein Freemium-Preismodell, wodurch Einsteiger die Grundfunktionen kostenlos nutzen können, während fortgeschrittene Nutzer von erweiterten Features profitieren.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/brevo-editorial.webp" alt="Leuchtende Postwerkstatt mit segmentierten Routen für Umschläge" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Brevo ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

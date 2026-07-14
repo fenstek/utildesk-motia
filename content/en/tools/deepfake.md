@@ -2,139 +2,93 @@
 slug: deepfake
 title: Deepfake
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: AI
-price_model: Freemium
-tags:
-  - ai
-  - assistant
-  - automation
-official_url: 'https://deepfake.com/'
+editorial_batch: "2026-07-14-deepfake-full-tool-card-editorial"
+category: Audio & Video
+price_model: "Varies"
+official_url: "https://deepfake.com/"
+description: "Deepfake is a term for AI-based media manipulation. This guide covers responsible use, rights, evaluation, governance and the limits of the current official link."
+updated_at: 2026-07-14
+tags: [ai, video, safety]
 popularity: 0
 source_language: de
 translation: full
 ---
 # Deepfake
 
-Deepfake technology enables the creation of realistic, artificially generated videos and images, where faces or voices of individuals are convincingly swapped or manipulated. This technology is based on artificial intelligence and machine learning, particularly on methods such as Generative Adversarial Networks (GANs). Deepfake tools are applied in areas such as film production, entertainment, education, and marketing, but also raise concerns regarding ethics and potential misuse.
+Deepfake is not one clearly defined product. It is a broad term for AI-assisted manipulation or generation of images, video and audio. A responsible production process therefore needs more than a convincing result: consent, rights clearance, disclosure and an auditable approval step matter just as much. One important boundary for this entry: `deepfake.com` currently redirects to `deepnude.com`; its official privacy policy describes an 18+ platform rather than a general video editor or API. The URL is therefore not evidence of a safe enterprise production tool.
 
-## For whom is Deepfake suitable?
+## What Deepfake means and who it fits
 
-Deepfake tools are ideal for creatives, developers, and companies that want to create innovative media content without relying on expensive shoots or extensive post-production. They are particularly suitable for:
+The category includes face and lip synchronisation, synthetic voices, face replacement and generative video edits. Film teams, localisation specialists, learning teams and researchers can have legitimate uses when people depicted have given informed consent and the result is disclosed. Political messaging, advertising with real people, identity checks and intimate material carry a much higher risk. A team that simply needs training or explainer videos should first assess a provider with documented moderation, terms and business controls.
 
-- Film makers and content creators who want to realize special effects or visual effects.
-- Marketing and advertising agencies that want to create personalized or attention-grabbing campaigns.
-- Educational institutions that want to produce interactive and illustrative materials.
-- Developers and researchers who work on AI-based applications and automation.
-- Individuals who want to experiment with the technology responsibly to better understand it.
+## Components in a real workflow
+
+A deepfake workflow usually combines reference media, a generation or synchronisation model, an editor and an export path. The less visible components are just as important: proof of consent, rights to the voice and likeness, disclosure, access control and an approval record. These are not guaranteed features of the term or of the linked domain. Before procurement, verify that the specific provider documents each control.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/deepfake-editorial.webp" alt="Illustration for Deepfake: anonymous masks, film strips, and synthetic image layers" loading="lazy" decoding="async" />
+  <img src="/images/tools/deepfake-editorial.webp" alt="Illustration of anonymous masks, film strips and synthetic image layers" loading="lazy" decoding="async" />
 </figure>
 
-## Main functions
+## A practical operating workflow
 
-- **Face swap**: Replace a person's face in video or image content with that of another.
-- **Voice cloning**: Create and manipulate voices for realistic audio content.
-- **Video and image manipulation**: Change facial expressions, gestures, or backgrounds in existing media.
-- **Automated processing**: Utilize AI to generate content quickly and with minimal manual effort.
-- **User-friendly interface**: Intuitive tools for beginners and professionals to easily create deepfakes.
-- **Security settings**: Features to detect and prevent misuse, depending on the provider.
-- **Integration with existing workflows**: APIs or plugins to integrate with other software solutions.
+1. Define the purpose, audience and permitted representation in writing.
+2. Record consent, scope, duration and withdrawal terms for every real person.
+3. Use only media whose copyright, personality, music and voice rights are clear.
+4. Produce a short test with a watermark or visible AI disclosure.
+5. Have a second reviewer check the face, voice, lip sync, artefacts and claims.
+6. Export, archive and publish only after approval, keeping the disclosure attached.
 
-## Advantages and disadvantages
+This separates a creative demo from a public release. Without that separation, a persuasive clip can become a compliance incident through misattribution or missing consent.
 
-### Advantages
+## Operations, integration and export
 
-- Enables creative and innovative media production without significant effort.
-- Saves time and costs in creating specialized video content.
-- Offers various application possibilities in different industries.
-- Freemium models allow entry without financial commitments.
-- Advanced AI technologies ensure realistic and convincing results.
+For production, uploads, storage location, retention, roles and export options matter more than a long feature list. Check whether raw and generated files can be deleted, whether projects remain portable, and whether teams can use separate accounts, logs or approvals. Plan around an API or plugin only if the specific product documents it officially. For the current `deepfake.com` destination, I could not confirm a reliable general developer or product scope for this use case.
 
-### Disadvantages
+## Quality and evaluation
 
-- Potential misuse for forgery or disinformation.
-- Quality and functionality vary depending on the provider and tariff.
-- Ethical concerns and legal uncertainties are not yet fully resolved.
-- May require high computational power or internet connection.
-- Learning curve can be different for beginners depending on the tool.
+Do not evaluate only whether a face looks realistic. Test different lighting, skin tones, head movement, languages, speech patterns and difficult audio transitions. Track rejection rate, correction time and the number of manual approvals. An output is not acceptable merely because viewers cannot spot the manipulation, or when the source of a statement is unclear. Sensitive campaigns also need a takedown plan: someone must be able to stop publication and remove copies.
 
-## Prices & Costs
+## Security, privacy and governance
 
-Deepfake tools are often offered in a freemium model, with basic functions available for free and extended features requiring a subscription. Prices and functionality vary depending on the provider and may include:
+Faces, voices and biometric characteristics can be personal or particularly sensitive data. Before upload, review purpose limitation, consent, deletion, regional processing, data-processing terms, subprocessors and support access. Never use another person’s face, voice or private recording without durable permission. Do not use deepfakes for deception, intimate material without consent, identity verification or fabricated evidence. Detection is not a substitute for provenance checks and human review.
 
-- Free basic access with limited usage and watermarks.
-- Monthly or annual subscriptions with extended functions, higher resolution, and more export options.
-- One-time licensing fees for professional use.
-- Staff pricing for companies or teams with multiple users.
+## Pricing and total cost
 
-The exact pricing should be checked on the websites of the respective providers.
-
-## Workflow Fit
-
-Deepfake fits best into a workflow with a clear input, a traceable work step, and a defined finish line. Small teams can usually keep the process lightweight; larger organizations should also define permissions, approvals, and integrations.
-
-If Deepfake becomes just another account without ownership, the value fades quickly. Give it a clear place in the existing stack: what enters the tool, what gets decided there, and where the result goes next.
-
-## Privacy & Data
-
-Before adopting Deepfake, clarify which data will enter the tool and whether model outputs, training data, prompts, and user feedback are involved. The more sensitive the material, the more important permissions, retention rules, export options, and a documented decision on what should stay outside the tool become.
-
-For European teams evaluating Deepfake, data processing agreements, hosting information, and deletion processes are also worth checking. This is not a substitute for legal advice, but it avoids the common mistake of introducing Deepfake before the data path is understood.
+There is no single Deepfake tariff. For a chosen provider, cost may depend on credits, video minutes, resolution, voices, translation, API calls, team controls and retention. Rights clearance, review, moderation, storage, post-production and a business agreement can be larger costs than generation itself. The current official `deepfake.com` destination does not provide a reliable pricing or release-notes basis for a responsible production-tool comparison, so this card does not repeat the old Freemium label or invent a number.
 
 ## Editorial Assessment
 
-Deepfake is strongest when it is treated as one component in a clearly described workflow, not as a magic shortcut. The real benefit comes from less friction, clearer handovers, and more repeatable execution.
+Deepfake is worth considering for teams with a tightly scoped, consent-based media case and the organisational ability to enforce disclosure and approval. It can add value for controlled dubbing, localisation or visual effects, not for maximising deception. For open-ended experiments with other people, intimate content, identity checks or any requirement for a current, well-documented vendor, choose a narrower alternative instead.
 
-Our recommendation is to start with one concrete use case, write down success criteria, and review after two to four weeks whether Deepfake genuinely saves time or simply creates another system to maintain. That keeps the decision grounded, even when the feature list is long.
+## Alternatives
 
-## Alternatives to Deepfake
-
-- **Reface** – A mobile app for quickly swapping faces in videos and GIFs.
-- **FaceSwap** – Open-source software for creating deepfakes with various customization options.
-- **Synthesia** – A platform for creating AI-generated videos with synthetic avatars.
-- **Zao** – A Chinese app that uses deepfake technology for entertainment and social media.
-- **Avatarify** – A tool that enables live face swapping in video conferencing.
-
-## Typical Use Cases
-
-- **Focused rollout:** Deepfake is a good fit when AI, product, and domain teams want to stop improvising a recurring workflow around ai, assistant, automation.
-- **Operations, not demos:** The tool becomes more valuable when prompts, models, outputs, and review steps are documented well enough to survive beyond a one-off trial.
-- **Team handovers:** Deepfake can make responsibilities clearer, so work does not disappear into chats, spreadsheets, or personal accounts.
-- **Quality control:** A short review step is especially useful before outputs are published, automated further, or handed over to customers.
-
-## What really matters in daily use
-
-In day-to-day work, Deepfake is less about having every edge feature and more about whether the team understands where work starts, who reviews it, and how results move forward. A useful setup defines roles, naming rules, and the most important handover points before adoption.
-
-Deepfake is strongest when it reduces friction in an existing workflow instead of creating a second place to maintain. Before rolling it out widely, test it with real examples: which task becomes faster, which decision becomes clearer, and which manual check should intentionally remain?
+- [HeyGen](/en/tools/heygen/): A better fit for avatar videos, presenter workflows and translation in a clearly defined business product.
+- [Synthesia](/en/tools/synthesia/): More focused on business, learning and compliance video with organisation and publishing features.
+- [ElevenLabs](/en/tools/elevenlabs/): The closer choice when speech synthesis, voice design or an audio API is the core requirement.
+- [Runway](/en/tools/runway/): Better for generative video and creative production without making a real speaker’s identity the centre of the workflow.
+- [Descript](/en/tools/descript/): More practical for text-based editing, transcript workflows and controlled post-production.
 
 ## FAQ
 
-**What is Deepfake exactly?**
-Deepfake refers to AI-based techniques for manipulating or swapping faces in media in a convincingly realistic way.
+**Is Deepfake a specific tool?**
 
-**Is the use of Deepfake tools legal?**
-The legality depends on the intended use and the respective country's laws. Personal or artistic use is generally allowed, but misuse can be punishable.
+No. Deepfake is mainly a category term. A specific product must be checked separately for features, moderation, privacy, rights and pricing; the current link in this entry does not confirm a general editor.
 
-**How secure are Deepfake tools?**
-Security and data protection vary depending on the provider. Some offer mechanisms to prevent misuse, but users should exercise caution and responsibility when using the technology.
+**Can I use someone’s face or voice?**
 
-**Do I need technical knowledge to use Deepfake?**
-Many tools are user-friendly and suitable for beginners. For more complex applications, technical knowledge can be helpful.
+Only with appropriate, documented consent and within the agreed scope. Copyright, trademark, personality, image and employment-related rights may also need review.
 
-**What hardware is required?**
-Depending on the tool, a modern PC or smartphone is often sufficient. For high-quality results or local processing, stronger computational power may be required.
+**How should synthetic media be disclosed?**
 
-**How can I identify Deepfake content?**
-There are specialized software and methods to detect Deepfakes, but they become increasingly difficult to identify as the technology improves.
+Use a visible disclosure that survives export and redistribution. Metadata alone is insufficient when a platform may strip it.
 
-**Are Deepfake tools free?**
-Many offer free basic versions, while extended features often require a subscription.
+**Can deepfakes be detected reliably?**
 
-**How can I use Deepfake responsibly?**
-Transparency, obtaining consent, and avoiding deception are key principles for using Deepfakes ethically.
+No. Artefacts can be clues, but detection is not definitive proof. Provenance, consent, signatures and human review should be considered together.
+
+**What should never be uploaded?**
+
+Do not upload unclear-rights recordings, identity documents, non-consensual intimate material, voices without permission or confidential client media to a service whose retention and deletion rules you have not checked.

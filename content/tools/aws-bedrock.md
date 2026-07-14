@@ -19,6 +19,10 @@ generated_at: 2026-05-17
 
 AWS Bedrock ist die verwaltete KI-Plattform von AWS: Teams rufen Foundation Models verschiedener Anbieter über AWS auf, statt für jedes Modell eine eigene Infrastruktur und eigene Abrechnung zu betreiben. Der praktische Wert liegt nicht in einer angeblich magischen Einheits-API, sondern in der Kombination aus Modellwahl, AWS-IAM, Kostenstellen, Netzwerk- und Betriebsmodell.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-bedrock-editorial.webp" alt="Geologischer Querschnitt mit Arbeitsbereichen auf leuchtenden Wurzeln" loading="lazy" decoding="async" />
+</figure>
+
 ## Was Bedrock tatsächlich bündelt
 
 Bedrock stellt Modellzugriff und Inferenz in der AWS-Umgebung bereit. AWS nennt mehr als 100 Foundation Models, unter anderem von Amazon, Anthropic, DeepSeek, Moonshot AI, MiniMax und OpenAI. Je nach Modell und Region unterscheiden sich Fähigkeiten, Verfügbarkeit und Eingabeformate. Für eine neue Anwendung ist deshalb nicht der Katalog entscheidend, sondern ein kleiner Vergleich mit denselben realen Aufgaben, Daten und Qualitätskriterien.

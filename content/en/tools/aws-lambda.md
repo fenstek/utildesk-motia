@@ -17,6 +17,10 @@ translation: full
 
 AWS Lambda runs code in response to API calls or events without a team provisioning or patching servers. Common triggers include API Gateway, S3, SQS and EventBridge. Each Lambda Function invocation runs independently: horizontal scaling is managed, but shared state must never be assumed.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/aws-lambda-editorial.webp" alt="a kinetic paper theater of events and short-lived functions" loading="lazy" decoding="async" />
+</figure>
+
 ## When Lambda fits
 
 Lambda suits bounded API backends, webhooks, file processing, scheduled automation and event handlers. It is a poor fit for processes needing permanently open connections, durable local state or more than 15 minutes of uninterrupted work. Those need a different compute model or an orchestrated workflow.

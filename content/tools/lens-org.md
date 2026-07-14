@@ -18,6 +18,10 @@ generated_at: "2026-05-12"
 
 Lens.org ist eine leistungsstarke Plattform für die Suche, Analyse und das Management von Patentinformationen. Mit einem Fokus auf Innovation und Forschung bietet Lens.org Zugang zu einer umfangreichen Sammlung von Patenten und wissenschaftlichen Veröffentlichungen weltweit. Die Plattform kombiniert KI-gestützte Suchtechnologien mit benutzerfreundlichen Analysetools, um Forschern, Unternehmen und Juristen tiefgehende Einblicke in den Stand der Technik zu ermöglichen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lens-org-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Lens.org" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Lens.org entscheidet nicht die Trefferzahl, sondern die Nachvollziehbarkeit der Recherche. Suchraum, Quellenqualität, Zitationen und Gegenprüfung müssen sichtbar bleiben, sonst wirkt das Ergebnis schneller belastbar, als es ist. Wir würden mit einer engen Recherchefrage starten und jeden Fund gegen Kontrollquellen, Notizen und Ausschlussgründe prüfen.

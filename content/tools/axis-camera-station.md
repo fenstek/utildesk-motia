@@ -19,6 +19,10 @@ generated_at: 2026-05-16
 
 AXIS Camera Station Pro ist die aktuelle serverbasierte Video-Management-Software von Axis. Sie bündelt Livebild, Aufzeichnung, Suche, Export, Alarme und Zutrittskontrolle in einer vorwiegend privaten Netzwerkinstallation; Cloud-Zugriff ist optional. Der alte Name „Camera Station“ bleibt hier nur als URL-Slug erhalten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/axis-camera-station-editorial.webp" alt="Architekturplan eines geschützten Gebäudes mit Operatorroute" loading="lazy" decoding="async" />
+</figure>
+
 ## Für welchen Betrieb sie passt
 
 Die Software passt zu Organisationen, die bereits Axis-Kameras, Intercoms, Türcontroller oder Audio einsetzen und einen kontrollierbaren lokalen VMS-Betrieb wünschen. Sie kann auch bestimmte Drittgeräte einbinden, ist aber am stärksten im Axis-Portfolio. Für ein paar Kameras ohne Operator, Retention-Konzept oder Incident-Prozess wäre sie unnötig groß.

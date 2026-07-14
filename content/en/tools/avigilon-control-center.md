@@ -17,6 +17,10 @@ translation: full
 
 Avigilon Control Center (ACC) is video-management software for physical security. It brings together live and recorded camera footage, alarms and, where integrated, access-control events. The purpose is not to watch more surveillance video, but to investigate relevant events faster and with an auditable process.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/avigilon-control-center-editorial.webp" alt="a night physical-security center with an architectural building model" loading="lazy" decoding="async" />
+</figure>
+
 ## What ACC does in practice
 
 Operators can arrange cameras and sites in views, review alarm history and search recorded footage. Avigilon describes AI-assisted appearance and image search, alarm views, and video-plus-access-control workflows across its VMS range. Actual recording, camera quality and available functions depend on hardware, licence and configuration.

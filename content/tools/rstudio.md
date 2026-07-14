@@ -10,7 +10,7 @@ category: "Entwickler-Tools"
 price_model: "Freemium"
 tags: [r, data-science, analytics, developer-tools]
 official_url: "https://posit.co/downloads"
-popularity: 23
+popularity: 22
 tier: C
 generated_at: 2026-05-13
 description: "RStudio ist eine IDE für R und Python mit Projektverwaltung, Konsole, Debugging, Versionskontrolle und reproduzierbaren Dokumenten."

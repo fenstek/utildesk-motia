@@ -27,6 +27,10 @@ At sign-up, Babbel asks about language, goal and level; a placement test can nar
 
 Babbel says its content is made by linguists and education teams. That gives more structure than a raw vocabulary list, but does not guarantee a perfect match for every learner, dialect or professional setting.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/babbel-editorial.webp" alt="Editorial illustration of Babbel in a practical workflow" loading="lazy" decoding="async" />
+</figure>
+
 ## Practising spoken language
 
 Speech recognition gives immediate pronunciation feedback in suitable exercises. Babbel Speak adds an AI conversation partner for dialogue practice. Both can lower the threshold for producing language. Neither evaluates complex conversation as a human partner would, nor fully captures regional nuance.

@@ -19,6 +19,10 @@ generated_at: 2026-05-18
 
 Azure Functions ist Microsofts serverless Compute-Angebot für Code, der durch HTTP, Timer, Dateien, Datenbankänderungen, Queues oder Event Streams gestartet wird. Der wichtige Vorteil sind Bindings: Sie verbinden Trigger und Azure-Dienste, ohne dass jede Integration als Boilerplate gebaut werden muss. Die schwierige Arbeit bleibt dennoch bei Fehlerwegen, Datenverträgen und Betrieb.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-functions-editorial.webp" alt="Zweifarbige Risografie-Werkstatt aus unabhängigen Ereignismodulen" loading="lazy" decoding="async" />
+</figure>
+
 ## Passende Anwendungsfälle
 
 Functions passt zu API-Endpunkten, Blob-Verarbeitung, Service-Bus-Consumer, geplanter Bereinigung, Event-Hubs-Streams und kleinen Automatisierungen. Eine einzelne Function sollte eine begrenzte fachliche Verantwortung haben. Lang laufende Geschäftsprozesse, viele menschliche Wartezeiten oder komplizierte Zustandsübergänge gehören nicht in versteckte Retry-Schleifen.

@@ -20,6 +20,10 @@ popularity: 0
 
 Character AI ist eine innovative Plattform, die es Nutzern ermöglicht, mit KI-gesteuerten Charakteren in natürlicher Sprache zu interagieren. Die Anwendung nutzt fortschrittliche künstliche Intelligenz, um lebendige, realistische Dialoge zu erzeugen, die sowohl unterhaltsam als auch informativ sein können. Ob zur Unterhaltung, für kreative Projekte oder als Hilfsmittel im Alltag – Character AI bietet vielseitige Einsatzmöglichkeiten.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/character-ai-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Character AI" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Character AI ist nicht die erste freundliche Antwort entscheidend, sondern die Kontrolle über Inhalte, Übergaben und Grenzen. Wir würden mit wenigen klaren Dialogfällen starten, Eskalation an Menschen festlegen und prüfen, welche Fragen das System ausdrücklich nicht beantworten soll.

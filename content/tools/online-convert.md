@@ -18,6 +18,10 @@ generated_at: 2026-05-13
 
 Online-Convert ist ein vielseitiger Online-Dienst zur Konvertierung von Dateien in verschiedene Formate. Die Plattform unterstützt eine breite Palette von Dateitypen, darunter Dokumente, Bilder, Audio- und Videodateien. Ohne Installation von Software können Nutzer Dateien direkt im Browser umwandeln, was Zeit spart und die Kompatibilität mit unterschiedlichen Geräten erhöht.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/online-convert-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Online-Convert" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Online-Convert zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

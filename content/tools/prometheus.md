@@ -22,6 +22,10 @@ Prometheus ist ein Open-Source-System für Metriken und Monitoring, kein KI-Assi
 
 Prometheus passt zu Teams, die Dienste, Container oder Infrastruktur betreiben und aus technischen Signalen handlungsfähige Beobachtbarkeit machen wollen. Es funktioniert besonders gut mit einer Pull-basierten Exporter-Landschaft und ergänzt Visualisierung etwa über [Grafana](/tools/grafana/). Für Log-Suche oder verteilte Traces braucht es zusätzliche Systeme; Metriken allein erklären nicht jeden Vorfall.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/prometheus-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Prometheus" loading="lazy" decoding="async" />
+</figure>
+
 ## Mit wenigen SLO-Signalen starten
 
 Beginnen Sie mit der Nutzerperspektive: Verfügbarkeit, Fehlerrate und Latenz eines kritischen Ablaufs. Eine Dashboard-Wand voller CPU-Werte hilft wenig, wenn niemand weiß, ob Kunden betroffen sind. Definieren Sie für jeden Alarm Besitzer, Dringlichkeit, Runbook und eine konkrete Aktion.

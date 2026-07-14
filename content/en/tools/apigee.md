@@ -20,6 +20,10 @@ Apigee is Google Cloud's API-management platform. It places API proxies in front
 
 The value does not come from putting a proxy in front of every internal service. It comes from versioning, documenting, monitoring, and securing high-value or high-volume APIs consistently. Without that governance, Apigee becomes another layer that nobody fully understands.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/apigee-editorial.webp" alt="a strict graphic checkpoint with controlled flows" loading="lazy" decoding="async" />
+</figure>
+
 ## When Apigee fits
 
 Apigee fits organisations with multiple APIs, partner or developer access, demanding security requirements, or a need for central traffic controls. Typical cases include safely exposing legacy and microservice backends, operating a developer portal for API products, and enforcing authentication and quotas across many teams.

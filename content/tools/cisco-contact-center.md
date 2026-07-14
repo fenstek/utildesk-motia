@@ -18,6 +18,10 @@ generated_at: "2026-05-16"
 
 Cisco Contact Center ist eine umfassende Lösung zur Optimierung von Kundenservice und Kommunikation. Mit modernen Funktionen unterstützt es Unternehmen dabei, Kundenanfragen effizient zu verwalten und die Kundenzufriedenheit zu steigern. Die Plattform integriert KI-Technologien, um Interaktionen zu automatisieren und personalisierte Serviceerlebnisse zu ermöglichen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/cisco-contact-center-editorial.webp" alt="Theatralische Contact-Center-Diorama mit verteilten Gesprächen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Cisco Contact Center sollte die Entscheidung an einem echten Arbeitsfall hängen: Eingaben, Ergebnis, Verantwortung und Folgekosten müssen sichtbar sein. Wir würden klein starten, den Nutzen gegen den bisherigen Ablauf vergleichen und bewusst festhalten, welche Aufgaben weiterhin menschliche Prüfung brauchen.

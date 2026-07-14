@@ -20,6 +20,10 @@ Are.na is a quiet tool for collecting and connecting research material. Rather t
 
 Its strength is curated context. A block can appear in several channels, keeping connections between topics visible. That suits design research, teaching, editorial work, artistic practice, and early product discovery when a team does not want to force everything into a database or presentation too soon.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/are-na-editorial.webp" alt="a research archive of photographs, materials, and connecting threads" loading="lazy" decoding="async" />
+</figure>
+
 ## Who is it for?
 
 Are.na suits individuals and small teams collecting sources, references, and loose ideas without turning them into tasks immediately. Good uses include visual research, reading and link lists, project moodboards, editorial groundwork, and workshop knowledge collections.

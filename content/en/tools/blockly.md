@@ -21,6 +21,10 @@ translation: full
 
 Blockly is a browser-based open-source library that allows users to create graphical programming environments. By visually connecting code blocks, users without deep programming knowledge can generate functional code. Blockly supports various programming languages including JavaScript, Python, and others, and is commonly used in educational settings as well as for prototyping.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/blockly-editorial.webp" alt="a wooden workshop where children assemble a cause-and-effect program" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Blockly, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

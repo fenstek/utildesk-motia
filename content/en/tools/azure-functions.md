@@ -17,6 +17,10 @@ translation: full
 
 Azure Functions is Microsoft's serverless compute offering for code started by HTTP, timers, files, database changes, queues or event streams. Its important convenience is bindings: they connect triggers and Azure services without hand-writing every integration. The difficult work still lives in failure paths, data contracts and operations.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/azure-functions-editorial.webp" alt="a two-color risograph workshop of independent event modules" loading="lazy" decoding="async" />
+</figure>
+
 ## Suitable workloads
 
 Functions suits API endpoints, Blob processing, Service Bus consumers, scheduled cleanup, Event Hubs streams and bounded automation. One function should own a small business responsibility. Long-running processes, human waiting periods and complex state transitions should not disappear into retry loops.

@@ -18,6 +18,10 @@ generated_at: "2026-05-11"
 
 Crello, jetzt unter dem Namen VistaCreate bekannt, ist ein benutzerfreundliches Online-Design-Tool, das besonders für die schnelle Erstellung von visuellen Inhalten entwickelt wurde. Mit einer großen Auswahl an Vorlagen, Grafiken und automatisierten Funktionen unterstützt VistaCreate sowohl Einsteiger als auch Profis bei der Gestaltung von Social-Media-Posts, Bannern, Präsentationen und mehr. Die Integration von KI-Elementen erleichtert den kreativen Prozess und macht Design zugänglicher.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/crello-jetzt-vistacreate-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Crello (jetzt VistaCreate)" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Crello (jetzt VistaCreate) liegt der Wert nicht im schnellsten Rohtext, sondern in sauberer Textarbeit: Briefing, Tonfall, Terminologie, Faktencheck und Freigabe müssen zusammenpassen. Wir würden mit einem realen Textfall starten, Varianten bewusst vergleichen und jede Aussage prüfen, die rechtlich, fachlich oder markenseitig heikel ist.

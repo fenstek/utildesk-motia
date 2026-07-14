@@ -18,6 +18,10 @@ generated_at: "2026-05-18"
 
 Stanford NLP ist ein leistungsstarkes Open-Source-Toolkit für die Verarbeitung natürlicher Sprache (Natural Language Processing, NLP). Entwickelt von der Stanford University, bietet es eine breite Palette an Werkzeugen für die linguistische Analyse von Texten. Es wird häufig in Forschung, Entwicklung und Industrie eingesetzt, um maschinelles Verstehen von Sprache zu ermöglichen. Die Bibliothek unterstützt verschiedene Sprachen und umfasst Funktionen wie Tokenisierung, Satzanalyse, Named Entity Recognition und vieles mehr.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/stanford-nlp-editorial.webp" alt="Redaktionelle Illustration zum praktischen Einsatz von Stanford NLP" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Stanford NLP zählt nicht das Modellversprechen, sondern die kontrollierte Einbettung: Datenbasis, Modellversion, Messpunkte und Reproduzierbarkeit müssen vor dem Einsatz feststehen. Wir würden mit einem eng begrenzten Analyse- oder Modellfall starten, eine Baseline danebenlegen und Fehlerfälle aktiv sammeln. Empfehlenswert, wenn ein Team Evaluation, Betrieb und Nachpflege wirklich übernimmt; riskant, wenn nur ein KI-Schlagwort gesucht wird.
