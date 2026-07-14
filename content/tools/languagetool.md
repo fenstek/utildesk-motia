@@ -10,7 +10,7 @@ category: AI Writing
 price_model: Freemium
 tags: [writing, productivity, automation, education]
 official_url: "https://languagetool.org/"
-popularity: 47
+popularity: 46
 tier: B
 generated_at: 2026-05-12
 ---

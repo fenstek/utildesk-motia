@@ -2,20 +2,20 @@
 slug: granola
 title: Granola
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk Redaktion"
+editorial_reviewed_by: Utildesk Redaktion
 editorial_reviewed_at: 2026-07-13
-editorial_status: "manual_polished"
-editorial_batch: "2026-07-13-full-tool-card-editorial"
+editorial_status: manual_polished
+editorial_batch: 2026-07-13-full-tool-card-editorial
 category: Productivity
-price_model: "Plan-based"
+price_model: Plan-based
 tags: [ai, meeting, notes, assistant]
 official_url: "https://www.granola.ai/"
 description: "KI-Notizbuch für Meetings: Granola verbindet eigene Stichpunkte mit Transkript und Kontext, ohne als Bot am Videoanruf teilzunehmen."
 updated_at: 2026-07-13
 lastReviewed: 2026-07-13
-popularity: 0
-tier: "D"
-generated_at: "2026-05-12"
+popularity: 51
+tier: D
+generated_at: 2026-05-12
 ---
 # Granola
 
