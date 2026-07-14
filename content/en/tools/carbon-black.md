@@ -2,101 +2,93 @@
 slug: carbon-black
 title: Carbon Black (VMware)
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
-price_model: Subscription
+editorial_batch: "2026-07-14-optiplex-editorial-50"
+category: Entwickler-Tools
+price_model: Abonnement
 tags:
   - cybersecurity
   - endpoint security
   - XDR
   - enterprise
-official_url: 'https://www.broadcom.com/products/carbon-black'
-description: 'Carbon Black by VMware is a comprehensive endpoint security platform designed to help businesses detect, prevent, and respond to cyber attacks. Focusing on modern threats, Carbon Black combines real-time monitoring, behavioral analysis, and threat intelligence to quickly identify and address security vulnerabilities.'
+official_url: "https://www.broadcom.com/products/carbon-black"
+description: "Endpoint security portfolio for prevention, EDR, and incident response, combining sensors, policies, and centralized investigation under Broadcom's Carbon Black products."
 translation: full
+updated_at: 2026-07-14
 ---
 # Carbon Black (VMware)
 
-Carbon Black by VMware is a comprehensive endpoint security platform specifically designed to assist businesses in detecting, preventing, and responding to cyberattacks. Focusing on modern threats, Carbon Black offers a combination of real-time monitoring, behavioral analysis, and threat intelligence to quickly identify and close security gaps.
+Carbon Black is now a Broadcom endpoint-security portfolio whose products originated in the VMware Carbon Black line. Depending on the contract and module, it covers prevention and automated detection through Carbon Black Cloud Endpoint Standard, threat hunting and incident response through Enterprise EDR, or restrictive application-control policies. It is not one all-in-one product and it does not replace a SOC or a tested recovery process.
 
 <figure class="tool-editorial-figure">
   <img src="/images/tools/carbon-black-editorial.webp" alt="a black-and-white cyber-defense perimeter and response team" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial assessment
+## What Carbon Black is for
 
-With Carbon Black (VMware), the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+Carbon Black is aimed at security and IT teams that need endpoint activity to be visible, risky behavior to be blocked, and incidents to be investigated with evidence. Endpoint Standard combines next-generation antivirus with behavioral EDR capabilities. Enterprise EDR is built around continuous event data, hunting, and response. App Control takes a different approach: its positive-security model is designed to let only trusted software run on critical or fixed-function systems. Before buying, identify the exact module, supported operating systems, and deployment model.
 
-We would test Carbon Black (VMware) in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
-## Who is Carbon Black (VMware) Suitable For?
+## The components that matter
 
-Carbon Black is primarily aimed at medium to large enterprises that require a robust and scalable solution to protect their endpoints. The platform is especially suited for organizations with high security requirements, such as financial service providers, government agencies, healthcare institutions, and companies with extensive IT infrastructures. Development teams benefit from advanced features for security process analysis and automation.
+Depending on the product and configuration, a sensor collects process, file, network, script, and registry activity and communicates with the console. Policies determine whether behavior is logged, blocked, or explicitly allowed. The cloud console manages devices, alerts, investigations, policies, and roles; APIs and the Data Forwarder can send alerts and endpoint events to a SIEM or security lake. Enterprise EDR adds threat intelligence, watchlists, and live response. These components must be checked against the tenant's actual license rather than assumed from the Carbon Black name.
 
-## Key Features
+## A practical rollout workflow
 
-- **Endpoint Detection and Response (EDR):** Real-time monitoring and analysis of endpoints for rapid threat detection.
-- **Next-Generation Antivirus (NGAV):** Protection against malware and unknown threats via behavior-based detection.
-- **Threat Hunting:** Tools for proactive searching and investigation of security incidents.
-- **Application Control:** Management and monitoring of applications to prevent unauthorized software execution.
-- **Cloud-based Management:** Centralized control and reporting through a secure cloud platform.
-- **Integration with XDR:** Enhanced detection and response across multiple security domains.
-- **Automation and Orchestration:** Support for workflows to enable swift response to security incidents.
-- **Compliance and Audit Features:** Assists in meeting security standards and regulatory requirements.
+1. Inventory endpoints, servers, workloads, special-purpose devices, and offline networks. Define the telemetry and response actions that are actually required.
+2. Start with a test group and a monitoring policy. Check sensor connectivity, CPU and memory impact, proxy requirements, agent updates, and administrator-controlled uninstall protection.
+3. Run targeted tests for malware, PowerShell, script, and ransomware behavior. Record detection, blocking, alert context, and the manual fallback.
+4. Move proven rules into production gradually. Every change needs an owner, a test record, time-bounded exceptions, and a rollback path.
+5. Practise triage, isolation, live response, evidence handling, and hand-off to the help desk, incident responders, or external forensics.
 
-## Advantages and Disadvantages
+## Operations, integration, and boundaries
 
-### Advantages
+Cloud editions reduce server administration, but they do not remove sensor lifecycle work, policy ownership, network access, roles, or alert queues. An on-premises or offline requirement is a different operational decision: Carbon Black EDR puts more responsibility for storage, scaling, backup, patching, and high availability on the operator. Store API credentials in a secret manager, use least-privilege access levels, and rotate them. API queries are rate limited; exports and Data Forwarder destinations need their own storage, cost, and deletion controls.
 
-- Comprehensive protection against modern and unknown threats.
-- Real-time analysis and rapid response capabilities.
-- Scalable and suitable for large enterprise environments.
-- Integration with other VMware security solutions and XDR platforms.
-- Cloud-based management simplifies operation and updates.
-- Extensive reporting and compliance functionalities.
+A bypass is not a harmless compatibility switch. Broadcom documents that bypass can reduce visibility and enforcement. Keep exceptions narrow by path, process, and operation, test them, assign an expiry, and remove them when the interoperability problem is understood. Offline devices retain local policies and some local protection, but they do not receive new cloud reputation lookups while disconnected.
 
-### Disadvantages
+## Evaluation and quality control
 
-- Costs can be high depending on company size and feature set.
-- Platform complexity requires trained personnel for effective use.
-- Setup and customization can be time-consuming.
-- Subscription model may be less attractive for smaller businesses.
+Do not measure only the number of blocked attacks. Track managed-device coverage, sensor health, alert quality, triage time, false positives, policy changes, CPU impact, and time to isolation. Have analysts investigate real cases using the process tree and available telemetry. Verify that API exports arrive in the SIEM and that evidence retention, restore, and a cloud-console outage are covered by the incident plan. A successful demo is not proof that the response chain works under pressure.
 
-## Pricing & Costs
+## Security, privacy, and governance
 
-Carbon Black is generally offered as a subscription service. The exact pricing depends on the chosen plan, number of endpoints, and desired features. Companies often receive tailored offers aligned with their specific needs. Typically, various packages are available that differ in functionality and support levels.
+Endpoint telemetry can contain command lines, file paths, network connections, processes, and registry activity. Before rollout, document region, processing terms, retention, access, export, and deletion with privacy, legal, and employee-representation stakeholders. Broadcom documents a command-line obfuscation option on the device; it does not automatically protect information already stored in the console. Use separate administrator accounts, audit logs, sensor protection, least privilege, and a controlled exception process. Treat compliance or certification mapping as something to verify for the specific module and contract, not something to infer from the product name.
 
-## Alternatives to Carbon Black (VMware)
+## Costs and selection criteria
 
-- **CrowdStrike Falcon:** Cloud-based endpoint security platform with strong threat intelligence and EDR functionality.
-- **Microsoft Defender for Endpoint:** Integrated endpoint security with seamless integration into Microsoft ecosystems.
-- **Symantec Endpoint Protection:** Proven security solution with extensive protection features for enterprises.
-- **SentinelOne:** Automated endpoint protection with AI-powered detection and response.
-- **Trend Micro Apex One:** Comprehensive endpoint security focusing on malware protection and EDR.
+Carbon Black is sold through partners and tailored offers; no dependable public standard price list was found for the modules covered here. The quote may depend on endpoints or workloads, cloud versus on-premises deployment, endpoint and EDR modules, retention, support, managed services, and term. Add SIEM storage, network traffic, sensor rollout, policy maintenance, on-call coverage, and training. Ask for a module-level quote and model a full year with realistic device classes and retention instead of comparing only a per-endpoint headline.
+
+## Editorial Assessment
+
+We recommend Carbon Black to an established security team with clear endpoint ownership that wants to combine behavioral prevention, investigation, and controlled response within one portfolio. It creates value when sensor coverage, policy ownership, and an available incident-response process already exist. A small team without SOC capacity, a mostly Microsoft-centered estate, or a narrowly defined allowlisting requirement may be better served by a simpler alternative. Decide after a pilot on real endpoints with measurable triage goals and a documented data and cost model.
+
+## Alternatives
+
+- [CrowdStrike Falcon](/en/tools/crowdstrike-falcon/): A cloud-centered EDR option for teams comparing Falcon modules and its detection-and-response workflow.
+- [Microsoft Defender for Endpoint](/en/tools/microsoft-defender-for-endpoint/): A natural fit for Microsoft 365, Entra, and Windows-management estates where platform integration matters most.
+- [SentinelOne](/en/tools/sentinelone/): A comparison point for automated endpoint response with its own agent and policy model.
+- [Sophos Intercept X](/en/tools/sophos-intercept-x/): More suitable when endpoint protection should be administered through Sophos Central and a consolidated operations path.
 
 ## FAQ
 
-**1. What is the main advantage of Carbon Black compared to traditional antivirus solutions?**
-Carbon Black provides not only traditional malware protection but also advanced features like behavioral analysis, real-time monitoring, and threat hunting, enabling proactive detection and response to complex threats.
+**Is Carbon Black one product?**
 
-**2. Is Carbon Black suitable for small businesses?**
-Carbon Black is primarily designed for medium to large enterprises. The cost and complexity of the solution may pose challenges for smaller businesses.
+No. Under Broadcom, Carbon Black covers several products and modules, including Cloud Endpoint Standard, Enterprise EDR, Carbon Black EDR, and App Control. The quote, sensor, and operating model must therefore be named explicitly.
 
-**3. How is Carbon Black managed?**
-The platform is managed via a cloud-based management console that offers centralized control, monitoring, and reporting.
+**Does Carbon Black require an internet connection?**
 
-**4. Does Carbon Black integrate with other security solutions?**
-Yes, Carbon Black integrates with various VMware security products as well as other XDR and SIEM systems to create a comprehensive security architecture.
+Cloud sensors need connectivity for new cloud reputations, analysis, and the central console. Offline devices retain local policies and some local protection, but they do not receive new cloud intelligence while disconnected.
 
-**5. Which operating systems are supported by Carbon Black?**
-Carbon Black generally supports common operating systems such as Windows, macOS, and Linux. Exact support may vary depending on the product variant.
+**How do we keep a policy from disrupting the whole fleet?**
 
-**6. Is there a trial version of Carbon Black?**
-Depending on the provider and plan, a trial or demo version may be available. Details should be obtained directly from the vendor.
+Test rules in a policy assigned to a small device group first. Document their effect and exceptions, roll out gradually, and avoid broad bypass rules because they can reduce both visibility and protection.
 
-**7. How quickly can Carbon Black respond to security incidents?**
-Thanks to real-time monitoring and automation features, Carbon Black enables rapid identification and response to threats, often within minutes.
+**Which data should be reviewed before rollout?**
 
-**8. Is Carbon Black installed locally or operated cloud-based?**
-Carbon Black uses a cloud-based management platform, while endpoint agents are installed locally on the devices.
+Review process and command-line data, file paths, network events, retention, region, roles, exports, and SIEM destinations. Privacy, employee-representation, and incident-response owners should approve the purpose and access chain.
+
+**How should the cost comparison be made?**
+
+Do not compare only the endpoint price. Request module and retention pricing, then add sensor operations, policy maintenance, SOC time, SIEM storage, support, training, and any on-premises infrastructure.
