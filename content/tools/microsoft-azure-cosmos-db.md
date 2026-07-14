@@ -18,6 +18,10 @@ generated_at: "2026-05-16"
 
 Microsoft Azure Cosmos DB ist eine global verteilte, multimodale Datenbankplattform, die speziell für moderne Anwendungsentwicklungen in der Cloud entwickelt wurde. Sie bietet Entwicklern eine skalierbare und hochverfügbare Lösung für die Verwaltung von Daten mit niedriger Latenz und integriertem Analytics-Support. Cosmos DB unterstützt verschiedene Datenmodelle wie Dokumente, Schlüssel-Wert, Graphen und Spaltenfamilien und ist damit vielseitig einsetzbar.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-azure-cosmos-db-editorial.webp" alt="Datenkonstellationen schweben über einem Globus" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Microsoft Azure Cosmos DB steht und fällt die Entscheidung mit Datenmodell, Zugriffen, Kostenkontrolle und Betrieb. Wir würden zuerst einen begrenzten Datenfluss mit echten Volumina, klaren Abfragen und dokumentierten Fehlerfällen prüfen. Eine schnelle Demo sagt wenig, wenn Pflege, Governance und Performance ungeklärt bleiben.

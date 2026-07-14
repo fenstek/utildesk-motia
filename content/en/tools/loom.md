@@ -21,6 +21,10 @@ translation: full
 
 Loom is a powerful tool for screen recording and video communication, widely used in digital collaboration and customer engagement. With Loom, users can quickly and easily create videos to explain complex subjects, provide feedback, or visually share information—eliminating the need for lengthy meetings or emails. Its intuitive operation makes it attractive for individuals as well as teams.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/loom-editorial.webp" alt="An asynchronous video explanation across time zones" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Loom, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: source material, export quality, rights and post-production determine the real value. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

@@ -26,6 +26,10 @@ LM Studio bleibt ein praktischer Einstieg in lokale Modelltests: Modelle laden, 
 
 Produktiv ersetzt LM Studio keine saubere Infrastruktur. Wer aus Tests echte Anwendungen ableitet, braucht reproduzierbare Modellversionen, Benchmarks, Datenschutzregeln, Deployment-Konzept und Monitoring. Als Labor ist LM Studio stark; als Produktionsbasis braucht es zusätzliche Disziplin.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/lm-studio-editorial.webp" alt="Lokales Labor mit Modulen für Sprachmodelle" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei LM Studio sollte die Bewertung am Entwicklungsprozess hängen: Setup, Review, Tests, Übergabe und Wartbarkeit müssen nachvollziehbarer werden. Wir würden das Tool an einem kleinen, realen Ticket prüfen und nicht nur an einer idealen Demo oder einem einzelnen Benchmark.

@@ -18,6 +18,10 @@ generated_at: 2026-05-18
 
 Planner ist ein vielseitiges Tool zur Unterstützung der Projektplanung, Aufgabenverwaltung und Teamzusammenarbeit. Es bietet eine intuitive Oberfläche, die es Teams ermöglicht, Projekte effizient zu strukturieren, Aufgaben zuzuweisen und Fortschritte in Echtzeit zu verfolgen. Dank des Freemium-Preismodells können Nutzer die Grundfunktionen kostenlos nutzen und bei Bedarf auf erweiterte Features zugreifen.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/planner-editorial.webp" alt="Teamboard mit verschiebbaren Aufgabenphasen" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Planner ist der Praxistest nicht, ob die Oberfläche angenehm wirkt, sondern ob Aufgaben, Übergaben und Verantwortung klarer werden. Wir würden einen wiederkehrenden Teamablauf abbilden und nach einer Woche prüfen, ob weniger Rückfragen, weniger Doppelarbeit und bessere Nachvollziehbarkeit entstehen.

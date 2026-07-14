@@ -18,6 +18,10 @@ generated_at: "2026-05-16"
 
 italki ist eine Online-Plattform, die Sprachlernende mit qualifizierten Lehrern aus der ganzen Welt verbindet. Über italki können Nutzer individuell gestaltete Sprachunterrichtsstunden buchen, die auf ihre Bedürfnisse und Ziele zugeschnitten sind. Die Plattform fungiert als Marktplatz für Sprachlehrer verschiedener Sprachen und ermöglicht flexibles, ortsunabhängiges Lernen per Videochat.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/italki-editorial.webp" alt="Sprachunterricht per Videoanruf mit einer Lehrkraft" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei italki zählt weniger die Demo-Lektion als die Frage, ob Lernziel, Feedback und Pflege der Inhalte zusammenpassen. Wir würden eine konkrete Übung mit Zielgruppe, Testdurchlauf und Auswertung prüfen, bevor das Tool in einen Kurs oder ein Onboarding wandert. Entscheidend ist, ob Lernende danach klarer handeln können.

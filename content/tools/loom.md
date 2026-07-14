@@ -18,6 +18,10 @@ generated_at: 2026-05-16
 
 Loom ist ein leistungsstarkes Tool zur Bildschirmaufnahme und Video-Kommunikation, das vor allem in der digitalen Zusammenarbeit und im Kundenkontakt eingesetzt wird. Mit Loom können Nutzer schnell und einfach Videos erstellen, um komplexe Sachverhalte zu erklären, Feedback zu geben oder Informationen visuell zu teilen – ohne lange Meetings oder E-Mails. Die intuitive Bedienung macht es sowohl für Einzelpersonen als auch Teams attraktiv.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/loom-editorial.webp" alt="Asynchrone Videoerklärung über mehrere Zeitzonen hinweg" loading="lazy" decoding="async" />
+</figure>
+
 ## Redaktionelle Einordnung
 
 Bei Loom zählt nicht das schönste Beispiel, sondern ob Stil, Rechte, Qualität und Nachbearbeitung in den echten Produktionsablauf passen. Wir würden ein konkretes Asset mit Briefing, Variantenvergleich und Freigabe testen, statt nur Vorher-nachher-Demos anzusehen.

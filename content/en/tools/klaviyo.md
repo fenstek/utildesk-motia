@@ -21,6 +21,10 @@ translation: full
 
 Klaviyo is a powerful marketing automation platform that specifically focuses on email marketing and customer relationship management (CRM). With an emphasis on data-driven campaigns, Klaviyo helps businesses craft personalized and targeted communication to enhance customer loyalty and increase revenue. The platform is mainly aimed at online retailers and marketers who want to automate and optimize their marketing activities.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/klaviyo-editorial.webp" alt="Customer signals moving from a shop to parcels" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Klaviyo, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: data hygiene, consent, handovers and reporting decide whether the tool helps in daily work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

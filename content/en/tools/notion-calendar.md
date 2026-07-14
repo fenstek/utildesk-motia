@@ -21,6 +21,10 @@ translation: full
 
 Notion Calendar is a flexible and integrated calendar tool within the Notion platform that simplifies organizing appointments, tasks, and projects. It combines calendar features with Notion's powerful note and database structure, allowing users to personalize their planning. Ideal for individuals and teams aiming to increase productivity and optimize collaboration.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/notion-calendar-editorial.webp" alt="Geometric coordination of time and projects" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Notion Calendar, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.

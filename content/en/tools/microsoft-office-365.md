@@ -21,6 +21,10 @@ translation: full
 
 Microsoft Office 365 is a cloud-based suite of productivity applications designed to improve collaboration and efficiency in businesses, educational institutions, and for personal use. With tools like Word, Excel, PowerPoint, Outlook, and Teams, Office 365 enables the creation, management, and sharing of documents as well as communication across various devices.
 
+<figure class="tool-editorial-figure">
+  <img src="/images/tools/microsoft-office-365-editorial.webp" alt="Collaborative work with documents and tables" loading="lazy" decoding="async" />
+</figure>
+
 ## Editorial assessment
 
 With Microsoft Office 365, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
