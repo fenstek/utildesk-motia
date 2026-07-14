@@ -1,0 +1,11 @@
+---
+interface Props { status: 404 | 410; locale: "de" | "en"; }
+const { status, locale } = Astro.props;
+const en = locale === "en";
+---
+<!doctype html>
+<html lang={locale}>
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><meta name="robots" content="noindex,nofollow" /><title>{status} | Utildesk</title></head>
+  <body><main><p>{status}</p><h1>{status === 410 ? (en ? "Tool file retired" : "Tool-Akte entfernt") : (en ? "Tool not found" : "Tool nicht gefunden")}</h1><a href={en ? "/en/tools/" : "/tools/"}>{en ? "Back to Tool Index" : "Zurück zum Tool-Index"}</a></main></body>
+</html>
+<style>body{margin:0;background:#0c0d0a;color:#d8d6c8;font:16px/1.6 ui-monospace,monospace}main{width:min(720px,100% - 36px);margin:12vh auto;border:1px solid #3a3d33;padding:32px}p,a{color:#b8f36b}h1{font-size:clamp(2rem,7vw,4rem)}</style>

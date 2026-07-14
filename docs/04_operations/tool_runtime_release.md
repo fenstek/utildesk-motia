@@ -91,6 +91,19 @@ npm --prefix site run publish:runtime -- \
   --database utildesk-content-runtime-preview
 ```
 
+Build the isolated renderer and check the preview routes before any Pages proxy change:
+
+```bash
+npm --prefix site run build:runtime
+
+curl -I https://<preview-worker>/runtime-preview/de/tools/chatgpt/
+curl -I https://<preview-worker>/runtime-preview/en/tools/chatgpt/
+```
+
+Preview responses must be `noindex,nofollow,noarchive` while retaining the production self-canonical, DE/EN hreflang, JSON/Markdown alternates and JSON-LD. Canonical runtime routes are `/tools/<slug>/` and `/en/tools/<slug>/`. Active rows return `200`; `redirect` returns `301` to the stored `canonical_path`; `disabled` and unknown rows return `404`; `tombstone` returns `410`.
+
+The tool cache key is `renderer version + D1 revision + source_hash`. Verify a first `MISS`, a second `HIT`, then change only a local/preview revision and verify another `MISS` followed by `HIT`. Required evidence headers are `X-Utildesk-Content-Runtime: tool-v2`, `X-Utildesk-Content-Version`, `X-Utildesk-Source-Revision` and `X-Utildesk-Source-Hash`. This cache identity is independent from the Ratgeber cluster.
+
 ## Deactivate, redirect and tombstone
 
 ```bash

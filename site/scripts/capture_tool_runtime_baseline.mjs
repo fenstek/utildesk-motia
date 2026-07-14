@@ -170,7 +170,7 @@ const waitForSocket = (socket) => new Promise((resolveSocket, rejectSocket) => {
   socket.addEventListener("error", () => rejectSocket(new Error("CDP WebSocket connection failed")), { once: true });
 });
 
-const screenshotViaCdp = async (cdpUrl, url, destination) => {
+export const screenshotViaCdp = async (cdpUrl, url, destination) => {
   const endpoint = String(cdpUrl).replace(/\/+$/, "");
   const targetResponse = await fetch(`${endpoint}/json/new?${encodeURIComponent("about:blank")}`, { method: "PUT" });
   if (!targetResponse.ok) throw new Error(`CDP target creation failed (${targetResponse.status})`);
