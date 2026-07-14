@@ -2,108 +2,98 @@
 slug: blockly
 title: Blockly
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: "2026-07-14"
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Developer
+editorial_batch: "2026-07-14-optiplex-editorial-50"
+category: "Entwickler-Tools"
 price_model: Open Source
-tags:
-  - coding
-  - education
-  - javascript
-  - open-source
-official_url: 'https://developers.google.com/blockly?hl=zh-cn'
-description: 'Blockly is a browser-based open-source library that enables the creation of graphical programming environments. Users can generate functional code by visually assembling code blocks without in-depth programming knowledge. It supports multiple programming languages, including JavaScript, Python, and others, and is commonly used in education and prototype development.'
+official_url: "https://developers.google.com/blockly"
+description: "Blockly is an open-source library for embedding visual code editors with custom blocks, toolboxes, workspaces, and code generators in web applications."
+updated_at: "2026-07-14"
+popularity: 0
+tier: "D"
+generated_at: "2026-05-18"
 translation: full
 ---
 # Blockly
 
-Blockly is a browser-based open-source library that allows users to create graphical programming environments. By visually connecting code blocks, users without deep programming knowledge can generate functional code. Blockly supports various programming languages including JavaScript, Python, and others, and is commonly used in educational settings as well as for prototyping.
+Blockly is an open-source library for embedding a visual code editor in a web application. Users assemble blocks in a workspace; the host application defines the toolbox, block logic, and code generators. That boundary matters: Blockly is not a finished course, hosted learning platform, or complete product runtime. It supplies the editor building blocks while the product team owns the surrounding experience.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/blockly-editorial.webp" alt="a wooden workshop where children assemble a cause-and-effect program" loading="lazy" decoding="async" />
+  <img src="/images/tools/blockly-editorial.webp" alt="Visual Blockly editor with colorful programming blocks in a learning workspace" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial assessment
+## Who Blockly suits
 
-With Blockly, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: code changes, interfaces, build steps and team handovers remain understandable. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+Blockly fits teams that need controlled visual input for rules, lessons, robotics, or configuration and want to run that input inside their own web interface. It is a good match for developers, product teams with web expertise, and education teams building a specific learning path. It is a poor fit for a school or content team expecting ready-made courses, accounts, grading, and support without development work.
 
-We would test Blockly in one small, real scenario first: one real repository task with review rules, a small change and a clear rollback path. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
-## Who is Blockly suitable for?
+## The parts of a real implementation
 
-Blockly is aimed at developers, educators, and learners who want to learn or teach programming in a simple and visual way. It is especially suitable for:
+The workspace is the editing surface; toolboxes expose blocks, commonly as categories or a flyout. Custom blocks can be defined with JSON, while advanced cases such as mutators may require JavaScript. The rest of the design includes fields, inputs, connections, themes, renderers, and possibly plugins. Blockly Developer Tools, including the Block Factory, can produce a starting block definition and generator stub, but they do not replace domain modeling or product design.
 
-- Teachers and educational institutions looking to clearly convey programming concepts.
-- Developers wanting to integrate interactive coding tools or visual editors into their applications.
-- Beginners and children who want to discover programming basics playfully.
-- Organizations preferring open-source solutions with customization options.
+## A practical implementation workflow
 
-## Main features
+1. Define the learning or product problem first: which inputs are allowed, what output is expected, and which actions must remain impossible?
+2. Install Blockly with npm or bootstrap a project with the official create-package tool. Start with a small prototype containing only a few blocks and a clearly described toolbox.
+3. Add a generator for every target output and test nested inputs, operator precedence, empty fields, and invalid combinations. The generator itself is JavaScript even when it emits JavaScript or Python.
+4. Persist workspace state as JSON for new projects. XML remains an older format without new features, so migration and backward compatibility need an explicit plan.
+5. Only then add user research, subject-matter review, and the host application's authentication, storage, and release processes.
 
-- Visual programming through drag-and-drop of code blocks
-- Support for multiple programming languages (e.g., JavaScript, Python, Dart)
-- Customizable blocks and categories to create individual programming environments
-- Generation of readable source code from graphical blocks
-- Integration into web applications via a JavaScript API
-- Open-source license (Apache 2.0) with comprehensive documentation and community support
-- Support for Blockly Games – interactive learning games for programming
-- Real-time validation and syntax checking of created programs
+## Integration, operations, and maintenance
 
-## Advantages and Disadvantages
+Blockly supplies the editor. Hosting, user management, persistence, telemetry, localization, permissions, and execution of generated code belong to the embedding product. For plugins, make dependencies explicit, avoid relying on private core APIs, and ship tests. In production, consume a published npm or GitHub release and pin it through the normal dependency process. Blockly's documentation advises against using the moving `main` branch as a production source because unreleased APIs can change.
 
-### Advantages
+## Quality and evaluation
 
-- Free and open source with no licensing costs
-- Easy to use through visual blocks, ideal for beginners
-- Highly customizable for various use cases
-- Wide language support and export options
-- Active community and continuous development
-- Easy integration into existing web projects
+Do not evaluate only whether the blocks look approachable. Useful checks include: can five representative tasks be completed without hidden text edits; does the same workspace produce reproducible code; are invalid combinations explained; and can JSON snapshots be loaded, migrated, and reset? In education, also measure the solution path, a transfer task, and drop-off points. In a product, measure error rate, review effort, and time to safe execution. Generator code needs unit and snapshot tests because syntactically valid output can still be wrong for the domain.
 
-### Disadvantages
+## Privacy, security, and governance
 
-- May not be powerful enough for very complex projects
-- Visual programming can be limiting for experienced developers
-- Requires basic web development knowledge for integration and customization
-- Not available as a standalone app, designed as a library for integration
+Blockly is a library, not a privacy guarantee. The embedding application decides which workspace data, inputs, and telemetry leave the browser. Before rollout, document the data flow and retention, remove unnecessary content from snapshots, separate permissions, and review plugins and npm dependencies. Never execute generated code with broad privileges by default: validate inputs, restrict dangerous APIs, and use appropriate isolation or sandboxing for untrusted content. The project provides keyboard and screen-reader support, but custom blocks, themes, and focus behavior still need testing with real user scenarios. Apache 2.0 simplifies use of the core; it does not remove the need to review licenses for third-party plugins and assets.
 
-## Pricing & Costs
+## Price and total cost
 
-Blockly is completely open source and free of charge. There are no licensing fees or subscription costs. Users can freely download the library, modify it, and use it in their own projects.
+Blockly's core is free open-source software under Apache 2.0; there is no Blockly plan that includes hosting or operations. Costs move elsewhere: engineering time for block models and generators, tests, localization, accessibility, browser compatibility, infrastructure, storage, and dependency maintenance. An education project may have little license spend while the effort to author good exercises and support learners is substantial. Estimate a small block set first and include the cost of migrating away from a proprietary data format or custom runtime later.
 
-## Alternatives to Blockly
+## Editorial Assessment
 
-- **Scratch**: A visual programming language specifically for children, with a large online community and learning materials.
-- **Snap!**: An advanced block programming environment offering more flexibility and features for advanced users.
-- **App Inventor**: A platform for creating Android apps with visual programming, developed by MIT.
-- **MakeCode**: Microsoft's open-source editor for block-based programming, especially suited for hardware projects.
-- **Tynker**: A commercial platform with interactive courses and visual programming for educational institutions.
+We recommend Blockly when a team can embed a bounded visual editor in its own web application and take responsibility for the domain rules. Its value appears when blocks are specific, generators are understandable, and a test set makes wrong output visible. For a ready-to-run learning platform without developer capacity, or for very large freely programmable software, Blockly is the wrong abstraction: Code.org, MakeCode, or a conventional source editor may be closer to the need.
+
+## Alternatives
+
+- [MakeCode](/en/tools/makecode/): A more complete learning and programming environment with block and text views; useful when hardware or course materials need a faster start.
+- [Code.org](/en/tools/code-org/): A course and classroom platform with ready-made learning paths; better when teachers want to use content rather than build an editor.
+- [AppInventor](/en/tools/appinventor/): A visual mobile-app development environment; suitable when the output should be an Android app rather than a general embedded editor.
+- [Thunkable](/en/tools/thunkable/): A hosted no-code approach to mobile applications; worth considering when publishing and platform services matter more than owning block and generator logic.
+- [Codecademy](/en/tools/codecademy/): An interactive learning platform with exercises; a better fit for structured coding courses than for operating Blockly infrastructure.
 
 ## FAQ
 
-**1. What is Blockly and what is it used for?**
-Blockly is an open-source library for creating visual programming environments. It is used to generate code by assembling blocks, making programming easier for beginners.
+**Is Blockly a finished learning platform?**
 
-**2. Which programming languages does Blockly support?**
-Blockly can generate code in several languages including JavaScript, Python, Dart, Lua, and PHP, depending on configuration.
+No. Blockly provides the editor library and core building blocks. Courses, tasks, accounts, progress tracking, storage, and support must be built by the surrounding application.
 
-**3. Is Blockly free to use?**
-Yes, Blockly is fully open source and can be used and customized for free.
+**Which output languages can Blockly generate?**
 
-**4. Do I need programming knowledge to use Blockly?**
-Users utilizing Blockly as a learning tool do not need programming knowledge. Developers integrating Blockly into their projects should have basic knowledge of web technologies.
+That depends on the generators and domain model you include. Blockly ships generator APIs and several language options; each target still needs block generators and tests that match the application.
 
-**5. Can I integrate Blockly into my own website?**
-Yes, Blockly is designed as a JavaScript library and can be integrated into web applications.
+**Should a new project save JSON or XML?**
 
-**6. Is there a community or support for Blockly?**
-Yes, Blockly has an active developer community, extensive documentation, and forums for support.
+JSON is the recommended and actively developed option for new projects. XML remains available as a legacy format but does not receive new features, so existing XML data needs a tested migration path.
 
-**7. How does Blockly differ from Scratch?**
-Scratch is a standalone learning platform with its own user interface, whereas Blockly is a library for embedding visual programming into other applications.
+**Can generated code be executed directly?**
 
-**8. Can Blockly be used for professional software development?**
-Blockly is mainly suitable for learning and prototyping; traditional programming methods are often better for complex applications.
+The library generates code but does not make execution safe automatically. The product must validate output, limit permissions, and provide suitable isolation for untrusted input.
 
----
+**How do we create custom blocks?**
+
+Define blocks in JSON by default, or use JavaScript for more advanced extensions. The Developer Tools can create a starting point; domain rules, generators, tests, and interaction design remain the team's responsibility.
+
+**Can Blockly be used in a commercial product?**
+
+The core is licensed under Apache 2.0. That is not a blanket clearance for every third-party component: review the licenses of plugins, dependencies, and included assets against your distribution model.
+
+**How do we keep a Blockly product maintainable?**
+
+Use published releases rather than `main`, test in CI, and keep JSON fixtures, generator snapshots, and browser checks. For plugins, explicit dependencies and stable APIs reduce upgrade surprises.
