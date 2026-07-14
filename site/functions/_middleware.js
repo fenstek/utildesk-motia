@@ -186,6 +186,25 @@ const isToolsIndex = (pathname) =>
   pathname === "/en/tools" ||
   pathname === "/en/tools/";
 
+const TOOLS_INDEX_QUERY_PARAMS = new Set([
+  "q",
+  "sort",
+  "view",
+  "letter",
+  "verdict",
+  "category",
+]);
+
+const sanitizeToolsIndexQuery = (url) => {
+  const sanitized = new URLSearchParams();
+  for (const [key, value] of url.searchParams.entries()) {
+    if (!TOOLS_INDEX_QUERY_PARAMS.has(key)) continue;
+    const normalized = String(value || "").trim().slice(0, 160);
+    if (normalized) sanitized.append(key, normalized);
+  }
+  return sanitized;
+};
+
 export async function onRequest(context) {
   const { request } = context;
   if (request.method !== "GET" && request.method !== "HEAD") {
@@ -218,6 +237,20 @@ export async function onRequest(context) {
       const localePrefix = url.pathname.startsWith("/en/") || url.pathname === "/en/tools" ? "/en" : "";
       return Response.redirect(`${url.origin}${localePrefix}/tools/tag/${slug}/`, 308);
     }
+
+    const sanitized = sanitizeToolsIndexQuery(url);
+    const canonicalPath = withTrailingSlash(url.pathname);
+    const canonicalSearch = sanitized.toString();
+    const canonicalUrl = `${url.origin}${canonicalPath}${canonicalSearch ? `?${canonicalSearch}` : ""}`;
+    const currentUrl = `${url.origin}${url.pathname}${url.search}`;
+
+    if (canonicalUrl !== currentUrl) {
+      return Response.redirect(canonicalUrl, 308);
+    }
+
+    // Catalogue controls are functional client-side state. The page keeps a
+    // canonical link to /tools/, while these allow search and filters to work.
+    return context.next();
   }
 
   return Response.redirect(`${url.origin}${withTrailingSlash(url.pathname)}`, 308);

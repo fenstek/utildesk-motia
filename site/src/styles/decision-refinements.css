@@ -154,6 +154,11 @@ html[data-design="decision"] .ki-blatt-header .ds-nav-right {
   color: #c5251c;
 }
 
+.inv-guide-search[hidden],
+.inv-guide-search .akte-alt-card[hidden] {
+  display: none !important;
+}
+
 /* One display scale across index, dossier and editorial pages. */
 html[data-design="decision"] .akte-mast-h1 {
   min-height: 0 !important;

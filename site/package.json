@@ -18,6 +18,7 @@
     "publish:runtime": "node scripts/publish_runtime_content.mjs",
     "astro": "astro",
     "check:tools-sort": "node ../scripts/check_tools_newest_sort.mjs",
+    "check:search": "node ../scripts/check_search_query_contract.mjs",
     "fetch:logos": "node ../scripts/fetch_simpleicons_logos.mjs"
   },
   "dependencies": {
