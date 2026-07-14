@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:hybrid": "node scripts/generate_runtime_cache_version.mjs && astro dev --config astro.hybrid.config.mjs",
-    "prebuild": "node ../scripts/check_editorial_templates.mjs && node ../scripts/check_english_tool_translations.mjs && node ../scripts/generate_tool_added_manifest.mjs && node ../scripts/generate_content_lastmod_manifest.mjs && node ../scripts/generate_guide_backlinks.mjs",
+    "prebuild": "node ../scripts/check_editorial_templates.mjs && node ../scripts/check_english_tool_translations.mjs && node scripts/check_tool_public_state.mjs && node ../scripts/generate_tool_added_manifest.mjs && node ../scripts/generate_content_lastmod_manifest.mjs && node ../scripts/generate_guide_backlinks.mjs",
     "build": "astro build",
     "build:hybrid": "node scripts/generate_runtime_cache_version.mjs && astro build --config astro.hybrid.config.mjs",
     "build:runtime": "node scripts/generate_runtime_sitemap_static.mjs && node scripts/generate_runtime_cache_version.mjs && astro build --config astro.runtime.config.mjs",
@@ -19,6 +19,8 @@
     "astro": "astro",
     "check:tools-sort": "node ../scripts/check_tools_newest_sort.mjs",
     "check:search": "node ../scripts/check_search_query_contract.mjs",
+    "check:tool-public-state": "node scripts/check_tool_public_state.mjs",
+    "test:tool-runtime": "node --test scripts/tests/tool_public_state.test.mjs",
     "fetch:logos": "node ../scripts/fetch_simpleicons_logos.mjs"
   },
   "dependencies": {

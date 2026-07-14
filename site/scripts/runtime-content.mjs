@@ -3,6 +3,7 @@ import { readdir, readFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
+import { getToolPublicState } from "../shared/toolPublicState.mjs";
 
 const SITE_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const REPO_DIR = resolve(SITE_DIR, "..");
@@ -53,12 +54,23 @@ export async function listRuntimeEntries({ kind, locale } = {}) {
     (source) => (!kind || source.kind === kind) && (!locale || source.locale === locale),
   );
 
+  let primaryToolSlugs = null;
+  if (selectedSources.some((source) => source.kind === "tool" && source.locale === "en")) {
+    const primarySource = CONTENT_SOURCES.find((source) => source.kind === "tool" && source.locale === "de");
+    const primaryFiles = (await readdir(primarySource.directory)).filter((file) => file.endsWith(".md"));
+    const primaryStates = await Promise.all(primaryFiles.map(async (file) => {
+      const parsed = matter(await readFile(join(primarySource.directory, file), "utf8"));
+      return getToolPublicState({ filename: file, data: parsed.data });
+    }));
+    primaryToolSlugs = new Set(primaryStates.filter((state) => state.isPublishable).map((state) => state.slug));
+  }
+
   const groups = await Promise.all(
     selectedSources.map(async (source) => {
       const files = (await readdir(source.directory))
-        .filter((file) => file.endsWith(".md") && !file.startsWith("_"))
+        .filter((file) => file.endsWith(".md"))
         .sort((left, right) => left.localeCompare(right));
-      return Promise.all(
+      const entries = await Promise.all(
         files.map(async (file) =>
           toRuntimeEntry({
             ...source,
@@ -67,6 +79,16 @@ export async function listRuntimeEntries({ kind, locale } = {}) {
           }),
         ),
       );
+      return source.kind === "tool"
+        ? entries.filter((entry, index) =>
+            getToolPublicState({
+              filename: files[index],
+              slug: entry.slug,
+              data: entry.metadata,
+              primaryPublishable: source.locale === "en" ? primaryToolSlugs.has(entry.slug) : undefined,
+            }).isPublishable,
+          )
+        : entries.filter((_entry, index) => !files[index].startsWith("_"));
     }),
   );
 
