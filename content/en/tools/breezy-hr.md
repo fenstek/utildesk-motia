@@ -2,102 +2,92 @@
 slug: breezy-hr
 title: Breezy HR
 editorial_reviewed: true
-editorial_reviewed_by: "Utildesk manual editorial pass"
-editorial_reviewed_at: 2026-05-31
+editorial_reviewed_by: "Utildesk Editorial"
+editorial_reviewed_at: 2026-07-14
 editorial_status: "manual_polished"
-editorial_batch: "2026-05-31-complete-tool-card-polish"
-category: Productivity
-price_model: Subscription
+editorial_batch: "2026-07-14-optiplex-editorial-50"
+category: "Produktivität"
+price_model: "Abonnement"
 tags:
   - recruiting
   - hr
   - applicant-tracking
   - automation
 official_url: 'https://breezy.hr/'
-description: 'Breezy HR is a modern recruiting and applicant management software designed to help businesses streamline and automate their hiring processes. Featuring a user-friendly interface and a wide array of tools, it simplifies application management, candidate screening, and team collaboration. It''s especially suited for small to medium-sized enterprises seeking an efficient personnel management solution.'
+description: 'Breezy HR brings job promotion, applicant pipelines, team feedback and recruiting automation together for growing companies.'
 translation: full
+popularity: 0
+tier: "D"
+generated_at: "2026-05-17"
+updated_at: 2026-07-14
 ---
 # Breezy HR
 
-Breezy HR is a modern recruiting and applicant management software that helps companies optimize and automate their hiring process. With a user-friendly interface and comprehensive features, Breezy HR makes managing applications, screening candidates, and collaborating within teams easier. The software is particularly tailored for small and medium-sized businesses looking for an efficient solution for their human resource management.
+Breezy HR is a cloud applicant tracking system for teams that need to publish jobs, organize applications and coordinate hiring decisions with a visible process. It covers career sites and job-board distribution as well as pipelines, interviews, messages, scorecards and offers. The boundary matters: Breezy organizes recruitment work, but it does not replace a sound selection method or the employer’s legal and privacy responsibilities.
 
 <figure class="tool-editorial-figure">
-  <img src="/images/tools/breezy-hr-editorial.webp" alt="a watercolor journey through real hiring stages" loading="lazy" decoding="async" />
+  <img src="/images/tools/breezy-hr-editorial.webp" alt="A watercolor journey through real hiring stages" loading="lazy" decoding="async" />
 </figure>
 
-## Editorial assessment
+## Who Breezy HR is for
 
-With Breezy HR, the useful question is not how long the feature list looks, but whether the real use case is narrow enough: appointments, tasks, notifications and ownership create less friction rather than more side work. Before a wider rollout, the team should know which data enters the tool, who checks the output and where a manual fallback remains available.
+Breezy HR is aimed at small and growing companies, in-house recruiting teams and agencies that hire repeatedly. It fits when a role is advertised through a career portal and job boards, several people review candidates, and every application needs a clear status and owner. A very small company may use the free Bootstrap plan as a limited starting point; regular hiring still depends more on process discipline, permissions and privacy controls than on a pleasant interface.
 
-We would test Breezy HR in one small, real scenario first: one real weekly routine with meetings, reminders, handovers and a short review. If that shows what work disappears, what new maintenance appears and who owns mistakes, the decision is much stronger than a demo impression. The cost check should include setup, permissions, maintenance and later switching effort, not only the plan price.
-## Who is Breezy HR for?
+## What the recruiting workflow contains
 
-Breezy HR primarily targets HR departments, recruiting teams, and small to medium-sized businesses aiming to digitize their applicant management processes. Agencies and companies with frequent hiring needs also benefit from its automation features and centralized candidate management. The software suits both companies without a dedicated HR department and teams seeking a scalable solution to simplify the recruiting process.
+The core model is a position or candidate pool with a configurable pipeline. Candidate profiles bring together resumes, documents, messages, notes, tasks, interview meetings and hiring-team feedback. Teams can create application forms and career sites, distribute positions to more than 50 job boards, and contact candidates by email or SMS. Depending on the plan and setup, questionnaires, assessments, scorecards, background checks and offer workflows extend the process.
 
-## Key Features
+## A practical path from application to decision
 
-- **Applicant Tracking System (ATS):** Track applications and candidate status clearly in a centralized dashboard.
-- **Automated Communication:** Automatically send emails and reminders to candidates and internal team members.
-- **Interview Scheduling:** Built-in calendar features for easy coordination of interviews.
-- **Team Collaboration:** Jointly review and comment on applicants with various roles and permissions.
-- **Career Page:** Design and publish a custom career page to attract new talent.
-- **Integration:** Connect with job boards, email clients, and other HR tools for seamless data transfer.
-- **Reports and Analytics:** Analyze recruiting metrics to optimize the hiring process.
-- **Mobile App:** Access applicant data and communications on the go.
-- **Workflow Automation:** Create rules to automatically perform recurring tasks.
+Start by defining the position, the pipeline stages and the questions that will actually inform a decision. Configure the career site, application form, source tracking and, if needed, job-board distribution. New applications enter the Applied stage and can first be triaged in the Applicants list using resume and experience information. The team then moves candidates, assigns hiring managers, requests scorecards and schedules interviews through Google or Outlook calendars.
 
-## Advantages and Disadvantages
+Stage Actions can trigger messages, questionnaires, assessments or tasks when a candidate changes stage. That removes repetitive work, but every automation needs a test: a bad disqualification or message can remove or alienate a candidate without appropriate human review. Before launch, run a test position with incomplete applications, withdrawals, duplicate records and a candidate who needs a manual exception.
 
-### Advantages
+## Operations, integrations and handoffs
 
-- Intuitive and user-friendly interface that offers quick onboarding even for beginners.
-- Extensive automation features that save time and reduce manual work.
-- Flexible adaptation to different company sizes and recruiting needs.
-- Good integration with other HR and productivity tools.
-- Support for compliance with data privacy standards.
-- Transparent overview of the entire application process.
+Breezy documents integrations for Gmail, Google Calendar, Outlook/Office 365, Slack, Zoom and Microsoft Teams Video Meetings. Partner connections add job boards, assessments, background checks, HRIS and sourcing services depending on the available catalog and plan. Candidate details can be exported to connected HRIS systems or Breezy Onboard. That helps with handoffs, but it does not turn Breezy into a full HR or payroll system. Decide which system owns each field before connecting it.
 
-### Disadvantages
+## Quality and responsible automation
 
-- Some advanced features are only available in higher subscription tiers.
-- May be too simple for very large companies with complex HR structures.
-- No fully free version; only a subscription model with a limited trial period.
-- Support and documentation are mainly available in English, which can be a barrier for some users.
+A useful pilot should measure more than time-to-hire. For each role, track time to the first qualified response, feedback completion, unsupported disqualification rates and the amount of manual follow-up. Disposition reasons and reports can make rejection patterns more consistent. Applicant Insights evaluates applications against configured criteria and consumes Breezy Intelligence credits; its score is a prioritization aid, not proof of suitability. Unparseable resumes are not reviewed by that feature. Human assessment, documented criteria and a clear override path remain essential.
 
-## Pricing & Costs
+## Privacy, security and governance
 
-Breezy HR offers a subscription model with multiple pricing tiers that vary based on features and team size. There is generally a free trial period, after which monthly fees apply. Exact prices and included features depend on the chosen plan and can be found on the provider's website. For precise cost information, it is recommended to contact the provider directly or use the free trial.
+Breezy provides GDPR/CCPA features for consent requests, privacy notices, access and erasure. The customer still has to configure them and decide on its legal basis, retention periods and candidate communications. Breezy’s Help Center says data in paid accounts generally remains available while the plan is active and may be deleted one year after cancellation under the stated conditions. The free Bootstrap plan gives access to a narrower window of older candidate data. Put those provider retention rules into the organization’s deletion and exit plan.
 
-## Alternatives to Breezy HR
+Use position- and company-level roles so reviewers do not automatically receive full access to resumes, messages and documents. Before procurement, review the current DPA, subprocessors, storage arrangements, SMS consent model, integration permissions and export path. Breezy’s product page refers to an ISO/IEC certification; procurement teams should verify the exact certification and scope in the provider’s current security material rather than treating a marketing statement as a complete assurance report.
 
-- **Workable:** A comprehensive recruiting platform focused on scalability and global use.
-- **Lever:** ATS with strong collaboration features and automation for larger teams.
-- **Greenhouse:** Known for extensive integrations and detailed recruiting reports.
-- **JazzHR:** Affordable solution for small businesses with solid basic functions.
-- **SmartRecruiters:** Enterprise-oriented platform emphasizing candidate experience and talent acquisition.
+## Price and total operating cost
+
+The official pricing page currently lists Bootstrap as free, with one active position or pool and access to candidate data from the last 30 days. It lists Startup at $157 per month on annual billing or $189 month-to-month, and Business at $439 or $529 respectively; prices and included features can change. The provider says paid plans include unlimited users and candidates, while SMS, assessments, background checks, job boards, HRIS connections and Breezy Intelligence credits can add separate costs.
+
+Budget for configuration, role maintenance, templates, privacy work, training, integrations and a future export—not only the subscription. The useful comparison is cost per well-documented hire and the amount of coordination removed, not the number of automated clicks.
+
+## Editorial Assessment
+
+Breezy HR is a good recommendation for small and mid-sized recruiting teams that need a repeatable multi-person workflow without starting a full HRIS program. It earns its keep when positions, stages, evaluation questions and ownership are explicit, and when the team reviews reports and deletion deadlines regularly. Larger organizations with deep workforce management, complex approval chains or strict data-residency requirements should compare a broader HR suite or a more enterprise-focused ATS. A company hiring only occasionally may be better served by a simpler application and scheduling workflow.
+
+## Alternatives
+
+- [Workable](/en/tools/workable/): A broader recruiting system for teams comparing international job promotion and scalable hiring operations.
+- [Greenhouse](/en/tools/greenhouse/): A more enterprise-oriented ATS for structured recruiting governance, reporting and integrations.
+- [Lever](/en/tools/lever/): Combines ATS and talent relationship management for teams that nurture candidates beyond a single opening.
+- [SmartRecruiters](/en/tools/smartrecruiters/): Targets larger organizations with more complex talent-acquisition processes and integration needs.
 
 ## FAQ
 
-**1. Is there a free version of Breezy HR?**
-Breezy HR typically offers a free trial period but does not have a permanently free full version. It operates on a subscription model.
+**Does Breezy HR have a permanently free plan?**
 
-**2. What integrations does Breezy HR support?**
-The software can connect with various job boards, email services, calendars, and other HR tools to streamline the recruiting process.
+Yes. The pricing page lists Bootstrap as free, but it is limited to one active position or pool and provides a narrower view of older candidate data than paid plans.
 
-**3. How secure is data with Breezy HR?**
-Breezy HR prioritizes data privacy and complies with industry standards to ensure the security and confidentiality of applicant data.
+**Can Breezy HR automatically reject an application?**
 
-**4. Is Breezy HR suitable for international companies?**
-Yes, Breezy HR supports multiple languages and can be used for international recruiting processes, although some features may vary by region.
+Questionnaires and Stage Actions can move or disqualify candidates according to configured answers. Use that only with tested rules and human oversight. Applicant Insights produces scores to help prioritize review; it should not be treated as an autonomous hiring decision.
 
-**5. Can the application process be customized?**
-Yes, the software allows customizing workflows, application forms, and email templates to fit specific needs.
+**How should a team handle candidate retention?**
 
-**6. How does team collaboration work?**
-Team members can jointly review candidate profiles, add comments, and assign tasks to make the recruiting process transparent and efficient.
+Enable the GDPR controls, define consent and expiry rules, and use the candidate filters for expired records. Keep an internal deletion and export procedure as well, because product controls do not replace legal advice or the organization’s controller responsibilities.
 
-**7. What mobile options does Breezy HR offer?**
-There is a mobile app that enables users to access applicant data and communicate while on the move.
+**Which calendar and recruiting integrations are documented?**
 
-**8. How quickly can one get started with Breezy HR?**
-Setup is relatively straightforward, allowing companies to begin recruiting shortly after a brief onboarding period.
+Breezy documents Google Calendar, Outlook/Office 365 Calendar, Gmail, Slack, Zoom and Microsoft Teams Video Meetings. Depending on the plan and partner catalog, job boards, assessments, background checks and HRIS connections are also available.
