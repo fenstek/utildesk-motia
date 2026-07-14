@@ -22,6 +22,8 @@ export interface RuntimeContentEntry {
   googlebotPolicy: string | null;
   editorialReviewed: boolean;
   illustrationPath: string | null;
+  assetKey: string | null;
+  assetHash: string | null;
   sourceCommit: string | null;
   deletedAt: string | null;
   category: string | null;
@@ -48,6 +50,8 @@ type RuntimeContentRow = {
   googlebot_policy: string | null;
   editorial_reviewed: number;
   illustration_path: string | null;
+  asset_key: string | null;
+  asset_hash: string | null;
   source_commit: string | null;
   deleted_at: string | null;
   category: string | null;
@@ -85,7 +89,7 @@ export async function getRuntimeContentEntry(
       `SELECT kind, locale, slug, title, excerpt, metadata_json, markdown, source_hash, revision,
               source_published_at, source_updated_at, is_active, route_state, canonical_path,
               robots_policy, googlebot_policy, editorial_reviewed, illustration_path,
-              source_commit, deleted_at, category, price_model, popularity
+              asset_key, asset_hash, source_commit, deleted_at, category, price_model, popularity
        FROM content_entries WHERE kind = ? AND locale = ? AND slug = ?`,
     )
     .bind(kind, locale, slug)
@@ -111,6 +115,8 @@ export async function getRuntimeContentEntry(
     googlebotPolicy: row.googlebot_policy,
     editorialReviewed: Number(row.editorial_reviewed) === 1,
     illustrationPath: row.illustration_path,
+    assetKey: row.asset_key,
+    assetHash: row.asset_hash,
     sourceCommit: row.source_commit,
     deletedAt: row.deleted_at,
     category: row.category,
@@ -128,7 +134,7 @@ export async function listRuntimeContentEntries(
       `SELECT kind, locale, slug, title, excerpt, metadata_json, markdown, source_hash, revision,
               source_published_at, source_updated_at, is_active, route_state, canonical_path,
               robots_policy, googlebot_policy, editorial_reviewed, illustration_path,
-              source_commit, deleted_at, category, price_model, popularity
+              asset_key, asset_hash, source_commit, deleted_at, category, price_model, popularity
        FROM content_entries
        WHERE kind = ? AND locale = ? AND is_active = 1 AND route_state = 'active'
        ORDER BY COALESCE(source_published_at, '') DESC, title ASC`,
@@ -155,6 +161,8 @@ export async function listRuntimeContentEntries(
     googlebotPolicy: row.googlebot_policy,
     editorialReviewed: Number(row.editorial_reviewed) === 1,
     illustrationPath: row.illustration_path,
+    assetKey: row.asset_key,
+    assetHash: row.asset_hash,
     sourceCommit: row.source_commit,
     deletedAt: row.deleted_at,
     category: row.category,
@@ -240,4 +248,12 @@ export async function getRatgeberCacheVersion(pathname: string): Promise<string 
     .bind(locale)
     .first<CacheVersionRow>();
   return row ? `${row.entries ?? 0}-${row.max_revision ?? 0}` : null;
+}
+
+export async function getRuntimeToolAsset(assetHash: string): Promise<{ key: string; fallbackPath: string } | null> {
+  const row = await database()
+    .prepare("SELECT asset_key, illustration_path FROM content_entries WHERE kind = 'tool' AND is_active = 1 AND route_state = 'active' AND asset_hash = ? AND asset_key IS NOT NULL AND illustration_path IS NOT NULL LIMIT 1")
+    .bind(assetHash)
+    .first<{ asset_key: string; illustration_path: string }>();
+  return row ? { key: row.asset_key, fallbackPath: row.illustration_path } : null;
 }

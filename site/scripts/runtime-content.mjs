@@ -40,7 +40,7 @@ const findToolIllustration = (markdown) => {
   return markdownImage?.[1]?.trim() || null;
 };
 
-const toRuntimeEntry = ({ kind, locale, file, raw, primaryEntry = null }) => {
+const toRuntimeEntry = async ({ kind, locale, file, raw, primaryEntry = null }) => {
   const parsed = matter(raw);
   const slug = asString(parsed.data.slug) || file.replace(/\.md$/i, "");
   const title = asString(parsed.data.title) || slug;
@@ -53,6 +53,15 @@ const toRuntimeEntry = ({ kind, locale, file, raw, primaryEntry = null }) => {
     ? getToolSearchIndexDecision(basis, { addedAtRank: toolAddedAtRankMap.get(slug) ?? 0 })
     : { robots: DEFAULT_ROBOTS, googlebotRobots: null };
   const canonicalPath = `${locale === "en" ? "/en" : ""}/${kind === "tool" ? "tools" : "ratgeber"}/${slug}/`;
+
+  const illustrationPath = kind === "tool" ? findToolIllustration(parsed.content) : null;
+  let assetHash = null;
+  let assetKey = null;
+  if (illustrationPath?.startsWith("/images/tools/") && illustrationPath.endsWith(".webp")) {
+    const assetBytes = await readFile(join(CONTENT_DIR, "images", "tools", illustrationPath.split("/").pop()));
+    assetHash = createHash("sha256").update(assetBytes).digest("hex");
+    assetKey = `tools/${slug}/${assetHash}.webp`;
+  }
 
   return {
     contentKey: `${kind}:${locale}:${slug}`,
@@ -72,7 +81,9 @@ const toRuntimeEntry = ({ kind, locale, file, raw, primaryEntry = null }) => {
     robotsPolicy: searchDecision.robots,
     googlebotPolicy: searchDecision.googlebotRobots,
     editorialReviewed: kind === "tool" ? Number(isCuratedToolEntry(basis)) : 1,
-    illustrationPath: kind === "tool" ? findToolIllustration(parsed.content) : null,
+    illustrationPath,
+    assetKey,
+    assetHash,
     sourceCommit: null,
     deletedAt: null,
     category: asString(parsed.data.category) || null,
@@ -108,7 +119,7 @@ export async function listRuntimeEntries({ kind, locale } = {}) {
         .sort((left, right) => left.localeCompare(right));
       const entries = await Promise.all(
         files.map(async (file) =>
-          toRuntimeEntry({
+          await toRuntimeEntry({
             ...source,
             file,
             raw: await readFile(join(source.directory, file), "utf8"),
@@ -169,6 +180,8 @@ const UPSERT_COLUMNS = [
     "googlebot_policy",
     "editorial_reviewed",
     "illustration_path",
+    "asset_key",
+    "asset_hash",
     "source_commit",
     "deleted_at",
     "category",
@@ -195,6 +208,8 @@ const entryValues = (entry) => [
     entry.googlebotPolicy,
     entry.editorialReviewed,
     entry.illustrationPath,
+    entry.assetKey ?? null,
+    entry.assetHash ?? null,
     entry.sourceCommit,
     entry.deletedAt,
     entry.category,
@@ -226,14 +241,17 @@ export function buildEntriesUpsertStatement(entries) {
     "  googlebot_policy = excluded.googlebot_policy,",
     "  editorial_reviewed = excluded.editorial_reviewed,",
     "  illustration_path = excluded.illustration_path,",
+    "  asset_key = excluded.asset_key,",
+    "  asset_hash = excluded.asset_hash,",
     "  source_commit = excluded.source_commit,",
     "  deleted_at = excluded.deleted_at,",
     "  category = excluded.category,",
     "  price_model = excluded.price_model,",
     "  popularity = excluded.popularity,",
-    "  revision = CASE WHEN content_entries.source_hash <> excluded.source_hash OR content_entries.is_active <> excluded.is_active OR content_entries.route_state <> excluded.route_state THEN content_entries.revision + 1 ELSE content_entries.revision END,",
+    "  revision = CASE WHEN content_entries.source_hash <> excluded.source_hash OR COALESCE(content_entries.asset_hash, '') <> COALESCE(excluded.asset_hash, '') OR content_entries.is_active <> excluded.is_active OR content_entries.route_state <> excluded.route_state THEN content_entries.revision + 1 ELSE content_entries.revision END,",
     "  synced_at = CURRENT_TIMESTAMP",
     "WHERE content_entries.source_hash <> excluded.source_hash",
+    "   OR COALESCE(content_entries.asset_hash, '') <> COALESCE(excluded.asset_hash, '')",
     "   OR content_entries.is_active <> excluded.is_active",
     "   OR content_entries.route_state <> excluded.route_state",
     "   OR content_entries.canonical_path <> excluded.canonical_path;",

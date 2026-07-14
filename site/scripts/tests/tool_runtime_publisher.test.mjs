@@ -6,6 +6,7 @@ import {
   buildUpsertBatch,
   executeD1Batch,
   reconcileToolState,
+  toolAssetsForEntries,
 } from "../lib/tool-runtime-publisher.mjs";
 
 const fakeEntry = (slug, locale, sourceHash = `${slug}-${locale}`) => ({
@@ -27,6 +28,8 @@ const fakeEntry = (slug, locale, sourceHash = `${slug}-${locale}`) => ({
   googlebotPolicy: null,
   editorialReviewed: 1,
   illustrationPath: null,
+  assetKey: null,
+  assetHash: null,
   sourceCommit: "deadbeef",
   deletedAt: null,
   category: "Test",
@@ -41,7 +44,7 @@ test("100 paired tools fit in one 50-statement D1 transaction", () => {
   }).flat();
   const statements = buildUpsertBatch(entries);
   assert.equal(statements.length, 50);
-  assert.equal(Math.max(...statements.map((statement) => statement.params.length)), 92);
+  assert.equal(Math.max(...statements.map((statement) => statement.params.length)), 100);
   assert.ok(statements.every((statement) => statement.params.length <= 100));
 });
 
@@ -75,6 +78,10 @@ test("D1 batch failure is a hard stop", async () => {
   );
 });
 
+test("asset plan is empty for entries without illustrations", () => {
+  assert.deepEqual(toolAssetsForEntries([fakeEntry("alpha", "de"), fakeEntry("alpha", "en")]), []);
+});
+
 test("route-state operations never emit physical deletes", () => {
   const disabled = buildRouteStateBatch("deactivate", ["old-tool"], { sourceCommit: "deadbeef" });
   const tombstone = buildRouteStateBatch("tombstone", ["old-tool"], { sourceCommit: "deadbeef" });
@@ -88,7 +95,7 @@ test("route-state operations never emit physical deletes", () => {
   assert.match(redirect[0].sql, /route_state = 'redirect'/);
 });
 
-test("reconcile reports all four drift classes", () => {
+test("reconcile reports route, source and asset drift classes", () => {
   const expected = [fakeEntry("alpha", "de", "a-de"), fakeEntry("alpha", "en", "a-en"), fakeEntry("beta", "de", "b-de")];
   const actual = [
     { locale: "de", slug: "alpha", is_active: 1, route_state: "active", source_hash: "wrong" },
@@ -101,6 +108,7 @@ test("reconcile reports all four drift classes", () => {
     extraActive: ["de:extra"],
     inactiveExpected: ["en:alpha"],
     hashMismatch: ["de:alpha"],
+    assetHashMismatch: [],
   });
 });
 

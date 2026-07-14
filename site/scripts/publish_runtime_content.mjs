@@ -15,6 +15,8 @@ import {
   readRuntimeConfig,
   reconcileToolState,
   resolveRequestedSlugs,
+  toolAssetsForEntries,
+  uploadR2Assets,
 } from "./lib/tool-runtime-publisher.mjs";
 
 const args = process.argv.slice(2);
@@ -67,7 +69,7 @@ async function readActualRows({ remote, snapshotPath, connection }) {
   if (!remote) return null;
   const result = await queryD1({
     ...connection,
-    sql: `SELECT locale, slug, is_active, route_state, source_hash, revision, canonical_path
+    sql: `SELECT locale, slug, is_active, route_state, source_hash, asset_hash, revision, canonical_path
           FROM content_entries WHERE kind = 'tool'`,
   });
   return result.flatMap((item) => item.results ?? []);
@@ -131,6 +133,7 @@ async function runToolPublisher() {
   }
 
   let statements;
+  const assets = operation === "upsert" ? toolAssetsForEntries(release.entries) : [];
   if (operation === "upsert") {
     statements = buildUpsertBatch(release.entries);
   } else {
@@ -155,6 +158,7 @@ async function runToolPublisher() {
       physicalDeletes: false,
     },
     warnings: release.warnings,
+    assets: { objects: assets.length, contentAddressed: true, bucket: valueFor("--asset-bucket") || null },
   };
 
   if (dryRun) {
@@ -163,7 +167,7 @@ async function runToolPublisher() {
       const actual = new Map(actualRows.map((row) => [`${row.locale}:${row.slug}`, row]));
       summary.operations = release.entries.map((entry) => {
         const row = actual.get(`${entry.locale}:${entry.slug}`);
-        return { key: entry.contentKey, action: !row ? "insert" : row.source_hash === entry.sourceHash && row.route_state === "active" ? "noop" : "update" };
+        return { key: entry.contentKey, action: !row ? "insert" : row.source_hash === entry.sourceHash && (row.asset_hash ?? null) === (entry.assetHash ?? null) && row.route_state === "active" ? "noop" : "update" };
       });
     }
     console.log(JSON.stringify(summary, null, 2));
@@ -176,8 +180,13 @@ async function runToolPublisher() {
   }
   const schemaCheck = await queryD1({ ...connection, sql: "SELECT name FROM pragma_table_info('content_entries')" });
   const columns = new Set((schemaCheck[0]?.results ?? []).map((row) => row.name));
-  for (const required of ["is_active", "route_state", "canonical_path", "source_commit"]) {
-    if (!columns.has(required)) throw new Error(`D1 schema v2 is not applied: missing ${required}`);
+  for (const required of ["is_active", "route_state", "canonical_path", "source_commit", "asset_key", "asset_hash"]) {
+    if (!columns.has(required)) throw new Error(`D1 tool runtime schema is not applied: missing ${required}`);
+  }
+  if (operation === "upsert" && assets.length) {
+    const assetBucket = valueFor("--asset-bucket");
+    if (production && !assetBucket) throw new Error("Production tool upsert with illustrations requires --asset-bucket");
+    if (assetBucket) uploadR2Assets(assets, { bucket: assetBucket });
   }
   const results = await executeD1Batch({ ...connection, statements });
   console.log(JSON.stringify({ ...summary, published: true, results: results.length }, null, 2));
