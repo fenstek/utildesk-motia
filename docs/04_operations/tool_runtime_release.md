@@ -7,7 +7,7 @@ Status: implementation runbook; production remains gated until preview parity pa
 - `content/tools` and `content/en/tools` are the editorial source. D1 is a derived read model.
 - A tool upsert is one DE/EN release unit. Missing or non-public siblings stop the release.
 - Upsert, deactivate, redirect and tombstone use a single D1 REST `batch` request. D1 batches are transactional: one failed statement rolls back the sequence.
-- Two tool pairs share one statement (at most 92 bound parameters). A 100-tool release is 50 statements; the current full 1,228-tool projection is 614 statements.
+- Two tool pairs share one statement (at most 100 bound parameters including the immutable asset key/hash). A 100-tool release is 50 statements; the current full 1,228-tool projection is 614 statements.
 - There is no physical delete path. A removed route is `disabled`, `redirect` or `tombstone` first.
 - Production requires a clean commit, an explicit confirmation string, a fresh non-empty D1 SQL export and an API lookup that matches the configured database name and UUID.
 - Ratgeber continues to use its independent runtime, route proxy and kill switch.
@@ -66,7 +66,7 @@ npm --prefix site run publish:runtime -- \
   --database utildesk-content-runtime-preview
 ```
 
-Reconcile reports missing locale entries, extra active entries, expected routes in a non-active state and source-hash drift. It never mutates D1.
+Reconcile reports missing locale entries, extra active entries, expected routes in a non-active state, source-hash drift and asset-hash drift. It never mutates D1.
 
 ## Preview publication
 
@@ -103,6 +103,23 @@ curl -I https://<preview-worker>/runtime-preview/en/tools/chatgpt/
 Preview responses must be `noindex,nofollow,noarchive` while retaining the production self-canonical, DE/EN hreflang, JSON/Markdown alternates and JSON-LD. Canonical runtime routes are `/tools/<slug>/` and `/en/tools/<slug>/`. Active rows return `200`; `redirect` returns `301` to the stored `canonical_path`; `disabled` and unknown rows return `404`; `tombstone` returns `410`.
 
 The tool cache key is `renderer version + D1 revision + source_hash`. Verify a first `MISS`, a second `HIT`, then change only a local/preview revision and verify another `MISS` followed by `HIT`. Required evidence headers are `X-Utildesk-Content-Runtime: tool-v2`, `X-Utildesk-Content-Version`, `X-Utildesk-Source-Revision` and `X-Utildesk-Source-Hash`. This cache identity is independent from the Ratgeber cluster.
+
+## Content-addressed illustrations
+
+The exporter hashes each referenced `/images/tools/*.webp` and projects `asset_key` plus `asset_hash` through migration `0003_tool_asset_projection.sql`. A rendered illustration uses `/tool-assets/<sha256>/<original-name>.webp`; this URL is immutable and the Worker verifies the bytes before returning them.
+
+Before a remote production upsert containing illustrations, configure the verified production R2 bucket as the Worker's `TOOL_ASSETS` binding and pass the same bucket to the publisher:
+
+```bash
+npm --prefix site run publish:runtime -- \
+  --kind tool --slugs-file /path/to/slugs.txt --remote --production \
+  --confirm TOOL_RUNTIME_PRODUCTION --backup /private/backup/before.sql \
+  --asset-bucket <verified-tool-assets-bucket> \
+  --config wrangler.runtime.production.jsonc \
+  --database utildesk-content-runtime-production
+```
+
+The publisher checks the local hash, uploads the content-addressed object first, downloads it to a private temporary directory, verifies the hash, and only then changes D1. Production refuses an illustrated upsert without `--asset-bucket`. Old Pages `/images/tools/*` files remain a read-only fallback: if the R2 binding or object is absent, the asset endpoint fetches the old Pages file and serves it only when its SHA-256 matches. Do not proxy `/tool-assets/*` to the Worker until the R2 binding is verified; do not delete old Pages or R2 objects during this migration.
 
 ## Deactivate, redirect and tombstone
 

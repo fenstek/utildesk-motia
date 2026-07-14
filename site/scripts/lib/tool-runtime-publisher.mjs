@@ -1,6 +1,8 @@
-import { existsSync, readFileSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { existsSync, mkdtempSync, readFileSync, rmSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { basename, join, resolve } from "node:path";
+import { tmpdir } from "node:os";
 import { buildEntriesUpsertStatement, listRuntimeEntries, RUNTIME_PATHS } from "../runtime-content.mjs";
 
 export const PRODUCTION_CONFIRMATION = "TOOL_RUNTIME_PRODUCTION";
@@ -107,6 +109,40 @@ export function buildUpsertBatch(entries) {
   return chunks(pairs, 2).map((pairChunk) => buildEntriesUpsertStatement(pairChunk.flat()));
 }
 
+export function toolAssetsForEntries(entries, repoDir = RUNTIME_PATHS.REPO_DIR) {
+  const assets = new Map();
+  for (const entry of entries) {
+    if (!entry.assetKey || !entry.assetHash || !entry.illustrationPath) continue;
+    const sourcePath = join(repoDir, "content", "images", "tools", basename(entry.illustrationPath));
+    if (!existsSync(sourcePath)) throw new Error(`${entry.contentKey}: asset source missing: ${entry.illustrationPath}`);
+    const actualHash = createHash("sha256").update(readFileSync(sourcePath)).digest("hex");
+    if (actualHash !== entry.assetHash) throw new Error(`${entry.contentKey}: asset hash drift before upload`);
+    assets.set(entry.assetKey, { key: entry.assetKey, hash: entry.assetHash, sourcePath });
+  }
+  return [...assets.values()].sort((left, right) => left.key.localeCompare(right.key));
+}
+
+export function uploadR2Assets(assets, { bucket, siteDir = RUNTIME_PATHS.SITE_DIR } = {}) {
+  if (!assets.length) return [];
+  if (!bucket || !/^[a-z0-9][a-z0-9-]{1,62}$/.test(bucket)) throw new Error("A valid --asset-bucket is required before publishing tool assets");
+  const wrangler = join(siteDir, "node_modules", "wrangler", "bin", "wrangler.js");
+  execFileSync(process.execPath, [wrangler, "r2", "bucket", "info", bucket], { cwd: siteDir, stdio: "pipe" });
+  const verifyDir = mkdtempSync(join(tmpdir(), "utildesk-tool-assets-"));
+  try {
+    for (const asset of assets) {
+      const objectPath = `${bucket}/${asset.key}`;
+      execFileSync(process.execPath, [wrangler, "r2", "object", "put", objectPath, "--file", asset.sourcePath, "--remote"], { cwd: siteDir, stdio: "pipe" });
+      const verifyPath = join(verifyDir, basename(asset.key));
+      execFileSync(process.execPath, [wrangler, "r2", "object", "get", objectPath, "--file", verifyPath, "--remote"], { cwd: siteDir, stdio: "pipe" });
+      const remoteHash = createHash("sha256").update(readFileSync(verifyPath)).digest("hex");
+      if (remoteHash !== asset.hash) throw new Error(`${asset.key}: uploaded R2 object failed hash verification`);
+    }
+    return assets.map(({ key, hash }) => ({ key, hash }));
+  } finally {
+    rmSync(verifyDir, { recursive: true, force: true });
+  }
+}
+
 export function buildRouteStateBatch(operation, slugs, { sourceCommit, redirects = new Map() } = {}) {
   return uniqueSorted(slugs).map((slug) => {
     if (!safeSlug(slug)) throw new Error(`Unsafe tool slug: ${slug}`);
@@ -156,7 +192,11 @@ export function reconcileToolState(expectedEntries, actualRows) {
     const row = actual.get(key);
     return row && row.source_hash !== entry.sourceHash;
   }).map(([key]) => key).sort();
-  return { ok: !missing.length && !extraActive.length && !inactiveExpected.length && !hashMismatch.length, missing, extraActive, inactiveExpected, hashMismatch };
+  const assetHashMismatch = [...expected].filter(([key, entry]) => {
+    const row = actual.get(key);
+    return row && (row.asset_hash ?? null) !== (entry.assetHash ?? null);
+  }).map(([key]) => key).sort();
+  return { ok: !missing.length && !extraActive.length && !inactiveExpected.length && !hashMismatch.length && !assetHashMismatch.length, missing, extraActive, inactiveExpected, hashMismatch, assetHashMismatch };
 }
 
 export function readRuntimeConfig(configPath, databaseName = null) {

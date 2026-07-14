@@ -38,6 +38,14 @@ const view = buildToolDetailViewModel({
   contentLastmod: { [`content/tools/${entry.slug}.md`]: entry.sourceUpdatedAt || entry.sourcePublishedAt || "" },
   searchIndexDecision: { robots: entry.robotsPolicy, googlebotRobots: entry.googlebotPolicy },
 });
+if (entry.assetHash && entry.illustrationPath) {
+  const assetName = entry.illustrationPath.split("/").pop();
+  if (assetName) {
+    const immutableAssetUrl = `/tool-assets/${entry.assetHash}/${assetName}`;
+    view.articleHtml = view.articleHtml.replaceAll(entry.illustrationPath, immutableAssetUrl);
+    view.editorialFigureHtml = view.editorialFigureHtml.replaceAll(entry.illustrationPath, immutableAssetUrl);
+  }
+}
 const data = view.data;
 const alternatePaths = { de: `/tools/${entry.slug}/`, en: `/en/tools/${entry.slug}/` };
 const robots = preview ? "noindex,nofollow,noarchive" : view.searchIndexDecision.robots;
