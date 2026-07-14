@@ -194,3 +194,12 @@
 - The automated factory prepares research-backed review candidates only. Public publication still requires the established NotebookLM-first human editorial pass, current fact-checking, internal links, DE/EN copy, two approved distinct WebP illustrations, build verification, commit/push, and live deployment.
 - A single unavailable source must not block a candidate or rewrite forever. Record and skip URL-import timeouts when enough other grounding sources remain, and preserve the existing article whenever a generated rewrite scores worse.
 - Machine uploads to the private Ratgeber review backend must target the Pages domain `https://utildesk-motia.pages.dev/admin/ratgeber/api/upload`; do not use the public domain for this POST path.
+
+## 2026-07-15 - Tool runtime delivery contract
+
+- Markdown/Git remain the published editorial source; Google Sheet remains intake/status truth; D1 and content-addressed asset storage are reconstructable production projections.
+- Tool public state is one shared exact DE/EN contract. Disabled, draft, blacklist, duplicate, alias, redirect-only, reserved and underscore entries must never be revived by a runtime importer.
+- Tool publication uses paired atomic delta batches plus deactivate/redirect/tombstone and reconcile; physical bulk D1/R2 deletion is not part of a content release.
+- Tool runtime has independent Pages KV keys `content-runtime:tools` and `content-runtime:tools:allowlist`. Missing/malformed state defaults off; Worker 404, 5xx and fetch errors fail open to static Pages; the Ratgeber switch remains independent.
+- Production rollout is strictly 20, then 100, then all active detail routes. Static tool-detail generation and later API/search/home/index migration cannot be removed or advanced until live parity and rollback gates for the preceding cohort pass.
+- Compact sitemap and robots/googlebot staging remain unchanged; a runtime migration must not broaden sitemap depth or replace Google-specific staging with global noindex.

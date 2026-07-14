@@ -1486,3 +1486,10 @@ _Last updated: 2026-07-14_
 - Added 20 distinct 1280x720 WebP editorial illustrations generated with Codex built-in image generation via the ChatGPT subscription, with one figure in each DE/EN card: Adobe Podcast, Airbyte, Amazon Aurora, Amazon MSK, Apache Beam, Apigee, Are.na, Avid Media Composer, Avigilon Control Center, AWS Bedrock, AWS Lambda, Axis Camera Station, Azure Functions, Blockly, Breezy HR, Brevo, Bruno, Carbon Black, Cisco Contact Center and Code.org. The batch is recorded in the illustration registry and its implementation manifest.
 - Connected existing editorial WebP assets that had been present on disk but missing from one or both localized cards: 67 slugs and 75 Markdown files. A post-integration audit requires exactly one matching image reference in both language variants for every active paired card with an existing asset.
 - Preserved the human-edited bodies while carrying forward only the latest `popularity` values for 42 DE cards from the divergent `autobot` Umami sync commit `8a25b89b`.
+
+## 2026-07-15 - Tool detail runtime preview migration
+
+- Added one shared tool public-state helper and exact 1228/1228 DE/EN reconcile, D1 schema v2 with atomic paired delta publishing and reversible route states, and one shared DE/EN detail view model.
+- Added canonical and noindex preview runtime detail routes, revision-aware cache keys/headers, content-addressed WebP projection with R2-first/hash-verified Pages fallback, and a reproducible complete local D1 importer.
+- Automated live/static/runtime parity now covers canonical, hreflang, robots/googlebot, JSON-LD, machine alternates, alternatives, Ratgeber backlinks, images, links, 390px/1440px overflow and cache MISS/HIT. Full local results: 2456 route responses and 10,754 resources with zero failures.
+- Added a committed 20-slug production cohort and a default-off independent Pages proxy with tool-only kill switch and static fail-open tests. No push or production deploy was performed because the current credential does not own the configured production D1/Worker and the live Worker returns 404 for tool routes.
